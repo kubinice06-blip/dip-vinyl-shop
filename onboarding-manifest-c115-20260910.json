@@ -238,23 +238,24 @@
     "discogsReleaseId": "5869311"
    },
    "ratings": {
-    "classic": 4,
-    "obscurity": 5,
+    "classic": 3,
+    "obscurity": 2,
     "accessibility": 1,
     "listeners": 26,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
     "previous": {
-     "classic": 2,
-     "obscurity": 3,
-     "accessibility": 2,
-     "source": "manual:regional-rubric",
-     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "classic": 4,
+     "obscurity": 5,
+     "accessibility": 1,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：收近 300 萬張的同名單曲，團體代表作→4；L=26 無串流→下限 5；歌謡 mood",
      "rarity": "rare"
     },
-    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：收近 300 萬張的同名單曲，團體代表作→4；L=26 無串流→下限 5；歌謡 mood"
+    "note": "全池稽核 audit-20261102（方案 C）：名曲盤《なみだの操》屬錯配（語言圈主流暢銷），不套下限，照錨點 2；Victor 演歌翻唱集，經典度 4→3｜L=26"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,

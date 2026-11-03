@@ -32,29 +32,40 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 4,
+    "classic": 2,
     "obscurity": 5,
     "accessibility": 5,
     "listeners": 7,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
-    "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽非 ready → 5，L=7）3→5",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "note": "全池稽核 audit-20261102（方案 C）：80 分鐘無伴奏薩克斯、編碼曲名；Penguin 等評分偏低→經典 2｜L=7",
     "previous": {
      "classic": 4,
-     "obscurity": 3,
+     "obscurity": 5,
      "accessibility": 5,
-     "source": "manual:rerate-20261101",
-     "checkedAt": "2026-11-01T00:00:00Z",
-     "note": "三軸重評（RUBRIC 2026-11-01）：Braxton 繼 For Alto 的第二張無伴奏中音薩克斯，AllMusic 讚／America 原版，後有 Inner City、EmArcy 再發／無伴奏前衛",
-     "rarity": "epic"
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽非 ready → 5，L=7）3→5",
+     "rarity": "legendary"
     }
    },
-   "rarity": "legendary",
+   "rarity": "epic",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "evidenceUrls": [],
-    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 7），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。無伴奏薩克斯 80 分鐘、編碼曲名，前衛自由爵士 5 星範疇",
+    "evidenceUrls": [
+     "https://www.last.fm/music/Anthony%20Braxton/Saxophone%20Improvisations%2C%20Series%20F.",
+     "https://musicbrainz.org/release-group/571f44fe-ead5-36fe-92d3-3ca67af75286"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 7），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "一個人吹完兩張 LP，曲名全是字母加數字的編碼。只有 Anthony Braxton 一人吹薩克斯風，是一套自由爵士錄音室獨奏，1972 年 2 月 25 日在巴黎錄成，地點是 Decca 錄音室，由法國 America 發行。這是他繼《For Alto》之後的第二張薩克斯風獨奏專輯，〈NR-12-C (33 M)〉這類編碼曲名，承接的正是前作的做法：把長音、顫音、複音逐一編目，Braxton 稱之為「語言音樂」。",
@@ -77,7 +88,7 @@
     "descriptionKv": false,
     "albumOverride": false,
     "seedCards": false,
-    "apexPool": false
+    "apexPool": true
    }
   },
   {
@@ -184,23 +195,23 @@
    },
    "ratings": {
     "classic": 4,
-    "obscurity": 3,
-    "accessibility": 5,
+    "obscurity": 4,
+    "accessibility": 4,
     "listeners": null,
-    "source": "manual:rerate-20261101",
-    "checkedAt": "2026-11-01T00:00:00Z",
-    "note": "三軸重評（RUBRIC 2026-11-01）：Stevens-Parker 英國自由即興重要二重奏／Ogun，Bandcamp 再發／極抽象即興",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "note": "全池稽核 audit-20261102（方案 C）：Ogun 原盤，Bandcamp 2021 有數位版 → 4；「昆蟲音樂」細碎即興，自由即興 4",
     "previous": {
-     "classic": 3,
-     "obscurity": 5,
-     "accessibility": 3,
-     "source": "主線人工（§0.8 錨點制）",
-     "checkedAt": "2026-10-23T19:53:16Z",
-     "note": "機器基線 undefined/undefined/undefined（Last.fm listeners 查無）；主線：worker 無回應（Last.fm 查無）；Ogun 1977 小廠即興盤，同批 Vol. 2 listeners 1、冷門 5，人工 3/5/3",
-     "rarity": "uncommon"
+     "classic": 4,
+     "obscurity": 3,
+     "accessibility": 5,
+     "source": "manual:rerate-20261101",
+     "checkedAt": "2026-11-01T00:00:00Z",
+     "note": "三軸重評（RUBRIC 2026-11-01）：Stevens-Parker 英國自由即興重要二重奏／Ogun，Bandcamp 再發／極抽象即興",
+     "rarity": "legendary"
     }
    },
-   "rarity": "legendary",
+   "rarity": "epic",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -230,7 +241,7 @@
     "cardCatalog": false,
     "descriptionKv": false,
     "albumOverride": false,
-    "seedCards": false,
+    "seedCards": true,
     "apexPool": false
    }
   },
@@ -264,22 +275,22 @@
    "ratings": {
     "classic": 3,
     "obscurity": 5,
-    "accessibility": 5,
+    "accessibility": 4,
     "listeners": 1,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
-    "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽非 ready → 5，L=1）3→5",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "note": "全池稽核 audit-20261102（方案 C）：同夜續集，Bandcamp 有正式數位版（Ogun CD 合併再發），故給 4｜L=1",
     "previous": {
      "classic": 3,
-     "obscurity": 3,
+     "obscurity": 5,
      "accessibility": 5,
-     "source": "manual:rerate-20261101",
-     "checkedAt": "2026-11-01T00:00:00Z",
-     "note": "三軸重評（RUBRIC 2026-11-01）：同夜錄音續集／Ogun，合輯 CD 與 Bandcamp／極抽象即興",
-     "rarity": "epic"
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽非 ready → 5，L=1）3→5",
+     "rarity": "legendary"
     }
    },
-   "rarity": "legendary",
+   "rarity": "epic",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -309,7 +320,7 @@
     "cardCatalog": false,
     "descriptionKv": false,
     "albumOverride": false,
-    "seedCards": false,
+    "seedCards": true,
     "apexPool": false
    }
   },
@@ -343,19 +354,19 @@
    "ratings": {
     "classic": 4,
     "obscurity": 5,
-    "accessibility": 5,
+    "accessibility": 4,
     "listeners": 14,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
-    "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽非 ready → 5，L=14）3→5",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "note": "全池稽核 audit-20261102（方案 C）：Parker/Guy二重奏起點、FMP；自由即興屬4；L14無串流→5｜L=14",
     "previous": {
      "classic": 4,
-     "obscurity": 3,
+     "obscurity": 5,
      "accessibility": 5,
-     "source": "manual:rerate-20261101",
-     "checkedAt": "2026-11-01T00:00:00Z",
-     "note": "三軸重評（RUBRIC 2026-11-01）：Parker-Guy 二重奏核心錄音／FMP，destination: OUT 再發／高密度自由即興",
-     "rarity": "epic"
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽非 ready → 5，L=14）3→5",
+     "rarity": "legendary"
     }
    },
    "rarity": "legendary",
@@ -385,7 +396,7 @@
     "cardCatalog": false,
     "descriptionKv": false,
     "albumOverride": false,
-    "seedCards": false,
+    "seedCards": true,
     "apexPool": false
    }
   },
@@ -419,22 +430,22 @@
    "ratings": {
     "classic": 3,
     "obscurity": 4,
-    "accessibility": 5,
+    "accessibility": 4,
     "listeners": 25,
-    "source": "manual:rerate-20261101",
-    "checkedAt": "2026-11-01T00:00:00Z",
-    "note": "三軸重評（RUBRIC 2026-11-01）：Parker-Guy 二重奏續作／Maya 小廠，有再發／自由即興",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "note": "全池稽核 audit-20261102（方案 C）：Parker/Guy中期二重奏，Maya正規盤；自由即興4｜L=25",
     "previous": {
      "classic": 3,
-     "obscurity": 5,
-     "accessibility": 3,
-     "source": "worker /album-rating（obscurity:lastfm）",
-     "checkedAt": "2026-10-23T19:53:16Z",
-     "note": "機器基線 3/5/3（Last.fm listeners 25）",
-     "rarity": "uncommon"
+     "obscurity": 4,
+     "accessibility": 5,
+     "source": "manual:rerate-20261101",
+     "checkedAt": "2026-11-01T00:00:00Z",
+     "note": "三軸重評（RUBRIC 2026-11-01）：Parker-Guy 二重奏續作／Maya 小廠，有再發／自由即興",
+     "rarity": "epic"
     }
    },
-   "rarity": "epic",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -466,7 +477,7 @@
     "cardCatalog": false,
     "descriptionKv": false,
     "albumOverride": false,
-    "seedCards": false,
+    "seedCards": true,
     "apexPool": false
    }
   },
@@ -500,22 +511,22 @@
    "ratings": {
     "classic": 3,
     "obscurity": 5,
-    "accessibility": 5,
+    "accessibility": 4,
     "listeners": 5,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
-    "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽非 ready → 5，L=5）3→5",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "note": "全池稽核 audit-20261102（方案 C）：Parker/Stevens二重奏Ogun盤；自由即興4；L5無串流→5｜L=5",
     "previous": {
      "classic": 3,
-     "obscurity": 3,
+     "obscurity": 5,
      "accessibility": 5,
-     "source": "manual:rerate-20261101",
-     "checkedAt": "2026-11-01T00:00:00Z",
-     "note": "三軸重評（RUBRIC 2026-11-01）：Parker-Stevens 1993 二重奏，AAJ 推合輯／Ogun／抽象即興",
-     "rarity": "epic"
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽非 ready → 5，L=5）3→5",
+     "rarity": "legendary"
     }
    },
-   "rarity": "legendary",
+   "rarity": "epic",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -545,7 +556,7 @@
     "cardCatalog": false,
     "descriptionKv": false,
     "albumOverride": false,
-    "seedCards": false,
+    "seedCards": true,
     "apexPool": false
    }
   },
@@ -679,10 +690,21 @@
    },
    "rarity": "epic",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "evidenceUrls": [],
-    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 12），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。小廠／自發盤、聽眾<300，但壓量未見數百張以下的確據，也非收藏圈公認聖杯；只到 5",
+    "evidenceUrls": [
+     "https://www.last.fm/music/Evan%20Parker%20%2F%20Matthew%20Shipp/Abbey%20Road%20Duos",
+     "https://musicbrainz.org/release-group/773aed53-bbcf-4e80-b011-a9d5223ccb46"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 12），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "倫敦 Abbey Road 錄音室，鋼琴對上薩克斯風。英國薩克斯風手 Evan Parker 與美國鋼琴家 Matthew Shipp 的這場即興二重奏，是跨世代、跨大西洋的合作。他們 2006 年 7 月 19 日進 Abbey Road Studios，錄下的八首分成兩組，每組四段：先是〈Tenor Suite I–IV〉，再接〈Alto Suite I–IV〉，樂評把第二組稱作高音組曲。2007 年，Treader 以限量版發行。",
@@ -709,7 +731,7 @@
     "descriptionKv": false,
     "albumOverride": false,
     "seedCards": false,
-    "apexPool": false
+    "apexPool": true
    }
   },
   {
@@ -759,10 +781,21 @@
    },
    "rarity": "epic",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "evidenceUrls": [],
-    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 54），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。小廠／自發盤、聽眾<300，但壓量未見數百張以下的確據，也非收藏圈公認聖杯；只到 5",
+    "evidenceUrls": [
+     "https://www.last.fm/music/Evan%20Parker%20%26%20Joe%20McPhee/Chicago%20Tenor%20Duets",
+     "https://musicbrainz.org/release-group/d3006fdd-d2b7-4344-ae99-0116fd2a4364"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 54），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "兩支次中音錄完擱了四年，題獻對象是一隻貓。Evan Parker 與 Joe McPhee 都只吹次中音薩克斯風，沒有其他樂手；McPhee 1939 年在邁阿密出生，29 歲才自學薩克斯風。兩人 1998 年 5 月 11 日錄於 Airwave Recording Studio，芝加哥廠牌 Okka Disk 要等到 2002 年才發行，那隻貓名叫 Boo。兩人的二重奏從這張開始，十一首都叫〈Duet〉加上編號。",
@@ -787,7 +820,7 @@
     "descriptionKv": false,
     "albumOverride": false,
     "seedCards": false,
-    "apexPool": false
+    "apexPool": true
    }
   },
   {
@@ -837,10 +870,21 @@
    },
    "rarity": "legendary",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "evidenceUrls": [],
-    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 64），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。前衛爵士拼貼，5星",
+    "evidenceUrls": [
+     "https://www.last.fm/music/Roscoe%20Mitchell/L-R-G%20%2F%20The%20Maze%20%2F%20S%20II%20Examples",
+     "https://musicbrainz.org/release-group/1b924676-ff9c-4cf7-bbcf-786ac401173f"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 64），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "八位打擊樂手敲鐘、鑼與水桶，Braxton 也在其中。1940 年芝加哥出生的 Roscoe Mitchell 是 AACM 早期成員。那件八人打擊作品叫〈The Maze〉，除了 Braxton，Henry Threadgill 與 Mitchell 自己也下場。Chuck Nessa 回憶，這張籌備了一年多，那段時間他每個週末都到威斯康辛的 Mitchell 家討論。1978 年 Nessa Records 推出雙 LP，三件作品分在三地錄成。",
@@ -865,7 +909,7 @@
     "descriptionKv": false,
     "albumOverride": false,
     "seedCards": false,
-    "apexPool": false
+    "apexPool": true
    }
   },
   {
@@ -896,24 +940,24 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 4,
+    "classic": 3,
     "obscurity": 4,
     "accessibility": 5,
     "listeners": 239,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
-    "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽 ready → ≥4，L=239）3→4",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "note": "全池稽核 audit-20261102（方案 C）：FMP 首張獨奏短曲，地位中等；239 聽眾有串流→4｜L=239",
     "previous": {
      "classic": 4,
-     "obscurity": 3,
+     "obscurity": 4,
      "accessibility": 5,
-     "source": "manual:rerate-20261101",
-     "checkedAt": "2026-11-01T00:00:00Z",
-     "note": "三軸重評（RUBRIC 2026-11-01）：Brötzmann 首張獨奏 LP／FMP，2011 再版／無伴奏暴烈即興",
-     "rarity": "epic"
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽 ready → ≥4，L=239）3→4",
+     "rarity": "legendary"
     }
    },
-   "rarity": "legendary",
+   "rarity": "epic",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -948,7 +992,7 @@
     "cardCatalog": false,
     "descriptionKv": false,
     "albumOverride": false,
-    "seedCards": false,
+    "seedCards": true,
     "apexPool": false
    }
   },
@@ -1135,22 +1179,22 @@
    "ratings": {
     "classic": 3,
     "obscurity": 5,
-    "accessibility": 5,
+    "accessibility": 4,
     "listeners": 1,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
-    "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽非 ready → 5，L=1）4→5",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "note": "全池稽核 audit-20261102（方案 C）：Nuscope 小廠薩克斯風＋鋼琴即興短曲；自由即興 4｜L=1",
     "previous": {
      "classic": 3,
-     "obscurity": 4,
+     "obscurity": 5,
      "accessibility": 5,
-     "source": "manual:rerate-20261101",
-     "checkedAt": "2026-11-01T00:00:00Z",
-     "note": "三軸重評（RUBRIC 2026-11-01）：Butcher 二重奏，無評論資料／Nuscope 極小廠／延伸技法即興",
-     "rarity": "epic"
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽非 ready → 5，L=1）4→5",
+     "rarity": "legendary"
     }
    },
-   "rarity": "legendary",
+   "rarity": "epic",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1177,7 +1221,7 @@
     "cardCatalog": false,
     "descriptionKv": false,
     "albumOverride": false,
-    "seedCards": false,
+    "seedCards": true,
     "apexPool": false
    }
   },
@@ -1212,22 +1256,22 @@
    "ratings": {
     "classic": 3,
     "obscurity": 5,
-    "accessibility": 5,
+    "accessibility": 4,
     "listeners": 0,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
-    "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽非 ready → 5，L=0）4→5",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "note": "全池稽核 audit-20261102（方案 C）：Meniscus 小廠雙人自由即興；延伸技巧但屬常規自由即興層級｜L=0",
     "previous": {
      "classic": 3,
-     "obscurity": 4,
+     "obscurity": 5,
      "accessibility": 5,
-     "source": "manual:rerate-20261101",
-     "checkedAt": "2026-11-01T00:00:00Z",
-     "note": "三軸重評（RUBRIC 2026-11-01）：Butcher 二重奏，無評論資料／Meniscus 小廠／延伸技法即興",
-     "rarity": "epic"
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽非 ready → 5，L=0）4→5",
+     "rarity": "legendary"
     }
    },
-   "rarity": "legendary",
+   "rarity": "epic",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1254,7 +1298,7 @@
     "cardCatalog": false,
     "descriptionKv": false,
     "albumOverride": false,
-    "seedCards": false,
+    "seedCards": true,
     "apexPool": false
    }
   },
@@ -1363,24 +1407,24 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 4,
+    "classic": 3,
     "obscurity": 4,
-    "accessibility": 5,
+    "accessibility": 4,
     "listeners": 915,
-    "source": "manual:rerate-20261101",
-    "checkedAt": "2026-11-01T00:00:00Z",
-    "note": "三軸重評（RUBRIC 2026-11-01）：Gustafsson 無伴奏薩克斯代表聲明，書附 CD／Phono Suecia 限量書冊／無伴奏延伸技法",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "note": "全池稽核 audit-20261102（方案 C）：無伴奏薩克斯擴展技法，Phono Suecia；915 聽眾有串流→4｜L=915",
     "previous": {
-     "classic": 3,
-     "obscurity": 5,
-     "accessibility": 3,
-     "source": "worker /album-rating（obscurity:lastfm）",
-     "checkedAt": "2026-10-23T19:53:16Z",
-     "note": "機器基線 3/5/3（Last.fm listeners 915）",
-     "rarity": "uncommon"
+     "classic": 4,
+     "obscurity": 4,
+     "accessibility": 5,
+     "source": "manual:rerate-20261101",
+     "checkedAt": "2026-11-01T00:00:00Z",
+     "note": "三軸重評（RUBRIC 2026-11-01）：Gustafsson 無伴奏薩克斯代表聲明，書附 CD／Phono Suecia 限量書冊／無伴奏延伸技法",
+     "rarity": "legendary"
     }
    },
-   "rarity": "legendary",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1411,7 +1455,7 @@
     "cardCatalog": false,
     "descriptionKv": false,
     "albumOverride": false,
-    "seedCards": false,
+    "seedCards": true,
     "apexPool": false
    }
   },
@@ -1445,27 +1489,38 @@
    "ratings": {
     "classic": 3,
     "obscurity": 5,
-    "accessibility": 5,
+    "accessibility": 4,
     "listeners": 95,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
-    "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽非 ready → 5，L=95）4→5",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "note": "全池稽核 audit-20261102（方案 C）：Maya 自營小廠、95 聽眾無串流；自由即興二重奏，異端不足｜L=95",
     "previous": {
      "classic": 3,
-     "obscurity": 4,
+     "obscurity": 5,
      "accessibility": 5,
-     "source": "manual:rerate-20261101",
-     "checkedAt": "2026-11-01T00:00:00Z",
-     "note": "三軸重評（RUBRIC 2026-11-01）：Gustafsson-Guy 二重奏／Maya 小廠／自由即興",
-     "rarity": "epic"
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽非 ready → 5，L=95）4→5",
+     "rarity": "legendary"
     }
    },
-   "rarity": "legendary",
+   "rarity": "epic",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "evidenceUrls": [],
-    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 95），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。自由即興二重奏，屬5星前衛；壓量無據不足流亡",
+    "evidenceUrls": [
+     "https://www.last.fm/music/Mats%20Gustafsson%20%26%20Barry%20Guy/Frogging",
+     "https://musicbrainz.org/release-group/e4432d00-a3e7-41d1-bb76-433e93187ba2"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 95），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "蛙的學名當曲名，一把貝斯對上五支管樂器。與妻子 Maya Homburger 經營 Maya Recordings 的貝斯手 Barry Guy，就是那把貝斯。吹管的是瑞典的 Mats Gustafsson：兩款薩克斯風、長笛、flageolet 與 fluteophone，從幾乎聽不見的氣息，一路吹到男中音上的拍舌。1997 年 6 月 19 日下午，兩人進芝加哥 AirWave 錄音。〈Hyla Gratiosa〉最長，有 15 分 14 秒；同年交由 Maya 出版。",
@@ -1490,7 +1545,7 @@
     "descriptionKv": false,
     "albumOverride": false,
     "seedCards": false,
-    "apexPool": false
+    "apexPool": true
    }
   },
   {
@@ -1541,10 +1596,22 @@
    },
    "rarity": "epic",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "evidenceUrls": [],
-    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 7），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。L7有效，但壓量無據、無收藏圈聖杯地位依據；屬5星冷門，不到7",
+    "evidenceUrls": [
+     "https://www.last.fm/music/Ned%20Rothenberg/Trials%20of%20the%20Argo",
+     "https://musicbrainz.org/release-group/da54322e-4e60-4301-a2df-1375ba1e8850",
+     "https://www.discogs.com/release/1685802"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 7），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "A 面、B 面各一首長曲，每首約二十分鐘，只有一支薩克斯風。錄音時二十多歲的 Ned Rothenberg，獨力撐滿了兩面。A 面同名曲約 22 分鐘，1980 年錄成；B 面那首約 18 分半，錄於 1981 年，地點都在紐約。唱片記事寫明，所有聲音都是即時的原聲演奏。1981 年 Lumina 推出時，唱片獻給他已故的姊姊。",
@@ -1568,7 +1635,7 @@
     "descriptionKv": false,
     "albumOverride": false,
     "seedCards": false,
-    "apexPool": false
+    "apexPool": true
    }
   },
   {
@@ -1619,10 +1686,22 @@
    },
    "rarity": "epic",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "evidenceUrls": [],
-    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 18），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。L18有效，但壓量無據、無收藏圈聖杯地位依據；屬5星冷門，不到7",
+    "evidenceUrls": [
+     "https://www.last.fm/music/Ned%20Rothenberg/Trespass",
+     "https://musicbrainz.org/release-group/b62e4c79-cdf2-48ac-a15c-d02351ccb000",
+     "https://www.discogs.com/release/2395156"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 18），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "列在演奏者欄的，還有吹中音薩克斯風的 John Zorn。1985 年夏天，吹薩克斯風與低音單簧管的 Ned Rothenberg 走進紐約 Radio City 的錄音室，曲子全由他寫、也由他製作。A 面五首多在 3 到 6 分鐘之間，B 面則以三段組曲〈Kakeai〉開場。唱片 1986 年上市，廠牌是 Lumina。",
@@ -1647,7 +1726,7 @@
     "descriptionKv": false,
     "albumOverride": false,
     "seedCards": false,
-    "apexPool": false
+    "apexPool": true
    }
   },
   {

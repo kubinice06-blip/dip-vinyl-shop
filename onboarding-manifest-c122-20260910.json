@@ -33,23 +33,24 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 5,
+    "classic": 4,
     "obscurity": 3,
     "accessibility": 3,
     "listeners": 3499,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
     "previous": {
-     "classic": 4,
-     "obscurity": 4,
-     "accessibility": 4,
-     "source": "manual:depth-rubric",
-     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "classic": 5,
+     "obscurity": 3,
+     "accessibility": 3,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：NYHC 首張里程碑；L3499 下限3；極速原始硬蕊",
      "rarity": "epic"
     },
-    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：NYHC 首張里程碑；L3499 下限3；極速原始硬蕊"
+    "note": "全池稽核 audit-20261102（方案 C）：NYHC 早期 EP，歷史意義大但公認里程碑是 Victim in Pain｜L=3499"
    },
-   "rarity": "epic",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -540,10 +541,21 @@
    },
    "rarity": "rare",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。小廠／自發盤、聽眾<300，但壓量未見數百張以下的確據，也非收藏圈公認聖杯；只到 5",
+    "evidenceUrls": [
+     "https://www.last.fm/music/Krakdown/Krakdown",
+     "https://musicbrainz.org/release-group/8482e32a-5a41-39cf-b567-b0fea6c0c6d5"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "六軌合計八分五秒，開場的〈Freedom〉三十四秒。其餘五軌也沒有一首撐到兩分鐘，最長的〈We Need Change〉一分四十七秒。六個曲名排成一組遞進：自由、失望、被蒙住眼、生病的社會、我們需要改變、信任。廠牌欄寫的是 Common Cause，編號記為 NR-18183，名下就只有這一筆。",
@@ -565,8 +577,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -842,21 +854,22 @@
    "ratings": {
     "classic": 3,
     "obscurity": 5,
-    "accessibility": 3,
+    "accessibility": 4,
     "listeners": 208,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
     "previous": {
-     "classic": 4,
-     "obscurity": 4,
-     "accessibility": 4,
-     "source": "manual:depth-rubric",
-     "checkedAt": "2026-08-31T00:00:00.000Z",
-     "rarity": "epic"
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 3,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：L208 無試聽→5；Vermiform 7 吋；政治硬蕊龐克",
+     "rarity": "uncommon"
     },
-    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：L208 無試聽→5；Vermiform 7 吋；政治硬蕊龐克"
+    "note": "全池稽核 audit-20261102（方案 C）：Vermiform 小廠 7吋，但曲目收入 KRS 合輯有串流；hardcore 粗礪｜L=208"
    },
-   "rarity": "uncommon",
+   "rarity": "epic",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1348,10 +1361,21 @@
    },
    "rarity": "rare",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。L161有效，無廠牌demo卡帶，壓量無據、無聖杯名聲；5星",
+    "evidenceUrls": [
+     "https://www.last.fm/music/Vision%20of%20Disorder/Demo%20'93",
+     "https://musicbrainz.org/release-group/eab1d55a-3f34-4e55-82ae-1bca5aa33ebb"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "四軌合計十六分四十二秒，末尾的〈Society〉五分三十一秒。四首都超過三分鐘，開場的〈Formula for Failure〉4:34，中間排著〈7/13〉3:16 與〈Take Them Out〉3:21。廠牌欄被明確標成「沒有廠牌」，目錄編號欄是空的，包裝欄只寫了卡帶盒。開場那首兩年後又被錄過一次，收在同一掛名 1995 年那批錄音的數位版上，兩次的長度差八秒。",
@@ -1374,8 +1398,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -1427,10 +1451,21 @@
    },
    "rarity": "rare",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。無廠牌自發卡帶，壓量無據，非公認聖杯",
+    "evidenceUrls": [
+     "https://www.last.fm/music/Bulldoze/Cleaning%20Shit%20Up!!",
+     "https://musicbrainz.org/release-group/642337ab-cbd7-427c-a1d8-ae92370ba39c"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "後三軌每一首都超過四分鐘，末尾的〈Suffering〉五分零二秒。開場的〈The Truth〉2:30 是唯一低於四分鐘的一首，後面依序是〈Hypocrite〉4:54 與〈Herb〉4:11，四軌合計 16 分 37 秒。國別欄寫的不是任何一個國家而是無單一國別，廠牌欄與目錄編號欄整個是空的，能讀到的載體只有卡帶。三年後同一掛名那張十四軌的長篇，把這四首全部收了進去。",
@@ -1453,8 +1488,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -1994,10 +2029,21 @@
    },
    "rarity": "rare",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。無廠牌試聽帶，曲目多收入正式發行，1991 盜版流通；聖杯地位與壓量皆無據，只到 5",
+    "evidenceUrls": [
+     "https://www.last.fm/music/Gorilla%20Biscuits/demo%201987",
+     "https://musicbrainz.org/release-group/1c997f24-75ad-3b2b-bfaa-1891c79fa790"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "六軌裡的第四首直接拿團名當曲名。其餘五軌從〈No Reason Why〉起排，經過〈Better Than You〉〈Do It Yourself〉，收在〈Finish What You Started〉，實體欄位一軌長度都沒有記。廠牌欄填的是「沒有廠牌」，目錄編號欄記的是無。這是這個掛名目錄上最早的一筆錄音。",
@@ -2020,8 +2066,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -3352,10 +3398,21 @@
    },
    "rarity": "rare",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。小廠單版 CD EP，無聖杯傳說或壓量紀錄；聽眾 182 但不到傳說級稀有",
+    "evidenceUrls": [
+     "https://www.last.fm/music/108/Serve%20And%20Defy",
+     "https://musicbrainz.org/release-group/f08eebd1-287b-4d05-b48a-e2f09f0086eb"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "盤名的 And 是大寫，同一張碟第一軌的 and 卻是小寫。四軌合計 13 分 34 秒，同名的開場 4:05 最長、〈Arctic〉2:49 最短，兩者差七十六秒，四首沒有一首短於兩分四十五秒。這張碟只有一筆發行，載體是 CD、壓片國是德國，廠牌欄寫 Lost and Found、編號記為 LF 254。",
@@ -3377,8 +3434,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {

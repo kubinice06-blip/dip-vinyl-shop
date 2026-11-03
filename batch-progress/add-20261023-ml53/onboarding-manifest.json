@@ -926,24 +926,24 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 5,
+    "classic": 4,
     "obscurity": 2,
     "accessibility": 2,
     "listeners": 180766,
-    "source": "manual:rerate-20261101",
-    "checkedAt": "2026-11-01T00:00:00Z",
-    "note": "三軸重評（RUBRIC 2026-11-01）：拉丁葛萊美最佳 MPB 專輯，巴西首位跨性別得主，近年 MPB 里程碑；主流流通；管弦靈魂 MPB",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "note": "全池稽核 audit-20261102（方案 C）：巴西當代 MPB 重要作、拉丁葛萊美得獎，但僅 2021 年，缺長期共識；經典5→4｜L=180766",
     "previous": {
-     "classic": 3,
+     "classic": 5,
      "obscurity": 2,
-     "accessibility": 3,
-     "source": "worker /album-rating（obscurity:lastfm）",
-     "checkedAt": "2026-10-23T21:55:23Z",
-     "note": "機器基線 3/2/3（Last.fm listeners 180766）",
+     "accessibility": 2,
+     "source": "manual:rerate-20261101",
+     "checkedAt": "2026-11-01T00:00:00Z",
+     "note": "三軸重評（RUBRIC 2026-11-01）：拉丁葛萊美最佳 MPB 專輯，巴西首位跨性別得主，近年 MPB 里程碑；主流流通；管弦靈魂 MPB",
      "rarity": "uncommon"
     }
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -974,7 +974,7 @@
     "cardCatalog": false,
     "descriptionKv": false,
     "albumOverride": false,
-    "seedCards": false,
+    "seedCards": true,
     "apexPool": false
    }
   },

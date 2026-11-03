@@ -499,13 +499,21 @@
       },
       "rarity": "legendary",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "heresy",
-        "reason": "全碟母帶做成單一軌、約 51 分鐘不分軌，Discogs 標記 Noise／Experimental／Industrial，段落標題與勞工遊行現場錄音直接嵌入，無旋律與節拍可依附，符合異端的極端入耳難度。",
-        "evidenceUrls": [
-          "https://api.discogs.com/releases/1360708",
-          "https://musicbrainz.org/release-group/c653c34d-05c6-47e0-afc7-be22f3607542"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原異端未達該軸 7 星，降為一般卡。台灣噪音先驅，但無「史上最難入耳之一」國際公認依據，止於5",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "heresy",
+          "reason": "全碟母帶做成單一軌、約 51 分鐘不分軌，Discogs 標記 Noise／Experimental／Industrial，段落標題與勞工遊行現場錄音直接嵌入，無旋律與節拍可依附，符合異端的極端入耳難度。",
+          "evidenceUrls": [
+            "https://api.discogs.com/releases/1360708",
+            "https://musicbrainz.org/release-group/c653c34d-05c6-47e0-afc7-be22f3607542"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "1994 年由台北的 Noise 廠牌發行（NA 03），只壓四百張。母帶做成單一軌、約五十一分鐘不斷開，內部分成十二個標題段落，其中〈11:15 AM, June 29, 1994. Labor's Demonstration／Police's Declaration in Taipei〉直接嵌入那天台北勞工遊行與警方廣播的現場錄音。噪音、工業與電子器材的持續堆疊是全片唯一的語言，封面自稱 Made in Taiwan Noise Production。",
@@ -535,8 +543,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": false,
-        "apexPool": true
+        "seedCards": true,
+        "apexPool": false
       }
     },
     {
@@ -577,23 +585,40 @@
         "visuallyVerified": true
       },
       "ratings": {
-        "classic": 5,
+        "classic": 4,
         "obscurity": 4,
         "accessibility": 3,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-23T08:52:19Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；台灣出版史最後一張被行政院新聞局查禁的專輯，是解嚴後禁歌史的收尾事件，跨中文維基、聲軌與《造音翻土》多方記載。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：台灣地下搖滾 cult 作，場景里程碑而非人人必提；經典度 5→4",
+        "previous": {
+          "classic": 5,
+          "obscurity": 4,
+          "accessibility": 3,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-23T08:52:19Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；台灣出版史最後一張被行政院新聞局查禁的專輯，是解嚴後禁歌史的收尾事件，跨中文維基、聲軌與《造音翻土》多方記載。",
+          "rarity": "epic"
+        }
       },
-      "rarity": "epic",
+      "rarity": "uncommon",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "店主裁定升殿堂（2026-08-23）：台灣出版史最後一張被行政院新聞局查禁的專輯，解嚴後禁歌史的收尾事件；店主本人查閱過查禁的原始文件。中文維基〈趙一豪〉載新聞局以「歌詞粗俗不雅、有違社會善良風俗」為由查扣並發布新聞稿，該條目引用的一手整理是聲軌（soundtraces.tw）〈最後一張查禁專輯〉。研究階段因 soundtraces.tw 在遠端環境被 egress proxy 擋住無法實讀而保守判 false，此處依店主第一手查證改判；第二個證據網址是維基所引之來源，本環境未能親讀，店主已確認。",
-        "evidenceUrls": [
-          "https://zh.wikipedia.org/wiki/%E8%B6%99%E4%B8%80%E8%B1%AA",
-          "https://soundtraces.tw/media-publication/%E6%9C%80%E5%BE%8C%E4%B8%80%E5%BC%B5%E6%9F%A5%E7%A6%81%E5%B0%88%E8%BC%AF%E3%80%8A%E6%8A%8A%E6%88%91%E8%87%AA%E5%B7%B1%E6%8E%8F%E5%87%BA%E4%BE%86%E3%80%8B/"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。台灣地下搖滾代表，該國類型里程碑止於5",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "店主裁定升殿堂（2026-08-23）：台灣出版史最後一張被行政院新聞局查禁的專輯，解嚴後禁歌史的收尾事件；店主本人查閱過查禁的原始文件。中文維基〈趙一豪〉載新聞局以「歌詞粗俗不雅、有違社會善良風俗」為由查扣並發布新聞稿，該條目引用的一手整理是聲軌（soundtraces.tw）〈最後一張查禁專輯〉。研究階段因 soundtraces.tw 在遠端環境被 egress proxy 擋住無法實讀而保守判 false，此處依店主第一手查證改判；第二個證據網址是維基所引之來源，本環境未能親讀，店主已確認。",
+          "evidenceUrls": [
+            "https://zh.wikipedia.org/wiki/%E8%B6%99%E4%B8%80%E8%B1%AA",
+            "https://soundtraces.tw/media-publication/%E6%9C%80%E5%BE%8C%E4%B8%80%E5%BC%B5%E6%9F%A5%E7%A6%81%E5%B0%88%E8%BC%AF%E3%80%8A%E6%8A%8A%E6%88%91%E8%87%AA%E5%B7%B1%E6%8E%8F%E5%87%BA%E4%BE%86%E3%80%8B/"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "水晶唱片出版，1988 年錄音、1990 年發行，隨即被行政院新聞局以「歌詞粗俗不雅、有違社會善良風俗」查扣，是台灣出版史最後一張被查禁的專輯——新聞稿還寫下「屬於作者個人的情緒垃圾」。查禁後水晶改題《把我自己收回來》重發，把〈改變〉〈把我自己掏出來〉〈震動〉換成〈這幾天〉〈把我自己收回來〉〈創造〉三首新版。趙一豪同時是 Double X 成員。",
@@ -626,8 +651,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": false,
-        "apexPool": true
+        "seedCards": true,
+        "apexPool": false
       }
     },
     {
@@ -2005,15 +2030,24 @@
         "visuallyVerified": true
       },
       "ratings": {
-        "classic": 5,
+        "classic": 4,
         "obscurity": 3,
         "accessibility": 3,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-23T08:52:19Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；名列 1993–2005 台灣流行音樂百張最佳專輯、樂評長期高度評價的正典盤；電子搖滾編曲與情慾主題比她早期作品硬一些。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：藝人代表作級另類流行；非場景必提首選",
+        "previous": {
+          "classic": 5,
+          "obscurity": 3,
+          "accessibility": 3,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-23T08:52:19Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；名列 1993–2005 台灣流行音樂百張最佳專輯、樂評長期高度評價的正典盤；電子搖滾編曲與情慾主題比她早期作品硬一些。",
+          "rarity": "epic"
+        }
       },
-      "rarity": "epic",
+      "rarity": "uncommon",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -3597,13 +3631,22 @@
       "ratings": {
         "classic": 3,
         "obscurity": 4,
-        "accessibility": 3,
+        "accessibility": 2,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-23T08:52:19Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；1996 年成軍的台北車庫龐克團，海洋大賞與多屆金音獎入圍紀錄明確；生猛粗礪的唱奏與髒話曲名讓入耳門檻高於一般搖滾。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：台灣龐克樂團，場景二線｜L=954",
+        "previous": {
+          "classic": 3,
+          "obscurity": 4,
+          "accessibility": 3,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-23T08:52:19Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；1996 年成軍的台北車庫龐克團，海洋大賞與多屆金音獎入圍紀錄明確；生猛粗礪的唱奏與髒話曲名讓入耳門檻高於一般搖滾。",
+          "rarity": "rare"
+        }
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,

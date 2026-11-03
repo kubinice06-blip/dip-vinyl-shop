@@ -1046,6 +1046,7 @@
         </p>
         <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:14px;">
           <button class="gbtn" id="apexImportBtn">⬆ 匯入固定名單（跳過已存在）</button>
+          <button class="gbtn" id="apexSyncBtn" title="以 seed_cards.json 第 9 欄為準，補寫／清除 album_overrides.tier，並同步 apex_pool 的 tier／demoted">⇄ 依卡池同步頂點旗標</button>
           <button class="gbtn gbtn-primary" id="apexGenAllBtn">⚡⚡ 全部入庫（三分類）</button>
           <button class="gbtn" id="apexGenAllStopBtn" style="display:none;color:var(--red);">■ 停止</button>
           <span id="apexImportMsg" style="font-size:11px;color:var(--gray);"></span>
@@ -4029,6 +4030,49 @@ ${discogs ? '- Discogs：' + discogs : ''}
       msg.textContent = `✓ 已匯入 ${toAdd.length} 張`;
       await loadApexPool();
     } catch (e) { msg.textContent = '匯入失敗：' + (e.message || e); }
+    btn.disabled = false;
+  });
+
+  // 依卡池同步頂點旗標（2026-11-03 方案 C 套用後加）：卡池檔 seed_cards.json 第 9 欄是唯一真相，
+  // 雲端寫得了 card_catalog、寫不了管理員集合，所以 album_overrides.tier 與 apex_pool 由這顆補齊：
+  //   - 卡池有 tier、album_overrides.tier 不同 → merge 寫 tier
+  //   - 卡池沒 tier、album_overrides 卻有 tier → 刪 tier 欄（不在卡池的 id 不動）
+  //   - apex_pool：卡池有 tier → merge 寫 tier、清 demoted；卡池沒 tier 而 apex_pool 未降級 → 標 demoted
+  // 冪等：重按只會處理仍不一致的。
+  document.getElementById('apexSyncBtn')?.addEventListener('click', async () => {
+    const msg = document.getElementById('apexImportMsg');
+    const btn = document.getElementById('apexSyncBtn');
+    btn.disabled = true; msg.textContent = '比對卡池與 album_overrides／apex_pool…';
+    try {
+      const rows = await (await fetch('seed_cards.json?v=' + Date.now())).json();
+      const poolTier = new Map();
+      for (const r of (rows || [])) poolTier.set(ovCardId(r[0], r[1]), { artist: r[0], album: r[1], tier: r[8] || null });
+      const [ovSnap, apSnap] = await Promise.all([getDocs(collection(db, 'album_overrides')), getDocs(collection(db, 'apex_pool'))]);
+      const ov = new Map(ovSnap.docs.map(d => [d.id, d.data()]));
+      const ap = new Map(apSnap.docs.map(d => [d.id, d.data()]));
+      const ops = [];
+      for (const [id, p] of poolTier) {
+        const o = ov.get(id), a = ap.get(id);
+        if (p.tier) {
+          if (!o || o.tier !== p.tier) ops.push(['album_overrides', id, { artist: p.artist, album: p.album, tier: p.tier, updatedAt: Date.now() }]);
+          if (!a || a.tier !== p.tier || a.demoted) ops.push(['apex_pool', id, { artist: p.artist, album: p.album, tier: p.tier, demoted: deleteField(), ...(a ? {} : { addedAt: Date.now() }) }]);
+        } else {
+          if (o && o.tier) ops.push(['album_overrides', id, { tier: deleteField(), updatedAt: Date.now() }]);
+          if (a && !a.demoted) ops.push(['apex_pool', id, { demoted: true, demotedAt: Date.now() }]);
+        }
+      }
+      const n = c => ops.filter(x => x[0] === c).length;
+      if (!ops.length) { msg.textContent = '✓ 已一致，無需同步'; btn.disabled = false; return; }
+      if (!confirm(`依卡池同步頂點旗標：album_overrides ${n('album_overrides')} 筆、apex_pool ${n('apex_pool')} 筆。繼續？`)) { msg.textContent = ''; btn.disabled = false; return; }
+      for (let i = 0; i < ops.length; i += 400) {
+        const batch = writeBatch(db);
+        ops.slice(i, i + 400).forEach(([c, id, data]) => batch.set(doc(db, c, id), data, { merge: true }));
+        await batch.commit();
+        msg.textContent = `同步中… ${Math.min(i + 400, ops.length)}/${ops.length}`;
+      }
+      msg.textContent = `✓ 已同步 album_overrides ${n('album_overrides')}、apex_pool ${n('apex_pool')}`;
+      await loadApexPool();
+    } catch (e) { msg.textContent = '同步失敗：' + (e.message || e); }
     btn.disabled = false;
   });
 

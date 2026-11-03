@@ -111,19 +111,19 @@
    "ratings": {
     "classic": 4,
     "obscurity": 5,
-    "accessibility": 5,
+    "accessibility": 4,
     "listeners": 673,
-    "source": "manual:rerate-20261101",
-    "checkedAt": "2026-11-01T00:00:00Z",
-    "note": "三軸重評（RUBRIC 2026-11-01）：Bennink 首張獨奏、ICP 手工封套自錄於馬廄；ICP 極小廠無串流再發；鼓與雜器擬聲拼貼，極端",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "note": "全池稽核 audit-20261102（方案 C）：ICP鼓手全樂器獨奏、拼貼與幽默；4；L673無串流→5｜L=673",
     "previous": {
-     "classic": 3,
+     "classic": 4,
      "obscurity": 5,
-     "accessibility": 3,
-     "source": "worker /album-rating（obscurity:lastfm）",
-     "checkedAt": "2026-10-23T11:30:47Z",
-     "note": "機器基線 3/5/3（Last.fm listeners 673）",
-     "rarity": "uncommon"
+     "accessibility": 5,
+     "source": "manual:rerate-20261101",
+     "checkedAt": "2026-11-01T00:00:00Z",
+     "note": "三軸重評（RUBRIC 2026-11-01）：Bennink 首張獨奏、ICP 手工封套自錄於馬廄；ICP 極小廠無串流再發；鼓與雜器擬聲拼貼，極端",
+     "rarity": "legendary"
     }
    },
    "rarity": "legendary",
@@ -205,10 +205,21 @@
    },
    "rarity": "epic",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "evidenceUrls": [],
-    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 127），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。小廠／自發盤、聽眾<300，但壓量未見數百張以下的確據，也非收藏圈公認聖杯；只到 5",
+    "evidenceUrls": [
+     "https://www.last.fm/music/Han%20Bennink/Tempo%20Comodo",
+     "https://musicbrainz.org/release-group/a4543044-555a-4e44-ae3b-ec885031bb32"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 127），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "丟鼓棒、拍身體，曲名直接寫出手法。樂器欄上，來自荷蘭的鼓手 Han Bennink 只登了「鼓」與「其他東西」兩項。〈Dropsticks〉〈Body Claps And Hums〉都不到 1 分鐘，篇幅最大的是〈Traps〉三段，各四、五分鐘。1982 年 9 月 15 日、20 日共兩天，Loenen 留下了這 15 首。",
@@ -231,8 +242,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -282,10 +293,21 @@
    },
    "rarity": "legendary",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "evidenceUrls": [],
-    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 4），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。非慣用語法即興經典，但屬一般前衛自由即興範疇，不到反音樂里程碑級，僅 5",
+    "evidenceUrls": [
+     "https://www.last.fm/music/Derek%20Bailey%20%26%20Han%20Bennink/Han%20Bennink%20%26%20Derek%20Bailey",
+     "https://musicbrainz.org/release-group/a0a4ebc4-fa2d-4a7c-b68c-321e49ce61b4"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 4），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "幾張初版封套，鼓手親手用膠水畫上了螺旋。那位鼓手是荷蘭人 Han Bennink，1969 年 7 月 30 日走進 Nederhorst den Berg 一間錄音室，與 1930 年生的英國吉他手 Derek Bailey 錄下即興二重奏。ICP 在 1971 年出版這張二重奏，目錄號 I.C.P. 004；Bennink 手繪的那一小批封套上，除了螺旋也有字母。鼓之外，他還吹海螺號，以及一種長長的錫製非洲小號。",
@@ -309,8 +331,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -360,10 +382,21 @@
    },
    "rarity": "legendary",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "evidenceUrls": [],
-    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 4），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。小廠／自發盤、聽眾<300，但壓量未見數百張以下的確據，也非收藏圈公認聖杯；只到 5",
+    "evidenceUrls": [
+     "https://www.last.fm/music/Han%20Bennink%20%2F%20Misha%20Mengelberg%20%2F%20John%20Tchicai/Instant%20Composers%20Pool",
+     "https://musicbrainz.org/release-group/44be6309-6a33-48d6-8d84-82622454d37c"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 4），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "鋼琴手替廠牌取名：即興，就是當下作曲。Instant Composers Pool 這個名字出自荷蘭鋼琴手 Misha Mengelberg，廠牌在 1967 年由他與鼓手 Han Bennink 等人創辦。1968 年 5 月 13、14 日，生於哥本哈根的中音薩克斯風手 John Tchicai 來到 Zeist，與兩人以三重奏錄下同名唱片，盤號定為 ICP 002。",
@@ -388,8 +421,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -500,19 +533,19 @@
    "ratings": {
     "classic": 4,
     "obscurity": 5,
-    "accessibility": 5,
+    "accessibility": 4,
     "listeners": 285,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
-    "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽非 ready → 5，L=285）4→5",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "note": "全池稽核 audit-20261102（方案 C）：教堂殘響中高音分裂音/循環換氣獨奏；Cafe Oto有再發說明；4｜L=285",
     "previous": {
      "classic": 4,
-     "obscurity": 4,
+     "obscurity": 5,
      "accessibility": 5,
-     "source": "manual:rerate-20261101",
-     "checkedAt": "2026-11-01T00:00:00Z",
-     "note": "三軸重評（RUBRIC 2026-11-01）：Penguin Guide 稱強烈聚焦、BBC 稱開《Lines Burnt》先河；Incus 原發，Otoroku 2021 再發；循環換氣高音薩獨奏",
-     "rarity": "epic"
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽非 ready → 5，L=285）4→5",
+     "rarity": "legendary"
     }
    },
    "rarity": "legendary",
@@ -576,20 +609,20 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 5,
+    "classic": 4,
     "obscurity": 5,
     "accessibility": 5,
     "listeners": 702,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
-    "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽非 ready → 5，L=702）4→5",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "note": "全池稽核 audit-20261102（方案 C）：高音薩克斯獨奏長篇循環換氣，極端；殿堂不成立，改判異端｜L=702",
     "previous": {
      "classic": 5,
-     "obscurity": 4,
+     "obscurity": 5,
      "accessibility": 5,
-     "source": "manual:rerate-20261101",
-     "checkedAt": "2026-11-01T00:00:00Z",
-     "note": "三軸重評（RUBRIC 2026-11-01）：Parker 高音薩獨奏最常被推的代表作，Penguin 盛讚錄音、衛報 Top5；Incus 原發 psi 再發；偽複音獨奏",
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽非 ready → 5，L=702）4→5",
      "rarity": "legendary"
     }
    },
@@ -654,19 +687,19 @@
    "ratings": {
     "classic": 4,
     "obscurity": 5,
-    "accessibility": 5,
+    "accessibility": 4,
     "listeners": 488,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
-    "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽非 ready → 5，L=488）4→5",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "note": "全池稽核 audit-20261102（方案 C）：Holywell廳高音循環換氣長篇獨奏，密集但近似持續音流，4；L488無串流→5｜L=488",
     "previous": {
      "classic": 4,
-     "obscurity": 4,
+     "obscurity": 5,
      "accessibility": 5,
-     "source": "manual:rerate-20261101",
-     "checkedAt": "2026-11-01T00:00:00Z",
-     "note": "三軸重評（RUBRIC 2026-11-01）：AllMusic、Coda 皆盛讚的 Holywell 獨奏；Ah Um 小廠；70 分鐘循環換氣泛音流",
-     "rarity": "epic"
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽非 ready → 5，L=488）4→5",
+     "rarity": "legendary"
     }
    },
    "rarity": "legendary",
@@ -729,22 +762,22 @@
    "ratings": {
     "classic": 3,
     "obscurity": 5,
-    "accessibility": 5,
+    "accessibility": 4,
     "listeners": 392,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
-    "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽非 ready → 5，L=392）4→5",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "note": "全池稽核 audit-20261102（方案 C）：多軌疊錄高音獨奏、FMP；4；L392無串流→5｜L=392",
     "previous": {
      "classic": 3,
-     "obscurity": 4,
+     "obscurity": 5,
      "accessibility": 5,
-     "source": "manual:rerate-20261101",
-     "checkedAt": "2026-11-01T00:00:00Z",
-     "note": "三軸重評（RUBRIC 2026-11-01）：首度多軌疊錄的獨奏，轉向電子化的節點但非首推；FMP 小廠；疊錄高音薩即興",
-     "rarity": "epic"
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽非 ready → 5，L=392）4→5",
+     "rarity": "legendary"
     }
    },
-   "rarity": "legendary",
+   "rarity": "epic",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -805,19 +838,19 @@
    "ratings": {
     "classic": 4,
     "obscurity": 5,
-    "accessibility": 5,
+    "accessibility": 4,
     "listeners": 138,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
-    "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽非 ready → 5，L=138）3→5",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "note": "全池稽核 audit-20261102（方案 C）：Parker首張完整次中音獨奏，Penguin肯定；即興但線條清楚，4｜L=138",
     "previous": {
      "classic": 4,
-     "obscurity": 3,
+     "obscurity": 5,
      "accessibility": 5,
-     "source": "manual:rerate-20261101",
-     "checkedAt": "2026-11-01T00:00:00Z",
-     "note": "三軸重評（RUBRIC 2026-11-01）：首張完整次中音獨奏，Penguin Guide 肯定；Okka Disk 正規小廠 CD；強烈無伴奏即興",
-     "rarity": "epic"
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽非 ready → 5，L=138）3→5",
+     "rarity": "legendary"
     }
    },
    "rarity": "legendary",
@@ -899,10 +932,22 @@
    },
    "rarity": "legendary",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "evidenceUrls": [],
-    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 43），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。非慣用語法自由即興名盤，但自由即興屬 5 星範疇",
+    "evidenceUrls": [
+     "https://www.last.fm/music/Company/Company%202",
+     "https://musicbrainz.org/release-group/81289306-3d04-4851-bf41-d17a73b98764",
+     "https://www.discogs.com/release/470747"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 43），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "高音、中音薩克斯風再加三種單簧管，全是同一個人吹。那人是 Anthony Braxton，三種單簧管分別是降 E 調、降 B 調與低音單簧管。他與吉他手 Derek Bailey 早在 1974 年就錄過二重奏，這一回則加入 Bailey 發起的即興計畫 Company，同台還有薩克斯風手 Evan Parker。1976 年 8 月 22 日，三人進倫敦的 Riverside Studios 錄成五首，隔年交由 Incus 發行。",
@@ -924,8 +969,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -975,10 +1020,21 @@
    },
    "rarity": "legendary",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "evidenceUrls": [],
-    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 53），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。Company 非代表作，自由即興 5",
+    "evidenceUrls": [
+     "https://www.last.fm/music/Company/Fables",
+     "https://musicbrainz.org/release-group/9201b6df-2bad-31a8-833e-959fc07ba064"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 53），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "最年輕的那位是 27 歲的長號手 George Lewis。Company 是 Derek Bailey 的合作計畫，專把平常不同台的樂手配成新組合。這回湊在一起的是 Bailey 的吉他、Evan Parker 的薩克斯風、Dave Holland 的貝斯，再加上生於芝加哥、19 歲就入了 AACM 的 Lewis。1980 年 5 月，四人在倫敦的 Art Workers' Guild 連錄兩天，編制只有弦與管兩類樂器。",
@@ -1003,8 +1059,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -1055,10 +1111,22 @@
    },
    "rarity": "legendary",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "evidenceUrls": [],
-    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 18），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。Bailey 獨奏代表作，極端但仍屬自由即興 5 星錨點（Cecil Taylor 級），非 7",
+    "evidenceUrls": [
+     "https://www.last.fm/music/Derek%20Bailey/Lot%2074%20Solo%20Improvisations",
+     "https://musicbrainz.org/release-group/ef6d94ce-f539-4b94-a827-5bae86eec4dd",
+     "https://www.discogs.com/release/807204"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 18），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "A 面接立體聲電聲組合，B 面有兩首改彈約 19 弦吉他。「非慣用語法」是 Derek Bailey 替自己的音樂取的稱呼，指以無調與噪音即興的吉他。A 面的〈Lot 74〉長約 22 分鐘；B 面那兩首的吉他未經擴音，〈In Joke〉裡還夾著回授與幾句閒聊。A 面 1974 年 5 月 13 日錄於 Catford 的一戶民宅，B 面則在他位於 Hackney 的家裡錄成。首批測試片聽來發悶，原因是切片工程師把母帶上下顛倒放了。",
@@ -1084,8 +1152,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -1215,10 +1283,21 @@
    },
    "rarity": "epic",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "evidenceUrls": [],
-    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 20），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。只有黑膠、Emanem拒絕重發，但壓量無據、無聖杯地位依據",
+    "evidenceUrls": [
+     "https://www.last.fm/music/Spontaneous%20Music%20Ensemble/So%2C%20What%20Do%20You%20Think%3F",
+     "https://musicbrainz.org/release-group/b2d4a67f-68c8-4568-a086-e61b83331810"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 20），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "嫌打擊樂壓過了混音，Emanem 的主事者始終不肯重發。召集人 John Stevens 本身就是鼓手，1965 年在倫敦拉起 Spontaneous Music Ensemble 這支即興團。1971 年，五人在 Tangent 錄下兩段長篇，陣容與 1968 年的《Karyobin》只差一人：Trevor Watts 頂替了 Evan Parker。唱片拖到 1973 年才出版。",
@@ -1240,8 +1319,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -1291,10 +1370,21 @@
    },
    "rarity": "legendary",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "evidenceUrls": [],
-    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 1），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。獨奏低音提琴擴展技法，自由即興 5 星範疇",
+    "evidenceUrls": [
+     "https://www.last.fm/music/Barry%20Guy/Statements%20V%E2%80%90XI%20for%20Double%20Bass%20%26%20Violone",
+     "https://musicbrainz.org/release-group/6f7808ee-b3b2-4ea6-a451-4d299ca1ab5c"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 1），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "低音提琴加一把 violone，他獨自錄完七首。Barry Guy 1947 年生於倫敦，在 Guildhall School 學習，興趣橫跨早期音樂、當代作曲與即興。他 1976 年 10 月 30 日進 Riverside Studios，錄下的是系列作《Statements》的第 V 到第 XI 號。樂評形容他以打擊式的手法與高難度技巧，擴充了低音提琴能發出的聲音。Incus 在隔年替它出版。",
@@ -1318,8 +1408,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -1436,19 +1526,19 @@
    "ratings": {
     "classic": 4,
     "obscurity": 5,
-    "accessibility": 5,
+    "accessibility": 4,
     "listeners": 37,
-    "source": "manual:rerate-20261101",
-    "checkedAt": "2026-11-01T00:00:00Z",
-    "note": "三軸重評（RUBRIC 2026-11-01）：Toop／Beresford／Cusack／Day 唯一團體首作；Bead 只壓 500 張；玩具樂器拼貼式即興",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "note": "全池稽核 audit-20261102（方案 C）：500 張私壓、無串流；玩具樂器幽默自由即興，難但不到 5｜L=37",
     "previous": {
-     "classic": 3,
+     "classic": 4,
      "obscurity": 5,
-     "accessibility": 3,
-     "source": "worker /album-rating（obscurity:lastfm）",
-     "checkedAt": "2026-10-23T11:30:47Z",
-     "note": "機器基線 3/5/3（Last.fm listeners 37）",
-     "rarity": "uncommon"
+     "accessibility": 5,
+     "source": "manual:rerate-20261101",
+     "checkedAt": "2026-11-01T00:00:00Z",
+     "note": "三軸重評（RUBRIC 2026-11-01）：Toop／Beresford／Cusack／Day 唯一團體首作；Bead 只壓 500 張；玩具樂器拼貼式即興",
+     "rarity": "legendary"
     }
    },
    "rarity": "legendary",
@@ -1590,21 +1680,21 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 4,
+    "classic": 3,
     "obscurity": 5,
     "accessibility": 5,
     "listeners": 10,
-    "source": "manual:rerate-20261101",
-    "checkedAt": "2026-11-01T00:00:00Z",
-    "note": "三軸重評（RUBRIC 2026-11-01）：Lytton 打擊＋現場電子獨奏代表；Po Torch 全目錄 16 張 LP、無 CD 無重發；即興噪音",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "note": "全池稽核 audit-20261102（方案 C）：獨奏打擊＋現場電子自由即興，聽眾 10、無串流→5；未查到評論依據｜L=10",
     "previous": {
-     "classic": 3,
+     "classic": 4,
      "obscurity": 5,
-     "accessibility": 3,
-     "source": "worker /album-rating（obscurity:lastfm）",
-     "checkedAt": "2026-10-23T11:30:47Z",
-     "note": "機器基線 3/5/3（Last.fm listeners 10）",
-     "rarity": "uncommon"
+     "accessibility": 5,
+     "source": "manual:rerate-20261101",
+     "checkedAt": "2026-11-01T00:00:00Z",
+     "note": "三軸重評（RUBRIC 2026-11-01）：Lytton 打擊＋現場電子獨奏代表；Po Torch 全目錄 16 張 LP、無 CD 無重發；即興噪音",
+     "rarity": "legendary"
     }
    },
    "rarity": "legendary",
@@ -1669,21 +1759,21 @@
     "visuallyVerified": true
    },
    "ratings": {
-    "classic": 4,
+    "classic": 3,
     "obscurity": 5,
     "accessibility": 5,
     "listeners": 97,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
-    "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽非 ready → 5，L=97）4→5",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "note": "全池稽核 audit-20261102（方案 C）：99 首 howling voice 圖鑑，聲響近數位噪音→5；依據僅廠牌文案，無獨立單盤評述→none。97 無串流→5｜L=97",
     "previous": {
      "classic": 4,
-     "obscurity": 4,
+     "obscurity": 5,
      "accessibility": 5,
-     "source": "manual:rerate-20261101",
-     "checkedAt": "2026-11-01T00:00:00Z",
-     "note": "三軸重評（RUBRIC 2026-11-01）：吉田實質首張個人作、日本音響派人聲圖鑑；IMJ 小廠限量；99 段微細噪音發聲",
-     "rarity": "epic"
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽非 ready → 5，L=97）4→5",
+     "rarity": "legendary"
     }
    },
    "rarity": "legendary",

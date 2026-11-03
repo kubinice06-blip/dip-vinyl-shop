@@ -1298,10 +1298,21 @@
    },
    "rarity": "legendary",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "evidenceUrls": [],
-    "reason": "已評估：classic 3、obscurity 3、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。小廠／自發盤、聽眾<300，但壓量未見數百張以下的確據，也非收藏圈公認聖杯；只到 5",
+    "evidenceUrls": [
+     "https://www.last.fm/music/Harry%20Tavitian%20%26%20Corneliu%20Stroe/Transylvanian%20Suite",
+     "https://musicbrainz.org/release-group/6879b549-5ade-4fe0-85ce-8fbc4680798e"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：classic 3、obscurity 3、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "兩場羅馬尼亞現場錄音，最後在倫敦的廠牌出版。二重奏由鋼琴手 Harry Tavitian 與鼓手 Corneliu Stroe 組成。1985 年 2 月 10 日布加勒斯特的舞台之後，3 月 24 日又到錫比烏爵士節，共錄下四首長曲。接手的是倫敦的 Leo Records，1986 年出片，這家廠專出自由爵士與蘇聯前衛音樂。Stroe 除了打鼓，也吹牧羊人長笛與低音號。1994 年 Tavitian 在國內自費把同兩場錄音重發在空白卡帶上。",
@@ -1326,8 +1337,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -1455,10 +1466,21 @@
    },
    "rarity": "rare",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "evidenceUrls": [],
-    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。L6有效，但壓量無據、無收藏圈聖杯地位依據；屬5星冷門，不到7",
+    "evidenceUrls": [
+     "https://www.last.fm/music/Mircea%20Tiberian/Alone%20in%20Heaven",
+     "https://musicbrainz.org/release-group/dfeb5622-2b55-4032-ae9f-92ab6915b1d8"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "片名是獨自在天堂，演奏卻是四重奏。1990 年創立布加勒斯特大學爵士系的，正是 Mircea Tiberian。這批音樂 1996 年 11 月錄好，1998 年才交給 Intercont Music 發行。鋼琴、作曲、編曲都歸他，薩克斯風、貝斯、鼓各一人。11 首長短懸殊，最短的〈My City〉只有 1 分 44 秒，最長的接近 9 分鐘。",
@@ -1481,8 +1503,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -3039,22 +3061,22 @@
    "ratings": {
     "classic": 3,
     "obscurity": 5,
-    "accessibility": 3,
+    "accessibility": 4,
     "listeners": 14,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
-    "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽非 ready → 5，L=14）3→5",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "note": "全池稽核 audit-20261102（方案 C）：Balkanton 國營廠，Discogs 標 free jazz；非極小廠｜L=14",
     "previous": {
      "classic": 3,
-     "obscurity": 3,
+     "obscurity": 5,
      "accessibility": 3,
-     "source": "manual:rerate-20261101",
-     "checkedAt": "2026-11-01T00:00:00Z",
-     "note": "三軸重評（RUBRIC 2026-11-01）：資料少，Free Jazz 標籤但含合成器；國營廠；長篇當代爵士",
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽非 ready → 5，L=14）3→5",
      "rarity": "uncommon"
     }
    },
-   "rarity": "uncommon",
+   "rarity": "epic",
    "apexAssessment": {
     "eligible": false,
     "tier": null,

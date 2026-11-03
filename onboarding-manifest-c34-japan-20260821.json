@@ -743,12 +743,21 @@
       },
       "ratings": {
         "classic": 4,
-        "obscurity": 2,
+        "obscurity": 3,
         "accessibility": 1,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-21T20:55:47Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Oricon 冠軍、在榜 178 週的首張百萬銷量作，由山下達郎製作，十首中五首是她提供給他人的曲子的自我翻唱，企劃在當時罕見。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：竹內瑪莉亞代表作，日本暢銷｜L=1723",
+        "previous": {
+          "classic": 4,
+          "obscurity": 2,
+          "accessibility": 1,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-21T20:55:47Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Oricon 冠軍、在榜 178 週的首張百萬銷量作，由山下達郎製作，十首中五首是她提供給他人的曲子的自我翻唱，企劃在當時罕見。",
+          "rarity": "common"
+        }
       },
       "rarity": "common",
       "apexAssessment": {
@@ -1209,14 +1218,23 @@
       },
       "ratings": {
         "classic": 4,
-        "obscurity": 3,
-        "accessibility": 2,
+        "obscurity": 4,
+        "accessibility": 1,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-21T20:55:47Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；松本隆製作、はっぴいえんど班底伴奏的 1973 年出道作，常被當成都會流行歌的早期源頭之一"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：首作，松本隆製作，city pop 源流｜L=283",
+        "previous": {
+          "classic": 4,
+          "obscurity": 3,
+          "accessibility": 2,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-21T20:55:47Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；松本隆製作、はっぴいえんど班底伴奏的 1973 年出道作，常被當成都會流行歌的早期源頭之一",
+          "rarity": "rare"
+        }
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -2336,23 +2354,40 @@
       },
       "ratings": {
         "classic": 5,
-        "obscurity": 1,
+        "obscurity": 2,
         "accessibility": 1,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-21T20:55:47Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；累計164萬張、1980年代日本銷量最高的專輯，〈ルビーの指環〉囊括第23回日本唱片大賞大賞與作詞／作曲／編曲三獎，二手店鐵板在庫"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：百萬銷量與唱片大賞，商業里程碑；缺跨來源樂評正典共識，殿堂不成立",
+        "previous": {
+          "classic": 5,
+          "obscurity": 1,
+          "accessibility": 1,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-21T20:55:47Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；累計164萬張、1980年代日本銷量最高的專輯，〈ルビーの指環〉囊括第23回日本唱片大賞大賞與作詞／作曲／編曲三獎，二手店鐵板在庫",
+          "rarity": "rare"
+        }
       },
       "rarity": "rare",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "銷量刷新井上陽水《氷の世界》紀錄並保持到1990年，單曲同時橫掃日本唱片大賞大賞與作詞作曲編曲三賞、《ザ・ベストテン》連續12週冠軍，日英文百科與銷量榜單多來源長期記載其史上定位",
-        "evidenceUrls": [
-          "https://en.wikipedia.org/wiki/Reflections_(Akira_Terao_album)",
-          "https://en.wikipedia.org/wiki/List_of_best-selling_albums_of_the_1980s_(Japan)",
-          "https://ja.wikipedia.org/wiki/%E3%83%AB%E3%83%93%E3%83%BC%E3%81%AE%E6%8C%87%E7%92%B0"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。商業里程碑，國內級",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "銷量刷新井上陽水《氷の世界》紀錄並保持到1990年，單曲同時橫掃日本唱片大賞大賞與作詞作曲編曲三賞、《ザ・ベストテン》連續12週冠軍，日英文百科與銷量榜單多來源長期記載其史上定位",
+          "evidenceUrls": [
+            "https://en.wikipedia.org/wiki/Reflections_(Akira_Terao_album)",
+            "https://en.wikipedia.org/wiki/List_of_best-selling_albums_of_the_1980s_(Japan)",
+            "https://ja.wikipedia.org/wiki/%E3%83%AB%E3%83%93%E3%83%BC%E3%81%AE%E6%8C%87%E7%92%B0"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "演員寺尾聰（父為宇野重吉）1960年代曾在ザ・サベージ彈貝斯，1981年4月這張東芝EMI／EXPRESS 專輯讓他重回音樂本業。全碟由井上鑑編曲，收錄松本隆作詞的〈ルビーの指環〉——該曲在《ザ・ベストテン》連續12週奪冠，年底囊括第23回日本唱片大賞的大賞、作詞、作曲與編曲各獎；〈SHADOW CITY〉〈出航 SASURAI〉也在同期連帶走紅。專輯累計164萬張，刷新井上陽水《氷の世界》紀錄，成為1980年代日本銷量最高的專輯。",
@@ -2386,8 +2421,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": false,
-        "apexPool": true
+        "seedCards": true,
+        "apexPool": false
       }
     },
     {
@@ -5461,15 +5496,24 @@
         "visuallyVerified": true
       },
       "ratings": {
-        "classic": 5,
+        "classic": 4,
         "obscurity": 3,
         "accessibility": 2,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-21T20:55:47Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；オリコン專輯榜連續二十週第一、與次作合計三十七週的可查證紀錄，並確立「怨歌」一路的開創地位。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：出道作，聲勢不及《女のブルース》",
+        "previous": {
+          "classic": 5,
+          "obscurity": 3,
+          "accessibility": 2,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-21T20:55:47Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；オリコン專輯榜連續二十週第一、與次作合計三十七週的可查證紀錄，並確立「怨歌」一路的開創地位。",
+          "rarity": "uncommon"
+        }
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -6404,14 +6448,22 @@
       },
       "rarity": "uncommon",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "日語搖滾第一張作品的定位有跨來源長期共識，並獲《ニューミュージック・マガジン》日本搖滾獎，論爭本身即為樂史事件。",
-        "evidenceUrls": [
-          "https://ja.wikipedia.org/wiki/はっぴいえんど_(アルバム)",
-          "https://en.wikipedia.org/wiki/Happy_End_(band)",
-          "https://musicbrainz.org/release-group/562cca67-d8eb-3d2b-b49c-2116803f2dd4"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。日語搖滾起點，日本國內正典（5）",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "日語搖滾第一張作品的定位有跨來源長期共識，並獲《ニューミュージック・マガジン》日本搖滾獎，論爭本身即為樂史事件。",
+          "evidenceUrls": [
+            "https://ja.wikipedia.org/wiki/はっぴいえんど_(アルバム)",
+            "https://en.wikipedia.org/wiki/Happy_End_(band)",
+            "https://musicbrainz.org/release-group/562cca67-d8eb-3d2b-b49c-2116803f2dd4"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "はっぴいえんど1970年8月5日由 URC 發行的首作（URL-1015），封面用林静一畫的「ゆでめん」招牌，作品因此得名。細野晴臣、大瀧詠一、松本隆、鈴木茂以 Buffalo Springfield 與 Moby Grape 為聲響底本，把日語詞放進搖滾節奏裡，〈春よ来い〉〈12月の雨の日〉〈敵タナトスを想起せよ!〉是其成果。翌年獲《ニューミュージック・マガジン》第二屆日本搖滾獎，內田裕也對評選的異議由此擴大成日語搖滾論爭。",
@@ -6444,8 +6496,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": false,
-        "apexPool": true
+        "seedCards": true,
+        "apexPool": false
       }
     },
     {
@@ -6664,13 +6716,22 @@
         "visuallyVerified": true
       },
       "ratings": {
-        "classic": 4,
+        "classic": 5,
         "obscurity": 3,
-        "accessibility": 2,
+        "accessibility": 1,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-21T20:55:47Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；樂團首張雙唱片、黑膠期集大成之作，錄音一千八百小時，〈Bye Bye My Love〉〈メロディ〉出處。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：南天群星評價最高之作，日本榜單常客｜L=2487",
+        "previous": {
+          "classic": 4,
+          "obscurity": 3,
+          "accessibility": 2,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-21T20:55:47Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；樂團首張雙唱片、黑膠期集大成之作，錄音一千八百小時，〈Bye Bye My Love〉〈メロディ〉出處。",
+          "rarity": "rare"
+        }
       },
       "rarity": "rare",
       "apexAssessment": {
@@ -7460,15 +7521,24 @@
         "note": "原釘到 2005《ラプソディー ネイキッド》完全版（Album+Live），封面抓成 2021 Deluxe Edition；改釘 1980 久保講堂現場盤的 RG（MB 題《RHAPSODY》，Album+Live），封面實測 307。注意 MB first-release 顯示 1987-04-25 是 CD 再版日，原盤為 1980 年"
       },
       "ratings": {
-        "classic": 5,
-        "obscurity": 2,
+        "classic": 4,
+        "obscurity": 3,
         "accessibility": 2,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-21T20:55:47Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；1980年久保講堂現場盤，Rolling Stone Japan「日本搖滾百大專輯」第2名，地位極高但發行量大、聽感直白。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：RC 突破之作的現場盤，代表作級；圈外少見，冷門度 3",
+        "previous": {
+          "classic": 5,
+          "obscurity": 2,
+          "accessibility": 2,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-21T20:55:47Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；1980年久保講堂現場盤，Rolling Stone Japan「日本搖滾百大專輯」第2名，地位極高但發行量大、聽感直白。",
+          "rarity": "uncommon"
+        }
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -7602,13 +7672,21 @@
       },
       "rarity": "uncommon",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "跨來源長期共識支持：Rolling Stone Japan 2007年百大日本搖滾專輯第11名，並經日文條目記載大滝詠一、沢田研二等同業推舉與長期現場定番地位。",
-        "evidenceUrls": [
-          "https://en.wikipedia.org/wiki/Motoharu_Sano",
-          "https://ja.wikipedia.org/wiki/SOMEDAY_(佐野元春のアルバム)"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。日本搖滾名盤，國內級",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "跨來源長期共識支持：Rolling Stone Japan 2007年百大日本搖滾專輯第11名，並經日文條目記載大滝詠一、沢田研二等同業推舉與長期現場定番地位。",
+          "evidenceUrls": [
+            "https://en.wikipedia.org/wiki/Motoharu_Sano",
+            "https://ja.wikipedia.org/wiki/SOMEDAY_(佐野元春のアルバム)"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "1982年5月21日由EPIC・ソニー發行的第三張作品，也是佐野元春首度自製的專輯。他日後受訪說過，當時已打定主意「這張再賣不動就收手」。〈Sugartime〉原本寫成抗議歌，在唱片公司要求下改寫為現在的流行版本；〈ヴァニティ・ファクトリー〉與〈アイム・イン・ブルー〉是1980年給沢田研二的提供曲，沢田本人還在前者掛合聲。〈Rock & Roll Night〉與同名曲〈SOMEDAY〉至今是他演出的必備曲目。作品獲大滝詠一等同業推舉，オリコン最高第4名；2007年被Rolling Stone Japan列為日本搖滾百大專輯第11名。",
@@ -7641,8 +7719,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": false,
-        "apexPool": true
+        "seedCards": true,
+        "apexPool": false
       }
     },
     {
@@ -7666,13 +7744,22 @@
       "ratings": {
         "classic": 5,
         "obscurity": 2,
-        "accessibility": 3,
+        "accessibility": 2,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-21T20:55:47Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；把rap與spoken word手法帶進日語演唱的轉折作，オリコン兩週冠軍，發表時賛否両論、聽感遠比同期流行盤生硬。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：佐野元春代表作，日語饒舌化里程碑；整體仍易聽，硬蕊3→2",
+        "previous": {
+          "classic": 5,
+          "obscurity": 2,
+          "accessibility": 3,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-21T20:55:47Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；把rap與spoken word手法帶進日語演唱的轉折作，オリコン兩週冠軍，發表時賛否両論、聽感遠比同期流行盤生硬。",
+          "rarity": "epic"
+        }
       },
-      "rarity": "epic",
+      "rarity": "uncommon",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -7945,13 +8032,21 @@
       },
       "rarity": "uncommon",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "日本 punk 的起點級錄音，跨來源長期共識明確：Rolling Stone Japan 百大第3、HMV 百大藝人第19，且〈リンダ リンダ〉已成國民曲目。",
-        "evidenceUrls": [
-          "https://en.wikipedia.org/wiki/The_Blue_Hearts",
-          "https://ja.wikipedia.org/wiki/THE_BLUE_HEARTS_(アルバム)"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。日本 punk 第一名盤屬該國 5 星，綜合國際歷代榜不收",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "日本 punk 的起點級錄音，跨來源長期共識明確：Rolling Stone Japan 百大第3、HMV 百大藝人第19，且〈リンダ リンダ〉已成國民曲目。",
+          "evidenceUrls": [
+            "https://en.wikipedia.org/wiki/The_Blue_Hearts",
+            "https://ja.wikipedia.org/wiki/THE_BLUE_HEARTS_(アルバム)"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "甲本ヒロト、真島昌利、河口純之助、梶原徹也1985年組成，1987年5月由メルダック推出的同名出道作，自己掛製作，也是他們錄音室作品裡收錄時間最短、衝勁最足的一張。〈リンダ リンダ〉〈未来は僕等の手の中〉〈終わらない歌〉〈少年の詩〉全在此，インディーズ時期的〈人にやさしく〉反而未收。2007年Rolling Stone Japan的日本搖滾百大專輯把它排在第3位。",
@@ -7983,8 +8078,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": false,
-        "apexPool": true
+        "seedCards": true,
+        "apexPool": false
       }
     },
     {
@@ -8080,13 +8175,21 @@
       },
       "rarity": "epic",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "首支赴英巡演的日本搖滾團，代表作在兩份不同榜單同列前十，跨來源長期共識足以列為日本搖滾史核心。",
-        "evidenceUrls": [
-          "https://en.wikipedia.org/wiki/Sadistic_Mika_Band",
-          "https://ja.wikipedia.org/wiki/黒船_(サディスティック・ミカ・バンドのアルバム)"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。日本搖滾國際化里程碑，國內名盤級",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "首支赴英巡演的日本搖滾團，代表作在兩份不同榜單同列前十，跨來源長期共識足以列為日本搖滾史核心。",
+          "evidenceUrls": [
+            "https://en.wikipedia.org/wiki/Sadistic_Mika_Band",
+            "https://ja.wikipedia.org/wiki/黒船_(サディスティック・ミカ・バンドのアルバム)"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "以幕末黑船來航為引子、談「東洋與西洋相遇」的概念作，1974年11月5日由東芝EMI／DOUGHNUT RECORDS發行。加藤和彦找來替Pink Floyd工作過的Chris Thomas製作，Thomas自稱「第七位ミカ・バンド」，把剪接母帶、punch in等當時日本錄音室仍屬禁忌的技法帶進現場，前後耗掉450小時。先行單曲〈タイムマシンにおねがい〉由高中正義反覆疊錄吉他堆出音牆。Rolling Stone Japan日本搖滾百大將其排在第9位。",
@@ -8119,8 +8222,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": false,
-        "apexPool": true
+        "seedCards": true,
+        "apexPool": false
       }
     },
     {
@@ -8216,13 +8319,21 @@
       },
       "rarity": "epic",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "日本重型迷幻的國際正典入口，Japrocksampler 列為第一、Rolling Stone 樂評亦推為個人最愛的日本搖滾專輯，長期共識明確。",
-        "evidenceUrls": [
-          "https://en.wikipedia.org/wiki/Satori_(Flower_Travellin%27_Band_album)",
-          "https://en.wikipedia.org/wiki/Flower_Travellin%27_Band"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。日本迷幻硬搖滾里程碑，該國級",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "日本重型迷幻的國際正典入口，Japrocksampler 列為第一、Rolling Stone 樂評亦推為個人最愛的日本搖滾專輯，長期共識明確。",
+          "evidenceUrls": [
+            "https://en.wikipedia.org/wiki/Satori_(Flower_Travellin%27_Band_album)",
+            "https://en.wikipedia.org/wiki/Flower_Travellin%27_Band"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "內田裕也一手組起的Flower Travellin' Band在1971年交出的原創首作，日本由Atlantic、北美由GRT發行。樂團在大阪萬博演出後受加拿大團Lighthouse邀請赴加，為了帶得出手的作品而趕製此盤，錄音一天、混音一天便完成。石間秀機把印度音樂的調式帶進riff，ジョー山中刻意減少歌詞、把空間讓給即興。Julian Cope在《Japrocksampler》把它列為日本搖滾五十大之首。",
@@ -8252,8 +8363,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": false,
-        "apexPool": true
+        "seedCards": true,
+        "apexPool": false
       }
     },
     {
@@ -8535,22 +8646,39 @@
       },
       "ratings": {
         "classic": 5,
-        "obscurity": 1,
+        "obscurity": 2,
         "accessibility": 2,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-21T20:55:47Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；坂本龍一首部電影配樂，獲 1984 年英國電影學院獎作曲獎與每日映画コンクール音楽賞，主題曲已成全球通用曲目；旋律極易入耳。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：國際知名配樂代表作，坂本最常被列舉之作；冷門度 1→2",
+        "previous": {
+          "classic": 5,
+          "obscurity": 1,
+          "accessibility": 2,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-21T20:55:47Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；坂本龍一首部電影配樂，獲 1984 年英國電影學院獎作曲獎與每日映画コンクール音楽賞，主題曲已成全球通用曲目；旋律極易入耳。",
+          "rarity": "uncommon"
+        }
       },
       "rarity": "uncommon",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "電影配樂領域的長期核心：BAFTA 作曲獎與毎日映画コンクール雙獎肯定，主題曲在1985年JASRAC海外分配額年榜居第3，翻奏不絕。",
-        "evidenceUrls": [
-          "https://en.wikipedia.org/wiki/Merry_Christmas_Mr._Lawrence_(soundtrack)",
-          "https://ja.wikipedia.org/wiki/戦場のメリークリスマス_(サウンドトラック)"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。坂本知名配樂，主題曲有名但專輯不在綜合歷代榜",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "電影配樂領域的長期核心：BAFTA 作曲獎與毎日映画コンクール雙獎肯定，主題曲在1985年JASRAC海外分配額年榜居第3，翻奏不絕。",
+          "evidenceUrls": [
+            "https://en.wikipedia.org/wiki/Merry_Christmas_Mr._Lawrence_(soundtrack)",
+            "https://ja.wikipedia.org/wiki/戦場のメリークリスマス_(サウンドトラック)"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "大島渚1983年電影的原聲帶，同年5月1日由ロンドンレコード發行，是坂本龍一的第一部電影配樂，他同時在片中飾演ヨノイ大尉。作曲以「不屬於西方也不屬於東方、不在任何時代」為念，主題曲〈Merry Christmas Mr. Lawrence〉用Emulator II與酒杯採樣做出鐘聲般的音色，低音刻意讓調準偏離。此作為他拿下1984年英國電影學院獎作曲獎；David Sylvian填詞演唱的〈Forbidden Colours〉則是同一主題的歌唱版。",
@@ -8580,8 +8708,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": false,
-        "apexPool": true
+        "seedCards": true,
+        "apexPool": false
       }
     },
     {
@@ -8668,13 +8796,22 @@
       "ratings": {
         "classic": 4,
         "obscurity": 3,
-        "accessibility": 2,
+        "accessibility": 1,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-21T20:55:47Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；高橋幸宏個人出道盤，是 YMO 前夜法式趣味的起點、日本樂迷領域的定番，但非一般玩家的入門常客；曲目以歐陸老歌與流行編曲為主，入耳不難。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：首張個人作，熱帶風 city pop 名盤｜L=1401",
+        "previous": {
+          "classic": 4,
+          "obscurity": 3,
+          "accessibility": 2,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-21T20:55:47Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；高橋幸宏個人出道盤，是 YMO 前夜法式趣味的起點、日本樂迷領域的定番，但非一般玩家的入門常客；曲目以歐陸老歌與流行編曲為主，入耳不難。",
+          "rarity": "rare"
+        }
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,

@@ -346,21 +346,22 @@
    "ratings": {
     "classic": 3,
     "obscurity": 5,
-    "accessibility": 2,
+    "accessibility": 1,
     "listeners": 7,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
     "previous": {
-     "classic": 2,
-     "obscurity": 4,
+     "classic": 3,
+     "obscurity": 5,
      "accessibility": 2,
-     "source": "manual:depth-rubric",
-     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：水晶時期台語流行；聽眾7、無試聽→5；抒情 synth-pop",
      "rarity": "rare"
     },
-    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：水晶時期台語流行；聽眾7、無試聽→5；抒情 synth-pop"
+    "note": "全池稽核 audit-20261102（方案 C）：主線改 pearl→none：水晶唱片是台灣重要獨立廠非極小廠；中文盤名 listeners 疑錯配。無串流，冷門 5｜L=7"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -750,10 +751,21 @@
    },
    "rarity": "uncommon",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。2012 Hove 小廠 CD，樂團台灣知名，非極小壓量聖杯；L=5",
+    "evidenceUrls": [
+     "https://www.last.fm/music/%E5%A4%BE%E5%AD%90%E9%9B%BB%E5%8B%95%E5%A4%A7%E6%A8%82%E9%9A%8A/%E5%9C%B0%E4%B8%8B%E4%BA%BA",
+     "https://www.discogs.com/release/8269115"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "CLIPS 這組編號從這張開始編起，附腰帶與八頁小冊。Discogs 條目記 2012 年 Hove 發行 CD、編號 CLIPS-12001，genre 欄 Electronic 與 Rock、style 欄 Avantgarde，登錄二十軌，曲名如〈問我要不要開趴〉。兩年後的《情慾教室》編號 Clips14001，Clips 與 Hove 共同掛名。",
@@ -773,8 +785,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {

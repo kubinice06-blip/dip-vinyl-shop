@@ -2384,23 +2384,23 @@
    },
    "ratings": {
     "classic": 4,
-    "obscurity": 5,
+    "obscurity": 2,
     "accessibility": 3,
     "listeners": 23,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
-    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：1947 Carnegie Hall bebop 史料，兩巨頭同台；L23＋串流無→5；bebop 現場錄音音質門檻",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "note": "全池稽核 audit-20261102（方案 C）：Roost/Blue Note 正規 CD 有串流；聽眾23屬撇號錯配｜L=23",
     "previous": {
      "classic": 4,
      "obscurity": 5,
-     "accessibility": 4,
-     "source": "worker:/album-rating + manual review",
-     "checkedAt": "2026-08-31T00:00:00.000Z",
-     "note": "人工改判——classic 5→4：1947 年那場音樂會是 bebop 史的名場面，但這是 1997 年才整理出版的檔案盤，不是該領域公認的核心專輯。",
+     "accessibility": 3,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：1947 Carnegie Hall bebop 史料，兩巨頭同台；L23＋串流無→5；bebop 現場錄音音質門檻",
      "rarity": "epic"
     }
    },
-   "rarity": "epic",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,

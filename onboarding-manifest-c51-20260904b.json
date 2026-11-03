@@ -28,23 +28,24 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 5,
+    "classic": 4,
     "obscurity": 2,
     "accessibility": 4,
     "listeners": 198777,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
     "previous": {
      "classic": 5,
      "obscurity": 2,
-     "accessibility": 5,
-     "source": "worker:/album-rating",
-     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "accessibility": 4,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Zorn 製作、前衛金屬 cult 正典；聽眾近20萬；風格亂跳、不協和",
      "rarity": "legendary"
     },
-    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Zorn 製作、前衛金屬 cult 正典；聽眾近20萬；風格亂跳、不協和"
+    "note": "全池稽核 audit-20261102（方案 C）：Zorn 製作的前衛拼貼首作，代表作級；經典 5→4｜L=198777"
    },
-   "rarity": "legendary",
+   "rarity": "epic",
    "apexAssessment": {
     "eligible": false,
     "tier": null,

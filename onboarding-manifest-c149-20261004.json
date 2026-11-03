@@ -1138,21 +1138,22 @@
     "discogsReleaseId": "3909394"
    },
    "ratings": {
-    "classic": 3,
+    "classic": 2,
     "obscurity": 5,
     "accessibility": 1,
     "listeners": 80,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
     "previous": {
-     "classic": 4,
+     "classic": 3,
      "obscurity": 5,
-     "accessibility": 2,
-     "source": "worker:/album-rating",
-     "checkedAt": "2026-08-31T00:00:00.000Z",
-     "rarity": "uncommon"
+     "accessibility": 1,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Blue Note 期小品，非代表作；80 聽眾且無串流→5；標準曲抒情人聲",
+     "rarity": "common"
     },
-    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Blue Note 期小品，非代表作；80 聽眾且無串流→5；標準曲抒情人聲"
+    "note": "全池稽核 audit-20261102（方案 C）：Blue Note 日本 CD 大廠發行｜L=80"
    },
    "rarity": "common",
    "apexAssessment": {

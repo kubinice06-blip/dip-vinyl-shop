@@ -148,10 +148,21 @@
    },
    "rarity": "uncommon",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。Johnny's Disk 爵士喫茶小廠、無再發、L=3，但壓量無據、非知名聖杯（2010 合輯收一軌）",
+    "evidenceUrls": [
+     "https://www.last.fm/music/%E6%9D%BF%E5%80%89%E5%85%8B%E8%A1%8C/%E6%B5%B7%E7%8C%AB%E3%81%AE%E5%B3%B6",
+     "https://www.discogs.com/release/11716782"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "1982 年 6 月 3 日，這張鋼琴獨奏錄在廠牌自家那間店裡。陸前高田那家店就叫 Johnny，照井顕在這張碟上掛製作、錄音與剪輯。演奏 credit 只有板倉克行一個人，作曲與編曲也都掛他，另有一條 credit 標出彈的是一台河合 K48；1992 年起他的碟名一路掛著薩提，1994 年那張出在 Leo Records。六軌的題名裡寫著在地的地名，〈三陸縦貫鉄道の夜〉是其一，末了收在〈朝日の如くさわやかに〉，封面題字出自菅原成雨。",
@@ -171,8 +182,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -395,26 +406,38 @@
    "ratings": {
     "classic": 3,
     "obscurity": 5,
-    "accessibility": 3,
+    "accessibility": 4,
     "listeners": 1,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
     "previous": {
      "classic": 3,
-     "obscurity": 4,
-     "accessibility": 2,
-     "source": "manual:depth-rubric",
-     "checkedAt": "2026-08-31T00:00:00.000Z",
-     "rarity": "rare"
+     "obscurity": 5,
+     "accessibility": 3,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Johnny's Disk 唯一個人獨奏盤，無再發、L=1 試聽無；調式獨奏吉他含留白即興",
+     "rarity": "uncommon"
     },
-    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Johnny's Disk 唯一個人獨奏盤，無再發、L=1 試聽無；調式獨奏吉他含留白即興"
+    "note": "全池稽核 audit-20261102（方案 C）：陸前高田爵士喫茶自營 Johnny's Disk JD-10，Discogs 無 master、無任何再發；listeners 1 有效。風格標 Free Jazz／Avant-garde，硬蕊 3→4｜L=1"
    },
-   "rarity": "uncommon",
+   "rarity": "epic",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。L1有效，爵士喫茶自營LP唯一版本，但壓量無據、無聖杯名聲；5星",
+    "evidenceUrls": [
+     "https://www.last.fm/music/%E4%B8%AD%E6%9D%91%E3%83%A8%E3%82%B7%E3%83%9F%E3%83%84/%E9%AD%82%E3%81%AE%E3%82%AE%E3%82%BF%E3%83%BC",
+     "https://www.discogs.com/release/15944151"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "製作欄上排著五個名字，第一個是照井顕。唱片上那份日文註記還記下錄音是 1983 年 9 月 8 至 9 日，地點在山梨縣大泉高原的民宿ペンション糸車。七軌都登了長度，最長的〈雷鐘〉9 分 5 秒；原盤 credit 只有四條，沒有第二位演奏者，封面畫出自榊原匡章。他在 1979 至 1985 年間替山崎ハコ、高橋ていこ、石黒ケイ伴奏。至於這張碟有 modal 的段落、也有對靜默與即興的處理，那是唱片條目自己的說法。",
@@ -434,8 +457,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {

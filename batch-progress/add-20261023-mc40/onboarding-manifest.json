@@ -183,29 +183,41 @@
     "visuallyVerified": true
    },
    "ratings": {
-    "classic": 4,
+    "classic": 3,
     "obscurity": 5,
     "accessibility": 4,
     "listeners": 43,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
-    "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽非 ready → 5，L=43）4→5",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "note": "全池稽核 audit-20261102（方案 C）：In Situ 法國極小廠獨奏小提琴自由即興 CD，未再發；43 聽眾｜L=43",
     "previous": {
      "classic": 4,
-     "obscurity": 4,
+     "obscurity": 5,
      "accessibility": 4,
-     "source": "manual:rerate-20261101",
-     "checkedAt": "2026-11-01T00:00:00Z",
-     "note": "三軸重評（RUBRIC 2026-11-01）：Zíngaro 小提琴獨奏代表作；In Situ 極小廠、絕版；自由即興短篇",
-     "rarity": "epic"
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽非 ready → 5，L=43）4→5",
+     "rarity": "legendary"
     }
    },
-   "rarity": "legendary",
+   "rarity": "epic",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "evidenceUrls": [],
-    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 43），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。In Situ CD，壓量無據，非收藏聖杯",
+    "evidenceUrls": [
+     "https://www.last.fm/music/Carlos%20Z%C3%ADngaro/Solo",
+     "https://musicbrainz.org/release-group/e3a73e49-4338-41a7-a632-43ff5b925abf",
+     "https://www.discogs.com/release/624297"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 43），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "里斯本一座修道院裡，他拉了十三段小提琴。Carlos Zíngaro 是葡萄牙自由即興樂手，也是畫家，1984 到 1990 年在里斯本主持藝廊 Cómicos。那座修道院是熱羅尼莫斯修道院，1989 年 4 月的錄音從頭到尾只有他的琴聲。十三首多半是短曲，最長一首 6 分 10 秒。發行要等到 1992 年，由 In Situ 推出。",
@@ -228,7 +240,7 @@
     "descriptionKv": false,
     "albumOverride": false,
     "seedCards": false,
-    "apexPool": false
+    "apexPool": true
    }
   },
   {
@@ -726,20 +738,20 @@
    },
    "ratings": {
     "classic": 4,
-    "obscurity": 3,
+    "obscurity": 4,
     "accessibility": 5,
     "listeners": null,
-    "source": "manual:rerate-20261101",
-    "checkedAt": "2026-11-01T00:00:00Z",
-    "note": "三軸重評（RUBRIC 2026-11-01）：Cage 監督、首證可演的 Freeman Etudes 參考錄音；Mode 正規；機遇手法極端炫技",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "note": "全池稽核 audit-20261102（方案 C）：Cage 為「幾近不可演奏」所寫的點描小提琴練習曲，Arditti 首錄；Mode 小廠",
     "previous": {
-     "classic": 3,
-     "obscurity": 5,
-     "accessibility": 3,
-     "source": "主線人工（§0.8 錨點制）",
-     "checkedAt": "2026-10-23T22:15:27Z",
-     "note": "機器基線 undefined/undefined/undefined（Last.fm listeners 查無）；主線：worker 無回應或 Last.fm 掛名查無；Mode 1994 當代古典獨奏小提琴錄音，同批獨奏／二重奏 listeners 0–442、冷門 5，人工 3/5/3",
-     "rarity": "uncommon"
+     "classic": 4,
+     "obscurity": 3,
+     "accessibility": 5,
+     "source": "manual:rerate-20261101",
+     "checkedAt": "2026-11-01T00:00:00Z",
+     "note": "三軸重評（RUBRIC 2026-11-01）：Cage 監督、首證可演的 Freeman Etudes 參考錄音；Mode 正規；機遇手法極端炫技",
+     "rarity": "legendary"
     }
    },
    "rarity": "legendary",
@@ -769,7 +781,7 @@
     "cardCatalog": false,
     "descriptionKv": false,
     "albumOverride": false,
-    "seedCards": false,
+    "seedCards": true,
     "apexPool": false
    }
   },
@@ -803,20 +815,20 @@
    },
    "ratings": {
     "classic": 4,
-    "obscurity": 3,
+    "obscurity": 4,
     "accessibility": 5,
     "listeners": null,
-    "source": "manual:rerate-20261101",
-    "checkedAt": "2026-11-01T00:00:00Z",
-    "note": "三軸重評（RUBRIC 2026-11-01）：Freeman Etudes 後兩冊唯一 Arditti 參考版；Mode 正規；機遇手法更繁複",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "note": "全池稽核 audit-20261102（方案 C）：Etude 17–32 首錄，比前兩冊更複雜；Mode 小廠，Apple 查無",
     "previous": {
-     "classic": 3,
-     "obscurity": 5,
-     "accessibility": 3,
-     "source": "主線人工（§0.8 錨點制）",
-     "checkedAt": "2026-10-23T22:15:27Z",
-     "note": "機器基線 undefined/undefined/undefined（Last.fm listeners 查無）；主線：worker 無回應或 Last.fm 掛名查無；Mode 1994 當代古典獨奏小提琴錄音，同批獨奏／二重奏 listeners 0–442、冷門 5，人工 3/5/3",
-     "rarity": "uncommon"
+     "classic": 4,
+     "obscurity": 3,
+     "accessibility": 5,
+     "source": "manual:rerate-20261101",
+     "checkedAt": "2026-11-01T00:00:00Z",
+     "note": "三軸重評（RUBRIC 2026-11-01）：Freeman Etudes 後兩冊唯一 Arditti 參考版；Mode 正規；機遇手法更繁複",
+     "rarity": "legendary"
     }
    },
    "rarity": "legendary",
@@ -845,7 +857,7 @@
     "cardCatalog": false,
     "descriptionKv": false,
     "albumOverride": false,
-    "seedCards": false,
+    "seedCards": true,
     "apexPool": false
    }
   },
@@ -897,10 +909,22 @@
    },
    "rarity": "epic",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "evidenceUrls": [],
-    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 2），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。小廠／自發盤、聽眾<300，但壓量未見數百張以下的確據，也非收藏圈公認聖杯；只到 5",
+    "evidenceUrls": [
+     "https://www.last.fm/music/Jo%C3%ABlle%20L%C3%A9andre%2C%20Carlos%20Zingaro/Ecritures",
+     "https://musicbrainz.org/release-group/5bad8e38-8177-4992-b201-12f532e231f3",
+     "https://www.discogs.com/release/11729890"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 2），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "十五首短曲錄於巴黎，低音提琴與小提琴各掛作曲。低音提琴手 Joëlle Léandre 生於法國 Aix-en-Provence，Carlos Zingaro 則出身里斯本，以小提琴為樂器，兩人都走自由即興。1990 年 5 月 29 日於巴黎留下的這十五首，最短 1 分 45 秒、最長 4 分 27 秒，作曲都由兩人一起署名。In Situ 這家法國廠牌負責發行。後來兩人又加上 Rüdiger Carl，組成 Canvas Trio。",
@@ -925,7 +949,7 @@
     "descriptionKv": false,
     "albumOverride": false,
     "seedCards": false,
-    "apexPool": false
+    "apexPool": true
    }
   },
   {
@@ -976,10 +1000,22 @@
    },
    "rarity": "epic",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "evidenceUrls": [],
-    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 14），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。小廠／自發盤、聽眾<300，但壓量未見數百張以下的確據，也非收藏圈公認聖杯；只到 5",
+    "evidenceUrls": [
+     "https://www.last.fm/music/Mat%20Maneri%20%26%20Randy%20Peterson/Light%20Trigger",
+     "https://musicbrainz.org/release-group/34ca2540-0d08-4b5a-b52e-467817da8ab9",
+     "https://www.discogs.com/release/8119592"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 14），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "平常拉小提琴的他，這張只拉中提琴，對面坐著一組鼓。Mat Maneri 和鼓手 Randy Peterson 先在 Joe Maneri 四重奏裡一起走激進的自由即興，這次把它濃縮成兩個人。唱片 1998 年 6 月開錄、8 月收工，2000 年於美國發行，標題曲只有 1 分 56 秒。在樂評筆下，Peterson 用最傳統的套鼓弄出最不尋常的聲響；三重奏裡的貝斯手 Ed Schuller 這回不在。",
@@ -1002,7 +1038,7 @@
     "descriptionKv": false,
     "albumOverride": false,
     "seedCards": false,
-    "apexPool": false
+    "apexPool": true
    }
   },
   {
@@ -1116,29 +1152,41 @@
     "visuallyVerified": true
    },
    "ratings": {
-    "classic": 3,
+    "classic": 2,
     "obscurity": 5,
     "accessibility": 4,
     "listeners": 2,
-    "source": "manual:rerate-20261101",
-    "checkedAt": "2026-11-01T00:00:00Z",
-    "note": "三軸重評（RUBRIC 2026-11-01）：Wachsmann／Turner 二重奏；Bead CDr 極小量；小提琴與打擊自由即興",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "note": "全池稽核 audit-20261102（方案 C）：Bead 樂手集體廠 CDr，極小量；listeners 2 有效。2015 新作，經典度低，strength 1｜L=2",
     "previous": {
      "classic": 3,
      "obscurity": 5,
-     "accessibility": 3,
-     "source": "worker /album-rating（obscurity:lastfm）",
-     "checkedAt": "2026-10-23T22:15:27Z",
-     "note": "機器基線 3/5/3（Last.fm listeners 2）",
-     "rarity": "uncommon"
+     "accessibility": 4,
+     "source": "manual:rerate-20261101",
+     "checkedAt": "2026-11-01T00:00:00Z",
+     "note": "三軸重評（RUBRIC 2026-11-01）：Wachsmann／Turner 二重奏；Bead CDr 極小量；小提琴與打擊自由即興",
+     "rarity": "epic"
     }
    },
-   "rarity": "epic",
+   "rarity": "uncommon",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "evidenceUrls": [],
-    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 2），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。L2有效，但壓量無據、無收藏圈聖杯地位依據；屬5星冷門，不到7",
+    "evidenceUrls": [
+     "https://www.last.fm/music/Philipp%20Wachsmann%2C%20Roger%20Turner/Alizarin",
+     "https://musicbrainz.org/release-group/22788762-8f54-4148-8b30-280c25c6d146",
+     "https://www.discogs.com/release/6990420"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 2），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "茜素紅是一種顏料，曲名也一路排成顏色。打擊樂手 Roger Turner 1946 年生於英國 Whitstable，大學唸英國文學與當代哲學，與他搭檔的是小提琴手 Philipp Wachsmann。盤名 Alizarin 就是茜素紅，曲目多以顏色命名，例如〈Red Introduction〉。前九首是 2012 年在棚內錄的，第 10 首則來自 2011 年倫敦一場音樂節的現場。作曲由兩人共同掛名，Bead 在 2015 年把它推出。",
@@ -1160,7 +1208,7 @@
     "descriptionKv": false,
     "albumOverride": false,
     "seedCards": false,
-    "apexPool": false
+    "apexPool": true
    }
   },
   {
@@ -1210,10 +1258,21 @@
    },
    "rarity": "epic",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "evidenceUrls": [],
-    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 5），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。2006小廠CD，壓量無據、非聖杯；新近即興錄音只到5",
+    "evidenceUrls": [
+     "https://www.last.fm/music/Agust%C3%AD%20Fern%C3%A1ndez%2C%20Peter%20Kowald/Sea%20of%20Lead",
+     "https://musicbrainz.org/release-group/2571f543-e90e-405a-ab7f-4e682cbca18f"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 5），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "這組二重奏錄好後擱了近六年，出版時低音提琴手已辭世。Agustí Fernández 彈鋼琴與預置鋼琴，對上的低音提琴屬於德國人 Peter Kowald，一位走自由爵士路線的樂手。2000 年 6 月 27 日錄於巴塞隆納的這組錄音，等到 2006 年 1 月才問世，其間 Kowald 已於 2002 年 9 月過世。",
@@ -1235,7 +1294,7 @@
     "descriptionKv": false,
     "albumOverride": false,
     "seedCards": false,
-    "apexPool": false
+    "apexPool": true
    }
   },
   {
@@ -1527,10 +1586,22 @@
    },
    "rarity": "epic",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "evidenceUrls": [],
-    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 77），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。小廠／自發盤、聽眾<300，但壓量未見數百張以下的確據，也非收藏圈公認聖杯；只到 5",
+    "evidenceUrls": [
+     "https://www.last.fm/music/Fred%20Lonberg-Holm/Site-Specific%3A%20Duets%20for%20Cello%20and%20Guitar",
+     "https://musicbrainz.org/release-group/aeea61a6-757b-327e-bda5-5ecddc7a2ac5",
+     "https://www.discogs.com/release/694237"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 77），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "十二首全叫 Untitled，只有副標寫明編制。Fred Lonberg-Holm 自稱 anti-cellist，生年是 1962 年，大提琴是他的本行。副標《Duets for Cello and Guitar》點明大提琴配吉他，十二段無題即興各長 3 到 7 分多鐘。2000 年由美國的 Explain 推出。",
@@ -1552,7 +1623,7 @@
     "descriptionKv": false,
     "albumOverride": false,
     "seedCards": false,
-    "apexPool": false
+    "apexPool": true
    }
   },
   {
@@ -1754,10 +1825,22 @@
    },
    "rarity": "legendary",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "evidenceUrls": [],
-    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 30），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。小廠／自發盤、聽眾<300，但壓量未見數百張以下的確據，也非收藏圈公認聖杯；只到 5",
+    "evidenceUrls": [
+     "https://www.last.fm/music/John%20Russell%20%26%20Roger%20Turner/The%20Second%20Sky",
+     "https://musicbrainz.org/release-group/57008734-2098-4470-b184-d267df0eecc6",
+     "https://www.discogs.com/release/594343"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 30），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "一把撥片原聲吉他配一組鼓，搭檔已近三十年。1974 年後，吉他手 John Russell 與打鼓兼打擊樂的 Roger Turner 結成長期的原聲二重奏。這對搭檔 2001 年 1 月 11 日進倫敦 The Beauchamp Building 錄音，留下九首自由即興，從 3 分鐘的〈Parapet〉到 15 分 6 秒的〈The Dodger〉。Turner 專注在音色與音高，速度一路變動。同年由倫敦的 Emanem 出版。",
@@ -1780,7 +1863,7 @@
     "descriptionKv": false,
     "albumOverride": false,
     "seedCards": false,
-    "apexPool": false
+    "apexPool": true
    }
   },
   {
@@ -1894,23 +1977,23 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 5,
+    "obscurity": 4,
     "accessibility": 4,
     "listeners": 15,
-    "source": "manual:rerate-20261101",
-    "checkedAt": "2026-11-01T00:00:00Z",
-    "note": "三軸重評（RUBRIC 2026-11-01）：Léandre 晚期二重奏；Montagne Noire 限量 250 套；人聲薩克斯風即興",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "note": "全池稽核 audit-20261102（方案 C）：Montagne Noire 限量 250，但試聽 ready 已有串流，冷門降4｜L=15",
     "previous": {
      "classic": 3,
      "obscurity": 5,
-     "accessibility": 3,
-     "source": "worker /album-rating（obscurity:lastfm）",
-     "checkedAt": "2026-10-23T22:15:27Z",
-     "note": "機器基線 3/5/3（Last.fm listeners 15）",
-     "rarity": "uncommon"
+     "accessibility": 4,
+     "source": "manual:rerate-20261101",
+     "checkedAt": "2026-11-01T00:00:00Z",
+     "note": "三軸重評（RUBRIC 2026-11-01）：Léandre 晚期二重奏；Montagne Noire 限量 250 套；人聲薩克斯風即興",
+     "rarity": "epic"
     }
    },
-   "rarity": "epic",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1941,7 +2024,7 @@
     "cardCatalog": false,
     "descriptionKv": false,
     "albumOverride": false,
-    "seedCards": false,
+    "seedCards": true,
     "apexPool": false
    }
   },

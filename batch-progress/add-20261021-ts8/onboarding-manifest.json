@@ -2171,24 +2171,24 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-21 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 4,
+    "classic": 3,
     "obscurity": 5,
     "accessibility": 3,
     "listeners": 185,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
-    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：越南 power metal 團首作、Viết Tân 錄音首張搖滾盤；L185 無串流→5；power metal",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "note": "全池稽核 audit-20261102（方案 C）：越南正規錄音室 CD、含翻唱，非私壓；經典度 4→3｜L=185",
     "previous": {
-     "classic": 3,
-     "obscurity": 3,
-     "accessibility": 2,
-     "source": "manual:regional-rubric",
-     "checkedAt": "2026-10-21T06:35:52Z",
-     "note": "機器基線 2/5/2（Last.fm listeners 185）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 錨點制、以泰國／越南搖滾圈為尺度（大廠或圈內主流流通 2、獨立小廠圈外少人知 3）；經典度：有獎項或樂評的給 3，bodyslam《คราม》、Slot Machine《Cell》、Ngọt《Ng'bthg》、Bức Tường《Đất Việt》給 4",
-     "rarity": "rare"
+     "classic": 4,
+     "obscurity": 5,
+     "accessibility": 3,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：越南 power metal 團首作、Viết Tân 錄音首張搖滾盤；L185 無串流→5；power metal",
+     "rarity": "epic"
     }
    },
-   "rarity": "epic",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2216,7 +2216,7 @@
     "cardCatalog": false,
     "descriptionKv": false,
     "albumOverride": false,
-    "seedCards": false,
+    "seedCards": true,
     "apexPool": false
    }
   },

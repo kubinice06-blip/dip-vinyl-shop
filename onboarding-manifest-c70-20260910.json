@@ -47,10 +47,22 @@
    },
    "rarity": "epic",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。L243有效，但壓量無據、無收藏圈聖杯地位依據；屬5星冷門，不到7",
+    "evidenceUrls": [
+     "https://www.last.fm/music/Pablo%20Picasso/Soft%20Type",
+     "https://musicbrainz.org/release-group/2fd2764a-fb7c-4e55-8a2a-1f89a3947600",
+     "https://www.discogs.com/release/1707107"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "主唱野村誠同時彈貝斯、吹中音薩克斯風，並在〈内側の歌〉加彈 Acetone 風琴。他還掛了製作、作曲與美術，三人組另外兩位是吉他兼邦哥鼓的榎本浩與鼓手清水武。1983 年錄於 Studio Magnet，由東京的 Telegraph 發行。唱片行的文案把他們形容成受 Friction 影響的東京 Rockers 第三世代代表：各件樂器像機器一樣刻著節奏，到本作才加進風琴與薩克斯風、吸收了 dub。1991 年的擴充 CD 另收了 1985 年新宿 Loft 的最後一場演出。",
@@ -71,8 +83,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -101,23 +113,24 @@
     "discogsReleaseId": "1447375"
    },
    "ratings": {
-    "classic": 5,
+    "classic": 4,
     "obscurity": 5,
     "accessibility": 2,
     "listeners": 313,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
     "previous": {
-     "classic": 2,
-     "obscurity": 4,
+     "classic": 5,
+     "obscurity": 5,
      "accessibility": 2,
-     "source": "manual:depth-rubric",
-     "checkedAt": "2026-08-31T00:00:00.000Z",
-     "rarity": "rare"
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：獨立盤賣兩萬張的傳說首作、Captain 廠里程碑；L313 無串流→5；正向龐克",
+     "rarity": "epic"
     },
-    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：獨立盤賣兩萬張的傳說首作、Captain 廠里程碑；L313 無串流→5；正向龐克"
+    "note": "全池稽核 audit-20261102（方案 C）：日本獨立廠 Captain 1985 暢銷盤、indie 爆發代表；場景要角非跨來源正典；聽眾 313 且無串流→5｜L=313"
    },
-   "rarity": "epic",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -195,10 +208,22 @@
    },
    "rarity": "epic",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。L102有效，1992 SSE 有CD再發；不到7",
+    "evidenceUrls": [
+     "https://www.last.fm/music/Z.O.A/Humanical%20Garden",
+     "https://musicbrainz.org/release-group/1178fbfa-969d-4b5b-8c8e-d549c0b9fe01",
+     "https://www.discogs.com/release/1427264"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "四月到六月，三間錄音室，八首歌裡最長的一首叫〈Hatred〉。內頁記的是 1988 年 4 至 6 月在 MIB、Mod（目黑）與 Take Studio 錄成，唱片是 Transrecords 的 TRANS 37。森川誠一郎主唱與作詞、黒木真司吉他，另有貝斯與鼓，以及一把電小提琴與一台鍵盤。〈Hatred〉八分零九秒，最短的〈Taste Of Black〉兩分五十三秒。DOMMUNE 記森川從 1982 年前後就自己主辦 MORE records。",
@@ -219,8 +244,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   }
  ]

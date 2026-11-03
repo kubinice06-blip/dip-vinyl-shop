@@ -41,13 +41,22 @@
       },
       "ratings": {
         "classic": 4,
-        "obscurity": 5,
+        "obscurity": 4,
         "accessibility": 2,
         "listeners": 16,
-        "source": "worker:/album-rating",
-        "checkedAt": "2026-08-16T05:00:00Z"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "previous": {
+          "classic": 4,
+          "obscurity": 5,
+          "accessibility": 2,
+          "source": "worker:/album-rating",
+          "checkedAt": "2026-08-16T05:00:00Z",
+          "rarity": "uncommon"
+        },
+        "note": "全池稽核 audit-20261102（方案 C）：試聽 ready、L=16 有效→下限 4；Spotify 有正式版，非流亡｜L=16"
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,

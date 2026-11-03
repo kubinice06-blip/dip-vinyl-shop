@@ -35,10 +35,21 @@
    },
    "rarity": "uncommon",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：classic=5（hall 最低門檻），但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "hall",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為殿堂（該軸 7 星）。RS500 2003#62、1001、90 年代各大榜；U2 代表作，跨類型知名",
+    "evidenceUrls": [
+     "https://en.wikipedia.org/wiki/Achtung_Baby",
+     "https://www.rollingstone.com/music/music-lists/best-albums-of-all-time-1062063/"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：classic=5（hall 最低門檻），但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "柏林那間錄音室裡他們差點拆夥，救回來的是〈One〉的兩段和弦。1990 年 10 月起，他們在柏林的 Hansa 錄音室僵持不下：節奏組想守住傳統搖滾，Bono 與 The Edge 要往工業與電子舞曲走，一度認真考慮解散，直到 The Edge 即興彈出那段和弦進行，士氣才回來。唱片 1991 年 11 月由 Island Records 發行，在《Billboard》200 以冠軍開出，全球賣出約 1800 萬張，並在 1993 年拿下葛萊美最佳搖滾團體或雙人組演出獎。",
@@ -60,8 +71,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -222,23 +233,24 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 5,
+    "classic": 4,
     "obscurity": 2,
     "accessibility": 2,
     "listeners": 117290,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
     "previous": {
-     "classic": 4,
+     "classic": 5,
      "obscurity": 2,
      "accessibility": 2,
-     "source": "worker:/album-rating",
-     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：proto-punk 里程碑、入 Rolling Stone 500；Atlantic 主流；短促車庫搖滾",
      "rarity": "uncommon"
     },
-    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：proto-punk 里程碑、入 Rolling Stone 500；Atlantic 主流；短促車庫搖滾"
+    "note": "全池稽核 audit-20261102（方案 C）：Landau 製作的前龐克重要作，但 MC5 招牌是《Kick Out the Jams》；經典5→4｜L=117290"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1188,23 +1200,24 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 5,
+    "classic": 4,
     "obscurity": 2,
     "accessibility": 3,
     "listeners": 369616,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
     "previous": {
-     "classic": 4,
+     "classic": 5,
      "obscurity": 2,
-     "accessibility": 4,
-     "source": "worker:/album-rating",
-     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "accessibility": 3,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：團最受推崇作、RYM 1999 前段；Warner 主流；多風格拼貼但較好入口",
      "rarity": "epic"
     },
-    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：團最受推崇作、RYM 1999 前段；Warner 主流；多風格拼貼但較好入口"
+    "note": "全池稽核 audit-20261102（方案 C）：Mr. Bungle 代表作，但非場景地標；經典 5→4｜L=369616"
    },
-   "rarity": "epic",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2138,23 +2151,24 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 5,
+    "classic": 4,
     "obscurity": 2,
     "accessibility": 2,
     "listeners": 52934,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
     "previous": {
-     "classic": 4,
-     "obscurity": 3,
+     "classic": 5,
+     "obscurity": 2,
      "accessibility": 2,
-     "source": "worker:/album-rating",
-     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：百萬銷量、日本HR/HM史票選第6；日本主流；速度金屬與抒情",
      "rarity": "uncommon"
     },
-    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：百萬銷量、日本HR/HM史票選第6；日本主流；速度金屬與抒情"
+    "note": "全池稽核 audit-20261102（方案 C）：X JAPAN正典為Blue Blood；Jealousy為重要作4｜L=52934"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2281,20 +2295,21 @@
    },
    "ratings": {
     "classic": 4,
-    "obscurity": 3,
+    "obscurity": 2,
     "accessibility": 5,
     "listeners": 35938,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
     "previous": {
      "classic": 4,
      "obscurity": 3,
-     "accessibility": 4,
-     "source": "worker:/album-rating",
-     "checkedAt": "2026-08-31T00:00:00.000Z",
-     "rarity": "epic"
+     "accessibility": 5,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：日本噪音搖滾代表作、Pitchfork 9.0；大廠發行但串流缺；混沌噪音",
+     "rarity": "legendary"
     },
-    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：日本噪音搖滾代表作、Pitchfork 9.0；大廠發行但串流缺；混沌噪音"
+    "note": "全池稽核 audit-20261102（方案 C）：RBMA：大廠史上最不商業之作；噪音拼貼搖滾；3.6 萬聽眾→2｜L=35938"
    },
    "rarity": "legendary",
    "apexAssessment": {
@@ -2495,20 +2510,21 @@
    },
    "ratings": {
     "classic": 5,
-    "obscurity": 3,
+    "obscurity": 2,
     "accessibility": 3,
     "listeners": 7745,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
     "previous": {
-     "classic": 2,
-     "obscurity": 4,
-     "accessibility": 2,
-     "source": "worker:/album-rating",
-     "checkedAt": "2026-08-31T00:00:00.000Z",
-     "rarity": "rare"
+     "classic": 5,
+     "obscurity": 3,
+     "accessibility": 3,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：公認最大膽完整之作、Pitchfork 8.3、Cocteau Twins 參與；銷量下滑；實驗夢幻流行",
+     "rarity": "epic"
     },
-    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：公認最大膽完整之作、Pitchfork 8.3、Cocteau Twins 參與；銷量下滑；實驗夢幻流行"
+    "note": "全池稽核 audit-20261102（方案 C）：王菲藝術性代表作、Cocteau Twins供曲；聽眾7745→可給2｜L=7745"
    },
    "rarity": "epic",
    "apexAssessment": {
@@ -3341,23 +3357,24 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 5,
+    "classic": 4,
     "obscurity": 3,
     "accessibility": 4,
     "listeners": 8848,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
     "previous": {
-     "classic": 4,
-     "obscurity": 4,
-     "accessibility": 5,
-     "source": "worker:/album-rating",
-     "checkedAt": "2026-08-31T00:00:00.000Z",
-     "rarity": "epic"
+     "classic": 5,
+     "obscurity": 3,
+     "accessibility": 4,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Fact七〇年代百大、被稱唯一無保留傑作；自家廠L 8.8k；金曲變形拼貼",
+     "rarity": "legendary"
     },
-    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Fact七〇年代百大、被稱唯一無保留傑作；自家廠L 8.8k；金曲變形拼貼"
+    "note": "全池稽核 audit-20261102（方案 C）：概念拼貼名作，樂團正典另有 Eskimo 等｜L=8848"
    },
-   "rarity": "legendary",
+   "rarity": "epic",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -4877,21 +4894,22 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 3,
+    "classic": 4,
     "obscurity": 5,
-    "accessibility": 3,
+    "accessibility": 2,
     "listeners": 1,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
     "previous": {
-     "classic": 2,
+     "classic": 3,
      "obscurity": 5,
-     "accessibility": 4,
-     "source": "worker:/album-rating",
-     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "accessibility": 3,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：環境音樂場景佳作非尾島首選；L=1、無串流→下限5；低音量空間氛圍",
      "rarity": "uncommon"
     },
-    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：環境音樂場景佳作非尾島首選；L=1、無串流→下限5；低音量空間氛圍"
+    "note": "全池稽核 audit-20261102（方案 C）：Newsic 原盤，WRWTFWW 2019《Une Collection des Chaînons I & II》再發、Bandcamp／Spotify 有數位版→冷門 4；日本環境音樂核心錄音，經典 4｜L=1"
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -5034,10 +5052,22 @@
    },
    "rarity": "legendary",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：obscurity=5、listeners=312，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "heresy",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為異端（該軸 7 星）。非常階段（7星錨點所列）公認代表作，RBMA日噪史與noisextra稱seminal，harsh noise極端",
+    "evidenceUrls": [
+     "https://en.wikipedia.org/wiki/Hijokaidan",
+     "https://daily.redbullmusicacademy.com/2014/10/birth-of-noise-in-japan-feature",
+     "https://noisextra.com/category/1980s/page/8"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：obscurity=5、listeners=312，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "主辦單位把團名寫錯，他們索性用那個錯的名字用了四十年。1979 年 JOJO 広重 與頭士奈生樹 另起了螺旋階段之外的這條支線，團員高山謙一 說這比較像非常階段，也就是緊急逃生梯；1980 年 6 月他們到東京新宿 ACB Hall 演出時，主辦方就把團名寫成了非常階段，JOJO 広重 索性沿用。早期的他們以行為表演為主，重心後來才從表演轉向聲音，本作正是噪音牆已經成形的那個階段，1985 年 5 月由 JOJO 広重 主持的大阪廠牌 Alchemy Records 發行。",
@@ -5056,8 +5086,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -5085,27 +5115,39 @@
    },
    "ratings": {
     "classic": 4,
-    "obscurity": 4,
+    "obscurity": 3,
     "accessibility": 5,
     "listeners": 2118,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
     "previous": {
-     "classic": 2,
-     "obscurity": 5,
+     "classic": 4,
+     "obscurity": 4,
      "accessibility": 5,
-     "source": "worker:/album-rating",
-     "checkedAt": "2026-08-31T00:00:00.000Z",
-     "rarity": "epic"
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Masonna 流通最廣的代表作、japanoise 要盤；L 2.1 千、Release 小支線串流缺；極端噪音",
+     "rarity": "legendary"
     },
-    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Masonna 流通最廣的代表作、japanoise 要盤；L 2.1 千、Release 小支線串流缺；極端噪音"
+    "note": "全池稽核 audit-20261102（方案 C）：流通最廣作，無節拍無曲式的人聲噪音；與 Merzbow 並列日噪代表｜L=2118"
    },
    "rarity": "legendary",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：obscurity=5、listeners=2118；accessibility=5（heresy 最低門檻），但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "heresy",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為異端（該軸 7 星）。Masonna流通最廣作，無節拍無曲式的嘶吼回授噪音，與Merzbow、非常階段並列日噪極端代表",
+    "evidenceUrls": [
+     "https://en.wikipedia.org/wiki/Masonna",
+     "https://en.wikipedia.org/wiki/Japanoise"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：obscurity=5、listeners=2118；accessibility=5（heresy 最低門檻），但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "團名是一整句法文的縮寫，拆開來一樣不讓人聽懂。那句話是 Mademoiselle Anne Sanglante Ou Notre Nymphomanie Auréolé，山崎マゾ 1987 年起用它當這個獨作計畫的名字。1996 年這張由 Relapse 旗下的實驗支線 Release Entertainment 發行，是他流通最廣的一張。全碟七軌，靠剪接式的編輯與大量效果器把嘶吼與回授一起過濾再處理，人聲成了另一種噪音源。",
@@ -5124,8 +5166,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -5154,21 +5196,22 @@
    "ratings": {
     "classic": 4,
     "obscurity": 3,
-    "accessibility": 5,
+    "accessibility": 4,
     "listeners": 11220,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
     "previous": {
      "classic": 4,
-     "obscurity": 4,
+     "obscurity": 3,
      "accessibility": 5,
-     "source": "worker:/album-rating",
-     "checkedAt": "2026-08-31T00:00:00.000Z",
-     "rarity": "epic"
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：工業噪音早期要作；Side Effects小廠、L 11k；粗礪噪音工業",
+     "rarity": "legendary"
     },
-    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：工業噪音早期要作；Side Effects小廠、L 11k；粗礪噪音工業"
+    "note": "全池稽核 audit-20261102（方案 C）：工業噪音經典，但仍有歌曲骨架，屬 4；L=11k→3｜L=11220"
    },
-   "rarity": "legendary",
+   "rarity": "epic",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -6252,23 +6295,24 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 5,
+    "classic": 4,
     "obscurity": 3,
     "accessibility": 1,
     "listeners": 7516,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
     "previous": {
-     "classic": 4,
-     "obscurity": 4,
-     "accessibility": 2,
-     "source": "worker:/album-rating",
-     "checkedAt": "2026-08-31T00:00:00.000Z",
-     "rarity": "uncommon"
+     "classic": 5,
+     "obscurity": 3,
+     "accessibility": 1,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：巴西歌謠里程碑、海洋歌曲經典；巴西主流、圈外少知；吉他人聲柔和",
+     "rarity": "rare"
     },
-    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：巴西歌謠里程碑、海洋歌曲經典；巴西主流、圈外少知；吉他人聲柔和"
+    "note": "全池稽核 audit-20261102（方案 C）：Caymmi 海洋歌代表作，但本國榜代表為《Canções Praieiras》｜L=7516"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -7044,11 +7088,20 @@
    },
    "ratings": {
     "classic": 4,
-    "obscurity": 4,
+    "obscurity": 3,
     "accessibility": 5,
     "listeners": 3497,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 4,
+     "accessibility": 5,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "legendary"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：兩首長篇嘶吼與咒語人聲；聽眾 3,497→下限 3｜L=3497"
    },
    "rarity": "legendary",
    "apexAssessment": {
@@ -7315,10 +7368,21 @@
    },
    "rarity": "legendary",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：classic=5（hall 最低門檻）；obscurity=5、listeners=234；accessibility=5（heresy 最低門檻），但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。非慣用語法即興屬 5 星前衛，不是 harsh noise wall／反音樂里程碑級；同段 Parker、Topography 也是 none（主線改）",
+    "evidenceUrls": [
+     "https://www.last.fm/music/Derek%20Bailey/Solo%20Guitar%20Volume%201",
+     "https://musicbrainz.org/release-group/bec9e173-a085-37c6-956d-7145b92539fb"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：classic=5（hall 最低門檻）；obscurity=5、listeners=234；accessibility=5（heresy 最低門檻），但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "趁老闆去吃午餐，他和攝影師把店裡的樂器堆成一座山，回來就被開除。那組照片成了封面。原始標題只叫《Solo Guitar》，1971 年 2 月錄於倫敦，同年由 Incus 發行——那是 Derek Bailey 前一年與 Tony Oxley、Evan Parker 等人合辦、由樂手自己經營的自由即興廠牌，本作是它的第二號出品，也是他的第一張獨奏專輯。內容並非全屬即興：他另外彈了三首朋友寫給他的記譜作品，並用上數種吉他與 VCS 3 合成器。",
@@ -7338,8 +7402,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -7498,23 +7562,24 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 5,
+    "classic": 4,
     "obscurity": 3,
     "accessibility": 3,
     "listeners": 9085,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
     "previous": {
      "classic": 5,
-     "obscurity": 4,
-     "accessibility": 4,
-     "source": "worker:/album-rating",
-     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "obscurity": 3,
+     "accessibility": 3,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Zorn 成名作、Morricone 改編里程碑；Nonesuch 正規、串流缺；旋律＋噪音拼貼",
      "rarity": "epic"
     },
-    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Zorn 成名作、Morricone 改編里程碑；Nonesuch 正規、串流缺；旋律＋噪音拼貼"
+    "note": "全池稽核 audit-20261102（方案 C）：Zorn 突破作、Nonesuch 發行，屬藝人代表作級；經典 5→4｜L=9085"
    },
-   "rarity": "epic",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -7844,20 +7909,21 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 5,
+    "obscurity": 2,
     "accessibility": 1,
     "listeners": 253,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
     "previous": {
      "classic": 3,
      "obscurity": 5,
-     "accessibility": 2,
-     "source": "worker:/album-rating",
-     "checkedAt": "2026-08-31T00:00:00.000Z",
-     "rarity": "uncommon"
+     "accessibility": 1,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：原班四重奏重聚，有歷史意義非代表作；L=253＋unavailable 依下限 5；搖擺小組",
+     "rarity": "common"
     },
-    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：原班四重奏重聚，有歷史意義非代表作；L=253＋unavailable 依下限 5；搖擺小組"
+    "note": "全池稽核 audit-20261102（方案 C）：RCA Victor 大廠正常流通，listeners 253 疑錯配；冷門度照錨點 2｜L=253"
    },
    "rarity": "common",
    "apexAssessment": {
@@ -8487,23 +8553,24 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 5,
+    "classic": 4,
     "obscurity": 1,
     "accessibility": 1,
     "listeners": 268153,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
     "previous": {
-     "classic": 3,
-     "obscurity": 2,
+     "classic": 5,
+     "obscurity": 1,
      "accessibility": 1,
-     "source": "worker:/album-rating",
-     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：neotraditional country里程碑，五白金、葛萊美；入門常客；旋律直白",
      "rarity": "rare"
     },
-    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：neotraditional country里程碑，五白金、葛萊美；入門常客；旋律直白"
+    "note": "全池稽核 audit-20261102（方案 C）：新傳統鄉村暢銷代表作，正典地位次於 Storms of Life｜L=268153"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -8561,23 +8628,24 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 5,
+    "classic": 4,
     "obscurity": 2,
     "accessibility": 1,
     "listeners": 27364,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
     "previous": {
      "classic": 5,
-     "obscurity": 3,
+     "obscurity": 2,
      "accessibility": 1,
-     "source": "worker:/album-rating",
-     "checkedAt": "2026-08-31T00:00:00.000Z",
-     "rarity": "uncommon"
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：首張空降 Billboard 200 冠軍的鄉村專輯、十四白金；主流；鄉村流行",
+     "rarity": "rare"
     },
-    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：首張空降 Billboard 200 冠軍的鄉村專輯、十四白金；主流；鄉村流行"
+    "note": "全池稽核 audit-20261102（方案 C）：商業巔峰但評論代表作是 No Fences→4｜L=27364"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -8770,20 +8838,21 @@
    },
    "ratings": {
     "classic": 5,
-    "obscurity": 3,
+    "obscurity": 2,
     "accessibility": 2,
     "listeners": 3848,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
     "previous": {
-     "classic": 4,
-     "obscurity": 4,
+     "classic": 5,
+     "obscurity": 3,
      "accessibility": 2,
-     "source": "worker:/album-rating",
-     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：金曲單屆6獎含最佳國語專輯，華語里程碑；L=3848→下限3；搖滾流行",
      "rarity": "uncommon"
     },
-    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：金曲單屆6獎含最佳國語專輯，華語里程碑；L=3848→下限3；搖滾流行"
+    "note": "全池稽核 audit-20261102（方案 C）：金曲單屆六獎、最佳國語專輯；華語流行生涯巔峰，非跨榜史上核心。聽眾拆名疑錯配→2｜L=3848"
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -9198,23 +9267,24 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 5,
+    "classic": 4,
     "obscurity": 2,
     "accessibility": 1,
     "listeners": 270841,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
     "previous": {
      "classic": 5,
      "obscurity": 2,
-     "accessibility": 2,
-     "source": "worker:/album-rating",
-     "checkedAt": "2026-08-31T00:00:00.000Z",
-     "rarity": "uncommon"
+     "accessibility": 1,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：葛萊美年度專輯五項全拿；大廠主流；鄉村流行",
+     "rarity": "rare"
     },
-    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：葛萊美年度專輯五項全拿；大廠主流；鄉村流行"
+    "note": "全池稽核 audit-20261102（方案 C）：葛萊美年度專輯、代表作；聽眾 27 萬，非殿堂｜L=270841"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -10111,20 +10181,21 @@
    },
    "ratings": {
     "classic": 4,
-    "obscurity": 4,
+    "obscurity": 3,
     "accessibility": 5,
     "listeners": 4023,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
     "previous": {
-     "classic": 2,
+     "classic": 4,
      "obscurity": 4,
-     "accessibility": 4,
-     "source": "worker:/album-rating",
-     "checkedAt": "2026-08-31T00:00:00.000Z",
-     "rarity": "uncommon"
+     "accessibility": 5,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：大友良英 Ground Zero 最知名作；ReR 小廠、L=4k；57 分鐘單曲噪音堆疊",
+     "rarity": "legendary"
     },
-    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：大友良英 Ground Zero 最知名作；ReR 小廠、L=4k；57 分鐘單曲噪音堆疊"
+    "note": "全池稽核 audit-20261102（方案 C）：57分鐘單曲從嗩吶取樣層層堆成巨量噪音；L4,023→3｜L=4023"
    },
    "rarity": "legendary",
    "apexAssessment": {
@@ -10251,20 +10322,21 @@
    },
    "ratings": {
     "classic": 5,
-    "obscurity": 3,
+    "obscurity": 2,
     "accessibility": 1,
     "listeners": 167,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
     "previous": {
-     "classic": 4,
-     "obscurity": 5,
+     "classic": 5,
+     "obscurity": 3,
      "accessibility": 1,
-     "source": "worker:/album-rating",
-     "checkedAt": "2026-08-31T00:00:00.000Z",
-     "rarity": "uncommon"
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Streisand 原版卡司經典、OCR 葛萊美；L 167＋unavailable 套下限 5；百老匯；冷門度下限豁免：Last.fm 疑錯配",
+     "rarity": "rare"
     },
-    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Streisand 原版卡司經典、OCR 葛萊美；L 167＋unavailable 套下限 5；百老匯；冷門度下限豁免：Last.fm 疑錯配"
+    "note": "全池稽核 audit-20261102（方案 C）：聽眾 167 屬原卡司盤拆名疑錯配，Capitol 主流發行照錨點 2｜L=167"
    },
    "rarity": "rare",
    "apexAssessment": {
@@ -10321,22 +10393,23 @@
    },
    "ratings": {
     "classic": 4,
-    "obscurity": 5,
+    "obscurity": 3,
     "accessibility": 1,
     "listeners": 3,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
     "previous": {
-     "classic": 5,
+     "classic": 4,
      "obscurity": 5,
-     "accessibility": 2,
-     "source": "worker:/album-rating",
-     "checkedAt": "2026-08-31T00:00:00.000Z",
-     "rarity": "epic"
+     "accessibility": 1,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：百老匯經典劇，OCR 獲葛萊美；L 3＋試聽 unavailable 套下限 5；音樂劇歌曲",
+     "rarity": "rare"
     },
-    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：百老匯經典劇，OCR 獲葛萊美；L 3＋試聽 unavailable 套下限 5；音樂劇歌曲"
+    "note": "全池稽核 audit-20261102（方案 C）：百老匯原卡司盤（MGM）多次 CD 再發；聽眾掛詞曲名下疑錯配，依錨點3｜L=3"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,

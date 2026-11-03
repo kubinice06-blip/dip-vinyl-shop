@@ -27,22 +27,23 @@
    },
    "ratings": {
     "classic": 4,
-    "obscurity": 5,
+    "obscurity": 2,
     "accessibility": 1,
     "listeners": 5,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
     "previous": {
      "classic": 4,
      "obscurity": 5,
-     "accessibility": 2,
-     "source": "worker:/album-rating",
-     "checkedAt": "2026-08-31T00:00:00.000Z",
-     "rarity": "uncommon"
+     "accessibility": 1,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：劉文正事業高峰、空前大賣的代表作；L=5＋unavailable 依下限 5；國語流行抒情",
+     "rarity": "rare"
     },
-    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：劉文正事業高峰、空前大賣的代表作；L=5＋unavailable 依下限 5；國語流行抒情"
+    "note": "全池稽核 audit-20261102（方案 C）：錯配(b)：東尼機構空前大賣，華語主流暢銷作→照錨點 2｜L=5"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -96,22 +97,23 @@
    },
    "ratings": {
     "classic": 5,
-    "obscurity": 5,
+    "obscurity": 3,
     "accessibility": 1,
     "listeners": 43,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
     "previous": {
-     "classic": 3,
+     "classic": 5,
      "obscurity": 5,
-     "accessibility": 2,
-     "source": "worker:/album-rating",
-     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "accessibility": 1,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：台灣流行音樂百張最佳專輯第 81 名／L43 無串流 5／台語流行",
      "rarity": "uncommon"
     },
-    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：台灣流行音樂百張最佳專輯第 81 名／L43 無串流 5／台語流行"
+    "note": "全池稽核 audit-20261102（方案 C）：入選百張最佳第81，台語流行經典；百萬暢銷，聽眾低疑拆名錯配→3｜L=43"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,

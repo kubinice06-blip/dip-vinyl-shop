@@ -760,11 +760,20 @@
       "ratings": {
         "classic": 3,
         "obscurity": 4,
-        "accessibility": 2,
+        "accessibility": 1,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-23T01:17:54Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Hayes–Porter 打造的四人組第二張、Muscle Shoals 錄音，有特色但單曲未進榜；深度愛好者領域，聽感正常。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：Stax 二線團作品，Southern soul 穩定之作｜L=252",
+        "previous": {
+          "classic": 3,
+          "obscurity": 4,
+          "accessibility": 2,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-23T01:17:54Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Hayes–Porter 打造的四人組第二張、Muscle Shoals 錄音，有特色但單曲未進榜；深度愛好者領域，聽感正常。",
+          "rarity": "common"
+        }
       },
       "rarity": "common",
       "apexAssessment": {
@@ -1232,15 +1241,24 @@
         "visuallyVerified": true
       },
       "ratings": {
-        "classic": 5,
+        "classic": 4,
         "obscurity": 2,
         "accessibility": 1,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-23T01:17:54Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；《滾石》五百大專輯第 161 名、史上首支逝後冠軍單曲所在，Otis 正典中的大眾入口。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：遺作專輯、半精選性質，Otis 代表作是 Otis Blue，經典 5→4",
+        "previous": {
+          "classic": 5,
+          "obscurity": 2,
+          "accessibility": 1,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-23T01:17:54Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；《滾石》五百大專輯第 161 名、史上首支逝後冠軍單曲所在，Otis 正典中的大眾入口。",
+          "rarity": "rare"
+        }
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -5987,12 +6005,21 @@
       },
       "ratings": {
         "classic": 3,
-        "obscurity": 3,
+        "obscurity": 2,
         "accessibility": 1,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-23T01:17:54Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；標題曲為兩百萬銷量的不朽金曲,專輯本身入 R&B 榜第 17 名,屬「金曲極大、專輯中堅」的組合。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：同名金曲專輯，Invictus 主流靈魂｜L=40106",
+        "previous": {
+          "classic": 3,
+          "obscurity": 3,
+          "accessibility": 1,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-23T01:17:54Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；標題曲為兩百萬銷量的不朽金曲,專輯本身入 R&B 榜第 17 名,屬「金曲極大、專輯中堅」的組合。",
+          "rarity": "common"
+        }
       },
       "rarity": "common",
       "apexAssessment": {
@@ -6121,13 +6148,22 @@
         "visuallyVerified": true
       },
       "ratings": {
-        "classic": 4,
+        "classic": 3,
         "obscurity": 3,
         "accessibility": 1,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-23T01:17:54Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Gamble & Huff 老班底的成熟作,首張掛名 MFSB 的專輯,《Rolling Stone Album Guide》指 disco 由此開端,樂史意義高於銷量。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：Gamble & Huff 系 Philly soul 二線團的中期作，無聽眾值不套下限｜L=12785",
+        "previous": {
+          "classic": 4,
+          "obscurity": 3,
+          "accessibility": 1,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-23T01:17:54Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Gamble & Huff 老班底的成熟作,首張掛名 MFSB 的專輯,《Rolling Stone Album Guide》指 disco 由此開端,樂史意義高於銷量。",
+          "rarity": "common"
+        }
       },
       "rarity": "common",
       "apexAssessment": {
@@ -6658,23 +6694,40 @@
         "visuallyVerified": true
       },
       "ratings": {
-        "classic": 5,
+        "classic": 4,
         "obscurity": 3,
         "accessibility": 1,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-23T01:17:54Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Gamble & Huff 前費城國際時期的原型名盤,Mojo 與 AllMusic 均指認其開創地位,R&B 專輯榜第二,產出四支熱門單曲。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：Gamble & Huff 費城靈魂佳作、藝人代表作，但非正典核心；經典度 4，殿堂不成立",
+        "previous": {
+          "classic": 5,
+          "obscurity": 3,
+          "accessibility": 1,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-23T01:17:54Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Gamble & Huff 前費城國際時期的原型名盤,Mojo 與 AllMusic 均指認其開創地位,R&B 專輯榜第二,產出四支熱門單曲。",
+          "rarity": "rare"
+        }
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "費城之聲的公認開創文獻:Mojo 指其製作是日後費城國際之聲的雛形,AllMusic(4.5 星)稱這是 R&B 製作技術首次臻於成熟優雅,加上百萬單曲〈Only the Strong Survive〉與 R&B 榜亞軍的商業實績,跨來源長期共識足列費城靈魂史核心。",
-        "evidenceUrls": [
-          "https://en.wikipedia.org/wiki/The_Ice_Man_Cometh_(album)",
-          "https://www.allmusic.com/album/the-iceman-cometh-mw0001242477"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。費城靈魂佳作屬 4，非正典核心",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "費城之聲的公認開創文獻:Mojo 指其製作是日後費城國際之聲的雛形,AllMusic(4.5 星)稱這是 R&B 製作技術首次臻於成熟優雅,加上百萬單曲〈Only the Strong Survive〉與 R&B 榜亞軍的商業實績,跨來源長期共識足列費城靈魂史核心。",
+          "evidenceUrls": [
+            "https://en.wikipedia.org/wiki/The_Ice_Man_Cometh_(album)",
+            "https://www.allmusic.com/album/the-iceman-cometh-mw0001242477"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "綽號「Iceman」的芝加哥歌手 Jerry Butler 與尚未創立廠牌的 Gamble & Huff 合作,1968 年的《The Ice Man Cometh》成為費城之聲的原型文獻:Mojo 指其製作正是日後費城國際之聲的雛形,AllMusic 稱這是 R&B 製作技術首次臻於成熟優雅。專輯在 Sigma Sound 錄音,產出百萬銷量的〈Only the Strong Survive〉與〈Hey, Western Union Man〉、〈Never Give You Up〉等四支熱門單曲,登上 R&B 專輯榜第二名。",
@@ -6707,8 +6760,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": false,
-        "apexPool": true
+        "seedCards": true,
+        "apexPool": false
       }
     },
     {
@@ -7205,23 +7258,40 @@
         "visuallyVerified": true
       },
       "ratings": {
-        "classic": 5,
+        "classic": 4,
         "obscurity": 2,
-        "accessibility": 2,
+        "accessibility": 1,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-23T01:17:54Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Allen Toussaint 製作、〈Lady Marmalade〉Hot 100 冠軍並入國家錄音登錄庫，樂評稱 disco 破曉分水嶺，跨來源地位明確。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：Lady Marmalade 所在，藝人代表作層級，未達殿堂；經典 4，tier 錯",
+        "previous": {
+          "classic": 5,
+          "obscurity": 2,
+          "accessibility": 2,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-23T01:17:54Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Allen Toussaint 製作、〈Lady Marmalade〉Hot 100 冠軍並入國家錄音登錄庫，樂評稱 disco 破曉分水嶺，跨來源地位明確。",
+          "rarity": "uncommon"
+        }
       },
-      "rarity": "uncommon",
+      "rarity": "common",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "跨來源長期共識：樂評稱其為 disco 破曉期分水嶺（Rolling Stone 語），〈Lady Marmalade〉2021 年入選美國國家錄音登錄庫，Toussaint 於紐奧良製作的此作公認為 1970 年代放克靈魂史核心之一。",
-        "evidenceUrls": [
-          "https://en.wikipedia.org/wiki/Nightbirds",
-          "https://en.wikipedia.org/wiki/Lady_Marmalade"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。Lady Marmalade 所在，藝人代表作，未入綜合歷代榜前段",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "跨來源長期共識：樂評稱其為 disco 破曉期分水嶺（Rolling Stone 語），〈Lady Marmalade〉2021 年入選美國國家錄音登錄庫，Toussaint 於紐奧良製作的此作公認為 1970 年代放克靈魂史核心之一。",
+          "evidenceUrls": [
+            "https://en.wikipedia.org/wiki/Nightbirds",
+            "https://en.wikipedia.org/wiki/Lady_Marmalade"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "Labelle 拋開 1960 年代女子團形象後的轉型之作：1974 年南下紐奧良，由 Allen Toussaint 在 Sea-Saint 錄音室操刀製作，把放克、glam 舞台美學與紐奧良律動嫁接起來。〈Lady Marmalade〉登上 Hot 100 冠軍，2021 年入選美國國家錄音登錄庫；樂評稱本作為 disco 破曉期的分水嶺，也是三人合作生涯最暢銷的專輯。",
@@ -7254,8 +7324,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": false,
-        "apexPool": true
+        "seedCards": true,
+        "apexPool": false
       }
     },
     {
@@ -7480,13 +7550,22 @@
         "visuallyVerified": true
       },
       "ratings": {
-        "classic": 4,
+        "classic": 3,
         "obscurity": 3,
         "accessibility": 1,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-23T01:17:54Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；〈Everybody Plays the Fool〉Hot 100 第 3 名金唱片、葛萊美提名，紐約 sweet soul 公認主要作品。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：含 Everybody Plays the Fool 的 RCA 盤，二線 soul 團穩定作品｜L=6089",
+        "previous": {
+          "classic": 4,
+          "obscurity": 3,
+          "accessibility": 1,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-23T01:17:54Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；〈Everybody Plays the Fool〉Hot 100 第 3 名金唱片、葛萊美提名，紐約 sweet soul 公認主要作品。",
+          "rarity": "common"
+        }
       },
       "rarity": "common",
       "apexAssessment": {
@@ -7548,13 +7627,22 @@
         "visuallyVerified": true
       },
       "ratings": {
-        "classic": 4,
-        "obscurity": 3,
+        "classic": 3,
+        "obscurity": 2,
         "accessibility": 1,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-23T01:17:54Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；標題曲為 1968 年 Hot 100 與 R&B 雙冠軍、百萬金唱片、Rolling Stone 五百大歌曲，早期放克要作。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：同名熱門單曲專輯，南方 soul｜L=7738",
+        "previous": {
+          "classic": 4,
+          "obscurity": 3,
+          "accessibility": 1,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-23T01:17:54Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；標題曲為 1968 年 Hot 100 與 R&B 雙冠軍、百萬金唱片、Rolling Stone 五百大歌曲，早期放克要作。",
+          "rarity": "common"
+        }
       },
       "rarity": "common",
       "apexAssessment": {
@@ -9898,23 +9986,40 @@
         "visuallyVerified": true
       },
       "ratings": {
-        "classic": 5,
+        "classic": 4,
         "obscurity": 2,
-        "accessibility": 2,
+        "accessibility": 1,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-23T01:17:54Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；跨來源長期公認的靈魂現場正典:滾石五十大現場專輯第 27 名、BBC 與 Christgau 均給最高評價;大眾曲目×大牌,唯雙 LP 篇幅與長段說話略增門檻。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：受推崇的現場盤，屬藝人代表作級；無正典榜共識，殿堂不成立",
+        "previous": {
+          "classic": 5,
+          "obscurity": 2,
+          "accessibility": 2,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-23T01:17:54Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；跨來源長期公認的靈魂現場正典:滾石五十大現場專輯第 27 名、BBC 與 Christgau 均給最高評價;大眾曲目×大牌,唯雙 LP 篇幅與長段說話略增門檻。",
+          "rarity": "uncommon"
+        }
       },
-      "rarity": "uncommon",
+      "rarity": "common",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "靈魂現場錄音的史上核心:滾石雜誌 2015 年將它列為史上五十大現場專輯第 27 名,BBC 的 Daryl Easlea 把它與 James Brown《Live at the Apollo》、Aretha Franklin《Amazing Grace》、Van Morrison《It's Too Late to Stop Now》並列,Christgau 更在多年後改口稱這份錄音才是 Withers 真正的遺產,跨來源長期共識穩固。",
-        "evidenceUrls": [
-          "https://en.wikipedia.org/wiki/Live_at_Carnegie_Hall_(Bill_Withers_album)",
-          "https://en.wikipedia.org/wiki/Bill_Withers"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。藝人代表現場盤，無正典榜共識",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "靈魂現場錄音的史上核心:滾石雜誌 2015 年將它列為史上五十大現場專輯第 27 名,BBC 的 Daryl Easlea 把它與 James Brown《Live at the Apollo》、Aretha Franklin《Amazing Grace》、Van Morrison《It's Too Late to Stop Now》並列,Christgau 更在多年後改口稱這份錄音才是 Withers 真正的遺產,跨來源長期共識穩固。",
+          "evidenceUrls": [
+            "https://en.wikipedia.org/wiki/Live_at_Carnegie_Hall_(Bill_Withers_album)",
+            "https://en.wikipedia.org/wiki/Bill_Withers"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "1972 年 10 月 6 日錄於紐約卡內基音樂廳,1973 年 4 月 21 日由 Sussex 以雙 LP 發行。班底是 James Gadson 的鼓、Melvin Dunlap 的貝斯與 Ray Jackson 的鋼琴;Withers 在歌與歌之間大段講話,〈Grandma's Hands〉與〈Let Me in Your Life〉都變成先講後唱。八分半的〈Use Me〉開場,末尾以十三分鐘的〈Harlem/Cold Baloney〉收。Christgau 認為這才是他真正的遺產,滾石雜誌 2015 年將它排在史上五十大現場專輯第 27 名。",
@@ -9947,8 +10052,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": false,
-        "apexPool": true
+        "seedCards": true,
+        "apexPool": false
       }
     },
     {
@@ -11327,11 +11432,20 @@
       "ratings": {
         "classic": 3,
         "obscurity": 3,
-        "accessibility": 2,
+        "accessibility": 1,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-23T01:17:54Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；〈Slow Down〉拿下美國 R&B 榜冠軍、全片開出四首進榜單曲，是 Brit-soul 的明確代表段落，但 AllMusic 僅 3/5、地位不及該類型首選；樂迷領域；節奏清楚。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：英國靈魂團體作，次於 A Little Spice 時期；易聽｜L=39658",
+        "previous": {
+          "classic": 3,
+          "obscurity": 3,
+          "accessibility": 2,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-23T01:17:54Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；〈Slow Down〉拿下美國 R&B 榜冠軍、全片開出四首進榜單曲，是 Brit-soul 的明確代表段落，但 AllMusic 僅 3/5、地位不及該類型首選；樂迷領域；節奏清楚。",
+          "rarity": "common"
+        }
       },
       "rarity": "common",
       "apexAssessment": {
@@ -11996,15 +12110,24 @@
         "visuallyVerified": true
       },
       "ratings": {
-        "classic": 5,
-        "obscurity": 3,
+        "classic": 4,
+        "obscurity": 2,
         "accessibility": 2,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-23T01:17:54Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；白金、R&B 專輯榜三週冠軍、2020 年 Rolling Stone 五百大第499名，樂團公認藝術高峰"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：Rufus 強作之一，ABC 正規發行",
+        "previous": {
+          "classic": 5,
+          "obscurity": 3,
+          "accessibility": 2,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-23T01:17:54Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；白金、R&B 專輯榜三週冠軍、2020 年 Rolling Stone 五百大第499名，樂團公認藝術高峰",
+          "rarity": "uncommon"
+        }
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -12936,12 +13059,21 @@
       },
       "ratings": {
         "classic": 3,
-        "obscurity": 4,
-        "accessibility": 2,
+        "obscurity": 3,
+        "accessibility": 1,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-23T01:17:54Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Island 首張個人作、boogie／dub 俱樂部路線的重要一環，但非她最廣為人知的作品，屬深度愛好者領域。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：Island 發行、Sly & Robbie 製作的首張，post-disco 佳作，圈外少知｜L=27117",
+        "previous": {
+          "classic": 3,
+          "obscurity": 4,
+          "accessibility": 2,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-23T01:17:54Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Island 首張個人作、boogie／dub 俱樂部路線的重要一環，但非她最廣為人知的作品，屬深度愛好者領域。",
+          "rarity": "common"
+        }
       },
       "rarity": "common",
       "apexAssessment": {
@@ -13136,15 +13268,24 @@
         "visuallyVerified": true
       },
       "ratings": {
-        "classic": 5,
+        "classic": 4,
         "obscurity": 2,
-        "accessibility": 2,
+        "accessibility": 1,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-23T01:17:54Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；銷量逾 250 萬、Billboard 200 第 17 名與多項葛萊美提名，Wikipedia neo soul 條目亦記其為該類型的重要作品，公認開創地位。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：neo-soul 重要作，非跨來源史上核心",
+        "previous": {
+          "classic": 5,
+          "obscurity": 2,
+          "accessibility": 2,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-23T01:17:54Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；銷量逾 250 萬、Billboard 200 第 17 名與多項葛萊美提名，Wikipedia neo soul 條目亦記其為該類型的重要作品，公認開創地位。",
+          "rarity": "uncommon"
+        }
       },
-      "rarity": "uncommon",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -13602,24 +13743,41 @@
         "visuallyVerified": true
       },
       "ratings": {
-        "classic": 5,
-        "obscurity": 3,
+        "classic": 4,
+        "obscurity": 2,
         "accessibility": 2,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-23T01:17:54Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Wikipedia neo soul 條目直接記載本作「後來被認定為 neo soul 的開端」，專輯條目亦稱其為該類型的奠基之作，並獲三項葛萊美提名。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：neo-soul 先聲、強勢首作，但非正典榜必提；Maverick 大廠流通冷門度 3→2",
+        "previous": {
+          "classic": 5,
+          "obscurity": 3,
+          "accessibility": 2,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-23T01:17:54Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Wikipedia neo soul 條目直接記載本作「後來被認定為 neo soul 的開端」，專輯條目亦稱其為該類型的奠基之作，並獲三項葛萊美提名。",
+          "rarity": "uncommon"
+        }
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "跨來源長期共識足列 neo soul 史上核心：Wikipedia neo soul 條目引 BBC Music 評論，明記本作後來被認定為該類型的開端；專輯條目亦以「landmark neo soul record」定位；Pitchfork 在 Groove Theory 回顧中，將本作與 Sade《Love Deluxe》、D'Angelo《Brown Sugar》、Janet Jackson《janet.》並列為九〇年代中期最大膽的 R&B 專輯。",
-        "evidenceUrls": [
-          "https://en.wikipedia.org/wiki/Neo_soul",
-          "https://en.wikipedia.org/wiki/Plantation_Lullabies",
-          "https://en.wikipedia.org/wiki/Groove_Theory_(album)"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。neo-soul 先聲，未進綜合歷代榜",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "跨來源長期共識足列 neo soul 史上核心：Wikipedia neo soul 條目引 BBC Music 評論，明記本作後來被認定為該類型的開端；專輯條目亦以「landmark neo soul record」定位；Pitchfork 在 Groove Theory 回顧中，將本作與 Sade《Love Deluxe》、D'Angelo《Brown Sugar》、Janet Jackson《janet.》並列為九〇年代中期最大膽的 R&B 專輯。",
+          "evidenceUrls": [
+            "https://en.wikipedia.org/wiki/Neo_soul",
+            "https://en.wikipedia.org/wiki/Plantation_Lullabies",
+            "https://en.wikipedia.org/wiki/Groove_Theory_(album)"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "身兼貝斯手與主唱的 Me'shell NdegéOcello 是 Madonna 旗下 Maverick 廠最早簽下的藝人之一，1993 年 10 月推出這張首作。David Gamson 擔任大半曲目的共同製作，André Betts 與 Bob Power 分擔其餘；Joshua Redman 的薩克斯風與 Wah Wah Watson 的吉他穿插其間。她把嘻哈的節奏思維放進放克與靈魂樂骨架，貝斯常常就是主旋律，歌詞則直面性別、性向、黑人自豪與白人種族主義，次年入圍三項葛萊美。",
@@ -13649,8 +13807,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": false,
-        "apexPool": true
+        "seedCards": true,
+        "apexPool": false
       }
     },
     {
@@ -14805,13 +14963,22 @@
         "visuallyVerified": true
       },
       "ratings": {
-        "classic": 3,
+        "classic": 4,
         "obscurity": 2,
         "accessibility": 1,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-23T01:17:54Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；雙白金、首度登頂 R&B 專輯榜，是九〇年代抒情男聲的主要樣本之一，惟樂評當年評價分歧；大牌大眾曲目，旋律直白。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：McKnight 暢銷代表作，R&B 抒情｜L=196392",
+        "previous": {
+          "classic": 3,
+          "obscurity": 2,
+          "accessibility": 1,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-23T01:17:54Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；雙白金、首度登頂 R&B 專輯榜，是九〇年代抒情男聲的主要樣本之一，惟樂評當年評價分歧；大牌大眾曲目，旋律直白。",
+          "rarity": "common"
+        }
       },
       "rarity": "common",
       "apexAssessment": {
@@ -15078,13 +15245,22 @@
       "ratings": {
         "classic": 5,
         "obscurity": 2,
-        "accessibility": 2,
+        "accessibility": 1,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-23T01:17:54Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；跨來源長期共識的美國流行音樂核心文獻：1999 年入選葛萊美名人堂、2026 年入選美國國家錄音登錄庫，並獲葛萊美年度專輯提名；曲目傳唱極廣，大樂隊加弦樂的流行編制聽感平順。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：RS500、1001、國會錄音登錄；柔和弦樂人聲硬蕊 1",
+        "previous": {
+          "classic": 5,
+          "obscurity": 2,
+          "accessibility": 2,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-23T01:17:54Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；跨來源長期共識的美國流行音樂核心文獻：1999 年入選葛萊美名人堂、2026 年入選美國國家錄音登錄庫，並獲葛萊美年度專輯提名；曲目傳唱極廣，大樂隊加弦樂的流行編制聽感平順。",
+          "rarity": "uncommon"
+        }
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": true,
         "tier": "hall",
@@ -15279,15 +15455,24 @@
         "visuallyVerified": true
       },
       "ratings": {
-        "classic": 5,
+        "classic": 4,
         "obscurity": 2,
-        "accessibility": 2,
+        "accessibility": 1,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-23T01:17:54Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Atlantic 8006 收攏的 1953–57 單曲被公認是靈魂樂成形的那批錄音，十四首中十一首曾入 R&B 榜前十；大牌藝人但此盤非其最常見版本，聽感直白略帶粗礪。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：Atlantic 首張 LP；殿堂級的是 Genius/Modern Sounds",
+        "previous": {
+          "classic": 5,
+          "obscurity": 2,
+          "accessibility": 2,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-23T01:17:54Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Atlantic 8006 收攏的 1953–57 單曲被公認是靈魂樂成形的那批錄音，十四首中十一首曾入 R&B 榜前十；大牌藝人但此盤非其最常見版本，聽感直白略帶粗礪。",
+          "rarity": "uncommon"
+        }
       },
-      "rarity": "uncommon",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -15346,15 +15531,24 @@
         "visuallyVerified": true
       },
       "ratings": {
-        "classic": 5,
+        "classic": 4,
         "obscurity": 2,
         "accessibility": 1,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-23T01:17:54Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Cooke 生前最後一張錄音室專輯且收錄〈A Change Is Gonna Come〉，在靈魂樂史地位明確；大牌藝人的知名作，旋律直白。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：晚期錄音室強作；正典是 Harlem Square 現場",
+        "previous": {
+          "classic": 5,
+          "obscurity": 2,
+          "accessibility": 1,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-23T01:17:54Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Cooke 生前最後一張錄音室專輯且收錄〈A Change Is Gonna Come〉，在靈魂樂史地位明確；大牌藝人的知名作，旋律直白。",
+          "rarity": "rare"
+        }
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -15562,13 +15756,21 @@
       },
       "rarity": "rare",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "跨來源長期共識足列靈魂樂史核心文獻：Rolling Stone 五百大專輯 2003、2012、2020 三版皆列（最高第 107 名），Time 亦選入 All-TIME 100 Albums，傳記作者 Peter Guralnick 與 BBC 均稱其為現存最好的單卷 Cooke 入口。",
-        "evidenceUrls": [
-          "https://en.wikipedia.org/wiki/Portrait_of_a_Legend:_1951%E2%80%931964",
-          "https://en.wikipedia.org/wiki/Rolling_Stone%27s_500_Greatest_Albums_of_All_Time"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。精選合輯，共識指向藝人而非這張；精選不列殿堂",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "跨來源長期共識足列靈魂樂史核心文獻：Rolling Stone 五百大專輯 2003、2012、2020 三版皆列（最高第 107 名），Time 亦選入 All-TIME 100 Albums，傳記作者 Peter Guralnick 與 BBC 均稱其為現存最好的單卷 Cooke 入口。",
+          "evidenceUrls": [
+            "https://en.wikipedia.org/wiki/Portrait_of_a_Legend:_1951%E2%80%931964",
+            "https://en.wikipedia.org/wiki/Rolling_Stone%27s_500_Greatest_Albums_of_All_Time"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "ABKCO 在 2003 年編成的單卷生涯總覽，從 Soul Stirrers 時期的福音錄音一路排到身後單曲〈Shake〉，收進〈You Send Me〉〈Chain Gang〉〈Bring It On Home to Me〉與〈A Change Is Gonna Come〉。傳記作者 Peter Guralnick 寫解說，直言要綜覽 Cooke 生涯無物能與之相比；BBC 也稱它是現有最好的單張入門。Rolling Stone 五百大專輯 2003 年版列第 107 名，Time 於 2010 年選入 All-TIME 100 Albums。",
@@ -15600,8 +15802,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": false,
-        "apexPool": true
+        "seedCards": true,
+        "apexPool": false
       }
     },
     {
@@ -16430,15 +16632,24 @@
         "visuallyVerified": true
       },
       "ratings": {
-        "classic": 5,
+        "classic": 4,
         "obscurity": 3,
         "accessibility": 1,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-23T01:17:54Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；女子團體時代開創者的首張，收錄史上首支黑人女子團體流行榜冠軍〈Will You Love Me Tomorrow〉，2022 年獲國會圖書館列入國家錄音登記名冊；屬樂迷領域，旋律直白。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：girl group 早期代表，價值在單曲",
+        "previous": {
+          "classic": 5,
+          "obscurity": 3,
+          "accessibility": 1,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-23T01:17:54Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；女子團體時代開創者的首張，收錄史上首支黑人女子團體流行榜冠軍〈Will You Love Me Tomorrow〉，2022 年獲國會圖書館列入國家錄音登記名冊；屬樂迷領域，旋律直白。",
+          "rarity": "rare"
+        }
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,

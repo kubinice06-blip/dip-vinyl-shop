@@ -820,15 +820,24 @@
         "visuallyVerified": true
       },
       "ratings": {
-        "classic": 5,
+        "classic": 4,
         "obscurity": 3,
         "accessibility": 2,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-21T10:24:26Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；傳記作者 Ian Zack 推為其生涯巔峰與民謠時代最攝人錄音之一,AllMusic 列為 country blues/福音樂迷必備,跨來源地位明確。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：藍調福音吉他名盤，代表作級，非全領域殿堂",
+        "previous": {
+          "classic": 5,
+          "obscurity": 3,
+          "accessibility": 2,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-21T10:24:26Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；傳記作者 Ian Zack 推為其生涯巔峰與民謠時代最攝人錄音之一,AllMusic 列為 country blues/福音樂迷必備,跨來源地位明確。",
+          "rarity": "uncommon"
+        }
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -3301,14 +3310,22 @@
       },
       "rarity": "rare",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "列入 National Recording Registry,〈Freight Train〉經民謠復興與 skiffle 風潮成為跨國標準曲,Cotten 並以早期影響身分入列搖滾名人堂,指法傳統以她命名,跨來源長期共識足列民謠藍調史核心。",
-        "evidenceUrls": [
-          "https://en.wikipedia.org/wiki/Elizabeth_Cotten",
-          "https://en.wikipedia.org/wiki/Freight_Train_(folk_song)",
-          "https://www.loc.gov/programs/national-recording-preservation-board/recording-registry/"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。國會登記、民謠復興核心，但非跨類型綜合榜正典",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "列入 National Recording Registry,〈Freight Train〉經民謠復興與 skiffle 風潮成為跨國標準曲,Cotten 並以早期影響身分入列搖滾名人堂,指法傳統以她命名,跨來源長期共識足列民謠藍調史核心。",
+          "evidenceUrls": [
+            "https://en.wikipedia.org/wiki/Elizabeth_Cotten",
+            "https://en.wikipedia.org/wiki/Freight_Train_(folk_song)",
+            "https://www.loc.gov/programs/national-recording-preservation-board/recording-registry/"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "Elizabeth Cotten 少女時期寫下〈Freight Train〉,此後放下吉他數十年,直到在 Seeger 家幫傭時被重新發掘;Mike Seeger 於 1950 年代後期在她家中以盤帶錄音,1958 年由 Folkways 發成她的首張專輯。左手拿右手吉他反著彈、以拇指擔旋律的交替低音指法自此傳開,被稱作 Cotten picking;本作並獲美國國會圖書館列入 National Recording Registry。",
@@ -3338,8 +3355,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": false,
-        "apexPool": true
+        "seedCards": true,
+        "apexPool": false
       }
     },
     {
@@ -4964,13 +4981,22 @@
         "visuallyVerified": true
       },
       "ratings": {
-        "classic": 3,
+        "classic": 4,
         "obscurity": 4,
-        "accessibility": 2,
+        "accessibility": 1,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-21T10:24:26Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Piedmont blues 復興期最重要雙人組的美國首作,兩人先後獲 NEA National Heritage Fellowship,但單張專輯地位屬愛好者領域而非跨界共識。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：Piedmont 藍調二人組 Flying Fish 代表作，W.C. Handy 獎｜L=148",
+        "previous": {
+          "classic": 3,
+          "obscurity": 4,
+          "accessibility": 2,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-21T10:24:26Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Piedmont blues 復興期最重要雙人組的美國首作,兩人先後獲 NEA National Heritage Fellowship,但單張專輯地位屬愛好者領域而非跨界共識。",
+          "rarity": "common"
+        }
       },
       "rarity": "common",
       "apexAssessment": {
@@ -5031,15 +5057,24 @@
         "visuallyVerified": true
       },
       "ratings": {
-        "classic": 5,
+        "classic": 4,
         "obscurity": 3,
         "accessibility": 2,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-21T10:24:26Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；首張專輯即收多首日後藍調標準曲,2008 年入選 Blues Foundation 名人堂 Classics of Blues Recordings,屬可查證的樂史地位。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：首張人聲盤、含 Have You Ever Loved a Woman，次於 Hide Away 器樂盤→4",
+        "previous": {
+          "classic": 5,
+          "obscurity": 3,
+          "accessibility": 2,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-21T10:24:26Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；首張專輯即收多首日後藍調標準曲,2008 年入選 Blues Foundation 名人堂 Classics of Blues Recordings,屬可查證的樂史地位。",
+          "rarity": "uncommon"
+        }
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -5904,12 +5939,21 @@
       },
       "ratings": {
         "classic": 3,
-        "obscurity": 3,
+        "obscurity": 2,
         "accessibility": 2,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-21T10:24:26Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；首張官方現場盤、曲目跨前三張專輯,但以錄音室補錄聞名,評價與地位不及錄音室代表作。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：現場盤，評價混雜（後製補錄爭議），非代表作｜L=19094",
+        "previous": {
+          "classic": 3,
+          "obscurity": 3,
+          "accessibility": 2,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-21T10:24:26Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；首張官方現場盤、曲目跨前三張專輯,但以錄音室補錄聞名,評價與地位不及錄音室代表作。",
+          "rarity": "common"
+        }
       },
       "rarity": "common",
       "apexAssessment": {
@@ -7971,23 +8015,40 @@
         "visuallyVerified": true
       },
       "ratings": {
-        "classic": 5,
-        "obscurity": 2,
+        "classic": 4,
+        "obscurity": 3,
         "accessibility": 2,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-21T10:24:26Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；首屆 W.C. Handy 年度藍調專輯獎得主、《紐約時報》年度十大,公認 Longhair 錄音室最佳與紐奧良鋼琴的標準文本;Alligator 長年在版,取得容易。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：晚期佳作，非領域人人必提（代表作是 Atlantic 時期錄音）；Alligator 廠冷門 3",
+        "previous": {
+          "classic": 5,
+          "obscurity": 2,
+          "accessibility": 2,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-21T10:24:26Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；首屆 W.C. Handy 年度藍調專輯獎得主、《紐約時報》年度十大,公認 Longhair 錄音室最佳與紐奧良鋼琴的標準文本;Alligator 長年在版,取得容易。",
+          "rarity": "uncommon"
+        }
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "拿下 1980 年首屆 W.C. Handy 年度藍調專輯獎(該類獎項的開端),同年獲《紐約時報》列為年度十大專輯,DownBeat 稱其為 Longhair 留下的近乎完美之作;作者本人 1981 入 Blues Hall of Fame、1992 入搖滾名人堂,跨來源長期共識足列 New Orleans blues 鋼琴史上核心。",
-        "evidenceUrls": [
-          "https://en.wikipedia.org/wiki/Crawfish_Fiesta",
-          "https://en.wikipedia.org/wiki/Professor_Longhair"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。晚期佳作，類型內 5 星以下",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "拿下 1980 年首屆 W.C. Handy 年度藍調專輯獎(該類獎項的開端),同年獲《紐約時報》列為年度十大專輯,DownBeat 稱其為 Longhair 留下的近乎完美之作;作者本人 1981 入 Blues Hall of Fame、1992 入搖滾名人堂,跨來源長期共識足列 New Orleans blues 鋼琴史上核心。",
+          "evidenceUrls": [
+            "https://en.wikipedia.org/wiki/Crawfish_Fiesta",
+            "https://en.wikipedia.org/wiki/Professor_Longhair"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "Professor Longhair 生前最後一張錄音室作,1980 年由 Alligator Records 發行,錄於紐奧良 Sea-Saint Studios,Dr. John 重回他樂團的吉他手位置,Johnny Vidacovich 打鼓。收 Earl King〈Big Chief〉、〈Bald Head〉、Muddy Waters〈Red Beans〉與同名曲,拿下 1980 年首屆 W.C. Handy 年度藍調專輯獎,並獲《紐約時報》選為年度十大;New Orleans blues 鋼琴那隻倫巴左手,在此錄得最清晰。",
@@ -8020,8 +8081,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": false,
-        "apexPool": true
+        "seedCards": true,
+        "apexPool": false
       }
     },
     {
@@ -8052,14 +8113,22 @@
       },
       "rarity": "rare",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "2012 年《滾石》五百大專輯名列第 404,是紐奧良 R&B 曲庫的標準入口,長年被描述為該城音樂的基石之作;作者 2019 年前為紐奧良音樂的主要代言人並於 2011 年入搖滾名人堂,跨來源共識穩定。",
-        "evidenceUrls": [
-          "https://en.wikipedia.org/wiki/Dr._John%27s_Gumbo",
-          "https://en.wikipedia.org/wiki/Dr._John",
-          "https://musicbrainz.org/release-group/d05e634f-6132-3c72-ae1e-0590fc1b99d0"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。紐奧良 R&B 代表作，類型 5 星",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "2012 年《滾石》五百大專輯名列第 404,是紐奧良 R&B 曲庫的標準入口,長年被描述為該城音樂的基石之作;作者 2019 年前為紐奧良音樂的主要代言人並於 2011 年入搖滾名人堂,跨來源共識穩定。",
+          "evidenceUrls": [
+            "https://en.wikipedia.org/wiki/Dr._John%27s_Gumbo",
+            "https://en.wikipedia.org/wiki/Dr._John",
+            "https://musicbrainz.org/release-group/d05e634f-6132-3c72-ae1e-0590fc1b99d0"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "Dr. John(本名 Malcolm John Rebennack Jr.)1972 年放下 Night Tripper 的巫毒迷幻裝扮,回頭整理故鄉紐奧良 1940、50 年代的 R&B 曲庫:〈Iko Iko〉、Earl King〈Big Chief〉、Professor Longhair〈Tipitina〉與 Huey「Piano」Smith 組曲,全碟只有一首自作曲。Harold Battiste 與 Jerry Wexler 製作,Lee Allen 吹薩克斯風。2012 年《滾石》五百大專輯名列第 404。",
@@ -8092,8 +8161,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": false,
-        "apexPool": true
+        "seedCards": true,
+        "apexPool": false
       }
     },
     {
@@ -12196,14 +12265,23 @@
       },
       "ratings": {
         "classic": 4,
-        "obscurity": 3,
-        "accessibility": 2,
+        "obscurity": 2,
+        "accessibility": 1,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-21T10:24:26Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；讓她躍上全國、拿下葛萊美最佳新人提名的個人代表作,90 年代女性藍調復興的關鍵盤;編制直白,但仍屬藍調樂迷領域。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：葛萊美提名突破作，藝人代表作｜L=40282",
+        "previous": {
+          "classic": 4,
+          "obscurity": 3,
+          "accessibility": 2,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-21T10:24:26Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；讓她躍上全國、拿下葛萊美最佳新人提名的個人代表作,90 年代女性藍調復興的關鍵盤;編制直白,但仍屬藍調樂迷領域。",
+          "rarity": "rare"
+        }
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -15137,13 +15215,22 @@
         "visuallyVerified": true
       },
       "ratings": {
-        "classic": 4,
+        "classic": 3,
         "obscurity": 1,
         "accessibility": 1,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-21T10:24:26Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；2001 年葛萊美最佳傳統藍調專輯、Billboard 藍調榜冠軍與雙白金,是跨世代的藍調事件,但錄音本身被評為過於光滑,難稱樂史核心;兩位皆為入門常客。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：Grammy 得獎暢銷盤，評價中等｜L=329374",
+        "previous": {
+          "classic": 4,
+          "obscurity": 1,
+          "accessibility": 1,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-21T10:24:26Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；2001 年葛萊美最佳傳統藍調專輯、Billboard 藍調榜冠軍與雙白金,是跨世代的藍調事件,但錄音本身被評為過於光滑,難稱樂史核心;兩位皆為入門常客。",
+          "rarity": "common"
+        }
       },
       "rarity": "common",
       "apexAssessment": {
@@ -17268,12 +17355,21 @@
       },
       "ratings": {
         "classic": 4,
-        "obscurity": 2,
+        "obscurity": 1,
         "accessibility": 1,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-21T10:24:26Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Moore 銷量與名次最高的一張、RIAA 金唱片,標題曲成通俗標準曲;旋律直白,一般玩家極易撞見。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：Moore 藍調轉型代表作，暢銷｜L=456932",
+        "previous": {
+          "classic": 4,
+          "obscurity": 2,
+          "accessibility": 1,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-21T10:24:26Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Moore 銷量與名次最高的一張、RIAA 金唱片,標題曲成通俗標準曲;旋律直白,一般玩家極易撞見。",
+          "rarity": "common"
+        }
       },
       "rarity": "common",
       "apexAssessment": {
@@ -17870,21 +17966,38 @@
       "ratings": {
         "classic": 5,
         "obscurity": 2,
-        "accessibility": 3,
+        "accessibility": 2,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-21T10:24:26Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；藍調名人堂 2014 年專輯類入選,並列《滾石》2020 年五百大專輯第 477 位,是 Chicago blues 的定義性首張 LP。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：RS500(2003)、1001 收錄，芝加哥藍調必提；藍調硬蕊 3 偏高改 2",
+        "previous": {
+          "classic": 5,
+          "obscurity": 2,
+          "accessibility": 3,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-21T10:24:26Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；藍調名人堂 2014 年專輯類入選,並列《滾石》2020 年五百大專輯第 477 位,是 Chicago blues 的定義性首張 LP。",
+          "rarity": "epic"
+        }
       },
-      "rarity": "epic",
+      "rarity": "uncommon",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "藍調名人堂專輯類入選與《滾石》五百大名單構成跨來源長期共識,曲目〈Smokestack Lightnin'〉為公認的類型基石。",
-        "evidenceUrls": [
-          "https://en.wikipedia.org/wiki/Moanin%27_in_the_Moonlight",
-          "https://en.wikipedia.org/wiki/Blues_Hall_of_Fame"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。芝加哥藍調必提屬 5；RS500 僅 2003 版，圈外知名度不足",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "藍調名人堂專輯類入選與《滾石》五百大名單構成跨來源長期共識,曲目〈Smokestack Lightnin'〉為公認的類型基石。",
+          "evidenceUrls": [
+            "https://en.wikipedia.org/wiki/Moanin%27_in_the_Moonlight",
+            "https://en.wikipedia.org/wiki/Blues_Hall_of_Fame"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "Chess 在 1959 年把 Howlin' Wolf 於 1951 至 1958 年間發行的單曲集結成他的第一張 LP,〈Moanin' at Midnight〉、〈How Many More Years〉、〈Smokestack Lightnin'〉、〈Evil〉都在其中。Chester Burnett 的沙啞咆哮配上 Hubert Sumlin 的吉他,把 Delta blues 的粗礪搬進芝加哥的電聲編制。《滾石》2020 年版五百大專輯名單將它列在第 477 位,2014 年並獲選進入藍調名人堂的專輯類。",
@@ -17917,8 +18030,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": false,
-        "apexPool": true
+        "seedCards": true,
+        "apexPool": false
       }
     },
     {
@@ -18208,23 +18321,40 @@
         "visuallyVerified": true
       },
       "ratings": {
-        "classic": 5,
-        "obscurity": 3,
+        "classic": 4,
+        "obscurity": 2,
         "accessibility": 2,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-21T10:24:26Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；藍調名人堂 2007 年專輯類入選,收錄〈Don't Start Me to Talkin'〉等定義戰後口琴藍調的 Checker 單曲。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：Chess 單曲合輯，藍調重要但非跨來源核心正典；Chess 正規流通冷門 2",
+        "previous": {
+          "classic": 5,
+          "obscurity": 3,
+          "accessibility": 2,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-21T10:24:26Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；藍調名人堂 2007 年專輯類入選,收錄〈Don't Start Me to Talkin'〉等定義戰後口琴藍調的 Checker 單曲。",
+          "rarity": "uncommon"
+        }
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "藍調名人堂專輯類入選,加上其曲目長期被視為戰後 Chicago blues 口琴語彙的基準,構成領域內核心共識。",
-        "evidenceUrls": [
-          "https://en.wikipedia.org/wiki/Down_and_Out_Blues",
-          "https://en.wikipedia.org/wiki/Blues_Hall_of_Fame"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。Chess 單曲合輯，非綜合歷代榜核心",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "藍調名人堂專輯類入選,加上其曲目長期被視為戰後 Chicago blues 口琴語彙的基準,構成領域內核心共識。",
+          "evidenceUrls": [
+            "https://en.wikipedia.org/wiki/Down_and_Out_Blues",
+            "https://en.wikipedia.org/wiki/Blues_Hall_of_Fame"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "Checker 在 1959 年把 Alex「Rice」Miller——即 Sonny Boy Williamson II——自 1955 年起的單曲集成他的首張 LP,從〈Don't Start Me to Talkin'〉一路收到〈Cross My Heart〉。伴奏是當年 Chess 的核心:Muddy Waters、Otis Spann、Willie Dixon。Miller 借用了已故 John Lee「Sonny Boy」Williamson 的名字,兩人常被混為一談;他的口琴短促留白,唱腔帶著揶揄。2007 年獲選進入藍調名人堂專輯類。",
@@ -18258,8 +18388,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": false,
-        "apexPool": true
+        "seedCards": true,
+        "apexPool": false
       }
     },
     {
@@ -18281,12 +18411,21 @@
       },
       "ratings": {
         "classic": 3,
-        "obscurity": 3,
-        "accessibility": 3,
+        "obscurity": 5,
+        "accessibility": 2,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-21T10:24:26Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；1963 年 Crawdaddy 現場是英美藍調交接的歷史文件,也是 Clapton 最早的錄音之一,但演奏生澀、音質粗糙。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：1963 現場合作盤，因 Clapton 知名｜L=5",
+        "previous": {
+          "classic": 3,
+          "obscurity": 3,
+          "accessibility": 3,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-21T10:24:26Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；1963 年 Crawdaddy 現場是英美藍調交接的歷史文件,也是 Clapton 最早的錄音之一,但演奏生澀、音質粗糙。",
+          "rarity": "rare"
+        }
       },
       "rarity": "rare",
       "apexAssessment": {
@@ -18422,13 +18561,21 @@
       },
       "rarity": "uncommon",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "藍調名人堂專輯類入選,加上 AllMusic、《紐約時報》與 Segrest／Hoffman 傳記等來源長期共推,足列 Chicago blues 核心。",
-        "evidenceUrls": [
-          "https://en.wikipedia.org/wiki/Hoodoo_Man_Blues",
-          "https://en.wikipedia.org/wiki/Blues_Hall_of_Fame"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。芝加哥藍調里程碑，類型級",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "藍調名人堂專輯類入選,加上 AllMusic、《紐約時報》與 Segrest／Hoffman 傳記等來源長期共推,足列 Chicago blues 核心。",
+          "evidenceUrls": [
+            "https://en.wikipedia.org/wiki/Hoodoo_Man_Blues",
+            "https://en.wikipedia.org/wiki/Blues_Hall_of_Fame"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "Delmark 老闆 Bob Koester 於 1965 年放手讓 Junior Wells 自選樂手與曲目、不受三分鐘單曲長度限制,錄出芝加哥夜店整套樂團的現場氣口。吉他是 Buddy Guy,因與 Chess 的合約疑慮而以「Friendly Chap」化名列名;錄音途中他的音箱故障,只好把吉他接進錄音室 Hammond 風琴的 Leslie 喇叭,留下特殊音色。〈Snatch It Back and Hold It〉成為 Wells 的招牌曲,唱片則是 Delmark 的長銷冠軍,並入選藍調名人堂專輯類。",
@@ -18462,8 +18609,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": false,
-        "apexPool": true
+        "seedCards": true,
+        "apexPool": false
       }
     },
     {
@@ -19022,23 +19169,40 @@
         "visuallyVerified": true
       },
       "ratings": {
-        "classic": 5,
+        "classic": 4,
         "obscurity": 3,
         "accessibility": 2,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-21T10:24:26Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；1989 年入選 Blues Hall of Fame 經典藍調錄音（專輯類）、1978 年葛萊美入圍，跨來源長期公認為 Rush 最佳，屬樂迷領域，聽感直白"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：Chicago blues 藝人代表作之一，但未達跨來源史上核心正典；經典度 5→4、殿堂不成立",
+        "previous": {
+          "classic": 5,
+          "obscurity": 3,
+          "accessibility": 2,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-21T10:24:26Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；1989 年入選 Blues Hall of Fame 經典藍調錄音（專輯類）、1978 年葛萊美入圍，跨來源長期公認為 Rush 最佳，屬樂迷領域，聽感直白",
+          "rarity": "uncommon"
+        }
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "Blues Foundation 的 Blues Hall of Fame 於 1989 年將本作列入經典藍調錄音（專輯類），加上 1978 年葛萊美最佳民族或傳統錄音入圍，具跨來源長期共識足列西區藍調史核心",
-        "evidenceUrls": [
-          "https://en.wikipedia.org/wiki/Blues_Hall_of_Fame",
-          "https://en.wikipedia.org/wiki/Right_Place,_Wrong_Time_(album)"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。Chicago blues 佳作，綜合歷代榜少收",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "Blues Foundation 的 Blues Hall of Fame 於 1989 年將本作列入經典藍調錄音（專輯類），加上 1978 年葛萊美最佳民族或傳統錄音入圍，具跨來源長期共識足列西區藍調史核心",
+          "evidenceUrls": [
+            "https://en.wikipedia.org/wiki/Blues_Hall_of_Fame",
+            "https://en.wikipedia.org/wiki/Right_Place,_Wrong_Time_(album)"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "1971 年 Otis Rush 在舊金山為 Capitol 錄成，Capitol 卻拒絕發行；Rush 買回母帶，1976 年才經獨立廠牌 Bullfrog 問世，1986 年權利轉到 HighTone。Nick Gravenites 製作，Mark Naftalin 彈鋼琴，曲目從〈Tore Up〉〈Three Times a Fool〉到 Tony Joe White 的〈Rainy Night in Georgia〉。1978 年入圍葛萊美最佳民族或傳統錄音，1989 年獲選 Blues Hall of Fame 的經典藍調錄音（專輯類）。",
@@ -19072,8 +19236,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": false,
-        "apexPool": true
+        "seedCards": true,
+        "apexPool": false
       }
     },
     {
@@ -19363,15 +19527,24 @@
         "visuallyVerified": true
       },
       "ratings": {
-        "classic": 4,
-        "obscurity": 4,
+        "classic": 3,
+        "obscurity": 3,
         "accessibility": 2,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-21T10:24:26Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Gordy 時期公認較成熟的一張，是 Allison 早期代表作，但發行體系特殊、長期流通有限，屬深度愛好者"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：Gordy/Motown 時期藍調作，非首選｜L=31352",
+        "previous": {
+          "classic": 4,
+          "obscurity": 4,
+          "accessibility": 2,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-21T10:24:26Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Gordy 時期公認較成熟的一張，是 Allison 早期代表作，但發行體系特殊、長期流通有限，屬深度愛好者",
+          "rarity": "rare"
+        }
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -19430,23 +19603,40 @@
         "visuallyVerified": true
       },
       "ratings": {
-        "classic": 5,
+        "classic": 4,
         "obscurity": 2,
         "accessibility": 1,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-21T10:24:26Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；2008 年入選 Blues Hall of Fame 經典藍調錄音（專輯類），是 Chicago blues 最有影響力的首張 LP 之一；曲目多為大眾熟知的單曲，旋律直白"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：藍調名家代表作，但單曲集性質，無跨來源專輯正典共識；經典度 5→4",
+        "previous": {
+          "classic": 5,
+          "obscurity": 2,
+          "accessibility": 1,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-21T10:24:26Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；2008 年入選 Blues Hall of Fame 經典藍調錄音（專輯類），是 Chicago blues 最有影響力的首張 LP 之一；曲目多為大眾熟知的單曲，旋律直白",
+          "rarity": "rare"
+        }
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "Blues Foundation 的 Blues Hall of Fame 於 2008 年將本作列入經典藍調錄音（專輯類），Reed 本人亦於 1980 年入選該名人堂、1991 年入選搖滾名人堂，跨來源共識足列 Chicago blues 史核心",
-        "evidenceUrls": [
-          "https://en.wikipedia.org/wiki/Blues_Hall_of_Fame",
-          "https://en.wikipedia.org/wiki/I%27m_Jimmy_Reed"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。藍調名家單曲集，綜合歷代榜不收，類型級",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "Blues Foundation 的 Blues Hall of Fame 於 2008 年將本作列入經典藍調錄音（專輯類），Reed 本人亦於 1980 年入選該名人堂、1991 年入選搖滾名人堂，跨來源共識足列 Chicago blues 史核心",
+          "evidenceUrls": [
+            "https://en.wikipedia.org/wiki/Blues_Hall_of_Fame",
+            "https://en.wikipedia.org/wiki/I%27m_Jimmy_Reed"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "Vee-Jay 於 1958 年 8 月發行的 Jimmy Reed 首張 LP，十二首全部取自 1953 到 1958 年間的單曲，包括〈Honest I Do〉〈You Don't Have to Go〉〈Ain't That Lovin' You Baby〉。Eddie Taylor 的第二吉他撐住拍子，Reed 拖後半拍的唱腔與高音 harmonica 構成那套被 Rolling Stones 一代反覆借用的節奏；鼓手之一是後來以吉他成名的 Albert King。2008 年獲選 Blues Hall of Fame 經典藍調錄音（專輯類）。",
@@ -19480,8 +19670,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": false,
-        "apexPool": true
+        "seedCards": true,
+        "apexPool": false
       }
     },
     {
@@ -20440,23 +20630,40 @@
         "visuallyVerified": true
       },
       "ratings": {
-        "classic": 5,
-        "obscurity": 2,
+        "classic": 3,
+        "obscurity": 3,
         "accessibility": 2,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-21T10:24:26Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；1986 年入選藍調名人堂,作者本人唱回自己寫給 Muddy Waters、Howlin' Wolf 等人的九首標準曲,是這批曲目的作者版定本,地位可跨來源查證;曲目本身是大眾熟悉的藍調標準曲、Dixon 又是大牌,一般玩家容易撞見;編曲工整,入耳無門檻。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：1970 年自唱重錄集，名曲正典但這張錄音本身非藍調史必提盤；經典 5→3",
+        "previous": {
+          "classic": 5,
+          "obscurity": 2,
+          "accessibility": 2,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-21T10:24:26Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；1986 年入選藍調名人堂,作者本人唱回自己寫給 Muddy Waters、Howlin' Wolf 等人的九首標準曲,是這批曲目的作者版定本,地位可跨來源查證;曲目本身是大眾熟悉的藍調標準曲、Dixon 又是大牌,一般玩家容易撞見;編曲工整,入耳無門檻。",
+          "rarity": "uncommon"
+        }
       },
-      "rarity": "uncommon",
+      "rarity": "common",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "專輯 1986 年入選 Blues Hall of Fame,作者 Willie Dixon 本人亦同時列名藍調名人堂、搖滾名人堂與詞曲作者名人堂;所收九首多為戰後Chicago blues的核心曲目,長期被視為理解 Dixon 作品的標準入口,符合殿堂的跨來源長期共識要求。",
-        "evidenceUrls": [
-          "https://en.wikipedia.org/wiki/I_Am_the_Blues",
-          "https://en.wikipedia.org/wiki/Willie_Dixon"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。自唱重錄集，非藍調史必提盤",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "專輯 1986 年入選 Blues Hall of Fame,作者 Willie Dixon 本人亦同時列名藍調名人堂、搖滾名人堂與詞曲作者名人堂;所收九首多為戰後Chicago blues的核心曲目,長期被視為理解 Dixon 作品的標準入口,符合殿堂的跨來源長期共識要求。",
+          "evidenceUrls": [
+            "https://en.wikipedia.org/wiki/I_Am_the_Blues",
+            "https://en.wikipedia.org/wiki/Willie_Dixon"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "Willie Dixon 1970 年在 Columbia 錄下九首自己寫給別人的名曲,Abner Spector 製作。〈Back Door Man〉〈Spoonful〉原唱是 Howlin' Wolf,〈(I'm Your) Hoochie Coochie Man〉屬 Muddy Waters,〈I Can't Quit You, Baby〉出自 Otis Rush。伴奏的 Chicago Blues All Stars 有 Walter Horton 口琴、Sunnyland Slim 鋼琴。1986 年入選藍調名人堂。",
@@ -20488,8 +20695,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": false,
-        "apexPool": true
+        "seedCards": true,
+        "apexPool": false
       }
     },
     {
@@ -20579,13 +20786,22 @@
       "ratings": {
         "classic": 4,
         "obscurity": 2,
-        "accessibility": 2,
+        "accessibility": 1,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-21T10:24:26Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；收錄〈The Thrill Is Gone〉的商業突破盤，地位公認但仍略遜《Live at the Regal》；大牌大眾曲目、編制溫和易入耳。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：含 The Thrill Is Gone 的代表作｜L=238917",
+        "previous": {
+          "classic": 4,
+          "obscurity": 2,
+          "accessibility": 2,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-21T10:24:26Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；收錄〈The Thrill Is Gone〉的商業突破盤，地位公認但仍略遜《Live at the Regal》；大牌大眾曲目、編制溫和易入耳。",
+          "rarity": "rare"
+        }
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -20711,15 +20927,24 @@
         "visuallyVerified": true
       },
       "ratings": {
-        "classic": 5,
+        "classic": 4,
         "obscurity": 2,
         "accessibility": 2,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-21T10:24:26Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；入選 Blues Foundation 名人堂並列 Rolling Stone 500 大第 499 名，R&B 榜冠軍，屬樂史可查證地位；曲目為其早年慢板名曲，入耳無門檻。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：名現場，但 B.B. King 殿堂級是 Live at the Regal",
+        "previous": {
+          "classic": 5,
+          "obscurity": 2,
+          "accessibility": 2,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-21T10:24:26Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；入選 Blues Foundation 名人堂並列 Rolling Stone 500 大第 499 名，R&B 榜冠軍，屬樂史可查證地位；曲目為其早年慢板名曲，入耳無門檻。",
+          "rarity": "uncommon"
+        }
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -21716,23 +21941,40 @@
         "visuallyVerified": true
       },
       "ratings": {
-        "classic": 5,
+        "classic": 4,
         "obscurity": 2,
         "accessibility": 2,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-21T10:24:26Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；跨來源公認的藍調復興關鍵首作:《滾石》五百大(2012)第 468、DownBeat 藍調專輯榜第 11,原始六人陣容 2015 年入搖滾名人堂;流通度高、電聲芝加哥藍調直白好入耳。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：白人藍調樂團開路作，非藍調史核心專輯",
+        "previous": {
+          "classic": 5,
+          "obscurity": 2,
+          "accessibility": 2,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-21T10:24:26Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；跨來源公認的藍調復興關鍵首作:《滾石》五百大(2012)第 468、DownBeat 藍調專輯榜第 11,原始六人陣容 2015 年入搖滾名人堂;流通度高、電聲芝加哥藍調直白好入耳。",
+          "rarity": "uncommon"
+        }
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "跨來源長期共識明確:2012 年《滾石》五百大第 468 名、DownBeat 史上五十張藍調專輯第 11 名、Billboard 最高 123 名,錄音時的六人原始陣容(含次作鼓手 Billy Davenport)於 2015 年入選搖滾名人堂,樂團同期在 1965 年新港民謠音樂節替 Bob Dylan 伴奏電聲首演,足列戰後電聲藍調史核心。",
-        "evidenceUrls": [
-          "https://en.wikipedia.org/wiki/The_Paul_Butterfield_Blues_Band_(album)",
-          "https://en.wikipedia.org/wiki/The_Paul_Butterfield_Blues_Band"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。白人藍調開路作，類型級",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "跨來源長期共識明確:2012 年《滾石》五百大第 468 名、DownBeat 史上五十張藍調專輯第 11 名、Billboard 最高 123 名,錄音時的六人原始陣容(含次作鼓手 Billy Davenport)於 2015 年入選搖滾名人堂,樂團同期在 1965 年新港民謠音樂節替 Bob Dylan 伴奏電聲首演,足列戰後電聲藍調史核心。",
+          "evidenceUrls": [
+            "https://en.wikipedia.org/wiki/The_Paul_Butterfield_Blues_Band_(album)",
+            "https://en.wikipedia.org/wiki/The_Paul_Butterfield_Blues_Band"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "1965 年 10 月 Elektra 發行的同名首作,Paul Butterfield 吹口琴領軍,Mike Bloomfield 包辦獨奏,Elvin Bishop 退居節奏吉他,節奏組 Jerome Arnold 與 Sam Lay 挖自 Howlin' Wolf 巡演團。Paul Rothchild 錄了三次,1964 年棚錄與 Cafe Au Go Go 實況皆棄用,重來時 Mark Naftalin 加入彈風琴,自作與 Chicago blues 標準曲並置,〈Born in Chicago〉開場;2012 年列《滾石》五百大第 468。",
@@ -21765,8 +22007,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": false,
-        "apexPool": true
+        "seedCards": true,
+        "apexPool": false
       }
     },
     {

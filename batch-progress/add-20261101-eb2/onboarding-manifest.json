@@ -33,20 +33,20 @@
    },
    "ratings": {
     "classic": 5,
-    "obscurity": 3,
+    "obscurity": 4,
     "accessibility": 4,
     "listeners": null,
-    "source": "manual:rerate-20261101",
-    "checkedAt": "2026-11-01T00:00:00Z",
-    "note": "三軸重評（RUBRIC 2026-11-01）：匈牙利首張自由爵士、收入 Essential Jazz Records；國營廠有重發；自由爵士",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "note": "全池稽核 audit-20261102（方案 C）：匈牙利首張自由爵士里程碑；查無國家權威榜首位依據，串流有再發冷門度 4",
     "previous": {
-     "classic": 3,
+     "classic": 5,
      "obscurity": 3,
-     "accessibility": 3,
-     "source": "manual:depth-rubric",
-     "checkedAt": "2026-11-01T12:07:14Z",
-     "note": "機器基線 undefined/undefined/undefined（Last.fm listeners 查無）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 錨點制：國營廠／小廠正規發行，在該國爵士圈有名、圈外幾乎無人知（錨點 3）；Last.fm 查無 是英語圈偏差，不採機器 5。經典軸 3（該國爵士史代表盤，無國際正典地位）。",
-     "rarity": "uncommon"
+     "accessibility": 4,
+     "source": "manual:rerate-20261101",
+     "checkedAt": "2026-11-01T00:00:00Z",
+     "note": "三軸重評（RUBRIC 2026-11-01）：匈牙利首張自由爵士、收入 Essential Jazz Records；國營廠有重發；自由爵士",
+     "rarity": "legendary"
     }
    },
    "rarity": "legendary",
@@ -83,7 +83,7 @@
     "cardCatalog": false,
     "descriptionKv": false,
     "albumOverride": false,
-    "seedCards": false,
+    "seedCards": true,
     "apexPool": false
    }
   },
@@ -583,10 +583,21 @@
    },
    "rarity": "epic",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "evidenceUrls": [],
-    "reason": "已評估：classic 3、obscurity 3、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。小廠／自發盤、聽眾<300，但壓量未見數百張以下的確據，也非收藏圈公認聖杯；只到 5",
+    "evidenceUrls": [
+     "https://www.last.fm/music/Grencs%C3%B3%20Kollekt%C3%ADva/1988-89",
+     "https://www.discogs.com/release/2491745"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：classic 3、obscurity 3、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "有一首曲名講馬戲團開進國會，樂團裡不用鋼琴。匈牙利薩克斯風手 István Grencsó 的樂團，八首短曲 1989 年 4 月 16 日錄於 Győr，唱片到 1990 年才問世。曲子全由 Grencsó 一人寫成，曲名裡也點到獨立運動領袖 Rákóczi 與 Kossuth。後方配置兩位鼓手，另加手風琴與短笛，走自由即興。",
@@ -610,7 +621,7 @@
     "descriptionKv": false,
     "albumOverride": false,
     "seedCards": false,
-    "apexPool": false
+    "apexPool": true
    }
   },
   {
@@ -3051,22 +3062,22 @@
    "ratings": {
     "classic": 4,
     "obscurity": 5,
-    "accessibility": 2,
+    "accessibility": 3,
     "listeners": 30,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
-    "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽非 ready → 5，L=30）3→5",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "note": "全池稽核 audit-20261102（方案 C）：Supraphon 國營；Deezer 有串流→冷門4；長篇融合大樂團→硬3｜L=30",
     "previous": {
      "classic": 4,
-     "obscurity": 3,
+     "obscurity": 5,
      "accessibility": 2,
-     "source": "manual:rerate-20261101",
-     "checkedAt": "2026-11-01T00:00:00Z",
-     "note": "三軸重評（RUBRIC 2026-11-01）：Brom 大樂團 70 年代 jazz-funk 掘盤名作；Supraphon 國營；大樂團律動易聽",
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽非 ready → 5，L=30）3→5",
      "rarity": "uncommon"
     }
    },
-   "rarity": "uncommon",
+   "rarity": "epic",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -3095,7 +3106,7 @@
     "cardCatalog": false,
     "descriptionKv": false,
     "albumOverride": false,
-    "seedCards": false,
+    "seedCards": true,
     "apexPool": false
    }
   },

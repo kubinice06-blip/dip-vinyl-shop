@@ -1802,12 +1802,21 @@
    "ratings": {
     "classic": 5,
     "obscurity": 2,
-    "accessibility": 2,
+    "accessibility": 3,
     "listeners": 160777,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 2,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：紐約硬蕊 youth crew 標竿；場景必聽但無跨類型史上核心榜｜L=160777"
    },
-   "rarity": "uncommon",
+   "rarity": "epic",
    "apexAssessment": {
     "eligible": false,
     "tier": null,

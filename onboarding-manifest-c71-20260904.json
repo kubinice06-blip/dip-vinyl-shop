@@ -113,10 +113,21 @@
    },
    "rarity": "uncommon",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。小廠／自發盤、聽眾<300，但壓量未見數百張以下的確據，也非收藏圈公認聖杯；只到 5",
+    "evidenceUrls": [
+     "https://www.last.fm/music/Harry%20Miller/Children%20at%20Play",
+     "https://musicbrainz.org/release-group/4f371628-5249-42aa-930f-655bb2d871fe"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "唱片 credit 上只有兩個人：一個演奏並寫下全部音樂，一個負責錄音。Ogun 的第二號目錄 OG 200：Harry Miller 掛低音提琴、長笛、打擊與音效，並包辦全部作曲編曲，Keith Beal 掛錄音、混音與剪接，兩人共同掛製作，內頁文字署名 Z. Pallo Jordan。五軌裡同名曲拆成兩軌分置兩面，第三段落擺在最後。他 1941 年生於開普敦，1983 年在荷蘭死於車禍，享年 42 歲；五首完整排在 Ogun 1999 年那套三 CD 的開頭。",
@@ -138,8 +149,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -450,26 +461,38 @@
    "ratings": {
     "classic": 3,
     "obscurity": 5,
-    "accessibility": 4,
+    "accessibility": 3,
     "listeners": 13,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
     "previous": {
      "classic": 3,
-     "obscurity": 4,
+     "obscurity": 5,
      "accessibility": 4,
-     "source": "manual:depth-rubric",
-     "checkedAt": "2026-08-31T00:00:00.000Z",
-     "rarity": "uncommon"
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Soft Heap 現場；L13 無串流→5；坎特伯里自由融合",
+     "rarity": "epic"
     },
-    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Soft Heap 現場；L13 無串流→5；坎特伯里自由融合"
+    "note": "全池稽核 audit-20261102（方案 C）：Ogun 小廠 OG 527；Soft Heap 同名作有串流，本盤查無→1；坎特伯雷融合→硬3｜L=13"
    },
-   "rarity": "epic",
+   "rarity": "uncommon",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。小廠／自發盤、聽眾<300，但壓量未見數百張以下的確據，也非收藏圈公認聖杯；只到 5",
+    "evidenceUrls": [
+     "https://www.last.fm/music/Hugh%20Hopper%20%2F%20Elton%20Dean%20%2F%20Alan%20Gowen%20%2F%20Dave%20Sheen/Rogue%20Element",
+     "https://musicbrainz.org/release-group/6397a784-0593-4883-9a6d-4c65b3cc78fd"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "換掉一個鼓手，團名就從 Soft Heap 變成 Soft Head。HEAP 是四位創團者名字的字首——Hugh、Elton、Alan、Pip，Soft 指向 Soft Machine；那趟春夏巡演 Pip Pyle 走不開，Dave Sheen 頂替。本盤錄在那趟途中，1978 年 5 月的法國 Bresse-sur-Grosne。四人掛電貝斯、薩克斯、電鋼琴與合成器、鼓；開場的〈Seven For Lee〉也是《Happy Daze》的 A2。",
@@ -490,8 +513,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -681,10 +704,21 @@
    },
    "rarity": "epic",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。Ogun正規小廠，2012已CD復刻",
+    "evidenceUrls": [
+     "https://www.last.fm/music/Chris%20McGregor/In%20His%20Good%20Time",
+     "https://musicbrainz.org/release-group/a6f5ca15-b163-46ec-8f28-0f18c5804cea"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "盤名出自唱片上的題獻詞：獻給讓萬事在祂的時間裡成就的那一位。1977 年 11 月 18 日星期五，Chris McGregor 一個人在巴黎的 Palais des Glaces 彈完這場音樂會，唱片 1979 年出在 Ogun，編號 OG 521。八軌裡〈Umhome〉是傳統曲、由他自己編，〈The Bride〉出自 Dudu Pukwana。John Litweiler 說他是「裝飾者、編排者、變奏的發明者，即興只排第二」。他 1990 年在法國過世。",
@@ -706,8 +740,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -808,23 +842,24 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 5,
+    "classic": 4,
     "obscurity": 5,
     "accessibility": 2,
     "listeners": 258,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
     "previous": {
-     "classic": 4,
-     "obscurity": 4,
-     "accessibility": 3,
-     "source": "manual:depth-rubric",
-     "checkedAt": "2026-08-31T00:00:00.000Z",
-     "rarity": "uncommon"
+     "classic": 5,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Pukwana 鎮區爵士代表與里程碑；L258 無串流→5；鎮區 jive 旋律親切",
+     "rarity": "epic"
     },
-    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Pukwana 鎮區爵士代表與里程碑；L258 無串流→5；鎮區 jive 旋律親切"
+    "note": "全池稽核 audit-20261102（方案 C）：南非流亡爵士重要作；聽眾 258＋試聽無→冷門 5；Caroline 為 Virgin 子廠非極小廠，不給 pearl｜L=258"
    },
-   "rarity": "epic",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -956,21 +991,22 @@
    "ratings": {
     "classic": 5,
     "obscurity": 3,
-    "accessibility": 3,
+    "accessibility": 4,
     "listeners": 7822,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
     "previous": {
-     "classic": 4,
-     "obscurity": 4,
-     "accessibility": 2,
-     "source": "manual:depth-rubric",
-     "checkedAt": "2026-08-31T00:00:00.000Z",
-     "rarity": "uncommon"
+     "classic": 5,
+     "obscurity": 3,
+     "accessibility": 3,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：BoB 首作、英南非爵士里程碑；L7.8k 有再版流通；大樂團 kwela 自由段落",
+     "rarity": "epic"
     },
-    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：BoB 首作、英南非爵士里程碑；L7.8k 有再版流通；大樂團 kwela 自由段落"
+    "note": "全池稽核 audit-20261102（方案 C）：南非流亡爵士／英國大樂團里程碑，Fledg'ling 再發；場景重要但非人人必提。含自由段落｜L=7822"
    },
-   "rarity": "epic",
+   "rarity": "legendary",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1764,14 +1800,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 4,
+    "classic": 2,
     "obscurity": 4,
     "accessibility": 5,
     "listeners": 92,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 4,
+     "accessibility": 5,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "legendary"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：自製樂器＋現場電子噪音即興；但AllMusic 1星、Penguin 1.5星，經典度下修為2；Otoroku再發→4｜L=92"
    },
-   "rarity": "legendary",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1922,10 +1967,21 @@
    },
    "rarity": "legendary",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。英國自由即興奠基錄音，點描無調屬5星前衛",
+    "evidenceUrls": [
+     "https://www.last.fm/music/The%20Music%20Improvisation%20Company/1968-1971",
+     "https://musicbrainz.org/release-group/74b63c9b-24e8-3bf9-a3c2-187862795af0"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "碟名寫 1968-1971，錄音其實只有 1969 與 1970 年的那兩天。A 面錄於 1969 年 7 月 4 日的倫敦、以單聲道收，B 面錄於 1970 年 6 月 18 日、是立體聲，唱片 1976 年才出在 Incus 的 INCUS 17。碟上是 Derek Bailey 的吉他與 Evan Parker 的加拾音自動豎琴，另有現場電子、風琴與打擊，六首全掛四人共同創作。2019 年 Honest Jon's 的復刻把碟名寫成《1969, 1970》。",
@@ -1946,8 +2002,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {

@@ -1753,24 +1753,24 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-30 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 5,
+    "classic": 4,
     "obscurity": 3,
     "accessibility": 4,
     "listeners": 3895,
-    "source": "manual:rerate-20261101",
-    "checkedAt": "2026-11-01T00:00:00Z",
-    "note": "三軸重評（RUBRIC 2026-11-01）：入選 Cristadoro《義大利前衛搖滾 100 張最佳唱片》，場景正典；It/RCA 正規→3；女高音、合成器、零碎實驗",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "note": "全池稽核 audit-20261102（方案 C）：義大利實驗前衛搖滾邪典，樂團第二也是最後一張；聽眾 3,895，冷門度 3｜L=3895",
     "previous": {
-     "classic": 3,
-     "obscurity": 4,
+     "classic": 5,
+     "obscurity": 3,
      "accessibility": 4,
-     "source": "manual:depth-rubric",
-     "checkedAt": "2026-10-30T03:17:54Z",
-     "note": "機器基線 3/4/3（Last.fm listeners 3895）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 錨點制；經典度、入耳難度主線評定；電子拼貼與聲樂實驗段落多",
-     "rarity": "uncommon"
+     "source": "manual:rerate-20261101",
+     "checkedAt": "2026-11-01T00:00:00Z",
+     "note": "三軸重評（RUBRIC 2026-11-01）：入選 Cristadoro《義大利前衛搖滾 100 張最佳唱片》，場景正典；It/RCA 正規→3；女高音、合成器、零碎實驗",
+     "rarity": "legendary"
     }
    },
-   "rarity": "legendary",
+   "rarity": "epic",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1802,7 +1802,7 @@
     "cardCatalog": false,
     "descriptionKv": false,
     "albumOverride": false,
-    "seedCards": false,
+    "seedCards": true,
     "apexPool": false
    }
   },

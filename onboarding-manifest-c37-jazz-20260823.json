@@ -2960,15 +2960,24 @@
         "visuallyVerified": true
       },
       "ratings": {
-        "classic": 3,
-        "obscurity": 4,
+        "classic": 4,
+        "obscurity": 3,
         "accessibility": 2,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-23T00:41:12Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；系列第四卷、以自作曲為主的場次，屬愛好者深挖範圍"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：Blue Note Amazing 系列，全原創曲，晚期最受肯定｜L=2396",
+        "previous": {
+          "classic": 3,
+          "obscurity": 4,
+          "accessibility": 2,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-23T00:41:12Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；系列第四卷、以自作曲為主的場次，屬愛好者深挖範圍",
+          "rarity": "common"
+        }
       },
-      "rarity": "common",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -3626,15 +3635,24 @@
         "visuallyVerified": true
       },
       "ratings": {
-        "classic": 4,
+        "classic": 3,
         "obscurity": 4,
         "accessibility": 2,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-23T00:41:12Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Weston 早期公認最佳作之一（藝人條目明言 the best being Little Niles），全原創三拍組曲，屬深度樂迷領域、入耳不難。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：Weston 早期題獻作，華爾茲小品，場景二線｜L=621",
+        "previous": {
+          "classic": 4,
+          "obscurity": 4,
+          "accessibility": 2,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-23T00:41:12Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Weston 早期公認最佳作之一（藝人條目明言 the best being Little Niles），全原創三拍組曲，屬深度樂迷領域、入耳不難。",
+          "rarity": "rare"
+        }
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -3694,12 +3712,21 @@
       },
       "ratings": {
         "classic": 5,
-        "obscurity": 4,
+        "obscurity": 3,
         "accessibility": 3,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-23T00:41:12Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；非洲節奏與前進爵士最早期結合的開創之作（AllMusic 五星、南非查禁史實），大編制組曲稍具門檻。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：非洲爵士里程碑，Roulette 正規發行；未達全領域殿堂",
+        "previous": {
+          "classic": 5,
+          "obscurity": 4,
+          "accessibility": 3,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-23T00:41:12Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；非洲節奏與前進爵士最早期結合的開創之作（AllMusic 五星、南非查禁史實），大編制組曲稍具門檻。",
+          "rarity": "epic"
+        }
       },
       "rarity": "epic",
       "apexAssessment": {
@@ -4838,13 +4865,21 @@
       },
       "rarity": "epic",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "跨來源長期共識：Coltrane 首張現場、經典四重奏成形起點、DownBeat anti-jazz 論戰的文獻現場，樂史敘事中公認的分水嶺，足列殿堂候選。",
-        "evidenceUrls": [
-          "https://en.wikipedia.org/wiki/Coltrane_%22Live%22_at_the_Village_Vanguard",
-          "https://musicbrainz.org/release-group/d68d17f9-78cf-3629-abbd-d721301dc812"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。爵士里程碑現場盤，綜合歷代榜不收，類型級",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "跨來源長期共識：Coltrane 首張現場、經典四重奏成形起點、DownBeat anti-jazz 論戰的文獻現場，樂史敘事中公認的分水嶺，足列殿堂候選。",
+          "evidenceUrls": [
+            "https://en.wikipedia.org/wiki/Coltrane_%22Live%22_at_the_Village_Vanguard",
+            "https://musicbrainz.org/release-group/d68d17f9-78cf-3629-abbd-d721301dc812"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "一九六一年十一月，製作人 Bob Thiele 在紐約 Village Vanguard 為 Coltrane 連錄四晚，隔年二月由 Impulse! 發行成他首張現場專輯，McCoy Tyner、Jimmy Garrison、Elvin Jones 經典四重奏成員首次同片。Dolphy 低音單簧管加持的〈Spiritual〉取材自黑人靈歌，而在藍調框架上不停歇即興的〈Chasin' the Trane〉粗礪執拗，遭 DownBeat 斥為 anti-jazz，Coltrane 與 Dolphy 隔年為此公開答辯。前衛轉向的分水嶺，爭議已寫進爵士史。",
@@ -4875,8 +4910,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": false,
-        "apexPool": true
+        "seedCards": true,
+        "apexPool": false
       }
     },
     {
@@ -6311,22 +6346,39 @@
       },
       "ratings": {
         "classic": 5,
-        "obscurity": 3,
-        "accessibility": 3,
+        "obscurity": 2,
+        "accessibility": 2,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-23T00:41:12Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Monk 1947–48 年 Blue Note 首批領班錄音的結集，多首正典曲目最早版本所在，現代爵士基石文獻。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：Blue Note 核心收錄、Penguin 核心；正規大廠盤冷門度 3→2",
+        "previous": {
+          "classic": 5,
+          "obscurity": 3,
+          "accessibility": 3,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-23T00:41:12Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Monk 1947–48 年 Blue Note 首批領班錄音的結集，多首正典曲目最早版本所在，現代爵士基石文獻。",
+          "rarity": "epic"
+        }
       },
-      "rarity": "epic",
+      "rarity": "uncommon",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "Monk 領班生涯起點、〈'Round Midnight〉等正典曲目的作者首錄，Wikipedia 與 Monk 傳記條目均證其奠基地位，屬現代爵士史核心文獻。",
-        "evidenceUrls": [
-          "https://en.wikipedia.org/wiki/Genius_of_Modern_Music,_Vols._One_%26_Two",
-          "https://en.wikipedia.org/wiki/Thelonious_Monk"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。Blue Note 核心但為合輯性質，爵士圈內正典",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "Monk 領班生涯起點、〈'Round Midnight〉等正典曲目的作者首錄，Wikipedia 與 Monk 傳記條目均證其奠基地位，屬現代爵士史核心文獻。",
+          "evidenceUrls": [
+            "https://en.wikipedia.org/wiki/Genius_of_Modern_Music,_Vols._One_%26_Two",
+            "https://en.wikipedia.org/wiki/Thelonious_Monk"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "1947 年，Thelonious Monk 首次以領班身分為 Blue Note 錄音，這批連同 1948 年場次的 78 轉單曲，其後結集為《Genius of Modern Music》兩卷。第一卷收有 Monk 親錄〈'Round Midnight〉的第一個版本，以及〈Thelonious〉、〈Ruby, My Dear〉、〈Well, You Needn't〉、〈Epistrophy〉等正典曲目的最早自作版本；稜角嶙峋的和聲與錯位節奏在當年被當成怪癖，數十年後被公認為現代爵士作曲的原點文獻。",
@@ -6356,8 +6408,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": false,
-        "apexPool": true
+        "seedCards": true,
+        "apexPool": false
       }
     },
     {
@@ -6788,13 +6840,21 @@
       },
       "rarity": "epic",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "跨來源長期共識：名列 Penguin Guide to Jazz 核心收藏、樂評界公認 Mingus 最高成就之一，Dolphy 期四重奏的正典文獻。",
-        "evidenceUrls": [
-          "https://en.wikipedia.org/wiki/Charles_Mingus_Presents_Charles_Mingus",
-          "https://musicbrainz.org/release-group/0bcac9b4-9ad2-3297-9a7d-a4c28cfb2f77"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。爵士名作，綜合歷代榜在 Ah Um 之後",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "跨來源長期共識：名列 Penguin Guide to Jazz 核心收藏、樂評界公認 Mingus 最高成就之一，Dolphy 期四重奏的正典文獻。",
+          "evidenceUrls": [
+            "https://en.wikipedia.org/wiki/Charles_Mingus_Presents_Charles_Mingus",
+            "https://musicbrainz.org/release-group/0bcac9b4-9ad2-3297-9a7d-a4c28cfb2f77"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "1960年10月為 Nat Hentoff 創立的獨立廠牌 Candid 錄製，Mingus 與 Eric Dolphy、Ted Curson、Dannie Richmond 的現役四重奏，把在紐約 Showplace 連演數週的曲目直接搬進錄音室；Mingus 照俱樂部慣例開口報幕，還叮囑『觀眾』別碰杯出聲，讓錄音室作品聽來宛如現場。〈Original Faubus Fables〉補回 Columbia 版被禁的歌詞，由 Mingus 與 Richmond 對唱，直斥種族隔離。名列 Penguin Guide 爵士核心收藏。",
@@ -6826,8 +6886,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": false,
-        "apexPool": true
+        "seedCards": true,
+        "apexPool": false
       }
     },
     {
@@ -7117,12 +7177,21 @@
       },
       "ratings": {
         "classic": 4,
-        "obscurity": 3,
+        "obscurity": 2,
         "accessibility": 2,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-23T00:41:12Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；與 Changes One 同場次的姊妹作，晚期樂團最後盛期的另一半錄音。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：與 Changes One 同場錄音，後期 Mingus 重要作品｜L=8852",
+        "previous": {
+          "classic": 4,
+          "obscurity": 3,
+          "accessibility": 2,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-23T00:41:12Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；與 Changes One 同場次的姊妹作，晚期樂團最後盛期的另一半錄音。",
+          "rarity": "rare"
+        }
       },
       "rarity": "rare",
       "apexAssessment": {
@@ -10120,15 +10189,24 @@
         "visuallyVerified": true
       },
       "ratings": {
-        "classic": 3,
+        "classic": 4,
         "obscurity": 3,
-        "accessibility": 1,
+        "accessibility": 2,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-23T00:41:12Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Quebec 復歸期的 soul jazz 佳作，AllMusic 四星；氣音濃厚的抒情吹奏極易入耳"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：Blue Note 復出代表作，soul jazz 柔和｜L=4534",
+        "previous": {
+          "classic": 3,
+          "obscurity": 3,
+          "accessibility": 1,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-23T00:41:12Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Quebec 復歸期的 soul jazz 佳作，AllMusic 四星；氣音濃厚的抒情吹奏極易入耳",
+          "rarity": "common"
+        }
       },
-      "rarity": "common",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -11523,12 +11601,21 @@
       },
       "ratings": {
         "classic": 3,
-        "obscurity": 3,
+        "obscurity": 2,
         "accessibility": 2,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-23T00:41:12Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；復出期的招牌音色示範，標準曲為主、地位明確，屬 Ammons 目錄的中堅名盤。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：Prestige soul jazz 穩定作｜L=5715",
+        "previous": {
+          "classic": 3,
+          "obscurity": 3,
+          "accessibility": 2,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-23T00:41:12Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；復出期的招牌音色示範，標準曲為主、地位明確，屬 Ammons 目錄的中堅名盤。",
+          "rarity": "common"
+        }
       },
       "rarity": "common",
       "apexAssessment": {
@@ -13394,15 +13481,24 @@
         "visuallyVerified": true
       },
       "ratings": {
-        "classic": 3,
-        "obscurity": 4,
+        "classic": 4,
+        "obscurity": 3,
         "accessibility": 3,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-23T00:41:12Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；鼓獨奏概念的重要陳述但流通度有限；深度愛好者領域，三首全鼓獨奏曲提高入耳門檻"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：Atlantic 時期鼓藝代表作，含無伴奏鼓獨奏｜L=10608",
+        "previous": {
+          "classic": 3,
+          "obscurity": 4,
+          "accessibility": 3,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-23T00:41:12Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；鼓獨奏概念的重要陳述但流通度有限；深度愛好者領域，三首全鼓獨奏曲提高入耳門檻",
+          "rarity": "rare"
+        }
       },
-      "rarity": "rare",
+      "rarity": "uncommon",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -13596,12 +13692,21 @@
       },
       "ratings": {
         "classic": 4,
-        "obscurity": 3,
+        "obscurity": 2,
         "accessibility": 2,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-23T00:41:12Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Blakey 在 Blue Note 的最後錄音、Morgan 與 Shorter 同陣的收官作；樂迷領域，硬 bop 正格"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：Blakey 1960 年代 Blue Note 重要作｜L=10896",
+        "previous": {
+          "classic": 4,
+          "obscurity": 3,
+          "accessibility": 2,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-23T00:41:12Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Blakey 在 Blue Note 的最後錄音、Morgan 與 Shorter 同陣的收官作；樂迷領域，硬 bop 正格",
+          "rarity": "rare"
+        }
       },
       "rarity": "rare",
       "apexAssessment": {
@@ -17338,14 +17443,23 @@
       },
       "ratings": {
         "classic": 3,
-        "obscurity": 4,
+        "obscurity": 5,
         "accessibility": 2,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-23T00:41:12Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Holmes 出道盤且有 Ben Webster 助陣的佳作，但其代表作地位屬後來的〈Misty〉時期"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：Holmes 首作，Ben Webster 客席，soul jazz 二線｜L=235",
+        "previous": {
+          "classic": 3,
+          "obscurity": 4,
+          "accessibility": 2,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-23T00:41:12Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Holmes 出道盤且有 Ben Webster 助陣的佳作，但其代表作地位屬後來的〈Misty〉時期",
+          "rarity": "common"
+        }
       },
-      "rarity": "common",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -17882,13 +17996,21 @@
       },
       "rarity": "rare",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "Song Book 系列規模最大的一部：59 曲、Nelson Riddle 編曲、Ira Gershwin 親自參與；〈But Not for Me〉獲 1960 年葛萊美最佳女聲演唱，並入選 Colin Larkin《All Time Top 1000 Albums》，跨來源長期共識足列人聲爵士史核心",
-        "evidenceUrls": [
-          "https://en.wikipedia.org/wiki/Ella_Fitzgerald_Sings_the_George_and_Ira_Gershwin_Song_Book",
-          "https://en.wikipedia.org/wiki/All_Time_Top_1000_Albums"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。1001 收的是 Cole Porter 冊，非本張；類型正典 5 星",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "Song Book 系列規模最大的一部：59 曲、Nelson Riddle 編曲、Ira Gershwin 親自參與；〈But Not for Me〉獲 1960 年葛萊美最佳女聲演唱，並入選 Colin Larkin《All Time Top 1000 Albums》，跨來源長期共識足列人聲爵士史核心",
+          "evidenceUrls": [
+            "https://en.wikipedia.org/wiki/Ella_Fitzgerald_Sings_the_George_and_Ira_Gershwin_Song_Book",
+            "https://en.wikipedia.org/wiki/All_Time_Top_1000_Albums"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "Ella Fitzgerald 的 Song Book 系列中規模最大的一部：1959 年在 Norman Granz 監製下，以八個月錄完 59 首 Gershwin 兄弟作品，Nelson Riddle 領銜編曲，Ira Gershwin 親自參與選曲並修訂部分歌詞，原始套裝以畫家 Bernard Buffet 的五幅畫作為封面。〈But Not for Me〉拿下 1960 年葛萊美最佳女聲演唱獎，Ira 那句「聽了 Ella 唱才知道我們的歌有多好」也隨此作流傳至今。",
@@ -17920,8 +18042,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": false,
-        "apexPool": true
+        "seedCards": true,
+        "apexPool": false
       }
     },
     {
@@ -19612,14 +19734,22 @@
       },
       "rarity": "uncommon",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "確立 vocalese 團體形式的起點,1998 年葛萊美名人堂,並直接催生與 Basie 樂團本尊的續作,爵士人聲史核心文獻。",
-        "evidenceUrls": [
-          "https://en.wikipedia.org/wiki/Sing_a_Song_of_Basie",
-          "https://en.wikipedia.org/wiki/Lambert,_Hendricks_%26_Ross",
-          "https://musicbrainz.org/release-group/bd2549a3-23d6-3326-bdb7-6a6db3738fe8"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。vocalese 子類型標竿，屬 5 星，非跨類型正典",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "確立 vocalese 團體形式的起點,1998 年葛萊美名人堂,並直接催生與 Basie 樂團本尊的續作,爵士人聲史核心文獻。",
+          "evidenceUrls": [
+            "https://en.wikipedia.org/wiki/Sing_a_Song_of_Basie",
+            "https://en.wikipedia.org/wiki/Lambert,_Hendricks_%26_Ross",
+            "https://musicbrainz.org/release-group/bd2549a3-23d6-3326-bdb7-6a6db3738fe8"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "Dave Lambert、Jon Hendricks、Annie Ross 三人 1957 年錄製、1958 年發行的首張合作盤,Creed Taylor 製作,伴奏是 Nat Pierce、Freddie Green 等 Basie 系節奏組。他們把整套 Count Basie 大樂團編曲改由人聲演唱——〈Every Day I Have the Blues〉〈One O'Clock Jump〉的管樂線由 Hendricks 配上歌詞逐句唱出,確立 vocalese 的團體唱法,1998 年入選葛萊美名人堂。",
@@ -19649,8 +19779,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": false,
-        "apexPool": true
+        "seedCards": true,
+        "apexPool": false
       }
     },
     {
@@ -20017,13 +20147,21 @@
       },
       "rarity": "uncommon",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "LP 時代開端的長篇爵士書寫：Giddins 稱其為最早真正具開創性的 12 吋 LP 之一，Hasse 與 AllMusic 亦長期推崇〈The Tattooed Bride〉等擴寫，跨評論來源共識穩固，足列 Ellington 與 LP 史交會的核心文獻",
-        "evidenceUrls": [
-          "https://en.wikipedia.org/wiki/Masterpieces_by_Ellington",
-          "https://musicbrainz.org/release-group/ad946575-9a0c-3c1f-9a4a-42eb33079501"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。早期 LP 長篇編曲里程碑，非 Ellington 跨圈必提作",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "LP 時代開端的長篇爵士書寫：Giddins 稱其為最早真正具開創性的 12 吋 LP 之一，Hasse 與 AllMusic 亦長期推崇〈The Tattooed Bride〉等擴寫，跨評論來源共識穩固，足列 Ellington 與 LP 史交會的核心文獻",
+          "evidenceUrls": [
+            "https://en.wikipedia.org/wiki/Masterpieces_by_Ellington",
+            "https://musicbrainz.org/release-group/ad946575-9a0c-3c1f-9a4a-42eb33079501"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "1950 年錄音、1951 年由 Columbia 發行，是 Duke Ellington 第一張 12 吋 LP，也是最早利用長時間盤面的專輯之一。〈Mood Indigo〉〈Sophisticated Lady〉〈Solitude〉以「音樂會編制」擴寫成 8 至 15 分鐘的完整版本，另收長篇音詩〈The Tattooed Bride〉讓單簧管手 Jimmy Hamilton 近乎協奏曲式地發揮；編曲由 Ellington 與 Billy Strayhorn 共同操刀，樂評 Gary Giddins 稱之為最早真正具開創性的 12 吋 LP 之一。",
@@ -20055,8 +20193,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": false,
-        "apexPool": true
+        "seedCards": true,
+        "apexPool": false
       }
     },
     {
@@ -20285,13 +20423,21 @@
       },
       "rarity": "uncommon",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "葛萊美最佳大型爵士合奏專輯得主,AllMusic 與 JazzTimes 長期並舉為 Ellington 晚期最高成就與最動人的錄音之一,殿堂級共識明確。",
-        "evidenceUrls": [
-          "https://en.wikipedia.org/wiki/...And_His_Mother_Called_Him_Bill",
-          "https://musicbrainz.org/release-group/90c99d9c-c15d-3a3c-bd51-a00452ebce25"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。爵士圈名盤，非跨類型正典",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "葛萊美最佳大型爵士合奏專輯得主,AllMusic 與 JazzTimes 長期並舉為 Ellington 晚期最高成就與最動人的錄音之一,殿堂級共識明確。",
+          "evidenceUrls": [
+            "https://en.wikipedia.org/wiki/...And_His_Mother_Called_Him_Bill",
+            "https://musicbrainz.org/release-group/90c99d9c-c15d-3a3c-bd51-a00452ebce25"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "Billy Strayhorn 1967 年 5 月因食道癌病逝,三個月後 Ellington 領軍進錄音室,以整張摯友的作品致敬,1968 年由 RCA 發行,獲葛萊美最佳大型爵士合奏專輯獎。曲目幾乎全出自 Strayhorn 之手,包括其絕筆〈Blood Count〉與以 Upper Manhattan Medical Group 為名的〈U.M.M.G.〉;結尾樂手收拾樂器的談笑聲中,Ellington 獨自把〈Lotus Blossom〉彈完,JazzTimes 稱之為全輯最動人的一刻。",
@@ -20323,8 +20469,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": false,
-        "apexPool": true
+        "seedCards": true,
+        "apexPool": false
       }
     },
     {
@@ -20548,12 +20694,21 @@
       },
       "ratings": {
         "classic": 4,
-        "obscurity": 3,
+        "obscurity": 2,
         "accessibility": 1,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-23T00:41:12Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Roulette 時期新樂團的代表盤,團內寫手 Thad Jones、Frank Foster、Frank Wess 供譜的精華段。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：Basie 1959 Roulette 盤，大樂隊經典之一｜L=16597",
+        "previous": {
+          "classic": 4,
+          "obscurity": 3,
+          "accessibility": 1,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-23T00:41:12Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Roulette 時期新樂團的代表盤,團內寫手 Thad Jones、Frank Foster、Frank Wess 供譜的精華段。",
+          "rarity": "common"
+        }
       },
       "rarity": "common",
       "apexAssessment": {
@@ -22279,21 +22434,38 @@
       "ratings": {
         "classic": 5,
         "obscurity": 3,
-        "accessibility": 3,
+        "accessibility": 4,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-23T00:41:12Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Penguin Guide Core Collection 四星滿分、DownBeat 與 Rolling Stone Jazz Record Guide 皆五星，自由爵士現場的跨來源正典；三重奏語法對一般聽者仍具張力。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：Blue Note 名盤經典度 5；Ornette 人人必提為《Shape of Jazz to Come》，殿堂從嚴不成立；三重奏自由演奏硬蕊度 3→4；冷門度比照 Vol.2 錯配例外給 3",
+        "previous": {
+          "classic": 5,
+          "obscurity": 3,
+          "accessibility": 3,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-23T00:41:12Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Penguin Guide Core Collection 四星滿分、DownBeat 與 Rolling Stone Jazz Record Guide 皆五星，自由爵士現場的跨來源正典；三重奏語法對一般聽者仍具張力。",
+          "rarity": "epic"
+        }
       },
-      "rarity": "epic",
+      "rarity": "legendary",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "Penguin Guide 列 Core Collection 並給最高四星，DownBeat 當年五星、Rolling Stone Jazz Record Guide 五星，長期公認為 Ornette 中期與自由爵士現場錄音的史上核心文獻。",
-        "evidenceUrls": [
-          "https://en.wikipedia.org/wiki/At_the_%22Golden_Circle%22_Stockholm",
-          "https://musicbrainz.org/release-group/873c13c3-17e7-3b3f-b287-4868289ae27c"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。Blue Note 名盤屬爵士類型必聽（5 星），非綜合歷代榜正典",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "Penguin Guide 列 Core Collection 並給最高四星，DownBeat 當年五星、Rolling Stone Jazz Record Guide 五星，長期公認為 Ornette 中期與自由爵士現場錄音的史上核心文獻。",
+          "evidenceUrls": [
+            "https://en.wikipedia.org/wiki/At_the_%22Golden_Circle%22_Stockholm",
+            "https://musicbrainz.org/release-group/873c13c3-17e7-3b3f-b287-4868289ae27c"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "1965 年 12 月 3、4 兩晚，Ornette Coleman 與貝斯手 David Izenzon、鼓手 Charles Moffett 進駐斯德哥爾摩的 Gyllene Cirkeln 俱樂部，錄下轉投 Blue Note 後的首張發行。第一卷收〈Faces and Places〉〈Dee Dee〉〈Dawn〉等四曲，無和聲樂器的三重奏讓中音薩克斯風完全裸露：主題像民謠般直白，即興卻不斷變速轉向。《Penguin Guide to Jazz》列本作入 Core Collection 並給滿分四星，DownBeat 當年評五星。",
@@ -22322,8 +22494,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": false,
-        "apexPool": true
+        "seedCards": true,
+        "apexPool": false
       }
     },
     {
@@ -22877,24 +23049,41 @@
         "visuallyVerified": true
       },
       "ratings": {
-        "classic": 5,
+        "classic": 4,
         "obscurity": 3,
         "accessibility": 2,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-23T00:41:12Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；1986 年兩座葛萊美、2023 年入選美國國家錄音登錄名錄、AllMusic 五星與 Penguin 四星滿分，八〇年代新傳統主義的公認代表。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：Marsalis 代表作、葛萊美得主，但非爵士史人人必提；經典 5→4",
+        "previous": {
+          "classic": 5,
+          "obscurity": 3,
+          "accessibility": 2,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-23T00:41:12Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；1986 年兩座葛萊美、2023 年入選美國國家錄音登錄名錄、AllMusic 五星與 Penguin 四星滿分，八〇年代新傳統主義的公認代表。",
+          "rarity": "uncommon"
+        }
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "1986 年獲兩座葛萊美，2023 年由美國國會圖書館選入國家錄音登錄名錄，AllMusic 五星、Penguin Guide 四星滿分，跨來源長期共識為八〇年代爵士的核心錄音。",
-        "evidenceUrls": [
-          "https://en.wikipedia.org/wiki/Black_Codes_(From_the_Underground)",
-          "https://www.loc.gov/programs/national-recording-preservation-board/recording-registry/registry-by-induction-years/2023/",
-          "https://musicbrainz.org/release-group/b5dfd3b1-2c14-36f9-82c1-66e7e7441665"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。Marsalis 代表作，爵士類型級，非跨類型正典",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "1986 年獲兩座葛萊美，2023 年由美國國會圖書館選入國家錄音登錄名錄，AllMusic 五星、Penguin Guide 四星滿分，跨來源長期共識為八〇年代爵士的核心錄音。",
+          "evidenceUrls": [
+            "https://en.wikipedia.org/wiki/Black_Codes_(From_the_Underground)",
+            "https://www.loc.gov/programs/national-recording-preservation-board/recording-registry/registry-by-induction-years/2023/",
+            "https://musicbrainz.org/release-group/b5dfd3b1-2c14-36f9-82c1-66e7e7441665"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "1985 年 1 月錄音、同年 6 月由 Columbia 發行，Wynton Marsalis 與胞兄 Branford（薩克斯風）、鋼琴手 Kenny Kirkland、貝斯手 Charnett Moffett、鼓手 Jeff “Tain” Watts 的五重奏在此交出八〇年代原音爵士的答卷：節奏組不斷位移重音、和聲繁複的 post-bop，小號與薩克斯風在高速線條中穿梭，〈Aural Oasis〉另邀 Ron Carter 客串。1986 年拿下兩座葛萊美，2023 年獲美國國會圖書館選入國家錄音登錄名錄。",
@@ -22926,8 +23115,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": false,
-        "apexPool": true
+        "seedCards": true,
+        "apexPool": false
       }
     },
     {
@@ -23152,12 +23341,21 @@
       },
       "ratings": {
         "classic": 5,
-        "obscurity": 3,
+        "obscurity": 2,
         "accessibility": 2,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-23T00:41:12Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Hot Five 錄音是爵士獨奏語彙的奠基文獻，本卷為 Columbia 官方復刻的正典入口；1920 年代錄音音質對現代耳朵稍有距離。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：同系列 1001 Albums、Penguin 皇冠；Columbia/Legacy 正規流通，冷門度 3→2",
+        "previous": {
+          "classic": 5,
+          "obscurity": 3,
+          "accessibility": 2,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-23T00:41:12Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Hot Five 錄音是爵士獨奏語彙的奠基文獻，本卷為 Columbia 官方復刻的正典入口；1920 年代錄音音質對現代耳朵稍有距離。",
+          "rarity": "uncommon"
+        }
       },
       "rarity": "uncommon",
       "apexAssessment": {
@@ -23296,22 +23494,39 @@
       },
       "ratings": {
         "classic": 5,
-        "obscurity": 4,
+        "obscurity": 3,
         "accessibility": 2,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-23T00:41:12Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Red Hot Peppers 1926–27 場次是爵士作曲與編曲藝術的奠基錄音，本盤為 RCA 官方權威結集；今日一般玩家較少主動撞見。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：Red Hot Peppers 錄音為早期爵士正典核心；RCA/Bluebird 正規流通，冷門度 4 改 3",
+        "previous": {
+          "classic": 5,
+          "obscurity": 4,
+          "accessibility": 2,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-23T00:41:12Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Red Hot Peppers 1926–27 場次是爵士作曲與編曲藝術的奠基錄音，本盤為 RCA 官方權威結集；今日一般玩家較少主動撞見。",
+          "rarity": "uncommon"
+        }
       },
       "rarity": "uncommon",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "Morton 被公認為爵士第一位編曲家，Red Hot Peppers 1926–27 錄音（〈Black Bottom Stomp〉等）是證明即興音樂可被作曲思維組織的奠基文獻，長期列於爵士史核心，本結集為其權威入口。",
-        "evidenceUrls": [
-          "https://en.wikipedia.org/wiki/Jelly_Roll_Morton",
-          "https://musicbrainz.org/release-group/046a81bc-528c-3137-94d3-1ad5d6b6751c"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。早期爵士正典屬類型內 5，合輯未入綜合歷代榜",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "Morton 被公認為爵士第一位編曲家，Red Hot Peppers 1926–27 錄音（〈Black Bottom Stomp〉等）是證明即興音樂可被作曲思維組織的奠基文獻，長期列於爵士史核心，本結集為其權威入口。",
+          "evidenceUrls": [
+            "https://en.wikipedia.org/wiki/Jelly_Roll_Morton",
+            "https://musicbrainz.org/release-group/046a81bc-528c-3137-94d3-1ad5d6b6751c"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "Jelly Roll Morton 自稱發明了爵士，誇言之外，他作為爵士第一位編曲家的地位無可動搖——證據正是 1926 至 27 年在芝加哥率 Red Hot Peppers 留下的場次。這張 1995 年 RCA Bluebird 官方結集收齊〈Black Bottom Stomp〉〈The Chant〉〈Dead Man Blues〉〈Doctor Jazz〉〈Wolverine Blues〉等名演並附替代錄次：三管前線的對位、事先寫定的段落轉換與刻意留白的獨奏空隙，示範了根植即興的音樂如何被作曲思維組織起來而不失本色。",
@@ -23343,8 +23558,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": false,
-        "apexPool": true
+        "seedCards": true,
+        "apexPool": false
       }
     }
   ]

@@ -119,10 +119,21 @@
    },
    "rarity": "uncommon",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。L15有效，Ankst 小廠LP，壓量無據、非收藏聖杯；5星",
+    "evidenceUrls": [
+     "https://www.last.fm/music/Y%20Cyrff/Llawenydd%20Heb%20Ddiwedd",
+     "https://musicbrainz.org/release-group/976dd56d-49a0-3027-995b-b79808f4546f"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "製作、作曲與演奏三個 credit 欄，填的都是 Y Cyrff 一個名字。欄位旁的威爾斯語是 Cynhyrchydd、Ysgrifennwyd Gan 與 Offerynnau Gan。Discogs 廠牌頁說 Ankst 在 1988 至 1998 年間專營威爾斯語的另類音樂。錄音在 Stiwdio Les，註記欄另寫地點在 Bethesda，壓片 Damont、刻紋在 The Exchange。Discogs 登錄的曲長，〈Colofn〉3:49，同名曲 2:48。",
@@ -144,8 +155,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -1769,23 +1780,24 @@
     "discogsReleaseId": "42966"
    },
    "ratings": {
-    "classic": 3,
-    "obscurity": 4,
-    "accessibility": 5,
+    "classic": 2,
+    "obscurity": 5,
+    "accessibility": 4,
     "listeners": 816,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
     "previous": {
-     "classic": 4,
+     "classic": 3,
      "obscurity": 4,
      "accessibility": 5,
-     "source": "manual:depth-rubric",
-     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：H3o 非最知名作；L816 試聽無，但 MB 有 2020 XW 數位版→4；抽象聲音藝術；冷門度下限豁免：ADDENDUM 但書：確知有正式數位版",
      "rarity": "epic"
     },
-    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：H3o 非最知名作；L816 試聽無，但 MB 有 2020 XW 數位版→4；抽象聲音藝術；冷門度下限豁免：ADDENDUM 但書：確知有正式數位版"
+    "note": "全池稽核 audit-20261102（方案 C）：Ash International 限量黑膠，聽眾 816；2020 有官方數位版（Simply Superior）故 4；抽象聲響但無單盤極端樂評｜L=816"
    },
-   "rarity": "epic",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2094,10 +2106,21 @@
    },
    "rarity": "uncommon",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。附風箏限定LP但壓量無據，非公認聖杯",
+    "evidenceUrls": [
+     "https://www.last.fm/music/Electroscope/Homemade%20Electroscope",
+     "https://musicbrainz.org/release-group/cf42f305-ed98-3f43-8a1e-718774a9968e"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "十五軌裡有兩軌另在別處以單聲道錄成。註記欄寫其餘各軌錄在 Globbot Sound 的 3M 400 series 八軌機，〈Tunguska〉與〈Dunwich〉錄在 Pink's Attic Chamber。credit 欄兩條 Composed By，寫 Gayle Harrison 與 John Cavanagh；Discogs 藝人頁的成員欄列的是 Gayle Brogan。MusicBrainz 登錄的曲長最長〈Fusechain〉4:43。",
@@ -2121,8 +2144,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -2389,26 +2412,39 @@
    "ratings": {
     "classic": 3,
     "obscurity": 5,
-    "accessibility": 2,
+    "accessibility": 3,
     "listeners": 24,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
     "previous": {
-     "classic": 2,
-     "obscurity": 4,
-     "accessibility": 4,
-     "source": "manual:depth-rubric",
-     "checkedAt": "2026-08-31T00:00:00.000Z",
-     "rarity": "uncommon"
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Wurlitzer Jukebox 小團、少評論；L24 無串流→5；短曲氛圍電子",
+     "rarity": "rare"
     },
-    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Wurlitzer Jukebox 小團、少評論；L24 無串流→5；短曲氛圍電子"
+    "note": "全池稽核 audit-20261102（方案 C）：Wurlitzer Jukebox 小廠 CD 單一版本、無再發；listeners 24 有效｜L=24"
    },
-   "rarity": "rare",
+   "rarity": "uncommon",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。L24有效，但壓量無據、無收藏圈聖杯地位依據；屬5星冷門，不到7",
+    "evidenceUrls": [
+     "https://www.last.fm/music/Soundsmith/Aquanaut",
+     "https://musicbrainz.org/release-group/8b76d01f-2624-4fd0-96b7-439535fef360",
+     "https://www.discogs.com/release/1216386"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "隨盤宣傳單的文案被逐字抄進了 Discogs 原盤條目的註記欄。那段文案要人想像鐵匠打鐵，再想 Paul Gulati (Soundsmith) 在自己房間裡做出這張碟，後面接了兩句 West Country Psych 的宣傳語。同站藝人頁的 realname 欄也寫 Paul Gulati。credit 欄只有一條 Written-By。公司欄記 Cargo (2) 經銷、PMDC, UK 製造。MusicBrainz 登錄末軌〈Tatski〉只有 43 秒。",
@@ -2430,8 +2466,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -2694,28 +2730,41 @@
     "discogsReleaseId": "897022"
    },
    "ratings": {
-    "classic": 3,
+    "classic": 2,
     "obscurity": 5,
     "accessibility": 3,
     "listeners": 50,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
     "previous": {
-     "classic": 2,
-     "obscurity": 4,
-     "accessibility": 2,
-     "source": "manual:depth-rubric",
-     "checkedAt": "2026-08-31T00:00:00.000Z",
-     "rarity": "rare"
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 3,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：英國太空搖滾小廠 Enraptured；聽眾50、無試聽→5；太空迷幻 drone",
+     "rarity": "uncommon"
     },
-    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：英國太空搖滾小廠 Enraptured；聽眾50、無試聽→5；太空迷幻 drone"
+    "note": "全池稽核 audit-20261102（方案 C）：Enraptured 微型太空搖滾廠單版 CD、無串流｜L=50"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。微型廠CD，壓量無據，非收藏聖杯",
+    "evidenceUrls": [
+     "https://www.last.fm/music/Alpha%20Stone/Elasticated%20Waveband",
+     "https://musicbrainz.org/release-group/5099f1f6-23be-3ca0-b12e-3cd1462aaa76",
+     "https://www.discogs.com/release/897022"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "八軌的頭尾兩軌就叫〈Intro〉與〈Outro〉，末軌長 6:16。credit 欄把吉他、人聲、合成器、程式、寫作、錄音與製作七項全掛在 Pete Bassman 底下，另有 Andy Smith (2) 的貝斯與 Digger (4) 的鍵盤。註記欄寫第 1、6 軌出自 Dominic DeJoseph 的片子。Discogs 廠牌頁的簡介欄說 Enraptured 1993 年成立，1996 年其中一位創辦人另開 Earworm。註記欄另寫封套有一層感溫液晶。",
@@ -2739,8 +2788,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -2945,10 +2994,21 @@
    },
    "rarity": "uncommon",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。listeners 266接近門檻，小廠CD壓量無據",
+    "evidenceUrls": [
+     "https://www.last.fm/music/Avrocar/Cinematography",
+     "https://musicbrainz.org/release-group/d048857d-0b6c-48f7-8b1b-c7821ada7ac1"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "九軌的末軌〈Cathode & Cello'd〉一首就有 10 分 11 秒。〈Amplify〉7:03 撐起後半。credit 欄只有三條，Live Drums 掛 Damian Gaffney、Mastered By 掛 Adam Nunn、Production Assistant 掛 Antony Harding。Discogs 藝人頁的簡介欄說這團來自 Birmingham 與 black country，2013 年 6 月解散。",
@@ -2972,8 +3032,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -3237,28 +3297,41 @@
     "discogsReleaseId": "2004140"
    },
    "ratings": {
-    "classic": 3,
+    "classic": 2,
     "obscurity": 5,
     "accessibility": 3,
     "listeners": 29,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
     "previous": {
-     "classic": 2,
-     "obscurity": 4,
-     "accessibility": 4,
-     "source": "manual:depth-rubric",
-     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 3,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Ochre 小團；L29 無串流→5；氛圍電子搖滾",
      "rarity": "uncommon"
     },
-    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Ochre 小團；L29 無串流→5；氛圍電子搖滾"
+    "note": "全池稽核 audit-20261102（方案 C）：Ochre Records 英國極小廠單一CD版，無串流再發；L=29｜L=29"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。L29有效，Ochre 小廠CD，壓量無據、無聖杯地位；5星冷門",
+    "evidenceUrls": [
+     "https://www.last.fm/music/The%20Land%20of%20Nod/Translucent",
+     "https://musicbrainz.org/release-group/8815bf46-3513-416a-9469-96bffdfbbbdd",
+     "https://www.discogs.com/release/2004140"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "十軌錄在三個地方，註記欄逐軌標明哪一軌錄在哪裡。六軌在 nod studios，三軌在 Bethesda 的 bryn derwen，一軌在 Ossett 的 riverside studios。credit 欄四條，Design 掛 VSA、Mastered By 掛 Mike Cross，兩條 Recorded By 各帶軌號。首軌與末軌共用同一個曲名主幹，各帶一個括號副題。Discogs 藝人頁的簡介欄寫這是 Cheltenham 的團。",
@@ -3281,8 +3354,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {

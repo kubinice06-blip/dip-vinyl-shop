@@ -1575,10 +1575,22 @@
    },
    "rarity": "epic",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "evidenceUrls": [],
-    "reason": "已評估：classic 2、obscurity 3、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。L9有效，但壓量無據、無收藏圈聖杯地位依據；屬5星冷門，不到7",
+    "evidenceUrls": [
+     "https://www.last.fm/music/S%C3%B3i%20%C4%90en/Chi%E1%BA%BFn%20tranh%20v%C3%A0%20h%C3%B2a%20b%C3%ACnh",
+     "https://musicbrainz.org/release-group/62d00058-c644-411f-a27b-61f311d65d43",
+     "https://www.discogs.com/release/10488499"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：classic 2、obscurity 3、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "九首歌繞著戰爭與和平打轉，其中一首叫〈1975〉。Sói Đen 英文別名 Blackwolf，是一支越南 folk metal 團。盤名正是這個意思。壓軸〈Lâu Đài Sói〉拉到 10 分 06 秒，〈Đi Tìm Ánh Sáng〉只有 1 分 25 秒。2005 年的這張 CD 由 Sói Đen 自己發行，全長約 48 分鐘。",
@@ -1601,7 +1613,7 @@
     "descriptionKv": false,
     "albumOverride": false,
     "seedCards": false,
-    "apexPool": false
+    "apexPool": true
    }
   },
   {
@@ -2706,10 +2718,21 @@
    },
    "rarity": "rare",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "evidenceUrls": [],
-    "reason": "已評估：classic 2、obscurity 3、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。L265有效，但壓量無據、無收藏圈聖杯地位依據；屬5星冷門，不到7",
+    "evidenceUrls": [
+     "https://www.last.fm/music/Plainsunset/The%20Gift",
+     "https://www.discogs.com/release/24571880"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：classic 2、obscurity 3、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "慶祝十週年，樂團重錄五首，下載碼裡還附上同行的翻唱。Plainsunset 是 1990 年代中期成軍的新加坡流行龐克團。樂團 2014 年 2 月 8 日把整張重演一遍，那五首重錄則收進十週年 EP。翻唱的有 The Sam Willows 與 Inch Chua，日本的 Nothing To Declare 也唱了〈Girl On Queen Street〉。至於原作，是 2003 年經 Wake Me Up Music 出版的 CD。",
@@ -2735,7 +2758,7 @@
     "descriptionKv": false,
     "albumOverride": false,
     "seedCards": false,
-    "apexPool": false
+    "apexPool": true
    }
   },
   {

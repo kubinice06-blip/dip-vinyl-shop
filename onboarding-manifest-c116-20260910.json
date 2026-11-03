@@ -184,21 +184,22 @@
    "ratings": {
     "classic": 5,
     "obscurity": 4,
-    "accessibility": 3,
+    "accessibility": 4,
     "listeners": 5492,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
     "previous": {
-     "classic": 4,
+     "classic": 5,
      "obscurity": 4,
-     "accessibility": 4,
-     "source": "manual:depth-rubric",
-     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "accessibility": 3,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：日本硬蕊正典常列名盤；Selfish無串流→4；短促高速硬蕊",
      "rarity": "epic"
     },
-    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：日本硬蕊正典常列名盤；Selfish無串流→4；短促高速硬蕊"
+    "note": "全池稽核 audit-20261102（方案 C）：日本硬蕊代表；無串流、聽眾 5492；粗糲噪感→4｜L=5492"
    },
-   "rarity": "epic",
+   "rarity": "legendary",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -711,10 +712,21 @@
    },
    "rarity": "epic",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。小廠／自發盤、聽眾<300，但壓量未見數百張以下的確據，也非收藏圈公認聖杯；只到 5",
+    "evidenceUrls": [
+     "https://www.last.fm/music/Gai/1981-1985",
+     "https://musicbrainz.org/release-group/322bdced-afe2-4f0f-aa04-3f16d08fba40"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "十八軌裡有四軌到現在還沒有曲名。其餘十四軌以英文題為主，只有開場兩首是日文題〈戦争を知らない子どもたち〉〈地獄に堕ちた天使の金玉〉，收尾〈Yes!! Future〉與第七軌〈Future〉同源。盤名寫的是 1981 到 1985 年的收錄範圍，1985 年的發行形態則是一捲卡帶，出在 Violent Party Records。",
@@ -736,8 +748,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -1143,23 +1155,24 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 4,
+    "classic": 3,
     "obscurity": 5,
     "accessibility": 3,
     "listeners": 275,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
     "previous": {
-     "classic": 2,
-     "obscurity": 4,
-     "accessibility": 4,
-     "source": "manual:depth-rubric",
-     "checkedAt": "2026-08-31T00:00:00.000Z",
-     "rarity": "uncommon"
+     "classic": 4,
+     "obscurity": 5,
+     "accessibility": 3,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：鉄アレイ首張全長代表作；L275無串流→5；硬蕊",
+     "rarity": "epic"
     },
-    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：鉄アレイ首張全長代表作；L275無串流→5；硬蕊"
+    "note": "全池稽核 audit-20261102（方案 C）：小廠 Sunshine Sherbet 唯一版、無串流，275 有效→5。pearl 候選但身分靠曲目推定、無 Discogs 頁可引→暫 none，待主線查｜L=275"
    },
-   "rarity": "epic",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1286,23 +1299,24 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 3,
+    "classic": 4,
     "obscurity": 5,
-    "accessibility": 2,
+    "accessibility": 3,
     "listeners": 105,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
     "previous": {
-     "classic": 2,
-     "obscurity": 4,
+     "classic": 3,
+     "obscurity": 5,
      "accessibility": 2,
-     "source": "manual:depth-rubric",
-     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：1983主流廠龐克合輯；L105無串流→5；龐克",
      "rarity": "rare"
     },
-    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：1983主流廠龐克合輯；L105無串流→5；龐克"
+    "note": "全池稽核 audit-20261102（方案 C）：德間 Japan Record 主要廠牌發行並有兩次 CD 再發；日本硬蕊早期要輯，硬蕊 2→3｜L=105"
    },
-   "rarity": "rare",
+   "rarity": "epic",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1375,10 +1389,21 @@
    },
    "rarity": "epic",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。L155有效，GISM／Lip Cream 名合輯，曲目多見他處與盜版、壓量無據；不到7",
+    "evidenceUrls": [
+     "https://www.last.fm/music/Various%20Artists/Hardcore%20Unlawful%20Assembly",
+     "https://musicbrainz.org/release-group/ebfa26ae-74f5-4d08-a961-dec256e04b81"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "八支樂團各兩首，第七、八軌的主唱當年沒有掛名。十六軌約五十四分鐘，最短一分二十七秒、最長五分二十三秒，四首超過四分鐘。那沒有掛名的兩軌是 Lip Cream，當時他們還沒有自己的專輯，唱的是 Baki。1984 年 8 月由 AA Records 發行，編號 AA 004，被視為這條線合輯裡的金字塔。",
@@ -1400,8 +1425,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -1431,21 +1456,22 @@
    "ratings": {
     "classic": 5,
     "obscurity": 4,
-    "accessibility": 3,
+    "accessibility": 4,
     "listeners": 7185,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
     "previous": {
-     "classic": 2,
+     "classic": 5,
      "obscurity": 4,
-     "accessibility": 4,
-     "source": "manual:depth-rubric",
-     "checkedAt": "2026-08-31T00:00:00.000Z",
-     "rarity": "uncommon"
+     "accessibility": 3,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Burning Spirits 時期代表團唯一專輯，評論稱 hardcore 頂峰、深遠影響→5；Feral Ward 黑膠再發未串流→4；暴烈 hardcore",
+     "rarity": "epic"
     },
-    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Burning Spirits 時期代表團唯一專輯，評論稱 hardcore 頂峰、深遠影響→5；Feral Ward 黑膠再發未串流→4；暴烈 hardcore"
+    "note": "全池稽核 audit-20261102（方案 C）：日本 hardcore 場景聖盤，小廠原盤；粗糙高速 hardcore 入耳門檻偏高｜L=7185"
    },
-   "rarity": "epic",
+   "rarity": "legendary",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1663,10 +1689,22 @@
    },
    "rarity": "legendary",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "heresy",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為異端（該軸 7 星）。非常階段首張，破壞式現場噪音；定義表明列非常階段為 7 星異端錨點，Japanoise 奠基",
+    "evidenceUrls": [
+     "https://en.wikipedia.org/wiki/Hijokaidan",
+     "https://en.wikipedia.org/wiki/Japanoise",
+     "https://ja.wikipedia.org/wiki/非常階段_(バンド)"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "六段錄音的曲名就是六個場地與日期，最後一段錄在大學的一間教室。六段的長度從一分二十三秒到十六分二十七秒，收尾那一段一首就佔掉全碟的三分之一，總長約四十五分鐘。六場演出橫跨 1980 年 11 月到 1981 年 11 月，場地從大阪與京都的展演空間排到大學校園，其中兩場就錄在慶応大学與同志社大学的教室裡。這些現場錄音在 1982 年 4 月由一家自主製作廠牌壓成十二吋，也是非常階段第一張自己的 LP。",
@@ -1689,8 +1727,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -1809,10 +1847,21 @@
    },
    "rarity": "legendary",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：accessibility=5（heresy 最低門檻），但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。Incapacitants 首卷卡帶，2025 已正式再發；代表作是 As Loud As Possible，非本張",
+    "evidenceUrls": [
+     "https://www.last.fm/music/Incapacitants/Eternal%20Paralysis",
+     "https://musicbrainz.org/release-group/35720d81-2e0c-4573-acac-84d9852796eb"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：accessibility=5（heresy 最低門檻），但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "1981 年的原件是一捲卡帶，整捲只有一軌。卡帶的編號 PT-1 是那家卡帶廠的創廠第一號，同期的另外四筆同樣全是卡帶；美川俊治在大阪起手時，這還是他在樂團之外的個人計畫，要到八年後才有第一張黑膠。四十四年後的再發把同一份錄音切成三段，由 advaita records 重出成數位與卡帶兩種形式。",
@@ -1834,8 +1883,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -2070,14 +2119,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 4,
+    "classic": 3,
     "obscurity": 4,
     "accessibility": 5,
     "listeners": 1645,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 4,
+     "accessibility": 5,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "legendary"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：32 段平均不足一分鐘的嘶吼回授爆音；1645 聽眾、2022 數位版→4｜L=1645"
    },
-   "rarity": "legendary",
+   "rarity": "epic",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2152,10 +2210,21 @@
    },
    "rarity": "legendary",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "heresy",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為異端（該軸 7 星）。Japanoise 代表團體首張錄音室作，41 分鐘 harsh noise 長軌；里程碑地位不及 Merzbow，勉強",
+    "evidenceUrls": [
+     "https://en.wikipedia.org/wiki/C.C.C.C.",
+     "https://en.wikipedia.org/wiki/Japanoise"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "三軌五十二分鐘，第三軌〈Sonic Machine〉一首就佔掉四十一分十二秒。前兩軌分別是六分零四秒與四分多鐘，全碟一半以上的時間都落在最後那一首。盤名就是團名 C.C.C.C. 四個字母的全稱。這是樂團自營廠牌的第一張 CD、編號 EDP CD-01，也是他們名下第一筆非現場作品——排在它前面的兩筆都帶著現場標記。",
@@ -2177,8 +2246,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -2444,10 +2513,21 @@
    },
    "rarity": "legendary",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。聽眾 109，但 2018 Hospital 雙黑膠正式再發，流亡不成立；異端也只到 5",
+    "evidenceUrls": [
+     "https://www.last.fm/music/K2/The%20Rust",
+     "https://musicbrainz.org/release-group/4891be57-de1a-44e5-ae01-f4da9f3ce3e5"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "一個標題切成四個 Part，雙黑膠版每一面剛好放一段。草深公秀在 1983 年出過兩筆之後，隔了整整十年才有下一張，要到 1993 年起才密集起來。1996 年的原盤是 CD、編號 KMI-022，同一年他名下還有別張碟，指認本張要看這組編號；二十二年後由紐約一家廠牌重壓成雙黑膠。",
@@ -2469,8 +2549,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -2637,28 +2717,40 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 3,
+    "classic": 2,
     "obscurity": 5,
     "accessibility": 5,
     "listeners": 59,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
     "previous": {
-     "classic": 2,
-     "obscurity": 4,
-     "accessibility": 2,
-     "source": "manual:depth-rubric",
-     "checkedAt": "2026-08-31T00:00:00.000Z",
-     "rarity": "rare"
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 5,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：MSBR首作；L59無串流→5；兩段長篇harsh noise(原2偏錯)",
+     "rarity": "legendary"
     },
-    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：MSBR首作；L59無串流→5；兩段長篇harsh noise(原2偏錯)"
+    "note": "全池稽核 audit-20261102（方案 C）：田野直之 harsh noise 首張私壓，兩軌 48 分；59 聽眾無再發→5；聲音資料薄｜L=59"
    },
-   "rarity": "legendary",
+   "rarity": "epic",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。listeners 59私壓，但壓量與聖杯地位無據；harsh noise資料薄",
+    "evidenceUrls": [
+     "https://www.last.fm/music/MSBR/Ultimate%20Ambience",
+     "https://musicbrainz.org/release-group/ed8a9c18-74dc-4bc3-9898-78892d2760be"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "四個字母的展開寫在別名欄裡：Molten Salt Breeder Reactor。整張碟只有一個標題，用 #1 與 #2 分開，二十五分十五秒對二十二分二十四秒，一面一段，兩段差兩分五十一秒。1992 年那張黑膠的編號是 MR 01，廠牌名與這個名字同一串字母；作者本人生於 1961 年，2005 年過世。",
@@ -2680,8 +2772,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -2727,10 +2819,21 @@
    },
    "rarity": "legendary",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。日本harsh noise次要代表，依據不足以並列Merzbow/非常階段",
+    "evidenceUrls": [
+     "https://www.last.fm/music/Pain%20Jerk/Aktion%20Bruit",
+     "https://musicbrainz.org/release-group/4ce3524d-1e39-423b-9d01-ddb866c7f762"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "三軌的長度一路遞減：十九分半、十二分五十、九分三十七。三個曲名分屬三種寫法：〈Neon Kid〉是英文，〈In die Glutenkiste〉是德文，〈Mosquitomagus〉則是拉丁語式的造詞。1995 年那捲卡帶的編號是 AMP-013；光那一年，五味浩平名下就有八筆，隔年再添十四筆，兩年合計二十二筆，這張只是其中之一。",
@@ -2752,8 +2855,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -2799,10 +2902,21 @@
    },
    "rarity": "epic",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。ASTRO 百餘張作品中一般一張，非 harsh noise 里程碑",
+    "evidenceUrls": [
+     "https://www.last.fm/music/ASTRO/Bio-Galaxy",
+     "https://musicbrainz.org/release-group/14f589f5-ffa4-4d19-a266-b055bb8af4e2"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "2000 年那張 CD-R 上是完整不切的一軌，二十一年後才分成兩段。切開後是三十分四十一秒與三十一分零二秒，只差二十一秒，全碟超過一小時。這個名字是長谷川洋 1993 年起的個人計畫，當時他仍在 C.C.C.C. 裡，兩條線同時在跑；器材用的是老式的類比合成器。這張出在德國一家小廠，同廠的前一筆是三年前的十二吋黑膠。",
@@ -2824,8 +2938,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -2873,10 +2987,21 @@
    },
    "rarity": "legendary",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。樂團惡名來自現場破壞，錄音本身最難入耳依據薄",
+    "evidenceUrls": [
+     "https://www.last.fm/music/%E3%83%8F%E3%83%8A%E3%82%BF%E3%83%A9%E3%82%B7/%E3%83%8F%E3%83%8A%E3%82%BF%E3%83%A9%E3%82%B7",
+     "https://musicbrainz.org/release-group/d21a0114-c2b9-3647-b5ef-0b4ec8920853"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "八軌裡第三軌四十八秒，第七軌十七分五十三秒。長的那一軌一首就佔掉全碟三分之一以上，八軌總長約四十七分鐘，兩軌超過十分鐘、五軌不到五分鐘。團名的意思是流鼻涕的，這張發行之後，羅馬字拼法裡的 i 就被拿掉了。在此之前名下的四筆全是卡帶，1985 年這張才是第一張黑膠，出在 Alchemy Records、編號 ARLP-007。",
@@ -2898,8 +3023,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -2929,19 +3054,20 @@
    "ratings": {
     "classic": 4,
     "obscurity": 5,
-    "accessibility": 5,
+    "accessibility": 4,
     "listeners": 250,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
     "previous": {
      "classic": 4,
-     "obscurity": 4,
+     "obscurity": 5,
      "accessibility": 5,
-     "source": "manual:depth-rubric",
-     "checkedAt": "2026-08-31T00:00:00.000Z",
-     "rarity": "epic"
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：灰野敬二PSF代表作之一；L250無串流→5；前衛獨奏",
+     "rarity": "legendary"
     },
-    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：灰野敬二PSF代表作之一；L250無串流→5；前衛獨奏"
+    "note": "全池稽核 audit-20261102（方案 C）：灰野早期獨奏代表作之一，單軌 53 分鐘幽靜與爆裂交錯→4；非噪音牆。250 無串流→5｜L=250"
    },
    "rarity": "legendary",
    "apexAssessment": {
@@ -3074,21 +3200,22 @@
    "ratings": {
     "classic": 3,
     "obscurity": 5,
-    "accessibility": 5,
+    "accessibility": 4,
     "listeners": 502,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
     "previous": {
-     "classic": 2,
-     "obscurity": 4,
-     "accessibility": 4,
-     "source": "manual:depth-rubric",
-     "checkedAt": "2026-08-31T00:00:00.000Z",
-     "rarity": "uncommon"
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 5,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：不失者Avant時期作；L502無串流→5；儀式性噪音即興",
+     "rarity": "legendary"
     },
-    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：不失者Avant時期作；L502無串流→5；儀式性噪音即興"
+    "note": "全池稽核 audit-20261102（方案 C）：不失者 Avant 盤；噪音迷幻搖滾→4，非代表作，無單盤依據。502 無串流→5｜L=502"
    },
-   "rarity": "legendary",
+   "rarity": "epic",
    "apexAssessment": {
     "eligible": false,
     "tier": null,

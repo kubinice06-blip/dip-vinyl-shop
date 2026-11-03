@@ -587,10 +587,21 @@
    },
    "rarity": "epic",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。Disc Akabana 一般 CD，無壓量極小依據，非收藏聖杯；L=5",
+    "evidenceUrls": [
+     "https://www.last.fm/music/%E5%A4%A7%E5%B7%A5%E5%93%B2%E5%BC%98/%E3%82%86%E3%82%93%E3%81%9F%20%E3%81%A8%E3%81%85%20%E3%81%98%E3%82%89%E3%81%B0",
+     "https://musicbrainz.org/release-group/08de40a3-de49-4f30-8b1f-4550245650ce"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "第一張 CD 專輯的製作，交給了一個吹薩克斯風的人。梅津和時掛製作，也掛薩克斯風、豎笛、鋼琴與口風琴，第 1 至 5 與第 8 至 11 軌的編曲是他；Tom Cora 掛大提琴、Samm Bennett 掛鼓與打擊，兩人也各分走幾軌。大工哲弘自己掛人聲、三線、笛與太鼓，大工苗子與嵩本由起子掛囃子。他是八重山民謡的唄者，出身石垣市新川，1999 年被指定為沖繩縣無形文化財保持者；十一首曲名裡「ゆんた」出現三次，〈安里屋ゆんた〉是其中一首。",
@@ -610,8 +621,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -2460,10 +2471,21 @@
    },
    "rarity": "epic",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。L25有效，マルフク地方廠LP，壓量無據、非私壓聖杯；5星",
+    "evidenceUrls": [
+     "https://www.last.fm/music/%E5%98%89%E6%89%8B%E8%8B%85%E6%9E%97%E6%98%8C/%E5%98%89%E6%89%8B%E8%8B%85%E6%9E%97%E6%98%8C",
+     "https://musicbrainz.org/release-group/1a68fd15-6cdd-4299-95d7-24969346f7a3"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "他出生的越來村，現在在嘉手納基地的鐵絲網裡面。十三歲在村芝居當地謡，十來歲後半到大阪的製材所做工，十九歲被徵召去南洋、負傷回來；1949 年回到沖繩，靠拉馬車過活，一邊繼續唱。這張 1965 年的十二吋盤是マルフク F-8，收十首，〈西武門節〉〈ヒンスー尾類小〉〈多幸山〉〈嘉手久〉都在裡面，條目的條碼欄是空的。他後來被叫作島唄の神様，1999 年 10 月 9 日因肺癌過世。",
@@ -2483,8 +2505,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   }
  ]

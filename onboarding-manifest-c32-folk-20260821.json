@@ -21,15 +21,24 @@
         "visuallyVerified": true
       },
       "ratings": {
-        "classic": 5,
+        "classic": 4,
         "obscurity": 2,
         "accessibility": 1,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-21T12:42:23Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；2006 年獲美國國會圖書館國家錄音登記名冊收錄的民權運動現場定版,Seeger 名氣使其易於撞見,合唱式民謠入耳無門檻。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：1963 卡內基廳現場，民權歷史意義大，但非民謠正典核心專輯",
+        "previous": {
+          "classic": 5,
+          "obscurity": 2,
+          "accessibility": 1,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-21T12:42:23Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；2006 年獲美國國會圖書館國家錄音登記名冊收錄的民權運動現場定版,Seeger 名氣使其易於撞見,合唱式民謠入耳無門檻。",
+          "rarity": "rare"
+        }
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -162,14 +171,22 @@
       },
       "rarity": "uncommon",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "葛萊美名人堂已收錄 Dust Bowl Ballads, Volumes 1 & 2(Victor, 1940),另獲 Mojo 百張改變世界唱片名單,並被廣泛認定為最早的概念專輯之一與美國抗議民謠的源頭文本,跨來源長期共識充分。",
-        "evidenceUrls": [
-          "https://en.wikipedia.org/wiki/List_of_Grammy_Hall_of_Fame_Award_recipients_(A%E2%80%93D)",
-          "https://en.wikipedia.org/wiki/Dust_Bowl_Ballads",
-          "https://en.wikipedia.org/wiki/Woody_Guthrie"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。美國民謠開山、1001 收錄，屬類型奠基盤，RS500／Pitchfork 歷代榜未普遍收",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "葛萊美名人堂已收錄 Dust Bowl Ballads, Volumes 1 & 2(Victor, 1940),另獲 Mojo 百張改變世界唱片名單,並被廣泛認定為最早的概念專輯之一與美國抗議民謠的源頭文本,跨來源長期共識充分。",
+          "evidenceUrls": [
+            "https://en.wikipedia.org/wiki/List_of_Grammy_Hall_of_Fame_Award_recipients_(A%E2%80%93D)",
+            "https://en.wikipedia.org/wiki/Dust_Bowl_Ballads",
+            "https://en.wikipedia.org/wiki/Woody_Guthrie"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "Guthrie 1940 年 4 月 26 日與 5 月 3 日在 Victor 位於紐澤西 Camden 的錄音室完成,原以兩冊 78 轉唱片同時推出,全部歌曲寫 1930 年代沙塵暴與逃難者,是他生涯唯一一張非合輯作品。〈Tom Joad〉長到得拆成兩面壓片,〈Pretty Boy Floyd〉與〈Dust Bowl Blues〉因長度落在初版之外,要到 1964 年 RCA 重發才補進。人聲、吉他、口琴,幾乎沒有別的配器。Dust Bowl ballad、talking blues,常被列為最早的概念專輯之一。",
@@ -202,8 +219,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": false,
-        "apexPool": true
+        "seedCards": true,
+        "apexPool": false
       }
     },
     {
@@ -423,15 +440,24 @@
         "visuallyVerified": true
       },
       "ratings": {
-        "classic": 5,
+        "classic": 4,
         "obscurity": 2,
         "accessibility": 1,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-21T12:42:23Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；2015 年入選美國國家錄音登記名冊,是民謠復興期最具影響力的首作之一;Baez 為大眾級名字故易撞見,單吉他人聲聽感直白。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：民謠復興重要首作，非核心榜單常客",
+        "previous": {
+          "classic": 5,
+          "obscurity": 2,
+          "accessibility": 1,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-21T12:42:23Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；2015 年入選美國國家錄音登記名冊,是民謠復興期最具影響力的首作之一;Baez 為大眾級名字故易撞見,單吉他人聲聽感直白。",
+          "rarity": "rare"
+        }
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -692,14 +718,23 @@
       },
       "ratings": {
         "classic": 4,
-        "obscurity": 3,
-        "accessibility": 2,
+        "obscurity": 2,
+        "accessibility": 1,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-21T12:42:23Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；收錄成為反戰運動代表曲的同名作,是 Ochs 抗議時期公認代表盤,但未見名榜單收錄;屬樂迷領域,聽感正常。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：抗議民謠代表作，Elektra 正規發行｜L=81289",
+        "previous": {
+          "classic": 4,
+          "obscurity": 3,
+          "accessibility": 2,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-21T12:42:23Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；收錄成為反戰運動代表曲的同名作,是 Ochs 抗議時期公認代表盤,但未見名榜單收錄;屬樂迷領域,聽感正常。",
+          "rarity": "rare"
+        }
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -1224,13 +1259,22 @@
       "ratings": {
         "classic": 5,
         "obscurity": 3,
-        "accessibility": 2,
+        "accessibility": 1,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-21T12:42:23Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；黑名單後復出的卡內基廳現場,公認是五〇年代民謠復興的起點文件之一;現場錄音年代久遠但演唱直白"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：1955 年復出演唱會，AllMusic 稱美國民謠史關鍵錄音、普遍視為民謠復興起點；榜單缺席，強度 1",
+        "previous": {
+          "classic": 5,
+          "obscurity": 3,
+          "accessibility": 2,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-21T12:42:23Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；黑名單後復出的卡內基廳現場,公認是五〇年代民謠復興的起點文件之一;現場錄音年代久遠但演唱直白",
+          "rarity": "uncommon"
+        }
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -2554,13 +2598,22 @@
         "visuallyVerified": true
       },
       "ratings": {
-        "classic": 4,
-        "obscurity": 3,
-        "accessibility": 2,
+        "classic": 5,
+        "obscurity": 2,
+        "accessibility": 1,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-21T12:42:23Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Joe Boyd 製作的姊妹和聲民謠首張,長年被列入七〇年代最佳名單,〈Heart Like a Wheel〉更是外傳名曲;和聲親人但英法交雜,非全然入門。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：McGarrigle 姊妹首作，Melody Maker 年度專輯，民謠正典；柔和｜L=43273",
+        "previous": {
+          "classic": 4,
+          "obscurity": 3,
+          "accessibility": 2,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-21T12:42:23Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Joe Boyd 製作的姊妹和聲民謠首張,長年被列入七〇年代最佳名單,〈Heart Like a Wheel〉更是外傳名曲;和聲親人但英法交雜,非全然入門。",
+          "rarity": "rare"
+        }
       },
       "rarity": "rare",
       "apexAssessment": {
@@ -3087,13 +3140,22 @@
       "ratings": {
         "classic": 5,
         "obscurity": 3,
-        "accessibility": 3,
+        "accessibility": 2,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-21T12:42:23Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；當年商業慘敗、1976 年被 Asylum 刪除目錄，2000 年代後跨來源重新評價為 cosmic American music 的核心錄音；厚重疊錄與神秘歌詞讓入耳略需適應。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：遲來重估的 cult 傑作（4AD 再發），但非跨來源史上核心",
+        "previous": {
+          "classic": 5,
+          "obscurity": 3,
+          "accessibility": 3,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-21T12:42:23Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；當年商業慘敗、1976 年被 Asylum 刪除目錄，2000 年代後跨來源重新評價為 cosmic American music 的核心錄音；厚重疊錄與神秘歌詞讓入耳略需適應。",
+          "rarity": "epic"
+        }
       },
-      "rarity": "epic",
+      "rarity": "uncommon",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -3229,13 +3291,21 @@
       },
       "rarity": "uncommon",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "入選美國國會圖書館國家錄音登記名冊，並長期被視為 old-time／bluegrass 復興與世代橋接的核心錄音，跨來源共識穩定。",
-        "evidenceUrls": [
-          "https://en.wikipedia.org/wiki/National_Recording_Registry",
-          "https://en.wikipedia.org/wiki/Will_the_Circle_Be_Unbroken_(album)"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。國會錄音登錄、鄉村里程碑＝類型 5 星，綜合榜少收",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "入選美國國會圖書館國家錄音登記名冊，並長期被視為 old-time／bluegrass 復興與世代橋接的核心錄音，跨來源共識穩定。",
+          "evidenceUrls": [
+            "https://en.wikipedia.org/wiki/National_Recording_Registry",
+            "https://en.wikipedia.org/wiki/Will_the_Circle_Be_Unbroken_(album)"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "1972 年 11 月由 United Artists 發行的三張黑膠企劃，長髮樂團 Nitty Gritty Dirt Band 把 Roy Acuff、Mother Maybelle Carter、Earl Scruggs、Merle Travis、Doc Watson、Jimmy Martin 請進同一間錄音室，也讓小提琴手 Vassar Clements 被更廣的聽眾認識。全程在 Woodland Sound Studios 直錄兩軌母帶，多半一兩次過，連樂手商量誰先進來的對話都留著。登上告示牌鄉村榜第 4、獲白金認證，並入選國家錄音登記名冊。",
@@ -3264,8 +3334,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": false,
-        "apexPool": true
+        "seedCards": true,
+        "apexPool": false
       }
     },
     {
@@ -3352,21 +3422,38 @@
       "ratings": {
         "classic": 5,
         "obscurity": 3,
-        "accessibility": 3,
+        "accessibility": 2,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-21T12:42:23Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；2013 年入選葛萊美名人堂，是五弦班鳩三指法的定義性錄音；全器樂、單一音色主導，聽感需要一點耐性。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：bluegrass 器樂經典，但非跨來源史上核心；器樂旋律直白硬蕊度 2",
+        "previous": {
+          "classic": 5,
+          "obscurity": 3,
+          "accessibility": 3,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-21T12:42:23Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；2013 年入選葛萊美名人堂，是五弦班鳩三指法的定義性錄音；全器樂、單一音色主導，聽感需要一點耐性。",
+          "rarity": "epic"
+        }
       },
-      "rarity": "epic",
+      "rarity": "uncommon",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "獲葛萊美名人堂（Grammy Hall of Fame）2013 年收錄，並長期被當作 bluegrass 班鳩演奏的標準參照，屬該領域史上核心錄音。",
-        "evidenceUrls": [
-          "https://en.wikipedia.org/wiki/List_of_Grammy_Hall_of_Fame_Award_recipients_(E%E2%80%93I)",
-          "https://en.wikipedia.org/wiki/Flatt_and_Scruggs"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。bluegrass 器樂經典，類型級",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "獲葛萊美名人堂（Grammy Hall of Fame）2013 年收錄，並長期被當作 bluegrass 班鳩演奏的標準參照，屬該領域史上核心錄音。",
+          "evidenceUrls": [
+            "https://en.wikipedia.org/wiki/List_of_Grammy_Hall_of_Fame_Award_recipients_(E%E2%80%93I)",
+            "https://en.wikipedia.org/wiki/Flatt_and_Scruggs"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "Lester Flatt、Earl Scruggs 與 Foggy Mountain Boys 1961 年在 Columbia 錄下的全器樂作品，主角是 Scruggs 的三指法五弦班鳩。〈Ground Speed〉、〈Sally Ann〉、〈Reuben〉、〈Home Sweet Home〉、〈Little Darlin', Pal of Mine〉把老山歌與 fiddle tune 改寫成班鳩語彙，速度與時值極穩，長年是學琴者的參照標準。沒有主唱、沒有敘事，整張就是一組樂手把樂器練到極限的紀錄。2013 年入選葛萊美名人堂。",
@@ -3399,8 +3486,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": false,
-        "apexPool": true
+        "seedCards": true,
+        "apexPool": false
       }
     },
     {
@@ -3752,12 +3839,21 @@
       },
       "ratings": {
         "classic": 4,
-        "obscurity": 4,
+        "obscurity": 3,
         "accessibility": 2,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-21T12:42:23Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；獨奏吉他與人聲的極簡編制，被原聲吉他圈奉為標準教材，屬 Rice 代表作之一，惟流通面窄於《Manzanita》。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：Tony Rice 個人吉他代表作，bluegrass flatpicking 常被推薦必聽｜L=23591",
+        "previous": {
+          "classic": 4,
+          "obscurity": 4,
+          "accessibility": 2,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-21T12:42:23Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；獨奏吉他與人聲的極簡編制，被原聲吉他圈奉為標準教材，屬 Rice 代表作之一，惟流通面窄於《Manzanita》。",
+          "rarity": "rare"
+        }
       },
       "rarity": "rare",
       "apexAssessment": {
@@ -3829,13 +3925,21 @@
       },
       "rarity": "uncommon",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "獲美國國會圖書館國家錄音登記名冊 2024 年收錄，且長年以「Rounder 0044」之名被公認為新一代 bluegrass 的起點，跨來源共識成立。",
-        "evidenceUrls": [
-          "https://en.wikipedia.org/wiki/J._D._Crowe_%26_The_New_South",
-          "https://en.wikipedia.org/wiki/New_South_(band)"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。藍草類型最具影響力盤屬 5，非跨類型正典",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "獲美國國會圖書館國家錄音登記名冊 2024 年收錄，且長年以「Rounder 0044」之名被公認為新一代 bluegrass 的起點，跨來源共識成立。",
+          "evidenceUrls": [
+            "https://en.wikipedia.org/wiki/J._D._Crowe_%26_The_New_South",
+            "https://en.wikipedia.org/wiki/New_South_(band)"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "1975 年的同名作品，樂迷直接以 Rounder 目錄編號「0044」稱呼。班鳩手 J.D. Crowe 的樂團在此換上 Ricky Skaggs，Jerry Douglas 加入 Dobro，吉他與主唱是 Tony Rice。他們用傳統 bluegrass 編制去唱當時的新生代寫作者：Gordon Lightfoot 的〈Ten Degrees And Getting Colder〉、Rodney Crowell 的〈Home Sweet Home Revisited〉。2024 年入選美國國會圖書館國家錄音登記名冊。",
@@ -3868,8 +3972,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": false,
-        "apexPool": true
+        "seedCards": true,
+        "apexPool": false
       }
     },
     {
@@ -4296,15 +4400,24 @@
         "visuallyVerified": true
       },
       "ratings": {
-        "classic": 5,
+        "classic": 4,
         "obscurity": 1,
         "accessibility": 1,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-21T12:42:23Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；葛萊美五項提名全中、含年度專輯與年度單曲，是 americana 跨界最被廣泛引述的一次合作；銷量與能見度都屬入門常客，音色柔和易入耳。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：葛萊美年度專輯，入門常客，非正典核心",
+        "previous": {
+          "classic": 5,
+          "obscurity": 1,
+          "accessibility": 1,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-21T12:42:23Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；葛萊美五項提名全中、含年度專輯與年度單曲，是 americana 跨界最被廣泛引述的一次合作；銷量與能見度都屬入門常客，音色柔和易入耳。",
+          "rarity": "rare"
+        }
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -5577,13 +5690,22 @@
       "ratings": {
         "classic": 5,
         "obscurity": 2,
-        "accessibility": 3,
+        "accessibility": 2,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-21T12:42:23Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Lanois 製作、跨界客席雲集，公認是把 Harris 推向 americana 並被後輩反覆援引的開創之作；音場幽暗混響厚重，較一般原音民謠難入耳。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：葛萊美、Lanois 製作的生涯轉折名作；非該領域人人必提。氛圍民謠搖滾入耳 3→2",
+        "previous": {
+          "classic": 5,
+          "obscurity": 2,
+          "accessibility": 3,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-21T12:42:23Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Lanois 製作、跨界客席雲集，公認是把 Harris 推向 americana 並被後輩反覆援引的開創之作；音場幽暗混響厚重，較一般原音民謠難入耳。",
+          "rarity": "epic"
+        }
       },
-      "rarity": "epic",
+      "rarity": "uncommon",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -6577,15 +6699,24 @@
         "visuallyVerified": true
       },
       "ratings": {
-        "classic": 5,
+        "classic": 4,
         "obscurity": 3,
-        "accessibility": 3,
+        "accessibility": 2,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-21T12:42:23Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；傳統歌改編的分水嶺，〈Blackwaterside〉編法被 Led Zeppelin 未註記挪用，樂史因果可查證。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：英國民謠吉他重要作品，但正典多舉同名首輯；藝人代表作之一",
+        "previous": {
+          "classic": 5,
+          "obscurity": 3,
+          "accessibility": 3,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-21T12:42:23Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；傳統歌改編的分水嶺，〈Blackwaterside〉編法被 Led Zeppelin 未註記挪用，樂史因果可查證。",
+          "rarity": "epic"
+        }
       },
-      "rarity": "epic",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -8260,13 +8391,21 @@
       },
       "rarity": "uncommon",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "跨來源長期共識：Pazz & Jop 年度亞軍、《滾石》500 大專輯與八〇年代百大專輯雙榜在列，長年被視為 Richard Thompson 最高成就。",
-        "evidenceUrls": [
-          "https://en.wikipedia.org/wiki/Shoot_Out_the_Lights",
-          "https://en.wikipedia.org/wiki/Richard_Thompson_(musician)"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。英國民謠搖滾頂峰，屬樂評圈聖典，圈外知名度不足",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "跨來源長期共識：Pazz & Jop 年度亞軍、《滾石》500 大專輯與八〇年代百大專輯雙榜在列，長年被視為 Richard Thompson 最高成就。",
+          "evidenceUrls": [
+            "https://en.wikipedia.org/wiki/Shoot_Out_the_Lights",
+            "https://en.wikipedia.org/wiki/Richard_Thompson_(musician)"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "Richard 與 Linda Thompson 的第六張也是最後一張合作專輯。先前由 Gerry Rafferty 出資錄成的版本沒有唱片公司願意接手，1981 年 11 月改由 Joe Boyd 簽下，在 Olympic 錄音室以幾天時間重錄，交 Hannibal 發行。錄完到上市之間兩人婚姻已告終，〈Walking on a Wire〉〈Did She Jump or Was She Pushed?〉〈Wall of Death〉被樂評當成婚變的雙面隱喻。1982 年 Pazz & Jop 票選第二名，後列《滾石》500 大專輯第 332 名。",
@@ -8298,8 +8437,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": false,
-        "apexPool": true
+        "seedCards": true,
+        "apexPool": false
       }
     },
     {
@@ -9923,12 +10062,21 @@
       },
       "ratings": {
         "classic": 4,
-        "obscurity": 3,
+        "obscurity": 2,
         "accessibility": 3,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-21T12:42:23Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；全傳統曲目路線的代表作，AllMusic 評為樂團藝術高點；整面一曲的〈Jack Orion〉延長且變速頻繁，聽感偏硬。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：英倫民謠搖滾代表作，含長篇 Jack Orion｜L=8773",
+        "previous": {
+          "classic": 4,
+          "obscurity": 3,
+          "accessibility": 3,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-21T12:42:23Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；全傳統曲目路線的代表作，AllMusic 評為樂團藝術高點；整面一曲的〈Jack Orion〉延長且變速頻繁，聽感偏硬。",
+          "rarity": "uncommon"
+        }
       },
       "rarity": "uncommon",
       "apexAssessment": {
@@ -18992,13 +19140,22 @@
         "visuallyVerified": true
       },
       "ratings": {
-        "classic": 3,
-        "obscurity": 3,
-        "accessibility": 2,
+        "classic": 4,
+        "obscurity": 2,
+        "accessibility": 1,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-21T12:42:23Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Ward 流傳最廣的一張，客席陣容與單曲知名度高，有明確地位但缺乏大型榜單背書。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：M. Ward 公認代表作；民謠搖滾易聽｜L=409583",
+        "previous": {
+          "classic": 3,
+          "obscurity": 3,
+          "accessibility": 2,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-21T12:42:23Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Ward 流傳最廣的一張，客席陣容與單曲知名度高，有明確地位但缺乏大型榜單背書。",
+          "rarity": "common"
+        }
       },
       "rarity": "common",
       "apexAssessment": {
@@ -19135,14 +19292,22 @@
       },
       "rarity": "uncommon",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "多方來源長期一致視為台灣現代民歌運動的開端之作，具明確開創地位，且入選台灣流行音樂百張最佳專輯。",
-        "evidenceUrls": [
-          "https://zh.wikipedia.org/wiki/楊弦",
-          "https://zh.wikipedia.org/wiki/校園民歌",
-          "https://zh.wikipedia.org/wiki/台灣流行音樂200最佳專輯"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。台灣民歌運動起點，該國第一名盤級止於5",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "多方來源長期一致視為台灣現代民歌運動的開端之作，具明確開創地位，且入選台灣流行音樂百張最佳專輯。",
+          "evidenceUrls": [
+            "https://zh.wikipedia.org/wiki/楊弦",
+            "https://zh.wikipedia.org/wiki/校園民歌",
+            "https://zh.wikipedia.org/wiki/台灣流行音樂200最佳專輯"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "1975年6月6日台北中山堂「現代民謠創作演唱會」之後，楊弦把余光中詩集《白玉苦瓜》裡的九首詩譜成歌，交洪建全教育文化基金會出版，成為台灣第一張被公認稱得上「民歌」的唱片。吉他為骨、鋼琴與弦樂鋪底，〈鄉愁四韻〉〈民歌〉〈江湖上〉直接把新詩唱成旋律，也引爆學院派對「中國現代民歌」的論戰。次年李雙澤喊出「唱自己的歌」，校園民歌時代就此展開。次類型用台灣慣稱的現代民歌／校園民歌。",
@@ -19173,8 +19338,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": false,
-        "apexPool": true
+        "seedCards": true,
+        "apexPool": false
       }
     },
     {
@@ -19204,14 +19369,22 @@
       },
       "rarity": "rare",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "百佳第3名、香港十大中文金曲得獎、禁歌身分與數十位主流歌手翻唱，跨來源長期共識足列華語民謠核心。",
-        "evidenceUrls": [
-          "https://zh.wikipedia.org/wiki/橄欖樹_(專輯)",
-          "https://zh.wikipedia.org/wiki/台灣流行音樂200最佳專輯",
-          "https://zh.wikipedia.org/wiki/齊豫"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。台灣民歌經典，該地區名盤止於5",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "百佳第3名、香港十大中文金曲得獎、禁歌身分與數十位主流歌手翻唱，跨來源長期共識足列華語民謠核心。",
+          "evidenceUrls": [
+            "https://zh.wikipedia.org/wiki/橄欖樹_(專輯)",
+            "https://zh.wikipedia.org/wiki/台灣流行音樂200最佳專輯",
+            "https://zh.wikipedia.org/wiki/齊豫"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "1978年金韻獎冠軍出身的齊豫，1979年由新格唱片推出首張國語專輯，李泰祥作曲、編曲兼指揮，把管弦樂的重量壓進民歌骨架。三毛作詞的〈橄欖樹〉因「我的故鄉在遠方」一句被當局列為禁歌，反而傳遍兩岸三地，日後翻唱者從費玉清、孫燕姿到吳青峰不絕；〈歡顏〉是同名電影主題曲，齊豫並以此曲拿下金馬獎最佳電影插曲。榜單上名列1975－1993台灣流行音樂百張最佳專輯第三。",
@@ -19242,8 +19415,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": false,
-        "apexPool": true
+        "seedCards": true,
+        "apexPool": false
       }
     },
     {
@@ -20932,14 +21105,23 @@
       },
       "ratings": {
         "classic": 4,
-        "obscurity": 4,
-        "accessibility": 3,
+        "obscurity": 3,
+        "accessibility": 2,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-21T12:42:23Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；日本地下民謠公認的大正浪漫概念名作，含五十萬張暢銷曲〈赤色エレジー〉，但日本以外仍屬深度愛好者領域。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：首作，日本民謠／大正浪漫名盤；串流無試聽｜L=1365",
+        "previous": {
+          "classic": 4,
+          "obscurity": 4,
+          "accessibility": 3,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-21T12:42:23Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；日本地下民謠公認的大正浪漫概念名作，含五十萬張暢銷曲〈赤色エレジー〉，但日本以外仍屬深度愛好者領域。",
+          "rarity": "uncommon"
+        }
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -21070,14 +21252,22 @@
       },
       "rarity": "uncommon",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "岡林信康在日本樂史被長期公認為抗議民謠原點與「フォークの神様」，本作為其首張專輯並收錄〈山谷ブルース〉〈手紙〉〈友よ〉；三上寛、友川かずき兩人的生涯轉向皆以聽到岡林作品為起點，屬跨條目可查證的長期共識。",
-        "evidenceUrls": [
-          "https://ja.wikipedia.org/wiki/%E5%B2%A1%E6%9E%97%E4%BF%A1%E5%BA%B7",
-          "https://ja.wikipedia.org/wiki/%E4%B8%89%E4%B8%8A%E5%AF%9B",
-          "https://ja.wikipedia.org/wiki/%E5%8F%8B%E5%B7%9D%E3%81%8B%E3%81%9A%E3%81%8D"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。日本民謠場景級",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "岡林信康在日本樂史被長期公認為抗議民謠原點與「フォークの神様」，本作為其首張專輯並收錄〈山谷ブルース〉〈手紙〉〈友よ〉；三上寛、友川かずき兩人的生涯轉向皆以聽到岡林作品為起點，屬跨條目可查證的長期共識。",
+          "evidenceUrls": [
+            "https://ja.wikipedia.org/wiki/%E5%B2%A1%E6%9E%97%E4%BF%A1%E5%BA%B7",
+            "https://ja.wikipedia.org/wiki/%E4%B8%89%E4%B8%8A%E5%AF%9B",
+            "https://ja.wikipedia.org/wiki/%E5%8F%8B%E5%B7%9D%E3%81%8B%E3%81%9A%E3%81%8D"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "父親是牧師的岡林信康，1968年以描寫山谷日雇工的〈山谷ブルース〉出道，隨即被叫做「フォークの神様」。1969年這張URC首作編號URL-1007，一面收自作的〈手紙〉〈友よ〉〈それで自由になったのかい〉，一面唱Tom Paxton與Dylan〈戦争の親玉〉的日語版。〈手紙〉觸及被差別部落題材，長年遭電台自主規制，日本抗議民謠的起點多從這裡算起。",
@@ -21106,8 +21296,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": false,
-        "apexPool": true
+        "seedCards": true,
+        "apexPool": false
       }
     },
     {
@@ -21203,13 +21393,21 @@
       },
       "rarity": "uncommon",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "1975年8月成為日本唱片史上首張銷量破百萬的LP，Oricon榜五度重返冠軍，屬可查證且長期穩定的樂史位置，非單一來源說法。",
-        "evidenceUrls": [
-          "https://ja.wikipedia.org/wiki/%E6%B0%B7%E3%81%AE%E4%B8%96%E7%95%8C_(%E3%82%A2%E3%83%AB%E3%83%90%E3%83%A0)",
-          "https://ja.wikipedia.org/wiki/%E4%BA%95%E4%B8%8A%E9%99%BD%E6%B0%B4"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。日本首張百萬 LP，國內里程碑（5）",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "1975年8月成為日本唱片史上首張銷量破百萬的LP，Oricon榜五度重返冠軍，屬可查證且長期穩定的樂史位置，非單一來源說法。",
+          "evidenceUrls": [
+            "https://ja.wikipedia.org/wiki/%E6%B0%B7%E3%81%AE%E4%B8%96%E7%95%8C_(%E3%82%A2%E3%83%AB%E3%83%90%E3%83%A0)",
+            "https://ja.wikipedia.org/wiki/%E4%BA%95%E4%B8%8A%E9%99%BD%E6%B0%B4"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "井上陽水第三張原創作品，1973年12月1日由Polydor發行，部分錄音遠赴倫敦，找來Quatermass的Pete Robinson、John Gustafson等當地樂手，編曲由星勝擔綱。〈心もよう〉〈氷の世界〉〈帰れない二人〉（與忌野清志郎合寫）、〈白い一日〉（小椋佳作詞）構成主軸，細野晴臣參與其中兩曲。發行兩年後的1975年8月，成為日本唱片史上首張賣破百萬張的LP。",
@@ -21238,8 +21436,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": false,
-        "apexPool": true
+        "seedCards": true,
+        "apexPool": false
       }
     },
     {
@@ -21774,13 +21972,22 @@
         "visuallyVerified": true
       },
       "ratings": {
-        "classic": 3,
+        "classic": 4,
         "obscurity": 5,
-        "accessibility": 4,
+        "accessibility": 3,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-21T12:42:23Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；友川首張專輯、絕唱派代表之一，特色強烈但樂史份量次於三上寛，流通範圍極窄。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：首作，日本地下民謠重要盤，串流無｜L=372",
+        "previous": {
+          "classic": 3,
+          "obscurity": 5,
+          "accessibility": 4,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-21T12:42:23Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；友川首張專輯、絕唱派代表之一，特色強烈但樂史份量次於三上寛，流通範圍極窄。",
+          "rarity": "epic"
+        }
       },
       "rarity": "epic",
       "apexAssessment": {
@@ -22037,13 +22244,22 @@
       "ratings": {
         "classic": 5,
         "obscurity": 4,
-        "accessibility": 3,
+        "accessibility": 2,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-21T12:42:23Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；公認開創韓國現代創作歌手民謠的第一張專輯，名列韓國大眾音樂百大名盤前段；原盤在韓語圈外屬深度愛好者領域，粗礪嘶吼唱腔略高於一般入耳門檻。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：韓國民謠搖滾先驅首張；無串流、無聽眾值→4",
+        "previous": {
+          "classic": 5,
+          "obscurity": 4,
+          "accessibility": 3,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-21T12:42:23Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；公認開創韓國現代創作歌手民謠的第一張專輯，名列韓國大眾音樂百大名盤前段；原盤在韓語圈外屬深度愛好者領域，粗礪嘶吼唱腔略高於一般入耳門檻。",
+          "rarity": "epic"
+        }
       },
-      "rarity": "epic",
+      "rarity": "uncommon",
       "apexAssessment": {
         "eligible": false,
         "tier": null,

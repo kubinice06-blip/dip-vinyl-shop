@@ -1668,24 +1668,24 @@
     "visuallyVerified": true
    },
    "ratings": {
-    "classic": 3,
+    "classic": 2,
     "obscurity": 5,
     "accessibility": 2,
     "listeners": 120,
-    "source": "manual:rerate-20261101",
-    "checkedAt": "2026-11-01T00:00:00Z",
-    "note": "三軸重評（RUBRIC 2026-11-01）：早期免費 beat tape、非代表；自發行 FLAC；Dilla 式短 beat",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "note": "全池稽核 audit-20261102（方案 C）：自發免費 beat tape，Bandcamp 數位流通，冷門度 4；成名前作｜L=120",
     "previous": {
      "classic": 3,
      "obscurity": 5,
-     "accessibility": 3,
-     "source": "worker /album-rating（obscurity:lastfm）",
-     "checkedAt": "2026-10-23T20:08:06Z",
-     "note": "機器基線 3/5/3（Last.fm listeners 120）",
-     "rarity": "uncommon"
+     "accessibility": 2,
+     "source": "manual:rerate-20261101",
+     "checkedAt": "2026-11-01T00:00:00Z",
+     "note": "三軸重評（RUBRIC 2026-11-01）：早期免費 beat tape、非代表；自發行 FLAC；Dilla 式短 beat",
+     "rarity": "rare"
     }
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,

@@ -270,23 +270,23 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 5,
+    "obscurity": 4,
     "accessibility": 2,
     "listeners": 41,
-    "source": "manual:rerate-20261101",
-    "checkedAt": "2026-11-01T00:00:00Z",
-    "note": "三軸重評（RUBRIC 2026-11-01）：Channel One 節奏＋dub 延長版 showcase；Bronx 極小廠，未見串流再發；舞曲 dub 延長混音",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "note": "全池稽核 audit-20261102（方案 C）：Taurus 小廠，但試聽 ready 已有串流，冷門降4｜L=41",
     "previous": {
      "classic": 3,
      "obscurity": 5,
-     "accessibility": 3,
-     "source": "worker /album-rating（obscurity:lastfm）",
-     "checkedAt": "2026-10-23T15:32:14Z",
-     "note": "機器基線 3/5/3（Last.fm listeners 41）",
-     "rarity": "uncommon"
+     "accessibility": 2,
+     "source": "manual:rerate-20261101",
+     "checkedAt": "2026-11-01T00:00:00Z",
+     "note": "三軸重評（RUBRIC 2026-11-01）：Channel One 節奏＋dub 延長版 showcase；Bronx 極小廠，未見串流再發；舞曲 dub 延長混音",
+     "rarity": "rare"
     }
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -448,10 +448,22 @@
    },
    "rarity": "common",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "evidenceUrls": [],
-    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 4），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。小廠／自發盤、聽眾<300，但壓量未見數百張以下的確據，也非收藏圈公認聖杯；只到 5",
+    "evidenceUrls": [
+     "https://www.last.fm/music/John%20Holt/Introspective",
+     "https://musicbrainz.org/release-group/8ccdcbcb-a987-403c-8715-e97717585aff",
+     "https://www.discogs.com/release/9808771"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 4），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "封底另外印著：Channel One Style。John Holt 自己掛名製作這張 1980 年的牙買加 LP，那行字是標題之外多出來的，廠標上的盤名還拼成了 Intorspective。A 面三首都標成 Part 1 & 2 兩段，最長一首長達 7 分 25 秒。B 面則翻唱 Chi-Lites、O'Jays、Nilsson 等人的歌。",
@@ -472,8 +484,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -943,10 +955,22 @@
    },
    "rarity": "common",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "evidenceUrls": [],
-    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 192），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。Body Music LP，壓量無據，非收藏聖杯",
+    "evidenceUrls": [
+     "https://www.last.fm/music/Alton%20Ellis/A%20New%20Day",
+     "https://musicbrainz.org/release-group/5dd7251d-ff9d-40b7-bef4-a136a4516b7d",
+     "https://www.discogs.com/release/3045824"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 192），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "長笛吹進了 Roots Radics 的節奏裡。1972 年起定居英國的 Alton Ellis 人稱 rocksteady 教父，《A New Day》1983 年由英國廠牌 Body Music 出版。節奏先在 Channel One 錄成，人聲再到 Easy Street 錄音室補上。Roots Radics 打底，長笛由 Bami Rose 吹奏、Barry Vincent 編寫。製作、作曲與編曲全由 Ellis 自己擔下，一共八首。",
@@ -969,8 +993,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {

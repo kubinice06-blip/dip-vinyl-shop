@@ -1,5 +1,15 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-03｜dip-vinyl-shop｜頂點方案 C 套用：2,713 張寫進 seed／manifest／card_catalog
+
+- **結果**：tier 殿堂 692→170、流亡 109→232、異端 116→54；全池 傳奇 471／史詩 1,612／獨特 3,943／稀有 6,587／普通 9,437，與 `APPLY-C.md` 目標一致。三軸任一有變 2,245 張、一般卡稀有度有變 1,214。
+- **寫入**：seed 2,713 列（三道防呆；降級列去 tier、無作曲家連尾端 null 去掉）；manifest 330 檔（`source` manual:audit-20261102、`previous` 留舊值、`published.seedCards／apexPool` 跟 tier 翻、新流亡 225 張證據補 Last.fm＋MB／Discogs 本盤頁）；card_catalog 推 2,713／2,713（降級刪 tier／apex 補 seed:true），整份重列 0 不符、抽 15 讀回 15/15。
+- **新手禮**：18 張全數仍是殿堂，0 張要換。battle／roguelike 備援、教學、Po 牌組的流亡卡換成現役流亡（Bobb Trimble 降級）。
+- **店內印刷卡**：在售 tier 變 4 張（Horace Silver、Built to Spill、Neil Young & Crazy Horse 降；真芽正恵升流亡）、三軸變 5 張，A6／A7／A7-A4 html＋jsx、A4 PDF 重出。
+- **玩家收藏**：唱片櫃與對戰先讀卡匣旗標，降級的 722 張老玩家手上照舊顯示頂點、升級的 262 張要等 album_overrides 同步。玩家資料沒動；選項列在 `REPORT.md` §5，待店主決定。
+- **待本機**：album_overrides.tier 要設 263、要清 704（`album-overrides-tier.json`）；後台頂級牌管理新增「⇄ 依卡池同步頂點旗標」一鍵處理（含 apex_pool）。
+- **主要檔案**：`seed_cards.json`、`onboarding-manifest-*.json`、`batch-progress/add-*/onboarding-manifest.json`、`admin.html`、`battle.html`、`roguelike.html`、`data/shop/print/*`、`batch-progress/audit-20261102/{apply-c.mjs,push-catalog.mjs,REPORT.md,PLAN.md,card-catalog-patches.json,album-overrides-tier.json,touched-manifests.json}`。
+- **驗證**：published gate 243 份，三軸／稀有度／tier／卡池列／card_catalog 評分欄 0 error；殘留皆既有（album-desc 落後 KV、coverUrl、已不在卡池 24 張）。
 ### 2026-11-03｜dip-vinyl-shop｜三軸重評第三輪 W5：s13–s15 verdicts 交齊（750 張）
 
 - **範圍**：9 月前入庫、無評分來源紀錄的早期卡，s13–s15 各 250 張。先跑 `fetch-listeners.mjs` 補 listeners（有效值 241／237／237），15 段 Opus 代理判定，主線每段抽 5 張＋逐張看 1／2／5 分與冷門 1。退回 0 段，主線改 24 筆。只交 verdicts，未動 seed／manifest／card_catalog。

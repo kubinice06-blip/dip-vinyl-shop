@@ -136,10 +136,21 @@
    },
    "rarity": "rare",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "evidenceUrls": [],
-    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 4），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。小廠／自發盤、聽眾<300，但壓量未見數百張以下的確據，也非收藏圈公認聖杯；只到 5",
+    "evidenceUrls": [
+     "https://www.last.fm/music/Jezzreel/Rockers%20Showcase%20Volume%202",
+     "https://musicbrainz.org/release-group/8a3c5b29-a1be-48ee-a91f-c1fed099afee"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 4），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "封套寫著 Volume 2，續的是前一張標籤上的編號。1982 年由 Wackie's 推出，唱的仍是 roots 二重唱 Jezzreel。前一張的標籤印著 Volume One；這回 Bullwackie 掛製作，Junior Delahaye 一邊錄音一邊打鼓。鍵盤手有三位，另有長笛。最長的〈I Love You Jah〉唱到 7 分 03 秒。",
@@ -162,8 +173,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -195,24 +206,24 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 5,
+    "classic": 4,
     "obscurity": 4,
     "accessibility": 1,
     "listeners": 1966,
-    "source": "manual:rerate-20261101",
-    "checkedAt": "2026-11-01T00:00:00Z",
-    "note": "三軸重評（RUBRIC 2026-11-01）：Rhythm & Sound 再版計畫第一張、公認 Wackie's 最佳之一的 lovers rock 經典／原盤小廠，已多次再發入串流→4／柔和 lovers rock",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "note": "全池稽核 audit-20261102（方案 C）：Wackie's lovers rock 收藏圈名盤、已考古再發串流→4；場景重要但非里程碑，經典5→4｜L=1966",
     "previous": {
-     "classic": 3,
-     "obscurity": 5,
-     "accessibility": 3,
-     "source": "worker /album-rating（obscurity:lastfm）",
-     "checkedAt": "2026-10-23T17:54:29Z",
-     "note": "機器基線 3/5/3（Last.fm listeners 1966）",
-     "rarity": "uncommon"
+     "classic": 5,
+     "obscurity": 4,
+     "accessibility": 1,
+     "source": "manual:rerate-20261101",
+     "checkedAt": "2026-11-01T00:00:00Z",
+     "note": "三軸重評（RUBRIC 2026-11-01）：Rhythm & Sound 再版計畫第一張、公認 Wackie's 最佳之一的 lovers rock 經典／原盤小廠，已多次再發入串流→4／柔和 lovers rock",
+     "rarity": "rare"
     }
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -280,29 +291,40 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 4,
+    "classic": 3,
     "obscurity": 5,
     "accessibility": 2,
     "listeners": 71,
-    "source": "manual:rerate-20261101",
-    "checkedAt": "2026-11-01T00:00:00Z",
-    "note": "三軸重評（RUBRIC 2026-11-01）：訪談者稱其 80 年代前半最佳＝藝人代表作／費城私人廠牌自發行，查無串流再發→5／Wackie's 低傳真 roots",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "note": "全池稽核 audit-20261102（方案 C）：自家廠 Philadelphia Reggae Sounds 私壓，MB 僅原盤無再發；listeners 71 有效｜L=71",
     "previous": {
-     "classic": 3,
+     "classic": 4,
      "obscurity": 5,
-     "accessibility": 3,
-     "source": "worker /album-rating（obscurity:lastfm）",
-     "checkedAt": "2026-10-23T17:54:29Z",
-     "note": "機器基線 3/5/3（Last.fm listeners 71）",
+     "accessibility": 2,
+     "source": "manual:rerate-20261101",
+     "checkedAt": "2026-11-01T00:00:00Z",
+     "note": "三軸重評（RUBRIC 2026-11-01）：訪談者稱其 80 年代前半最佳＝藝人代表作／費城私人廠牌自發行，查無串流再發→5／Wackie's 低傳真 roots",
      "rarity": "uncommon"
     }
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "evidenceUrls": [],
-    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 71），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。自家廠私壓但壓量無據，非公認聖杯",
+    "evidenceUrls": [
+     "https://www.last.fm/music/Audley%20Rollens/Showcase%20Prevail",
+     "https://musicbrainz.org/release-group/478db991-eea8-402b-bf0a-562ddab816e7"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 71），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "Rockstones 散團後，他獨自到紐約補錄。小時候和兄弟在金斯敦表演腳踏車特技的 Audley Rollens，後來成為一位牙買加 reggae 歌手。七〇年代初他移居美國費城，組起樂團 Rockstones，也創辦自家廠牌 Philadelphia Reggae Sounds。樂團留下〈Rasta Banner〉與〈Be Wise〉，其餘曲子除兩首外都進 Wackie's 錄成。1982 年自家廠牌把它發行出來，八首全是人聲歌，製作與詞曲都出自他一人。",
@@ -325,8 +347,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -359,24 +381,24 @@
     "visuallyVerified": true
    },
    "ratings": {
-    "classic": 5,
+    "classic": 4,
     "obscurity": 4,
     "accessibility": 2,
     "listeners": 1972,
-    "source": "manual:rerate-20261101",
-    "checkedAt": "2026-11-01T00:00:00Z",
-    "note": "三軸重評（RUBRIC 2026-11-01）：被譽為 roots reggae 巔峰、歐洲地下長年追捧的 cult 名盤／Top Ranking 小廠、後有再發可串流→4／重銅管 roots",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "note": "全池稽核 audit-20261102（方案 C）：Black Ark 錄製的根源雷鬼深挖盤；聽眾 1972 有再發｜L=1972",
     "previous": {
-     "classic": 3,
-     "obscurity": 5,
-     "accessibility": 3,
-     "source": "worker /album-rating（obscurity:lastfm）",
-     "checkedAt": "2026-10-23T17:54:29Z",
-     "note": "機器基線 3/5/3（Last.fm listeners 1972）",
+     "classic": 5,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:rerate-20261101",
+     "checkedAt": "2026-11-01T00:00:00Z",
+     "note": "三軸重評（RUBRIC 2026-11-01）：被譽為 roots reggae 巔峰、歐洲地下長年追捧的 cult 名盤／Top Ranking 小廠、後有再發可串流→4／重銅管 roots",
      "rarity": "uncommon"
     }
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,

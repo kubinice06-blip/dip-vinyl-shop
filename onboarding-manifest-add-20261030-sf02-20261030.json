@@ -281,24 +281,24 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-30 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 5,
+    "classic": 4,
     "obscurity": 2,
     "accessibility": 4,
     "listeners": 69209,
-    "source": "manual:rerate-20261101",
-    "checkedAt": "2026-11-01T00:00:00Z",
-    "note": "三軸重評（RUBRIC 2026-11-01）：公認樂團巔峰，首入 Billboard 200、17 國同步；國際流通；前衛民俗金屬嘶吼",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "note": "全池稽核 audit-20261102（方案 C）：DIR EN GREY 代表作之一，視覺系／前衛金屬；非領域人人必提｜L=69209",
     "previous": {
-     "classic": 4,
+     "classic": 5,
      "obscurity": 2,
      "accessibility": 4,
-     "source": "manual:regional-rubric",
-     "checkedAt": "2026-10-30T03:10:57Z",
-     "note": "機器基線 3/3/3（Last.fm listeners 69209）；主線：日本藝人卡依 §0.8 錨點制以日本語言圈為尺度人工評分（worker 對日文掛名回預設值 3/3、Last.fm 聽眾偏英語圈）",
-     "rarity": "epic"
+     "source": "manual:rerate-20261101",
+     "checkedAt": "2026-11-01T00:00:00Z",
+     "note": "三軸重評（RUBRIC 2026-11-01）：公認樂團巔峰，首入 Billboard 200、17 國同步；國際流通；前衛民俗金屬嘶吼",
+     "rarity": "legendary"
     }
    },
-   "rarity": "legendary",
+   "rarity": "epic",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1185,22 +1185,22 @@
    "ratings": {
     "classic": 5,
     "obscurity": 2,
-    "accessibility": 3,
+    "accessibility": 2,
     "listeners": 12592,
-    "source": "manual:rerate-20261101",
-    "checkedAt": "2026-11-01T00:00:00Z",
-    "note": "三軸重評（RUBRIC 2026-11-01）：首入 Oricon 前十、日本車庫搖滾里程碑；Columbia 主流；粗糲車庫龐克",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "note": "全池稽核 audit-20261102（方案 C）：日本搖滾里程碑，但缺跨來源國際共識；車庫搖滾易入耳｜L=12592",
     "previous": {
-     "classic": 4,
+     "classic": 5,
      "obscurity": 2,
      "accessibility": 3,
-     "source": "manual:regional-rubric",
-     "checkedAt": "2026-10-30T03:10:57Z",
-     "note": "機器基線 3/4/3（Last.fm listeners 12592）；主線：日本藝人卡依 §0.8 錨點制以日本語言圈為尺度人工評分（worker 對日文掛名回預設值 3/3、Last.fm 聽眾偏英語圈）",
-     "rarity": "uncommon"
+     "source": "manual:rerate-20261101",
+     "checkedAt": "2026-11-01T00:00:00Z",
+     "note": "三軸重評（RUBRIC 2026-11-01）：首入 Oricon 前十、日本車庫搖滾里程碑；Columbia 主流；粗糲車庫龐克",
+     "rarity": "epic"
     }
    },
-   "rarity": "epic",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,

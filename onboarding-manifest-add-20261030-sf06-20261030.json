@@ -1022,24 +1022,24 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-30 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 5,
-    "obscurity": 2,
+    "classic": 4,
+    "obscurity": 3,
     "accessibility": 1,
     "listeners": 10139,
-    "source": "manual:rerate-20261101",
-    "checkedAt": "2026-11-01T00:00:00Z",
-    "note": "三軸重評（RUBRIC 2026-11-01）：第 10 屆韓國大眾音樂獎最佳舞曲電子專輯，韓 indie 里程碑；韓國流通正常；synth-pop",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "note": "全池稽核 audit-20261102（方案 C）：韓國獨立電子代表作；韓語圈一線、圈外少知→3｜L=10139",
     "previous": {
-     "classic": 4,
-     "obscurity": 3,
-     "accessibility": 4,
-     "source": "manual:regional-rubric",
-     "checkedAt": "2026-10-30T06:32:08Z",
-     "note": "機器基線 3/4/3（Last.fm listeners 10139）；主線：第 10 屆韓國大眾音樂獎最佳舞曲／電子專輯得獎，韓國獨立圈一線、圈外少人知；有拍合成流行好入耳",
-     "rarity": "epic"
+     "classic": 5,
+     "obscurity": 2,
+     "accessibility": 1,
+     "source": "manual:rerate-20261101",
+     "checkedAt": "2026-11-01T00:00:00Z",
+     "note": "三軸重評（RUBRIC 2026-11-01）：第 10 屆韓國大眾音樂獎最佳舞曲電子專輯，韓 indie 里程碑；韓國流通正常；synth-pop",
+     "rarity": "rare"
     }
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1106,23 +1106,23 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 3,
-    "accessibility": 5,
+    "obscurity": 4,
+    "accessibility": 4,
     "listeners": null,
-    "source": "manual:rerate-20261101",
-    "checkedAt": "2026-11-01T00:00:00Z",
-    "note": "三軸重評（RUBRIC 2026-11-01）：韓國自由爵士先驅晚期獨奏雙 CD，非代表作；首爾正規小廠 Audioguy；無伴奏自由即興、延長技法",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "note": "全池稽核 audit-20261102（方案 C）：韓國自由爵士先驅晚期獨奏雙 CD，長音／循環呼吸→4。Audioguy 小廠，聽眾缺值→4",
     "previous": {
      "classic": 3,
-     "obscurity": 4,
-     "accessibility": 1,
-     "source": "manual:regional-rubric",
-     "checkedAt": "2026-10-30T06:32:08Z",
-     "note": "機器基線 undefined/undefined/undefined（Last.fm listeners 查無）；主線：Audioguy 雙 CD，韓國自由爵士先驅的獨奏盤，Last.fm 無資料；無伴奏自由即興中音薩克斯風，入耳度最低一級",
-     "rarity": "rare"
+     "obscurity": 3,
+     "accessibility": 5,
+     "source": "manual:rerate-20261101",
+     "checkedAt": "2026-11-01T00:00:00Z",
+     "note": "三軸重評（RUBRIC 2026-11-01）：韓國自由爵士先驅晚期獨奏雙 CD，非代表作；首爾正規小廠 Audioguy；無伴奏自由即興、延長技法",
+     "rarity": "epic"
     }
    },
-   "rarity": "epic",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,

@@ -423,24 +423,24 @@
     "visuallyVerified": true
    },
    "ratings": {
-    "classic": 3,
+    "classic": 2,
     "obscurity": 5,
     "accessibility": 5,
     "listeners": 1,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
-    "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽非 ready → 5，L=1）3→5",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "note": "全池稽核 audit-20261102（方案 C）：Leo 人聲＋鼓即興，評論極少；1 聽眾無串流→5｜L=1",
     "previous": {
      "classic": 3,
-     "obscurity": 3,
+     "obscurity": 5,
      "accessibility": 5,
-     "source": "manual:rerate-20261101",
-     "checkedAt": "2026-11-01T00:00:00Z",
-     "note": "三軸重評（RUBRIC 2026-11-01）：Minton／Turner 長年二重奏錄音／Leo 正規獨立廠／乾嘔尖叫的延伸人聲",
-     "rarity": "epic"
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽非 ready → 5，L=1）3→5",
+     "rarity": "legendary"
     }
    },
-   "rarity": "legendary",
+   "rarity": "epic",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -739,19 +739,19 @@
    "ratings": {
     "classic": 4,
     "obscurity": 5,
-    "accessibility": 4,
+    "accessibility": 5,
     "listeners": 162,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
-    "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽非 ready → 5，L=162）3→5",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "note": "全池稽核 audit-20261102（方案 C）：RCA 大廠發行，不符流亡。以音色噪音為組織原則、放大打擊，硬蕊 4→5｜L=162",
     "previous": {
      "classic": 4,
-     "obscurity": 3,
+     "obscurity": 5,
      "accessibility": 4,
-     "source": "manual:rerate-20261101",
-     "checkedAt": "2026-11-01T00:00:00Z",
-     "note": "三軸重評（RUBRIC 2026-11-01）：Watson：使先前音樂皆顯灰暗，Oxley 代表作／RCA 正規但發行有限／音色序列式即興",
-     "rarity": "epic"
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽非 ready → 5，L=162）3→5",
+     "rarity": "legendary"
     }
    },
    "rarity": "legendary",
@@ -913,10 +913,22 @@
    },
    "rarity": "epic",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "evidenceUrls": [],
-    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 2），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。Emanem CD，2003新近錄音、壓量無據，非聖杯",
+    "evidenceUrls": [
+     "https://www.last.fm/music/Alan%20Tomlinson%20%2F%20Steve%20Beresford%20%2F%20Roger%20Turner/Trap%20Street",
+     "https://musicbrainz.org/release-group/ced3ac6a-61dd-427f-90d8-7abb33e319d9",
+     "https://www.discogs.com/release/2332869"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 2），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "Beresford 參與過 The Slits，這回玩物件。Tony Oxley 的 Angular Apron 裡，待過長號手 Alan Tomlinson。2002 年 8 月 12 日倫敦錄成這張時，Steve Beresford 用的是電子裝置與物件，Roger Turner 打鼓。曲名全是 E1、W7 這類代號，共十一首，2003 年 7 月發行。",
@@ -940,8 +952,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {

@@ -412,23 +412,24 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 5,
+    "classic": 4,
     "obscurity": 5,
     "accessibility": 3,
     "listeners": 291,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
     "previous": {
-     "classic": 2,
-     "obscurity": 3,
-     "accessibility": 4,
-     "source": "manual:regional-rubric",
-     "checkedAt": "2026-08-31T00:00:00.000Z",
-     "rarity": "uncommon"
+     "classic": 5,
+     "obscurity": 5,
+     "accessibility": 3,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：蘇聯／愛沙尼亞交響前衛搖滾公認經典，Musea 再版；L291 無試聽→5；長篇器樂",
+     "rarity": "legendary"
     },
-    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：蘇聯／愛沙尼亞交響前衛搖滾公認經典，Musea 再版；L291 無試聽→5；長篇器樂"
+    "note": "全池稽核 audit-20261102（方案 C）：愛沙尼亞前衛搖滾場景代表作，非跨來源史上核心；聽眾291、無串流→5｜L=291"
    },
-   "rarity": "legendary",
+   "rarity": "epic",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1302,22 +1303,23 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 5,
+    "obscurity": 4,
     "accessibility": 2,
     "listeners": 1,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
     "previous": {
-     "classic": 2,
-     "obscurity": 3,
+     "classic": 3,
+     "obscurity": 5,
      "accessibility": 2,
-     "source": "manual:regional-rubric",
-     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：芬蘭發行第二張，二線；L1 無試聽→5；愛國民謠搖滾",
      "rarity": "rare"
     },
-    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：芬蘭發行第二張，二線；L1 無試聽→5；愛國民謠搖滾"
+    "note": "全池稽核 audit-20261102（方案 C）：愛沙尼亞國民級樂團，與同名他團混名，listeners 1 疑錯配；冷門度依錨點 4｜L=1"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1748,23 +1750,24 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 5,
+    "classic": 4,
     "obscurity": 3,
     "accessibility": 1,
     "listeners": 1568,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
     "previous": {
-     "classic": 2,
+     "classic": 5,
      "obscurity": 3,
-     "accessibility": 2,
-     "source": "manual:regional-rubric",
-     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "accessibility": 1,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：蘇聯太空迪斯可里程碑，銷量數百萬；L1568→3；旋律合成器",
      "rarity": "rare"
     },
-    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：蘇聯太空迪斯可里程碑，銷量數百萬；L1568→3；旋律合成器"
+    "note": "全池稽核 audit-20261102（方案 C）：第二張，名氣次於 Disco Alliance→4；1568聽眾下限3｜L=1568"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2616,10 +2619,21 @@
    },
    "rarity": "uncommon",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。listeners 276近門檻，已有2003 CD再發",
+    "evidenceUrls": [
+     "https://www.last.fm/music/Dzeltenie%20pastnieki/Man%20%C4%BCoti%20pat%C4%ABk%20jaunais%20vilnis",
+     "https://musicbrainz.org/release-group/1cc6f732-20f0-3461-be19-d06a7cea8eb9"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "這捲盤帶的八軌長度，二十一年後的 CD 版一秒不差地照抄。第四軌〈Ko labāk vēlies〉6:14 最長，末軌就是與盤名同字的〈Man ļoti patīk jaunais vilnis〉5:10，八軌合計約三十六分半。1982 年那筆的形態欄同樣寫著盤帶，廠牌與編號欄同樣是空的。2003 年那張 CD 的編號 IBCD 202，正好接在同團前一張的 IBCD 201 後面。",
@@ -2641,8 +2655,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {

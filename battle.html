@@ -917,10 +917,10 @@ const POOL = [
 ].map(([artist,album,c,o,a])=>({artist,album,classic:c,obscurity:o,accessibility:a,ace:null}));
 const ACES = [
   {artist:'Radiohead',album:'OK Computer',classic:7,obscurity:1,accessibility:1,ace:'hall'},
-  {artist:'Midori Takada',album:'Through the Looking Glass',classic:1,obscurity:7,accessibility:1,ace:'pearl'},
+  {artist:'Dada',album:'Jyo',classic:1,obscurity:7,accessibility:1,ace:'pearl'},
   {artist:'Merzbow',album:'Pulse Demon',classic:1,obscurity:1,accessibility:7,ace:'heresy'},
   {artist:'The Beatles',album:'Revolver',classic:7,obscurity:1,accessibility:1,ace:'hall'},
-  {artist:'Connie Converse',album:'How Sad, How Lovely',classic:1,obscurity:7,accessibility:1,ace:'pearl'},
+  {artist:'Deerfield',album:'Nil Desperandum',classic:1,obscurity:7,accessibility:1,ace:'pearl'},
   {artist:'Lou Reed',album:'Metal Machine Music',classic:1,obscurity:1,accessibility:7,ace:'heresy'},
 ];
 // 王牌旗標 → 對戰三圍（唱片櫃只存 hall/pearl/heresy 旗標，對戰才賦予 7 星單軸）
@@ -1030,7 +1030,7 @@ const PO_POOL = [
   ['Dorothy Ashby','Afro-Harping',2,5,3], ['Hiroshi Yoshimura','Green',2,5,3],
   ['Hailu Mergia','Hailu Mergia & His Classical Instrument',1,5,3], ['Francis Bebey','African Electronic Music',1,5,4],
 ].map(([artist,album,c,o,a])=>({artist,album,classic:c,obscurity:o,accessibility:a,ace:null}));
-PO_POOL.push({artist:'Pauline Anna Strom',album:'Trans-Millenia Consort',classic:1,obscurity:7,accessibility:1,ace:'pearl'});
+PO_POOL.push({artist:'Jemeel Moondoc & Muntu',album:'The Evening of the Blue Men',classic:1,obscurity:7,accessibility:1,ace:'pearl'}); // 2026-11-03 方案 C：原 Pauline Anna Strom 不在流亡名單，換卡池現役流亡
 
 // 殿堂神作：即使卡片沒存 hall 旗標，這些公認神作也視為對應王牌（與 worker / 前台同一份正規化）
 const NEOCLASSIC_LIST = [

@@ -192,24 +192,24 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 5,
-    "obscurity": 5,
+    "classic": 4,
+    "obscurity": 4,
     "accessibility": 4,
     "listeners": 2408,
-    "source": "manual:rerate-20261101",
-    "checkedAt": "2026-11-01T00:00:00Z",
-    "note": "三軸重評（RUBRIC 2026-11-01）：sludge/doom 圈公認經典，RYM類型前段；H:G Fact小廠、無串流；極慢重+氛圍碟｜主線：H:G Fact極小廠且無串流再發，照錨點為5",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "note": "全池稽核 audit-20261102（方案 C）：日本 doom 邪典；listeners 2408、無串流→4｜L=2408",
     "previous": {
-     "classic": 3,
+     "classic": 5,
      "obscurity": 5,
-     "accessibility": 3,
-     "source": "worker /album-rating（obscurity:lastfm）",
-     "checkedAt": "2026-10-23T11:24:42Z",
-     "note": "機器基線 3/5/3（Last.fm listeners 2408）",
-     "rarity": "uncommon"
+     "accessibility": 4,
+     "source": "manual:rerate-20261101",
+     "checkedAt": "2026-11-01T00:00:00Z",
+     "note": "三軸重評（RUBRIC 2026-11-01）：sludge/doom 圈公認經典，RYM類型前段；H:G Fact小廠、無串流；極慢重+氛圍碟｜主線：H:G Fact極小廠且無串流再發，照錨點為5",
+     "rarity": "legendary"
     }
    },
-   "rarity": "legendary",
+   "rarity": "epic",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -237,7 +237,7 @@
     "cardCatalog": false,
     "descriptionKv": false,
     "albumOverride": false,
-    "seedCards": false,
+    "seedCards": true,
     "apexPool": false
    }
   },
@@ -590,22 +590,22 @@
    "ratings": {
     "classic": 3,
     "obscurity": 5,
-    "accessibility": 5,
+    "accessibility": 4,
     "listeners": 107,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
-    "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽非 ready → 5，L=107）3→5",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "note": "全池稽核 audit-20261102（方案 C）：單曲 75 分鐘三人即興搖滾→4；無單盤極端評述。107 無串流→5｜L=107",
     "previous": {
      "classic": 3,
-     "obscurity": 3,
+     "obscurity": 5,
      "accessibility": 5,
-     "source": "manual:rerate-20261101",
-     "checkedAt": "2026-11-01T00:00:00Z",
-     "note": "三軸重評（RUBRIC 2026-11-01）：灰野代表作是 PSF 兩張雙現場，此為大廠時期作；德間正規發行但量少已絕版；75 分鐘單曲噪音自由即興",
-     "rarity": "epic"
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽非 ready → 5，L=107）3→5",
+     "rarity": "legendary"
     }
    },
-   "rarity": "legendary",
+   "rarity": "epic",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -634,7 +634,7 @@
     "cardCatalog": false,
     "descriptionKv": false,
     "albumOverride": false,
-    "seedCards": false,
+    "seedCards": true,
     "apexPool": false
    }
   },
@@ -1255,10 +1255,22 @@
    },
    "rarity": "uncommon",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "evidenceUrls": [],
-    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 28），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。限量300、無數位，但2024新作尚無聖杯地位",
+    "evidenceUrls": [
+     "https://www.last.fm/music/Deathprod/Let%20Me%20Be%20Forever%20Animal",
+     "https://musicbrainz.org/release-group/3836ef0e-3a92-4f17-a6fb-1f71d0238221",
+     "https://www.discogs.com/release/31026103"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 28），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "孟克美術館委託的四聲道聲音作品，唱片只壓 300 張。受委託的 Deathprod，本名 Helge Sten，1971 年生。奧斯陸孟克美術館為展覽「Trembling Earth」委託了這件作品，唱片收的是它的立體聲版。2024 年 6 月交給 Smalltown Supersound 發行，只出黑膠，沒有數位版。",
@@ -1281,7 +1293,7 @@
     "descriptionKv": false,
     "albumOverride": false,
     "seedCards": false,
-    "apexPool": false
+    "apexPool": true
    }
   },
   {

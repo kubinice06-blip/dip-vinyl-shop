@@ -34,24 +34,24 @@
     "visuallyVerified": true
    },
    "ratings": {
-    "classic": 4,
+    "classic": 3,
     "obscurity": 4,
-    "accessibility": 5,
+    "accessibility": 4,
     "listeners": 107,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
-    "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽 ready → ≥4，L=107）3→4",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "note": "全池稽核 audit-20261102（方案 C）：Raster-Noton 微聲／正弦波電子，但節奏明顯（Brainwashed），4；聽眾 107 有串流→4｜L=107",
     "previous": {
      "classic": 4,
-     "obscurity": 3,
+     "obscurity": 4,
      "accessibility": 5,
-     "source": "manual:rerate-20261101",
-     "checkedAt": "2026-11-01T00:00:00Z",
-     "note": "三軸重評（RUBRIC 2026-11-01）：池田亮司＋Nicolai 合作首作，raster-noton 代表盤；正規小廠有串流；純頻率",
-     "rarity": "epic"
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽 ready → ≥4，L=107）3→4",
+     "rarity": "legendary"
     }
    },
-   "rarity": "legendary",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -85,7 +85,7 @@
     "cardCatalog": false,
     "descriptionKv": false,
     "albumOverride": false,
-    "seedCards": false,
+    "seedCards": true,
     "apexPool": false
    }
   },
@@ -118,23 +118,23 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 4,
+    "obscurity": 5,
     "accessibility": 5,
     "listeners": 232,
-    "source": "manual:rerate-20261101",
-    "checkedAt": "2026-11-01T00:00:00Z",
-    "note": "三軸重評（RUBRIC 2026-11-01）：Farmers Manual 中期作；Tray 極小子廠，Bandcamp 自家再發；glitch 噪音",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "note": "全池稽核 audit-20261102（方案 C）：Unix噪音碎片＋99索引點，極端glitch；但缺專輯層級可信評述不給頂點；2018 Bandcamp數位重發→4｜L=232",
     "previous": {
      "classic": 3,
-     "obscurity": 5,
+     "obscurity": 4,
      "accessibility": 5,
-     "source": "manual:avant-rubric",
-     "checkedAt": "2026-10-23T11:23:57Z",
-     "note": "機器基線 3/5/3（Last.fm listeners 232）；主線：glitch／microsound／聲響藝術：無旋律、純音色與資料噪音→硬蕊5；冷門照 Last.fm",
+     "source": "manual:rerate-20261101",
+     "checkedAt": "2026-11-01T00:00:00Z",
+     "note": "三軸重評（RUBRIC 2026-11-01）：Farmers Manual 中期作；Tray 極小子廠，Bandcamp 自家再發；glitch 噪音",
      "rarity": "epic"
     }
    },
-   "rarity": "epic",
+   "rarity": "legendary",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -163,7 +163,7 @@
     "cardCatalog": false,
     "descriptionKv": false,
     "albumOverride": false,
-    "seedCards": false,
+    "seedCards": true,
     "apexPool": false
    }
   },
@@ -279,22 +279,22 @@
    "ratings": {
     "classic": 4,
     "obscurity": 4,
-    "accessibility": 5,
+    "accessibility": 4,
     "listeners": 865,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
-    "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽 ready → ≥4，L=865）3→4",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "note": "全池稽核 audit-20261102（方案 C）：Mego/glitch 60分鐘單軌；L865、2018 Bandcamp數位版→4；噪音電腦即興4｜L=865",
     "previous": {
      "classic": 4,
-     "obscurity": 3,
+     "obscurity": 4,
      "accessibility": 5,
-     "source": "manual:rerate-20261101",
-     "checkedAt": "2026-11-01T00:00:00Z",
-     "note": "三軸重評（RUBRIC 2026-11-01）：60 軌隨機播放概念盤，團的代表作；Touch 子廠限量、2018 Bandcamp 再發；長篇噪音",
-     "rarity": "epic"
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽 ready → ≥4，L=865）3→4",
+     "rarity": "legendary"
     }
    },
-   "rarity": "legendary",
+   "rarity": "epic",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -327,7 +327,7 @@
     "cardCatalog": false,
     "descriptionKv": false,
     "albumOverride": false,
-    "seedCards": false,
+    "seedCards": true,
     "apexPool": false
    }
   },
@@ -614,10 +614,22 @@
    },
    "rarity": "legendary",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "evidenceUrls": [],
-    "reason": "已評估：classic 3、obscurity 5、accessibility 5；obscurity=5 但沒有遺珠級證據（listeners 1213），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+    "eligible": true,
+    "tier": "heresy",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為異端（該軸 7 星）。刺孔 CD 讀取失敗錄成 48 分鐘破碎 glitch，結構性拒斥；glitch 史必引，但最難入耳之列勉強",
+    "evidenceUrls": [
+     "https://scaruffi.com/avant/tone.html",
+     "https://researchers.westernsydney.edu.au/en/publications/damaged-sound-glitching-and-skipping-compact-discs-in-the-audio-o/",
+     "https://ra.co/news/82922"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：classic 3、obscurity 5、accessibility 5；obscurity=5 但沒有遺珠級證據（listeners 1213），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "戳了針孔的膠帶貼上 CD 底面，播放器開始讀錯。刀根康尚 1935 年生於東京，1972 年移居紐約，從 1984 年起就把穿孔膠帶貼到 CD 上，測試能否壓過播放器內建的錯誤修正。Tzadik 於 1997 年推出這張，錄下的正是那些讀不穩的播放結果，約 48 分鐘、分成兩部分。他寫道，膠帶連光碟的轉速與方向都改變了；出來的是不規則的靜電雜訊、金屬般的尖叫與刺耳的白噪音。",
@@ -646,7 +658,7 @@
     "descriptionKv": false,
     "albumOverride": false,
     "seedCards": false,
-    "apexPool": false
+    "apexPool": true
    }
   },
   {
@@ -1007,22 +1019,22 @@
    "ratings": {
     "classic": 4,
     "obscurity": 3,
-    "accessibility": 5,
+    "accessibility": 4,
     "listeners": 4114,
-    "source": "manual:rerate-20261101",
-    "checkedAt": "2026-11-01T00:00:00Z",
-    "note": "三軸重評（RUBRIC 2026-11-01）：首張只出 MiniDisc 的專輯，Autechre 圈名盤；Warp 系 CD 再發；碎片隨機播放",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "note": "全池稽核 audit-20261102（方案 C）：隨機播放概念MiniDisc，Autechre圈；L4,114→3；概念極端但片段多可聽，4｜L=4114",
     "previous": {
-     "classic": 3,
-     "obscurity": 4,
+     "classic": 4,
+     "obscurity": 3,
      "accessibility": 5,
-     "source": "manual:avant-rubric",
-     "checkedAt": "2026-10-23T11:23:57Z",
-     "note": "機器基線 3/4/3（Last.fm listeners 4114）；主線：glitch／microsound／聲響藝術：無旋律、純音色與資料噪音→硬蕊5；冷門照 Last.fm",
-     "rarity": "epic"
+     "source": "manual:rerate-20261101",
+     "checkedAt": "2026-11-01T00:00:00Z",
+     "note": "三軸重評（RUBRIC 2026-11-01）：首張只出 MiniDisc 的專輯，Autechre 圈名盤；Warp 系 CD 再發；碎片隨機播放",
+     "rarity": "legendary"
     }
    },
-   "rarity": "legendary",
+   "rarity": "epic",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1056,7 +1068,7 @@
     "cardCatalog": false,
     "descriptionKv": false,
     "albumOverride": false,
-    "seedCards": false,
+    "seedCards": true,
     "apexPool": false
    }
   },
@@ -1090,22 +1102,22 @@
    "ratings": {
     "classic": 4,
     "obscurity": 4,
-    "accessibility": 5,
+    "accessibility": 4,
     "listeners": 182,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
-    "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽 ready → ≥4，L=182）3→4",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "note": "全池稽核 audit-20261102（方案 C）：Shepard 音心理聲學作品，刺激但有秩序；182 聽眾有串流→4｜L=182",
     "previous": {
      "classic": 4,
-     "obscurity": 3,
+     "obscurity": 4,
      "accessibility": 5,
-     "source": "manual:rerate-20261101",
-     "checkedAt": "2026-11-01T00:00:00Z",
-     "note": "三軸重評（RUBRIC 2026-11-01）：Schmickler 最受肯定的代表作（Risset 音高錯覺）；Mego 正規發行；電腦音樂",
-     "rarity": "epic"
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽 ready → ≥4，L=182）3→4",
+     "rarity": "legendary"
     }
    },
-   "rarity": "legendary",
+   "rarity": "epic",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1140,7 +1152,7 @@
     "cardCatalog": false,
     "descriptionKv": false,
     "albumOverride": false,
-    "seedCards": false,
+    "seedCards": true,
     "apexPool": false
    }
   },
@@ -1567,19 +1579,19 @@
    "ratings": {
     "classic": 5,
     "obscurity": 3,
-    "accessibility": 4,
+    "accessibility": 5,
     "listeners": 2874,
-    "source": "manual:rerate-20261101",
-    "checkedAt": "2026-11-01T00:00:00Z",
-    "note": "三軸重評（RUBRIC 2026-11-01）：美國 avant-prog 公認巔峰、RYM/ProgArchives 類型前段；Cuneiform 正規；複雜無調",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "note": "全池稽核 audit-20261102（方案 C）：RIO／avant-prog 頂峰之一，非殿堂；結構極複雜、無調段落多→5，可交 X 組看異端｜L=2874",
     "previous": {
-     "classic": 3,
-     "obscurity": 5,
+     "classic": 5,
+     "obscurity": 3,
      "accessibility": 4,
-     "source": "manual:avant-rubric",
-     "checkedAt": "2026-10-23T11:23:57Z",
-     "note": "機器基線 3/5/3（Last.fm listeners 2874）；主線：RIO／前衛搖滾：無調、拐拍、樂團編制仍有搖滾骨架→硬蕊4；冷門照 Last.fm",
-     "rarity": "epic"
+     "source": "manual:rerate-20261101",
+     "checkedAt": "2026-11-01T00:00:00Z",
+     "note": "三軸重評（RUBRIC 2026-11-01）：美國 avant-prog 公認巔峰、RYM/ProgArchives 類型前段；Cuneiform 正規；複雜無調",
+     "rarity": "legendary"
     }
    },
    "rarity": "legendary",
@@ -1615,7 +1627,7 @@
     "cardCatalog": false,
     "descriptionKv": false,
     "albumOverride": false,
-    "seedCards": false,
+    "seedCards": true,
     "apexPool": false
    }
   },

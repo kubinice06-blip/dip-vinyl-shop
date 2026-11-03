@@ -45,10 +45,21 @@
    },
    "rarity": "rare",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。L207有效，但壓量無據、無收藏圈聖杯地位依據；屬5星冷門，不到7",
+    "evidenceUrls": [
+     "https://www.last.fm/music/Spherical%20Objects/Past%20and%20Parcel",
+     "https://musicbrainz.org/release-group/57518956-9932-4066-99ee-6d51c2aadec7"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "整張專輯先做成一捲卡帶，曲序排好，交到團員手上。LTM 傳記頁引吉他手 John Bisset-Smith 的話：成品的歌與曲序，和那捲卡帶上的一模一樣。專輯連同一張七吋，十二首歌在一個十小時的錄音期裡一次錄完，只有人聲另外疊錄；從〈Born to Pay〉起，詞曲、人聲、吉他與封套概念全掛 Steve Solamar 一人，曼徹斯特的 Object Music 也是他辦的。隔年另出過一個重新混音的版本，沿用同一個目錄號，標籤從白底黑字換成黃底棕字。",
@@ -70,8 +81,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -265,10 +276,21 @@
    },
    "rarity": "epic",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。小廠／自發盤、聽眾<300，但壓量未見數百張以下的確據，也非收藏圈公認聖杯；只到 5",
+    "evidenceUrls": [
+     "https://www.last.fm/music/Indiscreet%20Music/Dubious%20Collaberations",
+     "https://musicbrainz.org/release-group/daa405ec-1174-4c1c-aca1-943e007b6854"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "曲目表就是一份錄音日誌：誰、拿什麼、在哪一年哪一座城鎮。有一段寫作「Section 13 : Solamar : Jawharp. Gosport 1971」。A 面十段、B 面十四段，地點從曼徹斯特標到 Ludlow 與 Chester，年份落在 1971 到 1976——那是素材錄下的年份，碟本身是 1979 年的。Solamar 的樂器欄從盤帶錄音機、Copycat 回聲機列到浴室與水箱；素材在 Prestwich 的 Graveyard Sounds 剪輯出來。",
@@ -287,8 +309,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -1134,23 +1156,24 @@
     "discogsReleaseId": "1071959"
    },
    "ratings": {
-    "classic": 4,
+    "classic": 3,
     "obscurity": 5,
     "accessibility": 2,
     "listeners": 256,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
     "previous": {
-     "classic": 3,
-     "obscurity": 4,
+     "classic": 4,
+     "obscurity": 5,
      "accessibility": 2,
-     "source": "manual:depth-rubric",
-     "checkedAt": "2026-08-31T00:00:00.000Z",
-     "rarity": "rare"
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：The Lines唯一LP、Acute考古重評的後龐克cult；L<1000無串流→5；dub味後龐克",
+     "rarity": "uncommon"
     },
-    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：The Lines唯一LP、Acute考古重評的後龐克cult；L<1000無串流→5；dub味後龐克"
+    "note": "全池稽核 audit-20261102（方案 C）：Acute Records 考古合輯已收錄並上串流→冷門4；不符流亡｜L=256"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1521,10 +1544,21 @@
    },
    "rarity": "uncommon",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。L46有效，Aardvark 在地合輯LP，有兩色原壓、壓量無據；5星",
+    "evidenceUrls": [
+     "https://www.last.fm/music/Various%20Artists/Bouquet%20of%20Steel",
+     "https://musicbrainz.org/release-group/44f0e628-6f75-4668-be93-8a7992414112"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "十五首歌、十五個樂團，隨片附一本十六頁的簡介小冊。編選掛 Marcus Featherby，他自己也製作了三軌。錄音地點逐軌登錄：Fairview、Cargo、Western Works、布拉福藝術中心的 Communication Centre，另有一軌由 Polydor 授權。開場是 Artery 的〈The Slide〉，Vendino Pact 那一軌的製作掛 Cabaret Voltaire。原盤有藍膠與黑膠兩種；這張雪菲爾的合輯至今沒有過授權再發。",
@@ -1544,8 +1578,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -1575,21 +1609,22 @@
    "ratings": {
     "classic": 2,
     "obscurity": 5,
-    "accessibility": 5,
+    "accessibility": 4,
     "listeners": 0,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
     "previous": {
      "classic": 2,
-     "obscurity": 4,
-     "accessibility": 4,
-     "source": "manual:depth-rubric",
-     "checkedAt": "2026-08-31T00:00:00.000Z",
-     "rarity": "uncommon"
+     "obscurity": 5,
+     "accessibility": 5,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：YHR 卡帶廠小品，評價記錄少；L=0 試聽無→5；改裝合成器整面噪音",
+     "rarity": "epic"
     },
-    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：YHR 卡帶廠小品，評價記錄少；L=0 試聽無→5；改裝合成器整面噪音"
+    "note": "全池稽核 audit-20261102（方案 C）：1980 卡帶、無串流；噪音僅 Discogs 風格欄，可信度不足以定異端｜L=0"
    },
-   "rarity": "epic",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1647,28 +1682,40 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 3,
+    "classic": 2,
     "obscurity": 5,
     "accessibility": 4,
     "listeners": 16,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
     "previous": {
-     "classic": 2,
-     "obscurity": 4,
+     "classic": 3,
+     "obscurity": 5,
      "accessibility": 4,
-     "source": "manual:depth-rubric",
-     "checkedAt": "2026-08-31T00:00:00.000Z",
-     "rarity": "uncommon"
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Cox 卡帶期較完整的個人作，部分收入 2014 選輯；L=16 試聽無→5；磁帶實驗環境",
+     "rarity": "epic"
     },
-    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Cox 卡帶期較完整的個人作，部分收入 2014 選輯；L=16 試聽無→5；磁帶實驗環境"
+    "note": "全池稽核 audit-20261102（方案 C）：YHR 自製 C60 卡帶；僅 2014 CD 選輯再收，無串流｜L=16"
    },
-   "rarity": "epic",
+   "rarity": "uncommon",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。自製卡帶壓量無據，2014已有CD選輯再收",
+    "evidenceUrls": [
+     "https://www.last.fm/music/Andrew%20Cox/Hydra",
+     "https://musicbrainz.org/release-group/656750c5-ec92-469d-9034-956c6be0cd61"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "器材清單的最後幾項是家用的手提卡帶機，和標著「很舊」的盤帶機。那份清單前面還有改裝過的 JEN SX2000、Kay 電吉他、簧風琴、幾顆踏板與一台 Melos 迴音器；credit 卻只有一行，合成器、電吉他、鋼琴、電子、人聲、效果與 tape 全掛 Andrew Cox 一人。十軌裡〈Athéa〉10 分 42 秒，末軌的標題自己標明是開場那首的重奏。David Elliott 在自己的網站上寫，那陣子他忙著做同人誌，Cox 則繼續個人生涯。",
@@ -1690,8 +1737,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -1737,10 +1784,21 @@
    },
    "rarity": "rare",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。小廠／自發盤、聽眾<300，但壓量未見數百張以下的確據，也非收藏圈公認聖杯；只到 5",
+    "evidenceUrls": [
+     "https://www.last.fm/music/MFH/Ground%20Zero",
+     "https://musicbrainz.org/release-group/f83da9cb-f99f-42f2-b0ee-02aceeb5d245"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "主事者自己的回憶：一間平房、一個星期的豆子與啤酒、一台新的 Korg MS10。那是 1981 年 4 月的康瓦爾。David Elliott 在自己的網站上還寫，YHR 是 York House Recordings 的縮寫，取自他與 Andrew Cox 當年校內宿舍的名字，開辦是為了發行 MFH 這個團的卡帶，1979 到 83 年間收的作者遍及歐洲，Cluster 與 Asmus Tietchens 都在。原盤說明欄只寫一句做法：全部現場彈奏、沒有疊錄。",
@@ -1763,8 +1821,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -1792,28 +1850,40 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
+    "classic": 3,
     "obscurity": 5,
-    "accessibility": 2,
+    "accessibility": 3,
     "listeners": 4,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
     "previous": {
      "classic": 2,
-     "obscurity": 4,
+     "obscurity": 5,
      "accessibility": 2,
-     "source": "manual:depth-rubric",
-     "checkedAt": "2026-08-31T00:00:00.000Z",
-     "rarity": "rare"
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Paul Nagle早期卡帶、無評論足跡；L<1000無串流→5；旋律型極簡合成器",
+     "rarity": "common"
     },
-    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Paul Nagle早期卡帶、無評論足跡；L<1000無串流→5；旋律型極簡合成器"
+    "note": "全池稽核 audit-20261102（方案 C）：1981 英國 YHR Tapes 卡帶自主發行，極小卡帶廠；僅實體授權再發，無串流，listeners 4｜L=4"
    },
-   "rarity": "common",
+   "rarity": "uncommon",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。L4有效，但壓量無據、無收藏圈聖杯地位依據；屬5星冷門，不到7",
+    "evidenceUrls": [
+     "https://www.last.fm/music/Paul%20Nagle/The%20Soft%20Room",
+     "https://musicbrainz.org/release-group/ca5f26cf-0bfa-433e-b498-eb8367b83d8a"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "他後來在自己的網站上寫：早期的專輯都出在卡帶上。那句話後面還跟著一個括號：還記得那種東西嗎。同一年他在另一家卡帶廠牌也出了《Alcove》與《Modulus》，這一捲則是 YHR 018，十一軌，從〈Wheel Of Fortune〉開場；曲目表上排著幾張塔羅大牌的名字，也排著小說裡的地名。Discogs 的風格欄只給一個字，Minimal，條目上沒有登錄任何 credit。他自己還寫，1983 年他在傳說中的第一屆 UK Electronica 演出過。",
@@ -1837,8 +1907,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -1884,10 +1954,21 @@
    },
    "rarity": "epic",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。L296有效，但壓量無據、無收藏圈聖杯地位依據；屬5星冷門，不到7",
+    "evidenceUrls": [
+     "https://www.last.fm/music/Storm%20Bugs/A%20Safe%20Substitute",
+     "https://musicbrainz.org/release-group/d78484e2-a66d-405d-a5da-7270a03c1a38"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "原始的盤帶毀於一場水災——這是後來那張黑膠在說明欄上寫的。那一版是照 Snatch Tapes 那捲卡帶直接複刻的。原捲的說明欄則寫，錄音在 1979 年底到 1980 年初的 New Cross 與 Paddington，材料整理自四軌與二軌兩種錄音。演出 credit 是三個名字並排在同一行器材上：VCS 3、吉他、Revox 盤帶、人聲與打擊，沒有分工；〈Blackheath Episode〉的編曲另外掛了 Claire Thomas 與 Susan Vezey。",
@@ -1910,8 +1991,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -2080,21 +2161,22 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 4,
+    "classic": 3,
     "obscurity": 5,
     "accessibility": 5,
     "listeners": 186,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
     "previous": {
-     "classic": 2,
-     "obscurity": 4,
-     "accessibility": 4,
-     "source": "manual:depth-rubric",
-     "checkedAt": "2026-08-31T00:00:00.000Z",
-     "rarity": "uncommon"
+     "classic": 4,
+     "obscurity": 5,
+     "accessibility": 5,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Bladder Flask唯一LP、2018考古再版；L<1000無串流→5；兩面各一首聲響拼貼",
+     "rarity": "legendary"
     },
-    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Bladder Flask唯一LP、2018考古再版；L<1000無串流→5；兩面各一首聲響拼貼"
+    "note": "全池稽核 audit-20261102（方案 C）：整面聲響拼貼工業；只有 Discogs 標籤，依據薄不定異端｜L=186"
    },
    "rarity": "legendary",
    "apexAssessment": {
@@ -2399,10 +2481,21 @@
    },
    "rarity": "common",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。L11有效，In Phaze 小廠LP，壓量無據、無收藏圈聖杯依據；5星",
+    "evidenceUrls": [
+     "https://www.last.fm/music/The%20Living%20Daylights/Any%20Way%20You%20Want",
+     "https://musicbrainz.org/release-group/7ada39f4-3805-4584-a2f4-6dce400719ff"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "In Phaze 是從 Ilford 一間自家花園小屋裡的行動錄音室起家的。廠牌條目這樣寫，並把那間錄音室登錄為 The Shed；目錄上卡帶與黑膠兩套編號並行，名單裡有 Bona Dish 與 Solid Space。這張碟的製作由廠牌主事者 Pat Bermingham 與樂團共掛，人聲掛 Amanda Bradshaw 與 Steve Piper，樂器那一欄只掛一個名字 Rolfe Kent。同年同廠另出的一張 12 吋上，有一首特長的混音用上了本張全部曲目的片段。",
@@ -2424,8 +2517,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -2612,10 +2705,21 @@
    },
    "rarity": "rare",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。L4有效，但2008/09再版與2022 Cold Spring 2CD；不到7",
+    "evidenceUrls": [
+     "https://www.last.fm/music/we%C2%B7be%C2%B7echo/Ceza%C2%B7Evi",
+     "https://musicbrainz.org/release-group/4b86379d-5e48-4dde-9e38-8c97a299c9cd"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "說明欄只做一件事：把十八首歌各自標上是哪一年錄的。1980、1981 與 1982 三個年份分散在兩面上，A 面從〈Sexuality〉開場。整捲的 credit 只有兩行——音樂與設計掛 We Be Echo，照片欄註明是 David Leadley 提供——不寫錄音室，也不寫器材。發行它的 Cause For Concern 由 Larry Peterson 經營，CFC 那一串編號幾乎清一色是卡帶。同年另有一捲名字相近、曲目卻另成一批的自製卡帶。",
@@ -2638,8 +2742,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -2901,10 +3005,21 @@
    },
    "rarity": "epic",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。L86有效，但壓量無據、無收藏圈聖杯地位依據；屬5星冷門，不到7",
+    "evidenceUrls": [
+     "https://www.last.fm/music/Sema/Notes%20From%20Underground",
+     "https://musicbrainz.org/release-group/28177306-07a3-4a66-a71b-5d74473c439a"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "廠牌條目上寫著：這個名字本來要叫 El Rey，打錯字才成了 Le Rey。經營這家廠牌的是 Robert Haigh，而這張碟的詞曲也掛他——演出那一欄同樣是他的名字，卻標成未掛名。三軌，A 面整面只有〈Song Of Solomon〉一首，15 分 05 秒；說明欄註明這一版沒有印曲長。製造與壓片分屬 Ellie Jay 與 Lyntone 兩家公司，兩家的流水號都留在刻紋裡。同一年他還有另一張 LP《Theme From Hunger》出在這裡。",
@@ -2926,8 +3041,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -2958,26 +3073,38 @@
    "ratings": {
     "classic": 3,
     "obscurity": 5,
-    "accessibility": 5,
+    "accessibility": 4,
     "listeners": 138,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
     "previous": {
-     "classic": 1,
-     "obscurity": 4,
+     "classic": 3,
+     "obscurity": 5,
      "accessibility": 5,
-     "source": "manual:depth-rubric",
-     "checkedAt": "2026-08-31T00:00:00.000Z",
-     "rarity": "uncommon"
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Metgumbnerbone主要LP、現場地點即興；L<1000無串流→5；廢墟即興聲響",
+     "rarity": "legendary"
     },
-    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Metgumbnerbone主要LP、現場地點即興；L<1000無串流→5；廢墟即興聲響"
+    "note": "全池稽核 audit-20261102（方案 C）：A-Mission 極小廠 1983 黑膠、廢墟現場即興，138 聽眾無再發；噪音依據薄｜L=138"
    },
-   "rarity": "legendary",
+   "rarity": "epic",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：accessibility=5（heresy 最低門檻），但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。listeners 138無再發，但壓量無據、無聖杯地位依據；噪音依據薄",
+    "evidenceUrls": [
+     "https://www.last.fm/music/Metgumbnerbone/Ligeliahorn",
+     "https://musicbrainz.org/release-group/ad97c0ef-03fe-41a5-bcc3-54ef841d6dec"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：accessibility=5（heresy 最低門檻），但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "這家廠牌的每一個目錄號都是一段聖經章節。這張碟拿到的是 REV 13:18——〈啟示錄〉裡那句「凡有聰明的，可以算計獸的數目」；廠牌由 Gordon A. Hope 經營。說明欄把做法寫得很明白：1983 年夏天錄於 Newcastle-upon-Tyne 的 Elswick，泰恩河岸邊一處荒廢已久的後工業場址，完全在現場即興與行動，地點本身與演出者、與他們的樂器同等地決定了結果。四軌全部無題，演出 credit 四個名字，一件樂器都沒有掛。",
@@ -2999,8 +3126,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {

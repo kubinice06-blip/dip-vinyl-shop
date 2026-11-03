@@ -352,24 +352,24 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 4,
+    "classic": 3,
     "obscurity": 4,
     "accessibility": 5,
     "listeners": 3,
-    "source": "manual:rerate-20261101",
-    "checkedAt": "2026-11-01T00:00:00Z",
-    "note": "三軸重評（RUBRIC 2026-11-01）：Zorn 首批獨奏薩克斯風代表錄音；Lumina 小廠、Tzadik 再發；極端延伸技法",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "note": "全池稽核 audit-20261102（方案 C）：Zorn 首批獨奏：鳥哨、嘶叫、碎片化；AllMusic 3 星、Penguin 3 星｜L=3",
     "previous": {
-     "classic": 3,
-     "obscurity": 5,
-     "accessibility": 3,
-     "source": "worker /album-rating（obscurity:lastfm）",
-     "checkedAt": "2026-10-23T15:35:15Z",
-     "note": "機器基線 3/5/3（Last.fm listeners 3）",
-     "rarity": "uncommon"
+     "classic": 4,
+     "obscurity": 4,
+     "accessibility": 5,
+     "source": "manual:rerate-20261101",
+     "checkedAt": "2026-11-01T00:00:00Z",
+     "note": "三軸重評（RUBRIC 2026-11-01）：Zorn 首批獨奏薩克斯風代表錄音；Lumina 小廠、Tzadik 再發；極端延伸技法",
+     "rarity": "legendary"
     }
    },
-   "rarity": "legendary",
+   "rarity": "epic",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -400,7 +400,7 @@
     "cardCatalog": false,
     "descriptionKv": false,
     "albumOverride": false,
-    "seedCards": false,
+    "seedCards": true,
     "apexPool": false
    }
   },
@@ -613,10 +613,21 @@
    },
    "rarity": "legendary",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "evidenceUrls": [],
-    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 108），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。Zorn 遊戲作品早期盤，碎片化即興，屬前衛即興 5，非 7",
+    "evidenceUrls": [
+     "https://www.last.fm/music/Eugene%20Chadbourne%20%26%20John%20Zorn/School",
+     "https://musicbrainz.org/release-group/0cb3cdea-75ad-419e-b271-02a38a3d9fa0"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 108），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "唱片署名兩個人，錄音裡演奏的有五位。Eugene Chadbourne 在 1970 年代中期落腳紐約，以吉他投入即興。盤中收的是 Zorn 遊戲曲〈Lacrosse〉的三個版本，1978 年 6 月 10 日由 WKCR 電台錄下。五位演奏者是 Abbott、Bradfield、Chadbourne、Smith 與 Zorn，由 Parachute 發行。",
@@ -640,7 +651,7 @@
     "descriptionKv": false,
     "albumOverride": false,
     "seedCards": false,
-    "apexPool": false
+    "apexPool": true
    }
   },
   {
@@ -673,23 +684,23 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 4,
+    "obscurity": 5,
     "accessibility": 5,
     "listeners": 12,
-    "source": "manual:rerate-20261101",
-    "checkedAt": "2026-11-01T00:00:00Z",
-    "note": "三軸重評（RUBRIC 2026-11-01）：Downtown 早期六重奏文獻；Ictus 小廠、2022 數位再發；自由即興",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "note": "全池稽核 audit-20261102（方案 C）：Zorn 早期 downtown 集體即興史料；12 聽眾無串流→5；依據不足入異端｜L=12",
     "previous": {
      "classic": 3,
-     "obscurity": 5,
-     "accessibility": 3,
-     "source": "worker /album-rating（obscurity:lastfm）",
-     "checkedAt": "2026-10-23T15:35:15Z",
-     "note": "機器基線 3/5/3（Last.fm listeners 12）",
-     "rarity": "uncommon"
+     "obscurity": 4,
+     "accessibility": 5,
+     "source": "manual:rerate-20261101",
+     "checkedAt": "2026-11-01T00:00:00Z",
+     "note": "三軸重評（RUBRIC 2026-11-01）：Downtown 早期六重奏文獻；Ictus 小廠、2022 數位再發；自由即興",
+     "rarity": "epic"
     }
    },
-   "rarity": "epic",
+   "rarity": "legendary",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -718,7 +729,7 @@
     "cardCatalog": false,
     "descriptionKv": false,
     "albumOverride": false,
-    "seedCards": false,
+    "seedCards": true,
     "apexPool": false
    }
   },
@@ -932,10 +943,22 @@
    },
    "rarity": "epic",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "evidenceUrls": [],
-    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 7），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。L7有效，Rift 單次LP，壓量無據；作者知名度高、非聖杯；5星",
+    "evidenceUrls": [
+     "https://www.last.fm/music/Tom%20Cora%2C%20David%20Moss/Cargo%20Cult%20Revival",
+     "https://musicbrainz.org/release-group/d75b1d7c-4f44-4fc9-810c-99f88bd947d4",
+     "https://www.discogs.com/release/1003533"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 7），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "Tom Cora 進了大學，才開始拉大提琴。這張二重奏的搭檔，是打擊兼人聲的 David Moss。Cora 1953 年生於維吉尼亞，拜 Casals 的學生為師；1979 年搬到紐約後，他跟 Chadbourne 把大提琴拉進了鄉村酒吧。Rift 在 1983 年推出兩人的合作，Cora 除了拉琴，還讓一些物件隨琴身共鳴；錄音在 OAO Studios，由 Martin Bisi 操刀。曲名帶著荒謬的諷刺，像〈Unipods Are Pacifists〉。",
@@ -959,7 +982,7 @@
     "descriptionKv": false,
     "albumOverride": false,
     "seedCards": false,
-    "apexPool": false
+    "apexPool": true
    }
   },
   {

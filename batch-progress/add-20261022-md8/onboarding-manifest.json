@@ -1914,22 +1914,22 @@
    "ratings": {
     "classic": 3,
     "obscurity": 5,
-    "accessibility": 4,
+    "accessibility": 3,
     "listeners": 267,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
-    "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽非 ready → 5，L=267）4→5",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "note": "全池稽核 audit-20261102（方案 C）：Silent Season CD 限 300，但 Bandcamp 有正式數位版，冷門度 4｜L=267",
     "previous": {
      "classic": 3,
-     "obscurity": 4,
+     "obscurity": 5,
      "accessibility": 4,
-     "source": "manual:rerate-20261101",
-     "checkedAt": "2026-11-01T00:00:00Z",
-     "note": "三軸重評（RUBRIC 2026-11-01）：馬爾他 Sonitus Eco 代表作，SS 限量 300 CD＋數位；全曲 10 分以上、工業影響暗黑 dub",
-     "rarity": "uncommon"
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽非 ready → 5，L=267）4→5",
+     "rarity": "epic"
     }
    },
-   "rarity": "epic",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2313,22 +2313,22 @@
    "ratings": {
     "classic": 2,
     "obscurity": 5,
-    "accessibility": 4,
+    "accessibility": 3,
     "listeners": 46,
-    "source": "manual:rerate-20261101",
-    "checkedAt": "2026-11-01T00:00:00Z",
-    "note": "三軸重評（RUBRIC 2026-11-01）：無廠牌自發 45 張 CD-R＋Bandcamp；田野錄音、噪訊、drone，Discogs 標 Non-Music",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "note": "全池稽核 audit-20261102（方案 C）：自發 CD-R 45 張，但有 Bandcamp 正式數位版，冷門度 4｜L=46",
     "previous": {
      "classic": 2,
      "obscurity": 5,
      "accessibility": 4,
-     "source": "worker /album-rating（obscurity:lastfm）",
-     "checkedAt": "2026-10-22T10:14:04Z",
-     "note": "機器基線 2/5/4（Last.fm listeners 46）",
+     "source": "manual:rerate-20261101",
+     "checkedAt": "2026-11-01T00:00:00Z",
+     "note": "三軸重評（RUBRIC 2026-11-01）：無廠牌自發 45 張 CD-R＋Bandcamp；田野錄音、噪訊、drone，Discogs 標 Non-Music",
      "rarity": "uncommon"
     }
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,

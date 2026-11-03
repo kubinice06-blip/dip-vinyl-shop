@@ -445,24 +445,24 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 5,
+    "classic": 4,
     "obscurity": 3,
     "accessibility": 3,
     "listeners": 51644,
-    "source": "manual:rerate-20261101",
-    "checkedAt": "2026-11-01T00:00:00Z",
-    "note": "三軸重評（RUBRIC 2026-11-01）：Pitchfork Sunday Review 稱傑作、Grouper 關鍵影響；Kranky 發行、2024 才首壓黑膠；吉他 drone",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "note": "全池稽核 audit-20261102（方案 C）：紐西蘭地下吉他氛圍名盤，cult 級｜L=51644",
     "previous": {
-     "classic": 3,
+     "classic": 5,
      "obscurity": 3,
-     "accessibility": 4,
-     "source": "worker /album-rating（obscurity:lastfm）",
-     "checkedAt": "2026-10-22T10:01:46Z",
-     "note": "機器基線 3/3/4（Last.fm listeners 51644）",
-     "rarity": "uncommon"
+     "accessibility": 3,
+     "source": "manual:rerate-20261101",
+     "checkedAt": "2026-11-01T00:00:00Z",
+     "note": "三軸重評（RUBRIC 2026-11-01）：Pitchfork Sunday Review 稱傑作、Grouper 關鍵影響；Kranky 發行、2024 才首壓黑膠；吉他 drone",
+     "rarity": "epic"
     }
    },
-   "rarity": "epic",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -3280,24 +3280,24 @@
     "visuallyVerified": true
    },
    "ratings": {
-    "classic": 5,
+    "classic": 4,
     "obscurity": 2,
     "accessibility": 2,
     "listeners": 284342,
-    "source": "manual:rerate-20261101",
-    "checkedAt": "2026-11-01T00:00:00Z",
-    "note": "三軸重評（RUBRIC 2026-11-01）：奧斯卡與金球獎最佳原創配樂，電影配樂里程碑；Null/Sony 大量流通；有機質感電子氛圍",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "note": "全池稽核 audit-20261102（方案 C）：奧斯卡最佳配樂、影響大，但配樂正典地位未到人人必提｜L=284342",
     "previous": {
-     "classic": 4,
+     "classic": 5,
      "obscurity": 2,
      "accessibility": 2,
-     "source": "worker /album-rating（obscurity:lastfm）",
-     "checkedAt": "2026-10-22T10:01:46Z",
-     "note": "機器基線 5/2/2（Last.fm listeners 284342）；主線：經典 5 不自動給，壓為 4",
+     "source": "manual:rerate-20261101",
+     "checkedAt": "2026-11-01T00:00:00Z",
+     "note": "三軸重評（RUBRIC 2026-11-01）：奧斯卡與金球獎最佳原創配樂，電影配樂里程碑；Null/Sony 大量流通；有機質感電子氛圍",
      "rarity": "uncommon"
     }
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,

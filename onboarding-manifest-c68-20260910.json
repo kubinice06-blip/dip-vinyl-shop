@@ -46,10 +46,22 @@
    },
    "rarity": "uncommon",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。傳99張但有Wooden Hill重發與2022 Cherry Red套盒（串流可得），不到7",
+    "evidenceUrls": [
+     "https://www.last.fm/music/Complex/The%20Way%20We%20Feel",
+     "https://musicbrainz.org/release-group/7870bfb0-b9a6-4c70-9520-02625ff27803",
+     "https://www.discogs.com/release/4253420"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "五月那張本來是拿去給大唱片公司聽的 demo，八月這張是第二張。1968 年成軍於 Blackpool，原盤是 Deroy 的 DER 671 S，錄音與壓片都由 Carnforth 的 Deroy Sound Service 一手包辦，封套是很薄的卡紙、開口開在上方。Steve Coe 的風琴與電鋼琴撐住和聲底，作曲掛他與 Bob Mitchell。Coe 後來在 1980 年代初共同組成 Monsoon，並與該團主唱 Sheila Chandra 結婚。",
@@ -71,8 +83,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   }
  ]

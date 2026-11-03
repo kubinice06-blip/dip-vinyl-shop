@@ -28,22 +28,23 @@
    },
    "ratings": {
     "classic": 5,
-    "obscurity": 3,
-    "accessibility": 1,
+    "obscurity": 2,
+    "accessibility": 2,
     "listeners": null,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
     "previous": {
      "classic": 5,
-     "obscurity": 4,
+     "obscurity": 3,
      "accessibility": 1,
-     "source": "manual:classical-rubric",
-     "checkedAt": "2026-08-31T00:00:00.000Z",
-     "rarity": "uncommon"
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Toscanini 羅馬三部曲經典錄音／RCA 流通 L 缺值判 3／標題音樂鮮明",
+     "rarity": "rare"
     },
-    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Toscanini 羅馬三部曲經典錄音／RCA 流通 L 缺值判 3／標題音樂鮮明"
+    "note": "全池稽核 audit-20261102（方案 C）：羅馬三部曲參考錄音；RCA 正規流通→冷門2；管弦大聲響，硬蕊2"
    },
-   "rarity": "rare",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -178,14 +179,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 5,
+    "classic": 4,
     "obscurity": 4,
     "accessibility": 2,
     "listeners": 4,
-    "source": "manual:classical-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:classical-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：Music & Arts 合輯；聽眾4＋ready→冷門4；舒伯特錄音重要但非殿堂｜L=4"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -244,23 +254,24 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 5,
+    "classic": 4,
     "obscurity": 5,
     "accessibility": 2,
     "listeners": 3,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
     "previous": {
      "classic": 5,
-     "obscurity": 4,
+     "obscurity": 5,
      "accessibility": 2,
-     "source": "manual:classical-rubric",
-     "checkedAt": "2026-08-31T00:00:00.000Z",
-     "rarity": "uncommon"
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：首部貝多芬協奏曲全集歷史里程碑／L3 unavailable 下限 5／古典協奏曲",
+     "rarity": "epic"
     },
-    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：首部貝多芬協奏曲全集歷史里程碑／L3 unavailable 下限 5／古典協奏曲"
+    "note": "全池稽核 audit-20261102（方案 C）：Pearl 小廠合輯；聽眾3＋unavailable 機械套下限→5；錄音本身重要但非殿堂｜L=3"
    },
-   "rarity": "epic",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -670,14 +681,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 5,
-    "obscurity": 4,
+    "classic": 4,
+    "obscurity": 2,
     "accessibility": 2,
     "listeners": 4,
-    "source": "manual:classical-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:classical-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：1958 Carnegie 現場名演，非正典核心；聽眾 4 是標題錯配→照錨點 RCA 正規→2；浪漫派協奏曲→2｜L=4"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1036,22 +1056,23 @@
    },
    "ratings": {
     "classic": 4,
-    "obscurity": 5,
+    "obscurity": 3,
     "accessibility": 2,
     "listeners": 1,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
     "previous": {
-     "classic": 5,
-     "obscurity": 4,
+     "classic": 4,
+     "obscurity": 5,
      "accessibility": 2,
-     "source": "manual:classical-rubric",
-     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：布達佩斯單聲道莫札特、受敬重非首選／L1 unavailable 下限 5／古典四重奏",
      "rarity": "uncommon"
     },
-    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：布達佩斯單聲道莫札特、受敬重非首選／L1 unavailable 下限 5／古典四重奏"
+    "note": "全池稽核 audit-20261102（方案 C）：Sony Classical 正規再版，聽眾1屬錯配；古典非遺珠級｜L=1"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1177,21 +1198,22 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 5,
+    "classic": 4,
     "obscurity": 3,
-    "accessibility": 2,
+    "accessibility": 3,
     "listeners": null,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
     "previous": {
      "classic": 5,
-     "obscurity": 4,
+     "obscurity": 3,
      "accessibility": 2,
-     "source": "manual:classical-rubric",
-     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Busch 舒伯特《死與少女》歷史標竿／EMI References、L 缺值判 3／浪漫四重奏",
      "rarity": "uncommon"
     },
-    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Busch 舒伯特《死與少女》歷史標竿／EMI References、L 缺值判 3／浪漫四重奏"
+    "note": "全池稽核 audit-20261102（方案 C）：歷史名演，非該曲公認單一首選"
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -1252,23 +1274,24 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 5,
-    "obscurity": 3,
+    "classic": 4,
+    "obscurity": 2,
     "accessibility": 2,
     "listeners": 2,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
     "previous": {
      "classic": 5,
-     "obscurity": 4,
+     "obscurity": 3,
      "accessibility": 2,
-     "source": "manual:classical-rubric",
-     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：四重奏錄音正典盤（Penguin 級）；L=2+ready 套下限4；印象派弦樂四重奏，易入；冷門度下限豁免：Last.fm 疑錯配",
      "rarity": "uncommon"
     },
-    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：四重奏錄音正典盤（Penguin 級）；L=2+ready 套下限4；印象派弦樂四重奏，易入；冷門度下限豁免：Last.fm 疑錯配"
+    "note": "全池稽核 audit-20261102（方案 C）：Philips 經典錄音；聽眾 2 為古典拆名疑錯配，不套下限；正規國際流通｜L=2"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1477,14 +1500,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 5,
-    "obscurity": 4,
+    "classic": 3,
+    "obscurity": 3,
     "accessibility": 2,
     "listeners": 0,
-    "source": "manual:classical-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:classical-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：選集箱盒，聽眾 0 視同缺值；非代表作｜L=0"
    },
-   "rarity": "uncommon",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1619,23 +1651,24 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 4,
+    "classic": 3,
     "obscurity": 5,
     "accessibility": 2,
     "listeners": 20,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
     "previous": {
      "classic": 4,
-     "obscurity": 4,
+     "obscurity": 5,
      "accessibility": 2,
-     "source": "manual:classical-rubric",
-     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Marian Anderson 歷史選集／L20 unavailable 下限 5／藝術歌曲",
      "rarity": "uncommon"
     },
-    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Marian Anderson 歷史選集／L20 unavailable 下限 5／藝術歌曲"
+    "note": "全池稽核 audit-20261102（方案 C）：古典 §0.7：Pearl 歷史錄音選輯，Anderson 錄音多有再版，非遺珠｜L=20"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1691,22 +1724,23 @@
    },
    "ratings": {
     "classic": 4,
-    "obscurity": 5,
+    "obscurity": 3,
     "accessibility": 2,
     "listeners": 48,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
     "previous": {
-     "classic": 5,
-     "obscurity": 4,
+     "classic": 4,
+     "obscurity": 5,
      "accessibility": 2,
-     "source": "manual:classical-rubric",
-     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Caruso 早期錄音全集（合輯）／L48 unavailable 下限 5／早期錄音歌劇詠嘆",
      "rarity": "uncommon"
     },
-    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Caruso 早期錄音全集（合輯）／L48 unavailable 下限 5／早期錄音歌劇詠嘆"
+    "note": "全池稽核 audit-20261102（方案 C）：Pearl 正規歷史錄音合輯；Caruso 聽眾數疑拆名錯配，照錨點 3｜L=48"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1983,23 +2017,24 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 5,
-    "obscurity": 3,
+    "classic": 4,
+    "obscurity": 2,
     "accessibility": 3,
     "listeners": 8515,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
     "previous": {
      "classic": 5,
-     "obscurity": 4,
-     "accessibility": 4,
-     "source": "manual:classical-rubric",
-     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "obscurity": 3,
+     "accessibility": 3,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：ABQ 晚期四重奏權威錄音／EMI 大廠、listeners 8.5k 不套下限／晚期四重奏需投入",
      "rarity": "epic"
     },
-    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：ABQ 晚期四重奏權威錄音／EMI 大廠、listeners 8.5k 不套下限／晚期四重奏需投入"
+    "note": "全池稽核 audit-20261102（方案 C）：曲目是正典，但此錄音只是眾多推薦版之一；EMI 大廠正規流通｜L=8515"
    },
-   "rarity": "epic",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2055,11 +2090,20 @@
    },
    "ratings": {
     "classic": 5,
-    "obscurity": 4,
+    "obscurity": 3,
     "accessibility": 4,
     "listeners": 232,
-    "source": "manual:classical-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "manual:classical-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "legendary"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：葛萊美與 Gramophone 年度唱片，但巴托克四重奏參考版有多家並立；DG 盤聽眾 232 屬錯配，冷門 4→3｜L=232"
    },
    "rarity": "legendary",
    "apexAssessment": {
@@ -2342,22 +2386,23 @@
    },
    "ratings": {
     "classic": 4,
-    "obscurity": 5,
+    "obscurity": 3,
     "accessibility": 2,
     "listeners": 5,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
     "previous": {
      "classic": 4,
-     "obscurity": 4,
+     "obscurity": 5,
      "accessibility": 2,
-     "source": "manual:classical-rubric",
-     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Celibidache EMI 慕尼黑系列要角；L=5+unavailable 套5；浪漫派交響曲，慢速",
      "rarity": "uncommon"
     },
-    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Celibidache EMI 慕尼黑系列要角；L=5+unavailable 套5；浪漫派交響曲，慢速"
+    "note": "全池稽核 audit-20261102（方案 C）：EMI 大廠慕尼黑系列，MB 題作 Symphonie No.5，聽眾數疑錯配；照錨點 3｜L=5"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2413,22 +2458,23 @@
    },
    "ratings": {
     "classic": 4,
-    "obscurity": 5,
+    "obscurity": 3,
     "accessibility": 1,
     "listeners": 66,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
     "previous": {
      "classic": 4,
-     "obscurity": 4,
+     "obscurity": 5,
      "accessibility": 1,
-     "source": "manual:classical-rubric",
-     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Matačić《風流寡婦》名版／L66 unavailable 下限 5／輕歌劇旋律",
      "rarity": "rare"
     },
-    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Matačić《風流寡婦》名版／L66 unavailable 下限 5／輕歌劇旋律"
+    "note": "全池稽核 audit-20261102（方案 C）：EMI 大廠名錄音，聽眾數疑古典拆名錯配，照錨點 3｜L=66"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2484,20 +2530,21 @@
    },
    "ratings": {
     "classic": 5,
-    "obscurity": 3,
+    "obscurity": 2,
     "accessibility": 3,
     "listeners": null,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
     "previous": {
      "classic": 5,
-     "obscurity": 4,
-     "accessibility": 2,
-     "source": "manual:classical-rubric",
-     "checkedAt": "2026-08-31T00:00:00.000Z",
-     "rarity": "uncommon"
+     "obscurity": 3,
+     "accessibility": 3,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Ferrier-Walter《大地之歌》歷史里程碑／Decca 流通、L 缺值判 3／長篇〈告別〉",
+     "rarity": "epic"
     },
-    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Ferrier-Walter《大地之歌》歷史里程碑／Decca 流通、L 缺值判 3／長篇〈告別〉"
+    "note": "全池稽核 audit-20261102（方案 C）：Walter/Ferrier 1952 Decca，公認經典、從未絕版；冷門 3→2"
    },
    "rarity": "epic",
    "apexAssessment": {
@@ -2634,20 +2681,21 @@
    },
    "ratings": {
     "classic": 5,
-    "obscurity": 3,
+    "obscurity": 2,
     "accessibility": 2,
     "listeners": null,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
     "previous": {
      "classic": 5,
-     "obscurity": 4,
+     "obscurity": 3,
      "accessibility": 2,
-     "source": "manual:classical-rubric",
-     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：ABM 蕭邦 DG 名盤、評論常列首選／DG 流通、L 缺值判 3／浪漫鋼琴",
      "rarity": "uncommon"
     },
-    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：ABM 蕭邦 DG 名盤、評論常列首選／DG 流通、L 缺值判 3／浪漫鋼琴"
+    "note": "全池稽核 audit-20261102（方案 C）：DG 蕭邦名錄音，評價極高但非跨來源人人必提；DG 正規流通→冷門2"
    },
    "rarity": "uncommon",
    "apexAssessment": {

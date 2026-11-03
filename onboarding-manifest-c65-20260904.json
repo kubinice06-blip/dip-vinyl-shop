@@ -532,20 +532,21 @@
    },
    "ratings": {
     "classic": 5,
-    "obscurity": 4,
+    "obscurity": 5,
     "accessibility": 5,
     "listeners": 2631,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
     "previous": {
-     "classic": 4,
+     "classic": 5,
      "obscurity": 4,
      "accessibility": 5,
-     "source": "manual:depth-rubric",
-     "checkedAt": "2026-08-31T00:00:00.000Z",
-     "rarity": "epic"
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：義大利 power electronics 里程碑、MB 最著名作；原盤 227 張、多次再發→4（L2631）；極端噪音",
+     "rarity": "legendary"
     },
-    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：義大利 power electronics 里程碑、MB 最著名作；原盤 227 張、多次再發→4（L2631）；極端噪音"
+    "note": "全池稽核 audit-20261102（方案 C）：power electronics 奠基；原盤 227 張私壓且無串流→冷門 4→5（下限 3 以上）｜L=2631"
    },
    "rarity": "legendary",
    "apexAssessment": {
@@ -619,10 +620,22 @@
    },
    "rarity": "legendary",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：accessibility=5（heresy 最低門檻），但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "heresy",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為異端（該軸 7 星）。首張噪音 LP 之一、『連反藝術也拒絕』的反音樂宣言，金屬刮擦無樂器；反音樂里程碑級",
+    "evidenceUrls": [
+     "https://www.vinyl-on-demand.com/The_New_Blockaders-1-41.htm",
+     "https://nevolume.co.uk/music/artist-spotlight/artist-spotlight-the-new-blockaders/",
+     "https://www.discogs.com/master/155242"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：accessibility=5（heresy 最低門檻），但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "淡粉色的標籤上透著反過來的版權字樣：那是別張唱片的標籤翻面來用。1982 年 12 月的英國原盤沒有廠牌也沒有編號，發行 100 張，裝在素白、中央挖孔並帶拇指缺口的內袋裡；全碟唯一的圖像與文字印在一張雙面 A4 紙上。這個標題是發行前才決定的，而且沒有印在封面上，兩面都沒有曲名。大約 10 張隨附一件手工製作的 Anti-LP。錄音是兩兄弟 Richard 與 Phillip Rupenus 在一間棚子裡用來歷不明的器具做的，聲源包含壞掉的擴大機與廢金屬。",
@@ -647,8 +660,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -1265,22 +1278,23 @@
    },
    "ratings": {
     "classic": 4,
-    "obscurity": 5,
+    "obscurity": 4,
     "accessibility": 3,
     "listeners": 14,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
     "previous": {
-     "classic": 2,
-     "obscurity": 4,
-     "accessibility": 4,
-     "source": "manual:depth-rubric",
-     "checkedAt": "2026-08-31T00:00:00.000Z",
-     "rarity": "uncommon"
+     "classic": 4,
+     "obscurity": 5,
+     "accessibility": 3,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：二人代表作、ReR 發行；L14 試聽無→5；第四世界取樣拼貼",
+     "rarity": "epic"
     },
-    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：二人代表作、ReR 發行；L14 試聽無→5；第四世界取樣拼貼"
+    "note": "全池稽核 audit-20261102（方案 C）：雙名斜線藝人疑拆分致聽眾數錯配；ReR 正規獨立廠，2018 有授權重製，給 4｜L=14"
    },
-   "rarity": "epic",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1781,22 +1795,23 @@
    },
    "ratings": {
     "classic": 4,
-    "obscurity": 5,
+    "obscurity": 4,
     "accessibility": 2,
     "listeners": 8,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
     "previous": {
-     "classic": 3,
-     "obscurity": 4,
+     "classic": 4,
+     "obscurity": 5,
      "accessibility": 2,
-     "source": "manual:depth-rubric",
-     "checkedAt": "2026-08-31T00:00:00.000Z",
-     "rarity": "rare"
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：KPM 圖書館名盤（含 Funky Fanfare），Be With 再版；L8 試聽無→5；短 beat 襯樂",
+     "rarity": "uncommon"
     },
-    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：KPM 圖書館名盤（含 Funky Fanfare），Be With 再版；L8 試聽無→5；短 beat 襯樂"
+    "note": "全池稽核 audit-20261102（方案 C）：KPM 罐頭音樂目錄已數位化；8 聽眾係掛名拆分疑錯配｜L=8"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2963,19 +2978,20 @@
    "ratings": {
     "classic": 4,
     "obscurity": 5,
-    "accessibility": 5,
+    "accessibility": 4,
     "listeners": 68,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
     "previous": {
      "classic": 4,
-     "obscurity": 4,
-     "accessibility": 4,
-     "source": "manual:depth-rubric",
-     "checkedAt": "2026-08-31T00:00:00.000Z",
-     "rarity": "epic"
+     "obscurity": 5,
+     "accessibility": 5,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：GRM 系統主編 Bayle 重要作；L68 試聽無→5；聲響音樂",
+     "rarity": "legendary"
     },
-    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：GRM 系統主編 Bayle 重要作；L68 試聽無→5；聲響音樂"
+    "note": "全池稽核 audit-20261102（方案 C）：INA-GRM acousmatic代表作之一；電聲音響抽象4；L68無串流→5｜L=68"
    },
    "rarity": "legendary",
    "apexAssessment": {

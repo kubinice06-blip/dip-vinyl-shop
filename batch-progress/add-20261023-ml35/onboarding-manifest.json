@@ -33,24 +33,24 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 5,
+    "classic": 4,
     "obscurity": 2,
-    "accessibility": 2,
+    "accessibility": 1,
     "listeners": 278486,
-    "source": "manual:rerate-20261101",
-    "checkedAt": "2026-11-01T00:00:00Z",
-    "note": "三軸重評（RUBRIC 2026-11-01）：1001 Albums 收錄，alt-country／慢核原型；RCA 全球發行白金；教堂殘響慢板輕唱",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "note": "全池稽核 audit-20261102（方案 C）：樂團代表作，單麥克風教堂錄音傳奇；非 alt-country 首要正典｜L=278486",
     "previous": {
-     "classic": 4,
+     "classic": 5,
      "obscurity": 2,
      "accessibility": 2,
-     "source": "worker /album-rating（obscurity:lastfm）",
-     "checkedAt": "2026-10-23T13:22:37Z",
-     "note": "機器基線 5/2/2（Last.fm listeners 278486）；主線：經典 5 不自動給，壓為 4",
+     "source": "manual:rerate-20261101",
+     "checkedAt": "2026-11-01T00:00:00Z",
+     "note": "三軸重評（RUBRIC 2026-11-01）：1001 Albums 收錄，alt-country／慢核原型；RCA 全球發行白金；教堂殘響慢板輕唱",
      "rarity": "uncommon"
     }
    },
-   "rarity": "uncommon",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -611,24 +611,24 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 5,
+    "classic": 4,
     "obscurity": 2,
     "accessibility": 1,
     "listeners": 51516,
-    "source": "manual:rerate-20261101",
-    "checkedAt": "2026-11-01T00:00:00Z",
-    "note": "三軸重評（RUBRIC 2026-11-01）：生涯巔峰，葛萊美年度專輯入圍、Mojo 五星、雙白金；Sire 大廠；cabaret 抒情",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "note": "全池稽核 audit-20261102（方案 C）：藝人代表作、Grammy 得獎，但非成人抒情場景正典→4｜L=51516",
     "previous": {
-     "classic": 4,
-     "obscurity": 3,
-     "accessibility": 3,
-     "source": "manual:main-line",
-     "checkedAt": "2026-10-23T13:22:37Z",
-     "note": "機器基線 3/3/3（Last.fm listeners 51516）；主線：〈Constant Craving〉葛萊美最佳女流行歌手演唱、專輯入圍年度專輯、RIAA 雙白金、《1001 Albums》；主線評 4",
-     "rarity": "uncommon"
+     "classic": 5,
+     "obscurity": 2,
+     "accessibility": 1,
+     "source": "manual:rerate-20261101",
+     "checkedAt": "2026-11-01T00:00:00Z",
+     "note": "三軸重評（RUBRIC 2026-11-01）：生涯巔峰，葛萊美年度專輯入圍、Mojo 五星、雙白金；Sire 大廠；cabaret 抒情",
+     "rarity": "rare"
     }
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
