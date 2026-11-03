@@ -1,5 +1,14 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-03｜dip-vinyl-shop｜三軸重評第三輪 W2：s04／s05／s06 verdicts 交齊（750 張）
+
+- **範圍**：9 月前入庫、無評分來源紀錄的早期卡 s04–s06（Billy Joel → Current 93）。先跑 `fetch-listeners.mjs` 補 `listenersKV`，15 段 Opus 代理評分，主線每段抽 5 張以上覆核，退回 0 段，主線改 9 筆。只交 verdicts，未動 seed／manifest／card_catalog。
+- **新舊分布（1/2/3/4/5）**：經典度 22/158/318/252/0 → 5/79/252/319/95；冷門度 98/166/266/146/74 → 83/363/249/55/0；硬蕊度 259/280/113/98/0 → 279/286/117/67/1。
+- **主線口徑**：5 分要有正典榜單依據，銷量、冠軍、葛萊美年度專輯只算 4（Don't Be Cruel、Night Moves、Blank Banshee 0、...Baby One More Time、Let My Children Hear Music、Christopher Cross 5→4）；「評價平淡」是 2 不是 1（Chicago《Twenty 1》）；無串流只是查不到、非確知私壓的冷門 5 改 4（郭芝苑、呂泉生）。
+- **錯配（不套下限）**：古典盤名拆分、卷次／掛名／標點拆名，`why` 皆註明，名單在各 `sNN.summary.md`，給套用工作階段過 `MISMATCH`。
+- **主要檔案**：`batch-progress/rerate-20261103/verdicts/{s04,s05,s06}-*.json`、`{s04,s05,s06}.summary.md`、`mainline-W2.tsv`、`shards/s0{4,5,6}.json`（listenersKV）、`PLAN.md`。
+- **驗證**：三片合併檢查全過（每 key 一筆、無缺無多、三軸 1–5 整數）；冷門度下限機械檢查違規者全為已註明的疑錯配。
+
 ### 2026-11-03｜dip-vinyl-shop｜三軸重評第三輪 W6：s16／s17／s18 verdicts 交齊（750 張）
 
 - **範圍**：s16–s18（Lil Baby → Myung-Whun Chung）。先跑 `fetch-listeners.mjs` 補 `listenersKV`（有效值 720／750），15 段 Opus 代理評分，主線每段抽 5 張＋全查經典度 5 分清單與下限缺口，退回 0 段，主線改 7 筆。
