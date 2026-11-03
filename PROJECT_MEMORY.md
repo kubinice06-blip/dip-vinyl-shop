@@ -4,7 +4,7 @@
 
 - **範圍**：9 月前入庫、無評分來源紀錄的早期卡，s13–s15 各 250 張。先跑 `fetch-listeners.mjs` 補 listeners（有效值 241／237／237），15 段 Opus 代理判定，主線每段抽 5 張＋逐張看 1／2／5 分與冷門 1。退回 0 段，主線改 24 筆。只交 verdicts，未動 seed／manifest／card_catalog。
 - **三軸新舊分布（1/2/3/4/5）**：經典度 16/137/332/265/0 → 2/71/268/326/83；冷門度 104/180/215/172/79 → 66/347/268/69/0；硬蕊度 244/271/147/88/0 → 243/297/171/38/1。
-- **主線口徑**：冷門 1 只給入門名單常客，主流藝人非代表作改 2（20 筆，集中在 s14 100–150 段）；近年作（Jlin、Lankum、Southeastern）寫不出正典依據的經典 5→4。逐筆見 `verdicts/W5-mainline.tsv`。
+- **主線口徑**：冷門 1 只給入門名單常客，主流藝人非代表作改 2（21 筆，集中在 s14 100–150 段）；近年作（Jlin、Lankum、Southeastern）寫不出正典依據的經典 5→4。逐筆見 `verdicts/W5-mainline.tsv`。
 - **疑錯配**：冷門度低於 listeners 下限 44 張，皆古典盤名、掛名／合名、撇號拼法、華語拆名，`why` 已註明，留給套用工作階段機械檢查。
 - **主要檔案**：`batch-progress/rerate-20261103/verdicts/s1{3,4,5}-*.json`、`s1{3,4,5}.summary.md`、`W5-mainline.tsv`、`shards/s1{3,4,5}.json`（listenersKV）、`PLAN.md`。
 - **驗證**：三片合併檢查全過（每 key 一筆、無缺無多、三軸 1–5 整數；keep 1：Kim Petras《Detour》）。
