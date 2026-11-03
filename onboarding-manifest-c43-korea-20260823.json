@@ -473,10 +473,11 @@
         "classic": 4,
         "obscurity": 5,
         "accessibility": 3,
-        "listeners": null,
+        "listeners": 148,
         "source": "manual:genre-anchors",
         "checkedAt": "2026-08-23T04:08:31Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；二〇〇七年韓國大眾音樂百大名盤第六十九，韓國 acid folk 的國際代表作，但發行量極小、聽眾圈窄"
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；二〇〇七年韓國大眾音樂百大名盤第六十九，韓國 acid folk 的國際代表作，但發行量極小、聽眾圈窄",
+        "listenersSource": "worker /album-rating（apex-rebalance-20261103 Q2 補值）"
       },
       "rarity": "epic",
       "apexAssessment": {

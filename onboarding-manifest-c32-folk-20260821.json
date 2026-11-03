@@ -22321,10 +22321,11 @@
         "classic": 4,
         "obscurity": 5,
         "accessibility": 3,
-        "listeners": null,
+        "listeners": 55,
         "source": "manual:genre-anchors",
         "checkedAt": "2026-08-21T12:42:23Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；發行即遭文化公報部下令回收的禁盤，韓國迷幻民謠傳說級作品，但未入百大名盤；原盤存量與能見度都屬收藏家領域，聲響比首張更陰鬱粗礪。"
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；發行即遭文化公報部下令回收的禁盤，韓國迷幻民謠傳說級作品，但未入百大名盤；原盤存量與能見度都屬收藏家領域，聲響比首張更陰鬱粗礪。",
+        "listenersSource": "worker /album-rating（apex-rebalance-20261103 Q2 補值）"
       },
       "rarity": "epic",
       "apexAssessment": {

@@ -108,7 +108,10 @@ if (process.argv.includes('--manifest')) {
           if (a.identity?.rgMbid) u.push(`https://musicbrainz.org/release-group/${a.identity.rgMbid}`);
           if (a.cover?.discogsReleaseId) u.push(`https://www.discogs.com/release/${a.cover.discogsReleaseId}`);
           return u; };
-        if (curTier === nw.tier && a.rarity === rar && pubOk) continue;
+        // 新流亡：manifest 沒有 listeners 的，補 Q2 從 worker /album-rating 取回的值（gate 要求 pearl 有整數 listeners）
+        const lsOk = !(nw.tier === 'pearl' && !Number.isInteger(r.listeners) && Number.isInteger(x.listeners));
+        if (!lsOk) { r.listeners = x.listeners; r.listenersSource = 'worker /album-rating（apex-rebalance-20261103 Q2 補值）'; }
+        if (curTier === nw.tier && a.rarity === rar && pubOk) { if (!lsOk) n++; continue; }
         if (!pubOk) { a.published.seedCards = !nw.tier; a.published.apexPool = !!nw.tier; }
         if (curTier !== nw.tier) {
           const prev = { eligible: !!ap.eligible, tier: ap.tier ?? null, reason: ap.reason ?? null, evidenceUrls: ap.evidenceUrls || [], ...(ap.source ? { source: ap.source } : {}) };
