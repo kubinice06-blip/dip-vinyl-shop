@@ -1,5 +1,14 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-03｜dip-vinyl-shop｜三軸重評第三輪 W9：s25／s26／s27 verdicts 交齊（750 張）
+
+- **範圍**：第三輪（早期無評分來源紀錄卡）s25–s27，各 250 張，15 段 Opus 代理。先跑 `fetch-listeners.mjs` 補 listenersKV（缺值 9）。只交 verdicts，未動 seed／manifest／card_catalog。
+- **三軸新舊分布（1/2/3/4/5）**：經典度 13/132/319/286/0 → 0/89/253/322/86；冷門度 85/182/238/170/75 → 72/371/257/49/1；硬蕊度 292/292/90/76/0 → 299/293/115/40/3。
+- **主線**：每段抽 5 張以上覆核，退回 0 段，改 3 張（Tate McRae《The One Day LP》經典 1→2；Adès《Asyla》、Beecham《Delius》古典盤名錯配冷門 4→3）。
+- **待套用注意**：冷門度低於下限 26 張全是聽眾數錯配（彎引號／省略號拆名、古典曲目式盤名），名單在各片 summary；Tamia《Tamia》年份 1978 應為 1998。
+- **主要檔案**：`batch-progress/rerate-20261103/verdicts/{s25,s26,s27}-*.json`、`{s25,s26,s27}.summary.md`、`shards/s2{5,6,7}.json`（listenersKV）、`PLAN.md`。
+- **驗證**：三片合併檢查全過（每 key 一筆、無缺無多、三軸皆 1–5 整數）。
+
 ### 2026-11-02｜dip-vinyl-shop｜頂點 7 星重審 V1：Z01／Z02／Z03 verdicts 交齊（702 張）
 
 - **範圍**：Z01–Z03 全為 A 組現有頂點卡（無新候選）。15 段 Opus 代理，主線每段抽查，退回 0 段，主線改 38 筆。只交 verdicts，未動 seed／manifest／card_catalog／album_overrides。
