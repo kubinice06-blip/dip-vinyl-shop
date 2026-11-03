@@ -1,5 +1,17 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-03｜dip-vinyl-shop｜殿堂擴充到 303 定案＋重複卡合併（白色專輯、Jazzmatazz）
+
+- **店主**：殿堂太少，要再挑一輪到 300，看完提案後修改兩輪才定案。
+- **內容**：
+  - 新增 133 張殿堂，全為池中現有卡。
+  - Miles Davis 例外可有兩張：《Kind of Blue》＋《In a Silent Way》。
+  - 華語增至 31 張；爵士多 14 張；嘻哈加 Slum Village《Fan-Tas-Tic, Vol. 1》、Guru《Jazzmatazz, Vol. 1》。
+  - 林強指定用《娛樂世界》。
+- **同批**：合併池中重複卡——白色專輯兩筆、Jazzmatazz 兩筆。
+- **主要檔案**：`batch-progress/apex-rebalance-20261103/HALL-EXPANSION.md`、`hall-expansion.json`。
+- **驗證**：133 張都在池中，原本都不是頂點卡；除 Miles Davis 外，藝人都還沒有殿堂卡。
+
 ### 2026-11-03｜dip-vinyl-shop｜頂點重整套用：202 筆寫進 seed／manifest／card_catalog（殿堂 170／流亡 254／異端 85）
 
 - **範圍**：`decisions-q1.json`（111）＋`decisions-q2.json`（91）合併 202 筆，key 不重複、`from` 全等於 seed 現值。只動 tier：殿堂→一般 37、流亡→一般 25、異端→一般 13、一般→殿堂 36、一般→異端 44、一般→流亡 47。
