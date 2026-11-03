@@ -3,8 +3,8 @@
 > 這份是產出物，由 `node scripts/render-discogs-registry.mjs` 從
 > `data/discogs-cover-registry.json` 產生。**要改狀態請改 JSON**，不要改這份。
 
-共 **547** 張走 ALBUM_ONBOARDING §4 的 `discogs` 封面來源（待看圖 241、已核可 305、已退回 1）。
-最後更新：2026-11-01
+共 **579** 張走 ALBUM_ONBOARDING §4 的 `discogs` 封面來源（待看圖 241、已核可 337、已退回 1）。
+最後更新：2026-11-03
 
 **收錄規則**：藝人與盤名相符只是入場券，還要在年份／廠牌／目錄號裡至少對上兩項；
 `matchedOn` 欄記的就是實際對上哪幾項。圖片沿用 Discogs 圖床網址，
@@ -625,12 +625,59 @@
 | The Super Trio 《Birthday Party》 | [#5539362](https://www.discogs.com/release/5539362) | 1987 | Krém | SLPX 37047 | Discogs master 3279115 的版本、主線目視與盤名相符 | ok |
 | Tomsits Jazz Group 《Álom És Valóság (Dream And Reality)》 | [#16040421](https://www.discogs.com/release/16040421) | 1978 | Pepita | SLPX 17549 | Discogs master 321004 的版本、主線目視與盤名相符 | ok |
 
+## add-20261101-eb3（7 張）
+
+| 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
+|---|---|---:|---|---|---|---|
+| Andrzej Kurylewicz Quintet 《10+8》 | [#685539](https://www.discogs.com/release/685539) | 1968 | Polskie Nagrania Muza | XL 0439 | Discogs master 295407 的版本、主線目視與盤名相符 | ok |
+| Andrzej Przybielski 《W sferze dotyku》 | [#1356396](https://www.discogs.com/release/1356396) | 1984 | Alma Art | Płyta nr 004 | Discogs master 2115562 的版本、主線目視與盤名相符 | ok |
+| Krzysztof Ścierański 《Bass Line》 | [#1708585](https://www.discogs.com/release/1708585) | 1983 | PolJazz | PSJ-119 | Discogs master 300734 的版本、主線目視與盤名相符 | ok |
+| Marek Bliziński 《The Wave》 | [#2315706](https://www.discogs.com/release/2315706) | 1980 | Poljazz | PSJ-92 | Discogs master 302210 的版本、主線目視與盤名相符 | ok |
+| Wanda Warska 《Somnambulicy》 | [#12625146](https://www.discogs.com/release/12625146) | 1961 | Polskie Nagrania Muza | L 0348 | Discogs master 1434460 的版本、主線目視與盤名相符 | ok |
+| Wojciech Karolak, Michał Urbaniak & Czesław Bartkowski 《Moving South》 | [#3252185](https://www.discogs.com/release/3252185) | 1973 | Pronit | Z-SXL 0551 | Discogs master 389551 的版本、主線目視與盤名相符 | ok |
+| Zbigniew Namysłowski Modern Jazz Quartet 《Lola》 | [#3282923](https://www.discogs.com/release/3282923) | 1964 | Decca | LK 4644 | Discogs master 322720 的版本、主線目視與盤名相符 | ok |
+
+## add-20261101-eb4（24 張）
+
+| 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
+|---|---|---:|---|---|---|---|
+| Džässkvartett «Tallinn» 《Džässkvartett «Tallinn»》 | [#11814346](https://www.discogs.com/release/11814346) | 1983 | Мелодия | С60 19783 007 | Discogs master 816329 的版本、主線目視與盤名相符 | ok |
+| Ensemble Studio 4 (Ernst-Ludwig Petrowsky) 《Jazz Mit Dem Ensemble Studio 4》 | [#3638947](https://www.discogs.com/release/3638947) | 1969 | AMIGA | 8 55 187 | Discogs master 652639 的版本、主線目視與盤名相符 | ok |
+| Friedhelm Schönfeld 《Friedhelm Schönfeld》 | [#584224](https://www.discogs.com/release/584224) | 1978 | AMIGA | 8 55 628 | 唯一版本、主線目視與盤名相符 | ok |
+| Günter Sommer 《Hörmusik》 | [#771039](https://www.discogs.com/release/771039) | 1980 | FMP | FMP 0790 | Discogs master 194390 的版本、主線目視與盤名相符 | ok |
+| Manfred Schulze Bläserquintett 《Viertens》 | [#2846295](https://www.discogs.com/release/2846295) | 1988 | FMP | FMP 1230 | Discogs master 1735542 的版本、主線目視與盤名相符 | ok |
+| Modern Jazz Big Band 65 《Modern Jazz Big Band 65》 | [#985367](https://www.discogs.com/release/985367) | 1966 | AMIGA | 8 50 054 | Discogs master 1246969 的版本、主線目視與盤名相符 | ok |
+| Petras Vyšniauskas Quartet 《Ieškojimai ir atradimai》 | [#2962234](https://www.discogs.com/release/2962234) | 1984 | Мелодия | С60 21387 001 | Discogs master 386535 的版本、主線目視與盤名相符 | ok |
+| Rolf Kühn Quintett 《Solarius》 | [#2662491](https://www.discogs.com/release/2662491) | 1965 | AMIGA | 8 50 046 | Discogs master 516294 的版本、主線目視與盤名相符 | ok |
+| Tiit Paulus 《Tiit Paulus ja sõbrad》 | [#3888435](https://www.discogs.com/release/3888435) | 1981 | Мелодия | С60—15457-8 | Discogs master 472651 的版本、主線目視與盤名相符 | ok |
+| Ulrich Gumpert 《'N Tango für Gitti》 | [#2242469](https://www.discogs.com/release/2242469) | 1984 | AMIGA | 8 56 073 | Discogs master 487584 的版本、主線目視與盤名相符 | ok |
+| Ulrich Gumpert Workshop Band 《Ulrich Gumpert Workshop Band》 | [#522316](https://www.discogs.com/release/522316) | 1980 | AMIGA | 8 55 753 | Discogs master 491848 的版本、主線目視與盤名相符 | ok |
+| Uschi Brüning 《Uschi Brüning》 | [#519530](https://www.discogs.com/release/519530) | 1982 | AMIGA | 8 55 896 | Discogs master 837293 的版本、主線目視與盤名相符 | ok |
+| Uschi Brüning & Ernst-Ludwig Petrowsky 《Kontraste》 | [#2370557](https://www.discogs.com/release/2370557) | 1988 | AMIGA | 8 56 261 | Discogs master 471264 的版本、主線目視與盤名相符 | ok |
+| Алексей Кузнецов, Николай Громин 《Джанго》 | [#3752143](https://www.discogs.com/release/3752143) | 1978 | Мелодия | 33 С 60—11247-48 | Discogs master 458682 的版本、主線目視與盤名相符 | ok |
+| Архангельск 《Призраки старого города》 | [#3088180](https://www.discogs.com/release/3088180) | 1990 | Мелодия | С60 28963 004 | Discogs master 383697 的版本、主線目視與盤名相符 | ok |
+| ВИА Севиль 《Севиль》 | [#5241431](https://www.discogs.com/release/5241431) | 1978 | Мелодия | 33 С60-10157-58 | Discogs master 696229 的版本、主線目視與盤名相符 | ok |
+| Владимир Тарасов 《Atto》 | [#6633011](https://www.discogs.com/release/6633011) | 1986 | Мелодия | С60 23565 004 | Discogs master 816461 的版本、主線目視與盤名相符 | ok |
+| Владимир Чекасин 《Prisiminimai》 | [#1614497](https://www.discogs.com/release/1614497) | 1986 | Мелодия | С60 23447 000 | Discogs master 571676 的版本、主線目視與盤名相符 | ok |
+| Джаз-хорал Александра Киладзе 《Джаз-хорал Александра Киладзе》 | [#5324042](https://www.discogs.com/release/5324042) | 1987 | Мелодия | С60 26343 003 | Discogs master 3568505 的版本、主線目視與盤名相符 | ok |
+| Джазовый ансамбль Игоря Бриля 《Утро Земли》 | [#3846778](https://www.discogs.com/release/3846778) | 1978 | Мелодия | 33 С60-11295-96 | Discogs master 468140 的版本、主線目視與盤名相符 | ok |
+| Каданс 《Иванушка-дурачок》 | [#3546960](https://www.discogs.com/release/3546960) | 1982 | Мелодия | C60—17435-6 | Discogs master 582860 的版本、主線目視與盤名相符 | ok |
+| Константин Петросян, Татевик Оганесян, Биг-бэнд Владимира Чекасина 《Концерт для голоса и оркестра》 | [#8223014](https://www.discogs.com/release/8223014) | 1986 | Мелодия | С60 24479 009 | Discogs master 523201 的版本、主線目視與盤名相符 | ok |
+| Лембит Саарсалу, Леонид Винцкевич 《Джаз вдвоем》 | [#8233305](https://www.discogs.com/release/8233305) | 1986 | Мелодия | A60 00219 004 | Discogs master 970402 的版本、主線目視與盤名相符 | ok |
+| Леонид Чижик 《Reminiscences》 | [#3985641](https://www.discogs.com/release/3985641) | 1981 | Мелодия | С 60—16155-8 | Discogs master 485894 的版本、主線目視與盤名相符 | ok |
+
 ## add-20261101-eb5（2 張）
 
 | 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
 |---|---|---:|---|---|---|---|
 | Elek Bacsik 《Bird and Dizzy: A Musical Tribute》 | [#2188803](https://www.discogs.com/release/2188803) | 1975 | Flying Dutchman | BDL1-1082 | Discogs master 2464921 的主版本、主線目視與盤名相符 | ok |
 | Miroslav Vitous 《Majesty Music》 | [#3749325](https://www.discogs.com/release/3749325) | 1976 | Arista | AL 4099 | Discogs master 284896 的主版本、主線目視與盤名相符 | ok |
+
+## add-20261103（1 張）
+
+| 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
+|---|---|---:|---|---|---|---|
+| 濁水溪公社 《台客的復仇》 | [#4813793](https://www.discogs.com/release/4813793) | 1999 | Keboyin Music（喜樂音） | 99142 | 條碼 4719260991428（同 MB release f174cde8）、年份 1999、18 軌曲目逐首相符、主線目視：L.T.K. C 標誌＋腦／膀胱插畫 | ok |
 
 ## c49（3 張）
 

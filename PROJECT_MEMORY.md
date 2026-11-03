@@ -1,5 +1,17 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-03｜dip-vinyl-shop｜add-20261103：濁水溪公社《台客的復仇》上架（店主指定殿堂）
+
+- **店主**：「濁水溪公社 台客的復仇 殿堂」。原不在卡池，單張完整上架；上一個工作階段卡在權限確認，本次接續（封面登錄已在前一筆提交）。
+- **身分**：MB release-group `500b56c7`（Album、無 secondary type、1999-05-10、條碼 4719260991428）＋Discogs 4813793＋中文維基年表。第二張專輯，與池中同團 5 張皆不同碟。
+- **三軸** 5／5／3（`manual:regional-rubric`；L=97、串流無 → 冷門度下限 5），legendary；**頂點 hall**，`apexAssessment.decidedBy`＝店主指定。年份 1999。
+- **簡介** 231 字（研究、hook、寫作、審稿皆主線；審稿紀錄在 `batch-progress/add-20261103/rulings.md`）。**試聽 unavailable**（Apple tw 0 筆，同團 5 張亦全無）。
+- **已即時寫入**：card_catalog 1 筆（含 `tier: hall`、`apex: true`）、KV 2 鍵（desc2／desc4，逐字回讀一致）。seed 第 9 欄 `"hall"`（22,507 列）、`card-preview-status.js` 一行。
+- **留給本機**：(1) `album_overrides.tier`——合併部署後後台「頂級牌管理」按「⇄ 依卡池同步頂點旗標」（清單 `batch-progress/add-20261103/album-overrides-tier.json`）；(2) 子曲風 `build-genre-tree.mjs --pull --write` 在雲端跑超過 10 分鐘被終止，未重建，本機重跑即可（同藝人傳播會落位）。
+- **未動**：同團《鬼島社會檔案》的 pearl 留給頂點重整套用工作階段拿掉；藝人介紹已有，不補。
+- **主要檔案**：`seed_cards.json`、`card-preview-status.js`、`onboarding-manifest-add-20261103-20261103.json`、`batch-progress/add-20261103/`、`desc-tools/batches/{research,output}/add-20261103-*`。
+- **驗證**：prepare gate 0 error；published gate 0 error；KV 回讀 2/2；card_catalog 寫入 1/1。
+
 ### 2026-11-03｜dip-vinyl-shop｜頂點重整 Q2：異端補 44、流亡補 47（決定清單）
 
 - **店主**：「流亡跟異端太少了」。本段只產出決定清單，不改 seed／manifest／card_catalog。
