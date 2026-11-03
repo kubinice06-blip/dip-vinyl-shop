@@ -1216,6 +1216,16 @@ html.tune-inapp-lock body{padding-top:120px}
     whistle.frequency.setTargetAtTime(300 + state.p[axis] * 34 + Math.random() * 40, t, 0.05); whistleGain.gain.setTargetAtTime(0.006 + sp * 0.002, t, 0.05);
     clearTimeout(sfxTimer); sfxTimer = setTimeout(sfxStop, 140);
   }
+  // 把調頻音效的 AudioContext 整個關掉（2026-11-03）。它開著兩個永不停止的音源（雜訊迴圈＋嘯聲振盪器，
+  // 只是 gain 歸零），喇叭關掉後 context 照樣運轉；被串流搶走時 iOS 把它標成 interrupted，玩家切回分頁、
+  // 解鎖手機時 WebKit 自動恢復它，串流又被停（店主回報：「已經把網頁的聲音關閉，串流卻還是會停止」）。
+  // 關喇叭、離開頻率光譜、切到背景都收掉；下次手勢由 ensureAudio 重建。
+  function releaseSfx() {
+    clearTimeout(sfxTimer); const a = AC; if (!a) return;
+    AC = null; bp = null; noiseGain = null; whistle = null; whistleGain = null;
+    try { const r = a.close(); if (r && r.catch) r.catch(() => {}); } catch (_) {}
+  }
+  if (global.document) global.document.addEventListener('visibilitychange', () => { if (global.document.visibilityState === 'hidden') releaseSfx(); });
   function sfxStop() { if (!AC) return; const t = AC.currentTime; noiseGain.gain.setTargetAtTime(0, t, 0.08); whistleGain.gain.setTargetAtTime(0, t, 0.06); }
   function sfxTick() { if (!state.audioOn || !AC || AC.state !== 'running') return; const t = AC.currentTime; const o = AC.createOscillator(), g = AC.createGain(); o.type = 'square'; o.frequency.value = 1400; g.gain.setValueAtTime(0.0001, t); g.gain.exponentialRampToValueAtTime(0.018, t + 0.002); g.gain.exponentialRampToValueAtTime(0.0001, t + 0.025); o.connect(g).connect(AC.destination); o.start(t); o.stop(t + 0.03); }
   function sfxClick() { if (!state.audioOn) return; ensureAudio(); if (!AC) return; const t = AC.currentTime; const o = AC.createOscillator(), g = AC.createGain(); o.type = 'square'; o.frequency.value = 180; g.gain.setValueAtTime(0.0001, t); g.gain.exponentialRampToValueAtTime(0.03, t + 0.004); g.gain.exponentialRampToValueAtTime(0.0001, t + 0.05); o.connect(g).connect(AC.destination); o.start(t); o.stop(t + 0.06); }
@@ -1254,6 +1264,7 @@ html.tune-inapp-lock body{padding-top:120px}
   // on：開或關；fromSpk：是不是喇叭鈕按出來的（要回寫站上的開關、這一下手勢可以武裝音訊）
   function setAudio(on, fromSpk = false) {
     on = !!on;
+    if (!on) releaseSfx();
     if (fromSpk) { try { cfg.setAudioPref?.(on); } catch (_) {} }
     if (on === state.audioOn && !fromSpk) { if (el) setAudioUI(); return; }
     state.audioOn = on;
@@ -1397,7 +1408,7 @@ html.tune-inapp-lock body{padding-top:120px}
       if (msg) { msg.hidden = false; msg.textContent = text; } else if (host) host.innerHTML = `<p style="margin:0;padding:24px;min-height:50vh;background:#0b0c10;color:#e9e2c8">${esc(text)}</p>`; } }
     else { setAudioUI(); el.draw.disabled = false; hideHolo(); if (previewCard) armPreview(); }   // 從結果頁回來：全像板重新開機（放大時藏起來了）
   }
-  function stop() { state.visible = false; cancelTravel(); stopPreview(); sfxStop(); hideHolo(); inappLock(false); }
+  function stop() { state.visible = false; cancelTravel(); stopPreview(); sfxStop(); releaseSfx(); hideHolo(); inappLock(false); }
 
   global.DipTune = { configure, start, stop, pickAgain, setAudio, litScreenPos, boatScreenPos, warpStart, CELL_COLOR, get state() { return state; } };
 })(window);

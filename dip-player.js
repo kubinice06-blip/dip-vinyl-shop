@@ -86,6 +86,13 @@
   const initialMemory = readAutoplayMemory() || 'on';
   autoplayConsent = initialMemory === 'on';
 
+  // 開關關著（🔇）時玩家親手按播放：只放行「這一首」，不打開自動試聽（2026-11-03 店主回報：
+  // 「已經把網頁的聲音關閉，串流卻還是會停止」）。舊版手動播放直接把 autoplayConsent 設成 true，
+  // 喇叭卻還顯示 🔇——之後每次抽卡的 gpEnsurePlayer／warmAlbum 都照常武裝 keep-alive、resume
+  // AudioContext，串流每抽一張就被停一次。這張播完（stopped／error）通行證就收回，音訊圖一併關掉。
+  let manualPass = false;
+  function audioAllowed() { return autoplayConsent || manualPass; }
+
   let state = { status: 'idle', provider: null, artist: '', album: '', cover: '', consent: autoplayConsent };
   let mediaSessionActive = false;
   const revokeListeners = new Set();
@@ -102,6 +109,7 @@
   // 不該順手把對戰／試煉的自動播放也打開（否則下次邊聽串流邊開對戰又會被搶）。
   // 要寫進裝置記憶的是音樂開關，走 setAutoplayPreference(true)。
   function grantAutoplayConsent() {
+    if (readAutoplayMemory() === 'off') { manualPass = true; return false; }
     if (autoplayConsent) return false;
     autoplayConsent = true;
     state = { ...state, consent: true };
@@ -114,6 +122,7 @@
     if (enabled) { writeAutoplayMemory('on'); return grantAutoplayConsent(); }
     writeAutoplayMemory('off');
     autoplayConsent = false;
+    manualPass = false;
     state = { ...state, consent: false };
     try { if (PERSIST_SESSION_CONSENT) sessionStorage.removeItem(AUTOPLAY_CONSENT_KEY); } catch (_) {}
     releaseAudio();
@@ -130,7 +139,14 @@
   // 自己被中斷（iOS：AudioContext 轉 interrupted；Android：播放中被系統 suspend），
   // 但偵測不到「我們蓋過別人」——後者只能靠每場開聲時的提示涵蓋。
   function revokeAutoplayByInterruption(reason) {
-    if (!autoplayConsent) return false;
+    if (!autoplayConsent) {
+      // 開關本來就關、只是手動放行這一首：被串流搶走就停，偏好不用動。
+      if (manualPass) {
+        try { stop(); } catch (_) {}
+        if (Date.now() - lastManualPlayAt < MANUAL_PLAY_GRACE_MS) revokeListeners.forEach(listener => { try { listener({ reason, kept: true }); } catch (_) {} });
+      }
+      return false;
+    }
     // 使用者幾秒前才親手按下播放／開關，這時被中斷多半是系統交接 audio session 的來回：
     // 我們剛把對方的串流打斷、session 一鬆手對方收到「可續播」就自動接回、再把我們中斷。
     // 這不是使用者改變心意。若照舊把裝置記憶寫成 off 並跳「偵測到你在聽其他音樂」，
@@ -160,12 +176,44 @@
       }
     } catch (_) {}
     clearMediaSession();
-    try { if (audioCtx && audioCtx.state === 'running') audioCtx.suspend?.(); } catch (_) {}
+    closeAudioGraph();
+  }
+
+  // 關掉 AudioContext（不是 suspend）。2026-11-03：原本只在 state === 'running' 時 suspend，
+  // 但被串流搶走的 context 在 iOS 是 'interrupted'，於是根本沒被停；之後玩家切回這個分頁或解鎖手機，
+  // WebKit 結束中斷時會自動把它恢復運轉，重新要走音訊焦點——喇叭明明是 🔇，串流卻又被停。
+  // close 之後就沒有東西可以被「恢復」。下次要出聲時 ensurePreviewGraph 會在手勢內重建；
+  // 已解碼的 AudioBuffer 不綁 context，快取照用。
+  function closeAudioGraph() {
+    const ctx = audioCtx;
+    if (!ctx) return;
+    audioCtx = null;
+    previewGain = null;
+    previewLevel = 0;
+    previewRampEnd = 0;
+    try { const r = ctx.close?.(); if (r?.catch) r.catch(() => {}); } catch (_) {}
+  }
+
+  // 手動放行的那一首結束：收回通行證。開關仍是關的話，連靜音 keep-alive 與音訊圖都交還給系統。
+  function endManualPass() {
+    manualPass = false;
+    if (autoplayConsent) return;
+    clearTimeout(keepAliveTimer);
+    try {
+      if (previewAudio && !previewElementActive) {
+        previewAudio.loop = false;
+        if (!previewAudio.paused) previewAudio.pause();
+        previewAudio.removeAttribute('src');
+        previewAudio.load?.();
+      }
+    } catch (_) {}
+    closeAudioGraph();
   }
 
   function emit(next) {
     state = { ...state, ...next };
     syncMediaSession(state);
+    if (manualPass && (state.status === 'stopped' || state.status === 'error')) endManualPass();
     listeners.forEach(listener => { try { listener({ ...state }); } catch (_) {} });
   }
 
@@ -543,7 +591,7 @@
     // 只在有授權時才 resume。建立一個 suspended 的 context 不會驚動系統，但
     // **resume 會向系統要走音訊焦點**、停掉玩家正在聽的串流。抽卡時的 warmAlbum
     // 預先解碼就是走到這裡，於是「還沒開試聽、只是抽了一張牌」也會把 Spotify 停掉。
-    if (!autoplayConsent) return;
+    if (!audioAllowed()) return;
     if (audioCtx && audioCtx.state !== 'running') { try { audioCtx.resume?.()?.catch?.(() => {}); } catch (_) {} }
   }
 
@@ -597,6 +645,10 @@
         previewAudio.load?.();
       }
     } catch (_) {}
+    // 沒在播就連 AudioContext 一起關（2026-11-03）。留著不管的話，玩家切去聽串流再切回來時，
+    // iOS 結束「進背景」的中斷會自動恢復這個 context、重新要走音訊焦點，串流就被停掉。
+    // 下一次出聲一定經過手勢（播放鍵、抽卡、碰輪子），ensurePreviewGraph 會在那裡重建。
+    closeAudioGraph();
   });
 
   // 離開頁面（返回店內挖寶、關分頁）一律停掉元素模式的試聽，別讓它活過頁面
@@ -765,7 +817,8 @@
   // 授權，不寫裝置記憶，不會順手把對戰／試煉的自動播放也打開。
   function unlock({ youtube = UNLOCK_YOUTUBE_DEFAULT, grant = false, hold = 0 } = {}) {
     if (grant) grantAutoplayConsent();
-    if (!autoplayConsent) return false;
+    // 不帶 grant 的是自動路徑（抽卡、碰卡片），只認自動試聽開關；手動通行證只給帶 grant 的播放鍵。
+    if (!(grant ? audioAllowed() : autoplayConsent)) return false;
     const previewReady = primePreviewFromGesture(hold);
     const youtubeReadyNow = youtube ? primeYoutubeFromGesture() : false;
     return previewReady || youtubeReadyNow;
