@@ -171,22 +171,22 @@
       },
       "rarity": "uncommon",
       "apexAssessment": {
-        "eligible": false,
-        "tier": null,
-        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。美國民謠開山、1001 收錄，屬類型奠基盤，RS500／Pitchfork 歷代榜未普遍收",
-        "evidenceUrls": [],
+        "eligible": true,
+        "tier": "hall",
+        "reason": "店主 2026-11-03 定案殿堂擴充（hall-expansion-20261103）：升為殿堂。",
+        "evidenceUrls": [
+          "https://www.last.fm/music/Woody%20Guthrie/Dust%20Bowl%20Ballads",
+          "https://musicbrainz.org/release-group/df936d57-468d-3ba7-b437-f7b557241635"
+        ],
         "previous": {
-          "eligible": true,
-          "tier": "hall",
-          "reason": "葛萊美名人堂已收錄 Dust Bowl Ballads, Volumes 1 & 2(Victor, 1940),另獲 Mojo 百張改變世界唱片名單,並被廣泛認定為最早的概念專輯之一與美國抗議民謠的源頭文本,跨來源長期共識充分。",
-          "evidenceUrls": [
-            "https://en.wikipedia.org/wiki/List_of_Grammy_Hall_of_Fame_Award_recipients_(A%E2%80%93D)",
-            "https://en.wikipedia.org/wiki/Dust_Bowl_Ballads",
-            "https://en.wikipedia.org/wiki/Woody_Guthrie"
-          ]
+          "eligible": false,
+          "tier": null,
+          "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。美國民謠開山、1001 收錄，屬類型奠基盤，RS500／Pitchfork 歷代榜未普遍收",
+          "evidenceUrls": [],
+          "source": "manual:audit-20261102"
         },
         "assessedAt": "2026-11-03T00:00:00Z",
-        "source": "manual:audit-20261102"
+        "source": "manual:hall-expansion-20261103"
       },
       "description": {
         "text": "Guthrie 1940 年 4 月 26 日與 5 月 3 日在 Victor 位於紐澤西 Camden 的錄音室完成,原以兩冊 78 轉唱片同時推出,全部歌曲寫 1930 年代沙塵暴與逃難者,是他生涯唯一一張非合輯作品。〈Tom Joad〉長到得拆成兩面壓片,〈Pretty Boy Floyd〉與〈Dust Bowl Blues〉因長度落在初版之外,要到 1964 年 RCA 重發才補進。人聲、吉他、口琴,幾乎沒有別的配器。Dust Bowl ballad、talking blues,常被列為最早的概念專輯之一。",
@@ -219,8 +219,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": true,
-        "apexPool": false
+        "seedCards": false,
+        "apexPool": true
       }
     },
     {
@@ -19292,22 +19292,22 @@
       },
       "rarity": "uncommon",
       "apexAssessment": {
-        "eligible": false,
-        "tier": null,
-        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。台灣民歌運動起點，該國第一名盤級止於5",
-        "evidenceUrls": [],
+        "eligible": true,
+        "tier": "hall",
+        "reason": "店主 2026-11-03 定案殿堂擴充（hall-expansion-20261103）：升為殿堂。",
+        "evidenceUrls": [
+          "https://www.last.fm/music/%E6%A5%8A%E5%BC%A6/%E4%B8%AD%E5%9C%8B%E7%8F%BE%E4%BB%A3%E6%B0%91%E6%AD%8C%E9%9B%86",
+          "https://musicbrainz.org/release-group/2d25d5d8-d770-4c99-8c1c-bb193ec9bb85"
+        ],
         "previous": {
-          "eligible": true,
-          "tier": "hall",
-          "reason": "多方來源長期一致視為台灣現代民歌運動的開端之作，具明確開創地位，且入選台灣流行音樂百張最佳專輯。",
-          "evidenceUrls": [
-            "https://zh.wikipedia.org/wiki/楊弦",
-            "https://zh.wikipedia.org/wiki/校園民歌",
-            "https://zh.wikipedia.org/wiki/台灣流行音樂200最佳專輯"
-          ]
+          "eligible": false,
+          "tier": null,
+          "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。台灣民歌運動起點，該國第一名盤級止於5",
+          "evidenceUrls": [],
+          "source": "manual:audit-20261102"
         },
         "assessedAt": "2026-11-03T00:00:00Z",
-        "source": "manual:audit-20261102"
+        "source": "manual:hall-expansion-20261103"
       },
       "description": {
         "text": "1975年6月6日台北中山堂「現代民謠創作演唱會」之後，楊弦把余光中詩集《白玉苦瓜》裡的九首詩譜成歌，交洪建全教育文化基金會出版，成為台灣第一張被公認稱得上「民歌」的唱片。吉他為骨、鋼琴與弦樂鋪底，〈鄉愁四韻〉〈民歌〉〈江湖上〉直接把新詩唱成旋律，也引爆學院派對「中國現代民歌」的論戰。次年李雙澤喊出「唱自己的歌」，校園民歌時代就此展開。次類型用台灣慣稱的現代民歌／校園民歌。",
@@ -19338,8 +19338,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": true,
-        "apexPool": false
+        "seedCards": false,
+        "apexPool": true
       }
     },
     {
@@ -19369,22 +19369,22 @@
       },
       "rarity": "rare",
       "apexAssessment": {
-        "eligible": false,
-        "tier": null,
-        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。台灣民歌經典，該地區名盤止於5",
-        "evidenceUrls": [],
+        "eligible": true,
+        "tier": "hall",
+        "reason": "店主 2026-11-03 定案殿堂擴充（hall-expansion-20261103）：升為殿堂。",
+        "evidenceUrls": [
+          "https://www.last.fm/music/%E9%BD%8A%E8%B1%AB/%E6%A9%84%E6%AC%96%E6%A8%B9",
+          "https://musicbrainz.org/release-group/5f81da95-0a85-40d6-996f-edb778da8f78"
+        ],
         "previous": {
-          "eligible": true,
-          "tier": "hall",
-          "reason": "百佳第3名、香港十大中文金曲得獎、禁歌身分與數十位主流歌手翻唱，跨來源長期共識足列華語民謠核心。",
-          "evidenceUrls": [
-            "https://zh.wikipedia.org/wiki/橄欖樹_(專輯)",
-            "https://zh.wikipedia.org/wiki/台灣流行音樂200最佳專輯",
-            "https://zh.wikipedia.org/wiki/齊豫"
-          ]
+          "eligible": false,
+          "tier": null,
+          "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。台灣民歌經典，該地區名盤止於5",
+          "evidenceUrls": [],
+          "source": "manual:audit-20261102"
         },
         "assessedAt": "2026-11-03T00:00:00Z",
-        "source": "manual:audit-20261102"
+        "source": "manual:hall-expansion-20261103"
       },
       "description": {
         "text": "1978年金韻獎冠軍出身的齊豫，1979年由新格唱片推出首張國語專輯，李泰祥作曲、編曲兼指揮，把管弦樂的重量壓進民歌骨架。三毛作詞的〈橄欖樹〉因「我的故鄉在遠方」一句被當局列為禁歌，反而傳遍兩岸三地，日後翻唱者從費玉清、孫燕姿到吳青峰不絕；〈歡顏〉是同名電影主題曲，齊豫並以此曲拿下金馬獎最佳電影插曲。榜單上名列1975－1993台灣流行音樂百張最佳專輯第三。",
@@ -19415,8 +19415,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": true,
-        "apexPool": false
+        "seedCards": false,
+        "apexPool": true
       }
     },
     {
@@ -19704,10 +19704,21 @@
       },
       "rarity": "uncommon",
       "apexAssessment": {
-        "eligible": false,
-        "tier": null,
-        "reason": "台語民謠開創地位清楚，但可查證的長期論述集中於台灣本地榜單，跨來源厚度尚不足列殿堂。",
-        "evidenceUrls": []
+        "eligible": true,
+        "tier": "hall",
+        "reason": "店主 2026-11-03 定案殿堂擴充（hall-expansion-20261103）：升為殿堂。",
+        "evidenceUrls": [
+          "https://www.last.fm/music/%E9%99%B3%E6%98%8E%E7%AB%A0/%E4%B8%8B%E5%8D%88%E7%9A%84%E4%B8%80%E9%BD%A3%E6%88%B2",
+          "https://musicbrainz.org/release-group/2b5fedeb-3763-3757-8de8-a7b860ac90fd"
+        ],
+        "previous": {
+          "eligible": false,
+          "tier": null,
+          "reason": "台語民謠開創地位清楚，但可查證的長期論述集中於台灣本地榜單，跨來源厚度尚不足列殿堂。",
+          "evidenceUrls": []
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:hall-expansion-20261103"
       },
       "description": {
         "text": "北投長大的陳明章，童年天天看北管、歌仔戲與布袋戲，隔壁旅館的那卡西是他最早的音樂教室；1990年他把這些底蘊寫成台語創作專輯，由滾石發行。同名曲寫戲班在雨中散場的落寞，〈再會吧！北投〉〈新莊街〉〈紅目達仔〉唱市井人物，〈黑水溝〉是純演奏曲。他在專輯文案自嘲「民歌運動時曾應徵加入木吉他合唱團，因歌聲太爛被淘汰」。名列1975－1993台灣流行音樂百張最佳專輯第三十六。次類型為台語新民謠。",
@@ -19737,8 +19748,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": true,
-        "apexPool": false
+        "seedCards": false,
+        "apexPool": true
       }
     },
     {
@@ -21393,21 +21404,22 @@
       },
       "rarity": "uncommon",
       "apexAssessment": {
-        "eligible": false,
-        "tier": null,
-        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。日本首張百萬 LP，國內里程碑（5）",
-        "evidenceUrls": [],
+        "eligible": true,
+        "tier": "hall",
+        "reason": "店主 2026-11-03 定案殿堂擴充（hall-expansion-20261103）：升為殿堂。",
+        "evidenceUrls": [
+          "https://www.last.fm/music/%E4%BA%95%E4%B8%8A%E9%99%BD%E6%B0%B4/%E6%B0%B7%E3%81%AE%E4%B8%96%E7%95%8C",
+          "https://musicbrainz.org/release-group/d9fad31c-2811-39fb-ad00-91e7ba6f5d90"
+        ],
         "previous": {
-          "eligible": true,
-          "tier": "hall",
-          "reason": "1975年8月成為日本唱片史上首張銷量破百萬的LP，Oricon榜五度重返冠軍，屬可查證且長期穩定的樂史位置，非單一來源說法。",
-          "evidenceUrls": [
-            "https://ja.wikipedia.org/wiki/%E6%B0%B7%E3%81%AE%E4%B8%96%E7%95%8C_(%E3%82%A2%E3%83%AB%E3%83%90%E3%83%A0)",
-            "https://ja.wikipedia.org/wiki/%E4%BA%95%E4%B8%8A%E9%99%BD%E6%B0%B4"
-          ]
+          "eligible": false,
+          "tier": null,
+          "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。日本首張百萬 LP，國內里程碑（5）",
+          "evidenceUrls": [],
+          "source": "manual:audit-20261102"
         },
         "assessedAt": "2026-11-03T00:00:00Z",
-        "source": "manual:audit-20261102"
+        "source": "manual:hall-expansion-20261103"
       },
       "description": {
         "text": "井上陽水第三張原創作品，1973年12月1日由Polydor發行，部分錄音遠赴倫敦，找來Quatermass的Pete Robinson、John Gustafson等當地樂手，編曲由星勝擔綱。〈心もよう〉〈氷の世界〉〈帰れない二人〉（與忌野清志郎合寫）、〈白い一日〉（小椋佳作詞）構成主軸，細野晴臣參與其中兩曲。發行兩年後的1975年8月，成為日本唱片史上首張賣破百萬張的LP。",
@@ -21436,8 +21448,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": true,
-        "apexPool": false
+        "seedCards": false,
+        "apexPool": true
       }
     },
     {

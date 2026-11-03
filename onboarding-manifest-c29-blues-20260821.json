@@ -31,21 +31,22 @@
       },
       "rarity": "uncommon",
       "apexAssessment": {
-        "eligible": false,
-        "tier": null,
-        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。RS500、1001 有收，但屬藍調類型正典，圈外以單曲知名，5 星",
-        "evidenceUrls": [],
+        "eligible": true,
+        "tier": "hall",
+        "reason": "店主 2026-11-03 定案殿堂擴充（hall-expansion-20261103）：升為殿堂。",
+        "evidenceUrls": [
+          "https://www.last.fm/music/Muddy%20Waters/At%20Newport%201960",
+          "https://musicbrainz.org/release-group/2c1288fa-19c4-34d3-97a7-ff2fe9c96b57"
+        ],
         "previous": {
-          "eligible": true,
-          "tier": "hall",
-          "reason": "常被稱為史上第一張藍調現場專輯，滾石五百大專輯第 348 名，對 1960 年代英美藍調復興影響有明文記載；池內同級的 B.B. King《Live at the Regal》目前為普卡，是否採納請店主定奪。",
-          "evidenceUrls": [
-            "https://en.wikipedia.org/wiki/At_Newport_1960",
-            "https://musicbrainz.org/release-group/2c1288fa-19c4-34d3-97a7-ff2fe9c96b57"
-          ]
+          "eligible": false,
+          "tier": null,
+          "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。RS500、1001 有收，但屬藍調類型正典，圈外以單曲知名，5 星",
+          "evidenceUrls": [],
+          "source": "manual:audit-20261102"
         },
         "assessedAt": "2026-11-03T00:00:00Z",
-        "source": "manual:audit-20261102"
+        "source": "manual:hall-expansion-20261103"
       },
       "description": {
         "text": "1960 年 7 月 3 日 Newport 爵士音樂節的現場實況，常被稱為史上第一張藍調現場專輯。Muddy Waters 率領含 Otis Spann 與 James Cotton 的樂隊，從〈I Got My Brand on You〉一路唱到全場沸騰的〈Got My Mojo Working〉，還應觀眾要求再唱一遍；電氣化的 Chicago blues 第一次以完整專輯的形態被記錄在舞台上，對 1960 年代英美兩地的年輕藍調樂手影響深遠，滾石五百大專輯將其列於第 348 名。",
@@ -73,8 +74,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": true,
-        "apexPool": false
+        "seedCards": false,
+        "apexPool": true
       }
     },
     {

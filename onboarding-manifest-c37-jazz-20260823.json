@@ -13919,10 +13919,21 @@
       },
       "rarity": "rare",
       "apexAssessment": {
-        "eligible": false,
-        "tier": null,
-        "reason": "拉丁爵士領域要作但未達全樂史殿堂共識；無 listeners 數值，pearl 不評。",
-        "evidenceUrls": []
+        "eligible": true,
+        "tier": "hall",
+        "reason": "店主 2026-11-03 定案殿堂擴充（hall-expansion-20261103）：升為殿堂。",
+        "evidenceUrls": [
+          "https://www.last.fm/music/Dizzy%20Gillespie/Afro",
+          "https://musicbrainz.org/release-group/30c0d7cb-789f-3e21-a07c-eba2de2d03ac"
+        ],
+        "previous": {
+          "eligible": false,
+          "tier": null,
+          "reason": "拉丁爵士領域要作但未達全樂史殿堂共識；無 listeners 數值，pearl 不評。",
+          "evidenceUrls": []
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:hall-expansion-20261103"
       },
       "description": {
         "text": "1954 年 11 月由 Norgran 發行，Dizzy Gillespie 與大批古巴樂手合作的 Afro-Cuban 大樂團錄音。核心是把名曲〈Manteca〉擴寫成的四段組曲——〈Manteca Theme〉〈Contraste〉〈Jungla〉〈Rhumba-Finale〉——銅管齊奏與綿密的打擊聲部彼此推擠，古巴節奏型不是點綴而是骨架；另一面則有重新編排的〈A Night in Tunisia〉。四〇年代末開拓的 Afro-Cuban 路線，在此以更大編制、更完整的組曲形式落實。",
@@ -13954,8 +13965,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": true,
-        "apexPool": false
+        "seedCards": false,
+        "apexPool": true
       }
     },
     {
@@ -14461,10 +14472,21 @@
       },
       "rarity": "rare",
       "apexAssessment": {
-        "eligible": false,
-        "tier": null,
-        "reason": "classic 4，未達殿堂 classic=5 的最低門檻；非 obscurity 5、非 accessibility 5。",
-        "evidenceUrls": []
+        "eligible": true,
+        "tier": "hall",
+        "reason": "店主 2026-11-03 定案殿堂擴充（hall-expansion-20261103）：升為殿堂。",
+        "evidenceUrls": [
+          "https://www.last.fm/music/Coleman%20Hawkins/Body%20and%20Soul",
+          "https://musicbrainz.org/release-group/34c9b8b8-c1db-38fd-bf46-9fd56a4ae8c5"
+        ],
+        "previous": {
+          "eligible": false,
+          "tier": null,
+          "reason": "classic 4，未達殿堂 classic=5 的最低門檻；非 obscurity 5、非 accessibility 5。",
+          "evidenceUrls": []
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:hall-expansion-20261103"
       },
       "description": {
         "text": "兩段即興幾乎沒把旋律吹出來，卻成了他生涯最大的熱門。1939 年 10 月，旅歐五年剛回美國的 Coleman Hawkins 替 Bluebird 錄下〈Body and Soul〉，主題只在開頭點到，其餘全是順著和弦走的變奏。這套 1986 年的 Bluebird 結集把他在 Victor 體系的錄音從那一場排到 1956 年：1940 年的全明星八重奏、1947 年有 Max Roach 打鼓的 bebop 場次，最後是 Billy Byers 編寫的弦樂伴奏，同一首歌隔十七年再吹一次。",
@@ -14498,8 +14520,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": true,
-        "apexPool": false
+        "seedCards": false,
+        "apexPool": true
       }
     },
     {
@@ -23520,21 +23542,22 @@
       },
       "rarity": "uncommon",
       "apexAssessment": {
-        "eligible": false,
-        "tier": null,
-        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。早期爵士正典屬類型內 5，合輯未入綜合歷代榜",
-        "evidenceUrls": [],
+        "eligible": true,
+        "tier": "hall",
+        "reason": "店主 2026-11-03 定案殿堂擴充（hall-expansion-20261103）：升為殿堂。",
+        "evidenceUrls": [
+          "https://www.last.fm/music/Jelly%20Roll%20Morton/Birth%20of%20the%20Hot",
+          "https://musicbrainz.org/release-group/046a81bc-528c-3137-94d3-1ad5d6b6751c"
+        ],
         "previous": {
-          "eligible": true,
-          "tier": "hall",
-          "reason": "Morton 被公認為爵士第一位編曲家，Red Hot Peppers 1926–27 錄音（〈Black Bottom Stomp〉等）是證明即興音樂可被作曲思維組織的奠基文獻，長期列於爵士史核心，本結集為其權威入口。",
-          "evidenceUrls": [
-            "https://en.wikipedia.org/wiki/Jelly_Roll_Morton",
-            "https://musicbrainz.org/release-group/046a81bc-528c-3137-94d3-1ad5d6b6751c"
-          ]
+          "eligible": false,
+          "tier": null,
+          "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。早期爵士正典屬類型內 5，合輯未入綜合歷代榜",
+          "evidenceUrls": [],
+          "source": "manual:audit-20261102"
         },
         "assessedAt": "2026-11-03T00:00:00Z",
-        "source": "manual:audit-20261102"
+        "source": "manual:hall-expansion-20261103"
       },
       "description": {
         "text": "Jelly Roll Morton 自稱發明了爵士，誇言之外，他作為爵士第一位編曲家的地位無可動搖——證據正是 1926 至 27 年在芝加哥率 Red Hot Peppers 留下的場次。這張 1995 年 RCA Bluebird 官方結集收齊〈Black Bottom Stomp〉〈The Chant〉〈Dead Man Blues〉〈Doctor Jazz〉〈Wolverine Blues〉等名演並附替代錄次：三管前線的對位、事先寫定的段落轉換與刻意留白的獨奏空隙，示範了根植即興的音樂如何被作曲思維組織起來而不失本色。",
@@ -23566,8 +23589,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": true,
-        "apexPool": false
+        "seedCards": false,
+        "apexPool": true
       }
     }
   ]

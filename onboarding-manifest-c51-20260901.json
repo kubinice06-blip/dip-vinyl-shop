@@ -1954,10 +1954,21 @@
    },
    "rarity": "uncommon",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：classic=5（hall 最低門檻），但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "hall",
+    "reason": "店主 2026-11-03 定案殿堂擴充（hall-expansion-20261103）：升為殿堂。",
+    "evidenceUrls": [
+     "https://www.last.fm/music/%E3%81%AF%E3%81%A3%E3%81%B4%E3%81%84%E3%81%88%E3%82%93%E3%81%A9/%E9%A2%A8%E8%A1%97%E3%82%8D%E3%81%BE%E3%82%93",
+     "https://musicbrainz.org/release-group/14cfc058-73ac-3028-8661-5e87c101c029"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：classic=5（hall 最低門檻），但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:hall-expansion-20261103"
    },
    "description": {
     "text": "他們虛構出一座風街，好留住奧運前那個還沒被拆掉的東京。整張是概念作品，寫的是 1964 年東京奧運之前的城市，松本隆以自己在青山、澀谷、麻布一帶的童年記憶為底。1971 年 11 月 20 日由 URC 發行，是細野晴臣、大瀧詠一、鈴木茂與松本隆四人的第二張錄音室專輯。它與首作一起引爆了日語搖滾論爭，業界爭的是全程以日語演唱的搖滾究竟能不能成立；《Rolling Stone》日本版 2007 年 9 月的日本搖滾史上百大專輯把它排在第 1 名。",
@@ -1979,8 +1990,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {

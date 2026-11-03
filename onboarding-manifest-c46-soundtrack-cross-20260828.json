@@ -6735,21 +6735,22 @@
    },
    "rarity": "uncommon",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。套裝合輯，非綜合榜正典條目",
-    "evidenceUrls": [],
+    "eligible": true,
+    "tier": "hall",
+    "reason": "店主 2026-11-03 定案殿堂擴充（hall-expansion-20261103）：升為殿堂。",
+    "evidenceUrls": [
+     "https://www.last.fm/music/Billie%20Holiday/Lady%20Day%3A%20The%20Complete%20Billie%20Holiday%20on%20Columbia%20(1933-1944)",
+     "https://musicbrainz.org/release-group/92d33d8d-2c60-3e77-b9de-ab0a4b1c6ffb"
+    ],
     "previous": {
-     "eligible": true,
-     "tier": "hall",
-     "reason": "classic=5 之外，1935–1942 與 Teddy Wilson、Lester Young 的小組錄音在爵士史書寫裡是長期跨來源共識的核心文獻；此套又是官方完整版並獲 2002 年葛萊美最佳歷史專輯，符合殿堂門檻。",
-     "evidenceUrls": [
-      "https://en.wikipedia.org/wiki/Grammy_Award_for_Best_Historical_Album",
-      "https://en.wikipedia.org/wiki/Billie_Holiday"
-     ]
+     "eligible": false,
+     "tier": null,
+     "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。套裝合輯，非綜合榜正典條目",
+     "evidenceUrls": [],
+     "source": "manual:audit-20261102"
     },
     "assessedAt": "2026-11-03T00:00:00Z",
-    "source": "manual:audit-20261102"
+    "source": "manual:hall-expansion-20261103"
    },
    "description": {
     "text": "Holiday 1933 至 1944 年在 Columbia 體系（Brunswick、Vocalion、OKeh）的全部錄音，十張碟兩百三十軌，2001 年由 Columbia/Legacy 從 Sony 母帶庫整理發行。起點是 1933 年十八歲與 Benny Goodman 樂團錄的〈Your Mother's Son-in-Law〉，主體則是 1935 年起 Teddy Wilson 主持的小組 session——不寫書面編曲，樂手輪流接句，Lester Young 的次中音薩克斯風與她的唱腔互相讓路。此套獲 2002 年葛萊美最佳歷史專輯。",
@@ -6781,8 +6782,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -9331,21 +9332,22 @@
    },
    "rarity": "uncommon",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。DJ toasting 場景里程碑，類型級 5",
-    "evidenceUrls": [],
+    "eligible": true,
+    "tier": "hall",
+    "reason": "店主 2026-11-03 定案殿堂擴充（hall-expansion-20261103）：升為殿堂。",
+    "evidenceUrls": [
+     "https://www.last.fm/music/U-Roy/Version%20Galore",
+     "https://musicbrainz.org/release-group/e23e79c0-60a5-3527-b0ea-fd2e646c9034"
+    ],
     "previous": {
-     "eligible": true,
-     "tier": "hall",
-     "reason": "本機補證：史上第一張全部由 DJ version 構成的專輯。U-Roy 為 Duke Reid 灌錄的 1970 年單曲群引爆整個 toasting 風潮，被記載為永遠改變了雷鬼的聲音，並直接影響美國初生的 rap。一種唱片形態的起點。店主 2026-08-28 裁定採用。",
-     "evidenceUrls": [
-      "https://soundsoftheuniverse.com/sjr/product/version-galore-expanded-edition",
-      "https://unitedreggae.com/discographies/1970/u-roy-version-galore;1472/"
-     ]
+     "eligible": false,
+     "tier": null,
+     "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。DJ toasting 場景里程碑，類型級 5",
+     "evidenceUrls": [],
+     "source": "manual:audit-20261102"
     },
     "assessedAt": "2026-11-03T00:00:00Z",
-    "source": "manual:audit-20261102"
+    "source": "manual:hall-expansion-20261103"
    },
    "description": {
     "text": "Ewart Beckford 在 King Tubby 的 Hometown Hi-Fi 放音時，把 Duke Reid 的 rocksteady 舊帶抽掉人聲，自己在上面說唱。1970 年〈Wake the Town〉〈Rule the Nation〉〈Wear You to the Ball〉同時佔住牙買加兩家電台排行前三名，Trojan 隨即以 TBL 161 集成這張十二曲，Duke Reid 製作、Byron Smith 錄音，標籤掛名寫作 Hugh Roy。The Paragons 等原唱片段留在混音裡，與口白交替出現。",
@@ -9377,8 +9379,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -10587,22 +10589,22 @@
    },
    "rarity": "uncommon",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。配樂史核心，但綜合專輯歷代榜不收，屬類型級",
-    "evidenceUrls": [],
+    "eligible": true,
+    "tier": "hall",
+    "reason": "店主 2026-11-03 定案殿堂擴充（hall-expansion-20261103）：升為殿堂。",
+    "evidenceUrls": [
+     "https://www.last.fm/music/Ennio%20Morricone/C'era%20una%20volta%20il%20West",
+     "https://musicbrainz.org/release-group/06d095ae-88a6-309b-8e88-e87bd99d4fb0"
+    ],
     "previous": {
-     "eligible": true,
-     "tier": "hall",
-     "reason": "銷量約一千萬張（法國一百萬、荷蘭逾八十萬）、英義兩地維基與 Morricone 條目一致把它列為史上最暢銷器樂配樂之一，正典地位跨來源可查，列殿堂候選。",
-     "evidenceUrls": [
-      "https://en.wikipedia.org/wiki/Once_Upon_a_Time_in_the_West_(soundtrack)",
-      "https://en.wikipedia.org/wiki/Ennio_Morricone",
-      "https://musicbrainz.org/release-group/06d095ae-88a6-309b-8e88-e87bd99d4fb0"
-     ]
+     "eligible": false,
+     "tier": null,
+     "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。配樂史核心，但綜合專輯歷代榜不收，屬類型級",
+     "evidenceUrls": [],
+     "source": "manual:audit-20261102"
     },
     "assessedAt": "2026-11-03T00:00:00Z",
-    "source": "manual:audit-20261102"
+    "source": "manual:hall-expansion-20261103"
    },
    "description": {
     "text": "Leone 要求 Morricone 在開拍前寫完全片音樂，現場再放給演員聽，所以這份譜不是後貼的配襯，而是鏡頭長度的依據。五個主要角色各有各的動機：Jill 的段落交給 Edda Dell'Orso 的無詞女高音在弦樂上盤旋，Armonica 的四個音由 Franco De Gemini 用降 B 調半音階口琴吹出，加一點殘響顯得空。開場直到第二場戲結束前幾乎不放音樂，只留風車、火車與蟬鳴。此譜估計全球售出約一千萬張，法國一百萬、荷蘭超過八十萬。",
@@ -10635,8 +10637,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {

@@ -3050,21 +3050,22 @@
       },
       "rarity": "rare",
       "apexAssessment": {
-        "eligible": false,
-        "tier": null,
-        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。全民熟知但屬音樂劇原聲，綜合樂評歷代榜多不收；類型正典 5 星",
-        "evidenceUrls": [],
+        "eligible": true,
+        "tier": "hall",
+        "reason": "店主 2026-11-03 定案殿堂擴充（hall-expansion-20261103）：升為殿堂。",
+        "evidenceUrls": [
+          "https://www.last.fm/music/Leonard%20Bernstein%20%26%20Stephen%20Sondheim/West%20Side%20Story%20(Original%20Sound%20Track%20Recording)",
+          "https://musicbrainz.org/release-group/dd5d8373-4ae3-3908-9235-c871e49ebd76"
+        ],
         "previous": {
-          "eligible": true,
-          "tier": "hall",
-          "reason": "Billboard 立體聲榜 54 週冠軍是專輯榜史上最長的榜首紀錄，另獲 1962 年葛萊美最佳原聲帶／原班卡司獎與 RIAA 三白金，電影以十座奧斯卡創音樂片紀錄，跨來源長期共識足列美國音樂劇與原聲帶史核心。",
-          "evidenceUrls": [
-            "https://en.wikipedia.org/wiki/West_Side_Story_(1961_soundtrack)",
-            "https://en.wikipedia.org/wiki/West_Side_Story_(1961_film)"
-          ]
+          "eligible": false,
+          "tier": null,
+          "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。全民熟知但屬音樂劇原聲，綜合樂評歷代榜多不收；類型正典 5 星",
+          "evidenceUrls": [],
+          "source": "manual:audit-20261102"
         },
         "assessedAt": "2026-11-03T00:00:00Z",
-        "source": "manual:audit-20261102"
+        "source": "manual:hall-expansion-20261103"
       },
       "description": {
         "text": "1961 年電影《West Side Story》的原聲帶，Leonard Bernstein 作曲、Stephen Sondheim 作詞。片中歌唱多由幕後歌手代勞，Marni Nixon 頂替 Natalie Wood 演唱 Maria，最終如何取用各人聲軌由製片 Saul Chaplin 拍板。唱片在 Billboard 立體聲專輯榜蟬聯 54 週冠軍，是專輯榜史上最長的榜首紀錄，另在單聲道榜六週奪冠；1962 年獲葛萊美最佳原聲帶／原班卡司獎，1986 年獲 RIAA 三白金認證。",
@@ -3094,8 +3095,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": true,
-        "apexPool": false
+        "seedCards": false,
+        "apexPool": true
       }
     },
     {

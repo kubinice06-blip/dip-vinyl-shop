@@ -5172,21 +5172,22 @@
    },
    "rarity": "rare",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。國家錄音登錄，但非綜合歷代專輯榜正典；聽眾 613 屬拆名錯配",
-    "evidenceUrls": [],
+    "eligible": true,
+    "tier": "hall",
+    "reason": "店主 2026-11-03 定案殿堂擴充（hall-expansion-20261103）：升為殿堂。",
+    "evidenceUrls": [
+     "https://www.last.fm/music/Rodgers%20%26%20Hammerstein/Oklahoma!",
+     "https://musicbrainz.org/release-group/d6603675-74b0-4a50-9fa8-3cb9e77c476f"
+    ],
     "previous": {
-     "eligible": true,
-     "tier": "hall",
-     "reason": "史上第一張完整原班卡司＋原編制樂團錄製的音樂劇專輯，開創「原卡司錄音」品類；2003 年入選美國國家錄音登記簿（National Recording Registry）。",
-     "evidenceUrls": [
-      "https://www.loc.gov/static/programs/national-recording-preservation-board/documents/OKLAHOMA!.pdf",
-      "https://en.wikipedia.org/wiki/Oklahoma!_(original_Broadway_cast_recording)"
-     ]
+     "eligible": false,
+     "tier": null,
+     "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。國家錄音登錄，但非綜合歷代專輯榜正典；聽眾 613 屬拆名錯配",
+     "evidenceUrls": [],
+     "source": "manual:audit-20261102"
     },
     "assessedAt": "2026-11-03T00:00:00Z",
-    "source": "manual:audit-20261102"
+    "source": "manual:hall-expansion-20261103"
    },
    "description": {
     "text": "六張 78 轉唱片裝成一套，1943 年的 Decca 把整齣戲搬進了唱片行。這套錄音發行於 1943 年 12 月 1 日，由原班卡司與原劇院管弦樂團演出，Robert Russell Bennett 編曲、Jay Blackton 指揮。在此之前，把一齣舞台劇的主要歌曲交給原班人馬灌成整套，在美國只有零星嘗試，這套是把構想做成完整商品的先例；其後二十年間，卡司與電影原聲帶專輯一度主導唱片銷售榜。78 轉套裝賣出逾百萬份，發行以來從未絕版。",
@@ -5215,8 +5216,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -10904,21 +10905,22 @@
    },
    "rarity": "rare",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。outlaw country 里程碑、首張白金鄉村盤，類型級",
-    "evidenceUrls": [],
+    "eligible": true,
+    "tier": "hall",
+    "reason": "店主 2026-11-03 定案殿堂擴充（hall-expansion-20261103）：升為殿堂。",
+    "evidenceUrls": [
+     "https://www.last.fm/music/Waylon%20Jennings%2C%20Willie%20Nelson%2C%20Jessi%20Colter%20%26%20Tompall%20Glaser/Wanted!%20The%20Outlaws",
+     "https://musicbrainz.org/release-group/0025dfaa-e5d8-31b7-83ab-e702897f1fbe"
+    ],
     "previous": {
-     "eligible": true,
-     "tier": "hall",
-     "reason": "史上第一張 RIAA 認證白金的鄉村專輯（1976），公認 outlaw country 運動的商業與文化分水嶺，Billboard／Rolling Stone 均有專文回顧其歷史地位。",
-     "evidenceUrls": [
-      "https://en.wikipedia.org/wiki/Wanted!_The_Outlaws",
-      "https://www.billboard.com/music/country/wanted-the-outlaws-50th-anniversary-legacy-1236196033/"
-     ]
+     "eligible": false,
+     "tier": null,
+     "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。outlaw country 里程碑、首張白金鄉村盤，類型級",
+     "evidenceUrls": [],
+     "source": "manual:audit-20261102"
     },
     "assessedAt": "2026-11-03T00:00:00Z",
-    "source": "manual:audit-20261102"
+    "source": "manual:hall-expansion-20261103"
    },
    "description": {
     "text": "封面印成西部通緝海報，內容多半是四個人發過的舊錄音，卻賣成鄉村史上第一張白金唱片。1976 年 1 月 12 日由 RCA 發行，收四位歌手先前已發行的錄音另加四首新曲，由廠牌重新包裝作行銷主打。「outlaw」一詞最早可溯至 Jennings 1972 年的〈Ladies Love Outlaws〉，到本作以通緝海報封面發行才定型流傳，成為 outlaw country 運動的命名起點。同年 2 月起在鄉村專輯榜蟬聯 6 週冠軍，11 月獲 RIAA 白金認證。",
@@ -10954,8 +10956,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {

@@ -2544,10 +2544,21 @@
       },
       "rarity": "rare",
       "apexAssessment": {
-        "eligible": false,
-        "tier": null,
-        "reason": "對台灣雙語搖滾團的開路作用清楚，但樂團的公認代表作與獲獎作皆在後期，本張未達跨來源長期共識的殿堂層級。",
-        "evidenceUrls": []
+        "eligible": true,
+        "tier": "hall",
+        "reason": "店主 2026-11-03 定案殿堂擴充（hall-expansion-20261103）：升為殿堂。",
+        "evidenceUrls": [
+          "https://www.last.fm/music/%E6%96%B0%E5%AF%B6%E5%B3%B6%E5%BA%B7%E6%A8%82%E9%9A%8A/%E6%96%B0%E5%AF%B6%E5%B3%B6%E5%BA%B7%E6%A8%82%E9%9A%8A",
+          "https://musicbrainz.org/release-group/4842b5e1-30b5-4a0e-bf2e-7b3ca7a2b9ac"
+        ],
+        "previous": {
+          "eligible": false,
+          "tier": null,
+          "reason": "對台灣雙語搖滾團的開路作用清楚，但樂團的公認代表作與獲獎作皆在後期，本張未達跨來源長期共識的殿堂層級。",
+          "evidenceUrls": []
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:hall-expansion-20261103"
       },
       "description": {
         "text": "陳昇與黃連煜 1992 年 7 月在滾石發表的二人組首作（RD-1172）。開場曲〈多情兄〉把台語與客語混在同一首歌裡唱，〈在這恬靜的暗晡頭〉〈河壩唇的阿伯〉整首用客語，在當時的台語唱片裡罕見；〈跑路英雄〉〈水泥山〉〈壞子〉則寫市井人物。排灣族樂手陳世隆（阿Van）要到第四張才加入，此時仍是兩人編制。中文維基以主打歌名把這張列作《多情兄》，卡片沿用與團名同字的正名。",
@@ -2578,8 +2589,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": true,
-        "apexPool": false
+        "seedCards": false,
+        "apexPool": true
       }
     },
     {

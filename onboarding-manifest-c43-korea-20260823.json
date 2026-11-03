@@ -1374,22 +1374,22 @@
       },
       "rarity": "uncommon",
       "apexAssessment": {
-        "eligible": false,
-        "tier": null,
-        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。K-pop 起點，國內里程碑（5）",
-        "evidenceUrls": [],
+        "eligible": true,
+        "tier": "hall",
+        "reason": "店主 2026-11-03 定案殿堂擴充（hall-expansion-20261103）：升為殿堂。",
+        "evidenceUrls": [
+          "https://www.last.fm/music/%EC%84%9C%ED%83%9C%EC%A7%80%EC%99%80%20%EC%95%84%EC%9D%B4%EB%93%A4/%EC%84%9C%ED%83%9C%EC%A7%80%EC%99%80%20%EC%95%84%EC%9D%B4%EB%93%A4",
+          "https://musicbrainz.org/release-group/56946299-2041-3758-a3f8-b33636c9300e"
+        ],
         "previous": {
-          "eligible": true,
-          "tier": "hall",
-          "reason": "公認為韓國流行音樂產業轉向的分界作，跨語圈長期共識明確，銷量與榜單地位皆有可查證記錄，足列該領域史上核心。",
-          "evidenceUrls": [
-            "https://ko.wikipedia.org/wiki/Seotaiji_and_Boys_1",
-            "https://en.wikipedia.org/wiki/Seo_Taiji_and_Boys",
-            "https://ko.wikipedia.org/wiki/한국대중음악_100대_명반"
-          ]
+          "eligible": false,
+          "tier": null,
+          "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。K-pop 起點，國內里程碑（5）",
+          "evidenceUrls": [],
+          "source": "manual:audit-20261102"
         },
         "assessedAt": "2026-11-03T00:00:00Z",
-        "source": "manual:audit-20261102"
+        "source": "manual:hall-expansion-20261103"
       },
       "description": {
         "text": "金屬樂隊 시나위 貝斯手出身的 서태지 帶著 양현석、이주노 於 1992 年推出的首作，作曲、編曲與錄音幾乎由他一人完成。〈난 알아요〉把韓語饒舌接上強拍舞曲，〈환상 속의 그대〉續推同一路子，〈Rock'N Roll Dance〉的曲則掛 Angus Young 之名。首次電視演出評審只給平均 7.8 分，唱片卻賣出約 170 萬張，至今仍是韓國銷量最高的出道專輯，也把十來歲聽眾推成唱片市場主力。",
@@ -1422,8 +1422,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": true,
-        "apexPool": false
+        "seedCards": false,
+        "apexPool": true
       }
     },
     {

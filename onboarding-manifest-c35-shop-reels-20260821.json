@@ -99,10 +99,21 @@
       },
       "rarity": "rare",
       "apexAssessment": {
-        "eligible": false,
-        "tier": null,
-        "reason": "地位集中於粵語流行圈，缺少跨語系長期共識的殿堂級佐證，故不列頂點。",
-        "evidenceUrls": []
+        "eligible": true,
+        "tier": "hall",
+        "reason": "店主 2026-11-03 定案殿堂擴充（hall-expansion-20261103）：升為殿堂。",
+        "evidenceUrls": [
+          "https://www.last.fm/music/%E9%81%94%E6%98%8E%E4%B8%80%E6%B4%BE/%E7%9F%B3%E9%A0%AD%E8%A8%98",
+          "https://musicbrainz.org/release-group/5e13875d-72e1-4ad4-9dd9-286033172995"
+        ],
+        "previous": {
+          "eligible": false,
+          "tier": null,
+          "reason": "地位集中於粵語流行圈，缺少跨語系長期共識的殿堂級佐證，故不列頂點。",
+          "evidenceUrls": []
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:hall-expansion-20261103"
       },
       "description": {
         "text": "達明一派由劉以達與黃耀明組成，1986 年以同名 EP 出道。1987 年 4 月 9 日發行的本作配合進念‧二十面體同名舞台劇而作，同名曲〈石頭記〉是該劇主題曲，詞取材自《紅樓夢》，並奪下第十一屆十大中文金曲最受歡迎演出中文歌曲獎。全碟由劉以達作曲編曲、陳少琪填詞，〈馬路天使〉〈傷逝〉〈後窗〉同樣傳唱；〈美好「新世界」〉寫的是當年新世界中心的消費風景。",
@@ -132,8 +143,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": true,
-        "apexPool": false
+        "seedCards": false,
+        "apexPool": true
       }
     },
     {
