@@ -103,8 +103,10 @@ if (process.argv.includes('--catalog')) {
   const iv = n => ({ integerValue: String(n) });
   const patches = list.map(x => {
     const nw = x.new, fields = { classic: iv(nw.classic), obscurity: iv(nw.obscurity), accessibility: iv(nw.accessibility), rarity: { stringValue: rarityOf(nw.classic, nw.obscurity, nw.accessibility) } };
+    const mask = ['classic', 'obscurity', 'accessibility', 'rarity', 'tier', 'apex'];
     if (nw.tier) { fields.tier = { stringValue: nw.tier }; fields.apex = { booleanValue: true }; }
-    return { key: x.key, docId: cardIdOf(...x.key.split('|')), updateMask: ['classic', 'obscurity', 'accessibility', 'rarity', 'tier', 'apex'], body: { fields } };
+    else if (x.old.tier) { fields.seed = { booleanValue: true }; mask.push('seed'); } // 降級：與一般卡一致（後台 seed 匯入寫的 seed:true）
+    return { key: x.key, docId: cardIdOf(...x.key.split('|')), updateMask: mask, body: { fields } };
   });
   fs.mkdirSync('publish-stage/audit-20261102', { recursive: true });
   fs.writeFileSync('publish-stage/audit-20261102/card-catalog-patches.json', JSON.stringify(patches, null, 0));
