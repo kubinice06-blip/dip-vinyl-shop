@@ -1,0 +1,7413 @@
+{
+ "generatedAt": "2026-11-03",
+ "source": "batch-progress/audit-20261102 方案 C；比對 seed_cards.json 第 9 欄 vs album_overrides.tier（公開讀取 1,820 文件）",
+ "note": "album_overrides 是管理員集合（isAdmin），雲端寫不了，需本機後台匯入。set＝merge 寫 {tier}；clear＝刪除 tier 欄（deleteField）。orphans＝帶 tier 但 id 不在卡池，僅供參考、不必處理。",
+ "counts": {
+  "set": 263,
+  "clear": 704,
+  "orphans": 17
+ },
+ "set": [
+  {
+   "id": "johnny cash|at folsom prison",
+   "artist": "Johnny Cash",
+   "album": "At Folsom Prison",
+   "tier": "hall",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "curtis mayfield|superfly",
+   "artist": "Curtis Mayfield",
+   "album": "Superfly",
+   "tier": "hall",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "robert johnson|king of the delta blues singers",
+   "artist": "Robert Johnson",
+   "album": "King of the Delta Blues Singers",
+   "tier": "hall",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "oasis|definitely maybe",
+   "artist": "Oasis",
+   "album": "Definitely Maybe",
+   "tier": "hall",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "depeche mode|violator",
+   "artist": "Depeche Mode",
+   "album": "Violator",
+   "tier": "hall",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "stan getz|getz-gilberto",
+   "artist": "Stan Getz",
+   "album": "Getz/Gilberto",
+   "tier": "hall",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "ornette coleman|the shape of jazz to come",
+   "artist": "Ornette Coleman",
+   "album": "The Shape of Jazz to Come",
+   "tier": "hall",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "keith jarrett|the köln concert",
+   "artist": "Keith Jarrett",
+   "album": "The Köln Concert",
+   "tier": "hall",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "stevie wonder|talking book",
+   "artist": "Stevie Wonder",
+   "album": "Talking Book",
+   "tier": "hall",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "aretha franklin|amazing grace",
+   "artist": "Aretha Franklin",
+   "album": "Amazing Grace",
+   "tier": "hall",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "frank ocean|channel orange",
+   "artist": "Frank Ocean",
+   "album": "Channel Orange",
+   "tier": "hall",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "eric b. & rakim|paid in full",
+   "artist": "Eric B. & Rakim",
+   "album": "Paid in Full",
+   "tier": "hall",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "beastie boys|paul's boutique",
+   "artist": "Beastie Boys",
+   "album": "Paul's Boutique",
+   "tier": "hall",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "jay-z|the blueprint",
+   "artist": "JAY-Z",
+   "album": "The Blueprint",
+   "tier": "hall",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "dj shadow|endtroducing.....",
+   "artist": "DJ Shadow",
+   "album": "Endtroducing.....",
+   "tier": "hall",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "eminem|the marshall mathers lp",
+   "artist": "Eminem",
+   "album": "The Marshall Mathers LP",
+   "tier": "hall",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "aphex twin|selected ambient works 85-92",
+   "artist": "Aphex Twin",
+   "album": "Selected Ambient Works 85-92",
+   "tier": "hall",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "glenn gould|bach: the goldberg variations (1955)",
+   "artist": "Glenn Gould",
+   "album": "Bach: The Goldberg Variations (1955)",
+   "tier": "hall",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "the beatles|the beatles",
+   "artist": "The Beatles",
+   "album": "The Beatles",
+   "tier": "hall",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "carlos kleiber|beethoven: symphonies 5 & 7",
+   "artist": "Carlos Kleiber",
+   "album": "Beethoven: Symphonies 5 & 7",
+   "tier": "hall",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "artur schnabel|beethoven: complete piano sonatas (1932-35)",
+   "artist": "Artur Schnabel",
+   "album": "Beethoven: Complete Piano Sonatas (1932-35)",
+   "tier": "hall",
+   "currentOverrideTier": null,
+   "overrideDocExists": true,
+   "inApplyC": true
+  },
+  {
+   "id": "pablo casals|bach: cello suites (1936-39)",
+   "artist": "Pablo Casals",
+   "album": "Bach: Cello Suites (1936-39)",
+   "tier": "hall",
+   "currentOverrideTier": null,
+   "overrideDocExists": true,
+   "inApplyC": true
+  },
+  {
+   "id": "georg solti|wagner: der ring des nibelungen",
+   "artist": "Georg Solti",
+   "album": "Wagner: Der Ring des Nibelungen",
+   "tier": "hall",
+   "currentOverrideTier": null,
+   "overrideDocExists": true,
+   "inApplyC": true
+  },
+  {
+   "id": "maria callas|puccini: tosca (1953)",
+   "artist": "Maria Callas",
+   "album": "Puccini: Tosca (1953)",
+   "tier": "hall",
+   "currentOverrideTier": null,
+   "overrideDocExists": true,
+   "inApplyC": true
+  },
+  {
+   "id": "arditti quartet|stockhausen: helikopter-streichquartett",
+   "artist": "Arditti Quartet",
+   "album": "Stockhausen: Helikopter-Streichquartett",
+   "tier": "heresy",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "bob marley & the wailers|legend",
+   "artist": "Bob Marley & The Wailers",
+   "album": "Legend",
+   "tier": "hall",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "非常階段|viva angel",
+   "artist": "非常階段",
+   "album": "Viva Angel",
+   "tier": "pearl",
+   "currentOverrideTier": "heresy",
+   "overrideDocExists": true,
+   "inApplyC": true
+  },
+  {
+   "id": "u2|achtung baby",
+   "artist": "U2",
+   "album": "Achtung Baby",
+   "tier": "hall",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "非常階段|king of noise",
+   "artist": "非常階段",
+   "album": "King of Noise",
+   "tier": "heresy",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "masonna|inner mind mystique",
+   "artist": "Masonna",
+   "album": "Inner Mind Mystique",
+   "tier": "heresy",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "derek bailey|solo guitar volume 1",
+   "artist": "Derek Bailey",
+   "album": "Solo Guitar Volume 1",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "aka|do what you like",
+   "artist": "AKA",
+   "album": "Do What You Like",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "giant step|giant on the move!",
+   "artist": "Giant Step",
+   "album": "Giant on the Move!",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "benny soebardja|gimme a piece of gut rock",
+   "artist": "Benny Soebardja",
+   "album": "Gimme a Piece of Gut Rock",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "dadawah|peace & love: wadadasow",
+   "artist": "Dadawah",
+   "album": "Peace & Love: Wadadasow",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "高柳昌行 - 阿部薫|解体的交感",
+   "artist": "高柳昌行 / 阿部薫",
+   "album": "解体的交感",
+   "tier": "heresy",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "jemeel moondoc & muntu|the evening of the blue men",
+   "artist": "Jemeel Moondoc & Muntu",
+   "album": "The Evening of the Blue Men",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "arthur blythe|the grip",
+   "artist": "Arthur Blythe",
+   "album": "The Grip",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "hamiet bluiett|endangered species",
+   "artist": "Hamiet Bluiett",
+   "album": "Endangered Species",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "errata corrige|siegfried, il drago e altre storie",
+   "artist": "Errata Corrige",
+   "album": "Siegfried, il drago e altre storie",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "mahogany brain|with (junk-saucepan) when (spoon-trigger)",
+   "artist": "Mahogany Brain",
+   "album": "With (Junk-Saucepan) When (Spoon-Trigger)",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "the new blockaders|changez les blockeurs",
+   "artist": "The New Blockaders",
+   "album": "Changez les Blockeurs",
+   "tier": "heresy",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "mitsuaki katayama trio|first flight",
+   "artist": "Mitsuaki Katayama Trio",
+   "album": "First Flight",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "生活向上委員会|生活向上委員会ニューヨーク支部",
+   "artist": "生活向上委員会",
+   "album": "生活向上委員会ニューヨーク支部",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "沖至|幻想ノート",
+   "artist": "沖至",
+   "album": "幻想ノート",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "つのだひろと体力バンド|サマー・サンバ",
+   "artist": "つのだひろと体力バンド",
+   "album": "サマー・サンバ",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "sindelfingen|odgipig",
+   "artist": "Sindelfingen",
+   "album": "Odgipig",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "deerfield|nil desperandum",
+   "artist": "Deerfield",
+   "album": "Nil Desperandum",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "dada|jyo",
+   "artist": "Dada",
+   "album": "Jyo",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "salaried man club|gray cross",
+   "artist": "Salaried Man Club",
+   "album": "Gray Cross",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "den sei kwan|pocket planetaria",
+   "artist": "Den Sei Kwan",
+   "album": "Pocket Planetaria",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "吉野大作＆プロスティテュート|後ろ姿の素敵な僕たち",
+   "artist": "吉野大作＆プロスティテュート",
+   "album": "後ろ姿の素敵な僕たち",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "harry miller|children at play",
+   "artist": "Harry Miller",
+   "album": "Children at Play",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "hugh hopper - elton dean - alan gowen - dave sheen|rogue element",
+   "artist": "Hugh Hopper / Elton Dean / Alan Gowen / Dave Sheen",
+   "album": "Rogue Element",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "chris mcgregor|in his good time",
+   "artist": "Chris McGregor",
+   "album": "In His Good Time",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "the music improvisation company|1968-1971",
+   "artist": "The Music Improvisation Company",
+   "album": "1968-1971",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "wilson mckinley|spirit of elijah",
+   "artist": "Wilson McKinley",
+   "album": "Spirit of Elijah",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "agape|victims of tradition",
+   "artist": "Agape",
+   "album": "Victims of Tradition",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "earthen vessel|hard rock - everlasting life",
+   "artist": "Earthen Vessel",
+   "album": "Hard Rock / Everlasting Life",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "concrete rubber band|risen savior",
+   "artist": "Concrete Rubber Band",
+   "album": "Risen Savior",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "wilson mckinley|on stage",
+   "artist": "Wilson McKinley",
+   "album": "On Stage",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "hope of glory|second look",
+   "artist": "Hope of Glory",
+   "album": "Second Look",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "negasphere|castle in the air",
+   "artist": "Negasphere",
+   "album": "Castle in the Air",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "夢幻|sinfonia della luna",
+   "artist": "夢幻",
+   "album": "Sinfonia della Luna",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "midas|beyond the clear air",
+   "artist": "Midas",
+   "album": "Beyond the Clear Air",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "夢幻|過ぎ去りし王国の王女",
+   "artist": "夢幻",
+   "album": "過ぎ去りし王国の王女",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "the pooh sticks|orgasm",
+   "artist": "The Pooh Sticks",
+   "album": "Orgasm",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "the clark sisters|unworthy",
+   "artist": "The Clark Sisters",
+   "album": "Unworthy",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "the clark sisters|count it all joy",
+   "artist": "The Clark Sisters",
+   "album": "Count It All Joy",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "大工哲弘|ゆんた とぅ じらば",
+   "artist": "大工哲弘",
+   "album": "ゆんた とぅ じらば",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "嘉手苅林昌|嘉手苅林昌",
+   "artist": "嘉手苅林昌",
+   "album": "嘉手苅林昌",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "charles tyler|saga of the outlaws",
+   "artist": "Charles Tyler",
+   "album": "Saga of the Outlaws",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "chico freeman|kings of mali",
+   "artist": "Chico Freeman",
+   "album": "Kings of Mali",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "生活向上委員会|live in masuda",
+   "artist": "生活向上委員会",
+   "album": "Live in Masuda",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "complex|the way we feel",
+   "artist": "Complex",
+   "album": "The Way We Feel",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "pablo picasso|soft type",
+   "artist": "Pablo Picasso",
+   "album": "Soft Type",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "z.o.a|humanical garden",
+   "artist": "Z.O.A",
+   "album": "Humanical Garden",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "stan tracey quartet|captain adventure",
+   "artist": "Stan Tracey Quartet",
+   "album": "Captain Adventure",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "steve beresford|the bath of surprise",
+   "artist": "Steve Beresford",
+   "album": "The Bath of Surprise",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "hope of glory|under the spout where the glory comes out",
+   "artist": "Hope of Glory",
+   "album": "Under the Spout Where the Glory Comes Out",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "bob ayala|joy by surprise",
+   "artist": "Bob Ayala",
+   "album": "Joy by Surprise",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "板倉克行|海猫の島",
+   "artist": "板倉克行",
+   "album": "海猫の島",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "中村ヨシミツ|魂のギター",
+   "artist": "中村ヨシミツ",
+   "album": "魂のギター",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "spherical objects|past and parcel",
+   "artist": "Spherical Objects",
+   "album": "Past and Parcel",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "indiscreet music|dubious collaberations",
+   "artist": "Indiscreet Music",
+   "album": "Dubious Collaberations",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "various artists|bouquet of steel",
+   "artist": "Various Artists",
+   "album": "Bouquet of Steel",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "andrew cox|hydra",
+   "artist": "Andrew Cox",
+   "album": "Hydra",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "mfh|ground zero",
+   "artist": "MFH",
+   "album": "Ground Zero",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "paul nagle|the soft room",
+   "artist": "Paul Nagle",
+   "album": "The Soft Room",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "storm bugs|a safe substitute",
+   "artist": "Storm Bugs",
+   "album": "A Safe Substitute",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "the living daylights|any way you want",
+   "artist": "The Living Daylights",
+   "album": "Any Way You Want",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "we·be·echo|ceza·evi",
+   "artist": "we·be·echo",
+   "album": "Ceza·Evi",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "sema|notes from underground",
+   "artist": "Sema",
+   "album": "Notes From Underground",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "metgumbnerbone|ligeliahorn",
+   "artist": "Metgumbnerbone",
+   "album": "Ligeliahorn",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "kyle creed|liberty",
+   "artist": "Kyle Creed",
+   "album": "Liberty",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "albert hash & the whitetop mountain band|albert hash & the whitetop mountain band",
+   "artist": "Albert Hash & The Whitetop Mountain Band",
+   "album": "Albert Hash & The Whitetop Mountain Band",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "j. t. perkins|just fine fiddling",
+   "artist": "J. T. Perkins",
+   "album": "Just Fine Fiddling",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "alan munde|the banjo kid picks again",
+   "artist": "Alan Munde",
+   "album": "The Banjo Kid Picks Again",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "red allen & the allen brothers|allengrass",
+   "artist": "Red Allen & The Allen Brothers",
+   "album": "Allengrass",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "忍冬創|創ファーストアルバム 春秋坂",
+   "artist": "忍冬創",
+   "album": "創ファーストアルバム 春秋坂",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "ほうむず|朝日に向かって",
+   "artist": "ほうむず",
+   "album": "朝日に向かって",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "五条坂|季節はめぐって",
+   "artist": "五条坂",
+   "album": "季節はめぐって",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "third quadrant|n = r* fp ne fl fi fc l",
+   "artist": "Third Quadrant",
+   "album": "N = R* FP NE FL FI FC L",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "third quadrant|seeing yourself as you really are",
+   "artist": "Third Quadrant",
+   "album": "Seeing Yourself as You Really Are",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "airbridge|paradise moves",
+   "artist": "Airbridge",
+   "album": "Paradise Moves",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "a band called doris|gypsy lady",
+   "artist": "A Band Called Doris",
+   "album": "Gypsy Lady",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "treatment|intensive",
+   "artist": "Treatment",
+   "album": "Intensive",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "abel ganz|gullibles travels",
+   "artist": "Abel Ganz",
+   "album": "Gullibles Travels",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "mach one|lost for words",
+   "artist": "Mach One",
+   "album": "Lost for Words",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "geoff mann|i may sing grace",
+   "artist": "Geoff Mann",
+   "album": "I May Sing Grace",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "geoff mann|chants would be a fine thing",
+   "artist": "Geoff Mann",
+   "album": "Chants Would Be a Fine Thing",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "geoff mann|psalm enchanted evening",
+   "artist": "Geoff Mann",
+   "album": "Psalm Enchanted Evening",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "the enid|the stand",
+   "artist": "The Enid",
+   "album": "The Stand",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "treatment|the world of treatment",
+   "artist": "Treatment",
+   "album": "The World of Treatment",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "nic potter|sketches in sound",
+   "artist": "Nic Potter",
+   "album": "Sketches in Sound",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "web|ivory tower",
+   "artist": "Web",
+   "album": "Ivory Tower",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "okihide|a boy in picca season",
+   "artist": "Okihide",
+   "album": "A Boy in Picca Season",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "ura ura|.,. (ten-chong-ten)",
+   "artist": "Ura Ura",
+   "album": ".,. (Ten-Chong-Ten)",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "takayuki shiraishi|photon",
+   "artist": "Takayuki Shiraishi",
+   "album": "Photon",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "andrei zueff|kitchen works",
+   "artist": "Andrei Zueff",
+   "album": "Kitchen Works",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "taichi|am i",
+   "artist": "Taichi",
+   "album": "Am I",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "松前公高|space ranch",
+   "artist": "松前公高",
+   "album": "Space Ranch",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "mind design|view from the edge",
+   "artist": "Mind Design",
+   "album": "View From the Edge",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "suzukiski|waiting",
+   "artist": "Suzukiski",
+   "album": "Waiting",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "nina-noho|ambient classics 1990-1992",
+   "artist": "Nina-Noho",
+   "album": "Ambient Classics 1990-1992",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "suzukiski|kamakura",
+   "artist": "Suzukiski",
+   "album": "Kamakura",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "strange garden|for speaker system",
+   "artist": "Strange Garden",
+   "album": "For Speaker System",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "temdendam suay|sounzer paranoun (sound tracks of some films)",
+   "artist": "Temdendam Suay",
+   "album": "Sounzer Paranoun (Sound Tracks of Some Films)",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "montage|anthropologie",
+   "artist": "Montage",
+   "album": "Anthropologie",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "trio rakant|kokorosususu",
+   "artist": "Trio Rakant",
+   "album": "Kokorosususu",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "tagomago|prelude for afternoon",
+   "artist": "Tagomago",
+   "album": "Prelude for Afternoon",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "pacific 231|tropical songs gold",
+   "artist": "Pacific 231",
+   "album": "Tropical Songs Gold",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "tamaru|夢の途中",
+   "artist": "Tamaru",
+   "album": "夢の途中",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "y cyrff|llawenydd heb ddiwedd",
+   "artist": "Y Cyrff",
+   "album": "Llawenydd Heb Ddiwedd",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "electroscope|homemade electroscope",
+   "artist": "Electroscope",
+   "album": "Homemade Electroscope",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "soundsmith|aquanaut",
+   "artist": "Soundsmith",
+   "album": "Aquanaut",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "alpha stone|elasticated waveband",
+   "artist": "Alpha Stone",
+   "album": "Elasticated Waveband",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "avrocar|cinematography",
+   "artist": "Avrocar",
+   "album": "Cinematography",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "the land of nod|translucent",
+   "artist": "The Land of Nod",
+   "album": "Translucent",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "wckr spgt|crtv",
+   "artist": "Wckr Spgt",
+   "album": "CRTV",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "temple of bon matin|thunder feedback confusion",
+   "artist": "Temple of Bon Matin",
+   "album": "Thunder Feedback Confusion",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "alan licht|sink the aging process",
+   "artist": "Alan Licht",
+   "album": "Sink the Aging Process",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "johnny osbourne|in nah disco style",
+   "artist": "Johnny Osbourne",
+   "album": "In Nah Disco Style",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "sylvia tella|will you still want me",
+   "artist": "Sylvia Tella",
+   "album": "Will You Still Want Me",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "the well pack band|the workers speak to their slave masters with strike",
+   "artist": "The Well Pack Band",
+   "album": "The Workers Speak To Their Slave Masters With Strike",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "armagideon|through the haze",
+   "artist": "Armagideon",
+   "album": "Through the Haze",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "dayjah & the disciples|storm clouds",
+   "artist": "Dayjah & The Disciples",
+   "album": "Storm Clouds",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "willi williams|natty with a cause",
+   "artist": "Willi Williams",
+   "album": "Natty With a Cause",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "lidj incorporated meets sound iration|dub liberation",
+   "artist": "Lidj Incorporated Meets Sound Iration",
+   "album": "Dub Liberation",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "mixed bag|mixed bag's first album",
+   "artist": "Mixed Bag",
+   "album": "Mixed Bag's First Album",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "rashied ali quartet|new directions in modern music",
+   "artist": "Rashied Ali Quartet",
+   "album": "New Directions in Modern Music",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "roscoe mitchell|nonaah",
+   "artist": "Roscoe Mitchell",
+   "album": "Nonaah",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "ensemble muntu|first feeding",
+   "artist": "Ensemble Muntu",
+   "album": "First Feeding",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "1976|late summer of 1976 不插電現場實況",
+   "artist": "1976",
+   "album": "Late Summer of 1976 不插電現場實況",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "濁水溪公社|鬼島社會檔案",
+   "artist": "濁水溪公社",
+   "album": "鬼島社會檔案",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "夾子電動大樂隊|地下人",
+   "artist": "夾子電動大樂隊",
+   "album": "地下人",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "merzbow|noisembryo",
+   "artist": "Merzbow",
+   "album": "Noisembryo",
+   "tier": "heresy",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "merzbow|rainbow electronics",
+   "artist": "Merzbow",
+   "album": "Rainbow Electronics",
+   "tier": "heresy",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "山里勇吉|八重山書生節",
+   "artist": "山里勇吉",
+   "album": "八重山書生節",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "古謝美佐子|島美らさ",
+   "artist": "古謝美佐子",
+   "album": "島美らさ",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "gai|1981-1985",
+   "artist": "Gai",
+   "album": "1981-1985",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "various artists|hardcore unlawful assembly",
+   "artist": "Various Artists",
+   "album": "Hardcore Unlawful Assembly",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "非常階段|蔵六の奇病",
+   "artist": "非常階段",
+   "album": "蔵六の奇病",
+   "tier": "heresy",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "incapacitants|eternal paralysis",
+   "artist": "Incapacitants",
+   "album": "Eternal Paralysis",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "c.c.c.c.|cosmic coincidence control center",
+   "artist": "C.C.C.C.",
+   "album": "Cosmic Coincidence Control Center",
+   "tier": "heresy",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "k2|the rust",
+   "artist": "K2",
+   "album": "The Rust",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "msbr|ultimate ambience",
+   "artist": "MSBR",
+   "album": "Ultimate Ambience",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "pain jerk|aktion bruit",
+   "artist": "Pain Jerk",
+   "album": "Aktion Bruit",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "astro|bio-galaxy",
+   "artist": "ASTRO",
+   "album": "Bio-Galaxy",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "ハナタラシ|ハナタラシ",
+   "artist": "ハナタラシ",
+   "album": "ハナタラシ",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "adonis|h.o.u.s.e.",
+   "artist": "Adonis",
+   "album": "H.O.U.S.E.",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "光束夜|the dark spot",
+   "artist": "光束夜",
+   "album": "The Dark Spot",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "east bionic symphonia|recorded live",
+   "artist": "East Bionic Symphonia",
+   "album": "Recorded Live",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "光束夜|ファースト・ライブ1979 吉祥寺マイナー [first live 1979 kichijoji minor]",
+   "artist": "光束夜",
+   "album": "ファースト・ライブ1979 吉祥寺マイナー [First live 1979 Kichijoji Minor]",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "krakdown|krakdown",
+   "artist": "Krakdown",
+   "album": "Krakdown",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "vision of disorder|demo '93",
+   "artist": "Vision of Disorder",
+   "album": "Demo '93",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "bulldoze|cleaning shit up!!",
+   "artist": "Bulldoze",
+   "album": "Cleaning Shit Up!!",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "gorilla biscuits|demo 1987",
+   "artist": "Gorilla Biscuits",
+   "album": "demo 1987",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "108|serve and defy",
+   "artist": "108",
+   "album": "Serve And Defy",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "dzeltenie pastnieki|man ļoti patīk jaunais vilnis",
+   "artist": "Dzeltenie pastnieki",
+   "album": "Man ļoti patīk jaunais vilnis",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "various artists|laos - l'art du khène",
+   "artist": "Various Artists",
+   "album": "Laos - L'art Du Khène",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "aka|crazy joe",
+   "artist": "AKA",
+   "album": "Crazy Joe",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "八城一夫|side by side",
+   "artist": "八城一夫",
+   "album": "Side By Side",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "北村英治|happy cooking",
+   "artist": "北村英治",
+   "album": "Happy Cooking",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "北村英治|happy cooking vol. ii",
+   "artist": "北村英治",
+   "album": "Happy Cooking Vol. II",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "south wind section|south wind",
+   "artist": "South Wind Section",
+   "album": "South Wind",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "モア|モア",
+   "artist": "モア",
+   "album": "モア",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": false
+  },
+  {
+   "id": "真芽正恵|真芽正恵と小さな詩",
+   "artist": "真芽正恵",
+   "album": "真芽正恵と小さな詩",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "altan urag|nation",
+   "artist": "Altan Urag",
+   "album": "Nation",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "altan urag|once upon a time in mongolia",
+   "artist": "Altan Urag",
+   "album": "Once Upon a Time in Mongolia",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "аясын салхи|coffin town under the moon",
+   "artist": "Аясын Салхи",
+   "album": "Coffin Town Under the Moon",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "sói đen|chiến tranh và hòa bình",
+   "artist": "Sói Đen",
+   "album": "Chiến tranh và hòa bình",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "plainsunset|the gift",
+   "artist": "Plainsunset",
+   "album": "The Gift",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "anthony braxton|seven compositions 1978",
+   "artist": "Anthony Braxton",
+   "album": "Seven Compositions 1978",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "spontaneous music ensemble|challenge",
+   "artist": "Spontaneous Music Ensemble",
+   "album": "Challenge",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "howard riley|synopsis",
+   "artist": "Howard Riley",
+   "album": "Synopsis",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "moljebka pvlse|sadalmelik",
+   "artist": "Moljebka Pvlse",
+   "album": "Sadalmelik",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "hall of mirrors|reflections on black",
+   "artist": "Hall of Mirrors",
+   "album": "Reflections on Black",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "boris divider|la hora de las máquinas",
+   "artist": "Boris Divider",
+   "album": "La hora de las máquinas",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "oliver ho|universal",
+   "artist": "Oliver Ho",
+   "album": "Universal",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "organum|vacant lights",
+   "artist": "Organum",
+   "album": "Vacant Lights",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "organum|sanctus",
+   "artist": "Organum",
+   "album": "Sanctus",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "organum|amen",
+   "artist": "Organum",
+   "album": "Amen",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "john duncan & max springer|the crackling",
+   "artist": "John Duncan & Max Springer",
+   "album": "The Crackling",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "maurizio bianchi|menses",
+   "artist": "Maurizio Bianchi",
+   "album": "Menses",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "yasunao tone|solo for wounded cd",
+   "artist": "Yasunao Tone",
+   "album": "Solo for Wounded CD",
+   "tier": "heresy",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "deathprod|let me be forever animal",
+   "artist": "Deathprod",
+   "album": "Let Me Be Forever Animal",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "han bennink|tempo comodo",
+   "artist": "Han Bennink",
+   "album": "Tempo Comodo",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "derek bailey & han bennink|han bennink & derek bailey",
+   "artist": "Derek Bailey & Han Bennink",
+   "album": "Han Bennink & Derek Bailey",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "han bennink - misha mengelberg - john tchicai|instant composers pool",
+   "artist": "Han Bennink / Misha Mengelberg / John Tchicai",
+   "album": "Instant Composers Pool",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "company|company 2",
+   "artist": "Company",
+   "album": "Company 2",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "company|fables",
+   "artist": "Company",
+   "album": "Fables",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "derek bailey|lot 74 solo improvisations",
+   "artist": "Derek Bailey",
+   "album": "Lot 74 Solo Improvisations",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "spontaneous music ensemble|so, what do you think?",
+   "artist": "Spontaneous Music Ensemble",
+   "album": "So, What Do You Think?",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "barry guy|statements v‐xi for double bass & violone",
+   "artist": "Barry Guy",
+   "album": "Statements V‐XI for Double Bass & Violone",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "wayne wade|black is our colour",
+   "artist": "Wayne Wade",
+   "album": "Black Is Our Colour",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "john holt|introspective",
+   "artist": "John Holt",
+   "album": "Introspective",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "alton ellis|a new day",
+   "artist": "Alton Ellis",
+   "album": "A New Day",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "eugene chadbourne & john zorn|school",
+   "artist": "Eugene Chadbourne & John Zorn",
+   "album": "School",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "tom cora, david moss|cargo cult revival",
+   "artist": "Tom Cora, David Moss",
+   "album": "Cargo Cult Revival",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "matthew shipp|magnetism",
+   "artist": "Matthew Shipp",
+   "album": "Magnetism",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "fred van hove|passing waves",
+   "artist": "Fred Van Hove",
+   "album": "Passing Waves",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "evan parker & agustí fernández|tempranillo",
+   "artist": "Evan Parker & Agustí Fernández",
+   "album": "Tempranillo",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "jezzreel|rockers showcase volume 2",
+   "artist": "Jezzreel",
+   "album": "Rockers Showcase Volume 2",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "audley rollens|showcase prevail",
+   "artist": "Audley Rollens",
+   "album": "Showcase Prevail",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "marchetti - voice crack - noetinger|double_wash",
+   "artist": "Marchetti / Voice Crack / Noetinger",
+   "album": "Double_Wash",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "jérôme noetinger & erikm|what a wonderful world",
+   "artist": "Jérôme Noetinger & eRikm",
+   "album": "What a Wonderful World",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "martin tétreault|la nuit où j'ai dit non",
+   "artist": "Martin Tétreault",
+   "album": "La nuit où j'ai dit non",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "keith rowe & thomas lehn & marcus schmickler|rabbit run",
+   "artist": "Keith Rowe & Thomas Lehn & Marcus Schmickler",
+   "album": "Rabbit Run",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "erikm|lux payllettes",
+   "artist": "eRikm",
+   "album": "Lux Payllettes",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "mazen kerbaj|brt vrt zrt krt",
+   "artist": "Mazen Kerbaj",
+   "album": "Brt Vrt Zrt Krt",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "anthony braxton|saxophone improvisations, series f.",
+   "artist": "Anthony Braxton",
+   "album": "Saxophone Improvisations, Series F.",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "evan parker - matthew shipp|abbey road duos",
+   "artist": "Evan Parker / Matthew Shipp",
+   "album": "Abbey Road Duos",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "evan parker & joe mcphee|chicago tenor duets",
+   "artist": "Evan Parker & Joe McPhee",
+   "album": "Chicago Tenor Duets",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "roscoe mitchell|l-r-g - the maze - s ii examples",
+   "artist": "Roscoe Mitchell",
+   "album": "L-R-G / The Maze / S II Examples",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "mats gustafsson & barry guy|frogging",
+   "artist": "Mats Gustafsson & Barry Guy",
+   "album": "Frogging",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "ned rothenberg|trials of the argo",
+   "artist": "Ned Rothenberg",
+   "album": "Trials of the Argo",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "ned rothenberg|trespass",
+   "artist": "Ned Rothenberg",
+   "album": "Trespass",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "trevor wishart|tongues of fire",
+   "artist": "Trevor Wishart",
+   "album": "Tongues of Fire",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "a_dontigny|geisteswissenschaften",
+   "artist": "A_dontigny",
+   "album": "Geisteswissenschaften",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "carlos zíngaro|solo",
+   "artist": "Carlos Zíngaro",
+   "album": "Solo",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "joëlle léandre, carlos zingaro|ecritures",
+   "artist": "Joëlle Léandre, Carlos Zingaro",
+   "album": "Ecritures",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "mat maneri & randy peterson|light trigger",
+   "artist": "Mat Maneri & Randy Peterson",
+   "album": "Light Trigger",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "philipp wachsmann, roger turner|alizarin",
+   "artist": "Philipp Wachsmann, Roger Turner",
+   "album": "Alizarin",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "agustí fernández, peter kowald|sea of lead",
+   "artist": "Agustí Fernández, Peter Kowald",
+   "album": "Sea of Lead",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "fred lonberg-holm|site-specific: duets for cello and guitar",
+   "artist": "Fred Lonberg-Holm",
+   "album": "Site-Specific: Duets for Cello and Guitar",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "john russell & roger turner|the second sky",
+   "artist": "John Russell & Roger Turner",
+   "album": "The Second Sky",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "alan tomlinson - steve beresford - roger turner|trap street",
+   "artist": "Alan Tomlinson / Steve Beresford / Roger Turner",
+   "album": "Trap Street",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "main|surcease",
+   "artist": "Main",
+   "album": "Surcease",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "mwanamke mwafrika|african woman abroad",
+   "artist": "Mwanamke Mwafrika",
+   "album": "African Woman Abroad",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "anthony johnson|i'm ready",
+   "artist": "Anthony Johnson",
+   "album": "I'm Ready",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "christmann schönenberg duo|we play",
+   "artist": "Christmann Schönenberg Duo",
+   "album": "We Play",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "georg gräwe quintet|pink pong",
+   "artist": "Georg Gräwe Quintet",
+   "album": "Pink Pong",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "pierre favre trio|santana",
+   "artist": "Pierre Favre Trio",
+   "album": "Santana",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "irvine arditti|recital for violin",
+   "artist": "Irvine Arditti",
+   "album": "Recital for Violin",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "bernhard wambach|stockhausen: klavierstücke vol. ii",
+   "artist": "Bernhard Wambach",
+   "album": "Stockhausen: Klavierstücke vol. II",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "delton screechie|living in the ghetto showcase",
+   "artist": "Delton Screechie",
+   "album": "Living In The Ghetto Showcase",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "harry tavitian & corneliu stroe|transylvanian suite",
+   "artist": "Harry Tavitian & Corneliu Stroe",
+   "album": "Transylvanian Suite",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "mircea tiberian|alone in heaven",
+   "artist": "Mircea Tiberian",
+   "album": "Alone in Heaven",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "grencsó kollektíva|1988-89",
+   "artist": "Grencsó Kollektíva",
+   "album": "1988-89",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "string connection|workoholic",
+   "artist": "String Connection",
+   "album": "Workoholic",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "andrzej przybielski|w sferze dotyku",
+   "artist": "Andrzej Przybielski",
+   "album": "W sferze dotyku",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  },
+  {
+   "id": "conrad bauer|flüchtiges glück",
+   "artist": "Conrad Bauer",
+   "album": "Flüchtiges Glück",
+   "tier": "pearl",
+   "currentOverrideTier": null,
+   "overrideDocExists": false,
+   "inApplyC": true
+  }
+ ],
+ "clear": [
+  {
+   "id": "eagles|hotel california",
+   "artist": "Eagles",
+   "album": "Hotel California",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "neil young|after the gold rush",
+   "artist": "Neil Young",
+   "album": "After the Gold Rush",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "pearl jam|ten",
+   "artist": "Pearl Jam",
+   "album": "Ten",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "blur|parklife",
+   "artist": "Blur",
+   "album": "Parklife",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "björk|homogenic",
+   "artist": "Björk",
+   "album": "Homogenic",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "ella fitzgerald|ella and louis",
+   "artist": "Ella Fitzgerald",
+   "album": "Ella and Louis",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "nina simone|i put a spell on you",
+   "artist": "Nina Simone",
+   "album": "I Put a Spell on You",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "curtis mayfield|curtis",
+   "artist": "Curtis Mayfield",
+   "album": "Curtis",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "al green|call me",
+   "artist": "Al Green",
+   "album": "Call Me",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "outkast|stankonia",
+   "artist": "OutKast",
+   "album": "Stankonia",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "kendrick lamar|good kid, m.a.a.d city",
+   "artist": "Kendrick Lamar",
+   "album": "good kid, m.A.A.d city",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "erykah badu|baduizm",
+   "artist": "Erykah Badu",
+   "album": "Baduizm",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "adele|21",
+   "artist": "Adele",
+   "album": "21",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "beyoncé|lemonade",
+   "artist": "Beyoncé",
+   "album": "Lemonade",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "the beatles|a hard day's night",
+   "artist": "The Beatles",
+   "album": "A Hard Day's Night",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "the beatles|help!",
+   "artist": "The Beatles",
+   "album": "Help!",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "the beatles|let it be",
+   "artist": "The Beatles",
+   "album": "Let It Be",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "the beatles|magical mystery tour",
+   "artist": "The Beatles",
+   "album": "Magical Mystery Tour",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "the rolling stones|aftermath",
+   "artist": "The Rolling Stones",
+   "album": "Aftermath",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "bob dylan|desire",
+   "artist": "Bob Dylan",
+   "album": "Desire",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "led zeppelin|led zeppelin",
+   "artist": "Led Zeppelin",
+   "album": "Led Zeppelin",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "led zeppelin|physical graffiti",
+   "artist": "Led Zeppelin",
+   "album": "Physical Graffiti",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "led zeppelin|houses of the holy",
+   "artist": "Led Zeppelin",
+   "album": "Houses of the Holy",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "pink floyd|animals",
+   "artist": "Pink Floyd",
+   "album": "Animals",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "pink floyd|the wall",
+   "artist": "Pink Floyd",
+   "album": "The Wall",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "pink floyd|meddle",
+   "artist": "Pink Floyd",
+   "album": "Meddle",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "pink floyd|the piper at the gates of dawn",
+   "artist": "Pink Floyd",
+   "album": "The Piper at the Gates of Dawn",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "the jimi hendrix experience|axis: bold as love",
+   "artist": "The Jimi Hendrix Experience",
+   "album": "Axis: Bold as Love",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "the who|tommy",
+   "artist": "The Who",
+   "album": "Tommy",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "the who|quadrophenia",
+   "artist": "The Who",
+   "album": "Quadrophenia",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "the kinks|the kinks are the village green preservation society",
+   "artist": "The Kinks",
+   "album": "The Kinks Are the Village Green Preservation Society",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "the kinks|something else by the kinks",
+   "artist": "The Kinks",
+   "album": "Something Else by The Kinks",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "the byrds|sweetheart of the rodeo",
+   "artist": "The Byrds",
+   "album": "Sweetheart of the Rodeo",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "the byrds|the notorious byrd brothers",
+   "artist": "The Byrds",
+   "album": "The Notorious Byrd Brothers",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "cream|disraeli gears",
+   "artist": "Cream",
+   "album": "Disraeli Gears",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "creedence clearwater revival|cosmo's factory",
+   "artist": "Creedence Clearwater Revival",
+   "album": "Cosmo's Factory",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "creedence clearwater revival|green river",
+   "artist": "Creedence Clearwater Revival",
+   "album": "Green River",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "the band|the band",
+   "artist": "The Band",
+   "album": "The Band",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "the band|music from big pink",
+   "artist": "The Band",
+   "album": "Music from Big Pink",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "the doors|l.a. woman",
+   "artist": "The Doors",
+   "album": "L.A. Woman",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "the doors|strange days",
+   "artist": "The Doors",
+   "album": "Strange Days",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "jefferson airplane|surrealistic pillow",
+   "artist": "Jefferson Airplane",
+   "album": "Surrealistic Pillow",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "grateful dead|american beauty",
+   "artist": "Grateful Dead",
+   "album": "American Beauty",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "grateful dead|workingman's dead",
+   "artist": "Grateful Dead",
+   "album": "Workingman's Dead",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "janis joplin|pearl",
+   "artist": "Janis Joplin",
+   "album": "Pearl",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "big brother & the holding company|cheap thrills",
+   "artist": "Big Brother & the Holding Company",
+   "album": "Cheap Thrills",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "the allman brothers band|at fillmore east",
+   "artist": "The Allman Brothers Band",
+   "album": "At Fillmore East",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "lynyrd skynyrd|(pronounced 'lĕh-'nérd 'skin-'nérd)",
+   "artist": "Lynyrd Skynyrd",
+   "album": "(Pronounced 'Lĕh-'nérd 'Skin-'nérd)",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "derek and the dominos|layla and other assorted love songs",
+   "artist": "Derek and the Dominos",
+   "album": "Layla and Other Assorted Love Songs",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "santana|abraxas",
+   "artist": "Santana",
+   "album": "Abraxas",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "sly & the family stone|stand!",
+   "artist": "Sly & the Family Stone",
+   "album": "Stand!",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "the stooges|the stooges",
+   "artist": "The Stooges",
+   "album": "The Stooges",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "mc5|kick out the jams",
+   "artist": "MC5",
+   "album": "Kick Out the Jams",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "the velvet underground|the velvet underground",
+   "artist": "The Velvet Underground",
+   "album": "The Velvet Underground",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "the velvet underground|loaded",
+   "artist": "The Velvet Underground",
+   "album": "Loaded",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "lou reed|transformer",
+   "artist": "Lou Reed",
+   "album": "Transformer",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "lou reed|berlin",
+   "artist": "Lou Reed",
+   "album": "Berlin",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "david bowie|station to station",
+   "artist": "David Bowie",
+   "album": "Station to Station",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "david bowie|aladdin sane",
+   "artist": "David Bowie",
+   "album": "Aladdin Sane",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "david bowie|blackstar",
+   "artist": "David Bowie",
+   "album": "Blackstar",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "roxy music|for your pleasure",
+   "artist": "Roxy Music",
+   "album": "For Your Pleasure",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "roxy music|roxy music",
+   "artist": "Roxy Music",
+   "album": "Roxy Music",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "roxy music|avalon",
+   "artist": "Roxy Music",
+   "album": "Avalon",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "brian eno|here come the warm jets",
+   "artist": "Brian Eno",
+   "album": "Here Come the Warm Jets",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "t. rex|electric warrior",
+   "artist": "T. Rex",
+   "album": "Electric Warrior",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "t. rex|the slider",
+   "artist": "T. Rex",
+   "album": "The Slider",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "queen|sheer heart attack",
+   "artist": "Queen",
+   "album": "Sheer Heart Attack",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "queen|news of the world",
+   "artist": "Queen",
+   "album": "News of the World",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "elton john|honky château",
+   "artist": "Elton John",
+   "album": "Honky Château",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "wings|band on the run",
+   "artist": "Wings",
+   "album": "Band on the Run",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "paul mccartney|ram",
+   "artist": "Paul McCartney",
+   "album": "Ram",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "john lennon|imagine",
+   "artist": "John Lennon",
+   "album": "Imagine",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "neil young|on the beach",
+   "artist": "Neil Young",
+   "album": "On the Beach",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "neil young|tonight's the night",
+   "artist": "Neil Young",
+   "album": "Tonight's the Night",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "neil young|rust never sleeps",
+   "artist": "Neil Young",
+   "album": "Rust Never Sleeps",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "neil young & crazy horse|everybody knows this is nowhere",
+   "artist": "Neil Young & Crazy Horse",
+   "album": "Everybody Knows This Is Nowhere",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "crosby, stills, nash & young|déjà vu",
+   "artist": "Crosby, Stills, Nash & Young",
+   "album": "Déjà Vu",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "joni mitchell|court and spark",
+   "artist": "Joni Mitchell",
+   "album": "Court and Spark",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "joni mitchell|hejira",
+   "artist": "Joni Mitchell",
+   "album": "Hejira",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "joni mitchell|ladies of the canyon",
+   "artist": "Joni Mitchell",
+   "album": "Ladies of the Canyon",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "van morrison|moondance",
+   "artist": "Van Morrison",
+   "album": "Moondance",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "leonard cohen|songs of love and hate",
+   "artist": "Leonard Cohen",
+   "album": "Songs of Love and Hate",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "leonard cohen|i'm your man",
+   "artist": "Leonard Cohen",
+   "album": "I'm Your Man",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "nick drake|pink moon",
+   "artist": "Nick Drake",
+   "album": "Pink Moon",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "nick drake|five leaves left",
+   "artist": "Nick Drake",
+   "album": "Five Leaves Left",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "nick drake|bryter layter",
+   "artist": "Nick Drake",
+   "album": "Bryter Layter",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "cat stevens|tea for the tillerman",
+   "artist": "Cat Stevens",
+   "album": "Tea for the Tillerman",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "simon & garfunkel|bookends",
+   "artist": "Simon & Garfunkel",
+   "album": "Bookends",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "paul simon|paul simon",
+   "artist": "Paul Simon",
+   "album": "Paul Simon",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "james taylor|sweet baby james",
+   "artist": "James Taylor",
+   "album": "Sweet Baby James",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "jackson browne|late for the sky",
+   "artist": "Jackson Browne",
+   "album": "Late for the Sky",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "randy newman|sail away",
+   "artist": "Randy Newman",
+   "album": "Sail Away",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "randy newman|good old boys",
+   "artist": "Randy Newman",
+   "album": "Good Old Boys",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "harry nilsson|nilsson schmilsson",
+   "artist": "Harry Nilsson",
+   "album": "Nilsson Schmilsson",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "todd rundgren|something-anything?",
+   "artist": "Todd Rundgren",
+   "album": "Something/Anything?",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "big star|#1 record",
+   "artist": "Big Star",
+   "album": "#1 Record",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "big star|radio city",
+   "artist": "Big Star",
+   "album": "Radio City",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "big star|third-sister lovers",
+   "artist": "Big Star",
+   "album": "Third/Sister Lovers",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "tom waits|swordfishtrombones",
+   "artist": "Tom Waits",
+   "album": "Swordfishtrombones",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "tom waits|closing time",
+   "artist": "Tom Waits",
+   "album": "Closing Time",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "tom waits|mule variations",
+   "artist": "Tom Waits",
+   "album": "Mule Variations",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "steely dan|pretzel logic",
+   "artist": "Steely Dan",
+   "album": "Pretzel Logic",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "steely dan|can't buy a thrill",
+   "artist": "Steely Dan",
+   "album": "Can't Buy a Thrill",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "steely dan|gaucho",
+   "artist": "Steely Dan",
+   "album": "Gaucho",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "fleetwood mac|tusk",
+   "artist": "Fleetwood Mac",
+   "album": "Tusk",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "fleetwood mac|fleetwood mac",
+   "artist": "Fleetwood Mac",
+   "album": "Fleetwood Mac",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "bruce springsteen|darkness on the edge of town",
+   "artist": "Bruce Springsteen",
+   "album": "Darkness on the Edge of Town",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "bruce springsteen|nebraska",
+   "artist": "Bruce Springsteen",
+   "album": "Nebraska",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "bruce springsteen|born in the u.s.a.",
+   "artist": "Bruce Springsteen",
+   "album": "Born in the U.S.A.",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "bruce springsteen|the river",
+   "artist": "Bruce Springsteen",
+   "album": "The River",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "tom petty|full moon fever",
+   "artist": "Tom Petty",
+   "album": "Full Moon Fever",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "tom petty and the heartbreakers|damn the torpedoes",
+   "artist": "Tom Petty and the Heartbreakers",
+   "album": "Damn the Torpedoes",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "dire straits|brothers in arms",
+   "artist": "Dire Straits",
+   "album": "Brothers in Arms",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "the police|synchronicity",
+   "artist": "The Police",
+   "album": "Synchronicity",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "the police|outlandos d'amour",
+   "artist": "The Police",
+   "album": "Outlandos d'Amour",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "the cars|the cars",
+   "artist": "The Cars",
+   "album": "The Cars",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "blondie|parallel lines",
+   "artist": "Blondie",
+   "album": "Parallel Lines",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "talking heads|fear of music",
+   "artist": "Talking Heads",
+   "album": "Fear of Music",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "talking heads|more songs about buildings and food",
+   "artist": "Talking Heads",
+   "album": "More Songs About Buildings and Food",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "talking heads|speaking in tongues",
+   "artist": "Talking Heads",
+   "album": "Speaking in Tongues",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "talking heads|stop making sense",
+   "artist": "Talking Heads",
+   "album": "Stop Making Sense",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "elvis costello|my aim is true",
+   "artist": "Elvis Costello",
+   "album": "My Aim Is True",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "elvis costello and the attractions|armed forces",
+   "artist": "Elvis Costello and The Attractions",
+   "album": "Armed Forces",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "the jam|all mod cons",
+   "artist": "The Jam",
+   "album": "All Mod Cons",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "the jam|sound affects",
+   "artist": "The Jam",
+   "album": "Sound Affects",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "the specials|the specials",
+   "artist": "The Specials",
+   "album": "The Specials",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "the pogues|rum sodomy & the lash",
+   "artist": "The Pogues",
+   "album": "Rum Sodomy & the Lash",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "dexys midnight runners|searching for the young soul rebels",
+   "artist": "Dexys Midnight Runners",
+   "album": "Searching for the Young Soul Rebels",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "kate bush|the kick inside",
+   "artist": "Kate Bush",
+   "album": "The Kick Inside",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "kate bush|the dreaming",
+   "artist": "Kate Bush",
+   "album": "The Dreaming",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "peter gabriel|so",
+   "artist": "Peter Gabriel",
+   "album": "So",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "peter gabriel|peter gabriel (melt)",
+   "artist": "Peter Gabriel",
+   "album": "Peter Gabriel (Melt)",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "genesis|selling england by the pound",
+   "artist": "Genesis",
+   "album": "Selling England by the Pound",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "genesis|the lamb lies down on broadway",
+   "artist": "Genesis",
+   "album": "The Lamb Lies Down on Broadway",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "yes|close to the edge",
+   "artist": "Yes",
+   "album": "Close to the Edge",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "yes|fragile",
+   "artist": "Yes",
+   "album": "Fragile",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "king crimson|red",
+   "artist": "King Crimson",
+   "album": "Red",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "jethro tull|aqualung",
+   "artist": "Jethro Tull",
+   "album": "Aqualung",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "jethro tull|thick as a brick",
+   "artist": "Jethro Tull",
+   "album": "Thick as a Brick",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "mike oldfield|tubular bells",
+   "artist": "Mike Oldfield",
+   "album": "Tubular Bells",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "rush|moving pictures",
+   "artist": "Rush",
+   "album": "Moving Pictures",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "rush|2112",
+   "artist": "Rush",
+   "album": "2112",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "deep purple|machine head",
+   "artist": "Deep Purple",
+   "album": "Machine Head",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "deep purple|in rock",
+   "artist": "Deep Purple",
+   "album": "In Rock",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "black sabbath|master of reality",
+   "artist": "Black Sabbath",
+   "album": "Master of Reality",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "black sabbath|vol. 4",
+   "artist": "Black Sabbath",
+   "album": "Vol. 4",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "black sabbath|sabbath bloody sabbath",
+   "artist": "Black Sabbath",
+   "album": "Sabbath Bloody Sabbath",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "ozzy osbourne|blizzard of ozz",
+   "artist": "Ozzy Osbourne",
+   "album": "Blizzard of Ozz",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "judas priest|british steel",
+   "artist": "Judas Priest",
+   "album": "British Steel",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "judas priest|painkiller",
+   "artist": "Judas Priest",
+   "album": "Painkiller",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "iron maiden|powerslave",
+   "artist": "Iron Maiden",
+   "album": "Powerslave",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "motörhead|ace of spades",
+   "artist": "Motörhead",
+   "album": "Ace of Spades",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "dio|holy diver",
+   "artist": "Dio",
+   "album": "Holy Diver",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "van halen|van halen",
+   "artist": "Van Halen",
+   "album": "Van Halen",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "van halen|1984",
+   "artist": "Van Halen",
+   "album": "1984",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "def leppard|hysteria",
+   "artist": "Def Leppard",
+   "album": "Hysteria",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "aerosmith|rocks",
+   "artist": "Aerosmith",
+   "album": "Rocks",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "aerosmith|toys in the attic",
+   "artist": "Aerosmith",
+   "album": "Toys in the Attic",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "kiss|destroyer",
+   "artist": "KISS",
+   "album": "Destroyer",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "alice cooper|billion dollar babies",
+   "artist": "Alice Cooper",
+   "album": "Billion Dollar Babies",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "thin lizzy|jailbreak",
+   "artist": "Thin Lizzy",
+   "album": "Jailbreak",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "boston|boston",
+   "artist": "Boston",
+   "album": "Boston",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "meat loaf|bat out of hell",
+   "artist": "Meat Loaf",
+   "album": "Bat Out of Hell",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "metallica|ride the lightning",
+   "artist": "Metallica",
+   "album": "Ride the Lightning",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "metallica|...and justice for all",
+   "artist": "Metallica",
+   "album": "...And Justice for All",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "metallica|metallica (the black album)",
+   "artist": "Metallica",
+   "album": "Metallica (The Black Album)",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "megadeth|rust in peace",
+   "artist": "Megadeth",
+   "album": "Rust in Peace",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "megadeth|peace sells... but who's buying?",
+   "artist": "Megadeth",
+   "album": "Peace Sells... but Who's Buying?",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "pantera|vulgar display of power",
+   "artist": "Pantera",
+   "album": "Vulgar Display of Power",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "rage against the machine|rage against the machine",
+   "artist": "Rage Against the Machine",
+   "album": "Rage Against the Machine",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "tool|ænima",
+   "artist": "Tool",
+   "album": "Ænima",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "tool|lateralus",
+   "artist": "Tool",
+   "album": "Lateralus",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "nine inch nails|the downward spiral",
+   "artist": "Nine Inch Nails",
+   "album": "The Downward Spiral",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "nine inch nails|pretty hate machine",
+   "artist": "Nine Inch Nails",
+   "album": "Pretty Hate Machine",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "faith no more|angel dust",
+   "artist": "Faith No More",
+   "album": "Angel Dust",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "jane's addiction|ritual de lo habitual",
+   "artist": "Jane's Addiction",
+   "album": "Ritual de lo Habitual",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "red hot chili peppers|blood sugar sex magik",
+   "artist": "Red Hot Chili Peppers",
+   "album": "Blood Sugar Sex Magik",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "red hot chili peppers|californication",
+   "artist": "Red Hot Chili Peppers",
+   "album": "Californication",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "guns n' roses|use your illusion i",
+   "artist": "Guns N' Roses",
+   "album": "Use Your Illusion I",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "nirvana|in utero",
+   "artist": "Nirvana",
+   "album": "In Utero",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "nirvana|mtv unplugged in new york",
+   "artist": "Nirvana",
+   "album": "MTV Unplugged in New York",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "pearl jam|vs.",
+   "artist": "Pearl Jam",
+   "album": "Vs.",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "soundgarden|superunknown",
+   "artist": "Soundgarden",
+   "album": "Superunknown",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "alice in chains|dirt",
+   "artist": "Alice in Chains",
+   "album": "Dirt",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "smashing pumpkins|siamese dream",
+   "artist": "Smashing Pumpkins",
+   "album": "Siamese Dream",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "smashing pumpkins|mellon collie and the infinite sadness",
+   "artist": "Smashing Pumpkins",
+   "album": "Mellon Collie and the Infinite Sadness",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "weezer|weezer (blue album)",
+   "artist": "Weezer",
+   "album": "Weezer (Blue Album)",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "weezer|pinkerton",
+   "artist": "Weezer",
+   "album": "Pinkerton",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "green day|dookie",
+   "artist": "Green Day",
+   "album": "Dookie",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "green day|american idiot",
+   "artist": "Green Day",
+   "album": "American Idiot",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "foo fighters|the colour and the shape",
+   "artist": "Foo Fighters",
+   "album": "The Colour and the Shape",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "hole|live through this",
+   "artist": "Hole",
+   "album": "Live Through This",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "deftones|white pony",
+   "artist": "Deftones",
+   "album": "White Pony",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "system of a down|toxicity",
+   "artist": "System of a Down",
+   "album": "Toxicity",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "linkin park|hybrid theory",
+   "artist": "Linkin Park",
+   "album": "Hybrid Theory",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "queens of the stone age|songs for the deaf",
+   "artist": "Queens of the Stone Age",
+   "album": "Songs for the Deaf",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "the white stripes|elephant",
+   "artist": "The White Stripes",
+   "album": "Elephant",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "the white stripes|white blood cells",
+   "artist": "The White Stripes",
+   "album": "White Blood Cells",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "the strokes|room on fire",
+   "artist": "The Strokes",
+   "album": "Room on Fire",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "arctic monkeys|whatever people say i am, that's what i'm not",
+   "artist": "Arctic Monkeys",
+   "album": "Whatever People Say I Am, That's What I'm Not",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "arctic monkeys|am",
+   "artist": "Arctic Monkeys",
+   "album": "AM",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "the libertines|up the bracket",
+   "artist": "The Libertines",
+   "album": "Up the Bracket",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "franz ferdinand|franz ferdinand",
+   "artist": "Franz Ferdinand",
+   "album": "Franz Ferdinand",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "bloc party|silent alarm",
+   "artist": "Bloc Party",
+   "album": "Silent Alarm",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "interpol|turn on the bright lights",
+   "artist": "Interpol",
+   "album": "Turn On the Bright Lights",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "the killers|hot fuss",
+   "artist": "The Killers",
+   "album": "Hot Fuss",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "yeah yeah yeahs|fever to tell",
+   "artist": "Yeah Yeah Yeahs",
+   "album": "Fever to Tell",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "lcd soundsystem|sound of silver",
+   "artist": "LCD Soundsystem",
+   "album": "Sound of Silver",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "arcade fire|the suburbs",
+   "artist": "Arcade Fire",
+   "album": "The Suburbs",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "the national|boxer",
+   "artist": "The National",
+   "album": "Boxer",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "vampire weekend|modern vampires of the city",
+   "artist": "Vampire Weekend",
+   "album": "Modern Vampires of the City",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "vampire weekend|vampire weekend",
+   "artist": "Vampire Weekend",
+   "album": "Vampire Weekend",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "fleet foxes|fleet foxes",
+   "artist": "Fleet Foxes",
+   "album": "Fleet Foxes",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "bon iver|for emma, forever ago",
+   "artist": "Bon Iver",
+   "album": "For Emma, Forever Ago",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "bon iver|bon iver, bon iver",
+   "artist": "Bon Iver",
+   "album": "Bon Iver, Bon Iver",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "sufjan stevens|illinois",
+   "artist": "Sufjan Stevens",
+   "album": "Illinois",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "sufjan stevens|carrie & lowell",
+   "artist": "Sufjan Stevens",
+   "album": "Carrie & Lowell",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "elliott smith|either-or",
+   "artist": "Elliott Smith",
+   "album": "Either/Or",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "elliott smith|xo",
+   "artist": "Elliott Smith",
+   "album": "XO",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "neutral milk hotel|in the aeroplane over the sea",
+   "artist": "Neutral Milk Hotel",
+   "album": "In the Aeroplane Over the Sea",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "the microphones|the glow pt. 2",
+   "artist": "The Microphones",
+   "album": "The Glow Pt. 2",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "modest mouse|the moon & antarctica",
+   "artist": "Modest Mouse",
+   "album": "The Moon & Antarctica",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "modest mouse|the lonesome crowded west",
+   "artist": "Modest Mouse",
+   "album": "The Lonesome Crowded West",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "pavement|slanted and enchanted",
+   "artist": "Pavement",
+   "album": "Slanted and Enchanted",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "pavement|crooked rain, crooked rain",
+   "artist": "Pavement",
+   "album": "Crooked Rain, Crooked Rain",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "built to spill|perfect from now on",
+   "artist": "Built to Spill",
+   "album": "Perfect from Now On",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "yo la tengo|i can hear the heart beating as one",
+   "artist": "Yo La Tengo",
+   "album": "I Can Hear the Heart Beating as One",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "sonic youth|goo",
+   "artist": "Sonic Youth",
+   "album": "Goo",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "sonic youth|sister",
+   "artist": "Sonic Youth",
+   "album": "Sister",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "sonic youth|evol",
+   "artist": "Sonic Youth",
+   "album": "EVOL",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "pixies|surfer rosa",
+   "artist": "Pixies",
+   "album": "Surfer Rosa",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "pixies|bossanova",
+   "artist": "Pixies",
+   "album": "Bossanova",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "the breeders|last splash",
+   "artist": "The Breeders",
+   "album": "Last Splash",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "dinosaur jr.|you're living all over me",
+   "artist": "Dinosaur Jr.",
+   "album": "You're Living All Over Me",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "hüsker dü|zen arcade",
+   "artist": "Hüsker Dü",
+   "album": "Zen Arcade",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "the replacements|let it be",
+   "artist": "The Replacements",
+   "album": "Let It Be",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "the replacements|tim",
+   "artist": "The Replacements",
+   "album": "Tim",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "minutemen|double nickels on the dime",
+   "artist": "Minutemen",
+   "album": "Double Nickels on the Dime",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "fugazi|repeater",
+   "artist": "Fugazi",
+   "album": "Repeater",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "fugazi|13 songs",
+   "artist": "Fugazi",
+   "album": "13 Songs",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "black flag|damaged",
+   "artist": "Black Flag",
+   "album": "Damaged",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "dead kennedys|fresh fruit for rotting vegetables",
+   "artist": "Dead Kennedys",
+   "album": "Fresh Fruit for Rotting Vegetables",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "bad brains|bad brains",
+   "artist": "Bad Brains",
+   "album": "Bad Brains",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "misfits|walk among us",
+   "artist": "Misfits",
+   "album": "Walk Among Us",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "descendents|milo goes to college",
+   "artist": "Descendents",
+   "album": "Milo Goes to College",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "x|los angeles",
+   "artist": "X",
+   "album": "Los Angeles",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "happy mondays|pills 'n' thrills and bellyaches",
+   "artist": "Happy Mondays",
+   "album": "Pills 'n' Thrills and Bellyaches",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "primal scream|screamadelica",
+   "artist": "Primal Scream",
+   "album": "Screamadelica",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "the la's|the la's",
+   "artist": "The La's",
+   "album": "The La's",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "ride|nowhere",
+   "artist": "Ride",
+   "album": "Nowhere",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "slowdive|souvlaki",
+   "artist": "Slowdive",
+   "album": "Souvlaki",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "the jesus and mary chain|psychocandy",
+   "artist": "The Jesus and Mary Chain",
+   "album": "Psychocandy",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "the jesus and mary chain|darklands",
+   "artist": "The Jesus and Mary Chain",
+   "album": "Darklands",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "spiritualized|ladies and gentlemen we are floating in space",
+   "artist": "Spiritualized",
+   "album": "Ladies and Gentlemen We Are Floating in Space",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "the verve|urban hymns",
+   "artist": "The Verve",
+   "album": "Urban Hymns",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "cocteau twins|heaven or las vegas",
+   "artist": "Cocteau Twins",
+   "album": "Heaven or Las Vegas",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "cocteau twins|treasure",
+   "artist": "Cocteau Twins",
+   "album": "Treasure",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "slowdive|just for a day",
+   "artist": "Slowdive",
+   "album": "Just for a Day",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "mazzy star|so tonight that i might see",
+   "artist": "Mazzy Star",
+   "album": "So Tonight That I Might See",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "galaxie 500|on fire",
+   "artist": "Galaxie 500",
+   "album": "On Fire",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "low|things we lost in the fire",
+   "artist": "Low",
+   "album": "Things We Lost in the Fire",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "beach house|teen dream",
+   "artist": "Beach House",
+   "album": "Teen Dream",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "beach house|bloom",
+   "artist": "Beach House",
+   "album": "Bloom",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "deerhunter|halcyon digest",
+   "artist": "Deerhunter",
+   "album": "Halcyon Digest",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "animal collective|merriweather post pavilion",
+   "artist": "Animal Collective",
+   "album": "Merriweather Post Pavilion",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "panda bear|person pitch",
+   "artist": "Panda Bear",
+   "album": "Person Pitch",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "grizzly bear|veckatimest",
+   "artist": "Grizzly Bear",
+   "album": "Veckatimest",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "dirty projectors|bitte orca",
+   "artist": "Dirty Projectors",
+   "album": "Bitte Orca",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "joanna newsom|ys",
+   "artist": "Joanna Newsom",
+   "album": "Ys",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "belle and sebastian|if you're feeling sinister",
+   "artist": "Belle and Sebastian",
+   "album": "If You're Feeling Sinister",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "the magnetic fields|69 love songs",
+   "artist": "The Magnetic Fields",
+   "album": "69 Love Songs",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "the postal service|give up",
+   "artist": "The Postal Service",
+   "album": "Give Up",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "death cab for cutie|transatlanticism",
+   "artist": "Death Cab for Cutie",
+   "album": "Transatlanticism",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "the shins|chutes too narrow",
+   "artist": "The Shins",
+   "album": "Chutes Too Narrow",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "the shins|oh, inverted world",
+   "artist": "The Shins",
+   "album": "Oh, Inverted World",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "bright eyes|i'm wide awake, it's morning",
+   "artist": "Bright Eyes",
+   "album": "I'm Wide Awake, It's Morning",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "wilco|being there",
+   "artist": "Wilco",
+   "album": "Being There",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "wilco|summerteeth",
+   "artist": "Wilco",
+   "album": "Summerteeth",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "throbbing gristle|20 jazz funk greats",
+   "artist": "Throbbing Gristle",
+   "album": "20 Jazz Funk Greats",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "orchestral manoeuvres in the dark|architecture & morality",
+   "artist": "Orchestral Manoeuvres in the Dark",
+   "album": "Architecture & Morality",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "rhythim is rhythim|strings of life",
+   "artist": "Rhythim Is Rhythim",
+   "album": "Strings of Life",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "phuture|acid tracks",
+   "artist": "Phuture",
+   "album": "Acid Tracks",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "frankie knuckles|your love",
+   "artist": "Frankie Knuckles",
+   "album": "Your Love",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "mr. fingers|can you feel it",
+   "artist": "Mr. Fingers",
+   "album": "Can You Feel It",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "plastikman|consumed",
+   "artist": "Plastikman",
+   "album": "Consumed",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "goblin|suspiria",
+   "artist": "Goblin",
+   "album": "Suspiria",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "john carpenter|halloween",
+   "artist": "John Carpenter",
+   "album": "Halloween",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "biosphere|substrata",
+   "artist": "Biosphere",
+   "album": "Substrata",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "parliament|mothership connection",
+   "artist": "Parliament",
+   "album": "Mothership Connection",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "james brown|the payback",
+   "artist": "James Brown",
+   "album": "The Payback",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "james brown|cold sweat",
+   "artist": "James Brown",
+   "album": "Cold Sweat",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "muddy waters|at newport 1960",
+   "artist": "Muddy Waters",
+   "album": "At Newport 1960",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "john mayall & the bluesbreakers|blues breakers with eric clapton",
+   "artist": "John Mayall & The Bluesbreakers",
+   "album": "Blues Breakers with Eric Clapton",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "bobby \"blue\" bland|two steps from the blues",
+   "artist": "Bobby \"Blue\" Bland",
+   "album": "Two Steps from the Blues",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "elizabeth cotten|folksongs and instrumentals with guitar",
+   "artist": "Elizabeth Cotten",
+   "album": "Folksongs and Instrumentals with Guitar",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "professor longhair|crawfish fiesta",
+   "artist": "Professor Longhair",
+   "album": "Crawfish Fiesta",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "dr. john|dr. john's gumbo",
+   "artist": "Dr. John",
+   "album": "Dr. John's Gumbo",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "howlin' wolf|moanin' in the moonlight",
+   "artist": "Howlin' Wolf",
+   "album": "Moanin' in the Moonlight",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "sonny boy williamson ii|down and out blues",
+   "artist": "Sonny Boy Williamson II",
+   "album": "Down and Out Blues",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "junior wells|hoodoo man blues",
+   "artist": "Junior Wells",
+   "album": "Hoodoo Man Blues",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "otis rush|right place, wrong time",
+   "artist": "Otis Rush",
+   "album": "Right Place, Wrong Time",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "jimmy reed|i'm jimmy reed",
+   "artist": "Jimmy Reed",
+   "album": "I'm Jimmy Reed",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "willie dixon|i am the blues",
+   "artist": "Willie Dixon",
+   "album": "I Am the Blues",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "the paul butterfield blues band|the paul butterfield blues band",
+   "artist": "The Paul Butterfield Blues Band",
+   "album": "The Paul Butterfield Blues Band",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "toumani diabaté & ballaké sissoko|new ancient strings",
+   "artist": "Toumani Diabaté & Ballaké Sissoko",
+   "album": "New Ancient Strings",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "manu dibango|soul makossa",
+   "artist": "Manu Dibango",
+   "album": "Soul Makossa",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "franco & le tpok jazz|mario",
+   "artist": "Franco & le TPOK Jazz",
+   "album": "Mario",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "mulatu astatke|ethio jazz",
+   "artist": "Mulatu Astatke",
+   "album": "Ethio Jazz",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "the master musicians of jajouka|brian jones presents the pipes of pan at joujouka",
+   "artist": "The Master Musicians of Jajouka",
+   "album": "Brian Jones Presents the Pipes of Pan at Joujouka",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "hamza el din|escalay: the water wheel",
+   "artist": "Hamza El Din",
+   "album": "Escalay: The Water Wheel",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "umm kulthum|enta omri",
+   "artist": "Umm Kulthum",
+   "album": "Enta Omri",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "celia cruz|son con guaguancó",
+   "artist": "Celia Cruz",
+   "album": "Son con Guaguancó",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "celia cruz & johnny pacheco|celia & johnny",
+   "artist": "Celia Cruz & Johnny Pacheco",
+   "album": "Celia & Johnny",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "willie colón|cosa nuestra",
+   "artist": "Willie Colón",
+   "album": "Cosa Nuestra",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "eddie palmieri|azucar pa' ti",
+   "artist": "Eddie Palmieri",
+   "album": "Azucar Pa' Ti",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "tito puente|dance mania",
+   "artist": "Tito Puente",
+   "album": "Dance Mania",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "machito|kenya",
+   "artist": "Machito",
+   "album": "Kenya",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "fania all-stars|live at the cheetah, vol. 1",
+   "artist": "Fania All-Stars",
+   "album": "Live at the Cheetah, Vol. 1",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "dorival caymmi|caymmi e seu violão",
+   "artist": "Dorival Caymmi",
+   "album": "Caymmi e seu Violão",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "belchior|alucinação",
+   "artist": "Belchior",
+   "album": "Alucinação",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "elis regina|falso brilhante",
+   "artist": "Elis Regina",
+   "album": "Falso Brilhante",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "mercedes sosa|mercedes sosa en argentina",
+   "artist": "Mercedes Sosa",
+   "album": "Mercedes Sosa en Argentina",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "ali akbar khan|music of india: morning and evening ragas",
+   "artist": "Ali Akbar Khan",
+   "album": "Music of India: Morning and Evening Ragas",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "shivkumar sharma, brij bhushan kabra & hariprasad chaurasia|call of the valley",
+   "artist": "Shivkumar Sharma, Brij Bhushan Kabra & Hariprasad Chaurasia",
+   "album": "Call of the Valley",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "a.r. rahman|roja",
+   "artist": "A.R. Rahman",
+   "album": "Roja",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "山口五郎|a bell ringing in the empty sky",
+   "artist": "山口五郎",
+   "album": "A Bell Ringing in the Empty Sky",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "paco de lucía|fuente y caudal",
+   "artist": "Paco de Lucía",
+   "album": "Fuente y caudal",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "paco de lucía|siroco",
+   "artist": "Paco de Lucía",
+   "album": "Siroco",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "al di meola, john mclaughlin & paco de lucía|friday night in san francisco",
+   "artist": "Al Di Meola, John McLaughlin & Paco de Lucía",
+   "album": "Friday Night in San Francisco",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "enrique morente & lagartija nick|omega",
+   "artist": "Enrique Morente & Lagartija Nick",
+   "album": "Omega",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "amália rodrigues|busto",
+   "artist": "Amália Rodrigues",
+   "album": "Busto",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "amália rodrigues|com que voz",
+   "artist": "Amália Rodrigues",
+   "album": "Com que voz",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "alan stivell|renaissance de la harpe celtique",
+   "artist": "Alan Stivell",
+   "album": "Renaissance de la harpe celtique",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "fabrizio de andré|crêuza de mä",
+   "artist": "Fabrizio De André",
+   "album": "Crêuza de mä",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "max romeo & the upsetters|war ina babylon",
+   "artist": "Max Romeo & The Upsetters",
+   "album": "War ina Babylon",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "junior murvin|police & thieves",
+   "artist": "Junior Murvin",
+   "album": "Police & Thieves",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "the mighty diamonds|right time",
+   "artist": "The Mighty Diamonds",
+   "album": "Right Time",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "hugh mundell|africa must be free by 1983",
+   "artist": "Hugh Mundell",
+   "album": "Africa Must Be Free by 1983",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "the upsetters|blackboard jungle dub",
+   "artist": "The Upsetters",
+   "album": "Blackboard Jungle Dub",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "woody guthrie|dust bowl ballads",
+   "artist": "Woody Guthrie",
+   "album": "Dust Bowl Ballads",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "nitty gritty dirt band|will the circle be unbroken",
+   "artist": "Nitty Gritty Dirt Band",
+   "album": "Will the Circle Be Unbroken",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "flatt & scruggs|foggy mountain banjo",
+   "artist": "Flatt & Scruggs",
+   "album": "Foggy Mountain Banjo",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "j.d. crowe & the new south|j.d. crowe & the new south",
+   "artist": "J.D. Crowe & The New South",
+   "album": "J.D. Crowe & The New South",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "richard & linda thompson|shoot out the lights",
+   "artist": "Richard & Linda Thompson",
+   "album": "Shoot Out the Lights",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "楊弦|中國現代民歌集",
+   "artist": "楊弦",
+   "album": "中國現代民歌集",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "齊豫|橄欖樹",
+   "artist": "齊豫",
+   "album": "橄欖樹",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "岡林信康|わたしを断罪せよ",
+   "artist": "岡林信康",
+   "album": "わたしを断罪せよ",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "井上陽水|氷の世界",
+   "artist": "井上陽水",
+   "album": "氷の世界",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "little walter|the best of little walter",
+   "artist": "Little Walter",
+   "album": "The Best of Little Walter",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "bessie smith|the essential bessie smith",
+   "artist": "Bessie Smith",
+   "album": "The Essential Bessie Smith",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "ma rainey|mother of the blues",
+   "artist": "Ma Rainey",
+   "album": "Mother of the Blues",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "charley patton|founder of the delta blues",
+   "artist": "Charley Patton",
+   "album": "Founder of the Delta Blues",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "skip james|the complete early recordings of skip james",
+   "artist": "Skip James",
+   "album": "The Complete Early Recordings of Skip James",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "muddy waters|the best of muddy waters",
+   "artist": "Muddy Waters",
+   "album": "The Best of Muddy Waters",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "hank williams|40 greatest hits",
+   "artist": "Hank Williams",
+   "album": "40 Greatest Hits",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "various artists|éthiopiques 1: golden years of modern ethiopian music 1969-1975",
+   "artist": "Various Artists",
+   "album": "Éthiopiques 1: Golden Years of Modern Ethiopian Music 1969-1975",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "various artists|the indestructible beat of soweto",
+   "artist": "Various Artists",
+   "album": "The Indestructible Beat of Soweto",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "various artists|saturday night fever: the original movie sound track",
+   "artist": "Various Artists",
+   "album": "Saturday Night Fever: The Original Movie Sound Track",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "richard rodgers & oscar hammerstein ii|the sound of music (an original soundtrack recording)",
+   "artist": "Richard Rodgers & Oscar Hammerstein II",
+   "album": "The Sound of Music (An Original Soundtrack Recording)",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "leonard bernstein & stephen sondheim|west side story (original sound track recording)",
+   "artist": "Leonard Bernstein & Stephen Sondheim",
+   "album": "West Side Story (Original Sound Track Recording)",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "steve miller band|fly like an eagle",
+   "artist": "Steve Miller Band",
+   "album": "Fly Like an Eagle",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "madonna|like a virgin",
+   "artist": "Madonna",
+   "album": "Like a Virgin",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "cyndi lauper|she's so unusual",
+   "artist": "Cyndi Lauper",
+   "album": "She's So Unusual",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "the go-go's|beauty and the beat",
+   "artist": "The Go-Go's",
+   "album": "Beauty and the Beat",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "寺尾聰|reflections",
+   "artist": "寺尾聰",
+   "album": "Reflections",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "はっぴいえんど|はっぴいえんど",
+   "artist": "はっぴいえんど",
+   "album": "はっぴいえんど",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "佐野元春|someday",
+   "artist": "佐野元春",
+   "album": "SOMEDAY",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "the blue hearts|the blue hearts",
+   "artist": "THE BLUE HEARTS",
+   "album": "THE BLUE HEARTS",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "サディスティック・ミカ・バンド|黒船",
+   "artist": "サディスティック・ミカ・バンド",
+   "album": "黒船",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "flower travellin' band|satori",
+   "artist": "Flower Travellin' Band",
+   "album": "Satori",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "坂本龍一|戦場のメリークリスマス",
+   "artist": "坂本龍一",
+   "album": "戦場のメリークリスマス",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "frank sinatra|songs for swingin' lovers!",
+   "artist": "Frank Sinatra",
+   "album": "Songs for Swingin' Lovers!",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "ella fitzgerald|mack the knife: ella in berlin",
+   "artist": "Ella Fitzgerald",
+   "album": "Mack the Knife: Ella in Berlin",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "horace silver and the jazz messengers|horace silver and the jazz messengers",
+   "artist": "Horace Silver And The Jazz Messengers",
+   "album": "Horace Silver And The Jazz Messengers",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "john coltrane|\"live\" at the village vanguard",
+   "artist": "John Coltrane",
+   "album": "\"Live\" at the Village Vanguard",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "thelonious monk|genius of modern music, volume 1",
+   "artist": "Thelonious Monk",
+   "album": "Genius of Modern Music, Volume 1",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "charles mingus|charles mingus presents charles mingus",
+   "artist": "Charles Mingus",
+   "album": "Charles Mingus Presents Charles Mingus",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "ella fitzgerald|ella fitzgerald sings the george and ira gershwin song book",
+   "artist": "Ella Fitzgerald",
+   "album": "Ella Fitzgerald Sings the George and Ira Gershwin Song Book",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "lambert, hendricks & ross|sing a song of basie",
+   "artist": "Lambert, Hendricks & Ross",
+   "album": "Sing a Song of Basie",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "duke ellington|masterpieces by ellington",
+   "artist": "Duke Ellington",
+   "album": "Masterpieces by Ellington",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "duke ellington|...and his mother called him bill",
+   "artist": "Duke Ellington",
+   "album": "...And His Mother Called Him Bill",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "ornette coleman|at the \"golden circle\" stockholm, volume one",
+   "artist": "Ornette Coleman",
+   "album": "At the \"Golden Circle\" Stockholm, Volume One",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "wynton marsalis|black codes (from the underground)",
+   "artist": "Wynton Marsalis",
+   "album": "Black Codes (From the Underground)",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "jelly roll morton|birth of the hot",
+   "artist": "Jelly Roll Morton",
+   "album": "Birth of the Hot",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "jerry butler|the ice man cometh",
+   "artist": "Jerry Butler",
+   "album": "The Ice Man Cometh",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "labelle|nightbirds",
+   "artist": "Labelle",
+   "album": "Nightbirds",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "bill withers|live at carnegie hall",
+   "artist": "Bill Withers",
+   "album": "Live at Carnegie Hall",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "me'shell ndegéocello|plantation lullabies",
+   "artist": "Me'Shell Ndegéocello",
+   "album": "Plantation Lullabies",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "sam cooke|portrait of a legend 1951-1964",
+   "artist": "Sam Cooke",
+   "album": "Portrait of a Legend 1951-1964",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "donna summer|love to love you baby",
+   "artist": "Donna Summer",
+   "album": "Love to Love You Baby",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "sparks|no. 1 in heaven",
+   "artist": "Sparks",
+   "album": "No. 1 in Heaven",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "gloria gaynor|never can say goodbye",
+   "artist": "Gloria Gaynor",
+   "album": "Never Can Say Goodbye",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "sylvester|step ii",
+   "artist": "Sylvester",
+   "album": "Step II",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "chuck brown & the soul searchers|bustin' loose",
+   "artist": "Chuck Brown & the Soul Searchers",
+   "album": "Bustin' Loose",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "young disciples|road to freedom",
+   "artist": "Young Disciples",
+   "album": "Road to Freedom",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "model 500|classics",
+   "artist": "Model 500",
+   "album": "Classics",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "jeff mills|mix-up vol. 2: live mix at liquid room, tokyo",
+   "artist": "Jeff Mills",
+   "album": "Mix-Up Vol. 2: Live Mix at Liquid Room, Tokyo",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "various artists|techno! the new dance sound of detroit",
+   "artist": "Various Artists",
+   "album": "Techno! The New Dance Sound of Detroit",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "maurizio|maurizio",
+   "artist": "Maurizio",
+   "album": "Maurizio",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "motorbass|pansoul",
+   "artist": "Motorbass",
+   "album": "Pansoul",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "the art of noise|(who's afraid of) the art of noise?",
+   "artist": "The Art of Noise",
+   "album": "(Who's Afraid of) The Art of Noise?",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "a guy called gerald|28 gun bad boy",
+   "artist": "A Guy Called Gerald",
+   "album": "28 Gun Bad Boy",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "sasha & john digweed|renaissance: the mix collection",
+   "artist": "Sasha & John Digweed",
+   "album": "Renaissance: The Mix Collection",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "brian eno|ambient 4: on land",
+   "artist": "Brian Eno",
+   "album": "Ambient 4: On Land",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "brian eno|apollo: atmospheres and soundtracks",
+   "artist": "Brian Eno",
+   "album": "Apollo: Atmospheres and Soundtracks",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "harold budd & brian eno|ambient 2: the plateaux of mirror",
+   "artist": "Harold Budd & Brian Eno",
+   "album": "Ambient 2: The Plateaux of Mirror",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "harold budd & brian eno|the pearl",
+   "artist": "Harold Budd & Brian Eno",
+   "album": "The Pearl",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "jon hassell - brian eno|fourth world, vol. 1: possible musics",
+   "artist": "Jon Hassell / Brian Eno",
+   "album": "Fourth World, Vol. 1: Possible Musics",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "global communication|76:14",
+   "artist": "Global Communication",
+   "album": "76:14",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "coldcut|journeys by dj: 70 minutes of madness",
+   "artist": "Coldcut",
+   "album": "Journeys by DJ: 70 Minutes of Madness",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "許冠傑|半斤八兩",
+   "artist": "許冠傑",
+   "album": "半斤八兩",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "譚詠麟|愛的根源",
+   "artist": "譚詠麟",
+   "album": "愛的根源",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "梅艷芳|壞女孩",
+   "artist": "梅艷芳",
+   "album": "壞女孩",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "beyond|樂與怒",
+   "artist": "Beyond",
+   "album": "樂與怒",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "林憶蓮|野花",
+   "artist": "林憶蓮",
+   "album": "野花",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "陳奕迅|u87",
+   "artist": "陳奕迅",
+   "album": "U87",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "周杰倫|范特西",
+   "artist": "周杰倫",
+   "album": "范特西",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "陶喆|陶喆同名專輯",
+   "artist": "陶喆",
+   "album": "陶喆同名專輯",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "陶喆|i'm ok",
+   "artist": "陶喆",
+   "album": "I'm OK",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "陶喆|黑色柳丁",
+   "artist": "陶喆",
+   "album": "黑色柳丁",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "孫燕姿|孫燕姿同名專輯",
+   "artist": "孫燕姿",
+   "album": "孫燕姿同名專輯",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "蘇芮|蘇芮專輯",
+   "artist": "蘇芮",
+   "album": "蘇芮專輯",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "張學友|吻別",
+   "artist": "張學友",
+   "album": "吻別",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "張惠妹|姊妹",
+   "artist": "張惠妹",
+   "album": "姊妹",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "張惠妹|bad boy",
+   "artist": "張惠妹",
+   "album": "Bad Boy",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "王菲|天空",
+   "artist": "王菲",
+   "album": "天空",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "阿爆|kinakaian 母親的舌頭",
+   "artist": "阿爆",
+   "album": "kinakaian 母親的舌頭",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "謝宇威|一儕・花樹下",
+   "artist": "謝宇威",
+   "album": "一儕・花樹下",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "ジャックス|ジャックスの世界",
+   "artist": "ジャックス",
+   "album": "ジャックスの世界",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "friction|軋轢",
+   "artist": "FRICTION",
+   "album": "軋轢",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "小沢健二|life",
+   "artist": "小沢健二",
+   "album": "LIFE",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "x japan|blue blood",
+   "artist": "X JAPAN",
+   "album": "BLUE BLOOD",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "boredoms|super ae",
+   "artist": "BOREDOMS",
+   "album": "Super ae",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "서태지와 아이들|서태지와 아이들",
+   "artist": "서태지와 아이들",
+   "album": "서태지와 아이들",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "언니네 이발관|가장 보통의 존재",
+   "artist": "언니네 이발관",
+   "album": "가장 보통의 존재",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "델리스파이스|deli spice",
+   "artist": "델리스파이스",
+   "album": "Deli Spice",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "verbal jint|누명",
+   "artist": "Verbal Jint",
+   "album": "누명",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "f(x)|pink tape",
+   "artist": "f(x)",
+   "album": "Pink Tape",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "bts|love yourself 轉 'tear'",
+   "artist": "BTS",
+   "album": "LOVE YOURSELF 轉 'Tear'",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "suicide|suicide",
+   "artist": "Suicide",
+   "album": "Suicide",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "the clash|the clash",
+   "artist": "The Clash",
+   "album": "The Clash",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "pantera|cowboys from hell",
+   "artist": "Pantera",
+   "album": "Cowboys from Hell",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "death|scream bloody gore",
+   "artist": "Death",
+   "album": "Scream Bloody Gore",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "at the gates|slaughter of the soul",
+   "artist": "At the Gates",
+   "album": "Slaughter of the Soul",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "helloween|keeper of the seven keys: part ii",
+   "artist": "Helloween",
+   "album": "Keeper of the Seven Keys: Part II",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "eyehategod|take as needed for pain",
+   "artist": "Eyehategod",
+   "album": "Take as Needed for Pain",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "r.e.m.|murmur",
+   "artist": "R.E.M.",
+   "album": "Murmur",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "uncle tupelo|no depression",
+   "artist": "Uncle Tupelo",
+   "album": "No Depression",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "grandmaster flash & the furious five|the message",
+   "artist": "Grandmaster Flash & The Furious Five",
+   "album": "The Message",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "dr. dre|2001",
+   "artist": "Dr. Dre",
+   "album": "2001",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "blind willie johnson|the complete blind willie johnson",
+   "artist": "Blind Willie Johnson",
+   "album": "The Complete Blind Willie Johnson",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "the edwin hawkins singers|let us go into the house of the lord",
+   "artist": "The Edwin Hawkins Singers",
+   "album": "Let Us Go Into the House of the Lord",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "james cleveland and the angelic choir|peace be still",
+   "artist": "James Cleveland and the Angelic Choir",
+   "album": "Peace Be Still",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "thomas a. dorsey|precious lord: new recordings of the great songs of thomas a. dorsey",
+   "artist": "Thomas A. Dorsey",
+   "album": "Precious Lord: New Recordings of the Great Songs of Thomas A. Dorsey",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "original dixieland jazz band|the 75th anniversary",
+   "artist": "Original Dixieland Jazz Band",
+   "album": "The 75th Anniversary",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "king oliver|off the record: the complete 1923 jazz band recordings",
+   "artist": "King Oliver",
+   "album": "Off the Record: The Complete 1923 Jazz Band Recordings",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "jelly roll morton|the complete library of congress recordings",
+   "artist": "Jelly Roll Morton",
+   "album": "The Complete Library of Congress Recordings",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "count basie|the complete decca recordings",
+   "artist": "Count Basie",
+   "album": "The Complete Decca Recordings",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "billie holiday|lady day: the complete billie holiday on columbia (1933-1944)",
+   "artist": "Billie Holiday",
+   "album": "Lady Day: The Complete Billie Holiday on Columbia (1933-1944)",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "various artists|from spirituals to swing: the legendary 1938 & 1939 carnegie hall concerts",
+   "artist": "Various Artists",
+   "album": "From Spirituals to Swing: The Legendary 1938 & 1939 Carnegie Hall Concerts",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "various artists|the smithsonian collection of classic jazz",
+   "artist": "Various Artists",
+   "album": "The Smithsonian Collection of Classic Jazz",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "yellowman|mister yellowman",
+   "artist": "Yellowman",
+   "album": "Mister Yellowman",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "ennio morricone|c'era una volta il west",
+   "artist": "Ennio Morricone",
+   "album": "C'era una volta il West",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "ennio morricone|the mission (original sound track from the film)",
+   "artist": "Ennio Morricone",
+   "album": "The Mission (Original Sound Track From the Film)",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "bernard herrmann|psycho",
+   "artist": "Bernard Herrmann",
+   "album": "Psycho",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "jerry goldsmith|planet of the apes",
+   "artist": "Jerry Goldsmith",
+   "album": "Planet of the Apes",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "jerry goldsmith|chinatown: original motion picture soundtrack",
+   "artist": "Jerry Goldsmith",
+   "album": "Chinatown: Original Motion Picture Soundtrack",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "john williams|e.t. the extra-terrestrial",
+   "artist": "John Williams",
+   "album": "E.T. The Extra-Terrestrial",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "henry mancini|the music from peter gunn",
+   "artist": "Henry Mancini",
+   "album": "The Music From Peter Gunn",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "henry mancini|the pink panther",
+   "artist": "Henry Mancini",
+   "album": "The Pink Panther",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "maurice jarre|lawrence of arabia",
+   "artist": "Maurice Jarre",
+   "album": "Lawrence of Arabia",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "miklós rózsa|ben-hur",
+   "artist": "Miklós Rózsa",
+   "album": "Ben-Hur",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "vangelis|blade runner",
+   "artist": "Vangelis",
+   "album": "Blade Runner",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "angelo badalamenti|soundtrack from twin peaks",
+   "artist": "Angelo Badalamenti",
+   "album": "Soundtrack From Twin Peaks",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "miles davis|ascenseur pour l'échafaud",
+   "artist": "Miles Davis",
+   "album": "Ascenseur pour l'échafaud",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "ryuichi sakamoto, david byrne and cong su|the last emperor: original motion picture soundtrack",
+   "artist": "Ryuichi Sakamoto, David Byrne and Cong Su",
+   "album": "The Last Emperor: Original Motion Picture Soundtrack",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "tan dun 譚盾|crouching tiger, hidden dragon",
+   "artist": "Tan Dun 譚盾",
+   "album": "Crouching Tiger, Hidden Dragon",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "趙一豪|把我自己掏出來",
+   "artist": "趙一豪",
+   "album": "把我自己掏出來",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "john williams|indiana jones and the raiders of the lost ark (original motion picture soundtrack)",
+   "artist": "John Williams",
+   "album": "Indiana Jones and the Raiders of the Lost Ark (Original Motion Picture Soundtrack)",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "maurice jarre|doctor zhivago",
+   "artist": "Maurice Jarre",
+   "album": "Doctor Zhivago",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "john williams|schindler's list",
+   "artist": "John Williams",
+   "album": "Schindler's List",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "bernard herrmann|taxi driver",
+   "artist": "Bernard Herrmann",
+   "album": "Taxi Driver",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "jerry goldsmith|the omen",
+   "artist": "Jerry Goldsmith",
+   "album": "The Omen",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "henry mancini|breakfast at tiffany's",
+   "artist": "Henry Mancini",
+   "album": "Breakfast at Tiffany's",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "elmer bernstein and orchestra|the man with the golden arm",
+   "artist": "Elmer Bernstein and Orchestra",
+   "album": "The Man With the Golden Arm",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "trent reznor and atticus ross|the social network",
+   "artist": "Trent Reznor and Atticus Ross",
+   "album": "The Social Network",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "ry cooder|paris, texas",
+   "artist": "Ry Cooder",
+   "album": "Paris, Texas",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "伊福部昭|ゴジラ",
+   "artist": "伊福部昭",
+   "album": "ゴジラ",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "武満徹|ran",
+   "artist": "武満徹",
+   "album": "Ran",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "久石譲|千と千尋の神隠し サウンドトラック",
+   "artist": "久石譲",
+   "album": "千と千尋の神隠し サウンドトラック",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "久石譲|もののけ姫 サウンドトラック",
+   "artist": "久石譲",
+   "album": "もののけ姫 サウンドトラック",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "michel legrand|les parapluies de cherbourg",
+   "artist": "Michel Legrand",
+   "album": "Les Parapluies de Cherbourg",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "antonio carlos jobim & luiz bonfá|black orpheus",
+   "artist": "Antonio Carlos Jobim & Luiz Bonfá",
+   "album": "Black Orpheus",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "various artists|pulp fiction: music from the motion picture",
+   "artist": "Various Artists",
+   "album": "Pulp Fiction: Music From the Motion Picture",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "various artists|trainspotting",
+   "artist": "Various Artists",
+   "album": "Trainspotting",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "alton ellis|mr. soul of jamaica",
+   "artist": "Alton Ellis",
+   "album": "Mr. Soul of Jamaica",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "u-roy|version galore",
+   "artist": "U-Roy",
+   "album": "Version Galore",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "the staple singers|uncloudy day",
+   "artist": "The Staple Singers",
+   "album": "Uncloudy Day",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "michael hedges|aerial boundaries",
+   "artist": "Michael Hedges",
+   "album": "Aerial Boundaries",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "the louvin brothers|satan is real",
+   "artist": "The Louvin Brothers",
+   "album": "Satan Is Real",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "juan gabriel|juan gabriel en el palacio de bellas artes",
+   "artist": "Juan Gabriel",
+   "album": "Juan Gabriel en el Palacio de Bellas Artes",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "selena|amor prohibido",
+   "artist": "Selena",
+   "album": "Amor Prohibido",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "maná|¿dónde jugarán los niños?",
+   "artist": "Maná",
+   "album": "¿Dónde Jugarán los Niños?",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "héroes del silencio|senderos de traición",
+   "artist": "Héroes del Silencio",
+   "album": "Senderos de Traición",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "stromae|racine carrée",
+   "artist": "Stromae",
+   "album": "Racine carrée",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "jacques brel|n°4 : la valse à mille temps",
+   "artist": "Jacques Brel",
+   "album": "N°4 : La Valse à mille temps",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "lucio battisti|il mio canto libero",
+   "artist": "Lucio Battisti",
+   "album": "Il mio canto libero",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "fabrizio de andré|non al denaro non all'amore né al cielo",
+   "artist": "Fabrizio De André",
+   "album": "Non al denaro non all'amore né al cielo",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "franco battiato|la voce del padrone",
+   "artist": "Franco Battiato",
+   "album": "La voce del padrone",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "rodgers & hammerstein|oklahoma!",
+   "artist": "Rodgers & Hammerstein",
+   "album": "Oklahoma!",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "rodgers & hammerstein|south pacific",
+   "artist": "Rodgers & Hammerstein",
+   "album": "South Pacific",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "frank loesser|guys and dolls",
+   "artist": "Frank Loesser",
+   "album": "Guys and Dolls",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "jule styne|gypsy",
+   "artist": "Jule Styne",
+   "album": "Gypsy",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "jerry bock & sheldon harnick|fiddler on the roof",
+   "artist": "Jerry Bock & Sheldon Harnick",
+   "album": "Fiddler on the Roof",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "galt macdermot|hair: the american tribal love-rock musical",
+   "artist": "Galt MacDermot",
+   "album": "Hair: The American Tribal Love-Rock Musical",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "lerner & loewe|my fair lady",
+   "artist": "Lerner & Loewe",
+   "album": "My Fair Lady",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "lin-manuel miranda|hamilton: an american musical",
+   "artist": "Lin-Manuel Miranda",
+   "album": "Hamilton: An American Musical",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "stephen sondheim|sweeney todd: the demon barber of fleet street",
+   "artist": "Stephen Sondheim",
+   "album": "Sweeney Todd: The Demon Barber of Fleet Street",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "fred astaire|the astaire story",
+   "artist": "Fred Astaire",
+   "album": "The Astaire Story",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "judy garland|judy at carnegie hall",
+   "artist": "Judy Garland",
+   "album": "Judy at Carnegie Hall",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "barbra streisand|the barbra streisand album",
+   "artist": "Barbra Streisand",
+   "album": "The Barbra Streisand Album",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "patsy cline|showcase",
+   "artist": "Patsy Cline",
+   "album": "Showcase",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "marty robbins|gunfighter ballads and trail songs",
+   "artist": "Marty Robbins",
+   "album": "Gunfighter Ballads and Trail Songs",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "charlie rich|behind closed doors",
+   "artist": "Charlie Rich",
+   "album": "Behind Closed Doors",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "johnny cash|american recordings",
+   "artist": "Johnny Cash",
+   "album": "American Recordings",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "waylon jennings, willie nelson, jessi colter & tompall glaser|wanted! the outlaws",
+   "artist": "Waylon Jennings, Willie Nelson, Jessi Colter & Tompall Glaser",
+   "album": "Wanted! The Outlaws",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "randy travis|storms of life",
+   "artist": "Randy Travis",
+   "album": "Storms of Life",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "garth brooks|no fences",
+   "artist": "Garth Brooks",
+   "album": "No Fences",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "dixie chicks|wide open spaces",
+   "artist": "Dixie Chicks",
+   "album": "Wide Open Spaces",
+   "currentOverrideTier": "hall",
+   "inApplyC": true
+  },
+  {
+   "id": "尾島由郎|une collection des chaînons i: music for spiral",
+   "artist": "尾島由郎",
+   "album": "Une Collection des Chaînons I: Music for Spiral",
+   "currentOverrideTier": "pearl",
+   "inApplyC": true
+  },
+  {
+   "id": "芦川聡|still way (wave notation 2)",
+   "artist": "芦川聡",
+   "album": "Still Way (Wave Notation 2)",
+   "currentOverrideTier": "pearl",
+   "inApplyC": true
+  },
+  {
+   "id": "yutaka hirose|nova",
+   "artist": "Yutaka Hirose",
+   "album": "Nova",
+   "currentOverrideTier": "pearl",
+   "inApplyC": true
+  },
+  {
+   "id": "inoyama land|danzindan-pojidon",
+   "artist": "Inoyama Land",
+   "album": "Danzindan-Pojidon",
+   "currentOverrideTier": "pearl",
+   "inApplyC": true
+  },
+  {
+   "id": "interior|interior",
+   "artist": "Interior",
+   "album": "Interior",
+   "currentOverrideTier": "pearl",
+   "inApplyC": true
+  },
+  {
+   "id": "don slepian|sea of bliss",
+   "artist": "Don Slepian",
+   "album": "Sea of Bliss",
+   "currentOverrideTier": "pearl",
+   "inApplyC": true
+  },
+  {
+   "id": "michael stearns|planetary unfolding",
+   "artist": "Michael Stearns",
+   "album": "Planetary Unfolding",
+   "currentOverrideTier": "pearl",
+   "inApplyC": true
+  },
+  {
+   "id": "joanna brouk|hearing music",
+   "artist": "Joanna Brouk",
+   "album": "Hearing Music",
+   "currentOverrideTier": "pearl",
+   "inApplyC": true
+  },
+  {
+   "id": "ernest hood|neighborhoods",
+   "artist": "Ernest Hood",
+   "album": "Neighborhoods",
+   "currentOverrideTier": "pearl",
+   "inApplyC": true
+  },
+  {
+   "id": "gary higgins|red hash",
+   "artist": "Gary Higgins",
+   "album": "Red Hash",
+   "currentOverrideTier": "pearl",
+   "inApplyC": true
+  },
+  {
+   "id": "f.j. mcmahon|spirit of the golden juice",
+   "artist": "F.J. McMahon",
+   "album": "Spirit of the Golden Juice",
+   "currentOverrideTier": "pearl",
+   "inApplyC": true
+  },
+  {
+   "id": "bob desper|new sounds",
+   "artist": "Bob Desper",
+   "album": "New Sounds",
+   "currentOverrideTier": "pearl",
+   "inApplyC": true
+  },
+  {
+   "id": "kathy heideman|move with love",
+   "artist": "Kathy Heideman",
+   "album": "Move with Love",
+   "currentOverrideTier": "pearl",
+   "inApplyC": true
+  },
+  {
+   "id": "ted lucas|ted lucas",
+   "artist": "Ted Lucas",
+   "album": "Ted Lucas",
+   "currentOverrideTier": "pearl",
+   "inApplyC": true
+  },
+  {
+   "id": "jim sullivan|u.f.o.",
+   "artist": "Jim Sullivan",
+   "album": "U.F.O.",
+   "currentOverrideTier": "pearl",
+   "inApplyC": true
+  },
+  {
+   "id": "bobb trimble|iron curtain innocence",
+   "artist": "Bobb Trimble",
+   "album": "Iron Curtain Innocence",
+   "currentOverrideTier": "pearl",
+   "inApplyC": true
+  },
+  {
+   "id": "damon|song of a gypsy",
+   "artist": "Damon",
+   "album": "Song of a Gypsy",
+   "currentOverrideTier": "pearl",
+   "inApplyC": true
+  },
+  {
+   "id": "c.a. quintet|trip thru hell",
+   "artist": "C.A. Quintet",
+   "album": "Trip Thru Hell",
+   "currentOverrideTier": "pearl",
+   "inApplyC": true
+  },
+  {
+   "id": "darius|darius",
+   "artist": "Darius",
+   "album": "Darius",
+   "currentOverrideTier": "pearl",
+   "inApplyC": true
+  },
+  {
+   "id": "zerfas|zerfas",
+   "artist": "Zerfas",
+   "album": "Zerfas",
+   "currentOverrideTier": "pearl",
+   "inApplyC": true
+  },
+  {
+   "id": "willie wright|telling the truth",
+   "artist": "Willie Wright",
+   "album": "Telling the Truth",
+   "currentOverrideTier": "pearl",
+   "inApplyC": true
+  },
+  {
+   "id": "otis g. johnson|everything - god is love '78",
+   "artist": "Otis G. Johnson",
+   "album": "Everything - God Is Love '78",
+   "currentOverrideTier": "pearl",
+   "inApplyC": true
+  },
+  {
+   "id": "jeff phelps|magnetic eyes",
+   "artist": "Jeff Phelps",
+   "album": "Magnetic Eyes",
+   "currentOverrideTier": "pearl",
+   "inApplyC": true
+  },
+  {
+   "id": "starcrost|starcrost",
+   "artist": "Starcrost",
+   "album": "Starcrost",
+   "currentOverrideTier": "pearl",
+   "inApplyC": true
+  },
+  {
+   "id": "universal togetherness band|universal togetherness band",
+   "artist": "Universal Togetherness Band",
+   "album": "Universal Togetherness Band",
+   "currentOverrideTier": "pearl",
+   "inApplyC": true
+  },
+  {
+   "id": "shira small|the line of time and the plane of now",
+   "artist": "Shira Small",
+   "album": "The Line of Time and the Plane of Now",
+   "currentOverrideTier": "pearl",
+   "inApplyC": true
+  },
+  {
+   "id": "milton wright|friends and buddies",
+   "artist": "Milton Wright",
+   "album": "Friends and Buddies",
+   "currentOverrideTier": "pearl",
+   "inApplyC": true
+  },
+  {
+   "id": "juju|a message from mozambique",
+   "artist": "Juju",
+   "album": "A Message from Mozambique",
+   "currentOverrideTier": "pearl",
+   "inApplyC": true
+  },
+  {
+   "id": "ndikho xaba and the natives|ndikho xaba and the natives",
+   "artist": "Ndikho Xaba and the Natives",
+   "album": "Ndikho Xaba and the Natives",
+   "currentOverrideTier": "pearl",
+   "inApplyC": true
+  },
+  {
+   "id": "the ensemble al-salaam|the sojourner",
+   "artist": "The Ensemble Al-Salaam",
+   "album": "The Sojourner",
+   "currentOverrideTier": "pearl",
+   "inApplyC": true
+  },
+  {
+   "id": "ronnie boykins|the will come, is now",
+   "artist": "Ronnie Boykins",
+   "album": "The Will Come, Is Now",
+   "currentOverrideTier": "pearl",
+   "inApplyC": true
+  },
+  {
+   "id": "byard lancaster|it's not up to us",
+   "artist": "Byard Lancaster",
+   "album": "It's Not Up to Us",
+   "currentOverrideTier": "pearl",
+   "inApplyC": true
+  },
+  {
+   "id": "khan jamal|drum dance to the motherland",
+   "artist": "Khan Jamal",
+   "album": "Drum Dance to the Motherland",
+   "currentOverrideTier": "pearl",
+   "inApplyC": true
+  },
+  {
+   "id": "salah ragab|egyptian jazz",
+   "artist": "Salah Ragab",
+   "album": "Egyptian Jazz",
+   "currentOverrideTier": "pearl",
+   "inApplyC": true
+  },
+  {
+   "id": "mor thiam|dini safarrar",
+   "artist": "Mor Thiam",
+   "album": "Dini Safarrar",
+   "currentOverrideTier": "pearl",
+   "inApplyC": true
+  },
+  {
+   "id": "philip cohran and the artistic heritage ensemble|on the beach",
+   "artist": "Philip Cohran and the Artistic Heritage Ensemble",
+   "album": "On the Beach",
+   "currentOverrideTier": "pearl",
+   "inApplyC": true
+  },
+  {
+   "id": "chrissy zebby tembo|my ancestors",
+   "artist": "Chrissy Zebby Tembo",
+   "album": "My Ancestors",
+   "currentOverrideTier": "pearl",
+   "inApplyC": true
+  },
+  {
+   "id": "ngozi family|45,000 volts",
+   "artist": "Ngozi Family",
+   "album": "45,000 Volts",
+   "currentOverrideTier": "pearl",
+   "inApplyC": true
+  },
+  {
+   "id": "rikki ililonga|zambia",
+   "artist": "Rikki Ililonga",
+   "album": "Zambia",
+   "currentOverrideTier": "pearl",
+   "inApplyC": true
+  },
+  {
+   "id": "amanaz|africa",
+   "artist": "Amanaz",
+   "album": "Africa",
+   "currentOverrideTier": "pearl",
+   "inApplyC": true
+  },
+  {
+   "id": "ayalew mesfin|hasabe (my worries)",
+   "artist": "Ayalew Mesfin",
+   "album": "Hasabe (My Worries)",
+   "currentOverrideTier": "pearl",
+   "inApplyC": true
+  },
+  {
+   "id": "hailu mergia|hailu mergia & his classical instrument",
+   "artist": "Hailu Mergia",
+   "album": "Hailu Mergia & His Classical Instrument",
+   "currentOverrideTier": "pearl",
+   "inApplyC": true
+  },
+  {
+   "id": "marconi notaro|no sub reino dos metazoários",
+   "artist": "Marconi Notaro",
+   "album": "No Sub Reino dos Metazoários",
+   "currentOverrideTier": "pearl",
+   "inApplyC": true
+  },
+  {
+   "id": "satwa|satwa",
+   "artist": "Satwa",
+   "album": "Satwa",
+   "currentOverrideTier": "pearl",
+   "inApplyC": true
+  },
+  {
+   "id": "lula côrtes e zé ramalho|paêbirú",
+   "artist": "Lula Côrtes e Zé Ramalho",
+   "album": "Paêbirú",
+   "currentOverrideTier": "pearl",
+   "inApplyC": true
+  },
+  {
+   "id": "pedro santos|krishnanda",
+   "artist": "Pedro Santos",
+   "album": "Krishnanda",
+   "currentOverrideTier": "pearl",
+   "inApplyC": true
+  },
+  {
+   "id": "emtidi|saat",
+   "artist": "Emtidi",
+   "album": "Saat",
+   "currentOverrideTier": "pearl",
+   "inApplyC": true
+  },
+  {
+   "id": "bröselmaschine|bröselmaschine",
+   "artist": "Bröselmaschine",
+   "album": "Bröselmaschine",
+   "currentOverrideTier": "pearl",
+   "inApplyC": true
+  },
+  {
+   "id": "gila|gila",
+   "artist": "Gila",
+   "album": "Gila",
+   "currentOverrideTier": "pearl",
+   "inApplyC": true
+  },
+  {
+   "id": "kollektiv|kollektiv",
+   "artist": "Kollektiv",
+   "album": "Kollektiv",
+   "currentOverrideTier": "pearl",
+   "inApplyC": true
+  },
+  {
+   "id": "annexus quam|osmose",
+   "artist": "Annexus Quam",
+   "album": "Osmose",
+   "currentOverrideTier": "pearl",
+   "inApplyC": true
+  },
+  {
+   "id": "limbus 4|mandalas",
+   "artist": "Limbus 4",
+   "album": "Mandalas",
+   "currentOverrideTier": "pearl",
+   "inApplyC": true
+  },
+  {
+   "id": "german oak|german oak",
+   "artist": "German Oak",
+   "album": "German Oak",
+   "currentOverrideTier": "pearl",
+   "inApplyC": true
+  },
+  {
+   "id": "janko nilovic|rythmes contemporains",
+   "artist": "Janko Nilovic",
+   "album": "Rythmes Contemporains",
+   "currentOverrideTier": "pearl",
+   "inApplyC": true
+  },
+  {
+   "id": "sven libaek|solar flares",
+   "artist": "Sven Libaek",
+   "album": "Solar Flares",
+   "currentOverrideTier": "pearl",
+   "inApplyC": true
+  },
+  {
+   "id": "piero umiliani|continente nero",
+   "artist": "Piero Umiliani",
+   "album": "Continente Nero",
+   "currentOverrideTier": "pearl",
+   "inApplyC": true
+  },
+  {
+   "id": "roberto cacciapaglia|sonanze",
+   "artist": "Roberto Cacciapaglia",
+   "album": "Sonanze",
+   "currentOverrideTier": "pearl",
+   "inApplyC": true
+  },
+  {
+   "id": "egisto macchi|città notte",
+   "artist": "Egisto Macchi",
+   "album": "Città Notte",
+   "currentOverrideTier": "pearl",
+   "inApplyC": true
+  },
+  {
+   "id": "das ding|h.s.t.a.",
+   "artist": "Das Ding",
+   "album": "H.S.T.A.",
+   "currentOverrideTier": "pearl",
+   "inApplyC": true
+  },
+  {
+   "id": "eleven pond|bas relief",
+   "artist": "Eleven Pond",
+   "album": "Bas Relief",
+   "currentOverrideTier": "pearl",
+   "inApplyC": true
+  },
+  {
+   "id": "linear movement|on the screen",
+   "artist": "Linear Movement",
+   "album": "On the Screen",
+   "currentOverrideTier": "pearl",
+   "inApplyC": true
+  },
+  {
+   "id": "oppenheimer analysis|new mexico",
+   "artist": "Oppenheimer Analysis",
+   "album": "New Mexico",
+   "currentOverrideTier": "pearl",
+   "inApplyC": true
+  },
+  {
+   "id": "turquoise days|alternative strategies",
+   "artist": "Turquoise Days",
+   "album": "Alternative Strategies",
+   "currentOverrideTier": "pearl",
+   "inApplyC": true
+  },
+  {
+   "id": "ohama|the potato farm tapes",
+   "artist": "Ohama",
+   "album": "The Potato Farm Tapes",
+   "currentOverrideTier": "pearl",
+   "inApplyC": true
+  },
+  {
+   "id": "this kind of punishment|a beard of bees",
+   "artist": "This Kind of Punishment",
+   "album": "A Beard of Bees",
+   "currentOverrideTier": "pearl",
+   "inApplyC": true
+  },
+  {
+   "id": "caedmon|caedmon",
+   "artist": "Caedmon",
+   "album": "Caedmon",
+   "currentOverrideTier": "pearl",
+   "inApplyC": true
+  },
+  {
+   "id": "midwinter|the waters of sweet sorrow",
+   "artist": "Midwinter",
+   "album": "The Waters of Sweet Sorrow",
+   "currentOverrideTier": "pearl",
+   "inApplyC": true
+  },
+  {
+   "id": "stone angel|stone angel",
+   "artist": "Stone Angel",
+   "album": "Stone Angel",
+   "currentOverrideTier": "pearl",
+   "inApplyC": true
+  },
+  {
+   "id": "synanthesia|synanthesia",
+   "artist": "Synanthesia",
+   "album": "Synanthesia",
+   "currentOverrideTier": "pearl",
+   "inApplyC": true
+  },
+  {
+   "id": "spirogyra|st. radigunds",
+   "artist": "Spirogyra",
+   "album": "St. Radigunds",
+   "currentOverrideTier": "pearl",
+   "inApplyC": true
+  },
+  {
+   "id": "extradition|hush",
+   "artist": "Extradition",
+   "album": "Hush",
+   "currentOverrideTier": "pearl",
+   "inApplyC": true
+  },
+  {
+   "id": "forest|full circle",
+   "artist": "Forest",
+   "album": "Full Circle",
+   "currentOverrideTier": "pearl",
+   "inApplyC": true
+  },
+  {
+   "id": "shelagh mcdonald|album",
+   "artist": "Shelagh McDonald",
+   "album": "Album",
+   "currentOverrideTier": "pearl",
+   "inApplyC": true
+  },
+  {
+   "id": "森山威男|east plants",
+   "artist": "森山威男",
+   "album": "East Plants",
+   "currentOverrideTier": "pearl",
+   "inApplyC": true
+  },
+  {
+   "id": "koichi matsukaze trio|earth mother",
+   "artist": "Koichi Matsukaze Trio",
+   "album": "Earth Mother",
+   "currentOverrideTier": "pearl",
+   "inApplyC": true
+  },
+  {
+   "id": "shintaro quintet|evolution",
+   "artist": "Shintaro Quintet",
+   "album": "Evolution",
+   "currentOverrideTier": "pearl",
+   "inApplyC": true
+  },
+  {
+   "id": "tohru aizawa quartet|tachibana vol. 1",
+   "artist": "Tohru Aizawa Quartet",
+   "album": "Tachibana Vol. 1",
+   "currentOverrideTier": "pearl",
+   "inApplyC": true
+  },
+  {
+   "id": "峰厚介|first",
+   "artist": "峰厚介",
+   "album": "First",
+   "currentOverrideTier": "pearl",
+   "inApplyC": true
+  },
+  {
+   "id": "中山英二|aya's samba",
+   "artist": "中山英二",
+   "album": "Aya's Samba",
+   "currentOverrideTier": "pearl",
+   "inApplyC": true
+  },
+  {
+   "id": "板橋文夫|watarase",
+   "artist": "板橋文夫",
+   "album": "Watarase",
+   "currentOverrideTier": "pearl",
+   "inApplyC": true
+  },
+  {
+   "id": "富樫雅彦|speed and space",
+   "artist": "富樫雅彦",
+   "album": "Speed and Space",
+   "currentOverrideTier": "pearl",
+   "inApplyC": true
+  },
+  {
+   "id": "jiro inagaki and soul media|funky stuff",
+   "artist": "Jiro Inagaki and Soul Media",
+   "album": "Funky Stuff",
+   "currentOverrideTier": "pearl",
+   "inApplyC": true
+  },
+  {
+   "id": "kim jung mi|now",
+   "artist": "Kim Jung Mi",
+   "album": "Now",
+   "currentOverrideTier": "pearl",
+   "inApplyC": true
+  },
+  {
+   "id": "3 hür-el|hürel arşivi",
+   "artist": "3 Hür-El",
+   "album": "Hürel Arşivi",
+   "currentOverrideTier": "pearl",
+   "inApplyC": true
+  },
+  {
+   "id": "mustafa özkent|gençlik i̇le elele",
+   "artist": "Mustafa Özkent",
+   "album": "Gençlik İle Elele",
+   "currentOverrideTier": "pearl",
+   "inApplyC": true
+  },
+  {
+   "id": "la düsseldorf|viva",
+   "artist": "La Düsseldorf",
+   "album": "Viva",
+   "currentOverrideTier": "pearl",
+   "inApplyC": true
+  },
+  {
+   "id": "harmonia|deluxe",
+   "artist": "Harmonia",
+   "album": "Deluxe",
+   "currentOverrideTier": "pearl",
+   "inApplyC": true
+  },
+  {
+   "id": "michael rother|flammende herzen",
+   "artist": "Michael Rother",
+   "album": "Flammende Herzen",
+   "currentOverrideTier": "pearl",
+   "inApplyC": true
+  },
+  {
+   "id": "cluster|sowiesoso",
+   "artist": "Cluster",
+   "album": "Sowiesoso",
+   "currentOverrideTier": "pearl",
+   "inApplyC": true
+  },
+  {
+   "id": "moolah|woe ye demons possessed",
+   "artist": "Moolah",
+   "album": "Woe Ye Demons Possessed",
+   "currentOverrideTier": "pearl",
+   "inApplyC": true
+  },
+  {
+   "id": "marc barreca|twilight",
+   "artist": "Marc Barreca",
+   "album": "Twilight",
+   "currentOverrideTier": "pearl",
+   "inApplyC": true
+  },
+  {
+   "id": "k. leimer|a period of review",
+   "artist": "K. Leimer",
+   "album": "A Period of Review",
+   "currentOverrideTier": "pearl",
+   "inApplyC": true
+  },
+  {
+   "id": "craig kupka|crystals: new music for relaxation 2",
+   "artist": "Craig Kupka",
+   "album": "Crystals: New Music for Relaxation 2",
+   "currentOverrideTier": "pearl",
+   "inApplyC": true
+  },
+  {
+   "id": "冨田勲|the planets",
+   "artist": "冨田勲",
+   "album": "The Planets",
+   "currentOverrideTier": "pearl",
+   "inApplyC": true
+  },
+  {
+   "id": "wendy carlos|the well-tempered synthesizer",
+   "artist": "Wendy Carlos",
+   "album": "The Well-Tempered Synthesizer",
+   "currentOverrideTier": "pearl",
+   "inApplyC": true
+  },
+  {
+   "id": "wendy carlos|switched-on brandenburgs, vol. i",
+   "artist": "Wendy Carlos",
+   "album": "Switched-On Brandenburgs, Vol. I",
+   "currentOverrideTier": "pearl",
+   "inApplyC": true
+  },
+  {
+   "id": "wendy carlos|walter carlos’ clockwork orange",
+   "artist": "Wendy Carlos",
+   "album": "Walter Carlos’ Clockwork Orange",
+   "currentOverrideTier": "pearl",
+   "inApplyC": true
+  },
+  {
+   "id": "jlin|autobiography",
+   "artist": "Jlin",
+   "album": "Autobiography",
+   "currentOverrideTier": "pearl",
+   "inApplyC": true
+  },
+  {
+   "id": "a guy called gerald|silent sound spread spectrum",
+   "artist": "A Guy Called Gerald",
+   "album": "Silent Sound Spread Spectrum",
+   "currentOverrideTier": "pearl",
+   "inApplyC": true
+  },
+  {
+   "id": "alexander robotnick|kind of... robotnick",
+   "artist": "Alexander Robotnick",
+   "album": "Kind of... Robotnick",
+   "currentOverrideTier": "pearl",
+   "inApplyC": true
+  },
+  {
+   "id": "fred wesley & the j.b.'s|damn right i am somebody",
+   "artist": "Fred Wesley & The J.B.'s",
+   "album": "Damn Right I Am Somebody",
+   "currentOverrideTier": "pearl",
+   "inApplyC": true
+  },
+  {
+   "id": "fred & the new j.b.'s|breakin’ bread",
+   "artist": "Fred & The New J.B.'s",
+   "album": "Breakin’ Bread",
+   "currentOverrideTier": "pearl",
+   "inApplyC": true
+  },
+  {
+   "id": "楊祖珺|楊祖珺",
+   "artist": "楊祖珺",
+   "album": "楊祖珺",
+   "currentOverrideTier": "pearl",
+   "inApplyC": true
+  },
+  {
+   "id": "keiji haino|watashi dake?",
+   "artist": "Keiji Haino",
+   "album": "Watashi Dake?",
+   "currentOverrideTier": "heresy",
+   "inApplyC": true
+  },
+  {
+   "id": "les rallizes dénudés|'77 live",
+   "artist": "Les Rallizes Dénudés",
+   "album": "'77 Live",
+   "currentOverrideTier": "heresy",
+   "inApplyC": true
+  },
+  {
+   "id": "melt-banana|scratch or stitch",
+   "artist": "Melt-Banana",
+   "album": "Scratch or Stitch",
+   "currentOverrideTier": "heresy",
+   "inApplyC": true
+  },
+  {
+   "id": "ruins|pallaschtom",
+   "artist": "Ruins",
+   "album": "Pallaschtom",
+   "currentOverrideTier": "heresy",
+   "inApplyC": true
+  },
+  {
+   "id": "koenjihyakkei|angherr shisspa",
+   "artist": "Koenjihyakkei",
+   "album": "Angherr Shisspa",
+   "currentOverrideTier": "heresy",
+   "inApplyC": true
+  },
+  {
+   "id": "yoko ono|fly",
+   "artist": "Yoko Ono",
+   "album": "Fly",
+   "currentOverrideTier": "heresy",
+   "inApplyC": true
+  },
+  {
+   "id": "yoko ono|yoko ono-plastic ono band",
+   "artist": "Yoko Ono",
+   "album": "Yoko Ono/Plastic Ono Band",
+   "currentOverrideTier": "heresy",
+   "inApplyC": true
+  },
+  {
+   "id": "the shaggs|philosophy of the world",
+   "artist": "The Shaggs",
+   "album": "Philosophy of the World",
+   "currentOverrideTier": "heresy",
+   "inApplyC": true
+  },
+  {
+   "id": "royal trux|twin infinitives",
+   "artist": "Royal Trux",
+   "album": "Twin Infinitives",
+   "currentOverrideTier": "heresy",
+   "inApplyC": true
+  },
+  {
+   "id": "the dead c|harsh 70s reality",
+   "artist": "The Dead C",
+   "album": "Harsh 70s Reality",
+   "currentOverrideTier": "heresy",
+   "inApplyC": true
+  },
+  {
+   "id": "frank zappa|lumpy gravy",
+   "artist": "Frank Zappa",
+   "album": "Lumpy Gravy",
+   "currentOverrideTier": "heresy",
+   "inApplyC": true
+  },
+  {
+   "id": "nico|the marble index",
+   "artist": "Nico",
+   "album": "The Marble Index",
+   "currentOverrideTier": "heresy",
+   "inApplyC": true
+  },
+  {
+   "id": "nico|desertshore",
+   "artist": "Nico",
+   "album": "Desertshore",
+   "currentOverrideTier": "heresy",
+   "inApplyC": true
+  },
+  {
+   "id": "sonic youth|confusion is sex",
+   "artist": "Sonic Youth",
+   "album": "Confusion Is Sex",
+   "currentOverrideTier": "heresy",
+   "inApplyC": true
+  },
+  {
+   "id": "glenn branca|the ascension",
+   "artist": "Glenn Branca",
+   "album": "The Ascension",
+   "currentOverrideTier": "heresy",
+   "inApplyC": true
+  },
+  {
+   "id": "albert ayler trio|spiritual unity",
+   "artist": "Albert Ayler Trio",
+   "album": "Spiritual Unity",
+   "currentOverrideTier": "heresy",
+   "inApplyC": true
+  },
+  {
+   "id": "albert ayler|bells",
+   "artist": "Albert Ayler",
+   "album": "Bells",
+   "currentOverrideTier": "heresy",
+   "inApplyC": true
+  },
+  {
+   "id": "ornette coleman|free jazz: a collective improvisation",
+   "artist": "Ornette Coleman",
+   "album": "Free Jazz: A Collective Improvisation",
+   "currentOverrideTier": "heresy",
+   "inApplyC": true
+  },
+  {
+   "id": "john coltrane|om",
+   "artist": "John Coltrane",
+   "album": "Om",
+   "currentOverrideTier": "heresy",
+   "inApplyC": true
+  },
+  {
+   "id": "amm|ammmusic",
+   "artist": "AMM",
+   "album": "AMMMusic",
+   "currentOverrideTier": "heresy",
+   "inApplyC": true
+  },
+  {
+   "id": "eric dolphy|out to lunch!",
+   "artist": "Eric Dolphy",
+   "album": "Out to Lunch!",
+   "currentOverrideTier": "heresy",
+   "inApplyC": true
+  },
+  {
+   "id": "sun ra|the heliocentric worlds of sun ra, vol. 1",
+   "artist": "Sun Ra",
+   "album": "The Heliocentric Worlds of Sun Ra, Vol. 1",
+   "currentOverrideTier": "heresy",
+   "inApplyC": true
+  },
+  {
+   "id": "last exit|last exit",
+   "artist": "Last Exit",
+   "album": "Last Exit",
+   "currentOverrideTier": "heresy",
+   "inApplyC": true
+  },
+  {
+   "id": "painkiller|guts of a virgin",
+   "artist": "Painkiller",
+   "album": "Guts of a Virgin",
+   "currentOverrideTier": "heresy",
+   "inApplyC": true
+  },
+  {
+   "id": "ground zero|revolutionary pekinese opera ver. 1.28",
+   "artist": "Ground Zero",
+   "album": "Revolutionary Pekinese Opera Ver. 1.28",
+   "currentOverrideTier": "heresy",
+   "inApplyC": true
+  },
+  {
+   "id": "coil|time machines",
+   "artist": "Coil",
+   "album": "Time Machines",
+   "currentOverrideTier": "heresy",
+   "inApplyC": true
+  },
+  {
+   "id": "cabaret voltaire|red mecca",
+   "artist": "Cabaret Voltaire",
+   "album": "Red Mecca",
+   "currentOverrideTier": "heresy",
+   "inApplyC": true
+  },
+  {
+   "id": "faust|the faust tapes",
+   "artist": "Faust",
+   "album": "The Faust Tapes",
+   "currentOverrideTier": "heresy",
+   "inApplyC": true
+  },
+  {
+   "id": "amon düül|psychedelic underground",
+   "artist": "Amon Düül",
+   "album": "Psychedelic Underground",
+   "currentOverrideTier": "heresy",
+   "inApplyC": true
+  },
+  {
+   "id": "pere ubu|the modern dance",
+   "artist": "Pere Ubu",
+   "album": "The Modern Dance",
+   "currentOverrideTier": "heresy",
+   "inApplyC": true
+  },
+  {
+   "id": "henry cow|legend",
+   "artist": "Henry Cow",
+   "album": "Legend",
+   "currentOverrideTier": "heresy",
+   "inApplyC": true
+  },
+  {
+   "id": "art bears|hopes and fears",
+   "artist": "Art Bears",
+   "album": "Hopes and Fears",
+   "currentOverrideTier": "heresy",
+   "inApplyC": true
+  },
+  {
+   "id": "univers zero|heresie",
+   "artist": "Univers Zero",
+   "album": "Heresie",
+   "currentOverrideTier": "heresy",
+   "inApplyC": true
+  },
+  {
+   "id": "magma|mëkanïk dëstruktïw kömmandöh",
+   "artist": "Magma",
+   "album": "Mëkanïk Dëstruktïw Kömmandöh",
+   "currentOverrideTier": "heresy",
+   "inApplyC": true
+  },
+  {
+   "id": "art zoyd|symphonie pour le jour où brûleront les cités",
+   "artist": "Art Zoyd",
+   "album": "Symphonie pour le jour où brûleront les cités",
+   "currentOverrideTier": "heresy",
+   "inApplyC": true
+  },
+  {
+   "id": "luc ferrari|presque rien",
+   "artist": "Luc Ferrari",
+   "album": "Presque Rien",
+   "currentOverrideTier": "heresy",
+   "inApplyC": true
+  },
+  {
+   "id": "éliane radigue|trilogie de la mort",
+   "artist": "Éliane Radigue",
+   "album": "Trilogie de la Mort",
+   "currentOverrideTier": "heresy",
+   "inApplyC": true
+  },
+  {
+   "id": "pauline oliveros|deep listening",
+   "artist": "Pauline Oliveros",
+   "album": "Deep Listening",
+   "currentOverrideTier": "heresy",
+   "inApplyC": true
+  },
+  {
+   "id": "morton feldman|rothko chapel",
+   "artist": "Morton Feldman",
+   "album": "Rothko Chapel",
+   "currentOverrideTier": "heresy",
+   "inApplyC": true
+  },
+  {
+   "id": "aphex twin|drukqs",
+   "artist": "Aphex Twin",
+   "album": "Drukqs",
+   "currentOverrideTier": "heresy",
+   "inApplyC": true
+  },
+  {
+   "id": "venetian snares|rossz csillag alatt született",
+   "artist": "Venetian Snares",
+   "album": "Rossz Csillag Alatt Született",
+   "currentOverrideTier": "heresy",
+   "inApplyC": true
+  },
+  {
+   "id": "oval|94diskont",
+   "artist": "Oval",
+   "album": "94diskont",
+   "currentOverrideTier": "heresy",
+   "inApplyC": true
+  },
+  {
+   "id": "alva noto|xerrox vol. 2",
+   "artist": "Alva Noto",
+   "album": "Xerrox Vol. 2",
+   "currentOverrideTier": "heresy",
+   "inApplyC": true
+  },
+  {
+   "id": "pan sonic|kulma",
+   "artist": "Pan Sonic",
+   "album": "Kulma",
+   "currentOverrideTier": "heresy",
+   "inApplyC": true
+  },
+  {
+   "id": "yellow swans|going places",
+   "artist": "Yellow Swans",
+   "album": "Going Places",
+   "currentOverrideTier": "heresy",
+   "inApplyC": true
+  },
+  {
+   "id": "prurient|frozen niagara falls",
+   "artist": "Prurient",
+   "album": "Frozen Niagara Falls",
+   "currentOverrideTier": "heresy",
+   "inApplyC": true
+  },
+  {
+   "id": "pharmakon|abandon",
+   "artist": "Pharmakon",
+   "album": "Abandon",
+   "currentOverrideTier": "heresy",
+   "inApplyC": true
+  },
+  {
+   "id": "wolf eyes|burned mind",
+   "artist": "Wolf Eyes",
+   "album": "Burned Mind",
+   "currentOverrideTier": "heresy",
+   "inApplyC": true
+  },
+  {
+   "id": "black dice|beaches & canyons",
+   "artist": "Black Dice",
+   "album": "Beaches & Canyons",
+   "currentOverrideTier": "heresy",
+   "inApplyC": true
+  },
+  {
+   "id": "lightning bolt|wonderful rainbow",
+   "artist": "Lightning Bolt",
+   "album": "Wonderful Rainbow",
+   "currentOverrideTier": "heresy",
+   "inApplyC": true
+  },
+  {
+   "id": "the locust|plague soundscapes",
+   "artist": "The Locust",
+   "album": "Plague Soundscapes",
+   "currentOverrideTier": "heresy",
+   "inApplyC": true
+  },
+  {
+   "id": "mr. bungle|disco volante",
+   "artist": "Mr. Bungle",
+   "album": "Disco Volante",
+   "currentOverrideTier": "heresy",
+   "inApplyC": true
+  },
+  {
+   "id": "the body|i shall die here",
+   "artist": "The Body",
+   "album": "I Shall Die Here",
+   "currentOverrideTier": "heresy",
+   "inApplyC": true
+  },
+  {
+   "id": "khanate|khanate",
+   "artist": "Khanate",
+   "album": "Khanate",
+   "currentOverrideTier": "heresy",
+   "inApplyC": true
+  },
+  {
+   "id": "blut aus nord|the work which transforms god",
+   "artist": "Blut Aus Nord",
+   "album": "The Work Which Transforms God",
+   "currentOverrideTier": "heresy",
+   "inApplyC": true
+  },
+  {
+   "id": "arca|mutant",
+   "artist": "Arca",
+   "album": "Mutant",
+   "currentOverrideTier": "heresy",
+   "inApplyC": true
+  },
+  {
+   "id": "john wiese|soft punk",
+   "artist": "John Wiese",
+   "album": "Soft Punk",
+   "currentOverrideTier": "heresy",
+   "inApplyC": true
+  },
+  {
+   "id": "nurse with wound|homotopy to marie",
+   "artist": "Nurse With Wound",
+   "album": "Homotopy to Marie",
+   "currentOverrideTier": "heresy",
+   "inApplyC": true
+  },
+  {
+   "id": "einstürzende neubauten|zeichnungen des patienten o.t.",
+   "artist": "Einstürzende Neubauten",
+   "album": "Zeichnungen des Patienten O.T.",
+   "currentOverrideTier": "heresy",
+   "inApplyC": true
+  },
+  {
+   "id": "venetian snares|huge chrome cylinder box unfolding",
+   "artist": "Venetian Snares",
+   "album": "Huge Chrome Cylinder Box Unfolding",
+   "currentOverrideTier": "heresy",
+   "inApplyC": true
+  },
+  {
+   "id": "venetian snares|doll doll doll",
+   "artist": "Venetian Snares",
+   "album": "Doll Doll Doll",
+   "currentOverrideTier": "heresy",
+   "inApplyC": true
+  },
+  {
+   "id": "pan sonic|a",
+   "artist": "Pan Sonic",
+   "album": "A",
+   "currentOverrideTier": "heresy",
+   "inApplyC": true
+  },
+  {
+   "id": "alva noto|unitxt",
+   "artist": "Alva Noto",
+   "album": "unitxt",
+   "currentOverrideTier": "heresy",
+   "inApplyC": true
+  },
+  {
+   "id": "venetian snares|making orange things",
+   "artist": "Venetian Snares",
+   "album": "Making Orange Things",
+   "currentOverrideTier": "heresy",
+   "inApplyC": true
+  },
+  {
+   "id": "pan sonic|katodivaihe - cathodephase",
+   "artist": "Pan Sonic",
+   "album": "Katodivaihe / Cathodephase",
+   "currentOverrideTier": "heresy",
+   "inApplyC": true
+  },
+  {
+   "id": "death grips|government plates",
+   "artist": "Death Grips",
+   "album": "Government Plates",
+   "currentOverrideTier": "heresy",
+   "inApplyC": true
+  },
+  {
+   "id": "森下登喜彦|妖怪幻想",
+   "artist": "森下登喜彦",
+   "album": "妖怪幻想",
+   "currentOverrideTier": "heresy",
+   "inApplyC": true
+  },
+  {
+   "id": "裸のラリーズ|the oz tapes",
+   "artist": "裸のラリーズ",
+   "album": "The Oz Tapes",
+   "currentOverrideTier": "heresy",
+   "inApplyC": true
+  },
+  {
+   "id": "不失者|不失者 (double live)",
+   "artist": "不失者",
+   "album": "不失者 (Double Live)",
+   "currentOverrideTier": "heresy",
+   "inApplyC": true
+  },
+  {
+   "id": "louis and bebe barron|forbidden planet",
+   "artist": "Louis and Bebe Barron",
+   "album": "Forbidden Planet",
+   "currentOverrideTier": "heresy",
+   "inApplyC": true
+  },
+  {
+   "id": "零與聲音解放組織|z.s.l.o.",
+   "artist": "零與聲音解放組織",
+   "album": "Z.S.L.O.",
+   "currentOverrideTier": "heresy",
+   "inApplyC": true
+  },
+  {
+   "id": "albert ayler|spiritual unity",
+   "artist": "Albert Ayler",
+   "album": "Spiritual Unity",
+   "currentOverrideTier": "heresy",
+   "inApplyC": true
+  }
+ ],
+ "orphans": [
+  {
+   "id": "big brother and the holding company|cheap thrills",
+   "tier": "hall",
+   "artist": "Big Brother and the Holding Company",
+   "album": "Cheap Thrills"
+  },
+  {
+   "id": "eiji nakayama|aya's samba",
+   "tier": "pearl",
+   "artist": "Eiji Nakayama",
+   "album": "Aya's Samba"
+  },
+  {
+   "id": "fumio itabashi|watarase",
+   "tier": "pearl",
+   "artist": "Fumio Itabashi",
+   "album": "Watarase"
+  },
+  {
+   "id": "hijokaidan|viva angel",
+   "tier": "heresy",
+   "artist": "Hijokaidan",
+   "album": "Viva Angel"
+  },
+  {
+   "id": "john coltrane quartet|ballads",
+   "tier": "hall",
+   "artist": "John Coltrane Quartet",
+   "album": "Ballads"
+  },
+  {
+   "id": "kohsuke mine|first",
+   "tier": "pearl",
+   "artist": "Kohsuke Mine",
+   "album": "First"
+  },
+  {
+   "id": "masahiko togashi|speed and space",
+   "tier": "pearl",
+   "artist": "Masahiko Togashi",
+   "album": "Speed and Space"
+  },
+  {
+   "id": "satoshi ashikawa|still way (wave notation 2)",
+   "tier": "pearl",
+   "artist": "Satoshi Ashikawa",
+   "album": "Still Way (Wave Notation 2)"
+  },
+  {
+   "id": "takashi kokubo|get at the wave",
+   "tier": "pearl",
+   "artist": "Takashi Kokubo",
+   "album": "Get at the Wave"
+  },
+  {
+   "id": "takeo moriyama|east plants",
+   "tier": "pearl",
+   "artist": "Takeo Moriyama",
+   "album": "East Plants"
+  },
+  {
+   "id": "the police|regatta de blanc",
+   "tier": "hall",
+   "artist": "The Police",
+   "album": "Regatta de Blanc"
+  },
+  {
+   "id": "throbbing gristle|d.o.a. the third and final report",
+   "tier": "heresy",
+   "artist": "Throbbing Gristle",
+   "album": "D.o.A. The Third and Final Report"
+  },
+  {
+   "id": "wendy carlos|the well‐tempered synthesizer",
+   "tier": "pearl",
+   "artist": "Wendy Carlos",
+   "album": "The Well‐Tempered Synthesizer"
+  },
+  {
+   "id": "yoshio ojima|une collection des chaînées",
+   "tier": "pearl",
+   "artist": "Yoshio Ojima",
+   "album": "Une Collection des Chaînées"
+  },
+  {
+   "id": "唐朝乐队|唐朝",
+   "tier": "hall",
+   "artist": "唐朝乐队",
+   "album": "唐朝"
+  },
+  {
+   "id": "崔健|红旗下的蛋",
+   "tier": "hall",
+   "artist": "崔健",
+   "album": "红旗下的蛋"
+  },
+  {
+   "id": "窦唯|黑梦",
+   "tier": "hall",
+   "artist": "窦唯",
+   "album": "黑梦"
+  }
+ ]
+}
