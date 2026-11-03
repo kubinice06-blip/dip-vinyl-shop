@@ -746,24 +746,25 @@
         "visuallyVerified": true
       },
       "ratings": {
-        "classic": 4,
+        "classic": 5,
         "obscurity": 2,
         "accessibility": 1,
         "listeners": null,
-        "source": "manual:audit-20261102",
+        "source": "manual:hall-expansion-20261103",
         "checkedAt": "2026-11-03T00:00:00Z",
-        "note": "全池稽核 audit-20261102（方案 C）：含〈Monica〉的成名作；粵語主流→2",
+        "note": "店主 2026-11-03 定案殿堂擴充：殿堂最低門檻 classic=5，經典度由 4 調為 5（只動經典度）",
         "previous": {
-          "classic": 5,
+          "classic": 4,
           "obscurity": 2,
           "accessibility": 1,
-          "source": "manual:genre-anchors",
-          "checkedAt": "2026-08-23T05:03:23Z",
-          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；〈Monica〉定下他的勁歌熱舞路線並獲選 1999 年香港電台世紀金曲，全碟四白金，屬大眾曲目。",
-          "rarity": "rare"
+          "listeners": null,
+          "source": "manual:audit-20261102",
+          "checkedAt": "2026-11-03T00:00:00Z",
+          "note": "全池稽核 audit-20261102（方案 C）：含〈Monica〉的成名作；粵語主流→2",
+          "rarity": "common"
         }
       },
-      "rarity": "common",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": true,
         "tier": "hall",
@@ -4200,15 +4201,25 @@
         "visuallyVerified": true
       },
       "ratings": {
-        "classic": 4,
+        "classic": 5,
         "obscurity": 2,
         "accessibility": 2,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-23T05:03:23Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；第九屆金曲獎最佳流行音樂演唱唱片獎、台灣流行音樂百佳專輯（1993-2005）第四十一名，公認的張雨生創作代表作。"
+        "source": "manual:hall-expansion-20261103",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "店主 2026-11-03 定案殿堂擴充：殿堂最低門檻 classic=5，經典度由 4 調為 5（只動經典度）",
+        "previous": {
+          "classic": 4,
+          "obscurity": 2,
+          "accessibility": 2,
+          "listeners": null,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-23T05:03:23Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；第九屆金曲獎最佳流行音樂演唱唱片獎、台灣流行音樂百佳專輯（1993-2005）第四十一名，公認的張雨生創作代表作。",
+          "rarity": "rare"
+        }
       },
-      "rarity": "rare",
+      "rarity": "uncommon",
       "apexAssessment": {
         "eligible": true,
         "tier": "hall",

@@ -1091,24 +1091,25 @@
         "visuallyVerified": true
       },
       "ratings": {
-        "classic": 4,
+        "classic": 5,
         "obscurity": 2,
         "accessibility": 2,
         "listeners": null,
-        "source": "manual:audit-20261102",
+        "source": "manual:hall-expansion-20261103",
         "checkedAt": "2026-11-03T00:00:00Z",
-        "note": "全池稽核 audit-20261102（方案 C）：藝人正典錄音，但這是 1997 合輯，無針對本輯的正典共識；殿堂不成立",
+        "note": "店主 2026-11-03 定案殿堂擴充：殿堂最低門檻 classic=5，經典度由 4 調為 5（只動經典度）",
         "previous": {
-          "classic": 5,
+          "classic": 4,
           "obscurity": 2,
-          "accessibility": 3,
-          "source": "manual:genre-anchors",
-          "checkedAt": "2026-08-21T20:27:45Z",
-          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；古典女聲藍調的定義者，搖滾名人堂與葛萊美終身成就雙重認證；官方雙碟精選流通廣，但 1920 年代蟲膠母源的音質對現代耳朵仍有門檻。",
-          "rarity": "epic"
+          "accessibility": 2,
+          "listeners": null,
+          "source": "manual:audit-20261102",
+          "checkedAt": "2026-11-03T00:00:00Z",
+          "note": "全池稽核 audit-20261102（方案 C）：藝人正典錄音，但這是 1997 合輯，無針對本輯的正典共識；殿堂不成立",
+          "rarity": "rare"
         }
       },
-      "rarity": "rare",
+      "rarity": "uncommon",
       "apexAssessment": {
         "eligible": true,
         "tier": "hall",

@@ -5886,24 +5886,25 @@
         "visuallyVerified": true
       },
       "ratings": {
-        "classic": 4,
+        "classic": 5,
         "obscurity": 2,
         "accessibility": 1,
         "listeners": null,
-        "source": "manual:audit-20261102",
+        "source": "manual:hall-expansion-20261103",
         "checkedAt": "2026-11-03T00:00:00Z",
-        "note": "全池稽核 audit-20261102（方案 C）：迪斯可里程碑單曲所在盤，但專輯本身非正典核心；經典度降 4，硬蕊度改 1",
+        "note": "店主 2026-11-03 定案殿堂擴充：殿堂最低門檻 classic=5，經典度由 4 調為 5（只動經典度）",
         "previous": {
-          "classic": 5,
+          "classic": 4,
           "obscurity": 2,
-          "accessibility": 2,
-          "source": "manual:genre-anchors",
-          "checkedAt": "2026-08-23T02:48:19Z",
-          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；十七分鐘標題曲確立 disco 長版形式,標題曲入選搖滾名人堂 500 Songs That Shaped Rock and Roll",
-          "rarity": "uncommon"
+          "accessibility": 1,
+          "listeners": null,
+          "source": "manual:audit-20261102",
+          "checkedAt": "2026-11-03T00:00:00Z",
+          "note": "全池稽核 audit-20261102（方案 C）：迪斯可里程碑單曲所在盤，但專輯本身非正典核心；經典度降 4，硬蕊度改 1",
+          "rarity": "common"
         }
       },
-      "rarity": "common",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": true,
         "tier": "hall",
