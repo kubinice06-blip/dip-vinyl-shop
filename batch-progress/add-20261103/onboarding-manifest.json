@@ -1,0 +1,85 @@
+{
+ "schemaVersion": 1,
+ "batch": "2026-11-03-add-taike",
+ "batchNote": "店主指定單張上架（add-20261103）：濁水溪公社《台客的復仇》，殿堂",
+ "createdAt": "2026-11-03T14:00:00Z",
+ "albums": [
+  {
+   "artist": "濁水溪公社",
+   "album": "台客的復仇",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "500b56c7-1350-4876-966e-ebcd41d9cba7",
+    "upc": "4719260991428",
+    "aliasesChecked": true,
+    "aliasReview": "池中同團 5 張（鄉土．人民．勃魯斯、臭死了、天涯棄逃人、鬼島社會檔案、亞洲衝擊）皆為不同碟；本張英文名 Taik's Eye For An Eye、掛名 L.T.K. Commune／LTK Commune，池中無此英文寫法。MB release-group 500b56c7：Album、secondary types 空（非現場、非合輯）、first-release-date 1999-05-10、TW、條碼 4719260991428、18 軌。Discogs release 4813793 同條碼、Keboyin Music 99142、1999 Taiwan。為該團第二張專輯（第一張為 1995《肛門樂慾期作品輯》，友善的狗）。證據：https://musicbrainz.org/release-group/500b56c7-1350-4876-966e-ebcd41d9cba7 https://www.discogs.com/release/4813793 https://zh.wikipedia.org/wiki/濁水溪公社",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1999,
+    "yearNote": "MB first-release-date 1999-05-10；Discogs 1999；中文維基「1999 年五月」。"
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://i.discogs.com/rfCvMTEm_Z85bTXztDia-kaNcAZDc4ZxqsLzTpPsvLo/rs:fit/g:sm/q:90/h:480/w:480/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ4MTM3/OTMtMTM3NjMzOTM3/MC03NTY3LmpwZWc.jpeg",
+    "source": "discogs",
+    "discogsReleaseId": "4813793",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-03T14:00:00Z",
+    "visuallyVerified": true,
+    "note": "CAA 404、Spotify／Apple 皆無；Discogs release 4813793 封面平掃（L.T.K. C 標誌＋腦與膀胱插畫），條碼／年份／廠牌三項相符，已登錄 data/discogs-cover-registry.json；主線 2026-11-03 目視。"
+   },
+   "ratings": {
+    "classic": 5,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 97,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-11-03T14:00:00Z",
+    "note": "worker /album-rating 機器值 classic 3／obscurity 5／accessibility 3、L=97。經典度：台灣地下搖滾與台語龐克的里程碑、「台客」自我標籤的源頭盤，中英文維基與 Taipei Times 皆以 classic album 稱之，店主指定殿堂 → 5。冷門度：L=97 <1,000 且串流無此盤（試聽 unavailable）→ 下限 5。硬蕊度：龐克、噪音吉他與那卡西旋律混用，有門檻但有旋律 → 3（與池中同團 3–4 一致）。"
+   },
+   "rarity": "legendary",
+   "apexAssessment": {
+    "eligible": true,
+    "tier": "hall",
+    "reason": "店主指定（2026-11-03「濁水溪公社 台客的復仇 殿堂」）。台灣場景例外：一般 7 星殿堂標準要求跨類型史上正典，本張依店主裁定以台灣地下搖滾／台語龐克源頭盤收入殿堂；同團其他 4 張不當頂點（《鬼島社會檔案》拿掉流亡由頂點重整套用工作階段處理）。",
+    "evidenceUrls": [
+     "https://www.taipeitimes.com/News/feat/archives/2010/09/03/2003481971",
+     "https://zh.wikipedia.org/wiki/台客",
+     "https://zh.wikipedia.org/wiki/濁水溪公社"
+    ],
+    "decidedBy": "店主指定"
+   },
+   "description": {
+    "text": "盤名叫《台客的復仇》，十八首歌裡卻找不到一首同名曲。1999 年 5 月，濁水溪公社在喜樂音發行這第二張專輯，英文盤名取作 Taik's Eye For An Eye，把那卡西旋律、龐克與台語歌詞攪在一起。兩位吉他手柯仁堅與蔡海恩是台大同學，學運時就一起編短劇、做抗議道具。蔡海恩寫的〈農村出事情〉打頭陣，至今仍在社運場合被唱起；〈原住民最屌〉只有五秒，〈探功德〉則在第 8 軌與最後一軌各出現一次。那時「台客」還是罵人的話，要到 2005 年才被翻成時髦標籤。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/500b56c7-1350-4876-966e-ebcd41d9cba7",
+     "https://musicbrainz.org/release/f174cde8-760e-42da-92bd-238e4b4b0c3a",
+     "https://www.discogs.com/release/4813793",
+     "https://zh.wikipedia.org/wiki/濁水溪公社",
+     "https://zh.wikipedia.org/wiki/台客",
+     "https://www.taipeitimes.com/News/feat/archives/2010/09/03/2003481971",
+     "https://vocus.cc/article/602f3f42d110b4bc8a07ca1a",
+     "https://en.wikipedia.org/wiki/LTK_Commune"
+    ],
+    "note": "add-20261103 單張：研究（主線）→ hook（主線）→ 寫作（主線）→ 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-03T14:00:00Z",
+    "note": "Apple tw storefront 搜尋「濁水溪公社」0 筆；池中同團 5 張皆 unavailable；Spotify 亦無此專輯（封面登錄時已查）。無可靠來源，照實標 unavailable。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": false,
+    "apexPool": true
+   }
+  }
+ ]
+}

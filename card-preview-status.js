@@ -3694,4 +3694,5 @@ window.DipPreviewStatus = Object.freeze({
   "uschi brüning & ernst-ludwig petrowsky|kontraste": "unavailable",
   "pascal von wroblewsky|swinging pool": "unavailable",
   "uschi brüning|uschi brüning": "unavailable",
+  "濁水溪公社|台客的復仇": "unavailable",
 });

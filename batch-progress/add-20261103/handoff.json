@@ -1,0 +1,15 @@
+{
+ "batch": "add-20261103", "cards": 1,
+ "written": { "cardCatalog": 1, "kvKeys": 2, "seedRows": 1, "previewReady": 0, "previewUnavailable": 1 },
+ "review": { "by": "cloud-main", "cards": 1, "changed": ["desc4:濁水溪公社|台客的復仇"] },
+ "qa": { "research": "主線單張", "hooks": "主線自寫", "out": "pass", "prepareGate": "0 error", "publishedGate": "0 error" },
+ "apex": 1,
+ "pendingLocal": {
+  "kv": "無",
+  "listeners": [],
+  "apexEvidence": [],
+  "genreTree": "待本機（build-genre-tree --pull 全池拉 KV 超過 10 分鐘被終止；同藝人傳播會落位）",
+  "albumOverrides": "batch-progress/add-20261103/album-overrides-tier.json（後台按「依卡池同步頂點旗標」）"
+ },
+ "artistIntro": { "state": "已有（data/artist-intros/00.json），不補" }
+}
