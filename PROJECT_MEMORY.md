@@ -1,5 +1,14 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-03｜dip-vinyl-shop｜三軸重評第三輪 W3：s07／s08／s09 verdicts 交齊（750 張）
+
+- **範圍**：第三輪 s07–s09（藝人 C–F 段早期無評分來源卡），先跑 `fetch-listeners.mjs` 補 listenersKV（有效值 731/750）。15 段 Opus 代理，主線每段抽 5 張覆核，退回 0 段。只交 verdicts，未動 seed／manifest／card_catalog。
+- **經典度** 舊→新 23/164/301/262/0 → 3/96/258/290/103；**冷門度** 104/171/258/143/74 → 76/393/217/62/2；**硬蕊度** 252/249/156/93/0 → 236/272/166/74/2。
+- **主線改動**：s08 改 3 筆冷門度（EW&F《Touch the World》3→2 大廠主流；Don Cherry《"mu" First Part》3→4 BYG 考古盤對齊同輪；DOMi & JD BECK《WHO ASKED?》4→2 新作抓取早判錯配）；s07、s09 改 0 筆。
+- **給套用階段**：低於冷門度下限 50 張（s07 12／s08 11／s09 27）全是代理註明的疑錯配，古典盤名拆分佔多數，清單在各 summary；keep 20 張（多為值不變，真正查無資料沿用 3 張：賴德和《樂典03》、Deerhoof《Balter / Saunier》、Drake《HABIBTI》）。
+- **主要檔案**：`batch-progress/rerate-20261103/verdicts/s0{7,8,9}-*.json`、`s0{7,8,9}.summary.md`、`shards/s0{7,8,9}.json`（listenersKV）、`PLAN.md`。
+- **驗證**：三片合併檢查全過（每 key 一筆、無缺無多、三軸皆 1–5 整數）。
+
 ### 2026-11-03｜dip-vinyl-shop｜三軸重評第三輪 W4：s10／s11／s12 verdicts 交齊（750 張）
 
 - **範圍**：第三輪 s10–s12（藝人 F–J 段早期無評分來源卡），先跑 `fetch-listeners.mjs` 補 listenersKV（有效值約 96%）。15 段 Opus 代理，主線每段逐張瀏覽、抽核，退回 0 段，主線改 8 張。只交 verdicts，未動 seed／manifest／card_catalog。
