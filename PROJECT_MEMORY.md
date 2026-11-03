@@ -9,6 +9,14 @@
 - **主要檔案**：`batch-progress/rerate-20261103/verdicts/{s04,s05,s06}-*.json`、`{s04,s05,s06}.summary.md`、`mainline-W2.tsv`、`shards/s0{4,5,6}.json`（listenersKV）、`PLAN.md`。
 - **驗證**：三片合併檢查全過（每 key 一筆、無缺無多、三軸 1–5 整數）；冷門度下限機械檢查違規者全為已註明的疑錯配。
 
+### 2026-11-03｜dip-vinyl-shop｜三軸重評第三輪 W6：s16／s17／s18 verdicts 交齊（750 張）
+
+- **範圍**：s16–s18（Lil Baby → Myung-Whun Chung）。先跑 `fetch-listeners.mjs` 補 `listenersKV`（有效值 720／750），15 段 Opus 代理評分，主線每段抽 5 張＋全查經典度 5 分清單與下限缺口，退回 0 段，主線改 7 筆。
+- **新舊分布（1/2/3/4/5）**：經典度 20/164/326/240/0 → 7/98/255/297/93；冷門度 109/191/235/142/73 → 95/344/252/58/1；硬蕊度 252/280/132/86/0 → 258/284/157/48/3。
+- **主線口徑**：5 分要寫得出正典依據，獎項入圍／得獎（Mercury 入圍、Brit 獎）、白金銷量、「生涯代表作」只算 4（Little Simz《Grey Area》、Manics《Everything Must Go》、Ministry《Psalm 69》、Minnie Riperton《Perfect Angel》、Lil Louis《French Kiss》5→4）；代表作至少 4（Maggie Rogers 3→4）；MC HotDog《犬》冷門度 2→3。
+- **錯配（不套下限）**：古典盤名、省略號／撇號盤名、中文拆名（MC HotDog 四張）、掛他人名下等 42 張，`why` 皆註明，給套用工作階段過 `MISMATCH`。
+- **主要檔案**：`batch-progress/rerate-20261103/verdicts/{s16,s17,s18}-*.json`、`{s16,s17,s18}.summary.md`、`*-mainline.log`、`shards/s1{6,7,8}.json`（listenersKV）、`PLAN.md`。
+- **驗證**：三片合併檢查全過（每 key 一筆、無缺無多、三軸 1–5 整數）；冷門度下限機械檢查違規者全為已註明的疑錯配。
 ### 2026-11-03｜dip-vinyl-shop｜三軸重評第三輪 W7：s19／s20／s21 verdicts 交齊（750 張）
 
 - **範圍**：9 月前入庫、無評分來源紀錄的卡。先跑 `fetch-listeners.mjs` 補 listenersKV，15 段 Opus 代理，主線每段抽 5 張，退回 0 段，主線改 5 筆（Orlando 冷門度 5→4；Psychic Chasms、Fear of a Blank Planet、Worlds 經典度 5→4；Passenger《All the Little Lights》4→3）。只交 verdicts，沒動 seed／manifest／card_catalog。
