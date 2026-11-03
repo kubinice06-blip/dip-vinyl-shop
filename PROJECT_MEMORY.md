@@ -1,5 +1,30 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-03｜dip-vinyl-shop｜頂點重整 Q2：異端補 44、流亡補 47（決定清單）
+
+- **店主**：「流亡跟異端太少了」。本段只產出決定清單，不改 seed／manifest／card_catalog。
+- **listeners 補值**：流亡候選中 listeners 為 null 的 452 張，打 worker `/album-rating`，取回 410 張，寫進 `pearl-candidates.json` 的 `listenersKV` 欄。過硬條件（1–299）的有 778 張、668 位。
+- **判定**：6 支 Opus 代理分片判定，主線抽查、改判 7 張，另補 18 張。208 個依據網址全部用 curl 驗過，404 的已換掉。
+- **結果**：
+  - 異端 41→85（目標 150，差 65）。
+  - 流亡 207→254（目標 300，差 46）。
+  - 和 Q1 沒有重疊；同級內也沒有同一藝人兩張。
+- **補不到目標的原因**：候選池不夠。異端候選多半前衛但聽得下去；流亡候選約 560 張是大廠或國營廠盤，冷門度 5 只是因為下限。
+- **待店主決定**：要放寬標準，還是另外上架新盤補足（細節見 summary）。
+- **主要檔案**：`batch-progress/apex-rebalance-20261103/decisions-q2.json`、`decisions-q2.summary.md`、`q2/`（分片、verdicts、build-decisions.py）。
+- **驗證**：`build-decisions.py` 斷言全過：非既有頂點；異端硬蕊度 5；流亡冷門度 5 且 listeners 1–299；每筆至少 2 個網址；同級一藝人一張；不和既有同級藝人重複。合併 Q1 後三級為殿堂 169、流亡 254、異端 85。
+
+### 2026-11-03｜dip-vinyl-shop｜頂點重整 Q1b：同級去重＋殿堂補位決定清單
+
+- **改動**：只產出決定，不改卡池。
+  - 同級內一藝人一張：54 組拿掉 74 張（殿堂 37、流亡 24、異端 13）。
+  - 濁水溪《鬼島社會檔案》pearl → null。
+  - 殿堂從備選補 36 張（Pearl Jam《Ten》、Green Day《Dookie》、Adele《21》等）。
+  - 殿堂最終 169，加《台客的復仇》170；流亡 207、異端 41（待 Q2 擴充）。
+- **主要檔案**：`batch-progress/apex-rebalance-20261103/decisions-q1.json`（111 筆）、`decisions-q1.summary.md`、`build-decisions-q1.js`。
+- **驗證**：產生器自查——同級多張違規 0、補位都在 hall-alternates、111 筆皆有 evidence。
+- **待決**：VA 流亡 3 選 1 是否豁免；Beatles White Album 池中重複兩筆。
+
 ### 2026-11-03｜dip-vinyl-shop｜頂點重整更正：同級內一藝人一張、濁水溪《台客的復仇》進殿堂
 
 - **店主**：「跨等級不用只留一張 Coltrane可以各留一張」「濁水溪公社 台客的復仇 殿堂」。
