@@ -1,5 +1,14 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-03｜dip-vinyl-shop｜三軸重評第三輪 W4：s10／s11／s12 verdicts 交齊（750 張）
+
+- **範圍**：第三輪 s10–s12（藝人 F–J 段早期無評分來源卡），先跑 `fetch-listeners.mjs` 補 listenersKV（有效值約 96%）。15 段 Opus 代理，主線每段逐張瀏覽、抽核，退回 0 段，主線改 8 張。只交 verdicts，未動 seed／manifest／card_catalog。
+- **經典度** 舊→新 26/153/347/224/0 → 1/78/266/335/70；**冷門度** 86/178/242/158/86 → 60/322/294/72/2；**硬蕊度** 220/300/141/89/0 → 201/330/163/53/3。
+- **主線改動**：同藝人第二張 5 分、寫不出榜單依據的降 4（Daily Operation、Wichita Lineman、Cziffra 李斯特、Joker）；正規大廠盤冷門 3→2（Fleetwood Mac 兩張、Gene《Olympian》）；Injury Reserve《By the Time I Get to Phoenix》硬蕊 5→4。逐筆見 `verdicts/s1{0,1,2}-mainline.log`。
+- **給套用階段**：低於冷門度下限 49 張全是代理註明的疑錯配／漏抓（古典盤名拆分佔多數，Karajan 7 張、Szell、Reiner、Gould 等），清單在各 summary；keep 7 張（2026 新作無資料等）。
+- **主要檔案**：`batch-progress/rerate-20261103/verdicts/s1{0,1,2}-*.json`、`s1{0,1,2}.summary.md`、`shards/s1{0,1,2}.json`（listenersKV）、`PLAN.md`。
+- **驗證**：三片合併檢查全過（每 key 一筆、無缺無多、三軸皆 1–5 整數）。
+
 ### 2026-11-03｜dip-vinyl-shop｜三軸重評第三輪 W6：s16／s17／s18 verdicts 交齊（750 張）
 
 - **範圍**：s16–s18（Lil Baby → Myung-Whun Chung）。先跑 `fetch-listeners.mjs` 補 `listenersKV`（有效值 720／750），15 段 Opus 代理評分，主線每段抽 5 張＋全查經典度 5 分清單與下限缺口，退回 0 段，主線改 7 筆。
