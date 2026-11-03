@@ -22105,13 +22105,17 @@
    "artist": "The Beatles",
    "album": "The Beatles",
    "pool": "seed",
-   "status": "unavailable",
-   "notes": [
-    "TW:best-50",
-    "US:best-50",
-    "JP:album-album-search-http-403"
-   ],
-   "checkedAt": "2026-07-19T12:32:09.891Z"
+   "status": "matched",
+   "storefront": "TW",
+   "collectionId": "1436905161",
+   "artistName": "The Beatles",
+   "collectionName": "The Beatles (White Album) (Super Deluxe Edition) [2018 Remix & Remaster]",
+   "previewTrackCount": 7,
+   "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/1f/a4/3e/1fa43ed2-63a9-30ba-a2f3-b74db8b99836/mzaf_17247449828413784807.plus.aac.p.m4a",
+   "score": 92,
+   "matchedAt": "2026-07-19T09:45:17.413Z",
+   "collectionViewUrl": "https://music.apple.com/tw/album/the-beatles-white-album-super-deluxe-edition-2018/1436905161",
+   "note": "2026-11-03 重複卡合併：由《The Beatles (White Album)》的配對併入（原本此筆 unavailable）"
   },
   "williewright\u0000tellingthetruth": {
    "artist": "Willie Wright",
@@ -76353,21 +76357,6 @@
    "score": 95,
    "matchedAt": "2026-07-19T09:45:12.253Z",
    "collectionViewUrl": "https://music.apple.com/tw/album/cut/1440911059"
-  },
-  "thebeatles\u0000thebeatleswhitealbum": {
-   "artist": "The Beatles",
-   "album": "The Beatles (White Album)",
-   "pool": "apex:hall",
-   "status": "matched",
-   "storefront": "TW",
-   "collectionId": "1436905161",
-   "artistName": "The Beatles",
-   "collectionName": "The Beatles (White Album) (Super Deluxe Edition) [2018 Remix & Remaster]",
-   "previewTrackCount": 7,
-   "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/1f/a4/3e/1fa43ed2-63a9-30ba-a2f3-b74db8b99836/mzaf_17247449828413784807.plus.aac.p.m4a",
-   "score": 92,
-   "matchedAt": "2026-07-19T09:45:17.413Z",
-   "collectionViewUrl": "https://music.apple.com/tw/album/the-beatles-white-album-super-deluxe-edition-2018/1436905161"
   },
   "samcooke\u0000liveattheharlemsquareclub1963": {
    "artist": "Sam Cooke",
@@ -133917,20 +133906,6 @@
    "source": "onboarding-manifest",
    "note": "",
    "collectionViewUrl": "https://music.apple.com/us/album/crossings-remastered-1990/1741387216"
-  },
-  "guru\u0000jazzmatazzvolume1": {
-   "artist": "Guru",
-   "album": "Jazzmatazz Volume 1",
-   "pool": "seed",
-   "status": "matched",
-   "storefront": "US",
-   "collectionId": "723627224",
-   "collectionName": "",
-   "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/a6/ac/68/a6ac68f6-db8b-9133-cce1-f4520ed85814/mzaf_6845301876910627534.plus.aac.p.m4a",
-   "matchedAt": "2026-08-28T09:36:48.927Z",
-   "source": "onboarding-manifest",
-   "note": "先前只抓到 22 曲的《Guru's Jazzmatazz, Vol. 1 (Deluxe Edition)》(1362365584)，依配對紀律不採用；改取 us 商店 collectionId 723627224《Jazzmatazz, Vol.1》（12 曲，℗ 1993 Virgin Records America）。曲序與 MB Chrysalis 原盤 12 曲完全一致：Introduction／Loungin'／When You're Near…Sights in the City，且非 Vol. II／Vol. 4。首曲〈Introduction〉試聽實測 200。",
-   "collectionViewUrl": "https://music.apple.com/us/album/jazzmatazz-vol-1/723627224"
   },
   "じゃがたら\u0000それから": {
    "artist": "じゃがたら",
