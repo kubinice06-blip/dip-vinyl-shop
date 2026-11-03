@@ -4724,17 +4724,29 @@
     "classic": 3,
     "obscurity": 5,
     "accessibility": 3,
-    "listeners": null,
+    "listeners": 15,
     "source": "manual:genre-anchors",
     "checkedAt": "2026-08-28T07:57:05Z",
-    "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；1986 年 Shi Zen 廠的個人作，原盤在日本以外幾乎不流通，2018 年 Studio Mule 再版才被國際聽見，屬收藏家領域；本環境查不到當年的獎項或評價。入耳難度中等：以低頻與留白為主要材料，無歌無明顯拍點，但音響柔和。"
+    "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；1986 年 Shi Zen 廠的個人作，原盤在日本以外幾乎不流通，2018 年 Studio Mule 再版才被國際聽見，屬收藏家領域；本環境查不到當年的獎項或評價。入耳難度中等：以低頻與留白為主要材料，無歌無明顯拍點，但音響柔和。",
+    "listenersSource": "worker /album-rating（apex-rebalance-20261103 Q2 補值）"
    },
    "rarity": "uncommon",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "obscurity 已達 5、符合流亡卡第一道門檻，但 listeners 為 null 未取得 Last.fm 有效數值，且跨文字系統掛名分裂會使查詢名稱本身失準，暫不列 pearl，待以正確拼法取得數值後再判。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "頂點重整（apex-rebalance-20261103，2026-11-03）：升為流亡。1986 年由 Shi Zen 小廠發行；原盤從未重發，2018 Studio Mule 出的是重錄版。屬環境音樂收藏線，口碑不及聖杯",
+    "evidenceUrls": [
+     "https://forcedexposure.com/Catalog/STUDIOMUL.010LP.html",
+     "https://www.strandedrecords.com/products/motohiko-hamase-reminiscence-lp"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "obscurity 已達 5、符合流亡卡第一道門檻，但 listeners 為 null 未取得 Last.fm 有效數值，且跨文字系統掛名分裂會使查詢名稱本身失準，暫不列 pearl，待以正確拼法取得數值後再判。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:apex-rebalance-20261103"
    },
    "description": {
     "text": "貝斯手濱瀬元彦 1986 年 1 月 25 日由 Shi Zen 發行的個人作，八首曲子從〈Childhood〉〈Plateau〉一路排到〈Alphaville〉與同名曲〈Reminiscence〉。他不走同期日本環境音樂那種明亮的鍵盤路線，而是把低頻與留白當主要材料，貝斯線在稀疏的電子音色之間拉出長句，空隙比音符更決定聽感。他 1980 年代後期至 90 年代初共發表五張個人作，之後轉向理論寫作，著有《ベースライン・ブック》《ブルー・ノートと調性》與《チャーリー・パーカーの技法》，2008 年才以 E.L.F Ensemble 名義復出演奏。",
@@ -4763,8 +4775,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -7028,13 +7040,21 @@
    },
    "rarity": "uncommon",
    "apexAssessment": {
-    "eligible": true,
-    "tier": "hall",
-    "reason": "1928 年 Hot Five／Savoy Ballroom Five 錄音是爵士史書寫的長期跨來源共識核心，〈West End Blues〉入選葛萊美名人堂，此官方完整套裝並獲 2001 年葛萊美最佳歷史專輯，符合殿堂門檻。",
-    "evidenceUrls": [
-     "https://en.wikipedia.org/wiki/West_End_Blues",
-     "https://en.wikipedia.org/wiki/Grammy_Award_for_Best_Historical_Album"
-    ]
+    "eligible": false,
+    "tier": null,
+    "reason": "頂點重整（apex-rebalance-20261103，2026-11-03）：原殿堂降為一般卡。同級內一藝人一張：Louis Armstrong hall 留《The Complete Hot Five and Hot Seven Recordings, Volume 1》。7 星重審通過（Vol. 3 未過）；West End Blues 系列的起點",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": true,
+     "tier": "hall",
+     "reason": "1928 年 Hot Five／Savoy Ballroom Five 錄音是爵士史書寫的長期跨來源共識核心，〈West End Blues〉入選葛萊美名人堂，此官方完整套裝並獲 2001 年葛萊美最佳歷史專輯，符合殿堂門檻。",
+     "evidenceUrls": [
+      "https://en.wikipedia.org/wiki/West_End_Blues",
+      "https://en.wikipedia.org/wiki/Grammy_Award_for_Best_Historical_Album"
+     ]
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:apex-rebalance-20261103"
    },
    "description": {
     "text": "1928 年 Armstrong 換掉整組人馬，只留自己，找來 Earl Hines 與 Carroll Dickerson 樂團的班底重組 Hot Five，本卷二十二軌就是那一年在 OKeh 的錄音。6 月 28 日錄的〈West End Blues〉開頭是一段無伴奏小號 cadenza，Gunther Schuller 認為它宣告了爵士能與最高等級的音樂表達競爭；〈Weather Bird〉整首只有小號與鋼琴對話，〈Muggles〉〈Tight Like This〉則把獨奏的敘事長度往後拉。",
@@ -7066,8 +7086,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": false,
-    "apexPool": true
+    "seedCards": true,
+    "apexPool": false
    }
   },
   {
@@ -12545,13 +12565,21 @@
    },
    "rarity": "uncommon",
    "apexAssessment": {
-    "eligible": true,
-    "tier": "hall",
-    "reason": "美國電影學會 2005 年「百年百大配樂」列第六名，並有奧斯卡最佳原創配樂、金球獎與葛萊美最佳影視配樂三項獲獎紀錄，跨來源長期共識充分，且卡片收的正是 1975 年 MCA 首發盤。",
-    "evidenceUrls": [
-     "https://en.wikipedia.org/wiki/AFI%27s_100_Years_of_Film_Scores",
-     "https://en.wikipedia.org/wiki/Jaws_(soundtrack)"
-    ]
+    "eligible": false,
+    "tier": null,
+    "reason": "頂點重整（apex-rebalance-20261103，2026-11-03）：原殿堂降為一般卡。同級內一藝人一張：John Williams hall 留《Star Wars (Original Motion Picture Soundtrack)》。AFI 百年最佳電影配樂第 1，跨圈知名度高於 Jaws",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": true,
+     "tier": "hall",
+     "reason": "美國電影學會 2005 年「百年百大配樂」列第六名，並有奧斯卡最佳原創配樂、金球獎與葛萊美最佳影視配樂三項獲獎紀錄，跨來源長期共識充分，且卡片收的正是 1975 年 MCA 首發盤。",
+     "evidenceUrls": [
+      "https://en.wikipedia.org/wiki/AFI%27s_100_Years_of_Film_Scores",
+      "https://en.wikipedia.org/wiki/Jaws_(soundtrack)"
+     ]
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:apex-rebalance-20261103"
    },
    "description": {
     "text": "John Williams 為 1975 年《大白鯊》寫的鯊魚動機只有 E 與 F 兩個音，史匹柏第一次聽到時以為是玩笑。低音域的固定音型交給低音號手 Tommy Johnson 吹奏，Williams 要的是比法國號更具威脅感的音色。1975 年 MCA 原始 LP（MCA-2087）並非電影裡的錄音，而是 Williams 於同年 4 月 17、18 日在 Burbank Studios 為唱片重新編排錄製的版本，最高登上 Billboard 專輯榜第三十二名。本作拿下奧斯卡、金球與葛萊美，美國電影學會百年百大配樂列第六。",
@@ -12583,8 +12611,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": false,
-    "apexPool": true
+    "seedCards": true,
+    "apexPool": false
    }
   },
   {

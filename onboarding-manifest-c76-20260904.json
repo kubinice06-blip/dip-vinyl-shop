@@ -1043,10 +1043,21 @@
    },
    "rarity": "rare",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "頂點重整（apex-rebalance-20261103，2026-11-03）：升為流亡。原盤是 FGW 限量卡帶；2024 年 WRWTFWW 授權重發黑膠，僅 500 張。環境音樂收藏線上的稀品（Music for Spiral 的聽眾數 1 疑似錯配，不選）",
+    "evidenceUrls": [
+     "https://forcedexposure.com/Catalog/WRWTFWW.087C.LP.html",
+     "https://www.last.fm/music/%E5%B0%BE%E5%B3%B6%E7%94%B1%E9%83%8E/Club"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:apex-rebalance-20261103"
    },
    "description": {
     "text": "原盤是一捲卡帶，黑膠版要到 2024 年才出。1983 年那捲帶子的編號是 FGW-2002，廠牌欄上同時掛著 FGW 與 Fukusei Gijutsu Kohboh 兩個實體，條目上沒有列任何 credit。八首曲名排下來像一段流程：Entrance、Days-Man、Schooling，收在〈Graduation〉。做黑膠的是瑞士的 We Release Whatever The Fuck We Want Records，註記寫著由本人監修、取自原始母帶。",
@@ -1071,8 +1082,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {

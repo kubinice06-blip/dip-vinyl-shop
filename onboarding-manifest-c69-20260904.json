@@ -834,10 +834,21 @@
    },
    "rarity": "epic",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "頂點重整（apex-rebalance-20261103，2026-11-03）：升為流亡。Craig Smith（Penny Arkade）化名 Maitreya Kali 自費壓製的 Apache/Inca，當年在街頭手送手賣，是私壓迷幻民謠聖杯；後由 Ugly Things／Goner 授權重發",
+    "evidenceUrls": [
+     "https://www.allmusic.com/album/apache-mw0001148319",
+     "https://goner-records.com/products/craig-smith-maitreya-kali-apache-inca-2"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:apex-rebalance-20261103"
    },
    "description": {
     "text": "The Monkees 錄過的〈Salesman〉是他寫的，他把它放進自己在街上賣的唱片裡。他本名 Craig Smith，1968 年去亞洲，在 Kandahar 據稱遭人毆打搶劫；回國後改名 Satya Sai Maitreya Kali，自行出版了《Apache》與《Inca》，維基記唱片主要分送朋友或在街上賣。原盤是單聲道。記者 Mike Stax 花了十五年研究，領回他的骨灰，2016 年出版了寫他一生的傳記；他 2012 年在無家可歸中過世。",
@@ -859,8 +870,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {

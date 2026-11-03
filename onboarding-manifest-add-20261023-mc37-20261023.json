@@ -1440,10 +1440,21 @@
    },
    "rarity": "legendary",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "evidenceUrls": [],
-    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 279），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+    "eligible": true,
+    "tier": "heresy",
+    "reason": "頂點重整（apex-rebalance-20261103，2026-11-03）：升為異端。全由遠端回聲室麥克風回授調變構成的電子原音作品，Tudor 首張獨立作曲；回授共鳴為主，刺耳度不及噪音牆",
+    "evidenceUrls": [
+     "https://www.soundohm.com/product/microphone-tudor",
+     "https://en.wikipedia.org/wiki/David_Tudor"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 279），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:apex-rebalance-20261103"
    },
    "description": {
     "text": "1973 年錄在奧克蘭，1978 年才由義大利廠牌出版。以首演 Cage 作品聞名的鋼琴家 David Tudor，1973 年 5 月在 Mills College 的當代音樂中心錄下這部作品。替它出版的是義大利的 Cramps。兩面分別叫〈Mix A〉與〈Mix B〉，各長 27 分 30 秒，是同一部作品的兩種混音。",
@@ -1464,8 +1475,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -1679,10 +1690,22 @@
    },
    "rarity": "epic",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "evidenceUrls": [],
-    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 4），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+    "eligible": true,
+    "tier": "heresy",
+    "reason": "頂點重整（apex-rebalance-20261103，2026-11-03）：升為異端。純原聲小號延伸技法做出近似電子噪音的嘶鳴、氣爆與尖嘯，標題即宣示無剪接無電子（主線補）",
+    "evidenceUrls": [
+     "https://en.wikipedia.org/wiki/Mazen_Kerbaj",
+     "https://musicbrainz.org/release-group/a7e72a35-bb52-4d27-8701-8b9ff5cfee71",
+     "https://www.last.fm/music/Mazen+Kerbaj/Solo+Trumpet+Vol.+2.1%3A+No+Cuts%2C+No+Overdubs%2C+No+Use+of+Electronics"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 4），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:apex-rebalance-20261103"
    },
    "description": {
     "text": "規則直接寫進標題：不剪接、不疊錄、不插電。2015 年成為柏林 DAAD 駐村藝術家的黎巴嫩小號手 Mazen Kerbaj，2016 年 11、12 月進行了這次錄音，地點是柏林的 Audio Cue。Discrepant 把它發行出來，已是 2019 年。這是兩集獨奏小號系列的第一集，Vol. 2.2 則用上了這一集排除的電子與疊錄。廠方形容裡頭的聲音是尖叫、咯咯笑、嚎叫與嘶鳴，偶爾冒出起伏的音調與脈動。",
@@ -1705,8 +1728,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {

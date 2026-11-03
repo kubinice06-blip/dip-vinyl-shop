@@ -1115,10 +1115,21 @@
    },
    "rarity": "legendary",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "evidenceUrls": [],
-    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 65），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "頂點重整（apex-rebalance-20261103，2026-11-03）：升為流亡。英國自由爵士收藏盤，但 Fontana 大廠發行，非私壓（主線補收：代理判 no 是因缺聖杯口碑，但過硬條件：listeners 有效 1–299、非錯配、冷門度 5）",
+    "evidenceUrls": [
+     "https://musicbrainz.org/release-group/f2feaad6-cd1c-413d-8c47-03988b4a54d0",
+     "https://www.last.fm/music/The+Ric+Colbeck+Quartet/The+Sun+Is+Coming+Up"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 65），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:apex-rebalance-20261103"
    },
    "description": {
     "text": "小號手領銜，中音交給英國的 Mike Osborne。那位小號手是 Ric Colbeck，1970 年 1 月在倫敦錄下自己寫的四首。Osborne 從 1962 到 1972 年都待在 Mike Westbrook 的樂團。這組四重奏只有兩支管樂、貝斯與鼓，貝斯手是 J.-F. Jenny-Clark。英國 Fontana 在 1970 年把它發行。",
@@ -1142,7 +1153,7 @@
     "descriptionKv": false,
     "albumOverride": false,
     "seedCards": false,
-    "apexPool": false
+    "apexPool": true
    }
   },
   {

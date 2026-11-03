@@ -278,10 +278,22 @@
    },
    "rarity": "legendary",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "頂點重整（apex-rebalance-20261103，2026-11-03）：升為流亡。吉祥寺 live house 自營 Aketa's Disk 首號 AD-1，極小廠現場盤；原盤罕見，2019 才有數位版",
+    "evidenceUrls": [
+     "https://www.last.fm/music/%E6%98%8E%E7%94%B0%E5%B7%9D%E8%8D%98%E4%B9%8B/Aketa%27s+Erotical+Piano+Solo+%26+Grotesque+Piano+Trio",
+     "https://jazzmusicarchives.com/album/shoji-aketagawa-aketa/%E3%82%A2%E3%82%B1%E3%82%BF%E3%82%BA%E3%83%BB%E3%82%A8%E3%83%AD%E3%83%81%E3%82%AB%E3%83%AB%E3%83%BB%E3%83%94%E3%82%A2%E3%83%8E%E3%83%BB%E3%82%BD%E3%83%AD-and-%E3%82%B0%E3%83%AD%E3%83%86%E3%82%B9%E3%82%AF%E3%83%BB%E3%83%94%E3%82%A2%E3%83%8E%E3%83%BB%E3%83%88%E3%83%AA%E3%82%AA-%5Baketa%E2%80%99s-erotical-piano-solo-and-grotesque-piano-trio%5D%28live%29",
+     "https://www.dustygroove.com/search/Aketa%2527s+Disk"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:apex-rebalance-20261103"
    },
    "description": {
     "text": "唱片編號 AD-1，是這家廠牌的第一號，而他自己掛的是製作與企畫。1975 年的封面同時列 Aketa's Disk 與 Offbeat Records，發售由 Offbeat 經手。鋼琴獨奏錄於 3 月 30 日，B2 的三重奏是 3 月 31 日在アケタの店的現場，貝斯山崎弘一、鼓宮坂高志。A 面五首之間看不到刻軌的分隔線；七首裡六首自作，末曲〈ワルツ・フォー・フー〉是 Bill Evans 的。他 2024 年 11 月 16 日因癌症過世，享年 74。",
@@ -303,8 +315,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -1154,10 +1166,21 @@
    },
    "rarity": "legendary",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：accessibility=5（heresy 最低門檻），但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "heresy",
+    "reason": "頂點重整（apex-rebalance-20261103，2026-11-03）：升為異端。阿部薫雙 LP 中音／高音薩克斯獨奏，被稱日本最刺耳的薩克斯音色、自由即興傳說；屬極端即興但非噪音牆級",
+    "evidenceUrls": [
+     "https://en.wikipedia.org/wiki/Kaoru_Abe",
+     "https://www.scaruffi.com/jazz/abe.html"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：accessibility=5（heresy 最低門檻），但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:apex-rebalance-20261103"
    },
    "description": {
     "text": "他生前流通過的專輯只有這一張，錄音來自一九七五年十月的現場。Jazz Tokyo 的横井一江這樣寫，並把他的即興形容為「苛烈」。雙碟，ALM Records 的 AL-8 與 AL-9，副標題印「Saxophone Solo Improvisations」，七段全部是無伴奏的薩克斯獨奏，最長一段 25 分 54 秒。十月十八日青山タワーホール那場音樂會叫「なしくずしの死」。1976 年原盤與 1983 年再壓很難分辨，差別在標價與封套右下角內側印的 (P) 年份。",
@@ -1177,8 +1200,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {

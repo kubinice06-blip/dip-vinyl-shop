@@ -1256,21 +1256,22 @@
    },
    "rarity": "uncommon",
    "apexAssessment": {
-    "eligible": true,
-    "tier": "pearl",
-    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。L3有效，Galloway 民族田野LP，壓量無據、非收藏聖杯；5星",
-    "evidenceUrls": [
-     "https://www.last.fm/music/Various%20Artists/Laos%20-%20L'art%20Du%20Kh%C3%A8ne",
-     "https://musicbrainz.org/release-group/380493d0-45bc-4284-a710-fb71f2ba9f2f"
-    ],
+    "eligible": false,
+    "tier": null,
+    "reason": "頂點重整（apex-rebalance-20261103，2026-11-03）：原流亡降為一般卡。同級內一藝人一張：Various Artists pearl 留《Bouquet of Steel》。三張中稽核強度最高（pearl2）；Sheffield 1980 地下合輯。註：VA 不是單一藝人，套用時可考慮豁免",
+    "evidenceUrls": [],
     "previous": {
-     "eligible": false,
-     "tier": null,
-     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-     "evidenceUrls": []
+     "eligible": true,
+     "tier": "pearl",
+     "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。L3有效，Galloway 民族田野LP，壓量無據、非收藏聖杯；5星",
+     "evidenceUrls": [
+      "https://www.last.fm/music/Various%20Artists/Laos%20-%20L'art%20Du%20Kh%C3%A8ne",
+      "https://musicbrainz.org/release-group/380493d0-45bc-4284-a710-fb71f2ba9f2f"
+     ],
+     "source": "manual:audit-20261102"
     },
     "assessedAt": "2026-11-03T00:00:00Z",
-    "source": "manual:audit-20261102"
+    "source": "manual:apex-rebalance-20261103"
    },
    "description": {
     "text": "三位演奏者三種尺寸的笙：長管低音、中管中音、短管高音。1972 年由法國的 Galloway 壓成黑膠，收八軌，屬該廠牌世界音樂系列的第 26 號；錄音由音樂學者 Jacques Brunet 在同一年完成。A 面四軌是長管與中管兩位的曲目，其中一軌二重奏、一軌即興；B 面四軌全交給吹短管高音的那位。最長一軌八分二十二秒，最短的正是那段二重奏，只有兩分十三秒。資料庫端以 Laos 為題的盤裡，這張建檔年代最早。",
@@ -1292,8 +1293,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": false,
-    "apexPool": true
+    "seedCards": true,
+    "apexPool": false
    }
   },
   {
@@ -1862,21 +1863,22 @@
    },
    "rarity": "rare",
    "apexAssessment": {
-    "eligible": true,
-    "tier": "pearl",
-    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。地方小廠，壓量無據，2015 CD再發；不到傳說級稀有",
-    "evidenceUrls": [
-     "https://www.last.fm/music/AKA/Crazy%20Joe",
-     "https://musicbrainz.org/release-group/7fc685d9-6364-442e-a33e-d74ab8aa859e"
-    ],
+    "eligible": false,
+    "tier": null,
+    "reason": "頂點重整（apex-rebalance-20261103，2026-11-03）：原流亡降為一般卡。同級內一藝人一張：AKA pearl 留《Do What You Like》。經典度 4（另一張 3）",
+    "evidenceUrls": [],
     "previous": {
-     "eligible": false,
-     "tier": null,
-     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-     "evidenceUrls": []
+     "eligible": true,
+     "tier": "pearl",
+     "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。地方小廠，壓量無據，2015 CD再發；不到傳說級稀有",
+     "evidenceUrls": [
+      "https://www.last.fm/music/AKA/Crazy%20Joe",
+      "https://musicbrainz.org/release-group/7fc685d9-6364-442e-a33e-d74ab8aa859e"
+     ],
+     "source": "manual:audit-20261102"
     },
     "assessedAt": "2026-11-03T00:00:00Z",
-    "source": "manual:audit-20261102"
+    "source": "manual:apex-rebalance-20261103"
    },
    "description": {
     "text": "1973 年雅加達的演出裡，主唱被吊起來、再放進一具棺材。在那之前他先跳上牆、再爬上屋瓦；特技配在哪一首歌上，來源只有一處說法。碟本身是 1972 年印尼 Indra 以 AKL-047 壓的 12 吋黑膠，編號緊接在前一張的 AKL - 029 之後，也是他們 1970 年代三張連續出版的最後一張。九軌裡兩個英文曲名、七個印尼文曲名，〈Crazy Joe〉開場、〈Bidadari〉收尾。",
@@ -1897,8 +1899,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": false,
-    "apexPool": true
+    "seedCards": true,
+    "apexPool": false
    }
   },
   {

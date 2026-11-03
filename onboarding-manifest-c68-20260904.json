@@ -421,10 +421,22 @@
    },
    "rarity": "epic",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "頂點重整（apex-rebalance-20261103，2026-11-03）：升為流亡。Holyground 自營微型廠 1971 原壓僅 250 張，英國私壓迷幻／acid folk 聖杯；僅 1989 Magic Mixture、1992 CD 小量再發。掛名為兩面分屬兩團的原盤實況，非拆名錯配",
+    "evidenceUrls": [
+     "https://holyground.co.uk/astral/astralinfo.html",
+     "https://www.holyground.co.uk/podcast/4/episode-4-show-notes.pdf",
+     "https://www.last.fm/music/Lightyears+Away+%2F+Thundermother/Astral+Navigations"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:apex-rebalance-20261103"
    },
    "description": {
     "text": "封面那塊石頭上的兩組字母，原本要拼成 Smoke Pot，被印刷廠塗掉了。封面上也沒有印團名，這張自家發行的單聲道盤常被當成樂團 Astral Navigations 的作品。A 面是 Lightyears Away，B 面是 Thundermother。Holyground 是 Mike Levon 在 Wakefield 辦的廠牌兼錄音室，1975 年進入休眠。A 面三首有 Bill Nelson，〈Yesterday〉讓他第一次上 John Peel 的節目。",
@@ -446,8 +458,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {

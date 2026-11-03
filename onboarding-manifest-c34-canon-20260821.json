@@ -12099,21 +12099,22 @@
       },
       "rarity": "rare",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "方案 C（audit-20261102，2026-11-03）：升為殿堂（該軸 7 星）。RS 500 前段、史上最暢銷雷鬼盤、全球非樂迷皆知；合輯性質扣一級",
-        "evidenceUrls": [
-          "https://en.wikipedia.org/wiki/Legend_(Bob_Marley_and_the_Wailers_album)",
-          "https://www.rollingstone.com/music/music-lists/best-albums-of-all-time-1062063/"
-        ],
+        "eligible": false,
+        "tier": null,
+        "reason": "頂點重整（apex-rebalance-20261103，2026-11-03）：原殿堂降為一般卡。同級內一藝人一張：Bob Marley & The Wailers hall 留《Exodus》。Time 二十世紀最佳專輯；Legend 是精選輯，原創專輯優先",
+        "evidenceUrls": [],
         "previous": {
-          "eligible": false,
-          "tier": null,
-          "reason": "地位確實達到殿堂等級，但性質是身後精選而非錄音室正典，殿堂席位宜留給《Exodus》一類原作；建議店主另行裁定合輯可否入殿堂。",
-          "evidenceUrls": []
+          "eligible": true,
+          "tier": "hall",
+          "reason": "方案 C（audit-20261102，2026-11-03）：升為殿堂（該軸 7 星）。RS 500 前段、史上最暢銷雷鬼盤、全球非樂迷皆知；合輯性質扣一級",
+          "evidenceUrls": [
+            "https://en.wikipedia.org/wiki/Legend_(Bob_Marley_and_the_Wailers_album)",
+            "https://www.rollingstone.com/music/music-lists/best-albums-of-all-time-1062063/"
+          ],
+          "source": "manual:audit-20261102"
         },
         "assessedAt": "2026-11-03T00:00:00Z",
-        "source": "manual:audit-20261102"
+        "source": "manual:apex-rebalance-20261103"
       },
       "description": {
         "text": "Bob Marley 過世三年後，Island 於 1984 年 5 月推出的身後精選，由 Chris Blackwell 等人操刀選曲，把〈No Woman, No Cry〉〈Three Little Birds〉〈Could You Be Loved〉〈Buffalo Soldier〉等 Island 時期單曲集中在一處。編排刻意偏向流暢好入耳的一面，因而成為多數人接觸 reggae 的第一張唱片。全球賣出約兩千五百萬張，是史上最暢銷的 reggae 專輯，並在 Billboard 200 累計逾 950 週在榜。",
@@ -12145,8 +12146,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": false,
-        "apexPool": true
+        "seedCards": true,
+        "apexPool": false
       }
     },
     {

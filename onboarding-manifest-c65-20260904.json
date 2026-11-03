@@ -550,10 +550,21 @@
    },
    "rarity": "legendary",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：accessibility=5（heresy 最低門檻），但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "heresy",
+    "reason": "頂點重整（apex-rebalance-20261103，2026-11-03）：升為異端。義大利 power electronics 奠基作，以集中營為題的工業噪音長篇，被視為最陰森的早期工業噪音之一（主線補）",
+    "evidenceUrls": [
+     "https://en.wikipedia.org/wiki/Maurizio_Bianchi",
+     "https://www.last.fm/music/Maurizio+Bianchi/Symphony+for+a+Genocide"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：accessibility=5（heresy 最低門檻），但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:apex-rebalance-20261103"
    },
    "description": {
     "text": "作曲那一欄，唱片上印的是 De-Composed By。1981 年由英國的 Sterile Records 發行，編號 SR 2，白標黑膠，附一張明信片；製作、工程、電子、效果、節奏與封套全掛他一人，錄音在米蘭的 Mectpyo Studio。七首曲子的標題全部取自納粹滅絕營的名字，開場是〈Treblinka〉。唱片上印著一句寓意：過去的懲罰，是現在無可避免的盲目。他 1979 年起先以 Sacher-Pelz 之名發卡帶，1983 年成為耶和華見證人並宣布退出音樂。",
@@ -573,8 +584,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -2037,10 +2048,21 @@
    },
    "rarity": "rare",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "頂點重整（apex-rebalance-20261103，2026-11-03）：升為流亡。Bruton 圖書館盤，有 IC 1980 商業授權版與 Dutton Vocalion 2015 再發，非傳說稀有（主線補收：代理判 no 是因缺聖杯口碑，但過硬條件：listeners 有效 1–299、非錯配、冷門度 5）",
+    "evidenceUrls": [
+     "https://www.last.fm/music/Francis+Monkman/Energism",
+     "https://en.wikipedia.org/wiki/Francis_Monkman"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:apex-rebalance-20261103"
    },
    "description": {
     "text": "這家圖書館廠牌 1977 年開在 Bruton Street，1982 年被 Michael Jackson 買下。1978 年的 BRI 4 上，十一軌每首都拖一個括號副標，例如〈Perpetual Motion (Unceasing Energy)〉，另有兩軌是替前一軌備的替換結尾。1980 年德國的 Innovative Communication 又出過一次。〈Achievements of Man〉的片段後來成了 BBC《Think Again》的主題。",
@@ -2061,8 +2083,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -3215,10 +3237,21 @@
    },
    "rarity": "legendary",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：accessibility=5（heresy 最低門檻），但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "頂點重整（apex-rebalance-20261103，2026-11-03）：升為流亡。Finnadar（Atlantic 配銷），通路不算極小；NWW 名單級，但缺稀有口碑依據（主線補收：代理判 no 是因缺聖杯口碑，但過硬條件：listeners 有效 1–299、非錯配、冷門度 5）",
+    "evidenceUrls": [
+     "https://musicbrainz.org/release-group/9fdc8c4f-7e78-43bc-8cda-e85cad33f17d",
+     "https://www.last.fm/music/%C4%B0lhan+Mimaro%C4%9Flu/Wings+of+the+Delirious+Demon+and+Other+Electronic+Works"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：accessibility=5（heresy 最低門檻），但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:apex-rebalance-20261103"
    },
    "description": {
     "text": "唱片標籤上印的其實是另一個名字：《Electronic Compositions》。1972 年 SR 9001 的說明記著，全部作品都在哥倫比亞—普林斯頓電子音樂中心完成，他也在那裡師從 Vladimir Ussachevsky。兩首的副標寫著致敬對象：第八號前奏獻給 Edgard Varèse，〈White Cockatoo〉仿的是 Jackson Pollock。Finnadar 由他自己經營、Atlantic 配銷，本業則是 Atlantic 的製作人。",
@@ -3239,8 +3272,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   }
  ]

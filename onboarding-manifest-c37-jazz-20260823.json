@@ -5148,13 +5148,21 @@
       },
       "rarity": "uncommon",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "cool jazz 一派因本作得名，九重奏錄音被跨來源長期公認為 post-bebop 樂史核心文獻，開創地位無爭議。",
-        "evidenceUrls": [
-          "https://en.wikipedia.org/wiki/Birth_of_the_Cool",
-          "https://en.wikipedia.org/wiki/Cool_jazz"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "頂點重整（apex-rebalance-20261103，2026-11-03）：原殿堂降為一般卡。同級內一藝人一張：Miles Davis hall 留《Kind of Blue》。7 星錨點本身；史上最暢銷爵士唱片",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "cool jazz 一派因本作得名，九重奏錄音被跨來源長期公認為 post-bebop 樂史核心文獻，開創地位無爭議。",
+          "evidenceUrls": [
+            "https://en.wikipedia.org/wiki/Birth_of_the_Cool",
+            "https://en.wikipedia.org/wiki/Cool_jazz"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:apex-rebalance-20261103"
       },
       "description": {
         "text": "1948 年 Miles Davis 自 Claude Thornhill 樂團圈子組出九重奏，編制罕見地納入法國號與低音號，Gil Evans、Gerry Mulligan、John Lewis 等人的編曲把大樂團織度縮進室內樂尺度。1949 至 1950 年為 Capitol 錄下的三場錄音原以 78 轉單曲流通，1957 年結集成《Birth of the Cool》，酷派爵士自此得名；〈Move〉、〈Jeru〉、〈Boplicity〉裡柔化的音色與對位寫作，是 post-bebop 分岔出另一條路的起點。",
@@ -5187,8 +5195,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": false,
-        "apexPool": true
+        "seedCards": true,
+        "apexPool": false
       }
     },
     {

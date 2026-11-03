@@ -115,22 +115,23 @@
    },
    "rarity": "epic",
    "apexAssessment": {
-    "eligible": true,
-    "tier": "pearl",
-    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。2019 Octave Lab CD 正式再發；L=1",
-    "evidenceUrls": [
-     "https://www.last.fm/music/%E7%94%9F%E6%B4%BB%E5%90%91%E4%B8%8A%E5%A7%94%E5%93%A1%E4%BC%9A/Live%20in%20Masuda",
-     "https://musicbrainz.org/release-group/44bf88b7-f2d7-460d-ab5a-98a9065ae56e",
-     "https://www.discogs.com/release/9761821"
-    ],
+    "eligible": false,
+    "tier": null,
+    "reason": "頂點重整（apex-rebalance-20261103，2026-11-03）：原流亡降為一般卡。同級內一藝人一張：生活向上委員会 pearl 留《生活向上委員会ニューヨーク支部》。經典度 4（另一張 3）；日本自由爵士史上傳說級自主盤",
+    "evidenceUrls": [],
     "previous": {
-     "eligible": false,
-     "tier": null,
-     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-     "evidenceUrls": []
+     "eligible": true,
+     "tier": "pearl",
+     "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。2019 Octave Lab CD 正式再發；L=1",
+     "evidenceUrls": [
+      "https://www.last.fm/music/%E7%94%9F%E6%B4%BB%E5%90%91%E4%B8%8A%E5%A7%94%E5%93%A1%E4%BC%9A/Live%20in%20Masuda",
+      "https://musicbrainz.org/release-group/44bf88b7-f2d7-460d-ab5a-98a9065ae56e",
+      "https://www.discogs.com/release/9761821"
+     ],
+     "source": "manual:audit-20261102"
     },
     "assessedAt": "2026-11-03T00:00:00Z",
-    "source": "manual:audit-20261102"
+    "source": "manual:apex-rebalance-20261103"
    },
    "description": {
     "text": "同一個團名分成兩支：一支去了紐約，另一支留在日本錄下益田。錄音是 1976 年 6 月 5 日的島根縣益田市民體育館，唱片 1978 年才出，Aketa's Disk 的 AD-6。四個人：松風鉱一中音薩克斯、明田川荘之鋼琴、山崎弘一貝斯、宮坂高史鼓；製作欄上與兩位樂手並列的是「益田ジャズ・クラブ」。碟上只有三首：Coltrane 的〈Impressions〉、Cole Porter 的〈I Love You〉，與明田川寫的〈斎〉。",
@@ -150,8 +151,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": false,
-    "apexPool": true
+    "seedCards": true,
+    "apexPool": false
    }
   },
   {

@@ -1214,21 +1214,22 @@
    },
    "rarity": "rare",
    "apexAssessment": {
-    "eligible": true,
-    "tier": "pearl",
-    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。L3有效，手工噴印私壓，但另有兩個後期壓片、樂團總銷約七萬；壓量無據；不到7",
-    "evidenceUrls": [
-     "https://www.last.fm/music/Wilson%20McKinley/On%20Stage",
-     "https://musicbrainz.org/release-group/d90b40f1-f6d2-42db-8e2f-37650213359e"
-    ],
+    "eligible": false,
+    "tier": null,
+    "reason": "頂點重整（apex-rebalance-20261103，2026-11-03）：原流亡降為一般卡。同級內一藝人一張：Wilson McKinley pearl 留《Spirit of Elijah》。經典度 4，基督教迷幻圈公認的聖杯",
+    "evidenceUrls": [],
     "previous": {
-     "eligible": false,
-     "tier": null,
-     "reason": "已評估：obscurity=5、listeners=3，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
-     "evidenceUrls": []
+     "eligible": true,
+     "tier": "pearl",
+     "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。L3有效，手工噴印私壓，但另有兩個後期壓片、樂團總銷約七萬；壓量無據；不到7",
+     "evidenceUrls": [
+      "https://www.last.fm/music/Wilson%20McKinley/On%20Stage",
+      "https://musicbrainz.org/release-group/d90b40f1-f6d2-42db-8e2f-37650213359e"
+     ],
+     "source": "manual:audit-20261102"
     },
     "assessedAt": "2026-11-03T00:00:00Z",
-    "source": "manual:audit-20261102"
+    "source": "manual:apex-rebalance-20261103"
    },
    "description": {
     "text": "樂團不知道那場演出有人在錄音，被告知要出成專輯時嚇壞了。那是一場佈道外展活動，地點在加拿大卑詩省溫哥華的 Pender Auditorium；Mike Messer 說台上是一支鬆散、練得不夠的樂團，另有人臨時加進來打康加。首版封套用回收的薄紙板、以手工模板噴印，廠牌欄寫 Not On Label、沒有目錄號，兩面交給俄亥俄州的 Rite Record Productions 客壓。唱片靠所謂的 Highway Missionaries 發傳單賣出去。",
@@ -1249,8 +1250,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": false,
-    "apexPool": true
+    "seedCards": true,
+    "apexPool": false
    }
   },
   {
@@ -2190,21 +2191,22 @@
    },
    "rarity": "rare",
    "apexAssessment": {
-    "eligible": true,
-    "tier": "pearl",
-    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。小廠／自發盤、聽眾<300，但壓量未見數百張以下的確據，也非收藏圈公認聖杯；只到 5",
-    "evidenceUrls": [
-     "https://www.last.fm/music/Hope%20of%20Glory/Second%20Look",
-     "https://musicbrainz.org/release-group/01988d62-f2e2-47ce-ba68-e91a6c365a6b"
-    ],
+    "eligible": false,
+    "tier": null,
+    "reason": "頂點重整（apex-rebalance-20261103，2026-11-03）：原流亡降為一般卡。同級內一藝人一張：Hope of Glory pearl 留《Under the Spout Where the Glory Comes Out》。兩張強度相同；取首張、場景名氣較高者",
+    "evidenceUrls": [],
     "previous": {
-     "eligible": false,
-     "tier": null,
-     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-     "evidenceUrls": []
+     "eligible": true,
+     "tier": "pearl",
+     "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。小廠／自發盤、聽眾<300，但壓量未見數百張以下的確據，也非收藏圈公認聖杯；只到 5",
+     "evidenceUrls": [
+      "https://www.last.fm/music/Hope%20of%20Glory/Second%20Look",
+      "https://musicbrainz.org/release-group/01988d62-f2e2-47ce-ba68-e91a6c365a6b"
+     ],
+     "source": "manual:audit-20261102"
     },
     "assessedAt": "2026-11-03T00:00:00Z",
-    "source": "manual:audit-20261102"
+    "source": "manual:apex-rebalance-20261103"
    },
    "description": {
     "text": "錄音室是一位管風琴家在 1950 年代開的，裡面裝著一部大型管風琴。Discogs 的廠牌條目記載，Glendale 的 Whitney Recording Studios 由 Lorin Whitney 創辦，是錄音室兼錄音帶複製廠；Barry White 早期的暢銷曲都錄在這裡，那部管風琴被 Billy Joel 彈進〈Captain Jack〉。本盤的錄音與重混都在此。發行者 Chrism 是堪薩斯州 Mission 的廠牌，隸屬 Tempo Records。",
@@ -2227,8 +2229,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": false,
-    "apexPool": true
+    "seedCards": true,
+    "apexPool": false
    }
   },
   {

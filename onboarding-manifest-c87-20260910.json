@@ -334,10 +334,21 @@
    },
    "rarity": "rare",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "頂點重整（apex-rebalance-20261103，2026-11-03）：升為流亡。岩手陸前高田爵士喫茶自營的 Johnny's Disk 原盤，左翼 balearic 搖滾異物；Studio Mule 限 500 張重發，但已上數位，冷門度僅 4",
+    "evidenceUrls": [
+     "https://www.musicmaniarecords.be/2902-king-kong-paradise/5508-2019/",
+     "https://oye-records.com/releases/king-kong-paradise-atsusa-mo-samusamo"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:apex-rebalance-20261103"
    },
    "description": {
     "text": "爵士廠牌的目錄裡，這一張的曲風欄掛了 Jazz、Rock 與 Reggae。樂團六個人：主唱兼打擊、三把吉他、貝斯、康加與打擊，照井顕掛製作與錄音。柴崎祐二在 TURN 的專文寫 A1〈フジヤマ〉把樂團一路推進的有機律動擱到一邊，改用節奏機與合成器，聽得出同時期英國後龐克那種冷徹的節拍。同一篇記樂團 1976 年在ヤマハポプコン得獎、隔年在 TAM 出道、1979 年在 Bourbon 出第二張；錄音則是 1983 年 7 月 5 至 9 日做的。",
@@ -359,8 +370,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {

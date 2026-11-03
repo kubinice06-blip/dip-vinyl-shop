@@ -472,10 +472,22 @@
    },
    "rarity": "legendary",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "evidenceUrls": [],
-    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 508），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+    "eligible": true,
+    "tier": "heresy",
+    "reason": "頂點重整（apex-rebalance-20261103，2026-11-03）：升為異端。Incus 1，英國非慣用語法自由即興奠基，當年「新之衝擊」；Bailey 已在池，且 Bennink 帶幽默感，非最極端",
+    "evidenceUrls": [
+     "https://en.wikipedia.org/wiki/The_Topography_of_the_Lungs",
+     "https://spectrumculture.com/2018/07/09/evan-parker-derek-bailey-han-bennink-the-topography-of-the-lungs-review/",
+     "https://www.jazzword.com/reviews/derek-bailey-evan-parker-han-bennink/"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 508），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:apex-rebalance-20261103"
    },
    "description": {
     "text": "原版附了一封信：收入大多直接歸樂手。Derek Bailey、Tony Oxley、Evan Parker 等人在 1970 年創辦樂手自營的英國廠牌 Incus，排在第一號的就是這張 Incus 1。錄音只用了 1970 年 7 月 13 日一天，地點在倫敦：Parker 吹次中音與高音薩克斯風，Bailey 彈吉他，Han Bennink 負責打擊。原版 LP 只有四首，A 面整面是〈Titan Moon〉。",
@@ -499,8 +511,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -1020,21 +1032,22 @@
    },
    "rarity": "legendary",
    "apexAssessment": {
-    "eligible": true,
-    "tier": "pearl",
-    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。Company 非代表作，自由即興 5",
-    "evidenceUrls": [
-     "https://www.last.fm/music/Company/Fables",
-     "https://musicbrainz.org/release-group/9201b6df-2bad-31a8-833e-959fc07ba064"
-    ],
+    "eligible": false,
+    "tier": null,
+    "reason": "頂點重整（apex-rebalance-20261103，2026-11-03）：原流亡降為一般卡。同級內一藝人一張：Company pearl 留《Company 2》。經典度 4、稽核強度 3",
+    "evidenceUrls": [],
     "previous": {
-     "eligible": false,
-     "tier": null,
-     "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 53），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。",
-     "evidenceUrls": []
+     "eligible": true,
+     "tier": "pearl",
+     "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。Company 非代表作，自由即興 5",
+     "evidenceUrls": [
+      "https://www.last.fm/music/Company/Fables",
+      "https://musicbrainz.org/release-group/9201b6df-2bad-31a8-833e-959fc07ba064"
+     ],
+     "source": "manual:audit-20261102"
     },
     "assessedAt": "2026-11-03T00:00:00Z",
-    "source": "manual:audit-20261102"
+    "source": "manual:apex-rebalance-20261103"
    },
    "description": {
     "text": "最年輕的那位是 27 歲的長號手 George Lewis。Company 是 Derek Bailey 的合作計畫，專把平常不同台的樂手配成新組合。這回湊在一起的是 Bailey 的吉他、Evan Parker 的薩克斯風、Dave Holland 的貝斯，再加上生於芝加哥、19 歲就入了 AACM 的 Lewis。1980 年 5 月，四人在倫敦的 Art Workers' Guild 連錄兩天，編制只有弦與管兩類樂器。",
@@ -1059,8 +1072,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": false,
-    "apexPool": true
+    "seedCards": true,
+    "apexPool": false
    }
   },
   {
@@ -1111,22 +1124,23 @@
    },
    "rarity": "legendary",
    "apexAssessment": {
-    "eligible": true,
-    "tier": "pearl",
-    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。Bailey 獨奏代表作，極端但仍屬自由即興 5 星錨點（Cecil Taylor 級），非 7",
-    "evidenceUrls": [
-     "https://www.last.fm/music/Derek%20Bailey/Lot%2074%20Solo%20Improvisations",
-     "https://musicbrainz.org/release-group/ef6d94ce-f539-4b94-a827-5bae86eec4dd",
-     "https://www.discogs.com/release/807204"
-    ],
+    "eligible": false,
+    "tier": null,
+    "reason": "頂點重整（apex-rebalance-20261103，2026-11-03）：原流亡降為一般卡。同級內一藝人一張：Derek Bailey pearl 留《Solo Guitar Volume 1》。經典度 5，自由即興吉他的奠基錄音；listeners 234 仍在門檻內",
+    "evidenceUrls": [],
     "previous": {
-     "eligible": false,
-     "tier": null,
-     "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 18），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。",
-     "evidenceUrls": []
+     "eligible": true,
+     "tier": "pearl",
+     "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。Bailey 獨奏代表作，極端但仍屬自由即興 5 星錨點（Cecil Taylor 級），非 7",
+     "evidenceUrls": [
+      "https://www.last.fm/music/Derek%20Bailey/Lot%2074%20Solo%20Improvisations",
+      "https://musicbrainz.org/release-group/ef6d94ce-f539-4b94-a827-5bae86eec4dd",
+      "https://www.discogs.com/release/807204"
+     ],
+     "source": "manual:audit-20261102"
     },
     "assessedAt": "2026-11-03T00:00:00Z",
-    "source": "manual:audit-20261102"
+    "source": "manual:apex-rebalance-20261103"
    },
    "description": {
     "text": "A 面接立體聲電聲組合，B 面有兩首改彈約 19 弦吉他。「非慣用語法」是 Derek Bailey 替自己的音樂取的稱呼，指以無調與噪音即興的吉他。A 面的〈Lot 74〉長約 22 分鐘；B 面那兩首的吉他未經擴音，〈In Joke〉裡還夾著回授與幾句閒聊。A 面 1974 年 5 月 13 日錄於 Catford 的一戶民宅，B 面則在他位於 Hackney 的家裡錄成。首批測試片聽來發悶，原因是切片工程師把母帶上下顛倒放了。",
@@ -1152,8 +1166,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": false,
-    "apexPool": true
+    "seedCards": true,
+    "apexPool": false
    }
   },
   {
@@ -1205,10 +1219,22 @@
    },
    "rarity": "legendary",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "evidenceUrls": [],
-    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 63），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "頂點重整（apex-rebalance-20261103，2026-11-03）：升為流亡。Incus 8 擴音打擊獨奏，樂手自營小廠，查無任何再發（同期 February Papers 已被 Discus 再發）",
+    "evidenceUrls": [
+     "https://www.last.fm/music/Tony+Oxley/Tony+Oxley",
+     "https://en.wikipedia.org/wiki/Incus_Records",
+     "https://en.wikipedia.org/wiki/Tony_Oxley"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 63），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:apex-rebalance-20261103"
    },
    "description": {
     "text": "從 1971 到 1975 年，六首曲子分在四個年份錄成。Ronnie Scott's 從 1966 年起由 Tony Oxley 坐鎮鼓組，這位生於 Sheffield 的鼓手在倫敦替 Sonny Rollins 等來訪樂手伴奏。編號 INCUS 8 的這張自名作 1975 年出版，六首分別取自 1971、1972、1973 與 1975 年的錄音。他替鼓組接上擴音，添了碗、鋼線與螺絲，再用環形調變器處理聲音。唱片的附註寫明，擴音替打擊樂增加了廣度。",
@@ -1232,8 +1258,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -1283,21 +1309,22 @@
    },
    "rarity": "epic",
    "apexAssessment": {
-    "eligible": true,
-    "tier": "pearl",
-    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。只有黑膠、Emanem拒絕重發，但壓量無據、無聖杯地位依據",
-    "evidenceUrls": [
-     "https://www.last.fm/music/Spontaneous%20Music%20Ensemble/So%2C%20What%20Do%20You%20Think%3F",
-     "https://musicbrainz.org/release-group/b2d4a67f-68c8-4568-a086-e61b83331810"
-    ],
+    "eligible": false,
+    "tier": null,
+    "reason": "頂點重整（apex-rebalance-20261103，2026-11-03）：原流亡降為一般卡。同級內一藝人一張：Spontaneous Music Ensemble pearl 留《Challenge》。經典度 4，英國自由即興的首張錄音、Eyemark 原版公認聖杯",
+    "evidenceUrls": [],
     "previous": {
-     "eligible": false,
-     "tier": null,
-     "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 20），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。",
-     "evidenceUrls": []
+     "eligible": true,
+     "tier": "pearl",
+     "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。只有黑膠、Emanem拒絕重發，但壓量無據、無聖杯地位依據",
+     "evidenceUrls": [
+      "https://www.last.fm/music/Spontaneous%20Music%20Ensemble/So%2C%20What%20Do%20You%20Think%3F",
+      "https://musicbrainz.org/release-group/b2d4a67f-68c8-4568-a086-e61b83331810"
+     ],
+     "source": "manual:audit-20261102"
     },
     "assessedAt": "2026-11-03T00:00:00Z",
-    "source": "manual:audit-20261102"
+    "source": "manual:apex-rebalance-20261103"
    },
    "description": {
     "text": "嫌打擊樂壓過了混音，Emanem 的主事者始終不肯重發。召集人 John Stevens 本身就是鼓手，1965 年在倫敦拉起 Spontaneous Music Ensemble 這支即興團。1971 年，五人在 Tangent 錄下兩段長篇，陣容與 1968 年的《Karyobin》只差一人：Trevor Watts 頂替了 Evan Parker。唱片拖到 1973 年才出版。",
@@ -1319,8 +1346,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": false,
-    "apexPool": true
+    "seedCards": true,
+    "apexPool": false
    }
   },
   {
@@ -1543,10 +1570,22 @@
    },
    "rarity": "legendary",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "evidenceUrls": [],
-    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 37），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "頂點重整（apex-rebalance-20261103，2026-11-03）：升為流亡。Bead 樂手自營廠首作，未見再發；「500 張私壓」查無依據",
+    "evidenceUrls": [
+     "https://www.last.fm/music/Alterations/Alterations",
+     "https://en.wikipedia.org/wiki/Alterations_(band)",
+     "https://cafeoto.co.uk/events/alterations-steve-beresford-peter-cusack-terry-day"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 37），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:apex-rebalance-20261103"
    },
    "description": {
     "text": "樂器清單裡有玩具鋼琴、塑膠吉他，還有一桶水。Alterations 是 Peter Cusack 在 1977 年與 Steve Beresford、David Toop、Terry Day 組成的即興四人團，清單上另有自製簧管與小提琴。A 面錄於 Norwich 的 The Premises，B 面錄於倫敦音樂人合作社，曲名直接照地點編成 Norwich 1 到 4、London 1 到 3。1978 年由 Bead 出版，只壓了 500 張。",
@@ -1569,8 +1608,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -1621,10 +1660,21 @@
    },
    "rarity": "legendary",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "evidenceUrls": [],
-    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 81），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+    "eligible": true,
+    "tier": "heresy",
+    "reason": "頂點重整（apex-rebalance-20261103，2026-11-03）：升為異端。無伴奏人聲：樂評稱聲音範圍從「被嘔吐物噎住」到「拔掉呼吸器」，Goldsmith 稱「能想到最噁的聲音」；極端人聲",
+    "evidenceUrls": [
+     "https://en.wikipedia.org/wiki/Phil_Minton",
+     "https://www.encyclopedia.com/education/news-wires-white-papers-and-books/minton-phil"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 81），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:apex-rebalance-20261103"
    },
    "description": {
     "text": "口水、嗚咽、一連串打嗝，全被貼身麥克風收了進去。小號是英國歌手 Phil Minton 早年的樂器，後來他轉向人聲。整張 1998 年 1 月在 Welwyn Garden City 的教友會聚會所錄成，全盤只有他的嗓音、不加效果，30 首多半只有一到三分鐘，同年 6 月由柏林的自由即興廠牌 FMP 發行。盤名接續的是 1981 年的《A Doughnut in Both Hands》。",
@@ -1648,8 +1698,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -1699,10 +1749,22 @@
    },
    "rarity": "legendary",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "evidenceUrls": [],
-    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 10），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "頂點重整（apex-rebalance-20261103，2026-11-03）：升為流亡。Po Torch 樂手自營極小廠，自製打擊＋現場電子獨奏；此後 36 年無獨奏作，未見再發",
+    "evidenceUrls": [
+     "https://www.last.fm/music/Paul+Lytton/The+Inclined+Stick",
+     "https://en.wikipedia.org/wiki/Paul_Lytton",
+     "https://squidco.com/r.cgi?p=20776"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 10），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:apex-rebalance-20261103"
    },
    "description": {
     "text": "Lytton 在比利時家中用自製打擊接上現場電子。Evan Parker 從 1969 年起就與這位倫敦鼓手 Paul Lytton 搭檔二重奏。1979 年夏天，Lytton 在 Plombières 自宅錄下大半曲目；第二首則取自 1977 年 12 月在亞琛的一場演出。唱片由他參與合辦的 Po Torch 出版。",
@@ -1726,8 +1788,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -1778,10 +1840,21 @@
    },
    "rarity": "legendary",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "evidenceUrls": [],
-    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 97），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+    "eligible": true,
+    "tier": "heresy",
+    "reason": "頂點重整（apex-rebalance-20261103，2026-11-03）：升為異端。99 首 howling voice 聲響圖鑑，喉部擠壓的高頻嘶聲幾乎不像人聲；極端人聲＋結構拒斥，單盤樂評少",
+    "evidenceUrls": [
+     "https://en.wikipedia.org/wiki/Ami_Yoshida",
+     "https://ftarri.com/imj/504/index.html"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 97），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:apex-rebalance-20261103"
    },
    "description": {
     "text": "吉田アミ在東京家裡只用喉嚨與電腦，錄出 99 段聲音。《虎鶫》是本作的日文盤名，日本聲音表演者吉田アミ把自己的發聲法稱為 howling voice。她與 Sachiko M 組成二人團 Cosmos，收錄這組二重奏的雙專輯在 2003 年 6 月拿下 Ars Electronica 數位音樂部門大獎。一個月後，《虎鶫》由 Improvised Music From Japan 發行，99 首全題為 Untitled。她形容這張是把自己的聲音依素材分類整理的圖鑑。",
@@ -1803,8 +1876,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   }
  ]

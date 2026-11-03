@@ -3126,10 +3126,21 @@
    },
    "rarity": "epic",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "頂點重整（apex-rebalance-20261103，2026-11-03）：升為流亡。澳洲 Generation 廠原盤為收藏市場高價搶手貨（Aztec 語），但當年曾進澳洲榜 49 名、2015 Aztec CD＋數位再發，不算傳說級",
+    "evidenceUrls": [
+     "https://en.wikipedia.org/wiki/Company_Caine",
+     "https://www.aztecrecords.com.au/products/avscd072"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:apex-rebalance-20261103"
    },
    "description": {
     "text": "成軍一年之內換了三任鼓手與三任貝斯手，1971 年七月才進錄音室。〈Trixie Stonewall's Wayward Home For Young Women〉六月當單曲錄下，七月在 T.C.S. Studios 錄下這張首作，十一月由 Generation Records 發行，進了 Kent Music Report 榜前四十名。Gulliver Smith 的唱腔在念白與吼叫之間，〈The Day Superman Got Busted〉帶著敘事口吻。",
@@ -3150,8 +3161,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {

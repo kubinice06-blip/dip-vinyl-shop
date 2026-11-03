@@ -22321,17 +22321,29 @@
         "classic": 4,
         "obscurity": 5,
         "accessibility": 3,
-        "listeners": null,
+        "listeners": 55,
         "source": "manual:genre-anchors",
         "checkedAt": "2026-08-21T12:42:23Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；發行即遭文化公報部下令回收的禁盤，韓國迷幻民謠傳說級作品，但未入百大名盤；原盤存量與能見度都屬收藏家領域，聲響比首張更陰鬱粗礪。"
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；發行即遭文化公報部下令回收的禁盤，韓國迷幻民謠傳說級作品，但未入百大名盤；原盤存量與能見度都屬收藏家領域，聲響比首張更陰鬱粗礪。",
+        "listenersSource": "worker /album-rating（apex-rebalance-20261103 Q2 補值）"
       },
       "rarity": "epic",
       "apexAssessment": {
-        "eligible": false,
-        "tier": null,
-        "reason": "查禁回收帶來的稀有度屬冷門軸而非殿堂條件；本環境取不到 listeners，疑似 pearl，待店主補 listeners 覆核。",
-        "evidenceUrls": []
+        "eligible": true,
+        "tier": "pearl",
+        "reason": "頂點重整（apex-rebalance-20261103，2026-11-03）：升為流亡。韓國民謠搖滾先驅的第二張專輯，1975 年遭維新政權判為禁售，藝人隨即出走美國；原版 LP 是韓國收藏圈傳說級稀品",
+        "evidenceUrls": [
+          "https://en.wikipedia.org/wiki/Hahn_Dae-soo",
+          "https://m.seoul.co.kr/news/1998/07/25/19980725014001"
+        ],
+        "previous": {
+          "eligible": false,
+          "tier": null,
+          "reason": "查禁回收帶來的稀有度屬冷門軸而非殿堂條件；本環境取不到 listeners，疑似 pearl，待店主補 listeners 覆核。",
+          "evidenceUrls": []
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:apex-rebalance-20261103"
       },
       "description": {
         "text": "한대수第二張，一九七五年由 Four Season 發行後隨即接到文化公報部的回收命令，理由是歌曲意圖顛覆體制；他的〈물 좀 주소〉、〈행복의 나라〉連同本作〈희망가〉被列為禁歌，本人上了黑名單，走投無路只好再赴紐約，之後在 CBGB 組過從未出片的 post-punk 樂團 Genghis Khan。封面把兩隻白色고무신（膠鞋）掛在鐵絲網上，比裡頭任何一句歌詞都直接。〈여치의 죽음〉、〈나그네 길〉把韓國folk-rock推向迷幻而陰鬱的一側。",
@@ -22361,8 +22373,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": true,
-        "apexPool": false
+        "seedCards": false,
+        "apexPool": true
       }
     },
     {

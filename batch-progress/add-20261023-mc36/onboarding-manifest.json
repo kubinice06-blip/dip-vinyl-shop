@@ -702,10 +702,22 @@
    },
    "rarity": "legendary",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "evidenceUrls": [],
-    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 12），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "頂點重整（apex-rebalance-20261103，2026-11-03）：升為流亡。Ictus 小廠 downtown 早期集體即興史料；1995 CD、2022 黑膠已再發",
+    "evidenceUrls": [
+     "https://www.last.fm/music/Polly+Bradfield%2C+Andrea+Centazzo%2C+Eugene+Chadbourne%2C+Tom+Cora%2C+Toshinori+Kondo%2C+John+Zorn/Environment+for+Sextet",
+     "https://www.forcedexposure.com/CATALOG/ICTUSRE.004LP.html",
+     "https://audiopile.ca/?p=59184"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 12），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:apex-rebalance-20261103"
    },
    "description": {
     "text": "義大利廠牌的主人，自己也坐進了打擊位置。Andrea Centazzo 早與 John Zorn 同台演前衛爵士。他 1976 年和妻子創立 Ictus，1979 年推出這張六重奏：小提琴 Bradfield、吉他 Chadbourne、大提琴 Cora、小號近藤等則、薩克斯風 Zorn，加上他本人的打擊。兩段合奏之間，夾著兩段獨奏。",
@@ -729,8 +741,8 @@
     "cardCatalog": false,
     "descriptionKv": false,
     "albumOverride": false,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {

@@ -7159,13 +7159,21 @@
    },
    "rarity": "rare",
    "apexAssessment": {
-    "eligible": true,
-    "tier": "hall",
-    "reason": "1999 年追授 Grammy Hall of Fame；長期被樂評與 Sinatra 研究者列為其 Capitol 時期核心概念專輯",
-    "evidenceUrls": [
-     "https://www.udiscovermusic.com/stories/sings-for-only-the-lonely/",
-     "https://en.wikipedia.org/wiki/Frank_Sinatra_Sings_for_Only_the_Lonely"
-    ]
+    "eligible": false,
+    "tier": null,
+    "reason": "頂點重整（apex-rebalance-20261103，2026-11-03）：原殿堂降為一般卡。同級內一藝人一張：Frank Sinatra hall 留《In the Wee Small Hours》。7 星重審通過、listeners 高出另一張 15 倍；概念專輯先驅",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": true,
+     "tier": "hall",
+     "reason": "1999 年追授 Grammy Hall of Fame；長期被樂評與 Sinatra 研究者列為其 Capitol 時期核心概念專輯",
+     "evidenceUrls": [
+      "https://www.udiscovermusic.com/stories/sings-for-only-the-lonely/",
+      "https://en.wikipedia.org/wiki/Frank_Sinatra_Sings_for_Only_the_Lonely"
+     ]
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:apex-rebalance-20261103"
    },
    "description": {
     "text": "畫成小丑的 Sinatra 肖像，摘下首屆葛萊美的最佳專輯封面獎。畫家 Nicholas Volpe 把他畫成落寞的 Pagliacci 式小丑，這幅作品在 1959 年 5 月 4 日的第 1 屆典禮上獲獎。錄音在 1958 年 5 至 6 月進行，編曲 Nelson Riddle 在這段期間先後失去六個月大的女兒與母親，母親過世就在首場錄音後四天，成品是深夜獨飲式的陰鬱弦樂。1970 年代中期有人問他最喜歡自己哪張專輯，據傳記記載，他不假思索選了這張。",
@@ -7194,8 +7202,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": false,
-    "apexPool": true
+    "seedCards": true,
+    "apexPool": false
    }
   },
   {

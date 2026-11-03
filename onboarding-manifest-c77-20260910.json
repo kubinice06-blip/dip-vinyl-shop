@@ -205,10 +205,21 @@
    },
    "rarity": "rare",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "頂點重整（apex-rebalance-20261103，2026-11-03）：升為流亡。曼徹斯特極小廠 Object Music 1979 原盤，NME Paul Morley 盛讚；但 LTM／Boutique 已出全集 2CD 與數位，收藏圈名氣有限",
+    "evidenceUrls": [
+     "https://www.ltmrecordings.com/best_thing_without_wings_boucd6617.html",
+     "https://www.last.fm/music/Grow-Up/The+Best+Thing"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:apex-rebalance-20261103"
    },
    "description": {
     "text": "同一間錄音室，五天裡同時錄完兩個樂團的兩張專輯。那是 1979 年 7 月的 Pluto Studios，兩張都由樂團與工程師 Phil Ault 共製——這是吉他手 John Bisset-Smith 在 LTM 傳記頁上的回憶。同頁記他十七歲時是羅奇代爾藝術學院學生，也是曼徹斯特音樂人合作社的早期成員；有一首歌來自他在奧德姆公車站牌旁跟一位喝醉老太太的對話。編制裡有薩克斯風、單簧管與長號，〈Golden Promises〉只有 18 秒。唱片對著強光看，是半透明的紅色。",
@@ -228,8 +239,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -2180,10 +2191,21 @@
    },
    "rarity": "legendary",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "頂點重整（apex-rebalance-20261103，2026-11-03）：升為流亡。唯一一張 LP，1981 Orgel Fesper 原盤據載僅 500 張，經 United Dairies 發行，曾被傳為 NWW 化名；Stapleton 力推，2023 年才由 Sonoris 重發",
+    "evidenceUrls": [
+     "https://forcedexposure.com/Catalog/SNS.021LP.html",
+     "https://brainwashed.com/common/htdocs/discog/nwwbfb.php?site=nww"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:apex-rebalance-20261103"
    },
    "description": {
     "text": "唱片上一個演出者的名字都沒有印。Discogs 的原盤條目把五位演出者全部登錄為 uncredited，藝人條目給的產地是 Northumberland。兩軌，一面一首，〈It Takes A Bliss〉24 分 47 秒用掉整個 A 面，B 面那一首 24 分 42 秒；說明欄只交代了錄音期間，1980 年 8 月到 1981 年 1 月。四十年後的再發版在版權註記裡露了一手：那兩段長曲裡引用了布萊希特與魏爾的〈Matrosen Tango〉。",
@@ -2205,8 +2227,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -2934,10 +2956,21 @@
    },
    "rarity": "legendary",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：accessibility=5（heresy 最低門檻），但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "頂點重整（apex-rebalance-20261103，2026-11-03）：升為流亡。早期手工包裝時期作品，但原盤壓量查無依據；Red Rhino 正規獨立廠，有 Charrm CD 與 VOD 再發（主線補收：代理判 no 是因缺聖杯口碑，但過硬條件：listeners 有效 1–299、非錯配、冷門度 5）",
+    "evidenceUrls": [
+     "https://musicbrainz.org/release-group/78979602-d027-3b6f-88e7-4d28fc9f42e3",
+     "https://www.last.fm/music/Zoviet+France/Norsch"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：accessibility=5（heresy 最低門檻），但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:apex-rebalance-20261103"
    },
    "description": {
     "text": "封套是壓花的鋁箔，有些成品上噴著綠色與紅色的點。內襯有兩種，絹印的與印刷的卡紙。這是一張 12 吋 45 轉，五軌，每一個標題都從 Norsch 這個字開始、後面各接一個字，〈Norsch Tauss〉是 A 面的開場。作曲、製作與演出三項掛的是同樣三個名字，而條目上這三個名字都標著 uncredited。唱片的藝人欄把團名印成前後與中間都帶冒號的樣子；Discogs 的藝人條目則把他們的音樂寫成實驗性的、時而不諧和、由工業質地構成的那一類。",
@@ -2958,8 +2991,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {

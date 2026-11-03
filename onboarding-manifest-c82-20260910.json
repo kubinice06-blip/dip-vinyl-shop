@@ -2209,22 +2209,23 @@
    },
    "rarity": "rare",
    "apexAssessment": {
-    "eligible": true,
-    "tier": "pearl",
-    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。L52有效，但壓量無據、無收藏圈聖杯地位依據；屬5星冷門，不到7",
-    "evidenceUrls": [
-     "https://www.last.fm/music/Suzukiski/Kamakura",
-     "https://musicbrainz.org/release-group/dbe1aa32-95ff-4dc1-ae32-058e895238f6",
-     "https://www.discogs.com/release/326406"
-    ],
+    "eligible": false,
+    "tier": null,
+    "reason": "頂點重整（apex-rebalance-20261103，2026-11-03）：原流亡降為一般卡。同級內一藝人一張：Suzukiski pearl 留《Waiting》。兩張強度、經典度相同；取首張、listeners 較低者",
+    "evidenceUrls": [],
     "previous": {
-     "eligible": false,
-     "tier": null,
-     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-     "evidenceUrls": []
+     "eligible": true,
+     "tier": "pearl",
+     "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。L52有效，但壓量無據、無收藏圈聖杯地位依據；屬5星冷門，不到7",
+     "evidenceUrls": [
+      "https://www.last.fm/music/Suzukiski/Kamakura",
+      "https://musicbrainz.org/release-group/dbe1aa32-95ff-4dc1-ae32-058e895238f6",
+      "https://www.discogs.com/release/326406"
+     ],
+     "source": "manual:audit-20261102"
     },
     "assessedAt": "2026-11-03T00:00:00Z",
-    "source": "manual:audit-20261102"
+    "source": "manual:apex-rebalance-20261103"
    },
    "description": {
     "text": "同一張碟上，℗ 掛 Transonic Records、© 掛 Zero Gravity。Discogs 廠牌頁把 Zero Gravity 的 parent label 欄填成 Transonic Records，profile 欄只有一個字：Japan。本張編號 ZGV-001 是這條編號線的第一號，目錄上它同年排到 ZGV-009。十六軌裡〈Good Night〉0:31 與〈Doubt〉0:40 不到一分鐘，最長的是〈Each Other〉5:48。",
@@ -2250,8 +2251,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": false,
-    "apexPool": true
+    "seedCards": true,
+    "apexPool": false
    }
   },
   {
@@ -3519,10 +3520,22 @@
    },
    "rarity": "legendary",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：classic=5（hall 最低門檻）；accessibility=5（heresy 最低門檻），但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "heresy",
+    "reason": "頂點重整（apex-rebalance-20261103，2026-11-03）：升為異端。純回授的 no-input 混音台奠基盤；但樂評形容細微、極簡、富節奏，屬 onkyo 結構拒斥而非噪音轟炸",
+    "evidenceUrls": [
+     "https://www.allmusic.com/album/no-input-mixing-board-mw0000974899",
+     "https://en.wikipedia.org/wiki/Toshimaru_Nakamura",
+     "https://tornlightrecords.com/this-might-cause-feedback-toshimaru-nakamura-and-the-no-input-mixing-board"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：classic=5（hall 最低門檻）；accessibility=5（heresy 最低門檻），但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:apex-rebalance-20261103"
    },
    "description": {
     "text": "盤名就是樂器的名字：把混音台的輸出接回輸入，再處理由此生出的回授。那是英文維基引 Todd S. Jenkins 書上的說法。Improvised Music from Japan 的 profile 頁另記，這個做法要求對系統的順從，並說他自 1990 年代中期起這樣用混音台。這裡指的是 2000 年 11 月的 Zero Gravity ZGV-026。內註寫錄音與處理在東京同一處、跨 1999 與 2000 兩年。九軌裡〈Nimb #7〉7:51 最長。",
@@ -3551,8 +3564,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   }
  ]

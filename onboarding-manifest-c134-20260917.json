@@ -1213,21 +1213,22 @@
    },
    "rarity": "common",
    "apexAssessment": {
-    "eligible": true,
-    "tier": "pearl",
-    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。L1有效，單一LP，壓量無據、無聖杯名聲；5星",
-    "evidenceUrls": [
-     "https://www.last.fm/music/%E5%8C%97%E6%9D%91%E8%8B%B1%E6%B2%BB/Happy%20Cooking%20Vol.%20II",
-     "https://musicbrainz.org/release-group/94cc4142-81a3-4984-80ab-72f302ca3961"
-    ],
+    "eligible": false,
+    "tier": null,
+    "reason": "頂點重整（apex-rebalance-20261103，2026-11-03）：原流亡降為一般卡。同級內一藝人一張：北村英治 pearl 留《Happy Cooking》。經典度 3（Vol. II 為 2）",
+    "evidenceUrls": [],
     "previous": {
-     "eligible": false,
-     "tier": null,
-     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-     "evidenceUrls": []
+     "eligible": true,
+     "tier": "pearl",
+     "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。L1有效，單一LP，壓量無據、無聖杯名聲；5星",
+     "evidenceUrls": [
+      "https://www.last.fm/music/%E5%8C%97%E6%9D%91%E8%8B%B1%E6%B2%BB/Happy%20Cooking%20Vol.%20II",
+      "https://musicbrainz.org/release-group/94cc4142-81a3-4984-80ab-72f302ca3961"
+     ],
+     "source": "manual:audit-20261102"
     },
     "assessedAt": "2026-11-03T00:00:00Z",
-    "source": "manual:audit-20261102"
+    "source": "manual:apex-rebalance-20261103"
    },
    "description": {
     "text": "B 面開頭那一軌其實是五首歌串成的一條線，盤名後來變成了團名。那段連奏把五首歌接成一氣，所以盤面登記八軌、實際聽到的是十二首。1973 年與第一集同年推出，編號 CE-3002 緊接著 CE-3001，廠牌名卻登記成兩家——第一集掛 Living Audio、這一集掛 Chrysler。第四軌就是與盤名同名的主題曲；到了 1980 年與 2003 年，各有一支樂團把這個名字接了過去。",
@@ -1248,8 +1249,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": false,
-    "apexPool": true
+    "seedCards": true,
+    "apexPool": false
    }
   },
   {
