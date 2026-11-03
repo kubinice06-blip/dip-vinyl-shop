@@ -9,6 +9,15 @@
 - **主要檔案**：`batch-progress/rerate-20261103/verdicts/s0{7,8,9}-*.json`、`s0{7,8,9}.summary.md`、`shards/s0{7,8,9}.json`（listenersKV）、`PLAN.md`。
 - **驗證**：三片合併檢查全過（每 key 一筆、無缺無多、三軸皆 1–5 整數）。
 
+### 2026-11-03｜dip-vinyl-shop｜三軸重評第三輪 W10：s28–s31 verdicts 交齊（775 張）
+
+- **範圍**：s28／s29／s30 各 250、s31 25，共 775 張（T–Z、變音字母、日文／華語／韓語藝人段）。先跑 `fetch-listeners.mjs` 補 listenersKV，再派 16 段 Opus 代理，主線每段抽 5 張（共 80 張）全數一致，退回 0 段，主線改 0 張。只交 verdicts，沒有動 seed、manifest、card_catalog。
+- **新舊分布（1/2/3/4/5）**：經典度 18/135/335/287/0 → 0/80/277/324/94；冷門度 64/168/239/174/130 → 53/328/275/118/1；硬蕊度 201/382/117/75/0 → 210/369/136/57/3。
+- **重點**：冷門度 5 從 130 張降到 1 張。被降的多是 TBM 等日本爵士盤，以及 Enja、Black Saint、MPS 正規盤；舊值是 worker 絕對分級，這些盤已有串流再發，最多 4。經典度 5 給了有依據的場景里程碑：華語搖滾／民謠、city pop、TBM 名盤、1001 Albums、Pazz & Jop 年度第一。
+- **疑錯配沒套下限的 57 張**：s28 8、s29 15、s30 30、s31 4，全部在 `why` 註明。多數是華語／日語藝人的中英拆名、古典盤名泛稱、系列卷次、符號盤名，比照第二輪 MISMATCH 先例。套用工作階段可以再查一次聽眾數。
+- **主要檔案**：`batch-progress/rerate-20261103/verdicts/s{28,29,30,31}-*.json`、`s{28,29,30,31}.summary.md`、`shards/s{28,29,30,31}.json`（listenersKV）、`PLAN.md`。
+- **驗證**：四片合併檢查全過：每個 key 都有一筆、無缺無多、三軸都是 1–5 的整數。keep 1 張（江文也，查無發行資料）。
+
 ### 2026-11-03｜dip-vinyl-shop｜三軸重評第三輪 W4：s10／s11／s12 verdicts 交齊（750 張）
 
 - **範圍**：第三輪 s10–s12（藝人 F–J 段早期無評分來源卡），先跑 `fetch-listeners.mjs` 補 listenersKV（有效值約 96%）。15 段 Opus 代理，主線每段逐張瀏覽、抽核，退回 0 段，主線改 8 張。只交 verdicts，未動 seed／manifest／card_catalog。
