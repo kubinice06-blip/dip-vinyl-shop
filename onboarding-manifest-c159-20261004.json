@@ -1585,20 +1585,21 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 5,
+    "obscurity": 2,
     "accessibility": 1,
     "listeners": 55,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
     "previous": {
      "classic": 3,
      "obscurity": 5,
-     "accessibility": 2,
-     "source": "worker:/album-rating",
-     "checkedAt": "2026-08-31T00:00:00.000Z",
-     "rarity": "uncommon"
+     "accessibility": 1,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Al Green Blue Note 第二張，非代表；L55＋無串流→5（硬規則）；靈魂慢歌",
+     "rarity": "common"
     },
-    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Al Green Blue Note 第二張，非代表；L55＋無串流→5（硬規則）；靈魂慢歌"
+    "note": "全池稽核 audit-20261102（方案 C）：疑錯配：Blue Note 發行、Billboard 200 第50名；撇號拆分致 55 聽眾｜L=55"
    },
    "rarity": "common",
    "apexAssessment": {

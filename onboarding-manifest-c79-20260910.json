@@ -1885,22 +1885,23 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 5,
+    "obscurity": 3,
     "accessibility": 2,
     "listeners": 1,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
     "previous": {
      "classic": 3,
-     "obscurity": 4,
+     "obscurity": 5,
      "accessibility": 2,
-     "source": "manual:depth-rubric",
-     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：麻生レミ個人作，井上堯之製作；L1 無串流→5；藍調搖滾",
      "rarity": "rare"
     },
-    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：麻生レミ個人作，井上堯之製作；L1 無串流→5；藍調搖滾"
+    "note": "全池稽核 audit-20261102（方案 C）：Atlantic 日本正規盤、2012 SHM-CD 再發；Remi Aso 拆名錯配不套下限→3｜L=1"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2494,10 +2495,18 @@
    },
    "rarity": "common",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。壓量無據、無聖杯名聲（代理自述），不符 pearl 7 星硬條件（主線改）",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "曲目表上每一首歌都並排著日文與英文兩個名字。〈極月 -冬に伏せて-〉旁邊寫的是 Patient，〈ヒナタミチシヨパニカル〉旁邊寫的是 Hinatamichi Chopinical。原盤 1977 年的 OT-0046，十軌，Discogs 的說明欄只有兩個字：Private press.，樂手與時長兩欄都沒有登錄。音のメルヘン屋是東京千駄ヶ谷的一家錄音室，1966 年創立，專接私家版的委託，Discogs 名下登錄 43 筆發行，掛名幾乎每一筆都不同。",
@@ -2625,28 +2634,37 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 3,
+    "classic": 2,
     "obscurity": 5,
     "accessibility": 2,
     "listeners": 16,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
     "previous": {
      "classic": 3,
-     "obscurity": 4,
+     "obscurity": 5,
      "accessibility": 2,
-     "source": "manual:depth-rubric",
-     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：私壓民謠團唯一專輯；L16＋無串流→5；民謠歌曲",
      "rarity": "rare"
     },
-    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：私壓民謠團唯一專輯；L16＋無串流→5；民謠歌曲"
+    "note": "全池稽核 audit-20261102（方案 C）：Discogs 明記 Private press、全球僅一個版本、團體僅此一作；listeners 16 有效。場景無評論地位，經典度 3→2｜L=16"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。L16有效，私壓LP唯一版本，但壓量無據、無聖杯名聲；5星",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "十四首歌，每一首都指定了由誰來唱。佐久間始唱得最多，岡田正民接五首，工藤利文只唱一首；作詞全掛岡田正民，作曲由佐久間始與工藤利文分擔。原盤 1978 年的 Athene Record AOLS-39，Discogs 的說明欄只有兩個字：Private press.。同一家廠牌名下登錄十七筆，AOLS- 這串底下的三張碟掛著三個不同的名字。收尾的同名曲叫〈朝日に向かって〉；Discogs 與 MusicBrainz 兩邊都只有 1978 年那一筆。",
@@ -3016,10 +3034,18 @@
    },
    "rarity": "common",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。L25有效，私製LP唯一版本，但壓量無據、無聖杯名聲；5星",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "十二首歌的詞全出自同一個人，而她在團裡彈貝斯。寫詞的是岡本ひろみ，作曲由主奏吉他岡田紀子與主唱戸田敏子分擔，編曲欄直接掛樂團自己，另有松野浩二的打擊。原盤 1980 年的 JPL-1083，十二軌，廠牌欄登記的是 Not On Label，相關公司欄上留著錄音室「スタジオ キット」與製作協力「サン音芸」的名字。碟上有一首歌就叫〈五条坂〉，2 分 25 秒，說明欄把它英譯成 Gojo-Zaka Slope；收尾的〈さよならの時〉5 分 25 秒。",

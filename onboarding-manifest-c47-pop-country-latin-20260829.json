@@ -20,21 +20,38 @@
    },
    "ratings": {
     "classic": 5,
-    "obscurity": 5,
+    "obscurity": 2,
     "accessibility": 2,
     "listeners": 258,
-    "source": "worker:/album-rating + last.fm listeners",
-    "checkedAt": "2026-08-29T11:30:00Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker:/album-rating + last.fm listeners",
+     "checkedAt": "2026-08-29T11:30:00Z",
+     "rarity": "epic"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：墨西哥流行經典現場盤；listeners 258 疑錯配（墨西哥主流巨星），不套下限，冷門度 5→2；無權威榜首位依據｜L=258"
    },
-   "rarity": "epic",
+   "rarity": "uncommon",
    "apexAssessment": {
-    "eligible": true,
-    "tier": "hall",
-    "reason": "1990年伯雅之殿(Palacio de Bellas Artes)演唱會實況,被多方媒體稱為墨西哥音樂史指標性事件,錄音專輯至今被視為經典且引發文化包容性的討論。",
-    "evidenceUrls": [
-     "https://en.wikipedia.org/wiki/Juan_Gabriel_en_el_Palacio_de_Bellas_Artes",
-     "https://www.infobae.com/mexico/2025/11/07/esto-costo-el-boleto-para-ver-a-juan-gabriel-en-su-emblematico-concierto-de-bellas-artes-en-1990/"
-    ]
+    "eligible": false,
+    "tier": null,
+    "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。墨西哥流行經典現場盤，綜合歷代榜不收，國別級",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": true,
+     "tier": "hall",
+     "reason": "1990年伯雅之殿(Palacio de Bellas Artes)演唱會實況,被多方媒體稱為墨西哥音樂史指標性事件,錄音專輯至今被視為經典且引發文化包容性的討論。",
+     "evidenceUrls": [
+      "https://en.wikipedia.org/wiki/Juan_Gabriel_en_el_Palacio_de_Bellas_Artes",
+      "https://www.infobae.com/mexico/2025/11/07/esto-costo-el-boleto-para-ver-a-juan-gabriel-en-su-emblematico-concierto-de-bellas-artes-en-1990/"
+     ]
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "藝術宮原本只排古典樂、歌劇與芭蕾，1990 年為他破了例。消息公布後，館內部分音樂家與文化界人士聯署抗議，稱這是褻瀆他們的殿堂。他仍在同年 5 月 9 日至 12 日連演四場，由墨西哥國家交響樂團協奏。實況於 12 月 20 日發行成雙碟 19 曲，第二張以長達 25 分鐘的〈Hasta Que Te Conocí (Popurrí)〉開場，1991 年在告示牌 Latin Pop Albums 榜攻上第 4 名。",
@@ -214,13 +231,22 @@
    },
    "ratings": {
     "classic": 4,
-    "obscurity": 5,
-    "accessibility": 2,
+    "obscurity": 2,
+    "accessibility": 1,
     "listeners": 31,
-    "source": "worker:/album-rating + last.fm listeners",
-    "checkedAt": "2026-08-29T11:30:00Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker:/album-rating + last.fm listeners",
+     "checkedAt": "2026-08-29T11:30:00Z",
+     "rarity": "uncommon"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：墨西哥／西語圈主流暢銷盤，Vol.2 拆名致聽眾數錯配；照錨點 2｜L=31"
    },
-   "rarity": "uncommon",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -350,13 +376,21 @@
    },
    "rarity": "rare",
    "apexAssessment": {
-    "eligible": true,
-    "tier": "hall",
-    "reason": "Tejano音樂史上最暢銷專輯、首張登上Billboard Top Latin Albums冠軍的Tejano唱片,美國史上最暢銷拉丁專輯之一,2026年獲選葛萊美名人堂。",
-    "evidenceUrls": [
-     "https://en.wikipedia.org/wiki/Amor_Prohibido",
-     "https://tejanonation.net/2026/02/11/selenas-amor-prohibido-album-inducted-into-2026-grammy-hall-of-fame/"
-    ]
+    "eligible": false,
+    "tier": null,
+    "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。Tejano 核心作、RS500(2020) 收錄，但屬類型／地區名盤，未達幾乎所有歷代榜",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": true,
+     "tier": "hall",
+     "reason": "Tejano音樂史上最暢銷專輯、首張登上Billboard Top Latin Albums冠軍的Tejano唱片,美國史上最暢銷拉丁專輯之一,2026年獲選葛萊美名人堂。",
+     "evidenceUrls": [
+      "https://en.wikipedia.org/wiki/Amor_Prohibido",
+      "https://tejanonation.net/2026/02/11/selenas-amor-prohibido-album-inducted-into-2026-grammy-hall-of-fame/"
+     ]
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "曾祖母在雇主家幫傭時的一段禁忌戀情，成了這張的標題曲。那是階級差距讓這段感情被禁的舊事，經過留在家族書信裡，Selena 提議把它寫成歌，與兄長 A.B. Quintanilla 三世合寫完成。1994 年 6 月 11 日本輯登上 Billboard Top Latin Albums 榜冠軍，同名曲同日拿下 Hot Latin Songs 冠軍並蟬聯九週，是她第一首單飛冠軍單曲。本輯在 Regional Mexican Albums 榜的冠軍週數累積到 97 週。",
@@ -546,20 +580,37 @@
    "ratings": {
     "classic": 5,
     "obscurity": 2,
-    "accessibility": 2,
+    "accessibility": 1,
     "listeners": 350069,
-    "source": "worker:/album-rating + last.fm listeners",
-    "checkedAt": "2026-08-29T11:30:00Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 2,
+     "accessibility": 2,
+     "source": "worker:/album-rating + last.fm listeners",
+     "checkedAt": "2026-08-29T11:30:00Z",
+     "rarity": "uncommon"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：拉丁流行搖滾銷量里程碑，但拉美歷代榜未居前段；聽眾 35 萬主流，旋律親切硬蕊度 1｜L=350069"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
-    "eligible": true,
-    "tier": "hall",
-    "reason": "確立Maná為90年代拉丁搖滾代表團體的里程碑作,兼具社會/環保主題與商業成功,長期樂評共識視為其巔峰代表作,2023年Apple Music首度為拉丁藝人推出Rediscovered系列亦選此輯。",
-    "evidenceUrls": [
-     "https://en.wikipedia.org/wiki/%C2%BFD%C3%B3nde_Jugar%C3%A1n_los_Ni%C3%B1os%3F",
-     "https://www.rollingstone.com/music/music-latin-lists/mana-our-life-in-15-songs-919502/donde-jugaran-los-ninos-1992-920175/"
-    ]
+    "eligible": false,
+    "tier": null,
+    "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。拉丁流行搖滾銷量里程碑，未進綜合歷代榜",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": true,
+     "tier": "hall",
+     "reason": "確立Maná為90年代拉丁搖滾代表團體的里程碑作,兼具社會/環保主題與商業成功,長期樂評共識視為其巔峰代表作,2023年Apple Music首度為拉丁藝人推出Rediscovered系列亦選此輯。",
+     "evidenceUrls": [
+      "https://en.wikipedia.org/wiki/%C2%BFD%C3%B3nde_Jugar%C3%A1n_los_Ni%C3%B1os%3F",
+      "https://www.rollingstone.com/music/music-latin-lists/mana-our-life-in-15-songs-919502/donde-jugaran-los-ninos-1992-920175/"
+     ]
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "老人回憶童年那條清澈的河，然後問孩子將來要去哪裡玩。標題曲用這段回憶對比眼前遭污染的環境，是 Maná 最早的環保主題作品。樂團前身 Sombrero Verde 於 1983 年解散，1986 年鼓手 Álex González 加入後由主唱 Fher Olvera 等人重組，改名取自玻里尼西亞語意指正能量的 Maná。1992 年的這張讓他們真正打開國際市場，是史上最暢銷的西語搖滾專輯之一，在美國 Billboard Top Latin Albums 榜拿到第 4 名。",
@@ -748,13 +799,22 @@
    },
    "ratings": {
     "classic": 5,
-    "obscurity": 5,
-    "accessibility": 2,
+    "obscurity": 2,
+    "accessibility": 1,
     "listeners": 0,
-    "source": "worker:/album-rating + last.fm listeners",
-    "checkedAt": "2026-08-29T11:30:00Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker:/album-rating + last.fm listeners",
+     "checkedAt": "2026-08-29T11:30:00Z",
+     "rarity": "epic"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：RS 阿根廷搖滾百大第 13、阿根廷搖滾史最暢銷；聽眾 0 為漏抓，主流→冷門 5→2｜L=0"
    },
-   "rarity": "epic",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1014,21 +1074,38 @@
    },
    "ratings": {
     "classic": 5,
-    "obscurity": 3,
+    "obscurity": 2,
     "accessibility": 2,
     "listeners": 80627,
-    "source": "worker:/album-rating + last.fm listeners",
-    "checkedAt": "2026-08-29T11:30:00Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "worker:/album-rating + last.fm listeners",
+     "checkedAt": "2026-08-29T11:30:00Z",
+     "rarity": "uncommon"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：西語搖滾代表作，但查無國家權威專輯榜首位級依據；80,627 聽眾，冷門度 3 改 2｜L=80627"
    },
    "rarity": "uncommon",
    "apexAssessment": {
-    "eligible": true,
-    "tier": "hall",
-    "reason": "被多方西語樂評稱為西語搖滾史上最佳專輯之一,由Phil Manzanera製作,是該團創作高峰亦是西班牙搖滾正典代表作,全球銷量750,000張(截至1993年)。",
-    "evidenceUrls": [
-     "https://en.wikipedia.org/wiki/Senderos_de_traici%C3%B3n",
-     "https://www.mondosonoro.com/criticas/discos-musica/heroes-del-silencio-senderos-de-traicion-25-aniversario/"
-    ]
+    "eligible": false,
+    "tier": null,
+    "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。西語搖滾國內經典屬 5，綜合歷代榜不收",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": true,
+     "tier": "hall",
+     "reason": "被多方西語樂評稱為西語搖滾史上最佳專輯之一,由Phil Manzanera製作,是該團創作高峰亦是西班牙搖滾正典代表作,全球銷量750,000張(截至1993年)。",
+     "evidenceUrls": [
+      "https://en.wikipedia.org/wiki/Senderos_de_traici%C3%B3n",
+      "https://www.mondosonoro.com/criticas/discos-musica/heroes-del-silencio-senderos-de-traicion-25-aniversario/"
+     ]
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "單曲在德國正式發行前，電台已經被點播的樂迷灌爆。那首歌是〈Entre dos tierras〉，收在 Héroes del Silencio 1990 年 12 月 4 日發行的這張唱片裡，同年由 Roxy Music 吉他手 Phil Manzanera 在馬德里 Kirios Studios 監製完成。專輯在西班牙登上排行榜冠軍、賣出約 50 萬張並拿下三白金；德國最高排到第 17 名。隨後約 140 場的巡迴，把樂團帶進歐洲與拉丁美洲市場。",
@@ -1543,13 +1620,22 @@
    },
    "ratings": {
     "classic": 4,
-    "obscurity": 5,
-    "accessibility": 2,
+    "obscurity": 2,
+    "accessibility": 1,
     "listeners": 36,
-    "source": "worker:/album-rating + last.fm listeners",
-    "checkedAt": "2026-08-29T11:30:00Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker:/album-rating + last.fm listeners",
+     "checkedAt": "2026-08-29T11:30:00Z",
+     "rarity": "uncommon"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：疑錯配：Vicente Fernández 招牌名曲同名盤，墨西哥主流大廠；冷門度 2｜L=36"
    },
-   "rarity": "uncommon",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1605,12 +1691,21 @@
     "checkedAt": "2026-08-29T11:30:00Z"
    },
    "ratings": {
-    "classic": 3,
+    "classic": 4,
     "obscurity": 1,
     "accessibility": 1,
     "listeners": 681217,
-    "source": "worker:/album-rating + last.fm listeners",
-    "checkedAt": "2026-08-29T11:30:00Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 1,
+     "accessibility": 1,
+     "source": "worker:/album-rating + last.fm listeners",
+     "checkedAt": "2026-08-29T11:30:00Z",
+     "rarity": "common"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：拉丁葛萊美年度專輯、Billboard 200 冠軍；主流拉丁流行｜L=681217"
    },
    "rarity": "common",
    "apexAssessment": {
@@ -1801,13 +1896,22 @@
    },
    "ratings": {
     "classic": 5,
-    "obscurity": 5,
-    "accessibility": 2,
+    "obscurity": 2,
+    "accessibility": 1,
     "listeners": 3,
-    "source": "worker:/album-rating + last.fm listeners",
-    "checkedAt": "2026-08-29T11:30:00Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker:/album-rating + last.fm listeners",
+     "checkedAt": "2026-08-29T11:30:00Z",
+     "rarity": "epic"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：香頌正典首輯；聽眾 3 疑錯配（長標題），Polydor 主流→2｜L=3"
    },
-   "rarity": "epic",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1990,14 +2094,23 @@
     "checkedAt": "2026-08-29T11:30:00Z"
    },
    "ratings": {
-    "classic": 5,
-    "obscurity": 5,
-    "accessibility": 2,
+    "classic": 4,
+    "obscurity": 2,
+    "accessibility": 1,
     "listeners": 15,
-    "source": "worker:/album-rating + last.fm listeners",
-    "checkedAt": "2026-08-29T11:30:00Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker:/album-rating + last.fm listeners",
+     "checkedAt": "2026-08-29T11:30:00Z",
+     "rarity": "epic"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：Piaf 名演現場；15聽眾疑錯配（主流巨星），照錨點2；香頌非爵士，易聽1｜L=15"
    },
-   "rarity": "epic",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2118,11 +2231,20 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 5,
+    "obscurity": 3,
     "accessibility": 1,
     "listeners": 6,
-    "source": "worker:/album-rating + last.fm listeners",
-    "checkedAt": "2026-08-29T11:30:00Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 1,
+     "source": "worker:/album-rating + last.fm listeners",
+     "checkedAt": "2026-08-29T11:30:00Z",
+     "rarity": "common"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：Trenet 大廠盤，聽眾6屬標題錯配，照錨點3｜L=6"
    },
    "rarity": "common",
    "apexAssessment": {
@@ -2559,13 +2681,22 @@
    },
    "ratings": {
     "classic": 4,
-    "obscurity": 3,
-    "accessibility": 2,
+    "obscurity": 2,
+    "accessibility": 1,
     "listeners": 31491,
-    "source": "worker:/album-rating + last.fm listeners",
-    "checkedAt": "2026-08-29T11:30:00Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "worker:/album-rating + last.fm listeners",
+     "checkedAt": "2026-08-29T11:30:00Z",
+     "rarity": "rare"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：法語流行天后代表作，法語圈主流大賣；31k 聽眾｜L=31491"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2881,22 +3012,39 @@
     "checkedAt": "2026-08-29T11:30:00Z"
    },
    "ratings": {
-    "classic": 5,
+    "classic": 4,
     "obscurity": 1,
-    "accessibility": 2,
+    "accessibility": 1,
     "listeners": 825792,
-    "source": "worker:/album-rating + last.fm listeners",
-    "checkedAt": "2026-08-29T11:30:00Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 1,
+     "accessibility": 2,
+     "source": "worker:/album-rating + last.fm listeners",
+     "checkedAt": "2026-08-29T11:30:00Z",
+     "rarity": "uncommon"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：法語流行大熱代表作，但無跨來源史上核心共識；旋律直白硬蕊 1｜L=825792"
    },
-   "rarity": "uncommon",
+   "rarity": "common",
    "apexAssessment": {
-    "eligible": true,
-    "tier": "hall",
-    "reason": "法國 2013 年最暢銷專輯（銷量超越 Daft Punk《Random Access Memories》），法國唱片工會認證 4x 鑽石（200 萬張），樂評公認為 Stromae 突破代表作，常與 Jacques Brel 相提並論。",
-    "evidenceUrls": [
-     "https://en.wikipedia.org/wiki/Racine_carr%C3%A9e",
-     "https://chartmasters.org/an-odyssey-into-france-best-selling-albums-ever-racine-carree-by-stromae-2013/"
-    ]
+    "eligible": false,
+    "tier": null,
+    "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。法語流行大熱，綜合歷代榜不收，7 星不成立",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": true,
+     "tier": "hall",
+     "reason": "法國 2013 年最暢銷專輯（銷量超越 Daft Punk《Random Access Memories》），法國唱片工會認證 4x 鑽石（200 萬張），樂評公認為 Stromae 突破代表作，常與 Jacques Brel 相提並論。",
+     "evidenceUrls": [
+      "https://en.wikipedia.org/wiki/Racine_carr%C3%A9e",
+      "https://chartmasters.org/an-odyssey-into-france-best-selling-albums-ever-racine-carree-by-stromae-2013/"
+     ]
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "隱藏攝影機拍下他在布魯塞爾街頭踉蹌，路人先舉起的是手機。2013 年 5 月 21 日，〈Formidable〉的音樂錄影帶在 Louise 電車站附近開拍，他假扮成喝醉的路人，多數人選擇拿出手機錄影而不是上前攙扶，影片上線一天觀看數就逼近 70 萬次。2014 年的第 29 屆 Victoires de la musique，這張專輯一次拿下最佳男歌手與年度最佳歌曲專輯等三項。法國 SNEP 認證 4×鑽石，2015 年 12 月公布的全球銷量約 250 萬張。",
@@ -3021,12 +3169,21 @@
    "ratings": {
     "classic": 4,
     "obscurity": 2,
-    "accessibility": 2,
+    "accessibility": 1,
     "listeners": 236028,
-    "source": "worker:/album-rating + last.fm listeners",
-    "checkedAt": "2026-08-29T11:30:00Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 2,
+     "accessibility": 2,
+     "source": "worker:/album-rating + last.fm listeners",
+     "checkedAt": "2026-08-29T11:30:00Z",
+     "rarity": "rare"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：法國 2010 年代流行代表作，國際暢銷｜L=236028"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -3215,21 +3372,38 @@
    },
    "ratings": {
     "classic": 5,
-    "obscurity": 5,
+    "obscurity": 2,
     "accessibility": 2,
     "listeners": 185,
-    "source": "worker:/album-rating + last.fm listeners",
-    "checkedAt": "2026-08-29T11:30:00Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker:/album-rating + last.fm listeners",
+     "checkedAt": "2026-08-29T11:30:00Z",
+     "rarity": "epic"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：含 Ne me quitte pas 的香頌代表作；listeners 185 疑拆名錯配不套下限，冷門度 2；圈外無跨來源專輯正典｜L=185"
    },
-   "rarity": "epic",
+   "rarity": "uncommon",
    "apexAssessment": {
-    "eligible": true,
-    "tier": "hall",
-    "reason": "1999 年法國民調中 31% 受訪者選為 20 世紀最佳歌曲；被視為 Brel「終極經典」，翻唱為多國語言版本（含英語版「If You Go Away」），法語香頌史上最常被引用的作品之一。",
-    "evidenceUrls": [
-     "https://en.wikipedia.org/wiki/Ne_me_quitte_pas",
-     "https://www.franceinfo.fr/culture/musique/chanson-francaise/quand-brel-suppliait-ne-me-quitte-pas-l-histoire-d-une-chanson-incomprise_3367805.html"
-    ]
+    "eligible": false,
+    "tier": null,
+    "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。香頌代表作屬該國經典 5；listeners 185 疑錯配，不適用流亡",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": true,
+     "tier": "hall",
+     "reason": "1999 年法國民調中 31% 受訪者選為 20 世紀最佳歌曲；被視為 Brel「終極經典」，翻唱為多國語言版本（含英語版「If You Go Away」），法語香頌史上最常被引用的作品之一。",
+     "evidenceUrls": [
+      "https://en.wikipedia.org/wiki/Ne_me_quitte_pas",
+      "https://www.franceinfo.fr/culture/musique/chanson-francaise/quand-brel-suppliait-ne-me-quitte-pas-l-histoire-d-une-chanson-incomprise_3367805.html"
+     ]
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "巴黎一家小酒館裡，他和鋼琴師把剛結束的一段感情寫成了第五軌。那家店叫 Au Rêve，鋼琴師是 Gérard Jouannest，兩人合寫的是〈Ne me quitte pas〉，寫成時 Brel 與情人、歌手 Suzanne Gabriello 分手不久。他日後公開否認這首歌寫給任何特定女性，說那是一個混蛋與一個失敗者的故事；Gabriello 的說法相反，指他曾當著朋友的面把歌唱給她聽。收錄這首歌的是 1959 年由 Philips 發行的第四張錄音室專輯。",
@@ -3351,14 +3525,23 @@
     "checkedAt": "2026-08-29T11:30:00Z"
    },
    "ratings": {
-    "classic": 4,
-    "obscurity": 5,
-    "accessibility": 2,
+    "classic": 3,
+    "obscurity": 2,
+    "accessibility": 1,
     "listeners": 1,
-    "source": "worker:/album-rating + last.fm listeners",
-    "checkedAt": "2026-08-29T11:30:00Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker:/album-rating + last.fm listeners",
+     "checkedAt": "2026-08-29T11:30:00Z",
+     "rarity": "uncommon"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：L1 是盤名「Mina®」拆寫錯配；PDU／EMI 發行的義大利主流盤，有串流，照錨點給 2｜L=1"
    },
-   "rarity": "uncommon",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -3414,21 +3597,38 @@
    },
    "ratings": {
     "classic": 5,
-    "obscurity": 3,
-    "accessibility": 2,
+    "obscurity": 2,
+    "accessibility": 1,
     "listeners": 46128,
-    "source": "worker:/album-rating + last.fm listeners",
-    "checkedAt": "2026-08-29T11:30:00Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "worker:/album-rating + last.fm listeners",
+     "checkedAt": "2026-08-29T11:30:00Z",
+     "rarity": "uncommon"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：1973 義大利年度暢銷、場景里程碑，但樂評正典多推 Anima latina，無跨來源榜首級共識；聽眾 4.6 萬冷門度 2｜L=46128"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
-    "eligible": true,
-    "tier": "hall",
-    "reason": "1972–73 年義大利銷售冠軍專輯（初期即賣出 45 萬張，1973 年義大利年度最暢銷專輯），樂評公認為義大利流行音樂成熟期的分水嶺代表作，将其推下榜首的正是 Pink Floyd《The Dark Side of the Moon》。",
-    "evidenceUrls": [
-     "https://it.wikipedia.org/wiki/Il_mio_canto_libero_(album_Lucio_Battisti)",
-     "https://www.blogdellamusica.eu/il-mio-canto-libero-di-lucio-battisti-storia-disco-1972/"
-    ]
+    "eligible": false,
+    "tier": null,
+    "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。義大利流行里程碑，未進綜合歷代榜，非該類型樂迷不識，5 星",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": true,
+     "tier": "hall",
+     "reason": "1972–73 年義大利銷售冠軍專輯（初期即賣出 45 萬張，1973 年義大利年度最暢銷專輯），樂評公認為義大利流行音樂成熟期的分水嶺代表作，将其推下榜首的正是 Pink Floyd《The Dark Side of the Moon》。",
+     "evidenceUrls": [
+      "https://it.wikipedia.org/wiki/Il_mio_canto_libero_(album_Lucio_Battisti)",
+      "https://www.blogdellamusica.eu/il-mio-canto-libero-di-lucio-battisti-storia-disco-1972/"
+     ]
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "為了保住創作自主權開的廠牌，發出了 1973 年義大利最暢銷的專輯。那家廠牌是 Numero Uno，由 Battisti 與作詞人 Mogol 在 1969 年共同創辦，這張 1972 年 11 月推出的唱片是他最早掛自家廠牌的作品之一。專輯在 Musica e dischi 榜連續 8 週蟬聯冠軍；其中一首後來由 Mick Ronson 翻唱、David Bowie 重寫英語詞，改題〈Music Is Lethal〉。編制豐厚的義式流行搖滾。",
@@ -3549,22 +3749,39 @@
     "checkedAt": "2026-08-29T11:30:00Z"
    },
    "ratings": {
-    "classic": 5,
-    "obscurity": 4,
+    "classic": 4,
+    "obscurity": 3,
     "accessibility": 2,
     "listeners": 17267,
-    "source": "worker:/album-rating + last.fm listeners",
-    "checkedAt": "2026-08-29T11:30:00Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "worker:/album-rating + last.fm listeners",
+     "checkedAt": "2026-08-29T11:30:00Z",
+     "rarity": "uncommon"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：De André 重要概念作但非其首推；listeners 1.7 萬，冷門度 3｜L=17267"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
-    "eligible": true,
-    "tier": "hall",
-    "reason": "樂評公認為 De André 最具野心與大膽的作品之一，將美國《Spoon River Anthology》詩選引介入義大利文化，普遍被評為義大利音樂史上的重要傑作。",
-    "evidenceUrls": [
-     "https://www.sentireascoltare.com/recensioni/fabrizio-de-andre-non-al-denaro-non-allamore-ne-al-cielo/",
-     "https://en.debaser.it/fabrizio-de-andre/non-al-denaro-non-allamore-ne-al-cielo/review"
-    ]
+    "eligible": false,
+    "tier": null,
+    "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。藝人重要作但非首推，該國級",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": true,
+     "tier": "hall",
+     "reason": "樂評公認為 De André 最具野心與大膽的作品之一，將美國《Spoon River Anthology》詩選引介入義大利文化，普遍被評為義大利音樂史上的重要傑作。",
+     "evidenceUrls": [
+      "https://www.sentireascoltare.com/recensioni/fabrizio-de-andre-non-al-denaro-non-allamore-ne-al-cielo/",
+      "https://en.debaser.it/fabrizio-de-andre/non-al-denaro-non-allamore-ne-al-cielo/review"
+     ]
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "向詩人借來的一本詩集，私下譯成義大利文，最後長成一整張概念專輯。譯者是作家 Fernanda Pivano，她向 Cesare Pavese 借得 Edgar Lee Masters 的《Spoon River Anthology》後私下譯出，手稿被 Pavese 發現才促成出版。1971 年由 Produttori Associati 發行的這張唱片就以它為本，De André 與作詞人把墓園裡的人物詩改寫成歌，並拿掉了原詩中每個角色的姓名。",
@@ -3685,13 +3902,21 @@
    },
    "rarity": "uncommon",
    "apexAssessment": {
-    "eligible": true,
-    "tier": "hall",
-    "reason": "義大利有史以來第一張銷量突破 100 萬張的專輯，1982 年連續（非連續）18 週冠軍；Musica e dischi 調查評為 1980 年代義大利第二佳輕音樂專輯，僅次於 De André《Crêuza de mä》。",
-    "evidenceUrls": [
-     "https://en.wikipedia.org/wiki/La_voce_del_padrone_(album)",
-     "https://www.lidentita.it/la-voce-del-padrone-del-maestro-franco-battiato-compie-43-anni-una-pietra-miliare-della-musica-italiana/"
-    ]
+    "eligible": false,
+    "tier": null,
+    "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。義大利國內榜首級，屬該國第一名盤＝5 星，非跨類型史上正典",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": true,
+     "tier": "hall",
+     "reason": "義大利有史以來第一張銷量突破 100 萬張的專輯，1982 年連續（非連續）18 週冠軍；Musica e dischi 調查評為 1980 年代義大利第二佳輕音樂專輯，僅次於 De André《Crêuza de mä》。",
+     "evidenceUrls": [
+      "https://en.wikipedia.org/wiki/La_voce_del_padrone_(album)",
+      "https://www.lidentita.it/la-voce-del-padrone-del-maestro-franco-battiato-compie-43-anni-una-pietra-miliare-della-musica-italiana/"
+     ]
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "借唱片公司的商標語當標題，結果成了義大利史上第一張百萬銷量專輯。「La voce del padrone」意思是主人的聲音，取自唱片業老商標 His Master's Voice。1981 年 9 月 21 日由 EMI Italiana 發行，Angelo Carrara 製作，隔年在義大利 Hit Parade 拿下週榜與年度榜的雙料冠軍。破百萬張的說法有 1989 年的一篇報導與 1992 年的一本專書為據。",
@@ -3746,13 +3971,22 @@
    },
    "ratings": {
     "classic": 4,
-    "obscurity": 5,
+    "obscurity": 2,
     "accessibility": 2,
     "listeners": 184,
-    "source": "worker:/album-rating + last.fm listeners",
-    "checkedAt": "2026-08-29T11:30:00Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker:/album-rating + last.fm listeners",
+     "checkedAt": "2026-08-29T11:30:00Z",
+     "rarity": "uncommon"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：疑錯配：Paolo Conte 有多張同名專輯，1984 這張（Sotto le stelle del jazz）是主流名盤｜L=184"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -3807,14 +4041,23 @@
     "checkedAt": "2026-08-29T11:30:00Z"
    },
    "ratings": {
-    "classic": 4,
-    "obscurity": 5,
+    "classic": 3,
+    "obscurity": 3,
     "accessibility": 1,
     "listeners": 27,
-    "source": "worker:/album-rating + last.fm listeners",
-    "checkedAt": "2026-08-29T11:30:00Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 5,
+     "accessibility": 1,
+     "source": "worker:/album-rating + last.fm listeners",
+     "checkedAt": "2026-08-29T11:30:00Z",
+     "rarity": "rare"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：美版 Decca 合輯含〈Volare〉，聽眾數疑拆名錯配，照錨點 3｜L=27"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -3870,13 +4113,22 @@
    },
    "ratings": {
     "classic": 4,
-    "obscurity": 5,
+    "obscurity": 2,
     "accessibility": 1,
     "listeners": 111,
-    "source": "worker:/album-rating + last.fm listeners",
-    "checkedAt": "2026-08-29T11:30:00Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 5,
+     "accessibility": 1,
+     "source": "worker:/album-rating + last.fm listeners",
+     "checkedAt": "2026-08-29T11:30:00Z",
+     "rarity": "rare"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：疑錯配：Celentano 招牌單曲，雙曲名拆分致 111 聽眾；Clan 主流發行｜L=111"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -4197,12 +4449,21 @@
     "checkedAt": "2026-08-29T11:30:00Z"
    },
    "ratings": {
-    "classic": 3,
-    "obscurity": 5,
+    "classic": 4,
+    "obscurity": 2,
     "accessibility": 2,
     "listeners": 253,
-    "source": "worker:/album-rating + last.fm listeners",
-    "checkedAt": "2026-08-29T11:30:00Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker:/album-rating + last.fm listeners",
+     "checkedAt": "2026-08-29T11:30:00Z",
+     "rarity": "rare"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：疑錯配：義大利史上暢銷盤之一，試聽 ready；冷門度 2，經典度 3→4｜L=253"
    },
    "rarity": "rare",
    "apexAssessment": {
@@ -4268,14 +4529,23 @@
     "checkedAt": "2026-08-29T11:30:00Z"
    },
    "ratings": {
-    "classic": 5,
-    "obscurity": 2,
+    "classic": 3,
+    "obscurity": 1,
     "accessibility": 1,
     "listeners": 185984,
-    "source": "worker:/album-rating + last.fm listeners",
-    "checkedAt": "2026-08-29T11:30:00Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 2,
+     "accessibility": 1,
+     "source": "worker:/album-rating + last.fm listeners",
+     "checkedAt": "2026-08-29T11:30:00Z",
+     "rarity": "rare"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：超級暢銷精選，樂評地位平平，經典度 5 過高｜L=185984"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -4329,12 +4599,21 @@
     "checkedAt": "2026-08-29T11:30:00Z"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 5,
+    "classic": 3,
+    "obscurity": 2,
     "accessibility": 1,
     "listeners": 1,
-    "source": "worker:/album-rating + last.fm listeners",
-    "checkedAt": "2026-08-29T11:30:00Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 5,
+     "accessibility": 1,
+     "source": "worker:/album-rating + last.fm listeners",
+     "checkedAt": "2026-08-29T11:30:00Z",
+     "rarity": "common"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：L1 為盤名拆寫錯配；Polydor 西班牙主流歌手，照錨點給 2｜L=1"
    },
    "rarity": "common",
    "apexAssessment": {
@@ -4391,13 +4670,22 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 5,
-    "accessibility": 2,
+    "obscurity": 2,
+    "accessibility": 1,
     "listeners": 128,
-    "source": "worker:/album-rating + last.fm listeners",
-    "checkedAt": "2026-08-29T11:30:00Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker:/album-rating + last.fm listeners",
+     "checkedAt": "2026-08-29T11:30:00Z",
+     "rarity": "rare"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：疑錯配：西班牙巨星 Raphael 同名盤多張，聽眾數分散；主流抒情，冷門度照錨點 2｜L=128"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -4521,13 +4809,22 @@
    },
    "ratings": {
     "classic": 4,
-    "obscurity": 5,
+    "obscurity": 2,
     "accessibility": 1,
     "listeners": 8,
-    "source": "worker:/album-rating + last.fm listeners",
-    "checkedAt": "2026-08-29T11:30:00Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 5,
+     "accessibility": 1,
+     "source": "worker:/album-rating + last.fm listeners",
+     "checkedAt": "2026-08-29T11:30:00Z",
+     "rarity": "rare"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：L8 為盤名拆寫錯配；CBS 德國暢銷盤（99 Luftballons），照錨點給 2｜L=8"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -4787,13 +5084,22 @@
    },
    "ratings": {
     "classic": 4,
-    "obscurity": 5,
+    "obscurity": 3,
     "accessibility": 2,
     "listeners": 167,
-    "source": "worker:/album-rating + last.fm listeners",
-    "checkedAt": "2026-08-29T11:30:00Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker:/album-rating + last.fm listeners",
+     "checkedAt": "2026-08-29T11:30:00Z",
+     "rarity": "uncommon"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：名人現場盤、大廠多次再版；聽眾 167 疑盤名錯配，照錨點 3｜L=167"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -4849,21 +5155,38 @@
    },
    "ratings": {
     "classic": 5,
-    "obscurity": 5,
+    "obscurity": 2,
     "accessibility": 1,
     "listeners": 613,
-    "source": "worker:/album-rating + last.fm listeners",
-    "checkedAt": "2026-08-29T11:30:00Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 5,
+     "accessibility": 1,
+     "source": "worker:/album-rating + last.fm listeners",
+     "checkedAt": "2026-08-29T11:30:00Z",
+     "rarity": "uncommon"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：首張完整百老匯原卡司唱片，入國家錄音登錄；613 聽眾是拆名錯配，主流盤冷門 2｜L=613"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
-    "eligible": true,
-    "tier": "hall",
-    "reason": "史上第一張完整原班卡司＋原編制樂團錄製的音樂劇專輯，開創「原卡司錄音」品類；2003 年入選美國國家錄音登記簿（National Recording Registry）。",
-    "evidenceUrls": [
-     "https://www.loc.gov/static/programs/national-recording-preservation-board/documents/OKLAHOMA!.pdf",
-     "https://en.wikipedia.org/wiki/Oklahoma!_(original_Broadway_cast_recording)"
-    ]
+    "eligible": false,
+    "tier": null,
+    "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。國家錄音登錄，但非綜合歷代專輯榜正典；聽眾 613 屬拆名錯配",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": true,
+     "tier": "hall",
+     "reason": "史上第一張完整原班卡司＋原編制樂團錄製的音樂劇專輯，開創「原卡司錄音」品類；2003 年入選美國國家錄音登記簿（National Recording Registry）。",
+     "evidenceUrls": [
+      "https://www.loc.gov/static/programs/national-recording-preservation-board/documents/OKLAHOMA!.pdf",
+      "https://en.wikipedia.org/wiki/Oklahoma!_(original_Broadway_cast_recording)"
+     ]
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "六張 78 轉唱片裝成一套，1943 年的 Decca 把整齣戲搬進了唱片行。這套錄音發行於 1943 年 12 月 1 日，由原班卡司與原劇院管弦樂團演出，Robert Russell Bennett 編曲、Jay Blackton 指揮。在此之前，把一齣舞台劇的主要歌曲交給原班人馬灌成整套，在美國只有零星嘗試，這套是把構想做成完整商品的先例；其後二十年間，卡司與電影原聲帶專輯一度主導唱片銷售榜。78 轉套裝賣出逾百萬份，發行以來從未絕版。",
@@ -4914,21 +5237,38 @@
    },
    "ratings": {
     "classic": 5,
-    "obscurity": 4,
+    "obscurity": 3,
     "accessibility": 1,
     "listeners": 3214,
-    "source": "worker:/album-rating + last.fm listeners",
-    "checkedAt": "2026-08-29T11:30:00Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 4,
+     "accessibility": 1,
+     "source": "worker:/album-rating + last.fm listeners",
+     "checkedAt": "2026-08-29T11:30:00Z",
+     "rarity": "rare"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：百老匯暢銷原卡司盤，地位高但影響與正典性不及 Oklahoma!；殿堂從嚴不成立；聽眾 3214 下限 3｜L=3214"
    },
    "rarity": "rare",
    "apexAssessment": {
-    "eligible": true,
-    "tier": "hall",
-    "reason": "美國國家錄音登記簿收錄：條目為 South Pacific 原版百老匯卡司錄音（Mary Martin、Ezio Pinza 與原版卡司），本卡即該錄音。",
-    "evidenceUrls": [
-     "https://en.wikipedia.org/wiki/National_Recording_Registry",
-     "https://en.wikipedia.org/wiki/South_Pacific_(musical)"
-    ]
+    "eligible": false,
+    "tier": null,
+    "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。百老匯暢銷盤，殿堂不成立",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": true,
+     "tier": "hall",
+     "reason": "美國國家錄音登記簿收錄：條目為 South Pacific 原版百老匯卡司錄音（Mary Martin、Ezio Pinza 與原版卡司），本卡即該錄音。",
+     "evidenceUrls": [
+      "https://en.wikipedia.org/wiki/National_Recording_Registry",
+      "https://en.wikipedia.org/wiki/South_Pacific_(musical)"
+     ]
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "普立茲戲劇獎的得主欄位，1950 年第一次寫上了作曲家的名字。委員會那年把 Richard Rodgers 與兩位編劇並列為共同得主。這張原版百老匯卡司錄音早一年就完成，1949 年 4 月錄於紐約 Columbia 第 30 街錄音室。劇中〈You've Got to Be Carefully Taught〉直言種族偏見是後天教出來的，在美國南方引發強烈爭議，面對刪歌壓力，兩位創作者始終不肯讓步。專輯在 Billboard 暢銷專輯榜合計盤踞冠軍 69 週。",
@@ -4982,14 +5322,23 @@
     "checkedAt": "2026-08-29T11:30:00Z"
    },
    "ratings": {
-    "classic": 5,
-    "obscurity": 5,
+    "classic": 4,
+    "obscurity": 3,
     "accessibility": 1,
     "listeners": 151,
-    "source": "worker:/album-rating + last.fm listeners",
-    "checkedAt": "2026-08-29T11:30:00Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 5,
+     "accessibility": 1,
+     "source": "worker:/album-rating + last.fm listeners",
+     "checkedAt": "2026-08-29T11:30:00Z",
+     "rarity": "uncommon"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：原版百老匯卡司錄音；聽眾151疑錯配（拆名）｜L=151"
    },
-   "rarity": "uncommon",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -5046,22 +5395,39 @@
     "checkedAt": "2026-08-29T11:30:00Z"
    },
    "ratings": {
-    "classic": 5,
-    "obscurity": 5,
+    "classic": 4,
+    "obscurity": 2,
     "accessibility": 1,
     "listeners": 333,
-    "source": "worker:/album-rating + last.fm listeners",
-    "checkedAt": "2026-08-29T11:30:00Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 5,
+     "accessibility": 1,
+     "source": "worker:/album-rating + last.fm listeners",
+     "checkedAt": "2026-08-29T11:30:00Z",
+     "rarity": "uncommon"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：劇目為百老匯經典，但卡司錄音無跨來源專輯正典共識；listeners 333 疑錯配（卡司盤掛名），不套下限｜L=333"
    },
-   "rarity": "uncommon",
+   "rarity": "common",
    "apexAssessment": {
-    "eligible": true,
-    "tier": "hall",
-    "reason": "2004 年入選美國國家錄音登記簿，音樂劇喜劇代表作之公認地位。",
-    "evidenceUrls": [
-     "https://www.loc.gov/static/programs/national-recording-preservation-board/documents/GuysAndDolls.pdf",
-     "https://en.wikipedia.org/wiki/Guys_and_Dolls_(original_Broadway_cast_recording)"
-    ]
+    "eligible": false,
+    "tier": null,
+    "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。百老匯卡司盤，無綜合歷代專輯榜共識",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": true,
+     "tier": "hall",
+     "reason": "2004 年入選美國國家錄音登記簿，音樂劇喜劇代表作之公認地位。",
+     "evidenceUrls": [
+      "https://www.loc.gov/static/programs/national-recording-preservation-board/documents/GuysAndDolls.pdf",
+      "https://en.wikipedia.org/wiki/Guys_and_Dolls_(original_Broadway_cast_recording)"
+     ]
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "詞和曲都出自同一個人的手，這張卡司專輯後來登上了 Billboard 榜首。Frank Loesser 此前在百老匯與好萊塢多半只掛作詞，《Guys and Dolls》才確立他詞曲一手包辦的身分。舞台版 1950 年 11 月 24 日首演，連演 1,200 場，隔年東尼獎拿下含最佳音樂劇在內的五項；Decca 的原版百老匯卡司錄音則要到 1951 年 1 月 8 日才上市，同年 3 月 17 日當週登上 33⅓ 轉最暢銷唱片榜冠軍。",
@@ -5112,22 +5478,39 @@
     "checkedAt": "2026-08-29T11:30:00Z"
    },
    "ratings": {
-    "classic": 5,
-    "obscurity": 5,
+    "classic": 4,
+    "obscurity": 2,
     "accessibility": 2,
     "listeners": 96,
-    "source": "worker:/album-rating + last.fm listeners",
-    "checkedAt": "2026-08-29T11:30:00Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker:/album-rating + last.fm listeners",
+     "checkedAt": "2026-08-29T11:30:00Z",
+     "rarity": "epic"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：百老匯卡司錄音；listeners 96 疑錯配（卡司盤掛名），不套下限，冷門度 5→2；無專輯正典共識｜L=96"
    },
-   "rarity": "epic",
+   "rarity": "rare",
    "apexAssessment": {
-    "eligible": true,
-    "tier": "hall",
-    "reason": "1959 年 Grammy Best Original Cast Recording 得主，2009 年入選美國國家錄音登記簿，Ethel Merman 代表演出。",
-    "evidenceUrls": [
-     "https://www.loc.gov/static/programs/national-recording-preservation-board/documents/Gypsy_Flinn.pdf",
-     "https://en.wikipedia.org/wiki/Gypsy_(original_Broadway_cast_recording)"
-    ]
+    "eligible": false,
+    "tier": null,
+    "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。百老匯卡司錄音，綜合歷代榜不收",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": true,
+     "tier": "hall",
+     "reason": "1959 年 Grammy Best Original Cast Recording 得主，2009 年入選美國國家錄音登記簿，Ethel Merman 代表演出。",
+     "evidenceUrls": [
+      "https://www.loc.gov/static/programs/national-recording-preservation-board/documents/Gypsy_Flinn.pdf",
+      "https://en.wikipedia.org/wiki/Gypsy_(original_Broadway_cast_recording)"
+     ]
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "Ethel Merman 全靠一副天生嗓子，在擴音時代之前壓過整團管弦樂。那副未經正式訓練的聲音能穿透整座劇院，Cole Porter 曾形容它像一輛駛過的銅管樂隊。1959 年 5 月 21 日她在百老匯首演 Rose 一角，三天後灌下這張原版卡司錄音，是她生涯第一次用上剛問世的立體聲技術；作曲是 Jule Styne，作詞是尚未以作曲家立足百老匯的 Stephen Sondheim。有文化評論者把 Rose 比作音樂劇版的李爾王，是頂尖女演員都想登頂的聖母峰。",
@@ -5182,21 +5565,38 @@
    },
    "ratings": {
     "classic": 5,
-    "obscurity": 5,
+    "obscurity": 2,
     "accessibility": 1,
     "listeners": 90,
-    "source": "worker:/album-rating + last.fm listeners",
-    "checkedAt": "2026-08-29T11:30:00Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 5,
+     "accessibility": 1,
+     "source": "worker:/album-rating + last.fm listeners",
+     "checkedAt": "2026-08-29T11:30:00Z",
+     "rarity": "uncommon"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：劇目為百老匯經典，但卡司錄音無跨來源專輯正典；listeners 90 疑掛名錯配，不套下限｜L=90"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
-    "eligible": true,
-    "tier": "hall",
-    "reason": "2020 年入選美國國家錄音登記簿，Zero Mostel 主演的經典原卡司錄音。",
-    "evidenceUrls": [
-     "https://www.loc.gov/static/programs/national-recording-preservation-board/documents/FiddlerOnTheRoof_Solomon.pdf",
-     "https://en.wikipedia.org/wiki/Fiddler_on_the_Roof_(original_Broadway_cast_recording)"
-    ]
+    "eligible": false,
+    "tier": null,
+    "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。劇目經典但卡司錄音無綜合專輯榜收錄；listeners 疑錯配",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": true,
+     "tier": "hall",
+     "reason": "2020 年入選美國國家錄音登記簿，Zero Mostel 主演的經典原卡司錄音。",
+     "evidenceUrls": [
+      "https://www.loc.gov/static/programs/national-recording-preservation-board/documents/FiddlerOnTheRoof_Solomon.pdf",
+      "https://en.wikipedia.org/wiki/Fiddler_on_the_Roof_(original_Broadway_cast_recording)"
+     ]
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "連演 3242 場，音樂劇史上第一次有製作跨過三千場這道門檻。寫下這個數字的是 1964 年 9 月 22 日在百老匯帝國劇院首演的原版製作，Zero Mostel 飾乳品商 Tevye，RCA Victor 同年發行原版卡司錄音。全劇改編自 Sholem Aleichem 的意第緒語故事，背景設在俄羅斯帝國的猶太人隔離區，結局是沙皇一紙驅逐令逼散全村。百老匯最長壽紀錄由它保持到 1979 年才被《Grease》接手，專輯則在 2020 年入選國家錄音登記簿。",
@@ -5253,13 +5653,22 @@
    },
    "ratings": {
     "classic": 5,
-    "obscurity": 5,
+    "obscurity": 2,
     "accessibility": 2,
     "listeners": 89,
-    "source": "worker:/album-rating + last.fm listeners",
-    "checkedAt": "2026-08-29T11:30:00Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker:/album-rating + last.fm listeners",
+     "checkedAt": "2026-08-29T11:30:00Z",
+     "rarity": "epic"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：聽眾 89 屬原卡司盤疑錯配，Columbia 主流發行照錨點 2｜L=89"
    },
-   "rarity": "epic",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -5314,22 +5723,39 @@
     "checkedAt": "2026-08-29T11:30:00Z"
    },
    "ratings": {
-    "classic": 5,
-    "obscurity": 5,
-    "accessibility": 2,
+    "classic": 4,
+    "obscurity": 2,
+    "accessibility": 1,
     "listeners": 83,
-    "source": "worker:/album-rating + last.fm listeners",
-    "checkedAt": "2026-08-29T11:30:00Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker:/album-rating + last.fm listeners",
+     "checkedAt": "2026-08-29T11:30:00Z",
+     "rarity": "epic"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：百老匯卡司盤暢銷經典，但無跨來源專輯正典共識；listeners 83 為掛名錯配，不套下限｜L=83"
    },
-   "rarity": "epic",
+   "rarity": "common",
    "apexAssessment": {
-    "eligible": true,
-    "tier": "hall",
-    "reason": "反文化搖滾音樂劇開創之作，2018 年入選美國國家錄音登記簿。",
-    "evidenceUrls": [
-     "https://www.loc.gov/static/programs/national-recording-preservation-board/documents/Hair_OriginalBroadwayCast.pdf",
-     "https://en.wikipedia.org/wiki/Hair_(Original_Broadway_Cast_Recording)"
-    ]
+    "eligible": false,
+    "tier": null,
+    "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。卡司盤，無專輯正典共識",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": true,
+     "tier": "hall",
+     "reason": "反文化搖滾音樂劇開創之作，2018 年入選美國國家錄音登記簿。",
+     "evidenceUrls": [
+      "https://www.loc.gov/static/programs/national-recording-preservation-board/documents/Hair_OriginalBroadwayCast.pdf",
+      "https://en.wikipedia.org/wiki/Hair_(Original_Broadway_Cast_Recording)"
+     ]
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "昏暗燈光下，全體演員全裸站上舞台——這場戲的官司後來打進了最高法院。那是第一幕終場，也是百老匯史上首次出現的全裸場面。田納西州查塔努加市政府拒發場地許可一案一路上訴，1975 年最高法院判定該市的審核制度構成對言論的事前限制，違反第一修正案。這齣戲 1967 年先在外百老匯開演，1968 年 4 月 29 日轉進百老匯，RCA Victor 同年發行這張百老匯版原版卡司錄音，它在 1969 年蟬聯 Billboard 200 冠軍 13 週。",
@@ -5383,14 +5809,23 @@
     "checkedAt": "2026-08-29T11:30:00Z"
    },
    "ratings": {
-    "classic": 5,
-    "obscurity": 5,
-    "accessibility": 2,
+    "classic": 4,
+    "obscurity": 2,
+    "accessibility": 1,
     "listeners": 23,
-    "source": "worker:/album-rating + last.fm listeners",
-    "checkedAt": "2026-08-29T11:30:00Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker:/album-rating + last.fm listeners",
+     "checkedAt": "2026-08-29T11:30:00Z",
+     "rarity": "epic"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：百老匯原卡司錄音，聽眾23疑錯配不套下限；冷門 5→2，經典 5→4｜L=23"
    },
-   "rarity": "epic",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -5452,21 +5887,38 @@
    },
    "ratings": {
     "classic": 5,
-    "obscurity": 5,
+    "obscurity": 2,
     "accessibility": 1,
     "listeners": 229,
-    "source": "worker:/album-rating + last.fm listeners",
-    "checkedAt": "2026-08-29T11:30:00Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 5,
+     "accessibility": 1,
+     "source": "worker:/album-rating + last.fm listeners",
+     "checkedAt": "2026-08-29T11:30:00Z",
+     "rarity": "uncommon"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：原版卡司錄音是音樂劇史核心作、當年暢銷冠軍；listeners 229 疑盤名錯配，冷門不套下限給 2｜L=229"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
-    "eligible": true,
-    "tier": "hall",
-    "reason": "Grammy Hall of Fame（1977）與美國國家錄音登記簿（2007）雙重殊榮，Billboard 200 累積 480 週上榜的史上最暢銷原卡司錄音之一。",
-    "evidenceUrls": [
-     "https://www.loc.gov/item/2014621183/",
-     "https://en.wikipedia.org/wiki/My_Fair_Lady_(Broadway_cast_recording)"
-    ]
+    "eligible": false,
+    "tier": null,
+    "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。原卡司錄音暢銷正典，但屬音樂劇類型，綜合樂評歷代榜不收",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": true,
+     "tier": "hall",
+     "reason": "Grammy Hall of Fame（1977）與美國國家錄音登記簿（2007）雙重殊榮，Billboard 200 累積 480 週上榜的史上最暢銷原卡司錄音之一。",
+     "evidenceUrls": [
+      "https://www.loc.gov/item/2014621183/",
+      "https://en.wikipedia.org/wiki/My_Fair_Lady_(Broadway_cast_recording)"
+     ]
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "美國第一張賣破一百萬張的密紋唱片，來自 1956 年的百老匯舞台。3 月 15 日首演，十天後卡司在 Columbia 第 30 街錄音室用一整天錄完，4 月 2 日發行。這張錄音在 Billboard 榜上蟬聯冠軍 15 週。飾演 Higgins 的 Rex Harrison 音域被作曲 Frederick Loewe 形容只有一個半音，劇組因此替他設計出以旋律的節奏與音高說出歌詞、不真正唱出音符的處理，這種半說半唱成了這個角色的表演標誌。1977 年它進入葛萊美名人堂。",
@@ -5522,13 +5974,22 @@
    },
    "ratings": {
     "classic": 5,
-    "obscurity": 5,
+    "obscurity": 2,
     "accessibility": 2,
     "listeners": 1987,
-    "source": "worker:/album-rating + last.fm listeners",
-    "checkedAt": "2026-08-29T11:30:00Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker:/album-rating + last.fm listeners",
+     "checkedAt": "2026-08-29T11:30:00Z",
+     "rarity": "epic"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：倫敦原卡司錄音極知名；listeners 1987 疑錯配（盤名寫法），不套下限。音樂劇錄音缺正典榜依據｜L=1987"
    },
-   "rarity": "epic",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -5584,11 +6045,20 @@
    },
    "ratings": {
     "classic": 5,
-    "obscurity": 2,
+    "obscurity": 1,
     "accessibility": 1,
     "listeners": 182018,
-    "source": "worker:/album-rating + last.fm listeners",
-    "checkedAt": "2026-08-29T11:30:00Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 2,
+     "accessibility": 1,
+     "source": "worker:/album-rating + last.fm listeners",
+     "checkedAt": "2026-08-29T11:30:00Z",
+     "rarity": "rare"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：音樂劇史必提，但缺樂評正典共識；入門名單常客，冷門 2→1｜L=182018"
    },
    "rarity": "rare",
    "apexAssessment": {
@@ -5649,14 +6119,23 @@
     "checkedAt": "2026-08-29T11:30:00Z"
    },
    "ratings": {
-    "classic": 5,
-    "obscurity": 3,
+    "classic": 4,
+    "obscurity": 2,
     "accessibility": 2,
     "listeners": 42150,
-    "source": "worker:/album-rating + last.fm listeners",
-    "checkedAt": "2026-08-29T11:30:00Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "worker:/album-rating + last.fm listeners",
+     "checkedAt": "2026-08-29T11:30:00Z",
+     "rarity": "uncommon"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：音樂劇概念專輯名作，非跨來源殿堂；冷門 3→2｜L=42150"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -5775,21 +6254,38 @@
    },
    "ratings": {
     "classic": 5,
-    "obscurity": 5,
-    "accessibility": 1,
+    "obscurity": 1,
+    "accessibility": 2,
     "listeners": 473,
-    "source": "worker:/album-rating + last.fm listeners",
-    "checkedAt": "2026-08-29T11:30:00Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 5,
+     "accessibility": 1,
+     "source": "worker:/album-rating + last.fm listeners",
+     "checkedAt": "2026-08-29T11:30:00Z",
+     "rarity": "uncommon"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：2010 年代音樂劇正典，Grammy、全球現象；listeners 473 疑錯配，冷門給 1｜L=473"
    },
    "rarity": "uncommon",
    "apexAssessment": {
-    "eligible": true,
-    "tier": "hall",
-    "reason": "史上最暢銷原卡司錄音（RIAA 鑽石唱片），2016 年 Grammy 最佳音樂劇專輯，2025 年入選美國國家錄音登記簿。",
-    "evidenceUrls": [
-     "https://www.grammy.com/news/library-of-congress-2025-national-recording-registry-additions-elton-john-mary-j-blige-hamilton-amy-winehouse/",
-     "https://playbill.com/article/hamilton-broadway-cast-album-inducted-into-national-recording-registry"
-    ]
+    "eligible": false,
+    "tier": null,
+    "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。全球現象但屬音樂劇原聲，綜合樂評歷代榜收錄零散；listeners 473 疑錯配",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": true,
+     "tier": "hall",
+     "reason": "史上最暢銷原卡司錄音（RIAA 鑽石唱片），2016 年 Grammy 最佳音樂劇專輯，2025 年入選美國國家錄音登記簿。",
+     "evidenceUrls": [
+      "https://www.grammy.com/news/library-of-congress-2025-national-recording-registry-additions-elton-john-mary-j-blige-hamilton-amy-winehouse/",
+      "https://playbill.com/article/hamilton-broadway-cast-album-inducted-into-national-recording-registry"
+     ]
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "開國元勳的故事用饒舌唱完，2016 年一年之內收下普立茲、葛萊美與 11 座東尼獎。Lin-Manuel Miranda 一人身兼編劇、作曲與作詞，並在原班卡司裡親自主演 Alexander Hamilton。全劇大量取材自嘻哈，再摻入 R&B、流行、靈魂樂與傳統百老匯唱段，用這套語彙把建國史講完。那年的第 58 屆葛萊美把最佳音樂劇專輯頒給這份錄音，第 70 屆東尼獎則以 16 項提名創下紀錄。2025 年，這份原班卡司錄音獲美國國會圖書館選入《國家錄音登記簿》。",
@@ -5843,11 +6339,20 @@
    },
    "ratings": {
     "classic": 5,
-    "obscurity": 4,
+    "obscurity": 2,
     "accessibility": 1,
     "listeners": 5659,
-    "source": "worker:/album-rating + last.fm listeners",
-    "checkedAt": "2026-08-29T11:30:00Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 4,
+     "accessibility": 1,
+     "source": "worker:/album-rating + last.fm listeners",
+     "checkedAt": "2026-08-29T11:30:00Z",
+     "rarity": "rare"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：百老匯經典原卡司盤；聽眾 5659 不套下限，主流流通 4→2；未達跨領域殿堂｜L=5659"
    },
    "rarity": "rare",
    "apexAssessment": {
@@ -5972,21 +6477,38 @@
    },
    "ratings": {
     "classic": 5,
-    "obscurity": 4,
+    "obscurity": 3,
     "accessibility": 3,
     "listeners": 8596,
-    "source": "worker:/album-rating + last.fm listeners",
-    "checkedAt": "2026-08-29T11:30:00Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 4,
+     "accessibility": 3,
+     "source": "worker:/album-rating + last.fm listeners",
+     "checkedAt": "2026-08-29T11:30:00Z",
+     "rarity": "epic"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：音樂劇原卡司錄音正典、Grammy；8596 聽眾 RCA 正規盤冷門 4 過高降 3｜L=8596"
    },
    "rarity": "epic",
    "apexAssessment": {
-    "eligible": true,
-    "tier": "hall",
-    "reason": "1980 年 Grammy 最佳原聲音樂劇專輯得主，已入選美國國家錄音登記簿，Angela Lansbury／Len Cariou 主演的公認經典。",
-    "evidenceUrls": [
-     "https://playbill.com/article/library-of-congress-adds-original-sweeney-todd-cast-album-to-national-recording-registry-com-216756",
-     "https://www.loc.gov/static/programs/national-recording-preservation-board/documents/SweeneyTodd.pdf"
-    ]
+    "eligible": false,
+    "tier": null,
+    "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。音樂劇原卡司錄音正典，但綜合歷代專輯榜（RS500、1001 等）幾乎不收，5 星",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": true,
+     "tier": "hall",
+     "reason": "1980 年 Grammy 最佳原聲音樂劇專輯得主，已入選美國國家錄音登記簿，Angela Lansbury／Len Cariou 主演的公認經典。",
+     "evidenceUrls": [
+      "https://playbill.com/article/library-of-congress-adds-original-sweeney-todd-cast-album-to-national-recording-registry-com-216756",
+      "https://www.loc.gov/static/programs/national-recording-preservation-board/documents/SweeneyTodd.pdf"
+     ]
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "Sondheim 親手在劇名後補了一行副標——A Musical Thriller，音樂驚悚劇。這行字對應的是近乎歌劇規格的寫法：配樂縱貫全場，大量運用穿插對位與主導動機。1979 年 3 月 1 日在百老匯 Uris 劇院首演，Angela Lansbury 與 Len Cariou 主演。原班卡司錄音以雙碟 LP 收錄完整樂譜，是 RCA 自十年前《Hair》以來賣得最好的百老匯專輯，並在 1980 年舉行的第 22 屆葛萊美獎拿下最佳卡司秀專輯。",
@@ -6041,12 +6563,21 @@
    "ratings": {
     "classic": 5,
     "obscurity": 3,
-    "accessibility": 4,
+    "accessibility": 2,
     "listeners": 69616,
-    "source": "worker:/album-rating + last.fm listeners",
-    "checkedAt": "2026-08-29T11:30:00Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 3,
+     "accessibility": 4,
+     "source": "worker:/album-rating + last.fm listeners",
+     "checkedAt": "2026-08-29T11:30:00Z",
+     "rarity": "legendary"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：百老匯卡司錄音正典；音樂劇旋律結構，硬蕊4→2｜L=69616"
    },
-   "rarity": "legendary",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -6107,13 +6638,22 @@
    },
    "ratings": {
     "classic": 5,
-    "obscurity": 4,
-    "accessibility": 3,
+    "obscurity": 3,
+    "accessibility": 2,
     "listeners": 19093,
-    "source": "worker:/album-rating + last.fm listeners",
-    "checkedAt": "2026-08-29T11:30:00Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 4,
+     "accessibility": 3,
+     "source": "worker:/album-rating + last.fm listeners",
+     "checkedAt": "2026-08-29T11:30:00Z",
+     "rarity": "epic"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：Sondheim 代表卡司錄音；19093 聽眾，冷門4→3；硬蕊3→2｜L=19093"
    },
-   "rarity": "epic",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -6168,14 +6708,23 @@
     "checkedAt": "2026-08-29T11:30:00Z"
    },
    "ratings": {
-    "classic": 5,
-    "obscurity": 5,
+    "classic": 4,
+    "obscurity": 3,
     "accessibility": 1,
     "listeners": 1233,
-    "source": "worker:/album-rating + last.fm listeners",
-    "checkedAt": "2026-08-29T11:30:00Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 5,
+     "accessibility": 1,
+     "source": "worker:/album-rating + last.fm listeners",
+     "checkedAt": "2026-08-29T11:30:00Z",
+     "rarity": "uncommon"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：電影原聲 1956 版 LP；聽眾疑錯配，照錨點 3｜L=1233"
    },
-   "rarity": "uncommon",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -6231,14 +6780,23 @@
     "checkedAt": "2026-08-29T11:30:00Z"
    },
    "ratings": {
-    "classic": 5,
-    "obscurity": 4,
-    "accessibility": 2,
+    "classic": 4,
+    "obscurity": 2,
+    "accessibility": 1,
     "listeners": 12425,
-    "source": "worker:/album-rating + last.fm listeners",
-    "checkedAt": "2026-08-29T11:30:00Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "worker:/album-rating + last.fm listeners",
+     "checkedAt": "2026-08-29T11:30:00Z",
+     "rarity": "uncommon"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：Songbook 系列佳作，但非 Cole Porter／Gershwin 那類核心卷；聽眾 1.2 萬→冷門 2｜L=12425"
    },
-   "rarity": "uncommon",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -6297,14 +6855,23 @@
     "checkedAt": "2026-08-29T11:30:00Z"
    },
    "ratings": {
-    "classic": 5,
+    "classic": 4,
     "obscurity": 2,
-    "accessibility": 2,
+    "accessibility": 1,
     "listeners": 108341,
-    "source": "worker:/album-rating + last.fm listeners",
-    "checkedAt": "2026-08-29T11:30:00Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 2,
+     "accessibility": 2,
+     "source": "worker:/album-rating + last.fm listeners",
+     "checkedAt": "2026-08-29T11:30:00Z",
+     "rarity": "uncommon"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：Songbook 系列一卷，強作非首選；標準曲人聲爵士入耳 1｜L=108341"
    },
-   "rarity": "uncommon",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -6364,22 +6931,39 @@
     "checkedAt": "2026-08-29T11:30:00Z"
    },
    "ratings": {
-    "classic": 5,
-    "obscurity": 4,
-    "accessibility": 2,
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 1,
     "listeners": 10577,
-    "source": "worker:/album-rating + last.fm listeners",
-    "checkedAt": "2026-08-29T11:30:00Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "worker:/album-rating + last.fm listeners",
+     "checkedAt": "2026-08-29T11:30:00Z",
+     "rarity": "uncommon"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：Granz 製作、Oscar Peterson 伴奏的佳作，但非人聲爵士正典核心；10,577 聽眾冷門度 3｜L=10577"
    },
-   "rarity": "uncommon",
+   "rarity": "common",
    "apexAssessment": {
-    "eligible": true,
-    "tier": "hall",
-    "reason": "葛萊美名人堂收錄：條目為 The Astaire Story／Fred Astaire & The Oscar Peterson Quintet／Mercury／1953／Vocal Jazz／Album，1999 年入選。",
-    "evidenceUrls": [
-     "https://en.wikipedia.org/wiki/List_of_Grammy_Hall_of_Fame_Award_recipients_(A%E2%80%93D)",
-     "https://en.wikipedia.org/wiki/Grammy_Hall_of_Fame"
-    ]
+    "eligible": false,
+    "tier": null,
+    "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。人聲爵士佳作，非綜合歷代榜正典",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": true,
+     "tier": "hall",
+     "reason": "葛萊美名人堂收錄：條目為 The Astaire Story／Fred Astaire & The Oscar Peterson Quintet／Mercury／1953／Vocal Jazz／Album，1999 年入選。",
+     "evidenceUrls": [
+      "https://en.wikipedia.org/wiki/List_of_Grammy_Hall_of_Fame_Award_recipients_(A%E2%80%93D)",
+      "https://en.wikipedia.org/wiki/Grammy_Hall_of_Fame"
+     ]
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "限量 1384 套四張裝，每一套都帶著 Astaire 的親筆簽名。這套 1952 年 12 月的錄音由 Norman Granz 製作。在成為好萊塢舞王之前，Astaire 本就是百老匯與好萊塢多首新曲的原唱人選，作曲家放心把新歌交給他親自試唱引介；他在這裡以歌手身分重新演繹自己經手過的曲目，另有三首穿插踢踏示範。伴奏是 Oscar Peterson 領軍的六人小組，鋼琴、小號、次中音薩克斯風、吉他、貝斯與鼓各一。1999 年，這套錄音獲頒葛萊美名人堂獎。",
@@ -6558,11 +7142,20 @@
    },
    "ratings": {
     "classic": 5,
-    "obscurity": 4,
+    "obscurity": 2,
     "accessibility": 1,
     "listeners": 18673,
-    "source": "worker:/album-rating + last.fm listeners",
-    "checkedAt": "2026-08-29T11:30:00Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 4,
+     "accessibility": 1,
+     "source": "worker:/album-rating + last.fm listeners",
+     "checkedAt": "2026-08-29T11:30:00Z",
+     "rarity": "rare"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：RS500、1001 Albums 收錄，殿堂成立；18,673 聽眾，原冷門度 4 偏高改 2｜L=18673"
    },
    "rarity": "rare",
    "apexAssessment": {
@@ -6687,14 +7280,23 @@
     "checkedAt": "2026-08-29T11:30:00Z"
    },
    "ratings": {
-    "classic": 5,
-    "obscurity": 4,
+    "classic": 4,
+    "obscurity": 2,
     "accessibility": 1,
     "listeners": 18888,
-    "source": "worker:/album-rating + last.fm listeners",
-    "checkedAt": "2026-08-29T11:30:00Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 4,
+     "accessibility": 1,
+     "source": "worker:/album-rating + last.fm listeners",
+     "checkedAt": "2026-08-29T11:30:00Z",
+     "rarity": "rare"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：Capitol 抒情盤，次於 Wee Small Hours／Only the Lonely→4；聽眾 1.9 萬｜L=18888"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -6883,11 +7485,20 @@
    },
    "ratings": {
     "classic": 5,
-    "obscurity": 4,
+    "obscurity": 2,
     "accessibility": 1,
     "listeners": 15765,
-    "source": "worker:/album-rating + last.fm listeners",
-    "checkedAt": "2026-08-29T11:30:00Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 4,
+     "accessibility": 1,
+     "source": "worker:/album-rating + last.fm listeners",
+     "checkedAt": "2026-08-29T11:30:00Z",
+     "rarity": "rare"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：Grammy 年度專輯，晚期代表；聽眾 1.5 萬、Reprise 主流→冷門 2｜L=15765"
    },
    "rarity": "rare",
    "apexAssessment": {
@@ -7017,12 +7628,21 @@
    "ratings": {
     "classic": 5,
     "obscurity": 1,
-    "accessibility": 2,
+    "accessibility": 1,
     "listeners": 714825,
-    "source": "worker:/album-rating + last.fm listeners",
-    "checkedAt": "2026-08-29T11:30:00Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 1,
+     "accessibility": 2,
+     "source": "worker:/album-rating + last.fm listeners",
+     "checkedAt": "2026-08-29T11:30:00Z",
+     "rarity": "uncommon"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：1001 Albums、RS500 前段；藍眼靈魂正典｜L=714825"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": true,
     "tier": "hall",
@@ -7086,21 +7706,38 @@
    },
    "ratings": {
     "classic": 5,
-    "obscurity": 4,
+    "obscurity": 2,
     "accessibility": 1,
     "listeners": 19709,
-    "source": "worker:/album-rating + last.fm listeners",
-    "checkedAt": "2026-08-29T11:30:00Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 4,
+     "accessibility": 1,
+     "source": "worker:/album-rating + last.fm listeners",
+     "checkedAt": "2026-08-29T11:30:00Z",
+     "rarity": "rare"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：葛萊美年度專輯、國會圖書館錄音名錄、榜首 13 週，傳統流行人人必提，殿堂成立；冷門度 4 錯→2｜L=19709"
    },
    "rarity": "rare",
    "apexAssessment": {
-    "eligible": true,
-    "tier": "hall",
-    "reason": "1962 Grammy Album of the Year（首張獲此獎項的現場專輯，亦是首位獲獎女性歌手）；2003 年入選美國國會圖書館 National Recording Registry",
-    "evidenceUrls": [
-     "https://www.loc.gov/static/programs/national-recording-preservation-board/documents/judy.pdf",
-     "https://en.wikipedia.org/wiki/Judy_at_Carnegie_Hall"
-    ]
+    "eligible": false,
+    "tier": null,
+    "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。葛萊美年度專輯、國會名錄，但現代綜合歷代榜罕收",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": true,
+     "tier": "hall",
+     "reason": "1962 Grammy Album of the Year（首張獲此獎項的現場專輯，亦是首位獲獎女性歌手）；2003 年入選美國國會圖書館 National Recording Registry",
+     "evidenceUrls": [
+      "https://www.loc.gov/static/programs/national-recording-preservation-board/documents/judy.pdf",
+      "https://en.wikipedia.org/wiki/Judy_at_Carnegie_Hall"
+     ]
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "一夜實況錄成雙唱片，讓 Garland 成為首位拿下葛萊美年度專輯獎的女性。演唱會辦在 1961 年 4 月 23 日的卡內基音樂廳，同年 7 月 10 日由 Capitol 發成雙唱片。1962 年頒發的第 4 屆葛萊美，這張四項全數得獎：年度專輯、最佳女歌手演唱、最佳非古典類錄音工程，連最佳專輯封面都拿下。專輯在告示牌榜上停留 73 週、其中 13 週坐鎮冠軍，並獲金唱片認證。現場錄音整段保留她與觀眾之間的即時互動，唱腔渾厚而戲劇化。",
@@ -7150,14 +7787,23 @@
     "checkedAt": "2026-08-29T11:30:00Z"
    },
    "ratings": {
-    "classic": 5,
+    "classic": 4,
     "obscurity": 1,
     "accessibility": 1,
     "listeners": 506864,
-    "source": "worker:/album-rating + last.fm listeners",
-    "checkedAt": "2026-08-29T11:30:00Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 1,
+     "accessibility": 1,
+     "source": "worker:/album-rating + last.fm listeners",
+     "checkedAt": "2026-08-29T11:30:00Z",
+     "rarity": "rare"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：經典節慶盤，屬耶誕歌集非藝術正典，經典 5→4｜L=506864"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -7349,14 +7995,23 @@
     "checkedAt": "2026-08-29T11:30:00Z"
    },
    "ratings": {
-    "classic": 5,
-    "obscurity": 3,
+    "classic": 4,
+    "obscurity": 2,
     "accessibility": 1,
     "listeners": 48390,
-    "source": "worker:/album-rating + last.fm listeners",
-    "checkedAt": "2026-08-29T11:30:00Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 3,
+     "accessibility": 1,
+     "source": "worker:/album-rating + last.fm listeners",
+     "checkedAt": "2026-08-29T11:30:00Z",
+     "rarity": "rare"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：史上最暢銷耶誕專輯之一，但非樂評正典｜L=48390"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -7662,22 +8317,39 @@
     "checkedAt": "2026-08-29T11:30:00Z"
    },
    "ratings": {
-    "classic": 5,
-    "obscurity": 4,
-    "accessibility": 2,
+    "classic": 4,
+    "obscurity": 2,
+    "accessibility": 1,
     "listeners": 5045,
-    "source": "worker:/album-rating + last.fm listeners",
-    "checkedAt": "2026-08-29T11:30:00Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "worker:/album-rating + last.fm listeners",
+     "checkedAt": "2026-08-29T11:30:00Z",
+     "rarity": "uncommon"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：葛萊美年度專輯，但無 1001／RS500 級長期正典；listeners 5045 不套下限，主流 Columbia 盤冷門度 2｜L=5045"
    },
-   "rarity": "uncommon",
+   "rarity": "common",
    "apexAssessment": {
-    "eligible": true,
-    "tier": "hall",
-    "reason": "葛萊美名人堂收錄：條目為 The Barbra Streisand Album／Barbra Streisand／Columbia／1963／Traditional Pop／Album，2006 年入選。",
-    "evidenceUrls": [
-     "https://en.wikipedia.org/wiki/List_of_Grammy_Hall_of_Fame_Award_recipients_(A%E2%80%93D)",
-     "https://en.wikipedia.org/wiki/Grammy_Hall_of_Fame"
-    ]
+    "eligible": false,
+    "tier": null,
+    "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。葛萊美年度專輯，但綜合歷代榜罕見收錄，類型內經典 5",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": true,
+     "tier": "hall",
+     "reason": "葛萊美名人堂收錄：條目為 The Barbra Streisand Album／Barbra Streisand／Columbia／1963／Traditional Pop／Album，2006 年入選。",
+     "evidenceUrls": [
+      "https://en.wikipedia.org/wiki/List_of_Grammy_Hall_of_Fame_Award_recipients_(A%E2%80%93D)",
+      "https://en.wikipedia.org/wiki/Grammy_Hall_of_Fame"
+     ]
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "22 歲抱走葛萊美年度專輯獎，最年輕得主紀錄一守就超過三十年。首張錄音室專輯 1963 年 2 月 25 日由 Columbia 發行，多首錄音完成時她還不滿 21 歲。1964 年 5 月的第 6 屆葛萊美，它同時拿下年度專輯與最佳女歌手演唱獎，同屆共入圍五項，另抱回最佳專輯封面獎。紀錄要到 1996 年才由 21 歲的 Alanis Morissette 打破，其後 Taylor Swift 與 Billie Eilish 相繼刷新，目前掛在 Eilish 名下。",
@@ -8582,14 +9254,23 @@
     "checkedAt": "2026-08-29T11:30:00Z"
    },
    "ratings": {
-    "classic": 5,
+    "classic": 4,
     "obscurity": 1,
-    "accessibility": 2,
+    "accessibility": 1,
     "listeners": 2665190,
-    "source": "worker:/album-rating + last.fm listeners",
-    "checkedAt": "2026-08-29T11:30:00Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 1,
+     "accessibility": 2,
+     "source": "worker:/album-rating + last.fm listeners",
+     "checkedAt": "2026-08-29T11:30:00Z",
+     "rarity": "uncommon"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：暢銷出道作，評論共識是強作非正典；聽眾 266 萬｜L=2665190"
    },
-   "rarity": "uncommon",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -8847,14 +9528,23 @@
     "checkedAt": "2026-08-29T11:30:00Z"
    },
    "ratings": {
-    "classic": 5,
+    "classic": 4,
     "obscurity": 1,
     "accessibility": 1,
     "listeners": 555525,
-    "source": "worker:/album-rating + last.fm listeners",
-    "checkedAt": "2026-08-29T11:30:00Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 1,
+     "accessibility": 1,
+     "source": "worker:/album-rating + last.fm listeners",
+     "checkedAt": "2026-08-29T11:30:00Z",
+     "rarity": "rare"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：暢銷代表作之一，但 Watermark 才是首要經典｜L=555525"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -8914,21 +9604,38 @@
    },
    "ratings": {
     "classic": 5,
-    "obscurity": 2,
+    "obscurity": 1,
     "accessibility": 1,
     "listeners": 279763,
-    "source": "worker:/album-rating + last.fm listeners",
-    "checkedAt": "2026-08-29T11:30:00Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 2,
+     "accessibility": 1,
+     "source": "worker:/album-rating + last.fm listeners",
+     "checkedAt": "2026-08-29T11:30:00Z",
+     "rarity": "rare"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：含〈Crazy〉的鄉村經典，經典度 5；正典榜多收其精選，原專輯殿堂從嚴不成立；聽眾 28 萬冷門度 2→1｜L=279763"
    },
    "rarity": "rare",
    "apexAssessment": {
-    "eligible": true,
-    "tier": "hall",
-    "reason": "跨來源長期共識：AllMusic 列為 Cline 入門首選；I Fall to Pieces／Crazy 兩首指標曲首度定型於此輯，Nashville Sound 教科書等級案例。",
-    "evidenceUrls": [
-     "https://www.allmusic.com/album/patsy-cline-showcase-mw0000195207",
-     "https://en.wikipedia.org/wiki/Showcase_(Patsy_Cline_album)"
-    ]
+    "eligible": false,
+    "tier": null,
+    "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。綜合榜多收精選輯，原專輯非跨類型正典",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": true,
+     "tier": "hall",
+     "reason": "跨來源長期共識：AllMusic 列為 Cline 入門首選；I Fall to Pieces／Crazy 兩首指標曲首度定型於此輯，Nashville Sound 教科書等級案例。",
+     "evidenceUrls": [
+      "https://www.allmusic.com/album/patsy-cline-showcase-mw0000195207",
+      "https://en.wikipedia.org/wiki/Showcase_(Patsy_Cline_album)"
+     ]
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "小提琴、中提琴與大提琴一字排開，鋼琴、電吉他與 steel guitar 照樣都在編制裡。這是 Patsy Cline 1961 年 11 月由 Decca 發行的第二張錄音室專輯，Owen Bradley 製作；他把絃樂與人聲和聲加進既有編制，把嗓音往流行質感修飾，Nashville Sound 就在這樣的並存裡成形。〈I Fall to Pieces〉是她生涯第一首鄉村榜冠軍曲，Willie Nelson 寫的〈Crazy〉也登上鄉村榜前 5，兩首都同時打進流行榜。",
@@ -9059,13 +9766,21 @@
    },
    "rarity": "rare",
    "apexAssessment": {
-    "eligible": true,
-    "tier": "hall",
-    "reason": "AllMusic 專文稱其為「戰後美國西部歌謠最具影響力的專輯」；El Paso 為 1960 年 Billboard 流行榜與鄉村榜雙料冠軍，長年入選經典牛仔／西部主題最高代表作。",
-    "evidenceUrls": [
-     "https://www.allmusic.com/album/gunfighter-ballads-and-trail-songs-mw0000202077",
-     "https://en.wikipedia.org/wiki/Gunfighter_Ballads_and_Trail_Songs"
-    ]
+    "eligible": false,
+    "tier": null,
+    "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。1001 Albums 有收，但多數綜合歷代榜未收，鄉村西部類型里程碑 5 星",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": true,
+     "tier": "hall",
+     "reason": "AllMusic 專文稱其為「戰後美國西部歌謠最具影響力的專輯」；El Paso 為 1960 年 Billboard 流行榜與鄉村榜雙料冠軍，長年入選經典牛仔／西部主題最高代表作。",
+     "evidenceUrls": [
+      "https://www.allmusic.com/album/gunfighter-ballads-and-trail-songs-mw0000202077",
+      "https://en.wikipedia.org/wiki/Gunfighter_Ballads_and_Trail_Songs"
+     ]
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "四分半的單曲嚇得 Columbia 另剪三分鐘版備著，聽眾與 DJ 偏偏挑了完整版。那首歌是〈El Paso〉，長約 4 分 38 秒，遠超當時鄉村單曲慣例，剪短版還拿掉了主角懊悔的那段歌詞。專輯 1959 年 9 月由 Columbia 發行，整張在 4 月 7 日一場八小時的場次裡錄完。〈El Paso〉在 1960 年跨年那一週登上 Hot 100 冠軍，是史上第一首超過四分鐘的該榜冠軍曲，並在 1961 年第 3 屆葛萊美拿下最佳鄉村與西部歌曲錄音獎。",
@@ -9182,14 +9897,23 @@
     "checkedAt": "2026-08-29T11:30:00Z"
    },
    "ratings": {
-    "classic": 5,
-    "obscurity": 3,
+    "classic": 4,
+    "obscurity": 2,
     "accessibility": 1,
     "listeners": 92495,
-    "source": "worker:/album-rating + last.fm listeners",
-    "checkedAt": "2026-08-29T11:30:00Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 3,
+     "accessibility": 1,
+     "source": "worker:/album-rating + last.fm listeners",
+     "checkedAt": "2026-08-29T11:30:00Z",
+     "rarity": "rare"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：同名曲是經典，專輯本身是代表作而非正典榜常客；聽眾 9 萬｜L=92495"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -9245,22 +9969,39 @@
     "checkedAt": "2026-08-29T11:30:00Z"
    },
    "ratings": {
-    "classic": 5,
-    "obscurity": 3,
+    "classic": 4,
+    "obscurity": 2,
     "accessibility": 1,
     "listeners": 73458,
-    "source": "worker:/album-rating + last.fm listeners",
-    "checkedAt": "2026-08-29T11:30:00Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 3,
+     "accessibility": 1,
+     "source": "worker:/album-rating + last.fm listeners",
+     "checkedAt": "2026-08-29T11:30:00Z",
+     "rarity": "rare"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：CMA 年度專輯、商業成功，但非樂評歷代核心；73k listeners 冷門度 2｜L=73458"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
-    "eligible": true,
-    "tier": "hall",
-    "reason": "1973 年 CMA 年度專輯（Album of the Year）、CMA 年度單曲、Rich 同屆拿下 CMA 最佳男歌手，另獲 4 座 ACM 獎與 1974 Grammy 最佳男鄉村演唱，官方獎項證據齊全。",
-    "evidenceUrls": [
-     "https://en.wikipedia.org/wiki/Behind_Closed_Doors_(Charlie_Rich_album)",
-     "https://savingcountrymusic.com/50-years-ago-charlie-rich-records-iconic-behind-closed-doors/"
-    ]
+    "eligible": false,
+    "tier": null,
+    "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。CMA 年度專輯，非樂評歷代核心",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": true,
+     "tier": "hall",
+     "reason": "1973 年 CMA 年度專輯（Album of the Year）、CMA 年度單曲、Rich 同屆拿下 CMA 最佳男歌手，另獲 4 座 ACM 獎與 1974 Grammy 最佳男鄉村演唱，官方獎項證據齊全。",
+     "evidenceUrls": [
+      "https://en.wikipedia.org/wiki/Behind_Closed_Doors_(Charlie_Rich_album)",
+      "https://savingcountrymusic.com/50-years-ago-charlie-rich-records-iconic-behind-closed-doors/"
+     ]
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "Sam Phillips 嫌他太爵士、太優雅，二十年後他成了 CMA 頒獎夜的最大贏家。Charlie Rich 曾在曼菲斯 Sun 替人伴奏兼寫歌，此後蹲了將近二十年。本作 1973 年 5 月由 Epic 發行，Billy Sherrill 製作，把沙啞帶爵士味的嗓音包進絃樂與電鋼琴裡。1973 年 10 月 15 日的 CMA 頒獎夜，專輯獲年度專輯獎、Rich 獲年度男歌手，同名單曲另拿年度單曲獎；第 16 屆葛萊美他再獲最佳鄉村男歌手演唱獎。",
@@ -9378,11 +10119,20 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 5,
+    "obscurity": 2,
     "accessibility": 1,
     "listeners": 136,
-    "source": "worker:/album-rating + last.fm listeners",
-    "checkedAt": "2026-08-29T11:30:00Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 1,
+     "source": "worker:/album-rating + last.fm listeners",
+     "checkedAt": "2026-08-29T11:30:00Z",
+     "rarity": "common"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：RCA 大廠、1964 英國專輯榜冠軍；136 聽眾為疑錯配，依錨點2｜L=136"
    },
    "rarity": "common",
    "apexAssessment": {
@@ -9771,22 +10521,39 @@
     "checkedAt": "2026-08-29T11:30:00Z"
    },
    "ratings": {
-    "classic": 5,
+    "classic": 4,
     "obscurity": 2,
     "accessibility": 2,
     "listeners": 264372,
-    "source": "worker:/album-rating + last.fm listeners",
-    "checkedAt": "2026-08-29T11:30:00Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 2,
+     "accessibility": 2,
+     "source": "worker:/album-rating + last.fm listeners",
+     "checkedAt": "2026-08-29T11:30:00Z",
+     "rarity": "uncommon"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：晚年復出代表作、葛萊美，但鄉村領域人人必提的是 Folsom Prison；經典度 5→4｜L=264372"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
-    "eligible": true,
-    "tier": "hall",
-    "reason": "Rolling Stone《90 年代百大專輯》入選；1994 年 Grammy 最佳當代民謠專輯獎；公認為 Cash 晚年藝術重生的起點與極簡製作美學的標竿。",
-    "evidenceUrls": [
-     "https://www.rollingstone.com/music/music-lists/100-best-albums-of-the-90s-152425/johnny-cash-american-recordings-2-163119/",
-     "https://superdeluxeedition.com/news/johnny-cash-american-recordings/"
-    ]
+    "eligible": false,
+    "tier": null,
+    "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。晚年復出名作，綜合歷代榜收錄零散",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": true,
+     "tier": "hall",
+     "reason": "Rolling Stone《90 年代百大專輯》入選；1994 年 Grammy 最佳當代民謠專輯獎；公認為 Cash 晚年藝術重生的起點與極簡製作美學的標竿。",
+     "evidenceUrls": [
+      "https://www.rollingstone.com/music/music-lists/100-best-albums-of-the-90s-152425/johnny-cash-american-recordings-2-163119/",
+      "https://superdeluxeedition.com/news/johnny-cash-american-recordings/"
+     ]
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "做嘻哈與重金屬起家的製作人主動敲門，錄音地點選在 Cash 自家的客廳。Rick Rubin 在 1992 年 Bob Dylan 出道 30 週年演唱會上看到 Johnny Cash 演出，認定他仍有未被開發的活力——當時唱片業已對 Cash 失去興趣，他正從藥癮復發中恢復。錄音就在 Hendersonville 自宅客廳近乎不插電、獨自彈唱錄成，1994 年 4 月由 Rubin 的廠牌發行。這次首度合作開啟他晚期的復興，拿下 1995 年葛萊美最佳當代民謠專輯獎。",
@@ -10112,21 +10879,38 @@
    },
    "ratings": {
     "classic": 5,
-    "obscurity": 5,
-    "accessibility": 2,
+    "obscurity": 2,
+    "accessibility": 1,
     "listeners": 38,
-    "source": "worker:/album-rating + last.fm listeners",
-    "checkedAt": "2026-08-29T11:30:00Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker:/album-rating + last.fm listeners",
+     "checkedAt": "2026-08-29T11:30:00Z",
+     "rarity": "epic"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：首張白金鄉村專輯，outlaw 里程碑；listeners 38 疑錯配不套下限→2；殿堂未達｜L=38"
    },
-   "rarity": "epic",
+   "rarity": "rare",
    "apexAssessment": {
-    "eligible": true,
-    "tier": "hall",
-    "reason": "史上第一張 RIAA 認證白金的鄉村專輯（1976），公認 outlaw country 運動的商業與文化分水嶺，Billboard／Rolling Stone 均有專文回顧其歷史地位。",
-    "evidenceUrls": [
-     "https://en.wikipedia.org/wiki/Wanted!_The_Outlaws",
-     "https://www.billboard.com/music/country/wanted-the-outlaws-50th-anniversary-legacy-1236196033/"
-    ]
+    "eligible": false,
+    "tier": null,
+    "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。outlaw country 里程碑、首張白金鄉村盤，類型級",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": true,
+     "tier": "hall",
+     "reason": "史上第一張 RIAA 認證白金的鄉村專輯（1976），公認 outlaw country 運動的商業與文化分水嶺，Billboard／Rolling Stone 均有專文回顧其歷史地位。",
+     "evidenceUrls": [
+      "https://en.wikipedia.org/wiki/Wanted!_The_Outlaws",
+      "https://www.billboard.com/music/country/wanted-the-outlaws-50th-anniversary-legacy-1236196033/"
+     ]
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "封面印成西部通緝海報，內容多半是四個人發過的舊錄音，卻賣成鄉村史上第一張白金唱片。1976 年 1 月 12 日由 RCA 發行，收四位歌手先前已發行的錄音另加四首新曲，由廠牌重新包裝作行銷主打。「outlaw」一詞最早可溯至 Jennings 1972 年的〈Ladies Love Outlaws〉，到本作以通緝海報封面發行才定型流傳，成為 outlaw country 運動的命名起點。同年 2 月起在鄉村專輯榜蟬聯 6 週冠軍，11 月獲 RIAA 白金認證。",
@@ -10192,13 +10976,21 @@
    },
    "rarity": "rare",
    "apexAssessment": {
-    "eligible": true,
-    "tier": "hall",
-    "reason": "多方樂評與音樂史文章一致將其列為「該十年最受推崇的鄉村專輯之一」，並公認點燃新傳統主義運動、鋪路 Garth Brooks 等後續世代，屬跨來源長期共識。",
-    "evidenceUrls": [
-     "https://en.wikipedia.org/wiki/Storms_of_Life",
-     "https://americansongwriter.com/on-this-day-in-1986-randy-travis-released-the-album-that-helped-shape-country-music-for-the-next-decade/"
-    ]
+    "eligible": false,
+    "tier": null,
+    "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。鄉村領域必提，跨類型共識弱",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": true,
+     "tier": "hall",
+     "reason": "多方樂評與音樂史文章一致將其列為「該十年最受推崇的鄉村專輯之一」，並公認點燃新傳統主義運動、鋪路 Garth Brooks 等後續世代，屬跨來源長期共識。",
+     "evidenceUrls": [
+      "https://en.wikipedia.org/wiki/Storms_of_Life",
+      "https://americansongwriter.com/on-this-day-in-1986-randy-travis-released-the-album-that-helped-shape-country-music-for-the-next-decade/"
+     ]
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "太過鄉村，是 Nashville 各家廠牌回絕他的理由，一講就講了五年。經紀人 Lib Hatcher 持續奔走，1985 年 2 月替他簽下 Warner Bros.，1986 年 6 月 2 日發行這張首張錄音室專輯。回絕理由就此反轉成浪潮起點：本作被視為新傳統主義浪潮的開端，帶動 Nashville 製作路線回歸鋼棒吉他與傳統唱腔。專輯 1987 年登上鄉村專輯榜冠軍，獲 RIAA 認證三白金，是史上第一張發行一年內銷量破 100 萬張的鄉村音樂首張錄音室專輯。",
@@ -10251,21 +11043,38 @@
    },
    "ratings": {
     "classic": 5,
-    "obscurity": 3,
+    "obscurity": 2,
     "accessibility": 1,
     "listeners": 41959,
-    "source": "worker:/album-rating + last.fm listeners",
-    "checkedAt": "2026-08-29T11:30:00Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 3,
+     "accessibility": 1,
+     "source": "worker:/album-rating + last.fm listeners",
+     "checkedAt": "2026-08-29T11:30:00Z",
+     "rarity": "rare"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：90 年代鄉村代表作（經典度 5），但無跨類型樂評正典共識；不上串流但極暢銷，冷門度 2｜L=41959"
    },
    "rarity": "rare",
    "apexAssessment": {
-    "eligible": true,
-    "tier": "hall",
-    "reason": "1990 年 CMA 年度專輯獎；史上最暢銷鄉村專輯（RIAA 18 倍白金），90 年代鄉村音樂商業化浪潮的指標作品，跨來源共識明確。",
-    "evidenceUrls": [
-     "https://en.wikipedia.org/wiki/No_Fences",
-     "https://theboot.com/garth-brooks-no-fences-album/"
-    ]
+    "eligible": false,
+    "tier": null,
+    "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。鄉村暢銷代表，樂評歷代榜不收",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": true,
+     "tier": "hall",
+     "reason": "1990 年 CMA 年度專輯獎；史上最暢銷鄉村專輯（RIAA 18 倍白金），90 年代鄉村音樂商業化浪潮的指標作品，跨來源共識明確。",
+     "evidenceUrls": [
+      "https://en.wikipedia.org/wiki/No_Fences",
+      "https://theboot.com/garth-brooks-no-fences-album/"
+     ]
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "餐廳裡忘了帶錢包，一句玩笑話後來寫成了〈Friends in Low Places〉。玩笑出自詞曲作者 Earl Bud Lee——他脫口說的那句「在下等階層有朋友」，1991 年替這首歌拿下 CMA 與 ACM 年度單曲獎。專輯 1990 年 8 月 27 日由 Capitol Nashville 發行，在鄉村專輯榜合計蟬聯 41 週冠軍，獲 RIAA 認證 18 白金，是美國史上最暢銷的鄉村專輯之一，也是 Brooks 轉向體育場鄉村、帶動九〇年代初商業大爆發的轉捩點。",
@@ -10317,22 +11126,39 @@
     "checkedAt": "2026-08-29T11:30:00Z"
    },
    "ratings": {
-    "classic": 5,
-    "obscurity": 2,
+    "classic": 4,
+    "obscurity": 1,
     "accessibility": 1,
     "listeners": 208869,
-    "source": "worker:/album-rating + last.fm listeners",
-    "checkedAt": "2026-08-29T11:30:00Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 2,
+     "accessibility": 1,
+     "source": "worker:/album-rating + last.fm listeners",
+     "checkedAt": "2026-08-29T11:30:00Z",
+     "rarity": "rare"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：listeners 20 萬，主流鄉村暢銷作；非跨來源正典，經典度降 4，冷門度改 1｜L=208869"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
-    "eligible": true,
-    "tier": "hall",
-    "reason": "1998 年 ACM 年度專輯獎；RIAA 鑽石認證，史上最暢銷鄉村團體／雙人輯紀錄保持者，公認 90 年代末鄉村主流化的代表作。",
-    "evidenceUrls": [
-     "https://en.wikipedia.org/wiki/Wide_Open_Spaces_(album)",
-     "https://albumism.com/features/10-fast-facts-dixie-chicks-wide-open-spaces"
-    ]
+    "eligible": false,
+    "tier": null,
+    "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。主流鄉村暢銷作，非跨來源正典",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": true,
+     "tier": "hall",
+     "reason": "1998 年 ACM 年度專輯獎；RIAA 鑽石認證，史上最暢銷鄉村團體／雙人輯紀錄保持者，公認 90 年代末鄉村主流化的代表作。",
+     "evidenceUrls": [
+      "https://en.wikipedia.org/wiki/Wide_Open_Spaces_(album)",
+      "https://albumism.com/features/10-fast-facts-dixie-chicks-wide-open-spaces"
+     ]
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "換了主唱、簽進大廠才灌錄的第四張，反而成了外界認識她們的第一張。Dixie Chicks 先以 Laura Lynch 領唱、在獨立廠牌發過三張專輯，本作是 Natalie Maines 加入後灌錄的第一張，也是樂團首張主流大廠 Monument 作品。1998 年 CMA 獎拿下年度團體與新人獎，隔年再以本作奪下年度專輯，1999 年 2 月的第 41 屆葛萊美另抱回最佳鄉村專輯。2003 年獲 RIAA 鑽石認證，全球出貨 1300 萬張。",

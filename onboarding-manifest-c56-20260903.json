@@ -814,20 +814,21 @@
    },
    "ratings": {
     "classic": 5,
-    "obscurity": 2,
+    "obscurity": 3,
     "accessibility": 2,
     "listeners": 107950,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
     "previous": {
-     "classic": 4,
+     "classic": 5,
      "obscurity": 2,
      "accessibility": 2,
-     "source": "manual:regional-rubric",
-     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Omega beat 期頂點，Gyöngyhajú lány 所在；L10 萬→2；beat 流行",
      "rarity": "uncommon"
     },
-    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Omega beat 期頂點，Gyöngyhajú lány 所在；L10 萬→2；beat 流行"
+    "note": "全池稽核 audit-20261102（方案 C）：匈牙利 beat 頂點；聽眾 10.8 萬疑含單曲錯配→3；國際共識不足｜L=107950"
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -2222,22 +2223,23 @@
    },
    "ratings": {
     "classic": 4,
-    "obscurity": 5,
+    "obscurity": 3,
     "accessibility": 2,
     "listeners": 27,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
     "previous": {
-     "classic": 2,
-     "obscurity": 3,
-     "accessibility": 4,
-     "source": "manual:regional-rubric",
-     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "classic": 4,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：保加利亞搖滾經典團代表作之一；L27 無串流→5；搖滾",
      "rarity": "uncommon"
     },
-    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：保加利亞搖滾經典團代表作之一；L27 無串流→5；搖滾"
+    "note": "全池稽核 audit-20261102（方案 C）：Balkanton 國營廠，保加利亞搖滾經典團代表作，非私壓；非拉丁字母掛名，listeners 疑拆名錯配，不套下限，照錨點給 3｜L=27"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,

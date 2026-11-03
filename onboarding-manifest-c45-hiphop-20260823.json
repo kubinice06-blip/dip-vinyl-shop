@@ -31,13 +31,21 @@
       },
       "rarity": "uncommon",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "把 rap 從派對叫陣推向都市社會寫實的公認起點：標題曲 2002 年首年即入選國家錄音登記（史上第一筆嘻哈錄音），專輯收入《1001 Albums You Must Hear Before You Die》，四十年來仍是嘻哈正典的入口。",
-        "evidenceUrls": [
-          "https://en.wikipedia.org/wiki/The_Message_(Grandmaster_Flash_and_the_Furious_Five_song)",
-          "https://en.wikipedia.org/wiki/The_Message_(Grandmaster_Flash_and_the_Furious_Five_album)"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。單曲為正典，專輯本身非歷代榜核心",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "把 rap 從派對叫陣推向都市社會寫實的公認起點：標題曲 2002 年首年即入選國家錄音登記（史上第一筆嘻哈錄音），專輯收入《1001 Albums You Must Hear Before You Die》，四十年來仍是嘻哈正典的入口。",
+          "evidenceUrls": [
+            "https://en.wikipedia.org/wiki/The_Message_(Grandmaster_Flash_and_the_Furious_Five_song)",
+            "https://en.wikipedia.org/wiki/The_Message_(Grandmaster_Flash_and_the_Furious_Five_album)"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "1982 年 10 月由 Sugar Hill Records 發行，錄於紐澤西 Englewood 的 Sweet Mountain 錄音室，Sylvia Robinson 與 Clifton「Jiggs」Chase 掌製作。標題曲由 Duke Bootee（Edward Fletcher）與 Melle Mel 在 1980 年紐約地鐵大罷工後寫成，貝斯線走得極慢、編曲刻意留白，把敘事推到最前面；〈Scorpio〉則是純粹的 electro 合成器路線。2002 年國家錄音登記首年收錄，是名單上第一筆嘻哈錄音。",
@@ -1302,15 +1310,24 @@
         "visuallyVerified": true
       },
       "ratings": {
-        "classic": 5,
+        "classic": 4,
         "obscurity": 2,
         "accessibility": 1,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-23T20:26:16Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；1992 年《Village Voice》Pazz & Jop 年度第一，1993 年成為首個奪得葛萊美最佳新人的嘻哈團體並得最佳 Rap 團體演出，美國四白金、Billboard 200 第 7 名，跨榜單與獎項的長期地位明確。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：Pazz&Jop 1992 首位、Grammy，但非嘻哈領域人人必提；經典度4",
+        "previous": {
+          "classic": 5,
+          "obscurity": 2,
+          "accessibility": 1,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-23T20:26:16Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；1992 年《Village Voice》Pazz & Jop 年度第一，1993 年成為首個奪得葛萊美最佳新人的嘻哈團體並得最佳 Rap 團體演出，美國四白金、Billboard 200 第 7 名，跨榜單與獎項的長期地位明確。",
+          "rarity": "rare"
+        }
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -1582,13 +1599,21 @@
       },
       "rarity": "rare",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "跨來源長期共識足列西岸嘻哈史核心：發行時 The Source 4.5/5、XXL 事後給滿級 XXL 評分、Hip Hop Connection 列十年百大第 10，商業上六白金／780 萬張，〈Forgot About Dre〉拿下 2001 年葛萊美最佳團體 Rap 演出；製作者本人為 2016 年搖滾名人堂入選者與葛萊美年度製作人，該碟的鼓與弦樂編制成為此後二十年的西岸範本。",
-        "evidenceUrls": [
-          "https://en.wikipedia.org/wiki/2001_(Dr._Dre_album)",
-          "https://en.wikipedia.org/wiki/Dr._Dre"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。西岸嘻哈代表作，殿堂級是 The Chronic",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "跨來源長期共識足列西岸嘻哈史核心：發行時 The Source 4.5/5、XXL 事後給滿級 XXL 評分、Hip Hop Connection 列十年百大第 10，商業上六白金／780 萬張，〈Forgot About Dre〉拿下 2001 年葛萊美最佳團體 Rap 演出；製作者本人為 2016 年搖滾名人堂入選者與葛萊美年度製作人，該碟的鼓與弦樂編制成為此後二十年的西岸範本。",
+          "evidenceUrls": [
+            "https://en.wikipedia.org/wiki/2001_(Dr._Dre_album)",
+            "https://en.wikipedia.org/wiki/Dr._Dre"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "原定叫《Chronic 2000》，因商標爭執一路改成《Chronic 2001: No Seeds》，最後只剩下數字，封面那片大麻葉是舊名留下的殘影。1999 年 11 月 16 日 Aftermath 發行，Dre 與 Mel-Man 共同製作：取樣大幅減少，改用 Scott Storch 的鋼琴與弦樂、Mike Elizondo 的貝斯，Dre 自己守著鼓機，把 G-funk 換成乾淨的樂手編制與大量策略性的留白。首週 516,000 張、Billboard 200 第 2 名（輸給 Korn《Issues》），R&B 榜冠軍，美國六白金。",
@@ -3593,15 +3618,24 @@
         "visuallyVerified": true
       },
       "ratings": {
-        "classic": 5,
+        "classic": 4,
         "obscurity": 2,
         "accessibility": 2,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-23T20:26:16Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Billboard 200 冠軍蟬聯兩週、全美四百萬張，入圍首屆葛萊美最佳 Rap 專輯；快速和聲式 rap 由此定型，對後來的三連音唱法有直接血緣。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：中西部饒舌代表作、葛萊美單曲；非跨來源正典",
+        "previous": {
+          "classic": 5,
+          "obscurity": 2,
+          "accessibility": 2,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-23T20:26:16Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Billboard 200 冠軍蟬聯兩週、全美四百萬張，入圍首屆葛萊美最佳 Rap 專輯；快速和聲式 rap 由此定型，對後來的三連音唱法有直接血緣。",
+          "rarity": "uncommon"
+        }
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -7290,15 +7324,24 @@
         "note": "原批次圖為串流替代美術（黑豹臥於紅調壁爐前、上方掛畫），非 1996 實體盤封面。上游成因已查明：cover.json 走的是 release-group 層 https://coverartarchive.org/release-group/1b965c4f-679c-475b-830a-277be7f92f30/front，而該 RG 在 MB 只掛了一筆 2014-09-11 US 重發 (release 37395dab)，CAA 便回該重發的串流替代美術。改取 release 層 24d6b0b0-b0c2-4f9f-a492-7a4cc2660874；經 MB 查核該 release 為 Hard Core / 1996-11-12 / US / Official / barcode 075679273321，即 Undeas-Big Beat 1996 實體原盤。取回原圖 1429x1411 JPEG，已用 Read 工具實看確認為 Lil' Kim 本人趴在白熊毯上、左側粉紅直排 HARD CORE 書名、上方粉紅花體 Lil' Kim 的 1996 美術，並依 covers/ 既有慣例縮至長邊 250px (250x247, 24.7KB) 覆寫 covers/Lil-Kim__Hard-Core.jpg，覆寫後再實看確認一次無誤。舊檔備份於 fix/OLD-Lil-Kim__Hard-Core.jpg。"
       },
       "ratings": {
-        "classic": 5,
+        "classic": 4,
         "obscurity": 2,
         "accessibility": 2,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-23T20:26:16Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Notorious B.I.G. 掛執行製作的個人首作，Billboard 200 第十一名、RIAA 雙白金，被公認是女性 MC 把情慾自主寫成主線的起點；boom bap 底盤入耳不難。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：Lil' Kim 首作、代表作，女性饒舌重要作品，但非領域人人必提；經典5→4",
+        "previous": {
+          "classic": 5,
+          "obscurity": 2,
+          "accessibility": 2,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-23T20:26:16Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Notorious B.I.G. 掛執行製作的個人首作，Billboard 200 第十一名、RIAA 雙白金，被公認是女性 MC 把情慾自主寫成主線的起點；boom bap 底盤入耳不難。",
+          "rarity": "uncommon"
+        }
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -7625,15 +7668,24 @@
         "visuallyVerified": true
       },
       "ratings": {
-        "classic": 4,
-        "obscurity": 4,
+        "classic": 3,
+        "obscurity": 3,
         "accessibility": 2,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-23T20:26:16Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；西岸女性 MC 的 1990s 起點，Ice Cube 與 Sir Jinx 製作、R&B 榜第五名，Christgau 給 A−；曲式與咬字都在常規範圍。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：女性西岸饒舌首作，Ice Cube 製作｜L=12566",
+        "previous": {
+          "classic": 4,
+          "obscurity": 4,
+          "accessibility": 2,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-23T20:26:16Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；西岸女性 MC 的 1990s 起點，Ice Cube 與 Sir Jinx 製作、R&B 榜第五名，Christgau 給 A−；曲式與咬字都在常規範圍。",
+          "rarity": "rare"
+        }
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -8841,15 +8893,24 @@
         "visuallyVerified": true
       },
       "ratings": {
-        "classic": 5,
+        "classic": 4,
         "obscurity": 3,
-        "accessibility": 3,
+        "accessibility": 2,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-23T20:26:16Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；被視為嘻哈敘事型概念專輯的基準點，Christgau 給 A 並稱其為最接近真正 rock opera 的作品，Spin 9/10、Pitchfork 8.7、RS Album Guide 4.5/5 跨來源一致推崇。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：嘻哈概念專輯邪典名作，非領域必提；敘事式易入耳",
+        "previous": {
+          "classic": 5,
+          "obscurity": 3,
+          "accessibility": 3,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-23T20:26:16Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；被視為嘻哈敘事型概念專輯的基準點，Christgau 給 A 並稱其為最接近真正 rock opera 的作品，Spin 9/10、Pitchfork 8.7、RS Album Guide 4.5/5 跨來源一致推崇。",
+          "rarity": "epic"
+        }
       },
-      "rarity": "epic",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,

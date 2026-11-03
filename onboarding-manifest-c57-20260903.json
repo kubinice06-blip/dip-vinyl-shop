@@ -1818,10 +1818,18 @@
    },
    "rarity": "epic",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。小廠LP壓量無據，非公認聖杯",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "整張碟只有四首歌，一面兩首，慢到接近一場被錄下來的儀式。四首長曲都由 Michael George Henry 所作，主唱掛 Ras Michael——Dadawah 是他的另一個名字。1974 年由牙買加 Wild Flower 發行，製作人 Lloyd Charmers 兼彈風琴、鋼琴與打擊，貝斯 Lloyd Parks。他是牙買加第一位在電台主持雷鬼節目的 Rastafari 運動成員。〈Zion Land〉的祭儀節奏被迴響拉深，以吟唱與應答為主。",
@@ -2161,23 +2169,24 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 5,
+    "classic": 4,
     "obscurity": 3,
-    "accessibility": 3,
+    "accessibility": 2,
     "listeners": 26191,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
     "previous": {
      "classic": 5,
      "obscurity": 3,
-     "accessibility": 4,
-     "source": "manual:depth-rubric",
-     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "accessibility": 3,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：原壓 500 張的傳奇 dub、考古再版廣傳；L26k 流通高；重 dub 器樂",
      "rarity": "epic"
     },
-    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：原壓 500 張的傳奇 dub、考古再版廣傳；L26k 流通高；重 dub 器樂"
+    "note": "全池稽核 audit-20261102（方案 C）：roots dub重要作；dub入耳照錨點2｜L=26191"
    },
-   "rarity": "epic",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2442,23 +2451,24 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 5,
+    "classic": 4,
     "obscurity": 4,
     "accessibility": 3,
     "listeners": 5079,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
     "previous": {
-     "classic": 4,
+     "classic": 5,
      "obscurity": 4,
-     "accessibility": 2,
-     "source": "manual:depth-rubric",
-     "checkedAt": "2026-08-31T00:00:00.000Z",
-     "rarity": "uncommon"
+     "accessibility": 3,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：雷鬼 cult 傑作、Hudson 代表作；原盤小廠有串流再發→4；暗沉稀疏",
+     "rarity": "epic"
     },
-    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：雷鬼 cult 傑作、Hudson 代表作；原盤小廠有串流再發→4；暗沉稀疏"
+    "note": "全池稽核 audit-20261102（方案 C）：Larkin 稱傑作、首張雷鬼概念專輯之說，但屬 cult 名作非場景必提；經典 5→4｜L=5079"
    },
-   "rarity": "epic",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2655,23 +2665,24 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 5,
-    "obscurity": 2,
+    "classic": 4,
+    "obscurity": 3,
     "accessibility": 2,
     "listeners": 22787,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
     "previous": {
-     "classic": 4,
-     "obscurity": 3,
+     "classic": 5,
+     "obscurity": 2,
      "accessibility": 2,
-     "source": "manual:depth-rubric",
-     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：deejay 正典盤，常列雷鬼必聽；L2.3 萬→2；toasting",
      "rarity": "uncommon"
     },
-    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：deejay 正典盤，常列雷鬼必聽；L2.3 萬→2；toasting"
+    "note": "全池稽核 audit-20261102（方案 C）：deejay 名作，但 Screaming Target 才是代表；L=22787 依錨點3｜L=22787"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,

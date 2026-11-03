@@ -115,10 +115,18 @@
    },
    "rarity": "epic",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。2019 Octave Lab CD 正式再發；L=1",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "同一個團名分成兩支：一支去了紐約，另一支留在日本錄下益田。錄音是 1976 年 6 月 5 日的島根縣益田市民體育館，唱片 1978 年才出，Aketa's Disk 的 AD-6。四個人：松風鉱一中音薩克斯、明田川荘之鋼琴、山崎弘一貝斯、宮坂高史鼓；製作欄上與兩位樂手並列的是「益田ジャズ・クラブ」。碟上只有三首：Coltrane 的〈Impressions〉、Cole Porter 的〈I Love You〉，與明田川寫的〈斎〉。",
@@ -241,19 +249,20 @@
    "ratings": {
     "classic": 4,
     "obscurity": 5,
-    "accessibility": 5,
+    "accessibility": 4,
     "listeners": 0,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
     "previous": {
-     "classic": 2,
-     "obscurity": 4,
-     "accessibility": 4,
-     "source": "manual:depth-rubric",
-     "checkedAt": "2026-08-31T00:00:00.000Z",
-     "rarity": "uncommon"
+     "classic": 4,
+     "obscurity": 5,
+     "accessibility": 5,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：吉沢元治貝斯獨奏代表作，間章製作、P.S.F. 再版→4；L0 無串流→5；無伴奏貝斯斷片",
+     "rarity": "legendary"
     },
-    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：吉沢元治貝斯獨奏代表作，間章製作、P.S.F. 再版→4；L0 無串流→5；無伴奏貝斯斷片"
+    "note": "全池稽核 audit-20261102（方案 C）：日本即興貝斯獨奏里程碑（ALM／間章製作）；自由即興獨奏→4。聽眾 0 視同缺值；小廠無串流→5｜L=0"
    },
    "rarity": "legendary",
    "apexAssessment": {

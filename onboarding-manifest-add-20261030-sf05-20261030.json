@@ -33,24 +33,24 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-30 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 5,
+    "classic": 4,
     "obscurity": 3,
     "accessibility": 1,
     "listeners": 3187,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
-    "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L 1,000–4,999 → ≥3，L=3187）2→3",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "note": "全池稽核 audit-20261102（方案 C）：首張創作、星光大道出身代表作；聽眾3187→下限3｜L=3187",
     "previous": {
      "classic": 5,
-     "obscurity": 2,
+     "obscurity": 3,
      "accessibility": 1,
-     "source": "manual:rerate-20261101",
-     "checkedAt": "2026-11-01T00:00:00Z",
-     "note": "三軸重評（RUBRIC 2026-11-01）：金曲最佳新人＋流行類 6 項入圍，〈身騎白馬〉為時代代表曲；華語主流流通",
-     "rarity": "uncommon"
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L 1,000–4,999 → ≥3，L=3187）2→3",
+     "rarity": "rare"
     }
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,

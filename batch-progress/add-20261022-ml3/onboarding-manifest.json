@@ -1261,23 +1261,23 @@
    },
    "ratings": {
     "classic": 4,
-    "obscurity": 5,
+    "obscurity": 3,
     "accessibility": 3,
     "listeners": 36,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
-    "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽非 ready → 5，L=36）3→5",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "note": "全池稽核 audit-20261102（方案 C）：疑錯配：Lex Records 發行、全串流，盤名撇號導致聽眾數低；冷門度照錨點 3｜L=36",
     "previous": {
      "classic": 4,
-     "obscurity": 3,
+     "obscurity": 5,
      "accessibility": 3,
-     "source": "manual:rerate-20261101",
-     "checkedAt": "2026-11-01T00:00:00Z",
-     "note": "三軸重評（RUBRIC 2026-11-01）：兩人合作代表作、評價高；Lex 獨立廠正規發行；取樣爵士 boom-bap 夾短劇",
-     "rarity": "uncommon"
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽非 ready → 5，L=36）3→5",
+     "rarity": "epic"
     }
    },
-   "rarity": "epic",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,

@@ -27,23 +27,24 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 5,
-    "obscurity": 2,
+    "classic": 4,
+    "obscurity": 3,
     "accessibility": 3,
     "listeners": 30462,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
     "previous": {
-     "classic": 4,
-     "obscurity": 3,
+     "classic": 5,
+     "obscurity": 2,
      "accessibility": 3,
-     "source": "worker:/album-rating",
-     "checkedAt": "2026-08-31T00:00:00.000Z",
-     "rarity": "uncommon"
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Bandwagon 十年代表作，2010 Jazz Critics Poll 年度第一等多榜首；L30k；現代鋼琴三重奏",
+     "rarity": "epic"
     },
-    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Bandwagon 十年代表作，2010 Jazz Critics Poll 年度第一等多榜首；L30k；現代鋼琴三重奏"
+    "note": "全池稽核 audit-20261102（方案 C）：Moran 三重奏代表作，2010 爵士樂評榜首，但非史上核心；聽眾3萬→3｜L=30462"
    },
-   "rarity": "epic",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2344,23 +2345,24 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 5,
+    "classic": 4,
     "obscurity": 3,
     "accessibility": 4,
     "listeners": 1420,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
     "previous": {
-     "classic": 4,
-     "obscurity": 5,
+     "classic": 5,
+     "obscurity": 3,
      "accessibility": 4,
-     "source": "worker:/album-rating",
-     "checkedAt": "2026-08-31T00:00:00.000Z",
-     "rarity": "epic"
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：2013 NPR／DownBeat 評論榜首，晚期里程碑／L1420 下限3／開放式集體即興",
+     "rarity": "legendary"
     },
-    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：2013 NPR／DownBeat 評論榜首，晚期里程碑／L1420 下限3／開放式集體即興"
+    "note": "全池稽核 audit-20261102（方案 C）：晚期現場佳作評價高，但非生涯代表作級→4；1420聽眾下限3｜L=1420"
    },
-   "rarity": "legendary",
+   "rarity": "epic",
    "apexAssessment": {
     "eligible": false,
     "tier": null,

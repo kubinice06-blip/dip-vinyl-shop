@@ -33,21 +33,21 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 4,
+    "classic": 5,
     "obscurity": 3,
     "accessibility": 5,
     "listeners": null,
-    "source": "manual:rerate-20261101",
-    "checkedAt": "2026-11-01T00:00:00Z",
-    "note": "三軸重評（RUBRIC 2026-11-01）：Lachenmann 全套四重奏權威錄音、Gran Torso 改寫四重奏技法；Kairos 正規；噪音式器樂具體音樂",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "note": "全池稽核 audit-20261102（方案 C）：器樂具體音樂；Strad 稱難以超越的參考錄音→經典 5",
     "previous": {
-     "classic": 3,
-     "obscurity": 4,
+     "classic": 4,
+     "obscurity": 3,
      "accessibility": 5,
-     "source": "manual:classical-rubric",
-     "checkedAt": "2026-10-23T09:21:53Z",
-     "note": "機器基線 undefined/undefined/undefined（Last.fm listeners 查無）；主線：古典錨點制（§0.7）：經典＝錄音層地位（該作代表錄音4／有明確地位3）；冷門＝專門廠牌當代室內樂錄音，愛樂者領域4、小廠或單一版本學術領域5；硬蕊＝20 世紀無調前衛5、序列主義經典作4",
-     "rarity": "epic"
+     "source": "manual:rerate-20261101",
+     "checkedAt": "2026-11-01T00:00:00Z",
+     "note": "三軸重評（RUBRIC 2026-11-01）：Lachenmann 全套四重奏權威錄音、Gran Torso 改寫四重奏技法；Kairos 正規；噪音式器樂具體音樂",
+     "rarity": "legendary"
     }
    },
    "rarity": "legendary",
@@ -118,22 +118,22 @@
    "ratings": {
     "classic": 3,
     "obscurity": 3,
-    "accessibility": 5,
+    "accessibility": 4,
     "listeners": null,
-    "source": "manual:rerate-20261101",
-    "checkedAt": "2026-11-01T00:00:00Z",
-    "note": "三軸重評（RUBRIC 2026-11-01）：首演團隊錄 Sciarrino 晚期四重奏，非唯一參考版；Kairos 正規；泛音氣聲微分音",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "note": "全池稽核 audit-20261102（方案 C）：Sciarrino 氣音、延伸技法，極弱聲→4；Kairos 正規",
     "previous": {
      "classic": 3,
-     "obscurity": 4,
+     "obscurity": 3,
      "accessibility": 5,
-     "source": "manual:classical-rubric",
-     "checkedAt": "2026-10-23T09:21:53Z",
-     "note": "機器基線 undefined/undefined/undefined（Last.fm listeners 查無）；主線：古典錨點制（§0.7）：經典＝錄音層地位（該作代表錄音4／有明確地位3）；冷門＝專門廠牌當代室內樂錄音，愛樂者領域4、小廠或單一版本學術領域5；硬蕊＝20 世紀無調前衛5、序列主義經典作4",
+     "source": "manual:rerate-20261101",
+     "checkedAt": "2026-11-01T00:00:00Z",
+     "note": "三軸重評（RUBRIC 2026-11-01）：首演團隊錄 Sciarrino 晚期四重奏，非唯一參考版；Kairos 正規；泛音氣聲微分音",
      "rarity": "epic"
     }
    },
-   "rarity": "epic",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -282,23 +282,23 @@
    },
    "ratings": {
     "classic": 4,
-    "obscurity": 5,
+    "obscurity": 3,
     "accessibility": 4,
     "listeners": 2,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
-    "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽非 ready → 5，L=2）3→5",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "note": "全池稽核 audit-20261102（方案 C）：Montaigne（Naïve）正規古典廠，listeners 2 為古典命名錯配；非遺珠｜L=2",
     "previous": {
      "classic": 4,
-     "obscurity": 3,
+     "obscurity": 5,
      "accessibility": 4,
-     "source": "manual:rerate-20261101",
-     "checkedAt": "2026-11-01T00:00:00Z",
-     "note": "三軸重評（RUBRIC 2026-11-01）：Arditti 的 Berio 四重奏全集權威錄音；Montaigne 正規；序列到晚期，無調弦樂",
-     "rarity": "epic"
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽非 ready → 5，L=2）3→5",
+     "rarity": "legendary"
     }
    },
-   "rarity": "legendary",
+   "rarity": "epic",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -685,24 +685,24 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 5,
-    "obscurity": 2,
+    "classic": 4,
+    "obscurity": 3,
     "accessibility": 4,
     "listeners": 6,
-    "source": "manual:rerate-20261101",
-    "checkedAt": "2026-11-01T00:00:00Z",
-    "note": "三軸重評（RUBRIC 2026-11-01）：Sony Ligeti Edition 權威系列首卷、Arditti 為 Ligeti 四重奏標準版；大廠流通；無調機械質地",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "note": "全池稽核 audit-20261102（方案 C）：Ligeti 四重奏參考錄音；聽眾6疑錯配（Sony 大廠、盤名拆分），不套下限，給3｜L=6",
     "previous": {
-     "classic": 4,
-     "obscurity": 4,
+     "classic": 5,
+     "obscurity": 2,
      "accessibility": 4,
-     "source": "manual:classical-rubric",
-     "checkedAt": "2026-10-23T09:21:53Z",
-     "note": "機器基線 3/5/3（Last.fm listeners 6）；主線：古典錨點制（§0.7）：經典＝錄音層地位（該作代表錄音4／有明確地位3）；冷門＝專門廠牌當代室內樂錄音，愛樂者領域4、小廠或單一版本學術領域5；硬蕊＝20 世紀無調前衛5、序列主義經典作4",
-     "rarity": "epic"
+     "source": "manual:rerate-20261101",
+     "checkedAt": "2026-11-01T00:00:00Z",
+     "note": "三軸重評（RUBRIC 2026-11-01）：Sony Ligeti Edition 權威系列首卷、Arditti 為 Ligeti 四重奏標準版；大廠流通；無調機械質地",
+     "rarity": "legendary"
     }
    },
-   "rarity": "legendary",
+   "rarity": "epic",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1266,22 +1266,22 @@
    "ratings": {
     "classic": 4,
     "obscurity": 4,
-    "accessibility": 5,
+    "accessibility": 4,
     "listeners": 28,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
-    "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽 ready → ≥4，L=28）3→4",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "note": "全池稽核 audit-20261102（方案 C）：Sciarrino極弱聲擴展技法代表盤；安靜細微屬4非5；L28有串流→4｜L=28",
     "previous": {
      "classic": 4,
-     "obscurity": 3,
+     "obscurity": 4,
      "accessibility": 5,
-     "source": "manual:rerate-20261101",
-     "checkedAt": "2026-11-01T00:00:00Z",
-     "note": "三軸重評（RUBRIC 2026-11-01）：Sciarrino 室內樂肖像盤，Kairos 核心目錄；正規小廠有串流；極弱音延伸技法",
-     "rarity": "epic"
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽 ready → ≥4，L=28）3→4",
+     "rarity": "legendary"
     }
    },
-   "rarity": "legendary",
+   "rarity": "epic",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1352,22 +1352,22 @@
    "ratings": {
     "classic": 3,
     "obscurity": 5,
-    "accessibility": 5,
+    "accessibility": 4,
     "listeners": 2,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
-    "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽非 ready → 5，L=2）3→5",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "note": "全池稽核 audit-20261102（方案 C）：Ferneyhough弦樂＋Bone Alphabet，新複雜；Funérailles相對內斂，強度1；L2無串流→5｜L=2",
     "previous": {
      "classic": 3,
-     "obscurity": 3,
+     "obscurity": 5,
      "accessibility": 5,
-     "source": "manual:rerate-20261101",
-     "checkedAt": "2026-11-01T00:00:00Z",
-     "note": "三軸重評（RUBRIC 2026-11-01）：Ferneyhough 晚期作品集，非首選；Stradivarius 正規發行；新複雜主義",
-     "rarity": "epic"
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽非 ready → 5，L=2）3→5",
+     "rarity": "legendary"
     }
    },
-   "rarity": "legendary",
+   "rarity": "epic",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1760,24 +1760,24 @@
     "visuallyVerified": true
    },
    "ratings": {
-    "classic": 4,
-    "obscurity": 5,
+    "classic": 3,
+    "obscurity": 4,
     "accessibility": 5,
     "listeners": 1,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
-    "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽非 ready → 5，L=1）3→5",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "note": "全池稽核 audit-20261102（方案 C）：Saunders 首張肖像盤，雜音／極弱聲響當代作品→5，但無單盤極端評述。聽眾 1 疑錯配（Kairos 有串流）→4｜L=1",
     "previous": {
      "classic": 4,
-     "obscurity": 3,
+     "obscurity": 5,
      "accessibility": 5,
-     "source": "manual:rerate-20261101",
-     "checkedAt": "2026-11-01T00:00:00Z",
-     "note": "三軸重評（RUBRIC 2026-11-01）：Saunders 首張肖像盤；Kairos 正規發行；噪音質地、極端力度",
-     "rarity": "epic"
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽非 ready → 5，L=1）3→5",
+     "rarity": "legendary"
     }
    },
-   "rarity": "legendary",
+   "rarity": "epic",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1840,22 +1840,22 @@
    "ratings": {
     "classic": 4,
     "obscurity": 3,
-    "accessibility": 5,
+    "accessibility": 4,
     "listeners": null,
-    "source": "manual:rerate-20261101",
-    "checkedAt": "2026-11-01T00:00:00Z",
-    "note": "三軸重評（RUBRIC 2026-11-01）：Furrer 代表作《Aria》肖像盤；Kairos 正規發行；微弱噪音質地",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "note": "全池稽核 audit-20261102（方案 C）：Furrer碎裂靜默音響、Kairos代表盤；難但偏內省，非極端噪音",
     "previous": {
-     "classic": 3,
-     "obscurity": 4,
+     "classic": 4,
+     "obscurity": 3,
      "accessibility": 5,
-     "source": "manual:classical-rubric",
-     "checkedAt": "2026-10-23T09:21:53Z",
-     "note": "機器基線 undefined/undefined/undefined（Last.fm listeners 查無）；主線：古典錨點制（§0.7）：經典＝錄音層地位（該作代表錄音4／有明確地位3）；冷門＝專門廠牌當代室內樂錄音，愛樂者領域4、小廠或單一版本學術領域5；硬蕊＝20 世紀無調前衛5、序列主義經典作4",
-     "rarity": "epic"
+     "source": "manual:rerate-20261101",
+     "checkedAt": "2026-11-01T00:00:00Z",
+     "note": "三軸重評（RUBRIC 2026-11-01）：Furrer 代表作《Aria》肖像盤；Kairos 正規發行；微弱噪音質地",
+     "rarity": "legendary"
     }
    },
-   "rarity": "legendary",
+   "rarity": "epic",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2005,20 +2005,20 @@
    },
    "ratings": {
     "classic": 5,
-    "obscurity": 2,
+    "obscurity": 4,
     "accessibility": 4,
     "listeners": 63,
-    "source": "manual:rerate-20261101",
-    "checkedAt": "2026-11-01T00:00:00Z",
-    "note": "三軸重評（RUBRIC 2026-11-01）：DG 20/21 的 Berio 全套 Sequenza，公認標準版、獲獎；DG 國際流通；無調獨奏",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "note": "全池稽核 audit-20261102（方案 C）：DG 20/21 名套；聽眾 63＋試聽 ready→下限 4；擴展技法無調 4｜L=63",
     "previous": {
-     "classic": 4,
-     "obscurity": 4,
+     "classic": 5,
+     "obscurity": 2,
      "accessibility": 4,
-     "source": "manual:classical-rubric",
-     "checkedAt": "2026-10-23T09:21:53Z",
-     "note": "機器基線 3/5/3（Last.fm listeners 63）；主線：古典錨點制（§0.7）：經典＝錄音層地位（該作代表錄音4／有明確地位3）；冷門＝專門廠牌當代室內樂錄音，愛樂者領域4、小廠或單一版本學術領域5；硬蕊＝20 世紀無調前衛5、序列主義經典作4",
-     "rarity": "epic"
+     "source": "manual:rerate-20261101",
+     "checkedAt": "2026-11-01T00:00:00Z",
+     "note": "三軸重評（RUBRIC 2026-11-01）：DG 20/21 的 Berio 全套 Sequenza，公認標準版、獲獎；DG 國際流通；無調獨奏",
+     "rarity": "legendary"
     }
    },
    "rarity": "legendary",

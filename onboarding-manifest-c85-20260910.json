@@ -191,10 +191,18 @@
    },
    "rarity": "rare",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。小廠／自發盤、聽眾<300，但壓量未見數百張以下的確據，也非收藏圈公認聖杯；只到 5",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "編號欄記了兩種寫法，註記欄說第一種在書脊、第二種在圓標，刻紋裡又是第三種。書脊那串是 CHADLP 010、圓標是 CHAD LP 010，刻紋上蝕的則是 CHALP 0010。公司欄把工序拆成三處：錄音在 Channel One、混音在 King Tubby's Studio、母帶在倫敦的 Utopia Studios。混音欄掛 Scientist，伴奏欄掛 The Roots Radics。條目另在 A6 與 B2 兩個曲位上掛了 Papa Tullo。",
@@ -993,10 +1001,18 @@
    },
    "rarity": "common",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。L2有效，但壓量無據、無收藏圈聖杯地位依據；屬5星冷門，不到7",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "註記欄整句只有一行：Reggae vocal LP. UK original。其餘欄位一樣薄：credit 只有兩條，製作與編曲都掛 Lloyd Charmers；廠牌欄寫 Body Music (2)，編號 SYLVIA 01。英文維基百科的 Sylvia Tella 條目說，她的職涯始於 Black Beautiful Circus——替 Boney M. 現場伴唱的樂團——該團解散後她轉為獨唱，起初就在 Lloyd Charmers 的指導下錄音。",
@@ -1588,28 +1604,37 @@
     "discogsReleaseId": "2349736"
    },
    "ratings": {
-    "classic": 4,
+    "classic": 3,
     "obscurity": 5,
     "accessibility": 2,
     "listeners": 5,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
     "previous": {
-     "classic": 2,
-     "obscurity": 4,
-     "accessibility": 4,
-     "source": "manual:depth-rubric",
-     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "classic": 4,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Well Pack Band 唯一專輯、Winston Edwards 製作；聽眾5、無試聽→5；dub（原4過高）",
      "rarity": "uncommon"
     },
-    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Well Pack Band 唯一專輯、Winston Edwards 製作；聽眾5、無試聽→5；dub（原4過高）"
+    "note": "全池稽核 audit-20261102（方案 C）：Winston Edwards 自營 Studio 16 小廠英國 dub 盤，無再發；L=5｜L=5"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。L5有效，Studio 16 dub LP，壓量無據、無聖杯名聲依據；5星冷門",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "兩面的刻紋都從同一個字開始：STRIKE。完整的兩串是 STRIKE - A WE - 0011 - A1 與 STRIKE - B1 WE - 0011 - B1。credit 欄只有兩條：Performer 掛樂團自己，製作與內頁文字同掛 Winston Edwards。條目的註記另說，圓標印的是 45 轉，實際卻是 33 又三分之一轉。八個曲位從〈New Approach To Workers〉排到〈Stop Victimisation〉。",
@@ -2150,10 +2175,18 @@
    },
    "rarity": "rare",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。小廠CD非私壓，壓量無據",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "MB 的 genre 欄給這張碟掛了七個標籤，從 dub 一路排到 deep techno 與 hip house。Discogs master 的 styles 欄則列了六個。黑膠條目的曲目表停在〈Super Nova〉，CD 那側後面還接著〈Edutainment〉與幾首帶括號註記的混音與續篇。黑膠那份的 credit 欄只有一條，掛的是 Gaffa (2)。〈Grow More Dub〉〈Dubutainment〉在曲目表上，MB 登錄的曲長 3:20 到 5:03。",
@@ -2301,10 +2334,18 @@
    },
    "rarity": "rare",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。極小廠dub，壓量無據，非聖杯",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "黑膠條目的註記欄第一句是獻詞，寫給一個名叫 Ashanti 的女兒。同一欄接著抄了一段引文，出處在 credit 欄記成 Chief Seattle。那份 credit 欄分得很細，Rhythm Section 掛 The Disciples (2)，Vocals [Sung] 與 Written-By 掛 Dayjah。〈Storm Clouds〉〈Ashanti Dub〉〈New Beginnings〉在曲目表上，三份紀錄的曲長欄都空著。",
@@ -3075,10 +3116,18 @@
    },
    "rarity": "rare",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。L11有效，Jah Shaka Music LP，壓量無據、無聖杯依據；5星",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "同一家廠牌的清單上，1992 年這筆的掛名寫 Willie，MB 的正名是 Willi Williams。MB 那邊把 Willie Williams 收成同一個實體的別名。條目的 credit 欄把作曲、編曲、混音與製作四格全記給 Jah Shaka；公司欄的 Recorded At 與 Mixed At 都填 Remaximum Studios。〈Natty With a Cause〉在曲目表上，MB 登錄的曲長 2:54 到 4:19。",
@@ -3134,23 +3183,24 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 4,
+    "classic": 3,
     "obscurity": 5,
     "accessibility": 2,
     "listeners": 163,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
     "previous": {
      "classic": 4,
-     "obscurity": 4,
+     "obscurity": 5,
      "accessibility": 2,
-     "source": "manual:depth-rubric",
-     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：A&O 英國 steppers dub 強作；聽眾163、無試聽→5；dub",
      "rarity": "uncommon"
     },
-    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：A&O 英國 steppers dub 強作；聽眾163、無試聽→5；dub"
+    "note": "全池稽核 audit-20261102（方案 C）：團體自營廠但 Bandcamp 有目錄數位版，冷門上限4｜L=163"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -3307,10 +3357,18 @@
    },
    "rarity": "rare",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。小廠／自發盤、聽眾<300，但壓量未見數百張以下的確據，也非收藏圈公認聖杯；只到 5",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "MB 那筆 CD 的曲名欄上，最後三軌寫的都是 Untitled。有名字的那八個曲位則全帶 Dub 或 Version 字樣，從〈Dub Up (Melodica)〉到〈Prophetic Dub〉。條目的註記欄與 Discogs 廠牌頁都說 Youth Sound Records 是 WAU! Mr. Modo 的子廠牌，Executive-Producer 欄寫的則是 Mr Modo。錄音與混音兩欄都填 St. Marks Studio。",

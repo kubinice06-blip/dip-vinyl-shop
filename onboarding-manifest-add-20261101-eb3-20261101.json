@@ -361,22 +361,22 @@
    "ratings": {
     "classic": 5,
     "obscurity": 3,
-    "accessibility": 4,
+    "accessibility": 3,
     "listeners": 1092,
-    "source": "manual:rerate-20261101",
-    "checkedAt": "2026-11-01T00:00:00Z",
-    "note": "三軸重評（RUBRIC 2026-11-01）：Polish Jazz Vol.11 正典名盤、波蘭前衛爵士里程碑；Muza 國營；25 分鐘前衛長曲",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "note": "全池稽核 audit-20261102（方案 C）：Polish Jazz Vol.11 重要盤，但非波蘭爵士首位（Komeda Astigmatic）；聽眾1092→冷門≥3；modal 後 bop 帶前衛，硬蕊3｜L=1092",
     "previous": {
-     "classic": 4,
+     "classic": 5,
      "obscurity": 3,
-     "accessibility": 3,
-     "source": "manual:regional-rubric",
-     "checkedAt": "2026-11-01T11:56:00Z",
-     "note": "機器基線 3/5/3（Last.fm listeners 1092）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 地區錨點制：Polish Jazz／Muza 國營廠正規發行、Warner 重發進串流，屬「該語言圈一線作品、圈外幾乎無人知」；Last.fm 1092 偏英語圈不採；經典 4：波蘭爵士史公認代表作（研究稿：重發系列與樂史定位）",
-     "rarity": "uncommon"
+     "accessibility": 4,
+     "source": "manual:rerate-20261101",
+     "checkedAt": "2026-11-01T00:00:00Z",
+     "note": "三軸重評（RUBRIC 2026-11-01）：Polish Jazz Vol.11 正典名盤、波蘭前衛爵士里程碑；Muza 國營；25 分鐘前衛長曲",
+     "rarity": "legendary"
     }
    },
-   "rarity": "legendary",
+   "rarity": "epic",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2525,10 +2525,18 @@
    },
    "rarity": "uncommon",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。L186有效，但壓量無據、無收藏圈聖杯地位依據；屬5星冷門，不到7",
     "evidenceUrls": [],
-    "reason": "已評估：classic 3、obscurity 4、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：classic 3、obscurity 4、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "團名掛著「弦」，提琴卻只有一把。String Connection 在 1981 年 2 月成軍於波茲南，那個「弦」就是團長 Krzesimir Dębski 的小提琴。Skowron 彈 Hammond，Krzysztof Ścierański 彈電貝斯，Olejniczak 吹薩克斯風。1982 年 5 月 17 日起，他們在波茲南的廣播錄音室連錄兩天，最知名的一首是〈Cantabile in h-moll〉。整張氣質歡快，這團因此被戲稱為「雅痞爵士」。",
@@ -3177,10 +3185,18 @@
    },
    "rarity": "legendary",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。Alma Art限量1000張，超過數百張門檻；非聖杯級",
     "evidenceUrls": [],
-    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 18），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 18），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "黑色緞面封套，繫著一條印了名字的緞帶。Andrzej Przybielski 從比得哥什的傳統爵士團起步吹小號，60 年代中期後轉向前衛。這張是 1984 年 Alma Art 的限量 LP，常規版 800 張，另有 200 張附藝術套封。五人全用原聲樂器：他吹小號與富魯格號，Korecki 吹中音薩克斯風與長笛，再加鋼琴、低音提琴與鼓。六首分屬四位作者，〈Krzykousty〉〈Free Bop Towarzyski〉與標題曲出自他手。風格歸在自由即興與前衛爵士。",

@@ -782,15 +782,24 @@
         "visuallyVerified": true
       },
       "ratings": {
-        "classic": 4,
+        "classic": 3,
         "obscurity": 3,
         "accessibility": 2,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-23T13:58:32Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；中華音樂人交流協會年度十大專輯，隔年華語音樂傳媒大獎四項提名並獲十大華語唱片，是何欣穗公認的代表作；台灣樂迷領域，編曲流暢不難入耳。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：台灣獨立女聲佳作｜L=4747",
+        "previous": {
+          "classic": 4,
+          "obscurity": 3,
+          "accessibility": 2,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-23T13:58:32Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；中華音樂人交流協會年度十大專輯，隔年華語音樂傳媒大獎四項提名並獲十大華語唱片，是何欣穗公認的代表作；台灣樂迷領域，編曲流暢不難入耳。",
+          "rarity": "rare"
+        }
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,

@@ -22,22 +22,39 @@
       },
       "ratings": {
         "classic": 3,
-        "obscurity": 5,
-        "accessibility": 5,
+        "obscurity": 4,
+        "accessibility": 4,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-22T02:55:01Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；1978年Victor（KVX-1039）的合成器妖怪音響設計盤，日本電子／實驗地下圈公認的特色品，一般玩家幾乎撞不到，且全碟無旋律可依附。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：查無可信前衛／噪音依據，異端不成立；試聽 ready，冷門度 5→4，硬蕊 5→4",
+        "previous": {
+          "classic": 3,
+          "obscurity": 5,
+          "accessibility": 5,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-22T02:55:01Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；1978年Victor（KVX-1039）的合成器妖怪音響設計盤，日本電子／實驗地下圈公認的特色品，一般玩家幾乎撞不到，且全碟無旋律可依附。",
+          "rarity": "legendary"
+        }
       },
-      "rarity": "legendary",
+      "rarity": "uncommon",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "heresy",
-        "reason": "十首皆為依水木茂畫作而作的合成器音響設計，沒有節拍與旋律骨架，Victor原盤與2010年復刻皆歸類電子／musique concrète、實驗，明確不以悅耳為目的，符合異端門檻。",
-        "evidenceUrls": [
-          "https://music.apple.com/jp/album/yokai-genso-kaisetsu-e-shigeru-mizuki/369124054",
-          "https://musicbrainz.org/release-group/6a197692-c6a0-4a31-83cf-6cd85f50eb5f"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原異端未達該軸 7 星，降為一般卡。冷門實驗作，無「史上最難入耳之一」公認依據；listeners 缺值",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "heresy",
+          "reason": "十首皆為依水木茂畫作而作的合成器音響設計，沒有節拍與旋律骨架，Victor原盤與2010年復刻皆歸類電子／musique concrète、實驗，明確不以悅耳為目的，符合異端門檻。",
+          "evidenceUrls": [
+            "https://music.apple.com/jp/album/yokai-genso-kaisetsu-e-shigeru-mizuki/369124054",
+            "https://musicbrainz.org/release-group/6a197692-c6a0-4a31-83cf-6cd85f50eb5f"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "《鬼太郎》作者水木茂繪製各種日本傳統妖怪，森下登喜彦再依畫作以電子合成器設計聲音，共同完成這張「妖怪音響學」唱片。除了河童、座敷童，還收錄一反木綿、ぬらりひょん、砂かけ婆等台灣較陌生的妖怪，每首製作耗時超過五十小時。內容並非以悅耳為目的，而是聲響設計的百鬼夜行，一場「用耳朵見鬼」的體驗；內頁插畫全出自水木之手。",
@@ -1798,21 +1815,38 @@
       "ratings": {
         "classic": 5,
         "obscurity": 2,
-        "accessibility": 1,
+        "accessibility": 2,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-22T02:55:01Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；hard bop 成形期的核心文獻，Wikipedia 記其錄音「helped establish the hard bop style」、hard bop 條目直指此風格一般被視為源自 Blakey 領軍的 Jazz Messengers；Blue Note BLP 1518 是長銷正典，爵士入門就會遇到，〈The Preacher〉旋律通俗好入耳。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：硬咆勃奠基作，爵士史必提；主流 bop 硬蕊 1 偏低改 2",
+        "previous": {
+          "classic": 5,
+          "obscurity": 2,
+          "accessibility": 1,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-22T02:55:01Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；hard bop 成形期的核心文獻，Wikipedia 記其錄音「helped establish the hard bop style」、hard bop 條目直指此風格一般被視為源自 Blakey 領軍的 Jazz Messengers；Blue Note BLP 1518 是長銷正典，爵士入門就會遇到，〈The Preacher〉旋律通俗好入耳。",
+          "rarity": "rare"
+        }
       },
-      "rarity": "rare",
+      "rarity": "uncommon",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "跨來源長期共識視本次錄音為 hard bop 成形的核心文獻：Blue Note 1500 系列長銷正典、Silver 首張 12 吋，且 Jazz Messengers 由此起家，符合殿堂「該領域史上核心」標準。",
-        "evidenceUrls": [
-          "https://en.wikipedia.org/wiki/Horace_Silver_and_the_Jazz_Messengers",
-          "https://en.wikipedia.org/wiki/Hard_bop"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。硬咆勃奠基作屬爵士類型內 5，綜合歷代榜罕收",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "跨來源長期共識視本次錄音為 hard bop 成形的核心文獻：Blue Note 1500 系列長銷正典、Silver 首張 12 吋，且 Jazz Messengers 由此起家，符合殿堂「該領域史上核心」標準。",
+          "evidenceUrls": [
+            "https://en.wikipedia.org/wiki/Horace_Silver_and_the_Jazz_Messengers",
+            "https://en.wikipedia.org/wiki/Hard_bop"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "hard bop 的誕生之作。當 bebop 把爵士門檻拉得太高，兩股勢力起而對抗：一是 Miles Davis 的 cool，放慢節奏追求優美；另一是 Horace Silver 與 Art Blakey 領銜的 fire——保留快節奏，但旋律更通俗、讓人跟著跺腳歡呼。本張收錄替 hard bop 定調的〈The Preacher〉與〈Doodlin'〉，也是 The Jazz Messengers 草創期的首張專輯；這支樂團日後猶如爵士界的「變種人學校」，孕育出 Wayne Shorter、Lee Morgan 等大師。",

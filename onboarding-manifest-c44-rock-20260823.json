@@ -1771,13 +1771,22 @@
       "ratings": {
         "classic": 5,
         "obscurity": 2,
-        "accessibility": 3,
+        "accessibility": 2,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-23T20:20:34Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；跨來源公認的第一張真正的重金屬專輯，同名曲被 Rolling Stone 選為史上最偉大的重金屬歌曲、也常被指為第一首 doom metal；緩速、粗礪、以三全音為軸的聲響對一般聽眾仍有門檻。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：重金屬起點，1001、RS500 收錄；硬蕊度 3→2",
+        "previous": {
+          "classic": 5,
+          "obscurity": 2,
+          "accessibility": 3,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-23T20:20:34Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；跨來源公認的第一張真正的重金屬專輯，同名曲被 Rolling Stone 選為史上最偉大的重金屬歌曲、也常被指為第一首 doom metal；緩速、粗礪、以三全音為軸的聲響對一般聽眾仍有門檻。",
+          "rarity": "epic"
+        }
       },
-      "rarity": "epic",
+      "rarity": "uncommon",
       "apexAssessment": {
         "eligible": true,
         "tier": "hall",
@@ -2311,14 +2320,23 @@
       },
       "ratings": {
         "classic": 5,
-        "obscurity": 3,
-        "accessibility": 3,
+        "obscurity": 2,
+        "accessibility": 2,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-23T20:20:34Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；被跨來源列為搖滾史最佳首作之一、公認的 proto-punk 直接源頭；當年銷量慘澹且形象兩極，粗糙的演奏與生猛錄音使入耳偏高。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：RS500、1001 收錄，原型龐克必提；Mercury 正規盤冷門 3→2，硬蕊 3→2｜L=387154",
+        "previous": {
+          "classic": 5,
+          "obscurity": 3,
+          "accessibility": 3,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-23T20:20:34Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；被跨來源列為搖滾史最佳首作之一、公認的 proto-punk 直接源頭；當年銷量慘澹且形象兩極，粗糙的演奏與生猛錄音使入耳偏高。",
+          "rarity": "epic"
+        }
       },
-      "rarity": "epic",
+      "rarity": "uncommon",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -3788,15 +3806,24 @@
         "visuallyVerified": true
       },
       "ratings": {
-        "classic": 4,
-        "obscurity": 3,
+        "classic": 5,
+        "obscurity": 2,
         "accessibility": 3,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-23T20:20:34Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；《Rolling Stone》「50 Greatest Prog Rock Albums of All Time」第 19 名，是義大利 prog 唯一進入英美主流榜單前段的作品；五首長曲以器樂段落為主，需要一點耐心。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：義大利前衛搖滾場景核心盤，PFM 早期代表作｜L=51664",
+        "previous": {
+          "classic": 4,
+          "obscurity": 3,
+          "accessibility": 3,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-23T20:20:34Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；《Rolling Stone》「50 Greatest Prog Rock Albums of All Time」第 19 名，是義大利 prog 唯一進入英美主流榜單前段的作品；五首長曲以器樂段落為主，需要一點耐心。",
+          "rarity": "uncommon"
+        }
       },
-      "rarity": "uncommon",
+      "rarity": "epic",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -4195,14 +4222,23 @@
       },
       "ratings": {
         "classic": 4,
-        "obscurity": 4,
-        "accessibility": 5,
+        "obscurity": 2,
+        "accessibility": 4,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-23T20:20:34Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；krautrock 最激進的首作，AllMusic 四顆半、Pitchfork 9.0，被指影響 Radiohead《OK Computer》；三段拼貼沒有可依附的曲式，屬前衛與極端結構那一格。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：Krautrock拼貼首作，Polydor發行場景必提；拼貼噪音段多但有歌曲，4",
+        "previous": {
+          "classic": 4,
+          "obscurity": 4,
+          "accessibility": 5,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-23T20:20:34Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；krautrock 最激進的首作，AllMusic 四顆半、Pitchfork 9.0，被指影響 Radiohead《OK Computer》；三段拼貼沒有可依附的曲式，屬前衛與極端結構那一格。",
+          "rarity": "legendary"
+        }
       },
-      "rarity": "legendary",
+      "rarity": "epic",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -4880,13 +4916,21 @@
       },
       "rarity": "legendary",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "電子搖滾與 industrial 的起點性文獻：《Rolling Stone》五百大、Pitchfork 七〇年代最佳專輯名單長期收錄，維基條目亦記載其對 Springsteen、Spacemen 3 等跨世代藝人的直接影響，屬該領域史上核心。",
-        "evidenceUrls": [
-          "https://en.wikipedia.org/wiki/Suicide_(1977_album)",
-          "https://en.wikipedia.org/wiki/Rolling_Stone%27s_500_Greatest_Albums_of_All_Time"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。synth-punk 源頭、1001 收，但屬樂評圈聖典，圈外知名度不足",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "電子搖滾與 industrial 的起點性文獻：《Rolling Stone》五百大、Pitchfork 七〇年代最佳專輯名單長期收錄，維基條目亦記載其對 Springsteen、Spacemen 3 等跨世代藝人的直接影響，屬該領域史上核心。",
+          "evidenceUrls": [
+            "https://en.wikipedia.org/wiki/Suicide_(1977_album)",
+            "https://en.wikipedia.org/wiki/Rolling_Stone%27s_500_Greatest_Albums_of_All_Time"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "Alan Vega 的人聲配 Martin Rev 的電子琴與鼓機，1977 年 12 月由 Red Star 發行，Craig Leon 與 Marty Thau 製作，在紐約 Ultima Sound 四天錄完。Leon 把替雷鬼樂手工作時看來的手法搬進來，用 Eventide 數位延遲替人聲加回音。〈Frankie Teardrop〉十分鐘的殺人敘事，歌詞是混音階段才由 Vega 改定的。當年美國樂評一面倒惡評，唱片也沒進榜。",
@@ -5074,15 +5118,24 @@
         "visuallyVerified": true
       },
       "ratings": {
-        "classic": 3,
-        "obscurity": 4,
+        "classic": 4,
+        "obscurity": 2,
         "accessibility": 2,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-23T20:20:34Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；紐約 punk 傳進倫敦 1977 的實體管道，曲子本身評價高（Uncut 滿分、Pitchfork 8.4），但原盤混音的長年爭議壓低了它的正典地位，UK 榜也只停在 55 名。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：Johnny Thunders 樂團唯一錄音室盤，紐約龐克場景代表作；混音粗糙但結構直白｜L=8808",
+        "previous": {
+          "classic": 3,
+          "obscurity": 4,
+          "accessibility": 2,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-23T20:20:34Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；紐約 punk 傳進倫敦 1977 的實體管道，曲子本身評價高（Uncut 滿分、Pitchfork 8.4），但原盤混音的長年爭議壓低了它的正典地位，UK 榜也只停在 55 名。",
+          "rarity": "common"
+        }
       },
-      "rarity": "common",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -5278,13 +5331,22 @@
       "ratings": {
         "classic": 5,
         "obscurity": 2,
-        "accessibility": 3,
+        "accessibility": 2,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-23T20:20:34Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Eno 製作的 new wave 開創性首作，《Rolling Stone》2003 年五百大第 447 名，UK 榜 12 名；節拍刻意僵硬、人聲處理怪異，入耳需要一點適應。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：RS 500 第 252（2020）、1001 Albums、RS 百大首作，new wave 必提｜L=412624",
+        "previous": {
+          "classic": 5,
+          "obscurity": 2,
+          "accessibility": 3,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-23T20:20:34Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Eno 製作的 new wave 開創性首作，《Rolling Stone》2003 年五百大第 447 名，UK 榜 12 名；節拍刻意僵硬、人聲處理怪異，入耳需要一點適應。",
+          "rarity": "epic"
+        }
       },
-      "rarity": "epic",
+      "rarity": "uncommon",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -5421,13 +5483,21 @@
       },
       "rarity": "uncommon",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "punk 正典的定義性文獻，四十年來在英美專業評選中持續位居前段，且同時獲得樂評個人年代票選與大型榜單的認可，屬該領域史上核心無疑義。",
-        "evidenceUrls": [
-          "https://en.wikipedia.org/wiki/The_Clash_(album)",
-          "https://en.wikipedia.org/wiki/Rolling_Stone%27s_500_Greatest_Albums_of_All_Time"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。龐克奠基盤，但跨類型正典地位由 London Calling 承擔",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "punk 正典的定義性文獻，四十年來在英美專業評選中持續位居前段，且同時獲得樂評個人年代票選與大型榜單的認可，屬該領域史上核心無疑義。",
+          "evidenceUrls": [
+            "https://en.wikipedia.org/wiki/The_Clash_(album)",
+            "https://en.wikipedia.org/wiki/Rolling_Stone%27s_500_Greatest_Albums_of_All_Time"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "1977 年 2 月在 CBS 三號棚用連續三個週末錄完再混音，製作是樂團自己的現場音控 Mickey Foote，總成本四千英鎊。鼓手 Terry Chimes 錄完就走，封套上被寫成 Tory Crimes。十四軌裡〈White Riot〉用的是簽約前在 Beaconsfield 錄的 demo 版本，〈Police & Thieves〉則是六分鐘的雷鬼翻唱。美國要到 1979 年才發行且抽換四曲——卡片採 1977 年 CBS 英版十四軌原盤。",
@@ -6824,12 +6894,21 @@
       },
       "ratings": {
         "classic": 5,
-        "obscurity": 3,
+        "obscurity": 2,
         "accessibility": 3,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-23T20:20:34Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；公認是 Judas Priest 定型、也是 heavy metal 脫離 blues-rock 的關鍵一張，英文維基評為金屬史上最重要的作品之一；曲式多變、近八分鐘的〈Victim of Changes〉與鋼琴曲〈Epitaph〉並存，入耳需要一點耐性。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：重金屬奠基盤之一，但跨來源人人必提程度不及 Paranoid 等；知名樂團 3→2",
+        "previous": {
+          "classic": 5,
+          "obscurity": 3,
+          "accessibility": 3,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-23T20:20:34Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；公認是 Judas Priest 定型、也是 heavy metal 脫離 blues-rock 的關鍵一張，英文維基評為金屬史上最重要的作品之一；曲式多變、近八分鐘的〈Victim of Changes〉與鋼琴曲〈Epitaph〉並存，入耳需要一點耐性。",
+          "rarity": "epic"
+        }
       },
       "rarity": "epic",
       "apexAssessment": {
@@ -7293,14 +7372,23 @@
       },
       "ratings": {
         "classic": 5,
-        "obscurity": 3,
-        "accessibility": 2,
+        "obscurity": 2,
+        "accessibility": 3,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-23T20:20:34Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；開場〈Fast as a Shark〉的雙大鼓被跨來源認定為 speed／thrash metal 的先聲（早於 Metallica 與 Slayer 首作），是德國金屬公認的開創文獻；旋律與副歌仍在傳統重金屬框架內，入耳不難。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：speed metal 先驅、德國金屬里程碑，但非全金屬領域人人必提級",
+        "previous": {
+          "classic": 5,
+          "obscurity": 3,
+          "accessibility": 2,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-23T20:20:34Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；開場〈Fast as a Shark〉的雙大鼓被跨來源認定為 speed／thrash metal 的先聲（早於 Metallica 與 Slayer 首作），是德國金屬公認的開創文獻；旋律與副歌仍在傳統重金屬框架內，入耳不難。",
+          "rarity": "uncommon"
+        }
       },
-      "rarity": "uncommon",
+      "rarity": "epic",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -7563,14 +7651,23 @@
       },
       "ratings": {
         "classic": 4,
-        "obscurity": 2,
-        "accessibility": 1,
+        "obscurity": 1,
+        "accessibility": 2,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-23T20:20:34Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；樂團唯一的 Billboard 200 冠軍與美國逾六百萬銷量，是 hair metal 商業高峰的定點；Bob Rock 的製作把鉤子做得極清楚，入耳門檻極低。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：華麗金屬巔峰期暢銷代表作，入門常客｜L=874426",
+        "previous": {
+          "classic": 4,
+          "obscurity": 2,
+          "accessibility": 1,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-23T20:20:34Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；樂團唯一的 Billboard 200 冠軍與美國逾六百萬銷量，是 hair metal 商業高峰的定點；Bob Rock 的製作把鉤子做得極清楚，入耳門檻極低。",
+          "rarity": "common"
+        }
       },
-      "rarity": "common",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -7698,14 +7795,23 @@
       },
       "ratings": {
         "classic": 4,
-        "obscurity": 3,
-        "accessibility": 1,
+        "obscurity": 2,
+        "accessibility": 2,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-23T20:20:34Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Ratt 最成功的一張與 Sunset Strip 場景商業化的樣本（美國三白金、Metal Hammer 十大 hair metal 名單）；〈Round and Round〉靠 MTV 廣為流通，入耳門檻極低。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：華麗金屬代表作，多白金，藝人代表盤｜L=341141",
+        "previous": {
+          "classic": 4,
+          "obscurity": 3,
+          "accessibility": 1,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-23T20:20:34Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Ratt 最成功的一張與 Sunset Strip 場景商業化的樣本（美國三白金、Metal Hammer 十大 hair metal 名單）；〈Round and Round〉靠 MTV 廣為流通，入耳門檻極低。",
+          "rarity": "common"
+        }
       },
-      "rarity": "common",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -7968,15 +8074,24 @@
         "visuallyVerified": true
       },
       "ratings": {
-        "classic": 5,
-        "obscurity": 4,
+        "classic": 4,
+        "obscurity": 3,
         "accessibility": 4,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-23T20:20:34Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；2017 年《滾石》史上百大金屬專輯第 78 名，並被 Ian Christe 的《Sound of the Beast》列入史上 25 張最佳金屬專輯，是 thrash 走向前衛的公認分水嶺；不協和和弦與變拍讓入耳吃力。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：技術鞭擊重要作，但樂團正典是Nothingface；Noise正規廠→3",
+        "previous": {
+          "classic": 5,
+          "obscurity": 4,
+          "accessibility": 4,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-23T20:20:34Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；2017 年《滾石》史上百大金屬專輯第 78 名，並被 Ian Christe 的《Sound of the Beast》列入史上 25 張最佳金屬專輯，是 thrash 走向前衛的公認分水嶺；不協和和弦與變拍讓入耳吃力。",
+          "rarity": "legendary"
+        }
       },
-      "rarity": "legendary",
+      "rarity": "epic",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -8102,23 +8217,40 @@
         "visuallyVerified": true
       },
       "ratings": {
-        "classic": 5,
+        "classic": 4,
         "obscurity": 2,
         "accessibility": 3,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-23T20:20:34Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；英文維基 groove metal 條目直接記為使該曲風定型並普及的專輯，Guitar World 百大吉他專輯第 11 名、IGN 史上最具影響力金屬專輯第 19 名；節奏錯位與吼腔使入耳需要一點適應。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：groove metal 起點但正典首推《Vulgar Display》；經典度 5→4、殿堂不成立",
+        "previous": {
+          "classic": 5,
+          "obscurity": 2,
+          "accessibility": 3,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-23T20:20:34Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；英文維基 groove metal 條目直接記為使該曲風定型並普及的專輯，Guitar World 百大吉他專輯第 11 名、IGN 史上最具影響力金屬專輯第 19 名；節奏錯位與吼腔使入耳需要一點適應。",
+          "rarity": "epic"
+        }
       },
-      "rarity": "epic",
+      "rarity": "uncommon",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "groove metal 的成形被跨來源歸到本作（維基 groove metal 條目、Guitar World 百大吉他專輯第 11 名、IGN 影響力第 19 名），且長期被列為 90 年代金屬定義性作品，足列該領域史上核心。",
-        "evidenceUrls": [
-          "https://en.wikipedia.org/wiki/Cowboys_from_Hell",
-          "https://en.wikipedia.org/wiki/Groove_metal"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。groove metal 起點，綜合榜罕收",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "groove metal 的成形被跨來源歸到本作（維基 groove metal 條目、Guitar World 百大吉他專輯第 11 名、IGN 影響力第 19 名），且長期被列為 90 年代金屬定義性作品，足列該領域史上核心。",
+          "evidenceUrls": [
+            "https://en.wikipedia.org/wiki/Cowboys_from_Hell",
+            "https://en.wikipedia.org/wiki/Groove_metal"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "Pantera 的第五張，卻是他們的大廠首作——被拒絕二十八次之後，Atco 的 Mark Ross 因颶風 Hugo 困在德州而去看了一場演出，當晚就打電話回公司要求簽下。1989 年底到 1990 年 4 月在德州 Pantego Sound 錄音，Terry Date 製作。前四張的 glam 痕跡被清乾淨，Dimebag Darrell 把重音撥到拍點之外，做出錯位的節奏語法；〈Cemetery Gates〉則留下大跨距的清腔對唱。groove metal 的成形通常就從這裡算起。",
@@ -8174,22 +8306,39 @@
       },
       "ratings": {
         "classic": 5,
-        "obscurity": 3,
+        "obscurity": 2,
         "accessibility": 4,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-23T20:20:34Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；英文維基 death metal 條目引《舊金山紀事報》稱其為「第一張真正的 death metal 唱片」，AllMusic 的 Rivadavia 亦認為它才把曲風核心要素定下來；低吼與快速小調 riff 使入耳門檻高。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：死亡金屬開山里程碑，但屬場景里程碑層級，未達跨來源正典；冷門度 3 改 2",
+        "previous": {
+          "classic": 5,
+          "obscurity": 3,
+          "accessibility": 4,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-23T20:20:34Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；英文維基 death metal 條目引《舊金山紀事報》稱其為「第一張真正的 death metal 唱片」，AllMusic 的 Rivadavia 亦認為它才把曲風核心要素定下來；低吼與快速小調 riff 使入耳門檻高。",
+          "rarity": "legendary"
+        }
       },
       "rarity": "legendary",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "跨來源長期共識把 death metal 的成形歸到本作（維基 death metal 條目引《舊金山紀事報》「第一張真正的 death metal 唱片」、AllMusic 稱 Schuldiner 為曲風之父），是該領域無可替代的開山文獻。",
-        "evidenceUrls": [
-          "https://en.wikipedia.org/wiki/Scream_Bloody_Gore",
-          "https://en.wikipedia.org/wiki/Death_metal"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。死亡金屬開山作，屬類型里程碑 5 星",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "跨來源長期共識把 death metal 的成形歸到本作（維基 death metal 條目引《舊金山紀事報》「第一張真正的 death metal 唱片」、AllMusic 稱 Schuldiner 為曲風之父），是該領域無可替代的開山文獻。",
+          "evidenceUrls": [
+            "https://en.wikipedia.org/wiki/Scream_Bloody_Gore",
+            "https://en.wikipedia.org/wiki/Death_metal"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "Chuck Schuldiner 一人包辦吉他、貝斯與主唱，鼓手 Chris Reifert 只參與這一張。專輯錄了兩次：第一次在佛羅里達 American Recording 只錄到吉他與鼓，Combat 聽完直接退件；第二次改到洛杉磯的 Music Grinder，由 Randy Burns 製作。〈Sacrificial〉的原名被廠牌以怕惹上 PMRC 為由砍短。AllMusic 的 Rivadavia 認為 Possessed 的《Seven Churches》還卡在 thrash 與 death metal 之間，本作才把後者的核心要素定下來。",
@@ -8311,15 +8460,24 @@
         "visuallyVerified": true
       },
       "ratings": {
-        "classic": 5,
-        "obscurity": 3,
+        "classic": 4,
+        "obscurity": 2,
         "accessibility": 4,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-23T20:20:34Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；第一張掛主流大廠的 death metal 專輯，2017 年《滾石》史上百大金屬專輯第 75 名，並在 2003 年前為美國銷量最高的 death metal 專輯；低吼與密集變速使入耳門檻高。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：死金首張大廠發行、重要作品，但場景地標是 Altars of Madness；經典 5→4、冷門 3→2",
+        "previous": {
+          "classic": 5,
+          "obscurity": 3,
+          "accessibility": 4,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-23T20:20:34Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；第一張掛主流大廠的 death metal 專輯，2017 年《滾石》史上百大金屬專輯第 75 名，並在 2003 年前為美國銷量最高的 death metal 專輯；低吼與密集變速使入耳門檻高。",
+          "rarity": "legendary"
+        }
       },
-      "rarity": "legendary",
+      "rarity": "epic",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -8379,22 +8537,39 @@
       },
       "ratings": {
         "classic": 5,
-        "obscurity": 3,
-        "accessibility": 3,
+        "obscurity": 2,
+        "accessibility": 4,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-23T20:20:34Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；哥德堡 melodic death metal 的開山名盤，2005 年入選 Decibel 名人堂（史上第二張）、Rock Hard 五百大第 300 名、2017 年《滾石》百大金屬第 79 名；旋律線清楚但嘶吼與速度仍有門檻。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：旋律死亡金屬定義之作，Decibel 名人堂；嘶吼極端金屬硬蕊 4；Earache 正規發行冷門 2",
+        "previous": {
+          "classic": 5,
+          "obscurity": 3,
+          "accessibility": 3,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-23T20:20:34Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；哥德堡 melodic death metal 的開山名盤，2005 年入選 Decibel 名人堂（史上第二張）、Rock Hard 五百大第 300 名、2017 年《滾石》百大金屬第 79 名；旋律線清楚但嘶吼與速度仍有門檻。",
+          "rarity": "epic"
+        }
       },
-      "rarity": "epic",
+      "rarity": "legendary",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "跨來源長期共識足列該領域史上核心：Decibel 名人堂第二張入選作、《滾石》史上百大金屬專輯第 79 名、Rock Hard 五百大第 300 名，英文維基 melodic death metal 條目亦記其為該曲風最具影響力的作品之一。",
-        "evidenceUrls": [
-          "https://en.wikipedia.org/wiki/Slaughter_of_the_Soul",
-          "https://en.wikipedia.org/wiki/Melodic_death_metal"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。旋律死金定義作，類型里程碑 5",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "跨來源長期共識足列該領域史上核心：Decibel 名人堂第二張入選作、《滾石》史上百大金屬專輯第 79 名、Rock Hard 五百大第 300 名，英文維基 melodic death metal 條目亦記其為該曲風最具影響力的作品之一。",
+          "evidenceUrls": [
+            "https://en.wikipedia.org/wiki/Slaughter_of_the_Soul",
+            "https://en.wikipedia.org/wiki/Melodic_death_metal"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "1995 年 5 月到 7 月在哥德堡的 Studio Fredman 錄音，Fredrik Nordström 製作、Earache 發行，也是樂團 1996 年解散前的最後一張。前兩張的技術性與複雜編排被刻意剝掉——主唱 Tomas Lindberg 說他們要的是更直接、更粗暴。樂團為此要求 Nordström 添購 24 軌混音台，節奏吉他的音色調了三週，人聲只錄三天。〈Cold〉的獨奏請來 Andy LaRocque 客串。開場的〈Blinded by Fear〉成了往後整個 metalcore 世代反覆挪用的模板。",
@@ -8853,12 +9028,21 @@
       },
       "ratings": {
         "classic": 5,
-        "obscurity": 3,
+        "obscurity": 2,
         "accessibility": 2,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-23T20:20:34Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；被英文維基與多份樂評追認為創出歐陸 power metal 的那一張，《Loudwire》史上二十五張 power metal 名單列第三；快速雙吉他和聲配 Michael Kiske 的高音，旋律直白。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：力量金屬奠基作（Loudwire 史上第 3）；類型核心，無跨來源史上核心榜",
+        "previous": {
+          "classic": 5,
+          "obscurity": 3,
+          "accessibility": 2,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-23T20:20:34Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；被英文維基與多份樂評追認為創出歐陸 power metal 的那一張，《Loudwire》史上二十五張 power metal 名單列第三；快速雙吉他和聲配 Michael Kiske 的高音，旋律直白。",
+          "rarity": "uncommon"
+        }
       },
       "rarity": "uncommon",
       "apexAssessment": {
@@ -8929,14 +9113,22 @@
       },
       "rarity": "uncommon",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "兩份互不相干的英語金屬媒體長期名單同時把本作列為該類型史上第一，並有德國金唱片與跨國榜位佐證，足列歐陸 power metal 的史上核心。",
-        "evidenceUrls": [
-          "https://loudwire.com/top-power-metal-albums-all-time/",
-          "https://www.loudersound.com/features/the-25-greatest-power-metal-albums/3",
-          "https://en.wikipedia.org/wiki/Keeper_of_the_Seven_Keys:_Part_II"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。力量金屬類型奠基作屬 5，非跨類型正典",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "兩份互不相干的英語金屬媒體長期名單同時把本作列為該類型史上第一，並有德國金唱片與跨國榜位佐證，足列歐陸 power metal 的史上核心。",
+          "evidenceUrls": [
+            "https://loudwire.com/top-power-metal-albums-all-time/",
+            "https://www.loudersound.com/features/the-25-greatest-power-metal-albums/3",
+            "https://en.wikipedia.org/wiki/Keeper_of_the_Seven_Keys:_Part_II"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "Helloween 第三張，1988 年五、六月錄音，錄音室二十四小時運轉：Tommy Newton 顧白天、Tommy Hansen 顧夜間，直到 Noise 廠牌的 Karl Walterbach 在〈Eagle Fly Free〉試混之後把 Hansen 送回家。十三分半的標題曲是樂團最長的一首，直到 2005 年才被超過；〈Dr. Stein〉那段帶藍調味的長獨奏在全碟裡是異數。〈I Want Out〉被 Gamma Ray、Unisonic、HammerFall、Sonata Arctica 反覆翻唱。Kai Hansen 錄完就離團。",
@@ -9394,23 +9586,40 @@
       },
       "ratings": {
         "classic": 5,
-        "obscurity": 4,
+        "obscurity": 3,
         "accessibility": 4,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-23T20:20:34Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；2009 年《Terrorizer》選為 sludge 第一名，2016 年《Metal Hammer》與 2020 年《Kerrang!》的必備 sludge 名單皆收錄，2017 年《Rolling Stone》史上百大金屬專輯列第 92 名；回授開場、極慢下沉 riff 與難以辨識的嘶吼使入耳門檻高。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：sludge 場景里程碑，但非跨來源史上核心；殿堂不成立",
+        "previous": {
+          "classic": 5,
+          "obscurity": 4,
+          "accessibility": 4,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-23T20:20:34Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；2009 年《Terrorizer》選為 sludge 第一名，2016 年《Metal Hammer》與 2020 年《Kerrang!》的必備 sludge 名單皆收錄，2017 年《Rolling Stone》史上百大金屬專輯列第 92 名；回授開場、極慢下沉 riff 與難以辨識的嘶吼使入耳門檻高。",
+          "rarity": "legendary"
+        }
       },
       "rarity": "legendary",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "《Terrorizer》《Metal Hammer》《Kerrang!》三家互不相干的英語金屬媒體長期把本作列為 sludge 的定義盤或首選，並獲《Rolling Stone》史上百大金屬專輯收錄，足列該次類別的史上核心。",
-        "evidenceUrls": [
-          "https://www.loudersound.com/features/the-10-essential-sludge-metal-albums",
-          "https://www.kerrang.com/features/13-essential-sludge-records/",
-          "https://en.wikipedia.org/wiki/Take_as_Needed_for_Pain"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。sludge 場景里程碑，類型級",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "《Terrorizer》《Metal Hammer》《Kerrang!》三家互不相干的英語金屬媒體長期把本作列為 sludge 的定義盤或首選，並獲《Rolling Stone》史上百大金屬專輯收錄，足列該次類別的史上核心。",
+          "evidenceUrls": [
+            "https://www.loudersound.com/features/the-10-essential-sludge-metal-albums",
+            "https://www.kerrang.com/features/13-essential-sludge-records/",
+            "https://en.wikipedia.org/wiki/Take_as_Needed_for_Pain"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "Eyehategod 第二張，在紐奧良一棟廢棄百貨十三樓的 Studio 13 自行錄製、自行製作，1993 年由 Century Media 發行。多數曲子先放一段回授才進主題，藍調式的下沉 riff 被拖到極慢，Mike IX Williams 的嘶吼幾乎聽不出字句，Black Flag 的緩速期與 Black Sabbath 的重量在此接上。2009 年《Terrorizer》把它選為 sludge 第一名；第四軌因原標題含種族蔑稱，2013 年與 Melvins 鼓手 Dale Crover 排練後正式改名為〈White Neighbor〉。",
@@ -9465,14 +9674,23 @@
       },
       "ratings": {
         "classic": 4,
-        "obscurity": 4,
-        "accessibility": 5,
+        "obscurity": 2,
+        "accessibility": 4,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-23T20:20:34Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Sunn O))) 從純 drone 擴出管樂、女聲合唱與室內樂編制的一張，Metacritic 十六篇樂評均分 88；四首曲子共五十三分鐘、無節拍可依附，屬極端結構。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：最受推崇作，加入管弦編制，drone 給 4；聽眾缺值疑錯配，Southern Lord 主流→2",
+        "previous": {
+          "classic": 4,
+          "obscurity": 4,
+          "accessibility": 5,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-23T20:20:34Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Sunn O))) 從純 drone 擴出管樂、女聲合唱與室內樂編制的一張，Metacritic 十六篇樂評均分 88；四首曲子共五十三分鐘、無節拍可依附，屬極端結構。",
+          "rarity": "legendary"
+        }
       },
-      "rarity": "legendary",
+      "rarity": "epic",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -9880,13 +10098,21 @@
       },
       "rarity": "uncommon",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "美國另類搖滾的奠基文獻，跨來源長期共識厚實：《Rolling Stone》1983 年度最佳專輯、八〇年代百大第 8、史上五百大第 197、VH1 史上百大第 92 並收入 1001 Albums，四十年間評價未曾滑落，足列該領域史上核心。",
-        "evidenceUrls": [
-          "https://en.wikipedia.org/wiki/Murmur_(album)",
-          "https://musicbrainz.org/release-group/de790d3d-a35c-364c-a8fb-adfb73084a45"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。大學搖滾起點屬圈內聖典；同藝人留 Automatic for the People",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "美國另類搖滾的奠基文獻，跨來源長期共識厚實：《Rolling Stone》1983 年度最佳專輯、八〇年代百大第 8、史上五百大第 197、VH1 史上百大第 92 並收入 1001 Albums，四十年間評價未曾滑落，足列該領域史上核心。",
+          "evidenceUrls": [
+            "https://en.wikipedia.org/wiki/Murmur_(album)",
+            "https://musicbrainz.org/release-group/de790d3d-a35c-364c-a8fb-adfb73084a45"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "I.R.S. 原本配給的製作人 Stephen Hague 要樂團反覆重錄〈Catapult〉、又擅自加上鍵盤，四人因此要求換人，改和 Mitch Easter、Don Dixon 於 1983 年 1 至 2 月在北卡 Reflection Sound 錄音。他們以排除法工作：不放吉他獨奏、不用當時流行的合成器，鼓刻意進隔音間收音，Michael Stipe 的咬字含混到近乎不可辨。《Rolling Stone》選它為 1983 年度最佳專輯，排在 Michael Jackson《Thriller》之前。封面是一段被葛藤吞沒的鐵道棧橋。",
@@ -10209,12 +10435,21 @@
       },
       "ratings": {
         "classic": 4,
-        "obscurity": 2,
+        "obscurity": 1,
         "accessibility": 2,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-23T20:20:34Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；grunge 第一張打進美國榜前五十、也是第一張獲 RIAA 金唱片認證的專輯（早《Nevermind》兩個多月），美國三白金；重型但旋律線清楚。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：首張專輯、grunge 早期重要作，入門常客｜L=1558609",
+        "previous": {
+          "classic": 4,
+          "obscurity": 2,
+          "accessibility": 2,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-23T20:20:34Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；grunge 第一張打進美國榜前五十、也是第一張獲 RIAA 金唱片認證的專輯（早《Nevermind》兩個多月），美國三白金；重型但旋律線清楚。",
+          "rarity": "rare"
+        }
       },
       "rarity": "rare",
       "apexAssessment": {
@@ -10611,12 +10846,21 @@
       },
       "ratings": {
         "classic": 5,
-        "obscurity": 3,
+        "obscurity": 2,
         "accessibility": 2,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-23T20:20:34Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Pitchfork 給出罕見的 10.0 並列為九〇年代第 3、Metacritic 85、AllMusic 五星並收入 1001 Albums，是該團公認的分水嶺；編制厚但旋律工整。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：Pitchfork 90 年代第 3（10.0）、1001 Albums、60+ 年榜第一｜L=754737",
+        "previous": {
+          "classic": 5,
+          "obscurity": 3,
+          "accessibility": 2,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-23T20:20:34Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Pitchfork 給出罕見的 10.0 並列為九〇年代第 3、Metacritic 85、AllMusic 五星並收入 1001 Albums，是該團公認的分水嶺；編制厚但旋律工整。",
+          "rarity": "uncommon"
+        }
       },
       "rarity": "uncommon",
       "apexAssessment": {
@@ -10678,12 +10922,21 @@
       },
       "ratings": {
         "classic": 4,
-        "obscurity": 2,
+        "obscurity": 1,
         "accessibility": 2,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-23T20:20:34Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；樂團商業高峰、2006 年首張金唱片認證並收入 1001 Albums，2012 年改編成舞台音樂劇；電子節拍與木吉他的組合入耳不難。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：樂團商業與評價高峰之一，但 Soft Bulletin 更被奉為頂峰｜L=1295172",
+        "previous": {
+          "classic": 4,
+          "obscurity": 2,
+          "accessibility": 2,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-23T20:20:34Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；樂團商業高峰、2006 年首張金唱片認證並收入 1001 Albums，2012 年改編成舞台音樂劇；電子節拍與木吉他的組合入耳不難。",
+          "rarity": "rare"
+        }
       },
       "rarity": "rare",
       "apexAssessment": {
@@ -12703,13 +12956,21 @@
       },
       "rarity": "uncommon",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "英文維基〈Alternative country〉直接記載 alt-country 一詞在本作發行後才於樂評界普及、並援引學術書《101 Albums That Changed Popular Music》稱其為第一張 alt-country 專輯；專輯條目另載 RealNetworks 將其列為該曲風最重要的作品之一，且 1995 年創刊的同名雜誌取名自它。跨來源長期共識足以列為該領域史上核心。",
-        "evidenceUrls": [
-          "https://en.wikipedia.org/wiki/Alternative_country",
-          "https://en.wikipedia.org/wiki/No_Depression_(album)"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。alt-country 命名源頭，類型里程碑（5）",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "英文維基〈Alternative country〉直接記載 alt-country 一詞在本作發行後才於樂評界普及、並援引學術書《101 Albums That Changed Popular Music》稱其為第一張 alt-country 專輯；專輯條目另載 RealNetworks 將其列為該曲風最重要的作品之一，且 1995 年創刊的同名雜誌取名自它。跨來源長期共識足以列為該領域史上核心。",
+          "evidenceUrls": [
+            "https://en.wikipedia.org/wiki/Alternative_country",
+            "https://en.wikipedia.org/wiki/No_Depression_(album)"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "1990 年 1 月，來自伊利諾州 Belleville 的三人在波士頓 Roxbury 一間樂手自營的 Fort Apache South 錄了十天，總花費三千五百美元。製作人 Sean Slade 與 Paul Q. Kolderie 讓 Jay Farrar 借用 J Mascis 錄《Bug》那把 1961 年 Gibson Les Paul，power chord 因此更厚；兩人也建議把口琴部分換成踏板鋼棒吉他，並刻意用八軌、幾乎不疊軌。歌詞寫小鎮的失業、酗酒與困住的感覺，第四軌翻自 Carter Family。一年內賣掉一萬五千張。",
@@ -14314,12 +14575,21 @@
       },
       "ratings": {
         "classic": 5,
-        "obscurity": 4,
+        "obscurity": 3,
         "accessibility": 4,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-23T20:20:34Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；被樂評與樂迷共同視為第一批 black metal 唱片之一，低傳真製作本身變成後續曲風的美學要求，開創地位可跨來源查證；首刷僅一千張、素材極端，屬深度愛好者領域。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：初代黑金屬奠基作，但跨來源正典多推後續作；正規廠長期流通冷門度降為3",
+        "previous": {
+          "classic": 5,
+          "obscurity": 4,
+          "accessibility": 4,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-23T20:20:34Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；被樂評與樂迷共同視為第一批 black metal 唱片之一，低傳真製作本身變成後續曲風的美學要求，開創地位可跨來源查證；首刷僅一千張、素材極端，屬深度愛好者領域。",
+          "rarity": "legendary"
+        }
       },
       "rarity": "legendary",
       "apexAssessment": {

@@ -1395,22 +1395,23 @@
    },
    "ratings": {
     "classic": 4,
-    "obscurity": 5,
+    "obscurity": 4,
     "accessibility": 1,
     "listeners": 2,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
     "previous": {
-     "classic": 2,
+     "classic": 4,
      "obscurity": 5,
-     "accessibility": 4,
-     "source": "manual:depth-rubric",
-     "checkedAt": "2026-08-31T00:00:00.000Z",
-     "rarity": "uncommon"
+     "accessibility": 1,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：樂團唯一 70 年代專輯、收藏圈名盤；L2 且無串流→5；柔和和聲田園民謠",
+     "rarity": "rare"
     },
-    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：樂團唯一 70 年代專輯、收藏圈名盤；L2 且無串流→5；柔和和聲田園民謠"
+    "note": "全池稽核 audit-20261102（方案 C）：盤名 U+2026 刪節號、聽眾 2 疑漏抓錯配；Nepentha 為 Philips 子廠，有韓日 CD 再發｜L=2"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,

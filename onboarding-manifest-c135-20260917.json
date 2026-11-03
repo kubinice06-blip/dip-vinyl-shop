@@ -1461,20 +1461,21 @@
    },
    "ratings": {
     "classic": 2,
-    "obscurity": 5,
+    "obscurity": 3,
     "accessibility": 2,
     "listeners": 1,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
     "previous": {
-     "classic": 3,
+     "classic": 2,
      "obscurity": 5,
      "accessibility": 2,
-     "source": "worker:/album-rating",
-     "checkedAt": "2026-08-31T00:00:00.000Z",
-     "rarity": "uncommon"
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：公寓錄音續卷，史料意義；L=1 unavailable→5",
+     "rarity": "common"
     },
-    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：公寓錄音續卷，史料意義；L=1 unavailable→5"
+    "note": "全池稽核 audit-20261102（方案 C）：Blue Note 正規盤；1 聽眾係系列卷次拆名疑錯配，冷門度照錨點給 3｜L=1"
    },
    "rarity": "common",
    "apexAssessment": {

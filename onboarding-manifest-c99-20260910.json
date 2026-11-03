@@ -532,14 +532,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 5,
+    "classic": 4,
     "obscurity": 3,
     "accessibility": 2,
     "listeners": 3120,
-    "source": "manual:regional-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "manual:regional-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：遺作、葛萊美得獎，但經典地位次於 In the Heart of the Moon｜L=3120"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -674,23 +683,24 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 5,
+    "classic": 4,
     "obscurity": 3,
     "accessibility": 2,
     "listeners": 13606,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
     "previous": {
      "classic": 5,
      "obscurity": 3,
-     "accessibility": 4,
-     "source": "manual:regional-rubric",
-     "checkedAt": "2026-08-31T00:00:00.000Z",
-     "rarity": "epic"
+     "accessibility": 2,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：早期 dub 里程碑，dub 史必提；原盤小廠、廣泛再發→3；dub 易聽",
+     "rarity": "uncommon"
     },
-    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：早期 dub 里程碑，dub 史必提；原盤小廠、廣泛再發→3；dub 易聽"
+    "note": "全池稽核 audit-20261102（方案 C）：早期 dub 重要作，但地位次於 Grass Roots；經典 5→4，硬蕊 2 維持｜L=13606"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2022,23 +2032,24 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 5,
+    "classic": 4,
     "obscurity": 4,
     "accessibility": 1,
     "listeners": 64,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
     "previous": {
      "classic": 5,
-     "obscurity": 3,
-     "accessibility": 2,
-     "source": "manual:regional-rubric",
-     "checkedAt": "2026-08-31T00:00:00.000Z",
-     "rarity": "uncommon"
+     "obscurity": 4,
+     "accessibility": 1,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：寶萊塢黃金期里程碑原聲（Chingari/Kuch Toh Log）；聽眾<1k 有串流→4；電影歌曲",
+     "rarity": "rare"
     },
-    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：寶萊塢黃金期里程碑原聲（Chingari/Kuch Toh Log）；聽眾<1k 有串流→4；電影歌曲"
+    "note": "全池稽核 audit-20261102（方案 C）：RD Burman 經典電影原聲，代表作級；聽眾 64 有串流→4｜L=64"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2096,23 +2107,24 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 5,
+    "classic": 4,
     "obscurity": 4,
     "accessibility": 1,
     "listeners": 120,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
     "previous": {
      "classic": 5,
-     "obscurity": 3,
-     "accessibility": 2,
-     "source": "manual:regional-rubric",
-     "checkedAt": "2026-08-31T00:00:00.000Z",
-     "rarity": "uncommon"
+     "obscurity": 4,
+     "accessibility": 1,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Burman 里程碑原聲、寶萊塢史必提；聽眾<1k 有串流→4；電影歌曲",
+     "rarity": "rare"
     },
-    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Burman 里程碑原聲、寶萊塢史必提；聽眾<1k 有串流→4；電影歌曲"
+    "note": "全池稽核 audit-20261102（方案 C）：Burman 迷幻放克電影原聲代表作；聽眾 120 有串流→4｜L=120"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2321,20 +2333,21 @@
    },
    "ratings": {
     "classic": 5,
-    "obscurity": 4,
+    "obscurity": 3,
     "accessibility": 2,
     "listeners": 579,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
     "previous": {
      "classic": 5,
-     "obscurity": 3,
+     "obscurity": 4,
      "accessibility": 2,
-     "source": "manual:regional-rubric",
-     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：印度賣600萬張、Chaiyya Chaiyya，寶萊塢里程碑；L579有串流→下限4(疑為拆名)",
      "rarity": "uncommon"
     },
-    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：印度賣600萬張、Chaiyya Chaiyya，寶萊塢里程碑；L579有串流→下限4(疑為拆名)"
+    "note": "全池稽核 audit-20261102（方案 C）：寶萊塢配樂代表作，但 Roja 更具正典地位；579 聽眾疑拆名錯配，冷門度照錨點 3｜L=579"
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -2462,23 +2475,24 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 5,
-    "obscurity": 4,
+    "classic": 4,
+    "obscurity": 2,
     "accessibility": 2,
     "listeners": 769,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
     "previous": {
      "classic": 5,
-     "obscurity": 3,
+     "obscurity": 4,
      "accessibility": 2,
-     "source": "manual:regional-rubric",
-     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：奧斯卡/葛萊美最佳配樂；L769有串流→下限4(疑為拆名)；融合流行",
      "rarity": "uncommon"
     },
-    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：奧斯卡/葛萊美最佳配樂；L769有串流→下限4(疑為拆名)；融合流行"
+    "note": "全池稽核 audit-20261102（方案 C）：奧斯卡／葛萊美得獎，但樂評地位不到場景里程碑；769 聽眾疑錯配｜L=769"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,

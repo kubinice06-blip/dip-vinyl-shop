@@ -788,23 +788,24 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 5,
+    "classic": 4,
     "obscurity": 3,
     "accessibility": 4,
     "listeners": 31973,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
     "previous": {
      "classic": 5,
      "obscurity": 3,
-     "accessibility": 5,
-     "source": "worker:/album-rating",
-     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "accessibility": 4,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Taylor首張、前衛爵士起點；Transition小廠但廣為人知→3；不協和但仍有標準曲→4",
      "rarity": "legendary"
     },
-    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Taylor首張、前衛爵士起點；Transition小廠但廣為人知→3；不協和但仍有標準曲→4"
+    "note": "全池稽核 audit-20261102（方案 C）：首作，前衛但尚有標準曲；非殿堂｜L=31973"
    },
-   "rarity": "legendary",
+   "rarity": "epic",
    "apexAssessment": {
     "eligible": false,
     "tier": null,

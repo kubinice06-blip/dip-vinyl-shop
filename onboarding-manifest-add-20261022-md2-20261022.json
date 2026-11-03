@@ -3399,24 +3399,24 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 5,
+    "classic": 4,
     "obscurity": 3,
     "accessibility": 3,
     "listeners": 94235,
-    "source": "manual:rerate-20261101",
-    "checkedAt": "2026-11-01T00:00:00Z",
-    "note": "三軸重評（RUBRIC 2026-11-01）：Pitchfork 史上最佳 shoegaze 第36名、收入 Gimme Indie Rock；Kranky；水下失真煙幕",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "note": "全池稽核 audit-20261102（方案 C）：Pitchfork shoegaze 榜第 36、Kranky 早期要盤；場景重要作，非殿堂｜L=94235",
     "previous": {
-     "classic": 3,
+     "classic": 5,
      "obscurity": 3,
      "accessibility": 3,
-     "source": "worker /album-rating（obscurity:lastfm）",
-     "checkedAt": "2026-10-22T06:05:22Z",
-     "note": "機器基線 3/3/3（Last.fm listeners 94235）",
-     "rarity": "uncommon"
+     "source": "manual:rerate-20261101",
+     "checkedAt": "2026-11-01T00:00:00Z",
+     "note": "三軸重評（RUBRIC 2026-11-01）：Pitchfork 史上最佳 shoegaze 第36名、收入 Gimme Indie Rock；Kranky；水下失真煙幕",
+     "rarity": "epic"
     }
    },
-   "rarity": "epic",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,

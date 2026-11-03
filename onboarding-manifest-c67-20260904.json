@@ -27,23 +27,24 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 5,
+    "classic": 4,
     "obscurity": 3,
     "accessibility": 2,
     "listeners": 3604,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
     "previous": {
-     "classic": 2,
-     "obscurity": 4,
+     "classic": 5,
+     "obscurity": 3,
      "accessibility": 2,
-     "source": "manual:depth-rubric",
-     "checkedAt": "2026-08-31T00:00:00.000Z",
-     "rarity": "rare"
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Johnny's Disk cult 名盤、8 版授權再發→5；L3604→3；標準曲三重奏",
+     "rarity": "uncommon"
     },
-    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Johnny's Disk cult 名盤、8 版授權再發→5；L3604→3；標準曲三重奏"
+    "note": "全池稽核 audit-20261102（方案 C）：爵士喫茶廠 cult 名盤，Solid 授權再發；聽眾3604→3｜L=3604"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -193,10 +194,18 @@
    },
    "rarity": "uncommon",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。爵士喫茶自營原盤，但已有Solid量產CD與Studio Mule 500張復刻，不到7",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "氣仙沼的市民會館，一九七九年六月二十四日，五首曲子全是自己寫的。廠牌 Johnny's Disk、編號 JD-03，製作照井顕；片山光明（Mitsuaki Katayama）打鼓，Kichiro Sugino 彈鋼琴，Kishio Kitahara 拉貝斯，三個人各有作品，片山那兩首是〈Unknown Point〉與〈First Flight〉。2018 年 Studio Mule 的歐洲黑膠由原始母帶重製、限量 500 張，經銷 Kompakt。",
@@ -551,10 +560,18 @@
    },
    "rarity": "legendary",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。原盤收藏圈有名（739 想要），但已有 Off Note CD 與 Aguirre 黑膠兩次正式再發",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "自家編號寫的是 Ski No. 1，錄音地點在紐約的 Studio WE。1975 年 8 月 11 日錄成，Discogs 把發行方登記為樂團自己，另掛 ALM 的 AL-10。梅津和時中音薩克斯、原田依幸鋼琴兼低音單簧管，另外三位是貝斯 William Parker、小號 Ahmed Abdullah、鼓 Rashid Sinan。兩首長曲分別由原田與梅津寫，末尾接一段不到兩分鐘的短曲。2022 年比利時 Aguirre 出了黑膠復刻。",
@@ -979,10 +996,18 @@
    },
    "rarity": "legendary",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。2009 doubtmusic CD 正式再發，不到 7 星；L=16",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "B 面第二首的 credit 上多了一個人：詩人吉増剛造，職稱是朗讀。那一首是 9 分 12 秒的〈古代天文台〉，2009 年 doubtmusic 的 CD 把他的朗讀記在第五軌。1975 年錄於 Net Asahi No. 501 Studio，1976 年由 Offbeat Records 出成 ORLP-1010。沖至吹小號並包辦全碟作曲，藤川義明中音薩克斯，翠川敬基貝斯與大提琴，田中保積鼓與打擊，內頁由副島輝人執筆。這張碟至今只出過 CD，沒有黑膠復刻。",
@@ -1174,19 +1199,20 @@
    "ratings": {
     "classic": 4,
     "obscurity": 5,
-    "accessibility": 5,
+    "accessibility": 4,
     "listeners": 66,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
     "previous": {
      "classic": 4,
-     "obscurity": 4,
-     "accessibility": 4,
-     "source": "manual:depth-rubric",
-     "checkedAt": "2026-08-31T00:00:00.000Z",
-     "rarity": "epic"
+     "obscurity": 5,
+     "accessibility": 5,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：阿部薫遺作代表盤，17 位名人撰文→4；L66 無串流→5；單聲道極端獨奏",
+     "rarity": "legendary"
     },
-    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：阿部薫遺作代表盤，17 位名人撰文→4；L66 無串流→5；單聲道極端獨奏"
+    "note": "全池稽核 audit-20261102（方案 C）：無伴奏中音薩雙碟，阿部代表作之一；自由爵士獨奏照 RUBRIC→4，未到 Cecil Taylor 級共識。66 無串流→5｜L=66"
    },
    "rarity": "legendary",
    "apexAssessment": {
@@ -1609,22 +1635,23 @@
    },
    "ratings": {
     "classic": 4,
-    "obscurity": 5,
+    "obscurity": 3,
     "accessibility": 3,
     "listeners": 5,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
     "previous": {
-     "classic": 3,
-     "obscurity": 4,
-     "accessibility": 4,
-     "source": "manual:depth-rubric",
-     "checkedAt": "2026-08-31T00:00:00.000Z",
-     "rarity": "uncommon"
+     "classic": 4,
+     "obscurity": 5,
+     "accessibility": 3,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：辛島首張領班作，Whynot 出品→4；L5 無串流→5；火爆 modal 三重奏",
+     "rarity": "epic"
     },
-    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：辛島首張領班作，Whynot 出品→4；L5 無串流→5；火爆 modal 三重奏"
+    "note": "全池稽核 audit-20261102（方案 C）：拆名錯配；Whynot/Trio 正規盤，Discogs 10 版、2014 Universal SHM-CD→3；首張領銜作→4｜L=5"
    },
-   "rarity": "epic",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1697,10 +1724,18 @@
    },
    "rarity": "uncommon",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。L65有效，2019 Octave Lab 限量CD再發；不到7",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "復刻的說明記著，他是替浅川マキ打鼓時走進那家店的。Billboard Japan 的商品說明寫他的職業起點是爵士鼓手，一九六○年代中期師事富樫雅彦入行，也參加過佐藤允彦與渡辺貞夫的樂團；一九七○年代中期在アケタの店與明田川荘之意気投合、開始反覆合奏，這張碟就是那段時期的音源裡挑出來的。整張只有兩首：A 面 29 分 35 秒錄於 1978 年 3 月 20 日，B 面 26 分 50 秒錄於同年 9 月 29 日，作曲欄分別是明田川荘之與 Marcos Valle。",

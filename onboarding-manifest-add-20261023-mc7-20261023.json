@@ -2332,10 +2332,18 @@
    },
    "rarity": "uncommon",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。L170有效，但壓量無據、無收藏圈聖杯地位依據；屬5星冷門，不到7",
     "evidenceUrls": [],
-    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 170），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 170），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "化石、祖先、天擇，十一首曲名寫成演化史。倫敦 DJ Oliver Ho 1996 年在 Blueprint 出道，走部族 techno。2001 年，他 1997 年自創的 Meta 發行了這張 CD，曲目有〈Fossil〉〈The Ancestors〉〈Natural Selection〉。手冊寫明所有儀式都出自他手；2002 年又出了黑膠與德版 CD。",

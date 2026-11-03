@@ -346,10 +346,18 @@
    },
    "rarity": "rare",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。L49有效，Syzygy 小廠CD，壓量無據、無聖杯名聲；5星冷門",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "掛名只有三個字母，兩份藝人頁的本名欄都寫 Takuya Sugimoto。MusicBrainz 那一側的 disambiguation 欄寫的也是這個名字。兩份 Discogs 藝人頁互為別名，別名欄各列了八個。註記欄一句「All krafts by」把整張碟歸給同一個人，只有第 11 軌的第二部分另掛一個名字，那也是全碟唯一有共同製作掛名的一軌。錄音跨越 1995 年的春天到冬天。〈Calf Jazz〉8:21，〈Give It〉1:13，末軌 15:11。",
@@ -420,10 +428,18 @@
    },
    "rarity": "uncommon",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。L94有效，但壓量無據、無收藏圈聖杯地位依據；屬5星冷門，不到7",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "註記欄抄下的總長是七十一分二十三秒，全碟八軌。Discogs 的 Syzygy Records 條目說廠牌 1993 年由 Ken Inaoka 創立，是日本最早的獨立 techno 廠牌之一，聯絡欄留的是福岡的地址。詞曲、混音、製作三欄掛同一個名字，只有第 8 軌另掛一項人聲。錄音分兩次，一次在 1995 年五月，一次在 1996 年三月。〈Riding On The Greeny Chair〉12:01，〈Hoo Poe〉12:16，〈Zipper〉5:50。",
@@ -493,10 +509,18 @@
    },
    "rarity": "epic",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。L23有效，Syzygy 小廠CD，壓量無據、無聖杯名聲；5星冷門",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "大阪那間 mon-puta HOUSE，錄音從一九九五年春天做到冬天。同一家廠牌下一個編號的註記欄，印的是同一間工作室與同一段期間。credit 欄除了兩位封套設計，只剩註記欄那句「All krafts by」。廠牌與編號只有 Discogs 登記，MusicBrainz 那筆的 label-info 欄是空的。十二軌裡有十軌落在 4:45 到 6:39 之間，越出的只有 8:02 與 7:45。〈Wigwag〉5:23，〈Pleochroism Box〉5:43。",
@@ -549,26 +573,35 @@
    "ratings": {
     "classic": 3,
     "obscurity": 5,
-    "accessibility": 4,
+    "accessibility": 3,
     "listeners": 106,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
     "previous": {
      "classic": 3,
-     "obscurity": 4,
+     "obscurity": 5,
      "accessibility": 4,
-     "source": "manual:depth-rubric",
-     "checkedAt": "2026-08-31T00:00:00.000Z",
-     "rarity": "uncommon"
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Syzygy 跨十年錄音集；聽眾106、無試聽→5；聲音資料不足、硬蕊度沿用",
+     "rarity": "epic"
     },
-    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Syzygy 跨十年錄音集；聽眾106、無試聽→5；聲音資料不足、硬蕊度沿用"
+    "note": "全池稽核 audit-20261102（方案 C）：Syzygy 小廠 CD、無再發；listeners 106｜L=106"
    },
-   "rarity": "epic",
+   "rarity": "uncommon",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。L106有效，但2022 Camisole 有正式2LP再發，壓量無據；不到7",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "十軌各自標了錄音年份，最早的那一軌落在一九八七年。其餘標的是一九九三、一九九四、一九九五與一九九六，註記欄說那是錄音年，地點在東京。詞曲（註明全碟）、混音、製作三欄掛同一個名字；攝影與封套設計兩欄也掛同一個人，Hiroshi Miyamoto 包下了影像那一側。二〇二二年由法國的 Camisole Records 重新出版，同一批曲子換了順序。〈Graviton〉6:21，〈Clear Away〉5:55，同名曲〈Photon〉只有 2:07。",
@@ -1301,28 +1334,37 @@
     "discogsReleaseId": "1073359"
    },
    "ratings": {
-    "classic": 3,
+    "classic": 2,
     "obscurity": 5,
     "accessibility": 3,
     "listeners": 10,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
     "previous": {
-     "classic": 2,
-     "obscurity": 4,
-     "accessibility": 4,
-     "source": "manual:depth-rubric",
-     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 3,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Frogman 晶片音樂作品；聽眾10、無試聽→5；chiptune 實驗短曲",
      "rarity": "uncommon"
     },
-    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Frogman 晶片音樂作品；聽眾10、無試聽→5；chiptune 實驗短曲"
+    "note": "全池稽核 audit-20261102（方案 C）：Frogman 小廠單版 CD、無串流；10 聽眾可信｜L=10"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。日本小廠CD，壓量無據，非收藏聖杯",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "前十五軌全部落在一分三十七秒到三分二十七秒之間，後三軌都超過五分半。那三軌各是一位外部改編者的版本，改的分別是第 4、14、11 軌。編號中間的 bf 對應廠牌的 Break-Fast 系列，1998 年 6 月的系列首發是一張十三軌的合輯，母帶與本張掛同一位工程師。掛名欄登錄的是西里爾的 Андрей Зуев，封面實印的是 Andrei Zueff。Discogs 的藝人條目記他 1967 年 12 月 23 日生於新西伯利亞。",
@@ -1391,10 +1433,18 @@
    },
    "rarity": "rare",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。L35有效，但壓量無據、無收藏圈聖杯地位依據；屬5星冷門，不到7",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "碟上的獻詞，第一句給的是所有滑板的人。註記欄只有三行字，後兩行是「All my friends／My family.」與「Made in Japan.」。曲名系統很雜：第 13 軌是一個無限符號，第 5 軌在兩個資料庫都登錄成沒有名字，另有一軌是日文。作曲與製作掛同一個名字，美術與設計各掛一人，整張碟沒有混音或母帶掛名。最長的〈Midnight Morning〉7:36，最短的一軌 0:23，〈Auto Magic〉6:15，〈空の向こう〉5:42。",
@@ -1541,10 +1591,18 @@
    },
    "rarity": "uncommon",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。Transonic 正規小廠 CD，無壓量極小依據；L=32",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "Transonic 一九九四年四月成立，Discogs 廠牌頁寫它承接 Trigger 廠牌。同一欄還說它做 techno 與實驗音樂，2004 年收攤，主理人轉往 ExT Recordings。本張編號 TRS-25007，是開張第一年那批個人專輯之一。作曲、編曲、全部樂器、混音與製作五項掛在同一個名字上。內註只有一行：錄音在 1994 年 8 月。曲目兩端是〈Galactic Bone〉12:47 與〈Gyratory Space Shakers〉2:19。",
@@ -1617,10 +1675,18 @@
    },
    "rarity": "uncommon",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。L201有效，但壓量無據、無收藏圈聖杯地位依據；屬5星冷門，不到7",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "曲目表在第十軌前面另立一列標題，寫著 Bonus Track。全碟十軌：那一列以上是九首正篇，其下是同名的〈Spiritual (Ms Funky-Acid Mix)〉6:42，混音掛 Drawing Future Life。Written-By 逐軌標號，一人掛第 3、4、5、7、8 軌，另一人掛第 1、2、6、9 軌。Kazunao Nagata 掛 Executive-Producer。九首正篇的曲長從〈Skywalk〉5:10 到〈Ground〉8:00。",
@@ -1857,10 +1923,18 @@
    },
    "rarity": "rare",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。L48有效，但壓量無據、無收藏圈聖杯地位依據；屬5星冷門，不到7",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "Discogs 的 profile 欄只有一句：這是一位電子製作人的藝名。同一份條目的 realname 欄填 Takahiro Suzuki，另有一份以本名為條目名的藝人頁，兩頁互填別名，groups 欄列 Fantastic Explosion。credit 三筆，當事人掛 Written-By、Mixed By 與 Producer，Kazunao Nagata 另掛 Producer。十五軌從〈Enoshima〉2:18 到〈Sixteen〉5:40。",
@@ -2014,10 +2088,18 @@
    },
    "rarity": "rare",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。L50有效，但壓量無據、無收藏圈聖杯地位依據；屬5星冷門，不到7",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "Kazunao Nagata 在 credit 上除了 Co-producer，另掛一項 Compiled By。方括號裡補了 Selected By。兩位成員各掛全碟 Written-By、Performer 與 Mixed By，團名掛 Producer。盤名標的年份區間 1990–1992，碟出版於 1996。十五軌長度不均：〈Stairs〉0:36、〈Maskman〉0:39、〈Shinjuku〉0:54 三首不到一分鐘，最長的〈Neighbor〉9:14。",
@@ -2091,10 +2173,18 @@
    },
    "rarity": "rare",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。L52有效，但壓量無據、無收藏圈聖杯地位依據；屬5星冷門，不到7",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "同一張碟上，℗ 掛 Transonic Records、© 掛 Zero Gravity。Discogs 廠牌頁把 Zero Gravity 的 parent label 欄填成 Transonic Records，profile 欄只有一個字：Japan。本張編號 ZGV-001 是這條編號線的第一號，目錄上它同年排到 ZGV-009。十六軌裡〈Good Night〉0:31 與〈Doubt〉0:40 不到一分鐘，最長的是〈Each Other〉5:48。",
@@ -2168,10 +2258,18 @@
    },
    "rarity": "uncommon",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。L14有效，但壓量無據、無收藏圈聖杯地位依據；屬5星冷門，不到7",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "credit 欄上有一項 Programmed By [Assistance]，標到第 3、7、8、12 軌。掛這一項的是 Naka Tomizawa；Akaiwa 掛 Recorded By 與 Mixed By。同掛名在這條編號線的下一號 ZGV-017（1997）只剩三軌、每軌十一到十九分鐘，credit 多出薩克斯風、電貝斯與打擊；再下一張換回母廠牌編號 TRS-25022（1998），十二軌。本張十三軌，末軌是〈Synchro Screw〉8:51。",
@@ -2245,10 +2343,18 @@
    },
    "rarity": "epic",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。L1有效，Zero Gravity 小廠CD，壓量無據、無聖杯地位依據；5星冷門",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "掛名底下只登記一位成員 Jiro Sueoka，同廠牌另一張碟的兩軌也掛他的名字。Trio Rakant《Kokorosususu》（ZGV-012）的第 3 軌與第 8 軌都掛他 Featuring [Guitar Loop And Treatment]。本張 credit 欄只有四筆，Discogs 條目上也沒有 ℗／© 的登錄。內註一行寫著錄音與混音在 Jet Rocket、期間 1995 到 1996。全碟九軌，最短的〈Droon〉1:23。",
@@ -2399,10 +2505,18 @@
    },
    "rarity": "uncommon",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：obscurity=5、listeners=45，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。L45有效，但壓量無據、無收藏圈聖杯地位依據；屬5星冷門，不到7",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：obscurity=5、listeners=45，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "兩位製作人的 Discogs 藝人頁，profile 欄都寫著 critic。其中一位的條目還記他被視為早期推廣「Onkyo」一詞的人，並在 1990 年代前期於澀谷開過唱片行 Paris-Peking。第三筆 credit 是 Akira Yamamichi，作曲、混音與美術三項掛同一個名字。編號 SOUP 003 CD，identifiers 欄另記母帶刻印與兩組 SID code。十三軌長度多在四到六分鐘之間，〈Abstrato〉7:34 最長。",
@@ -2634,10 +2748,18 @@
    },
    "rarity": "epic",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。L7有效，Zero Gravity 小廠CD，壓量無據、無聖杯地位；5星冷門",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "團的分工在內註上寫成兩行：所有聲音歸一人，所有評論歸另一人。聲音那位是 Akaiwa，他另掛 Composed By、Compiled By、Mixed By 與 Recorded By。客席分在四軌：第 1、10 軌是中音薩克斯風，第 3、8 軌是吉他 loop，第 10 軌另加貝斯。內註末尾印著一句：This compact disc is in tribute to [Toru Takemitsu] (1930-1996)。全碟十軌。",
@@ -2860,10 +2982,18 @@
    },
    "rarity": "uncommon",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。L66有效，但壓量無據、無收藏圈聖杯地位依據；屬5星冷門，不到7",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "末軌〈だめだよ〉只有四秒，Discogs 與 MusicBrainz 都給同一個數字。長的一端是〈Jungle Train〉9:38，短的一端還有〈キッチン〉1:43。credit 上 Tsuyoshi Nakamaru 除了 Written-By 與 Mixed By，另掛 Voice、Electric Bass 與 Keyboards 三項。他的 Discogs 藝人頁 groups 欄列 Nerve Net Noise 與 Toki-Meki Science。",
@@ -2934,10 +3064,18 @@
    },
    "rarity": "uncommon",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。L153有效，但壓量無據、無收藏圈聖杯地位依據；屬5星冷門，不到7",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "MusicBrainz 上有四個 Pacific 231，靠 disambiguation 欄才分得開。本卡是日本那個實體，那一欄寫 Shigeomi Hasumi、Takemasa Miyake。內註自稱是兩個男生的 Musical Joint Ad-Venture，第 4 軌以外的錄音與混音在 LOTUStudio、1995 到 1996。八軌的 Written-By 兩軌掛前者、四軌掛後者、兩軌合掛。版權欄印著三個年份：1995、1996、1997。",
@@ -3161,10 +3299,18 @@
    },
    "rarity": "epic",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。L4有效，Zero Gravity 小廠CD，壓量無據、無收藏圈聖杯名聲；5星冷門",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "四軌各十五分整，曲名只有 #1 到 #4，兩個資料庫都這麼記。那是 Discogs 與 MusicBrainz 記的時值。同掛名前兩張碟也都是四軌，長度分別在 13:47 到 13:55 與 10:01 到 12:04，本張是三張裡唯一記成整數的。credit 只有三筆：當事人掛 Producer，Kazunao Nagata 掛 Mastered By 與 Executive-Producer，美術由三個掛名共列。內註寫錄音在 1998 年 8 月到 9 月之間。",

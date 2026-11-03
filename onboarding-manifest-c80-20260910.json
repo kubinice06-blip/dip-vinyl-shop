@@ -118,10 +118,18 @@
    },
    "rarity": "rare",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。L1有效，自發卡帶，壓量無據、無收藏圈聖杯名聲；5星冷門",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "盤名寫成一條方程式，而編號欄上只填了 Phase 1。條目附了排版說明：每組兩個字母的後一個排成下標，只有 N、R、L 大寫；另引一句解釋，說 N 是宇宙中同一時間有智慧生命的行星數。1981 年這捲卡帶五軌，廠牌欄是 Discogs 為自主發行設的佔位實體；這回四個人，多了貝斯手 Chris Palin。MusicBrainz 登錄的長度，〈Direction Injection〉4 分 45 秒最短，〈Toad The Wanderer〉7 分 25 秒最長。",
@@ -170,28 +178,37 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 4,
+    "classic": 3,
     "obscurity": 5,
     "accessibility": 3,
     "listeners": 30,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
     "previous": {
-     "classic": 2,
-     "obscurity": 4,
-     "accessibility": 4,
-     "source": "manual:depth-rubric",
-     "checkedAt": "2026-08-31T00:00:00.000Z",
-     "rarity": "uncommon"
+     "classic": 4,
+     "obscurity": 5,
+     "accessibility": 3,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Third Quadrant 唯一黑膠即代表作，英私壓迷幻圈；聽眾30、無試聽→5；13分鐘太空長曲",
+     "rarity": "epic"
     },
-    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Third Quadrant 唯一黑膠即代表作，英私壓迷幻圈；聽眾30、無試聽→5；13分鐘太空長曲"
+    "note": "全池稽核 audit-20261102（方案 C）：為本團自設廠牌 Rock Cottage 白標私壓 LP，無串流再發紀錄；listeners 30 有效。新前衛二線作，經典度 4→3｜L=30"
    },
-   "rarity": "epic",
+   "rarity": "uncommon",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。L30有效，白標私壓LP，但壓量無據、無聖杯地位；5星",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "同一組人先做了兩捲卡帶，這一張黑膠上標著白標。1982 年的 TTS 8049，廠牌欄是 Rock Cottage，那個實體的 Discogs 簡介只有一句「為 Third Quadrant 而設」，底下只有兩筆。四個人的分工這次固定，不再一軌一換。第五軌兩邊對不上：Discogs 記〈The Whole World's Gone Fission〉13 分 17 秒，MusicBrainz 的標題少一個所有格的 s、長度記 13 分 21 秒，媒體欄還記成 CD。",
@@ -317,28 +334,37 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 3,
+    "classic": 2,
     "obscurity": 5,
     "accessibility": 2,
     "listeners": 33,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
     "previous": {
-     "classic": 2,
-     "obscurity": 4,
+     "classic": 3,
+     "obscurity": 5,
      "accessibility": 2,
-     "source": "manual:depth-rubric",
-     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：新前衛自主盤，收藏圈知名；L33 無串流→5；短曲旋律前衛",
      "rarity": "rare"
     },
-    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：新前衛自主盤，收藏圈知名；L33 無串流→5；短曲旋律前衛"
+    "note": "全池稽核 audit-20261102（方案 C）：Carve-Up 四號目錄唯一 LP；2022 僅 CD 考古再發，無串流｜L=33"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。單版LP但壓量無據，2022已有Audio Archives CD再發，非聖杯",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "錄音散在四個地方，四位工程師裡有兩位是自己人。Hallmark 那邊是 Steve Hall，Wave 那邊是 Allan Smart，疊錄分在 Octopus 與 Arabella's，後者的工程 Lorenzo Bedini 是團員，Steve Hall 則在 B5 上打鼓。廠牌 Carve-Up Records 的目錄只有四個編號，另外三筆都是七吋與十二吋，這張是它唯一的 LP。英文維基的樂團條目說，他們在 Marquee 有過幾次暖場與壓軸。",
@@ -631,10 +657,18 @@
    },
    "rarity": "common",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。自營客壓 LP、無再版、聽眾 20；但壓量無據、無收藏圈聖杯名聲，拿不準判 none",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "先出的那張七吋上印的只有 Doris 一個字，LP 才用上完整的團名。MusicBrainz 至今仍把藝人實體登記成那個短名。那張七吋的 B 面〈Living Danger〉後來搬進 LP。錄音工程在曼徹斯特的 Pluto Studios，製造由 SRT Productions 承接，公司欄還留著一個客壓的作業編號 X 82 CUS 1342。五個人裡 Bob Webb 唱主聲、彈吉他、吹口琴，全碟的曲也掛他，B2 與 B4 換上鼓手 Paul Helsby。",
@@ -773,10 +807,18 @@
    },
    "rarity": "rare",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。L3有效，私製卡帶，壓量無據、無聖杯名聲；5星冷門",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "曲目表上有一軌叫〈Blues Bit〉，另一軌叫〈Your Fault Bit〉。還有一軌叫〈Circles Pt. 1 - Jazz Bit - Circles Pt. 2〉，薩克斯風請了 Steve Jolliffe。條目的註記只有兩句：私人自製的卡帶，1981 年錄了一整年。credit 上是 Clive Number、Gordon 'Zola'、Muitant 這一類名字，藝人條目把其中幾個對回本名，只有鼓手 Paul Ross 兩邊同名。",
@@ -1205,21 +1247,22 @@
    "ratings": {
     "classic": 3,
     "obscurity": 5,
-    "accessibility": 4,
+    "accessibility": 3,
     "listeners": 94,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
     "previous": {
-     "classic": 2,
+     "classic": 3,
      "obscurity": 5,
      "accessibility": 4,
-     "source": "manual:depth-rubric",
-     "checkedAt": "2026-08-31T00:00:00.000Z",
-     "rarity": "uncommon"
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Gilli Smyth太空女性主義迷幻；L94 無串流→5；口白迷幻前衛",
+     "rarity": "epic"
     },
-    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Gilli Smyth太空女性主義迷幻；L94 無串流→5；口白迷幻前衛"
+    "note": "全池稽核 audit-20261102（方案 C）：Gong 家族盤，Butt 小廠但後有多次 CD 再發，聽眾疑分拆；非實質流亡｜L=94"
    },
-   "rarity": "epic",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1663,10 +1706,18 @@
    },
    "rarity": "rare",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。自發卡帶無壓量數據，且1991年已有法國CD再發；小眾非聖杯，不到7星",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "上一捲的貝斯手，這一捲掛的是經理。1985 年的卡帶，編號從 AG 1 改成羅馬數字的 AG II，廠牌欄還是「Not On Label」，六軌；公司欄這回有一項，錄音在 Black Gold Studios，製作與工程都是團外的 John Turner。Paul Kelly 唱主唱兼吉他，Gordon Mackie 接下貝斯，鍵盤與鼓沒動。六首歌的詞曲掛名逐首不同，同名曲那首掛的兩個人都不在演出名單上。最長的〈The Hustler〉八分九秒收在 A 面末尾。",
@@ -1735,10 +1786,18 @@
    },
    "rarity": "rare",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。小廠／自發盤、聽眾<300，但壓量未見數百張以下的確據，也非收藏圈公認聖杯；只到 5",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "這家廠牌只出過兩件東西，另一件的掛名就是這張碟的名字。1984 年的 Future Dance FD 1001，八軌，壓片由 Orlake Records 代工，條目另記有一部分交給 Pinnacle Records 配銷。廠牌頁上除了本張，就只有 1985 年一捲沒有目錄號的卡帶 EP，而那捲的藝人欄登的是 Lost For Words。碟上六個人、兩把吉他，開場的〈Amadeus〉三分十七秒，收尾的〈Into The Pit〉七分五十九秒。",
@@ -1880,10 +1939,18 @@
    },
    "rarity": "rare",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。小廠／自發盤、聽眾<300，但壓量未見數百張以下的確據，也非收藏圈公認聖杯；只到 5",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "封套上印著錄音的起訖日：七月二十七日到八月五日。諾茲福德的 Pullman Studios——這是 1984 年 Food For Thought 的 GRUB 4 條目上唯一的註記。九軌，最長的〈For More Than A Day〉六分十八秒。他唱歌、彈吉他、敲打擊，credit 另有一個名字叫 The Still Owl，掛吉他、曼陀林與鍵盤。GRUB 這組編號的鄰居是 Steve Vai 的授權盤，GRUB 18 是 Twelfth Night 的雙黑膠。",
@@ -1951,10 +2018,18 @@
    },
    "rarity": "rare",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。小廠／自發盤、聽眾<300，但壓量未見數百張以下的確據，也非收藏圈公認聖杯；只到 5",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "Discogs 給這一捲的風格標籤是 Experimental，同一位藝人另外兩張標的是 Prog Rock。1984 年的 Twilight Records GM001，九軌，錄音在索爾福德的 Twilight Sound Studios——廠牌名與錄音室名是同一個字。廠牌頁十三筆多半是本地樂團的七吋單曲，本捲是裡面唯一不用 TRS 編號的一筆。credit 五個名字：他唱歌並彈吉他、鍵盤與打擊，另有電吉他、人聲與工程，Jane Mann 掛曼陀林、小提琴與人聲。",
@@ -2023,10 +2098,18 @@
    },
    "rarity": "rare",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。小廠／自發盤、聽眾<300，但壓量未見數百張以下的確據，也非收藏圈公認聖杯；只到 5",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "整張碟的 credit 只有兩個名字：一個唱歌兼打電子鼓，一個彈吉他。1986 年 2 月的 Wobbly Records WOB001，六軌，錄音在曼徹斯特的 Pullman Studios。條目自己註明沒有現行的 CD 版，並逐軌指出每一首可以在哪張碟上找到。廠牌頁只有九筆：這張之後，1994 年出過一張向他致意的合輯，接著整整二十九年沒有東西，2023 到 2026 年才一口氣排完七個編號。Geoff Mann 1993 年 2 月 5 日在羅奇代爾去世。",
@@ -2095,10 +2178,18 @@
    },
    "rarity": "rare",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。L63有效，歌迷會專屬LP，但1984日本 Nexus 授權盤與1987自發重壓；不到7",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "連著三個晚上，樂團在曼徹斯特的 The Band on The Wall 錄下了這張碟。1983 年 10 月 24、25、26 日，混音在劍橋的 Spaceward Studios 完成。1984 年 3 月出來時，廠牌欄填的就是 The Stand、編號 THE STAND 1，九軌；註記第一句是「Fan club record.」，另一句說特意收了演出曲目裡還沒錄過音的東西，〈Evensong〉是其中一首。credit 只有兩個名字，同掛作曲、演出與製作。",
@@ -2379,10 +2470,18 @@
    },
    "rarity": "rare",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。L1有效，私製卡帶，但藝人有 Bandcamp 數位流通、壓量無據；不到7",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "一捲帶子十九首歌，條目上只有一句話：很多是從沒發表過的錄音。1986 年的 UYB1，廠牌欄填 Not On Label，公司欄只有製造方：Mike Saturn Entertainments PLC。演出者、製作人、錄音室與曲長，紀錄上一項也沒有。Discogs 給了 garage rock、psychedelic rock 與 prog rock 三個標籤。藝人條目掛的網址之一是 nothinghead.com，而 B 面第五軌就叫〈Nothinghead〉。",
@@ -2737,26 +2836,35 @@
    "ratings": {
     "classic": 2,
     "obscurity": 5,
-    "accessibility": 3,
+    "accessibility": 2,
     "listeners": 30,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
     "previous": {
      "classic": 2,
      "obscurity": 5,
-     "accessibility": 4,
-     "source": "manual:depth-rubric",
-     "checkedAt": "2026-08-31T00:00:00.000Z",
-     "rarity": "uncommon"
+     "accessibility": 3,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：小廠器樂速寫；L30 無串流→5；合成器器樂，原4偏高",
+     "rarity": "rare"
     },
-    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：小廠器樂速寫；L30 無串流→5；合成器器樂，原4偏高"
+    "note": "全池稽核 audit-20261102（方案 C）：Zomart 為藝人自家地址的私廠，單一版本無再發；L30。旋律器樂，硬蕊降 2｜L=30"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：obscurity=5、listeners=30，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。L30有效，但壓量無據、無收藏圈聖杯地位依據；屬5星冷門，不到7",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：obscurity=5、listeners=30，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "尊重一切生命形式，廢除核電與核武——這句話印在封套上。同一面還印了錄音在倫敦、一句致謝、廠牌的通訊地址，以及配銷交給 Revolver 與 the Cartel。1986 年的 Zomart Records，編號欄同時登了 ZOM 002 與 ZOMART 002，九軌。〈Planet Of Paradise〉拆成三段，放在 B 面的第一、第四與第五軌，中間隔著兩首別的曲子。工程 John Ellis 同時是〈Purple Dawn〉的共同詞曲。",

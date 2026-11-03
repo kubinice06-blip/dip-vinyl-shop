@@ -21,15 +21,24 @@
         "visuallyVerified": true
       },
       "ratings": {
-        "classic": 5,
+        "classic": 4,
         "obscurity": 1,
         "accessibility": 1,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-21T20:28:21Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；史上最暢銷的精選輯、2016 年入選美國國會圖書館國家錄音登錄,曲目全是排行熱門,店頭與耳朵都毫無門檻。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：史上最暢銷之一，但精選輯無樂評正典共識",
+        "previous": {
+          "classic": 5,
+          "obscurity": 1,
+          "accessibility": 1,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-21T20:28:21Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；史上最暢銷的精選輯、2016 年入選美國國會圖書館國家錄音登錄,曲目全是排行熱門,店頭與耳朵都毫無門檻。",
+          "rarity": "rare"
+        }
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -161,15 +170,24 @@
         "visuallyVerified": true
       },
       "ratings": {
-        "classic": 5,
+        "classic": 4,
         "obscurity": 1,
         "accessibility": 1,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-21T20:28:21Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；英國史上最暢銷專輯、全球銷量逾 2500 萬張,是最典型的入門常客。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：英國史上最暢銷專輯，但銷量不等於樂評正典；精選輯",
+        "previous": {
+          "classic": 5,
+          "obscurity": 1,
+          "accessibility": 1,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-21T20:28:21Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；英國史上最暢銷專輯、全球銷量逾 2500 萬張,是最典型的入門常客。",
+          "rarity": "rare"
+        }
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -2065,13 +2083,21 @@
       },
       "rarity": "rare",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "跨來源長期共識：美國國會圖書館 2012 年以「文化、歷史或美學上具重要性」列入國家錄音登記處，全球銷量逾四千萬張、美國 16 白金、告示牌 200 榜連續 24 週冠軍，公認為 disco 一線的史上核心文獻。",
-        "evidenceUrls": [
-          "https://en.wikipedia.org/wiki/Saturday_Night_Fever_(soundtrack)",
-          "https://musicbrainz.org/release-group/6e9a06a8-c8bb-3ea9-877a-417e74bb1c2e"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。RS500、1001 有收，迪斯可時代文化現象，但屬類型／時代代表，不到 Kind of Blue 級",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "跨來源長期共識：美國國會圖書館 2012 年以「文化、歷史或美學上具重要性」列入國家錄音登記處，全球銷量逾四千萬張、美國 16 白金、告示牌 200 榜連續 24 週冠軍，公認為 disco 一線的史上核心文獻。",
+          "evidenceUrls": [
+            "https://en.wikipedia.org/wiki/Saturday_Night_Fever_(soundtrack)",
+            "https://musicbrainz.org/release-group/6e9a06a8-c8bb-3ea9-877a-417e74bb1c2e"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "1977 年 11 月由 RSO 發行的雙黑膠原聲帶，在《Thriller》問世前是史上最暢銷專輯，全球銷量逾四千萬張，美國認證 16 白金，告示牌 200 榜從 1978 年 1 月起連續 24 週登頂、在榜 120 週。Bee Gees 供稿的〈Stayin' Alive〉、〈Night Fever〉、〈How Deep Is Your Love〉與 Yvonne Elliman 的〈If I Can't Have You〉四首都拿下美國冠軍單曲，英國榜則連續 18 週冠軍。2012 年獲美國國會圖書館列入國家錄音登記處。",
@@ -2854,12 +2880,21 @@
       },
       "ratings": {
         "classic": 3,
-        "obscurity": 1,
+        "obscurity": 2,
         "accessibility": 1,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-21T20:28:21Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；1985 年 Billboard 200 冠軍、1986 年葛萊美最佳影視配樂，〈Axel F〉全球熱門，唱片行 80 年代原聲帶箱最常見的一張，入耳門檻極低。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：Axel F 與 Grammy 原聲獎，八〇年代主流原聲；常見通路｜L=22709",
+        "previous": {
+          "classic": 3,
+          "obscurity": 1,
+          "accessibility": 1,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-21T20:28:21Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；1985 年 Billboard 200 冠軍、1986 年葛萊美最佳影視配樂，〈Axel F〉全球熱門，唱片行 80 年代原聲帶箱最常見的一張，入耳門檻極低。",
+          "rarity": "common"
+        }
       },
       "rarity": "common",
       "apexAssessment": {
@@ -2930,13 +2965,21 @@
       },
       "rarity": "rare",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "音樂劇電影原聲帶史上銷量與榜單成績最頂尖者之一：全球逾兩千萬張、英國榜 70 週冠軍、Billboard 200 蟬聯榜上 238 週並獲評史上榜單成績第二強專輯，電影本身亦獲奧斯卡最佳影片，長期共識足列該領域核心。",
-        "evidenceUrls": [
-          "https://en.wikipedia.org/wiki/The_Sound_of_Music_(soundtrack)",
-          "https://en.wikipedia.org/wiki/The_Sound_of_Music_(film)"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。暢銷原聲帶，但不在綜合歷代專輯榜，非樂評正典",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "音樂劇電影原聲帶史上銷量與榜單成績最頂尖者之一：全球逾兩千萬張、英國榜 70 週冠軍、Billboard 200 蟬聯榜上 238 週並獲評史上榜單成績第二強專輯，電影本身亦獲奧斯卡最佳影片，長期共識足列該領域核心。",
+          "evidenceUrls": [
+            "https://en.wikipedia.org/wiki/The_Sound_of_Music_(soundtrack)",
+            "https://en.wikipedia.org/wiki/The_Sound_of_Music_(film)"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "1965 年由 RCA Victor 發行的《The Sound of Music》電影原聲帶，音樂與歌詞出自 Richard Rodgers 與 Oscar Hammerstein II，Julie Andrews 主唱。電影版把百老匯原版的〈An Ordinary Couple〉等三首換成〈I Have Confidence〉與〈Something Good〉。全球銷量逾兩千萬張，在 Billboard 200 前十名停留 109 週、總計在榜 238 週，英國榜累計 70 週冠軍，2015 年獲 Billboard 列為史上榜單成績第二強的專輯。",
@@ -2990,21 +3033,38 @@
       "ratings": {
         "classic": 5,
         "obscurity": 1,
-        "accessibility": 2,
+        "accessibility": 1,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-21T20:28:21Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Billboard 立體聲榜蟬聯 54 週冠軍為史上最長紀錄，1962 年獲葛萊美原聲帶獎、美國三白金，電影奪十座奧斯卡；曲目為旋律清楚的音樂劇歌曲但編制與節拍較繁複。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：百老匯／電影原聲正典，Billboard 冠軍 54 週，音樂劇領域人人必提",
+        "previous": {
+          "classic": 5,
+          "obscurity": 1,
+          "accessibility": 2,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-21T20:28:21Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Billboard 立體聲榜蟬聯 54 週冠軍為史上最長紀錄，1962 年獲葛萊美原聲帶獎、美國三白金，電影奪十座奧斯卡；曲目為旋律清楚的音樂劇歌曲但編制與節拍較繁複。",
+          "rarity": "uncommon"
+        }
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "Billboard 立體聲榜 54 週冠軍是專輯榜史上最長的榜首紀錄，另獲 1962 年葛萊美最佳原聲帶／原班卡司獎與 RIAA 三白金，電影以十座奧斯卡創音樂片紀錄，跨來源長期共識足列美國音樂劇與原聲帶史核心。",
-        "evidenceUrls": [
-          "https://en.wikipedia.org/wiki/West_Side_Story_(1961_soundtrack)",
-          "https://en.wikipedia.org/wiki/West_Side_Story_(1961_film)"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。全民熟知但屬音樂劇原聲，綜合樂評歷代榜多不收；類型正典 5 星",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "Billboard 立體聲榜 54 週冠軍是專輯榜史上最長的榜首紀錄，另獲 1962 年葛萊美最佳原聲帶／原班卡司獎與 RIAA 三白金，電影以十座奧斯卡創音樂片紀錄，跨來源長期共識足列美國音樂劇與原聲帶史核心。",
+          "evidenceUrls": [
+            "https://en.wikipedia.org/wiki/West_Side_Story_(1961_soundtrack)",
+            "https://en.wikipedia.org/wiki/West_Side_Story_(1961_film)"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "1961 年電影《West Side Story》的原聲帶，Leonard Bernstein 作曲、Stephen Sondheim 作詞。片中歌唱多由幕後歌手代勞，Marni Nixon 頂替 Natalie Wood 演唱 Maria，最終如何取用各人聲軌由製片 Saul Chaplin 拍板。唱片在 Billboard 立體聲專輯榜蟬聯 54 週冠軍，是專輯榜史上最長的榜首紀錄，另在單聲道榜六週奪冠；1962 年獲葛萊美最佳原聲帶／原班卡司獎，1986 年獲 RIAA 三白金認證。",
@@ -4541,23 +4601,40 @@
         "visuallyVerified": true
       },
       "ratings": {
-        "classic": 5,
+        "classic": 4,
         "obscurity": 1,
         "accessibility": 2,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-21T20:28:21Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；《滾石》五百大與美國國家錄音登記簿雙重背書，跨來源地位可查證；合成器段落略長但整體好入耳。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：暢銷代表作，但無跨來源核心正典共識；殿堂不成立",
+        "previous": {
+          "classic": 5,
+          "obscurity": 1,
+          "accessibility": 2,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-21T20:28:21Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；《滾石》五百大與美國國家錄音登記簿雙重背書，跨來源地位可查證；合成器段落略長但整體好入耳。",
+          "rarity": "uncommon"
+        }
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "2012 年《滾石》五百大專輯第 445 名、2025 年獲美國國會圖書館選入國家錄音登記簿，另有 Colin Larkin 千大專輯第 400 名，屬跨來源長期共識。",
-        "evidenceUrls": [
-          "https://en.wikipedia.org/wiki/Fly_Like_an_Eagle_(album)",
-          "https://en.wikipedia.org/wiki/National_Recording_Registry"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。暢銷代表作，歷代榜收錄不齊；listeners 缺值，殿堂 7 星不成立",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "2012 年《滾石》五百大專輯第 445 名、2025 年獲美國國會圖書館選入國家錄音登記簿，另有 Colin Larkin 千大專輯第 400 名，屬跨來源長期共識。",
+          "evidenceUrls": [
+            "https://en.wikipedia.org/wiki/Fly_Like_an_Eagle_(album)",
+            "https://en.wikipedia.org/wiki/National_Recording_Registry"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "1976 年 5 月 Capitol 發行，Steve Miller 用 ARP Odyssey 把藍調搖滾推向太空感，開場〈Space Intro〉直接接進同名曲。〈Take the Money and Run〉與〈Rock'n Me〉一併成為電台常備曲，美國認證四白金，盤中還收了 Sam Cooke 的〈You Send Me〉。2012 年列入《滾石》五百大專輯第 445 名，2025 年獲美國國會圖書館選入國家錄音登記簿。封面那把黑色 Stratocaster 原是 Hendrix 訂購的左手琴，Miller 買下後改成右手弦序。",
@@ -5081,15 +5158,24 @@
         "visuallyVerified": true
       },
       "ratings": {
-        "classic": 3,
+        "classic": 4,
         "obscurity": 2,
         "accessibility": 2,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-21T20:28:21Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；兩人編制重整後的英國第三名專輯，靠〈The Things We Do for Love〉留下明確地位，但不及樂團四人時期的評價；編曲精巧仍屬流行寫法。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：藝人中期代表作，含暢銷單曲，主流流通｜L=314409",
+        "previous": {
+          "classic": 3,
+          "obscurity": 2,
+          "accessibility": 2,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-21T20:28:21Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；兩人編制重整後的英國第三名專輯，靠〈The Things We Do for Love〉留下明確地位，但不及樂團四人時期的評價；編曲精巧仍屬流行寫法。",
+          "rarity": "common"
+        }
       },
-      "rarity": "common",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -7656,13 +7742,21 @@
       },
       "rarity": "rare",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "跨來源長期共識：美國國會圖書館 2023 年選入國家錄音登記簿（文化／歷史／美學重要性），並長年名列 Rolling Stone 五百大專輯，公認確立 Madonna 超級巨星地位與 80 年代 dance-pop 樣板。",
-        "evidenceUrls": [
-          "https://en.wikipedia.org/wiki/Like_a_Virgin_(album)",
-          "https://en.wikipedia.org/wiki/National_Recording_Registry"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。80 年代流行強作，Madonna 正典歸 Like a Prayer，非跨類型正典",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "跨來源長期共識：美國國會圖書館 2023 年選入國家錄音登記簿（文化／歷史／美學重要性），並長年名列 Rolling Stone 五百大專輯，公認確立 Madonna 超級巨星地位與 80 年代 dance-pop 樣板。",
+          "evidenceUrls": [
+            "https://en.wikipedia.org/wiki/Like_a_Virgin_(album)",
+            "https://en.wikipedia.org/wiki/National_Recording_Registry"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "Madonna 的第二張錄音室專輯，1984 年 11 月由 Sire 發行。她指名 Nile Rodgers 製作，因為喜歡他替 David Bowie《Let's Dance》做的聲音；錄音在紐約 Power Station，Rodgers 找來 Chic 舊搭檔 Bernard Edwards 與 Tony Thompson 撐起節奏組。全碟曲目由她親自挑定，其中五首出自她手筆。美國四張單曲全進前五，同名曲拿下她生涯首支冠軍。全球銷量逾兩千一百萬張，2023 年獲美國國會圖書館選入國家錄音登記簿。",
@@ -7866,13 +7960,21 @@
       },
       "rarity": "rare",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "跨來源長期共識：2019 年入選美國國會圖書館國家錄音登記簿，並在 Rolling Stone 五百大專輯 2020 年版升至第 184 名，加上葛萊美最佳新人與四支美國前五單曲的紀錄，足列 80 年代流行樂史核心。",
-        "evidenceUrls": [
-          "https://en.wikipedia.org/wiki/She%27s_So_Unusual",
-          "https://en.wikipedia.org/wiki/National_Recording_Registry"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。80 年代流行暢銷作，綜合歷代榜收錄零散，未達跨類型正典",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "跨來源長期共識：2019 年入選美國國會圖書館國家錄音登記簿，並在 Rolling Stone 五百大專輯 2020 年版升至第 184 名，加上葛萊美最佳新人與四支美國前五單曲的紀錄，足列 80 年代流行樂史核心。",
+          "evidenceUrls": [
+            "https://en.wikipedia.org/wiki/She%27s_So_Unusual",
+            "https://en.wikipedia.org/wiki/National_Recording_Registry"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "Cyndi Lauper 的個人首作，1983 年 10 月由 Portrait 發行，Rick Chertoff 製作。做法是把 new wave 的怪趣味塞進主流流行歌的骨架，唱腔在稚氣與撕裂之間來回切換。〈Girls Just Want to Have Fun〉、〈Time After Time〉、〈She Bop〉與〈All Through the Night〉四首單曲全數擠進美國前五，〈Time After Time〉更拿下冠軍。專輯在美國榜最高第 4、加拿大登頂，隔年替她拿下葛萊美最佳新人，2019 年入選美國國家錄音登記簿。",
@@ -8931,24 +9033,41 @@
         "visuallyVerified": true
       },
       "ratings": {
-        "classic": 5,
+        "classic": 4,
         "obscurity": 1,
         "accessibility": 1,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-21T20:28:21Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；史上首張由自寫自彈的全女子樂團拿下 Billboard 冠軍的專輯，Rolling Stone 五百大三版皆入選且獲國家錄音登記處收錄；銷量與傳唱度使其成為店頭常客，new wave 流行旋律直白。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：新浪潮流行名盤、RS500，但不到人人必提；經典度 5 偏高",
+        "previous": {
+          "classic": 5,
+          "obscurity": 1,
+          "accessibility": 1,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-21T20:28:21Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；史上首張由自寫自彈的全女子樂團拿下 Billboard 冠軍的專輯，Rolling Stone 五百大三版皆入選且獲國家錄音登記處收錄；銷量與傳唱度使其成為店頭常客，new wave 流行旋律直白。",
+          "rarity": "rare"
+        }
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "全女子樂團自寫自彈奪 Billboard 冠軍的首例，Rolling Stone 五百大專輯 2003／2012／2020 三版皆列入（2020 年第 400 名），二○二六年獲美國國會圖書館國家錄音登記處收錄，另居 1981 年 Pazz & Jop 樂評票選第十，跨來源長期共識足列美國 new wave 核心。",
-        "evidenceUrls": [
-          "https://en.wikipedia.org/wiki/Beauty_and_the_Beat_(The_Go-Go%27s_album)",
-          "https://en.wikipedia.org/wiki/Rolling_Stone%27s_500_Greatest_Albums_of_All_Time",
-          "https://en.wikipedia.org/wiki/National_Recording_Registry"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。新浪潮流行名盤，RS500 但非跨類型正典",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "全女子樂團自寫自彈奪 Billboard 冠軍的首例，Rolling Stone 五百大專輯 2003／2012／2020 三版皆列入（2020 年第 400 名），二○二六年獲美國國會圖書館國家錄音登記處收錄，另居 1981 年 Pazz & Jop 樂評票選第十，跨來源長期共識足列美國 new wave 核心。",
+          "evidenceUrls": [
+            "https://en.wikipedia.org/wiki/Beauty_and_the_Beat_(The_Go-Go%27s_album)",
+            "https://en.wikipedia.org/wiki/Rolling_Stone%27s_500_Greatest_Albums_of_All_Time",
+            "https://en.wikipedia.org/wiki/National_Recording_Registry"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "洛杉磯全女子樂團 the Go-Go's 一九八一年七月由 I.R.S. 發行的出道作，Richard Gottehrer 與 Rob Freeman 製作，錄於紐約 Penny Lane 與 Record Plant。〈Our Lips Are Sealed〉與〈We Got the Beat〉兩首打進 Hot 100，專輯於一九八二年三月登上 Billboard 冠軍並停留六週，是史上首張由自寫自彈的全女子樂團奪冠的專輯，美國雙白金。Rolling Stone 五百大專輯二○二○年版列第 400 名，二○二六年獲選進入美國國家錄音登記處。",
@@ -10554,14 +10673,23 @@
       },
       "ratings": {
         "classic": 5,
-        "obscurity": 1,
-        "accessibility": 2,
+        "obscurity": 2,
+        "accessibility": 1,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-21T20:28:21Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；同時攻頂流行、R&B 與爵士三榜、三白金，公認打開爵士跨界市場，二手箱幾乎必見。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：首張登 Billboard 200 冠軍的爵士盤，smooth jazz 標竿；冷門 1→2",
+        "previous": {
+          "classic": 5,
+          "obscurity": 1,
+          "accessibility": 2,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-21T20:28:21Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；同時攻頂流行、R&B 與爵士三榜、三白金，公認打開爵士跨界市場，二手箱幾乎必見。",
+          "rarity": "uncommon"
+        }
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -11971,10 +12099,21 @@
       },
       "rarity": "rare",
       "apexAssessment": {
-        "eligible": false,
-        "tier": null,
-        "reason": "地位確實達到殿堂等級，但性質是身後精選而非錄音室正典，殿堂席位宜留給《Exodus》一類原作；建議店主另行裁定合輯可否入殿堂。",
-        "evidenceUrls": []
+        "eligible": true,
+        "tier": "hall",
+        "reason": "方案 C（audit-20261102，2026-11-03）：升為殿堂（該軸 7 星）。RS 500 前段、史上最暢銷雷鬼盤、全球非樂迷皆知；合輯性質扣一級",
+        "evidenceUrls": [
+          "https://en.wikipedia.org/wiki/Legend_(Bob_Marley_and_the_Wailers_album)",
+          "https://www.rollingstone.com/music/music-lists/best-albums-of-all-time-1062063/"
+        ],
+        "previous": {
+          "eligible": false,
+          "tier": null,
+          "reason": "地位確實達到殿堂等級，但性質是身後精選而非錄音室正典，殿堂席位宜留給《Exodus》一類原作；建議店主另行裁定合輯可否入殿堂。",
+          "evidenceUrls": []
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "Bob Marley 過世三年後，Island 於 1984 年 5 月推出的身後精選，由 Chris Blackwell 等人操刀選曲，把〈No Woman, No Cry〉〈Three Little Birds〉〈Could You Be Loved〉〈Buffalo Soldier〉等 Island 時期單曲集中在一處。編排刻意偏向流暢好入耳的一面，因而成為多數人接觸 reggae 的第一張唱片。全球賣出約兩千五百萬張，是史上最暢銷的 reggae 專輯，並在 Billboard 200 累計逾 950 週在榜。",

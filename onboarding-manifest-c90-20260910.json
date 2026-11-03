@@ -104,23 +104,24 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 4,
+    "classic": 3,
     "obscurity": 5,
-    "accessibility": 4,
+    "accessibility": 3,
     "listeners": 4,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
     "previous": {
-     "classic": 2,
-     "obscurity": 4,
-     "accessibility": 2,
-     "source": "manual:depth-rubric",
-     "checkedAt": "2026-08-31T00:00:00.000Z",
-     "rarity": "rare"
+     "classic": 4,
+     "obscurity": 5,
+     "accessibility": 4,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：水晶CP系列個人代表作；聽眾4無試聽→5；實驗氛圍、16分長曲",
+     "rarity": "legendary"
     },
-    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：水晶CP系列個人代表作；聽眾4無試聽→5；實驗氛圍、16分長曲"
+    "note": "全池稽核 audit-20261102（方案 C）：水晶 CP0008 實驗 ambient，無串流、listeners 有效→5；ambient 非無調→硬蕊 3；水晶非極小廠（主線前例）→非 pearl；代表作無外部共識→經典 3｜L=4"
    },
-   "rarity": "legendary",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -180,23 +181,24 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 3,
+    "classic": 2,
     "obscurity": 5,
     "accessibility": 3,
     "listeners": 2,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
     "previous": {
-     "classic": 2,
-     "obscurity": 4,
-     "accessibility": 2,
-     "source": "manual:depth-rubric",
-     "checkedAt": "2026-08-31T00:00:00.000Z",
-     "rarity": "rare"
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 3,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：水晶CP系列紀錄片配樂；聽眾2無試聽→5；氛圍新世紀",
+     "rarity": "uncommon"
     },
-    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：水晶CP系列紀錄片配樂；聽眾2無試聽→5；氛圍新世紀"
+    "note": "全池稽核 audit-20261102（方案 C）：水晶 CP0012 紀錄片配樂，藝人無名氣、listeners 有效、無串流→5；水晶為台灣重要獨立廠非極小廠（主線前例）→非 pearl｜L=2"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -649,10 +651,18 @@
    },
    "rarity": "common",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。台灣小廠單版現場 CD，量產 CD 非聖杯；聽眾 13 但收藏圈無傳說地位",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "台上的演出是 2003 年八月，碟要到 2004 年七月才出。MusicBrainz 把它標成現場錄音，條目也把它與錄音室作品分開列。條目記吉他手大麻與貝斯手阿熾相繼入伍，樂團 2001 至 2003 年暫停活動，2003 年 7 月 19 日在野台開唱回到台上。發行方兩說：MusicBrainz 的廠牌欄記 Le Musique，條目記五四三音樂站與荒島網路科技股份有限公司。團名的 1976 取自最初團員的出生年，十軌裡最長的〈方向感〉5 分 50 秒。",

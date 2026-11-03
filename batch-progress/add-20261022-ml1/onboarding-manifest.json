@@ -191,23 +191,23 @@
    },
    "ratings": {
     "classic": 4,
-    "obscurity": 5,
+    "obscurity": 3,
     "accessibility": 2,
     "listeners": 270,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
-    "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽非 ready → 5，L=270）3→5",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "note": "全池稽核 audit-20261102（方案 C）：Trojan 大廠發行、後有再發；hyphen 拆字致 listeners 偏低，疑錯配｜L=270",
     "previous": {
      "classic": 4,
-     "obscurity": 3,
+     "obscurity": 5,
      "accessibility": 2,
-     "source": "manual:rerate-20261101",
-     "checkedAt": "2026-11-01T00:00:00Z",
-     "note": "三軸重評（RUBRIC 2026-11-01）：Minott 回歸 roots 代表作；Trojan 正規發行；Tubby 混音 roots",
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽非 ready → 5，L=270）3→5",
      "rarity": "uncommon"
     }
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,

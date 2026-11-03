@@ -1995,23 +1995,23 @@
    },
    "ratings": {
     "classic": 4,
-    "obscurity": 5,
+    "obscurity": 3,
     "accessibility": 3,
     "listeners": 228,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
-    "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽非 ready → 5，L=228）3→5",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "note": "全池稽核 audit-20261102（方案 C）：RVNG Intl. FRKWYS 系列，數位與串流流通；長掛名拆名致 listeners 偏低，疑錯配｜L=228",
     "previous": {
      "classic": 4,
-     "obscurity": 3,
+     "obscurity": 5,
      "accessibility": 3,
-     "source": "manual:rerate-20261101",
-     "checkedAt": "2026-11-01T00:00:00Z",
-     "note": "三軸重評（RUBRIC 2026-11-01）：FRKWYS 系列名作；RVNG 正規發行入串流，listeners 低為掛名分散；dub 迷幻即興",
-     "rarity": "uncommon"
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽非 ready → 5，L=228）3→5",
+     "rarity": "epic"
     }
    },
-   "rarity": "epic",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,

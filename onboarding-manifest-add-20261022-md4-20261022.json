@@ -1511,23 +1511,23 @@
    },
    "ratings": {
     "classic": 4,
-    "obscurity": 5,
+    "obscurity": 3,
     "accessibility": 2,
     "listeners": 74,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
-    "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽非 ready → 5，L=74）3→5",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "note": "全池稽核 audit-20261102（方案 C）：Hyperdub 首作、廣受評介；盤名含刪節號，聽眾 74 明顯錯配，照錨點給 3｜L=74",
     "previous": {
      "classic": 4,
-     "obscurity": 3,
+     "obscurity": 5,
      "accessibility": 2,
-     "source": "manual:rerate-20261101",
-     "checkedAt": "2026-11-01T00:00:00Z",
-     "note": "三軸重評（RUBRIC 2026-11-01）：Hyperdub 早期重要盤；正規廠；慢速 dub 詩｜主線：慢速dub＋柔聲人聲，照RUBRIC dub通常1–2",
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽非 ready → 5，L=74）3→5",
      "rarity": "uncommon"
     }
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2795,24 +2795,24 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-22 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 5,
+    "classic": 4,
     "obscurity": 2,
     "accessibility": 3,
     "listeners": 21093,
-    "source": "manual:rerate-20261101",
-    "checkedAt": "2026-11-01T00:00:00Z",
-    "note": "三軸重評（RUBRIC 2026-11-01）：遊戲原聲里程碑，industrial 遊戲配樂必提；Konami 廣泛流通→2；工業噪音片段多→3",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "note": "全池稽核 audit-20261102（方案 C）：系列配樂奠基作，但評價與影響力次於 SH2｜L=21093",
     "previous": {
-     "classic": 4,
-     "obscurity": 3,
-     "accessibility": 2,
-     "source": "worker /album-rating（obscurity:lastfm）",
-     "checkedAt": "2026-10-22T06:45:44Z",
-     "note": "機器基線 5/3/2（Last.fm listeners 21093）；主線：經典 5 不自動給，壓為 4",
-     "rarity": "uncommon"
+     "classic": 5,
+     "obscurity": 2,
+     "accessibility": 3,
+     "source": "manual:rerate-20261101",
+     "checkedAt": "2026-11-01T00:00:00Z",
+     "note": "三軸重評（RUBRIC 2026-11-01）：遊戲原聲里程碑，industrial 遊戲配樂必提；Konami 廣泛流通→2；工業噪音片段多→3",
+     "rarity": "epic"
     }
    },
-   "rarity": "epic",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,

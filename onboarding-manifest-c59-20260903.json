@@ -1296,23 +1296,24 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 4,
+    "classic": 3,
     "obscurity": 4,
-    "accessibility": 5,
+    "accessibility": 4,
     "listeners": 393,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
     "previous": {
      "classic": 4,
      "obscurity": 4,
-     "accessibility": 4,
-     "source": "manual:depth-rubric",
-     "checkedAt": "2026-08-31T00:00:00.000Z",
-     "rarity": "epic"
+     "accessibility": 5,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Oxley Incus 期代表作；L<1000 有串流→4；自由即興加電子",
+     "rarity": "legendary"
     },
-    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Oxley Incus 期代表作；L<1000 有串流→4；自由即興加電子"
+    "note": "全池稽核 audit-20261102（方案 C）：Incus 自由即興合奏含電子與小提琴；聽眾 393 有串流，下限 4；經典度降 3｜L=393"
    },
-   "rarity": "legendary",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1604,10 +1605,22 @@
    },
    "rarity": "legendary",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：classic=5（hall 最低門檻）；accessibility=5（heresy 最低門檻），但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "heresy",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為異端（該軸 7 星）。New Direction：無旋律無節奏、全程強音禁互動，近噪音的極端即興；超出一般自由爵士但勉強",
+    "evidenceUrls": [
+     "https://en.wikipedia.org/wiki/Masayuki_Takayanagi",
+     "https://en.wikipedia.org/wiki/Kaoru_Abe",
+     "https://www.discogs.com/search/?q=解体的交感"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：classic=5（hall 最低門檻）；accessibility=5（heresy 最低門檻），但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "他給團員的第三條指令是：聽別人在彈什麼並試圖配合，嚴格禁止。前兩條是「隨時都要吹強音」與「不准重複任何樂句」，下令的是帶領 New Direction 三重奏的高柳昌行。1970 年 6 月 28 日東京厚生年金會館的現場錄音由 Sound Creators Inc. 發行，高柳彈吉他並擔任構成，阿部薫吹中音薩克斯風、低音單簧管與口琴，內頁出自樂評人間章（Aquirax Aida）。兩人同年才認識；早期因為音量太大，幾乎只有東京的爵士喫茶「渚」肯讓他們演出。",
@@ -1745,10 +1758,18 @@
    },
    "rarity": "legendary",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。小廠／自發盤、聽眾<300，但壓量未見數百張以下的確據，也非收藏圈公認聖杯；只到 5",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "一家廠牌，兩張唱片，然後就沒錢了——這張是第二張。Muntu Records 是 Moondoc 自己開的，第一張《First Feeding》錄於 1977 年，廠牌最終因財務困難收攤。本作是 1979 年 3 月在紐約 St. Mark's Church 的現場錄音，整張碟只有兩首，〈Theme for Diane〉近二十分鐘。四重奏裡沒有鋼琴，和聲全靠中音薩克斯風與 Roy Campbell 的小號撐，貝斯是 William Parker。",
@@ -1816,10 +1837,18 @@
    },
    "rarity": "epic",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。India Navigation正規小廠，有日版與CD再發",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "這個六人編制裡沒有貝斯手，低音交給一把大提琴和一支低音號。大提琴是 Abdul Wadud，低音號是 Bob Stewart。1977 年 2 月在紐約 The Brook 現場錄音，同年由 India Navigation 發行，是 Arthur Blythe 的領班首作；那一晚的另一半 1979 年以《Metamorphosis》為名發行。六首裡〈Spirits in the Field〉出自 Frank Lowe，〈Lower Nile〉等其餘曲目由他自己寫。",
@@ -1956,10 +1985,18 @@
    },
    "rarity": "epic",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。小廠／自發盤、聽眾<300，但壓量未見數百張以下的確據，也非收藏圈公認聖杯；只到 5",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "上低音薩克斯風站到最前面，這件事在 1976 年的紐約已經算異數。他十歲起就認定這件樂器，本作四首全部由他所作，〈Ayana Nneke〉的副標寫明獻給他的女兒。他生於伊利諾州的 Brooklyn（又名 Lovejoy），那是 1830 年代作為自由黑人避難地建立的村鎮。錄音在 6 月 19 日的 Ladies' Fort 做成，由 India Navigation 發行；所謂 loft，是樂手自己經營、兼作住處與演出場地、入場只收低額捐款的空間。",
@@ -2141,21 +2178,22 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 5,
+    "classic": 4,
     "obscurity": 5,
     "accessibility": 4,
     "listeners": 224,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
     "previous": {
-     "classic": 4,
-     "obscurity": 4,
+     "classic": 5,
+     "obscurity": 5,
      "accessibility": 4,
-     "source": "manual:depth-rubric",
-     "checkedAt": "2026-08-31T00:00:00.000Z",
-     "rarity": "epic"
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：BAG 唯一錄音、聖路易前衛史必提，Aguirre 再發；私壓、L<1000 無試聽→5；自由爵士",
+     "rarity": "legendary"
     },
-    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：BAG 唯一錄音、聖路易前衛史必提，Aguirre 再發；私壓、L<1000 無試聽→5；自由爵士"
+    "note": "全池稽核 audit-20261102（方案 C）：BAG 自費現場盤，L=224 無串流下限5；自由爵士重要但非必提｜L=224"
    },
    "rarity": "legendary",
    "apexAssessment": {
@@ -2573,23 +2611,24 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 5,
+    "classic": 4,
     "obscurity": 4,
     "accessibility": 4,
     "listeners": 26963,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
     "previous": {
-     "classic": 4,
+     "classic": 5,
      "obscurity": 4,
      "accessibility": 4,
-     "source": "manual:depth-rubric",
-     "checkedAt": "2026-08-31T00:00:00.000Z",
-     "rarity": "epic"
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：自由爵士邪典里程碑、Corbett vs. Dempsey 考古再發；私壓有串流→4；火爆 fire music",
+     "rarity": "legendary"
     },
-    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：自由爵士邪典里程碑、Corbett vs. Dempsey 考古再發；私壓有串流→4；火爆 fire music"
+    "note": "全池稽核 audit-20261102（方案 C）：私壓自由爵士 cult 盤，有考古再發；非殿堂｜L=26963"
    },
-   "rarity": "legendary",
+   "rarity": "epic",
    "apexAssessment": {
     "eligible": false,
     "tier": null,

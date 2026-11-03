@@ -240,23 +240,24 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 5,
+    "classic": 4,
     "obscurity": 4,
     "accessibility": 3,
     "listeners": 1295,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
     "previous": {
-     "classic": 2,
+     "classic": 5,
      "obscurity": 4,
-     "accessibility": 4,
-     "source": "manual:depth-rubric",
-     "checkedAt": "2026-08-31T00:00:00.000Z",
-     "rarity": "uncommon"
+     "accessibility": 3,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：日本前衛/坎特伯里里程碑，日本 prog 史必提、屢次再版；L=1295 無串流→4；器樂爵士搖滾",
+     "rarity": "epic"
     },
-    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：日本前衛/坎特伯里里程碑，日本 prog 史必提、屢次再版；L=1295 無串流→4；器樂爵士搖滾"
+    "note": "全池稽核 audit-20261102（方案 C）：日本前衛搖滾代表作之一，場景內評價高但非首要里程碑｜L=1295"
    },
-   "rarity": "epic",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -548,10 +549,18 @@
    },
    "rarity": "epic",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。L25有效，但壓量無據、無收藏圈聖杯地位依據；屬5星冷門，不到7",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "唱片一九八四年壓出來，下一個版本要等到二〇一六年。原盤是 LLE Label 的 LLE-1007，錄音在東京方南町的 Green Studio，一九八四年三月到六月。五個人分掛吉他兼人聲、貝斯、鼓、鍵盤與合成器。Discogs 的廠牌條目寫 LLE 做的是日本的 prog、實驗與 new wave，八〇年代由 Marquee Moon 經營。五軌裡最長的〈Holly Ground Ceremony〉十分五十一秒；二〇一六年那次做成紙封套複刻。",
@@ -620,10 +629,18 @@
    },
    "rarity": "epic",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。Not On Label 原盤但已有 MIJ／Musea CD 正式再發，無壓量依據、非聖杯級；L=30",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "廠牌欄上寫的是 Not On Label，編號只有 Luna 001。一九八四年那張黑膠在 Discogs 上就只剩這些欄位。一九九七年法國 Musea 的 CD 才列出完整 credit：林克彦一人掛鍵盤、木吉他、直笛與全部詞曲和製作，另有貝斯、電吉他、鼓與兩位人聲。六軌從〈Sinfonia Della Luna〉的十八分二十秒到兩分鐘都有。他後來在一九八九年 CD 的內頁〈夢幻ヒストリー〉寫，樂團一九七八年由他與中村隆士、古田雅也組成，首作以自主制作的形式發表。",
@@ -1941,28 +1958,37 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 4,
+    "classic": 3,
     "obscurity": 5,
     "accessibility": 3,
     "listeners": 89,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
     "previous": {
-     "classic": 2,
-     "obscurity": 4,
-     "accessibility": 2,
-     "source": "manual:depth-rubric",
-     "checkedAt": "2026-08-31T00:00:00.000Z",
-     "rarity": "rare"
+     "classic": 4,
+     "obscurity": 5,
+     "accessibility": 3,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：唯一專輯，Exposé 評為 80 年代末日本交響前衛佳作；L 89 無串流→5；兩首 15 分鐘以上長篇",
+     "rarity": "epic"
     },
-    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：唯一專輯，Exposé 評為 80 年代末日本交響前衛佳作；L 89 無串流→5；兩首 15 分鐘以上長篇"
+    "note": "全池稽核 audit-20261102（方案 C）：Made in Japan 小型前衛搖滾廠唯一作，僅 1994 CD 再發、無串流；聽眾 89｜L=89"
    },
-   "rarity": "epic",
+   "rarity": "uncommon",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。小廠／自發盤、聽眾<300，但壓量未見數百張以下的確據，也非收藏圈公認聖杯；只到 5",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "《Exposé》的 Mike McLatchey 說，這裡的鍵盤帶著明確的 Genesis 味。那篇一九九五年三月一日刊出的評論還寫：這支團一九八八年只錄過這一張，音樂由一位出色的小提琴手與大量鍵盤音色主導，質地厚實而交響化；至於人聲，他寫的是與許多同期日本團相仿，尚可但偶有不穩。原盤 MIJ-1021LP 上只登了四首曲子，其中兩首超過十五分鐘，末軌十八分四十五秒；Discogs 的那筆條目沒有任何演奏或製作的 credit 欄。",
@@ -2031,10 +2057,18 @@
    },
    "rarity": "uncommon",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。Made In Japan Records 正規小廠 LP／CD 兩版，壓量無據，不到聖杯；L=5",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "第三軌的主唱是客座 Kazue Akao。同一份 credit 上，封面美術掛的是 Tomoki Ueno——這張一九八八年的 MIJ-1020LP 上，外人插手的地方就這兩處。其餘欄位是鍵盤手兼製作、主唱、貝斯與鼓，另有一人在七首裡的三首上彈木吉他與電吉他。曲名有兩個直接取自英美文學：〈The Lady Of Shalott〉出自 Tennyson 那首敘事詩；〈Dazzling Ligeia〉裡的 Ligeia，則是 Poe 一八三八年那篇短篇小說的女主角。",
@@ -2472,23 +2506,24 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 4,
+    "classic": 3,
     "obscurity": 5,
     "accessibility": 3,
     "listeners": 25,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
     "previous": {
-     "classic": 3,
-     "obscurity": 4,
-     "accessibility": 4,
-     "source": "manual:depth-rubric",
-     "checkedAt": "2026-08-31T00:00:00.000Z",
-     "rarity": "uncommon"
+     "classic": 4,
+     "obscurity": 5,
+     "accessibility": 3,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：首張、日本交響前衛代表盤；L 25 無串流→5；四首長篇、單曲 14 分",
+     "rarity": "epic"
     },
-    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：首張、日本交響前衛代表盤；L 25 無串流→5；四首長篇、單曲 14 分"
+    "note": "全池稽核 audit-20261102（方案 C）：原盤 B.S.P. 小廠，但 King Records 1990–2018 四度 CD 再發，收藏圈易得，不算流亡｜L=25"
    },
-   "rarity": "epic",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,

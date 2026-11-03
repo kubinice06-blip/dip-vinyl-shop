@@ -3100,21 +3100,22 @@
    "ratings": {
     "classic": 3,
     "obscurity": 4,
-    "accessibility": 5,
+    "accessibility": 4,
     "listeners": 213,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
     "previous": {
      "classic": 3,
-     "obscurity": 5,
-     "accessibility": 2,
-     "source": "worker:/album-rating",
-     "checkedAt": "2026-08-31T00:00:00.000Z",
-     "rarity": "uncommon"
+     "obscurity": 4,
+     "accessibility": 5,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Circle 時期自由即興檔案發行；L213＋ready 下限 4；22 分鐘 Drone、全自由即興",
+     "rarity": "epic"
     },
-    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Circle 時期自由即興檔案發行；L213＋ready 下限 4；22 分鐘 Drone、全自由即興"
+    "note": "全池稽核 audit-20261102（方案 C）：Corea 1968–70 自由即興場次合輯；無調但仍屬爵士語彙，硬蕊 4；聽眾 213 有串流→下限 4｜L=213"
    },
-   "rarity": "epic",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,

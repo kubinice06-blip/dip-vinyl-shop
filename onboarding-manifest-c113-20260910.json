@@ -1562,10 +1562,18 @@
    },
    "rarity": "rare",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。Disc Akabana 一般 CD，無壓量極小依據；L=5",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "一位八重山的唄者，整張碟用三線唱的是本土的舊流行歌。曲目表上是〈道頓堀行進曲〉〈磯節〉〈関の五本松〉〈ラッパ節〉，〈書生節〉點了盤名的題；〈書生節〉與〈ラッパ節〉這一路屬於明治末到昭和年間演歌師的曲目。〈磯節〉來自茨城的海岸，〈関の五本松〉來自島根県松江市美保関町，兩首都與八重山無關。",
@@ -1753,10 +1761,18 @@
    },
    "rarity": "uncommon",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。L17有效，Disc Akabana 地方廠CD，壓量無據；5星",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "前一天錄完同一位製作人自己的碟，隔天換她進同一間錄音室。她這張錄於 1991 年 10 月 29 至 30 日，混音排在同年 12 月 9 至 10 日，與製作人知名定男掛名的那張前後只差一兩天。十三軌一半是傳統曲、一半是新作，〈無情の唄〉的詞曲出自普久原朝喜之手。她在名單上只掛 Vocals，不掛任何樂器——三把三線、琉琴、太鼓與唯一那把吉他都由別人擔，這是把她的嗓子單獨推到前面的配置。",

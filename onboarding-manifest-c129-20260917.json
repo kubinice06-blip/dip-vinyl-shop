@@ -188,23 +188,24 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 4,
+    "classic": 3,
     "obscurity": 5,
     "accessibility": 4,
     "listeners": 18,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
     "previous": {
      "classic": 4,
-     "obscurity": 3,
-     "accessibility": 2,
-     "source": "manual:regional-rubric",
-     "checkedAt": "2026-08-31T00:00:00.000Z",
-     "rarity": "uncommon"
+     "obscurity": 5,
+     "accessibility": 4,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：SF緬甸系列第三輯、儀式卡帶錄音，該系列重要作／L=18無串流→5／神靈祭狂亂合奏回音",
+     "rarity": "legendary"
     },
-    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：SF緬甸系列第三輯、儀式卡帶錄音，該系列重要作／L=18無串流→5／神靈祭狂亂合奏回音"
+    "note": "全池稽核 audit-20261102（方案 C）：Sublime Frequencies 系列卷，有數位版；經典度 4→3｜L=18"
    },
-   "rarity": "legendary",
+   "rarity": "epic",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -335,23 +336,24 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 4,
+    "classic": 3,
     "obscurity": 5,
     "accessibility": 3,
     "listeners": 45,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
     "previous": {
      "classic": 4,
-     "obscurity": 3,
-     "accessibility": 2,
-     "source": "manual:regional-rubric",
-     "checkedAt": "2026-08-31T00:00:00.000Z",
-     "rarity": "uncommon"
+     "obscurity": 5,
+     "accessibility": 3,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：SF緬甸78轉考古，評價好／L=45無串流→5／古典唱腔與陌生編制",
+     "rarity": "epic"
     },
-    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：SF緬甸78轉考古，評價好／L=45無串流→5／古典唱腔與陌生編制"
+    "note": "全池稽核 audit-20261102（方案 C）：Sublime Frequencies 78 轉考古選輯，原盤為商業 78；經典度 4→3｜L=45"
    },
-   "rarity": "epic",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1254,10 +1256,18 @@
    },
    "rarity": "uncommon",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。L3有效，Galloway 民族田野LP，壓量無據、非收藏聖杯；5星",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "三位演奏者三種尺寸的笙：長管低音、中管中音、短管高音。1972 年由法國的 Galloway 壓成黑膠，收八軌，屬該廠牌世界音樂系列的第 26 號；錄音由音樂學者 Jacques Brunet 在同一年完成。A 面四軌是長管與中管兩位的曲目，其中一軌二重奏、一軌即興；B 面四軌全交給吹短管高音的那位。最長一軌八分二十二秒，最短的正是那段二重奏，只有兩分十三秒。資料庫端以 Laos 為題的盤裡，這張建檔年代最早。",
@@ -1849,10 +1859,18 @@
    },
    "rarity": "rare",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。地方小廠，壓量無據，2015 CD再發；不到傳說級稀有",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "1973 年雅加達的演出裡，主唱被吊起來、再放進一具棺材。在那之前他先跳上牆、再爬上屋瓦；特技配在哪一首歌上，來源只有一處說法。碟本身是 1972 年印尼 Indra 以 AKL-047 壓的 12 吋黑膠，編號緊接在前一張的 AKL - 029 之後，也是他們 1970 年代三張連續出版的最後一張。九軌裡兩個英文曲名、七個印尼文曲名，〈Crazy Joe〉開場、〈Bidadari〉收尾。",
@@ -2873,22 +2891,23 @@
    },
    "ratings": {
     "classic": 4,
-    "obscurity": 5,
+    "obscurity": 3,
     "accessibility": 2,
     "listeners": 10,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
     "previous": {
-     "classic": 2,
-     "obscurity": 3,
+     "classic": 4,
+     "obscurity": 5,
      "accessibility": 2,
-     "source": "manual:regional-rubric",
-     "checkedAt": "2026-08-31T00:00:00.000Z",
-     "rarity": "rare"
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：銷約40萬套、含〈ตายหยังเขียด〉，個人代表作／L=10無串流→5／雷鬼伊善民謠",
+     "rarity": "uncommon"
     },
-    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：銷約40萬套、含〈ตายหยังเขียด〉，個人代表作／L=10無串流→5／雷鬼伊善民謠"
+    "note": "全池稽核 audit-20261102（方案 C）：GMM Grammy 大廠黑膠，非私壓；非拉丁字母掛名，listeners 疑拆名錯配，不套下限，照錨點給 3｜L=10"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,

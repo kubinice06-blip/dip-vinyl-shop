@@ -2131,22 +2131,23 @@
    },
    "ratings": {
     "classic": 4,
-    "obscurity": 5,
+    "obscurity": 3,
     "accessibility": 3,
     "listeners": 45,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
     "previous": {
-     "classic": 3,
-     "obscurity": 3,
-     "accessibility": 4,
-     "source": "manual:regional-rubric",
-     "checkedAt": "2026-08-31T00:00:00.000Z",
-     "rarity": "uncommon"
+     "classic": 4,
+     "obscurity": 5,
+     "accessibility": 3,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：韓國朋克早期代表作；L45+試聽unavailable→5；粗糙朋克",
+     "rarity": "epic"
     },
-    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：韓國朋克早期代表作；L45+試聽unavailable→5；粗糙朋克"
+    "note": "全池稽核 audit-20261102（方案 C）：韓文盤名致 L45 疑錯配；Ponycanyon Korea 發行的韓國龐克一線作，照錨點 3｜L=45"
    },
-   "rarity": "epic",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,

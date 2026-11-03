@@ -188,27 +188,35 @@
    "ratings": {
     "classic": 3,
     "obscurity": 5,
-    "accessibility": 5,
+    "accessibility": 4,
     "listeners": 13,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
-    "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽非 ready → 5，L=13）3→5",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "note": "全池稽核 audit-20261102（方案 C）：拆改電器嗡鳴與磁帶，GROB 小廠、13 聽眾無串流；非極端噪音→異端否｜L=13",
     "previous": {
      "classic": 3,
-     "obscurity": 3,
+     "obscurity": 5,
      "accessibility": 5,
-     "source": "manual:rerate-20261101",
-     "checkedAt": "2026-11-01T00:00:00Z",
-     "note": "三軸重評（RUBRIC 2026-11-01）：Voice Crack 與里昂具象派合作；GROB 正規小廠；電聲磁帶噪音",
-     "rarity": "epic"
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽非 ready → 5，L=13）3→5",
+     "rarity": "legendary"
     }
    },
-   "rarity": "legendary",
+   "rarity": "epic",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。電器嗡鳴即興，極端度未到；壓量無據不足流亡",
     "evidenceUrls": [],
-    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 13），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 13），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "九段曲序排成一天：早晨、24 秒的停頓，再到午後。四個人的分工是：Voice Crack 兩人拆改電子器材，Jérôme Noetinger 與 Lionel Marchetti 操作麥克風、揚聲器與磁帶機。素材在 1999 年 12 月錄下。隔年夏天在里昂，具體音樂作曲家 Marchetti 把它重新編排，唱片於 2001 年發行。",
@@ -347,24 +355,24 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 3,
+    "classic": 2,
     "obscurity": 4,
     "accessibility": 5,
     "listeners": 6,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
-    "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽 ready → ≥4，L=6）3→4",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "note": "全池稽核 audit-20261102（方案 C）：三片迷你 CD 唱盤／電子即興；非二人代表作｜L=6",
     "previous": {
      "classic": 3,
-     "obscurity": 3,
+     "obscurity": 4,
      "accessibility": 5,
-     "source": "manual:rerate-20261101",
-     "checkedAt": "2026-11-01T00:00:00Z",
-     "note": "三軸重評（RUBRIC 2026-11-01）：三張迷你 CD 重混概念作，非代表作；AM 正規廠；唱盤電子",
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽 ready → ≥4，L=6）3→4",
      "rarity": "epic"
     }
    },
-   "rarity": "epic",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -430,22 +438,22 @@
    "ratings": {
     "classic": 3,
     "obscurity": 5,
-    "accessibility": 5,
+    "accessibility": 4,
     "listeners": 91,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
-    "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽非 ready → 5，L=91）3→5",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "note": "全池稽核 audit-20261102（方案 C）：唱盤具象拼貼首作，27 軌碎片；證據只到藝人層。聽眾 91 無串流→5｜L=91",
     "previous": {
      "classic": 3,
-     "obscurity": 3,
+     "obscurity": 5,
      "accessibility": 5,
-     "source": "manual:rerate-20261101",
-     "checkedAt": "2026-11-01T00:00:00Z",
-     "note": "三軸重評（RUBRIC 2026-11-01）：eRikm 首張；Sonoris 正規小廠；具象音樂唱盤拼貼",
-     "rarity": "epic"
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽非 ready → 5，L=91）3→5",
+     "rarity": "legendary"
     }
    },
-   "rarity": "legendary",
+   "rarity": "epic",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -522,10 +530,18 @@
    },
    "rarity": "epic",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。小廠／自發盤、聽眾<300，但壓量未見數百張以下的確據，也非收藏圈公認聖杯；只到 5",
     "evidenceUrls": [],
-    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 261），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 261），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "孩子玩耍、車流與電話聲，不時從噪音裡浮上來。這是兩位法國人第一次以二重奏相遇，Jérôme Noetinger 負責電聲裝置，eRikm 則操作唱盤與自製的 3-K.pad 系統。素材分兩次在馬賽即興錄下，一次是 2001 年 10 月，另一次隔到 2002 年 4 月，之後剪編成九首。接觸式麥克風的爆裂與重複之外，唱盤吐出髒污的靜電聲，被比作針尖刮金屬；這也是 eRikm 少見回頭用唱盤的作品。九首曲名取樹、玫瑰、雲、日與夜等意象，與唱片名相呼應。",
@@ -580,24 +596,24 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 3,
+    "classic": 2,
     "obscurity": 5,
-    "accessibility": 5,
+    "accessibility": 4,
     "listeners": 15,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
-    "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽非 ready → 5，L=15）3→5",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "note": "全池稽核 audit-20261102（方案 C）：裂解電子器材即興；聽眾 15、無串流→5；缺「極端」評論依據｜L=15",
     "previous": {
      "classic": 3,
-     "obscurity": 3,
+     "obscurity": 5,
      "accessibility": 5,
-     "source": "manual:rerate-20261101",
-     "checkedAt": "2026-11-01T00:00:00Z",
-     "note": "三軸重評（RUBRIC 2026-11-01）：Möslang 個人獨奏；For 4 Ears 正規小廠；破解電子噪音",
-     "rarity": "epic"
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽非 ready → 5，L=15）3→5",
+     "rarity": "legendary"
     }
    },
-   "rarity": "legendary",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -657,29 +673,37 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 3,
+    "classic": 2,
     "obscurity": 5,
-    "accessibility": 5,
+    "accessibility": 4,
     "listeners": 269,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
-    "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽非 ready → 5，L=269）3→5",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "note": "全池稽核 audit-20261102（方案 C）：三唱盤即興，Audioview 小廠、269 聽眾無串流；非代表作｜L=269",
     "previous": {
      "classic": 3,
-     "obscurity": 3,
+     "obscurity": 5,
      "accessibility": 5,
-     "source": "manual:rerate-20261101",
-     "checkedAt": "2026-11-01T00:00:00Z",
-     "note": "三軸重評（RUBRIC 2026-11-01）：Tétreault 早期唱盤獨奏；Audioview 小廠正常發行；三唱盤 25 張 LP 拼貼",
-     "rarity": "epic"
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽非 ready → 5，L=269）3→5",
+     "rarity": "legendary"
     }
    },
-   "rarity": "legendary",
+   "rarity": "uncommon",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。唱盤即興，非代表作；壓量無據不足流亡",
     "evidenceUrls": [],
-    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 269），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 269），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "3 台唱盤、1 個唱頭、25 張 LP，就是全部的聲源。Martin Tétreault 1957 年生於魁北克，以唱盤為創作基礎，名下超過 60 張發行。蒙特婁的家中工作室裡，他一個人錄成十首，曲名多取法文日常詞語，也有〈Telstar〉〈Orbite〉的太空意象。唱片 1997 年由比利時 Audioview 出版。",
@@ -734,24 +758,24 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 3,
+    "classic": 2,
     "obscurity": 5,
-    "accessibility": 5,
+    "accessibility": 4,
     "listeners": 0,
-    "source": "manual:rerate-20261101",
-    "checkedAt": "2026-11-01T00:00:00Z",
-    "note": "三軸重評（RUBRIC 2026-11-01）：Kerbaj／中村近年合作；Ftarri 限量 300 張；小號與無輸入混音台",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "note": "全池稽核 audit-20261102（方案 C）：小號＋無輸入混音台，300 張無串流；聽眾 0 視同缺值不判流亡｜L=0",
     "previous": {
      "classic": 3,
      "obscurity": 5,
-     "accessibility": 3,
-     "source": "worker /album-rating（obscurity:lastfm）",
-     "checkedAt": "2026-10-23T17:52:59Z",
-     "note": "機器基線 3/5/3（Last.fm listeners 0）",
-     "rarity": "uncommon"
+     "accessibility": 5,
+     "source": "manual:rerate-20261101",
+     "checkedAt": "2026-11-01T00:00:00Z",
+     "note": "三軸重評（RUBRIC 2026-11-01）：Kerbaj／中村近年合作；Ftarri 限量 300 張；小號與無輸入混音台",
+     "rarity": "legendary"
     }
    },
-   "rarity": "legendary",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -831,10 +855,18 @@
    },
    "rarity": "legendary",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。EAI極端動態，但無『史上最難入耳』公論；類型內5星",
     "evidenceUrls": [],
-    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 20），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 20），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "41 分鐘的音樂切成 42 軌，隨機播放時順序每次不同。那把吉他被 Keith Rowe 平放在桌上演奏，他是 AMM 的創始成員；Thomas Lehn 用類比合成器，Marcus Schmickler 操作電腦。三人 2002 年 6 月 19 至 20 日連續兩天在科隆錄成，每軌長約 26 秒到 1 分 45 秒。在樂評筆下，它時而近乎無聲、時而大聲到難以忍受，貼近聽力極限的高頻與歪扭的合成器噴射聲在其中交錯。Erstwhile 在 2003 年將它發行。",
@@ -988,10 +1020,18 @@
    },
    "rarity": "epic",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。小廠／自發盤、聽眾<300，但壓量未見數百張以下的確據，也非收藏圈公認聖杯；只到 5",
     "evidenceUrls": [],
-    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 114），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 114），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "寫了四個年頭的一首作品，獨佔整張 CD。eRikm 自稱創作「數位具體音樂」，早年從造形與視覺藝術出發。他以唱盤聞名，與 Luc Ferrari、Christian Marclay、大友良英等人即興合作過。這首作品的曲名就是專輯名，2010 年交給英國 Entr'acte 發行，首版限量 300 張。",
@@ -1440,29 +1480,37 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 4,
-    "obscurity": 4,
+    "classic": 3,
+    "obscurity": 5,
     "accessibility": 5,
     "listeners": 198,
-    "source": "manual:rerate-20261101",
-    "checkedAt": "2026-11-01T00:00:00Z",
-    "note": "三軸重評（RUBRIC 2026-11-01）：Kerbaj 代表作、黎巴嫩自由即興首張廠牌盤；Al Maslakh 限量 500、Bandcamp 可得；擴展技法小號",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "note": "全池稽核 audit-20261102（方案 C）：小號工業號叫、故障電器聲；500 張無串流；評論多為小眾部落格｜L=198",
     "previous": {
-     "classic": 3,
-     "obscurity": 5,
-     "accessibility": 3,
-     "source": "worker /album-rating（obscurity:lastfm）",
-     "checkedAt": "2026-10-23T17:52:59Z",
-     "note": "機器基線 3/5/3（Last.fm listeners 198）",
-     "rarity": "uncommon"
+     "classic": 4,
+     "obscurity": 4,
+     "accessibility": 5,
+     "source": "manual:rerate-20261101",
+     "checkedAt": "2026-11-01T00:00:00Z",
+     "note": "三軸重評（RUBRIC 2026-11-01）：Kerbaj 代表作、黎巴嫩自由即興首張廠牌盤；Al Maslakh 限量 500、Bandcamp 可得；擴展技法小號",
+     "rarity": "legendary"
     }
    },
    "rarity": "legendary",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。500張限量但非聖杯地位；小號即興極端度僅5星",
     "evidenceUrls": [],
-    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 198），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 198），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "〈Pshshssshsssshp〉是曲名，也是小號的聲音。在內戰時期的貝魯特長大的 Mazen Kerbaj，是黎巴嫩的小號手，從 1990 年代起就在本地俱樂部吹自由爵士。唱片 2005 年交由黎巴嫩廠牌 Al Maslakh 發行，目錄號是 MSLKH 001。錄音分在兩地進行：紐約那場是 2004 年 8 月，Dahr el Souan 那場在 2005 年 1 月，地點在黎巴嫩。15 首的曲名都取自擬聲字，評論聽見工業般的號叫、故障的電器、遠處的直升機與鳥的啁啾。",
@@ -1517,21 +1565,21 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 3,
-    "obscurity": 4,
+    "classic": 2,
+    "obscurity": 5,
     "accessibility": 5,
     "listeners": 46,
-    "source": "manual:rerate-20261101",
-    "checkedAt": "2026-11-01T00:00:00Z",
-    "note": "三軸重評（RUBRIC 2026-11-01）：Dörner／Kerbaj 首張二重奏；Al Maslakh 小廠、Bandcamp 可得；嘶嘶轟鳴擴展技法",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "note": "全池稽核 audit-20261102（方案 C）：擴展技法小號噪音，評「轟鳴嘎啦嘶嘶」；新盤影響力小，強度低｜L=46",
     "previous": {
      "classic": 3,
-     "obscurity": 5,
-     "accessibility": 3,
-     "source": "worker /album-rating（obscurity:lastfm）",
-     "checkedAt": "2026-10-23T17:52:59Z",
-     "note": "機器基線 3/5/3（Last.fm listeners 46）",
-     "rarity": "uncommon"
+     "obscurity": 4,
+     "accessibility": 5,
+     "source": "manual:rerate-20261101",
+     "checkedAt": "2026-11-01T00:00:00Z",
+     "note": "三軸重評（RUBRIC 2026-11-01）：Dörner／Kerbaj 首張二重奏；Al Maslakh 小廠、Bandcamp 可得；嘶嘶轟鳴擴展技法",
+     "rarity": "epic"
     }
    },
    "rarity": "epic",
@@ -1593,24 +1641,24 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-23 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 3,
+    "classic": 2,
     "obscurity": 5,
     "accessibility": 5,
     "listeners": 4,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
-    "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽非 ready → 5，L=4）3→5",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "note": "全池稽核 audit-20261102（方案 C）：同路線續作，影響力更小；異端強度不足，4 聽眾無串流｜L=4",
     "previous": {
      "classic": 3,
-     "obscurity": 3,
+     "obscurity": 5,
      "accessibility": 5,
-     "source": "manual:rerate-20261101",
-     "checkedAt": "2026-11-01T00:00:00Z",
-     "note": "三軸重評（RUBRIC 2026-11-01）：Kerbaj 第二張獨奏小號；Discrepant 正規廠；尖叫嘶鳴擴展技法",
-     "rarity": "epic"
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽非 ready → 5，L=4）3→5",
+     "rarity": "legendary"
     }
    },
-   "rarity": "legendary",
+   "rarity": "epic",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1826,24 +1874,24 @@
     "visuallyVerified": true
    },
    "ratings": {
-    "classic": 3,
+    "classic": 2,
     "obscurity": 5,
     "accessibility": 5,
     "listeners": 10,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
-    "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽非 ready → 5，L=10）4→5",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "note": "全池稽核 audit-20261102（方案 C）：Creative Sources 限量雙人延伸技法即興，評論極少；10 聽眾→5｜L=10",
     "previous": {
      "classic": 3,
-     "obscurity": 4,
+     "obscurity": 5,
      "accessibility": 5,
-     "source": "manual:rerate-20261101",
-     "checkedAt": "2026-11-01T00:00:00Z",
-     "note": "三軸重評（RUBRIC 2026-11-01）：Evans／Blancarte 二重奏；Creative Sources 限量、數位可得；自由即興",
-     "rarity": "epic"
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽非 ready → 5，L=10）4→5",
+     "rarity": "legendary"
     }
    },
-   "rarity": "legendary",
+   "rarity": "epic",
    "apexAssessment": {
     "eligible": false,
     "tier": null,

@@ -435,14 +435,23 @@
       },
       "ratings": {
         "classic": 4,
-        "obscurity": 4,
+        "obscurity": 5,
         "accessibility": 2,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-21T20:27:45Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Ethio-jazz 成形前夜的最早錄音，史料地位明確但屬深度愛好者領域；拉丁節奏鋪底，入耳不難。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：衣索比亞爵士先驅早期紐約錄音，小廠原盤，已有再發｜L=374",
+        "previous": {
+          "classic": 4,
+          "obscurity": 4,
+          "accessibility": 2,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-21T20:27:45Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Ethio-jazz 成形前夜的最早錄音，史料地位明確但屬深度愛好者領域；拉丁節奏鋪底，入耳不難。",
+          "rarity": "rare"
+        }
       },
-      "rarity": "rare",
+      "rarity": "uncommon",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -864,13 +873,21 @@
       },
       "rarity": "rare",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "2003 年《滾石》500 大專輯第 198 名、1991 年入選藍調基金會名人堂「Classics of Blues Recordings – Album」，錄音者本人 2008 年以唯一口琴手身分入選搖滾名人堂，跨來源長期共識明確。",
-        "evidenceUrls": [
-          "https://en.wikipedia.org/wiki/The_Best_of_Little_Walter",
-          "https://en.wikipedia.org/wiki/Little_Walter"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。RS500、1001 有收，芝加哥藍調正典，但非藍調樂迷少知，屬 5 星",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "2003 年《滾石》500 大專輯第 198 名、1991 年入選藍調基金會名人堂「Classics of Blues Recordings – Album」，錄音者本人 2008 年以唯一口琴手身分入選搖滾名人堂，跨來源長期共識明確。",
+          "evidenceUrls": [
+            "https://en.wikipedia.org/wiki/The_Best_of_Little_Walter",
+            "https://en.wikipedia.org/wiki/Little_Walter"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "Checker 廠 1957 年編號 LP-1428 的單曲結集，是 Marion Walter Jacobs（1930–1968）生前發行的唯一專輯，收 1952 至 1955 年間十首打進告示牌 R&B 榜前十的錄音與兩首 B 面。他把麥克風連同口琴一起捧在掌心送進擴大機，刻意逼出破音；〈Juke〉在該榜連冠八週，至今仍是唯一登頂的口琴器樂曲。2003 年《滾石》把此盤列為 500 大專輯第 198 名。",
@@ -1074,23 +1091,40 @@
         "visuallyVerified": true
       },
       "ratings": {
-        "classic": 5,
+        "classic": 4,
         "obscurity": 2,
-        "accessibility": 3,
+        "accessibility": 2,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-21T20:27:45Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；古典女聲藍調的定義者，搖滾名人堂與葛萊美終身成就雙重認證；官方雙碟精選流通廣，但 1920 年代蟲膠母源的音質對現代耳朵仍有門檻。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：藝人正典錄音，但這是 1997 合輯，無針對本輯的正典共識；殿堂不成立",
+        "previous": {
+          "classic": 5,
+          "obscurity": 2,
+          "accessibility": 3,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-21T20:27:45Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；古典女聲藍調的定義者，搖滾名人堂與葛萊美終身成就雙重認證；官方雙碟精選流通廣，但 1920 年代蟲膠母源的音質對現代耳朵仍有門檻。",
+          "rarity": "epic"
+        }
       },
-      "rarity": "epic",
+      "rarity": "rare",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "Bessie Smith 1989 年同時入選搖滾名人堂與葛萊美終身成就獎，被公認為古典女聲藍調的核心人物，這套 Columbia 官方雙碟是其 1923–33 年錄音的標準文獻。",
-        "evidenceUrls": [
-          "https://en.wikipedia.org/wiki/Bessie_Smith",
-          "https://musicbrainz.org/release-group/d8c3eec2-f73d-33f0-881b-09a5346a0a4e"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。1997 合輯，無針對本輯的正典共識",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "Bessie Smith 1989 年同時入選搖滾名人堂與葛萊美終身成就獎，被公認為古典女聲藍調的核心人物，這套 Columbia 官方雙碟是其 1923–33 年錄音的標準文獻。",
+          "evidenceUrls": [
+            "https://en.wikipedia.org/wiki/Bessie_Smith",
+            "https://musicbrainz.org/release-group/d8c3eec2-f73d-33f0-881b-09a5346a0a4e"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "Columbia／Legacy 於 1997 年推出的雙碟精選，從藍調皇后 1923 至 1933 年間約一百六十首 Columbia 錄音裡挑出三十六首：與 Louis Armstrong 合作的〈St. Louis Blues〉、〈Backwater Blues〉、〈Nobody Knows You When You're Down and Out〉俱在。她的女低音不靠麥克風也能壓過整團，伴奏名單還有 Fletcher Henderson、James P. Johnson；1989 年入選搖滾名人堂。",
@@ -1149,23 +1183,40 @@
         "visuallyVerified": true
       },
       "ratings": {
-        "classic": 5,
-        "obscurity": 4,
-        "accessibility": 4,
+        "classic": 4,
+        "obscurity": 3,
+        "accessibility": 3,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-21T20:27:45Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；錄音史上第一代職業藍調歌手，藍調名人堂與搖滾名人堂雙認證；但五碟全集規格與 Paramount 蟲膠盤的重雜訊，把它推向深度愛好者領域。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：Ma Rainey 錄音重要，但此為 2007 合輯，無榜單正典地位；1920 年代音質門檻硬蕊度 4→3",
+        "previous": {
+          "classic": 5,
+          "obscurity": 4,
+          "accessibility": 4,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-21T20:27:45Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；錄音史上第一代職業藍調歌手，藍調名人堂與搖滾名人堂雙認證；但五碟全集規格與 Paramount 蟲膠盤的重雜訊，把它推向深度愛好者領域。",
+          "rarity": "legendary"
+        }
       },
-      "rarity": "legendary",
+      "rarity": "uncommon",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "Ma Rainey 1983 年入藍調名人堂、1990 年入搖滾名人堂，是女聲藍調傳統的源頭；此套 JSP 五碟收齊她 1923–28 年 Paramount 全部錄音，為該領域核心文獻。",
-        "evidenceUrls": [
-          "https://en.wikipedia.org/wiki/Ma_Rainey",
-          "https://musicbrainz.org/release-group/25390e26-80a4-442e-bb81-deb86a5e3d81"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。2007 合輯，無歷代榜地位",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "Ma Rainey 1983 年入藍調名人堂、1990 年入搖滾名人堂，是女聲藍調傳統的源頭；此套 JSP 五碟收齊她 1923–28 年 Paramount 全部錄音，為該領域核心文獻。",
+          "evidenceUrls": [
+            "https://en.wikipedia.org/wiki/Ma_Rainey",
+            "https://musicbrainz.org/release-group/25390e26-80a4-442e-bb81-deb86a5e3d81"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "JSP 在 2007 年以五碟規格收齊藍調之母 1923 至 1928 年的 Paramount 錄音，〈Bo-Weavil Blues〉〈See See Rider Blues〉〈Ma Rainey's Black Bottom〉〈Prove It on Me Blues〉與多組替換版本俱在。她由 Paramount 製作人 J. Mayo Williams 發掘，五年間錄下九十餘個曲目，伴奏名單有 Louis Armstrong、Coleman Hawkins 與 Tommy Ladnier。母源來自蟲膠唱片，雜訊重而唱腔厚實。",
@@ -1293,22 +1344,39 @@
       "ratings": {
         "classic": 5,
         "obscurity": 3,
-        "accessibility": 4,
+        "accessibility": 3,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-21T20:27:45Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；三角洲藍調的開山者，藍調名人堂、搖滾名人堂早期影響與國家錄音登記簿三重認證；但 1929–34 年蟲膠翻製、含糊唱詞與粗礪敲擊節奏，入耳門檻高。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：Patton 標準合輯經典度 5，但合輯本身無 1001／RS500 等跨來源列名；殿堂不成立",
+        "previous": {
+          "classic": 5,
+          "obscurity": 3,
+          "accessibility": 4,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-21T20:27:45Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；三角洲藍調的開山者，藍調名人堂、搖滾名人堂早期影響與國家錄音登記簿三重認證；但 1929–34 年蟲膠翻製、含糊唱詞與粗礪敲擊節奏，入耳門檻高。",
+          "rarity": "legendary"
+        }
       },
-      "rarity": "legendary",
+      "rarity": "epic",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "Patton 1980 年入藍調名人堂、2021 年入搖滾名人堂早期影響類，〈Pony Blues〉2006 年進美國國家錄音登記簿；Yazoo 這套結集長期被當作他作品的標準入口，屬三角洲藍調的起源文獻。",
-        "evidenceUrls": [
-          "https://en.wikipedia.org/wiki/Charley_Patton",
-          "https://musicbrainz.org/release-group/05277d2a-5b15-3158-bf88-acfd24a7d1c1",
-          "https://en.wikipedia.org/wiki/Yazoo_Records"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。重要合輯，但綜合歷代榜未列",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "Patton 1980 年入藍調名人堂、2021 年入搖滾名人堂早期影響類，〈Pony Blues〉2006 年進美國國家錄音登記簿；Yazoo 這套結集長期被當作他作品的標準入口，屬三角洲藍調的起源文獻。",
+          "evidenceUrls": [
+            "https://en.wikipedia.org/wiki/Charley_Patton",
+            "https://musicbrainz.org/release-group/05277d2a-5b15-3158-bf88-acfd24a7d1c1",
+            "https://en.wikipedia.org/wiki/Yazoo_Records"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "Yazoo 從三角洲藍調開山者 1929 至 1934 年的 Paramount 與 Vocalion 蟲膠原盤翻製的結集，〈Pony Blues〉〈High Water Everywhere〉〈Screamin' and Hollerin' the Blues〉〈A Spoonful Blues〉〈Down the Dirt Road Blues〉俱在。Patton 的沙啞喉音與敲擊式節奏吉他直接餵養了 Son House、Howlin' Wolf 與 Robert Johnson；〈Pony Blues〉2006 年入選美國國家錄音登記簿。",
@@ -1733,14 +1801,23 @@
       },
       "ratings": {
         "classic": 4,
-        "obscurity": 4,
-        "accessibility": 2,
+        "obscurity": 3,
+        "accessibility": 1,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-21T20:27:45Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Piedmont 藍調戰前銷量之王，Yazoo 結集是標準入口；交替低音指法輕快好入耳，但今日屬深度愛好者領域。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：戰前皮德蒙藍調名家精選｜L=16570",
+        "previous": {
+          "classic": 4,
+          "obscurity": 4,
+          "accessibility": 2,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-21T20:27:45Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Piedmont 藍調戰前銷量之王，Yazoo 結集是標準入口；交替低音指法輕快好入耳，但今日屬深度愛好者領域。",
+          "rarity": "rare"
+        }
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -1799,22 +1876,39 @@
       "ratings": {
         "classic": 5,
         "obscurity": 3,
-        "accessibility": 4,
+        "accessibility": 3,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-21T20:27:45Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；1931 年 Paramount 全部錄音，open D-minor 調弦配假聲的孤例，戰前三角洲最獨特的個人風格；陰冷小調與蟲膠母源讓入耳門檻偏高。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：1931 Paramount 錄音是戰前藍調核心，但合輯版本不列殿堂；硬蕊 4 過高，原始藍調給 3",
+        "previous": {
+          "classic": 5,
+          "obscurity": 3,
+          "accessibility": 4,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-21T20:27:45Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；1931 年 Paramount 全部錄音，open D-minor 調弦配假聲的孤例，戰前三角洲最獨特的個人風格；陰冷小調與蟲膠母源讓入耳門檻偏高。",
+          "rarity": "legendary"
+        }
       },
-      "rarity": "legendary",
+      "rarity": "epic",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "1931 年這批 Paramount 錄音是戰前藍調公認的核心文獻，〈Devil Got My Woman〉2020 年入葛萊美名人堂，1964 年 James 被重新發掘更直接觸發美國藍調復興，跨來源共識充分。",
-        "evidenceUrls": [
-          "https://en.wikipedia.org/wiki/Skip_James",
-          "https://musicbrainz.org/release-group/17a104a6-ff4b-492a-b772-26b0aa0142a3",
-          "https://en.wikipedia.org/wiki/Yazoo_Records"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。戰前藍調核心錄音，但為合輯版本，不列殿堂",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "1931 年這批 Paramount 錄音是戰前藍調公認的核心文獻，〈Devil Got My Woman〉2020 年入葛萊美名人堂，1964 年 James 被重新發掘更直接觸發美國藍調復興，跨來源共識充分。",
+          "evidenceUrls": [
+            "https://en.wikipedia.org/wiki/Skip_James",
+            "https://musicbrainz.org/release-group/17a104a6-ff4b-492a-b772-26b0aa0142a3",
+            "https://en.wikipedia.org/wiki/Yazoo_Records"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "Nehemiah Curtis James 在 1931 年前往威斯康辛州 Grafton 為 Paramount 錄下的全部曲目，〈Devil Got My Woman〉〈Hard Time Killing Floor Blues〉〈I'm So Glad〉〈22-20 Blues〉都在其中。他用 Henry Stuckey 傳下的 open D-minor 調弦配假聲高音，唱出戰前三角洲最陰冷的聲響。這批唱片因大蕭條滯銷，他轉去教會帶詩班；直到 1964 年 John Fahey 等人在醫院找到他、送上新港民謠節，錄音才真正流通。",
@@ -1872,23 +1966,40 @@
       },
       "ratings": {
         "classic": 5,
-        "obscurity": 1,
+        "obscurity": 2,
         "accessibility": 2,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-21T20:27:45Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Chess 第一張 Muddy LP，芝加哥電氣藍調單曲群的定義性結集，1983 年入藍調基金會名人堂；入門常客，曲式直白但錄音粗礪。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：1001 Albums 收錄，Chess 單曲匯編為藍調核心；冷門 1 略低，給 2",
+        "previous": {
+          "classic": 5,
+          "obscurity": 1,
+          "accessibility": 2,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-21T20:27:45Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Chess 第一張 Muddy LP，芝加哥電氣藍調單曲群的定義性結集，1983 年入藍調基金會名人堂；入門常客，曲式直白但錄音粗礪。",
+          "rarity": "uncommon"
+        }
       },
       "rarity": "uncommon",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "藍調基金會名人堂 1983 年以「經典藍調錄音」名義列入，且為 Chess 首張藝人 LP、戰後芝加哥藍調的定義文獻，跨來源長期共識足列該領域核心。",
-        "evidenceUrls": [
-          "https://en.wikipedia.org/wiki/The_Best_of_Muddy_Waters",
-          "https://en.wikipedia.org/wiki/Blues_Hall_of_Fame",
-          "https://musicbrainz.org/release-group/53a41b1c-9f5d-3873-a90a-16bdc50ca915"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。Chess 單曲匯編，藍調核心＝類型 5 星，拿不準判 none",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "藍調基金會名人堂 1983 年以「經典藍調錄音」名義列入，且為 Chess 首張藝人 LP、戰後芝加哥藍調的定義文獻，跨來源長期共識足列該領域核心。",
+          "evidenceUrls": [
+            "https://en.wikipedia.org/wiki/The_Best_of_Muddy_Waters",
+            "https://en.wikipedia.org/wiki/Blues_Hall_of_Fame",
+            "https://musicbrainz.org/release-group/53a41b1c-9f5d-3873-a90a-16bdc50ca915"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "Chess 1958 年 4 月發行，Muddy Waters 的首張 LP，十二首曲目原為 1948 至 1954 年的單曲，多數進過 Billboard 節奏藍調榜前十。Little Walter 的口琴、Otis Spann 的鋼琴、Jimmy Rogers 的第二吉他撐起 Chicago blues 的標準編制，解說由 Studs Terkel 執筆。1983 年獲藍調基金會名人堂列為經典藍調錄音。",
@@ -2452,14 +2563,23 @@
       },
       "ratings": {
         "classic": 4,
-        "obscurity": 4,
-        "accessibility": 3,
+        "obscurity": 3,
+        "accessibility": 2,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-21T20:27:45Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；1959 年 Lomax 南方之旅的成套整編，美國南部最早的立體聲田野錄音、Fred McDowell 的發掘現場；四碟田野素材屬深度愛好者。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：Alan Lomax 1959 南方田野錄音的 Atlantic 套盒，田野錄音正典之一｜L=28478",
+        "previous": {
+          "classic": 4,
+          "obscurity": 4,
+          "accessibility": 3,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-21T20:27:45Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；1959 年 Lomax 南方之旅的成套整編，美國南部最早的立體聲田野錄音、Fred McDowell 的發掘現場；四碟田野素材屬深度愛好者。",
+          "rarity": "uncommon"
+        }
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -2600,14 +2720,22 @@
       },
       "rarity": "rare",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "《滾石》五百大三個版本皆入榜、Christgau 基本唱片庫收錄，且是首度不加假立體聲與後製配唱的整編，公認為鄉村樂錄音史的核心文獻。",
-        "evidenceUrls": [
-          "https://en.wikipedia.org/wiki/40_Greatest_Hits_(Hank_Williams_album)",
-          "https://en.wikipedia.org/wiki/Rolling_Stone%27s_500_Greatest_Albums_of_All_Time",
-          "https://musicbrainz.org/release-group/4a48eaed-2b09-3147-b310-187bfc692849"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。精選輯，RS500(2003) 有收但非跨類型核心正典，拿不準",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "《滾石》五百大三個版本皆入榜、Christgau 基本唱片庫收錄，且是首度不加假立體聲與後製配唱的整編，公認為鄉村樂錄音史的核心文獻。",
+          "evidenceUrls": [
+            "https://en.wikipedia.org/wiki/40_Greatest_Hits_(Hank_Williams_album)",
+            "https://en.wikipedia.org/wiki/Rolling_Stone%27s_500_Greatest_Albums_of_All_Time",
+            "https://musicbrainz.org/release-group/4a48eaed-2b09-3147-b310-187bfc692849"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "Mercury 在 1978 年、Hank Williams 逝世二十五週年推出的雙唱片，四十首依年序從〈Move It on Over〉排起。相較 MGM 早年那些加了假立體聲、後製配唱甚至與兒子拼接對唱的版本，這套首度讓錄音回到原始樣貌，也成為他生涯銷量最高的唱片。2003 年《滾石》五百大專輯列第九十四名。",
@@ -3148,13 +3276,21 @@
       },
       "rarity": "uncommon",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "Falceto 自此卷起以 Buda Musique 建立 Éthiopiques 系列，二十餘年間出到三十餘卷，成為衣索比亞現代音樂在國際上被引用、討論與再發行的共同基礎，開卷地位跨來源長期公認。",
-        "evidenceUrls": [
-          "https://en.wikipedia.org/wiki/%C3%89thiopiques",
-          "https://musicbrainz.org/release-group/0db53d52-a2f7-3ce6-b223-d11cb14dfe3c"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。考古系列首輯，類型級，系列內 Vol.4 更常被列",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "Falceto 自此卷起以 Buda Musique 建立 Éthiopiques 系列，二十餘年間出到三十餘卷，成為衣索比亞現代音樂在國際上被引用、討論與再發行的共同基礎，開卷地位跨來源長期公認。",
+          "evidenceUrls": [
+            "https://en.wikipedia.org/wiki/%C3%89thiopiques",
+            "https://musicbrainz.org/release-group/0db53d52-a2f7-3ce6-b223-d11cb14dfe3c"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "法國製作人 Francis Falceto 1997 年為 Buda Musique 開啟 Éthiopiques 系列的第一卷，取材自 Amha Records、Kaifa Records 與 Philips-Ethiopia 在 1969 至 1975 年間發行的單曲與唱片。Muluqèn Mèllèssè、Mahmoud Ahmed、Bahta Gèbrè-Heywèt 與 Sèyfou Yohannès 等人以五聲調式唱腔配上管樂編制，把衣索比亞黃金年代第一次完整帶進國際市場。",
@@ -3610,14 +3746,23 @@
       },
       "ratings": {
         "classic": 5,
-        "obscurity": 4,
-        "accessibility": 2,
+        "obscurity": 3,
+        "accessibility": 1,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-21T20:27:45Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；剛果倫巴最大體系的生涯回顧，Franco 地位跨來源可查；世界音樂樂迷領域外少見，但舞曲律動直白好入耳。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：Sterns 回顧輯，剛果倫巴正典但為合輯；正規國際發行→3",
+        "previous": {
+          "classic": 5,
+          "obscurity": 4,
+          "accessibility": 2,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-21T20:27:45Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；剛果倫巴最大體系的生涯回顧，Franco 地位跨來源可查；世界音樂樂迷領域外少見，但舞曲律動直白好入耳。",
+          "rarity": "uncommon"
+        }
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -3678,15 +3823,24 @@
         "visuallyVerified": true
       },
       "ratings": {
-        "classic": 5,
+        "classic": 4,
         "obscurity": 4,
-        "accessibility": 2,
+        "accessibility": 1,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-21T20:27:45Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Mensah 是公認的 highlife 開創者、戰後西非跨國流行樂建立者；這批 1950 年代錄音在一般玩家圈外流通，但管樂舞曲節奏明快易入耳。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：highlife 宗師考古合輯，RetroAfric 再發；非殿堂",
+        "previous": {
+          "classic": 5,
+          "obscurity": 4,
+          "accessibility": 2,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-21T20:27:45Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Mensah 是公認的 highlife 開創者、戰後西非跨國流行樂建立者；這批 1950 年代錄音在一般玩家圈外流通，但管樂舞曲節奏明快易入耳。",
+          "rarity": "uncommon"
+        }
       },
-      "rarity": "uncommon",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -3822,15 +3976,24 @@
         "visuallyVerified": true
       },
       "ratings": {
-        "classic": 5,
-        "obscurity": 4,
+        "classic": 4,
+        "obscurity": 3,
         "accessibility": 2,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-21T20:27:45Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；與 Franco 並立的剛果倫巴另一主線，地位跨來源可查；世界音樂領域以外少見，但歌唱旋律與舞曲節奏平易。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：Sterns 精選合輯，經典度4；正規小廠流通冷門3",
+        "previous": {
+          "classic": 5,
+          "obscurity": 4,
+          "accessibility": 2,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-21T20:27:45Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；與 Franco 並立的剛果倫巴另一主線，地位跨來源可查；世界音樂領域以外少見，但歌唱旋律與舞曲節奏平易。",
+          "rarity": "uncommon"
+        }
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -3886,15 +4049,24 @@
         "visuallyVerified": true
       },
       "ratings": {
-        "classic": 5,
+        "classic": 4,
         "obscurity": 4,
         "accessibility": 2,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-21T20:27:45Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；現代剛果流行樂之父的完整回顧，〈Indépendance Cha Cha〉的泛非象徵地位跨來源可查；圈外罕見但曲式輕快好入耳。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：Sterns 2013 回顧合輯，剛果現代音樂奠基者整理；合輯經典 5→4",
+        "previous": {
+          "classic": 5,
+          "obscurity": 4,
+          "accessibility": 2,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-21T20:27:45Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；現代剛果流行樂之父的完整回顧，〈Indépendance Cha Cha〉的泛非象徵地位跨來源可查；圈外罕見但曲式輕快好入耳。",
+          "rarity": "uncommon"
+        }
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -4099,14 +4271,22 @@
       },
       "rarity": "uncommon",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "南非 mbaqanga 進入西方視野的分水嶺選輯，《滾石》五百大兩版皆入選、Robert Christgau 給 A+ 並稱其為八〇年代最重要的唱片、Pitchfork 八〇年代最佳專輯第 159 名，跨來源長期共識足列世界音樂史核心。",
-        "evidenceUrls": [
-          "https://en.wikipedia.org/wiki/The_Indestructible_Beat_of_Soweto",
-          "https://en.wikipedia.org/wiki/Rolling_Stone%27s_500_Greatest_Albums_of_All_Time",
-          "https://musicbrainz.org/release-group/afa0750e-eee6-320f-845a-ad0ae891bd9b"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。非洲流行樂入門正典，類型級 5",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "南非 mbaqanga 進入西方視野的分水嶺選輯，《滾石》五百大兩版皆入選、Robert Christgau 給 A+ 並稱其為八〇年代最重要的唱片、Pitchfork 八〇年代最佳專輯第 159 名，跨來源長期共識足列世界音樂史核心。",
+          "evidenceUrls": [
+            "https://en.wikipedia.org/wiki/The_Indestructible_Beat_of_Soweto",
+            "https://en.wikipedia.org/wiki/Rolling_Stone%27s_500_Greatest_Albums_of_All_Time",
+            "https://musicbrainz.org/release-group/afa0750e-eee6-320f-845a-ad0ae891bd9b"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "1985 年 4 月由英國 Earthworks 推出的十二首選輯，把南非黑人城鎮的 mbaqanga、maskanda 與 isicathamiya 並置：Mahlathini Nezintombi Zomgqashiyo 的〈Emthonjeni Womculo〉、Ladysmith Black Mambazo 的〈Nansi Imali〉都在其中。編選者 Jumbo Vanrenen 與 Trevor Herman 趕在 Paul Simon《Graceland》之前把這批聲音送到西方聽眾面前，Robert Christgau 給了 A+。",

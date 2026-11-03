@@ -312,23 +312,24 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 4,
+    "classic": 3,
     "obscurity": 5,
     "accessibility": 2,
     "listeners": 101,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
     "previous": {
-     "classic": 3,
-     "obscurity": 4,
+     "classic": 4,
+     "obscurity": 5,
      "accessibility": 2,
-     "source": "manual:depth-rubric",
-     "checkedAt": "2026-08-31T00:00:00.000Z",
-     "rarity": "rare"
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：出道專輯、filter house 代表作；L101＋unavailable→5；律動浩室",
+     "rarity": "uncommon"
     },
-    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：出道專輯、filter house 代表作；L101＋unavailable→5；律動浩室"
+    "note": "全池稽核 audit-20261102（方案 C）：Ultra/Relief 正規舞曲廠發行，非私壓；DJ Sneak 首張，芝加哥 house 二線｜L=101"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1061,10 +1062,18 @@
    },
    "rarity": "common",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。小廠12吋，壓量無據，非收藏圈聖杯；只到一般冷門",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "整張三軌是同一首的三種版本，連清唱那版都有五分三十七秒。1988 年 7 月的那張 12 吋上，Club Mix 是 6 分 53 秒、Acid Mix 是 7 分 36 秒，最長的一軌擺在最後。十二吋時代最典型的編排就是這樣——不給不同的曲子，只給同一首的不同拆法，讓 DJ 自己選要放哪一面。碟上的掛名寫成 Adonis Featuring M.C. Kodak，廠牌是 Black Market International。",
@@ -1823,22 +1832,23 @@
    },
    "ratings": {
     "classic": 4,
-    "obscurity": 5,
+    "obscurity": 4,
     "accessibility": 2,
     "listeners": 53,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
     "previous": {
-     "classic": 2,
-     "obscurity": 4,
+     "classic": 4,
+     "obscurity": 5,
      "accessibility": 2,
-     "source": "manual:depth-rubric",
-     "checkedAt": "2026-08-31T00:00:00.000Z",
-     "rarity": "rare"
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Kelli Hand 主要長篇、!K7 第一號／L53＋試聽 unavailable→5／底特律 house-techno 律動",
+     "rarity": "uncommon"
     },
-    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Kelli Hand 主要長篇、!K7 第一號／L53＋試聽 unavailable→5／底特律 house-techno 律動"
+    "note": "全池稽核 audit-20261102（方案 C）：!K7 正規廠首號（非私壓）；K. Hand／Kelli Hand 掛名分裂，聽眾 53 疑錯配，照錨點給 4｜L=53"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,

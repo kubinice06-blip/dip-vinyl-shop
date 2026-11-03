@@ -228,14 +228,23 @@
       },
       "ratings": {
         "classic": 5,
-        "obscurity": 4,
-        "accessibility": 3,
+        "obscurity": 3,
+        "accessibility": 2,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-21T14:16:14Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；第一份商業發行的 kora 獨奏器樂錄音,開創地位可查;純獨奏、無伴奏使入耳需要耐性,流通量也僅止於深度愛好者"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：kora 獨奏里程碑、Hannibal 國際發行→3；器樂柔和→2",
+        "previous": {
+          "classic": 5,
+          "obscurity": 4,
+          "accessibility": 3,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-21T14:16:14Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；第一份商業發行的 kora 獨奏器樂錄音,開創地位可查;純獨奏、無伴奏使入耳需要耐性,流通量也僅止於深度愛好者",
+          "rarity": "epic"
+        }
       },
-      "rarity": "epic",
+      "rarity": "uncommon",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -374,13 +383,21 @@
       },
       "rarity": "epic",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "英文 Wikipedia 條目以多筆樂評與後續影響佐證其長期共識地位——西方樂評普遍好評、歐美世界音樂電台長銷、被廣泛援引為馬利音樂與 kora 的示範錄音,Björk 亦公開表示受其影響;唯本環境可觸及的證據網址僅限 Wikipedia 單一來源家族,建議店主再以外部樂評來源覆核",
-        "evidenceUrls": [
-          "https://en.wikipedia.org/wiki/New_Ancient_Strings",
-          "https://en.wikipedia.org/wiki/Kora_(instrument)"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。kora 二重奏佳作，世界音樂類型級（5），非跨類型正典",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "英文 Wikipedia 條目以多筆樂評與後續影響佐證其長期共識地位——西方樂評普遍好評、歐美世界音樂電台長銷、被廣泛援引為馬利音樂與 kora 的示範錄音,Björk 亦公開表示受其影響;唯本環境可觸及的證據網址僅限 Wikipedia 單一來源家族,建議店主再以外部樂評來源覆核",
+          "evidenceUrls": [
+            "https://en.wikipedia.org/wiki/New_Ancient_Strings",
+            "https://en.wikipedia.org/wiki/Kora_(instrument)"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "1997 年 9 月 22 日馬利獨立紀念日夜裡,迪亞巴特與 Ballaké Sissoko 在巴馬科 Palais des Congrès 的大理石廊道一次收音錄成,1999 年由英國 Hannibal 發行。八首 kora 二重奏皆器樂,向兩人父親 Sidiki Diabaté 與 Djelimady Sissoko 1970 年的《Ancient Strings》致敬;製作人 Lucy Durán 要證明 kora 近三十年走了多遠,兩人指法確實加進佛朗明哥吉他一類的外來語彙。冰島歌手 Björk 也說受其影響。非洲音樂,Mande / kora。",
@@ -2589,15 +2606,24 @@
         "visuallyVerified": true
       },
       "ratings": {
-        "classic": 5,
+        "classic": 4,
         "obscurity": 3,
         "accessibility": 3,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-21T14:16:14Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；《滾石》史上五十張最佳現場專輯與《1001 Albums You Must Hear Before You Die》皆收錄,是 Afrobeat 最早進入國際視野的錄音之一;曲目動輒十分鐘以上、單一律動推進,入耳需要一點耐性。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：Fela 早期重要現場；非代表作首位",
+        "previous": {
+          "classic": 5,
+          "obscurity": 3,
+          "accessibility": 3,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-21T14:16:14Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；《滾石》史上五十張最佳現場專輯與《1001 Albums You Must Hear Before You Die》皆收錄,是 Afrobeat 最早進入國際視野的錄音之一;曲目動輒十分鐘以上、單一律動推進,入耳需要一點耐性。",
+          "rarity": "epic"
+        }
       },
-      "rarity": "epic",
+      "rarity": "uncommon",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -2654,14 +2680,23 @@
       },
       "ratings": {
         "classic": 4,
-        "obscurity": 3,
-        "accessibility": 3,
+        "obscurity": 2,
+        "accessibility": 2,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-21T14:16:14Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Fela 政治化書寫轉趨正面衝突的早期節點,在其 1974 至 1977 年高峰期的目錄中位置明確;兩首長曲以單一律動推進,粗礪但不難聽懂。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：Fela 經典 Afrobeat 長曲，Knitting Factory 再發｜L=6880",
+        "previous": {
+          "classic": 4,
+          "obscurity": 3,
+          "accessibility": 3,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-21T14:16:14Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Fela 政治化書寫轉趨正面衝突的早期節點,在其 1974 至 1977 年高峰期的目錄中位置明確;兩首長曲以單一律動推進,粗礪但不難聽懂。",
+          "rarity": "uncommon"
+        }
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -2925,12 +2960,21 @@
       },
       "ratings": {
         "classic": 4,
-        "obscurity": 3,
-        "accessibility": 3,
+        "obscurity": 5,
+        "accessibility": 2,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-21T14:16:14Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Fela 後期最常被引用的政治控訴之一,直接點名跨國企業高層與軍政府領導人;二十四分鐘單曲式結構與不變的循環律動使門檻略高。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：Fela 重要政治作品，afrobeat 長篇律動｜L=45",
+        "previous": {
+          "classic": 4,
+          "obscurity": 3,
+          "accessibility": 3,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-21T14:16:14Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Fela 後期最常被引用的政治控訴之一,直接點名跨國企業高層與軍政府領導人;二十四分鐘單曲式結構與不變的循環律動使門檻略高。",
+          "rarity": "uncommon"
+        }
       },
       "rarity": "uncommon",
       "apexAssessment": {
@@ -4125,13 +4169,21 @@
       },
       "rarity": "uncommon",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "標題曲跨來源長期共識:被稱為史上最常被取樣的非洲歌曲、1974 年葛萊美兩項提名、2022 年《滾石》200 大舞曲第 35 名、2024 年 PBS 紀錄片《Disco: Soundtrack of a Revolution》專章討論,且本專輯即該曲的正規發行載體。",
-        "evidenceUrls": [
-          "https://en.wikipedia.org/wiki/Soul_Makossa",
-          "https://en.wikipedia.org/wiki/Manu_Dibango"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。非洲放克里程碑在單曲，專輯未進綜合歷代榜",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "標題曲跨來源長期共識:被稱為史上最常被取樣的非洲歌曲、1974 年葛萊美兩項提名、2022 年《滾石》200 大舞曲第 35 名、2024 年 PBS 紀錄片《Disco: Soundtrack of a Revolution》專章討論,且本專輯即該曲的正規發行載體。",
+          "evidenceUrls": [
+            "https://en.wikipedia.org/wiki/Soul_Makossa",
+            "https://en.wikipedia.org/wiki/Manu_Dibango"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "喀麥隆薩克斯風手 Manu Dibango 1972 年把〈Soul Makossa〉錄成非洲盃足球賽會歌的 B 面,makossa 一詞在他的母語 Duala 語裡即「我跳舞」。DJ David Mancuso 在布魯克林挖到它,並經 WBLS 電台的 Frankie Crocker 推開,Atlantic 遂向法國 Fiesta 取得授權,1973 年結成這張美版專輯,單曲攻上 Billboard Hot 100 第 35 名。副歌那句 ma-ma-ko, ma-ma-sa, ma-ko ma-ko-sa 日後被麥可傑克森與蕾哈娜先後沿用。",
@@ -4253,21 +4305,38 @@
       "ratings": {
         "classic": 5,
         "obscurity": 4,
-        "accessibility": 3,
+        "accessibility": 2,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-21T14:16:14Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；標題曲在薩伊售破二十萬張獲金唱片,被法國樂評與《Jeune Afrique》分別列為二十世紀剛果音樂的核心曲目。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：剛果倫巴場景里程碑（經典度 5），但無跨來源樂評正典榜單支持殿堂；倫巴易聽，硬蕊 2",
+        "previous": {
+          "classic": 5,
+          "obscurity": 4,
+          "accessibility": 3,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-21T14:16:14Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；標題曲在薩伊售破二十萬張獲金唱片,被法國樂評與《Jeune Afrique》分別列為二十世紀剛果音樂的核心曲目。",
+          "rarity": "epic"
+        }
       },
-      "rarity": "epic",
+      "rarity": "uncommon",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "跨來源長期共識明確:法國樂評 François Bensignor 稱其為 Franco 最好的作品與二十世紀剛果音樂支柱,泛非週刊《Jeune Afrique》列入「讓剛果起舞的五首歌」,薩伊金唱片認證,後續衍生三首續作與多位歌手翻唱。",
-        "evidenceUrls": [
-          "https://en.wikipedia.org/wiki/Mario_(song)",
-          "https://en.wikipedia.org/wiki/Franco_Luambo"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。剛果倫巴場景里程碑，類型級",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "跨來源長期共識明確:法國樂評 François Bensignor 稱其為 Franco 最好的作品與二十世紀剛果音樂支柱,泛非週刊《Jeune Afrique》列入「讓剛果起舞的五首歌」,薩伊金唱片認證,後續衍生三首續作與多位歌手翻唱。",
+          "evidenceUrls": [
+            "https://en.wikipedia.org/wiki/Mario_(song)",
+            "https://en.wikipedia.org/wiki/Franco_Luambo"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "Franco 1985 年帶著 TPOK Jazz 到利伯維爾的 Studio Mademba,由 Elvis Kemayo 監督錄下標題曲,Madilu System 領唱、Papa Noël Nedule 拉主奏吉他。歌詞是一位年長女性對小情人 Mario 的獨白:他有五張文憑卻不肯工作,靠她供養,還要爭她的房子與賓士。Franco 讓念白與演唱交錯,把當時薩伊城市社會的依附關係攤在檯面上,唱片在薩伊賣破二十萬張拿下金唱片。法國樂評 François Bensignor 稱它是二十世紀剛果音樂的支柱之一。",
@@ -4321,13 +4390,22 @@
       "ratings": {
         "classic": 4,
         "obscurity": 4,
-        "accessibility": 2,
+        "accessibility": 1,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-21T14:16:14Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Real World Records 創廠四張之一,soukous 開創者的職涯回顧現場,獲廣泛好評並收入 Tom Moon《1,000 Recordings》。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：Real World 國際發行的 soukous 代表錄音，舞曲直白｜L=366",
+        "previous": {
+          "classic": 4,
+          "obscurity": 4,
+          "accessibility": 2,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-21T14:16:14Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Real World Records 創廠四張之一,soukous 開創者的職涯回顧現場,獲廣泛好評並收入 Tom Moon《1,000 Recordings》。",
+          "rarity": "rare"
+        }
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -4722,13 +4800,22 @@
         "visuallyVerified": true
       },
       "ratings": {
-        "classic": 4,
-        "obscurity": 4,
-        "accessibility": 2,
+        "classic": 5,
+        "obscurity": 3,
+        "accessibility": 1,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-21T14:16:14Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；安哥拉流亡時期 semba 的主要錄音,並留下〈Sodade〉較早的錄音版本,是該樂種的重要參照。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：安哥拉獨立前夕里程碑，Morabeza 盤；國際再發但圈外少知｜L=3044",
+        "previous": {
+          "classic": 4,
+          "obscurity": 4,
+          "accessibility": 2,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-21T14:16:14Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；安哥拉流亡時期 semba 的主要錄音,並留下〈Sodade〉較早的錄音版本,是該樂種的重要參照。",
+          "rarity": "rare"
+        }
       },
       "rarity": "rare",
       "apexAssessment": {
@@ -5927,14 +6014,22 @@
       },
       "rarity": "uncommon",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "Mulatu Astatke 公認為 ethio-jazz 之父，本作是該樂種在衣索比亞本土的奠基專輯，並經 Éthiopiques 系列長期再版而成為跨來源共識的核心文本。",
-        "evidenceUrls": [
-          "https://en.wikipedia.org/wiki/Mulatu_Astatke",
-          "https://en.wikipedia.org/wiki/Ethio-jazz",
-          "https://musicbrainz.org/release-group/b3940e49-3c5e-48b5-b9e1-f2b7e01feaff"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。衣索比亞爵士定義作＝類型 5 星",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "Mulatu Astatke 公認為 ethio-jazz 之父，本作是該樂種在衣索比亞本土的奠基專輯，並經 Éthiopiques 系列長期再版而成為跨來源共識的核心文本。",
+          "evidenceUrls": [
+            "https://en.wikipedia.org/wiki/Mulatu_Astatke",
+            "https://en.wikipedia.org/wiki/Ethio-jazz",
+            "https://musicbrainz.org/release-group/b3940e49-3c5e-48b5-b9e1-f2b7e01feaff"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "衣索比亞顫音琴手 Mulatu Astatke（1943 年生於吉馬）先後在倫敦三一音樂學院求學，並成為柏克利音樂學院第一位非洲學生，1969 年帶著他自己命名的 ethio-jazz 回到阿迪斯阿貝巴。1974 年由 Amha Records 發行的本作，封面主標題為阿姆哈拉文「የካቲት」（Yekatit），是衣索比亞第一張以整張作品為單位構思、而非拼湊舊單曲的專輯。五聲音階旋律配上顫音琴、康加鼓與電風琴，〈Yèkèrmo Sèw〉後來因 2005 年電影《愛情，不用尋找》而廣為人知。1975 年 Amha 被德爾格政權逼走後，唱片一度絕跡。",
@@ -6324,12 +6419,21 @@
       },
       "ratings": {
         "classic": 4,
-        "obscurity": 4,
+        "obscurity": 3,
         "accessibility": 2,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-21T14:16:14Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；衣索比亞流行樂天后的國際出道盤,在該語域內地位明確;唱腔強烈但編曲貼近西方靈魂樂,不難入耳。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：衣索比亞歌后國際突破作｜L=4815",
+        "previous": {
+          "classic": 4,
+          "obscurity": 4,
+          "accessibility": 2,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-21T14:16:14Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；衣索比亞流行樂天后的國際出道盤,在該語域內地位明確;唱腔強烈但編曲貼近西方靈魂樂,不難入耳。",
+          "rarity": "rare"
+        }
       },
       "rarity": "rare",
       "apexAssessment": {
@@ -6984,23 +7088,40 @@
         "visuallyVerified": true
       },
       "ratings": {
-        "classic": 5,
+        "classic": 4,
         "obscurity": 3,
         "accessibility": 4,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-21T14:16:14Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；公認的世界音樂錄音開創之作,把摩洛哥蘇非樂社推向國際並引來 Ornette Coleman 等人;因 Brian Jones 之名而在搖滾圈廣為人知,但成排 ghaita 雙簧與相位處理的高分貝聲牆對多數人相當難進。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：世界音樂早期田野錄音名盤，非領域人人必提；無試聽但 listeners 缺值不套下限",
+        "previous": {
+          "classic": 5,
+          "obscurity": 3,
+          "accessibility": 4,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-21T14:16:14Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；公認的世界音樂錄音開創之作,把摩洛哥蘇非樂社推向國際並引來 Ornette Coleman 等人;因 Brian Jones 之名而在搖滾圈廣為人知,但成排 ghaita 雙簧與相位處理的高分貝聲牆對多數人相當難進。",
+          "rarity": "legendary"
+        }
       },
-      "rarity": "legendary",
+      "rarity": "epic",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "1968 年錄音、1971 年由 Rolling Stones Records 發行,長期被視為把非西方儀式音樂完整帶進國際唱片市場的開創錄音,並直接促成後續西方樂手前往 Jajouka 合作,跨來源敘述一致。",
-        "evidenceUrls": [
-          "https://en.wikipedia.org/wiki/Brian_Jones_Presents_the_Pipes_of_Pan_at_Joujouka",
-          "https://en.wikipedia.org/wiki/The_Master_Musicians_of_Joujouka"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。世界音樂田野錄音名盤，類型級",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "1968 年錄音、1971 年由 Rolling Stones Records 發行,長期被視為把非西方儀式音樂完整帶進國際唱片市場的開創錄音,並直接促成後續西方樂手前往 Jajouka 合作,跨來源敘述一致。",
+          "evidenceUrls": [
+            "https://en.wikipedia.org/wiki/Brian_Jones_Presents_the_Pipes_of_Pan_at_Joujouka",
+            "https://en.wikipedia.org/wiki/The_Master_Musicians_of_Joujouka"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "1968 年 7 月 29 日,Brian Jones 在摩洛哥里夫山區的 Jajouka 村錄下潘神祭儀週的演奏,他過世後於 1971 年由 Rolling Stones Records 發行、Atco 代理。ghaita 雙簧與 tbel 鼓築起的高分貝聲牆,把這個世代相傳的蘇非樂社推進國際視野,日後 Ornette Coleman 等人也前往合作。1995 年 Point Music 再版由 Philip Glass 等人任執行製作,附上 Bachir Attar、Paul Bowles、William S. Burroughs 的文字。",
@@ -7051,23 +7172,40 @@
         "visuallyVerified": true
       },
       "ratings": {
-        "classic": 5,
+        "classic": 4,
         "obscurity": 3,
         "accessibility": 3,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-21T14:16:14Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Nonesuch Explorer 系列中最常被引用的一張,被視為最早在西方廣泛流通的世界音樂錄音之一,並有 Steve Reich、Terry Riley 的影響自陳;三曲皆為長篇 oud 獨奏與吟唱,單一音色維持整面。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：Nonesuch Explorer 名作、努比亞烏德琴代表，但無跨來源核心正典共識；經典度 4",
+        "previous": {
+          "classic": 5,
+          "obscurity": 3,
+          "accessibility": 3,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-21T14:16:14Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Nonesuch Explorer 系列中最常被引用的一張,被視為最早在西方廣泛流通的世界音樂錄音之一,並有 Steve Reich、Terry Riley 的影響自陳;三曲皆為長篇 oud 獨奏與吟唱,單一音色維持整面。",
+          "rarity": "epic"
+        }
       },
-      "rarity": "epic",
+      "rarity": "uncommon",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "錄音本身被記為最早在西方大量發行的世界音樂唱片之一,美國極簡樂派作曲家自陳受其影響,同名曲後經 Kronos Quartet 改編收入 1992 年《Pieces of Africa》,該作 2024 年入選美國國會圖書館國家錄音登記名冊,長期地位有跨條目佐證。",
-        "evidenceUrls": [
-          "https://en.wikipedia.org/wiki/Hamza_El_Din",
-          "https://en.wikipedia.org/wiki/Pieces_of_Africa"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。Nonesuch 名作，世界音樂類型 5 星",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "錄音本身被記為最早在西方大量發行的世界音樂唱片之一,美國極簡樂派作曲家自陳受其影響,同名曲後經 Kronos Quartet 改編收入 1992 年《Pieces of Africa》,該作 2024 年入選美國國會圖書館國家錄音登記名冊,長期地位有跨條目佐證。",
+          "evidenceUrls": [
+            "https://en.wikipedia.org/wiki/Hamza_El_Din",
+            "https://en.wikipedia.org/wiki/Pieces_of_Africa"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "努比亞出身的 Hamza El Din,老家 Toshka 因亞斯文高壩興建而沉入水下;他把水車轉動的律動寫成 oud 獨奏〈The Water Wheel〉。1971 年由 Nonesuch 出版、Grateful Dead 鼓手 Mickey Hart 製作,全片僅三曲,另收〈I Remember〉與以 tar 框鼓伴唱的〈Song With Tar〉。Steve Reich、Terry Riley 都提過受其影響,1992 年 Kronos Quartet 在《Pieces of Africa》改編同名曲。",
@@ -7120,21 +7258,38 @@
       "ratings": {
         "classic": 5,
         "obscurity": 3,
-        "accessibility": 4,
+        "accessibility": 3,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-21T14:16:14Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；阿拉伯世界二十世紀最具地位歌者的招牌長篇歌章,也是她與 Mohammed Abdel Wahab 的首度合作;名氣極大但實體盤在華語圈流通有限,近一小時的單曲結構與 maqam 反覆延展對新耳朵門檻不低。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：與 Abdel Wahab 合作的阿拉伯流行史分水嶺，該語言圈首位級；長篇 tarab 非不協和，硬蕊 4→3",
+        "previous": {
+          "classic": 5,
+          "obscurity": 3,
+          "accessibility": 4,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-21T14:16:14Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；阿拉伯世界二十世紀最具地位歌者的招牌長篇歌章,也是她與 Mohammed Abdel Wahab 的首度合作;名氣極大但實體盤在華語圈流通有限,近一小時的單曲結構與 maqam 反覆延展對新耳朵門檻不低。",
+          "rarity": "legendary"
+        }
       },
-      "rarity": "legendary",
+      "rarity": "epic",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "Umm Kulthum 被視為埃及與阿拉伯世界二十世紀最重要的歌者,《滾石》2023 年兩百大歌手榜列第 61 位,〈Enta Omri〉是她最廣為傳唱、翻唱最多的曲目之一,長期共識明確。",
-        "evidenceUrls": [
-          "https://en.wikipedia.org/wiki/Inta_Omri",
-          "https://en.wikipedia.org/wiki/Umm_Kulthum"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。阿拉伯流行史分水嶺，語言圈級，非跨類型正典；且 Al Atlal 更具代表",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "Umm Kulthum 被視為埃及與阿拉伯世界二十世紀最重要的歌者,《滾石》2023 年兩百大歌手榜列第 61 位,〈Enta Omri〉是她最廣為傳唱、翻唱最多的曲目之一,長期共識明確。",
+          "evidenceUrls": [
+            "https://en.wikipedia.org/wiki/Inta_Omri",
+            "https://en.wikipedia.org/wiki/Umm_Kulthum"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "作曲 Mohammed Abdel Wahab、作詞 Ahmad Shafik Kamel,是 Umm Kulthum 與這位昔日對手的首度合作,採 maqam Sikah Balady。Sono Cairo 於 1965 年 3 月發行;她的現場從不固定長度,聽眾點播哪一句就把哪一句反覆延展,一首歌足以撐滿整場。被稱作「東方之星」的她 1975 年逝世,開羅送葬人潮逾四百萬,《滾石》2023 年兩百大歌手榜將她列在第 61 位。",
@@ -7656,12 +7811,21 @@
       },
       "ratings": {
         "classic": 3,
-        "obscurity": 4,
+        "obscurity": 3,
         "accessibility": 2,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-21T14:16:14Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；撒哈拉威流亡音樂最具國際能見度的代表之一,但整體仍屬深度愛好者領域;歌謠結構清楚,吉他與人聲的編制親人。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：撒哈拉沙漠藍調，Glitterbeat 發行｜L=10346",
+        "previous": {
+          "classic": 3,
+          "obscurity": 4,
+          "accessibility": 2,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-21T14:16:14Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；撒哈拉威流亡音樂最具國際能見度的代表之一,但整體仍屬深度愛好者領域;歌謠結構清楚,吉他與人聲的編制親人。",
+          "rarity": "common"
+        }
       },
       "rarity": "common",
       "apexAssessment": {
@@ -7789,13 +7953,22 @@
         "visuallyVerified": true
       },
       "ratings": {
-        "classic": 3,
-        "obscurity": 4,
+        "classic": 4,
+        "obscurity": 3,
         "accessibility": 1,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-21T14:16:14Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；獅子山 palm-wine 吉他大師的最後錄音、Real World 出品,有明確地位但他的經典多在 1960 年代單曲;指彈搖擺、旋律直白,幾乎沒有入耳門檻。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：獅子山棕櫚酒吉他代表作，Real World 發行｜L=7903",
+        "previous": {
+          "classic": 3,
+          "obscurity": 4,
+          "accessibility": 1,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-21T14:16:14Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；獅子山 palm-wine 吉他大師的最後錄音、Real World 出品,有明確地位但他的經典多在 1960 年代單曲;指彈搖擺、旋律直白,幾乎沒有入耳門檻。",
+          "rarity": "common"
+        }
       },
       "rarity": "common",
       "apexAssessment": {
@@ -8928,23 +9101,40 @@
         "visuallyVerified": true
       },
       "ratings": {
-        "classic": 5,
+        "classic": 4,
         "obscurity": 3,
         "accessibility": 2,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-21T14:16:14Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Celia 脫離 Sonora Matancera 後的美國首張重要個人盤，《Los 600 de Latinoamérica》第八名、NPR 女性 150 大同時入選。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：Tico 時期佳作，非 salsa 史必提核心（那是 Celia & Johnny）；殿堂不成立",
+        "previous": {
+          "classic": 5,
+          "obscurity": 3,
+          "accessibility": 2,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-21T14:16:14Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Celia 脫離 Sonora Matancera 後的美國首張重要個人盤，《Los 600 de Latinoamérica》第八名、NPR 女性 150 大同時入選。",
+          "rarity": "uncommon"
+        }
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "跨來源長期共識明確：2024 年拉美六百大專輯票選第八名、NPR 2018 年女性製作 150 大專輯入選、AllMusic 亦列為 salsa 樂團編制的頂點錄音，足列拉丁樂史核心。",
-        "evidenceUrls": [
-          "https://en.wikipedia.org/wiki/Son_Con_Guaguanc%C3%B3",
-          "https://en.wikipedia.org/wiki/Celia_Cruz"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。Tico 時期佳作，非 salsa 必提核心",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "跨來源長期共識明確：2024 年拉美六百大專輯票選第八名、NPR 2018 年女性製作 150 大專輯入選、AllMusic 亦列為 salsa 樂團編制的頂點錄音，足列拉丁樂史核心。",
+          "evidenceUrls": [
+            "https://en.wikipedia.org/wiki/Son_Con_Guaguanc%C3%B3",
+            "https://en.wikipedia.org/wiki/Celia_Cruz"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "Celia Cruz 1966 年在 Tico（LP-1143）錄下的作品，是她離開 Sonora Matancera 後在美國的第一張重要個人專輯。製作人 Al Santiago 找來 Alegre All Stars 班底伴奏，編曲交給 Bobby Valentín、Charlie Palmieri、Louie Ramírez 與 Tito Puente 分擔。開場〈Bemba Colorá〉日後成為她的招牌演唱。2024 年《Los 600 de Latinoamérica》拉美六百大票選列其第八名，NPR 2018 年女性 150 大亦收入。",
@@ -9000,22 +9190,39 @@
       },
       "ratings": {
         "classic": 5,
-        "obscurity": 2,
+        "obscurity": 3,
         "accessibility": 2,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-21T14:16:14Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；美國國會圖書館國家錄音登記處選入，《告示牌》與《滾石》兩份指標榜單同時列名，是 salsa 黃金期的定義性錄音。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：RS 史上 50 大 salsa 第 5、國會圖書館錄音登錄；salsa 核心作。圈外少知，冷門度 3",
+        "previous": {
+          "classic": 5,
+          "obscurity": 2,
+          "accessibility": 2,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-21T14:16:14Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；美國國會圖書館國家錄音登記處選入，《告示牌》與《滾石》兩份指標榜單同時列名，是 salsa 黃金期的定義性錄音。",
+          "rarity": "uncommon"
+        }
       },
       "rarity": "uncommon",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "三個彼此獨立的機構背書：2014 年入選美國國家錄音登記處、2015 年《告示牌》近五十年五十張必備拉丁專輯、2024 年《滾石》五十張最偉大 salsa 專輯，長期共識充分。",
-        "evidenceUrls": [
-          "https://en.wikipedia.org/wiki/Celia_%26_Johnny",
-          "https://en.wikipedia.org/wiki/Celia_Cruz"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。salsa 類型第一名盤級，類型第一只到 5",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "三個彼此獨立的機構背書：2014 年入選美國國家錄音登記處、2015 年《告示牌》近五十年五十張必備拉丁專輯、2024 年《滾石》五十張最偉大 salsa 專輯，長期共識充分。",
+          "evidenceUrls": [
+            "https://en.wikipedia.org/wiki/Celia_%26_Johnny",
+            "https://en.wikipedia.org/wiki/Celia_Cruz"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "Celia Cruz 與 Fania 創辦人 Johnny Pacheco 的第一次合作，1974 年由 Vaya（VS-31）發行。開場〈Quimbara〉成為 Cruz 轉戰 salsa 之後最具辨識度的一擊，Pacheco 以 conjunto 編制打底，銅管俐落、節奏組咬得緊，把她在古巴時期磨出的 guaracha 唱腔接進紐約的舞廳語彙。2014 年美國國會圖書館將其選入國家錄音登記處，2015 年《告示牌》列為近五十年五十張必備拉丁專輯之一，2024 年《滾石》五十張最偉大 salsa 專輯也榜上有名。",
@@ -9485,13 +9692,21 @@
       },
       "rarity": "uncommon",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "紐約 salsa 黃金期的定義性錄音：首張金唱片、確立 Fania 惡棍視覺語彙，並獲《滾石》五十張最偉大 salsa 專輯認可，跨來源共識足列該領域核心。",
-        "evidenceUrls": [
-          "https://en.wikipedia.org/wiki/Cosa_Nuestra_(Willie_Col%C3%B3n_album)",
-          "https://en.wikipedia.org/wiki/Willie_Col%C3%B3n"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。騷莎正典（RS 騷莎榜 #13），屬類型第一級＝5",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "紐約 salsa 黃金期的定義性錄音：首張金唱片、確立 Fania 惡棍視覺語彙，並獲《滾石》五十張最偉大 salsa 專輯認可，跨來源共識足列該領域核心。",
+          "evidenceUrls": [
+            "https://en.wikipedia.org/wiki/Cosa_Nuestra_(Willie_Col%C3%B3n_album)",
+            "https://en.wikipedia.org/wiki/Willie_Col%C3%B3n"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "Willie Colón 與 Héctor Lavoe 拍檔的第一張金唱片，1969 年由 Fania（SLP 384）發行。封面上 Colón 提著琴盒站在紐約橋下、腳邊躺著一具棄屍，把黑幫符號放進 salsa 包裝——Colón 早在這種形象流行之前就採用了它。音樂承接前作的雙長號前線，但律動更穩、旋律更抓耳，〈Che Che Colé〉〈Juana Peña〉〈Ausencia〉由 Lavoe 尖利帶鼻音的嗓子領唱，是他成為 salsa 第一代偶像的起點。2024 年《滾石》將其列入五十張最偉大 salsa 專輯。",
@@ -10162,13 +10377,21 @@
       },
       "rarity": "uncommon",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "美國國會圖書館國家錄音登錄（2009）與 Rolling Stone 史上 50 大 salsa 專輯（2024）兩個互相獨立的長期權威名錄同時收錄，足列該領域史上核心。",
-        "evidenceUrls": [
-          "https://en.wikipedia.org/wiki/Az%C3%BAcar_pa%27_ti_(Sugar_for_You)",
-          "https://en.wikipedia.org/wiki/National_Recording_Registry"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。國會登記、salsa 核心，但未進綜合歷代榜，屬類型里程碑 5 星",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "美國國會圖書館國家錄音登錄（2009）與 Rolling Stone 史上 50 大 salsa 專輯（2024）兩個互相獨立的長期權威名錄同時收錄，足列該領域史上核心。",
+          "evidenceUrls": [
+            "https://en.wikipedia.org/wiki/Az%C3%BAcar_pa%27_ti_(Sugar_for_You)",
+            "https://en.wikipedia.org/wiki/National_Recording_Registry"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "Eddie Palmieri 與 La Perfecta 在 Tico 的 1965 年作品，也是他當年最暢銷的一張。八分多鐘的〈Azúcar〉以 descarga 式即興堆疊而成，是他最為人熟知的曲目；〈Oyelo Que Te Conviene〉的原始錄音亦在此，十年後由 Lalo Rodríguez 重唱。La Perfecta 以兩支長號取代 charanga 的小提琴，哥哥 Charlie 稱之為 trombanga。2009 年獲美國國會圖書館選入國家錄音登錄，2024 年列入 Rolling Stone 史上 50 大 salsa 專輯。",
@@ -10293,13 +10516,22 @@
       "ratings": {
         "classic": 5,
         "obscurity": 3,
-        "accessibility": 3,
+        "accessibility": 2,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-21T14:16:14Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；葛萊美最佳拉丁錄音獎史上第一位得主，該獎項條目直接點名此作為首屆得獎專輯；〈Un Día Bonito〉開場的自由鋼琴獨奏遠離舞曲慣例，入耳需要一點耐性。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：首屆葛萊美拉丁獎；salsa 場景里程碑",
+        "previous": {
+          "classic": 5,
+          "obscurity": 3,
+          "accessibility": 3,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-21T14:16:14Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；葛萊美最佳拉丁錄音獎史上第一位得主，該獎項條目直接點名此作為首屆得獎專輯；〈Un Día Bonito〉開場的自由鋼琴獨奏遠離舞曲慣例，入耳需要一點耐性。",
+          "rarity": "epic"
+        }
       },
-      "rarity": "epic",
+      "rarity": "uncommon",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -10640,13 +10872,21 @@
       },
       "rarity": "rare",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "美國國會圖書館國家錄音登錄（2002）與《1001 Albums You Must Hear Before You Die》兩個彼此獨立的長期名錄同時收錄，屬 mambo／拉丁樂史核心無疑。",
-        "evidenceUrls": [
-          "https://en.wikipedia.org/wiki/Dance_Mania_(album)",
-          "https://en.wikipedia.org/wiki/National_Recording_Registry"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。拉丁曼波類型頂點，類型第一名盤 5 級",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "美國國會圖書館國家錄音登錄（2002）與《1001 Albums You Must Hear Before You Die》兩個彼此獨立的長期名錄同時收錄，屬 mambo／拉丁樂史核心無疑。",
+          "evidenceUrls": [
+            "https://en.wikipedia.org/wiki/Dance_Mania_(album)",
+            "https://en.wikipedia.org/wiki/National_Recording_Registry"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "Tito Puente 在 RCA Victor 的 1958 年錄音，是他 mambo 全盛期最暢銷的一張。Santitos Colón 主唱，Ray Barretto 打 conga，Bobby Rodríguez 彈貝斯；Puente 自己包辦編曲並兼任 timbales、鐵琴與馬林巴。〈El Cayuco〉、〈3-D Mambo〉一類曲目節奏直白、銅管齊整，正是紐約 Palladium 舞廳全盛期的聲音。2002 年獲美國國會圖書館選入國家錄音登錄，也被收進《1001 Albums You Must Hear Before You Die》。",
@@ -10841,13 +11081,21 @@
       },
       "rarity": "uncommon",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "Machito 與 Mario Bauzá 是 Afro-Cuban jazz 的創始者，本作是該樂派最常被援引的代表錄音，發行半世紀後仍獲外部經典書單收錄，屬該領域史上核心。",
-        "evidenceUrls": [
-          "https://en.wikipedia.org/wiki/Machito",
-          "https://en.wikipedia.org/wiki/Afro-Cuban_jazz"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。Afro-Cuban 爵士場景代表，未進綜合歷代榜",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "Machito 與 Mario Bauzá 是 Afro-Cuban jazz 的創始者，本作是該樂派最常被援引的代表錄音，發行半世紀後仍獲外部經典書單收錄，屬該領域史上核心。",
+          "evidenceUrls": [
+            "https://en.wikipedia.org/wiki/Machito",
+            "https://en.wikipedia.org/wiki/Afro-Cuban_jazz"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "1957 年錄音、Roulette 發行。Machito 與音樂總監 Mario Bauzá 自 1940 年代起把古巴 clave 接進大樂隊編制，這一輯編曲多出自 A.K. Salim 與 René Hernández。客席有 Cannonball Adderley 與 Eddie Bert，〈Cannonology〉即為前者而寫；七人打擊組含 Cándido Camero 與 Carlos「Patato」Valdés。半世紀後獲《1001 Albums You Must Hear Before You Die》收錄。",
@@ -10977,14 +11225,22 @@
       },
       "rarity": "uncommon",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "1971 年 Cheetah 之夜被記載為 salsa 從紐約街區走向國際市場的關鍵事件，唱片與同源紀錄片長期被視為該樂種史上核心文本，跨條目記述一致。",
-        "evidenceUrls": [
-          "https://en.wikipedia.org/wiki/Fania_All-Stars",
-          "https://en.wikipedia.org/wiki/Our_Latin_Thing",
-          "https://en.wikipedia.org/wiki/Salsa_music"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。salsa 經典現場，類型級",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "1971 年 Cheetah 之夜被記載為 salsa 從紐約街區走向國際市場的關鍵事件，唱片與同源紀錄片長期被視為該樂種史上核心文本，跨條目記述一致。",
+          "evidenceUrls": [
+            "https://en.wikipedia.org/wiki/Fania_All-Stars",
+            "https://en.wikipedia.org/wiki/Our_Latin_Thing",
+            "https://en.wikipedia.org/wiki/Salsa_music"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "1971 年 8 月 26 日錄於紐約 Cheetah 夜總會，1972 年由 Fania 發行。Fania All-Stars 是 Johnny Pacheco 與 Jerry Masucci 從自家名單湊成的輪替班底，這一輯只留四首長篇 descarga，〈Anacaona〉由 Cheo Feliciano 領唱、〈Descarga Fania〉由 Adalberto Santiago 出聲。同一晚的影像剪成 Leon Gast 執導的紀錄片《Our Latin Thing》，salsa 自此離開街區走向商業市場。",
@@ -11436,12 +11692,21 @@
       },
       "ratings": {
         "classic": 5,
-        "obscurity": 1,
+        "obscurity": 2,
         "accessibility": 1,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-21T14:16:14Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；把 bachata 從鄉間邊緣音樂推上國際的關鍵作，葛萊美最佳熱帶拉丁專輯得主、全球銷量逾五百萬張；入門常客，旋律極直白。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：拉丁熱帶音樂里程碑、葛萊美；查無權威歷代專輯榜依據，殿堂保留；圈外流通 1→2",
+        "previous": {
+          "classic": 5,
+          "obscurity": 1,
+          "accessibility": 1,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-21T14:16:14Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；把 bachata 從鄉間邊緣音樂推上國際的關鍵作，葛萊美最佳熱帶拉丁專輯得主、全球銷量逾五百萬張；入門常客，旋律極直白。",
+          "rarity": "rare"
+        }
       },
       "rarity": "rare",
       "apexAssessment": {
@@ -12033,22 +12298,39 @@
       },
       "ratings": {
         "classic": 5,
-        "obscurity": 3,
+        "obscurity": 4,
         "accessibility": 2,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-21T14:16:14Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Rolling Stone Brasil 百大第 33 名、Discoteca Básica 五百大第 50 名，兩大巴西經典榜皆列前段。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：巴西民謠奠基作，經典度 5；試聽 unavailable，冷門度改 4；圈外無跨來源正典，殿堂不成立",
+        "previous": {
+          "classic": 5,
+          "obscurity": 3,
+          "accessibility": 2,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-21T14:16:14Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Rolling Stone Brasil 百大第 33 名、Discoteca Básica 五百大第 50 名，兩大巴西經典榜皆列前段。",
+          "rarity": "uncommon"
+        }
       },
       "rarity": "uncommon",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "兩份獨立的巴西樂史票選（Rolling Stone Brasil 2007、Discoteca Básica 2022）都把本盤放進前五十，加上 Caymmi 的 canções praieiras 在巴西歌謠中的開創位置，屬長期跨來源共識。",
-        "evidenceUrls": [
-          "https://pt.wikipedia.org/wiki/Lista_dos_100_maiores_discos_da_música_brasileira_pela_Rolling_Stone_Brasil",
-          "https://pt.wikipedia.org/wiki/Lista_dos_500_maiores_discos_da_música_brasileira_pelo_Discoteca_Básica"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。巴西民謠奠基作，圈外無跨來源正典收錄",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "兩份獨立的巴西樂史票選（Rolling Stone Brasil 2007、Discoteca Básica 2022）都把本盤放進前五十，加上 Caymmi 的 canções praieiras 在巴西歌謠中的開創位置，屬長期跨來源共識。",
+          "evidenceUrls": [
+            "https://pt.wikipedia.org/wiki/Lista_dos_100_maiores_discos_da_música_brasileira_pela_Rolling_Stone_Brasil",
+            "https://pt.wikipedia.org/wiki/Lista_dos_500_maiores_discos_da_música_brasileira_pelo_Discoteca_Básica"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "Dorival Caymmi 一九三八年從薩爾瓦多南下里約，以海邊漁民題材的 canções praieiras 立足。一九五九年 Odeon 這張（MOFB 3.093）只留人聲與吉他：〈É Doce Morrer no Mar〉、〈A Jangada Voltou Só〉、〈O Mar〉、〈Coqueiro de Itapoan〉一路唱巴伊亞海岸的日常與傳說。收斂的唱法與切分吉他常被後來的 bossa nova 世代援引為源頭。Rolling Stone Brasil 百大第 33 名、Discoteca Básica 五百大第 50 名。",
@@ -12441,21 +12723,38 @@
       "ratings": {
         "classic": 5,
         "obscurity": 3,
-        "accessibility": 2,
+        "accessibility": 1,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-21T14:16:14Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Discoteca Básica 五百大第 16 名，並被 Veja、O Globo 等長期列為巴西最重要唱片之一。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：巴西 MPB 里程碑，RS Brasil 百大約第 36 名，非首位級；經典度 5、殿堂不成立",
+        "previous": {
+          "classic": 5,
+          "obscurity": 3,
+          "accessibility": 2,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-21T14:16:14Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Discoteca Básica 五百大第 16 名，並被 Veja、O Globo 等長期列為巴西最重要唱片之一。",
+          "rarity": "uncommon"
+        }
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "二〇二二年 Discoteca Básica 全國樂評與樂手票選列第 16 名，加上《Veja》《O Globo》等長期把它定位為巴西音樂的關鍵作品，屬跨來源長期共識。",
-        "evidenceUrls": [
-          "https://pt.wikipedia.org/wiki/Lista_dos_500_maiores_discos_da_música_brasileira_pelo_Discoteca_Básica",
-          "https://pt.wikipedia.org/wiki/Alucinação_(álbum_de_Belchior)"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。巴西 MPB 國內經典，該國經典僅到 5",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "二〇二二年 Discoteca Básica 全國樂評與樂手票選列第 16 名，加上《Veja》《O Globo》等長期把它定位為巴西音樂的關鍵作品，屬跨來源長期共識。",
+          "evidenceUrls": [
+            "https://pt.wikipedia.org/wiki/Lista_dos_500_maiores_discos_da_música_brasileira_pelo_Discoteca_Básica",
+            "https://pt.wikipedia.org/wiki/Alucinação_(álbum_de_Belchior)"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "來自塞阿拉的 Belchior 一九七六年在 Philips 發行第二張錄音室唱片，Marco Mazzola 製作，銷量逾五十萬張。〈Apenas um Rapaz Latino-Americano〉、〈Como Nossos Pais〉、〈Velha Roupa Colorida〉寫內陸青年進大城後的幻滅，長篇敘事歌詞當年被評論拿來與 Bob Dylan 對照，底盤在藍調、country 與 baião 之間移動。〈Como Nossos Pais〉經 Elis Regina 翻唱後傳得更廣。封面照片出自 Januário Garcia。",
@@ -12517,13 +12816,21 @@
       },
       "rarity": "uncommon",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "兩份互相獨立的巴西樂史票選都把本盤放在前四十名，加上它是 Elis Regina 生前銷量最高、公認最具代表性的錄音室作品，長期共識明確。",
-        "evidenceUrls": [
-          "https://pt.wikipedia.org/wiki/Lista_dos_100_maiores_discos_da_música_brasileira_pela_Rolling_Stone_Brasil",
-          "https://pt.wikipedia.org/wiki/Lista_dos_500_maiores_discos_da_música_brasileira_pelo_Discoteca_Básica"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。巴西 MPB 重要作，未進綜合歷代榜",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "兩份互相獨立的巴西樂史票選都把本盤放在前四十名，加上它是 Elis Regina 生前銷量最高、公認最具代表性的錄音室作品，長期共識明確。",
+          "evidenceUrls": [
+            "https://pt.wikipedia.org/wiki/Lista_dos_100_maiores_discos_da_música_brasileira_pela_Rolling_Stone_Brasil",
+            "https://pt.wikipedia.org/wiki/Lista_dos_500_maiores_discos_da_música_brasileira_pelo_Discoteca_Básica"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "一九七五年 Elis Regina 在聖保羅 Teatro Bandeirantes 推出同名舞台秀，César Camargo Mariano 任音樂總監，兩年間光聖保羅就演了 257 場、約二十八萬人次進場。因為賣座，一九七六年趁演出空檔用兩天把曲目搬進 Phonogram 錄音室，成了她生前銷量最高的唱片。〈Como Nossos Pais〉、〈Velha Roupa Colorida〉來自 Belchior，另收〈Fascinação〉、João Bosco 的〈O Cavaleiro e os Moinhos〉與〈Tatuagem〉。",
@@ -12971,12 +13278,21 @@
       },
       "ratings": {
         "classic": 5,
-        "obscurity": 3,
+        "obscurity": 2,
         "accessibility": 3,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-21T14:16:14Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；ECM 首作即獲德國唱片大獎，是巴西器樂進入國際廠牌的定錨點；長篇組曲與大動態需要專心聽。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：ECM 名盤、Gismonti 代表作，非殿堂",
+        "previous": {
+          "classic": 5,
+          "obscurity": 3,
+          "accessibility": 3,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-21T14:16:14Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；ECM 首作即獲德國唱片大獎，是巴西器樂進入國際廠牌的定錨點；長篇組曲與大動態需要專心聽。",
+          "rarity": "epic"
+        }
       },
       "rarity": "epic",
       "apexAssessment": {
@@ -13038,12 +13354,21 @@
       },
       "ratings": {
         "classic": 4,
-        "obscurity": 4,
+        "obscurity": 3,
         "accessibility": 3,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-21T14:16:14Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；巴西本土廠牌時期評價最高的一張，曾入 Rolling Stone Brasil 百大，但國際流通遠不如 ECM 作品。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：Gismonti 巴西時期代表作之一，EMI-Odeon 發行｜L=12776",
+        "previous": {
+          "classic": 4,
+          "obscurity": 4,
+          "accessibility": 3,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-21T14:16:14Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；巴西本土廠牌時期評價最高的一張，曾入 Rolling Stone Brasil 百大，但國際流通遠不如 ECM 作品。",
+          "rarity": "uncommon"
+        }
       },
       "rarity": "uncommon",
       "apexAssessment": {
@@ -13102,14 +13427,23 @@
       },
       "ratings": {
         "classic": 4,
-        "obscurity": 4,
-        "accessibility": 4,
+        "obscurity": 3,
+        "accessibility": 3,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-21T14:16:14Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；AllMusic 給四星半並稱可能是他最好的一張，但近 19 分鐘的 berimbau 加交響樂團開場門檻不低。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：ECM 打擊樂與弦樂長篇，Naná 代表作｜L=4737",
+        "previous": {
+          "classic": 4,
+          "obscurity": 4,
+          "accessibility": 4,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-21T14:16:14Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；AllMusic 給四星半並稱可能是他最好的一張，但近 19 分鐘的 berimbau 加交響樂團開場門檻不低。",
+          "rarity": "epic"
+        }
       },
-      "rarity": "epic",
+      "rarity": "uncommon",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -13500,15 +13834,24 @@
         "visuallyVerified": true
       },
       "ratings": {
-        "classic": 5,
+        "classic": 4,
         "obscurity": 3,
         "accessibility": 3,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-21T14:16:14Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Rolling Stone Brasil 巴西百大第 18、Scream & Yell 90 年代國內第 2，manguebeat 的完成型。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：manguebeat 第二張，評價高但正典地位不及首作",
+        "previous": {
+          "classic": 5,
+          "obscurity": 3,
+          "accessibility": 3,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-21T14:16:14Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Rolling Stone Brasil 巴西百大第 18、Scream & Yell 90 年代國內第 2，manguebeat 的完成型。",
+          "rarity": "epic"
+        }
       },
-      "rarity": "epic",
+      "rarity": "uncommon",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -13839,15 +14182,24 @@
         "visuallyVerified": true
       },
       "ratings": {
-        "classic": 5,
+        "classic": 4,
         "obscurity": 2,
         "accessibility": 2,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-21T14:16:14Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；tango nuevo 走向國際的招牌盤，標題曲進入全球流行樂常識，一般玩家極易撞見。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：同名曲極著名，但 Piazzolla 殿堂級是其他作品；經典度4",
+        "previous": {
+          "classic": 5,
+          "obscurity": 2,
+          "accessibility": 2,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-21T14:16:14Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；tango nuevo 走向國際的招牌盤，標題曲進入全球流行樂常識，一般玩家極易撞見。",
+          "rarity": "uncommon"
+        }
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -13905,14 +14257,23 @@
       },
       "ratings": {
         "classic": 4,
-        "obscurity": 3,
+        "obscurity": 5,
         "accessibility": 2,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-21T14:16:14Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；探戈與爵士跨界的公認名盤，雙方都是各自領域巨匠，但知名度遠低於 Libertango，屬樂迷領域。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：Piazzolla 與 Mulligan 合作名盤｜L=32",
+        "previous": {
+          "classic": 4,
+          "obscurity": 3,
+          "accessibility": 2,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-21T14:16:14Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；探戈與爵士跨界的公認名盤，雙方都是各自領域巨匠，但知名度遠低於 Libertango，屬樂迷領域。",
+          "rarity": "rare"
+        }
       },
-      "rarity": "rare",
+      "rarity": "uncommon",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -14307,13 +14668,21 @@
       },
       "rarity": "uncommon",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "流亡歸國的歷史性現場錄音，兩份獨立名榜單（Los 600 第 12 名、NPR 150 Greatest Albums by Women）加上其在阿根廷民主轉型敘事中的長期地位，足列拉美音樂史核心。",
-        "evidenceUrls": [
-          "https://en.wikipedia.org/wiki/Mercedes_Sosa_en_Argentina",
-          "https://en.wikipedia.org/wiki/Los_600_de_Latinoam%C3%A9rica"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。拉美區域榜前段，非綜合歷代榜，5 星",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "流亡歸國的歷史性現場錄音，兩份獨立名榜單（Los 600 第 12 名、NPR 150 Greatest Albums by Women）加上其在阿根廷民主轉型敘事中的長期地位，足列拉美音樂史核心。",
+          "evidenceUrls": [
+            "https://en.wikipedia.org/wiki/Mercedes_Sosa_en_Argentina",
+            "https://en.wikipedia.org/wiki/Los_600_de_Latinoam%C3%A9rica"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "1979 年在 La Plata 演出時被當場逮捕、隨後遭軍政府禁演的 Sosa，流亡巴黎與馬德里後，於 1982 年 2 月回到阿根廷，在布宜諾斯艾利斯的 Teatro Ópera 連演數場。這套 Philips 雙唱片就是當時的現場錄音，上市即成暢銷盤，曲目含〈Gracias a la vida〉〈Alfonsina y el mar〉〈Sólo le pido a Dios〉與收尾的〈Canción con todos〉。2024 年拉美樂評名單 Los 600 將它排在第 12 名，2017 年 NPR 也選入「150 張女性最偉大專輯」。",
@@ -14906,12 +15275,21 @@
       },
       "ratings": {
         "classic": 4,
-        "obscurity": 4,
+        "obscurity": 3,
         "accessibility": 2,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-21T14:16:14Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；評論界普遍視為她最好的一張，但 2000 年的世界音樂盤在一般玩家手上少見；節奏留白多，入耳仍屬正常"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：Luaka Bop 發行的非裔秘魯代表作，圈外知名度有限｜L=13341",
+        "previous": {
+          "classic": 4,
+          "obscurity": 4,
+          "accessibility": 2,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-21T14:16:14Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；評論界普遍視為她最好的一張，但 2000 年的世界音樂盤在一般玩家手上少見；節奏留白多，入耳仍屬正常",
+          "rarity": "rare"
+        }
       },
       "rarity": "rare",
       "apexAssessment": {
@@ -16247,13 +16625,21 @@
       },
       "rarity": "epic",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "被記為史上第一張印度古典音樂專輯，促成 HMV 開始製作長時值印度古典錄音，並帶動 Ravi Shankar 隔年首度赴西方演出；二〇二五年另獲 Uncut「500 Greatest Albums of the 1950s」列名（第 426 位）。地位跨越唱片史與印度音樂西傳史，建議店主複核後定案。",
-        "evidenceUrls": [
-          "https://en.wikipedia.org/wiki/Music_of_India:_Morning_and_Evening_Ragas",
-          "https://en.wikipedia.org/wiki/Ali_Akbar_Khan"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。西方首張印度古典 LP，歷史里程碑但非綜合歷代榜正典",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "被記為史上第一張印度古典音樂專輯，促成 HMV 開始製作長時值印度古典錄音，並帶動 Ravi Shankar 隔年首度赴西方演出；二〇二五年另獲 Uncut「500 Greatest Albums of the 1950s」列名（第 426 位）。地位跨越唱片史與印度音樂西傳史，建議店主複核後定案。",
+          "evidenceUrls": [
+            "https://en.wikipedia.org/wiki/Music_of_India:_Morning_and_Evening_Ragas",
+            "https://en.wikipedia.org/wiki/Ali_Akbar_Khan"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "一九五五年四月十八日，沙羅德琴手 Ali Akbar Khan 應小提琴家 Yehudi Menuhin 之邀赴紐約參加 Living Arts of India 藝術節，在紐約現代美術館旁的招待所錄下這批演奏：Chatur Lal 打塔布拉、Shirish Gor 彈坦布拉，Menuhin 本人在每段前口述導聆，一面走晨間拉格 Sindhu Bhairavi、一面走晚間的 Pilu Baroowa。一般認定這是史上第一張印度古典音樂 LP，成功後促使 HMV 開始製作長時值的印度古典錄音，也推動 Ravi Shankar 隔年首度赴歐演出。",
@@ -16572,23 +16958,40 @@
       },
       "ratings": {
         "classic": 5,
-        "obscurity": 2,
+        "obscurity": 3,
         "accessibility": 2,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-21T14:16:14Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；獲白金唱片、被列入《1001 Albums You Must Hear Before You Die》，公認是把印度古典樂帶向西方聽眾的關鍵唱片，同時也是最容易入門的一張，旋律與時序結構都清楚。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：印度古典最暢銷、跨界影響深遠的必提盤；殿堂成立但領域較窄，強度 1；未上串流冷門 3",
+        "previous": {
+          "classic": 5,
+          "obscurity": 2,
+          "accessibility": 2,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-21T14:16:14Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；獲白金唱片、被列入《1001 Albums You Must Hear Before You Die》，公認是把印度古典樂帶向西方聽眾的關鍵唱片，同時也是最容易入門的一張，旋律與時序結構都清楚。",
+          "rarity": "uncommon"
+        }
       },
       "rarity": "uncommon",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "跨來源長期共識明確：白金唱片、《1001 Albums You Must Hear Before You Die》收錄、AllMusic 評者 Ken Hunt 直言新手若只買一張印度古典樂唱片就該買它，三位演奏者的維基條目亦各自將其列為代表錄音，足列該領域史上核心。",
-        "evidenceUrls": [
-          "https://en.wikipedia.org/wiki/Call_of_the_Valley",
-          "https://en.wikipedia.org/wiki/Hariprasad_Chaurasia",
-          "https://en.wikipedia.org/wiki/Shivkumar_Sharma"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。印度古典跨界名盤、1001 收錄，但類型較窄，未達跨類型史上正典",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "跨來源長期共識明確：白金唱片、《1001 Albums You Must Hear Before You Die》收錄、AllMusic 評者 Ken Hunt 直言新手若只買一張印度古典樂唱片就該買它，三位演奏者的維基條目亦各自將其列為代表錄音，足列該領域史上核心。",
+          "evidenceUrls": [
+            "https://en.wikipedia.org/wiki/Call_of_the_Valley",
+            "https://en.wikipedia.org/wiki/Hariprasad_Chaurasia",
+            "https://en.wikipedia.org/wiki/Shivkumar_Sharma"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "1968 年由 His Master's Voice 發行（ECSD 2382）的概念作，Shivkumar Sharma 的 santoor 揚琴、Brij Bhushan Kabra 的滑棒吉他、Hariprasad Chaurasia 的 bansuri 竹笛三線交錯。全片用不同時辰的拉格串起喀什米爾牧羊人的一天，從〈Ahir Bhairav〉走到〈Rag Pahadi〉。後來它成為全球銷量最高的印度音樂唱片之一，拿下白金唱片，並被收進《1001 Albums You Must Hear Before You Die》。",
@@ -17038,15 +17441,24 @@
         "visuallyVerified": true
       },
       "ratings": {
-        "classic": 5,
+        "classic": 4,
         "obscurity": 3,
         "accessibility": 2,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-21T14:16:14Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；1979 年即拿到白金唱片、多首進 Binaca Geetmala 年度榜、公認是 1970 年代最暢銷的印地語電影唱片之一，地位可跨來源查證；曲風流行直白。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：名片原聲，地位主要來自電影；寶萊塢原聲正典之一但非殿堂",
+        "previous": {
+          "classic": 5,
+          "obscurity": 3,
+          "accessibility": 2,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-21T14:16:14Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；1979 年即拿到白金唱片、多首進 Binaca Geetmala 年度榜、公認是 1970 年代最暢銷的印地語電影唱片之一，地位可跨來源查證；曲風流行直白。",
+          "rarity": "uncommon"
+        }
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -17173,21 +17585,38 @@
       "ratings": {
         "classic": 5,
         "obscurity": 3,
-        "accessibility": 2,
+        "accessibility": 1,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-21T14:16:14Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；《時代》雜誌 2005 年列入影史十大原聲帶、首位以出道作拿下印度國家電影獎最佳音樂總監、坦米爾語與印地語版合計銷量逾三百萬張，跨來源地位明確；曲風是好入耳的流行。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：Time 史上十大電影原聲；印度電影音樂轉捩點；歌曲旋律直白，硬蕊降 1",
+        "previous": {
+          "classic": 5,
+          "obscurity": 3,
+          "accessibility": 2,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-21T14:16:14Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；《時代》雜誌 2005 年列入影史十大原聲帶、首位以出道作拿下印度國家電影獎最佳音樂總監、坦米爾語與印地語版合計銷量逾三百萬張，跨來源地位明確；曲風是好入耳的流行。",
+          "rarity": "uncommon"
+        }
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "跨來源長期共識充分：《時代》雜誌影史十大原聲帶、印度國家電影獎最佳音樂總監（史上首位以出道作獲獎者）、Vairamuthu 獲最佳作詞，且被普遍視為改寫印度電影音樂編曲語彙的起點，足列該領域史上核心。",
-        "evidenceUrls": [
-          "https://en.wikipedia.org/wiki/Roja_(soundtrack)",
-          "https://en.wikipedia.org/wiki/A._R._Rahman"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。印度電影音樂轉捩點、Time 原聲榜，但不在 RS500／1001 等綜合歷代榜，屬類型里程碑 5",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "跨來源長期共識充分：《時代》雜誌影史十大原聲帶、印度國家電影獎最佳音樂總監（史上首位以出道作獲獎者）、Vairamuthu 獲最佳作詞，且被普遍視為改寫印度電影音樂編曲語彙的起點，足列該領域史上核心。",
+          "evidenceUrls": [
+            "https://en.wikipedia.org/wiki/Roja_(soundtrack)",
+            "https://en.wikipedia.org/wiki/A._R._Rahman"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "A. R. Rahman 的出道原聲帶，配 Mani Ratnam 的坦米爾語電影《Roja》，1992 年 7 月 27 日由 Lahari Music 發行。Mani Ratnam 在頒獎場合聽到他的廣告配樂後直接找上門，Rahman 也因此放棄去 Berklee 唸書。〈Chinna Chinna Aasai〉由 Minmini 演唱，〈Thamizha Thamizha〉的詞取自詩人 Subramanya Bharathi。他以此拿下印度國家電影獎最佳音樂總監，是首位以出道作獲獎者；《時代》雜誌 2005 年也把它列入影史十大原聲帶。",
@@ -18495,22 +18924,39 @@
       },
       "ratings": {
         "classic": 5,
-        "obscurity": 4,
+        "obscurity": 3,
         "accessibility": 3,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-21T14:16:14Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；尺八在美國最早的重要錄音，且其中一曲經 NASA 選入航海家金唱片，屬可查證的跨來源開創地位。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：Nonesuch Explorer 尺八經典，該領域最常被提及；國際廠流通，冷門度 4→3",
+        "previous": {
+          "classic": 5,
+          "obscurity": 4,
+          "accessibility": 3,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-21T14:16:14Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；尺八在美國最早的重要錄音，且其中一曲經 NASA 選入航海家金唱片，屬可查證的跨來源開創地位。",
+          "rarity": "epic"
+        }
       },
       "rarity": "epic",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "Nonesuch Explorer 系列此盤被記載為尺八在美國最具影響力的首張錄音，且〈巣鶴鈴慕〉一九七七年由 NASA 選入航海家金唱片、隨兩艘探測器離開太陽系，兩項事實各有獨立條目佐證，足列日本傳統音樂錄音史的核心。",
-        "evidenceUrls": [
-          "https://en.wikipedia.org/wiki/Gor%C5%8D_Yamaguchi",
-          "https://en.wikipedia.org/wiki/Contents_of_the_Voyager_Golden_Record"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。Nonesuch Explorer 尺八經典，國際廠量產，類型級",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "Nonesuch Explorer 系列此盤被記載為尺八在美國最具影響力的首張錄音，且〈巣鶴鈴慕〉一九七七年由 NASA 選入航海家金唱片、隨兩艘探測器離開太陽系，兩項事實各有獨立條目佐證，足列日本傳統音樂錄音史的核心。",
+          "evidenceUrls": [
+            "https://en.wikipedia.org/wiki/Gor%C5%8D_Yamaguchi",
+            "https://en.wikipedia.org/wiki/Contents_of_the_Voyager_Golden_Record"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "主持竹盟社的尺八琴古流演奏家山口五郎（1933–1999），於 1967 至 1968 年赴美擔任 Wesleyan 大學駐校藝術家期間錄下此作，1969 年由 Nonesuch 的 Explorer 系列發行，編號 H-72025，是尺八在美國最早產生影響的錄音。整張只收〈巣鶴鈴慕〉與〈虚空鈴慕〉兩首本曲，沒有節拍框架，靠一支竹管的氣息、餘韻與音色轉折推進。1977 年 NASA 選前者收入航海家金唱片。",
@@ -19676,15 +20122,24 @@
         "visuallyVerified": true
       },
       "ratings": {
-        "classic": 5,
+        "classic": 4,
         "obscurity": 3,
-        "accessibility": 3,
+        "accessibility": 2,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-21T14:16:14Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；經 Brian Eno 的 Opal Records 在 1989 年重發後，這份錄音成為 duduk 進入西方聽覺的起點，其後 Peter Gabriel、Hans Zimmer 一路把這件樂器帶進主流電影配樂，開創地位明確；Opal／All Saints 通路使它比同類錄音容易撞見；單一雙簧音色、慢速長句仍有門檻。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：Opal/Land 發行、Eno 推介的 duduk 代表作，非殿堂",
+        "previous": {
+          "classic": 5,
+          "obscurity": 3,
+          "accessibility": 3,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-21T14:16:14Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；經 Brian Eno 的 Opal Records 在 1989 年重發後，這份錄音成為 duduk 進入西方聽覺的起點，其後 Peter Gabriel、Hans Zimmer 一路把這件樂器帶進主流電影配樂，開創地位明確；Opal／All Saints 通路使它比同類錄音容易撞見；單一雙簧音色、慢速長句仍有門檻。",
+          "rarity": "epic"
+        }
       },
-      "rarity": "epic",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -21207,13 +21662,21 @@
       },
       "rarity": "uncommon",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "收錄 Paco 流傳最廣的作品〈Entre dos aguas〉,長期被視為現代 flamenco 吉他轉向的核心唱片,英文維基以專條記載並在藝人條目中反覆援引其地位。",
-        "evidenceUrls": [
-          "https://en.wikipedia.org/wiki/Fuente_y_caudal",
-          "https://en.wikipedia.org/wiki/Paco_de_Luc%C3%ADa"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。新佛朗明哥轉折點＝該類型第一名盤（5 星），非綜合榜正典",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "收錄 Paco 流傳最廣的作品〈Entre dos aguas〉,長期被視為現代 flamenco 吉他轉向的核心唱片,英文維基以專條記載並在藝人條目中反覆援引其地位。",
+          "evidenceUrls": [
+            "https://en.wikipedia.org/wiki/Fuente_y_caudal",
+            "https://en.wikipedia.org/wiki/Paco_de_Luc%C3%ADa"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "Paco de Lucía 第九張錄音室專輯,與製作人 José Torregrosa 合作,胞兄 Ramón de Algeciras 搭第二把吉他。開場〈Entre dos aguas〉是一首加了電貝斯與邦哥鼓的 rumba,曲名指他的故鄉 Algeciras——地中海與大西洋在那裡交會——成為他流傳最廣的作品,也讓整張連續數月躋身西班牙最暢銷唱片。〈Cepa andaluza〉是被傳記作者 Donn Pohren 形容為驚人的 bulerías,〈Solera〉與標題 taranta 同樣被後世反覆援引。",
@@ -21266,12 +21729,21 @@
       },
       "ratings": {
         "classic": 5,
-        "obscurity": 3,
+        "obscurity": 2,
         "accessibility": 2,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-21T14:16:14Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Paco 首次把 oud 與阿拉伯調式正式帶進自己的 flamenco,是他 70 年代改寫曲種語彙的關鍵一張。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：Paco 新弗朗明哥代表作之一；但領域必提的是 Entre dos aguas／Fuente y caudal，未達殿堂。Philips 國際發行，冷門度 2",
+        "previous": {
+          "classic": 5,
+          "obscurity": 3,
+          "accessibility": 2,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-21T14:16:14Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Paco 首次把 oud 與阿拉伯調式正式帶進自己的 flamenco,是他 70 年代改寫曲種語彙的關鍵一張。",
+          "rarity": "uncommon"
+        }
       },
       "rarity": "uncommon",
       "apexAssessment": {
@@ -21340,13 +21812,21 @@
       },
       "rarity": "uncommon",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "有明確可查的長期評價共識,被反覆列為 flamenco 吉他史上最重要的獨奏錄音之一,〈La barrosa〉與〈Gloria al niño Ricardo〉已成現代 flamenco 標準曲。",
-        "evidenceUrls": [
-          "https://en.wikipedia.org/wiki/Paco_de_Luc%C3%ADa",
-          "https://en.wikipedia.org/wiki/Siroco_(album)"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。flamenco 獨奏傑作，類型內 5 星",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "有明確可查的長期評價共識,被反覆列為 flamenco 吉他史上最重要的獨奏錄音之一,〈La barrosa〉與〈Gloria al niño Ricardo〉已成現代 flamenco 標準曲。",
+          "evidenceUrls": [
+            "https://en.wikipedia.org/wiki/Paco_de_Luc%C3%ADa",
+            "https://en.wikipedia.org/wiki/Siroco_(album)"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "1987 年 Paco de Lucía 回到近乎純吉他的語彙,八首全依 flamenco palos 命名:tangos〈La cañada〉開場,alegrías〈La barrosa〉取自 Cádiz 省同名海灘,Eric Clapton 與 Richard Chapman 在吉他史著作中特別點名;末曲 soleá〈Gloria al niño Ricardo〉獻給他兄長 Ramón 奉若神明的老一輩名家 Niño Ricardo。Rubem Dantas 的 cajón、José María Bandera 的第二吉他都只點到為止。",
@@ -21537,13 +22017,21 @@
       },
       "rarity": "epic",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "爵士評家 Walter Kolosky 稱其可能是所有原音吉他現場專輯中影響最深遠者,並獲《The Rolling Stone Jazz Record Guide》與《The Penguin Guide to Jazz Recordings》長期收錄評等,跨來源共識明確。",
-        "evidenceUrls": [
-          "https://en.wikipedia.org/wiki/Friday_Night_in_San_Francisco",
-          "https://archive.org/details/rollingstonejazz00swen"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。吉他現場名盤，無綜合歷代榜共識",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "爵士評家 Walter Kolosky 稱其可能是所有原音吉他現場專輯中影響最深遠者,並獲《The Rolling Stone Jazz Record Guide》與《The Penguin Guide to Jazz Recordings》長期收錄評等,跨來源共識明確。",
+          "evidenceUrls": [
+            "https://en.wikipedia.org/wiki/Friday_Night_in_San_Francisco",
+            "https://archive.org/details/rollingstonejazz00swen"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "1980 年 12 月 5 日錄於舊金山 Warfield Theatre,Al Di Meola、John McLaughlin 與 Paco de Lucía 三把原音吉他同台,只有〈Guardian Angel〉是隔年於紐約補錄。開場〈Mediterranean Sundance / Rio Ancho〉把 Di Meola 與 Paco 各自的曲子接成十一分半的對飆,另兩首出自 Chick Corea 與 Egberto Gismonti。爵士評家 Walter Kolosky 把這場比作 1938 年 Benny Goodman 的卡內基演出。",
@@ -22061,22 +22549,39 @@
       "ratings": {
         "classic": 5,
         "obscurity": 3,
-        "accessibility": 4,
+        "accessibility": 3,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-21T14:16:14Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；西語圈普遍視為 flamenco 革新的分水嶺，二十年間不斷以現場重演與週年版重新發行；cante jondo 撞上失真吉他與鼓組，音壓與不和諧程度遠超一般 flamenco，入耳門檻明顯偏高。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：西班牙前衛佛朗明哥里程碑，但查無權威榜首位依據；硬蕊度降 3",
+        "previous": {
+          "classic": 5,
+          "obscurity": 3,
+          "accessibility": 4,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-21T14:16:14Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；西語圈普遍視為 flamenco 革新的分水嶺，二十年間不斷以現場重演與週年版重新發行；cante jondo 撞上失真吉他與鼓組，音壓與不和諧程度遠超一般 flamenco，入耳門檻明顯偏高。",
+          "rarity": "legendary"
+        }
       },
-      "rarity": "legendary",
+      "rarity": "epic",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "西班牙語維基百科在專輯條目與 Morente 本人條目都記為「flamenco 革命的參照點、開出前所未見的路」，並記錄 2008 年 Primavera Sound 重演巡演、2016 年二十週年紀念場與紀念版；跨越二十年的持續共識足以列 flamenco 現代史核心。",
-        "evidenceUrls": [
-          "https://es.wikipedia.org/wiki/Omega_(%C3%A1lbum_de_Enrique_Morente)",
-          "https://es.wikipedia.org/wiki/Enrique_Morente",
-          "https://en.wikipedia.org/wiki/Enrique_Morente"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。西班牙前衛佛朗明哥里程碑，該國／類型級",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "西班牙語維基百科在專輯條目與 Morente 本人條目都記為「flamenco 革命的參照點、開出前所未見的路」，並記錄 2008 年 Primavera Sound 重演巡演、2016 年二十週年紀念場與紀念版；跨越二十年的持續共識足以列 flamenco 現代史核心。",
+          "evidenceUrls": [
+            "https://es.wikipedia.org/wiki/Omega_(%C3%A1lbum_de_Enrique_Morente)",
+            "https://es.wikipedia.org/wiki/Enrique_Morente",
+            "https://en.wikipedia.org/wiki/Enrique_Morente"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "1996 年，Granada 的 cante 名家 Enrique Morente 找上同城噪音搖滾團 Lagartija Nick，把 Lorca《Poeta en Nueva York》的詩句和 Leonard Cohen 的歌一起丟進失真吉他與鼓組裡唱。封面列出的客席包括 Vicente Amigo、Tomatito、Cañizares、Isidro Muñoz。發行後被西語樂界視為 flamenco 革新的參照點；2008 年重新發行並在 Primavera Sound 重演，2016 年推出二十週年版。",
@@ -22138,14 +22643,22 @@
       },
       "rarity": "uncommon",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "葡萄牙樂評名單 BLITZ 五十大將其列為 1960 年代第二名，且公認開啟 Amália 與作曲家 Alain Oulman 的合作時代、確立 fado 從街頭曲牌轉向作曲家作品的路線，屬 fado 史核心。",
-        "evidenceUrls": [
-          "https://en.wikipedia.org/wiki/Am%C3%A1lia_Rodrigues_(1962_album)",
-          "https://en.wikipedia.org/wiki/Am%C3%A1lia_Rodrigues",
-          "https://en.wikipedia.org/wiki/Alain_Oulman"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。葡萄牙／法朵第一名盤級，依標準該國第一名盤只到 5",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "葡萄牙樂評名單 BLITZ 五十大將其列為 1960 年代第二名，且公認開啟 Amália 與作曲家 Alain Oulman 的合作時代、確立 fado 從街頭曲牌轉向作曲家作品的路線，屬 fado 史核心。",
+          "evidenceUrls": [
+            "https://en.wikipedia.org/wiki/Am%C3%A1lia_Rodrigues_(1962_album)",
+            "https://en.wikipedia.org/wiki/Am%C3%A1lia_Rodrigues",
+            "https://en.wikipedia.org/wiki/Alain_Oulman"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "1962 年由 Columbia 發行，封面是 Joaquim Valente 為 Amália Rodrigues 塑的頭像，因此俗稱《Busto》，另有以首曲為題的《Asas fechadas》版本。錄音在里斯本 Teatro Taborda 完成，José Nunes 彈 guitarra portuguesa、Castro Mota 彈 viola、Alain Oulman 彈鋼琴——兩人的長期合作自此開始。曲目含〈Estranha forma de vida〉。BLITZ 葡萄牙五十大名單列它為 1960 年代第二。",
@@ -22207,14 +22720,22 @@
       },
       "rarity": "uncommon",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "登上葡萄牙 AFP 冠軍，並同時獲 BLITZ 五十大、《Público》最佳葡萄牙專輯兩份不同名單收錄，《Expresso》2011 年記其「完美的一張」之評，長期跨來源共識足列 fado 史核心。",
-        "evidenceUrls": [
-          "https://en.wikipedia.org/wiki/Com_Que_Voz",
-          "https://en.wikipedia.org/wiki/Am%C3%A1lia_Rodrigues",
-          "https://en.wikipedia.org/wiki/Alain_Oulman"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。法朵里程碑，非跨類型正典",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "登上葡萄牙 AFP 冠軍，並同時獲 BLITZ 五十大、《Público》最佳葡萄牙專輯兩份不同名單收錄，《Expresso》2011 年記其「完美的一張」之評，長期跨來源共識足列 fado 史核心。",
+          "evidenceUrls": [
+            "https://en.wikipedia.org/wiki/Com_Que_Voz",
+            "https://en.wikipedia.org/wiki/Am%C3%A1lia_Rodrigues",
+            "https://en.wikipedia.org/wiki/Alain_Oulman"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "1969 年 1 月錄音、1970 年 3 月由 EMI 與 Valentim de Carvalho 發行；Amália Rodrigues 身邊只有 José Fontes Rocha 的 guitarra portuguesa 與 Pedro Leal 的 viola，編制簡到近乎素描。上市即登上葡萄牙 AFP 排行冠軍，收錄〈Com que voz〉、〈Naufrágio〉、〈Trova do vento que passa〉。BLITZ 五十大名單列為 1970 年代第七，《Público》最佳葡萄牙專輯名單同樣收錄。",
@@ -22944,12 +23465,21 @@
       },
       "ratings": {
         "classic": 5,
-        "obscurity": 4,
+        "obscurity": 3,
         "accessibility": 2,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-21T14:16:14Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；希臘文維基直接稱本作是 Alexiou 生涯的關鍵轉折，〈Ola se thymizoun〉被視為希臘史上最經典的抒情曲之一，作曲者 Manos Loïzos 亦是二十世紀希臘代表作曲家；但希臘境外流通有限，唱片本身旋律直白好入耳。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：希臘 Loizos／Alexiou 經典；希臘語圈一線，圈外少知",
+        "previous": {
+          "classic": 5,
+          "obscurity": 4,
+          "accessibility": 2,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-21T14:16:14Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；希臘文維基直接稱本作是 Alexiou 生涯的關鍵轉折，〈Ola se thymizoun〉被視為希臘史上最經典的抒情曲之一，作曲者 Manos Loïzos 亦是二十世紀希臘代表作曲家；但希臘境外流通有限，唱片本身旋律直白好入耳。",
+          "rarity": "uncommon"
+        }
       },
       "rarity": "uncommon",
       "apexAssessment": {
@@ -23012,12 +23542,21 @@
       },
       "ratings": {
         "classic": 5,
-        "obscurity": 4,
+        "obscurity": 3,
         "accessibility": 3,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-21T14:16:14Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；希臘現代音樂的核心作品,詩作出自諾貝爾文學獎得主Elytis,但清唱劇編制與希臘文演唱對一般聽者仍有門檻"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：希臘現代歌曲經典；國內主流、圈外少知冷門 4→3",
+        "previous": {
+          "classic": 5,
+          "obscurity": 4,
+          "accessibility": 3,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-21T14:16:14Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；希臘現代音樂的核心作品,詩作出自諾貝爾文學獎得主Elytis,但清唱劇編制與希臘文演唱對一般聽者仍有門檻",
+          "rarity": "epic"
+        }
       },
       "rarity": "epic",
       "apexAssessment": {
@@ -25383,14 +25922,23 @@
       },
       "ratings": {
         "classic": 4,
-        "obscurity": 4,
-        "accessibility": 3,
+        "obscurity": 3,
+        "accessibility": 2,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-21T14:16:14Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Khalife 早期最完整的 Darwish 譜曲長篇,在阿拉伯政治歌樂裡地位明確;二十二段連綴的阿拉伯語聲樂敘事,長度與語言門檻使入耳偏難。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：Darwish 詩作清唱劇，阿拉伯語圈經典；圈外少知｜L=11194",
+        "previous": {
+          "classic": 4,
+          "obscurity": 4,
+          "accessibility": 3,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-21T14:16:14Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Khalife 早期最完整的 Darwish 譜曲長篇,在阿拉伯政治歌樂裡地位明確;二十二段連綴的阿拉伯語聲樂敘事,長度與語言門檻使入耳偏難。",
+          "rarity": "uncommon"
+        }
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -25650,13 +26198,22 @@
       "ratings": {
         "classic": 4,
         "obscurity": 3,
-        "accessibility": 2,
+        "accessibility": 3,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-21T14:16:14Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Brahem 的 ECM 首作,是他與 Rabih Abou-Khalil、Dhafer Youssef 一同把 oud 推入 ethno jazz 的起點,屬藝人代表作;ECM 通路使流通度中等,聲響安靜清晰、不難入耳。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：ECM 首作，烏德琴爵士代表作｜L=35249",
+        "previous": {
+          "classic": 4,
+          "obscurity": 3,
+          "accessibility": 2,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-21T14:16:14Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Brahem 的 ECM 首作,是他與 Rabih Abou-Khalil、Dhafer Youssef 一同把 oud 推入 ethno jazz 的起點,屬藝人代表作;ECM 通路使流通度中等,聲響安靜清晰、不難入耳。",
+          "rarity": "rare"
+        }
       },
-      "rarity": "rare",
+      "rarity": "uncommon",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -26582,13 +27139,22 @@
       "ratings": {
         "classic": 4,
         "obscurity": 3,
-        "accessibility": 2,
+        "accessibility": 1,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-21T14:16:14Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Derek Bell加入後樂團現代聲響成形的一張,〈Mná na hÉireann〉經《Barry Lyndon》流傳甚廣,是愛爾蘭傳統音樂公認的主要作品。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：Claddagh 愛爾蘭傳統樂代表系列，旋律親切｜L=4251",
+        "previous": {
+          "classic": 4,
+          "obscurity": 3,
+          "accessibility": 2,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-21T14:16:14Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Derek Bell加入後樂團現代聲響成形的一張,〈Mná na hÉireann〉經《Barry Lyndon》流傳甚廣,是愛爾蘭傳統音樂公認的主要作品。",
+          "rarity": "rare"
+        }
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -26649,11 +27215,20 @@
       "ratings": {
         "classic": 3,
         "obscurity": 3,
-        "accessibility": 2,
+        "accessibility": 1,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-21T14:16:14Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；轉為全職樂團後的第一張、Derek Bell首次彈tiompán,樂團黃金期的代表錄音之一但知名度不及編號4與跨界作。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：系列續作，評價穩定｜L=1664",
+        "previous": {
+          "classic": 3,
+          "obscurity": 3,
+          "accessibility": 2,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-21T14:16:14Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；轉為全職樂團後的第一張、Derek Bell首次彈tiompán,樂團黃金期的代表錄音之一但知名度不及編號4與跨界作。",
+          "rarity": "common"
+        }
       },
       "rarity": "common",
       "apexAssessment": {
@@ -27184,21 +27759,38 @@
       "ratings": {
         "classic": 5,
         "obscurity": 3,
-        "accessibility": 2,
+        "accessibility": 1,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-21T14:16:14Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；凱爾特豎琴復興的定義性錄音,獲 Académie Charles Cros 大獎且被視為改寫傳統民謠與世界音樂關係的一作;全器樂但旋律優美。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：百萬銷量，奠定現代凱爾特音樂，該領域必提；豎琴柔和，硬蕊降 1",
+        "previous": {
+          "classic": 5,
+          "obscurity": 3,
+          "accessibility": 2,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-21T14:16:14Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；凱爾特豎琴復興的定義性錄音,獲 Académie Charles Cros 大獎且被視為改寫傳統民謠與世界音樂關係的一作;全器樂但旋律優美。",
+          "rarity": "uncommon"
+        }
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "英文維基專輯條目直接記述其改寫了傳統民謠、搖滾與世界音樂之間的關係,Alan Stivell 條目另載其奪下 Académie Charles Cros 大獎並帶動布列塔尼與凱爾特音樂復興,屬長期公認的該領域核心錄音。",
-        "evidenceUrls": [
-          "https://en.wikipedia.org/wiki/Renaissance_of_the_Celtic_Harp",
-          "https://en.wikipedia.org/wiki/Alan_Stivell"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。凱爾特音樂奠基，類型里程碑 5，綜合歷代榜罕見",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "英文維基專輯條目直接記述其改寫了傳統民謠、搖滾與世界音樂之間的關係,Alan Stivell 條目另載其奪下 Académie Charles Cros 大獎並帶動布列塔尼與凱爾特音樂復興,屬長期公認的該領域核心錄音。",
+          "evidenceUrls": [
+            "https://en.wikipedia.org/wiki/Renaissance_of_the_Celtic_Harp",
+            "https://en.wikipedia.org/wiki/Alan_Stivell"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "Alan Stivell(本名 Alan Cochevelou)的父親 Georges 親手復原了近乎失傳的布列塔尼凱爾特豎琴,他九歲開始學琴,1971 年在 Fontana 交出這份全器樂錄音,拿下法國 Académie Charles Cros 大獎。開場〈Ys〉取材沉沒之城的傳說,長達十九分鐘的〈Gaeltacht〉以豎琴橫貫愛爾蘭、蘇格蘭與曼島的蓋爾語地帶。樂評 Bruce Elder 稱聽過的人再也回不去,凱爾特豎琴自此重新進入世界音樂的視野。",
@@ -28456,22 +29048,39 @@
       },
       "ratings": {
         "classic": 5,
-        "obscurity": 2,
+        "obscurity": 3,
         "accessibility": 2,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-21T14:16:14Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；義大利《Rolling Stone》百大義大利專輯第四名、David Byrne點名為八〇年代最重要唱片之一,地位跨來源可查。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：Rolling Stone 義大利版史上百大第 4，義語圈核心；圈外冷門度 3",
+        "previous": {
+          "classic": 5,
+          "obscurity": 2,
+          "accessibility": 2,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-21T14:16:14Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；義大利《Rolling Stone》百大義大利專輯第四名、David Byrne點名為八〇年代最重要唱片之一,地位跨來源可查。",
+          "rarity": "uncommon"
+        }
       },
       "rarity": "uncommon",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "義大利歌謠與地中海世界音樂的公認核心:方言創作路線影響其後三十年,義版Rolling Stone百大義大利專輯列第四,David Byrne亦公開推崇,屬長期跨來源共識。",
-        "evidenceUrls": [
-          "https://en.wikipedia.org/wiki/Cr%C3%AAuza_de_m%C3%A4",
-          "https://it.wikipedia.org/wiki/Creuza_de_m%C3%A4"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。義大利 RS 百大第 4，屬該國第一名盤層級 5 星",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "義大利歌謠與地中海世界音樂的公認核心:方言創作路線影響其後三十年,義版Rolling Stone百大義大利專輯列第四,David Byrne亦公開推崇,屬長期跨來源共識。",
+          "evidenceUrls": [
+            "https://en.wikipedia.org/wiki/Cr%C3%AAuza_de_m%C3%A4",
+            "https://it.wikipedia.org/wiki/Creuza_de_m%C3%A4"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "1984年由Dischi Ricordi發行,De André的第十一張錄音室作品,全碟以熱那亞方言演唱,與Mauro Pagani合作:歌詞出自De André,旋律與編曲多由Pagani負責,樂器取自地中海沿岸各地。〈Sidun〉寫1982年黎巴嫩戰爭中的西頓城,〈Jamin-a〉來自兩人的非洲與中東見聞,同名開場曲末尾錄進熱那亞魚市的叫賣人聲。David Byrne曾對Rolling Stone稱它是那十年最重要的唱片之一,義版Rolling Stone百大義大利專輯將它列在第四。",
@@ -29338,14 +29947,22 @@
       },
       "rarity": "uncommon",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "根源雷鬼與 Black Ark 製作美學的公認核心之一,長期被與 Heptones《Party Time》、Junior Murvin《Police and Thieves》並列為 Perry 的「神聖三部曲」,且被記述為 Romeo 生涯最佳作。",
-        "evidenceUrls": [
-          "https://en.wikipedia.org/wiki/War_Ina_Babylon",
-          "https://en.wikipedia.org/wiki/Max_Romeo",
-          "https://musicbrainz.org/release-group/3da80584-65dc-31b0-8f2b-706e9edb2cc8"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。Black Ark roots reggae 名盤，類型里程碑 5 星",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "根源雷鬼與 Black Ark 製作美學的公認核心之一,長期被與 Heptones《Party Time》、Junior Murvin《Police and Thieves》並列為 Perry 的「神聖三部曲」,且被記述為 Romeo 生涯最佳作。",
+          "evidenceUrls": [
+            "https://en.wikipedia.org/wiki/War_Ina_Babylon",
+            "https://en.wikipedia.org/wiki/Max_Romeo",
+            "https://musicbrainz.org/release-group/3da80584-65dc-31b0-8f2b-706e9edb2cc8"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "1976 年由 Island 發行,Lee「Scratch」Perry 在 Black Ark 錄音室製作,與 Heptones《Party Time》、Junior Murvin《Police and Thieves》並稱 Black Ark「神聖三部曲」。〈Chase the Devil〉成了 Max Romeo 最廣為人知的一首,〈One Step Forward〉〈Norman〉與標題曲也各自發過單曲。和聲由 Heptones 的 Barry Llewellyn、Earl Morgan 與 Marcia Griffiths 擔任。",
@@ -29400,24 +30017,41 @@
         "visuallyVerified": true
       },
       "ratings": {
-        "classic": 5,
+        "classic": 4,
         "obscurity": 2,
         "accessibility": 2,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-21T14:16:14Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Black Ark「神聖三部曲」之一、被記述為 Perry 最好的製作之一,標題曲經 The Clash 翻唱後成為大眾曲目。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：Black Ark 名作、同名曲廣傳，但非雷鬼人人必提的專輯級正典；殿堂不成立",
+        "previous": {
+          "classic": 5,
+          "obscurity": 2,
+          "accessibility": 2,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-21T14:16:14Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Black Ark「神聖三部曲」之一、被記述為 Perry 最好的製作之一,標題曲經 The Clash 翻唱後成為大眾曲目。",
+          "rarity": "uncommon"
+        }
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "根源雷鬼與 Black Ark 製作的公認核心,標題曲同時進入雷鬼與龐克兩條樂史敘事,並長期被列為 Perry 最佳製作之一。",
-        "evidenceUrls": [
-          "https://en.wikipedia.org/wiki/Junior_Murvin",
-          "https://en.wikipedia.org/wiki/War_Ina_Babylon",
-          "https://musicbrainz.org/release-group/b9678b82-d566-3c5e-bc55-bae400cd63de"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。雷鬼名作，綜合歷代榜罕收",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "根源雷鬼與 Black Ark 製作的公認核心,標題曲同時進入雷鬼與龐克兩條樂史敘事,並長期被列為 Perry 最佳製作之一。",
+          "evidenceUrls": [
+            "https://en.wikipedia.org/wiki/Junior_Murvin",
+            "https://en.wikipedia.org/wiki/War_Ina_Babylon",
+            "https://musicbrainz.org/release-group/b9678b82-d566-3c5e-bc55-bae400cd63de"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "受 Curtis Mayfield 影響的假聲,1976 年在 Lee「Scratch」Perry 的 Black Ark 錄成同名單曲。歌詞寫的是牙買加的地盤火拼與警察暴力,卻恰逢倫敦 Notting Hill 嘉年華騷亂而被英國聽眾接收,The Clash 隨即把它翻進 1977 年 4 月的首張專輯。同年 Island 推出的專輯裡,〈Roots Train〉〈Rescue Jah Children〉延續同一組輕飄飄的 Black Ark 音場,〈Solomon〉則是他 1972 年在 Derrick Harriott 旗下小熱門的重錄。",
@@ -29939,23 +30573,40 @@
         "visuallyVerified": true
       },
       "ratings": {
-        "classic": 5,
+        "classic": 4,
         "obscurity": 2,
         "accessibility": 2,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-21T14:16:14Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Rolling Stone 當年即稱其為最好的雷鬼專輯之一,長年被列為 roots reggae 的奠基錄音,且是 Channel One 之聲的起點。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：roots reggae 名盤，不到 Marley 級領域核心",
+        "previous": {
+          "classic": 5,
+          "obscurity": 2,
+          "accessibility": 2,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-21T14:16:14Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Rolling Stone 當年即稱其為最好的雷鬼專輯之一,長年被列為 roots reggae 的奠基錄音,且是 Channel One 之聲的起點。",
+          "rarity": "uncommon"
+        }
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "1976 年 Rolling Stone 評為「最好的雷鬼 LP 之一」,隔年再稱其為前一年美國發行的最佳雷鬼作;PopMatters 列入「不可不聽的五張雷鬼專輯」,學術書籍《Caribbean Popular Music》以它標記 Channel One 的成形,跨來源長期共識足以列入 roots reggae 史上核心。",
-        "evidenceUrls": [
-          "https://en.wikipedia.org/wiki/Right_Time",
-          "https://en.wikipedia.org/wiki/Mighty_Diamonds"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。roots reggae 名盤，類型級",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "1976 年 Rolling Stone 評為「最好的雷鬼 LP 之一」,隔年再稱其為前一年美國發行的最佳雷鬼作;PopMatters 列入「不可不聽的五張雷鬼專輯」,學術書籍《Caribbean Popular Music》以它標記 Channel One 的成形,跨來源長期共識足以列入 roots reggae 史上核心。",
+          "evidenceUrls": [
+            "https://en.wikipedia.org/wiki/Right_Time",
+            "https://en.wikipedia.org/wiki/Mighty_Diamonds"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "牙買加三聲部和聲組合 1976 年的首張專輯,由 Joseph Hoo Kim 在 Channel One 錄音室製作,Virgin 進軍牙買加市場簽下他們後推出。〈Right Time〉〈Why Me Black Brother Why〉等社會意識曲目在牙買加走紅,也在英國地下圈流傳。Sly Dunbar 與 Robbie Shakespeare 的節奏組因此打開名聲,Channel One 也自此站穩腳步。Rolling Stone 在 1976 年稱它是最好的雷鬼作品之一,至今仍是 roots reggae 的奠基錄音。",
@@ -30343,22 +30994,39 @@
       },
       "ratings": {
         "classic": 5,
-        "obscurity": 4,
+        "obscurity": 3,
         "accessibility": 2,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-21T14:16:14Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Rolling Stone 五星、入選《1000 Recordings to Hear Before You Die》,是 Augustus Pablo 製作體系與 roots reggae 的核心錄音之一。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：根源雷鬼名作（經典度 5），但無跨來源正典榜單；已串流再發，冷門度 4 改 3",
+        "previous": {
+          "classic": 5,
+          "obscurity": 4,
+          "accessibility": 2,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-21T14:16:14Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Rolling Stone 五星、入選《1000 Recordings to Hear Before You Die》,是 Augustus Pablo 製作體系與 roots reggae 的核心錄音之一。",
+          "rarity": "uncommon"
+        }
       },
       "rarity": "uncommon",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "Rolling Stone 給予五星評價,並被 Tom Moon 收入《1000 Recordings to Hear Before You Die》,加上其在 Augustus Pablo 的 Rockers 廠牌製作序列中被列為代表發行,跨來源長期共識足以列為 roots reggae 史上核心。",
-        "evidenceUrls": [
-          "https://en.wikipedia.org/wiki/Hugh_Mundell",
-          "https://en.wikipedia.org/wiki/Augustus_Pablo"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。根源雷鬼類型名作屬 5，無綜合榜收錄",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "Rolling Stone 給予五星評價,並被 Tom Moon 收入《1000 Recordings to Hear Before You Die》,加上其在 Augustus Pablo 的 Rockers 廠牌製作序列中被列為代表發行,跨來源長期共識足以列為 roots reggae 史上核心。",
+          "evidenceUrls": [
+            "https://en.wikipedia.org/wiki/Hugh_Mundell",
+            "https://en.wikipedia.org/wiki/Augustus_Pablo"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "Hugh Mundell 生於京斯敦律師家庭,少年時在 Joe Gibbs 錄音室結識 Augustus Pablo,1976 至 1978 年間與 Pablo 錄下這批歌,發行時他才十六歲,全部曲目自己寫成。〈Let's All Unite〉錄於 Lee「Scratch」Perry 的 Black Ark 並由 Perry 監製混音。Rolling Stone 給了五星,Tom Moon 的《1000 Recordings to Hear Before You Die》也收錄。Mundell 1983 年遭槍殺,得年二十一。",
@@ -31552,13 +32220,22 @@
       "ratings": {
         "classic": 5,
         "obscurity": 4,
-        "accessibility": 4,
+        "accessibility": 3,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-21T14:16:14Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Rasta nyabinghi鼓樂進入唱片史的源頭文獻,維基直稱其為Count Ossie的代表作,並啟發Ras Michael等後繼鼓樂團體。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：Nyabinghi 鼓樂里程碑；長篇儀式即興。非人人必提正典",
+        "previous": {
+          "classic": 5,
+          "obscurity": 4,
+          "accessibility": 4,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-21T14:16:14Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Rasta nyabinghi鼓樂進入唱片史的源頭文獻,維基直稱其為Count Ossie的代表作,並啟發Ras Michael等後繼鼓樂團體。",
+          "rarity": "legendary"
+        }
       },
-      "rarity": "legendary",
+      "rarity": "epic",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -31883,21 +32560,38 @@
       "ratings": {
         "classic": 5,
         "obscurity": 3,
-        "accessibility": 3,
+        "accessibility": 2,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-21T14:16:14Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；英文維基dub條目直接稱其為該曲風的landmark recording、1973年最早問世的純dub專輯之一,由Lee Perry與King Tubby共同混音,屬史料級起點。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：公認最早 dub 專輯之一，dub 史必提；dub 硬蕊度 3→2",
+        "previous": {
+          "classic": 5,
+          "obscurity": 3,
+          "accessibility": 3,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-21T14:16:14Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；英文維基dub條目直接稱其為該曲風的landmark recording、1973年最早問世的純dub專輯之一,由Lee Perry與King Tubby共同混音,屬史料級起點。",
+          "rarity": "epic"
+        }
       },
-      "rarity": "epic",
+      "rarity": "uncommon",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "英文維基dub條目把1973年春天的這張列為dub曲風成形時最早的純dub專輯之一並稱為landmark recording,專輯條目另記其為第一張立體聲、第一張用上殘響的dub唱片,兩處獨立敘述都指向曲風起點的核心地位。",
-        "evidenceUrls": [
-          "https://en.wikipedia.org/wiki/Dub_(music)",
-          "https://en.wikipedia.org/wiki/Upsetters_14_Dub_Blackboard_Jungle"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。早期 dub 類型里程碑，非跨類型正典",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "英文維基dub條目把1973年春天的這張列為dub曲風成形時最早的純dub專輯之一並稱為landmark recording,專輯條目另記其為第一張立體聲、第一張用上殘響的dub唱片,兩處獨立敘述都指向曲風起點的核心地位。",
+          "evidenceUrls": [
+            "https://en.wikipedia.org/wiki/Dub_(music)",
+            "https://en.wikipedia.org/wiki/Upsetters_14_Dub_Blackboard_Jungle"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "1973年春天,Lee「Scratch」Perry以《Upsetters 14 Dub Blackboard Jungle》之名在牙買加只壓了三百張,由他與King Tubby共同混音。英文維基的dub條目把它列為最早問世的純dub專輯之一,專輯條目另記其為第一張立體聲、也是第一張用上殘響的dub唱片。錄音班底橫跨Barrett兄弟、Augustus Pablo的口風琴與Tommy McCook;日後改題《Blackboard Jungle Dub》重發的版本換過曲目,〈Cloak a Dagger (version 3)〉即出自該版。",
@@ -32286,15 +32980,24 @@
         "visuallyVerified": true
       },
       "ratings": {
-        "classic": 5,
+        "classic": 4,
         "obscurity": 2,
         "accessibility": 2,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-21T14:16:14Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；八〇年代dancehall之王最出名的專輯,同名曲的旋律與Diseases riddim被2Pac、Junior M.A.F.I.A.、Black Star等反覆挪用,影響鏈可逐條查證。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：dancehall代表作4；非頂點",
+        "previous": {
+          "classic": 5,
+          "obscurity": 2,
+          "accessibility": 2,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-21T14:16:14Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；八〇年代dancehall之王最出名的專輯,同名曲的旋律與Diseases riddim被2Pac、Junior M.A.F.I.A.、Black Star等反覆挪用,影響鏈可逐條查證。",
+          "rarity": "uncommon"
+        }
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -33817,15 +34520,24 @@
         "visuallyVerified": true
       },
       "ratings": {
-        "classic": 3,
-        "obscurity": 4,
-        "accessibility": 2,
+        "classic": 4,
+        "obscurity": 5,
+        "accessibility": 1,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-21T14:16:14Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；馬提尼克弦樂編制名團的正規專輯，法國本地評價穩固但無英語條目，屬深度愛好者領域。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：馬提尼克 biguine 代表盤，法語圈外少知｜L=387",
+        "previous": {
+          "classic": 3,
+          "obscurity": 4,
+          "accessibility": 2,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-21T14:16:14Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；馬提尼克弦樂編制名團的正規專輯，法國本地評價穩固但無英語條目，屬深度愛好者領域。",
+          "rarity": "common"
+        }
       },
-      "rarity": "common",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -34219,13 +34931,22 @@
       "ratings": {
         "classic": 5,
         "obscurity": 3,
-        "accessibility": 2,
+        "accessibility": 1,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-21T14:16:14Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；夏威夷滑鍵吉他復興的開山錄音，1970 年代文化復興的直接推手；聽感鬆散溫和，但屬樂迷才會主動找的領域。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：夏威夷 slack key 標竿；Honolulu Magazine 榜首非此盤，未達殿堂",
+        "previous": {
+          "classic": 5,
+          "obscurity": 3,
+          "accessibility": 2,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-21T14:16:14Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；夏威夷滑鍵吉他復興的開山錄音，1970 年代文化復興的直接推手；聽感鬆散溫和，但屬樂迷才會主動找的領域。",
+          "rarity": "uncommon"
+        }
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -34880,15 +35601,24 @@
         "visuallyVerified": true
       },
       "ratings": {
-        "classic": 5,
+        "classic": 4,
         "obscurity": 3,
-        "accessibility": 3,
+        "accessibility": 2,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-21T14:16:14Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；2016 年入選美國國會圖書館國家錄音登記處,〈Universal Soldier〉〈Cod'ine〉成為被大量翻唱的民謠標準曲,1960 年代抗議民謠的公認要角;人聲與吉他單一音色貫穿全片,顫音唱腔偏生猛。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：首作、含〈Universal Soldier〉；民謠重要作，非殿堂",
+        "previous": {
+          "classic": 5,
+          "obscurity": 3,
+          "accessibility": 3,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-21T14:16:14Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；2016 年入選美國國會圖書館國家錄音登記處,〈Universal Soldier〉〈Cod'ine〉成為被大量翻唱的民謠標準曲,1960 年代抗議民謠的公認要角;人聲與吉他單一音色貫穿全片,顫音唱腔偏生猛。",
+          "rarity": "epic"
+        }
       },
-      "rarity": "epic",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,

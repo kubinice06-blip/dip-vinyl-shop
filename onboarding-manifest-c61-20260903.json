@@ -927,10 +927,18 @@
    },
    "rarity": "uncommon",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。1976 自資約 500 張的義大利前衛搖滾私壓，但後來多次 CD／LP 再版，不算聖杯級絕版；只到 5",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "四個人的名字底下共用同一份樂器清單，從大提琴到合成器都在裡面。1976 年自資發行，限量 500 張、只在當地流通。清單裡從鋼琴、風琴、大提琴、長笛到鼓、貝斯與吉他。鋼琴與弦樂合成器鋪成綿長的底，大提琴與長笛走旋律，〈Del cavaliere Citadel e del drago della foresta di Lucanor〉靠主題變形推進。樂團 1974 年起活動於都靈，原本是沒有名字的三人團，Mike Abate 頂替吉他手之後才成為四人並定名。",
@@ -1422,28 +1430,37 @@
     "note": "https://futuramarge.bandcamp.com/album/with-junk-saucepan-when-spoon-trigger"
    },
    "ratings": {
-    "classic": 4,
+    "classic": 3,
     "obscurity": 5,
     "accessibility": 5,
     "listeners": 252,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
     "previous": {
-     "classic": 2,
-     "obscurity": 4,
-     "accessibility": 4,
-     "source": "manual:depth-rubric",
-     "checkedAt": "2026-08-31T00:00:00.000Z",
-     "rarity": "uncommon"
+     "classic": 4,
+     "obscurity": 5,
+     "accessibility": 5,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Futura 前衛代表作；<1000 無串流；自由噪音詩朗誦",
+     "rarity": "legendary"
     },
-    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Futura 前衛代表作；<1000 無串流；自由噪音詩朗誦"
+    "note": "全池稽核 audit-20261102（方案 C）：法國 Futura Red 混沌自由噪音搖滾，252 聽眾無串流；異端資料不足，符流亡下限｜L=252"
    },
    "rarity": "legendary",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。listeners 252但壓量無據、再發狀況不明，聖杯地位依據不足；噪音搖滾僅5星",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "1970 年 12 月 15 日在一家爵士俱樂部裡錄完，隔年一月才進錄音室混音。1971 年由法國 Futura Records 發行。那家店是 Gérard Terronès 開的 Gill's Club。主唱 Michel Bulteau 是詩人，內頁文字由他與 Zéno Bianu 等三人寫。十二軌曲名全為英文，最短的只有 0:25、最長的〈Wrong Reincarnation〉5:15。吉他與電子聲響在同一個平面上互相蓋，錄音的粗糙本身就是材料。",

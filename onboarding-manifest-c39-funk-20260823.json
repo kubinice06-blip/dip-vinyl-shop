@@ -26,15 +26,24 @@
         "visuallyVerified": true
       },
       "ratings": {
-        "classic": 5,
+        "classic": 4,
         "obscurity": 2,
         "accessibility": 1,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-23T02:48:19Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；標題曲被公認為放克語法成形的起點，單曲入選葛萊美名人堂、滾石五百大單曲；曲目直白易入耳，教父目錄裡最常被撞見的一批。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：單曲是經典，專輯本身次要",
+        "previous": {
+          "classic": 5,
+          "obscurity": 2,
+          "accessibility": 1,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-23T02:48:19Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；標題曲被公認為放克語法成形的起點，單曲入選葛萊美名人堂、滾石五百大單曲；曲目直白易入耳，教父目錄裡最常被撞見的一批。",
+          "rarity": "rare"
+        }
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -1034,13 +1043,22 @@
       "ratings": {
         "classic": 4,
         "obscurity": 3,
-        "accessibility": 1,
+        "accessibility": 2,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-23T02:48:19Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Parker 單飛後最重要的現場錄音、Billboard 爵士榜第 3 名，也是 90 年代放克復興的關鍵一擊；曲目熱鬧好入耳。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：Maceo 代表性現場盤，Minor Music；funk 爵士｜L=40526",
+        "previous": {
+          "classic": 4,
+          "obscurity": 3,
+          "accessibility": 1,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-23T02:48:19Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Parker 單飛後最重要的現場錄音、Billboard 爵士榜第 3 名，也是 90 年代放克復興的關鍵一擊；曲目熱鬧好入耳。",
+          "rarity": "common"
+        }
       },
-      "rarity": "common",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -1691,14 +1709,23 @@
       },
       "ratings": {
         "classic": 3,
-        "obscurity": 4,
-        "accessibility": 3,
+        "obscurity": 3,
+        "accessibility": 1,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-23T02:48:19Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；首張只掛個人名義的作品，AllMusic 三星半、Christgau B+，做法延續前作的實驗傾向；屬深度愛好者領域，段落鬆散處入耳難度略高。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：Rubber Band 後期 Warner 盤，非巔峰；無串流試聽｜L=5193",
+        "previous": {
+          "classic": 3,
+          "obscurity": 4,
+          "accessibility": 3,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-23T02:48:19Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；首張只掛個人名義的作品，AllMusic 三星半、Christgau B+，做法延續前作的實驗傾向；屬深度愛好者領域，段落鬆散處入耳難度略高。",
+          "rarity": "rare"
+        }
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -2024,12 +2051,21 @@
       },
       "ratings": {
         "classic": 2,
-        "obscurity": 4,
-        "accessibility": 2,
+        "obscurity": 3,
+        "accessibility": 1,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-23T02:48:19Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Fred Williamson 電影的原聲帶，AllMusic 僅一星半，樂團刻意壓低放克比重改走抒情與 quiet storm；封面與律動在 rare groove 圈另有收藏線，但作品本身屬合格非首選。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：後 Mercury 期作品，評價平淡｜L=1658",
+        "previous": {
+          "classic": 2,
+          "obscurity": 4,
+          "accessibility": 2,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-23T02:48:19Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Fred Williamson 電影的原聲帶，AllMusic 僅一星半，樂團刻意壓低放克比重改走抒情與 quiet storm；封面與律動在 rare groove 圈另有收藏線，但作品本身屬合格非首選。",
+          "rarity": "common"
+        }
       },
       "rarity": "common",
       "apexAssessment": {
@@ -5571,13 +5607,22 @@
         "visuallyVerified": true
       },
       "ratings": {
-        "classic": 4,
-        "obscurity": 1,
+        "classic": 3,
+        "obscurity": 2,
         "accessibility": 1,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-23T02:48:19Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Rodgers 與 Edwards 手法成形的首作,含兩首舞曲榜冠軍並獲 RIAA 金唱片,為 disco 領域主要作品"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：Chic 首作，含 Dance Dance Dance；代表作是 C'est Chic｜L=51622",
+        "previous": {
+          "classic": 4,
+          "obscurity": 1,
+          "accessibility": 1,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-23T02:48:19Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Rodgers 與 Edwards 手法成形的首作,含兩首舞曲榜冠軍並獲 RIAA 金唱片,為 disco 領域主要作品",
+          "rarity": "common"
+        }
       },
       "rarity": "common",
       "apexAssessment": {
@@ -5841,24 +5886,41 @@
         "visuallyVerified": true
       },
       "ratings": {
-        "classic": 5,
+        "classic": 4,
         "obscurity": 2,
-        "accessibility": 2,
+        "accessibility": 1,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-23T02:48:19Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；十七分鐘標題曲確立 disco 長版形式,標題曲入選搖滾名人堂 500 Songs That Shaped Rock and Roll"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：迪斯可里程碑單曲所在盤，但專輯本身非正典核心；經典度降 4，硬蕊度改 1",
+        "previous": {
+          "classic": 5,
+          "obscurity": 2,
+          "accessibility": 2,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-23T02:48:19Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；十七分鐘標題曲確立 disco 長版形式,標題曲入選搖滾名人堂 500 Songs That Shaped Rock and Roll",
+          "rarity": "uncommon"
+        }
       },
-      "rarity": "uncommon",
+      "rarity": "common",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "開啟 disco 長版單面曲式與慕尼黑製作路線,標題曲獲搖滾名人堂 500 Songs That Shaped Rock and Roll 收錄,跨來源長期公認為該領域核心",
-        "evidenceUrls": [
-          "https://en.wikipedia.org/wiki/Love_to_Love_You_Baby_(song)",
-          "https://en.wikipedia.org/wiki/Love_to_Love_You_Baby_(album)",
-          "https://musicbrainz.org/release-group/b0866510-7c36-32ed-a03a-f71798ece1ed"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。迪斯可名曲所在盤，專輯本身非正典核心",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "開啟 disco 長版單面曲式與慕尼黑製作路線,標題曲獲搖滾名人堂 500 Songs That Shaped Rock and Roll 收錄,跨來源長期公認為該領域核心",
+          "evidenceUrls": [
+            "https://en.wikipedia.org/wiki/Love_to_Love_You_Baby_(song)",
+            "https://en.wikipedia.org/wiki/Love_to_Love_You_Baby_(album)",
+            "https://musicbrainz.org/release-group/b0866510-7c36-32ed-a03a-f71798ece1ed"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "Giorgio Moroder 與 Pete Bellotte 在慕尼黑替 Donna Summer 打造的第二張專輯,也是她首度在美國與國際發行的作品。Summer 提出歌名構想後,Moroder 把三分鐘的原始單曲拉長成佔滿一整面的十七分鐘版本,以綿延的四四拍、弦樂與她刻意壓低的喘息唱腔推進。標題曲美國流行榜第 2,專輯登 Billboard 200 第 11,搖滾名人堂將該曲列入 500 Songs That Shaped Rock and Roll。",
@@ -6317,24 +6379,41 @@
         "visuallyVerified": true
       },
       "ratings": {
-        "classic": 5,
+        "classic": 4,
         "obscurity": 3,
         "accessibility": 2,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-23T02:48:19Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Moroder 製作的全電子化轉向,Paste 列為史上最佳 synth-pop 專輯並排全時代第 138,Joy Division 直接引為影響來源"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：電子流行先驅之作但正典地位不及 Kimono My House；殿堂不成立",
+        "previous": {
+          "classic": 5,
+          "obscurity": 3,
+          "accessibility": 2,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-23T02:48:19Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Moroder 製作的全電子化轉向,Paste 列為史上最佳 synth-pop 專輯並排全時代第 138,Joy Division 直接引為影響來源",
+          "rarity": "uncommon"
+        }
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "把 disco 製作邏輯接到搖滾雙人組上,長期被跨來源認定為 synth-pop 的起點之一,Paste 全時代排名與 Joy Division 的具名證言可查",
-        "evidenceUrls": [
-          "https://en.wikipedia.org/wiki/No._1_in_Heaven",
-          "https://en.wikipedia.org/wiki/Love_Will_Tear_Us_Apart",
-          "https://musicbrainz.org/release-group/b4808b0d-8970-3072-8e0b-d64fe178620d"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。電子流行先驅，但非正典核心",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "把 disco 製作邏輯接到搖滾雙人組上,長期被跨來源認定為 synth-pop 的起點之一,Paste 全時代排名與 Joy Division 的具名證言可查",
+          "evidenceUrls": [
+            "https://en.wikipedia.org/wiki/No._1_in_Heaven",
+            "https://en.wikipedia.org/wiki/Love_Will_Tear_Us_Apart",
+            "https://musicbrainz.org/release-group/b4808b0d-8970-3072-8e0b-d64fe178620d"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "Mael 兄弟厭倦搖滾樂團編制,找上 Giorgio Moroder,把 Sparks 換成合成器與音序器:鼓交給 Keith Forsey,Moroder 親自操刀 vocoder,人聲仍是 Russell Mael 的高亢假聲。1979 年由 Virgin 發行,〈The Number One Song in Heaven〉英國第 14。英國樂評當年多半惡評,後世翻轉:Paste 列它為史上最佳 synth-pop 專輯,Joy Division 的 Stephen Morris 說〈Love Will Tear Us Apart〉就是聽了這張而來。",
@@ -6522,24 +6601,41 @@
         "visuallyVerified": true
       },
       "ratings": {
-        "classic": 5,
+        "classic": 4,
         "obscurity": 2,
         "accessibility": 1,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-23T02:48:19Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；史上第一個整面連續混音的專輯面,由 Tom Moulton 完成,直接催生 DJ 混音成為業界慣例"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：首張連續混音迪斯可專輯，具歷史意義，但無跨來源正典共識；經典度 4",
+        "previous": {
+          "classic": 5,
+          "obscurity": 2,
+          "accessibility": 1,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-23T02:48:19Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；史上第一個整面連續混音的專輯面,由 Tom Moulton 完成,直接催生 DJ 混音成為業界慣例",
+          "rarity": "rare"
+        }
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "確立唱片面連續混音的做法,Tom Moulton 因此被稱為 disco 混音之父,跨來源長期認定為該領域的起點之一",
-        "evidenceUrls": [
-          "https://en.wikipedia.org/wiki/Never_Can_Say_Goodbye_(Gloria_Gaynor_album)",
-          "https://en.wikipedia.org/wiki/Tom_Moulton",
-          "https://musicbrainz.org/release-group/74b953c6-0db7-3e05-af61-3c76ff3fe981"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。迪斯可史料意義，無正典共識",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "確立唱片面連續混音的做法,Tom Moulton 因此被稱為 disco 混音之父,跨來源長期認定為該領域的起點之一",
+          "evidenceUrls": [
+            "https://en.wikipedia.org/wiki/Never_Can_Say_Goodbye_(Gloria_Gaynor_album)",
+            "https://en.wikipedia.org/wiki/Tom_Moulton",
+            "https://musicbrainz.org/release-group/74b953c6-0db7-3e05-af61-3c76ff3fe981"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "Gloria Gaynor 的首張個人專輯,1975 年 1 月由 MGM 發行。關鍵在 A 面:〈Honey Bee〉、〈Never Can Say Goodbye〉與〈Reach Out I'll Be There〉各以六分鐘全長版接成一段十九分鐘不間斷的舞曲組曲,是唱片史上第一個連續混音的專輯面,操刀者 Tom Moulton 當時甚至未被列名,日後因此被稱為 disco 混音之父。Bob Babbitt 的貝斯與 Allan Schwartzberg 的鼓撐住整段。專輯美國流行榜第 25、R&B 榜第 21。",
@@ -6594,24 +6690,41 @@
         "visuallyVerified": true
       },
       "ratings": {
-        "classic": 5,
+        "classic": 4,
         "obscurity": 2,
         "accessibility": 1,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-23T02:48:19Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；〈You Make Me Feel (Mighty Real)〉2019 年入選美國國會圖書館 National Recording Registry,專輯亦為電子化 disco 的關鍵作"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：disco 代表作但非跨來源史上核心；殿堂不成立",
+        "previous": {
+          "classic": 5,
+          "obscurity": 2,
+          "accessibility": 1,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-23T02:48:19Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；〈You Make Me Feel (Mighty Real)〉2019 年入選美國國會圖書館 National Recording Registry,專輯亦為電子化 disco 的關鍵作",
+          "rarity": "rare"
+        }
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "專輯核心曲入選國家錄音登記處並多次進入國際榜單評選,作品長期被跨來源列為 disco 與電子舞曲的核心文本",
-        "evidenceUrls": [
-          "https://en.wikipedia.org/wiki/You_Make_Me_Feel_(Mighty_Real)",
-          "https://en.wikipedia.org/wiki/Step_II",
-          "https://musicbrainz.org/release-group/a11dd6e8-d308-35c1-b248-81a2832d8ad6"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。disco 代表作，歷代榜收錄不齊；listeners 缺值",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "專輯核心曲入選國家錄音登記處並多次進入國際榜單評選,作品長期被跨來源列為 disco 與電子舞曲的核心文本",
+          "evidenceUrls": [
+            "https://en.wikipedia.org/wiki/You_Make_Me_Feel_(Mighty_Real)",
+            "https://en.wikipedia.org/wiki/Step_II",
+            "https://musicbrainz.org/release-group/a11dd6e8-d308-35c1-b248-81a2832d8ad6"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "Sylvester 在 Fantasy 的第四張,1978 年發行,關鍵是 Patrick Cowley:他帶進 Electro-comp 合成器與 Oberheim DS-2 音序器,把〈You Make Me Feel (Mighty Real)〉從中板的福音鋼琴曲重混成脈動不停的電子 disco。Martha Wash 與 Izora Rhodes 的和聲頂住他的假聲。〈Dance (Disco Heat)〉R&B 榜第 4,兩首單曲都登頂 Dance Club 榜,前者 2019 年獲列入 National Recording Registry。",
@@ -7001,15 +7114,24 @@
         "visuallyVerified": true
       },
       "ratings": {
-        "classic": 4,
+        "classic": 3,
         "obscurity": 2,
-        "accessibility": 2,
+        "accessibility": 1,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-23T02:48:19Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；flamenco 與 disco 混血的公認代表作，美國 disco 榜冠軍、金唱片；曲目流傳廣但編制略長於一般舞曲。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：迪斯可拉丁化熱門單曲盤｜L=52291",
+        "previous": {
+          "classic": 4,
+          "obscurity": 2,
+          "accessibility": 2,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-23T02:48:19Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；flamenco 與 disco 混血的公認代表作，美國 disco 榜冠軍、金唱片；曲目流傳廣但編制略長於一般舞曲。",
+          "rarity": "rare"
+        }
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -7395,15 +7517,24 @@
         "note": "原圖是 2012 Big Break CD 商品照（塑膠 jewel case 外殼＋左側書背再版系列字樣）。該 RG 底下只有 2012 BBR release f783b398 在 CAA 有圖（即該商品照）,1976 Salsoul 原版 d5e91109 為 404,故改用已配對 Apple 專輯 1623903937 的官方封面。下載到 covers-fix/ap_doubleexp.jpg 目視：1000×1000 正方,黑底舞台實拍,上方綠色空心字 Double Exposure 與其下白色 TEN PERCENT,四名團員身穿淺藍／米白亮片西裝各持立麥演唱,背景一顆橘紅色舞台燈光暈。無 jewel case 外框、無書背、無再版系列字樣、無標籤。"
       },
       "ratings": {
-        "classic": 5,
+        "classic": 4,
         "obscurity": 3,
-        "accessibility": 2,
+        "accessibility": 1,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-23T02:48:19Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；標題曲的十二吋版是 disco 時代第一張公開發售的商業十二吋單曲，唱片形式史上的可查證開創地位。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：Salsoul 經典迪斯可，同名曲首張商業 12 吋；非殿堂",
+        "previous": {
+          "classic": 5,
+          "obscurity": 3,
+          "accessibility": 2,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-23T02:48:19Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；標題曲的十二吋版是 disco 時代第一張公開發售的商業十二吋單曲，唱片形式史上的可查證開創地位。",
+          "rarity": "uncommon"
+        }
       },
-      "rarity": "uncommon",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -7530,15 +7661,24 @@
         "visuallyVerified": true
       },
       "ratings": {
-        "classic": 3,
-        "obscurity": 4,
-        "accessibility": 2,
+        "classic": 4,
+        "obscurity": 5,
+        "accessibility": 1,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-23T02:48:19Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Gold Mind 時期作品、〈Only You〉靈魂榜第 11，製作規格突出但排行與評價皆屬中段；需深度愛好者。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：Gold Mind 迪斯可女聲代表作；無試聽、聽眾缺值｜L=316",
+        "previous": {
+          "classic": 3,
+          "obscurity": 4,
+          "accessibility": 2,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-23T02:48:19Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Gold Mind 時期作品、〈Only You〉靈魂榜第 11，製作規格突出但排行與評價皆屬中段；需深度愛好者。",
+          "rarity": "common"
+        }
       },
-      "rarity": "common",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -8135,13 +8275,22 @@
       "ratings": {
         "classic": 4,
         "obscurity": 3,
-        "accessibility": 2,
+        "accessibility": 1,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-23T02:48:19Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；標題曲三週告示牌舞曲榜冠軍，是 Prelude 電氣 boogie 的定義之作、跨到英國並影響後續 garage 與 house；節奏明確但編制偏電子。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：post-disco/boogie 經典單曲同名盤｜L=6395",
+        "previous": {
+          "classic": 4,
+          "obscurity": 3,
+          "accessibility": 2,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-23T02:48:19Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；標題曲三週告示牌舞曲榜冠軍，是 Prelude 電氣 boogie 的定義之作、跨到英國並影響後續 garage 與 house；節奏明確但編制偏電子。",
+          "rarity": "rare"
+        }
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -8609,15 +8758,24 @@
         "note": "原圖是 CD 再版美術,右上有黃色爆炸框 INCLUDING LONG VERSIONS OF HI-TENSION & BRITISH HUSTLE、下緣 + BONUS TRACKS。CAA 僅 2012 Cherry Red release 7bae3936 有圖（即該再版美術）,1978 Island ILPS 9564（b6727ac4）與 1978 DE Island（4103021f）皆 404;美國 Apple 商店查無此專輯,改由英國商店取得 Apple 專輯 1442348942（Hi Tension, Bonus Track Edition, 1978）官方封面。下載到 covers-fix/ap_hitension.jpg 目視：1000×1000 正方,純黑底,中央橫置立體字 HI TENSION,字面為淡藍／粉／橘的鉻色漸層,I 的位置由一道橘白閃電斜貫上下。畫面除此標誌外全黑,無爆炸框、無 BONUS TRACKS 字樣、無盒邊或側標帯。"
       },
       "ratings": {
-        "classic": 4,
+        "classic": 3,
         "obscurity": 4,
-        "accessibility": 2,
+        "accessibility": 1,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-23T02:48:19Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；〈Hi Tension〉與〈British Hustle〉雙雙進英國前 20，Wikipedia 的 Brit funk 條目列其為此聲音的先驅之一，是英國黑人放克的起點作品。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：英國 Brit-funk 首張，Island 發行，圈外少知｜L=177",
+        "previous": {
+          "classic": 4,
+          "obscurity": 4,
+          "accessibility": 2,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-23T02:48:19Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；〈Hi Tension〉與〈British Hustle〉雙雙進英國前 20，Wikipedia 的 Brit funk 條目列其為此聲音的先驅之一，是英國黑人放克的起點作品。",
+          "rarity": "rare"
+        }
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -12731,24 +12889,41 @@
         "visuallyVerified": true
       },
       "ratings": {
-        "classic": 5,
+        "classic": 4,
         "obscurity": 3,
         "accessibility": 1,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-23T02:48:19Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；標題曲是 go-go 第一首全國性熱門曲，1979 年初盤據節奏藍調單曲榜冠軍四週，Brown 因此被稱為 go-go 教父；律動直白，入耳無門檻。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：go-go 場景重要盤，但無跨來源歷代共識；殿堂不成立",
+        "previous": {
+          "classic": 5,
+          "obscurity": 3,
+          "accessibility": 1,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-23T02:48:19Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；標題曲是 go-go 第一首全國性熱門曲，1979 年初盤據節奏藍調單曲榜冠軍四週，Brown 因此被稱為 go-go 教父；律動直白，入耳無門檻。",
+          "rarity": "rare"
+        }
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "go-go 這個類型的開國錄音：標題曲為該類型首支全國熱門曲、節奏藍調榜冠軍四週，Brown 獲 2005 年國家傳統獎，go-go 於 2020 年被定為華盛頓特區官方音樂，長期共識足列該領域史上核心。",
-        "evidenceUrls": [
-          "https://en.wikipedia.org/wiki/Go-go",
-          "https://en.wikipedia.org/wiki/Bustin%27_Loose_(song)",
-          "https://en.wikipedia.org/wiki/Chuck_Brown"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。go-go 場景重要盤，無綜合歷代榜共識",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "go-go 這個類型的開國錄音：標題曲為該類型首支全國熱門曲、節奏藍調榜冠軍四週，Brown 獲 2005 年國家傳統獎，go-go 於 2020 年被定為華盛頓特區官方音樂，長期共識足列該領域史上核心。",
+          "evidenceUrls": [
+            "https://en.wikipedia.org/wiki/Go-go",
+            "https://en.wikipedia.org/wiki/Bustin%27_Loose_(song)",
+            "https://en.wikipedia.org/wiki/Chuck_Brown"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "Chuck Brown 少年時流落華府街頭，1950 年代因殺人罪服刑八年，在獄中用香菸換到第一把吉他；出獄後開卡車、砌磚、當拳擊陪練，同時在派對演出。1979 年 Source Records 發行的這張專輯（SOR 3076）確立了他「go-go 教父」的位置。標題曲〈Bustin' Loose (Part 1)〉在 1979 年初盤據告示牌節奏藍調單曲榜冠軍四週、流行榜第三十四，是 go-go 第一首全國性熱門曲。2002 年 Nelly 的〈Hot in Herre〉直接沿用它的樂句，華盛頓國民隊則拿它當全壘打進場曲。",
@@ -14747,24 +14922,41 @@
         "visuallyVerified": true
       },
       "ratings": {
-        "classic": 5,
+        "classic": 4,
         "obscurity": 3,
-        "accessibility": 2,
+        "accessibility": 1,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-23T02:48:19Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；acid jazz 場景被引用最多的專輯：英國榜二十一名、1992 年 Mercury Prize 決選名單、2004 年 Observer 百大英國專輯第八十四名，並被列為 neo soul 的入門文獻。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：Mercury 入圍 acid jazz 代表作，非人人必提；經典 5→4",
+        "previous": {
+          "classic": 5,
+          "obscurity": 3,
+          "accessibility": 2,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-23T02:48:19Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；acid jazz 場景被引用最多的專輯：英國榜二十一名、1992 年 Mercury Prize 決選名單、2004 年 Observer 百大英國專輯第八十四名，並被列為 neo soul 的入門文獻。",
+          "rarity": "uncommon"
+        }
       },
-      "rarity": "uncommon",
+      "rarity": "common",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "跨來源長期共識指向該領域核心：Mercury Prize 決選、Observer 百大英國專輯第八十四名、BBC 稱其為 acid jazz 場景最重要的專輯之一，另被 2006 年《A Change is Gonna Come》列入 neo soul 起步書單。",
-        "evidenceUrls": [
-          "https://en.wikipedia.org/wiki/Road_to_Freedom_(album)",
-          "https://en.wikipedia.org/wiki/Young_Disciples",
-          "https://musicbrainz.org/release-group/a0326d40-5df0-381b-885c-d4b75f090424"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。acid jazz 代表作，類型級",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "跨來源長期共識指向該領域核心：Mercury Prize 決選、Observer 百大英國專輯第八十四名、BBC 稱其為 acid jazz 場景最重要的專輯之一，另被 2006 年《A Change is Gonna Come》列入 neo soul 起步書單。",
+          "evidenceUrls": [
+            "https://en.wikipedia.org/wiki/Road_to_Freedom_(album)",
+            "https://en.wikipedia.org/wiki/Young_Disciples",
+            "https://musicbrainz.org/release-group/a0326d40-5df0-381b-885c-d4b75f090424"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "Carleen Anderson、Marco Nelson 與 Femi Williams 1990 年在倫敦組成，1991 年由 Talkin' Loud 發行唯一的專輯。錄音在 Paul Weller 的 Solid Bond Studios 進行，客席有 Fred Wesley 與 Maceo Parker。Anderson 低沉的嗓音貫穿全片；〈Apparently Nothin'〉進英國單曲榜第十三名，近十六分鐘的〈Freedom Suite〉分三段收尾。登英國榜第二十一名，並入圍 1992 年 Mercury Prize 決選。",
@@ -15288,13 +15480,22 @@
       "ratings": {
         "classic": 3,
         "obscurity": 3,
-        "accessibility": 3,
+        "accessibility": 2,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-23T02:48:19Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；death jazz 名義的首張全長作，經 Gilles Peterson 播放而外銷歐洲；場景地位明確但非爵士正典，全速齊奏與嘶吼喊話讓入耳略帶粗礪。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：日本 jazz 樂團首張正規作，場景二線｜L=3274",
+        "previous": {
+          "classic": 3,
+          "obscurity": 3,
+          "accessibility": 3,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-23T02:48:19Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；death jazz 名義的首張全長作，經 Gilles Peterson 播放而外銷歐洲；場景地位明確但非爵士正典，全速齊奏與嘶吼喊話讓入耳略帶粗礪。",
+          "rarity": "rare"
+        }
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,

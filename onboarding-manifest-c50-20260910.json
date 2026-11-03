@@ -90,22 +90,23 @@
    },
    "ratings": {
     "classic": 4,
-    "obscurity": 5,
+    "obscurity": 2,
     "accessibility": 1,
     "listeners": 142,
-    "source": "manual:rerate-20261102",
-    "checkedAt": "2026-11-02T00:00:00Z",
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
     "previous": {
      "classic": 4,
      "obscurity": 5,
-     "accessibility": 2,
-     "source": "worker:/album-rating",
-     "checkedAt": "2026-08-31T00:00:00.000Z",
-     "rarity": "uncommon"
+     "accessibility": 1,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：早期名作、年榜連兩年在榜；L=142＋unavailable 依下限 5；民謠歌謠旋律直白",
+     "rarity": "rare"
     },
-    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：早期名作、年榜連兩年在榜；L=142＋unavailable 依下限 5；民謠歌謠旋律直白"
+    "note": "全池稽核 audit-20261102（方案 C）：Polydor 大廠、Oricon 年榜前十的主流盤，不符流亡；漢字掛名 listeners 142 疑錯配，冷門度照錨點 5→2｜L=142"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
