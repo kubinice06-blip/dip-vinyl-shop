@@ -12,3 +12,4 @@
 - s22-50-100 抽查：Minimal Nation（5 維持，定名之作）、Run Come Save Me（5 維持）、Body Talk Pt1/2（錯配成立）、Roma Trio（下限 4 正確）、Inflated Tear（改）。整段通過。
 - s23-0-50 抽查：The Diary（5 維持）、Selda（錯配成立，冷 4 有 Finders Keepers 再發）、Seefeel Quique（5 維持）、Treemonisha（下限 4 正確）、Sensational（硬 4 維持，歪斜 lo-fi）。整段通過，未改。
 - s23-100-150 抽查：At Action Park（5 維持）、Shirley Brown 後期 Malaco 盤（下限 4 正確）、Sigur Rós Von（硬 4 方向對）、Ambiance Bechet（L=4 套下限 4 可接受）、Sigrid 2025（下限 3 維持）。整段通過，未改。代理未照每 10 張分段寫檔（一次寫完），結果無損。
+- s23-200-250 抽查：Holy Mountain（5 維持）、Slade Alive!（錯配成立，L=4,019 為『Slade Alive』標點差）、Slave 晚期 Ichiban 盤（下限 4 正確）、Slipknot Iowa（硬 4 方向對）、Fan-Tas-Tic Vol.1（4／4 維持）。整段通過，未改。
