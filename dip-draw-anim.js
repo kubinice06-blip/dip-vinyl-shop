@@ -82,9 +82,11 @@
   // 2026-10-19 起優先共用 DipPlayer 的 AudioContext（見 dip-player.js audioContext() 的說明）；
   // 沒有 DipPlayer 的頁面才自己建。
   let AC = null;
+  // 每次都向 DipPlayer 要：它在關喇叭、切背景時會把 context 關掉重建（2026-11-03），快取舊的會拿到已關閉的。
   const ac = () => {
-    if (!AC) AC = (global.DipPlayer && global.DipPlayer.audioContext && global.DipPlayer.audioContext())
-      || new (global.AudioContext || global.webkitAudioContext)();
+    const shared = global.DipPlayer && global.DipPlayer.audioContext && global.DipPlayer.audioContext();
+    if (shared) return shared;
+    if (!AC || AC.state === 'closed') AC = new (global.AudioContext || global.webkitAudioContext)();
     return AC;
   };
   // 抽卡音效同樣受店主的自動試聽開關管。這是獨立於 DipPlayer 的第二套音訊系統，

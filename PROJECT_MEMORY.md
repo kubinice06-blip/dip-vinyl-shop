@@ -1,5 +1,14 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-03｜dip-vinyl-shop｜喇叭關了串流還是被停：手動播放不再偷開自動試聽、關聲音改成關掉 AudioContext
+
+- **起因**：店主截圖（🔇 狀態的結果頁）：「已經把網頁的聲音關閉，我的串流卻還是會停止」。
+- **病灶 1**：🔇 時手動按 ▶，`playAlbum`／`unlock({grant})` 走 `grantAutoplayConsent()` 把記憶體裡的 `autoplayConsent` 設成 true，喇叭卻照 sessionStorage 顯示 🔇。之後每次碰卡片、抽卡的 `gpEnsurePlayer()`／`warmAlbum()` 只看 `autoplayConsent`，照常起靜音 keep-alive、resume AudioContext，串流每抽一張就停一次。改成開關是 'off' 時只發「這一首」的通行證（`manualPass`）：只有帶 grant 的播放鍵認它，自動路徑與 warmAlbum 不認；播完（stopped／error）收回，並關掉 keep-alive 與 AudioContext。
+- **病灶 2**：關聲音／被串流撤銷時 `releaseAudio` 只在 state 為 'running' 才 suspend；被串流搶走的 context 在 iOS 是 'interrupted'，根本沒停，玩家切回分頁或解鎖手機時 WebKit 結束中斷、自動恢復運轉，又把串流停掉。頻率光譜的調頻音效 context 更是開著兩個永不停止的音源（gain 0），關喇叭、離開光譜都沒收。改成 `close()`：播放器在 releaseAudio、閒置時切背景關掉，下次手勢重建（已解碼 buffer 不綁 context，照用）；`dip-tune` 新增 `releaseSfx()`，關喇叭、`stop()`、切背景都關。`dip-draw-anim` 改成每次向 DipPlayer 取 context，不快取已關閉的。
+- **版本**：`dip-player.js?v=55`（四頁）、`dip-draw-anim.js?v=5`（index、battle）、`dip-tune.js?v=64`。
+- **主要檔案**：`dip-player.js`、`dip-tune.js`、`dip-draw-anim.js`、`index.html`、`battle.html`、`roguelike.html`、`shop-all.html`。
+- **驗證**：本機 Playwright 13 項全過——🔇 時手動武裝後 `hasAutoplayConsent()` 仍 false、自動 `unlock()` 不武裝、停止後 ctx 'none'；預設開的武裝／停止行為不變；按掉開關、閒置切背景都關 context；重開後手勢內重建。舊版同腳本 A2／A3／A5 失敗（🔇 下 consent=true、停止後 unlock 仍武裝），確認重現。index／battle／roguelike 載入 0 頁面錯誤。**iOS 真機（邊聽串流邊抽卡、切 App 回來）待店主實測。**
+
 ### 2026-11-03｜dip-vinyl-shop｜三軸重評第三輪「套用」：6,548 張寫進 seed／card_catalog
 
 - **範圍**：31 片 verdicts 7,525 張合併（各片 mainline 修正 59 筆逐筆核過已在分段檔）→ `rerate-20261103/applied.json`。三軸有變 6,548、稀有度有變 3,663（升 2,240／降 1,423）、keep 57。全是一般卡、全 repo 0 份 manifest 涵蓋。
