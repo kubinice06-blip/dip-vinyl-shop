@@ -8,6 +8,14 @@
 - **錯配（不套下限）**：古典盤名、省略號／撇號盤名、中文拆名（MC HotDog 四張）、掛他人名下等 42 張，`why` 皆註明，給套用工作階段過 `MISMATCH`。
 - **主要檔案**：`batch-progress/rerate-20261103/verdicts/{s16,s17,s18}-*.json`、`{s16,s17,s18}.summary.md`、`*-mainline.log`、`shards/s1{6,7,8}.json`（listenersKV）、`PLAN.md`。
 - **驗證**：三片合併檢查全過（每 key 一筆、無缺無多、三軸 1–5 整數）；冷門度下限機械檢查違規者全為已註明的疑錯配。
+### 2026-11-03｜dip-vinyl-shop｜三軸重評第三輪 W7：s19／s20／s21 verdicts 交齊（750 張）
+
+- **範圍**：9 月前入庫、無評分來源紀錄的卡。先跑 `fetch-listeners.mjs` 補 listenersKV，15 段 Opus 代理，主線每段抽 5 張，退回 0 段，主線改 5 筆（Orlando 冷門度 5→4；Psychic Chasms、Fear of a Blank Planet、Worlds 經典度 5→4；Passenger《All the Little Lights》4→3）。只交 verdicts，沒動 seed／manifest／card_catalog。
+- **新舊分布（三片合計）**：經典度 12/172/313/253/0 → 1/76/262/344/67；冷門度 95/194/248/142/71 → 70/343/279/58/0；硬蕊度 228/267/169/86/0 → 218/290/181/58/3。
+- **錯配例外**：古典盤（作曲家前綴／外文盤名）、標點（省略號、句點、彎引號）、藝人名寫法（PiL Ltd.）聽眾數極低者不套下限，why 都有註明。
+- **留給套用**：Otis Redding《Dictionary of Soul》有兩張卡（兩種盤名）。
+- **主要檔案**：`batch-progress/rerate-20261103/verdicts/{s19,s20,s21}-*.json`、`{s19,s20,s21}.summary.md`、`shards/s19–s21.json`（listenersKV）、`PLAN.md`。
+- **驗證**：三片合併檢查全過（每 key 恰一筆、三軸皆 1–5 整數）。
 
 ### 2026-11-03｜dip-vinyl-shop｜三軸重評第三輪 W1：s01／s02／s03 verdicts 交齊（750 張）
 
