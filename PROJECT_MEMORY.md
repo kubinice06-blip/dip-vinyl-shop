@@ -1,5 +1,16 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-03｜dip-vinyl-shop｜頂點重整 Q1b：同級去重＋殿堂補位決定清單
+
+- **改動**：只產出決定，不改卡池。
+  - 同級內一藝人一張：54 組拿掉 74 張（殿堂 37、流亡 24、異端 13）。
+  - 濁水溪《鬼島社會檔案》pearl → null。
+  - 殿堂從備選補 36 張（Pearl Jam《Ten》、Green Day《Dookie》、Adele《21》等）。
+  - 殿堂最終 169，加《台客的復仇》170；流亡 207、異端 41（待 Q2 擴充）。
+- **主要檔案**：`batch-progress/apex-rebalance-20261103/decisions-q1.json`（111 筆）、`decisions-q1.summary.md`、`build-decisions-q1.js`。
+- **驗證**：產生器自查——同級多張違規 0、補位都在 hall-alternates、111 筆皆有 evidence。
+- **待決**：VA 流亡 3 選 1 是否豁免；Beatles White Album 池中重複兩筆。
+
 ### 2026-11-03｜dip-vinyl-shop｜頂點重整更正：同級內一藝人一張、濁水溪《台客的復仇》進殿堂
 
 - **店主**：「跨等級不用只留一張 Coltrane可以各留一張」「濁水溪公社 台客的復仇 殿堂」。
