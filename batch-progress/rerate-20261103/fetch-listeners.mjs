@@ -1,5 +1,5 @@
 // 為 第三輪 shard 補 Last.fm listeners（worker /album-rating 的 _listeners，KV 快取）。
-// 用法：node batch-progress/audit-20261102/rerate-20261103/fetch-listeners.mjs s01 [s02 ...]
+// 用法：node batch-progress/rerate-20261103/fetch-listeners.mjs s01 [s02 ...]
 // 只補 listeners 為 null 的列，寫回 shard 的 listenersKV 欄；每秒最多 2 次；可重跑（已有 listenersKV 的跳過）。
 import fs from 'node:fs';
 const W = 'https://dip-vinyl-worker.kubinice06.workers.dev';
