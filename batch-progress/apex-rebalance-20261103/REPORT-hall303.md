@@ -17,7 +17,13 @@
 - `add` 133 張，全為 null → hall。
 - 套用前驗證：133 張都在 seed，第 9 欄都是空的（0 不符）。
 - 同級內一藝人一張：違規 0。唯一例外是 Miles Davis，殿堂兩張：《Kind of Blue》＋《In a Silent Way》（`--build` 斷言恰為 2）。
-- 只動 tier，三軸未改。升殿堂的 133 張原本的稀有度：獨特 58、稀有 33、史詩 30、普通 7、傳奇 5。
+- 升殿堂的 133 張原本的稀有度：獨特 58、稀有 33、史詩 30、普通 7、傳奇 5。
+- **經典度補正（主線裁定）**：133 張中有 16 張 classic<5，published gate 擋下「hall 候選必須 classic=5」（`ALBUM_ONBOARDING.md`：殿堂的最低門檻是 classic=5）。
+  - 照《台客的復仇》由店主指定殿堂時定 5/5/3 的先例，16 張的經典度改為 5，冷門度、硬蕊度不動。工具 `classic5-h.mjs`。
+  - 16 張：Donna Summer《Love to Love You Baby》、Nina Simone《I Put a Spell on You》、Bessie Smith《The Essential Bessie Smith》、Dizzy Gillespie《Afro》、Jimmy Smith《Back at the Chicken Shack》、Django Reinhardt《Djangology》、Coleman Hawkins《Body and Soul》、Slum Village《Fan-Tas-Tic, Volume 1》、Guru《Jazzmatazz, Vol. 1》、張雨生《口是心非》、林強《娛樂世界》、張國榮《Leslie》、達明一派《石頭記》、陳綺貞《讓我想一想》、李泰祥《鄉土．民謠 第一輯》（原本 3）、新寶島康樂隊《新寶島康樂隊》。其餘 15 張原本都是 4。
+  - 寫入：seed 第 3 欄 16 列（三道防呆，重跑 0 變動）；manifest 8 筆（`ratings.source` 為 `manual:hall-expansion-20261103`，舊值存 `previous`）；card_catalog `classic`＋`rarity` 16／16，讀回 16/16。
+  - 店內印刷卡重出：0 差異，在售品不含這 16 張。
+  - 店主若不同意，改回只要動這 16 張的單一欄位。
 
 ## 2. 全池等級分布
 
