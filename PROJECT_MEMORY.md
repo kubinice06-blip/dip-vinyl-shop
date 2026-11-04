@@ -1,5 +1,12 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-04｜dip-vinyl-shop｜Beyond《再見理想》升傳奇
+
+店主問 Beyond 殿堂要不要從《樂與怒》換成《再見理想》；建議維持《樂與怒》（〈海闊天空〉的廣泛影響），店主改要《再見理想》升傳奇。
+- 三軸 4/4/3 → **5/5/3**（經典度 5：1986 年自資錄成的卡帶，香港樂隊自主出版的起點；冷門度 5：Last.fm 206 listeners、原版為自資卡帶），分數 9 → legendary。
+- 寫入：`seed_cards.json` 該列、Firestore `card_catalog/beyond|再見理想` 的 classic／obscurity／rarity（PATCH 200、讀回 5/5/3 legendary）。
+- 未動 tier（殿堂仍是《樂與怒》）。註：listeners 206＋冷門度 5 已符合流亡硬條件，未設，待店主決定。
+
 ### 2026-11-04｜dip-vinyl-shop｜頂點卡簡介重寫 s8：ad-15、ad-16 上線 60 張（流亡）
 
 - **內容**：ad-15（Bruton 圖書館盤、Johnny's／Aketa's Disk 日本自由爵士、英國私壓前衛民謠、Vanity 卡帶、Ogun／Incus 英國即興與南非流亡爵士、美國 Jesus rock、Negasphere）、ad-16（日本交響前衛、福音、沖繩／八重山民謠、尾島由郎、瑞典 Philemon Arthur、loft 爵士、日本地下搖滾、Johnny's Disk 獨奏盤、印尼爵士、曼徹斯特 Object Music、雪菲爾合輯、英國 YHR／DIY 卡帶）各 30 張，照 `apex-desc-base.md` 重寫。新增 `prompt-research-extra-s8.md`／`prompt-writer-extra-s8.md`。研究 3 Sonnet×2 批（WebSearch 98 次含主線 2）、寫作 2 Opus×2 批。主線發現 Discogs API（`api.discogs.com`）可通，替 11 張薄卡補 credits／曲目／錄音地／發行史。
