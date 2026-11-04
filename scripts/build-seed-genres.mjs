@@ -58,6 +58,11 @@ const ALBUM_GENRE_FIX = {
   "Jesper Siliya|Giant Steps": ["rock"],
   "Fanny's Group|Cium Mesra": ["rock"],
   "Marlui Miranda|Olho D'Água": ["world","folk"],
+  // 同名團標籤污染（Last.fm 把別的 Circulation／Probe／Smack／Ghostdance 的標籤算進來）
+  "Ghostdance|Ghostdance": ["folk","rock"],
+  "Circulation|Tank Tracks": ["rock"],
+  "Smack|Smack": ["rock"],
+  "Probe|Direction": ["rock"],
   "Urfalı Babi|Disko Kebap": ["world","electronic"],
   "Cool Knights|Bana Mulenga": ["soul","rock"],
 };
