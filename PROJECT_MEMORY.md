@@ -12,6 +12,13 @@
 - **驗證**：prepare／published gate 0 error；對 origin claude/* 分支 seed 去重 0 撞；`kv-token-check` exit 0；`build-card-moods` 錨點 104/104。
 - **留給本機**：`album_overrides.tier` 11 張（`batch-progress/add-20261104-ax10/album-overrides-tier.json`）。研究層記下的舊簡介疑點：Drunks with Guns 卡是 1987 Chopper 專輯、舊簡介寫 1985 Cheap Beer 7 吋；Antisect 實為 1984-01 發行（seed 1983）。
 - 主要檔案：`batch-progress/add-20261104-ax10/*`、`batch-progress/apex-new-20261104/PLAN.md`、`batch-progress/mood-cells-20261022/curation-ax10{a,b,c}.json`、`desc-tools/batches/{cards,research,output}/add-20261104-ax10*`、`onboarding-manifest-add-20261104-ax10-20261104.json`、`seed_cards.json`、`data/artist-intros/*`、`data/discogs-cover-registry.json`、`batch-progress/mood-axes/score-ax10/*`。
+### 2026-11-04｜dip-vinyl-shop｜頻率光譜：FINE 換成 RADIO 電台模式（試聽播完自動轉到下一張）
+
+- **改動**：店主「先做電台版，播完換下一個，可以在下方控制面板啟動或關閉；將原本的 FINE 功能改成這個功能，名字也要換」。
+  - 撥桿下方 FINE → RADIO（aria、提示列文字同步）；FINE 的一格一張（`stepCard`、`FINE_PX`）移除，輪子一律連續掃描。
+  - `state.radio`：試聽自己播完（播放器回報 stopped、無錯誤碼、這張已出聲）→ 1.2 秒後 `radioNext`：以「同頻率再抽一張」的高斯權重在目前頻率附近挑（同格優先），跳過沒試聽、彩蛋、最近 200 張播過的，用搜尋的轉台動畫轉過去，停穩後照常自動試聽；沒有試聽／找不到的停 2.5 秒跳下一張。撥到 RADIO 那一下兼授權自動試聽；目前這張還沒聽就先播它。`dip-tune.js?v=65`。
+- **主要檔案**：`dip-tune.js`、`index.html`。
+- **驗證**：Playwright（iPhone 13，試聽以 3 秒音檔代）：撥到 RADIO 後 30 秒內自動接了 Tizzy Bac → JAY-Z → 伍佰 → Haitink → Young Thug（查無試聽 2.5 秒後跳過）→ 下一張；撥桿與 RADIO 字樣截圖正常；無錯誤。手機切到背景時轉台動畫會暫停（瀏覽器限制）。
 
 ### 2026-11-04｜dip-vinyl-shop｜頂點卡簡介重寫 s12（最後一棒）：ad-23 流亡 19＋尾批 ad-24 異端 24 上線，全線收尾
 
