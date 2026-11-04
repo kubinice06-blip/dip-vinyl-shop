@@ -627,3 +627,39 @@
 - bulk put 31 鍵（desc2 30＋desc4 1），wrangler 印 `Success!`；`verify-wave-kv` 回讀 65/65（兩批合計）逐字一致。
 - `front-check ad-18`：30/30 前台為新稿，CURATED 0。
 - manifest 同步 30 處。
+
+## ad-21（流亡 30 張，s11）
+
+- 派工補充：新增 `prompt-research-extra-s11.md`／`prompt-writer-extra-s11.md`（沿用 s7／s8 流亡節；歐洲自由即興／electroacoustic 盤一直在版的不寫難找，少人聽寫成小廠與即興形式；reggae showcase 盤與東歐、非洲、亞洲地方盤的來源清單；Discogs 改用 API 直接讀 release；每支研究最多 25 次 WebSearch；暫存檔各用自己的 scratchpad 子目錄）。
+- 研究 3 Sonnet（WebSearch a 14／b 14／c 約 18 次）、寫作 2 Opus；主線補查用 Discogs／MusicBrainz API（不耗 WebSearch）。
+- **主線補查推翻研究層**：研究層把 Jezzreel「三位鍵盤、長笛、〈I Love You Jah〉7:03」、Audley Rollens「在 Wackie's 錄音室錄成、一人製作詞曲」、Martin Tétreault「十首、Audioview」判為查無出處；Discogs release 4506953／3827686 與 MusicBrainz 證實都成立，併回 `research/ad-21-a.json` 標「主線補查」。仍無證據的（Jezzreel「二重唱」、Rollens「Rockstones 散團補錄」、Tétreault「3 台唱盤、25 張 LP」）不寫。Tétreault 年份照 MusicBrainz 1998（加拿大 Audioview；Qobuz「比利時 Audiophile」判為誤植）。
+- **裁定**：Rollens 本盤是自家廠牌 Philadelphia Reggae Sounds 發行、在 Wackie's 錄音室錄，不寫成 Wackie's 出品；Ric Colbeck 的 Thurston Moore／Melody Maker／Gramophone 評價只有部落格轉引，不寫；Mwanamke Mwafrika「首支全女性 reggae 樂團」只有 Discogs 使用者簡介、封套另有男性外援，不寫；Tempranillo 廠牌兩說不寫廠名；Double_Wash 錄音年兩說不寫年份。
+- **卡池資料疑點（未動 seed，留給店主）**：Martin Tétreault seed 1997，原版 1998；Gustafsson／Guy《Frogging》seed 1997 是錄音年，Maya 1998 年發行；Audley Rollens 官方簡介稱 1980 年出《Prevail》、資料庫作 1982（簡介寫 1980 年代初）；Zíngaro《Solo》1991／1992 兩說（簡介寫 1990 年代初）。
+- 研究層推翻舊稿的主要錯誤（新稿未沿用）：Rothenberg「只有一支薩克斯風」（A 面疊錄多件木管）；Maneri「三重奏貝斯手 Ed Schuller」（四重奏貝斯手是 John Lockwood）；Lonberg-Holm 固定一把吉他（十二首各配不同吉他手）；Main「各約二十分鐘」（23:59／20:45）；Parker／Shipp「Alto Suite」「限量版」；Frogging「同年出版」；Incision「信任」（liner notes 是 commitment）；Kerbaj「內戰長大」「直升機與鳥鳴」；A_dontigny「主持 No Type」「諷刺小品」；Anthony Johnson 生年與「Gunshot 外號」。
+- 機器 QA：`qa-batch research ad-21` 1 標記（Dusted src 為 http，已改 https）；`out` 0 標記；fix-spacing 0；字數 226–280。半形冒號只在廠牌名 Explain: 內。
+
+### 主線審稿（2026-11-04，30 張逐張讀、逐句對研究稿；加問「讀完知不知道它憑什麼是這一級」）
+
+改 12 處（10 張，`review-ad-21.json`；同一張多次改分開記）：
+
+- `jezzreel|rockers showcase volume 2`：「Wackie's 在牙買加從未打進主流，卻影響了 Rhythm & Sound 與 Massive Attack。」→「Wackie's 的錄音後來影響了 Rhythm & Sound 與 Massive Attack 等海外音樂人。」。「從未……卻……」是反轉句（審稿第 4 問）；保留 Roots Archives 廠牌介紹的影響事實
+- `jezzreel|rockers showcase volume 2`：「最長的〈I Love You Jah〉有 7 分 03 秒，音色偏低傳真。」→「最長的〈I Love You Jah〉有 7 分 03 秒；廠牌的錄音向來偏低傳真。」。低傳真是維基對 Wackie's 廠牌的描述（團體層級），不寫成本盤音色
+- `audley rollens|showcase prevail`：「1980 年代初在費城以自家廠牌」→「1980 年代初以自家廠牌」。研究稿 facts 沒有發行地在費城的記載（只有廠牌名），刪
+- `mazen kerbaj|brt vrt zrt krt`：「這個廠牌被視為該地區第一個實驗音樂廠牌」→「這個廠牌自稱是該地區第一個實驗音樂廠牌」。來源是 Kerbaj 自己網站的廠牌說明，屬自述，不是外部評價；改寫成自稱
+- `mats gustafsson & barry guy|frogging`：「由 Guy 夫婦經營的廠牌 Maya Recordings」→「由 Guy 自己的廠牌 Maya Recordings」。研究稿 facts 只寫 Guy 自己的廠牌，「夫婦經營」無出處
+- `carlos zíngaro|solo`：「他也是畫家，1984 到 1990 年主持里斯本藝廊 Cómicos。」→「（刪）」。與本盤地位或聲音無關的人物冷知識，刪
+- `philipp wachsmann, roger turner|alizarin`：「Turner 把任何聲音都當樂器」→「Turner 的做法是把任何聲音都當樂器」。出處是談 1996 年《Birthdays》的專文，屬 Turner 個人手法，改寫成他的做法、不宣稱本盤編制
+- `mwanamke mwafrika|african woman abroad`：「八首歌由女聲領唱，路數偏」→「八首歌路數偏」。「女聲領唱」是寫作層由團員名單推論，facts 無逐軌主唱資料
+- `anthony johnson|i'm ready`：「全盤只有六首，每首約 6 到 8 分鐘，包括」→「全盤只有六首，包括」。曲長只來自 YouTube 上傳的時間，不是官方曲長（研究稿 facts 自註），刪
+- `christmann schönenberg duo|we play`：「，被視為一張有影響力的錄音。」→「。」。研究稿 Coda 條目只說 Christmann 的弱音技巧可為典範，沒有「有影響力」的具名出處
+- `christmann schönenberg duo|we play`：「用 plunger 與各式弱音器不斷變換音色」→「用 plunger 與各式弱音器不斷變換音色，這套弱音技巧被視為典範」。Coda 條目的具名評價（研究稿 sound 第 3 條），移到聲音段並照實寫
+- `jezzreel|rockers showcase volume 2`：「與 Massive Attack 等海外音樂人。」→「與 Massive Attack。」。審稿改句後超字（281），壓字
+
+研究稿同步：審稿改動都是刪句或改寫成團體／個人層級，未動事實，研究稿不必改。其餘 20 張逐張審過，未改字。第五問：30 張前兩句都講出流通規模（小廠 CD、CDr、網路廠牌、限量 300／500、只有原版、擱了四到五年才出、自辦廠牌 LP 到 2006 才收進再版）與值得聽的事實（Ars Electronica Golden Nica、The Wire 2003 年度即興名單、Jazziz 年度十大、二重奏起點、Wackie's 錄音室與 Roots Radics 伴奏、2020 Common Ground 重壓）；歐洲即興盤照裁定不寫難找。另核對：Tempranillo「每個動作都有來由」出自 Thom Jurek（AllMusic）；Abbey Road Duos「那一年最好的全即興唱片之一」出自 Free Jazz Blog 2007；Frogging「少見夠有說服力」出自 Ken Waxman；Light Trigger「重要的即興音樂文件」出自 Michael A. Parker（All About Jazz，搜尋摘要）；Ecritures「極為緊繃」出自 Free Jazz Blog 2016；eRikm「那一代最有影響力的唱盤手之一」出自法文維基。都是單一來源，寫「被視為」、不用「常」。
+
+### 上線
+
+- `kv-token-check` 通過；舊值存 `kv-before-ad-21.json`（60 鍵，30 個非 null）。
+- bulk put 30 鍵（desc2 30；本批無 CJK 卡、無原有 desc4），wrangler 印 `Success!`；`verify-wave-kv 20261104 ad-21` 30/30 逐字一致。
+- `front-check ad-21`：30/30 前台為新稿，CURATED 0。
+- manifest 同步 30 處（10 份 onboarding manifest）。
