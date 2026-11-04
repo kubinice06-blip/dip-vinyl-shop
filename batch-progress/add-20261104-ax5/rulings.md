@@ -29,3 +29,12 @@
 - 人工身分 3：Burton Greene Quartet、Chadbourne《Volume One: Solo Acoustic Guitar》、Smith & Williams《Direct Waves》。
 - 策展層自承多數 why 的人員與評價「依印象寫」，交研究層逐條核實，研究層的 facts 為準。
 - Sunny Murray《Sonny's Time Now》是補充提名：Murray 升格《Sunny Murray》判 none，這張另由研究層判。
+
+## 升格寫作（51936 起）
+- 51936 ax5u 寫作 1 支 Opus，6 張，字數 262–277。
+
+## 主線審稿：ax5u 升格 6 張（2026-11-04，cloud-main）
+逐張對回 `research/ax5u-a.json`、`ax5u-c.json`。改 1 處：
+- Frank Lowe《Black Beings》：「搖滾式的大鼓往前推，很少出現穩定的律動。」→「搖滾式的大鼓往前推。」依據：研究稿只有 Freeman 描述鼓法（機槍式小鼓、碎鈸、硬搖滾式大鼓），「很少出現穩定的律動」無出處，舊簡介的「鬆動律動」研究層也已標未證。
+- 其餘 5 張逐句核過：Wright Trio 全長 33:57、Stollman 在 Village Gate 簽人、「第二波自由爵士基石」（AllMusic＋AAJ）；Gayle 67:23、Sear Sound、AllMusic「not easy to listen to…unrivaled」；Bells Town Hall 1965-05-01、單面透明膠、Down Beat 零星、Penguin「20 分鐘就得換氣」、AllMusic「most powerful unit」；Echo 阿爾及爾泛非藝術節、記者提議、救護車警車與增四度（Burrell 自述）、Penguin「hard to listen to now」、AllMusic「noisiest」；Free Jazz 雙四重奏、Down Beat 五星／零星（寫成「同一本爵士雜誌」，不點名，照出處不入簡介規則）、預寫不協和號角樂句、成為《Ascension》範本。未改字。
+- 寫入（升格 6 張）：KV desc2 6 鍵（舊值 `kv-before-ax5u.json`），wrangler Success、bulk get 回讀 6/6 逐字一致；card_catalog 6 筆 tier=heresy、apex=true、accessibility=5、rarity 重算（Bells epic→legendary），讀回 6/6；seed 第 9 欄寫 heresy、Bells 第 5 欄 4→5。onboarding manifest 無這 6 張（早期卡），不需同步。`album_overrides.tier` 清單 `album-overrides-tier.json` 留給本機後台同步。
