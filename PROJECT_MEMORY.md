@@ -1,5 +1,13 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-04｜dip-vinyl-shop｜頂點卡簡介重寫 s8：ad-15、ad-16 上線 60 張（流亡）
+
+- **內容**：ad-15（Bruton 圖書館盤、Johnny's／Aketa's Disk 日本自由爵士、英國私壓前衛民謠、Vanity 卡帶、Ogun／Incus 英國即興與南非流亡爵士、美國 Jesus rock、Negasphere）、ad-16（日本交響前衛、福音、沖繩／八重山民謠、尾島由郎、瑞典 Philemon Arthur、loft 爵士、日本地下搖滾、Johnny's Disk 獨奏盤、印尼爵士、曼徹斯特 Object Music、雪菲爾合輯、英國 YHR／DIY 卡帶）各 30 張，照 `apex-desc-base.md` 重寫。新增 `prompt-research-extra-s8.md`／`prompt-writer-extra-s8.md`。研究 3 Sonnet×2 批（WebSearch 98 次含主線 2）、寫作 2 Opus×2 批。主線發現 Discogs API（`api.discogs.com`）可通，替 11 張薄卡補 credits／曲目／錄音地／發行史。
+- **主線審稿**：ad-15 改 12 處（8 張）、ad-16 改 6 處（5 張）（`review-ad-15/16.json`）。事實錯：生活向上委員会初稿暗示原版未發行（實為 1975 自費壓製）、John Taylor「2015 才重發」（1995 FMR 已重發）、Bob Ayala CCM 年份指涉不清；其餘為廠商文案刪除、單一來源去「常」、推論句刪除、壓字。
+- **上線**：KV ad-15 37 鍵、ad-16 37 鍵（desc2 60＋desc4 14）；寫前舊值 `kv-before-ad-15/16.json`。回讀 74/74 逐字一致；`front-check` 前台 30/30、30/30，CURATED 0。manifest 同步 60 處（20 份）。
+- **待店主**：seed《Kings of Mali》（Chico Freeman）年份 1977 是錄音年，發行為 1978（未動 seed）。
+- **驗證**：`kv-token-check` exit 0；`qa-batch research|out ad-15|ad-16` 只剩誤報；fix-spacing 0；字數 212–280。
+- 主要檔案：`batch-progress/apex-desc-20261104/{PLAN.md,rulings.md,review-ad-1{5,6}.json,handoff-ad-1{5,6}.json,kv-before-ad-1{5,6}.json,prompt-*-extra-s8.md}`、`desc-tools/batches/{cards,research,output}/ad-1{5,6}-*`、onboarding manifest 20 份。
 ### 2026-11-04｜dip-vinyl-shop｜頂點卡簡介重寫 s9：ad-17、ad-18 上線 60 張（流亡）
 
 - **內容**：ad-17（英國工業／卡帶、美國老調提琴與藍草、日本 1970 年代自主民謠盤、英國新前衛、1990 年代日本 techno／IDM：Syzygy、Transonic、Frogman）、ad-18（Transonic／Zero Gravity CD、英國小廠迷幻、Siltbreeze 噪音、英國 dub、Nimbus West／Strata-East／Survival／Nessa 爵士）。
