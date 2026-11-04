@@ -256,3 +256,33 @@
 - **改 1 張**：`charles mingus|mingus ah um`：「是 Charles Mingus 在 Columbia 的第一張專輯，2003 年入選美國國家錄音登記表。1959 年 5 月，他帶著」→「是 Charles Mingus 1959 年在 Columbia 的第一張專輯，2003 年入選美國國家錄音登記表，2013 年進葛萊美名人堂。同年 5 月，他帶著」，並刪「〈Boogie Stop Shuffle〉是十二小節藍調」壓字（290→261）。依據研究稿 `ad-05-b`/`c` 的 status 條（2013 葛萊美名人堂）。已單鍵重寫 KV（`Success!`）。
 - **用語裁定**：新規說「入選」不寫，指的是遊戲用語（入選殿堂之類）；「入選國家錄音登記表」是外部事實，照 s1 先例保留。
 - 兩批審稿改動總計：ad-05 19 處（11 張，見 `review-ad-05.json`，含本段 2 處）、ad-06 8 處（8 張）。
+
+## ad-09（殿堂 30 張，s5）
+
+- 研究 3 Sonnet（WebSearch a 5／b 8／c 12 次）＋主線派 1 支 Sonnet 補查 10 張薄塊與周杰倫獎名（`research/sup-ad-09.json`，WebSearch 11 次；已併回 a／b／c 並標「主線補查 sup-ad-09」）。補完後 Al Atlal、Dust Bowl Ballads、楊弦、Bessie Smith、港台四張的聲音塊仍只有編制、詞曲者、改編來源與曲目結構，寫作照「只寫查得到的」薄寫。
+- **研究稿主線更正**（`ad-09-c.json`）：周杰倫《范特西》第 13 屆金曲獎得的是「最佳流行音樂演唱專輯獎」（c 組誤記「最佳國語專輯」，舊稿原本是對的）；陶喆是「最佳專輯製作人獎」（c 組誤記「最佳唱片製作人」）。齊豫的榜單由「1994 百張榜」改為 Taipei Times 2009 報導的 200 最佳專輯 1975–92 榜第 3（sup 補查）。
+- 研究層推翻舊稿的主要錯誤（新稿未沿用）：Dance Mania「最暢銷」、錄音年（1957 底）；Call of the Valley 白金唱片；Al Atlal「近四十九分鐘」「還我自由」；Blackboard Jungle Dub「第一張 dub」寫成定論、King Tubby 混音、Pablo「口風琴」；Liege & Lief 2002 票選與 2006 獎混寫；楊弦「弦樂鋪底」與殘留的作者指示句；Star Wars「約五十個主題」、Kingsway Hall（實為 Anvil）；West Side Story Saul Chaplin 不是製片；Chuck Berry「Johnnie Johnson 鋼琴貫穿全輯」；氷の世界 細野參與曲數；Ray Charles 葛萊美屬單曲、錄音兩地；許冠傑「被鄧麗君、梅艷芳、Beyond、周杰倫翻唱」；梅艷芳「1995 廣州禁唱」；Beyond「東京錄音」「富士山下小屋」；陶喆「開了老歌新唱的路」。
+- 機器 QA：`qa-batch research ad-09` 1 標記（許冠傑研究稿一條 src 非完整網址，不進簡介）；`out` 3 標記：葛萊美／搖滾名人堂誤報、《俘虜》中文片名誤報、「中國大陸」用語（已修，見下）；fix-spacing 0；字數 225–280。
+
+### 主線審稿（2026-11-04，30 張逐張讀、逐句對研究稿）
+
+改 9 處（8 張，`review-ad-09.json`）：
+
+- `the blue hearts|the blue hearts`：「在日本搖滾名盤榜單上常排進前三名」→「常被列為日本搖滾最好的專輯之一」。「榜單上常排進前三名」是在描述榜單；改成直述地位（研究稿：Rolling Stone Japan 2007 第 3、bounce 2009 第 2，兩份榜）。同 ad-05 Marquee Moon 先例
+- `坂本龍一|戦場のメリークリスマス`：「多數聲部用 Emulator II 演奏」→「多數聲部用 E-mu Emulator 取樣器演奏」。Emulator II 是 1984 年才推出的機型，1983 年錄音不可能用；研究稿只引坂本 2010 年推文的轉述，型號不寫死
+- `leonard bernstein & stephen sondheim|west side story (original sound track recording)`：「配樂把爵士、拉丁節奏、交響式鋪陳與音樂劇慣例混在一起，配器比百老匯卡司錄音更厚實。」→「配樂把爵士、拉丁節奏、交響式鋪陳與音樂劇慣例混在一起。」。「配器比百老匯卡司錄音更厚實」研究稿沒有（只有樂團約三倍編制，已在前句），是推論
+- `the upsetters|blackboard jungle dub`：「兩位風琴手、Augustus Pablo 的 melodica 與小號」→「三位風琴手、Augustus Pablo 的 melodica 與 Bobby Ellis 的小號」。事實錯誤：研究稿樂手表風琴是 Glen Adams、Winston Wright、Bernard Harvey 三人；原句讀成 Pablo 也吹小號，小號是 Bobby Ellis
+- `楊弦|中國現代民歌集`：「《中國現代民歌集》常被視為台灣現代民歌發展的起點，」→「《中國現代民歌集》是楊弦 1975 年的專輯，被視為台灣現代民歌發展的起點，」。審稿第 1 問：第一句沒說是誰、哪年的唱片；研究稿只有中文維基一處說法，用「被視為」不用「常」
+- `楊弦|中國現代民歌集`：「楊弦當時是台大海洋研究所的研究生，1974 年夏天」→「他當時是台大研究生，1974 年夏天」。補第一句後壓字；楊弦已在第一句出現
+- `井上陽水|氷の世界`：「林立夫的鼓與 pedal steel」→「林立夫的鼓、大江俊之的 pedal steel」。事實錯誤：研究稿 pedal steel 是大江俊之，原句讀成林立夫兼彈
+- `chuck berry|the great twenty-eight`：「二十八首自作曲」→「二十八首歌」。研究稿沒有「全為自作曲」的依據（收 21 首單曲、6 首 B 面、1 首專輯曲）
+- `齊豫|橄欖樹`：「被讀成中國大陸」→「被讀成中國」。卡池用語：稱中國一律寫「中國」（qa-batch 標記）
+
+其餘 22 張逐張審過，未改字。另核對：Goodman「大樂團第一次在卡內基演出」、Hank Williams「生涯銷量最高」、Star Wars「最暢銷的交響樂專輯」（研究稿皆維基，寫作用「被視為」或直述可證事實）、梅艷芳「創當時香港銷量紀錄」（HK01）、Beyond〈海闊天空〉YouTube 破億（2022）、Armstrong 國家錄音登記表 2002 是 Hot Five/Seven 錄音（成稿已寫明）皆有所本，照留。研究稿 `ad-09-c.json` 坂本條已加註 Emulator II 型號不採。
+
+### 上線
+
+- `kv-token-check` 通過；舊值存 `kv-before-ad-09.json`（60 鍵，30 個非 null）。
+- bulk put 39 鍵（desc2 30＋CJK 卡 desc4 9），wrangler 印 `Success!`；`verify-wave-kv` 回讀 39/39 逐字一致。
+- `front-check ad-09`：30/30 前台為新稿，CURATED 0。
+- manifest 同步 30 處（c31-world 8、c32-folk 5、c33-comps 4、c34-canon 2、c34-japan 2、c37-jazz 3、c38-soul 1、c41-chinese 5）。

@@ -1,0 +1,30 @@
+{
+ "batch": "ad-09",
+ "cards": 30,
+ "written": {
+  "kvKeys": 39,
+  "kvBefore": "kv-before-ad-09.json",
+  "manifest": 30
+ },
+ "review": {
+  "by": "cloud-main",
+  "cards": 30,
+  "changed": [
+   "the blue hearts|the blue hearts",
+   "坂本龍一|戦場のメリークリスマス",
+   "leonard bernstein & stephen sondheim|west side story (original sound track recording)",
+   "the upsetters|blackboard jungle dub",
+   "楊弦|中國現代民歌集",
+   "井上陽水|氷の世界",
+   "chuck berry|the great twenty-eight",
+   "齊豫|橄欖樹"
+  ]
+ },
+ "qa": {
+  "research": "pass（1 個 src 非完整網址，在研究稿）",
+  "out": "pass（1 誤報＋1 用語已修）",
+  "kvReadback": "39/39",
+  "front": "30/30"
+ },
+ "pendingLocal": {}
+}
