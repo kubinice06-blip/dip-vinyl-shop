@@ -1259,7 +1259,7 @@
    "ratings": {
     "classic": 3,
     "obscurity": 3,
-    "accessibility": 4,
+    "accessibility": 5,
     "listeners": 1986,
     "source": "manual:audit-20261102",
     "checkedAt": "2026-11-03T00:00:00Z",
@@ -1274,15 +1274,19 @@
      "rarity": "legendary"
     }
    },
-   "rarity": "uncommon",
+   "rarity": "epic",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "evidenceUrls": [],
-    "reason": "已評估：classic 4、obscurity 5、accessibility 5；obscurity=5 但沒有遺珠級證據（listeners 1986），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+    "eligible": true,
+    "tier": "heresy",
+    "evidenceUrls": [
+     "https://touch33.net/?p=238",
+     "https://touchradio.org.uk/reviews/phillipniblock.html",
+     "https://en.wikipedia.org/wiki/Phill_Niblock"
+    ],
+    "reason": "2026-11-04 ax7 升格（店主放寬後異端標準：可信來源描述整張持續高強度聽感）；裁定見 batch-progress/add-20261104-ax7/rulings.md 52103／52111／52121–52124。"
    },
    "description": {
-    "text": "卡內寫著要非常大聲地播，還要小心喇叭。寫下這段的是印第安納州安德森出身的作曲家 Phill Niblock（1933–2024），1985 年起主持紐約的 Experimental Intermedia 基金會。要小心喇叭，是因為鋼琴那首的低音極大。2003 年 Touch 推出時，四位樂手各演奏一首：上低音薩克斯風、低音單簧管、電貝斯，以及約 70 分鐘的鋼琴曲。長音層層疊錄，貝斯與鋼琴兩首的低頻特別密。",
+    "text": "《Touch Food》是 Phill Niblock 的雙 CD，全張是無節拍、無旋律的長音，第二片是一首長 70 分鐘的鋼琴曲〈Pan Fried 70〉；Niblock 要求播得極大聲，曲子結束前鄰居還沒抱怨就是不夠大聲。它被列入 2003 年的年度專輯榜，Niblock 也常被稱為極簡主義者裡最極簡的一位。錄音主要在巴黎 CCMIX 駐村時進行，再回紐約完成，2003 年由 Touch 發行。做法是錄下單音，每個音重複約十次，用 Pro Tools 移調出微分音，疊成 24 或 32 軌，音高相差極小的長音同時發聲，產生大量拍音與泛音。",
     "sourceUrls": [
      "https://en.wikipedia.org/wiki/Phill_Niblock",
      "https://www.discogs.com/release/361923",
@@ -1305,8 +1309,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
