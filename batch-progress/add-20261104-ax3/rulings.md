@@ -36,3 +36,12 @@
 - 51772 卡單 label 依研究 c 更正：Prince Lasha《Insight》→ CBS（Birdseye 是後來現場盤廠牌）；Ebony Rhythm Funk Campaign → UNI（Band Aide 是版權方）。
 - 51773 Mtume 與 Thornton 在 Last.fm 各有兩個條目（85／174、83／140），合計仍 <300，照合格。
 - 51774 a 組：Stefan Gnys《English Oaks and Evangeline》Apple 有 2024 正式數位版（改名《Horizoning》），轉一般卡；其餘 8 張照採 pearl。Jeremy Dormouse 卡單國別已是 CA，正文照研究 a 寫加拿大。
+
+## 研究 b 組
+- 51711 b 組 9 張流亡判定：8 張合格、1 張不合格（Inner Dialogue《Friend》：Ranwood 為 Lawrence Welk 與前 Dot 社長 1968 年創辦的商業廠牌，非私壓或極小廠；2010 韓國 Big Pink 兩版 CD 與日本發行有正式再發）。listeners：Rin Eric 4、Circulation 23、Fairy Tale 13、Ton Vlasman 47、Princess Flower 25（Last.fm 頁兩次 Temporarily Unavailable，僅憑 worker）、Inner Dialogue 38、Smack 117、Ian A. Anderson 43、Probe 166。
+- 51712 Smack 為常見同名，已核對 Last.fm 頁曲目為 Purple Haze，與 Audio House 1968 專輯一致，非錯配。Circulation 亦為多團同名，但 Tank Tracks 盤名獨一。
+- 51713 串流驗證限制：Apple（iTunes search 六個店面）九張皆無；Spotify／Bandcamp 因工具限制（Bandcamp 403）未能驗證。風險最高：Smack（Shadoks 2011 LP／2012 CD）、Ian A. Anderson（Bonfire 2023）、Probe（SL Records 2024）、Ton Vlasman（Wah Wah 2009），建議主線上線前人工搜 Spotify。
+- 51714 Rin Eric 於 Apple 有 2013–2017 年多張其他自發數位專輯，但 1972 年這張不在其中；照合格，註記同名同人待確認。
+- 51715 Princess Flower：2012 Wah Wah 重發加了 1970 年未發行 C、D 面並以 Pataphysician Orchestra 署名；上架以 1968 年六首原版為準。Daevid Allen 掛名僅 Discogs 單一來源，寫作層用「團員之一」。
+- 51716 Smack 壓量衝突：Discogs 版本註記約 150 張、藝人簡介約 2000 張，寫作層避免寫確切數字。Probe 年份：Veamusic 文案 1969，Discogs 與 MB 1971，採 1971。
+- 51717 moodGuess 存疑：Inner Dialogue（曲目多為流行翻唱，含〈Raindrops Keep Fallin On My Head〉，迷幻成分薄）。
