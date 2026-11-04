@@ -9,3 +9,13 @@
 ## 主線（開工）
 - **52351** 開工狀態：seed 22657 列，heresy 157、pearl 291、hall 303。`kv-token-check` exit 0。卡池本區 hardcore 已有一般卡：Confuse《Indignation》、Disclose《Tragedy》、G.I.S.M.《DETESTATION》、Gauze 三張、Lip Cream 三張、Bastard《Wind of Pain》、S.O.B.《Don't Be Swindle》（升格候選，交 ax9a）；Gai《1981-1985》已是流亡。北歐、歐陸、拉美的 hardcore 卡池幾乎是空的（Shitlickers、Anti Cimex、Mob 47、Riistetyt、Kaaos、Terveet Kädet、Rattus、Olho Seco、Ratos de Porão、Wretched、Raw Power、Indigesti、Lärm 全部 chk 0）。歷批策展檔沒有提過這些團。
 - **52352** 策展與研究併層：前幾批策展→研究分兩層，每層都被容器重啟砍過；hardcore 的證據查核與提名高度重疊（查不到聽感描述就不必提），併層省一輪等待。研究稿 none 的也留一筆，日後可撿回當一般卡。
+
+## 策展研究 b 組（北歐）
+- **52311** 收（heresy）Anti Cimex《Raped Ass》1983 EP：MRR #7「ultra-thrash attack」＋維基「硬核史上最嚴苛之一」；證據偏薄，邊緣收。
+- **52312** 收（heresy）Mob 47《Kärnvapen Attack》1984 EP：九首極速短曲，MRR #15「ultra-fast thrash」，書籍稱瑞典最快 D-beat 團；MB rg 標題為「Mob 47」，queryAlias 處理。
+- **52313** 收（heresy）Kaaos《Totaalinen Kaaos》1982 EP：MRR #6「糊成一片的 thrash 噪音」，人聲樂器未融合。
+- **52314** 收（heresy）Crude SS《Who'll Survive》EP：MRR #27「flailing sonic eruption」；年份採 1985（MB 1983 與 MRR 衝突）；證據僅 MRR＋重發廠，邊緣收。
+- **52315** 收（heresy）Riistetyt《Valtion vankina》1983：MRR #5「1000-mph」uncompromising thrash＋Razorcake＋維基；偏速度、缺失真描述，邊緣收。
+- **52316** 不收 Shitlickers《Cracked Cop Skulls》（單一部落格）、Destrucktions《Vox Populi》（MRR 說非純速度）、Bastards《Maailma palaa ja kuolee》（MRR 兩則矛盾）、Rattus《Loud and Fast》（身分衝突）。
+- **52317** 不收 Terveet Kädet《Kädet suojelee》：listeners 99、無串流，是流亡候選，但為合輯、CAA 404、僅 MRR 單源；主線若補得到 Discogs 封面與第二來源可判 pearl。
+- **52318** 池子只有 5 張過線，不湊數；Asocial、Kansan Uutiset、Lama、Appendix、Avskum、Totalitär 等未查（WebSearch 用 7 次，之後轉為閱讀 MRR 團頁）。
