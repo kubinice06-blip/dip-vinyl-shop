@@ -1,0 +1,173 @@
+[
+ {
+  "docId": "blink-182|buddha",
+  "updateMask": [
+   "classic",
+   "obscurity",
+   "accessibility",
+   "rarity",
+   "coverUrl",
+   "rgMbid",
+   "upc",
+   "artist",
+   "album",
+   "cardId",
+   "updatedAt",
+   "seed"
+  ],
+  "body": {
+   "fields": {
+    "classic": {
+     "integerValue": "3"
+    },
+    "obscurity": {
+     "integerValue": "2"
+    },
+    "accessibility": {
+     "integerValue": "2"
+    },
+    "rarity": {
+     "stringValue": "common"
+    },
+    "coverUrl": {
+     "stringValue": "https://coverartarchive.org/release-group/b9ed79e9-b925-3631-bf80-98258226e5c6/front"
+    },
+    "rgMbid": {
+     "stringValue": "b9ed79e9-b925-3631-bf80-98258226e5c6"
+    },
+    "upc": {
+     "stringValue": "610337876522"
+    },
+    "artist": {
+     "stringValue": "blink-182"
+    },
+    "album": {
+     "stringValue": "Buddha"
+    },
+    "cardId": {
+     "stringValue": "blink-182|buddha"
+    },
+    "updatedAt": {
+     "integerValue": "1"
+    },
+    "seed": {
+     "booleanValue": true
+    }
+   }
+  }
+ },
+ {
+  "docId": "blink-182|cheshire cat",
+  "updateMask": [
+   "classic",
+   "obscurity",
+   "accessibility",
+   "rarity",
+   "coverUrl",
+   "rgMbid",
+   "upc",
+   "artist",
+   "album",
+   "cardId",
+   "updatedAt",
+   "seed"
+  ],
+  "body": {
+   "fields": {
+    "classic": {
+     "integerValue": "3"
+    },
+    "obscurity": {
+     "integerValue": "2"
+    },
+    "accessibility": {
+     "integerValue": "2"
+    },
+    "rarity": {
+     "stringValue": "common"
+    },
+    "coverUrl": {
+     "stringValue": "https://coverartarchive.org/release-group/0a467c9c-c9f7-3a86-bce1-c013e3bacd5f/front"
+    },
+    "rgMbid": {
+     "stringValue": "0a467c9c-c9f7-3a86-bce1-c013e3bacd5f"
+    },
+    "upc": {
+     "stringValue": "723248613626"
+    },
+    "artist": {
+     "stringValue": "blink-182"
+    },
+    "album": {
+     "stringValue": "Cheshire Cat"
+    },
+    "cardId": {
+     "stringValue": "blink-182|cheshire cat"
+    },
+    "updatedAt": {
+     "integerValue": "1"
+    },
+    "seed": {
+     "booleanValue": true
+    }
+   }
+  }
+ },
+ {
+  "docId": "blink-182|dude ranch",
+  "updateMask": [
+   "classic",
+   "obscurity",
+   "accessibility",
+   "rarity",
+   "coverUrl",
+   "rgMbid",
+   "upc",
+   "artist",
+   "album",
+   "cardId",
+   "updatedAt",
+   "seed"
+  ],
+  "body": {
+   "fields": {
+    "classic": {
+     "integerValue": "4"
+    },
+    "obscurity": {
+     "integerValue": "1"
+    },
+    "accessibility": {
+     "integerValue": "2"
+    },
+    "rarity": {
+     "stringValue": "rare"
+    },
+    "coverUrl": {
+     "stringValue": "https://coverartarchive.org/release-group/19b6b24f-b273-3d4b-91f4-0720cd0f3bcd/front"
+    },
+    "rgMbid": {
+     "stringValue": "19b6b24f-b273-3d4b-91f4-0720cd0f3bcd"
+    },
+    "upc": {
+     "stringValue": "008811162429"
+    },
+    "artist": {
+     "stringValue": "blink-182"
+    },
+    "album": {
+     "stringValue": "Dude Ranch"
+    },
+    "cardId": {
+     "stringValue": "blink-182|dude ranch"
+    },
+    "updatedAt": {
+     "integerValue": "1"
+    },
+    "seed": {
+     "booleanValue": true
+    }
+   }
+  }
+ }
+]
