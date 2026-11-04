@@ -1,0 +1,736 @@
+{
+ "group": "ml60b",
+ "factions": [
+  {
+   "id": "lofi-house",
+   "zh": "lo-fi house",
+   "count": 4,
+   "why": ""
+  },
+  {
+   "id": "deep-house-slow",
+   "zh": "慢 deep house",
+   "count": 8,
+   "why": ""
+  },
+  {
+   "id": "ambient-techno",
+   "zh": "暖 ambient techno",
+   "count": 12,
+   "why": ""
+  },
+  {
+   "id": "ambient-house",
+   "zh": "ambient house",
+   "count": 1,
+   "why": ""
+  }
+ ],
+ "albums": [
+  {
+   "artist": "DJ Seinfeld",
+   "album": "Time Spent Away From U",
+   "year": 2017,
+   "label": "Lo-Fi Beats",
+   "country": "se",
+   "faction": "lofi-house",
+   "genres": [
+    "electronic"
+   ],
+   "why": "lo-fi house 代表作，磁帶糊與軟 pad、慢拍懶散；聲音落恍惚（靜＋重＋暖）",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 1,
+    "z": 0.8,
+    "why": "慢拍、磁帶嘶聲與厚 pad 包覆，和弦暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/bb966579-deaf-4e02-8e6f-88adb09e3575",
+    "https://coverartarchive.org/release-group/bb966579-deaf-4e02-8e6f-88adb09e3575"
+   ],
+   "mbRgMbid": "bb966579-deaf-4e02-8e6f-88adb09e3575",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Ross From Friends",
+   "album": "Family Portrait",
+   "year": 2018,
+   "label": "Brainfeeder",
+   "country": "gb",
+   "faction": "lofi-house",
+   "genres": [
+    "electronic"
+   ],
+   "why": "lo-fi house 標誌作，卡帶飽和的夢幻和弦；聲音落恍惚（靜＋重＋暖）",
+   "moodGuess": {
+    "x": 2.7,
+    "y": 1,
+    "z": 0.8,
+    "why": "中慢速、卡帶糊、溫暖和弦"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/abeb95b4-a734-4b61-b5ca-4390007d0e9b",
+    "https://coverartarchive.org/release-group/abeb95b4-a734-4b61-b5ca-4390007d0e9b"
+   ],
+   "mbRgMbid": "abeb95b4-a734-4b61-b5ca-4390007d0e9b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "x 貼近 2.7，部分曲目偏舞池"
+  },
+  {
+   "artist": "Axel Boman",
+   "album": "Family Vacation",
+   "year": 2013,
+   "label": "Studio Barnhus",
+   "country": "se",
+   "faction": "lofi-house",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Studio Barnhus 的暖調懶散 deep house；聲音落恍惚（靜＋重＋暖）",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 1,
+    "z": 1,
+    "why": "鬆散拍子、暖取樣、厚低頻"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/31b76d3c-f3f0-40c9-8ada-82c7f0c4623b",
+    "https://coverartarchive.org/release-group/31b76d3c-f3f0-40c9-8ada-82c7f0c4623b"
+   ],
+   "mbRgMbid": "31b76d3c-f3f0-40c9-8ada-82c7f0c4623b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Kornél Kovács",
+   "album": "The Bells",
+   "year": 2016,
+   "label": "Studio Barnhus",
+   "country": "se",
+   "faction": "lofi-house",
+   "genres": [
+    "electronic"
+   ],
+   "why": "瑞典慢速 house，鐘聲式旋律與暖和弦；聲音落恍惚（靜＋重＋暖）",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 0.9,
+    "z": 0.9,
+    "why": "慢拍、旋律清楚、暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/01b27e90-597c-4e43-9cc4-f8c6daadf2bb",
+    "https://coverartarchive.org/release-group/01b27e90-597c-4e43-9cc4-f8c6daadf2bb"
+   ],
+   "mbRgMbid": "01b27e90-597c-4e43-9cc4-f8c6daadf2bb",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "y 偏邊緣"
+  },
+  {
+   "artist": "Bjørn Torske",
+   "album": "Nedi Myra",
+   "year": 1998,
+   "label": "Tellé",
+   "country": "no",
+   "faction": "deep-house-slow",
+   "genres": [
+    "electronic"
+   ],
+   "why": "挪威慢速 deep house 名盤，暖而塵土味；聲音落恍惚（靜＋重＋暖）",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.1,
+    "z": 0.9,
+    "why": "慢而懶的律動、厚暖低頻"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/634e167d-a11c-3f90-83ae-136e1aaf5728",
+    "https://coverartarchive.org/release-group/634e167d-a11c-3f90-83ae-136e1aaf5728"
+   ],
+   "mbRgMbid": "634e167d-a11c-3f90-83ae-136e1aaf5728",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Bjørn Torske",
+   "album": "Feil knapp",
+   "year": 2007,
+   "label": "Smalltown Supersound",
+   "country": "no",
+   "faction": "deep-house-slow",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Torske 慢速暖調 house，帶 ambient 質地；聲音落恍惚（靜＋重＋暖）",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.1,
+    "z": 0.8,
+    "why": "慢拍、暖和弦、微糊"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/e66005d8-9997-3802-9b5d-06438516dfdb",
+    "https://coverartarchive.org/release-group/e66005d8-9997-3802-9b5d-06438516dfdb"
+   ],
+   "mbRgMbid": "e66005d8-9997-3802-9b5d-06438516dfdb",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Bjørn Torske",
+   "album": "Kokning",
+   "year": 2010,
+   "label": "Smalltown Supersound",
+   "country": "no",
+   "faction": "deep-house-slow",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Torske 後期，慢速 balearic 式暖 house；聲音落恍惚（靜＋重＋暖）",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 1.1,
+    "z": 0.8,
+    "why": "慢拍、暖旋律、厚墊"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/4c2ff7fa-c99c-4ee0-91bc-6570b1322246",
+    "https://coverartarchive.org/release-group/4c2ff7fa-c99c-4ee0-91bc-6570b1322246"
+   ],
+   "mbRgMbid": "4c2ff7fa-c99c-4ee0-91bc-6570b1322246",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Lawrence",
+   "album": "The Night Will Last Forever",
+   "year": 2005,
+   "label": "Dial",
+   "country": "de",
+   "faction": "deep-house-slow",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Dial 的夜間慢板 deep house，柔軟而沉；聲音落恍惚（靜＋重＋暖）",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1,
+    "z": 0.7,
+    "why": "慢、暖調和弦、霧狀殘響"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/6a9f38ad-014d-3c25-ba60-9748a2250c41",
+    "https://coverartarchive.org/release-group/6a9f38ad-014d-3c25-ba60-9748a2250c41"
+   ],
+   "mbRgMbid": "6a9f38ad-014d-3c25-ba60-9748a2250c41",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "與 Lawrence English 不同人，須人工確認身分"
+  },
+  {
+   "artist": "Superpitcher",
+   "album": "Here Comes Love",
+   "year": 2004,
+   "label": "Kompakt",
+   "country": "de",
+   "faction": "deep-house-slow",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Kompakt 的抒情慢 house，厚 pad 與柔唱；聲音落恍惚（靜＋重＋暖）",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 1,
+    "z": 0.8,
+    "why": "慢拍、厚合成器墊、旋律暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/244290b2-d104-3c8b-8aac-b0ba81681720",
+    "https://coverartarchive.org/release-group/244290b2-d104-3c8b-8aac-b0ba81681720"
+   ],
+   "mbRgMbid": "244290b2-d104-3c8b-8aac-b0ba81681720",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "x 貼邊"
+  },
+  {
+   "artist": "Kuniyuki Takahashi",
+   "album": "Feather World",
+   "year": 2012,
+   "label": "Mule Musiq",
+   "country": "jp",
+   "faction": "deep-house-slow",
+   "genres": [
+    "electronic"
+   ],
+   "why": "北海道 deep house 的溫潤慢板；聲音落恍惚（靜＋重＋暖）",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 0.9,
+    "z": 0.8,
+    "why": "柔和打擊、暖和弦、微糊"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/6583afef-efcf-4813-b466-bf00e0e2bf17",
+    "https://coverartarchive.org/release-group/6583afef-efcf-4813-b466-bf00e0e2bf17"
+   ],
+   "mbRgMbid": "6583afef-efcf-4813-b466-bf00e0e2bf17",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "聽感憑印象"
+  },
+  {
+   "artist": "Move D & Benjamin Brunn",
+   "album": "Songs From the Beehive",
+   "year": 2008,
+   "label": "Smallville",
+   "country": "de",
+   "faction": "deep-house-slow",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Move D 的慢速暖調 ambient house；聲音落恍惚（靜＋重＋暖）",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 0.9,
+    "z": 0.5,
+    "why": "慢、類比暖墊、輕微糊"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/22e08b04-e357-30e3-85ab-0f38cee19013",
+    "https://coverartarchive.org/release-group/22e08b04-e357-30e3-85ab-0f38cee19013"
+   ],
+   "mbRgMbid": "22e08b04-e357-30e3-85ab-0f38cee19013",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "池中 Move D 《Kunststoff》判輕，y 疑似不足"
+  },
+  {
+   "artist": "Jimpster",
+   "album": "Porchlight & Rocking Chairs",
+   "year": 2013,
+   "label": "Freerange",
+   "country": "gb",
+   "faction": "deep-house-slow",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Freerange 暖調 deep house 專輯；聲音落恍惚（靜＋重＋暖）",
+   "moodGuess": {
+    "x": 2.7,
+    "y": 0.9,
+    "z": 0.9,
+    "why": "中慢拍、暖和弦、溫熱低頻"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/0857b682-82cd-4eaa-a5f0-411197e0a41e",
+    "https://coverartarchive.org/release-group/0857b682-82cd-4eaa-a5f0-411197e0a41e"
+   ],
+   "mbRgMbid": "0857b682-82cd-4eaa-a5f0-411197e0a41e",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "x、y 貼邊，建議降優先"
+  },
+  {
+   "artist": "Spacetime Continuum",
+   "album": "Sea Biscuit",
+   "year": 1994,
+   "label": "Astralwerks",
+   "country": "us",
+   "faction": "ambient-techno",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Jonah Sharp 的舊金山 ambient techno，海洋感暖 pad；聲音落恍惚（靜＋重＋暖）",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 1,
+    "z": 0.5,
+    "why": "輕拍、厚暖 pad、殘響"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/448f6704-7b63-39de-8659-974ba70ca6b7",
+    "https://coverartarchive.org/release-group/448f6704-7b63-39de-8659-974ba70ca6b7"
+   ],
+   "mbRgMbid": "448f6704-7b63-39de-8659-974ba70ca6b7",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Spacetime Continuum",
+   "album": "Emit Ecaps",
+   "year": 1996,
+   "label": "Astralwerks",
+   "country": "us",
+   "faction": "ambient-techno",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Spacetime Continuum 的 ambient techno 代表；聲音落恍惚（靜＋重＋暖）",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1,
+    "z": 0.4,
+    "why": "慢律動、霧狀合成器、暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/32ac1962-b365-3dd3-8d24-6183d001b5bd",
+    "https://coverartarchive.org/release-group/32ac1962-b365-3dd3-8d24-6183d001b5bd"
+   ],
+   "mbRgMbid": "32ac1962-b365-3dd3-8d24-6183d001b5bd",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "z 貼邊"
+  },
+  {
+   "artist": "Sun Electric",
+   "album": "Kitchen",
+   "year": 1993,
+   "label": "R&S",
+   "country": "de",
+   "faction": "ambient-techno",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Sun Electric 的暖調 ambient techno；聲音落恍惚（靜＋重＋暖）",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1,
+    "z": 0.6,
+    "why": "輕拍、和弦暖、微厚"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/4e01390a-3f22-3b41-937a-dfdddff3c707",
+    "https://coverartarchive.org/release-group/4e01390a-3f22-3b41-937a-dfdddff3c707"
+   ],
+   "mbRgMbid": "4e01390a-3f22-3b41-937a-dfdddff3c707",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Sun Electric",
+   "album": "Via Nostra",
+   "year": 1998,
+   "label": "Sun Electric",
+   "country": "de",
+   "faction": "ambient-techno",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Sun Electric 後期，鬆弛暖調 ambient；聲音落恍惚（靜＋重＋暖）",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 0.9,
+    "z": 0.6,
+    "why": "慢律動、暖墊"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/0ede42c8-cada-354a-8f10-a854f5a119df",
+    "https://coverartarchive.org/release-group/0ede42c8-cada-354a-8f10-a854f5a119df"
+   ],
+   "mbRgMbid": "0ede42c8-cada-354a-8f10-a854f5a119df",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Sun Electric",
+   "album": "Present",
+   "year": 1996,
+   "label": "R&S",
+   "country": "de",
+   "faction": "ambient-techno",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Sun Electric 的溫和 ambient techno 專輯；聲音落恍惚（靜＋重＋暖）",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 0.9,
+    "z": 0.5,
+    "why": "中慢拍、暖和弦"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/71001c10-e56b-3bcb-ade0-098e5af52d9e",
+    "https://coverartarchive.org/release-group/71001c10-e56b-3bcb-ade0-098e5af52d9e"
+   ],
+   "mbRgMbid": "71001c10-e56b-3bcb-ade0-098e5af52d9e",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "聽感憑印象"
+  },
+  {
+   "artist": "Tetsu Inoue",
+   "album": "Slow and Low",
+   "year": 1995,
+   "label": "FAX +49-69/450464",
+   "country": "jp",
+   "faction": "ambient-techno",
+   "genres": [
+    "electronic"
+   ],
+   "why": "FAX 廠牌的慢速 ambient techno；聲音落恍惚（靜＋重＋暖）",
+   "moodGuess": {
+    "x": 2,
+    "y": 1,
+    "z": 0.4,
+    "why": "極慢律動、厚 pad、糊"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/eb355761-0ace-30ae-9e4c-a17ba569d633",
+    "https://coverartarchive.org/release-group/eb355761-0ace-30ae-9e4c-a17ba569d633"
+   ],
+   "mbRgMbid": "eb355761-0ace-30ae-9e4c-a17ba569d633",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "z 貼邊"
+  },
+  {
+   "artist": "Tetsu Inoue",
+   "album": "World Receiver",
+   "year": 1996,
+   "label": "FAX +49-69/450464",
+   "country": "jp",
+   "faction": "ambient-techno",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Tetsu Inoue 的 FAX 時期 ambient；聲音落恍惚（靜＋重＋暖）",
+   "moodGuess": {
+    "x": 2.1,
+    "y": 1,
+    "z": 0.3,
+    "why": "慢、類比 pad、微暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/230defe0-62ca-31e1-aec1-439370212e39",
+    "https://coverartarchive.org/release-group/230defe0-62ca-31e1-aec1-439370212e39"
+   ],
+   "mbRgMbid": "230defe0-62ca-31e1-aec1-439370212e39",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "z 偏邊緣，可汰換"
+  },
+  {
+   "artist": "Tetsu Inoue",
+   "album": "Organic Cloud",
+   "year": 1995,
+   "label": "FAX +49-69/450464",
+   "country": "jp",
+   "faction": "ambient-techno",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Inoue 的有機感 ambient；聲音落恍惚（靜＋重＋暖）",
+   "moodGuess": {
+    "x": 1.9,
+    "y": 1,
+    "z": 0.4,
+    "why": "無強拍、厚暖 pad"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/5bab9ed7-f211-3033-98a1-6d4c67487427",
+    "https://coverartarchive.org/release-group/5bab9ed7-f211-3033-98a1-6d4c67487427"
+   ],
+   "mbRgMbid": "5bab9ed7-f211-3033-98a1-6d4c67487427",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "z 偏邊緣，可汰換"
+  },
+  {
+   "artist": "2350 Broadway",
+   "album": "2350 Broadway",
+   "year": 1993,
+   "label": "FAX +49-69/450464",
+   "country": "de",
+   "faction": "ambient-techno",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Namlook／Inoue 合作的暖調 ambient techno；聲音落恍惚（靜＋重＋暖）",
+   "moodGuess": {
+    "x": 2,
+    "y": 1,
+    "z": 0.4,
+    "why": "慢律動、霧狀 pad"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/b3f309b9-024b-3aed-a40e-482a14879892",
+    "https://coverartarchive.org/release-group/b3f309b9-024b-3aed-a40e-482a14879892"
+   ],
+   "mbRgMbid": "b3f309b9-024b-3aed-a40e-482a14879892",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "身分須人工確認（藝名為專案名）"
+  },
+  {
+   "artist": "Shades of Orion",
+   "album": "Shades of Orion",
+   "year": 1993,
+   "label": "FAX +49-69/450464",
+   "country": "de",
+   "faction": "ambient-techno",
+   "genres": [
+    "electronic"
+   ],
+   "why": "FAX 專案，太空感 ambient；聲音落恍惚（靜＋重＋暖）",
+   "moodGuess": {
+    "x": 2,
+    "y": 1,
+    "z": 0.3,
+    "why": "慢、厚墊、微暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/3076a758-cbd7-3b71-a2f0-8b3ed4145867",
+    "https://coverartarchive.org/release-group/3076a758-cbd7-3b71-a2f0-8b3ed4145867"
+   ],
+   "mbRgMbid": "3076a758-cbd7-3b71-a2f0-8b3ed4145867",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "z 偏邊緣，身分須人工確認"
+  },
+  {
+   "artist": "Air Liquide",
+   "album": "Nephology: The New Religion",
+   "year": 1994,
+   "label": "Harthouse",
+   "country": "de",
+   "faction": "ambient-techno",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Air Liquide 的 ambient 側；聲音落恍惚（靜＋重＋暖）",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1,
+    "z": 0.3,
+    "why": "輕律動、厚 pad"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/5ce10964-0ac8-372f-a0ea-515c42918ee2",
+    "https://coverartarchive.org/release-group/5ce10964-0ac8-372f-a0ea-515c42918ee2"
+   ],
+   "mbRgMbid": "5ce10964-0ac8-372f-a0ea-515c42918ee2",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "z 貼邊，可汰換"
+  },
+  {
+   "artist": "Thomas Fehlmann",
+   "album": "Visions of Blah",
+   "year": 2002,
+   "label": "Kompakt",
+   "country": "de",
+   "faction": "ambient-techno",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Fehlmann 的暖調 ambient techno 小品；聲音落恍惚（靜＋重＋暖）",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 0.9,
+    "z": 0.4,
+    "why": "慢律動、暖和弦、糊"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/9483e5bb-6280-3682-8b0d-635baeed1396",
+    "https://coverartarchive.org/release-group/9483e5bb-6280-3682-8b0d-635baeed1396"
+   ],
+   "mbRgMbid": "9483e5bb-6280-3682-8b0d-635baeed1396",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "聽感憑印象"
+  },
+  {
+   "artist": "Ott",
+   "album": "Skylon",
+   "year": 2008,
+   "label": "Twisted",
+   "country": "gb",
+   "faction": "ambient-house",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Ott 的 dub-psychill，厚低頻暖調（池中 Ott 三張皆恍惚）；聲音落恍惚（靜＋重＋暖）",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.2,
+    "z": 0.7,
+    "why": "慢 dub 拍、厚低頻、暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/d21c604f-13a0-3fc7-9965-1ed65fd919d0",
+    "https://coverartarchive.org/release-group/d21c604f-13a0-3fc7-9965-1ed65fd919d0"
+   ],
+   "mbRgMbid": "d21c604f-13a0-3fc7-9965-1ed65fd919d0",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  }
+ ],
+ "notes": [
+  "池中同人錨點多判輕／判冷（Move D、Global Communication、HIA、Irresistible Force、Susumu Yokota 等）故未提；多數盤為記憶判斷未逐張試聽，貼邊者已標 uncertain，建議汰換貼邊者。",
+  "Fort Romeau《Insides》、Rick Wilhite《Analog Aquarium》、Moodymann《The Silence Is Broken》因 MB／CAA 查無可用封面或比對失敗未收。",
+  "只挖到 25 張，未達 27。"
+ ]
+}
