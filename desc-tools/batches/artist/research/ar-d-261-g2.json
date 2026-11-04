@@ -283,5 +283,363 @@
   "pubIssues": [],
   "failedFetches": 1,
   "notes": "en 維基 Sutcliffe_Jügend 直接 404（failedFetches 1）；搜尋摘要見到維基鏡像稱『1982 年初由前 Whitehouse 的 Kevin Tomkins 為主所創、迅速以最凶的原始 power electronics 團之一出名』，與 Discogs／訪談的『先組團、不到一年後去加入 Whitehouse』在順序上相反（Tomkins 本人說他是離開 Sutcliffe 去 Whitehouse），以訪談為準。重組年份：Discogs 1994，訪談引言 1996，兩源不一致，facts 不寫。團名與約克夏開膛手 Peter Sutcliffe 的關係：訪談沒解釋，搜尋也沒有可靠說明，卡池簡介『每面掛著開膛手受害者名字』的說法由 Discogs 專輯頁而來，未再核。legacy 無可收共識：Last.fm『最早的先驅之一』是百科式簡介，不收。『1997 年左右改署 Sutcliffe Jügend』Discogs 說約 1997 至 2008，訪談未涉及。"
+ },
+ {
+  "key": "genocide organ",
+  "name": "Genocide Organ",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Genocide Organ 1985 年在德國曼海姆組成，由 Tesco Organisation 廠牌的創辦人們發起；Tesco 1987 年由 Joachim Kohl 與 Klaus Hilger 以郵購公司起家。",
+      "src": "https://en.wikipedia.org/wiki/Genocide_Organ",
+      "src2": "https://en.wikipedia.org/wiki/Tesco_Organisation",
+      "from": "bank"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "維基列的風格是 power electronics 與 martial industrial，稱其音樂與態度『殘暴且具爭議』；Tesco 早期出版品採大尺寸卡紙套，音樂以 Throbbing Gristle 與 Lustmord 為範本。",
+      "src": "https://en.wikipedia.org/wiki/Genocide_Organ",
+      "src2": "https://en.wikipedia.org/wiki/Tesco_Organisation",
+      "from": "bank"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "none",
+    "facts": []
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Tesco 發行的第一張 Genocide Organ 專輯是 1989 年的《Leichenlinie》。",
+      "src": "https://en.wikipedia.org/wiki/Tesco_Organisation",
+      "src2": "https://www.discogs.com/release/182368",
+      "from": "bank"
+     }
+    ]
+   }
+  },
+  "milestones": [],
+  "conflicts": [],
+  "searches": 2,
+  "status": "thin",
+  "pubIssues": [],
+  "failedFetches": 0,
+  "notes": "題材涉及第三帝國、三K黨與戰爭，曾被指控右翼極端，團方在訪談中否認（維基首段）；維基另載 Discogs 封鎖其部分專輯的銷售。爭議事件需兩源，目前只有維基與一篇反法西斯立場的報導（The Left Berlin，未開頁），故不入 facts，沿用上線簡介『被指控、團方否認』的最保守寫法。legacy 查不到有出處的共識或後輩點名，標 none。Tesco 與 Genocide Organ 為同家族（Tesco 創辦人即團員），非獨立。"
+ },
+ {
+  "key": "brighter death now",
+  "name": "Brighter Death Now",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Brighter Death Now 是 Roger Karmanik（本名 Roger Karlsson，1965 年生）的計畫；他在 Finspång 附近的小地方 Hällestad 長大，少年時最大的消遣是在垃圾場砸廢車、電視和日光燈管，據該報導這份對廢鐵的癡迷把他帶向工業音樂。",
+      "src": "https://efn.se/raffinerade-perversioner-i-nyponbuskarna",
+      "from": "new",
+      "single": true
+     },
+     {
+      "f": "Karmanik 1987 年創辦瑞典獨立廠牌 Cold Meat Industry。",
+      "src": "https://en.wikipedia.org/wiki/Cold_Meat_Industry",
+      "src2": "https://en.wikipedia.org/wiki/Brighter_Death_Now",
+      "from": "bank"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "早期錄音偏器樂與氛圍，近年的作品常有被扭曲到無法辨識的嘶吼人聲；題材長期圍繞性虐待、精神病等黑暗主題。瑞典報導稱 Brighter Death Now 是廠牌旗下『最原始、最粗暴』的一個。",
+      "src": "https://en.wikipedia.org/wiki/Brighter_Death_Now",
+      "src2": "https://efn.se/raffinerade-perversioner-i-nyponbuskarna",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "據瑞典報導，Cold Meat Industry 旗下藝人被視為 death industrial 與 dark ambient 的先驅；廠牌 90 與 2000 年代發展成深奧音樂的『帝國』，2018 年在斯德哥爾摩的 30 週年演出有來自 40 國的觀眾。",
+      "src": "https://efn.se/raffinerade-perversioner-i-nyponbuskarna",
+      "src2": "https://en.wikipedia.org/wiki/Cold_Meat_Industry",
+      "from": "new"
+     },
+     {
+      "f": "Karmanik 在廠牌名聲最盛時刻意低調、對外冷淡，反而增添神祕感；2013 年因壓力停掉廠牌，2014 年另立 Familjegraven 專門發自己的作品。",
+      "src": "https://efn.se/raffinerade-perversioner-i-nyponbuskarna",
+      "src2": "https://en.wikipedia.org/wiki/Brighter_Death_Now",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "The Great Death 三部曲與《May All Be Dead》如今是收藏家追逐的稀有品。",
+      "src": "https://en.wikipedia.org/wiki/Brighter_Death_Now",
+      "from": "new",
+      "single": true
+     }
+    ]
+   }
+  },
+  "milestones": [],
+  "conflicts": [],
+  "searches": 4,
+  "status": "full",
+  "pubIssues": [],
+  "failedFetches": 0,
+  "notes": "維基首段 warn（頁面未提到卡池專輯 Necrose Evangelicum）：已對照，頁面講的是創辦 Cold Meat Industry 的 Roger Karmanik，與卡池簡介一致，身分無誤。瑞典報導稱『death industrial』『dark ambient』這兩個詞是 Karmanik 自己想出來的，屬『第一／創造』類宣稱、僅單源，未入 facts。出生地：該報導說 Hällestad（Finspång 附近），維基 CMI 條目把廠牌所在地記為 Mjölby，報導說唱片行在 Linköping，兩者不一致，地點皆不入 facts。Innerwar 為『death industrial 的里程碑』僅 Noisextra 單篇，只放 notes。報導發自 efn.se（瑞典 Östgöta 地區媒體），與維基非同源。"
+ },
+ {
+  "key": "atrax morgue",
+  "name": "Atrax Morgue",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Atrax Morgue 是義大利人 Marco Corbelli 的單人計畫，他 1970 年生於 Sassuolo，2007 年過世，得年 37 歲。",
+      "src": "https://en.wikipedia.org/wiki/Atrax_Morgue",
+      "src2": "https://4ibrecords.com/2015/06/19/atrax-morgue-marco-corbelli-heathen-harvest",
+      "from": "bank"
+     },
+     {
+      "f": "1992 年夏天他在朋友家用鍵盤、多重效果器和自己的聲音錄下第一卷卡帶《In Search of Death》，靈感來自義大利的 The Sodality 與 Whitehouse；另一篇評述也提到他受 Brighter Death Now 吸引。",
+      "src": "https://4ibrecords.com/2015/06/19/atrax-morgue-marco-corbelli-heathen-harvest",
+      "src2": "https://thebrvtalist.com/archive/2015/8/5/an-introduction-to-italian-death-industrial-by-per-najbjerg-odderskov",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他主要用 Sequential Circuits Six-Trak 合成器做噪音與 drone；友人、Deathpile 的 Jonathan Canady 說他把 Whitehouse『一條合成器、一條人聲』的做法變成自己的。",
+      "src": "https://en.wikipedia.org/wiki/Atrax_Morgue",
+      "src2": "https://4ibrecords.com/2015/06/19/atrax-morgue-marco-corbelli-heathen-harvest",
+      "from": "new"
+     },
+     {
+      "f": "1998 年他另開支線計畫 Morder Machine，節奏更慢、更重。",
+      "src": "https://4ibrecords.com/2015/06/19/atrax-morgue-marco-corbelli-heathen-harvest",
+      "from": "new",
+      "single": true
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他生前自設 Slaughter Productions 廠牌，1993 至 2006 年出了約 39 張 Atrax Morgue 錄音，也發過 Con-Dom、Maurizio Bianchi、Deathpile 等人的作品；一篇義大利 death industrial 導論稱它是該類型最受尊敬的邪典廠牌之一。",
+      "src": "https://4ibrecords.com/2015/06/19/atrax-morgue-marco-corbelli-heathen-harvest",
+      "src2": "https://thebrvtalist.com/archive/2015/8/5/an-introduction-to-italian-death-industrial-by-per-najbjerg-odderskov",
+      "from": "new"
+     },
+     {
+      "f": "他在 2010 年代於網路上逐漸累積身後的邪典聲量；悼文稱他的名字在噪音圈『傳奇』，影響可在許多更黑暗的噪音音樂中聽到。",
+      "src": "https://en.wikipedia.org/wiki/Atrax_Morgue",
+      "src2": "https://4ibrecords.com/2015/06/19/atrax-morgue-marco-corbelli-heathen-harvest",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "2008 年身後發行與 Maurizio Bianchi 的合作《M. Plus T.》。",
+      "src": "https://4ibrecords.com/2015/06/19/atrax-morgue-marco-corbelli-heathen-harvest",
+      "from": "new",
+      "single": true
+     }
+    ]
+   }
+  },
+  "milestones": [],
+  "conflicts": [],
+  "searches": 3,
+  "status": "full",
+  "pubIssues": [],
+  "failedFetches": 0,
+  "notes": "死因與細節預設不收：facts 只寫 2007 年過世與年齡（公開層級），悼文與維基都有死因，寫作層不要寫。『Slaughter Productions 是最受尊敬的』出自歌迷評述（Per Najbjerg Odderskov），已降為『一篇導論稱』的具名說法；HH 頁面是 4iB Records 轉載 Heathen Harvest 悼文，與評述為不同站。維基記 2001 年他參與 Viareggio 藝廊的行為藝術活動，未收。生日 1970-04-03 與卒日 2007-05-06 維基與 wikidata 同源；year 層級有悼文為第二源。"
+ },
+ {
+  "key": "navicon torture technologies",
+  "name": "Navicon Torture Technologies",
+  "slots": {
+   "origin": {
+    "status": "none",
+    "facts": []
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "音樂主要是暗黑噪音，大量工業與 dark ambient，間有刺耳噪音與 drone。",
+      "src": "https://www.chaindlk.com/reviews/7824",
+      "from": "new",
+      "single": true
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Sputnik Music 稱與 Malignant Records 簽約是 NTT 被更廣大聽眾認識的轉捩點，先前有《Scenes from the Next Millennium》CD。",
+      "src": "https://www.sputnikmusic.com/band/Navicon+Torture+Technologies",
+      "from": "bank",
+      "single": true
+     },
+     {
+      "f": "創辦人 Lee Bartow 的 NTT 以 2009 年 Malignant 發行的限量盒裝《The Gospels of the Gash》收尾（評論者稱為『天鵝之歌』）；2013 年《Your Suffering Will Be Legendary》以 18 位藝人的 18 首合作曲重發當年的兩張附贈 CD-R。",
+      "src": "https://www.chaindlk.com/reviews/7824",
+      "from": "new",
+      "single": true
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [],
+  "conflicts": [],
+  "searches": 2,
+  "status": "thin",
+  "pubIssues": [],
+  "failedFetches": 2,
+  "notes": "failedFetches：brainwashed 評論頁 404、sputnikmusic 403（Sputnik 條沿用事實庫，未重開）。搜尋摘要稱 1997 年首作為與 Negative Eight 的分裂 CD《Amalgam》、Lee Bartow 筆名 Leech、1998 至 1999 成員 Scott Walker 與 Christian Mesiano 離團後成為 Bartow 的個人計畫、2009 年後改以 Theologian 名義活動、2022 年為 25 週年復活，但皆未開頁讀到原文，不入 facts；所在地有紐約 Nyack 與一說，亦未確認。名稱 Leech 與卡池簡介相符，但沒有開頁讀到。legacy 無有出處的共識評價。"
+ },
+ {
+  "key": "irm",
+  "name": "IRM",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "IRM 來自瑞典 Norrköping，是 Martin Bladh（人聲、歌詞、美術）與 Erik Jarl（音樂）兩位創始成員的 industrial／power electronics 計畫；2007 年起 Mikael Oretoft 加入彈貝斯。",
+      "src": "https://www.discogs.com/artist/73156",
+      "from": "bank"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "《Oedipus Dethroned》是一張 power electronics 概念專輯，用古典象徵與圖像重述伊底帕斯的故事，由 Cold Meat Industry 發行。",
+      "src": "https://www.noisextra.com/tag/irm",
+      "from": "new",
+      "single": true
+     }
+    ]
+   },
+   "legacy": {
+    "status": "none",
+    "facts": []
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [],
+  "conflicts": [],
+  "searches": 3,
+  "status": "thin",
+  "pubIssues": [],
+  "failedFetches": 1,
+  "notes": "Discogs 藝人頁此次 403（failedFetches 1），origin 沿用事實庫，視為單源。兩次通用搜尋都被工程類 power electronics 淹沒，查不到成員生平、評價或後輩點名；legacy 與 era 標 none。Oedipus Dethroned 的年份『around the turn of the century』與卡池 2000 年一致。"
+ },
+ {
+  "key": "controlled bleeding",
+  "name": "Controlled Bleeding",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Controlled Bleeding 由 Paul Lemos 創立，他是唯一從頭到尾都在的成員；樂團約 1978 年在波士頓成形，後在長島 Massapequa 重組，鼓手兼人聲 Joe Papa 與鍵盤手 Chris Moriarty 是最常合作的夥伴。",
+      "src": "https://en.wikipedia.org/wiki/Controlled_Bleeding",
+      "src2": "https://trouserpress.com/reviews/controlled-bleeding/",
+      "from": "bank"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1983 至 1985 年是現場直錄雙軌卡帶的噪音期，1985 年首張 LP《Knees and Bones》走很凶的牆式噪音；1986 年《Headcrack》首度出現古典、中世紀與聖樂的影響，Papa 的無詞人聲被擺到最前面。",
+      "src": "https://en.wikipedia.org/wiki/Controlled_Bleeding",
+      "src2": "https://controlledbleeding.com/music.php",
+      "from": "bank"
+     },
+     {
+      "f": "此後路線不斷轉向：Wax Trax! 時期的工業舞曲帶金屬、1991 年《Golgotha》的中世紀味 ambient、1994 年起的 dub 與 dark ambient、2002 年起的自由爵士式即興。",
+      "src": "https://en.wikipedia.org/wiki/Controlled_Bleeding",
+      "src2": "https://trouserpress.com/reviews/controlled-bleeding/",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Trouser Press 稱它是『最早也最多產的工業噪音團之一』；維基說它橫跨曲風的做法與一再絕版的唱片，令人想到 Coil 與 Swans。",
+      "src": "https://trouserpress.com/reviews/controlled-bleeding/",
+      "src2": "https://en.wikipedia.org/wiki/Controlled_Bleeding",
+      "from": "new"
+     },
+     {
+      "f": "官方網站稱早期卡帶（特別是《Distress Signals》）在收藏家之間有聖杯地位，並稱 Lemos 的團是『美國最重要的實驗者之一』，自 2016 年起 Artoffact Records 重發大部分目錄。",
+      "src": "https://controlledbleeding.com/music.php",
+      "from": "new",
+      "single": true
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Chris Moriarty 與 Joe Papa 先後在 2000 年代後期過世；Lemos 在 2020 年 2 月宣布樂團解散。",
+      "src": "https://en.wikipedia.org/wiki/Controlled_Bleeding",
+      "from": "new",
+      "single": true
+     }
+    ]
+   }
+  },
+  "milestones": [],
+  "conflicts": [
+   "事實庫稱 Papa 是鼓手，維基稱他為主唱，Trouser Press 稱鼓手，官網未特指；facts 寫『鼓手兼人聲』並於 notes 說明。",
+   "事實庫 research 說首張 LP《Knees and Bones》1985 年；Trouser Press 寫 1983 年；維基與官網為 1985 年（官網稱 1985 至 1986 年進入黑膠期），採 1985。",
+   "成立地：維基稱約 1978 年波士頓成立，Trouser Press 稱 1970 年代中葉波士頓、約 1980 年在長島起發行卡帶；facts 只寫約 1978 與波士頓。"
+  ],
+  "searches": 4,
+  "status": "full",
+  "pubIssues": [],
+  "failedFetches": 0,
+  "notes": "Papa、Moriarty 卒年（維基載 2009 年 11 月 23 日與 2008 年 3 月 22 日）僅單源，且搜尋摘要見 Apple Music 的矛盾說法，故 facts 只寫『2000 年代後期』、不寫確切年份。解散：維基載 2020 年 2 月 11 日 Lemos 宣布，官網頁未提解散（描述仍在活動），facts 單源標 single，主要事實請寫作層保守處理。『Wax Trax! 時期』來自維基單源。維基與 Trouser Press 為不同站，視為獨立。官網為樂團自述，不是第三方評價，已用『官方網站稱』。"
  }
 ]
