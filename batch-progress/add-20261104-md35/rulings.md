@@ -39,3 +39,15 @@
 - 22527：Ossia《Devil's Dance》curatorRisk 成立（非 dub reggae，是帶 dub 語彙的實驗電子／工業），已入 facts；23 分鐘〈Vertigo〉近無拍，〈Dub Hell〉系列有推進低音線，能量估不低於 2.2。「sound system 低頻」查無來源，未寫。
 - 22528：Kryptic Minds《One of Us》與 King Midas Sound《Solitude》moodGuess 大致成立（前者半拍稀鼓、後者近乎無拍）；前者末段〈Organic〉〈Distant Dawn〉轉亮；後者低頻「霧」只有 drone 為證，無明言 sub-bass，人聲是口語詩而非喃喃。《Solitude》發行日 MB 2/13、Bandcamp 2/14，facts 兩寫。
 - 22529：失敗來源：Wikipedia（Kryptic Minds 404）、Sputnik、Treble、Juno、Norman Records、Tiny Mix Tapes、Bandcamp 部分頁面 403／404／500，未取用；RA 法語站 19846 實為他人評論，棄用。WebSearch 共用 8 次（上限 27）。
+
+## 研究 c 組（條號 22541–22550）
+- **22541**：Visionist《Safe》moodGuess 存疑。Dazed 明寫〈Victim〉為刺耳節拍、〈Vffected〉為扭曲疊層，確有鼓；策展「少鼓」不成立，「低頻轟鳴」無來源。整體冷，但能量偏上緣，主線視風險。status thin。
+- **22542**：Forest Swords《Bolted》moodGuess 存疑。廠牌文案強調 tightly wound、aching urgency、clattering beats、失真木琴／馬林巴與木管，能量與色溫可能比預估高（x 偏上、z 偏暖）；「慢速重低頻」查無來源。BPM 查不到。
+- **22543**：Miles《Faint Hearted》moodGuess 存疑。Boomkat：硬核式 clatter、重 sub-bass、磨損 minimal techno、restless/fidgety，後段才沉入氛圍；策展「慢 dub 拍」不符，x 可能高於 2.3。身分核對無撞名（Miles Whittaker）。單一聲音來源（Boomkat）。
+- **22544**：Logos《Imperial Flood》moodGuess 存疑。兩份來源（廠牌 Bandcamp、Boomkat）皆未說無鼓，反而指向 d&b 極簡、acid、dub techno 影響與 Mumdance 合作曲；「無鼓、大殘響」無證。status thin；主線可考慮以池中《Cold Mission》對照或汰換。
+- **22545**：Fis《From Patterns to Details》moodGuess 嚴重存疑。來源僅證實「未量化、原子化聲響、自然演化、田野錄音式比擬」，查不到重擊、低頻、金屬共鳴；可能更輕或無鼓。建議主線考慮汰換。真名 Oliver Peryman（Discogs credits）。
+- **22546**：The Caretaker《Selected Memories》moodGuess 部分存疑。維基載 Merzbow 式噪音曲（September 1939 等），74 分 25 首，x 偏上緣；取樣唱片本身有舞曲鼓，被放慢到成不了節拍（「節拍被抹糊」而非嚴格無鼓）。年份 1999 無誤，2011 再版不採。
+- **22547**：Black Mountain Transmitter《Black Goat of the Woods》身分無誤（Lysergic Earwax 003 CDr，限 75 張）。藝人編制來源不一（評論稱二人組／留言稱 J.R. Moore 個人計畫），facts 如實寫，寫作層只用團名。「低頻」查無來源。
+- **22548**：BMT《Playing With Dead Things》moodGuess 存疑：僅證實磁帶／降靈意象，低頻、糊的程度與噪音強度無文字證據（Discogs 標 Noise）。MB 為 Lysergic Earwax 數位版，Discogs 為 Auris Apothecary AAX-079 卡帶，同日；status thin，需實聽。
+- **22549**：Black Rain《Dark Pool》無推翻。有鼓（Boomkat：部落／工業節奏），速度查不到，「慢」無來源；MB 日期 2014-09-01 與維基 2014-08-12 有出入，皆 2014。
+- **22550**：研究 c 組全程未用 WebSearch 以外的受限額度之外功能；WebSearch 共用 3 次（Miles、Visionist、Black Rain 各一，Miles 一次落空）。Pitchfork／Discogs 頁面／AllMusic 直連 403 或被擋，樂評多以 Boomkat、廠牌 Bandcamp、維基、Dazed 替代。
