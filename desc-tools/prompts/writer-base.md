@@ -1,5 +1,7 @@
 # 寫作層共用規則（一次到位版）
 
+> **頂點卡（hall／heresy／pearl）不適用本檔，改照 `apex-desc-base.md`（2026-11-04 店主定案）**：不用鉤子公式與字數預算表，第一句講地位、平實寫做法與聲音、200–280 字。
+
 工作目錄一律 `C:\Users\User\dip-vinyl-home\desc-restyle`。**不動任何 git repo、不動 PROJECT_MEMORY.md、不上網。**
 
 ## 曲風源流規則（2026-08-08 店主裁定）
