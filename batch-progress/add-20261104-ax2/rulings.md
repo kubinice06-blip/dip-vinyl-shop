@@ -21,3 +21,17 @@
   - Kontarsky《Zimmermann: Requiem für einen jungen Dichter》2008 Cybele 版；Hespos（Ensemble 13）§1 人工身分。
   - 策展層自評依據偏薄：Malfatti、Michael Snow、Barlow、Marclay。
 
+
+## 研究 a 組（51601–51610）
+- 51601 Palestine《Strumming Music》：曲長約 50 分鐘（策展層寫 23 分鐘，推翻）；apex none，聽感偏催眠，無可信「最極端」依據。
+- 51602 Hodges《Voices and Piano》：apex none；小品式鋼琴加人聲，moodGuess 存疑（偏克制）；建議汰換（歷史份量薄）。
+- 51603 Christou《Vol. I》：實為 Sirius SMH 200110 2（2001，雅典）單片，非跨專輯精選，可當專輯收；label 補 Sirius；演奏者查無；apex none；moodGuess 存疑；建議汰換（絕版、演奏者不明）。
+- 51604 Chopin《Poésie sonore》：MB 首發 1972 為 S Press 卡帶，卡單封面與曲目屬 1983 Igloo LP（IGL 013）；建議 label 填 Igloo、年份考慮 1983；apex none。
+- 51605 Günter《Un peu de neige salie》：label Selektion（SCD 012）屬實；Wire 百張名單僅維基單一來源；apex none（難在太安靜，非刺耳）。
+- 51606 Sachiko M《Sine Wave Solo》：Amoebic AMO-SAT-01；樂評原文查不到，facts 僅 6 條；apex none。
+- 51607 Tsunoda《Field Recording Archive #2》：label 補 Häpna（H.1，瑞典）；apex none；facts thin。
+- 51608 Dumitrescu《Medium II / Cogito》：推翻策展層 label，實為 Edition RZ（Ed. RZ 1001，LP，德國，1987）；國別建議 ro；apex none。
+- 51609 Ensemble Modern《Spahlinger》：Kairos 0012692KAI，演奏者含 Zender、ensemble recherche、Arditti，掛名 Ensemble Modern 不精確；apex none；moodGuess 存疑；建議汰換。
+- 51610 Kayn《Simultan》：1977 Colosseum 三 LP（Colos SM 1473）；apex none；moodGuess 存疑（廠牌稱誘人氛圍）。
+- 本組 10 張全判 apex none（無一張取得 7 星可信依據）；異端藝人撞名檢查（seed heresy 85 位）無撞名。
+- 程序註記：WebSearch 用了 5 次（超過每支 3 次上限），之後只用 WebFetch／MB API；Discogs／AllMusic 403。
