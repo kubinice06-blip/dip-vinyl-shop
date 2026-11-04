@@ -4,13 +4,13 @@
   {
    "id": "noise-origins",
    "zh": "噪音／具象開創錄音",
-   "count": 3,
+   "count": 5,
    "why": "Russolo、Schaeffer、Avraamov、Kosugi 等噪音史源頭"
   },
   {
    "id": "hnw-drone-noise",
    "zh": "牆式噪音／聲牆",
-   "count": 3,
+   "count": 5,
    "why": "Vomir、Chatham、NON、Z'EV、Airway 等"
   }
  ],
@@ -215,9 +215,149 @@
    "releaseException": "",
    "queryAlias": "",
    "uncertain": "依據偏薄且屬『有結構』的大編制吉他聲牆（五樂章、有鼓、有推進），可能不符『反結構』；樂評來自藝人官網轉載的 The Wire（2003）與 Pitchfork（2003，針對 2002 三碟盒裝版 Selected Works 1971–1989 第三碟）。本盤為 2006 Table of the Elements 單曲獨立發行；Squid's Ear 對盒裝版演出持負評。"
+  },
+  {
+   "artist": "NON",
+   "album": "Pagan Muzak",
+   "year": 1978,
+   "label": "Graybeat",
+   "country": "us",
+   "faction": "hnw-drone-noise",
+   "genres": [
+    "noise",
+    "experimental"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "Boyd Rice 的 NON 在 1978 年壓製的 7 吋：17 條鎖槽（locked groove）無限循環噪音，無開頭無結尾，工業／噪音音樂的早期原點。",
+   "listeners": null,
+   "why": "一張 7 吋唱片壓了 17 條鎖槽，每條是會永遠重複的短噪音循環（原版偏心孔還可換轉法），沒有旋律、沒有拍子、沒有結束；Wikipedia 歸為 industrial／noise，1999 年 The Grey Area 重發。",
+   "moodGuess": {
+    "x": 3.5,
+    "y": 0.8,
+    "z": -1.2,
+    "why": "無限循環的機械噪音，單調而壓迫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/9c1dfbf1-4736-3433-8d2a-be39a66cbdb7",
+    "https://coverartarchive.org/release-group/9c1dfbf1-4736-3433-8d2a-be39a66cbdb7/front",
+    "https://en.wikipedia.org/wiki/Pagan_Muzak",
+    "https://en.wikipedia.org/wiki/Boyd_Rice"
+   ],
+   "mbRgMbid": "9c1dfbf1-4736-3433-8d2a-be39a66cbdb7",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "依據偏薄：僅 Wikipedia＋MB，沒找到具名樂評；形態是 7 吋（MB 標 Album，17 條鎖槽共約 17 分鐘，有串流版本與否未驗）；其他 NON 專輯（Physical Evidence 1982 無 CAA 封面、Might! 1995、Blood & Flame 1987）樂評亦未取得。Boyd Rice 有法西斯美學爭議，主線視情況決定上架。"
+  },
+  {
+   "artist": "Z'EV",
+   "album": "Production and Decay of Spacial Relations",
+   "year": 1981,
+   "label": "Backstreet Backlash Records",
+   "country": "nl",
+   "faction": "hnw-drone-noise",
+   "genres": [
+    "noise",
+    "experimental"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "Z'EV 用自製金屬打擊樂器演奏的早期荷蘭盤，Roy Sablosky 1983 年評論說他『不只破壞規則，而是改寫規則』；歐洲 industrial 金屬打擊樂的開創之一。",
+   "listeners": null,
+   "why": "全盤為 Z'EV 以不鏽鋼、鈦等自製金屬物件進行的無旋律打擊獨奏，七首約 4–8 分鐘，節奏不規則、金屬碰撞與共鳴持續；Wikipedia 稱他為 industrial 先驅，Jason Pettigrew 說他早期的金屬打擊樂『比你想得更早』。",
+   "moodGuess": {
+    "x": 3.8,
+    "y": 0.9,
+    "z": -0.5,
+    "why": "金屬碰撞與共鳴組成的不規則打擊，緊繃而尖銳"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/670d600a-6d2d-4795-a3e9-f8cadf233aa1",
+    "https://coverartarchive.org/release-group/670d600a-6d2d-4795-a3e9-f8cadf233aa1/front",
+    "https://en.wikipedia.org/wiki/Z%27EV"
+   ],
+   "mbRgMbid": "670d600a-6d2d-4795-a3e9-f8cadf233aa1",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Z'EV Production and Decay of Spacial Relations",
+   "uncertain": "依據偏薄：Wikipedia 引 Sablosky 1983 評論但未說明針對哪張；Z'EV 的『極端』是節奏性金屬打擊而非噪音牆，可能不符標準。MB 另有 2006 重發 RG 557f7780（含 vs. Reproduction… 標題）與 1982《Elemental Music》（35d1c7e1，CAA 404）；MB 藝人名在 1981 RG 為 ZEV。"
+  },
+  {
+   "artist": "Kluster",
+   "album": "Klopfzeichen",
+   "year": 1970,
+   "label": "Schwann",
+   "country": "de",
+   "faction": "noise-origins",
+   "genres": [
+    "experimental",
+    "noise"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "Moebius／Roedelius／Schnitzler 的 Kluster 1969 年底即興錄音，以回授、鬧鐘、廚具與風琴堆出全程無拍的電氣化噪音，Freeman 稱其『陰冷、工業、令人惶恐』並說預示了 industrial。",
+   "listeners": null,
+   "why": "兩段各約 22–24 分鐘的即興（Part One／Part Two），以小提琴、風琴、打擊與鬧鐘、廚房器具為聲源，經回聲、錄音機與濾波器處理，Schnitzler 回憶『大量回授與劈啪聲』；Steven 與 Alan Freeman 形容『滿是電流感、冷酷、工業、噩夢般的不安』；全無拍子與旋律。",
+   "moodGuess": {
+    "x": 3.8,
+    "y": 0.8,
+    "z": -1.1,
+    "why": "長篇回授與劈啪聲的無拍即興，陰冷不安"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/50a76e43-9758-3333-887e-166efdd8466b",
+    "https://coverartarchive.org/release-group/50a76e43-9758-3333-887e-166efdd8466b/front",
+    "https://en.wikipedia.org/wiki/Kluster"
+   ],
+   "mbRgMbid": "50a76e43-9758-3333-887e-166efdd8466b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "MB 標 Live（現場盤）；此盤即 Kluster 的核心錄音，1970 年 Schwann 僅壓 300 張",
+   "queryAlias": "",
+   "uncertain": "依據偏薄：Wikipedia（標註需更多引註）轉引 Freeman《The Crack in the Cosmic Egg》與 Schnitzler 訪談，無當代樂評；MB 最新 RG 收錄含一首 1980 Cluster & Farnbauer 現場的重發版本。藝人 Kluster 與卡池 Cluster 不同，chk 為 0。"
+  },
+  {
+   "artist": "Maryanne Amacher",
+   "album": "Sound Characters (Making the Third Ear)",
+   "year": 1999,
+   "label": "Tzadik",
+   "country": "us",
+   "faction": "noise-origins",
+   "genres": [
+    "experimental",
+    "electronic"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "Amacher 的『第三耳音樂』靠高音量讓耳朵自己發出耳聲發射，Amacher 自述需『相當高而刺激』的音量播放，The Smart Set 形容『令人警覺、侵入頭與身體』。",
+   "listeners": null,
+   "why": "七段共約 66 分鐘（〈Head Rhythm〉〈Tower〉〈Synaptic Island〉〈Chorale 1〉等）的電子聲響，設計成在高音量下讓聽者的耳朵產生自身的聲音（耳聲發射），無拍、無旋律；Amacher 自述需以『相當高而刺激』的音量播放，The Smart Set 稱它『令人警覺』、『侵入你的頭與眼睛』。",
+   "moodGuess": {
+    "x": 3.6,
+    "y": 0.5,
+    "z": -0.9,
+    "why": "高音量電子聲響與頻率的刺激，尖銳而懸浮"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/3a5dda2d-5ea8-38c3-a860-4c7a36a939b5",
+    "https://coverartarchive.org/release-group/3a5dda2d-5ea8-38c3-a860-4c7a36a939b5/front",
+    "https://www.allmusic.com/album/sound-characters-making-the-third-ear-mw0000048571",
+    "https://www.thesmartset.com/?p=1791",
+    "https://en.wikipedia.org/wiki/Maryanne_Amacher"
+   ],
+   "mbRgMbid": "3a5dda2d-5ea8-38c3-a860-4c7a36a939b5",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "依據偏薄：未取得 The Wire／Pitchfork 全文；強度來自音量與設計目的而非噪音密度。chk 對 Maryanne Amacher 回報的 Cher 為子字串誤判（假陽性），卡池實際無 Amacher。"
   }
  ],
  "notes": [
-  "ax8a 起手：Russolo 的 MB 只有 Wergo《Die Kunst der Geräusche》一張 Compilation（EP《Affinado Ripe Hyperknight》為他人作品）。"
+  "ax8a 起手：Russolo 的 MB 只有 Wergo《Die Kunst der Geräusche》一張 Compilation（EP《Affinado Ripe Hyperknight》為他人作品）。",
+  "未提：Arseny Avraamov《Symphony of Sirens》——MB 只有 2018 廣播演出（Broadcast Live／Audio drama），Discogs 無以它為主的專輯 master，查無獨立專輯。",
+  "未提：Gruppo di Improvvisazione Nuova Consonanza《The Feed-Back》(1970 RCA；MB 無此專輯，僅 2018 Demdike Stare 合作 The Feed-Back Loop)——評論描述為 psych／前衛爵士／funk 即興，有拍、聽得下去，不符標準。",
+  "未提：KK Null《Oxygen Flash》(2008 Neurot) 樂評為『刺耳噪音與電子嗶聲交替』，非整張持續高強度。",
+  "池子用盡：Hijokaidan、Incapacitants、Merzbow、Masonna、Pierre Henry、Parmegiani、Lucier、Chopin、Whitehouse、Tony Conrad、Radigue 等噪音史人物卡池已有；Cro-Magnon 已有；Walter Ruttmann 只有 EP；故只交 10 張，未湊滿 12。",
+  "WebSearch 共用 8 次。"
  ]
 }
