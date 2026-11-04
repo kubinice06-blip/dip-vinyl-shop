@@ -1,0 +1,96 @@
+[
+  {
+    "key": "ensemble 13",
+    "name": "Ensemble 13",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          { "f": "Ensemble 13 是德國巴登巴登的當代音樂團體，1973 年由 Manfred Reichert 從巴登室內樂團（Badisches Kammerorchester）的班底組成。", "src": "https://de.wikipedia.org/wiki/Ensemble_13", "src2": "https://db.musicaustria.at/en/node/45776", "from": "new" },
+          { "f": "創辦人 Manfred Reichert（1942 至 2018）生於卡爾斯魯爾，修過音樂、音樂學、法文與哲學；1967 年進西南廣播電台（Südwestfunk）巴登巴登的音樂部當編輯，同時是指揮與戲劇顧問。", "src": "https://zkm.de/en/persons/manfred-reichert", "src2": "https://ka.stadtwiki.net/Manfred_Reichert", "from": "new" },
+          { "f": "卡爾斯魯爾城市維基形容這個團是「由傑出且樂於實驗的樂手組成的鬆散聯合」（einen losen Verbund herausragender und experimentierfreudiger Musiker）。", "src": "https://ka.stadtwiki.net/Manfred_Reichert", "from": "new", "single": true },
+          { "f": "Reichert 1981 年提出「卡爾斯魯爾音樂中心」構想，要給 Ensemble 13 一個排練與演出的固定場地；他 1981 至 2007 年任當地「Wintermusik」與「Musik auf dem 49.」音樂節的藝術總監。", "src": "https://zkm.de/en/persons/manfred-reichert", "from": "new", "single": true }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          { "f": "團的路線是當代音樂：灌錄過 Wolfgang Rihm 的《Kein Firmament》（為 14 位演奏者而寫）、John Cage 的《Thirteen》（13 件樂器），以及 Hans-Joachim Hespos 的作品，交 cpo 與 WERGO 等廠牌發行。", "src": "https://de.wikipedia.org/wiki/Ensemble_13", "from": "new", "single": true },
+          { "f": "1992 年的《Hespos: Works》是 Ensemble 13 與西南廣播電台巴登巴登共同製作、Manfred Reichert 指揮，錄於 1979 年 12 月至 1980 年 2 月；cpo 後來又出了同一組人馬的 Hespos《Seiltanz》。", "src": "https://api.discogs.com/releases/28910536", "from": "bank", "single": true },
+          { "f": "同一張碟的編制隨曲目變動：〈Dschen〉用弦樂與薩克斯風；〈Conga〉加入康加鼓；〈Profile〉是木管五重奏；〈Harry's Musike〉是低音單簧管獨奏；〈Go〉動用雙簧管、英國管、Heckelphone、Sarrusophone 等九位吹奏者與鋼琴。", "src": "https://api.discogs.com/masters/3306643", "from": "bank", "single": true },
+          { "f": "維基形容 Hespos 的音樂即使放在歐洲前衛圈也相當極端、不守成規：擴充演奏法把樂器逼到音色極限，樂譜混用圖形記譜、文字指示與傳統記譜，不少作品含即興。", "src": "https://en.wikipedia.org/wiki/Hans-Joachim_Hespos", "from": "new", "single": true }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          { "f": "1999 年 Ensemble 13 獲美因茲的 Schneider-Schott 音樂獎（Schneider-Schott-Musikpreis）。", "src": "https://de.wikipedia.org/wiki/Ensemble_13", "src2": "https://db.musicaustria.at/en/node/45776", "from": "new" },
+          { "f": "團固定出現在德勒斯登當代音樂節（Dresdner Tage der zeitgenössischen Musik）等當代音樂節；1997 年起以卡爾斯魯爾的 ZKM（藝術與媒體中心）為基地。", "src": "https://de.wikipedia.org/wiki/Ensemble_13", "from": "new", "single": true },
+          { "f": "2007 年 Reichert 離開後，Ensemble 13 隨之解散，前後約三十四年；同年底《Neue Musikzeitung》報導了它在卡爾斯魯爾的最後一輪音樂節節目。", "src": "https://de.wikipedia.org/wiki/Ensemble_13", "src2": "https://db.musicaustria.at/en/node/45776", "from": "new" }
+        ]
+      },
+      "era": {
+        "status": "none",
+        "facts": []
+      }
+    },
+    "milestones": [
+      { "f": "1973 年，Manfred Reichert 在巴登巴登成立 Ensemble 13。", "src": "https://de.wikipedia.org/wiki/Ensemble_13", "src2": "https://db.musicaustria.at/en/node/45776", "from": "new" },
+      { "f": "1999 年獲 Schneider-Schott 音樂獎。", "src": "https://de.wikipedia.org/wiki/Ensemble_13", "src2": "https://db.musicaustria.at/en/node/45776", "from": "new" }
+    ],
+    "conflicts": [],
+    "searches": 7,
+    "failedFetches": [],
+    "status": "full",
+    "pubIssues": [],
+    "notes": "同名檢查：poolAlbums 只有 Hespos: Works，與 Baden-Baden 的 Reichert 團吻合（cpo 999 052-2 的 Discogs 製作記載一致）。Schneider-Schott 音樂獎：de.wikipedia 與 musicaustria 都列在團名下，但卡爾斯魯爾城市維基把同一獎項列在 Reichert 個人名下，受獎主體可能是 Reichert 或團，寫作層寫「Ensemble 13（與其創辦人 Reichert）」或乾脆寫「團獲」都不宜加註個人。同站家族：de.wikipedia 與 musicaustria 看似獨立，但 musicaustria 資料內容與 de.wikipedia 幾乎一致，可能同源，因此標為兩源但「非完全獨立」。zkm.de 與 ka.stadtwiki.net 對 Reichert 生平的措辭幾乎一致，亦「非獨立」。Reichert 個人榮譽（僅 ka.stadtwiki 單源，不進 facts）：Prix Italia 1995、兩度 Deutscher Schallplattenpreis 年度藝術家、Ernst von Siemens 音樂基金會獎助。團的成員名單、首演清單、委託創作清單 de.wikipedia 與 musicaustria 都未列（musicaustria 有空的「Aufträge／Uraufführungen」欄），查不到。Hespos 英文維基未提 Ensemble 13 或 Reichert，兩人關係只能靠 Discogs 的專輯製作記載。Hespos 生卒年：搜尋結果寫 1938 年 3 月 13 日生於埃姆登、2022 年 7 月 18 日卒；事實庫已有 1938／2022，未再補第二源，寫作層若寫須自行取捨。解散年「2007」與「約三十四年」為 1973 到 2007 推算。"
+  },
+  {
+    "key": "bernhard kontarsky",
+    "name": "Bernhard Kontarsky",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          { "f": "Bernhard Kontarsky 1937 年 4 月 26 日生於德國伊澤隆（Iserlohn），是鋼琴二重奏 Aloys 與 Alfons Kontarsky 的弟弟，指揮兼鋼琴家。", "src": "https://en.wikipedia.org/wiki/Bernhard_Kontarsky", "src2": "https://whoswho.de/bio/bernhard-kontarsky.html", "from": "new" },
+          { "f": "他在科隆音樂院（Hochschule für Musik Köln）求學，1964 年起任斯圖加特國家劇院（Staatstheater Stuttgart）的樂長（Kapellmeister）；早期做過排練鋼琴師（Korrepetitor），起點在波昂。", "src": "https://en.wikipedia.org/wiki/Bernhard_Kontarsky", "src2": "https://whoswho.de/bio/bernhard-kontarsky.html", "from": "new" },
+          { "f": "1964 年他 27 歲、還在科隆音樂院念書，就接下 Zimmermann 歌劇《Die Soldaten》科隆首演（1965 年）的排練鋼琴師工作；這部歌劇原本被認為無法演出，他要帶歌手練極端音域的唱段，也要面對首演過程中不少外界阻力。", "src": "http://bernd-alois-zimmermann-gesellschaft.org/pdf/Wuerdigung_Bernhard-Kontarsky.pdf", "src2": "https://en.wikipedia.org/wiki/Bernhard_Kontarsky", "from": "new" },
+          { "f": "1981 年起他任法蘭克福音樂與表演藝術大學的管弦樂指揮教授。", "src": "https://en.wikipedia.org/wiki/Bernhard_Kontarsky", "src2": "https://whoswho.de/bio/bernhard-kontarsky.html", "from": "new" }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          { "f": "Kontarsky 以新音樂專家著稱：他首演過 Mauricio Kagel 的《Die Erschöpfung der Welt》（1980）與 Hans Werner Henze 的《El Rey de Harlem》（1982），也指揮過 Hans Zender 的《Don Quijote de la Mancha》（1993）首演。", "src": "https://en.wikipedia.org/wiki/Bernhard_Kontarsky", "src2": "https://whoswho.de/bio/bernhard-kontarsky.html", "from": "new" },
+          { "f": "Zimmermann 協會的頌詞說，他偏愛 Zimmermann 晚期結構最嚴密、公認最難的作品，除《Die Soldaten》外還有《Dialoge》（給兩架鋼琴與大型管弦樂團）、《Photoptosis》與《Requiem für einen jungen Dichter》，並把這些作品都留下錄音。", "src": "http://bernd-alois-zimmermann-gesellschaft.org/pdf/Wuerdigung_Bernhard-Kontarsky.pdf", "from": "new", "single": true },
+          { "f": "頌詞稱讚他指揮 Zimmermann 時總把這種音樂的修辭與肢體性帶出來，駁斥它只是理性計算的偏見。", "src": "http://bernd-alois-zimmermann-gesellschaft.org/pdf/Wuerdigung_Bernhard-Kontarsky.pdf", "from": "new", "single": true },
+          { "f": "他指揮的《Die Soldaten》新製作先在斯圖加特歌劇院上演，後來移到維也納國家歌劇院（1990）與巴黎巴士底歌劇院（1994 年 4 月，法國首演）。", "src": "http://bernd-alois-zimmermann-gesellschaft.org/pdf/Wuerdigung_Bernhard-Kontarsky.pdf", "src2": "https://en.wikipedia.org/wiki/Bernhard_Kontarsky", "from": "new" }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          { "f": "Bernd-Alois-Zimmermann 協會（BAZG）因他數十年投入 Zimmermann 的音樂，推他為名譽會員，同批獲選的有他的哥哥 Aloys Kontarsky；協會成員頁至今仍把兩人列在名譽會員名單。", "src": "http://bernd-alois-zimmermann-gesellschaft.org/pdf/Wuerdigung_Bernhard-Kontarsky.pdf", "src2": "https://bernd-alois-zimmermann-gesellschaft.org/mitglieder.htm", "from": "new" },
+          { "f": "BAZG 頌詞稱他「被視為新音樂的首要專家之一」（gilt als ein führender Experte für Neue Musik），在歌劇院與音樂會的指揮都獲極高評價；協會認為他的指揮與錄音讓 Zimmermann 的作品得以為後世持續活著。", "src": "http://bernd-alois-zimmermann-gesellschaft.org/pdf/Wuerdigung_Bernhard-Kontarsky.pdf", "from": "new", "single": true },
+          { "f": "英文維基稱他是新音樂領域公認的專家（well regarded as a specialist in new music）；2021 年《Stuttgarter Zeitung》稱他是斯圖加特國家歌劇院的「老資格」（Urgestein），當年回到老東家指揮 Dessau《Die Verurteilung des Lukullus》的新製作。", "src": "https://en.wikipedia.org/wiki/Bernhard_Kontarsky", "src2": "https://www.stuttgarter-zeitung.de/inhalt.bernhard-kontarsky-der-fachmann-fuer-zeitgenoessische-klaenge.f6959234-83b1-4df4-80e4-b86d6321d2bb.html", "from": "new" }
+        ]
+      },
+      "era": {
+        "status": "none",
+        "facts": []
+      }
+    },
+    "milestones": [
+      { "f": "1964 年起任斯圖加特國家劇院樂長，後來首演 Kagel《Die Erschöpfung der Welt》（1980）與 Henze《El Rey de Harlem》（1982）。", "src": "https://en.wikipedia.org/wiki/Bernhard_Kontarsky", "src2": "https://whoswho.de/bio/bernhard-kontarsky.html", "from": "new" },
+      { "f": "獲 Bernd-Alois-Zimmermann 協會推為名譽會員，與哥哥 Aloys 同批。", "src": "http://bernd-alois-zimmermann-gesellschaft.org/pdf/Wuerdigung_Bernhard-Kontarsky.pdf", "src2": "https://bernd-alois-zimmermann-gesellschaft.org/mitglieder.htm", "from": "new" }
+    ],
+    "conflicts": [
+      "《Die Soldaten》斯圖加特新製作年份：英文維基寫 1988、BAZG 頌詞寫 1987，兩源不一致，facts 不帶年份。"
+    ],
+    "searches": 6,
+    "failedFetches": [],
+    "status": "full",
+    "pubIssues": [],
+    "notes": "身分：英文維基條目 warn（未提到卡池專輯），但 BAZG 頌詞明列《Requiem für einen jungen Dichter》為他錄音過的作品，且 Cybele 版本標 Bernhard Kontarsky 指揮 Holland Symfonia，確認為同一人（德國指揮、Zimmermann 專家），無同名混卡。單源未進 facts 的高風險項：(1) 1964 年孟德爾頌室內樂獎（whoswho 單源）；(2)「他的《Die Soldaten》斯圖加特版是首度上 DVD」與「他的《Requiem》是首度以作曲家要求的空間聲響錄音」都只有 BAZG 頌詞（單源，且為「第一」類宣稱），寫作層可寫成「BAZG 頌詞稱⋯」但不宜以事實口吻寫；搜尋摘要另提 International Record Review 稱讚這版 Requiem 的空間複雜度表現，只見摘要未開頁，未收。「英文維基 2 源」的 stuttgarter-zeitung 頁面僅為前言預告，只用於「Urgestein」與 2021 年返團首演。名譽會員的授證日期：搜尋摘要稱 2016 年 9 月 18 日於 Erftstädter Kulturtage／Kulturzeit 頒發，但實際開頁（頌詞 PDF、mitglieder.htm、aktuelles-archiv2016.htm）都沒有寫明授證日期，故 facts 不帶日期。BAZG 與 Wikipedia 稱其為 Zimmermann 協會名譽會員，與其哥哥一起獲選。"
+  }
+]

@@ -63,7 +63,8 @@
      {
       "f": "維基首段稱他被視為紐約極簡主義樂派（New York school of minimalist music）的奠基者之一，與 La Monte Young、Terry Riley、Steve Reich、Philip Glass、Phil Niblock 並列，但他偏好稱自己為極繁主義者。",
       "src": "https://en.wikipedia.org/wiki/Charlemagne_Palestine",
-      "from": "new"
+      "from": "new",
+      "single": true
      },
      {
       "f": "Kunstradio 的人物介紹把他與 Robert Filliou、Philip Glass、Terry Riley、Phill Niblock、Steve Reich 並列為同輩。",
@@ -487,15 +488,9 @@
       "from": "new"
      },
      {
-      "f": "Sunn O))) 的 Stephen O'Malley 稱他們夫妻是「巫師」，能從樂手身上變出「受控爆炸般的火熱聲響」；O'Malley 並在 2011 年兩人主辦的 Spectrum XXI 藝術節演出，2016 年與 Hyperion Ensemble 在柏林 Berghain 同台。",
+      "f": "Sunn O))) 的 Stephen O'Malley 稱 Dumitrescu 與 Avram 夫妻是「巫師」，能從樂手身上變出「受控爆炸般的火熱聲響」；2016 年 2 月 3 日他們與 Hyperion Ensemble 在柏林 Berghain 演出。",
       "src": "https://archive2013-2020.ctm-festival.de/archive/all-artists/f-j/iancu-dumitrescu/",
       "single": true,
-      "from": "new"
-     },
-     {
-      "f": "Ana-Maria Avram 於 2017 年過世，享年 55 歲。",
-      "src": "https://en.wikipedia.org/wiki/Iancu_Dumitrescu",
-      "src2": "https://www.tinymixtapes.com/news/rip-ana-maria-avram-hyper-spectral-composer-and-co-conductor-hyperion-ensemble-iancu-dumitrescu",
       "from": "new"
      }
     ]
@@ -520,5 +515,369 @@
   "pubIssues": [],
   "status": "full",
   "notes": "同名無混卡。O'Malley 的引文與 Spectrum XXI 細節只來自 CTM 頁與搜尋摘要（Spectrum XXI 2011 與 Berghain 2016 日期 CTM 頁只見後者），2011 年那句降級，寫作層只用 Berghain 2016 與『巫師』說法。Avram 逝世年兩源未能核實（TMM 沒開頁），列為不穩，勿用。上線簡介稱 Celibidache 是『學指揮』，與維基一致。"
+ },
+ {
+  "key": "roland kayn",
+  "name": "Roland Kayn",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Roland Kayn 1933 年 9 月 3 日生於德國 Reutlingen，2011 年 1 月 5 日卒於荷蘭 Nieuwe Pekela；1952 至 1955 年在斯圖加特學作曲與管風琴，1956 至 1958 年在柏林師從 Boris Blacher 與 Josef Rufer。",
+      "src": "https://en.wikipedia.org/wiki/Roland_Kayn",
+      "src2": "https://kayn.nl/biography/",
+      "from": "bank"
+     },
+     {
+      "f": "他 1953 年在科隆 WDR 錄音室接觸到電聲合成；1964 年與 Aldo Clementi、Franco Evangelisti 等人共同創立羅馬的即興團體 Gruppo di Improvvisazione Nuova Consonanza，1966 年在團裡彈 Hammond 風琴，同團有 Ennio Morricone。",
+      "src": "https://kayn.nl/biography/",
+      "src2": "https://www.villagevoice.com/?p=563281",
+      "from": "new"
+     },
+     {
+      "f": "他 1970 年起到荷蘭烏特勒支的 Institute of Sonology 工作，與工程師 Jaap Vink 打造合成器、濾波器與磁帶系統，此後長居荷蘭；37 歲那年他已放下傳統記譜，改用電子設備。",
+      "src": "https://kayn.nl/biography/",
+      "src2": "https://www.villagevoice.com/?p=563281",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他所謂的控制論音樂（cybernetic music），是由電子裝置組成的網絡依作曲者的指令訊號自行運轉，主張音樂應該自我調節，連作曲者也無法預知結果，每個聲音的分量相等；他的說法是「音樂就是聲音，聲音自足」。",
+      "src": "https://kayn.nl/biography/",
+      "src2": "https://www.villagevoice.com/?p=563281",
+      "from": "new"
+     },
+     {
+      "f": "他的做法是把訊號送進移頻器、卡式與盤式錄音機和回授迴路，有時即時操作；把單一振盪器的音變成粗糙轟鳴的質地，常要花上數小時繞線與重接。Village Voice 形容成品泛音濃厚、帶著懸置的小故障與凝固的失真。",
+      "src": "https://www.villagevoice.com/?p=563281",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "他認為多數電腦音樂太順從作曲者的意願。",
+      "src": "https://www.villagevoice.com/?p=563281",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "《Simultan》是為一到五個房間設計的控制論電子計畫，約 1972 年完成，1974 年在不來梅美術館首演，由 Radio Bremen 委託；1975 年在波昂以 32 聲道播出。",
+      "src": "https://kayn.nl/biography/",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "樂評人 Massimo Ricci 稱他可能是「當代音樂裡最被不公平忽視的人物」。",
+      "src": "https://kayn.nl/biography/",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "他生前多數作品很晚才公演或播出：1955 年的 Divertimento 1981 年才首演，《Infra》（1978–79）到 1999 年才由荷蘭電台完整播出，《Kristallnacht》（1995）2002 年首演。",
+      "src": "https://kayn.nl/biography/",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "他 1995 年成立 Lydia 與 Roland Kayn 國際檔案館、自設 Reiger-records-reeks 廠牌發行作品，1999 年搬到荷蘭東格羅寧根的農場，在那裡設檔案室、錄音室與演出空間。",
+      "src": "https://kayn.nl/biography/",
+      "src2": "https://en.wikipedia.org/wiki/Roland_Kayn",
+      "from": "new"
+     },
+     {
+      "f": "他過世後，遺產管理方自 2020 年 5 月起每月在 Bandcamp 釋出一份錄音，自 2017 年起的發行由 Jim O'Rourke 修復與母帶處理；O'Rourke 把那批素材形容為「一整個職業生涯的超長總混音」，並說「Kayn 仍然是大師」。",
+      "src": "https://en.wikipedia.org/wiki/Roland_Kayn",
+      "src2": "https://www.villagevoice.com/?p=563281",
+      "from": "new"
+     },
+     {
+      "f": "他 2009 年的 14 小時作品《A Little Electronic Milky Way of Sound》2017 年 10 月由芬蘭廠牌 Frozen Reeds 以 16 張 CD 發行。",
+      "src": "https://en.wikipedia.org/wiki/Roland_Kayn",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "bank",
+    "facts": [
+     {
+      "f": "《Simultan》1977 年由德國 Colosseum 首發，三張 LP 盒裝；米蘭 Die Schachtel 2017–2018 年重發黑膠盒，是其『控制論音樂』系列第一張。",
+      "src": "https://musicbrainz.org/release-group/299dd569-74c8-4ffb-8272-e42e45e8a3af",
+      "src2": "https://dieschachtelrecords.bandcamp.com/album/simultan",
+      "from": "bank"
+     }
+    ]
+   }
+  },
+  "milestones": [],
+  "conflicts": [
+   "逝世地：英文維基寫 Nieuwe Pekela，搜尋摘要有寫 Groningen（Nieuwe Pekela 屬格羅寧根省），採維基。",
+   "上線簡介寫『完成於他旅居荷蘭的時期』：kayn.nl 寫《Simultan》約 1972 年完成，他 1970 年已在荷蘭，不衝突。上線簡介『生前大多不為人知，遺產由 Jim O'Rourke 整理修復』：O'Rourke 自 2017 年修復，遺產管理方是 estate，措辭宜寫成『遺產管理方發行、O'Rourke 修復母帶』。",
+   "事實庫寫『1970 年起任職 Institute of Sonology 直到辭世』：維基只寫 1970 年起在烏特勒支的 Institute of Sonology 工作並住荷蘭至辭世，kayn.nl 沒有說任職到辭世，facts 不寫『直到辭世』。"
+  ],
+  "searches": 3,
+  "failedFetches": 0,
+  "pubIssues": [],
+  "status": "full",
+  "notes": "同名無混卡。Village Voice 文章 URL 為 ?p=563281，為轉載頁，未註明作者；kayn.nl 為遺產／檔案官網，與英文維基部分重疊（非獨立）。Ricci 的評語為單人形容，寫作層可用『樂評人 Massimo Ricci 稱』。搜尋摘要說 Kayn 1968 年離開 Nuova Consonanza，與維基的『1964 年共同創立』不矛盾，但離團年份未收。"
+ },
+ {
+  "key": "françois dufrêne",
+  "name": "François Dufrêne",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "François Dufrêne 1930 年 9 月 21 日生於巴黎，1982 年 12 月 12 日卒於巴黎。",
+      "src": "https://en.wikipedia.org/wiki/Fran%C3%A7ois_Dufrene",
+      "src2": "https://www.wikidata.org/wiki/Q735033",
+      "from": "bank"
+     },
+     {
+      "f": "他 1946 年加入 Isidore Isou 的字母主義（Lettrism），是 Isou 的第二位門徒，僅次於 Gabriel Pomerand；1953 年與字母主義正統決裂，1950 年代再與 Jean-Louis Brau、Gil J. Wolman 發展超字母主義。",
+      "src": "https://brahms.ircam.fr/francois-dufrene",
+      "src2": "https://en.wikipedia.org/wiki/Fran%C3%A7ois_Dufr%C3%AAne",
+      "from": "new"
+     },
+     {
+      "f": "他 1952 年共同創辦雜誌《Soulèvement de la jeunesse》，並在 1960 年參與創立新寫實主義（Nouveau Réalisme）團體。",
+      "src": "https://brahms.ircam.fr/francois-dufrene",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他的 crirythmes（嘶吼節奏）是無樂譜、只為錄音帶存在的人聲即興，拋棄任何論述內容，動用嗓音與身體所有可能的發聲；IRCAM 傳記稱他 1953 年就把錄音機用進詩，早於 Heidsieck、Chopin 與 Gysin，首場 crirythme 朗誦在 1955 年。",
+      "src": "https://brahms.ircam.fr/francois-dufrene",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "他在視覺藝術上以撕海報的拼貼（décollage）聞名，隸屬新寫實主義與 Affichistes（海報撕貼派）。",
+      "src": "https://brahms.ircam.fr/francois-dufrene",
+      "src2": "https://en.wikipedia.org/wiki/Fran%C3%A7ois_Dufr%C3%AAne",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Alain Jouffroy 稱他是「新前衛的 Schwitters」。",
+      "src": "https://brahms.ircam.fr/francois-dufrene",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "維基稱 crirythme 啟發了 Henri Chopin、Bernard Heidsieck 等多代實驗詩人。",
+      "src": "https://en.wikipedia.org/wiki/Fran%C3%A7ois_Dufr%C3%AAne",
+      "single": true,
+      "from": "bank"
+     },
+     {
+      "f": "Henri Chopin 1952 年看了 Isou 的電影後開始錄音，那部片的配樂出自 Dufrêne，用的是沒有字詞的人聲。",
+      "src": "https://pierrejoris.com/blog/henri-chopin-1922-2008/",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "1976 年 Bernard Heidsieck 把他《國際聲音詩全景》十個晚會的第一晚獻給 Dufrêne；1977 年《Cantate des Mots camés》在龐畢度中心演出並發行卡帶；1988 至 1989 年維勒訥夫達斯克現代美術館替他辦回顧展。",
+      "src": "https://brahms.ircam.fr/francois-dufrene",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "bank",
+    "facts": [
+     {
+      "f": "《Cri-Rythmes》2018 年 11 月 9 日由 Recital 廠牌首度做成黑膠，限量 250 張（R54），附 Bernard Heidsieck 1983 年的悼念文字。",
+      "src": "https://recitalprogram.bandcamp.com/album/cri-rythmes",
+      "single": true,
+      "from": "bank"
+     }
+    ]
+   }
+  },
+  "milestones": [],
+  "conflicts": [
+   "crirythme 起始年：IRCAM 寫 1953 年用錄音機、1955 年首場朗誦，搜尋摘要另有來源寫 1953 年創造該形式；facts 只寫 IRCAM 的版本。",
+   "事實庫與上線簡介寫『1946 年約 16 歲加入』：1930 年 9 月生，1946 年為 15 或 16 歲，採『1946 年加入』不寫歲數；上線簡介『十六歲』若要保留僅是約略，建議改成『1946 年』。",
+   "『第一位用錄音機寫詩』只見 IRCAM 單源（家屬網站性質），屬第一類宣稱，寫作層請寫『IRCAM 傳記稱』或不用。"
+  ],
+  "searches": 4,
+  "failedFetches": 1,
+  "pubIssues": [
+   {
+    "album": "Cri-Rythmes",
+    "claim": "十六歲加入字母主義的巴黎人",
+    "problem": "1930 年 9 月 21 日生、1946 年加入，當時 15 或 16 歲，單憑兩源只能確定年份；建議改為『1946 年加入字母主義』",
+    "src": "https://brahms.ircam.fr/francois-dufrene"
+   }
+  ],
+  "status": "full",
+  "notes": "同名無混卡。maurice lemaitre 頁改版中沒內容；Beinecke 的 postwarcultureatbeinecke 頁未開。IRCAM 與維基部分重疊，但 IRCAM 為獨立機構。legacy 的 Jouffroy 一句與 Heidsieck 致敬都來自 IRCAM 單源。"
+ },
+ {
+  "key": "ian pace",
+  "name": "Ian Pace",
+  "slots": {
+   "origin": {
+    "status": "bank",
+    "facts": [
+     {
+      "f": "Ian Pace 1968 年生於英國 Hartlepool，就讀 Chetham's School of Music、牛津 Queen's College 與紐約 Juilliard（Fulbright 獎學金），主要老師是匈牙利鋼琴家 György Sándor；自 1993 年起定居倫敦。",
+      "src": "https://en.wikipedia.org/wiki/Ian_Pace",
+      "src2": "https://sound-scotland.co.uk/profile/ian-pace",
+      "from": "bank"
+     },
+     {
+      "f": "他同時是音樂學者，現任倫敦城市大學音樂、文化與社會教授，專長含 19 世紀演奏實踐、Adorno 與 1945 年後的現代主義。",
+      "src": "https://en.wikipedia.org/wiki/Ian_Pace",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他以演奏與首演當代鋼琴作品見長，作曲家名單含 Richard Barrett、Brian Ferneyhough 與 Michael Finnissy；1996 年他在倫敦用六場音樂會演完 Finnissy 全部鋼琴作品，並說 Finnissy 的音樂在他生命中扮演「顯要角色」二十多年。",
+      "src": "https://en.wikipedia.org/wiki/Ian_Pace",
+      "src2": "https://musicweb-international.com/classrev/2014/Jan14/Finnissy_history_MSV77501.htm",
+      "from": "bank"
+     },
+     {
+      "f": "他是 Arditti Quartet 的常客，也是 Topologies 樂團的藝術總監。",
+      "src": "https://en.wikipedia.org/wiki/Ian_Pace",
+      "single": true,
+      "from": "bank"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "MusicWeb 評《The History of Photography in Sound》時，Mark Sealey 稱 Pace 對 Finnissy「及其世界與語彙理解極深」，難以想像還有更合適的演奏者，並稱這部錄音是重大成就；Dominy Clements 則稱讚他的「超人技巧」，儘管自己不喜歡這音樂。",
+      "src": "https://musicweb-international.com/classrev/2014/Jan14/Finnissy_history_MSV77501.htm",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "這套 5 張 CD、約 5 個半小時、11 首的鋼琴套曲，是 Métier Finnissy 系列第 10 張發行，錄音在 2004 年 6 月到 2006 年 2 月於南安普敦大學 Turner-Sims 音樂廳完成，經費來自英國藝術與人文研究委員會（AHRC）的研究獎助。",
+      "src": "https://musicweb-international.com/classrev/2014/Jan14/Finnissy_history_MSV77501.htm",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "bank",
+    "facts": [
+     {
+      "f": "《Tracts》是 NMC 2001 年 1 月發行的 CD（NMC D066），收 Ferneyhough、Erber、Fox、Dench、Barrett 五位作曲家作品；MusicWeb 的 Peter Grahame Woolf 說那是 Pace 的個人選曲，錄音聲響由 Barrett 在 Tilburg 錄音室打造。",
+      "src": "https://www.musicweb-international.com/classrev/2001/Feb01/tracts.htm",
+      "single": true,
+      "from": "bank"
+     }
+    ]
+   }
+  },
+  "milestones": [],
+  "conflicts": [
+   "搜尋摘要稱 Pace 2001 年首演 Finnissy《The History of Photography in Sound》，維基與 MusicWeb 沒有佐證，不收。",
+   "首演數量：有來源寫 100 首以上獨奏作品首演、也有寫 300 場，不穩，不收。",
+   "上線簡介寫錄音『2004 至 2006 年』與 MusicWeb 一致，無衝突。"
+  ],
+  "searches": 4,
+  "failedFetches": 0,
+  "pubIssues": [],
+  "status": "thin",
+  "notes": "同名無混卡（卡池兩張都是 Ian Pace 鋼琴錄音，無另一位）。legacy 只有 MusicWeb 兩位樂評的具名評語，沒有獎項、後輩點名或榜單，故 thin。sound-scotland 與維基為近似家族，非獨立。Pace 近年另以反對英國音樂教育界性虐待的活動受媒體關注，與音樂無關，不收。"
+ },
+ {
+  "key": "michel chion",
+  "name": "Michel Chion",
+  "slots": {
+   "origin": {
+    "status": "bank",
+    "facts": [
+     {
+      "f": "Michel Chion 1947 年 1 月 16 日生於法國 Creil，先學文學與音樂；1970 年成為 Pierre Schaeffer 在 ORTF 研究處的助理，1971 至 1976 年是 GRM 成員。",
+      "src": "https://en.wikipedia.org/wiki/Michel_Chion",
+      "src2": "https://www.wikidata.org/wiki/Q1147958",
+      "single": true,
+      "from": "bank"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "《Requiem》是 GRM 委託、1972 年 10 月到 1973 年 3 月在 GRM 錄音室製作的具象音樂安魂彌撒，1973 年 3 月 19 日在巴黎 Théâtre Récamier 首演；人聲來自室內合唱團 Le Madrigal de Paris 與一批朗讀者。",
+      "src": "https://www.tape-mag.com/Requiem+Michel_Chion+RELEASES-1-1-20282-8.html",
+      "src2": "https://medias.ircam.fr/en/work/requiem-messe",
+      "from": "bank"
+     },
+     {
+      "f": "他的創作延續 Schaeffer 的具象音樂理論與方法。",
+      "src": "https://en.wikipedia.org/wiki/Michel_Chion",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "《Requiem》1978 年在法國 INA-GRM 出版 LP（AM 689.05，雙折頁封套），同年獲法國唱片學院（Académie du disque français）的 Grand prix du disque。",
+      "src": "https://www.tape-mag.com/Requiem+Michel_Chion+RELEASES-1-1-20282-8.html",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "維基稱他 1990 年的《L'audio-vision》被所有評論者視為探討影像與聲音關係的權威著作；該書把聲音與影像描述為兩種不同語言。",
+      "src": "https://en.wikipedia.org/wiki/Michel_Chion",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [],
+  "conflicts": [
+   "搜尋摘要稱《Requiem》1973 年已在 Ina-GRM 發行，tape-mag 載 1973 為首演、1978 為首發 LP，與上線簡介一致，採 1978。",
+   "tape-mag 記 Grand prix du disque 為 1978 年，上線簡介相同，無衝突。"
+  ],
+  "searches": 4,
+  "failedFetches": 2,
+  "pubIssues": [],
+  "status": "thin",
+  "notes": "同名無混卡（卡池只有《Requiem》）。Grand prix 與 1990 書評皆單源，後者來自維基首段『considered by all critics』（維基泛稱，建議寫成『維基稱』或不用）；Gorbman/Murch 年份只來自維基鏡像摘要與搜尋，facts 此條 Columbia 1994 年份來自搜尋摘要未開頁，建議不用。monoskop 403、akousma 頁內容錯誤未取得。"
  }
 ]
