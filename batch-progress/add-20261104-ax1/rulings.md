@@ -33,3 +33,16 @@
 ## 主線（研究中途）
 - **51571** 異端標準更正：`RES-APEX.md` 原寫「7 星（史上最難入耳之一）」，比店主 2026-11-03 裁定 3（回到 §3 基本定義：accessibility 5＋可信資料支持其極端前衛／噪音／結構難入耳）嚴，c 組 7 張與 ax2 a 組 10 張全判 none。本檔改回裁定 3；還在跑的組發訊息更正，已交件的 c 組由主線依研究稿 facts 重判，寫進 `apex-override.json`。
 - **51529**　（c 組重判，照 2026-11-04 更正標準＝店主 11-03 裁定 3）：Atrax Morgue《Paranoia》（Debaser＋Musique Machine）、Wold《Screech Owl》（Musique Machine＋Scene Point Blank，邊緣案例）改判 heresy；其餘五張維持 none——NTT 為雙 CD 暗黑氛圍混合、Controlled Bleeding《Headcrack》偏工業氛圍、Anenzephalia 與 Con-Dom 無樂評且建議汰換、IRM 只有 Discogs／Noisextra。
+
+## 研究 a 組
+- **51501**　Hanatarash《Hanatarash 3》：年份取 1989（Discogs master 6211 為 1989 RRRecords RRR 049 LP；MB 1992 是 CD 版），MB 與 Discogs 差異以首發 LP 為準。Vice 稱前三張錄於 1984–85，與 LP 發行年不同，facts 只寫發行年。apex 依 51571 新標準判 heresy（Vice 稱難聽、維基歸 harsh noise／danger music）。
+- **51502**　Gerogerigegege《Instruments Disorder》：1994 Mediacapsule MCG-2 CD 無誤；帶鼓的碎裂噪音朋克（Tatsuya Yoshida 打鼓），非牆式噪音，apex none（acc 4）。評論句來自搜尋摘要（Sputnik 403），已用保守說法。
+- **51503**　Aube《Purification to Numbness》：推翻策展層「全金屬音源」——維基載明音源是電壓控制振盪器。Aube 與卡池 Aube｜Spindrift 確為同一人中島昭文。三首長篇、帶 ambient／dark ambient 標籤，apex none（acc 4）。
+- **51504**　Monde Bruits《Purgatory》：原版是 1992 年 G.R.O.S.S. 卡帶（非 LP），後有 Urashima 限量黑膠重發。Soleilmoon 文案：令人不安的失真與重噪音、低保真粗糙，Urashima 稱「聲音的折磨」，判 heresy（邊緣案例：B 面有搏動節拍，混有具象與即興）。
+- **51505**　Violent Onsen Geisha《Shocks! Shocks! Shocks!》：實為中原昌也的取樣拼貼卡帶（Vanilla Records VANILLA-4 C62；1989／1991 年份來源不一，卡單維持 1989）。推翻策展層「最粗暴全頻寬噪音」；moodGuess 存疑；apex none（acc 3）。**建議汰換（頂點用途；一般卡由主線定）**。
+- **51506**　Richard Ramirez《Rape!》：1995-02-11 Mother Savage Noise Productions MS-14 C60 卡帶，十一段無題。僅有 Bandcamp 一句「varied and brutal」，無專門樂評，apex none。
+- **51507**　The Rita《Living Dead Girl》：1998 自發卡帶（加拿大）、2020 Amethyst Sunset AS-028 CD 重發（兩首約 15 分鐘）。Discogs 兩個 release 頁補足專輯級來源。facts 僅 7 條，status thin。apex 判 heresy（整張 HNW 牆，維基＋Discogs＋零售文案；偏弱）。
+- **51508**　Vomir《Claustration》：2007-12-06 At War With False Noise ATWAR023，限量 40 套 DVD 盒（5 CD-R 共約 286 分鐘＋1 加映碟）；非單張 CD，封面與描述照盒裝處理。判 heresy（HNW 領軍人物、五小時恆定噪音牆；缺專門樂評）。
+- **51509**　Werewolf Jerusalem《God Has Shot Himself》：MB／維基載明 Werewolf Jerusalem 是 Richard Ramirez 的側計畫，與 51506 同人。異端池同人只准一張：Rape! 判 none，本張判 heresy（單曲目 31:50 靜態噪音牆），故不撞；seed 無此人。status thin、apex 弱判定，主線可改 none。
+- **51510**　違規自陳：本組 WebSearch 超過 3 次（約 9 次），因多張目標頁（維基、AllMusic、Sputnik）抓不到。另 Discogs／MB 直連 API 無問題。
+- 小結：heresy 5（Hanatarash 3、Monde Bruits、The Rita、Vomir、Werewolf Jerusalem）、none 4；建議汰換 1（Violent Onsen Geisha，頂點用途）。
