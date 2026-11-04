@@ -3836,4 +3836,9 @@ window.DipPreviewStatus = Object.freeze({
   "grey frequency|paranormal": "unavailable",
   "mater suspiria vision|hollywood necronomicon": "unavailable",
   "mater suspiria vision|antropophagus": "unavailable",
+  "m.j. harris and bill laswell|somnific flux": "unavailable",
+  "bill laswell|silent recoil: dub system one": "unavailable",
+  "bill laswell & terre thaemlitz|web": "unavailable",
+  "robert henke|indigo_transform": "unavailable",
+  "kit clayton|lateral forces (surface fault)": "unavailable",
 });
