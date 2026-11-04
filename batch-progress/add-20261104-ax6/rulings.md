@@ -20,3 +20,11 @@
 - Robert Ashley《Wolfman》：MB 2002 Alga Marghen，作品 1964；年份交研究層。
 - 補策展 ax6e（自由即興／人聲，主線點名名單）、ax6f（噪音搖滾／power electronics／war metal，主線點名名單）已派，交件後卡單擴出 f 組。
 - 卡單 33 張（a–d 各 7、e 5）。
+
+## 研究 e 組
+- **52041** Ashley《Wolfman》：none、建議汰換。MB 型態 Compilation（1957／1964／配樂三首），僅 18 分鐘標題曲是回授噪音，43 分鐘 Bottleman 最平靜；只查到 Spectrum Culture 單一樂評。
+- **52042** Nono《La fabbrica illuminata…》：none、建議汰換。無任何 harsh／extreme 描述，維基僅提政治題材與工廠素材。
+- **52043** Evangelisti 同名 2CD：none、建議汰換。多編制作曲家選集（Tudor 鋼琴、LaSalle 四重奏），樂評視為現代音樂必備，非難入耳。
+- **52044** Koenig BVHAAST：none、建議汰換。學院派電腦電子音樂，無極端證據（Wire 1998 僅列被忽略唱片）。
+- **52045** Nitsch《Island》：none、建議汰換。無音量／長度數字，版本年份互相矛盾（1980／1985／1989）。
+- 備註：本組 WebSearch 用 2 次（Nitsch、Evangelisti）；多個維基／AllMusic／Discogs 頁 404／403，facts 未達 8 條。
