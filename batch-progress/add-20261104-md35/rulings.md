@@ -12,3 +12,11 @@
 - **主線汰 6**：能量貼上緣（x 2.6）且出身 techno／grime／d&b 的 Scuba《A Mutual Antipathy》、Vessel《Order of Noise》、Kryptic Minds《Can't Sleep》（同人留《One of Us》）；The Caretaker《A Stairway to the Stars》（舞廳取樣，池中同法《Persistent Repetition of Phrases》z +0.2，色溫回升風險）；Tor Lundvall《Ice》《Empty City》（y 估 1.0 貼門檻，同人四張勻量留《The Mist》《The Shipyard》）。
 - 與 md36b 重疊的 Black Rain《Dark Pool》、Lee Gamble《KOCH》歸 md35（策展先提）；md36 不再收。
 - 交研究層確認：Andy Stott《The Slow Ribbon》（限量卡帶，聲音憑同期推估）、Mater Suspiria Vision 四張（鼓機密度、恐怖驚嚇段）、Water Borders（慢打擊）、Caretaker《Selected Memories》（噪音曲）、Hawthonn 兩張（人聲長音旋律色溫）、Miles（與 Miles Davis 撞名，身分以 MB 為準）。
+
+## 研究 e 組
+- 22561：Mater Suspiria Vision 三張（Paracusia／Hollywood Necronomicon／Antropophagus）身分以 MB RG 為準，年份不推翻；Paracusia 取 2012（Discogs LP 2012-09-17，MB 2013-10-31 是數位日）。
+- 22562：Paracusia 全卡查無樂評，status thin，聲音只有 Discogs 風格標籤＋計畫通則，moodGuess 無法證實；列汰換候選。Antropophagus 評論逐曲確認〈Voices〉有心跳大鼓、〈Die 7 Tore〉有拍擊、〈Sette Porte〉有木質節奏、終曲中段崩成噪音：moodGuess 存疑（有零星鼓點與噪音段），整體仍偏靜。Hollywood Necronomicon 廠方稱 harsh production、Discogs 標 Industrial，x 可能偏高，低頻重量無來源。
+- 22563：Ensemble Economique《Interval Signals》是電台識別曲／短波田野錄音拼貼的連續長曲（廠方 A-Musik、Slug、eclipsed），非 drone 嗡鳴，moodGuess 存疑（y 缺低頻證據）。《Light That Comes》Textura 稱大多避開鼓點但 eclipsed 指有克制 sequencer 脈衝（〈Ksenia〉、終曲），寫作層用「大多不用鼓」。
+- 22564：Dean Hurley Vol. 1 聲音證據只有廠方、曲名與買家留言（無專業樂評），曲名含 Angel Choir／Seven Heaven，色溫未必全冷；Vol. II 廠方稱「ethereal and celestial」，y 與色溫存疑，邊緣候選。兩張皆為音效庫式原創專輯，非原聲帶，Vol. 1 因授權只有數位版。
+- 22565：Tor Lundvall《The Mist》thin：無樂評；維基稱假聲為招牌、2006《Empty City》才首次整張器樂，故本張很可能有人聲歌曲，「無鼓霧墊」預估失準，信心最低，列汰換候選。《The Shipyard》作者與 Dais 自述為器樂、磁帶循環與柔和機械循環，無鼓成立，y 仍貼門檻。
+- 22566：全組 BPM 皆查不到（無鼓／拼貼類多不適用）。未推翻年份、廠牌、盤名。
