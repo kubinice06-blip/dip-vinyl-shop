@@ -1,0 +1,32 @@
+[
+ {
+  "key": "aphex twin|selected ambient works 85-92",
+  "old": "是 以 Aphex Twin 名義",
+  "new": "是以 Aphex Twin 名義",
+  "why": "多餘空格"
+ },
+ {
+  "key": "steve reich|music for 18 musicians",
+  "old": "《Music for 18 Musicians》是 Steve Reich 的作品，K. Robert Schwarz 在《Minimalists》裡稱它也許是 Reich 最偉大的作品。1974 到 1976 年寫成，1976 年在紐約首演，1978 年由 Steve Reich and Musicians 為 ECM 錄音。",
+  "new": "《Music for 18 Musicians》是 Steve Reich 為十八位樂手寫的作品，這張是他自己的樂團 1978 年為 ECM 錄的版本，K. Robert Schwarz 在《Minimalists》裡稱這首曲子也許是 Reich 最偉大的作品。1974 到 1976 年寫成，1976 年在紐約首演。",
+  "why": "審稿第 1 問：第一句只說「是 Reich 的作品」，沒交代這張唱片是什麼（作曲家自己樂團的 ECM 首錄）"
+ },
+ {
+  "key": "buena vista social club|buena vista social club",
+  "old": "《Buena Vista Social Club》是 Guinness 認定最暢銷的世界音樂專輯，1998 年獲葛萊美最佳傳統熱帶拉丁專輯。製作方原本找 Ry Cooder 和馬利樂手合作，簽證沒下來，才改錄古巴 son；1996 年在哈瓦那 EGREM 花六天錄成。",
+  "new": "《Buena Vista Social Club》是一群古巴老樂手 1996 年在哈瓦那錄的專輯，Guinness 認定它是最暢銷的世界音樂專輯，1998 年獲葛萊美最佳傳統熱帶拉丁專輯。製作方原本找 Ry Cooder 和馬利樂手合作，簽證沒下來，才改錄古巴 son，在 EGREM 錄音室花六天錄成。",
+  "why": "審稿第 1 問：第一句只有銷量封號，沒說這是什麼唱片"
+ },
+ {
+  "key": "buena vista social club|buena vista social club",
+  "old": "，在 EGREM 錄音室花六天錄成。曲種有 son cubano、bolero 與 danzón，",
+  "new": "，花六天錄成。曲種有 son cubano、bolero 與 danzón，",
+  "why": "補第一句後超字（298），刪錄音室名"
+ },
+ {
+  "key": "buena vista social club|buena vista social club",
+  "old": "〈Chan Chan〉是四和弦的 son，〈Candela〉有長段即興合奏。",
+  "new": "〈Chan Chan〉是只用四個和弦的 son。",
+  "why": "壓字（287→280 內）"
+ }
+]
