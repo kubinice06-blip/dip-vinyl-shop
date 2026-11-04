@@ -3300,7 +3300,7 @@
    "ratings": {
     "classic": 4,
     "obscurity": 3,
-    "accessibility": 2,
+    "accessibility": 3,
     "listeners": 45273,
     "source": "manual:audit-20261102",
     "checkedAt": "2026-11-03T00:00:00Z",
@@ -3312,9 +3312,15 @@
      "checkedAt": "2026-08-31T00:00:00.000Z",
      "rarity": "uncommon"
     },
-    "note": "全池稽核 audit-20261102（方案 C）：秘魯前龐克傳奇的單曲全集（合輯），場景重要但屬合輯；經典5→4｜L=45273"
+    "note": "全池稽核 audit-20261102（方案 C）：秘魯前龐克傳奇的單曲全集（合輯），場景重要但屬合輯；經典5→4｜L=45273",
+    "previousAccessibility": {
+     "accessibility": 2,
+     "rarity": "rare",
+     "at": "2026-11-04"
+    },
+    "loudFloorNote": "硬蕊度音量下限（2026-11-04 店主定案）：60 年代原始車庫龐克，粗糙失真"
    },
-   "rarity": "rare",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,

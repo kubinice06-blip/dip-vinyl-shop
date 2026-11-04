@@ -181,12 +181,18 @@
    "ratings": {
     "classic": 3,
     "obscurity": 2,
-    "accessibility": 2,
+    "accessibility": 3,
     "listeners": 109945,
     "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "previousAccessibility": {
+     "accessibility": 2,
+     "rarity": "common",
+     "at": "2026-11-04"
+    },
+    "loudFloorNote": "硬蕊度音量下限（2026-11-04 店主定案）：傳統重金屬，失真吉他為主"
    },
-   "rarity": "common",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -247,12 +253,18 @@
    "ratings": {
     "classic": 4,
     "obscurity": 2,
-    "accessibility": 2,
+    "accessibility": 3,
     "listeners": 166584,
     "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "previousAccessibility": {
+     "accessibility": 2,
+     "rarity": "rare",
+     "at": "2026-11-04"
+    },
+    "loudFloorNote": "硬蕊度音量下限（2026-11-04 店主定案）：傳統重金屬，失真吉他為主"
    },
-   "rarity": "rare",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -3061,7 +3073,7 @@
    "ratings": {
     "classic": 3,
     "obscurity": 2,
-    "accessibility": 2,
+    "accessibility": 3,
     "listeners": 58907,
     "source": "manual:rerate-20261102",
     "checkedAt": "2026-11-02T00:00:00Z",
@@ -3073,9 +3085,15 @@
      "checkedAt": "2026-08-31T00:00:00.000Z",
      "rarity": "rare"
     },
-    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：代表作是24 Hour Revenge Therapy；獨立廠但後續廣泛再發，L5.9萬；龐克旋律"
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：代表作是24 Hour Revenge Therapy；獨立廠但後續廣泛再發，L5.9萬；龐克旋律",
+    "previousAccessibility": {
+     "accessibility": 2,
+     "rarity": "common",
+     "at": "2026-11-04"
+    },
+    "loudFloorNote": "硬蕊度音量下限（2026-11-04 店主定案）：失真吉他為主的龐克／早期 emo 龐克"
    },
-   "rarity": "common",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,

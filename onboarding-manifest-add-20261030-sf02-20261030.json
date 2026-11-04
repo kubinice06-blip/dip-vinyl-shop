@@ -1185,7 +1185,7 @@
    "ratings": {
     "classic": 5,
     "obscurity": 2,
-    "accessibility": 2,
+    "accessibility": 3,
     "listeners": 12592,
     "source": "manual:audit-20261102",
     "checkedAt": "2026-11-03T00:00:00Z",
@@ -1198,9 +1198,15 @@
      "checkedAt": "2026-11-01T00:00:00Z",
      "note": "三軸重評（RUBRIC 2026-11-01）：首入 Oricon 前十、日本車庫搖滾里程碑；Columbia 主流；粗糲車庫龐克",
      "rarity": "epic"
-    }
+    },
+    "previousAccessibility": {
+     "accessibility": 2,
+     "rarity": "uncommon",
+     "at": "2026-11-04"
+    },
+    "loudFloorNote": "硬蕊度音量下限（2026-11-04 店主定案）：吵鬧車庫搖滾"
    },
-   "rarity": "uncommon",
+   "rarity": "epic",
    "apexAssessment": {
     "eligible": false,
     "tier": null,

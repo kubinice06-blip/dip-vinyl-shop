@@ -2087,7 +2087,7 @@
    "ratings": {
     "classic": 3,
     "obscurity": 2,
-    "accessibility": 2,
+    "accessibility": 3,
     "listeners": 7005,
     "source": "manual:rerate-20261101",
     "checkedAt": "2026-11-01T00:00:00Z",
@@ -2100,9 +2100,15 @@
      "checkedAt": "2026-10-30T06:32:08Z",
      "note": "機器基線 3/4/3（Last.fm listeners 7005）；主線：德國華麗重金屬，副歌導向，入耳度 4",
      "rarity": "uncommon"
-    }
+    },
+    "previousAccessibility": {
+     "accessibility": 2,
+     "rarity": "common",
+     "at": "2026-11-04"
+    },
+    "loudFloorNote": "硬蕊度音量下限（2026-11-04 店主定案）：失真吉他硬搖滾／金屬"
    },
-   "rarity": "common",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -3228,7 +3234,7 @@
    "ratings": {
     "classic": 4,
     "obscurity": 1,
-    "accessibility": 2,
+    "accessibility": 3,
     "listeners": 955511,
     "source": "manual:rerate-20261101",
     "checkedAt": "2026-11-01T00:00:00Z",
@@ -3241,9 +3247,15 @@
      "checkedAt": "2026-10-30T06:32:08Z",
      "note": "機器基線 3/1/3（Last.fm listeners 955511）；主線：主流另類金屬，入耳度 4",
      "rarity": "uncommon"
-    }
+    },
+    "previousAccessibility": {
+     "accessibility": 2,
+     "rarity": "rare",
+     "at": "2026-11-04"
+    },
+    "loudFloorNote": "硬蕊度音量下限（2026-11-04 店主定案）：另類金屬，重型為主"
    },
-   "rarity": "rare",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -3307,7 +3319,7 @@
    "ratings": {
     "classic": 4,
     "obscurity": 1,
-    "accessibility": 2,
+    "accessibility": 3,
     "listeners": 501226,
     "source": "manual:rerate-20261101",
     "checkedAt": "2026-11-01T00:00:00Z",
@@ -3320,9 +3332,15 @@
      "checkedAt": "2026-10-30T06:32:08Z",
      "note": "機器基線 3/1/3（Last.fm listeners 501226）；主線：主流另類金屬，入耳度 4",
      "rarity": "uncommon"
-    }
+    },
+    "previousAccessibility": {
+     "accessibility": 2,
+     "rarity": "rare",
+     "at": "2026-11-04"
+    },
+    "loudFloorNote": "硬蕊度音量下限（2026-11-04 店主定案）：另類金屬，重型為主"
    },
-   "rarity": "rare",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,

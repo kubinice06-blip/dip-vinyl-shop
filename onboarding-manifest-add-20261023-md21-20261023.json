@@ -1655,7 +1655,7 @@
    "ratings": {
     "classic": 4,
     "obscurity": 2,
-    "accessibility": 2,
+    "accessibility": 3,
     "listeners": 69112,
     "source": "manual:rerate-20261101",
     "checkedAt": "2026-11-01T00:00:00Z",
@@ -1668,9 +1668,15 @@
      "checkedAt": "2026-10-23T09:29:48Z",
      "note": "機器基線 3/3/3（Last.fm listeners 69112）",
      "rarity": "uncommon"
-    }
+    },
+    "previousAccessibility": {
+     "accessibility": 2,
+     "rarity": "rare",
+     "at": "2026-11-04"
+    },
+    "loudFloorNote": "硬蕊度音量下限（2026-11-04 店主定案）：哥德 doom 金屬，緩慢重型"
    },
-   "rarity": "rare",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
