@@ -30,3 +30,15 @@
 - Joe Bonner《Angel Eyes》：AllMusic 3.5 星可能是另一張，不寫。舊稿「五重奏、整張調式爵士」是錯的，照研究稿寫實際編制。
 - Ghostdance、David Lewis：照研究稿的實際風格與編制寫，舊稿的「兩人」「迷幻 folk rock」都是錯的。
 - Bad Cat 等賣家措辭（holy grail、tax scam label）不寫。
+
+## ad-24 個別特注（主線看過研究稿 coverage）
+
+- 本批 reception 普遍 thin：沒有具名樂評的卡，「被認真看待」改寫具體事實（再版、被誰點名、在某類型裡的位置有具名出處才寫、獎項）。廠商與零售文案的評語不寫成評價。
+- 藝人／團體層級的評價與手法（LA Weekly 排名、The Wire 談 Werewolf Jerusalem、Macronympha 金屬廢料互敲、Hanatarash 現場的怪手與動力工具）只能寫成團體的做法或名聲，不寫成本盤內容；Hanatarash 的現場事件不寫成這張錄音的聲音。
+- Russell Haswell：2002 年 Prix Ars Electronica 數位音樂類**榮譽提及**（不是金尼卡）。Musique Machine 的聲音描述是續作的，不用。
+- Vomir：可用 Sound Projector（2008）的評論內容，但不點名。
+- Werewolf Jerusalem：不寫「全程恆定平直」，只寫長篇連續噪音與實際長度。
+- MSBR：年份三說，寫「1990 年代初」；Yoko Ono〈Rising〉混音不寫。Sissy Spacek 年份兩說照研究稿處理並加 yearNote。
+- Henri Chopin：以 Igloo 1983 版為準；兩面曲長未驗證不寫。François Dufrêne：不要和 1975 年 Cramps 的《Crirythmes》混。
+- Lasse Marhaug：Spellemannprisen 只能寫「入圍」，不寫類別與年份以外沒查到的細節。
+- Harry Pussy：婚姻破裂、RAT 踏板、Miami New Times 說法是單一來源或搜尋摘要，婚姻一事除非研究稿有可靠出處否則不寫。
