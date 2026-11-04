@@ -554,3 +554,76 @@
 - bulk put ad-15 37 鍵、ad-16 37 鍵（各 desc2 30＋CJK 卡或原有 desc4 7）；ad-16 親眼見 `Success!`，ad-15 的輸出被 npm 訊息截掉，以回讀確認：`verify-wave-kv 20261104 ad-15 ad-16` 74/74 逐字一致。
 - `front-check`：ad-15 30/30、ad-16 30/30 前台為新稿，CURATED 0。
 - manifest 同步 ad-15 30 處、ad-16 30 處（20 份 onboarding manifest）。
+
+## ad-17（流亡 30 張，s9）
+
+- 派工照 s7 的 `prompt-research-extra-s7.md`／`prompt-writer-extra-s7.md`。研究 3 Sonnet（WebSearch a 17／b 17／c 13 次）、寫作 2 Opus；主線補查 WebSearch 4 次＋Discogs／MusicBrainz API（不耗 WebSearch）。本工作階段 WebSearch 合計約 90 次。
+- **coverage none 與主線補查**：忍冬創、ほうむず、五条坂三張日本自主盤研究層三塊全 none（日文／羅馬字搜尋皆無結果）。主線用 Discogs API 補 credits、Private press 註記、收藏統計與音のメルヘン屋廠牌頁（千駄ヶ谷私家版錄音室、1966 創立），MusicBrainz 補曲長；併回 `research/ad-17-b.json` 標「主線補查」。A Band Called Doris、Treatment、Mach One、Abel Ganz 同樣以 Discogs API 補（Mach One 只壓 1000 張、750 張經 Pinnacle、250 張演出現場賣；Abel Ganz 1985 自主卡帶、主唱 Paul Kelly——推翻研究層「查不到 Paul Kelly」）。
+- **裁定**：
+  - sound none 的不從曲名、封面或風格標籤推音色，只寫編制、分工、主唱輪替、曲長結構；Discogs 風格標籤只准寫成「路數偏某某」的層級。
+  - **Discogs 收藏統計一律寫質性**（「在收藏圈想找的人遠多於手上有的人」），不寫人數與倍數——數字會變，不到當下仍成立。ad-18 同裁定。
+  - 只查過 Discogs／MusicBrainz 單一版本的，寫「沒有再版紀錄」，不寫「之後沒有再版」。
+  - **忍冬創 字數下限放寬**：可證事實只剩私家版、廠牌、收藏統計、曲長，補廠牌頁後 217 字；不湊。
+  - 年份分歧（We Be Echo 1982／83、Allengrass 1972／73、Airbridge 1982／83）寫「1980 年代初」「1970 年代初」；Mach One 主唱 Discogs（Steve Bauer）與維基（Steve Fisher）衝突，不寫名字。
+- **卡池資料疑點（未動 seed，留給店主）**：Kyle Creed《Liberty》原版廠牌 Discogs 記 Mountain（1977），店家頁記 Heritage；簡介寫 Mountain、Heritage 兩度重發（1979、2009）。
+- 研究層推翻舊稿的主要錯誤（新稿未沿用）：Munde「十二首只有四首自作」、Red Allen「四首原創全掛 Neal Allen」、Hash「提琴只在五軌」、Zueff「Break-Fast 系列／1998 年 6 月首發 13 軌合輯」、Ura Ura「Ivory Tower 的下一個編號」（實為 SZY009 早於 SZY011）、Nic Potter 與 John Ellis 合寫、Mach One 的 Orlake 代工。
+- 機器 QA：`qa-batch research ad-17` 1 標記（Zueff 俄文名誤報；4 條 http／未編碼 src 已改完整 https）；`out` 3 標記皆誤報（IBMA 名人堂有主辦者、2024／1990 年代、2022 有研究稿）；fix-spacing 0；字數 217–280。
+
+### 主線審稿（2026-11-04，30 張逐張讀、逐句對研究稿；加問「讀完知不知道它憑什麼是這一級」）
+
+改 12 處（11 張，`review-ad-17.json`）：
+
+- `kyle creed|liberty`：「，常被視為老調音樂樂手該找來聽的唱片。」→「，1979 年與 2009 年由 Heritage Records 兩度重發。」。「常被視為該找來聽」研究稿 facts 無具名出處（寫作層自承來自次級來源）；改寫研究稿已有的重發事實
+- `忍冬創|創ファーストアルバム 春秋坂`：「掛在音のメルヘン屋名下，」→「掛在音のメルヘン屋名下，這是東京千駄ヶ谷一家 1966 年創立、專接私家版委託的錄音室，」。只有 185 字；主線補查 Discogs 廠牌頁（Private-press recording studio in Sendagaya, Tokyo. Founded 1966）補流通脈絡
+- `忍冬創|創ファーストアルバム 春秋坂`：「這張唱片之後沒有再版，」→「這張唱片沒有再版紀錄，」。只查過 Discogs／MusicBrainz 單一版本，不斷言從未再版
+- `ほうむず|朝日に向かって`：「這張唱片之後沒有再版，」→「這張唱片沒有再版紀錄，」。同上
+- `五条坂|季節はめぐって`：「這張唱片之後沒有再版，」→「這張唱片沒有再版紀錄，」。同上
+- `a band called doris|gypsy lady`：「它流通得很少，現在登記擁有的收藏者約 40 人，想要的有 126 人。」→「它流通得很少，在收藏圈想找的人遠多於手上有的人。」。Discogs 收藏人數會變動，不到當下仍成立；改質性寫法（ad-18 同裁定）
+- `treatment|intensive`：「流通量很小，現在登記擁有的收藏者只有 12 人。」→「流通量很小，在收藏圈手上有的人很少。」。同上
+- `web|ivory tower`：「，現在登記想要的收藏者約是擁有者的四倍」→「，在收藏圈想找的人遠多於手上有的人」。同上
+- `okihide|a boy in picca season`：「；現在登記想要這張的收藏者約 345 人，在 Syzygy 同時期的唱片裡是最多人在找的之一」→「，在收藏圈想找的人遠多於手上有的人」。同上；「最多人在找的之一」研究稿只說「想要數偏高」，降級
+- `mind design|view from the edge`：「；現在登記想要的收藏者有 363 人，是擁有者的五倍多」→「，在收藏圈想找的人遠多於手上有的人」。同上
+- `geoff mann|i may sing grace`：「，後來在收藏圈被稱為被忽略的經典」→「（刪）」。出自單一部落格留言，屬沒出處的封號（審稿第 4 問）
+- `taichi|am i`：「，2017 年同廠 Suzukiski 的 EP 被再版並受到好評」→「（刪）」。講的是同廠別人的唱片，和本盤地位無關，屬湊字
+
+其餘 19 張逐張審過，未改字。第五問：30 張前兩句都講出流通狀況（私家版、自主卡帶、小廠 CD、壓量 1000、限歌迷會、只出 CD）與再發現或收藏狀況（Cold Spring、Vinyl-On-Demand、Infinite Fog、Heritage、Spring Fed、Camisole 重發；收藏圈想找的人多）；日本自主盤三張只有流通事實，沒有評價可寫。另核對：Zoviet France「早期錄音中最有力的一張」出自 Trouser Press；Airbridge「2021 年原版仍買不到、早於新前衛浪潮」出自 DPRP 2021；Albert Hash 入 Blue Ridge Music Hall of Fame、Munde 2024 IBMA、Red Allen 2005 IBMA 有研究稿；Zueff「在日本反應不錯」出自俄文維基，照留。
+
+### 上線
+
+- `kv-token-check` 通過；舊值存 `kv-before-ad-17.json`（60 鍵，34 個非 null）。
+- bulk put 34 鍵（desc2 30＋desc4 4），寫前逐鍵比對輸出檔一致；`verify-wave-kv` 回讀與 ad-18 合計 65/65 逐字一致。
+- `front-check ad-17`：30/30 前台為新稿，CURATED 0。
+- manifest 同步 30 處。
+
+## ad-18（流亡 30 張，s9）
+
+- 研究 3 Sonnet（WebSearch a 10／b 17／c 12 次）、寫作 2 Opus。coverage none：Nina-Noho、Strange Garden、Temdendam Suay、Y Cyrff、Soundsmith、Wckr Spgt、Sylvia Tella 的 sound，Armagideon 的 status。裁定同 ad-17：sound none 只寫結構，Armagideon 第一句只講是什麼、不寫壓量或稀有。未另派補查（九張 Transonic／Zero Gravity CD 與英國 dub 小廠盤本來就沒有樂評，Discogs API 研究層已讀）。
+- 主線核對：Trio Rakant 客席（研究稿標「舊簡介說法、未逐軌核對」）用 Discogs API 逐軌核對成立——第 1、10 軌 Masahiko Okura 中音薩克斯風、第 3、8 軌 Jiro Sueoka 吉他 loop、第 10 軌 Ryo Suda 貝斯。
+- 研究層推翻舊稿的主要錯誤（新稿未沿用）：Temple of Bon Matin「2004 年 Spirit Of Orr 重發」（Head Heritage 2006 說無重發）；Johnny Osbourne「King Tubby's 混音」（屬《Never Stop Fighting》；本盤是《Nightfall》的英國 Cha Cha 版，Scientist 混音）；Alpha Stone 的 Enraptured／Earworm 沿革；Alan Licht「署名樂評說偏學院」；Avrocar「2013 年解散」；Dayjah 的 Ashanti 獻詞與 Chief Seattle 引文；Lidj 的 St. Marks Studio；Muriel Winston 的 La Verne Wilson 授權；Rashied Ali 的 Bell Sound 刻紋。
+- 寫作層兩支共用 scratchpad 檔名互蓋（`d1.json`），兩支都說成品不受影響；主線核對 out-1／out-2 的 key 與卡單 1–15／16–30 逐字一致。**下次派工指定各自的 scratchpad 子目錄。**
+- 機器 QA：`qa-batch research ad-18` 1 標記（Decrepit Tapes src 為 http，已改 https）；`out` 3 標記皆誤報（Takemitsu、Coltrane 專名、1970 年代）；fix-spacing 0；字數 247–280。
+
+### 主線審稿（2026-11-04，30 張逐張讀、逐句對研究稿；加問「讀完知不知道它憑什麼是這一級」）
+
+改 11 處（8 張，`review-ad-18.json`；同一張多次改分開記）：
+
+- `nina-noho|ambient classics 1990-1992`：「想找它的人約是持有者的三倍」→「在收藏圈想找的人遠多於手上有的人」。Discogs 收藏統計會變動，倍數不到當下仍成立；改質性寫法（宣稱要精準到當下仍成立）
+- `strange garden|for speaker system`：「想找它的人約是持有者的五倍」→「在收藏圈想找的人遠多於手上有的人」。同上，Discogs 統計倍數改質性寫法
+- `pacific 231|tropical songs gold`：「想找它的人約是持有者的三倍」→「在收藏圈想找的人遠多於手上有的人」。同上，Discogs 統計倍數改質性寫法
+- `electroscope|homemade electroscope`：「沒有再版，至今」→「沒有再版紀錄，至今」。研究稿只說「沒有大廠再版的紀錄可查」，不斷言從未再版
+- `alpha stone|elasticated waveband`：「Bassman 被列為 Spacemen 3 的創團成員之一」→「Bassman 曾是 Spacemen 3 的成員」。「創團成員」只有經銷商文案一個來源，且 Spacemen 3 由 Kember 與 Pierce 創立；降為可證的「曾是成員」
+- `the land of nod|translucent`：「常被拿來和 Neu!」→「被拿來和 Neu!」。維基未指名樂評，研究稿 notes 要求謹慎，不用「常」
+- `johnny osbourne|in nah disco style`：「的版本，曲序與原版不同，在收藏網站上」→「的版本，在收藏網站上」。「曲序與原版不同」研究稿 facts 沒有，刪
+- `dayjah & the disciples|storm clouds`：「，黑膠版在唱片行標價 60 英鎊並已售完。」→「，在英國以黑膠發行。」。唱片行標價是當下快照、不到當下仍成立；售完也是快照，只留英國黑膠發行
+- `nina-noho|ambient classics 1990-1992`：「，並掛共同製作」→「（刪）」。審稿改句後超字（283），壓字
+- `strange garden|for speaker system`：「Zero Gravity 在 2016 年辦二十週年音樂節重新啟動。」→「（刪）」。審稿改句後超字（281）；這句講廠牌、與本盤無關，刪
+- `pacific 231|tropical songs gold`：「，1997 年由東京的 Transonic Records 出 CD」→「，1997 年由 Transonic Records 出 CD」。審稿改句後超字（283），壓字
+
+其餘 20 張逐張審過，未改字。第五問：30 張前兩句都講出流通狀況（小廠 CD、卡帶、限量 500／1000、只有英國原版、只給歌迷會）與值得聽的事實（Julian Cope 收進自選輯、細野晴臣 obi 短評、John Peel session、VP／Pure Pleasure／Nessa 重發、具名星等）；Transonic／Zero Gravity 九張多半只有廠牌與流通事實。另核對：Sylvia Tella《Spell》「賣得最好的 lovers rock 專輯之一」出自 Trojan 簡介；Rashied Ali「Fire Music 範例」出自 Penguin Guide；Roscoe Mitchell「極具對抗性」出自 Clifford Allen（All About Jazz 2008），單一來源用「被視為」；Avrocar 壓 1000 張只有 Penny Black 搜尋摘要，照留（具體、非評價）。
+
+### 上線
+
+- 舊值存 `kv-before-ad-18.json`（60 鍵，31 個非 null）。
+- bulk put 31 鍵（desc2 30＋desc4 1），wrangler 印 `Success!`；`verify-wave-kv` 回讀 65/65（兩批合計）逐字一致。
+- `front-check ad-18`：30/30 前台為新稿，CURATED 0。
+- manifest 同步 30 處。
