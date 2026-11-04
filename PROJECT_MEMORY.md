@@ -1,5 +1,13 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-04｜dip-vinyl-shop｜頂點卡簡介重寫 s6：ad-11、ad-12 上線 60 張（第一批異端）
+
+- **內容**：ad-11（自由爵士、grindcore／技術死金、現代作曲錄音、日本噪音、Metal Machine Music、Trout Mask Replica、Scott Walker 等）、ad-12（AMM、Braxton、Zorn 系、工業／power electronics、具象與電子原音、drone／doom、黑金屬、不失者、零與聲音解放組織等）各 30 張，照 `apex-desc-base.md` 重寫。新增 `prompt-heresy-addendum.md`：研究層每張加「極端的具體證據」「當時反應／後來評價」各 2 條，寫作前兩句寫極端在哪裡與為何被認真看待，出處只放 facts。研究 3 Sonnet×2 批（WebSearch 57 次＋主線 2 次）、寫作 2 Opus×2 批。
+- **主線審稿**：ad-11 改 5 處、ad-12 改 5 處（`review-ad-11/12.json`）：拿掉無所本的「grindcore 奠基之作」、樂評比喻（Ustvolskaya）、與維基相反的「聲音剪貼」說法（Cage／Tudor）、反轉句（Beefheart）、書名與 Metacritic 出處。John Wiese、不失者、零與聲音解放組織研究稿沒有極端證據，只寫可證事實。
+- **上線**：KV ad-11 30 鍵、ad-12 32 鍵（desc2 60＋CJK 卡 desc4 2）；寫前舊值 `kv-before-ad-11/12.json`。回讀 30/30、32/32 逐字一致；`front-check` 前台 30/30、30/30，CURATED 0。manifest 同步 3 處（ad-12）。
+- 主要檔案：`batch-progress/apex-desc-20261104/{PLAN.md,rulings.md,prompt-heresy-addendum.md,review-ad-11.json,review-ad-12.json,handoff-ad-11.json,handoff-ad-12.json,kv-before-ad-11.json,kv-before-ad-12.json}`、`desc-tools/batches/{cards,research,output}/ad-1{1,2}-*`、3 份 onboarding manifest。
+- 驗證：`qa-batch research/out` 標記皆誤報或只在研究稿內；fix-spacing 0；字數 228–280。
+
 ### 2026-11-04｜dip-vinyl-shop｜頂點卡簡介重寫 s5：ad-09、ad-10 上線 60 張（殿堂）
 
 - **內容**：ad-09（世界音樂、美國民謠與早期爵士合輯、原聲帶、台港日華語與日本搖滾）、ad-10（華語搖滾、韓國名盤 6 張、Suicide／Death／Strokes、爵士合輯、原聲帶、salsa、自由爵士、はっぴいえんど、崔健）各 30 張，照 `apex-desc-base.md` 重寫。研究 3 Sonnet×2 批＋ad-09 主線加派 1 支補查 10 張薄塊（WebSearch 合計 65 次）、寫作 2 Opus×2 批；派工時補了「前兩句講夠格理由」「出處不寫進簡介」兩條新規。

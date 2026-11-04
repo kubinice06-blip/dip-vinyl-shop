@@ -409,3 +409,30 @@
 - bulk put 30 鍵（全為 desc2；本批無 desc4、無 CJK 卡），`Success!`；bulk get 回讀 30/30 逐字一致。
 - `front-check ad-11`：30/30 前台為新稿，CURATED 0。
 - manifest：0 處需同步。
+
+## ad-12（異端 30 張，s6）
+
+- 研究 3 Sonnet（WebSearch a 9／b 12／c 14 次）＋主線 2 次（零與聲音解放組織、John Wiese 補查，皆無新可用事實；TMT 頁 500）。s6 研究層合計 57＋主線 2 次。寫作 2 Opus。
+- coverage none：John Wiese sound／extreme、不失者 extreme、零與聲音解放組織 making／sound。三張照「只寫可證事實、無聲音資料就不寫聲音段」寫（256／266／260 字）；John Wiese 前兩句講不出極端在哪裡，研究稿就是沒有，**不硬擠**，留待日後有資料再補。thin：AMM、Painkiller、Torture Garden 地位；Whitehouse、Neubauten 製作；Henry 當代評價（只能用 Béjart 1965／Balanchine 1974 改編撐）；Radigue 聲音（單一來源）；Xenakis、Kontakte 評價；Confield 極端；Ikeda 評語無日期。
+- 研究層推翻舊簡介的主要錯誤（新稿未沿用）：Painkiller「孕婦驗屍照」「海關入境沒收」（實為英國首批貨依猥褻出版物法查扣銷毀）；Whitehouse「Albini 錄混整張」「全由 Sotos 取樣」；TG「Industrial Records 四人創立」；Naked City〈Batman〉是翻奏；《Torture Garden》是合輯（42 首中 9 首來自首張）；Braxton 只寫負評（同年 DownBeat 五星）；Persepolis「波斯建國 2500 週年」（實為 Shiraz 藝術節）、「150 名孩童」；Kontakte 首演月份（6 月 11 日）與「700 頁草稿」；Henry 教堂譯名（Saint-Julien-le-Pauvre）；Radigue「六段對應中陰」；Ikeda「加入 Touch 首張」；Sunn O)))「靈車」；不失者「兩百餘張」（超過 100）與「威尼斯雙年展」（第 70 屆威尼斯國際現代音樂節終身成就金獅獎）；零與聲音解放組織的 NA 03、400 張、51 分鐘十二段、勞工遊行錄音（皆查無）；John Wiese「逾 50 件發行」。
+- 機器 QA：`qa-batch research ad-12` 5 標記（研究稿 src 為 http 非 https 4 張、c 組一個簡體「国」，皆不進簡介）；`out` 1 標記誤報（Sean Booth 專名）；fix-spacing 0；字數 228–279。
+
+### 主線審稿（2026-11-04，30 張逐張讀、逐句對研究稿；加問「讀完知不知道它極端在哪裡」）
+
+改 5 處（`review-ad-12.json`）：
+
+- `einstürzende neubauten|kollaps`：刪「，也收進《1001 Albums You Must Hear Before You Die》」。書名屬出處，不寫進簡介（ad-03 羅大佑同例）
+- `nurse with wound|chance meeting on a dissecting table of a sewing machine and an umbrella`：「後來它常被列入 1970 年代與英國地下音樂的重要唱片」→「後來被視為英國地下音樂的關鍵唱片」。研究稿只有 The Wire 1998 一份榜單，單一來源用「被視為」；「1970 年代」無所本
+- `autechre|confield`：「Metacritic 綜合 82 分」→「樂評綜合評分 82 分」。媒體名屬出處（Madvillainy 先例）
+- `portal|vexovoid`：「Metacritic 綜合 76 分」→「樂評綜合評分 76 分」。同上
+- `零與聲音解放組織|z.s.l.o.`：「《Z.S.L.O.》是零與聲音解放組織的作品。」→「《Z.S.L.O.》是零與聲音解放組織 1994 年的作品。」。第 1 問：補卡單年份
+
+其餘 25 張逐張審過，未改字。極端那一問：27 張前兩句有長度、編制、手法的具體事實（For Alto 72 分 58 秒單支中音薩克斯風、Trilogie 約 2 小時 48 分三首、Persepolis 59 支揚聲器戶外、Earth 2 三首 73 分幾乎無鼓、Torture Garden 42 首 25 分 46 秒等）；John Wiese、不失者、零與聲音解放組織三張研究稿沒有極端證據，前兩句只能講是什麼與歷史位置（零與聲：台灣第一個噪音團體），維持。另核：Braxton「被視為第一張完全由薩克斯風獨奏構成的爵士專輯」研究稿有註明 Hawkins／Rollins／Dolphy 先前只錄零星獨奏；Last Exit「高峰」是 AllMusic 單一來源，用「被視為」；Torture Garden〈Bonehead〉〈Hellraiser〉用於《Funny Games》片頭有據；TG「文明的破壞者」是 1976 年保守黨議員 Nicholas Fairbairn 所說，屬史實；This Heat「常被列為 1980 年代最好的專輯之一」有 Pitchfork 2002／2018 兩份榜（名次不寫）；Whitehouse「最成熟、最多樣」出自 Ars Electronica 評審頁，「被視為」。Nurse with Wound 盤名太長，第一句不重寫盤名（卡面已有），維持。
+
+### 上線
+
+- `kv-token-check` 通過；舊值存 `kv-before-ad-12.json`（60 鍵，30 個非 null）。
+- bulk put 32 鍵（desc2 30＋CJK 卡 desc4 2：不失者、零與聲音解放組織），`Success!`；bulk get 回讀 32/32 逐字一致。
+- `front-check ad-12`：30/30 前台為新稿，CURATED 0。
+- manifest 同步 3 處（c42-japan 1、c51 1、ctw-taiwan-indie 1）。
+- 兩批審稿改動總計：ad-11 5 處、ad-12 5 處。
