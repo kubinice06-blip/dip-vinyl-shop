@@ -1544,21 +1544,24 @@
    "ratings": {
     "classic": 3,
     "obscurity": 5,
-    "accessibility": 4,
+    "accessibility": 5,
     "listeners": 2222,
     "source": "worker /album-rating（obscurity:lastfm）",
     "checkedAt": "2026-11-04T07:29:41Z",
     "note": "機器基線 3/5/3（Last.fm listeners 2222）；主線：硬蕊度取研究層聲音判定 4（機器基線 3 對噪音／極端盤不可信）"
    },
-   "rarity": "epic",
+   "rarity": "legendary",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "evidenceUrls": [],
-    "reason": "已評估：classic 3、obscurity 5、accessibility 4；obscurity=5 但沒有遺珠級證據（listeners 2222），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。研究層頂點判定 none：主線審：有鼓點與黑金屬旋律，研究層原判 accessibility 4，邊緣案例不收異端"
+    "eligible": true,
+    "tier": "heresy",
+    "evidenceUrls": [
+     "https://www.musiquemachine.com/reviews/wold-screech-owl-1121",
+     "https://www.scenepointblank.com/reviews/1239"
+    ],
+    "reason": "2026-11-04 ax7 升格（店主放寬後異端標準：可信來源描述整張持續高強度聽感）；裁定見 batch-progress/add-20261104-ax7/rulings.md 52103／52111／52121–52124。"
    },
    "description": {
-    "text": "內頁註明：在薩斯喀其萬省冷酷地製作。發行它的是加拿大廠牌 Profound Lore Records，時間落在 2007 年 1 月，路數是黑金屬與電子噪音的混血。錄音從 2005 年夏天拖到 2006 年秋天，全盤 13 首。製作泥濘失真，鼓像大槌重擊，人聲扭曲到幾乎認不出來，回授與白噪音蓋在最上層。Fortress Crookedjaw 負責詩、電子裝置與人聲，Obey 掛名「鞭打」，Opex 則是戰鬥弦樂與「死亡行軍」。",
+    "text": "《Screech Owl》把黑金屬和電子噪音混在一起，人聲扭曲到幾乎認不出來，許多曲子被回授與白噪音整片蓋住，被形容為最失真、最腐壞的黑金屬專輯之一。發行後評價兩極，有人稱讚它刺耳的黑噪音，也有人認為它想惡毒卻失敗。Wold 來自加拿大薩斯喀其萬省，這張在 2005 年夏天到 2006 年秋天錄成，2007 年由 Profound Lore Records 發行。底層是泥濘的重擊節奏與大槌式的鼓，〈Nervosa〉是固定的行軍鼓點，上面壓著電子過載與黑金屬吉他，〈Gather Under Her Shadow〉另有陰鬱的鍵盤。",
     "sourceUrls": [
      "https://www.discogs.com/release/949108",
      "https://www.musiquemachine.com/reviews/wold-screech-owl-1121",
@@ -1583,8 +1586,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {

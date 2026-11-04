@@ -443,7 +443,7 @@
    "ratings": {
     "classic": 3,
     "obscurity": 4,
-    "accessibility": 4,
+    "accessibility": 5,
     "listeners": 883,
     "source": "manual:rerate-20261102",
     "checkedAt": "2026-11-02T00:00:00Z",
@@ -458,15 +458,19 @@
      "rarity": "uncommon"
     }
    },
-   "rarity": "uncommon",
+   "rarity": "epic",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "evidenceUrls": [],
-    "reason": "已評估：classic 3、obscurity 4、accessibility 1，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+    "eligible": true,
+    "tier": "heresy",
+    "evidenceUrls": [
+     "https://burningambulance.com/2020/09/01/musica-transonic",
+     "https://www.ravensingstheblues.com/?p=11775",
+     "https://www.headheritage.co.uk/?p=6288"
+    ],
+    "reason": "2026-11-04 ax7 升格（店主放寬後異端標準：可信來源描述整張持續高強度聽感）；裁定見 batch-progress/add-20261104-ax7/rulings.md 52103／52111／52121–52124。"
    },
    "description": {
-    "text": "三個地下迷幻團各出一人，混音推到幾乎爆音。吉他手河端一來自 Acid Mothers Temple，貝斯手南條麻人來自 High Rise，鼓手吉田達也來自 Ruins，三人湊成這支日本器樂團。南條要搖滾又響又髒，讓人用小型家用音響也能立刻感到衝擊。整張因此混得極響，近乎糊成雜訊，底下是車庫式 riff、粗厚的貝斯與調得很高的鼓。1995 年 4 月，P.S.F. Records 以 PSFD-61 發行，十二首約 35 分鐘。",
+    "text": "Musica Transonic 的同名專輯混得過熱，整張近乎溶成一面靜電牆；貝斯手南條麻人說他把混音電平推高，不想失真卻不得不失真。它被視為持續的節奏轟炸與純粹的聲音攻擊，結構與 riff 都不是重點。三人來自日本地下的三個團：吉他手河端一來自 Acid Mothers Temple，南條來自 High Rise，鼓手吉田達也來自 Ruins。1995 年 4 月由 P.S.F. Records 發行，2020 年由 Black Editions 重發。高調的貝斯與鼓從噪音牆裡切出來，全張在噪音爆發與較柔的爵士段落之間換檔。",
     "sourceUrls": [
      "https://www.discogs.com/release/1211254",
      "https://burningambulance.com/2020/09/01/musica-transonic",
@@ -490,8 +494,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
