@@ -794,3 +794,34 @@
 - bulk put 19 鍵（desc2 19；無 CJK 卡、無原有 desc4），wrangler 印 `Success!`；`verify-wave-kv 20261104 ad-23` 19/19 逐字一致。
 - `front-check ad-23`：19/19 前台為新稿，CURATED 0。
 - manifest 同步 19 處（`onboarding-manifest-add-20261104-ax3-20261104.json`）。
+
+### ad-24 研究與寫作
+
+- 研究 3 Sonnet（WebSearch a 11／b 11／c 8 次，起點為 ax1／ax2 上架研究稿）、寫作 2 Opus。本工作階段 WebSearch 合計約 68 次（全在研究層），主線 0 次。
+- coverage：Karkowski reception none（只有 The Wire 追悼文，藝人層級）、Werewolf Jerusalem making none；其餘多為 thin。異端噪音卡多半沒有單張具名樂評，「被認真看待」改用具體事實（Ars Electronica 榮譽提及、Dagsavisen 挪威史上最佳專輯第 19 名、Spellemannprisen 入圍、Pitchfork／Decibel 2014 年度金屬榜第 19／26 名、再版與套裝、類型開創者的具名評價）。
+- **研究層推翻舊稿或 ax2 研究稿的錯誤（新稿未沿用）**：Haswell 不是金尼卡（Ars Electronica 官方檔案為 2002 數位音樂類榮譽提及）；Dodecahedron 的 Angry Metal Guy 評價不是負評（結論「a triumph」）；Teitanblood「最不協和、最具破壞力」評的是前作《Seven Chalices》；Gnaw Their Tongues 的 Mories 是荷蘭人（Quietus 誤作比利時）；Hanatarash「電鑽電鋸般的全頻寬失真」是團體層級、怪手是現場事件；Werewolf Jerusalem「全程恆定平直」無本盤出處；Macronympha「金屬廢料互敲」是團體招牌；Skin Crime「失落環節」是廠商文案；MSBR 的 Yoko Ono〈Rising〉混音只見德文維基，不寫；Dufrêne 本盤不是 1975 Cramps 的《Crirythmes》。
+- **卡池資料疑點（未動 seed）**：MSBR《Structured Suicide》seed 1993（MusicBrainz／Discogs），Tobira 1995、Urashima 約 1994（簡介寫 1990 年代初）；Henri Chopin《Poésie sonore》seed 1972（S Press 卡帶），簡介照 1983 Igloo 黑膠版曲目寫；Sissy Spacek 同名作 seed 2001，Qobuz／YouTube 標 1999（簡介照 2001）。
+- 機器 QA：`qa-batch research ad-24` 通過；`out` 1 標記（Lasse Marhaug「挪威史上最佳專輯榜」：Dagsavisen 2007 年榜，具名榜單照 ad-13 不點名媒體的寫法，判誤報）；fix-spacing 0；字數 249–279。
+
+### 主線審稿 ad-24（2026-11-04，24 張逐張讀、逐句對研究稿；加問「讀完知不知道它憑什麼是這一級」）
+
+改 8 處（7 張，`review-ad-24.json`）：
+
+- `the rita|living dead girl`：「這卷卡帶不掛廠牌，聲音是持續的重失真噪音，從頭到尾沒有起伏。」→「這卷卡帶不掛廠牌，原版在收藏圈想找的人多於手上有的人。」。聲音句出自維基 Harsh noise 的類型描述，不是本卷；改寫研究稿 after 條（Discogs 想要多於持有，質性），與不掛廠牌、2020 限量 298 張重發同卡佐證
+- `vomir|claustration`：「這套作品被視為有其價值，而它堅決拒絕任何動態或變化；」→「他的作品被視為有其價值，也被認為堅決拒絕任何動態或變化；」。Sound Projector（Ed Pinsent 2008）評的是 Vomir 整體，改成藝人層級
+- `atrax morgue|paranoia`：「被視為殘暴到很難重聽，卻把概念表達得可信。」→「被認為殘暴到很難重聽。」。「……卻……」反轉句；同一評者（Debaser）也說音樂上價值為零
+- `harry pussy|ride a dove`：「當時有小眾刊物嫌它自溺，後來則被視為令人困惑卻嚴重被低估。」→「發行當時被部分 fanzine 嫌自溺，後來被視為嚴重被低估。」。去反轉語氣；出自 Kilowatt Hours 回顧與 Tiny Mix Tapes
+- `borbetomagus|barbed wire maggots`：「先驅，影響了日本噪音圈，這張」→「先驅，這張」。影響宣稱的證據只有 P.S.F. 重發與同台，不足
+- `henri chopin|poésie sonore`：「20 世紀後半法國前衛的關鍵人物」→「1950、60 年代法國前衛的關鍵人物」。AllMusic 傳記（Rolf Semprebon）原意
+- `henri chopin|poésie sonore`：「獻給同年過世的 François Dufrêne」→「獻給 1982 年過世的 François Dufrêne」。指代不清；研究稿 making
+- `pyrrhon|the mother of virtues`：「2014 年由 Relapse 發行後評價普遍不低。」→「2014 年由 Relapse 發行。」。含糊、無具體內容
+
+研究稿同步：改動都是刪句、改藝人層級或照研究稿原意收窄，未動事實，研究稿不必改。其餘 17 張逐張審過，未改字。第五問：24 張前兩句都講出極端的具體事實（一首 31 分 50 秒不分段、5 張 CD-R 合計約 286 分鐘限量 40 套、78 軌合計約 22 分鐘、兩面各一首約 15／22／23 分鐘、整碟兩首各 25 分半、七首 68 分 33 秒、12 首 82 分、無詞無樂器只有嘶吼喘息、盤面註明最大音量）＋被認真看待的事實（Ars Electronica 榮譽提及、Dagsavisen 第 19 名、Spellemannprisen 入圍、Pitchfork／Decibel 年度金屬榜、harsh noise wall 開創者／領軍者、Xenakis 門生、啟發 Chopin 到 Jaap Blonk、Hospital 20CD 套裝、Urashima 再版）。另核對：Karkowski「現代作曲與地下噪音之間最重要的人物之一」出自 The Wire（Richard Whitelaw 追悼文）；The Body「2010 年最具冒險精神的極端金屬專輯之一」出自 Ink 19；Dodecahedron「對黑金屬最極端的詮釋之一」出自 Angry Metal Guy；MoRT「推到近乎認不出來的扭曲極端」出自 Metal Crypt；Gnaw Their Tongues「一致地令人不適」出自 Quietus（Noel Gardner）；Abruptum「原創之作」出自 Debaser；Macronympha「美國代表性噪音專輯之一」出自 Noisextra。都是單一來源，寫「被視為」、不用「常」。
+
+### ad-24 上線
+
+- `kv-token-check` 通過；舊值存 `kv-before-ad-24.json`（48 鍵，24 個非 null）。
+- bulk put 24 鍵（desc2 24；無 CJK 卡、無原有 desc4），wrangler 印 `Success!`；`verify-wave-kv 20261104 ad-23 ad-24` 43/43 逐字一致。
+- `front-check ad-24`：24/24 前台為新稿，CURATED 0。
+- manifest 同步：根目錄 `onboarding-manifest-add-20261104-ax1/ax2-20261104.json` 13＋11 處；批次目錄 `batch-progress/add-20261104-ax1/ax2/onboarding-manifest.json` 13＋11 處、`desc-override.json` 2＋2 處（ad.mjs 只掃根目錄，批次目錄這兩份由主線另行同步）。
+- 另：s11 提到的 repo 根目錄 `x.json`，本工作階段的 checkout、`origin/main` 與全部歷史都沒有這個檔，無需處理。
