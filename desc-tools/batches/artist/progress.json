@@ -2,7 +2,7 @@
  "v": 1,
  "per": 40,
  "roster": "roster-20260929.json",
- "updatedAt": "2026-11-04T07:04:56.857Z",
+ "updatedAt": "2026-11-04T07:14:20.992Z",
  "batches": [
   {
    "batch": "ar-a-001",
@@ -12113,8 +12113,14 @@
     "richard maxfield",
     "ralph lundsten"
    ],
-   "state": "cut",
-   "note": "新頂點盤線（流亡）add-20261104-ax4 上架卡缺介紹的藝人（ALBUM_ONBOARDING §11；18 位；名冊 batch-progress/artist-intro/roster-ax4.json）"
+   "state": "published",
+   "note": "新頂點盤線（流亡）add-20261104-ax4 上架卡缺介紹的藝人（ALBUM_ONBOARDING §11；18 位；名冊 batch-progress/artist-intro/roster-ax4.json）",
+   "skipped": [
+    "blackbuster",
+    "fanny's group",
+    "cool knights"
+   ],
+   "reviewFixes": 8
   },
   {
    "batch": "ar-d-263",

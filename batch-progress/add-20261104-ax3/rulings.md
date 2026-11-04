@@ -62,3 +62,10 @@
 - **51754** 「日」後一字：只有 Circulation「日星」（1969 年 7 月 8 日星期二）；其餘 17 張只寫到月或年（Anderson 生日改只寫 1947 年，Smack 寫「7 月下旬到 8 月初」）。主線 51775 照辦：Smack 壓量寫「極少量」不寫數字；Princess Flower 以 1968 六首原版為準；Dormouse 寫加拿大、年份只寫標籤 1968 年 6 月版權（51706）；Probe 發行年寫 1971；Gnys／Inner Dialogue 為一般卡照寫。媒體名、資料庫名、樂評與唱片行文案出處一律未進 note（Smack 的 fuzz 描述、Probe 的 wah-wah／phaser 只寫聲音本身）。Free Enterprize hook 原寫「1979 年夏天」被 qa 判「年份?」，改用曲名〈Summer Of 79〉。
 - **51755** 自查：hook×hook 中文 4-gram（含 c 組）0；hook 對他張 note 原有「荷蘭小廠」（Vlasman hook×Fairy Tale note）已改 Fairy Tale note 消除；hook 前四字與 add-202610／11 已出 hook 比對，Turner「〈The」、Gnys「1969」、Anderson「後來的」三處撞舊批已改寫，a／b 現 0（c 組 Heaven & Earth「芝加哥」、Odean Pope「Colt」、Mtume「布魯克林」撞舊批，留給主線／c 組）。`qa-batch hooks` 全部通過 ✓；`chk-hook-crossgroup` 全部通過 ✓（只報不擋：Ton Vlasman「沒有鼓組」屬編制內容）。
 - 51777 主線改 c 組 3 句 hook 開頭（前四字撞舊批）：Heaven & Earth、Odean Pope、Mtume 改語序，事實不變。
+
+## 寫作層（writer-1）（51761–51765）
+- **51761** 交件 `desc-tools/batches/output/add-20261104-ax3-out-1.json` 13 張（thin 12：128–180；full 1：Dormouse 240）。逐張：Sly Boots 180、Turner 175、Free Enterprize 128、David Lewis 157、Ghostdance 165、Drnwyn 180、McAllen 169、Dormouse 240、Gnys 141、Rin Eric 165、Circulation 147、Fairy Tale 177、Ton Vlasman 156。初稿超標 2 張（Sly Boots 186、Drnwyn 182），整格縮寫回區間。`qa-batch out` 只報「13 vs 26」（等 out-2）；`qa-check-research` 標記 0；`fix-spacing` 0；「據」「也就是」「這張專輯」grep 0。
+- **51762** 第二句全照 note／51753 指派領句。David Lewis 第二句以「David Earl Lewis 是美國歌手，主唱兼打鼓」領句，隨即具名 hook 的「班底」＝Mike Cochrane；Ghostdance「只有兩名成員的 Ghostdance」後具名兩人；Circulation 在第二句具名團名；Dormouse「藝名背後是 Cris Cuddy」。日期只有 Circulation 一處「日星」、Dormouse 只到「年 6 月」。
+- **51763** 否定句轉正面：Ton Vlasman note「沒有鼓組」寫成「打擊只交給手鼓」；Free Enterprize「無廠牌」寫成「兩人在美國私壓發行」。媒體名、資料庫名、榜單皆未進正文。
+- **51764** Dormouse 壓量：note 原寫「據稱約壓 500 張」，正文不用轉述詞，直述「約壓 500 張」（單一來源；主線審稿若嫌不穩可整格捨去，捨後仍 ≥180）。
+- **51765** 自掃 han() 4-gram（本檔 13 張＋writer-2 hook）：3 張以上只剩「主奏吉他」（樂器名）；拆掉 2 張殘片「十二首歌」「自行發行」「與合成器」「奏吉他與」「小廠發行」「迷幻搖滾」「他彈吉他」「民謠搖滾」「迷幻民謠」（Turner 改 folk rock、Sly Boots 改「帶 acid rock 色彩的民謠搖滾」；Rin Eric 的「迷幻民謠」為 note 指派領句保留）。現況 2 張以上只剩「主奏吉他」×3；out-2 交件後請主線跨檔合掃一次。
