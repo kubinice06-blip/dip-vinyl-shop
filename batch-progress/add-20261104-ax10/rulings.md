@@ -87,3 +87,4 @@
 
 ## 主線（補策展 ax10c 交件後）
 - **52476** 補策展交 7（全 Album、MB 7、pearl 0）。汰 The Faith / Void split：Faith 面是結構清楚的 hardcore，只有 Void 面混亂——split 卡掛兩團名，等於「只有局部激烈」。其餘 6 張交研究 e 組：Insect Warfare《World Extermination》、Agoraphobic Nosebleed《Altered States of America》（ax6 曾因具名評語是別張汰，這次策展找到針對本張的 Exclaim!）、D.R.I.《Dirty Rotten LP》、Cryptic Slaughter《Convicted》、Nails《Unsilent Death》、Disorder《Under the Scalpel Blade》（CAA 無圖，封面走 Discogs release 1227189）。研究層特別注意「一般碾核不收」：Insect Warfare、Nails 是 grindcore／metallic hardcore，若描述只是一般 grind 的快、或有 breakdown／sludge 慢段，判 none。
+- **52477** 藝人介紹 ar-d-273 上線 6 位（Siege、Crossed Out、Charles Bronson、Dropdead、Despise You、Extreme Noise Terror；skipped 0）。補洞 1 支、寫作 1 支（6 位只切出一組）。主線逐位審，改 2 處（Crossed Out「據說」→「原版唱片行情很高」；ENT 刪單源「前後共四次」）。qa-artist 0 處。pubIssues 1：Crossed Out 7 吋年份 1991／1992（維基發行列表）——卡用 MB 1991，簡介寫「1991 年秋」與維基內文一致，不改。

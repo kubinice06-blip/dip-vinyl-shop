@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1058 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1059 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -1062,3 +1062,4 @@
 | ar-d-262 | Zbigniew Karkowski | Consciously Unconscious Unconsciously Conscious | 跟 Xenakis 學過作曲的波蘭人 | 維基只寫他參加過 Xenakis、Messiaen、Boulez、Aperghis 等人的夏季作曲大師班，並非長期師承；建議改成「上過 Xenakis 的大師班」。1995 年移居東京一句本層未能查證 | https://en.wikipedia.org/wiki/Zbigniew_Karkowski |
 | ar-d-262 | Martine Viard | Aperghis: Récitations | 寫於 1977 至 1978 年 | IRCAM 與 BnF 標 1978，只有巴黎愛樂的節目單寫 1977；建議改成「1978 年的作品」，或保留區間時註明 | https://ressources.ircam.fr/work/recitations |
 | ar-d-262 | Martine Viard | Aperghis: Récitations | 聽眾彷彿聽到伴奏，其實是她在彈手指 | 本層找不到此軼事的來源，IRCAM、BnF、Artcena 皆未提；建議確認出處，否則刪除 | https://ressources.ircam.fr/work/recitations |
+| ar-d-273 | Crossed Out | Crossed Out | 1991 年秋天由 Chris Dodge 的 Slap-A-Ham 發行，壓 1000 張 | 維基 Crossed Out 條發行列表寫 7 吋為 1992 年，與 MB／內文的 1991 年不一致，年份待店主核實或改寫成不帶年份 | https://en.wikipedia.org/wiki/Crossed_Out |
