@@ -4,6 +4,7 @@
 
 - **第 0 步**：seed 頂點卡 677 張（排除《台客的復仇》）用 KV bulk get 讀現行簡介 → 4 支 Sonnet 檢查 → 主線抽查全部 keep＋6 張 rewrite，改判 2 張。結果 **keep 3、rewrite 674**（殿堂 300／異端 85／流亡 289），切 **23 批**（ad-01～23，殿堂→異端→流亡，同藝人不拆）。明細 `batch-progress/apex-desc-20261104/{worklist,triage,batches}.json`，分批表在 PLAN.md。
 - **ad-01、ad-02（殿堂各 30）上線**：研究 3 Sonnet／寫作 2 Opus／機器 QA／主線逐張審稿（ad-01 改 10 處、ad-02 改 14 處，見 rulings.md）。KV desc2 30＋31 鍵（大滝詠一加寫 desc4），寫前舊值存 `kv-before-ad-0X.json`，回讀 61/61 逐字一致；`/album-desc` 逐張比對前台 59/60。manifest 0 處需同步（都是早期卡）。研究層 WebSearch 合計 26 次。
+- **出處改寫**：收工 merge main 時看到店主同日新規「介紹裡不用寫出處」，60 張第一版寫了大量「Pitchfork 排…」「AllMusic 稱…」→ 2 支 Opus 只改出處句（改成「常被列為／被視為」，獎項與官方排行照留）、主線複審 6 處，重寫 KV 61 鍵。舊稿備份 `output/ad-0X-out-N.v1.json`。
 - **待店主**：(1) worker 對非 CJK 卡**先讀 CURATED_DESCS 再讀 desc2**，《Kind of Blue》新稿已寫 desc2 但前台仍是 CURATED，要在 worker 拿掉該筆並部署（《The Dark Side of the Moon》後續批同樣情況）；(2) seed《A Charlie Brown Christmas》年份欄 1978，原發行 1965（未動）。
 - **工具**：`batch-progress/apex-desc-20261104/tools/`（build-worklist、check-curated、ad.mjs、apply-review、front-check）；`desc-tools/qa-batch.mjs` factBlob 接受 facts 的 `text` 欄。
 - **驗證**：`kv-token-check` 通過；`qa-batch research|out ad-01|ad-02` 只剩具名出處誤報；`verify-wave-kv` 30/30、31/31。
