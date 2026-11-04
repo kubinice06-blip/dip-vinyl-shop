@@ -29,3 +29,14 @@
 - 52125 none 20 照判：山下洋輔トリオ五張（《Clay》最接近，但只有廠牌文案，又稱鼓「留白」）、High Rise 三張（《High Rise II》證據最好但是 riff 搖滾；Psychedelic Speed Freaks 查無可信聽感描述）、光束夜兩張（只有零售文案）、Corrupted（第二片 73 分鐘是鋼琴合成器氛圍）、高木元輝、富樫雅彦（查無聲音描述）、灰野與 Rallizes 與高柳組的讓位張。
 - 52126 研究層推翻舊簡介（未升格的不改稿，記錄備查）：光束夜《1st》年份維基與零售皆 1991（seed 1990）；Corrupted 第一片只有一首〈Sangre/Humanos〉49:56；High Rise II 維基列八軌；Mosura Freight! 舊簡介的簧管、Jazz Street 52、300 張皆未查證。
 - 52127 **升格合計 8 張**：Dilloway、Wold、Impetuous Ritual（沿用研究稿）＋Niblock《Touch Food》＋'77 Live、Eternity Set Aflame、April Is the Cruellest Month、Musica Transonic。異端 140 → 148。命中 8／約 70 張受檢卡。不另開第二輪：卡池裡自由爵士／即興／噪音的一般卡已掃完（acc≥4、子曲風 free／improv／noise／PE／no-wave／black 共 520 張），剩下的是結構清楚的前衛、spiritual、碾核、或只有 Discogs 標籤沒有聽感描述的卡帶；放寬的是「結論」不是「來源」，不為湊數降低來源門檻。缺口留給 ax8 新上架。
+
+## 寫作（52131）
+- 52131 寫作 1 支 Opus，8 張，`desc-tools/batches/output/ax7u-out-1.json`，初稿字數 263–279。
+
+## 主線審稿：ax7u 升格 8 張（2026-11-04，cloud-main）
+逐張逐句對回研究稿（`research/ax7u-r1.json`、`ax7u-r2.json`、`ax7u-prev.json`）。改 3 處：
+- Musica Transonic：「整張近乎溶成一面靜電牆，回授氾濫，電平全在紅區；」→「整張近乎溶成一面靜電牆；」。依據：「回授氾濫、都在紅區」出自 Head Heritage 一篇 Mainliner 專輯的讀者評論，講的是三人合作脈絡，不是針對本張；本張的電平說法改由南條自述那句承擔。
+- Les Rallizes Dénudés《'77 Live》：刪「水谷的吉他接 fuzz、Big Muff、wah-wah 與 tape echo」。依據：英文維基原文是「據傳」8–10 顆效果器，傳聞不寫成事實。
+- Wold《Screech Owl》：「被視為最失真、最腐壞的黑金屬專輯之一」→「被形容為…」。依據：出自 Musique Machine 單一評者「自己聽過最失真的之一」，不是普遍公論。
+- 其餘逐句核過：Dilloway 67 分鐘、8 軌卡式帶迴圈、約三年、Hanson、RA「近年最成功的噪音專輯之一」、KFJC 列的素材；Impetuous Ritual 澳洲、第二張、Profound Lore 2014、與 Portal 共有兩名成員、少了 Portal 的戲劇表演（Horn of Woe）、〈Metastasis〉鐘聲、〈Blight〉吟誦；Niblock 雙 CD、CD2〈Pan Fried 70〉70 分鐘、liner notes 的音量指示、The Wire 年度、CCMIX 駐村、單音疊錄法；'77 Live 1977 年 3 月立川、1991 年 CD、水谷限制正式發行、英文維基「最受推崇」與 noise rock 預示；灰野三軌約 18／12／39 分鐘、1995／1996 兩說照寫、Forced Exposure；高柳四人編制、1975 年東京、團規、ESP-Disk 倒閉擱置、1991 年 CD、Jazz Journal 的搖滾刮擦回授技法；Musica Transonic 編制、P.S.F. 1995 年 4 月、Black Editions 2020。
+- fix-spacing 0；簡體掃描 0；字數 227–279。

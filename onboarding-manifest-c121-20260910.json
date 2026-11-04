@@ -280,13 +280,18 @@
    },
    "rarity": "legendary",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "heresy",
+    "evidenceUrls": [
+     "https://freejazzblog.org/2019/09/masayuki-takayanagi-new-direction-unit.html?m=1",
+     "https://daily.bandcamp.com/2019/06/11/masayuki-takayanagi-new-direction-unit-april-is-the-cruellest-month-review/",
+     "https://thequietus.com/?p=26576",
+     "https://jazzjournal.co.uk/2019/08/29/masayuki-takayanagi-new-direction-unit-april-is-the-cruellest-month/"
+    ],
+    "reason": "2026-11-04 ax7 升格（店主放寬後異端標準：可信來源描述整張持續高強度聽感）；裁定見 batch-progress/add-20261104-ax7/rulings.md 52103／52111／52121–52124。"
    },
    "description": {
-    "text": "首版四首裡，第四首是第一首的另一次演奏。〈We Have Existed〉10:29 開場，末軌是同題的另一個 take 10:10，中間夾著〈What Have We Given?〉6:50 與長達 19:46 的〈My Friend, Blood Shaking My Heart〉。2019 年 Blank Forms Editions 的黑膠與數位版把末尾那一軌拿掉，只留前三首，能聽到的也是這個三軌版本。",
+    "text": "《April Is the Cruellest Month》是高柳昌行的四人編制 1975 年在東京的錄音，團規是「隨時 forte、不跟隨他人演奏、不重複樂句」，約 20 分鐘的終曲〈My Friend, Blood Shaking My Heart〉從頭到尾是不間斷的集體猛攻。它被視為至今仍兇猛前衛的錄音。原訂由 ESP-Disk 發行，因廠牌倒閉擱置到 1991 年才在日本出 CD。高柳用搖滾的刮擦與回授技法，替管樂、貝斯與打擊的原聲編制加上刺耳的失真；回授一波波湧起，鼓點碎跳，低音單簧管與金屬打擊始終維持高密度。",
     "sourceUrls": [
      "https://musicbrainz.org/ws/2/release-group/ef3f2c0a-3ed3-42c0-a148-eacab86ab189?fmt=json&inc=artist-credits+releases",
      "https://musicbrainz.org/ws/2/release?release-group=ef3f2c0a-3ed3-42c0-a148-eacab86ab189&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
@@ -309,8 +314,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -2028,7 +2033,7 @@
    "ratings": {
     "classic": 3,
     "obscurity": 5,
-    "accessibility": 4,
+    "accessibility": 5,
     "listeners": 141,
     "source": "manual:audit-20261102",
     "checkedAt": "2026-11-03T00:00:00Z",
@@ -2043,15 +2048,19 @@
     },
     "note": "全池稽核 audit-20261102（方案 C）：Forced Exposure 三段長篇獨奏，證據只到藝人層。141 無串流→5｜L=141"
    },
-   "rarity": "epic",
+   "rarity": "legendary",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：accessibility=5（heresy 最低門檻），但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "heresy",
+    "evidenceUrls": [
+     "https://arcanecandy.com/?p=141",
+     "https://lifeferocity.blogspot.com/2009/09/keiji-haino-book-of-eternity-set-aflame.html",
+     "https://www.artforum.com/columns/keiji-haino-202085/"
+    ],
+    "reason": "2026-11-04 ax7 升格（店主放寬後異端標準：可信來源描述整張持續高強度聽感）；裁定見 batch-progress/add-20261104-ax7/rulings.md 52103／52111／52121–52124。"
    },
    "description": {
-    "text": "三軌共用同一個標題、用羅馬數字編號，第三軌 39:32 比前兩軌加起來還長。〈Eternity Set Aflame I〉18:41、II 12:01、III 39:32，末軌一軌就佔掉全張 70:14 的一半以上，而夾在中間的第二軌反倒是三軌裡最短的。盤名本身還帶著一對半形雙引號，那是標題字串的一部分。這張 CD 出在 1996 年的美國 Forced Exposure，廠牌所在地登錄的是 Malden。",
+    "text": "《The Book of \"Eternity Set Aflame\"》是灰野敬二約 70 分鐘的三軌錄音，各軌約 18、12、39 分鐘：第一軌是踏板與放大器全面過載的電吉他獨奏，第三軌的重型即興逐漸聚成極度稠密的電暴。灰野以激烈宣洩的聲音探索著稱，這張被形容為密度極高、經電子處理的吉他演奏。錄音年份有 1995 年一說，發行一般記為 1996 年，由美國的 Forced Exposure 發行。第一軌的高音弦鳴壓在不尋常的回授上，結尾是一串刺耳的鋁片刮擦聲；中間一軌轉成陰鬱的電子音層，不以吉他為主；第三軌堆成連綿的吉他撕扯，最後退回安靜的放大器嗡聲。",
     "sourceUrls": [
      "https://musicbrainz.org/ws/2/release-group/86b1999e-a1c5-41c1-8d9a-f06b7175a698?fmt=json&inc=artist-credits+releases",
      "https://musicbrainz.org/ws/2/release?release-group=86b1999e-a1c5-41c1-8d9a-f06b7175a698&fmt=json&inc=media+labels+recordings&limit=100",
@@ -2069,8 +2078,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
