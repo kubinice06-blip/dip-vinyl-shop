@@ -1,5 +1,15 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-04｜dip-vinyl-shop｜apex-fix-20261104：沖至《しらさぎ》升異端、楊祖珺《楊祖珺》恢復流亡
+
+- **店主 11-04**：「沖至也要入異端吧？」「楊祖珺為何降級？」
+- **沖至《しらさぎ》**：4／4／4 → 4／4／5，tier heresy，rarity epic → legendary。店主點名例外；聽感來源偏薄（找不到樂評逐段描述），簡介只寫查得到的：1974 告別巡演最後一晚、兩首 20／25 分鐘長篇、無和聲樂器。同級每藝人一張（《幻想ノート》是流亡，跨級）。
+- **楊祖珺《楊祖珺》**：4／4／2 → 4／5／2，tier pearl，rarity rare → uncommon（L=43）。推翻 audit-20261102「有串流→冷門最多 4」。簡介改寫流通史：上市不到兩個月、賣近一萬張後新格全數收回，〈美麗島〉只准錄不准播、〈少年中國〉不准收，1979–1981 禁演，2006 滾石復刻。`ALBUM_ONBOARDING.md` §3 流亡段補「有串流再發不自動否決流亡」，§0.8 加註。
+- **寫入**：card_catalog 2（讀回 2/2）；KV desc2＋desc4 共 4 鍵（`kv-token-check` exit 0，逐字回讀 4/4，舊值存 `before.json`）；seed 改 2 列；manifest c87、add-20260816 同步。
+- **驗證**：published gate 本批兩張只剩 album_overrides.tier（待後台）；c87 既有 2 error（渋谷毅、Sadayasu Fujii 的 KV 與 manifest 不一致）非本批。
+- **留給本機**：`batch-progress/apex-fix-20261104/album-overrides-tier.json`。
+- 主要檔案：`seed_cards.json`、`onboarding-manifest-c87-20260904.json`、`onboarding-manifest-add-20260816.json`、`ALBUM_ONBOARDING.md`、`batch-progress/apex-fix-20261104/*`。
+
 ### 2026-11-04｜dip-vinyl-shop｜rerate-20261104-loud：硬蕊度把音量與躁度算進去，全池重看（改 475 張）
 
 - **店主 11-04 定案**：硬蕊度＝入耳難度，音量、失真、速度、嘶吼都算。下限：失真龐克／流行龐克／車庫／傳統與另類金屬／音牆 shoegaze／噪音搖滾至少 3（blink-182 是 3 的錨點）；hardcore／thrash／crust／death／black／grind／sludge 至少 4；harsh noise 5。只往上調；整張偏不插電、抒情、柔和的不套。錨點寫進 `ALBUM_ONBOARDING.md` §0.8.1、`batch-progress/rerate-20261101/RUBRIC.md`。
