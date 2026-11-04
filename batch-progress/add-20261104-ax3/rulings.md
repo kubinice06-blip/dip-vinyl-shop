@@ -47,3 +47,10 @@
 - 51717 moodGuess 存疑：Inner Dialogue（曲目多為流行翻唱，含〈Raindrops Keep Fallin On My Head〉，迷幻成分薄）。
 - 51775 b 組：Inner Dialogue《Friend》Ranwood 是商業廠牌、2010 有韓日正式 CD 再發，轉一般卡；其餘 8 張照採 pearl（考古廠黑膠／CD 重發不算串流再發）。Smack 壓量 150／2000 兩說衝突，正文不寫數字；Princess Flower 以 1968 六首原版為準，Daevid Allen 只寫「團員之一」。
 - 51776 本批定案 26 張：pearl 21、一般 5（Stefan Gnys、Ebony Rhythm Funk Campaign、Heaven & Earth、Prince Lasha Ensemble、Inner Dialogue）。
+
+## 鉤子層（c）（51756–51760；a、b 那位代理用 51751–51755）
+- **51756** 交件 `desc-tools/batches/hooks/add-20261104-ax3-hooks-c.json`（8 張，key／順序照研究稿）。公式照 hook-base 1793-B：`Array.from(hook)+Array.from(note) − 主故事： − 每個 → − 正文只寫上列各項。 − 這條骨架全批只走本張。`。逐筆（hook 原始字元／加權／預算）：Ebony 25／25／216、Heaven & Earth 29／25.5／169（thin）、Bonner 23／23／230、Lasha 25／25／225、Pope 30／25.5／164（thin）、Few 27／23.5／170（thin）、Mtume 28／26.5／225、Thornton 26／23／227。初稿 8 張全超，整格捨去：Lamp 簽約、Get It On 長度、Hanks／Massey 製作、McCoy Tyner 影響、Rick Laird、1967 回美、James Brown 伴奏、Pope 八首自作、Steve Lacy、A 面四首、Mtume 生年、Buster Williams、Baba Hengates 長度、Jack Jeffers、Cardona 名字。壓完回核 hook 依賴（四位貝斯手、五重奏、六首、21 分鐘、九十多分鐘、大樂隊、靈魂樂）都已補進 g1／g2 或該格。
+- **51757** 骨架（各張只寫自己的歸屬句）：Ebony＝伴奏樂隊遷城換團名；Heaven & Earth＝兄弟組團＋錄音室大班底；Bonner＝鋼琴五重奏帶小提琴與人聲；Lasha＝客居倫敦借當地班底；Pope＝大師給第一份差事的樂手錄放克三重奏；Few＝巴黎流亡圈＋一面一曲；Mtume＝社區文化中心現場（地方場景）；Thornton＝學院派（世界音樂教職）與古巴／迦納打擊樂交會。hook 四型：人物定調（Ebony、Pope）／斷言（Heaven & Earth、Lasha）／場景（Bonner、Few、Mtume）／懸疑（Thornton，note 指派以教職與編制並列收尾、不寫因果）。
+- **51758** 本組無掛名跨兩張，「他／她」引入法照第二句配：Ebony 前身是／Heaven & Earth 由兄弟組團／Bonner 生年與出生地／Lasha 本名／Pope 年齡（10 歲）帶出全名／Few 移居年（1969）／Mtume 父親（親屬）／Thornton 教職身分。Leroy Jenkins 同時在 Bonner 與 Mtume 名單，只指派給 Bonner；Cowell 只在 Mtume。
+- **51759** 「日」後一字：Mtume 日於、Thornton 日錄；其餘只寫到月或年（Pope 生日改只寫年齡，避開 b 組可能的「日生」）。研究層禁區照辦：Ebony 不寫底特律圈、Few 不寫自營／首作、Bonner 不寫首張、Lasha 不寫靈性爵士、Pope 寫 1982 與放克／自由爵士、Thornton 不寫 Harlem 現場錄；後世生平（辭世、Juicy Fruit、UNESCO、Miles Davis）皆未進 note。媒體與資料庫名皆未進 note。
+- **51760** 自查：hook 間中文 4-gram 0；c 組 hook 對 a／b 組 hook＋note 0；hook 與 note 無逐字重複句；開頭四字全批互異。`qa-batch hooks` 只標 a 組 The Eye of the Beholder「年份?1979」（非本組）；`chk-hook-crossgroup` 全部通過。
