@@ -55,3 +55,23 @@
 - **52434** Chaos UK《Short Sharp Shock》：判 none。曲長 1:23–3:52 加 8:22 末曲，約 27 分，與卡單「整張高速短曲」不符；只有 Pushead MRR #20 一則短評。年份 1984（MRR 1984-12），不採 MB 1985。
 - **52435** Extreme Noise Terror《A Holocaust in Your Head》：判 heresy（邊緣、可逆）。15 首 25:44、deathmetal.org 高速高強度整張、Terrorizer #180 歐洲 grindcore 第三（維基轉引）、AllMusic 4.5 星（維基引註）。
 - **52436** 本組 WebSearch 共 6 次（MITB×2、Hellnation、Chaos UK、ENT、Despise You）；AllMusic、Discogs、Metal Archives、Sound Pollution、LA Weekly、Metal Injection 全文被擋。
+
+
+## 研究 a 組
+- **52411** Siege《Drop Dead》：判 heresy（邊緣、可逆）。六首約 12:41、三首不滿一分鐘、極速加尖叫；Giordano 訪談（Mudrian《Choosing Death》p.51，維基轉引）與 Ulrich 評語。但〈Grim Reaper〉7:23 慢曲、錄音反而清楚（單一聽眾樂評），簡介別寫「整張極速糊爛」。實體為自行發行卡帶，Radiobeat 是錄音室非廠牌。
+- **52412** Infest《Slave》：判 none。無可信來源描述這張的聽感（僅聽眾樂評、零售文案、2019 訪談）；後作樂評不能代換。身分：Off the Disk 是瑞士廠（OTD 02，MB 18 首 19:37），非 Slap-A-Ham。建議汰換或降級不收。
+- **52413** Crossed Out 同名 7 吋：判 heresy。七首約 7:55、五首不滿一分鐘；Ink 19（Chadwick 2000）稱極快有 blast、IMWT（Branin 2000）稱粉碎性 grind 與快慢急轉、power violence 藍圖。兩份評的是 1999 全集，前七首即 7 吋。年份採 1991（MB；Slap-A-Ham #9，壓 1,000 張）。
+- **52414** No Comment《Common Senseless》：判 none，建議汰換。廠牌是 Snare Dance（SD-0），非 Slap-A-Ham；找不到這張的任何聲音描述；被點名的代表作是 1992《Downsided》（XLR8R）。IMWT 還說他們有 hook。
+- **52415** Deep Wound 同名 7 吋：判 none（邊緣、可逆）。九首 9:32、最長 1:33，速度快但只有維基無引註句與部落格說「模糊成噪音」；Decibel 2015 與 Damaged Goods 說明讀不到（404／403）。若主線能讀到可升 heresy。
+- **52416** 本組 WebSearch 共 6 次（Siege 1、Infest 2、Crossed Out 1、Deep Wound 1、No Comment 1）；Sputnik、Miami New Times、Metal Archives、metalsucks、Damaged Goods 被擋。結論 heresy 2、none 3、建議汰換 2（Infest、No Comment）。
+
+## 主線（研究 a–d 交件後）
+- **52469** 第一輪 22 張定案收 **6 張 heresy**：
+  - Siege《Drop Dead》（hardcore-7inch：1984 自發 demo 卡帶，六首約 12:41；Giordano 訪談經《Choosing Death》＋Ulrich 評語。〈Grim Reaper〉7:23 的長段是噪音／薩克斯風即興，仍屬高強度，不算「局部激烈」；寫作不得寫成整張極速糊爛，要分開講）。
+  - Crossed Out 同名 7 吋（hardcore-7inch：1991 Slap-A-Ham，七首約 7:55，Ink 19＋In Music We Trust 評 1999 全集的前七首即本 7 吋；年份 1991 照 MB）。
+  - Charles Bronson《Youth Attack!》（20 首 12:40、多數 20–50 秒；維基＋Louder＋Deathwish 廠牌說明，邊緣收）。
+  - Dropdead 同名（34 首約 24 分，Decibel 名人堂＋MRR「pummel-fest」，證據最硬）。
+  - Despise You《West Side Horizons》（62 首不到 44 分鐘，Ink19＋Distorted Sound。研究層稱是 split／EP／未發表曲彙整；MB primary-type 為 Album，照 §5.6「primary Album 照一般 Album 寫法」，它也是該團公認入口；廠牌更正為 Pessimiser）。
+  - Extreme Noise Terror《A Holocaust in Your Head》（15 首 25:44、deathmetal.org 整張高速高強度＋維基引 Terrorizer、AllMusic；邊緣收，廠牌寫 Head Eruption）。
+- **52470** 汰 16（照 ax6 52071 不轉一般卡，研究稿留存）：Infest《Slave》、No Comment《Common Senseless》（無本盤聲音描述；廠牌各為 Off the Disk、Snare Dance）、Deep Wound（只有無引註維基一句；Decibel 2015 文讀不到——交補策展再試）、Septic Death、Capitalist Casualties、Spazz（快慢交替＋banjo／幽默取樣）、Man Is the Bastard、Hellnation、Chaos UK（曲長 1:23–3:52＋8:22 末曲）、Heresy、Sore Throat（只有無引註維基）、Unseen Terror、Electro Hippies、Doom、Deviated Instinct、Hellbastard（只有一般 crust／d-beat 描述或全無）。
+- **52471** 6 張偏少，派補策展 ax10c（一支代理，點名：Disorder 用 Discogs 封面、Deep Wound 用 archive.org 讀 Decibel、Anal Cunt 的 7 吋 noisecore、Psycho、Deche-Charge、Neanderthal、Rupture（澳）、Void 等），交件後再派研究。
