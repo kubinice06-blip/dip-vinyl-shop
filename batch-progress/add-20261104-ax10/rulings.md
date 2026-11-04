@@ -75,3 +75,9 @@
   - Extreme Noise Terror《A Holocaust in Your Head》（15 首 25:44、deathmetal.org 整張高速高強度＋維基引 Terrorizer、AllMusic；邊緣收，廠牌寫 Head Eruption）。
 - **52470** 汰 16（照 ax6 52071 不轉一般卡，研究稿留存）：Infest《Slave》、No Comment《Common Senseless》（無本盤聲音描述；廠牌各為 Off the Disk、Snare Dance）、Deep Wound（只有無引註維基一句；Decibel 2015 文讀不到——交補策展再試）、Septic Death、Capitalist Casualties、Spazz（快慢交替＋banjo／幽默取樣）、Man Is the Bastard、Hellnation、Chaos UK（曲長 1:23–3:52＋8:22 末曲）、Heresy、Sore Throat（只有無引註維基）、Unseen Terror、Electro Hippies、Doom、Deviated Instinct、Hellbastard（只有一般 crust／d-beat 描述或全無）。
 - **52471** 6 張偏少，派補策展 ax10c（一支代理，點名：Disorder 用 Discogs 封面、Deep Wound 用 archive.org 讀 Decibel、Anal Cunt 的 7 吋 noisecore、Psycho、Deche-Charge、Neanderthal、Rupture（澳）、Void 等），交件後再派研究。
+
+## 主線審稿（新卡 6 張，2026-11-04）
+- **52472** 逐句對回研究 a／b／c facts。改 2 張（`desc-override.json`）：
+  - Siege：「轉向噪音與薩克斯風即興」→「是整份最實驗的一首」——研究稿只說 Mahoney「偶爾吹薩克斯風」、〈Grim Reaper〉最慢最實驗，沒說這首有薩克斯風；52469 主線那句是未查證的印象，一併更正（寫作勿用）。刪「與前面的短曲形成反差」壓字數。（278 字）
+  - Despise You：「影響後來在 NAILS、Trash Talk 身上聽得出來」→「有樂評在…身上聽得出來」（單一樂評 Distorted Sound 的看法）。（278 字）
+  - Crossed Out（Ink19＋維基引 Terrorizer／Noisecreep：powerviolence 起點與定義；Encinitas、十六場、Slap-A-Ham 1000 張、Locust／Dropdead 翻唱）、Charles Bronson（唯一錄音室專輯、芝加哥補錄人聲；「收藏」一句出自 Louder 搜尋摘要，保留但不加評價）、Dropdead（Decibel：Dutch East India 改封面、Nasum 翻唱）、ENT（Birdsong 1988-11、雙主唱）對過，未改字。
