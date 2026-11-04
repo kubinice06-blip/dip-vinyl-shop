@@ -20,6 +20,8 @@
 | ml57 | neo-soul 女聲慢盤 2000s–10s（併女聲 quiet storm／roots dub／暖 downtempo 擴寫） | 恍惚 | ✅ 2026-10-24 上線 12（策展 25、研究汰 13，主場景見底）；落恍惚 12/12＝100% |
 | md30 | dark ambient 第五波（併 isolationist／winter-light 擴寫） | 頹靡 | ✅ 2026-10-24 上線 28（策展 52、主線汰 15、研究汰 15）；落頹靡 28/28＝100% |
 | ml58 | roots reggae 人聲慢盤（併 showcase／UK roots／暖 dub 擴寫） | 恍惚 | ✅ 2026-10-24 上線 28（策展 46、主線汰 3、研究汰 15，主場景見底）；落恍惚 28/28＝100% |
+| md35 | 頹靡電子：深暗 dubstep／post-dubstep、hauntology、witch house（只收電子盤） | 頹靡 | ✅ 2026-11-04 上線 26（策展 51、主線汰 6、研究汰 19）；落頹靡 24/26＝92%（Ekoplekz、Black Rain 有鼓判躁） |
+| md36 | 頹靡電子：illbient、冷 ambient techno、post-industrial、暗 downtempo（只收電子盤） | 頹靡 | ✅ 2026-11-04 上線 19（策展 49、主線汰 10、研究汰 16）；落頹靡 19/19＝100% |
 | md34 | funeral doom／drone doom 慢盤第二波 | 頹靡 | ✅ 2026-10-24 上線 38（策展 54、主線汰 9、研究汰 7，二線約還能挖 20–30）；落頹靡 38/38＝100% |
 | mc47 | 當代獨奏器樂尖細 | 冷冽 | ✅ 2026-10-24 上線 15（策展 38、主線汰 7、研究汰 16，主場景見底）；落冷冽 15/15＝100% |
 | mc45 | IDM／drill'n'bass 快而尖薄（併 click IDM 擴寫） | 冷冽 | ✅ 2026-10-24 上線 2（策展兩輪 7、主線汰 1、研究汰 4，死池）；落冷冽 1/2＝50%（General Magic 噪音拼貼判重落暴躁） |

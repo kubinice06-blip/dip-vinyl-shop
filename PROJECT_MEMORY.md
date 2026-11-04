@@ -1,5 +1,15 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-04｜dip-vinyl-shop｜add-20261104-md35／md36：頹靡電子 45 張上架＋藝人介紹 25 位
+- 店主 11-04「頹靡跟恍惚太少，多一點電子類，嘻哈跟雷鬼太多」→ 情緒薄格頹靡線兩批只收電子盤（genres 首位 electronic）。SCENES.md 加第 82／83 順位、條號 22521／22601。
+- md35（深暗 dubstep／post-dubstep、hauntology、witch house）：策展 51 → 主線汰 6 → 研究汰 19（140 BPM 推進、明亮、聲音零來源）→ **上線 26**；落頹靡 24/26＝92%（Ekoplekz、Black Rain 有鼓判躁）。
+- md36（illbient、冷 ambient techno、post-industrial、暗 downtempo）：策展 49 → 讓位 md35 4、主線汰 10 → 研究汰 16（脈動鼓、暖和絃、雷鬼根、零來源）→ **上線 19**；落頹靡 19/19＝100%。
+- 寫入：card_catalog 45、KV 45 鍵回讀一致（stamp 20261104m35／m36）、試聽 28 ready／17 unavailable、seed +45；published gate 兩批 0 error；頂點 0；審稿改 1 處（md35 BMT）。三軸照 §0.8.1 人工錨點。
+- 藝人介紹 ar-d-277（16 位）、ar-d-278（9 位）全上線（補洞 WebSearch 每位限 3 次），主線逐位審未改字。
+- 情緒：score-md35／score-md36 → priors → scale v0（錨點 104/104）→ card-moods；類型樹與抽卡封面重建。
+- 主要檔案：`batch-progress/add-20261104-md35|md36/`、`batch-progress/mood-axes/score-md35|md36/`、`batch-progress/mood-cells-20261022/{curation-md35a,b,md36a,b,master-*,drop-after-research.mjs,cut-artist-intros-md35.mjs,pooled.cjs}`、seed、試聽地圖、artist-intros 分片。
+- 場景結論：兩場景都見底不再單獨派；頹靡電子還有的池子在 Modern Love／BEB 系無拍盤與 hauntology 陰冷那半（約 10–15 張）。
+
 ### 2026-11-04｜dip-vinyl-shop｜頻率光譜：星圖星星改用原始分數定位（不再等距平均）
 
 - **改動**：店主「我沒有要平均分配，此起彼落的比較自然，現在好像每個都等距」。原本 3D 位置用百分位（均勻鋪滿立方體）；改成原始分數線性映射（能量 1–5、質地與色溫 −2～+2 → −1～+1），中段密、極端值稀疏，越外圍越極端。同分格點以確定性抖動打散（fnv 再經 murmur 終結器攪拌，三角分布約 ±0.075；只用 fnv 低位元會排成條紋）。轉輪、掃描、最近一張仍在百分位空間；三向定位面改跟原始分數走。`dip-tune.js?v=66`。

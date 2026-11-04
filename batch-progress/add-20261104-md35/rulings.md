@@ -100,3 +100,25 @@
 - **22588** 轉述引導：note 的「廠方說／樂評聽到／有評論說」改成直述或「樂評形容／樂評把它看作／廠牌稱之為／廠牌認為」，媒體名與評論者名不進正文。Hollywood 的錄音地點直述（hook 已直述）。Paranormal 的 EVP 與〈Haunted Tape〉照 note 並列，不寫兩者的副標關係（note 未列）。Second Sight「不疊錄」照 note 保留為事實子句。
 - **22589** 自掃（`han()` 4-gram，數字／拉丁／標點全剝）：本檔內初稿撞「在年月日」（Playing／Crack Witch）、「各約分鐘」×3（Playing／Second Sight／Leviathan）、「本作年月」（Red Goddess／Light）、「德國計畫」（Crack Witch／Hollywood）、「自稱做的是」（Hollywood／Shipyard），整個名詞拿掉或改語序後 0。對 out-1 合掃撞「他把自己」（Hollowed）、「年由發行」（LAGEOS），改本檔 Shipyard、Hollywood 後跨兩檔 0。對歷批 out 的通用殘片（日期樣板、「田野錄音」等）未逐條處理，留主線收件合掃。
 - **22590** 輔助腳本在 scratchpad `md35w2/`（md35w2-build.cjs、md35w2-ngram.cjs、md35w2-drafts.json）。
+
+## 主線試聽／封面／三軸（不佔條號；2026-11-04）
+- 試聽：自動配對 14 ready；其餘 12 張（Ossia、Black Rain、Caretaker、BMT ×2、Grey Frequency ×5、MSV ×2）以 Apple 藝人目錄 lookup（us／gb／jp）逐一查過，目錄裡沒有原盤 → unavailable。
+- 封面：CAA 24（release-group front，縮圖表目視與盤名相符）；Grey Frequency《Ufology》CAA 404、《Paranormal》§1 人工身分 → Bandcamp og:image 1200px（`covers.json`，目視封面印藝人與盤名）。
+- 三軸：照 ALBUM_ONBOARDING §0.8.1 人工錨點（`ratings-override.json`，source `manual:depth-rubric`）。經典度 3／4＝17／9（藝人代表作給 4：Kryptic Minds、Ossia、Fatima Al Qadiri《Brute》、Black Rain、Caretaker 首張、BMT《Black Goat》、Hawthonn、MSV《Crack Witch》、Dean Hurley）；冷門度依廠牌錨點＋Last.fm 下限只往上抬（3／4／5＝6／11／9）；硬蕊度 dark ambient／drone 全 3。稀有度 uncommon 16、rare 9、epic 1；頂點 0（無 7 星級證據）。
+
+## 主線審稿（22591–22593；2026-11-04）
+- **22591** 逐張審 26 張（全文印出，逐句對研究稿 a–e）。改 1 張 1 處（`desc-override.json`）：
+  - `Black Mountain Transmitter|Black Goat of the Woods`：「hauntology 是以恐怖片配樂為素材的一路音樂人」→「hauntology 指以恐怖片配樂為素材的一路音樂」（把類型名誤寫成一群人；研究 c 原文為 Pouncey 起的詞，指以恐怖片配樂為素材的音樂）。只動正文措辭，不動事實，研究／hooks／input 不需同步。
+- **22592** 事實抽核：Kryptic Minds 成員 Simon Shreeve＋Brett Bigden（Leon Switch）、Swamp 81 首張專輯（研究 a，Discogs）；Fatima Al Qadiri 膝傷居家動念（研究 b，維基）；Dalhous Vol.2 廠牌 Denovali（研究 b，Bandcamp；卡單沿用 Vol.1 的 BEB 不影響正文）；Black Rain 1992 成軍、隔 18 年（研究 c，維基）；MSV《Hollywood Necronomicon》Sharon Tate 舊宅錄音（研究 e，廠方 Bandcamp）；Dean Hurley 第一輯因授權只出數位（研究 e，Bandcamp）。
+- **22593** 媒體名、榜單名次、「據說／據傳」全批 0；`qa-batch out`、`qa-check-research`、`fix-spacing` 0 處；prepare gate 0 error。
+
+## 上線（2026-11-04，主線）（條號 22594）
+- **22594**：上線 26 張：card_catalog 26／26、KV 26 鍵回讀逐字一致（stamp 20261104m35）、試聽 14 ready／12 unavailable、seed +26、published gate 0 error（warning 皆 UPC 盡力而為）。寫入前對 origin 前 40 個分支的 seed 與 ml60 卡單去重 0 撞。
+
+## 藝人介紹（ALBUM_ONBOARDING §11）
+- 本批新藝人 16 位切 **ar-d-277**（名冊 `batch-progress/artist-intro/roster-md35-ar-d-277.json`）：補洞 2 組（Sonnet，WebSearch 每位限 3 次）→ 寫作 1 組（Opus）→ `qa-artist` 0 處 → 主線逐位審未改字 → 上線 16／16。
+
+## 評分與落格（2026-11-04，主線）（條號 22595–22596）
+- **22595**：Opus 1 支照 `score500/BRIEF.md`（10-23 體感標準）打 26 張（`batch-progress/mood-axes/score-md35/`），主線逐張看過未改值。x 1.3–3.1、y 0.6–1.7、z −1.7～−0.3；conf mid 11、low 15。`build-priors` → `build-scale v0`（錨點 104/104 同格）→ `build-card-moods`。類型樹 `warm-batch` 25/26 有標籤，`build-genre-tree --pull --write`、`build-draw-covers --pull --write` 重建。
+- **22596**：**落格率 24/26＝92%**。出格 2 張皆判躁落暴躁：Ekoplekz《Four Track Mind》x 3.0（類比鼓機推進、克勞特式催眠拍）、Black Rain《Dark Pool》x 3.1（機械式部落／工業節奏）——兩張研究稿都寫了鼓，策展 x 估 2.3–2.4 偏低。最貼邊：Kuedo z −0.3、Ossia／Dalhous Vol.2 x 2.9。
+- **場景潛力**：深暗 dubstep 二線一查多是 140 BPM 推進（研究汰 9 張鼓推進），能落格的是 Modern Love／BEB 系無拍或半拍的那半；hauntology 的陰冷那半（Grey Frequency、BMT、Hawthonn、Caretaker 首張）全中，明亮 Ghost Box 派不收；witch house 只剩 MSV 系。整體剩約 10–15 張，**不再單獨派**，可併入其他暗電子批。

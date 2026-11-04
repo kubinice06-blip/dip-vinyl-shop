@@ -102,3 +102,23 @@
 - **22668** 轉述引導改直述：Vainio「廠牌稱第四張個人專輯」（Touch 與樂評雙源）直寫「是他在 Touch 的第四張」；List「廠方說指涉血腥片與黑色電影」改成陳述句；Barotrauma「唱片行的介紹說」整個引導詞拿掉、內容直述（近「據唱片行說明」禁型）。樂評評語保留五種相異引入（評論寫道／當年的評論說／樂評把它比作／樂評聽到／有樂評稱），無媒體名、無名次。
 - **22669** hook 不複述：Rainbow「尖嘯」改寫成「放下的是回授與嘶吼」補細節；Shap 取樣重複只寫 hook 沒說的「波長擴張撐開層次」；Compassion 三地寫作一格整句不再寫（hook 已盡）；Barotrauma 受訓與油價只留在 hook，第二句接水下錄音。直接引語（「曲子真的會呼吸」、Hecker 自嘲）轉間接。
 - **22670** 自掃：跨 out-1／out-2 中文 4-gram（han() 同規）初稿 8 條 2 張殘片（長約分鐘、這個名字、音樂人年、這家廠牌、現場錄音、首超過分、超過分鐘、於溫哥華）整詞改寫後 0 條；3 張以上 0 條。`qa-batch out`、`qa-check-research`（標記 0）、`fix-spacing`（待補 0）全部通過。
+
+## 主線試聽／封面／三軸（不佔條號；2026-11-04）
+- 試聽：自動配對 10；藝人目錄 lookup 人工配 4（`preview-override.json`：Henke《Signal to Noise》《Piercing Music》、Vainio 英譯盤名《Black Telephone of Matter》、Murcof & Petit《First Chapter》，曲名逐一對上 MB）→ **14 ready／5 unavailable**（Laswell 三張、Henke《Indigo_Transform》、Kit Clayton）。
+- 封面：CAA 19（縮圖表目視相符；Laswell & Thaemlitz《Web》front-250 一度 500，重抓 front／front-500／front-250 皆 200）。
+- 三軸：§0.8.1 人工錨點（`ratings-override.json`）。經典度 3／4＝12／7；冷門度 2／3／4／5＝2／6／6／5；Vainio《Black Telephone》Last.fm L=5 為芬蘭文盤名錯配（Apple 英譯名有串流），照錨點 Touch＝3、不套下限；Vainio、Prurient 硬蕊度 4（失真噪音段）。稀有度 uncommon 10、rare 7、epic 2；頂點 0。
+
+## 主線審稿（22671–22673；2026-11-04）
+- **22671** 逐張審 19 張，逐句對研究稿 a–e，**逐張審過，未改字**。writer-1 22665 的三處自補描述（Monolake「電子樂團」、Somnific「錄 drone」、Max/MSP「音樂軟體」）皆是 facts 的身分／樂種改述，照留。
+- **22672** 事實抽核：Vainio 1980 年代初在樂團 Gagarin-Kombinaatti、同時在屠宰場工作，Touch 第四張個人盤（研究 c，維基＋Touch／Igloo）；Senking 名稱取自 Massel 首張 EP、1995 轉電子（研究 c，德文維基）；Prurient 三人現場錄、Shifted 混音（研究 d）；Radio Amor 為 Hecker 第二張、2003-03-25 Mille Plateaux（研究 e，維基）；Forest Swords＝Wirral 的 Matthew Barnes（研究 e）；Somnific Flux 兩軌合計約 66 分鐘（研究 a）。
+- **22673** 媒體名、榜單名次、「據說／據傳」全批 0；三支 QA 0 處；prepare gate 0 error。
+
+## 上線（2026-11-04，主線）（條號 22674）
+- **22674**：上線 19 張：card_catalog 19／19、KV 19 鍵回讀逐字一致（stamp 20261104m36）、試聽 14／5、seed +19、published gate 0 error。去重同 md35。
+
+## 藝人介紹（ALBUM_ONBOARDING §11）
+- 本批新藝人 9 位切 **ar-d-278**（名冊 `roster-md36-ar-d-278.json`；合作型名稱照 ARTIST_INTRO_PLAN §7 以組合為一位）：補洞 1 組 → 寫作 1 組 → `qa-artist` 0 處 → 主線逐位審未改字 → 上線 9／9。其餘本批藝人（Laswell、Vladislav Delay、Prurient、Tim Hecker、Actress）已有介紹；Mika Vainio、Forest Swords、Murcof 由前批排隊。
+
+## 評分與落格（2026-11-04，主線）（條號 22675–22676）
+- **22675**：同 md35 那支 Opus 打 19 張（`score-md36/`），主線未改值。x 1.1–2.9、y 0.7–1.9、z −1.8～−0.5；conf mid 9、low 10。
+- **22676**：**落格率 19/19＝100%**。最貼邊：Murcof/Petit《First Chapter》x 2.9、Mika Vainio x 2.8。研究層把鼓推進／偏暖／雷鬼根／零來源的 16 張汰掉後全數落格——這條線「研究汰換從嚴」換來的落格率，與 md34（38/38）同型。
