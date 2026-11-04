@@ -627,3 +627,67 @@
 - bulk put 31 鍵（desc2 30＋desc4 1），wrangler 印 `Success!`；`verify-wave-kv` 回讀 65/65（兩批合計）逐字一致。
 - `front-check ad-18`：30/30 前台為新稿，CURATED 0。
 - manifest 同步 30 處。
+
+
+## ad-19、ad-20（流亡 30＋30，s10）
+
+- 派工補充：新增 `prompt-research-extra-s10.md`／`prompt-writer-extra-s10.md`（沿用 s7、s8 流亡節；本批來源指引：日本噪音、日本爵士／自主民謠、沖繩民謠、台灣、紐約硬蕊 demo、英國自由即興、Wackies 系、黑暗氛圍；Discogs／MusicBrainz API 不耗 WebSearch；收藏統計寫質性；每支用自己的暫存子目錄、最多 25 次 WebSearch）。暫存子目錄分開後，兩批 6 支研究、4 支寫作都沒有撞檔。
+- 研究 3 Sonnet×2 批（WebSearch ad-19 a 18／b 15／c 17、ad-20 a 18／b 20／c 16；主線 0；合計 104）、寫作 2 Opus×2 批。
+- **coverage none 與主線補查**：ad-19 的モア、真芽正恵研究層三塊全 none（MB 無、日文搜尋無果），主線用 Discogs API 補：モア（release 20594359：Saturn Records ST-1001-24L、Private Press、Saturn 只登錄這一張、五人分工、Masaru Sato 音樂監督兼內頁、十三首曲序）、真芽正恵（release 12624822、label 92014：這個 Harvest 是ミノルフォン旗下日本廠牌；artist 6742643 四張單曲；2015 年小西康陽編《夜のミノルフォン・アワー》收〈コキリコ〉；作曲與編曲 credits）。併回 `research/ad-19-c.json`，標「主線補查，Discogs API」。其餘 none（1976 sound、夾子／山里勇吉 making、South Wind Section sound、Sói Đen sound、Moljebka Pvlse making、ICP 002／Company 2／Wayne Wade sound）未補查，照 ad-17 裁定寫：sound none 只寫編制、曲長、結構，making none 不寫錄音經過。
+- **裁定**：
+  - モア 內頁作者只寫 Discogs 的羅馬字 Masaru Sato，不寫成「作曲家佐藤勝」（無證據是同一人）；舊簡介「三天錄完」「歌心」「業餘樂手」無來源，不寫。
+  - 真芽正恵：作曲者国分正恵是否她本人無證據，寫「国分正恵作曲」。日文人名的「国」保留原字（QA 簡體標記為誤報）。
+  - 古謝美佐子《島美らさ》年份三說（1992／1994／2001 首張個人盤之說），不寫年份、不寫「第一張個人專輯」。Plainsunset 2003／2004 兩說寫「2000 年代初」；Braxton 錄音年兩說只寫巴黎。
+  - 1976、夾子、山里勇吉三張本盤幾乎沒有資料，照藝人層級事實寫，不降級（tier 屬卡池結構，不在本線範圍）。
+  - 「查得到／沒有查到」這類研究過程的話不進簡介，一律改寫成「沒有再版紀錄」「已知的版本」（ad-20 審稿 12 處）。
+- **卡池資料疑點（未動 seed，留給店主）**：Аясын Салхи seed 2004，已知實體 CD 是 2008 年 Hi-Fi 版（Metal Music Archives 列 2004）；Plainsunset《The Gift》seed 2003，Sonicbids 與十週年演出對應 2004；古謝美佐子《島美らさ》年份三說。
+- 研究層推翻舊稿的主要錯誤（新稿未沿用）：Incapacitants「整捲只有一軌」；1976「野台開唱復出」；Adonis 廠牌（Black Market Records，非 International）；光束夜「錄音室重錄」（實為 1996 年四地現場）與〈苦痛壊歌〉在 1990 LP 上；Krakdown「唯一發行」與 NR-18183（壓片廠編號）；灰野敬二 P.S.F. 名稱「四年前」（六年）；108 的三首翻唱（屬《Curse of Instinct》）；北村英治〈Slipped Disc〉與 Goodman 六重奏編制；八城一夫錄音日期與兩台琴分面；Аясын Салхи「15 首」「金屬教父」；Howard Riley BBC 錄音；Menses 卡帶與封底宣言；The Crackling「史上最大的樂器」與九首；Tony Oxley「替 Rollins 伴奏」與整張獨奏；Barry Guy 無出處的樂評；Cora「Casals 學生」；Wade「最花時間栽培」；Tyrone Evans 詞曲署名；Alton Ellis「rocksteady 教父」封號。
+- 機器 QA：`qa-batch research` ad-19 1 標記（国分正恵）、ad-20 1（西里爾團名誤報）；`out` ad-19 1（国）、ad-20 4（西里爾、1980／2000 年代、Melody Maker 票選有主辦者）皆誤報；fix-spacing 0；半形符號只在原文盤名內；字數 ad-19 217–280、ad-20 225–280。
+
+### 主線審稿 ad-19（2026-11-04，30 張逐張讀、逐句對研究稿；加問「讀完知不知道它憑什麼是這一級」）
+
+改 12 處（9 張，`review-ad-19.json`；同一張多次改分開記）：
+
+- `1976|late summer of 1976 不插電現場實況`：「這張是復出後以不插電形式錄下的現場演出」→「這張是復出後發行的不插電現場專輯」。研究稿只有 2004 年 7 月發行與 2003 年復出，錄音時間不明；「復出後錄下」是推論，改成可證的「復出後發行」
+- `夾子電動大樂隊|地下人`：「應蔚民後來因電影《海角七號》」→「應蔚民因電影《海角七號》」。《海角七號》早於《地下人》（2012），「後來」接在本盤敘述後會讀錯時序
+- `山里勇吉|八重山書生節`：「盤名裡的〈書生節〉」→「盤名裡的「書生節」」。研究稿未查到本盤曲目，不能用〈〉暗示有這首曲子；改指盤名裡的曲種
+- `gai|1981-1985`：「Gai 被視為 1980 年代前期日本最粗暴嘈雜的硬蕊團之一，這批」→「這批」。「最粗暴嘈雜之一」出自 Sorry State（唱片行兼廠牌）的商品介紹，屬廠商文案，不當評價寫（prompt-research-extra-s7）
+- `ハナタラシ|ハナタラシ`：「噪音以電鑽、電動工具與重機械」→「他們的噪音以電鑽、電動工具與重機械」。研究稿標明電動工具等是團體層級描述，不是本盤確切使用；改成團體的做法
+- `bulldoze|cleaning shit up!!`：「硬蕊放到慢到中速，」→「走慢到中速的硬蕊，」。原句不通順；且風格是樂團層級，寫成樂團走的路數
+- `gorilla biscuits|demo 1987`：「這捲共六首，包括〈Better Than You〉〈Do It Yourself〉與以團名為題的一首，〈Better Than You〉在樂團出 EP 前就被收進合輯」→「這捲共六首，其中〈Better Than You〉在樂團出 EP 前就被收進 Revelation 的合輯」。研究稿 notes：曲目表只有舊簡介一個來源，〈Do It Yourself〉與同名曲未獨立驗證，刪；合輯由 Revelation 出版有研究稿
+- `dzeltenie pastnieki|man ļoti patīk jaunais vilnis`：「據記載，這套節目」→「這套節目」。「據記載」屬出處句式，出處不寫進簡介；事實出自拉脫維亞語維基
+- `south wind section|south wind`：「查不到樂團成員與背景的資料，製作人是 Kazumi Matsuzaki 與 Yoshio Ohtake。」→「唱片上署名的製作人是 Kazumi Matsuzaki 與 Yoshio Ohtake，錄音工程是 Masayoshi Yamazaki。」。「查不到資料」是研究過程的話，不是唱片的事實；改寫研究稿已有的 credits
+- `ハナタラシ|ハナタラシ`：「用過電動工具與挖土機，也把玻璃」→「動用過挖土機，也把玻璃」。審稿改句後超字（282），壓字；電動工具後句已寫
+- `south wind section|south wind`：「唱片上署名的製作人是 Kazumi Matsuzaki 與 Yoshio Ohtake，錄音工程是 Masayoshi Yamazaki。」→「製作人署名 Kazumi Matsuzaki 與 Yoshio Ohtake。」。審稿改句後超字（294），壓字
+- `south wind section|south wind`：「曲長多在 4 到 6 分鐘，最長」→「最長」。審稿改句後超字，壓字
+
+其餘 21 張逐張審過，未改字。第五問：30 張前兩句都講出流通狀況（自製卡帶與 demo、私壓限量 100／400／500 張、CD-R、只送朋友的卡帶、地方小廠、從未正式出版的 magnitizdat 盤帶）與值得聽的事實（Old Europa Cafe、Hospital Productions、Urashima、P.S.F.、Black Editions、NoBusiness、State of Mind 重發；被視為 beatdown、youth crew、蘇聯 new wave 先驅）；モア、真芽正恵、South Wind Section、八城一夫只有流通與 credits 事實，沒有評價可寫。另核對：Maher Shalal Hash Baz「日本地下最神祕」出自 Signal to Noise（單一來源用「被視為」）；Bulldoze「beatdown 開創者之一」與類型得名出自英文維基；山里勇吉「八重山代表性的民謠歌手之一」出自日文維基；108「被低估」出自 Scene Point Blank。
+
+### 主線審稿 ad-20（2026-11-04，30 張逐張讀、逐句對研究稿；加問「讀完知不知道它憑什麼是這一級」）
+
+改 15 處（12 張，`review-ad-20.json`；同一張多次改分開記）：
+
+- `аясын салхи|coffin town under the moon`：「查得到的實體版本是」→「已知的實體版本是」。「查到」是研究過程的說法，不是唱片的事實；只查過單一資料庫，寫「沒有再版紀錄」（ad-17 裁定）
+- `sói đen|chiến tranh và hòa bình`：「查得到的只有這一個越南本地版本」→「只有這一個越南本地版本」。「查到」是研究過程的說法，不是唱片的事實；只查過單一資料庫，寫「沒有再版紀錄」（ad-17 裁定）
+- `sói đen|chiến tranh và hòa bình`：「樂團此後查得到的發行」→「樂團此後已知的發行」。「查到」是研究過程的說法，不是唱片的事實；只查過單一資料庫，寫「沒有再版紀錄」（ad-17 裁定）
+- `sói đen|chiến tranh và hòa bình`：「壓軸曲的英文副題」→「還有一首的英文副題」。研究稿兩個來源曲數不一（8／9 軌），無法確定 The Castle of Wolf 是最後一首
+- `han bennink|tempo comodo`：「查不到國際發行」→「沒有國際發行紀錄」。「查到」是研究過程的說法，不是唱片的事實；只查過單一資料庫，寫「沒有再版紀錄」（ad-17 裁定）
+- `company|company 2`：「這張只查到 1979 年日本一次黑膠重發」→「這張只有 1979 年日本一次黑膠重發」。「查到」是研究過程的說法，不是唱片的事實；只查過單一資料庫，寫「沒有再版紀錄」（ad-17 裁定）
+- `tony oxley|tony oxley`：「沒有查到 CD 紀錄」→「沒有出 CD 的紀錄」。「查到」是研究過程的說法，不是唱片的事實；只查過單一資料庫，寫「沒有再版紀錄」（ad-17 裁定）
+- `barry guy|statements v‐xi for double bass & violone`：「沒有查到 CD 紀錄」→「沒有出 CD 的紀錄」。「查到」是研究過程的說法，不是唱片的事實；只查過單一資料庫，寫「沒有再版紀錄」（ad-17 裁定）
+- `alterations|alterations`：「沒有查到再版紀錄」→「沒有再版紀錄」。「查到」是研究過程的說法，不是唱片的事實；只查過單一資料庫，寫「沒有再版紀錄」（ad-17 裁定）
+- `paul lytton|the inclined stick`：「沒有查到再版紀錄」→「沒有再版紀錄」。「查到」是研究過程的說法，不是唱片的事實；只查過單一資料庫，寫「沒有再版紀錄」（ad-17 裁定）
+- `wayne wade|black is our colour`：「整張專輯沒有查到再版紀錄」→「整張專輯沒有再版紀錄」。「查到」是研究過程的說法，不是唱片的事實；只查過單一資料庫，寫「沒有再版紀錄」（ad-17 裁定）
+- `tyrone evans|sings bullwackie style`：「原版早已絕版、被收藏者追逐，但這張沒有查到再版紀錄」→「廠牌的原版唱片多已絕版、被收藏者追逐，這張也沒有再版紀錄」。維基講的是 Wackie's 整體原版，原句主詞像是本盤；並去掉「查到」
+- `john holt|introspective`：「沒有查到樂評與再版紀錄」→「沒有再版紀錄」。「查到」是研究過程的說法，不是唱片的事實；只查過單一資料庫，寫「沒有再版紀錄」（ad-17 裁定）；「沒有樂評」不是唱片的事實
+- `alton ellis|a new day`：「沒有查到再版紀錄」→「沒有再版紀錄」。「查到」是研究過程的說法，不是唱片的事實；只查過單一資料庫，寫「沒有再版紀錄」（ad-17 裁定）
+- `tyrone evans|sings bullwackie style`：「廠牌的原版唱片多已絕版」→「廠裡的原版多已絕版」。審稿改句後超字（281），壓字
+
+其餘 18 張逐張審過，未改字。第五問：30 張前兩句都講出流通狀況（自營廠 ICP／Incus／Po Torch／Bead／Ictus、郵購、限量 112／300／500／1000、私壓兩三百張、蒙古與越南本地自行發行、展覽委託只出黑膠）與值得聽的事實（Emanem、Die Stadt、EEs'T、Klanggalerie、Ictus、RogueArt 重發；具名評價寫成「被視為」）。另核對：Hall of Mirrors「小經典」出自 Philippe Blache；The Crackling「比 Duncan 多數作品溫和而多變」出自 AllMusic；Bianchi「影響一整代義大利地下噪音」出自義大利維基引 Antonello Cresti；Centazzo「最好的錄音之一」出自 AllMusic Steve Loewy；Cargo Cult Revival「第一部重要作品」出自 Scaruffi；Shipp「技巧出色、細膩、節奏多變」出自 AllMusic Loewy；均單一來源，用「被視為」不用「常」。
+
+### 上線
+
+- `kv-token-check` 通過；舊值存 `kv-before-ad-19.json`（60 鍵，43 個非 null）、`kv-before-ad-20.json`（60 鍵，30 個非 null）。
+- bulk put ad-19 43 鍵（desc2 30＋desc4 13）、ad-20 30 鍵（desc2 30），兩次都親眼見 `Success!`；`verify-wave-kv 20261104 ad-19 ad-20` 73/73 逐字一致。
+- `front-check`：ad-19 30/30、ad-20 30/30 前台為新稿，CURATED 0。
+- manifest 同步 ad-19 30 處、ad-20 30 處（26 份 onboarding manifest）。
