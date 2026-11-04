@@ -1,0 +1,275 @@
+{
+ "group": "ax6f",
+ "factions": [
+  {
+   "id": "us-noise-rock",
+   "zh": "美國噪音搖滾",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "uk-feedback",
+   "zh": "英國回授噪音",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "war-metal",
+   "zh": "war metal",
+   "count": 2,
+   "why": ""
+  },
+  {
+   "id": "raw-bm",
+   "zh": "raw 黑金屬",
+   "count": 2,
+   "why": ""
+  },
+  {
+   "id": "us-noisecore",
+   "zh": "noisecore",
+   "count": 1,
+   "why": ""
+  }
+ ],
+ "albums": [
+  {
+   "artist": "Sightings",
+   "album": "Absolutes",
+   "year": 2003,
+   "label": "Riot Season",
+   "country": "us",
+   "faction": "us-noise-rock",
+   "genres": [
+    "noise",
+    "experimental"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "Load 系噪音搖滾最刺耳的一張之一：四軌錄音電平全開爆表，帶底噪與失真成為第四位團員（Mundane Sounds 評）。",
+   "listeners": null,
+   "why": "Sightings 第三張，電平全推入紅區讓四軌帶噪與失真成為樂團的一部分，開場由低頻隆隆轉為尖嘯回授與嘶吼，無旋律。Mundane Sounds 稱其為 Load 廠牌最刺耳的發行之一。",
+   "moodGuess": {
+    "x": 4.3,
+    "y": 0.9,
+    "z": -1.2,
+    "why": "失真噪音搖滾，無旋律，尖嘯回授"
+   },
+   "evidence": [
+    "https://mundanesounds.blogspot.com/2003/06/sightings-absolutes.html",
+    "https://musicbrainz.org/release-group/5c8306c6-93e9-327c-830c-54199b7568a0",
+    "https://www.discogs.com/master/56533-Sightings-Absolutes"
+   ],
+   "mbRgMbid": "5c8306c6-93e9-327c-830c-54199b7568a0",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "封面 CAA 404、Discogs API 無 cover_image，需主線補查（Bandcamp/Load）；MB 首發 Riot Season(UK) 與 Load(US) 同年；依據僅一篇部落格評，偏薄；標籤 us 為樂團國籍。"
+  },
+  {
+   "artist": "Skullflower",
+   "album": "Form Destroyer",
+   "year": 1989,
+   "label": "Broken Flag",
+   "country": "gb",
+   "faction": "uk-feedback",
+   "genres": [
+    "noise",
+    "psychedelic"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "Broken Flag 時期以咆哮回授加威脅性重複 riff 聞名於地下圈（Trouser Press）；Quietus 稱專輯「害我耳鳴發作」。",
+   "listeners": null,
+   "why": "Skullflower 首張全長，深度失真貝斯、重擊鼓與迴響吉他尖嘯 drone、狂踩效果器；整張回授牆，無歌曲結構。",
+   "moodGuess": {
+    "x": 4.2,
+    "y": 1.4,
+    "z": -1,
+    "why": "回授牆加重複 riff，濃稠失真"
+   },
+   "evidence": [
+    "https://trouserpress.com/reviews/skullflower/",
+    "https://thequietus.com/?p=13503",
+    "https://musicbrainz.org/release-group/921f0a6e-c6ce-3b3c-9545-13c4b48d8aba",
+    "https://coverartarchive.org/release-group/921f0a6e-c6ce-3b3c-9545-13c4b48d8aba/front"
+   ],
+   "mbRgMbid": "921f0a6e-c6ce-3b3c-9545-13c4b48d8aba",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "無單一專輯樂評說 harsh；依據是廠牌時期描述加 Quietus 的耳鳴語，偏薄；曲風帶 sludge 重 riff 可能被判可入耳。"
+  },
+  {
+   "artist": "Diocletian",
+   "album": "Doom Cult",
+   "year": 2009,
+   "label": "Invictus Productions",
+   "country": "nz",
+   "faction": "war-metal",
+   "genres": [
+    "metal"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "紐西蘭 war metal 代表首作，metal.academy 描述為最具懲罰性的 blackened death 之一，咆哮人聲。",
+   "listeners": null,
+   "why": "Diocletian 首張，不間斷的 war metal 轟炸、混濁錄音、低吼人聲，無旋律出口。",
+   "moodGuess": {
+    "x": 4.6,
+    "y": 1.5,
+    "z": -1.4,
+    "why": "war metal 轟炸"
+   },
+   "evidence": [
+    "https://metal.academy/releases/21166",
+    "https://deathmetal.org/tag/doom-cult",
+    "https://musicbrainz.org/release-group/313092ff-bfe8-452c-81fc-92b56737f3fb",
+    "https://coverartarchive.org/release-group/313092ff-bfe8-452c-81fc-92b56737f3fb/front"
+   ],
+   "mbRgMbid": "313092ff-bfe8-452c-81fc-92b56737f3fb",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "依據偏薄：僅 metal.academy 與 deathmetal.org，非可信樂評；Sputnik 稱其「鬆散」。建議主線決定是否汰換。"
+  },
+  {
+   "artist": "Black Cilice",
+   "album": "Banished From Time",
+   "year": 2017,
+   "label": "Iron Bonehead Productions",
+   "country": "pt",
+   "faction": "raw-bm",
+   "genres": [
+    "metal"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "葡萄牙 raw/lo-fi 黑金屬，評論稱「強烈、雷鳴般、狂熱不休」。",
+   "listeners": null,
+   "why": "單人計畫，lo-fi 錄音、重複狂熱 riff、人聽不清的嘶吼，整張同質。",
+   "moodGuess": {
+    "x": 4,
+    "y": 0.9,
+    "z": -1.5,
+    "why": "raw 黑金屬，冷硬"
+   },
+   "evidence": [
+    "https://toiletovhell.com/?p=61785",
+    "https://www.thesoundprojector.com/2017/05/02/banished-from-time/",
+    "https://musicbrainz.org/release-group/0914746f-5f59-4dba-8d1a-c870d122f216",
+    "https://coverartarchive.org/release-group/0914746f-5f59-4dba-8d1a-c870d122f216/front"
+   ],
+   "mbRgMbid": "0914746f-5f59-4dba-8d1a-c870d122f216",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "多篇評論說此張是 Black Cilice 最易入耳的一張，有旋律；極端依據薄，建議汰換優先級高。"
+  },
+  {
+   "artist": "Antichrist Siege Machine",
+   "album": "Schism Perpetration",
+   "year": 2019,
+   "label": "Krucyator Productions",
+   "country": "us",
+   "faction": "war-metal",
+   "genres": [
+    "metal"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "war metal 首作，被評為「不間斷、猛擊」的死黑金屬轟炸。",
+   "listeners": null,
+   "why": "Richmond 雙人團首作，持續的 blast 與咆哮，評論拿來與 Pig's Blood 比。",
+   "moodGuess": {
+    "x": 4.6,
+    "y": 1.4,
+    "z": -1.2,
+    "why": "死黑轟炸"
+   },
+   "evidence": [
+    "https://mystificationzine.com/2019/09/02/antichrist-siege-machine-schism-perpetration-2019-review/",
+    "https://onlydeathisreal.rip/2020/06/22/antichrist-perpetration/",
+    "https://musicbrainz.org/release-group/2fa107a0-d64c-409a-a997-84aaa571a233",
+    "https://coverartarchive.org/release-group/2fa107a0-d64c-409a-a997-84aaa571a233/front"
+   ],
+   "mbRgMbid": "2fa107a0-d64c-409a-a997-84aaa571a233",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "依據只有小型 zine；評論說「老套」，極端度證據薄，建議汰換。"
+  },
+  {
+   "artist": "Akitsa",
+   "album": "Goétie",
+   "year": 2001,
+   "label": "Heavy Distortion",
+   "country": "ca",
+   "faction": "raw-bm",
+   "genres": [
+    "metal",
+    "noise"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "魁北克 raw 黑金屬，評論指其邊緣近 power electronics／harsh noise，持續尖嘯與鏈鋸般 riff。",
+   "listeners": null,
+   "why": "Akitsa 早期作，粗糙演奏、不間斷尖嘯、鏈鋸聲背景 riff，錄音極度原始。",
+   "moodGuess": {
+    "x": 4,
+    "y": 0.9,
+    "z": -1.6,
+    "why": "原始黑金屬，近噪音"
+   },
+   "evidence": [
+    "https://metalreviews.com/reviews/album/7259",
+    "https://www.vm-underground.com/?p=19242",
+    "https://musicbrainz.org/release-group/470910e4-6cd8-3e7d-87b2-40939010d5c3",
+    "https://coverartarchive.org/release-group/470910e4-6cd8-3e7d-87b2-40939010d5c3/front"
+   ],
+   "mbRgMbid": "470910e4-6cd8-3e7d-87b2-40939010d5c3",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "廠牌各來源不一（Hospital Productions 重發）；依據為金屬評論站，偏薄。"
+  },
+  {
+   "artist": "Bastard Noise",
+   "album": "Rogue Astronaut",
+   "year": 2009,
+   "label": "Gravity Records",
+   "country": "us",
+   "faction": "us-noisecore",
+   "genres": [
+    "noise",
+    "metal"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "powerviolence／noise 團，維基列 Tiny Mix Tapes 評論；整張電子噪音加碾核。",
+   "listeners": null,
+   "why": "Bastard Noise 2009 作，噪音加碾核式的失真聲牆。",
+   "moodGuess": {
+    "x": 4.3,
+    "y": 1,
+    "z": -1.3,
+    "why": "noisecore 加電子噪音"
+   },
+   "evidence": [
+    "https://www.tinymixtapes.com/music-review/bastard-noise-rogue-astronaut",
+    "https://musicbrainz.org/release-group/26d0eef4-ccc1-44f4-8b81-c01e6c293947",
+    "https://coverartarchive.org/release-group/26d0eef4-ccc1-44f4-8b81-c01e6c293947/front"
+   ],
+   "mbRgMbid": "26d0eef4-ccc1-44f4-8b81-c01e6c293947",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "TMT 頁抓取失敗（500），未讀到評語；MB 藝人名為 The Bastard Noise；依據最薄，建議汰換。"
+  }
+ ],
+ "notes": [
+  "只交 7 張：WebSearch 6 次用盡，Wikipedia 無樂評。",
+  "未提：Ramleh、Con-Dom 已在 ax1b；Kazumoto Endo、KK Null、Proclamation、Grave Upheaval、Disembowelment（偏可入耳的 funeral doom）、Arkhon Infaustus（MB 查無）無可信極端依據。",
+  "Stalaggh 卡池無（可考慮），未驗證。"
+ ]
+}

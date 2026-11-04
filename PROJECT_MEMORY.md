@@ -1,5 +1,16 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-04｜dip-vinyl-shop｜新頂點盤線 ax6：異端新上架 18 張（卡池沒有的藝人；含店主點名 Peter Kowald Quintet、姜泰煥）
+
+- **內容**：店主「異端有很多自由爵士可以收錄吧？」「應該可以加到 200」→ 撤銷「不收能量型自由爵士」。ax6 只上卡池完全沒有卡的藝人（`chk-artist.mjs` 逐位比對），8 組策展提名 50、研究層汰 32，上線 18 張全為 heresy：Peter Kowald Quintet、강태환《Live At Café Amores》、Okkyung Lee《Ghil》、Birchville Cat Motel、Blasphemy、Conqueror、Bestial Warlust、Black Witchery、Ildjarn、Sete Star Sept、Burning Witch、Dragged Into Sunlight、Mauricio Kagel《Acustica》、Zeitkratzer《WHITEHOUSE electronics》、Mike Patton《Adult Themes for Voice》、Sightings《Absolutes》、Stalaggh《Projekt Misanthropia》、Orthrelm《OV》。**異端 109 → 127**（同級每藝人一張，驗過 0 重複）。
+- **裁定**：研究判 none 的直接汰換、不轉一般卡（52071）；Kowald Quintet、강태환 研究層判 none，依店主點名收（52074，簡介只寫編制與手法）。歐洲／日本／南非自由爵士藝人卡池幾乎都已有卡，歸 ax5。
+- **簡介**：照 `apex-desc-base.md` 寫（不走鉤子層），主線審 18 張改 3 處（刪比喻、月份不寫死）。
+- **上線**：card_catalog 18（tier＋apex:true）、KV 19 鍵回讀一致、試聽 ready 11／unavailable 7、seed 18 列、曲風欄補 3 張（`build-seed-genres` ALBUM_GENRE_FIX）、子曲風樹與抽卡封面重建（`genre-l3-artist-map` 補 Ildjarn／Sete Star Sept／Orthrelm）、Discogs 封面登錄 1。情緒評分 `batch-progress/mood-axes/score-ax6/`。
+- **藝人介紹**：ar-d-268（14 位）、ar-d-269（3 位）上線，skipped 0，審稿改 5 處。
+- 主要檔案：`batch-progress/add-20261104-ax6/*`、`batch-progress/apex-new-20261104/PLAN.md`、`batch-progress/mood-cells-20261022/curation-ax6{a..h}.json`、`desc-tools/batches/{cards,research,output}/add-20261104-ax6-*`、`onboarding-manifest-add-20261104-ax6-20261104.json`、`seed_cards.json`、`data/artist-intros/*`、`batch-progress/artist-intro/{roster-ax6-ar-d-268,roster-ax6-ar-d-269}.json`。
+- 驗證：prepare 0 error、published 0 error；`/album-desc` 抽 2 張 KV-HIT。
+- 留給本機：`album_overrides.tier`（後台依卡池同步頂點旗標）；강태환 listeners 查無。
+
 ### 2026-11-04｜dip-vinyl-shop｜試聽與串流連結修正套用（店主「可以」）＋重跑限流失敗的試聽
 
 - **改動**：套用 10-29 連結稽核的 fix-plan。
