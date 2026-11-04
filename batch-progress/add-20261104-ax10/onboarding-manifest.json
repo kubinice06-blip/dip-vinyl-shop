@@ -2,7 +2,7 @@
  "schemaVersion": 1,
  "batch": "2026-11-04-ax10",
  "batchNote": "新頂點盤線（add-20261104-ax10）",
- "createdAt": "2026-11-04T13:43:36Z",
+ "createdAt": "2026-11-04T13:57:51Z",
  "albums": [
   {
    "artist": "Siege",
@@ -35,7 +35,7 @@
     "url": "https://coverartarchive.org/release-group/c09f949d-56a3-3939-9c12-993921327a8b/front",
     "source": "caa",
     "httpStatus": 200,
-    "checkedAt": "2026-11-04T13:43:36Z",
+    "checkedAt": "2026-11-04T13:57:51Z",
     "visuallyVerified": true,
     "note": "CAA release-group front（HEAD 200）；主線 2026-11-04 縮圖表目視與盤名相符。"
    },
@@ -45,7 +45,7 @@
     "accessibility": 5,
     "listeners": 13085,
     "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-11-04T13:43:36Z",
+    "checkedAt": "2026-11-04T13:57:51Z",
     "note": "機器基線 3/4/3（Last.fm listeners 13085）；主線：grindcore／powerviolence 源頭常被點名的 demo（Choosing Death 專章），經典 4"
    },
    "rarity": "legendary",
@@ -74,18 +74,18 @@
     "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/d3/d0/3e/d3d03e18-9632-6915-c7a2-189c7c83c008/mzaf_3676273034964526145.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 206,
-    "checkedAt": "2026-11-04T13:43:36Z",
+    "checkedAt": "2026-11-04T13:57:51Z",
     "appleCollectionId": "975341363",
     "storefront": "US",
     "collectionExplicitness": "notExplicit",
     "note": "Apple us 975341363「Siege《Drop Dead (30th Anniversary Edition)》」：曲目 6/6 對上 MB 原盤（Apple 共 13 軌），取第 1 軌〈Drop Dead〉。主線 2026-11-04 lookup 核對、試聽檔 HTTP 206。"
    },
    "published": {
-    "cardCatalog": false,
-    "descriptionKv": false,
-    "albumOverride": false,
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
     "seedCards": false,
-    "apexPool": false
+    "apexPool": true
    }
   },
   {
@@ -119,7 +119,7 @@
     "url": "https://coverartarchive.org/release-group/03d82150-33ed-4227-8bc3-426a2aedb633/front",
     "source": "caa",
     "httpStatus": 200,
-    "checkedAt": "2026-11-04T13:43:36Z",
+    "checkedAt": "2026-11-04T13:57:51Z",
     "visuallyVerified": true,
     "note": "CAA release-group front（HEAD 200）；主線 2026-11-04 縮圖表目視與盤名相符。"
    },
@@ -129,7 +129,7 @@
     "accessibility": 5,
     "listeners": 9556,
     "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-11-04T13:43:36Z",
+    "checkedAt": "2026-11-04T13:57:51Z",
     "note": "機器基線 3/4/3（Last.fm listeners 9556）"
    },
    "rarity": "epic",
@@ -158,15 +158,15 @@
    "preview": {
     "status": "unavailable",
     "source": "none",
-    "checkedAt": "2026-11-04T13:43:36Z",
+    "checkedAt": "2026-11-04T13:57:51Z",
     "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
    },
    "published": {
-    "cardCatalog": false,
-    "descriptionKv": false,
-    "albumOverride": false,
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
     "seedCards": false,
-    "apexPool": false
+    "apexPool": true
    }
   },
   {
@@ -192,7 +192,7 @@
     "url": "https://coverartarchive.org/release-group/8e9da33a-d5ef-340d-a33d-810d6bc84d40/front",
     "source": "caa",
     "httpStatus": 200,
-    "checkedAt": "2026-11-04T13:43:36Z",
+    "checkedAt": "2026-11-04T13:57:51Z",
     "visuallyVerified": true,
     "note": "CAA release-group front（HEAD 200）；主線 2026-11-04 縮圖表目視與盤名相符。"
    },
@@ -202,7 +202,7 @@
     "accessibility": 5,
     "listeners": 7612,
     "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-11-04T13:43:36Z",
+    "checkedAt": "2026-11-04T13:57:51Z",
     "note": "機器基線 3/4/3（Last.fm listeners 7612）"
    },
    "rarity": "epic",
@@ -229,15 +229,15 @@
    "preview": {
     "status": "unavailable",
     "source": "none",
-    "checkedAt": "2026-11-04T13:43:36Z",
+    "checkedAt": "2026-11-04T13:57:51Z",
     "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
    },
    "published": {
-    "cardCatalog": false,
-    "descriptionKv": false,
-    "albumOverride": false,
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
     "seedCards": false,
-    "apexPool": false
+    "apexPool": true
    }
   },
   {
@@ -264,7 +264,7 @@
     "url": "https://coverartarchive.org/release-group/d29890cc-4828-3472-b3e0-f00cbe0afdea/front",
     "source": "caa",
     "httpStatus": 200,
-    "checkedAt": "2026-11-04T13:43:36Z",
+    "checkedAt": "2026-11-04T13:57:51Z",
     "visuallyVerified": true,
     "note": "CAA release-group front（HEAD 200）；主線 2026-11-04 縮圖表目視與盤名相符。"
    },
@@ -274,7 +274,7 @@
     "accessibility": 5,
     "listeners": 4477,
     "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-11-04T13:43:36Z",
+    "checkedAt": "2026-11-04T13:57:51Z",
     "note": "機器基線 3/4/3（Last.fm listeners 4477）；主線：Decibel 名人堂收錄，經典 4"
    },
    "rarity": "legendary",
@@ -301,15 +301,15 @@
    "preview": {
     "status": "unavailable",
     "source": "none",
-    "checkedAt": "2026-11-04T13:43:36Z",
+    "checkedAt": "2026-11-04T13:57:51Z",
     "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：Dropdead《Dropdead / Totalitar Split - EP》0/33）。"
    },
    "published": {
-    "cardCatalog": false,
-    "descriptionKv": false,
-    "albumOverride": false,
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
     "seedCards": false,
-    "apexPool": false
+    "apexPool": true
    }
   },
   {
@@ -335,7 +335,7 @@
     "url": "https://coverartarchive.org/release-group/a50f5214-ee61-36c0-967c-635f10f29e6f/front",
     "source": "caa",
     "httpStatus": 200,
-    "checkedAt": "2026-11-04T13:43:36Z",
+    "checkedAt": "2026-11-04T13:57:51Z",
     "visuallyVerified": true,
     "note": "CAA release-group front（HEAD 200）；主線 2026-11-04 縮圖表目視與盤名相符。"
    },
@@ -345,7 +345,7 @@
     "accessibility": 5,
     "listeners": 36939,
     "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-11-04T13:43:36Z",
+    "checkedAt": "2026-11-04T13:57:51Z",
     "note": "機器基線 3/3/3（Last.fm listeners 36939）"
    },
    "rarity": "epic",
@@ -372,15 +372,15 @@
    "preview": {
     "status": "unavailable",
     "source": "none",
-    "checkedAt": "2026-11-04T13:43:36Z",
+    "checkedAt": "2026-11-04T13:57:51Z",
     "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
    },
    "published": {
-    "cardCatalog": false,
-    "descriptionKv": false,
-    "albumOverride": false,
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
     "seedCards": false,
-    "apexPool": false
+    "apexPool": true
    }
   },
   {
@@ -406,7 +406,7 @@
     "url": "https://coverartarchive.org/release-group/7679a1a7-d9aa-3834-ab3e-659bf6118500/front",
     "source": "caa",
     "httpStatus": 200,
-    "checkedAt": "2026-11-04T13:43:36Z",
+    "checkedAt": "2026-11-04T13:57:51Z",
     "visuallyVerified": true,
     "note": "CAA release-group front（HEAD 200）；主線 2026-11-04 縮圖表目視與盤名相符。"
    },
@@ -416,7 +416,7 @@
     "accessibility": 5,
     "listeners": 37124,
     "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-11-04T13:43:36Z",
+    "checkedAt": "2026-11-04T13:57:51Z",
     "note": "機器基線 3/3/3（Last.fm listeners 37124）；主線：Terrorizer 歐洲 grindcore 榜第三、AllMusic 4.5（維基引），經典 4"
    },
    "rarity": "legendary",
@@ -442,15 +442,234 @@
    "preview": {
     "status": "unavailable",
     "source": "none",
-    "checkedAt": "2026-11-04T13:43:36Z",
+    "checkedAt": "2026-11-04T13:57:51Z",
     "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
    },
    "published": {
-    "cardCatalog": false,
-    "descriptionKv": false,
-    "albumOverride": false,
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
     "seedCards": false,
-    "apexPool": false
+    "apexPool": true
+   }
+  },
+  {
+   "artist": "Agoraphobic Nosebleed",
+   "album": "Altered States of America",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "ed896410-fea5-3cd6-adb8-286c5f61da03",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "美國 grindcore／極速短曲：3 吋迷你 CD 塞 100 首、共約 21:42、多數不到 30 秒、許多只有四五秒、最長 1:45（維基曲目表）：Exclaim（Greg Pratt，2008）稱「超過頭的機器碾核」、歌很少超過數秒；Tinnitist（Darryl Sterdan，原 2003）稱奈秒級的高速強度與狂暴。｜⚠ worker _listeners=23367，非流亡。Exclaim 評的是 2008 重發版（含 20 分鐘 bonus 碟），描述原盤部分有效；Metal Reviews 另有負評（說是 You Suffer 重複 99 次）。2003 年盤，非 hardcore 7 吋。｜MB release-group ed896410-fea5-3cd6-adb8-286c5f61da03：title「Altered States of America」、Album、first-release-date 2003-04-01、artist-credit「Agoraphobic Nosebleed」。證據：https://exclaim.ca/music/article/agoraphobic_nosebleed-altered_states_of https://tinnitist.com/2023/05/23/classic-album-review-agoraphobic-nosebleed-altered-states-of-america https://en.wikipedia.org/wiki/Altered_States_of_America 封面：https://coverartarchive.org/release-group/ed896410-fea5-3cd6-adb8-286c5f61da03/front-250 https://musicbrainz.org/release-group/ed896410-fea5-3cd6-adb8-286c5f61da03",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2003,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/ed896410-fea5-3cd6-adb8-286c5f61da03/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-04T13:57:51Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-04 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 5,
+    "listeners": 23367,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-04T13:57:51Z",
+    "note": "機器基線 3/3/3（Last.fm listeners 23367）"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": true,
+    "tier": "heresy",
+    "evidenceUrls": [
+     "https://exclaim.ca/music/article/agoraphobic_nosebleed-altered_states_of",
+     "https://tinnitist.com/2023/05/23/classic-album-review-agoraphobic-nosebleed-altered-states-of-america"
+    ],
+    "reason": "異端（accessibility 5、7 星）：100 首多為數秒的曲目結構、機器鼓整張連打；Exclaim!（2008）與 Tinnitist（2003）兩個可信網域具體描述速度與曲長。"
+   },
+   "description": {
+    "text": "《Altered States of America》是 Agoraphobic Nosebleed 的第三張錄音室專輯，一張 3 吋迷你 CD 塞進 100 首歌，總長約 21 分鐘。許多曲子只有 4 秒，編號曲裡最長的也不到一分鐘，它因此被視為 grindcore 極簡路線的代表作。2003 年由 Relapse 發行，曲目從 0 編到 99。節奏由機器驅動，每首幾秒內爆發完就接進下一首，相連成一串串多段式的短曲組；有些曲目主要是反覆喊出專輯名稱再疊上噪音。歌詞談性、藥物妄想、戰爭暴行與宗教偽善。整張切得這麼碎，聽下來並不散亂。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Altered_States_of_America",
+     "https://tinnitist.com/2023/05/23/classic-album-review-agoraphobic-nosebleed-altered-states-of-america",
+     "https://exclaim.ca/music/article/agoraphobic_nosebleed-altered_states_of",
+     "https://musicbrainz.org/release-group/ed896410-fea5-3cd6-adb8-286c5f61da03"
+    ],
+    "note": "薄細項策展線卡牌版：研究（?）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-04T13:57:51Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：Agoraphobic Nosebleed《Altered States of America (Deluxe Version)》41/99）。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": false,
+    "apexPool": true
+   }
+  },
+  {
+   "artist": "D.R.I.",
+   "album": "Dirty Rotten LP",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "d19cca76-883f-3887-b88e-08dbddfc1c88",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "美國 chaos／早期 thrash hardcore：休士頓 D.R.I. 1983 自資首張：22 首擠在約 17 分鐘（最短 19 秒、最長 2:11），Maximum Rocknroll #5（Tim Yohannan）稱「狂躁、強烈、緊繃的 thrash」，deathmetal.org（Ralph Archer，2013）稱短促爆發的歌像「嗑了興奮劑的推土機」；維基引 Spin 1985 稱其為「一大灘爛泥般的聲響」，吉他單調、人聲吼叫，每秒上百和弦的突襲。被視為最早的 thrashcore 專輯之一。｜⚠ worker _listeners=49612，非流亡。MB primary-type Album（1983-03），實體為 12 吋 EP／LP（33 轉）；總長 16:41–18 分各源不一，寫簡介用「約 17 分鐘」。MRR 描述偏『緊』而非『糊』，異端依據主要是密度與速度（偏中等強度）。｜MB release-group d19cca76-883f-3887-b88e-08dbddfc1c88：title「Dirty Rotten LP」、Album、first-release-date 1983-03、artist-credit「D.R.I.」。證據：https://maximumrocknroll.com/review/mrr-5/dirty-rotten https://www.deathmetal.org/news/30-years-ago-dirty-rotten-lp/ https://en.wikipedia.org/wiki/Dirty_Rotten_LP 封面：https://coverartarchive.org/release-group/d19cca76-883f-3887-b88e-08dbddfc1c88/front-250 https://musicbrainz.org/release-group/d19cca76-883f-3887-b88e-08dbddfc1c88",
+    "queryAlias": "Dirty Rotten Imbeciles"
+   },
+   "research": {
+    "suggestedYear": 1983,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/d19cca76-883f-3887-b88e-08dbddfc1c88/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-04T13:57:51Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-04 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 5,
+    "listeners": 49612,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-04T13:57:51Z",
+    "note": "機器基線 3/3/3（Last.fm listeners 49612）"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": true,
+    "tier": "heresy",
+    "evidenceUrls": [
+     "https://www.deathmetal.org/news/30-years-ago-dirty-rotten-lp/",
+     "https://maximumrocknroll.com/review/mrr-5/dirty-rotten",
+     "https://en.wikipedia.org/wiki/Dirty_Rotten_LP"
+    ],
+    "reason": "異端（accessibility 5、7 星）：22 首平均不到 45 秒、整張短促連打；Spin 稱「爛泥般的聲響」（維基引）與 deathmetal.org 的『推土機』描述，另有 MRR 的『狂躁、強烈 thrash』。"
+   },
+   "description": {
+    "text": "《Dirty Rotten LP》是 D.R.I. 的首張作品，22 首歌合計約 17 分鐘，一首平均不到 45 秒。它被視為最早的 thrashcore 專輯之一，也被當作 crossover thrash 的起點。1982 年 11 月，樂團在鼓手 Eric Brecht 父母家的練團室自己錄製，牆上貼蛋盒隔音；1983 年 3 月先以 33 轉 7 吋 EP 自行發行，同年改制成 12 吋 LP。歌曲結構仍是 hardcore punk，短促爆發，演奏狂躁而緊繃，把金屬 riff 放進 punk 裡；吉他單調吵雜，人聲用嘶吼，錄音粗糙。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Dirty_Rotten_LP",
+     "https://maximumrocknroll.com/review/mrr-5/dirty-rotten",
+     "https://www.deathmetal.org/news/30-years-ago-dirty-rotten-lp/",
+     "https://musicbrainz.org/release-group/d19cca76-883f-3887-b88e-08dbddfc1c88"
+    ],
+    "note": "薄細項策展線卡牌版：研究（?）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d1/1c/69/d11c69ac-4d57-5e45-8060-aff96b994999/mzaf_14239649203179750414.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-11-04T13:57:51Z",
+    "appleCollectionId": "251723777",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 251723777「D.R.I.《The Dirty Rotten LP (Audio Version)》」：曲目 20/22 對上 MB 原盤（Apple 共 44 軌），取第 1 軌〈I Don't Need Society〉。主線 2026-11-04 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": false,
+    "apexPool": true
+   }
+  },
+  {
+   "artist": "Disorder",
+   "album": "Under the Scalpel Blade",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "de205555-8cd6-34bb-8b88-07ffd77455c3",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "英國 noise punk／chaos punk：布里斯托 Disorder 1984 年自家廠牌 12 吋，15 首：Maximum Rocknroll #15（Jeff Bale，1984-07）稱製作原始到像不是清醒時錄的，毛躁吉他、空洞巨響的鼓、高頻轟隆的貝斯，正配上荒謬的 thrash 噪音；Svart 重發說明稱每首不到兩分鐘，極速鼓加失真吉他與尖叫，「純粹的狂怒」。｜⚠ 依據偏薄：可信來源只有 MRR #15 一篇（講製作粗糙，未講速度）；速度描述來自 Svart 廠牌重發文案。CAA 無圖，封面用 discogsReleaseId=1227189（Discogs master 378274）。worker _listeners=4658，非流亡。MB 另有 1993 合輯（df5a6615…）不要誤取。MRR 頁面標題拼作 Scalple。｜MB release-group de205555-8cd6-34bb-8b88-07ffd77455c3：title「Under the Scalpel Blade」、Album、first-release-date 1984、artist-credit「Disorder」。證據：https://www.maximumrocknroll.com/review/mrr-15/under-the-scalple-blade-lp/ https://www.svartrecords.com/en/product/disorder-under-the-scalpel-blade-lp/12455 https://www.discogs.com/release/1227189-Disorder-Under-The-Scalpel-Blade 封面：Discogs release id 1227189（1984 UK Disorder Records 12 吋 LP，6 張圖） https://musicbrainz.org/release-group/de205555-8cd6-34bb-8b88-07ffd77455c3 https://www.allmusic.com/album/under-the-scalpel-blade-one-day-son-mw0000054087",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1984,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "source": "discogs",
+    "discogsMasterId": "378274",
+    "discogsReleaseId": "1227189",
+    "url": "https://i.discogs.com/MAiPEFX2W1EVodowFdD8Zus2KNB1LB9pjjpkpYgp8AU/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyMjcx/ODktMTQ0MDYxNTEw/My01MzQyLmpwZWc.jpeg",
+    "note": "CAA release-group 無圖；取 Discogs release 1227189（Disorder Records AARGH!-1、1984、UK、LP 15 軌）主圖，封面印「Under the Scalple Blade／Disorder」，主線 2026-11-04 目視核對。",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-04T13:57:51Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 5,
+    "listeners": 4658,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-04T13:57:51Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 4658）"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": true,
+    "tier": "heresy",
+    "evidenceUrls": [
+     "https://www.maximumrocknroll.com/review/mrr-15/under-the-scalple-blade-lp/",
+     "https://www.svartrecords.com/en/product/disorder-under-the-scalpel-blade-lp/12455"
+    ],
+    "reason": "異端（accessibility 5、7 星）：MRR #15（1984）具體描述原始糊爛的錄音（毛躁吉他、空洞巨鼓）與 thrashing noise；Svart 廠牌文案補『一波接一波的怒氣』（輔證）。"
+   },
+   "description": {
+    "text": "《Under the Scalpel Blade》是布里斯托樂團 Disorder 1984 年的首張 LP，15 首約 33 分鐘，難入耳之處在錄音本身：鼓聲空洞巨響，吉他毛躁，高頻的貝斯咕嚕作響，混成雜亂的 thrash 噪音。錄音雖然原始，它仍打進英國獨立唱片排行榜。樂團拒絕簽給 Riot City，自己成立 Disorder Records，早期單曲已因失真過重被 John Peel 批評。同期的 Crass、Conflict 在做風格實驗，Disorder 始終是直來直去的 punk，口號是「Make Homebrew, Not War」。",
+    "sourceUrls": [
+     "https://punkygibbon.co.uk/bands/d/disorder_underlp.html",
+     "https://www.svartrecords.com/en/product/disorder-under-the-scalpel-blade-lp/12455",
+     "https://en.wikipedia.org/wiki/Disorder_(band)",
+     "https://www.maximumrocknroll.com/review/mrr-15/under-the-scalple-blade-lp/",
+     "https://musicbrainz.org/release-group/de205555-8cd6-34bb-8b88-07ffd77455c3"
+    ],
+    "note": "薄細項策展線卡牌版：研究（?）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-04T13:57:51Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": false,
+    "apexPool": true
    }
   }
  ]
