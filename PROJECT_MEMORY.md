@@ -1,5 +1,15 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-04｜dip-vinyl-shop｜add-20261104-zxzz：左小祖咒《左小祖咒在地安門》＋代表作《你知道東方在哪一邊》《走失的主人》上架
+
+- **店主 11-04**：「左小祖咒竟然沒有地安門那張。」正式盤名是《左小祖咒在地安門》（2001）。順查代表作補 2 張；卡池左小祖咒由 2 張變 5 張。
+- **上架 3（全一般卡）**：《左小祖咒在地安門》2001 4／4／3 uncommon；《你知道東方在哪一邊》2008 4／4／3 uncommon；《走失的主人》1998 4／4／4 epic。不收《美國》（電影《雲的南方》配樂集）、《大事》等（無專輯級獎項）。
+- **版本**：東方鎖 2008 雙 CD（Apple TW 拆上下集、上集標 2007 判錯植）；走失的主人 MB 只有 2009 再版 RG，釘之、年份鎖 1998 香港首版，舊稿「重錄版」推翻。
+- **審稿**：研究 1 組（Sonnet）；主線寫、審 3 張（181／201／217 字）。研究稿「東方獲傳媒大獎年度最佳唱片」查證不實（2008 蘇打綠、2009 陳昇）已更正；地安門補「第二屆十大華語唱片」。
+- **寫入**：card_catalog 3（成功 3／3）；KV desc2＋desc4 共 6 鍵回讀逐字一致（kv-token-check exit 0）；試聽 Apple TW ready 3（靜態路徑）；seed 3 列。封面：CAA 2、Apple-verified 1，主線目視。
+- **驗證**：prepare／published gate 0 error；qa-batch research／out、qa-check-research 0 標記。藝人介紹已有，不補。子曲風樹與抽卡封面重建。
+- 主要檔案：`seed_cards.json`、`data/apple-audio-*.json`、`onboarding-manifest-add-20261104-zxzz-20261104.json`、`batch-progress/add-20261104-zxzz/`、`desc-tools/batches/{cards,research,input,output}/add-20261104-zxzz*`。
+
 ### 2026-11-04｜dip-vinyl-shop｜rerate-20261104-loud：硬蕊度把音量與躁度算進去，全池重看（改 475 張）
 
 - **店主 11-04 定案**：硬蕊度＝入耳難度，音量、失真、速度、嘶吼都算。下限：失真龐克／流行龐克／車庫／傳統與另類金屬／音牆 shoegaze／噪音搖滾至少 3（blink-182 是 3 的錨點）；hardcore／thrash／crust／death／black／grind／sludge 至少 4；harsh noise 5。只往上調；整張偏不插電、抒情、柔和的不套。錨點寫進 `ALBUM_ONBOARDING.md` §0.8.1、`batch-progress/rerate-20261101/RUBRIC.md`。
