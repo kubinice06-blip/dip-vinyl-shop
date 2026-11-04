@@ -1,5 +1,18 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-04｜dip-vinyl-shop｜新頂點盤線 ax10：英語圈地下 hardcore／punk 異端 +11（升格 2＋新上架 9）
+
+- **店主 11-04**：「繼續補，繼續查，應該還有地下冷門 hardcore punk 可以找。」ax10 管美國、加拿大、英國、愛爾蘭、澳洲、紐西蘭（ax9 另一工作階段管日亞歐陸拉美）。標準照放寬版：可信來源具體描述整張持續高強度（noise punk、thrashcore／powerviolence、noisecore、chaos punk）；結構清楚的 hardcore、一般 d-beat／crust、一般碾核不收。
+- **升格 2**：The Locust《Plague Soundscapes》、Discharge《Hear Nothing See Nothing Say Nothing》（邊緣收，可逆；硬蕊 4→5）。Drunks with Guns、Rudimentary Peni、Antisect 維持一般卡。
+- **新上架 9（全 heresy）**：Siege《Drop Dead》、Crossed Out（同名；兩張走 `hardcore-7inch`）、Charles Bronson《Youth Attack!》、Dropdead、Despise You《West Side Horizons》、Extreme Noise Terror《A Holocaust in Your Head》、Agoraphobic Nosebleed《Altered States of America》、D.R.I.《Dirty Rotten LP》、Disorder《Under the Scalpel Blade》（Discogs 封面登錄）。**流亡 0**（listeners 最低 311）。
+- **異端 157 → 168**，同級每藝人一張 0 重複（含互為子字串檢查）。策展 30＋升格候選 5，研究汰 21（多為查不到針對該張的聽感、或只是一般 crust／d-beat／grind）。
+- **寫入**：card_catalog 11（tier heresy＋apex，讀回 11/11）；KV 11 鍵回讀一致（升格舊值 `kv-before-ax10u.json`）；試聽 ready 2（Siege、D.R.I.）／unavailable 7；seed 新增 9 列、改 2 列；子曲風樹與抽卡封面重建；情緒評分 `score-ax10` 9 張全暴躁格。
+- **審稿**：改 6 張（禁語「必聽」×2、媒體名人堂與榜單名次、D-beat 指鼓型不是 riff、Siege〈Grim Reaper〉有薩克斯風無據、Disorder「拒簽 Riot City」與 Peel 評語各源相反）。
+- **藝人介紹**：ar-d-273 6 位＋ar-d-274 3 位上線（skipped 0）。`cut-artist-intros-ax.mjs` 同批第二號會覆蓋名冊，已手動併回。
+- **驗證**：prepare／published gate 0 error；對 origin claude/* 分支 seed 去重 0 撞；`kv-token-check` exit 0；`build-card-moods` 錨點 104/104。
+- **留給本機**：`album_overrides.tier` 11 張（`batch-progress/add-20261104-ax10/album-overrides-tier.json`）。研究層記下的舊簡介疑點：Drunks with Guns 卡是 1987 Chopper 專輯、舊簡介寫 1985 Cheap Beer 7 吋；Antisect 實為 1984-01 發行（seed 1983）。
+- 主要檔案：`batch-progress/add-20261104-ax10/*`、`batch-progress/apex-new-20261104/PLAN.md`、`batch-progress/mood-cells-20261022/curation-ax10{a,b,c}.json`、`desc-tools/batches/{cards,research,output}/add-20261104-ax10*`、`onboarding-manifest-add-20261104-ax10-20261104.json`、`seed_cards.json`、`data/artist-intros/*`、`data/discogs-cover-registry.json`、`batch-progress/mood-axes/score-ax10/*`。
+
 ### 2026-11-04｜dip-vinyl-shop｜頻率光譜：FINE 換成 RADIO 電台模式（試聽播完自動轉到下一張）
 
 - **改動**：店主「先做電台版，播完換下一個，可以在下方控制面板啟動或關閉；將原本的 FINE 功能改成這個功能，名字也要換」。

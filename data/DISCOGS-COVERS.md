@@ -3,7 +3,7 @@
 > 這份是產出物，由 `node scripts/render-discogs-registry.mjs` 從
 > `data/discogs-cover-registry.json` 產生。**要改狀態請改 JSON**，不要改這份。
 
-共 **624** 張走 ALBUM_ONBOARDING §4 的 `discogs` 封面來源（待看圖 241、已核可 382、已退回 1）。
+共 **628** 張走 ALBUM_ONBOARDING §4 的 `discogs` 封面來源（待看圖 241、已核可 386、已退回 1）。
 最後更新：2026-11-04
 
 **收錄規則**：藝人與盤名相符只是入場券，還要在年份／廠牌／目錄號裡至少對上兩項；
@@ -748,6 +748,25 @@
 |---|---|---:|---|---|---|---|
 | Milford Graves 《Bäbi》 | [#1357109](https://www.discogs.com/release/1357109) | 1977 | IPS (2) | IPS ST004 | Discogs master 1354146 的版本、主線目視與盤名相符 | ok |
 | William Hooker 《Hard Time》 | [#2534597](https://www.discogs.com/release/2534597) | 1998 | Squealer | SQLR026 | 唯一版本、主線目視與盤名相符 | ok |
+
+## add-20261104-ax6（1 張）
+
+| 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
+|---|---|---:|---|---|---|---|
+| 강태환 《Live At Café Amores》 | [#11466767](https://www.discogs.com/release/11466767) | 2018 | NoBusiness Records | NBCD 104 | Discogs master 1433389 的版本、主線目視與盤名相符 | ok |
+
+## add-20261104-ax8（2 張）
+
+| 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
+|---|---|---:|---|---|---|---|
+| Archgoat 《Whore of Bethlehem》 | [#1651388](https://www.discogs.com/release/1651388) | 2006 | Hammer Of Hate | HOH014 | Discogs master 12194 的版本、主線目視與盤名相符 | ok |
+| Pierre Schaeffer 《5 études de bruits / Études aux objets》 | [#2713820](https://www.discogs.com/release/2713820) | 2010 | Disques Dreyfus | FDM 46050 36286 1 | 唯一版本、主線目視與盤名相符 | ok |
+
+## add-20261104-ax10（1 張）
+
+| 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
+|---|---|---:|---|---|---|---|
+| Disorder 《Under the Scalpel Blade》 | [#1227189](https://www.discogs.com/release/1227189) | 1984 | Disorder Records (2) | AARGH!-1 | 年份 1984、廠牌 Disorder Records、型態 LP 15 軌（與 MB 一致）、主線目視與盤名相符 | ok |
 
 ## c49（3 張）
 

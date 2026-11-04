@@ -1,0 +1,456 @@
+{
+ "group": "ax10a",
+ "factions": [
+  {
+   "id": "us-hardcore-extreme",
+   "zh": "美加極端 hardcore／powerviolence",
+   "count": 14,
+   "why": "美加地下 thrashcore／powerviolence／noise 錄音"
+  }
+ ],
+ "albums": [
+  {
+   "artist": "Siege",
+   "album": "Drop Dead",
+   "year": 1984,
+   "label": "Radiobeat 六首 demo（Relapse 1994 年 CD 重發）",
+   "country": "us",
+   "faction": "us-hardcore-extreme",
+   "genres": [
+    "rock"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "1984 年六首 demo，維基稱極快速度配尖叫與咆哮，被視為 grindcore／powerviolence 先驅，Lars Ulrich 稱其為聽過最快的團。",
+   "listeners": null,
+   "why": "Weymouth／波士頓團 Siege 1984 年在 Radiobeat 錄的六首 demo：維基稱其「極快的速度配上 Mahoney 的尖叫與咆哮」，一位現場目擊者形容「聽起來隨時要散架、衝過七百英里，突然又全部併回一起」；Lars Ulrich 說它是他聽過最快的樂團，Dropdead 團名即出自此 demo。幾十秒一首、整份幾乎無喘息，無旋律結構。",
+   "moodGuess": {
+    "x": 4.2,
+    "y": 1.5,
+    "z": -1.2,
+    "why": "極速、尖叫咆哮、短曲急停，壓迫無喘息"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/c09f949d-56a3-3939-9c12-993921327a8b",
+    "https://coverartarchive.org/release-group/c09f949d-56a3-3939-9c12-993921327a8b/front",
+    "https://en.wikipedia.org/wiki/Siege_(band)",
+    "https://en.wikipedia.org/wiki/Dropdead"
+   ],
+   "mbRgMbid": "c09f949d-56a3-3939-9c12-993921327a8b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "hardcore-7inch：Siege 只留下 1984 年 6 首 demo 卡帶，以 Drop Dead 之名流傳（Relapse 1994 年 CD 才正式發行），此為唯一代表錄音",
+   "uncertain": "MB primary-type 為 EP（1984）；實體是 demo 卡帶，無原版 7 吋；Last.fm listeners 13085 不符流亡，故只走異端。"
+  },
+  {
+   "artist": "Infest",
+   "album": "Slave",
+   "year": 1988,
+   "label": "Off the Disk",
+   "country": "us",
+   "faction": "us-hardcore-extreme",
+   "genres": [
+    "rock"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "1988 年加州 powerviolence 先驅唯一 LP；維基與聽眾視為定義 powerviolence 的錄音之一。",
+   "listeners": null,
+   "why": "Valencia, California 的 Infest 1988 年 LP：維基稱其為 powerviolence 樂團，專輯封面以戰爭與貧窮的政治影像為主；Sputnik Music 用戶稱之為「為後來所有團設下高標的 powerviolence 里程碑」。強度依據偏聽眾描述，缺專業樂評對曲長與速度的具體描述。",
+   "moodGuess": {
+    "x": 4,
+    "y": 1.5,
+    "z": -1,
+    "why": "powerviolence 快慢急轉、嘶吼"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/6563ac44-af44-4dd6-ad47-2618f999915f",
+    "https://coverartarchive.org/release-group/6563ac44-af44-4dd6-ad47-2618f999915f/front",
+    "https://en.wikipedia.org/wiki/Infest_(band)",
+    "https://www.sputnikmusic.com/album/34181/Infest-Slave/"
+   ],
+   "mbRgMbid": "6563ac44-af44-4dd6-ad47-2618f999915f",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "uncertain": "依據偏薄：未找到專業樂評；Sputnik 為聽眾評論。Last.fm 6790 非流亡。"
+  },
+  {
+   "artist": "Crossed Out",
+   "album": "Crossed Out",
+   "year": 1992,
+   "label": "Slap-A-Ham",
+   "country": "us",
+   "faction": "us-hardcore-extreme",
+   "genres": [
+    "rock"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "維基：定義 powerviolence 的核心團之一，風格含 blast beat 與極快速度，Insect Warfare 稱其為「powerviolence 暗黑領主」。",
+   "listeners": null,
+   "why": "Encinitas, California 的 Crossed Out 自創 7 吋：維基稱其以政治歌詞、blast beat 與極快速度定義 powerviolence，Insect Warfare 的 Beau Beasley 稱其為「powerviolence 的暗黑領主」；歌曲極短、急停急轉。",
+   "moodGuess": {
+    "x": 4.2,
+    "y": 1.4,
+    "z": -1.2,
+    "why": "blast beat、短促暴烈、政治怒吼"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/03d82150-33ed-4227-8bc3-426a2aedb633",
+    "https://coverartarchive.org/release-group/03d82150-33ed-4227-8bc3-426a2aedb633/front",
+    "https://en.wikipedia.org/wiki/Crossed_Out"
+   ],
+   "mbRgMbid": "03d82150-33ed-4227-8bc3-426a2aedb633",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "hardcore-7inch：Crossed Out 自創 7 吋 EP（Slap-A-Ham）是其唯一原創錄音形式，專輯形態僅有 1999 年 discography 合輯",
+   "uncertain": "MB 標為 EP 且年份 1991，維基列 1992 Slap-A-Ham 7 吋；依據偏薄（僅維基＋MB）。Last.fm 9556 非流亡。"
+  },
+  {
+   "artist": "No Comment",
+   "album": "Common Senseless",
+   "year": 1989,
+   "label": "Slap-A-Ham",
+   "country": "us",
+   "faction": "us-hardcore-extreme",
+   "genres": [
+    "rock"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "維基稱 No Comment 為 1990 年代初 powerviolence 的重要先驅，與 Crossed Out、Capitalist Casualties 同屬西岸場景。",
+   "listeners": null,
+   "why": "Sherman Oaks, California 的 No Comment（前身 Nothing Matters）：維基稱其「在 1990 年代初協助開創 powerviolence」，以對 hardcore 攻擊性的極端詮釋著稱，Beattie 自稱要讓 hardcore 保持活著。具體曲長速度描述缺。",
+   "moodGuess": {
+    "x": 4,
+    "y": 1.5,
+    "z": -1,
+    "why": "powerviolence 早期、暴烈短曲"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/7090a40c-b510-4abe-a5de-9cf64eb43196",
+    "https://coverartarchive.org/release-group/7090a40c-b510-4abe-a5de-9cf64eb43196/front",
+    "https://en.wikipedia.org/wiki/No_Comment_(band)"
+   ],
+   "mbRgMbid": "7090a40c-b510-4abe-a5de-9cf64eb43196",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "hardcore-7inch：No Comment 的實體多為 7 吋，Common Senseless EP 為其首批代表錄音（MB 另有 1999 年 87-93 合輯）",
+   "uncertain": "依據偏薄：僅維基＋MB 站；MB 為 EP（1989）。未確認 EP 標題為其最極端一張。Last.fm 623。"
+  },
+  {
+   "artist": "Deep Wound",
+   "album": "Deep Wound",
+   "year": 1983,
+   "label": "Radiobeat",
+   "country": "us",
+   "faction": "us-hardcore-extreme",
+   "genres": [
+    "rock"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "維基：只出一張自創 7 吋，影響麻州 hardcore 場景並被視為 grindcore 發展的前驅（含 Lou Barlow、J Mascis）。",
+   "listeners": null,
+   "why": "Westfield, Massachusetts 的 Deep Wound 1983 年唯一自創 7 吋：維基稱其影響麻州 hardcore 與 grindcore 發展，樂手含 Lou Barlow 與 J Mascis；受 Anti-Pasti、Discharge 影響，thrashcore 高速短曲。具體聽感描述少。",
+   "moodGuess": {
+    "x": 3.8,
+    "y": 1.5,
+    "z": -0.8,
+    "why": "thrashcore 高速短曲"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/435e3321-a073-3a26-a4aa-5fa526dbc6f4",
+    "https://coverartarchive.org/release-group/435e3321-a073-3a26-a4aa-5fa526dbc6f4/front",
+    "https://en.wikipedia.org/wiki/Deep_Wound"
+   ],
+   "mbRgMbid": "435e3321-a073-3a26-a4aa-5fa526dbc6f4",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "hardcore-7inch：Deep Wound 自創 7 吋為其唯一單獨發行（另有 1997 discography 合輯）",
+   "uncertain": "依據偏薄；MB 為 EP（1983）。Last.fm 12736 非流亡。"
+  },
+  {
+   "artist": "Septic Death",
+   "album": "Now That I Have the Attention What Do I Do With It?",
+   "year": 1986,
+   "label": "Pusmort",
+   "country": "us",
+   "faction": "us-hardcore-extreme",
+   "genres": [
+    "rock"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "維基稱 Septic Death 為 grindcore、thrashcore 與 speedcore 發展的重大影響；Pushead 主唱，Japan 大賣。",
+   "listeners": null,
+   "why": "Boise, Idaho 的 Septic Death（主唱為插畫家 Pushead）1986 年唯一 LP：維基稱其對 grindcore、thrashcore 與 speedcore 影響重大。具體聽感（歌長、錄音）未取得可信描述，依據薄。",
+   "moodGuess": {
+    "x": 3.8,
+    "y": 1.5,
+    "z": -1,
+    "why": "thrash 高速嘶吼，粗糙錄音"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/1be60540-35f3-48f2-8300-30c589f231c3",
+    "https://coverartarchive.org/release-group/1be60540-35f3-48f2-8300-30c589f231c3/front",
+    "https://en.wikipedia.org/wiki/Septic_Death",
+    "https://punk.fandom.com/wiki/Septic_Death"
+   ],
+   "mbRgMbid": "1be60540-35f3-48f2-8300-30c589f231c3",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "uncertain": "依據偏薄，建議主線可汰。Last.fm 311（略超 299，非流亡）。"
+  },
+  {
+   "artist": "Charles Bronson",
+   "album": "Youth Attack!",
+   "year": 1997,
+   "label": "Lengua Armada / Coalition",
+   "country": "us",
+   "faction": "us-hardcore-extreme",
+   "genres": [
+    "rock"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "維基：以極短、快速的歌曲與嘲諷 hardcore 場景的歌詞著稱；Youth Attack! 為唯一錄音室專輯。",
+   "listeners": null,
+   "why": "DeKalb, Illinois 的 Charles Bronson：維基稱其歌曲「非常短、常常極快」，歌詞諷刺 hardcore 場景；《Youth Attack!》是唯一錄音室專輯（主唱在樂團解散後才於芝加哥補錄人聲）。",
+   "moodGuess": {
+    "x": 4,
+    "y": 1.3,
+    "z": -1,
+    "why": "極短極快、嘲諷式吼叫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/8e9da33a-d5ef-340d-a33d-810d6bc84d40",
+    "https://coverartarchive.org/release-group/8e9da33a-d5ef-340d-a33d-810d6bc84d40/front",
+    "https://en.wikipedia.org/wiki/Charles_Bronson_(band)"
+   ],
+   "mbRgMbid": "8e9da33a-d5ef-340d-a33d-810d6bc84d40",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "uncertain": "依據偏薄（僅維基）。Last.fm 7612 非流亡。"
+  },
+  {
+   "artist": "Spazz",
+   "album": "La Revancha",
+   "year": 1997,
+   "label": "Slap-A-Ham",
+   "country": "us",
+   "faction": "us-hardcore-extreme",
+   "genres": [
+    "rock"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "維基稱 Spazz 為 powerviolence 代表，三人輪流吼叫，荒謬長曲名、B 級電影取樣穿插。",
+   "listeners": null,
+   "why": "Spazz：維基稱其為 powerviolence 團，三位成員輪流吼叫，穿插 B 級電影與功夫片取樣、偶爾加入嘻哈節拍與薩克斯風、banjo；唱片稀少而炙手可熱。《La Revancha》為其 1997 年專輯。",
+   "moodGuess": {
+    "x": 4,
+    "y": 1.8,
+    "z": -0.5,
+    "why": "快速短曲混取樣，荒謬"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/78f31593-ee35-3110-8fa4-f92087714468",
+    "https://coverartarchive.org/release-group/78f31593-ee35-3110-8fa4-f92087714468/front",
+    "https://en.wikipedia.org/wiki/Spazz_(band)"
+   ],
+   "mbRgMbid": "78f31593-ee35-3110-8fa4-f92087714468",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "uncertain": "依據偏薄；是否為最極端一張未確認（另有 Crush Kill Destroy、Sweatin' 系列）。Last.fm 21942 非流亡。"
+  },
+  {
+   "artist": "Capitalist Casualties",
+   "album": "Disassembly Line",
+   "year": 1992,
+   "label": "待確認",
+   "country": "us",
+   "faction": "us-hardcore-extreme",
+   "genres": [
+    "rock"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "維基稱 Capitalist Casualties 為 powerviolence／hardcore 團，1986 年起、多張 split；《Disassembly Line》為其 1992 年專輯。",
+   "listeners": null,
+   "why": "Rohnert Park, California 的 Capitalist Casualties：維基稱其為 powerviolence／hardcore，多張 split 並國際巡演；《Disassembly Line》為其 1992 年專輯。具體聽感描述缺，依據偏薄。",
+   "moodGuess": {
+    "x": 3.9,
+    "y": 1.5,
+    "z": -1,
+    "why": "powerviolence 高速暴烈"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/38f6fb5b-878f-335a-ad5b-f152000fd664",
+    "https://coverartarchive.org/release-group/38f6fb5b-878f-335a-ad5b-f152000fd664/front",
+    "https://en.wikipedia.org/wiki/Capitalist_Casualties"
+   ],
+   "mbRgMbid": "38f6fb5b-878f-335a-ad5b-f152000fd664",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "uncertain": "依據偏薄，廠牌未確認；建議主線可汰。Last.fm 31782 非流亡。"
+  },
+  {
+   "artist": "Dropdead",
+   "album": "Dropdead",
+   "year": 1993,
+   "label": "待確認",
+   "country": "us",
+   "faction": "us-hardcore-extreme",
+   "genres": [
+    "rock"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "維基：Dropdead 歌曲短且極快，鮮少超過兩分鐘，Nasum 等團翻唱；團名本身出自 Siege demo。",
+   "listeners": null,
+   "why": "Providence, Rhode Island 的 Dropdead：維基稱其歌曲「普遍很短且極快，少有超過兩分鐘」，影響來源含 Siege、Infest、Septic Death 與 Swans、Merzbow；Nasum 翻唱過其歌。",
+   "moodGuess": {
+    "x": 4,
+    "y": 1.5,
+    "z": -1,
+    "why": "兩分鐘內的極速短曲"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/d29890cc-4828-3472-b3e0-f00cbe0afdea",
+    "https://coverartarchive.org/release-group/d29890cc-4828-3472-b3e0-f00cbe0afdea/front",
+    "https://en.wikipedia.org/wiki/Dropdead"
+   ],
+   "mbRgMbid": "d29890cc-4828-3472-b3e0-f00cbe0afdea",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "uncertain": "MB 有兩張同名 Dropdead（1993、1998）；選 1993 版本，需確認是否為首張 LP 或合輯；依據偏薄。Last.fm 4477。"
+  },
+  {
+   "artist": "Man Is the Bastard",
+   "album": "Thoughtless...",
+   "year": 1995,
+   "label": "Gravity",
+   "country": "us",
+   "faction": "us-hardcore-extreme",
+   "genres": [
+    "rock"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "維基稱 Man Is the Bastard 大量使用噪音，成員 Henry Barnes 帶入電子噪音，風格被歸為 powerviolence、noise rock 與 sludge metal。",
+   "listeners": null,
+   "why": "Claremont, California 的 Man Is the Bastard：維基稱其「大量使用噪音」，Henry Barnes 帶入電子設備，後分支出噪音團 Bastard Noise；風格橫跨 powerviolence、noise rock、sludge。《Thoughtless...》為 1995 年 Gravity LP（MB 標 1996，標題無省略號）。",
+   "moodGuess": {
+    "x": 4,
+    "y": 1.2,
+    "z": -1.5,
+    "why": "powerviolence 混電子噪音、渾濁"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/2005792b-df08-37dc-9910-d282593d9a05",
+    "https://coverartarchive.org/release-group/2005792b-df08-37dc-9910-d282593d9a05/front",
+    "https://en.wikipedia.org/wiki/Man_Is_the_Bastard"
+   ],
+   "mbRgMbid": "2005792b-df08-37dc-9910-d282593d9a05",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "uncertain": "MB 年份 1996、標題 Thoughtless；維基 1995 Thoughtless...；依據偏薄。Last.fm 15304 非流亡。"
+  },
+  {
+   "artist": "The Endless Blockade",
+   "album": "Turn Illness Into a Weapon",
+   "year": 2005,
+   "label": "待確認",
+   "country": "ca",
+   "faction": "us-hardcore-extreme",
+   "genres": [
+    "rock"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "MB 標加拿大 powerviolence／grindcore 團；本張未取得專業樂評，僅身分與封面確認。",
+   "listeners": null,
+   "why": "The Endless Blockade（加拿大）2005 年專輯。WebSearch 找不到可信評論，無法具體描述聽感，僅 MB 標籤為 powerviolence／grindcore。",
+   "moodGuess": {
+    "x": 4,
+    "y": 1.2,
+    "z": -1.5,
+    "why": "powerviolence／grindcore 推測"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/412f327f-8899-388b-85d3-0368548aa861",
+    "https://coverartarchive.org/release-group/412f327f-8899-388b-85d3-0368548aa861/front",
+    "https://musicbrainz.org/artist/90ac54dc-a490-4e6a-8d39-c2aeb5e84b7e"
+   ],
+   "mbRgMbid": "412f327f-8899-388b-85d3-0368548aa861",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "uncertain": "依據極薄，建議汰換（無可信來源）。Last.fm 1952 非流亡。"
+  },
+  {
+   "artist": "Hellnation",
+   "album": "Colonized",
+   "year": 1993,
+   "label": "Sound Pollution",
+   "country": "us",
+   "faction": "us-hardcore-extreme",
+   "genres": [
+    "rock"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "維基描述 Hellnation 為 thrashcore／powerviolence／grindcore，快速 riff 與大量失真。",
+   "listeners": null,
+   "why": "Covington, Kentucky 的 Hellnation：維基稱其聲音為 thrashcore、powerviolence 與 grindcore，「快速的吉他 riff、大量失真」。《Colonized》為 1993 年專輯，具體曲長未取得。",
+   "moodGuess": {
+    "x": 3.9,
+    "y": 1.4,
+    "z": -1.2,
+    "why": "快速 riff 大失真"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/b714095f-aa1a-45e0-9248-c400487d2989",
+    "https://coverartarchive.org/release-group/b714095f-aa1a-45e0-9248-c400487d2989/front",
+    "https://en.wikipedia.org/wiki/Hellnation"
+   ],
+   "mbRgMbid": "b714095f-aa1a-45e0-9248-c400487d2989",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "uncertain": "依據偏薄；專輯是否最極端未確認。Last.fm 572 非流亡。"
+  },
+  {
+   "artist": "Despise You",
+   "album": "West Side Horizons",
+   "year": 1999,
+   "label": "Slap-A-Ham",
+   "country": "us",
+   "faction": "us-hardcore-extreme",
+   "genres": [
+    "rock"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "維基稱 Despise You 影響 powerviolence，被某些人稱為「世界上最憤怒的樂團」，歌詞陰暗。",
+   "listeners": null,
+   "why": "Inglewood, California 的 Despise You：維基稱其影響 powerviolence，歌詞涉及幫派暴力、厭世與自厭，被稱為「世界上最憤怒的樂團」，初期以假名發行、從不現場演出。《West Side Horizons》為 1999 年專輯。",
+   "moodGuess": {
+    "x": 4,
+    "y": 1.3,
+    "z": -1.5,
+    "why": "陰暗憤怒、緩急轉換推測"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/a50f5214-ee61-36c0-967c-635f10f29e6f",
+    "https://coverartarchive.org/release-group/a50f5214-ee61-36c0-967c-635f10f29e6f/front",
+    "https://en.wikipedia.org/wiki/Despise_You"
+   ],
+   "mbRgMbid": "a50f5214-ee61-36c0-967c-635f10f29e6f",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "uncertain": "依據偏薄；Last.fm 36939 非流亡；廠牌未逐項核對。"
+  }
+ ],
+ "notes": [
+  "全數 Last.fm listeners 皆 >299（最低 311），無流亡，皆走異端。",
+  "多數依據偏薄：僅維基＋MB＋CAA，缺專業樂評；建議汰換 Endless Blockade、Capitalist Casualties、Septic Death。",
+  "Void、Neos、Iron Lung、Gasp、Lack of Interest、Asshole Parade 未提（查無可信描述或強度不足）。",
+  "Neanderthal、Man Is the Bastard 等去重撞名皆為假陽性。"
+ ]
+}
