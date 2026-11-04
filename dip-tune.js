@@ -324,7 +324,7 @@ html.tune-inapp-lock body{padding-top:120px}
       controls = new THREE.OrbitControls(camera, glc); controls.enableDamping = true; controls.dampingFactor = .08; controls.autoRotate = true; controls.autoRotateSpeed = .6; controls.minDistance = 1.6; controls.maxDistance = 7; controls.enablePan = false;
       let idleT = 0; controls.addEventListener('start', () => { controls.autoRotate = false; clearTimeout(idleT); }); controls.addEventListener('end', () => { idleT = setTimeout(() => { controls.autoRotate = true; }, 6000); });
     }
-    const S = c => [c.px / 50 - 1, -(c.py / 50 - 1), c.pz / 50 - 1];
+    const S = S3;
     const NG = CARDS.length; const pos = new Float32Array(NG * 3); col = new Float32Array(NG * 3); base = new Float32Array(NG * 3);
     const tmp = new THREE.Color();
     for (let i = 0; i < NG; i++) { const c = CARDS[i]; tmp.set(CELL_COLOR[c.cell]); base[i * 3] = tmp.r; base[i * 3 + 1] = tmp.g; base[i * 3 + 2] = tmp.b; const [x, y, z] = S(c); pos[i * 3] = x; pos[i * 3 + 1] = y; pos[i * 3 + 2] = z; }
@@ -358,7 +358,14 @@ html.tune-inapp-lock body{padding-top:120px}
     THREE_OK = true;
     return true;
   }
-  const S3 = c => [c.px / 50 - 1, -(c.py / 50 - 1), c.pz / 50 - 1];
+  // 星星在星圖上的位置用「原始分數」，不用百分位（2026-11-04 店主：「我沒有要平均分配，此起彼落的比較自然，現在好像每個都等距」）。
+  // 能量 1–5、質地與色溫 −2～+2 線性映到立方體 −1～+1：大部分卡擠在中段、極端值稀稀落落，越靠外越極端。
+  // 分數只到一位小數，同分的卡會疊成格點，所以每張加一點確定性的抖動（兩個均勻亂數相加，約 ±0.075，比一格 0.05 寬一點，格點才看不出來）打散。
+  // 轉輪與掃描仍在百分位空間（每一段轉起來都有卡），只有畫面上的星點與定位線改用原始分數。
+  const mix = h => { h ^= h >>> 16; h = Math.imul(h, 0x85ebca6b); h ^= h >>> 13; h = Math.imul(h, 0xc2b2ae35); return (h ^ (h >>> 16)) >>> 0; };   // fnv 的低位元對連號字串不夠亂（會排成條紋），再攪一次
+  const jit = (c, k) => { const h = mix(fnv(c.i + ':' + k)); return (((h & 1023) + ((h >>> 10) & 1023)) / 2046 - .5) * .15; };
+  const toG = (axis, v) => axis === 'x' ? (v - 3) / 2 : axis === 'y' ? -v / 2 : v / 2;
+  const S3 = c => { if (!c.g) c.g = [toG('x', c.x) + jit(c, 'x'), toG('y', c.y) + jit(c, 'y'), toG('z', c.z) + jit(c, 'z')].map(v => Math.max(-1.04, Math.min(1.04, v))); return c.g; };
   function light(c) {
     if (!THREE_OK) return;
     const dimK = 0.45;
@@ -560,7 +567,7 @@ html.tune-inapp-lock body{padding-top:120px}
   function readout(t) { const j = performance.now() - lastTurn < 160; const bs = el.readout.querySelectorAll('b'); const vals = [t.x, t.y, t.z]; bs.forEach((b, i) => { b.textContent = fmt(j ? vals[i] + (Math.random() - .5) * 0.04 : vals[i]); }); if (j) requestAnimationFrame(() => readout(target())); }
   function updateScene() {
     const p = state.p, t = target(); readout(t);
-    if (THREE_OK) { PX.position.x = p.x / 50 - 1; PY.position.y = -(p.y / 50 - 1); PZ.position.z = p.z / 50 - 1; }
+    if (THREE_OK) { PX.position.x = toG('x', rawOf('x', p.x)); PY.position.y = toG('y', rawOf('y', p.y)); PZ.position.z = toG('z', rawOf('z', p.z)); }   // 定位線跟著原始分數走（掃過密集的中段會走得比較慢）
     if (!previewCard) scan(nearest());
     const cell = cellOf(t.x, t.y, t.z);
     roll(el.dx, t.x >= T.x ? 1 : 0); roll(el.dy, t.y >= T.y ? 1 : 0); roll(el.dz, t.z >= T.z ? 1 : 0); roll(el.dcell, ORDER.indexOf(cell));
