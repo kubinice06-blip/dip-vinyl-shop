@@ -1,5 +1,5 @@
 // 用法：node lbl.mjs <rg-mbid> [...] — 列出該 release-group 底下每個 release 的廠牌與目錄號
-const UA = 'dip-vinyl-shop/1.0 (kubinice06@gmail.com)';
+const UA = 'dip-vinyl-shop/1.0 (+https://dipvinyl.tw)';
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 const _f = globalThis.fetch;
 globalThis.fetch = async (u, o) => { for (let i=0;i<5;i++){ const r= await _f(u,o); if(r.status!==503) return r; await sleep(2500*(i+1)); } return _f(u,o); };

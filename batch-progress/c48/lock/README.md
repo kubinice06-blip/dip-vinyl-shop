@@ -13,7 +13,7 @@ release-group MBID。這是 `REMOTE_RUNBOOK.md` 說「偷懶整批交接都會�
 MusicBrainz 是 1 req/sec 全域限流，**四組同時打會互相拖垮**。所以：
 - 能用 `mbCandidates` 判定的就不要再查。
 - 真的要查，每次呼叫之間至少 `sleep 3`，遇 503 就退避重試，
-  User-Agent 一律帶 `dip-vinyl-shop/1.0 (kubinice06@gmail.com)`。
+  User-Agent 一律帶 `dip-vinyl-shop/1.0 (+https://dipvinyl.tw)`。
 - 判斷版本時**優先查 release 層**（`/ws/2/release/?query=...`）：古典 release-group 的
   artist-credit 掛的是作曲家，只有 release 的掛名才看得到演奏者。
 

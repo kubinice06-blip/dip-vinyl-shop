@@ -49,7 +49,7 @@
   先看該藝人在池中已有幾張：`node -e 'const s=require("./seed_cards.json");const a=process.argv[1].toLowerCase();console.log(s.filter(r=>r[0].toLowerCase()===a).map(r=>r[1]))' "藝人"`
 - **同一藝人沒有張數上限**（2026-09-04 店主裁定）。判準只有「這張夠不夠格、落不落格、池中有沒有」。
 - **身分兩條路，二選一**：
-  1. **MB 釘得住**：`https://musicbrainz.org/ws/2/release-group?query=artist:"…" AND releasegroup:"…"&fmt=json`（header `User-Agent: dip-vinyl-shop/1.0 (kubinice06@gmail.com)`，每秒最多 1 次，503 等 2 秒重試），取 `primary-type=Album`，填 `mbRgMbid`。
+  1. **MB 釘得住**：`https://musicbrainz.org/ws/2/release-group?query=artist:"…" AND releasegroup:"…"&fmt=json`（header `User-Agent: dip-vinyl-shop/1.0 (+https://dipvinyl.tw)`，每秒最多 1 次，503 等 2 秒重試），取 `primary-type=Album`，填 `mbRgMbid`。
   2. **MB 查無 → 人工身分**（ALBUM_ONBOARDING §1）：`mbRgMbid` 留空，另填 `mbAbsenceProof: {queries:[藝人方向, 作品方向], checkedAt:"2026-10-22", conclusion:"…"}` 與 `manualEvidenceUrls: [至少兩個 https：Discogs master／release、廠牌頁、Bandcamp、維基]`。
 - **每張都要找得到封面來源**（CAA、Apple Music／iTunes、Discogs 圖、Bandcamp 任一，網址寫進 `evidence`）；找不到封面的不要提。
 - **名稱**照 MB 正規名（連字號用 ASCII `-`）；**年份**＝原盤首發年。

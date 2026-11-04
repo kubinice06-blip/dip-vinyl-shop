@@ -1,8 +1,8 @@
 # c-166 b 組 證據層來源清單
 
 本檔記錄 b 組（22 筆、2024–2025、全 jazz）策展所用的原始抓取與可追溯網址。
-抓取日期：2026-09-19。MusicBrainz User-Agent 逐字 `dip-vinyl-shop/1.0 (kubinice06@gmail.com)`。
-Discogs 未帶 token（`api.discogs.com` 以 `User-Agent: dip-vinyl-shop/1.0 +kubinice06@gmail.com` 直呼即可，實測 200）。
+抓取日期：2026-09-19。MusicBrainz User-Agent 逐字 `dip-vinyl-shop/1.0 (+https://dipvinyl.tw)`。
+Discogs 未帶 token（`api.discogs.com` 以 `User-Agent: dip-vinyl-shop/1.0 (+https://dipvinyl.tw)` 直呼即可，實測 200）。
 
 ## 批次抓取的原始資料（已入庫，不留在暫存目錄）
 

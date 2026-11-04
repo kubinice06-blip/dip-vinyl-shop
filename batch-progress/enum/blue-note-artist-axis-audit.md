@@ -17,7 +17,7 @@
 3. **藝人軸列舉**：對每個 artist MBID 打 `release-group?artist=<id>&type=album&fmt=json&limit=100`（含分頁），取 `first-release-date >= 1985`、且 secondary-type 不含 Compilation／Soundtrack／DJ-mix／Remix／Spokenword 的（與列舉檔同一組條件）。
 4. **四處比對**：`enum/blue-note.json`（1,812 列）、**全部** `batch-progress/c*/slice.json`、**全部** `desc-tools/batches/cards/c*-cards.json`、`seed_cards.json`（17,248 列），另加 `batch-progress/c*/prop-*.json` 當補充層。命中條件＝`rgMbid` 相同，或（正規化藝人名, 正規化盤名）相同。
 5. **Blue Note 家族判定**：對四處都沒有的，打 `release?query=rgid:(…)`（每批 15 個）取 `label-info`。`Blue Note Compagnie`（`BNS-` 目錄號）與 `Blue Note Digital`（MB label `0293ae5c`）**不算家族**。**`label-info` 空的正是本次要找的那一種**，改查 Discogs（`api.discogs.com` 無需授權可讀）的廠牌鏈與目錄號。
-6. MusicBrainz UA 一律 `dip-vinyl-shop/1.0 (kubinice06@gmail.com)`，節流 1 req/1.15s，503 走指數退避重試（不視為查無）。
+6. MusicBrainz UA 一律 `dip-vinyl-shop/1.0 (+https://dipvinyl.tw)`，節流 1 req/1.15s，503 走指數退避重試（不視為查無）。
 7. ⚠ **非拉丁掛名要用羅馬字重查**：`大西順子`／`山中千尋`／`日野皓正`／`桑原あい`／`森山威男`／`菊地雅章` 這 13 筆，用漢字打 Discogs `artist=` **一律回 0 筆**，而且正規化後變空字串會讓「掛名必須出現在標題裡」的守門一律不成立。本層對這 13 筆用羅馬字重查一次，**多撈出 1 筆真缺口**（`大西順子《Cruisin'》1993`）。**詳見第 2493 條。**
 
 ---

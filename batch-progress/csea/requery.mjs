@@ -9,7 +9,7 @@ import path from 'node:path';
 import { fold, ROOT } from '../lib.mjs';
 
 const DIR = path.join(ROOT, 'batch-progress/csea');
-const UA = 'dip-vinyl-shop/1.0 (kubinice06@gmail.com)';
+const UA = 'dip-vinyl-shop/1.0 (+https://dipvinyl.tw)';
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 const norm = s => fold(s).replace(/[^\p{L}\p{N}]+/gu, '');
 // 比對用的「核心標題」：去掉括號註記、Volume/Vol. 之類的卷次寫法差異

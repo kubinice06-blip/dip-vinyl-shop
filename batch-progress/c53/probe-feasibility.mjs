@@ -4,7 +4,7 @@
 // 每張同時試西里爾原文與羅馬轉寫：卡池目前西里爾掛名為 0，沒有前例可循，
 // 這一輪同時也是在測「哪一種寫法在各服務上查得到」。
 import fs from 'node:fs';
-const UA = { 'User-Agent': 'dip-vinyl-shop/1.0 (kubinice06@gmail.com)' };
+const UA = { 'User-Agent': 'dip-vinyl-shop/1.0 (+https://dipvinyl.tw)' };
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 
 const SAMPLE = [

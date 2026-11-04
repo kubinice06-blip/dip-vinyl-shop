@@ -51,7 +51,7 @@
 1. **回問 MB**：`release-group/<id>?inc=artist-credits` 與
    **`release?release-group=<id>&fmt=json&inc=media+labels+recordings+artist-credits&limit=100`**
    ——⚠ **第 642 條：MB 取不到某欄位時，先換一種端點組合再說「MB 沒有」**。
-   **每秒最多 1 次請求**，UA 一律 `dip-vinyl-shop/1.0 (kubinice06@gmail.com)`，**503 不等於查無**，退避重試。
+   **每秒最多 1 次請求**，UA 一律 `dip-vinyl-shop/1.0 (+https://dipvinyl.tw)`，**503 不等於查無**，退避重試。
 2. **實掃卡池**（`seed_cards.json` ＋ `desc-tools/batches/cards/c1*.json`）。
    ⚠ **第 611 條：`chk-prop` 標記 0 不等於沒撞卡**。已知五種盲區：群組掛名 vs 個人掛名、
    同名但不同盤的 Volume 碟、**MB 把同一張碟建成兩個 RG**、斜線掛名、同名但不同盤。

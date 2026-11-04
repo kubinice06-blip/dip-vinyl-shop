@@ -31,7 +31,7 @@ const outputPath = path.join(root, 'data', 'release-years-v1.json');
 const reportPath = path.join(root, 'data', 'release-years-report.json');
 const recheckReportPath = path.join(root, 'data', 'release-years-recheck-report.json');
 
-const UA = 'dip-vinyl-year-backfill/1.0 ( kubinice06@gmail.com )';
+const UA = 'dip-vinyl-year-backfill/1.0 (+https://dipvinyl.tw)';
 const MB_DELAY = 1100;   // MusicBrainz 要求 1 req/s，抓 1.1s 留餘裕
 const APPLE_BATCH = 100; // /lookup 單次上限
 

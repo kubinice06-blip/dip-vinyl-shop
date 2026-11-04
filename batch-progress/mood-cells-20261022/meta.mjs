@@ -3,7 +3,7 @@
 //   node batch-progress/mood-cells-20261022/meta.mjs add-20261020-ts1
 import fs from 'node:fs';
 const batch = process.argv[2];
-const UA = 'dip-vinyl-shop/1.0 (kubinice06@gmail.com)';
+const UA = 'dip-vinyl-shop/1.0 (+https://dipvinyl.tw)';
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 const n = s => String(s || '').toLowerCase().normalize('NFKC').replace(/\(.*?\)|\[.*?\]|（.*?）/g, '').replace(/[^\p{L}\p{N}]+/gu, '');
 const cards = JSON.parse(fs.readFileSync(`desc-tools/batches/cards/${batch}-cards.json`, 'utf8'));

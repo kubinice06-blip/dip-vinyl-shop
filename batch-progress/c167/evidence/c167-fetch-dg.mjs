@@ -3,7 +3,7 @@ const DIR='/home/user/dip-vinyl-shop/batch-progress/c167/evidence';
 const slice=JSON.parse(fs.readFileSync('/home/user/dip-vinyl-shop/batch-progress/c167/slice.json','utf8'));
 const OUT=DIR+'/dg.json';
 let out={}; try{out=JSON.parse(fs.readFileSync(OUT,'utf8'))}catch{}
-const UA='dip-vinyl-shop/1.0 +kubinice06@gmail.com';
+const UA='dip-vinyl-shop/1.0 (+https://dipvinyl.tw)';
 const sleep=ms=>new Promise(r=>setTimeout(r,ms));
 async function j(u){for(let i=0;i<5;i++){try{const r=await fetch(u,{headers:{'User-Agent':UA,Accept:'application/json'}});if(r.ok)return r.json(); if(r.status===429){await sleep(8000);continue;}}catch(e){}await sleep(2500*(i+1));}return null;}
 const trim=r=>r?{id:r.id,uri:r.uri,title:r.title,year:r.year,released:r.released,country:r.country,

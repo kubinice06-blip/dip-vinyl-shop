@@ -8,7 +8,7 @@
 import fs from 'fs';
 
 const W = 'https://dip-vinyl-worker.kubinice06.workers.dev';
-const UA = { 'User-Agent': 'dip-vinyl-shop/1.0 (kubinice06@gmail.com)' };
+const UA = { 'User-Agent': 'dip-vinyl-shop/1.0 (+https://dipvinyl.tw)' };
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 
 const inPath = process.argv[2];

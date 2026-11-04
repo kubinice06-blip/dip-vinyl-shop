@@ -1,5 +1,5 @@
 import fs from 'node:fs';
-const UA='dip-vinyl-shop/1.0 (kubinice06@gmail.com)';
+const UA='dip-vinyl-shop/1.0 (+https://dipvinyl.tw)';
 const sleep=ms=>new Promise(r=>setTimeout(r,ms));
 async function mb(url,tries=5){for(let i=0;i<tries;i++){try{const r=await fetch(url,{headers:{'User-Agent':UA},signal:AbortSignal.timeout(30000)});if(r.ok)return await r.json();if(r.status===503){await sleep(2500*(i+1));continue;}return {_http:r.status};}catch{await sleep(1800*(i+1));}}return{_http:'timeout'};}
 async function caa(id){for(let i=0;i<3;i++){try{const r=await fetch(`https://coverartarchive.org/release-group/${id}/front`,{method:'HEAD',redirect:'follow',signal:AbortSignal.timeout(25000)});return r.status;}catch{await sleep(1500);}}return 'ERR';}

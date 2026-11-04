@@ -11,7 +11,7 @@
   `node -e 'const s=require("./seed_cards.json");const n=x=>x.toLowerCase().normalize("NFKC").replace(/[^\p{L}\p{N}]+/gu,"");const [a,b]=process.argv.slice(1);console.log(s.filter(r=>n(r[1])===n(b)&&(n(r[0]).includes(n(a))||n(a).includes(n(r[0])))).length)' "藝人" "專輯"`
   同時查該藝人在卡池已有幾張：`node -e 'const s=require("./seed_cards.json");const n=x=>x.toLowerCase().normalize("NFKC").replace(/[^\p{L}\p{N}]+/gu,"");console.log(s.filter(r=>n(r[0])===n(process.argv[1])).map(r=>r[1]+" "+r[6]))' "藝人"`
 - **同一藝人連同卡池既有最多 4 張**；卡池已有 3 張以上的藝人只補真正關鍵的一張。優先補**卡池 0 張的重要藝人**。
-- **事實一律查證**：年份、廠牌、MusicBrainz release-group MBID 取自 MB API（`https://musicbrainz.org/ws/2/release-group?query=...&fmt=json`，header `User-Agent: dip-vinyl-shop/1.0 (kubinice06@gmail.com)`，**每秒最多 1 次**，503 等 2 秒重試）。MB 查不到的照收但標 `uncertain`，附 Discogs／Bandcamp／維基網址。
+- **事實一律查證**：年份、廠牌、MusicBrainz release-group MBID 取自 MB API（`https://musicbrainz.org/ws/2/release-group?query=...&fmt=json`，header `User-Agent: dip-vinyl-shop/1.0 (+https://dipvinyl.tw)`，**每秒最多 1 次**，503 等 2 秒重試）。MB 查不到的照收但標 `uncertain`，附 Discogs／Bandcamp／維基網址。
 - **WebSearch 每組最多 8 次**（整個工作階段共用額度）。多用 MB API、WebFetch 維基／Bandcamp／廠牌頁（International Anthem、Brownswood、Gondwana、Impulse!、Blue Note、Edition、Jazz re:freshed、Strut 等）。
 - 名稱照 MB 正規名；連字號用 ASCII `-`（MB 常用 U+2010，不要照抄）。日本／韓國／台灣藝人用原文名。
 - 每張至少 1 個 https 證據網址。

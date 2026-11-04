@@ -1,5 +1,5 @@
 import fs from 'node:fs';
-const UA='dip-vinyl-shop/1.0 (kubinice06@gmail.com)';
+const UA='dip-vinyl-shop/1.0 (+https://dipvinyl.tw)';
 const DIR='/home/user/dip-vinyl-shop/batch-progress/c166/evidence-a';
 const mb=JSON.parse(fs.readFileSync(DIR+'/mb.json','utf8'));
 const OUT=DIR+'/tracks.json';

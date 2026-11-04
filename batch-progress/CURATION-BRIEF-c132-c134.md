@@ -151,5 +151,5 @@ a 23／b 22。**a 組六位全部池中零張**，MB 建檔預期最差——**�
 裁定寫進 `batch-progress/c1XX/rulings.md`，**用 append**，編號依派工信指定的區間。
 
 **續跑（容器會不定時重啟）**：每做完 5 筆就把 `prop-<組>.json` 整份寫回磁碟；開工先讀它、接續補完。
-**MusicBrainz 守 1 req/s**，UA `dip-vinyl-shop/1.0 (kubinice06@gmail.com)`，503 要重試（第 28 條）。
+**MusicBrainz 守 1 req/s**，UA `dip-vinyl-shop/1.0 (+https://dipvinyl.tw)`，503 要重試（第 28 條）。
 **不要碰 git、不要動 `PROJECT_MEMORY.md`／`seed_cards.json`／KV／Firestore。**
