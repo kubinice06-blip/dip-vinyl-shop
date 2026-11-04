@@ -1,0 +1,845 @@
+{
+ "group": "md35a",
+ "factions": [
+  {
+   "id": "dark-dubstep",
+   "zh": "深暗 dubstep 慢盤",
+   "count": 8,
+   "why": "半拍、稀鼓、厚次低頻的慢 dubstep 與其更慢的周邊（不收 140 推進、wobble 兇的）"
+  },
+  {
+   "id": "post-dubstep",
+   "zh": "後 dubstep／weightless 冷器樂",
+   "count": 10,
+   "why": "dubstep 之後把鼓抽空或拖慢的冷器樂（weightless、PAN、Planet Mu、Tri Angle）"
+  },
+  {
+   "id": "modern-love-beb",
+   "zh": "Modern Love／Blackest Ever Black 暗電子",
+   "count": 9,
+   "why": "曼徹斯特 Modern Love 與 BEB 一路的慢速暗 dub／hauntology 電子"
+  }
+ ],
+ "albums": [
+  {
+   "artist": "Kryptic Minds",
+   "album": "One of Us",
+   "year": 2009,
+   "label": "Swamp 81",
+   "country": "gb",
+   "faction": "dark-dubstep",
+   "genres": [
+    "electronic",
+    "dubstep"
+   ],
+   "why": "Kryptic Minds 從 drum & bass 轉進 dubstep 的定調盤，半拍稀鼓、次低頻悶壓、幾乎無旋律，被讚為最陰沉的 Swamp 81 長片；往下壓不往前推，落頹靡",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.6,
+    "z": -1.4,
+    "why": "半拍稀鼓、次低頻悶壓、殘響長，無旋律，陰"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/e61f3074-177d-4c95-970f-98945ff41cdf",
+    "https://coverartarchive.org/release-group/e61f3074-177d-4c95-970f-98945ff41cdf/front",
+    "https://www.discogs.com/master/184427",
+    "https://www.discogs.com/release/1946481"
+   ],
+   "mbRgMbid": "e61f3074-177d-4c95-970f-98945ff41cdf",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Kryptic Minds",
+   "album": "Can't Sleep",
+   "year": 2011,
+   "label": "Black Box",
+   "country": "gb",
+   "faction": "dark-dubstep",
+   "genres": [
+    "electronic",
+    "dubstep"
+   ],
+   "why": "《One of Us》的續作，延續極簡陰暗的半拍 dubstep，長殘響與失眠般的低頻墊，沒有 wobble 噱頭；靜、厚、冷",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 1.5,
+    "z": -1.3,
+    "why": "半拍稀鼓、厚低頻墊、冷金屬殘響"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/eb9c7217-2805-4dc9-a577-21d88418a02f",
+    "https://coverartarchive.org/release-group/eb9c7217-2805-4dc9-a577-21d88418a02f/front",
+    "https://www.discogs.com/master/325073",
+    "https://www.discogs.com/release/2801806"
+   ],
+   "mbRgMbid": "eb9c7217-2805-4dc9-a577-21d88418a02f",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "較《One of Us》略多 techno 鼓組，能量估 2.6，若評分偏高會貼邊"
+  },
+  {
+   "artist": "Kuedo",
+   "album": "Slow Knife",
+   "year": 2016,
+   "label": "Planet Mu",
+   "country": "gb",
+   "faction": "post-dubstep",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Kuedo（Vex'd 的 Jamie Teasdale）把 trap 半拍拆成稀疏骨架、鋪冰冷合成器霧的暗盤，比《Severant》更慢更空；被往下拉的都市夜",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 1.1,
+    "z": -1,
+    "why": "稀疏半拍、冰冷合成器霧、長殘響"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/8b5ff29f-b441-4c7a-8f60-1c8305e0ecda",
+    "https://coverartarchive.org/release-group/8b5ff29f-b441-4c7a-8f60-1c8305e0ecda/front",
+    "https://www.discogs.com/master/1077037",
+    "https://planet.mu/releases/slow-knife/",
+    "https://www.discogs.com/release/9202440"
+   ],
+   "mbRgMbid": "8b5ff29f-b441-4c7a-8f60-1c8305e0ecda",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "合成器偶有清楚旋律線，色溫估 −1.0"
+  },
+  {
+   "artist": "Dalhous",
+   "album": "Will to Be Well",
+   "year": 2014,
+   "label": "Blackest Ever Black",
+   "country": "gb",
+   "faction": "modern-love-beb",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Blackest Ever Black 的 Dalhous 第二張：舊合成器、磁帶嘶聲與零碎慢拍拼成的心理病房 hauntology 電子，陰鬱疏離；靜、糊、冷",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 1.2,
+    "z": -1.2,
+    "why": "慢拍零碎、磁帶嘶聲、陰鬱合成器，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/3477f68a-2ca9-44a8-b8a6-d364585ca3e6",
+    "https://coverartarchive.org/release-group/3477f68a-2ca9-44a8-b8a6-d364585ca3e6/front",
+    "https://www.discogs.com/master/706186",
+    "https://dalhous.bandcamp.com/album/will-to-be-well"
+   ],
+   "mbRgMbid": "3477f68a-2ca9-44a8-b8a6-d364585ca3e6",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Dalhous",
+   "album": "The Composite Moods Collection Vol.1: House Number 44",
+   "year": 2016,
+   "label": "Blackest Ever Black",
+   "country": "gb",
+   "faction": "modern-love-beb",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Dalhous《Composite Moods》系列首卷，19 段短篇的暗色合成器與慢拍素描，BEB 末期最陰沉的一張；幾乎不推進，糊而冷",
+   "moodGuess": {
+    "x": 2,
+    "y": 1.1,
+    "z": -1.2,
+    "why": "短篇暗合成器素描、慢拍、磁帶糊"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/fa4d67fe-0f16-4c9d-a58f-f9298f825dd0",
+    "https://coverartarchive.org/release-group/fa4d67fe-0f16-4c9d-a58f-f9298f825dd0/front",
+    "https://www.discogs.com/release/8244995",
+    "https://blackesteverblack.bandcamp.com/album/the-composite-moods-collection-vol-1-house-number-44"
+   ],
+   "mbRgMbid": "fa4d67fe-0f16-4c9d-a58f-f9298f825dd0",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Ekoplekz",
+   "album": "Unfidelity",
+   "year": 2014,
+   "label": "Planet Mu",
+   "country": "gb",
+   "faction": "modern-love-beb",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bristol 的 Ekoplekz 在 Planet Mu 的長片，類比合成器、彈簧殘響與磁帶回授做出廣播工坊式的冷 dub 電子，慢而髒；落頹靡",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.5,
+    "z": -1.2,
+    "why": "慢 dub 拍、彈簧殘響、類比嘶聲，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/58af39c7-e7de-455e-b2ea-f8a9fa9ff378",
+    "https://coverartarchive.org/release-group/58af39c7-e7de-455e-b2ea-f8a9fa9ff378/front",
+    "https://www.discogs.com/release/5492288"
+   ],
+   "mbRgMbid": "58af39c7-e7de-455e-b2ea-f8a9fa9ff378",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Ekoplekz",
+   "album": "Four Track Mind",
+   "year": 2014,
+   "label": "Planet Mu",
+   "country": "gb",
+   "faction": "modern-love-beb",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Ekoplekz 用四軌錄音機做的 dub 電子，更多回授與低頻糊，拍子懶散；比《Unfidelity》更陰暗粗糙",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.6,
+    "z": -1.2,
+    "why": "懶拍、四軌磁帶糊、回授與殘響，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/07648662-5dd6-4fac-a43c-83a00452d758",
+    "https://coverartarchive.org/release-group/07648662-5dd6-4fac-a43c-83a00452d758/front",
+    "https://www.discogs.com/release/6009710",
+    "https://ekoplekz.bandcamp.com/album/four-track-mind"
+   ],
+   "mbRgMbid": "07648662-5dd6-4fac-a43c-83a00452d758",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Ossia",
+   "album": "Devil's Dance",
+   "year": 2019,
+   "label": "Blackest Ever Black",
+   "country": "gb",
+   "faction": "dark-dubstep",
+   "genres": [
+    "electronic",
+    "dubstep"
+   ],
+   "why": "Young Echo 成員 Ossia 在 BEB 的唯一長片，sound system 低頻、噪音與長段 drone 以爬行速度推移，Bristol 暗面的極致；重壓下沉",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 1.9,
+    "z": -1.4,
+    "why": "爬行慢拍、sound system 低頻、噪音霧"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/199e6eef-6b2d-4392-90fd-3ade11502c68",
+    "https://coverartarchive.org/release-group/199e6eef-6b2d-4392-90fd-3ade11502c68/front",
+    "https://www.discogs.com/release/13189506",
+    "https://blackesteverblack.bandcamp.com/album/devil-s-dance"
+   ],
+   "mbRgMbid": "199e6eef-6b2d-4392-90fd-3ade11502c68",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "含 dub 語彙但為實驗電子／噪音，非 dub reggae"
+  },
+  {
+   "artist": "King Midas Sound",
+   "album": "Solitude",
+   "year": 2019,
+   "label": "Cosmo Rhythmatic",
+   "country": "gb",
+   "faction": "dark-dubstep",
+   "genres": [
+    "electronic",
+    "dubstep"
+   ],
+   "why": "Kevin Martin 與 Roger Robinson 的 King Midas Sound 第三張，近乎無拍的低頻霧與喃喃詩語，是 dubstep 周邊最慢最孤寂的一張；落頹靡",
+   "moodGuess": {
+    "x": 1.6,
+    "y": 1.6,
+    "z": -1,
+    "why": "幾乎無拍、低頻霧、喃喃人聲，陰"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/284f0bc8-d776-4cd0-a3f6-aecac5b0f534",
+    "https://coverartarchive.org/release-group/284f0bc8-d776-4cd0-a3f6-aecac5b0f534/front",
+    "https://www.allmusic.com/album/mw0003256137",
+    "https://www.discogs.com/master/1504796",
+    "https://www.discogs.com/release/13263957",
+    "https://kingmidassoundmusic.bandcamp.com/album/solitude"
+   ],
+   "mbRgMbid": "284f0bc8-d776-4cd0-a3f6-aecac5b0f534",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Lakker",
+   "album": "Tundra",
+   "year": 2015,
+   "label": "R&S Records",
+   "country": "ie",
+   "faction": "post-dubstep",
+   "genres": [
+    "electronic"
+   ],
+   "why": "都柏林 Lakker 在 R&S 的長片，冰原意象的工業 ambient 與慢拍，厚合成器牆與遠處打擊；比前作少了 techno 推進",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.5,
+    "z": -1.3,
+    "why": "慢拍遠鼓、厚合成器牆、冰冷工業質感"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/2f506c33-bb39-4cc1-a1c4-350725a26435",
+    "https://coverartarchive.org/release-group/2f506c33-bb39-4cc1-a1c4-350725a26435/front",
+    "https://www.discogs.com/master/833851",
+    "https://www.discogs.com/release/6950181"
+   ],
+   "mbRgMbid": "2f506c33-bb39-4cc1-a1c4-350725a26435",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "少數曲目有中速鼓，能量估 2.4"
+  },
+  {
+   "artist": "Scuba",
+   "album": "A Mutual Antipathy",
+   "year": 2008,
+   "label": "Hotflush Recordings",
+   "country": "gb",
+   "faction": "dark-dubstep",
+   "genres": [
+    "electronic",
+    "dubstep"
+   ],
+   "why": "Hotflush 主理人 Scuba 的處女作，深 dub 的半拍 dubstep，大量空間殘響、次低頻與冷 techno 音色，當年「deep dubstep」代表；稀疏不推",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 1.4,
+    "z": -1.1,
+    "why": "半拍稀鼓、深次低頻、空間殘響，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/cef1984f-968f-34b7-8cf0-297b58d6fe75",
+    "https://coverartarchive.org/release-group/cef1984f-968f-34b7-8cf0-297b58d6fe75/front",
+    "https://www.discogs.com/master/72439",
+    "https://www.discogs.com/release/1304147"
+   ],
+   "mbRgMbid": "cef1984f-968f-34b7-8cf0-297b58d6fe75",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "少數曲目較 techno，能量估 2.6 貼近上緣"
+  },
+  {
+   "artist": "Ital Tek",
+   "album": "Hollowed",
+   "year": 2016,
+   "label": "Planet Mu",
+   "country": "gb",
+   "faction": "post-dubstep",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Ital Tek 轉向陰暗配樂式電子的 Planet Mu 長片，厚合成器墊、半拍與大量殘響，被形容為「hollowed」的空洞感；往下沉",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.4,
+    "z": -1.1,
+    "why": "半拍、厚合成器墊、殘響長，陰"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/600b58cc-acb6-456d-b16a-4da25ce91336",
+    "https://coverartarchive.org/release-group/600b58cc-acb6-456d-b16a-4da25ce91336/front",
+    "https://www.allmusic.com/album/mw0002916296",
+    "https://www.discogs.com/master/975538",
+    "https://www.discogs.com/release/8281494"
+   ],
+   "mbRgMbid": "600b58cc-acb6-456d-b16a-4da25ce91336",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Fatima Al Qadiri",
+   "album": "Brute",
+   "year": 2016,
+   "label": "Hyperdub",
+   "country": "kw",
+   "faction": "post-dubstep",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Fatima Al Qadiri 在 Hyperdub 的第二張，以警察暴力為題的冷峻 grime 器樂，速度慢、空間大、合成器如警笛般冰冷；不跳躍、壓抑",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1,
+    "z": -1.4,
+    "why": "慢速稀拍、冰冷合成器、低頻悶，壓抑"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/e8dee8ed-e862-40de-9110-e6025ac1eb08",
+    "https://coverartarchive.org/release-group/e8dee8ed-e862-40de-9110-e6025ac1eb08/front",
+    "https://www.discogs.com/release/8257293",
+    "https://fatimaalqadiri.bandcamp.com/album/fatima-al-qadiri-brute-hdbcd031"
+   ],
+   "mbRgMbid": "e8dee8ed-e862-40de-9110-e6025ac1eb08",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "質地估 1.0，空間感大，若判偏乾會貼邊"
+  },
+  {
+   "artist": "Goth-Trad",
+   "album": "New Epoch",
+   "year": 2012,
+   "label": "DEEP MEDi MUSIK",
+   "country": "jp",
+   "faction": "dark-dubstep",
+   "genres": [
+    "electronic",
+    "dubstep"
+   ],
+   "why": "東京 Goth-Trad 在 Mala 的 Deep Medi 發的長片，冥想式重低頻半拍 dubstep，長殘響與暗噪音層，是日本深暗 dubstep 代表；重而沉",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.8,
+    "z": -1.3,
+    "why": "半拍、厚重低頻、暗噪音層，陰"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/11b3f89e-770f-492a-984b-2cd1325490bd",
+    "https://coverartarchive.org/release-group/11b3f89e-770f-492a-984b-2cd1325490bd/front",
+    "https://www.discogs.com/master/406913"
+   ],
+   "mbRgMbid": "11b3f89e-770f-492a-984b-2cd1325490bd",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "部分曲目低音較兇，能量估 2.5"
+  },
+  {
+   "artist": "Actress × London Contemporary Orchestra",
+   "album": "LAGEOS",
+   "year": 2018,
+   "label": "Ninja Tune",
+   "country": "gb",
+   "faction": "modern-love-beb",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Actress 與倫敦當代管弦樂團重構其舊作的長片，弦樂長音與 Actress 的混濁電子交纏、拍子極少，冷而迷離；靜、糊、冷",
+   "moodGuess": {
+    "x": 2,
+    "y": 1.2,
+    "z": -0.8,
+    "why": "少拍、弦樂長音混濁電子霧，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/341adfef-27bb-4e97-8ace-1921b2274c5a",
+    "https://coverartarchive.org/release-group/341adfef-27bb-4e97-8ace-1921b2274c5a/front",
+    "https://www.allmusic.com/album/mw0003170494",
+    "https://www.discogs.com/master/1372101",
+    "https://www.discogs.com/release/12062256",
+    "https://actress.bandcamp.com/album/lageos"
+   ],
+   "mbRgMbid": "341adfef-27bb-4e97-8ace-1921b2274c5a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "有弦樂，色溫估 −0.8；同人池中 R.I.P. 2.0／−0.8 可參照"
+  },
+  {
+   "artist": "Andy Stott",
+   "album": "The Slow Ribbon",
+   "year": 2022,
+   "label": "Modern Love",
+   "country": "gb",
+   "faction": "modern-love-beb",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Andy Stott 在 Modern Love 的卡帶長片，七首慢速、濃稠低頻與模糊人聲的器樂，延續《Luxury Problems》以來的沉降感；池中同人後期四張皆落頹靡",
+   "moodGuess": {
+    "x": 2,
+    "y": 1.5,
+    "z": -0.9,
+    "why": "極慢、濃稠低頻、模糊人聲霧"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/872c874f-e7ea-46a1-89d7-d7d210a1276b",
+    "https://coverartarchive.org/release-group/872c874f-e7ea-46a1-89d7-d7d210a1276b/front"
+   ],
+   "mbRgMbid": "872c874f-e7ea-46a1-89d7-d7d210a1276b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "此盤資料少（限量卡帶＋數位），聲音憑同期作推估；評分前請主線再確認"
+  },
+  {
+   "artist": "Lee Gamble",
+   "album": "KOCH",
+   "year": 2014,
+   "label": "PAN",
+   "country": "gb",
+   "faction": "post-dubstep",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Lee Gamble 在 PAN 的長片，把 jungle 與 rave 抽掉鼓、只留殘響與低頻鬼影，冷而失重；池中《Diversions》1.4 為同路",
+   "moodGuess": {
+    "x": 2,
+    "y": 1.2,
+    "z": -1,
+    "why": "鼓被抽空、殘響鬼影、低頻，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/ca94dd73-e055-4e92-9063-5904b024abea",
+    "https://coverartarchive.org/release-group/ca94dd73-e055-4e92-9063-5904b024abea/front",
+    "https://leegamble.bandcamp.com/album/koch"
+   ],
+   "mbRgMbid": "ca94dd73-e055-4e92-9063-5904b024abea",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "少數曲目留有碎拍，能量估 2.0"
+  },
+  {
+   "artist": "Dalhous",
+   "album": "The Composite Moods Collection Vol.2: Point Blank Range",
+   "year": 2021,
+   "label": "Denovali Records",
+   "country": "gb",
+   "faction": "modern-love-beb",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Dalhous《Composite Moods》第二卷，轉到 Denovali 後更偏暗色 ambient 與慢拍的素描集，陰鬱疏離；靜、糊、冷",
+   "moodGuess": {
+    "x": 2,
+    "y": 1.1,
+    "z": -1.1,
+    "why": "暗色合成器、慢拍、磁帶糊，陰"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/41adda8f-779a-4cec-84cd-c5765f37676d",
+    "https://coverartarchive.org/release-group/41adda8f-779a-4cec-84cd-c5765f37676d/front",
+    "https://dalhous.bandcamp.com/album/the-composite-moods-collection-vol-2-point-blank-range"
+   ],
+   "mbRgMbid": "41adda8f-779a-4cec-84cd-c5765f37676d",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "聲音憑系列首卷推估"
+  },
+  {
+   "artist": "Sd Laika",
+   "album": "That's Harakiri",
+   "year": 2014,
+   "label": "Tri Angle",
+   "country": "gb",
+   "faction": "dark-dubstep",
+   "genres": [
+    "electronic",
+    "dubstep"
+   ],
+   "why": "Sd Laika 在 Tri Angle 的唯一長片，把 grime 拖慢、扭曲成濁重破碎的低頻器樂，像壞掉的磁帶；壓抑不跳躍",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.7,
+    "z": -1.3,
+    "why": "拖慢扭曲的 grime 拍、濁重低頻、破碎"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/268d58c0-48da-4f13-84cc-90cd6555feb6",
+    "https://coverartarchive.org/release-group/268d58c0-48da-4f13-84cc-90cd6555feb6/front"
+   ],
+   "mbRgMbid": "268d58c0-48da-4f13-84cc-90cd6555feb6",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "源自 grime，若評分者聽成跳躍會偏躁；保守估 2.5"
+  },
+  {
+   "artist": "Pessimist",
+   "album": "Pessimist",
+   "year": 2017,
+   "label": "Blackest Ever Black",
+   "country": "gb",
+   "faction": "dark-dubstep",
+   "genres": [
+    "electronic",
+    "dubstep"
+   ],
+   "why": "Pessimist 在 BEB 的首張，把 drum & bass 放慢成半拍與工業 dub，厚霧般的低頻與遠方噪音，陰森爬行",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.8,
+    "z": -1.5,
+    "why": "半拍爬行、厚低頻霧、工業噪音，陰"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/bec57772-941a-4f21-ae30-f4b7ac100355",
+    "https://coverartarchive.org/release-group/bec57772-941a-4f21-ae30-f4b7ac100355/front",
+    "https://www.discogs.com/master/1230296",
+    "https://ra.co/reviews/21179",
+    "https://blackesteverblack.bandcamp.com/album/pessimist"
+   ],
+   "mbRgMbid": "bec57772-941a-4f21-ae30-f4b7ac100355",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "源自 d&b，鼓組偶有推進，能量估 2.5"
+  },
+  {
+   "artist": "Black Rain",
+   "album": "Dark Pool",
+   "year": 2014,
+   "label": "Blackest Ever Black",
+   "country": "gb",
+   "faction": "modern-love-beb",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Stuart Argabright 的 Black Rain 在 BEB 的回歸長片，賽博龐克式暗 ambient 與慢工業拍，冰冷合成器霧；被往下拉",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1.4,
+    "z": -1.5,
+    "why": "慢工業拍、冰冷合成器霧、低頻，陰"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/f000d9c3-50ac-48bf-895a-7c1627574c05",
+    "https://coverartarchive.org/release-group/f000d9c3-50ac-48bf-895a-7c1627574c05/front",
+    "https://www.discogs.com/master/738460",
+    "https://blackesteverblack.bandcamp.com/album/dark-pool"
+   ],
+   "mbRgMbid": "f000d9c3-50ac-48bf-895a-7c1627574c05",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Visionist",
+   "album": "Safe",
+   "year": 2015,
+   "label": "PAN",
+   "country": "gb",
+   "faction": "post-dubstep",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Visionist 在 PAN 的長片，「weightless grime」代表：抽掉鼓推進、只剩教堂式人聲殘片與低頻轟鳴，冷而焦慮地下沉",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 1,
+    "z": -1.3,
+    "why": "少鼓、人聲殘片、殘響與低頻轟鳴"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/8d969219-b5d3-4ffe-9d8e-886a9b965568",
+    "https://coverartarchive.org/release-group/8d969219-b5d3-4ffe-9d8e-886a9b965568/front",
+    "https://www.discogs.com/release/7574127"
+   ],
+   "mbRgMbid": "8d969219-b5d3-4ffe-9d8e-886a9b965568",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "質地估 1.0，空間大"
+  },
+  {
+   "artist": "Forest Swords",
+   "album": "Bolted",
+   "year": 2023,
+   "label": "Ninja Tune",
+   "country": "gb",
+   "faction": "post-dubstep",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Forest Swords 在 Ninja Tune 的第三張，厚重 dub 低頻、切碎人聲與工業打擊以慢速碾壓，比《Engravings》更暗；池中《Engravings》2.5／−0.8 同路",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.6,
+    "z": -1,
+    "why": "慢速重低頻、碎人聲、工業打擊，暗"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/00f01cc5-6ef4-4492-8e6a-f35f885e21f3",
+    "https://coverartarchive.org/release-group/00f01cc5-6ef4-4492-8e6a-f35f885e21f3/front",
+    "https://www.discogs.com/release/28668430"
+   ],
+   "mbRgMbid": "00f01cc5-6ef4-4492-8e6a-f35f885e21f3",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Vessel",
+   "album": "Order of Noise",
+   "year": 2012,
+   "label": "Tri Angle",
+   "country": "gb",
+   "faction": "post-dubstep",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Young Echo 成員 Vessel 的 Tri Angle 首作，濁重 dub 化的 house／techno 骨架與腐蝕質感，慢而潮濕陰冷；後作《Punish, Honey》太兇不收",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 1.6,
+    "z": -1.1,
+    "why": "慢拍、濁重低頻、腐蝕質感，陰冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/1112e276-6e84-4d00-9226-8ca9bf0dd7c7",
+    "https://coverartarchive.org/release-group/1112e276-6e84-4d00-9226-8ca9bf0dd7c7/front"
+   ],
+   "mbRgMbid": "1112e276-6e84-4d00-9226-8ca9bf0dd7c7",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "有幾首拍子較直，能量估 2.6 貼近上緣"
+  },
+  {
+   "artist": "Miles",
+   "album": "Faint Hearted",
+   "year": 2013,
+   "label": "Modern Love",
+   "country": "gb",
+   "faction": "modern-love-beb",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Demdike Stare 的 Miles Whittaker 個人長片，緩慢的 dub techno 與類比 drone，厚霧與低頻淹沒，Modern Love 慢盤一路；靜、厚、冷",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1.6,
+    "z": -1.2,
+    "why": "慢 dub 拍、類比 drone、厚霧低頻"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/aaf0f79f-b4c1-4f47-a332-16826047b4bc",
+    "https://coverartarchive.org/release-group/aaf0f79f-b4c1-4f47-a332-16826047b4bc/front"
+   ],
+   "mbRgMbid": "aaf0f79f-b4c1-4f47-a332-16826047b4bc",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "藝人名 Miles 易與 Miles Davis 撞名，主線上架時注意身分"
+  },
+  {
+   "artist": "Logos",
+   "album": "Imperial Flood",
+   "year": 2019,
+   "label": "Different Circles",
+   "country": "gb",
+   "faction": "post-dubstep",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Logos 在 Different Circles 的第二張，weightless 運動的極致：無鼓、只剩合成器長音與殘響空間，冷而漂浮下沉；同人《Cold Mission》md16 已收",
+   "moodGuess": {
+    "x": 1.6,
+    "y": 1,
+    "z": -1.1,
+    "why": "無鼓、合成器長音、大殘響，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/0d451ce8-7e3b-4d7b-bd7f-b5c22c1d322c",
+    "https://coverartarchive.org/release-group/0d451ce8-7e3b-4d7b-bd7f-b5c22c1d322c/front",
+    "https://differentcircles.bandcamp.com/album/imperial-flood"
+   ],
+   "mbRgMbid": "0d451ce8-7e3b-4d7b-bd7f-b5c22c1d322c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "質地估 1.0，空間大，可能被判偏輕"
+  },
+  {
+   "artist": "Fis",
+   "album": "From Patterns to Details",
+   "year": 2016,
+   "label": "Subtext",
+   "country": "nz",
+   "faction": "post-dubstep",
+   "genres": [
+    "electronic"
+   ],
+   "why": "紐西蘭 Fis 在 Subtext 的長片，粒子化低頻、金屬共鳴與緩慢的重擊，暗而質感厚重的後 dubstep 聲響設計；往下壓",
+   "moodGuess": {
+    "x": 2.1,
+    "y": 1.7,
+    "z": -1.4,
+    "why": "緩慢重擊、粒子化低頻、金屬共鳴"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/f0b17f7e-fd90-4c6d-8755-6c3f77544252",
+    "https://coverartarchive.org/release-group/f0b17f7e-fd90-4c6d-8755-6c3f77544252/front",
+    "https://www.allmusic.com/album/mw0002972536",
+    "https://www.discogs.com/master/1063610",
+    "https://www.discogs.com/release/9090641"
+   ],
+   "mbRgMbid": "f0b17f7e-fd90-4c6d-8755-6c3f77544252",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  }
+ ],
+ "notes": [
+  "場景：深暗 dubstep 與 post-dubstep 慢盤（Burial 以外）；店主 2026-11-04 只收電子，genres 第一個皆 electronic。27 張全為 MB 釘住（Album、無 secondary type），CAA 均有封面。",
+  "不收：Kode9 全部（池中三張 3.2–3.4）、Shackleton（池中 2.6–3.2，打擊推進）、Pinch《Reality Tunnels》、Vex'd《Degenerate》系、Distance（金屬 riff＋兇 wobble）、Zomby《Dedication》《Ultra》《Mercury's Rainbow》（池中 With Love 2.9，同人保守）、Silent Servant、Monolake、Moin、Mumdance & Logos《Proto》（rave 推進）、Vessel《Punish, Honey》（工業兇）、Kuedo《Severant》（旋律清楚、色溫恐偏暖）、Akkord、Ena、Felix K（d&b 推進，貼邊）、Mala（暖、且《Mirrors》偏世界音樂）、Loefah（無正規專輯）。",
+  "Demdike Stare：《Symbiosis》《Elemental》《Tryptych》MB 為 Compilation（md1／md21 已註記），《Liberation》《Voices of Dust》md21 已提，本組不提。",
+  "Andy Stott：《Passed Me By / We Stay Together》MB 為 Compilation、《Unknown Exception》為單曲彙編，不提；《Late Loop》2026-10-30 剛發、聲音未知，不提。只提《The Slow Ribbon》（資料少，標 uncertain）。",
+  "Emptyset《Medium》原列入，MB 首版僅 5 曲 21 分鐘、RYM 列 EP，依「不收 EP」撤下，改提 Dalhous《Composite Moods Vol.2》。",
+  "去重：27 張 seed 去重皆 0；curation-*.json 無同專輯（ml42 的 Solitude 是 jinsang，非 King Midas Sound）；ml60／ml61 檔案尚不存在。",
+  "未用 WebSearch；身分與封面皆由 MB API／CAA／Discogs API 取得。"
+ ]
+}
