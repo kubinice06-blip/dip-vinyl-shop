@@ -69,3 +69,12 @@
 - **51536**　Harry Pussy 策展 mbNote 證據網址指向同名首張 01fd8ed8，以 8c9f2270 為準（Discogs master 196304 同為 1996 Siltbreeze SB-50）。moodGuess 存疑：整張是無拍子拼貼，非鼓搖滾。
 - **51537**　六張封面皆於 Discogs master／release 取得圖片，Hototogisu、Harry Pussy 等 CAA 無圖者不需汰換；本組無建議汰換。
 - **51572** Sissy Spacek《Sissy Spacek》研究 d 組因 John Wiese 已在異端判 none；主線改判 heresy：Sissy Spacek 是 Wiese＋Charlie Mumma 的雙人團，照 ax2 主線策展的 AMM／Keith Rowe、Ground Zero／大友良英先例，樂團與個人名義不同藝人鍵；音響研究層已確認 accessibility 5。另 Wold《Screech Owl》研究層改判 heresy，主線降回 none（有鼓點與黑金屬旋律，原判 accessibility 4）。兩條寫進 `apex-override.json`。
+
+## 研究 e 組
+- **51541**　六張：Hair Police 11 條 full、MSBR 9 條 full，其餘四張 thin（Consumer Electronics 10、Pain Jerk 8、Sudden Infant 8、Contagious Orgasm 7）。apex：MSBR《Structured Suicide》heresy（邊緣：Urashima／Tobira 廠牌店家稱四首 harsh noise，但夾低頻轟鳴與氛圍段，無針對本張的樂評；主線嫌弱可改 none），其餘五張 none。
+- **51542**　Hair Police《Mercurial Rites》：Musique Machine 5/5、Fact 皆形容為克制的氣氛式工業噪音（鑼鈴、暗色合成器、打擊），accessibility 3，none。推翻 moodGuess「噪音與嘶吼層疊」；卡單 label 填「Hair Police」誤，應為 Type Records；策展自評對，極端程度不足。
+- **51543**　Sudden Infant《Radiorgasm》建議汰換：卡單 2006／Blossoming Noise 是 CD 重發，原始為 1991 Schimpfluch LP（限量 323），內容是 1990-11-30 Radio LoRa 電台現場錄音、兩面無曲名長段，查無任何樂評；國別應為瑞士（卡單 DE）。
+- **51544**　Contagious Orgasm《Thin Skinned》：1989 SSSM 003 卡帶（兩段各約 22 分鐘），查無任何本盤樂評，策展自評「代表作憑記憶」屬實，列汰換優先；「大阪」未取得來源。封面 CAA 有圖。
+- **51545**　Pain Jerk《Exhibition of Electro-Disease》：1995-05-25 G.R.O.S.S. GRS106，C52 卡帶限量 110，Kohei Gomi；無針對本盤樂評，none，低優先汰換，若要異端建議改提《Gallon Gravy》（1997）。
+- **51546**　Consumer Electronics《Leathersex》：1982 Iphar 004 C90 卡帶（13 軌無曲名），身分無誤；聲音無樂評來源，維基只稱其早期卡帶推動 extreme noise，none（thin）。封面 Discogs master 有圖，不需汰換。
+- **51547**　MSBR 年份三方不一致：MB／Discogs 1993，Tobira 1995，Urashima 未載；採 1993。無 Hototogisu 式無圖卡：六張封面皆確認（Apple、Discogs 或 CAA）。seed 異端無任何一位撞名。
