@@ -3,7 +3,7 @@
 ### 2026-11-04｜dip-vinyl-shop｜頂點卡簡介重寫 s2：ad-03／ad-04 上線 60 張
 
 - **ad-03（殿堂 30：Gould、台港中華語 16 張、古典錄音 8 張等）、ad-04（殿堂 30：英美經典搖滾／靈魂樂）上線**：研究 3 Sonnet／寫作 2 Opus／機器 QA／主線逐張審稿（ad-03 改 12 處、ad-04 改 11 處，見 `batch-progress/apex-desc-20261104/rulings.md`）。ad-03 華語卡聲音塊太薄，主線加派 1 支 Sonnet 補查（`research/sup-ad-03.json`），補後李泰祥、張雨生、黑豹、新寶島康樂隊仍只能寫到結構層級。
-- 審稿抓到的事實錯：《Abbey Road》「第一次用八軌機」（白色專輯已用）、《Tapestry》年度唱片／年度歌曲歸屬、研究稿五月天金曲獎項名與成員（已更正研究稿）；另把寫作層寫進簡介的書名／榜名出處（《台灣流行音樂 200 大專輯》、百張最佳專輯）改成「被視為」。
+- 審稿抓到的事實錯：《Abbey Road》「第一次用八軌機」（白色專輯已用）、《Tapestry》年度唱片／年度歌曲歸屬、研究稿五月天金曲獎項名與成員（已更正研究稿）；另把寫作層寫進簡介的書名／榜名出處（《台灣流行音樂 200 大專輯》、百張最佳專輯）改成「被視為」。收工 merge 時照店主新規「前兩句要講出為何夠格」複查 60 張，補 4 張（黑豹、Afro、新寶島康樂隊、五月天），重寫 KV 並回讀 79/79。
 - **KV**：ad-03 48 鍵（desc2 30＋CJK 卡 desc4 18）、ad-04 31 鍵（desc2 30＋desc4 1），寫前舊值存 `kv-before-ad-0X.json`，回讀 79/79 逐字一致；`/album-desc` 前台 59/60。manifest 同步 12 處（c32-folk、c35-shop-reels、c37-jazz、c41-chinese、c44-rock、ctw-taiwan-indie）。WebSearch 研究層 66 次＋主線 1 次。
 - **待店主**：《The Dark Side of the Moon》新稿已寫 desc2，前台仍是 worker 內建 CURATED_DESCS（與 s1 的《Kind of Blue》同一個問題），要在 worker 拿掉這兩筆並部署。
 - 主要檔案：`batch-progress/apex-desc-20261104/{PLAN.md,rulings.md,review-ad-03.json,review-ad-04.json,kv-before-ad-03.json,kv-before-ad-04.json}`、`desc-tools/batches/{cards,research,output}/ad-0{3,4}-*`、6 份 onboarding manifest。
