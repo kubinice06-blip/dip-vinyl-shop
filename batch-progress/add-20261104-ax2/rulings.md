@@ -15,3 +15,9 @@
 - Musica Elettronica Viva《Friday》是現場盤（BYG Actuel），策展層開 releaseException；研究層核是否 MEV 最重要的錄音（對照《Spacecraft》）。
 - 策展層自評 7 星拿不準的（Palestine、Günter、Spahlinger、Stratos、Teitanblood、Pan.Thy.Monium、Blut Aus Nord、Mitochondrion、Antediluvian、Ævangelist、Marhaug、Mattin）要研究層特別查依據；多數 label 欄空白要補。
 
+- **補策展 ax2c**（10 張，`curation-ax2c.json`）→ `master-ax2aax2bax2c.json`（40）→ 卡單擴成 40，新卡全進研究 **d 組**（既有 a–c 組別不動）。
+  - Keith Rowe《The Room》：異端已有 AMM（樂團）；Rowe 與 Lehn／Schmickler《Rabbit Run》是 pearl。個人名義不算同一藝人鍵，規則上可收；研究層照 7 星標準判。Otomo Yoshihide《Cathode》與 Ground Zero（異端）同理：樂團≠個人名義，可收。
+  - Martine Viard《Aperghis: Récitations》：MB 釘的是 2000 Montaigne 版 RG，原盤 1983 Harmonia Mundi；同一錄音，年份取原盤 1983，交研究層核。
+  - Kontarsky《Zimmermann: Requiem für einen jungen Dichter》2008 Cybele 版；Hespos（Ensemble 13）§1 人工身分。
+  - 策展層自評依據偏薄：Malfatti、Michael Snow、Barlow、Marclay。
+

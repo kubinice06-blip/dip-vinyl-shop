@@ -13,3 +13,9 @@
 - Aube 與卡池 `Aube|Spindrift`（1992，electronic）是否同一人（中島昭文）交研究層核；同人也無妨（Spindrift 非異端）。
 - 策展層自評把握低的（Vomir、Werewolf Jerusalem、Skin Crime、Emil Beaulieau、Macronympha、Brighter Death Now、Anenzephalia、IRM、Con-Dom、Wold、Controlled Bleeding）要研究層特別查「7 星」依據。
 
+- **補策展 ax1c**（12 張，`curation-ax1c.json`）→ `master-ax1aax1bax1c.json`（37）→ 卡單擴成 37，新卡全進研究 **d 組**（既有 a–c 組別不動；`batch-progress/apex-new-20261104/extend-cards.mjs`）。
+  - Harry Pussy《Ride a Dove》策展層 MB 釘錯成同名首張（01fd8ed8），改釘 8c9f2270（Ride A Dove，Album，1996-05-21）。
+  - 跨級：Pain Jerk、MSBR 在池是 pearl，另一張盤提異端，規則允許（同級才互斥）。
+  - Hototogisu、Consumer Electronics、Sudden Infant CAA 無圖，策展只放 Discogs 搜尋頁：研究層要確認封面來源，找不到就汰。
+  - 策展層自評可能不到 7 星：Brainbombs（極端在主題不在音響）、Borbetomagus（近能量型自由爵士）、Hair Police。
+
