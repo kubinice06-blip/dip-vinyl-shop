@@ -231,56 +231,6 @@
   "coverage": "full"
  },
  {
-  "key": "desc2:Color Humano|Sangre del Sol",
-  "artist": "Color Humano",
-  "album": "Sangre del Sol",
-  "facts": [
-   {
-    "f": "Discogs 把〈Sangre Del Sol〉登記為 1973 年阿根廷 Microfon 發行的 7 吋 33 轉單曲，目錄號 3.895，A 面〈Sangre Del Sol〉、B 面〈Va A Salir Un Lugar〉，只有兩首。",
-    "src": "https://www.discogs.com/release/11893969"
-   },
-   {
-    "f": "這個 master 一共只有兩個版本，一是一般單曲，一是 Promo 單曲（3895），沒有 LP 版本。",
-    "src": "https://www.discogs.com/master/2590445"
-   },
-   {
-    "f": "兩首曲子的詞曲都登記為 Edelmiro Molinari。",
-    "src": "https://www.discogs.com/release/11893969"
-   },
-   {
-    "f": "Color Humano 是布宜諾斯艾利斯的搖滾三重奏，1971 至 1974 年活動，由 Almendra 解散後的 Edelmiro Molinari 成立，團名取自他替 Almendra 寫的一首歌。",
-    "src": "https://es.wikipedia.org/wiki/Color_Humano"
-   },
-   {
-    "f": "成員為 Edelmiro Molinari（主唱、吉他）、Rinaldo Rafanelli（貝斯）與 Oscar Moro（鼓）；David Lebón曾任早期鼓手，1972 年底離開加入 Pescado Rabioso。",
-    "src": "https://es.wikipedia.org/wiki/Color_Humano"
-   },
-   {
-    "f": "維基列出的三張錄音室專輯是 1972 年《Color Humano》、1973 年《Color Humano II》與《Color Humano III》；第二張原是雙專輯，Microfon 拆成兩片發行，第三張因石油危機造成的黑膠短缺延到 1974 年。",
-    "src": "https://es.wikipedia.org/wiki/Color_Humano"
-   },
-   {
-    "f": "1972 年他們出現在 BA Rock III 音樂節，被拍進電影《Rock hasta que se ponga el sol》；團在 1974 年因內部衝突解散，Molinari 移居洛杉磯。",
-    "src": "https://es.wikipedia.org/wiki/Color_Humano"
-   },
-   {
-    "f": "Apple Music 上 Color Humano 的 1972 年同名專輯、《Hambre de Vida》《Moskowa Libre》《Madibá》等已有正式串流，該團的正式專輯並不稀有。",
-    "src": "https://music.apple.com/us/album/color-humano/321612653"
-   }
-  ],
-  "hookCandidates": [
-   "Almendra 解散後，Edelmiro Molinari 組了三人團 Color Humano，這首〈Sangre del Sol〉在 1973 年以 7 吋單曲發行。"
-  ],
-  "sound": "Discogs 標籤為硬搖滾、迷幻搖滾與節奏藍調；本件只有兩首單曲，維基也把該團歸為迷幻搖滾與藍調硬搖滾。查無樂評描述單曲本身的音色。",
-  "keyTracks": [
-   "Sangre Del Sol",
-   "Va A Salir Un Lugar"
-  ],
-  "status": "thin",
-  "notes": "【身分】Discogs master 2590445 ＝ 7 吋單曲（Microfon 3.895，1973 AR），不是專輯；策展層 curatorWhy『70 年代硬搖滾／迷幻藍調，原版極稀』的『專輯』前提不成立。卡單 releaseType 標 Album，應改 Single 或汰換。【流亡判定：不合格（listeners 6，證據 https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Color%20Humano&album=Sangre%20del%20Sol ；Last.fm 此頁對到的是單曲而非專輯，且 listeners 6 是單曲資料；該團正式專輯（1972 同名等）Apple 已上架，若改選其專輯則不再是冷門度 5；Last.fm 頁面無法開啟，listeners 取自 worker）】建議汰換。【moodGuess】x3 y4 z2 重型迷幻藍調：只有維基與 Discogs 風格標籤，單曲無聲音來源，存疑。【推翻策展層】推翻：非專輯。",
-  "coverage": "thin"
- },
- {
   "key": "desc2:Marlui Miranda|Olho D'Água",
   "artist": "Marlui Miranda",
   "album": "Olho D'Água",
@@ -458,59 +408,5 @@
   "status": "full",
   "notes": "【身分】Discogs master 873309（main release 2394903，Pronit SX 2148，1982 PL）。卡單 manualEvidenceUrls 把兩個 id 對調（master/2394903、release/873309 都 404），實際是 master 873309／release 2394903。廠牌：卡單寫『Polskie Nagrania Muza』，Discogs 為 Pronit（目錄 SX 2148）並掛 Polskie Nagrania／Studio Polskich Nagrań，建議廠牌欄改 Pronit。【流亡判定：合格（存疑）（listeners 238，證據 https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Krzak&album=Paczka ；Apple pl 搜尋與 Spotify 搜尋都查無 Paczka，但 Apple 已有該團 1980 單曲與 2026 新專輯，目錄正在數位化；1999 EMI 與 2005 Metal Mind 的 CD 再版屬實體；Last.fm 頁面無法開啟，listeners 取自 worker）】。【風險】三個疑點供主線裁：(1) 238 貼近 299 上限；(2) 國營廠有金唱片、1999／2005 兩次 CD 再發，『私壓或極小廠』的冷門度不貼；(3) 波蘭目錄可能隨時上串流。若要嚴格只收私壓，建議不填 pearl。【moodGuess】x3 y3 z3 爵士搖滾即興：Discogs 為藍調搖滾，大致相容。【推翻策展層】廠牌、id 順序。",
   "coverage": "full"
- },
- {
-  "key": "desc2:Magnetic Band|Magnetic Band",
-  "artist": "Magnetic Band",
-  "album": "Magnetic Band",
-  "facts": [
-   {
-    "f": "1980 年蘇聯 Melodiya 發行的 7 吋 33 轉唱片，目錄號 C62-13399-400，只有兩首：A 面〈Trubaduur Magistraalil〉5 分 7 秒、B 面〈Äriasjad〉5 分 10 秒。",
-    "src": "https://www.discogs.com/release/1230333"
-   },
-   {
-    "f": "Discogs 在這個 master 下登記了多個 EP 版本：1980 年首壓、1981 年的立體聲再版，以及 1982 與 1983 年的再壓，目錄號都是 C62-13399-400。",
-    "src": "https://www.discogs.com/master/435302"
-   },
-   {
-    "f": "人員為 Gunnar Graps（曲、主唱、打擊、鍵盤）、Heini Vaikmaa 與 Sulev Kuusik（吉他）、Marius Sagadi（貝斯）、Mati Valdaru（薩克斯風）；工程師 Eduard Kattai，編輯 Joann Juštšuk。",
-    "src": "https://www.discogs.com/release/1230333"
-   },
-   {
-    "f": "標籤上印的版權資訊顯示由里加唱片廠壓製，錄音在 1979 年的塔林唱片錄音室完成。",
-    "src": "https://www.discogs.com/release/1230333"
-   },
-   {
-    "f": "Magnetic Band 是愛沙尼亞團，1976 年由 Gunnar Graps 成立，早期是受雷鬼與放克靈魂影響的爵士搖滾，1977 年後加入金屬搖滾；英文維基形容它混合爵士搖滾、藍調與放克。",
-    "src": "https://en.wikipedia.org/wiki/Magnetic_Band"
-   },
-   {
-    "f": "他們曾是蘇聯最受歡迎的重音樂團之一，1980 年在第比利斯搖滾節拿下首獎，1982 年《華盛頓郵報》用整版報導 Graps 與樂團。",
-    "src": "https://en.wikipedia.org/wiki/Magnetic_Band"
-   },
-   {
-    "f": "1983 年蘇聯當局禁了這個團，之後以 Gunnar Graps Group（GGG）之名活動到 1980 年代末。",
-    "src": "https://en.wikipedia.org/wiki/Magnetic_Band"
-   },
-   {
-    "f": "Apple Music 上可查到 Gunnar Graps & Magnetic Band 的 2025 年單曲〈Tühjad pihud〉，這是團後來的錄音，不是 1980 年的 Melodiya EP。",
-    "src": "https://music.apple.com/us/album/t%C3%BChjad-pihud-single/1850976393"
-   },
-   {
-    "f": "Last.fm 這張專輯的聽眾數為 35（worker 回傳 _listeners）。",
-    "src": "https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Magnetic%20Band&album=Magnetic%20Band"
-   }
-  ],
-  "hookCandidates": [
-   "蘇聯重音樂團 Magnetic Band 在 1980 年拿下第比利斯搖滾節首獎，唱片卻只有一張兩首歌的 7 吋 Melodiya。"
-  ],
-  "sound": "放克搖滾加薩克斯風與雙吉他：A、B 面各約 5 分鐘一首，兩首都是長曲；曲風依維基為爵士搖滾、藍調與放克，Discogs 標為放克，無樂評描述音色。",
-  "keyTracks": [
-   "Trubaduur Magistraalil",
-   "Äriasjad"
-  ],
-  "status": "thin",
-  "notes": "【身分】Discogs master 435302／release 1230333（Melodiya C62-13399-400，1980 USSR）。這是 7 吋 EP，全盤兩首、約 10 分鐘，不是 LP；curatorRisk 說『MB 標為 EP，Discogs 為 LP』不對，Discogs 本身也標 7 吋（首版另登 EP），卡單 releaseType Album 與 curatorWhy『放克搖滾首作』皆不成立。【流亡判定：不合格（非專輯：7 吋 EP，兩首；listeners 35，證據 https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Magnetic%20Band&album=Magnetic%20Band ；Apple 僅見該團 2025 年單曲，未見此 EP 上架；Last.fm 頁面無法開啟，listeners 取自 worker）】listeners 與串流兩條單看是過的，但體裁是 EP，建議汰換。【moodGuess】x3 y4 z2 放克律動：只有兩首長曲，Discogs 標 Funk，相容。【推翻策展層】推翻：LP 首作。",
-  "coverage": "thin"
  }
 ]

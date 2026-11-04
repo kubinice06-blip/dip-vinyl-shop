@@ -36,3 +36,9 @@
 - 51821：c 組 7 張逐張核對流亡資格。合格 3（Lutajuća Srca 12、Eloy 12、Maxfield 75）；不合格 4：Grupa 220《Sivilo Perona》（Discogs 全為 7" 單曲，非專輯）、Schnitzler《Eruption》（Apple 有 Bureau B 2012 Kluster《Eruption》同音源）、Dissevelt（卡單證據連到單曲 master 614758，真專輯為 master 178091／MB 4f7f8f29，且有 2012 Omni CD）、Lundsten（四張 CD 合輯在 Apple 串流含〈Mizar〉，邊緣）。
 - 51822：Last.fm 直連多半回 600，listeners 以 worker `_listeners` 為準；Bandcamp 搜尋頁無法載入，Spotify 未核對，Eloy／Maxfield／Lutajuća Srca 為「暫時合格」。
 - 51823：MB 實際有 Eloy（RG 67561f1f）、Maxfield（RG 85d86ba0）、Dissevelt（RG 4f7f8f29）條目，與卡單 mbAbsenceProof 不符，建議主線補 mbid。
+
+## 主線研究驗收（51871–）
+- 51871 汰 5（身分錯置，非整張專輯或不是這個掛名）：Grupa 220《Sivilo Perona》（Discogs master 426402 全是 1971 七吋）、Color Humano《Sangre del Sol》（Microfon 七吋兩首）、Magnetic Band《Magnetic Band》（Melodiya 七吋 EP）、Conrad Schnitzler《Eruption》（即 Kluster 1971 告別演出同一份音源，Bureau B 2012 以 Kluster 名義正式串流）、Tom Dissevelt《Song of the Second Moon》（卡單證據是七吋；真 LP 為 Limelight LS 86050、掛名 Tom Dissevelt & Kid Baltan，worker listeners 538，超過流亡上限）。卡單 25 → 20，研究稿同步刪。
+- 51872 轉一般卡 5（不填 pearl）：Les Ambassadeurs《Mandjou》（以 Ambassadeur International 查 listeners 450、Badmos 2017 正式數位）、Brigth Engelberts《Tolambo Funk》（Badmos 2017 改名《Civilisation in the World》同曲目正式數位）、Sagrado Coração da Terra 同名作（Apple BR 有 1984 原盤串流）、Marlui Miranda《Olho D'Água》（Continental 正式商業廠、Apple BR 有串流）、Krzak《Paczka》（國營 Pronit、金唱片、1999 EMI／2005 Metal Mind 兩次 CD 再發，不符「私壓或極小廠」；listeners 238 貼上限）。
+- 51873 流亡 15 張照研究層合格採用。兩個邊緣案例照收：Mike Nyoni《I Can't Understand You》——Now-Again 2018 選輯《My Own Thing》只收其中 4 首，整張無單獨串流；Ralph Lundsten《Elektronisk Musik》——只有〈Mizar〉一首收進 4CD 合輯串流。判準：「正式串流再發」指整張專輯，單曲收進跨盤選輯不算。主線另以 iTunes Search（jp／us）抽查 Hairpin Circus、강태환、Tokyo Kid Brothers、Cool Knights、Mike Nyoni，都沒有本盤。
+- 51874 Hairpin Circus 身分證據改用 Discogs master 539078（研究 a：原 3419320 是 FS-1707 七吋）。
