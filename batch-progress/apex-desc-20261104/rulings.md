@@ -383,3 +383,70 @@
 - bulk put 43 鍵（desc2 30＋CJK 卡 desc4 13），wrangler 印 `Success!`；`verify-wave-kv` 回讀 43/43 逐字一致。
 - `front-check ad-10`：30/30 前台為新稿，CURATED 0。
 - manifest 同步 26 處（c41-chinese 3、c42-japan 1、c43-korea 6、c44-rock 3、c45-hiphop 1、c46-soundtrack-cross 5、c47-pop-country-latin 3、c50 3、c51 1）。
+
+## ad-13（異端 25 張，s7）
+
+- 派工補充：殿堂批的派工詞偏重樂評與榜單，s7 加 `prompt-research-extra-s7.md`／`prompt-writer-extra-s7.md`（異端＝極端在哪裡＋為什麼被認真看待；流亡＝為什麼少有人聽＋為什麼值得聽；再版廠文案形容詞不當地位證據；出處只放 facts）。
+- 研究 3 Sonnet（WebSearch a 16／b 16／c 8 次）、寫作 2 Opus。coverage 唯一 none：Solmania sound、Government Alpha making。**主線補查 MusicBrainz**（不耗 WebSearch）：Metamorphor Chorus 1991-01-25 Alchemy ARCD-020 五軌（Flood 27:47…）、Alphaville 1999-09 瑞典 Segerhuva SEGER 1 七軌（Enantiodromia 9:17）——舊稿這兩筆其實是對的，併回 `research/ad-13-b.json` 標「主線補查」。Solmania 聲音只寫大野雅彥的自製多弦吉他做法，不宣稱本盤編制。
+- **異端卡 status 普遍 thin**：多數噪音／即興盤沒有大媒體專評，地位改用具體的極端事實（單曲長度、聲源、手法、壓量）＋被誰點名或再版；廠商文案（Grapefruit、Tobira、Soleilmoon、Editions Mego、Dialogo）只取事實。
+- 研究層推翻舊稿的主要錯誤（新稿未沿用）：Consume Red 樂器是 hojok（胡笛）不是嗩吶；Symphony for a Genocide 五首不是七首；Mort à Crédit「生前唯一流通專輯」（實為生前最後一張）；解体的交感 把高柳給 New Direction 的三條指令套到這場雙人演出；Bestial Burden 手術照片／臥床三週／嘔吐聲；蔵六の奇病 錄音期間；Quietus「曲名引用職業」；C.C.C.C. 黑膠軌數；Menche「Skunkworks Studios」與年份（1994）；Hecker「六軌全同名」；Tone 生地與移居年；Amacher 師承；Minton 曲數。
+- **《Tiger Thrush》日文盤名用「虎鶫」**：日文漢字是「鶫」（つぐみ），研究稿寫的「鶇」是繁中字形；原文標題一字不改，用日文字。
+- 機器 QA：`qa-batch research ad-13` 通過；`out` 3 標記皆誤報（Coltrane 專名、International Jazz Forum 票選屬具名獎項、虎鶫）；fix-spacing 0；字數 221–280。
+
+### 主線審稿（2026-11-04，25 張逐張讀、逐句對研究稿；加問「讀完知不知道它憑什麼是這一級」）
+
+改 13 處（9 張，`review-ad-13.json`；同一張多次改分開記）：
+
+- `pharmakon|bestial burden`：「同名曲被列入當年的年度歌曲榜」→「同名曲進了 2014 年的年度百大單曲榜」。「年度歌曲榜」太含糊；研究稿 status：Pitchfork 2014 年度單曲第 75 名（百大）
+- `高柳昌行 / 阿部薫|解体的交感`：「常被視為當時最激進的自由爵士示範之一」→「被視為當時最激進的自由爵士示範之一」。單一來源（Positive Feedback），不用「常」
+- `高柳昌行 / 阿部薫|解体的交感`：「，兩人的交鋒更像吵架而不是對話」→「（刪）」。審稿第 4 問：比喻（Oleś 的「街頭吵架」）
+- `manfred schoof|european echoes`：「常被拿來和 John Coltrane 的《Ascension》相比，被視為聽來吃力、但演出極為出色」→「被拿來和 John Coltrane 的《Ascension》相比，被視為聽來吃力、但演出卓越」。比較出自單一來源（Shoemaker），不用「常」；「卓越」照 Penguin Guide 原意
+- `nihilist spasm band|no record`：「起初是替實驗電影組的 kazoo 合唱團」→「起初是為一部實驗電影組成的 kazoo 合唱團」。語句不通；研究稿 making：為實驗電影組成的 kazoo 合唱團
+- `the new blockaders|changez les blockeurs`：「常被稱為最早的噪音唱片之一」→「被視為最早的噪音唱片之一」。具名來源只有 RRR 的 Ron Lessard 一人，不用「常」
+- `阿部薫|mort à crédit`：「常被視為他風格轉向的標記」→「被視為他風格轉向的標記」。單一評者（Soundohm 頁），不用「常」
+- `非常階段|蔵六の奇病`：「秋田昌美（Merzbow）稱他們是關西最兇惡的樂團」→「被視為關西最兇惡的樂團」。出處不寫進簡介（apex-desc-base 語氣節）
+- `hecker|acid in the style of david tudor`：「評價兩極：有樂評只給 6 分（滿分 10），認為要經過嚴格訓練才能欣賞；也有樂評說隨附專文讓它成了有意思的哲學工具，卻很難想像有人為樂趣去聽。」→「評價兩極：它被認為要經過嚴格訓練才能欣賞，也被認為靠隨附的專文成了有意思的哲學工具，卻很難為了樂趣去聽。」。出處不寫進簡介（「有樂評說」屬引述句式）；分數去掉
+- `yasunao tone|solo for wounded cd`：「也是他學界討論最多的作品之一」→「也是他在學界被討論最多的作品之一」。語句不通
+- `pharmakon|bestial burden`：「2014 年由 Sacred Bones 發行，」→「（刪）」。審稿改句後超字（283），壓字；年份仍在同句
+- `nihilist spasm band|no record`：「，成員多有正職」→「（刪）」。審稿改句後超字（282），壓字
+- `yasunao tone|solo for wounded cd`：「他形容播放器的行為完全不可預測」→「播放器的行為因此完全不可預測」。審稿改句後超字（281），壓字
+
+其餘 16 張逐張審過，未改字。第五問（憑什麼是這一級）25 張都在前兩句講出極端的具體事實（整碟一首約一小時、無輸入混音台、刮傷 CD、純人聲獨奏、不剪接不疊錄不用電子、單一回授聲源等）＋被認真看待的事實（年度榜、被 Merzbow／Thurston Moore／Stapleton 點名、再版、學界討論）。另核對：Bestial Burden Metacritic 79 與 Pitchfork 年度單曲 75 有研究稿；Tudor「自製電路被視為現場電子音樂的里程碑」出自英文維基；Current 93「啟發許多暗黑氛圍與儀式工業團體」研究稿有。
+
+### 上線
+
+- `kv-token-check` 通過；舊值存 `kv-before-ad-13.json`（50 鍵，29 個非 null）。
+- bulk put 29 鍵（desc2 25＋CJK 卡 desc4 4），wrangler 印 `Success!`；`verify-wave-kv` 回讀 29/29 逐字一致。
+- `front-check ad-13`：25/25 前台為新稿，CURATED 0。
+- manifest 同步 25 處（13 個 manifest 檔）。
+
+## ad-14（流亡 30 張，s7）
+
+- 研究 3 Sonnet（WebSearch a 15／b 14／c 13 次；本工作階段研究層合計 82 次）、寫作 2 Opus。coverage none：非常階段《Viva Angel》sound、Shiho Yabuki／Anno Luz／Ariesta Birawa／Giant Step making。裁定：Viva Angel 聲音借 `research/ad-13-b.json`《蔵六の奇病》的團體層級事實，寫成團體做法、不宣稱本盤編制；making none 的不寫錄音經過。未另派補查。
+- **主線裁定**（寫進寫作派工詞）：
+  - 浜瀬元彦《Reminiscence》日文維基 1985、商家 1986 兩說 → 簡介寫「1980 年代中期」；2018 Studio Mule 版是重新錄音，不寫成再版。
+  - Derek Bailey《Solo Guitar Volume 1》以 1971 Incus 原版為主體，卡名 Volume 1 來自 2017 Honest Jon's 版，放後續一句。
+  - Paul Rutherford 一直在版，不寫「難找」；地位用具名評價（Bailey 在 The Wire 1987、Penguin Guide 四星），少人聽的理由寫成長號獨奏自由即興本身。
+  - Company Caine 是商業發行、進過 Kent 榜，不是私壓；寫長年未再版、2015 才出 CD。
+- **卡池資料疑點（未動 seed，留給店主）**：Junei《Let's Ride》seed 年份 2014，原 45 轉單曲是 1987 年 Pharaohs Records（2014 應是 Numero 版）。簡介照 1987 寫。
+- 研究層推翻舊稿的主要錯誤（新稿未沿用）：한대수「文化公報部回收命令」「〈희망가〉禁歌」；Zodiac「每首兩三分鐘」「極具張力的自由爵士」；Yabuki 的 Morning 廠牌／新体道／延曆寺法會；小久保隆「五首」「鳥鳴」；Anno Luz 的 Tangerine Dream 比較與小提琴；Burchette「六張」（七張）；Viva Angel 節奏機／排尿／豬頭；Angkanang 單曲年份（1972）；Piano Choir 誰打頭陣；Brief Encounter「Jazzman 2010 復刻」；Errata Corrige「限量 500 張」；Finnerud「國家美術館收藏」；Bluiett「上低音站最前面」；Mahogany Brain 內頁作者與曲長；Company Caine 錄音月份。
+- 機器 QA：`qa-batch research ad-14` 通過；`out` 3 標記：「1970 年代」誤報 2、BAG「不具名名單」（已改，見下）；fix-spacing 寫作層補 1 處、主線後 0；字數 215–280。
+
+### 主線審稿（2026-11-04，30 張逐張讀、逐句對研究稿；加問「讀完知不知道它憑什麼是這一級」）
+
+改 5 處（5 張，`review-ad-14.json`）：
+
+- `junei|let's ride`：「，聲音被認為比芝加哥浩室早了幾年」→「（刪）」。再版廠（Numero）文案，不當評價寫（prompt-research-extra-s7）
+- `aka|do what you like`：「專輯裡約三到四成是 Ucok 唱的硬搖滾，其餘是常由鼓手唱的憂鬱流行歌」→「他們的專輯通常約三到四成是 Ucok 唱的硬搖滾，其餘是憂鬱的流行歌」。印尼文維基講的是樂團專輯通例，不專指本盤；「鼓手唱」研究稿未寫明身分
+- `angkanang kunchai with ubon-pattana band|isan lam plearn`：「，被認為是第一次把 molam 與 luk thung 融在一起的唱片，催生了 luk thung Isan 這個類型。」→「。」。「第一次融合、催生類型」只有再版廠（Oye／EM）文案，無具名來源，不寫
+- `jemeel moondoc & muntu|the evening of the blue men`：「有評論認為，若不是當年流通有限，它可能早被視為現代爵士經典」→「它被認為若不是當年流通有限，可能早已被視為現代爵士經典」。出處不寫進簡介（「有評論認為」屬引述句式）；來源 Clifford Allen（Paris Transatlantic 2010）
+- `black artists group|in paris, aries 1973`：「後來被列進自由爵士必聽唱片的名單」→「後來被列進兩份自由爵士必聽唱片名單」。機器 QA 標「不具名名單」；研究稿：Elliott Sharp（Village Voice）與 Thurston Moore 各一份，寫明是兩份
+
+其餘 25 張逐張審過，未改字。第五問：30 張前兩句都講出流通狀況（私壓、小廠、卡帶、促銷盤、郵購、只演一場、樂團早散、廠牌結束）與再發現（再版廠＋年份、被取樣、被收進合輯）；有具名評價的（Bailey、Rutherford、Transs、Dadawah、Moondoc、Company Caine、Finnerud、小久保隆）寫成「被視為」。另核對：小久保隆「環境音樂／療癒音樂的里程碑」出自日文維基；Ariesta「第一張能買到的印尼迷幻專輯」出自 NTS；Company Caine「1970 年代初前衛搖滾的里程碑」出自 Ian McFarlane；Mahogany Brain 丟磚塊出自英文維基 Bulteau 條。한대수「母帶也被收走」只有텐아시아一家，照留（具體、非評價）。
+
+### 上線
+
+- `kv-token-check` 通過；舊值存 `kv-before-ad-14.json`（60 鍵，32 個非 null）。
+- bulk put 34 鍵（desc2 30＋CJK 卡 desc4 4），wrangler 印 `Success!`；`verify-wave-kv` 第一次 3 鍵舊值（傳播延遲），重讀 34/34 逐字一致。
+- `front-check ad-14`：30/30 前台為新稿，CURATED 0。
+- manifest 同步 24 處。
