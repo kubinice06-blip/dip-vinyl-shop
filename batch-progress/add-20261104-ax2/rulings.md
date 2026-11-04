@@ -52,3 +52,4 @@
 
 ## 主線（研究中途）
 - **51671** 異端標準更正（同 ax1 第 51571 條）：`RES-APEX.md` 改回店主 2026-11-03 裁定 3 的 §3 基本定義，不要求 7 星。已交件的 a 組由主線依研究稿 facts 重判，寫進 `apex-override.json`。
+- 51621–51630 apex 依 51571 更正標準重判：heresy 4（Teitanblood、Gnaw Their Tongues、Dodecahedron、Blut Aus Nord《MoRT》），none 6（Ehnahre、Pan.Thy.Monium、Impetuous Ritual、Mitochondrion、Antediluvian、Ævangelist：有旋律／樂器／律動，或可信資料僅單一部落格）。此條取代上方「全判 none」。

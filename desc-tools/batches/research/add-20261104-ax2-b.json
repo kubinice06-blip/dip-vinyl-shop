@@ -56,14 +56,15 @@
   ],
   "status": "full",
   "coverage": "full",
-  "notes": "【身分】MB RG 3c19343d 1977；Discogs master 217276。標籤：原版 1977 德國 S Press Tapes／S Press Tonband（卡帶 C90，65/66），黑膠為 2018 Recital R54 再版（卡單 label 空白，建議填 S Press Tapes 或 Recital，由主線定）。YouTube 影片說明寫 1978，Discogs/MB 為 1977，取 1977。曲長 Discogs 與 Recital 版略有差異，facts 採 Recital。其他維基人物頁可核人物，專輯本身無獨立樂評。【moodGuess】x4.2 嘶吼無節拍成立，大致相符。【apex】無可信資料稱為場景最極端／最難入耳之一；Forced Exposure 與 Recital 只是廠方描述；此類聲音詩比較接近表演藝術，判 none。建議：黑膠其實是 2018 再版，非原版，主線自行決定是否保留。",
+  "notes": "【身分】MB RG 3c19343d 1977；Discogs master 217276。標籤：原版 1977 德國 S Press Tapes／S Press Tonband（卡帶 C90，65/66），黑膠為 2018 Recital R54 再版（卡單 label 空白，建議填 S Press Tapes 或 Recital，由主線定）。YouTube 影片說明寫 1978，Discogs/MB 為 1977，取 1977。曲長 Discogs 與 Recital 版略有差異，facts 採 Recital。其他維基人物頁可核人物，專輯本身無獨立樂評。【moodGuess】x4.2 嘶吼無節拍成立，大致相符。【apex】新標準（2026-11-04 更正）改判 heresy：全盤無樂器無拍、廠牌說明（Recital）用極端身體性描述，維基確認 crirythme 為聲音藝術裡獨樹一格的嘶吼形式。證據偏廠牌說明＋維基，無獨立專業樂評，為較弱的 heresy，主線可酌。建議：黑膠其實是 2018 再版，非原版，主線自行決定是否保留。",
   "apex": {
-   "verdict": "none",
-   "accessibility": 4,
-   "why": "聲音詩史上重要但缺乏可信資料稱其為場景最極端／最難入耳，且僅廠方描述，無獨立樂評。",
+   "verdict": "heresy",
+   "accessibility": 5,
+   "why": "整張只有一人的嘶吼、喉音與口部噪音，無樂器無拍；廠牌說明形容為吞麥克風、含收音頭漱口、吐出線路的幽閉語言痙攣，Discogs 歸 Non-Music，是聲音詩的極端代表。",
    "evidenceUrls": [
-    "https://www.discogs.com/master/217276",
-    "https://recitalprogram.bandcamp.com/album/cri-rythmes"
+    "https://recitalprogram.bandcamp.com/album/cri-rythmes",
+    "https://en.wikipedia.org/wiki/Fran%C3%A7ois_Dufr%C3%AAne",
+    "https://www.discogs.com/master/217276"
    ]
   }
  },
@@ -407,6 +408,210 @@
     "https://api.discogs.com/releases/878846",
     "https://www.soundohm.com/product/friday",
     "https://en.wikipedia.org/wiki/Musica_Elettronica_Viva"
+   ]
+  }
+ },
+ {
+  "key": "desc2:Mattin|Proletarian of Noise",
+  "artist": "Mattin",
+  "album": "Proletarian of Noise",
+  "facts": [
+   {
+    "f": "Mattin 是來自西班牙畢爾包的音樂人，主做噪音與即興，也寫關於即興、自由軟體與反智慧財產權的文章；音樂以「反版權（Anti-copyright）」無授權形式發表，已有 70 多張發行，並經營 w.m.o/r、Free Software Series 等廠牌。",
+    "src": "https://en.wikipedia.org/wiki/Mattin"
+   },
+   {
+    "f": "他 2001 年與 Eddie Prévost、Rosy Parlane 組成 Sakada；合作者包括 Oren Ambarchi、Tony Conrad、Taku Sugimoto；2009 年與 Anthony Iles 合編《Noise & Capitalism》，2022 年與 Ray Brassier 出版《Social Dissonance》。",
+    "src": "https://en.wikipedia.org/wiki/Mattin"
+   },
+   {
+    "f": "《Proletarian of Noise》2006 年 11 月由日本 hibari music 發行 CD（目錄號 hibari-10），全盤約一小時，共五首。",
+    "src": "https://www.discogs.com/master/3631458"
+   },
+   {
+    "f": "封面挪用日本噪音團體 Hijokaidan 1985 年《King of Noise》的圖像。",
+    "src": "https://www.discogs.com/master/3631458"
+   },
+   {
+    "f": "Discogs 備註寫明這張從 2005 年 8 月構思到 2006 年 9 月完成，完全使用 GNU/Linux 上的自由軟體製作。",
+    "src": "https://www.discogs.com/master/3631458"
+   },
+   {
+    "f": "曲目：〈Computer Music/Post-Fordism〉5 分 0 秒、〈Attitude Fetishist〉6 分 33 秒、〈You Are Stuck As A Free Human Being〉10 分 7 秒、〈Desecration Of Silence〉7 分 10 秒，壓軸〈Thesis On Noise〉長達 31 分 8 秒。",
+    "src": "https://www.discogs.com/master/3631458"
+   },
+   {
+    "f": "〈Thesis On Noise〉由 Lisa Rosendahl 朗讀（Voice），佔全盤一半以上時間；文章把噪音定義為一種社會活動，出自 Mattin 的〈Thesis on Noise〉。",
+    "src": "https://www.discogs.com/master/3631458"
+   },
+   {
+    "f": "Discogs 把風格標為 Noise、Spoken Word、Experimental、Sound Art，類別含 Non-Music。",
+    "src": "https://www.discogs.com/master/3631458"
+   },
+   {
+    "f": "Sputnik Music 上的使用者評論評價兩極，一則說用電腦內建麥克風製造回授聲景，另一則說這張「極度無聊」；沒有專業樂評。",
+    "src": "https://www.sputnikmusic.com/album/104725/Mattin-Proletarian-of-Noise"
+   },
+   {
+    "f": "聲音面：前四首是電腦生成的噪音與回授，無鼓無節拍；最後 31 分鐘是朗讀文字，聲音大幅回到人聲與安靜背景，整張並非一路的高音量噪音牆。",
+    "src": "https://www.discogs.com/master/3631458"
+   }
+  ],
+  "hookCandidates": [
+   "一小時的專輯，後半 31 分鐘是一位女聲在朗讀〈Thesis On Noise〉。",
+   "封面借用 Hijokaidan《King of Noise》的圖像，全程用 Linux 自由軟體做成。"
+  ],
+  "sound": "前四首是電腦生成的噪音與回授，無鼓無拍，壓軸是三十一分鐘的朗讀，不是一路轟炸的噪音牆。",
+  "keyTracks": [
+   "Thesis On Noise",
+   "Computer Music/Post-Fordism"
+  ],
+  "status": "thin",
+  "coverage": "thin",
+  "notes": "【身分】MB RG 374c0526；Discogs master 3631458／release 1376123 hibari music hibari-10（日本 2006 CD），label 確認 hibari music。非選輯。【事實限制】只查到 Wikipedia（附『缺可靠來源』警示）、Discogs 與 Sputnik 使用者評論（原頁 403，內容轉述自搜尋摘要）；無專業樂評，故 facts 第 9 條僅敘述評價兩極不引評語，status thin。聲音事實：我只能從曲名／Discogs 風格標籤推『前四首噪音／回授』，未聽過也沒有逐首描述來源，請主線視為不確定。【可信度】策展層擔心的『代表作可能是 Going Fragile』我沒查到文獻支持任何一張為代表。【建議汰換】聲音資料不足、後半為朗讀，與『極端難入耳』的設定不符，若主線要求有聲音事實可考的卡，建議汰換；若保留，只能走一般卡。【apex】無可信資料稱為場景最極端／最難入耳，後半為朗讀，硬蕊度不到 5，判 none。",
+  "apex": {
+   "verdict": "none",
+   "accessibility": 3,
+   "why": "後半 31 分鐘為朗讀，前半噪音細節無可信樂評，無資料稱為場景最極端／最難入耳。",
+   "evidenceUrls": [
+    "https://www.discogs.com/master/3631458",
+    "https://en.wikipedia.org/wiki/Mattin"
+   ]
+  }
+ },
+ {
+  "key": "desc2:Pita|Get Out",
+  "artist": "Pita",
+  "album": "Get Out",
+  "facts": [
+   {
+    "f": "Pita 是 Peter Rehberg（1968–2021）的化名，他是英國出生、1987 年遷居奧地利的電子作曲家，起初當 DJ 與撰稿人，1994 年底加入維也納實驗電子廠牌 Mego；Mego 2005 年結束後，他 2006 年以 Editions Mego 重啟並主持到過世。",
+    "src": "https://en.wikipedia.org/wiki/Peter_Rehberg"
+   },
+   {
+    "f": "他 1996 年以 Pita 名義出了首張專輯《Seven Tons for Free》；《Get Out》是 1999 年 Mego 的 Pita 專輯（目錄號 mego 029），2008 年 Editions Mego 推出再版。",
+    "src": "https://en.wikipedia.org/wiki/Peter_Rehberg"
+   },
+   {
+    "f": "《Get Out》1999 年 10 月在奧地利以 CD 發行，一半印數是藍色封面、一半是紅色封面；封面由 Tina Frank 設計，Christoph Amann 負責母帶。",
+    "src": "https://api.discogs.com/releases/11321"
+   },
+   {
+    "f": "備註寫明這張是 1998 年 6 月到 1999 年 6 月間，在維也納、巴黎、牛津、阿姆斯特丹、東京和紐約的「扭曲硬碟」上做成，1999 年 7 月在維也納 Random Studio 整理檔案。",
+    "src": "https://api.discogs.com/releases/11321"
+   },
+   {
+    "f": "全盤九首，全部叫 Untitled，長度為 3:09、2:05、11:19、1:40、4:23、3:38、1:06、1:52、8:50，約 38 分鐘；最長的是第三首 11 分 19 秒。",
+    "src": "https://www.discogs.com/master/64265"
+   },
+   {
+    "f": "Discogs 把風格標為 Abstract、Noise、Experimental，類別 Electronic。",
+    "src": "https://www.discogs.com/master/64265"
+   },
+   {
+    "f": "The Wire 1999 年 10 月號評論（片段）稱它「既是耳朵的享受也是創傷」，是一組變化多端、冒著氣泡的聲景，充分運用動態與立體聲場，粗糙的紋理層疊伸縮、調動低頻與高頻，每個聲音都放得準確、「bristling with life」。",
+    "src": "https://analogue.bytenoise.co.uk/message/b9b69291bab42eb85e70545822ee9ccec39f2e59"
+   },
+   {
+    "f": "同一篇評論的意譯說，九首在極端噪音與近乎寂靜之間來回，有突然的震動，也有琅琅上口的鉤子與靜止段落；第三首把和弦跑動的鉤子埋在密集刮擦的碎片噪音裡，空間感不斷放寬又收縮。",
+    "src": "https://analogue.bytenoise.co.uk/message/b9b69291bab42eb85e70545822ee9ccec39f2e59"
+   },
+   {
+    "f": "維也納《Falter》1999 年 9 月的 Mego 專題寫 Rehberg 在 phonoTAKTIK 99 音樂節的筆電演出「密集、有動態、很美」，同時提到該節目的聲音素材有一部分「刻意令人不安」。",
+    "src": "https://www.falter.at/zeitung/19990922/viel-feind-viel-ehr"
+   },
+   {
+    "f": "聲音面：沒有鼓與節拍，筆電處理的刮擦、尖銳高頻與失真碎片在極大音量落差中突然出現又退去；中段有電子嗶聲與近似鳥鳴的輕巧段落，並非整張都是高頻轟炸。",
+    "src": "https://analogue.bytenoise.co.uk/message/b9b69291bab42eb85e70545822ee9ccec39f2e59"
+   }
+  ],
+  "hookCandidates": [
+   "The Wire 1999 年評它「既是耳朵的享受也是創傷」，九首 Untitled 在極端噪音與近乎寂靜之間來回。",
+   "一年間在維也納、巴黎、東京、紐約等六座城市的硬碟上做成，一半 CD 藍封面、一半紅封面。"
+  ],
+  "sound": "筆電處理的尖銳刮擦與失真碎片，音量落差極大，在噪音與近乎寂靜之間跳動，沒有鼓和固定節拍。",
+  "keyTracks": [
+   "Untitled (3)"
+  ],
+  "status": "full",
+  "coverage": "full",
+  "notes": "【身分】MB RG df038b60；Discogs master 64265／release 11321（Mego mego 029，奧地利，1999-10，CD）。label 確認 Mego（卡單已填）；年份 1999 相符。非選輯。【Wire 引文】來自 1999 年郵件論壇轉貼的 The Wire 片段，非 Wire 官網，我只引片段。【音軌】曲名全為 Untitled，keyTracks 用 Untitled (3) 代指第三首。facts 第 10 條末句『中段有電子嗶聲與鳥鳴』取自搜尋摘要所引 Brainwashed 評論，原頁 404，未逐字核對；來源網址我放 Wire 片段（對應『極端噪音到近乎寂靜』），鳥鳴一節請主線視為未驗證可刪。【moodGuess】待主線；聲音事實為無鼓、動態大、非全程高頻。【apex】Wire 稱其為『耳朵的享受也是創傷』，帶『琅琅上口的鉤子』，Falter 稱筆電演出『密集、美』，搜尋顯示評論多稱它是 Mego 最佳作與入門，沒有可信資料稱為最極端／最難入耳（不同於 Merzbow 級），判 none。",
+  "apex": {
+   "verdict": "none",
+   "accessibility": 4,
+   "why": "Wire 稱既享受又創傷、帶鉤子，評論視為 Mego 入門佳作，無可信資料稱其為場景最極端。",
+   "evidenceUrls": [
+    "https://analogue.bytenoise.co.uk/message/b9b69291bab42eb85e70545822ee9ccec39f2e59",
+    "https://www.discogs.com/master/64265"
+   ]
+  }
+ },
+ {
+  "key": "desc2:Lasse Marhaug|The Shape of Rock to Come",
+  "artist": "Lasse Marhaug",
+  "album": "The Shape of Rock to Come",
+  "facts": [
+   {
+    "f": "Lasse Marhaug 1974 年 9 月 10 日生於挪威 Steigen，在特隆赫姆長大、現居奧斯陸，90 年代初起活躍，主做噪音，也跨足即興、爵士、搖滾與極端金屬；挪威百科稱他是挪威噪音音樂最鮮明的先驅之一，曾組二人組 Jazkamer。",
+    "src": "https://snl.no/Lasse_Marhaug"
+   },
+   {
+    "f": "他參與過 200 多張發行，合作對象包括 Merzbow、Sunn O)))、Ken Vandermark、Jenny Hval；目前計畫有 Nash Kontroll（與 Mats Gustafsson、Dror Feiler）等，自己經營 TWR Tapes 與 Pica Disk 廠牌。",
+    "src": "https://en.wikipedia.org/wiki/Lasse_Marhaug"
+   },
+   {
+    "f": "《The Shape of Rock to Come》2004 年由挪威 Smalltown Supersound 發行 CD（目錄號 STS 084 CD），不是他自己的 Pica Disk。",
+    "src": "https://api.discogs.com/releases/369880"
+   },
+   {
+    "f": "錄音 2002 至 2003 年在特隆赫姆與奧斯陸進行，第四首〈Headless Piss〉錄於卑爾根的 Duper 工作室；Marhaug 一人包辦電腦、吉他與電子設備，母帶由 Audun Strype 處理。",
+    "src": "https://api.discogs.com/releases/369880"
+   },
+   {
+    "f": "全盤五首：〈Sleeper〉20 分 28 秒、〈Magmadiver〉13 分 12 秒、〈All In Good Spirits〉10 分 45 秒、〈Headless Piss〉4 分 51 秒、〈It Is My Kind Of Top〉8 分 2 秒，約 57 分鐘。",
+    "src": "https://www.discogs.com/master/1239209"
+   },
+   {
+    "f": "第五首〈It Is My Kind Of Top〉用到 Snorre Ruch（Thorns）的吉他取樣，經 Moonfog Productions 同意使用。",
+    "src": "https://api.discogs.com/releases/369880"
+   },
+   {
+    "f": "挪威國家百科 SNL 說，這張的概念是把硬搖滾（hard rock）的節奏、旋律與人聲全部抽掉，只留下它的能量與噪音；專輯入圍了挪威 Spellemannprisen 獎（類別及是否得獎文中未載）。",
+    "src": "https://snl.no/Lasse_Marhaug"
+   },
+   {
+    "f": "標題呼應 Ornette Coleman 的《The Shape of Jazz to Come》。",
+    "src": "https://snl.no/Lasse_Marhaug"
+   },
+   {
+    "f": "2007 年挪威報紙 Dagsavisen 把這張排在挪威最佳專輯榜第 19 名。",
+    "src": "https://en.wikipedia.org/wiki/Lasse_Marhaug"
+   },
+   {
+    "f": "聲音面：沒有鼓與固定節拍，吉他回授推到極限，低頻嗡鳴與尖銳效果音在電腦裡處理後層層堆疊；單曲動輒十到二十分鐘。",
+    "src": "https://snl.no/Lasse_Marhaug"
+   }
+  ],
+  "hookCandidates": [
+   "概念是把硬搖滾的節奏、旋律與人聲全抽掉，只剩下能量與噪音。",
+   "標題呼應 Ornette Coleman，入圍挪威 Spellemannprisen，開場〈Sleeper〉長 20 分鐘。"
+  ],
+  "sound": "吉他回授被推到極限，低頻嗡鳴與尖銳效果音在電腦裡層層堆疊，沒有鼓也沒有節拍，單曲動輒十幾二十分鐘。",
+  "keyTracks": [
+   "Sleeper",
+   "Magmadiver"
+  ],
+  "status": "full",
+  "coverage": "full",
+  "notes": "【推翻策展層】label：策展層寫 Pica Disk，實際是 Smalltown Supersound STS 084 CD（Discogs release 369880；SNL 也寫 Smalltown Supersound）。Pica Disk 是 Marhaug 自己的廠牌，不是這張。年份 2004 相符。非選輯。【事實限制】Brainwashed 評論（搜尋摘要稱『吉他回授推到極限、低頻嗡鳴與尖銳效果音』）原頁 404，聲音面第 10 條的內容是依 SNL 的概念描述與搜尋摘要寫成，來源網址掛 SNL 僅支撐概念，回授細節請主線視為未驗證的二手轉述。『標題呼應 Ornette』來自搜尋摘要所引 Tangents 專欄，SNL 頁未明確寫，僅作為推測，建議主線刪該條或改為『標題讓人聯想』，原 facts 第 8 條來源可能不足，請審稿時留意。【moodGuess】待主線。【apex】新標準改判 heresy：SNL（挪威國家百科）寫明概念為只留噪音，Discogs 風格僅 Noise，全盤無鼓無旋律。Brainwashed 評論原頁 404（網址取自搜尋結果），其『回授推到極限』僅為搜尋摘要轉述，未親自驗證；若主線要求證據可開，這張的可信 7 域證據偏弱，可降為 none。",
+  "apex": {
+   "verdict": "heresy",
+   "accessibility": 5,
+   "why": "概念是抽掉硬搖滾的節奏、旋律與人聲只留噪音能量；全盤約 57 分鐘吉他回授與電腦處理的噪音，無鼓無拍，最短一首也近 5 分鐘。",
+   "evidenceUrls": [
+    "https://snl.no/Lasse_Marhaug",
+    "https://brainwashed.com/index.php/reviews-easyblog/lasse-marhaug-qthe-shape-of-rock-to-comeq",
+    "https://www.discogs.com/master/1239209"
    ]
   }
  }

@@ -32,3 +32,4 @@
 
 ## 主線（研究中途）
 - **51571** 異端標準更正：`RES-APEX.md` 原寫「7 星（史上最難入耳之一）」，比店主 2026-11-03 裁定 3（回到 §3 基本定義：accessibility 5＋可信資料支持其極端前衛／噪音／結構難入耳）嚴，c 組 7 張與 ax2 a 組 10 張全判 none。本檔改回裁定 3；還在跑的組發訊息更正，已交件的 c 組由主線依研究稿 facts 重判，寫進 `apex-override.json`。
+- **51529**　（c 組重判，照 2026-11-04 更正標準＝店主 11-03 裁定 3）：Atrax Morgue《Paranoia》（Debaser＋Musique Machine）、Wold《Screech Owl》（Musique Machine＋Scene Point Blank，邊緣案例）改判 heresy；其餘五張維持 none——NTT 為雙 CD 暗黑氛圍混合、Controlled Bleeding《Headcrack》偏工業氛圍、Anenzephalia 與 Con-Dom 無樂評且建議汰換、IRM 只有 Discogs／Noisextra。
