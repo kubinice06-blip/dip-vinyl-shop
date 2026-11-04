@@ -2,7 +2,7 @@
  "v": 1,
  "per": 40,
  "roster": "roster-20260929.json",
- "updatedAt": "2026-11-01T13:09:00.650Z",
+ "updatedAt": "2026-11-04T07:38:02.162Z",
  "batches": [
   {
    "batch": "ar-a-001",
@@ -12095,6 +12095,96 @@
    "state": "published",
    "note": "add-20261104（店主指定張睿銓《創世記》《出走》）上架卡缺介紹的藝人（ALBUM_ONBOARDING §11；1 位）；名冊 batch-progress/artist-intro/roster-add-20261104.json",
    "skipped": [],
+   "reviewFixes": 1
+  },
+  {
+   "batch": "ar-d-264",
+   "tier": "D",
+   "genres": [
+    "funk",
+    "psychedelic",
+    "rock",
+    "folk",
+    "electronic"
+   ],
+   "keys": [
+    "les ambassadeurs",
+    "jesper siliya",
+    "blackfoot",
+    "brigth engelberts and the b.e. movement",
+    "blackbuster",
+    "fanny's group",
+    "urfalı babi",
+    "tokyo kid brothers",
+    "cool knights",
+    "mike nyoni",
+    "sagrado coração da terra",
+    "marlui miranda",
+    "cuarteto cedrón",
+    "krzak",
+    "lutajuća srca",
+    "jean-claude eloy",
+    "richard maxfield",
+    "ralph lundsten"
+   ],
+   "state": "published",
+   "note": "新頂點盤線（流亡）add-20261104-ax4 上架卡缺介紹的藝人（ALBUM_ONBOARDING §11；18 位；名冊 batch-progress/artist-intro/roster-ax4.json）",
+   "skipped": [
+    "blackbuster",
+    "fanny's group",
+    "cool knights"
+   ],
+   "reviewFixes": 8
+  },
+  {
+   "batch": "ar-d-263",
+   "tier": "D",
+   "genres": [
+    "folk",
+    "psychedelic",
+    "soul",
+    "jazz"
+   ],
+   "keys": [
+    "sly boots",
+    "richard william turner",
+    "free enterprize",
+    "david lewis",
+    "ghostdance",
+    "drnwyn",
+    "mcallen",
+    "jeremy dormouse",
+    "stefan gnys",
+    "rin eric",
+    "circulation",
+    "fairy tale",
+    "ton vlasman",
+    "princess flower and the moon rays",
+    "inner dialogue",
+    "smack",
+    "ian a. anderson",
+    "probe",
+    "ebony rhythm funk campaign",
+    "heaven & earth",
+    "prince lasha ensemble",
+    "odean pope",
+    "bobby few",
+    "mtume umoja ensemble",
+    "clifford thornton & the jazz composer's orchestra"
+   ],
+   "state": "published",
+   "note": "新頂點盤線（流亡）add-20261104-ax3 上架卡缺介紹的藝人（ALBUM_ONBOARDING §11；25 位；名冊 batch-progress/artist-intro/roster-ax3.json）",
+   "skipped": [
+    "sly boots",
+    "richard william turner",
+    "free enterprize",
+    "david lewis",
+    "ghostdance",
+    "drnwyn",
+    "mcallen",
+    "stefan gnys",
+    "rin eric"
+   ],
    "reviewFixes": 1
   }
  ]

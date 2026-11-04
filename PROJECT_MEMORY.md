@@ -1,5 +1,15 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-04｜dip-vinyl-shop｜新頂點盤線 ax3／ax4：流亡 254 → 290（上線 46 張＋藝人介紹 31 位）
+
+- **內容**：ax3 歐美私壓（迷幻、民謠、靈魂放克、地下爵士）上線 26（pearl 21／一般 5）；ax4 亞洲、非洲、拉美、東歐、早期電子私壓上線 20（pearl 15／一般 5）。福音私壓查無合格盤，照實不收。研究層汰 5（七吋單曲／EP 3、Kluster 同源現場 1、Dissevelt 真 LP listeners 538）。
+- **頂點判準**：Last.fm listeners 有效且 1–299、非錯配、冷門度 5（私壓或獨立小廠、無整張正式串流再發）三條同時過才填 `pearl`（seed 第 9 欄、card_catalog tier＋apex:true、`apexAssessment` 附 listeners 與證據）。大廠（Mercury、CBS、UNI、Ranwood、國營 Pronit）與已有串流的轉一般卡。同級一人一張已核，與卡池既有 254 張流亡無撞名。
+- **寫入**：card_catalog 46 筆；KV 49 鍵（ax3 26、ax4 23）回讀逐字一致；seed 46 列；試聽 ready 3（其餘無串流，照實 unavailable）；Discogs 封面 31 張登錄 registry、聯絡表目視。
+- **其他**：私壓盤 seed 曲風欄 13 張空白、4 張被同名團標籤污染 → `scripts/build-seed-genres.mjs` 的 `ALBUM_GENRE_FIX` 補 17 筆；`genre-l3-artist-map.json` 補 25 位；曲風樹、抽卡封面重建；情緒評分 `score-ax34` 46 張併入，錨點 104/104。
+- **藝人介紹**：ar-d-263 上線 16（skipped 9）、ar-d-264 上線 15（skipped 3），審稿 9 處（刪「據說」、媒體名、單源評價）。
+- **主要檔案**：`batch-progress/add-20261104-ax3|ax4/`（rulings、covers、apex-override、handoff）、`onboarding-manifest-add-20261104-ax3|ax4-20261104.json`、`seed_cards.json`、`data/artist-intros/*`、`batch-progress/apex-new-20261104/PLAN.md`。
+- **驗證**：兩批 prepare／published gate 皆 0 error；`verify-wave-kv` 49/49；`qa-batch research|hooks|out`、`qa-artist gap|out` 通過（out 只剩 skipped 缺位）；`build-card-moods` 錨點 104/104。
+- **留給本機**：`album_overrides.tier` 用後台「依卡池同步頂點旗標」；Spotify／Bandcamp 未能在雲端抽查串流。
 ### 2026-11-04｜dip-vinyl-shop｜台客簡介改用店主改定版＋add-20261104 張睿銓《創世記》《出走》上架＋ar-d-265 藝人介紹
 
 - **台客的復仇**：店主親自改定新版固定簡介，一字不改寫進 KV `desc2:`／`desc4:濁水溪公社|台客的復仇`、manifest 兩份 `description.text`、`desc-tools/batches/output/add-20261103-out-1.json`。`kv-token-check` 通過；worker `/album-desc` 讀回逐字一致（KV-HIT-RESTYLED）；published gate 0 error。字數 231，在 240 內，不需放行。出處（馬世芳訪談、Jeph 1999 訪談、聲音軌跡）記進研究檔末三條 facts 與 `batch-progress/add-20261103/rulings.md`「店主改定簡介」。

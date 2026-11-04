@@ -1,0 +1,500 @@
+{
+ "group": "ax4b",
+ "factions": [
+  {
+   "id": "latam",
+   "zh": "拉美私壓",
+   "count": 4,
+   "why": "巴西、阿根廷私壓／極小廠"
+  },
+  {
+   "id": "eastern-europe",
+   "zh": "東歐國營廠冷門盤",
+   "count": 4,
+   "why": "波蘭、蘇聯愛沙尼亞、南斯拉夫"
+  },
+  {
+   "id": "early-electronic",
+   "zh": "早期電子私壓",
+   "count": 5,
+   "why": "60–70s 磁帶／合成器自費或極小廠"
+  }
+ ],
+ "albums": [
+  {
+   "artist": "Sagrado Coração da Terra",
+   "album": "Sagrado Coração da Terra",
+   "year": 1984,
+   "label": "Not On Label (self-released)",
+   "country": "Brazil",
+   "faction": "latam",
+   "genres": [
+    "rock",
+    "psychedelic"
+   ],
+   "apexTier": "pearl",
+   "apexWhy": "Last.fm listeners 170；私壓／國營極小量壓製，無串流再發（Apple 查無）",
+   "listeners": 170,
+   "why": "巴西自費發行的交響搖滾私壓，藏家圈的 Pernambuco/Minas 地下名盤",
+   "moodGuess": {
+    "x": 2,
+    "y": 3,
+    "z": 3,
+    "why": "交響迷幻搖滾，中等複雜度"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/389803",
+    "https://www.discogs.com/release/15452530",
+    "https://itunes.apple.com/search?entity=album&term=Sagrado%20Cora%C3%A7%C3%A3o%20da%20Terra%20Sagrado%20Cora%C3%A7%C3%A3o%20da%20Terra（無結果，封面取 Discogs）"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": "MusicBrainz release-group 搜尋 2026-11-04 無對應條目（或僅有他人／重發版）",
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/389803",
+    "https://www.discogs.com/release/15452530"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Color Humano",
+   "album": "Sangre del Sol",
+   "year": 1973,
+   "label": "Microfon",
+   "country": "Argentina",
+   "faction": "latam",
+   "genres": [
+    "rock",
+    "psychedelic"
+   ],
+   "apexTier": "pearl",
+   "apexWhy": "Last.fm listeners 6；私壓／國營極小量壓製，無串流再發（Apple 查無）",
+   "listeners": 6,
+   "why": "阿根廷 70 年代硬搖滾／迷幻藍調，原版極稀",
+   "moodGuess": {
+    "x": 3,
+    "y": 4,
+    "z": 2,
+    "why": "重型迷幻藍調"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/2590445",
+    "https://www.discogs.com/release/11893969",
+    "https://itunes.apple.com/search?entity=album&term=Color%20Humano%20Sangre%20del%20Sol（無結果，封面取 Discogs）"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": "MusicBrainz release-group 搜尋 2026-11-04 無對應條目（或僅有他人／重發版）",
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/2590445",
+    "https://www.discogs.com/release/11893969"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Marlui Miranda",
+   "album": "Olho D'Água",
+   "year": 1979,
+   "label": "Continental",
+   "country": "Brazil",
+   "faction": "latam",
+   "genres": [
+    "folk",
+    "experimental"
+   ],
+   "apexTier": "pearl",
+   "apexWhy": "Last.fm listeners 101；私壓／國營極小量壓製，無串流再發（Apple 查無）",
+   "listeners": 101,
+   "why": "巴西原住民音樂研究者結合爵士與巴亞奧的人聲作品",
+   "moodGuess": {
+    "x": 2,
+    "y": 2,
+    "z": 3,
+    "why": "民族／爵士融合，空靈"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/1046270",
+    "https://www.discogs.com/release/7077149",
+    "https://itunes.apple.com/search?entity=album&term=Marlui%20Miranda%20Olho%20D'%C3%81gua（無結果，封面取 Discogs）"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": "MusicBrainz release-group 搜尋 2026-11-04 無對應條目（或僅有他人／重發版）",
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/1046270",
+    "https://www.discogs.com/release/7077149"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "worker 查詢含撇號，listeners 101 為 chk 值，主線可複核"
+  },
+  {
+   "artist": "Cuarteto Cedrón",
+   "album": "De Argentina",
+   "year": 1972,
+   "label": "Polydor",
+   "country": "Argentina (Spain pressing)",
+   "faction": "latam",
+   "genres": [
+    "folk",
+    "jazz"
+   ],
+   "apexTier": "pearl",
+   "apexWhy": "Last.fm listeners 16；私壓／國營極小量壓製，無串流再發（Apple 查無）",
+   "listeners": 16,
+   "why": "流亡巴黎的阿根廷新探戈／政治歌謠四重奏",
+   "moodGuess": {
+    "x": 1,
+    "y": 2,
+    "z": 3,
+    "why": "新探戈、弦樂為主"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/1106261",
+    "https://www.discogs.com/release/21813586",
+    "https://itunes.apple.com/search?entity=album&term=Cuarteto%20Cedr%C3%B3n%20De%20Argentina（無結果，封面取 Discogs）"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": "MusicBrainz release-group 搜尋 2026-11-04 無對應條目（或僅有他人／重發版）",
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/1106261",
+    "https://www.discogs.com/release/21813586"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Discogs 登記為西班牙 Polydor 壓片；Apple 另有同團 Canciones Tradicionales de Argentina（不同專輯）"
+  },
+  {
+   "artist": "Krzak",
+   "album": "Paczka",
+   "year": 1982,
+   "label": "Polskie Nagrania Muza",
+   "country": "Poland",
+   "faction": "eastern-europe",
+   "genres": [
+    "rock",
+    "jazz"
+   ],
+   "apexTier": "pearl",
+   "apexWhy": "Last.fm listeners 238；國營廠壓製，無串流再發",
+   "listeners": 238,
+   "why": "波蘭藍調／爵士搖滾團，國營廠冷門盤",
+   "moodGuess": {
+    "x": 3,
+    "y": 3,
+    "z": 3,
+    "why": "爵士搖滾即興"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/2394903",
+    "https://www.discogs.com/release/873309",
+    "https://itunes.apple.com/search?entity=album&term=Krzak%20Paczka（無結果，封面取 Discogs）"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": "MusicBrainz release-group 搜尋 2026-11-04 無對應條目（或僅有他人／重發版）",
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/2394903",
+    "https://www.discogs.com/release/873309"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Discogs 條目 873309 為 master 下 release id，廠牌取推測 Muza；主線核對"
+  },
+  {
+   "artist": "Magnetic Band",
+   "album": "Magnetic Band",
+   "year": 1980,
+   "label": "Melodiya",
+   "country": "USSR (Estonia)",
+   "faction": "eastern-europe",
+   "genres": [
+    "rock",
+    "funk"
+   ],
+   "apexTier": "pearl",
+   "apexWhy": "Last.fm listeners 35；Melodiya 國營廠壓製，無串流再發",
+   "listeners": 35,
+   "why": "愛沙尼亞團，蘇聯 Melodiya 發行的放克搖滾首作",
+   "moodGuess": {
+    "x": 3,
+    "y": 4,
+    "z": 2,
+    "why": "放克搖滾，律動型"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/435302",
+    "https://www.discogs.com/release/1230333",
+    "https://itunes.apple.com/search?entity=album&term=Magnetic%20Band%20Magnetic%20Band（無結果，封面取 Discogs）"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": "MusicBrainz release-group 搜尋 2026-11-04 無對應條目（或僅有他人／重發版）",
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/435302",
+    "https://www.discogs.com/release/1230333"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 的 1980 條目標為 EP，Discogs 為 LP"
+  },
+  {
+   "artist": "Lutajuća Srca",
+   "album": "Lutajuća Srca 1",
+   "year": 1974,
+   "label": "PGP RTB",
+   "country": "Yugoslavia",
+   "faction": "eastern-europe",
+   "genres": [
+    "folk",
+    "rock"
+   ],
+   "apexTier": "pearl",
+   "apexWhy": "Last.fm listeners 12；國營廠壓製，無串流再發",
+   "listeners": 12,
+   "why": "南斯拉夫民謠搖滾，PGP RTB 國營廠冷門盤",
+   "moodGuess": {
+    "x": 2,
+    "y": 2,
+    "z": 2,
+    "why": "民謠搖滾，抒情"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/1118673",
+    "https://www.discogs.com/release/1054395",
+    "https://itunes.apple.com/search?entity=album&term=Lutaju%C4%87a%20Srca%20Lutaju%C4%87a%20Srca%201（無結果，封面取 Discogs）"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": "MusicBrainz release-group 搜尋 2026-11-04 無對應條目（或僅有他人／重發版）",
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/1118673",
+    "https://www.discogs.com/release/1054395"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Grupa 220",
+   "album": "Sivilo Perona",
+   "year": 1971,
+   "label": "Jugoton",
+   "country": "Yugoslavia",
+   "faction": "eastern-europe",
+   "genres": [
+    "rock",
+    "pop"
+   ],
+   "apexTier": "pearl",
+   "apexWhy": "Last.fm listeners 15；國營廠壓製，無串流再發",
+   "listeners": 15,
+   "why": "克羅埃西亞 60–70s 搖滾團，Jugoton 冷門盤",
+   "moodGuess": {
+    "x": 2,
+    "y": 3,
+    "z": 2,
+    "why": "流行搖滾"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/426402",
+    "https://www.discogs.com/release/1005096",
+    "https://itunes.apple.com/search?entity=album&term=Grupa%20220%20Sivilo%20Perona（無結果，封面取 Discogs）"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": "MusicBrainz release-group 搜尋 2026-11-04 無對應條目（或僅有他人／重發版）",
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/426402",
+    "https://www.discogs.com/release/1005096"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 僅有單曲"
+  },
+  {
+   "artist": "Conrad Schnitzler",
+   "album": "Eruption",
+   "year": 1974,
+   "label": "Edition Block",
+   "country": "Germany",
+   "faction": "early-electronic",
+   "genres": [
+    "electronic",
+    "experimental"
+   ],
+   "apexTier": "pearl",
+   "apexWhy": "Last.fm listeners 4；私壓／國營極小量壓製，無串流再發（Apple 查無）",
+   "listeners": 4,
+   "why": "Tangerine Dream／Kluster 成員的自費電子噪音盤",
+   "moodGuess": {
+    "x": 1,
+    "y": 5,
+    "z": 3,
+    "why": "抽象電子、無節拍"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/22686",
+    "https://www.discogs.com/release/12498760",
+    "https://itunes.apple.com/search?entity=album&term=Conrad%20Schnitzler%20Eruption（無結果，封面取 Discogs）"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": "MusicBrainz release-group 搜尋 2026-11-04 無對應條目（或僅有他人／重發版）",
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/22686",
+    "https://www.discogs.com/release/12498760"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Tom Dissevelt",
+   "album": "Song of the Second Moon",
+   "year": 1968,
+   "label": "Limelight",
+   "country": "US (Netherlands artist)",
+   "faction": "early-electronic",
+   "genres": [
+    "electronic",
+    "experimental"
+   ],
+   "apexTier": "pearl",
+   "apexWhy": "Last.fm listeners 61；私壓／國營極小量壓製，無串流再發（Apple 查無）",
+   "listeners": 61,
+   "why": "荷蘭 Philips 電子音樂先驅（Kid Baltan 合作）",
+   "moodGuess": {
+    "x": 2,
+    "y": 4,
+    "z": 3,
+    "why": "早期電聲、太空感"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/614758",
+    "https://www.discogs.com/release/493177",
+    "https://itunes.apple.com/search?entity=album&term=Tom%20Dissevelt%20Song%20of%20the%20Second%20Moon（無結果，封面取 Discogs）"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": "MusicBrainz release-group 搜尋 2026-11-04 無對應條目（或僅有他人／重發版）",
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/614758",
+    "https://www.discogs.com/release/493177"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 以 Kid Baltan 名義登錄 4f7f8f29；Apple 無結果"
+  },
+  {
+   "artist": "Jean-Claude Eloy",
+   "album": "Shānti",
+   "year": 1979,
+   "label": "Erato",
+   "country": "France",
+   "faction": "early-electronic",
+   "genres": [
+    "electronic",
+    "experimental"
+   ],
+   "apexTier": "pearl",
+   "apexWhy": "Last.fm listeners 12；私壓／國營極小量壓製，無串流再發（Apple 查無）",
+   "listeners": 12,
+   "why": "法國電聲具體音樂大作，融合東方冥想",
+   "moodGuess": {
+    "x": 1,
+    "y": 4,
+    "z": 4,
+    "why": "長篇電聲冥想"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/317935",
+    "https://www.discogs.com/release/938401",
+    "https://itunes.apple.com/search?entity=album&term=Jean-Claude%20Eloy%20Sh%C4%81nti（無結果，封面取 Discogs）"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": "MusicBrainz release-group 搜尋 2026-11-04 無對應條目（或僅有他人／重發版）",
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/317935",
+    "https://www.discogs.com/release/938401"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Richard Maxfield",
+   "album": "Electronic Music",
+   "year": 1969,
+   "label": "Advance Recordings",
+   "country": "US",
+   "faction": "early-electronic",
+   "genres": [
+    "electronic",
+    "experimental"
+   ],
+   "apexTier": "pearl",
+   "apexWhy": "Last.fm listeners 75；私壓／國營極小量壓製，無串流再發（Apple 查無）",
+   "listeners": 75,
+   "why": "美國磁帶音樂先驅，La Monte Young 同輩，僅限量壓製",
+   "moodGuess": {
+    "x": 1,
+    "y": 5,
+    "z": 4,
+    "why": "磁帶音樂、抽象"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/430466",
+    "https://www.discogs.com/release/1151501",
+    "https://itunes.apple.com/search?entity=album&term=Richard%20Maxfield%20Electronic%20Music（無結果，封面取 Discogs）"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": "MusicBrainz release-group 搜尋 2026-11-04 無對應條目（或僅有他人／重發版）",
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/430466",
+    "https://www.discogs.com/release/1151501"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Apple 另有 New Sounds in Electronic Music 合輯（不同專輯）；MB 有同名 RG 85d86ba0（1969）可補"
+  },
+  {
+   "artist": "Ralph Lundsten",
+   "album": "Elektronisk Musik",
+   "year": 1968,
+   "label": "His Master's Voice",
+   "country": "Sweden",
+   "faction": "early-electronic",
+   "genres": [
+    "electronic",
+    "experimental"
+   ],
+   "apexTier": "pearl",
+   "apexWhy": "Last.fm listeners 25；私壓／國營極小量壓製，無串流再發（Apple 查無）",
+   "listeners": 25,
+   "why": "瑞典電聲先驅與 Leo Nilson 的 HMV 電子音樂盤",
+   "moodGuess": {
+    "x": 1,
+    "y": 4,
+    "z": 3,
+    "why": "具體音樂、抽象電子"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/2467426",
+    "https://www.discogs.com/release/907465",
+    "https://itunes.apple.com/search?entity=album&term=Ralph%20Lundsten%20Elektronisk%20Musik（無結果，封面取 Discogs）"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": "MusicBrainz release-group 搜尋 2026-11-04 無對應條目（或僅有他人／重發版）",
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/2467426",
+    "https://www.discogs.com/release/907465"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "署名 Ralph Lundsten & Leo Nilson"
+  }
+ ],
+ "notes": [
+  "池子不夠：交 13 張（目標 18）。大量候選因 Apple 有串流、listeners≥300／無效、或與 pearl 同藝人而淘汰。",
+  "全部身分人工（Discogs master＋release），MB 皆查無或僅有重發／EP。",
+  "已排除 Laghonia（正規專輯為 Glue／Etcetera，listeners 5258／950）。",
+  "Ussachevsky 1968 盤為 Powell／Ussachevsky／Luening 三人合署，未收。",
+  "Krzak Paczka 廠牌與國別待主線複核。"
+ ]
+}

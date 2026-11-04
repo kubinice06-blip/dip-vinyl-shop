@@ -3,8 +3,8 @@
 > 這份是產出物，由 `node scripts/render-discogs-registry.mjs` 從
 > `data/discogs-cover-registry.json` 產生。**要改狀態請改 JSON**，不要改這份。
 
-共 **579** 張走 ALBUM_ONBOARDING §4 的 `discogs` 封面來源（待看圖 241、已核可 337、已退回 1）。
-最後更新：2026-11-03
+共 **610** 張走 ALBUM_ONBOARDING §4 的 `discogs` 封面來源（待看圖 241、已核可 368、已退回 1）。
+最後更新：2026-11-04
 
 **收錄規則**：藝人與盤名相符只是入場券，還要在年份／廠牌／目錄號裡至少對上兩項；
 `matchedOn` 欄記的就是實際對上哪幾項。圖片沿用 Discogs 圖床網址，
@@ -678,6 +678,47 @@
 | 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
 |---|---|---:|---|---|---|---|
 | 濁水溪公社 《台客的復仇》 | [#4813793](https://www.discogs.com/release/4813793) | 1999 | Keboyin Music（喜樂音） | 99142 | 條碼 4719260991428（同 MB release f174cde8）、年份 1999、18 軌曲目逐首相符、主線目視：L.T.K. C 標誌＋腦／膀胱插畫 | ok |
+
+## add-20261104-ax3（16 張）
+
+| 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
+|---|---|---:|---|---|---|---|
+| Circulation 《Tank Tracks》 | [#5613849](https://www.discogs.com/release/5613849) | 1969 | Deroy | ADM LP 522 | Discogs master 1061597 的版本、主線目視與盤名相符 | ok |
+| David Lewis 《Just Mollie and Me…》 | [#10038393](https://www.discogs.com/release/10038393) | 1976 | Tiger Lily Records | TL 14011 | Discogs master 1240783 的版本、主線目視與盤名相符 | ok |
+| Drnwyn 《Gypsies in the Mist》 | [#7150907](https://www.discogs.com/release/7150907) | 1978 | Not On Label (Drnwyn Self-released) | 31778 | Discogs master 526746 的版本、主線目視與盤名相符 | ok |
+| Free Enterprize 《The Eye of the Beholder》 | [#10127911](https://www.discogs.com/release/10127911) | 1980 | Not On Label | none | Discogs master 1702214 的版本、主線目視與盤名相符 | ok |
+| Ghostdance 《Ghostdance》 | [#8092455](https://www.discogs.com/release/8092455) | 1980 | Root River Records | RRR-999 | Discogs master 955953 的版本、主線目視與盤名相符 | ok |
+| Ian A. Anderson 《A Vulture Is Not a Bird You Can Trust》 | [#2698049](https://www.discogs.com/release/2698049) | 1971 | The Village Thing | V.T.S. 9 | Discogs master 3011291 的版本、主線目視與盤名相符 | ok |
+| Inner Dialogue 《Friend》 | [#5066435](https://www.discogs.com/release/5066435) | 1970 | Ranwood | R-8074 | Discogs master 669911 的版本、主線目視與盤名相符 | ok |
+| Joe Bonner 《Angel Eyes》 | [#873976](https://www.discogs.com/release/873976) | 1976 | Muse Records | MR 5114 | Discogs master 350194 的版本、主線目視與盤名相符 | ok |
+| Odean Pope 《Almost Like Me》 | [#1039172](https://www.discogs.com/release/1039172) | 1982 | Moers Music | Moers Music 01092 | Discogs master 265517 的版本、主線目視與盤名相符 | ok |
+| Prince Lasha Ensemble 《Insight》 | [#1350591](https://www.discogs.com/release/1350591) | 1966 | CBS | 62409 | Discogs master 227429 的版本、主線目視與盤名相符 | ok |
+| Probe 《Direction》 | [#12675329](https://www.discogs.com/release/12675329) | 1971 | Eborp, Ltd | none | Discogs master 542205 的版本、主線目視與盤名相符 | ok |
+| Richard William Turner 《The Passenger》 | [#14705352](https://www.discogs.com/release/14705352) | 1973 | Not On Label | TH-560820758 | Discogs master 1674125 的版本、主線目視與盤名相符 | ok |
+| Sly Boots 《Notes on a Journey》 | [#5014043](https://www.discogs.com/release/5014043) | 1969 | Faithful Virtue Records | FVS-2002 | Discogs master 656009 的版本、主線目視與盤名相符 | ok |
+| Smack 《Smack》 | [#9918908](https://www.discogs.com/release/9918908) | 1968 | Audio House | AH 14668 | Discogs master 461600 的版本、主線目視與盤名相符 | ok |
+| Stefan Gnys 《English Oaks and Evangeline》 | [#11301180](https://www.discogs.com/release/11301180) | 1969 | Not On Label (Stefan Gnys Self-released) | none | Discogs master 4057558 的版本、主線目視與盤名相符 | ok |
+| Ton Vlasman 《White Room With Disintegrating Walls》 | [#2288582](https://www.discogs.com/release/2288582) | 1970 | Flame Records (5) | Flp. 1. | Discogs master 268315 的版本、主線目視與盤名相符 | ok |
+
+## add-20261104-ax4（15 張）
+
+| 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
+|---|---|---:|---|---|---|---|
+| Blackbuster 《Blackbuster 3》 | [#2881761](https://www.discogs.com/release/2881761) | 1976 | RCA | XFPL1-005 | Discogs master 364961 的版本、主線目視與盤名相符 | ok |
+| Blackfoot 《Youth Power》 | [#7964587](https://www.discogs.com/release/7964587) | 1975 | Goodson Records (2) | none | Discogs master 942670 的版本、主線目視與盤名相符 | ok |
+| Cool Knights 《Bana Mulenga》 | [#9087158](https://www.discogs.com/release/9087158) | 1975 | Zambia Music Parlour | ZMPL 13 | Discogs master 1100576 的版本、主線目視與盤名相符 | ok |
+| Cuarteto Cedrón 《De Argentina》 | [#21813586](https://www.discogs.com/release/21813586) | 1972 | Polydor | 23 85 039 | Discogs master 1106261 的版本、主線目視與盤名相符 | ok |
+| Fanny's Group 《Cium Mesra》 | [#7322647](https://www.discogs.com/release/7322647) | 1968 | Lokananta Records | BRD-016 | Discogs master 1780374 的版本、主線目視與盤名相符 | ok |
+| Jean-Claude Eloy 《Shānti》 | [#938401](https://www.discogs.com/release/938401) | 1979 | Erato | STU 71205/6 | Discogs master 317935 的版本、主線目視與盤名相符 | ok |
+| Krzak 《Paczka》 | [#2394903](https://www.discogs.com/release/2394903) | 1982 | Pronit | SX 2148 | Discogs master 873309 的版本、主線目視與盤名相符 | ok |
+| Les Ambassadeurs 《Mandjou》 | [#6461375](https://www.discogs.com/release/6461375) | 1978 | Amons Records | 001 | Discogs master 533505 的版本、主線目視與盤名相符 | ok |
+| Lutajuća Srca 《Lutajuća Srca 1》 | [#1054395](https://www.discogs.com/release/1054395) | 1974 | PGP RTB | LPV 5239 | Discogs master 1118673 的版本、主線目視與盤名相符 | ok |
+| Marlui Miranda 《Olho D'Água》 | [#7077149](https://www.discogs.com/release/7077149) | 1979 | Continental (3) | 1.01.404.195 | Discogs master 1046270 的版本、主線目視與盤名相符 | ok |
+| Mike Nyoni 《I Can't Understand You》 | [#7841827](https://www.discogs.com/release/7841827) | 1978 | Zambia Music Parlour | ZMPL 51 | Discogs master 942566 的版本、主線目視與盤名相符 | ok |
+| Ralph Lundsten 《Elektronisk Musik》 | [#907465](https://www.discogs.com/release/907465) | 1968 | His Master's Voice | CSDS 1085 | Discogs master 2467426 的版本、主線目視與盤名相符 | ok |
+| Richard Maxfield 《Electronic Music》 | [#1151501](https://www.discogs.com/release/1151501) | 1969 | Advance Recordings (2) | FGR- 8S | Discogs master 430466 的版本、主線目視與盤名相符 | ok |
+| Sagrado Coração da Terra 《Sagrado Coração da Terra》 | [#15452530](https://www.discogs.com/release/15452530) | 1984 | Not On Label (Sagrado Coração Da Terra Self-released) | 803.150 | Discogs master 389803 的版本、主線目視與盤名相符 | ok |
+| Tokyo Kid Brothers 《黄金バット Golden Bat》 | [#2946656](https://www.discogs.com/release/2946656) | 1971 | Polydor | MR-5005 | Discogs master 674627 的版本、主線目視與盤名相符 | ok |
 
 ## c49（3 張）
 
