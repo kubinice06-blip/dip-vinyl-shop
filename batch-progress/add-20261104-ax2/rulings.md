@@ -83,3 +83,12 @@
 - 本組：heresy 1、none 9；建議汰換 3（大友、Malfatti、Barlow）；異端藝人撞名檢查（seed heresy 85 位）無撞名。
 - 程序註記：WebSearch 共約 8 次（全組）；Discogs／AllMusic／RYM／Progarchives／Squidco 多數 403，改用 Discogs API 與 WebFetch；`qa-batch.mjs` 未跑（不能 cd），已自驗條數、https、簡體、千分位。
 - **51673** 研究層建議汰換 7 張照汰：Nicolas Hodges《Voices and Piano》、Jani Christou《Vol. I》、Ensemble Modern《Spahlinger》（a 組：聽感克制、掛名不精確、材料少）、Mattin《Proletarian of Noise》（b 組：後半是朗讀、聲音證據不足）、Otomo Yoshihide《Cathode》、Radu Malfatti《Ohrkiste》、Clarence Barlow《Musica Algorithmica》（d 組：極簡抽象／證據過薄／回顧型雙 CD）。卡單 44→37，研究稿同步刪。Zbigniew Karkowski 只有藝人層級證據，照研究層判 heresy（他是公認的極端噪音作者）。
+
+## 研究 e 組（51641–51650）
+- 51641 Pyrrhon《The Mother of Virtues》：身分與 label（Relapse RR7256，2014-04-01）屬實；Ghost Cult 403、Musique Machine 頁面無內容，改用 Last Rites／No Clean Singing／Everything Is Noise 三篇可開樂評；apex heresy（無穩定律動、無鉤子、不協和，三篇獨立樂評；金屬專門媒體為主，可信度中）。
+- 51642 Cryptopsy《None So Vile》：推翻策展層 label「Wrong Again / Flatline」——Flatline 查無，只留 Wrong Again（瑞典廠牌，WAR009）；apex none（技術死金經典，有清楚 riff／blast／歌曲段落，樂評強調精準而非難入耳，屬一般碾核灰區；accessibility 4）。
+- 51643 The Body《All the Waters of the Earth Turn to Blood》：label At a Loss（aal033）屬實，CAA 有封面（解除策展層封面疑慮）；apex heresy（尖叫、不協和噪音牆、工業電子，Ink 19／Popdose／Scratch the Surface；開場約 7 分鐘合唱偏美，來源偏中小網媒，可酌）。
+- 51644 Dilloway《Modern Jester》：label Hanson（HN 250，2012）屬實；Dusted 稱本作是 2008 年卡帶的黑膠更新版（僅搜尋摘要，頁面 404，不入 facts）；策展層疑「整張是否 5」——Exclaim! 說暴烈迴圈之海、削腦喧囂，但 RA 說〈Body Chaos〉較安靜、AllMusic 說迴圈常凝聚成重節奏，故 apex heresy 為較弱判定，主線可降 none。
+- 本組 apex 彙總：heresy 3（Pyrrhon、The Body、Dilloway），none 1（Cryptopsy），建議汰換 0；異端藝人撞名檢查（seed heresy 85 位）無撞名（seed 另有 The Body《I Shall Die Here》，非 heresy 欄）。
+- 程序註記：WebSearch 共用 4 次（Pyrrhon 1、Cryptopsy 1、The Body 1、Dilloway 1）；Discogs／Metal Archives／AllMusic／Pitchfork／Ghost Cult 無法開啟；`qa-batch.mjs` 未跑，改以腳本自驗（https、簡體、千分位）通過。
+- **51674** Aaron Dilloway《Modern Jester》研究 e 組判 heresy（自評較弱），主線降 none：RA／AllMusic 都指出部分段落安靜、迴圈凝成重節奏，不符「整張難入耳」；照一般卡上架（`apex-override.json`）。
