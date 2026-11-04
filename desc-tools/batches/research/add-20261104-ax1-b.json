@@ -56,14 +56,15 @@
   ],
   "status": "full",
   "coverage": "full",
-  "notes": "身分核對：Discogs release 734495 與 MB RG 8ca06bed 對得上（Parasite、2001、Xerxes、CDr、Album）；Discogs 與 MB 國別皆 Japan（Xerxes 廠牌），藝人是美國團，未再另查廠牌所在。封面：Discogs release 734495 有正面圖（i.discogs.com 圖檔），可用。未推翻策展層（年份 2001、廠牌 Xerxes 皆正確）。策展層疑點『代表作選擇把握低』：Parasite 是限量 90 張 CDr，非 Skin Crime 最知名的出版，代表性偏弱，但仍是早期實體專輯、Discogs 有 4.67 分（9 筆）。『moodGuess 存疑：策展寫全頻寬失真噪音，廠牌方形容為有動態、有層次的濃密噪音，非靜止的牆，但仍無旋律無節奏，三軸大致成立』。頂點判定：無任何可信來源稱此盤是該場景最極端／最難入耳之一；來源只證明 Skin Crime 是 HNW 先驅（維基、廠牌文案），且聲音有動態層次，不到 7 星。判 none。異端撞名檢查：seed 第 9 欄 heresy 無 Skin Crime。",
+  "notes": "身分核對：Discogs release 734495 與 MB RG 8ca06bed 對得上（Parasite、2001、Xerxes、CDr、Album）；Discogs 與 MB 國別皆 Japan（Xerxes 廠牌），藝人是美國團，未再另查廠牌所在。封面：Discogs release 734495 有正面圖（i.discogs.com 圖檔），可用。未推翻策展層（年份 2001、廠牌 Xerxes 皆正確）。策展層疑點『代表作選擇把握低』：Parasite 是限量 90 張 CDr，非 Skin Crime 最知名的出版，代表性偏弱，但仍是早期實體專輯、Discogs 有 4.67 分（9 筆）。『moodGuess 存疑：策展寫全頻寬失真噪音，廠牌方形容為有動態、有層次的濃密噪音，非靜止的牆，但仍無旋律無節奏，三軸大致成立』。頂點判定：見下。異端撞名檢查：seed 第 9 欄 heresy 無 Skin Crime。【2026-11-04 依更正標準重判：由 none 改 heresy，把握中等——來源證明團體是 HNW 先驅與全盤噪音，無專評本盤。】",
   "apex": {
-   "verdict": "none",
+   "verdict": "heresy",
    "accessibility": 5,
-   "why": "Skin Crime 是美國 HNW 先驅，但沒有可信資料稱本盤為場景最極端／最難入耳之一，且聲音有動態層次，達不到 7 星。",
+   "why": "維基（有引註）把 Skin Crime 列為 harsh noise wall 先驅，Hospital Productions 稱其濃密、層疊的噪音是美式 harsh noise 的源頭；《Parasite》全盤五段都是無旋律無節拍的噪音。",
    "evidenceUrls": [
     "https://en.wikipedia.org/wiki/Harsh_noise",
-    "https://factmag.com/2016/03/02/hospital-skin-crime-20-disc-boxset"
+    "https://factmag.com/2016/03/02/hospital-skin-crime-20-disc-boxset",
+    "https://hospitalproductions.bandcamp.com/album/case-studies-in-early-taxidermy-techniques"
    ]
   }
  },
@@ -124,7 +125,7 @@
   ],
   "status": "thin",
   "coverage": "thin",
-  "notes": "身分核對：MB RG 6aed71ab（Justmeat、1995、IT）與 Discogs master 28275／release 253680（1995 卡帶、Slaughter Productions SPT40、義大利）對得上；MB 另有 1999 同名 RG（e8ebf268）為重發，未採用。策展層寫 Taint『歐洲 HNW』有誤：Taint 是美國德州人，音樂是 power electronics 不是 HNW；廠牌才是義大利。推翻策展層 1 處（國別／類型）。『moodGuess 存疑：無鼓無旋律成立，但這是 PE 的人聲＋電子噪音，並非全頻寬 HNW，z 與 y 估計可能偏』。查不到 Taint 的樂評或專文（WebSearch 與 Last.fm、RYM 皆無可用內容），所以 status 標 thin；人物生平只有 Discogs／MB 兩處且互相吻合（1970–2019）。封面：Discogs release 253680 有正面圖，可用。頂點判定：無可信資料稱本盤為場景最極端之一；僅有 Discogs 想要數與廠牌脈絡；判 none。異端撞名檢查：seed 無 Taint。",
+  "notes": "身分核對：MB RG 6aed71ab（Justmeat、1995、IT）與 Discogs master 28275／release 253680（1995 卡帶、Slaughter Productions SPT40、義大利）對得上；MB 另有 1999 同名 RG（e8ebf268）為重發，未採用。策展層寫 Taint『歐洲 HNW』有誤：Taint 是美國德州人，音樂是 power electronics 不是 HNW；廠牌才是義大利。推翻策展層 1 處（國別／類型）。『moodGuess 存疑：無鼓無旋律成立，但這是 PE 的人聲＋電子噪音，並非全頻寬 HNW，z 與 y 估計可能偏』。查不到 Taint 的樂評或專文（WebSearch 與 Last.fm、RYM 皆無可用內容），所以 status 標 thin；人物生平只有 Discogs／MB 兩處且互相吻合（1970–2019）。封面：Discogs release 253680 有正面圖，可用。頂點判定：無可信資料稱本盤為場景最極端之一；僅有 Discogs 想要數與廠牌脈絡；判 none。異端撞名檢查：seed 無 Taint。【2026-11-04 依更正標準重判仍為 none：無樂評或專文描述本盤，僅目錄資料。】",
   "apex": {
    "verdict": "none",
    "accessibility": 5,
@@ -193,7 +194,7 @@
   ],
   "status": "thin",
   "coverage": "thin",
-  "notes": "身分核對：Discogs release 348891（1995、Pure、CD、US）與 MB RG 1bdc095e 對得上。查不到這張專輯本身的樂評（WebSearch 一次只找到 Sputnik 評分與無關書評），音響描述只靠 Discogs 註記與曲名，故 thin。總長約 1 小時為本人加總曲長（8:39+8:22+5:53+4:51+5:40+8:45+5:36+4:26+5:21+4:15 約 61 分）。『曲名是對日本噪音名字的諧謔』為本人對曲名的解讀（Discogs 只寫『重新運用日本噪音藝人』），facts 已改寫為以註記為準、舉曲名為例。igloomag 那條源只證明專書存在。策展層疑點『代表作選擇把握低』：此盤在 Discogs 約 136 人收藏、97 人想要，但無評論依據，代表性中等。『moodGuess 存疑：x1 y5 z1 的全頻寬失真噪音待驗，無任何來源描述其音響；Beaulieau 的特色是鎖軌唱片與錯置素材，可能含較多取樣拼貼，不一定是平坦的牆』。頂點判定：沒有可信資料稱它是場景最極端／最難入耳之一；Beaulieau 在來源裡以怪誕、荒謬表演聞名，不是極端音量。判 none。異端撞名檢查：seed 無 Emil Beaulieau。",
+  "notes": "身分核對：Discogs release 348891（1995、Pure、CD、US）與 MB RG 1bdc095e 對得上。查不到這張專輯本身的樂評（WebSearch 一次只找到 Sputnik 評分與無關書評），音響描述只靠 Discogs 註記與曲名，故 thin。總長約 1 小時為本人加總曲長（8:39+8:22+5:53+4:51+5:40+8:45+5:36+4:26+5:21+4:15 約 61 分）。『曲名是對日本噪音名字的諧謔』為本人對曲名的解讀（Discogs 只寫『重新運用日本噪音藝人』），facts 已改寫為以註記為準、舉曲名為例。igloomag 那條源只證明專書存在。策展層疑點『代表作選擇把握低』：此盤在 Discogs 約 136 人收藏、97 人想要，但無評論依據，代表性中等。『moodGuess 存疑：x1 y5 z1 的全頻寬失真噪音待驗，無任何來源描述其音響；Beaulieau 的特色是鎖軌唱片與錯置素材，可能含較多取樣拼貼，不一定是平坦的牆』。頂點判定：沒有可信資料稱它是場景最極端／最難入耳之一；Beaulieau 在來源裡以怪誕、荒謬表演聞名，不是極端音量。判 none。異端撞名檢查：seed 無 Emil Beaulieau。【2026-11-04 依更正標準重判仍為 none：無樂評描述本盤音響。】",
   "apex": {
    "verdict": "none",
    "accessibility": 5,
@@ -261,11 +262,11 @@
   ],
   "status": "full",
   "coverage": "full",
-  "notes": "身分核對：MB RG 27254503（Intensive Care、Album、1998、US）→ release 020dde5e（Self Abuse Records SAD-07、CD、4 軌）→ Discogs release 262699，三者吻合；補上策展層『廠牌未查』：Self Abuse Records。封面：MB 與 Cover Art Archive 皆有正面圖，Discogs 也有。『合計約 72 分鐘』為本人加總（23:37×2＋10:52＋14:05）。『來源聲音三人』為 Discogs 的 Featuring [Source Sounds] 欄的轉述。未推翻策展層。『moodGuess 存疑：x1 y5 z1 大致成立；但維基列 power electronics 標籤，若含嘶吼人聲可能不是全無人聲，未找到來源驗證』。頂點判定：只有 Noisextra 主持人主觀稱『代表性之一』與 Sputnik 使用者短評，非可信樂評；維基只證明是第一代 HNW 之列，未稱最極端。拿不準判 none。異端撞名檢查：seed 無 Macronympha。",
+  "notes": "身分核對：MB RG 27254503（Intensive Care、Album、1998、US）→ release 020dde5e（Self Abuse Records SAD-07、CD、4 軌）→ Discogs release 262699，三者吻合；補上策展層『廠牌未查』：Self Abuse Records。封面：MB 與 Cover Art Archive 皆有正面圖，Discogs 也有。『合計約 72 分鐘』為本人加總（23:37×2＋10:52＋14:05）。『來源聲音三人』為 Discogs 的 Featuring [Source Sounds] 欄的轉述。未推翻策展層。『moodGuess 存疑：x1 y5 z1 大致成立；但維基列 power electronics 標籤，若含嘶吼人聲可能不是全無人聲，未找到來源驗證』。頂點判定：見下。異端撞名檢查：seed 無 Macronympha。【2026-11-04 依更正標準重判：由 none 改 heresy，把握偏低——第二個來源 Noisextra 是噪音專門 Podcast 的主觀評價，不是主流樂評；主線可視需要降回 none。】",
   "apex": {
-   "verdict": "none",
+   "verdict": "heresy",
    "accessibility": 5,
-   "why": "資料只有 Podcast 主觀評價與使用者短評，沒有可信樂評稱它是場景最極端／最難入耳之一，未達 7 星。",
+   "why": "維基列 Macronympha 為 harsh noise wall／power electronics，招牌是金屬廢料互撞疊成的噪音；本盤四首中兩首各 23 分多鐘，整張無旋律無節拍，Noisextra 稱為美國代表性噪音專輯。",
    "evidenceUrls": [
     "https://en.wikipedia.org/wiki/Macronympha",
     "https://www.noisextra.com/2021/11/03/macronympha-intensive-care"
@@ -329,14 +330,15 @@
   ],
   "status": "full",
   "coverage": "full",
-  "notes": "身分核對：MB RG 71e20a34、Discogs master 249672 與 release 11268（Mego 012、2001-04、CD、Austria）吻合；卡單 label Mego、country AT 正確。這是一張『現場錄音編輯盤』，但是 Haswell 首張專輯與代表作，有歷史定位，不建議汰換。Quietus 專文本人未能讀到（503／404），未採用其內容。『總長約 62 分鐘』取 Discogs 註記 62:13:72。『moodGuess 存疑：策展寫全頻寬失真噪音；實際是抽象、突變的數位拼貼，不是持續的失真牆，x1 y5 z1 的 z 值（冷熱）無來源可判』。頂點判定：找不到 Wire／Pitchfork 等可信樂評稱它是最極端；RBMA 只說『令人震驚地猛烈、完全抽象』，Ars Electronica 提及反而是藝術界的肯定；風格偏抽象電腦音樂，未達 7 星。判 none。推翻策展層『歐洲 HNW』的類型歸屬（實為抽象數位噪音），僅此 1 處。異端撞名檢查：seed 無 Russell Haswell。",
+  "notes": "身分核對：MB RG 71e20a34、Discogs master 249672 與 release 11268（Mego 012、2001-04、CD、Austria）吻合；卡單 label Mego、country AT 正確。這是一張『現場錄音編輯盤』，但是 Haswell 首張專輯與代表作，有歷史定位，不建議汰換。Quietus 專文本人未能讀到（503／404），未採用其內容。『總長約 62 分鐘』取 Discogs 註記 62:13:72。『moodGuess 存疑：策展寫全頻寬失真噪音；實際是抽象、突變的數位拼貼，不是持續的失真牆，x1 y5 z1 的 z 值（冷熱）無來源可判』。頂點判定：見下。異端撞名檢查：seed 無 Russell Haswell。【2026-11-04 依更正標準重判：由 none 改 heresy。】",
   "apex": {
-   "verdict": "none",
+   "verdict": "heresy",
    "accessibility": 5,
-   "why": "雖然吵，但找不到可信樂評稱其為場景最極端／最難入耳；資料多是藝術界肯定與抽象電腦音樂定位，未達 7 星。",
+   "why": "Red Bull Music Academy 形容其噪音「令人震驚地猛烈、完全抽象」，Discogs 盤面註記要求最大音量播放；全盤八段現場數位噪音，無旋律無穩定節拍。",
    "evidenceUrls": [
     "https://daily.redbullmusicacademy.com/2015/08/russell-haswell-interview",
-    "https://en.wikipedia.org/wiki/Russell_Haswell"
+    "https://en.wikipedia.org/wiki/Russell_Haswell",
+    "https://www.discogs.com/release/11268"
    ]
   }
  },
@@ -397,7 +399,7 @@
   ],
   "status": "full",
   "coverage": "full",
-  "notes": "身分核對：卡單的 MB RG 8a7ce0b6 實際涵蓋三版：1982 Come Org 十捲卡帶盒（GB）、1989 奧地利盜版（Bootleg）、1997 Cold Spring CSR18CD 精選 CD；盤名年份 1982、廠牌 Come Organisation 對得上原版，但『專輯』形態是十小時卡帶盒，現今實際能買到、能聽的是 1997 精選 CD（26 軌，全長約 76 分，為本人加總 Discogs 曲長）。建議主線把聲音與試聽依據定為 1997 CD、年份仍顯示 1982。封面：MB 1982 版無圖，1997 CD 有正反圖（Cover Art Archive count 6），Discogs 1982 盒裝 release 1288959 與 CD 127884 皆有圖。『十捲／二十面』依 Discogs 註記（10-tape set）與曲目面別 A 到 T 推得，『十小時』依 Discogs 1997 版註記（10 hour cassette box set）。ARTIST 名：卡單 artist 為 Sutcliffe Jügend（含 ü），queryAlias 為 Sutcliffe Jugend；Discogs 1982 版署名不含 ü，1997 年後才用 Jügend，卡面可維持現狀。維基 Sutcliffe Jügend 條目本人兩次抓取皆 404，未採用其內容；WebSearch 摘要稱它是早期場景最 harsh 的團之一，來源是維基鏡像，非可直接引用。策展層『二手評價較薄』屬實：本人僅找到廠牌目錄與一篇訪談。『moodGuess 存疑：策展寫 x-1 y-3 z-4（極端噪音）；音響推估成立，但原版是人聲加電子的 PE，不是無人聲噪音』。頂點判定：主題與型態（十小時盒、受害者命名）極端，但『音響最極端』缺乏可信樂評；Discogs 想要 576、收藏 30（原版稀有）僅證稀有。拿不準判 none。異端撞名檢查：seed 無 Sutcliffe；Whitehouse《Bird Seed》在異端，但為不同藝人。",
+  "notes": "身分核對：卡單的 MB RG 8a7ce0b6 實際涵蓋三版：1982 Come Org 十捲卡帶盒（GB）、1989 奧地利盜版（Bootleg）、1997 Cold Spring CSR18CD 精選 CD；盤名年份 1982、廠牌 Come Organisation 對得上原版，但『專輯』形態是十小時卡帶盒，現今實際能買到、能聽的是 1997 精選 CD（26 軌，全長約 76 分，為本人加總 Discogs 曲長）。建議主線把聲音與試聽依據定為 1997 CD、年份仍顯示 1982。封面：MB 1982 版無圖，1997 CD 有正反圖（Cover Art Archive count 6），Discogs 1982 盒裝 release 1288959 與 CD 127884 皆有圖。『十捲／二十面』依 Discogs 註記（10-tape set）與曲目面別 A 到 T 推得，『十小時』依 Discogs 1997 版註記（10 hour cassette box set）。ARTIST 名：卡單 artist 為 Sutcliffe Jügend（含 ü），queryAlias 為 Sutcliffe Jugend；Discogs 1982 版署名不含 ü，1997 年後才用 Jügend，卡面可維持現狀。維基 Sutcliffe Jügend 條目本人兩次抓取皆 404，未採用其內容；WebSearch 摘要稱它是早期場景最 harsh 的團之一，來源是維基鏡像，非可直接引用。策展層『二手評價較薄』屬實：本人僅找到廠牌目錄與一篇訪談。『moodGuess 存疑：策展寫 x-1 y-3 z-4（極端噪音）；音響推估成立，但原版是人聲加電子的 PE，不是無人聲噪音』。頂點判定：主題與型態（十小時盒、受害者命名）極端，但『音響最極端』缺乏可信樂評；Discogs 想要 576、收藏 30（原版稀有）僅證稀有。拿不準判 none。異端撞名檢查：seed 無 Sutcliffe；Whitehouse《Bird Seed》在異端，但為不同藝人。【2026-11-04 依更正標準重判仍為 none：類型為 PE、題材極端，但可直接引用的樂評未取得（維基條目兩次 404）；若主線能自維基確認「harshest」描述可改 heresy。】",
   "apex": {
    "verdict": "none",
    "accessibility": 5,
@@ -465,7 +467,7 @@
   ],
   "status": "full",
   "coverage": "full",
-  "notes": "建議汰換：本盤不是 harsh／極端噪音。身分核對：MB RG e23dedb8（Hole in the Heart、1987、GB、Broken Flag BF 59、卡帶）與 Discogs release 1129830 對得上，MB 有正反封面（Cover Art Archive count 2）。但多個來源（Dirter 重發文案、WebSearch 摘要）一致指出本盤是 Mundy 的 Jean Genet 悼念作，聲音偏迷幻、哀歌式，與其 1984 年前的 power electronics 大異；若要找 Ramleh 的極端代表應考慮 1982–83 年的卡帶期作品（本人未查）。推翻策展層 1 處（策展寫『Broken Flag 時期 harsh 電子噪音／feedback 代表』，實際為轉折後的迷幻噪音）。『moodGuess 存疑：策展寫 x-1 y-3 z-4（極端噪音、壓迫）；實際偏緩慢陰鬱的迷幻噪音搖滾，y 與 z 應重估』。若主線仍想上一般卡，它是有歷史位置的作品（Broken Flag、後來被重發兩次）。頂點判定：accessibility 4 左右，非 5；沒有任何資料稱其為最極端；判 none。『Redcap 與 True Religion』是 2022 重發版內容，原版卡帶四首，未寫入作為原版事實。Discogs 的 want 688 僅證稀有。異端撞名檢查：seed 無 Ramleh。",
+  "notes": "建議汰換：本盤不是 harsh／極端噪音。身分核對：MB RG e23dedb8（Hole in the Heart、1987、GB、Broken Flag BF 59、卡帶）與 Discogs release 1129830 對得上，MB 有正反封面（Cover Art Archive count 2）。但多個來源（Dirter 重發文案、WebSearch 摘要）一致指出本盤是 Mundy 的 Jean Genet 悼念作，聲音偏迷幻、哀歌式，與其 1984 年前的 power electronics 大異；若要找 Ramleh 的極端代表應考慮 1982–83 年的卡帶期作品（本人未查）。推翻策展層 1 處（策展寫『Broken Flag 時期 harsh 電子噪音／feedback 代表』，實際為轉折後的迷幻噪音）。『moodGuess 存疑：策展寫 x-1 y-3 z-4（極端噪音、壓迫）；實際偏緩慢陰鬱的迷幻噪音搖滾，y 與 z 應重估』。若主線仍想上一般卡，它是有歷史位置的作品（Broken Flag、後來被重發兩次）。頂點判定：accessibility 4 左右，非 5；沒有任何資料稱其為最極端；判 none。『Redcap 與 True Religion』是 2022 重發版內容，原版卡帶四首，未寫入作為原版事實。Discogs 的 want 688 僅證稀有。異端撞名檢查：seed 無 Ramleh。【2026-11-04 依更正標準重判仍為 none：音響是迷幻噪音搖滾，accessibility 4，且建議汰換。】",
   "apex": {
    "verdict": "none",
    "accessibility": 4,
