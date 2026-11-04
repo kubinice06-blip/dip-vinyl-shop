@@ -1,0 +1,319 @@
+{
+ "group": "ax3b",
+ "factions": [
+  {
+   "id": "gospel-pp",
+   "zh": "福音私壓",
+   "count": 0,
+   "why": "Last.fm 對真正私壓福音盤幾乎無資料（null）；有資料的皆 Apple 已上架或疑似錯配"
+  },
+  {
+   "id": "soul-funk",
+   "zh": "靈魂／放克私壓",
+   "count": 2,
+   "why": ""
+  },
+  {
+   "id": "underground-jazz",
+   "zh": "地下爵士私壓",
+   "count": 7,
+   "why": ""
+  }
+ ],
+ "albums": [
+  {
+   "artist": "Ebony Rhythm Funk Campaign",
+   "album": "Ebony Rhythm Funk Campaign",
+   "year": 1973,
+   "label": "UNI / Band Aide",
+   "country": "US",
+   "faction": "soul-funk",
+   "genres": [
+    "soul"
+   ],
+   "apexTier": "pearl",
+   "apexWhy": "UNI 旗下 Band Aide 單張 LP，Mack Rice 與 Luther Ingram 圈的底特律放克，收藏圈熱門私壓級；Apple 無此專輯（僅有 1976 另一張與單曲）。",
+   "listeners": 68,
+   "why": "UNI 旗下 Band Aide 單張 LP，Mack Rice 與 Luther Ingram 圈的底特律放克，收藏圈熱門私壓級；Apple 無此專輯（僅有 1976 另一張與單曲）。",
+   "moodGuess": {
+    "x": 0,
+    "y": 0,
+    "z": 0,
+    "why": "未評，主線上線日打分"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/da0852e3-91b0-4c11-98e0-f92614b246aa",
+    "https://www.discogs.com/master/681444",
+    "https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Ebony%20Rhythm%20Funk%20Campaign&album=Ebony%20Rhythm%20Funk%20Campaign"
+   ],
+   "mbRgMbid": "da0852e3-91b0-4c11-98e0-f92614b246aa",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Apple 有該團另一張專輯與單曲，同名首張無串流"
+  },
+  {
+   "artist": "Heaven & Earth",
+   "album": "Heaven & Earth",
+   "year": 1978,
+   "label": "Mercury / Chicago Recording Company",
+   "country": "US",
+   "faction": "soul-funk",
+   "genres": [
+    "soul"
+   ],
+   "apexTier": "pearl",
+   "apexWhy": "芝加哥 Chicago Recording Company 製作的 modern soul/boogie 小眾名盤，無串流。",
+   "listeners": 105,
+   "why": "芝加哥 Chicago Recording Company 製作的 modern soul/boogie 小眾名盤，無串流。",
+   "moodGuess": {
+    "x": 0,
+    "y": 0,
+    "z": 0,
+    "why": "未評"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/7cfefd6c-9eb5-4626-bab7-1308abfcbdb7",
+    "https://www.discogs.com/master/779599",
+    "https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Heaven%20%26%20Earth&album=Heaven%20%26%20Earth"
+   ],
+   "mbRgMbid": "7cfefd6c-9eb5-4626-bab7-1308abfcbdb7",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Mercury 發行，非嚴格私壓"
+  },
+  {
+   "artist": "Kenny Cox & The Contemporary Jazz Quintet",
+   "album": "Multidirection",
+   "year": 1970,
+   "label": "Blue Note / GM Studios",
+   "country": "US",
+   "faction": "underground-jazz",
+   "genres": [
+    "jazz"
+   ],
+   "apexTier": "pearl",
+   "apexWhy": "底特律 Strata/Tribe 圈 spiritual jazz 聖杯，Blue Note 時期未再發串流。",
+   "listeners": 33,
+   "why": "底特律 Strata/Tribe 圈 spiritual jazz 聖杯，Blue Note 時期未再發串流。",
+   "moodGuess": {
+    "x": 0,
+    "y": 0,
+    "z": 0,
+    "why": "未評"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/2a33eec3-71a5-4e3c-a13f-4b08465ba533",
+    "https://www.discogs.com/master/613500",
+    "https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Kenny%20Cox%20%26%20The%20Contemporary%20Jazz%20Quintet&album=Multidirection"
+   ],
+   "mbRgMbid": "2a33eec3-71a5-4e3c-a13f-4b08465ba533",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "藝人名 queryAlias 可能需 Kenny Cox"
+  },
+  {
+   "artist": "Joe Bonner",
+   "album": "Angel Eyes",
+   "year": 1976,
+   "label": "Muse",
+   "country": "US",
+   "faction": "underground-jazz",
+   "genres": [
+    "jazz"
+   ],
+   "apexTier": "pearl",
+   "apexWhy": "Muse 小廠 spiritual 鋼琴作，無串流。",
+   "listeners": 70,
+   "why": "Muse 小廠 spiritual 鋼琴作，無串流。",
+   "moodGuess": {
+    "x": 0,
+    "y": 0,
+    "z": 0,
+    "why": "未評"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/359170c5-af7c-4e0a-9bee-c440884158b9",
+    "https://www.discogs.com/master/350194",
+    "https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Joe%20Bonner&album=Angel%20Eyes"
+   ],
+   "mbRgMbid": "359170c5-af7c-4e0a-9bee-c440884158b9",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "非私壓，小廠"
+  },
+  {
+   "artist": "Prince Lasha Ensemble",
+   "album": "Insight",
+   "year": 1966,
+   "label": "Birdseye / CBS",
+   "country": "US",
+   "faction": "underground-jazz",
+   "genres": [
+    "jazz"
+   ],
+   "apexTier": "pearl",
+   "apexWhy": "1966 Prince Lasha/Sonny Simmons 西岸 spiritual jazz 稀有盤，無串流。",
+   "listeners": 45,
+   "why": "1966 Prince Lasha/Sonny Simmons 西岸 spiritual jazz 稀有盤，無串流。",
+   "moodGuess": {
+    "x": 0,
+    "y": 0,
+    "z": 0,
+    "why": "未評"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/662bd358-f5fe-4fb2-a7ed-5c61b16a88ce",
+    "https://www.discogs.com/master/227429",
+    "https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Prince%20Lasha%20Ensemble&album=Insight"
+   ],
+   "mbRgMbid": "662bd358-f5fe-4fb2-a7ed-5c61b16a88ce",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Last.fm 以 Prince Lasha 藝人名查得 45，MB 另有 2009 重發同名條目"
+  },
+  {
+   "artist": "Odean Pope",
+   "album": "Almost Like Me",
+   "year": 1982,
+   "label": "Moers Music",
+   "country": "DE",
+   "faction": "underground-jazz",
+   "genres": [
+    "jazz"
+   ],
+   "apexTier": "pearl",
+   "apexWhy": "費城薩克斯風 Odean Pope 的 Moers 歐洲小廠盤，無串流。",
+   "listeners": 99,
+   "why": "費城薩克斯風 Odean Pope 的 Moers 歐洲小廠盤，無串流。",
+   "moodGuess": {
+    "x": 0,
+    "y": 0,
+    "z": 0,
+    "why": "未評"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/d50c3e06-9d9f-36c4-bf19-ea8d26dc3ab8",
+    "https://www.discogs.com/master/265517",
+    "https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Odean%20Pope&album=Almost%20Like%20Me"
+   ],
+   "mbRgMbid": "d50c3e06-9d9f-36c4-bf19-ea8d26dc3ab8",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 首發年 1982，非 1960s"
+  },
+  {
+   "artist": "Bobby Few",
+   "album": "More or Less Few",
+   "year": 1973,
+   "label": "Center of the World",
+   "country": "FR",
+   "faction": "underground-jazz",
+   "genres": [
+    "jazz"
+   ],
+   "apexTier": "pearl",
+   "apexWhy": "巴黎自由爵士圈鋼琴家的自營廠首作，無串流。",
+   "listeners": 99,
+   "why": "巴黎自由爵士圈鋼琴家的自營廠首作，無串流。",
+   "moodGuess": {
+    "x": 0,
+    "y": 0,
+    "z": 0,
+    "why": "未評"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/2f20779a-a3cc-4553-bfdd-80f25b17931d",
+    "https://www.discogs.com/master/439888",
+    "https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Bobby%20Few&album=More%20or%20Less%20Few"
+   ],
+   "mbRgMbid": "2f20779a-a3cc-4553-bfdd-80f25b17931d",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Mtume Umoja Ensemble",
+   "album": "Alkebu-Lan: Land of the Blacks (Live at the East)",
+   "year": 1972,
+   "label": "Strata-East",
+   "country": "US",
+   "faction": "underground-jazz",
+   "genres": [
+    "jazz"
+   ],
+   "apexTier": "pearl",
+   "apexWhy": "Strata-East 現場 spiritual jazz 雙 LP，紐約 The East 文化中心，無串流。",
+   "listeners": 2,
+   "why": "Strata-East 現場 spiritual jazz 雙 LP，紐約 The East 文化中心，無串流。",
+   "moodGuess": {
+    "x": 0,
+    "y": 0,
+    "z": 0,
+    "why": "未評"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/28b08ac4-3803-439d-9082-47f6229a1d2d",
+    "https://www.discogs.com/master/451699",
+    "https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Mtume%20Umoja%20Ensemble&album=Alkebu-Lan%3A%20Land%20of%20the%20Blacks%20(Live%20at%20the%20East)"
+   ],
+   "mbRgMbid": "28b08ac4-3803-439d-9082-47f6229a1d2d",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "該作即為現場錄音原盤",
+   "queryAlias": "Mtume / Alkebu-Lan",
+   "uncertain": "listeners 僅 2，需主線確認未錯配；現場盤"
+  },
+  {
+   "artist": "Clifford Thornton & The Jazz Composer's Orchestra",
+   "album": "The Gardens of Harlem",
+   "year": 1975,
+   "label": "JCOA",
+   "country": "US",
+   "faction": "underground-jazz",
+   "genres": [
+    "jazz"
+   ],
+   "apexTier": "pearl",
+   "apexWhy": "JCOA 自營廠，Harlem 社區爵士大樂隊錄音，無串流。",
+   "listeners": 140,
+   "why": "JCOA 自營廠，Harlem 社區爵士大樂隊錄音，無串流。",
+   "moodGuess": {
+    "x": 0,
+    "y": 0,
+    "z": 0,
+    "why": "未評"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/72303fde-2f9f-427c-9a07-71333b784037",
+    "https://www.discogs.com/master/200305",
+    "https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Clifford%20Thornton%20%26%20The%20Jazz%20Composer's%20Orchestra&album=The%20Gardens%20of%20Harlem"
+   ],
+   "mbRgMbid": "72303fde-2f9f-427c-9a07-71333b784037",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  }
+ ],
+ "notes": [
+  "僅 9 張，未湊數。福音派系 0 張：約 90 個福音候選經 worker 查，多為 null/0；有值者（Marion Williams、Violinaires、Swan Silvertones 等）皆 Apple 已有或疑似錯配。Pastor T.L. Barrett 兩張 listeners 21／>10 萬且 Apple 有。",
+  "靈魂放克多數低 listeners 候選（Carl Holmes、Kashmere Stage Band、Funk Inc.、Hog Heaven、Soul Searchers 等）Apple 皆有。",
+  "封面來源未逐張確認（Discogs master／CAA 待主線補）；moodGuess 未填。",
+  "去重：9 張對 seed 同藝人子字串皆 0，pearl 藝人皆未撞；ax3a/ax4 檔當時尚未存在，未能比對。"
+ ]
+}
