@@ -825,3 +825,8 @@
 - `front-check ad-24`：24/24 前台為新稿，CURATED 0。
 - manifest 同步：根目錄 `onboarding-manifest-add-20261104-ax1/ax2-20261104.json` 13＋11 處；批次目錄 `batch-progress/add-20261104-ax1/ax2/onboarding-manifest.json` 13＋11 處、`desc-override.json` 2＋2 處（ad.mjs 只掃根目錄，批次目錄這兩份由主線另行同步）。
 - 另：s11 提到的 repo 根目錄 `x.json`，本工作階段的 checkout、`origin/main` 與全部歷史都沒有這個檔，無需處理。
+
+### 合併 origin/main 後重算（s12 收尾）
+
+- 合併 ax7、ax8 後重算 seed 頂點卡不在 worklist 的卡：除台客、Beyond、ax5／ax6 31 張外，新增的是 ax7 升格 8 張（Les Rallizes Dénudés、高柳昌行、灰野敬二、Phill Niblock、Musica Transonic、Wold、Impetuous Ritual、Aaron Dilloway；ax7 已照新規寫 KV，`kv-before-ax7u.json` 可證）與 ax8 新上架 10 張，照派工詞跳過。
+- ax8 依店主指示把 Vomir《Claustration》由異端降為一般卡。本線 ad-24 已把它的簡介寫成新稿；裁定**沿用不回滾**（內容經審稿、事實正確；一般卡沒有要求回到舊鉤子稿；可逆，舊值在 `kv-before-ad-24.json`）。全線總結的「異端 109」含這張。

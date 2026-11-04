@@ -1,5 +1,16 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-04｜dip-vinyl-shop｜頂點卡簡介重寫 s12（最後一棒）：ad-23 流亡 19＋尾批 ad-24 異端 24 上線，全線收尾
+
+- **ad-23**（流亡 19）：研究 3 Sonnet（WebSearch 38）、寫作 2 Opus；主線審稿改 5 處／3 張（Ghostdance 補「為什麼少有人聽」；Smack、Princess Flower 刪推論）。KV 19 鍵、回讀 19/19、前台 19/19、manifest 19 處。
+- **ad-24 尾批**（異端 24）：主線重算 seed 頂點卡不在 worklist 的 57 張，扣掉台客、Beyond、ax5／ax6 已照新規的 31 張，剩 ax1 13＋ax2 11 照舊鉤子公式寫的 24 張，主線檢查全判 rewrite，併進 worklist／triage／batches。研究 3 Sonnet（WebSearch 30，以 ax1／ax2 研究稿為起點）、寫作 2 Opus；審稿改 8 處／7 張（類型描述冒充本卷聲音、藝人層級評價收窄、反轉句、無證據的影響宣稱）。KV 24 鍵、回讀 43/43（兩批）、前台 24/24；manifest 根目錄 24 處＋批次目錄 24 處＋desc-override 4 處。
+- **全線總結**（寫在 PLAN 分批表下方）：檢查 701 張（第 0 步 677＋尾批 24）→ keep 3、**重寫上線 698**（殿堂 300／異端 109／流亡 289）。前台仍被 worker CURATED 蓋住、待本機拿掉並部署的 2 張：《Kind of Blue》《The Dark Side of the Moon》。
+- **合併後重算**：ax7 升格的 8 張與 ax8 上架的 10 張已由各自工作階段照新規寫（ax7 寫了 KV），本線不動。ax8 依店主指示把 Vomir《Claustration》降為一般卡；它的 KV 簡介是本線 ad-24 的新稿，內容正確，沿用不回滾（舊值在 `kv-before-ad-24.json`）。
+- **卡池資料疑點（未動 seed）**：Probe《Direction》1969／1971；MSBR《Structured Suicide》1993／1994／1995；Henri Chopin《Poésie sonore》seed 1972（S Press），簡介照 1983 Igloo 版；Sissy Spacek 同名作 1999／2001。
+- `x.json`：checkout、origin/main、全部歷史都沒有，無需處理。
+- 主要檔案：`batch-progress/apex-desc-20261104/{PLAN.md,rulings.md,batches.json,worklist.json,triage.json,review-ad-23.json,review-ad-24.json,kv-before-ad-23.json,kv-before-ad-24.json,prompt-*-extra-s12.md}`、`desc-tools/batches/{cards,research,output}/ad-2{3,4}-*`、`onboarding-manifest-add-20261104-ax{1,2,3}-20261104.json`、`batch-progress/add-20261104-ax{1,2}/{onboarding-manifest,desc-override}.json`。
+- **驗證**：`kv-token-check` exit 0（兩次）；`qa-batch research/out` 通過（ad-24 out 1 標記判誤報）；fix-spacing 0；`verify-wave-kv 20261104 ad-23 ad-24` 43/43；`front-check` 43/43。
+
 ### 2026-11-04｜dip-vinyl-shop｜新頂點盤線 ax8：異端新上架 10 張（店主放寬標準；Vomir《Proanomie》換掉《Claustration》）
 
 - **店主 11-04**：異端「稍微放寬」——可信來源描述出具體、持續整張的高強度聽感，或噪音史開創地位即可，不再要求樂評下「極端」結論；附噪音入門文點名作品。ax7（另一工作階段）做卡池既有盤升格，ax8 只上卡池沒有的藝人。
