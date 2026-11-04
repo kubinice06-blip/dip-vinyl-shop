@@ -19,3 +19,13 @@
   - Hototogisu、Consumer Electronics、Sudden Infant CAA 無圖，策展只放 Discogs 搜尋頁：研究層要確認封面來源，找不到就汰。
   - 策展層自評可能不到 7 星：Brainbombs（極端在主題不在音響）、Borbetomagus（近能量型自由爵士）、Hair Police。
 
+
+## 研究 c 組
+- **51521**　七張全判 apex `none`：Atrax Morgue《Paranoia》、NTT《Church of Dead Girls》、IRM、Con-Dom、Anenzephalia 都查不到 Wire／Quietus／AllMusic 等級資料稱其為最極端之作，只有 Discogs 與小站描述（照 RES-APEX「拿不準判 none」）。
+- **51522**　Controlled Bleeding《Headcrack》：維基明言是轉向古典／中世紀的一張，Discogs 標 Industrial／Ambient，accessibility 判 4，none。想補異端應改提 1985《Knees and Bones》（維基稱 very harsh wall of sound）。
+- **51523**　Wold《Screech Owl》：Musique Machine 5/5 稱「最失真的黑金屬之一」，但有鼓點、旋律，SPB 6/10、Sputnik 兩極，accessibility 4，none。推翻 moodGuess「無旋律」。
+- **51524**　Anenzephalia《Anenzephalia》實為 1996 年 Borås 現場錄音（2001 Death Factory 限量 2000），非代表作，建議汰換；藝人是德國的 B. Moloch（非瑞典）。
+- **51525**　Con-Dom《Subjection》是 1996 年限量 50 捲卡帶（兩面各 30 分），查無評論，建議汰換；Mike Dando 單人計畫，策展寫美國，疑為英國，未取得直接來源。
+- **51526**　NTT《Church of Dead Girls》年份採 Discogs 的 2002（MB 為 2003）；雙 CD、20 軌，風格偏暗黑噪音／氛圍混合，facts 薄 thin。
+- **51527**　IRM《Oedipus Dethroned》：2000 年 Cold Meat Industry CMI.87，瑞典 Norrköping，Martin Bladh + Erik Jarl；來源只有 Discogs／Noisextra，thin，列汰換優先。
+- **51528**　Atrax Morgue 身分與年份（2000、Old Europa Cafe OECD 031）無誤；seed 異端無撞名，Controlled Bleeding 池內只有非異端的 Golgotha，不衝突。
