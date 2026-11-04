@@ -1,5 +1,15 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-04｜dip-vinyl-shop｜試聽與串流連結修正套用（店主「可以」）＋重跑限流失敗的試聽
+
+- **改動**：套用 10-29 連結稽核的 fix-plan。
+  - 試聽 215 筆（`apply-preview.mjs`，現值＝稽核時舊值才改）：換正確或重新上架的專輯 108、換店面 62、撤下配錯 23、標下架 15、review 轉 matched 6、補網址 1；`build-apple-audio-runtime-map.mjs` 重建。
+  - 串流 92 筆（`apply-streaming.mjs`，KV 先備份、比對舊值、寫後讀回）：換正確連結 15、清空 77（找不到正確版本，按鈕變灰）。備份 `kv-backup-2026-11-04-streaming.json`。
+  - 重跑 07-19 iTunes 限流失敗與從未查過的卡（`build-apple-audio-map.mjs --retry-status=error` 兩輪 383 張）：配上 25 張，主線核對撤回 2 張配錯（Ghostdance 配到 Bill Miller 同名盤、Stockhausen《Mantra》配到別人的演出）；其餘 Apple 上確實沒有，標 unavailable；剩 5 張 error。`fetch-apple-album-urls.mjs` 補 23 張專輯網址。
+  - 合併 origin/main 時 map 以 JSON 三方比對驗證（598 處只在本分支改、0 衝突）。
+- **主要檔案**：`data/apple-audio-map-v1.json`、`data/apple-audio-runtime-v1.json`、`batch-progress/link-audit-2026-10-29/{apply-*.mjs,apply-*-report.json}`；KV `cover6:*` 92 鍵。
+- **驗證**：試聽 215/215 套用（0 跳過）；KV 92/92 讀回一致；runtime matched 18,234。
+
 ### 2026-11-04｜dip-vinyl-shop｜Beyond《再見理想》設流亡＋簡介改流亡寫法
 
 店主：「好，直接上流亡，經典度維持。」seed tier `pearl`、card_catalog tier／apex 已寫；簡介照 apex-desc-base 流亡寫法重寫 249 字，KV desc2／desc4 寫入並回讀一致。流亡 290 → 291。album_overrides 待本機同步。紀錄 `batch-progress/beyond-20261104/`。
