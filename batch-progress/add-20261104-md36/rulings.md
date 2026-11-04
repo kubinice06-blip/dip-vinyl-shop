@@ -64,3 +64,13 @@
 - **22626**　Senking《Closing Ice》：moodGuess 存疑（本組最可能汰換）。與來源不符三處：廠牌寫 mid-tempo 而非慢；廠牌明講旋律根植搖滾流行、有撫慰旋律碎片，非『無旋律』；廠牌稱『陰沉卻溫暖』，Igloo 提到阿拉伯手鼓、現場鼓與回授吉他。y 成立，x 可能略高、z 恐中性到暖。status full。
 - **22627**　Mika Vainio《Black Telephone of Matter》：moodGuess 部分存疑，curatorRisk 應驗。無拍、冷、drone 成立，但 Igloo 指出由短實驗串成、突然切換，〈Silencés...〉爆成失真噪音，〈Bury a Horse's Head〉有金屬尖嘯與 Tesla coil 式搏動；『厚』也因大量靜默而不穩。獨立聲音來源僅 Igloo 一篇。『Touch 第四張個人專輯』據 Igloo 與 Bandcamp，寫時標『據』。status full。
 - **22628**　本組 WebSearch 用 3 次（Neel 1、Variant 1、Senking List 1），其餘走 MB API、Discogs API、Igloo／Cyclic Defrost／RA／Forced Exposure 與 WebFetch；Bandcamp、Raster 官網以 curl 取不到，改 WebFetch。Pong 與 Vainio 的獨立樂評各僅一篇。facts 一律不寫分數星等；Vainio 2017 年辭世與 Pan Sonic 解散與本作無直接綁定，不寫。
+
+## 主線研究後汰換（不佔條號；2026-11-04）
+- 照 md35 同一把尺：研究稿寫出**有鼓推進／脈動大鼓／碎拍**、**偏暖（樂評稱溫暖、Rhodes 和絃、真人弦樂、民謠人聲）**、**雷鬼切分**（店主要少雷鬼）、**聲音零來源**的汰。
+- **汰 16 張**（存 `dropped-cards.json`／`dropped-research.json`）：
+  - 鼓推進：Ital Tek《Outland》（研究 e：多首有力鼓與粗糙低音）、Lee Gamble《Dutch Tvashar Plumes》（研究 e：RA 寫幾乎每首有脈動大鼓）、《Models》（研究 e：boom-bap 鼓點、推進）、Huerco S.《Colonial Patterns》（研究 e：悶 4/4＋偏暖）、Eric Holm《Andøya》（研究 d：off-kilter beats，推翻「無鼓」）。
+  - 偏暖：Murcof《Remembranza》（研究 b：真人樂器、憂鬱和聲）、Klimek《Music to Fall Asleep》（研究 b：吉他為主、樂評稱溫暖）、Variant《The Setting Sun》（研究 c：RA 稱 The Warmest Season）、Senking《Closing Ice》（研究 c：廠牌「陰沉卻溫暖」、現場鼓）、《Pong》（研究 c：暖 Rhodes 和絃＋techstep 低音）、Mondkopf《They Fall, but You Don't》（研究 d：Mellotron、脆弱人聲、「新的民謠」）。
+  - 雷鬼：Kit Clayton《Nek Sanalet》（研究 b：雷鬼切分、rocksteady 節奏；同人留《Lateral Forces》）。
+  - 聲音零來源：Vladislav Delay《Demo(n) Tracks》（研究 a：查無專輯級樂評）、Klimek《Dedications》（研究 b：只有 Discogs 風格標記）、Trepaneringsritualen《Perfection & Permanence》（研究 d：儀式鼓、低吟查無來源）、Eric Holm《Surface Variations》（研究 e：只有廠牌文案，同系列《Andøya》已查出有拍）。
+- 不補位，定案 **19 張**。留給評分驗收：Mika Vainio（失真噪音爆發）、Prurient《Rainbow Mirror》（局部鼓機、尖銳段）、Kit Clayton《Lateral Forces》（末段穩定拍）、Murcof/Petit《First Chapter》（金屬打擊）、Dead Voices on Air《Hafted Maul》（cacophony 段）、Forest Swords《Compassion》（色溫）。
+- **場景潛力**：冷 ambient techno／Berlin 慢盤主盤已在池且多判躁或判輕，二線研究一查多帶脈動或暖和絃；Raster-Noton 系有半數查出暖或推進。本批是頹靡電子最難挖的一塊，同場景不再派。
