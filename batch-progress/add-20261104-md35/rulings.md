@@ -20,3 +20,22 @@
 - 22564：Dean Hurley Vol. 1 聲音證據只有廠方、曲名與買家留言（無專業樂評），曲名含 Angel Choir／Seven Heaven，色溫未必全冷；Vol. II 廠方稱「ethereal and celestial」，y 與色溫存疑，邊緣候選。兩張皆為音效庫式原創專輯，非原聲帶，Vol. 1 因授權只有數位版。
 - 22565：Tor Lundvall《The Mist》thin：無樂評；維基稱假聲為招牌、2006《Empty City》才首次整張器樂，故本張很可能有人聲歌曲，「無鼓霧墊」預估失準，信心最低，列汰換候選。《The Shipyard》作者與 Dais 自述為器樂、磁帶循環與柔和機械循環，無鼓成立，y 仍貼門檻。
 - 22566：全組 BPM 皆查不到（無鼓／拼貼類多不適用）。未推翻年份、廠牌、盤名。
+
+## 研究 d 組
+- 22551：Grey Frequency 五張（Immersion／Second Sight／Ufology／Leviathan／Paranormal）身分皆核對 MB／Discogs／Bandcamp，年份、廠牌不推翻。Paranormal 走 manual，Bandcamp 2021-01-25 與 Discogs master 2052655 相符。五張全部查不到 BPM（無鼓 drone，無脈衝可數）。
+- 22552：Leviathan、Paranormal 查無任何樂評，聲音只有 Bandcamp 標籤與題材，status thin；『無鼓、低頻厚墊』為標籤推估，寫作層不可當實測事實。Immersion 有 ATTN:Magazine 評論（低頻像引擎室、風琴長音、灰色濁霧），Second Sight 有完整器材清單（四台 Walkman＋殘響機＋回聲機，無疊錄無剪輯），Ufology 有 The Wire 與 The Present Continuous 評論。
+- 22553：Hawthonn《Red Goddess》WGBH（NPR 轉載）描述〈Lady of the Flood〉為管風琴、振盪器 drone、無詞母音人聲、石室殘響，未提鼓；moodGuess 吻合。《Earth Mirror》廠方稱介於『月亮音樂與空靈流行』，有 Layla 清晰人聲、電鋼琴、口簧琴：moodGuess 存疑（z 預估 −0.9 可能偏冷，實際可能 −0.5 上下，比 Red Goddess 暖亮）；無吉他、未提鼓。
+- 22554：⚠ Water Borders《Harbored Mantras》moodGuess 嚴重不符：RA、FACT、Textura 三篇一致寫有鼓——切分舞池節奏、叢林樂式重擊、dub 次低音、UK garage 影響、dubstep 根底的部落鼓點（FACT：『Coil meets Rinse FM』）。不是慢打擊的 witch house 糊霧，x 很可能超過策展邊距 2.7，建議汰換。速度各評論皆未提。
+- 22555：Mater Suspiria Vision《Crack Witch》：MB 首發 2011-03-11（Living Tapes 黑膠）；Discogs 最早是 2010-06-10 卡帶（LT012，限量 100）。年份有 2010／2011 兩說，facts 並列，卡單 2011 不推翻。聲音無一手描述（Phantasma Bandcamp 頁已 404、Boomkat 頁讀不到），curatorRisk 的『blunted drum machines』未能核實，status thin，moodGuess 存疑。
+- 22556：WebSearch 用 3 次（Grey Frequency、Hawthonn、Water Borders），餘以 MB／Discogs API、Bandcamp 頁面、WebFetch 補。
+
+## 研究 a 組
+- 22521：全組九張 status full、facts 9–10 條，身分（盤名、年份、廠牌）皆與 MB 相符，未推翻年份／廠牌／盤名。全組 BPM 查無來源，一律不寫數字；評分星等與 Metacritic 分數依規定不進 facts。
+- 22522：Lakker《Tundra》moodGuess 嚴重存疑：評論與 Derek's Music Blog 逐曲描述為轟然 techno 鼓、奔馳鼓點、撞擊式失真鼓與 acid 合成器，並非「慢拍遠鼓」；能量估應高於 2.4，建議主線汰換或重判。
+- 22523：Dalhous《Will to Be Well》moodGuess 存疑：RA 稱其為 Blackest Ever Black 最「明亮」的作品之一，有顫音風琴、鋼琴、鈴音；z −1.2 偏冷，y 也可能偏低。「磁帶嘶聲」查無來源，未寫。
+- 22524：Dalhous《House Number 44》卡單「慢拍」不符：評論一致說幾乎無拍、近 ambient；對頹靡反而更靜，色溫稍留（有「disarmingly beautiful」段落）。留，邊距偏薄。卡單 Bandcamp 連結 404，改用 Discogs／FACT。
+- 22525：Ekoplekz 兩張：《Unfidelity》FACT 明說比往常更清晰、更旋律、更直接，Paradinas 依「旋律傾向」挑曲，〈Severn Beach〉帶 techno 樂觀，moodGuess 存疑（偏亮偏動）；《Four Track Mind》有猛烈類比鼓機段落但整體「憂鬱沉思」。兩張擇一的話優先留《Four Track Mind》。
+- 22526：Kuedo《Slow Knife》後半段轉暖（〈Warmer Light〉〈Love Theme〉），整張 z 宜 −0.5～−0.8；〈Warmer Light〉〈Lathe〉有清楚拍子。留，邊距偏薄。
+- 22527：Ossia《Devil's Dance》curatorRisk 成立（非 dub reggae，是帶 dub 語彙的實驗電子／工業），已入 facts；23 分鐘〈Vertigo〉近無拍，〈Dub Hell〉系列有推進低音線，能量估不低於 2.2。「sound system 低頻」查無來源，未寫。
+- 22528：Kryptic Minds《One of Us》與 King Midas Sound《Solitude》moodGuess 大致成立（前者半拍稀鼓、後者近乎無拍）；前者末段〈Organic〉〈Distant Dawn〉轉亮；後者低頻「霧」只有 drone 為證，無明言 sub-bass，人聲是口語詩而非喃喃。《Solitude》發行日 MB 2/13、Bandcamp 2/14，facts 兩寫。
+- 22529：失敗來源：Wikipedia（Kryptic Minds 404）、Sputnik、Treble、Juno、Norman Records、Tiny Mix Tapes、Bandcamp 部分頁面 403／404／500，未取用；RA 法語站 19846 實為他人評論，棄用。WebSearch 共用 8 次（上限 27）。
