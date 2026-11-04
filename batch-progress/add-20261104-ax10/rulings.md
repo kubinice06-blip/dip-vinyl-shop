@@ -38,3 +38,20 @@
 - **52446** Deviated Instinct：判 none。查不到任何聽感來源。建議汰換。
 - **52447** Hellbastard：判 none。查不到廠牌與聽感來源，Electric Hellfire 未核實。建議汰換。
 - **52448** 本組 WebSearch 共 4 次（Heresy、Unseen Terror、Sore Throat、Doom）；Pitchfork、AllMusic、Sputnik、Metal Injection 被擋未讀。全組 7 張皆未達 facts 8–15 條，因可讀來源有限，coverage 皆 thin／none。
+
+## 研究 b 組
+- **52421** Septic Death：判 none。可信來源只有 MRR「speedcore」與維基「快而技術性」，無整張持續高強度描述；本盤為半再版（舊 EP 重錄＋新曲＋合輯曲），曲長總長未查到；依據薄，主線可降一般卡或汰。
+- **52422** Charles Bronson《Youth Attack!》：判 heresy（邊緣）。20 首 12:40（MB）、維基與 Louder 稱極短極快、粗糙製作；Louder 全文被截斷、僅憑搜尋摘要。
+- **52423** Spazz《La Revancha》：判 heresy（偏弱、可逆）。26 首 23:45、Decibel 名人堂 119 號描述短歌、速度／sludge 交替；但有 banjo、薩克斯風與幽默取樣，持續極速描述不足，主線可降 none。
+- **52424** Capitalist Casualties《Disassembly Line》：判 none。只有「high octane hardcore」、早期 D.R.I. 比較；MB 只收 CD 加長版 33 首，原 LP 曲數待核；建議降一般卡或汰。
+- **52425** Dropdead 同名：判 heresy。34 首約 24 分、Decibel 名人堂 138 號＋MRR＋維基；證據最硬。
+- **52426** 年份：Dropdead 1993、Spazz 1997-08-05、Capitalist Casualties 1992、Charles Bronson 1997、Septic Death 1986，均與卡單相符；卡池 seed 查無同藝人。
+- **52427** 本組 WebSearch 共 6 次；Sputnik、cvltnation、Louder 全文 403 或截斷。
+
+## 研究 c 組
+- **52431** Man Is the Bastard《Thoughtless...》：判 none。只有整團噪音／powerviolence 描述（維基單一網域），無本盤整張強度的可信說法。維基 1995 LP、MB 1996 CD Gravity 22 九軌。
+- **52432** Hellnation《Colonized》：判 none，建議汰換。查不到任何樂評；17 首（Spirit of Metal）、1993 Sound Pollution。
+- **52433** Despise You《West Side Horizons》：聽感判 heresy（62 首不到 44 分、最長約 2 分，Ink19＋Distorted Sound），但維基與評論都說是合輯（分裂／EP／未發表彙整）、廠牌 Pessimiser 非 Slap-A-Ham，建議汰換或走 §5.6 合輯例外，交主線。
+- **52434** Chaos UK《Short Sharp Shock》：判 none。曲長 1:23–3:52 加 8:22 末曲，約 27 分，與卡單「整張高速短曲」不符；只有 Pushead MRR #20 一則短評。年份 1984（MRR 1984-12），不採 MB 1985。
+- **52435** Extreme Noise Terror《A Holocaust in Your Head》：判 heresy（邊緣、可逆）。15 首 25:44、deathmetal.org 高速高強度整張、Terrorizer #180 歐洲 grindcore 第三（維基轉引）、AllMusic 4.5 星（維基引註）。
+- **52436** 本組 WebSearch 共 6 次（MITB×2、Hellnation、Chaos UK、ENT、Despise You）；AllMusic、Discogs、Metal Archives、Sound Pollution、LA Weekly、Metal Injection 全文被擋。
