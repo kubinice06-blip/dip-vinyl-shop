@@ -1,0 +1,20 @@
+{
+"batch":"add-20261104-zxzz","artist":"左小祖咒",
+"mustInclude":"左小祖咒在地安門 (2001)",
+"selected":["你知道東方在哪一邊 (2008, MB rg 13f8f0df-edc8-4ec9-b2e6-a12c5ea1a731)","走失的主人 (原版 1998, 見版本建議)"],
+"fallbackIfVersionUnresolvable":"大事 (2009, MB rg 347577f4-7dad-4439-8a5d-859d8b1c0172)",
+"candidates":[
+{"album":"美國","year":2006,"decision":"不收","reason":"電影原聲／配樂集，不是正規專輯：曲目除〈烏蘭巴托的夜〉（賈樟柯 2004《世界》主題曲，原由趙濤在片中演唱）外，其餘都是《雲的南方》配樂；14 軌多為器樂與配樂小品。MB 標 Album+Soundtrack，Discogs 風格為 Avantgarde/Experimental。獎項雖有滾石年度十大華語唱片與〈烏蘭巴托的夜〉年度最佳單曲（中文維基），但屬配樂性質，且此人的配樂另有《左小祖咒原聲配樂 No.1》等多張，不挑。","evidence":["https://www.thepaper.cn/newsDetail_forward_1378766","https://www.discogs.com/master/1869951","https://zh.wikipedia.org/wiki/左小祖咒"]},
+{"album":"你知道東方在哪一邊","year":2008,"decision":"收","reason":"獎項證據最強（中文維基：2008 國際華語音樂聯盟十大華語唱片、評審團大獎、華語音樂傳媒大獎年度最佳唱片、南都周刊年度最佳唱片；2009 南方周末文化原創榜致敬音樂，英文維基佐證）；500 元雙碟天價在媒體上被反覆談。版本：單一雙 CD 18 軌。","evidence":["https://zh.wikipedia.org/wiki/左小祖咒","https://en.wikipedia.org/wiki/Zuoxiao_Zuzhou","https://m.163.com/ent/article/4ULOMDRG00032PPF.html","https://musicbrainz.org/release/f7ab8688-063a-44d8-82e6-bcf19bc6fe5c"]},
+{"album":"走失的主人","year":"1998 原版 / 2009 再版","decision":"收（有版本條件）","reason":"首張專輯，1998 年四家雜誌年度最佳華語唱片、中國流行音樂獎 20 年 10 大搖滾唱片、〈正宗〉1999 十大單曲第二；與《廟會之旅》並稱早期頭牌。但池內已有《廟會之旅》，此張補的是 NO 樂隊時期。","evidence":["https://zh.wikipedia.org/wiki/走失的主人","https://zh.wikipedia.org/wiki/左小祖咒"]},
+{"album":"大事","year":2009,"decision":"不收（備選）","reason":"2010 華語金曲獎年度十佳唱片；同年華語音樂傳媒大獎最佳國語男歌手與最佳詞作人是藝人獎，非專輯獎；專輯層面證據弱於前二者，且專輯風格中的〈北京畫報〉〈忽悠〉只見外灘畫報簡評。MB：9 軌、Banana。若走失的主人版本無法鎖，遞補這張。","evidence":["https://zh.wikipedia.org/wiki/左小祖咒","https://www.chinanews.com.cn/cul/2010/10-20/2601213.shtml","https://musicbrainz.org/release-group/347577f4-7dad-4439-8a5d-859d8b1c0172"]},
+{"album":"你知道對方在那一邊","year":2011,"decision":"不收","reason":"2011 自費發行（Discogs 英文名 You Know The Enemy Is Over There），與《廟會之旅 II》同日（2011-09-11）發表，未見專輯級獎項或樂評證據，未查到可引的評價。","evidence":["https://www.discogs.com/artist/3130505","https://musicbrainz.org/release-group/081a4ae7-0cc2-4d00-9476-7a9a4809b0d9"]},
+{"album":"左小祖咒去奶子房","year":2012,"decision":"不收","reason":"未見獎項或具名樂評；中文維基獎項表 2012 年無專輯條目。","evidence":["https://zh.wikipedia.org/wiki/左小祖咒"]}
+],
+"versionAdvice":{
+"你知道東方在哪一邊":"鎖 MB rg 13f8f0df，年份 2008，雙 CD 18 軌（CN 1718889502 完整版）。MB 與 Discogs 都只登錄一次發行（2008-03-08，單一雙 CD 條碼 9787880332698），沒有『上集／下集分兩次發行』的證據；Apple TW 拆成上集 2007-03-08／下集 2008-03-08 應是商店拆分，2007-03-08 也與 Discogs『2007 年 5 月才開始製作』矛盾，可視為商店資料錯植。",
+"走失的主人":"鎖『1998 原版九首』為正典、卡片年份 1998（Apple 1998-10-31 與之一致；Discogs master 964154 年份 1998；首版為香港 Noise Asia NANC 04CD，1999 年 Badhead B-002 為大陸版）。MB rg 0a064cac 的 2009-02-28 是 Banana／北京中體的再版加再詮釋套裝（第二碟八首由徐桐、B6、王凡、陳偉倫、Dead J、郭大綱、雷霖、虎子等人詮釋），不是原版。舊稿『重錄版』查無證據：第一碟九首曲目與原版相同，白岩松曾問左小祖咒再版是否重新唱過，查不到答案，故列待查。若要與 MB rg 一致，年份會變成 2009，與 1998 年獎項敘事衝突，不建議。封面、試聽請以 1998 年版（或 1999 Badhead 版）為準，MB rg 僅可作條碼參考。",
+"左小祖咒在地安門":"MB rg 952d05b4：2001-11-01（CN，嚎叫）與 2001-11-11（XW，左小祖咒工作室）兩筆；中文維基為 11-11 京文嚎叫唱片，豆瓣為 11-01。年份鎖 2001，月日不入簡介。"
+},
+"notes":["本批 WebSearch 共 16 次（上限 25）。","搜尋結果之一夾帶了一句要求忽略系統提示、談『broken sword incidents』的指令，已忽略，未影響結論。","中文維基與樂評多為簡體來源，facts 已全數改寫為繁體；專名（如〈關河令〉）照原文。"]
+}
