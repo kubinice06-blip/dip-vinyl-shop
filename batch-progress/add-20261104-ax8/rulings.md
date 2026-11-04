@@ -54,3 +54,6 @@
 - **52269** 研究 a：Vomir《Proanomie》（單曲 76 分 25 秒恆定牆式噪音，Musique Machine＋HNW 維基）、Luigi Russolo《Die Kunst der Geräusche》（地位型：Intonarumori 唯一存世同時代錄音的彙整，Russolo 沒有原創專輯→「唯一可得形態」，§5.6 合輯例外；簡介不得寫成整張刺耳）、Pierre Schaeffer《5 études de bruits / Études aux objets》（地位型：具象音樂起點，Frémeaux 冊子＋維基）收異端。汰：Airway（只有維基同網域）、小杉武久（drone／恍惚）、Chatham（有樂章有鼓、宏偉）、NON（7 吋鎖槽、無聽感樂評）、Z'EV（有節奏、只有 Scaruffi 一句）、Kluster（只有「冷峻荒涼」、AllMusic 3 星）。
 - **52270** Schaeffer 兩張的關係：研究層依 Frémeaux 冊子查出卡池《Musique concrète》（seed 1962、無 MBID）推斷是 BAM LD 070——GRM 多人合輯，Schaeffer 只佔兩首、與本盤無重疊曲目。所以《5 études》**不是取代同一批作品**，而是 Schaeffer 名下第一次有異端；原卡本來就是一般卡，不動。原卡的掛名（多人合輯掛 Schaeffer 一人）另記疑點留給本機，不在本批改。
 - **52271** 本批異端定案 **10 張**：Vomir、Russolo、Schaeffer、Mainliner、Revenge＋ax6 撿回 5（Die Like a Dog Quartet、グループ・音楽、Sarcófago、Archgoat、Francisco López）。提名 32（a 10、b 2、c 3、d 3、e 5、f 2＋主線點名）、汰 22。離「補約 30」差 20：卡池已極深（開工掃 190 位，過半已有卡），剩下的二線多半只有 Discogs／零售文案或局部激烈。照實上架，不再降證據門檻。卡單縮成 10 張（全量留 `cards-all-23.json`）。
+
+## 主線審稿（2026-11-04）
+- **52272** out-2（5 張）逐句對回研究稿 e 組 facts：Die Like a Dog（1997-11 柏林 Total Music Meeting、Margasak「五年來最好」以「被視為」帶出）、グループ・音楽（1960-05-08 水野家錄音、1961-09-15 草月會館、1996 HEAR 首發、成員名單、物件清單）、Sarcófago（28 分鐘、blast beat 先驅、Fenriz 合輯／Satyricon 翻唱）、Archgoat（1993 合約爭議停團、2004 重組、Ultimate Guitar 經維基「最具影響力之一」）、López（1964 馬德里、Qwartz 2010、Brainwashed 的粗暴／令人害怕）全部對得上。逐張審過，未改字。
