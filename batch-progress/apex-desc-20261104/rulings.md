@@ -763,3 +763,9 @@
 - bulk put 33 鍵（desc2 30＋CJK 卡 desc4 3：菊地雅章、강태환、Tokyo Kid Brothers），wrangler 印 `Success!`；`verify-wave-kv 20261104 ad-21 ad-22` 63/63 逐字一致。
 - `front-check ad-22`：30/30 前台為新稿，CURATED 0。
 - manifest 同步 30 處（11 份 onboarding manifest）。
+
+## ad-23（流亡 19 張，s12）、ad-24（異端尾批 24 張，s12）
+
+- 派工補充：新增 `prompt-research-extra-s12.md`／`prompt-writer-extra-s12.md`（流亡節沿用 s7／s8／s11；異端節沿用 heresy-addendum 與 s7；ad-24 研究層先讀 ax1／ax2 上架時的研究稿當起點、出處逐條確認；舊稿鉤子開頭不沿用）。
+- **尾批 ad-24 的範圍（主線重算）**：seed 頂點卡不在 `worklist.json` 的 57 張＝Beyond《再見理想》（已照新規，跳過）＋《台客的復仇》（店主定稿，跳過）＋ax5 13 張＋ax6 18 張（已照 apex-desc-base 寫，跳過）＋ax1 13 張＋ax2 11 張。第 0 步由主線檢查這 24 張的現行簡介：全是舊鉤子公式（冷知識開頭、前兩句沒講極端在哪裡、盤號目錄號發行日佔大半），**24 張全判 rewrite**；已併進 `worklist.json`（標 `tail: "ad-24"`）、`triage.json`、`batches.json`。
+- **ad-23 主線補查**：Free Enterprize《The Eye of the Beholder》只有 Discogs（release 10127911、master 1702214 兩筆同為 1980 美國不掛廠牌 LP，風格標籤 Acid Rock／Folk，兩位表演者 John Peebles、Tony Frank，14 首、無曲長），MusicBrainz 無條目。裁定：薄寫到 200 字附近，只寫是什麼、私壓無廠牌、沒有再版紀錄、編制與曲目結構，風格只寫「路數偏 acid rock 與民謠」，不寫「為什麼值得聽」以外沒有證據的評價。
