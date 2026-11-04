@@ -1,0 +1,646 @@
+{
+ "group": "ax6c",
+ "factions": [
+  {
+   "id": "war-metal",
+   "zh": "war metal／bestial black metal",
+   "count": 9,
+   "why": "Blasphemy 系的盲轟式極端"
+  },
+  {
+   "id": "raw-black",
+   "zh": "raw black metal 極端作",
+   "count": 3,
+   "why": ""
+  },
+  {
+   "id": "noisegrind",
+   "zh": "noisegrind",
+   "count": 2,
+   "why": ""
+  },
+  {
+   "id": "funeral-doom",
+   "zh": "funeral／drone doom",
+   "count": 2,
+   "why": ""
+  },
+  {
+   "id": "blackened-death",
+   "zh": "blackened death",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "drone-doom",
+   "zh": "drone／噪音牆",
+   "count": 1,
+   "why": ""
+  }
+ ],
+ "albums": [
+  {
+   "artist": "Blasphemy",
+   "album": "Fallen Angel of Doom....",
+   "year": 1990,
+   "label": "Wild Rags Records",
+   "country": "ca",
+   "faction": "war-metal",
+   "genres": [
+    "metal"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "war metal 的開山盤，Metal Hammer、Mühlmann《Black Metal》等稱其為此風格最具影響力、最野蠻的錄音：失控的混亂速度、泥濘錄音、無旋律可循的暴力。",
+   "listeners": null,
+   "why": "war metal 的開山盤，Metal Hammer、Mühlmann《Black Metal》等稱其為此風格最具影響力、最野蠻的錄音：失控的混亂速度、泥濘錄音、無旋律可循的暴力。",
+   "moodGuess": {
+    "x": 5,
+    "y": 2,
+    "z": -2,
+    "why": "混沌高速、泥濘錄音"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/a4425419-b716-3112-b8ce-f60765a92f3a",
+    "https://coverartarchive.org/release-group/a4425419-b716-3112-b8ce-f60765a92f3a/front",
+    "https://en.wikipedia.org/wiki/Fallen_Angel_of_Doom",
+    "https://www.invisibleoranges.com/?p=40611"
+   ],
+   "mbRgMbid": "a4425419-b716-3112-b8ce-f60765a92f3a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "依據為維基引註（Metal Hammer 2011、Mühlmann）與 Invisible Oranges 類型入門；無 AllMusic 原文"
+  },
+  {
+   "artist": "Conqueror",
+   "album": "War.Cult.Supremacy",
+   "year": 1999,
+   "label": "Evil Omen Records",
+   "country": "ca",
+   "faction": "war-metal",
+   "genres": [
+    "metal"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "加拿大 war metal 最極端的代表之一，無旋律的炸裂鼓點與噪音化吉他，社群與 NWN 文獻列為此場景核心。",
+   "listeners": null,
+   "why": "加拿大 war metal 最極端的代表之一，無旋律的炸裂鼓點與噪音化吉他，社群與 NWN 文獻列為此場景核心。",
+   "moodGuess": {
+    "x": 5,
+    "y": 2,
+    "z": -2,
+    "why": "炸裂鼓點、無旋律"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/524d22ce-083a-3706-b4d3-ccf08c073e78",
+    "https://coverartarchive.org/release-group/524d22ce-083a-3706-b4d3-ccf08c073e78/front",
+    "https://www.heavyblogisheavy.com/2015/08/13/starter-kit-war-metalbestial-black-metal/",
+    "https://www.nwnprod.com/?p=832"
+   ],
+   "mbRgMbid": "524d22ce-083a-3706-b4d3-ccf08c073e78",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "依據偏薄：僅 Heavy Blog Is Heavy 入門單與廠牌頁；MB 另有 2011 重發版 War.Cult.Supremacy 標 Compilation，本提名鎖 1999 原盤；國別 MB 標 FR（廠牌地），樂團為加拿大"
+  },
+  {
+   "artist": "Beherit",
+   "album": "Drawing Down the Moon",
+   "year": 1993,
+   "label": "Spinefarm Records",
+   "country": "fi",
+   "faction": "war-metal",
+   "genres": [
+    "metal"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "AllMusic 稱 Beherit 是「最原始、野蠻、滿腦地獄的黑金屬」；本盤混入太空合成器、變聲人聲與反結構的破碎推進，Decibel 列黑金屬百大第 10。",
+   "listeners": null,
+   "why": "AllMusic 稱 Beherit 是「最原始、野蠻、滿腦地獄的黑金屬」；本盤混入太空合成器、變聲人聲與反結構的破碎推進，Decibel 列黑金屬百大第 10。",
+   "moodGuess": {
+    "x": 4,
+    "y": 2,
+    "z": -2,
+    "why": "原始、破碎、合成器怪聲"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/98b89d1f-46fd-3a2f-a63f-3c16144a095d",
+    "https://coverartarchive.org/release-group/98b89d1f-46fd-3a2f-a63f-3c16144a095d/front",
+    "https://en.wikipedia.org/wiki/Beherit",
+    "https://en.wikipedia.org/wiki/Drawing_Down_the_Moon_(Beherit_album)"
+   ],
+   "mbRgMbid": "98b89d1f-46fd-3a2f-a63f-3c16144a095d",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "偏薄：本盤較偏詭譎氛圍，非全程噪音牆；極端度最弱的一張之一，主線可汰"
+  },
+  {
+   "artist": "Sarcófago",
+   "album": "I.N.R.I.",
+   "year": 1987,
+   "label": "Cogumelo Records",
+   "country": "br",
+   "faction": "war-metal",
+   "genres": [
+    "metal"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "維基引註指樂團以「做出史上最具攻擊性的音樂」為目標；本盤為極速、粗糙、近噪音的早期極端金屬原型，後世 war／black metal 的藍本。",
+   "listeners": null,
+   "why": "維基引註指樂團以「做出史上最具攻擊性的音樂」為目標；本盤為極速、粗糙、近噪音的早期極端金屬原型，後世 war／black metal 的藍本。",
+   "moodGuess": {
+    "x": 5,
+    "y": 2,
+    "z": -2,
+    "why": "極速粗糙、嘶吼"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/a66eed29-69bb-35f5-a8fd-987fafc28290",
+    "https://coverartarchive.org/release-group/a66eed29-69bb-35f5-a8fd-987fafc28290/front",
+    "https://en.wikipedia.org/wiki/I.N.R.I._(Sarcófago_album)",
+    "https://en.wikipedia.org/wiki/Sarcófago"
+   ],
+   "mbRgMbid": "a66eed29-69bb-35f5-a8fd-987fafc28290",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "偏薄：極端度屬 1987 年標準，今日聽來較不難入耳"
+  },
+  {
+   "artist": "Bestial Warlust",
+   "album": "Vengeance War 'Till Death",
+   "year": 1994,
+   "label": "Modern Invasion Music",
+   "country": "au",
+   "faction": "war-metal",
+   "genres": [
+    "metal"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "廣被視為最早的 war metal 專輯之一，reissue 文案稱其極端暴力；全程盲目高速轟炸、無旋律結構。",
+   "listeners": null,
+   "why": "廣被視為最早的 war metal 專輯之一，reissue 文案稱其極端暴力；全程盲目高速轟炸、無旋律結構。",
+   "moodGuess": {
+    "x": 5,
+    "y": 2,
+    "z": -2,
+    "why": "盲目轟炸、無旋律"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/6002eae4-d99a-3e1a-ae5e-fdfb567daa3e",
+    "https://coverartarchive.org/release-group/6002eae4-d99a-3e1a-ae5e-fdfb567daa3e/front",
+    "https://en.wikipedia.org/wiki/Bestial_Warlust",
+    "https://punx.co.uk/?p=2047911"
+   ],
+   "mbRgMbid": "6002eae4-d99a-3e1a-ae5e-fdfb567daa3e",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "偏薄：僅廠牌／店家文案與社群共識，無主流樂評原文"
+  },
+  {
+   "artist": "Black Witchery",
+   "album": "Desecration of the Holy Kingdom",
+   "year": 2001,
+   "label": "Full Moon Productions",
+   "country": "us",
+   "faction": "war-metal",
+   "genres": [
+    "metal"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "war metal 公認的入門極端盤，deathmetal.org 評為 Blasphemy 與 Bestial Warlust 的混合：不歇的盲轟與瘋狂炸裂。",
+   "listeners": null,
+   "why": "war metal 公認的入門極端盤，deathmetal.org 評為 Blasphemy 與 Bestial Warlust 的混合：不歇的盲轟與瘋狂炸裂。",
+   "moodGuess": {
+    "x": 5,
+    "y": 2,
+    "z": -2,
+    "why": "不歇盲轟"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/4b7bc8ba-9904-3138-89c7-4928ae002367",
+    "https://coverartarchive.org/release-group/4b7bc8ba-9904-3138-89c7-4928ae002367/front",
+    "https://en.wikipedia.org/wiki/Black_Witchery",
+    "https://www.deathmetal.org/etc/larm/2500/2556.html"
+   ],
+   "mbRgMbid": "4b7bc8ba-9904-3138-89c7-4928ae002367",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Archgoat",
+   "album": "Whore of Bethlehem",
+   "year": 2006,
+   "label": "Hammer of Hate",
+   "country": "fi",
+   "faction": "war-metal",
+   "genres": [
+    "metal"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "芬蘭 bestial black／war metal 代表，極度原始的錄音與低吼、沒有旋律的碾壓；社群類型榜前段。",
+   "listeners": null,
+   "why": "芬蘭 bestial black／war metal 代表，極度原始的錄音與低吼、沒有旋律的碾壓；社群類型榜前段。",
+   "moodGuess": {
+    "x": 5,
+    "y": 2,
+    "z": -2,
+    "why": "原始碾壓"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/9c1a97f0-6e47-363f-86b7-27a9d1024c97",
+    "https://coverartarchive.org/release-group/9c1a97f0-6e47-363f-86b7-27a9d1024c97/front",
+    "https://en.wikipedia.org/wiki/Archgoat",
+    "https://metalmusicarchives.com/subgenre/war-metal"
+   ],
+   "mbRgMbid": "9c1a97f0-6e47-363f-86b7-27a9d1024c97",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "偏薄：缺具體樂評引文，主要靠類型歸類；chk-artist 唯一命中 Goat|World Music 為假陽性"
+  },
+  {
+   "artist": "Mütiilation",
+   "album": "Vampires of Black Imperial Blood",
+   "year": 1995,
+   "label": "Drakkar Productions",
+   "country": "fr",
+   "faction": "raw-black",
+   "genres": [
+    "metal"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "維基引註形容其音質「超原始，讓 Darkthrone 聽起來像高傳真」；法國 Black Legions 最粗糙的錄音。",
+   "listeners": null,
+   "why": "維基引註形容其音質「超原始，讓 Darkthrone 聽起來像高傳真」；法國 Black Legions 最粗糙的錄音。",
+   "moodGuess": {
+    "x": 4,
+    "y": 1.5,
+    "z": -2,
+    "why": "超粗糙錄音、冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/27223e84-205d-37b3-9cd2-4947fe750d18",
+    "https://coverartarchive.org/release-group/27223e84-205d-37b3-9cd2-4947fe750d18/front",
+    "https://en.wikipedia.org/wiki/Vampires_of_Black_Imperial_Blood"
+   ],
+   "mbRgMbid": "27223e84-205d-37b3-9cd2-4947fe750d18",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "偏薄：僅單一維基引註；證據網域只有 MB／維基，需研究層補第二個可信來源"
+  },
+  {
+   "artist": "Impaled Nazarene",
+   "album": "Tol Cormpt Norz Norz Norz…",
+   "year": 1993,
+   "label": "Osmose Productions",
+   "country": "fi",
+   "faction": "war-metal",
+   "genres": [
+    "metal"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "芬蘭極端金屬代表，混合黑金屬與碾核的暴躁速度，與 Beherit 並列芬蘭「最原始」一脈。",
+   "listeners": null,
+   "why": "芬蘭極端金屬代表，混合黑金屬與碾核的暴躁速度，與 Beherit 並列芬蘭「最原始」一脈。",
+   "moodGuess": {
+    "x": 5,
+    "y": 2,
+    "z": -1.5,
+    "why": "暴躁高速"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/03f5d7bb-bdff-3b20-a241-2ca4bd37a830",
+    "https://coverartarchive.org/release-group/03f5d7bb-bdff-3b20-a241-2ca4bd37a830/front",
+    "https://en.wikipedia.org/wiki/Impaled_Nazarene",
+    "https://metalmusicarchives.com/subgenre/war-metal"
+   ],
+   "mbRgMbid": "03f5d7bb-bdff-3b20-a241-2ca4bd37a830",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "偏薄：本盤旋律性高於同類，極端度存疑，列備選"
+  },
+  {
+   "artist": "Ildjarn",
+   "album": "Strength and Anger",
+   "year": 1996,
+   "label": "Norse League Productions",
+   "country": "no",
+   "faction": "raw-black",
+   "genres": [
+    "metal"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "Ildjarn 為 raw／lo-fi 黑金屬極端：基本鼓點、兩個 riff、聽不清的人聲、極粗糙錄音（維基）。",
+   "listeners": null,
+   "why": "Ildjarn 為 raw／lo-fi 黑金屬極端：基本鼓點、兩個 riff、聽不清的人聲、極粗糙錄音（維基）。",
+   "moodGuess": {
+    "x": 3.5,
+    "y": 1,
+    "z": -2,
+    "why": "lo-fi 粗糙、冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/09448f23-0dfa-384c-b049-e0fb80315082",
+    "https://coverartarchive.org/release-group/09448f23-0dfa-384c-b049-e0fb80315082/front",
+    "https://en.wikipedia.org/wiki/Ildjarn",
+    "https://metalmusicarchives.com/artist/ildjarn"
+   ],
+   "mbRgMbid": "09448f23-0dfa-384c-b049-e0fb80315082",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "偏薄：Ildjarn 代表作尚有《Forest Poetry》《Landscapes》（含合成器非金屬），本提名取最金屬且最粗糙的一張；MB 將此盤標 Album（現實為 EP 長度？待研究層確認）"
+  },
+  {
+   "artist": "Anal Cunt",
+   "album": "Everyone Should Be Killed",
+   "year": 1994,
+   "label": "Earache Records",
+   "country": "us",
+   "faction": "noisegrind",
+   "genres": [
+    "punk",
+    "noise"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "noisegrind 一詞幾乎為 Anal Cunt 而生；本盤 58 分鐘、無歌詞、無調性的噪音碾核式喊叫，metal.academy 評其長度與極端。",
+   "listeners": null,
+   "why": "noisegrind 一詞幾乎為 Anal Cunt 而生；本盤 58 分鐘、無歌詞、無調性的噪音碾核式喊叫，metal.academy 評其長度與極端。",
+   "moodGuess": {
+    "x": 5,
+    "y": 1.5,
+    "z": -2,
+    "why": "噪音碾核、無旋律"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/06e40053-b87c-41dc-b920-e7abd453d119",
+    "https://coverartarchive.org/release-group/06e40053-b87c-41dc-b920-e7abd453d119/front",
+    "https://en.wikipedia.org/wiki/Everyone_Should_Be_Killed",
+    "https://metal.academy/releases/17997"
+   ],
+   "mbRgMbid": "06e40053-b87c-41dc-b920-e7abd453d119",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "依據為維基＋社群（metal.academy）；首發年 MB 為 1994，Earache 版；MB 標籤列 TOY'S FACTORY（日本版）"
+  },
+  {
+   "artist": "Sete Star Sept",
+   "album": "Revision of Noise",
+   "year": 2009,
+   "label": "Fuck Yoga Records",
+   "country": "us",
+   "faction": "noisegrind",
+   "genres": [
+    "noise",
+    "punk"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "Collective Zine 評為「一團糟——以最好的方式」，無結構的歌曲帶即興感，噪音核（noisecore）代表。",
+   "listeners": null,
+   "why": "Collective Zine 評為「一團糟——以最好的方式」，無結構的歌曲帶即興感，噪音核（noisecore）代表。",
+   "moodGuess": {
+    "x": 5,
+    "y": 1.5,
+    "z": -2,
+    "why": "無結構噪音核"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/4983c280-99c2-43bc-9d77-5e42ddf55595",
+    "https://coverartarchive.org/release-group/4983c280-99c2-43bc-9d77-5e42ddf55595/front",
+    "https://collective-zine.co.uk/?p=58952",
+    "https://itunes.apple.com/us/album/revision-of-noise/547504208"
+   ],
+   "mbRgMbid": "4983c280-99c2-43bc-9d77-5e42ddf55595",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "偏薄：僅 Collective Zine 一則；封面用 iTunes（MB 無 CAA）；國別未確認（MB XW）；iTunes URL 為 collectionId 推得"
+  },
+  {
+   "artist": "Burning Witch",
+   "album": "Crippled Lucifer",
+   "year": 1998,
+   "label": "Southern Lord",
+   "country": "us",
+   "faction": "funeral-doom",
+   "genres": [
+    "metal"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "Stephen O'Malley 的極慢、極重、近乎吼叫噪音的末日／sludge；Sputnik 稱「並不適合所有人，是壓碎性的黑暗之旅」，Chronicles of Chaos 9.5/10 稱其為 Thorr's Hammer 與 Sunn O))) 的缺失環節。",
+   "listeners": null,
+   "why": "Stephen O'Malley 的極慢、極重、近乎吼叫噪音的末日／sludge；Sputnik 稱「並不適合所有人，是壓碎性的黑暗之旅」，Chronicles of Chaos 9.5/10 稱其為 Thorr's Hammer 與 Sunn O))) 的缺失環節。",
+   "moodGuess": {
+    "x": 2,
+    "y": 2,
+    "z": -2,
+    "why": "極慢極重、壓迫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/500ad5ea-8738-3b1a-99e3-f65b76959873",
+    "https://coverartarchive.org/release-group/500ad5ea-8738-3b1a-99e3-f65b76959873/front",
+    "https://en.wikipedia.org/wiki/Crippled_Lucifer",
+    "https://www.sputnikmusic.com/album/29105/Burning-Witch-Crippled-Lucifer"
+   ],
+   "mbRgMbid": "500ad5ea-8738-3b1a-99e3-f65b76959873",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "MB 次類型為 Compilation；本盤為 EP 合輯，被廣泛視為該團專輯",
+   "queryAlias": "",
+   "uncertain": "MB 標 Compilation（收錄 EP），但實為該團唯一發行的完整專輯形態；releaseException 已註明；是否「整張難入耳」偏中等"
+  },
+  {
+   "artist": "Dragged Into Sunlight",
+   "album": "Hatred for Mankind",
+   "year": 2009,
+   "label": "Mordgrimm",
+   "country": "gb",
+   "faction": "blackened-death",
+   "genres": [
+    "metal"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "Blabbermouth 稱其刺耳、腐蝕；Hellbound 稱令人窒息的無情；穿插審判／殺人犯訪談取樣，慢段與盲轟交替的壓迫整張。",
+   "listeners": null,
+   "why": "Blabbermouth 稱其刺耳、腐蝕；Hellbound 稱令人窒息的無情；穿插審判／殺人犯訪談取樣，慢段與盲轟交替的壓迫整張。",
+   "moodGuess": {
+    "x": 4,
+    "y": 2,
+    "z": -2,
+    "why": "壓迫、取樣"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/e667d128-e045-4dd1-b915-c0460dcb86a8",
+    "https://coverartarchive.org/release-group/e667d128-e045-4dd1-b915-c0460dcb86a8/front",
+    "https://blabbermouth.net/reviews/hatred-for-mankind",
+    "https://hellbound.ca/?p=7644"
+   ],
+   "mbRgMbid": "e667d128-e045-4dd1-b915-c0460dcb86a8",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Moss",
+   "album": "Sub Templum",
+   "year": 2008,
+   "label": "Candlelight Records USA",
+   "country": "gb",
+   "faction": "funeral-doom",
+   "genres": [
+    "metal"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "英國 funeral doom，每曲約 20 分鐘，極端低頻與緩慢的重複，維基與 Rise Above 說明其極重的低頻壓迫。",
+   "listeners": null,
+   "why": "英國 funeral doom，每曲約 20 分鐘，極端低頻與緩慢的重複，維基與 Rise Above 說明其極重的低頻壓迫。",
+   "moodGuess": {
+    "x": 1.5,
+    "y": 2,
+    "z": -2,
+    "why": "極慢極低頻"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/8e9f908e-69ba-3eae-911d-a7460f8479aa",
+    "https://coverartarchive.org/release-group/8e9f908e-69ba-3eae-911d-a7460f8479aa/front",
+    "https://en.wikipedia.org/wiki/Sub_Templum",
+    "https://en.wikipedia.org/wiki/Moss_(band)"
+   ],
+   "mbRgMbid": "8e9f908e-69ba-3eae-911d-a7460f8479aa",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "依據偏薄：缺具體評論引文；是否達「難入耳」存疑，列備選"
+  },
+  {
+   "artist": "Havohej",
+   "album": "Dethrone the Son of God",
+   "year": 1993,
+   "label": "Candlelight Records",
+   "country": "us",
+   "faction": "raw-black",
+   "genres": [
+    "metal"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "Paul Ledney 的 Profanatica 衍生：過載失真的車庫錄音洪流，評論稱「不是令人愉悅的專輯」，邪教級地下名作。",
+   "listeners": null,
+   "why": "Paul Ledney 的 Profanatica 衍生：過載失真的車庫錄音洪流，評論稱「不是令人愉悅的專輯」，邪教級地下名作。",
+   "moodGuess": {
+    "x": 4,
+    "y": 1.5,
+    "z": -2,
+    "why": "過載失真洪流"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/814d8bff-4915-4a92-8710-800103c2139e",
+    "https://coverartarchive.org/release-group/814d8bff-4915-4a92-8710-800103c2139e/front",
+    "https://www.deathmetal.org/bands/havohej/havohej-dethrone_the_son_of_god",
+    "https://heavymetalspotlight.blogspot.com/2016/06/394-havohej-dethrone-son-of-god.html"
+   ],
+   "mbRgMbid": "814d8bff-4915-4a92-8710-800103c2139e",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "偏薄：無主流樂評、也無人明說噪音；僅部落格與 deathmetal.org，主線可汰"
+  },
+  {
+   "artist": "Bunkur",
+   "album": "Bludgeon",
+   "year": 2005,
+   "label": "Deserted Factory",
+   "country": "nl",
+   "faction": "drone-doom",
+   "genres": [
+    "noise",
+    "metal"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "荷蘭 Bunkur 為 drone／噪音／death industrial 型極端音牆（依 MB 與廠牌 Deserted Factory 目錄）。",
+   "listeners": null,
+   "why": "荷蘭 Bunkur 為 drone／噪音／death industrial 型極端音牆（依 MB 與廠牌 Deserted Factory 目錄）。",
+   "moodGuess": {
+    "x": 3,
+    "y": 2,
+    "z": -2,
+    "why": "音牆、壓迫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/df1c83d8-8071-3497-929d-8b5120e866ff",
+    "https://coverartarchive.org/release-group/df1c83d8-8071-3497-929d-8b5120e866ff/front"
+   ],
+   "mbRgMbid": "df1c83d8-8071-3497-929d-8b5120e866ff",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "依據極薄：搜尋未找到任何樂評，僅有 MB；建議汰換或交研究層重查"
+  },
+  {
+   "artist": "Pissgrave",
+   "album": "Suicide Euphoria",
+   "year": 2015,
+   "label": "Hells Headbangers",
+   "country": "us",
+   "faction": "war-metal",
+   "genres": [
+    "metal"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "維基引註稱其「極端老派死金屬」、「原始製作」與極端音色；錄音污濁、結構崩解的死／war metal。",
+   "listeners": null,
+   "why": "維基引註稱其「極端老派死金屬」、「原始製作」與極端音色；錄音污濁、結構崩解的死／war metal。",
+   "moodGuess": {
+    "x": 4.5,
+    "y": 2,
+    "z": -2,
+    "why": "污濁、極端死金屬"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/0f07448f-4361-47a8-853c-2355f0ce0fba",
+    "https://coverartarchive.org/release-group/0f07448f-4361-47a8-853c-2355f0ce0fba/front",
+    "https://en.wikipedia.org/wiki/Pissgrave",
+    "https://www.invisibleoranges.com/?p=40611"
+   ],
+   "mbRgMbid": "0f07448f-4361-47a8-853c-2355f0ce0fba",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "偏薄：廠牌、國別為推定（Hells Headbangers 待確認）；依據偏薄"
+  }
+ ],
+ "notes": [
+  "提名 18 張，MB 身分 18、人工 0。",
+  "Leif Inge《9 Beet Stretch》：MB 有 rg 但無封面（CAA 404、iTunes 無、Discogs 僅 2021 Ambisonic Guild 重製版），依規矩「找不到封面不提」已捨；Organum 已在卡池；超長篇 drone 場景未補到，Nortt／Thergothon／Corrupted／Esoteric／Skepticism／Khanate 已在卡池。",
+  "Ea《Ea Taesse》搜尋後樂評皆屬可入耳的旋律型 funeral doom，已捨。",
+  "Revenge 在 MB 查不到想要的專輯（Revenge 名稱撞同名藝人），未提。",
+  "Gore Beyond Necropsy 在 MB 只有 demo／split EP，無正規專輯，未提。",
+  "整體證據偏薄（WebSearch 8 次僅用 8 次，樂評多為社群或維基引註），請研究層補 AllMusic／Quietus／The Wire 層級來源。",
+  "listeners 不適用（異端）。"
+ ]
+}

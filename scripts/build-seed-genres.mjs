@@ -32,6 +32,10 @@ const SOUL_FIX = new Set([
 // 專輯級覆寫：Last.fm 個別誤標（jazz/rock 雜訊）直接指定正確標籤
 const ALBUM_GENRE_FIX = {
   // 新頂點盤線 ax1／ax2（2026-11-04）：噪音／聲音詩／古典前衛卡標籤推不出曲風
+  // ax6（2026-11-04）：Sete Star Sept 標籤空、Zeitkratzer 被誤標 folk
+  "Sete Star Sept|Revision of Noise": ["rock","electronic"],
+  "Zeitkratzer|WHITEHOUSE electronics": ["electronic","classical"],
+  "Ildjarn|Strength and Anger": ["rock","electronic"],
   "Monde Bruits|Purgatory": ["electronic","rock"],
   "Vomir|Claustration": ["electronic","rock"],
   "Sissy Spacek|Sissy Spacek": ["electronic","rock"],

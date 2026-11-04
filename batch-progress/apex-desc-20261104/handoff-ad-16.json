@@ -1,0 +1,29 @@
+{
+ "batch": "ad-16",
+ "cards": 30,
+ "written": {
+  "kvKeys": 37,
+  "kvBefore": "kv-before-ad-16.json",
+  "manifest": 30
+ },
+ "review": {
+  "by": "cloud-main",
+  "cards": 30,
+  "changed": [
+   "charles tyler|saga of the outlaws",
+   "complex|the way we feel",
+   "stan tracey quartet|captain adventure",
+   "steve beresford|the bath of surprise",
+   "bob ayala|joy by surprise"
+  ]
+ },
+ "qa": {
+  "research": "pass",
+  "out": "pass（標記皆誤報或已改）",
+  "kvReadback": "37/37",
+  "front": "30/30"
+ },
+ "pendingLocal": {
+  "seedYear": "chico freeman|kings of mali seed 1977 為錄音年，發行 1978（未動 seed）"
+ }
+}
