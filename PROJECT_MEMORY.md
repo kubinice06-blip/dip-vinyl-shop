@@ -1,5 +1,15 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-04｜dip-vinyl-shop｜頂點卡簡介重寫 s9：ad-17、ad-18 上線 60 張（流亡）
+
+- **內容**：ad-17（英國工業／卡帶、美國老調提琴與藍草、日本 1970 年代自主民謠盤、英國新前衛、1990 年代日本 techno／IDM：Syzygy、Transonic、Frogman）、ad-18（Transonic／Zero Gravity CD、英國小廠迷幻、Siltbreeze 噪音、英國 dub、Nimbus West／Strata-East／Survival／Nessa 爵士）。
+- **主線審稿**：ad-17 改 12 處（11 張）、ad-18 改 11 處（8 張）（`review-ad-17/18.json`）。新裁定：Discogs 收藏統計一律寫質性、不寫人數倍數；只查過單一版本寫「沒有再版紀錄」；sound none 不從曲名或標籤推音色。刪掉的：無出處的「該找來聽」「被忽略的經典」、研究稿沒有的「曲序與原版不同」、唱片行標價、單一文案的「Spacemen 3 創團成員」。
+- **主線補查**：三張日本自主盤（忍冬創、ほうむず、五条坂）研究層全 none，用 Discogs／MusicBrainz API 補 credits 與私家版註記；Mach One 壓量 1000、Abel Ganz 自主卡帶、Trio Rakant 客席逐軌核對。
+- **上線**：KV ad-17 34 鍵、ad-18 31 鍵（desc2 60＋desc4 5）；寫前舊值 `kv-before-ad-17/18.json`。回讀 65/65 逐字一致；`front-check` 前台 30/30、30/30，CURATED 0；manifest 同步 60 處。
+- **待店主**：Kyle Creed《Liberty》原版廠牌 Discogs 記 Mountain、店家頁記 Heritage（簡介寫 Mountain，未動 seed）。
+- **驗證**：`kv-token-check` exit 0；`qa-batch research|out ad-17|ad-18` 只剩誤報；fix-spacing 0；字數 217–280。
+- 主要檔案：`batch-progress/apex-desc-20261104/{PLAN.md,rulings.md,review-ad-1{7,8}.json,kv-before-ad-1{7,8}.json}`、`desc-tools/batches/{cards,research,output}/ad-1{7,8}-*`、onboarding manifest 9 檔。
+
 ### 2026-11-04｜dip-vinyl-shop｜頂點卡簡介重寫 s6：ad-11、ad-12 上線 60 張（第一批異端）
 
 - **內容**：ad-11（自由爵士、grindcore／技術死金、現代作曲錄音、日本噪音、Metal Machine Music、Trout Mask Replica、Scott Walker 等）、ad-12（AMM、Braxton、Zorn 系、工業／power electronics、具象與電子原音、drone／doom、黑金屬、不失者、零與聲音解放組織等）各 30 張，照 `apex-desc-base.md` 重寫。新增 `prompt-heresy-addendum.md`：研究層每張加「極端的具體證據」「當時反應／後來評價」各 2 條，寫作前兩句寫極端在哪裡與為何被認真看待，出處只放 facts。研究 3 Sonnet×2 批（WebSearch 57 次＋主線 2 次）、寫作 2 Opus×2 批。
