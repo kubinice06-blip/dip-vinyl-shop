@@ -102,3 +102,4 @@
 - **52479** Disorder 封面：CAA 無圖，主線用 Discogs API 讀 release 1227189（Disorder Records AARGH!-1、1984、UK、LP 15 軌，與 MB 一致），主圖 HTTP 200、目視封面印「Under the Scalple Blade／Disorder」（原封面拼法），寫 `covers.json`＋登錄 `data/discogs-cover-registry.json`（628 筆）、重產 `DISCOGS-COVERS.md`。
 - **52480** 情緒評分 `score-ax10` 9 張（Opus；high 4、mid 5）全落暴躁格；merge → build-priors → build-scale v0（錨點 104/104）→ build-card-moods 寫入。
 - **52481** 藝人補洞 ar-d-274 的 pubIssues 回頭修 Disorder 已上線簡介：刪「拒絕簽給 Riot City」（維基載 Riot City 婉拒他們，與 Svart 廠牌文案方向相反）與「早期單曲因失真被 John Peel 批評」（維基只載 Peel 把單曲比作 Triumph Bonneville 機車），改「唱片由樂團自己成立的 Disorder Records 發行」（245 字）；manifest 同步、KV 重寫。ANb 兩條 pubIssues 不改：簡介寫的是「編號曲裡最長的也不到一分鐘」（1:45 是未編號隱藏曲），「第三張」照維基。
+- **52482** 藝人介紹 ar-d-274 上線 3 位（Agoraphobic Nosebleed thin 159 字、D.R.I.、Disorder；skipped 0）。審稿改 2 處（ANb、D.R.I. 刪「據說」）。坑：`cut-artist-intros-ax.mjs` 以批名決定名冊檔（`roster-ax10.json`），同一批切第二號會**覆蓋**第一號的名冊，`build-artist-intros` 因此擋下 ar-d-273 六位；主線從 git 舊版把 6 位併回（名冊 9 位），重建後 6764 位藝人。

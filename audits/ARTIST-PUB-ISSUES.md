@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1059 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1063 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -1063,3 +1063,7 @@
 | ar-d-262 | Martine Viard | Aperghis: Récitations | 寫於 1977 至 1978 年 | IRCAM 與 BnF 標 1978，只有巴黎愛樂的節目單寫 1977；建議改成「1978 年的作品」，或保留區間時註明 | https://ressources.ircam.fr/work/recitations |
 | ar-d-262 | Martine Viard | Aperghis: Récitations | 聽眾彷彿聽到伴奏，其實是她在彈手指 | 本層找不到此軼事的來源，IRCAM、BnF、Artcena 皆未提；建議確認出處，否則刪除 | https://ressources.ircam.fr/work/recitations |
 | ar-d-273 | Crossed Out | Crossed Out | 1991 年秋天由 Chris Dodge 的 Slap-A-Ham 發行，壓 1000 張 | 維基 Crossed Out 條發行列表寫 7 吋為 1992 年，與 MB／內文的 1991 年不一致，年份待店主核實或改寫成不帶年份 | https://en.wikipedia.org/wiki/Crossed_Out |
+| ar-d-274 | Agoraphobic Nosebleed | Altered States of America | 最長的編號曲也不到一分鐘；總長約 21 分鐘 | 維基稱最長曲 1:45、全長不到 22 分鐘，「編號曲最長不到一分鐘」與之不符（可能不含隱藏曲，待確認）。 | https://en.wikipedia.org/wiki/Agoraphobic_Nosebleed |
+| ar-d-274 | Agoraphobic Nosebleed | Altered States of America | 第三張錄音室專輯 | 未查到第二源確認專輯序位；維基只列 Honky Reduction 1998、Frozen Corpse Stuffed with Dope 2002 之後。建議本機核對。 | https://en.wikipedia.org/wiki/Agoraphobic_Nosebleed |
+| ar-d-274 | Disorder | Under the Scalpel Blade | 樂團拒絕簽給 Riot City | 維基寫 Riot City 在收到 demo 後拒絕簽下樂團，方向相反。 | https://en.wikipedia.org/wiki/Disorder_(band) |
+| ar-d-274 | Disorder | Under the Scalpel Blade | 早期單曲已因失真過重被 John Peel 批評 | 維基與 Allen 訪談都只說 Peel 把早期單曲比作 Triumph Bonneville 摩托車，未載「批評」。 | https://en.wikipedia.org/wiki/Disorder_(band) |
