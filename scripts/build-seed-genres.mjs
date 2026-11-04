@@ -31,6 +31,7 @@ const SOUL_FIX = new Set([
 ]);
 // 專輯級覆寫：Last.fm 個別誤標（jazz/rock 雜訊）直接指定正確標籤
 const ALBUM_GENRE_FIX = {
+  'Vomir|Proanomie': ['electronic', 'rock'], // ax8 2026-11-04：私發噪音盤 worker 無標籤，照同藝人《Claustration》
   // 新頂點盤線 ax1／ax2（2026-11-04）：噪音／聲音詩／古典前衛卡標籤推不出曲風
   // ax6（2026-11-04）：Sete Star Sept 標籤空、Zeitkratzer 被誤標 folk
   "Sete Star Sept|Revision of Noise": ["rock","electronic"],

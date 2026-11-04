@@ -1,0 +1,198 @@
+{
+ "group": "ax8e",
+ "factions": [
+  {
+   "id": "fmp-de",
+   "zh": "德國 FMP",
+   "count": 1,
+   "why": "Brötzmann 圈外的 FMP 集體即興"
+  },
+  {
+   "id": "jp-origin",
+   "zh": "日本即興／聲音集團源頭",
+   "count": 1,
+   "why": "Group Ongaku 1960–61 年錄音，日本最早的集體即興與噪音"
+  },
+  {
+   "id": "war-metal",
+   "zh": "war metal／bestial black metal",
+   "count": 2,
+   "why": "Blasphemy 系的盲轟式極端"
+  },
+  {
+   "id": "acousmatic-extreme",
+   "zh": "acousmatic-extreme",
+   "count": 1,
+   "why": ""
+  }
+ ],
+ "albums": [
+  {
+   "artist": "Die Like a Dog Quartet",
+   "album": "Little Birds Have Fast Hearts No.1",
+   "year": 1998,
+   "label": "FMP",
+   "country": "de",
+   "faction": "fmp-de",
+   "genres": [
+    "jazz",
+    "experimental"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "Brötzmann 次中音／Kondo 電子小號／Parker 低音／Drake 鼓，1997 柏林 Podewil 現場，No.1 兩段 45'45\"＋21'59\" 不停歇高壓即興；Jenkins（自由爵士百科）稱 absolutely frenetic，AllMusic 4.5 星，Wire 1998 年度推薦。",
+   "listeners": null,
+   "why": "Brötzmann 次中音／Kondo 電子小號／Parker 低音／Drake 鼓，1997 柏林 Podewil 現場，No.1 兩段 45'45\"＋21'59\" 不停歇高壓即興；Jenkins（自由爵士百科）稱 absolutely frenetic，AllMusic 4.5 星，Wire 1998 年度推薦。",
+   "moodGuess": {
+    "x": 4.8,
+    "y": 1.5,
+    "z": -0.3,
+    "why": "長篇不停歇的嘶吼吹奏與電子扭曲"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/2c0e6789-b15b-4ecd-89e4-61069f67a5db",
+    "https://coverartarchive.org/release-group/2c0e6789-b15b-4ecd-89e4-61069f67a5db/front",
+    "https://en.wikipedia.org/wiki/Little_Birds_Have_Fast_Hearts"
+   ],
+   "mbRgMbid": "2c0e6789-b15b-4ecd-89e4-61069f67a5db",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "現場盤＝該團最重要錄音",
+   "queryAlias": "",
+   "uncertain": "極端措辭不足（frenetic、work-out）；團含 Brötzmann 但團名不含卡池藝人鍵（Brötzmann 在卡池，需主線判是否算撞）。｜ax8 主線 52262：ax6 汰換稿照放寬標準撿回"
+  },
+  {
+   "artist": "グループ・音楽",
+   "album": "ミュージック オブ グループ・音楽",
+   "year": 1996,
+   "label": "HEAR Sound Art Library",
+   "country": "jp",
+   "faction": "jp-origin",
+   "genres": [
+    "experimental"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "日本最早的集體即興團體，1960 年用吸塵器、油桶、收音機、卡帶變速做 26 分鐘即興，被史書列為實驗音樂里程碑",
+   "listeners": null,
+   "why": "Group Ongaku（水野修孝、小杉武久、刀根康尚等）的 1960–61 年錄音，1996 年 HEAR 首度發行：〈Automatism〉26 分鐘集體即興，樂器含鋼琴、腳踏風琴、大提琴、中音薩克斯風、電動吸塵器、收音機、油桶、玩偶與餐盤，並以手動改變卡帶轉速；〈Metaplasm 9-15〉25 分鐘。無旋律無節拍，《Art, Anti-Art, Non-Art》（Getty，Merewether 編）稱為實驗音樂史上的里程碑事件。",
+   "moodGuess": {
+    "x": 3.8,
+    "y": 0.6,
+    "z": -1,
+    "why": "雜音即興、無序，偏冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/2d321c1e-f437-4b06-9486-051d069e9441",
+    "https://coverartarchive.org/release-group/2d321c1e-f437-4b06-9486-051d069e9441/front",
+    "https://en.wikipedia.org/wiki/Group_Ongaku"
+   ],
+   "mbRgMbid": "2d321c1e-f437-4b06-9486-051d069e9441",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Group Ongaku Music of Group Ongaku",
+   "uncertain": "依據偏薄：維基未用 harsh／extreme 字眼，是史料價值為主；聽感是否達硬蕊度 5 需研究層判。卡池 Kosugi、Tone 以集體名義出現的是不同藝人鍵｜ax8 主線 52262：ax6 汰換稿照放寬標準撿回"
+  },
+  {
+   "artist": "Sarcófago",
+   "album": "I.N.R.I.",
+   "year": 1987,
+   "label": "Cogumelo Records",
+   "country": "br",
+   "faction": "war-metal",
+   "genres": [
+    "metal"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "維基引註指樂團以「做出史上最具攻擊性的音樂」為目標；本盤為極速、粗糙、近噪音的早期極端金屬原型，後世 war／black metal 的藍本。",
+   "listeners": null,
+   "why": "維基引註指樂團以「做出史上最具攻擊性的音樂」為目標；本盤為極速、粗糙、近噪音的早期極端金屬原型，後世 war／black metal 的藍本。",
+   "moodGuess": {
+    "x": 5,
+    "y": 2,
+    "z": -2,
+    "why": "極速粗糙、嘶吼"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/a66eed29-69bb-35f5-a8fd-987fafc28290",
+    "https://coverartarchive.org/release-group/a66eed29-69bb-35f5-a8fd-987fafc28290/front",
+    "https://en.wikipedia.org/wiki/I.N.R.I._(Sarcófago_album)",
+    "https://en.wikipedia.org/wiki/Sarcófago"
+   ],
+   "mbRgMbid": "a66eed29-69bb-35f5-a8fd-987fafc28290",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "偏薄：極端度屬 1987 年標準，今日聽來較不難入耳｜ax8 主線 52262：ax6 汰換稿照放寬標準撿回"
+  },
+  {
+   "artist": "Archgoat",
+   "album": "Whore of Bethlehem",
+   "year": 2006,
+   "label": "Hammer of Hate",
+   "country": "fi",
+   "faction": "war-metal",
+   "genres": [
+    "metal"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "芬蘭 bestial black／war metal 代表，極度原始的錄音與低吼、沒有旋律的碾壓；社群類型榜前段。",
+   "listeners": null,
+   "why": "芬蘭 bestial black／war metal 代表，極度原始的錄音與低吼、沒有旋律的碾壓；社群類型榜前段。",
+   "moodGuess": {
+    "x": 5,
+    "y": 2,
+    "z": -2,
+    "why": "原始碾壓"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/9c1a97f0-6e47-363f-86b7-27a9d1024c97",
+    "https://coverartarchive.org/release-group/9c1a97f0-6e47-363f-86b7-27a9d1024c97/front",
+    "https://en.wikipedia.org/wiki/Archgoat",
+    "https://metalmusicarchives.com/subgenre/war-metal"
+   ],
+   "mbRgMbid": "9c1a97f0-6e47-363f-86b7-27a9d1024c97",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "偏薄：缺具體樂評引文，主要靠類型歸類；chk-artist 唯一命中 Goat|World Music 為假陽性｜ax8 主線 52262：ax6 汰換稿照放寬標準撿回"
+  },
+  {
+   "apexTier": "heresy",
+   "listeners": null,
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "artist": "Francisco López",
+   "album": "Untitled #360",
+   "year": 2018,
+   "label": "Emitter Micro",
+   "country": "de",
+   "faction": "acousmatic-extreme",
+   "genres": [
+    "experimental",
+    "noise"
+   ],
+   "apexWhy": "Brainwashed 評其三段以「力量與混亂」突出，充滿暴力濕黏重擊聲。",
+   "why": "Francisco López 的《Untitled #360》（Emitter Micro 2018）為三段式純聲響作品，無標題無旋律無拍；Brainwashed 評其三個樂章在近作中以 sheer force and chaos 突出，聲響如一團暴力的重擊與濕黏蠕動。López 整體作品被評為「從來稱不上易入耳」。",
+   "moodGuess": {
+    "x": 0,
+    "y": 0,
+    "z": 0,
+    "why": "待覆核"
+   },
+   "evidence": [
+    "https://www.brainwashed.com/index.php/reviews-easyblog/2018-11-04-16-27-52",
+    "https://musicbrainz.org/release-group/fc791f03-b7f1-41c6-9ebe-2c2554273c6b",
+    "https://coverartarchive.org/release-group/fc791f03-b7f1-41c6-9ebe-2c2554273c6b/front"
+   ],
+   "mbRgMbid": "fc791f03-b7f1-41c6-9ebe-2c2554273c6b",
+   "uncertain": "Brainwashed 該頁 WebFetch 回 404（搜尋結果摘要引述），需主線以 WebSearch 摘要為準或複驗；López 的 Untitled 系列多半偏靜，此張是少數暴烈者。｜ax8 主線 52262：ax6 汰換稿照放寬標準撿回"
+  }
+ ],
+ "notes": [
+  "ax6 汰換稿照 ax8 放寬標準撿回（rulings 52262），研究稿沿用 ax6"
+ ]
+}
