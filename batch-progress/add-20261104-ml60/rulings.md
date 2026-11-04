@@ -76,3 +76,8 @@
 ## 主線審稿（2026-11-04，cloud-main）
 - 逐張審 14 張，抽核關鍵事實回研究稿：Toro y Moi 生年 1986／平面設計／Carpark 2011-02；McGuire 9 歲學吉他、2013-01 退出 Emeralds、67 分鐘四段；蜃気楼MIRAGE Bandcamp 所在地東京、Waterfront Dining 多倫多（Discogs）；Axel Boman 小說作者 Erik Lavesson、Studio Barnhus 2013-11-11；Torske 1971 生於 Tromsø、「techno 之都」（RA 樂評語）、Ferox 1998、《Feil knapp》Helmut Erler 母帶、《Kokning》杏仁糖鱈魚與隨身碟（Bandcamp 廠牌文）；Lawrence 園丁（Discogs 藝人頁）；Kuniyuki 札幌錄音工程師、Sona Diabaté 幾內亞；Sea Biscuit 七首 6 分半–13 分、約 74 分鐘；Kitchen R&S 1993、Tillmans 攝影；Ott 1968 生於倫敦、封面指定題材——皆一致。
 - 逐張審過，未改字。`fix-spacing` 提示「蜃気楼MIRAGE」中間加空格：那是 MB 掛名原字串，不改。
+
+## 主線上線（條號 22751–22753）
+- **22751**：上線 14 張：card_catalog 14／14、KV 15 鍵回讀逐字一致（stamp 20261104a）、試聽 12 ready／2 unavailable（蜃気楼MIRAGE、Spacetime Continuum《Emit Ecaps》Apple 查無）、seed +14、prepare／published gate 0 error（14 warning 皆 UPC）。封面 CAA 14，縮圖表目視相符。寫入前對 origin 近 25 條分支 seed 去重 0 撞。`genre-l3-artist-map.json` 補 蜃気楼MIRAGE → `electronic/downtempo/chillwave`。藝人介紹 ar-d-275（9 位）同 PR 上線。
+- **22752**：情緒評分 `score-ml60/`：**落恍惚 12/14＝86%**；出格 Kuniyuki Takahashi《Feather World》y 0.4 判輕落放鬆、Spacetime Continuum《Emit Ecaps》z −0.2 判冷落頹靡（研究層已提 electro／breakbeat 疑慮）。貼邊：Lawrence z 0.1、Sea Biscuit z 0.0、Axel Boman x 2.9。
+- **22753**：**場景潛力**：chillwave 電子盤與 vaporwave 見底（頭牌已在池；vaporwave 多拼貼短曲、mallsoft 判冷）；lo-fi house／慢 deep house 多四拍舞池取向判躁（研究汰 6）；暖 ambient techno 二線（FAX／Namlook）池中判輕判冷。本場景約還能挖 5–8 張（Torske、Ott 同路 psydub 有錨點可靠）。

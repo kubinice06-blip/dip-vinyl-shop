@@ -99,3 +99,8 @@
 ## 主線審稿（2026-11-04，cloud-main）
 - 逐張審 20 張，抽核關鍵事實回研究稿：Schnauss 1977 生於基爾、2016→2020 更名加曲；《Epic》兩段間奏分屬、14 軌含 Dub；《Eight Fragments》無鼓組、八分音符脈動、10:50 長曲；Mark Peters 利物浦／Engineers、2017 開錄 2020 混完；Casino Versus Japan 2002 交 Attacknine 五張光碟、第一張首度發行；Manual＝奧登塞 Jonas Munk、Morr Music 2001；Solar Bears 團名出自《飛向太空》、Pulse 錄音學校、1986 Sony 錄音機；aus 東京、FLAU 創辦人、Preco 2006；Tujiko Noriko 辻子紀子、大阪、布里斯本旅館；Cuushe 京都；Fila Brazillia 1990 赫爾、與 Sim Lister 共創 Twentythree；Jonas Bering 1975 生於里爾、Kompakt 首位非德國籍藝人（維基）；Fennesz 1962 生——皆一致。
 - 逐張審過，未改字。
+
+## 主線上線（條號 22831–22833）
+- **22831**：上線 20 張：card_catalog 20／20、KV 20 鍵回讀逐字一致（stamp 20261104a）、試聽 18 ready／2 unavailable（Schnauss & Munk《Epic》、aus《Curveland》Apple 查無；aus《Lang》、Orbit《Strange Cargo III》改走 musicArtist→lookup 補上）、seed +20、prepare／published gate 0 error。封面 CAA 18、Apple 官方圖 2（Solar Bears CAA 404、Cuushe CAA 500）。藝人介紹 ar-d-276（10 位）同 PR 上線。
+- **22832**：情緒評分 `score-ml61/`：**落恍惚 14/20＝70%**；出格：aus 兩張 y 0.1–0.2 判輕落放鬆（乾淨 glitch＋鋼琴，策展層已標風險）；Tujiko Noriko、Jonas Bering、Fennesz《Mosaic》、Phaeleh《Tides》z −0.1～−0.3 判冷落頹靡（旋律不明／Kompakt minimal／夜色 dubstep）。
+- **22833**：**場景潛力**：warm IDM／ambient pop 新世代有同人錨點的（Schnauss 系、Manual、Yppah、BMSR、Fila、Orb ambient 盤）落格穩；無錨點的 glitch、Kompakt minimal、dub techno 多判冷或判輕，**下批同場景只收池中同人已落恍惚的藝人**。warm dub techno 這條路不成立（四拍或判冷），不再派。
