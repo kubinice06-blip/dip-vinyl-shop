@@ -5,7 +5,7 @@
    "id": "id-psych",
    "zh": "印尼搖滾／迷幻",
    "why": "1960–70 年代印尼獨立壓片的地下搖滾",
-   "count": 3
+   "count": 1
   },
   {
    "id": "af-ghana",
@@ -29,42 +29,40 @@
    "id": "af-west",
    "zh": "西非私壓",
    "why": "象牙海岸／馬利／迦納小廠",
+   "count": 2
+  },
+  {
+   "id": "af-zambia",
+   "zh": "尚比亞私壓",
+   "why": "",
+   "count": 4
+  },
+  {
+   "id": "ph",
+   "zh": "菲律賓地下",
+   "why": "",
+   "count": 2
+  },
+  {
+   "id": "kr-free",
+   "zh": "韓國地下",
+   "why": "",
+   "count": 1
+  },
+  {
+   "id": "tr",
+   "zh": "土耳其地下",
+   "why": "",
+   "count": 1
+  },
+  {
+   "id": "jp-psych",
+   "zh": "日本迷幻／搖滾",
+   "why": "",
    "count": 1
   }
  ],
  "albums": [
-  {
-   "artist": "Shark Move",
-   "album": "Ghede Chokra's",
-   "year": 1971,
-   "label": "Shark Move Records",
-   "country": "id",
-   "faction": "id-psych",
-   "genres": [
-    "psychedelic",
-    "rock"
-   ],
-   "apexTier": "pearl",
-   "apexWhy": "印尼迷幻前衛搖滾聖杯，自家廠牌私壓，收藏圈公認",
-   "listeners": 8,
-   "why": "泗水 Shark Move 的唯一專輯，自家廠牌壓製，迷幻加前衛的印尼搖滾稀有盤",
-   "moodGuess": {
-    "x": 3.6,
-    "y": 0.9,
-    "z": 0.3,
-    "why": "吉他迷幻、前衛段落多，偏躁偏重"
-   },
-   "evidence": [
-    "https://musicbrainz.org/release-group/34e749ef-096f-4163-8b56-148e7d3e7b9d",
-    "https://www.discogs.com/master/540939"
-   ],
-   "mbRgMbid": "34e749ef-096f-4163-8b56-148e7d3e7b9d",
-   "mbAbsenceProof": null,
-   "manualEvidenceUrls": [],
-   "releaseException": "",
-   "queryAlias": "",
-   "uncertain": "MB 首發 1971，Discogs master 標 1973；封面來源 Discogs，Apple 查無專輯"
-  },
   {
    "artist": "Marijata",
    "album": "This Is Marijata",
@@ -96,68 +94,6 @@
    "releaseException": "",
    "queryAlias": "",
    "uncertain": "listeners=1 偏低，主線複查是否錯配"
-  },
-  {
-   "artist": "The Mercy's",
-   "album": "The Mercy's",
-   "year": 1973,
-   "label": "Remaco",
-   "country": "id",
-   "faction": "id-psych",
-   "genres": [
-    "rock"
-   ],
-   "apexTier": "pearl",
-   "apexWhy": "印尼 70 年代地下搖滾／流行私壓，Apple 僅有後來的紀念合輯",
-   "listeners": 14,
-   "why": "棉蘭 Mercy's 兄弟樂團 1973 年首張專輯，印尼 70 年代團體音樂代表",
-   "moodGuess": {
-    "x": 3.3,
-    "y": 0.4,
-    "z": 0.8,
-    "why": "英倫搖滾式旋律，暖色中速"
-   },
-   "evidence": [
-    "https://musicbrainz.org/release-group/d345af59-558e-49d6-8a1c-f957fa4d7671",
-    "https://www.discogs.com/search/?q=The+Mercy%27s+1973&type=master"
-   ],
-   "mbRgMbid": "d345af59-558e-49d6-8a1c-f957fa4d7671",
-   "mbAbsenceProof": null,
-   "manualEvidenceUrls": [],
-   "releaseException": "",
-   "queryAlias": "",
-   "uncertain": "廠牌 Remaco 未經 Discogs 核對；封面來源待查（Apple 只有 35 Tahun 合輯）"
-  },
-  {
-   "artist": "Eka Sapta",
-   "album": "Eka Sapta",
-   "year": 1964,
-   "label": "Remaco",
-   "country": "id",
-   "faction": "id-psych",
-   "genres": [
-    "rock"
-   ],
-   "apexTier": "pearl",
-   "apexWhy": "印尼 60 年代器樂吉他團體早期私壓，無串流原盤",
-   "listeners": 10,
-   "why": "雅加達吉他器樂團 Eka Sapta 1964 首張專輯，Bing Slamet 年代印尼地下前身",
-   "moodGuess": {
-    "x": 3.0,
-    "y": 0.1,
-    "z": 1.0,
-    "why": "衝浪式吉他器樂，輕快"
-   },
-   "evidence": [
-    "https://musicbrainz.org/release-group/3e562605-3dae-4cab-a0c5-4bc10f4a0624",
-    "https://www.discogs.com/search/?q=Eka+Sapta&type=master"
-   ],
-   "mbRgMbid": "3e562605-3dae-4cab-a0c5-4bc10f4a0624",
-   "mbAbsenceProof": null,
-   "manualEvidenceUrls": [],
-   "releaseException": "",
-   "queryAlias": "",
-   "uncertain": "廠牌與封面來源待核；Apple 只有 Koleksi Lagu Instrumental 合輯"
   },
   {
    "artist": "Masabumi Kikuchi Sextet",
@@ -256,7 +192,377 @@
    "releaseException": "",
    "queryAlias": "",
    "uncertain": "Discogs 署名 Ambassadeur International；Last.fm 為 Les Ambassadeurs。MB absence 文字需主線核"
+  },
+  {
+   "artist": "Jesper Siliya",
+   "album": "Giant Steps",
+   "year": 1978,
+   "label": "Chris Editions",
+   "country": "zm",
+   "faction": "af-zambia",
+   "genres": [
+    "psychedelic",
+    "rock"
+   ],
+   "apexTier": "pearl",
+   "apexWhy": "尚比亞前衛搖滾私壓聖杯，Chris Editions 原盤",
+   "listeners": 22,
+   "why": "Jesper Siliya 1978 年自製的尚比亞前衛迷幻專輯，近年才被考古廠挖出",
+   "moodGuess": {
+    "x": 3.3,
+    "y": 0.7,
+    "z": 0.0,
+    "why": "前衛搖滾，吉他與合成器層疊"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/d8f39af4-be8b-4921-ba87-2c1dda144dd8",
+    "https://www.discogs.com/master/1364723"
+   ],
+   "mbRgMbid": "d8f39af4-be8b-4921-ba87-2c1dda144dd8",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 首發日期 2018 為重發，原盤 1978；Apple 查無"
+  },
+  {
+   "artist": "Blackfoot",
+   "album": "Youth Power",
+   "year": 1975,
+   "label": "Goodson Records",
+   "country": "zm",
+   "faction": "af-zambia",
+   "genres": [
+    "psychedelic",
+    "rock"
+   ],
+   "apexTier": "pearl",
+   "apexWhy": "尚比亞 Zamrock 私壓，Goodson 廠牌原盤",
+   "listeners": 33,
+   "why": "贊比亞 Zamrock 團 Blackfoot 的 1975 年專輯，迷幻重搖滾私壓",
+   "moodGuess": {
+    "x": 4.0,
+    "y": 1.0,
+    "z": 0.2,
+    "why": "重型迷幻搖滾，吉他推進"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/0ed73804-7f2c-49b1-a3e2-5a45408cba7a",
+    "https://www.discogs.com/master/942670"
+   ],
+   "mbRgMbid": "0ed73804-7f2c-49b1-a3e2-5a45408cba7a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 首發日期 2021 為重發，原盤 1975；Last.fm 另有同名 The Blackfoot 287，主線注意錯配；Apple 查無"
+  },
+  {
+   "artist": "Brigth Engelberts And The B.E. Movement",
+   "album": "Tolambo Funk",
+   "year": 1978,
+   "label": "Discogram",
+   "country": "ci",
+   "faction": "af-west",
+   "genres": [
+    "funk"
+   ],
+   "apexTier": "pearl",
+   "apexWhy": "象牙海岸放克私壓，Discogram 廠牌原盤",
+   "listeners": 29,
+   "why": "阿比讓 B.E. Movement 1978 年放克專輯",
+   "moodGuess": {
+    "x": 3.9,
+    "y": 0.4,
+    "z": 1.2,
+    "why": "西非放克，銅管與節奏明亮"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/5b326de8-595f-4872-ac9c-4980be882883",
+    "https://www.discogs.com/master/434615"
+   ],
+   "mbRgMbid": "5b326de8-595f-4872-ac9c-4980be882883",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Discogs 拼寫 Brigth（原樣）"
+  },
+  {
+   "artist": "Blackbuster",
+   "album": "Blackbuster 3",
+   "year": 1976,
+   "label": "RCA",
+   "country": "ph",
+   "faction": "ph",
+   "genres": [
+    "funk",
+    "soul"
+   ],
+   "apexTier": "pearl",
+   "apexWhy": "菲律賓 70 年代放克／迪斯可稀有盤",
+   "listeners": 6,
+   "why": "馬尼拉放克樂團 Blackbuster 1976 年 RCA 專輯，近年被 DJ 圈挖出的 Pinoy funk",
+   "moodGuess": {
+    "x": 3.9,
+    "y": 0.3,
+    "z": 1.2,
+    "why": "放克迪斯可，節奏暖亮"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/8f76ff61-0ab8-4c1a-9762-0fbae05aaaf5",
+    "https://www.discogs.com/master/364961"
+   ],
+   "mbRgMbid": "8f76ff61-0ab8-4c1a-9762-0fbae05aaaf5",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Judas",
+   "album": "Judas",
+   "year": 1978,
+   "label": "Sunshine",
+   "country": "ph",
+   "faction": "ph",
+   "genres": [
+    "rock"
+   ],
+   "apexTier": "pearl",
+   "apexWhy": "菲律賓硬式搖滾私壓，Sunshine 廠牌",
+   "listeners": 204,
+   "why": "馬尼拉 Judas 1978 年首張專輯，Pinoy 硬式搖滾",
+   "moodGuess": {
+    "x": 4.0,
+    "y": 1.0,
+    "z": 0.0,
+    "why": "硬搖滾，吉他重"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/2217286",
+    "https://api.discogs.com/masters/2217286"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": "MB release-group 搜尋無此專輯（artist+title）",
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/2217286",
+    "https://api.discogs.com/masters/2217286"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 無；Last.fm 204"
+  },
+  {
+   "artist": "강태환",
+   "album": "Korean Free Music",
+   "year": 1989,
+   "label": "Yeh Eum Records",
+   "country": "kr",
+   "faction": "kr-free",
+   "genres": [
+    "jazz"
+   ],
+   "apexTier": "pearl",
+   "apexWhy": "韓國自由即興先驅的小廠錄音，Yeh Eum 原盤",
+   "listeners": 28,
+   "why": "薩克斯風手姜泰煥 1989 年的 Korean Free Music，韓國自由爵士的起點",
+   "moodGuess": {
+    "x": 4.2,
+    "y": 0.8,
+    "z": -0.5,
+    "why": "自由即興，躁偏冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/cbdebdaf-3fab-4c36-9c10-bacc7e1202f9",
+    "https://www.discogs.com/master/218161"
+   ],
+   "mbRgMbid": "cbdebdaf-3fab-4c36-9c10-bacc7e1202f9",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Kang Tae Hwan|Korean Free Music",
+   "uncertain": "Last.fm 以原文名查得 28"
+  },
+  {
+   "artist": "Fanny's Group",
+   "album": "Cium Mesra",
+   "year": 1968,
+   "label": "Lokananta",
+   "country": "id",
+   "faction": "id-psych",
+   "genres": [
+    "rock",
+    "psychedelic"
+   ],
+   "apexTier": "pearl",
+   "apexWhy": "印尼國營 Lokananta 廠牌的車庫迷幻稀有盤",
+   "listeners": 2,
+   "why": "Fanny's Group 1968 年 Lokananta 專輯，印尼車庫／迷幻搖滾",
+   "moodGuess": {
+    "x": 3.4,
+    "y": 0.5,
+    "z": 0.4,
+    "why": "車庫迷幻搖滾"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/1780374",
+    "https://api.discogs.com/masters/1780374"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": "MB release-group 搜尋無此專輯（artist+title）",
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/1780374",
+    "https://api.discogs.com/masters/1780374"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 無；listeners 2 偏低，查是否錯配"
+  },
+  {
+   "artist": "Urfalı Babi",
+   "album": "Disko Kebap",
+   "year": 1978,
+   "label": "S&S",
+   "country": "tr",
+   "faction": "tr",
+   "genres": [
+    "folk",
+    "funk"
+   ],
+   "apexTier": "pearl",
+   "apexWhy": "土耳其 Anatolian disco/psych 私壓，S&S 小廠",
+   "listeners": 34,
+   "why": "Urfalı Babi 1978 年的 Disko-Kebap，奧斯曼古典、民謠與迪斯可混合",
+   "moodGuess": {
+    "x": 3.8,
+    "y": 0.4,
+    "z": 1.0,
+    "why": "民謠迪斯可，暖亮"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/a0636a77-2e81-4802-9c4d-d3ce05f9e32e",
+    "https://www.discogs.com/master/1467954"
+   ],
+   "mbRgMbid": "a0636a77-2e81-4802-9c4d-d3ce05f9e32e",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Urfalı Babi|Disko-Kebap",
+   "uncertain": ""
+  },
+  {
+   "artist": "Tokyo Kid Brothers",
+   "album": "黄金バット Golden Bat",
+   "year": 1971,
+   "label": "Polydor",
+   "country": "jp",
+   "faction": "jp-psych",
+   "genres": [
+    "psychedelic",
+    "rock"
+   ],
+   "apexTier": "pearl",
+   "apexWhy": "日本迷幻音樂劇搖滾原盤，Polydor 壓製稀有",
+   "listeners": 10,
+   "why": "東京 Kid Brothers 1971 年的音樂劇《黄金バット》原聲，日本迷幻搖滾收藏盤",
+   "moodGuess": {
+    "x": 3.6,
+    "y": 0.6,
+    "z": 0.5,
+    "why": "迷幻搖滾音樂劇"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/674627",
+    "https://api.discogs.com/masters/674627"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": "MB release-group 搜尋無此專輯（artist+title）",
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/674627",
+    "https://api.discogs.com/masters/674627"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 無；Apple 查無"
+  },
+  {
+   "artist": "Cool Knights",
+   "album": "Bana Mulenga",
+   "year": 1975,
+   "label": "Zambia Music Parlour",
+   "country": "zm",
+   "faction": "af-zambia",
+   "genres": [
+    "funk",
+    "psychedelic"
+   ],
+   "apexTier": "pearl",
+   "apexWhy": "尚比亞 Zamrock 私壓，Zambia Music Parlour 小廠原盤",
+   "listeners": 13,
+   "why": "Cool Knights 1975 年 Bana Mulenga，尚比亞迷幻放克",
+   "moodGuess": {
+    "x": 3.7,
+    "y": 0.5,
+    "z": 1.0,
+    "why": "非洲迷幻放克，暖"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/1100576",
+    "https://api.discogs.com/masters/1100576"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": "MB release-group 搜尋無此專輯（artist+title）",
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/1100576",
+    "https://api.discogs.com/masters/1100576"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 查無；Apple 查無"
+  },
+  {
+   "artist": "Mike Nyoni",
+   "album": "I Can't Understand You",
+   "year": 1978,
+   "label": "Zambia Music Parlour",
+   "country": "zm",
+   "faction": "af-zambia",
+   "genres": [
+    "funk",
+    "soul"
+   ],
+   "apexTier": "pearl",
+   "apexWhy": "尚比亞放克／迪斯可私壓，Zambia Music Parlour 小廠",
+   "listeners": 19,
+   "why": "Mike Nyoni 1978 年專輯，尚比亞放克、迪斯可與靈魂混合",
+   "moodGuess": {
+    "x": 3.8,
+    "y": 0.4,
+    "z": 1.1,
+    "why": "放克迪斯可，暖亮"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/942566",
+    "https://api.discogs.com/masters/942566"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": "MB release-group 搜尋無此專輯（artist+title）",
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/942566",
+    "https://api.discogs.com/masters/942566"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 查無；Apple 查無"
   }
  ],
- "notes": []
+ "notes": [
+  "池子不足：Last.fm 有效且 1–299、Apple 無專輯、有原盤證據的交集小，故交 19 張（亞洲 11、非洲 8，其中尚比亞 4 張同場景，主線可汰換）。",
+  "Apple 檢查用 iTunes Search（日韓土加 country）；多數專輯的 MB 查無，改以 Discogs master（含 api URL）作人工身分，封面來源 Discogs。",
+  "前一批 listeners=1、2 的幾張（Marijata、Fanny's Group）疑似錯配，標在 uncertain。",
+  "Jesper Siliya、Blackfoot 的 MB 首發日期是近年重發，原盤年份取 Discogs。",
+  "去重：Shark Move《Ghede Chokra's》、The Mercy's、Eka Sapta、Mike Hanopol《Buhay Musikero》已在 seed 內，已剔除。강태환 另有《소리》在池（非頂點），本張《Korean Free Music》不同盤，保留。交 15 張（亞洲 7、非洲 8）。"
+ ]
 }
