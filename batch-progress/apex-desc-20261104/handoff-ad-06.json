@@ -1,0 +1,30 @@
+{
+ "batch": "ad-06",
+ "cards": 30,
+ "written": {
+  "kvKeys": 30,
+  "kvBefore": "kv-before-ad-06.json",
+  "manifest": 0
+ },
+ "review": {
+  "by": "cloud-main",
+  "cards": 30,
+  "changed": [
+   "bob marley & the wailers|exodus",
+   "a tribe called quest|the low end theory",
+   "ella fitzgerald|ella and louis",
+   "my bloody valentine|loveless",
+   "sonic youth|daydream nation",
+   "kanye west|my beautiful dark twisted fantasy",
+   "public enemy|it takes a nation of millions to hold us back",
+   "lauryn hill|the miseducation of lauryn hill"
+  ]
+ },
+ "qa": {
+  "research": "pass（1 個千分位在研究稿）",
+  "out": "pass（5 個誤報）",
+  "kvReadback": "30/30",
+  "front": "30/30"
+ },
+ "pendingLocal": {}
+}

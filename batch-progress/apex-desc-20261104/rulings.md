@@ -109,3 +109,78 @@
 - 兩批重新產 bulk（ad-01 30 鍵、ad-02 31 鍵）並 `wrangler@4 kv bulk put --remote`，皆 `Success!`。`kv-before-ad-0X.json` 保留的是本工作階段寫入**之前**的原始值，回滾用它。
 - **工具錯誤一次**：`ad.mjs`／`front-check.mjs`／`apply-review.mjs` 用 `startsWith('<批>-out-')` 選檔，把 `.v1.json` 備份也讀進來；Map 後讀蓋前，第二次 bulk put 實際寫回的是**第一版（含出處）**。前台比對抓到（35/60 不符），改成只認 `^<批>-out-\d+\.json$`，重產 bulk 並逐鍵對過輸出檔（30/30、31/31）後再 put 一次。之後的批沿用修好的工具，不會再發生。
 - 重寫後回讀 61/61 逐字一致；前台逐張比對 ad-01 29/30（Kind of Blue 仍是 CURATED）、ad-02 30/30。
+
+## ad-05（殿堂 30 張，s3）
+
+- 研究 3 Sonnet（WebSearch a 5／b 1／c 4 次）、寫作 2 Opus；coverage 無 none。sound thin 8 張（London Calling、Ten、Appetite、Paranoid、Back in Black、Parklife、Dummy、Brilliant Corners）照研究稿薄寫。研究層多數靠英文維基轉引（Pitchfork 擋、AllMusic 403）。
+- 研究層推翻舊簡介的主要錯誤（新稿未沿用）：Marquee Moon「英國暢銷」（英榜第 28）、Unknown Pleasures「噴霧罐聲」、Sex Pistols 作證者與 bollocks 字義、Ramones「2014 年金唱片」、Ten「鑽石認證」（13 白金）、Queen「六間錄音室」（七間）、Paranoid「Iommi 獨自二十分鐘」、Parklife 那句話是 Coxon 說的、Kraftwerk 官司終局、Monk「沒人完整彈完」（實為剪接）、Hancock「首張白金爵士專輯」未證實。
+- 寫作特注禁寫：Metallica「首張」、Back in Black「第二暢銷」、Kraftwerk 判決細節、GNR MTV 時段、Nevermind 封面 200 美元與訴訟、Wonderwall 寫給誰、Brubeck 伊斯坦堡（寫土耳其）。
+- 機器 QA：`qa-batch out ad-05` 5 個標記皆誤報（葛萊美名人堂、團員本名）；fix-spacing 0；字數 233–280。
+
+### 主線審稿（2026-11-04，30 張逐張讀、逐句對研究稿）
+
+改 17 處（同一張多次壓字分開記）：
+
+- `television|marquee moon`：「在 1970 年代與後龐克的最佳專輯榜上常排在前段」→「常被列為 1970 年代與後龐克最好的專輯之一」。「榜上常排在前段」是在描述榜單，改成直述地位
+- `the clash|london calling`：「《London Calling》常被列為搖滾史上最好的專輯之一」→「《London Calling》是 The Clash 1979 年的雙專輯，常被列為搖滾史上最好的專輯之一」。審稿第 1 問：第一句沒說是誰、哪年、什麼唱片
+- `the clash|london calling`：「The Clash 在倫敦錄了五到六週」→「樂團在倫敦錄了五到六週」。團名已前移
+- `the clash|london calling`：「成品是 19 首、65 分鐘的雙專輯，以接近單張的價格發售。」→「成品 19 首、65 分鐘，以接近單張的價格發售。」。「雙專輯」已前移，避免重複
+- `talking heads|remain in light`：「《Remain in Light》常被列為 1980 年代最好的專輯之一，2017 年入選美國國家錄音登記表。這是 Brian Eno 為 Talking Heads 製作的最後一張，1980 年夏天在巴哈馬與紐約錄製。」→「《Remain in Light》是 Talking Heads 1980 年的專輯，常被列為 1980 年代最好的專輯之一，2017 年入選美國國家錄音登記表。這是 Brian Eno 為樂團製作的最後一張，同年夏天在巴哈馬與紐約錄製。」。審稿第 1 問：第一句沒說是誰的唱片
+- `radiohead|ok computer`：「《OK Computer》常被列為史上最好的專輯之一」→「《OK Computer》是 Radiohead 1997 年的專輯，常被列為史上最好的專輯之一」。審稿第 1 問：第一句沒說是誰的唱片
+- `radiohead|ok computer`：「Radiohead 在英國鄉間的莊園等地錄音」→「樂團在英國鄉間的莊園等地錄音」。團名已前移
+- `the smiths|the queen is dead`：「《The Queen Is Dead》常被列為英國最好的專輯之一，英國榜最高第 2 名。The Smiths 在 1985 年下半年錄製，由 Morrissey 與 Johnny Marr 製作，因與廠牌的法律糾紛延到 1986 年才發行。」→「《The Queen Is Dead》是 The Smiths 1986 年的專輯，常被列為英國最好的專輯之一，英國榜最高第 2 名。樂團在 1985 年下半年錄製，由 Morrissey 與 Johnny Marr 製作，因與廠牌的法律糾紛延後半年多才發行。」。審稿第 1 問：第一句沒說是誰的唱片
+- `ac/dc|back in black`：「全黑封面是樂團對 Scott 的服喪。後來有錄音室拿它來測試房間音響。」→「全黑封面是樂團對 Scott 的服喪。」。冷知識收尾（apex-desc-base：冷知識不拿來收尾）
+- `john coltrane|a love supreme`：「常被視為 John Coltrane 最受喜愛的專輯，2015 年入選美國國家錄音登記，」→「被視為 John Coltrane 最受喜愛的專輯，2015 年入選美國國家錄音登記表，」。單一來源（Christgau）用「被視為」不用「常」；登記表用語統一
+- `the dave brubeck quartet|time out`：「2005 年入選美國國家錄音登記。」→「2005 年入選美國國家錄音登記表。」。用語統一
+- `charles mingus|mingus ah um`：「2003 年入選美國國家錄音登記。」→「2003 年入選美國國家錄音登記表。」。用語統一
+- `thelonious monk|brilliant corners`：「2003 年入選美國國家錄音登記。」→「2003 年入選美國國家錄音登記表。」。用語統一
+- `herbie hancock|head hunters`：「2008 年入選美國國家錄音登記。」→「2008 年入選美國國家錄音登記表。」。用語統一
+- `talking heads|remain in light`：「，加上多層貝斯與打擊，把非洲複節奏」→「，把非洲複節奏」。補第一句後超字（288），壓字
+- `radiohead|ok computer`：「〈Airbag〉的節奏取樣剪輯了幾秒鼓聲；」→「（刪）」。補第一句後超字（288），壓字
+- `the smiths|the queen is dead`：「，以取樣器做出 tom 鼓 loop，Marr」→「，Marr」。補第一句後超字（289），壓字
+
+其餘 19 張逐張審過，未改字。另核對研究稿：Back in Black「美國第三暢銷」（RIAA 27 白金，研究稿有）、Oasis「英國史上最暢銷錄音室專輯」（研究稿引 Official Charts 2026-07 認證 620 萬張）、Homogenic 跟蹤者事件（維基有 Ricardo López）、Discovery「約一半是自己彈的假取樣」（Homem-Christo 估計）皆有所本，照留。
+
+### 上線
+
+- `kv-token-check` 通過；舊值存 `kv-before-ad-05.json`（60 鍵，30 個非 null）。
+- bulk put 30 鍵（全為 desc2；本批無 desc4、無 CJK 卡），`Success!`；40 秒後 bulk get 回讀 30/30 逐字一致。
+- `front-check ad-05`：30/30 前台為新稿，CURATED 0。
+- manifest：0 處需同步。
+
+## ad-06（殿堂 30 張，s3）
+
+- 研究 3 Sonnet（WebSearch a 7／b 10／c 3 次；本工作階段研究層合計 30 次）、寫作 2 Opus。coverage 唯一 none 是 Adele《21》sound，主線自己讀英文維基 Recording／Composition 段補 7 條（研究稿標「主線補查」），改 ok。thin：Nina Simone 三塊、Ella and Louis 地位與聲音、Otis Blue、Live at the Apollo、Ready to Die、Baduizm、Lemonade、Daydream Nation、YHF、Village Green 聲音，照研究稿薄寫。
+- 研究層推翻舊簡介的主要錯誤（新稿未沿用）：Nina Simone〈Mississippi Goddam〉不在這張、Ella and Louis「Peterson 三重奏」（實為四人）、Exodus 槍擊細節（胸口中槍、七名槍手不實）、N.W.A「1989 年初 1.2 萬美元趕工」（實為 1988 夏秋錄）、Wu-Tang「各自簽進不同主流廠牌」（實為 Loud 允許另簽個人約）、Illmatic「四位製作人各一首」、Kendrick「TUPAC 縮寫」、Blonde 分潤與母帶、Adele「第二位六獎女性」、Kinks「最暢銷」的語境、Badu／D'Angelo 私生活軼事。
+- 機器 QA：`qa-batch research ad-06` 1 個千分位標記在研究稿（不進簡介）；`out` 5 個標記皆誤報（葛萊美名人堂、團員本名、Nirvana 為影響對象、年份 2010 是 2010 年代）；fix-spacing 0；字數 237–280。
+- 核對：國家錄音登記表入選年份逐張對研究稿（N.W.A 2017、Illmatic 2021、Ready to Die 2024、Wu-Tang 2022、Low End Theory 2022、Chronic 2019、Back to Black 2025、Live at the Apollo 2004），皆有維基出處。
+
+### 主線審稿（2026-11-04，30 張逐張讀、逐句對研究稿）
+
+改 8 處：
+
+- `bob marley & the wailers|exodus`：「曾被選為 20 世紀最佳專輯」→「常被列為史上最偉大的專輯之一」。去出處後「曾被選為 20 世紀最佳專輯」成了無主的封號（研究稿：Time 1999 單一來源）；改用多份榜單支持的敘述（Rolling Stone 500 大 2020 第 48、VH1 2001 第 26）
+- `a tribe called quest|the low end theory`：「常被列為最流暢的 hip-hop 專輯之一」→「被視為最一致、最流暢的 hip-hop 專輯之一」。研究稿只有單一來源（AllMusic John Bush），用「被視為」不用「常被列為」，並照原意補「最一致」
+- `ella fitzgerald|ella and louis`：「常被視為流行歌唱的頂點」→「被視為流行歌唱的頂點」。單一來源（Jasen 與 Jones），去「常」
+- `my bloody valentine|loveless`：「常被列為九〇年代最佳專輯。」→「常被列為九〇年代最佳專輯之一。」。榜單名次不一（Pitchfork 1999／2022 第 1、2003 第 2），不寫成唯一
+- `sonic youth|daydream nation`：「常被列為八〇年代最佳專輯，」→「常被列為八〇年代最佳專輯之一，」。同上，不寫成唯一
+- `kanye west|my beautiful dark twisted fantasy`：「常被列為 2010 年代最佳專輯，」→「常被列為 2010 年代最佳專輯之一，」。研究稿的是 2010 年度榜，十年榜名次未複核，不寫成唯一
+- `public enemy|it takes a nation of millions to hold us back`：「常被列為史上最偉大的嘻哈專輯，」→「常被列為史上最偉大的嘻哈專輯之一，」。不寫成唯一
+- `lauryn hill|the miseducation of lauryn hill`：「錄音不用壓縮器」→「她錄音時不用壓縮器」。研究稿是 Hill 自述的做法，補主詞以免讀成整張製作的通則
+
+其餘 22 張逐張審過，未改字。
+
+### 上線
+
+- `kv-token-check` 通過；舊值存 `kv-before-ad-06.json`（60 鍵，30 個非 null）。
+- bulk put 30 鍵（全為 desc2；本批無 desc4、無 CJK 卡），`Success!`。
+- 45 秒後 bulk get 回讀 30/30 逐字一致；`front-check ad-06`：30/30 前台為新稿，CURATED 0。
+- manifest：0 處需同步。
+
+## 收工前對新規複查（ad-05、ad-06，s3）
+
+- **原因**：收工 fetch 時看到 `origin/main` 新增店主規則（07f514906，apex-desc-base 第三節「先講清楚它憑什麼是這一級」）：前兩句要用事實講出夠格的理由；殿堂卡要寫地位與影響（開創、改變、被當成標竿：獎項、名人堂、長年榜單、被誰沿用），不寫遊戲用語。
+- **做法**：60 張逐張重讀前兩句。59 張前兩句已有地位事實（多份榜單「常被列為」、葛萊美、Billboard、國家錄音登記表、名人堂、開創某類型或影響某場景），判合格。
+- **改 1 張**：`charles mingus|mingus ah um`：「是 Charles Mingus 在 Columbia 的第一張專輯，2003 年入選美國國家錄音登記表。1959 年 5 月，他帶著」→「是 Charles Mingus 1959 年在 Columbia 的第一張專輯，2003 年入選美國國家錄音登記表，2013 年進葛萊美名人堂。同年 5 月，他帶著」，並刪「〈Boogie Stop Shuffle〉是十二小節藍調」壓字（290→261）。依據研究稿 `ad-05-b`/`c` 的 status 條（2013 葛萊美名人堂）。已單鍵重寫 KV（`Success!`）。
+- **用語裁定**：新規說「入選」不寫，指的是遊戲用語（入選殿堂之類）；「入選國家錄音登記表」是外部事實，照 s1 先例保留。
+- 兩批審稿改動總計：ad-05 19 處（11 張，見 `review-ad-05.json`，含本段 2 處）、ad-06 8 處（8 張）。
