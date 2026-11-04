@@ -8,6 +8,21 @@
 - **工具**：`batch-progress/apex-desc-20261104/tools/`（build-worklist、check-curated、ad.mjs、apply-review、front-check）；`desc-tools/qa-batch.mjs` factBlob 接受 facts 的 `text` 欄。
 - **驗證**：`kv-token-check` 通過；`qa-batch research|out ad-01|ad-02` 只剩具名出處誤報；`verify-wave-kv` 30/30、31/31。
 
+### 2026-11-04｜dip-vinyl-shop｜新頂點盤線 ax1／ax2：異端 85 → 109（上線 69 張＋藝人介紹 58 位）
+
+- **內容**：ax1 harsh noise／HNW／power electronics／工業／日本噪音上線 32（heresy 13／一般 19）；ax2 極端現代音樂、聲音詩、激進即興、極端電子、反結構金屬上線 37（heresy 11／一般 26）。研究層汰 12（現場盤、限量卡帶、資料太薄、聽感溫和），補策展兩組只收 4 張。
+- **頂點判準更正**：上一個工作階段的 `RES-APEX.md` 誤要求「7 星／史上最難入耳之一」，主線改回店主 11-03 裁定 3（accessibility 5＋可信資料支持極端、刺耳或反結構），已交件的組重判。單一部落格、只有藝人層級證據、有鼓有旋律的邊緣案例照一般卡上架（`apex-override.json`）。**離 150 還差約 41**：噪音卡帶多半沒有可引的樂評，雲端又讀不到 AllMusic／Pitchfork，建議下一輪由本機點名公認極端盤、研究層只核證據。
+- **寫入**：card_catalog 69 筆（heresy 24 帶 tier＋apex:true）；KV 69 鍵回讀逐字一致（含 5 張依藝人補洞 pubIssues 更正後重寫：Hair Police、Taint、Impetuous Ritual、Karkowski、Tsunoda）；seed 69 列；試聽 ready 21；Discogs 封面 12 張登錄 registry；曲風欄 8 張空白補進 `ALBUM_GENRE_FIX`。
+- **其他**：硬蕊度機器基線一律 3，改取研究層聲音判定；情緒評分 `score-ax12` 69 張併入（ax1 暴躁 30；ax2 暴躁 23／冷冽 9）；曲風樹、抽卡封面重建。研究層共用規則 `research-base.md` 的 MB User-Agent 改網站網址、禁放 email。
+- **藝人介紹**：ar-d-261 上線 26（skipped 3）、ar-d-262 上線 32（skipped 3），審稿 19 處（刪「據說／據傳」與傳聞軼事、改正「山之内純太郎」寫法、禁語「你」）。
+- **主要檔案**：`batch-progress/add-20261104-ax1|ax2/`（rulings、covers、apex-override、desc-override、ratings-override）、`batch-progress/apex-new-20261104/{PLAN.md,RES-APEX.md,build-manifest-ax.mjs,cut-artist-intros-ax.mjs}`、`onboarding-manifest-add-20261104-ax1|ax2-20261104.json`、`seed_cards.json`、`data/artist-intros/*`、`batch-progress/mood-axes/score-ax12/`。
+- **驗證**：兩批 prepare／published gate 皆 0 error；`verify-wave-kv` 全數一致；`qa-batch research|hooks|out`、`qa-artist gap|out` 通過（out 只剩 skipped 缺位）；`build-card-moods` 錨點 104/104；寫入前對 origin 212 個分支 seed 去重 0 撞。
+- **留給本機**：`album_overrides.tier` 用後台「依卡池同步頂點旗標」。
+
+### 2026-11-04｜dip-vinyl-shop｜頂點卡簡介規則補一條：出處不寫進簡介
+
+店主：「要有明確出處沒錯，但介紹裡不用寫出處。」`apex-desc-base.md` 寫作層加條：出處只記在研究稿 facts，簡介不寫「某某說／某媒體評為」，直接寫成敘述（獎項、官方排行照寫）；`ALBUM_ONBOARDING.md` §5 註記同步。已通知進行中的 S1 工作階段。驗證：純文件。
+
 ### 2026-11-04｜dip-vinyl-shop｜頂點卡簡介全面檢查與重寫：新寫作規則＋計畫
 
 店主嫌《台客的復仇》舊簡介敷衍、認為很多卡同病；看過新寫法定稿後答應頂點卡「全部檢查一次」。

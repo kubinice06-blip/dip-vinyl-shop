@@ -1259,3 +1259,15 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 主線審稿修 3 處：曲名〈Freedom Zen Dub（空禪迴）〉改〈Lennon's Freedom Zen Dub〉（中文維基與店主寫法；張鐵志用中文副題）；「據說沒去領獎」改「頒獎當天沒去領，人在凱道參加反國光石化抗議」——張鐵志單源之外，維基載遊行與第 1 屆金音獎同為 2010-11-13，日期互證；「緬甸人權」改「聲援西藏與緬甸」（〈空禪〉原為西藏而寫、收入《Free Burma》合輯）。JPF 補 2020 年。
 - 金音獎：第 1 屆、2010-11-13 頒獎（維基＋新頭殼 2010-10-14）。張鐵志寫「2011」為誤，店主寫 2010 正確。
 - 不寫：英語教學博士的學校與年份（維基單源，且與中央社任教時間不一致）、現職（兩篇中央社寫法不同）、「最活躍的抗議歌手之一」（單一評論家形容）、《創世記》「媒體年度十大」（未具名）。
+
+## ar-d-261（2026-11-04，新頂點盤線 ax1＝harsh noise／HNW／power electronics／工業／日本噪音）
+- 切 29 位（扣已有介紹 3 位）。補洞 3 組（g3 狀態值寫成 full／thin，主線依事實來源改回 bank／gap／none；http 改 https）、寫作 2 組。
+- **skipped 3**：Taint（sound 格空、主理人生死兩源矛盾）、Navicon Torture Technologies（origin 格空）、Macronympha（全部事實只有 en 維基單源）。
+- **主線審稿 10 處**：Hanatarash「愛搞大場面」→「愛製造大場面」、刪「據說他因此被判刑並賠償場地」；The Gerogerigegege 寫作層自擬的「山ノ内」→「山之内」（ja 維基：山之内純太郎），刪「網路一度謠傳山之内已過世，後來又傳出他想重新錄音」（傳聞）；Monde Bruits 刪「據記載，」；Vomir 刪「據說發行逾 300 項」；Werewolf Jerusalem 刪「據說獲得近乎神話的地位」；Harry Pussy、The Grey Wolves 刪「據說」；Controlled Bleeding 刪「據說樂團在 2020 年解散」；Brighter Death Now 刪「據說這份對廢鐵的癡迷把他帶向工業音樂」。
+- 補洞 pubIssues 回頭改上線簡介：Hair Police（「陰森地牢噪音」是 Fact 標題非廠牌自述）、Taint（刪矛盾死訊），見 `batch-progress/add-20261104-ax1/rulings.md` 51577–51578。
+
+## ar-d-262（2026-11-04，新頂點盤線 ax2＝極端現代音樂、聲音詩、激進即興、極端電子、反結構金屬）
+- 切 35 位（扣已有介紹 2 位）。補洞 4 組、寫作 2 組。
+- **skipped 3**：Martine Viard（無國籍、無生平，聲音格只有作品層）、Mitochondrion、Lasse Marhaug（事實各只有單一來源：en 維基／挪威百科 SNL）。
+- **主線審稿 9 處**：Chopin、Gnaw Their Tongues、Pan.Thy.Monium、Antediluvian 刪「據說／據稱／據載」引導；Sachiko M 刪「據說讓她一時成為國際即興圈的焦點」；Teitanblood 刪「據載 Darkthrone 曾把他們的標誌放上專輯封面致敬」（單源）；Karkowski 引語「只有在你害怕它的時候才會傷害你」改間接引述（禁語「你」），刪「據傳弄裂馬桶、喇叭起火」軼事；Keith Rowe「據評論影響了兩代」→「被認為影響了兩代」。
+- 補洞 pubIssues 回頭改上線簡介 3 張（Impetuous Ritual、Karkowski、Tsunoda），見 `batch-progress/add-20261104-ax2/rulings.md` 51677–51678。
