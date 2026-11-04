@@ -73,7 +73,7 @@
 
 ## 五、資料來源與店面
 
-- MusicBrainz：1 req/s、UA 必帶 `dip-vinyl-shop/1.0 (kubinice06@gmail.com)`。
+- MusicBrainz：1 req/s、UA 必帶 `dip-vinyl-shop/1.0 (+https://dipvinyl.tw)`。
 - Discogs：`api.discogs.com` 公開端點不需 token；網頁會 403。
 - **店面依第 158 條用原文盤名搜當地店面**：
   `us/gb` 是預設，日本盤加 `jp`、韓國盤加 `kr`、法語 `fr`、德語 `de`、義大利 `it`、

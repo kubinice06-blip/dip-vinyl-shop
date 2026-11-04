@@ -12,7 +12,7 @@ const prev = db[key];
 if (!prev) { console.log(`⚠ previews.json 沒有這個鍵：${key}`); process.exit(1); }
 if (prev.recoveredBy) { console.log(`⚠ 這一筆已經是人工回撈的（${prev.recoveredBy}），不覆寫。`); process.exit(1); }
 
-const UA = 'dip-vinyl-shop/1.0 (kubinice06@gmail.com)';
+const UA = 'dip-vinyl-shop/1.0 (+https://dipvinyl.tw)';
 const res = await fetch(`https://itunes.apple.com/lookup?id=${cid}&country=${front}&entity=song&limit=200`, { headers: { 'User-Agent': UA } });
 if (!res.ok) { console.log(`⚠ lookup ${res.status}`); process.exit(1); }
 const j = await res.json();

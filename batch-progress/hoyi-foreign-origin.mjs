@@ -8,7 +8,7 @@
 //   不明＝MB release 都沒有日期／國別 → 策展層逐筆查 Discogs。
 // 用法：node batch-progress/hoyi-foreign-origin.mjs [--recheck-yi]   （有快取，中斷後重跑會接續）
 import fs from 'node:fs';
-const UA = 'dip-vinyl-shop/1.0 (kubinice06@gmail.com)';
+const UA = 'dip-vinyl-shop/1.0 (+https://dipvinyl.tw)';
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 const d = 'batch-progress/enum/';
 const OUT = d + 'hoyi-foreign-origin.json';

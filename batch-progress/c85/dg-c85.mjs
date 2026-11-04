@@ -1,4 +1,4 @@
-const UA='dip-vinyl-shop/1.0 (+kubinice06@gmail.com)';
+const UA='dip-vinyl-shop/1.0 (+https://dipvinyl.tw)';
 const sleep=ms=>new Promise(r=>setTimeout(r,ms));
 export async function dg(path){
   for(let i=0;i<5;i++){

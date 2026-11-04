@@ -1,5 +1,5 @@
 // 用法：node rgdet.mjs <rg-mbid> [...]
-const UA = 'dip-vinyl-shop/1.0 (kubinice06@gmail.com)';
+const UA = 'dip-vinyl-shop/1.0 (+https://dipvinyl.tw)';
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 for (const id of process.argv.slice(2)) {
   const url = `https://musicbrainz.org/ws/2/release-group/${id}?inc=releases+artist-credits+labels&fmt=json`;

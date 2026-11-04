@@ -4,7 +4,7 @@
 // 精選子系列（如「Polish Jazz」編號 1–80 那套），要查 MB 的 series 條目，不是 label 條目。
 // 用法：node 1c-series-catalog.mjs "Polish Jazz" 輸出檔.json
 import fs from 'fs';
-const UA = { 'User-Agent': 'dip-vinyl-shop/1.0 (kubinice06@gmail.com)' };
+const UA = { 'User-Agent': 'dip-vinyl-shop/1.0 (+https://dipvinyl.tw)' };
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 
 const seriesName = process.argv[2];

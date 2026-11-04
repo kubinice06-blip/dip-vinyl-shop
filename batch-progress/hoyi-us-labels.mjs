@@ -2,7 +2,7 @@
 // 逐筆抓 MB release 的 label-info，看最早那一版是不是日本系的美國字標（Paddle Wheel／ProJazz／Electric Bird／JVC JD-）。
 // 用法：node batch-progress/hoyi-us-labels.mjs batch-progress/enum/hoyi-us-labels.json（有快取）
 import fs from 'node:fs';
-const UA='dip-vinyl-shop/1.0 (kubinice06@gmail.com)'; const sleep=ms=>new Promise(r=>setTimeout(r,ms));
+const UA='dip-vinyl-shop/1.0 (+https://dipvinyl.tw)'; const sleep=ms=>new Promise(r=>setTimeout(r,ms));
 const o=JSON.parse(fs.readFileSync('batch-progress/enum/hoyi-foreign-origin.json','utf8'));
 const OUT=process.argv[2]; let cache={}; try{cache=JSON.parse(fs.readFileSync(OUT,'utf8'))}catch{}
 for (const [rg,v] of Object.entries(o)) {

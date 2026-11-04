@@ -207,7 +207,7 @@ CBS/Sony／Denon／Polydor JP／Crown 建得很少），**而 slice 的 `nReleas
   **同組裡年份相近、軌數相同的兩張，要主動比一次逐軌時長。**
 - ⚠ **`releaseType`：`EP 不收` 那一關要看 Discogs format descriptor 與 MB primary-type，
   不要看 Apple 的標示**（c-178 有一張 Apple 逐字標 `- EP`、實際是 33⅓ 轉全長 32 分的 Album）。
-- MB 守 1 req/s，UA 逐字 `dip-vinyl-shop/1.0 (kubinice06@gmail.com)`；Discogs 節流到約 1 req/3s。
+- MB 守 1 req/s，UA 逐字 `dip-vinyl-shop/1.0 (+https://dipvinyl.tw)`；Discogs 節流到約 1 req/3s。
 
 ## 七、容器會重啟，要能續跑
 

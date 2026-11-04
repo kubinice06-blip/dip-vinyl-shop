@@ -17,7 +17,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { ROOT } from './lib.mjs';
 
-const UA = 'dip-vinyl-shop/1.0 (kubinice06@gmail.com)';
+const UA = 'dip-vinyl-shop/1.0 (+https://dipvinyl.tw)';
 const RGC = path.join(ROOT, 'batch-progress/enum/jp-1-rg-cache.json');
 const ARC = path.join(ROOT, 'batch-progress/enum/jp-1-artist-cache.json');
 const batches = process.argv.slice(2);

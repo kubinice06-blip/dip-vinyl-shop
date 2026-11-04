@@ -58,5 +58,5 @@ artist／album／year／rgMbid／country／format／catno／live／note／reissu
 **退掉的（撞池、判為合輯、原盤他廠改判……）逐筆列在 rulings，附理由分類。**
 
 **續跑（容器會不定時重啟、也可能撞 API 額度）**：每做完 5 筆就把 `prop-<組>.json` 整份寫回磁碟；開工先讀它、接續補完。
-**MusicBrainz 守 1 req/s**，UA `dip-vinyl-shop/1.0 (kubinice06@gmail.com)`，503 要重試（第 28 條）。
+**MusicBrainz 守 1 req/s**，UA `dip-vinyl-shop/1.0 (+https://dipvinyl.tw)`，503 要重試（第 28 條）。
 **不要碰 git、不要動 `PROJECT_MEMORY.md`／`seed_cards.json`／KV／Firestore。**

@@ -18,7 +18,7 @@
 - 卡單裡 `identitySource: manual` 的卡沒有 MB release-group；身分以卡單 `manualEvidenceUrls` 為準，**先核對那張碟真的是這個盤名、年份、廠牌**，對不上要在 notes 與報告寫明。
 - 策展層 `curatorRisk` 的疑點逐條查；推翻策展層（年份、廠牌、掛名、盤名）要在 notes 與報告寫明。
 - 單一來源的人名、年份、銷量、獎項要交叉驗證；查不到就不寫，status 誠實標 thin。
-- 來源優先 MB／Discogs API（MB UA `dip-vinyl-shop/1.0 (kubinice06@gmail.com)`、1 req/s；Discogs 直連若 403 改用 WebFetch）、Bandcamp、各語維基、AllMusic、廠牌頁、樂評。**WebSearch 每支最多 3 次**（全工作階段共用 200 次額度）。
+- 來源優先 MB／Discogs API（MB UA `dip-vinyl-shop/1.0 (+https://dipvinyl.tw)`、1 req/s；Discogs 直連若 403 改用 WebFetch）、Bandcamp、各語維基、AllMusic、廠牌頁、樂評。**WebSearch 每支最多 3 次**（全工作階段共用 200 次額度）。
 - 不寫分數星等；媒體年終榜名次不進 facts 的主張（可寫在 notes）。
 
 ## 續跑

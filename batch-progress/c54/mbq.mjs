@@ -1,6 +1,6 @@
 // c-53 c 組：MB release-group 查詢輔助。用法：node mbq.mjs "<artist>" "<album>"
 // 或 node mbq.mjs --file queries.json
-const UA = 'dip-vinyl-shop/1.0 (kubinice06@gmail.com)';
+const UA = 'dip-vinyl-shop/1.0 (+https://dipvinyl.tw)';
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 
 async function q(artist, album, limit = 8) {

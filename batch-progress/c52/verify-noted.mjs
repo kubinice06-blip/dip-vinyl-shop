@@ -2,7 +2,7 @@
 // （例：Barong's Band 那筆自己就寫明是藝人條目、底下沒有任何 release-group）。
 // §1 要的是 release-group MBID，抄錯就等於釘了一個假身分。這裡逐個回問 MB 判定。
 import fs from 'node:fs';
-const UA = { 'User-Agent': 'dip-vinyl-shop/1.0 (kubinice06@gmail.com)' };
+const UA = { 'User-Agent': 'dip-vinyl-shop/1.0 (+https://dipvinyl.tw)' };
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 const cand = JSON.parse(fs.readFileSync('batch-progress/c52/cand.json', 'utf8'));
 const MBID = /[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}/g;

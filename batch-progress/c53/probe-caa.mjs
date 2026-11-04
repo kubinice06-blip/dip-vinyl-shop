@@ -4,7 +4,7 @@
 // 只在 group 端回真正的 404 時才下鑽到各 release；逾時或其他 HTTP 錯不下鑽，
 // 那會把「暫時打不通」誤記成「沒有封面」。
 import fs from 'node:fs';
-const UA = { 'User-Agent': 'dip-vinyl-shop/1.0 (kubinice06@gmail.com)' };
+const UA = { 'User-Agent': 'dip-vinyl-shop/1.0 (+https://dipvinyl.tw)' };
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 const MBID = /[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}/;
 

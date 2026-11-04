@@ -1,6 +1,6 @@
 // c-166 a 組 證據層：MusicBrainz release-group ＋ 轄下 release（labels/media/artist-credits）
 import fs from 'node:fs';
-const UA = 'dip-vinyl-shop/1.0 (kubinice06@gmail.com)';
+const UA = 'dip-vinyl-shop/1.0 (+https://dipvinyl.tw)';
 const DIR = '/home/user/dip-vinyl-shop/batch-progress/c166/evidence-b';
 const slice = JSON.parse(fs.readFileSync('/home/user/dip-vinyl-shop/batch-progress/c166/slice.json','utf8')).filter(x=>x.g==='b');
 const OUT = DIR+'/mb.json';

@@ -1,6 +1,6 @@
 // c-124：藝人目錄分頁（裁定 116：絕不用 inc=release-groups）。可續跑。
 import fs from 'node:fs';
-const UA='dip-vinyl-shop/1.0 (kubinice06@gmail.com)';
+const UA='dip-vinyl-shop/1.0 (+https://dipvinyl.tw)';
 const sleep=ms=>new Promise(r=>setTimeout(r,ms));
 async function mb(u,t=6){for(let i=0;i<t;i++){try{const r=await fetch(u,{headers:{'User-Agent':UA},signal:AbortSignal.timeout(30000)});if(r.ok)return r.json();if(r.status===503){await sleep(2200*(i+1));continue;}return{_http:r.status};}catch(e){await sleep(1600*(i+1));}}return{_http:'timeout'};}
 const OUT='batch-progress/c124/cat-probe.json';
