@@ -1,0 +1,32 @@
+{
+ "batch": "apex-fix-20261104",
+ "cards": 2,
+ "written": {
+  "cardCatalog": 2,
+  "kvKeys": 4,
+  "seedRows": 2,
+  "previewReady": 0,
+  "previewUnavailable": 0
+ },
+ "review": {
+  "by": "cloud-main",
+  "cards": 2,
+  "changed": [
+   "沖至|しらさぎ",
+   "楊祖珺|楊祖珺"
+  ]
+ },
+ "qa": {
+  "research": "pass",
+  "out": "pass（字數 278／251、fix-spacing 0）",
+  "prepareGate": "未跑（未新增卡）",
+  "publishedGate": "見 rulings"
+ },
+ "pendingLocal": {
+  "kv": "無",
+  "listeners": [],
+  "apexEvidence": [],
+  "genreTree": "不需（曲風未動）",
+  "albumOverrides": "batch-progress/apex-fix-20261104/album-overrides-tier.json"
+ }
+}
