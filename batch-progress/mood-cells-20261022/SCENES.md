@@ -103,6 +103,8 @@
 | 77 | md34 | funeral doom／drone doom 慢盤第二波（Esoteric、Evoken、Mournful Congregation、Skepticism、Thergothon 系；極慢、往下壓） | ✅ 上線 38／落格 38（二線約還能挖 20–30） |
 | 78 | ml59 | roots reggae 人聲慢盤第二波（ml58 收 28 高產；Twinkle Brothers、The Gladiators 慢盤、Johnny Clarke、Max Romeo 慢盤、Ras Michael、Mighty Diamonds 慢盤；店主要多 dub） | ✅ 上線 13／落格 13（主場景見底，約剩 3–5） |
 | 79 | mc48 | 美國當代作曲尖細（Elliott Carter、Milton Babbitt、Charles Wuorinen、Stefan Wolpe、Roger Sessions 晚期；mc32／mc43／mc46 已收過的去重） | ✅ 上線 31／落格 31（主場景見底，約剩 3–6） |
+| 82 | md35 | 頹靡電子：深暗 dubstep／post-dubstep 慢盤（Burial 以外：Kode9、Shackleton、Pinch、Vex'd、Kryptic Minds、Andy Stott、Demdike Stare、Raime）＋ hauntology（The Caretaker、Ghost Box 系、Leyland Kirby、Philip Jeck 冷盤）＋ witch house（Salem、oOoOO、Holy Other）（店主 11-04：多電子、少嘻哈雷鬼；只收 genres 首位 electronic） | 派→md35–36 工作階段 |
+| 83 | md36 | 頹靡電子：illbient（DJ Spooky、Sub Dub、Byzar、WordSound 系）＋ 冷 ambient techno／Berlin 慢盤（Monolake、Vladislav Delay、Porter Ricks、Köner 節拍盤、Biosphere 冷盤）＋ 慢工業電子／post-industrial ambient（Pan Sonic 靜盤、Raster-Noton 慢盤）＋ 暗 downtempo 新世代（Forest Swords、Actress、Huerco S.、Tim Hecker）（只收電子盤） | 派→md35–36 工作階段 |
 
 **暫停**：mc13 math rock、mc21 post-punk revival、mc30 minimalism（旋律清楚＝暖）、mc9／mc10／mc20／mc25／mc26 系的 synth-pop／new wave／K-pop／synthwave 續集（2026-10-23 體感標準：旋律清楚往暖，落雀躍）、mc23 art pop、ml4 系東亞續集、ml14 spiritual jazz（體感標準判冷，不是恍惚）、ml22、ml27。**重開**（體感標準下會落冷冽）：mc4、mc14、mc22、mc28。
 
@@ -146,6 +148,8 @@
 | md32 | 21961 | drone／電子極簡第二波（Kranky、Touch、Room40、Miasmah、Denovali 二線） | ✅ 上線 28／落格 25（2026-10-24；策展兩輪 71、主線汰 15、研究汰 28；文案寫 pulse／blistering／lush／旋律或人聲的汰；microsound 稀疏型與 Radigue 細長音判輕落平靜；主場景見底不再派） |
 | md33 | 22121 | 冷 post-rock／器樂慢盤第三波＋冷 slowcore 器樂 | ✅ 上線 14／落格 12（2026-10-24；策展兩輪 37、主線汰 2、研究汰 21：鼓組／嘶吼、現場、EP、聲音不符；只剩無鼓 Nadja／drone 能收；出格 Locrian 判躁、Jasper TX《Singing Stones》判輕；場景見底，剩約 2–3 張，不再派） |
 | md34 | 22281 | funeral doom／drone doom 慢盤第二波（Esoteric、Evoken、Mournful Congregation、Skepticism、Thergothon 系） | ✅ 上線 38／落格 38 |
+| md35 | 22521 | 頹靡電子：深暗 dubstep／post-dubstep 慢盤、hauntology、witch house（只收電子盤） | 派→md35–36 工作階段 |
+| md36 | 22601 | 頹靡電子：illbient、冷 ambient techno／Berlin 慢盤、慢工業電子／post-industrial ambient、暗 downtempo 新世代（只收電子盤） | 派→md35–36 工作階段 |
 
 ## 冷冽 mc（躁＋輕＋冷；門檻 x ≥ 3.3、y ≤ +0.2、z ≤ −0.3）
 
