@@ -1,0 +1,443 @@
+{
+ "group": "ax9c",
+ "factions": [
+  {
+   "id": "eu-continent-hc",
+   "zh": "歐陸早期硬核（荷、義、西）",
+   "count": 12,
+   "why": "MRR 當年評論具體描述極速／噪音化的歐陸 hardcore"
+  }
+ ],
+ "albums": [
+  {
+   "artist": "Lärm",
+   "album": "Straight on View",
+   "year": 1986,
+   "label": "One Step Ahead Records",
+   "country": "nl",
+   "faction": "eu-continent-hc",
+   "genres": [
+    "rock"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "MRR #46 稱整張 36 首、半錄音室半現場，是『raging, noisy outbursts』；樂團自述靠更多失真與更快速度掩飾技術，被維基列為最早的 thrashcore／blast beat 先驅。",
+   "listeners": 661,
+   "why": "荷蘭阿默斯福特短促極速的 thrashcore 團，這張 LP 一面棚錄一面現場共 36 首；現場面麥克風倒掉使吉他貝斯糊成一團。",
+   "moodGuess": {
+    "x": 4.9,
+    "y": 1.3,
+    "z": -1,
+    "why": "整張極速短曲加失真與糊掉的現場面，壓迫躁動"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/c94a68f8-66c3-4ba6-a9b5-8fa8fe5f4a8b",
+    "https://coverartarchive.org/release-group/c94a68f8-66c3-4ba6-a9b5-8fa8fe5f4a8b",
+    "https://www.maximumrocknroll.com/band/larm/",
+    "https://www.bacteria.nl/larm/",
+    "https://www.discogs.com/release/1832030"
+   ],
+   "mbRgMbid": "c94a68f8-66c3-4ba6-a9b5-8fa8fe5f4a8b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Larm",
+   "uncertain": "listeners 661 不能走流亡；聽感依據主要是 MRR #46 一句與樂團自述（bacteria.nl 為荷蘭 hardcore 資料站），強度屬邊緣。chk 對『Lärm』的假陽性：Alarm、Cause for Alarm 等皆為子字串誤中。iTunes 查無。"
+  },
+  {
+   "artist": "Wretched",
+   "album": "In nome del loro potere tutto è stato fatto...",
+   "year": 1983,
+   "label": "Autoproduzione",
+   "country": "it",
+   "faction": "eu-continent-hc",
+   "genres": [
+    "rock"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "MRR #7 Pushead 形容為『Lightning fast disorder』『maniacal unhesitant crushing speed』；8 首共 493 秒，自壓 7 吋。 另有 185 Miles South 評『intense blast of fuzzy guitar and bass tones』（輔證）。",
+   "listeners": 111,
+   "why": "米蘭 Wretched 的第二張自壓 7 吋，8 首約 8 分鐘，MRR 稱其比同期 Indigesti 更快更粗糙。",
+   "moodGuess": {
+    "x": 5,
+    "y": 1.4,
+    "z": -1,
+    "why": "極速失序的短曲，粗糙壓迫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/1f89a083-d999-4bc6-bf86-679474751d1f",
+    "https://www.discogs.com/release/1690283",
+    "https://www.discogs.com/master/160225",
+    "https://www.maximumrocknroll.com/review/mrr-7/in-nome-del-loro-potere-tutto-e-stato-fatto/",
+    "https://en.wikipedia.org/wiki/Wretched_(punk_band)",
+    "https://185milessouth.substack.com/p/ep-268-best-european-hardcore-7-1981"
+   ],
+   "mbRgMbid": "1f89a083-d999-4bc6-bf86-679474751d1f",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseType": "EP",
+   "genreException": "hardcore-7inch",
+   "releaseException": "1983 年義大利米蘭 hardcore 場景的自壓 7 吋，Wretched 早期代表錄音，樂團與 Indigesti 被視為義大利 80 年代 hardcore 的基礎。",
+   "queryAlias": "",
+   "uncertain": "CAA 無圖（404），封面來源用 Discogs release 1690283（有封面圖）；強度依據只有 MRR（同一網域兩篇）加維基『fast-paced』，若主線嫌第二網域不足，改判流亡（listeners 111、自壓、iTunes 無）。"
+  },
+  {
+   "artist": "Upset Noise",
+   "album": "Disperazione Nevrotica",
+   "year": 1985,
+   "label": "Upset Noise (自壓, NOISE 02)",
+   "country": "it",
+   "faction": "eu-continent-hc",
+   "genres": [
+    "rock"
+   ],
+   "apexTier": "pearl",
+   "apexWhy": "的里雅斯特自壓 7 吋，2017 年才由 No Plan Records 重發；MRR #24 稱其『stronger on manic attack and noise than on melody』；Last.fm listeners 100，iTunes 無。",
+   "listeners": 100,
+   "why": "義大利東北港市的里雅斯特的 hardcore 團，1985 年 1 月五天內錄完九首短曲、自壓 7 吋，是義大利 80 年代 hardcore 的收藏名盤。",
+   "moodGuess": {
+    "x": 4.8,
+    "y": 1.1,
+    "z": -0.9,
+    "why": "九首短促快曲，噪音感重，緊繃"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/c3b9c74d-a6bf-461e-9236-1264270d6a44",
+    "https://www.discogs.com/release/1750607",
+    "https://www.discogs.com/master/1115056",
+    "https://www.maximumrocknroll.com/band/upset-noise/"
+   ],
+   "mbRgMbid": "c3b9c74d-a6bf-461e-9236-1264270d6a44",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseType": "EP",
+   "genreException": "hardcore-7inch",
+   "releaseException": "1985 年義大利 hardcore 的自壓 7 吋，Upset Noise 最重要的獨立錄音，2017 年才由 No Plan Records 重發。",
+   "queryAlias": "",
+   "uncertain": "CAA 404，封面來源用 Discogs release 1750607；聽感描述僅 MRR 一篇加 Discogs 影片說明（非可信來源），故走流亡不走異端；iTunes 查無，Spotify 未驗；2017 重發廠 No Plan Records 無獨立說明頁可引。"
+  },
+  {
+   "artist": "Anti-Dogmatikss",
+   "album": "Rompan Filas!!!",
+   "year": 1984,
+   "label": "Anti-Dogmatikss（自製卡帶）",
+   "country": "es",
+   "faction": "eu-continent-hc",
+   "genres": [
+    "rock"
+   ],
+   "apexTier": "pearl",
+   "apexWhy": "巴塞隆納 hardcore 場景的誕生期自製 demo 卡帶，2013 年才由 BCore 壓成黑膠；MRR 1985 年評為 terrific debut，2026 年的重發評又稱 historic, savage；Last.fm listeners 7，iTunes 無。",
+   "listeners": 7,
+   "why": "1984 年巴塞隆納 Anti/Dogmatikss 的自製 demo 卡帶，11 首、最短一首 9 秒，後來被 BCore 等廠重發。",
+   "moodGuess": {
+    "x": 4.9,
+    "y": 1.2,
+    "z": -1,
+    "why": "極短的快速 thrash 曲，原始憤怒"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/646340",
+    "https://www.discogs.com/release/5328915",
+    "https://www.maximumrocknroll.com/band/anti-dogmatikss/"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": "MusicBrainz 以 Anti-Dogmatikss／Anti/Dogmatikss 搜尋 release-group 僅得 2000 年合輯《Discografía completa》（e97895a2），無《Rompan Filas!!!》卡帶或其 2013 年 BCore LP。",
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/646340",
+    "https://www.discogs.com/master/646552"
+   ],
+   "releaseType": "Album",
+   "genreException": "hardcore-7inch",
+   "releaseException": "1984 年西班牙 hardcore 最早期 demo 卡帶，Discogs 以 Album 登錄；是 Anti-Dogmatikss 最重要的錄音，樂團此後只出 7 吋與合輯。",
+   "queryAlias": "Anti/Dogmatikss",
+   "uncertain": "MB 查無此盤，封面來源 Discogs release 5328915（卡帶）或 BCore LP release 5297474；型態為 demo 卡帶，走 hardcore-7inch 例外（1980–90 年代 demo）；MRR 2026 年重發評為單一網域，另一來源無；iTunes 查無。"
+  },
+  {
+   "artist": "Declino",
+   "album": "Rivolta e negazione",
+   "year": 1983,
+   "label": "Contro Produzioni Records",
+   "country": "it",
+   "faction": "eu-continent-hc",
+   "genres": [
+    "rock"
+   ],
+   "apexTier": "pearl",
+   "apexWhy": "義大利 hardcore 早期自壓級 7 吋，MRR #10 稱其為『the best Italian hardcore outfit since INDIGESTI』；Last.fm listeners 115，iTunes 無，原版 Discogs 單張最低價逾千。",
+   "listeners": 115,
+   "why": "義大利北部 Declino 的第一張 7 吋，六首約七分鐘，之後主要靠 2003／2005 年合輯 SOA、Agipunk 重發才流通。",
+   "moodGuess": {
+    "x": 4.6,
+    "y": 1,
+    "z": -0.9,
+    "why": "短促緊湊的義式 thrash，緊繃壓迫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/3f60008d-1bf6-38e6-b98b-91591eab2ba0",
+    "https://www.discogs.com/release/1691736",
+    "https://www.maximumrocknroll.com/band/declino/"
+   ],
+   "mbRgMbid": "3f60008d-1bf6-38e6-b98b-91591eab2ba0",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseType": "EP",
+   "genreException": "hardcore-7inch",
+   "releaseException": "1983 年義大利早期 hardcore 的 7 吋，Declino 的首張錄音，樂團此後只有 split 與短 LP，無正規專輯。",
+   "queryAlias": "",
+   "uncertain": "CAA 未驗，封面來源 Discogs release 1691736；Declino 後來的 EP《Eresia》MRR 稱為 LP；與 Negazione split 《Mucchio selvaggio》（MB 登為 Album）另是別張；iTunes 查無，Spotify 未驗；『Declino』一名在 iTunes 有大量無關結果。"
+  },
+  {
+   "artist": "Kangrena",
+   "album": "Terrorismo Sonoro",
+   "year": 1983,
+   "label": "Anarchi Rekords",
+   "country": "es",
+   "faction": "eu-continent-hc",
+   "genres": [
+    "rock"
+   ],
+   "apexTier": "pearl",
+   "apexWhy": "巴塞隆納早期 hardcore 7 吋，MRR #12 稱其 raw, primitive 的快曲有效；Last.fm listeners 62，iTunes 無，1999 年才由 Tralla Records 重發。",
+   "listeners": 62,
+   "why": "巴塞隆納 Kangrena 的首張 7 吋（紅色透明黑膠），五首約八分半，其中一首為改編聖誕歌曲。",
+   "moodGuess": {
+    "x": 4.3,
+    "y": 0.9,
+    "z": -0.7,
+    "why": "原始粗糙的快曲，部分慢而無旋律的曲子拉低"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/4097d0f9-25df-37bb-a2a6-6d0ea4e4e5aa",
+    "https://www.discogs.com/release/7747828",
+    "https://www.discogs.com/master/382777",
+    "https://www.maximumrocknroll.com/band/kangrena/"
+   ],
+   "mbRgMbid": "4097d0f9-25df-37bb-a2a6-6d0ea4e4e5aa",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseType": "EP",
+   "genreException": "hardcore-7inch",
+   "releaseException": "1983 年西班牙最早的 hardcore 7 吋之一，Kangrena 的首張錄音，樂團此後多為卡帶與 split。",
+   "queryAlias": "",
+   "uncertain": "聽感描述薄（MRR 只有一篇，評價褒貶並陳）；若主線嫌弱可汰換；MB 的 CAA 未驗，封面來源 Discogs release 7747828；iTunes 無，1999 年 Tralla 重發版是否上串流未驗。"
+  },
+  {
+   "artist": "Cheetah Chrome Motherfuckers",
+   "album": "Furious Party",
+   "year": 1985,
+   "label": "Belfagor Records",
+   "country": "it",
+   "faction": "eu-continent-hc",
+   "genres": [
+    "rock"
+   ],
+   "apexTier": "pearl",
+   "apexWhy": "皮薩／義大利早期 hardcore 7 吋，Belfagor 廠牌第一張（BEL 001）；MRR #25 Pushead 稱『A very strong Italian release』；Last.fm listeners 214，iTunes 無。",
+   "listeners": 214,
+   "why": "Cheetah Chrome Motherfuckers 第二張 EP，一半在柏林 Music Lab、一半在比薩 Victor Charlie 錄成，4 曲，B 面為 Boz Lapinski 加效果的長曲。",
+   "moodGuess": {
+    "x": 4.2,
+    "y": 0.9,
+    "z": -0.8,
+    "why": "實驗性 thrash，張力高但非整張極速"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/c5d0d92f-272a-3f41-8cb6-8eb055192359",
+    "https://www.discogs.com/release/1069605",
+    "https://www.maximumrocknroll.com/band/cheetah-chrome-motherfuckers/"
+   ],
+   "mbRgMbid": "c5d0d92f-272a-3f41-8cb6-8eb055192359",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseType": "EP",
+   "genreException": "hardcore-7inch",
+   "releaseException": "1985 年義大利 hardcore 的 7 吋，Cheetah Chrome Motherfuckers 最重要的錄音之一，吉他手 Dome La Muerte 後來成為義大利地下的重要人物。",
+   "queryAlias": "",
+   "uncertain": "『Dome La Muerte 後來成為...』是 Discogs 署名事實以外的推論，寫作勿寫；2017 年 Area Pirata 出《The Furious Era 1979–1987》合輯，是否上串流未驗（iTunes 無）；MRR 描述為『experimental thrash』，非整張高強度，故不走異端；CAA 未驗，封面來源 Discogs release 1069605。"
+  },
+  {
+   "artist": "Peggio Punx",
+   "album": "La città è quieta... ombre parlano",
+   "year": 1984,
+   "label": "Peggio Records",
+   "country": "it",
+   "faction": "eu-continent-hc",
+   "genres": [
+    "rock"
+   ],
+   "apexTier": "pearl",
+   "apexWhy": "亞歷山德里亞自壓 7 吋，限 1000 張；MRR #11 稱其為『frenetic, disjointed thrash』並有『exceptionally loud snare』；Last.fm listeners 16，iTunes 無。",
+   "listeners": 16,
+   "why": "義大利北部 Peggio Punx 的第二張自壓 7 吋，1983 年 9 月在亞歷山德里亞的占屋空間錄音，六首合計約六分鐘。",
+   "moodGuess": {
+    "x": 4.4,
+    "y": 1,
+    "z": -0.8,
+    "why": "斷裂狂亂的快速短曲，鼓聲突出"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/e68e7bfe-58aa-3472-a7fe-4681427b3e26",
+    "https://www.discogs.com/release/1729580",
+    "https://www.maximumrocknroll.com/band/peggio-punx/"
+   ],
+   "mbRgMbid": "e68e7bfe-58aa-3472-a7fe-4681427b3e26",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseType": "EP",
+   "genreException": "hardcore-7inch",
+   "releaseException": "1984 年義大利 hardcore 的自壓 7 吋，Peggio Punx 最具辨識度的早期錄音，限量 1000 張，之後才有合輯重發。",
+   "queryAlias": "",
+   "uncertain": "listeners 16 偏低，可能因名稱寫法（省略號）造成低估；2002、2013 年有 Discography／30 anni di rumori 合輯與 box set 重發，是否上串流未驗（iTunes 無）；MRR 描述為 frenetic, disjointed，非整張高強度，故走流亡；CAA 未驗，封面來源 Discogs release 1729580。"
+  },
+  {
+   "artist": "Vorkriegsphase",
+   "album": "Scheiss Krieg",
+   "year": 1983,
+   "label": "Rock-O-Rama Records",
+   "country": "de",
+   "faction": "eu-continent-hc",
+   "genres": [
+    "rock"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "MRR #10 Jeff Bale 稱『The most brutal German thrash yet』；185 Miles South 稱像『a Discharge 33RPM record played on 45RPM』，並說它可能是整場票選中最兇暴的一張；三首共約 5 分半。",
+   "listeners": 62,
+   "why": "巴伐利亞 Vorkriegsphase 的第一張 7 吋，三首、全長約五分半，被當年的 MRR 與後來的歐陸 hardcore 7 吋票選文稱為最兇暴的一批。",
+   "moodGuess": {
+    "x": 5,
+    "y": 1.5,
+    "z": -1.2,
+    "why": "極速粗糙的噪音化 thrash，壓迫感強"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/5700ba7c-b7e8-3170-973b-5f9754377e0d",
+    "https://coverartarchive.org/release-group/5700ba7c-b7e8-3170-973b-5f9754377e0d",
+    "https://www.discogs.com/release/598466",
+    "https://www.maximumrocknroll.com/band/vorkriegsphase/",
+    "https://185milessouth.substack.com/p/ep-268-best-european-hardcore-7-1981"
+   ],
+   "mbRgMbid": "5700ba7c-b7e8-3170-973b-5f9754377e0d",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseType": "EP",
+   "genreException": "hardcore-7inch",
+   "releaseException": "1983 年西德 hardcore 最兇暴的 7 吋之一，Vorkriegsphase 的首張錄音，Rock-O-Rama 發行。",
+   "queryAlias": "Vorkriegsphase Scheiss Krieg EP",
+   "uncertain": "第二來源為部落格（185 Miles South）加 MRR 單一評論；Discogs 無聽感描述。Rock-O-Rama 並非極小廠，但 iTunes 無串流、listeners 62，備援可改流亡。"
+  },
+  {
+   "artist": "Zyklome A",
+   "album": "Repression EP",
+   "year": 1983,
+   "label": "Punk Etc.",
+   "country": "be",
+   "faction": "eu-continent-hc",
+   "genres": [
+    "rock"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "MRR #11 Pushead 形容為『Manic explosions of blasting Belgian hardcore that fracture the sound barrier』；185 Miles South 稱 Zyklome A 『super fast, raging』；Zyklome A 與 Moral Demolition 各三首的 split 7 吋。",
+   "listeners": 23,
+   "why": "比利時 Punk Etc. 廠牌的 split 7 吋（HC 10），Zyklome A 一面三首以極快速度與撕裂吉他著稱，被 MRR 稱『thundering chaotic excitement』。",
+   "moodGuess": {
+    "x": 5,
+    "y": 1.4,
+    "z": -1,
+    "why": "極速狂亂的比利時 speedcore，壓迫躁動"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/91abc73d-9100-4082-be26-adfd95e53f95",
+    "https://coverartarchive.org/release-group/91abc73d-9100-4082-be26-adfd95e53f95",
+    "https://www.discogs.com/release/451573",
+    "https://www.maximumrocknroll.com/band/zyklome-a/",
+    "https://185milessouth.substack.com/p/ep-268-best-european-hardcore-7-1981"
+   ],
+   "mbRgMbid": "91abc73d-9100-4082-be26-adfd95e53f95",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseType": "EP",
+   "genreException": "hardcore-7inch",
+   "releaseException": "1983 年比利時 hardcore 的 split 7 吋，是 Zyklome A 與 Moral Demolition 最重要的早期錄音，也是比利時 hardcore 場景最早被 MRR 與國際注意的唱片之一。",
+   "queryAlias": "Zyklome A / Moral Demolition Repression",
+   "uncertain": "split 兩面各一團，簡介需分開講；Moral Demolition 在部落格被評為『Pretty forgettable』，與 MRR 的『thrash treasure』相反。卡面藝人用 Zyklome A（MB 順序）。第二來源為部落格。listeners 23；Zyklome A 的 LP《Made In Belgium》listeners 325，MRR #20 Pushead 稱 Belgian speedcore at its finest，因同藝人只收一張未提名。"
+  },
+  {
+   "artist": "U.B.R.",
+   "album": "Corpus Delicti",
+   "year": 1984,
+   "label": "Attack Punk Records",
+   "country": "si",
+   "faction": "eu-continent-hc",
+   "genres": [
+    "rock"
+   ],
+   "apexTier": "pearl",
+   "apexWhy": "盧比安納（南斯拉夫）hardcore 團的義大利廠牌 7 吋（Attack Punk，7th attack），絲印、手工封套；185 Miles South 稱『a killer 7” with memorable moments all over it』；Last.fm listeners 181，iTunes 無，2008 年才由 Ne! Records 重發。",
+   "listeners": 181,
+   "why": "斯洛維尼亞（當時的南斯拉夫）盧比安納的 hardcore 團，1983 年 10 月在盧比安納—波隆那錄音，義大利 Attack Punk 發行，七首約十分鐘。",
+   "moodGuess": {
+    "x": 4.3,
+    "y": 0.9,
+    "z": -0.8,
+    "why": "快速短曲，略帶旋律感的東歐 hardcore"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/0d6de710-69b4-3fa4-a1c4-be77215a56df",
+    "https://www.discogs.com/release/1223230",
+    "https://www.discogs.com/master/206426",
+    "https://185milessouth.substack.com/p/ep-268-best-european-hardcore-7-1981"
+   ],
+   "mbRgMbid": "0d6de710-69b4-3fa4-a1c4-be77215a56df",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseType": "EP",
+   "genreException": "hardcore-7inch",
+   "releaseException": "1984 年南斯拉夫（斯洛維尼亞）最早被國際 hardcore 場景注意的 7 吋之一，U.B.R. 最重要的早期錄音，義大利 Attack Punk 發行。",
+   "queryAlias": "UBR Corpus Delicti",
+   "uncertain": "MRR 查無 U.B.R. 頁（404），評價僅部落格一篇，故走流亡；CAA 未驗，封面來源 Discogs release 1223230；MB 的 first-release-date 1984；『Corpus Delicti』也有同名其他藝人專輯，核對時以 U.B.R. 為準。"
+  },
+  {
+   "artist": "B.G.K.",
+   "album": "White Male Dumbinance",
+   "year": 1984,
+   "label": "Vögelspin Records",
+   "country": "nl",
+   "faction": "eu-continent-hc",
+   "genres": [
+    "rock"
+   ],
+   "apexTier": "pearl",
+   "apexWhy": "荷蘭 B.G.K. 的第二張 EP，MRR #15 稱『one unrelenting thrasher after another』並說『This one is a must』；Last.fm listeners 185，iTunes 無；首刷 1,500 張。",
+   "listeners": 185,
+   "why": "荷蘭 B.G.K. 1984 年 4 月三天內在 Joke's Koeienverhuurbedrijf 錄成的 8 首 7 吋，約 11 分鐘，首刷 1,500 張。",
+   "moodGuess": {
+    "x": 4.6,
+    "y": 1,
+    "z": -0.7,
+    "why": "快而緊的荷蘭 hardcore，帶鉤子"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/c5dfb39f-5753-3e20-b3da-5b6d0f016a1d",
+    "https://coverartarchive.org/release-group/c5dfb39f-5753-3e20-b3da-5b6d0f016a1d",
+    "https://www.discogs.com/release/1141440",
+    "https://www.maximumrocknroll.com/band/bgk/"
+   ],
+   "mbRgMbid": "c5dfb39f-5753-3e20-b3da-5b6d0f016a1d",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseType": "EP",
+   "genreException": "hardcore-7inch",
+   "releaseException": "1984 年荷蘭 hardcore 的 7 吋，B.G.K. 最具代表性的早期錄音，1999 年才由 Alternative Tentacles 收入合輯《A Dutch Feast》。",
+   "queryAlias": "BGK",
+   "uncertain": "1999 年 Alternative Tentacles 合輯《A Dutch Feast》收錄 BGK 全部作品（nl 維基），該合輯是否上串流未驗（iTunes 無）；B.G.K. 在 AT 與 Radical Records 美版流通較廣，『極小廠』條件偏鬆，listeners 185 是唯一硬依據；MRR 頁曾以 /band/bgk/ 取得內容。"
+  }
+ ],
+ "notes": [
+  "ax9c 提名 12 張：heresy 4（Lärm、Wretched、Vorkriegsphase、Zyklome A）、pearl 8（Upset Noise、Anti-Dogmatikss、Declino、Kangrena、Cheetah Chrome Motherfuckers、Peggio Punx、U.B.R.、B.G.K.），另 none 6 張只留研究稿（Neuroot、Indigesti、Raw Power、Eskorbuto、Negazione、Kina）。",
+  "全部為 hardcore-7inch 例外（EP／7 吋／demo 卡帶）除 Lärm《Straight on View》LP；Anti-Dogmatikss 為 demo 卡帶、MB 查無，走 mbAbsenceProof。",
+  "四張 heresy 的強度證據都偏邊緣：第二網域多為 185 Miles South 部落格（輔證）或維基缺引註，主線可視情況降為 pearl（Wretched 111、Vorkriegsphase 62、Zyklome A 23 皆為有效 listeners，Lärm 661 不行）。",
+  "沒提：荷／比／德／義之外的東歐（波蘭 Siekiera、Dezerter 卡池已有；Polska Mafia 2025 年 MRR 評為 Minor Threat 系，非噪音化）；Agathocles、Cripple Bastards 屬 grind，listeners 過高且證據薄；Neuroot《Plead Insanity》iTunes 有串流。",
+  "西班牙／葡萄牙／法國：只查到 Kangrena、Anti-Dogmatikss、Eskorbuto；法、葡未找到可信聽感描述。",
+  "Zyklome A 的 LP《Made In Belgium》MRR #20 稱『Belgian speedcore at its finest』，listeners 325，同藝人只收一張，改選 Repression EP；主線若要改收 LP 可直接換。"
+ ]
+}
