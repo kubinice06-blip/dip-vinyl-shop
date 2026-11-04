@@ -769,3 +769,28 @@
 - 派工補充：新增 `prompt-research-extra-s12.md`／`prompt-writer-extra-s12.md`（流亡節沿用 s7／s8／s11；異端節沿用 heresy-addendum 與 s7；ad-24 研究層先讀 ax1／ax2 上架時的研究稿當起點、出處逐條確認；舊稿鉤子開頭不沿用）。
 - **尾批 ad-24 的範圍（主線重算）**：seed 頂點卡不在 `worklist.json` 的 57 張＝Beyond《再見理想》（已照新規，跳過）＋《台客的復仇》（店主定稿，跳過）＋ax5 13 張＋ax6 18 張（已照 apex-desc-base 寫，跳過）＋ax1 13 張＋ax2 11 張。第 0 步由主線檢查這 24 張的現行簡介：全是舊鉤子公式（冷知識開頭、前兩句沒講極端在哪裡、盤號目錄號發行日佔大半），**24 張全判 rewrite**；已併進 `worklist.json`（標 `tail: "ad-24"`）、`triage.json`、`batches.json`。
 - **ad-23 主線補查**：Free Enterprize《The Eye of the Beholder》只有 Discogs（release 10127911、master 1702214 兩筆同為 1980 美國不掛廠牌 LP，風格標籤 Acid Rock／Folk，兩位表演者 John Peebles、Tony Frank，14 首、無曲長），MusicBrainz 無條目。裁定：薄寫到 200 字附近，只寫是什麼、私壓無廠牌、沒有再版紀錄、編制與曲目結構，風格只寫「路數偏 acid rock 與民謠」，不寫「為什麼值得聽」以外沒有證據的評價。
+
+### ad-23 研究與寫作
+
+- 研究 3 Sonnet（WebSearch a 14／b 13／c 11 次）、寫作 2 Opus。coverage none 只有 Free Enterprize sound（裁定見上）。多數卡沒有具名樂評，地位靠 Acid Archives（經 Bad Cat／Branco 轉引）、收藏指南、再版廠頁與 Discogs 備註；賣家措辭（holy grail、tax scam label）不寫。
+- 研究層推翻舊稿的主要錯誤（新稿未沿用）：Ghostdance「只有兩人」「folk rock 摻 acid」（7 人加伴唱，搖滾混雷鬼、新浪潮、鄉村）；David Lewis「迷幻 folk rock」（power pop、鄉村搖滾加木吉他 demo）；Jeremy Dormouse「原版約 500 張」（500 是 2001 Void 再版）；Circulation「最後演出 1969-07-08」「Nicholas Wates」；Smack「一夜成軍」「歡迎舞會」「廣告配音錄音室」「四軌」；Ian A. Anderson「Pick Withers 後來進 Dire Straits」「第四張 LP」；Joe Bonner「五重奏」「整張調式爵士」；Probe「六首原創加一首 Steve Miller」（8 首）；Mtume「父親是 Jimmy Heath」未查證；Thornton「四人 bata、三人迦納」（寫七位打擊樂手）。
+- **卡池資料疑點（未動 seed）**：Probe《Direction》seed 1971 與 Discogs 主頁／MusicBrainz 同，2009 Still Looking 再版與賣場標 1969（簡介照 1971）。
+- 機器 QA：`qa-batch research ad-23`、`out ad-23` 全部通過；fix-spacing 0；字數 225–280。
+
+### 主線審稿 ad-23（2026-11-04，19 張逐張讀、逐句對研究稿；加問「讀完知不知道它憑什麼是這一級」）
+
+改 5 處（3 張，`review-ad-23.json`）：
+
+- `ghostdance|ghostdance`：「由 Root River 出版。」→「由 Root River 出版，樂團的其他資料幾乎查不到。」。前兩句缺「為什麼少有人聽」；研究稿 status 第 1 條（Bad Cat：網路上查不到這團多少資料）
+- `ghostdance|ghostdance`：「各寫一半的 12 首、輪流主唱。」→「各寫一半的 12 首。」；「，另有節奏組、鍵盤與伴唱。」→「。」。審稿補句後壓字（292→275）
+- `smack|smack`：「又先後重新發行，才在收藏圈之外被聽到。」→「又先後重新發行。」。「才在收藏圈之外被聽到」是推論，無出處
+- `princess flower and the moon rays|dreaming the magic of your maya`：「加收 1970 年在紐約錄下的未發行曲，才有較多人聽到。」→「加收 1970 年在紐約錄下的未發行曲。」。同上，推論
+
+研究稿同步：改動都是補流通事實或刪推論，未動事實，研究稿不必改。其餘 16 張逐張審過，未改字。第五問：19 張前兩句都講出流通狀況（私壓無廠牌、約 51／50／100／150／800 張、小廠 Muse／Moers／JCOA 沒有再版紀錄、自營廠現場賣、沒寄宣傳盤）與值得聽的事實（Wah Wah、Shadoks、Tone Arm、Void、Branco、Big Pink、Vivid Sound、Wohn、Still Looking、Bonfire、Cherry Tree 再版；Pharoah Sanders 合作；接替 Coltrane；Strata-East 第一張領隊作；第三世界音樂與爵士的結合）。另核對：Rin Eric「loner folk 最受追捧的曲子之一」出自 Patrick Lundborg《Acid Archives》（經 Branco 文案轉引）；Fairy Tale「歐洲收藏圈最搶手之一」出自 Vinyl Antiquity（Blake Mitchner 2013）；Mtume「黑人民族主義音樂的重要記錄」出自 blogthehum（Bradford Bailey 2016）；Thornton「第三世界音樂與美式爵士結合得很完整」出自 Rolling Stone Jazz Record Guide（Fred Goodman）；Jeremy Dormouse「極其稀有」出自收藏指南《Dreams, Fantasies and Nightmares》；Drnwyn「稀有」出自 Bad Cat。都是單一來源，寫「被視為」、不用「常」。
+
+### ad-23 上線
+
+- `kv-token-check` 通過；舊值存 `kv-before-ad-23.json`（38 鍵，19 個非 null）。
+- bulk put 19 鍵（desc2 19；無 CJK 卡、無原有 desc4），wrangler 印 `Success!`；`verify-wave-kv 20261104 ad-23` 19/19 逐字一致。
+- `front-check ad-23`：19/19 前台為新稿，CURATED 0。
+- manifest 同步 19 處（`onboarding-manifest-add-20261104-ax3-20261104.json`）。
