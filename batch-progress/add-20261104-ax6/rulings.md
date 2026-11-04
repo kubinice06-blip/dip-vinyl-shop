@@ -28,3 +28,12 @@
 - **52044** Koenig BVHAAST：none、建議汰換。學院派電腦電子音樂，無極端證據（Wire 1998 僅列被忽略唱片）。
 - **52045** Nitsch《Island》：none、建議汰換。無音量／長度數字，版本年份互相矛盾（1980／1985／1989）。
 - 備註：本組 WebSearch 用 2 次（Nitsch、Evangelisti）；多個維基／AllMusic／Discogs 頁 404／403，facts 未達 8 條。
+
+## 研究 d 組
+- **52031** Dragged Into Sunlight《Hatred for Mankind》：heresy（邊緣）。Blabbermouth 稱 abrasive／corrosive、Hellbound 稱數年最醜陋；但 Blabbermouth 也說旋律使其較易入耳。寫作勿用封號。
+- **52032** Havohej《Dethrone the Son of God》：none，建議汰換。僅兩個部落格／專站，無可信樂評。MB 首發 1993-05 Candlelight。
+- **52033** Bunkur《Bludgeon》：none，建議汰換。評論歸為 drone doom，無極端描述。
+- **52034** Pissgrave《Suicide Euphoria》：none，建議汰換。評論稱傳統老派死金屬、並非難以入口；廠牌實為 Profound Lore（非 Hells Headbangers）。
+- **52035** Kagel《Acustica》：heresy。MusicWeb「assault the ear」＋DG 文案；證據偏少但足。
+- **52036** Zeitkratzer《WHITEHOUSE electronics》：heresy。Cyclic Defrost＋Musique Machine；與卡池 Whitehouse《Bird Seed》曲目重疊，藝人鍵不同，留給主線裁定。
+- **52037** Francisco López《Untitled #360》：none，建議汰換。單一來源（Brainwashed，頁讀不到）、MB 無封面。
