@@ -11,11 +11,12 @@
    - 《Cheshire Cat》0a467c9c：1995-02-17 Cargo（條碼 723248613626），鎖原版。Apple 頁 releaseDate 寫 1994-02-17 為上架資料錯誤，不採。
    - 《Dude Ranch》19b6b24f：MB 最早日期 1997-04-14（澳洲版 16 軌）；鎖美國 1997-06-17 Cargo／MCA 15 軌（Apple 1440844811 同）。年份同為 1997。
 3. **三軸**（§0.8.1 錨點，worker 機器值僅參考）：
-   - 《Buddha》3／2／2 common；《Cheshire Cat》3／2／2 common；《Dude Ranch》4／1／2 rare。
+   - **定案**：《Buddha》3／2／3 rare；《Cheshire Cat》3／2／3 rare；《Dude Ranch》4／1／3 uncommon。
    - 經典度：Dude Ranch 是公認代表作之一（RIAA 白金、〈Dammit〉Modern Rock Tracks 第 11 名）→ 4，與池內 Enema／TOYPAJ 一致；Buddha（demo 再發）與 Cheshire Cat（首作、評價零散）有明確地位但非代表作 → 3。
    - 冷門度：L 248k／465k／1.07M，正規發行、全面上串流 → 2／2／1；下限不觸發。
    - **硬蕊度 2**：開工時 origin/main 進來另一工作階段的 commit 3c635b4e0（店主：「他們的歌明明很硬蕊，硬蕊只有一顆星？」池內四張 1→2）。本批三張一律 2；早期兩張更粗更快，但沒有長篇／即興／不協和，不到 3。Dude Ranch 因此由初判 4/1/1 common 改 4/1/2 rare，card_catalog 已重推。
-4. **頂點**：三張皆一般卡（經典 ≤4、冷門 ≤2、硬蕊 2）。
+   - **再改 3**：收工 fetch 時 origin/main 又進來 commit e7581478f（店主：「聽了很躁、很吵，應該更高」，池內四張 2→3）。本批三張同步 3，seed 字串替換 3 列、card_catalog 重推 3/3、published gate 重跑 0 error。
+4. **頂點**：三張皆一般卡（經典 ≤4、冷門 ≤2、硬蕊 3）。
 5. **封面**：三張 CAA RG front，主線目視（Buddha 1998 綠佛像、Cheshire Cat 暹羅貓、Dude Ranch 黑牛）。
 6. **試聽**：三張 Apple TW ready（collectionExplicitness 皆 explicit、無 cleaned 雙胞胎）：Buddha 第 1 軌〈Carousel〉、Cheshire Cat 第 2 軌〈M+M's〉、Dude Ranch 第 3 軌〈Dammit〉。走靜態路徑，不需 album_overrides。
 7. **流程縮放**：3 張批，研究 1 組（Sonnet，WebSearch 4 次，facts 12／12／13），hook 省略、寫作與審稿由主線做（照 add-20261104 先例的新寫法）。
