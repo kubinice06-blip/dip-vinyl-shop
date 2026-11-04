@@ -45,3 +45,5 @@
 - 51715 Princess Flower：2012 Wah Wah 重發加了 1970 年未發行 C、D 面並以 Pataphysician Orchestra 署名；上架以 1968 年六首原版為準。Daevid Allen 掛名僅 Discogs 單一來源，寫作層用「團員之一」。
 - 51716 Smack 壓量衝突：Discogs 版本註記約 150 張、藝人簡介約 2000 張，寫作層避免寫確切數字。Probe 年份：Veamusic 文案 1969，Discogs 與 MB 1971，採 1971。
 - 51717 moodGuess 存疑：Inner Dialogue（曲目多為流行翻唱，含〈Raindrops Keep Fallin On My Head〉，迷幻成分薄）。
+- 51775 b 組：Inner Dialogue《Friend》Ranwood 是商業廠牌、2010 有韓日正式 CD 再發，轉一般卡；其餘 8 張照採 pearl（考古廠黑膠／CD 重發不算串流再發）。Smack 壓量 150／2000 兩說衝突，正文不寫數字；Princess Flower 以 1968 六首原版為準，Daevid Allen 只寫「團員之一」。
+- 51776 本批定案 26 張：pearl 21、一般 5（Stefan Gnys、Ebony Rhythm Funk Campaign、Heaven & Earth、Prince Lasha Ensemble、Inner Dialogue）。
