@@ -1,5 +1,16 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-04｜dip-vinyl-shop｜新頂點盤線 ax5：異端 109 → 122（升格 6＋新上架美國自由爵士 7）
+
+- **店主 11-04**：撤銷「不收能量型自由爵士」，自由爵士／即興中高強度、無調、噪音化的代表作可進異端，但仍要可信資料支持具體極端特徵。ax5 管卡池既有卡升格＋新上架美國自由爵士；ax6（另一工作階段）管美國以外的新藝人。
+- **升格 6／32**：Frank Lowe《Black Beings》、Frank Wright Trio、Charles Gayle《Consecration》、Ayler《Bells》（硬蕊 4→5）、Dave Burrell《Echo》、Ornette《Free Jazz》。Sun Ra《Magic City》、Globe Unity、Sunny Murray、Sharrock、Cyrille、SME、LJCO 等樂評本身稱有結構／易入耳，none。流亡、殿堂卡不轉異端；Peter Kowald 讓給 ax6。
+- **新上架 7（全 heresy）**：Alan Silva《Luna Surface》、Milford Graves《Bäbi》、Flaherty & Corsano《The Hated Music》、William Hooker《Hard Time》、Little Women《Throat》、Gato Barbieri《In Search of the Mystery》、Sun Ra《Strange Strings》。三輪策展提名 42、研究 30、汰 23（判 none 不轉一般卡）。
+- **寫入**：KV 13 鍵（升格舊值存 `kv-before-ax5u.json`）回讀 13/13、前台 13/13；card_catalog 13（tier＋apex）；seed 新增 7 列、改 6 列；試聽 ready 4／unavailable 3；Discogs 封面 2 張登錄；子曲風／曲風樹／抽卡封面重建；情緒評分 `score-ax5` 7 張（build-card-moods 錨點 104/104）。
+- **藝人介紹**：ar-d-266 上線 4 位（skipped 0），Sun Ra and His Astro Infinity Arkestra 走別名鍵；ar-d-267 未用。
+- **驗證**：prepare／published gate 0 error；對 origin 224 分支 seed 去重 0 撞；同級每藝人一張 0 重複。審稿 3 處（`batch-progress/add-20261104-ax5/rulings.md`）。
+- **留給本機**：`album_overrides.tier` 13 張用後台「依卡池同步頂點旗標」（清單 `album-overrides-tier.json`＋manifest）。研究稿記下的未升格卡舊簡介疑點（Lehn/Schmickler《Bart》時長 30:10、曲名〈Du Funktion〉；Oxley《Ichnos》〈Cadilla〉是四重奏）另排修。
+- **主要檔案**：`batch-progress/add-20261104-ax5/`、`onboarding-manifest-add-20261104-ax5-20261104.json`、`seed_cards.json`、`desc-tools/batches/{cards,research,output}/{ax5u,add-20261104-ax5}*`、`batch-progress/mood-axes/score-ax5/`、`data/artist-intros/*`。
+
 ### 2026-11-04｜dip-vinyl-shop｜頂點卡簡介重寫 s6：ad-11、ad-12 上線 60 張（第一批異端）
 
 - **內容**：ad-11（自由爵士、grindcore／技術死金、現代作曲錄音、日本噪音、Metal Machine Music、Trout Mask Replica、Scott Walker 等）、ad-12（AMM、Braxton、Zorn 系、工業／power electronics、具象與電子原音、drone／doom、黑金屬、不失者、零與聲音解放組織等）各 30 張，照 `apex-desc-base.md` 重寫。新增 `prompt-heresy-addendum.md`：研究層每張加「極端的具體證據」「當時反應／後來評價」各 2 條，寫作前兩句寫極端在哪裡與為何被認真看待，出處只放 facts。研究 3 Sonnet×2 批（WebSearch 57 次＋主線 2 次）、寫作 2 Opus×2 批。
