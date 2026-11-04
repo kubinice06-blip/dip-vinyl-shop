@@ -16,3 +16,6 @@
 - 51950 新卡判 none 的不照一般卡上架，直接汰換（本線目的就是補異端；一般卡要另走 writer-base 鉤子流程，成本不划算）。
 - 51951 研究 c 組（ax5u 23–32）：heresy 1（Ornette《Free Jazz》）、none 9。主線同意 Free Jazz：雖有貝斯鼓的律動，但約 37 分鐘不間斷的雙四重奏集體即興、當年 Down Beat 雙評五星／零星的兩極反應，是可信的「當時被當成噪音」證據；Ornette 殿堂是《The Shape of Jazz to Come》，跨級可以。Ware《Cryptology》、McPhee、Revolutionary Ensemble、Mitchell 兩張、Marion Brown 照研究判 none（spiritual／點描／有律動，缺極端證據）；Fuchs、Gustafsson、Noetinger 查無樂評，none。
 - 51952 研究 b 組（ax5u 12–22）：heresy 0、none 11。主線照判。Cyrille《What About?》、SME《Karyobin》、LJCO《Ode》樂評本身稱易入耳／低音量／搖擺，明確 none；Ichnos、Bart、Wooley/Wright 邊緣但證據只有一個網域或只講延伸技巧不講強度，不升；Курёхин、Butcher、Peter Evans、Bergman 查無極端證據。研究稿記下的舊簡介疑點（Bart 時長 30:10、曲名〈Du Funktion〉；Ichnos〈Cadilla〉為四重奏）不屬本批改稿範圍（未升格的卡不重寫），列進 PR 說明給後續修。
+- 51953 研究 a 組（ax5u 1–11）：heresy 5（Frank Lowe《Black Beings》、Frank Wright Trio、Charles Gayle《Consecration》、Albert Ayler《Bells》、Dave Burrell《Echo》）、none 6。Frank Wright 擇一留 Trio（ESP 1966），《One for John》none。Sun Ra《The Magic City》、Globe Unity、Sunny Murray、Sharrock《Monkey-Pockie-Boo》、Noah Howard《The Black Ark》研究稿的樂評本身講「經典／有組織／旋律好哼」，照判 none——撤銷「能量型」排除不等於自由爵士自動入列，還是要有具體極端證據。
+- 51954 Ayler《Bells》accessibility 4 → 5（單曲 20 分鐘不間斷集體即興、Down Beat 當年零星、Penguin 稱強烈到聽完要喘口氣）；邊緣但兩網域具名，收。Ayler 殿堂是《Spiritual Unity》，跨級可以。
+- 51955 **升格合計 6 張**（a 5＋c 1）。升格命中率 6／32：卡池裡的自由爵士多半是「前衛但聽得下去」那一層，真正以噪音／尖嘯見長的早已在異端（Doyle、Brötzmann、Ascension、Borbetomagus）。缺口改由新卡補。
