@@ -1604,7 +1604,7 @@
    "ratings": {
     "classic": 4,
     "obscurity": 2,
-    "accessibility": 2,
+    "accessibility": 3,
     "listeners": 431389,
     "source": "manual:audit-20261102",
     "checkedAt": "2026-11-03T00:00:00Z",
@@ -1616,9 +1616,15 @@
      "checkedAt": "2026-08-31T00:00:00.000Z",
      "rarity": "uncommon"
     },
-    "note": "全池稽核 audit-20261102（方案 C）：樂迷鍾愛的首張，但正典地位在 White Blood Cells／Elephant；藝人代表作級，非殿堂｜L=431389"
+    "note": "全池稽核 audit-20261102（方案 C）：樂迷鍾愛的首張，但正典地位在 White Blood Cells／Elephant；藝人代表作級，非殿堂｜L=431389",
+    "previousAccessibility": {
+     "accessibility": 2,
+     "rarity": "rare",
+     "at": "2026-11-04"
+    },
+    "loudFloorNote": "硬蕊度音量下限第二輪 grunge／alt／emo／post-punk（2026-11-04）：粗糙失真車庫藍調"
    },
-   "rarity": "rare",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1669,12 +1675,18 @@
    "ratings": {
     "classic": 4,
     "obscurity": 1,
-    "accessibility": 2,
+    "accessibility": 3,
     "listeners": 1103979,
     "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "previousAccessibility": {
+     "accessibility": 2,
+     "rarity": "rare",
+     "at": "2026-11-04"
+    },
+    "loudFloorNote": "硬蕊度音量下限第二輪 grunge／alt／emo／post-punk（2026-11-04）：重失真、吼唱的硬搖滾 alt"
    },
-   "rarity": "rare",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -4247,12 +4259,18 @@
    "ratings": {
     "classic": 4,
     "obscurity": 1,
-    "accessibility": 2,
+    "accessibility": 3,
     "listeners": 752358,
     "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "previousAccessibility": {
+     "accessibility": 2,
+     "rarity": "rare",
+     "at": "2026-11-04"
+    },
+    "loudFloorNote": "硬蕊度音量下限第二輪 grunge／alt／emo／post-punk（2026-11-04）：主線覆核：仍以低調弦重 riff 為主，與同團中期一致"
    },
-   "rarity": "rare",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,

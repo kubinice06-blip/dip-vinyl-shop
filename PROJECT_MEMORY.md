@@ -1,5 +1,14 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-04｜dip-vinyl-shop｜rerate-20261104-loud-r2：硬蕊度音量下限延伸到 grunge／alt-rock／emo／post-punk（改 104 張）
+
+- **規則**：沿用第一輪店主定案，延伸到 grunge、一般另類搖滾、emo、post-punk、噪音型 indie rock——整張以失真吉他、大音量、嘶吼為主的至少 3；乾淨吉他、新浪潮味、抒情、流行化的維持原分。只往上調。
+- **送判 845 張**（alt-rock／emo／indie-rock／post-punk 標籤且硬蕊 ≤2 835＋只帶 art-exp 10；第一輪改過的跳過），3 支 Sonnet 代理 6 片；主線補升 13、推翻 1（RHCP《Blood Sugar Sex Magik》維持 2）。
+- **改 104 張，全部到 3**（到 4／5 為 0；頂點卡 7 張，tier 不動）。alt-rock 硬蕊 3 由 69 張變 153 張、emo 22→51。代表：Nirvana《Nevermind》、Pearl Jam 三張、Soundgarden、Alice in Chains、Smashing Pumpkins、Foo Fighters、Weezer、White Stripes、Sunny Day Real Estate。
+- **稀有度**（全池）：史詩 1,734→1,746、獨特 4,134→4,170、稀有 6,752→6,746、普通 8,833→8,791；傳奇、頂點卡數不變。
+- **寫入**：seed 第 5 欄 104 列（三道防呆）；manifest 3 檔 7 筆；card_catalog accessibility／rarity 104 筆 PATCH（updateMask＋exists），抽 30 讀回 30／30。published gate（c50／c81）無三軸錯誤。
+- 主要檔案：`seed_cards.json`、`onboarding-manifest-{c44-rock-20260823,c50-20260831,c81-20260910}.json`、`batch-progress/rerate-20261104-loud-r2/*`（REPORT、rulings、overrides、applied、verdicts、工具）。
+
 ### 2026-11-04｜dip-vinyl-shop｜apex-fix-20261104：沖至《しらさぎ》升異端、楊祖珺《楊祖珺》恢復流亡
 
 - **店主 11-04**：「沖至也要入異端吧？」「楊祖珺為何降級？」
