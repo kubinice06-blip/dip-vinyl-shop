@@ -78,12 +78,6 @@
    "zh": "extended-voice",
    "count": 1,
    "why": ""
-  },
-  {
-   "id": "extreme-duration",
-   "zh": "extreme-duration",
-   "count": 1,
-   "why": ""
   }
  ],
  "albums": [
@@ -555,45 +549,11 @@
    "queryAlias": "",
    "uncertain": "拿不準：是否達 7 星",
    "composer": ""
-  },
-  {
-   "artist": "Leif Inge",
-   "album": "9 Beet Stretch",
-   "year": 2002,
-   "label": "",
-   "country": "no",
-   "faction": "extreme-duration",
-   "genres": [
-    "ambient",
-    "experimental"
-   ],
-   "apexTier": "heresy",
-   "apexWhy": "貝多芬第九被拉伸成 24 小時的極端時長作品，概念極限之作",
-   "listeners": null,
-   "why": "貝多芬第九被拉伸成 24 小時的極端時長作品，概念極限之作",
-   "moodGuess": {
-    "x": 1.6,
-    "y": 0.8,
-    "z": -0.3,
-    "why": "超慢懸浮和聲"
-   },
-   "evidence": [
-    "https://musicbrainz.org/release-group/f1260838-1562-308e-a984-270e8a969f25",
-    "https://coverartarchive.org/release-group/f1260838-1562-308e-a984-270e8a969f25/front",
-    "https://en.wikipedia.org/wiki/Leif_Inge"
-   ],
-   "mbRgMbid": "f1260838-1562-308e-a984-270e8a969f25",
-   "mbAbsenceProof": null,
-   "manualEvidenceUrls": [],
-   "releaseException": "",
-   "queryAlias": "",
-   "uncertain": "MB 標 Remix（改編貝多芬九號）；拿不準，建議汰除",
-   "composer": ""
   }
  ],
  "notes": [
-  "卡池已飽和：Nancarrow、La Monte Young、Niblock、Haas、Rădulescu、Ferneyhough、Wyschnegradsky、Ablinger 已在卡池（專輯或藝人），故池子僅得 15 張，照實交。",
-  "Spahlinger/Ensemble Modern、Christou、Bernhard Günter、Palestine、Stratos、Leif Inge 為拿不準，主線可汰。",
+  "卡池已飽和：Nancarrow、La Monte Young、Niblock、Haas、Rădulescu、Ferneyhough、Wyschnegradsky、Ablinger 已在卡池（專輯或藝人），故池子僅得 14 張，照實交。",
+  "Spahlinger/Ensemble Modern、Christou、Bernhard Günter、Palestine、Stratos 為拿不準，主線可汰。",
   "未提：Scelsi、López、Mumma、Ashley、Ferrari（已在卡池）等未達 7 星或已在池。",
   "標籤欄多數待查，MB 唯一證據；WebSearch 用 0 次。"
  ]
