@@ -2,7 +2,7 @@
  "v": 1,
  "per": 40,
  "roster": "roster-20260929.json",
- "updatedAt": "2026-11-04T13:53:35.341Z",
+ "updatedAt": "2026-11-04T14:06:20.725Z",
  "batches": [
   {
    "batch": "ar-a-001",
@@ -12400,8 +12400,13 @@
     "peggio punx",
     "vorkriegsphase"
    ],
-   "state": "cut",
-   "note": "新頂點盤線（異端）add-20261104-ax9 上架卡缺介紹的藝人（ALBUM_ONBOARDING §11；13 位；名冊 batch-progress/artist-intro/roster-ax9-ar-d-271.json）"
+   "state": "published",
+   "note": "新頂點盤線（異端）add-20261104-ax9 上架卡缺介紹的藝人（ALBUM_ONBOARDING §11；13 位；名冊 batch-progress/artist-intro/roster-ax9-ar-d-271.json）",
+   "reviewFixes": 1,
+   "skipped": [
+    "declino"
+   ],
+   "reviewNote": "主線逐位審 12 位（2026-11-04），對回 g1／g2 補洞稿；改 1 處：Vorkriegsphase「被評為德國最殘暴的 thrash」→「被形容為當時為止最兇暴的德國 thrash」（MRR 原文 most brutal German thrash yet）。Anti Cimex 2025 年瑞典音樂名人堂主線開 SVT 頁核實（2025-11-11）。Declino 身世格空、單源，skipped。"
   }
  ]
 }
