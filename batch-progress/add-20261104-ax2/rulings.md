@@ -67,3 +67,4 @@
 - **51671** 異端標準更正（同 ax1 第 51571 條）：`RES-APEX.md` 改回店主 2026-11-03 裁定 3 的 §3 基本定義，不要求 7 星。已交件的 a 組由主線依研究稿 facts 重判，寫進 `apex-override.json`。
 - 51621–51630 apex 依 51571 更正標準重判：heresy 4（Teitanblood、Gnaw Their Tongues、Dodecahedron、Blut Aus Nord《MoRT》），none 6（Ehnahre、Pan.Thy.Monium、Impetuous Ritual、Mitochondrion、Antediluvian、Ævangelist：有旋律／樂器／律動，或可信資料僅單一部落格）。此條取代上方「全判 none」。
 - 重判（11-04，依更正後 RES-APEX，不另取號）：a 組 10 張中 Chopin 改判 heresy（accessibility 5；證據為 Wendt《Leonardo》論文經維基引述＋AllMusic 評語，偏間接，可抽驗）；Sachiko M 為接近候選但只有維基單一網域證據，維持 none（補 Wire／Quietus 評論即可改判）；其餘 8 張（聽感溫和或安靜型）維持 none。
+- **51672** 補策展 ax2d 交 6（證據可讀的來源不足，策展層不湊數）：收 Pyrrhon、Cryptopsy、The Body、Aaron Dilloway 4 張進研究 **e 組**；汰 Atari Teenage Riot《Delete Yourself!》（數位硬核有穩定律動，非本線）、Ruins《Hyderomastgroningem》（證據只有使用者評論）。`master-ax2aax2bax2cax2d.json`（44）→ 卡單 44。
