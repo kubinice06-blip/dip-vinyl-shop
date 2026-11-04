@@ -1,0 +1,29 @@
+{
+ "batch": "ad-14",
+ "cards": 30,
+ "written": {
+  "kvKeys": 34,
+  "kvBefore": "kv-before-ad-14.json",
+  "manifest": 24
+ },
+ "review": {
+  "by": "cloud-main",
+  "cards": 30,
+  "changed": [
+   "junei|let's ride",
+   "aka|do what you like",
+   "angkanang kunchai with ubon-pattana band|isan lam plearn",
+   "jemeel moondoc & muntu|the evening of the blue men",
+   "black artists group|in paris, aries 1973"
+  ]
+ },
+ "qa": {
+  "research": "pass",
+  "out": "pass（3 標記：年代誤報 2、不具名名單已改）",
+  "kvReadback": "34/34",
+  "front": "30/30"
+ },
+ "pendingLocal": {
+  "seedYear": "junei|let's ride seed 年份 2014，原版 1987（未動 seed）"
+ }
+}

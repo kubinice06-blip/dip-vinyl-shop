@@ -8,6 +8,15 @@
 - 主要檔案：`batch-progress/apex-desc-20261104/{PLAN.md,rulings.md,prompt-heresy-addendum.md,review-ad-11.json,review-ad-12.json,handoff-ad-11.json,handoff-ad-12.json,kv-before-ad-11.json,kv-before-ad-12.json}`、`desc-tools/batches/{cards,research,output}/ad-1{1,2}-*`、3 份 onboarding manifest。
 - 驗證：`qa-batch research/out` 標記皆誤報或只在研究稿內；fix-spacing 0；字數 228–280。
 
+### 2026-11-04｜dip-vinyl-shop｜頂點卡簡介重寫 s7：ad-13（異端 25）、ad-14（流亡 30）上線 55 張
+
+- **內容**：ad-13（日本噪音、歐洲自由即興、聲音藝術、glitch、人聲／小號獨奏）、ad-14（韓日環境／新世紀、印尼搖滾、泰國 molam、Strata-East／India Navigation 系爵士、歐洲前衛與私壓盤）照 `apex-desc-base.md` 重寫。研究 3 Sonnet×2 批（WebSearch 82 次）、寫作 2 Opus×2 批；新增 `prompt-research-extra-s7.md`／`prompt-writer-extra-s7.md`（異端＝極端在哪裡＋為何被認真看待；流亡＝為何少人聽＋為何值得聽；再版廠文案形容詞不當評價）。主線用 MusicBrainz 補 Solmania、Government Alpha 的發行與曲長。
+- **主線審稿**：ad-13 改 13 處（9 張）、ad-14 改 5 處（5 張）（`review-ad-13/14.json`），主要是比喻刪除、單一來源降「被視為」、「有樂評說」「某某稱」改直述、再版廠文案的「第一次融合」「比浩室早幾年」刪掉。
+- **上線**：KV ad-13 29 鍵、ad-14 34 鍵（desc2 55＋CJK 卡 desc4 8）；寫前舊值 `kv-before-ad-13/14.json`。回讀 29/29、34/34 逐字一致；`front-check` 前台 25/25、30/30，CURATED 0。manifest 同步 49 處。
+- **待店主**：seed《Let's Ride》（Junei）年份欄 2014，原版 45 轉是 1987 年（未動 seed）。
+- **驗證**：`kv-token-check` exit 0；`qa-batch research|out ad-13|ad-14` 只剩誤報；fix-spacing 0；字數 215–280。
+- 主要檔案：`batch-progress/apex-desc-20261104/{PLAN.md,rulings.md,review-ad-1{3,4}.json,handoff-ad-1{3,4}.json,kv-before-ad-1{3,4}.json,prompt-*-extra-s7.md}`、`desc-tools/batches/{cards,research,output}/ad-1{3,4}-*`、onboarding manifest。
+
 ### 2026-11-04｜dip-vinyl-shop｜頂點卡簡介重寫 s5：ad-09、ad-10 上線 60 張（殿堂）
 
 - **內容**：ad-09（世界音樂、美國民謠與早期爵士合輯、原聲帶、台港日華語與日本搖滾）、ad-10（華語搖滾、韓國名盤 6 張、Suicide／Death／Strokes、爵士合輯、原聲帶、salsa、自由爵士、はっぴいえんど、崔健）各 30 張，照 `apex-desc-base.md` 重寫。研究 3 Sonnet×2 批＋ad-09 主線加派 1 支補查 10 張薄塊（WebSearch 合計 65 次）、寫作 2 Opus×2 批；派工時補了「前兩句講夠格理由」「出處不寫進簡介」兩條新規。
