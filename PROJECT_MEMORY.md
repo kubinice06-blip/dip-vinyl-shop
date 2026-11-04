@@ -12,6 +12,7 @@
 - **驗證**：prepare／published gate 0 error；對 origin claude/* 分支 seed 去重 0 撞；`kv-token-check` exit 0；`build-card-moods` 錨點 104/104。
 - **留給本機**：`album_overrides.tier` 11 張（`batch-progress/add-20261104-ax10/album-overrides-tier.json`）。研究層記下的舊簡介疑點：Drunks with Guns 卡是 1987 Chopper 專輯、舊簡介寫 1985 Cheap Beer 7 吋；Antisect 實為 1984-01 發行（seed 1983）。
 - 主要檔案：`batch-progress/add-20261104-ax10/*`、`batch-progress/apex-new-20261104/PLAN.md`、`batch-progress/mood-cells-20261022/curation-ax10{a,b,c}.json`、`desc-tools/batches/{cards,research,output}/add-20261104-ax10*`、`onboarding-manifest-add-20261104-ax10-20261104.json`、`seed_cards.json`、`data/artist-intros/*`、`data/discogs-cover-registry.json`、`batch-progress/mood-axes/score-ax10/*`。
+
 ### 2026-11-04｜dip-vinyl-shop｜頻率光譜：FINE 換成 RADIO 電台模式（試聽播完自動轉到下一張）
 
 - **改動**：店主「先做電台版，播完換下一個，可以在下方控制面板啟動或關閉；將原本的 FINE 功能改成這個功能，名字也要換」。
