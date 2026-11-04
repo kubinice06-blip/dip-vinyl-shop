@@ -81,3 +81,23 @@
 - **52074** 店主點名兩張照收異端（apex-override.json）：Peter Kowald Quintet《Peter Kowald Quintet》、강태환《Live At Café Amores》研究層判 none（Kowald 當年評語「informal, enjoyable」；강태환 評語「平靜卻不間斷的氣流」「憂鬱、靈性」），但店主 2026-11-04 明確點名這兩位進異端，派工寫「必收」——具體指示優先於一般標準。理由用事實：Kowald 是無主題無拍、無和弦樂器的五人集體自由即興，靜段與全員爆發交替；강태환 是全程循環換氣、無節拍無主題的中音薩克斯風長篇獨奏。簡介只寫這些事實，不寫「刺耳」「極端代表作」類沒出處的話。可逆：店主若覺得不夠格，改一般卡只要改 seed 第 9 欄。
 - **52075** 研究層判 none 的照 52071 一律汰換（不轉一般卡）：Die Like a Dog Quartet、Globe Unity Orchestra、Iskra 1903、グループ・音楽、Senyawa、Beherit、Sarcófago、Archgoat、Mütiilation、Impaled Nazarene、Anal Cunt、Havohej、Bunkur、Pissgrave、Francisco López、Robert Ashley、Luigi Nono、Franco Evangelisti、Gottfried Michael Koenig、Hermann Nitsch、Fantômas、Full Blast、Jaap Blonk、Skullflower、Diocletian、Akitsa、Bastard Noise（27 張）。研究稿留著。
 - **52076** 研究判 heresy 13 張照收：Birchville Cat Motel、Blasphemy、Conqueror、Bestial Warlust、Black Witchery、Ildjarn、Sete Star Sept、Burning Witch、Dragged Into Sunlight、Mauricio Kagel、Zeitkratzer、Mike Patton、Sightings。偏薄的 Bestial Warlust（7 條、making none）、Black Witchery、Ildjarn、Dragged Into Sunlight（研究層自評邊緣：有旋律段）照收，寫作與審稿時若撐不起 200 字再汰。Zeitkratzer 演的是 Whitehouse 的曲子（Whitehouse《Bird Seed》已在異端）：照卡池古典慣例 artist＝演奏者，藝人鍵不同，可收。Burning Witch《Crippled Lucifer》MB 標 Compilation（收兩張早期 EP＋未發表曲），是該團唯一長篇正典，照 §5.6 走 exceptionReason。
+
+## 主線審稿（2026-11-04，第一波 15 張）
+- **52077** 逐張審 15 張（out-1 8、out-2 7），照 apex-desc-base 四問：第一句都講出極端在哪裡；地位宣稱逐條對回研究稿 facts（Blasphemy「war metal 最具影響力」＝維基引 Decibel／Metal Hammer；Bestial Warlust「最早的 war metal 之一」、DIS「多年來最醜陋的金屬之一」、Black Witchery「2001 年最好的新專輯之一」皆為研究稿具名單源，用「被視為」帶出，可留）；聲音段都有具體樂器與手法。改 2 處（`desc-override.json`）：
+  - Peter Kowald Quintet：「1972 年 1 月錄於」→「1972 年錄於」。依據：研究稿 identity 塊，錄音日期 Destination Out 寫 1972-01-13、其他來源不一，月份不寫死。（261 字）
+  - Birchville Cat Motel：刪「帶東方弄蛇人色彩」「像大提琴一樣閃爍並」兩處比喻（apex-desc-base 語氣：不比喻）。（247 字）
+  - 其餘 13 張逐張審過，未改字。DIS「比一般 sludge 好入耳一些」照研究稿留（如實；極端依據在噪音牆與罪犯錄音）。Sete Star Sept 正文不寫年份（MB 2009／評論 2010），seed 年份取 MB 2009。
+
+## 研究 g 組
+- **52061** Okkyung Lee《Ghil》：heresy（邊界）。Quietus（Burnett 2013-07-02）稱尾段近 harsh noise wall、2013 首屈一指的噪音專輯；Musique Machine 5/5 稱刺耳。非全程噪音，寫作用「尾段」「被形容為」。Quietus 網址 ?p=12728 確為 Ghil 評論。
+- **52062** Stalaggh《Projekt Misanthropia》：heresy。MM 5/5 gruelling、SPB 8.0 extreme、VICE 稱可能最可怕唱片之一；廠牌補 Autopsy Kitchen Records。精神病患錄音來源為樂團自述、不可驗證，寫作勿當事實。
+- **52063** Sore Throat《Disgrace to the Corpse of Sid》：none，建議汰換。僅維基（無引註）與 Sputnik 使用者評論；B 面為 crust；Metal Injection 內文讀不到。MB 1989-09-05（維基 1988）。
+- **52064** Rudolf Eb.er《Brainnectar》：none，建議汰換。找到正確 MM 評論（5/5，稱 monstrous、有刺耳段落）但 Vital Weekly 稱簡約、近原聲；備選《Extreme Rituals》只有商店文案，不建議改選。
+- **52065** The Haters《Drunk on Decay》：none，建議汰換。僅單一部落格與維基，無可信樂評。廠牌 Release Entertainment（Relapse 子廠牌）。
+- 備註：本組 WebSearch 用 7 次。
+
+## 研究 h 組
+- **52066** Orthrelm《OV》：heresy。單曲 45:43、吉他加鼓全程高速重複；Exclaim!（Lindsay）noise metal／destructive nature＋AllMusic／Pitchfork／TMT 經維基轉引（原頁 403／封鎖）。MB Album 2005 Ipecac 無誤。
+- **52067** Agoraphobic Nosebleed《Altered States of America》：heresy（邊緣，可逆）。MB 型態 Album（卡單 Compilation 有誤）、首發 2003-04-01、3 吋 CD 21:42／99–100 軌；Exclaim! 評 2008 重發（unlistenable 指混音碟，不可用於本盤）＋Worm Gear（abstract extreme art）。若主線不收一般碾核則汰換。
+- **52068** Dissecting Table《Ultra Point of Intersection Exist》：none、建議汰換。Svart／LITA／零售商同一段重發文案，WebSearch 2 次仍無獨立樂評或專書。
+- 統計：heresy 2（1 邊緣）、none 1；WebSearch 用 2 次。

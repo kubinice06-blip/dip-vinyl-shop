@@ -1271,3 +1271,9 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - **skipped 3**：Martine Viard（無國籍、無生平，聲音格只有作品層）、Mitochondrion、Lasse Marhaug（事實各只有單一來源：en 維基／挪威百科 SNL）。
 - **主線審稿 9 處**：Chopin、Gnaw Their Tongues、Pan.Thy.Monium、Antediluvian 刪「據說／據稱／據載」引導；Sachiko M 刪「據說讓她一時成為國際即興圈的焦點」；Teitanblood 刪「據載 Darkthrone 曾把他們的標誌放上專輯封面致敬」（單源）；Karkowski 引語「只有在你害怕它的時候才會傷害你」改間接引述（禁語「你」），刪「據傳弄裂馬桶、喇叭起火」軼事；Keith Rowe「據評論影響了兩代」→「被認為影響了兩代」。
 - 補洞 pubIssues 回頭改上線簡介 3 張（Impetuous Ritual、Karkowski、Tsunoda），見 `batch-progress/add-20261104-ax2/rulings.md` 51677–51678。
+
+## ar-d-268（2026-11-04，新頂點盤線 ax6 第一波＝war metal、raw black metal、noisegrind、噪音搖滾、自由即興、聲音實驗）
+- 切 14 位（扣已有介紹 1 位：강태환）。補洞 4 組（ARTIST_GROUP=4）、寫作 2 組。skipped 0。
+- `peter kowald quintet` 寫 Peter Kowald 本人與 1972 五重奏（卡池 Peter Kowald 個人名義卡另無介紹，未併鍵）。
+- **主線審稿 3 處**：Peter Kowald Quintet 刪「據說只因為那是學校管弦樂團裡沒人想拉的樂器」（傳聞語氣）；Birchville Cat Motel 刪「據介紹，」；Mauricio Kagel 刪「據說」引導。其餘 11 位逐位審過未改字（Sete Star Sept 的 Keiji Haino／Fushitsusha 照東亞原文規則寫灰野敬二／不失者，確認）。
+- 補洞 pubIssues 0（卡池無既有簡介）。
