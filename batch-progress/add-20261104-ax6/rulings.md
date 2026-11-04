@@ -37,3 +37,12 @@
 - **52035** Kagel《Acustica》：heresy。MusicWeb「assault the ear」＋DG 文案；證據偏少但足。
 - **52036** Zeitkratzer《WHITEHOUSE electronics》：heresy。Cyclic Defrost＋Musique Machine；與卡池 Whitehouse《Bird Seed》曲目重疊，藝人鍵不同，留給主線裁定。
 - **52037** Francisco López《Untitled #360》：none，建議汰換。單一來源（Brainwashed，頁讀不到）、MB 無封面。
+
+## 研究 b 組
+- **52011** Senyawa《Sujud》：判 none，建議汰換（樂評談 seductive／redemptive，非整張難入耳）；廠牌應為 Sublime Frequencies。
+- **52012** Blasphemy《Fallen Angel of Doom....》：heresy（維基引註 Metal Hammer／Rock Hard／Decibel #58 + deathmetal.org）；AllMusic 僅 2 星，寫作用「被視為」。
+- **52013** Conqueror《War.Cult.Supremacy》：heresy（偏薄；deathmetal.org＋Bardo Methodology 訪談）；1996 錄、1999 Full Moon 發行。
+- **52014** Beherit《Drawing Down the Moon》：none，建議汰換（氛圍合成器、咒語式重複）。
+- **52015** Sarcófago《I.N.R.I.》：none，建議汰換（1987 標準極端、評價兩極；可逆，若放寬可收）。
+- **52016** Bestial Warlust《Vengeance War 'Till Death》：heresy（最薄；Antichrist Magazine＋deathmetal.org），資料不足可汰換。
+- **52017** Black Witchery《Desecration of the Holy Kingdom》：heresy（偏薄；deathmetal.org 2001），資料不足可汰換。
