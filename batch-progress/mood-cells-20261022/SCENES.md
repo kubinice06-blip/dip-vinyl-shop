@@ -103,6 +103,8 @@
 | 77 | md34 | funeral doom／drone doom 慢盤第二波（Esoteric、Evoken、Mournful Congregation、Skepticism、Thergothon 系；極慢、往下壓） | ✅ 上線 38／落格 38（二線約還能挖 20–30） |
 | 78 | ml59 | roots reggae 人聲慢盤第二波（ml58 收 28 高產；Twinkle Brothers、The Gladiators 慢盤、Johnny Clarke、Max Romeo 慢盤、Ras Michael、Mighty Diamonds 慢盤；店主要多 dub） | ✅ 上線 13／落格 13（主場景見底，約剩 3–5） |
 | 79 | mc48 | 美國當代作曲尖細（Elliott Carter、Milton Babbitt、Charles Wuorinen、Stefan Wolpe、Roger Sessions 晚期；mc32／mc43／mc46 已收過的去重） | ✅ 上線 31／落格 31（主場景見底，約剩 3–6） |
+| 80 | ml60 | 恍惚電子：chillwave／hypnagogic 電子盤、vaporwave／mallsoft 暖盤 ＋ lo-fi house／慢 deep house 暖盤、暖 ambient techno 二線（店主 11-04：多電子、少嘻哈雷鬼；只收 genres 首位 electronic） | ✅ 上線 14／落格 12（2026-11-04；策展 40、主線汰 15、研究汰 11；chillwave／vaporwave 見底，lo-fi house 多判躁） |
+| 81 | ml61 | 恍惚電子：暖 IDM／braindance 慢盤、日本／亞洲暖電子 ＋ warm dub techno、ambient pop／downtempo 新世代 2010s–20s（只收電子盤） | ✅ 上線 20／落格 14（2026-11-04；策展 46、主線汰 10、研究汰 16；無錨點 glitch／Kompakt／dub techno 判冷判輕） |
 | 82 | md35 | 頹靡電子：深暗 dubstep／post-dubstep 慢盤（Burial 以外：Kode9、Shackleton、Pinch、Vex'd、Kryptic Minds、Andy Stott、Demdike Stare、Raime）＋ hauntology（The Caretaker、Ghost Box 系、Leyland Kirby、Philip Jeck 冷盤）＋ witch house（Salem、oOoOO、Holy Other）（店主 11-04：多電子、少嘻哈雷鬼；只收 genres 首位 electronic） | ✅ 上線 26／落格 24（2026-11-04；策展 51、主線汰 6、研究汰 19：140 BPM 推進／明亮／零來源；出格 Ekoplekz、Black Rain 判躁；不再單獨派） |
 | 83 | md36 | 頹靡電子：illbient（DJ Spooky、Sub Dub、Byzar、WordSound 系）＋ 冷 ambient techno／Berlin 慢盤（Monolake、Vladislav Delay、Porter Ricks、Köner 節拍盤、Biosphere 冷盤）＋ 慢工業電子／post-industrial ambient（Pan Sonic 靜盤、Raster-Noton 慢盤）＋ 暗 downtempo 新世代（Forest Swords、Actress、Huerco S.、Tim Hecker）（只收電子盤） | ✅ 上線 19／落格 19（2026-11-04；策展 49、讓位 md35 4、主線汰 10、研究汰 16：脈動鼓／暖和絃／雷鬼根／零來源；冷 techno 主盤池中已滿，不再派） |
 
@@ -271,3 +273,5 @@
 | ml57 | 21321 | neo-soul 女聲慢盤 2000s–10s（Jill Scott 慢盤、Goapele、Lalah Hathaway、Ledisi、Emily King 系） | ✅ 上線 12／落格 12（主場景見底，不再派） |
 | ml58 | 21721 | roots reggae 人聲慢盤（Burning Spear、Culture、Israel Vibration、The Abyssinians、Prince Far I 系） | ✅ 上線 28／落格 28（2026-10-24；策展 46（只收 Discogs 明寫 Tubby／Jammy／Scientist／Black Ark／Ariwa 混音的盤）、主線汰 3（池中同人判輕／DJ 盤）、研究汰 15（Bunny Lee／Revolutionaries 亮 rockers 6、無濕混音 credit 的歌曲盤 5、重混／數位化 3、拉丁 ska 拼貼 1）；主場景見底） |
 | ml59 | 22361 | roots reggae 人聲慢盤第二波（Twinkle Brothers、The Gladiators、Johnny Clarke、Max Romeo、Ras Michael、Mighty Diamonds 慢盤） | ✅ 上線 13／落格 13（2026-10-24；策展 19（濕混音 credit 篩子，主場景點名六組池中同人判輕擋掉五組）、主線汰 1（無混音者署名）、研究汰 5（dancehall／DJ、自家工程＋合成器、美國重混、多場次拼貼、Pablo 小調偏冷）；主場景見底） |
+| ml60 | 22681 | 恍惚電子：chillwave／hypnagogic 電子盤、vaporwave／mallsoft 暖盤、lo-fi house／慢 deep house、暖 ambient techno 二線（條號跳過 22521–22680 留給並行的 md35／md36） | ✅ 上線 14／落格 12（場景見底，約剩 5–8） |
+| ml61 | 22761 | 恍惚電子：暖 IDM／braindance、日本／亞洲暖電子、warm dub techno、ambient pop 新世代 | ✅ 上線 20／落格 14（只收池中同人已落恍惚的藝人才穩） |

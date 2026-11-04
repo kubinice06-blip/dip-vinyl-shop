@@ -3841,4 +3841,8 @@ window.DipPreviewStatus = Object.freeze({
   "bill laswell & terre thaemlitz|web": "unavailable",
   "robert henke|indigo_transform": "unavailable",
   "kit clayton|lateral forces (surface fault)": "unavailable",
+  "蜃気楼mirage|songs for lovers": "unavailable",
+  "spacetime continuum|emit ecaps": "unavailable",
+  "ulrich schnauss & jonas munk|epic": "unavailable",
+  "aus|curveland": "unavailable",
 });

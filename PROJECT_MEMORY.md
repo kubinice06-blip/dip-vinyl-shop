@@ -1,5 +1,15 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-04｜dip-vinyl-shop｜情緒薄格恍惚電子線 ml60／ml61：恍惚電子盤 34 張上線（落恍惚 26）＋藝人介紹 19 位
+
+- **店主指示**：「卡池分配頹靡跟恍惚還是太少了，多一點電子類的，嘻哈跟雷鬼太多了。」本線只收 genres 首位 electronic 的恍惚盤（靜＋重＋暖）。
+- **ml60**（`add-20261104-ml60`；chillwave／vaporwave／lo-fi house／暖 ambient techno）：策展 40（兩組）→ 主線汰 15 → 研究汰 11（舞池四拍、拼貼短曲、mallsoft 判冷）→ **上線 14、落恍惚 12（86%）**。出格：Kuniyuki《Feather World》判輕、Spacetime Continuum《Emit Ecaps》判冷。
+- **ml61**（`add-20261104-ml61`；暖 IDM／日本暖電子／warm dub techno／ambient pop 新世代）：策展 46（兩組跨組去重）→ 主線汰 10 → 研究汰 16（Tosca《Tia Pamelita》MB 釘到探戈樂團、Ulf Lohmann《Because》是 EP、四拍／dubstep／trance）→ **上線 20、落恍惚 14（70%）**。出格：aus 兩張判輕、Tujiko Noriko／Jonas Bering／Fennesz《Mosaic》／Phaeleh《Tides》判冷。教訓：無池中同人錨點的 glitch、Kompakt minimal、dub techno 多判冷或判輕。
+- **寫入（已即時生效）**：card_catalog 34、KV 35 鍵（逐字回讀一致）、試聽 30 ready／4 unavailable、seed +34；prepare／published gate 皆 0 error；主線審稿 34 張未改字。子曲風樹、抽卡封面、card-moods 重建；`genre-l3-artist-map.json` 補 蜃気楼MIRAGE。
+- **藝人介紹**：ar-d-275（ml60，9 位）、ar-d-276（ml61，10 位，含兩個 Schnauss 合作組合鍵）照 dip-artist-intro 跑完上線；審稿改 3 處（刪「據說／據稱」）；William Orbit 2026-07-23 過世主線以 NME＋維基核實。Casino Versus Japan、Eluvium 已在 ar-d-084／086 排隊未寫。
+- **條號**：ml60 22681–22760、ml61 22761–22840（跳過 22521–22680 留給並行的 md35／md36）。SCENES.md 加第 80、81 列並標結果。
+- **主要檔案**：`batch-progress/add-20261104-{ml60,ml61}/`、`batch-progress/mood-cells-20261022/{curation-ml60a,ml60b,ml61a,ml61b,master-ml60aml60b,master-ml61aml61b}.json`、`SCENES.md`、`desc-tools/batches/{cards,research,hooks,input,output}/add-20261104-ml6*`、`batch-progress/mood-axes/score-{ml60,ml61}/`、`batch-progress/artist-intro/roster-{ml60,ml61}.json`、`data/artist-intros/`、`seed_cards.json`、`data/mood/`、`genre-tree.json`、`card-subgenres.json`、`draw-covers/`。
+- **驗證**：`verify-album-onboarding --published` 兩批 0 error；`verify-wave-kv` 35／35 一致；`build-card-moods` 錨點 104/104 同格；`qa-artist out` 兩批 0 處。
 ### 2026-11-04｜dip-vinyl-shop｜add-20261104-md35／md36：頹靡電子 45 張上架＋藝人介紹 25 位
 - 店主 11-04「頹靡跟恍惚太少，多一點電子類，嘻哈跟雷鬼太多」→ 情緒薄格頹靡線兩批只收電子盤（genres 首位 electronic）。SCENES.md 加第 82／83 順位、條號 22521／22601。
 - md35（深暗 dubstep／post-dubstep、hauntology、witch house）：策展 51 → 主線汰 6 → 研究汰 19（140 BPM 推進、明亮、聲音零來源）→ **上線 26**；落頹靡 24/26＝92%（Ekoplekz、Black Rain 有鼓判躁）。

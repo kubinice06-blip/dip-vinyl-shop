@@ -1,0 +1,678 @@
+{
+ "group": "ml61b",
+ "factions": [
+  {
+   "id": "warm-dub-techno",
+   "zh": "暖 dub techno／Kompakt Pop Ambient",
+   "count": 6,
+   "why": ""
+  },
+  {
+   "id": "pop-ambient",
+   "zh": "ambient house／pop ambient 暖盤",
+   "count": 5,
+   "why": ""
+  },
+  {
+   "id": "ambient-pop-new",
+   "zh": "新世代 ambient pop／downtempo（2010s–20s）",
+   "count": 12,
+   "why": ""
+  }
+ ],
+ "albums": [
+  {
+   "artist": "Thomas Fehlmann",
+   "album": "Visions of Blah",
+   "year": 2002,
+   "label": "Kompakt",
+   "country": "de",
+   "faction": "warm-dub-techno",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Fehlmann（Orb 前成員）的 Kompakt 時期代表作，慢速 dub 底、溫暖和弦，Gas《Pop》式的暖；聲音落恍惚（靜＋暖慢包覆）。",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1,
+    "z": 0.4,
+    "why": "無強拍的暖 dub 氛圍電子，厚實低頻與柔和和弦"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/9483e5bb-6280-3682-8b0d-635baeed1396",
+    "https://coverartarchive.org/release-group/9483e5bb-6280-3682-8b0d-635baeed1396"
+   ],
+   "mbRgMbid": "9483e5bb-6280-3682-8b0d-635baeed1396",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "無池中同人錨點，靠記憶估；y 可能偏輕"
+  },
+  {
+   "artist": "Thomas Fehlmann",
+   "album": "Lowflow",
+   "year": 2004,
+   "label": "Plug Research",
+   "country": "de",
+   "faction": "warm-dub-techno",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Fehlmann 最柔軟的一張，和弦溫暖、拍子懶，不走冷硬 Basic Channel 路線；聲音落恍惚（靜＋暖慢包覆）。",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1,
+    "z": 0.4,
+    "why": "慢速 dub techno 底，濕潤溫暖的和弦墊，低頻厚"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/035f998a-7308-3c7a-b4e8-6d270fc79189",
+    "https://coverartarchive.org/release-group/035f998a-7308-3c7a-b4e8-6d270fc79189"
+   ],
+   "mbRgMbid": "035f998a-7308-3c7a-b4e8-6d270fc79189",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "無池中錨點；z 可能貼邊"
+  },
+  {
+   "artist": "Thomas Fehlmann",
+   "album": "Honigpumpe",
+   "year": 2007,
+   "label": "Kompakt",
+   "country": "de",
+   "faction": "warm-dub-techno",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Honigpumpe 名字即「蜂蜜」，慢拍 dub house 加暖色和弦，Kompakt 系最暖的一批；聲音落恍惚（靜＋暖慢包覆）。",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 0.9,
+    "z": 0.5,
+    "why": "中慢速 dub house，糊濾波和弦與厚低頻，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/a2e102d1-66e1-396f-a89b-127a3ab032d7",
+    "https://coverartarchive.org/release-group/a2e102d1-66e1-396f-a89b-127a3ab032d7"
+   ],
+   "mbRgMbid": "a2e102d1-66e1-396f-a89b-127a3ab032d7",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "x 可能貼 2.7；無錨點"
+  },
+  {
+   "artist": "Burger/Ink",
+   "album": "[Las Vegas]",
+   "year": 1996,
+   "label": "Harvest",
+   "country": "de",
+   "faction": "warm-dub-techno",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Jörg Burger 的 lo-fi 暖 ambient techno，Kompakt 圈暖調早期代表，磁帶糊質地；聲音落恍惚（靜＋暖慢包覆）。",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1,
+    "z": 0.5,
+    "why": "低傳真 downtempo／ambient techno，磁帶糊、暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/aebaf370-5ee4-3754-8b2c-4ee9892c6574",
+    "https://coverartarchive.org/release-group/aebaf370-5ee4-3754-8b2c-4ee9892c6574"
+   ],
+   "mbRgMbid": "aebaf370-5ee4-3754-8b2c-4ee9892c6574",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "無錨點；製作偏粗，y 應夠"
+  },
+  {
+   "artist": "Jonas Bering",
+   "album": "Sketches for the Next Season",
+   "year": 2003,
+   "label": "Kompakt",
+   "country": "de",
+   "faction": "warm-dub-techno",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Kompakt Pop Ambient 系藝人的全長盤，旋律明確、和弦暖，非冷硬 dub；聲音落恍惚（靜＋暖慢包覆）。",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 0.9,
+    "z": 0.5,
+    "why": "幾乎無拍的 Pop Ambient，旋律清楚、暖和弦"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/489db743-f1a5-31fa-ba0c-f8f2f6965b96",
+    "https://coverartarchive.org/release-group/489db743-f1a5-31fa-ba0c-f8f2f6965b96"
+   ],
+   "mbRgMbid": "489db743-f1a5-31fa-ba0c-f8f2f6965b96",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "無錨點；可能偏輕"
+  },
+  {
+   "artist": "Ulf Lohmann",
+   "album": "Because",
+   "year": 2001,
+   "label": "Kompakt",
+   "country": "de",
+   "faction": "warm-dub-techno",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Kompakt Pop Ambient 風的旋律性全長盤，溫暖而不冷；聲音落恍惚（靜＋暖慢包覆）。",
+   "moodGuess": {
+    "x": 2,
+    "y": 0.9,
+    "z": 0.5,
+    "why": "輕拍 ambient pop，旋律明確、暖色合成器墊"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/9e255703-96a6-3bf8-a01c-3da8df690047",
+    "https://coverartarchive.org/release-group/9e255703-96a6-3bf8-a01c-3da8df690047",
+    "https://www.discogs.com/release/50915"
+   ],
+   "mbRgMbid": "9e255703-96a6-3bf8-a01c-3da8df690047",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "無錨點；y 可能貼邊"
+  },
+  {
+   "artist": "The Orb",
+   "album": "Okie Dokie It’s The Orb on Kompakt",
+   "year": 2005,
+   "label": "Kompakt",
+   "country": "gb",
+   "faction": "pop-ambient",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Orb 與 Kompakt 合作的全長盤，Orb 池中多張落恍惚，此張拍子懶、和弦暖；聲音落恍惚（靜＋暖慢包覆）。",
+   "moodGuess": {
+    "x": 2.7,
+    "y": 1,
+    "z": 0.5,
+    "why": "Kompakt 式暖 dub techno／ambient，濾波和弦與厚低頻"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/b3064aa5-9bb1-3305-b49f-7bf6731145bf",
+    "https://coverartarchive.org/release-group/b3064aa5-9bb1-3305-b49f-7bf6731145bf"
+   ],
+   "mbRgMbid": "b3064aa5-9bb1-3305-b49f-7bf6731145bf",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "x 可能貼 2.7"
+  },
+  {
+   "artist": "The Orb",
+   "album": "Bicycles & Tricycles",
+   "year": 2003,
+   "label": "Cooking Vinyl",
+   "country": "gb",
+   "faction": "pop-ambient",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Orb 2000s 暖 ambient dub 代表之一，池中 Orb 同路盤落恍惚；聲音落恍惚（靜＋暖慢包覆）。",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 1,
+    "z": 0.5,
+    "why": "慢速 ambient dub，糊濾波與取樣墊，鬆拍"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/660613e2-6fef-3a16-9442-0d52a618c8f2",
+    "https://coverartarchive.org/release-group/660613e2-6fef-3a16-9442-0d52a618c8f2"
+   ],
+   "mbRgMbid": "660613e2-6fef-3a16-9442-0d52a618c8f2",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "x 可能 2.7–2.9"
+  },
+  {
+   "artist": "The Orb",
+   "album": "COW / Chill Out, World!",
+   "year": 2016,
+   "label": "Kompakt",
+   "country": "gb",
+   "faction": "pop-ambient",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Orb 與 Cow 的 Kompakt 長篇 ambient，包覆感強、旋律溫暖；聲音落恍惚（靜＋暖慢包覆）。",
+   "moodGuess": {
+    "x": 2.1,
+    "y": 1.1,
+    "z": 0.5,
+    "why": "長篇 ambient dub，厚合成器墊與低頻，溫暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/dd8a6b74-d482-4bc4-9c07-e539794e6bb5",
+    "https://coverartarchive.org/release-group/dd8a6b74-d482-4bc4-9c07-e539794e6bb5"
+   ],
+   "mbRgMbid": "dd8a6b74-d482-4bc4-9c07-e539794e6bb5",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "無"
+  },
+  {
+   "artist": "The Orb",
+   "album": "Unknown Spheres",
+   "year": 2021,
+   "label": "",
+   "country": "gb",
+   "faction": "pop-ambient",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Orb 晚期純 ambient 盤，包覆感強、色調暖；聲音落恍惚（靜＋暖慢包覆）。",
+   "moodGuess": {
+    "x": 1.7,
+    "y": 0.9,
+    "z": 0.4,
+    "why": "無強拍 ambient，厚合成器墊與回聲，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/5719aba3-7cec-4248-a600-8b2a291c9345",
+    "https://coverartarchive.org/release-group/5719aba3-7cec-4248-a600-8b2a291c9345",
+    "https://www.discogs.com/release/25664893"
+   ],
+   "mbRgMbid": "5719aba3-7cec-4248-a600-8b2a291c9345",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "y 可能貼 0.8；CAA 無封面，Discogs 有"
+  },
+  {
+   "artist": "William Orbit",
+   "album": "Strange Cargo III",
+   "year": 1993,
+   "label": "Virgin",
+   "country": "gb",
+   "faction": "pop-ambient",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Strange Cargo 系最靜最暖的一張，旋律清楚的 ambient pop／downtempo；聲音落恍惚（靜＋暖慢包覆）。",
+   "moodGuess": {
+    "x": 2,
+    "y": 0.9,
+    "z": 0.7,
+    "why": "慢拍 ambient pop，厚合成器墊，旋律清楚、暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/47629863-75ca-3a1e-a987-716736942e25",
+    "https://coverartarchive.org/release-group/47629863-75ca-3a1e-a987-716736942e25"
+   ],
+   "mbRgMbid": "47629863-75ca-3a1e-a987-716736942e25",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "無錨點；y 可能偏輕"
+  },
+  {
+   "artist": "Ulrich Schnauss & Jonas Munk",
+   "album": "Epic",
+   "year": 2010,
+   "label": "Pedigree Cuts",
+   "country": "gb",
+   "faction": "ambient-pop-new",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Schnauss 池中四張皆落恍惚，與 Jonas Munk 合作的暖霧合成器盤；聲音落恍惚（靜＋暖慢包覆）。",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.2,
+    "z": 0.6,
+    "why": "shoegaze 式合成器牆，柔和鼓機，旋律暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/b1c69636-e197-431b-8a77-8c15f4b0b45b",
+    "https://coverartarchive.org/release-group/b1c69636-e197-431b-8a77-8c15f4b0b45b"
+   ],
+   "mbRgMbid": "b1c69636-e197-431b-8a77-8c15f4b0b45b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "無"
+  },
+  {
+   "artist": "Ulrich Schnauss & Jonas Munk",
+   "album": "Eight Fragments of an Illusion",
+   "year": 2021,
+   "label": "Azure Vista Records",
+   "country": "gb",
+   "faction": "ambient-pop-new",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Schnauss/Munk 的 ambient 長盤，包覆感強；聲音落恍惚（靜＋暖慢包覆）。",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 1.2,
+    "z": 0.5,
+    "why": "厚合成器霧與柔拍，旋律清楚、暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/93a06bb3-0422-43b4-8ebb-cb6256a3fa83",
+    "https://coverartarchive.org/release-group/93a06bb3-0422-43b4-8ebb-cb6256a3fa83"
+   ],
+   "mbRgMbid": "93a06bb3-0422-43b4-8ebb-cb6256a3fa83",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "無"
+  },
+  {
+   "artist": "Ulrich Schnauss",
+   "album": "No Further Ahead Than Tomorrow",
+   "year": 2020,
+   "label": "Scripted Realities",
+   "country": "gb",
+   "faction": "ambient-pop-new",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Schnauss 池中同人 A Strangely Isolated Place 等落恍惚，此為近作；聲音落恍惚（靜＋暖慢包覆）。",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.2,
+    "z": 0.6,
+    "why": "柔拍 synth 墊與 chorus 吉他霧，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/09bd1ccb-4183-43e7-8776-9bf1d690c6cd",
+    "https://coverartarchive.org/release-group/09bd1ccb-4183-43e7-8776-9bf1d690c6cd"
+   ],
+   "mbRgMbid": "09bd1ccb-4183-43e7-8776-9bf1d690c6cd",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "無"
+  },
+  {
+   "artist": "Ulrich Schnauss & Mark Peters",
+   "album": "Destiny Waiving",
+   "year": 2021,
+   "label": "Bureau B",
+   "country": "gb",
+   "faction": "ambient-pop-new",
+   "genres": [
+    "electronic"
+   ],
+   "why": "與 Underrated Silence 同路的 ambient 盤，池中前作落恍惚；聲音落恍惚（靜＋暖慢包覆）。",
+   "moodGuess": {
+    "x": 1.9,
+    "y": 1.1,
+    "z": 0.4,
+    "why": "長 ambient 合成器墊，近乎無拍，暖霧"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/2ed773dc-57f3-4c87-b5a4-7475a51e6fc8",
+    "https://coverartarchive.org/release-group/2ed773dc-57f3-4c87-b5a4-7475a51e6fc8"
+   ],
+   "mbRgMbid": "2ed773dc-57f3-4c87-b5a4-7475a51e6fc8",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "z 可能貼 0.3"
+  },
+  {
+   "artist": "Eluvium",
+   "album": "Lambent Material",
+   "year": 2003,
+   "label": "Temporary Residence",
+   "country": "us",
+   "faction": "ambient-pop-new",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Eluvium 早期 drone，與池中落恍惚的 Talk Amongst the Trees 同形；聲音落恍惚（靜＋暖慢包覆）。",
+   "moodGuess": {
+    "x": 1.4,
+    "y": 1.3,
+    "z": 0.4,
+    "why": "吉他疊成的暖糊 drone，無拍，包覆"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/58d3617c-6c24-3197-964f-3debcbc151ff",
+    "https://coverartarchive.org/release-group/58d3617c-6c24-3197-964f-3debcbc151ff"
+   ],
+   "mbRgMbid": "58d3617c-6c24-3197-964f-3debcbc151ff",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "z 可能貼邊"
+  },
+  {
+   "artist": "Eluvium",
+   "album": "Static Nocturne",
+   "year": 2010,
+   "label": "WatershipSounds",
+   "country": "us",
+   "faction": "ambient-pop-new",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Eluvium 較暖的厚 ambient 盤；聲音落恍惚（靜＋暖慢包覆）。",
+   "moodGuess": {
+    "x": 1.5,
+    "y": 1,
+    "z": 0.3,
+    "why": "厚重 ambient 合成器與吉他層，暖，無拍"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/5c0285c9-8fd6-4085-a23f-95a22ce71ef6",
+    "https://coverartarchive.org/release-group/5c0285c9-8fd6-4085-a23f-95a22ce71ef6"
+   ],
+   "mbRgMbid": "5c0285c9-8fd6-4085-a23f-95a22ce71ef6",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "z 貼邊 0.3；y 可能偏輕"
+  },
+  {
+   "artist": "Fennesz",
+   "album": "Mosaic",
+   "year": 2024,
+   "label": "Touch",
+   "country": "at",
+   "faction": "ambient-pop-new",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Fennesz 近作，與池中落恍惚的 Endless Summer／Bécs／Agora 同路；聲音落恍惚（靜＋暖慢包覆）。",
+   "moodGuess": {
+    "x": 1.7,
+    "y": 1.3,
+    "z": 0.4,
+    "why": "吉他噪霧加合成器墊，旋律模糊但暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/f88077b5-1903-4376-bf3f-0101c1334c9c",
+    "https://coverartarchive.org/release-group/f88077b5-1903-4376-bf3f-0101c1334c9c"
+   ],
+   "mbRgMbid": "f88077b5-1903-4376-bf3f-0101c1334c9c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "z 貼邊；旋律不明可能判冷"
+  },
+  {
+   "artist": "Phaeleh",
+   "album": "Fallen Light",
+   "year": 2010,
+   "label": "Afterglo",
+   "country": "gb",
+   "faction": "ambient-pop-new",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Phaeleh 早期代表作，溫暖旋律、慢拍、厚墊；聲音落恍惚（靜＋暖慢包覆）。",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 1.1,
+    "z": 0.6,
+    "why": "慢速 future garage／downtempo，厚合成器墊與人聲，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/39b72d83-f786-42b0-b6c9-b6038c773414",
+    "https://coverartarchive.org/release-group/39b72d83-f786-42b0-b6c9-b6038c773414"
+   ],
+   "mbRgMbid": "39b72d83-f786-42b0-b6c9-b6038c773414",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "x 可能 2.7+；無錨點"
+  },
+  {
+   "artist": "Phaeleh",
+   "album": "Tides",
+   "year": 2013,
+   "label": "Afterglo",
+   "country": "gb",
+   "faction": "ambient-pop-new",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Phaeleh 第二張，更旋律化的暖 downtempo；聲音落恍惚（靜＋暖慢包覆）。",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 1,
+    "z": 0.6,
+    "why": "中慢速 downtempo，合成器墊與人聲，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/a52e6e0a-f5bf-4469-8e39-a93faad85173",
+    "https://coverartarchive.org/release-group/a52e6e0a-f5bf-4469-8e39-a93faad85173"
+   ],
+   "mbRgMbid": "a52e6e0a-f5bf-4469-8e39-a93faad85173",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "x 可能貼 2.7；無錨點"
+  },
+  {
+   "artist": "Phaeleh",
+   "album": "Somnus",
+   "year": 2014,
+   "label": "Undertow",
+   "country": "gb",
+   "faction": "ambient-pop-new",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Phaeleh 最靜的一張，近 ambient；聲音落恍惚（靜＋暖慢包覆）。",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1,
+    "z": 0.5,
+    "why": "慢拍 ambient downtempo，厚墊與柔和人聲，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/504e9aff-ee82-41d4-8ad5-d31203cd606f",
+    "https://coverartarchive.org/release-group/504e9aff-ee82-41d4-8ad5-d31203cd606f"
+   ],
+   "mbRgMbid": "504e9aff-ee82-41d4-8ad5-d31203cd606f",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "無錨點"
+  },
+  {
+   "artist": "Christian Löffler",
+   "album": "Mare",
+   "year": 2016,
+   "label": "Ki Records",
+   "country": "de",
+   "faction": "ambient-pop-new",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Löffler 代表作，海邊感的暖調慢拍電子，旋律清楚；聲音落恍惚（靜＋暖慢包覆）。",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 0.9,
+    "z": 0.4,
+    "why": "慢速 deep house／ambient pop，人聲、霧濾波與暖和弦"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/938f86d1-602e-4283-a28a-59a672365f88",
+    "https://coverartarchive.org/release-group/938f86d1-602e-4283-a28a-59a672365f88"
+   ],
+   "mbRgMbid": "938f86d1-602e-4283-a28a-59a672365f88",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "x 與 y 皆可能貼邊"
+  },
+  {
+   "artist": "Christian Löffler",
+   "album": "A Forest",
+   "year": 2012,
+   "label": "Ki Records",
+   "country": "de",
+   "faction": "ambient-pop-new",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Löffler 早期全長盤，慢而暖的林間氛圍；聲音落恍惚（靜＋暖慢包覆）。",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 0.9,
+    "z": 0.4,
+    "why": "慢速 deep house／ambient 糊濾波、鋼琴與暖墊"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/caffdfab-f4c4-400b-88eb-54540e3ea9cf",
+    "https://coverartarchive.org/release-group/caffdfab-f4c4-400b-88eb-54540e3ea9cf"
+   ],
+   "mbRgMbid": "caffdfab-f4c4-400b-88eb-54540e3ea9cf",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "同上；鋼琴在前可能判輕"
+  }
+ ],
+ "notes": [
+  "場景已高度飽和：池中與前批已含 Gas、Pole、Deepchord/Echospace、Fluxion、Monolake、Loscil、Nils Frahm、Jon Hopkins、Tycho、Emancipator、Odesza、Kiasmos、Carbon Based Lifeforms 等；池中同人錨點多半判輕或冷（Nils Frahm、Jon Hopkins、Odesza、Kiasmos、CBL、Loscil、Pole 全落放鬆／平靜／頹靡）故不提。",
+  "Wolfgang Voigt Rückverzauberung 9／10、Mikkel Metal、Studio 1 等為 Gas 式 beatless 暗盤，無法確認暖度，依邊距原則不提；Kaito、Stimming、Lane 8 等四拍推進，x 很可能 >3，不提。",
+  "Fehlmann、Burger/Ink、Jonas Bering、Ulf Lohmann、William Orbit 無池中錨點，三軸僅憑記憶，落格率較不確定（約 50–70%）；Schnauss／Orb／Eluvium／Fennesz 有池中同人錨點。",
+  "Unknown Spheres 的 CAA 無封面，改以 Discogs release 25664893 為封面來源；Ulf Lohmann《Because》CAA 亦無，Discogs release 50915。",
+  "genres 皆 electronic；未收嘻哈／雷鬼／搖滾。目標 27 張，實交 23 張。"
+ ]
+}
