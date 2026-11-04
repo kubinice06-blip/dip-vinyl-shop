@@ -663,3 +663,39 @@
 - bulk put 30 鍵（desc2 30；本批無 CJK 卡、無原有 desc4），wrangler 印 `Success!`；`verify-wave-kv 20261104 ad-21` 30/30 逐字一致。
 - `front-check ad-21`：30/30 前台為新稿，CURATED 0。
 - manifest 同步 30 處（10 份 onboarding manifest）。
+
+## ad-22（流亡 30 張，s11）
+
+- 派工照 `prompt-research-extra-s11.md`／`prompt-writer-extra-s11.md`，派工時另告知 Discogs API／MusicBrainz 不耗 WebSearch、資料薄的卡一定要用。研究 3 Sonnet（WebSearch a 15／b 12／c 13 次）、寫作 2 Opus。本工作階段 WebSearch 合計約 86 次（研究層），主線 0 次（主線只用 Discogs／MusicBrainz API 與 WebFetch 等價的 curl）。
+- coverage none：Fanny's Group status／making（只剩 Discogs 曲目、風格標籤與 Lokananta 廠史）、Mircea Tiberian sound、Cool Knights sound。裁定同 ad-17：sound none 只寫編制、分工、結構，風格標籤寫成「路數偏某某」；不寫樂團背景、不寫稀有以外沒有證據的事。未另派補查。
+- **裁定**（寫進寫作派工特注）：
+  - 商家文案或單一小站的評價（Pierre Favre、Delton Screechie、Zaratustra）不寫成評價；Wambach 的 Classics Today／Gramophone 只見搜尋摘要、評者不明，不寫。
+  - String Connection、Cuarteto Cedrón、Lutajuća Srca 研究稿判定不罕見（波蘭當紅團、法國長年重壓、國營大廠），不寫難找，寫它做到什麼（Jazz Forum 連三年第一、詩作譜成探戈、B92 百大）。
+  - 강태환 的二重奏搭檔 Midori Takada 只有一篇旁證，不寫名字；Blackbuster＝The Ramrods 只有一篇且談的是系列首張，不寫。
+  - 菊地雅章《Hairpin Circus》照原聲帶節，前兩句點出電影《ヘアピン・サーカス》。
+  - Alvin Curran「被視為影響了 Eno 與 Bryars」主線打開 MusicWeb 原頁核對：Dominy Clements 原文 “that’s where Brian Eno, Gavin Bryars and many others had some of their inspiration”，成立。
+- **卡池資料疑點（未動 seed，留給店主）**：Conrad Bauer《Flüchtiges Glück》seed 1986（Discogs），英文維基 1984（簡介寫 1980 年代中期）；Urfalı Babi《Disko Kebap》seed 1978（Discogs），土耳其維基 1975（簡介寫 1970 年代）；Sly Boots RYM 記 1970（seed 1969，多數來源 1969）。
+- 研究層推翻舊稿的主要錯誤（新稿未沿用）：Tiberian「布加勒斯特大學」（國立音樂大學）；Screechie「四首 Scientist、兩首 Sylvan Morris」；Tavitian「空白卡帶、自費」；Grencsó「自由即興」；Curran VCS3 鋪底（只在〈On My Satin Harp〉）；Bauer「12 月 17 日、45 秒殘響、無疊錄」；Cedrón「小提琴」（中提琴）；Lutajuća Srca 只兩支伴奏樂團（三支）；Lundsten「瑞典第一張」（1966 年已有《Dokumentation 1》）；Sly Boots「五人樂團」（兩人＋署名樂手）；Maxfield「接下 Cage 的課」；Tokyo Kid Brothers 紐約時報好評。
+- 機器 QA：`qa-batch research ad-22` 3 標記皆誤報（韓文、塞爾維亞西里爾字母原文專名；研究稿內千分位，不進簡介）；`out` 4 標記皆年代誤報（1980 年代、1970 年代、1972 至 1973 年）；fix-spacing 0；字數 237–280。半形「!」只在廠名 BE! Jazz 內。
+
+### 主線審稿（2026-11-04，30 張逐張讀、逐句對研究稿；加問「讀完知不知道它憑什麼是這一級」）
+
+改 8 處（6 張，`review-ad-22.json`；同一張多次改分開記）：
+
+- `string connection|workoholic`：「，唱片在波蘭以外卻流通很少」→「；唱片在波蘭以外流通很少」。「是當紅樂團……卻……」是反轉句式（審稿第 4 問）；保留 Discogs 流通事實
+- `andrzej przybielski|w sferze dotyku`：「在波蘭以外卻幾乎沒有名氣」→「在波蘭以外幾乎沒有名氣」。去掉反轉語氣；事實出自 Stephan Moore（Jazzwrap 2011 悼文）
+- `conrad bauer|flüchtiges glück`：「這張獨奏就錄在這個殘響時間極長的空間」→「這張獨奏就錄在這個空間」。「殘響時間極長」研究稿沒有出處（舊稿「45 秒殘響」已判未證實）
+- `conrad bauer|flüchtiges glück`：「，空間的殘響也成了演奏的一部分。」→「；他也長期利用教堂這類空間的殘響來演奏。」。Intakt 廠頁講的是 Bauer 長期的做法，不是本盤的逐曲描述；改寫成他的做法
+- `jesper siliya|giant steps`：「八首曲子結構簡單，重度 fuzz 吉他」→「八首曲子以重度 fuzz 吉他」。「結構簡單」是 Shadoks 再版文案的評語（simple but beautiful），不當聲音事實寫；保留可聽到的 fuzz 吉他、節奏與歌詞性質
+- `blackbuster|blackbuster 3`：「菲律賓原版隨盤附兩張舞步教學海報。」→「各國版本在收藏圈都是手上有的人少、想找的人多。」。舞步海報是封套冷知識，與地位或聲音無關；改寫研究稿的流通事實（Discogs 各版持有少、想要多，質性寫法），補上「為什麼少有人聽」
+- `tokyo kid brothers|黄金バット golden bat`：「原版 LP 在二手店要價兩百多美元。」→「原版 LP 很難聽到，網上流傳的錄音多半是 1977 年另一次現場演出。」。二手店標價是當下快照、只有一家店，不到當下仍成立（同 ad-18 裁定）；改寫研究稿 status 第 4、5 條（Head Heritage Unsung 討論串、1977 Victor 現場盤）
+- `tokyo kid brothers|黄金バット golden bat`：「演出，之後移到 Sheridan Square Playhouse。」→「演出。」。審稿改句後超字（294），壓字
+
+研究稿同步：改動都是刪句、去反轉語氣或改寫成個人層級，未動事實，研究稿不必改。其餘 24 張逐張審過，未改字。第五問：30 張前兩句都講出流通狀況（地方私人廠、國營廠第一號、自費私壓無廠牌、母帶帶出國由倫敦 Leo 發行、限量 800＋200、只有原版、盜版重壓以外無再版）與值得聽的事實（Corbett vs. Dempsey、FMP、BE! Jazz、Vinyl Me, Please、Light in the Attic、Shadoks、Nublu、Superior Viaduct 再版；韓國第一個自由爵士團體；Jazz Forum 連三年第一；B92 百大）。另核對：Curran「影響 Eno 與 Bryars」見上；Maxfield「電子音樂的先驅之一」「〈It's Gonna Rain〉的先聲」出自 Warren Burt（Chroma）；Lundsten「瑞典最早的同類工作室之一」出自英文維基；Grencsó「匈牙利前衛爵士的重要人物」出自 BMC；Przybielski「在波蘭以外幾乎沒有名氣」出自 Stephan Moore（Jazzwrap 2011）；菊地雅章「日本最早做電子爵士搖滾的人之一」出自日文維基；강태환 三重奏「韓國第一個自由爵士團體」出自韓文維基。都是單一來源，寫「被視為」、不用「常」。Eloy「四面各是一段持續長音」只有 Soundohm 商品頁描述 drone，屬聲音描述而非評價，照留。
+
+### 上線
+
+- `kv-token-check` 通過；舊值存 `kv-before-ad-22.json`（60 鍵，33 個非 null）。
+- bulk put 33 鍵（desc2 30＋CJK 卡 desc4 3：菊地雅章、강태환、Tokyo Kid Brothers），wrangler 印 `Success!`；`verify-wave-kv 20261104 ad-21 ad-22` 63/63 逐字一致。
+- `front-check ad-22`：30/30 前台為新稿，CURATED 0。
+- manifest 同步 30 處（11 份 onboarding manifest）。
