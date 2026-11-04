@@ -76,3 +76,7 @@
 - **51768** 避免複述 hook：Lasha 第二句不再寫「生於德州」只寫 1929 年出生；Heaven & Earth 不再寫「四位」，改「名單以 Louis Satterfield 打頭」；Mtume 不寫約 91 分鐘（hook 已有九十多分鐘），The East 寫成「帶黑人民族主義色彩、也兼辦教育」；Anderson 時序寫「Dire Straits 成軍是錄完這張之後的事」。Mtume 日期句寫「29 日，地點是」，與鉤子層 51759 預配的「日於」不同但全批唯一；Bonner 生年改「生於 1948 年的 Joe Bonner」以拆開 hook 尾字「女聲」與日期的黏合。
 - **51769** 自掃（兩檔合掃、han() 4-gram）：3 張以上只剩樂器名「次中音薩克斯風」；途中拆掉跨檔 2 張殘片「錄下這張」「兩把吉他加」「風琴撐起」「貝斯與鼓」「與合成器」「兩位女聲」「這張唱片」「風琴口琴」「與電貝斯」「他吹長笛」，以及組內「拉小提琴」「吹次中音」「貝斯打鼓」。剩 2 張的「自由爵士」（曲風名）與「克斯風手」（樂器名）不動。
 - **51770** 第二句領句全照 note 指派；身分補足：Princess Flower、Inner Dialogue、Probe 只用 note 內的編制描述（未從 facts 撈曲風）。
+
+## 主線審稿（51778–）
+- 51778 逐張讀 26 張，改 3 處：Princess Flower 刪「Daevid Allen 是彈吉他的團員之一。」（Discogs 只把他掛在 B1，是否團員存疑，ar-d-263 補洞亦同判）；Inner Dialogue 刪「翻唱只占兩首，其餘全是原創」（ar-d-263 補洞查得四首翻唱，研究 b 曲目判讀有誤）；Odean Pope「10 歲搬到北費城」→「在北費城長大」（搬家年齡 10／12 歲兩說）。其餘照過。
+- 51779 Mtume《Alkebu-Lan》卡單 releaseType 由 Compilation 改 Album（MB RG 主類型 Album、次類型 Live），exceptionReason 依 eb4 Ganelin 先例寫成現場例外。
