@@ -24,3 +24,16 @@
   - 「〈原住民最屌〉只有五秒」「〈探功德〉第 8 軌與最後一軌」← MB release f174cde8。
   - 「要到 2005 年才被翻成時髦標籤」← 中文維基〈台客〉（2005 年後去污名化）＋Taipei Times（well before taike became hip）。
   - 改動：初稿 242 字超過上限，刪「舞台上的鬧劇由此而來」（推論句、非直接引述）→ 231 字。
+
+## 店主改定簡介（2026-11-04）
+
+店主嫌原簡介太敷衍，親自改定新版，**一字不改**照寫。
+
+- **字數**：`Array.from` 計 231 字，落在 180–240 內，qa 字數不需放行（店主原以為超過 240）。若日後店主再改長，照店主指定放行，不套上限。
+- **寫入**：KV `desc2:`／`desc4:濁水溪公社|台客的復仇`（`kv-token-check` 通過、wrangler Success!）、manifest 兩份的 `description.text`、`desc-tools/batches/output/add-20261103-out-1.json`。
+- **讀回**：worker `/album-desc` X-Cache `KV-HIT-RESTYLED`，與新版逐字一致；published gate 0 error。
+- **出處**（研究檔 `add-20261103-a.json` 末三條 facts，主線打開核過）：
+  - 「常被列為台灣有史以來最重要的唱片之一」← 馬世芳訪談：「台客的復仇」是他心目中台灣有史以來最了不起的唱片，前十或前五名。https://sandeechan.pixnet.net/blog/posts/3028335789
+  - 錄音時程、三更半夜、約四十萬、擱一年多、喜樂音 ← Jeph 1999 年訪談（1997 年七到十月錄、百分之百自己製作、一年多沒發、經林哲儀接上喜樂音）。https://jeph.bluecircus.net/archives/27
+  - 布袋戲／歌仔戲／賣藥廣告／陣頭／歌廳秀／電子花車＋硬派龐克與舞曲電子器材、自稱「台客」← 聲音軌跡。https://soundtraces.tw/?p=103107
+  - 〈農村出事情〉社運傳唱 ← 中文維基濁水溪公社條目（原研究稿已有）。

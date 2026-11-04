@@ -48,6 +48,23 @@ const ALBUM_GENRE_FIX = {
   'Murs|Murs 3:16: The 9th Edition': ['hiphop'],
   'Techno Animal|Re-Entry': ['hiphop','electronic'],
   'Moor Mother|Analog Fluids of Sonic Black Holes': ['hiphop','electronic'],
+  // 2026-11-04 新頂點盤線（流亡 ax3／ax4）：私壓盤 Spotify／Last.fm 無標籤，照卡單曲風
+  "Richard William Turner|The Passenger": ["folk"],
+  "Free Enterprize|The Eye of the Beholder": ["folk"],
+  "McAllen|McAllen": ["folk"],
+  "Jeremy Dormouse|The Toad Recordings": ["folk"],
+  "Rin Eric|The Soundtrack to the Movie in Your Mind": ["folk"],
+  "Princess Flower and the Moon Rays|Dreaming the Magic of Your Maya": ["folk"],
+  "Jesper Siliya|Giant Steps": ["rock"],
+  "Fanny's Group|Cium Mesra": ["rock"],
+  "Marlui Miranda|Olho D'Água": ["world","folk"],
+  // 同名團標籤污染（Last.fm 把別的 Circulation／Probe／Smack／Ghostdance 的標籤算進來）
+  "Ghostdance|Ghostdance": ["folk","rock"],
+  "Circulation|Tank Tracks": ["rock"],
+  "Smack|Smack": ["rock"],
+  "Probe|Direction": ["rock"],
+  "Urfalı Babi|Disko Kebap": ["world","electronic"],
+  "Cool Knights|Bana Mulenga": ["soul","rock"],
 };
 function applySoulFix(artist, genres, album) {
   if (album !== undefined && ALBUM_GENRE_FIX[artist + '|' + album]) return ALBUM_GENRE_FIX[artist + '|' + album].slice();

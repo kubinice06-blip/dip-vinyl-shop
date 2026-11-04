@@ -68,6 +68,8 @@ const catalogPatches = albums.map(a => {
   };
   if (a.identity?.rgMbid) fields.rgMbid = a.identity.rgMbid;
   if (a.identity?.upc) fields.upc = a.identity.upc;
+  // 頂點卡（本批明確採用）一併寫 tier＋apex:true（2026-11-04 新頂點盤線；同 apex-rebalance apply-h 的欄位）
+  if (a.apexAssessment?.eligible && a.apexAssessment.tier) { fields.tier = a.apexAssessment.tier; fields.apex = true; }
   return {
     docId: cardIdOf(a.artist, a.album),
     // updateMask 確保不會蓋掉後台手動改過的其他欄位（§8 第 1 步明文要求）

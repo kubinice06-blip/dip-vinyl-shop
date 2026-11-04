@@ -1245,3 +1245,17 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 
 - 62 位排入 2 批，上架 62 位、skipped 0；審稿合計修 5 位。補洞搜尋 105 次（WebSearch 每位 ≤2 的上限只有 3 位小幅超過）。主線 WebSearch 0 次。
 - 當地語言預抓再次證明有用（243 有頁 29／31、244 有頁 24／31）；`LANGMAP`／`TITLES` 兩個環境變數值得併進正式 `artist-wiki.mjs`。
+
+## ar-d-263／ar-d-264（2026-11-04，新頂點盤線・流亡 ax3 歐美私壓、ax4 亞非拉東歐早期電子）
+
+- 切批改在**上線前從卡單切**（`cut-ax.mjs`，scratchpad），研究稿交件就萃取，補洞與鉤子／寫作層並行；名冊 `roster-ax3.json`（25 位）、`roster-ax4.json`（18 位）。跳過已有介紹的 Joe Bonner、菊地雅章セクステット、강태환。
+- ar-d-264：上架 15、skipped 3（Blackbuster、Fanny's Group、Cool Knights：三格無事實或缺國籍，過不了 thin 門檻）。審稿改 8 處：刪「據說／據資料」5 處（Les Ambassadeurs、Blackfoot、Brigth Engelberts、Tokyo Kid Brothers×2）；Tokyo Kid Brothers 刪《紐約時報》好評（媒體名），Ed Sullivan Show 保留（Apple 上有 1970-10-25 該節目現場單曲可佐證）；Mike Nyoni 刪報紙票選獎項（媒體榜單）；Krzak 刪「歐洲數一數二的小提琴手」（單源評價）；Lutajuća Srca 英文引語「cult favourite」改中文敘述。Eloy 2025-11-19 去世取自補洞稿維基來源。
+- ar-d-263：上架 16、skipped 9（Sly Boots、Richard William Turner、Free Enterprize、David Lewis、Ghostdance、Drnwyn、McAllen、Stefan Gnys、Rin Eric：只有 Discogs 單源或缺國籍）。審稿改 1 處：Mtume 刪「被稱為史上被取樣最多的歌之一」（單源評價）。Bobby Few「被形容為」單源樂評照留（刪了過不了 thin 門檻，口氣已轉述）。
+- 私壓盤藝人 skipped 率高（263：9／25、264：3／18），之後流亡線的藝人介紹預期 thin 比例相近，不必硬補。
+
+## ar-d-265（2026-11-04，add-20261104 補介紹：張睿銓）
+
+- 1 位上架：張睿銓 Chang Jui-Chuan（full，254 字）。補洞 1 組（Sonnet）、寫作 1 組（Opus），qa gap／out 皆 0 處。
+- 主線審稿修 3 處：曲名〈Freedom Zen Dub（空禪迴）〉改〈Lennon's Freedom Zen Dub〉（中文維基與店主寫法；張鐵志用中文副題）；「據說沒去領獎」改「頒獎當天沒去領，人在凱道參加反國光石化抗議」——張鐵志單源之外，維基載遊行與第 1 屆金音獎同為 2010-11-13，日期互證；「緬甸人權」改「聲援西藏與緬甸」（〈空禪〉原為西藏而寫、收入《Free Burma》合輯）。JPF 補 2020 年。
+- 金音獎：第 1 屆、2010-11-13 頒獎（維基＋新頭殼 2010-10-14）。張鐵志寫「2011」為誤，店主寫 2010 正確。
+- 不寫：英語教學博士的學校與年份（維基單源，且與中央社任教時間不一致）、現職（兩篇中央社寫法不同）、「最活躍的抗議歌手之一」（單一評論家形容）、《創世記》「媒體年度十大」（未具名）。
