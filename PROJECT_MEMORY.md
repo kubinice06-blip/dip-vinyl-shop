@@ -10,6 +10,14 @@
 - **條號**：ml60 22681–22760、ml61 22761–22840（跳過 22521–22680 留給並行的 md35／md36）。SCENES.md 加第 80、81 列並標結果。
 - **主要檔案**：`batch-progress/add-20261104-{ml60,ml61}/`、`batch-progress/mood-cells-20261022/{curation-ml60a,ml60b,ml61a,ml61b,master-ml60aml60b,master-ml61aml61b}.json`、`SCENES.md`、`desc-tools/batches/{cards,research,hooks,input,output}/add-20261104-ml6*`、`batch-progress/mood-axes/score-{ml60,ml61}/`、`batch-progress/artist-intro/roster-{ml60,ml61}.json`、`data/artist-intros/`、`seed_cards.json`、`data/mood/`、`genre-tree.json`、`card-subgenres.json`、`draw-covers/`。
 - **驗證**：`verify-album-onboarding --published` 兩批 0 error；`verify-wave-kv` 35／35 一致；`build-card-moods` 錨點 104/104 同格；`qa-artist out` 兩批 0 處。
+### 2026-11-04｜dip-vinyl-shop｜mood-rejudge-20261104：恍惚／頹靡的嘻哈雷鬼重判＋鄰格電子撈入（改 232 張）
+
+- **店主 11-04**：「頹靡跟恍惚還是太少了，多一點電子類的，嘻哈跟雷鬼太多了。」只重判既有卡，不上架。
+- **送判**：恍惚／頹靡的嘻哈與 world（reggae）920 張；鄰格 genres 第一個是 electronic、x 2.6–3.3 或 y 0.2–0.8 的 1,042 張。共 Sonnet 8 片，錨點與店主逐張改判共 7 張鎖住不送。主線審 229 筆移動，推翻 13 筆、改座標或改格 24 筆、補移 10 筆。早期 dancehall 一律改落沸騰，因為低頻厚。
+- **結果**：移出嘻哈 63 張、雷鬼 104 張，去處是雀躍 76、沸騰 61、放鬆 24、暴躁 6；電子移入頹靡 37、恍惚 28。八格前→後：恍惚 1,735→1,603、頹靡 1,626→1,656、雀躍 6,210→6,286、沸騰 2,174→2,235、平靜 714→682。恍惚的 hiphop 20.0→18.1%、world 19.1→14.2%、electronic 13.0→15.8%；頹靡的 electronic 45.9→47.3%。
+- **待店主**：恍惚淨減 132 張，要靠新上架補。King Tubby《Grass Roots of Dub》這張錨點被前一輪 override 放進頹靡，gate 只檢查 v0，所以沒擋。
+- **主要檔案**：`data/mood/overrides.json`（+232）、`data/mood/card-moods.json`、`batch-progress/mood-rejudge-20261104/*`（REPORT、rulings、applied、veto、out、工具）。
+- **驗證**：`build-card-moods.mjs --allow-missing` 錨點 104/104 同格；另有 6 張新上架卡還沒有座標，是其他工作階段的。
 
 ### 2026-11-04｜dip-vinyl-shop｜頻率光譜：星圖星星改用原始分數定位（不再等距平均）
 

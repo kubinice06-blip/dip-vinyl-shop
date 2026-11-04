@@ -1,0 +1,39 @@
+{
+ "cells": {
+  "boil": 2174,
+  "calm": 5207,
+  "lift": 6210,
+  "charge": 3079,
+  "crisp": 1934,
+  "still": 714,
+  "languid": 1735,
+  "decay": 1626
+ },
+ "genres": {
+  "languid": {
+   "folk": 22,
+   "rock": 276,
+   "soul": 374,
+   "pop": 66,
+   "electronic": 226,
+   "jazz": 51,
+   "world": 331,
+   "blues": 5,
+   "hiphop": 347,
+   "classical": 36,
+   "?": 1
+  },
+  "decay": {
+   "rock": 461,
+   "electronic": 747,
+   "blues": 4,
+   "world": 80,
+   "jazz": 61,
+   "pop": 17,
+   "soul": 14,
+   "hiphop": 165,
+   "classical": 52,
+   "folk": 25
+  }
+ }
+}
