@@ -2,7 +2,7 @@
  "v": 1,
  "per": 40,
  "roster": "roster-20260929.json",
- "updatedAt": "2026-11-04T07:14:20.992Z",
+ "updatedAt": "2026-11-04T07:25:40.767Z",
  "batches": [
   {
    "batch": "ar-a-001",
@@ -12158,8 +12158,20 @@
     "mtume umoja ensemble",
     "clifford thornton & the jazz composer's orchestra"
    ],
-   "state": "cut",
-   "note": "新頂點盤線（流亡）add-20261104-ax3 上架卡缺介紹的藝人（ALBUM_ONBOARDING §11；25 位；名冊 batch-progress/artist-intro/roster-ax3.json）"
+   "state": "published",
+   "note": "新頂點盤線（流亡）add-20261104-ax3 上架卡缺介紹的藝人（ALBUM_ONBOARDING §11；25 位；名冊 batch-progress/artist-intro/roster-ax3.json）",
+   "skipped": [
+    "sly boots",
+    "richard william turner",
+    "free enterprize",
+    "david lewis",
+    "ghostdance",
+    "drnwyn",
+    "mcallen",
+    "stefan gnys",
+    "rin eric"
+   ],
+   "reviewFixes": 1
   }
  ]
 }
