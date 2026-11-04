@@ -1,5 +1,17 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-04｜dip-vinyl-shop｜台客簡介改用店主改定版＋add-20261104 張睿銓《創世記》《出走》上架＋ar-d-265 藝人介紹
+
+- **台客的復仇**：店主親自改定新版固定簡介，一字不改寫進 KV `desc2:`／`desc4:濁水溪公社|台客的復仇`、manifest 兩份 `description.text`、`desc-tools/batches/output/add-20261103-out-1.json`。`kv-token-check` 通過；worker `/album-desc` 讀回逐字一致（KV-HIT-RESTYLED）；published gate 0 error。字數 231，在 240 內，不需放行。出處（馬世芳訪談、Jeph 1999 訪談、聲音軌跡）記進研究檔末三條 facts 與 `batch-progress/add-20261103/rulings.md`「店主改定簡介」。
+- **張睿銓兩張**（店主「兩張都收」）：藝人欄「張睿銓 Chang Jui-Chuan」（照林強 Lim Giong 慣例）。MB 有藝人但 0 個 release-group → 兩張走 §1 人工身分。
+  - 《創世記》2006（阿弟仔工作室、首張、條碼 4719851550300）：三軸 4／5／2 uncommon；封面取佳佳唱片行商品圖（目視）；試聽 unavailable（從未上串流）。
+  - 《出走》2009（有料音樂 ULOUD-006，精選輯，`releaseException`＝店主指定，精選輯例外）：三軸 4／4／2 rare；Apple 374396812 封面＋試聽 ready。**2017 是 JPF 入圍年**，原發行 2009-06；JPF 2020 確為 Rap Album 第 1 名（官方公告核過）。
+  - 兩張一般卡、無頂點。簡介 236／253 字，照店主新寫法由主線寫、審（《創世記》查無聲音描述，不編造）。
+  - 寫入：card_catalog 2／2、KV 6 鍵（desc2／desc4／mapgenre3）讀回 2/2、靜態試聽 1＋unavailable 1、seed 2 列（22,505→22,507）；prepare／published gate 0 error。
+- **藝人介紹 ar-d-265**：張睿銓 1 位 full 254 字，補洞 Sonnet 1 組＋寫作 Opus 1 組，主線審稿修 3 處（見 `ar-c-rulings.md`）；分片 39.json 只多這一位。
+- **待本機**：子曲風 `build-genre-tree.mjs --pull --write`（雲端無 KV 快取、全池 --pull 曾超時）；`album_overrides` 不需動（試聽走靜態路徑，repaste 檔備查 `batch-progress/add-20261104/album_overrides-repaste-add-20261104.json`）。
+- **主要檔案**：`seed_cards.json`、`card-preview-status.js`、`data/apple-audio-*.json`、`onboarding-manifest-add-20261104-20261104.json`、`batch-progress/add-20261104/`、`desc-tools/batches/*/add-20261104*`、`data/artist-intros/{39,manifest}.json`、`desc-tools/batches/artist/*ar-d-265*`。
+
 ### 2026-11-04｜dip-vinyl-shop｜對外請求的 User-Agent 拿掉店主 email
 
 - **原因**：雲端工作階段的權限檢查會擋「把店主 email 送給外部服務」。腳本和派工檔的 User-Agent 都寫著 `dip-vinyl-shop/1.0 (店主 email)`，新頂點盤線 ax1–ax4 因此一再卡在權限確認。
