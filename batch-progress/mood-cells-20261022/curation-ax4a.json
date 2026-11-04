@@ -1,1 +1,262 @@
-{"group":"ax4a","factions":[],"albums":[],"notes":[]}
+{
+ "group": "ax4a",
+ "factions": [
+  {
+   "id": "id-psych",
+   "zh": "印尼搖滾／迷幻",
+   "why": "1960–70 年代印尼獨立壓片的地下搖滾",
+   "count": 3
+  },
+  {
+   "id": "af-ghana",
+   "zh": "迦納私壓",
+   "why": "迦納 Gapophone 等本地廠",
+   "count": 1
+  },
+  {
+   "id": "jp-jazz",
+   "zh": "日本地下爵士",
+   "why": "日本爵士／電影配樂的稀有原盤",
+   "count": 1
+  },
+  {
+   "id": "af-south",
+   "zh": "南非私壓",
+   "why": "南非小廠爵士／放克",
+   "count": 1
+  },
+  {
+   "id": "af-west",
+   "zh": "西非私壓",
+   "why": "象牙海岸／馬利／迦納小廠",
+   "count": 1
+  }
+ ],
+ "albums": [
+  {
+   "artist": "Shark Move",
+   "album": "Ghede Chokra's",
+   "year": 1971,
+   "label": "Shark Move Records",
+   "country": "id",
+   "faction": "id-psych",
+   "genres": [
+    "psychedelic",
+    "rock"
+   ],
+   "apexTier": "pearl",
+   "apexWhy": "印尼迷幻前衛搖滾聖杯，自家廠牌私壓，收藏圈公認",
+   "listeners": 8,
+   "why": "泗水 Shark Move 的唯一專輯，自家廠牌壓製，迷幻加前衛的印尼搖滾稀有盤",
+   "moodGuess": {
+    "x": 3.6,
+    "y": 0.9,
+    "z": 0.3,
+    "why": "吉他迷幻、前衛段落多，偏躁偏重"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/34e749ef-096f-4163-8b56-148e7d3e7b9d",
+    "https://www.discogs.com/master/540939"
+   ],
+   "mbRgMbid": "34e749ef-096f-4163-8b56-148e7d3e7b9d",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 首發 1971，Discogs master 標 1973；封面來源 Discogs，Apple 查無專輯"
+  },
+  {
+   "artist": "Marijata",
+   "album": "This Is Marijata",
+   "year": 1976,
+   "label": "Gapophone Records",
+   "country": "gh",
+   "faction": "af-ghana",
+   "genres": [
+    "funk",
+    "soul"
+   ],
+   "apexTier": "pearl",
+   "apexWhy": "迦納 Afro-funk 聖杯，Gapophone 本地壓製，無串流專輯再發",
+   "listeners": 1,
+   "why": "Marijata 的代表作，Gapophone 本地壓製，迦納 70 年代放克／高生活",
+   "moodGuess": {
+    "x": 4.0,
+    "y": 0.6,
+    "z": 1.2,
+    "why": "高速銅管放克，明亮暖色"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/ad9c5642-8bf5-4950-828f-909caf0f9477",
+    "https://www.discogs.com/master/327164"
+   ],
+   "mbRgMbid": "ad9c5642-8bf5-4950-828f-909caf0f9477",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "listeners=1 偏低，主線複查是否錯配"
+  },
+  {
+   "artist": "The Mercy's",
+   "album": "The Mercy's",
+   "year": 1973,
+   "label": "Remaco",
+   "country": "id",
+   "faction": "id-psych",
+   "genres": [
+    "rock"
+   ],
+   "apexTier": "pearl",
+   "apexWhy": "印尼 70 年代地下搖滾／流行私壓，Apple 僅有後來的紀念合輯",
+   "listeners": 14,
+   "why": "棉蘭 Mercy's 兄弟樂團 1973 年首張專輯，印尼 70 年代團體音樂代表",
+   "moodGuess": {
+    "x": 3.3,
+    "y": 0.4,
+    "z": 0.8,
+    "why": "英倫搖滾式旋律，暖色中速"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/d345af59-558e-49d6-8a1c-f957fa4d7671",
+    "https://www.discogs.com/search/?q=The+Mercy%27s+1973&type=master"
+   ],
+   "mbRgMbid": "d345af59-558e-49d6-8a1c-f957fa4d7671",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "廠牌 Remaco 未經 Discogs 核對；封面來源待查（Apple 只有 35 Tahun 合輯）"
+  },
+  {
+   "artist": "Eka Sapta",
+   "album": "Eka Sapta",
+   "year": 1964,
+   "label": "Remaco",
+   "country": "id",
+   "faction": "id-psych",
+   "genres": [
+    "rock"
+   ],
+   "apexTier": "pearl",
+   "apexWhy": "印尼 60 年代器樂吉他團體早期私壓，無串流原盤",
+   "listeners": 10,
+   "why": "雅加達吉他器樂團 Eka Sapta 1964 首張專輯，Bing Slamet 年代印尼地下前身",
+   "moodGuess": {
+    "x": 3.0,
+    "y": 0.1,
+    "z": 1.0,
+    "why": "衝浪式吉他器樂，輕快"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/3e562605-3dae-4cab-a0c5-4bc10f4a0624",
+    "https://www.discogs.com/search/?q=Eka+Sapta&type=master"
+   ],
+   "mbRgMbid": "3e562605-3dae-4cab-a0c5-4bc10f4a0624",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "廠牌與封面來源待核；Apple 只有 Koleksi Lagu Instrumental 合輯"
+  },
+  {
+   "artist": "Masabumi Kikuchi Sextet",
+   "album": "Hairpin Circus",
+   "year": 1972,
+   "label": "Philips",
+   "country": "jp",
+   "faction": "jp-jazz",
+   "genres": [
+    "jazz"
+   ],
+   "apexTier": "pearl",
+   "apexWhy": "日本爵士收藏聖杯，Philips 原盤電影配樂，無串流再發",
+   "listeners": 13,
+   "why": "菊地雅章 1972 年為電影《ヘアピン・サーカス》錄的六重奏，爵士放克融合，日本地下爵士收藏聖杯",
+   "moodGuess": {
+    "x": 3.7,
+    "y": 0.8,
+    "z": -0.2,
+    "why": "電影配樂爵士放克，緊繃偏冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/f8230428-b0b6-49a1-ae78-cc1a10fae57c",
+    "https://www.discogs.com/master/3419320"
+   ],
+   "mbRgMbid": "f8230428-b0b6-49a1-ae78-cc1a10fae57c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Masabumi Kikuchi|菊地雅章",
+   "uncertain": "MB 藝人名為 Masabumi Kikuchi，Last.fm 以 Masabumi Kikuchi 查得 13 listeners"
+  },
+  {
+   "artist": "Sakhile",
+   "album": "Sakhile",
+   "year": 1982,
+   "label": "Moonshine",
+   "country": "za",
+   "faction": "af-south",
+   "genres": [
+    "jazz",
+    "funk"
+   ],
+   "apexTier": "pearl",
+   "apexWhy": "南非 Moonshine 小廠私壓，無串流原盤",
+   "listeners": 268,
+   "why": "祖魯／南非爵士放克團 Sakhile 1982 年 Moonshine 廠牌專輯",
+   "moodGuess": {
+    "x": 3.4,
+    "y": 0.3,
+    "z": 1.0,
+    "why": "南非爵士放克，暖亮"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/3a85d60e-6bed-47c0-aee7-7a9161e46804",
+    "https://www.discogs.com/master/451411"
+   ],
+   "mbRgMbid": "3a85d60e-6bed-47c0-aee7-7a9161e46804",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "listeners 268 接近上限；Apple 有同名藝人其他單曲／專輯，無本張"
+  },
+  {
+   "artist": "Les Ambassadeurs",
+   "album": "Mandjou",
+   "year": 1978,
+   "label": "Amons Records",
+   "country": "ci",
+   "faction": "af-west",
+   "genres": [
+    "funk",
+    "world"
+   ],
+   "apexTier": "pearl",
+   "apexWhy": "象牙海岸小廠 Amons 原盤，無串流",
+   "listeners": 13,
+   "why": "馬利裔班底在阿比讓的 Ambassadeur International 1978 年專輯",
+   "moodGuess": {
+    "x": 3.6,
+    "y": 0.4,
+    "z": 1.3,
+    "why": "曼丁音樂放克，暖亮"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/533505",
+    "https://api.discogs.com/masters/533505"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": "MB release-group 搜尋 Les Ambassadeurs / Mandjou 無結果",
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/533505",
+    "https://api.discogs.com/masters/533505"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Discogs 署名 Ambassadeur International；Last.fm 為 Les Ambassadeurs。MB absence 文字需主線核"
+  }
+ ],
+ "notes": []
+}
