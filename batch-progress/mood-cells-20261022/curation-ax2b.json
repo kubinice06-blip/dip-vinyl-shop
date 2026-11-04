@@ -1,0 +1,647 @@
+{
+ "group": "ax2b",
+ "factions": [
+  {
+   "id": "improv",
+   "zh": "激進即興",
+   "count": 4,
+   "why": "reductionism／onkyo／極端自由即興"
+  },
+  {
+   "id": "electronic",
+   "zh": "極端電子",
+   "count": 3,
+   "why": "Mego 系與噪音電子"
+  },
+  {
+   "id": "metal",
+   "zh": "反結構金屬",
+   "count": 12,
+   "why": "黑／死金屬裡反結構的作品"
+  }
+ ],
+ "albums": [
+  {
+   "artist": "Rhodri Davies",
+   "album": "Trem",
+   "year": 2002,
+   "label": "Confront",
+   "country": "UK",
+   "faction": "improv",
+   "genres": [
+    "experimental"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "威爾斯豎琴手的電子豎琴與零件獨奏，屬倫敦激進即興／縮減派，幾乎無旋律可循；依 MB 與 Apple 專輯頁。",
+   "listeners": null,
+   "why": "威爾斯豎琴手的電子豎琴與零件獨奏，屬倫敦激進即興／縮減派，幾乎無旋律可循；依 MB 與 Apple 專輯頁。",
+   "moodGuess": {
+    "x": null,
+    "y": null,
+    "z": null,
+    "why": "待主線打分"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/3983f4f7-4158-3be2-a042-b57c1ecedc47",
+    "https://coverartarchive.org/release-group/3983f4f7-4158-3be2-a042-b57c1ecedc47/front",
+    "https://music.apple.com/us/album/trem/1491367719"
+   ],
+   "mbRgMbid": "3983f4f7-4158-3be2-a042-b57c1ecedc47",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "label 待研究層確認；Apple 標 2003，MB 為 2002"
+  },
+  {
+   "artist": "Musica Elettronica Viva",
+   "album": "Friday",
+   "year": 1969,
+   "label": "BYG Actuel",
+   "country": "Italy/US",
+   "faction": "improv",
+   "genres": [
+    "experimental"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "羅馬美籍集體 MEV 的集體即興現場錄音，群體嘶吼、電子與噪響不設結構；BYG Actuel 系列公認最難入耳的一批。",
+   "listeners": null,
+   "why": "羅馬美籍集體 MEV 的集體即興現場錄音，群體嘶吼、電子與噪響不設結構；BYG Actuel 系列公認最難入耳的一批。",
+   "moodGuess": {
+    "x": null,
+    "y": null,
+    "z": null,
+    "why": "待主線打分"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/e3217866-75b1-4ad2-bb1d-e751b41eeeb3",
+    "https://coverartarchive.org/release-group/e3217866-75b1-4ad2-bb1d-e751b41eeeb3/front",
+    "https://www.discogs.com/master/216622"
+   ],
+   "mbRgMbid": "e3217866-75b1-4ad2-bb1d-e751b41eeeb3",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "MEV 的 Friday 為現場盤，為其代表作",
+   "queryAlias": "",
+   "uncertain": "7 星門檻拿不準，現場盤；請研究層查樂評是否稱其難聽"
+  },
+  {
+   "artist": "Bernhard Günter",
+   "album": "Un peu de neige salie",
+   "year": 1993,
+   "label": "Trente Oiseaux",
+   "country": "Germany",
+   "faction": "improv",
+   "genres": [
+    "experimental"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "極端安靜到近乎無聲的縮減主義代表作，被視為 onkyo／reductionism 前身，需要極高音量才聽得到。",
+   "listeners": null,
+   "why": "極端安靜到近乎無聲的縮減主義代表作，被視為 onkyo／reductionism 前身，需要極高音量才聽得到。",
+   "moodGuess": {
+    "x": null,
+    "y": null,
+    "z": null,
+    "why": "待主線打分"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/d9202e34-6175-3a4c-9a43-e44c343a7bbe",
+    "https://coverartarchive.org/release-group/d9202e34-6175-3a4c-9a43-e44c343a7bbe/front",
+    "https://www.discogs.com/master/141118"
+   ],
+   "mbRgMbid": "d9202e34-6175-3a4c-9a43-e44c343a7bbe",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "難聽方向是近乎靜默，非吵；label 待確認"
+  },
+  {
+   "artist": "Mattin",
+   "album": "Proletarian of Noise",
+   "year": 2006,
+   "label": "",
+   "country": "Spain",
+   "faction": "improv",
+   "genres": [
+    "noise"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "Mattin 以反音樂、拒絕美學的激進即興／噪音錄音，常被引為最反聽覺愉悅的一類。",
+   "listeners": null,
+   "why": "Mattin 以反音樂、拒絕美學的激進即興／噪音錄音，常被引為最反聽覺愉悅的一類。",
+   "moodGuess": {
+    "x": null,
+    "y": null,
+    "z": null,
+    "why": "待主線打分"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/374c0526-1d1b-4417-8f66-61a7ac4ede70",
+    "https://coverartarchive.org/release-group/374c0526-1d1b-4417-8f66-61a7ac4ede70/front",
+    "https://www.discogs.com/master/3631458"
+   ],
+   "mbRgMbid": "374c0526-1d1b-4417-8f66-61a7ac4ede70",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "可信度中等；封面僅確認 Discogs master 存在，代表作也可能是 Going Fragile"
+  },
+  {
+   "artist": "Pita",
+   "album": "Get Out",
+   "year": 1999,
+   "label": "Mego",
+   "country": "Austria",
+   "faction": "electronic",
+   "genres": [
+    "electronic",
+    "noise"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "Peter Rehberg 的 Mego 經典，高頻失真與數位崩壞，常被列為最難入耳的電子專輯。",
+   "listeners": null,
+   "why": "Peter Rehberg 的 Mego 經典，高頻失真與數位崩壞，常被列為最難入耳的電子專輯。",
+   "moodGuess": {
+    "x": null,
+    "y": null,
+    "z": null,
+    "why": "待主線打分"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/df038b60-6b03-31da-895f-49f13b658aa0",
+    "https://coverartarchive.org/release-group/df038b60-6b03-31da-895f-49f13b658aa0/front",
+    "https://www.discogs.com/master/64265"
+   ],
+   "mbRgMbid": "df038b60-6b03-31da-895f-49f13b658aa0",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Russell Haswell",
+   "album": "Live Salvage 1997-2000",
+   "year": 2000,
+   "label": "Editions Mego",
+   "country": "UK",
+   "faction": "electronic",
+   "genres": [
+    "electronic",
+    "noise"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "Haswell 十八次現場的過載噪音剪貼，Mego 家族極端電子代表作。",
+   "listeners": null,
+   "why": "Haswell 十八次現場的過載噪音剪貼，Mego 家族極端電子代表作。",
+   "moodGuess": {
+    "x": null,
+    "y": null,
+    "z": null,
+    "why": "待主線打分"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/188462",
+    "https://music.apple.com/us/album/live-salvage-1997-2000/1799285250"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": "MusicBrainz search for artist Russell Haswell lists no release-group titled Live Salvage 1997-2000 (only Second Live Salvage 2008)",
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/188462",
+    "https://music.apple.com/us/album/live-salvage-1997-2000/1799285250"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 無此盤，需 mbAbsenceProof；Discogs master 年份 2008，原版 CD 為 2000；Apple 標 Live Salvage 1997->2000"
+  },
+  {
+   "artist": "Lasse Marhaug",
+   "album": "The Shape of Rock to Come",
+   "year": 2004,
+   "label": "Pica Disk",
+   "country": "Norway",
+   "faction": "electronic",
+   "genres": [
+    "noise",
+    "electronic"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "Marhaug 以聲音拼貼反諷 Ornette 標題的極端噪音專輯。",
+   "listeners": null,
+   "why": "Marhaug 以聲音拼貼反諷 Ornette 標題的極端噪音專輯。",
+   "moodGuess": {
+    "x": null,
+    "y": null,
+    "z": null,
+    "why": "待主線打分"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/5be672e7-4823-309b-8cdb-fd07934ac125",
+    "https://coverartarchive.org/release-group/5be672e7-4823-309b-8cdb-fd07934ac125/front"
+   ],
+   "mbRgMbid": "5be672e7-4823-309b-8cdb-fd07934ac125",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "label 與可信度待確認，拿不準"
+  },
+  {
+   "artist": "Abruptum",
+   "album": "Obscuritatem Advoco Amplectère Me",
+   "year": 1993,
+   "label": "Deathlike Silence Productions",
+   "country": "Sweden",
+   "faction": "metal",
+   "genres": [
+    "metal",
+    "black-metal"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "瑞典黑金屬的反音樂代表，全盤為尖叫、噪響與氛圍，無歌曲結構，常被稱最難聽的黑金屬專輯。",
+   "listeners": null,
+   "why": "瑞典黑金屬的反音樂代表，全盤為尖叫、噪響與氛圍，無歌曲結構，常被稱最難聽的黑金屬專輯。",
+   "moodGuess": {
+    "x": null,
+    "y": null,
+    "z": null,
+    "why": "待主線打分"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/1cbe1333-5fd6-3d69-b818-1d5dbb660ce1",
+    "https://coverartarchive.org/release-group/1cbe1333-5fd6-3d69-b818-1d5dbb660ce1/front"
+   ],
+   "mbRgMbid": "1cbe1333-5fd6-3d69-b818-1d5dbb660ce1",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "派工訊息寫 1997，MB 為 1993-03-15（原盤年份）"
+  },
+  {
+   "artist": "Teitanblood",
+   "album": "Death",
+   "year": 2014,
+   "label": "Norma Evangelium Diaboli",
+   "country": "Spain",
+   "faction": "metal",
+   "genres": [
+    "metal",
+    "black-metal"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "西班牙死亡／黑金屬的牆狀轟鳴，結構近乎消融。",
+   "listeners": null,
+   "why": "西班牙死亡／黑金屬的牆狀轟鳴，結構近乎消融。",
+   "moodGuess": {
+    "x": null,
+    "y": null,
+    "z": null,
+    "why": "待主線打分"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/6ed45d9b-7f0c-4051-8915-88d5d1e8040b",
+    "https://coverartarchive.org/release-group/6ed45d9b-7f0c-4051-8915-88d5d1e8040b/front"
+   ],
+   "mbRgMbid": "6ed45d9b-7f0c-4051-8915-88d5d1e8040b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "7 星門檻拿不準"
+  },
+  {
+   "artist": "Gnaw Their Tongues",
+   "album": "All the Dread Magnificence of Perversity",
+   "year": 2009,
+   "label": "Crucial Blast",
+   "country": "Netherlands",
+   "faction": "metal",
+   "genres": [
+    "metal",
+    "industrial"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "荷蘭單人計畫，黑金屬與噪音／工業的混沌，評論稱需要忍受而非聆聽。",
+   "listeners": null,
+   "why": "荷蘭單人計畫，黑金屬與噪音／工業的混沌，評論稱需要忍受而非聆聽。",
+   "moodGuess": {
+    "x": null,
+    "y": null,
+    "z": null,
+    "why": "待主線打分"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/2d0acb37-5964-48ce-958d-0be6ebaa64d7",
+    "https://coverartarchive.org/release-group/2d0acb37-5964-48ce-958d-0be6ebaa64d7/front",
+    "https://crucialblast.bandcamp.com/album/all-the-dread-magnificence-of-perversity"
+   ],
+   "mbRgMbid": "2d0acb37-5964-48ce-958d-0be6ebaa64d7",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "代表作可能是 L' Arrivée de la Terne Mort Triomphante"
+  },
+  {
+   "artist": "Ehnahre",
+   "album": "Taming the Cannibals",
+   "year": 2010,
+   "label": "Self-released",
+   "country": "USA",
+   "faction": "metal",
+   "genres": [
+    "metal",
+    "experimental"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "美國反結構死亡／噪音金屬，節奏與調性刻意崩解。",
+   "listeners": null,
+   "why": "美國反結構死亡／噪音金屬，節奏與調性刻意崩解。",
+   "moodGuess": {
+    "x": null,
+    "y": null,
+    "z": null,
+    "why": "待主線打分"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/7de5b0eb-7cec-4e97-981c-397bbcd2ebce",
+    "https://coverartarchive.org/release-group/7de5b0eb-7cec-4e97-981c-397bbcd2ebce/front",
+    "https://music.apple.com/us/album/taming-the-cannibals/400597550"
+   ],
+   "mbRgMbid": "7de5b0eb-7cec-4e97-981c-397bbcd2ebce",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "代表作可能是 The Man Closing Up (2008)，也有 Apple 頁"
+  },
+  {
+   "artist": "Dodecahedron",
+   "album": "Dodecahedron",
+   "year": 2012,
+   "label": "Season of Mist",
+   "country": "Netherlands",
+   "faction": "metal",
+   "genres": [
+    "metal",
+    "black-metal"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "荷蘭黑金屬，以非歐幾何式的無調riff與反節奏聞名，被視為反結構金屬代表。",
+   "listeners": null,
+   "why": "荷蘭黑金屬，以非歐幾何式的無調riff與反節奏聞名，被視為反結構金屬代表。",
+   "moodGuess": {
+    "x": null,
+    "y": null,
+    "z": null,
+    "why": "待主線打分"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/b530ca9a-4a42-41f6-a5e8-01546b9d4ebb",
+    "https://coverartarchive.org/release-group/b530ca9a-4a42-41f6-a5e8-01546b9d4ebb/front"
+   ],
+   "mbRgMbid": "b530ca9a-4a42-41f6-a5e8-01546b9d4ebb",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Pan.Thy.Monium",
+   "album": "Khaooohs and Kon-Fus-Ion",
+   "year": 1996,
+   "label": "Osmose Productions",
+   "country": "Sweden",
+   "faction": "metal",
+   "genres": [
+    "metal",
+    "experimental"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "死亡金屬加爵士管樂與無調拼貼，題名即宣告混亂。",
+   "listeners": null,
+   "why": "死亡金屬加爵士管樂與無調拼貼，題名即宣告混亂。",
+   "moodGuess": {
+    "x": null,
+    "y": null,
+    "z": null,
+    "why": "待主線打分"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/e5d8eb47-041d-381f-96bc-90219b9fa70e",
+    "https://coverartarchive.org/release-group/e5d8eb47-041d-381f-96bc-90219b9fa70e/front"
+   ],
+   "mbRgMbid": "e5d8eb47-041d-381f-96bc-90219b9fa70e",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "難聽度不如其他，7 星拿不準"
+  },
+  {
+   "artist": "Blut Aus Nord",
+   "album": "MoRT",
+   "year": 2006,
+   "label": "Debemur Morti Productions",
+   "country": "France",
+   "faction": "metal",
+   "genres": [
+    "metal",
+    "black-metal"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "法國黑金屬走向工業與不協和的 MoRT，常被視為其最晦澀之作。",
+   "listeners": null,
+   "why": "法國黑金屬走向工業與不協和的 MoRT，常被視為其最晦澀之作。",
+   "moodGuess": {
+    "x": null,
+    "y": null,
+    "z": null,
+    "why": "待主線打分"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/f7cad904-cd80-3406-84d5-445a4f84e94f",
+    "https://coverartarchive.org/release-group/f7cad904-cd80-3406-84d5-445a4f84e94f/front"
+   ],
+   "mbRgMbid": "f7cad904-cd80-3406-84d5-445a4f84e94f",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "7 星拿不準，可能只到 6"
+  },
+  {
+   "artist": "Impetuous Ritual",
+   "album": "Unholy Congregation of Hypocritical Ambivalence",
+   "year": 2014,
+   "label": "Profound Lore",
+   "country": "Australia",
+   "faction": "metal",
+   "genres": [
+    "metal",
+    "death-metal"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "澳洲黑死金屬，以過載的低頻牆與反節奏著稱。",
+   "listeners": null,
+   "why": "澳洲黑死金屬，以過載的低頻牆與反節奏著稱。",
+   "moodGuess": {
+    "x": null,
+    "y": null,
+    "z": null,
+    "why": "待主線打分"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/c19a5e57-f8d9-443d-be4c-e6e236b7d02e",
+    "https://coverartarchive.org/release-group/c19a5e57-f8d9-443d-be4c-e6e236b7d02e/front"
+   ],
+   "mbRgMbid": "c19a5e57-f8d9-443d-be4c-e6e236b7d02e",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "label 待確認"
+  },
+  {
+   "artist": "Mitochondrion",
+   "album": "Parasignosis",
+   "year": 2011,
+   "label": "Dark Descent Records",
+   "country": "Canada",
+   "faction": "metal",
+   "genres": [
+    "metal",
+    "death-metal"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "加拿大深淵死亡金屬，不協和與混濁錄音營造反結構壓迫。",
+   "listeners": null,
+   "why": "加拿大深淵死亡金屬，不協和與混濁錄音營造反結構壓迫。",
+   "moodGuess": {
+    "x": null,
+    "y": null,
+    "z": null,
+    "why": "待主線打分"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/f5b1463b-f0c0-4f81-ac32-8f5ef3764c71",
+    "https://coverartarchive.org/release-group/f5b1463b-f0c0-4f81-ac32-8f5ef3764c71/front"
+   ],
+   "mbRgMbid": "f5b1463b-f0c0-4f81-ac32-8f5ef3764c71",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "7 星拿不準"
+  },
+  {
+   "artist": "Lugubrum",
+   "album": "Heilige Dwazen",
+   "year": 2005,
+   "label": "Wolf Records",
+   "country": "Belgium",
+   "faction": "metal",
+   "genres": [
+    "metal",
+    "black-metal"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "比利時前衛黑金屬，以怪誕不協和的管弦與重複著稱。",
+   "listeners": null,
+   "why": "比利時前衛黑金屬，以怪誕不協和的管弦與重複著稱。",
+   "moodGuess": {
+    "x": null,
+    "y": null,
+    "z": null,
+    "why": "待主線打分"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/7da06913-9986-35a7-b030-1b18d433ec5a",
+    "https://coverartarchive.org/release-group/7da06913-9986-35a7-b030-1b18d433ec5a/front"
+   ],
+   "mbRgMbid": "7da06913-9986-35a7-b030-1b18d433ec5a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "label 與 7 星門檻拿不準，建議汰換"
+  },
+  {
+   "artist": "Antediluvian",
+   "album": "Through the Cervix of Hawaah",
+   "year": 2011,
+   "label": "Nuclear War Now! Productions",
+   "country": "Canada",
+   "faction": "metal",
+   "genres": [
+    "metal",
+    "death-metal"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "加拿大黑死金屬，洞穴般的混濁音牆。",
+   "listeners": null,
+   "why": "加拿大黑死金屬，洞穴般的混濁音牆。",
+   "moodGuess": {
+    "x": null,
+    "y": null,
+    "z": null,
+    "why": "待主線打分"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/673c2878-a5f5-402e-b4cd-b57b534a0fb2",
+    "https://coverartarchive.org/release-group/673c2878-a5f5-402e-b4cd-b57b534a0fb2/front"
+   ],
+   "mbRgMbid": "673c2878-a5f5-402e-b4cd-b57b534a0fb2",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "7 星拿不準"
+  },
+  {
+   "artist": "Ævangelist",
+   "album": "Writhes in the Murk",
+   "year": 2014,
+   "label": "Debemur Morti Productions",
+   "country": "USA",
+   "faction": "metal",
+   "genres": [
+    "metal",
+    "black-metal"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "美國黑金屬混合暗黑氛圍與噪音，混沌且令人窒息。",
+   "listeners": null,
+   "why": "美國黑金屬混合暗黑氛圍與噪音，混沌且令人窒息。",
+   "moodGuess": {
+    "x": null,
+    "y": null,
+    "z": null,
+    "why": "待主線打分"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/693e28dc-e4ee-492e-ab93-ecc2a8ac41fb",
+    "https://coverartarchive.org/release-group/693e28dc-e4ee-492e-ab93-ecc2a8ac41fb/front"
+   ],
+   "mbRgMbid": "693e28dc-e4ee-492e-ab93-ecc2a8ac41fb",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "7 星拿不準"
+  }
+ ],
+ "notes": [
+  "共 19 張，低於 24：池子不夠照實交。",
+  "Keith Rowe（卡池已有 Keith Rowe & Thomas Lehn & Marcus Schmickler 頂點）、Taku Sugimoto、Farmers Manual、Rashad Becker、SME、Paul Lovens 已在卡池，剔除。",
+  "Axel Dörner、Radu Malfatti 找不到可確認的封面來源，不提；Jliat、Mark Fell、Sachiko M 之外 onkyo 未找到足夠把握。",
+  "WebSearch 用 2 次，結果對公認度幾乎無佐證；apexWhy 多為依常識，需研究層查證 Wire／RYM／書目。",
+  "moodGuess 未填數值，留給主線；evidence 的 CAA 連結為 307 轉址存在。",
+  "label、國別多為記憶填寫，請研究層確認。"
+ ]
+}
