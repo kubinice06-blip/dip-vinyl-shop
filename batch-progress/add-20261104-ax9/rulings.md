@@ -37,3 +37,15 @@
 - **52307** 未深查、判 none：Bastard《Wind of Pain》、Death Side 兩張、Crow《Last Chaos》；Gauze 其他兩張、Lip Cream 其他兩張、G.I.S.M. 其他一張亦未查。未提名：Kuro、Execute、Abraham Cross、Outo、Mobs、Ghoul、Collapse、Selfish。
 - **52308** 流亡 0 張：日本候選的 worker listeners 多為同名誤配（Isterismo 1、Abraham Cross 12、Zouo 24），不可靠；有效值者如 Crow 388 超過門檻。
 - **52309** 來源限制：Last Rites 當日維護中（只能靠上次抓取與搜尋摘要）、Vice Munchies 網域無法解析、日文搜尋無果；亞洲其他地區只有 Unite Asia 一站。
+
+## 策展研究 ax9c 組（歐陸：德、荷、比、義、西、南斯拉夫）
+- **52321** 收（heresy）Lärm《Straight on View》1986：MRR #46『raging, noisy outbursts』36 首半棚錄半現場＋團自述加失真加速度；listeners 661 不能走流亡，強度邊緣。
+- **52322** 收（heresy）Wretched《In nome del loro potere…》1983 7 吋：MRR #7『maniacal unhesitant crushing speed』，8 首約 8 分；第二網域薄（維基缺引註＋部落格輔證），備援流亡（111）。
+- **52323** 收（heresy）Vorkriegsphase《Scheiss Krieg》1983 7 吋：MRR #10『most brutal German thrash yet』＋部落格『Discharge 33 played at 45』，三首約 5.5 分；備援流亡（62）。
+- **52324** 收（heresy）Zyklome A《Repression EP》1983 split：MRR #11 Pushead『fracture the sound barrier』＋部落格『super fast, raging』；LP《Made In Belgium》listeners 325，同藝人只收一張。
+- **52325** 收（pearl）Upset Noise《Disperazione Nevrotica》1985（100）：自壓、2017 才重發；MRR 只說 noise 重於旋律，不夠異端。
+- **52326** 收（pearl）Anti-Dogmatikss《Rompan Filas!!!》1984 demo 卡帶（7）：MRR『blazes』但同時『tuneful』，不走異端；MB 查無，走 mbAbsenceProof。
+- **52327** 收（pearl）Declino《Rivolta e negazione》1983（115）；Kangrena《Terrorismo Sonoro》1983（62，證據薄）；Cheetah Chrome Motherfuckers《Furious Party》1985（214，實驗 thrash）；Peggio Punx《La città è quieta…》1984（16，限 1000 張）；U.B.R.《Corpus Delicti》1984（181，評價僅部落格）；B.G.K.《White Male Dumbinance》1984（185，AT 合輯使『極小廠』偏鬆）。
+- **52328** 不收（none，僅留研究稿）：Neuroot《Right Is Might》（iTunes 有重發）、Indigesti《Osservati dall'inganno》（複雜有旋律）、Raw Power《Screams from the Gutter》（metal 化）、Eskorbuto（77 式）、Negazione（結構清楚）、Kina《Irreale realtà》（無法驗 listeners）。
+- **52329** 未提：Lärm 以外的荷蘭極速團無新證；Agathocles／Cripple Bastards 屬 grind、listeners 過高；東歐 Siekiera、Dezerter 卡池已有，Polska Mafia 屬 Minor Threat 系；法、葡無可信描述。
+- **52330** WebSearch 用 3 次；MRR 各團頁（/band/<slug>/）可穩定取得具名評論，是本組主要來源；185 Miles South 的歐陸 7 吋票選文為輔證。
