@@ -1,6 +1,6 @@
 # dip vinyl 專案備忘錄
 
-### 2026-11-04｜dip-vinyl-shop｜新頂點盤線 ax5：異端 109 → 122（升格 6＋新上架美國自由爵士 7）
+### 2026-11-04｜dip-vinyl-shop｜新頂點盤線 ax5：異端 +13（升格 6＋新上架美國自由爵士 7；併 ax6 後全池 140）
 
 - **店主 11-04**：撤銷「不收能量型自由爵士」，自由爵士／即興中高強度、無調、噪音化的代表作可進異端，但仍要可信資料支持具體極端特徵。ax5 管卡池既有卡升格＋新上架美國自由爵士；ax6（另一工作階段）管美國以外的新藝人。
 - **升格 6／32**：Frank Lowe《Black Beings》、Frank Wright Trio、Charles Gayle《Consecration》、Ayler《Bells》（硬蕊 4→5）、Dave Burrell《Echo》、Ornette《Free Jazz》。Sun Ra《Magic City》、Globe Unity、Sunny Murray、Sharrock、Cyrille、SME、LJCO 等樂評本身稱有結構／易入耳，none。流亡、殿堂卡不轉異端；Peter Kowald 讓給 ax6。
