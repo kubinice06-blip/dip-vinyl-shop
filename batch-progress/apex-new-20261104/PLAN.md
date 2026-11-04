@@ -28,6 +28,7 @@
 | ax2 | 異端 B：極端現代音樂、激進即興、聲音藝術、極端電子、反結構金屬 | 40 | ar-d-262（✅ 介紹上線 32／skipped 3） | ✅ 上線 37（heresy 11／一般 26）；研究汰 7、補策展收 4；試聽 ready 17 |
 | ax3 | 流亡 A：歐美私壓（迷幻、民謠、福音、靈魂放克、地下爵士） | 30 | ar-d-263（✅ 介紹上線 16／skipped 9） | ✅ 上線 26（pearl 21／一般 5） |
 | ax4 | 流亡 B：亞洲、拉美、非洲、東歐、早期電子私壓 | 30 | ar-d-264（✅ 介紹上線 15／skipped 3） | ✅ 上線 20（pearl 15／一般 5） |
+| ax6 | 異端 C：卡池沒有的藝人——美國以外自由爵士／即興（店主點名 Kowald Quintet、姜泰煥）＋war metal、noisegrind、raw BM、drone doom、噪音搖滾、具象／現代音樂 | 50（8 組策展） | ar-d-268、ar-d-269（✅ 介紹上線 14＋3／skipped 0） | ✅ 上線 18（heresy 18／一般 0）；研究汰 32（none 不轉一般卡，52071）；試聽 ready 11 |
 
 - 提名數比目標多約兩成，留給研究層汰換。
 - 一個工作階段跑 2 批（ax1＋ax2、ax3＋ax4），照 CLAUDE.md 的併行規則。
@@ -79,3 +80,10 @@
 - 頂點寫入：card_catalog 帶 tier＋apex:true；`album_overrides.tier` 留給本機後台「依卡池同步頂點旗標」。
 - 情緒評分 `score-ax12` 69 張：ax1 暴躁 30／頹靡 2；ax2 暴躁 23／冷冽 9／頹靡 4／平靜 1。
 - 藝人介紹補洞層的 pubIssues 回頭修了 5 張已上線簡介（Hair Police、Taint、Impetuous Ritual、Karkowski、Tsunoda），KV 已重寫。
+
+## ax6 收工筆記（2026-11-04，分支 `claude/apex-new-ax6`）
+- **異端 109 → 127（+18）**（本工作階段開工時 seed 109；ax5 另計）。提名 50、汰 32，命中 36%。照實上架，沒有放寬標準湊數。
+- **店主撤銷「不收能量型自由爵士」**（11-04），但歐洲、日本、南非的自由爵士藝人卡池幾乎都已有卡（歸 ax5 升格）；ax6 只上卡池沒有的藝人，自由爵士只收到 Kowald Quintet、강태환、Okkyung Lee 三張。
+- 店主點名的 Kowald Quintet、강태환 研究層判 none（評語溫和），主線依點名收（52074），簡介只寫編制與手法事實。
+- 研究汰換主因：查不到「針對這張」的具名 harsh／extreme 樂評（現代音樂、聲音詩、war metal 二線、lowercase 幾乎全軍覆沒）。下一輪要補異端，從本機（能讀 AllMusic／Pitchfork／The Wire）點名、研究層只做核實，命中率會高很多。
+- 研究層判 none 的卡**直接汰換、不轉一般卡**（52071），研究稿都留在 `desc-tools/batches/research/add-20261104-ax6-*.json`，日後可當一般卡撿回。

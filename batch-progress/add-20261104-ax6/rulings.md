@@ -101,3 +101,7 @@
 - **52067** Agoraphobic Nosebleed《Altered States of America》：heresy（邊緣，可逆）。MB 型態 Album（卡單 Compilation 有誤）、首發 2003-04-01、3 吋 CD 21:42／99–100 軌；Exclaim! 評 2008 重發（unlistenable 指混音碟，不可用於本盤）＋Worm Gear（abstract extreme art）。若主線不收一般碾核則汰換。
 - **52068** Dissecting Table《Ultra Point of Intersection Exist》：none、建議汰換。Svart／LITA／零售商同一段重發文案，WebSearch 2 次仍無獨立樂評或專書。
 - 統計：heresy 2（1 邊緣）、none 1；WebSearch 用 2 次。
+
+## 主線（研究 g／h 交件後）
+- **52078** g 組照研究層：Okkyung Lee《Ghil》（邊界，噪音集中在尾段；Quietus＋Musique Machine）、Stalaggh《Projekt Misanthropia》收異端；Sore Throat、Rudolf Eb.er、The Haters 汰換。h 組：Orthrelm《OV》收異端；Agoraphobic Nosebleed 汰換（研究層判邊緣：唯一具名「unlistenable」評的是 2008 年混音碟，不是本盤；其餘只有部落格，且屬碾核邊界）；Dissecting Table 汰換（兩個證據是同一段重發文案）。本批異端定案 **18 張**（研究判 16＋店主點名 2）。
+- **52079** 第三波審稿（out-3 3 張）：Ghil 刪兩處比喻「像船體吱嘎作響」「放大的昆蟲振翅般嗡鳴」→「低沉的吱嘎聲」「放大後的密集嗡鳴」（desc-override）；「被視為 2013 年首屈一指的噪音專輯」對回研究稿 Quietus 2013-07-02，留。Stalaggh 精神病患錄音照寫成樂團自稱＋外界無法驗證，留；Orthrelm 逐句對過，未改字。

@@ -1277,3 +1277,7 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - `peter kowald quintet` 寫 Peter Kowald 本人與 1972 五重奏（卡池 Peter Kowald 個人名義卡另無介紹，未併鍵）。
 - **主線審稿 3 處**：Peter Kowald Quintet 刪「據說只因為那是學校管弦樂團裡沒人想拉的樂器」（傳聞語氣）；Birchville Cat Motel 刪「據介紹，」；Mauricio Kagel 刪「據說」引導。其餘 11 位逐位審過未改字（Sete Star Sept 的 Keiji Haino／Fushitsusha 照東亞原文規則寫灰野敬二／不失者，確認）。
 - 補洞 pubIssues 0（卡池無既有簡介）。
+
+## ar-d-269（2026-11-04，新頂點盤線 ax6 第二波＝大提琴噪音即興、噪音黑金屬、極簡金屬）
+- 切 3 位（Okkyung Lee、Stalaggh、Orthrelm）。補洞 1 組、寫作 1 組。skipped 0。
+- **主線審稿 2 處**：Okkyung Lee 刪「據說」引導；Stalaggh 刪「VICE 稱它可能是史上最可怕的唱片之一」（媒體名不進正文，且單源封號）。Orthrelm 逐句審過未改字。
