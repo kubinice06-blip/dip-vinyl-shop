@@ -19,3 +19,10 @@
 - **52316** 不收 Shitlickers《Cracked Cop Skulls》（單一部落格）、Destrucktions《Vox Populi》（MRR 說非純速度）、Bastards《Maailma palaa ja kuolee》（MRR 兩則矛盾）、Rattus《Loud and Fast》（身分衝突）。
 - **52317** 不收 Terveet Kädet《Kädet suojelee》：listeners 99、無串流，是流亡候選，但為合輯、CAA 404、僅 MRR 單源；主線若補得到 Discogs 封面與第二來源可判 pearl。
 - **52318** 池子只有 5 張過線，不湊數；Asocial、Kansan Uutiset、Lama、Appendix、Avskum、Totalitär 等未查（WebSearch 用 7 次，之後轉為閱讀 MRR 團頁）。
+
+## 策展研究 d 組（拉美，條號 52331–52340）
+- **52331** 收（pearl）Massacre 68《¡No Estamos Conformes!》1990：墨西哥城自力出版唯一黑膠，es.wikipedia 稱運動象徵；listeners 62（無標點拼法 519）、iTunes 無；MB 無 RG，走人工身分；非異端（僅單一部落格「噪音風暴」）。Bandcamp 自有頁，主線可判是否算串流。
+- **52332** 收（pearl，弱）Herejía《Resistir al Sistema》1989：原版 30 份卡帶，listeners 203；證據只有 Discogs／Last.fm，年份 1989/1990 衝突，Anghami 有串流——建議備援。
+- **52333** 收（pearl，最弱）Brigada do Ódio《Brigada do Ódio》：listeners 116、iTunes 無；但為 2021 彙整 LP，無樂評描述聽感；主線可不收。
+- **52334** 不收 Olho Seco《Botas, Fuzis, Capacetes》（listeners 3304，無聽感描述）、Ratos de Porão《Crucificados pelo Sistema》（d-beat、48186、有串流）、Armagedom《Silêncio Fúnebre》（thrash 化、有串流）、Alergia《Ratas de Ciudad》（單一來源 demo）。
+- **52335** 異端 0 張：拉美 hardcore 查不到可信來源描述整張噪音化／極速的聽感。其餘起點名單：Cólera、Inocentes、Lobotomia、Restos de Nada、Narcosis、Atoxxxico、Mutantex、G-3 皆有串流或 listeners 過高；Pinochet Boys 僅 2 軌；Psykóze、Juventude Maldita、Fogo Cruzado 查不到合格盤。WebSearch 用 7 次。
