@@ -1,0 +1,215 @@
+[
+ {
+  "key": "hanatarash|hanatarash 3",
+  "artist": "Hanatarash",
+  "album": "Hanatarash 3",
+  "tier": "heresy",
+  "facts": [
+   {
+    "text": "Hanatarash 1983 年在大阪由 Yamantaka Eye（山塚アイ）與 Ikuo Taketani 組成；兩人後來都參與 Boredoms，Taketani 也當過 Zeni Geva 的鼓手。",
+    "src": "https://en.wikipedia.org/wiki/Hanatarash",
+    "block": "status"
+   },
+   {
+    "text": "《Hanatarash 3》1989 年由美國 RRRecords 出成 12 吋 LP，1992 年同廠牌再出 CD；Discogs 記載 A 面九首、B 面五首，共 14 軌，其中〈Live Shit Action 88〉與〈Live Shit Action 84〉為現場錄音。",
+    "src": "https://www.discogs.com/release/695603",
+    "block": "making"
+   },
+   {
+    "text": "Discogs 與 API 的曲目表沒有給各軌長度，也沒有備註錄音年份；卡單稱 1989 為發行年，Vice 稱樂團前三張專輯錄於 1984–1985，但文章未指明收的是哪張，故錄音年不寫。",
+    "src": "https://api.discogs.com/releases/695603",
+    "block": "making"
+   },
+   {
+    "text": "維基記載 RRRecords 的 Ron Lessard 在 Eye 寄出母帶之前，就把一卷 Hanatarash 試聽卡帶先做成黑膠發行，這張在樂迷間成了傳奇；維基未明指就是《3》，不當作定論。",
+    "src": "https://en.wikipedia.org/wiki/Hanatarash",
+    "block": "making"
+   },
+   {
+    "text": "Hanatarash 以極端現場出名：Eye 曾開怪手（挖土機）撞穿場地後牆衝上舞台，也曾把死貓切半，並把圓鋸綁在背上差點切到自己的腿；演出前觀眾要簽切結書。",
+    "src": "https://en.wikipedia.org/wiki/Hanatarash",
+    "block": "extreme"
+   },
+   {
+    "text": "Vice 記載 1985 年東京的怪手那一場：Eye 開怪手撞穿場地側牆、毀掉舞台，正要朝觀眾丟汽油彈時被觀眾攔下，這是樂團第一階段解散前的最後一場；文章未指明場地名稱。",
+    "src": "https://www.vice.com/en/article/hanatarash-radical-sound-bulldozer",
+    "block": "extreme"
+   },
+   {
+    "text": "樂團用電鑽、電鋸等動力工具與重型機械當發聲源，Eye 另靠麥克風處理人聲；錄音裡以全頻寬失真為主，沒有旋律也沒有固定節拍（聲音描述為團體層級）。",
+    "src": "https://www.vice.com/en/article/hanatarash-radical-sound-bulldozer",
+    "block": "extreme"
+   },
+   {
+    "text": "日本場地後來多半拒演，團於 1985 年前後解散，1990 年重組後活動到 1998 年，Vice 稱重組後「少了強烈暴力」。",
+    "src": "https://www.vice.com/en/article/hanatarash-radical-sound-bulldozer",
+    "block": "reception"
+   },
+   {
+    "text": "Vice（Marc-Aurèle Baly，2023）稱樂團早期前三張專輯「相當難聽」，脫離現場脈絡很難完整欣賞，但看得出藝術方向。",
+    "src": "https://www.vice.com/en/article/hanatarash-radical-sound-bulldozer",
+    "block": "reception"
+   },
+   {
+    "text": "維基把 Hanatarash 放在 Japanoise 脈絡，與 Merzbow、Hijokaidan、C.C.C.C.、Incapacitants 同被視為 1980–1990 年代 harsh noise 奠基者之列（類型層級描述）。",
+    "src": "https://en.wikipedia.org/wiki/Harsh_noise",
+    "block": "status"
+   },
+   {
+    "text": "Exclaim!（Kevin Hainey，2005）的 Boredoms 專文把 1989 年 RRRecords 發行《Hanatarash 3》列為 Eye 履歷中的事件，並提到 1985 年 Alchemy 出版樂團的首張 LP《Hanatarashi》；文中不評價內容。",
+    "src": "https://www.exclaim.ca/amparticle/boredoms-art_of_noise",
+    "block": "after"
+   },
+   {
+    "text": "聲音：電動工具與重型機械式的全頻寬失真，短曲為主，夾兩段現場錄音，無旋律無節拍。",
+    "src": "https://www.vice.com/en/article/hanatarash-radical-sound-bulldozer",
+    "block": "sound"
+   },
+   {
+    "text": "聲音：Discogs 風格標為 Abstract、Noise、Industrial；曲名如〈God-Noise-God〉〈Mosh Master X〉〈White Anal Generator〉〈Black Hole Maw〉。",
+    "src": "https://www.discogs.com/release/695603",
+    "block": "sound"
+   },
+   {
+    "text": "Discogs 社群資料顯示這張想要的人數遠多於持有人數（質性描述）。",
+    "src": "https://www.discogs.com/release/695603",
+    "block": "after"
+   }
+  ],
+  "coverage": {
+   "status": "ok",
+   "making": "thin",
+   "sound": "thin",
+   "extreme": "ok",
+   "reception": "thin"
+  },
+  "notes": "舊簡介「兩人 1983 年組成」「怪手撞穿後牆」「拒演」「RRR 049」「A 面九首 B 面五首」查證屬實（RRR 049 出自 Discogs 舊研究稿；本次 API 未回傳目錄號，沿用 ax1 稿）。舊簡介「電鑽與電鋸般的全頻寬失真」是推論：Vice／維基只說樂團用動力工具與機械，不是這張的聲音描述，寫作時改寫為「用動力工具與重型機械發聲」並限定為團體。怪手事件是樂團現場，不是這張錄音的內容，簡介不可寫成錄音內容。找不到這張的具名專評；reception 只有 Vice 對早期專輯的總評（難聽、需現場脈絡），為 thin。Novak《Japanoise》未能取得。Vice 稱怪手場為最後一場、1985 年；維基稱 1985 年前後解散，兩者一致。Vice 與維基對共同創團者有 Taketani／Tabata 之爭，取維基 Taketani。"
+ },
+ {
+  "key": "monde bruits|purgatory",
+  "artist": "Monde Bruits",
+  "album": "Purgatory",
+  "tier": "heresy",
+  "facts": [
+   {
+    "text": "Monde Bruits 是岩崎昇平（Shōhei Iwasaki，1962 年生）的名義，維基稱他是日本噪音圈最早的一批人之一；他曾替 Masami Akita 的 Merzbow 在大阪籌辦第一場演出，也參與過 ABM、MXM、Sian（與 Aube）。",
+    "src": "https://en.wikipedia.org/wiki/Monde_Bruits",
+    "block": "status"
+   },
+   {
+    "text": "《Purgatory》1992 年首度以卡帶發行，廠牌 G.R.O.S.S.（Aube 的中島昭文主理的日本卡帶廠牌）；MusicBrainz 記錄首發 1992 年 5 月 25 日。",
+    "src": "https://soleilmoon.com/?p=166762",
+    "block": "making"
+   },
+   {
+    "text": "全盤兩個長篇：A 面〈In To Purgatory〉22 分 52 秒、B 面〈Out Of Purgatory〉23 分 11 秒，合計約 46 分鐘，各佔一面。",
+    "src": "https://www.discogs.com/master/1453624",
+    "block": "extreme"
+   },
+   {
+    "text": "Urashima 的介紹稱這張把噪音元素拆解到聲音的原始狀態，重組成「聲音的折磨」；為廠商文案。",
+    "src": "https://urashima.it/mondebruits/",
+    "block": "extreme"
+   },
+   {
+    "text": "Soleilmoon：A 面是令人不安的失真聲響，堆到高潮後轉為厚重噪音；B 面有搏動的節拍，加上失真回授與粗糙低保真的質地（廠商文案）。",
+    "src": "https://soleilmoon.com/?p=166762",
+    "block": "sound"
+   },
+   {
+    "text": "同一份說明把他與 Merzbow、Hijokaidan、Incapacitants 相比，並指他摻有具象音樂（musique concrète）、工業與自由即興的成分（廠商文案）。",
+    "src": "https://soleilmoon.com/?p=166762",
+    "block": "sound"
+   },
+   {
+    "text": "Urashima 2023 年重發成限量 199 張黑膠，Emanuele Bonini 在 Audio Dissection 依原始母帶重新處理，附原版封面與 Satoru Higashiteto 訪談（最初刊於 Bananafish，David Hopkins 翻譯）。",
+    "src": "https://soleilmoon.com/?p=166762",
+    "block": "reception"
+   },
+   {
+    "text": "零售商 Bent Crayon Records 稱原卡帶是收藏圈搶手物件；為商家文案，不算具名評價。",
+    "src": "https://bentcrayonrecords.com/product/30809",
+    "block": "reception"
+   },
+   {
+    "text": "岩崎昇平 2005 年 4 月 14 日死於機車事故，Monde Bruits 計畫隨之結束。",
+    "src": "https://urashima.it/mondebruits/",
+    "block": "after"
+   }
+  ],
+  "coverage": {
+   "status": "ok",
+   "making": "thin",
+   "sound": "ok",
+   "extreme": "thin",
+   "reception": "thin"
+  },
+  "notes": "舊簡介事實（1962 年生、替 Merzbow 辦大阪首場、1992-05-25、G.R.O.S.S.、199 張、2005 年車禍）皆與來源相符。Urashima 重發年：Tobira Records 稱 2023 年 3 月、Forced Exposure 列 2023-07-07，搜尋摘要一致為 2023，但 soleilmoon 頁面本身未寫年，寫作時寫「近年」或 2023 皆可。舊簡介「一路堆到高潮再轉成厚重噪音」只指 A 面，B 面有搏動節拍，寫作要分開。找不到獨立樂評，reception 全是廠商與零售文案（單一來源類），極端也只有長度與廠商形容；不要寫地位封號。「最早一批」出自維基，具名樂評無。"
+ },
+ {
+  "key": "the rita|living dead girl",
+  "artist": "The Rita",
+  "album": "Living Dead Girl",
+  "tier": "heresy",
+  "facts": [
+   {
+    "text": "The Rita 是 Sam McKinlay 一人的計畫，來自加拿大溫哥華，1996 年起步，早期做 harsh noise wall，後來轉向 post-industrial。",
+    "src": "https://wikipedia.jakami.de/content/wikipedia_de_all_mini_2026-04/The_Rita",
+    "block": "status"
+   },
+   {
+    "text": "《Living Dead Girl》1998 年由 McKinlay 自己發行卡帶，無廠牌（Discogs 標為 Not On Label，加拿大），兩面各一首無題長曲。",
+    "src": "https://www.discogs.com/release/843197",
+    "block": "making"
+   },
+   {
+    "text": "2020 年 4 月美國 Amethyst Sunset（AS-028）推出限量 298 張 CD 重發，背面註明原版為 1998 年卡帶；兩首無題曲分別約 15 分 10 秒與 15 分 22 秒，合計約 30 分鐘。",
+    "src": "https://www.discogs.com/release/15040772",
+    "block": "reception"
+   },
+   {
+    "text": "Forced Exposure 的 Amethyst Sunset 商品頁稱這是 harsh noise wall 最早、最純粹的錄音之一，形容為半小時不間斷的持續噪音攻擊（零售商文案，單一來源）。",
+    "src": "https://forcedexposure.com/Catalog/AS.028CD.html",
+    "block": "reception"
+   },
+   {
+    "text": "整張只有兩段各約 15 分鐘的連續噪音，沒有分段、沒有節奏或旋律變化（以 Discogs 曲目長度與商品頁描述為準）。",
+    "src": "https://www.discogs.com/release/15040772",
+    "block": "extreme"
+   },
+   {
+    "text": "維基『Harsh noise』把 harsh noise wall 描述為 1990 年代出現的次類型，特徵是響亮、失真、磚牆壓縮式的靜電聲，起源涵蓋美國、日本與法國，並引述 McKinlay 的說法：這個類型是「把日本 harsh noise 圈提純成更精煉的嘎吱聲」。",
+    "src": "https://en.wikipedia.org/wiki/Harsh_noise",
+    "block": "extreme"
+   },
+   {
+    "text": "維基『Harsh noise』把 The Rita 列為 harsh noise wall 的音樂人之一（類型層級）。",
+    "src": "https://en.wikipedia.org/wiki/Harsh_noise",
+    "block": "status"
+   },
+   {
+    "text": "聲音：持續不變的重失真噪音，磚牆壓縮式靜電聲，無旋律無節奏無起伏。",
+    "src": "https://en.wikipedia.org/wiki/Harsh_noise",
+    "block": "sound"
+   },
+   {
+    "text": "聲音：兩首長度近乎相同（15:10、15:22），符合『一面一首、不分段』的卡帶格式。",
+    "src": "https://www.discogs.com/release/15040772",
+    "block": "sound"
+   },
+   {
+    "text": "Discogs 這張 master 卡帶版與 CD 重發版社群評分各 5.0（5 人）與 4.86（14 人），想要人數多於持有人數（質性）。",
+    "src": "https://www.discogs.com/master/1710428",
+    "block": "after"
+   }
+  ],
+  "coverage": {
+   "status": "thin",
+   "making": "thin",
+   "sound": "thin",
+   "extreme": "thin",
+   "reception": "thin"
+  },
+  "notes": "舊簡介「兩首無題各約 15 分鐘」「1996 起步」「1998 卡帶」「自己發」屬實；舊簡介引的『提純成嘎吱聲』出自維基引述 McKinlay，是他對類型的說法，不是對這張的評價。找不到任何獨立樂評，reception 只有再版（2020 Amethyst Sunset）與零售商文案；『最早最純粹之一』是商家說，另有評論認為分類有爭議（見 ax1 稿），寫作不可寫成事實。主要是 harsh noise wall 的類型證據。status thin。"
+ }
+]
