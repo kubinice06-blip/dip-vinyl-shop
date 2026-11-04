@@ -35,3 +35,4 @@
 - 51771 c 組 8 張研究層判合格，主線嚴守「冷門度 5＝私壓或極小廠」字面，大廠發行的 3 張轉一般卡（不填 pearl）：Ebony Rhythm Funk Campaign 同名作（UNI＝MCA 旗下）、Heaven & Earth《Heaven and Earth》（Mercury／Phonogram）、Prince Lasha Ensemble《Insight》（英國 CBS）。其餘 5 張（Joe Bonner／Muse、Odean Pope／Moers、Bobby Few／Center of the World、Mtume Umoja／Strata-East、Thornton／JCOA）皆獨立小廠，照採 pearl。
 - 51772 卡單 label 依研究 c 更正：Prince Lasha《Insight》→ CBS（Birdseye 是後來現場盤廠牌）；Ebony Rhythm Funk Campaign → UNI（Band Aide 是版權方）。
 - 51773 Mtume 與 Thornton 在 Last.fm 各有兩個條目（85／174、83／140），合計仍 <300，照合格。
+- 51774 a 組：Stefan Gnys《English Oaks and Evangeline》Apple 有 2024 正式數位版（改名《Horizoning》），轉一般卡；其餘 8 張照採 pearl。Jeremy Dormouse 卡單國別已是 CA，正文照研究 a 寫加拿大。
