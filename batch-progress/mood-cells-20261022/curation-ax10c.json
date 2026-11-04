@@ -4,13 +4,13 @@
   {
    "id": "us-hardcore-chaos",
    "zh": "美國 chaos／早期 thrash hardcore",
-   "count": 1,
+   "count": 3,
    "why": ""
   },
   {
    "id": "us-grindcore",
    "zh": "美國 grindcore／極速短曲",
-   "count": 2,
+   "count": 3,
    "why": ""
   }
  ],
@@ -117,6 +117,109 @@
    "releaseException": "",
    "queryAlias": "",
    "uncertain": "worker _listeners=23367，非流亡。Exclaim 評的是 2008 重發版（含 20 分鐘 bonus 碟），描述原盤部分有效；Metal Reviews 另有負評（說是 You Suffer 重複 99 次）。2003 年盤，非 hardcore 7 吋。"
+  },
+  {
+   "artist": "D.R.I.",
+   "album": "Dirty Rotten LP",
+   "year": 1983,
+   "label": "Dirty Rotten",
+   "country": "US",
+   "faction": "us-hardcore-chaos",
+   "genres": [
+    "rock"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "MRR #5、deathmetal.org 描述 22 首約 17 分鐘的短促高速；Spin 1985 稱「爛泥般的聲響」。",
+   "listeners": null,
+   "why": "休士頓 D.R.I. 1983 自資首張：22 首擠在約 17 分鐘（最短 19 秒、最長 2:11），Maximum Rocknroll #5（Tim Yohannan）稱「狂躁、強烈、緊繃的 thrash」，deathmetal.org（Ralph Archer，2013）稱短促爆發的歌像「嗑了興奮劑的推土機」；維基引 Spin 1985 稱其為「一大灘爛泥般的聲響」，吉他單調、人聲吼叫，每秒上百和弦的突襲。被視為最早的 thrashcore 專輯之一。",
+   "moodGuess": {
+    "x": -4,
+    "y": 4.5,
+    "z": -3,
+    "why": "22 首短促高速、錄音粗糙"
+   },
+   "evidence": [
+    "https://maximumrocknroll.com/review/mrr-5/dirty-rotten",
+    "https://www.deathmetal.org/news/30-years-ago-dirty-rotten-lp/",
+    "https://en.wikipedia.org/wiki/Dirty_Rotten_LP",
+    "封面：https://coverartarchive.org/release-group/d19cca76-883f-3887-b88e-08dbddfc1c88/front-250",
+    "https://musicbrainz.org/release-group/d19cca76-883f-3887-b88e-08dbddfc1c88"
+   ],
+   "mbRgMbid": "d19cca76-883f-3887-b88e-08dbddfc1c88",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Dirty Rotten Imbeciles",
+   "uncertain": "worker _listeners=49612，非流亡。MB primary-type Album（1983-03），實體為 12 吋 EP／LP（33 轉）；總長 16:41–18 分各源不一，寫簡介用「約 17 分鐘」。MRR 描述偏『緊』而非『糊』，異端依據主要是密度與速度（偏中等強度）。"
+  },
+  {
+   "artist": "Cryptic Slaughter",
+   "album": "Convicted",
+   "year": 1986,
+   "label": "Metal Blade",
+   "country": "US",
+   "faction": "us-hardcore-chaos",
+   "genres": [
+    "rock"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "Rough Edge 稱「兇狠、快到不合理」的 riff 與開場緊迫節奏；AllMusic（維基引）稱 14 首約半小時的腎上腺素爆發。",
+   "listeners": null,
+   "why": "聖塔安娜青少年三人組 1986 年 Metal Blade 首張，14 首約半小時：Rough Edge 稱 riff 「兇殘、快得離譜」、開場〈M.A.D.〉是不留俘虜的狂奔，鼓聲低沉轟隆；維基引 AllMusic（Eduardo Rivadavia）稱「暴躁、腎上腺素驅動的半小時」，並稱他們為「speedcore 的始祖」。",
+   "moodGuess": {
+    "x": -4,
+    "y": 4,
+    "z": -2,
+    "why": "整張狂奔的 crossover"
+   },
+   "evidence": [
+    "https://roughedge.com/cdreviews/c/crypticslaughter.htm",
+    "https://en.wikipedia.org/wiki/Cryptic_Slaughter",
+    "https://www.metalmusicarchives.com/album/cryptic-slaughter/convicted",
+    "封面：https://coverartarchive.org/release-group/473cda3c-62cc-35f9-ada6-2188dc92d1f7/front-250",
+    "https://musicbrainz.org/release-group/473cda3c-62cc-35f9-ada6-2188dc92d1f7"
+   ],
+   "mbRgMbid": "473cda3c-62cc-35f9-ada6-2188dc92d1f7",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "依據偏薄：可信來源只有 AllMusic（經維基轉引，原頁被擋）；Rough Edge 為 e-zine 評論（且說歌有點糊在一起）。worker _listeners=46329，非流亡。偏 crossover thrash，邊緣收。"
+  },
+  {
+   "artist": "Nails",
+   "album": "Unsilent Death",
+   "year": 2010,
+   "label": "Southern Lord",
+   "country": "US",
+   "faction": "us-grindcore",
+   "genres": [
+    "rock"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "Line of Best Fit、Scene Point Blank、Dead Rhetoric 皆述 10 首約 14 分鐘「毫不鬆手」的整張猛攻。",
+   "listeners": null,
+   "why": "加州三人組 10 首只有 13:52、多數不到三分鐘：Line of Best Fit（Rich Etteridge）稱「要吵、要快、不然就別玩」，像一首近乎一次錄成的 14 分鐘長曲，回授短衝後接下一首 d-beat 碾壓；Scene Point Blank 稱沒有一首讓人喘息；Dead Rhetoric（David Gehlke）稱「毫無鬆懈」，Kurt Ballou 操刀的混音「灼熱」。",
+   "moodGuess": {
+    "x": -4.5,
+    "y": 5,
+    "z": -3,
+    "why": "14 分鐘不鬆手"
+   },
+   "evidence": [
+    "https://thelineofbestfit.com/reviews/albums/nails-unsilent-death-38392",
+    "https://www.scenepointblank.com/reviews/nails/unsilent-death/",
+    "https://deadrhetoric.com/?p=2178",
+    "https://en.wikipedia.org/wiki/Unsilent_Death",
+    "封面：https://coverartarchive.org/release-group/6d2da807-879c-4ce4-b9dc-797162c56456/front-250",
+    "https://musicbrainz.org/release-group/6d2da807-879c-4ce4-b9dc-797162c56456"
+   ],
+   "mbRgMbid": "6d2da807-879c-4ce4-b9dc-797162c56456",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "worker _listeners=60805，非流亡。年份：MB 2010-10-28、維基 2010-03，皆 2010。原發行 Six Feet Under／Streetcleaner Records，Southern Lord 重發；寫簡介廠牌要說清楚。Dead Rhetoric 評於 2013（評的是 2010 盤）。"
   }
  ],
  "notes": []
