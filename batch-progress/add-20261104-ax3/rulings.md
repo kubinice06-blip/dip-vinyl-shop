@@ -21,3 +21,17 @@
 - 51706：Jeremy Dormouse 國別為加拿大，卡單 scene 寫「美國民謠私壓」不符；原版標籤印 1968 年版權，部落格稱 1968 發行，facts 不寫發行年。
 - 51707：moodGuess 存疑：Sly Boots、David Lewis、Ghostdance、Drnwyn 實際有鼓與電貝斯或整團編制，不是純輕柔木吉他。
 - 51708：Sly Boots 在 Apple 上同名藝人（2014《Bad News Walkin'》）為另一組，非此盤。
+
+## 研究 c 組
+- 51721：流亡資格查證結果。8 張全數合格（listeners 全在 1–299）：Ebony Rhythm Funk Campaign 68、Heaven & Earth 10、Joe Bonner 70、Prince Lasha Ensemble 68（以 Prince Lasha 名義查為 45，兩條目合計 113）、Odean Pope 99、Bobby Few 99、Mtume Umoja Ensemble 85／174（有無「(Live at the East)」後綴兩條目，合計 259）、Clifford Thornton 83／140（合計 223）。Last.fm 專輯頁在雲端環境回 600「Temporarily Unavailable」、WebFetch 載入失敗，listeners 一律取 worker `_listeners`；已用對不存在盤名回空 `{}` 驗證 worker 為專輯層級、非藝人層級回退。
+- 51722：串流／再發查證：以 iTunes search（專輯與曲目）＋Discogs master versions＋release 查。八張 Apple 皆無該專輯。再發紀錄：Heaven & Earth 2012 荷蘭 PTG CD（PTG 34130）；Prince Lasha 2009 Dusty Groove America CD（DGA3023，Sony 授權隨需壓製）；Odean Pope 1990 Moers CD；Mtume 2016 非官方黑膠；其餘僅黑膠。均非正式串流再發。Spotify／Bandcamp 本環境無法開，未驗，請主線上線前自行補查。
+- 51723：邊界案（合格但標邊界）：Heaven & Earth 為 Mercury（Phonogram）大廠發行，非私壓／極小廠，僅因 listeners 10、無串流而合格；Prince Lasha 為 CBS 大廠（英國），同理。主線若嚴守「私壓或極小廠」字面可汰換這兩張。
+- 51724：推翻策展層：(1) Ebony Rhythm Funk Campaign 不是底特律、Mack Rice／Luther Ingram 圈，團出身印第安納波利斯再到洛杉磯，Wayne Henderson 製作；「Band Aide」是版權方而非廠牌，發行廠牌為 UNI。(2) Prince Lasha《Insight》廠牌只有 CBS（英國），「Birdseye」是 1970 年代後期現場盤的廠牌；錄於 1966 英國，Discogs 風格 Cool Jazz／Hard Bop，非「西岸 spiritual jazz」。建議卡單 label 改 CBS。(3) Bobby Few 首作與自營廠說法查無證據，Center of the World 是廠牌第三號。(4) Clifford Thornton：JCOA 非 Thornton 自營，「Harlem 社區」只見封面壁畫。(5) Odean Pope 為 1982 Moers，風格 Free Funk，非 1960s／spiritual。
+- 51725：moodGuess 存疑：卡單 moodGuess 皆為 0 未評，無需據以汰換；聲音側註：Ebony、Heaven & Earth 為有鼓有人聲的舞池放克／靈魂，Odean Pope 為電貝斯＋鼓的 funk 自由爵士，Mtume 與 Thornton 為大編制含大量打擊樂。
+- 51726：反向禁令：Bonner 2014 辭世、Few 2021 辭世、Thornton 後期 UNESCO 生涯、Mtume 團 Juicy Fruit 皆為與作品無關的後續生平，未入 facts。
+- 51727：thin 三張：Heaven & Earth、Odean Pope、Bobby Few（無樂評、錄音細節缺）。
+
+## 主線研究驗收・c 組（51771–）
+- 51771 c 組 8 張研究層判合格，主線嚴守「冷門度 5＝私壓或極小廠」字面，大廠發行的 3 張轉一般卡（不填 pearl）：Ebony Rhythm Funk Campaign 同名作（UNI＝MCA 旗下）、Heaven & Earth《Heaven and Earth》（Mercury／Phonogram）、Prince Lasha Ensemble《Insight》（英國 CBS）。其餘 5 張（Joe Bonner／Muse、Odean Pope／Moers、Bobby Few／Center of the World、Mtume Umoja／Strata-East、Thornton／JCOA）皆獨立小廠，照採 pearl。
+- 51772 卡單 label 依研究 c 更正：Prince Lasha《Insight》→ CBS（Birdseye 是後來現場盤廠牌）；Ebony Rhythm Funk Campaign → UNI（Band Aide 是版權方）。
+- 51773 Mtume 與 Thornton 在 Last.fm 各有兩個條目（85／174、83／140），合計仍 <300，照合格。
