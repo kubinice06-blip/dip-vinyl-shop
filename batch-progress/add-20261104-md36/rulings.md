@@ -43,3 +43,24 @@
 - **22637**　Eric Holm《Barotrauma》：Boomkat 一篇文案為唯一聲音來源（峽灣水下錄音、細微處理，未提鼓與失真）；曲名典故無來源未寫。moodGuess 未證實也未推翻。status partial。
 - **22638**　本組 WebSearch 用 3 次（Andøya 1、Barotrauma 1〈無效〉、Dead Voices 1〈無效〉）；Discogs 網頁／AllMusic／Forced Exposure 403 改走 Discogs API。Wikipedia API 429，改 WebFetch。
 - **22639**　Prurient 的 Metacritic 平均分不寫（一律不寫分數）；已移除。（facts 第 10 條原含該分數，交件前已改。）
+
+## 研究 b 組
+- **22611**　Robert Henke《Piercing Music》：身分無誤（1994 Imbalance Recordings，單曲 60:42）。moodGuess 存疑：「低頻長殘響、冷寂」無文字來源；只能證實無節拍取向的水聲＋合成 drone（Discogs/MB 標 dark ambient、drone）、隨機事件、Alesis Quadraverb 為效果器。有沒有鼓沒有任何一篇明說，低頻量感、冷暖需主線聽感。
+- **22612**　Murcof《Remembranza》：moodGuess 存疑。卡單「稀疏 glitch 拍、低頻轟鳴」找不到來源；維基寫此作離極簡節拍、走憂鬱和聲、以真人錄的古典樂器為主，並稱 Murcof 晚期不再有電子拍。有鼓與否不確定、傾向少；弦樂暖度風險使 z −0.9 可能偏冷。母親過世的安魂曲背景已寫入。Pitchfork／BBC／AllMusic 樂評全文被擋。
+- **22613**　Murcof／Philippe Petit《First Chapter》：身分無誤（2013，Aagoo AGO061／REV. Laboratories REV003 並列，三首約 40 分）。維基把它歸在 Singles／EPs，MB／Discogs 標 Album／LP，按專輯處理。moodGuess 存疑：有刺耳金屬打擊、失真吉他刺擊與被扭曲成刮擦聲的古提琴（x 1.3 可能偏靜），末曲柔暖近田園（z −1.4 偏深）；「低頻轟鳴」無來源。
+- **22614**　Klimek《Music to Fall Asleep》：發行日 MB 3/31 與 Kompakt 4/18 不一致，年份同為 2006，不影響卡單。moodGuess 存疑：來源為吉他為中心、重 delay、近乎無鼓；「厚電子墊／低頻嗡鳴」無來源；TiVo 稱 Klimek 聲音溫暖、閃爍吉他，z −0.7 可能偏冷。
+- **22615**　Klimek《Dedications》：status thin。聲音只有 Discogs 風格標記，RA／Wire 樂評抓不到，WebSearch 額度已用於其他三張。moodGuess「低頻脈動」無來源，Discogs 標 Minimal Techno 暗示可能有穩定脈動；建議主線聽感複核，不行就汰換。
+- **22616**　Kit Clayton《Nek Sanalet》：身分無誤。有鼓（克制的 dub shuffle），Scaruffi 稱 Kalu 切分帶雷鬼意味、Wire 轉引提到 rocksteady 節奏，與店主「少雷鬼」有衝突風險，主線留意；Meditations 稱冷調裡帶類比暖意，z 可能略偏暖。「~scape 為 Pole 的廠牌」只寫成 Discogs 所列的 Betke／Preisinger 廠牌。
+- **22617**　Kit Clayton《Lateral Forces (Surface Fault)》：身分無誤（CD 七首無題、LP 兩面 Part 1／2）。moodGuess 存疑：Scaruffi 寫末段「穩定響亮的拍子」，x 2.2 可能偏靜；「低頻」無直接來源。聲音事實幾乎單來源（Scaruffi），2000 年 EP 地震概念亦同。
+- **22618**　本組 WebSearch 用 3 次（Klimek、Kit Clayton、Murcof／Petit 各 1）；其餘走 Discogs API、MusicBrainz、WebFetch。Wikipedia API 429 時退而用 WebFetch。AllMusic、Pitchfork、BBC、Juno、Penny Black、Inkoma 皆被擋，未引用。
+- **22619**　本組無推翻策展層的年份、廠牌、盤名；無選輯／重發需移除。
+
+## 研究 c 組
+- **22621**　Variant《The Setting Sun》：moodGuess 存疑（z 與 kick）。RA 新聞稿、RA 樂評、廠方文案三處一致：偏無鼓、重質地，『溫暖、可親近』（樂評戲稱 The Warmest Season）；kick 只在〈As Time Stood Still〉輕輕出現。z 恐中性到暖，建議降預期或汰換。版本：MB 2008-12-03 是三首數位 EP，CD 與 Discogs master 為 2009 年七首版；寫 2009 或維持 2008 由主線定。Hitchell 為 Echospace『共同創辦廠牌』無來源，只寫合作名義。status full。
+- **22622**　Neel《Phobos》：moodGuess 存疑（非 ambient techno）。實為近乎無鼓的深空氛圍（XLR8R：節奏多為壓低的合成質地；Discogs／MB 風格 ambient、drone），僅尾聲一顆帶延遲的 kick。靜、重、冷仍成立，反更貼頹靡。Igloo 稱『一小時』，曲目加總約 46 分鐘，以後者為準。status full。
+- **22623**　Senking《List》：moodGuess 基本成立（慢拍、drone、陰冷）。『dub』在來源中未出現，只寫恐怖片取樣與 drone；人聲取樣的驚嚇突襲可能拉高『躁』，請評分層留意。MB 2007-03／FE 2007-04，寫 2007。status full。
+- **22624**　Senking《Pong》：moodGuess 部分存疑。慢、低頻、dub 成立，但〈Low Flow〉有暖調 Rhodes 式合成和絃、〈Breathing Trouble〉是 techstep 式肌肉低音，x 與 z 可能偏高。聲音證據僅 Cyclic Defrost 一篇（與 Discogs 風格標籤相符）；Bandcamp、Raster 官網頁取不到。status full，聲音部分單源。
+- **22625**　Senking《Capsize Recovery》：moodGuess 基本成立（慢、次低頻、放慢的乾淨鼓、手擊）。類比過載貝斯有『麻醉般暖意』，z 恐不到 −1.3。『不用電腦』FE 文案與樂評雙源可寫。Cyclic Defrost 標題誤植 Capsize Discovery，以正名為準。status full。
+- **22626**　Senking《Closing Ice》：moodGuess 存疑（本組最可能汰換）。與來源不符三處：廠牌寫 mid-tempo 而非慢；廠牌明講旋律根植搖滾流行、有撫慰旋律碎片，非『無旋律』；廠牌稱『陰沉卻溫暖』，Igloo 提到阿拉伯手鼓、現場鼓與回授吉他。y 成立，x 可能略高、z 恐中性到暖。status full。
+- **22627**　Mika Vainio《Black Telephone of Matter》：moodGuess 部分存疑，curatorRisk 應驗。無拍、冷、drone 成立，但 Igloo 指出由短實驗串成、突然切換，〈Silencés...〉爆成失真噪音，〈Bury a Horse's Head〉有金屬尖嘯與 Tesla coil 式搏動；『厚』也因大量靜默而不穩。獨立聲音來源僅 Igloo 一篇。『Touch 第四張個人專輯』據 Igloo 與 Bandcamp，寫時標『據』。status full。
+- **22628**　本組 WebSearch 用 3 次（Neel 1、Variant 1、Senking List 1），其餘走 MB API、Discogs API、Igloo／Cyclic Defrost／RA／Forced Exposure 與 WebFetch；Bandcamp、Raster 官網以 curl 取不到，改 WebFetch。Pong 與 Vainio 的獨立樂評各僅一篇。facts 一律不寫分數星等；Vainio 2017 年辭世與 Pan Sonic 解散與本作無直接綁定，不寫。
