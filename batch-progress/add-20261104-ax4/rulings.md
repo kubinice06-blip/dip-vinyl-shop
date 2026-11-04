@@ -20,3 +20,8 @@
 - 51805：Jesper Siliya《Giant Steps》合格，同上 Spotify／Bandcamp 未能直驗；iTunes 無，僅 2018 Shadoks 實體。
 - 51806：Blackbuster 與 Fanny's Group 存疑：Blackbuster 3 實為舞曲串燒（附舞步海報），非卡單所述「被 DJ 圈挖出的 Pinoy funk」；Fanny's Group 無聲音來源，moodGuess 存疑，status 標 thin。
 - 51807：Last.fm 頁面本機連線回 600，listeners 一律以 worker `_listeners` 為準。Urfalı Babi 卡單 key 為 desc2: 前綴（研究稿已照卡單）。
+
+## 研究 c 組（51821–51830）
+- 51821：c 組 7 張逐張核對流亡資格。合格 3（Lutajuća Srca 12、Eloy 12、Maxfield 75）；不合格 4：Grupa 220《Sivilo Perona》（Discogs 全為 7" 單曲，非專輯）、Schnitzler《Eruption》（Apple 有 Bureau B 2012 Kluster《Eruption》同音源）、Dissevelt（卡單證據連到單曲 master 614758，真專輯為 master 178091／MB 4f7f8f29，且有 2012 Omni CD）、Lundsten（四張 CD 合輯在 Apple 串流含〈Mizar〉，邊緣）。
+- 51822：Last.fm 直連多半回 600，listeners 以 worker `_listeners` 為準；Bandcamp 搜尋頁無法載入，Spotify 未核對，Eloy／Maxfield／Lutajuća Srca 為「暫時合格」。
+- 51823：MB 實際有 Eloy（RG 67561f1f）、Maxfield（RG 85d86ba0）、Dissevelt（RG 4f7f8f29）條目，與卡單 mbAbsenceProof 不符，建議主線補 mbid。
