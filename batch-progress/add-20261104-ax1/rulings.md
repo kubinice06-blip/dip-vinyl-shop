@@ -112,3 +112,4 @@
 ## 主線審稿（2026-11-04）
 - **51575** 逐張審 32 張：Harry Pussy 刪「當時有地下刊物嫌它自溺」（單源評價句）；Vomir「限量 40 套的 DVD 盒」改「以 DVD 盒裝、限量 40 套」（內容是 5 張 CD-R，避免誤讀成 DVD 影音）。其餘照過（廠牌自述如 Hospital Productions、Type Records 屬廠牌說明，不算媒體名）。寫進 `desc-override.json`。
 - **51576** 封面：CAA release-group 無圖的 7 張（Richard Ramirez、The Rita、Skin Crime、Taint、Emil Beaulieau、Hototogisu、Consumer Electronics）改用 Discogs master／release 主圖（`covers.json`）。硬蕊度：機器基線一律 3，改取研究層聲音判定（5：23、4：7、3：2；`ratings-override.json`）。試聽 ready 4／unavailable 28（噪音卡帶與私壓多半不在 Apple）。
+- **51577** 藝人補洞層（ar-d-261 g3）指出 Hair Police 簡介「廠牌 Type Records 自己把這張叫作陰森地牢噪音」歸屬錯：「gruesome dungeon noise」是 Fact 的報導標題（研究稿 src factmag.com），不是廠牌自述。上線後改為「這張交給英國廠牌 Type Records 發行」，`desc-override.json`→manifest→KV 重寫該批（stamp 202611040800）。
