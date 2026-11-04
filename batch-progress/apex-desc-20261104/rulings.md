@@ -109,3 +109,41 @@
 - 兩批重新產 bulk（ad-01 30 鍵、ad-02 31 鍵）並 `wrangler@4 kv bulk put --remote`，皆 `Success!`。`kv-before-ad-0X.json` 保留的是本工作階段寫入**之前**的原始值，回滾用它。
 - **工具錯誤一次**：`ad.mjs`／`front-check.mjs`／`apply-review.mjs` 用 `startsWith('<批>-out-')` 選檔，把 `.v1.json` 備份也讀進來；Map 後讀蓋前，第二次 bulk put 實際寫回的是**第一版（含出處）**。前台比對抓到（35/60 不符），改成只認 `^<批>-out-\d+\.json$`，重產 bulk 並逐鍵對過輸出檔（30/30、31/31）後再 put 一次。之後的批沿用修好的工具，不會再發生。
 - 重寫後回讀 61/61 逐字一致；前台逐張比對 ad-01 29/30（Kind of Blue 仍是 CURATED）、ad-02 30/30。
+
+## ad-05（殿堂 30 張，s3）
+
+- 研究 3 Sonnet（WebSearch a 5／b 1／c 4 次）、寫作 2 Opus；coverage 無 none。sound thin 8 張（London Calling、Ten、Appetite、Paranoid、Back in Black、Parklife、Dummy、Brilliant Corners）照研究稿薄寫。研究層多數靠英文維基轉引（Pitchfork 擋、AllMusic 403）。
+- 研究層推翻舊簡介的主要錯誤（新稿未沿用）：Marquee Moon「英國暢銷」（英榜第 28）、Unknown Pleasures「噴霧罐聲」、Sex Pistols 作證者與 bollocks 字義、Ramones「2014 年金唱片」、Ten「鑽石認證」（13 白金）、Queen「六間錄音室」（七間）、Paranoid「Iommi 獨自二十分鐘」、Parklife 那句話是 Coxon 說的、Kraftwerk 官司終局、Monk「沒人完整彈完」（實為剪接）、Hancock「首張白金爵士專輯」未證實。
+- 寫作特注禁寫：Metallica「首張」、Back in Black「第二暢銷」、Kraftwerk 判決細節、GNR MTV 時段、Nevermind 封面 200 美元與訴訟、Wonderwall 寫給誰、Brubeck 伊斯坦堡（寫土耳其）。
+- 機器 QA：`qa-batch out ad-05` 5 個標記皆誤報（葛萊美名人堂、團員本名）；fix-spacing 0；字數 233–280。
+
+### 主線審稿（2026-11-04，30 張逐張讀、逐句對研究稿）
+
+改 17 處（同一張多次壓字分開記）：
+
+- `television|marquee moon`：「在 1970 年代與後龐克的最佳專輯榜上常排在前段」→「常被列為 1970 年代與後龐克最好的專輯之一」。「榜上常排在前段」是在描述榜單，改成直述地位
+- `the clash|london calling`：「《London Calling》常被列為搖滾史上最好的專輯之一」→「《London Calling》是 The Clash 1979 年的雙專輯，常被列為搖滾史上最好的專輯之一」。審稿第 1 問：第一句沒說是誰、哪年、什麼唱片
+- `the clash|london calling`：「The Clash 在倫敦錄了五到六週」→「樂團在倫敦錄了五到六週」。團名已前移
+- `the clash|london calling`：「成品是 19 首、65 分鐘的雙專輯，以接近單張的價格發售。」→「成品 19 首、65 分鐘，以接近單張的價格發售。」。「雙專輯」已前移，避免重複
+- `talking heads|remain in light`：「《Remain in Light》常被列為 1980 年代最好的專輯之一，2017 年入選美國國家錄音登記表。這是 Brian Eno 為 Talking Heads 製作的最後一張，1980 年夏天在巴哈馬與紐約錄製。」→「《Remain in Light》是 Talking Heads 1980 年的專輯，常被列為 1980 年代最好的專輯之一，2017 年入選美國國家錄音登記表。這是 Brian Eno 為樂團製作的最後一張，同年夏天在巴哈馬與紐約錄製。」。審稿第 1 問：第一句沒說是誰的唱片
+- `radiohead|ok computer`：「《OK Computer》常被列為史上最好的專輯之一」→「《OK Computer》是 Radiohead 1997 年的專輯，常被列為史上最好的專輯之一」。審稿第 1 問：第一句沒說是誰的唱片
+- `radiohead|ok computer`：「Radiohead 在英國鄉間的莊園等地錄音」→「樂團在英國鄉間的莊園等地錄音」。團名已前移
+- `the smiths|the queen is dead`：「《The Queen Is Dead》常被列為英國最好的專輯之一，英國榜最高第 2 名。The Smiths 在 1985 年下半年錄製，由 Morrissey 與 Johnny Marr 製作，因與廠牌的法律糾紛延到 1986 年才發行。」→「《The Queen Is Dead》是 The Smiths 1986 年的專輯，常被列為英國最好的專輯之一，英國榜最高第 2 名。樂團在 1985 年下半年錄製，由 Morrissey 與 Johnny Marr 製作，因與廠牌的法律糾紛延後半年多才發行。」。審稿第 1 問：第一句沒說是誰的唱片
+- `ac/dc|back in black`：「全黑封面是樂團對 Scott 的服喪。後來有錄音室拿它來測試房間音響。」→「全黑封面是樂團對 Scott 的服喪。」。冷知識收尾（apex-desc-base：冷知識不拿來收尾）
+- `john coltrane|a love supreme`：「常被視為 John Coltrane 最受喜愛的專輯，2015 年入選美國國家錄音登記，」→「被視為 John Coltrane 最受喜愛的專輯，2015 年入選美國國家錄音登記表，」。單一來源（Christgau）用「被視為」不用「常」；登記表用語統一
+- `the dave brubeck quartet|time out`：「2005 年入選美國國家錄音登記。」→「2005 年入選美國國家錄音登記表。」。用語統一
+- `charles mingus|mingus ah um`：「2003 年入選美國國家錄音登記。」→「2003 年入選美國國家錄音登記表。」。用語統一
+- `thelonious monk|brilliant corners`：「2003 年入選美國國家錄音登記。」→「2003 年入選美國國家錄音登記表。」。用語統一
+- `herbie hancock|head hunters`：「2008 年入選美國國家錄音登記。」→「2008 年入選美國國家錄音登記表。」。用語統一
+- `talking heads|remain in light`：「，加上多層貝斯與打擊，把非洲複節奏」→「，把非洲複節奏」。補第一句後超字（288），壓字
+- `radiohead|ok computer`：「〈Airbag〉的節奏取樣剪輯了幾秒鼓聲；」→「（刪）」。補第一句後超字（288），壓字
+- `the smiths|the queen is dead`：「，以取樣器做出 tom 鼓 loop，Marr」→「，Marr」。補第一句後超字（289），壓字
+
+其餘 19 張逐張審過，未改字。另核對研究稿：Back in Black「美國第三暢銷」（RIAA 27 白金，研究稿有）、Oasis「英國史上最暢銷錄音室專輯」（研究稿引 Official Charts 2026-07 認證 620 萬張）、Homogenic 跟蹤者事件（維基有 Ricardo López）、Discovery「約一半是自己彈的假取樣」（Homem-Christo 估計）皆有所本，照留。
+
+### 上線
+
+- `kv-token-check` 通過；舊值存 `kv-before-ad-05.json`（60 鍵，30 個非 null）。
+- bulk put 30 鍵（全為 desc2；本批無 desc4、無 CJK 卡），`Success!`；40 秒後 bulk get 回讀 30/30 逐字一致。
+- `front-check ad-05`：30/30 前台為新稿，CURATED 0。
+- manifest：0 處需同步。

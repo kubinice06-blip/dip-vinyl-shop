@@ -1,0 +1,33 @@
+{
+ "batch": "ad-05",
+ "cards": 30,
+ "written": {
+  "kvKeys": 30,
+  "kvBefore": "kv-before-ad-05.json",
+  "manifest": 0
+ },
+ "review": {
+  "by": "cloud-main",
+  "cards": 30,
+  "changed": [
+   "television|marquee moon",
+   "the clash|london calling",
+   "talking heads|remain in light",
+   "radiohead|ok computer",
+   "the smiths|the queen is dead",
+   "ac/dc|back in black",
+   "john coltrane|a love supreme",
+   "the dave brubeck quartet|time out",
+   "charles mingus|mingus ah um",
+   "thelonious monk|brilliant corners",
+   "herbie hancock|head hunters"
+  ]
+ },
+ "qa": {
+  "research": "pass",
+  "out": "pass（5 個誤報）",
+  "kvReadback": "30/30",
+  "front": "30/30"
+ },
+ "pendingLocal": {}
+}
