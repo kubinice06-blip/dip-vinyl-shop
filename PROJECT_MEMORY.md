@@ -1,5 +1,23 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-04｜dip-vinyl-shop｜blink-182 四張硬蕊度 1 → 2
+
+店主：「他們的歌明明很硬蕊，硬蕊只有一顆星？」硬蕊度＝入耳難度（1＝旋律直白柔和；2＝主流易聽、有一點門檻）。blink-182 是失真吉他、快速的流行龐克，不算「柔和」，改 2；不到 3（3 以上是長篇、即興、不協和）。
+- 《Enema of the State》《Take Off Your Pants and Jacket》《Blink-182》 4/1/1 → 4/1/2（common → rare）；《Neighborhoods》 2/2/1 → 2/2/2（仍 common）。
+- seed 四列＋Firestore card_catalog accessibility／rarity 已寫（PATCH 200、讀回一致）。
+
+### 2026-11-04｜dip-vinyl-shop｜新頂點盤線 ax9：地下 hardcore／punk（日本、北歐、歐陸、拉美）——異端 +10、流亡 +5
+
+- **店主 11-04**：「繼續補，繼續查，應該還有地下冷門 hardcore punk 可以找。」照 ax7／ax8 放寬標準，套到 noise punk／crasher crust、早期 thrashcore、noisecore；冷門的可改流亡；7 吋走 `hardcore-7inch`。ax10（另一工作階段）管美英愛加澳紐。
+- **策展研究併層** 4 組（Sonnet，WebSearch 34）：提名 53，收 15、汰 38。證據主力是 Maximum Rocknroll 當年短評（團頁可直讀）＋Your Last Rites、Decibel。拉美 0 異端（已有串流或只有 Discogs）。
+- **新上架 13**：heresy 8——D-Clone《Creation and Destroy》、Gore Beyond Necropsy《Noise-A-Go Go!!!》、Anti Cimex《Raped Ass》、Mob 47《Kärnvapen Attack》、Kaaos《Totaalinen Kaaos》、Riistetyt《Valtion vankina》、Lärm《Straight on View》、Wretched《In nome del loro potere tutto è stato fatto...》；pearl 5——Upset Noise《Disperazione Nevrotica》、Declino《Rivolta e negazione》、Cheetah Chrome Motherfuckers《Furious Party》、Peggio Punx《La città è quieta... ombre parlano》、Vorkriegsphase《Scheiss Krieg》（異端證據不足改流亡）。**升格 heresy 2**：Confuse《Indignation》、Disclose《Tragedy》。
+- **異端 157 → 167、流亡 291 → 296**（seed 22670 列）；同級每藝人一張 0 重複。合併 ax10（+11）後全池 **異端 178、流亡 296**（seed 22679 列），同級同藝人 0 重複。
+- **寫入**：card_catalog 15、KV 15 鍵回讀一致、試聽 ready 2／unavailable 11、seed 13 列＋改 2 列、Discogs 封面登錄 3、KV `mapgenre3` 改寫 3 鍵（同名團標籤污染）、子曲風樹與抽卡封面重建、c116 manifest 同步升格 2 張、情緒評分 `score-ax9`。
+- **審稿**：專輯簡介改 6 張（刪部落格票選、別張事實、單源改「被形容為」、補流亡理由）；藝人介紹 ar-d-271 上線 12 位（Declino skipped）、改 1 處；ar-d-272 未用。
+- **驗證**：prepare／published gate 0 error；`kv-token-check` exit 0；對 origin 232 分支 seed 去重 0 撞。
+- **留給本機**：`album_overrides.tier` 15 張（`batch-progress/add-20261104-ax9/album-overrides-tier.json`，後台「依卡池同步頂點旗標」）。
+- 主要檔案：`batch-progress/add-20261104-ax9/*`、`batch-progress/apex-new-20261104/PLAN.md`、`batch-progress/mood-cells-20261022/curation-ax9{a..d}.json`、`desc-tools/batches/{cards,research,output}/{add-20261104-ax9,ax9u}*`、`onboarding-manifest-add-20261104-ax9-20261104.json`、`onboarding-manifest-c116-20260910.json`、`seed_cards.json`、`data/artist-intros/*`、`batch-progress/artist-intro/roster-ax9-ar-d-271.json`、`batch-progress/mood-axes/score-ax9/`。
+
 ### 2026-11-04｜dip-vinyl-shop｜新頂點盤線 ax10：英語圈地下 hardcore／punk 異端 +11（升格 2＋新上架 9）
 
 - **店主 11-04**：「繼續補，繼續查，應該還有地下冷門 hardcore punk 可以找。」ax10 管美國、加拿大、英國、愛爾蘭、澳洲、紐西蘭（ax9 另一工作階段管日亞歐陸拉美）。標準照放寬版：可信來源具體描述整張持續高強度（noise punk、thrashcore／powerviolence、noisecore、chaos punk）；結構清楚的 hardcore、一般 d-beat／crust、一般碾核不收。
