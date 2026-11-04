@@ -147,3 +147,40 @@
 - bulk put 30 鍵（全為 desc2；本批無 desc4、無 CJK 卡），`Success!`；40 秒後 bulk get 回讀 30/30 逐字一致。
 - `front-check ad-05`：30/30 前台為新稿，CURATED 0。
 - manifest：0 處需同步。
+
+## ad-06（殿堂 30 張，s3）
+
+- 研究 3 Sonnet（WebSearch a 7／b 10／c 3 次；本工作階段研究層合計 30 次）、寫作 2 Opus。coverage 唯一 none 是 Adele《21》sound，主線自己讀英文維基 Recording／Composition 段補 7 條（研究稿標「主線補查」），改 ok。thin：Nina Simone 三塊、Ella and Louis 地位與聲音、Otis Blue、Live at the Apollo、Ready to Die、Baduizm、Lemonade、Daydream Nation、YHF、Village Green 聲音，照研究稿薄寫。
+- 研究層推翻舊簡介的主要錯誤（新稿未沿用）：Nina Simone〈Mississippi Goddam〉不在這張、Ella and Louis「Peterson 三重奏」（實為四人）、Exodus 槍擊細節（胸口中槍、七名槍手不實）、N.W.A「1989 年初 1.2 萬美元趕工」（實為 1988 夏秋錄）、Wu-Tang「各自簽進不同主流廠牌」（實為 Loud 允許另簽個人約）、Illmatic「四位製作人各一首」、Kendrick「TUPAC 縮寫」、Blonde 分潤與母帶、Adele「第二位六獎女性」、Kinks「最暢銷」的語境、Badu／D'Angelo 私生活軼事。
+- 機器 QA：`qa-batch research ad-06` 1 個千分位標記在研究稿（不進簡介）；`out` 5 個標記皆誤報（葛萊美名人堂、團員本名、Nirvana 為影響對象、年份 2010 是 2010 年代）；fix-spacing 0；字數 237–280。
+- 核對：國家錄音登記表入選年份逐張對研究稿（N.W.A 2017、Illmatic 2021、Ready to Die 2024、Wu-Tang 2022、Low End Theory 2022、Chronic 2019、Back to Black 2025、Live at the Apollo 2004），皆有維基出處。
+
+### 主線審稿（2026-11-04，30 張逐張讀、逐句對研究稿）
+
+改 8 處：
+
+- `bob marley & the wailers|exodus`：「曾被選為 20 世紀最佳專輯」→「常被列為史上最偉大的專輯之一」。去出處後「曾被選為 20 世紀最佳專輯」成了無主的封號（研究稿：Time 1999 單一來源）；改用多份榜單支持的敘述（Rolling Stone 500 大 2020 第 48、VH1 2001 第 26）
+- `a tribe called quest|the low end theory`：「常被列為最流暢的 hip-hop 專輯之一」→「被視為最一致、最流暢的 hip-hop 專輯之一」。研究稿只有單一來源（AllMusic John Bush），用「被視為」不用「常被列為」，並照原意補「最一致」
+- `ella fitzgerald|ella and louis`：「常被視為流行歌唱的頂點」→「被視為流行歌唱的頂點」。單一來源（Jasen 與 Jones），去「常」
+- `my bloody valentine|loveless`：「常被列為九〇年代最佳專輯。」→「常被列為九〇年代最佳專輯之一。」。榜單名次不一（Pitchfork 1999／2022 第 1、2003 第 2），不寫成唯一
+- `sonic youth|daydream nation`：「常被列為八〇年代最佳專輯，」→「常被列為八〇年代最佳專輯之一，」。同上，不寫成唯一
+- `kanye west|my beautiful dark twisted fantasy`：「常被列為 2010 年代最佳專輯，」→「常被列為 2010 年代最佳專輯之一，」。研究稿的是 2010 年度榜，十年榜名次未複核，不寫成唯一
+- `public enemy|it takes a nation of millions to hold us back`：「常被列為史上最偉大的嘻哈專輯，」→「常被列為史上最偉大的嘻哈專輯之一，」。不寫成唯一
+- `lauryn hill|the miseducation of lauryn hill`：「錄音不用壓縮器」→「她錄音時不用壓縮器」。研究稿是 Hill 自述的做法，補主詞以免讀成整張製作的通則
+
+其餘 22 張逐張審過，未改字。
+
+### 上線
+
+- `kv-token-check` 通過；舊值存 `kv-before-ad-06.json`（60 鍵，30 個非 null）。
+- bulk put 30 鍵（全為 desc2；本批無 desc4、無 CJK 卡），`Success!`。
+- 45 秒後 bulk get 回讀 30/30 逐字一致；`front-check ad-06`：30/30 前台為新稿，CURATED 0。
+- manifest：0 處需同步。
+
+## 收工前對新規複查（ad-05、ad-06，s3）
+
+- **原因**：收工 fetch 時看到 `origin/main` 新增店主規則（07f514906，apex-desc-base 第三節「先講清楚它憑什麼是這一級」）：前兩句要用事實講出夠格的理由；殿堂卡要寫地位與影響（開創、改變、被當成標竿：獎項、名人堂、長年榜單、被誰沿用），不寫遊戲用語。
+- **做法**：60 張逐張重讀前兩句。59 張前兩句已有地位事實（多份榜單「常被列為」、葛萊美、Billboard、國家錄音登記表、名人堂、開創某類型或影響某場景），判合格。
+- **改 1 張**：`charles mingus|mingus ah um`：「是 Charles Mingus 在 Columbia 的第一張專輯，2003 年入選美國國家錄音登記表。1959 年 5 月，他帶著」→「是 Charles Mingus 1959 年在 Columbia 的第一張專輯，2003 年入選美國國家錄音登記表，2013 年進葛萊美名人堂。同年 5 月，他帶著」，並刪「〈Boogie Stop Shuffle〉是十二小節藍調」壓字（290→261）。依據研究稿 `ad-05-b`/`c` 的 status 條（2013 葛萊美名人堂）。已單鍵重寫 KV（`Success!`）。
+- **用語裁定**：新規說「入選」不寫，指的是遊戲用語（入選殿堂之類）；「入選國家錄音登記表」是外部事實，照 s1 先例保留。
+- 兩批審稿改動總計：ad-05 19 處（11 張，見 `review-ad-05.json`，含本段 2 處）、ad-06 8 處（8 張）。

@@ -100,5 +100,17 @@
   "old": "，以取樣器做出 tom 鼓 loop，Marr",
   "new": "，Marr",
   "why": "補第一句後超字（289），壓字"
+ },
+ {
+  "key": "charles mingus|mingus ah um",
+  "old": "是 Charles Mingus 在 Columbia 的第一張專輯，2003 年入選美國國家錄音登記表。1959 年 5 月，他帶著",
+  "new": "是 Charles Mingus 1959 年在 Columbia 的第一張專輯，2003 年入選美國國家錄音登記表，2013 年進葛萊美名人堂。同年 5 月，他帶著",
+  "why": "收工 merge 時併進店主新規（07f514906：前兩句要講出夠格進殿堂的理由）；本張前兩句只有登記表，補研究稿已有的葛萊美名人堂與年份"
+ },
+ {
+  "key": "charles mingus|mingus ah um",
+  "old": "，〈Boogie Stop Shuffle〉是十二小節藍調。",
+  "new": "。",
+  "why": "補第一句後超字，壓字"
  }
 ]
