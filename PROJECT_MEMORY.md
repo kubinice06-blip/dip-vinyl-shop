@@ -8,6 +8,17 @@
 - **待店主**：《The Dark Side of the Moon》新稿已寫 desc2，前台仍是 worker 內建 CURATED_DESCS（與 s1 的《Kind of Blue》同一個問題），要在 worker 拿掉這兩筆並部署。
 - 主要檔案：`batch-progress/apex-desc-20261104/{PLAN.md,rulings.md,review-ad-03.json,review-ad-04.json,kv-before-ad-03.json,kv-before-ad-04.json}`、`desc-tools/batches/{cards,research,output}/ad-0{3,4}-*`、6 份 onboarding manifest。
 
+### 2026-11-04｜dip-vinyl-shop｜頂點卡簡介重寫 s3：ad-05、ad-06 上線 60 張（殿堂）
+
+- **內容**：ad-05（Television～Herbie Hancock，龐克／英搖／金屬／電子／爵士）、ad-06（Bill Evans～The Kinks，爵士人聲／靈魂／嘻哈／R&B／另類）各 30 張，照 `apex-desc-base.md` 重寫。研究 3 Sonnet×2 批（WebSearch 合計 30 次）、寫作 2 Opus×2 批；Adele《21》聲音塊研究層查無，主線讀英文維基補 7 條。
+- **主線審稿**：ad-05 改 19 處（11 張）、ad-06 改 8 處（8 張），主要是第一句補「誰、哪年」、單一來源由「常被列為」降為「被視為」、「最佳專輯」補「之一」、去出處後的無主封號、冷知識收尾。收工時併進店主新規（07f514906「要講出為何夠格進頂點」），60 張重讀前兩句，補 Mingus《Mingus Ah Um》一張。紀錄在 `batch-progress/apex-desc-20261104/rulings.md`。
+- **上線**：KV desc2 60 鍵（無 desc4、無 CJK 卡）＋Mingus 單鍵重寫；寫前舊值 `kv-before-ad-05/06.json`。回讀 30/30、30/30、1/1 逐字一致；`front-check` 前台 30/30、30/30，CURATED 0。manifest 0 處需同步。
+- **驗證**：`kv-token-check` exit 0；`qa-batch research|out ad-05|ad-06` 只剩誤報（名人堂、團員本名）；fix-spacing 0；字數 237–280。
+
+### 2026-11-04｜dip-vinyl-shop｜頂點卡簡介規則：要講出為何夠格進這一級
+
+店主：「也就是說，要提到為何能進頂點。」`apex-desc-base.md` 寫作層加「先講清楚它憑什麼是這一級」：殿堂寫地位與影響、異端寫極端在哪裡與為何被認真看待、流亡寫為何少有人聽與為何值得聽；用事實寫在前兩句，不寫遊戲用語。殿堂批（ad-01～10）第一句本來就講地位，異端／流亡批（ad-11 起）開工時會讀到新條。驗證：純文件。
+
 ### 2026-11-04｜dip-vinyl-shop｜頂點卡簡介重寫 s1：第 0 步檢查 677 張＋ad-01／ad-02 上線 60 張
 
 - **第 0 步**：seed 頂點卡 677 張（排除《台客的復仇》）用 KV bulk get 讀現行簡介 → 4 支 Sonnet 檢查 → 主線抽查全部 keep＋6 張 rewrite，改判 2 張。結果 **keep 3、rewrite 674**（殿堂 300／異端 85／流亡 289），切 **23 批**（ad-01～23，殿堂→異端→流亡，同藝人不拆）。明細 `batch-progress/apex-desc-20261104/{worklist,triage,batches}.json`，分批表在 PLAN.md。
