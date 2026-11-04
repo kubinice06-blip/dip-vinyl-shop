@@ -10,6 +10,41 @@
 - **驗證**：`kv-token-check` exit 0；`qa-batch research|out ad-19|ad-20` 只剩誤報；fix-spacing 0；字數 217–280。
 - 主要檔案：`batch-progress/apex-desc-20261104/{PLAN.md,rulings.md,review-ad-{19,20}.json,handoff-ad-{19,20}.json,kv-before-ad-{19,20}.json,prompt-*-extra-s10.md}`、`desc-tools/batches/{cards,research,output}/ad-{19,20}-*`、onboarding manifest 26 份。
 
+### 2026-11-04｜dip-vinyl-shop｜新頂點盤線 ax5：異端 +13（升格 6＋新上架美國自由爵士 7；併 ax6 後全池 140）
+
+- **店主 11-04**：撤銷「不收能量型自由爵士」，自由爵士／即興中高強度、無調、噪音化的代表作可進異端，但仍要可信資料支持具體極端特徵。ax5 管卡池既有卡升格＋新上架美國自由爵士；ax6（另一工作階段）管美國以外的新藝人。
+- **升格 6／32**：Frank Lowe《Black Beings》、Frank Wright Trio、Charles Gayle《Consecration》、Ayler《Bells》（硬蕊 4→5）、Dave Burrell《Echo》、Ornette《Free Jazz》。Sun Ra《Magic City》、Globe Unity、Sunny Murray、Sharrock、Cyrille、SME、LJCO 等樂評本身稱有結構／易入耳，none。流亡、殿堂卡不轉異端；Peter Kowald 讓給 ax6。
+- **新上架 7（全 heresy）**：Alan Silva《Luna Surface》、Milford Graves《Bäbi》、Flaherty & Corsano《The Hated Music》、William Hooker《Hard Time》、Little Women《Throat》、Gato Barbieri《In Search of the Mystery》、Sun Ra《Strange Strings》。三輪策展提名 42、研究 30、汰 23（判 none 不轉一般卡）。
+- **寫入**：KV 13 鍵（升格舊值存 `kv-before-ax5u.json`）回讀 13/13、前台 13/13；card_catalog 13（tier＋apex）；seed 新增 7 列、改 6 列；試聽 ready 4／unavailable 3；Discogs 封面 2 張登錄；子曲風／曲風樹／抽卡封面重建；情緒評分 `score-ax5` 7 張（build-card-moods 錨點 104/104）。
+- **藝人介紹**：ar-d-266 上線 4 位（skipped 0），Sun Ra and His Astro Infinity Arkestra 走別名鍵；ar-d-267 未用。
+- **驗證**：prepare／published gate 0 error；對 origin 224 分支 seed 去重 0 撞；同級每藝人一張 0 重複。審稿 3 處（`batch-progress/add-20261104-ax5/rulings.md`）。
+- **留給本機**：`album_overrides.tier` 13 張用後台「依卡池同步頂點旗標」（清單 `album-overrides-tier.json`＋manifest）。研究稿記下的未升格卡舊簡介疑點（Lehn/Schmickler《Bart》時長 30:10、曲名〈Du Funktion〉；Oxley《Ichnos》〈Cadilla〉是四重奏）另排修。
+- **主要檔案**：`batch-progress/add-20261104-ax5/`、`onboarding-manifest-add-20261104-ax5-20261104.json`、`seed_cards.json`、`desc-tools/batches/{cards,research,output}/{ax5u,add-20261104-ax5}*`、`batch-progress/mood-axes/score-ax5/`、`data/artist-intros/*`。
+### 2026-11-04｜dip-vinyl-shop｜新頂點盤線 ax6：異端新上架 18 張（卡池沒有的藝人；含店主點名 Peter Kowald Quintet、姜泰煥）
+
+- **內容**：店主「異端有很多自由爵士可以收錄吧？」「應該可以加到 200」→ 撤銷「不收能量型自由爵士」。ax6 只上卡池完全沒有卡的藝人（`chk-artist.mjs` 逐位比對），8 組策展提名 50、研究層汰 32，上線 18 張全為 heresy：Peter Kowald Quintet、강태환《Live At Café Amores》、Okkyung Lee《Ghil》、Birchville Cat Motel、Blasphemy、Conqueror、Bestial Warlust、Black Witchery、Ildjarn、Sete Star Sept、Burning Witch、Dragged Into Sunlight、Mauricio Kagel《Acustica》、Zeitkratzer《WHITEHOUSE electronics》、Mike Patton《Adult Themes for Voice》、Sightings《Absolutes》、Stalaggh《Projekt Misanthropia》、Orthrelm《OV》。**異端 109 → 127**（同級每藝人一張，驗過 0 重複）。
+- **裁定**：研究判 none 的直接汰換、不轉一般卡（52071）；Kowald Quintet、강태환 研究層判 none，依店主點名收（52074，簡介只寫編制與手法）。歐洲／日本／南非自由爵士藝人卡池幾乎都已有卡，歸 ax5。
+- **簡介**：照 `apex-desc-base.md` 寫（不走鉤子層），主線審 18 張改 3 處（刪比喻、月份不寫死）。
+- **上線**：card_catalog 18（tier＋apex:true）、KV 19 鍵回讀一致、試聽 ready 11／unavailable 7、seed 18 列、曲風欄補 3 張（`build-seed-genres` ALBUM_GENRE_FIX）、子曲風樹與抽卡封面重建（`genre-l3-artist-map` 補 Ildjarn／Sete Star Sept／Orthrelm）、Discogs 封面登錄 1。情緒評分 `batch-progress/mood-axes/score-ax6/`。
+- **藝人介紹**：ar-d-268（14 位）、ar-d-269（3 位）上線，skipped 0，審稿改 5 處。
+- 主要檔案：`batch-progress/add-20261104-ax6/*`、`batch-progress/apex-new-20261104/PLAN.md`、`batch-progress/mood-cells-20261022/curation-ax6{a..h}.json`、`desc-tools/batches/{cards,research,output}/add-20261104-ax6-*`、`onboarding-manifest-add-20261104-ax6-20261104.json`、`seed_cards.json`、`data/artist-intros/*`、`batch-progress/artist-intro/{roster-ax6-ar-d-268,roster-ax6-ar-d-269}.json`。
+- 驗證：prepare 0 error、published 0 error；`/album-desc` 抽 2 張 KV-HIT。
+- 留給本機：`album_overrides.tier`（後台依卡池同步頂點旗標）；강태환 listeners 查無。
+
+### 2026-11-04｜dip-vinyl-shop｜試聽與串流連結修正套用（店主「可以」）＋重跑限流失敗的試聽
+
+- **改動**：套用 10-29 連結稽核的 fix-plan。
+  - 試聽 215 筆（`apply-preview.mjs`，現值＝稽核時舊值才改）：換正確或重新上架的專輯 108、換店面 62、撤下配錯 23、標下架 15、review 轉 matched 6、補網址 1；`build-apple-audio-runtime-map.mjs` 重建。
+  - 串流 92 筆（`apply-streaming.mjs`，KV 先備份、比對舊值、寫後讀回）：換正確連結 15、清空 77（找不到正確版本，按鈕變灰）。備份 `kv-backup-2026-11-04-streaming.json`。
+  - 重跑 07-19 iTunes 限流失敗與從未查過的卡（`build-apple-audio-map.mjs --retry-status=error` 兩輪 383 張）：配上 25 張，主線核對撤回 2 張配錯（Ghostdance 配到 Bill Miller 同名盤、Stockhausen《Mantra》配到別人的演出）；其餘 Apple 上確實沒有，標 unavailable；剩 5 張 error。`fetch-apple-album-urls.mjs` 補 23 張專輯網址。
+  - 合併 origin/main 時 map 以 JSON 三方比對驗證（598 處只在本分支改、0 衝突）。
+- **主要檔案**：`data/apple-audio-map-v1.json`、`data/apple-audio-runtime-v1.json`、`batch-progress/link-audit-2026-10-29/{apply-*.mjs,apply-*-report.json}`；KV `cover6:*` 92 鍵。
+- **驗證**：試聽 215/215 套用（0 跳過）；KV 92/92 讀回一致；runtime matched 18,234。
+
+### 2026-11-04｜dip-vinyl-shop｜Beyond《再見理想》設流亡＋簡介改流亡寫法
+
+店主：「好，直接上流亡，經典度維持。」seed tier `pearl`、card_catalog tier／apex 已寫；簡介照 apex-desc-base 流亡寫法重寫 249 字，KV desc2／desc4 寫入並回讀一致。流亡 290 → 291。album_overrides 待本機同步。紀錄 `batch-progress/beyond-20261104/`。
+
 ### 2026-11-04｜dip-vinyl-shop｜Beyond《再見理想》升傳奇
 
 店主問 Beyond 殿堂要不要從《樂與怒》換成《再見理想》；建議維持《樂與怒》（〈海闊天空〉的廣泛影響），店主改要《再見理想》升傳奇。
