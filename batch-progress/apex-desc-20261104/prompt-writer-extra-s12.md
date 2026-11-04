@@ -42,3 +42,6 @@
 - Henri Chopin：以 Igloo 1983 版為準；兩面曲長未驗證不寫。François Dufrêne：不要和 1975 年 Cramps 的《Crirythmes》混。
 - Lasse Marhaug：Spellemannprisen 只能寫「入圍」，不寫類別與年份以外沒查到的細節。
 - Harry Pussy：婚姻破裂、RAT 踏板、Miami New Times 說法是單一來源或搜尋摘要，婚姻一事除非研究稿有可靠出處否則不寫。
+- Zbigniew Karkowski：reception none，寫到 200 字附近；The Wire 追悼文是藝人層級，只能寫成他的名聲或做法。Tiny Mix Tapes「喇叭起火」不寫。
+- Teitanblood：BrooklynVegan「最不協和、最具破壞力」評的是前作，不寫。Dodecahedron：Angry Metal Guy 的結論是正面（a triumph），不要寫成負評。Gnaw Their Tongues：Mories 是荷蘭人。
+- 舊稿的比喻（「咬合不上的齒輪」「像警報」「佈道」）不沿用。
