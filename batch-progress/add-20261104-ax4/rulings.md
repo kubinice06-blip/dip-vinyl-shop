@@ -21,6 +21,17 @@
 - 51806：Blackbuster 與 Fanny's Group 存疑：Blackbuster 3 實為舞曲串燒（附舞步海報），非卡單所述「被 DJ 圈挖出的 Pinoy funk」；Fanny's Group 無聲音來源，moodGuess 存疑，status 標 thin。
 - 51807：Last.fm 頁面本機連線回 600，listeners 一律以 worker `_listeners` 為準。Urfalı Babi 卡單 key 為 desc2: 前綴（研究稿已照卡單）。
 
+## 研究 b 組（51811–51820）
+
+- 51811：Sagrado Coração da Terra 流亡不合格。Apple BR 已有 Marcus Viana 名下 1984 同名專輯，且 1985 Bemol 起多次再發。
+- 51812：Color Humano《Sangre del Sol》不合格。Discogs master 是 1973 年 7 吋單曲（兩首），不是專輯；該團正式專輯 Apple 已上架。
+- 51813：Marlui Miranda《Olho D'Água》不合格。Apple BR 有《Olhos D'Água》1979 串流，另有 2002 CD 再版。
+- 51814：Magnetic Band 是 1980 年 Melodiya 7 吋 EP（兩首），不是 LP；listeners 35 與無串流兩條過，體裁不符，建議汰換。
+- 51815：Mike Nyoni 判合格。2018 Now-Again 選輯《My Own Thing》在 Apple 只收其中 4 首，整張無單獨串流。原版廠牌 Discogs／Now-Again 指 Chris Editions（CL 012），卡單掛 ZMPL 51，建議廠牌欄改。
+- 51816：Krzak《Paczka》判合格但存疑。listeners 238 貼上限；廠牌實為 Pronit（卡單 Muza）；卡單 manualEvidenceUrls 的 master／release id 對調（master 873309、release 2394903）。
+- 51817：Cuarteto Cedrón 判合格。curatorWhy「流亡巴黎」與時序不符（1974 才移居法國，本盤 1972 西班牙壓片）。
+- 51818：Last.fm 頁面經 proxy 一律 600 無法開啟，listeners 全取 worker `_listeners`（九張皆 1–299）；Tokyo Kid Brothers、Cool Knights 判合格（Apple 查無，Cool Knights 僅 2016 義大利非官方再版）。
+
 ## 研究 c 組（51821–51830）
 - 51821：c 組 7 張逐張核對流亡資格。合格 3（Lutajuća Srca 12、Eloy 12、Maxfield 75）；不合格 4：Grupa 220《Sivilo Perona》（Discogs 全為 7" 單曲，非專輯）、Schnitzler《Eruption》（Apple 有 Bureau B 2012 Kluster《Eruption》同音源）、Dissevelt（卡單證據連到單曲 master 614758，真專輯為 master 178091／MB 4f7f8f29，且有 2012 Omni CD）、Lundsten（四張 CD 合輯在 Apple 串流含〈Mizar〉，邊緣）。
 - 51822：Last.fm 直連多半回 600，listeners 以 worker `_listeners` 為準；Bandcamp 搜尋頁無法載入，Spotify 未核對，Eloy／Maxfield／Lutajuća Srca 為「暫時合格」。
