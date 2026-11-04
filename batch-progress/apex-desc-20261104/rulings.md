@@ -110,6 +110,78 @@
 - **工具錯誤一次**：`ad.mjs`／`front-check.mjs`／`apply-review.mjs` 用 `startsWith('<批>-out-')` 選檔，把 `.v1.json` 備份也讀進來；Map 後讀蓋前，第二次 bulk put 實際寫回的是**第一版（含出處）**。前台比對抓到（35/60 不符），改成只認 `^<批>-out-\d+\.json$`，重產 bulk 並逐鍵對過輸出檔（30/30、31/31）後再 put 一次。之後的批沿用修好的工具，不會再發生。
 - 重寫後回讀 61/61 逐字一致；前台逐張比對 ad-01 29/30（Kind of Blue 仍是 CURATED）、ad-02 30/30。
 
+## ad-03（殿堂 30 張，s2）
+
+- 研究 3 Sonnet（WebSearch a 14／b 11／c 14 次）＋主線派 1 支 Sonnet 補查華語 9 張的聲音塊（`research/sup-ad-03.json`，WebSearch 14 次，已併回 a／c 研究稿並標「主線補查 sup-ad-03」）。補完後李泰祥、張雨生、黑豹的聲音塊仍只有結構層級（編曲者、陣容、曲目），寫作特注「只寫查得到的結構、寫到 200 字左右」。
+- **研究稿主線更正**（`ad-03-a.json` 五月天）：a 組 notes 說舊稿「最佳演唱團體獎」有誤、應為「最佳樂團獎」，補查以中文維基第 11 屆金曲獎頁推翻——入圍的是最佳演唱團體獎（得主亂彈），舊稿原本是對的；a 組「1999 年吉他手冠佑加入」也錯（冠佑是鼓手），成員異動年份來源不一，改成不寫。
+- 研究層推翻舊稿的主要錯誤（新稿未沿用）：Gould 熱水浸手／矮椅／錄音日；陳綺貞「少女標本」企劃、十大專輯年份；交工「嗩吶學摩托車」（實為二行程耕耘機引擎當節奏）；鄧麗君飯局發起說；羅大佑「自費、向父親借錢、15 萬張」；林強「羅百吉製作」（製作 John Fryer、電音羅百吉）；黑名單「公文禁播」；李宗盛簽約年與木吉他組團年；Slum Village 炒價與廠牌；Richter「22 場」；Schnabel「樂迷先付錢才錄得成」；Casals「1890」「二戰延後」；Solti「史上第一套錄音室 Ring」；Callas「重錄三十次」；Gillespie 漏掉 O'Farrill、Giddins 讚語張冠李戴；Hawkins 年份混述；張雨生「三天」（實為四天）；陳明章〈新莊街〉（屬《抓狂歌》）；達明「全碟陳少琪填詞」。
+- 機器 QA：`qa-batch research` 1 標記（研究稿內 200,000，不進簡介）；`out` 6 標記皆誤報（中文曲名、專名、去出處後的「票選」）；fix-spacing 0；半形括號只出現在原文盤名內；字數 216–280。
+
+### 主線審稿（2026-11-04，30 張逐張讀、逐句對研究稿）
+
+改 12 處（`review-ad-03.json`；Solti 兩次壓字分開記）：
+
+- `鄧麗君 teresa teng|淡淡幽情`：「錄音的空間回響清楚；人聲放在最前面，伴奏音量刻意退後。」→「錄音的空間回響清楚，人聲放在最前面，伴奏音量壓得較低。」。「刻意」是推測
+- `羅大佑|之乎者也`：「2009 年出版的《台灣流行音樂 200 大專輯》把它列為 1975 到 1992 年台灣流行音樂二十大專輯的第一名。」→「被視為台灣流行音樂史上最重要的專輯之一，也常被看作校園民歌時代的終結。」。書名＋名次屬出處，不寫進簡介；依研究稿 200 大榜首與中文維基
+- `羅大佑|之乎者也`：「同名曲諷刺審查制度與社會對盜版的默許，因為當時台灣仍有出版審查，發行版的歌詞寫得較為抽象。」→「專輯推出時台灣仍有出版審查，這些歌詞在當時相當震撼。」。「海外原版較直接、台灣版較抽象」只有轉述、原文未取得（研究稿 src 網址也錯），刪；保留中文維基可證部分
+- `李宗盛|生命中的精靈`：「常被列在台灣流行音樂百佳專輯的前列。」→「被視為台灣流行音樂史上最好的專輯之一。」。單一榜單（中文維基轉述第五名）不能寫「常被列」，榜名屬出處
+- `carlos kleiber|beethoven: symphonies 5 & 7`：刪「第 5 號四個樂章約 7 分 22 秒、10 分、5 分 9 秒與 10 分 51 秒。」。雜項數字
+- `artur schnabel|beethoven: complete piano sonatas (1932-35)`：「常被視為後來所有演出被衡量的標準」→「常被視為衡量後來演出的標準」。語句拗口
+- `jacqueline du pré|elgar: cello concerto`：「被廣泛視為」→「常被視為」。不加碼、統一用語
+- `georg solti|wagner: der ring des nibelungen`：「得過葛萊美獎，常被列為史上最偉大的錄音。」→「得過葛萊美獎與 Grand Prix du Disque，兩次古典樂雜誌票選都選它為史上最偉大的錄音。」。寫作層為壓字把兩次具體票選（Gramophone 1999、BBC Music Magazine 2012）講成泛稱；改回具體事實，不點名媒體
+- `georg solti|wagner: der ring des nibelungen`：「，Siegfried 假扮 Gunther 時，工程師處理了 Wolfgang Windgassen 的聲音，讓它接近 Gunther 的音色。」→「，Siegfried 假扮 Gunther 的段落還用工程手法改變了他的音色。」。壓字（314→278）
+- `陳明章|下午的一齣戲`：「收入馬世芳與吳清聖編纂的《台灣流行音樂百張最佳專輯》。」→「被視為台灣流行音樂史上最好的專輯之一。」。編者與書名屬出處
+- `張國榮|leslie`：「這類快歌很難說是他首創，但〈Monica〉常被視為讓勁歌熱舞成為香港潮流的歌。」→「〈Monica〉被視為讓勁歌熱舞在香港成為潮流的歌。」。前半幾乎是李皖原話、語氣含糊；後半單一來源（作家「灰」），「常被」改「被」
+- `張雨生|口是心非`：「得獎時已無法領獎」→「得獎時他已過世」。1997 年 11 月過世、1998 年得獎
+
+其餘 19 張逐張審過，未改字。另審稿確認：《Afro》第一句無地位評價（研究稿沒有指名到這張的評價，不硬擠）；萬能青年旅店「被視為中國最有影響力的獨立搖滾歌曲之一」依《紐約時報》（維基轉述）。
+
+### 上線
+
+- `kv-token-check` 通過；舊值存 `kv-before-ad-03.json`（60 鍵，30 個非 null）。
+- bulk put 48 鍵（desc2 30＋desc4 18，CJK 卡兩鍵同寫），`Success!`；`verify-wave-kv` 回讀 48/48 逐字一致。
+- `/album-desc` 逐張比對：30/30 前台為新稿。
+- manifest 同步 6 處（c32-folk 1、c35-shop-reels 1、c37-jazz 2、c41-chinese 2）。
+
+## ad-04（殿堂 30 張，s2）
+
+- 研究 3 Sonnet（WebSearch a 10／b 2／c 1 次；s2 全工作階段研究層合計 66 次＋主線 1 次）、寫作 2 Opus。coverage 只有新寶島康樂隊 sound 為 none：研究層 3 次中文搜尋＋主線 1 次都查不到編曲與樂器，寫作照「只寫可證事實、約 200 字」處理（成稿 245 字，無聲音段，僅寫一台一客、〈多情兄〉台客混唱）。
+- 研究層推翻舊稿的主要錯誤（新稿未沿用）：Hendrix「銀行電腦當機」；Pet Sounds 的 Carol Kaye 引言；New Order「被評為早期 house」；Dolls「Rundgren 評價保留」；Exile「Richards 準時到場」；Kooper「沒彈過風琴」；Purple Rain「Rolling Stone 誤植」與募款金額；Rumours 刀片、The Pit、上榜八年；Thriller 91 次混音（Jones 選的是第二版）；Songs in the Key of Life 合約總額與「一人包辦」；What's Going On「Gordy 說最糟」（Gordy 否認）；Hotel California「一個即興音都沒有」與年度唱片歸屬；Born to Run 母帶進泳池（實為 acetate）；Blue 發電報；Who's Next「唯一英國冠軍」與母帶被清；The Doors「一星期錄完」（約一個月）；Astral Weeks 兩萬美元現金；Leonard Cohen「配器過度」是 Sylvie Simmons 而非 Cohen 本人說的；Horses「女性首度中性姿態」。
+- 機器 QA：`qa-batch research` 2 標記（研究稿內千分位，不進簡介）；`out` 6 標記皆誤報（照新規不點名的榜單、專名）；fix-spacing 0；字數 238–280。
+
+### 主線審稿（2026-11-04，30 張逐張讀、逐句對研究稿）
+
+改 11 處（`review-ad-04.json`）：
+
+- `new york dolls|new york dolls`：「。在紐約花八天錄成」→「。專輯在紐約花八天錄成」。缺主詞
+- `the beatles|abbey road`：「；這是他們第一次用八軌機。」→「；整張改用 EMI 新的固態混音台錄製。」。**事實錯誤**：《The Beatles》（白色專輯）1968 年已用八軌；研究稿只說《Sgt. Pepper》是四軌，寫作層推論過頭。改用研究稿同條「整張只用 EMI TG12345 固態混音台」；研究稿 `ad-04-a.json` 該條已加註同步
+- `the beach boys|pet sounds`、`the velvet underground|the velvet underground & nico`、`the jimi hendrix experience|are you experienced`、`david bowie|the rise and fall of ziggy stardust and the spiders from mars`、`bruce springsteen|born to run`、`patti smith|horses`（6 處）：「美國國會圖書館國家錄音登記（表）」→「國家錄音登記表」。譯名統一（同 ad-01 裁定）
+- `pink floyd|the dark side of the moon`：「在 Billboard 200 共 736 週」→「在 Billboard 200 上榜共 736 週」。缺動詞
+- `marvin gaye|what's going on`：「也是 R&B 最早的概念專輯之一」→「也常被視為 R&B 最早的概念專輯之一」。研究稿原文「常被引為」，不寫成定論
+- `carole king|tapestry`：「在 Billboard 200 連續 15 週冠軍，隔年葛萊美拿下年度專輯、年度唱片、年度歌曲與最佳女流行人聲四項。」→「常被列為史上最偉大的專輯之一，在 Billboard 200 連續 15 週冠軍；專輯與其中兩首歌在隔年葛萊美共拿下四項，包括年度專輯。」。審稿第 1 問：第一句沒有地位（研究稿有 Rolling Stone 500 等多份榜單）；年度唱片、年度歌曲分屬〈It's Too Late〉〈You've Got a Friend〉，原句像全是專輯拿的
+
+其餘 19 張逐張審過，未改字。
+
+### 上線
+
+- `kv-token-check` 通過；舊值存 `kv-before-ad-04.json`（60 鍵，29 個非 null；Dark Side 兩鍵皆無）。
+- bulk put 31 鍵（desc2 30＋新寶島康樂隊 desc4 1），`Success!`；`verify-wave-kv` 回讀 31/31 逐字一致。
+- `/album-desc` 逐張比對：29/30 前台為新稿；**《The Dark Side of the Moon》仍是 CURATED**（s1 已預告：worker 對非 CJK 卡先讀 CURATED_DESCS）。desc2 已寫好，要店主在 worker 拿掉這筆 CURATED 並部署才會生效。
+- manifest 同步 6 處（c44-rock 5、ctw-taiwan-indie 1）。
+
+## 收工前對新規複查（ad-03、ad-04，s2）
+
+- **原因**：收工 fetch 時看到 `origin/main` 的店主新規（07f514906「先講清楚它憑什麼是這一級」）：前兩句要用事實講出夠格的理由，殿堂卡寫地位與影響。做法照 s3 先例。
+- **做法**：60 張逐張重讀前兩句。56 張已有地位或影響事實（多份榜單、葛萊美、Billboard、國家錄音登記表、金曲獎得獎、銷量紀錄、開創或影響某場景），判合格；鄧麗君、陳綺貞、達明一派、張雨生以獎項／認證為據，研究稿沒有更強的具名評價，維持。
+- **改 4 張（7 處）**：
+  - `黑豹樂隊|黑豹`：把「抒情搖滾〈Don't Break My Heart〉在香港榜上連續三週居首」從聲音段移進第一句；原處刪重複。研究稿另有「中國第一搖滾專輯」（維基自標無出處）與 150 萬銷量（含不含盜版說法不一），都不用
+  - `dizzy gillespie|afro`：第一句改為「《Afro》是 Dizzy Gillespie 1954 年由 Norgran 發行的專輯，延續他 1947 年與古巴打擊樂手 Chano Pozo 寫下〈Manteca〉開出的 Afro-Cuban 爵士路線，被視為這條路線上的出色錄音。」，併後兩句、刪長笛手 Gilberto Valdés 壓字（試寫兩版超字後整句重寫，264 字）。依研究稿 AllMusic 四星、稱這批錄音 stunning（單一來源用「被視為」）
+  - `新寶島康樂隊|新寶島康樂隊`：「陳昇唱台語、黃連煜唱客語，形成一台一客的搭配，把台灣民謠與流行音樂結合在一起。」→「刷新了滾石的熱賣紀錄；陳昇唱台語、黃連煜唱客語，一台一客的搭配改變了不少聽眾對客家音樂的看法。」，結尾刪重複的熱賣紀錄。依研究稿鏡週刊、中央社；「把台灣民謠與流行結合」研究稿 facts 沒有（寫作層照派工特注自加），刪
+  - `五月天 mayday|五月天第一張創作專輯`：第一句補「被視為台灣地下樂團進入主流的轉捩點之一」。依研究稿中文維基引 5music
+- **用語裁定**：同 s3，「入選國家錄音登記表」是外部事實，保留。
+- 重新 bulk put ad-03 48 鍵、ad-04 31 鍵，皆 `Success!`；回讀 79/79 逐字一致；前台 ad-03 30/30、ad-04 29/30（Dark Side 仍 CURATED）。manifest 再同步 2 處（c37-jazz、ctw-taiwan-indie）。
+- 兩批審稿改動總計：ad-03 12＋5 處、ad-04 11＋2 處。
+
 ## ad-05（殿堂 30 張，s3）
 
 - 研究 3 Sonnet（WebSearch a 5／b 1／c 4 次）、寫作 2 Opus；coverage 無 none。sound thin 8 張（London Calling、Ten、Appetite、Paranoid、Back in Black、Parklife、Dummy、Brilliant Corners）照研究稿薄寫。研究層多數靠英文維基轉引（Pitchfork 擋、AllMusic 403）。
