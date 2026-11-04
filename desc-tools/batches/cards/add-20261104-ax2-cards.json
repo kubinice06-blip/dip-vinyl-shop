@@ -1134,7 +1134,15 @@
   },
   "rgMbid": "",
   "identitySource": "manual",
-  "mbAbsenceProof": "MusicBrainz 以 Hans-Joachim Hespos／Hespos 搜尋 release-group 無結果（2026-11-04）",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist:\"Hans-Joachim Hespos\" AND releasegroup:Works → count 0",
+    "releasegroup:\"Hespos\" AND artist:\"Ensemble 13\" → count 0",
+    "artist:\"Hans-Joachim Hespos\" → count 0"
+   ],
+   "checkedAt": "2026-11-04T07:38:48.923Z",
+   "conclusion": "「artist:\"Hans-Joachim Hespos\" AND releasegroup:Works」count=0；「releasegroup:\"Hespos\" AND artist:\"Ensemble 13\"」count=0；「artist:\"Hans-Joachim Hespos\"」count=0。皆無同藝人同盤名的 release-group。"
+  },
   "manualEvidenceUrls": [
    "https://www.discogs.com/master/3306643",
    "https://de.wikipedia.org/wiki/Hans-Joachim_Hespos"

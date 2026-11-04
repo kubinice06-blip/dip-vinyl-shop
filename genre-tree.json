@@ -1,16 +1,16 @@
 {
- "產出日期": "2026-11-01",
+ "產出日期": "2026-11-04",
  "minNode": 20,
  "genres": [
   {
    "id": "rock",
    "zh": "搖滾",
-   "count": 5404,
+   "count": 5410,
    "children": [
     {
      "id": "jrock-asia",
      "zh": "日亞搖滾",
-     "count": 1069,
+     "count": 1070,
      "children": [
       {
        "id": "jp",
@@ -20,7 +20,7 @@
       {
        "id": "tw",
        "zh": "台灣",
-       "count": 302
+       "count": 303
       },
       {
        "id": "cn",
@@ -102,7 +102,7 @@
     {
      "id": "indie-alt",
      "zh": "獨立另類",
-     "count": 1034,
+     "count": 1035,
      "children": [
       {
        "id": "indie-rock",
@@ -154,17 +154,17 @@
     {
      "id": "punk-wave",
      "zh": "龐克新浪潮",
-     "count": 1013,
+     "count": 1017,
      "children": [
       {
        "id": "punk",
        "zh": "龐克",
-       "count": 441
+       "count": 444
       },
       {
        "id": "post-punk",
        "zh": "後龐克",
-       "count": 371
+       "count": 372
       },
       {
        "id": "new-wave",
@@ -179,7 +179,7 @@
       {
        "id": "no-wave",
        "zh": "No Wave",
-       "count": 112
+       "count": 116
       },
       {
        "id": "goth",
@@ -194,7 +194,7 @@
       {
        "id": "garage",
        "zh": "車庫與原型龐克",
-       "count": 53
+       "count": 54
       },
       {
        "id": "industrial",
@@ -206,7 +206,7 @@
     {
      "id": "metal",
      "zh": "金屬",
-     "count": 791,
+     "count": 792,
      "children": [
       {
        "id": "trad",
@@ -241,7 +241,7 @@
       {
        "id": "black",
        "zh": "黑金屬",
-       "count": 88
+       "count": 89
       }
      ]
     },
@@ -285,7 +285,7 @@
     {
      "id": "classic",
      "zh": "老搖滾",
-     "count": 614,
+     "count": 613,
      "children": [
       {
        "id": "50s",
@@ -310,7 +310,7 @@
       {
        "id": "later",
        "zh": "90 年代之後",
-       "count": 76
+       "count": 75
       }
      ]
     },
@@ -405,17 +405,17 @@
     {
      "id": "free",
      "zh": "自由與前衛",
-     "count": 1031,
+     "count": 1032,
      "children": [
       {
        "id": "avant",
        "zh": "前衛與 New Thing",
-       "count": 532
+       "count": 533
       },
       {
        "id": "free-improv",
        "zh": "自由即興",
-       "count": 233
+       "count": 234
       },
       {
        "id": "post-bop",
@@ -484,17 +484,17 @@
     {
      "id": "contemporary",
      "zh": "當代與 Nu Jazz",
-     "count": 874,
+     "count": 873,
      "children": [
       {
        "id": "nu-jazz",
        "zh": "Nu / Acid Jazz",
-       "count": 293
+       "count": 292
       },
       {
        "id": "smooth",
        "zh": "Smooth / Lounge",
-       "count": 262
+       "count": 261
       },
       {
        "id": "post-bop",
@@ -598,7 +598,7 @@
     {
      "id": "cool",
      "zh": "Cool / 西岸",
-     "count": 189,
+     "count": 188,
      "children": []
     },
     {
@@ -635,22 +635,22 @@
   {
    "id": "electronic",
    "zh": "電子",
-   "count": 2882,
+   "count": 2904,
    "children": [
     {
      "id": "ambient",
      "zh": "Ambient / Drone",
-     "count": 1370,
+     "count": 1378,
      "children": [
       {
        "id": "dark-ambient",
        "zh": "Dark Ambient",
-       "count": 388
+       "count": 392
       },
       {
        "id": "drone",
        "zh": "Drone",
-       "count": 386
+       "count": 389
       },
       {
        "id": "idm",
@@ -677,7 +677,7 @@
     {
      "id": "techno",
      "zh": "Techno",
-     "count": 691,
+     "count": 692,
      "children": [
       {
        "id": "minimal",
@@ -808,7 +808,7 @@
     {
      "id": "idm",
      "zh": "IDM / Glitch",
-     "count": 451,
+     "count": 452,
      "children": [
       {
        "id": "ambient-idm",
@@ -823,7 +823,7 @@
       {
        "id": "warp",
        "zh": "Warp / Braindance",
-       "count": 40
+       "count": 41
       },
       {
        "id": "glitch-hop",
@@ -914,22 +914,22 @@
     {
      "id": "industrial",
      "zh": "Industrial / EBM",
-     "count": 309,
+     "count": 328,
      "children": [
       {
        "id": "dark-ambient",
        "zh": "Dark Ambient / Post-Industrial",
-       "count": 171
+       "count": 177
       },
       {
        "id": "power-electronics",
        "zh": "Power Electronics / 噪音",
-       "count": 106
+       "count": 125
       },
       {
        "id": "old-school",
        "zh": "老派工業",
-       "count": 82
+       "count": 86
       },
       {
        "id": "ebm",
@@ -946,27 +946,27 @@
     {
      "id": "noise",
      "zh": "實驗與噪音",
-     "count": 298,
+     "count": 318,
      "children": [
       {
        "id": "harsh",
        "zh": "Harsh Noise / 日本噪音",
-       "count": 224
+       "count": 244
       },
       {
        "id": "drone",
        "zh": "Drone / Dark Ambient",
-       "count": 184
+       "count": 192
       },
       {
        "id": "concrete",
        "zh": "具象音樂與拼貼",
-       "count": 78
+       "count": 79
       },
       {
        "id": "glitch",
        "zh": "Glitch / Microsound",
-       "count": 68
+       "count": 69
       }
      ]
     },
