@@ -46,3 +46,21 @@
 - **52015** Sarcófago《I.N.R.I.》：none，建議汰換（1987 標準極端、評價兩極；可逆，若放寬可收）。
 - **52016** Bestial Warlust《Vengeance War 'Till Death》：heresy（最薄；Antichrist Magazine＋deathmetal.org），資料不足可汰換。
 - **52017** Black Witchery《Desecration of the Holy Kingdom》：heresy（偏薄；deathmetal.org 2001），資料不足可汰換。
+
+## 研究 c 組
+- **52021** Archgoat《Whore of Bethlehem》：none，建議汰換（只有單一評論描述原始／無旋律，缺極端代表作依據；多個來源 403）。
+- **52022** Mütiilation《Vampires of Black Imperial Blood》：none，建議汰換（有「洞穴般旋律」「洗腦 riff」描述，音質粗糙但非整張難入耳）。
+- **52023** Impaled Nazarene《Tol Cormpt Norz Norz Norz…》：none，建議汰換（29 分鐘、龐克式結構、有旋律主奏）。
+- **52024** Ildjarn《Strength and Anger》：heresy（偏薄；74 分鐘四軌 lo-fi、15 軌單一 riff 循環、兩首 drone 收尾；證據僅 deathmetal.org＋維基）。型態確認為全長專輯。
+- **52025** Anal Cunt《Everyone Should Be Killed》：none，建議汰換（58 軌／58 分鐘為事實，但無可信樂評描述聲音極端）。
+- **52026** Sete Star Sept《Revision of Noise》：heresy（Collective Zine＋Boston Hassle）。推翻策展：國別日本、約 15 分鐘（近 mini-album）、年份 MB 2009 vs 評論 2010 待擇一。
+- **52027** Burning Witch《Crippled Lucifer》：heresy（Last Rites 全文＋維基；合輯型態，簡介須點明收兩張 EP）。
+
+## 研究 a 組
+- **52001** Peter Kowald Quintet《Peter Kowald Quintet》：none，建議汰換（Melody Maker 當年評語 informal, enjoyable，只有靜段／熾烈段交替；店主點名但證據不撐異端，可逆改一般卡，年份取錄音年 1972，發行年各來源 1972／1973 不一）。
+- **52002** Die Like a Dog Quartet《Little Birds Have Fast Hearts No.1》：none，建議汰換（frenetic、work-out 屬能量型，無難入耳措辭；團長 Brötzmann 已有異端《Machine Gun》；單一網域證據）。
+- **52003** Globe Unity Orchestra《Live in Wuppertal》：none，建議汰換（無針對此盤的極端措辭，Scaruffi 還指有結構化段落；人員與目錄號各來源不一）。
+- **52004** Iskra 1903《Chapter One: 1970-1972》：none，建議汰換（2000 Emanem 三 CD 檔案全集、評語偏讚美與空間感；Bailey 已有異端《Aida》）。
+- **52005** 강태환《Live At Café Amores》：none，建議汰換或改一般卡（NY Jazz Record 稱 calm yet relentless、Free Jazz Blog 稱憂鬱靈性；1995-10-08 防府現場，2018 NoBusiness NBLP 113 限量 300）。
+- **52006** Birchville Cat Motel《Seventh Ruined Hex》：heresy（Musique Machine 5/5 searing／painful／jaw numbing＋Exclaim merciless／frantic；Matthew Bower 客席吉他；簡介勿寫成純噪音牆，drone 段落寬廣）。
+- **52007** グループ・音楽《ミュージック オブ グループ・音楽》：none，建議汰換（史料里程碑而非難入耳措辭；成員刀根康尚已有異端《Solo for Wounded CD》；1996 HEAR 首發、2011 SEER 重發）。
