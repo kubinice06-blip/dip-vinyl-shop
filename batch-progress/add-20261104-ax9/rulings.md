@@ -57,3 +57,15 @@
 - **52356** 收 pearl 4：Upset Noise《Disperazione Nevrotica》（listeners 100）、Declino《Rivolta e negazione》（115）、Cheetah Chrome Motherfuckers《Furious Party》（214；年份 MB 1984、Discogs／MRR 1985，錄音 1984 年底，取 1985）、Peggio Punx《La città è quieta... ombre parlano》（16；自壓限 1000 張）。四張都是自壓或小廠 7 吋、iTunes 查無；選輯收錄不算串流再發（沿 ax3 先例）。
 - **52357** 汰：Crude SS（第二網域是別張 LP 的廠牌頁）；Anti-Dogmatikss（listeners 7 疑似拼法錯配、MB 無）；Kangrena、U.B.R.（只有單源或部落格）；B.G.K.（1999 Alternative Tentacles 全集合輯，冷門度到不了 5）；Zyklome A《Repression EP》（是與 Moral Demolition 的 split，卡面掛一團會錯；另一面評價「forgettable」也不是整張高強度）；Massacre 68（自有 Bandcamp 數位版，依 §0.8.1 但書冷門度 4，不能流亡）；Herejía（Anghami 有串流、證據只有 Discogs）；Brigada do Ódio（2021 彙整盤、無樂評）；Terveet Kädet（合輯、無封面、單源）。none 不轉一般卡（沿 ax6 52071）。
 - **52358** 卡單 13 張（`desc-tools/batches/cards/add-20261104-ax9-cards.json`）＋升格 2 張（`ax9u-cards.json`）。同級同藝人：13＋2 張的藝人在 seed heresy／pearl 都沒有（chk 全 0；Confuse、Disclose 在卡池只有本卡）。寫作 2 支 Opus 派出（out-1 升格 2＋a／b 6、out-2 c 7）。
+- **52359** Vorkriegsphase《Scheiss Krieg》改流亡：研究稿 facts 顯示只有三首、約五分半，MRR 同篇說合唱段落可跟唱——不是整張高強度，異端證據只剩一句「most brutal German thrash yet」加一篇部落格。原盤 Rock-O-Rama（獨立小廠）、之後只有非官方重發、listeners 62、無串流 → 冷門 5、流亡。異端新上架定為 **8**、流亡 **5**。
+- **52360** 封面：Wretched、Upset Noise、Declino 用 Discogs release（1690283／1750607／1691736，年份／國別／廠牌對上 MB，已登錄 registry）；Mob 47 用 Apple se 662017007（9/9 軌對上）；其餘 9 張 CAA。主線逐張目視核對。試聽 ready 2（Mob 47、Kaaos）、unavailable 11。三軸照 §0.8.1 錨點（`ratings-override.json`）；異端硬蕊 5，流亡 7 吋硬蕊 4。prepare gate 0 error（13 warning 皆為 UPC 缺）。
+
+## 主線審稿（2026-11-04）
+- **52361** 15 張（新 13＋升格 2）逐句對回研究稿 facts，改 6 張（`desc-override.json`）：
+  - Riistetyt：「鼓手全程承受極重的負荷」→「鼓手的工作量極重」（MRR「incredible workout」）；補 Ektro 重發說明的「芬蘭 82 hardcore 場景的縮影」；刪英文譯名；下一張《Skitsofrenia》補 MRR #8 的「thrash 的暴風雪」。（259 字）
+  - Anti Cimex：刪尾句「下一張 EP 速度比早期 Discharge 還快」——講的是別張。（216 字）
+  - Gore Beyond Necropsy：「被視為……最好的唱片之一」→「被形容為」（Decibel 單一來源）。
+  - Confuse：「後來美國 Fan Club」→「之後」，避免與前句 1997 LP 混淆。
+  - Vorkriegsphase（改流亡）：刪「四十多年後在一份歐洲 hardcore 7 吋票選裡仍因純粹的兇暴被選出」（部落格票選，媒體榜單不進正文）；「被視為」→「被形容為」；流通事實（只有原版、非官方重發、想找的人多於持有）移到第二句講為什麼少有人聽；補同時期 LP《Auf in den Tod》的 MRR 描述。（268 字）
+  - Cheetah Chrome Motherfuckers：刪「與 I Refuse It 的 split 原是卡帶」（研究稿 MRR 是 split LP，寫作層誤記）；補流亡理由「原版之後沒有單獨再版，1979–1987 年錄音到 2017 年才整理成合輯」。（271 字）
+  - 其餘 9 張（Disclose、D-Clone、Mob 47、Kaaos、Lärm、Wretched、Upset Noise、Declino、Peggio Punx）對過，未改字。Mob 47「瑞典 D-beat 團裡速度最快的一支」出自研究稿具名書籍（瑞典 punk 百科），保留。
