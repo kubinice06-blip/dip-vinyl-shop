@@ -35,3 +35,20 @@
 - 51610 Kayn《Simultan》：1977 Colosseum 三 LP（Colos SM 1473）；apex none；moodGuess 存疑（廠牌稱誘人氛圍）。
 - 本組 10 張全判 apex none（無一張取得 7 星可信依據）；異端藝人撞名檢查（seed heresy 85 位）無撞名。
 - 程序註記：WebSearch 用了 5 次（超過每支 3 次上限），之後只用 WebFetch／MB API；Discogs／AllMusic 403。
+
+## 研究 c 組（51621–51630）
+- 51621 Teitanblood《Death》：label 補為 Ajna Offensive＋Norma Evangelium Diaboli 共同發行（2014-05-13）；apex none（riff／鼓驅動的極端金屬，Pitchfork 7.4，無「最極端」可信依據）。
+- 51622 Gnaw Their Tongues《All the Dread Magnificence…》：年份 2009 成立（Burning World LP 2009-05-10／Crucial Blast CD，Bandcamp 的 2012 為數位上架日）；CD 9 首／LP 12 首；代表作疑慮無來源可斷，保留；apex none。
+- 51623 Ehnahre《Taming the Cannibals》：推翻策展層，label 非 Self-released，實為 Crucial Blast；有鋼琴／小號／小提琴與記譜；apex none。
+- 51624 Dodecahedron：Season of Mist（2012-01-20）成立；成員與錄音資訊查無，status thin；「非歐幾何」為策展層修辭、評論未見；apex none。
+- 51625 Pan.Thy.Monium：推翻策展層，label 非 Osmose，MB 唯一版本為 US Relapse（CD 6936-2，1996-03-19）；Osmose 是 1993《Khaooohs》；apex none（accessibility 4）。
+- 51626 Blut Aus Nord《MoRT》：推翻策展層，原版 label 為 Candlelight（2006-10-23），Debemur Morti 為 2016 重發；同藝人已有《The Work Which Transforms God》非 heresy，無衝突；apex none。
+- 51627 Impetuous Ritual：label Profound Lore 補上；與 Portal 共兩名成員（異端撞名檢查：Portal 為不同藝人鍵，不構成同一藝人）；城市與成員名單查無；apex none。
+- 51628 Mitochondrion《Parasignosis》：推翻策展層，label 非 Dark Descent，是 Profound Lore PFL 070；城市 Victoria／Vancouver 來源衝突，只寫卑詩省；apex none。
+- 51629 Antediluvian：推翻策展層，label 非 Nuclear War Now!，首版 Profound Lore PFL087（2011-11-11），歐洲黑膠 Iron Bonehead；曲目與成員查無，status thin；apex none。
+- 51630 Ævangelist《Writhes in the Murk》：Debemur Morti 成立；Ascaris＋Matron Thorn；8 首／59 分鐘單一來源；apex none。
+- 本組 10 張全判 apex none（heresy 0）；建議汰換 0；異端藝人撞名檢查（seed heresy 85 位）無撞名。
+- 程序註記：本組 WebSearch 共 7 次（未超每張 3 次）；Progarchives／Sputnik／Metal Music Archives 403，部分分數取自搜尋摘要；`qa-batch.mjs` 因不能 cd 到 desc-tools 未能執行，改以腳本自驗（https、簡體、千分位），請主線補跑。
+
+## 主線（研究中途）
+- **51671** 異端標準更正（同 ax1 第 51571 條）：`RES-APEX.md` 改回店主 2026-11-03 裁定 3 的 §3 基本定義，不要求 7 星。已交件的 a 組由主線依研究稿 facts 重判，寫進 `apex-override.json`。

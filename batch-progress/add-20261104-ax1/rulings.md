@@ -29,3 +29,6 @@
 - **51526**　NTT《Church of Dead Girls》年份採 Discogs 的 2002（MB 為 2003）；雙 CD、20 軌，風格偏暗黑噪音／氛圍混合，facts 薄 thin。
 - **51527**　IRM《Oedipus Dethroned》：2000 年 Cold Meat Industry CMI.87，瑞典 Norrköping，Martin Bladh + Erik Jarl；來源只有 Discogs／Noisextra，thin，列汰換優先。
 - **51528**　Atrax Morgue 身分與年份（2000、Old Europa Cafe OECD 031）無誤；seed 異端無撞名，Controlled Bleeding 池內只有非異端的 Golgotha，不衝突。
+
+## 主線（研究中途）
+- **51571** 異端標準更正：`RES-APEX.md` 原寫「7 星（史上最難入耳之一）」，比店主 2026-11-03 裁定 3（回到 §3 基本定義：accessibility 5＋可信資料支持其極端前衛／噪音／結構難入耳）嚴，c 組 7 張與 ax2 a 組 10 張全判 none。本檔改回裁定 3；還在跑的組發訊息更正，已交件的 c 組由主線依研究稿 facts 重判，寫進 `apex-override.json`。
