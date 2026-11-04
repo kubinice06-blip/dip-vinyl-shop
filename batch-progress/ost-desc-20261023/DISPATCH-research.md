@@ -17,7 +17,7 @@
 - `hookCandidates` 從作品與音樂的故事裡找（作曲家的處境、和導演／製作人的往來、名場面、作品的命運），**不要拿盤號、版本、曲目表筆誤、軌數當鉤子**。
 
 ## 工具與額度
-- **WebSearch 整支代理最多 3 次**（工作階段共用額度）。主要靠直接抓頁面：`WebFetch` 或 `curl -sL -A "dip-vinyl-shop/1.0 (kubinice06@gmail.com)"` 抓 ja／zh／en 維基（en 維基 API 會 429，改抓頁面或用 `https://en.wikipedia.org/wiki/<Title>?action=raw`）、vgmdb.net、MusicBrainz、官方網站、訪談頁。
+- **WebSearch 整支代理最多 3 次**（工作階段共用額度）。主要靠直接抓頁面：`WebFetch` 或 `curl -sL -A "dip-vinyl-shop/1.0 (+https://dipvinyl.tw)"` 抓 ja／zh／en 維基（en 維基 API 會 429，改抓頁面或用 `https://en.wikipedia.org/wiki/<Title>?action=raw`）、vgmdb.net、MusicBrainz、官方網站、訪談頁。
 - 臨時腳本與中間檔一律放 `/tmp/claude-0/-home-user-dip-vinyl-shop/d9919ed8-48cf-55a5-97b1-5d8c26fedbbb/scratchpad/<批>-<組>/`，檔名帶批次組別前綴。
 
 ## 輸出與續跑

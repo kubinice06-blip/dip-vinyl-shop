@@ -1,5 +1,5 @@
 import fs from 'fs';
-const UA = { 'User-Agent': 'dip-vinyl-shop/1.0 (kubinice06@gmail.com)' };
+const UA = { 'User-Agent': 'dip-vinyl-shop/1.0 (+https://dipvinyl.tw)' };
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 const cand = JSON.parse(fs.readFileSync('batch-progress/c52/cand.json','utf8'));
 

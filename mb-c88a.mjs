@@ -1,6 +1,6 @@
 import fs from 'node:fs';
 const DIR='/tmp/claude-0/-home-user-dip-vinyl-shop/f5085309-84aa-5485-a270-96aad3644d92/scratchpad/mb';
-const UA='dip-vinyl-shop/1.0 ( kubinice06@gmail.com )';
+const UA='dip-vinyl-shop/1.0 (+https://dipvinyl.tw)';
 const sleep=ms=>new Promise(r=>setTimeout(r,ms));
 export async function mb(path, name){
   const f=`${DIR}/${name}.json`;

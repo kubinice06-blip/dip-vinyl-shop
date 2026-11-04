@@ -3,7 +3,7 @@
 // 人工身分卡（mbRgMbid 空、附 mbAbsenceProof）不查 MB，原樣保留。
 import fs from 'node:fs';
 const D = 'batch-progress/thin-sub-20261020/';
-const UA = 'dip-vinyl-shop/1.0 (kubinice06@gmail.com)';
+const UA = 'dip-vinyl-shop/1.0 (+https://dipvinyl.tw)';
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 const n = s => String(s || '').toLowerCase().replace(/[‐-―－]/g, '-').normalize('NFKC').replace(/[^\p{L}\p{N}]+/gu, '');
 const groups = process.argv.slice(2);

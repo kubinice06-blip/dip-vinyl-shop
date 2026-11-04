@@ -18,7 +18,7 @@
 - 60–70 年代只有單曲／EP 的老團，考古廠牌整理成專輯的可收（`releaseException: "archival-compilation"`），但每國最多 3 張。
 
 ## 預算
-- **WebSearch 每組最多 5 次**（整個工作階段共用額度已用掉一大半）。身分走 MB API，資料走 WebFetch 維基／`https://api.discogs.com/releases/<id>`、`/masters/<id>`、`/database/search` 不可用就改 `/artists/<id>/releases`（帶 `User-Agent: dip-vinyl-shop/1.0 (kubinice06@gmail.com)`，每秒 1 次）。
+- **WebSearch 每組最多 5 次**（整個工作階段共用額度已用掉一大半）。身分走 MB API，資料走 WebFetch 維基／`https://api.discogs.com/releases/<id>`、`/masters/<id>`、`/database/search` 不可用就改 `/artists/<id>/releases`（帶 `User-Agent: dip-vinyl-shop/1.0 (+https://dipvinyl.tw)`，每秒 1 次）。
 
 ## 分組（提名數含汰換餘量）
 | 組 | 範圍 | 提名 |

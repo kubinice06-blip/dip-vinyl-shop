@@ -6,7 +6,7 @@
 // 也會把記錯的專輯名帶進流程（查不到封面時分不清是「沒收錄」還是「名字寫錯」）。
 import fs from 'fs';
 
-const UA = { 'User-Agent': 'dip-vinyl-shop/1.0 (kubinice06@gmail.com)' };
+const UA = { 'User-Agent': 'dip-vinyl-shop/1.0 (+https://dipvinyl.tw)' };
 const sleep = ms => new Promise(r => setTimeout(r, ms));   // MusicBrainz 硬性 1 req/s
 
 const args = process.argv.slice(2);

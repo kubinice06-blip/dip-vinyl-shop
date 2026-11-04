@@ -16,7 +16,7 @@
   label、rgMbid、identitySource、curatorWhy、curatorRisk、mbNote、queryAlias），另加 `notionId`（照 slice 抄）。
 
 ## 每張要做
-- **身分**：MB release-group（`releasegroup:` 查詢、UA `dip-vinyl-shop/1.0 (kubinice06@gmail.com)`、1 req/s）＋ Discogs API（master／release、`/masters/<id>/versions`）。MB 查無走 §1 人工（identitySource "manual"，附 Discogs 證據）。
+- **身分**：MB release-group（`releasegroup:` 查詢、UA `dip-vinyl-shop/1.0 (+https://dipvinyl.tw)`、1 req/s）＋ Discogs API（master／release、`/masters/<id>/versions`）。MB 查無走 §1 人工（identitySource "manual"，附 Discogs 證據）。
 - **盤名、年份**：取原盤首發；Notion 的年份可能是店內實物的再版年。key 前綴照 §0.5（拉丁 `desc2:`、CJK `desc4:`）。
 - **掛名**：照池中先例（`seed_cards.json` 唯讀掃描），不新造分裂、不自行合併。
 - **撞池**：掃 seed 同名盤、等價形盤名、同場錄音重排；撞池就退件並寫明。

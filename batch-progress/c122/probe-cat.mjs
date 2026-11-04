@@ -1,5 +1,5 @@
 import fs from 'node:fs';
-const UA='dip-vinyl-shop/1.0 (kubinice06@gmail.com)';
+const UA='dip-vinyl-shop/1.0 (+https://dipvinyl.tw)';
 const sleep=ms=>new Promise(r=>setTimeout(r,ms));
 async function mb(url,tries=5){
   for(let i=0;i<tries;i++){

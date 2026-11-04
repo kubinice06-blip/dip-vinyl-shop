@@ -89,7 +89,7 @@ async function dgPrimaryImage(id) {
 // 2026-09-10 首跑 c48～c52 全數 0 命中，根因就是這個，不是 Discogs 沒有那些碟。
 // 有 rgMbid 的話，廠牌與目錄號在 MusicBrainz 上本來就查得到，補上去再比。
 // MB 未認證是 1 req/s，所以只在真的缺料時才查。
-const MB_UA = { 'User-Agent': 'dip-vinyl-onboarding/1.0 ( kubinice06@gmail.com )', accept: 'application/json' };
+const MB_UA = { 'User-Agent': 'dip-vinyl-onboarding/1.0 (+https://dipvinyl.tw)', accept: 'application/json' };
 const mbCache = new Map();
 async function mbLabelsAndCats(rgMbid) {
   if (!rgMbid) return { labels: [], cats: new Set(), years: [] };

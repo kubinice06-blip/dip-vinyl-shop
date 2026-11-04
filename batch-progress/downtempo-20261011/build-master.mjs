@@ -2,7 +2,7 @@
 //   node batch-progress/downtempo-20261011/build-master.mjs
 import fs from 'node:fs';
 const D = 'batch-progress/downtempo-20261011/';
-const UA = 'dip-vinyl-shop/1.0 (kubinice06@gmail.com)';
+const UA = 'dip-vinyl-shop/1.0 (+https://dipvinyl.tw)';
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 const n = s => String(s || '').toLowerCase().replace(/[‐-―－]/g, '-').normalize('NFKC').replace(/[^\p{L}\p{N}]+/gu, '');
 const GENRES = {

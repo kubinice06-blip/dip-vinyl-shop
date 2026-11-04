@@ -27,7 +27,7 @@ const readJson = async (file, fallback) => {
 
 const token = process.env.DISCOGS_TOKEN
   || (await fs.readFile(path.join(root, '.discogs-token'), 'utf8').catch(() => '')).trim();
-const UA = 'dip-vinyl-year-backfill/1.0 ( kubinice06@gmail.com )';
+const UA = 'dip-vinyl-year-backfill/1.0 (+https://dipvinyl.tw)';
 
 async function discogs(artist, album) {
   if (!token) return null;

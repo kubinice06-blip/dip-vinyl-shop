@@ -87,5 +87,5 @@ c-126～c-130 那 225 張**（本機還沒上架）——與你相關的只有 c
 
 裁定寫進 `batch-progress/c131/rulings.md`，**a 組 350 起、b 組 360 起，用 append**。
 **臨時腳本與中間檔一律放 `scratchpad/c131<組>/`，檔名加前綴，絕不用 `build.mjs`、`cards/` 這種通用名**（第 306 條）。
-每做完 5 筆落檔一次；開工先讀、接續補完。MB 守 1 req/s，UA `dip-vinyl-shop/1.0 (kubinice06@gmail.com)`。
+每做完 5 筆落檔一次；開工先讀、接續補完。MB 守 1 req/s，UA `dip-vinyl-shop/1.0 (+https://dipvinyl.tw)`。
 **不要碰 git、不要動 `PROJECT_MEMORY.md`／`seed_cards.json`／KV／Firestore。**

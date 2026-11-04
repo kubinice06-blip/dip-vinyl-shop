@@ -18,7 +18,7 @@
 - 非英語來源（越南文、泰文、印尼文、烏爾都文、蒙古文、法文、葡文、西文維基與報導）都可以用，引用時保留原文網址。
 - 策展層 `curatorRisk` 的疑點逐條查；推翻策展層（年份、廠牌、掛名、盤名）要在 notes 與報告寫明。
 - 單一來源的人名、年份、銷量、獎項要交叉驗證；查不到就不寫，status 誠實標 thin。
-- 來源優先 MB／Discogs API（MB UA `dip-vinyl-shop/1.0 (kubinice06@gmail.com)`、1 req/s；Discogs 直連若 403 改用 WebFetch）、各語維基、AllMusic、Bandcamp 考古廠牌頁、當地媒體。**WebSearch 每支最多 3 次**（全工作階段共用 200 次額度）。
+- 來源優先 MB／Discogs API（MB UA `dip-vinyl-shop/1.0 (+https://dipvinyl.tw)`、1 req/s；Discogs 直連若 403 改用 WebFetch）、各語維基、AllMusic、Bandcamp 考古廠牌頁、當地媒體。**WebSearch 每支最多 3 次**（全工作階段共用 200 次額度）。
 - 不寫分數星等；人名照卡池掛名寫法（越南文保留聲調、泰文等照卡單）。
 
 ## 續跑

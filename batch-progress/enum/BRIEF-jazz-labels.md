@@ -39,7 +39,7 @@
 
 **每 50 筆落檔一次**；開工先讀已有的檔、接續補完。**臨時檔放
 `/tmp/claude-0/-home-user-dip-vinyl-shop/f5085309-84aa-5485-a270-96aad3644d92/scratchpad/enum-<slug>/`**
-（絕對路徑，第 306 條）。MB 守 1 req/s，UA `dip-vinyl-shop/1.0 (kubinice06@gmail.com)`。
+（絕對路徑，第 306 條）。MB 守 1 req/s，UA `dip-vinyl-shop/1.0 (+https://dipvinyl.tw)`。
 **不要碰 git、不要動 `PROJECT_MEMORY.md`／`seed_cards.json`。**
 
 ## 分工

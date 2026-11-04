@@ -23,7 +23,7 @@
      - 原聲帶合輯的藝人用 `Various Artists`。
      - 「蕭亞軒--」「陳奕迅2011 "?" 國語專輯」這類盤名，要還原成正式盤名（例《？》）。
 4. **身分證據**：二選一。
-   - MB 釘得住：填 `mbRgMbid`。查詢用 `https://musicbrainz.org/ws/2/release-group?query=artist:"…" AND releasegroup:"…"&fmt=json`，header 加 `User-Agent: dip-vinyl-shop/1.0 (kubinice06@gmail.com)`，每秒最多 1 次，503 等 2 秒重試。
+   - MB 釘得住：填 `mbRgMbid`。查詢用 `https://musicbrainz.org/ws/2/release-group?query=artist:"…" AND releasegroup:"…"&fmt=json`，header 加 `User-Agent: dip-vinyl-shop/1.0 (+https://dipvinyl.tw)`，每秒最多 1 次，503 等 2 秒重試。
    - MB 查無就走人工身分：`mbRgMbid` 留空，填 `mbAbsenceProof` 與 `manualEvidenceUrls`，至少兩個 https。可用 Discogs、廠牌頁、Bandcamp、維基、StreetVoice、KKBOX、博客來。
 5. **封面來源**：Apple Music／iTunes、CAA、Discogs、Bandcamp 任一，網址寫進 `evidence`。找不到封面就不收，寫進 notes。
 6. **名稱**：

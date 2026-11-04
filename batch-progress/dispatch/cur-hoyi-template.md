@@ -47,7 +47,7 @@
 - **`/masters/<id>/versions` 全表不可省**；版本數取 MB 與 Discogs 的**聯集**；沒有 master 頁的只寫「資料庫裡只有這一筆」。
 - **廠牌官方頁講的是它現在在賣的那個版本**（「【オリジナル】」也會是再發）。
 - **掛名照第 307 條池中先例**；外國藝人照 MB 實體名與池中先例；**`with`／`Featuring` 照盤面**。
-- MB 守 1 req/s，UA 逐字 `dip-vinyl-shop/1.0 (kubinice06@gmail.com)`；Discogs 約 1 req/3s；Apple 403／429 退避重試。
+- MB 守 1 req/s，UA 逐字 `dip-vinyl-shop/1.0 (+https://dipvinyl.tw)`；Discogs 約 1 req/3s；Apple 403／429 退避重試。
 
 ## 五、容器會重啟，要能續跑
 

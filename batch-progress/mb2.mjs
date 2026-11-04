@@ -3,7 +3,7 @@
 // 用法：node batch-progress/mb2.mjs <seed.json> <out.json> [--only-missing <mb-raw.json>]
 import fs from 'node:fs';
 
-const UA = 'dip-vinyl-shop/1.0 (kubinice06@gmail.com)';
+const UA = 'dip-vinyl-shop/1.0 (+https://dipvinyl.tw)';
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 const esc = s => String(s).replace(/([+\-!(){}\[\]^"~*?:\\/])/g, '\\$1');
 

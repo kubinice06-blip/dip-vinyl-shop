@@ -1,6 +1,6 @@
 // 本批身分查證：MB 1 req/s、503 重試 3 次、逐筆存檔
 import fs from 'node:fs';
-const UA = 'dip-vinyl/1.0 (kubinice06@gmail.com)';
+const UA = 'dip-vinyl/1.0 (+https://dipvinyl.tw)';
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 async function mb(path) {
   for (let i = 0; i < 4; i++) {
