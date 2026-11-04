@@ -256,3 +256,62 @@
 - **改 1 張**：`charles mingus|mingus ah um`：「是 Charles Mingus 在 Columbia 的第一張專輯，2003 年入選美國國家錄音登記表。1959 年 5 月，他帶著」→「是 Charles Mingus 1959 年在 Columbia 的第一張專輯，2003 年入選美國國家錄音登記表，2013 年進葛萊美名人堂。同年 5 月，他帶著」，並刪「〈Boogie Stop Shuffle〉是十二小節藍調」壓字（290→261）。依據研究稿 `ad-05-b`/`c` 的 status 條（2013 葛萊美名人堂）。已單鍵重寫 KV（`Success!`）。
 - **用語裁定**：新規說「入選」不寫，指的是遊戲用語（入選殿堂之類）；「入選國家錄音登記表」是外部事實，照 s1 先例保留。
 - 兩批審稿改動總計：ad-05 19 處（11 張，見 `review-ad-05.json`，含本段 2 處）、ad-06 8 處（8 張）。
+
+## ad-07（殿堂 30 張，s4）
+
+- 研究 3 Sonnet（WebSearch a 0／b 0／c 1 次；幾乎全靠 WebFetch 讀英文維基，樂評多為維基轉引）、寫作 2 Opus。派工時補了兩條新規（前兩句講夠格理由、出處不寫進簡介；研究 fact 註明單一來源或多份榜單）。coverage 無 none。thin：Cream、MC5、Transformer、Goodbye Yellow Brick Road、Plastic Ono Band、Harvest、Pink Moon、Rain Dogs、Aja、British Steel、Number of the Beast 的聲音塊，The Specials 的製作塊，照研究稿薄寫。
+- 研究層推翻舊簡介的主要錯誤（新稿未沿用）：Cream「瑞典與芬蘭雙雙封王」（瑞典黑膠、芬蘭、澳洲）與 Ertegun／Otis 軼事、Love「臨終遺言」、Layla「Allman 彈出前奏 riff」、MC5「擅印 Elektra 商標」、T. Rex「首張 glam 冠軍、蟬聯 6 週」（8 週）、Pink Moon 母帶傳聞、All Things Must Pass〈Isn't It a Pity〉三度遭拒、Graceland 盜版卡帶、Harvest「唯一美國冠軍」、Blondie「美國冠軍」（專輯最高第 6）與 1600 萬張、Kate Bush「EMI 要求改名」、Yes「即興」、Iron Maiden 惡夢來源與砸唱片原因、Specials 單曲限量與 Costello 軼事。
+- 寫作特注禁寫：上列各項，加 MC5 的 Q／VH1 名次（是歌曲）、Raw Power 2020 名次、Rolling Stone 單一名次。
+- 機器 QA：`qa-batch out ad-07` 標記 15 個皆誤報（團員本名、年代用年份、葛萊美名人堂、Layla 互指 Eric Clapton）；fix-spacing 0；字數 219–280。
+- 卡池檢查：本批 30 張現行簡介都來自 desc2，無 desc4、無 CJK 卡。
+
+### 主線審稿（2026-11-04，30 張逐張讀、逐句對研究稿）
+
+改 6 處（`review-ad-07.json`）：
+
+- `john lennon|john lennon/plastic ono band`：「也常被列為披頭四成員單飛後最重要的作品之一」→「也被視為披頭四成員單飛後最重要的作品之一」。研究稿只有 Mojo 與 High Fidelity 兩位樂評的說法，不是多份榜單
+- `john lennon|john lennon/plastic ono band`：「發行時評價兩極，有樂評認為它赤裸得令人難以忍受。」→「發行時樂評評價兩極。」。轉述 The Times 樂評原話等於寫出處
+- `the stooges|fun house`：「因此也被稱為龐克爵士」→「整張也被稱為龐克爵士」。「龐克爵士」是 Greg Kot 等人對整張的歸類，去掉推論
+- `tom waits|rain dogs`：「，發行當年在英美樂評的年度榜名列第一，常被列為 1980 年代最佳專輯之一。」→「，常被列為 1985 年與 1980 年代最好的專輯之一。」。描述榜單而非地位（同 s3 Marquee Moon 裁定），且年度第一只有 NYT 與 NME 兩份
+- `elvis costello|this year's model`：「，當年在兩份樂評年度榜名列第一，常被列為 1970 年代最佳專輯之一。」→「，常被列為 1978 年與 1970 年代最好的專輯之一。」。同上；1978 年度榜研究稿有五份
+- `judas priest|british steel`：「也是英國重金屬新浪潮最早的里程碑之一」→「也被視為英國重金屬新浪潮最早的里程碑之一」。維基編者歸納，不直述
+
+其餘 26 張逐張審過，未改字。另核：Layla「唯一的錄音室專輯」出自研究稿 notes（非 facts），屬實（Derek and the Dominos 只發過這一張錄音室專輯），照留；Transformer「Ronson 寫了〈Perfect Day〉的弦樂」研究稿 sound 條有，照留。
+
+### 上線
+
+- `kv-token-check` 通過；舊值存 `kv-before-ad-07.json`（60 鍵，30 個非 null）。
+- bulk put 30 鍵（全為 desc2），`Success!`（第一次輸出被 npm notice 截掉看不到，重跑一次親眼見到 `Success!`，內容相同）。
+- `verify-wave-kv` 回讀 30/30 逐字一致；`front-check ad-07`：30/30 前台為新稿，CURATED 0。
+- manifest：0 處需同步。
+
+## ad-08（殿堂 30 張，s4）
+
+- 研究 3 Sonnet（WebSearch a 4／b 3／c 8 次；s4 研究層合計 16 次）、寫作 2 Opus。coverage 無 none。thin：Motörhead、Hüsker Dü、Black Flag、Acid Tracks、Mothership Connection、At Newport 1960、Moanin' in the Moonlight、Soul Makossa 的聲音塊，RATM、Soundgarden、Arctic Monkeys、Strings of Life 的製作塊，Howlin' Wolf 的地位塊，照研究稿薄寫（Arctic Monkeys 232 字、無錄音經過）。
+- 研究層推翻舊簡介的主要錯誤（新稿未沿用）：Smashing Pumpkins「4 白金」（7 白金）與「過氣標籤」、White Stripes「10 天」（約兩週）、Slayer 拒發廠牌（Columbia 拒發、改 Geffen）、Motörhead 刺青／雙大鼓、Soundgarden 專輯得葛萊美（只有〈Black Hole Sun〉得獎）、Green Day「另類榜五週冠軍」、Neutral Milk Hotel《安妮日記》因果、Spiderland「1989 地下室、關燈唱」（實為 1990 年 8 月芝加哥四天）、Grace 的 Bowie 引言與 340 萬張、Pavement「只預約四小時」、Souvlaki「Eno 共同譜寫」（樂團自製、Eno 只做兩首）、Heaven or Las Vegas 人聲錄音者與命名軼事、Acid Tracks 價格與「預設音色」、Maggot Brain「想像母親還活著」與 LSD 一次錄成、At Newport「史上第一張現場藍調」、Howlin' Wolf「2014 藍調名人堂」、Soul Makossa 和解金額。
+- 機器 QA：`qa-batch research ad-08` 1 個千分位標記在研究稿（不進簡介）；`out` 8 個標記皆誤報（年代用年份、團員全名）；fix-spacing 0；字數 232–280。
+- Jerry Cantrell、Billie Joe Armstrong、Anthony Kiedis 的全名研究稿只有姓或暱稱，寫作層補了全名；皆為通行正確寫法，照留。
+- **卡池資料疑點（未動 seed，留給店主）**：Arctic Monkeys《Whatever People Say I Am, That's What I'm Not》seed 年份欄 2005，專輯 2006 年 1 月 23 日發行（研究稿英文維基），簡介照實際寫 2006。
+
+### 主線審稿（2026-11-04，30 張逐張讀、逐句對研究稿）
+
+改 7 處（`review-ad-08.json`）：
+
+- `slayer|reign in blood`：「，也是 Decibel 名人堂收進的第一張專輯。」→「。」。單一雜誌的專欄名人堂，寫出來等於點出處；前句已有多份榜單
+- `rage against the machine|rage against the machine`：「常被列進史上最佳專輯的榜單」→「常被列為史上最好的專輯之一」。描述榜單而非地位（同 s3 Marquee Moon 裁定）
+- `nine inch nails|the downward spiral`：同上
+- `alice in chains|dirt`：「也常被列進最佳金屬與 grunge 專輯的榜單」→「也常被列為最好的金屬與 grunge 專輯之一」。同上
+- `green day|dookie`：「它被認為與 The Offspring」→「它被視為與 The Offspring」。用語統一
+- `parliament|mothership connection`：「2011 年列入美國國會圖書館的國家錄音登記表」→「2011 年入選國家錄音登記表」。用語統一
+- `parliament|mothership connection`：「也首度加入號角組」→「也首度加入銅管組」。horn section 台灣慣用「銅管組」
+
+其餘 23 張逐張審過，未改字。另核：Stone Roses「幾乎一手開創 Madchester」研究稿有 Sennett 與 Groth、Rolling Stone 兩處，照留；At Newport 寫「最早的現場藍調專輯之一」（Chris Smith 2009），未寫「第一張」；Soul Makossa「被視為史上被取樣最多的非洲歌曲」是維基敘述單一來源，用「被視為」；單曲卡（Strings of Life、Acid Tracks、Soul Makossa）照卡池慣例用〈〉並寫明 12 吋單曲／單曲。
+
+### 上線
+
+- `kv-token-check` 通過；舊值存 `kv-before-ad-08.json`（60 鍵，30 個非 null）。
+- bulk put 30 鍵（全為 desc2；本批無 desc4、無 CJK 卡），`Success!`。
+- `verify-wave-kv` 回讀 30/30 逐字一致；`front-check ad-08`：30/30 前台為新稿，CURATED 0。
+- manifest 同步 3 處（c29-blues、c30-blues、c31-world）。
+- 兩批審稿改動總計：ad-07 6 處、ad-08 7 處。
+- **工具注意**：`tools/check-curated.mjs` 會把前台現值**寫回 `worklist.json`**（是 s1 第 0 步用的工具），對已重寫過的批會把 worklist 的舊簡介換成新稿。s4 誤跑一次，已用 `git checkout` 還原 worklist；後續工作階段不要拿它當檢查工具。
