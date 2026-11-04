@@ -1,0 +1,725 @@
+{
+ "group": "md36b",
+ "factions": [
+  {
+   "id": "post-industrial",
+   "zh": "慢工業電子／post-industrial ambient",
+   "count": 14,
+   "why": "Raster-Noton 低頻派（Senking）、Touch／Subtext 冷 drone、ritual 與 post-industrial 老將；只收往下壓、低頻轟鳴、慢的"
+  },
+  {
+   "id": "dark-downtempo",
+   "zh": "暗 downtempo 新世代（2010s–2020s）",
+   "count": 9,
+   "why": "PAN／Tri Angle／Blackest Ever Black／Hyperdub 系的霧化慢電子；排除 breakbeat 與四拍推進明顯的"
+  }
+ ],
+ "albums": [
+  {
+   "artist": "Senking",
+   "album": "List",
+   "year": 2007,
+   "label": "Raster-Noton",
+   "country": "de",
+   "faction": "post-industrial",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "Raster-Noton 裡最低頻、最慢的一支；Jens Massel 以次低頻墊與緩慢 dub 拍把人往下拖，冷而無旋律",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1.3,
+    "z": -1.2,
+    "why": "慢 dub 拍，次低頻厚墊，無旋律，陰冷"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/53a0df4d-5311-3da1-81c7-16a8de9ad980/front",
+    "https://music.apple.com/us/album/list/253802608",
+    "https://musicbrainz.org/release-group/53a0df4d-5311-3da1-81c7-16a8de9ad980"
+   ],
+   "mbRgMbid": "53a0df4d-5311-3da1-81c7-16a8de9ad980",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Senking",
+   "album": "Pong",
+   "year": 2010,
+   "label": "Raster-Noton",
+   "country": "de",
+   "faction": "post-industrial",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "Senking 承上啟下之作：低頻轟鳴、緩慢敲擊與暗色 dub 空間，Raster-Noton 冷調裡的重量級",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1.4,
+    "z": -1.2,
+    "why": "慢拍，低頻轟鳴，dub 殘響，冷"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/939ee7dc-111d-454c-b0ee-aa821827c72a/front",
+    "https://music.apple.com/us/album/pong/391078027",
+    "https://musicbrainz.org/release-group/939ee7dc-111d-454c-b0ee-aa821827c72a"
+   ],
+   "mbRgMbid": "939ee7dc-111d-454c-b0ee-aa821827c72a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Senking",
+   "album": "Capsize Recovery",
+   "year": 2013,
+   "label": "Raster-Noton",
+   "country": "de",
+   "faction": "post-industrial",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "評論稱其「低頻床翻騰嘶響」、暗色 dub；慢速、厚低頻、陰鬱，正是往下壓的 post-industrial 電子",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 1.6,
+    "z": -1.3,
+    "why": "慢，次低頻翻騰嘶響，手擊點綴，陰"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/97dc7648-745e-4d53-977b-b4da44784e38/front",
+    "https://music.apple.com/us/album/capsize-recovery/707592498",
+    "https://musicbrainz.org/release-group/97dc7648-745e-4d53-977b-b4da44784e38",
+    "https://www.cyclicdefrost.com/2013/11/senking-capsize-recovery-raster-noton/"
+   ],
+   "mbRgMbid": "97dc7648-745e-4d53-977b-b4da44784e38",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Senking",
+   "album": "Closing Ice",
+   "year": 2015,
+   "label": "Raster-Noton",
+   "country": "de",
+   "faction": "post-industrial",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "廠牌自述「重低頻、氛圍性、潛入心靈暗處」；冰冷厚重的慢電子，落頹靡",
+   "moodGuess": {
+    "x": 2.1,
+    "y": 1.6,
+    "z": -1.4,
+    "why": "慢，重低頻氛圍，冰冷無旋律"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/58f22b3a-ca12-43b6-a817-717cabff8836/front",
+    "https://music.apple.com/us/album/closing-ice/1032251895",
+    "https://musicbrainz.org/release-group/58f22b3a-ca12-43b6-a817-717cabff8836",
+    "https://raster-media.net/shop/closing-ice"
+   ],
+   "mbRgMbid": "58f22b3a-ca12-43b6-a817-717cabff8836",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Mika Vainio",
+   "album": "Aíneen musta puhelin (Black Telephone of Matter)",
+   "year": 2009,
+   "label": "Touch",
+   "country": "fi",
+   "faction": "post-industrial",
+   "genres": [
+    "electronic",
+    "experimental"
+   ],
+   "why": "Pan Sonic 的 Vainio 在 Touch 的第四張個人盤：金屬共鳴與長 drone，比 Pan Sonic 的脈衝更沉更靜",
+   "moodGuess": {
+    "x": 1.8,
+    "y": 1.5,
+    "z": -1.8,
+    "why": "幾無拍，金屬 drone 與共鳴，厚，極冷"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/b31b6362-3a5c-4c00-9de2-ce0bc987ca37/front",
+    "https://music.apple.com/us/album/black-telephone-of-matter/321010140",
+    "https://musicbrainz.org/release-group/b31b6362-3a5c-4c00-9de2-ce0bc987ca37",
+    "https://mikavainio.bandcamp.com/album/black-telephone-of-matter-a-neen-musta-puhelin"
+   ],
+   "mbRgMbid": "b31b6362-3a5c-4c00-9de2-ce0bc987ca37",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "無找到逐曲樂評；據 Vainio Touch 盤一貫路線（同廠 Magnetite 在池 x1.8）推估，個別曲目可能有噪音段"
+  },
+  {
+   "artist": "Prurient",
+   "album": "Rainbow Mirror",
+   "year": 2017,
+   "label": "Profound Lore Records",
+   "country": "us",
+   "faction": "post-industrial",
+   "genres": [
+    "electronic",
+    "drone"
+   ],
+   "why": "Prurient 二十週年的三小時合成器 drone 巨作，不是噪音牆而是緩慢沉降的暗色電子霧",
+   "moodGuess": {
+    "x": 1.9,
+    "y": 1.8,
+    "z": -1.6,
+    "why": "無鼓，長段合成器 drone，厚霧，陰冷"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/2f9e435e-c635-4dac-9484-f2636dc7c9f8/front",
+    "https://music.apple.com/us/album/rainbow-mirror/1309381020",
+    "https://musicbrainz.org/release-group/2f9e435e-c635-4dac-9484-f2636dc7c9f8",
+    "https://en.wikipedia.org/wiki/Rainbow_Mirror"
+   ],
+   "mbRgMbid": "2f9e435e-c635-4dac-9484-f2636dc7c9f8",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Prurient 噪音盤判躁（池中 Frozen Niagara Falls 3.4）；本張是 drone 盤，但個別段落仍可能有尖噪"
+  },
+  {
+   "artist": "Trepaneringsritualen",
+   "album": "Perfection & Permanence",
+   "year": 2014,
+   "label": "Cold Spring",
+   "country": "se",
+   "faction": "post-industrial",
+   "genres": [
+    "electronic",
+    "industrial"
+   ],
+   "why": "瑞典 ritual／death industrial 代表：慢速儀式鼓、低吟與厚殘響，壓人下沉而非刺激",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.8,
+    "z": -1.7,
+    "why": "慢儀式鼓，低吟，厚殘響與低頻，陰森"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/e08a43d4-1488-45ce-bfed-eddbef498307/front",
+    "https://music.apple.com/us/album/perfection-permanence/901443303",
+    "https://musicbrainz.org/release-group/e08a43d4-1488-45ce-bfed-eddbef498307"
+   ],
+   "mbRgMbid": "e08a43d4-1488-45ce-bfed-eddbef498307",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "ritual 鼓若被判「推力」x 可能上到 2.8；未找到逐曲樂評"
+  },
+  {
+   "artist": "Dead Voices on Air",
+   "album": "Hafted Maul",
+   "year": 1995,
+   "label": "Invisible Records",
+   "country": "",
+   "faction": "post-industrial",
+   "genres": [
+    "electronic",
+    "industrial"
+   ],
+   "why": "Mark Spybey（前 Zoviet France）的 post-industrial ambient 首作：磁帶糊、loop 與低頻嗡鳴",
+   "moodGuess": {
+    "x": 1.8,
+    "y": 1.4,
+    "z": -1.3,
+    "why": "鬆散 loop，磁帶糊，低頻嗡鳴，陰"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/9faa21d0-872c-3e43-804b-ec88657266df/front",
+    "https://music.apple.com/us/album/hafted-maul/79886856",
+    "https://musicbrainz.org/release-group/9faa21d0-872c-3e43-804b-ec88657266df",
+    "https://en.wikipedia.org/wiki/Hafted_Maul",
+    "https://www.discogs.com/master/329499"
+   ],
+   "mbRgMbid": "9faa21d0-872c-3e43-804b-ec88657266df",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Dead Voices on Air",
+   "album": "Shap",
+   "year": 1996,
+   "label": "Invisible Records",
+   "country": "",
+   "faction": "post-industrial",
+   "genres": [
+    "electronic",
+    "industrial"
+   ],
+   "why": "Spybey 延續 Zoviet France 式的混濁 post-industrial 織體，緩慢、霧化、無人味",
+   "moodGuess": {
+    "x": 1.8,
+    "y": 1.4,
+    "z": -1.3,
+    "why": "無明確拍，混濁織體，殘響霧，冷"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/4138c067-43f2-318b-8d72-f623f7fe3683/front",
+    "https://music.apple.com/us/album/shap/204643855",
+    "https://musicbrainz.org/release-group/4138c067-43f2-318b-8d72-f623f7fe3683",
+    "https://en.wikipedia.org/wiki/Dead_Voices_on_Air"
+   ],
+   "mbRgMbid": "4138c067-43f2-318b-8d72-f623f7fe3683",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Black Rain",
+   "album": "Dark Pool",
+   "year": 2014,
+   "label": "Blackest Ever Black",
+   "country": "us",
+   "faction": "post-industrial",
+   "genres": [
+    "electronic",
+    "industrial"
+   ],
+   "why": "紐約 cyberpunk 工業老團的復出作；Fact 評「沒有一絲溫暖能滲入」，深入暗黑 ambient",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 1.5,
+    "z": -1.6,
+    "why": "慢工業脈動，暗 ambient 墊，冷到無溫"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/f000d9c3-50ac-48bf-895a-7c1627574c05/front",
+    "https://musicbrainz.org/release-group/f000d9c3-50ac-48bf-895a-7c1627574c05",
+    "https://en.wikipedia.org/wiki/Dark_Pool"
+   ],
+   "mbRgMbid": "f000d9c3-50ac-48bf-895a-7c1627574c05",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Mondkopf",
+   "album": "They Fall, but You Don’t",
+   "year": 2017,
+   "label": "In Paradisum",
+   "country": "fr",
+   "faction": "post-industrial",
+   "genres": [
+    "electronic",
+    "drone"
+   ],
+   "why": "法國 Mondkopf 從 techno 轉向的暗色 drone 盤：失真合成器長音、慢、沉",
+   "moodGuess": {
+    "x": 1.9,
+    "y": 1.6,
+    "z": -1.2,
+    "why": "幾無拍，失真合成器長音，厚，陰"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/3200c29e-430b-4920-be2d-55ad17313caa/front",
+    "https://music.apple.com/us/album/they-fall-but-you-dont/1194267365",
+    "https://musicbrainz.org/release-group/3200c29e-430b-4920-be2d-55ad17313caa"
+   ],
+   "mbRgMbid": "3200c29e-430b-4920-be2d-55ad17313caa",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "未找到逐曲樂評，以其 In Paradisum 時期轉向 drone 的路線推估"
+  },
+  {
+   "artist": "Eric Holm",
+   "album": "Andøya",
+   "year": 2014,
+   "label": "Subtext",
+   "country": "us",
+   "faction": "post-industrial",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "Subtext 系（Roly Porter、Paul Jebanasam 同廠）：北極雷達站與結構振動錄音做成的重低頻冰冷 drone",
+   "moodGuess": {
+    "x": 1.4,
+    "y": 1.6,
+    "z": -1.6,
+    "why": "無鼓，結構振動低頻轟鳴，冰冷"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/132362c9-255e-4c56-a58f-d2c811d0aaaa/front",
+    "https://music.apple.com/us/album/and%C3%B8ya/1478960545",
+    "https://musicbrainz.org/release-group/132362c9-255e-4c56-a58f-d2c811d0aaaa"
+   ],
+   "mbRgMbid": "132362c9-255e-4c56-a58f-d2c811d0aaaa",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Eric Holm",
+   "album": "Barotrauma",
+   "year": 2016,
+   "label": "Subtext",
+   "country": "us",
+   "faction": "post-industrial",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "承 Andøya 的水下／壓力主題，低頻壓迫的慢 drone，冷且無旋律",
+   "moodGuess": {
+    "x": 1.5,
+    "y": 1.6,
+    "z": -1.6,
+    "why": "無鼓，水壓般低頻，厚，冷"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/3dffafb4-7613-4c2e-976b-2ce5179cef1a/front",
+    "https://music.apple.com/us/album/barotrauma/1478756065",
+    "https://musicbrainz.org/release-group/3dffafb4-7613-4c2e-976b-2ce5179cef1a"
+   ],
+   "mbRgMbid": "3dffafb4-7613-4c2e-976b-2ce5179cef1a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Eric Holm",
+   "album": "Surface Variations",
+   "year": 2020,
+   "label": "Subtext",
+   "country": "us",
+   "faction": "post-industrial",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "Holm 在 Subtext 的第三張，同樣以結構錄音堆出低頻量體，陰冷靜滯",
+   "moodGuess": {
+    "x": 1.5,
+    "y": 1.5,
+    "z": -1.5,
+    "why": "無鼓，低頻量體，靜滯，冷"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/3fb19b35-a128-4e3e-a6f1-5de44e7fc006/front",
+    "https://music.apple.com/us/album/surface-variations/1507537136",
+    "https://musicbrainz.org/release-group/3fb19b35-a128-4e3e-a6f1-5de44e7fc006"
+   ],
+   "mbRgMbid": "3fb19b35-a128-4e3e-a6f1-5de44e7fc006",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "未找到樂評，依前兩張同系推估"
+  },
+  {
+   "artist": "Forest Swords",
+   "album": "Compassion",
+   "year": 2017,
+   "label": "Ninja Tune",
+   "country": "gb",
+   "faction": "dark-downtempo",
+   "genres": [
+    "electronic",
+    "downtempo"
+   ],
+   "why": "Forest Swords 繼 Engravings（池中 x2.5／z−0.8）之後的第二張：慢 dub 拍、厚低頻、切碎人聲，陰鬱儀式感",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.3,
+    "z": -0.7,
+    "why": "慢 dub 拍，厚低頻與殘響，切碎合唱，陰"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/bb6fed96-95a7-46b3-aca7-9e1c748dbd43/front",
+    "https://music.apple.com/us/album/compassion/1212863275",
+    "https://musicbrainz.org/release-group/bb6fed96-95a7-46b3-aca7-9e1c748dbd43",
+    "https://en.wikipedia.org/wiki/Compassion_(Forest_Swords_album)"
+   ],
+   "mbRgMbid": "bb6fed96-95a7-46b3-aca7-9e1c748dbd43",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "部分曲目旋律較溫（Arms Out），z 可能往 −0.4 靠"
+  },
+  {
+   "artist": "Huerco S.",
+   "album": "Colonial Patterns",
+   "year": 2013,
+   "label": "Software",
+   "country": "us",
+   "faction": "dark-downtempo",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "Huerco S. 首作：霧化、灰塵感的慢速 lo-fi house，鼓被悶在厚霧底下，冷灰",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.5,
+    "z": -0.8,
+    "why": "悶住的慢拍，厚霧與磁帶塵，灰冷"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/18657520-43c5-41ad-8991-3ec6f096e9a5/front",
+    "https://music.apple.com/us/album/colonial-patterns/1775730988",
+    "https://musicbrainz.org/release-group/18657520-43c5-41ad-8991-3ec6f096e9a5"
+   ],
+   "mbRgMbid": "18657520-43c5-41ad-8991-3ec6f096e9a5",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "有悶住的 4/4 底拍，x 可能被評到 2.7"
+  },
+  {
+   "artist": "Lee Gamble",
+   "album": "Dutch Tvashar Plumes",
+   "year": 2012,
+   "label": "PAN",
+   "country": "gb",
+   "faction": "dark-downtempo",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "Lee Gamble 在 PAN 的首張：把 rave 記憶溶解成無拍的霧與低頻殘影（Diversions 已在池 x1.4）",
+   "moodGuess": {
+    "x": 1.8,
+    "y": 1.2,
+    "z": -0.8,
+    "why": "幾無拍，溶解的 rave 殘影，霧，冷"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/c9485f5b-37a8-4ccb-b7b5-0d111586c40d/front",
+    "https://music.apple.com/us/album/dutch-tvashar-plumes/1501434700",
+    "https://musicbrainz.org/release-group/c9485f5b-37a8-4ccb-b7b5-0d111586c40d"
+   ],
+   "mbRgMbid": "c9485f5b-37a8-4ccb-b7b5-0d111586c40d",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Lee Gamble",
+   "album": "KOCH",
+   "year": 2014,
+   "label": "PAN",
+   "country": "gb",
+   "faction": "dark-downtempo",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "碎裂的 techno 骨架沉在厚殘響裡，慢而迷濛，比 Mnestic Pressure 靜得多",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.2,
+    "z": -1,
+    "why": "碎拍沉在殘響霧，低頻，冷"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/ca94dd73-e055-4e92-9063-5904b024abea/front",
+    "https://music.apple.com/us/album/koch/1501419342",
+    "https://musicbrainz.org/release-group/ca94dd73-e055-4e92-9063-5904b024abea"
+   ],
+   "mbRgMbid": "ca94dd73-e055-4e92-9063-5904b024abea",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "少數曲目拍點較清楚，x 可能 2.6–2.7"
+  },
+  {
+   "artist": "Lee Gamble",
+   "album": "Models",
+   "year": 2023,
+   "label": "Hyperdub",
+   "country": "gb",
+   "faction": "dark-downtempo",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "Hyperdub 時期的 ambient 盤：合成人聲與厚墊漂浮，無鼓、陰冷",
+   "moodGuess": {
+    "x": 1.9,
+    "y": 1.1,
+    "z": -0.9,
+    "why": "無鼓，合成人聲漂浮，厚墊，冷"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/7694eadd-ff05-4f93-bf53-aaa33da57723/front",
+    "https://music.apple.com/us/album/models/1696881894",
+    "https://musicbrainz.org/release-group/7694eadd-ff05-4f93-bf53-aaa33da57723"
+   ],
+   "mbRgMbid": "7694eadd-ff05-4f93-bf53-aaa33da57723",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Vessel",
+   "album": "Order of Noise",
+   "year": 2012,
+   "label": "Tri Angle",
+   "country": "gb",
+   "faction": "dark-downtempo",
+   "genres": [
+    "electronic",
+    "techno"
+   ],
+   "why": "Tri Angle 時期 Bristol 新世代：慢速、混濁的 dub techno／低頻，像溺在泥裡的舞曲",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.6,
+    "z": -1.1,
+    "why": "慢拍，泥濘低頻，dub 殘響，陰"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/1112e276-6e84-4d00-9226-8ca9bf0dd7c7/front",
+    "https://music.apple.com/us/album/order-of-noise/573284876",
+    "https://musicbrainz.org/release-group/1112e276-6e84-4d00-9226-8ca9bf0dd7c7"
+   ],
+   "mbRgMbid": "1112e276-6e84-4d00-9226-8ca9bf0dd7c7",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "有 techno 底拍，x 可能被評到 2.7–2.8"
+  },
+  {
+   "artist": "Ossia",
+   "album": "Devil’s Dance",
+   "year": 2019,
+   "label": "Blackest Ever Black",
+   "country": "gb",
+   "faction": "dark-downtempo",
+   "genres": [
+    "electronic",
+    "dub"
+   ],
+   "why": "Bristol 的 Ossia 在 Blackest Ever Black 的首張：慢 dub、工業噪音質地與重低頻，陰沉",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1.7,
+    "z": -1.4,
+    "why": "慢 dub 拍，重低頻，工業噪音質地，陰"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/199e6eef-6b2d-4392-90fd-3ade11502c68/front",
+    "https://musicbrainz.org/release-group/199e6eef-6b2d-4392-90fd-3ade11502c68",
+    "https://www.discogs.com/search/?q=Ossia+Devil%27s+Dance&type=master"
+   ],
+   "mbRgMbid": "199e6eef-6b2d-4392-90fd-3ade11502c68",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "iTunes 查無，封面靠 CAA"
+  },
+  {
+   "artist": "Ital Tek",
+   "album": "Outland",
+   "year": 2020,
+   "label": "Planet Mu",
+   "country": "gb",
+   "faction": "dark-downtempo",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "Ital Tek 轉向的暗色電影感電子：失眠與幻聽為題，厚合成器墊與遠處碎拍",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 1.3,
+    "z": -1.1,
+    "why": "稀疏碎拍，厚合成器墊，陰冷"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/a4a38478-dec2-47fe-b537-7912a8e0cc64/front",
+    "https://music.apple.com/us/album/outland/1500100059",
+    "https://musicbrainz.org/release-group/a4a38478-dec2-47fe-b537-7912a8e0cc64",
+    "https://en.wikipedia.org/wiki/Outland_(Ital_Tek_album)"
+   ],
+   "mbRgMbid": "a4a38478-dec2-47fe-b537-7912a8e0cc64",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Tim Hecker",
+   "album": "Radio Amor",
+   "year": 2003,
+   "label": "Mille Plateaux",
+   "country": "ca",
+   "faction": "dark-downtempo",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "Hecker 早期 Mille Plateaux 盤：殘響霧與磁帶飽和的無拍電子，池中同期 Mirages z−0.6",
+   "moodGuess": {
+    "x": 1.6,
+    "y": 1.4,
+    "z": -0.6,
+    "why": "無鼓，殘響霧，飽和糊，偏冷"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/9ae653f8-e791-3480-b442-08d7f6deacfe/front",
+    "https://music.apple.com/us/album/radio-amor/557258962",
+    "https://musicbrainz.org/release-group/9ae653f8-e791-3480-b442-08d7f6deacfe"
+   ],
+   "mbRgMbid": "9ae653f8-e791-3480-b442-08d7f6deacfe",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "色溫比 Hecker 後期溫，z 可能 −0.4"
+  }
+ ],
+ "notes": [
+  "只交 23 張（目標 27）：不湊數。剔除理由：Haxan Cloak《Excavation》池中已有（藝人存為 Haxan Cloak）；Vatican Shadow《Ornamented Walls》FACT 評為最粗暴的一張、《Death Is Unity With God》「destroyed rhythms」、《Kneel Before Religious Icons》鼓機 loop 貼邊 → 都不提；Puce Mary《The Drought》Wikipedia 列 power electronics、評論稱「焦慮」→ 判躁；Emptyset《Demiurge》評為 grinding post-techno → 判躁；Hiro Kone《A Fossil Begins to Bray》RA 評「更硬更猙獰」→ 判躁；Mondkopf《Hadès》有重拍 → 貼邊不提；Forest Swords《Bolted》評「invigorating impact」→ 貼邊不提；Senking《Unison》是 Reptilicus & Senking 合作 → 不提；Ø 的盤質地偏稀疏（池中 Konstellaatio y0.5）→ 判輕不提；Mika Vainio《Kajo》微聲稀疏型 → 判輕不提。",
+  "已被他組提過而避開：Ben Frost／Roly Porter／Kevin Drumm／Yair Elazar Glotman／Scorn／Main／Final／Lull／King Midas Sound／The Bug vs Earth／Actress《Hazyville》等。",
+  "Rrose、Shapednoise、Samuel Kerridge、Grischa Lichtenberger、Kangding Ray、Byetone、Pessimist：四拍推進或尖銳打擊為主，判躁不提；Croatian Amor、Huerco S.《For Those of You…》色溫可能貼 0，不提。",
+  "Actress × LCO《LAGEOS》部分曲有 techno 拍，未提。",
+  "全部 23 張都由 MB 釘住（primary-type Album、無 secondary type），CAA 皆有封面（HEAD 307）。"
+ ]
+}

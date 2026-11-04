@@ -1,0 +1,812 @@
+{
+ "group": "md36a",
+ "factions": [
+  {
+   "id": "illbient",
+   "zh": "紐約 illbient（暗電子／ambient dub）",
+   "count": 9,
+   "why": "90 年代紐約 illbient 的電子那半：Laswell 系暗 ambient dub、ROIR／WordSound／Asphodel／Subharmonic；有 boom-bap 推進或雷鬼暖的不收"
+  },
+  {
+   "id": "dub-ambient-techno",
+   "zh": "冷 dub／ambient techno 慢盤",
+   "count": 8,
+   "why": "Basic Channel／Chain Reaction 以外的慢 dub techno 與 ambient techno：Vladislav Delay Huume 時期、~scape、BLKRTZ、Echospace 二線、Dozzy／Neel；只收無四拍推進的"
+  },
+  {
+   "id": "cold-glitch-ambient",
+   "zh": "冷 glitch／暗 ambient 電子",
+   "count": 9,
+   "why": "Monolake 主腦 Henke 的無拍獨奏、Murcof、Klimek 等冷灰 glitch／暗 ambient 電子"
+  }
+ ],
+ "albums": [
+  {
+   "artist": "DJ Spooky vs. Scanner",
+   "album": "The Quick and the Dead",
+   "year": 1999,
+   "label": "Sulphur",
+   "country": "us",
+   "faction": "illbient",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "紐約 illbient 旗手與英國掃描器聲響藝術家的合作盤，把無線電截聽與暗電子拼貼成都市夜幕；鼓只是慢碎拍，整體被雜訊霧往下拉",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.3,
+    "z": -0.9,
+    "why": "慢碎拍＋收音機雜訊、殘響厚，陰冷無旋律"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/e3a1a58a-cd97-359d-b129-436ed63240bc",
+    "https://coverartarchive.org/release-group/e3a1a58a-cd97-359d-b129-436ed63240bc/front",
+    "https://www.discogs.com/master/28485"
+   ],
+   "mbRgMbid": "e3a1a58a-cd97-359d-b129-436ed63240bc",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Scanner",
+   "uncertain": "Discogs 另標 Breaks／Trip Hop：有慢碎拍但不是 boom-bap 推進；若主線聽感偏推，x 可能到 2.6"
+  },
+  {
+   "artist": "Badawi",
+   "album": "Bedouin Sound Clash",
+   "year": 1996,
+   "label": "ROIR",
+   "country": "us",
+   "faction": "illbient",
+   "genres": [
+    "electronic",
+    "dub"
+   ],
+   "why": "Raz Mesinai 以 Badawi 名義在 ROIR 發的 illbient 經典，中東打擊與深 dub 低頻在迴授殘響裡打轉，陰鬱、無人聲、沒有雷鬼的暖",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1.6,
+    "z": -0.8,
+    "why": "深 dub 低頻＋中東打擊、長回聲，陰鬱無人聲"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/633f1192-149c-380f-8d27-8b28460af728",
+    "https://coverartarchive.org/release-group/633f1192-149c-380f-8d27-8b28460af728/front",
+    "https://www.discogs.com/master/29127"
+   ],
+   "mbRgMbid": "633f1192-149c-380f-8d27-8b28460af728",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "帶 steppers 拍型，若主線判 reggae 感重可汰"
+  },
+  {
+   "artist": "M.J. Harris and Bill Laswell",
+   "album": "Somnific Flux",
+   "year": 1995,
+   "label": "Subharmonic",
+   "country": "us",
+   "faction": "illbient",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "Scorn 的 Mick Harris 與 Laswell 合作的孤立主義長篇，兩軌全是低頻嗡鳴與長殘響，illbient 最暗的那一端",
+   "moodGuess": {
+    "x": 1.3,
+    "y": 1.7,
+    "z": -1.5,
+    "why": "無鼓，低頻嗡鳴與長殘響，陰冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/77895b91-856f-3ffe-89fb-126faf149c5d",
+    "https://coverartarchive.org/release-group/77895b91-856f-3ffe-89fb-126faf149c5d/front",
+    "https://www.discogs.com/master/13045"
+   ],
+   "mbRgMbid": "77895b91-856f-3ffe-89fb-126faf149c5d",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Mick Harris",
+   "uncertain": ""
+  },
+  {
+   "artist": "Bill Laswell",
+   "album": "Silent Recoil: Dub System One",
+   "year": 1995,
+   "label": "Low",
+   "country": "us",
+   "faction": "illbient",
+   "genres": [
+    "electronic",
+    "dub"
+   ],
+   "why": "Laswell 獨自用貝斯、鼓機與效果器做的暗 ambient dub，三長軌慢到幾乎靜止，厚低頻壓著陰暗殘響",
+   "moodGuess": {
+    "x": 2,
+    "y": 1.7,
+    "z": -0.9,
+    "why": "慢鼓機＋厚貝斯 dub、長殘響，陰暗無旋律"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/69fd08ef-4c3f-3efd-8f83-bb11736747fd",
+    "https://coverartarchive.org/release-group/69fd08ef-4c3f-3efd-8f83-bb11736747fd/front",
+    "https://www.discogs.com/master/268939"
+   ],
+   "mbRgMbid": "69fd08ef-4c3f-3efd-8f83-bb11736747fd",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Bill Laswell",
+   "album": "Sacred System Chapter One: Book of Entrance",
+   "year": 1996,
+   "label": "ROIR",
+   "country": "us",
+   "faction": "illbient",
+   "genres": [
+    "electronic",
+    "dub"
+   ],
+   "why": "Laswell「Sacred System」系列首章，ROIR 出版的暗 ambient dub，慢鼓、深貝斯與空間回聲，冷而不帶雷鬼暖意",
+   "moodGuess": {
+    "x": 2.1,
+    "y": 1.6,
+    "z": -0.7,
+    "why": "慢 dub 鼓、厚低頻與空間回聲，暗而無主旋律"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/8a5357c7-e0e8-3604-a4be-230a9bfee80c",
+    "https://coverartarchive.org/release-group/8a5357c7-e0e8-3604-a4be-230a9bfee80c/front",
+    "https://www.discogs.com/master/141457"
+   ],
+   "mbRgMbid": "8a5357c7-e0e8-3604-a4be-230a9bfee80c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Sacred System",
+   "uncertain": "池中 Laswell《Dub Chamber 3》z −0.4，同系列 z 可能偏中性"
+  },
+  {
+   "artist": "Bill Laswell & Terre Thaemlitz",
+   "album": "Web",
+   "year": 1995,
+   "label": "Subharmonic",
+   "country": "us",
+   "faction": "illbient",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "Laswell 與 Terre Thaemlitz 在 Subharmonic 的抽象電子合作，無拍的噪訊層與合成器墊，冷硬疏離",
+   "moodGuess": {
+    "x": 1.4,
+    "y": 1.2,
+    "z": -1.1,
+    "why": "無鼓抽象電子墊與噪訊層，冷、疏離"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/41777aba-2f0a-3e82-b9ee-90fa7e2c37a2",
+    "https://coverartarchive.org/release-group/41777aba-2f0a-3e82-b9ee-90fa7e2c37a2/front",
+    "https://www.discogs.com/master/589782"
+   ],
+   "mbRgMbid": "41777aba-2f0a-3e82-b9ee-90fa7e2c37a2",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Terre Thaemlitz",
+   "uncertain": ""
+  },
+  {
+   "artist": "We™",
+   "album": "As Is.",
+   "year": 1997,
+   "label": "Asphodel",
+   "country": "us",
+   "faction": "illbient",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "DJ Olive、Lloop、Once11 組成的 illbient 核心團體首張專輯，唱盤刮擦、取樣迴圈與霧狀電子墊鬆散漂浮，陰冷的布魯克林倉庫夜",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 1.2,
+    "z": -0.8,
+    "why": "唱盤刮擦、取樣迴圈與霧狀電子墊，鬆散陰冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/44a29bee-49a2-3676-982a-427c92198a9e",
+    "https://coverartarchive.org/release-group/44a29bee-49a2-3676-982a-427c92198a9e/front",
+    "https://www.discogs.com/master/54492"
+   ],
+   "mbRgMbid": "44a29bee-49a2-3676-982a-427c92198a9e",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "We",
+   "uncertain": "Discogs 另標 Drum n Bass，若有幾軌碎拍偏快 x 會被拉高"
+  },
+  {
+   "artist": "Sub Dub",
+   "album": "Sub Dub",
+   "year": 1996,
+   "label": "Instinct Ambient",
+   "country": "us",
+   "faction": "illbient",
+   "genres": [
+    "electronic",
+    "dub"
+   ],
+   "why": "Raz Mesinai 與 Mike Weiss 的 Sub Dub 在 Instinct Ambient 的同名專輯，illbient 早期的 ambient dub，深貝斯、中東音色與殘響霧",
+   "moodGuess": {
+    "x": 2.1,
+    "y": 1.6,
+    "z": -0.6,
+    "why": "ambient dub 深貝斯＋中東音色、殘響霧，陰"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/d2438f7d-74f6-3780-bb6e-ffa40631a609",
+    "https://coverartarchive.org/release-group/d2438f7d-74f6-3780-bb6e-ffa40631a609/front",
+    "https://www.discogs.com/master/54350"
+   ],
+   "mbRgMbid": "d2438f7d-74f6-3780-bb6e-ffa40631a609",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "有 reggae 根底，z 可能偏中性；若主線聽感偏暖可汰"
+  },
+  {
+   "artist": "Spectre",
+   "album": "The End",
+   "year": 1999,
+   "label": "WordSound",
+   "country": "us",
+   "faction": "illbient",
+   "genres": [
+    "electronic",
+    "dub"
+   ],
+   "why": "WordSound 主腦 Skiz Fernando 的 Spectre 名義末日題材盤，慢沉 dub 拍、厚低頻與恐怖片式取樣，illbient 最陰森的一張",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.5,
+    "z": -1.1,
+    "why": "慢沉 dub 拍、厚低頻與陰森取樣"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/9fe5e84b-825b-3902-bdf9-124442b15dea",
+    "https://coverartarchive.org/release-group/9fe5e84b-825b-3902-bdf9-124442b15dea/front",
+    "https://www.discogs.com/master/19346"
+   ],
+   "mbRgMbid": "9fe5e84b-825b-3902-bdf9-124442b15dea",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Spectre 有 hip-hop 根底；Discogs 本張只標 Illbient／Dub，若主線聽出 boom-bap 推進請汰"
+  },
+  {
+   "artist": "Vladislav Delay",
+   "album": "Demo(n) Tracks",
+   "year": 2004,
+   "label": "Huume",
+   "country": "fi",
+   "faction": "dub-ambient-techno",
+   "genres": [
+    "electronic",
+    "dub techno"
+   ],
+   "why": "Ripatti 自家 Huume 首發，碎裂打擊被埋在糊爛的 dub 霧裡，比 Multila 更髒更暗，沒有四拍推進",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.6,
+    "z": -1.1,
+    "why": "碎裂鼓點埋在糊爛 dub 霧裡，密而陰"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/9c52b23e-7ca7-31ff-b9ad-5454707dbf01",
+    "https://coverartarchive.org/release-group/9c52b23e-7ca7-31ff-b9ad-5454707dbf01/front",
+    "https://www.discogs.com/search/?q=Vladislav+Delay+Demo(n)+Tracks&type=all"
+   ],
+   "mbRgMbid": "9c52b23e-7ca7-31ff-b9ad-5454707dbf01",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "本張較刺耳，x 可能靠近 2.8"
+  },
+  {
+   "artist": "Vladislav Delay",
+   "album": "Whistleblower",
+   "year": 2007,
+   "label": "Huume",
+   "country": "fi",
+   "faction": "dub-ambient-techno",
+   "genres": [
+    "electronic",
+    "dub techno"
+   ],
+   "why": "Huume 時期的長軌 dub 盤，鬆散打擊、厚殘響與長達二十分鐘的漂流，冷而沉",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.5,
+    "z": -0.9,
+    "why": "鬆散 dub 打擊、厚殘響長軌，陰冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/e7a2f700-1c6c-37ad-a1ca-827851d611c3",
+    "https://coverartarchive.org/release-group/e7a2f700-1c6c-37ad-a1ca-827851d611c3/front",
+    "https://www.discogs.com/master/960581"
+   ],
+   "mbRgMbid": "e7a2f700-1c6c-37ad-a1ca-827851d611c3",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Robert Henke",
+   "album": "Signal to Noise",
+   "year": 2004,
+   "label": "Imbalance Computer Music",
+   "country": "de",
+   "faction": "cold-glitch-ambient",
+   "genres": [
+    "electronic",
+    "drone"
+   ],
+   "why": "Monolake 主腦的無拍獨奏盤，顆粒噪訊與低頻 drone 層層堆疊，完全沒有 Monolake 的四拍推進",
+   "moodGuess": {
+    "x": 1.3,
+    "y": 1.4,
+    "z": -1.3,
+    "why": "無鼓，顆粒噪訊與低頻 drone 層疊，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/7429ba6d-e273-318c-ab5a-062a5e989213",
+    "https://coverartarchive.org/release-group/7429ba6d-e273-318c-ab5a-062a5e989213/front",
+    "https://monolake.de/releases/icm-05.html"
+   ],
+   "mbRgMbid": "7429ba6d-e273-318c-ab5a-062a5e989213",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Robert Henke",
+   "album": "Indigo_Transform",
+   "year": 2009,
+   "label": "Imbalance Computer Music",
+   "country": "de",
+   "faction": "cold-glitch-ambient",
+   "genres": [
+    "electronic",
+    "drone"
+   ],
+   "why": "Henke 以合成器緩變長篇為主的 ambient 盤，厚霧般的音色漂移，冷而靜",
+   "moodGuess": {
+    "x": 1.2,
+    "y": 1.3,
+    "z": -1,
+    "why": "無鼓緩變合成器 drone，厚霧，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/60a07316-000d-4d9c-8ffa-f8ecb8b8136a",
+    "https://coverartarchive.org/release-group/60a07316-000d-4d9c-8ffa-f8ecb8b8136a/front",
+    "https://www.discogs.com/search/?q=Robert+Henke+Indigo_Transform&type=all"
+   ],
+   "mbRgMbid": "60a07316-000d-4d9c-8ffa-f8ecb8b8136a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Discogs 未連結，聲音印象來自 Imbalance 目錄描述，屬中度把握"
+  },
+  {
+   "artist": "Robert Henke",
+   "album": "Piercing Music",
+   "year": 1994,
+   "label": "Imbalance Recordings",
+   "country": "de",
+   "faction": "cold-glitch-ambient",
+   "genres": [
+    "electronic",
+    "drone"
+   ],
+   "why": "Henke 在 Monolake 之前的單軌暗 drone，Discogs 標 Dark Ambient，低頻長殘響、冷寂",
+   "moodGuess": {
+    "x": 1.2,
+    "y": 1.3,
+    "z": -1.2,
+    "why": "單軌暗 drone、低頻長殘響，冷寂"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/a3c99ed9-a9db-3bfe-979a-ce12af9f073a",
+    "https://coverartarchive.org/release-group/a3c99ed9-a9db-3bfe-979a-ce12af9f073a/front",
+    "https://www.discogs.com/master/84721"
+   ],
+   "mbRgMbid": "a3c99ed9-a9db-3bfe-979a-ce12af9f073a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Murcof",
+   "album": "Martes",
+   "year": 2002,
+   "label": "Leaf",
+   "country": "mx",
+   "faction": "cold-glitch-ambient",
+   "genres": [
+    "electronic",
+    "modern classical"
+   ],
+   "why": "墨西哥 Murcof 的首張專輯，慢 glitch 細碎拍配弦樂取樣與深低頻墊，冷灰、緩慢、沒有推進感",
+   "moodGuess": {
+    "x": 2.1,
+    "y": 1,
+    "z": -0.7,
+    "why": "慢 glitch 細拍＋弦樂取樣與低頻墊，陰鬱"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/265b5e95-3fe3-38b8-82b0-0e61477055db",
+    "https://coverartarchive.org/release-group/265b5e95-3fe3-38b8-82b0-0e61477055db/front",
+    "https://www.discogs.com/master/59957"
+   ],
+   "mbRgMbid": "265b5e95-3fe3-38b8-82b0-0e61477055db",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "弦樂取樣偏清楚，y 有可能被判 0.7–0.9 貼邊"
+  },
+  {
+   "artist": "Murcof",
+   "album": "Remembranza",
+   "year": 2005,
+   "label": "Leaf",
+   "country": "mx",
+   "faction": "cold-glitch-ambient",
+   "genres": [
+    "electronic",
+    "modern classical"
+   ],
+   "why": "Murcof 第二張，比 Martes 更暗更電影感，殘響弦樂、低頻轟鳴與稀疏 glitch 拍，冷而沉",
+   "moodGuess": {
+    "x": 1.9,
+    "y": 1.1,
+    "z": -0.9,
+    "why": "稀疏 glitch 拍、殘響弦樂與低頻轟鳴"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/9885c7d2-ba9c-387a-8170-69e8a237aab2",
+    "https://coverartarchive.org/release-group/9885c7d2-ba9c-387a-8170-69e8a237aab2/front",
+    "https://www.discogs.com/master/59969"
+   ],
+   "mbRgMbid": "9885c7d2-ba9c-387a-8170-69e8a237aab2",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Murcof / Philippe Petit",
+   "album": "First Chapter",
+   "year": 2013,
+   "label": "Aagoo Records",
+   "country": "mx",
+   "faction": "cold-glitch-ambient",
+   "genres": [
+    "electronic",
+    "drone"
+   ],
+   "why": "Murcof 與法國 Philippe Petit 的合作，Discogs 標 Dark Ambient，三長軌無拍，低頻轟鳴與金屬殘響，陰森",
+   "moodGuess": {
+    "x": 1.3,
+    "y": 1.6,
+    "z": -1.4,
+    "why": "無拍暗 ambient 長段，低頻轟鳴，陰森"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/ffcc6841-50fb-45aa-896a-fe8caf4365dc",
+    "https://coverartarchive.org/release-group/ffcc6841-50fb-45aa-896a-fe8caf4365dc/front",
+    "https://www.discogs.com/master/607565"
+   ],
+   "mbRgMbid": "ffcc6841-50fb-45aa-896a-fe8caf4365dc",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Murcof",
+   "uncertain": ""
+  },
+  {
+   "artist": "Murcof",
+   "album": "The Versailles Sessions",
+   "year": 2008,
+   "label": "Leaf",
+   "country": "mx",
+   "faction": "cold-glitch-ambient",
+   "genres": [
+    "electronic",
+    "modern classical"
+   ],
+   "why": "以凡爾賽宮巴洛克樂器錄音經電腦重組的委託作，處理過的古樂器在低頻與殘響裡變得陰沉疏離",
+   "moodGuess": {
+    "x": 1.9,
+    "y": 1,
+    "z": -0.8,
+    "why": "處理古樂器＋低頻殘響，陰沉無律動"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/9f469d56-ff9e-3564-ab58-3feb4a46b397",
+    "https://coverartarchive.org/release-group/9f469d56-ff9e-3564-ab58-3feb4a46b397/front",
+    "https://www.discogs.com/master/59965"
+   ],
+   "mbRgMbid": "9f469d56-ff9e-3564-ab58-3feb4a46b397",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "古樂器原聲段若較乾淨，y 可能判 0.6–0.8"
+  },
+  {
+   "artist": "Klimek",
+   "album": "Music to Fall Asleep",
+   "year": 2006,
+   "label": "Kompakt",
+   "country": "de",
+   "faction": "cold-glitch-ambient",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "Sebastian Meissner 以 Klimek 名義在 Kompakt 的暗 ambient，厚電子墊與低頻嗡鳴幾乎無拍，名字是助眠、聲音是陰霾",
+   "moodGuess": {
+    "x": 1.4,
+    "y": 1.3,
+    "z": -0.7,
+    "why": "厚電子墊與低頻嗡鳴、近無拍，陰暗"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/50f17b30-adf0-3494-92b0-e85f46065424",
+    "https://coverartarchive.org/release-group/50f17b30-adf0-3494-92b0-e85f46065424/front",
+    "https://www.allmusic.com/album/mw0000410665"
+   ],
+   "mbRgMbid": "50f17b30-adf0-3494-92b0-e85f46065424",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Klimek",
+   "album": "Dedications",
+   "year": 2007,
+   "label": "Anticipate Recordings",
+   "country": "de",
+   "faction": "cold-glitch-ambient",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "Klimek 題獻給 Mark Hollis、Scelsi、Michael Gira 等人的暗 ambient 盤，厚重電聲層與稀疏低頻脈動",
+   "moodGuess": {
+    "x": 1.6,
+    "y": 1.3,
+    "z": -0.8,
+    "why": "厚重電聲層與稀疏低頻脈動，陰"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/7c72a5b2-4a03-3192-90f4-1141cff356ba",
+    "https://coverartarchive.org/release-group/7c72a5b2-4a03-3192-90f4-1141cff356ba/front",
+    "https://www.discogs.com/master/186154"
+   ],
+   "mbRgMbid": "7c72a5b2-4a03-3192-90f4-1141cff356ba",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Kit Clayton",
+   "album": "Nek Sanalet",
+   "year": 1999,
+   "label": "~scape",
+   "country": "us",
+   "faction": "dub-ambient-techno",
+   "genres": [
+    "electronic",
+    "dub techno"
+   ],
+   "why": "舊金山 Kit Clayton 在 Pole 的 ~scape 廠牌的 dub techno 盤，慢喀嚓拍與深殘響，冷而糊",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.5,
+    "z": -0.8,
+    "why": "慢 dub techno 喀嚓拍與深殘響，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/3f140352-3caf-3dee-8938-876c32422626",
+    "https://coverartarchive.org/release-group/3f140352-3caf-3dee-8938-876c32422626/front",
+    "https://www.discogs.com/master/60881"
+   ],
+   "mbRgMbid": "3f140352-3caf-3dee-8938-876c32422626",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Kit Clayton",
+   "album": "Lateral Forces (Surface Fault)",
+   "year": 2001,
+   "label": "Vertical Form",
+   "country": "us",
+   "faction": "dub-ambient-techno",
+   "genres": [
+    "electronic",
+    "dub"
+   ],
+   "why": "Kit Clayton 的抽象 dub 盤，七首無題長軌，噪訊、低頻與長回聲，比 ~scape 時期更冷硬",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 1.4,
+    "z": -1,
+    "why": "抽象 dub 噪訊、低頻與長回聲，冷硬"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/d6974d93-71bc-3152-b3df-572fa9477df1",
+    "https://coverartarchive.org/release-group/d6974d93-71bc-3152-b3df-572fa9477df1/front",
+    "https://www.discogs.com/master/60890"
+   ],
+   "mbRgMbid": "d6974d93-71bc-3152-b3df-572fa9477df1",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Deadbeat",
+   "album": "Drawn and Quartered",
+   "year": 2011,
+   "label": "BLKRTZ",
+   "country": "ca",
+   "faction": "dub-ambient-techno",
+   "genres": [
+    "electronic",
+    "dub techno"
+   ],
+   "why": "Scott Monteith 自家 BLKRTZ 首發，五段「Quarter」慢沉 dub techno，厚低頻與嘶聲霧，是他最暗、最少雷鬼暖意的一張",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1.6,
+    "z": -1,
+    "why": "慢沉 dub techno、厚低頻與嘶聲霧，陰"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/a543f268-925a-4854-8046-43c1c4627a49",
+    "https://coverartarchive.org/release-group/a543f268-925a-4854-8046-43c1c4627a49/front",
+    "https://www.discogs.com/master/345879"
+   ],
+   "mbRgMbid": "a543f268-925a-4854-8046-43c1c4627a49",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Voices From the Lake",
+   "album": "Voices From the Lake",
+   "year": 2012,
+   "label": "Prologue",
+   "country": "it",
+   "faction": "dub-ambient-techno",
+   "genres": [
+    "electronic",
+    "techno"
+   ],
+   "why": "Donato Dozzy 與 Neel 的合作盤，Prologue 出版的催眠 ambient techno，水聲與低頻脈動緩慢盤旋",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.3,
+    "z": -0.6,
+    "why": "緩慢低頻脈動＋水聲殘響，催眠而陰"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/c3abf16a-7784-427c-9a4b-f9ac01fb0fe0",
+    "https://coverartarchive.org/release-group/c3abf16a-7784-427c-9a4b-f9ac01fb0fe0/front",
+    "https://www.discogs.com/master/495592"
+   ],
+   "mbRgMbid": "c3abf16a-7784-427c-9a4b-f9ac01fb0fe0",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Donato Dozzy",
+   "uncertain": "部分軌有穩定 kick，x 可能 2.6–2.8；Prologue 為 md8 範圍但 md8 未提此張"
+  },
+  {
+   "artist": "Variant",
+   "album": "The Setting Sun",
+   "year": 2008,
+   "label": "echospace [detroit]",
+   "country": "us",
+   "faction": "dub-ambient-techno",
+   "genres": [
+    "electronic",
+    "dub techno"
+   ],
+   "why": "Echospace 共同創辦人 Stephen Hitchell 的 Variant 名義專輯，dub 和弦殘響霧與悶 kick，厚而陰",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 1.6,
+    "z": -0.7,
+    "why": "dub 和弦殘響霧＋悶 kick，厚而陰"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/47016cc2-dcdc-31d8-be6b-b92e1d87a929",
+    "https://coverartarchive.org/release-group/47016cc2-dcdc-31d8-be6b-b92e1d87a929/front",
+    "https://www.discogs.com/master/369228"
+   ],
+   "mbRgMbid": "47016cc2-dcdc-31d8-be6b-b92e1d87a929",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "池中同路 cv313 z −0.3～−0.4 貼邊，本張 z 可能偏中性"
+  },
+  {
+   "artist": "Neel",
+   "album": "Phobos",
+   "year": 2014,
+   "label": "Spectrum Spools",
+   "country": "it",
+   "faction": "dub-ambient-techno",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "Voices From the Lake 的 Neel 在 Spectrum Spools 的個人專輯，以火衛一為題的慢脈動 ambient techno，深低頻、陰",
+   "moodGuess": {
+    "x": 1.9,
+    "y": 1.3,
+    "z": -1,
+    "why": "慢脈動 ambient techno、深低頻，陰"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/4ecedc7b-52b1-4424-bc2a-813f277e2cab",
+    "https://coverartarchive.org/release-group/4ecedc7b-52b1-4424-bc2a-813f277e2cab/front",
+    "https://www.discogs.com/search/?q=Neel+Phobos&type=all"
+   ],
+   "mbRgMbid": "4ecedc7b-52b1-4424-bc2a-813f277e2cab",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  }
+ ],
+ "notes": [
+  "26 張全部 MB 釘住（primary-type Album、無 secondary type），封面 CAA release-group front 全數回 200。挖不到 27 張，照實交 26。",
+  "去重：CUR-DISPATCH 指令逐張 0；藝人與專輯名逐一 grep 所有 curation-*.json（含 md1/md4/md6/md8/md9/md18/md26/md31/md32），未撞；ml60／ml61 檔案目前不存在。",
+  "不收／汰掉：Monolake、Porter Ricks、Biosphere（池中已滿或判輕；Autour de la Lune 已由 md1 提）；Thomas Köner 未入池者只剩 La Barca（md32 已以人聲偏暖汰）；DJ Spooky《Riddim Warfare》等 hip-hop 推進盤；Spectre《The Illness》boom-bap；Slotek、Mutamassik 碎拍／嘻哈；Badawi《Jerusalem Under Fire》與 Sacred System《Nagual Site》偏世界音樂暖；Divination《Akasha》（DnB）、《Sacrifice》（Laraaji 齊特琴偏暖）；Laswell《Oscillations》1/2、《Points of Order》（DnB）、《Book of Exit》（衣索比亞暖）；Scanner《Spore》《Sulphur》（同路《Mass Observation》池中 y 0.5，判輕風險高）；Outland 3（MB 年份 2000 與維基 1998 不一致）；Klimek《Milk & Honey》CAA 無封面。",
+  "WebSearch 使用 2 次（用於補位候選查證）；聲音判斷依 Discogs styles／曲目、維基與池中同人三軸。",
+  "Vladislav Delay Quartet（2011）原已入選，交叉比對發現 md6 已提過，撤下；補位候選 Deadbeat《Kübler-Ross Soliloquies》（零售描述為 techno）、Henke《Floating.Point》（FM 合成數位聲響，判輕風險）、Klimek《Movies Is Magic》（Discogs 標現代古典、曲名緊繃）都不夠把握，不湊數。"
+ ]
+}
