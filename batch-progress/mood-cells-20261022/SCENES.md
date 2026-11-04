@@ -103,6 +103,8 @@
 | 77 | md34 | funeral doom／drone doom 慢盤第二波（Esoteric、Evoken、Mournful Congregation、Skepticism、Thergothon 系；極慢、往下壓） | ✅ 上線 38／落格 38（二線約還能挖 20–30） |
 | 78 | ml59 | roots reggae 人聲慢盤第二波（ml58 收 28 高產；Twinkle Brothers、The Gladiators 慢盤、Johnny Clarke、Max Romeo 慢盤、Ras Michael、Mighty Diamonds 慢盤；店主要多 dub） | ✅ 上線 13／落格 13（主場景見底，約剩 3–5） |
 | 79 | mc48 | 美國當代作曲尖細（Elliott Carter、Milton Babbitt、Charles Wuorinen、Stefan Wolpe、Roger Sessions 晚期；mc32／mc43／mc46 已收過的去重） | ✅ 上線 31／落格 31（主場景見底，約剩 3–6） |
+| 80 | ml60 | 恍惚電子：chillwave／hypnagogic 電子盤、vaporwave／mallsoft 暖盤 ＋ lo-fi house／慢 deep house 暖盤、暖 ambient techno 二線（店主 11-04：多電子、少嘻哈雷鬼；只收 genres 首位 electronic） | 派→ml60–61 工作階段 |
+| 81 | ml61 | 恍惚電子：暖 IDM／braindance 慢盤、日本／亞洲暖電子 ＋ warm dub techno、ambient pop／downtempo 新世代 2010s–20s（只收電子盤） | 派→ml60–61 工作階段 |
 
 **暫停**：mc13 math rock、mc21 post-punk revival、mc30 minimalism（旋律清楚＝暖）、mc9／mc10／mc20／mc25／mc26 系的 synth-pop／new wave／K-pop／synthwave 續集（2026-10-23 體感標準：旋律清楚往暖，落雀躍）、mc23 art pop、ml4 系東亞續集、ml14 spiritual jazz（體感標準判冷，不是恍惚）、ml22、ml27。**重開**（體感標準下會落冷冽）：mc4、mc14、mc22、mc28。
 
@@ -267,3 +269,5 @@
 | ml57 | 21321 | neo-soul 女聲慢盤 2000s–10s（Jill Scott 慢盤、Goapele、Lalah Hathaway、Ledisi、Emily King 系） | ✅ 上線 12／落格 12（主場景見底，不再派） |
 | ml58 | 21721 | roots reggae 人聲慢盤（Burning Spear、Culture、Israel Vibration、The Abyssinians、Prince Far I 系） | ✅ 上線 28／落格 28（2026-10-24；策展 46（只收 Discogs 明寫 Tubby／Jammy／Scientist／Black Ark／Ariwa 混音的盤）、主線汰 3（池中同人判輕／DJ 盤）、研究汰 15（Bunny Lee／Revolutionaries 亮 rockers 6、無濕混音 credit 的歌曲盤 5、重混／數位化 3、拉丁 ska 拼貼 1）；主場景見底） |
 | ml59 | 22361 | roots reggae 人聲慢盤第二波（Twinkle Brothers、The Gladiators、Johnny Clarke、Max Romeo、Ras Michael、Mighty Diamonds 慢盤） | ✅ 上線 13／落格 13（2026-10-24；策展 19（濕混音 credit 篩子，主場景點名六組池中同人判輕擋掉五組）、主線汰 1（無混音者署名）、研究汰 5（dancehall／DJ、自家工程＋合成器、美國重混、多場次拼貼、Pablo 小調偏冷）；主場景見底） |
+| ml60 | 22681 | 恍惚電子：chillwave／hypnagogic 電子盤、vaporwave／mallsoft 暖盤、lo-fi house／慢 deep house、暖 ambient techno 二線（條號跳過 22521–22680 留給並行的 md35／md36） | 派→ml60–61 工作階段 |
+| ml61 | 22761 | 恍惚電子：暖 IDM／braindance、日本／亞洲暖電子、warm dub techno、ambient pop 新世代 | 派→ml60–61 工作階段 |
