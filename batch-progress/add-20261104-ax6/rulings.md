@@ -3,7 +3,7 @@
 > 店主 2026-11-04：「異端有很多自由爵士可以收錄吧？阿部薰、Peter Brötzmann、Peter Kowald Quintet、姜泰煥之類的。」「應該可以加到 200。」**撤銷 PLAN「不收能量型自由爵士」**：高強度、無調、噪音化、對一般聽眾難入耳的自由爵士／即興代表作可進異端，仍要可信資料支持它極端。
 > 分工：ax5（另一工作階段）＝卡池已有藝人的升格＋新上架美國自由爵士；**ax6＝只上卡池完全沒有卡的藝人**（`chk-artist.mjs` 逐位比對），不做升格。店主點名必收 Peter Kowald Quintet（1972 FMP）與姜泰煥。
 > 策展派工 `CUR-AX6.md`（4 組：ax6a 歐洲自由爵士／即興、ax6b 歐洲以外自由爵士／即興與聲音實驗、ax6c 極端金屬反結構＋超長篇 drone、ax6d 具象音樂／聲音詩／極端現代音樂）；研究派工 `RES-AX6.md`；簡介照 `desc-tools/prompts/apex-desc-base.md`（頂點卡，不走鉤子層）。
-> **預留：研究 a 52001–52010、b 52011–52020、c 52021–52030、d 52031–52040、e 52041–52050、f 52051–52060、寫作 52061–52070、主線 52071–52080。**（ax 線條號：axN → 51401＋N×100 起，每批 80 條。）
+> **預留：研究 a 52001–52010、b 52011–52020、c 52021–52030、d 52031–52040、e 52041–52050、f 52051–52060、研究 g 52061–52065、研究 h 52066–52070（原寫作段，寫作層不取號）、主線 52071–52080。**（ax 線條號：axN → 51401＋N×100 起，每批 80 條。）
 ---
 
 ## 主線（開工）
@@ -64,3 +64,15 @@
 - **52005** 강태환《Live At Café Amores》：none，建議汰換或改一般卡（NY Jazz Record 稱 calm yet relentless、Free Jazz Blog 稱憂鬱靈性；1995-10-08 防府現場，2018 NoBusiness NBLP 113 限量 300）。
 - **52006** Birchville Cat Motel《Seventh Ruined Hex》：heresy（Musique Machine 5/5 searing／painful／jaw numbing＋Exclaim merciless／frantic；Matthew Bower 客席吉他；簡介勿寫成純噪音牆，drone 段落寬廣）。
 - **52007** グループ・音楽《ミュージック オブ グループ・音楽》：none，建議汰換（史料里程碑而非難入耳措辭；成員刀根康尚已有異端《Solo for Wounded CD》；1996 HEAR 首發、2011 SEER 重發）。
+
+## 研究 f 組
+- **52051** Patton《Adult Themes for Voice》：heresy。純人聲、無旋律無拍；AllMusic（Prato）essentially noise、Exclaim! noise for the sake of noise、《Avant Rock》quite radical。
+- **52052** Fantômas《Delirium Cordia》：none、建議汰換。年份核定 2004（MB 2003 為宣傳版，正式版 2004-01-27）；評論稱背景音樂、多家 4/5，無 harsh 類形容。
+- **52053** Full Blast《Risc》：none、建議汰換。Trost TR148（2016），MB 型態 Compilation 有誤，實為現場加電子；團名不同於 Brötzmann 名義可收，但極端證據僅 FJC 一篇。
+- **52054** Blonk《Flux de bouche》：none、建議汰換。聲音詩、幽默取向，無極端描述；年份 1992／1993 不一。
+- **52055** Sightings《Absolutes》：heresy。A.V. Club（grating, growling force）＋Mundane Sounds（most abrasive Load album）；廠牌應為 Load Records（Load 048），Riot Season 為英國黑膠版；封面 https://f4.bcbits.com/img/a3865815725_5.jpg（Riot Season Bandcamp og:image）。
+- **52056** Skullflower《Form Destroyer》：none、建議汰換。sludge riff 加回授，無本張極端描述。
+- **52057** Diocletian《Doom Cult》：none、建議汰換。僅 metal 站，Sputnik 稱缺乏方向。
+- **52058** Akitsa《Goétie》：none、建議汰換。首發為 Heavy Distortion 卡帶 2001；無可信極端描述。
+- **52059** Bastard Noise《Rogue Astronaut》：none、建議汰換。TMT 稱克制殘暴，內容資料不足。
+- 統計：heresy 2、none 7（皆建議汰換）；WebSearch 用 6 次。
