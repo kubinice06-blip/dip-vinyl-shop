@@ -204,6 +204,21 @@
     "text": "MusicBrainz 將 A Band Called Doris 連到 Doris 這個 1980 年代英國硬式搖滾／前衛搖滾樂團。",
     "src": "https://musicbrainz.org/ws/2/release/19210ca5-27cd-4ec4-b4e0-bf24ef562fd5?inc=labels+recordings&fmt=json",
     "block": "status"
+   },
+   {
+    "text": "Discogs：1982 年英國 ABCD Records（ABCD 3）LP，註記 Engineered at Pluto Studios, Manchester；工程師 Phil Bush，SRT Productions 代工製造（主線補查）",
+    "src": "https://api.discogs.com/releases/5893265",
+    "block": "making"
+   },
+   {
+    "text": "五人編制：Bob Webb 主唱、木吉他、電吉他、口琴並作全部曲子；Peter Moss 電吉他與和聲；Sean Collins 貝斯與和聲；Brian Smith 鼓；Mike Gatley 鍵盤（主線補查）",
+    "src": "https://api.discogs.com/releases/5893265",
+    "block": "sound"
+   },
+   {
+    "text": "Discogs 風格標籤 Hard Rock、Prog Rock；社群統計（2026-11-04 讀）擁有 40 人、想要 126 人（主線補查）",
+    "src": "https://api.discogs.com/releases/5893265",
+    "block": "status"
    }
   ],
   "coverage": {
@@ -211,7 +226,7 @@
    "making": "thin",
    "sound": "none"
   },
-  "notes": "WebSearch 1 次（英文）毫無相關結果，沒有樂評、再版、收藏圈討論。舊簡介的 Pluto Studios、SRT Productions、X 82 CUS 1342、Bob Webb 唱主聲等無法查證。MusicBrainz 的「硬式搖滾／前衛搖滾」是一行分類，不足以當聲音描述；寫作層不要憑此寫聲音。"
+  "notes": "WebSearch 1 次（英文）毫無相關結果，沒有樂評、再版、收藏圈討論。舊簡介的 Pluto Studios、SRT Productions、X 82 CUS 1342、Bob Webb 唱主聲等無法查證。MusicBrainz 的「硬式搖滾／前衛搖滾」是一行分類，不足以當聲音描述；寫作層不要憑此寫聲音。｜主線補查（Discogs API）見標記條目；推翻研究層「Paul Kelly 查不到」「卡帶未證實」。"
  },
  {
   "key": "treatment|intensive",
@@ -233,6 +248,21 @@
     "text": "演出者署名為 Clive Number（貝斯、主唱）、Adam Pigg（吉他、主唱）、Gordon 'Zola'（吉他、主唱）、Muitant（鍵盤、主唱），鼓手有 Little Graham（B2）與 Paul Ross（A4）；薩克斯風 Steve Jolliffe 出現在 A2。",
     "src": "https://tape-mag.com/Intensive+Treatment+RELEASES-1-1-9329-8.html",
     "block": "making"
+   },
+   {
+    "text": "Discogs 註記：Privately-pressed cassette，Recorded throughout 1981；無廠牌，編號 TT 001；風格標籤 Garage Rock、Psychedelic Rock、Prog Rock（主線補查）",
+    "src": "https://api.discogs.com/releases/7919664",
+    "block": "status"
+   },
+   {
+    "text": "Discogs 社群統計（2026-11-04 讀）：擁有 12 人、想要 25 人（主線補查）",
+    "src": "https://api.discogs.com/releases/7919664",
+    "block": "status"
+   },
+   {
+    "text": "四人輪流唱：Clive Number 貝斯與主唱（B5 改彈吉他）、Adam Pigg 吉他與主唱、Gordon Zola 吉他與主唱、Muitant 鍵盤與主唱；鼓手 Paul Ross，B2 換 Little Graham；A2 加 Steve Jolliffe 薩克斯風（主線補查）",
+    "src": "https://api.discogs.com/releases/7919664",
+    "block": "sound"
    }
   ],
   "coverage": {
@@ -240,7 +270,7 @@
    "making": "thin",
    "sound": "none"
   },
-  "notes": "WebSearch 1 次，只找到 tape-mag 目錄條目，無樂評、再版、收藏圈討論。聲音只能從曲名推測（含 Jazz Bit、Blues Bit、Minor 9ths 與薩克斯風），不可當成事實寫。Steve Jolliffe 是否為 Tangerine Dream 前團員那位未查證，不要寫。該站與舊簡介的名字對照（藝人條目對回本名）未再查。整體資料太薄，建議寫作層走 200 字下限、只寫可驗證事實，或降級。"
+  "notes": "WebSearch 1 次，只找到 tape-mag 目錄條目，無樂評、再版、收藏圈討論。聲音只能從曲名推測（含 Jazz Bit、Blues Bit、Minor 9ths 與薩克斯風），不可當成事實寫。Steve Jolliffe 是否為 Tangerine Dream 前團員那位未查證，不要寫。該站與舊簡介的名字對照（藝人條目對回本名）未再查。整體資料太薄，建議寫作層走 200 字下限、只寫可驗證事實，或降級。｜主線補查（Discogs API）見標記條目；推翻研究層「Paul Kelly 查不到」「卡帶未證實」。"
  },
  {
   "key": "abel ganz|gullibles travels",
@@ -272,6 +302,21 @@
     "text": "樂團在 2008 年的《Shooting Albatross》之後轉向原聲、民謠與凱爾特風格；此後由 Abel Records 發行 2014 年同名專輯與 2020 年《The Life of the Honeybee & Other Moments of Clarity》。",
     "src": "https://wikitia.com/wiki/Abel_Ganz",
     "block": "after"
+   },
+   {
+    "text": "Discogs：1985 年英國自主發行卡帶（Not On Label，Abel Ganz Self-released，編號 AG II）（主線補查）",
+    "src": "https://api.discogs.com/releases/6871858",
+    "block": "status"
+   },
+   {
+    "text": "陣容：Paul Kelly 主唱與吉他、Hew Montgomery 鍵盤、Gordon Mackie 貝斯、Kenny Weir 鼓；製作與錄音 John Turner，編曲掛樂團（主線補查）",
+    "src": "https://api.discogs.com/releases/6871858",
+    "block": "making"
+   },
+   {
+    "text": "MusicBrainz 另登記 1991 年的一個版本（同名），表示 1985 卡帶之後曾再發行（主線補查）",
+    "src": "https://musicbrainz.org/release/f7098242-c226-494a-b478-d3ca2115284c",
+    "block": "after"
    }
   ],
   "coverage": {
@@ -279,7 +324,7 @@
    "making": "thin",
    "sound": "thin"
   },
-  "notes": "舊簡介說 Paul Kelly 主唱兼吉他、John Turner 在 Black Gold Studios 製作、1985 年卡帶、AG II 編號等皆未能查證，搜尋結果也找不到 Paul Kelly 這個名字；卡帶形式未獲證實。Progarchives 評論頁多次 403，僅從搜尋摘要取得評語，屬使用者評論，不是專業樂評，寫作不可寫成名家評價。聲音描述只有『新前衛』『吉他與鍵盤轉換』，沒有具體樂器與手法，寫作層需謹慎。"
+  "notes": "舊簡介說 Paul Kelly 主唱兼吉他、John Turner 在 Black Gold Studios 製作、1985 年卡帶、AG II 編號等皆未能查證，搜尋結果也找不到 Paul Kelly 這個名字；卡帶形式未獲證實。Progarchives 評論頁多次 403，僅從搜尋摘要取得評語，屬使用者評論，不是專業樂評，寫作不可寫成名家評價。聲音描述只有『新前衛』『吉他與鍵盤轉換』，沒有具體樂器與手法，寫作層需謹慎。｜主線補查（Discogs API）見標記條目；推翻研究層「Paul Kelly 查不到」「卡帶未證實」。"
  },
  {
   "key": "mach one|lost for words",
@@ -316,6 +361,21 @@
     "text": "2002 年的合輯《An Ancient Lie》（Granite Bap，14 軌）收錄《Lost for Words》的〈Into the Pit〉與 1982 年卡帶《Six of One》的〈No Time to Sleep〉，並有 1984 年解散前錄下的未發表曲；DPRP 給 6/10。",
     "src": "https://en.wikipedia.org/wiki/An_Ancient_Lie",
     "block": "after"
+   },
+   {
+    "text": "據吉他手兼創團成員 Peter Matuchniak（Discogs 註記）：只壓了 1000 張，750 張經 Pinnacle Records 發行，其餘 250 張由樂團在演出現場賣掉（主線補查）",
+    "src": "https://api.discogs.com/releases/1016857",
+    "block": "status"
+   },
+   {
+    "text": "1984 年英國 Future Dance FD 1001 LP；六人編制：Steve Bauer 主唱、Peter Matuchniak 與 Geoff Sprackling 雙吉他、Tim Sprackling 鍵盤、Jon Bankes 貝斯、Simon Strevens 鼓；Porky 刻片（主線補查）",
+    "src": "https://api.discogs.com/releases/1016857",
+    "block": "making"
+   },
+   {
+    "text": "Discogs 風格標籤 Synth-pop、Prog Rock（主線補查）",
+    "src": "https://api.discogs.com/releases/1016857",
+    "block": "sound"
    }
   ],
   "coverage": {
@@ -323,7 +383,7 @@
    "making": "thin",
    "sound": "thin"
   },
-  "notes": "年份 1983／1984 兩說並存（維基作 1984，合輯頁與某資料庫作 1983）。舊簡介的 Future Dance FD 1001、Orlake 代工、廠牌只出兩件等無法查證，搜尋結果未見 Orlake；另一資料庫稱 Lost for Words 為 1983 年在倫敦錄的錄音室樣帶集，只有單一來源，未採用。維基描述的是樂團整體，沒有針對本張的曲目聲音描述。一星評論可考慮不寫，因寫作層『不寫出處』。"
+  "notes": "年份 1983／1984 兩說並存（維基作 1984，合輯頁與某資料庫作 1983）。舊簡介的 Future Dance FD 1001、Orlake 代工、廠牌只出兩件等無法查證，搜尋結果未見 Orlake；另一資料庫稱 Lost for Words 為 1983 年在倫敦錄的錄音室樣帶集，只有單一來源，未採用。維基描述的是樂團整體，沒有針對本張的曲目聲音描述。一星評論可考慮不寫，因寫作層『不寫出處』。｜主線補查（Discogs API）見標記條目；推翻研究層「Paul Kelly 查不到」「卡帶未證實」。"
  },
  {
   "key": "geoff mann|i may sing grace",
