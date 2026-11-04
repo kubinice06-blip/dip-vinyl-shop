@@ -38,3 +38,27 @@
 - Frank Lowe《Black Beings》：「搖滾式的大鼓往前推，很少出現穩定的律動。」→「搖滾式的大鼓往前推。」依據：研究稿只有 Freeman 描述鼓法（機槍式小鼓、碎鈸、硬搖滾式大鼓），「很少出現穩定的律動」無出處，舊簡介的「鬆動律動」研究層也已標未證。
 - 其餘 5 張逐句核過：Wright Trio 全長 33:57、Stollman 在 Village Gate 簽人、「第二波自由爵士基石」（AllMusic＋AAJ）；Gayle 67:23、Sear Sound、AllMusic「not easy to listen to…unrivaled」；Bells Town Hall 1965-05-01、單面透明膠、Down Beat 零星、Penguin「20 分鐘就得換氣」、AllMusic「most powerful unit」；Echo 阿爾及爾泛非藝術節、記者提議、救護車警車與增四度（Burrell 自述）、Penguin「hard to listen to now」、AllMusic「noisiest」；Free Jazz 雙四重奏、Down Beat 五星／零星（寫成「同一本爵士雜誌」，不點名，照出處不入簡介規則）、預寫不協和號角樂句、成為《Ascension》範本。未改字。
 - 寫入（升格 6 張）：KV desc2 6 鍵（舊值 `kv-before-ax5u.json`），wrangler Success、bulk get 回讀 6/6 逐字一致；card_catalog 6 筆 tier=heresy、apex=true、accessibility=5、rarity 重算（Bells epic→legendary），讀回 6/6；seed 第 9 欄寫 heresy、Bells 第 5 欄 4→5。onboarding manifest 無這 6 張（早期卡），不需同步。`album_overrides.tier` 清單 `album-overrides-tier.json` 留給本機後台同步。
+
+## 新卡研究 b 組（51926 起，cards 11–19）
+- 51926 heresy 3：William Hooker《Hard Time》、Little Women《Throat》、Gato Barbieri《In Search of the Mystery》；none 6（Black Unity Trio、Chadbourne、Smith & Williams、Test、Rudolph Grey、Sunny Murray《Sonny's Time Now》）→ 照 51950 汰換，不上架。
+- 51927 三張邊緣的主線裁定：Hooker 證據是 Squealer 廠牌的樂評彙整（merciless、unrelenting）＋MB，第二網域補 Discogs release 2534597，收。Little Women 的 BBC 評論讀到的是鏡像，原文在 bbc.co.uk/music/reviews/8rb6，加 Free Jazz Blog「intense throughout」，兩網域具名，收（抒情段落是少數）。Gato 的「unremitting」是維基引 Penguin，加 Free Jazz Blog 描述超吹，收；country 改 ar（阿根廷人，紐約錄音）。三張 accessibility 寫 5。
+- 51928 Smith & Williams 研究層指出 Williams 用電吉他（卡單誤寫不插電）、MB 判 Compilation；反正汰換，記錄備查。
+
+## 新卡研究 a 組（51916 起，cards 1–10）
+- 51916 heresy 3：Alan Silva《Luna Surface》、Milford Graves《Bäbi》、Flaherty & Corsano《The Hated Music》；none 7 → 汰換（51950）。
+- 51917 Patty Waters《Sings》判 none 主線同意：極端只在 B 面約 14 分鐘的〈Black Is the Color of My True Love's Hair〉，A 面是人聲加鋼琴的抒情短歌，不符「整張大部分時間」。
+- 51918 Bäbi 有 Arthur Doyle 參與，Doyle《Alabama Feeling》已在異端；藝人欄是 Milford Graves，不算同一藝人，收。
+- 51919 The Hated Music 證據是 Corsano 官網轉引的 The Wire（David Keenan）與 Dan Warburton 樂評＋Bandcamp，具名、兩網域，收；研究層推翻策展層「一小時不間斷」（實為五首），寫作照研究稿。
+- 51920 Luna Surface 長度來源矛盾（維基 28:20、RBMA 41 分鐘），簡介不寫分鐘數。
+- 51921 其他推翻：Scorpio 是中音薩克斯風三重奏；Destroy All Music 是第二張；Logan《More》沒有雙簧管；Burton Greene「Cluster Quartet」是本盤首曲名——皆汰換，記錄備查。
+
+## 新卡補策展 ax5b（不佔條號）
+- 11 張交件，主線汰 5 留 6（`master-override-ax5aax5b.json`）：Elliott Sharp《Carbon》（策展層自標偏 no wave）、Ocrilim《Annwn》（作曲式金屬吉他，非爵士／即興）、Spearman《Mystery Project》、Lester Bowie《Numbers 1 & 2》、Henry Kaiser《Outside Pleasure》（策展層自標極端依據偏弱）。
+- 留 6 進卡單第 20–25 張：Sauter & Dietrich《Bells Together》、Walter／Halvorson／Evans《Mechanical Malfunction》、Pitsiokos《Speak in Tongues》（Neoplasticity 查無，換盤）、Lancaster《Live at Macalester College》、Airway《Live at LACE》、Kidd Jordan《Trio and Duo in New Orleans》。
+- 現場盤：Lancaster、Airway MB 掛 Live（Airway primary type 空），研究層要判是否「該藝人最重要的作品本來就是現場盤」，否則汰換。
+
+## 主線審稿：新卡第一組 6 張（2026-11-04，cloud-main）
+逐張對回 `research/add-20261104-ax5-a.json`、`-b.json`。改 2 處：
+- Luna Surface：「被視為 BYG 那一週錄音裡最狂的一張」→「…最狂的幾張之一」（另刪「全曲」二字壓回 279 字）。依據：RBMA（Britt Robson）原話是列為該週最狂的錄音之一，不是唯一。
+- The Hated Music：「被視為錄音極佳、通篇猛烈的傑作」→「被視為通篇猛烈、錄音極佳的一張」。依據：「傑作」是 ALBUM_ONBOARDING §5 禁語（build-manifest 也會擋）。
+- 其餘逐句核過：Luna Surface 1969-08-17 巴黎 BYG 週、Silva 自述無美國廠牌願發、以《Ascension》為策略＋全曲一組和弦、團員名單；Bäbi 1976-03 WBAI、IPS、雙薩克斯風與 Graves 拆底皮；Hated Music 2000-06 Westwood、限量 500、五首；Hard Time CBGB 現場、Alternative Press「最好的作品」、CMJ 嫌收音空洞（反面也照寫）；Throat 約 41 分鐘組曲、BBC「不適合膽小者」；Gato 1967-03 紐約、Penguin「howlingly intense and unremitting」、Free Jazz Blog 的超吹與高低段落交替。未改字。
