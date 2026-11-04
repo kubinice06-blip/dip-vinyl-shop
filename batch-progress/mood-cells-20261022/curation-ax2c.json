@@ -1,0 +1,375 @@
+{
+ "group": "ax2c",
+ "factions": [
+  {
+   "id": "computer-noise",
+   "zh": "computer-noise",
+   "count": 2,
+   "why": ""
+  },
+  {
+   "id": "free-improv-extreme",
+   "zh": "free-improv-extreme",
+   "count": 2,
+   "why": ""
+  },
+  {
+   "id": "anti-music-turntable",
+   "zh": "anti-music-turntable",
+   "count": 2,
+   "why": ""
+  },
+  {
+   "id": "extreme-composition",
+   "zh": "extreme-composition",
+   "count": 3,
+   "why": ""
+  },
+  {
+   "id": "algorithmic-composition",
+   "zh": "algorithmic-composition",
+   "count": 1,
+   "why": ""
+  }
+ ],
+ "albums": [
+  {
+   "artist": "Zbigniew Karkowski",
+   "album": "Consciously Unconscious Unconsciously Conscious",
+   "year": 2002,
+   "label": "Metamkine",
+   "country": "fr",
+   "faction": "computer-noise",
+   "genres": [
+    "noise",
+    "experimental"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "波蘭裔日本系電腦噪音代表，以演算法式的聲波牆持續壓迫聽覺，屬電腦噪音裡最耗神經的一端；依 MB 與 Wire 對 Karkowski 的評述。",
+   "listeners": null,
+   "why": "波蘭裔日本系電腦噪音代表，以演算法式的聲波牆持續壓迫聽覺，屬電腦噪音裡最耗神經的一端；依 MB 與 Wire 對 Karkowski 的評述。",
+   "moodGuess": {
+    "x": 5,
+    "y": 1.5,
+    "z": -1.5,
+    "why": "電腦牆式噪音，壓迫冷硬"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/06540dde-95ff-3c23-9892-f018280edbca",
+    "https://coverartarchive.org/release-group/06540dde-95ff-3c23-9892-f018280edbca/front",
+    "https://en.wikipedia.org/wiki/Zbigniew_Karkowski"
+   ],
+   "mbRgMbid": "06540dde-95ff-3c23-9892-f018280edbca",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "極端度與 Karkowski《Uexkull》《Choice of Points》相比孰最，待研究層確認；Metamkine 為 MB 標示"
+  },
+  {
+   "artist": "Otomo Yoshihide",
+   "album": "Cathode",
+   "year": 1999,
+   "label": "Tzadik",
+   "country": "us",
+   "faction": "computer-noise",
+   "genres": [
+    "noise",
+    "experimental"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "大友良英以轉盤、電子與破壞性剪接製作的最抽象電子噪音盤（與《Anode》成對），是 Tzadik 目錄中最難入耳的一張；依 MB 與 Wire 評述。",
+   "listeners": null,
+   "why": "大友良英以轉盤、電子與破壞性剪接製作的最抽象電子噪音盤（與《Anode》成對），是 Tzadik 目錄中最難入耳的一張；依 MB 與 Wire 評述。",
+   "moodGuess": {
+    "x": 5,
+    "y": 1.5,
+    "z": -1.5,
+    "why": "尖銳電子噪音，冷硬"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/41fc4491-a0d0-3ed0-8ff6-7a0fcf5dee6b",
+    "https://coverartarchive.org/release-group/41fc4491-a0d0-3ed0-8ff6-7a0fcf5dee6b/front",
+    "https://en.wikipedia.org/wiki/Otomo_Yoshihide"
+   ],
+   "mbRgMbid": "41fc4491-a0d0-3ed0-8ff6-7a0fcf5dee6b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "是否算同藝人於 Ground Zero／不失者（異端已有）需主線判斷；《Cathode》是否比《Anode》更極端待確認"
+  },
+  {
+   "artist": "Keith Rowe",
+   "album": "The Room",
+   "year": 2007,
+   "label": "ErstSolo",
+   "country": "us",
+   "faction": "free-improv-extreme",
+   "genres": [
+    "experimental"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "AMM 吉他手 Rowe 個人名義最激進的躺吉他＋收音機獨奏，長時間低音量音響塊與噪音層，幾乎不可親近；依 MB 與 Erstwhile 目錄評述。",
+   "listeners": null,
+   "why": "AMM 吉他手 Rowe 個人名義最激進的躺吉他＋收音機獨奏，長時間低音量音響塊與噪音層，幾乎不可親近；依 MB 與 Erstwhile 目錄評述。",
+   "moodGuess": {
+    "x": 3.5,
+    "y": 1,
+    "z": -1,
+    "why": "緊繃的抽象音響，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/de4abe5b-2f3c-3320-8b19-a9f75db56c5b",
+    "https://coverartarchive.org/release-group/de4abe5b-2f3c-3320-8b19-a9f75db56c5b/front",
+    "https://en.wikipedia.org/wiki/Keith_Rowe"
+   ],
+   "mbRgMbid": "de4abe5b-2f3c-3320-8b19-a9f75db56c5b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "異端已有 Keith Rowe & Thomas Lehn & Marcus Schmickler《Rabbit Run》（pearl，不同署名）；是否視為同藝人請主線裁定；7 星偏邊緣"
+  },
+  {
+   "artist": "Radu Malfatti",
+   "album": "Ohrkiste",
+   "year": 1992,
+   "label": "ITM",
+   "country": "de",
+   "faction": "free-improv-extreme",
+   "genres": [
+    "experimental"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "Malfatti 由嘈雜即興轉向極簡前的激進作，需極度耐心；依 MB 與 Discogs 紀錄。",
+   "listeners": null,
+   "why": "Malfatti 由嘈雜即興轉向極簡前的激進作，需極度耐心；依 MB 與 Discogs 紀錄。",
+   "moodGuess": {
+    "x": 3.5,
+    "y": 1,
+    "z": -1,
+    "why": "稀疏刺耳，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/dc94fd60-ae4a-48ba-b2fb-a8f798678612",
+    "https://coverartarchive.org/release-group/dc94fd60-ae4a-48ba-b2fb-a8f798678612/front",
+    "https://www.discogs.com/master/3129387"
+   ],
+   "mbRgMbid": "dc94fd60-ae4a-48ba-b2fb-a8f798678612",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "證據偏薄，是否達 7 星存疑；主線可汰換"
+  },
+  {
+   "artist": "Christian Marclay",
+   "album": "Record Without a Cover",
+   "year": 1985,
+   "label": "Recycled Records",
+   "country": "us",
+   "faction": "anti-music-turntable",
+   "genres": [
+    "experimental"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "刻意不附封套、讓唱片在流通中被刮傷破壞的概念盤，轉盤噪音拼貼的開山之作，Wire 常列為聲音藝術經典；依 MB。",
+   "listeners": null,
+   "why": "刻意不附封套、讓唱片在流通中被刮傷破壞的概念盤，轉盤噪音拼貼的開山之作，Wire 常列為聲音藝術經典；依 MB。",
+   "moodGuess": {
+    "x": 4,
+    "y": 1,
+    "z": -1,
+    "why": "刮痕爆音與拼貼，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/2988a3dc-8acf-4135-9137-ff259b2bcd2d",
+    "https://coverartarchive.org/release-group/2988a3dc-8acf-4135-9137-ff259b2bcd2d/front",
+    "https://en.wikipedia.org/wiki/Christian_Marclay"
+   ],
+   "mbRgMbid": "2988a3dc-8acf-4135-9137-ff259b2bcd2d",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 首發為 1985 Recycled Records；原版無封面，MB CAA 封面為重發版，需確認；7 星偏邊緣"
+  },
+  {
+   "artist": "Michael Snow",
+   "album": "Musics for Piano, Whistling, Microphone and Tape Recorder",
+   "year": 1975,
+   "label": "Chatham Square Productions",
+   "country": "us",
+   "faction": "anti-music-turntable",
+   "genres": [
+    "experimental"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "電影家 Snow 以鋼琴、口哨與錄音機自我拆解的概念即興，單調又刺耳；依 MB 與 Wire 評述。",
+   "listeners": null,
+   "why": "電影家 Snow 以鋼琴、口哨與錄音機自我拆解的概念即興，單調又刺耳；依 MB 與 Wire 評述。",
+   "moodGuess": {
+    "x": 3.5,
+    "y": 0.5,
+    "z": -0.5,
+    "why": "笨拙冷峻的即興"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/214ddc00-6d8e-480c-ac9e-c11cdaaf9f67",
+    "https://coverartarchive.org/release-group/214ddc00-6d8e-480c-ac9e-c11cdaaf9f67/front",
+    "https://en.wikipedia.org/wiki/Michael_Snow"
+   ],
+   "mbRgMbid": "214ddc00-6d8e-480c-ac9e-c11cdaaf9f67",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "極端度偏邊緣，可汰換"
+  },
+  {
+   "artist": "Martine Viard",
+   "album": "Aperghis: Récitations",
+   "year": 1983,
+   "label": "Harmonia Mundi",
+   "country": "fr",
+   "faction": "extreme-composition",
+   "genres": [
+    "classical",
+    "experimental"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "Aperghis 為單一女聲寫的 14 首《Récitations》，以破碎音節、喊叫與語言解體構成，是當代聲樂演出的極端難度代表；依 MB 與 Discogs master。",
+   "listeners": null,
+   "why": "Aperghis 為單一女聲寫的 14 首《Récitations》，以破碎音節、喊叫與語言解體構成，是當代聲樂演出的極端難度代表；依 MB 與 Discogs master。",
+   "moodGuess": {
+    "x": 4.5,
+    "y": 1,
+    "z": -1,
+    "why": "語音解體，緊繃"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/059e1b5b-3d6e-4b14-bbaf-df73d20dcce4",
+    "https://coverartarchive.org/release-group/059e1b5b-3d6e-4b14-bbaf-df73d20dcce4/front",
+    "https://www.discogs.com/master/471354"
+   ],
+   "mbRgMbid": "059e1b5b-3d6e-4b14-bbaf-df73d20dcce4",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 該 RG 為 2000 年 Montaigne 版；1983 Harmonia Mundi 原盤另有 Discogs master 471354，上架版本與年份待主線定；ax2a 已有 Michel-Dansac 與 Aperghis 作品但署名為 Klangforum／Hodges／Dansac，演奏者不同",
+   "composer": "Aperghis"
+  },
+  {
+   "artist": "Ensemble 13",
+   "album": "Hespos: Works",
+   "year": 1992,
+   "label": "cpo",
+   "country": "de",
+   "faction": "extreme-composition",
+   "genres": [
+    "classical",
+    "experimental"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "Hespos 以極端演奏技法、噪音密度與劇場動作著稱，被視為德國前衛最反結構的作曲家之一；cpo 此盤為少數可得的錄音；依 Discogs master。",
+   "listeners": null,
+   "why": "Hespos 以極端演奏技法、噪音密度與劇場動作著稱，被視為德國前衛最反結構的作曲家之一；cpo 此盤為少數可得的錄音；依 Discogs master。",
+   "moodGuess": {
+    "x": 5,
+    "y": 1,
+    "z": -1.5,
+    "why": "極端技法，尖銳"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/3306643",
+    "https://de.wikipedia.org/wiki/Hans-Joachim_Hespos"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": "MusicBrainz 以 Hans-Joachim Hespos／Hespos 搜尋 release-group 無結果（2026-11-04）",
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/3306643",
+    "https://de.wikipedia.org/wiki/Hans-Joachim_Hespos"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Discogs master 標題為「Works」，標準寫法與演奏者署名（Ensemble 13／Manfred Reichert）待研究層核；封面僅 Discogs；非 MB",
+   "composer": "Hespos"
+  },
+  {
+   "artist": "Clarence Barlow",
+   "album": "Barlow: Musica Algorithmica",
+   "year": 2018,
+   "label": "Maria de Alvear",
+   "country": "de",
+   "faction": "algorithmic-composition",
+   "genres": [
+    "classical",
+    "electronic"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "Barlow 以演算法生成的極端密度作品集，含鋼琴曲《Çoğluotobüsişletmesi》等，被視為演算法作曲裡最難以追蹤的聽感；依 MB 與 Apple 專輯頁。",
+   "listeners": null,
+   "why": "Barlow 以演算法生成的極端密度作品集，含鋼琴曲《Çoğluotobüsişletmesi》等，被視為演算法作曲裡最難以追蹤的聽感；依 MB 與 Apple 專輯頁。",
+   "moodGuess": {
+    "x": 4.5,
+    "y": 1,
+    "z": -1,
+    "why": "演算法密集音群，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/3f832eac-581e-4ce1-972d-4265a79e34ab",
+    "https://coverartarchive.org/release-group/3f832eac-581e-4ce1-972d-4265a79e34ab/front",
+    "https://music.apple.com/us/album/barlow-musica-algorithmica/1644149519"
+   ],
+   "mbRgMbid": "3f832eac-581e-4ce1-972d-4265a79e34ab",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "極端度偏邊緣（部分曲目可聽）；Apple 署名 Various Artists，artist 欄用作曲家本名，待研究層決定",
+   "composer": "Barlow"
+  },
+  {
+   "artist": "Bernhard Kontarsky",
+   "album": "Zimmermann: Requiem für einen jungen Dichter",
+   "year": 2008,
+   "label": "Cybele",
+   "country": "nl",
+   "faction": "extreme-composition",
+   "genres": [
+    "classical",
+    "experimental"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "Zimmermann 的「Lingual」拼貼，混合多種語言朗誦、爵士、搖滾、電子與歷史錄音，被視為戰後歐洲最暴烈的混雜之作；依 MB。",
+   "listeners": null,
+   "why": "Zimmermann 的「Lingual」拼貼，混合多種語言朗誦、爵士、搖滾、電子與歷史錄音，被視為戰後歐洲最暴烈的混雜之作；依 MB。",
+   "moodGuess": {
+    "x": 5,
+    "y": 1.5,
+    "z": -1.5,
+    "why": "多層拼貼，壓迫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/b28524a9-29b8-4dec-a1e4-204f138b374b",
+    "https://coverartarchive.org/release-group/b28524a9-29b8-4dec-a1e4-204f138b374b/front",
+    "https://en.wikipedia.org/wiki/Requiem_f%C3%BCr_einen_jungen_Dichter"
+   ],
+   "mbRgMbid": "b28524a9-29b8-4dec-a1e4-204f138b374b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "另有 1996 Wergo 版（Gielen？）MB RG e6f6f482-3510-491a-9b09-2d85b570d804 無封面；Kontarsky 版為現行可得；Zimmermann 已有卡 Présence 等（非異端），作曲家不在異端",
+   "composer": "Zimmermann"
+  }
+ ],
+ "notes": [
+  "ax2c 補提 10 張；WebSearch 0 次，改用 MB／Discogs／iTunes API",
+  "已剔除重複（seed 已有）：Farmers Manual《fsck》、Mark Fell《Multistability》、Paul Rutherford《The Gentle Harm》、Ensemble Exposé《Ferneyhough: Chamber Music》、Hafler Trio《Negentropy》",
+  "無封面來源而不提：Jliat《Hilbert's Hotel》、Axel Dörner《Trumpet》、Richard Barrett《Dark Matter》（CAA／iTunes 皆無）",
+  "池子偏薄：極端電腦／故障音樂端點多數已在 seed，未湊數；其餘多為邊緣 7 星，見各卡 uncertain"
+ ]
+}
