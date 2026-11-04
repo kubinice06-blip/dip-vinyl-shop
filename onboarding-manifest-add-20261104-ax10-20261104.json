@@ -1,0 +1,457 @@
+{
+ "schemaVersion": 1,
+ "batch": "2026-11-04-ax10",
+ "batchNote": "新頂點盤線（add-20261104-ax10）",
+ "createdAt": "2026-11-04T13:43:36Z",
+ "albums": [
+  {
+   "artist": "Siege",
+   "album": "Drop Dead",
+   "identity": {
+    "releaseType": "EP",
+    "identitySource": "pinned",
+    "rgMbid": "c09f949d-56a3-3939-9c12-993921327a8b",
+    "upc": "",
+    "aliasesChecked": true,
+    "exceptionReason": "Siege 只留下 1984 年 6 首 demo 卡帶，以 Drop Dead 之名流傳（Relapse 1994 年 CD 才正式發行），此為唯一代表錄音",
+    "exceptionEvidenceUrls": [
+     "https://musicbrainz.org/release-group/c09f949d-56a3-3939-9c12-993921327a8b",
+     "https://coverartarchive.org/release-group/c09f949d-56a3-3939-9c12-993921327a8b/front",
+     "https://en.wikipedia.org/wiki/Siege_(band)",
+     "https://en.wikipedia.org/wiki/Dropdead"
+    ],
+    "genreException": "hardcore-7inch",
+    "aliasReview": "美加極端 hardcore／powerviolence：Weymouth／波士頓團 Siege 1984 年在 Radiobeat 錄的六首 demo：維基稱其「極快的速度配上 Mahoney 的尖叫與咆哮」，一位現場目擊者形容「聽起來隨時要散架、衝過七百英里，突然又全部併回一起」；Lars Ulrich 說它是他聽過最快的樂團，Dropdead 團名即出自此 demo。幾十秒一首、整份幾乎無喘息，無旋律結構。｜⚠ MB primary-type 為 EP（1984）；實體是 demo 卡帶，無原版 7 吋；Last.fm listeners 13085 不符流亡，故只走異端。｜MB release-group c09f949d-56a3-3939-9c12-993921327a8b：title「Drop Dead」、EP、first-release-date 1984、artist-credit「Siege」。證據：https://musicbrainz.org/release-group/c09f949d-56a3-3939-9c12-993921327a8b https://coverartarchive.org/release-group/c09f949d-56a3-3939-9c12-993921327a8b/front https://en.wikipedia.org/wiki/Siege_(band) https://en.wikipedia.org/wiki/Dropdead",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1984,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/c09f949d-56a3-3939-9c12-993921327a8b/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-04T13:43:36Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-04 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 5,
+    "listeners": 13085,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-04T13:43:36Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 13085）；主線：grindcore／powerviolence 源頭常被點名的 demo（Choosing Death 專章），經典 4"
+   },
+   "rarity": "legendary",
+   "apexAssessment": {
+    "eligible": true,
+    "tier": "heresy",
+    "evidenceUrls": [
+     "https://en.wikipedia.org/wiki/Siege_(band)",
+     "https://metalkingdom.net/review/14798"
+    ],
+    "reason": "異端（accessibility 5、7 星）：六首 12 分鐘、三首不滿一分鐘、極速加尖叫咆哮，製作人形容快要散架；被 Mudrian《Choosing Death》視為 grindcore／powerviolence 先驅（邊緣：中間有 7 分鐘慢曲、錄音清楚，非糊爛）"
+   },
+   "description": {
+    "text": "《Drop Dead》是 Siege 1984 年自行發行的六首 demo 卡帶，總長約 12 分 41 秒，三首不滿一分鐘。它被大量翻錄流傳，Carcass 與 Napalm Death 都被引為受其影響，Siege 也被視為 grindcore 與 powerviolence 的先驅之一。製作人 Lou Giordano 說樂手要夠強，才能在那種速度下不散掉。前五首是極快的 hardcore，速度頻繁切換，主唱 Kevin Mahoney 尖叫咆哮，錄音清楚不糊。最後的〈Grim Reaper〉長 7 分 23 秒，放慢下來，是整份最實驗的一首。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Siege_(band)",
+     "https://en.wikipedia.org/wiki/Drop_Dead_(album)",
+     "https://metalkingdom.net/review/14798",
+     "https://en.wikipedia.org/wiki/Dropdead",
+     "https://musicbrainz.org/release-group/c09f949d-56a3-3939-9c12-993921327a8b"
+    ],
+    "note": "薄細項策展線卡牌版：研究（?）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/d3/d0/3e/d3d03e18-9632-6915-c7a2-189c7c83c008/mzaf_3676273034964526145.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-11-04T13:43:36Z",
+    "appleCollectionId": "975341363",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 975341363「Siege《Drop Dead (30th Anniversary Edition)》」：曲目 6/6 對上 MB 原盤（Apple 共 13 軌），取第 1 軌〈Drop Dead〉。主線 2026-11-04 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Crossed Out",
+   "album": "Crossed Out",
+   "identity": {
+    "releaseType": "EP",
+    "identitySource": "pinned",
+    "rgMbid": "03d82150-33ed-4227-8bc3-426a2aedb633",
+    "upc": "",
+    "aliasesChecked": true,
+    "exceptionReason": "Crossed Out 自創 7 吋 EP（Slap-A-Ham）是其唯一原創錄音形式，專輯形態僅有 1999 年 discography 合輯",
+    "exceptionEvidenceUrls": [
+     "https://musicbrainz.org/release-group/03d82150-33ed-4227-8bc3-426a2aedb633",
+     "https://coverartarchive.org/release-group/03d82150-33ed-4227-8bc3-426a2aedb633/front",
+     "https://en.wikipedia.org/wiki/Crossed_Out"
+    ],
+    "genreException": "hardcore-7inch",
+    "aliasReview": "美加極端 hardcore／powerviolence：Encinitas, California 的 Crossed Out 自創 7 吋：維基稱其以政治歌詞、blast beat 與極快速度定義 powerviolence，Insect Warfare 的 Beau Beasley 稱其為「powerviolence 的暗黑領主」；歌曲極短、急停急轉。｜⚠ MB 標為 EP 且年份 1991，維基列 1992 Slap-A-Ham 7 吋；依據偏薄（僅維基＋MB）。Last.fm 9556 非流亡。｜MB release-group 03d82150-33ed-4227-8bc3-426a2aedb633：title「Crossed Out」、EP、first-release-date 1991、artist-credit「Crossed Out」。證據：https://musicbrainz.org/release-group/03d82150-33ed-4227-8bc3-426a2aedb633 https://coverartarchive.org/release-group/03d82150-33ed-4227-8bc3-426a2aedb633/front https://en.wikipedia.org/wiki/Crossed_Out",
+    "queryAlias": "",
+    "selfTitledVerified": true
+   },
+   "research": {
+    "suggestedYear": 1991,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/03d82150-33ed-4227-8bc3-426a2aedb633/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-04T13:43:36Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-04 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 5,
+    "listeners": 9556,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-04T13:43:36Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 9556）"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": true,
+    "tier": "heresy",
+    "evidenceUrls": [
+     "https://ink19.com/2000/06/magazine/music-reviews/crossed-out",
+     "https://inmusicwetrust.com/articles/30p02.html",
+     "https://en.wikipedia.org/wiki/Crossed_Out"
+    ],
+    "reason": "異端（accessibility 5、7 星）：七首約 8 分鐘、五首不滿一分鐘，Ink 19 稱極快有 blast，IMWT 稱粉碎性 grind 與快慢急轉，兩份樂評視為 power violence 藍圖"
+   },
+   "description": {
+    "text": "Crossed Out 這張同名 7 吋收七首歌，合計約 7 分 55 秒，五首不滿一分鐘。樂團常被視為 powerviolence 的起點，政治歌詞、blast beat 與極快的速度被引為這個類型的定義。他們是加州 Encinitas 的四人團，三年多只打過十六場演出；1991 年秋天由 Chris Dodge 的 Slap-A-Ham 發行，壓 1000 張。聲音是直來直往的 hardcore 混著粉碎性的 grind，在高速段與沉重的慢段之間急停急轉。The Locust 與 Dropdead 都翻唱過他們的歌。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Crossed_Out",
+     "https://en.wikipedia.org/wiki/Slap-a-Ham_Records",
+     "https://en.wikipedia.org/wiki/1990%E2%80%931993",
+     "https://ink19.com/2000/06/magazine/music-reviews/crossed-out",
+     "https://inmusicwetrust.com/articles/30p02.html",
+     "https://musicbrainz.org/release-group/03d82150-33ed-4227-8bc3-426a2aedb633"
+    ],
+    "note": "薄細項策展線卡牌版：研究（?）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-04T13:43:36Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Charles Bronson",
+   "album": "Youth Attack!",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "8e9da33a-d5ef-340d-a33d-810d6bc84d40",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "美加極端 hardcore／powerviolence：DeKalb, Illinois 的 Charles Bronson：維基稱其歌曲「非常短、常常極快」，歌詞諷刺 hardcore 場景；《Youth Attack!》是唯一錄音室專輯（主唱在樂團解散後才於芝加哥補錄人聲）。｜⚠ 依據偏薄（僅維基）。Last.fm 7612 非流亡。｜MB release-group 8e9da33a-d5ef-340d-a33d-810d6bc84d40：title「Youth Attack!」、Album、first-release-date 1997、artist-credit「Charles Bronson」。證據：https://musicbrainz.org/release-group/8e9da33a-d5ef-340d-a33d-810d6bc84d40 https://coverartarchive.org/release-group/8e9da33a-d5ef-340d-a33d-810d6bc84d40/front https://en.wikipedia.org/wiki/Charles_Bronson_(band)",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1997,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/8e9da33a-d5ef-340d-a33d-810d6bc84d40/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-04T13:43:36Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-04 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 5,
+    "listeners": 7612,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-04T13:43:36Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 7612）"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": true,
+    "tier": "heresy",
+    "evidenceUrls": [
+     "https://en.wikipedia.org/wiki/Charles_Bronson_(band)",
+     "https://www.loudersound.com/features/this-is-hardcore-charles-bronson-youth-attack",
+     "https://deathwishinc.com/products/charles-bronson-youth-attack-dekalb-straight-ahead"
+    ],
+    "reason": "異端（accessibility 5、7 星）：20 首 12 分 40 秒、單曲多在 20–50 秒，維基與 Louder 描述為極短極快、粗糙錄音、磨碎噪音混 thrash；結構極短。邊緣：具名評論偏短，未直接寫「極端」。"
+   },
+   "description": {
+    "text": "《Youth Attack!》是 Charles Bronson 唯一的錄音室專輯，20 首歌約 12 分 40 秒，多數在 20 到 50 秒之間。它製作粗糙、歌詞難辨，卻一直留在龐克樂迷的收藏裡。樂團來自伊利諾州 DeKalb，1997 年由 Lengua Armada 與 Coalition 發行，人聲是樂團解散後主唱 Mark McCoy 才在芝加哥補錄的。歌曲極短極快，在 powerviolence 的底子上混進磨碎般的噪音、youth crew hardcore 與 thrash punk，歌詞拿 hardcore 場景開玩笑。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Charles_Bronson_(band)",
+     "https://musicbrainz.org/release-group/8e9da33a-d5ef-340d-a33d-810d6bc84d40",
+     "https://deathwishinc.com/products/charles-bronson-youth-attack-dekalb-straight-ahead",
+     "https://www.loudersound.com/features/this-is-hardcore-charles-bronson-youth-attack"
+    ],
+    "note": "薄細項策展線卡牌版：研究（?）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-04T13:43:36Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Dropdead",
+   "album": "Dropdead",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "d29890cc-4828-3472-b3e0-f00cbe0afdea",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "美加極端 hardcore／powerviolence：Providence, Rhode Island 的 Dropdead：維基稱其歌曲「普遍很短且極快，少有超過兩分鐘」，影響來源含 Siege、Infest、Septic Death 與 Swans、Merzbow；Nasum 翻唱過其歌。｜⚠ MB 有兩張同名 Dropdead（1993、1998）；選 1993 版本，需確認是否為首張 LP 或合輯；依據偏薄。Last.fm 4477。｜MB release-group d29890cc-4828-3472-b3e0-f00cbe0afdea：title「Dropdead」、Album、first-release-date 1993、artist-credit「Dropdead」。證據：https://musicbrainz.org/release-group/d29890cc-4828-3472-b3e0-f00cbe0afdea https://coverartarchive.org/release-group/d29890cc-4828-3472-b3e0-f00cbe0afdea/front https://en.wikipedia.org/wiki/Dropdead",
+    "queryAlias": "",
+    "selfTitledVerified": true
+   },
+   "research": {
+    "suggestedYear": 1993,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/d29890cc-4828-3472-b3e0-f00cbe0afdea/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-04T13:43:36Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-04 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 5,
+    "listeners": 4477,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-04T13:43:36Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 4477）；主線：Decibel 名人堂收錄，經典 4"
+   },
+   "rarity": "legendary",
+   "apexAssessment": {
+    "eligible": true,
+    "tier": "heresy",
+    "evidenceUrls": [
+     "https://www.decibelmagazine.com/?p=13566",
+     "https://www.maximumrocknroll.com/review/mrr-456/dropdead-1993-lp-reissue",
+     "https://en.wikipedia.org/wiki/Dropdead"
+    ],
+    "reason": "異端（accessibility 5、7 星）：34 首、約 24 分鐘、平均不到一分鐘，Decibel 名人堂描述為 manic hardcore／crusty grind／frantic powerviolence，MRR 稱 pummel-fest。"
+   },
+   "description": {
+    "text": "Dropdead 這張 1993 年的同名首張專輯收 34 首歌，約 24 分鐘，平均每首不到一分鐘。它被視為 grindcore 的經典，樂團自己則認為是龐克團。四人來自羅德島 Providence，團名取自 Siege 的 demo；1993 年 11 月由 Selfless Records 發行，壓製發行商擅自改了封面，樂團很不滿。聲音混合躁狂的 hardcore、帶 crust 質地的 grind 與狂亂的 powerviolence，人聲一路嘶吼，鼓高速猛擊。Nasum 翻唱過其中的〈Bullshit Tradition〉。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Dropdead",
+     "https://www.decibelmagazine.com/?p=13566",
+     "https://www.maximumrocknroll.com/review/mrr-456/dropdead-1993-lp-reissue",
+     "https://musicbrainz.org/release-group/d29890cc-4828-3472-b3e0-f00cbe0afdea"
+    ],
+    "note": "薄細項策展線卡牌版：研究（?）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-04T13:43:36Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：Dropdead《Dropdead / Totalitar Split - EP》0/33）。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Despise You",
+   "album": "West Side Horizons",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "a50f5214-ee61-36c0-967c-635f10f29e6f",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "美加極端 hardcore／powerviolence：Inglewood, California 的 Despise You：維基稱其影響 powerviolence，歌詞涉及幫派暴力、厭世與自厭，被稱為「世界上最憤怒的樂團」，初期以假名發行、從不現場演出。《West Side Horizons》為 1999 年專輯。｜⚠ 依據偏薄；Last.fm 36939 非流亡；廠牌未逐項核對。｜MB release-group a50f5214-ee61-36c0-967c-635f10f29e6f：title「West Side Horizons」、Album、first-release-date 1999、artist-credit「Despise You」。證據：https://musicbrainz.org/release-group/a50f5214-ee61-36c0-967c-635f10f29e6f https://coverartarchive.org/release-group/a50f5214-ee61-36c0-967c-635f10f29e6f/front https://en.wikipedia.org/wiki/Despise_You",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1999,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/a50f5214-ee61-36c0-967c-635f10f29e6f/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-04T13:43:36Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-04 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 5,
+    "listeners": 36939,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-04T13:43:36Z",
+    "note": "機器基線 3/3/3（Last.fm listeners 36939）"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": true,
+    "tier": "heresy",
+    "evidenceUrls": [
+     "https://ink19.com/1999/08/magazine/music-reviews/despise-you",
+     "https://distortedsoundmag.com/?p=99790"
+    ],
+    "reason": "異端（accessibility 5、7 星）：62 首不到 44 分鐘、最長約兩分鐘、多數不到一分鐘的整張極速 powerviolence，Ink19 與 Distorted Sound 皆描述；但它是合輯。"
+   },
+   "description": {
+    "text": "《West Side Horizons》把 Despise You 的分裂 7 吋、EP 與 16 首未發表曲收在一起，共 62 首、不到 44 分鐘，多數不到一分鐘。這支 powerviolence 團的影響，有樂評在 NAILS、Trash Talk 等後輩身上聽得出來。樂團 1994 年成立於加州 Inglewood，歌詞寫幫派暴力、厭世與自厭，1996 年悄悄解散，1999 年才由 Pessimiser Records 出了這張彙整。吉他音色混濁，高速衝撞，中間穿插急停，少數歌如〈Burning in Hell〉放進 beatdown 慢段。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Despise_You",
+     "https://ink19.com/1999/08/magazine/music-reviews/despise-you",
+     "https://distortedsoundmag.com/?p=99790",
+     "https://therazorsedge.rocks/2021-08-album-review-despise-you-west-side-horizons/",
+     "https://musicbrainz.org/release-group/a50f5214-ee61-36c0-967c-635f10f29e6f"
+    ],
+    "note": "薄細項策展線卡牌版：研究（?）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-04T13:43:36Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Extreme Noise Terror",
+   "album": "A Holocaust in Your Head",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "7679a1a7-d9aa-3834-ab3e-659bf6118500",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "英國 grind／crust：15 首共 25:44，最短 0:59，雙主唱嘶吼加 crust 的厚重粗礪與 grindcore 速度；Terrorizer 把它列為歐洲必聽 grindcore 專輯第三，AllMusic 給 4.5 星。｜⚠ MB 有 1989 與 1991-04-21 兩個同名 RG，用 1989 的；Wikipedia 內含 Terrorizer、AllMusic 引註，獨立第二描述來源偏薄。｜MB release-group 7679a1a7-d9aa-3834-ab3e-659bf6118500：title「A Holocaust in Your Head」、Album、first-release-date 1989、artist-credit「Extreme Noise Terror」。證據：https://en.wikipedia.org/wiki/A_Holocaust_in_Your_Head https://en.wikipedia.org/wiki/Extreme_Noise_Terror 封面：https://coverartarchive.org/release-group/7679a1a7-d9aa-3834-ab3e-659bf6118500/front-250 https://musicbrainz.org/release-group/7679a1a7-d9aa-3834-ab3e-659bf6118500",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1989,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/7679a1a7-d9aa-3834-ab3e-659bf6118500/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-04T13:43:36Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-04 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 5,
+    "listeners": 37124,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-04T13:43:36Z",
+    "note": "機器基線 3/3/3（Last.fm listeners 37124）；主線：Terrorizer 歐洲 grindcore 榜第三、AllMusic 4.5（維基引），經典 4"
+   },
+   "rarity": "legendary",
+   "apexAssessment": {
+    "eligible": true,
+    "tier": "heresy",
+    "evidenceUrls": [
+     "https://deathmetal.org/news/extreme-noise-terror-a-holocaust-in-your-head",
+     "https://en.wikipedia.org/wiki/Extreme_Noise_Terror"
+    ],
+    "reason": "異端（accessibility 5、7 星）：15 首共 25:44、高速高強度整張（deathmetal.org），Terrorizer 榜單與 AllMusic 4.5 星，被視為 grindcore 前身；但邊緣，因 crust 結構簡單清楚。"
+   },
+   "description": {
+    "text": "《A Holocaust in Your Head》是 Extreme Noise Terror 的首張專輯，15 首共 25 分 44 秒，整張維持高速高強度，把厚重的 crust punk 推向剛成形的 grindcore。它常被排進歐洲 grindcore 的經典名單，樂團也被視為最早、影響最大的 crust 團之一。1988 年 11 月在 Birdsong Studios 錄成，1989 年由 Head Eruption 發行。歌曲結構簡單，快速吉他夾著原始死亡金屬 riff，Dean Jones 與 Phil Vane 兩名主唱輪流嘶吼。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Extreme_Noise_Terror",
+     "https://en.wikipedia.org/wiki/A_Holocaust_in_Your_Head",
+     "https://deathmetal.org/news/extreme-noise-terror-a-holocaust-in-your-head",
+     "https://musicbrainz.org/release-group/7679a1a7-d9aa-3834-ab3e-659bf6118500"
+    ],
+    "note": "薄細項策展線卡牌版：研究（?）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-04T13:43:36Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  }
+ ]
+}

@@ -81,3 +81,6 @@
   - Siege：「轉向噪音與薩克斯風即興」→「是整份最實驗的一首」——研究稿只說 Mahoney「偶爾吹薩克斯風」、〈Grim Reaper〉最慢最實驗，沒說這首有薩克斯風；52469 主線那句是未查證的印象，一併更正（寫作勿用）。刪「與前面的短曲形成反差」壓字數。（278 字）
   - Despise You：「影響後來在 NAILS、Trash Talk 身上聽得出來」→「有樂評在…身上聽得出來」（單一樂評 Distorted Sound 的看法）。（278 字）
   - Crossed Out（Ink19＋維基引 Terrorizer／Noisecreep：powerviolence 起點與定義；Encinitas、十六場、Slap-A-Ham 1000 張、Locust／Dropdead 翻唱）、Charles Bronson（唯一錄音室專輯、芝加哥補錄人聲；「收藏」一句出自 Louder 搜尋摘要，保留但不加評價）、Dropdead（Decibel：Dutch East India 改封面、Nasum 翻唱）、ENT（Birdsong 1988-11、雙主唱）對過，未改字。
+- **52473** build-manifest 擋下禁語：ENT「歐洲必聽 grindcore 第三名」→「常被排進歐洲 grindcore 的經典名單」（同時去掉榜單名次）；升格稿 Discharge「硬蕊龐克必聽之作」→「常被列進硬蕊龐克的入門清單」、Locust「2016 年被列入極端音樂雜誌的名人堂」→「多年後仍被當作極端音樂的經典回頭重談」（媒體榜單不進正文）。升格兩鍵 KV 重寫、回讀 2/2。
+- **52474** 封面 6 張 CAA release-group front-250 縮圖目視：Siege、Crossed Out（行刑隊照片，符合研究稿）、Charles Bronson（Youth Attack! hard 1997 core）、Dropdead（落とす死）、Despise You、ENT 皆與盤名相符。prepare gate 0 error（7 warning：UPC 缺、Dropdead 同名提醒）。
+- **52475** 上架寫入（新卡 6）：對 origin 所有 claude/* 分支 seed 去重 0 撞；card_catalog 6/6（含 tier heresy、apex，讀回 6/6）；KV 6 鍵 Success、`verify-wave-kv` 6/6。試聽 ready 1（Siege：Apple us 975341363《Drop Dead (30th Anniversary Edition)》，原版六首 6/6 命中）／unavailable 5。

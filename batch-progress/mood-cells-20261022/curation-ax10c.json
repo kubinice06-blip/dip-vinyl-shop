@@ -1,0 +1,123 @@
+{
+ "group": "ax10c",
+ "factions": [
+  {
+   "id": "us-hardcore-chaos",
+   "zh": "美國 chaos／早期 thrash hardcore",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "us-grindcore",
+   "zh": "美國 grindcore／極速短曲",
+   "count": 2,
+   "why": ""
+  }
+ ],
+ "albums": [
+  {
+   "artist": "The Faith / Void",
+   "album": "Faith / Void Split",
+   "year": 1982,
+   "label": "Dischord",
+   "country": "US",
+   "faction": "us-hardcore-chaos",
+   "genres": [
+    "rock"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "Punknews 稱 Void 面是早期硬蕊「最混亂」的錄音；Furious.com 稱歌都以樂手能撐的最快速度演奏、短促爆發加回授。",
+   "listeners": null,
+   "why": "1982 年 Dischord 分裂 LP，Void 面十二首短曲：Punknews（BSD，2004）稱它發展出「早期硬蕊最混亂的聲音」，結構勉強撐住、人聲如地獄尖叫；Furious.com（Scott Bass，2013）寫多數歌像樂手用盡全力的最快速度彈奏，巨大和弦加失控回授，短促爆發。維基另引 Dusted 稱其為典型美國硬蕊。",
+   "moodGuess": {
+    "x": -4,
+    "y": 4.5,
+    "z": -3,
+    "why": "高速、混亂、回授"
+   },
+   "evidence": [
+    "https://www.punknews.org/review/3331/the-faith-void-faith-void-faith",
+    "http://www.furious.com/perfect/void.html",
+    "https://en.wikipedia.org/wiki/Faith/Void_Split",
+    "封面：https://coverartarchive.org/release-group/8f85c545-777a-4a65-955b-504ed8ef8aec/front-250",
+    "https://musicbrainz.org/release-group/8f85c545-777a-4a65-955b-504ed8ef8aec"
+   ],
+   "mbRgMbid": "8f85c545-777a-4a65-955b-504ed8ef8aec",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "The Faith/Void",
+   "uncertain": "MB 藝人鍵為「The Faith/Void」（split 兩團合署），Void 面總長 MB／維基皆未列；描述是整個 Void 面而非 Faith 面，寫簡介須只講 Void。worker _listeners=1313，非流亡。Punknews 為站內評論，Furious.com 為 Perfect Sound Forever 專欄。"
+  },
+  {
+   "artist": "Insect Warfare",
+   "album": "World Extermination",
+   "year": 2007,
+   "label": "625 Thrashcore",
+   "country": "US",
+   "faction": "us-grindcore",
+   "genres": [
+    "rock"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "Houston Press、Blabbermouth、Quietus 皆述 20 首約 22 分鐘整張不間斷極速。",
+   "listeners": null,
+   "why": "休士頓三人組 20 首共約 22:36、曲長 0:13–1:49：Houston Press（Chris Gray，2007）稱雙大鼓與吉他是一場「連 Lemmy 都會心臟病發的速度」的暴動；Blabbermouth 稱「全速、毫無喘息」、像曼哈頓街口的電鑽；Quietus（Toby Cook，2009）稱 20 首只花二十分鐘出頭。Decibel 2023 名人堂。",
+   "moodGuess": {
+    "x": -5,
+    "y": 5,
+    "z": -3,
+    "why": "整張極速、無喘息"
+   },
+   "evidence": [
+    "https://www.houstonpress.com/music/insect-warfare-6542979",
+    "https://www.blabbermouth.net/cdreviews/world-extermination/",
+    "https://thequietus.com/articles/03088-columnus-metallicus-handing-you-your-ass-in-october",
+    "https://en.wikipedia.org/wiki/World_Extermination",
+    "封面：https://coverartarchive.org/release-group/d2884bc3-7155-3e4d-937e-f44520e0d84a/front-250",
+    "https://musicbrainz.org/release-group/d2884bc3-7155-3e4d-937e-f44520e0d84a"
+   ],
+   "mbRgMbid": "d2884bc3-7155-3e4d-937e-f44520e0d84a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "worker _listeners=81529，非流亡。年份 MB 2007-07、維基 2007-09-10，皆 2007；原廠牌 625 Thrashcore，2009 Earache 重發。2000 年代 grindcore，不是 hardcore-7inch，屬 Album 照收。"
+  },
+  {
+   "artist": "Agoraphobic Nosebleed",
+   "album": "Altered States of America",
+   "year": 2003,
+   "label": "Relapse",
+   "country": "US",
+   "faction": "us-grindcore",
+   "genres": [
+    "rock"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "Exclaim、Tinnitist 皆述 100 首擠進約 20 分鐘 3 吋 CD，曲長多在數秒。",
+   "listeners": null,
+   "why": "3 吋迷你 CD 塞 100 首、共約 21:42、多數不到 30 秒、許多只有四五秒、最長 1:45（維基曲目表）：Exclaim（Greg Pratt，2008）稱「超過頭的機器碾核」、歌很少超過數秒；Tinnitist（Darryl Sterdan，原 2003）稱奈秒級的高速強度與狂暴。",
+   "moodGuess": {
+    "x": -5,
+    "y": 5,
+    "z": -3,
+    "why": "100 首數秒短曲、機器鼓"
+   },
+   "evidence": [
+    "https://exclaim.ca/music/article/agoraphobic_nosebleed-altered_states_of",
+    "https://tinnitist.com/2023/05/23/classic-album-review-agoraphobic-nosebleed-altered-states-of-america",
+    "https://en.wikipedia.org/wiki/Altered_States_of_America",
+    "封面：https://coverartarchive.org/release-group/ed896410-fea5-3cd6-adb8-286c5f61da03/front-250",
+    "https://musicbrainz.org/release-group/ed896410-fea5-3cd6-adb8-286c5f61da03"
+   ],
+   "mbRgMbid": "ed896410-fea5-3cd6-adb8-286c5f61da03",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "worker _listeners=23367，非流亡。Exclaim 評的是 2008 重發版（含 20 分鐘 bonus 碟），描述原盤部分有效；Metal Reviews 另有負評（說是 You Suffer 重複 99 次）。2003 年盤，非 hardcore 7 吋。"
+  }
+ ],
+ "notes": []
+}
