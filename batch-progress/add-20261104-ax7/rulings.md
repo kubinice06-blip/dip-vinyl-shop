@@ -20,3 +20,12 @@
 - 52111 heresy 1：Phill Niblock《Touch Food》（擇一組代表）。主線收：作曲者 liner notes 要求「極大聲，鄰居沒抱怨就不夠大聲」（極端音量是明文指示），CD2 是 70 分鐘不間斷的鋼琴長音單曲，全張約 2 小時 24 分鐘無節拍無旋律的微分音拍頻長音；評論描述「翻攪的和聲海洋」「從未聽過鋼琴如此強大」，The Wire 2003 年度專輯。證據 touch33.net（廠牌頁）＋touchradio.org.uk（廠牌彙整的具名評論）＋維基。研究層提醒「催眠式 drone 不收」——Niblock 的長音是高音量、高密度的拍頻，不是低音量催眠型，邊緣收。accessibility 4→5。Niblock 其他四張擇一讓位。
 - 52112 none 18 照判：Pakistani Pomade（評論講音色與優雅）、Gustafsson 兩張（無具名樂評）、Organum 三張（無聽感來源）、Nadja（只有部落格，且稱偏氛圍）、Vainio 三張（Kilo 有鼓機節拍；Onko、Fe₃O₄ 點描低音量）、Bennink《Solo》（十四首短篇）、Coil（Brainwashed「乏味多於刺耳」）、Noah Howard《At Judson Hall》（靈性溫柔）、Le Forte Four（只有 Discogs）。
 - 52113 研究層推翻舊簡介（未升格的卡不改稿，記錄備查）：Organum《Submission》Discogs 年份 1987；Nadja 的 Codeine 對照、Le Forte Four 的甘美朗／Buchla 說法查無來源。
+
+## 研究 R1（日本組，24 張；WebSearch 15）
+- 52121 **Les Rallizes Dénudés《'77 Live》收**（店主點名，四張擇一）：日文維基「常軌を逸した大音量のノイズ」、英文維基「越來越響、失真、重複、粗糙」且稱 '77 Live 是最受推崇的錄音、RBMA 專文「high-volume shredding」、consumethetangible 樂評「要先穿過層層尖嘯的回授與噪音才抵達歌曲」。先前（q2）以「歌曲與律動清楚」刷掉；新標準看的是整張的聲響狀態——回授／失真音牆貫穿全張、單曲十分鐘以上，歌曲輪廓仍在不影響。另三張（'67-'69、MIZUTANI、The Oz Tapes）擇一讓位。藝人鍵照 seed 掛名 `Les Rallizes Dénudés`；`裸のラリーズ` 三張與它算同一位，之後不得再升。
+- 52122 **灰野敬二《The Book of "Eternity Set Aflame"》收**（四張擇一）：三軌約 70 分鐘，第一軌 18 分鐘放大器過載的獨奏吉他、第三軌 39 分鐘聚成「極度稠密的電暴」，中軌 12 分鐘電子（少數）。證據 Arcane Candy＋Life Ferocity（兩個評論部落格，聽感描述具體）＋Artforum（搜尋摘要）。來源偏部落格，邊緣收；灰野是日本噪音核心人物，不失者已在異端但樂團與個人不同鍵（52102）。《Watashi Dake?》有大量沉默段落、其餘兩張證據不足，讓位。
+- 52123 **高柳昌行《April Is the Cruellest Month》收**（與 New Direction Unit《Moers》擇一）：證據最強——Free Jazz Collective（終曲約 20 分鐘「持續、不間斷」的 mass projection 猛攻）、Bandcamp Daily（「尖嘯、咆哮的火暴風」）、The Quietus（「不悔改的 squall」）、Jazz Journal；團規「隨時 forte、不跟隨他人、不重複樂句」（英文維基）。
+- 52124 **Musica Transonic《Musica Transonic》收**（邊緣）：Burning Ambulance（Phil Freeman）「混得太熱，近乎溶解成一面靜電牆」、Raven Sings the Blues「pure sonic assault」「持續的節奏轟炸」，南條麻人自述電平推到不得不失真；中間有較柔的爵士段落但非主體。
+- 52125 none 20 照判：山下洋輔トリオ五張（《Clay》最接近，但只有廠牌文案，又稱鼓「留白」）、High Rise 三張（《High Rise II》證據最好但是 riff 搖滾；Psychedelic Speed Freaks 查無可信聽感描述）、光束夜兩張（只有零售文案）、Corrupted（第二片 73 分鐘是鋼琴合成器氛圍）、高木元輝、富樫雅彦（查無聲音描述）、灰野與 Rallizes 與高柳組的讓位張。
+- 52126 研究層推翻舊簡介（未升格的不改稿，記錄備查）：光束夜《1st》年份維基與零售皆 1991（seed 1990）；Corrupted 第一片只有一首〈Sangre/Humanos〉49:56；High Rise II 維基列八軌；Mosura Freight! 舊簡介的簧管、Jazz Street 52、300 張皆未查證。
+- 52127 **升格合計 8 張**：Dilloway、Wold、Impetuous Ritual（沿用研究稿）＋Niblock《Touch Food》＋'77 Live、Eternity Set Aflame、April Is the Cruellest Month、Musica Transonic。異端 140 → 148。命中 8／約 70 張受檢卡。不另開第二輪：卡池裡自由爵士／即興／噪音的一般卡已掃完（acc≥4、子曲風 free／improv／noise／PE／no-wave／black 共 520 張），剩下的是結構清楚的前衛、spiritual、碾核、或只有 Discogs 標籤沒有聽感描述的卡帶；放寬的是「結論」不是「來源」，不為湊數降低來源門檻。缺口留給 ax8 新上架。
