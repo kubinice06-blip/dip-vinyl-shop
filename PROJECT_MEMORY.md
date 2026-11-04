@@ -1,5 +1,15 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-04｜dip-vinyl-shop｜頂點卡簡介重寫 s4：ad-07、ad-08 上線 60 張（殿堂）
+
+- **內容**：ad-07（The Zombies～Iron Maiden，60–80 年代英美搖滾／前衛／金屬）、ad-08（Motörhead～Manu Dibango，90 年代另類／金屬／獨立、shoegaze、Detroit techno／acid house、P-Funk、芝加哥藍調、非洲 funk）各 30 張，照 `apex-desc-base.md` 重寫。研究 3 Sonnet×2 批（WebSearch 合計 16 次）、寫作 2 Opus×2 批；派工時補了「前兩句講夠格理由」「出處不寫進簡介」兩條新規。
+- **主線審稿**：ad-07 改 6 處、ad-08 改 7 處（`review-ad-07/08.json`），主要是「被列進榜單／年度榜第一」這類描述榜單的句子改成直述地位、轉述樂評原話與雜誌名人堂（出處）刪掉、單一來源降為「被視為」、國家錄音登記表用語統一。
+- **上線**：KV desc2 60 鍵（兩批皆無 desc4、無 CJK 卡）；寫前舊值 `kv-before-ad-07/08.json`。回讀 30/30、30/30 逐字一致；`front-check` 前台 30/30、30/30，CURATED 0。manifest 同步 3 處（c29-blues、c30-blues、c31-world）。
+- **待店主**：seed《Whatever People Say I Am, That's What I'm Not》年份欄 2005，實際 2006 年 1 月發行（未動 seed）。
+- **工具注意**：`tools/check-curated.mjs` 會改寫 `worklist.json`，不要拿來當檢查工具（s4 誤跑一次已還原）。
+- **驗證**：`kv-token-check` exit 0；`qa-batch research|out ad-07|ad-08` 只剩誤報（年代用年份、團員本名、名人堂）；fix-spacing 0；字數 219–280。
+- 主要檔案：`batch-progress/apex-desc-20261104/{PLAN.md,rulings.md,review-ad-07.json,review-ad-08.json,kv-before-ad-07.json,kv-before-ad-08.json}`、`desc-tools/batches/{cards,research,output}/ad-0{7,8}-*`、3 份 onboarding manifest。
+
 ### 2026-11-04｜dip-vinyl-shop｜頂點卡簡介重寫 s2：ad-03／ad-04 上線 60 張
 
 - **ad-03（殿堂 30：Gould、台港中華語 16 張、古典錄音 8 張等）、ad-04（殿堂 30：英美經典搖滾／靈魂樂）上線**：研究 3 Sonnet／寫作 2 Opus／機器 QA／主線逐張審稿（ad-03 改 12 處、ad-04 改 11 處，見 `batch-progress/apex-desc-20261104/rulings.md`）。ad-03 華語卡聲音塊太薄，主線加派 1 支 Sonnet 補查（`research/sup-ad-03.json`），補後李泰祥、張雨生、黑豹、新寶島康樂隊仍只能寫到結構層級。

@@ -284,3 +284,34 @@
 - bulk put 30 鍵（全為 desc2），`Success!`（第一次輸出被 npm notice 截掉看不到，重跑一次親眼見到 `Success!`，內容相同）。
 - `verify-wave-kv` 回讀 30/30 逐字一致；`front-check ad-07`：30/30 前台為新稿，CURATED 0。
 - manifest：0 處需同步。
+
+## ad-08（殿堂 30 張，s4）
+
+- 研究 3 Sonnet（WebSearch a 4／b 3／c 8 次；s4 研究層合計 16 次）、寫作 2 Opus。coverage 無 none。thin：Motörhead、Hüsker Dü、Black Flag、Acid Tracks、Mothership Connection、At Newport 1960、Moanin' in the Moonlight、Soul Makossa 的聲音塊，RATM、Soundgarden、Arctic Monkeys、Strings of Life 的製作塊，Howlin' Wolf 的地位塊，照研究稿薄寫（Arctic Monkeys 232 字、無錄音經過）。
+- 研究層推翻舊簡介的主要錯誤（新稿未沿用）：Smashing Pumpkins「4 白金」（7 白金）與「過氣標籤」、White Stripes「10 天」（約兩週）、Slayer 拒發廠牌（Columbia 拒發、改 Geffen）、Motörhead 刺青／雙大鼓、Soundgarden 專輯得葛萊美（只有〈Black Hole Sun〉得獎）、Green Day「另類榜五週冠軍」、Neutral Milk Hotel《安妮日記》因果、Spiderland「1989 地下室、關燈唱」（實為 1990 年 8 月芝加哥四天）、Grace 的 Bowie 引言與 340 萬張、Pavement「只預約四小時」、Souvlaki「Eno 共同譜寫」（樂團自製、Eno 只做兩首）、Heaven or Las Vegas 人聲錄音者與命名軼事、Acid Tracks 價格與「預設音色」、Maggot Brain「想像母親還活著」與 LSD 一次錄成、At Newport「史上第一張現場藍調」、Howlin' Wolf「2014 藍調名人堂」、Soul Makossa 和解金額。
+- 機器 QA：`qa-batch research ad-08` 1 個千分位標記在研究稿（不進簡介）；`out` 8 個標記皆誤報（年代用年份、團員全名）；fix-spacing 0；字數 232–280。
+- Jerry Cantrell、Billie Joe Armstrong、Anthony Kiedis 的全名研究稿只有姓或暱稱，寫作層補了全名；皆為通行正確寫法，照留。
+- **卡池資料疑點（未動 seed，留給店主）**：Arctic Monkeys《Whatever People Say I Am, That's What I'm Not》seed 年份欄 2005，專輯 2006 年 1 月 23 日發行（研究稿英文維基），簡介照實際寫 2006。
+
+### 主線審稿（2026-11-04，30 張逐張讀、逐句對研究稿）
+
+改 7 處（`review-ad-08.json`）：
+
+- `slayer|reign in blood`：「，也是 Decibel 名人堂收進的第一張專輯。」→「。」。單一雜誌的專欄名人堂，寫出來等於點出處；前句已有多份榜單
+- `rage against the machine|rage against the machine`：「常被列進史上最佳專輯的榜單」→「常被列為史上最好的專輯之一」。描述榜單而非地位（同 s3 Marquee Moon 裁定）
+- `nine inch nails|the downward spiral`：同上
+- `alice in chains|dirt`：「也常被列進最佳金屬與 grunge 專輯的榜單」→「也常被列為最好的金屬與 grunge 專輯之一」。同上
+- `green day|dookie`：「它被認為與 The Offspring」→「它被視為與 The Offspring」。用語統一
+- `parliament|mothership connection`：「2011 年列入美國國會圖書館的國家錄音登記表」→「2011 年入選國家錄音登記表」。用語統一
+- `parliament|mothership connection`：「也首度加入號角組」→「也首度加入銅管組」。horn section 台灣慣用「銅管組」
+
+其餘 23 張逐張審過，未改字。另核：Stone Roses「幾乎一手開創 Madchester」研究稿有 Sennett 與 Groth、Rolling Stone 兩處，照留；At Newport 寫「最早的現場藍調專輯之一」（Chris Smith 2009），未寫「第一張」；Soul Makossa「被視為史上被取樣最多的非洲歌曲」是維基敘述單一來源，用「被視為」；單曲卡（Strings of Life、Acid Tracks、Soul Makossa）照卡池慣例用〈〉並寫明 12 吋單曲／單曲。
+
+### 上線
+
+- `kv-token-check` 通過；舊值存 `kv-before-ad-08.json`（60 鍵，30 個非 null）。
+- bulk put 30 鍵（全為 desc2；本批無 desc4、無 CJK 卡），`Success!`。
+- `verify-wave-kv` 回讀 30/30 逐字一致；`front-check ad-08`：30/30 前台為新稿，CURATED 0。
+- manifest 同步 3 處（c29-blues、c30-blues、c31-world）。
+- 兩批審稿改動總計：ad-07 6 處、ad-08 7 處。
+- **工具注意**：`tools/check-curated.mjs` 會把前台現值**寫回 `worklist.json`**（是 s1 第 0 步用的工具），對已重寫過的批會把 worklist 的舊簡介換成新稿。s4 誤跑一次，已用 `git checkout` 還原 worklist；後續工作階段不要拿它當檢查工具。
