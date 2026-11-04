@@ -3826,4 +3826,6 @@ window.DipPreviewStatus = Object.freeze({
   "disorder|under the scalpel blade": "unavailable",
   "蜃気楼mirage|songs for lovers": "unavailable",
   "spacetime continuum|emit ecaps": "unavailable",
+  "ulrich schnauss & jonas munk|epic": "unavailable",
+  "aus|curveland": "unavailable",
 });

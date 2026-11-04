@@ -95,3 +95,7 @@
 - **22828** 跨兩檔合掃（han() 4-gram，含 writer-1 定稿）：途中拆掉「首約分鐘」×5（四張改成「加起來約／共…左右／合計約／播完約需」）、「樂評形容」×3、「年由發行」、「廠牌第一張」、「這家廠牌」、「第一張個人」、「在年發行」、「樂評聽見」、「長約分鐘」。定稿 2 張以上 0 條。
 - **22829** COW 的「第十四張錄音室專輯」保留「錄音室」（照 facts，不簡寫成第十四張專輯）；Strange Cargo III 的 Rico Conning 只寫「替幾首曲子添上鋼琴與弦樂」，不逐首點名；hook 已說 VHS，正文不再提影帶。
 - **22830** Tides 樂評語「寫給腦袋、不是寫給舞池」照鉤子層 22817 視為樂評內容，正文寫成「對準的是腦袋而不是舞池」。
+
+## 主線審稿（2026-11-04，cloud-main）
+- 逐張審 20 張，抽核關鍵事實回研究稿：Schnauss 1977 生於基爾、2016→2020 更名加曲；《Epic》兩段間奏分屬、14 軌含 Dub；《Eight Fragments》無鼓組、八分音符脈動、10:50 長曲；Mark Peters 利物浦／Engineers、2017 開錄 2020 混完；Casino Versus Japan 2002 交 Attacknine 五張光碟、第一張首度發行；Manual＝奧登塞 Jonas Munk、Morr Music 2001；Solar Bears 團名出自《飛向太空》、Pulse 錄音學校、1986 Sony 錄音機；aus 東京、FLAU 創辦人、Preco 2006；Tujiko Noriko 辻子紀子、大阪、布里斯本旅館；Cuushe 京都；Fila Brazillia 1990 赫爾、與 Sim Lister 共創 Twentythree；Jonas Bering 1975 生於里爾、Kompakt 首位非德國籍藝人（維基）；Fennesz 1962 生——皆一致。
+- 逐張審過，未改字。
