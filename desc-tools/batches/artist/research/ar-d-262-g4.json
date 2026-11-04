@@ -1,96 +1,626 @@
 [
-  {
-    "key": "ensemble 13",
-    "name": "Ensemble 13",
-    "slots": {
-      "origin": {
-        "status": "gap",
-        "facts": [
-          { "f": "Ensemble 13 是德國巴登巴登的當代音樂團體，1973 年由 Manfred Reichert 從巴登室內樂團（Badisches Kammerorchester）的班底組成。", "src": "https://de.wikipedia.org/wiki/Ensemble_13", "src2": "https://db.musicaustria.at/en/node/45776", "from": "new" },
-          { "f": "創辦人 Manfred Reichert（1942 至 2018）生於卡爾斯魯爾，修過音樂、音樂學、法文與哲學；1967 年進西南廣播電台（Südwestfunk）巴登巴登的音樂部當編輯，同時是指揮與戲劇顧問。", "src": "https://zkm.de/en/persons/manfred-reichert", "src2": "https://ka.stadtwiki.net/Manfred_Reichert", "from": "new" },
-          { "f": "卡爾斯魯爾城市維基形容這個團是「由傑出且樂於實驗的樂手組成的鬆散聯合」（einen losen Verbund herausragender und experimentierfreudiger Musiker）。", "src": "https://ka.stadtwiki.net/Manfred_Reichert", "from": "new", "single": true },
-          { "f": "Reichert 1981 年提出「卡爾斯魯爾音樂中心」構想，要給 Ensemble 13 一個排練與演出的固定場地；他 1981 至 2007 年任當地「Wintermusik」與「Musik auf dem 49.」音樂節的藝術總監。", "src": "https://zkm.de/en/persons/manfred-reichert", "from": "new", "single": true }
-        ]
-      },
-      "sound": {
-        "status": "gap",
-        "facts": [
-          { "f": "團的路線是當代音樂：灌錄過 Wolfgang Rihm 的《Kein Firmament》（為 14 位演奏者而寫）、John Cage 的《Thirteen》（13 件樂器），以及 Hans-Joachim Hespos 的作品，交 cpo 與 WERGO 等廠牌發行。", "src": "https://de.wikipedia.org/wiki/Ensemble_13", "from": "new", "single": true },
-          { "f": "1992 年的《Hespos: Works》是 Ensemble 13 與西南廣播電台巴登巴登共同製作、Manfred Reichert 指揮，錄於 1979 年 12 月至 1980 年 2 月；cpo 後來又出了同一組人馬的 Hespos《Seiltanz》。", "src": "https://api.discogs.com/releases/28910536", "from": "bank", "single": true },
-          { "f": "同一張碟的編制隨曲目變動：〈Dschen〉用弦樂與薩克斯風；〈Conga〉加入康加鼓；〈Profile〉是木管五重奏；〈Harry's Musike〉是低音單簧管獨奏；〈Go〉動用雙簧管、英國管、Heckelphone、Sarrusophone 等九位吹奏者與鋼琴。", "src": "https://api.discogs.com/masters/3306643", "from": "bank", "single": true },
-          { "f": "維基形容 Hespos 的音樂即使放在歐洲前衛圈也相當極端、不守成規：擴充演奏法把樂器逼到音色極限，樂譜混用圖形記譜、文字指示與傳統記譜，不少作品含即興。", "src": "https://en.wikipedia.org/wiki/Hans-Joachim_Hespos", "from": "new", "single": true }
-        ]
-      },
-      "legacy": {
-        "status": "gap",
-        "facts": [
-          { "f": "1999 年 Ensemble 13 獲美因茲的 Schneider-Schott 音樂獎（Schneider-Schott-Musikpreis）。", "src": "https://de.wikipedia.org/wiki/Ensemble_13", "src2": "https://db.musicaustria.at/en/node/45776", "from": "new" },
-          { "f": "團固定出現在德勒斯登當代音樂節（Dresdner Tage der zeitgenössischen Musik）等當代音樂節；1997 年起以卡爾斯魯爾的 ZKM（藝術與媒體中心）為基地。", "src": "https://de.wikipedia.org/wiki/Ensemble_13", "from": "new", "single": true },
-          { "f": "2007 年 Reichert 離開後，Ensemble 13 隨之解散，前後約三十四年；同年底《Neue Musikzeitung》報導了它在卡爾斯魯爾的最後一輪音樂節節目。", "src": "https://de.wikipedia.org/wiki/Ensemble_13", "src2": "https://db.musicaustria.at/en/node/45776", "from": "new" }
-        ]
-      },
-      "era": {
-        "status": "none",
-        "facts": []
-      }
-    },
-    "milestones": [
-      { "f": "1973 年，Manfred Reichert 在巴登巴登成立 Ensemble 13。", "src": "https://de.wikipedia.org/wiki/Ensemble_13", "src2": "https://db.musicaustria.at/en/node/45776", "from": "new" },
-      { "f": "1999 年獲 Schneider-Schott 音樂獎。", "src": "https://de.wikipedia.org/wiki/Ensemble_13", "src2": "https://db.musicaustria.at/en/node/45776", "from": "new" }
-    ],
-    "conflicts": [],
-    "searches": 7,
-    "failedFetches": [],
-    "status": "full",
-    "pubIssues": [],
-    "notes": "同名檢查：poolAlbums 只有 Hespos: Works，與 Baden-Baden 的 Reichert 團吻合（cpo 999 052-2 的 Discogs 製作記載一致）。Schneider-Schott 音樂獎：de.wikipedia 與 musicaustria 都列在團名下，但卡爾斯魯爾城市維基把同一獎項列在 Reichert 個人名下，受獎主體可能是 Reichert 或團，寫作層寫「Ensemble 13（與其創辦人 Reichert）」或乾脆寫「團獲」都不宜加註個人。同站家族：de.wikipedia 與 musicaustria 看似獨立，但 musicaustria 資料內容與 de.wikipedia 幾乎一致，可能同源，因此標為兩源但「非完全獨立」。zkm.de 與 ka.stadtwiki.net 對 Reichert 生平的措辭幾乎一致，亦「非獨立」。Reichert 個人榮譽（僅 ka.stadtwiki 單源，不進 facts）：Prix Italia 1995、兩度 Deutscher Schallplattenpreis 年度藝術家、Ernst von Siemens 音樂基金會獎助。團的成員名單、首演清單、委託創作清單 de.wikipedia 與 musicaustria 都未列（musicaustria 有空的「Aufträge／Uraufführungen」欄），查不到。Hespos 英文維基未提 Ensemble 13 或 Reichert，兩人關係只能靠 Discogs 的專輯製作記載。Hespos 生卒年：搜尋結果寫 1938 年 3 月 13 日生於埃姆登、2022 年 7 月 18 日卒；事實庫已有 1938／2022，未再補第二源，寫作層若寫須自行取捨。解散年「2007」與「約三十四年」為 1973 到 2007 推算。"
+ {
+  "key": "ensemble 13",
+  "name": "Ensemble 13",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Ensemble 13 是德國巴登巴登的當代音樂團體，1973 年由 Manfred Reichert 從巴登室內樂團（Badisches Kammerorchester）的班底組成。",
+      "src": "https://de.wikipedia.org/wiki/Ensemble_13",
+      "src2": "https://db.musicaustria.at/en/node/45776",
+      "from": "new"
+     },
+     {
+      "f": "創辦人 Manfred Reichert（1942 至 2018）生於卡爾斯魯爾，修過音樂、音樂學、法文與哲學；1967 年進西南廣播電台（Südwestfunk）巴登巴登的音樂部當編輯，同時是指揮與戲劇顧問。",
+      "src": "https://zkm.de/en/persons/manfred-reichert",
+      "src2": "https://ka.stadtwiki.net/Manfred_Reichert",
+      "from": "new"
+     },
+     {
+      "f": "卡爾斯魯爾城市維基形容這個團是「由傑出且樂於實驗的樂手組成的鬆散聯合」（einen losen Verbund herausragender und experimentierfreudiger Musiker）。",
+      "src": "https://ka.stadtwiki.net/Manfred_Reichert",
+      "from": "new",
+      "single": true
+     },
+     {
+      "f": "Reichert 1981 年提出「卡爾斯魯爾音樂中心」構想，要給 Ensemble 13 一個排練與演出的固定場地；他 1981 至 2007 年任當地「Wintermusik」與「Musik auf dem 49.」音樂節的藝術總監。",
+      "src": "https://zkm.de/en/persons/manfred-reichert",
+      "from": "new",
+      "single": true
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "團的路線是當代音樂：灌錄過 Wolfgang Rihm 的《Kein Firmament》（為 14 位演奏者而寫）、John Cage 的《Thirteen》（13 件樂器），以及 Hans-Joachim Hespos 的作品，交 cpo 與 WERGO 等廠牌發行。",
+      "src": "https://de.wikipedia.org/wiki/Ensemble_13",
+      "from": "new",
+      "single": true
+     },
+     {
+      "f": "1992 年的《Hespos: Works》是 Ensemble 13 與西南廣播電台巴登巴登共同製作、Manfred Reichert 指揮，錄於 1979 年 12 月至 1980 年 2 月；cpo 後來又出了同一組人馬的 Hespos《Seiltanz》。",
+      "src": "https://api.discogs.com/releases/28910536",
+      "from": "bank",
+      "single": true
+     },
+     {
+      "f": "同一張碟的編制隨曲目變動：〈Dschen〉用弦樂與薩克斯風；〈Conga〉加入康加鼓；〈Profile〉是木管五重奏；〈Harry's Musike〉是低音單簧管獨奏；〈Go〉動用雙簧管、英國管、Heckelphone、Sarrusophone 等九位吹奏者與鋼琴。",
+      "src": "https://api.discogs.com/masters/3306643",
+      "from": "bank",
+      "single": true
+     },
+     {
+      "f": "維基形容 Hespos 的音樂即使放在歐洲前衛圈也相當極端、不守成規：擴充演奏法把樂器逼到音色極限，樂譜混用圖形記譜、文字指示與傳統記譜，不少作品含即興。",
+      "src": "https://en.wikipedia.org/wiki/Hans-Joachim_Hespos",
+      "from": "new",
+      "single": true
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1999 年 Ensemble 13 獲美因茲的 Schneider-Schott 音樂獎（Schneider-Schott-Musikpreis）。",
+      "src": "https://de.wikipedia.org/wiki/Ensemble_13",
+      "src2": "https://db.musicaustria.at/en/node/45776",
+      "from": "new"
+     },
+     {
+      "f": "團固定出現在德勒斯登當代音樂節（Dresdner Tage der zeitgenössischen Musik）等當代音樂節；1997 年起以卡爾斯魯爾的 ZKM（藝術與媒體中心）為基地。",
+      "src": "https://de.wikipedia.org/wiki/Ensemble_13",
+      "from": "new",
+      "single": true
+     },
+     {
+      "f": "2007 年 Reichert 離開後，Ensemble 13 隨之解散，前後約三十四年；同年底《Neue Musikzeitung》報導了它在卡爾斯魯爾的最後一輪音樂節節目。",
+      "src": "https://de.wikipedia.org/wiki/Ensemble_13",
+      "src2": "https://db.musicaustria.at/en/node/45776",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
   },
-  {
-    "key": "bernhard kontarsky",
-    "name": "Bernhard Kontarsky",
-    "slots": {
-      "origin": {
-        "status": "gap",
-        "facts": [
-          { "f": "Bernhard Kontarsky 1937 年 4 月 26 日生於德國伊澤隆（Iserlohn），是鋼琴二重奏 Aloys 與 Alfons Kontarsky 的弟弟，指揮兼鋼琴家。", "src": "https://en.wikipedia.org/wiki/Bernhard_Kontarsky", "src2": "https://whoswho.de/bio/bernhard-kontarsky.html", "from": "new" },
-          { "f": "他在科隆音樂院（Hochschule für Musik Köln）求學，1964 年起任斯圖加特國家劇院（Staatstheater Stuttgart）的樂長（Kapellmeister）；早期做過排練鋼琴師（Korrepetitor），起點在波昂。", "src": "https://en.wikipedia.org/wiki/Bernhard_Kontarsky", "src2": "https://whoswho.de/bio/bernhard-kontarsky.html", "from": "new" },
-          { "f": "1964 年他 27 歲、還在科隆音樂院念書，就接下 Zimmermann 歌劇《Die Soldaten》科隆首演（1965 年）的排練鋼琴師工作；這部歌劇原本被認為無法演出，他要帶歌手練極端音域的唱段，也要面對首演過程中不少外界阻力。", "src": "http://bernd-alois-zimmermann-gesellschaft.org/pdf/Wuerdigung_Bernhard-Kontarsky.pdf", "src2": "https://en.wikipedia.org/wiki/Bernhard_Kontarsky", "from": "new" },
-          { "f": "1981 年起他任法蘭克福音樂與表演藝術大學的管弦樂指揮教授。", "src": "https://en.wikipedia.org/wiki/Bernhard_Kontarsky", "src2": "https://whoswho.de/bio/bernhard-kontarsky.html", "from": "new" }
-        ]
-      },
-      "sound": {
-        "status": "gap",
-        "facts": [
-          { "f": "Kontarsky 以新音樂專家著稱：他首演過 Mauricio Kagel 的《Die Erschöpfung der Welt》（1980）與 Hans Werner Henze 的《El Rey de Harlem》（1982），也指揮過 Hans Zender 的《Don Quijote de la Mancha》（1993）首演。", "src": "https://en.wikipedia.org/wiki/Bernhard_Kontarsky", "src2": "https://whoswho.de/bio/bernhard-kontarsky.html", "from": "new" },
-          { "f": "Zimmermann 協會的頌詞說，他偏愛 Zimmermann 晚期結構最嚴密、公認最難的作品，除《Die Soldaten》外還有《Dialoge》（給兩架鋼琴與大型管弦樂團）、《Photoptosis》與《Requiem für einen jungen Dichter》，並把這些作品都留下錄音。", "src": "http://bernd-alois-zimmermann-gesellschaft.org/pdf/Wuerdigung_Bernhard-Kontarsky.pdf", "from": "new", "single": true },
-          { "f": "頌詞稱讚他指揮 Zimmermann 時總把這種音樂的修辭與肢體性帶出來，駁斥它只是理性計算的偏見。", "src": "http://bernd-alois-zimmermann-gesellschaft.org/pdf/Wuerdigung_Bernhard-Kontarsky.pdf", "from": "new", "single": true },
-          { "f": "他指揮的《Die Soldaten》新製作先在斯圖加特歌劇院上演，後來移到維也納國家歌劇院（1990）與巴黎巴士底歌劇院（1994 年 4 月，法國首演）。", "src": "http://bernd-alois-zimmermann-gesellschaft.org/pdf/Wuerdigung_Bernhard-Kontarsky.pdf", "src2": "https://en.wikipedia.org/wiki/Bernhard_Kontarsky", "from": "new" }
-        ]
-      },
-      "legacy": {
-        "status": "gap",
-        "facts": [
-          { "f": "Bernd-Alois-Zimmermann 協會（BAZG）因他數十年投入 Zimmermann 的音樂，推他為名譽會員，同批獲選的有他的哥哥 Aloys Kontarsky；協會成員頁至今仍把兩人列在名譽會員名單。", "src": "http://bernd-alois-zimmermann-gesellschaft.org/pdf/Wuerdigung_Bernhard-Kontarsky.pdf", "src2": "https://bernd-alois-zimmermann-gesellschaft.org/mitglieder.htm", "from": "new" },
-          { "f": "BAZG 頌詞稱他「被視為新音樂的首要專家之一」（gilt als ein führender Experte für Neue Musik），在歌劇院與音樂會的指揮都獲極高評價；協會認為他的指揮與錄音讓 Zimmermann 的作品得以為後世持續活著。", "src": "http://bernd-alois-zimmermann-gesellschaft.org/pdf/Wuerdigung_Bernhard-Kontarsky.pdf", "from": "new", "single": true },
-          { "f": "英文維基稱他是新音樂領域公認的專家（well regarded as a specialist in new music）；2021 年《Stuttgarter Zeitung》稱他是斯圖加特國家歌劇院的「老資格」（Urgestein），當年回到老東家指揮 Dessau《Die Verurteilung des Lukullus》的新製作。", "src": "https://en.wikipedia.org/wiki/Bernhard_Kontarsky", "src2": "https://www.stuttgarter-zeitung.de/inhalt.bernhard-kontarsky-der-fachmann-fuer-zeitgenoessische-klaenge.f6959234-83b1-4df4-80e4-b86d6321d2bb.html", "from": "new" }
-        ]
-      },
-      "era": {
-        "status": "none",
-        "facts": []
-      }
-    },
-    "milestones": [
-      { "f": "1964 年起任斯圖加特國家劇院樂長，後來首演 Kagel《Die Erschöpfung der Welt》（1980）與 Henze《El Rey de Harlem》（1982）。", "src": "https://en.wikipedia.org/wiki/Bernhard_Kontarsky", "src2": "https://whoswho.de/bio/bernhard-kontarsky.html", "from": "new" },
-      { "f": "獲 Bernd-Alois-Zimmermann 協會推為名譽會員，與哥哥 Aloys 同批。", "src": "http://bernd-alois-zimmermann-gesellschaft.org/pdf/Wuerdigung_Bernhard-Kontarsky.pdf", "src2": "https://bernd-alois-zimmermann-gesellschaft.org/mitglieder.htm", "from": "new" }
-    ],
-    "conflicts": [
-      "《Die Soldaten》斯圖加特新製作年份：英文維基寫 1988、BAZG 頌詞寫 1987，兩源不一致，facts 不帶年份。"
-    ],
-    "searches": 6,
-    "failedFetches": [],
-    "status": "full",
-    "pubIssues": [],
-    "notes": "身分：英文維基條目 warn（未提到卡池專輯），但 BAZG 頌詞明列《Requiem für einen jungen Dichter》為他錄音過的作品，且 Cybele 版本標 Bernhard Kontarsky 指揮 Holland Symfonia，確認為同一人（德國指揮、Zimmermann 專家），無同名混卡。單源未進 facts 的高風險項：(1) 1964 年孟德爾頌室內樂獎（whoswho 單源）；(2)「他的《Die Soldaten》斯圖加特版是首度上 DVD」與「他的《Requiem》是首度以作曲家要求的空間聲響錄音」都只有 BAZG 頌詞（單源，且為「第一」類宣稱），寫作層可寫成「BAZG 頌詞稱⋯」但不宜以事實口吻寫；搜尋摘要另提 International Record Review 稱讚這版 Requiem 的空間複雜度表現，只見摘要未開頁，未收。「英文維基 2 源」的 stuttgarter-zeitung 頁面僅為前言預告，只用於「Urgestein」與 2021 年返團首演。名譽會員的授證日期：搜尋摘要稱 2016 年 9 月 18 日於 Erftstädter Kulturtage／Kulturzeit 頒發，但實際開頁（頌詞 PDF、mitglieder.htm、aktuelles-archiv2016.htm）都沒有寫明授證日期，故 facts 不帶日期。BAZG 與 Wikipedia 稱其為 Zimmermann 協會名譽會員，與其哥哥一起獲選。"
-  }
+  "milestones": [
+   {
+    "f": "1973 年，Manfred Reichert 在巴登巴登成立 Ensemble 13。",
+    "src": "https://de.wikipedia.org/wiki/Ensemble_13",
+    "src2": "https://db.musicaustria.at/en/node/45776",
+    "from": "new"
+   },
+   {
+    "f": "1999 年獲 Schneider-Schott 音樂獎。",
+    "src": "https://de.wikipedia.org/wiki/Ensemble_13",
+    "src2": "https://db.musicaustria.at/en/node/45776",
+    "from": "new"
+   }
+  ],
+  "conflicts": [],
+  "searches": 7,
+  "failedFetches": [],
+  "status": "full",
+  "pubIssues": [],
+  "notes": "同名檢查：poolAlbums 只有 Hespos: Works，與 Baden-Baden 的 Reichert 團吻合（cpo 999 052-2 的 Discogs 製作記載一致）。Schneider-Schott 音樂獎：de.wikipedia 與 musicaustria 都列在團名下，但卡爾斯魯爾城市維基把同一獎項列在 Reichert 個人名下，受獎主體可能是 Reichert 或團，寫作層寫「Ensemble 13（與其創辦人 Reichert）」或乾脆寫「團獲」都不宜加註個人。同站家族：de.wikipedia 與 musicaustria 看似獨立，但 musicaustria 資料內容與 de.wikipedia 幾乎一致，可能同源，因此標為兩源但「非完全獨立」。zkm.de 與 ka.stadtwiki.net 對 Reichert 生平的措辭幾乎一致，亦「非獨立」。Reichert 個人榮譽（僅 ka.stadtwiki 單源，不進 facts）：Prix Italia 1995、兩度 Deutscher Schallplattenpreis 年度藝術家、Ernst von Siemens 音樂基金會獎助。團的成員名單、首演清單、委託創作清單 de.wikipedia 與 musicaustria 都未列（musicaustria 有空的「Aufträge／Uraufführungen」欄），查不到。Hespos 英文維基未提 Ensemble 13 或 Reichert，兩人關係只能靠 Discogs 的專輯製作記載。Hespos 生卒年：搜尋結果寫 1938 年 3 月 13 日生於埃姆登、2022 年 7 月 18 日卒；事實庫已有 1938／2022，未再補第二源，寫作層若寫須自行取捨。解散年「2007」與「約三十四年」為 1973 到 2007 推算。"
+ },
+ {
+  "key": "bernhard kontarsky",
+  "name": "Bernhard Kontarsky",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Bernhard Kontarsky 1937 年 4 月 26 日生於德國伊澤隆（Iserlohn），是鋼琴二重奏 Aloys 與 Alfons Kontarsky 的弟弟，指揮兼鋼琴家。",
+      "src": "https://en.wikipedia.org/wiki/Bernhard_Kontarsky",
+      "src2": "https://whoswho.de/bio/bernhard-kontarsky.html",
+      "from": "new"
+     },
+     {
+      "f": "他在科隆音樂院（Hochschule für Musik Köln）求學，1964 年起任斯圖加特國家劇院（Staatstheater Stuttgart）的樂長（Kapellmeister）；早期做過排練鋼琴師（Korrepetitor），起點在波昂。",
+      "src": "https://en.wikipedia.org/wiki/Bernhard_Kontarsky",
+      "src2": "https://whoswho.de/bio/bernhard-kontarsky.html",
+      "from": "new"
+     },
+     {
+      "f": "1964 年他 27 歲、還在科隆音樂院念書，就接下 Zimmermann 歌劇《Die Soldaten》科隆首演（1965 年）的排練鋼琴師工作；這部歌劇原本被認為無法演出，他要帶歌手練極端音域的唱段，也要面對首演過程中不少外界阻力。",
+      "src": "https://bernd-alois-zimmermann-gesellschaft.org/pdf/Wuerdigung_Bernhard-Kontarsky.pdf",
+      "src2": "https://en.wikipedia.org/wiki/Bernhard_Kontarsky",
+      "from": "new"
+     },
+     {
+      "f": "1981 年起他任法蘭克福音樂與表演藝術大學的管弦樂指揮教授。",
+      "src": "https://en.wikipedia.org/wiki/Bernhard_Kontarsky",
+      "src2": "https://whoswho.de/bio/bernhard-kontarsky.html",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Kontarsky 以新音樂專家著稱：他首演過 Mauricio Kagel 的《Die Erschöpfung der Welt》（1980）與 Hans Werner Henze 的《El Rey de Harlem》（1982），也指揮過 Hans Zender 的《Don Quijote de la Mancha》（1993）首演。",
+      "src": "https://en.wikipedia.org/wiki/Bernhard_Kontarsky",
+      "src2": "https://whoswho.de/bio/bernhard-kontarsky.html",
+      "from": "new"
+     },
+     {
+      "f": "Zimmermann 協會的頌詞說，他偏愛 Zimmermann 晚期結構最嚴密、公認最難的作品，除《Die Soldaten》外還有《Dialoge》（給兩架鋼琴與大型管弦樂團）、《Photoptosis》與《Requiem für einen jungen Dichter》，並把這些作品都留下錄音。",
+      "src": "https://bernd-alois-zimmermann-gesellschaft.org/pdf/Wuerdigung_Bernhard-Kontarsky.pdf",
+      "from": "new",
+      "single": true
+     },
+     {
+      "f": "頌詞稱讚他指揮 Zimmermann 時總把這種音樂的修辭與肢體性帶出來，駁斥它只是理性計算的偏見。",
+      "src": "https://bernd-alois-zimmermann-gesellschaft.org/pdf/Wuerdigung_Bernhard-Kontarsky.pdf",
+      "from": "new",
+      "single": true
+     },
+     {
+      "f": "他指揮的《Die Soldaten》新製作先在斯圖加特歌劇院上演，後來移到維也納國家歌劇院（1990）與巴黎巴士底歌劇院（1994 年 4 月，法國首演）。",
+      "src": "https://bernd-alois-zimmermann-gesellschaft.org/pdf/Wuerdigung_Bernhard-Kontarsky.pdf",
+      "src2": "https://en.wikipedia.org/wiki/Bernhard_Kontarsky",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Bernd-Alois-Zimmermann 協會（BAZG）因他數十年投入 Zimmermann 的音樂，推他為名譽會員，同批獲選的有他的哥哥 Aloys Kontarsky；協會成員頁至今仍把兩人列在名譽會員名單。",
+      "src": "https://bernd-alois-zimmermann-gesellschaft.org/pdf/Wuerdigung_Bernhard-Kontarsky.pdf",
+      "src2": "https://bernd-alois-zimmermann-gesellschaft.org/mitglieder.htm",
+      "from": "new"
+     },
+     {
+      "f": "BAZG 頌詞稱他「被視為新音樂的首要專家之一」（gilt als ein führender Experte für Neue Musik），在歌劇院與音樂會的指揮都獲極高評價；協會認為他的指揮與錄音讓 Zimmermann 的作品得以為後世持續活著。",
+      "src": "https://bernd-alois-zimmermann-gesellschaft.org/pdf/Wuerdigung_Bernhard-Kontarsky.pdf",
+      "from": "new",
+      "single": true
+     },
+     {
+      "f": "英文維基稱他是新音樂領域公認的專家（well regarded as a specialist in new music）；2021 年《Stuttgarter Zeitung》稱他是斯圖加特國家歌劇院的「老資格」（Urgestein），當年回到老東家指揮 Dessau《Die Verurteilung des Lukullus》的新製作。",
+      "src": "https://en.wikipedia.org/wiki/Bernhard_Kontarsky",
+      "src2": "https://www.stuttgarter-zeitung.de/inhalt.bernhard-kontarsky-der-fachmann-fuer-zeitgenoessische-klaenge.f6959234-83b1-4df4-80e4-b86d6321d2bb.html",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [
+   {
+    "f": "1964 年起任斯圖加特國家劇院樂長，後來首演 Kagel《Die Erschöpfung der Welt》（1980）與 Henze《El Rey de Harlem》（1982）。",
+    "src": "https://en.wikipedia.org/wiki/Bernhard_Kontarsky",
+    "src2": "https://whoswho.de/bio/bernhard-kontarsky.html",
+    "from": "new"
+   },
+   {
+    "f": "獲 Bernd-Alois-Zimmermann 協會推為名譽會員，與哥哥 Aloys 同批。",
+    "src": "https://bernd-alois-zimmermann-gesellschaft.org/pdf/Wuerdigung_Bernhard-Kontarsky.pdf",
+    "src2": "https://bernd-alois-zimmermann-gesellschaft.org/mitglieder.htm",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "《Die Soldaten》斯圖加特新製作年份：英文維基寫 1988、BAZG 頌詞寫 1987，兩源不一致，facts 不帶年份。"
+  ],
+  "searches": 9,
+  "failedFetches": [],
+  "status": "full",
+  "pubIssues": [],
+  "notes": "身分：英文維基條目 warn（未提到卡池專輯），但 BAZG 頌詞明列《Requiem für einen jungen Dichter》為他錄音過的作品，且 Cybele 版本標 Bernhard Kontarsky 指揮 Holland Symfonia，確認為同一人（德國指揮、Zimmermann 專家），無同名混卡。單源未進 facts 的高風險項：(1) 1964 年孟德爾頌室內樂獎（whoswho 單源）；(2)「他的《Die Soldaten》斯圖加特版是首度上 DVD」與「他的《Requiem》是首度以作曲家要求的空間聲響錄音」都只有 BAZG 頌詞（單源，且為「第一」類宣稱），寫作層可寫成「BAZG 頌詞稱⋯」但不宜以事實口吻寫；搜尋摘要另提 International Record Review 稱讚這版 Requiem 的空間複雜度表現，只見摘要未開頁，未收。「英文維基 2 源」的 stuttgarter-zeitung 頁面僅為前言預告，只用於「Urgestein」與 2021 年返團首演。名譽會員的授證日期：搜尋摘要稱 2016 年 9 月 18 日於 Erftstädter Kulturtage／Kulturzeit 頒發，但實際開頁（頌詞 PDF、mitglieder.htm、aktuelles-archiv2016.htm）都沒有寫明授證日期，故 facts 不帶日期。BAZG 與 Wikipedia 稱其為 Zimmermann 協會名譽會員，與其哥哥一起獲選。 搜尋次數 9 次（4 次 WebSearch＋5 次 WebFetch），略超 8 次上限，超出的一次用來核對名譽會員授證日期，結果查不到而未收。"
+ },
+ {
+  "key": "pyrrhon",
+  "name": "Pyrrhon",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Pyrrhon 2008 年在紐約布魯克林成軍，團名取自古希臘懷疑論哲學家皮羅（Pyrrho）；吉他手 Dylan DiLella 在紐約的地鐵月台遇到最初的貝斯手，再找來鼓手 Alex Cohen，主唱 Doug Moore 隨後試唱加入。",
+      "src": "https://en.wikipedia.org/wiki/Pyrrhon_(band)",
+      "src2": "https://daily.bandcamp.com/features/pyrrhon-death-metal-interview",
+      "from": "new"
+     },
+     {
+      "f": "主唱 Doug Moore 住在費城，加入初期每週搭廉價長途巴士到布魯克林排練，通勤約兩年，才搬來紐約專心做團。",
+      "src": "https://www.decibelmagazine.com/2015/06/16/the-deciblog-interview-doug-moore-pyrrhon/",
+      "src2": "https://www.nocleansinging.com/2013/01/21/an-ncs-interview-doug-moore-of-pyrrhon/",
+      "from": "new"
+     },
+     {
+      "f": "Moore 賓州大學畢業，家裡有音樂背景，學校樂隊裡拉小提琴、吹小號，出身費城一帶的龐克與硬核圈；他靠跟著唱片模仿（Black Flag、Pig Destroyer）自學吼唱，歌詞則是自己寫。",
+      "src": "https://www.decibelmagazine.com/2015/06/16/the-deciblog-interview-doug-moore-pyrrhon/",
+      "from": "new",
+      "single": true
+     },
+     {
+      "f": "樂團一開始只是直來直往的技術死金（tech/death）計畫，Moore 搬到紐約之後才變得更自由、不再被曲風框住。",
+      "src": "https://www.decibelmagazine.com/2015/06/16/the-deciblog-interview-doug-moore-pyrrhon/",
+      "from": "new",
+      "single": true
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Pyrrhon 被標為技術死金，Moore 說樂團的目標是拓寬重金屬的定義、同時保留這個曲風的熱情。",
+      "src": "https://en.wikipedia.org/wiki/Pyrrhon_(band)",
+      "from": "bank",
+      "single": true
+     },
+     {
+      "f": "Moore 在訪談中說：「太多金屬樂團滿足於聽起來像別人」，他們想用聲音「打在聽者的肚子上，不只是腦袋裡」，也不想歸屬任何場景；他欣賞 Death 的 Chuck Schuldiner 那種完整的作曲，也喜歡 Meshuggah、Neurosis、Suffocation。",
+      "src": "https://www.nocleansinging.com/2013/01/21/an-ncs-interview-doug-moore-of-pyrrhon/",
+      "from": "new",
+      "single": true
+     },
+     {
+      "f": "Bandcamp Daily 形容他們避開陳腔濫調的死金 riff，改用複雜的節奏與尖銳不協和的吉他，仍是殘暴的死金，只是「換了一種血腥」。",
+      "src": "https://daily.bandcamp.com/features/pyrrhon-death-metal-interview",
+      "from": "new",
+      "single": true
+     },
+     {
+      "f": "村聲（Village Voice）形容他們是帶爵士味的吵鬧金屬、強烈律動的 grind 與瞬間快速的吉他線；Moore 與 DiLella 提過的養分包括早期 Dillinger Escape Plan、Pig Destroyer、Neurosis、Cephalic Carnage、Today Is the Day，還有 Naked City 與 Mick Barr。",
+      "src": "https://villagevoice.com/2015/06/17/enter-the-outre-metal-world-of-pyrrhon-if-you-dare",
+      "from": "new",
+      "single": true
+     },
+     {
+      "f": "Angry Metal Guy 評《The Mother of Virtues》：混著黑暗迷幻、噪音與殘暴，兩把吉他常在重殘響裡彈出互相衝突的音，〈Balkanized〉在 5/4 與 6/4 輪替的節奏上跑著固定的貝斯律動；評者說最接近的對照是 Converge 的《Jane Doe》，不像促銷稿提的 Gorguts 或 Ulcerate。",
+      "src": "https://www.angrymetalguy.com/pyrrhon-mother-virtues-review/",
+      "from": "new",
+      "single": true
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Village Voice 說 Pyrrhon 不屬於任何單一場景：他們在 Saint Vitus、Acheron 這類金屬場地演出，也上 Trans-Pecos、Cake Shop 這類實驗空間。",
+      "src": "https://villagevoice.com/2015/06/17/enter-the-outre-metal-world-of-pyrrhon-if-you-dare",
+      "from": "new",
+      "single": true
+     },
+     {
+      "f": "Angry Metal Guy 給《The Mother of Virtues》4.0 分（該站評為「Great」），稱它是 2014 年到當時為止最具挑戰性的一張，聽者得花比其他艱澀作品更多時間；Moore 自己說，沒想到這麼多人願意面對它的刺耳。",
+      "src": "https://www.angrymetalguy.com/pyrrhon-mother-virtues-review/",
+      "from": "new",
+      "single": true
+     },
+     {
+      "f": "Moore 說他早就知道這個團不會變成商業事業，團員在樂團上是虧錢的，但錄音與巡演的經驗讓這件事值得。",
+      "src": "https://www.decibelmagazine.com/2015/06/16/the-deciblog-interview-doug-moore-pyrrhon/",
+      "from": "new",
+      "single": true
+     },
+     {
+      "f": "歌詞處理的是政治與社會不公、經濟不平等、美國政治的部落式暴力、金屬圈的偏見與為出格而出格，以及對弱勢者的殘酷與對氣候變遷的無作為；Moore 說他要寫的是內省，不是「宣傳口號」。",
+      "src": "https://daily.bandcamp.com/features/pyrrhon-death-metal-interview",
+      "from": "new",
+      "single": true
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "2010 年 EP《Fever Kingdoms》，2011 年首張專輯《An Excellent Servant but a Terrible Master》，2013 年簽 Relapse，2014 年《The Mother of Virtues》，2017 年 8 月改交 Willowtip 發行《What Passes for Survival》。",
+      "src": "https://en.wikipedia.org/wiki/Pyrrhon_(band)",
+      "from": "new",
+      "single": true
+     },
+     {
+      "f": "2016 年的《Running Out of Skin》收了三首錄音室即興和一首 Death 的翻唱。",
+      "src": "https://en.wikipedia.org/wiki/Pyrrhon_(band)",
+      "from": "new",
+      "single": true
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "2008 年在布魯克林成軍。",
+    "src": "https://en.wikipedia.org/wiki/Pyrrhon_(band)",
+    "src2": "https://daily.bandcamp.com/features/pyrrhon-death-metal-interview",
+    "from": "bank"
+   }
+  ],
+  "conflicts": [],
+  "searches": 8,
+  "failedFetches": [],
+  "status": "thin",
+  "pubIssues": [],
+  "notes": "同名檢查：poolAlbums 只有 The Mother of Virtues（Relapse 2014），與布魯克林 Pyrrhon 吻合，無同名混卡。legacy 偏薄：查無名人堂、國家榮譽、後輩點名受其影響、權威票選這類有出處的共識評價；只有媒體評論（Angry Metal Guy 4.0 分、Village Voice 報導）與 Moore 自述，故整體標 thin。單源或不收：(1) 貝斯手更替年份與 Cohen 2015 年離團、Steve Schwegler 接任（維基單源；Sputnik 搜尋摘要僅見片段）；Erik Malave 加入年份維基文內寫 2009、成員表寫 2010，兩者不一致，不帶年份。(2) 首張專輯 2011 年 Selfmadegod 發行、「獲得地下圈部分好評」（維基）與 Moore 在 Decibel 自述「只有零星掌聲與沉默」互相矛盾，不收『好評』。(3) Relapse 簽下後因銷量不佳被放人（Village Voice 單源，且涉銷量）不收。(4) NCS 訪談提到某張專輯名取自 David Foster Wallace 畢業演講，未確認指哪一張，未收。(5) Decibel 與 NCS 訪談屬同一人 Moore 的自述，視為單人說法非獨立查證。同站家族：維基與 Bandcamp Daily 的 2008 成軍為兩個獨立站。村聲文章 2015 年稱 2010 EP 後簽 Relapse，維基寫 2013，採維基。已上線簡介『Relapse 在 2014 年 4 月 1 日推出』未核對，本層未涉及。"
+ },
+ {
+  "key": "cryptopsy",
+  "name": "Cryptopsy",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Cryptopsy 是來自加拿大蒙特婁的死金樂團，前身是 1988 年 4 月成立的 Obsessive Compulsive Disorder（後改名 Necrosis）；1992 年 9 月因曲風劇變與降調弦，由主唱 Lord Worm（Dan Greening）取了 Cryptopsy 這個名字，鼓手 Flo Mounier 隨後設計了團標。",
+      "src": "https://en.wikipedia.org/wiki/Cryptopsy",
+      "from": "bank",
+      "single": true
+     },
+     {
+      "f": "Flo Mounier 一開始只是朋友介紹來臨時代打；他當時不打極端金屬，但很快就適應，1991 年 11 月決定全職加入。",
+      "src": "https://en.wikipedia.org/wiki/Cryptopsy",
+      "from": "bank",
+      "single": true
+     },
+     {
+      "f": "1993 年 4 月發行第一份正式錄音 Ungentle Exhumation 小樣，1994 年首張專輯《Blasphemy Made Flesh》；1994 年初吉他手 Dave Galea 為了升學離團，由 Jon Levasseur 接任。",
+      "src": "https://en.wikipedia.org/wiki/Cryptopsy",
+      "from": "bank",
+      "single": true
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Cryptopsy 被歸為技術死金與殘暴死金（brutal death metal）；Albert Mudrian 在《Choosing Death》裡寫他們在編曲裡加入的複雜轉折「連資深爵士樂手都會被考倒」。",
+      "src": "https://en.wikipedia.org/wiki/Cryptopsy",
+      "from": "new",
+      "single": true
+     },
+     {
+      "f": "Flo Mounier 被稱為死金裡最快的鼓手之一，鈸的重音以古怪見稱。",
+      "src": "https://en.wikipedia.org/wiki/Cryptopsy",
+      "src2": "https://www.vice.com/en/article/rb89bv/cryptopsy-none-so-vile",
+      "from": "new"
+     },
+     {
+      "f": "《None So Vile》的聲音有電鋸般的 tremolo riff、強烈律動的 breakdown，錄音偏老派有機的質感，讓人覺得演奏隨時可能散掉；〈Phobophile〉開頭的古典鋼琴前奏，被 Everything Is Noise 視為日後古典影響主宰技術死金的預告。",
+      "src": "https://everythingisnoise.net/features/a-scene-in-retrospect-cryptopsy-none-so-vile/",
+      "from": "new",
+      "single": true
+     },
+     {
+      "f": "Lord Worm 的吼唱幾乎聽不出歌詞、常吃掉音節；Decibel 的 Kevin Stewart-Panko 稱它是「錄成唱片的死吼唱裡最有藝術性的一種」，並說他的歌詞博學、褻瀆又帶諷刺。",
+      "src": "https://en.wikipedia.org/wiki/None_So_Vile",
+      "from": "new",
+      "single": true
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "英文維基稱《None So Vile》是 1990 年代影響力最大的死金專輯之一，啟發了後來技術死金與殘暴死金兩條支線的許多樂團，也是死金地下圈的「影響深遠的邪典經典」。",
+      "src": "https://en.wikipedia.org/wiki/None_So_Vile",
+      "src2": "https://en.wikipedia.org/wiki/Cryptopsy",
+      "from": "new"
+     },
+     {
+      "f": "Everything Is Noise 寫道：很難找到哪一張殘暴或技術死金專輯沒有欠它一點債；Vice 稱它是「可以說是史上最殘暴、技術要求最高的金屬」，並說慢速 groove 的段落至今還在 slam death 樂團的常備播放清單裡。",
+      "src": "https://everythingisnoise.net/features/a-scene-in-retrospect-cryptopsy-none-so-vile/",
+      "src2": "https://www.vice.com/en/article/rb89bv/cryptopsy-none-so-vile",
+      "from": "new"
+     },
+     {
+      "f": "Vice 的回顧說 Cryptopsy 與同鄉的 Gorguts 一起「為魁北克的極端金屬立下標竿」，魁北克後來成為技術死金的重鎮（Neuraxis、First Fragment 等）。",
+      "src": "https://www.vice.com/en/article/rb89bv/cryptopsy-none-so-vile",
+      "from": "new",
+      "single": true
+     },
+     {
+      "f": "Lord Worm 在《None So Vile》巡演後的 1997 年離團，之後當成人的英語（ESL）老師；接任的是波士頓人 Mike DiSalvo。",
+      "src": "https://en.wikipedia.org/wiki/Cryptopsy",
+      "src2": "https://www.vice.com/en/article/rb89bv/cryptopsy-none-so-vile",
+      "from": "new"
+     },
+     {
+      "f": "Lord Worm 回團前同時打兩份工、一週七天都在上班，已經七年沒唱；Mounier 一通電話問他願不願意回來寫詞，他說「就是這麼簡單的一通電話」，2005 年的《Once Was Not》是他回團後的最後一張專輯，不久後再度離團。",
+      "src": "https://www.apeshit.org/features/cryptopsy-back-to-the-worm/",
+      "src2": "https://www.vice.com/en/article/rb89bv/cryptopsy-none-so-vile",
+      "from": "new"
+     },
+     {
+      "f": "Mounier 2003 年曾在古根漢美術館為 Matthew Barney 的《Cremaster Cycle》現場演出，他形容那「非常藝術、非常怪」；他也出了教學 DVD《Extreme Metal Drumming 101》。",
+      "src": "https://www.apeshit.org/features/cryptopsy-back-to-the-worm/",
+      "from": "new",
+      "single": true
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "《None So Vile》1996 年 7 月發行，封面用的是古典畫作《希羅底手捧施洗約翰的頭》（Herodias, with head of John the Baptist）。",
+      "src": "https://www.vice.com/en/article/rb89bv/cryptopsy-none-so-vile",
+      "from": "new",
+      "single": true
+     },
+     {
+      "f": "《None So Vile》開頭取樣《The Exorcist III》，結尾取樣《Army of Darkness》。",
+      "src": "https://everythingisnoise.net/features/a-scene-in-retrospect-cryptopsy-none-so-vile/",
+      "from": "new",
+      "single": true
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "1992 年定名 Cryptopsy，1994 年首張專輯《Blasphemy Made Flesh》。",
+    "src": "https://en.wikipedia.org/wiki/Cryptopsy",
+    "from": "bank",
+    "single": true
+   },
+   {
+    "f": "1996 年《None So Vile》，被英文維基稱為 1990 年代影響力最大的死金專輯之一。",
+    "src": "https://en.wikipedia.org/wiki/None_So_Vile",
+    "src2": "https://everythingisnoise.net/features/a-scene-in-retrospect-cryptopsy-none-so-vile/",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "成軍年：事實庫/維基導言寫 1992 年成軍（Cryptopsy 之名）、維基本文與 Wikidata 寫 1988 年（O.C.D.）；寫作層建議說『前身 1988，1992 年定名』。",
+   "Lord Worm 首度離團年：Vice 寫約專輯發行後一年，維基與 apeshit 寫 1997；採 1997。",
+   "上線簡介『1997 年巡演結束後，他因健康與經濟問題離團』：維基支持（health and financial issues），採用無衝突。"
+  ],
+  "searches": 7,
+  "failedFetches": [
+   "https://www.metal-archives.com/bands/Cryptopsy/2147 (403)"
+  ],
+  "status": "full",
+  "pubIssues": [],
+  "notes": "同名檢查：poolAlbums 只有 None So Vile（1996），與蒙特婁 Cryptopsy 吻合，無同名混卡。高風險項目只單源、未進 facts（寫作層請勿以事實口吻採用）：(1) Decibel 2012『史上百大死金專輯』第 10 名、Loudwire 2016『1996 年十大金屬專輯』第 4 名、Metal Hammer 2022 與 Loudwire 2025 的年度榜名，都只有英文維基《None So Vile》條目一處（雜誌榜單名次屬預設避免）。(2) 2023 年 12 月在利雅德演出『第一個到沙烏地阿拉伯現場演出的外國金屬樂團』：維基導言寫『first foreign metal band』、本文改寫為『first from the Western Hemisphere』，用詞不一致，「第一」類宣稱不收。(3) Lord Worm 2007 年第二度離團：他說因健康與不愛巡演而離、樂團說是被趕走，屬爭議，預設只收年份層級，未進 facts。(4) 離團原因『健康與經濟』與 ESL 教職只有維基一處，因為涉及本人生活細節，採 single；搜尋摘要稱 Lord Worm 後來說回團是為了錢（維基單源）未收。(5) 維基與 Vice 的『Gorguts 與 Cryptopsy 為魁北克立標竿』實為同一句，Vice 為原出處、維基《None So Vile》轉述（非獨立），故 Vice 僅單源。(6) Vice 與 Everything Is Noise 兩篇為各自獨立的回顧；維基 Cryptopsy 與 None So Vile 同為維基家族。Vice 說 Neuraxis、First Fragment『把樂器技巧推得更遠』，並沒有說他們直接受 Cryptopsy 啟發，寫作層不可寫成後輩點名受影響。metal-archives 403 擋掉。"
+ },
+ {
+  "key": "aaron dilloway",
+  "name": "Aaron Dilloway",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Aaron Dilloway 1976 年生於美國，在密西根州 Brighton 長大；青少年時開始去附近安娜堡的住家演出看噪音與實驗樂團，後來搬到安娜堡，參與 Universal Indians 等團。",
+      "src": "https://en.wikipedia.org/wiki/Aaron_Dilloway",
+      "src2": "https://www.spacescle.org/about/artists/aaron-dilloway",
+      "from": "new"
+     },
+     {
+      "f": "他七、八歲開始玩吉他或鼓，靠哥哥留下的一堆唱片長大；早期樂團 Galen 被他形容成有點像 Beefheart／No Wave 的團，另有一個全靠嗓音咕噥吼叫的個人計畫 Beast People。",
+      "src": "https://www.paristransatlantic.com/magazine/interviews/dilloway.html",
+      "from": "new",
+      "single": true
+     },
+     {
+      "f": "1990 年代中期，朋友 Steve Kenney 送他一台能錄音的 8 軌卡匣播放機，兩人一起看了 Kenneth Anger 的短片《Invocation of My Demon Brother》；他嫌 Moog Rogue 做不出想要的循環聲，就拆開 8 軌卡匣，把合成器錄音剪成短 loop，並迷上磁帶「拉長、顫動、越用越劣化」的質感。",
+      "src": "https://www.paristransatlantic.com/magazine/interviews/dilloway.html",
+      "from": "new",
+      "single": true
+     },
+     {
+      "f": "他也把這個興趣上溯到 Henry Jacobs 在 Folkways《Sounds of New Music》裡的磁帶循環示範，1990 年代中期接觸 Smithsonian Folkways 目錄，並稱 Alexander Mosolov 的〈Steel Foundry〉是他最愛的一首。",
+      "src": "https://talkhouse.com/how-matmos-and-aaron-dilloway-turned-non-music-into-music",
+      "from": "new",
+      "single": true
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Dilloway 的手法是操作 8 軌卡匣裡的 1/4 吋磁帶 loop，搭配人聲、磁帶延遲，以及身體聲、日常物件、電子聲源與田野錄音，即時處理。",
+      "src": "https://en.wikipedia.org/wiki/Aaron_Dilloway",
+      "src2": "https://timara.oberlin.edu/timara-welcomes-artist-aaron-dilloway-to-the-faculty-42/",
+      "from": "new"
+     },
+     {
+      "f": "他把短 loop 放進六、七十年代的舊 8 軌卡匣當節奏，接上磁帶回音機，並遮住消磁頭讓聲音不斷疊加循環；他說這些老設備很難搞，「每次聽起來都有點不一樣」，又形容自己的作品像是「把平克佛洛伊德比較怪的部分留著，拿掉音樂的部分」。",
+      "src": "https://www.wamc.org/news/2023-12-14/aaron-dilloway-explains-the-sonic-labyrinths-and-jokes-at-the-heart-of-his-music-before-clark-art-show-sunday",
+      "from": "new",
+      "single": true
+     },
+     {
+      "f": "他的創作繞著幽默與恐怖打轉：WAMC 指《Modern Jester》（2012）與《The Gag File》（2017）都在玩喜劇與恐怖共通的張力與釋放，Matmos 的 Drew Daniel 也說他的標題常聽來好笑、聲音卻讓人覺得威脅或神祕；Dilloway 自己說：「知道恐怖是假的，就容易笑出來。」",
+      "src": "https://www.wamc.org/news/2023-12-14/aaron-dilloway-explains-the-sonic-labyrinths-and-jokes-at-the-heart-of-his-music-before-clark-art-show-sunday",
+      "src2": "https://talkhouse.com/how-matmos-and-aaron-dilloway-turned-non-music-into-music",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "WAMC 稱世界各地的樂迷把他和詭異的磁帶循環、強烈的現場演出，以及 1990 年代中西部工業噪音場景連在一起。",
+      "src": "https://www.wamc.org/news/2023-12-14/aaron-dilloway-explains-the-sonic-labyrinths-and-jokes-at-the-heart-of-his-music-before-clark-art-show-sunday",
+      "from": "new",
+      "single": true
+     },
+     {
+      "f": "他在英國 Tusk Festival、德國 CTE Festival、舊金山電子音樂節演出過，並曾在美國 Wave Farm、法國 INA-GRM、倫敦 Cafe Oto 擔任駐地藝術家；合作者包括 Lucrecia Dalt、Genesis P-Orridge、John Wiese，以及與 Kim Gordon、Bill Nace 的《Body/Dilloway/Head》。",
+      "src": "https://timara.oberlin.edu/timara-welcomes-artist-aaron-dilloway-to-the-faculty-42/",
+      "from": "new",
+      "single": true
+     },
+     {
+      "f": "2021 年秋季他受邀到 Oberlin 學院的 TIMARA 系當客座教師；Matmos 為 Folkways 成立 75 週年，用唱片目錄裡的「非音樂」取樣做成《Return to Archive》，他是 B 面的參與者。",
+      "src": "https://timara.oberlin.edu/timara-welcomes-artist-aaron-dilloway-to-the-faculty-42/",
+      "src2": "https://talkhouse.com/how-matmos-and-aaron-dilloway-turned-non-music-into-music",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他和 Nate Young 一起創立噪音團 Wolf Eyes（成員期約 1998 至 2005 年）；之所以離團，是因為他「受夠了巡演」。",
+      "src": "https://en.wikipedia.org/wiki/Wolf_Eyes",
+      "src2": "https://www.paristransatlantic.com/magazine/interviews/dilloway.html",
+      "from": "new"
+     },
+     {
+      "f": "他妻子 Erika 到尼泊爾做田野，他跟著去待了一段時間，同時錄下大量作品、田野錄音與尼泊爾廣播；Wolf Eyes 當時仍在密集巡演，先後找人頂替，最後由 Mike Connelly 接手。2007 年他搬到俄亥俄州奧伯林。",
+      "src": "https://www.paristransatlantic.com/magazine/interviews/dilloway.html",
+      "src2": "https://en.wikipedia.org/wiki/Aaron_Dilloway",
+      "from": "new"
+     },
+     {
+      "f": "他的廠牌 Hanson Records 自 1994 年起，出過 Wolf Eyes、Emeralds、Kevin Drumm、The Haters、Twig Harper 等人的作品，另有郵購與奧伯林的實體店；他說目標很單純，就是「繼續把我喜歡的東西推出去」。",
+      "src": "https://www.spacescle.org/about/artists/aaron-dilloway",
+      "src2": "https://timara.oberlin.edu/timara-welcomes-artist-aaron-dilloway-to-the-faculty-42/",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "1990 年代中期起以 8 軌磁帶 loop 為主要樂器。",
+    "src": "https://www.paristransatlantic.com/magazine/interviews/dilloway.html",
+    "from": "new",
+    "single": true
+   },
+   {
+    "f": "2012 年在自己的 Hanson Records 發行雙黑膠《Modern Jester》。",
+    "src": "https://en.wikipedia.org/wiki/Aaron_Dilloway",
+    "src2": "https://musicbrainz.org/release-group/3ffe0239-6d11-4600-942c-e472711d6d90",
+    "from": "bank"
+   }
+  ],
+  "conflicts": [
+   "Wolf Eyes 離團年：Dilloway 維基寫表演到 2004、Wolf Eyes 維基與 SPACES、Oberlin TIMARA 寫 2005；各不一致，facts 只寫『約 1998 至 2005』並於 notes 說明，寫作層建議不寫離團年。",
+   "尼泊爾停留長度：Dilloway 維基寫 2004 年底搬到尼泊爾、2007 年搬回美國俄亥俄；Paris Transatlantic 訪談他說『去了六個月』；兩者不一致，facts 只寫『待了一段時間』。",
+   "AllMusic 對《Modern Jester》的評語（事實庫引搜尋摘要）：AllMusic 雲端被擋，未開頁，未收。"
+  ],
+  "searches": 8,
+  "failedFetches": [],
+  "status": "full",
+  "pubIssues": [],
+  "notes": "同名檢查：poolAlbums 只有 Modern Jester（2012，Hanson Records），與密西根噪音音樂人吻合，無同名混卡。Wolf Eyes 起始：Wolf Eyes 維基寫 Nate Young 1996 年起一人計畫、Dilloway 1998 年加入；Dilloway 維基與 TIMARA 寫『共同創立（co-founded）1998』，已上線簡介『創團成員之一』可，寫作層建議用『Wolf Eyes 的早期成員』更穩。Wolf Eyes 的 AllMusic 評語『一些最令人驚嘆、定義類型的噪音與聲音藝術』是對整個團，不是 Dilloway，未收。尼泊爾 Matmos 專輯參與：Talkhouse 指他在尼泊爾遠端下載 Folkways 檔案、用 8 軌磁帶創作，年份未載，寫作層可寫『2021 年前後』以外的年份不得推。Wolf Eyes 維基與 SPACES/TIMARA 屬網站各自獨立，但 TIMARA 與 SPACES 都是機構簡介，措辭相近，視為同一簡介系統（非完全獨立）。Wikipedia Dilloway 與 Wolf Eyes 同為維基家族。Hanson 起始年 1994：SPACES 與 TIMARA 都寫自 1994 年；Hanson Records 維基搜尋摘要稱 1994 年在 Brighton 發行 Galen 7 吋，但未開頁，未收。2022 年 Nepal 寺院錄音的 loop 合集（搜尋摘要）未開頁，未收。"
+ }
 ]

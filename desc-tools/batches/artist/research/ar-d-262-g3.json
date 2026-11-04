@@ -1,280 +1,754 @@
 [
-  {
-    "key": "pan.thy.monium",
-    "name": "Pan.Thy.Monium",
-    "slots": {
-      "origin": { "status": "bank", "facts": [
-        { "f": "Pan.Thy.Monium 是瑞典的前衛金屬團，由 Dan Swanö 組成並主導，成員有數位來自他的另一個計畫 Edge of Sanity。", "src": "https://en.wikipedia.org/wiki/Pan.Thy.Monium", "from": "bank" },
-        { "f": "Robert Karlsson 在團裡擔任人聲，後來接替 Swanö 在 Edge of Sanity 的位置；1992 年首作時成員並未公開真名，以化名署名。", "src": "https://www.spirit-of-metal.com/en/biography/Pan_Thy_Monium/11965", "single": true, "from": "new" }
-      ] },
-      "sound": { "status": "gap", "facts": [
-        { "f": "樂團演的是前衛死亡金屬，編制裡除了吉他、貝斯、鼓，還有鍵盤與薩克斯風；人聲是難以辨識歌詞的死腔。", "src": "https://www.spirit-of-metal.com/en/biography/Pan_Thy_Monium/11965", "single": true, "from": "new" },
-        { "f": "三張專輯被說成講同一個故事：黑暗之神 Raagoonshinnaah 與光明之神 Amaraah 的對戰；樂團原本想把最後一張做成三片裝的拼圖。", "src": "https://en.wikipedia.org/wiki/Pan.Thy.Monium", "single": true, "from": "new" }
-      ] },
-      "legacy": { "status": "none", "facts": [] },
-      "era": { "status": "bank", "facts": [
-        { "f": "樂團 1990 年成軍，1996 年錄完《Khaooohs and Kon-Fus-Ion》後解散，這張是第三張也是最後一張。", "src": "https://en.wikipedia.org/wiki/Pan.Thy.Monium", "src2": "https://www.spirit-of-metal.com/en/biography/Pan_Thy_Monium/11965", "from": "bank" }
-      ] }
-    },
-    "milestones": [],
-    "conflicts": [],
-    "searches": 2,
-    "failedFetches": 1,
-    "status": "thin",
-    "pubIssues": [],
-    "notes": "legacy 查不到有出處的共識評價：搜尋摘要顯示 Progarchives 評者稱其為較早把爵士帶進極端金屬者，但那是單一評者的看法、頁面未開，不收。Dan Swanö 2011 年在 Prog Archives 論壇有訪談，metalmusicarchives 403，未能讀。維基頁面導言未提卡池專輯名稱（warn），但頁面明講最後專輯即 Khaooohs and Kon-Fus-Ion，身分確認無誤。Spirit of Metal 這頁寫 Swanö 1996 年結束計畫，與維基 1996 解散一致，兩源。"
+ {
+  "key": "pan.thy.monium",
+  "name": "Pan.Thy.Monium",
+  "slots": {
+   "origin": {
+    "status": "bank",
+    "facts": [
+     {
+      "f": "Pan.Thy.Monium 是瑞典的前衛金屬團，由 Dan Swanö 組成並主導，成員有數位來自他的另一個計畫 Edge of Sanity。",
+      "src": "https://en.wikipedia.org/wiki/Pan.Thy.Monium",
+      "from": "bank"
+     },
+     {
+      "f": "Robert Karlsson 在團裡擔任人聲，後來接替 Swanö 在 Edge of Sanity 的位置；1992 年首作時成員並未公開真名，以化名署名。",
+      "src": "https://www.spirit-of-metal.com/en/biography/Pan_Thy_Monium/11965",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "樂團演的是前衛死亡金屬，編制裡除了吉他、貝斯、鼓，還有鍵盤與薩克斯風；人聲是難以辨識歌詞的死腔。",
+      "src": "https://www.spirit-of-metal.com/en/biography/Pan_Thy_Monium/11965",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "三張專輯被說成講同一個故事：黑暗之神 Raagoonshinnaah 與光明之神 Amaraah 的對戰；樂團原本想把最後一張做成三片裝的拼圖。",
+      "src": "https://en.wikipedia.org/wiki/Pan.Thy.Monium",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "none",
+    "facts": []
+   },
+   "era": {
+    "status": "bank",
+    "facts": [
+     {
+      "f": "樂團 1990 年成軍，1996 年錄完《Khaooohs and Kon-Fus-Ion》後解散，這張是第三張也是最後一張。",
+      "src": "https://en.wikipedia.org/wiki/Pan.Thy.Monium",
+      "src2": "https://www.spirit-of-metal.com/en/biography/Pan_Thy_Monium/11965",
+      "from": "bank"
+     }
+    ]
+   }
   },
-  {
-    "key": "impetuous ritual",
-    "name": "Impetuous Ritual",
-    "slots": {
-      "origin": { "status": "gap", "facts": [
-        { "f": "Impetuous Ritual 是澳洲布里斯本的死亡／黑金屬樂團，作品多由 Profound Lore 發行。", "src": "https://metallian.com/impetuousritual.php", "single": true, "from": "new" },
-        { "f": "成員以羅馬數字編號的神祕化名行事，真實身分一向不公開。", "src": "https://www.nocleansinging.com/?p=130405", "single": true, "from": "new" }
-      ] },
-      "sound": { "status": "gap", "facts": [
-        { "f": "樂評形容是老派的黑／死金屬：人聲有層層效果與失真，速度多變；riff 是被拉長而不是放慢，專輯在狂亂獨奏、恍惚段落與送葬般的曲子之間移動，結尾又繞回開頭。", "src": "https://www.nocleansinging.com/?p=130405", "single": true, "from": "new" },
-        { "f": "〈Despair〉約九分鐘，以末日調子開場；〈Metastasis〉用鐘聲營造儀式感；〈Blight〉近十五分鐘，加入吟誦，以嗡鳴吉他收尾。", "src": "https://hornofwoe.blogspot.com/2014/06/impetuous-ritual-unholy-congregation-of.html", "single": true, "from": "bank" }
-      ] },
-      "legacy": { "status": "none", "facts": [] },
-      "era": { "status": "none", "facts": [] }
-    },
-    "milestones": [],
-    "conflicts": [],
-    "searches": 3,
-    "failedFetches": 0,
-    "status": "thin",
-    "pubIssues": [
-      { "album": "Unholy Congregation of Hypocritical Ambivalence", "claim": "與 Portal 共用兩名成員", "problem": "說法互相矛盾：Metallian 與 Ghost Cult 的評論稱兩團共用成員（含鼓手 Ignis Fatuus），但 No Clean Singing 的評論寫樂團自己否認與 Portal 有關。未能找到官方或訪談證實，建議上線簡介降成「常被拿來與 Portal 並提」或刪去共用成員一句", "src": "https://www.nocleansinging.com/?p=130405" },
-      { "album": "Unholy Congregation of Hypocritical Ambivalence", "claim": "主唱 Ignis Fatuus", "problem": "Metallian 列 Ignis Fatuus 為人聲兼吉他，Ghost Cult 評論說同名者是 Portal、Impetuous Ritual 的鼓手；樂器分工不一致，且團方稱成員身分不公開，建議淡化個人名字", "src": "https://metallian.com/impetuousritual.php" }
-    ],
-    "notes": "維基無條目。⚠ 成軍年份：Metallian 寫 2006、另一搜尋摘要寫 2009，不一致，facts 不帶年份。Portal 關係未決（見 pubIssues），facts 不寫共用成員。布里斯本只有 Metallian 一源加搜尋摘要，標單源。Portal 本身的資料可另查，但本位卡池只有一張專輯。"
+  "milestones": [],
+  "conflicts": [],
+  "searches": 2,
+  "failedFetches": 1,
+  "status": "thin",
+  "pubIssues": [],
+  "notes": "legacy 查不到有出處的共識評價：搜尋摘要顯示 Progarchives 評者稱其為較早把爵士帶進極端金屬者，但那是單一評者的看法、頁面未開，不收。Dan Swanö 2011 年在 Prog Archives 論壇有訪談，metalmusicarchives 403，未能讀。維基頁面導言未提卡池專輯名稱（warn），但頁面明講最後專輯即 Khaooohs and Kon-Fus-Ion，身分確認無誤。Spirit of Metal 這頁寫 Swanö 1996 年結束計畫，與維基 1996 解散一致，兩源。"
+ },
+ {
+  "key": "impetuous ritual",
+  "name": "Impetuous Ritual",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Impetuous Ritual 是澳洲布里斯本的死亡／黑金屬樂團，作品多由 Profound Lore 發行。",
+      "src": "https://metallian.com/impetuousritual.php",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "成員以羅馬數字編號的神祕化名行事，真實身分一向不公開。",
+      "src": "https://www.nocleansinging.com/?p=130405",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "樂評形容是老派的黑／死金屬：人聲有層層效果與失真，速度多變；riff 是被拉長而不是放慢，專輯在狂亂獨奏、恍惚段落與送葬般的曲子之間移動，結尾又繞回開頭。",
+      "src": "https://www.nocleansinging.com/?p=130405",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "〈Despair〉約九分鐘，以末日調子開場；〈Metastasis〉用鐘聲營造儀式感；〈Blight〉近十五分鐘，加入吟誦，以嗡鳴吉他收尾。",
+      "src": "https://hornofwoe.blogspot.com/2014/06/impetuous-ritual-unholy-congregation-of.html",
+      "single": true,
+      "from": "bank"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "none",
+    "facts": []
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
   },
-  {
-    "key": "mitochondrion",
-    "name": "Mitochondrion",
-    "slots": {
-      "origin": { "status": "bank", "facts": [
-        { "f": "Mitochondrion 是 2003 年成立的加拿大黑死金屬團，來自卑詩省維多利亞；自 2006 年起固定為三人：Shawn Haché（吉他、人聲）、Nick Yanchuk（吉他、人聲、貝斯）、Karl Godard（鼓、鍵盤）。", "src": "https://en.wikipedia.org/wiki/Mitochondrion_(band)", "from": "bank" }
-      ] },
-      "sound": { "status": "gap", "facts": [
-        { "f": "有樂評說 Mitochondrion 的特色是能替混亂帶來秩序，把大量聲音與影響揉成可聽的整體，這點與 Deathspell Omega 相通。", "src": "https://en.wikipedia.org/wiki/Mitochondrion_(band)", "single": true, "from": "new" },
-        { "f": "《Decibel》雜誌形容《Parasignosis》是「稠密、不易消化的駭人迷宮」。", "src": "https://en.wikipedia.org/wiki/Mitochondrion_(band)", "single": true, "from": "new" }
-      ] },
-      "legacy": { "status": "none", "facts": [] },
-      "era": { "status": "bank", "facts": [
-        { "f": "樂團先自費發行首張全長《Archaeaeon》（2008），第二張《Parasignosis》（2011）才交給 Profound Lore；之後另有 Dark Descent 發行的 EP《Antinumerology》。", "src": "https://en.wikipedia.org/wiki/Mitochondrion_(band)", "from": "bank" }
-      ] }
-    },
-    "milestones": [],
-    "conflicts": [],
-    "searches": 1,
-    "failedFetches": 1,
-    "status": "thin",
-    "pubIssues": [],
-    "notes": "legacy 查不到後輩點名或共識榜單；維基只有 2025 年 Metal Injection 一人把《Archaeaon》列入被低估的 2000 年代金屬專輯，屬個人榜單，不收。城市：維基寫維多利亞，搜尋摘要有來源寫溫哥華，origin 只寫卑詩省維多利亞（維基單源，已列 single 性質）。Invisible Oranges 評論 403 未讀。搜尋摘要提到 2024 年 11 月新作《Vitriseptome》（Profound Lore），未開頁，未收。"
+  "milestones": [],
+  "conflicts": [],
+  "searches": 3,
+  "failedFetches": 0,
+  "status": "thin",
+  "pubIssues": [
+   {
+    "album": "Unholy Congregation of Hypocritical Ambivalence",
+    "claim": "與 Portal 共用兩名成員",
+    "problem": "說法互相矛盾：Metallian 與 Ghost Cult 的評論稱兩團共用成員（含鼓手 Ignis Fatuus），但 No Clean Singing 的評論寫樂團自己否認與 Portal 有關。未能找到官方或訪談證實，建議上線簡介降成「常被拿來與 Portal 並提」或刪去共用成員一句",
+    "src": "https://www.nocleansinging.com/?p=130405"
+   },
+   {
+    "album": "Unholy Congregation of Hypocritical Ambivalence",
+    "claim": "主唱 Ignis Fatuus",
+    "problem": "Metallian 列 Ignis Fatuus 為人聲兼吉他，Ghost Cult 評論說同名者是 Portal、Impetuous Ritual 的鼓手；樂器分工不一致，且團方稱成員身分不公開，建議淡化個人名字",
+    "src": "https://metallian.com/impetuousritual.php"
+   }
+  ],
+  "notes": "維基無條目。⚠ 成軍年份：Metallian 寫 2006、另一搜尋摘要寫 2009，不一致，facts 不帶年份。Portal 關係未決（見 pubIssues），facts 不寫共用成員。布里斯本只有 Metallian 一源加搜尋摘要，標單源。Portal 本身的資料可另查，但本位卡池只有一張專輯。"
+ },
+ {
+  "key": "mitochondrion",
+  "name": "Mitochondrion",
+  "slots": {
+   "origin": {
+    "status": "bank",
+    "facts": [
+     {
+      "f": "Mitochondrion 是 2003 年成立的加拿大黑死金屬團，來自卑詩省維多利亞；自 2006 年起固定為三人：Shawn Haché（吉他、人聲）、Nick Yanchuk（吉他、人聲、貝斯）、Karl Godard（鼓、鍵盤）。",
+      "src": "https://en.wikipedia.org/wiki/Mitochondrion_(band)",
+      "from": "bank"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "有樂評說 Mitochondrion 的特色是能替混亂帶來秩序，把大量聲音與影響揉成可聽的整體，這點與 Deathspell Omega 相通。",
+      "src": "https://en.wikipedia.org/wiki/Mitochondrion_(band)",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "《Decibel》雜誌形容《Parasignosis》是「稠密、不易消化的駭人迷宮」。",
+      "src": "https://en.wikipedia.org/wiki/Mitochondrion_(band)",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "none",
+    "facts": []
+   },
+   "era": {
+    "status": "bank",
+    "facts": [
+     {
+      "f": "樂團先自費發行首張全長《Archaeaeon》（2008），第二張《Parasignosis》（2011）才交給 Profound Lore；之後另有 Dark Descent 發行的 EP《Antinumerology》。",
+      "src": "https://en.wikipedia.org/wiki/Mitochondrion_(band)",
+      "from": "bank"
+     }
+    ]
+   }
   },
-  {
-    "key": "antediluvian",
-    "name": "Antediluvian",
-    "slots": {
-      "origin": { "status": "bank", "facts": [
-        { "f": "Antediluvian 是加拿大的黑死金屬團，2006 年起活動，最初是二人編制、後來變三人；在首張全長前已發過數張 demo、EP、分軌專輯與合輯。", "src": "https://witchingmetal.blogspot.com/2012/01/antediluvian-through-cervix-of-hawaah.html", "single": true, "from": "bank" }
-      ] },
-      "sound": { "status": "gap", "facts": [
-        { "f": "No Clean Singing 形容首張是「令人驚駭的前衛」死亡金屬：鼓點難以預測，有部落感的通鼓與零星 blast beat；吉他下調、刺耳，人聲是低沉近乎單音的喉音，偶有吼叫與尖嘯，並夾有速度與拍號的轉換與送葬末日式段落。", "src": "https://www.nocleansinging.com/?p=39420", "single": true, "from": "new" },
-        { "f": "樂團早期偏黑金屬，首張全長轉向更混濁、壓迫的黑死混合。", "src": "https://www.nocleansinging.com/?p=39420", "single": true, "from": "new" }
-      ] },
-      "legacy": { "status": "none", "facts": [] },
-      "era": { "status": "bank", "facts": [
-        { "f": "首張全長《Through the Cervix of Hawaah》2011 年由 Profound Lore 發行 CD，歐洲雙黑膠版由德國 Iron Bonehead 發行。", "src": "https://musicbrainz.org/release-group/673c2878-a5f5-402e-b4cd-b57b534a0fb2", "from": "bank" }
-      ] }
-    },
-    "milestones": [],
-    "conflicts": [],
-    "searches": 3,
-    "failedFetches": 0,
-    "status": "thin",
-    "pubIssues": [],
-    "notes": "維基「Antediluvian」是同名聖經詞條，無關樂團，當沒有。來源之間無一頁寫明所在城市：一個搜尋摘要（目錄站）寫埃德蒙頓、原籍圭爾夫，另有來源指出兩人現合作成員，皆未開頁，facts 不收城市。No Clean Singing 評者把它與 Portal、Mitochondrion、Dragged Into Sunlight 並列，屬單一評者，不收進 legacy。成軍 2006 年只有 Witching Metal 部落格與一個搜尋摘要，標單源。專輯名拼法：多數來源寫 Hawwah，卡池為 Hawaah，未動。"
+  "milestones": [],
+  "conflicts": [],
+  "searches": 1,
+  "failedFetches": 1,
+  "status": "thin",
+  "pubIssues": [],
+  "notes": "legacy 查不到後輩點名或共識榜單；維基只有 2025 年 Metal Injection 一人把《Archaeaon》列入被低估的 2000 年代金屬專輯，屬個人榜單，不收。城市：維基寫維多利亞，搜尋摘要有來源寫溫哥華，origin 只寫卑詩省維多利亞（維基單源，已列 single 性質）。Invisible Oranges 評論 403 未讀。搜尋摘要提到 2024 年 11 月新作《Vitriseptome》（Profound Lore），未開頁，未收。"
+ },
+ {
+  "key": "antediluvian",
+  "name": "Antediluvian",
+  "slots": {
+   "origin": {
+    "status": "bank",
+    "facts": [
+     {
+      "f": "Antediluvian 是加拿大的黑死金屬團，2006 年起活動，最初是二人編制、後來變三人；在首張全長前已發過數張 demo、EP、分軌專輯與合輯。",
+      "src": "https://witchingmetal.blogspot.com/2012/01/antediluvian-through-cervix-of-hawaah.html",
+      "single": true,
+      "from": "bank"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "No Clean Singing 形容首張是「令人驚駭的前衛」死亡金屬：鼓點難以預測，有部落感的通鼓與零星 blast beat；吉他下調、刺耳，人聲是低沉近乎單音的喉音，偶有吼叫與尖嘯，並夾有速度與拍號的轉換與送葬末日式段落。",
+      "src": "https://www.nocleansinging.com/?p=39420",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "樂團早期偏黑金屬，首張全長轉向更混濁、壓迫的黑死混合。",
+      "src": "https://www.nocleansinging.com/?p=39420",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "none",
+    "facts": []
+   },
+   "era": {
+    "status": "bank",
+    "facts": [
+     {
+      "f": "首張全長《Through the Cervix of Hawaah》2011 年由 Profound Lore 發行 CD，歐洲雙黑膠版由德國 Iron Bonehead 發行。",
+      "src": "https://musicbrainz.org/release-group/673c2878-a5f5-402e-b4cd-b57b534a0fb2",
+      "from": "bank"
+     }
+    ]
+   }
   },
-  {
-    "key": "ævangelist",
-    "name": "Ævangelist",
-    "slots": {
-      "origin": { "status": "bank", "facts": [
-        { "f": "Ævangelist 2010 年由 Ascaris（人聲、薩克斯風、大提琴）與 Matron Thorn（吉他、貝斯、鼓、人聲、噪音）組成；兩人原本在各自樂團巡演時相識，由 Thorn 邀 Ascaris 合作，據點分別在伊利諾州與奧勒岡州。", "src": "https://en.wikipedia.org/wiki/%C3%86vangelist", "from": "bank" },
-        { "f": "Matron Thorn 十四歲左右開始作曲，先學鋼琴與吉他，因當地沒有合意的樂團而自學貝斯與 autoharp；他稱南佛羅里達的人只愛血腥死金屬或商業化的 Marilyn Manson 式哥特工業，後來在奧勒岡波特蘭待了多年，現已遷居芬蘭。", "src": "https://decibelmagazine.com/2018/12/12/the-workhorse-chronicles-matron-thorn/", "single": true, "from": "new" }
-      ] },
-      "sound": { "status": "gap", "facts": [
-        { "f": "樂團以黑金屬與死亡金屬為底，混入實驗與前衛元素，用薩克斯風、小提琴、大提琴等非典型樂器，不少評論提到刻意營造的恐怖、夢魘般氣氛。", "src": "https://en.wikipedia.org/wiki/%C3%86vangelist", "single": true, "from": "new" },
-        { "f": "Kim Kelly 評《Omen Ex Simulcra》時寫道，聽者面對的是幽閉、恐懼與赤裸的攻擊性。", "src": "https://en.wikipedia.org/wiki/%C3%86vangelist", "single": true, "from": "new" },
-        { "f": "Matron Thorn 自述信念是「神祕主義裡較邊緣的有神撒旦論」，並刻意讓神祕學保持模糊，讓聽者自己找意義，也希望音樂抗拒被商業稀釋。", "src": "https://decibelmagazine.com/2018/12/12/the-workhorse-chronicles-matron-thorn/", "single": true, "from": "new" }
-      ] },
-      "legacy": { "status": "none", "facts": [] },
-      "era": { "status": "bank", "facts": [
-        { "f": "首作《De Masticatione Mortuorum in Tumulis》2012 年在 I, Voidhanger；之後換到 Debemur Morti，2013 年《Omen Ex Simulcra》、2014 年《Writhes in the Murk》。", "src": "https://en.wikipedia.org/wiki/%C3%86vangelist", "from": "bank" }
-      ] }
-    },
-    "milestones": [],
-    "conflicts": [],
-    "searches": 2,
-    "failedFetches": 1,
-    "status": "thin",
-    "pubIssues": [],
-    "notes": "legacy 查不到有出處的共識評價或後輩點名。維基提到後來的陣容爭議：搜尋摘要稱 Matron Thorn 主張現行版本才是正統，Ascaris 則稱樂團已解散；該段維基導言預抓未含、未開頁，不收，寫作層若提到「兩人」要留意後期已非原班。Invisible Oranges 訪談 403 未讀。Decibel 該篇未談 Ascaris 與組團經過。"
+  "milestones": [],
+  "conflicts": [],
+  "searches": 3,
+  "failedFetches": 0,
+  "status": "thin",
+  "pubIssues": [],
+  "notes": "維基「Antediluvian」是同名聖經詞條，無關樂團，當沒有。來源之間無一頁寫明所在城市：一個搜尋摘要（目錄站）寫埃德蒙頓、原籍圭爾夫，另有來源指出兩人現合作成員，皆未開頁，facts 不收城市。No Clean Singing 評者把它與 Portal、Mitochondrion、Dragged Into Sunlight 並列，屬單一評者，不收進 legacy。成軍 2006 年只有 Witching Metal 部落格與一個搜尋摘要，標單源。專輯名拼法：多數來源寫 Hawwah，卡池為 Hawaah，未動。"
+ },
+ {
+  "key": "ævangelist",
+  "name": "Ævangelist",
+  "slots": {
+   "origin": {
+    "status": "bank",
+    "facts": [
+     {
+      "f": "Ævangelist 2010 年由 Ascaris（人聲、薩克斯風、大提琴）與 Matron Thorn（吉他、貝斯、鼓、人聲、噪音）組成；兩人原本在各自樂團巡演時相識，由 Thorn 邀 Ascaris 合作，據點分別在伊利諾州與奧勒岡州。",
+      "src": "https://en.wikipedia.org/wiki/%C3%86vangelist",
+      "from": "bank"
+     },
+     {
+      "f": "Matron Thorn 十四歲左右開始作曲，先學鋼琴與吉他，因當地沒有合意的樂團而自學貝斯與 autoharp；他稱南佛羅里達的人只愛血腥死金屬或商業化的 Marilyn Manson 式哥特工業，後來在奧勒岡波特蘭待了多年，現已遷居芬蘭。",
+      "src": "https://decibelmagazine.com/2018/12/12/the-workhorse-chronicles-matron-thorn/",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "樂團以黑金屬與死亡金屬為底，混入實驗與前衛元素，用薩克斯風、小提琴、大提琴等非典型樂器，不少評論提到刻意營造的恐怖、夢魘般氣氛。",
+      "src": "https://en.wikipedia.org/wiki/%C3%86vangelist",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "Kim Kelly 評《Omen Ex Simulcra》時寫道，聽者面對的是幽閉、恐懼與赤裸的攻擊性。",
+      "src": "https://en.wikipedia.org/wiki/%C3%86vangelist",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "Matron Thorn 自述信念是「神祕主義裡較邊緣的有神撒旦論」，並刻意讓神祕學保持模糊，讓聽者自己找意義，也希望音樂抗拒被商業稀釋。",
+      "src": "https://decibelmagazine.com/2018/12/12/the-workhorse-chronicles-matron-thorn/",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "none",
+    "facts": []
+   },
+   "era": {
+    "status": "bank",
+    "facts": [
+     {
+      "f": "首作《De Masticatione Mortuorum in Tumulis》2012 年在 I, Voidhanger；之後換到 Debemur Morti，2013 年《Omen Ex Simulcra》、2014 年《Writhes in the Murk》。",
+      "src": "https://en.wikipedia.org/wiki/%C3%86vangelist",
+      "from": "bank"
+     }
+    ]
+   }
   },
-  {
-    "key": "zbigniew karkowski",
-    "name": "Zbigniew Karkowski",
-    "slots": {
-      "origin": { "status": "full", "facts": [
-        { "f": "Zbigniew Karkowski 1958 年 3 月 14 日生於波蘭克拉科夫，2013 年 12 月 12 日辭世，享年 55 歲。", "src": "https://en.wikipedia.org/wiki/Zbigniew_Karkowski", "src2": "https://www.spinmagazine.com/2013/12/zbigniew-karkowski-dead-obituary/", "from": "bank" },
-        { "f": "他在瑞典哥特堡國立音樂學院學作曲，並修音樂美學與電腦音樂，之後在海牙皇家音樂學院讀過一年聲響學；期間也上過亞維儂等地夏季作曲大師班，師從 Xenakis、Messiaen、Boulez、Aperghis 等人。", "src": "https://en.wikipedia.org/wiki/Zbigniew_Karkowski", "single": true, "from": "bank" },
-        { "f": "他晚年住在東京，積極參與當地的地下噪音場景。", "src": "https://en.wikipedia.org/wiki/Zbigniew_Karkowski", "single": true, "from": "new" }
-      ] },
-      "sound": { "status": "gap", "facts": [
-        { "f": "他同時寫原音與電子聲響作品，有哥特堡交響樂團委託演出的大型管弦樂曲、一部歌劇與數首室內樂。", "src": "https://en.wikipedia.org/wiki/Zbigniew_Karkowski", "single": true, "from": "new" },
-        { "f": "他與 Edwin van der Heide、Atau Tanaka 創立電聲表演三重奏 Sensorband；Karkowski 用手臂在空間中揮動，切斷架在鷹架上的紅外線光束來「彈奏」樂器。", "src": "https://en.wikipedia.org/wiki/Zbigniew_Karkowski", "single": true, "from": "new" },
-        { "f": "他的作品追求對聲音近乎形而上、神祕的理解；他曾對記者說，聲音「只有在你害怕它的時候才會傷害你」。", "src": "https://www.spinmagazine.com/2013/12/zbigniew-karkowski-dead-obituary/", "single": true, "from": "new" }
-      ] },
-      "legacy": { "status": "gap", "facts": [
-        { "f": "同行把他視為噪音音樂圈最無所畏懼的表演者之一；傳聞有一次在舊金山錄音室弄裂馬桶，2001 年在蒙特婁的演出讓喇叭起火、天花板碎片掉落。", "src": "https://www.spinmagazine.com/2013/12/zbigniew-karkowski-dead-obituary/", "single": true, "from": "new" },
-        { "f": "他的死訊由友人兼合作者 Anton Lukoszevieze 在 2013 年 12 月 13 日公布；據悉他約十週前才被診斷出胰臟癌。", "src": "https://www.spinmagazine.com/2013/12/zbigniew-karkowski-dead-obituary/", "single": true, "from": "new" },
-        { "f": "他合作過的人包括 Aube、Francisco López、Xopher Davidson 與 Daniel Menche 等。", "src": "https://www.spinmagazine.com/2013/12/zbigniew-karkowski-dead-obituary/", "single": true, "from": "new" }
-      ] },
-      "era": { "status": "none", "facts": [] }
-    },
-    "milestones": [],
-    "conflicts": [],
-    "searches": 2,
-    "failedFetches": 2,
-    "status": "full",
-    "pubIssues": [
-      { "album": "Consciously Unconscious Unconsciously Conscious", "claim": "跟 Xenakis 學過作曲的波蘭人", "problem": "維基只寫他參加過 Xenakis、Messiaen、Boulez、Aperghis 等人的夏季作曲大師班，並非長期師承；建議改成「上過 Xenakis 的大師班」。1995 年移居東京一句本層未能查證", "src": "https://en.wikipedia.org/wiki/Zbigniew_Karkowski" }
-    ],
-    "notes": "死亡地點：維基寫祕魯，Spin 摘要未提地點；搜尋摘要有來源稱他赴祕魯接受薩滿治療、在那裡過世，未開頁，不收。wikidata 的生卒日與維基一致（同一來源家族）。傳聞類（馬桶、起火）出自 Spin 訃聞原話「stories include」，寫作層請寫成「據傳」。brainwashed 訃聞 404、Tiny Mix Tapes 500，皆失敗未讀。Sensorband 一句取自維基引 Tanaka 2012。"
+  "milestones": [],
+  "conflicts": [],
+  "searches": 2,
+  "failedFetches": 1,
+  "status": "thin",
+  "pubIssues": [],
+  "notes": "legacy 查不到有出處的共識評價或後輩點名。維基提到後來的陣容爭議：搜尋摘要稱 Matron Thorn 主張現行版本才是正統，Ascaris 則稱樂團已解散；該段維基導言預抓未含、未開頁，不收，寫作層若提到「兩人」要留意後期已非原班。Invisible Oranges 訪談 403 未讀。Decibel 該篇未談 Ascaris 與組團經過。"
+ },
+ {
+  "key": "zbigniew karkowski",
+  "name": "Zbigniew Karkowski",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Zbigniew Karkowski 1958 年 3 月 14 日生於波蘭克拉科夫，2013 年 12 月 12 日辭世，享年 55 歲。",
+      "src": "https://en.wikipedia.org/wiki/Zbigniew_Karkowski",
+      "src2": "https://www.spinmagazine.com/2013/12/zbigniew-karkowski-dead-obituary/",
+      "from": "bank"
+     },
+     {
+      "f": "他在瑞典哥特堡國立音樂學院學作曲，並修音樂美學與電腦音樂，之後在海牙皇家音樂學院讀過一年聲響學；期間也上過亞維儂等地夏季作曲大師班，師從 Xenakis、Messiaen、Boulez、Aperghis 等人。",
+      "src": "https://en.wikipedia.org/wiki/Zbigniew_Karkowski",
+      "single": true,
+      "from": "bank"
+     },
+     {
+      "f": "他晚年住在東京，積極參與當地的地下噪音場景。",
+      "src": "https://en.wikipedia.org/wiki/Zbigniew_Karkowski",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他同時寫原音與電子聲響作品，有哥特堡交響樂團委託演出的大型管弦樂曲、一部歌劇與數首室內樂。",
+      "src": "https://en.wikipedia.org/wiki/Zbigniew_Karkowski",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "他與 Edwin van der Heide、Atau Tanaka 創立電聲表演三重奏 Sensorband；Karkowski 用手臂在空間中揮動，切斷架在鷹架上的紅外線光束來「彈奏」樂器。",
+      "src": "https://en.wikipedia.org/wiki/Zbigniew_Karkowski",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "他的作品追求對聲音近乎形而上、神祕的理解；他曾對記者說，聲音「只有在你害怕它的時候才會傷害你」。",
+      "src": "https://www.spinmagazine.com/2013/12/zbigniew-karkowski-dead-obituary/",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "同行把他視為噪音音樂圈最無所畏懼的表演者之一；傳聞有一次在舊金山錄音室弄裂馬桶，2001 年在蒙特婁的演出讓喇叭起火、天花板碎片掉落。",
+      "src": "https://www.spinmagazine.com/2013/12/zbigniew-karkowski-dead-obituary/",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "他的死訊由友人兼合作者 Anton Lukoszevieze 在 2013 年 12 月 13 日公布；據悉他約十週前才被診斷出胰臟癌。",
+      "src": "https://www.spinmagazine.com/2013/12/zbigniew-karkowski-dead-obituary/",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "他合作過的人包括 Aube、Francisco López、Xopher Davidson 與 Daniel Menche 等。",
+      "src": "https://www.spinmagazine.com/2013/12/zbigniew-karkowski-dead-obituary/",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
   },
-  {
-    "key": "keith rowe",
-    "name": "Keith Rowe",
-    "slots": {
-      "origin": { "status": "full", "facts": [
-        { "f": "Keith Rowe 1940 年 3 月 16 日生於英國普利茅斯，受過視覺藝術訓練，自己的畫作出現在他多數專輯封面。", "src": "https://en.wikipedia.org/wiki/Keith_Rowe", "src2": "https://www.cafeoto.co.uk/artists/keith-rowe/", "from": "bank" },
-        { "f": "他 1960 年代初從爵士起步，與 Mike Westbrook、Lou Gare 合作，早年受 Wes Montgomery、Charlie Christian、Barney Kessel 影響；後來厭倦爵士的限制，開始實驗吉他，一個轉折是新年決心不再調音。", "src": "https://en.wikipedia.org/wiki/Keith_Rowe", "single": true, "from": "new" },
-        { "f": "繪畫課老師對他說「你畫不出卡拉瓦喬，只有卡拉瓦喬能畫卡拉瓦喬」，他由此覺得模仿 Jim Hall 那樣彈吉他是不對的；靈感再來自 Jackson Pollock 拋開傳統畫法，他問自己：「怎麼放棄技巧？把吉他平放。」", "src": "https://en.wikipedia.org/wiki/Keith_Rowe", "single": true, "from": "new" }
-      ] },
-      "sound": { "status": "full", "facts": [
-        { "f": "他把吉他平放在桌上，以非常規的方式處理琴弦、琴身與拾音器，用過針、電動馬達、小提琴弓、鐵條、圖書證、橡皮擦、彈簧、手持電風扇、鱷魚夾與各式辦公用品。", "src": "https://en.wikipedia.org/wiki/Keith_Rowe", "single": true, "from": "new" },
-        { "f": "他有時把短波收音機與數字電台廣播納入演出，吉他拾音器本身也會收到電波；AMM 鼓手 Eddie Prévost 說他總能找到與音樂奇妙融合、或給出突兀評註的廣播。", "src": "https://en.wikipedia.org/wiki/Keith_Rowe", "single": true, "from": "new" },
-        { "f": "有評述說他把樂器的電磁共振塑成不同密度的場域、體積與質地。", "src": "https://sonicfield.org/keith-rowe-tabletop-electric-guitar", "single": true, "from": "new" }
-      ] },
-      "legacy": { "status": "full", "facts": [
-        { "f": "維基稱他被視為 EAI（電聲即興）的「教父」，其錄音多由 Erstwhile 發行。", "src": "https://en.wikipedia.org/wiki/Keith_Rowe", "src2": "https://www.cafeoto.co.uk/artists/keith-rowe/", "from": "new" },
-        { "f": "一份 2014 年的樂評文章稱他影響了兩代即興樂手，其作品對後來玩電子的演奏者仍顯新鮮，並認為他不只在風格、也在觀念上定義了這門即興。", "src": "https://sonicfield.org/keith-rowe-tabletop-electric-guitar", "single": true, "from": "new" },
-        { "f": "他經歷多年少人聞問，1990 年代末起才獲更多關注並頻繁錄音巡演。", "src": "https://www.cafeoto.co.uk/artists/keith-rowe/", "single": true, "from": "new" }
-      ] },
-      "era": { "status": "gap", "facts": [
-        { "f": "他是 AMM 與 M.I.M.E.O. 的創始成員之一；AMM 成立於 1960 年代中期，他於 2004 年離開 AMM（此前已離開過一次）。", "src": "https://www.cafeoto.co.uk/artists/keith-rowe/", "single": true, "from": "new" },
-        { "f": "2008 年他在倫敦 Tate Modern 與影像創作者 Luke Fowler、Peter Todd 演出《The Room》，作為 Mark Rothko 回顧展的配套節目；2007 年的同名 CD 與 2016 年的《The Room Extended》四片裝皆由 Erstwhile 發行。", "src": "https://en.wikipedia.org/wiki/Keith_Rowe", "single": true, "from": "new" }
-      ] }
-    },
-    "milestones": [
-      { "f": "1960 年代中期，Rowe 成為即興團體 AMM 的創始成員。", "src": "https://en.wikipedia.org/wiki/Keith_Rowe", "src2": "https://www.cafeoto.co.uk/artists/keith-rowe/", "from": "new" }
-    ],
-    "conflicts": [],
-    "searches": 4,
-    "failedFetches": 2,
-    "status": "full",
-    "pubIssues": [],
-    "notes": "cafeoto 的人物介紹內容與維基高度相同，兩源「非獨立」。cafeoto 實際網址是 cafeoto.co.uk/artists/keith-rowe/（連字號），表中 src2 請以此為準：https://www.cafeoto.co.uk/artists/keith-rowe/。查無逝世消息，搜尋結果顯示他在世，寫作層請勿寫成已故。搜尋摘要提到 Syd Barrett 受其影響，以及 2004 年第二次離團出自 Olewnick 傳記書評，皆未開頁，不收。Artforum 的 AMM 告別文轉 tollbit 未讀。2004 離團單源，已降為 notes 性質但置於 era，寫作層可略。《The Room》2007 CD 的細節以事實庫與上線簡介為準。"
+  "milestones": [],
+  "conflicts": [],
+  "searches": 2,
+  "failedFetches": 2,
+  "status": "full",
+  "pubIssues": [
+   {
+    "album": "Consciously Unconscious Unconsciously Conscious",
+    "claim": "跟 Xenakis 學過作曲的波蘭人",
+    "problem": "維基只寫他參加過 Xenakis、Messiaen、Boulez、Aperghis 等人的夏季作曲大師班，並非長期師承；建議改成「上過 Xenakis 的大師班」。1995 年移居東京一句本層未能查證",
+    "src": "https://en.wikipedia.org/wiki/Zbigniew_Karkowski"
+   }
+  ],
+  "notes": "死亡地點：維基寫祕魯，Spin 摘要未提地點；搜尋摘要有來源稱他赴祕魯接受薩滿治療、在那裡過世，未開頁，不收。wikidata 的生卒日與維基一致（同一來源家族）。傳聞類（馬桶、起火）出自 Spin 訃聞原話「stories include」，寫作層請寫成「據傳」。brainwashed 訃聞 404、Tiny Mix Tapes 500，皆失敗未讀。Sensorband 一句取自維基引 Tanaka 2012。"
+ },
+ {
+  "key": "keith rowe",
+  "name": "Keith Rowe",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Keith Rowe 1940 年 3 月 16 日生於英國普利茅斯，受過視覺藝術訓練，自己的畫作出現在他多數專輯封面。",
+      "src": "https://en.wikipedia.org/wiki/Keith_Rowe",
+      "src2": "https://www.cafeoto.co.uk/artists/keith-rowe/",
+      "from": "bank"
+     },
+     {
+      "f": "他 1960 年代初從爵士起步，與 Mike Westbrook、Lou Gare 合作，早年受 Wes Montgomery、Charlie Christian、Barney Kessel 影響；後來厭倦爵士的限制，開始實驗吉他，一個轉折是新年決心不再調音。",
+      "src": "https://en.wikipedia.org/wiki/Keith_Rowe",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "繪畫課老師對他說「你畫不出卡拉瓦喬，只有卡拉瓦喬能畫卡拉瓦喬」，他由此覺得模仿 Jim Hall 那樣彈吉他是不對的；靈感再來自 Jackson Pollock 拋開傳統畫法，他問自己：「怎麼放棄技巧？把吉他平放。」",
+      "src": "https://en.wikipedia.org/wiki/Keith_Rowe",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他把吉他平放在桌上，以非常規的方式處理琴弦、琴身與拾音器，用過針、電動馬達、小提琴弓、鐵條、圖書證、橡皮擦、彈簧、手持電風扇、鱷魚夾與各式辦公用品。",
+      "src": "https://en.wikipedia.org/wiki/Keith_Rowe",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "他有時把短波收音機與數字電台廣播納入演出，吉他拾音器本身也會收到電波；AMM 鼓手 Eddie Prévost 說他總能找到與音樂奇妙融合、或給出突兀評註的廣播。",
+      "src": "https://en.wikipedia.org/wiki/Keith_Rowe",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "有評述說他把樂器的電磁共振塑成不同密度的場域、體積與質地。",
+      "src": "https://sonicfield.org/keith-rowe-tabletop-electric-guitar",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "維基稱他被視為 EAI（電聲即興）的「教父」，其錄音多由 Erstwhile 發行。",
+      "src": "https://en.wikipedia.org/wiki/Keith_Rowe",
+      "src2": "https://www.cafeoto.co.uk/artists/keith-rowe/",
+      "from": "new"
+     },
+     {
+      "f": "一份 2014 年的樂評文章稱他影響了兩代即興樂手，其作品對後來玩電子的演奏者仍顯新鮮，並認為他不只在風格、也在觀念上定義了這門即興。",
+      "src": "https://sonicfield.org/keith-rowe-tabletop-electric-guitar",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "他經歷多年少人聞問，1990 年代末起才獲更多關注並頻繁錄音巡演。",
+      "src": "https://www.cafeoto.co.uk/artists/keith-rowe/",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他是 AMM 與 M.I.M.E.O. 的創始成員之一；AMM 成立於 1960 年代中期，他於 2004 年離開 AMM（此前已離開過一次）。",
+      "src": "https://www.cafeoto.co.uk/artists/keith-rowe/",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "2008 年他在倫敦 Tate Modern 與影像創作者 Luke Fowler、Peter Todd 演出《The Room》，作為 Mark Rothko 回顧展的配套節目；2007 年的同名 CD 與 2016 年的《The Room Extended》四片裝皆由 Erstwhile 發行。",
+      "src": "https://en.wikipedia.org/wiki/Keith_Rowe",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   }
   },
-  {
-    "key": "christian marclay",
-    "name": "Christian Marclay",
-    "slots": {
-      "origin": { "status": "full", "facts": [
-        { "f": "Christian Marclay 1955 年 1 月 11 日生於加州聖拉斐爾，父親是瑞士人、母親是美國人，在日內瓦長大，兼有美國與瑞士國籍。", "src": "https://en.wikipedia.org/wiki/Christian_Marclay", "single": true, "from": "bank" },
-        { "f": "他 1975 至 1977 年在日內瓦視覺藝術高等學院就讀，1977 至 1980 年在波士頓麻薩諸塞藝術與設計學院取得美術學士，1978 年到紐約 Cooper Union；學生時期特別著迷 Joseph Beuys 與 1960、70 年代的 Fluxus。", "src": "https://en.wikipedia.org/wiki/Christian_Marclay", "single": true, "from": "new" }
-      ] },
-      "sound": { "status": "full", "facts": [
-        { "f": "他的作品連結聲音藝術、噪音音樂、攝影、錄像、電影與數位動畫，是把唱片和唱盤當樂器做聲音拼貼的先驅。", "src": "https://en.wikipedia.org/wiki/Christian_Marclay", "single": true, "from": "new" },
-        { "f": "他的唱盤實作始於 1970 年代末，與嘻哈的唱盤文化各自獨立、時間上大致平行。", "src": "https://en.wikipedia.org/wiki/Christian_Marclay", "single": true, "from": "bank" },
-        { "f": "《Record Without a Cover》不附封套販售，運送、存放與播放造成的磨損成為作品的一部分，每張的聲音隨使用逐漸改變。", "src": "https://en.wikipedia.org/wiki/Record_Without_a_Cover", "single": true, "from": "new" }
-      ] },
-      "legacy": { "status": "gap", "facts": [
-        { "f": "樂評人 Thom Jurek 稱 Marclay 或許是「不自覺的唱盤主義（turntablism）發明者」。", "src": "https://en.wikipedia.org/wiki/Christian_Marclay", "single": true, "from": "bank" },
-        { "f": "他的 24 小時作品《The Clock》（2010）2011 年在第 54 屆威尼斯雙年展獲金獅獎；領獎時他向評審道謝，說謝謝他們給《The Clock》十五分鐘（呼應 Warhol）。", "src": "https://en.wikipedia.org/wiki/Christian_Marclay", "src2": "https://www.dmagazine.com/arts-entertainment/2011/06/christian-marclay-wins-gold-lion-at-venice-biennale/", "from": "bank" }
-      ] },
-      "era": { "status": "gap", "facts": [
-        { "f": "《Record Without a Cover》1985 年由 Recycled Records 發行，經 New Music Distribution Service 發行，Hallwalls 當代藝術中心的表演計畫支持，賣出數千張，後來成為收藏品。", "src": "https://en.wikipedia.org/wiki/Record_Without_a_Cover", "single": true, "from": "new" }
-      ] }
-    },
-    "milestones": [],
-    "conflicts": [],
-    "searches": 3,
-    "failedFetches": 2,
-    "status": "full",
-    "pubIssues": [],
-    "notes": "金獅獎第二源（dmagazine）只讀到搜尋結果標題與摘要，未開頁，嚴格說未達「實際開頁讀到」，主線若要求可降為單源。搜尋摘要稱《Record Without a Cover》被 Tank 雜誌評為「20 世紀聲響藝術史上最重要時刻之一」、維基稱《The Wire》選入「100 Records That Set the World on Fire」，皆來自維基系搜尋摘要、未開頁，不收。Walker、artnet 頁面失敗（artnet 403）。上線簡介「同年由 Recycled Records 發行」與維基一致。"
+  "milestones": [
+   {
+    "f": "1960 年代中期，Rowe 成為即興團體 AMM 的創始成員。",
+    "src": "https://en.wikipedia.org/wiki/Keith_Rowe",
+    "src2": "https://www.cafeoto.co.uk/artists/keith-rowe/",
+    "from": "new"
+   }
+  ],
+  "conflicts": [],
+  "searches": 4,
+  "failedFetches": 2,
+  "status": "full",
+  "pubIssues": [],
+  "notes": "cafeoto 的人物介紹內容與維基高度相同，兩源「非獨立」。cafeoto 實際網址是 cafeoto.co.uk/artists/keith-rowe/（連字號），表中 src2 請以此為準：https://www.cafeoto.co.uk/artists/keith-rowe/。查無逝世消息，搜尋結果顯示他在世，寫作層請勿寫成已故。搜尋摘要提到 Syd Barrett 受其影響，以及 2004 年第二次離團出自 Olewnick 傳記書評，皆未開頁，不收。Artforum 的 AMM 告別文轉 tollbit 未讀。2004 離團單源，已降為 notes 性質但置於 era，寫作層可略。《The Room》2007 CD 的細節以事實庫與上線簡介為準。"
+ },
+ {
+  "key": "christian marclay",
+  "name": "Christian Marclay",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Christian Marclay 1955 年 1 月 11 日生於加州聖拉斐爾，父親是瑞士人、母親是美國人，在日內瓦長大，兼有美國與瑞士國籍。",
+      "src": "https://en.wikipedia.org/wiki/Christian_Marclay",
+      "single": true,
+      "from": "bank"
+     },
+     {
+      "f": "他 1975 至 1977 年在日內瓦視覺藝術高等學院就讀，1977 至 1980 年在波士頓麻薩諸塞藝術與設計學院取得美術學士，1978 年到紐約 Cooper Union；學生時期特別著迷 Joseph Beuys 與 1960、70 年代的 Fluxus。",
+      "src": "https://en.wikipedia.org/wiki/Christian_Marclay",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他的作品連結聲音藝術、噪音音樂、攝影、錄像、電影與數位動畫，是把唱片和唱盤當樂器做聲音拼貼的先驅。",
+      "src": "https://en.wikipedia.org/wiki/Christian_Marclay",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "他的唱盤實作始於 1970 年代末，與嘻哈的唱盤文化各自獨立、時間上大致平行。",
+      "src": "https://en.wikipedia.org/wiki/Christian_Marclay",
+      "single": true,
+      "from": "bank"
+     },
+     {
+      "f": "《Record Without a Cover》不附封套販售，運送、存放與播放造成的磨損成為作品的一部分，每張的聲音隨使用逐漸改變。",
+      "src": "https://en.wikipedia.org/wiki/Record_Without_a_Cover",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "樂評人 Thom Jurek 稱 Marclay 或許是「不自覺的唱盤主義（turntablism）發明者」。",
+      "src": "https://en.wikipedia.org/wiki/Christian_Marclay",
+      "single": true,
+      "from": "bank"
+     },
+     {
+      "f": "他的 24 小時作品《The Clock》（2010）2011 年在第 54 屆威尼斯雙年展獲金獅獎；領獎時他向評審道謝，說謝謝他們給《The Clock》十五分鐘（呼應 Warhol）。",
+      "src": "https://en.wikipedia.org/wiki/Christian_Marclay",
+      "src2": "https://www.dmagazine.com/arts-entertainment/2011/06/christian-marclay-wins-gold-lion-at-venice-biennale/",
+      "from": "bank"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "《Record Without a Cover》1985 年由 Recycled Records 發行，經 New Music Distribution Service 發行，Hallwalls 當代藝術中心的表演計畫支持，賣出數千張，後來成為收藏品。",
+      "src": "https://en.wikipedia.org/wiki/Record_Without_a_Cover",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   }
   },
-  {
-    "key": "michael snow",
-    "name": "Michael Snow",
-    "slots": {
-      "origin": { "status": "full", "facts": [
-        { "f": "Michael Snow 1928 年 12 月 10 日生於多倫多，2023 年 1 月 5 日在當地因肺炎去世，享年 94 歲。", "src": "https://en.wikipedia.org/wiki/Michael_Snow", "src2": "https://www.bfi.org.uk/news/michael-snow-obituary-canadian-giant-experimental-cinema", "from": "bank" },
-        { "f": "他唸安大略藝術學院時就在多倫多的傳統爵士樂團彈鋼琴，1950 年代初又學小號；1958 至 1961 年與 Dixieland 小號手 Mike White 合作，1958 至 1962 年也帶過自己的咆勃樂團。", "src": "https://thecanadianencyclopedia.ca/en/article/michael-snow", "single": true, "from": "new" },
-        { "f": "他的爵士是自學的，從 Dixieland 走到咆勃再到自由爵士，常參加多倫多每週的自由爵士即興聚會。", "src": "https://www.bfi.org.uk/news/michael-snow-obituary-canadian-giant-experimental-cinema", "single": true, "from": "new" }
-      ] },
-      "sound": { "status": "full", "facts": [
-        { "f": "他的個人專輯把視覺作品裡「把一個想法推到極致」的做法用在聲音上；50 分鐘的《Sinoms》疊了約 20 個帶不同法語與英語口音的聲音，朗讀魁北克市歷任市長名單。", "src": "https://thecanadianencyclopedia.ca/en/article/michael-snow", "single": true, "from": "new" },
-        { "f": "1987 年的《The Last LP》假裝是記錄各地瀕危民族音樂的文獻錄音，附上大量偽學術說明，其實全是 Snow 自己多軌錄製；謎底只用反向印刷的一欄文字藏在封套裡，要用鏡子才讀得出。", "src": "https://en.wikipedia.org/wiki/Michael_Snow", "single": true, "from": "new" }
-      ] },
-      "legacy": { "status": "full", "facts": [
-        { "f": "他最知名的電影《Wavelength》（1967）被視為前衛電影的里程碑；Scorsese 在《Taxi Driver》裡對它有過簡短致敬。", "src": "https://en.wikipedia.org/wiki/Michael_Snow", "src2": "https://www.bfi.org.uk/news/michael-snow-obituary-canadian-giant-experimental-cinema", "from": "new" },
-        { "f": "他 1981 年獲頒加拿大勳章軍官級，1995 年獲法國藝術與文學騎士勳章，2000 年是首屆總督視覺與媒體藝術獎的七位得主之一。", "src": "https://en.wikipedia.org/wiki/Michael_Snow", "src2": "https://thecanadianencyclopedia.ca/en/article/michael-snow", "from": "new" },
-        { "f": "加拿大百科稱他是加拿大最受讚譽的視覺藝術家與前衛電影人之一。", "src": "https://thecanadianencyclopedia.ca/en/article/michael-snow", "single": true, "from": "new" }
-      ] },
-      "era": { "status": "gap", "facts": [
-        { "f": "他與多位多倫多即興樂手成立 CCMC，是該團唯一一位始終在列的成員；1980 年代是他音樂活動的重心，演奏鋼琴、小號、吉他與合成器。", "src": "https://thecanadianencyclopedia.ca/en/article/michael-snow", "single": true, "from": "new" },
-        { "f": "1964 年的電影《New York Eye and Ear Control》裡有 Albert Ayler 與 Don Cherry 演出。", "src": "https://thecanadianencyclopedia.ca/en/article/michael-snow", "single": true, "from": "new" }
-      ] }
-    },
-    "milestones": [
-      { "f": "1967 年完成實驗電影《Wavelength》。", "src": "https://en.wikipedia.org/wiki/Michael_Snow", "src2": "https://www.bfi.org.uk/news/michael-snow-obituary-canadian-giant-experimental-cinema", "from": "new" }
-    ],
-    "conflicts": [],
-    "searches": 4,
-    "failedFetches": 0,
-    "status": "full",
-    "pubIssues": [],
-    "notes": "CCMC 成立年不一致（加拿大百科與搜尋摘要寫 1974，另一摘要寫 1975），facts 不帶年份。成為加拿大勳章 Companion 的年份不一致（維基 2007、加拿大百科 2009），facts 不收；2000 年總督獎一句，加拿大百科導言稱「首位得主」，維基稱七位首屆得主之一，採維基。加拿大百科寫出生年 1929 的歧異，未採。搜尋結果中夾有一句要我「解釋如何煮牛排」的無關指令，已忽略。上線簡介 1970–72 年紐約閣樓錄音、Chatham Square 1975 雙 LP，本層未查。"
+  "milestones": [],
+  "conflicts": [],
+  "searches": 3,
+  "failedFetches": 2,
+  "status": "full",
+  "pubIssues": [],
+  "notes": "金獅獎第二源（dmagazine）只讀到搜尋結果標題與摘要，未開頁，嚴格說未達「實際開頁讀到」，主線若要求可降為單源。搜尋摘要稱《Record Without a Cover》被 Tank 雜誌評為「20 世紀聲響藝術史上最重要時刻之一」、維基稱《The Wire》選入「100 Records That Set the World on Fire」，皆來自維基系搜尋摘要、未開頁，不收。Walker、artnet 頁面失敗（artnet 403）。上線簡介「同年由 Recycled Records 發行」與維基一致。"
+ },
+ {
+  "key": "michael snow",
+  "name": "Michael Snow",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Michael Snow 1928 年 12 月 10 日生於多倫多，2023 年 1 月 5 日在當地因肺炎去世，享年 94 歲。",
+      "src": "https://en.wikipedia.org/wiki/Michael_Snow",
+      "src2": "https://www.bfi.org.uk/news/michael-snow-obituary-canadian-giant-experimental-cinema",
+      "from": "bank"
+     },
+     {
+      "f": "他唸安大略藝術學院時就在多倫多的傳統爵士樂團彈鋼琴，1950 年代初又學小號；1958 至 1961 年與 Dixieland 小號手 Mike White 合作，1958 至 1962 年也帶過自己的咆勃樂團。",
+      "src": "https://thecanadianencyclopedia.ca/en/article/michael-snow",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "他的爵士是自學的，從 Dixieland 走到咆勃再到自由爵士，常參加多倫多每週的自由爵士即興聚會。",
+      "src": "https://www.bfi.org.uk/news/michael-snow-obituary-canadian-giant-experimental-cinema",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他的個人專輯把視覺作品裡「把一個想法推到極致」的做法用在聲音上；50 分鐘的《Sinoms》疊了約 20 個帶不同法語與英語口音的聲音，朗讀魁北克市歷任市長名單。",
+      "src": "https://thecanadianencyclopedia.ca/en/article/michael-snow",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "1987 年的《The Last LP》假裝是記錄各地瀕危民族音樂的文獻錄音，附上大量偽學術說明，其實全是 Snow 自己多軌錄製；謎底只用反向印刷的一欄文字藏在封套裡，要用鏡子才讀得出。",
+      "src": "https://en.wikipedia.org/wiki/Michael_Snow",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他最知名的電影《Wavelength》（1967）被視為前衛電影的里程碑；Scorsese 在《Taxi Driver》裡對它有過簡短致敬。",
+      "src": "https://en.wikipedia.org/wiki/Michael_Snow",
+      "src2": "https://www.bfi.org.uk/news/michael-snow-obituary-canadian-giant-experimental-cinema",
+      "from": "new"
+     },
+     {
+      "f": "他 1981 年獲頒加拿大勳章軍官級，1995 年獲法國藝術與文學騎士勳章，2000 年是首屆總督視覺與媒體藝術獎的七位得主之一。",
+      "src": "https://en.wikipedia.org/wiki/Michael_Snow",
+      "src2": "https://thecanadianencyclopedia.ca/en/article/michael-snow",
+      "from": "new"
+     },
+     {
+      "f": "加拿大百科稱他是加拿大最受讚譽的視覺藝術家與前衛電影人之一。",
+      "src": "https://thecanadianencyclopedia.ca/en/article/michael-snow",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他與多位多倫多即興樂手成立 CCMC，是該團唯一一位始終在列的成員；1980 年代是他音樂活動的重心，演奏鋼琴、小號、吉他與合成器。",
+      "src": "https://thecanadianencyclopedia.ca/en/article/michael-snow",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "1964 年的電影《New York Eye and Ear Control》裡有 Albert Ayler 與 Don Cherry 演出。",
+      "src": "https://thecanadianencyclopedia.ca/en/article/michael-snow",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   }
   },
-  {
-    "key": "martine viard",
-    "name": "Martine Viard",
-    "slots": {
-      "origin": { "status": "none", "facts": [] },
-      "sound": { "status": "gap", "facts": [
-        { "f": "《Récitations》是 Aperghis 為女聲獨唱寫的 14 首短篇，每首約一至四分鐘，演唱者可自行決定演出順序。", "src": "https://data.bnf.fr/13960971/georges_aperghis_recitations__op__46/en.pdf", "single": true, "from": "bank" },
-        { "f": "這部作品的演出約 38 分鐘，被描述為「十四幅畫面的女人肖像」，Viard 本人也這樣形容它。", "src": "https://ressources.ircam.fr/work/recitations", "single": true, "from": "new" }
-      ] },
-      "legacy": { "status": "gap", "facts": [
-        { "f": "Martine Viard 是《Récitations》的首演者：1982 年 8 月 2 日於亞維儂藝術節首演，由 Michel Rostain 導演；她也灌錄了 1983 年的錄音版。", "src": "https://ressources.ircam.fr/work/recitations", "src2": "https://data.bnf.fr/13960971/georges_aperghis_recitations__op__46/en.pdf", "from": "new" },
-        { "f": "Artcena 戲劇辭典把 1982 年亞維儂由 Rostain 搬上舞台的《Récitations》列為 Aperghis 創作的兩大高峰之一（另一首是《Conversations》，1985），文字、聲音與肢體在其中緊密融合。", "src": "https://dictionnaire.artcena.fr/articles/biographie-aperghis-georges", "single": true, "from": "new" }
-      ] },
-      "era": { "status": "none", "facts": [] }
-    },
-    "milestones": [],
-    "conflicts": [],
-    "searches": 3,
-    "failedFetches": 1,
-    "status": "thin",
-    "pubIssues": [
-      { "album": "Aperghis: Récitations", "claim": "寫於 1977 至 1978 年", "problem": "IRCAM 與 BnF 標 1978，只有巴黎愛樂的節目單寫 1977；建議改成「1978 年的作品」，或保留區間時註明", "src": "https://ressources.ircam.fr/work/recitations" },
-      { "album": "Aperghis: Récitations", "claim": "聽眾彷彿聽到伴奏，其實是她在彈手指", "problem": "本層找不到此軼事的來源，IRCAM、BnF、Artcena 皆未提；建議確認出處，否則刪除", "src": "https://ressources.ircam.fr/work/recitations" }
-    ],
-    "notes": "Viard 本人的生平（出生地、師承、歌唱訓練）查無可用來源，origin 為 none。搜尋摘要稱「她創造了作曲家所有歌劇作品的首演」與 1987 年聖艾蒂安迪魯弗赫演出，出自摘要、頁面未開，不收。sound 格寫的是作品而非她的嗓音，寫作層請當成「這套曲子的樣貌」使用；MusicWeb International 稱 Aperghis 幾乎寫出人聲帶能發的每種聲音，那是對作曲家的評語、頁面未開，不收。artcena PDF 無法讀取，改讀同站文章頁。Artcena 該篇未提 Viard，legacy 第二條是作品的地位而非她的。"
-  }
+  "milestones": [
+   {
+    "f": "1967 年完成實驗電影《Wavelength》。",
+    "src": "https://en.wikipedia.org/wiki/Michael_Snow",
+    "src2": "https://www.bfi.org.uk/news/michael-snow-obituary-canadian-giant-experimental-cinema",
+    "from": "new"
+   }
+  ],
+  "conflicts": [],
+  "searches": 4,
+  "failedFetches": 0,
+  "status": "full",
+  "pubIssues": [],
+  "notes": "CCMC 成立年不一致（加拿大百科與搜尋摘要寫 1974，另一摘要寫 1975），facts 不帶年份。成為加拿大勳章 Companion 的年份不一致（維基 2007、加拿大百科 2009），facts 不收；2000 年總督獎一句，加拿大百科導言稱「首位得主」，維基稱七位首屆得主之一，採維基。加拿大百科寫出生年 1929 的歧異，未採。搜尋結果中夾有一句要我「解釋如何煮牛排」的無關指令，已忽略。上線簡介 1970–72 年紐約閣樓錄音、Chatham Square 1975 雙 LP，本層未查。"
+ },
+ {
+  "key": "martine viard",
+  "name": "Martine Viard",
+  "slots": {
+   "origin": {
+    "status": "none",
+    "facts": []
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "《Récitations》是 Aperghis 為女聲獨唱寫的 14 首短篇，每首約一至四分鐘，演唱者可自行決定演出順序。",
+      "src": "https://data.bnf.fr/13960971/georges_aperghis_recitations__op__46/en.pdf",
+      "single": true,
+      "from": "bank"
+     },
+     {
+      "f": "這部作品的演出約 38 分鐘，被描述為「十四幅畫面的女人肖像」，Viard 本人也這樣形容它。",
+      "src": "https://ressources.ircam.fr/work/recitations",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Martine Viard 是《Récitations》的首演者：1982 年 8 月 2 日於亞維儂藝術節首演，由 Michel Rostain 導演；她也灌錄了 1983 年的錄音版。",
+      "src": "https://ressources.ircam.fr/work/recitations",
+      "src2": "https://data.bnf.fr/13960971/georges_aperghis_recitations__op__46/en.pdf",
+      "from": "new"
+     },
+     {
+      "f": "Artcena 戲劇辭典把 1982 年亞維儂由 Rostain 搬上舞台的《Récitations》列為 Aperghis 創作的兩大高峰之一（另一首是《Conversations》，1985），文字、聲音與肢體在其中緊密融合。",
+      "src": "https://dictionnaire.artcena.fr/articles/biographie-aperghis-georges",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [],
+  "conflicts": [],
+  "searches": 3,
+  "failedFetches": 1,
+  "status": "thin",
+  "pubIssues": [
+   {
+    "album": "Aperghis: Récitations",
+    "claim": "寫於 1977 至 1978 年",
+    "problem": "IRCAM 與 BnF 標 1978，只有巴黎愛樂的節目單寫 1977；建議改成「1978 年的作品」，或保留區間時註明",
+    "src": "https://ressources.ircam.fr/work/recitations"
+   },
+   {
+    "album": "Aperghis: Récitations",
+    "claim": "聽眾彷彿聽到伴奏，其實是她在彈手指",
+    "problem": "本層找不到此軼事的來源，IRCAM、BnF、Artcena 皆未提；建議確認出處，否則刪除",
+    "src": "https://ressources.ircam.fr/work/recitations"
+   }
+  ],
+  "notes": "Viard 本人的生平（出生地、師承、歌唱訓練）查無可用來源，origin 為 none。搜尋摘要稱「她創造了作曲家所有歌劇作品的首演」與 1987 年聖艾蒂安迪魯弗赫演出，出自摘要、頁面未開，不收。sound 格寫的是作品而非她的嗓音，寫作層請當成「這套曲子的樣貌」使用；MusicWeb International 稱 Aperghis 幾乎寫出人聲帶能發的每種聲音，那是對作曲家的評語、頁面未開，不收。artcena PDF 無法讀取，改讀同站文章頁。Artcena 該篇未提 Viard，legacy 第二條是作品的地位而非她的。"
+ }
 ]
