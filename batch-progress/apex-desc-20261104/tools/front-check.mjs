@@ -1,7 +1,7 @@
 // 逐張打 /album-desc 比對前台是否已供新稿（鍵都已存在，不會觸發生成）。node front-check.mjs <batch>
 import fs from 'node:fs';
 const batch = process.argv[2];
-const rows = fs.readdirSync('desc-tools/batches/output').filter(f => f.startsWith(batch + '-out-')).flatMap(f => JSON.parse(fs.readFileSync('desc-tools/batches/output/' + f, 'utf8')));
+const rows = fs.readdirSync('desc-tools/batches/output').filter(f => new RegExp('^' + batch + '-out-\\d+\\.json$').test(f)).flatMap(f => JSON.parse(fs.readFileSync('desc-tools/batches/output/' + f, 'utf8')));
 const res = { ok: [], curated: [], other: [] };
 for (const r of rows) {
   const x = await fetch(`https://dip-vinyl-worker.kubinice06.workers.dev/album-desc?artist=${encodeURIComponent(r.artist)}&album=${encodeURIComponent(r.album)}&verify=${Date.now()}`, { headers: { 'User-Agent': 'dip-vinyl-shop/1.0 (+https://dipvinyl.tw)' } });

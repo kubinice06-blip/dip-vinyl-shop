@@ -107,3 +107,4 @@
 ### 重寫 KV
 
 - 兩批重新產 bulk（ad-01 30 鍵、ad-02 31 鍵）並 `wrangler@4 kv bulk put --remote`，皆 `Success!`。`kv-before-ad-0X.json` 保留的是本工作階段寫入**之前**的原始值，回滾用它。
+- **工具錯誤一次**：`ad.mjs`／`front-check.mjs`／`apply-review.mjs` 用 `startsWith('<批>-out-')` 選檔，把 `.v1.json` 備份也讀進來；Map 後讀蓋前，第二次 bulk put 實際寫回的是**第一版（含出處）**。前台比對抓到（35/60 不符），改成只認 `^<批>-out-\d+\.json$`，重產 bulk 並逐鍵對過輸出檔（30/30、31/31）後再 put 一次。之後的批沿用修好的工具，不會再發生。

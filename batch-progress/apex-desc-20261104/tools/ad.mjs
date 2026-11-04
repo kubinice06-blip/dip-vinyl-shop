@@ -25,7 +25,7 @@ async function bulkGet(ks) {
   }
   return vals;
 }
-const outRows = () => fs.readdirSync('desc-tools/batches/output').filter(f => f.startsWith(batch + '-out-'))
+const outRows = () => fs.readdirSync('desc-tools/batches/output').filter(f => new RegExp('^' + batch + '-out-\\d+\\.json$').test(f))
   .flatMap(f => JSON.parse(fs.readFileSync('desc-tools/batches/output/' + f, 'utf8')));
 
 if (cmd === 'cards') {

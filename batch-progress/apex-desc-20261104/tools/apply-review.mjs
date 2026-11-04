@@ -2,7 +2,7 @@
 import fs from 'node:fs';
 const [batch, ef] = process.argv.slice(2);
 const edits = JSON.parse(fs.readFileSync(ef, 'utf8'));
-const files = fs.readdirSync('desc-tools/batches/output').filter(f => f.startsWith(batch + '-out-')).map(f => 'desc-tools/batches/output/' + f);
+const files = fs.readdirSync('desc-tools/batches/output').filter(f => new RegExp('^' + batch + '-out-\\d+\\.json$').test(f)).map(f => 'desc-tools/batches/output/' + f);
 let n = 0;
 for (const f of files) {
   const o = JSON.parse(fs.readFileSync(f, 'utf8'));
