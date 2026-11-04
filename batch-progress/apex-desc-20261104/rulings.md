@@ -50,3 +50,38 @@
 - `/album-desc` 逐張比對 30 張：29 張前台已是新稿（邊緣快取約一分鐘後才換）。
 - **《Kind of Blue》前台仍是 CURATED**：實測 worker 對非 CJK 卡先讀 CURATED_DESCS 再讀 desc2（與 apply-pub-fix-desc 檔頭寫的順序不同；kv-from-manifest 註解寫 desc2 優先只適用 CJK 分支）。desc2 已寫好，要店主在 worker 拿掉這筆 CURATED 並部署才會生效。《The Dark Side of the Moon》（後續批）同樣情況。
 - manifest：ad-01 的 30 張都不在任何 onboarding manifest 裡（早期卡），0 處需同步。
+
+## ad-02（殿堂 30 張，s1）
+
+- 研究 3 Sonnet（WebSearch a 8／b 1／c 4 次；全工作階段研究層合計 26 次）、寫作 2 Opus；coverage 無 none。
+- 研究層推翻舊簡介的主要錯誤（新稿未沿用）：DJ Shadow 器材（兩台唱盤、Pro Tools → 維基為 MPC60、SL-1200、ADAT）、J Dilla「31 首中 29 首在醫院完成」（未證實，新稿寫說法不一）、Madvillain 機上失竊細節、Eminem 葛萊美項數、Burial 起底與賭盤、BVSC「七天」（實為六天）、大滝詠一「200 萬張」、Os Mutantes Green Devil 踏板與熱可可罐、Clube da Esquina 封面男孩、De La Soul 訴訟金額、Jazzmatazz「被取樣的樂手回來重奏」。
+- 研究稿錯一處由寫作層抓到：`ad-02-a.json` 把〈Impeach the President〉記成 James Brown 的歌，實為 The Honey Drippers；成稿沒寫這首，研究稿已更正並註記。
+- 機器 QA：`qa-batch research ad-02` 全過；`out` 5 個標記皆為具名出處（Village Voice Pazz & Jop、Rolling Stone Brasil、Folha de S.Paulo）與 Aphex Twin 本名的誤報；fix-spacing 0；字數 252–280。
+
+### 主線審稿（2026-11-04，30 張逐張讀、逐句對研究稿）
+
+改 14 處（同一張多次壓字分開記）：
+
+- `aphex twin|selected ambient works 85-92`：「是 以 Aphex Twin 名義」→「是以 Aphex Twin 名義」。多餘空格
+- `steve reich|music for 18 musicians`：「《Music for 18 Musicians》是 Steve Reich 的作品，K. Robert Schwarz 在《Minimalists》裡稱它也許是 Reich 最偉大的作品。1974 到 1976 年寫成，1976 年在紐約首演，1978 年由 Steve Reich and Musicians 為 ECM 錄音。」→「《Music for 18 Musicians》是 Steve Reich 為十八位樂手寫的作品，這張是他自己的樂團 1978 年為 ECM 錄的版本，K. Robert Schwarz 在《Minimalists》裡稱這首曲子也許是 Reich 最偉大的作品。1974 到 1976 年寫成，1976 年在紐約首演。」。審稿第 1 問：第一句只說「是 Reich 的作品」，沒交代這張唱片是什麼（作曲家自己樂團的 ECM 首錄）
+- `buena vista social club|buena vista social club`：「《Buena Vista Social Club》是 Guinness 認定最暢銷的世界音樂專輯，1998 年獲葛萊美最佳傳統熱帶拉丁專輯。製作方原本找 Ry Cooder 和馬利樂手合作，簽證沒下來，才改錄古巴 son；1996 年在哈瓦那 EGREM 花六天錄成。」→「《Buena Vista Social Club》是一群古巴老樂手 1996 年在哈瓦那錄的專輯，Guinness 認定它是最暢銷的世界音樂專輯，1998 年獲葛萊美最佳傳統熱帶拉丁專輯。製作方原本找 Ry Cooder 和馬利樂手合作，簽證沒下來，才改錄古巴 son，在 EGREM 錄音室花六天錄成。」。審稿第 1 問：第一句只有銷量封號，沒說這是什麼唱片
+- `buena vista social club|buena vista social club`：「，在 EGREM 錄音室花六天錄成。曲種有 son cubano、bolero 與 danzón，」→「，花六天錄成。曲種有 son cubano、bolero 與 danzón，」。補第一句後超字（298），刪錄音室名
+- `buena vista social club|buena vista social club`：「〈Chan Chan〉是四和弦的 son，〈Candela〉有長段即興合奏。」→「〈Chan Chan〉是只用四個和弦的 son。」。壓字（287→280 內）
+- `beastie boys|paul's boutique`：「之後的取樣官司讓這種做法就此終結」→「Sound on Sound 指出這種做法在 Biz Markie 的取樣官司後就做不到了」。原句「之後的取樣官司」沒指名、因果講滿；照研究稿 Sound on Sound 條改成具名出處
+- `eric b. & rakim|paid in full`：「紐約時報的 Ben Ratliff」→「《紐約時報》的 Ben Ratliff」。報刊名加書名號
+- `jay-z|the blueprint`：「國家錄音登記冊」→「國家錄音登記表」。用語統一
+- `dj shadow|endtroducing.....`：「是 DJ Shadow 的專輯，」→「是 DJ Shadow 1996 年的專輯，」。第一句補年份（研究稿：1996-09-16 Mo' Wax 發行）
+- `beastie boys|paul's boutique`：「，〈Egg Man〉放進《大白鯊》主題」→「（刪）」。壓字
+- `beastie boys|paul's boutique`：「當時 Capitol 幾乎沒宣傳，銷量不如預期。」→「（刪）」。壓字（308→280 內）
+- `eric b. & rakim|paid in full`：「為配合預算一週內輪班錄完」→「一週內輪班錄完」。壓字
+- `dj shadow|endtroducing.....`：「Björk 和電影片段」→「Björk 的唱片」。壓字
+- `dj shadow|endtroducing.....`：「他用一台 MPC60 取樣機」→「他用 MPC60 取樣機」。壓字（282→280）
+
+其餘 22 張逐張審過，未改字。
+
+### 上線
+
+- `kv-token-check` 通過；舊值存 `kv-before-ad-02.json`（60 鍵，31 個非 null）。
+- bulk put 31 鍵（desc2 30＋大滝詠一 desc4 1，CJK 卡兩鍵同寫），wrangler 印 `Success!`。寫入後立刻回讀 22 鍵是舊值，等 45 秒重讀 31/31 逐字一致（runbook 記載的 10–30 秒延遲）。
+- `/album-desc` 逐張比對 30 張：30/30 前台為新稿。
+- manifest：本批 30 張都不在 onboarding manifest，0 處需同步。
