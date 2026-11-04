@@ -54,7 +54,15 @@
   },
   "rgMbid": "",
   "identitySource": "manual",
-  "mbAbsenceProof": "MB release-group 搜尋 Les Ambassadeurs / Mandjou 無結果",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist:\"Les Ambassadeurs\" AND releasegroup:\"Mandjou\" → count 0",
+    "releasegroup:\"Mandjou\" → count 2",
+    "artist:\"Les Ambassadeurs\" → count 30"
+   ],
+   "checkedAt": "2026-11-04T07:17:47.981Z",
+   "conclusion": "artist:\"Les Ambassadeurs\" AND releasegroup:\"Mandjou\" → count 0，前 0 筆無同藝人同盤名的 release-group；releasegroup:\"Mandjou\" → count 2，前 2 筆無同藝人同盤名的 release-group；artist:\"Les Ambassadeurs\" → count 30，前 25 筆無同藝人同盤名的 release-group。身分以 Discogs master／release 為準。"
+  },
   "manualEvidenceUrls": [
    "https://www.discogs.com/master/533505",
    "https://api.discogs.com/masters/533505"
@@ -273,7 +281,15 @@
   },
   "rgMbid": "",
   "identitySource": "manual",
-  "mbAbsenceProof": "MB release-group 搜尋無此專輯（artist+title）",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist:\"Fanny's Group\" AND releasegroup:\"Cium Mesra\" → count 0",
+    "releasegroup:\"Cium Mesra\" → count 0",
+    "artist:\"Fanny's Group\" → count 0"
+   ],
+   "checkedAt": "2026-11-04T07:17:47.981Z",
+   "conclusion": "artist:\"Fanny's Group\" AND releasegroup:\"Cium Mesra\" → count 0，前 0 筆無同藝人同盤名的 release-group；releasegroup:\"Cium Mesra\" → count 0，前 0 筆無同藝人同盤名的 release-group；artist:\"Fanny's Group\" → count 0，前 0 筆無同藝人同盤名的 release-group。身分以 Discogs master／release 為準。"
+  },
   "manualEvidenceUrls": [
    "https://www.discogs.com/master/1780374",
    "https://api.discogs.com/masters/1780374"
@@ -350,7 +366,15 @@
   },
   "rgMbid": "",
   "identitySource": "manual",
-  "mbAbsenceProof": "MB release-group 搜尋無此專輯（artist+title）",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist:\"Tokyo Kid Brothers\" AND releasegroup:\"黄金バット Golden Bat\" → count 0",
+    "releasegroup:\"黄金バット Golden Bat\" → count 0",
+    "artist:\"Tokyo Kid Brothers\" → count 3"
+   ],
+   "checkedAt": "2026-11-04T07:17:47.981Z",
+   "conclusion": "artist:\"Tokyo Kid Brothers\" AND releasegroup:\"黄金バット Golden Bat\" → count 0，前 0 筆無同藝人同盤名的 release-group；releasegroup:\"黄金バット Golden Bat\" → count 0，前 0 筆無同藝人同盤名的 release-group；artist:\"Tokyo Kid Brothers\" → count 3，前 3 筆無同藝人同盤名的 release-group。身分以 Discogs master／release 為準。"
+  },
   "manualEvidenceUrls": [
    "https://www.discogs.com/master/674627",
    "https://api.discogs.com/masters/674627"
@@ -391,7 +415,15 @@
   },
   "rgMbid": "",
   "identitySource": "manual",
-  "mbAbsenceProof": "MB release-group 搜尋無此專輯（artist+title）",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist:\"Cool Knights\" AND releasegroup:\"Bana Mulenga\" → count 0",
+    "releasegroup:\"Bana Mulenga\" → count 0",
+    "artist:\"Cool Knights\" → count 0"
+   ],
+   "checkedAt": "2026-11-04T07:17:47.981Z",
+   "conclusion": "artist:\"Cool Knights\" AND releasegroup:\"Bana Mulenga\" → count 0，前 0 筆無同藝人同盤名的 release-group；releasegroup:\"Bana Mulenga\" → count 0，前 0 筆無同藝人同盤名的 release-group；artist:\"Cool Knights\" → count 0，前 0 筆無同藝人同盤名的 release-group。身分以 Discogs master／release 為準。"
+  },
   "manualEvidenceUrls": [
    "https://www.discogs.com/master/1100576",
    "https://api.discogs.com/masters/1100576"
@@ -432,7 +464,15 @@
   },
   "rgMbid": "",
   "identitySource": "manual",
-  "mbAbsenceProof": "MB release-group 搜尋無此專輯（artist+title）",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist:\"Mike Nyoni\" AND releasegroup:\"I Can't Understand You\" → count 0",
+    "releasegroup:\"I Can't Understand You\" → count 0",
+    "artist:\"Mike Nyoni\" → count 1"
+   ],
+   "checkedAt": "2026-11-04T07:17:47.981Z",
+   "conclusion": "artist:\"Mike Nyoni\" AND releasegroup:\"I Can't Understand You\" → count 0，前 0 筆無同藝人同盤名的 release-group；releasegroup:\"I Can't Understand You\" → count 0，前 0 筆無同藝人同盤名的 release-group；artist:\"Mike Nyoni\" → count 1，前 1 筆無同藝人同盤名的 release-group。身分以 Discogs master／release 為準。"
+  },
   "manualEvidenceUrls": [
    "https://www.discogs.com/master/942566",
    "https://api.discogs.com/masters/942566"
@@ -473,7 +513,15 @@
   },
   "rgMbid": "",
   "identitySource": "manual",
-  "mbAbsenceProof": "MusicBrainz release-group 搜尋 2026-11-04 無對應條目（或僅有他人／重發版）",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist:\"Sagrado Coração da Terra\" AND releasegroup:\"Sagrado Coração da Terra\" → count 0",
+    "releasegroup:\"Sagrado Coração da Terra\" → count 0",
+    "artist:\"Sagrado Coração da Terra\" → count 8"
+   ],
+   "checkedAt": "2026-11-04T07:17:47.981Z",
+   "conclusion": "artist:\"Sagrado Coração da Terra\" AND releasegroup:\"Sagrado Coração da Terra\" → count 0，前 0 筆無同藝人同盤名的 release-group；releasegroup:\"Sagrado Coração da Terra\" → count 0，前 0 筆無同藝人同盤名的 release-group；artist:\"Sagrado Coração da Terra\" → count 8，前 8 筆有同藝人同盤名的 release-group。藝人查詢唯一近似條目是 RG f3d56604「Sagrado」1985（盤名不同、年份晚一年，為 Bemol 再發或另一張），不是 1984 自費原盤。。身分以 Discogs master／release 為準。"
+  },
   "manualEvidenceUrls": [
    "https://www.discogs.com/master/389803",
    "https://www.discogs.com/release/15452530"
@@ -514,7 +562,15 @@
   },
   "rgMbid": "",
   "identitySource": "manual",
-  "mbAbsenceProof": "MusicBrainz release-group 搜尋 2026-11-04 無對應條目（或僅有他人／重發版）",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist:\"Marlui Miranda\" AND releasegroup:\"Olho D'Água\" → count 0",
+    "releasegroup:\"Olho D'Água\" → count 3",
+    "artist:\"Marlui Miranda\" → count 5"
+   ],
+   "checkedAt": "2026-11-04T07:17:47.981Z",
+   "conclusion": "artist:\"Marlui Miranda\" AND releasegroup:\"Olho D'Água\" → count 0，前 0 筆無同藝人同盤名的 release-group；releasegroup:\"Olho D'Água\" → count 3，前 3 筆無同藝人同盤名的 release-group；artist:\"Marlui Miranda\" → count 5，前 5 筆無同藝人同盤名的 release-group。身分以 Discogs master／release 為準。"
+  },
   "manualEvidenceUrls": [
    "https://www.discogs.com/master/1046270",
    "https://www.discogs.com/release/7077149"
@@ -553,16 +609,15 @@
    "z": 3,
    "why": "新探戈、弦樂為主"
   },
-  "rgMbid": "",
-  "identitySource": "manual",
-  "mbAbsenceProof": "MusicBrainz release-group 搜尋 2026-11-04 無對應條目（或僅有他人／重發版）",
+  "rgMbid": "0bbf2004-d486-477f-b485-924452a8cfe1",
+  "identitySource": "pinned",
   "manualEvidenceUrls": [
    "https://www.discogs.com/master/1106261",
    "https://www.discogs.com/release/21813586"
   ],
   "curatorWhy": "拉美私壓：流亡巴黎的阿根廷新探戈／政治歌謠四重奏",
   "curatorRisk": "⚠ Discogs 登記為西班牙 Polydor 壓片；Apple 另有同團 Canciones Tradicionales de Argentina（不同專輯）",
-  "mbNote": "MB 查無（），走 §1 人工身分。證據：https://www.discogs.com/master/1106261 https://www.discogs.com/release/21813586 https://www.discogs.com/master/1106261 https://www.discogs.com/release/21813586 https://itunes.apple.com/search?entity=album&term=Cuarteto%20Cedr%C3%B3n%20De%20Argentina（無結果，封面取 Discogs）",
+  "mbNote": "主線 2026-11-04 gate 前 MB 重查：release-group 0bbf2004-d486-477f-b485-924452a8cfe1 即本盤（研究層 c 組亦指出），改釘住。證據：https://musicbrainz.org/release-group/0bbf2004-d486-477f-b485-924452a8cfe1",
   "releaseType": "Album",
   "exceptionReason": "",
   "exceptionEvidenceUrls": [],
@@ -594,16 +649,15 @@
    "z": 3,
    "why": "爵士搖滾即興"
   },
-  "rgMbid": "",
-  "identitySource": "manual",
-  "mbAbsenceProof": "MusicBrainz release-group 搜尋 2026-11-04 無對應條目（或僅有他人／重發版）",
+  "rgMbid": "32e5e0ab-ffc3-4dd8-8d69-970ccbaaefd6",
+  "identitySource": "pinned",
   "manualEvidenceUrls": [
    "https://www.discogs.com/master/2394903",
    "https://www.discogs.com/release/873309"
   ],
   "curatorWhy": "東歐國營廠冷門盤：波蘭藍調／爵士搖滾團，國營廠冷門盤",
   "curatorRisk": "⚠ Discogs 條目 873309 為 master 下 release id，廠牌取推測 Muza；主線核對",
-  "mbNote": "MB 查無（），走 §1 人工身分。證據：https://www.discogs.com/master/2394903 https://www.discogs.com/release/873309 https://www.discogs.com/master/2394903 https://www.discogs.com/release/873309 https://itunes.apple.com/search?entity=album&term=Krzak%20Paczka（無結果，封面取 Discogs）",
+  "mbNote": "主線 2026-11-04 gate 前 MB 重查：release-group 32e5e0ab-ffc3-4dd8-8d69-970ccbaaefd6 即本盤（研究層 c 組亦指出），改釘住。證據：https://musicbrainz.org/release-group/32e5e0ab-ffc3-4dd8-8d69-970ccbaaefd6",
   "releaseType": "Album",
   "exceptionReason": "",
   "exceptionEvidenceUrls": [],
@@ -637,7 +691,15 @@
   },
   "rgMbid": "",
   "identitySource": "manual",
-  "mbAbsenceProof": "MusicBrainz release-group 搜尋 2026-11-04 無對應條目（或僅有他人／重發版）",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist:\"Lutajuća Srca\" AND releasegroup:\"Lutajuća Srca 1\" → count 0",
+    "releasegroup:\"Lutajuća Srca 1\" → count 0",
+    "artist:\"Lutajuća Srca\" → count 0"
+   ],
+   "checkedAt": "2026-11-04T07:17:47.981Z",
+   "conclusion": "artist:\"Lutajuća Srca\" AND releasegroup:\"Lutajuća Srca 1\" → count 0，前 0 筆無同藝人同盤名的 release-group；releasegroup:\"Lutajuća Srca 1\" → count 0，前 0 筆無同藝人同盤名的 release-group；artist:\"Lutajuća Srca\" → count 0，前 0 筆無同藝人同盤名的 release-group。身分以 Discogs master／release 為準。"
+  },
   "manualEvidenceUrls": [
    "https://www.discogs.com/master/1118673",
    "https://www.discogs.com/release/1054395"
@@ -676,16 +738,15 @@
    "z": 4,
    "why": "長篇電聲冥想"
   },
-  "rgMbid": "",
-  "identitySource": "manual",
-  "mbAbsenceProof": "MusicBrainz release-group 搜尋 2026-11-04 無對應條目（或僅有他人／重發版）",
+  "rgMbid": "67561f1f-85b5-459f-aae9-1d5242caff2f",
+  "identitySource": "pinned",
   "manualEvidenceUrls": [
    "https://www.discogs.com/master/317935",
    "https://www.discogs.com/release/938401"
   ],
   "curatorWhy": "早期電子私壓：法國電聲具體音樂大作，融合東方冥想",
   "curatorRisk": "",
-  "mbNote": "MB 查無（），走 §1 人工身分。證據：https://www.discogs.com/master/317935 https://www.discogs.com/release/938401 https://www.discogs.com/master/317935 https://www.discogs.com/release/938401 https://itunes.apple.com/search?entity=album&term=Jean-Claude%20Eloy%20Sh%C4%81nti（無結果，封面取 Discogs）",
+  "mbNote": "主線 2026-11-04 gate 前 MB 重查：release-group 67561f1f-85b5-459f-aae9-1d5242caff2f 即本盤（研究層 c 組亦指出），改釘住。證據：https://musicbrainz.org/release-group/67561f1f-85b5-459f-aae9-1d5242caff2f",
   "releaseType": "Album",
   "exceptionReason": "",
   "exceptionEvidenceUrls": [],
@@ -717,16 +778,15 @@
    "z": 4,
    "why": "磁帶音樂、抽象"
   },
-  "rgMbid": "",
-  "identitySource": "manual",
-  "mbAbsenceProof": "MusicBrainz release-group 搜尋 2026-11-04 無對應條目（或僅有他人／重發版）",
+  "rgMbid": "85d86ba0-366f-4656-8c35-41aced83fc5c",
+  "identitySource": "pinned",
   "manualEvidenceUrls": [
    "https://www.discogs.com/master/430466",
    "https://www.discogs.com/release/1151501"
   ],
   "curatorWhy": "早期電子私壓：美國磁帶音樂先驅，La Monte Young 同輩，僅限量壓製",
   "curatorRisk": "⚠ Apple 另有 New Sounds in Electronic Music 合輯（不同專輯）；MB 有同名 RG 85d86ba0（1969）可補",
-  "mbNote": "MB 查無（），走 §1 人工身分。證據：https://www.discogs.com/master/430466 https://www.discogs.com/release/1151501 https://www.discogs.com/master/430466 https://www.discogs.com/release/1151501 https://itunes.apple.com/search?entity=album&term=Richard%20Maxfield%20Electronic%20Music（無結果，封面取 Discogs）",
+  "mbNote": "主線 2026-11-04 gate 前 MB 重查：release-group 85d86ba0-366f-4656-8c35-41aced83fc5c 即本盤（研究層 c 組亦指出），改釘住。證據：https://musicbrainz.org/release-group/85d86ba0-366f-4656-8c35-41aced83fc5c",
   "releaseType": "Album",
   "exceptionReason": "",
   "exceptionEvidenceUrls": [],
@@ -760,7 +820,15 @@
   },
   "rgMbid": "",
   "identitySource": "manual",
-  "mbAbsenceProof": "MusicBrainz release-group 搜尋 2026-11-04 無對應條目（或僅有他人／重發版）",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist:\"Ralph Lundsten\" AND releasegroup:\"Elektronisk Musik\" → count 0",
+    "releasegroup:\"Elektronisk Musik\" → count 1",
+    "artist:\"Ralph Lundsten\" → count 31"
+   ],
+   "checkedAt": "2026-11-04T07:17:47.981Z",
+   "conclusion": "artist:\"Ralph Lundsten\" AND releasegroup:\"Elektronisk Musik\" → count 0，前 0 筆無同藝人同盤名的 release-group；releasegroup:\"Elektronisk Musik\" → count 1，前 1 筆無同藝人同盤名的 release-group；artist:\"Ralph Lundsten\" → count 31，前 25 筆無同藝人同盤名的 release-group。身分以 Discogs master／release 為準。"
+  },
   "manualEvidenceUrls": [
    "https://www.discogs.com/master/2467426",
    "https://www.discogs.com/release/907465"

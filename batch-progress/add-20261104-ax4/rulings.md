@@ -73,3 +73,4 @@
 
 ## 主線審稿（51875–）
 - 51875 逐張讀 20 張。改 2 處：Hairpin Circus「菊地正弘」→「菊地雅洋」（菊地雅章胞弟、鍵盤手的漢字原名；研究稿寫成正弘是羅馬字回推錯字）；Krzak「極受歡迎」改回研究稿原意「最受歡迎的器樂搖滾團之一」。其餘照過：無媒體名、無「據說」、無分數。
+- 51876 gate 前 MB 重查人工身分卡：Cuarteto Cedrón《De Argentina》（RG 0bbf2004）、Krzak《Paczka》（RG 32e5e0ab，MB 首發日記 2005 是 Metal Mind 再發，年份仍照原盤 1982）、Eloy《Shānti》（RG 67561f1f）、Maxfield《Electronic Music》（RG 85d86ba0）改釘 MB；封面仍用 Discogs 原盤圖。其餘人工卡附實查 mbAbsenceProof（三組查詢）。

@@ -69,3 +69,10 @@
 - **51763** 否定句轉正面：Ton Vlasman note「沒有鼓組」寫成「打擊只交給手鼓」；Free Enterprize「無廠牌」寫成「兩人在美國私壓發行」。媒體名、資料庫名、榜單皆未進正文。
 - **51764** Dormouse 壓量：note 原寫「據稱約壓 500 張」，正文不用轉述詞，直述「約壓 500 張」（單一來源；主線審稿若嫌不穩可整格捨去，捨後仍 ≥180）。
 - **51765** 自掃 han() 4-gram（本檔 13 張＋writer-2 hook）：3 張以上只剩「主奏吉他」（樂器名）；拆掉 2 張殘片「十二首歌」「自行發行」「與合成器」「奏吉他與」「小廠發行」「迷幻搖滾」「他彈吉他」「民謠搖滾」「迷幻民謠」（Turner 改 folk rock、Sly Boots 改「帶 acid rock 色彩的民謠搖滾」；Rin Eric 的「迷幻民謠」為 note 指派領句保留）。現況 2 張以上只剩「主奏吉他」×3；out-2 交件後請主線跨檔合掃一次。
+
+## 寫作層（writer-2）（51766–51770）
+- **51766** 交件 `desc-tools/batches/output/add-20261104-ax3-out-2.json` 13 張（full 8：205–239；thin 5：162–180）。逐張：Princess Flower 162、Inner Dialogue 176、Smack 205、Anderson 237、Probe 238、Ebony 227、Heaven & Earth 171、Bonner 239、Lasha 238、Pope 180、Few 179、Mtume 235、Thornton 221。`qa-batch out`、`qa-check-research`、`fix-spacing` 皆 0；「據」、資料庫與媒體名 grep 0。
+- **51767** 初稿 4 張超標（Princess Flower 205（thin）、Bonner 257、Anderson 246、Probe 241），整格捨去：Princess Flower 捨〈Ancient Faces〉15 分 36 秒整格（hook 已帶「最長一首 15 分半」，留著即複述 hook）與「美國」；Bonner 把樂手分工改成並列短句；Anderson 錄音地改「等處」句。
+- **51768** 避免複述 hook：Lasha 第二句不再寫「生於德州」只寫 1929 年出生；Heaven & Earth 不再寫「四位」，改「名單以 Louis Satterfield 打頭」；Mtume 不寫約 91 分鐘（hook 已有九十多分鐘），The East 寫成「帶黑人民族主義色彩、也兼辦教育」；Anderson 時序寫「Dire Straits 成軍是錄完這張之後的事」。Mtume 日期句寫「29 日，地點是」，與鉤子層 51759 預配的「日於」不同但全批唯一；Bonner 生年改「生於 1948 年的 Joe Bonner」以拆開 hook 尾字「女聲」與日期的黏合。
+- **51769** 自掃（兩檔合掃、han() 4-gram）：3 張以上只剩樂器名「次中音薩克斯風」；途中拆掉跨檔 2 張殘片「錄下這張」「兩把吉他加」「風琴撐起」「貝斯與鼓」「與合成器」「兩位女聲」「這張唱片」「風琴口琴」「與電貝斯」「他吹長笛」，以及組內「拉小提琴」「吹次中音」「貝斯打鼓」。剩 2 張的「自由爵士」（曲風名）與「克斯風手」（樂器名）不動。
+- **51770** 第二句領句全照 note 指派；身分補足：Princess Flower、Inner Dialogue、Probe 只用 note 內的編制描述（未從 facts 撈曲風）。

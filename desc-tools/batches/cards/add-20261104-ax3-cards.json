@@ -19,7 +19,15 @@
   },
   "rgMbid": "",
   "identitySource": "manual",
-  "mbAbsenceProof": "MB release-group 搜尋（artist+title）無結果，2026-11-04",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist:\"Sly Boots\" AND releasegroup:\"Notes on a Journey\" → count 0",
+    "releasegroup:\"Notes on a Journey\" → count 0",
+    "artist:\"Sly Boots\" → count 1"
+   ],
+   "checkedAt": "2026-11-04T07:17:47.981Z",
+   "conclusion": "artist:\"Sly Boots\" AND releasegroup:\"Notes on a Journey\" → count 0，前 0 筆無同藝人同盤名的 release-group；releasegroup:\"Notes on a Journey\" → count 0，前 0 筆無同藝人同盤名的 release-group；artist:\"Sly Boots\" → count 1，前 1 筆無同藝人同盤名的 release-group。身分以 Discogs master／release 為準。"
+  },
   "manualEvidenceUrls": [
    "https://www.discogs.com/master/656009",
    "https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Sly%20Boots&album=Notes%20on%20a%20Journey"
@@ -60,7 +68,15 @@
   },
   "rgMbid": "",
   "identitySource": "manual",
-  "mbAbsenceProof": "MB release-group 搜尋（artist+title）無結果，2026-11-04",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist:\"Richard William Turner\" AND releasegroup:\"The Passenger\" → count 0",
+    "releasegroup:\"The Passenger\" → count 38",
+    "artist:\"Richard William Turner\" → count 0"
+   ],
+   "checkedAt": "2026-11-04T07:17:47.981Z",
+   "conclusion": "artist:\"Richard William Turner\" AND releasegroup:\"The Passenger\" → count 0，前 0 筆無同藝人同盤名的 release-group；releasegroup:\"The Passenger\" → count 38，前 10 筆無同藝人同盤名的 release-group；artist:\"Richard William Turner\" → count 0，前 0 筆無同藝人同盤名的 release-group。身分以 Discogs master／release 為準。"
+  },
   "manualEvidenceUrls": [
    "https://www.discogs.com/master/1674125",
    "https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Richard%20William%20Turner&album=The%20Passenger"
@@ -101,7 +117,15 @@
   },
   "rgMbid": "",
   "identitySource": "manual",
-  "mbAbsenceProof": "MB release-group 搜尋（artist+title）無結果，2026-11-04",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist:\"Free Enterprize\" AND releasegroup:\"The Eye of the Beholder\" → count 0",
+    "releasegroup:\"The Eye of the Beholder\" → count 6",
+    "artist:\"Free Enterprize\" → count 0"
+   ],
+   "checkedAt": "2026-11-04T07:17:47.981Z",
+   "conclusion": "artist:\"Free Enterprize\" AND releasegroup:\"The Eye of the Beholder\" → count 0，前 0 筆無同藝人同盤名的 release-group；releasegroup:\"The Eye of the Beholder\" → count 6，前 6 筆無同藝人同盤名的 release-group；artist:\"Free Enterprize\" → count 0，前 0 筆無同藝人同盤名的 release-group。身分以 Discogs master／release 為準。"
+  },
   "manualEvidenceUrls": [
    "https://www.discogs.com/master/1702214",
    "https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Free%20Enterprize&album=The%20Eye%20of%20the%20Beholder"
@@ -177,7 +201,15 @@
   },
   "rgMbid": "",
   "identitySource": "manual",
-  "mbAbsenceProof": "MB release-group 搜尋（artist+title）無結果，2026-11-04",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist:\"Ghostdance\" AND releasegroup:\"Ghostdance\" → count 0",
+    "releasegroup:\"Ghostdance\" → count 5",
+    "artist:\"Ghostdance\" → count 0"
+   ],
+   "checkedAt": "2026-11-04T07:17:47.981Z",
+   "conclusion": "artist:\"Ghostdance\" AND releasegroup:\"Ghostdance\" → count 0，前 0 筆無同藝人同盤名的 release-group；releasegroup:\"Ghostdance\" → count 5，前 5 筆無同藝人同盤名的 release-group；artist:\"Ghostdance\" → count 0，前 0 筆無同藝人同盤名的 release-group。身分以 Discogs master／release 為準。"
+  },
   "manualEvidenceUrls": [
    "https://www.discogs.com/master/955953",
    "https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Ghostdance&album=Ghostdance"
@@ -326,7 +358,15 @@
   },
   "rgMbid": "",
   "identitySource": "manual",
-  "mbAbsenceProof": "MB release-group 搜尋（artist+title）無結果，2026-11-04",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist:\"Stefan Gnys\" AND releasegroup:\"English Oaks and Evangeline\" → count 0",
+    "releasegroup:\"English Oaks and Evangeline\" → count 0",
+    "artist:\"Stefan Gnys\" → count 1"
+   ],
+   "checkedAt": "2026-11-04T07:17:47.981Z",
+   "conclusion": "artist:\"Stefan Gnys\" AND releasegroup:\"English Oaks and Evangeline\" → count 0，前 0 筆無同藝人同盤名的 release-group；releasegroup:\"English Oaks and Evangeline\" → count 0，前 0 筆無同藝人同盤名的 release-group；artist:\"Stefan Gnys\" → count 1，前 1 筆無同藝人同盤名的 release-group。身分以 Discogs master／release 為準。"
+  },
   "manualEvidenceUrls": [
    "https://www.discogs.com/master/4057558",
    "https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Stefan%20Gnys&album=English%20Oaks%20and%20Evangeline"
@@ -402,7 +442,15 @@
   },
   "rgMbid": "",
   "identitySource": "manual",
-  "mbAbsenceProof": "MB release-group 搜尋（artist+title）無結果，2026-11-04",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist:\"Circulation\" AND releasegroup:\"Tank Tracks\" → count 0",
+    "releasegroup:\"Tank Tracks\" → count 2",
+    "artist:\"Circulation\" → count 86"
+   ],
+   "checkedAt": "2026-11-04T07:17:47.981Z",
+   "conclusion": "artist:\"Circulation\" AND releasegroup:\"Tank Tracks\" → count 0，前 0 筆無同藝人同盤名的 release-group；releasegroup:\"Tank Tracks\" → count 2，前 2 筆無同藝人同盤名的 release-group；artist:\"Circulation\" → count 86，前 25 筆無同藝人同盤名的 release-group。身分以 Discogs master／release 為準。"
+  },
   "manualEvidenceUrls": [
    "https://www.discogs.com/master/1061597",
    "https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Circulation&album=Tank%20Tracks"
@@ -478,7 +526,15 @@
   },
   "rgMbid": "",
   "identitySource": "manual",
-  "mbAbsenceProof": "MB release-group 搜尋（artist+title）無結果，2026-11-04",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist:\"Ton Vlasman\" AND releasegroup:\"White Room With Disintegrating Walls\" → count 0",
+    "releasegroup:\"White Room With Disintegrating Walls\" → count 0",
+    "artist:\"Ton Vlasman\" → count 1"
+   ],
+   "checkedAt": "2026-11-04T07:17:47.981Z",
+   "conclusion": "artist:\"Ton Vlasman\" AND releasegroup:\"White Room With Disintegrating Walls\" → count 0，前 0 筆無同藝人同盤名的 release-group；releasegroup:\"White Room With Disintegrating Walls\" → count 0，前 0 筆無同藝人同盤名的 release-group；artist:\"Ton Vlasman\" → count 1，前 1 筆無同藝人同盤名的 release-group。身分以 Discogs master／release 為準。"
+  },
   "manualEvidenceUrls": [
    "https://www.discogs.com/master/268315",
    "https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Ton%20Vlasman&album=White%20Room%20With%20Disintegrating%20Walls"
@@ -624,7 +680,15 @@
   },
   "rgMbid": "",
   "identitySource": "manual",
-  "mbAbsenceProof": "MB release-group 搜尋（artist+title）無結果，2026-11-04",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist:\"Ian A. Anderson\" AND releasegroup:\"A Vulture Is Not a Bird You Can Trust\" → count 0",
+    "releasegroup:\"A Vulture Is Not a Bird You Can Trust\" → count 0",
+    "artist:\"Ian A. Anderson\" → count 2"
+   ],
+   "checkedAt": "2026-11-04T07:17:47.981Z",
+   "conclusion": "artist:\"Ian A. Anderson\" AND releasegroup:\"A Vulture Is Not a Bird You Can Trust\" → count 0，前 0 筆無同藝人同盤名的 release-group；releasegroup:\"A Vulture Is Not a Bird You Can Trust\" → count 0，前 0 筆無同藝人同盤名的 release-group；artist:\"Ian A. Anderson\" → count 2，前 2 筆無同藝人同盤名的 release-group。身分以 Discogs master／release 為準。"
+  },
   "manualEvidenceUrls": [
    "https://www.discogs.com/master/3011291",
    "https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Ian%20A.%20Anderson&album=A%20Vulture%20Is%20Not%20a%20Bird%20You%20Can%20Trust"
