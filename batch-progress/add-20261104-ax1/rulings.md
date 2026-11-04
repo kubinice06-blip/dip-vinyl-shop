@@ -101,3 +101,14 @@
 - **51568** 第二句照 51553／51558 配表逐張領句（廠牌創辦人／國籍／署名／兩人分工／創團者／廠牌／成員出身／城市／成立年／成員領軍／家鄉小鎮／樂種／成員名／生年／名義關係／本名＋生卒年）。媒體名、媒體榜單名次、星等、「據說／據傳」一律未寫；Harry Pussy 的地下刊物評價照 note 寫成「當時有地下刊物嫌它自溺」，不具名。Sissy Spacek「與她本人無關」改正面寫「純粹借名」；Atrax、MSBR 逝世標時序、一句帶過。
 - **51569** 自掃（han() 後中文 4-gram，本檔＋writer-1 現檔合掃）：3 張以上 0 條；2 張只剩「死亡工業」（樂種，對 writer-1 Genocide Organ）與「電子裝置」（Atrax／Wold 兩張 note 原詞）。初稿抓到並拆掉：自己的廠牌、在年推出、合計約分鐘、成目錄號、負責人聲與、轉成厚重、最長的有、推出編號、名義這捲、一捲卡帶、以之名做、人是美國、交給美國、把它做成、美國發行。writer-1 的 out 檔在我掃描期間仍在變動，主線收件時請再合掃一次。
 - **51570** `qa-batch out`、`qa-check-research`、`fix-spacing` 依派工未跑（不能 cd），交主線跑。
+
+## 寫作層（writer-1）（51561–51565）
+- **51561** 交件 `desc-tools/batches/output/add-20261104-ax1-out-1.json` 16 張，key 逐字同序；首句逐字照抄 hook。字數（Array.from）：full 11 張 190–238（Hanatarash 228、Gerogerigegege 194、Aube 190、Monde Bruits 238、VOG 222、Rape! 236、Vomir 234、Skin Crime 219、Macronympha 212、Haswell 226、Sutcliffe 211）；thin 5 張 151–171（The Rita 151、WJ 169、Taint 171、Emil 170、Genocide Organ 170）。初稿超標 3 張（Hanatarash 250、Monde Bruits 250、Genocide Organ 186 thin），整格捨去或併句：Hanatarash 併拒演句與 LP 句、Monde Bruits 去盤名改「原版」領日期句並併黑膠句、Genocide Organ 去「唱片」「團的」並重組廠牌句。
+- **51562** 第二句照 51553 配表逐張領句（成員名／在東京新宿／以 Aube 為名／生年／1980 年代末／名字直接／起步年／盒裝規格／側計畫主人／外人之口 Hospital Productions／活動年代／唱片行／金屬廢料／出生地／團主去向／組團年與城市）。「日」後一字照配：Monde Bruits 日首、Rape! 日由、Vomir 日在；其餘只寫到年或月。目錄號引入法逐張錯開（目錄號是／編號／目錄號／編號／盤號／SAD-07 是它的目錄號）。
+- **51563** 媒體名、媒體榜單名次整句不寫；無「據說／據傳」。Emil 照 51554 寫「唱片資料註明」；Haswell 盤面「最大音量」轉間接敘述。WJ 具名 Richard Ramirez（同人，預期內）。否定句避開：The Rita「不掛廠牌」改「卡帶在 1998 年問世」、WJ「不起伏」改「全程恆定、平直」。Aube、Monde Bruits、Taint 逝者各一句、平實、標年份。
+- **51564** 自掃（han() 後中文 4-gram，本檔＋writer-2 現檔合掃）：3 張以上 0 條；2 張只剩「死亡工業」（樂種名，Genocide Organ／BDN）與 writer-2 內部的「電子裝置」。途中拆掉：美國噪音、發行目錄號、合計約分鐘、一捲卡帶、捲卡帶年、約一小時、日本噪音、成限量張、卡帶年月、這個計畫、加起來約、總長約分、把它做成、美國發行／美國廠牌／交給美國、年月發行。
+- **51565** `qa-batch out`、`qa-check-research`、`fix-spacing` 依派工未跑（不能 cd），交主線跑。
+
+## 主線審稿（2026-11-04）
+- **51575** 逐張審 32 張：Harry Pussy 刪「當時有地下刊物嫌它自溺」（單源評價句）；Vomir「限量 40 套的 DVD 盒」改「以 DVD 盒裝、限量 40 套」（內容是 5 張 CD-R，避免誤讀成 DVD 影音）。其餘照過（廠牌自述如 Hospital Productions、Type Records 屬廠牌說明，不算媒體名）。寫進 `desc-override.json`。
+- **51576** 封面：CAA release-group 無圖的 7 張（Richard Ramirez、The Rita、Skin Crime、Taint、Emil Beaulieau、Hototogisu、Consumer Electronics）改用 Discogs master／release 主圖（`covers.json`）。硬蕊度：機器基線一律 3，改取研究層聲音判定（5：23、4：7、3：2；`ratings-override.json`）。試聽 ready 4／unavailable 28（噪音卡帶與私壓多半不在 Apple）。

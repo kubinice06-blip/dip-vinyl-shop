@@ -228,7 +228,15 @@
   },
   "rgMbid": "",
   "identitySource": "manual",
-  "mbAbsenceProof": "MB search releasegroup:Living Dead Girl 2026-11-04 無 The Rita 條目",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist:\"The Rita\" AND releasegroup:\"Living Dead Girl\" → count 0",
+    "releasegroup:\"Living Dead Girl\" AND artist:Rita → count 0",
+    "artist:\"The Rita\" → count 110"
+   ],
+   "checkedAt": "2026-11-04T07:29:10.043Z",
+   "conclusion": "「artist:\"The Rita\" AND releasegroup:\"Living Dead Girl\"」count=0；「releasegroup:\"Living Dead Girl\" AND artist:Rita」count=0；「artist:\"The Rita\"」count=110，前五筆：The Rita《Milicent Patrick》、The Rita《Overdriven Stocking Worship: Women's Legs and Feet in Nylons》、The Rita《Thousands of Dead Gods》、The Rita《Maillart Extended》、The Rita《Retrospective》。皆無同藝人同盤名的 release-group。"
+  },
   "manualEvidenceUrls": [
    "https://www.discogs.com/master/1710428",
    "https://en.wikipedia.org/wiki/Harsh_noise"
