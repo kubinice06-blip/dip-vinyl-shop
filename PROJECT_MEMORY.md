@@ -1,5 +1,14 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-04｜dip-vinyl-shop｜頂點卡簡介重寫 s11：ad-21、ad-22 上線 60 張（流亡）
+
+- **內容**：ad-21（歐洲自由即興與 electroacoustic：Evan Parker、Barry Guy、Noetinger、eRikm、Rowe、Kerbaj、Zíngaro、Léandre、Roger Turner；Wackie’s 系 reggae showcase；Main、Wishart、Ric Colbeck）、ad-22（FMP 與東歐爵士：Gräwe、Favre、Tavitian、Grencsó、Przybielski、Conrad Bauer、String Connection；Zamrock；菊地雅章、강태환、Tokyo Kid Brothers；早期電子：Maxfield、Lundsten、Eloy、Curran；私壓民謠搖滾）。研究 3 Sonnet、寫作 2 Opus ×2 批；新增 `prompt-research-extra-s11.md`／`prompt-writer-extra-s11.md`（一直在版的歐洲即興盤不寫難找；Discogs 改走 API）。
+- **主線審稿**：ad-21 改 12 處（10 張）、ad-22 改 8 處（6 張）（`review-ad-21/22.json`）。主要是去反轉句、團體／個人層級事實改寫成「他的做法」、刪無出處的評價（We Play「有影響力」）與快照式標價。主線補查（Discogs／MusicBrainz API）推翻研究層對 Jezzreel、Audley Rollens、Martin Tétreault 的「查無出處」。
+- **上線**：KV ad-21 30 鍵、ad-22 33 鍵（desc2 60＋CJK desc4 3）；寫前舊值 `kv-before-ad-21/22.json`。回讀 63/63 逐字一致；`front-check` 前台 30/30、30/30，CURATED 0；manifest 同步 60 處。
+- **待店主**（未動 seed）：年份疑點——Tétreault 1997→原版 1998、Frogging 1997 是錄音年（1998 發行）、Conrad Bauer 1986／1984 兩說、Urfalı Babi 1978／1975 兩說。
+- **驗證**：`kv-token-check` exit 0；`qa-batch research|out ad-21|ad-22` 只剩誤報；fix-spacing 0；字數 226–280。
+- 主要檔案：`batch-progress/apex-desc-20261104/{PLAN.md,rulings.md,review-ad-2{1,2}.json,kv-before-ad-2{1,2}.json,prompt-*-extra-s11.md}`、`desc-tools/batches/{cards,research,output}/ad-2{1,2}-*`、onboarding manifest 21 份。
+
 ### 2026-11-04｜dip-vinyl-shop｜頂點卡簡介重寫 s10：ad-19、ad-20 上線 60 張（流亡）
 
 - **內容**：ad-19（日本噪音：Incapacitants、K2、MSBR、Pain Jerk、ASTRO、ハナタラシ、灰野敬二、光束夜、高柳昌行；台灣 1976、夾子；八重山／沖繩民謠；紐約硬蕊 demo；里加 Dzeltenie Pastnieki；日本爵士與自主民謠私製盤；Altan Urag）、ad-20（蒙古／越南金屬、新加坡 Plainsunset、英國自由即興 Incus／ICP／Company、黑暗氛圍與噪音、Wackie's 系 reggae、紐約 downtown 即興）各 30 張，照 `apex-desc-base.md` 重寫。新增 `prompt-research-extra-s10.md`／`prompt-writer-extra-s10.md`。研究 3 Sonnet×2 批（WebSearch 104）、寫作 2 Opus×2 批。
