@@ -11,3 +11,14 @@
 - 池中同人錨點（pool-axes）：Schnauss 五張、Fila Brazillia 五張、Tosca 四張（《Dehli9》判輕）、Yppah 三張、BMSR 四張、Casino Versus Japan 兩張、Manual 四張（《Confluence》判冷）、Cuushe 兩張全落恍惚；The Orb 八張中五張恍惚、兩張頹靡、一張沸騰；Fennesz《Endless Summer》《Bécs》《Agora》恍惚、其餘頹靡／平靜；Eluvium 三張中只有《Talk Amongst the Trees》恍惚；Bibio 三張兩張判輕。
 - **主線汰 10**：Bibio《Hand Cranked》《Phantom Brickworks》（同人多判輕）；aus《Crowding》《After All》（無錨點、乾淨 glitch 判輕風險，留《Lang》《Curveland》兩張試水）；Tujiko Noriko《Solo》（怪異疏離、z 風險）；Christian Löffler《A Forest》（鋼琴在前）；Eluvium《Static Nocturne》（z 貼 0.3、同人兩張判輕）；Mark Van Hoen《The Last Flowers From the Darkness》（暗、z 風險）；The Orb《Okie Dokie》（Kompakt 四拍、x 貼邊）；Black Moth Super Rainbow《The Autumn Kaleidoscope Got Changed》（正規專輯身分存疑）。
 - 交研究層把關：Fehlmann 三張、Burger/Ink、Jonas Bering、Ulf Lohmann、William Orbit、Phaeleh 三張、Löffler《Mare》、Solar Bears、Maps 無池中錨點；Shinichi Atobe《World》四拍 dub techno 的 x 與 z；Orb《Bicycles & Tricycles》x；Fennesz《Mosaic》z。
+
+## 研究 a 組
+- **22761**：Schnauss《No Further Ahead Than Tomorrow》2020 年版是 2016《No Further Ahead Than Today》（SCREALCD002、九首）的加曲更名重發（SCREALCDX005、十首、多〈Water Under the Bridge〉）。卡單 2020／Scripted Realities 照留，facts 與 notes 寫明沿革；維基英文頁「PIAS 2016」與 Discogs／MB 不符，不採。聲音事實查無，moodGuess 存疑。
+- **22762**：《Epic》以 2010-04 Pedigree Cuts 數位 14 軌版為準（含 Dub、Alternate 變體）；2011-07 的 11 軌重排版與 CD《Emotion Meets Expression》不併入。聲音事實薄，moodGuess 存疑。
+- **22763**：《Eight Fragments》聲音證據最足（無傳統鼓組、八分音符脈動、鐘聲般合成器、吉他霧），moodGuess 大致成立；樂評稱「日光、戶外」，暖有但可能偏亮。
+- **22764**：《Destiny Waiving》廠方稱不祥／樂觀、光影對比，moodGuess「暖、節拍極淡」存疑（偏暗風險）。三部曲首作年份 Rough Trade 寫 2011、維基寫 2012，facts 採 2012，寫作層不寫年。
+- **22765**：Casino Versus Japan《Night on Tape》為未發表舊錄音選輯（2002 年交付五張光碟），有定位、保留；寫作層須寫「首度集結」非「新作」。磁帶質地無來源，標題的 Tape 不可當證據，moodGuess 存疑。
+- **22766**：《Suicide by Sun》Bandcamp 明寫吉他循環、殘響、延遲的 ambient，非合成器霧／磁帶飽和；曲名偏暗，頹靡風險，建議主線以實聽決定去留（moodGuess 存疑）。
+- **22767**：Manual《Until Tomorrow》2001 年為 IDM 底、「脆弱拍子＋溫暖夢幻旋律」（Munk 自述），非後期電子 shoegaze 厚霧；moodGuess 存疑，池中同人錨點不宜類推。
+- **22768**：Solar Bears 成員名 Kowalski（維基、FACT）vs McElheron（I Heart Noise），採前者；廠牌稱類比暖合成器，但樂評側偏循環、萬花筒式短曲，速度無來源，moodGuess 存疑（可能更亮更躁）。
+- 本組無推翻身分／年份／廠牌；8 張 MB 與 Discogs 皆對得上。
