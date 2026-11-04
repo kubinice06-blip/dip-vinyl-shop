@@ -1,6 +1,6 @@
 // c-124 b 組研究層：MB 資料抓取，可續跑、逐筆落檔
 import fs from 'node:fs';
-const UA='dip-vinyl-shop/1.0 (kubinice06@gmail.com)';
+const UA='dip-vinyl-shop/1.0 (+https://dipvinyl.tw)';
 const sleep=ms=>new Promise(r=>setTimeout(r,ms));
 const SD='/tmp/claude-0/-home-user-dip-vinyl-shop/f5085309-84aa-5485-a270-96aad3644d92/scratchpad/c124b';
 async function mb(url,tries=6){

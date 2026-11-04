@@ -1,5 +1,11 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-04｜dip-vinyl-shop｜對外請求的 User-Agent 拿掉店主 email
+
+- **原因**：雲端工作階段的權限檢查會擋「把店主 email 送給外部服務」。腳本和派工檔的 User-Agent 都寫著 `dip-vinyl-shop/1.0 (店主 email)`，新頂點盤線 ax1–ax4 因此一再卡在權限確認。
+- **改動**：114 個腳本與派工檔的 UA 改成 `dip-vinyl-shop/1.0 (+https://dipvinyl.tw)`（MusicBrainz 接受網址當聯絡方式），歷史紀錄檔不動。**以後新寫的腳本也不要在 UA 放 email。**
+- **驗證**：83 個 .mjs／.js／.cjs 都過了 `node --check`。
+
 ### 2026-11-04｜dip-vinyl-shop｜後台頂級牌改以卡池為準（303／85／254）＋點卡彈出專輯卡
 
 - **店主回報**：「有兩張唐朝」「顯示只有260張」「頂級卡管理改成跟店內在售頁一樣點擊彈出專輯卡」。

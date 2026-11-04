@@ -1,7 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 const CACHE='/tmp/claude-0/-home-user-dip-vinyl-shop/f5085309-84aa-5485-a270-96aad3644d92/scratchpad/cache';
-const UA='dip-vinyl-shop/1.0 (kubinice06@gmail.com)';
+const UA='dip-vinyl-shop/1.0 (+https://dipvinyl.tw)';
 const sleep=ms=>new Promise(r=>setTimeout(r,ms));
 export async function get(url,{tries=6,delay=1500}={}){
   const key=path.join(CACHE, Buffer.from(url).toString('base64url').slice(0,180)+'.txt');

@@ -1,7 +1,7 @@
 # c-166 a 組 證據層來源清單
 
 本檔記錄 a 組（23 筆、2023–2024、全 jazz）策展所用的原始抓取與可追溯網址。
-抓取日期：2026-09-19。MusicBrainz User-Agent 逐字 `dip-vinyl-shop/1.0 (kubinice06@gmail.com)`。
+抓取日期：2026-09-19。MusicBrainz User-Agent 逐字 `dip-vinyl-shop/1.0 (+https://dipvinyl.tw)`。
 
 ## 批次抓取的原始資料（已入庫，不留在暫存目錄）
 

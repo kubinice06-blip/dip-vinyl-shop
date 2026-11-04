@@ -4,7 +4,7 @@
 // 用法：node 1b-artist-discography.mjs artists.txt 輸出檔.json
 //   artists.txt：一行一位藝人名
 import fs from 'fs';
-const UA = { 'User-Agent': 'dip-vinyl-shop/1.0 (kubinice06@gmail.com)' };
+const UA = { 'User-Agent': 'dip-vinyl-shop/1.0 (+https://dipvinyl.tw)' };
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 
 const listPath = process.argv[2];

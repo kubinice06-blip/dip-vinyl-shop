@@ -12,7 +12,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { ROOT } from './lib.mjs';
 
-const UA = 'dip-vinyl-shop/1.0 (kubinice06@gmail.com)';
+const UA = 'dip-vinyl-shop/1.0 (+https://dipvinyl.tw)';
 const CACHE = path.join(ROOT, 'batch-progress/enum/jp-1-artist-aliases.json');
 const OUT = path.join(ROOT, 'batch-progress/enum/jp-1-pool-recheck.json');
 const all = process.argv.includes('--all');

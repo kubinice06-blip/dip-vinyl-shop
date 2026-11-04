@@ -137,5 +137,5 @@ MB 的廠牌目錄不齊時，改從 Apple 台灣店面的廠牌關聯藝人反�
 **續跑（容器會不定時重啟）**：每做完 5 筆就把 `prop-*.json` 整份寫回磁碟；
 開工先讀它，已有內容就接續補完、不要從頭重寫。
 
-**MusicBrainz 守 1 req/s**，UA `dip-vinyl-shop/1.0 (kubinice06@gmail.com)`，503 要重試。
+**MusicBrainz 守 1 req/s**，UA `dip-vinyl-shop/1.0 (+https://dipvinyl.tw)`，503 要重試。
 **不要碰 git、不要動 `PROJECT_MEMORY.md`／`seed_cards.json`／KV／Firestore。**

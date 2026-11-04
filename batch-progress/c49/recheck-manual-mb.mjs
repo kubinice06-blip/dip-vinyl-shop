@@ -25,7 +25,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const DIR = path.dirname(fileURLToPath(import.meta.url));
-const UA = 'dip-vinyl-shop/1.0 (kubinice06@gmail.com)';
+const UA = 'dip-vinyl-shop/1.0 (+https://dipvinyl.tw)';
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 
 const fold = s => String(s || '').normalize('NFKC').toLowerCase()

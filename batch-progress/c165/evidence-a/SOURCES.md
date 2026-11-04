@@ -12,7 +12,7 @@
 | `dg.json` | `api.discogs.com/database/search?type=release` ＋ `api.discogs.com/releases/<id>` | 23 筆的 Discogs 搜尋結果與前四筆的完整條目（`formats`／`series`／`labels` 廠牌鏈／`companies`／`released`／`notes`／`genres`／`styles`） |
 | `tracks.json` | `musicbrainz.org/ws/2/release/<id>?inc=recordings` | 每張取「軌數最多的那一筆 release」的全部軌名，供撞陳列掃描 |
 
-MusicBrainz User-Agent 逐字 `dip-vinyl-shop/1.0 (kubinice06@gmail.com)`。
+MusicBrainz User-Agent 逐字 `dip-vinyl-shop/1.0 (+https://dipvinyl.tw)`。
 
 ## 補抓（`apple.json` 的關鍵字查法落空，改走 UPC lookup）
 

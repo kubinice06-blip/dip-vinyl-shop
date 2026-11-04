@@ -21,7 +21,7 @@
    - 先看該藝人在池中已有幾張，查的時候去掉變音符號（ő／ł／č 等）。
    - 再 `grep` 其他組的 `batch-progress/mood-cells-20261022/curation-eb*.json`，有提過的不要重複提。
 2. **身分**（二選一）：
-   - **MB 查得到**：填 `mbRgMbid`。查詢 `https://musicbrainz.org/ws/2/release-group?query=artist:"…" AND releasegroup:"…"&fmt=json`，header 帶 `User-Agent: dip-vinyl-shop/1.0 (kubinice06@gmail.com)`，每秒最多 1 次，遇 503 等 2 秒重試。
+   - **MB 查得到**：填 `mbRgMbid`。查詢 `https://musicbrainz.org/ws/2/release-group?query=artist:"…" AND releasegroup:"…"&fmt=json`，header 帶 `User-Agent: dip-vinyl-shop/1.0 (+https://dipvinyl.tw)`，每秒最多 1 次，遇 503 等 2 秒重試。
    - **MB 查無 → 人工身分**（國營廠盤常見）：`mbRgMbid` 留空，填 `mbAbsenceProof` 和 `manualEvidenceUrls`。後者至少兩個 https，例如 Discogs master／release、廠牌或重發廠頁、維基、Bandcamp。
 3. **封面來源**：Apple Music／iTunes、CAA、Discogs、Bandcamp 任一，網址寫進 `evidence`。找不到封面就不提。
 4. **名稱**：

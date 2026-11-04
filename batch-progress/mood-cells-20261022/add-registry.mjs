@@ -2,7 +2,7 @@
 //   node batch-progress/mood-cells-20261022/add-registry.mjs add-20261020-ts1
 import fs from 'node:fs';
 const batch = process.argv[2];
-const UA = 'dip-vinyl-shop/1.0 (kubinice06@gmail.com)';
+const UA = 'dip-vinyl-shop/1.0 (+https://dipvinyl.tw)';
 const REG = 'data/discogs-cover-registry.json';
 const reg = JSON.parse(fs.readFileSync(REG, 'utf8'));
 const covers = JSON.parse(fs.readFileSync(`batch-progress/${batch}/covers.json`, 'utf8'));
