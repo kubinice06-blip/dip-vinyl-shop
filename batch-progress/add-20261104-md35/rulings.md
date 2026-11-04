@@ -51,3 +51,24 @@
 - **22548**：BMT《Playing With Dead Things》moodGuess 存疑：僅證實磁帶／降靈意象，低頻、糊的程度與噪音強度無文字證據（Discogs 標 Noise）。MB 為 Lysergic Earwax 數位版，Discogs 為 Auris Apothecary AAX-079 卡帶，同日；status thin，需實聽。
 - **22549**：Black Rain《Dark Pool》無推翻。有鼓（Boomkat：部落／工業節奏），速度查不到，「慢」無來源；MB 日期 2014-09-01 與維基 2014-08-12 有出入，皆 2014。
 - **22550**：研究 c 組全程未用 WebSearch 以外的受限額度之外功能；WebSearch 共用 3 次（Miles、Visionist、Black Rain 各一，Miles 一次落空）。Pitchfork／Discogs 頁面／AllMusic 直連 403 或被擋，樂評多以 Boomkat、廠牌 Bandcamp、維基、Dazed 替代。
+
+## 研究 b 組（條號 22531–22540）
+- **22531**：Ital Tek《Hollowed》無推翻。moodGuess 存疑：卡單「半拍、厚合成器墊」，RA／planet.mu 顯示鼓大多缺席或退後，骨幹是吉他長音、殘響合唱與弦樂（Górecki 第三號影響）；靜與陰成立，z 可能略偏暖（有機感、〈Vacuum I〉尾段弦樂轉暖）。BPM 無來源。
+- **22532**：Fatima Al Qadiri《Brute》無推翻。輕微存疑：卡單「慢速稀拍」，樂評是冷硬節拍器式 grime 拍與槍響打擊、次低音、冰冷合成器（Dusted：rarely propulsive）。靜度有支持但有鼓；BPM 無來源。樂評皆由維基轉引。
+- **22533**：Goth-Trad《New Epoch》年份 2012 無疑（MB JP 2012-01-11、GB 2012-02）。moodGuess 存疑：RA 明寫維持 140 BPM、〈Departure〉部落節奏、標題曲「clockwork regularity」、節奏清楚，x 2.5 貼上緣；策展寫的「長殘響、暗噪音層」RA 無此描述。序數（第一／第四張）來源衝突，facts 只寫「Deep Medi 首張全長、距上一張約七年」。
+- **22534**：Actress × LCO《LAGEOS》無推翻。Piccadilly「less beat-driven」「brutalist ambience」支持少拍。發行日 Crack 寫 26 日、Bandcamp／MB 為 25 日，取 25 日。弦樂色溫風險（策展已標）仍在。
+- **22535**：Andy Stott《The Slow Ribbon》status thin（7→8 條含 Stott 背景與前作）。moodGuess 存疑（重要）：Boomkat、XLR8R、MB 皆無人聲、低頻、殘響、鼓的描述，只有「slow jamz」與標籤 Techno／House／Downtempo／ambient；「模糊人聲霧」無證據。建議評分前聽過或汰換。XLR8R 稱 Modern Love 是 Stott 自己的廠牌，與維基（老闆 Shlom Sviri）衝突，不寫；販售期限兩源衝突（3/17 vs 3/24），不寫。
+- **22536**：Lee Gamble《KOCH》moodGuess 存疑（重要）：卡單「鼓被抽空」，HHV Mag 寫「stubborn beats」「beats are central」，Bandcamp 文案亦言節奏相互融合／相位分離、club 曲目；抽掉鼓是前作《Diversions》的做法。x 2.0 風險偏低；冷與迷離成立。低頻與殘響無來源。
+- **22537**：Dalhous《Composite Moods Vol.2》無推翻。moodGuess 輕微存疑：卡單「慢拍、磁帶糊」，來源只有 Boomkat「ballistic percussion」「agitated twitching」、Bandcamp 標籤 dark ambient／drone；暗、冷、配樂感成立，靜度有風險。Boomkat 內容經 WebFetch 摘要（非逐字）。「Brian Gascogne」照 Bandcamp 原文。
+- **22538**：Sd Laika《That's Harakiri》身分無誤。moodGuess 存疑（重要）：卡單「拖慢的 grime 拍、濁重低頻」，RA／Dummy 為「瘋狂儀式打擊」「scatty 節奏」「工業 techno 底鼓」「速度不穩」「靜電嘶聲」，沒有「拖慢」、沒有低頻重量的來源；11 首有 8 首短於 3 分 10 秒，偏破碎躁動。建議汰換或預期落躁格。Runge 2023 年過世（Mixmag 2024-07 報導家屬證實），facts 已寫。
+- **22539**：Pessimist《Pessimist》推翻策展層：RA 歸 Drum & Bass，通篇無 half-time、dubstep、dub、industrial 字樣；「半拍爬行」「工業噪音」「厚低頻霧」皆無來源。moodGuess 存疑（重要）：RA 寫 repetitive beats、acoustic drums 累積動能、gunshot pulse，鼓是驅動；冷暗成立（cavernous reverb）。建議評分前聽過，視為汰換候選。
+- **22540**：額度：本組 WebSearch 實際用了 6 次（Goth-Trad、Ital Tek、Actress、Stott、Lee Gamble、Sd Laika 各一），超過每支 3 次的上限（我先算成每張 3 次而非每支，已自承）；其餘全用 MB API、Bandcamp、WebFetch。Bandcamp（Stott、Pessimist）、Discogs、Pitchfork、Juno 未取得。
+
+## 主線研究後汰換（不佔條號；2026-11-04）
+- 照 md3／md22／md34 先例：研究稿寫出**有鼓推進／techno 或 d&b 驅動／140 BPM**、**樂評稱明亮、旋律直接、偏暖**、**聲音零來源**的汰；只是邊距薄的留給評分驗收。
+- **汰 19 張**（存 `dropped-cards.json`／`dropped-research.json`）：
+  - 鼓推進（能量）：Lakker《Tundra》（研究 a：轟然 techno 鼓、acid）、Pessimist《Pessimist》（研究 b：RA 歸 d&b、鼓驅動，推翻策展「半拍爬行」）、Sd Laika《That's Harakiri》（研究 b：節奏破碎躁動）、Lee Gamble《KOCH》（研究 b：stubborn beats）、Goth-Trad《New Epoch》（研究 b：RA 明寫 140 BPM、節奏清楚；池中 Kode9 同速判躁）、Visionist《Safe》（研究 c：刺耳節拍）、Logos《Imperial Flood》（研究 c：d&b 極簡、acid）、Miles《Faint Hearted》（研究 c：restless、硬核喀啦聲）、Water Borders《Harbored Mantras》（研究 d：三篇樂評寫切分舞池節奏、叢林式重擊、UK garage）。
+  - 明亮／偏暖：Dalhous《Will to Be Well》（研究 a：RA 稱 BEB 最明亮之一，顫音風琴、鋼琴）、Ekoplekz《Unfidelity》（研究 a：更旋律、更直接；同人留《Four Track Mind》）、Forest Swords《Bolted》（研究 c：喀啦鼓＋失真木琴木管，色溫偏暖）、Hawthonn《Earth Mirror》（研究 d：廠方稱介於月亮音樂與空靈流行，清晰人聲、電鋼琴）、Dean Hurley《Vol. II》（研究 e：廠方「ethereal and celestial」）。
+  - 聲音零來源／預估失準：Andy Stott《The Slow Ribbon》（研究 b：人聲、低頻、鼓全無來源）、Fis《From Patterns to Details》（研究 c：查不到低頻／重擊）、Mater Suspiria Vision《Paracusia》（研究 e：全卡查無樂評）、Tor Lundvall《The Mist》（研究 e：2006《Empty City》才首張全器樂，本張很可能有假聲人聲歌）、Ensemble Economique《Interval Signals》（研究 e：電台識別曲＋短波拼貼，低頻重量無證據）。
+- 不補位：候補未經研究，照「挖不到就照實上架」不湊數。定案 **26 張**。留給評分驗收的邊距風險：Caretaker《Selected Memories》（Merzbow 式噪音曲）、Fatima Al Qadiri《Brute》（有鼓）、Ital Tek《Hollowed》（吉他長音、合唱，色溫）、Kuedo《Slow Knife》（後半轉暖）、MSV《Crack Witch》（鼓機密度無一手描述）、BMT《Playing With Dead Things》、Tor Lundvall《The Shipyard》（y 貼門檻）。
+- WebSearch：研究 b 自報用 6 次（超出每支 3 次），a 自報 8 次（含共用計數），已列入工作階段總額度追蹤。
