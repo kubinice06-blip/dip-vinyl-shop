@@ -34,3 +34,15 @@
 - **22788**：Burger/Ink《[Las Vegas]》thin。1996 Harvest（EMI）初版，1998 Matador 為美國版，維基頁以 1998 為準屬誤導，卡單 1996 正確。Discogs 風格 Trance／Ambient／Minimal Techno，曲名自稱「Bring Trance Back」，兩首 11 分鐘長曲；「低傳真磁帶糊」無來源，moodGuess 存疑。
 - **22789**：本組 WebSearch 用了 5 次，超出每支 3 次限額（其餘為 WebFetch／MB／Discogs API）；Fehlmann 與 Burger/Ink 的聲音缺口因此仍無法補。
 - 本組無推翻年份／廠牌／盤名；MB 釘住的 8 張 rg 與 Discogs 皆對得上。聲音與 moodGuess 明顯不符者：Tosca、Yppah 首作、BMSR 三張強烈，Tiny Pause 部分；Fehlmann 三張與 Burger/Ink 無聲音來源，無法證實或證偽。
+
+## 研究 b 組
+- **22771**：Tosca《Tia Pamelita》身分錯釘（推翻策展層）。MB RG 071094a7 屬 artist 1e077764「Tosca Tango Orchestra」（美國德州、1997、Glover Gill），Discogs 1998 Nois Records，風格 Tango、樂手手風琴／弦樂／鋼琴，不是 Dorfmeister 的 Tosca。facts 只寫真實身分，標 thin；建議主線汰換（本線只收電子盤）。若要補 Dorfmeister 的 Tosca 需另開卡、另找 rgMbid。
+- **22772**：Shinichi Atobe《World》moodGuess 存疑（x）。RA 樂評「house 與 techno」，Discogs 標 House／Deep House／Deep Techno；iTunes 30 秒試聽粗測 World 1 約 125 BPM、World 4 約 130 BPM（低頻規律脈衝），為 house 速度四拍律動，x 預估 2.4 恐超過 2.7。夢幻合成器與 fizz 質地有 RA 支持，但沒有和弦溫度／混響厚度的來源。
+- **22773**：Maps《Turning the Mind》moodGuess 存疑（x，輕度）。來源互相衝突：Spectrum Culture 稱俱樂部／house 影響與程式化貝斯線，WLOY 稱非舞曲取向；試聽粗測多首約 125–133 BPM。Discogs 製作掛名 Chapman 與 Tim Holmes 兩人，只引 Discogs 署名，不推定 Holmes 是 Death in Vegas 成員（Wikipedia 該團頁無此交叉）。
+- **22774**：Cuushe《WAKEN》moodGuess 存疑（x、z）。Discogs 風格含 UK Garage、Drum n Bass、Dance-pop，混音者 Iglooghost／Kate NV；試聽粗測約 88–96 BPM 的穩定中速節拍。聲音面無樂評，標 thin。Wikipedia 載 2017 年她遭騷擾與設備遭竊之事，單一來源且涉隱私與刑案，不入 facts。
+- **22775**：Fila Brazillia《Phoebus Brumal》moodGuess 存疑（x）。Discogs 風格含 Electro House／Hip-House，Bandcamp 聽眾稱有 techno 稜角，試聽粗測多首約 130／65 BPM；「dub 低頻」無來源。發行日 Discogs／MB 2004-06，Bandcamp 5/10 為數位 remaster 上架日，年份不變。
+- **22776**：Tujiko Noriko《Blurred in My Mirror》是與 Lawrence English 的合作（Room40 一手頁面與 Discogs 皆載；MB 與 Wikipedia Tujiko 條目未提，以 Room40 為準）。發行日 Room40 2005-07-09 對 MB／Discogs 2005-08-05，年份不變。僅 Room40 自述加 Discogs 標籤，標 thin；「偏暖」無來源。
+- **22777**：aus 兩張：Lang 首發日 MB 2006-12-01／Bandcamp 2006-11-01；Curveland MB 2007-02-26／Bandcamp 2007-03-05，年份不變。「Miles at The Mill」＝Miles Whittaker 僅 Discogs 單一歸人，未寫成確定事實。Curveland 來源強調 glitch 與空靈墊底，卡單「厚實節拍」無證據，y 可能偏輕。
+- **22778**：速度數字出處說明：我用 ffmpeg 解碼 iTunes 30 秒試聽，低通後做低頻脈衝自相關，屬粗測，只寫在 notes，不進 facts；自相關常出現倍速／半速混淆，只作方向判斷。
+- **22779**：WebSearch 本組用 3 次（Maps、aus、Atobe）；BBC、Pitchfork、AllMusic、Discogs 網頁、Juno 本環境被擋或 403，改用 Discogs／MB API、Bandcamp、RA、Room40、Wikipedia。
+- 本組無推翻年份／廠牌／盤名，只推翻 Tosca 身分與 Tujiko 的掛名（合作）。聲音與 moodGuess 明顯不符：Atobe（強）、Tosca（完全不同類）、Maps／Cuushe／Fila（中）。
