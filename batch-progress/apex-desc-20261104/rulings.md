@@ -503,3 +503,54 @@
 - bulk put 34 鍵（desc2 30＋CJK 卡 desc4 4），wrangler 印 `Success!`；`verify-wave-kv` 第一次 3 鍵舊值（傳播延遲），重讀 34/34 逐字一致。
 - `front-check ad-14`：30/30 前台為新稿，CURATED 0。
 - manifest 同步 24 處。
+
+
+## ad-15、ad-16（流亡 30＋30，s8）
+
+- 派工補充：新增 `prompt-research-extra-s8.md`／`prompt-writer-extra-s8.md`（status 分「為什麼少人聽」「為什麼值得聽」兩半各至少 1 條；日本盤先找日文廠頁與部落格；廠商文案形容詞不當評價；團體層級事實不冒充本盤；Discogs 擁有／想要人數不寫數字；每支研究最多 25 次 WebSearch）。
+- 研究 3 Sonnet×2 批（WebSearch ad-15 a 16／b 13／c 12、ad-16 a 18／b 21／c 16；主線 2 次；合計 98）、寫作 2 Opus×2 批。
+- **研究代理撞檔**：ad-15-a 與 ad-16-b 共用了同一個 /tmp 腳本，互相寫進對方的輸出檔，兩支事後各自拆回；主線逐檔核 key：6 檔各 10 筆、無缺無多。寫作派工改為每支用自己的暫存目錄。
+- **主線補查（Discogs API 可通，`api.discogs.com`，UA 照規定）**：網頁版 Discogs 對代理 403，但 API 不擋。補了 Hope of Glory（1974、credits、十首詩歌／敬拜曲、從未再版）、中村ヨシミツ《魂のギター》（JD-10、1983-09-08/09 ペンション糸車、七首曲長）、板倉克行《海猫の島》（JD-07、1982-06-03、K48 平台鋼琴獨奏）、つのだひろと体力バンド（兩面各一首 29:35／26:50、1978-03-20 與 09-29 錄音、三重奏編制）、Pablo Picasso、Z.O.A、Bob Ayala、Bouquet of Steel、Paul Nagle 的 credits／曲目／錄音地，以及生活向上委員会原版（見審稿）。都標「主線補查，Discogs API」併回研究稿。Z.O.A 團員名照 Discogs 羅馬拼音，不自行轉漢字。
+- **主線裁定**：Hope of Glory、中村ヨシミツ 研究層原本三塊皆 none，補查後照 facts 薄寫（只寫是什麼、只有原版、編制、曲目性質），不寫評價。Clark Sisters、Charles Tyler、Stan Tracey 研究稿沒有「少人聽」的證據，不硬寫稀少，寫它做到什麼與再版。Rien Djamain 發行年 1975／1976 兩說，簡介不寫年份。
+- **卡池資料疑點（未動 seed）**：Chico Freeman《Kings of Mali》seed 1977 是錄音年，India Navigation 1978 年發行；Earthen Vessel 原版 1971／1972 兩說（seed 1972）。
+- 研究層推翻舊稿的主要錯誤／未證實細節（新稿未沿用）：Maitreya Kali 單聲道、Kandahar 遭搶；Dada「只壓 200 張」；Salaried Man Club C46、12 萬日圓與分段；Sindelfingen「99 張避稅」；Chico Freeman「三人兼彈拇指琴」（實為 balafon／bailophone）；Philemon Arthur「抗議導致 Grammis 停辦」因果；大工哲弘 Tom Cora 製作與無形文化財；John Taylor「首次重發」；Agape 四軌卡匣剖曲；Concrete Rubber Band Akai／ARP 器材；Peter Cusack 標題典故；Complex Steve Coe 與 Sheila Chandra 婚姻；Spherical Objects「隔年重混」（實為重切再版）；Storm Bugs 盤帶毀於水災；Bladder Flask 曲長與〈Matrosen Tango〉引用。
+- 機器 QA：`qa-batch research` ad-15 2 標記（研究稿內千分位、「艺」已改「藝」）、ad-16 1（研究稿內千分位）；`out` ad-15 0、ad-16 4 標記（CCM 票選屬具名、3 個年代誤報；CCM 句另因指涉不清修改）；fix-spacing 0；字數 ad-15 212–277、ad-16 227–280。半形符號只在原文盤名內。
+
+### 主線審稿 ad-15（2026-11-04，30 張逐張讀、逐句對研究稿；加問「讀完知不知道它憑什麼是這一級」）
+
+改 12 處（8 張，`review-ad-15.json`；同一張多次改分開記）：
+
+- `明田川荘之|aketa's erotical piano solo & grotesque piano trio`：「；標題雖寫 Erotical 與 Grotesque，內容並不特別色情或怪誕。」→「。」。反轉句；出自 Soundohm 商品文案，不當事實寫
+- `生活向上委員会|生活向上委員会ニューヨーク支部`：「錄下的作品，2022 年比利時 Aguirre 重製黑膠時，距錄音已超過四十年。」→「錄下、當年自費壓製的專輯，2016 年 Off Note 出 CD，2022 年比利時 Aguirre 重製黑膠。」。初稿暗示原版未發行；Discogs release 1722471：1975 自主發行 Ski No. 1（ALM AL-10），另有 2016 Off Note NON-25、2022 Aguirre ZORN83。已補進研究稿
+- `salaried man club|gray cross`：「，被稱為「白領工業」」→「（刪）」。封號（再發方與媒體的標語），審稿第 4 問
+- `den sei kwan|pocket planetaria`：「，用極簡 wave 的形式呈現」→「（刪）」。零售商文案用語，讀了想像不出聲音；保留短波靜電聲素材
+- `ché-shizu|約束はできない`：「另有鍵盤、貝斯與打擊。這些歌不照一般搖滾的寫法走，很難歸進迷幻或搖滾任何一類。」→「另有鍵盤、貝斯與打擊。」。P-Vine 商品文案的說法，研究稿標廠商文案，不寫
+- `hugh hopper / elton dean / alan gowen / dave sheen|rogue element`：「吹得特別猛烈，常被認為比原陣容的錄音更成功。」→「吹得特別猛烈；這場錄音被認為比有 Pip Pyle 的早期錄音更成功。」。原句主詞像是 Dean 的獨奏；評價只有 Nic Jones（All About Jazz）一家且僅見搜尋摘要，不用「常」
+- `blue notes|blue notes for mongezi`：「常被視為樂團最全面也最真實的錄音」→「被視為樂團最全面也最真實的錄音」。單一來源（Barry Witherden，Jazz Journal，見英文維基），不用「常」
+- `john taylor|pause, and think again`：「2015 年才由 RPM 重發；」→「1995 年起才陸續有 FMR、RPM 等重發；」。事實錯誤：研究稿 status 記 1995 年 FMR 已重發，2015 年 RPM 盒裝並非首次（musicweb-international）
+- `生活向上委員会|生活向上委員会ニューヨーク支部`：「梅津 1974 年先到紐約，原田隔年 7 月抵達，都在」→「都在」。審稿改句後超字（295），壓字
+- `生活向上委員会|生活向上委員会ニューヨーク支部`：「這是梅津組的第一個團。」→「（刪）」。壓字；出自 Farside 商品文案
+- `hugh hopper / elton dean / alan gowen / dave sheen|rogue element`：「樂團原名 Soft Heap，」→「（刪）」。審稿改句後超字（291），壓字
+- `john taylor|pause, and think again`：「銅管主題明快，Wheeler」→「Wheeler」。審稿改句後超字（283），壓字
+
+研究稿同步：`ad-15-a.json` 生活向上委員会補 Discogs 原版 credits 與發行史（Aguirre 頁「梅津吹單簧管」與 Discogs 不符，以 Discogs 為準）。其餘 22 張逐張審過，未改字。第五問：前兩句都講出流通狀況（圖書館唱片不零售、私壓約百張、限量卡帶箱組實做 30 套、自主廠第一號、長年絕版）與再發現（再版廠＋年份）；Mimaroğlu 一張沒有專輯層級的流通資料，只能寫作曲家與手法，照留。
+
+### 主線審稿 ad-16（2026-11-04，30 張逐張讀、逐句對研究稿；加問「讀完知不知道它憑什麼是這一級」）
+
+改 6 處（5 張，`review-ad-16.json`）：
+
+- `charles tyler|saga of the outlaws`：「常被視為他最好的錄音與七〇年代紐約 loft 爵士的經典」→「被視為七〇年代紐約 loft 爵士的經典」。研究稿只有 Ed Hazell（Point of Departure）「loft 爵士經典」一說，「他最好的錄音」無出處；單一來源不用「常」
+- `complex|the way we feel`：「鍵盤手 Steve Coe 的 Farfisa 風琴與大鍵琴」→「Farfisa 風琴與大鍵琴」。研究稿只說 Coe 是鍵盤手、本盤以風琴為主要質地，沒寫是他彈的（寫作層自陳推論）
+- `stan tracey quartet|captain adventure`：「這組四重奏常被視為 Tracey 最好的陣容。」→「這組四重奏被視為 Tracey 最好的陣容。」。「最好」只有 Jon Turney 一家（Fordham 是「偉大陣容之一」），不用「常」
+- `steve beresford|the bath of surprise`：「錄音由兩人一起完成，後來被看作他獨奏路線的起點之一。」→「錄音由兩人一起完成。」。研究稿只說近年獨奏錄音「承接」此盤，「被看作起點」是推論
+- `steve beresford|the bath of surprise`：「日常物件和玩具跟樂器一樣拿來即興；原版黑膠至今仍在二手收藏圈流通。」→「日常物件和玩具跟樂器一樣拿來即興。」。根據只是二手店標價，無實質內容
+- `bob ayala|joy by surprise`：「這一年他被 CCM 票選為最佳新人」→「發行當年他被 CCM 雜誌票選為最佳新人」。「這一年」接在「隔年」之後會讀成 1977；英文維基：CCM 1976 年選他為 Best New Artist
+
+其餘 25 張逐張審過，未改字。另核對：Rien Djamain「印尼最好的專輯之一」出自 Rolling Stone Indonesia 150 張榜（印尼維基）；Grow Up「小廠最好的唱片」出自 Paul Morley（NME，LTM 轉載）；Wilson McKinley「悠閒西岸風格最好的唱片之一」與 Concrete Rubber Band「同類唯一」出自 Acid Archives；Bladder Flask 被 Stapleton 喜愛有原話；Blue Notes for Mongezi「最全面也最真實」出自 Barry Witherden（Jazz Journal）；キングコングパラダイス「目錄裡的例外」是零售頁的事實描述（anomaly），照留。
+
+### 上線
+
+- `kv-token-check` 通過；舊值存 `kv-before-ad-15.json`、`kv-before-ad-16.json`（各 60 鍵，各 37 個非 null）。
+- bulk put ad-15 37 鍵、ad-16 37 鍵（各 desc2 30＋CJK 卡或原有 desc4 7）；ad-16 親眼見 `Success!`，ad-15 的輸出被 npm 訊息截掉，以回讀確認：`verify-wave-kv 20261104 ad-15 ad-16` 74/74 逐字一致。
+- `front-check`：ad-15 30/30、ad-16 30/30 前台為新稿，CURATED 0。
+- manifest 同步 ad-15 30 處、ad-16 30 處（20 份 onboarding manifest）。
