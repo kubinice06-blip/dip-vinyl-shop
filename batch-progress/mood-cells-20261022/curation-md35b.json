@@ -1,0 +1,740 @@
+{
+ "group": "md35b",
+ "factions": [
+  {
+   "id": "hauntology",
+   "zh": "hauntology",
+   "count": 11,
+   "why": "Caretaker 早期舞廳盤、Black Mountain Transmitter、Grey Frequency、Hawthonn：無鼓、磁帶霧、陰"
+  },
+  {
+   "id": "witch-house",
+   "zh": "witch house",
+   "count": 5,
+   "why": "只收慢、拖、霧的：Water Borders、Mater Suspiria Vision drone 向"
+  },
+  {
+   "id": "dark-electronic-ambient",
+   "zh": "暗電子 ambient（同路擴寫）",
+   "count": 8,
+   "why": "Ensemble Economique、Dean Hurley、Tor Lundvall：hauntology 鄰近的暗 drone"
+  }
+ ],
+ "albums": [
+  {
+   "artist": "The Caretaker",
+   "album": "Selected Memories From the Haunted Ballroom",
+   "year": 1999,
+   "label": "V/Vm Test Records",
+   "country": "gb",
+   "faction": "hauntology",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Kirby 以《鬼店》舞廳為題的出道作：1920 年代舞曲唱片泡進長殘響、drone 與噪音底，hauntology 的起點，陰而下沉",
+   "moodGuess": {
+    "x": 1.6,
+    "y": 1.6,
+    "z": -0.9,
+    "why": "無鼓，舊唱片泡在長殘響與嘶聲 drone，陰"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/a417c945-723c-3a3d-81a4-0d178ff36241",
+    "https://coverartarchive.org/release-group/a417c945-723c-3a3d-81a4-0d178ff36241/front",
+    "https://en.wikipedia.org/wiki/Selected_Memories_from_the_Haunted_Ballroom"
+   ],
+   "mbRgMbid": "a417c945-723c-3a3d-81a4-0d178ff36241",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "維基載有幾首 Merzbow 式噪音曲（September 1939 等），x 可能比 Stage 4–6 高一點；整體仍以 drone／殘響為主"
+  },
+  {
+   "artist": "The Caretaker",
+   "album": "A Stairway to the Stars",
+   "year": 2001,
+   "label": "V/Vm Test Records",
+   "country": "gb",
+   "faction": "hauntology",
+   "genres": [
+    "electronic"
+   ],
+   "why": "《鬼店》舞廳三部曲第二張：舊舞曲片段被拉長、加深殘響與低頻嗡鳴，比後期《An Empty Bliss》更陰森",
+   "moodGuess": {
+    "x": 1.4,
+    "y": 1.5,
+    "z": -0.8,
+    "why": "無鼓，舞廳唱片糊進殘響與低頻嗡鳴，陰"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/2778692f-aed9-3b1a-aea9-1658eeb40ddb",
+    "https://coverartarchive.org/release-group/2778692f-aed9-3b1a-aea9-1658eeb40ddb/front",
+    "https://www.discogs.com/master/18438"
+   ],
+   "mbRgMbid": "2778692f-aed9-3b1a-aea9-1658eeb40ddb",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "同為舞廳取樣，池中《Persistent Repetition of Phrases》z 0.2；本張早期處理較陰暗，但 z 回升風險存在"
+  },
+  {
+   "artist": "Black Mountain Transmitter",
+   "album": "Black Goat of the Woods",
+   "year": 2009,
+   "label": "Lysergic Earwax",
+   "country": "gb",
+   "faction": "hauntology",
+   "genres": [
+    "electronic"
+   ],
+   "why": "北愛 J.R. Moore 的 Lovecraft 式恐怖 hauntology：像失落低成本恐怖片的配樂，以克制的 drone 製造恐懼而非暴力",
+   "moodGuess": {
+    "x": 1.6,
+    "y": 1.5,
+    "z": -1.5,
+    "why": "無鼓推進，類比合成器 drone 與低頻、霧，陰"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/79f61ea7-afa1-4290-a0dc-a985cb9122fa",
+    "https://coverartarchive.org/release-group/79f61ea7-afa1-4290-a0dc-a985cb9122fa/front",
+    "https://olive-music.blogspot.com/2011/02/review-black-mountain-transmitter-black.html",
+    "https://www.forcedexposure.com/Artists/BLACK.MOUNTAIN.TRANSMITTER.html"
+   ],
+   "mbRgMbid": "79f61ea7-afa1-4290-a0dc-a985cb9122fa",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Black Mountain Transmitter",
+   "album": "Playing With Dead Things",
+   "year": 2012,
+   "label": "Lysergic Earwax",
+   "country": "gb",
+   "faction": "hauntology",
+   "genres": [
+    "electronic"
+   ],
+   "why": "BMT 第二張全長：同一路恐怖片配樂式 dark ambient，磁帶嘶聲、低頻嗡鳴與失真碎片",
+   "moodGuess": {
+    "x": 1.8,
+    "y": 1.6,
+    "z": -1.6,
+    "why": "無鼓，低頻嗡鳴＋磁帶噪訊、糊，陰"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/a6cdf163-cc7e-4dfe-b6db-067a3d6a675c",
+    "https://coverartarchive.org/release-group/a6cdf163-cc7e-4dfe-b6db-067a3d6a675c/front",
+    "https://www.discogs.com/master/637434"
+   ],
+   "mbRgMbid": "a6cdf163-cc7e-4dfe-b6db-067a3d6a675c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Discogs 風格含 Noise；若噪音段刺耳密集，x 可能上升"
+  },
+  {
+   "artist": "Grey Frequency",
+   "album": "Immersion",
+   "year": 2014,
+   "label": "A Year In The Country",
+   "country": "gb",
+   "faction": "hauntology",
+   "genres": [
+    "electronic"
+   ],
+   "why": "英國 hauntology／民俗恐怖廠牌 A Year In The Country 的 drone 作：錄音拼貼、磁帶嗡鳴與田野錄音，荒涼",
+   "moodGuess": {
+    "x": 1.4,
+    "y": 1.2,
+    "z": -1.2,
+    "why": "無鼓，drone 嗡鳴＋田野錄音、磁帶糊，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/52548104-a336-44b3-bf13-b16a4a0911d1",
+    "https://coverartarchive.org/release-group/52548104-a336-44b3-bf13-b16a4a0911d1/front",
+    "https://www.discogs.com/release/5976022"
+   ],
+   "mbRgMbid": "52548104-a336-44b3-bf13-b16a4a0911d1",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Grey Frequency",
+   "album": "Second Sight",
+   "year": 2012,
+   "label": "Darker Days Ahead",
+   "country": "gb",
+   "faction": "hauntology",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Grey Frequency 早期 dark ambient：工業 drone 與極簡低頻，超自然題材的冷霧",
+   "moodGuess": {
+    "x": 1.5,
+    "y": 1.3,
+    "z": -1.4,
+    "why": "無鼓，工業 drone、低頻、殘響，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/b9276b7e-184b-4ce9-85de-2a46e79a36ef",
+    "https://coverartarchive.org/release-group/b9276b7e-184b-4ce9-85de-2a46e79a36ef/front",
+    "https://www.discogs.com/release/3647015"
+   ],
+   "mbRgMbid": "b9276b7e-184b-4ce9-85de-2a46e79a36ef",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Grey Frequency",
+   "album": "Ufology",
+   "year": 2019,
+   "label": "[no label]",
+   "country": "gb",
+   "faction": "hauntology",
+   "genres": [
+    "electronic"
+   ],
+   "why": "以 UFO 傳說為題的 hauntology drone：musique concrète 碎片、短波雜訊與 dark ambient 墊，陰冷",
+   "moodGuess": {
+    "x": 1.6,
+    "y": 1.3,
+    "z": -1.4,
+    "why": "無鼓，drone 墊＋短波雜訊、具象聲響，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/85194150-2134-4555-ba2b-543cb5ee1d4b",
+    "https://greyfrequency.bandcamp.com/album/ufology",
+    "https://greyfrequency.bandcamp.com/album/ufology",
+    "https://www.discogs.com/release/13279971"
+   ],
+   "mbRgMbid": "85194150-2134-4555-ba2b-543cb5ee1d4b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 無 CAA 封面，封面取 Bandcamp"
+  },
+  {
+   "artist": "Grey Frequency",
+   "album": "Leviathan",
+   "year": 2022,
+   "label": "Dub Cthonic",
+   "country": "gb",
+   "faction": "hauntology",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Grey Frequency 的深海題材 drone：低頻厚墊與緩慢流動的磁帶霧，hauntology 系的暗 ambient",
+   "moodGuess": {
+    "x": 1.3,
+    "y": 1.3,
+    "z": -1.2,
+    "why": "無鼓，低頻厚墊、磁帶霧，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/9793ca9c-7775-45c5-a0a9-db3979ff7969",
+    "https://coverartarchive.org/release-group/9793ca9c-7775-45c5-a0a9-db3979ff7969/front",
+    "https://www.discogs.com/release/24644921"
+   ],
+   "mbRgMbid": "9793ca9c-7775-45c5-a0a9-db3979ff7969",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Grey Frequency",
+   "album": "Paranormal",
+   "year": 2021,
+   "label": "[no label]",
+   "country": "gb",
+   "faction": "hauntology",
+   "genres": [
+    "electronic"
+   ],
+   "why": "以 EVP 鬼聲錄音為題的 hauntology drone：「Haunted Tape」「Ectoplasmic Veil」，磁帶雜訊與陰暗 drone",
+   "moodGuess": {
+    "x": 1.5,
+    "y": 1.3,
+    "z": -1.4,
+    "why": "無鼓，磁帶雜訊＋drone、殘響，陰"
+   },
+   "evidence": [
+    "https://greyfrequency.bandcamp.com/album/paranormal",
+    "https://api.discogs.com/masters/2052655"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "artist:\"Grey Frequency\" AND primarytype:album（列出 9 個 RG，無 Paranormal）",
+     "releasegroup:\"Paranormal\" AND artist:\"Grey Frequency\"（0 筆）"
+    ],
+    "checkedAt": "2026-11-04",
+    "conclusion": "MB 查無此作，以 Bandcamp 與 Discogs master 2052655 為人工身分"
+   },
+   "manualEvidenceUrls": [
+    "https://greyfrequency.bandcamp.com/album/paranormal",
+    "https://www.discogs.com/master/2052655"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Discogs 標 Dark Ambient／Drone／Musique Concrète"
+  },
+  {
+   "artist": "Hawthonn",
+   "album": "Red Goddess (Of This Men Shall Know Nothing)",
+   "year": 2018,
+   "label": "Ba Da Bing!",
+   "country": "gb",
+   "faction": "hauntology",
+   "genres": [
+    "electronic"
+   ],
+   "why": "英國民俗恐怖 hauntology 二人組 Hawthonn：儀式 drone、泛音唱與低頻嗡鳴，像荒原上的召喚",
+   "moodGuess": {
+    "x": 1.4,
+    "y": 1.3,
+    "z": -1.0,
+    "why": "無鼓，drone 嗡鳴＋泛音人聲、殘響，陰"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/bd7cc54c-9bb2-49e2-ab67-17e60134284b",
+    "https://coverartarchive.org/release-group/bd7cc54c-9bb2-49e2-ab67-17e60134284b/front",
+    "https://www.discogs.com/release/11840993"
+   ],
+   "mbRgMbid": "bd7cc54c-9bb2-49e2-ab67-17e60134284b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Layla Legard 人聲有長音旋律，z 可能回升到 −0.6 上下"
+  },
+  {
+   "artist": "Hawthonn",
+   "album": "Earth Mirror",
+   "year": 2021,
+   "label": "Ba Da Bing!",
+   "country": "gb",
+   "faction": "hauntology",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Hawthonn 以地景與神話為題的儀式 drone：合成器嗡鳴、田野錄音與泛音唱，陰濕的英國荒野",
+   "moodGuess": {
+    "x": 1.4,
+    "y": 1.2,
+    "z": -0.9,
+    "why": "無鼓，drone 嗡鳴＋泛音人聲、田野錄音，陰"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/b5b68358-5a17-424a-a553-ff8d349c0ece",
+    "https://coverartarchive.org/release-group/b5b68358-5a17-424a-a553-ff8d349c0ece/front",
+    "https://www.discogs.com/release/21315688"
+   ],
+   "mbRgMbid": "b5b68358-5a17-424a-a553-ff8d349c0ece",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "同上，人聲長音可能讓 z 回升"
+  },
+  {
+   "artist": "Water Borders",
+   "album": "Harbored Mantras",
+   "year": 2011,
+   "label": "Tri Angle",
+   "country": "us",
+   "faction": "witch-house",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Tri Angle 早期 witch house 經典：哥德低吟人聲、緩慢金屬撞擊與厚殘響，暗黑而沉",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1.6,
+    "z": -1.4,
+    "why": "慢打擊、低吟人聲、厚殘響與低頻，陰"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/0641c8dc-fa38-4596-9fa2-266ee47d8cc9",
+    "https://coverartarchive.org/release-group/0641c8dc-fa38-4596-9fa2-266ee47d8cc9/front",
+    "https://www.discogs.com/master/381499"
+   ],
+   "mbRgMbid": "0641c8dc-fa38-4596-9fa2-266ee47d8cc9",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "有慢速打擊聲響；Discogs 標 Downtempo，不是 trap 拍，但 x 不排除近 2.6"
+  },
+  {
+   "artist": "Mater Suspiria Vision",
+   "album": "Crack Witch",
+   "year": 2011,
+   "label": "Living Tapes",
+   "country": "de",
+   "faction": "witch-house",
+   "genres": [
+    "electronic"
+   ],
+   "why": "德國 witch house 怪才 Cosmotropia de Xam 的代表作：鈍化的鼓機、無邊殘響與催眠取樣糊成麻醉般的霧",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1.7,
+    "z": -1.1,
+    "why": "慢鈍鼓機、厚殘響、糊化取樣，陰"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/1a9a196b-cacb-4545-9c50-b4be565a44ac",
+    "https://coverartarchive.org/release-group/1a9a196b-cacb-4545-9c50-b4be565a44ac/front",
+    "https://www.discogs.com/release/20549443"
+   ],
+   "mbRgMbid": "1a9a196b-cacb-4545-9c50-b4be565a44ac",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "有鼓機（Boomkat 稱 blunted drum machines），比 Salem 更褪色慢；若研究查到 trap 拍密集則汰"
+  },
+  {
+   "artist": "Mater Suspiria Vision",
+   "album": "Paracusia (Crack Witch II)",
+   "year": 2012,
+   "label": "Phantasma Disques",
+   "country": "de",
+   "faction": "witch-house",
+   "genres": [
+    "electronic"
+   ],
+   "why": "《Crack Witch》續作：論壇稱比一般 witch house 更像聲響拼貼，糊化取樣與 drone 的幻聽",
+   "moodGuess": {
+    "x": 2.0,
+    "y": 1.6,
+    "z": -1.2,
+    "why": "零星慢拍、drone 與糊化取樣拼貼，陰"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/81e29451-d8e0-4b69-876d-9208523bf651",
+    "https://coverartarchive.org/release-group/81e29451-d8e0-4b69-876d-9208523bf651/front",
+    "https://www.discogs.com/master/470953"
+   ],
+   "mbRgMbid": "81e29451-d8e0-4b69-876d-9208523bf651",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "聲音描述僅來自論壇，研究層請再確認；年份 Discogs master 470953 為 2012，MB 記 2013-10-31，取 2012"
+  },
+  {
+   "artist": "Mater Suspiria Vision",
+   "album": "Hollywood Necronomicon",
+   "year": 2013,
+   "label": "Phantasma Disques",
+   "country": "de",
+   "faction": "witch-house",
+   "genres": [
+    "electronic"
+   ],
+   "why": "MSV 的 drone 向 LP：Discogs 標 Drone／Industrial／Witch House，恐怖片取樣沉在低頻嗡鳴裡",
+   "moodGuess": {
+    "x": 1.7,
+    "y": 1.6,
+    "z": -1.3,
+    "why": "幾乎無拍，低頻嗡鳴＋恐怖片取樣、糊，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/ba91dd90-8dfd-4603-908f-61c2c20c72d9",
+    "https://coverartarchive.org/release-group/ba91dd90-8dfd-4603-908f-61c2c20c72d9/front",
+    "https://www.discogs.com/release/4914392"
+   ],
+   "mbRgMbid": "ba91dd90-8dfd-4603-908f-61c2c20c72d9",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Industrial 標籤，若有刺耳噪音段 x 會上升"
+  },
+  {
+   "artist": "Mater Suspiria Vision",
+   "album": "Antropophagus",
+   "year": 2015,
+   "label": "Phantasma Disques",
+   "country": "de",
+   "faction": "witch-house",
+   "genres": [
+    "electronic"
+   ],
+   "why": "向義式恐怖片致敬的 MSV LP：Discogs 標 Experimental／Drone／Witch House，緩慢陰森的合成器霧",
+   "moodGuess": {
+    "x": 1.8,
+    "y": 1.5,
+    "z": -1.3,
+    "why": "慢、drone 為主、合成器霧與低頻，陰"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/947d1053-0945-408a-8c23-21a22c5e3d96",
+    "https://coverartarchive.org/release-group/947d1053-0945-408a-8c23-21a22c5e3d96/front",
+    "https://scenepointblank.com/reviews/mater-suspiria-vision/antropophagus",
+    "https://www.discogs.com/release/13638733"
+   ],
+   "mbRgMbid": "947d1053-0945-408a-8c23-21a22c5e3d96",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "恐怖配樂取向，若驚嚇段多會判躁，研究層確認"
+  },
+  {
+   "artist": "Ensemble Economique",
+   "album": "Interval Signals",
+   "year": 2014,
+   "label": "Denovali Records",
+   "country": "us",
+   "faction": "dark-electronic-ambient",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Brian Pyle 的暗黑迷幻 drone 計畫：Discogs 標 Dark Ambient，長段嗡鳴與迴授像夜霧裡的收音機訊號",
+   "moodGuess": {
+    "x": 1.8,
+    "y": 1.4,
+    "z": -1.1,
+    "why": "幾乎無鼓，drone 嗡鳴＋迴授、殘響，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/d1af5f43-f932-4271-a7b3-f98fd8f4aa41",
+    "https://coverartarchive.org/release-group/d1af5f43-f932-4271-a7b3-f98fd8f4aa41/front",
+    "https://www.discogs.com/release/5310904"
+   ],
+   "mbRgMbid": "d1af5f43-f932-4271-a7b3-f98fd8f4aa41",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "無專評；Discogs 另標 Psychedelic Rock，可能有吉他段"
+  },
+  {
+   "artist": "Ensemble Economique",
+   "album": "Light That Comes, Light That Goes",
+   "year": 2013,
+   "label": "Denovali Records",
+   "country": "us",
+   "faction": "dark-electronic-ambient",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Textura 稱為「四十分鐘有力的暗黑 ambient 塑形」，FACT 首播稱 haunting：厚 drone 與低頻緩慢推移",
+   "moodGuess": {
+    "x": 1.6,
+    "y": 1.5,
+    "z": -1.2,
+    "why": "無鼓，厚 drone、低頻、殘響，陰"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/42d1cfdd-1aa4-447d-88e7-065e08927f78",
+    "https://coverartarchive.org/release-group/42d1cfdd-1aa4-447d-88e7-065e08927f78/front",
+    "https://textura.org/reviews/ensembleeconomique_lightthatcomes.htm",
+    "https://factmag.com/2013/12/17/premiere-stream-ensemble-economiques-haunting-new-album-light-that-comes-light-that-goes"
+   ],
+   "mbRgMbid": "42d1cfdd-1aa4-447d-88e7-065e08927f78",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Dean Hurley",
+   "album": "Anthology Resource Vol. 1: △△",
+   "year": 2017,
+   "label": "Sacred Bones Records",
+   "country": "us",
+   "faction": "dark-electronic-ambient",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Lynch 御用音效師 Dean Hurley 的《雙峰》第三季音效庫：低頻嗡鳴、電流聲與陰影般的 drone",
+   "moodGuess": {
+    "x": 1.4,
+    "y": 1.3,
+    "z": -1.2,
+    "why": "無鼓，低頻嗡鳴＋電流噪、殘響，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/e539a54f-11b0-42a0-9cb3-e1822d1c586f",
+    "https://coverartarchive.org/release-group/e539a54f-11b0-42a0-9cb3-e1822d1c586f/front",
+    "https://www.discogs.com/master/1227890"
+   ],
+   "mbRgMbid": "e539a54f-11b0-42a0-9cb3-e1822d1c586f",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 副類型 Soundtrack（實為音效庫專輯，正規全長，Sacred Bones 發行）"
+  },
+  {
+   "artist": "Dean Hurley",
+   "album": "Anthology Resource Vol. II: Philosophy of Beyond",
+   "year": 2019,
+   "label": "Sacred Bones Records",
+   "country": "us",
+   "faction": "dark-electronic-ambient",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Hurley 音效庫第二輯：更長的 drone 與房間共鳴，Lynch 式不安的暗室氛圍往下沉",
+   "moodGuess": {
+    "x": 1.3,
+    "y": 1.3,
+    "z": -1.1,
+    "why": "無鼓，長 drone、房間共鳴、低頻，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/f35947ce-eec8-48a1-87f6-9fd4bd646744",
+    "https://coverartarchive.org/release-group/f35947ce-eec8-48a1-87f6-9fd4bd646744/front",
+    "https://www.discogs.com/release/14139406"
+   ],
+   "mbRgMbid": "f35947ce-eec8-48a1-87f6-9fd4bd646744",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Tor Lundvall",
+   "album": "Ice",
+   "year": 1999,
+   "label": "Eternal Autumn Editions",
+   "country": "us",
+   "faction": "dark-electronic-ambient",
+   "genres": [
+    "electronic"
+   ],
+   "why": "畫家 Tor Lundvall 的冬季 ambient：合成器墊、嘶聲與遠方鐘響，寂寥的雪地 dark ambient",
+   "moodGuess": {
+    "x": 1.2,
+    "y": 1.0,
+    "z": -1.1,
+    "why": "無鼓，柔合成器墊＋嘶聲、殘響，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/32a38d53-ef09-3e91-8796-11be4d3e450b",
+    "https://coverartarchive.org/release-group/32a38d53-ef09-3e91-8796-11be4d3e450b/front",
+    "https://www.discogs.com/release/313147"
+   ],
+   "mbRgMbid": "32a38d53-ef09-3e91-8796-11be4d3e450b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "質地偏柔，y 可能落 0.8–1.0，貼近門檻"
+  },
+  {
+   "artist": "Tor Lundvall",
+   "album": "The Mist",
+   "year": 2001,
+   "label": "Eternal Autumn Editions",
+   "country": "us",
+   "faction": "dark-electronic-ambient",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Lundvall 環境畫作系列：霧氣般的合成器墊與低吟，World Serpent 系的灰色 ambient",
+   "moodGuess": {
+    "x": 1.2,
+    "y": 1.1,
+    "z": -0.9,
+    "why": "無鼓，霧狀合成器墊、殘響，陰"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/0d8daa08-54b6-3df3-bfa0-269af3f44326",
+    "https://coverartarchive.org/release-group/0d8daa08-54b6-3df3-bfa0-269af3f44326/front",
+    "https://www.discogs.com/release/262675"
+   ],
+   "mbRgMbid": "0d8daa08-54b6-3df3-bfa0-269af3f44326",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "同上，y 貼門檻風險"
+  },
+  {
+   "artist": "Tor Lundvall",
+   "album": "Empty City",
+   "year": 2006,
+   "label": "Strange Fortune",
+   "country": "us",
+   "faction": "dark-electronic-ambient",
+   "genres": [
+    "electronic"
+   ],
+   "why": "以空城為題的 Lundvall dark ambient：都市夜的低頻嗡鳴與遠方噪訊，疏離",
+   "moodGuess": {
+    "x": 1.3,
+    "y": 1.0,
+    "z": -1.1,
+    "why": "無鼓，低頻嗡鳴＋遠方噪訊，都市夜冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/f742de32-6ec5-30eb-93c8-0d782602e237",
+    "https://coverartarchive.org/release-group/f742de32-6ec5-30eb-93c8-0d782602e237/front",
+    "https://www.discogs.com/release/661748"
+   ],
+   "mbRgMbid": "f742de32-6ec5-30eb-93c8-0d782602e237",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "y 貼門檻風險"
+  },
+  {
+   "artist": "Tor Lundvall",
+   "album": "The Shipyard",
+   "year": 2012,
+   "label": "Dais Records",
+   "country": "us",
+   "faction": "dark-electronic-ambient",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Dais 發行的 Lundvall 工業港口題 ambient：鏽蝕金屬回聲與厚合成器墊，灰冷",
+   "moodGuess": {
+    "x": 1.3,
+    "y": 1.0,
+    "z": -1.0,
+    "why": "無鼓，合成器墊＋金屬回聲、殘響，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/de93f417-597a-4ce6-ab55-c9fe316c546c",
+    "https://coverartarchive.org/release-group/de93f417-597a-4ce6-ab55-c9fe316c546c/front",
+    "https://www.discogs.com/master/3115524"
+   ],
+   "mbRgMbid": "de93f417-597a-4ce6-ab55-c9fe316c546c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "y 貼門檻風險"
+  }
+ ],
+ "notes": [
+  "挖到 24 張，不足 27；Ghost Box 明亮盤（Belbury Poly、Focus Group、Advisory Circle、Moon Wiring Club）判暖輕不收；Pye Corner Audio 多鼓機推進不收。",
+  "排除：Caretaker《EATEOT Stage 1–3》（維基：與 An Empty Bliss 同風格，偏暖）、《Everywhere, an Empty Bliss》（彙集）；Mark Van Hoen《The Revenant Diary》（有 club 向鼓拍）；Ensemble Economique《In Silhouette》（Apple 稱 tense，體感躁風險）、《Melt Into Nothing》（4AD 式、旋律清楚，z 回升風險）；White Ring《Gate of Grief》（EBM／electro 拍）；Balam Acab（z 近中性）；Ekin Fil、Philip Jeck（前例判暖）；Indignant Senility（md32 已提）。",
+  "Salem《King Night》《Fires in Heaven》、Mordant Music《Dead Air》、Kirby《We, So Tired…》前批研究已汰，不重提。",
+  "WebSearch 用 4 次。"
+ ]
+}
