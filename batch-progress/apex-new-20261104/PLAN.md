@@ -30,6 +30,7 @@
 | ax4 | 流亡 B：亞洲、拉美、非洲、東歐、早期電子私壓 | 30 | ar-d-264（✅ 介紹上線 15／skipped 3） | ✅ 上線 20（pearl 15／一般 5） |
 | ax5 | 異端 C：卡池既有自由爵士／即興升格＋新上架美國自由爵士（店主 11-04 撤銷「不收能量型自由爵士」） | 升格 32＋新卡 42 | ar-d-266（✅ 介紹上線 4／skipped 0；267 未用） | ✅ 異端 +13（升格 6、新上架 7 全 heresy）；新卡研究 30 汰 23 |
 | ax6 | 異端 C：卡池沒有的藝人——美國以外自由爵士／即興（店主點名 Kowald Quintet、姜泰煥）＋war metal、noisegrind、raw BM、drone doom、噪音搖滾、具象／現代音樂 | 50（8 組策展） | ar-d-268、ar-d-269（✅ 介紹上線 14＋3／skipped 0） | ✅ 上線 18（heresy 18／一般 0）；研究汰 32（none 不轉一般卡，52071）；試聽 ready 11 |
+| ax8 | 異端 D（店主 11-04 放寬：可信來源描述出具體、持續整張的高強度聽感即可）：卡池沒有的藝人——附文作品（Russolo、Group Ongaku、Schaeffer、Vomir《Proanomie》）、噪音史開創、harsh noise／PE、自由即興／噪音搖滾、極端金屬／noisecore／極端電子＋ax6 汰換稿重判 | 進行中 | ar-d-270、ar-d-271 | 進行中（分支 `claude/apex-new-ax8`；ax7 另一工作階段做既有卡升格） |
 
 - 提名數比目標多約兩成，留給研究層汰換。
 - 一個工作階段跑 2 批（ax1＋ax2、ax3＋ax4），照 CLAUDE.md 的併行規則。
