@@ -1,0 +1,223 @@
+{
+ "group": "ax8a",
+ "factions": [
+  {
+   "id": "noise-origins",
+   "zh": "噪音／具象開創錄音",
+   "count": 3,
+   "why": "Russolo、Schaeffer、Avraamov、Kosugi 等噪音史源頭"
+  },
+  {
+   "id": "hnw-drone-noise",
+   "zh": "牆式噪音／聲牆",
+   "count": 3,
+   "why": "Vomir、Chatham、NON、Z'EV、Airway 等"
+  }
+ ],
+ "albums": [
+  {
+   "artist": "Vomir",
+   "album": "Proanomie",
+   "year": 2009,
+   "label": "At War With False Noise",
+   "country": "fr",
+   "faction": "hnw-drone-noise",
+   "genres": [
+    "noise"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "單曲 76 分鐘不間斷、無變化的 harsh noise wall；Musique Machine 稱為他最知名的長篇專輯，Godflesh 的 Justin Broadrick 稱 Vomir 為 HNW 最佳實踐者。",
+   "listeners": null,
+   "why": "整張只有一首 76 分鐘的曲子，是一整面恆定、不起伏、無節拍的靜態噪音牆（Romain Perrot 自述美學為「無想法、無變化、無發展」）；Musique Machine 的 Roger Batty 稱它為 Vomir 最知名且最容易取得的長篇專輯，SensCritique 聽眾描述為「76 分鐘、巨大而不動的白噪音」。店主點名必收。",
+   "moodGuess": {
+    "x": 3.6,
+    "y": 1.2,
+    "z": -1.2,
+    "why": "恆定的高密度噪音牆，無旋律無推進，單調壓迫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/a508333b-506f-4d40-9542-dc34cdc5ff3f",
+    "https://coverartarchive.org/release-group/a508333b-506f-4d40-9542-dc34cdc5ff3f/front",
+    "https://www.musiquemachine.com/reviews/vomir-untitled-c39-3086",
+    "https://www.senscritique.com/album/proanomie/7834356/actualites",
+    "https://en.wikipedia.org/wiki/Vomir"
+   ],
+   "mbRgMbid": "a508333b-506f-4d40-9542-dc34cdc5ff3f",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "店主點名。卡池已有 Vomir《Claustration》（heresy），本張照指示仍收。Proanomie 本身沒有找到專屬專業樂評，強度依據是 Musique Machine 對它的比較性提及＋SensCritique 聽眾描述＋Wikipedia 對 HNW 的定義；MB 單曲目 4585 秒。"
+  },
+  {
+   "artist": "Airway",
+   "album": "Live at LACE",
+   "year": 1978,
+   "label": "Los Angeles Free Music Society",
+   "country": "us",
+   "faction": "hnw-drone-noise",
+   "genres": [
+    "noise",
+    "experimental"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "LAFMS 旗下 Airway 1978 年現場，磁帶延遲堆出的噪音牆，Wikipedia 稱影響日本 Hijokaidan 等噪音團；店主點名。",
+   "listeners": null,
+   "why": "Airway 1978 年 8 月在洛杉磯 LACE 畫廊的首場現場，電子、曼陀林、薩克斯風、貝斯、鼓與人聲在磁帶延遲製造的噪音牆中即興，沒有固定節拍；Wikipedia 稱此演出據信影響了日本的 Hijokaidan 等噪音團。",
+   "moodGuess": {
+    "x": 4.3,
+    "y": 1.2,
+    "z": -1.4,
+    "why": "磁帶延遲與多樂器堆出的噪音牆，混濁壓迫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/416b6f92-b54a-45a0-bd61-4365c88e9c27",
+    "https://coverartarchive.org/release-group/416b6f92-b54a-45a0-bd61-4365c88e9c27/front",
+    "https://en.wikipedia.org/wiki/Airway_(band)"
+   ],
+   "mbRgMbid": "416b6f92-b54a-45a0-bd61-4365c88e9c27",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "Airway 的代表作即此現場盤（1978 首演），無棚錄正規專輯；MB 主類型為空（只標 Live）",
+   "queryAlias": "",
+   "uncertain": "依據偏薄：僅 Wikipedia 描述，無具名樂評。ax5b 曾提過同一張（以爵士即興角度），本組以噪音史角度重提，因店主點名；主線擇一處理，避免重複。"
+  },
+  {
+   "artist": "Luigi Russolo",
+   "album": "Die Kunst der Geräusche",
+   "year": 2000,
+   "label": "Wergo",
+   "country": "de",
+   "faction": "noise-origins",
+   "genres": [
+    "experimental",
+    "noise"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "未來主義噪音機 Intonarumori 的發明者；此 Wergo CD 收錄其現存僅有的 1921 年 Corale、Serenata 錄音與噪音機單機音色，為噪音音樂史的源頭文獻。",
+   "listeners": null,
+   "why": "Russolo 1913 年〈噪音的藝術〉宣言後造出 Intonarumori（噪音機），這張收錄 Crepitatore、Ululatore、Gracidatore、Gorgogliatore、Ronzatore 等噪音機單機音色，以及 1921 年 Corale、Serenata（Wikipedia：唯一倖存的同時代錄音）與 Risveglio di una città，另含後人的重建與致敬；歷史地位為噪音音樂開創者，但實際聽感是短小的機械噪音片段而非整張高強度。",
+   "moodGuess": {
+    "x": 3.4,
+    "y": 0.4,
+    "z": -0.8,
+    "why": "機械嗡鳴、爆裂與嘶聲的短小片段，粗糙且怪異"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/2bd36c70-3c98-45ca-8dd5-613bdf245040",
+    "https://coverartarchive.org/release-group/2bd36c70-3c98-45ca-8dd5-613bdf245040/front",
+    "https://en.wikipedia.org/wiki/Luigi_Russolo"
+   ],
+   "mbRgMbid": "2bd36c70-3c98-45ca-8dd5-613bdf245040",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "MB 為 Compilation（13 首，約 40 分鐘）；Russolo 沒有原創專輯，此為唯一正式發行的 Intonarumori 錄音彙整（歷史錄音，唯一可得形態）",
+   "queryAlias": "",
+   "uncertain": "依據是歷史地位而非高強度聽感，屬標準中「噪音史開創」一類；Wikipedia 亦註明其作品與現代噪音『幾無相似』。含後人重建／致敬曲目（Fragmente、Canzone Rumorista、Omaggio），非純 1920 年代錄音。"
+  },
+  {
+   "artist": "Pierre Schaeffer",
+   "album": "5 études de bruits / Études aux objets",
+   "year": 2010,
+   "label": "Disques Dreyfus",
+   "country": "fr",
+   "faction": "noise-origins",
+   "genres": [
+    "experimental",
+    "classical"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "1948 年 Cinq études de bruits 是具象音樂（musique concrète）的起點，以火車、陀螺、鍋碗等錄音剪接成無旋律的噪音拼貼；此為以它為主的獨立發行。",
+   "listeners": null,
+   "why": "收錄 Schaeffer 1948 年的〈Cinq études de bruits〉（鐵道、陀螺、鋼琴、管弦、鍋碗五首，每首約 2–4 分鐘），把現場錄音的噪音剪接成沒有旋律、沒有節拍的聲音拼貼，另有 1950 年代 Études aux objets 五首；歷史地位為 musique concrète 開創，但各首短小、不算持續高強度。",
+   "moodGuess": {
+    "x": 3.4,
+    "y": 0.2,
+    "z": -0.6,
+    "why": "拼貼的機械與碰撞噪音，片段短小，怪異而緊繃"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/73aab73d-b31b-4974-8264-6fc74c9e3598",
+    "https://www.discogs.com/release/2713820-Pierre-Schaeffer-5-%C3%89tudes-De-Bruits-%C3%89tude-Aux-Objets",
+    "https://itunes.apple.com/us/album/cinq-etudes-de-bruits-single/987047145"
+   ],
+   "mbRgMbid": "73aab73d-b31b-4974-8264-6fc74c9e3598",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "MB 為 Album＋Compilation（2010 Disques Dreyfus，A 面 Cinq études de bruits 五首、B 面 Études aux objets 五首，共約 33 分鐘）；Cinq études 沒有以原始 1948 形態發行的獨立專輯，這張是以它為主的唯一專輯形態",
+   "queryAlias": "",
+   "uncertain": "卡池已有 Pierre Schaeffer《Musique concrète》(1962, classical, seed 無 MBID)；本張藝人撞名，依派工單仍列出供主線決定換人與否。MB 查不到《Musique concrète》同名 RG；本組查到的 Schaeffer 相關 MB RG：5 études de bruits / Études aux objets (73aab73d；曲目：Étude aux chemins de fer、Étude aux tourniquets、Étude au piano / Étude composée、Étude pour orchestre / Étude concertante、Étude aux casseroles、Objets exposés、Objets étendus、Objets multipliés、Objets liés、Objets rassemblés)；Musique Experimentale (440d5204，BnF 2013：Volumes、Crucifixion、Ambiance II、Tautologos II、Texte I、Texte II)；Panorama of Musique Concrète No. 2 (4de1d98e，1956：Tam-Tam IV、Astrology、Antiphony、Vocalises、Study、Symphonie pour un homme seul、R.A.I. Bird)。CAA 無封面，封面來源為 Discogs release 2713820（Apple 另有 Single 版 987047145）；依據為歷史地位，未找到具名樂評。"
+  },
+  {
+   "artist": "Takehisa Kosugi",
+   "album": "Catch-Wave",
+   "year": 1975,
+   "label": "CBS/Sony",
+   "country": "jp",
+   "faction": "noise-origins",
+   "genres": [
+    "experimental",
+    "electronic"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "小杉武久（Taj Mahal Travellers、Group Ongaku 成員）1975 年獨奏：加工小提琴、人聲、收音機與振盪器堆成兩面長篇電子 drone，被樂迷與評論視為日本電子即興先驅。",
+   "listeners": null,
+   "why": "兩首各約 26 與 22 分鐘的長曲（〈Mano-Dharma '74〉、〈Wave Code #E-1〉），以過度加工的小提琴、人聲、收音機與受風和光調變的振盪器疊出持續不間斷的電子 drone，無拍、無旋律；Progarchives 評論者形容為『深厚而龐大的電子質地』，Frieze 描述其聲音為『起伏回授堆成的密集噪音層』（針對他的現場）。",
+   "moodGuess": {
+    "x": 3.3,
+    "y": 1,
+    "z": -0.8,
+    "why": "持續的電子 drone 與回授層，無節拍，壓迫而懸浮"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/ae11b4fc-cb06-323e-9358-8616f4535de0",
+    "https://coverartarchive.org/release-group/ae11b4fc-cb06-323e-9358-8616f4535de0/front",
+    "https://www.progarchives.com/album.asp?id=17765",
+    "https://frieze.com/article/music-43?language=de"
+   ],
+   "mbRgMbid": "ae11b4fc-cb06-323e-9358-8616f4535de0",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Catch-Wave 小杉武久",
+   "uncertain": "依據偏薄：多為 Progarchives 與店家說明，Frieze 的『harsh noise』描述針對其現場而非此盤；強度偏 drone 而非噪音牆，主線決定收不收。MB 藝人名為『小杉武久』，卡池另有『Steve Lacy, 高橋悠治, 小杉武久』合作盤 Distant Voices，非同一藝人字串；Group Ongaku《Music of Group Ongaku》ax6b 已提。"
+  },
+  {
+   "artist": "Rhys Chatham",
+   "album": "An Angel Moves Too Fast to See",
+   "year": 2006,
+   "label": "Table of the Elements",
+   "country": "us",
+   "faction": "hnw-drone-noise",
+   "genres": [
+    "experimental",
+    "noise"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "一百把電吉他、電貝斯與鼓的五樂章聲牆，Byron Coley 於 The Wire、Andy Beta 於 Pitchfork 皆評為 Chatham 大編制吉他概念的終極實現；音量與疊層是核心。",
+   "listeners": null,
+   "why": "單曲 An Angel Moves Too Fast to See（1989）為 100 把電吉他、電貝斯與鼓的五樂章作品，以疊層嗡鳴、泛音與持續轟擊築起龐大聲牆；The Wire 的 Byron Coley 說它讓 Chatham 的集體弦聲概念『真正圓滿』並產生『延展的宏偉感』，Pitchfork 的 Andy Beta 將它視為 Chatham 對音量、軌跡與速度實驗的終點。",
+   "moodGuess": {
+    "x": 4,
+    "y": 1.3,
+    "z": 0.2,
+    "why": "百把吉他的疊層轟鳴，宏偉、厚重、有推進"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/bd5fdfcc-afed-3cbc-846b-b86e3dae4f9c",
+    "https://coverartarchive.org/release-group/bd5fdfcc-afed-3cbc-846b-b86e3dae4f9c/front",
+    "https://rhyschatham.net/rccomsite/press/wire_may_2003.html",
+    "https://rhyschatham.net/rccomsite/press/pitchfork_may_2003.html"
+   ],
+   "mbRgMbid": "bd5fdfcc-afed-3cbc-846b-b86e3dae4f9c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "依據偏薄且屬『有結構』的大編制吉他聲牆（五樂章、有鼓、有推進），可能不符『反結構』；樂評來自藝人官網轉載的 The Wire（2003）與 Pitchfork（2003，針對 2002 三碟盒裝版 Selected Works 1971–1989 第三碟）。本盤為 2006 Table of the Elements 單曲獨立發行；Squid's Ear 對盒裝版演出持負評。"
+  }
+ ],
+ "notes": [
+  "ax8a 起手：Russolo 的 MB 只有 Wergo《Die Kunst der Geräusche》一張 Compilation（EP《Affinado Ripe Hyperknight》為他人作品）。"
+ ]
+}
