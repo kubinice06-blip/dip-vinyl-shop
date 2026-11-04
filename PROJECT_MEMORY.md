@@ -1,5 +1,14 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-04｜dip-vinyl-shop｜add-20261104-blink：blink-182 早期三張上架（Buddha、Cheshire Cat、Dude Ranch）
+
+- **店主 11-04**：「blink-182 竟然沒有 Buddha。」補早期三張，卡池 blink-182 由 4 張變 7 張。
+- **上架 3（全一般卡）**：《Buddha》1998 3／2／2 common（MB 為 Album＋Demo，店主點名 demo 例外；版本鎖 1998-10-27 Kung Fu 重混再發 14 軌，簡介交代 1994 Filter Records 卡帶）；《Cheshire Cat》1995 3／2／2 common；《Dude Ranch》1997 4／1／2 rare。硬蕊度 2 依同日店主裁定（commit 3c635b4e0，池內四張 1→2）。
+- **寫入**：card_catalog 3（讀回成功）；KV `desc2:` 3 鍵回讀逐字一致（`kv-token-check` exit 0）；試聽 Apple TW ready 3（靜態路徑，皆 explicit）；seed 3 列（22,679→22,682）；封面 CAA RG front 三張目視。
+- **審稿**：研究 1 組 Sonnet（facts 12／12／13）；主線寫、審 3 張，初稿全超 280 → 整格捨去定稿 236／218／239。研究層推翻卡單：Jeff Forrest 是工程師不是製作人；Buddha 1998 版是重混不是重錄。
+- **驗證**：prepare／published gate 0 error；qa-batch research／out 通過；qa-check-research 1 標記（團員全名）判誤報。藝人介紹已有，不補。GENRE_TREE_LINE
+- 主要檔案：`seed_cards.json`、`data/apple-audio-*.json`、`onboarding-manifest-add-20261104-blink-20261104.json`、`batch-progress/add-20261104-blink/`、`desc-tools/batches/{cards,research,input,output}/add-20261104-blink*`。
+
 ### 2026-11-04｜dip-vinyl-shop｜blink-182 四張硬蕊度 1 → 2
 
 店主：「他們的歌明明很硬蕊，硬蕊只有一顆星？」硬蕊度＝入耳難度（1＝旋律直白柔和；2＝主流易聽、有一點門檻）。blink-182 是失真吉他、快速的流行龐克，不算「柔和」，改 2；不到 3（3 以上是長篇、即興、不協和）。
