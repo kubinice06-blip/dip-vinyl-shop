@@ -32,6 +32,7 @@
 | ax6 | 異端 C：卡池沒有的藝人——美國以外自由爵士／即興（店主點名 Kowald Quintet、姜泰煥）＋war metal、noisegrind、raw BM、drone doom、噪音搖滾、具象／現代音樂 | 50（8 組策展） | ar-d-268、ar-d-269（✅ 介紹上線 14＋3／skipped 0） | ✅ 上線 18（heresy 18／一般 0）；研究汰 32（none 不轉一般卡，52071）；試聽 ready 11 |
 | ax7 | 異端 D：卡池既有卡升格（放寬後標準；ax5 汰掉的升格候選、q2 刷掉的、店主點名裸のラリーズ、卡池自由爵士／即興／噪音盤重掃） | 升格候選 43 張／20 組＋舊研究稿重判約 40 張 | 不需（升格不新增藝人） | ✅ 升格 8（heresy 8）；異端 140 → 148 |
 | ax8 | 異端 D（店主 11-04 放寬：可信來源描述出具體、持續整張的高強度聽感即可）：卡池沒有的藝人——附文作品（Russolo、Group Ongaku、Schaeffer、Vomir《Proanomie》）、噪音史開創、harsh noise／PE、自由即興／噪音搖滾、極端金屬／noisecore／極端電子＋ax6 汰換稿重判 | 32（6 組＋ax6 撿回 5） | ar-d-270（✅ 介紹上線 8／skipped 0；271 未用） | ✅ 上線 10（heresy 10／一般 0）；Vomir《Claustration》改一般卡；研究汰 22；試聽 ready 1 |
+| ax9 | 異端 E（店主 11-04「應該還有地下冷門 hardcore punk」）：日本／亞洲／歐陸／拉美的 noise punk、crasher crust、早期 thrashcore、chaos punk——卡池既有卡升格＋新上架；7 吋走 `hardcore-7inch`，冷門的可改流亡（ax10 管美英愛加澳紐） | 4 組策展研究併層 | ar-d-271、ar-d-272 | 進行中（`claude/apex-new-ax9`） |
 
 - 提名數比目標多約兩成，留給研究層汰換。
 - 一個工作階段跑 2 批（ax1＋ax2、ax3＋ax4），照 CLAUDE.md 的併行規則。
