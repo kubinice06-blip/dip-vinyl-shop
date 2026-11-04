@@ -22,3 +22,11 @@
 先讀 `prompt-heresy-addendum.md` 與 `prompt-writer-extra-s7.md`（異端節），照做：
 - **極端在哪裡**：用研究稿 extreme 塊的數字與手法（總長、單軌長、軌數、聲源、器材、限量）講，不堆形容詞。
 - **為什麼這份極端被認真看待**：開了哪條路、當時的反應、後來的評價（reception 塊）。不寫「史上最吵」「最極端」這類沒具名出處的封號。
+
+## ad-23 個別特注（主線看過研究稿 coverage）
+
+- Free Enterprize：只有 Discogs。薄寫到 200 字附近：1980 年美國、不掛廠牌的私壓 LP、表演者 John Peebles 與 Tony Frank 兩人、14 首、沒有再版紀錄、在收藏圈想找的人多於手上有的人；風格只寫「路數偏 acid rock 與民謠」。不從曲名推聲音。
+- Probe《Direction》：年份 1969／1971 兩說，寫年代或照研究稿較可靠的一說並加 yearNote；不寫曲數。沒有評價，寫流通與再版事實。
+- Joe Bonner《Angel Eyes》：AllMusic 3.5 星可能是另一張，不寫。舊稿「五重奏、整張調式爵士」是錯的，照研究稿寫實際編制。
+- Ghostdance、David Lewis：照研究稿的實際風格與編制寫，舊稿的「兩人」「迷幻 folk rock」都是錯的。
+- Bad Cat 等賣家措辭（holy grail、tax scam label）不寫。
