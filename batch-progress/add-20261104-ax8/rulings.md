@@ -57,3 +57,8 @@
 
 ## 主線審稿（2026-11-04）
 - **52272** out-2（5 張）逐句對回研究稿 e 組 facts：Die Like a Dog（1997-11 柏林 Total Music Meeting、Margasak「五年來最好」以「被視為」帶出）、グループ・音楽（1960-05-08 水野家錄音、1961-09-15 草月會館、1996 HEAR 首發、成員名單、物件清單）、Sarcófago（28 分鐘、blast beat 先驅、Fenriz 合輯／Satyricon 翻唱）、Archgoat（1993 合約爭議停團、2004 重組、Ultimate Guitar 經維基「最具影響力之一」）、López（1964 馬德里、Qwartz 2010、Brainwashed 的粗暴／令人害怕）全部對得上。逐張審過，未改字。
+- **52273** out-1（5 張）逐句對回研究稿 a／c／d：改 4 張（`desc-override.json`）。
+  - Vomir：刪「這張也被不少聽眾點名為最喜歡的 Vomir 作品」——依據只是聽眾意見的搜尋摘要，不是可信來源。（248 字）
+  - Russolo：「被視為或許是第一位噪音藝術家」→「被認為或許是…」（維基引 Hegarty 原話是 perhaps the first，去掉疊用的「視為」）；「台上與觀眾互毆」→「同台的未來派成員與觀眾互毆」（研究稿：Marinetti、Boccioni 等人離台與觀眾互毆）；「裝了大喇叭的曲柄木箱」→「曲柄木箱」壓字數；補 intonarumori 後半形空格。（280 字）
+  - Revenge：「評價兩極：…也有樂迷視為最混亂的戰爭金屬唱片之一」→ 只留「有樂評只給它 1 分，並說唯一的那一分是給它的極端」——正面那方只是 Metal Archives 使用者評論的搜尋摘要；團方也拒絕 war metal 標籤。（251 字）
+  - Schaeffer（1948-10-05 首播、Boulez 彈的鋼琴、Études aux objets 1959）、Mainliner（Scaruffi「seminal work」以「被視為」帶出、團員與錄音地）對過，未改字。
