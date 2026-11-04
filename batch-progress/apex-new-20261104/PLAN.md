@@ -32,7 +32,7 @@
 | ax6 | 異端 C：卡池沒有的藝人——美國以外自由爵士／即興（店主點名 Kowald Quintet、姜泰煥）＋war metal、noisegrind、raw BM、drone doom、噪音搖滾、具象／現代音樂 | 50（8 組策展） | ar-d-268、ar-d-269（✅ 介紹上線 14＋3／skipped 0） | ✅ 上線 18（heresy 18／一般 0）；研究汰 32（none 不轉一般卡，52071）；試聽 ready 11 |
 | ax7 | 異端 D：卡池既有卡升格（放寬後標準；ax5 汰掉的升格候選、q2 刷掉的、店主點名裸のラリーズ、卡池自由爵士／即興／噪音盤重掃） | 升格候選 43 張／20 組＋舊研究稿重判約 40 張 | 不需（升格不新增藝人） | ✅ 升格 8（heresy 8）；異端 140 → 148 |
 | ax8 | 異端 D（店主 11-04 放寬：可信來源描述出具體、持續整張的高強度聽感即可）：卡池沒有的藝人——附文作品（Russolo、Group Ongaku、Schaeffer、Vomir《Proanomie》）、噪音史開創、harsh noise／PE、自由即興／噪音搖滾、極端金屬／noisecore／極端電子＋ax6 汰換稿重判 | 32（6 組＋ax6 撿回 5） | ar-d-270（✅ 介紹上線 8／skipped 0；271 未用） | ✅ 上線 10（heresy 10／一般 0）；Vomir《Claustration》改一般卡；研究汰 22；試聽 ready 1 |
-| ax9 | 異端 E（店主 11-04「應該還有地下冷門 hardcore punk」）：日本／亞洲／歐陸／拉美的 noise punk、crasher crust、早期 thrashcore、chaos punk——卡池既有卡升格＋新上架；7 吋走 `hardcore-7inch`，冷門的可改流亡（ax10 管美英愛加澳紐） | 4 組策展研究併層 | ar-d-271、ar-d-272 | 進行中（`claude/apex-new-ax9`） |
+| ax9 | 異端 E（店主 11-04「應該還有地下冷門 hardcore punk」）：日本／亞洲／歐陸／拉美的 noise punk、crasher crust、早期 thrashcore、chaos punk——卡池既有卡升格＋新上架；7 吋走 `hardcore-7inch`，冷門的可改流亡（ax10 管美英愛加澳紐） | 4 組策展研究併層 | ar-d-271（272 未用） | ✅ 上線 13（heresy 8／pearl 5）＋升格 heresy 2（Confuse、Disclose）；策展研究提名 53、汰 38；試聽 ready 2；ar-d-271 介紹 12／skipped 1 |
 
 - 提名數比目標多約兩成，留給研究層汰換。
 - 一個工作階段跑 2 批（ax1＋ax2、ax3＋ax4），照 CLAUDE.md 的併行規則。
@@ -110,3 +110,12 @@
 ## ax7 收工筆記（2026-11-04，分支 `claude/apex-new-ax7`）
 - **異端 140 → 148（+8，全為升格）**：'77 Live、April Is the Cruellest Month、Eternity Set Aflame、Musica Transonic、Touch Food、Modern Jester、Screech Owl、Impetuous Ritual。目標「ax7 約 30」差很多，照實。
 - 卡池裡的自由爵士／即興／噪音一般卡（acc≥4、相關子曲風 520 張）已掃過；剩下的不是結構清楚、spiritual，就是只有 Discogs 標籤沒有聽感描述的卡帶。再往 200 推只能靠新上架（ax8）。
+
+## ax9 收工筆記（2026-11-04，分支 `claude/apex-new-ax9`）
+- **異端 157 → 167（+10：新上架 8、升格 2）；流亡 291 → 296（+5）。** 地區：日本、北歐、歐陸、拉美 hardcore／punk（ax10 另管美英愛加澳紐）。
+- 新上架異端：D-Clone《Creation and Destroy》、Gore Beyond Necropsy《Noise-A-Go Go!!!》、Anti Cimex《Raped Ass》、Mob 47《Kärnvapen Attack》、Kaaos《Totaalinen Kaaos》、Riistetyt《Valtion vankina》、Lärm《Straight on View》、Wretched《In nome del loro potere…》；升格 Confuse《Indignation》、Disclose《Tragedy》。流亡：Upset Noise、Declino、Cheetah Chrome Motherfuckers、Peggio Punx、Vorkriegsphase（異端證據不足改流亡）。
+- **hardcore 的可信聲音描述幾乎只有 Maximum Rocknroll 的當年短評**（maximumrocknroll.com 團頁可直讀，雲端最好用的來源），其次 Your Last Rites、Decibel；AllMusic／Pitchfork 依舊讀不到。只靠 MRR 一句的盤偏邊緣，主線逐張判。
+- **拉美 0 異端**：巴西、墨西哥的團要不已有串流、listeners 過高，要不只有 Discogs／部落格；Massacre 68 有 Bandcamp 數位版→冷門 4，不能流亡。
+- 7 吋走 `hardcore-7inch` 的有 9 張；split（Zyklome A）卡面掛一團會錯，不收。
+- 同名團標籤污染：Wretched（美國死金）、Upset Noise（thrash metal）的 mapgenre3 被改寫；之後 hardcore 線上架後一定要看 card-subgenres。
+- 本區還沒查的：北歐 Asocial、Avskum、Totalitär、Kansan Uutiset；日本 Kuro、Execute、Zouo（研究判 none）、G.I.S.M.（metal 化，none）；韓台東南亞找不到可信來源。

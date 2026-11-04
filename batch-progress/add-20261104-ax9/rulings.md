@@ -69,3 +69,9 @@
   - Vorkriegsphase（改流亡）：刪「四十多年後在一份歐洲 hardcore 7 吋票選裡仍因純粹的兇暴被選出」（部落格票選，媒體榜單不進正文）；「被視為」→「被形容為」；流通事實（只有原版、非官方重發、想找的人多於持有）移到第二句講為什麼少有人聽；補同時期 LP《Auf in den Tod》的 MRR 描述。（268 字）
   - Cheetah Chrome Motherfuckers：刪「與 I Refuse It 的 split 原是卡帶」（研究稿 MRR 是 split LP，寫作層誤記）；補流亡理由「原版之後沒有單獨再版，1979–1987 年錄音到 2017 年才整理成合輯」。（271 字）
   - 其餘 9 張（Disclose、D-Clone、Mob 47、Kaaos、Lärm、Wretched、Upset Noise、Declino、Peggio Punx）對過，未改字。Mob 47「瑞典 D-beat 團裡速度最快的一支」出自研究稿具名書籍（瑞典 punk 百科），保留。
+
+## 主線（上架）
+- **52362** 上架：card_catalog 13（tier＋apex）、KV 13 鍵回讀 13/13、試聽 ready 2（Mob 47 se、Kaaos us）／unavailable 11、seed 13 列；prepare／published gate 0 error；對 origin 232 個分支 seed 去重 0 撞。
+- **52363** 升格 Confuse、Disclose：card_catalog tier／apex／accessibility 5／rarity legendary 讀回 2/2；KV desc2 2 鍵（舊值 `kv-before-ax9u.json`）回讀 2/2；seed 第 5 欄 4→5、第 9 欄 heresy；`onboarding-manifest-c116-20260910.json` 同步簡介、三軸、apexAssessment、apexPool（該檔另有 29 個既存 error，與本批無關，未動）。
+- **52364** 子曲風：warm-batch 12 張有標籤；Wretched（美國同名 death metal）、Upset Noise（thrash metal）標籤被同名團污染，Gore Beyond Necropsy 無標籤 → 改寫 KV `mapgenre3:` 三鍵為 hardcore／noisecore 標籤，曲風樹與抽卡封面重建。
+- **52365** 收尾：**異端 157 → 167、流亡 291 → 296**；同級每藝人一張 heresy／pearl 0 重複（hall 既有 Miles Davis 兩張，非本批）。藝人介紹 ar-d-271 上線 12 位（Declino 身世格空、單源 → skipped），審稿改 1 處（Vorkriegsphase「被評為德國最殘暴」→「被形容為當時最兇暴」，並壓到 thin 上限）；Anti Cimex 2025 年瑞典音樂名人堂主線開 SVT 頁核實（2025-11-11）。ar-d-272 未用。
