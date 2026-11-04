@@ -68,3 +68,18 @@
 - 51621–51630 apex 依 51571 更正標準重判：heresy 4（Teitanblood、Gnaw Their Tongues、Dodecahedron、Blut Aus Nord《MoRT》），none 6（Ehnahre、Pan.Thy.Monium、Impetuous Ritual、Mitochondrion、Antediluvian、Ævangelist：有旋律／樂器／律動，或可信資料僅單一部落格）。此條取代上方「全判 none」。
 - 重判（11-04，依更正後 RES-APEX，不另取號）：a 組 10 張中 Chopin 改判 heresy（accessibility 5；證據為 Wendt《Leonardo》論文經維基引述＋AllMusic 評語，偏間接，可抽驗）；Sachiko M 為接近候選但只有維基單一網域證據，維持 none（補 Wire／Quietus 評論即可改判）；其餘 8 張（聽感溫和或安靜型）維持 none。
 - **51672** 補策展 ax2d 交 6（證據可讀的來源不足，策展層不湊數）：收 Pyrrhon、Cryptopsy、The Body、Aaron Dilloway 4 張進研究 **e 組**；汰 Atari Teenage Riot《Delete Yourself!》（數位硬核有穩定律動，非本線）、Ruins《Hyderomastgroningem》（證據只有使用者評論）。`master-ax2aax2bax2cax2d.json`（44）→ 卡單 44。
+
+## 研究 d 組（51631–51640）
+- 51631 Karkowski《Consciously Unconscious Unconsciously Conscious》：Metamkine MKCD033，迷你 CD、單曲 19:45，2001 年東京 Bunker 301 具象作品；無專輯層級樂評，只有藝人層級證據（Wire、Tiny Mix Tapes 訃文稱其極端），判 heresy（accessibility 5）但標 thin，主線可抽驗。
+- 51632 大友良英《Cathode》：推翻策展層，本碟是取樣正弦波＋笙的差音、極簡抽象，非轉盤噪音牆；apex none；建議汰換（異端前提不成立，普通卡尚可）。
+- 51633 Keith Rowe《The Room》：單曲 38:57、2007 年在家每天錄音；label 實為 Erstwhile（ErstSolo 為系列名）；低音量氛圍型，apex none。異端 AMM／Rabbit Run 署名不同，不撞。
+- 51634 Malfatti《Ohrkiste》：實為 13 人編制的兩首長曲（〈Notes〉1989、〈Graukanal〉1992），ITM Classics ITM 950013，1992-05-18 科隆 Loft 錄音；策展層「稀疏刺耳」無任何來源；apex none；建議汰換（證據過薄）。
+- 51635 Marclay《Record Without a Cover》：1985 Recycled Records 單面 LP，原版無封套（封面須主線處理）；Wire 百張名單、概念重要，但聽感是靜默加刮痕與 Caravan 等取樣拼貼；apex none。
+- 51636 Michael Snow：1975 Chatham Square 雙 LP，約 93 分鐘；僅〈Left Right〉面被 Licht 稱 harsh low-fi，其餘為變速鋼琴與口哨；apex none。
+- 51637 Viard《Aperghis: Récitations》：原盤 Harmonia Mundi HM 5135（1983），MB 的 2000 年是 digipak 版；年份取 1983（yearVerified 已填）；作品 1977–78，1982 亞維儂首演；apex none，facts thin。
+- 51638 Ensemble 13《Hespos: Works》：身分核對 Discogs master 3306643，cpo 999 052-2，1992 發行、錄音 1979–80（SWF 共同製作），八首；無本盤樂評，僅藝人層級（MusicWeb 評另一張 cpo 唱片為苛刻刺耳）；apex none（接近候選）。
+- 51639 Barlow《Musica Algorithmica》：推翻策展層，曲目不含〈Çoğluotobüsişletmesi〉；為 1966–2015 的回顧型雙 CD，2018-05 發行（2012 之說為誤）；聽感可入耳；apex none；建議汰換（異端前提不成立）。
+- 51640 Kontarsky《Zimmermann: Requiem》：2005-06-23 哈勒姆現場、Cybele 860.501（2008）；推翻策展層 Wergo 疑點（Wergo 版為 1986 Bertini）；MusicWeb 稱「不是輕鬆的聆聽」但為大型合唱管弦爵士作品；apex none。
+- 本組：heresy 1、none 9；建議汰換 3（大友、Malfatti、Barlow）；異端藝人撞名檢查（seed heresy 85 位）無撞名。
+- 程序註記：WebSearch 共約 8 次（全組）；Discogs／AllMusic／RYM／Progarchives／Squidco 多數 403，改用 Discogs API 與 WebFetch；`qa-batch.mjs` 未跑（不能 cd），已自驗條數、https、簡體、千分位。
+- **51673** 研究層建議汰換 7 張照汰：Nicolas Hodges《Voices and Piano》、Jani Christou《Vol. I》、Ensemble Modern《Spahlinger》（a 組：聽感克制、掛名不精確、材料少）、Mattin《Proletarian of Noise》（b 組：後半是朗讀、聲音證據不足）、Otomo Yoshihide《Cathode》、Radu Malfatti《Ohrkiste》、Clarence Barlow《Musica Algorithmica》（d 組：極簡抽象／證據過薄／回顧型雙 CD）。卡單 44→37，研究稿同步刪。Zbigniew Karkowski 只有藝人層級證據，照研究層判 heresy（他是公認的極端噪音作者）。
