@@ -2,7 +2,7 @@
  "v": 1,
  "per": 40,
  "roster": "roster-20260929.json",
- "updatedAt": "2026-11-04T07:38:02.162Z",
+ "updatedAt": "2026-11-04T07:54:11.486Z",
  "batches": [
   {
    "batch": "ar-a-001",
@@ -12186,6 +12186,110 @@
     "rin eric"
    ],
    "reviewFixes": 1
+  },
+  {
+   "batch": "ar-d-261",
+   "tier": "D",
+   "genres": [
+    "rock",
+    "experimental",
+    "electronic",
+    "jazz"
+   ],
+   "keys": [
+    "hanatarash",
+    "the gerogerigegege",
+    "monde bruits",
+    "violent onsen geisha",
+    "richard ramirez",
+    "the rita",
+    "vomir",
+    "werewolf jerusalem",
+    "skin crime",
+    "taint",
+    "emil beaulieau",
+    "macronympha",
+    "russell haswell",
+    "sutcliffe jügend",
+    "genocide organ",
+    "brighter death now",
+    "atrax morgue",
+    "navicon torture technologies",
+    "irm",
+    "controlled bleeding",
+    "wold",
+    "hototogisu",
+    "harry pussy",
+    "borbetomagus",
+    "sissy spacek",
+    "brainbombs",
+    "the grey wolves",
+    "hair police",
+    "consumer electronics"
+   ],
+   "state": "published",
+   "note": "新頂點盤線（異端）add-20261104-ax1 上架卡缺介紹的藝人（ALBUM_ONBOARDING §11；29 位；名冊 batch-progress/artist-intro/roster-ax1.json）",
+   "skipped": [
+    "Taint",
+    "Navicon Torture Technologies",
+    "Macronympha"
+   ],
+   "reviewFixes": 10
+  },
+  {
+   "batch": "ar-d-262",
+   "tier": "D",
+   "genres": [
+    "classical",
+    "electronic",
+    "experimental",
+    "rock"
+   ],
+   "keys": [
+    "charlemagne palestine",
+    "henri chopin",
+    "bernhard günter",
+    "sachiko m",
+    "toshiya tsunoda",
+    "iancu dumitrescu",
+    "roland kayn",
+    "françois dufrêne",
+    "ian pace",
+    "michel chion",
+    "demetrio stratos",
+    "rhodri davies",
+    "musica elettronica viva",
+    "pita",
+    "lasse marhaug",
+    "abruptum",
+    "teitanblood",
+    "gnaw their tongues",
+    "ehnahre",
+    "dodecahedron",
+    "pan.thy.monium",
+    "impetuous ritual",
+    "mitochondrion",
+    "antediluvian",
+    "ævangelist",
+    "zbigniew karkowski",
+    "keith rowe",
+    "christian marclay",
+    "michael snow",
+    "martine viard",
+    "ensemble 13",
+    "bernhard kontarsky",
+    "pyrrhon",
+    "cryptopsy",
+    "aaron dilloway"
+   ],
+   "state": "published",
+   "note": "新頂點盤線（異端）add-20261104-ax2 上架卡缺介紹的藝人（ALBUM_ONBOARDING §11；35 位；名冊 batch-progress/artist-intro/roster-ax2.json）",
+   "skipped": [
+    "Martine Viard",
+    "Mitochondrion",
+    "Lasse Marhaug"
+   ],
+   "reviewFixes": 9
   }
  ]
 }

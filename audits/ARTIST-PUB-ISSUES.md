@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1049 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1058 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -1053,3 +1053,12 @@
 | ar-d-244 | Ensemble Studio 4 (Ernst-Ludwig Petrowsky) | Jazz Mit Dem Ensemble Studio 4 | 一支東德廣播的爵士組合 | 沒有開到的來源說 Studio IV 隸屬東德廣播；Petrowsky 本人曾在東德廣播大樂團的說法也只有搜尋摘要。建議確認或刪去「廣播」。 | https://www.freejazzblog.org/2023/07/ernst-ludwig-luten-petrowsky-1933-2023.html |
 | ar-d-244 | Günther Fischer-Quintett | Kombination | 東德薩克斯風手 Günther Fischer 1971 年就替電影《Eolomea》寫下第一部配樂 | 德文維基的作品表只把《Eolomea》（1971）列為作品，未寫『第一部』；『第一』類宣稱查無兩源，建議降為『1971 年就替《Eolomea》寫配樂』。 | https://de.wikipedia.org/wiki/G%C3%BCnther_Fischer |
 | ar-d-244 | Uschi Brüning & Günther Fischer-Quintett | Uschi Brüning Und Das Günther Fischer-Quintett | 唱片 1972 年 6 至 7 月錄成，1973 年由 Amiga 發行 | 德文維基 Günther Fischer 條目寫兩張 Amiga 專輯為 1971 與 1974 年；Discogs 為 1973。可能是不同張或維基有誤，需查 Discogs 版本年份。 | https://de.wikipedia.org/wiki/G%C3%BCnther_Fischer |
+| ar-d-261 | Violent Onsen Geisha | Shocks! Shocks! Shocks! | 中原昌也後來轉寫小說，2001 年拿下三島由紀夫賞 | 年份正確（第 14 屆，2001 年），但得獎是與青山真治同時得獎；屬補充，不算錯。另外簡介說『1980 年代末開始以此名義』，ja／en 維基皆寫 1990 年成立，與簡介（1989 年卡帶）有出入，建議審視。 | https://www.shinchosha.co.jp/prizes/mishimasho/14/ |
+| ar-d-261 | Taint | Justmeat | Taint 的主人在 2019 年過世 | 只有 Discogs／MusicBrainz 的生卒日單源；KFJC 2021 年 11 月的樂評仍以現在式寫 Taint 主理人 Keith Brewer 以 Mania 名義創作並與 Sam McKinlay 合作。可能 Discogs 把 Taint 與另一同名者的資料混了，建議店主人工核對後再決定是否刪除這句。 | https://spidey.kfjc.org/author/lexi-glass/ |
+| ar-d-262 | Toshiya Tsunoda | Extract from Field Recording Archive #2: The Air Vibration Inside a Hollow | Toshiya Tsunoda 是橫濱人 | 本人網站 bio 寫 Born in Kanagawa 1964；維基只說 based in Yokohama，並未寫出生地。建議改成『住在橫濱』或『生於神奈川』 | https://toshiya-tsunoda.blogspot.com/2015/01/short-bio.html |
+| ar-d-262 | François Dufrêne | Cri-Rythmes | 十六歲加入字母主義的巴黎人 | 1930 年 9 月 21 日生、1946 年加入，當時 15 或 16 歲，單憑兩源只能確定年份；建議改為『1946 年加入字母主義』 | https://brahms.ircam.fr/francois-dufrene |
+| ar-d-262 | Impetuous Ritual | Unholy Congregation of Hypocritical Ambivalence | 與 Portal 共用兩名成員 | 說法互相矛盾：Metallian 與 Ghost Cult 的評論稱兩團共用成員（含鼓手 Ignis Fatuus），但 No Clean Singing 的評論寫樂團自己否認與 Portal 有關。未能找到官方或訪談證實，建議上線簡介降成「常被拿來與 Portal 並提」或刪去共用成員一句 | https://www.nocleansinging.com/?p=130405 |
+| ar-d-262 | Impetuous Ritual | Unholy Congregation of Hypocritical Ambivalence | 主唱 Ignis Fatuus | Metallian 列 Ignis Fatuus 為人聲兼吉他，Ghost Cult 評論說同名者是 Portal、Impetuous Ritual 的鼓手；樂器分工不一致，且團方稱成員身分不公開，建議淡化個人名字 | https://metallian.com/impetuousritual.php |
+| ar-d-262 | Zbigniew Karkowski | Consciously Unconscious Unconsciously Conscious | 跟 Xenakis 學過作曲的波蘭人 | 維基只寫他參加過 Xenakis、Messiaen、Boulez、Aperghis 等人的夏季作曲大師班，並非長期師承；建議改成「上過 Xenakis 的大師班」。1995 年移居東京一句本層未能查證 | https://en.wikipedia.org/wiki/Zbigniew_Karkowski |
+| ar-d-262 | Martine Viard | Aperghis: Récitations | 寫於 1977 至 1978 年 | IRCAM 與 BnF 標 1978，只有巴黎愛樂的節目單寫 1977；建議改成「1978 年的作品」，或保留區間時註明 | https://ressources.ircam.fr/work/recitations |
+| ar-d-262 | Martine Viard | Aperghis: Récitations | 聽眾彷彿聽到伴奏，其實是她在彈手指 | 本層找不到此軼事的來源，IRCAM、BnF、Artcena 皆未提；建議確認出處，否則刪除 | https://ressources.ircam.fr/work/recitations |
