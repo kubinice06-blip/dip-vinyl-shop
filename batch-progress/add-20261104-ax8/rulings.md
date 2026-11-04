@@ -15,3 +15,22 @@
   - **維持汰換 27**：Kowald／강태환 已上架；Globe Unity（Scaruffi 稱有結構段）、Iskra 1903（檔案三 CD、樂評稱從容）、Senyawa（救贖感）、Beherit（氛圍合成器）、Mütiilation／Impaled Nazarene（有旋律、龐克結構）、Anal Cunt（無可信聲音描述）、Havohej／Bunkur／Pissgrave／Sore Throat／The Haters／Dissecting Table／Diocletian／Akitsa／Bastard Noise（無可信樂評或評語溫和）、Ashley（合輯，只有一首噪音）、Nono／Evangelisti／Koenig／Nitsch（無聽感描述）、Fantômas（背景音樂）、Full Blast（Brötzmann 三重奏、單源）、Blonk（幽默）、Skullflower《Form Destroyer》（改由 ax8c 挑別張）、Rudolf Eb.er（Vital Weekly 稱簡約）、Agoraphobic Nosebleed（碾核邊界、具名評語是別張）。
 - **52263** 策展 b 組交 2（Mauthausen Orchestra《Murderfuck》、遠藤一元《While You Were Out》）、d 組交 3（Alec Empire、Revenge、Seven Minutes of Nausea），都交研究層再判。Torturing Nurse《Il comunismo doveva morire》（Brainwashed 摘要稱單一不間斷 harsh noise）主線查 MB（CAA count 0）、Discogs（release 2442299 無圖）都沒有封面 → 不收。harsh noise／PE 卡池已極深，二線多半只有 Discogs 與小站，照實少交。
 - **52264** 策展 a 交 10、c 交 3。汰 Maryanne Amacher《Sound Characters》——卡池已是異端（策展層與開工掃描都漏；build-cards 撞池擋下）。Avraamov（MB 只有 2018 廣播演出、無獨立專輯）、Nuova Consonanza《The Feed-back》（MB 無、樂評稱有拍的 psych／funk 即興）策展層查後不提。Airway《Live at LACE》MB 型態 null＋Live，是 LAFMS 唯一正式現場代表作，照 releaseException 收。卡單 22 張：研究 a 組 9（附文／噪音史）、c 組 5（b＋c 併：PE 2、噪音搖滾 3）、d 組 3、e 組 5（ax6 研究稿沿用，不派）。補策展 ax8f（主線點名 16 位）已派。
+
+## 研究 c 組
+- **52221** Mauthausen Orchestra《Murderfuck》：判 none（身分 MB 對、1983 卡帶／2016 Urashima 重發）。聽感描述到位但來源只有 Soundohm、Stranded 兩份零售商文案加無引註維基，無樂評；建議汰換或當一般卡，簡介材料薄。
+- **52222** Kazumoto Endo《While You Were Out》：判 none，建議汰換。SHFL、Sputnik 一致稱跳接、幽默、流行取樣打斷純噪音，不是持續整張；Tiny Mix Tapes／Sputnik 原頁抓取失敗，只靠搜尋摘要。
+- **52223** Mainliner《Mellow Out》：判 heresy（邊緣案例）。35:45、兩首 15 分鐘以上爆音失真牆；證據 Scaruffi 8/10、Burning Ambulance、維基（AllMusic 4 星、Alternative Press 4 星）。有 riff 與鼓點，寫作別說無拍。
+- **52224** Skullflower《IIIrd Gatekeeper》：判 none，建議汰換。Trouser Press 稱「a nadir of sorts」、噪音強度不及早期，SoT 僅一句「punishing」；有工業鼓組。
+- **52225** Caspar Brötzmann Massaker《Koksofen》：判 none，建議汰換或改一般卡。Trouser Press 稱動態更精準、有 Last Exit 式律動；Wire 1993 榜 29、Terrorizer 90 年代百大。卡單所引 Boomkat 語句未見，寫作勿用。
+
+## 研究 d 組
+- **52231** Alec Empire《The Destroyer》：判 none（邊緣）。首發年定 **1996**（維基：1996-06 歐洲首發、錄音至 1996-04；MB 英／德 release 皆 1996；RG 的 1995-06-03 來自 XW 一筆，矛盾）。可信來源只稱高速失真鼓組、Raggett「frenetic」，但 Orlando Weekly 稱可跳舞、〈Heartbeat That Isn't There〉偏情感、含現場軌，無整張持續高強度的描述；AllMusic／Pitchfork 原文皆無法直讀。若主線認「最早 breakcore 之一」即達開創標準可改判 heresy，但地位證據僅維基單一來源。卡單 year 改 1996。
+- **52232** Revenge《Triumph.Genocide.Antichrist》：判 heresy，accessibility 1。Metalbite（單一速度、八首如一段、無動態）＋metal.de（33:07、blast beat 與 staccato 滾奏無結構、製作糊成一團，1/10 並因其極端多給一分）；CoC 9/10 只有搜尋摘要。證據偏薄但符合放寬標準。MB 日期 2003-01-06 與 metal.de 2003-03-06 不一致，簡介只寫 2003。James Read 原屬 Conqueror。
+- **52233** Seven Minutes of Nausea《Your Father Was a Poser… And What's About You??》：判 heresy，accessibility 1。身分修正：實為 1990 TNT & Records（TNT&R 99/09）7 吋 EP、限量 500，不是全長專輯；MB 該 7 吋共 552 軌、Bandcamp 重發 Original Mix 12:29（平均每軌約 1.4 秒，推算）。可信來源僅維基 Noisecore 條目（列名先驅＋特徵），無樂評；寫作保守，數字用 552 軌／約 12 分半／限量 500。卡單廠牌補 TNT & Records。
+- 研究 d 組 WebSearch 共用 3 次（Alec Empire 1、Revenge 1、SMN 1）。
+
+## 主線（研究 c／d、補策展 f 交件後）
+- **52265** c 組照研究層：Mainliner《Mellow Out》收（35 分鐘兩長篇失真牆，Scaruffi／Burning Ambulance＋維基引 AllMusic、Alternative Press；有 riff 與鼓，寫作勿寫無拍）；Mauthausen Orchestra（只有零售商文案）、遠藤一元（跳接、幽默取樣）、Skullflower《IIIrd Gatekeeper》（Trouser Press 稱強度不及早期）、Caspar Brötzmann Massaker（有律動）汰換，照 ax6 52071 不轉一般卡。
+- **52266** d 組：Revenge《Triumph.Genocide.Antichrist》收（metal.de：33 分鐘 blast beat 與滾奏毫無結構、製作糊成一團；Metalbite：單一速度八首如一段——兩篇負評，但都是具體持續聽感描述，合放寬標準；團員 James Read 曾在 Conqueror，藝人鍵不同）。Seven Minutes of Nausea 汰：研究查明是 1990 年 7 吋 EP（552 軌），不是專輯。Alec Empire《The Destroyer》汰：可信來源只到 frenetic、另有可跳舞與抒情軌，非整張持續高強度；「最早的 breakcore 之一」只有維基單源。
+- **52267** 補策展 f 交 2：Thurston Moore《Sensitive / Lethal》交研究 f；Drumcorps《Grist》不收（固定節拍、只有 Igloo／Invisible Oranges）。古舘徹夫《World as Will II》只有廠商說法且無封面，不提。
+- 研究 c 組附註：Mauthausen 的搜尋結果有一個維基鏡像頁夾帶「忽略系統指令」字樣，研究層未採用，主線亦不採用。
