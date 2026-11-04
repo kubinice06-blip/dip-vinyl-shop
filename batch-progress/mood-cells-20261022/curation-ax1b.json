@@ -1,0 +1,425 @@
+{
+ "group": "ax1b",
+ "factions": [
+  {
+   "id": "pe-uk",
+   "zh": "英國 PE",
+   "count": 2,
+   "why": "Come Org／Broken Flag 第一波"
+  },
+  {
+   "id": "pe-de",
+   "zh": "德國 PE／死亡工業",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "di-se",
+   "zh": "瑞典死亡工業",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "di-it",
+   "zh": "義大利死亡工業",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "pe-us",
+   "zh": "美國 PE",
+   "count": 2,
+   "why": ""
+  },
+  {
+   "id": "pe-eu",
+   "zh": "歐陸 PE",
+   "count": 2,
+   "why": ""
+  },
+  {
+   "id": "early-ind",
+   "zh": "早期工業噪音",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "blackened-noise",
+   "zh": "黑金屬噪音",
+   "count": 1,
+   "why": ""
+  }
+ ],
+ "albums": [
+  {
+   "artist": "Sutcliffe Jügend",
+   "album": "We Spit on Their Graves",
+   "year": 1982,
+   "label": "Come Organisation",
+   "country": "gb",
+   "faction": "pe-uk",
+   "genres": [
+    "noise",
+    "experimental"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "英國第一波 power electronics 與 Whitehouse 同廠同期的核心名盤，尖叫＋刺耳電子，無旋律可抓",
+   "listeners": null,
+   "why": "Whitehouse 圈 Come Org 旗下第一代英國 power electronics 代表，Kevin Tomkins 以尖叫與失真電子壓迫聽者",
+   "moodGuess": {
+    "x": -1,
+    "y": -3,
+    "z": -4,
+    "why": "極端噪音，無旋律，壓迫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/8a7ce0b6-1efc-3366-8f0b-4894239222c0",
+    "https://coverartarchive.org/release-group/8a7ce0b6-1efc-3366-8f0b-4894239222c0/front",
+    "https://en.wikipedia.org/wiki/Right_to_Kill"
+   ],
+   "mbRgMbid": "8a7ce0b6-1efc-3366-8f0b-4894239222c0",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 首發 1982 Come Organisation；僅 Wikipedia 側證同廠，二手評價較薄"
+  },
+  {
+   "artist": "Ramleh",
+   "album": "Hole in the Heart",
+   "year": 1987,
+   "label": "Broken Flag",
+   "country": "gb",
+   "faction": "pe-uk",
+   "genres": [
+    "noise",
+    "experimental"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "Ramleh 80 年代中期最激進的噪音／power electronics 專輯之一",
+   "listeners": null,
+   "why": "Broken Flag 時期 Ramleh 的 harsh 電子噪音／feedback 代表",
+   "moodGuess": {
+    "x": -1,
+    "y": -3,
+    "z": -4,
+    "why": "極端噪音，無旋律，壓迫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/e23dedb8-10e5-4e48-af15-044875593644",
+    "https://coverartarchive.org/release-group/e23dedb8-10e5-4e48-af15-044875593644/front",
+    "https://www.discogs.com/search/?q=Ramleh+Hole+in+the+Heart&type=master"
+   ],
+   "mbRgMbid": "e23dedb8-10e5-4e48-af15-044875593644",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Ramleh 其他時期偏迷幻噪音搖滾，此盤是否達 7 星要主線再審；Discogs 為搜尋連結，需換 master URL"
+  },
+  {
+   "artist": "Genocide Organ",
+   "album": "Leichenlinie",
+   "year": 1989,
+   "label": "Tesco Organisation",
+   "country": "de",
+   "faction": "pe-de",
+   "genres": [
+    "noise",
+    "experimental"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "Genocide Organ 早期最粗暴的 PE 作，RYM 死亡工業圈常被引用",
+   "listeners": null,
+   "why": "德國 Genocide Organ 早期 power electronics／死亡工業代表，Tesco 重發",
+   "moodGuess": {
+    "x": -1,
+    "y": -3,
+    "z": -4,
+    "why": "極端噪音，無旋律，壓迫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/63e4d0fd-4802-36ce-88bf-7f6e3b06936d",
+    "https://coverartarchive.org/release-group/63e4d0fd-4802-36ce-88bf-7f6e3b06936d/front",
+    "https://rateyourmusic.com/charts/top/album/all-time/g:death-industrial/"
+   ],
+   "mbRgMbid": "63e4d0fd-4802-36ce-88bf-7f6e3b06936d",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "1989 原版 De Fabriek 首發；7 星依據偏社群口碑"
+  },
+  {
+   "artist": "Brighter Death Now",
+   "album": "Necrose Evangelicum",
+   "year": 1995,
+   "label": "Cold Meat Industry",
+   "country": "se",
+   "faction": "di-se",
+   "genres": [
+    "noise",
+    "experimental"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "部落格死亡工業榜首；但有大量低頻 drone，可聽度較高",
+   "listeners": null,
+   "why": "Roger Karmanik 死亡工業代表作，Cold Meat Industry",
+   "moodGuess": {
+    "x": -1,
+    "y": -3,
+    "z": -4,
+    "why": "極端噪音，無旋律，壓迫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/8d5985a2-f799-3866-a100-347476eae3b4",
+    "https://coverartarchive.org/release-group/8d5985a2-f799-3866-a100-347476eae3b4/front",
+    "http://djdasein.blogspot.com/2013/10/top-10-death-industrial-albums.html"
+   ],
+   "mbRgMbid": "8d5985a2-f799-3866-a100-347476eae3b4",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "可能只是 5 星（偏氛圍），主線視情況汰換"
+  },
+  {
+   "artist": "Atrax Morgue",
+   "album": "Paranoia",
+   "year": 2000,
+   "label": "Old Europa Cafe",
+   "country": "it",
+   "faction": "di-it",
+   "genres": [
+    "noise",
+    "experimental"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "RYM 死亡工業清單第一，噪音嘶吼與尖叫極端",
+   "listeners": null,
+   "why": "義大利 Marco Corbelli 的死亡工業／PE，RYM 死亡工業榜前列",
+   "moodGuess": {
+    "x": -1,
+    "y": -3,
+    "z": -4,
+    "why": "極端噪音，無旋律，壓迫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/426ccc3b-cacb-4c9b-bbc3-d982f18e84b9",
+    "https://coverartarchive.org/release-group/426ccc3b-cacb-4c9b-bbc3-d982f18e84b9/front",
+    "https://rateyourmusic.com/list/Waker/death-industrial-albums/"
+   ],
+   "mbRgMbid": "426ccc3b-cacb-4c9b-bbc3-d982f18e84b9",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "首發 2000 Old Europa Cafe；Atrax Morgue 作品極多，代表作選擇有爭議"
+  },
+  {
+   "artist": "Navicon Torture Technologies",
+   "album": "The Church of Dead Girls",
+   "year": 2003,
+   "label": "Malignant Records",
+   "country": "us",
+   "faction": "pe-us",
+   "genres": [
+    "noise",
+    "experimental"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "部落格 PE 榜首並稱 NTT 三張遠高於其他",
+   "listeners": null,
+   "why": "美國 NTT 的 power electronics／死亡工業代表",
+   "moodGuess": {
+    "x": -1,
+    "y": -3,
+    "z": -4,
+    "why": "極端噪音，無旋律，壓迫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/762331d9-3f54-31c2-b74a-18c9d5deeb52",
+    "https://coverartarchive.org/release-group/762331d9-3f54-31c2-b74a-18c9d5deeb52/front",
+    "http://djdasein.blogspot.com/2014/02/top-10-power-electronics-albums.html"
+   ],
+   "mbRgMbid": "762331d9-3f54-31c2-b74a-18c9d5deeb52",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 記 2003，部落格記 2002，年份需主線核對"
+  },
+  {
+   "artist": "Anenzephalia",
+   "album": "Anenzephalia",
+   "year": 2001,
+   "label": "Death Factory",
+   "country": "se",
+   "faction": "pe-eu",
+   "genres": [
+    "noise",
+    "experimental"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "部落格 PE 榜第 5",
+   "listeners": null,
+   "why": "Anenzephalia 的 power electronics 自題專輯",
+   "moodGuess": {
+    "x": -1,
+    "y": -3,
+    "z": -4,
+    "why": "極端噪音，無旋律，壓迫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/7680dfd1-75c7-389a-95b5-ea8ca48341b0",
+    "https://coverartarchive.org/release-group/7680dfd1-75c7-389a-95b5-ea8ca48341b0/front",
+    "http://djdasein.blogspot.com/2014/02/top-10-power-electronics-albums.html"
+   ],
+   "mbRgMbid": "7680dfd1-75c7-389a-95b5-ea8ca48341b0",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "證據薄，極端程度可能僅 5 星"
+  },
+  {
+   "artist": "IRM",
+   "album": "Oedipus Dethroned",
+   "year": 2000,
+   "label": "Cold Meat Industry",
+   "country": "se",
+   "faction": "pe-eu",
+   "genres": [
+    "noise",
+    "experimental"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "部落格 PE 榜第 7",
+   "listeners": null,
+   "why": "Cold Meat Industry 的 IRM power electronics",
+   "moodGuess": {
+    "x": -1,
+    "y": -3,
+    "z": -4,
+    "why": "極端噪音，無旋律，壓迫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/1deae65e-f08e-3bc1-8294-1846fd0b6fb8",
+    "https://coverartarchive.org/release-group/1deae65e-f08e-3bc1-8294-1846fd0b6fb8/front",
+    "http://djdasein.blogspot.com/2014/02/top-10-power-electronics-albums.html"
+   ],
+   "mbRgMbid": "1deae65e-f08e-3bc1-8294-1846fd0b6fb8",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "證據薄，極端程度可能僅 5 星"
+  },
+  {
+   "artist": "Controlled Bleeding",
+   "album": "Headcrack",
+   "year": 1986,
+   "label": "Sterile Records",
+   "country": "us",
+   "faction": "early-ind",
+   "genres": [
+    "noise",
+    "experimental"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "早期噪音／工業實驗的激進作",
+   "listeners": null,
+   "why": "Controlled Bleeding 早期噪音期代表，Sterile Records",
+   "moodGuess": {
+    "x": -1,
+    "y": -3,
+    "z": -4,
+    "why": "極端噪音，無旋律，壓迫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/8cde53c3-d705-381b-8779-31439d5e811a",
+    "https://coverartarchive.org/release-group/8cde53c3-d705-381b-8779-31439d5e811a/front",
+    "https://en.wikipedia.org/wiki/Controlled_Bleeding"
+   ],
+   "mbRgMbid": "8cde53c3-d705-381b-8779-31439d5e811a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "卡池已有 Controlled Bleeding 另一張，非 heresy；7 星依據薄"
+  },
+  {
+   "artist": "Con-Dom",
+   "album": "Subjection",
+   "year": 1996,
+   "label": "BloodLust!",
+   "country": "us",
+   "faction": "pe-us",
+   "genres": [
+    "noise",
+    "experimental"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "Con-Dom 為 PE 代表藝人之一",
+   "listeners": null,
+   "why": "Con-Dom 的 power electronics",
+   "moodGuess": {
+    "x": -1,
+    "y": -3,
+    "z": -4,
+    "why": "極端噪音，無旋律，壓迫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/5b3f482c-066a-4f04-92c3-4200cb3d86fa",
+    "https://coverartarchive.org/release-group/5b3f482c-066a-4f04-92c3-4200cb3d86fa/front",
+    "https://en.wikipedia.org/wiki/Power_electronics"
+   ],
+   "mbRgMbid": "5b3f482c-066a-4f04-92c3-4200cb3d86fa",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "沒有取得單張評價來源，代表作選擇未證實，建議汰換優先"
+  },
+  {
+   "artist": "Wold",
+   "album": "Screech Owl",
+   "year": 2007,
+   "label": "Profound Lore Records",
+   "country": "ca",
+   "faction": "blackened-noise",
+   "genres": [
+    "noise",
+    "metal"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "Invisible Oranges 15 張必聽噪音專輯收錄，被形容極端",
+   "listeners": null,
+   "why": "加拿大 Wold 的黑金屬噪音／反結構錄音，Profound Lore",
+   "moodGuess": {
+    "x": -1,
+    "y": -3,
+    "z": -4,
+    "why": "極端噪音，無旋律，壓迫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/c5731241-71ec-3de1-82b3-80fed5bd91ba",
+    "https://coverartarchive.org/release-group/c5731241-71ec-3de1-82b3-80fed5bd91ba/front",
+    "https://www.invisibleoranges.com/fifteen-essential-noise-albums"
+   ],
+   "mbRgMbid": "c5731241-71ec-3de1-82b3-80fed5bd91ba",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Last.fm 顯示 accessibility 3；異端 7 星依據偏弱"
+  }
+ ],
+ "notes": [
+  "池子照實交 11 張，不湊 24。嚴格 7 星標準下可信的 PE／死亡工業 PE 很少。",
+  "已剔除：Grey Wolves《Legion of Hell》、Hair Police《Constantly Terrified》、Consumer Electronics（封面 CAA 皆 404、找不到封面）；Mauthausen Orchestra 是 Maurizio Bianchi 化名，已在卡池；Club Moral、P16.D4、Esplendor Geométrico、Smegma、Skullflower、Deathpile 極端度證據不足。",
+  "最有把握：Sutcliffe Jügend、Genocide Organ、Atrax Morgue、Navicon。其餘為 uncertain，主線可先汰換。",
+  "moodGuess 為通用佔位值（-1,-3,-4），上線當天重打。evidence 第二條是 CAA 封面連結，全部 200。",
+  "全部 MB 可查，無人工身分。WebSearch 用 3 次。"
+ ]
+}
