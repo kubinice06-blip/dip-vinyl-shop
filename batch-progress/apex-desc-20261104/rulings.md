@@ -383,3 +383,39 @@
 - bulk put 43 鍵（desc2 30＋CJK 卡 desc4 13），wrangler 印 `Success!`；`verify-wave-kv` 回讀 43/43 逐字一致。
 - `front-check ad-10`：30/30 前台為新稿，CURATED 0。
 - manifest 同步 26 處（c41-chinese 3、c42-japan 1、c43-korea 6、c44-rock 3、c45-hiphop 1、c46-soundtrack-cross 5、c47-pop-country-latin 3、c50 3、c51 1）。
+
+## ad-13（異端 25 張，s7）
+
+- 派工補充：殿堂批的派工詞偏重樂評與榜單，s7 加 `prompt-research-extra-s7.md`／`prompt-writer-extra-s7.md`（異端＝極端在哪裡＋為什麼被認真看待；流亡＝為什麼少有人聽＋為什麼值得聽；再版廠文案形容詞不當地位證據；出處只放 facts）。
+- 研究 3 Sonnet（WebSearch a 16／b 16／c 8 次）、寫作 2 Opus。coverage 唯一 none：Solmania sound、Government Alpha making。**主線補查 MusicBrainz**（不耗 WebSearch）：Metamorphor Chorus 1991-01-25 Alchemy ARCD-020 五軌（Flood 27:47…）、Alphaville 1999-09 瑞典 Segerhuva SEGER 1 七軌（Enantiodromia 9:17）——舊稿這兩筆其實是對的，併回 `research/ad-13-b.json` 標「主線補查」。Solmania 聲音只寫大野雅彥的自製多弦吉他做法，不宣稱本盤編制。
+- **異端卡 status 普遍 thin**：多數噪音／即興盤沒有大媒體專評，地位改用具體的極端事實（單曲長度、聲源、手法、壓量）＋被誰點名或再版；廠商文案（Grapefruit、Tobira、Soleilmoon、Editions Mego、Dialogo）只取事實。
+- 研究層推翻舊稿的主要錯誤（新稿未沿用）：Consume Red 樂器是 hojok（胡笛）不是嗩吶；Symphony for a Genocide 五首不是七首；Mort à Crédit「生前唯一流通專輯」（實為生前最後一張）；解体的交感 把高柳給 New Direction 的三條指令套到這場雙人演出；Bestial Burden 手術照片／臥床三週／嘔吐聲；蔵六の奇病 錄音期間；Quietus「曲名引用職業」；C.C.C.C. 黑膠軌數；Menche「Skunkworks Studios」與年份（1994）；Hecker「六軌全同名」；Tone 生地與移居年；Amacher 師承；Minton 曲數。
+- **《Tiger Thrush》日文盤名用「虎鶫」**：日文漢字是「鶫」（つぐみ），研究稿寫的「鶇」是繁中字形；原文標題一字不改，用日文字。
+- 機器 QA：`qa-batch research ad-13` 通過；`out` 3 標記皆誤報（Coltrane 專名、International Jazz Forum 票選屬具名獎項、虎鶫）；fix-spacing 0；字數 221–280。
+
+### 主線審稿（2026-11-04，25 張逐張讀、逐句對研究稿；加問「讀完知不知道它憑什麼是這一級」）
+
+改 13 處（9 張，`review-ad-13.json`；同一張多次改分開記）：
+
+- `pharmakon|bestial burden`：「同名曲被列入當年的年度歌曲榜」→「同名曲進了 2014 年的年度百大單曲榜」。「年度歌曲榜」太含糊；研究稿 status：Pitchfork 2014 年度單曲第 75 名（百大）
+- `高柳昌行 / 阿部薫|解体的交感`：「常被視為當時最激進的自由爵士示範之一」→「被視為當時最激進的自由爵士示範之一」。單一來源（Positive Feedback），不用「常」
+- `高柳昌行 / 阿部薫|解体的交感`：「，兩人的交鋒更像吵架而不是對話」→「（刪）」。審稿第 4 問：比喻（Oleś 的「街頭吵架」）
+- `manfred schoof|european echoes`：「常被拿來和 John Coltrane 的《Ascension》相比，被視為聽來吃力、但演出極為出色」→「被拿來和 John Coltrane 的《Ascension》相比，被視為聽來吃力、但演出卓越」。比較出自單一來源（Shoemaker），不用「常」；「卓越」照 Penguin Guide 原意
+- `nihilist spasm band|no record`：「起初是替實驗電影組的 kazoo 合唱團」→「起初是為一部實驗電影組成的 kazoo 合唱團」。語句不通；研究稿 making：為實驗電影組成的 kazoo 合唱團
+- `the new blockaders|changez les blockeurs`：「常被稱為最早的噪音唱片之一」→「被視為最早的噪音唱片之一」。具名來源只有 RRR 的 Ron Lessard 一人，不用「常」
+- `阿部薫|mort à crédit`：「常被視為他風格轉向的標記」→「被視為他風格轉向的標記」。單一評者（Soundohm 頁），不用「常」
+- `非常階段|蔵六の奇病`：「秋田昌美（Merzbow）稱他們是關西最兇惡的樂團」→「被視為關西最兇惡的樂團」。出處不寫進簡介（apex-desc-base 語氣節）
+- `hecker|acid in the style of david tudor`：「評價兩極：有樂評只給 6 分（滿分 10），認為要經過嚴格訓練才能欣賞；也有樂評說隨附專文讓它成了有意思的哲學工具，卻很難想像有人為樂趣去聽。」→「評價兩極：它被認為要經過嚴格訓練才能欣賞，也被認為靠隨附的專文成了有意思的哲學工具，卻很難為了樂趣去聽。」。出處不寫進簡介（「有樂評說」屬引述句式）；分數去掉
+- `yasunao tone|solo for wounded cd`：「也是他學界討論最多的作品之一」→「也是他在學界被討論最多的作品之一」。語句不通
+- `pharmakon|bestial burden`：「2014 年由 Sacred Bones 發行，」→「（刪）」。審稿改句後超字（283），壓字；年份仍在同句
+- `nihilist spasm band|no record`：「，成員多有正職」→「（刪）」。審稿改句後超字（282），壓字
+- `yasunao tone|solo for wounded cd`：「他形容播放器的行為完全不可預測」→「播放器的行為因此完全不可預測」。審稿改句後超字（281），壓字
+
+其餘 16 張逐張審過，未改字。第五問（憑什麼是這一級）25 張都在前兩句講出極端的具體事實（整碟一首約一小時、無輸入混音台、刮傷 CD、純人聲獨奏、不剪接不疊錄不用電子、單一回授聲源等）＋被認真看待的事實（年度榜、被 Merzbow／Thurston Moore／Stapleton 點名、再版、學界討論）。另核對：Bestial Burden Metacritic 79 與 Pitchfork 年度單曲 75 有研究稿；Tudor「自製電路被視為現場電子音樂的里程碑」出自英文維基；Current 93「啟發許多暗黑氛圍與儀式工業團體」研究稿有。
+
+### 上線
+
+- `kv-token-check` 通過；舊值存 `kv-before-ad-13.json`（50 鍵，29 個非 null）。
+- bulk put 29 鍵（desc2 25＋CJK 卡 desc4 4），wrangler 印 `Success!`；`verify-wave-kv` 回讀 29/29 逐字一致。
+- `front-check ad-13`：25/25 前台為新稿，CURATED 0。
+- manifest 同步 25 處（13 個 manifest 檔）。
