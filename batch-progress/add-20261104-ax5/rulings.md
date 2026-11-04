@@ -62,3 +62,10 @@
 - Luna Surface：「被視為 BYG 那一週錄音裡最狂的一張」→「…最狂的幾張之一」（另刪「全曲」二字壓回 279 字）。依據：RBMA（Britt Robson）原話是列為該週最狂的錄音之一，不是唯一。
 - The Hated Music：「被視為錄音極佳、通篇猛烈的傑作」→「被視為通篇猛烈、錄音極佳的一張」。依據：「傑作」是 ALBUM_ONBOARDING §5 禁語（build-manifest 也會擋）。
 - 其餘逐句核過：Luna Surface 1969-08-17 巴黎 BYG 週、Silva 自述無美國廠牌願發、以《Ascension》為策略＋全曲一組和弦、團員名單；Bäbi 1976-03 WBAI、IPS、雙薩克斯風與 Graves 拆底皮；Hated Music 2000-06 Westwood、限量 500、五首；Hard Time CBGB 現場、Alternative Press「最好的作品」、CMJ 嫌收音空洞（反面也照寫）；Throat 約 41 分鐘組曲、BBC「不適合膽小者」；Gato 1967-03 紐約、Penguin「howlingly intense and unremitting」、Free Jazz Blog 的超吹與高低段落交替。未改字。
+
+## 新卡研究 c 組（51929 起，cards 20–25）
+- 51929 heresy 1（Airway《Live at LACE》，研究層自標邊緣）、none 5，全部汰換。
+- 51930 Airway 主線改判 none、汰換：沒有獨立具名樂評（只有維基、Joe Potts 專訪、RYM），reception 欄 none；RES-APEX 要求至少一個可信樂評／專書／有引註維基，RYM 不算。
+- 51931 Sauter & Dietrich《Bells Together》是原聲薩克斯風二重奏，「噪音牆」無依據；Walter／Halvorson／Evans 是編排齊奏為主；Pitsiokos 盤名全稱《Speak in Tongues and Hope for the Gift of Interpretation》、查無本盤樂評；Lancaster 現場盤取自不同場次、風格雜，releaseException 不成立；Kidd Jordan 三重奏錄於 2002、二重奏 2005／2012（推翻策展層「2013 現場」），樂評稱細膩的能量型即興。
+- 51932 新卡兩輪合計提名 32、研究 25、過 6（24%）。命中率低的原因：ESP／BYG 時代多數盤樂評講的是「前衛、有結構、聽得下去」，真正以噪音／尖嘯被具名評論的少；2000 年後的美國極端即興多半只有 Bandcamp 與小站。
+- 51933 補一輪（`curation-ax5c.json`，策展＋研究合併一支）：Sun Ra《Strange Strings》、Steve Lacy《The Forest and the Zoo》、Archie Shepp《Live at the Donaueschingen Festival》、Sunny Murray《Big Chief》、Sonny Sharrock《Guitar》——都是卡池藝人、但這幾張不在卡池，且都有維基或成篇樂評可查。
