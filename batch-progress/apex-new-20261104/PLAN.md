@@ -24,8 +24,8 @@
 
 | 批 | 內容 | 提名 | 藝人介紹批號 | 狀態 |
 |---|---|---:|---|---|
-| ax1 | 異端 A：harsh noise／power electronics／工業／日本噪音 | 40 | ar-d-261 | |
-| ax2 | 異端 B：極端現代音樂、激進即興、聲音藝術、極端電子、反結構金屬 | 40 | ar-d-262 | |
+| ax1 | 異端 A：harsh noise／power electronics／工業／日本噪音 | 40 | ar-d-261（✅ 介紹上線 26／skipped 3） | ✅ 上線 32（heresy 13／一般 19）；研究汰 5、補策展 0；試聽 ready 4 |
+| ax2 | 異端 B：極端現代音樂、激進即興、聲音藝術、極端電子、反結構金屬 | 40 | ar-d-262（✅ 介紹上線 32／skipped 3） | ✅ 上線 37（heresy 11／一般 26）；研究汰 7、補策展收 4；試聽 ready 17 |
 | ax3 | 流亡 A：歐美私壓（迷幻、民謠、福音、靈魂放克、地下爵士） | 30 | ar-d-263（✅ 介紹上線 16／skipped 9） | ✅ 上線 26（pearl 21／一般 5） |
 | ax4 | 流亡 B：亞洲、拉美、非洲、東歐、早期電子私壓 | 30 | ar-d-264（✅ 介紹上線 15／skipped 3） | ✅ 上線 20（pearl 15／一般 5） |
 
@@ -70,3 +70,12 @@
 - **人工身分卡 gate 前用 MB 重查**：Cedrón、Krzak、Eloy、Maxfield 其實有 RG，改釘住（`mbproof.mjs` 在 scratchpad，三組查詢寫進 mbAbsenceProof）。
 - 藝人介紹在上線前就從卡單切批（不等 manifest），補洞與鉤子／寫作層並行，省一輪等待。私壓盤藝人 skipped 率高（12／43）。
 - 異端 ax1／ax2 在 `claude/apex-new-ax12` 另一工作階段。
+
+## ax1／ax2 收工筆記（2026-11-04）
+- **異端 85 → 109（+24），離 150 還差約 41。** 照實上架，沒有放寬標準湊數。
+- **標準更正**：上一個工作階段寫的 `RES-APEX.md` 要求「7 星／史上最難入耳之一」，比店主 11-03 裁定 3 嚴，研究層頭三組 27 張全判 none；主線改回裁定 3（accessibility 5＋可信資料支持極端／刺耳／反結構）後重判（ax1 rulings 51571）。
+- **命中率低的原因**：(1) 噪音卡帶、CD-R 多半只有 Discogs 與小站資料，沒有可引的樂評；(2) 現代音樂、聲音藝術、lowercase、drone 聽感克制，硬蕊度只到 3–4；(3) 雲端抓不到 AllMusic（403）、Pitchfork（被擋）、The Wire 部分頁面，補策展 ax1d 交 0、ax2d 交 6。
+- **下一輪要補異端**：從本機（能讀 AllMusic／Pitchfork／The Wire）挑「公認最極端」的盤直接點名，研究層只做證據核實；或把方向轉向已有大量樂評的極端金屬、noise rock、新複雜主義鋼琴作品。
+- 頂點寫入：card_catalog 帶 tier＋apex:true；`album_overrides.tier` 留給本機後台「依卡池同步頂點旗標」。
+- 情緒評分 `score-ax12` 69 張：ax1 暴躁 30／頹靡 2；ax2 暴躁 23／冷冽 9／頹靡 4／平靜 1。
+- 藝人介紹補洞層的 pubIssues 回頭修了 5 張已上線簡介（Hair Police、Taint、Impetuous Ritual、Karkowski、Tsunoda），KV 已重寫。
