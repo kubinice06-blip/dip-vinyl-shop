@@ -10,6 +10,8 @@ const NOW = new Date().toISOString().replace(/\.\d+Z$/, 'Z');
 const cards = rd(`desc-tools/batches/cards/${batch}-cards.json`);
 const meta = rd(D + 'meta.json'), picks = rd(D + 'preview-picks.json');
 const covers = opt(D + 'covers.json'), rov = opt(D + 'ratings-override.json'), dov = opt(D + 'desc-override.json');
+// 頂點採用（2026-11-04 新頂點盤線）：apex-override.json＝{key:{tier, reason, evidenceUrls[]}}；沒有這個檔＝全批一般卡。
+const aov = opt(D + 'apex-override.json');
 const out = new Map(fs.readdirSync('desc-tools/batches/output').filter(f => f.startsWith(batch + '-out-')).flatMap(f => rd('desc-tools/batches/output/' + f)).map(x => [x.key, x.desc]));
 const research = new Map(fs.readdirSync('desc-tools/batches/research').filter(f => f.startsWith(batch + '-')).flatMap(f => { const r = rd('desc-tools/batches/research/' + f); return Array.isArray(r) ? r : Object.values(r); }).map(x => [x.key, x]));
 const BANNED = /(融合多種元素|具有代表性|層次豐富|傑作|必聽|里程碑|獨樹一格)/;
@@ -27,7 +29,7 @@ const albums = cards.map(c => {
   const base = m.rating || {};
   const ratings = {
     classic: o.classic ?? Math.min(base.classic ?? 3, 4), obscurity: o.obscurity ?? base.obscurity ?? 3, accessibility: o.accessibility ?? base.accessibility ?? 2,
-    listeners: Number.isInteger(base._listeners) ? base._listeners : null, source: o.source || `worker /album-rating（obscurity:${base._obscuritySource || '?'}）`, checkedAt: NOW,
+    listeners: Number.isInteger(o.listeners) ? o.listeners : Number.isInteger(base._listeners) ? base._listeners : null, source: o.source || `worker /album-rating（obscurity:${base._obscuritySource || '?'}）`, checkedAt: NOW,
     note: `機器基線 ${base.classic}/${base.obscurity}/${base.accessibility}（Last.fm listeners ${base._listeners ?? '查無'}）` + (o.note ? `；主線：${o.note}` : (base.classic === 5 ? '；主線：經典 5 不自動給，壓為 4' : '')),
   };
   const rarity = rarityOf(ratings.classic, ratings.obscurity, ratings.accessibility);
@@ -48,7 +50,8 @@ const albums = cards.map(c => {
       ...(c.selfTitled ? { selfTitledVerified: true } : {}) },
     research: { suggestedYear: c.year, yearNote: '' },
     genres: c.genres, cover: cv, ratings, rarity,
-    apexAssessment: { eligible: false, tier: null, evidenceUrls: [],
+    apexAssessment: aov[c.key] ? { eligible: true, tier: aov[c.key].tier, evidenceUrls: aov[c.key].evidenceUrls,
+      reason: `${aov[c.key].reason}（三軸 ${ratings.classic}/${ratings.obscurity}/${ratings.accessibility}、Last.fm listeners ${ratings.listeners ?? '查無'}）`, assessedAt: NOW, source: `主線 ${batch} 頂點採用` } : { eligible: false, tier: null, evidenceUrls: [],
       reason: `已評估：classic ${ratings.classic}、obscurity ${ratings.obscurity}、accessibility ${ratings.accessibility}` + (ratings.obscurity >= 5 ? `；obscurity=5 但沒有遺珠級證據（listeners ${ratings.listeners ?? '查無'}），不列 pearl` : '') + '，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。' },
     description: { text, sourceUrls: src, note: `薄細項策展線卡牌版：研究（${r?.status || '?'}）→ 鉤子 → 寫作 → 主線審稿。` },
     preview,
