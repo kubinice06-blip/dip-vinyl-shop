@@ -40,3 +40,9 @@
 - Wold《Screech Owl》：「被視為最失真、最腐壞的黑金屬專輯之一」→「被形容為…」。依據：出自 Musique Machine 單一評者「自己聽過最失真的之一」，不是普遍公論。
 - 其餘逐句核過：Dilloway 67 分鐘、8 軌卡式帶迴圈、約三年、Hanson、RA「近年最成功的噪音專輯之一」、KFJC 列的素材；Impetuous Ritual 澳洲、第二張、Profound Lore 2014、與 Portal 共有兩名成員、少了 Portal 的戲劇表演（Horn of Woe）、〈Metastasis〉鐘聲、〈Blight〉吟誦；Niblock 雙 CD、CD2〈Pan Fried 70〉70 分鐘、liner notes 的音量指示、The Wire 年度、CCMIX 駐村、單音疊錄法；'77 Live 1977 年 3 月立川、1991 年 CD、水谷限制正式發行、英文維基「最受推崇」與 noise rock 預示；灰野三軌約 18／12／39 分鐘、1995／1996 兩說照寫、Forced Exposure；高柳四人編制、1975 年東京、團規、ESP-Disk 倒閉擱置、1991 年 CD、Jazz Journal 的搖滾刮擦回授技法；Musica Transonic 編制、P.S.F. 1995 年 4 月、Black Editions 2020。
 - fix-spacing 0；簡體掃描 0；字數 227–279。
+
+## 收工（52141 起）
+- 52141 寫入：card_catalog 8 筆 PATCH（tier heresy、apex true、accessibility 5、rarity 重算），讀回 8/8；KV 10 鍵（desc2 8＋CJK desc4 2；舊值 `kv-before-ax7u.json`）wrangler bulk put 後回讀 10/10 逐字一致；seed 第 9 欄 8 列寫 heresy，灰野、Niblock、Musica Transonic、Wold 第 5 欄 4→5。
+- 52142 onboarding manifest 同步 12 處／9 檔：description.text、ratings.accessibility、rarity、apexAssessment（eligible、tier、evidenceUrls、reason）；根目錄 5 份的 published 改 seedCards false／apexPool true（升格卡在 seed 是 tier 列，不是一般卡，否則 gate 報「一般卡應恰好 1 筆」）。batch-progress 內的副本 published 照原樣。
+- 52143 published gate（根目錄 5 份）：md6、sf03、ax1、ax2 皆 0 error；c121 3 error 都不是本批的卡（佐藤允彦《Trinity》、原田依幸《無明》、光束夜《1st》：KV 簡介與 manifest 文字不一致，是先前簡介重寫未回寫 manifest 的舊落差），本批兩張（高柳、灰野）通過；不在本批範圍，列進 PR 說明。
+- 52144 同級每藝人一張：異端 148 張 0 重複（Les Rallizes／裸のラリーズ、Keiji Haino／灰野敬二 併鍵檢查）。對 origin `claude/*ax8*` 分支 seed 比對無撞。
