@@ -1,0 +1,529 @@
+{
+ "schemaVersion": 1,
+ "batch": "2026-11-04-ax5",
+ "batchNote": "新頂點盤線（add-20261104-ax5）",
+ "createdAt": "2026-11-04T11:31:16Z",
+ "albums": [
+  {
+   "artist": "Alan Silva & His Celestial Communication Orchestra",
+   "album": "Luna Surface",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "b520d81f-c8a8-4882-9708-8b36f0329d67",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "美國自由爵士 60 年代（ESP／BYG／私壓）：貝斯手 Alan Silva 在巴黎 BYG Actuel 錄的大編制集體即興，無調密集音牆，Actuel 系列最難入耳的一張｜⚠ MB 藝人名拼為 Celestrial；Apple 該盤標 EP，MB 為 Album。名稱用正確拼法 Celestial，查詢別名見 queryAlias｜MB release-group b520d81f-c8a8-4882-9708-8b36f0329d67：title「Luna Surface」、Album、first-release-date 1969、artist-credit「Alan Silva and His Celestrial Communication Orchestra」。證據：https://musicbrainz.org/release-group/b520d81f-c8a8-4882-9708-8b36f0329d67 https://music.apple.com/us/album/luna-surface-ep/1843118973",
+    "queryAlias": "Alan Silva and His Celestrial Communication Orchestra"
+   },
+   "research": {
+    "suggestedYear": 1969,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/b520d81f-c8a8-4882-9708-8b36f0329d67/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-04T11:31:16Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-04 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 5,
+    "listeners": 366,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-04T11:31:16Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 366）"
+   },
+   "rarity": "legendary",
+   "apexAssessment": {
+    "eligible": true,
+    "tier": "heresy",
+    "evidenceUrls": [
+     "https://en.wikipedia.org/wiki/Luna_Surface",
+     "https://www.allmusic.com/album/luna-surface-mw0000710330",
+     "https://daily.redbullmusicacademy.com/2015/10/the-greatest-week-in-the-history-of-avant-garde-jazz"
+    ],
+    "reason": "異端（accessibility 5、7 星）：11 人無獨奏、全員從頭吹到尾的集體即興，無主題；AllMusic 稱可能讓未入門者反感，Thurston Moore 點名為極 out 的 LP，維基與 Red Bull Music Academy 有 Silva 自述的做法。"
+   },
+   "description": {
+    "text": "《Luna Surface》整張只有一首〈From the Luna Surface〉，十一位樂手從頭到尾同時演奏，不設獨奏，被視為 BYG 那一週錄音裡最狂的幾張之一。1969 年 8 月 17 日，BYG 在阿爾及爾泛非文化節之後於巴黎連續錄音一週，這是 Alan Silva 首張領導作，他說當時沒有美國廠牌會碰這類音樂。這也是他第一次指揮集體即興，以 Coltrane《Ascension》為策略，全曲建在一組和弦上。Archie Shepp、Anthony Braxton 等薩克斯風、小號、長號、小提琴與中提琴、鋼琴、兩把貝斯和鼓堆成密集的音牆。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Luna_Surface",
+     "https://daily.redbullmusicacademy.com/2015/10/the-greatest-week-in-the-history-of-avant-garde-jazz",
+     "https://www.allmusic.com/album/luna-surface-mw0000710330",
+     "https://musicbrainz.org/release-group/b520d81f-c8a8-4882-9708-8b36f0329d67"
+    ],
+    "note": "薄細項策展線卡牌版：研究（ok）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/9a/b5/2f/9ab52ff0-b310-3e93-c041-8bac29b1d3f2/mzaf_9714990939808090428.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-11-04T11:31:16Z",
+    "appleCollectionId": "1843118973",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1843118973「Alan Silva and His Celestrial Communication Orchestra《Luna Surface - EP》」：Apple 條目標 EP、曲名寫 Pt.（MB 寫 Part），兩軌即原盤兩面；藝人名 Celestrial 照 BYG 原印。，取第 1 軌〈From The Luna Surface, Pt. 1〉。主線 2026-11-04 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Milford Graves",
+   "album": "Bäbi",
+   "identity": {
+    "releaseType": "Compilation",
+    "identitySource": "pinned",
+    "rgMbid": "c7b39cf5-25c9-4afb-ab6c-040f826ae5e9",
+    "upc": "",
+    "aliasesChecked": true,
+    "exceptionReason": "現場錄音，為 Graves 與 Doyle 最重要代表之一",
+    "exceptionEvidenceUrls": [
+     "https://musicbrainz.org/release-group/c7b39cf5-25c9-4afb-ab6c-040f826ae5e9",
+     "https://www.discogs.com/master/1354146"
+    ],
+    "aliasReview": "美國自由爵士 噪音化／後期：Graves 1977 年 IPS 現場專輯，鼓的狂暴獨奏與對沖，無節拍｜⚠ Bäbi 卡池已有他的 Grand Unification（不同盤）；參與者／極端度說法未於本次核實，主線複查｜MB release-group c7b39cf5-25c9-4afb-ab6c-040f826ae5e9：title「Bäbi」、Album、first-release-date 1977、artist-credit「Milford Graves」。證據：https://musicbrainz.org/release-group/c7b39cf5-25c9-4afb-ab6c-040f826ae5e9 https://www.discogs.com/master/1354146",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1977,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "source": "discogs",
+    "discogsReleaseId": "1357109",
+    "url": "https://i.discogs.com/3D_7ZxM4jt6NypYYFLwCoR1GJ1LwxZo2jY3rWygWErI/rs:fit/g:sm/q:90/h:591/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzNTcx/MDktMTI4NTc3OTQz/My5qcGVn.jpeg",
+    "note": "CAA release-group 只有 2018 Corbett vs. Dempsey CD 圖（帶再版貼紙），改取 1977 IPS 原版 LP（Discogs release 1357109，IPS ST004、1977、IPS 三項相符）；主線 2026-11-04 目視封面印 Milford Graves／BÄBI。",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-04T11:31:16Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 5,
+    "listeners": 291,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-04T11:31:16Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 291）"
+   },
+   "rarity": "legendary",
+   "apexAssessment": {
+    "eligible": true,
+    "tier": "heresy",
+    "evidenceUrls": [
+     "https://en.wikipedia.org/wiki/B%C3%A4bi_(album)",
+     "https://jazzwise.com/review/milford-graves-babi"
+    ],
+    "reason": "異端（accessibility 5、7 星）：約 30 分鐘由去底皮的鼓組、人聲嘶喊與兩支薩克斯風的連續尖叫構成，Corbett 稱可當除顫器、Freeman 稱 mind-blasting 並列為 Holy Grail、Dale 稱最 untamed 的自由爵士；具名來源分屬 The Wire、Stereogum、Fact、NYC Jazz Record。"
+   },
+   "description": {
+    "text": "《Bäbi》是鼓手 Milford Graves 與薩克斯風手 Arthur Doyle、Hugh Glover 的現場錄音，約 30 分鐘裡強度幾乎不降，被視為自由爵士難得的經典，讓 1970 年代中期已流於老套的 fire music 重新有了彈性。1976 年 3 月錄於紐約電台 WBAI-FM，1977 年由 Graves 與 Andrew Cyrille 合辦的 IPS 發行。兩支薩克斯風把獨奏裡最激烈的尖嘯當成連續的語言，靠變調與重複推進；Graves 拆掉鼓的底皮放大音量，少用小鼓、重用 tom，節奏感仍很強，還不時加入嘶喊。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/B%C3%A4bi_(album)",
+     "https://jazzwise.com/review/milford-graves-babi",
+     "https://musicbrainz.org/release-group/c7b39cf5-25c9-4afb-ab6c-040f826ae5e9"
+    ],
+    "note": "薄細項策展線卡牌版：研究（ok）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-04T11:31:16Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Paul Flaherty & Chris Corsano",
+   "album": "The Hated Music",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "9b0a8e23-aff6-3f59-a1f9-bb52dbe9087f",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "美國自由爵士 噪音化／後期：Flaherty 的薩克斯風與 Corsano 的鼓對撞，一小時不間斷的噴發式雙人即興，現代自由爵士的標杆｜⚠ 一小時不間斷依印象，未核實｜MB release-group 9b0a8e23-aff6-3f59-a1f9-bb52dbe9087f：title「The Hated Music」、Album、first-release-date 2000、artist-credit「Paul Flaherty & Chris Corsano」。證據：https://musicbrainz.org/release-group/9b0a8e23-aff6-3f59-a1f9-bb52dbe9087f https://coverartarchive.org/release-group/9b0a8e23-aff6-3f59-a1f9-bb52dbe9087f/front https://www.discogs.com/master/1240921",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2000,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/9b0a8e23-aff6-3f59-a1f9-bb52dbe9087f/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-04T11:31:16Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-04 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 5,
+    "listeners": 73,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-04T11:31:16Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 73）"
+   },
+   "rarity": "legendary",
+   "apexAssessment": {
+    "eligible": true,
+    "tier": "heresy",
+    "evidenceUrls": [
+     "https://www.cor-sano.com/hatedmusic.html",
+     "https://en.wikipedia.org/wiki/Chris_Corsano",
+     "https://chriscorsano1.bandcamp.com/album/the-hated-music"
+    ],
+    "reason": "異端（accessibility 5、7 星）：薩克斯風加鼓的雙人即興，樂評 Dan Warburton 說從頭到尾 spitting fire、Wire 的 David Keenan 寫 strangulated beauty；風格自稱「The Hated Music」，限量 500 張。證據偏薄，主要是樂手官網轉引的樂評片段，建議主線複查是否收。"
+   },
+   "description": {
+    "text": "《The Hated Music》是薩克斯風手 Paul Flaherty 與鼓手 Chris Corsano 的第一張雙人專輯，五首曲子只有薩克斯風與鼓，從頭到尾維持高強度吹奏，被視為通篇猛烈、錄音極佳的一張。盤名是兩人對自己這種風格的稱呼；Flaherty 在 1970 年代初就因這種吹法在樂團裡受到負面評價。這張 2000 年 6 月錄於麻州 Westwood，由 Ecstatic Yod 限量 500 張發行。Flaherty 吹中音與次中音薩克斯風，直接與鼓對峙，持續的猛烈之中偶有收束聚焦的片段。兩人之後合作二十多年、錄了二十多張唱片。",
+    "sourceUrls": [
+     "https://www.cor-sano.com/hatedmusic.html",
+     "https://chriscorsano1.bandcamp.com/album/the-hated-music",
+     "https://en.wikipedia.org/wiki/Chris_Corsano",
+     "https://forcedexposure.com/Catalog/FTR.308LP.html",
+     "https://www.jazzword.com/reviews/2684/",
+     "https://musicbrainz.org/release-group/9b0a8e23-aff6-3f59-a1f9-bb52dbe9087f"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-04T11:31:16Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "William Hooker",
+   "album": "Hard Time",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "f6ac6950-ef1b-4416-96af-5bebc2cffd4e",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "美國自由爵士 噪音化／後期：Hooker 1998 年 Squealer 專輯，被評為他密度最高、最難入耳的一張｜⚠ 主線點名 1970s–90s 最激烈，無單一權威共識；Hard Time 取自評論，備選 Mindfulness (1999, JazzTimes mayhem overdrive, MB a8595192)；...is eternal life (1977) 歷史名盤但較不極端。封面僅 Discogs｜MB release-group f6ac6950-ef1b-4416-96af-5bebc2cffd4e：title「Hard Time」、Album、first-release-date 1998、artist-credit「William Hooker」。證據：https://musicbrainz.org/release-group/f6ac6950-ef1b-4416-96af-5bebc2cffd4e https://www.discogs.com/release/2534597-William-Hooker-Hard-Time https://www.squealermusic.com/reviews/hookerreviews.html",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1998,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "source": "discogs",
+    "discogsReleaseId": "2534597",
+    "url": "https://i.discogs.com/EN1Z3i4-DF1rqLfYJuMiHVwTY7r5kta0caHV1u14-E8/rs:fit/g:sm/q:90/h:588/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI1MzQ1/OTctMTY0NDc2NDIz/Ny0yODkxLmpwZWc.jpeg",
+    "note": "CAA 404；Discogs release 2534597（Squealer SQLR026、1998，與 MB release 廠牌目錄號年份三項相符）；主線 2026-11-04 目視封面印 William Hooker／Hard Time。",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-04T11:31:16Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 5,
+    "listeners": 49,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-04T11:31:16Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 49）"
+   },
+   "rarity": "legendary",
+   "apexAssessment": {
+    "eligible": true,
+    "tier": "heresy",
+    "evidenceUrls": [
+     "https://www.squealermusic.com/reviews/hookerreviews.html",
+     "https://musicbrainz.org/release-group/f6ac6950-ef1b-4416-96af-5bebc2cffd4e",
+     "https://www.discogs.com/release/2534597-William-Hooker-Hard-Time"
+    ],
+    "reason": "異端（accessibility 5、7 星）：鼓加雙吉他、合成器與回授的噪音化即興，多篇樂評以 merciless、unrelenting、difficult 形容，整體大部分時間維持高密度；僅 Slaughtered Lambs 等少數段落較清楚。"
+   },
+   "description": {
+    "text": "《Hard Time》是鼓手 William Hooker 在紐約 CBGB 的現場錄音，鼓之外配兩把吉他、合成器與部分曲目的薩克斯風，電子噪音與回授幾乎填滿每個空隙。它被視為 Hooker 最好的作品，也比他同期的唱片難上許多，但也有人嫌現場收音空洞。錄音來自 1994 到 1995 年間的演出，1998 年由 Squealer 發行。開場約 8 分鐘的〈Computer Glasses〉被失真電子噪音占滿，接近工業噪音；鼓是骨架，合成器、吉他與薩克斯風在上面不受控地尖嘯，〈Abandoned〉則降為稀疏的質地。",
+    "sourceUrls": [
+     "https://www.squealermusic.com/reviews/hookerreviews.html",
+     "https://musicbrainz.org/release-group/f6ac6950-ef1b-4416-96af-5bebc2cffd4e"
+    ],
+    "note": "薄細項策展線卡牌版：研究（ok）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-04T11:31:16Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Little Women",
+   "album": "Throat",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "80150717-fad9-402c-9db6-510274ab7b1d",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "美國自由爵士 噪音化／後期：Little Women 2010 年 AUM Fidelity 首作，薩克斯風與吉他的無調噪音搖滾加自由爵士｜⚠ 人員未核實；乃另類主流媒體評價依印象，主線複查極端度｜MB release-group 80150717-fad9-402c-9db6-510274ab7b1d：title「Throat」、Album、first-release-date 2010-04-13、artist-credit「Little Women」。證據：https://musicbrainz.org/release-group/80150717-fad9-402c-9db6-510274ab7b1d https://music.apple.com/us/album/throat/364017884 https://www.discogs.com/master/272520",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2010,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz",
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/80150717-fad9-402c-9db6-510274ab7b1d/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-04T11:31:16Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-04 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 5,
+    "listeners": 4555,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-04T11:31:16Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 4555）"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": true,
+    "tier": "heresy",
+    "evidenceUrls": [
+     "https://www.freejazzblog.org/2010/05/little-women-throat-aum-fidelity-2010.html",
+     "https://bbcbreakingnews.pages.dev/music/reviews/8rb6"
+    ],
+    "reason": "異端（accessibility 5、7 星）：兩支薩克斯風加失真吉他的高速、接近連續的音牆，樂評稱『intense throughout』、既金屬又自由爵士、『不適合膽小者』；少數抒情段落不改變整體。"
+   },
+   "description": {
+    "text": "《Throat》是 Little Women 的首張全長專輯，兩支薩克斯風、一把吉他和一組鼓把約 41 分鐘連成一整首組曲，開場就是響亮緻密的音牆，全程高強度；它把 math rock 的精密與金屬的粗野接進自由爵士，被視為不適合膽小的人、卻不該錯過的一張。2010 年由 AUM Fidelity 發行。吉他硬派推進，薩克斯風質地粗礪，節奏多變，少有傳統獨奏；〈Throat II〉用薩克斯風長音營造儀式感，〈Throat IV〉帶出近似福音的旋律並堆到單音高潮，最後以無詞吶喊作結。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/80150717-fad9-402c-9db6-510274ab7b1d",
+     "https://www.freejazzblog.org/2010/05/little-women-throat-aum-fidelity-2010.html",
+     "https://www.allaboutjazz.com/throat-aum-fidelity-review-by-john-sharpe",
+     "https://bbcbreakingnews.pages.dev/music/reviews/8rb6"
+    ],
+    "note": "薄細項策展線卡牌版：研究（ok）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/35/42/85/3542858f-17b6-36cd-708c-bfb84de8d747/mzaf_8570783848073125607.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-11-04T11:31:16Z",
+    "appleCollectionId": "364017884",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 364017884「Little Women《Throat》」：曲目 7/7 對上 MB 原盤（Apple 共 7 軌），取第 1 軌〈Throat I〉。主線 2026-11-04 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Gato Barbieri",
+   "album": "In Search of the Mystery",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "bf75cd4e-93ce-4f44-9eb2-304e8bb49623",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "美國自由爵士 60 年代（ESP／BYG／私壓）：Barbieri 1967 年 ESP 專輯，次中音薩克斯風高亢尖叫，弦樂與鼓失序對撞｜⚠ Barbieri 是阿根廷人，在紐約錄製，country 填 us 依專輯錄製地，可改 ar；MB 另有 2009 重發 rg 06f62bef，採 1967 bf75cd4e；人員依印象｜MB release-group bf75cd4e-93ce-4f44-9eb2-304e8bb49623：title「In Search Of The Mystery」、Album、first-release-date 1967、artist-credit「Gato Barbieri Quartet」。證據：https://musicbrainz.org/release-group/bf75cd4e-93ce-4f44-9eb2-304e8bb49623 https://music.apple.com/us/album/in-search-of-the-mystery/1234444966",
+    "queryAlias": "Gato Barbieri Quartet"
+   },
+   "research": {
+    "suggestedYear": 1967,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/bf75cd4e-93ce-4f44-9eb2-304e8bb49623/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-04T11:31:16Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-04 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 5,
+    "listeners": 896,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-04T11:31:16Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 896）"
+   },
+   "rarity": "legendary",
+   "apexAssessment": {
+    "eligible": true,
+    "tier": "heresy",
+    "evidenceUrls": [
+     "https://en.wikipedia.org/wiki/In_Search_of_the_Mystery",
+     "https://www.freejazzblog.org/2009/05/gato-barbieri-in-search-of-mystery-esp.html"
+    ],
+    "reason": "異端（accessibility 5、7 星）：尖叫式超吹的次中音、無固定拍號、無調的民主式集體；Penguin Guide 稱『unremitting』；但有緩慢段落與旋律性，屬偏弱的 heresy。"
+   },
+   "description": {
+    "text": "《In Search of the Mystery》是阿根廷次中音薩克斯風手 Gato Barbieri 的首張個人專輯，他以強烈超吹吹出複音爆發與尖銳的超高音，安靜段落也會突然爆成狂嚎，被視為激烈且毫不鬆懈的錄音，熟悉他拉丁作品的聽眾可能會吃驚。1967 年 3 月錄於紐約，由 ESP-Disk' 發行。伴奏是 Calo Scott 的大提琴、Sirone 的貝斯與 Bobby Kapp 的鼓：弦樂在鼓聲周圍自由行動，沒有固定拍號，節奏組給出緩慢穩定的脈動，高能量段落與較柔和的段落交替。強烈能量底下仍保留旋律性。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/In_Search_of_the_Mystery",
+     "https://www.freejazzblog.org/2009/05/gato-barbieri-in-search-of-mystery-esp.html",
+     "https://musicbrainz.org/release-group/bf75cd4e-93ce-4f44-9eb2-304e8bb49623"
+    ],
+    "note": "薄細項策展線卡牌版：研究（ok）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview117/v4/bc/70/6b/bc706b41-b48a-5581-7391-d6ff13fedd5c/mzaf_1512137100463079224.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-11-04T11:31:16Z",
+    "appleCollectionId": "1234444966",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1234444966「Gato Barbieri《In Search of the Mystery》」：曲目 4/4 對上 MB 原盤（Apple 共 2 軌），取第 1 軌〈In Search of the Mystery / Michelle〉。主線 2026-11-04 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Sun Ra and His Astro Infinity Arkestra",
+   "album": "Strange Strings",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "d042dc13-824d-32e8-a87c-6a08ce9aeaf7",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "美國自由爵士 60 年代：全團吹奏手拿不熟悉的民族弦樂器，沒有調性只有質地，Sun Ra 稱為「無知的研究」｜⚠ MB 標題為 Sun Ra and His Astro Infinity Arkestra；維基首發年 1967（錄音 1965/66 說法不一）。判 heresy 但〈Worlds Approaching〉有低音固定音型與獨奏，並非全程質地，主線可復核。 研究判定：heresy；封面 CAA 有（https://coverartarchive.org/release-group/d042dc13-824d-32e8-a87c-6a08ce9aeaf7）。｜MB release-group d042dc13-824d-32e8-a87c-6a08ce9aeaf7：title「Strange Strings」、Album、first-release-date 1966、artist-credit「Sun Ra and His Astro Infinity Arkestra」。證據：https://en.wikipedia.org/wiki/Strange_Strings https://musicbrainz.org/release-group/d042dc13-824d-32e8-a87c-6a08ce9aeaf7 https://music.apple.com/us/album/strange-strings-expanded-edition/1885654639",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1967,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/d042dc13-824d-32e8-a87c-6a08ce9aeaf7/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-04T11:31:16Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-04 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 5,
+    "listeners": 159,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-04T11:31:16Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 159）"
+   },
+   "rarity": "legendary",
+   "apexAssessment": {
+    "eligible": true,
+    "tier": "heresy",
+    "evidenceUrls": [
+     "https://en.wikipedia.org/wiki/Strange_Strings",
+     "https://forcedexposure.com/Catalog/sun-ra-his-astro-infinity-arkestra-strange-strings-expanded-edition-cd/CMR.008CD.html",
+     "https://www.allaboutjazz.com/strange-strings-sun-ra-atavistic-worldwide-review-by-troy-collins"
+    ],
+    "reason": "異端（accessibility 5、7 星）：全團改彈不熟的弦樂器，Szwed 描述為無調、全是質地；原版單聲道且母帶失真，不過〈Worlds Approaching〉有固定音型與獨奏，並非全程無調。"
+   },
+   "description": {
+    "text": "《Strange Strings》是 Sun Ra 要整個 Arkestra 改彈從沒學過的弦樂器錄成的專輯，整張由質地構成、聽不出調性中心，被視為一次彷彿獨立於所有音樂傳統之外的成就。他從古董店與樂器行買回烏克麗麗、曼陀林、日本箏、科拉琴、中國琵琶等樂器分給吹管手，自稱這是「無知的研究」，重點就在樂手不會彈；錄音時不給譜，指向誰誰就開始。1965 年在紐約錄成，1967 年由他自己的 Saturn 發行。撥弦與刮弦的雜響層層堆疊，Sun Ra 另外敲定音鼓、拉吱嘎作響的門、敲回火鋼板，Art Jenkins 透過金屬擴音筒發出隧道般的人聲。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Strange_Strings",
+     "https://forcedexposure.com/Catalog/sun-ra-his-astro-infinity-arkestra-strange-strings-expanded-edition-cd/CMR.008CD.html",
+     "https://www.albumoftheyear.org/album/168427-sun-ra-strange-strings.php",
+     "https://www.worldwidestereo.com/products/strange-strings-expanded-edition-vinyl-lp",
+     "https://musicbrainz.org/release-group/d042dc13-824d-32e8-a87c-6a08ce9aeaf7"
+    ],
+    "note": "薄細項策展線卡牌版：研究（ok）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/42/cc/90/42cc9064-3379-4e78-9b23-f884156075c0/mzaf_5137078455978058677.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-11-04T11:31:16Z",
+    "appleCollectionId": "1885654639",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1885654639「Sun Ra and His Arkestra《Strange Strings (Expanded Edition)》」：Apple 只有 2023 擴充版（8 軌），前三軌 World's Approaching／Strange Strings／Strange Strange 即原盤三首；試聽取第 1 軌。，取第 1 軌〈World's Approaching〉。主線 2026-11-04 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  }
+ ]
+}
