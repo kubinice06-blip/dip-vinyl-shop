@@ -78,3 +78,5 @@
 - **51545**　Pain Jerk《Exhibition of Electro-Disease》：1995-05-25 G.R.O.S.S. GRS106，C52 卡帶限量 110，Kohei Gomi；無針對本盤樂評，none，低優先汰換，若要異端建議改提《Gallon Gravy》（1997）。
 - **51546**　Consumer Electronics《Leathersex》：1982 Iphar 004 C90 卡帶（13 軌無曲名），身分無誤；聲音無樂評來源，維基只稱其早期卡帶推動 extreme noise，none（thin）。封面 Discogs master 有圖，不需汰換。
 - **51547**　MSBR 年份三方不一致：MB／Discogs 1993，Tobira 1995，Urashima 未載；採 1993。無 Hototogisu 式無圖卡：六張封面皆確認（Apple、Discogs 或 CAA）。seed 異端無任何一位撞名。
+- **51573** 研究層建議汰換 5 張照汰：Anenzephalia（1996 現場、無樂評）、Con-Dom《Subjection》（50 捲限量卡帶、無評）、Ramleh《Hole in the Heart》（迷幻噪音搖滾卡帶，非本線）、Sudden Infant《Radiorgasm》（電台現場錄音）、Contagious Orgasm《Thin Skinned》（資料不足 8 條）。Violent Onsen Geisha、Pain Jerk、IRM 身分齊備，照一般卡上架。卡單 37→32，研究稿同步刪。
+- **51574** 補策展 ax1d 交 0 張（可讀的可信樂評來源不足，策展層不湊數）。ax1 不再補，照實上架；異端缺口記進 PLAN。
