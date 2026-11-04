@@ -88,3 +88,15 @@
 ## 主線（補策展 ax10c 交件後）
 - **52476** 補策展交 7（全 Album、MB 7、pearl 0）。汰 The Faith / Void split：Faith 面是結構清楚的 hardcore，只有 Void 面混亂——split 卡掛兩團名，等於「只有局部激烈」。其餘 6 張交研究 e 組：Insect Warfare《World Extermination》、Agoraphobic Nosebleed《Altered States of America》（ax6 曾因具名評語是別張汰，這次策展找到針對本張的 Exclaim!）、D.R.I.《Dirty Rotten LP》、Cryptic Slaughter《Convicted》、Nails《Unsilent Death》、Disorder《Under the Scalpel Blade》（CAA 無圖，封面走 Discogs release 1227189）。研究層特別注意「一般碾核不收」：Insect Warfare、Nails 是 grindcore／metallic hardcore，若描述只是一般 grind 的快、或有 breakdown／sludge 慢段，判 none。
 - **52477** 藝人介紹 ar-d-273 上線 6 位（Siege、Crossed Out、Charles Bronson、Dropdead、Despise You、Extreme Noise Terror；skipped 0）。補洞 1 支、寫作 1 支（6 位只切出一組）。主線逐位審，改 2 處（Crossed Out「據說」→「原版唱片行情很高」；ENT 刪單源「前後共四次」）。qa-artist 0 處。pubIssues 1：Crossed Out 7 吋年份 1991／1992（維基發行列表）——卡用 MB 1991，簡介寫「1991 年秋」與維基內文一致，不改。
+
+## 研究 e 組
+- **52451** Insect Warfare《World Extermination》：判 none（邊緣、可逆）。20 首 22:36、最長 1:49、無 breakdown／sludge；但 Houston Press、Blabbermouth 只給一般 grindcore 的快與「不喘息」，無噪音牆／糊爛等具體手法，依 52476 判 none。Decibel 名人堂原文未讀。
+- **52452** Agoraphobic Nosebleed《Altered States of America》：判 heresy。100 首、多數數秒、總長約 21 分；Tinnitist（Sterdan，原 2003）＋Exclaim!（Pratt，評 2008 重發版，引用只取原盤描述）。
+- **52453** D.R.I.《Dirty Rotten LP》：判 heresy（邊緣、可逆）。22 首 16:41、1982 家中錄音；deathmetal.org「推土機」＋MRR「狂躁緊繃」＋Spin 1985「爛泥聲響」（維基轉引）。MRR 強調 tight，簡介別以糊為主軸；原為 7 吋 33 轉 EP，同年出 12 吋 LP。
+- **52454** Cryptic Slaughter《Convicted》：判 none（邊緣、可逆）。MB 14 首 31:13，曲長 1:24–4:16；Blabbermouth 與 deathmetal.org 皆提走走停停、速度變化與金屬段；AllMusic 句只經維基轉引。
+- **52455** Nails《Unsilent Death》：判 none。10 首 13:52，但 Scene Point Blank 點名〈I Will Not Follow〉有 breakdown，Dead Rhetoric 描述標題曲後段碾壓 riff，〈Depths〉3:47 收尾；依 52476 判 none。年份 2010 一致。
+- **52456** Disorder《Under the Scalpel Blade》：判 heresy（邊緣、可逆）。MRR #15（Bale，1984-07）描述原始糊爛錄音＋Svart 廠牌文案輔證；15 首約 33 分（MB／Punky Gibbon），平均 2:12，Svart「每首不到兩分鐘」與曲長不符，寫作別用。封面走 Discogs 1227189（本次未讀）。
+- **52457** 身分全與卡單相符（廠牌、年份、曲數）；卡池無同藝人卡；pearl 0。
+- **52458** 本組 WebSearch 共 3 次（Disorder 2、Cryptic Slaughter 1）；AllMusic、metalmusicarchives、Discogs 未讀到。結論 heresy 3、none 3、建議汰換 0。
+- **52478** 研究 e 組照判：收 **Agoraphobic Nosebleed《Altered States of America》**（100 首多為數秒，Tinnitist＋Exclaim!；Exclaim! 評 2008 重發，只取原盤描述）、**D.R.I.《Dirty Rotten LP》**（22 首 16:41，deathmetal.org＋MRR；MRR 強調 tight，簡介不以「糊」為主軸）、**Disorder《Under the Scalpel Blade》**（MRR #15 描述原始糊爛的錄音＋Svart 廠牌輔證；15 首約 33 分，平均 2 分多，簡介不寫「每首不到兩分鐘」）。汰 Insect Warfare（只有一般 grindcore 的快，52476）、Cryptic Slaughter（速度變化、金屬段）、Nails（breakdown）。卡單 9 張。
+- **52479** Disorder 封面：CAA 無圖，主線用 Discogs API 讀 release 1227189（Disorder Records AARGH!-1、1984、UK、LP 15 軌，與 MB 一致），主圖 HTTP 200、目視封面印「Under the Scalple Blade／Disorder」（原封面拼法），寫 `covers.json`＋登錄 `data/discogs-cover-registry.json`（628 筆）、重產 `DISCOGS-COVERS.md`。
