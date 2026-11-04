@@ -62,3 +62,4 @@
   - Russolo：「被視為或許是第一位噪音藝術家」→「被認為或許是…」（維基引 Hegarty 原話是 perhaps the first，去掉疊用的「視為」）；「台上與觀眾互毆」→「同台的未來派成員與觀眾互毆」（研究稿：Marinetti、Boccioni 等人離台與觀眾互毆）；「裝了大喇叭的曲柄木箱」→「曲柄木箱」壓字數；補 intonarumori 後半形空格。（280 字）
   - Revenge：「評價兩極：…也有樂迷視為最混亂的戰爭金屬唱片之一」→ 只留「有樂評只給它 1 分，並說唯一的那一分是給它的極端」——正面那方只是 Metal Archives 使用者評論的搜尋摘要；團方也拒絕 war metal 標籤。（251 字）
   - Schaeffer（1948-10-05 首播、Boulez 彈的鋼琴、Études aux objets 1959）、Mainliner（Scaruffi「seminal work」以「被視為」帶出、團員與錄音地）對過，未改字。
+- **52274** グループ・音楽：「里程碑」撞 build-manifest 禁語 →「關鍵錄音」（Merewether milestone 的意思不變；279 字）。Die Like a Dog、グループ・音楽 研究稿證據都在維基同網域，apexAssessment 第二網址補 MB release-group（身分輔證）。

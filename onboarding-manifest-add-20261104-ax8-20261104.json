@@ -1,0 +1,754 @@
+{
+ "schemaVersion": 1,
+ "batch": "2026-10-20-ax8",
+ "batchNote": "薄細項策展線（add-20261104-ax8）",
+ "createdAt": "2026-11-04T12:52:51Z",
+ "albums": [
+  {
+   "artist": "Vomir",
+   "album": "Proanomie",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "a508333b-506f-4d40-9542-dc34cdc5ff3f",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "牆式噪音／聲牆：整張只有一首 76 分鐘的曲子，是一整面恆定、不起伏、無節拍的靜態噪音牆（Romain Perrot 自述美學為「無想法、無變化、無發展」）；Musique Machine 的 Roger Batty 稱它為 Vomir 最知名且最容易取得的長篇專輯，SensCritique 聽眾描述為「76 分鐘、巨大而不動的白噪音」。店主點名必收。｜⚠ 店主點名。卡池已有 Vomir《Claustration》（heresy），本張照指示仍收。Proanomie 本身沒有找到專屬專業樂評，強度依據是 Musique Machine 對它的比較性提及＋SensCritique 聽眾描述＋Wikipedia 對 HNW 的定義；MB 單曲目 4585 秒。｜MB release-group a508333b-506f-4d40-9542-dc34cdc5ff3f：title「Proanomie」、Album、first-release-date 2009-01-04、artist-credit「Vomir」。證據：https://musicbrainz.org/release-group/a508333b-506f-4d40-9542-dc34cdc5ff3f https://coverartarchive.org/release-group/a508333b-506f-4d40-9542-dc34cdc5ff3f/front https://www.musiquemachine.com/reviews/vomir-untitled-c39-3086 https://www.senscritique.com/album/proanomie/7834356/actualites https://en.wikipedia.org/wiki/Vomir",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2009,
+    "yearNote": ""
+   },
+   "genres": [
+    "noise"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/a508333b-506f-4d40-9542-dc34cdc5ff3f/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-04T12:52:51Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-04 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 5,
+    "listeners": 1937,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-04T12:52:51Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 1937）；主線：錨點：HNW 代表人物、店主附文點名的代表作→經典 4；Apple 有串流、listeners 1937→冷門 4"
+   },
+   "rarity": "legendary",
+   "apexAssessment": {
+    "eligible": true,
+    "tier": "heresy",
+    "evidenceUrls": [
+     "https://www.musiquemachine.com/reviews/vomir-untitled-c39-3086",
+     "https://en.wikipedia.org/wiki/Harsh_noise_wall"
+    ],
+    "reason": "異端（accessibility 5；ax8 放寬標準，主線 52262／52265／52266／52269）：整張一首 76 分鐘、恆定不變的牆式噪音；Musique Machine 稱 Vomir 殘暴且一成不變，並為該類型代表人物。（三軸 4/4/5、Last.fm listeners 1937）",
+    "assessedAt": "2026-11-04T12:52:51Z",
+    "source": "主線 add-20261104-ax8 頂點採用"
+   },
+   "description": {
+    "text": "《Proanomie》是法國人 Romain Perrot 以 Vomir 名義發行的牆式噪音專輯，整張只有一首 76 分鐘的曲子，不分軌、不停頓。Vomir 被視為牆式噪音的先驅之一。它 2009 年由英國廠牌 At War With False Noise 出版，是他第一張專業壓製的 CD。牆式噪音是把數層噪音疊成響亮、失真、被壓平的質地，聽起來像一整片靜電。Perrot 自稱反藝術家，準則是沒有想法、沒有變化、沒有發展，所以 76 分鐘裡是一面恆定不起伏的噪音牆，沒有節拍、旋律或段落。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/a508333b-506f-4d40-9542-dc34cdc5ff3f",
+     "https://en.wikipedia.org/wiki/Vomir",
+     "https://www.musiquemachine.com/reviews/vomir-application-aphistemi-3217",
+     "https://www.musiquemachine.com/articles/buried-in-sound-160",
+     "https://en.wikipedia.org/wiki/Harsh_noise_wall",
+     "https://www.musiquemachine.com/reviews/vomir-untitled-c39-3086",
+     "https://www.senscritique.com/album/proanomie/7834356/actualites"
+    ],
+    "note": "薄細項策展線卡牌版：研究（?）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/Music/3f/6b/8b/mzm.tgavdbwt.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-11-04T12:52:51Z",
+    "appleCollectionId": "309111316",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 309111316「Vomir《Proanomie》」：Apple us 309111316 Vomir《Proanomie》2009 單曲 1 軌，與 MB 單曲 76:25 相符，取第 1 軌〈Proanomie〉。主線 2026-11-04 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Luigi Russolo",
+   "album": "Die Kunst der Geräusche",
+   "identity": {
+    "releaseType": "Compilation",
+    "identitySource": "pinned",
+    "rgMbid": "2bd36c70-3c98-45ca-8dd5-613bdf245040",
+    "upc": "",
+    "aliasesChecked": true,
+    "exceptionReason": "MB 為 Compilation（13 首，約 40 分鐘）；Russolo 沒有原創專輯，此為唯一正式發行的 Intonarumori 錄音彙整（歷史錄音，唯一可得形態）",
+    "exceptionEvidenceUrls": [
+     "https://musicbrainz.org/release-group/2bd36c70-3c98-45ca-8dd5-613bdf245040",
+     "https://coverartarchive.org/release-group/2bd36c70-3c98-45ca-8dd5-613bdf245040/front",
+     "https://en.wikipedia.org/wiki/Luigi_Russolo"
+    ],
+    "aliasReview": "噪音／具象開創錄音：Russolo 1913 年〈噪音的藝術〉宣言後造出 Intonarumori（噪音機），這張收錄 Crepitatore、Ululatore、Gracidatore、Gorgogliatore、Ronzatore 等噪音機單機音色，以及 1921 年 Corale、Serenata（Wikipedia：唯一倖存的同時代錄音）與 Risveglio di una città，另含後人的重建與致敬；歷史地位為噪音音樂開創者，但實際聽感是短小的機械噪音片段而非整張高強度。｜⚠ 依據是歷史地位而非高強度聽感，屬標準中「噪音史開創」一類；Wikipedia 亦註明其作品與現代噪音『幾無相似』。含後人重建／致敬曲目（Fragmente、Canzone Rumorista、Omaggio），非純 1920 年代錄音。｜MB release-group 2bd36c70-3c98-45ca-8dd5-613bdf245040：title「Die Kunst der Geräusche」、null＋Compilation、first-release-date 2000、artist-credit「Luigi Russolo」。證據：https://musicbrainz.org/release-group/2bd36c70-3c98-45ca-8dd5-613bdf245040 https://coverartarchive.org/release-group/2bd36c70-3c98-45ca-8dd5-613bdf245040/front https://en.wikipedia.org/wiki/Luigi_Russolo",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2000,
+    "yearNote": ""
+   },
+   "genres": [
+    "experimental",
+    "noise"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/2bd36c70-3c98-45ca-8dd5-613bdf245040/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-04T12:52:51Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-04 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 5,
+    "obscurity": 5,
+    "accessibility": 5,
+    "listeners": 1879,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-04T12:52:51Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 1879）；主線：錨點：噪音音樂史起點（Intonarumori 唯一存世同時代錄音）→經典 5；Wergo 書附 CD、無串流→冷門 5"
+   },
+   "rarity": "legendary",
+   "apexAssessment": {
+    "eligible": true,
+    "tier": "heresy",
+    "evidenceUrls": [
+     "https://publicdomainreview.org/essay/luigi-russolos-cacophonous-futures/",
+     "https://en.wikipedia.org/wiki/Luigi_Russolo"
+    ],
+    "reason": "異端（accessibility 5；ax8 放寬標準，主線 52262／52265／52266／52269）：噪音史開創者；1921 年錄音是噪音機唯一存世的同時代聲音。屬地位型，不是整張持續高強度。（三軸 5/5/5、Last.fm listeners 1879）",
+    "assessedAt": "2026-11-04T12:52:51Z",
+    "source": "主線 add-20261104-ax8 頂點採用"
+   },
+   "description": {
+    "text": "Luigi Russolo 1913 年發表宣言〈噪音的藝術〉，隨後造出噪音機 intonarumori 並組成樂團，被認為或許是第一位噪音藝術家；1914 年首演騷動不斷，同台的未來派成員與觀眾互毆。這些曲柄木箱在二戰中損毀或遺失，他也沒有留下專輯。《Die Kunst der Geräusche》是 2000 年的書附 CD 彙整：核心是 1921 年他與弟弟 Antonio 灌錄的〈Corale〉與〈Serenata〉，噪音機唯一存世的同時代錄音，前者是管弦樂被機器吼聲打斷；另有劈啪、嚎叫、嗡鳴等單機示範，每段不到一分鐘，還有後人的重建與致敬曲。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/2bd36c70-3c98-45ca-8dd5-613bdf245040",
+     "https://www.fondazionebonotto.org/it/collection/poetry/collectivepoetry/7758.html",
+     "https://en.wikipedia.org/wiki/Noise_music",
+     "https://en.wikipedia.org/wiki/Luigi_Russolo",
+     "https://publicdomainreview.org/essay/luigi-russolos-cacophonous-futures/"
+    ],
+    "note": "薄細項策展線卡牌版：研究（?）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-04T12:52:51Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Pierre Schaeffer",
+   "album": "5 études de bruits / Études aux objets",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "73aab73d-b31b-4974-8264-6fc74c9e3598",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "噪音／具象開創錄音：收錄 Schaeffer 1948 年的〈Cinq études de bruits〉（鐵道、陀螺、鋼琴、管弦、鍋碗五首，每首約 2–4 分鐘），把現場錄音的噪音剪接成沒有旋律、沒有節拍的聲音拼貼，另有 1950 年代 Études aux objets 五首；歷史地位為 musique concrète 開創，但各首短小、不算持續高強度。｜⚠ 卡池已有 Pierre Schaeffer《Musique concrète》(1962, classical, seed 無 MBID)；本張藝人撞名，依派工單仍列出供主線決定換人與否。MB 查不到《Musique concrète》同名 RG；本組查到的 Schaeffer 相關 MB RG：5 études de bruits / Études aux objets (73aab73d；曲目：Étude aux chemins de fer、Étude aux tourniquets、Étude au piano / Étude composée、Étude pour orchestre / Étude concertante、Étude aux casseroles、Objets exposés、Objets étendus、Objets multipliés、Objets liés、Objets rassemblés)；Musique Experimentale (440d5204，BnF 2013：Volumes、Crucifixion、Ambiance II、Tautologos II、Texte I、Texte II)；Panorama of Musique Concrète No. 2 (4de1d98e，1956：Tam-Tam IV、Astrology、Antiphony、Vocalises、Study、Symphonie pour un homme seul、R.A.I. Bird)。CAA 無封面，封面來源為 Discogs release 2713820（Apple 另有 Single 版 987047145）；依據為歷史地位，未找到具名樂評。｜MB release-group 73aab73d-b31b-4974-8264-6fc74c9e3598：title「5 études de bruits / Études aux objets」、Album＋Compilation、first-release-date 2010-12-13、artist-credit「Pierre Schaeffer」。證據：https://musicbrainz.org/release-group/73aab73d-b31b-4974-8264-6fc74c9e3598 https://www.discogs.com/release/2713820-Pierre-Schaeffer-5-%C3%89tudes-De-Bruits-%C3%89tude-Aux-Objets https://itunes.apple.com/us/album/cinq-etudes-de-bruits-single/987047145",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2010,
+    "yearNote": ""
+   },
+   "genres": [
+    "experimental",
+    "classical"
+   ],
+   "cover": {
+    "source": "discogs",
+    "discogsMasterId": "36286",
+    "discogsReleaseId": "2713820",
+    "url": "https://i.discogs.com/rKBlo0kD9_44cCo9nxPHk4RT4txjcfsu-qG5HuEp-6w/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI3MTM4/MjAtMTQzODg4MDgz/Ny00MjQ1LmpwZWc.jpeg",
+    "note": "CAA 無圖；取 Discogs release 2713820（Disques Dreyfus FDM 46050 36286 1、2010）封面，封面印「pierre schaeffer／5 études de bruits／étude aux objets」，主線 2026-11-04 目視核對。",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-04T12:52:51Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 5,
+    "obscurity": 4,
+    "accessibility": 5,
+    "listeners": null,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-04T12:52:51Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 0）；主線：錨點：具象音樂起點→經典 5；Apple 只有兩軌單曲、本盤無串流→冷門 4；worker listeners 回 0 視為查無，留 null"
+   },
+   "rarity": "legendary",
+   "apexAssessment": {
+    "eligible": true,
+    "tier": "heresy",
+    "evidenceUrls": [
+     "https://www.fremeaux.com/img/cms/Livret 12P Musique Concrete FA5841.pdf",
+     "https://en.wikipedia.org/wiki/Cinq_%C3%A9tudes_de_bruits"
+    ],
+    "reason": "異端（accessibility 5；ax8 放寬標準，主線 52262／52265／52266／52269）：具象音樂與以噪音為素材作曲的起點，首播以火車、鍋碗為素材；屬地位型，每首僅 2–4 分鐘。（三軸 5/4/5、Last.fm listeners 0）",
+    "assessedAt": "2026-11-04T12:52:51Z",
+    "source": "主線 add-20261104-ax8 頂點採用"
+   },
+   "description": {
+    "text": "這張收錄 Pierre Schaeffer 1948 年的第一件作品《Cinq études de bruits》，被視為具象音樂的起點：他在巴黎電台錄音室把火車、陀螺、鍋子等錄音剪接成曲，同年 10 月以「噪音音樂會」為名首播，剪接手法也被視為現代取樣的前身。A 面五首各 2 到 4 分鐘：一首把巴黎車站的火車聲剪成有節奏的拼貼；一首用陀螺與打擊樂器，一首用 Boulez 彈的鋼琴；另一首把平底鍋、運河船、說話、口琴與鋼琴疊在一起。B 面是 1959 年以「聲音物件」為單位剪接的《Études aux objets》。整張是短小拼貼，音源大多認得出來。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/73aab73d-b31b-4974-8264-6fc74c9e3598",
+     "https://www.fremeaux.com/img/cms/Livret 12P Musique Concrete FA5841.pdf",
+     "https://en.wikipedia.org/wiki/Cinq_%C3%A9tudes_de_bruits",
+     "https://en.wikipedia.org/wiki/Pierre_Schaeffer",
+     "https://en.wikipedia.org/wiki/Noise_music"
+    ],
+    "note": "薄細項策展線卡牌版：研究（?）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-04T12:52:51Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Mainliner",
+   "album": "Mellow Out",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "ca6e7ef8-0558-33fd-bda2-89128f7a5cc3",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "日本地下噪音搖滾：南條麻人（貝斯、人聲）、川端誠（吉他）、小泉一（鼓）1995 東京錄音，三首：1:51 引子加 15:17〈Black Sky〉、18:37〈M.〉兩首長篇，錄音爆音到失真、貝斯糊成一片，吉他獨奏在轟鳴泥沼中持續十幾分鐘。Scaruffi（8/10）稱『一場失真、坦克節奏與刺耳雜音的壯觀爆發』、『Chrome 的最佳加 Feedtime 的最差都造不成更大破壞』，終曲吉他失真達『pure madness』；Burning Ambulance 稱混音『blown-out』、貝斯失真到像放大器塞進你腦殼；AllMusic 4 星。｜⚠ 可信樂評只有 Scaruffi（個人史書，視為專書）＋AllMusic 4 星（未取得全文）＋Burning Ambulance（刊物型樂評站）；Julian Cope 評語未取到全文。｜MB release-group ca6e7ef8-0558-33fd-bda2-89128f7a5cc3：title「Mellow Out」、Album、first-release-date 1996、artist-credit「Mainliner」。證據：https://musicbrainz.org/release-group/ca6e7ef8-0558-33fd-bda2-89128f7a5cc3 https://coverartarchive.org/release-group/ca6e7ef8-0558-33fd-bda2-89128f7a5cc3/front https://www.scaruffi.com/vol6/mainline.html https://burningambulance.com/2022/04/22/mainliner/ https://en.wikipedia.org/wiki/Mellow_Out",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1996,
+    "yearNote": ""
+   },
+   "genres": [
+    "noise",
+    "psychedelic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/ca6e7ef8-0558-33fd-bda2-89128f7a5cc3/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-04T12:52:51Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-04 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 5,
+    "listeners": 4284,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-04T12:52:51Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 4284）；主線：錨點：日本噪音迷幻代表作（Scaruffi 8/10）→經典 4；listeners 4284、無串流→冷門 4"
+   },
+   "rarity": "legendary",
+   "apexAssessment": {
+    "eligible": true,
+    "tier": "heresy",
+    "evidenceUrls": [
+     "https://www.scaruffi.com/vol6/mainline.html",
+     "https://burningambulance.com/2022/04/22/mainliner/",
+     "https://en.wikipedia.org/wiki/Mellow_Out"
+    ],
+    "reason": "異端（accessibility 5；ax8 放寬標準，主線 52262／52265／52266／52269）：兩首各 15 分鐘以上的爆音失真牆（Scaruffi：失真、坦克節奏與雜音的爆發，吉他失真達極端程度；Burning Ambulance：混音 blown-out），整張持續，符合放寬標準。（三軸 4/4/5、Last.fm listeners 4284）",
+    "assessedAt": "2026-11-04T12:52:51Z",
+    "source": "主線 add-20261104-ax8 頂點採用"
+   },
+   "description": {
+    "text": "《Mellow Out》是東京三人團 Mainliner 的首張專輯，全長約 36 分鐘，除了短短的開場只有〈Black Sky〉與〈M.〉兩首，各長 15 分與 18 分多，整張混音爆音，貝斯失真到蓋過其他聲部。它被視為器樂搖滾的開創性作品之一。團員是南條麻人（貝斯、人聲，兼製作）、川端誠（吉他）與小泉一（鼓），1995 年在東京錄音、隔年發行。〈Black Sky〉建立在一個重複許久的沉重 riff 上，南條的嘶喊加了大量殘響；〈M.〉由短暫的鼓獨奏開頭，接著是約 15 分鐘的吉他獨奏，失真推到極端。riff 和鼓一直都在，只是被失真糊成一片。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Mellow_Out",
+     "https://burningambulance.com/2022/04/22/mainliner/",
+     "https://www.scaruffi.com/vol6/mainline.html",
+     "https://musicbrainz.org/release-group/ca6e7ef8-0558-33fd-bda2-89128f7a5cc3"
+    ],
+    "note": "薄細項策展線卡牌版：研究（?）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-04T12:52:51Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Revenge",
+   "album": "Triumph.Genocide.Antichrist",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "5a04b451-0a6e-3ac4-9d90-918ac8b50a48",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "戰爭金屬：Metal.Academy 評為非常一致的 war metal，無亮點起伏，全程高密度blast beat與失真；Metalbite 評論稱毫無動態起伏。依據僅有社群評論，未取得 Terrorizer／Decibel 等主流評。｜⚠ chk-artist 輸出 0。依據偏薄，建議汰換；ax6c 稱 MB 同名撞，此處已用 artist 加專輯名鎖定單一 RG。｜MB release-group 5a04b451-0a6e-3ac4-9d90-918ac8b50a48：title「Triumph.Genocide.Antichrist」、Album、first-release-date 2003-01-06、artist-credit「Revenge」。證據：https://metal.academy/releases/4782 https://metalbite.com/album/2118/revenge-triumphgenocideantichrist https://coverartarchive.org/release-group/5a04b451-0a6e-3ac4-9d90-918ac8b50a48/front",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2003,
+    "yearNote": ""
+   },
+   "genres": [
+    "metal"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/5a04b451-0a6e-3ac4-9d90-918ac8b50a48/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-04T12:52:51Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-04 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 5,
+    "listeners": 28889,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-04T12:52:51Z",
+    "note": "機器基線 3/3/3（Last.fm listeners 28889）；主線：錨點：war metal 代表盤→經典 4；小廠、無串流→冷門 4"
+   },
+   "rarity": "legendary",
+   "apexAssessment": {
+    "eligible": true,
+    "tier": "heresy",
+    "evidenceUrls": [
+     "https://metalbite.com/album/2118/revenge-triumphgenocideantichrist",
+     "https://www.metal.de/reviews/revenge-triumph-genocide-antichrist-3024/"
+    ],
+    "reason": "異端（accessibility 5；ax8 放寬標準，主線 52262／52265／52266／52269）：兩份獨立評論（Metalbite、metal.de）描述整張 33 分鐘單一速度、blast beat 加 staccato 滾奏、無動態起伏、製作糊成一團；metal.de 並因其極端多給一分。（三軸 4/4/5、Last.fm listeners 28889）",
+    "assessedAt": "2026-11-04T12:52:51Z",
+    "source": "主線 add-20261104-ax8 頂點採用"
+   },
+   "description": {
+    "text": "《Triumph.Genocide.Antichrist》是加拿大艾德蒙頓樂團 Revenge 的首張全長專輯，8 首共 33 分鐘維持同一種高速，鼓手不按結構地排出 blast beat 與斷奏滾奏，沒有慢板或氛圍段落。有樂評只給它 1 分，並說唯一的那一分是給它的極端。樂團 2000 年由 James Read 在 Conqueror 解散後成立，2003 年由 Osmose Productions 發行。吉他 riff 壓在底下幾乎聽不見，製作把各聲部糊成一團，八首聽起來像一整段連續的延伸。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Revenge_(Canadian_band)",
+     "https://www.metal.de/reviews/revenge-triumph-genocide-antichrist-3024/",
+     "https://metalbite.com/album/2118/revenge-triumphgenocideantichrist",
+     "https://www.metal-archives.com/reviews/Revenge/Triumph.Genocide.Antichrist/14968/",
+     "https://www.voicesfromthedarkside.de/review/revenge-triumph-genocide-antichrist/",
+     "https://www.albumoftheyear.org/album/136033-revenge-triumphgenocideantichrist.php",
+     "https://musicbrainz.org/release-group/5a04b451-0a6e-3ac4-9d90-918ac8b50a48"
+    ],
+    "note": "薄細項策展線卡牌版：研究（?）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-04T12:52:51Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Die Like a Dog Quartet",
+   "album": "Little Birds Have Fast Hearts No.1",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "2c0e6789-b15b-4ecd-89e4-61069f67a5db",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "德國 FMP：Brötzmann 次中音／Kondo 電子小號／Parker 低音／Drake 鼓，1997 柏林 Podewil 現場，No.1 兩段 45'45\"＋21'59\" 不停歇高壓即興；Jenkins（自由爵士百科）稱 absolutely frenetic，AllMusic 4.5 星，Wire 1998 年度推薦。｜⚠ 極端措辭不足（frenetic、work-out）；團含 Brötzmann 但團名不含卡池藝人鍵（Brötzmann 在卡池，需主線判是否算撞）。｜ax8 主線 52262：ax6 汰換稿照放寬標準撿回｜MB release-group 2c0e6789-b15b-4ecd-89e4-61069f67a5db：title「Little Birds Have Fast Hearts No.1」、Album＋Live、first-release-date 1998、artist-credit「Die Like a Dog Quartet」。證據：https://musicbrainz.org/release-group/2c0e6789-b15b-4ecd-89e4-61069f67a5db https://coverartarchive.org/release-group/2c0e6789-b15b-4ecd-89e4-61069f67a5db/front https://en.wikipedia.org/wiki/Little_Birds_Have_Fast_Hearts",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1998,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz",
+    "experimental"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/2c0e6789-b15b-4ecd-89e4-61069f67a5db/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-04T12:52:51Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-04 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 5,
+    "accessibility": 5,
+    "listeners": 34,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-04T12:52:51Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 34）；主線：錨點：FMP 晚期代表、AllMusic 4.5 星→經典 4；listeners 34、無串流→冷門 5"
+   },
+   "rarity": "legendary",
+   "apexAssessment": {
+    "eligible": true,
+    "tier": "heresy",
+    "evidenceUrls": [
+     "https://en.wikipedia.org/wiki/Little_Birds_Have_Fast_Hearts",
+     "https://musicbrainz.org/release-group/2c0e6789-b15b-4ecd-89e4-61069f67a5db"
+    ],
+    "reason": "異端（accessibility 5；ax8 放寬標準，主線 52262／52265／52266／52269）：評語為 frenetic、work-out，屬能量型自由爵士且無『難入耳』措辭；團長 Brötzmann 已有異端卡《Machine Gun》，團員關係撞異端藝人。（三軸 4/5/5、Last.fm listeners 34）",
+    "assessedAt": "2026-11-04T12:52:51Z",
+    "source": "主線 add-20261104-ax8 頂點採用"
+   },
+   "description": {
+    "text": "《Little Birds Have Fast Hearts No.1》是 Peter Brötzmann 領軍的 Die Like a Dog Quartet 的現場錄音，約 67 分鐘只有兩段，四人集體即興、中間不停歇，毫不放鬆，被視為 Brötzmann 那幾年各團最好的作品。1997 年錄於柏林 Total Music Meeting，次年由 FMP 發行。Brötzmann 的次中音薩克斯風巨大厚重，近藤等則的小號接上電子效果、狂放跳動，William Parker 的低音提琴與 Hamid Drake 的鼓持續施壓，想打亂兩支管樂的步伐。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Little_Birds_Have_Fast_Hearts",
+     "https://musicbrainz.org/release-group/2c0e6789-b15b-4ecd-89e4-61069f67a5db"
+    ],
+    "note": "薄細項策展線卡牌版：研究（?）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-04T12:52:51Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "グループ・音楽",
+   "album": "ミュージック オブ グループ・音楽",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "2d321c1e-f437-4b06-9486-051d069e9441",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "日本即興／聲音集團源頭：Group Ongaku（水野修孝、小杉武久、刀根康尚等）的 1960–61 年錄音，1996 年 HEAR 首度發行：〈Automatism〉26 分鐘集體即興，樂器含鋼琴、腳踏風琴、大提琴、中音薩克斯風、電動吸塵器、收音機、油桶、玩偶與餐盤，並以手動改變卡帶轉速；〈Metaplasm 9-15〉25 分鐘。無旋律無節拍，《Art, Anti-Art, Non-Art》（Getty，Merewether 編）稱為實驗音樂史上的里程碑事件。｜⚠ 依據偏薄：維基未用 harsh／extreme 字眼，是史料價值為主；聽感是否達硬蕊度 5 需研究層判。卡池 Kosugi、Tone 以集體名義出現的是不同藝人鍵｜ax8 主線 52262：ax6 汰換稿照放寬標準撿回｜MB release-group 2d321c1e-f437-4b06-9486-051d069e9441：title「ミュージック オブ グループ・音楽」、Album、first-release-date 1996、artist-credit「グループ・音楽」。證據：https://musicbrainz.org/release-group/2d321c1e-f437-4b06-9486-051d069e9441 https://coverartarchive.org/release-group/2d321c1e-f437-4b06-9486-051d069e9441/front https://en.wikipedia.org/wiki/Group_Ongaku",
+    "queryAlias": "Group Ongaku Music of Group Ongaku"
+   },
+   "research": {
+    "suggestedYear": 1996,
+    "yearNote": ""
+   },
+   "genres": [
+    "experimental"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/2d321c1e-f437-4b06-9486-051d069e9441/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-04T12:52:51Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-04 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 5,
+    "obscurity": 5,
+    "accessibility": 5,
+    "listeners": 4,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-04T12:52:51Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 4）；主線：錨點：日本即興／噪音史開創（實驗音樂史里程碑）→經典 5；listeners 4、無串流→冷門 5"
+   },
+   "rarity": "legendary",
+   "apexAssessment": {
+    "eligible": true,
+    "tier": "heresy",
+    "evidenceUrls": [
+     "https://en.wikipedia.org/wiki/Group_Ongaku",
+     "https://musicbrainz.org/release-group/2d321c1e-f437-4b06-9486-051d069e9441"
+    ],
+    "reason": "異端（accessibility 5；ax8 放寬標準，主線 52262／52265／52266／52269）：評價皆為史料里程碑、反音樂，無難入耳措辭；成員刀根康尚在異端已有一張。（三軸 5/5/5、Last.fm listeners 4）",
+    "assessedAt": "2026-11-04T12:52:51Z",
+    "source": "主線 add-20261104-ax8 頂點採用"
+   },
+   "description": {
+    "text": "《ミュージック オブ グループ・音楽》收錄日本團體グループ・音楽（Group Ongaku）1960–61 年的集體即興，被視為實驗音樂史上的關鍵錄音：他們不設旋律與節拍，拿樂器和日常物件同時創作與演奏，稱之為「反音樂」。成員有刀根康尚、小杉武久、塩見允枝子、水野修孝等。〈Automatism〉1960 年在水野家中錄成，〈Metaplasm 9-15〉是 1961 年草月會館首演的現場，到 1996 年才首度發行。26 分鐘的〈Automatism〉用鋼琴、腳踏風琴、大提琴、中音薩克斯風，混進吸塵器、收音機、油桶、玩偶與餐盤，再由一人手動改變卡帶轉速。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Group_Ongaku",
+     "https://vinylunderbite.blogspot.com/2016/04/group-ongaku-music-of-group-ongaku-seer.html?m=1",
+     "https://musicbrainz.org/release-group/2d321c1e-f437-4b06-9486-051d069e9441"
+    ],
+    "note": "薄細項策展線卡牌版：研究（?）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-04T12:52:51Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Sarcófago",
+   "album": "I.N.R.I.",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "a66eed29-69bb-35f5-a8fd-987fafc28290",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "war metal／bestial black metal：維基引註指樂團以「做出史上最具攻擊性的音樂」為目標；本盤為極速、粗糙、近噪音的早期極端金屬原型，後世 war／black metal 的藍本。｜⚠ 偏薄：極端度屬 1987 年標準，今日聽來較不難入耳｜ax8 主線 52262：ax6 汰換稿照放寬標準撿回｜MB release-group a66eed29-69bb-35f5-a8fd-987fafc28290：title「I.N.R.I.」、Album、first-release-date 1987-08、artist-credit「Sarcófago」。證據：https://musicbrainz.org/release-group/a66eed29-69bb-35f5-a8fd-987fafc28290 https://coverartarchive.org/release-group/a66eed29-69bb-35f5-a8fd-987fafc28290/front https://en.wikipedia.org/wiki/I.N.R.I._(Sarcófago_album) https://en.wikipedia.org/wiki/Sarcófago",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1987,
+    "yearNote": ""
+   },
+   "genres": [
+    "metal"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/a66eed29-69bb-35f5-a8fd-987fafc28290/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-04T12:52:51Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-04 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 5,
+    "obscurity": 3,
+    "accessibility": 5,
+    "listeners": 21841,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-04T12:52:51Z",
+    "note": "機器基線 3/3/3（Last.fm listeners 21841）；主線：錨點：Decibel 名人堂、blast beat 先驅→經典 5；listeners 21841→冷門 3"
+   },
+   "rarity": "legendary",
+   "apexAssessment": {
+    "eligible": true,
+    "tier": "heresy",
+    "evidenceUrls": [
+     "https://www.decibelmagazine.com/?p=40439",
+     "https://en.wikipedia.org/wiki/I.N.R.I._(Sarc%C3%B3fago_album)"
+    ],
+    "reason": "異端（accessibility 5；ax8 放寬標準，主線 52262／52265／52266／52269）：以 1987 年標準極端且影響深遠，但今日評者稱其帶『天真魅力』、含中速段，評價兩極，非整張難入耳。（三軸 5/3/5、Last.fm listeners 21841）",
+    "assessedAt": "2026-11-04T12:52:51Z",
+    "source": "主線 add-20261104-ax8 頂點採用"
+   },
+   "description": {
+    "text": "《I.N.R.I.》是巴西 Sarcófago 1987 年的首張專輯，全長 28 分鐘，鼓手 D.D. Crazy 大量使用 blast beat，被視為這項技法的先驅之一；樂團也被視為巴西第一波死金屬中最極端的團之一，Fenriz 與 Satyricon 後來都收錄或翻唱過其中的歌。樂團錄音時以做出最具攻擊性的音樂為目標。聲音以快速 blast beat、原始的吉他與嘔吐式人聲為主，穿插中速段落；鼓不求精準、憑感覺打，有時聽來像鼓機，最暴烈處鼓與吉他互相搶拍，混合原型黑金屬、黑鞭擊與早期死金屬。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/I.N.R.I._(Sarc%C3%B3fago_album)",
+     "https://antichristmagazine.com/?p=47277",
+     "https://www.decibelmagazine.com/?p=40439",
+     "https://en.wikipedia.org/wiki/Sarc%C3%B3fago",
+     "https://musicbrainz.org/release-group/a66eed29-69bb-35f5-a8fd-987fafc28290"
+    ],
+    "note": "薄細項策展線卡牌版：研究（?）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-04T12:52:51Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Archgoat",
+   "album": "Whore of Bethlehem",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "9c1a97f0-6e47-363f-86b7-27a9d1024c97",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "war metal／bestial black metal：芬蘭 bestial black／war metal 代表，極度原始的錄音與低吼、沒有旋律的碾壓；社群類型榜前段。｜⚠ 偏薄：缺具體樂評引文，主要靠類型歸類；chk-artist 唯一命中 Goat|World Music 為假陽性｜ax8 主線 52262：ax6 汰換稿照放寬標準撿回｜MB release-group 9c1a97f0-6e47-363f-86b7-27a9d1024c97：title「Whore of Bethlehem」、Album、first-release-date 2006-09-09、artist-credit「Archgoat」。證據：https://musicbrainz.org/release-group/9c1a97f0-6e47-363f-86b7-27a9d1024c97 https://coverartarchive.org/release-group/9c1a97f0-6e47-363f-86b7-27a9d1024c97/front https://en.wikipedia.org/wiki/Archgoat https://metalmusicarchives.com/subgenre/war-metal",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2006,
+    "yearNote": ""
+   },
+   "genres": [
+    "metal"
+   ],
+   "cover": {
+    "source": "discogs",
+    "discogsMasterId": "12194",
+    "discogsReleaseId": "1651388",
+    "url": "https://i.discogs.com/iYBOGqHL90jKUbl0wkvGYm6GFcjaSOUk41zV24WolQs/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE2NTEz/ODgtMTMwOTAwMjAw/Ny5qcGVn.jpeg",
+    "note": "CAA release-group 封面 index 回 500（archive.org 端故障）；取 Discogs master 12194 主版 release 1651388（Hammer of Hate 2006）主圖，盤名與團標可見，主線 2026-11-04 目視核對。",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-04T12:52:51Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 5,
+    "listeners": 22987,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-04T12:52:51Z",
+    "note": "機器基線 3/3/3（Last.fm listeners 22987）；主線：錨點：war metal 二線→經典 3；listeners 22987→冷門 3"
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": true,
+    "tier": "heresy",
+    "evidenceUrls": [
+     "https://metalcrypt.com/reviews/2369",
+     "https://distortedsoundmag.com/?p=72266"
+    ],
+    "reason": "異端（accessibility 5；ax8 放寬標準，主線 52262／52265／52266／52269）：評論只說它原始、重複、無旋律，沒有可信來源把它列為極端代表作或用 unlistenable／abrasive 級描述；屬一般 war metal。（三軸 3/3/5、Last.fm listeners 22987）",
+    "assessedAt": "2026-11-04T12:52:51Z",
+    "source": "主線 add-20261104-ax8 頂點採用"
+   },
+   "description": {
+    "text": "《Whore of Bethlehem》是芬蘭圖爾庫樂團 Archgoat 2006 年的首張錄音室專輯，35 分鐘、十首歌裡沒有旋律主奏、沒有獨奏，也沒有氛圍段落，全程是刻意簡單、反覆敲打的 riff 與含糊的褻瀆吼叫。樂團被視為芬蘭最具影響力的金屬樂團之一，這張則是歌迷從九〇年代初等了十多年的專輯：他們 1989 年成軍，1993 年因合約爭議拒發已錄好的素材並停團，2004 年才重組。吉他音色毛糙，鼓聲扁平，並非一路飆速，放慢的段落仍維持同樣的敵意，屬黑金屬與死金屬混成的 war metal。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Archgoat",
+     "https://musicbrainz.org/release-group/9c1a97f0-6e47-363f-86b7-27a9d1024c97",
+     "https://metalcrypt.com/reviews/2369",
+     "https://distortedsoundmag.com/?p=72266"
+    ],
+    "note": "薄細項策展線卡牌版：研究（?）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-04T12:52:51Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Francisco López",
+   "album": "Untitled #360",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "fc791f03-b7f1-41c6-9ebe-2c2554273c6b",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "acousmatic-extreme：Francisco López 的《Untitled #360》（Emitter Micro 2018）為三段式純聲響作品，無標題無旋律無拍；Brainwashed 評其三個樂章在近作中以 sheer force and chaos 突出，聲響如一團暴力的重擊與濕黏蠕動。López 整體作品被評為「從來稱不上易入耳」。｜⚠ Brainwashed 該頁 WebFetch 回 404（搜尋結果摘要引述），需主線以 WebSearch 摘要為準或複驗；López 的 Untitled 系列多半偏靜，此張是少數暴烈者。｜ax8 主線 52262：ax6 汰換稿照放寬標準撿回｜MB release-group fc791f03-b7f1-41c6-9ebe-2c2554273c6b：title「Untitled #360」、Album、first-release-date 2018-08-02、artist-credit「Francisco López」。證據：https://www.brainwashed.com/index.php/reviews-easyblog/2018-11-04-16-27-52 https://musicbrainz.org/release-group/fc791f03-b7f1-41c6-9ebe-2c2554273c6b https://coverartarchive.org/release-group/fc791f03-b7f1-41c6-9ebe-2c2554273c6b/front",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2018,
+    "yearNote": ""
+   },
+   "genres": [
+    "experimental",
+    "noise"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/fc791f03-b7f1-41c6-9ebe-2c2554273c6b/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-04T12:52:51Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-04 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 5,
+    "listeners": 7,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-04T12:52:51Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 7）；主線：錨點：近作、單一樂評→經典 3；listeners 7、限量 CD→冷門 5"
+   },
+   "rarity": "legendary",
+   "apexAssessment": {
+    "eligible": true,
+    "tier": "heresy",
+    "evidenceUrls": [
+     "https://www.brainwashed.com/index.php/reviews-easyblog/2018-11-04-16-27-52",
+     "https://en.wikipedia.org/wiki/Francisco_L%C3%B3pez_(musician)"
+    ],
+    "reason": "異端（accessibility 5；ax8 放寬標準，主線 52262／52265／52266／52269）：只有一篇 Brainwashed 評論（未能直接讀取）說它 harsh，缺第二個獨立證據網域，證據不足。（三軸 3/5/5、Last.fm listeners 7）",
+    "assessedAt": "2026-11-04T12:52:51Z",
+    "source": "主線 add-20261104-ax8 頂點採用"
+   },
+   "description": {
+    "text": "《Untitled #360》是西班牙聲音藝術家 Francisco López 2018 年的作品，分三個樂章，中央的〈Movement Two〉長達 54 分鐘，前後是較短的段落；在他的近作中，這張以力道與混亂特別突出，聲音粗暴，有時令人害怕，初聽讓人既困惑又驚嚇。López 1964 年生於馬德里，1982 年起創作，作品在 P.S.1、雷納蘇菲亞美術館與 Sónar 音樂節發表，2010 年獲 Qwartz 最佳聲音選集獎。這張由德國 Emitter Micro 發行，三個樂章一路聽下來，留下的是令人著迷、卻談不上舒適的聆聽經驗。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Francisco_L%C3%B3pez_(musician)",
+     "https://musicbrainz.org/release-group/fc791f03-b7f1-41c6-9ebe-2c2554273c6b",
+     "https://www.brainwashed.com/index.php/reviews-easyblog/2018-11-04-16-27-52"
+    ],
+    "note": "薄細項策展線卡牌版：研究（?）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-04T12:52:51Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：Francisco Lopez《Untitled (2017)》0/3）。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  }
+ ]
+}
