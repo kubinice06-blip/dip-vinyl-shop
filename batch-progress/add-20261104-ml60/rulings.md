@@ -66,3 +66,13 @@
 - **22737** 聲音只用 facts 有來源的細節：速度、底鼓、磁帶飽和、殘響一律未指派。媒體名與榜單名次未進 note（Pitchfork、RBMA、RA、AllMusic、HHV 等改寫成「樂評」或直接平敘；Billboard 與年度榜不指派）。Kitchen〈Beauty O'Locco〉與出道單曲關係整格捨去；Feather World 日籍客座（Kawashima、Itabashi）未指派，名字寫羅馬字；Brothertiger／Sea Biscuit／Emit Ecaps／Lawrence 只寫標籤層級的樂種。
 - **22738** n-gram 自查（han 4-gram）：hook↔hook 0、hook↔note 0；note↔note 只剩「主故事是／主故事他」（扣除字首殘片，不進正文）。途中拆掉「自己製作」×4、「首張專輯」×3、「年由發行」×3、「年月由發」×2、「首約分鐘」×2、「挪威製作人」×2、Feather World 自身 hook↔note「幾內亞歌」。
 - **22739** 腳本：`node qa-batch.mjs hooks add-20261104-ml60` 全部通過（qa-check-hooks 不在 repo，略過）；`node chk-hook-crossgroup.mjs add-20261104-ml60` 5 組 14 張全部通過，hook 加權 16.5–22.5、note 152–237。
+
+## 寫作層（writer-1）
+- **22741** 交件：`desc-tools/batches/output/add-20261104-ml60-out-1.json` 14 張（full 8：218–240；thin 6：152–179）。`qa-batch out` 通過、`qa-check-research` 標記 0、轉述引導詞（據）grep 0；note 未帶媒體名與榜單名次，正文 0 處。初稿只有 Toro 241、Lawrence 183 兩張出界，Toro 改短 chillwave 那句的措辭、Lawrence 拿掉「這張專輯」與「三家」收回區間；Nedi Myra 把「四年後」改回 note 原寫的 2002 年後，以刪「了」「的」三處抵銷。
+- **22742** 第二句領句全照鉤子層 22734；日期「日」後一字全照 22736（Family Vacation 日由、Songs for Lovers 日以、Kokning 日上、Lawrence 日同、Sea Biscuit 日在、Skylon 日，），Toro、McGuire 只寫到月。本組自掃 han() 4-gram（含 14 條 hook）跨張 2 次以上 0 條；途中拆掉「這張專輯」×3、「廠牌形容」×2、「張專輯年月日」×2（Skylon 改以日期領句、前一字「敦」）、「發行了它」×2、「張專輯交」×2。
+- **22743** fix-spacing 對 Songs for Lovers 提示在「蜃気楼」與「MIRAGE」之間補空格——那是卡池藝人欄原字串，照 writer-base「本卡藝人名逐字照卡單」不補、未加 `--write`；主線審稿可再看一眼。
+- **22744** Skylon 的「有機而樂觀」原為 Ott 的直接引語，依規轉成間接敘述（不加引號）；Axel Boman 的「錯誤機器」是 note 給的綽號，保留引號。Kitchen 為避免複述 hook 的「掌鏡」，寫成「封套除了 Tillmans 的照片，設計交給 The Designers Republic」。
+
+## 主線審稿（2026-11-04，cloud-main）
+- 逐張審 14 張，抽核關鍵事實回研究稿：Toro y Moi 生年 1986／平面設計／Carpark 2011-02；McGuire 9 歲學吉他、2013-01 退出 Emeralds、67 分鐘四段；蜃気楼MIRAGE Bandcamp 所在地東京、Waterfront Dining 多倫多（Discogs）；Axel Boman 小說作者 Erik Lavesson、Studio Barnhus 2013-11-11；Torske 1971 生於 Tromsø、「techno 之都」（RA 樂評語）、Ferox 1998、《Feil knapp》Helmut Erler 母帶、《Kokning》杏仁糖鱈魚與隨身碟（Bandcamp 廠牌文）；Lawrence 園丁（Discogs 藝人頁）；Kuniyuki 札幌錄音工程師、Sona Diabaté 幾內亞；Sea Biscuit 七首 6 分半–13 分、約 74 分鐘；Kitchen R&S 1993、Tillmans 攝影；Ott 1968 生於倫敦、封面指定題材——皆一致。
+- 逐張審過，未改字。`fix-spacing` 提示「蜃気楼MIRAGE」中間加空格：那是 MB 掛名原字串，不改。

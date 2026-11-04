@@ -3824,4 +3824,6 @@ window.DipPreviewStatus = Object.freeze({
   "extreme noise terror|a holocaust in your head": "unavailable",
   "agoraphobic nosebleed|altered states of america": "unavailable",
   "disorder|under the scalpel blade": "unavailable",
+  "蜃気楼mirage|songs for lovers": "unavailable",
+  "spacetime continuum|emit ecaps": "unavailable",
 });

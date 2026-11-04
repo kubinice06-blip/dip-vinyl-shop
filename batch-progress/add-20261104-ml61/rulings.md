@@ -81,3 +81,17 @@
 - **22816** 「日」後一字：20 張 note 都只寫到年或月，`/[年月]\s*\d{1,2}\s*日(.)/` 0 命中。
 - **22817** 自查：hook 開頭前四字 20 張互異，對全 hooks 目錄亦互異（原稿「2016」「2017」「三位客座」「兩人各自」撞他批，已改）；本批 hook 之間中文 4-gram 0；hook 對本批 note 0；hook 子句逐字進 note 0。對他批 hook 殘片只剩各 1 次的通用串（「盤名再發」「脈動推著」「混音拖到」「交給廠牌」「等了八年」「家地下室」「巡迴途中」「將近半張」等）；原稿的「六首曲子」×19、「支麥克風」×12、「共同製作」×6、「的第三張」×5、「與打擊樂」×3、「的錄影帶」×3 已改字。note 間 3 張以上 4-gram 只剩指派句「第二句以」；原稿「電子音樂人」×5 已分散成不同身分詞。`chk-hook-crossgroup` 的一般否定句只報 Tides「不是寫給舞池」一處，為樂評內容。
 - **22818** 腳本：`node qa-batch.mjs hooks add-20261104-ml61` 全部通過 ✓；`node chk-hook-crossgroup.mjs add-20261104-ml61` 全部通過 ✓（5 組 20 張，hook 加權 18–24，note 150–235）。輔助腳本：scratchpad `hook-ml61/ml61-data.mjs`、`ml61-chk.mjs`。
+
+## 寫作層（writer-1）（22821–22825）
+- **22821** 交件：`desc-tools/batches/output/add-20261104-ml61-out-1.json` 10 張（thin 6：No Further Ahead 166、Epic 178、Destiny Waiving 180、Night on Tape 162、Until Tomorrow 140、Blurred in My Mirror 159；full 4：Eight Fragments 240、She Was Coloured In 239、Lang 223、Curveland 219）。`qa-batch out`、`qa-check-research`、`fix-spacing` 皆 0 處；「據」grep 0；媒體名 0。初稿 4 張超標（No Further 190、Epic 192、Eight Fragments 255、Destiny 187），整格捨去：No Further 的盤名尾字 Today→Tomorrow 說明；Epic 的「這張」與「以數位形式」改「數位發行」；Eight Fragments 的「一張⋯專輯」「長達」「那間」；Destiny 的錄音地點句縮成「家中」；Solar Bears 二輪改字後 242，砍「收尾的」。
+- **22822** 第二句全照鉤子層 22815 配表；兩處微調：Epic 用全名「德國的 Ulrich Schnauss 與丹麥的 Jonas Munk」（note 只寫姓，首次出現補全名給不懂的人）；Until Tomorrow 第二句只帶藝名＋IDM，「一人寫作製作」不另寫（hook 已有自家地下室寫完）。直接引語一律轉間接：Until Tomorrow 的自述、Night on Tape 只留「夜間」二字引號（廠方用語，照 note）。
+- **22823** 轉述引導詞處理：note 的「專輯說明稱」「說明形容」「廠方稱」不進正文引導；Lang 寫成被動「IDM 與 ambient 被混上⋯」、Curveland 寫成「被比作⋯電影配樂」、Eight Fragments 樂評內容寫「樂評聽見⋯」（不具名）、Night on Tape 以廠牌為行為主體「廠牌把它稱作」。
+- **22824** 跨兩檔合掃（han 4-gram，out-2 已交件）：拆掉「年由發行」（Eight Fragments↔Tides）、「樂評形容」×3、「在年發行」（Curveland↔Mosaic）、「首約分鐘」×5（Solar Bears 改「全長約 50 分鐘、共 15 首」）、本檔內「專輯年交」×2（Lang 改「由 Preco 推出」）。剩 2 張殘片「廠牌第一張」＝Night on Tape 的 hook 原文對 Sketches，hook 不可改、僅 2 張，留給主線收件合掃判定。
+- **22825** 年份與版本：No Further Ahead 照研究汰換段寫「2016 原版→2020 再發加曲」，0 處「新作」；Night on Tape 寫「集結 20 首舊錄音、第一張光碟首度面世」；Blurred 寫成與 Lawrence English 的合作；Destiny 三部曲不寫前兩張盤名與年。
+
+## 寫作層（writer-2）（22826–22830）
+- **22826** 交件：`desc-tools/batches/output/add-20261104-ml61-out-2.json` 10 張（thin 1：WAKEN 155；full 9：209–240）。逐張：WAKEN 155、Phoebus Brumal 240、Tiny Pause 236、Sketches 239、COW 239、Strange Cargo III 209、Lambent Material 238、Mosaic 228、Tides 232、Somnus 234。初稿 4 張超標（Fila 256、COW 256、Sketches 251、Eluvium 245），整格捨去：Fila 的「一首滑進下一首」與「時間是」補述句；Sketches 的「仍歸 Kompakt」；COW 的「他們」「整張在」；Eluvium 的「一人」「只有」。`qa-batch out`、`qa-check-research`、`fix-spacing` 皆 0 處。
+- **22827** 第二句領句全照鉤子層 note 指派；hook 首句逐字照抄。媒體名 0 進正文，榜單名次 0（Strange Cargo III 的書單、Mosaic／Tides 的媒體評語出處整句不寫）；「據說／據傳／據…」0。note 的「自家說明／廠方說／另有簡介說／讀者評論說」一律改寫成陳述或被動：Somnus「被直接標成一張 beatless longplayer」「內頁列出的影響」、Sketches「廠方形容」＋「比起先前，dub 味更少、旋律更重」直述、Strange Cargo III 的〈Time to Get Wize〉直述、WAKEN「曲風被標上」。
+- **22828** 跨兩檔合掃（han() 4-gram，含 writer-1 定稿）：途中拆掉「首約分鐘」×5（四張改成「加起來約／共…左右／合計約／播完約需」）、「樂評形容」×3、「年由發行」、「廠牌第一張」、「這家廠牌」、「第一張個人」、「在年發行」、「樂評聽見」、「長約分鐘」。定稿 2 張以上 0 條。
+- **22829** COW 的「第十四張錄音室專輯」保留「錄音室」（照 facts，不簡寫成第十四張專輯）；Strange Cargo III 的 Rico Conning 只寫「替幾首曲子添上鋼琴與弦樂」，不逐首點名；hook 已說 VHS，正文不再提影帶。
+- **22830** Tides 樂評語「寫給腦袋、不是寫給舞池」照鉤子層 22817 視為樂評內容，正文寫成「對準的是腦袋而不是舞池」。
