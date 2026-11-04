@@ -86,4 +86,15 @@ seed 裡 tier 為 hall／heresy／pearl 的全部卡（開工時約殿堂 303、
 | ad-20 | 流亡 | 30 | s10 | ✅ 上線 30（前台 30） |
 | ad-21 | 流亡 | 30 | s11 | ✅ 上線 30（前台 30） |
 | ad-22 | 流亡 | 30 | s11 | ✅ 上線 30（前台 30） |
-| ad-23 | 流亡 | 19 |  | 待派 |
+| ad-23 | 流亡 | 19 | s12 | ✅ 上線 19（前台 19） |
+| ad-24 | 異端（尾批：ax1 13＋ax2 11） | 24 | s12 | ✅ 上線 24（前台 24） |
+
+## 全線總結（2026-11-04，s12 收尾）
+
+- **檢查**：701 張＝第 0 步 677 張（殿堂 302／異端 85／流亡 290，排除台客）＋尾批 24 張（ax1／ax2 上架時照舊公式寫的異端卡，主線檢查）。
+  另有 33 張不在檢查範圍：《台客的復仇》（店主定稿）、Beyond《再見理想》與 ax5／ax6 的 31 張（上架時已照 apex-desc-base 寫）；ax7／ax8 之後上架的卡照新規寫。
+- **keep 3 張**（第 0 步判定，舊稿已合格）：김두수《자유혼》、Bo Diddley《Bo Diddley》、Donna Summer《Love to Love You Baby》。
+- **重寫上線 698 張**（ad-01～ad-24：殿堂 300、異端 109、流亡 289；判 rewrite 的 674＋尾批 24，全部寫進 KV 並逐字回讀）。
+- **前台仍被 worker CURATED_DESCS 蓋住、要店主本機處理的卡（2 張）**：Miles Davis《Kind of Blue》（ad-01）、Pink Floyd《The Dark Side of the Moon》（ad-04）。
+  KV desc2 已是新稿；要在 worker 的 CURATED_DESCS 拿掉這兩筆並部署，前台才會顯示新稿。其餘 696 張 `front-check` 逐張確認前台已是新稿。
+- 合併 ax7／ax8 後重算：ax7 升格 8 張、ax8 上架 10 張由各自工作階段照新規寫，本線跳過；Vomir《Claustration》被 ax8 降為一般卡，簡介沿用本線新稿（計入異端 109）。

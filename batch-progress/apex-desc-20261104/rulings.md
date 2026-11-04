@@ -763,3 +763,70 @@
 - bulk put 33 鍵（desc2 30＋CJK 卡 desc4 3：菊地雅章、강태환、Tokyo Kid Brothers），wrangler 印 `Success!`；`verify-wave-kv 20261104 ad-21 ad-22` 63/63 逐字一致。
 - `front-check ad-22`：30/30 前台為新稿，CURATED 0。
 - manifest 同步 30 處（11 份 onboarding manifest）。
+
+## ad-23（流亡 19 張，s12）、ad-24（異端尾批 24 張，s12）
+
+- 派工補充：新增 `prompt-research-extra-s12.md`／`prompt-writer-extra-s12.md`（流亡節沿用 s7／s8／s11；異端節沿用 heresy-addendum 與 s7；ad-24 研究層先讀 ax1／ax2 上架時的研究稿當起點、出處逐條確認；舊稿鉤子開頭不沿用）。
+- **尾批 ad-24 的範圍（主線重算）**：seed 頂點卡不在 `worklist.json` 的 57 張＝Beyond《再見理想》（已照新規，跳過）＋《台客的復仇》（店主定稿，跳過）＋ax5 13 張＋ax6 18 張（已照 apex-desc-base 寫，跳過）＋ax1 13 張＋ax2 11 張。第 0 步由主線檢查這 24 張的現行簡介：全是舊鉤子公式（冷知識開頭、前兩句沒講極端在哪裡、盤號目錄號發行日佔大半），**24 張全判 rewrite**；已併進 `worklist.json`（標 `tail: "ad-24"`）、`triage.json`、`batches.json`。
+- **ad-23 主線補查**：Free Enterprize《The Eye of the Beholder》只有 Discogs（release 10127911、master 1702214 兩筆同為 1980 美國不掛廠牌 LP，風格標籤 Acid Rock／Folk，兩位表演者 John Peebles、Tony Frank，14 首、無曲長），MusicBrainz 無條目。裁定：薄寫到 200 字附近，只寫是什麼、私壓無廠牌、沒有再版紀錄、編制與曲目結構，風格只寫「路數偏 acid rock 與民謠」，不寫「為什麼值得聽」以外沒有證據的評價。
+
+### ad-23 研究與寫作
+
+- 研究 3 Sonnet（WebSearch a 14／b 13／c 11 次）、寫作 2 Opus。coverage none 只有 Free Enterprize sound（裁定見上）。多數卡沒有具名樂評，地位靠 Acid Archives（經 Bad Cat／Branco 轉引）、收藏指南、再版廠頁與 Discogs 備註；賣家措辭（holy grail、tax scam label）不寫。
+- 研究層推翻舊稿的主要錯誤（新稿未沿用）：Ghostdance「只有兩人」「folk rock 摻 acid」（7 人加伴唱，搖滾混雷鬼、新浪潮、鄉村）；David Lewis「迷幻 folk rock」（power pop、鄉村搖滾加木吉他 demo）；Jeremy Dormouse「原版約 500 張」（500 是 2001 Void 再版）；Circulation「最後演出 1969-07-08」「Nicholas Wates」；Smack「一夜成軍」「歡迎舞會」「廣告配音錄音室」「四軌」；Ian A. Anderson「Pick Withers 後來進 Dire Straits」「第四張 LP」；Joe Bonner「五重奏」「整張調式爵士」；Probe「六首原創加一首 Steve Miller」（8 首）；Mtume「父親是 Jimmy Heath」未查證；Thornton「四人 bata、三人迦納」（寫七位打擊樂手）。
+- **卡池資料疑點（未動 seed）**：Probe《Direction》seed 1971 與 Discogs 主頁／MusicBrainz 同，2009 Still Looking 再版與賣場標 1969（簡介照 1971）。
+- 機器 QA：`qa-batch research ad-23`、`out ad-23` 全部通過；fix-spacing 0；字數 225–280。
+
+### 主線審稿 ad-23（2026-11-04，19 張逐張讀、逐句對研究稿；加問「讀完知不知道它憑什麼是這一級」）
+
+改 5 處（3 張，`review-ad-23.json`）：
+
+- `ghostdance|ghostdance`：「由 Root River 出版。」→「由 Root River 出版，樂團的其他資料幾乎查不到。」。前兩句缺「為什麼少有人聽」；研究稿 status 第 1 條（Bad Cat：網路上查不到這團多少資料）
+- `ghostdance|ghostdance`：「各寫一半的 12 首、輪流主唱。」→「各寫一半的 12 首。」；「，另有節奏組、鍵盤與伴唱。」→「。」。審稿補句後壓字（292→275）
+- `smack|smack`：「又先後重新發行，才在收藏圈之外被聽到。」→「又先後重新發行。」。「才在收藏圈之外被聽到」是推論，無出處
+- `princess flower and the moon rays|dreaming the magic of your maya`：「加收 1970 年在紐約錄下的未發行曲，才有較多人聽到。」→「加收 1970 年在紐約錄下的未發行曲。」。同上，推論
+
+研究稿同步：改動都是補流通事實或刪推論，未動事實，研究稿不必改。其餘 16 張逐張審過，未改字。第五問：19 張前兩句都講出流通狀況（私壓無廠牌、約 51／50／100／150／800 張、小廠 Muse／Moers／JCOA 沒有再版紀錄、自營廠現場賣、沒寄宣傳盤）與值得聽的事實（Wah Wah、Shadoks、Tone Arm、Void、Branco、Big Pink、Vivid Sound、Wohn、Still Looking、Bonfire、Cherry Tree 再版；Pharoah Sanders 合作；接替 Coltrane；Strata-East 第一張領隊作；第三世界音樂與爵士的結合）。另核對：Rin Eric「loner folk 最受追捧的曲子之一」出自 Patrick Lundborg《Acid Archives》（經 Branco 文案轉引）；Fairy Tale「歐洲收藏圈最搶手之一」出自 Vinyl Antiquity（Blake Mitchner 2013）；Mtume「黑人民族主義音樂的重要記錄」出自 blogthehum（Bradford Bailey 2016）；Thornton「第三世界音樂與美式爵士結合得很完整」出自 Rolling Stone Jazz Record Guide（Fred Goodman）；Jeremy Dormouse「極其稀有」出自收藏指南《Dreams, Fantasies and Nightmares》；Drnwyn「稀有」出自 Bad Cat。都是單一來源，寫「被視為」、不用「常」。
+
+### ad-23 上線
+
+- `kv-token-check` 通過；舊值存 `kv-before-ad-23.json`（38 鍵，19 個非 null）。
+- bulk put 19 鍵（desc2 19；無 CJK 卡、無原有 desc4），wrangler 印 `Success!`；`verify-wave-kv 20261104 ad-23` 19/19 逐字一致。
+- `front-check ad-23`：19/19 前台為新稿，CURATED 0。
+- manifest 同步 19 處（`onboarding-manifest-add-20261104-ax3-20261104.json`）。
+
+### ad-24 研究與寫作
+
+- 研究 3 Sonnet（WebSearch a 11／b 11／c 8 次，起點為 ax1／ax2 上架研究稿）、寫作 2 Opus。本工作階段 WebSearch 合計約 68 次（全在研究層），主線 0 次。
+- coverage：Karkowski reception none（只有 The Wire 追悼文，藝人層級）、Werewolf Jerusalem making none；其餘多為 thin。異端噪音卡多半沒有單張具名樂評，「被認真看待」改用具體事實（Ars Electronica 榮譽提及、Dagsavisen 挪威史上最佳專輯第 19 名、Spellemannprisen 入圍、Pitchfork／Decibel 2014 年度金屬榜第 19／26 名、再版與套裝、類型開創者的具名評價）。
+- **研究層推翻舊稿或 ax2 研究稿的錯誤（新稿未沿用）**：Haswell 不是金尼卡（Ars Electronica 官方檔案為 2002 數位音樂類榮譽提及）；Dodecahedron 的 Angry Metal Guy 評價不是負評（結論「a triumph」）；Teitanblood「最不協和、最具破壞力」評的是前作《Seven Chalices》；Gnaw Their Tongues 的 Mories 是荷蘭人（Quietus 誤作比利時）；Hanatarash「電鑽電鋸般的全頻寬失真」是團體層級、怪手是現場事件；Werewolf Jerusalem「全程恆定平直」無本盤出處；Macronympha「金屬廢料互敲」是團體招牌；Skin Crime「失落環節」是廠商文案；MSBR 的 Yoko Ono〈Rising〉混音只見德文維基，不寫；Dufrêne 本盤不是 1975 Cramps 的《Crirythmes》。
+- **卡池資料疑點（未動 seed）**：MSBR《Structured Suicide》seed 1993（MusicBrainz／Discogs），Tobira 1995、Urashima 約 1994（簡介寫 1990 年代初）；Henri Chopin《Poésie sonore》seed 1972（S Press 卡帶），簡介照 1983 Igloo 黑膠版曲目寫；Sissy Spacek 同名作 seed 2001，Qobuz／YouTube 標 1999（簡介照 2001）。
+- 機器 QA：`qa-batch research ad-24` 通過；`out` 1 標記（Lasse Marhaug「挪威史上最佳專輯榜」：Dagsavisen 2007 年榜，具名榜單照 ad-13 不點名媒體的寫法，判誤報）；fix-spacing 0；字數 249–279。
+
+### 主線審稿 ad-24（2026-11-04，24 張逐張讀、逐句對研究稿；加問「讀完知不知道它憑什麼是這一級」）
+
+改 8 處（7 張，`review-ad-24.json`）：
+
+- `the rita|living dead girl`：「這卷卡帶不掛廠牌，聲音是持續的重失真噪音，從頭到尾沒有起伏。」→「這卷卡帶不掛廠牌，原版在收藏圈想找的人多於手上有的人。」。聲音句出自維基 Harsh noise 的類型描述，不是本卷；改寫研究稿 after 條（Discogs 想要多於持有，質性），與不掛廠牌、2020 限量 298 張重發同卡佐證
+- `vomir|claustration`：「這套作品被視為有其價值，而它堅決拒絕任何動態或變化；」→「他的作品被視為有其價值，也被認為堅決拒絕任何動態或變化；」。Sound Projector（Ed Pinsent 2008）評的是 Vomir 整體，改成藝人層級
+- `atrax morgue|paranoia`：「被視為殘暴到很難重聽，卻把概念表達得可信。」→「被認為殘暴到很難重聽。」。「……卻……」反轉句；同一評者（Debaser）也說音樂上價值為零
+- `harry pussy|ride a dove`：「當時有小眾刊物嫌它自溺，後來則被視為令人困惑卻嚴重被低估。」→「發行當時被部分 fanzine 嫌自溺，後來被視為嚴重被低估。」。去反轉語氣；出自 Kilowatt Hours 回顧與 Tiny Mix Tapes
+- `borbetomagus|barbed wire maggots`：「先驅，影響了日本噪音圈，這張」→「先驅，這張」。影響宣稱的證據只有 P.S.F. 重發與同台，不足
+- `henri chopin|poésie sonore`：「20 世紀後半法國前衛的關鍵人物」→「1950、60 年代法國前衛的關鍵人物」。AllMusic 傳記（Rolf Semprebon）原意
+- `henri chopin|poésie sonore`：「獻給同年過世的 François Dufrêne」→「獻給 1982 年過世的 François Dufrêne」。指代不清；研究稿 making
+- `pyrrhon|the mother of virtues`：「2014 年由 Relapse 發行後評價普遍不低。」→「2014 年由 Relapse 發行。」。含糊、無具體內容
+
+研究稿同步：改動都是刪句、改藝人層級或照研究稿原意收窄，未動事實，研究稿不必改。其餘 17 張逐張審過，未改字。第五問：24 張前兩句都講出極端的具體事實（一首 31 分 50 秒不分段、5 張 CD-R 合計約 286 分鐘限量 40 套、78 軌合計約 22 分鐘、兩面各一首約 15／22／23 分鐘、整碟兩首各 25 分半、七首 68 分 33 秒、12 首 82 分、無詞無樂器只有嘶吼喘息、盤面註明最大音量）＋被認真看待的事實（Ars Electronica 榮譽提及、Dagsavisen 第 19 名、Spellemannprisen 入圍、Pitchfork／Decibel 年度金屬榜、harsh noise wall 開創者／領軍者、Xenakis 門生、啟發 Chopin 到 Jaap Blonk、Hospital 20CD 套裝、Urashima 再版）。另核對：Karkowski「現代作曲與地下噪音之間最重要的人物之一」出自 The Wire（Richard Whitelaw 追悼文）；The Body「2010 年最具冒險精神的極端金屬專輯之一」出自 Ink 19；Dodecahedron「對黑金屬最極端的詮釋之一」出自 Angry Metal Guy；MoRT「推到近乎認不出來的扭曲極端」出自 Metal Crypt；Gnaw Their Tongues「一致地令人不適」出自 Quietus（Noel Gardner）；Abruptum「原創之作」出自 Debaser；Macronympha「美國代表性噪音專輯之一」出自 Noisextra。都是單一來源，寫「被視為」、不用「常」。
+
+### ad-24 上線
+
+- `kv-token-check` 通過；舊值存 `kv-before-ad-24.json`（48 鍵，24 個非 null）。
+- bulk put 24 鍵（desc2 24；無 CJK 卡、無原有 desc4），wrangler 印 `Success!`；`verify-wave-kv 20261104 ad-23 ad-24` 43/43 逐字一致。
+- `front-check ad-24`：24/24 前台為新稿，CURATED 0。
+- manifest 同步：根目錄 `onboarding-manifest-add-20261104-ax1/ax2-20261104.json` 13＋11 處；批次目錄 `batch-progress/add-20261104-ax1/ax2/onboarding-manifest.json` 13＋11 處、`desc-override.json` 2＋2 處（ad.mjs 只掃根目錄，批次目錄這兩份由主線另行同步）。
+- 另：s11 提到的 repo 根目錄 `x.json`，本工作階段的 checkout、`origin/main` 與全部歷史都沒有這個檔，無需處理。
+
+### 合併 origin/main 後重算（s12 收尾）
+
+- 合併 ax7、ax8 後重算 seed 頂點卡不在 worklist 的卡：除台客、Beyond、ax5／ax6 31 張外，新增的是 ax7 升格 8 張（Les Rallizes Dénudés、高柳昌行、灰野敬二、Phill Niblock、Musica Transonic、Wold、Impetuous Ritual、Aaron Dilloway；ax7 已照新規寫 KV，`kv-before-ax7u.json` 可證）與 ax8 新上架 10 張，照派工詞跳過。
+- ax8 依店主指示把 Vomir《Claustration》由異端降為一般卡。本線 ad-24 已把它的簡介寫成新稿；裁定**沿用不回滾**（內容經審稿、事實正確；一般卡沒有要求回到舊鉤子稿；可逆，舊值在 `kv-before-ad-24.json`）。全線總結的「異端 109」含這張。
