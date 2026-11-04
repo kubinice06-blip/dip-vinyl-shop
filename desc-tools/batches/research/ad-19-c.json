@@ -351,17 +351,42 @@
   "key": "モア|モア",
   "facts": [
    {
-    "text": "MusicBrainz 以「モア」為名的 1983 年發行查無結果；本卡在 MusicBrainz 沒有收錄。",
-    "src": "https://musicbrainz.org/ws/2/release?query=release:%E3%83%A2%E3%82%A2%20AND%20date:1983&fmt=json",
+    "text": "《モア》是 1983 年日本 Saturn Records 發行的 LP（ST-1001-24L），Discogs 備註為「Private Press = Jishuban」（自主製作盤）。（主線補查，Discogs API）",
+    "src": "https://api.discogs.com/releases/20594359",
     "block": "status"
+   },
+   {
+    "text": "Saturn Records 在 Discogs 上只登錄這一張唱片；這張唱片沒有再版紀錄（Discogs 只有這一個版本）。（主線補查，Discogs API）",
+    "src": "https://api.discogs.com/labels/2440771/releases",
+    "block": "status"
+   },
+   {
+    "text": "Discogs 收藏統計：想要數高於擁有數（寫作只能寫質性）。（主線補查，Discogs API）",
+    "src": "https://api.discogs.com/releases/20594359",
+    "block": "status"
+   },
+   {
+    "text": "成員與分工：石井英樹（電吉他、編曲、作詞作曲）、杉島篤彦（貝斯、和聲、作詞作曲）、河端喜久一（電吉他、和聲）、松尾恵子（主唱、和聲、編曲）、安藤初恵（鍵盤）；Masaru Sato 擔任音樂監督，並寫內頁文字、拍照片。（主線補查，Discogs API）",
+    "src": "https://api.discogs.com/releases/20594359",
+    "block": "making"
+   },
+   {
+    "text": "十三首：A 面〈序曲〉〈霧の君の住む世界〉〈ミスティーロード〉〈まつりの歌 Part 1〉〈我子に贈る母の子守歌〉〈列車〉，B 面〈ポンツクリン〉〈でも今〉〈風にまかせて〉〈まつりの歌 Part 2〉〈雪のぼうやとふきのとう〉〈オーベンセレモス〉〈終曲〉；以〈序曲〉開頭、〈終曲〉收尾，〈まつりの歌〉分兩部分放在兩面。（主線補查，Discogs API）",
+    "src": "https://api.discogs.com/releases/20594359",
+    "block": "sound"
+   },
+   {
+    "text": "編制是女聲主唱、兩把電吉他、貝斯、鍵盤，多人和聲；Discogs 風格標籤為 Psychedelic Rock、Folk Rock（只能寫成路數偏迷幻民謠搖滾）。（主線補查，Discogs API）",
+    "src": "https://api.discogs.com/releases/20594359",
+    "block": "sound"
    }
   ],
   "coverage": {
-   "status": "none",
-   "making": "none",
-   "sound": "none"
+   "status": "thin",
+   "making": "thin",
+   "sound": "thin"
   },
-  "notes": "以日文／英文關鍵字搜尋一次、MusicBrainz 兩次均無任何結果；45worlds 頁面（mail.45worlds.com）無法連線（不在允許網域）。舊簡介『作曲家佐藤勝寫下一則小故事』『三天錄完、一週混音』『製作人口中的歌心』『業餘樂手』全部無法驗證，其內容像是內頁文字（liner notes）的轉述，可能來自 Discogs notes，但我拿不到。佐藤勝（1928–1999）是電影配樂家（《七武士》等黑澤明電影配樂；此為常識，未附出處），是否同一人待查，寫作層請不要寫『作曲家佐藤勝』。建議：這張若無法補到來源，寫作層只能寫『1983 年日本私製盤、成員為業餘者』這類能在卡單與舊簡介一致處的事實，或轉為人工補查（Discogs 備註）。",
+  "notes": "以日文／英文關鍵字搜尋一次、MusicBrainz 兩次均無任何結果；45worlds 頁面（mail.45worlds.com）無法連線（不在允許網域）。舊簡介『作曲家佐藤勝寫下一則小故事』『三天錄完、一週混音』『製作人口中的歌心』『業餘樂手』全部無法驗證，其內容像是內頁文字（liner notes）的轉述，可能來自 Discogs notes，但我拿不到。佐藤勝（1928–1999）是電影配樂家（《七武士》等黑澤明電影配樂；此為常識，未附出處），是否同一人待查，寫作層請不要寫『作曲家佐藤勝』。建議：這張若無法補到來源，寫作層只能寫『1983 年日本私製盤、成員為業餘者』這類能在卡單與舊簡介一致處的事實，或轉為人工補查（Discogs 備註）。 主線補查：內頁文字作者 Discogs 記為 Masaru Sato（羅馬字），是否即電影配樂家佐藤勝無證據，不要寫成「作曲家佐藤勝」。舊簡介「三天錄完、一週混音」「歌心」「業餘樂手」皆無來源，不寫。",
   "artist": "モア",
   "album": "モア",
   "tier": "pearl"
@@ -370,17 +395,47 @@
   "key": "真芽正恵|真芽正恵と小さな詩",
   "facts": [
    {
-    "text": "MusicBrainz 以真芽正恵為名查無對應的發行；搜尋結果只出現不相干的真木理恵、真野恵里菜。",
-    "src": "https://musicbrainz.org/ws/2/release?query=artist:%E7%9C%9F%E8%8A%BD%E6%AD%A3%E6%81%B5&fmt=json",
+    "text": "《真芽正恵と小さな詩》是 1971 年 12 月 Harvest Records（日本，YC-5003）發行的 LP，雙折封套，立體聲，十二首。（主線補查，Discogs API）",
+    "src": "https://api.discogs.com/releases/12624822",
     "block": "status"
+   },
+   {
+    "text": "這個 Harvest Records 是 1969 年初成立的日本流行廠牌，屬ミノルフォン（Minoruphone）旗下，和 EMI 的 Harvest 無關。（主線補查，Discogs API）",
+    "src": "https://api.discogs.com/labels/92014",
+    "block": "status"
+   },
+   {
+    "text": "她在同廠還有四張 7 吋單曲：〈サニー坊や〉（1969）、〈赤いバラ〉（1970）、〈国境の白いばら〉（1971）、〈コキリコ〉（1972）；這張 LP 是她唯一的專輯，沒有再版紀錄。（主線補查，Discogs API）",
+    "src": "https://api.discogs.com/artists/6742643/releases",
+    "block": "status"
+   },
+   {
+    "text": "2015 年小西康陽編選、重混的ミノルフォン廠牌合輯《夜のミノルフォン・アワー》（Japan Record TKCA-74202）收了她的〈コキリコ〉。（主線補查，Discogs API）",
+    "src": "https://api.discogs.com/releases/7628145",
+    "block": "after"
+   },
+   {
+    "text": "Discogs 收藏統計：想要數明顯高於擁有數（寫作只能寫質性）。（主線補查，Discogs API）",
+    "src": "https://api.discogs.com/releases/12624822",
+    "block": "status"
+   },
+   {
+    "text": "十二首裡七首由国分正恵作曲（多數兼作詞）；〈女ひとり〉是いずみたく作曲、永六輔作詞，〈コキリコ〉〈竹田の子守唄〉為傳統民謠；編曲多由 Nozomi Aoki 擔任，另兩首由若月明人編曲。（主線補查，Discogs API）",
+    "src": "https://api.discogs.com/releases/12624822",
+    "block": "making"
+   },
+   {
+    "text": "曲長都在 2 分 23 秒到 3 分 37 秒之間，曲目包括〈サニー坊や〉〈ひとりごとの愛〉〈赤いバラ〉〈昨日私は考えました〉〈遠いふるさと〉〈国境の白いばら〉〈さよならしても〉〈ママの子守唄〉〈ふるさとは宗谷の果てに〉。（主線補查，Discogs API）",
+    "src": "https://api.discogs.com/releases/12624822",
+    "block": "sound"
    }
   ],
   "coverage": {
-   "status": "none",
-   "making": "none",
-   "sound": "none"
+   "status": "thin",
+   "making": "thin",
+   "sound": "thin"
   },
-  "notes": "一次日文搜尋＋MusicBrainz 均無任何結果。舊簡介所有事實（1971 年、雙折封套、12 首、1969 年起同廠牌四張 7 吋、〈コキリコ〉〈竹田の子守唄〉為傳統曲）皆無法驗證。〈コキリコ〉（富山縣五箇山民謠〈こきりこ節〉）與〈竹田の子守唄〉（京都伏見竹田地區的子守唄，1970 年前後由赤い鳥翻唱而廣為人知）是傳統曲，屬一般常識，未附出處。年份：1971 年來自卡單。建議寫作層只寫卡單與舊簡介一致處，或標記為資料不足。",
+  "notes": "一次日文搜尋＋MusicBrainz 均無任何結果。舊簡介所有事實（1971 年、雙折封套、12 首、1969 年起同廠牌四張 7 吋、〈コキリコ〉〈竹田の子守唄〉為傳統曲）皆無法驗證。〈コキリコ〉（富山縣五箇山民謠〈こきりこ節〉）與〈竹田の子守唄〉（京都伏見竹田地區的子守唄，1970 年前後由赤い鳥翻唱而廣為人知）是傳統曲，屬一般常識，未附出處。年份：1971 年來自卡單。建議寫作層只寫卡單與舊簡介一致處，或標記為資料不足。 主線補查：国分正恵與真芽正恵是否同一人（本名）無證據，寫成「國分正恵作曲」即可，不要寫她自己寫。沒有任何樂評或音色描述；sound 只能寫曲目構成與曲長。",
   "artist": "真芽正恵",
   "album": "真芽正恵と小さな詩",
   "tier": "pearl"
