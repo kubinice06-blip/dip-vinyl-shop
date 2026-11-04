@@ -15,3 +15,8 @@
   - **power electronics／harsh noise 卡帶七張不收**：Taint、Emil Beaulieau、Sutcliffe Jügend、Genocide Organ、The Grey Wolves、Consumer Electronics、Pain Jerk《Exhibition》——音響上應屬整張高強度，但 ax1 研究層查遍只有 Discogs 標籤與藝人層級的維基句子，沒有任何針對這一張的聽感描述；放寬的是「結論」，不是「來源」。Richard Ramirez《Rape!》另因 Werewolf Jerusalem（同人側計畫）已在異端不升。Navicon Torture Technologies（暗黑氛圍混合）、IRM、Gerogerigegege、Aube 維持 none。
   - Mitochondrion、Antediluvian、Ævangelist：評論描述的是不協和／洞穴式死亡金屬的 riff 與段落轉換（Ævangelist 還有氛圍、原音吉他段），屬「一般死金」那一側，不收。Ehnahre 有記譜作曲與鋼琴小號，不收。
 - 52104 新研究 20 組 43 張（擇一組每張都要一筆輸出，主線依研究擇一）：Les Rallizes Dénudés（店主點名，四張擇一）、灰野敬二（四張）、High Rise（三張）、山下洋輔トリオ（五張）、高柳昌行（兩張）、光束夜（兩張；光束夜另有流亡卡，跨級可以）、Musica Transonic、Corrupted、高木元輝、富樫雅彦《Speed and Space》、Schlippenbach Trio《Pakistani Pomade》、Mats Gustafsson（兩張）、Organum（三張；另有流亡卡）、Phill Niblock（五張）、Nadja、Mika Vainio（三張）、Han Bennink《Solo》（另有流亡卡）、Coil《Constant Shallowness Leads to Evil》、Noah Howard《At Judson Hall》、Le Forte Four。
+
+## 研究 R2（歐美組，19 張；WebSearch 10）
+- 52111 heresy 1：Phill Niblock《Touch Food》（擇一組代表）。主線收：作曲者 liner notes 要求「極大聲，鄰居沒抱怨就不夠大聲」（極端音量是明文指示），CD2 是 70 分鐘不間斷的鋼琴長音單曲，全張約 2 小時 24 分鐘無節拍無旋律的微分音拍頻長音；評論描述「翻攪的和聲海洋」「從未聽過鋼琴如此強大」，The Wire 2003 年度專輯。證據 touch33.net（廠牌頁）＋touchradio.org.uk（廠牌彙整的具名評論）＋維基。研究層提醒「催眠式 drone 不收」——Niblock 的長音是高音量、高密度的拍頻，不是低音量催眠型，邊緣收。accessibility 4→5。Niblock 其他四張擇一讓位。
+- 52112 none 18 照判：Pakistani Pomade（評論講音色與優雅）、Gustafsson 兩張（無具名樂評）、Organum 三張（無聽感來源）、Nadja（只有部落格，且稱偏氛圍）、Vainio 三張（Kilo 有鼓機節拍；Onko、Fe₃O₄ 點描低音量）、Bennink《Solo》（十四首短篇）、Coil（Brainwashed「乏味多於刺耳」）、Noah Howard《At Judson Hall》（靈性溫柔）、Le Forte Four（只有 Discogs）。
+- 52113 研究層推翻舊簡介（未升格的卡不改稿，記錄備查）：Organum《Submission》Discogs 年份 1987；Nadja 的 Codeine 對照、Le Forte Four 的甘美朗／Buchla 說法查無來源。
