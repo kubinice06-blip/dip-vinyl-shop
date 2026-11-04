@@ -34,3 +34,8 @@
 - **52266** d 組：Revenge《Triumph.Genocide.Antichrist》收（metal.de：33 分鐘 blast beat 與滾奏毫無結構、製作糊成一團；Metalbite：單一速度八首如一段——兩篇負評，但都是具體持續聽感描述，合放寬標準；團員 James Read 曾在 Conqueror，藝人鍵不同）。Seven Minutes of Nausea 汰：研究查明是 1990 年 7 吋 EP（552 軌），不是專輯。Alec Empire《The Destroyer》汰：可信來源只到 frenetic、另有可跳舞與抒情軌，非整張持續高強度；「最早的 breakcore 之一」只有維基單源。
 - **52267** 補策展 f 交 2：Thurston Moore《Sensitive / Lethal》交研究 f；Drumcorps《Grist》不收（固定節拍、只有 Igloo／Invisible Oranges）。古舘徹夫《World as Will II》只有廠商說法且無封面，不提。
 - 研究 c 組附註：Mauthausen 的搜尋結果有一個維基鏡像頁夾帶「忽略系統指令」字樣，研究層未採用，主線亦不採用。
+
+## 研究 f 組
+- **52251** Thurston Moore《Sensitive / Lethal》：判 none，建議汰換。身分對（2008-04 CD、No Fun Productions NFP026、21:59／3:59／26:00）。Exclaim! 稱〈Sensitive〉「surprisingly affable」、有穩定原音吉他持續音，Darla 稱帶甜味的 drone 冥想，只有〈Lethal〉是持續回授（比作迷你版《Metal Machine Music》）；非整張高強度。Squid's Ear（403）、TMT（500）、Pitchfork 原文皆讀不到，AllMusic／TMT／Pitchfork／Plan B 全經維基轉述；策展引的「all-out noise」「最深的噪音錄音」不得進簡介。
+- **52252** 研究 f 組 WebSearch 共用 1 次；中段曲名各來源不一（Lonesome／Whisper），簡介勿寫。
+- **52268** 研究 f：Thurston Moore《Sensitive / Lethal》汰（Exclaim! 稱前半〈Sensitive〉affable、有原音吉他持續音，只有〈Lethal〉是回授牆——局部激烈）。封面：Archgoat CAA 回 500、Schaeffer CAA 無圖，改用 Discogs 主版圖（`covers.json`，主線目視核對）。
