@@ -1,5 +1,13 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-04｜dip-vinyl-shop｜頂點卡簡介重寫 s5：ad-09、ad-10 上線 60 張（殿堂）
+
+- **內容**：ad-09（世界音樂、美國民謠與早期爵士合輯、原聲帶、台港日華語與日本搖滾）、ad-10（華語搖滾、韓國名盤 6 張、Suicide／Death／Strokes、爵士合輯、原聲帶、salsa、自由爵士、はっぴいえんど、崔健）各 30 張，照 `apex-desc-base.md` 重寫。研究 3 Sonnet×2 批＋ad-09 主線加派 1 支補查 10 張薄塊（WebSearch 合計 65 次）、寫作 2 Opus×2 批；派工時補了「前兩句講夠格理由」「出處不寫進簡介」兩條新規。
+- **主線審稿**：ad-09 改 9 處（8 張）、ad-10 改 19 處（10 張）（`review-ad-09/10.json`）。抓到的事實錯：Blackboard Jungle Dub 風琴手人數與小號歸屬、《氷の世界》pedal steel 歸屬、坂本《戦場のメリークリスマス》寫成 Emulator II（1984 年機型）、《Oklahoma!》「確立原卡司專輯形式」講過頭、Byrds「最好的出道專輯」無出處；研究稿更正周杰倫與陶喆的金曲獎名。韓國卡改回卡單諺文藝人名、首次出現補羅馬拼音；諺文貼中文不加空格（比照假名）。
+- **上線**：KV ad-09 39 鍵、ad-10 43 鍵（desc2 60＋CJK 卡 desc4 22）；寫前舊值 `kv-before-ad-09/10.json`。回讀 39/39、43/43 逐字一致；`front-check` 前台 30/30、30/30，CURATED 0。manifest 同步 56 處（ad-09 30、ad-10 26，共 17 份）。
+- **驗證**：`kv-token-check` exit 0；`qa-batch research|out ad-09|ad-10` 只剩誤報（名人堂、諺文專名、中文片名）；fix-spacing 0；字數 225–280。
+- 主要檔案：`batch-progress/apex-desc-20261104/{PLAN.md,rulings.md,review-ad-09.json,review-ad-10.json,handoff-ad-09.json,handoff-ad-10.json,kv-before-ad-09.json,kv-before-ad-10.json}`、`desc-tools/batches/{cards,research,output}/ad-{09,10}-*`、`research/sup-ad-09.json`、17 份 onboarding manifest。
+
 ### 2026-11-04｜dip-vinyl-shop｜頂點卡簡介重寫 s4：ad-07、ad-08 上線 60 張（殿堂）
 
 - **內容**：ad-07（The Zombies～Iron Maiden，60–80 年代英美搖滾／前衛／金屬）、ad-08（Motörhead～Manu Dibango，90 年代另類／金屬／獨立、shoegaze、Detroit techno／acid house、P-Funk、芝加哥藍調、非洲 funk）各 30 張，照 `apex-desc-base.md` 重寫。研究 3 Sonnet×2 批（WebSearch 合計 16 次）、寫作 2 Opus×2 批；派工時補了「前兩句講夠格理由」「出處不寫進簡介」兩條新規。

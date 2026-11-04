@@ -1,0 +1,32 @@
+{
+ "batch": "ad-10",
+ "cards": 30,
+ "written": {
+  "kvKeys": 43,
+  "kvBefore": "kv-before-ad-10.json",
+  "manifest": 26
+ },
+ "review": {
+  "by": "cloud-main",
+  "cards": 30,
+  "changed": [
+   "신중현과 엽전들|신중현과 엽전들 1집",
+   "산울림|산울림 1집 (아니 벌써)",
+   "들국화|들국화 1집 (행진)",
+   "유재하|사랑하기 때문에",
+   "어떤날|어떤날 i",
+   "서태지와 아이들|서태지와 아이들",
+   "rodgers & hammerstein|oklahoma!",
+   "dusty springfield|dusty in memphis",
+   "the byrds|mr. tambourine man",
+   "崔健|新長征路上的搖滾"
+  ]
+ },
+ "qa": {
+  "research": "pass（諺文專名、研究稿 1 個簡體字，不進簡介）",
+  "out": "pass（13 標記皆誤報：諺文專名、主線補的羅馬拼音、名人堂、中文片名）",
+  "kvReadback": "43/43",
+  "front": "30/30"
+ },
+ "pendingLocal": {}
+}

@@ -315,3 +315,71 @@
 - manifest 同步 3 處（c29-blues、c30-blues、c31-world）。
 - 兩批審稿改動總計：ad-07 6 處、ad-08 7 處。
 - **工具注意**：`tools/check-curated.mjs` 會把前台現值**寫回 `worklist.json`**（是 s1 第 0 步用的工具），對已重寫過的批會把 worklist 的舊簡介換成新稿。s4 誤跑一次，已用 `git checkout` 還原 worklist；後續工作階段不要拿它當檢查工具。
+## ad-09（殿堂 30 張，s5）
+
+- 研究 3 Sonnet（WebSearch a 5／b 8／c 12 次）＋主線派 1 支 Sonnet 補查 10 張薄塊與周杰倫獎名（`research/sup-ad-09.json`，WebSearch 11 次；已併回 a／b／c 並標「主線補查 sup-ad-09」）。補完後 Al Atlal、Dust Bowl Ballads、楊弦、Bessie Smith、港台四張的聲音塊仍只有編制、詞曲者、改編來源與曲目結構，寫作照「只寫查得到的」薄寫。
+- **研究稿主線更正**（`ad-09-c.json`）：周杰倫《范特西》第 13 屆金曲獎得的是「最佳流行音樂演唱專輯獎」（c 組誤記「最佳國語專輯」，舊稿原本是對的）；陶喆是「最佳專輯製作人獎」（c 組誤記「最佳唱片製作人」）。齊豫的榜單由「1994 百張榜」改為 Taipei Times 2009 報導的 200 最佳專輯 1975–92 榜第 3（sup 補查）。
+- 研究層推翻舊稿的主要錯誤（新稿未沿用）：Dance Mania「最暢銷」、錄音年（1957 底）；Call of the Valley 白金唱片；Al Atlal「近四十九分鐘」「還我自由」；Blackboard Jungle Dub「第一張 dub」寫成定論、King Tubby 混音、Pablo「口風琴」；Liege & Lief 2002 票選與 2006 獎混寫；楊弦「弦樂鋪底」與殘留的作者指示句；Star Wars「約五十個主題」、Kingsway Hall（實為 Anvil）；West Side Story Saul Chaplin 不是製片；Chuck Berry「Johnnie Johnson 鋼琴貫穿全輯」；氷の世界 細野參與曲數；Ray Charles 葛萊美屬單曲、錄音兩地；許冠傑「被鄧麗君、梅艷芳、Beyond、周杰倫翻唱」；梅艷芳「1995 廣州禁唱」；Beyond「東京錄音」「富士山下小屋」；陶喆「開了老歌新唱的路」。
+- 機器 QA：`qa-batch research ad-09` 1 標記（許冠傑研究稿一條 src 非完整網址，不進簡介）；`out` 3 標記：葛萊美／搖滾名人堂誤報、《俘虜》中文片名誤報、「中國大陸」用語（已修，見下）；fix-spacing 0；字數 225–280。
+
+### 主線審稿（2026-11-04，30 張逐張讀、逐句對研究稿）
+
+改 9 處（8 張，`review-ad-09.json`）：
+
+- `the blue hearts|the blue hearts`：「在日本搖滾名盤榜單上常排進前三名」→「常被列為日本搖滾最好的專輯之一」。「榜單上常排進前三名」是在描述榜單；改成直述地位（研究稿：Rolling Stone Japan 2007 第 3、bounce 2009 第 2，兩份榜）。同 ad-05 Marquee Moon 先例
+- `坂本龍一|戦場のメリークリスマス`：「多數聲部用 Emulator II 演奏」→「多數聲部用 E-mu Emulator 取樣器演奏」。Emulator II 是 1984 年才推出的機型，1983 年錄音不可能用；研究稿只引坂本 2010 年推文的轉述，型號不寫死
+- `leonard bernstein & stephen sondheim|west side story (original sound track recording)`：「配樂把爵士、拉丁節奏、交響式鋪陳與音樂劇慣例混在一起，配器比百老匯卡司錄音更厚實。」→「配樂把爵士、拉丁節奏、交響式鋪陳與音樂劇慣例混在一起。」。「配器比百老匯卡司錄音更厚實」研究稿沒有（只有樂團約三倍編制，已在前句），是推論
+- `the upsetters|blackboard jungle dub`：「兩位風琴手、Augustus Pablo 的 melodica 與小號」→「三位風琴手、Augustus Pablo 的 melodica 與 Bobby Ellis 的小號」。事實錯誤：研究稿樂手表風琴是 Glen Adams、Winston Wright、Bernard Harvey 三人；原句讀成 Pablo 也吹小號，小號是 Bobby Ellis
+- `楊弦|中國現代民歌集`：「《中國現代民歌集》常被視為台灣現代民歌發展的起點，」→「《中國現代民歌集》是楊弦 1975 年的專輯，被視為台灣現代民歌發展的起點，」。審稿第 1 問：第一句沒說是誰、哪年的唱片；研究稿只有中文維基一處說法，用「被視為」不用「常」
+- `楊弦|中國現代民歌集`：「楊弦當時是台大海洋研究所的研究生，1974 年夏天」→「他當時是台大研究生，1974 年夏天」。補第一句後壓字；楊弦已在第一句出現
+- `井上陽水|氷の世界`：「林立夫的鼓與 pedal steel」→「林立夫的鼓、大江俊之的 pedal steel」。事實錯誤：研究稿 pedal steel 是大江俊之，原句讀成林立夫兼彈
+- `chuck berry|the great twenty-eight`：「二十八首自作曲」→「二十八首歌」。研究稿沒有「全為自作曲」的依據（收 21 首單曲、6 首 B 面、1 首專輯曲）
+- `齊豫|橄欖樹`：「被讀成中國大陸」→「被讀成中國」。卡池用語：稱中國一律寫「中國」（qa-batch 標記）
+
+其餘 22 張逐張審過，未改字。另核對：Goodman「大樂團第一次在卡內基演出」、Hank Williams「生涯銷量最高」、Star Wars「最暢銷的交響樂專輯」（研究稿皆維基，寫作用「被視為」或直述可證事實）、梅艷芳「創當時香港銷量紀錄」（HK01）、Beyond〈海闊天空〉YouTube 破億（2022）、Armstrong 國家錄音登記表 2002 是 Hot Five/Seven 錄音（成稿已寫明）皆有所本，照留。研究稿 `ad-09-c.json` 坂本條已加註 Emulator II 型號不採。
+
+### 上線
+
+- `kv-token-check` 通過；舊值存 `kv-before-ad-09.json`（60 鍵，30 個非 null）。
+- bulk put 39 鍵（desc2 30＋CJK 卡 desc4 9），wrangler 印 `Success!`；`verify-wave-kv` 回讀 39/39 逐字一致。
+- `front-check ad-09`：30/30 前台為新稿，CURATED 0。
+- manifest 同步 30 處（c31-world 8、c32-folk 5、c33-comps 4、c34-canon 2、c34-japan 2、c37-jazz 3、c38-soul 1、c41-chinese 5）。
+
+## ad-10（殿堂 30 張，s5）
+
+- 研究 3 Sonnet（WebSearch a 14／b 12／c 3 次；本工作階段研究層合計 65 次，含 sup-ad-09）、寫作 2 Opus。coverage 唯一 none 是어떤날 sound（維基、京鄉與搜尋都沒有編制描述），寫作只寫「平靜、淡然」、分寫曲數與曲長。thin：蘇芮、張惠妹、王菲、竇唯、산울림、신중현과 엽전들 聲音；Morricone 地位；Ellington、Billie Holiday、Herrmann、U-Roy、Oklahoma!、Wanted!、Spiritual Unity 聲音，照研究稿薄寫。未另派補查（已有可寫的編制與結構，且本工作階段 WebSearch 已用 65 次）。
+- 研究層推翻舊稿的主要錯誤（新稿未沿用）：蘇芮〈酒矸倘賣無〉不在台灣原版；張惠妹「張雨生主要製作人」（只製作兩首）；唐朝銷量確數；竇唯「人聲推到混音深處」；X JAPAN「BAKI 合唱」；신중현「看一次看兩次影射取消連任」；산울림「二十天四十萬張」（兩句誤併）；들국화「不靠電視打歌」「嘶吼唱腔」；유재하「獨力彈完全部樂器」「趙容弼樂團鍵盤手」「漢陽大學」；서태지「幾乎一人完成」；Grandmaster Flash「1980 年地鐵罷工後寫成」、國家錄音登記表收的是單曲；Morricone「法國一百萬」「第二場戲前不放音樂」；Herrmann「片尾只留音樂」；Ellington「補上呼吸感」；Billie Holiday〈Strange Fruit〉屬 Commodore；U-Roy TBL 161／Byron Smith；Oklahoma!「從未絕版」；Dusty「沒信心開嗓」；Wanted!「四首新曲」；Dolphy「最後一張錄音室專輯」；Byrds「整張只有一人彈」（限單曲）；Siembra「街頭噪音與警笛」；Ayler「滿場樂手停手」；崔健 1986 首唱場合。
+- **諺文專名裁定**：writer-base「韓文諺文名維持諺文，首次出現加圓括號補羅馬拼音」；寫作層把신중현과 엽전들拆成「申重鉉（신중현）與葉錢們（엽전들）」並把團員寫成漢字，改回卡單藝人欄的諺文寫法、團員用諺文。羅馬拼音只補本卡藝人名（一張一處），團員與客座不補（字數，且規則用「可」）。諺文與中文之間**不加空格**：fix-spacing 只管拉丁字母，比照假名貼中文不空格的現行慣例；卡池舊稿 1 處先例也是不空格。
+- 機器 QA：`qa-batch research ad-10` 3 標記（諺文專名誤報 2、研究稿 c 一個簡體「长」，不進簡介）；`out` 13 標記皆誤報（諺文專名、主線補的羅馬拼音、葛萊美／拉丁葛萊美名人堂、《奧克拉荷馬！》中文劇名、Hitchcock／McGuinn 專名、「2000 年代」）；fix-spacing 0；字數 225–280。
+
+### 主線審稿（2026-11-04，30 張逐張讀、逐句對研究稿）
+
+改 18 處（10 張，`review-ad-10.json`；同一張多次壓字分開記）：
+
+- `신중현과 엽전들|신중현과 엽전들 1집`：「是被稱為「韓國搖滾教父」的申重鉉（신중현）與葉錢們（엽전들）1974 年的第一張專輯」→「是신중현과 엽전들（Shin Joong-hyun & Yeopjeondeul）1974 年的第一張專輯」。本卡藝人名照卡單藝人欄逐字寫（writer-base：寫「박효신」不改成朴孝信），首次出現補羅馬拼音；原句把團名拆成漢字＋諺文兩種寫法
+- `신중현과 엽전들|신중현과 엽전들 1집`：「樂團 1972 年在首爾成立，申重鉉彈吉他並主唱，李南二彈貝斯、金浩植打鼓，由地球唱片發行。」→「被尊稱為「韓國搖滾教父」的신중현 1972 年在首爾組團，自己彈吉他並主唱，이남이彈貝斯、김호식打鼓，唱片由地球唱片發行。」。韓國音樂人照 writer-base 寫諺文，不改漢字；「韓國搖滾教父」移到第二句
+- `신중현과 엽전들|신중현과 엽전들 1집`：「同年底申重鉉因大麻案」→「同年底신중현因大麻案」。同上，人名寫法統一
+- `산울림|산울림 1집 (아니 벌써)`：「是김창완三兄弟組成的산울림的出道專輯」→「是김창완（Kim Chang-wan）三兄弟組成的산울림（Sanullim）的出道專輯」。writer-base：諺文名首次出現加圓括號補羅馬拼音
+- `들국화|들국화 1집 (행진)`：「是들국화的首張專輯」→「是들국화（Deulgukhwa）的首張專輯」。諺文名首次出現補羅馬拼音
+- `유재하|사랑하기 때문에`：「是유재하唯一的專輯」→「是유재하（Yoo Jae-ha）唯一的專輯」。諺文名首次出現補羅馬拼音
+- `어떤날|어떤날 i`：「雙人民謠團體어떤날的第一張專輯」→「雙人民謠團體어떤날（Eotteonnal）的第一張專輯」。諺文名首次出現補羅馬拼音（國語羅馬字 Eotteonnal）
+- `서태지와 아이들|서태지와 아이들`：「是서태지와 아이들的首張專輯」→「是서태지와 아이들（Seo Taiji and Boys）的首張專輯」。諺文名首次出現補羅馬拼音
+- `rodgers & hammerstein|oklahoma!`：「被視為確立了原卡司專輯這種形式」→「被視為讓原卡司專輯真正流行起來的唱片」。研究稿（AllMusic William Ruhlmann）說的是「確立了原卡司專輯的受歡迎程度」，不是首創這種形式；寫作層講過頭
+- `dusty springfield|dusty in memphis`：「後來反覆進入史上最佳專輯榜單」→「後來常被列為史上最好的專輯之一」。「反覆進入榜單」是在描述榜單；改直述地位（研究稿：Rolling Stone 500 大 2003／2012 第 89、2020 第 83）。同 ad-05 Marquee Moon 先例
+- `the byrds|mr. tambourine man`：「被視為搖滾史上最好的出道專輯之一」→「常被列為搖滾史上最好的專輯之一」。研究稿沒有「最好的出道專輯」的出處；有的是 Rolling Stone 500 大三版與 Larkin《All Time Top 1000 Albums》，多份榜單用「常被列為」
+- `崔健|新長征路上的搖滾`：「常被稱為中國大陸第一張原創搖滾專輯，也是當時中國銷量最大的專輯，也被視為把華語音樂史分成崔健之前與之後的唱片」→「被視為中國第一張原創搖滾專輯，也是當時中國銷量最大的專輯，並被看作把華語音樂史分成崔健之前與之後的唱片」。卡池用語：稱中國一律寫「中國」；「第一張」只有中文維基一說，用「被視為」不用「常」；兩個「也」連用改順
+- `신중현과 엽전들|신중현과 엽전들 1집`：「，唱片由地球唱片發行。」→「。」。補羅馬拼音後超字（283），刪廠牌
+- `산울림|산울림 1집 (아니 벌써)`：「，〈청자(아리랑)〉長 7 分 40 秒」→「（刪）」。補羅馬拼音後超字（281），刪曲長
+- `유재하|사랑하기 때문에`：「；1989 年起設有以他命名的音樂競演大會」→「（刪）」。補羅馬拼音後超字（281），刪後續
+- `서태지와 아이들|서태지와 아이들`：「，另有幾首抒情歌」→「（刪）」。補羅馬拼音後超字（287），壓字
+- `서태지와 아이들|서태지와 아이들`：「負責大部分作曲、編曲、編程與合成器」→「包辦大部分作曲、編曲與編程」。壓字（合成器屬編程範圍，研究稿：作曲、編曲、電腦編程與合成器）
+- `dusty springfield|dusty in memphis`：「當年只爬到 Billboard 200 第 99 名，後來」→「當年只到 Billboard 200 第 99 名，後來」。改後超字（281），壓字
+
+其餘 20 張逐張審過，未改字。另核對：Herrmann「美國電影學會 2005 年百年電影配樂榜第 12」照 ad-09 Star Wars 同例保留（AFI 屬機構榜單，比照國家錄音登記表）；Suicide「常被列為搖滾史上最重要的專輯之一」有 Rolling Stone 500、Pitchfork 70 年代榜、1001 Albums 多份；X JAPAN「常被列為日本搖滾最重要的專輯之一」有 Rolling Stone Japan、We Rock、Kerrang! 多份；Strokes「2000 年代最重要」有 NME 第 1、Rolling Stone 第 2、Guardian；崔健「把華語音樂史分成崔健之前與之後」單一來源（馬世芳）用「被看作」。
+
+### 上線
+
+- `kv-token-check` 通過；舊值存 `kv-before-ad-10.json`（60 鍵，32 個非 null）。
+- bulk put 43 鍵（desc2 30＋CJK 卡 desc4 13），wrangler 印 `Success!`；`verify-wave-kv` 回讀 43/43 逐字一致。
+- `front-check ad-10`：30/30 前台為新稿，CURATED 0。
+- manifest 同步 26 處（c41-chinese 3、c42-japan 1、c43-korea 6、c44-rock 3、c45-hiphop 1、c46-soundtrack-cross 5、c47-pop-country-latin 3、c50 3、c51 1）。
