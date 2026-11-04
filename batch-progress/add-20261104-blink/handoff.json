@@ -1,0 +1,15 @@
+{
+ "batch": "add-20261104-blink", "cards": 3,
+ "written": { "cardCatalog": 3, "kvKeys": 3, "seedRows": 3, "previewReady": 3, "previewUnavailable": 0 },
+ "review": { "by": "cloud-main", "cards": 3, "changed": ["desc2:blink-182|buddha", "desc2:blink-182|cheshire cat", "desc2:blink-182|dude ranch"] },
+ "qa": { "research": "pass", "hooks": "省略（3 張批，主線寫）", "out": "pass", "prepareGate": "0 error", "publishedGate": "0 error" },
+ "apex": 0,
+ "pendingLocal": {
+  "kv": "無",
+  "listeners": [],
+  "apexEvidence": [],
+  "genreTree": "見 PROJECT_MEMORY 該筆",
+  "albumOverrides": "無（試聽走靜態路徑）"
+ },
+ "artistIntro": { "state": "已有（data/artist-intros/ 有 blink-182），不補" }
+}
