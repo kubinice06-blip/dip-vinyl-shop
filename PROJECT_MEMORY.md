@@ -1,5 +1,16 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-04｜dip-vinyl-shop｜新頂點盤線 ax8：異端新上架 10 張（店主放寬標準；Vomir《Proanomie》換掉《Claustration》）
+
+- **店主 11-04**：異端「稍微放寬」——可信來源描述出具體、持續整張的高強度聽感，或噪音史開創地位即可，不再要求樂評下「極端」結論；附噪音入門文點名作品。ax7（另一工作階段）做卡池既有盤升格，ax8 只上卡池沒有的藝人。
+- **上線 10（全 heresy）**：Vomir《Proanomie》、Luigi Russolo《Die Kunst der Geräusche》、Pierre Schaeffer《5 études de bruits / Études aux objets》、Mainliner《Mellow Out》、Revenge《Triumph.Genocide.Antichrist》＋ax6 汰換稿重判撿回 Die Like a Dog Quartet、グループ・音楽、Sarcófago《I.N.R.I.》、Archgoat《Whore of Bethlehem》、Francisco López《Untitled #360》。Vomir《Claustration》改一般卡（seed＋card_catalog）。**異端 140 → 149**，同級每藝人一張 0 重複。
+- **命中率低**：提名 32、研究汰 22。開工掃 190 位，過半已在卡池；剩下的二線只有零售文案／社群評論或局部激烈。Amacher 策展漏查撞池（已是異端）被 build-cards 擋下。
+- **寫入**：card_catalog 11、KV 11 鍵回讀一致、試聽 ready 1／unavailable 9、seed 10 列＋改 1 列、Discogs 封面登錄 2（Archgoat CAA 500、Schaeffer 無圖）、曲風欄補 Vomir、genre-l3 補 2、子曲風樹與抽卡封面重建、情緒評分 `score-ax8`。
+- **藝人介紹**：ar-d-270 上線 8 位（skipped 0），ar-d-271 未用。審稿：專輯簡介改 4 張（刪聽眾意見、樂迷評論、禁語「里程碑」、Russolo 措辭），藝人介紹未改字。
+- **驗證**：prepare／published gate 0 error；對 origin claude/* 分支 seed 去重 0 撞；`kv-token-check` exit 0。
+- **留給本機**：`album_overrides.tier`（`batch-progress/add-20261104-ax8/album-overrides-tier.json`：設 10、清 1）；Schaeffer listeners 查無。卡池《Pierre Schaeffer｜Musique concrète》疑似 GRM 多人合輯掛 Schaeffer 一人，另排查。
+- 主要檔案：`batch-progress/add-20261104-ax8/*`、`batch-progress/apex-new-20261104/PLAN.md`、`batch-progress/mood-cells-20261022/curation-ax8{a..f}.json`、`desc-tools/batches/{cards,research,output}/add-20261104-ax8-*`、`onboarding-manifest-add-20261104-ax8-20261104.json`、`seed_cards.json`、`data/artist-intros/*`、`batch-progress/artist-intro/roster-ax8-ar-d-270.json`。
+
 ### 2026-11-04｜dip-vinyl-shop｜頂點卡簡介重寫 s11：ad-21、ad-22 上線 60 張（流亡）
 
 - **內容**：ad-21（歐洲自由即興與 electroacoustic：Evan Parker、Barry Guy、Noetinger、eRikm、Rowe、Kerbaj、Zíngaro、Léandre、Roger Turner；Wackie’s 系 reggae showcase；Main、Wishart、Ric Colbeck）、ad-22（FMP 與東歐爵士：Gräwe、Favre、Tavitian、Grencsó、Przybielski、Conrad Bauer、String Connection；Zamrock；菊地雅章、강태환、Tokyo Kid Brothers；早期電子：Maxfield、Lundsten、Eloy、Curran；私壓民謠搖滾）。研究 3 Sonnet、寫作 2 Opus ×2 批；新增 `prompt-research-extra-s11.md`／`prompt-writer-extra-s11.md`（一直在版的歐洲即興盤不寫難找；Discogs 改走 API）。

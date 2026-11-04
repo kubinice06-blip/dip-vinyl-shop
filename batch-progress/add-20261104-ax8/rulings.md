@@ -63,3 +63,8 @@
   - Revenge：「評價兩極：…也有樂迷視為最混亂的戰爭金屬唱片之一」→ 只留「有樂評只給它 1 分，並說唯一的那一分是給它的極端」——正面那方只是 Metal Archives 使用者評論的搜尋摘要；團方也拒絕 war metal 標籤。（251 字）
   - Schaeffer（1948-10-05 首播、Boulez 彈的鋼琴、Études aux objets 1959）、Mainliner（Scaruffi「seminal work」以「被視為」帶出、團員與錄音地）對過，未改字。
 - **52274** グループ・音楽：「里程碑」撞 build-manifest 禁語 →「關鍵錄音」（Merewether milestone 的意思不變；279 字）。Die Like a Dog、グループ・音楽 研究稿證據都在維基同網域，apexAssessment 第二網址補 MB release-group（身分輔證）。
+
+## 主線（上架）
+- **52275** Vomir 店主點名例外：《Proanomie》設異端、《Claustration》改一般卡——seed 第 9 欄移除、card_catalog `vomir|claustration` PATCH tier=null／apex=false（讀回確認，`publish-stage/ax8-vomir-demote/`）；KV 簡介不動（原文不含遊戲用語）。album_overrides 留本機（`album-overrides-tier.json`）。
+- **52276** 上架：card_catalog 10＋1、KV 11 鍵（desc2 10＋desc4 1）回讀 11/11 一致、試聽 ready 1（Vomir Apple us）／unavailable 9、seed 10 列；Vomir 曲風欄空 → `build-seed-genres` ALBUM_GENRE_FIX 補 electronic／rock；genre-l3 補 Vomir（noise/harsh）、グループ・音楽（noise/concrete）。prepare／published gate 0 error；對 origin 所有 claude/* 分支 seed 去重 0 撞。**異端 140 → 149**（+10－1），同級每藝人一張 0 重複。
+- **52277** 藝人介紹 ar-d-270 上線 8 位（Vomir、Schaeffer 已有介紹），審稿逐條對回補洞稿未改字；ar-d-271 未用。
