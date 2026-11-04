@@ -84,3 +84,6 @@
 - **52473** build-manifest 擋下禁語：ENT「歐洲必聽 grindcore 第三名」→「常被排進歐洲 grindcore 的經典名單」（同時去掉榜單名次）；升格稿 Discharge「硬蕊龐克必聽之作」→「常被列進硬蕊龐克的入門清單」、Locust「2016 年被列入極端音樂雜誌的名人堂」→「多年後仍被當作極端音樂的經典回頭重談」（媒體榜單不進正文）。升格兩鍵 KV 重寫、回讀 2/2。
 - **52474** 封面 6 張 CAA release-group front-250 縮圖目視：Siege、Crossed Out（行刑隊照片，符合研究稿）、Charles Bronson（Youth Attack! hard 1997 core）、Dropdead（落とす死）、Despise You、ENT 皆與盤名相符。prepare gate 0 error（7 warning：UPC 缺、Dropdead 同名提醒）。
 - **52475** 上架寫入（新卡 6）：對 origin 所有 claude/* 分支 seed 去重 0 撞；card_catalog 6/6（含 tier heresy、apex，讀回 6/6）；KV 6 鍵 Success、`verify-wave-kv` 6/6。試聽 ready 1（Siege：Apple us 975341363《Drop Dead (30th Anniversary Edition)》，原版六首 6/6 命中）／unavailable 5。
+
+## 主線（補策展 ax10c 交件後）
+- **52476** 補策展交 7（全 Album、MB 7、pearl 0）。汰 The Faith / Void split：Faith 面是結構清楚的 hardcore，只有 Void 面混亂——split 卡掛兩團名，等於「只有局部激烈」。其餘 6 張交研究 e 組：Insect Warfare《World Extermination》、Agoraphobic Nosebleed《Altered States of America》（ax6 曾因具名評語是別張汰，這次策展找到針對本張的 Exclaim!）、D.R.I.《Dirty Rotten LP》、Cryptic Slaughter《Convicted》、Nails《Unsilent Death》、Disorder《Under the Scalpel Blade》（CAA 無圖，封面走 Discogs release 1227189）。研究層特別注意「一般碾核不收」：Insect Warfare、Nails 是 grindcore／metallic hardcore，若描述只是一般 grind 的快、或有 breakdown／sludge 慢段，判 none。

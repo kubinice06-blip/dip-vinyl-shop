@@ -12,6 +12,12 @@
    "zh": "美國 grindcore／極速短曲",
    "count": 3,
    "why": ""
+  },
+  {
+   "id": "uk-noise-punk",
+   "zh": "英國 noise punk／chaos punk",
+   "count": 1,
+   "why": ""
   }
  ],
  "albums": [
@@ -220,7 +226,44 @@
    "releaseException": "",
    "queryAlias": "",
    "uncertain": "worker _listeners=60805，非流亡。年份：MB 2010-10-28、維基 2010-03，皆 2010。原發行 Six Feet Under／Streetcleaner Records，Southern Lord 重發；寫簡介廠牌要說清楚。Dead Rhetoric 評於 2013（評的是 2010 盤）。"
+  },
+  {
+   "artist": "Disorder",
+   "album": "Under the Scalpel Blade",
+   "year": 1984,
+   "label": "Disorder Records",
+   "country": "GB",
+   "faction": "uk-noise-punk",
+   "genres": [
+    "rock"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "MRR #15（1984）稱製作怪到不像清醒時錄的，毛絨吉他、空洞大聲鼓；廠牌說明述兩分鐘內的極速鼓與失真嘶吼。",
+   "listeners": null,
+   "why": "布里斯托 Disorder 1984 年自家廠牌 12 吋，15 首：Maximum Rocknroll #15（Jeff Bale，1984-07）稱製作原始到像不是清醒時錄的，毛躁吉他、空洞巨響的鼓、高頻轟隆的貝斯，正配上荒謬的 thrash 噪音；Svart 重發說明稱每首不到兩分鐘，極速鼓加失真吉他與尖叫，「純粹的狂怒」。",
+   "moodGuess": {
+    "x": -4,
+    "y": 4.5,
+    "z": -3,
+    "why": "極速、糊、短曲"
+   },
+   "evidence": [
+    "https://www.maximumrocknroll.com/review/mrr-15/under-the-scalple-blade-lp/",
+    "https://www.svartrecords.com/en/product/disorder-under-the-scalpel-blade-lp/12455",
+    "https://www.discogs.com/release/1227189-Disorder-Under-The-Scalpel-Blade",
+    "封面：Discogs release id 1227189（1984 UK Disorder Records 12 吋 LP，6 張圖）",
+    "https://musicbrainz.org/release-group/de205555-8cd6-34bb-8b88-07ffd77455c3",
+    "https://www.allmusic.com/album/under-the-scalpel-blade-one-day-son-mw0000054087"
+   ],
+   "mbRgMbid": "de205555-8cd6-34bb-8b88-07ffd77455c3",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "依據偏薄：可信來源只有 MRR #15 一篇（講製作粗糙，未講速度）；速度描述來自 Svart 廠牌重發文案。CAA 無圖，封面用 discogsReleaseId=1227189（Discogs master 378274）。worker _listeners=4658，非流亡。MB 另有 1993 合輯（df5a6615…）不要誤取。MRR 頁面標題拼作 Scalple。"
   }
  ],
- "notes": []
+ "notes": [
+  "本輪 WebSearch 9 次。未提：Anal Cunt 7 吋（無針對本盤的可信聽感描述，Exclaim 只提『經典』）、Deep Wound（Decibel 2015 原網址 404、web.archive.org 被 proxy 擋）、Neanderthal／Psycho／Deche-Charge／Rupture／Seven Minutes of Nausea／Lack of Interest／Neos 皆查不到可信聽感來源、Assück《Misery Index》只有 Punknews 使用者評＋zine 且稱有慢段、Magrudergrind／Coalesce 描述含 sludge 慢段或僅『重』。7 張皆非流亡（listeners 1313–81529）。"
+ ]
 }
