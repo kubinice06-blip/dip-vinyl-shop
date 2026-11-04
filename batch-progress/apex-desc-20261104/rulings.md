@@ -419,3 +419,34 @@
 - bulk put 29 鍵（desc2 25＋CJK 卡 desc4 4），wrangler 印 `Success!`；`verify-wave-kv` 回讀 29/29 逐字一致。
 - `front-check ad-13`：25/25 前台為新稿，CURATED 0。
 - manifest 同步 25 處（13 個 manifest 檔）。
+
+## ad-14（流亡 30 張，s7）
+
+- 研究 3 Sonnet（WebSearch a 15／b 14／c 13 次；本工作階段研究層合計 82 次）、寫作 2 Opus。coverage none：非常階段《Viva Angel》sound、Shiho Yabuki／Anno Luz／Ariesta Birawa／Giant Step making。裁定：Viva Angel 聲音借 `research/ad-13-b.json`《蔵六の奇病》的團體層級事實，寫成團體做法、不宣稱本盤編制；making none 的不寫錄音經過。未另派補查。
+- **主線裁定**（寫進寫作派工詞）：
+  - 浜瀬元彦《Reminiscence》日文維基 1985、商家 1986 兩說 → 簡介寫「1980 年代中期」；2018 Studio Mule 版是重新錄音，不寫成再版。
+  - Derek Bailey《Solo Guitar Volume 1》以 1971 Incus 原版為主體，卡名 Volume 1 來自 2017 Honest Jon's 版，放後續一句。
+  - Paul Rutherford 一直在版，不寫「難找」；地位用具名評價（Bailey 在 The Wire 1987、Penguin Guide 四星），少人聽的理由寫成長號獨奏自由即興本身。
+  - Company Caine 是商業發行、進過 Kent 榜，不是私壓；寫長年未再版、2015 才出 CD。
+- **卡池資料疑點（未動 seed，留給店主）**：Junei《Let's Ride》seed 年份 2014，原 45 轉單曲是 1987 年 Pharaohs Records（2014 應是 Numero 版）。簡介照 1987 寫。
+- 研究層推翻舊稿的主要錯誤（新稿未沿用）：한대수「文化公報部回收命令」「〈희망가〉禁歌」；Zodiac「每首兩三分鐘」「極具張力的自由爵士」；Yabuki 的 Morning 廠牌／新体道／延曆寺法會；小久保隆「五首」「鳥鳴」；Anno Luz 的 Tangerine Dream 比較與小提琴；Burchette「六張」（七張）；Viva Angel 節奏機／排尿／豬頭；Angkanang 單曲年份（1972）；Piano Choir 誰打頭陣；Brief Encounter「Jazzman 2010 復刻」；Errata Corrige「限量 500 張」；Finnerud「國家美術館收藏」；Bluiett「上低音站最前面」；Mahogany Brain 內頁作者與曲長；Company Caine 錄音月份。
+- 機器 QA：`qa-batch research ad-14` 通過；`out` 3 標記：「1970 年代」誤報 2、BAG「不具名名單」（已改，見下）；fix-spacing 寫作層補 1 處、主線後 0；字數 215–280。
+
+### 主線審稿（2026-11-04，30 張逐張讀、逐句對研究稿；加問「讀完知不知道它憑什麼是這一級」）
+
+改 5 處（5 張，`review-ad-14.json`）：
+
+- `junei|let's ride`：「，聲音被認為比芝加哥浩室早了幾年」→「（刪）」。再版廠（Numero）文案，不當評價寫（prompt-research-extra-s7）
+- `aka|do what you like`：「專輯裡約三到四成是 Ucok 唱的硬搖滾，其餘是常由鼓手唱的憂鬱流行歌」→「他們的專輯通常約三到四成是 Ucok 唱的硬搖滾，其餘是憂鬱的流行歌」。印尼文維基講的是樂團專輯通例，不專指本盤；「鼓手唱」研究稿未寫明身分
+- `angkanang kunchai with ubon-pattana band|isan lam plearn`：「，被認為是第一次把 molam 與 luk thung 融在一起的唱片，催生了 luk thung Isan 這個類型。」→「。」。「第一次融合、催生類型」只有再版廠（Oye／EM）文案，無具名來源，不寫
+- `jemeel moondoc & muntu|the evening of the blue men`：「有評論認為，若不是當年流通有限，它可能早被視為現代爵士經典」→「它被認為若不是當年流通有限，可能早已被視為現代爵士經典」。出處不寫進簡介（「有評論認為」屬引述句式）；來源 Clifford Allen（Paris Transatlantic 2010）
+- `black artists group|in paris, aries 1973`：「後來被列進自由爵士必聽唱片的名單」→「後來被列進兩份自由爵士必聽唱片名單」。機器 QA 標「不具名名單」；研究稿：Elliott Sharp（Village Voice）與 Thurston Moore 各一份，寫明是兩份
+
+其餘 25 張逐張審過，未改字。第五問：30 張前兩句都講出流通狀況（私壓、小廠、卡帶、促銷盤、郵購、只演一場、樂團早散、廠牌結束）與再發現（再版廠＋年份、被取樣、被收進合輯）；有具名評價的（Bailey、Rutherford、Transs、Dadawah、Moondoc、Company Caine、Finnerud、小久保隆）寫成「被視為」。另核對：小久保隆「環境音樂／療癒音樂的里程碑」出自日文維基；Ariesta「第一張能買到的印尼迷幻專輯」出自 NTS；Company Caine「1970 年代初前衛搖滾的里程碑」出自 Ian McFarlane；Mahogany Brain 丟磚塊出自英文維基 Bulteau 條。한대수「母帶也被收走」只有텐아시아一家，照留（具體、非評價）。
+
+### 上線
+
+- `kv-token-check` 通過；舊值存 `kv-before-ad-14.json`（60 鍵，32 個非 null）。
+- bulk put 34 鍵（desc2 30＋CJK 卡 desc4 4），wrangler 印 `Success!`；`verify-wave-kv` 第一次 3 鍵舊值（傳播延遲），重讀 34/34 逐字一致。
+- `front-check ad-14`：30/30 前台為新稿，CURATED 0。
+- manifest 同步 24 處。
