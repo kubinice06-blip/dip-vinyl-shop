@@ -14,3 +14,4 @@
 - 51948 **Peter Kowald 不動**：店主點名的 Peter Kowald Quintet 派給 ax6；卡池雖有 Peter Kowald 個人名義兩張（《Was da ist》《Open Secrets》），若這邊升其中一張、ax6 又上 Quintet，同級會撞同一人。照分工讓給 ax6。
 - 51949 升格候選 32 張（`upgrade-candidates.json`）：自由爵士／即興為主，另含 decisions-q2 以「能量型自由爵士」刷掉的 Sun Ra、Frank Lowe、Frank Wright、Globe Unity。同一藝人兩張的（Frank Wright、Roscoe Mitchell）兩張都研究、主線擇一。q2 以「無可信依據」刷掉的非爵士盤（Smegma、Farmers Manual、Voice Crack）、碾核與技術死金、學院前衛古典二線錄音，新標準沒改到它們，不重開。
 - 51950 新卡判 none 的不照一般卡上架，直接汰換（本線目的就是補異端；一般卡要另走 writer-base 鉤子流程，成本不划算）。
+- 51951 研究 c 組（ax5u 23–32）：heresy 1（Ornette《Free Jazz》）、none 9。主線同意 Free Jazz：雖有貝斯鼓的律動，但約 37 分鐘不間斷的雙四重奏集體即興、當年 Down Beat 雙評五星／零星的兩極反應，是可信的「當時被當成噪音」證據；Ornette 殿堂是《The Shape of Jazz to Come》，跨級可以。Ware《Cryptology》、McPhee、Revolutionary Ensemble、Mitchell 兩張、Marion Brown 照研究判 none（spiritual／點描／有律動，缺極端證據）；Fuchs、Gustafsson、Noetinger 查無樂評，none。
