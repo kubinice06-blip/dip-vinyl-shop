@@ -51,9 +51,39 @@ seed 裡 tier 為 hall／heresy／pearl 的全部卡（開工時約殿堂 303、
 - UA 不准放 email：`dip-vinyl-shop/1.0 (+https://dipvinyl.tw)`。
 - 容器會重啟：派子代理一律加「每做完 N 筆寫進輸出檔」「輸出檔已有內容就接續」。
 
+## 已知事項（s1 留給後續工作階段）
+
+- **worker 對非 CJK 卡先讀 CURATED_DESCS 再讀 desc2**（ad-01 實測：《Kind of Blue》寫了 desc2 前台仍是 CURATED）。CURATED 裡的卡寫 desc2 不會生效，要店主在 worker 拿掉該筆並部署。已知有《Kind of Blue》（ad-01）、《The Dark Side of the Moon》（後續批）。每批上線後用 `tools/front-check.mjs <批>` 逐張比對前台。
+- 每批工具：`tools/ad.mjs cards|before|bulk|manifest`、`tools/apply-review.mjs`（審稿改動檔 `review-ad-XX.json`）、`tools/front-check.mjs`；派工詞 `prompt-research.md`、`prompt-writer.md`。研究檔名 `research/ad-XX-{a,b,c}.json`。
+- 寫作層第一版普遍 300–500 字（英文字母計字），派工詞已要求先量再刪次要人名；仍有少數超字要主線壓。
+
 ## 分批表
 
-（第 0 步完成後填）
+第 0 步 2026-11-04 完成（s1）：頂點卡 677 張（排除台客）→ keep 3、rewrite 674；殿堂 300／異端 85／流亡 289。
+明細 `triage.json`、各批 key `batches.json`、工作清單 `worklist.json`（含現行簡介與來源 desc2／desc4／curated）。
 
 | 批 | tier | 張數 | 工作階段 | 狀態 |
 |---|---|---:|---|---|
+| ad-01 | 殿堂 | 30 | s1 | ✅ 上線 30（前台 29，Kind of Blue 待 worker 拿掉 CURATED） |
+| ad-02 | 殿堂 | 30 | s1 | ✅ 上線 30（前台 30） |
+| ad-03 | 殿堂 | 30 |  | 待派 |
+| ad-04 | 殿堂 | 30 |  | 待派 |
+| ad-05 | 殿堂 | 30 |  | 待派 |
+| ad-06 | 殿堂 | 30 |  | 待派 |
+| ad-07 | 殿堂 | 30 |  | 待派 |
+| ad-08 | 殿堂 | 30 |  | 待派 |
+| ad-09 | 殿堂 | 30 |  | 待派 |
+| ad-10 | 殿堂 | 30 |  | 待派 |
+| ad-11 | 異端 | 30 |  | 待派 |
+| ad-12 | 異端 | 30 |  | 待派 |
+| ad-13 | 異端 | 25 |  | 待派 |
+| ad-14 | 流亡 | 30 |  | 待派 |
+| ad-15 | 流亡 | 30 |  | 待派 |
+| ad-16 | 流亡 | 30 |  | 待派 |
+| ad-17 | 流亡 | 30 |  | 待派 |
+| ad-18 | 流亡 | 30 |  | 待派 |
+| ad-19 | 流亡 | 30 |  | 待派 |
+| ad-20 | 流亡 | 30 |  | 待派 |
+| ad-21 | 流亡 | 30 |  | 待派 |
+| ad-22 | 流亡 | 30 |  | 待派 |
+| ad-23 | 流亡 | 19 |  | 待派 |
