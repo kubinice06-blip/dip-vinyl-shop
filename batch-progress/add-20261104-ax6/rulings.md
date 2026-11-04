@@ -76,3 +76,8 @@
 - **52058** Akitsa《Goétie》：none、建議汰換。首發為 Heavy Distortion 卡帶 2001；無可信極端描述。
 - **52059** Bastard Noise《Rogue Astronaut》：none、建議汰換。TMT 稱克制殘暴，內容資料不足。
 - 統計：heresy 2、none 7（皆建議汰換）；WebSearch 用 6 次。
+
+## 主線（研究 a–f 交件後）
+- **52074** 店主點名兩張照收異端（apex-override.json）：Peter Kowald Quintet《Peter Kowald Quintet》、강태환《Live At Café Amores》研究層判 none（Kowald 當年評語「informal, enjoyable」；강태환 評語「平靜卻不間斷的氣流」「憂鬱、靈性」），但店主 2026-11-04 明確點名這兩位進異端，派工寫「必收」——具體指示優先於一般標準。理由用事實：Kowald 是無主題無拍、無和弦樂器的五人集體自由即興，靜段與全員爆發交替；강태환 是全程循環換氣、無節拍無主題的中音薩克斯風長篇獨奏。簡介只寫這些事實，不寫「刺耳」「極端代表作」類沒出處的話。可逆：店主若覺得不夠格，改一般卡只要改 seed 第 9 欄。
+- **52075** 研究層判 none 的照 52071 一律汰換（不轉一般卡）：Die Like a Dog Quartet、Globe Unity Orchestra、Iskra 1903、グループ・音楽、Senyawa、Beherit、Sarcófago、Archgoat、Mütiilation、Impaled Nazarene、Anal Cunt、Havohej、Bunkur、Pissgrave、Francisco López、Robert Ashley、Luigi Nono、Franco Evangelisti、Gottfried Michael Koenig、Hermann Nitsch、Fantômas、Full Blast、Jaap Blonk、Skullflower、Diocletian、Akitsa、Bastard Noise（27 張）。研究稿留著。
+- **52076** 研究判 heresy 13 張照收：Birchville Cat Motel、Blasphemy、Conqueror、Bestial Warlust、Black Witchery、Ildjarn、Sete Star Sept、Burning Witch、Dragged Into Sunlight、Mauricio Kagel、Zeitkratzer、Mike Patton、Sightings。偏薄的 Bestial Warlust（7 條、making none）、Black Witchery、Ildjarn、Dragged Into Sunlight（研究層自評邊緣：有旋律段）照收，寫作與審稿時若撐不起 200 字再汰。Zeitkratzer 演的是 Whitehouse 的曲子（Whitehouse《Bird Seed》已在異端）：照卡池古典慣例 artist＝演奏者，藝人鍵不同，可收。Burning Witch《Crippled Lucifer》MB 標 Compilation（收兩張早期 EP＋未發表曲），是該團唯一長篇正典，照 §5.6 走 exceptionReason。
