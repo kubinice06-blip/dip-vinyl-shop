@@ -22,3 +22,15 @@
 - **22767**：Manual《Until Tomorrow》2001 年為 IDM 底、「脆弱拍子＋溫暖夢幻旋律」（Munk 自述），非後期電子 shoegaze 厚霧；moodGuess 存疑，池中同人錨點不宜類推。
 - **22768**：Solar Bears 成員名 Kowalski（維基、FACT）vs McElheron（I Heart Noise），採前者；廠牌稱類比暖合成器，但樂評側偏循環、萬花筒式短曲，速度無來源，moodGuess 存疑（可能更亮更躁）。
 - 本組無推翻身分／年份／廠牌；8 張 MB 與 Discogs 皆對得上。
+
+## 研究 c 組
+- **22781**：Tosca《Outta Here》moodGuess 嚴重存疑。廠方（audiopile）引 Huber 說新歌「更重節拍、更直接」，風格為 soul／acid jazz／neo-disco，有 Cath Coffey、Rob Gallagher 客座人聲；樂評 mxdwn 評其離開早期慢而低的路線。主線宜汰換，改收《No Hassle》《Odeon》一類。Earl Zinger 與 Rob Gallagher 是否同人未驗，facts 只寫 Rob Gallagher。
+- **22782**：Yppah《You Are Beautiful at All Times》moodGuess 存疑。The Skinny：breakbeat 鼓、亮高頻帶嘶聲、牆狀失真迷幻吉他、早期 Orb 式氛圍。「鬆拍」「暖」無來源。XLR8R 同名頁內文曲名不在本盤，未採。
+- **22783**：Yppah《Tiny Pause》moodGuess 部分存疑。Bandcamp：改用 modular 與 sampler；KJHK：低頻更明顯、hip-hop 影響節拍、〈Coastal Cities〉打擊不停歇，同時有漂浮失重感。x 可能高於 2.2。
+- **22784**：BMSR《Cobra Juicy》moodGuess 存疑。McNew（Talkhouse）：比前作「更亮而不髒」、傳真度高、無磁帶抖動；Paste：鼓 bottom-heavy、樂團聲音偏 chilly；PopMatters：有咬勁吉他。寫作層用「清晰亮麗」，勿寫「溫暖」。發行日採 10-23（MB 記 US 10-08）。
+- **22785**：Fehlmann《Visions of Blah》sound 無可讀樂評（Pitchfork／AllMusic／RYM／Discogs 網頁／Kompakt 專輯頁皆被擋或 404），僅有 Discogs 風格 Dub Techno／Ambient，status thin。moodGuess「無強拍」存疑（dub techno 通常有四拍底鼓）。目錄號 MB（KOM 67）與 Discogs（KOMPAKT CD 20）衝突，facts 不寫。Kompakt「首張」說法未查到，已不寫。
+- **22786**：Fehlmann《Lowflow》同上 thin。Discogs 註記三首短曲（Interstellar／Intertwine／Intersect）列 Ghostly 版權並署名 Dabrye，facts 只複述署名。風格含 Electro、IDM，「慢速 dub techno」存疑。
+- **22787**：Fehlmann《Honigpumpe》同上 thin。Discogs 風格 Tech House／Minimal，x 恐貼或高於 2.7，三張 Fehlmann 中最可能不落恍惚。Beuys 謝詞與 Beuys 作品《Honigpumpe am Arbeitsplatz》的關聯未查到來源，facts 只寫謝詞。目錄號 MB CD 59 與 Discogs LP KOM 157 並列。
+- **22788**：Burger/Ink《[Las Vegas]》thin。1996 Harvest（EMI）初版，1998 Matador 為美國版，維基頁以 1998 為準屬誤導，卡單 1996 正確。Discogs 風格 Trance／Ambient／Minimal Techno，曲名自稱「Bring Trance Back」，兩首 11 分鐘長曲；「低傳真磁帶糊」無來源，moodGuess 存疑。
+- **22789**：本組 WebSearch 用了 5 次，超出每支 3 次限額（其餘為 WebFetch／MB／Discogs API）；Fehlmann 與 Burger/Ink 的聲音缺口因此仍無法補。
+- 本組無推翻年份／廠牌／盤名；MB 釘住的 8 張 rg 與 Discogs 皆對得上。聲音與 moodGuess 明顯不符者：Tosca、Yppah 首作、BMSR 三張強烈，Tiny Pause 部分；Fehlmann 三張與 Burger/Ink 無聲音來源，無法證實或證偽。
