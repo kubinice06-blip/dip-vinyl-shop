@@ -19,3 +19,13 @@
 - 51953 研究 a 組（ax5u 1–11）：heresy 5（Frank Lowe《Black Beings》、Frank Wright Trio、Charles Gayle《Consecration》、Albert Ayler《Bells》、Dave Burrell《Echo》）、none 6。Frank Wright 擇一留 Trio（ESP 1966），《One for John》none。Sun Ra《The Magic City》、Globe Unity、Sunny Murray、Sharrock《Monkey-Pockie-Boo》、Noah Howard《The Black Ark》研究稿的樂評本身講「經典／有組織／旋律好哼」，照判 none——撤銷「能量型」排除不等於自由爵士自動入列，還是要有具體極端證據。
 - 51954 Ayler《Bells》accessibility 4 → 5（單曲 20 分鐘不間斷集體即興、Down Beat 當年零星、Penguin 稱強烈到聽完要喘口氣）；邊緣但兩網域具名，收。Ayler 殿堂是《Spiritual Unity》，跨級可以。
 - 51955 **升格合計 6 張**（a 5＋c 1）。升格命中率 6／32：卡池裡的自由爵士多半是「前衛但聽得下去」那一層，真正以噪音／尖嘯見長的早已在異端（Doyle、Brötzmann、Ascension、Borbetomagus）。缺口改由新卡補。
+
+## 新卡策展 ax5a（不佔條號）
+- 21 張交件，主線汰 2 留 19（`master-override-ax5a.json`）：
+  - The Jazz Composer's Orchestra 同名盤：策展層自己標「大編制含旋律段落，相對聽得下去」，而且與 ax3 流亡卡 Clifford Thornton & The Jazz Composer's Orchestra 藝人鍵互含。
+  - Charles Gayle《Repent》：Gayle 已由升格《Consecration》進異端，同級一藝人一張。
+- 拼法：Giuseppi Logan（MB／Discogs 正規拼法，派工寫 Giuseppe 是錯的）；Alan Silva 團名用 Celestial（MB 拼成 Celestrial，進 queryAlias）。
+- 年份取原盤：Logan《More》1966（MB rg 標 2013 重發）、Arthur Jones《Scorpio》1969（MB 1971）。
+- 人工身分 3：Burton Greene Quartet、Chadbourne《Volume One: Solo Acoustic Guitar》、Smith & Williams《Direct Waves》。
+- 策展層自承多數 why 的人員與評價「依印象寫」，交研究層逐條核實，研究層的 facts 為準。
+- Sunny Murray《Sonny's Time Now》是補充提名：Murray 升格《Sunny Murray》判 none，這張另由研究層判。
