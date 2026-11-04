@@ -1,0 +1,177 @@
+{
+ "group": "ax5c",
+ "factions": [
+  {
+   "id": "us-free-60s",
+   "zh": "美國自由爵士 60 年代",
+   "why": "1960 年代自由爵士，卡池藝人的未收專輯",
+   "count": 5
+  }
+ ],
+ "albums": [
+  {
+   "artist": "Sun Ra and His Astro Infinity Arkestra",
+   "album": "Strange Strings",
+   "year": 1967,
+   "label": "Saturn",
+   "country": "us",
+   "faction": "us-free-60s",
+   "genres": [
+    "jazz"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "全團吹奏手拿不熟悉的民族弦樂器，沒有調性只有質地，Sun Ra 稱為「無知的研究」",
+   "listeners": null,
+   "why": "全團吹奏手拿不熟悉的民族弦樂器，沒有調性只有質地，Sun Ra 稱為「無知的研究」",
+   "moodGuess": {
+    "x": 3.5,
+    "y": 0.3,
+    "z": -1.5,
+    "why": "無調的弦樂質地與金屬共鳴，疏離神祕"
+   },
+   "evidence": [
+    "https://en.wikipedia.org/wiki/Strange_Strings",
+    "https://musicbrainz.org/release-group/d042dc13-824d-32e8-a87c-6a08ce9aeaf7",
+    "https://music.apple.com/us/album/strange-strings-expanded-edition/1885654639"
+   ],
+   "mbRgMbid": "d042dc13-824d-32e8-a87c-6a08ce9aeaf7",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 標題為 Sun Ra and His Astro Infinity Arkestra；維基首發年 1967（錄音 1965/66 說法不一）。判 heresy 但〈Worlds Approaching〉有低音固定音型與獨奏，並非全程質地，主線可復核。 研究判定：heresy；封面 CAA 有（https://coverartarchive.org/release-group/d042dc13-824d-32e8-a87c-6a08ce9aeaf7）。"
+  },
+  {
+   "artist": "Steve Lacy",
+   "album": "The Forest and the Zoo",
+   "year": 1967,
+   "label": "ESP-Disk'",
+   "country": "us",
+   "faction": "us-free-60s",
+   "genres": [
+    "jazz"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "現場錄音，兩首各約 20 分鐘，但樂評形容輕鬆俏皮、不是高強度噪音",
+   "listeners": null,
+   "why": "現場錄音，兩首各約 20 分鐘，但樂評形容輕鬆俏皮、不是高強度噪音",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 0.5,
+    "z": -0.5,
+    "why": "自由即興但輕盈俏皮"
+   },
+   "evidence": [
+    "https://en.wikipedia.org/wiki/The_Forest_and_the_Zoo",
+    "https://musicbrainz.org/release-group/7642799e-410d-3fae-9a3a-f5f13b450cce"
+   ],
+   "mbRgMbid": "7642799e-410d-3fae-9a3a-f5f13b450cce",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "現場專輯",
+   "queryAlias": "",
+   "uncertain": "研究判定：none；封面 CAA 有（https://coverartarchive.org/release-group/7642799e-410d-3fae-9a3a-f5f13b450cce）。"
+  },
+  {
+   "artist": "Archie Shepp",
+   "album": "Live at the Donaueschingen Festival",
+   "year": 1967,
+   "label": "MPS / SABA",
+   "country": "us",
+   "faction": "us-free-60s",
+   "genres": [
+    "jazz"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "兩面各約 22 分鐘的悼念 Coltrane 長篇，但廠牌稱其可作為不聽自由爵士者的入門",
+   "listeners": null,
+   "why": "兩面各約 22 分鐘的悼念 Coltrane 長篇，但廠牌稱其可作為不聽自由爵士者的入門",
+   "moodGuess": {
+    "x": 3,
+    "y": 0.8,
+    "z": -0.5,
+    "why": "高強度集體即興，仍有主題與段落"
+   },
+   "evidence": [
+    "https://www.mps-music.com/releases/archie-shepp-live-at-the-donaueschingen-music-festival/",
+    "https://musicbrainz.org/release-group/53211ad8-16a3-4be0-81a0-179b36272d68",
+    "https://api.discogs.com/masters/43620"
+   ],
+   "mbRgMbid": "53211ad8-16a3-4be0-81a0-179b36272d68",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "現場專輯",
+   "queryAlias": "",
+   "uncertain": "MB 標題為 Life at the Donaueschingen Music Festival（SABA SB 15 148 ST, 1967；後以 One for Trane／The Indomitable 再發）。 研究判定：none；封面 CAA 有（https://coverartarchive.org/release-group/53211ad8-16a3-4be0-81a0-179b36272d68）。"
+  },
+  {
+   "artist": "Sunny Murray",
+   "album": "Big Chief",
+   "year": 1969,
+   "label": "Pathé",
+   "country": "us",
+   "faction": "us-free-60s",
+   "genres": [
+    "jazz"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "集體即興無穩定拍子，但樂評形容從兇猛到浪漫到俏皮，有抒情曲與詩朗誦",
+   "listeners": null,
+   "why": "集體即興無穩定拍子，但樂評形容從兇猛到浪漫到俏皮，有抒情曲與詩朗誦",
+   "moodGuess": {
+    "x": 3,
+    "y": 0.5,
+    "z": -0.8,
+    "why": "密集集體即興，情緒起伏"
+   },
+   "evidence": [
+    "https://en.wikipedia.org/wiki/Big_Chief_(Sunny_Murray_album)",
+    "https://musicbrainz.org/release-group/fc72e52a-445e-4891-8c66-4fe85979aa37",
+    "https://www.discogs.com/master/279000-Sunny-Murray-Big-Chief"
+   ],
+   "mbRgMbid": "fc72e52a-445e-4891-8c66-4fe85979aa37",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "研究判定：none；封面 CAA 有（https://coverartarchive.org/release-group/fc72e52a-445e-4891-8c66-4fe85979aa37）。"
+  },
+  {
+   "artist": "Sonny Sharrock",
+   "album": "Guitar",
+   "year": 1986,
+   "label": "Enemy",
+   "country": "us",
+   "faction": "us-free-60s",
+   "genres": [
+    "jazz"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "失真與回授吉他，但樂評形容旋律明確、節奏放鬆、結構清楚，推薦給各類聽眾",
+   "listeners": null,
+   "why": "失真與回授吉他，但樂評形容旋律明確、節奏放鬆、結構清楚，推薦給各類聽眾",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 0.5,
+    "z": -0.5,
+    "why": "失真吉他但旋律溫暖"
+   },
+   "evidence": [
+    "https://en.wikipedia.org/wiki/Guitar_(Sonny_Sharrock_album)",
+    "https://musicbrainz.org/release-group/f0599f6a-389a-3fb4-8bd0-3cf8796793a0",
+    "https://www.robertchristgau.com/xg/cg/cgv9-86.php"
+   ],
+   "mbRgMbid": "f0599f6a-389a-3fb4-8bd0-3cf8796793a0",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "研究判定：none；封面 CAA 有（https://coverartarchive.org/release-group/f0599f6a-389a-3fb4-8bd0-3cf8796793a0）。"
+  }
+ ],
+ "notes": [
+  "去重指令 5 張皆 0；藝人皆不在 seed 異端；不與 ax5a／ax5b 重複（ax5a 有 Sunny Murray《Sonny's Time Now》，不同盤，研究判 none）。",
+  "研究判定：Strange Strings heresy（moderate）；其餘 4 張 none 建議汰換。",
+  "MB 皆查得到，身分用 mbRgMbid。"
+ ]
+}

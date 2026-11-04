@@ -3,7 +3,7 @@
 > 這份是產出物，由 `node scripts/render-discogs-registry.mjs` 從
 > `data/discogs-cover-registry.json` 產生。**要改狀態請改 JSON**，不要改這份。
 
-共 **610** 張走 ALBUM_ONBOARDING §4 的 `discogs` 封面來源（待看圖 241、已核可 368、已退回 1）。
+共 **624** 張走 ALBUM_ONBOARDING §4 的 `discogs` 封面來源（待看圖 241、已核可 382、已退回 1）。
 最後更新：2026-11-04
 
 **收錄規則**：藝人與盤名相符只是入場券，還要在年份／廠牌／目錄號裡至少對上兩項；
@@ -679,6 +679,28 @@
 |---|---|---:|---|---|---|---|
 | 濁水溪公社 《台客的復仇》 | [#4813793](https://www.discogs.com/release/4813793) | 1999 | Keboyin Music（喜樂音） | 99142 | 條碼 4719260991428（同 MB release f174cde8）、年份 1999、18 軌曲目逐首相符、主線目視：L.T.K. C 標誌＋腦／膀胱插畫 | ok |
 
+## add-20261104-ax1（7 張）
+
+| 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
+|---|---|---:|---|---|---|---|
+| Consumer Electronics 《Leathersex》 | [#634440](https://www.discogs.com/release/634440) | 1982 | Iphar | Iphar 004 | Discogs master 1504004 的版本、主線目視與盤名相符 | ok |
+| Emil Beaulieau 《Kill the All-Noise Japanese Artists》 | [#348891](https://www.discogs.com/release/348891) | 1995 | Pure (4) | none | 唯一版本、主線目視與盤名相符 | ok |
+| Hototogisu 《Ghosts From the Sun》 | [#940756](https://www.discogs.com/release/940756) | 2005 | Important Records (2) | imprec062 | Discogs master 61720 的版本、主線目視與盤名相符 | ok |
+| Richard Ramirez 《Rape!》 | [#798439](https://www.discogs.com/release/798439) | 1995 | Mother Savage Noise Productions | MS-14 | Discogs master 1277646 的版本、主線目視與盤名相符 | ok |
+| Skin Crime 《Parasite》 | [#734495](https://www.discogs.com/release/734495) | 2001 | Xerxes | ES96:90 | 唯一版本、主線目視與盤名相符 | ok |
+| Taint 《Justmeat》 | [#253680](https://www.discogs.com/release/253680) | 1995 | Slaughter Productions | SPT40 | Discogs master 28275 的版本、主線目視與盤名相符 | ok |
+| The Rita 《Living Dead Girl》 | [#843197](https://www.discogs.com/release/843197) | 1998 | Not On Label (The Rita Self-released) | none | Discogs master 1710428 的版本、主線目視與盤名相符 | ok |
+
+## add-20261104-ax2（5 張）
+
+| 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
+|---|---|---:|---|---|---|---|
+| Ehnahre 《Taming the Cannibals》 | [#2565354](https://www.discogs.com/release/2565354) | 2010 | Crucial Blast | CBR89 | Discogs master 1698547 的版本、主線目視與盤名相符 | ok |
+| Ensemble 13 《Hespos: Works》 | [#28910536](https://www.discogs.com/release/28910536) | 1992 | cpo | 999 052-2 | Discogs master 3306643 的版本、主線目視與盤名相符 | ok |
+| Ian Pace 《Finnissy: The History of Photography in Sound》 | [#5133352](https://www.discogs.com/release/5133352) | 2013 | Metier | msv 77501 | 唯一版本、主線目視與盤名相符 | ok |
+| Rhodri Davies 《Trem》 | [#919766](https://www.discogs.com/release/919766) | 2003 | Confront | confront 11 | Discogs master 2873872 的版本、主線目視與盤名相符 | ok |
+| Toshiya Tsunoda 《Extract from Field Recording Archive #2: The Air Vibration Inside a Hollow》 | [#182254](https://www.discogs.com/release/182254) | 1999 | Häpna | H.01 | 唯一版本、主線目視與盤名相符 | ok |
+
 ## add-20261104-ax3（16 張）
 
 | 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
@@ -719,6 +741,13 @@
 | Richard Maxfield 《Electronic Music》 | [#1151501](https://www.discogs.com/release/1151501) | 1969 | Advance Recordings (2) | FGR- 8S | Discogs master 430466 的版本、主線目視與盤名相符 | ok |
 | Sagrado Coração da Terra 《Sagrado Coração da Terra》 | [#15452530](https://www.discogs.com/release/15452530) | 1984 | Not On Label (Sagrado Coração Da Terra Self-released) | 803.150 | Discogs master 389803 的版本、主線目視與盤名相符 | ok |
 | Tokyo Kid Brothers 《黄金バット Golden Bat》 | [#2946656](https://www.discogs.com/release/2946656) | 1971 | Polydor | MR-5005 | Discogs master 674627 的版本、主線目視與盤名相符 | ok |
+
+## add-20261104-ax5（2 張）
+
+| 卡 | Discogs | 年 | 廠牌 | 目錄號 | 比對依據 | 核對 |
+|---|---|---:|---|---|---|---|
+| Milford Graves 《Bäbi》 | [#1357109](https://www.discogs.com/release/1357109) | 1977 | IPS (2) | IPS ST004 | Discogs master 1354146 的版本、主線目視與盤名相符 | ok |
+| William Hooker 《Hard Time》 | [#2534597](https://www.discogs.com/release/2534597) | 1998 | Squealer | SQLR026 | 唯一版本、主線目視與盤名相符 | ok |
 
 ## c49（3 張）
 

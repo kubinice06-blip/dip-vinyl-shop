@@ -3787,4 +3787,7 @@ window.DipPreviewStatus = Object.freeze({
   "ensemble 13|hespos: works": "unavailable",
   "bernhard kontarsky|zimmermann: requiem für einen jungen dichter": "unavailable",
   "aaron dilloway|modern jester": "unavailable",
+  "milford graves|bäbi": "unavailable",
+  "paul flaherty & chris corsano|the hated music": "unavailable",
+  "william hooker|hard time": "unavailable",
 });

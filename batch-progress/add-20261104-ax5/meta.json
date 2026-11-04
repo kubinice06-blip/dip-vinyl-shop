@@ -97,7 +97,8 @@
    "classic": 3,
    "accessibility": 3,
    "_obscuritySource": "lastfm",
-   "_listeners": 4
+   "_listeners": 366,
+   "_listenersNote": "原查詢用全團名只配到 4（錯配）；改以 Alan Silva／Luna Surface 查 worker /album-rating 得 366（2026-11-04）"
   },
   "mb": {
    "release": "f34fe6a6-b09c-4efc-b630-9ad74050da8b",
@@ -1291,6 +1292,92 @@
    ]
   },
   "apple": [],
+  "done": true
+ },
+ "desc2:Sun Ra and His Astro Infinity Arkestra|Strange Strings": {
+  "caa": 200,
+  "rating": {
+   "obscurity": 5,
+   "classic": 3,
+   "accessibility": 3,
+   "_obscuritySource": "lastfm",
+   "_listeners": 159
+  },
+  "mb": {
+   "release": "22e03a9c-02d1-4f76-a473-09adeb691a5a",
+   "date": "1966",
+   "country": "US",
+   "label": "Saturn Research LPSRES502H",
+   "tracks": [
+    "Worlds Approaching",
+    "Strings Strange",
+    "Strange Strange"
+   ]
+  },
+  "apple": [
+   {
+    "id": "1885654639",
+    "cc": "us",
+    "artist": "Sun Ra and His Arkestra",
+    "name": "Strange Strings (Expanded Edition)",
+    "date": "2024-08-02",
+    "count": 8,
+    "expl": "notExplicit",
+    "copy": "℗ 2024 Cosmic Myth Records",
+    "hit": 2,
+    "want": 3,
+    "songs": [
+     [
+      1,
+      1,
+      "World's Approaching",
+      "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/42/cc/90/42cc9064-3379-4e78-9b23-f884156075c0/mzaf_5137078455978058677.plus.aac.p.m4a"
+     ],
+     [
+      1,
+      2,
+      "Strange Strings",
+      "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/4d/59/5b/4d595b65-8514-e8cb-cc01-0c5f157f41d8/mzaf_1986191835724175232.plus.aac.p.m4a"
+     ],
+     [
+      1,
+      3,
+      "Strange Strange",
+      "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/5b/8e/2f/5b8e2f27-9a89-0796-827f-78edce90f571/mzaf_16409996389600584326.plus.aac.p.m4a"
+     ],
+     [
+      2,
+      1,
+      "Crystal Spheres (Between Worlds)",
+      "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f9/74/31/f9743199-49b4-1b57-5239-5cad8f84ff48/mzaf_14015095762528236343.plus.aac.p.m4a"
+     ],
+     [
+      2,
+      2,
+      "Cosmos Miraculous",
+      "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/df/f9/f5/dff9f580-37fa-758e-74b1-65e9b3ce7aed/mzaf_18031045282827964043.plus.aac.p.m4a"
+     ],
+     [
+      2,
+      3,
+      "Untitled St. Peter’s",
+      "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ac/c8/c5/acc8c5c9-b0d6-e163-8f11-63268a4fb64c/mzaf_16656748589654075584.plus.aac.p.m4a"
+     ],
+     [
+      2,
+      4,
+      "Moon Orbit",
+      "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/24/24/ad/2424adc1-546e-bd35-a92e-88c80cfdf411/mzaf_17591359734546292948.plus.aac.p.m4a"
+     ],
+     [
+      2,
+      5,
+      "Ra Explains the Bandura",
+      "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/88/1b/71/881b71ab-ccf8-6681-28d2-86949bf9a446/mzaf_15383704573880957154.plus.aac.p.m4a"
+     ]
+    ]
+   }
+  ],
   "done": true
  }
 }
