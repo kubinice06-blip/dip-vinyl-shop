@@ -113,3 +113,4 @@
 - **51575** 逐張審 32 張：Harry Pussy 刪「當時有地下刊物嫌它自溺」（單源評價句）；Vomir「限量 40 套的 DVD 盒」改「以 DVD 盒裝、限量 40 套」（內容是 5 張 CD-R，避免誤讀成 DVD 影音）。其餘照過（廠牌自述如 Hospital Productions、Type Records 屬廠牌說明，不算媒體名）。寫進 `desc-override.json`。
 - **51576** 封面：CAA release-group 無圖的 7 張（Richard Ramirez、The Rita、Skin Crime、Taint、Emil Beaulieau、Hototogisu、Consumer Electronics）改用 Discogs master／release 主圖（`covers.json`）。硬蕊度：機器基線一律 3，改取研究層聲音判定（5：23、4：7、3：2；`ratings-override.json`）。試聽 ready 4／unavailable 28（噪音卡帶與私壓多半不在 Apple）。
 - **51577** 藝人補洞層（ar-d-261 g3）指出 Hair Police 簡介「廠牌 Type Records 自己把這張叫作陰森地牢噪音」歸屬錯：「gruesome dungeon noise」是 Fact 的報導標題（研究稿 src factmag.com），不是廠牌自述。上線後改為「這張交給英國廠牌 Type Records 發行」，`desc-override.json`→manifest→KV 重寫該批（stamp 202611040800）。
+- **51578** ar-d-261 g1 pubIssues：Taint「Taint 的主人在 2019 年過世」只有 Discogs 單源、KFJC 2021 樂評仍稱 Keith Brewer 以 Mania 名義創作，兩源矛盾 → 整句刪（thin 151）；KV 重寫（stamp 202611040815）。Violent Onsen Geisha「1980 年代末開始用此名義」對 1989 Vanilla 卡帶（Discogs）成立，照留。
