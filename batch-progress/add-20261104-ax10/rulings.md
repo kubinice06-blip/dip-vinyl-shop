@@ -28,3 +28,13 @@
 - **52466** The Locust：逐句對回研究 u 組 facts（23 首 21:03、最長 1:29、Anti-／Alex Newport、Moog 噪音牆、雙大鼓連打經維基引 Pitchfork、三人輪流嘶吼＝陣容三人兼人聲），未改字。
 - **52467** Discharge：「這套模式日後稱作 D-beat」→「鼓一路踩著日後被稱作 D-beat 的節奏」（D-beat 指鼓型，不是 riff 模式；維基 D-beat 條）；刪「中段插 bottleneck 獨奏」壓字數（單一來源 Head Heritage）。其餘（Clay、Maloney、獨立榜第 2、Anthrax／Metallica 翻唱）對過。
 - **52468** 升格寫入：card_catalog 2 筆 PATCH（tier heresy、apex、accessibility 5、rarity legendary）讀回 2/2；KV desc2 2 鍵（舊值 `kv-before-ax10u.json`）wrangler bulk put Success、回讀 2/2。兩張都是 onboarding manifest 制度前的舊卡，沒有 manifest 可同步。seed 第 9 欄與 Discharge 硬蕊 4→5 留到收尾跟新卡一起寫。
+
+## 研究 d 組
+- **52441** Heresy《Face Up to It》：判 none。只有零售商部落格描述原版糊爛與重混後極速，無可信樂評；1988 In Your Face LP、Indie 榜 13、2016 Boss Tuneage 重混版。建議汰換。
+- **52442** Sore Throat《Disgrace to the Corpse of Sid》：判 none（邊緣、可逆）。維基（無引註）描述 101 首、blast、噪音取樣；MRR 只評同團他盤；Sputnik 為使用者評論。主線若接受維基引註書目可升 heresy。年份 1988（維基）vs 1989-09-05（MB）未決。
+- **52443** Unseen Terror《Human Error》：判 none。原版 20 首約 35 分、曲長 0:11–3:34，Teeth of the Divine 只說速度金屬 hardcore；AllMusic 4.5。建議汰換。
+- **52444** Electro Hippies《Play Fast or Die》：判 none。1986 split 一面的 1989 12 吋重發，只有 lo-fi 概述。建議汰換。
+- **52445** Doom《War Crimes》：判 none。PunkNews 評合輯為「Discharge 崇拜」；21 首（錄音）與 11 首（曲目表）矛盾。建議汰換。
+- **52446** Deviated Instinct：判 none。查不到任何聽感來源。建議汰換。
+- **52447** Hellbastard：判 none。查不到廠牌與聽感來源，Electric Hellfire 未核實。建議汰換。
+- **52448** 本組 WebSearch 共 4 次（Heresy、Unseen Terror、Sore Throat、Doom）；Pitchfork、AllMusic、Sputnik、Metal Injection 被擋未讀。全組 7 張皆未達 facts 8–15 條，因可讀來源有限，coverage 皆 thin／none。
