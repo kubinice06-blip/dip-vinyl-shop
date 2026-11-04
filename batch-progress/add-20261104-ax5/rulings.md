@@ -69,3 +69,16 @@
 - 51931 Sauter & Dietrich《Bells Together》是原聲薩克斯風二重奏，「噪音牆」無依據；Walter／Halvorson／Evans 是編排齊奏為主；Pitsiokos 盤名全稱《Speak in Tongues and Hope for the Gift of Interpretation》、查無本盤樂評；Lancaster 現場盤取自不同場次、風格雜，releaseException 不成立；Kidd Jordan 三重奏錄於 2002、二重奏 2005／2012（推翻策展層「2013 現場」），樂評稱細膩的能量型即興。
 - 51932 新卡兩輪合計提名 32、研究 25、過 6（24%）。命中率低的原因：ESP／BYG 時代多數盤樂評講的是「前衛、有結構、聽得下去」，真正以噪音／尖嘯被具名評論的少；2000 年後的美國極端即興多半只有 Bandcamp 與小站。
 - 51933 補一輪（`curation-ax5c.json`，策展＋研究合併一支）：Sun Ra《Strange Strings》、Steve Lacy《The Forest and the Zoo》、Archie Shepp《Live at the Donaueschingen Festival》、Sunny Murray《Big Chief》、Sonny Sharrock《Guitar》——都是卡池藝人、但這幾張不在卡池，且都有維基或成篇樂評可查。
+
+## 新卡 ax5c（51934 起）
+- 51934 Sun Ra《Strange Strings》heresy：維基引 Szwed《Space Is the Place》描述「全是質地、沒有調性」、全團改彈不會的弦樂器（Sun Ra 自稱「無知的研究」），加 Forced Exposure 再版說明（原版單聲道、母帶失真）；兩網域、一個是有引註維基轉述的專書，收。藝人照 MB 掛名 Sun Ra and His Astro Infinity Arkestra（池中 Sun Ra 系卡照各盤原掛名的慣例），與異端無撞。
+- 51935 Lacy《The Forest and the Zoo》、Shepp《Donaueschingen》、Murray《Big Chief》、Sharrock《Guitar》研究判 none（樂評稱俏皮／入門／抒情／旋律結構），汰換。
+- 51937 Strange Strings 一張由主線直接寫稿（單張，不另派寫作代理），只用 `research/add-20261104-ax5-d.json` facts；〈Worlds Approaching〉的殘響是單曲事實，初稿寫成「整張」已刪；274 字。
+
+## 主線（51956 起）
+- 51956 Luna Surface listeners：meta 用全團名查到 4（錯配），改用 Alan Silva／Luna Surface 查 worker 得 366；manifest listeners 366。
+- 51957 試聽：Luna Surface（Apple 標 EP、Pt.／Part 拼法差，兩軌即原盤）、Strange Strings（只有 2023 擴充版，前三軌即原盤）手動指定；Throat、Gato 自動配到；Bäbi、Hated Music、Hard Time 查無 → unavailable。
+- 51958 封面：Bäbi CAA 只有 2018 CD 再版圖（帶貼紙），改用 1977 IPS 原版 Discogs 1357109；Hard Time CAA 404，用 Discogs 2534597；兩張登錄 registry。其餘 5 張 CAA 實測 200、目視相符。
+- 51959 寫入前對 origin 224 個分支 seed 去重 0 撞；舊分支裡 Sun Ra《Heliocentric Worlds Vol. 1》標 heresy 是 11-03 頂點重整前的舊狀態，main 與 ax6 都沒有，不算撞。
+- 51960 **ax5 合計異端 +13**：升格 6＋新上架 7。異端 109 → 122（本分支）；同級每藝人一張檢查 0 重複。
+- 51961 藝人介紹 ar-d-266：4 位（Alan Silva & His CCO、Flaherty & Corsano、William Hooker、Little Women）上線、skipped 0；主線逐位審過未改字（Silva「最有創意的貝斯手之一」維基原句、Moore 引語維基具名，照留）。Sun Ra and His Astro Infinity Arkestra 走別名鍵指向 sun ra（roster 補一筆 aliasOf，aliases.json 加鍵）。ar-d-267 未用。
