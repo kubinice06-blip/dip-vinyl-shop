@@ -624,7 +624,7 @@
    "ratings": {
     "classic": 4,
     "obscurity": 4,
-    "accessibility": 4,
+    "accessibility": 5,
     "listeners": 1109,
     "source": "manual:rerate-20261102",
     "checkedAt": "2026-11-02T00:00:00Z",
@@ -638,23 +638,25 @@
     },
     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：團名下唯一正規專輯，日本噪音 hardcore 開山盤→4；L=1109 無串流、CD 再發→4；極度失真"
    },
-   "rarity": "epic",
+   "rarity": "legendary",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "heresy",
+    "reason": "異端（accessibility 5；ax9 升格，主線 52355）：Last Rites 與 Vice 描述整張是失真回授糊成一片、人聲聽不清的噪音；符合 noise punk 整張高強度標準。",
+    "evidenceUrls": [
+     "https://yourlastrites.com/2018/02/19/kawakami-forever-japanese-raw-punk-101-part-2/",
+     "https://munchies.vice.com/en/article/7b8gka/talc-bring-the-blurred-distortion-of-kyushu-punk-to-adelaide"
+    ]
    },
    "description": {
-    "text": "1984 年的原盤是一捲卡帶，編號欄空著。十三軌裡第二軌以團名〈Confuse〉為題、第八軌才是標題曲〈Indignation〉，第六軌的曲名到現在只寫成〈Kill the ...〉，後面就是刪節號。要到十三年後，才由 Anarchy Centre 與樂團自營的 Confuse Records 聯名壓成黑膠與 CD。",
+    "text": "《Indignation》是九州 noise punk 樂團 Confuse 1984 年的首張專輯，整張由失真與回授堆成，吼聲埋在吉他噪音底下聽不出字句，被視為日本 raw punk 裡 noisecore 一路的代表。它把 Discharge 的公式再削減，只留下速度、失真與吼叫。這張原本只以卡帶發行，1997 年才壓成 LP。吉他在混音裡拉得很高，尖嘯的噪音一波接一波，底下是粗糙的打擊，回授幾乎不斷。之後美國 Fan Club 出了 12 吋 LP，把整卷卡帶連同軟膠片、合輯曲目與現場錄音收在一起。",
     "sourceUrls": [
-     "https://musicbrainz.org/ws/2/release-group/9542baa9-9056-4802-abf1-790c11b16eaf?fmt=json&inc=artist-credits+releases",
-     "https://musicbrainz.org/ws/2/release?release-group=9542baa9-9056-4802-abf1-790c11b16eaf&fmt=json&inc=media+labels+recordings&limit=100",
-     "https://musicbrainz.org/ws/2/release-group?artist=7349f02d-3be4-435b-af69-55742979ca67&fmt=json&limit=100&offset=0",
-     "https://musicbrainz.org/ws/2/artist/7349f02d-3be4-435b-af69-55742979ca67?fmt=json&inc=aliases+artist-rels",
-     "https://itunes.apple.com/search?term=Confuse%20Indignation&country=us&media=music&entity=album&limit=10",
-     "https://musicbrainz.org/release-group/9542baa9-9056-4802-abf1-790c11b16eaf"
-    ]
+     "https://munchies.vice.com/en/article/7b8gka/talc-bring-the-blurred-distortion-of-kyushu-punk-to-adelaide",
+     "https://www.discogs.com/master/488154-Confuse-Indignation",
+     "https://yourlastrites.com/2018/02/19/kawakami-forever-japanese-raw-punk-101-part-2/",
+     "https://www.sorrystaterecords.com/products/confusepeoplearenuclearpoisoning12"
+    ],
+    "lengthReviewed": true
    },
    "preview": {
     "status": "unavailable",
@@ -666,7 +668,7 @@
     "descriptionKv": true,
     "albumOverride": true,
     "seedCards": true,
-    "apexPool": false
+    "apexPool": true
    }
   },
   {
@@ -1530,7 +1532,7 @@
    "ratings": {
     "classic": 4,
     "obscurity": 4,
-    "accessibility": 4,
+    "accessibility": 5,
     "listeners": 1597,
     "source": "manual:rerate-20261102",
     "checkedAt": "2026-11-02T00:00:00Z",
@@ -1544,23 +1546,26 @@
     },
     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：日本d-beat代表作，LVEUM再版；L1597無串流→4；噪音化d-beat"
    },
-   "rarity": "epic",
+   "rarity": "legendary",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：accessibility=5（heresy 最低門檻），但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "heresy",
+    "reason": "異端（accessibility 5；ax9 升格，主線 52355）：Last Rites 描述整張是回授暴風雪般的粗暴聲響；維基與廠牌文案佐證失真極重、吉他為先的噪音 D-beat。邊緣案例。",
+    "evidenceUrls": [
+     "https://yourlastrites.com/2018/02/19/kawakami-forever-japanese-raw-punk-101-part/",
+     "https://en.wikipedia.org/wiki/Disclose"
+    ]
    },
    "description": {
-    "text": "留下的四十二筆出版裡有二十七筆是七吋。十五軌全是英文題，標題曲〈Tragedy〉排在第十二軌而不在頭尾，收尾是〈The End of Blood〉。1994 年的日本原盤出在 Overthrow Records，二十一年後由英國的 La vida es un mus 再發——接手的與同批《No Side》那次再發是同一家。",
+    "text": "《Tragedy》是高知 D-beat 樂團 Disclose 1994 年的 LP，吉他加了極重的 fuzz 與失真，回授成片不斷，被當成檢驗這團聲響的試金石。它處處致敬 Discharge，但失真與回授壓過其他聲部，有些寫法是 Discharge 沒做過的。主腦 Hideki Kawakami 彈吉他兼主唱，唱腔照著 Discharge 走，歌詞談核戰與戰後；樂團 1990 年起活動，2007 年隨他過世結束。名古屋的噪音 D-beat 團把 Disclose 與 Discharge 並列為範本，D-Clone 就是從翻唱 Disclose 起家。",
     "sourceUrls": [
-     "https://musicbrainz.org/ws/2/release-group/b1f7e538-22a3-3d03-ae15-dca63b132b59?fmt=json&inc=artist-credits+releases",
-     "https://musicbrainz.org/ws/2/release?release-group=b1f7e538-22a3-3d03-ae15-dca63b132b59&fmt=json&inc=media+labels+recordings&limit=100",
-     "https://musicbrainz.org/ws/2/release-group?artist=4e3ae10c-b302-40a2-be94-80d76547c4ea&fmt=json&limit=100&offset=0",
-     "https://musicbrainz.org/ws/2/artist/4e3ae10c-b302-40a2-be94-80d76547c4ea?fmt=json&inc=aliases+artist-rels",
-     "https://itunes.apple.com/search?term=Disclose&country=us&media=music&entity=musicArtist&limit=20",
-     "https://musicbrainz.org/release-group/b1f7e538-22a3-3d03-ae15-dca63b132b59"
-    ]
+     "https://en.wikipedia.org/wiki/Disclose",
+     "https://deadtankrecords.com/products/disclose-tragedy-lp",
+     "https://yourlastrites.com/2018/02/19/kawakami-forever-japanese-raw-punk-101-part/",
+     "https://sorrystaterecords.com/products/disclose-tragedy-12",
+     "https://www.maximumrocknroll.com/blast-from-the-past-d-clone/"
+    ],
+    "lengthReviewed": true
    },
    "preview": {
     "status": "unavailable",
@@ -1572,7 +1577,7 @@
     "descriptionKv": true,
     "albumOverride": true,
     "seedCards": true,
-    "apexPool": false
+    "apexPool": true
    }
   },
   {
