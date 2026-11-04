@@ -20,7 +20,7 @@
    **原因**：那條規則是為「一張卡寫一段主故事」設計的；**雲端線的下游多了一個鉤子層**，
    它要從 facts 裡挑切角、做同批反同構、還要替寫作層算字元預算——**兩條來源餵不動這三件事**。
    ⚠ **實務上雲端線幾乎不用 WebSearch**：走 Discogs API、MusicBrainz API（**User-Agent 必須是
-   `dip-vinyl-shop/1.0 (<聯絡信箱>)`**）、廠牌官網（含 `?s=` 站內搜尋與新聞稿頁）、
+   `dip-vinyl-shop/1.0 (+https://dipvinyl.tw)`，不得放任何 email**）、廠牌官網（含 `?s=` 站內搜尋與新聞稿頁）、
    `universal-music.co.jp` 商品頁、iTunes lookup，以及 repo 內既有的 Billboard OCR。
 
 3. **`key` 的前綴**：本檔寫「含 `desc2:` 前綴」，**但 CJK 鍵用的是 `desc4:`**
