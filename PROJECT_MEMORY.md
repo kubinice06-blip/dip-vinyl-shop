@@ -1,5 +1,11 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-04｜dip-vinyl-shop｜blink-182 四張硬蕊度 1 → 2
+
+店主：「他們的歌明明很硬蕊，硬蕊只有一顆星？」硬蕊度＝入耳難度（1＝旋律直白柔和；2＝主流易聽、有一點門檻）。blink-182 是失真吉他、快速的流行龐克，不算「柔和」，改 2；不到 3（3 以上是長篇、即興、不協和）。
+- 《Enema of the State》《Take Off Your Pants and Jacket》《Blink-182》 4/1/1 → 4/1/2（common → rare）；《Neighborhoods》 2/2/1 → 2/2/2（仍 common）。
+- seed 四列＋Firestore card_catalog accessibility／rarity 已寫（PATCH 200、讀回一致）。
+
 ### 2026-11-04｜dip-vinyl-shop｜新頂點盤線 ax10：英語圈地下 hardcore／punk 異端 +11（升格 2＋新上架 9）
 
 - **店主 11-04**：「繼續補，繼續查，應該還有地下冷門 hardcore punk 可以找。」ax10 管美國、加拿大、英國、愛爾蘭、澳洲、紐西蘭（ax9 另一工作階段管日亞歐陸拉美）。標準照放寬版：可信來源具體描述整張持續高強度（noise punk、thrashcore／powerviolence、noisecore、chaos punk）；結構清楚的 hardcore、一般 d-beat／crust、一般碾核不收。
