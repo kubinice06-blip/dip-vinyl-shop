@@ -1,5 +1,15 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-04｜dip-vinyl-shop｜頂點卡簡介重寫 s10：ad-19、ad-20 上線 60 張（流亡）
+
+- **內容**：ad-19（日本噪音：Incapacitants、K2、MSBR、Pain Jerk、ASTRO、ハナタラシ、灰野敬二、光束夜、高柳昌行；台灣 1976、夾子；八重山／沖繩民謠；紐約硬蕊 demo；里加 Dzeltenie Pastnieki；日本爵士與自主民謠私製盤；Altan Urag）、ad-20（蒙古／越南金屬、新加坡 Plainsunset、英國自由即興 Incus／ICP／Company、黑暗氛圍與噪音、Wackie's 系 reggae、紐約 downtown 即興）各 30 張，照 `apex-desc-base.md` 重寫。新增 `prompt-research-extra-s10.md`／`prompt-writer-extra-s10.md`。研究 3 Sonnet×2 批（WebSearch 104）、寫作 2 Opus×2 批。
+- **主線審稿**：ad-19 改 12 處（9 張）、ad-20 改 15 處（12 張）（`review-ad-19/20.json`）。刪掉的：唱片行文案當評價（Gai）、研究稿未證實的曲目（Gorilla Biscuits）、推論的錄音時點（1976）、「據記載」出處句；「查得到／沒有查到」等研究過程用語一律改成「沒有再版紀錄」。
+- **主線補查**：モア、真芽正恵研究層三塊全 none，用 Discogs API 補 credits、私製盤註記、廠牌沿革（真芽的 Harvest 是ミノルフォン旗下）、2015 年合輯收錄。
+- **上線**：KV ad-19 43 鍵、ad-20 30 鍵（desc2 60＋desc4 13）；寫前舊值 `kv-before-ad-19/20.json`。回讀 73/73 逐字一致；`front-check` 前台 30/30、30/30，CURATED 0；manifest 同步 60 處（26 份）。
+- **待店主**：seed 年份疑點三張（未動）：Аясын Салхи 2004（已知 CD 2008）、Plainsunset《The Gift》2003（他源 2004）、古謝美佐子《島美らさ》1992（三說）。
+- **驗證**：`kv-token-check` exit 0；`qa-batch research|out ad-19|ad-20` 只剩誤報；fix-spacing 0；字數 217–280。
+- 主要檔案：`batch-progress/apex-desc-20261104/{PLAN.md,rulings.md,review-ad-{19,20}.json,handoff-ad-{19,20}.json,kv-before-ad-{19,20}.json,prompt-*-extra-s10.md}`、`desc-tools/batches/{cards,research,output}/ad-{19,20}-*`、onboarding manifest 26 份。
+
 ### 2026-11-04｜dip-vinyl-shop｜新頂點盤線 ax5：異端 +13（升格 6＋新上架美國自由爵士 7；併 ax6 後全池 140）
 
 - **店主 11-04**：撤銷「不收能量型自由爵士」，自由爵士／即興中高強度、無調、噪音化的代表作可進異端，但仍要可信資料支持具體極端特徵。ax5 管卡池既有卡升格＋新上架美國自由爵士；ax6（另一工作階段）管美國以外的新藝人。
