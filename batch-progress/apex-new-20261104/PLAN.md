@@ -33,6 +33,7 @@
 | ax7 | 異端 D：卡池既有卡升格（放寬後標準；ax5 汰掉的升格候選、q2 刷掉的、店主點名裸のラリーズ、卡池自由爵士／即興／噪音盤重掃） | 升格候選 43 張／20 組＋舊研究稿重判約 40 張 | 不需（升格不新增藝人） | ✅ 升格 8（heresy 8）；異端 140 → 148 |
 | ax8 | 異端 D（店主 11-04 放寬：可信來源描述出具體、持續整張的高強度聽感即可）：卡池沒有的藝人——附文作品（Russolo、Group Ongaku、Schaeffer、Vomir《Proanomie》）、噪音史開創、harsh noise／PE、自由即興／噪音搖滾、極端金屬／noisecore／極端電子＋ax6 汰換稿重判 | 32（6 組＋ax6 撿回 5） | ar-d-270（✅ 介紹上線 8／skipped 0；271 未用） | ✅ 上線 10（heresy 10／一般 0）；Vomir《Claustration》改一般卡；研究汰 22；試聽 ready 1 |
 | ax9 | 異端 E（店主 11-04「應該還有地下冷門 hardcore punk」）：日本／亞洲／歐陸／拉美的 noise punk、crasher crust、早期 thrashcore、chaos punk——卡池既有卡升格＋新上架；7 吋走 `hardcore-7inch`，冷門的可改流亡（ax10 管美英愛加澳紐） | 4 組策展研究併層 | ar-d-271（272 未用） | ✅ 上線 13（heresy 8／pearl 5）＋升格 heresy 2（Confuse、Disclose）；策展研究提名 53、汰 38；試聽 ready 2；ar-d-271 介紹 12／skipped 1 |
+| ax10 | 異端 E（店主 11-04「應該還有地下冷門 hardcore punk」）：**美國、加拿大、英國、愛爾蘭、澳洲、紐西蘭** hardcore／punk——noise punk、thrashcore／powerviolence、noisecore、chaos punk；升格（ax10u）＋新上架；可改設流亡；7 吋／demo 走 `hardcore-7inch`（ax9 另一工作階段管日亞歐陸拉美） | 升格 5＋新卡 30（3 組策展） | ar-d-273、ar-d-274（✅ 介紹上線 6＋3／skipped 0） | ✅ 異端 +11（升格 2：The Locust、Discharge；新上架 9 全 heresy）；流亡 0（美加英 hardcore 最冷門的也 >300 listeners）；研究汰 21；試聽 ready 2 |
 
 - 提名數比目標多約兩成，留給研究層汰換。
 - 一個工作階段跑 2 批（ax1＋ax2、ax3＋ax4），照 CLAUDE.md 的併行規則。
@@ -119,3 +120,8 @@
 - 7 吋走 `hardcore-7inch` 的有 9 張；split（Zyklome A）卡面掛一團會錯，不收。
 - 同名團標籤污染：Wretched（美國死金）、Upset Noise（thrash metal）的 mapgenre3 被改寫；之後 hardcore 線上架後一定要看 card-subgenres。
 - 本區還沒查的：北歐 Asocial、Avskum、Totalitär、Kansan Uutiset；日本 Kuro、Execute、Zouo（研究判 none）、G.I.S.M.（metal 化，none）；韓台東南亞找不到可信來源。
+## ax10 收工筆記（2026-11-04，分支 `claude/apex-new-ax10`）
+- **異端 157 → 168（+11）**：升格 The Locust《Plague Soundscapes》、Discharge《HNSNSN》；新上架 Siege《Drop Dead》（demo，7 吋例外）、Crossed Out（7 吋例外）、Charles Bronson《Youth Attack!》、Dropdead、Despise You《West Side Horizons》、Extreme Noise Terror《A Holocaust in Your Head》、Agoraphobic Nosebleed《Altered States of America》、D.R.I.《Dirty Rotten LP》、Disorder《Under the Scalpel Blade》。
+- **命中率**：策展 30（第一輪 23＋補策展 7）、升格候選 5；收 11、汰 21。汰換主因仍是「查不到針對這一張的具體聽感」——英語圈 hardcore 的可信描述多半在 MRR 掃描檔、Decibel 名人堂、維基；1980 年代 UK crust／d-beat（Heresy、Doom、Deviated Instinct、Hellbastard、Chaos UK）幾乎只有一般描述或結構清楚。
+- **流亡 0**：美加英 hardcore 名團 Last.fm listeners 最低也 311（Septic Death），這條線不出流亡；真要找流亡得往 demo 卡帶與地方 7 吋，但那些沒有可信聽感描述。
+- **坑**：`cut-artist-intros-ax.mjs` 同一批切第二個 ar-d 號會覆蓋名冊（52482）；`publish-manifest` 的 card_catalog patch 本來就含 tier／apex。

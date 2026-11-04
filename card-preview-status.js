@@ -3817,4 +3817,11 @@ window.DipPreviewStatus = Object.freeze({
   "cheetah chrome motherfuckers|furious party": "unavailable",
   "peggio punx|la città è quieta... ombre parlano": "unavailable",
   "vorkriegsphase|scheiss krieg": "unavailable",
+  "crossed out|crossed out": "unavailable",
+  "charles bronson|youth attack!": "unavailable",
+  "dropdead|dropdead": "unavailable",
+  "despise you|west side horizons": "unavailable",
+  "extreme noise terror|a holocaust in your head": "unavailable",
+  "agoraphobic nosebleed|altered states of america": "unavailable",
+  "disorder|under the scalpel blade": "unavailable",
 });

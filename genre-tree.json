@@ -5,7 +5,7 @@
   {
    "id": "rock",
    "zh": "搖滾",
-   "count": 5462,
+   "count": 5471,
    "children": [
     {
      "id": "jrock-asia",
@@ -100,6 +100,58 @@
      ]
     },
     {
+     "id": "punk-wave",
+     "zh": "龐克新浪潮",
+     "count": 1039,
+     "children": [
+      {
+       "id": "punk",
+       "zh": "龐克",
+       "count": 458
+      },
+      {
+       "id": "post-punk",
+       "zh": "後龐克",
+       "count": 373
+      },
+      {
+       "id": "new-wave",
+       "zh": "新浪潮",
+       "count": 244
+      },
+      {
+       "id": "hardcore",
+       "zh": "硬蕊",
+       "count": 203
+      },
+      {
+       "id": "no-wave",
+       "zh": "No Wave",
+       "count": 118
+      },
+      {
+       "id": "goth",
+       "zh": "哥德暗潮",
+       "count": 94
+      },
+      {
+       "id": "pop-punk",
+       "zh": "Pop Punk / Emo",
+       "count": 92
+      },
+      {
+       "id": "garage",
+       "zh": "車庫與原型龐克",
+       "count": 54
+      },
+      {
+       "id": "industrial",
+       "zh": "工業",
+       "count": 37
+      }
+     ]
+    },
+    {
      "id": "indie-alt",
      "zh": "獨立另類",
      "count": 1035,
@@ -152,61 +204,9 @@
      ]
     },
     {
-     "id": "punk-wave",
-     "zh": "龐克新浪潮",
-     "count": 1033,
-     "children": [
-      {
-       "id": "punk",
-       "zh": "龐克",
-       "count": 454
-      },
-      {
-       "id": "post-punk",
-       "zh": "後龐克",
-       "count": 373
-      },
-      {
-       "id": "new-wave",
-       "zh": "新浪潮",
-       "count": 244
-      },
-      {
-       "id": "hardcore",
-       "zh": "硬蕊",
-       "count": 197
-      },
-      {
-       "id": "no-wave",
-       "zh": "No Wave",
-       "count": 118
-      },
-      {
-       "id": "goth",
-       "zh": "哥德暗潮",
-       "count": 94
-      },
-      {
-       "id": "pop-punk",
-       "zh": "Pop Punk / Emo",
-       "count": 92
-      },
-      {
-       "id": "garage",
-       "zh": "車庫與原型龐克",
-       "count": 54
-      },
-      {
-       "id": "industrial",
-       "zh": "工業",
-       "count": 37
-      }
-     ]
-    },
-    {
      "id": "metal",
      "zh": "金屬",
-     "count": 818,
+     "count": 821,
      "children": [
       {
        "id": "trad",
@@ -226,12 +226,12 @@
       {
        "id": "death",
        "zh": "死亡金屬",
-       "count": 157
+       "count": 159
       },
       {
        "id": "thrash",
        "zh": "鞭擊",
-       "count": 136
+       "count": 138
       },
       {
        "id": "prog-metal",

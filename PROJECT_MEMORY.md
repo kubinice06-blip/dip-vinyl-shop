@@ -5,12 +5,33 @@
 - **店主 11-04**：「繼續補，繼續查，應該還有地下冷門 hardcore punk 可以找。」照 ax7／ax8 放寬標準，套到 noise punk／crasher crust、早期 thrashcore、noisecore；冷門的可改流亡；7 吋走 `hardcore-7inch`。ax10（另一工作階段）管美英愛加澳紐。
 - **策展研究併層** 4 組（Sonnet，WebSearch 34）：提名 53，收 15、汰 38。證據主力是 Maximum Rocknroll 當年短評（團頁可直讀）＋Your Last Rites、Decibel。拉美 0 異端（已有串流或只有 Discogs）。
 - **新上架 13**：heresy 8——D-Clone《Creation and Destroy》、Gore Beyond Necropsy《Noise-A-Go Go!!!》、Anti Cimex《Raped Ass》、Mob 47《Kärnvapen Attack》、Kaaos《Totaalinen Kaaos》、Riistetyt《Valtion vankina》、Lärm《Straight on View》、Wretched《In nome del loro potere tutto è stato fatto...》；pearl 5——Upset Noise《Disperazione Nevrotica》、Declino《Rivolta e negazione》、Cheetah Chrome Motherfuckers《Furious Party》、Peggio Punx《La città è quieta... ombre parlano》、Vorkriegsphase《Scheiss Krieg》（異端證據不足改流亡）。**升格 heresy 2**：Confuse《Indignation》、Disclose《Tragedy》。
-- **異端 157 → 167、流亡 291 → 296**（seed 22670 列）；同級每藝人一張 0 重複。
+- **異端 157 → 167、流亡 291 → 296**（seed 22670 列）；同級每藝人一張 0 重複。合併 ax10（+11）後全池 **異端 178、流亡 296**（seed 22679 列），同級同藝人 0 重複。
 - **寫入**：card_catalog 15、KV 15 鍵回讀一致、試聽 ready 2／unavailable 11、seed 13 列＋改 2 列、Discogs 封面登錄 3、KV `mapgenre3` 改寫 3 鍵（同名團標籤污染）、子曲風樹與抽卡封面重建、c116 manifest 同步升格 2 張、情緒評分 `score-ax9`。
 - **審稿**：專輯簡介改 6 張（刪部落格票選、別張事實、單源改「被形容為」、補流亡理由）；藝人介紹 ar-d-271 上線 12 位（Declino skipped）、改 1 處；ar-d-272 未用。
 - **驗證**：prepare／published gate 0 error；`kv-token-check` exit 0；對 origin 232 分支 seed 去重 0 撞。
 - **留給本機**：`album_overrides.tier` 15 張（`batch-progress/add-20261104-ax9/album-overrides-tier.json`，後台「依卡池同步頂點旗標」）。
 - 主要檔案：`batch-progress/add-20261104-ax9/*`、`batch-progress/apex-new-20261104/PLAN.md`、`batch-progress/mood-cells-20261022/curation-ax9{a..d}.json`、`desc-tools/batches/{cards,research,output}/{add-20261104-ax9,ax9u}*`、`onboarding-manifest-add-20261104-ax9-20261104.json`、`onboarding-manifest-c116-20260910.json`、`seed_cards.json`、`data/artist-intros/*`、`batch-progress/artist-intro/roster-ax9-ar-d-271.json`、`batch-progress/mood-axes/score-ax9/`。
+
+### 2026-11-04｜dip-vinyl-shop｜新頂點盤線 ax10：英語圈地下 hardcore／punk 異端 +11（升格 2＋新上架 9）
+
+- **店主 11-04**：「繼續補，繼續查，應該還有地下冷門 hardcore punk 可以找。」ax10 管美國、加拿大、英國、愛爾蘭、澳洲、紐西蘭（ax9 另一工作階段管日亞歐陸拉美）。標準照放寬版：可信來源具體描述整張持續高強度（noise punk、thrashcore／powerviolence、noisecore、chaos punk）；結構清楚的 hardcore、一般 d-beat／crust、一般碾核不收。
+- **升格 2**：The Locust《Plague Soundscapes》、Discharge《Hear Nothing See Nothing Say Nothing》（邊緣收，可逆；硬蕊 4→5）。Drunks with Guns、Rudimentary Peni、Antisect 維持一般卡。
+- **新上架 9（全 heresy）**：Siege《Drop Dead》、Crossed Out（同名；兩張走 `hardcore-7inch`）、Charles Bronson《Youth Attack!》、Dropdead、Despise You《West Side Horizons》、Extreme Noise Terror《A Holocaust in Your Head》、Agoraphobic Nosebleed《Altered States of America》、D.R.I.《Dirty Rotten LP》、Disorder《Under the Scalpel Blade》（Discogs 封面登錄）。**流亡 0**（listeners 最低 311）。
+- **異端 157 → 168**，同級每藝人一張 0 重複（含互為子字串檢查）。策展 30＋升格候選 5，研究汰 21（多為查不到針對該張的聽感、或只是一般 crust／d-beat／grind）。
+- **寫入**：card_catalog 11（tier heresy＋apex，讀回 11/11）；KV 11 鍵回讀一致（升格舊值 `kv-before-ax10u.json`）；試聽 ready 2（Siege、D.R.I.）／unavailable 7；seed 新增 9 列、改 2 列；子曲風樹與抽卡封面重建；情緒評分 `score-ax10` 9 張全暴躁格。
+- **審稿**：改 6 張（禁語「必聽」×2、媒體名人堂與榜單名次、D-beat 指鼓型不是 riff、Siege〈Grim Reaper〉有薩克斯風無據、Disorder「拒簽 Riot City」與 Peel 評語各源相反）。
+- **藝人介紹**：ar-d-273 6 位＋ar-d-274 3 位上線（skipped 0）。`cut-artist-intros-ax.mjs` 同批第二號會覆蓋名冊，已手動併回。
+- **驗證**：prepare／published gate 0 error；對 origin claude/* 分支 seed 去重 0 撞；`kv-token-check` exit 0；`build-card-moods` 錨點 104/104。
+- **留給本機**：`album_overrides.tier` 11 張（`batch-progress/add-20261104-ax10/album-overrides-tier.json`）。研究層記下的舊簡介疑點：Drunks with Guns 卡是 1987 Chopper 專輯、舊簡介寫 1985 Cheap Beer 7 吋；Antisect 實為 1984-01 發行（seed 1983）。
+- 主要檔案：`batch-progress/add-20261104-ax10/*`、`batch-progress/apex-new-20261104/PLAN.md`、`batch-progress/mood-cells-20261022/curation-ax10{a,b,c}.json`、`desc-tools/batches/{cards,research,output}/add-20261104-ax10*`、`onboarding-manifest-add-20261104-ax10-20261104.json`、`seed_cards.json`、`data/artist-intros/*`、`data/discogs-cover-registry.json`、`batch-progress/mood-axes/score-ax10/*`。
+
+### 2026-11-04｜dip-vinyl-shop｜頻率光譜：FINE 換成 RADIO 電台模式（試聽播完自動轉到下一張）
+
+- **改動**：店主「先做電台版，播完換下一個，可以在下方控制面板啟動或關閉；將原本的 FINE 功能改成這個功能，名字也要換」。
+  - 撥桿下方 FINE → RADIO（aria、提示列文字同步）；FINE 的一格一張（`stepCard`、`FINE_PX`）移除，輪子一律連續掃描。
+  - `state.radio`：試聽自己播完（播放器回報 stopped、無錯誤碼、這張已出聲）→ 1.2 秒後 `radioNext`：以「同頻率再抽一張」的高斯權重在目前頻率附近挑（同格優先），跳過沒試聽、彩蛋、最近 200 張播過的，用搜尋的轉台動畫轉過去，停穩後照常自動試聽；沒有試聽／找不到的停 2.5 秒跳下一張。撥到 RADIO 那一下兼授權自動試聽；目前這張還沒聽就先播它。`dip-tune.js?v=65`。
+- **主要檔案**：`dip-tune.js`、`index.html`。
+- **驗證**：Playwright（iPhone 13，試聽以 3 秒音檔代）：撥到 RADIO 後 30 秒內自動接了 Tizzy Bac → JAY-Z → 伍佰 → Haitink → Young Thug（查無試聽 2.5 秒後跳過）→ 下一張；撥桿與 RADIO 字樣截圖正常；無錯誤。手機切到背景時轉台動畫會暫停（瀏覽器限制）。
 
 ### 2026-11-04｜dip-vinyl-shop｜頂點卡簡介重寫 s12（最後一棒）：ad-23 流亡 19＋尾批 ad-24 異端 24 上線，全線收尾
 
