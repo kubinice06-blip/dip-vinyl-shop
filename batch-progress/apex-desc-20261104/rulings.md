@@ -383,3 +383,29 @@
 - bulk put 43 鍵（desc2 30＋CJK 卡 desc4 13），wrangler 印 `Success!`；`verify-wave-kv` 回讀 43/43 逐字一致。
 - `front-check ad-10`：30/30 前台為新稿，CURATED 0。
 - manifest 同步 26 處（c41-chinese 3、c42-japan 1、c43-korea 6、c44-rock 3、c45-hiphop 1、c46-soundtrack-cross 5、c47-pop-country-latin 3、c50 3、c51 1）。
+
+## ad-11（異端 30 張，s6）
+
+- 第一批異端卡。派工補一份 `prompt-heresy-addendum.md`：研究層每張加 block `extreme`（極端的具體證據，盡量有數字）與 `reception`（當時反應／後來評價）各至少 2 條、coverage 加兩欄、fact 標「單一來源／多份」；寫作層前兩句寫極端在哪裡與為何被認真看待，出處只放 facts。
+- 研究 3 Sonnet（WebSearch a 8／b 7／c 7 次）、寫作 2 Opus。coverage 無 none。thin：Doyle extreme、Gorguts sound、Two Virgins status、Penderecki（研究稿查不到演奏者，第一句只交代作品）、Lucier、Ustvolskaya 全塊、Lachenmann（卡單沒指定錄音版本，不寫演奏者）、Cage/Tudor reception、Masonna／Boredoms 聲音、Galás 當年反應、Bailey、Cecil Taylor 當年反應、Brötzmann 當年反應、Conrad，照研究稿薄寫。
+- 研究層推翻舊簡介的主要錯誤（新稿未沿用）：Napalm Death「grindcore 是 Mick Harris 取的名」；Gorguts「1995 年首度解散」與誤植為 Obscura 評語的 Pitchfork《Colored Sands》句；Lucier 的 Nagra；Penderecki LSO／Abbey Road 與《The Shining》；Feldman 與 Rothko；Beefheart「未被承認的鼓手」（記譜者就是鼓手 John French）與 Groening 軼事；Royal Trux「Drag City 第一張」（DC1 是單曲，本盤是首張全長）；Masonna 年份與壓量；Yoko Ono 的 Bangs 誤引；Residents「四景」（六軌）；Bailey「題獻給 Aida Akira」；Walker「紀錄片捶打豬肉」；Conrad「唯一一張」；Coltrane「樂評一致推崇」（當時兩極）與 Liebman 誤引；Swans「工地零工」；Dead C「取樣 Lilburn」；Brötzmann「Don Cherry 取綽號」；Parker「找房間」。
+- 機器 QA：`qa-batch research ad-11` 全過；`out` 5 標記皆誤報（「票選」為 Opernwelt 評論家票選、作曲家全名、年份 1973 為作曲年、Don Van Vliet 本名）；fix-spacing 0；字數 254–280。
+
+### 主線審稿（2026-11-04，30 張逐張讀、逐句對研究稿；加問「讀完知不知道它極端在哪裡」）
+
+改 5 處（`review-ad-11.json`）：
+
+- `napalm death|scum`：「它常被視為 grindcore 的奠基之作」→「它常被列為 grindcore 的必聽專輯」。研究稿只有 Terrorizer 2009 歐洲 grindcore 必聽第 5、Decibel 稱啟發無數樂團，沒有「奠基」說法；不升級封號
+- `oleg malov|ustvolskaya: composition no. 2 dies irae`：刪「，木方塊的敲擊被形容為像在演出憤怒之神的重擊」。比喻（NYT 評語，出版商部落格間接轉引、單一來源），第 4 問
+- `john cage & david tudor|variations iv`：「，唱片節選其中七段，被視為一份典型的聲音剪貼。」→「，唱片節選其中七段。」。依據是部落格（Electronic Cottage），英文維基反而說這張常被誤認為拼貼、錯呈作品本意；兩說相反，刪
+- `the residents|eskimo`：「評價兩極，有樂評給滿分，也有人說它是沉悶陰濕的概念專輯，另被視為搖滾裡的新聲音。」→「發行後評價分歧，有樂評給五星，也有樂評嫌它是沉悶的概念專輯。」。三分句堆疊；「搖滾裡的新聲音」是地方報單一來源、語意空泛，刪；依研究稿 MusicHound 五星、Rolling Stone Album Guide「dreary and dank」
+- `captain beefheart & his magic band|trout mask replica`：「聽來像亂彈，其實多是事先寫好。」→「這些段落幾乎都是事先譜寫好的。」。反轉句（第 4 問）；依研究稿 Dean Blackwood 條
+
+其餘 25 張逐張審過，未改字。極端那一問：30 張前兩句都有長度、編制或手法的具體事實（Feldman 6 小時 7 分、Sorabji 約 4 小時 45 分、Helikopter 四架直升機、Lucier 32 次重錄、Scum 28 首 33 分鐘、Ascension 十一人未排練 40 分鐘等）。最薄的是 Royal Trux（「編排被拆解、人聲不照常規、製作緻密」＋C 面 14 分 32 秒單曲），研究稿只有二手摘要，維持。另核：Doyle「被視為自由爵士最兇猛的錄音之一」有 The Hum、Burning Ambulance、RBMA 多處；Merzbow 評價兩極（Pitchfork 8.7／AllMusic 2.5）照實寫；Boredoms「被視為 1980 年代最佳專輯之一」是單一榜單（Pitchfork 2002 第 89），用「被視為」。
+
+### 上線
+
+- `kv-token-check` 通過；舊值存 `kv-before-ad-11.json`（60 鍵，30 個非 null）。
+- bulk put 30 鍵（全為 desc2；本批無 desc4、無 CJK 卡），`Success!`；bulk get 回讀 30/30 逐字一致。
+- `front-check ad-11`：30/30 前台為新稿，CURATED 0。
+- manifest：0 處需同步。
