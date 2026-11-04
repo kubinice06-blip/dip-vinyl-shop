@@ -142,3 +142,29 @@
 - bulk put 48 鍵（desc2 30＋desc4 18，CJK 卡兩鍵同寫），`Success!`；`verify-wave-kv` 回讀 48/48 逐字一致。
 - `/album-desc` 逐張比對：30/30 前台為新稿。
 - manifest 同步 6 處（c32-folk 1、c35-shop-reels 1、c37-jazz 2、c41-chinese 2）。
+
+## ad-04（殿堂 30 張，s2）
+
+- 研究 3 Sonnet（WebSearch a 10／b 2／c 1 次；s2 全工作階段研究層合計 66 次＋主線 1 次）、寫作 2 Opus。coverage 只有新寶島康樂隊 sound 為 none：研究層 3 次中文搜尋＋主線 1 次都查不到編曲與樂器，寫作照「只寫可證事實、約 200 字」處理（成稿 245 字，無聲音段，僅寫一台一客、〈多情兄〉台客混唱）。
+- 研究層推翻舊稿的主要錯誤（新稿未沿用）：Hendrix「銀行電腦當機」；Pet Sounds 的 Carol Kaye 引言；New Order「被評為早期 house」；Dolls「Rundgren 評價保留」；Exile「Richards 準時到場」；Kooper「沒彈過風琴」；Purple Rain「Rolling Stone 誤植」與募款金額；Rumours 刀片、The Pit、上榜八年；Thriller 91 次混音（Jones 選的是第二版）；Songs in the Key of Life 合約總額與「一人包辦」；What's Going On「Gordy 說最糟」（Gordy 否認）；Hotel California「一個即興音都沒有」與年度唱片歸屬；Born to Run 母帶進泳池（實為 acetate）；Blue 發電報；Who's Next「唯一英國冠軍」與母帶被清；The Doors「一星期錄完」（約一個月）；Astral Weeks 兩萬美元現金；Leonard Cohen「配器過度」是 Sylvie Simmons 而非 Cohen 本人說的；Horses「女性首度中性姿態」。
+- 機器 QA：`qa-batch research` 2 標記（研究稿內千分位，不進簡介）；`out` 6 標記皆誤報（照新規不點名的榜單、專名）；fix-spacing 0；字數 238–280。
+
+### 主線審稿（2026-11-04，30 張逐張讀、逐句對研究稿）
+
+改 11 處（`review-ad-04.json`）：
+
+- `new york dolls|new york dolls`：「。在紐約花八天錄成」→「。專輯在紐約花八天錄成」。缺主詞
+- `the beatles|abbey road`：「；這是他們第一次用八軌機。」→「；整張改用 EMI 新的固態混音台錄製。」。**事實錯誤**：《The Beatles》（白色專輯）1968 年已用八軌；研究稿只說《Sgt. Pepper》是四軌，寫作層推論過頭。改用研究稿同條「整張只用 EMI TG12345 固態混音台」；研究稿 `ad-04-a.json` 該條已加註同步
+- `the beach boys|pet sounds`、`the velvet underground|the velvet underground & nico`、`the jimi hendrix experience|are you experienced`、`david bowie|the rise and fall of ziggy stardust and the spiders from mars`、`bruce springsteen|born to run`、`patti smith|horses`（6 處）：「美國國會圖書館國家錄音登記（表）」→「國家錄音登記表」。譯名統一（同 ad-01 裁定）
+- `pink floyd|the dark side of the moon`：「在 Billboard 200 共 736 週」→「在 Billboard 200 上榜共 736 週」。缺動詞
+- `marvin gaye|what's going on`：「也是 R&B 最早的概念專輯之一」→「也常被視為 R&B 最早的概念專輯之一」。研究稿原文「常被引為」，不寫成定論
+- `carole king|tapestry`：「在 Billboard 200 連續 15 週冠軍，隔年葛萊美拿下年度專輯、年度唱片、年度歌曲與最佳女流行人聲四項。」→「常被列為史上最偉大的專輯之一，在 Billboard 200 連續 15 週冠軍；專輯與其中兩首歌在隔年葛萊美共拿下四項，包括年度專輯。」。審稿第 1 問：第一句沒有地位（研究稿有 Rolling Stone 500 等多份榜單）；年度唱片、年度歌曲分屬〈It's Too Late〉〈You've Got a Friend〉，原句像全是專輯拿的
+
+其餘 19 張逐張審過，未改字。
+
+### 上線
+
+- `kv-token-check` 通過；舊值存 `kv-before-ad-04.json`（60 鍵，29 個非 null；Dark Side 兩鍵皆無）。
+- bulk put 31 鍵（desc2 30＋新寶島康樂隊 desc4 1），`Success!`；`verify-wave-kv` 回讀 31/31 逐字一致。
+- `/album-desc` 逐張比對：29/30 前台為新稿；**《The Dark Side of the Moon》仍是 CURATED**（s1 已預告：worker 對非 CJK 卡先讀 CURATED_DESCS）。desc2 已寫好，要店主在 worker 拿掉這筆 CURATED 並部署才會生效。
+- manifest 同步 6 處（c44-rock 5、ctw-taiwan-indie 1）。
