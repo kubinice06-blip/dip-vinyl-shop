@@ -67,6 +67,10 @@
 
 - 參考：Sade／Norah Jones 是 1；Cecil Taylor 是 5；Albert Ayler 是 4。
 - dark ambient／drone 通常 3–4；dub、soul、R&B 慢歌通常 1–2；自由爵士 4–5；主流 bop 2–3。
+- **音量與躁度下限（2026-11-04 店主定案）**：音量、失真、速度、嘶吼都算入耳門檻。整張大部分如此才套，不插電／抒情／柔和的照舊評；只往上調。
+  - 失真吉他為主的龐克、流行龐克、車庫、傳統／另類金屬、音牆型 shoegaze、噪音搖滾 → 至少 3（blink-182 是 3）。
+  - hardcore、thrash、crust／d-beat、death、black、grind、powerviolence、sludge → 至少 4。
+  - noise、harsh noise、極端反結構 → 5。
 
 ## 稀有度（不必手算，套用時重算）
 
