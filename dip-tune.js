@@ -26,13 +26,13 @@
   // 冷半邊 平靜青→冷冽冰藍白→暴躁電藍→頹靡紫。星圖、命中光暈、結果頁「頻率 ●」、就這張的線框都用這一套。
   const CELL_COLOR = { calm: '#f2cf5b', lift: '#ff9a3c', boil: '#ff4d3a', languid: '#e8578f', still: '#5ee6f0', crisp: '#bfe8ff', charge: '#4f8dff', decay: '#9b6bff' };
   const AX = { x: '#f2b341', y: '#8fe0a0', z: '#ff7a6b', cold: '#a08cff' };
-  const SIGMA = [0.2, 0.2, 0.3], FLOOR = 0.02, SWEEP_R = 10, FINE_PX = 14;   // 距離權重與掃描半徑（MOOD_LAUNCH_PLAN §4.2，σ 0.35 太寬，實測改 0.2）
+  const SIGMA = [0.2, 0.2, 0.3], FLOOR = 0.02, SWEEP_R = 10;   // 距離權重與掃描半徑（MOOD_LAUNCH_PLAN §4.2，σ 0.35 太寬，實測改 0.2）
   const idOf = (a, b) => (cfg.cardIdOf ? cfg.cardIdOf(a, b) : ((a || '') + '|' + (b || '')).toLowerCase().replace(/\//g, '-').trim());
 
   function configure(next) { cfg = Object.assign(cfg, next); }
 
   // ── 狀態 ──────────────────────────────────────────────────────────
-  const state = { p: { x: 25, y: 50, z: 50 }, spin: { x: 0, y: 0, z: 0 }, fine: false, seen: [], audioOn: true, holo: true, built: false, visible: false };
+  const state = { p: { x: 25, y: 50, z: 50 }, spin: { x: 0, y: 0, z: 0 }, radio: false, seen: [], audioOn: true, holo: true, built: false, visible: false };
   let DATA = null, CARDS = null, N = 0, T = null, BR = null, NAMES = null;
   let previewCard = null, litIdx = -1, idleTimer = 0, lastTurn = 0;
   let scene, camera, renderer, controls, geo, col, base, sizeAttr, pmat, marker, PX, PY, PZ, THREE_OK = false;
@@ -235,7 +235,7 @@
 .tune-led{left:69.611%;width:1.808%;height:1.132%;background:#2b2a1f;pointer-events:none}
 .tune-led.top{top:25.973%}.tune-led.bot{top:42.675%}
 .tune-led.on{background:#ffd34d;box-shadow:0 0 .8cqw #ffd34d}
-/* SCAN／FINE 撥桿：原稿槽位上疊三格（上｜中｜下），撥的時候走一格中間 */
+/* SCAN／RADIO 撥桿：原稿槽位上疊三格（上｜中｜下），撥的時候走一格中間 */
 .tune-lever{left:68.498%;top:30.078%;width:4.103%;height:9.696%;background:url(tune/switch.png) 0 0/300% 100% no-repeat;image-rendering:pixelated;pointer-events:none}
 .tune-lever[data-pos="mid"]{background-position:50% 0}.tune-lever[data-pos="down"]{background-position:100% 0}
 .tune-wheel{background:transparent;cursor:ns-resize;touch-action:none;overflow:hidden;top:55.485%;height:37.933%}
@@ -297,9 +297,9 @@ html.tune-inapp-lock body{padding-top:120px}
       <div class="tune-drum" id="tuneDz"><div class="strip"><span style="color:${AX.cold};text-shadow:0 0 1cqw ${AX.cold}">冷</span><span style="color:${AX.z};text-shadow:0 0 1cqw ${AX.z}">暖</span></div></div>
       <div class="tune-drum wide" id="tuneDcell"><div class="strip" id="tuneCellStrip"></div></div>
     </div>
-    <span class="abs tune-swlab top on" id="tuneSwTop">SCAN</span><span class="abs tune-swlab bot" id="tuneSwBot">FINE</span>
+    <span class="abs tune-swlab top on" id="tuneSwTop">SCAN</span><span class="abs tune-swlab bot" id="tuneSwBot">RADIO</span>
     <i class="abs tune-lever" id="tuneLever" data-pos="up"></i>
-    <button class="abs tune-sw" id="tuneMode" type="button" aria-label="SCAN 連續掃描／FINE 一格一張" aria-pressed="false"></button>
+    <button class="abs tune-sw" id="tuneMode" type="button" aria-label="SCAN 手動轉台／RADIO 電台：試聽播完自動換下一張" aria-pressed="false"></button>
     <i class="abs tune-led top on" id="tuneLedTop"></i><i class="abs tune-led bot" id="tuneLedBot"></i>
     <button class="abs tune-draw" id="tuneDraw" type="button" disabled>就這張</button>
     <div class="abs tune-wheel" data-axis="x" role="slider" tabindex="0" aria-label="能量" aria-valuemin="0" aria-valuemax="100" aria-valuenow="25"><canvas></canvas></div>
@@ -589,22 +589,15 @@ html.tune-inapp-lock body{padding-top:120px}
       g.drawImage(shade, 0, 0);
     }
     if (tile) tile.addEventListener('load', draw);
-    let drag = null, wacc = 0;
+    let drag = null;
     const sync = () => { node.setAttribute('aria-valuenow', Math.round(state.p[axis])); draw(); };
     const setV = nv => { const v0 = state.p[axis]; state.p[axis] = Math.max(0, Math.min(100, nv)); sync(); sweep(axis, v0, state.p[axis]); scheduleUpdate(); };
-    // FINE：不是「轉得比較慢」，是一格一張——每撥一格（拖 FINE_PX 或滾一下）就跳到這條軸上的下一張，輪子跟著咔一格
-    const step = dir => { if (stepCard(axis, dir)) { state.spin[axis] += dir * 7; sync(); } };
     node.addEventListener('pointerdown', e => { cancelTravel(); drag = { y: e.clientY, v: state.p[axis], ly: e.clientY, acc: 0 }; node.setPointerCapture(e.pointerId); e.preventDefault(); ensureAudio(); cfg.onGesture?.(state.audioOn); });
-    node.addEventListener('pointermove', e => { if (!drag) return;
-      if (!state.fine) { setV(drag.v + (e.clientY - drag.y) * 0.2); return; }
-      drag.acc += e.clientY - drag.ly; drag.ly = e.clientY;
-      while (Math.abs(drag.acc) >= FINE_PX) { const d = Math.sign(drag.acc); drag.acc -= d * FINE_PX; step(d); } });
-    const end = () => { if (drag && !state.fine) drag.v = state.p[axis]; drag = null; cfg.onGesture?.(state.audioOn); }; node.addEventListener('pointerup', end); node.addEventListener('pointercancel', () => { drag = null; });
-    node.addEventListener('wheel', e => { e.preventDefault(); ensureAudio(); cancelTravel();
-      if (!state.fine) { setV(state.p[axis] - Math.sign(e.deltaY)); return; }
-      wacc += e.deltaMode ? e.deltaY * 40 : e.deltaY; if (Math.abs(wacc) >= 40) { step(-Math.sign(wacc)); wacc = 0; } }, { passive: false });
+    node.addEventListener('pointermove', e => { if (drag) setV(drag.v + (e.clientY - drag.y) * 0.2); });
+    const end = () => { if (drag) drag.v = state.p[axis]; drag = null; cfg.onGesture?.(state.audioOn); }; node.addEventListener('pointerup', end); node.addEventListener('pointercancel', () => { drag = null; });
+    node.addEventListener('wheel', e => { e.preventDefault(); ensureAudio(); cancelTravel(); setV(state.p[axis] - Math.sign(e.deltaY)); }, { passive: false });
     node.addEventListener('keydown', e => { const up = e.key === 'ArrowUp' || e.key === 'ArrowRight', dn = e.key === 'ArrowDown' || e.key === 'ArrowLeft'; if (!up && !dn) return; e.preventDefault(); cancelTravel();
-      if (state.fine) step(up ? 1 : -1); else setV(state.p[axis] + (up ? 1 : -1) * (e.shiftKey ? 10 : 1)); });
+      setV(state.p[axis] + (up ? 1 : -1) * (e.shiftKey ? 10 : 1)); });
     new ResizeObserver(size).observe(node); size();
     return { draw: sync, set: setV };
   }
@@ -630,27 +623,6 @@ html.tune-inapp-lock body{padding-top:120px}
   function pump() { qTimer = 0; const c = queue.shift(); if (!c) return; scan(c); qTimer = setTimeout(pump, queue.length > 8 ? 30 : 55); }
   const OTHER = { x: ['py', 'pz'], y: ['px', 'pz'], z: ['px', 'py'] };
   function clearQueue() { queue.length = 0; clearTimeout(qTimer); qTimer = 0; }
-  // FINE 一格：沿這條軸往 dir 方向，在附近（另兩軸半徑內，找不到就放寬）找下一張，位置停在那張上
-  function stepCard(axis, dir) {
-    cancelTravel();
-    const key = 'p' + axis, o = OTHER[axis], cur = state.p[axis], p = { px: state.p.x, py: state.p.y, pz: state.p.z }, raw = target();
-    let best = null;
-    for (const R of [5, 9, 15]) {
-      const r2 = R * R; let bv = dir > 0 ? Infinity : -Infinity;
-      for (let i = 0; i < N; i++) { const c = CARDS[i], v = c[key]; if (dir > 0 ? v <= cur + 1e-6 : v >= cur - 1e-6) continue;
-        if ((c[o[0]] - p[o[0]]) ** 2 + (c[o[1]] - p[o[1]]) ** 2 > r2) continue;
-        // 停在這張時滾筒的格子＝這一軸取這張的值、另兩軸維持原位；對不上的跳過，免得選到跟滾筒不同格的盤
-        const tv = { x: raw.x, y: raw.y, z: raw.z, [axis]: c[axis] }; if (cellOf(tv.x, tv.y, tv.z) !== c.cell) continue;
-        if (dir > 0 ? v < bv : v > bv) { bv = v; best = c; } }
-      if (best) break;
-    }
-    if (!best) { sfxClick(); return null; }   // 到底了
-    const v0 = state.p[axis]; state.p[axis] = Math.max(0, Math.min(100, best[key]));
-    lastTurn = performance.now(); stopPreview(); sfxTurn(axis, v0, state.p[axis]); sfxTick();
-    clearQueue(); scan(best); scheduleUpdate();
-    return best;
-  }
-
   // ── 搜尋：找到的那張，三顆輪子依序轉過去（能量→質地→色溫），轉的路上照樣掃過沿途的唱片 ──
   let travelTok = 0;
   function cancelTravel() { travelTok++; }
@@ -1167,14 +1139,36 @@ html.tune-inapp-lock body{padding-top:120px}
   // 這裡不把 unlocked 設成 true——真的沒授權時，之後第一次點擊照樣解鎖並補播。
   function armBoot() { if (!state.audioOn) return; try { unlock.play().catch(() => {}); } catch (_) {} try { cfg.onGesture?.(true); } catch (_) {} }
   function replayBlocked() { if (!npBlocked || !previewCard || playing || !state.audioOn) return; npBlocked = false; cfg.onGesture?.(true); playPreview(); }
+  // ── 電台（2026-11-04 店主：取代 FINE，撥桿下方 RADIO）：試聽播完自動轉到下一張，轉輪照樣能隨時換台 ──
+  // 下一張：在目前頻率附近照「同頻率再抽一張」的高斯權重挑（同一格優先），跳過沒有試聽、彩蛋與最近 200 張播過的；
+  // 用搜尋的轉台動畫轉過去（三顆輪子依序轉、沿途掃過），停穩後照常自動試聽。沒有試聽的那張停 2.5 秒就跳下一張。
+  const RADIO_GAP_MS = 1200, RADIO_SKIP_MS = 2500, radioSeen = [];
+  let radioT = 0;
+  function radioPick() {
+    const skip = new Set(radioSeen);
+    for (let k = 0; k < 30; k++) { const c = weightedPick(); if (c && c !== previewCard && !c.egg && !c.card.previewUnavailable && !skip.has(c.i)) return c; }
+    return null;
+  }
+  function radioNext(delay) {
+    clearTimeout(radioT); if (!state.radio) return;
+    radioT = setTimeout(() => { if (!state.radio || !state.visible || playing) return; const c = radioPick(); if (!c) return;
+      radioSeen.push(c.i); if (radioSeen.length > 200) radioSeen.shift(); travelTo(c, true); }, delay);
+  }
+  // 撥到 RADIO：這一下是手勢，順便授權自動試聽；目前這張還沒聽就先播它，聽過了（或沒有這張）就直接轉下一張
+  function radioToggled() {
+    clearTimeout(radioT); if (!state.radio) return;
+    ensureAudio(); cfg.onGesture?.(true);
+    if (playing) return;
+    if (previewCard && audibleCard !== previewCard && !previewCard.card.previewUnavailable) playPreview(); else radioNext(300);
+  }
   function playPreview() {
     const c = previewCard; if (!c || !state.audioOn || !cfg.player) return;
     const card = c.card;
-    if (card.previewUnavailable) { setNowPlaying(false, '這張沒有試聽'); return; }
+    if (card.previewUnavailable) { setNowPlaying(false, '這張沒有試聽'); radioNext(RADIO_SKIP_MS); return; }
     playing = c; watchPlayer(); setNowPlaying(false, '找試聽中');
     Promise.resolve(cfg.player.playAlbum({ artist: card.artist, album: card.album, prefer: 'itunes', previewUrl: card.previewUrl || '', fixedOnly: !!card.previewUrl || !!card.previewUnavailable, cover: card.coverUrl || '', auto: true }))
-      .then(ok => { if (playing !== c) return; if (ok) setNowPlaying(true); else { playing = null; const code = cfg.player.debugState?.().code || ''; npBlocked = code === 'NO-AUTOPLAY' || !unlocked; setNowPlaying(false, npBlocked ? '點一下開聲音' : '這張沒有試聽'); } })
-      .catch(() => { if (playing === c) { playing = null; setNowPlaying(false, '這張沒有試聽'); } });
+      .then(ok => { if (playing !== c) return; if (ok) setNowPlaying(true); else { playing = null; const code = cfg.player.debugState?.().code || ''; npBlocked = code === 'NO-AUTOPLAY' || !unlocked; setNowPlaying(false, npBlocked ? '點一下開聲音' : '這張沒有試聽'); if (!npBlocked) radioNext(RADIO_SKIP_MS); } })
+      .catch(() => { if (playing === c) { playing = null; setNowPlaying(false, '這張沒有試聽'); radioNext(RADIO_SKIP_MS); } });
   }
   function setNowPlaying(on, msg) { for (const id of ['tuneNp', 'tuneHoloNp']) { const n = document.getElementById(id); if (!n) continue; n.classList.toggle('on', !!on); n.innerHTML = on ? '<i></i><i></i><i></i>' : (msg ? (id === 'tuneNp' ? '· ' : '') + msg : ''); } }
   // 播放器的狀態回報：只看目前這張，把 loading／error 的原因寫在小卡上
@@ -1183,10 +1177,12 @@ html.tune-inapp-lock body{padding-top:120px}
     if (unsubState || !cfg.player?.onStateChange) return;
     unsubState = cfg.player.onStateChange(st => {
       const c = playing; if (!c) return;
+      // 試聽自己播完：播放器回報 stopped、沒有錯誤碼，而這張已經出過聲（我們自己停會先把 playing 清掉，不會走到這裡）
+      if (st?.status === 'stopped' && !st.code && audibleCard === c && (!st.artist || st.artist === c.card.artist)) { playing = null; setNowPlaying(false); radioNext(RADIO_GAP_MS); return; }
       const card = c.card; if (!st || st.artist !== card.artist || st.album !== card.album) return;
       if (st.status === 'loading') setNowPlaying(false, '找試聽中');
       else if (st.status === 'playing') { audibleCard = c; setNowPlaying(true); }
-      else if (st.status === 'error') { playing = null; npBlocked = !unlocked; setNowPlaying(false, npBlocked ? '點一下開聲音' : '這張沒有試聽'); }   // 還沒點過就失敗多半是瀏覽器擋自動播放
+      else if (st.status === 'error') { playing = null; npBlocked = !unlocked; setNowPlaying(false, npBlocked ? '點一下開聲音' : '這張沒有試聽'); if (!npBlocked) radioNext(RADIO_SKIP_MS); }   // 還沒點過就失敗多半是瀏覽器擋自動播放
       else if (st.status === 'stopped' && st.code === 'NO-AUTOPLAY') { playing = null; npBlocked = true; setNowPlaying(false, '點一下開聲音'); }
     });
   }
@@ -1255,10 +1251,10 @@ html.tune-inapp-lock body{padding-top:120px}
   // ── 進出 ──────────────────────────────────────────────────────────
   let leverT = 0;
   function setModeUI(animate) {
-    const f = state.fine, pos = f ? 'down' : 'up';
+    const f = state.radio, pos = f ? 'down' : 'up';
     el.ledTop.classList.toggle('on', !f); el.ledBot.classList.toggle('on', f); el.swTop.classList.toggle('on', !f); el.swBot.classList.toggle('on', f); el.mode.setAttribute('aria-pressed', String(f));
     clearTimeout(leverT); if (animate) { el.lever.dataset.pos = 'mid'; leverT = setTimeout(() => { el.lever.dataset.pos = pos; }, 70); } else el.lever.dataset.pos = pos;
-    el.hint.textContent = f ? 'FINE：轉一格換一張' : 'SCAN：轉輪連續掃過　拖曳旋轉　滾輪縮放';
+    el.hint.textContent = f ? 'RADIO：試聽播完自動轉到下一張　轉輪隨時換台' : 'SCAN：轉輪連續掃過　拖曳旋轉　滾輪縮放';
   }
   function setAudioUI() { el.spk.setAttribute('aria-pressed', String(state.audioOn)); }
   // on：開或關；fromSpk：是不是喇叭鈕按出來的（要回寫站上的開關、這一下手勢可以武裝音訊）
@@ -1299,7 +1295,7 @@ html.tune-inapp-lock body{padding-top:120px}
     try { state.holo = global.localStorage.getItem('dipTuneHolo') !== '0'; } catch (_) {}
     el.holoBtn.onclick = () => { state.holo = !state.holo; try { global.localStorage.setItem('dipTuneHolo', state.holo ? '1' : '0'); } catch (_) {} setHoloUI(); sfxClick();
       if (!state.holo) hideHolo(); else if (previewCard && performance.now() - lastTurn > 700) showHolo(previewCard); };
-    el.mode.onclick = () => { state.fine = !state.fine; setModeUI(true); sfxClick(); };
+    el.mode.onclick = () => { state.radio = !state.radio; setModeUI(true); sfxClick(); radioToggled(); };
     el.now.onclick = () => { if (previewCard) emit(previewCard); };
     el.draw.onclick = () => { if (!previewCard) return; if (!previewCard.egg && previewCard.cell !== targetCell()) scan(nearest()); emit(previewCard); };
     setAudioUI(); setModeUI(); setHoloUI();
@@ -1408,7 +1404,7 @@ html.tune-inapp-lock body{padding-top:120px}
       if (msg) { msg.hidden = false; msg.textContent = text; } else if (host) host.innerHTML = `<p style="margin:0;padding:24px;min-height:50vh;background:#0b0c10;color:#e9e2c8">${esc(text)}</p>`; } }
     else { setAudioUI(); el.draw.disabled = false; hideHolo(); if (previewCard) armPreview(); }   // 從結果頁回來：全像板重新開機（放大時藏起來了）
   }
-  function stop() { state.visible = false; cancelTravel(); stopPreview(); sfxStop(); releaseSfx(); hideHolo(); inappLock(false); }
+  function stop() { clearTimeout(radioT); state.visible = false; cancelTravel(); stopPreview(); sfxStop(); releaseSfx(); hideHolo(); inappLock(false); }
 
   global.DipTune = { configure, start, stop, pickAgain, setAudio, litScreenPos, boatScreenPos, warpStart, CELL_COLOR, get state() { return state; } };
 })(window);
