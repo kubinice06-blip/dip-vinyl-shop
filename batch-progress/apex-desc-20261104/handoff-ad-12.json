@@ -1,0 +1,10 @@
+{
+ "batch": "ad-12",
+ "cards": 30,
+ "written": { "kvKeys": 32, "kvBefore": "kv-before-ad-12.json", "manifest": 3 },
+ "review": { "by": "cloud-main", "cards": 30, "changed": [
+  "einstürzende neubauten|kollaps", "nurse with wound|chance meeting on a dissecting table of a sewing machine and an umbrella",
+  "autechre|confield", "portal|vexovoid", "零與聲音解放組織|z.s.l.o." ] },
+ "qa": { "research": "pass（http src 4 張、1 簡體字，皆研究稿內）", "out": "pass（1 標記誤報）", "kvReadback": "32/32", "front": "30/30" },
+ "pendingLocal": {}
+}
