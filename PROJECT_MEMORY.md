@@ -1,5 +1,9 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-04｜dip-vinyl-shop｜Beyond《再見理想》設流亡＋簡介改流亡寫法
+
+店主：「好，直接上流亡，經典度維持。」seed tier `pearl`、card_catalog tier／apex 已寫；簡介照 apex-desc-base 流亡寫法重寫 249 字，KV desc2／desc4 寫入並回讀一致。流亡 290 → 291。album_overrides 待本機同步。紀錄 `batch-progress/beyond-20261104/`。
+
 ### 2026-11-04｜dip-vinyl-shop｜Beyond《再見理想》升傳奇
 
 店主問 Beyond 殿堂要不要從《樂與怒》換成《再見理想》；建議維持《樂與怒》（〈海闊天空〉的廣泛影響），店主改要《再見理想》升傳奇。
