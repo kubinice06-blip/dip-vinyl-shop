@@ -46,3 +46,28 @@
 - **22778**：速度數字出處說明：我用 ffmpeg 解碼 iTunes 30 秒試聽，低通後做低頻脈衝自相關，屬粗測，只寫在 notes，不進 facts；自相關常出現倍速／半速混淆，只作方向判斷。
 - **22779**：WebSearch 本組用 3 次（Maps、aus、Atobe）；BBC、Pitchfork、AllMusic、Discogs 網頁、Juno 本環境被擋或 403，改用 Discogs／MB API、Bandcamp、RA、Room40、Wikipedia。
 - 本組無推翻年份／廠牌／盤名，只推翻 Tosca 身分與 Tujiko 的掛名（合作）。聲音與 moodGuess 明顯不符：Atobe（強）、Tosca（完全不同類）、Maps／Cuushe／Fila（中）。
+
+## 研究 d 組
+- **22791**：Ulf Lohmann《Because》身分：Discogs 50915／MB 皆為 12 吋 KOM 31（Force Exposure 標 KOM 031EP），8 首全無題；專輯級發行是 CD《Because Before》（KOMPAKT CD 13，2001-10-25，Discogs 34645，11 首，其中 1–6 與 11 取自 Because）。卡單盤名、年份 2001、Kompakt 無誤，建議主線改收《Because Before》或保留並標 EP／迷你專輯。status thin（聲音事實查無）。
+- **22792**：The Orb《Bicycles & Tricycles》年份：Cooking Vinyl 英國版 2004-05-03、美國 2004-07-13；MB first-release-date 2003-06-11 是日本 V2 版。卡單 2003＋Cooking Vinyl 不並存，建議卡面年份 2004。facts 並列三地發行日，不下結論。
+- **22793**：Jonas Bering 聲音事實只有 Kompakt 文案、Qobuz 簡介、Brainwashed 摘要等第三方轉述；Kellman AllMusic 評論只見搜尋摘要鏡像、無可靠網址，不入 facts，只寫 notes。moodGuess 存疑（有節奏，y 偏高）。
+- **22794**：The Orb《Unknown Spheres》僅 MB／Discogs 兩份資料，無樂評無 Bandcamp，status thin、facts 8 條中 3 條是團史背景；moodGuess 無法驗證，建議主線自聽或汰換。曲名〈Majestic (Drum Mix)〉暗示有鼓段，不入 facts。
+- **22795**：William Orbit 維基頁含 2026 年辭世與榜單的發行後事件，不入 facts。AllMusic 評分不寫。聲音以 DeBaser 讀者評論與維基風格欄為主（有 hip hop 節拍、民族元素、人聲，非純無拍），moodGuess 輕度存疑。
+- **22796**：Eluvium《Lambent Material》『吉他』一說查不到來源，facts 只寫 Cooper 包辦樂器（Emily Wahl 單簧管除外）；moodGuess 的『暖糊吉他 drone』存疑。
+- **22797**：Fennesz《Mosaic》日期取英國版 2024-12-06（MB 日本版 12-04）。Bandcamp Daily 描述的噪音／毛絨質地與 Quietus 的 textural warmth 並存，facts 兩面皆寫，moodGuess 輕度存疑。
+- **22798**：WebSearch d、e 兩組合計用 5 次：Phaeleh Fallen Light、Strange Cargo III、Bering、Orb Unknown Spheres（無果）、Lohmann。BBC、Pitchfork、AllMusic、Discogs 網頁、Sputnik 評論頁本環境被擋或 403，改用 MB／Discogs API、Wikipedia、Bandcamp、Louder、Bandcamp Daily、Crack。
+- 本組推翻策展層：Orb B&T 年份（建議 2004）、Lohmann 形式（EP）。聲音與 moodGuess 明顯不符：Bering（有節奏）、Orb B&T（drum and bass／trip hop／饒舌）、Strange Cargo III（輕度）、Unknown Spheres（無法驗證）。
+
+## 研究 e 組
+- **22801**：Phaeleh《Somnus》：Bandcamp 直稱 beatless longplayer、素材為找到的聲音、曲名 One 至 Eleven，卡單『慢拍、柔和人聲』不符，moodGuess 存疑（靜成立）。
+- **22802**：Phaeleh《Fallen Light》是 dubstep／future garage 有鼓有低音（Discogs、Sputnik），x 風險屬實；Soundmouse 在特定曲目獻聲出自搜尋摘要，未入 facts。發行日 MB 10-25／Discogs 10-22 並列。
+- **22803**：Phaeleh《Tides》『第四張完整專輯』（維基）與 Crack『Fallen Light 為處女作』的編號說法未核實，facts 不寫序數。Sputnik 評論頁 403，該條來自搜尋摘要單一來源。
+- **22804**：Löffler《Mare》Bandcamp 載明鼓機＋找來物件打擊、deep house 底，有穩定節拍，x、y 貼邊風險屬實；速度與是否四拍底鼓查無。
+- 本組無推翻年份／廠牌／盤名。聲音與 moodGuess 明顯不符：Somnus（無鼓無人聲）、Fallen Light（偏律動）。
+
+## 主線研究汰換（不佔條號；2026-11-04）
+研究層交件後照各組「moodGuess 存疑」與身分推翻汰 16 → 定案 20（研究 a 7、b 5、c 1、d 5、e 2）。被汰卡移到 `dropped-cards.json`／`dropped-research.json`。
+- 身分：Tosca《Tia Pamelita》（MB rg 屬德州 Tosca Tango Orchestra，是探戈盤）；Ulf Lohmann《Because》（實為 12 吋 EP，KOM 31）；The Orb《Unknown Spheres》（無樂評、無 CAA 封面，聲音無從驗證）。
+- 能量（四拍／舞池）：Shinichi Atobe《World》（試聽粗測 125–130 BPM house 底鼓）、Maps《Turning the Mind》（125–133 BPM）、Thomas Fehlmann《Honigpumpe》（Tech House／Minimal）、《Lowflow》（Electro／IDM）、《Visions of Blah》（dub techno 四拍、暖度無來源；三張池中無同人錨點）、Burger/Ink《[Las Vegas]》（trance 標籤）、Phaeleh《Fallen Light》（dubstep）、Christian Löffler《Mare》（deep house 鼓機）、The Orb《Bicycles & Tricycles》（drum and bass、饒舌客串）、Tosca《Outta Here》（廠方稱更重節拍、neo-disco）。
+- 色溫／質地：Yppah《You Are Beautiful at All Times》（亮 breakbeat＋失真吉他牆）、Black Moth Super Rainbow《Cobra Juicy》（樂手自述更亮、無磁帶抖動，鼓偏冷）、Casino Versus Japan《Suicide by Sun》（吉他循環、曲名偏暗，z 風險）。
+- 留下但寫作照研究稿：Schnauss《No Further Ahead Than Tomorrow》是 2016《No Further Ahead Than Today》加曲更名重發（不寫「新作」）；Casino Versus Japan《Night on Tape》是舊錄音首度集結；Tujiko Noriko《Blurred in My Mirror》實為與 Lawrence English 合作（卡池掛名照 MB 留 Tujiko Noriko，正文交代合作）；Manual《Until Tomorrow》是脆拍 IDM 底＋暖旋律；Phaeleh《Somnus》無拍。

@@ -48,3 +48,10 @@
 - 22723：《Via Nostra》卡單 label「Sun Electric」不成立，改 Apollo（R&S 子廠牌，AMB 8950）；年份 1998 採 MB／Discogs，Wikipedia 內部 1997／1998／1999 不一；Discogs 風格含 Drum n Bass／Future Jazz，moodGuess 中度存疑。曲名〈7:07〉實長 4:18，勿寫成曲長。
 - 22724：《Present》Apollo（AMB 6943）1996-11-25；Wikipedia 描述「fragmented and melancholic、breakbeat、jungle、dub」，moodGuess 中度存疑（非穩定四拍、非單純暖墊），建議重估或汰換。
 - 22725：Ott《Skylon》Twisted TWSCD33 2008 成立；psybient／dub、有機類比質地，無 BPM 與底鼓來源，moodGuess 輕度存疑（Twisted 的 psy-dub 常見穩定四拍）。評分（Sputnik／RYM）依規則不入 facts。
+
+## 主線研究汰換（不佔條號；2026-11-04）
+研究層交件後照「moodGuess 存疑」汰 11 → 定案 14（研究 a 3、b 1、c 3、d 4、e 3）。被汰卡移到 `dropped-cards.json`／`dropped-research.json`。
+- 能量（舞池／快）：Mark McGuire《Beyond Belief》（編程鼓、drum 'n' bass 段）、Brothertiger《Golden Years》（disco 鼓、driving bass）、Timeshare'94《Couples Resort ®》（club freestyle、future funk）、Kornél Kovács《The Bells》（trancehall 節拍）、Superpitcher《Here Comes Love》（廠方自稱 klubpop）、DJ Seinfeld《Time Spent Away From U》（break-heavy、4/4）、Sun Electric《Present》（breakbeat／jungle）、《Via Nostra》（Drum n Bass 標籤）。
+- 色溫／質地：猫 シ Corp.《Palm Mall》（mallsoft 孤寂公司化商場，z 判冷風險）、《太陽。慰安。楽園。》（18 段 1–2 分鐘拼貼，不是厚殘響長段）、Desert Sand Feels Warm at Night《Sparkling Water》（無任何聲音來源，mallsoft z 風險）。
+- 卡單更正（研究層推翻）：Mark McGuire《Along the Way》年份 2013→2014（Dead Oceans 美國首發，MB 2013 是日本版誤植）；Brothertiger《Future Splendors》label 補 Mush Records；蜃気楼MIRAGE《Songs for Lovers》label 補 Elemental 95（與 waterfront dining 分軌，正文交代）；Bjørn Torske《Nedi Myra》label Tellé→Ferox Records（1998 首發）；Spacetime Continuum《Emit Ecaps》label Astralwerks→Reflective Records（Sharp 自家首發）。Kuniyuki《Feather World》年份照 MB 日本首發 2012 不改。
+- 卡池 genres：Mark McGuire《Along the Way》照池中同人兩張（electronic）留 electronic。
