@@ -58,3 +58,14 @@
 - **51518**　Genocide Organ《Leichenlinie》：1989-12，Tesco Organisation TESCO 001／De Fabriek FABPROD 13 聯名，291 張手工封套，非「Tesco 重發」。維基僅「殘暴」一句，找不到專評，第二可信網域缺，apex none（把握低）、status thin。
 - **51519**　Brighter Death Now《Necrose Evangelicum》：1995 CMI.36；Musique Machine 描述為迴圈鼓與合成器的窒息氛圍型死亡工業，accessibility 4，apex none，不建議汰換（可上一般卡）。
 - **51520**　依 2026-11-04 更正標準（51571）重判：Skin Crime、Macronympha、Haswell 由 none 改 heresy。本組 WebSearch 約 8 次、超過每組 3 次上限，因維基／AllMusic／Discogs 多頁無法直接取得；Discogs 以 API 取代。小結：heresy 3、none 6，建議汰換 1（Ramleh）。
+
+
+## 研究 d 組（51531–51540）
+- **51531**　apex 照 11-04 更正標準重判：Harry Pussy《Ride a Dove》判 heresy（三十分鐘無拍子尖叫／人群聲／失真拼貼，accessibility 5；證據 Tiny Mix Tapes、AllMusic 傳記、維基；把握中等，評述偏正面，主線可降 none）；Borbetomagus《Barbed Wire Maggots》判 heresy（兩面各二十餘分鐘雙薩克斯加吉他過載噪音牆，Debaser 樂評、維基；把握中等，近能量型自由爵士邊界）。
+- **51532**　Sissy Spacek 是 John Wiese 的計畫，seed 異端已有 John Wiese《Soft Punk》，同一藝人只能一張，判 none（非音響原因；若店主視團體與個人為不同藝人，音響上可判 heresy）。
+- **51533**　Hototogisu《Ghosts From the Sun》判 none：廠牌與 Brainwashed 描述為緩慢堆疊的 drone／回授長篇（約 90 分鐘），偏沉浸，不是刺耳牆。原始首發為 2004 Heavy Blossom CD-R 200 套，Important 2005 為重發（卡單 2005 可留）。
+- **51534**　Brainbombs《Urge to Kill》判 none：九首有 riff、有人聲的慢速噪音搖滾，極端在歌詞題材不在音響（AllMusic 3 星）。
+- **51535**　The Grey Wolves《Catholic Priests Fuck Children》判 none、status thin：查無針對本盤的樂評，只有 Discogs／MB；身分與年份（1996 Praxis Dr. Bearmann TH-15，德國 LP 限量 500）無誤。
+- **51536**　Harry Pussy 策展 mbNote 證據網址指向同名首張 01fd8ed8，以 8c9f2270 為準（Discogs master 196304 同為 1996 Siltbreeze SB-50）。moodGuess 存疑：整張是無拍子拼貼，非鼓搖滾。
+- **51537**　六張封面皆於 Discogs master／release 取得圖片，Hototogisu、Harry Pussy 等 CAA 無圖者不需汰換；本組無建議汰換。
+- **51572** Sissy Spacek《Sissy Spacek》研究 d 組因 John Wiese 已在異端判 none；主線改判 heresy：Sissy Spacek 是 Wiese＋Charlie Mumma 的雙人團，照 ax2 主線策展的 AMM／Keith Rowe、Ground Zero／大友良英先例，樂團與個人名義不同藝人鍵；音響研究層已確認 accessibility 5。另 Wold《Screech Owl》研究層改判 heresy，主線降回 none（有鼓點與黑金屬旋律，原判 accessibility 4）。兩條寫進 `apex-override.json`。
