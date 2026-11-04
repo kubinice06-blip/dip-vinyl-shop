@@ -74,3 +74,10 @@
   - 聲音零來源：Vladislav Delay《Demo(n) Tracks》（研究 a：查無專輯級樂評）、Klimek《Dedications》（研究 b：只有 Discogs 風格標記）、Trepaneringsritualen《Perfection & Permanence》（研究 d：儀式鼓、低吟查無來源）、Eric Holm《Surface Variations》（研究 e：只有廠牌文案，同系列《Andøya》已查出有拍）。
 - 不補位，定案 **19 張**。留給評分驗收：Mika Vainio（失真噪音爆發）、Prurient《Rainbow Mirror》（局部鼓機、尖銳段）、Kit Clayton《Lateral Forces》（末段穩定拍）、Murcof/Petit《First Chapter》（金屬打擊）、Dead Voices on Air《Hafted Maul》（cacophony 段）、Forest Swords《Compassion》（色溫）。
 - **場景潛力**：冷 ambient techno／Berlin 慢盤主盤已在池且多判躁或判輕，二線研究一查多帶脈動或暖和絃；Raster-Noton 系有半數查出暖或推進。本批是頹靡電子最難挖的一塊，同場景不再派。
+
+## 鉤子層（d、e）（22656–22660）
+- **22656** 交件：`desc-tools/batches/hooks/add-20261104-md36-hooks-d.json`（4）、`-hooks-e.json`（2），張數照研究稿（主線汰 16 後 d 4、e 2）。預算公式照 1793-B：`Array.from(hook)+Array.from(note) − 主故事： − 所有 → − 正文只寫上列各項。 − 這條骨架全批只走本張。`。逐筆（預算／hook 原始字元／加權）：Rainbow Mirror 228／30／25.5；Hafted Maul 225／27／22.5；Shap 228／20／20；Barotrauma 220／30／25；Compassion 215／23／23；Radio Amor 224／24／24。初稿 5 張超標（最高 299），整格捨去：Prurient 錄音地點與兩位成員名、Hafted Maul 逐曲長度、Shap「Spybey 獨力完成」、Compassion 前作名與 Massive Attack、Radio Amor 錄音年份與蒙特婁求學。壓完後回核：hook 依賴格全數移到 g1／g2（Rainbow 音牆→g2、Shap 取樣重複→g2、Compassion 三地→g2、Radio Amor 補「無鼓無詞」進 g2、Hafted Maul g2 補回「落進嘈雜」以撐 hook 的「喧囂」）。
+- **22657** 骨架歸屬（6 張 6 條，各張只在自己 note 寫歸屬句）：Rainbow Mirror＝計畫週年紀念作；Hafted Maul＝離開老樂團後另起的項目；Shap＝題獻亡友＋單一取樣變音高的手法；Barotrauma＝職業訓練的副產品成了專輯；Compassion＝多城市斷續寫成（空窗期接配樂案）；Radio Amor＝一個真人當概念盤主角。hook 四型：斷言（Rainbow、Shap）／場景（Hafted、Compassion）／人物定調（Barotrauma）／懸疑（Radio Amor）。
+- **22658** Spybey 跨兩張分軸：Hafted Maul 帶生平（Zoviet France 出身、溫哥華錄音、cEvin Key 客席），Shap 帶錄音手法（取樣重複、古語曲名、題獻）。引入法：Hafted＝名字直接領句（團名＋由誰組成）；Shap＝掛名欄（以 Dead Voices on Air 名義）。第二句句型配表：Rainbow「是…的藝名」／Hafted「由…組成」／Shap「以…名義」／Barotrauma「身兼…」／Compassion「就是…一個人」／Radio Amor「生於…」。六張 hook 只有 Rainbow、Barotrauma 帶名字，其餘 note 指派第二句補身分。
+- **22659** 日期「日」後一字：Rainbow 日由／Hafted 日交／Barotrauma 日，／Compassion 日問／Radio Amor 日經；Shap 只寫到年。媒體名一律不進 note：引評改「評論寫／當年一篇評論說／唱片行的介紹說／樂評聽到／有樂評稱」五種相異引入。Goettel 題獻標「克制帶過」；Andøya 只作陸地首作一句。
+- **22660** 自查：hook 間中文 4-gram 0 條（含對 md35 已交 26 句 hook）；開頭前四字 6 張互異、與 md35 不撞；hook 與 note 無逐字重複句。`qa-batch.mjs hooks`：只報 a／b／c 缺檔（另一位未交）；`chk-hook-crossgroup.mjs`：全部通過（2 組 6 張）。
