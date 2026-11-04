@@ -39,3 +39,18 @@
 - **52251** Thurston Moore《Sensitive / Lethal》：判 none，建議汰換。身分對（2008-04 CD、No Fun Productions NFP026、21:59／3:59／26:00）。Exclaim! 稱〈Sensitive〉「surprisingly affable」、有穩定原音吉他持續音，Darla 稱帶甜味的 drone 冥想，只有〈Lethal〉是持續回授（比作迷你版《Metal Machine Music》）；非整張高強度。Squid's Ear（403）、TMT（500）、Pitchfork 原文皆讀不到，AllMusic／TMT／Pitchfork／Plan B 全經維基轉述；策展引的「all-out noise」「最深的噪音錄音」不得進簡介。
 - **52252** 研究 f 組 WebSearch 共用 1 次；中段曲名各來源不一（Lonesome／Whisper），簡介勿寫。
 - **52268** 研究 f：Thurston Moore《Sensitive / Lethal》汰（Exclaim! 稱前半〈Sensitive〉affable、有原音吉他持續音，只有〈Lethal〉是回授牆——局部激烈）。封面：Archgoat CAA 回 500、Schaeffer CAA 無圖，改用 Discogs 主版圖（`covers.json`，主線目視核對）。
+
+## 研究 a 組
+- **52201** Vomir《Proanomie》：判 heresy（accessibility 5）。身分對（MB Album、2009-01-04、At War With False Noise ATWAR050、單曲 76 分 25 秒）。證據：Musique Machine（Batty）稱 Vomir「粗礪殘暴一成不變」＋維基牆式噪音定義（引 Quietus）；Proanomie 專屬樂評缺，寫作勿把 C39／Aphistemi 評語當此盤。SensCritique 一條未驗證。
+- **52202** Airway《Live at LACE》：判 none，建議汰換。身分對（LAFMS#06、1978 現場 12 吋、兩面各一首約 20 分，2006 Harbinger 重發）；證據只有維基（兩頁）與其鏡像，無樂評。
+- **52203** Luigi Russolo《Die Kunst der Geräusche》：判 heresy（地位型）。MB Compilation，Wergo T 5142（書目署 Schott 2000 書附 CD），13 首約 40 分；唯確定為同時代錄音的是 1921 年 Corale、Serenata（Antonio Russolo 灌錄），其餘單機示範與 Risveglio 的錄製年代未載，另含後人重建／致敬（Canzone Rumorista、Omaggio）。無原創專輯，唯一可得形態成立。聽感為 21–41 秒的機械片段，非整張高強度。證據：Public Domain Review（Tracy 2022）＋維基（引 Hegarty）。
+- **52204** Pierre Schaeffer《5 études de bruits / Études aux objets》：判 heresy（地位型，每首 2–4 分鐘）。Dreyfus 2010 12 吋，FDM 46050 36286 1，約 33 分。**與卡池《Musique concrète》(1962) 比對：不是同一批作品**——依 Frémeaux 冊子（Olivier Julien），1962 年 BAM LD 070《Musique concrète》是把 1959 兩張 45 轉 EP 合併的 GRM 多人合輯（Xenakis《Diamorphoses》、Ferrari、Philippot、Sauguet 與 Schaeffer 僅《Étude aux sons animés》《Étude aux allures》），與本盤無重疊曲目；seed 無 MBID，該卡即 BAM LD 070 為推斷。Cinq études 另見 1956 Ducretet-Thomson《Panorama》（僅三首），故本盤是完整專輯形態，非唯一。
+- **52205** Takehisa Kosugi《Catch-Wave》：判 none，建議汰換。身分對（CBS/Sony SOCM 88、1975、26:32＋22:27、錄於 1974-09 東京）；Frieze 稱杰作、聽感為 drone／恍惚。
+- **52206** Rhys Chatham《An Angel Moves Too Fast to See》：判 none，建議汰換（改一般卡亦可）。身分對（TOE-CD-802、2006、五樂章約 42:44）；Wire、Pitchfork（9.1）皆針對 2002 盒裝版，有鼓有推進，宏偉非難入耳。
+- **52207** NON《Pagan Muzak》：判 none，建議汰換。7 吋 17 條鎖槽（GB 3300、1978、約 17 分），無樂評描述聽感，MB 無曲長。
+- **52208** Z'EV《Production and Decay of Spacial Relations》：判 none（邊界，可放寬為 heresy）。BBR 006、1981、七首約 33:42；Scaruffi「continued cacophony」；Brainwashed 頁讀不到。
+- **52209** Kluster《Klopfzeichen》：判 none，建議汰換。身分對（1970 Schwann 300 張；1969-12-21 錄音室錄音，不是現場；MB 的 Compilation／Live 來自 CD 重發 bonus，releaseType 應為 Album，兩段約 22–24 分）。AllMusic 3 星。
+- **52210** 研究 a 組 WebSearch 共用 8 次（Vomir、Airway、Schaeffer、Russolo、Kosugi、NON、Kluster、Z'EV 各 1）。
+- **52269** 研究 a：Vomir《Proanomie》（單曲 76 分 25 秒恆定牆式噪音，Musique Machine＋HNW 維基）、Luigi Russolo《Die Kunst der Geräusche》（地位型：Intonarumori 唯一存世同時代錄音的彙整，Russolo 沒有原創專輯→「唯一可得形態」，§5.6 合輯例外；簡介不得寫成整張刺耳）、Pierre Schaeffer《5 études de bruits / Études aux objets》（地位型：具象音樂起點，Frémeaux 冊子＋維基）收異端。汰：Airway（只有維基同網域）、小杉武久（drone／恍惚）、Chatham（有樂章有鼓、宏偉）、NON（7 吋鎖槽、無聽感樂評）、Z'EV（有節奏、只有 Scaruffi 一句）、Kluster（只有「冷峻荒涼」、AllMusic 3 星）。
+- **52270** Schaeffer 兩張的關係：研究層依 Frémeaux 冊子查出卡池《Musique concrète》（seed 1962、無 MBID）推斷是 BAM LD 070——GRM 多人合輯，Schaeffer 只佔兩首、與本盤無重疊曲目。所以《5 études》**不是取代同一批作品**，而是 Schaeffer 名下第一次有異端；原卡本來就是一般卡，不動。原卡的掛名（多人合輯掛 Schaeffer 一人）另記疑點留給本機，不在本批改。
+- **52271** 本批異端定案 **10 張**：Vomir、Russolo、Schaeffer、Mainliner、Revenge＋ax6 撿回 5（Die Like a Dog Quartet、グループ・音楽、Sarcófago、Archgoat、Francisco López）。提名 32（a 10、b 2、c 3、d 3、e 5、f 2＋主線點名）、汰 22。離「補約 30」差 20：卡池已極深（開工掃 190 位，過半已有卡），剩下的二線多半只有 Discogs／零售文案或局部激烈。照實上架，不再降證據門檻。卡單縮成 10 張（全量留 `cards-all-23.json`）。
