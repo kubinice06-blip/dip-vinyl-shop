@@ -256,3 +256,31 @@
 - **改 1 張**：`charles mingus|mingus ah um`：「是 Charles Mingus 在 Columbia 的第一張專輯，2003 年入選美國國家錄音登記表。1959 年 5 月，他帶著」→「是 Charles Mingus 1959 年在 Columbia 的第一張專輯，2003 年入選美國國家錄音登記表，2013 年進葛萊美名人堂。同年 5 月，他帶著」，並刪「〈Boogie Stop Shuffle〉是十二小節藍調」壓字（290→261）。依據研究稿 `ad-05-b`/`c` 的 status 條（2013 葛萊美名人堂）。已單鍵重寫 KV（`Success!`）。
 - **用語裁定**：新規說「入選」不寫，指的是遊戲用語（入選殿堂之類）；「入選國家錄音登記表」是外部事實，照 s1 先例保留。
 - 兩批審稿改動總計：ad-05 19 處（11 張，見 `review-ad-05.json`，含本段 2 處）、ad-06 8 處（8 張）。
+
+## ad-07（殿堂 30 張，s4）
+
+- 研究 3 Sonnet（WebSearch a 0／b 0／c 1 次；幾乎全靠 WebFetch 讀英文維基，樂評多為維基轉引）、寫作 2 Opus。派工時補了兩條新規（前兩句講夠格理由、出處不寫進簡介；研究 fact 註明單一來源或多份榜單）。coverage 無 none。thin：Cream、MC5、Transformer、Goodbye Yellow Brick Road、Plastic Ono Band、Harvest、Pink Moon、Rain Dogs、Aja、British Steel、Number of the Beast 的聲音塊，The Specials 的製作塊，照研究稿薄寫。
+- 研究層推翻舊簡介的主要錯誤（新稿未沿用）：Cream「瑞典與芬蘭雙雙封王」（瑞典黑膠、芬蘭、澳洲）與 Ertegun／Otis 軼事、Love「臨終遺言」、Layla「Allman 彈出前奏 riff」、MC5「擅印 Elektra 商標」、T. Rex「首張 glam 冠軍、蟬聯 6 週」（8 週）、Pink Moon 母帶傳聞、All Things Must Pass〈Isn't It a Pity〉三度遭拒、Graceland 盜版卡帶、Harvest「唯一美國冠軍」、Blondie「美國冠軍」（專輯最高第 6）與 1600 萬張、Kate Bush「EMI 要求改名」、Yes「即興」、Iron Maiden 惡夢來源與砸唱片原因、Specials 單曲限量與 Costello 軼事。
+- 寫作特注禁寫：上列各項，加 MC5 的 Q／VH1 名次（是歌曲）、Raw Power 2020 名次、Rolling Stone 單一名次。
+- 機器 QA：`qa-batch out ad-07` 標記 15 個皆誤報（團員本名、年代用年份、葛萊美名人堂、Layla 互指 Eric Clapton）；fix-spacing 0；字數 219–280。
+- 卡池檢查：本批 30 張現行簡介都來自 desc2，無 desc4、無 CJK 卡。
+
+### 主線審稿（2026-11-04，30 張逐張讀、逐句對研究稿）
+
+改 6 處（`review-ad-07.json`）：
+
+- `john lennon|john lennon/plastic ono band`：「也常被列為披頭四成員單飛後最重要的作品之一」→「也被視為披頭四成員單飛後最重要的作品之一」。研究稿只有 Mojo 與 High Fidelity 兩位樂評的說法，不是多份榜單
+- `john lennon|john lennon/plastic ono band`：「發行時評價兩極，有樂評認為它赤裸得令人難以忍受。」→「發行時樂評評價兩極。」。轉述 The Times 樂評原話等於寫出處
+- `the stooges|fun house`：「因此也被稱為龐克爵士」→「整張也被稱為龐克爵士」。「龐克爵士」是 Greg Kot 等人對整張的歸類，去掉推論
+- `tom waits|rain dogs`：「，發行當年在英美樂評的年度榜名列第一，常被列為 1980 年代最佳專輯之一。」→「，常被列為 1985 年與 1980 年代最好的專輯之一。」。描述榜單而非地位（同 s3 Marquee Moon 裁定），且年度第一只有 NYT 與 NME 兩份
+- `elvis costello|this year's model`：「，當年在兩份樂評年度榜名列第一，常被列為 1970 年代最佳專輯之一。」→「，常被列為 1978 年與 1970 年代最好的專輯之一。」。同上；1978 年度榜研究稿有五份
+- `judas priest|british steel`：「也是英國重金屬新浪潮最早的里程碑之一」→「也被視為英國重金屬新浪潮最早的里程碑之一」。維基編者歸納，不直述
+
+其餘 26 張逐張審過，未改字。另核：Layla「唯一的錄音室專輯」出自研究稿 notes（非 facts），屬實（Derek and the Dominos 只發過這一張錄音室專輯），照留；Transformer「Ronson 寫了〈Perfect Day〉的弦樂」研究稿 sound 條有，照留。
+
+### 上線
+
+- `kv-token-check` 通過；舊值存 `kv-before-ad-07.json`（60 鍵，30 個非 null）。
+- bulk put 30 鍵（全為 desc2），`Success!`（第一次輸出被 npm notice 截掉看不到，重跑一次親眼見到 `Success!`，內容相同）。
+- `verify-wave-kv` 回讀 30/30 逐字一致；`front-check ad-07`：30/30 前台為新稿，CURATED 0。
+- manifest：0 處需同步。
