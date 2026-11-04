@@ -100,3 +100,4 @@
 - **52458** 本組 WebSearch 共 3 次（Disorder 2、Cryptic Slaughter 1）；AllMusic、metalmusicarchives、Discogs 未讀到。結論 heresy 3、none 3、建議汰換 0。
 - **52478** 研究 e 組照判：收 **Agoraphobic Nosebleed《Altered States of America》**（100 首多為數秒，Tinnitist＋Exclaim!；Exclaim! 評 2008 重發，只取原盤描述）、**D.R.I.《Dirty Rotten LP》**（22 首 16:41，deathmetal.org＋MRR；MRR 強調 tight，簡介不以「糊」為主軸）、**Disorder《Under the Scalpel Blade》**（MRR #15 描述原始糊爛的錄音＋Svart 廠牌輔證；15 首約 33 分，平均 2 分多，簡介不寫「每首不到兩分鐘」）。汰 Insect Warfare（只有一般 grindcore 的快，52476）、Cryptic Slaughter（速度變化、金屬段）、Nails（breakdown）。卡單 9 張。
 - **52479** Disorder 封面：CAA 無圖，主線用 Discogs API 讀 release 1227189（Disorder Records AARGH!-1、1984、UK、LP 15 軌，與 MB 一致），主圖 HTTP 200、目視封面印「Under the Scalple Blade／Disorder」（原封面拼法），寫 `covers.json`＋登錄 `data/discogs-cover-registry.json`（628 筆）、重產 `DISCOGS-COVERS.md`。
+- **52480** 情緒評分 `score-ax10` 9 張（Opus；high 4、mid 5）全落暴躁格；merge → build-priors → build-scale v0（錨點 104/104）→ build-card-moods 寫入。
