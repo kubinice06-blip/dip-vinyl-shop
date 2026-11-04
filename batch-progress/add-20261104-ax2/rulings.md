@@ -36,6 +36,19 @@
 - 本組 10 張全判 apex none（無一張取得 7 星可信依據）；異端藝人撞名檢查（seed heresy 85 位）無撞名。
 - 程序註記：WebSearch 用了 5 次（超過每支 3 次上限），之後只用 WebFetch／MB API；Discogs／AllMusic 403。
 
+## 研究 b 組（51611–51620）
+- 51611 Dufrêne《Cri-Rythmes》：原版是 1977 德國 S Press Tapes C90 卡帶（65/66），黑膠為 2018 Recital R54 再版（250 張）；卡單 label 空白，主線定 S Press Tapes／Recital；apex 依 51571 新標準判 heresy（全盤一人嘶吼無樂器無拍、廠牌說明極端，但證據僅廠牌說明＋維基，較弱）。
+- 51612 Ian Pace《Finnissy》：廠牌實為 Métier（MSV77501），非卡單的 Divine Art；5 張 CD、約 5.5 小時；樂評對難聽程度分歧（Sealey 稱親近、Clements 稱苛刻）；apex none。2000 完成／2001 首演說法未核實，未入 facts。
+- 51613 Chion《Requiem》：label 補 INA-GRM AM 689.05；作品 1972–73、首演 1973-03-19，LP 與 Grand prix 為 1978；moodGuess 偏高（有合唱朗讀，非一路音牆），建議主線酌降；apex none。
+- 51614 Stratos《Metrodora》：Cramps CRSLP 6205，1976；Tofani 合成器 Discogs 有列、Rolling Stone Italia 稱只有人聲，兩說並存；7000 Hz 數據單一來源（維基）用「據稱」；apex none。
+- 51615 Rhodri Davies《Trem》：推翻策展層「電子豎琴」——實為原聲踏板豎琴，僅一首加敲擊／收音機／錄音機；label Confront（Confront 11，2002 CD；LP 為 2014 Alt Vinyl）；年份取 2002；apex none。
+- 51616 MEV《Friday》：推翻策展層三處——label 是英國 Polydor 583 769（非 BYG Actuel，BYG 發的是《The Sound Pool》）；MB 與 Discogs 是單張 Album，不是 Compilation，releaseException 可撤；是否現場盤查無可靠說法，facts 不稱現場；apex none。
+- 51617 Mattin《Proletarian of Noise》：hibari music hibari-10（日本 2006 CD）；全盤約一小時，後半 31 分鐘是 Lisa Rosendahl 朗讀；只有維基與 Sputnik 使用者評論，status thin；聲音事實不足。建議汰換（聲音證據不足、非噪音牆；若主線仍要收只能走一般卡）；apex none。
+- 51618 Pita《Get Out》：Mego mego 029，1999-10；The Wire 1999-10 片段（郵件論壇轉貼）稱「耳朵的享受也是創傷」並帶鉤子，Falter 稱筆電演出密集而美；apex none（有鉤子、動態大、被視為 Mego 入門，不算整張難入耳）。
+- 51619 Marhaug《The Shape of Rock to Come》：推翻策展層——label 是 Smalltown Supersound STS 084 CD，非 Pica Disk；概念為抽掉硬搖滾的節奏旋律人聲只留噪音（SNL）；apex 依新標準判 heresy，但 Brainwashed 評論原頁 404，僅搜尋摘要轉述，證據偏弱，主線可降 none。
+- 51620 Abruptum《Obscuritatem Advoco Amplectère Me》：DSP Anti-Mosh 004，1993-03-15（1992 錄），初版 1000 張；年份無誤（派工訊息 1997 是 IT 離團年）；兩首各 25 分鐘、無歌曲結構；apex 判 heresy（Debaser 評論＋維基缺引註＋Discogs，可信度中等）。
+- 本組 apex 彙總：heresy 3（Dufrêne、Marhaug、Abruptum），none 7，建議汰換 1（Mattin）。研究稿 `desc-tools/batches/research/add-20261104-ax2-b.json`。
+
 ## 研究 c 組（51621–51630）
 - 51621 Teitanblood《Death》：label 補為 Ajna Offensive＋Norma Evangelium Diaboli 共同發行（2014-05-13）；apex none（riff／鼓驅動的極端金屬，Pitchfork 7.4，無「最極端」可信依據）。
 - 51622 Gnaw Their Tongues《All the Dread Magnificence…》：年份 2009 成立（Burning World LP 2009-05-10／Crucial Blast CD，Bandcamp 的 2012 為數位上架日）；CD 9 首／LP 12 首；代表作疑慮無來源可斷，保留；apex none。

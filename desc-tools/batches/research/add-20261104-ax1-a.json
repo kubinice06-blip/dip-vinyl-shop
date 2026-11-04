@@ -482,5 +482,61 @@
    ]
   },
   "coverage": "full"
+ },
+ {
+  "key": "desc2:Werewolf Jerusalem|God Has Shot Himself",
+  "artist": "Werewolf Jerusalem",
+  "album": "God Has Shot Himself",
+  "facts": [
+   {
+    "f": "Werewolf Jerusalem 是美國音樂人 Richard Ramirez 的噪音／drone 側計畫，維基稱它是他的『靜態噪音（static noise）』個人計畫；Ramirez 也是 Black Leather Jesus 的創辦人，維基說他是美國最早的 harsh noise 音樂人之一，風格欄列 harsh noise wall、power electronics 與 drone。",
+    "src": "https://en.wikipedia.org/wiki/Richard_Ramirez_(musician)"
+   },
+   {
+    "f": "MusicBrainz 的藝人說明同樣把 Werewolf Jerusalem 標為『Richard Ramirez 的噪音／drone 側計畫』，國別美國。",
+    "src": "https://musicbrainz.org/release-group/572d119f-1c35-437c-8092-7ee73fd9fe4c"
+   },
+   {
+    "f": "《God Has Shot Himself》2003 年由丹麥廠牌 Legion Sudan 以 CD-R 發行，目錄號 LS.515，整張是一首長約 31 分 50 秒的單曲目。",
+    "src": "https://www.discogs.com/release/312690"
+   },
+   {
+    "f": "同一張後來有多次重發：MusicBrainz 另收錄 2006 年 3 月 20 日、2023 年 9 月 1 日與 2025 年 5 月 8 日（美國與全球數位）的版本。",
+    "src": "https://musicbrainz.org/release-group/572d119f-1c35-437c-8092-7ee73fd9fe4c"
+   },
+   {
+    "f": "Discogs 把風格標為 Noise，社群評分平均 4.45（11 人），想要的人數 96 遠多於持有的 22 人。",
+    "src": "https://www.discogs.com/release/312690"
+   },
+   {
+    "f": "維基『Harsh noise』條目說 harsh noise wall 是 1990 年代出現的次類型，特徵是『響亮、失真、磚牆壓縮式的靜電聲』，並稱 Richard Ramirez 是 harsh noise wall 的早期開創者之一。",
+    "src": "https://en.wikipedia.org/wiki/Harsh_noise"
+   },
+   {
+    "f": "聲音：整張只有一首 31 分 50 秒的連續噪音，沒有分段、節奏或旋律，屬於靜態、恆定的牆式噪音。",
+    "src": "https://www.discogs.com/release/312690"
+   }
+  ],
+  "hookCandidates": [
+   "一首 31 分 50 秒、不分軌的靜態噪音牆",
+   "Black Leather Jesus 創辦人藏在丹麥廠牌的 HNW 側計畫"
+  ],
+  "sound": "整張是一首約 32 分鐘的連續靜態噪音牆，重失真、無旋律無節奏、起伏極小。",
+  "keyTracks": [
+   "God Has Shot Himself"
+  ],
+  "status": "thin",
+  "notes": "身分與推翻：策展層把 Werewolf Jerusalem 當獨立藝人；MB 與維基皆載明它是 Richard Ramirez 的側計畫，即與本批 Richard Ramirez《Rape!》是同一人。異端池同人只准一張：seed 無 Ramirez／Black Leather Jesus／Werewolf Jerusalem，兩張同批都提時，我把 Rape!（聲音描述為『多變』）判 none，把本張（單曲目 HNW 牆）判 heresy，所以不撞。國別：MB 藝人國 US，MB 第一個 release 與 Discogs 為丹麥廠牌 Legion Sudan（DK），卡單 DK 是廠牌所在地。status thin：沒有找到樂評或廠牌文案專門描述這張的聲音，聲音描述只能從 Discogs 曲目（單曲目 31:50）與維基的類型描述推得；策展層說『廠牌描述其聲音核心為 harsh noise wall』我抓不到頁面證實（Legion Sudan Bandcamp 404）。moodGuess 無存疑。apex 判 heresy 是弱判定：理由是整張單一連續 HNW 牆（acc 5）、維基載其為 harsh noise wall／static noise 計畫；缺少針對這張的可信評論，主線若嫌證據不足可改判 none，風險低。",
+  "apex": {
+   "verdict": "heresy",
+   "accessibility": 5,
+   "why": "整張是一首約 32 分鐘不分段的靜態噪音牆；維基把該計畫歸為 Ramirez 的 static noise／harsh noise wall 計畫，harsh noise wall 本身被描述為磚牆壓縮式的失真靜電聲。缺少針對這張的專門評論，屬弱判定。",
+   "evidenceUrls": [
+    "https://en.wikipedia.org/wiki/Richard_Ramirez_(musician)",
+    "https://en.wikipedia.org/wiki/Harsh_noise",
+    "https://www.discogs.com/release/312690"
+   ]
+  },
+  "coverage": "thin"
  }
 ]
