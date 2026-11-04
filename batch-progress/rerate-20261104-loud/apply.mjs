@@ -58,9 +58,11 @@ if (process.argv.includes('--write')) {
   // manifests
   const files = fs.readdirSync('.').filter(f => /^onboarding-manifest-.*\.json$/.test(f));
   for (const d of fs.readdirSync('batch-progress')) { const p = `batch-progress/${d}/onboarding-manifest.json`; if (fs.existsSync(p)) files.push(p); }
-  let mf = 0, mc = 0; const seen = new Set();
+  let mf = 0, mc = 0; const seen = new Set(), unfmt = [];
   for (const p of files) {
-    let m; try { m = J(p); } catch { continue; }
+    const raw = fs.readFileSync(p, 'utf8'); let m; try { m = JSON.parse(raw); } catch { continue; }
+    // 保留原排版：找能逐字還原的縮排／結尾換行，找不到就略過並列出
+    const fmt = [[1, ''], [1, '\n'], [2, ''], [2, '\n'], [0, ''], [0, '\n'], ['\t', ''], ['\t', '\n']].find(([n, e]) => (n ? JSON.stringify(m, null, n) : JSON.stringify(m)) + e === raw);
     const arr = m.albums || m.cards; if (!Array.isArray(arr)) continue; let n = 0;
     for (const a of arr) {
       const x = map[(a.artist || '') + '|' + (a.album || '')]; const r = a.ratings; if (!x || !r) continue;
@@ -71,7 +73,8 @@ if (process.argv.includes('--write')) {
       r.accessibility = x.new.accessibility; r.loudFloorNote = SRC_NOTE + '：' + x.why;
       if ('rarity' in a) a.rarity = x.newRarity; n++;
     }
-    if (n) { fs.writeFileSync(p, JSON.stringify(m, null, 1)); mf++; mc += n; }
+    if (n && !fmt) { console.log('  排版無法還原、略過', p); unfmt.push(p); continue; }
+    if (n) { fs.writeFileSync(p, (fmt[0] ? JSON.stringify(m, null, fmt[0]) : JSON.stringify(m)) + fmt[1]); mf++; mc += n; }
   }
   console.log(`manifest：改 ${mf} 檔、${mc} 筆；涵蓋卡 ${seen.size}／${todo.length}`);
 }

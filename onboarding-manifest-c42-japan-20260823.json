@@ -2415,13 +2415,19 @@
       "ratings": {
         "classic": 4,
         "obscurity": 2,
-        "accessibility": 1,
+        "accessibility": 3,
         "listeners": null,
         "source": "manual:genre-anchors",
         "checkedAt": "2026-08-23T06:50:12Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；國民級龐克樂團最廣為傳唱的一張，含〈青空〉〈TRAIN-TRAIN〉，Oricon 第 3、在榜 44 週，旋律直白。"
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；國民級龐克樂團最廣為傳唱的一張，含〈青空〉〈TRAIN-TRAIN〉，Oricon 第 3、在榜 44 週，旋律直白。",
+        "previousAccessibility": {
+          "accessibility": 1,
+          "rarity": "common",
+          "at": "2026-11-04"
+        },
+        "loudFloorNote": "硬蕊度音量下限（2026-11-04 店主定案）：日本龐克，失真強力和弦快板為主"
       },
-      "rarity": "common",
+      "rarity": "uncommon",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -4274,13 +4280,19 @@
       "ratings": {
         "classic": 4,
         "obscurity": 2,
-        "accessibility": 2,
+        "accessibility": 3,
         "listeners": null,
         "source": "manual:genre-anchors",
         "checkedAt": "2026-08-23T06:50:12Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；日本 melodic hardcore 銷量與影響力最大的一張，國內外破百萬張、日本唱片協會白金，AIR JAM 世代的中心作；快節奏但旋律直白，英語詞、合唱段落多，入耳不難。"
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；日本 melodic hardcore 銷量與影響力最大的一張，國內外破百萬張、日本唱片協會白金，AIR JAM 世代的中心作；快節奏但旋律直白，英語詞、合唱段落多，入耳不難。",
+        "previousAccessibility": {
+          "accessibility": 2,
+          "rarity": "rare",
+          "at": "2026-11-04"
+        },
+        "loudFloorNote": "硬蕊度音量下限（2026-11-04 店主定案）：旋律 skate punk，快但非嘶吼型 hardcore"
       },
-      "rarity": "rare",
+      "rarity": "uncommon",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -4342,7 +4354,7 @@
       "ratings": {
         "classic": 3,
         "obscurity": 2,
-        "accessibility": 1,
+        "accessibility": 3,
         "listeners": null,
         "source": "manual:audit-20261102",
         "checkedAt": "2026-11-03T00:00:00Z",
@@ -4355,9 +4367,15 @@
           "checkedAt": "2026-08-23T06:50:12Z",
           "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；樂團首度進 Oricon 專輯榜前十的突破作，日本唱片協會白金、榜上停留逾四百週，〈完全感覚Dreamer〉〈Wherever you are〉皆出於此；pop-punk 編曲直白好進入。",
           "rarity": "rare"
-        }
+        },
+        "previousAccessibility": {
+          "accessibility": 1,
+          "rarity": "common",
+          "at": "2026-11-04"
+        },
+        "loudFloorNote": "硬蕊度音量下限（2026-11-04 店主定案）：emo／流行龐克"
       },
-      "rarity": "common",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,

@@ -2245,13 +2245,19 @@
       "ratings": {
         "classic": 4,
         "obscurity": 3,
-        "accessibility": 2,
+        "accessibility": 3,
         "listeners": null,
         "source": "manual:genre-anchors",
         "checkedAt": "2026-08-23T08:52:19Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；滅火器從高雄地方龐克團走向全國前的關鍵作，收有後來成為社運場合合唱曲的〈晚安台灣〉；龐克編制直白好入耳。"
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；滅火器從高雄地方龐克團走向全國前的關鍵作，收有後來成為社運場合合唱曲的〈晚安台灣〉；龐克編制直白好入耳。",
+        "previousAccessibility": {
+          "accessibility": 2,
+          "rarity": "rare",
+          "at": "2026-11-04"
+        },
+        "loudFloorNote": "硬蕊度音量下限（2026-11-04 店主定案）：台式流行龐克，失真吉他全程推進"
       },
-      "rarity": "rare",
+      "rarity": "uncommon",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -3653,7 +3659,7 @@
       "ratings": {
         "classic": 3,
         "obscurity": 4,
-        "accessibility": 2,
+        "accessibility": 3,
         "listeners": null,
         "source": "manual:audit-20261102",
         "checkedAt": "2026-11-03T00:00:00Z",
@@ -3666,9 +3672,15 @@
           "checkedAt": "2026-08-23T08:52:19Z",
           "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；1996 年成軍的台北車庫龐克團，海洋大賞與多屆金音獎入圍紀錄明確；生猛粗礪的唱奏與髒話曲名讓入耳門檻高於一般搖滾。",
           "rarity": "rare"
-        }
+        },
+        "previousAccessibility": {
+          "accessibility": 2,
+          "rarity": "common",
+          "at": "2026-11-04"
+        },
+        "loudFloorNote": "硬蕊度音量下限（2026-11-04 店主定案）：台灣龐克，失真吉他為主"
       },
-      "rarity": "common",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,

@@ -1,5 +1,15 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-04｜dip-vinyl-shop｜rerate-20261104-loud：硬蕊度把音量與躁度算進去，全池重看（改 475 張）
+
+- **店主 11-04 定案**：硬蕊度＝入耳難度，音量、失真、速度、嘶吼都算。下限：失真龐克／流行龐克／車庫／傳統與另類金屬／音牆 shoegaze／噪音搖滾至少 3（blink-182 是 3 的錨點）；hardcore／thrash／crust／death／black／grind／sludge 至少 4；harsh noise 5。只往上調；整張偏不插電、抒情、柔和的不套。錨點寫進 `ALBUM_ONBOARDING.md` §0.8.1、`batch-progress/rerate-20261101/RUBRIC.md`。
+- **送判 1,780 張**（帶範圍標籤且低於下限 916＋篩選 859：只標 punk-wave 母類或亞洲搖滾＋無標籤 hardcore 分輯 5），6 支代理 12 片；主線全片過目，推翻 1 張（Pita《Get Out》→5）。
+- **改 475 張**：到 3 共 322、到 4 共 149、到 5 共 4（頂點卡 18 張，tier 不動）。pop-punk 92 張的硬蕊分布由 24/49/18/1/0 變成 3/4/76/9/0；hardcore 203 張 3 以下由 147 張變成 76 張。
+- **稀有度**（全池）：傳奇 421→452、史詩 1,664→1,734、獨特 4,037→4,134、稀有 6,835→6,752、普通 8,948→8,833；頂點卡數不變。
+- **寫入**：seed 第 5 欄 475 列（三道防呆）；manifest 61 檔、283 筆（保留原排版，seed 與 manifest 比對 0 不一致）；card_catalog accessibility／rarity 475 筆 PATCH（updateMask＋exists），抽 50 張讀回 50／50。
+- **範圍外**：grunge／alt-rock、emo、post-punk、goth、新浪潮不在這輪；不認得的 25 張維持原分。
+- 主要檔案：`seed_cards.json`、`onboarding-manifest-*.json`（61）、`batch-progress/rerate-20261104-loud/*`（REPORT、rulings、applied、verdicts、工具）、`ALBUM_ONBOARDING.md`、`batch-progress/rerate-20261101/RUBRIC.md`。
+
 ### 2026-11-04｜dip-vinyl-shop｜add-20261104-blink：blink-182 早期三張上架（Buddha、Cheshire Cat、Dude Ranch）
 
 - **店主 11-04**：「blink-182 竟然沒有 Buddha。」補早期三張，卡池 blink-182 由 4 張變 7 張。

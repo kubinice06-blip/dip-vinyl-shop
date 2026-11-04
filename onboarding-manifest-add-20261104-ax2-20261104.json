@@ -957,13 +957,19 @@
    "ratings": {
     "classic": 3,
     "obscurity": 4,
-    "accessibility": 4,
+    "accessibility": 5,
     "listeners": 6321,
     "source": "worker /album-rating（obscurity:lastfm）",
     "checkedAt": "2026-11-04T07:38:48Z",
-    "note": "機器基線 3/4/3（Last.fm listeners 6321）；主線：硬蕊度取研究層聲音判定 4（機器基線 3 對噪音／極端盤不可信）"
+    "note": "機器基線 3/4/3（Last.fm listeners 6321）；主線：硬蕊度取研究層聲音判定 4（機器基線 3 對噪音／極端盤不可信）",
+    "previousAccessibility": {
+     "accessibility": 4,
+     "rarity": "uncommon",
+     "at": "2026-11-04"
+    },
+    "loudFloorNote": "硬蕊度音量下限（2026-11-04 店主定案）：主線覆核：Mego 數位 harsh noise 代表盤，整張刺耳反結構，套 harsh noise 5"
    },
-   "rarity": "uncommon",
+   "rarity": "epic",
    "apexAssessment": {
     "eligible": false,
     "tier": null,

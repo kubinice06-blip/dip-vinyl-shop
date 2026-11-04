@@ -317,13 +317,19 @@
    "ratings": {
     "classic": 3,
     "obscurity": 5,
-    "accessibility": 3,
+    "accessibility": 5,
     "listeners": 88,
     "source": "worker /album-rating（obscurity:lastfm）",
     "checkedAt": "2026-11-04T07:29:41Z",
-    "note": "機器基線 3/5/3（Last.fm listeners 88）；主線：硬蕊度取研究層聲音判定 3（機器基線 3 對噪音／極端盤不可信）"
+    "note": "機器基線 3/5/3（Last.fm listeners 88）；主線：硬蕊度取研究層聲音判定 3（機器基線 3 對噪音／極端盤不可信）",
+    "previousAccessibility": {
+     "accessibility": 3,
+     "rarity": "uncommon",
+     "at": "2026-11-04"
+    },
+    "loudFloorNote": "硬蕊度音量下限（2026-11-04 店主定案）：日本噪音拼貼，刺耳反結構"
    },
-   "rarity": "uncommon",
+   "rarity": "legendary",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1623,13 +1629,19 @@
    "ratings": {
     "classic": 3,
     "obscurity": 5,
-    "accessibility": 4,
+    "accessibility": 5,
     "listeners": 208,
     "source": "worker /album-rating（obscurity:lastfm）",
     "checkedAt": "2026-11-04T07:29:41Z",
-    "note": "機器基線 3/5/3（Last.fm listeners 208）；主線：硬蕊度取研究層聲音判定 4（機器基線 3 對噪音／極端盤不可信）"
+    "note": "機器基線 3/5/3（Last.fm listeners 208）；主線：硬蕊度取研究層聲音判定 4（機器基線 3 對噪音／極端盤不可信）",
+    "previousAccessibility": {
+     "accessibility": 4,
+     "rarity": "epic",
+     "at": "2026-11-04"
+    },
+    "loudFloorNote": "硬蕊度音量下限（2026-11-04 店主定案）：高音量回授噪音牆式迷幻 drone，近純噪音"
    },
-   "rarity": "epic",
+   "rarity": "legendary",
    "apexAssessment": {
     "eligible": false,
     "tier": null,

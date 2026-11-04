@@ -1782,7 +1782,7 @@
       "ratings": {
         "classic": 5,
         "obscurity": 2,
-        "accessibility": 2,
+        "accessibility": 3,
         "listeners": null,
         "source": "manual:audit-20261102",
         "checkedAt": "2026-11-03T00:00:00Z",
@@ -1795,9 +1795,15 @@
           "checkedAt": "2026-08-23T20:20:34Z",
           "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；跨來源公認的第一張真正的重金屬專輯，同名曲被 Rolling Stone 選為史上最偉大的重金屬歌曲、也常被指為第一首 doom metal；緩速、粗礪、以三全音為軸的聲響對一般聽眾仍有門檻。",
           "rarity": "epic"
-        }
+        },
+        "previousAccessibility": {
+          "accessibility": 2,
+          "rarity": "uncommon",
+          "at": "2026-11-04"
+        },
+        "loudFloorNote": "硬蕊度音量下限（2026-11-04 店主定案）：doom／重金屬原型，失真重riff"
       },
-      "rarity": "uncommon",
+      "rarity": "epic",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -2340,7 +2346,7 @@
       "ratings": {
         "classic": 5,
         "obscurity": 2,
-        "accessibility": 2,
+        "accessibility": 3,
         "listeners": null,
         "source": "manual:audit-20261102",
         "checkedAt": "2026-11-03T00:00:00Z",
@@ -2353,9 +2359,15 @@
           "checkedAt": "2026-08-23T20:20:34Z",
           "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；被跨來源列為搖滾史最佳首作之一、公認的 proto-punk 直接源頭；當年銷量慘澹且形象兩極，粗糙的演奏與生猛錄音使入耳偏高。",
           "rarity": "epic"
-        }
+        },
+        "previousAccessibility": {
+          "accessibility": 2,
+          "rarity": "uncommon",
+          "at": "2026-11-04"
+        },
+        "loudFloorNote": "硬蕊度音量下限（2026-11-04 店主定案）：粗糙失真原始龐克"
       },
-      "rarity": "uncommon",
+      "rarity": "epic",
       "apexAssessment": {
         "eligible": true,
         "tier": "hall",
@@ -4669,13 +4681,19 @@
       "ratings": {
         "classic": 4,
         "obscurity": 2,
-        "accessibility": 1,
+        "accessibility": 3,
         "listeners": null,
         "source": "manual:genre-anchors",
         "checkedAt": "2026-08-23T20:20:34Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；punk 元年 1977 年兩張中的第一張，是該團公認的核心目錄；兩分鐘的曲子、副歌直白，入耳幾乎沒有門檻。"
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；punk 元年 1977 年兩張中的第一張，是該團公認的核心目錄；兩分鐘的曲子、副歌直白，入耳幾乎沒有門檻。",
+        "previousAccessibility": {
+          "accessibility": 1,
+          "rarity": "common",
+          "at": "2026-11-04"
+        },
+        "loudFloorNote": "硬蕊度音量下限（2026-11-04 店主定案）：快速失真吉他龐克"
       },
-      "rarity": "common",
+      "rarity": "uncommon",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -4736,13 +4754,19 @@
       "ratings": {
         "classic": 5,
         "obscurity": 2,
-        "accessibility": 1,
+        "accessibility": 3,
         "listeners": null,
         "source": "manual:genre-anchors",
         "checkedAt": "2026-08-23T20:20:34Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；《Rolling Stone》五百大 2012 年版第 106 位、2020 年版第 385 位，公認是該團最好的一張；曲式與旋律極度直白。"
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；《Rolling Stone》五百大 2012 年版第 106 位、2020 年版第 385 位，公認是該團最好的一張；曲式與旋律極度直白。",
+        "previousAccessibility": {
+          "accessibility": 1,
+          "rarity": "rare",
+          "at": "2026-11-04"
+        },
+        "loudFloorNote": "硬蕊度音量下限（2026-11-04 店主定案）：快速失真吉他龐克"
       },
-      "rarity": "rare",
+      "rarity": "epic",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -5017,13 +5041,19 @@
       "ratings": {
         "classic": 4,
         "obscurity": 3,
-        "accessibility": 2,
+        "accessibility": 3,
         "listeners": null,
         "source": "manual:genre-anchors",
         "checkedAt": "2026-08-23T20:20:34Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；紐約 punk 第一波的公認代表作之一，標題曲是該世代的自稱來源，Robert Quine 的吉他語法被 Sonic Youth、Minutemen 一線反覆點名；音樂本身仍在快節奏搖滾的框架內。"
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；紐約 punk 第一波的公認代表作之一，標題曲是該世代的自稱來源，Robert Quine 的吉他語法被 Sonic Youth、Minutemen 一線反覆點名；音樂本身仍在快節奏搖滾的框架內。",
+        "previousAccessibility": {
+          "accessibility": 2,
+          "rarity": "rare",
+          "at": "2026-11-04"
+        },
+        "loudFloorNote": "硬蕊度音量下限（2026-11-04 店主定案）：紐約龐克，失真吉他為主"
       },
-      "rarity": "rare",
+      "rarity": "uncommon",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -5084,13 +5114,19 @@
       "ratings": {
         "classic": 4,
         "obscurity": 3,
-        "accessibility": 2,
+        "accessibility": 3,
         "listeners": null,
         "source": "manual:genre-anchors",
         "checkedAt": "2026-08-23T20:20:34Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；把 Stooges 系的暴力帶進 CBGB 的一張，〈Sonic Reducer〉是 hardcore 世代翻唱最多的曲目之一，《Rolling Stone》讀者票選十大 punk 專輯第七名；音樂是直白的快歌。"
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；把 Stooges 系的暴力帶進 CBGB 的一張，〈Sonic Reducer〉是 hardcore 世代翻唱最多的曲目之一，《Rolling Stone》讀者票選十大 punk 專輯第七名；音樂是直白的快歌。",
+        "previousAccessibility": {
+          "accessibility": 2,
+          "rarity": "rare",
+          "at": "2026-11-04"
+        },
+        "loudFloorNote": "硬蕊度音量下限（2026-11-04 店主定案）：失真吉他早期龐克"
       },
-      "rarity": "rare",
+      "rarity": "uncommon",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -5151,7 +5187,7 @@
       "ratings": {
         "classic": 4,
         "obscurity": 2,
-        "accessibility": 2,
+        "accessibility": 3,
         "listeners": null,
         "source": "manual:audit-20261102",
         "checkedAt": "2026-11-03T00:00:00Z",
@@ -5164,9 +5200,15 @@
           "checkedAt": "2026-08-23T20:20:34Z",
           "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；紐約 punk 傳進倫敦 1977 的實體管道，曲子本身評價高（Uncut 滿分、Pitchfork 8.4），但原盤混音的長年爭議壓低了它的正典地位，UK 榜也只停在 55 名。",
           "rarity": "common"
-        }
+        },
+        "previousAccessibility": {
+          "accessibility": 2,
+          "rarity": "rare",
+          "at": "2026-11-04"
+        },
+        "loudFloorNote": "硬蕊度音量下限（2026-11-04 店主定案）：失真吉他龐克"
       },
-      "rarity": "rare",
+      "rarity": "uncommon",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -5227,13 +5269,19 @@
       "ratings": {
         "classic": 4,
         "obscurity": 3,
-        "accessibility": 2,
+        "accessibility": 3,
         "listeners": null,
         "source": "manual:genre-anchors",
         "checkedAt": "2026-08-23T20:20:34Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；澳洲 punk 的起點文獻：標題曲進入 APRA 七十五週年三十大澳洲歌曲與國家影音典藏的 Sounds of Australia，專輯在《100 Best Australian Albums》列第 20 名；音樂是快節奏的直白搖滾。"
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；澳洲 punk 的起點文獻：標題曲進入 APRA 七十五週年三十大澳洲歌曲與國家影音典藏的 Sounds of Australia，專輯在《100 Best Australian Albums》列第 20 名；音樂是快節奏的直白搖滾。",
+        "previousAccessibility": {
+          "accessibility": 2,
+          "rarity": "rare",
+          "at": "2026-11-04"
+        },
+        "loudFloorNote": "硬蕊度音量下限（2026-11-04 店主定案）：失真吉他龐克"
       },
-      "rarity": "rare",
+      "rarity": "uncommon",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -5517,13 +5565,19 @@
       "ratings": {
         "classic": 5,
         "obscurity": 1,
-        "accessibility": 2,
+        "accessibility": 3,
         "listeners": null,
         "source": "manual:genre-anchors",
         "checkedAt": "2026-08-23T20:20:34Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；跨來源長期共識極強：NME 史上專輯第 13 名、七〇年代第 3 名，Christgau 選為七〇年代最佳，Mojo punk 專輯第 2、Spin 必聽 punk 第 3，《Rolling Stone》五百大 77／81／102 名。"
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；跨來源長期共識極強：NME 史上專輯第 13 名、七〇年代第 3 名，Christgau 選為七〇年代最佳，Mojo punk 專輯第 2、Spin 必聽 punk 第 3，《Rolling Stone》五百大 77／81／102 名。",
+        "previousAccessibility": {
+          "accessibility": 2,
+          "rarity": "uncommon",
+          "at": "2026-11-04"
+        },
+        "loudFloorNote": "硬蕊度音量下限（2026-11-04 店主定案）：失真吉他龐克"
       },
-      "rarity": "uncommon",
+      "rarity": "epic",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -5662,13 +5716,19 @@
       "ratings": {
         "classic": 4,
         "obscurity": 3,
-        "accessibility": 1,
+        "accessibility": 3,
         "listeners": null,
         "source": "manual:genre-anchors",
         "checkedAt": "2026-08-23T20:20:34Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Buzzcocks 最高名次的專輯（UK 榜 13 名），收錄他們最知名的曲子，是 punk 與 power pop 接點的代表；旋律直白、和聲明亮，入耳幾乎沒有門檻。"
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Buzzcocks 最高名次的專輯（UK 榜 13 名），收錄他們最知名的曲子，是 punk 與 power pop 接點的代表；旋律直白、和聲明亮，入耳幾乎沒有門檻。",
+        "previousAccessibility": {
+          "accessibility": 1,
+          "rarity": "common",
+          "at": "2026-11-04"
+        },
+        "loudFloorNote": "硬蕊度音量下限（2026-11-04 店主定案）：buzzsaw 失真流行龐克"
       },
-      "rarity": "common",
+      "rarity": "uncommon",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -5729,13 +5789,19 @@
       "ratings": {
         "classic": 4,
         "obscurity": 4,
-        "accessibility": 2,
+        "accessibility": 3,
         "listeners": null,
         "source": "manual:genre-anchors",
         "checkedAt": "2026-08-23T20:20:34Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；太平洋西北 punk 的奠基作，Kurt Cobain 列入他心目中最重要的五十張、John Peel 列入個人前二十；發行當年幾無宣傳，至今仍屬深度愛好者領域。"
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；太平洋西北 punk 的奠基作，Kurt Cobain 列入他心目中最重要的五十張、John Peel 列入個人前二十；發行當年幾無宣傳，至今仍屬深度愛好者領域。",
+        "previousAccessibility": {
+          "accessibility": 2,
+          "rarity": "rare",
+          "at": "2026-11-04"
+        },
+        "loudFloorNote": "硬蕊度音量下限（2026-11-04 店主定案）：失真吉他龐克／後龐克，非 hardcore"
       },
-      "rarity": "rare",
+      "rarity": "uncommon",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -5863,13 +5929,19 @@
       "ratings": {
         "classic": 4,
         "obscurity": 4,
-        "accessibility": 2,
+        "accessibility": 3,
         "listeners": null,
         "source": "manual:genre-anchors",
         "checkedAt": "2026-08-23T20:20:34Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；三部曲收尾也是他們第一次拿到電台播放，荷蘭《OOR》列為八〇年代第 23 名、Cobain 列入個人五十大；曲長回到 punk 尺度，入耳比前作容易。"
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；三部曲收尾也是他們第一次拿到電台播放，荷蘭《OOR》列為八〇年代第 23 名、Cobain 列入個人五十大；曲長回到 punk 尺度，入耳比前作容易。",
+        "previousAccessibility": {
+          "accessibility": 2,
+          "rarity": "rare",
+          "at": "2026-11-04"
+        },
+        "loudFloorNote": "硬蕊度音量下限（2026-11-04 店主定案）：失真吉他龐克／後龐克，非 hardcore"
       },
-      "rarity": "rare",
+      "rarity": "uncommon",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -6467,13 +6539,19 @@
       "ratings": {
         "classic": 4,
         "obscurity": 3,
-        "accessibility": 3,
+        "accessibility": 4,
         "listeners": null,
         "source": "manual:genre-anchors",
         "checkedAt": "2026-08-23T20:20:34Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；hardcore punk 與雷鬼直接並置的核心文本，Rolling Stone Album Guide 四星、Spin Alternative Record Guide 8/10；極高速與生猛唱腔讓入耳門檻高於一般搖滾。"
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；hardcore punk 與雷鬼直接並置的核心文本，Rolling Stone Album Guide 四星、Spin Alternative Record Guide 8/10；極高速與生猛唱腔讓入耳門檻高於一般搖滾。",
+        "previousAccessibility": {
+          "accessibility": 3,
+          "rarity": "uncommon",
+          "at": "2026-11-04"
+        },
+        "loudFloorNote": "硬蕊度音量下限（2026-11-04 店主定案）：極速 hardcore"
       },
-      "rarity": "uncommon",
+      "rarity": "epic",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -6870,13 +6948,19 @@
       "ratings": {
         "classic": 3,
         "obscurity": 2,
-        "accessibility": 2,
+        "accessibility": 3,
         "listeners": null,
         "source": "manual:genre-anchors",
         "checkedAt": "2026-08-23T20:20:34Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Maiden 首張大量使用吉他與貝斯合成器的作品，美國 RIAA 白金、2023 年還被 The Future Past World Tour 選為主軸，在目錄裡位置明確但非公認代表作；旋律外顯、入耳容易。"
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Maiden 首張大量使用吉他與貝斯合成器的作品，美國 RIAA 白金、2023 年還被 The Future Past World Tour 選為主軸，在目錄裡位置明確但非公認代表作；旋律外顯、入耳容易。",
+        "previousAccessibility": {
+          "accessibility": 2,
+          "rarity": "common",
+          "at": "2026-11-04"
+        },
+        "loudFloorNote": "硬蕊度音量下限（2026-11-04 店主定案）：傳統／前衛重金屬"
       },
-      "rarity": "common",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -7080,13 +7164,19 @@
       "ratings": {
         "classic": 4,
         "obscurity": 2,
-        "accessibility": 2,
+        "accessibility": 3,
         "listeners": null,
         "source": "manual:genre-anchors",
         "checkedAt": "2026-08-23T20:20:34Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Priest 八〇年代商業高峰的第二張、美國 RIAA 白金，AllMusic 稱它是該時期最後一張高水準作品；速度快但結構直白，入耳容易。"
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Priest 八〇年代商業高峰的第二張、美國 RIAA 白金，AllMusic 稱它是該時期最後一張高水準作品；速度快但結構直白，入耳容易。",
+        "previousAccessibility": {
+          "accessibility": 2,
+          "rarity": "rare",
+          "at": "2026-11-04"
+        },
+        "loudFloorNote": "硬蕊度音量下限（2026-11-04 店主定案）：傳統重金屬，非 thrash"
       },
-      "rarity": "rare",
+      "rarity": "uncommon",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -7147,13 +7237,19 @@
       "ratings": {
         "classic": 4,
         "obscurity": 2,
-        "accessibility": 2,
+        "accessibility": 3,
         "listeners": null,
         "source": "manual:genre-anchors",
         "checkedAt": "2026-08-23T20:20:34Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Randy Rhoads 生前最後一張錄音室作、全球銷量逾三百萬張，是 80s shred 世代的直接源頭；旋律與副歌結構直白，入耳容易。"
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Randy Rhoads 生前最後一張錄音室作、全球銷量逾三百萬張，是 80s shred 世代的直接源頭；旋律與副歌結構直白，入耳容易。",
+        "previousAccessibility": {
+          "accessibility": 2,
+          "rarity": "rare",
+          "at": "2026-11-04"
+        },
+        "loudFloorNote": "硬蕊度音量下限（2026-11-04 店主定案）：傳統重金屬"
       },
-      "rarity": "rare",
+      "rarity": "uncommon",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -7214,13 +7310,19 @@
       "ratings": {
         "classic": 4,
         "obscurity": 2,
-        "accessibility": 2,
+        "accessibility": 3,
         "listeners": null,
         "source": "manual:genre-anchors",
         "checkedAt": "2026-08-23T20:20:34Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Dio 名下英美成績最好的一張（英國第 4、美國第 23），與《Holy Diver》是他僅有的兩張白金認證作，Rock Hard 五百大列第 372；旋律與副歌外顯，入耳容易。"
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Dio 名下英美成績最好的一張（英國第 4、美國第 23），與《Holy Diver》是他僅有的兩張白金認證作，Rock Hard 五百大列第 372；旋律與副歌外顯，入耳容易。",
+        "previousAccessibility": {
+          "accessibility": 2,
+          "rarity": "rare",
+          "at": "2026-11-04"
+        },
+        "loudFloorNote": "硬蕊度音量下限（2026-11-04 店主定案）：傳統重金屬"
       },
-      "rarity": "rare",
+      "rarity": "uncommon",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -7492,13 +7594,19 @@
       "ratings": {
         "classic": 4,
         "obscurity": 2,
-        "accessibility": 2,
+        "accessibility": 3,
         "listeners": null,
         "source": "manual:genre-anchors",
         "checkedAt": "2026-08-23T20:20:34Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Accept 唯一在美國獲金唱片認證的作品，標題曲成為樂團招牌與 80s 金屬常備曲，是該團商業代表作；曲式直白、節奏中板，入耳門檻低。"
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Accept 唯一在美國獲金唱片認證的作品，標題曲成為樂團招牌與 80s 金屬常備曲，是該團商業代表作；曲式直白、節奏中板，入耳門檻低。",
+        "previousAccessibility": {
+          "accessibility": 2,
+          "rarity": "rare",
+          "at": "2026-11-04"
+        },
+        "loudFloorNote": "硬蕊度音量下限（2026-11-04 店主定案）：德式傳統重金屬，失真厚重"
       },
-      "rarity": "rare",
+      "rarity": "uncommon",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -7559,13 +7667,19 @@
       "ratings": {
         "classic": 4,
         "obscurity": 3,
-        "accessibility": 2,
+        "accessibility": 3,
         "listeners": null,
         "source": "manual:genre-anchors",
         "checkedAt": "2026-08-23T20:20:34Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Manowar 目錄裡最具代表性的一張，2017 年 Loudwire 列為史上第 13 名的 power metal 專輯，也是創團吉他手 Ross the Boss 的最後一張；旋律與齊唱副歌為主，入耳不難。"
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Manowar 目錄裡最具代表性的一張，2017 年 Loudwire 列為史上第 13 名的 power metal 專輯，也是創團吉他手 Ross the Boss 的最後一張；旋律與齊唱副歌為主，入耳不難。",
+        "previousAccessibility": {
+          "accessibility": 2,
+          "rarity": "rare",
+          "at": "2026-11-04"
+        },
+        "loudFloorNote": "硬蕊度音量下限（2026-11-04 店主定案）：失真吉他傳統重金屬"
       },
-      "rarity": "rare",
+      "rarity": "uncommon",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -7626,13 +7740,19 @@
       "ratings": {
         "classic": 4,
         "obscurity": 2,
-        "accessibility": 1,
+        "accessibility": 3,
         "listeners": null,
         "source": "manual:genre-anchors",
         "checkedAt": "2026-08-23T20:20:34Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Sunset Strip glam metal 場景的引爆點與樂團的商業突破（兩週二十萬張），〈Bastard〉被 PMRC 列入 Filthy Fifteen；短促的副歌搖滾曲式，入耳門檻極低。"
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Sunset Strip glam metal 場景的引爆點與樂團的商業突破（兩週二十萬張），〈Bastard〉被 PMRC 列入 Filthy Fifteen；短促的副歌搖滾曲式，入耳門檻極低。",
+        "previousAccessibility": {
+          "accessibility": 1,
+          "rarity": "common",
+          "at": "2026-11-04"
+        },
+        "loudFloorNote": "硬蕊度音量下限（2026-11-04 店主定案）：華麗金屬"
       },
-      "rarity": "common",
+      "rarity": "uncommon",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -7694,7 +7814,7 @@
       "ratings": {
         "classic": 4,
         "obscurity": 1,
-        "accessibility": 2,
+        "accessibility": 3,
         "listeners": null,
         "source": "manual:audit-20261102",
         "checkedAt": "2026-11-03T00:00:00Z",
@@ -7707,9 +7827,15 @@
           "checkedAt": "2026-08-23T20:20:34Z",
           "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；樂團唯一的 Billboard 200 冠軍與美國逾六百萬銷量，是 hair metal 商業高峰的定點；Bob Rock 的製作把鉤子做得極清楚，入耳門檻極低。",
           "rarity": "common"
-        }
+        },
+        "previousAccessibility": {
+          "accessibility": 2,
+          "rarity": "rare",
+          "at": "2026-11-04"
+        },
+        "loudFloorNote": "硬蕊度音量下限（2026-11-04 店主定案）：華麗金屬"
       },
-      "rarity": "rare",
+      "rarity": "uncommon",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -7770,13 +7896,19 @@
       "ratings": {
         "classic": 4,
         "obscurity": 2,
-        "accessibility": 1,
+        "accessibility": 3,
         "listeners": null,
         "source": "manual:genre-anchors",
         "checkedAt": "2026-08-23T20:20:34Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；《滾石》史上百大金屬專輯第 76 名、樂團唯一白金作品，〈We're Not Gonna Take It〉進 PMRC 的 Filthy Fifteen 並牽出 Dee Snider 的參議院證詞；曲式直白好記。"
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；《滾石》史上百大金屬專輯第 76 名、樂團唯一白金作品，〈We're Not Gonna Take It〉進 PMRC 的 Filthy Fifteen 並牽出 Dee Snider 的參議院證詞；曲式直白好記。",
+        "previousAccessibility": {
+          "accessibility": 1,
+          "rarity": "common",
+          "at": "2026-11-04"
+        },
+        "loudFloorNote": "硬蕊度音量下限（2026-11-04 店主定案）：glam 金屬，失真吉他為主"
       },
-      "rarity": "common",
+      "rarity": "uncommon",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -7838,7 +7970,7 @@
       "ratings": {
         "classic": 4,
         "obscurity": 2,
-        "accessibility": 2,
+        "accessibility": 3,
         "listeners": null,
         "source": "manual:audit-20261102",
         "checkedAt": "2026-11-03T00:00:00Z",
@@ -7851,9 +7983,15 @@
           "checkedAt": "2026-08-23T20:20:34Z",
           "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Ratt 最成功的一張與 Sunset Strip 場景商業化的樣本（美國三白金、Metal Hammer 十大 hair metal 名單）；〈Round and Round〉靠 MTV 廣為流通，入耳門檻極低。",
           "rarity": "common"
-        }
+        },
+        "previousAccessibility": {
+          "accessibility": 2,
+          "rarity": "rare",
+          "at": "2026-11-04"
+        },
+        "loudFloorNote": "硬蕊度音量下限（2026-11-04 店主定案）：glam／傳統金屬，失真吉他為主"
       },
-      "rarity": "rare",
+      "rarity": "uncommon",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -7915,13 +8053,19 @@
       "ratings": {
         "classic": 4,
         "obscurity": 3,
-        "accessibility": 2,
+        "accessibility": 3,
         "listeners": null,
         "source": "manual:genre-anchors",
         "checkedAt": "2026-08-23T20:20:34Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；80 年代內容審查爭議的核心物證（〈Animal〉列名 Filthy Fifteen 並被廠牌抽掉），〈I Wanna Be Somebody〉進 VH1 百大硬搖滾歌曲；曲式仍是標準重金屬，入耳不難。"
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；80 年代內容審查爭議的核心物證（〈Animal〉列名 Filthy Fifteen 並被廠牌抽掉），〈I Wanna Be Somebody〉進 VH1 百大硬搖滾歌曲；曲式仍是標準重金屬，入耳不難。",
+        "previousAccessibility": {
+          "accessibility": 2,
+          "rarity": "rare",
+          "at": "2026-11-04"
+        },
+        "loudFloorNote": "硬蕊度音量下限（2026-11-04 店主定案）：傳統重金屬"
       },
-      "rarity": "rare",
+      "rarity": "uncommon",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -7984,13 +8128,19 @@
       "ratings": {
         "classic": 4,
         "obscurity": 2,
-        "accessibility": 1,
+        "accessibility": 3,
         "listeners": null,
         "source": "manual:genre-anchors",
         "checkedAt": "2026-08-23T20:20:34Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Billboard 200 第六名、美國五白金，是 hair metal 最後一波的代表作與樂團代表作；四支 MV 在 MTV 密集輪播，曲式直白好入耳。"
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Billboard 200 第六名、美國五白金，是 hair metal 最後一波的代表作與樂團代表作；四支 MV 在 MTV 密集輪播，曲式直白好入耳。",
+        "previousAccessibility": {
+          "accessibility": 1,
+          "rarity": "common",
+          "at": "2026-11-04"
+        },
+        "loudFloorNote": "硬蕊度音量下限（2026-11-04 店主定案）：glam／硬式金屬，失真吉他為主"
       },
-      "rarity": "common",
+      "rarity": "uncommon",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -8194,13 +8344,19 @@
       "ratings": {
         "classic": 3,
         "obscurity": 4,
-        "accessibility": 3,
+        "accessibility": 4,
         "listeners": null,
         "source": "manual:genre-anchors",
         "checkedAt": "2026-08-23T20:20:34Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；德國 thrash 三強中最早的一張全長作，確立德系比美系更粗糙快速的取向，有明確場景地位但非跨界共識代表作；生猛粗礪、長曲多，入耳需要適應。"
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；德國 thrash 三強中最早的一張全長作，確立德系比美系更粗糙快速的取向，有明確場景地位但非跨界共識代表作；生猛粗礪、長曲多，入耳需要適應。",
+        "previousAccessibility": {
+          "accessibility": 3,
+          "rarity": "rare",
+          "at": "2026-11-04"
+        },
+        "loudFloorNote": "硬蕊度音量下限（2026-11-04 店主定案）：早期 thrash／黑化速度金屬"
       },
-      "rarity": "rare",
+      "rarity": "uncommon",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -8261,7 +8417,7 @@
       "ratings": {
         "classic": 4,
         "obscurity": 2,
-        "accessibility": 3,
+        "accessibility": 4,
         "listeners": null,
         "source": "manual:audit-20261102",
         "checkedAt": "2026-11-03T00:00:00Z",
@@ -8274,9 +8430,15 @@
           "checkedAt": "2026-08-23T20:20:34Z",
           "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；英文維基 groove metal 條目直接記為使該曲風定型並普及的專輯，Guitar World 百大吉他專輯第 11 名、IGN 史上最具影響力金屬專輯第 19 名；節奏錯位與吼腔使入耳需要一點適應。",
           "rarity": "epic"
-        }
+        },
+        "previousAccessibility": {
+          "accessibility": 3,
+          "rarity": "uncommon",
+          "at": "2026-11-04"
+        },
+        "loudFloorNote": "硬蕊度音量下限（2026-11-04 店主定案）：thrash／groove metal"
       },
-      "rarity": "uncommon",
+      "rarity": "epic",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -8669,13 +8831,19 @@
       "ratings": {
         "classic": 4,
         "obscurity": 3,
-        "accessibility": 3,
+        "accessibility": 4,
         "listeners": null,
         "source": "manual:genre-anchors",
         "checkedAt": "2026-08-23T20:20:34Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；death 'n' roll 這個次類別的命名作，Rock Hard 五百大第 494 名、Guitar World 稱其為該年代最佳 death metal 之一；中板律動與搖滾骨架讓它比同期瑞典死金好入耳。"
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；death 'n' roll 這個次類別的命名作，Rock Hard 五百大第 494 名、Guitar World 稱其為該年代最佳 death metal 之一；中板律動與搖滾骨架讓它比同期瑞典死金好入耳。",
+        "previousAccessibility": {
+          "accessibility": 3,
+          "rarity": "uncommon",
+          "at": "2026-11-04"
+        },
+        "loudFloorNote": "硬蕊度音量下限（2026-11-04 店主定案）：death'n'roll，低吼重riff"
       },
-      "rarity": "uncommon",
+      "rarity": "epic",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -8737,13 +8905,19 @@
       "ratings": {
         "classic": 4,
         "obscurity": 3,
-        "accessibility": 3,
+        "accessibility": 4,
         "listeners": null,
         "source": "manual:genre-anchors",
         "checkedAt": "2026-08-23T20:20:34Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；哥德堡 melodic death metal 定型期的三張核心之一，2020 年《Metal Hammer》列入 1997 年二十張最佳金屬專輯；雙吉他和聲旋律性強，但全碟仍是死腔。"
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；哥德堡 melodic death metal 定型期的三張核心之一，2020 年《Metal Hammer》列入 1997 年二十張最佳金屬專輯；雙吉他和聲旋律性強，但全碟仍是死腔。",
+        "previousAccessibility": {
+          "accessibility": 3,
+          "rarity": "uncommon",
+          "at": "2026-11-04"
+        },
+        "loudFloorNote": "硬蕊度音量下限（2026-11-04 店主定案）：哥德堡旋律死亡金屬"
       },
-      "rarity": "uncommon",
+      "rarity": "epic",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -8804,13 +8978,19 @@
       "ratings": {
         "classic": 5,
         "obscurity": 3,
-        "accessibility": 3,
+        "accessibility": 4,
         "listeners": null,
         "source": "manual:genre-anchors",
         "checkedAt": "2026-08-23T20:20:34Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；2010 年入選《Decibel》名人堂，並與 At the Gates《Slaughter of the Soul》、In Flames《The Jester Race》並列為哥德堡風格的三張定義盤；死腔加雙吉他，入耳需要習慣但不算晦澀。"
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；2010 年入選《Decibel》名人堂，並與 At the Gates《Slaughter of the Soul》、In Flames《The Jester Race》並列為哥德堡風格的三張定義盤；死腔加雙吉他，入耳需要習慣但不算晦澀。",
+        "previousAccessibility": {
+          "accessibility": 3,
+          "rarity": "epic",
+          "at": "2026-11-04"
+        },
+        "loudFloorNote": "硬蕊度音量下限（2026-11-04 店主定案）：旋律死亡金屬，嘶吼為主"
       },
-      "rarity": "epic",
+      "rarity": "legendary",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -8871,13 +9051,19 @@
       "ratings": {
         "classic": 4,
         "obscurity": 3,
-        "accessibility": 3,
+        "accessibility": 4,
         "listeners": null,
         "source": "manual:genre-anchors",
         "checkedAt": "2026-08-23T20:20:34Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Angela Gossow 接任主唱的第一張，也是樂團第一次降到 C 調弦並就此定制，拿下日本《Burrn!》最佳專輯獎；死腔全開但吉他仍走旋律線。"
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Angela Gossow 接任主唱的第一張，也是樂團第一次降到 C 調弦並就此定制，拿下日本《Burrn!》最佳專輯獎；死腔全開但吉他仍走旋律線。",
+        "previousAccessibility": {
+          "accessibility": 3,
+          "rarity": "uncommon",
+          "at": "2026-11-04"
+        },
+        "loudFloorNote": "硬蕊度音量下限（2026-11-04 店主定案）：旋律死亡金屬，嘶吼為主"
       },
-      "rarity": "uncommon",
+      "rarity": "epic",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -8938,13 +9124,19 @@
       "ratings": {
         "classic": 4,
         "obscurity": 3,
-        "accessibility": 3,
+        "accessibility": 4,
         "listeners": null,
         "source": "manual:genre-anchors",
         "checkedAt": "2026-08-23T20:20:34Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；芬蘭 melodeath 在 2000 年代影響力最大的一張，芬蘭榜第三、2023 年《Metal Hammer》列入 2000 年代五十張最佳金屬專輯；死腔配上鍵盤與新古典齊奏，比同類作品好入耳。"
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；芬蘭 melodeath 在 2000 年代影響力最大的一張，芬蘭榜第三、2023 年《Metal Hammer》列入 2000 年代五十張最佳金屬專輯；死腔配上鍵盤與新古典齊奏，比同類作品好入耳。",
+        "previousAccessibility": {
+          "accessibility": 3,
+          "rarity": "uncommon",
+          "at": "2026-11-04"
+        },
+        "loudFloorNote": "硬蕊度音量下限（2026-11-04 店主定案）：旋律死亡金屬，嘶吼為主"
       },
-      "rarity": "uncommon",
+      "rarity": "epic",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -9005,13 +9197,19 @@
       "ratings": {
         "classic": 4,
         "obscurity": 3,
-        "accessibility": 3,
+        "accessibility": 4,
         "listeners": null,
         "source": "manual:genre-anchors",
         "checkedAt": "2026-08-23T20:20:34Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；把 death-doom 與芬蘭民謠調式、合成器並置，被視為 folk metal 與 melodic death metal 的共同分岔點，也是 Relapse 商業上最成功的一張（銷量逾十萬）；死腔仍在，但清腔與旋律比同期死亡金屬好入耳。"
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；把 death-doom 與芬蘭民謠調式、合成器並置，被視為 folk metal 與 melodic death metal 的共同分岔點，也是 Relapse 商業上最成功的一張（銷量逾十萬）；死腔仍在，但清腔與旋律比同期死亡金屬好入耳。",
+        "previousAccessibility": {
+          "accessibility": 3,
+          "rarity": "uncommon",
+          "at": "2026-11-04"
+        },
+        "loudFloorNote": "硬蕊度音量下限（2026-11-04 店主定案）：死亡／doom 金屬，低吼為主"
       },
-      "rarity": "uncommon",
+      "rarity": "epic",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -9072,7 +9270,7 @@
       "ratings": {
         "classic": 5,
         "obscurity": 2,
-        "accessibility": 2,
+        "accessibility": 3,
         "listeners": null,
         "source": "manual:audit-20261102",
         "checkedAt": "2026-11-03T00:00:00Z",
@@ -9085,9 +9283,15 @@
           "checkedAt": "2026-08-23T20:20:34Z",
           "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；被英文維基與多份樂評追認為創出歐陸 power metal 的那一張，《Loudwire》史上二十五張 power metal 名單列第三；快速雙吉他和聲配 Michael Kiske 的高音，旋律直白。",
           "rarity": "uncommon"
-        }
+        },
+        "previousAccessibility": {
+          "accessibility": 2,
+          "rarity": "uncommon",
+          "at": "2026-11-04"
+        },
+        "loudFloorNote": "硬蕊度音量下限（2026-11-04 店主定案）：失真吉他 power metal"
       },
-      "rarity": "uncommon",
+      "rarity": "epic",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -9148,13 +9352,19 @@
       "ratings": {
         "classic": 5,
         "obscurity": 2,
-        "accessibility": 2,
+        "accessibility": 3,
         "listeners": null,
         "source": "manual:genre-anchors",
         "checkedAt": "2026-08-23T20:20:34Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；《Loudwire》史上二十五張 power metal 名單與《Metal Hammer》2019 年二十五張最偉大 power metal 名單皆列第一，德國榜第五、Billboard 200 第 108 並獲德國金唱片；〈I Want Out〉是跨出金屬圈的大眾曲目。"
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；《Loudwire》史上二十五張 power metal 名單與《Metal Hammer》2019 年二十五張最偉大 power metal 名單皆列第一，德國榜第五、Billboard 200 第 108 並獲德國金唱片；〈I Want Out〉是跨出金屬圈的大眾曲目。",
+        "previousAccessibility": {
+          "accessibility": 2,
+          "rarity": "uncommon",
+          "at": "2026-11-04"
+        },
+        "loudFloorNote": "硬蕊度音量下限（2026-11-04 店主定案）：旋律 power metal，非 thrash，下限 3"
       },
-      "rarity": "uncommon",
+      "rarity": "epic",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -9295,13 +9505,19 @@
       "ratings": {
         "classic": 4,
         "obscurity": 3,
-        "accessibility": 2,
+        "accessibility": 3,
         "listeners": null,
         "source": "manual:genre-anchors",
         "checkedAt": "2026-08-23T20:20:34Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；樂團由 speed metal 轉向多層人聲與敘事編曲的分水嶺，《Rock Hard》五百大搖滾與金屬專輯列第 373 名、《Loudwire》power metal 名單列第二；清腔與合唱主導，入耳不難。"
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；樂團由 speed metal 轉向多層人聲與敘事編曲的分水嶺，《Rock Hard》五百大搖滾與金屬專輯列第 373 名、《Loudwire》power metal 名單列第二；清腔與合唱主導，入耳不難。",
+        "previousAccessibility": {
+          "accessibility": 2,
+          "rarity": "rare",
+          "at": "2026-11-04"
+        },
+        "loudFloorNote": "硬蕊度音量下限（2026-11-04 店主定案）：power metal，失真厚重、清唱"
       },
-      "rarity": "rare",
+      "rarity": "uncommon",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -9362,13 +9578,19 @@
       "ratings": {
         "classic": 4,
         "obscurity": 4,
-        "accessibility": 2,
+        "accessibility": 3,
         "listeners": null,
         "source": "manual:genre-anchors",
         "checkedAt": "2026-08-23T20:20:34Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Kai Hansen 離開 Helloween 後自任主唱的第一張，被《Loudwire》power metal 名單列第四、《Rock Hard》選為當月專輯；旋律與副歌直白，但樂團知名度落在 power metal 深度愛好者圈內。"
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Kai Hansen 離開 Helloween 後自任主唱的第一張，被《Loudwire》power metal 名單列第四、《Rock Hard》選為當月專輯；旋律與副歌直白，但樂團知名度落在 power metal 深度愛好者圈內。",
+        "previousAccessibility": {
+          "accessibility": 2,
+          "rarity": "rare",
+          "at": "2026-11-04"
+        },
+        "loudFloorNote": "硬蕊度音量下限（2026-11-04 店主定案）：power metal"
       },
-      "rarity": "rare",
+      "rarity": "uncommon",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -9429,13 +9651,19 @@
       "ratings": {
         "classic": 4,
         "obscurity": 4,
-        "accessibility": 2,
+        "accessibility": 3,
         "listeners": null,
         "source": "manual:genre-anchors",
         "checkedAt": "2026-08-23T20:20:34Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Paul O'Neill 製作的搖滾歌劇，是樂團轉向敘事編曲的關鍵，《Rock Hard》五百大搖滾與金屬專輯列第 310 名；旋律與鋼琴鋪陳好入耳，但樂團本身屬深度愛好者領域。"
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Paul O'Neill 製作的搖滾歌劇，是樂團轉向敘事編曲的關鍵，《Rock Hard》五百大搖滾與金屬專輯列第 310 名；旋律與鋼琴鋪陳好入耳，但樂團本身屬深度愛好者領域。",
+        "previousAccessibility": {
+          "accessibility": 2,
+          "rarity": "rare",
+          "at": "2026-11-04"
+        },
+        "loudFloorNote": "硬蕊度音量下限（2026-11-04 店主定案）：金屬搖滾歌劇，重型為主"
       },
-      "rarity": "rare",
+      "rarity": "uncommon",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -9496,13 +9724,19 @@
       "ratings": {
         "classic": 4,
         "obscurity": 3,
-        "accessibility": 2,
+        "accessibility": 3,
         "listeners": null,
         "source": "manual:genre-anchors",
         "checkedAt": "2026-08-23T20:20:34Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Timo Tolkki 時期的代表作，《Rock Hard》五百大搖滾與金屬專輯列第 297 名、《Metal Hammer》十張必備 power metal 名單收錄，芬蘭榜第四並獲金唱片；旋律直白、清腔為主。"
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Timo Tolkki 時期的代表作，《Rock Hard》五百大搖滾與金屬專輯列第 297 名、《Metal Hammer》十張必備 power metal 名單收錄，芬蘭榜第四並獲金唱片；旋律直白、清腔為主。",
+        "previousAccessibility": {
+          "accessibility": 2,
+          "rarity": "rare",
+          "at": "2026-11-04"
+        },
+        "loudFloorNote": "硬蕊度音量下限（2026-11-04 店主定案）：power metal，失真吉他為主"
       },
-      "rarity": "rare",
+      "rarity": "uncommon",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -9928,13 +10162,19 @@
       "ratings": {
         "classic": 5,
         "obscurity": 2,
-        "accessibility": 3,
+        "accessibility": 4,
         "listeners": null,
         "source": "manual:genre-anchors",
         "checkedAt": "2026-08-23T20:20:34Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；2012 年入選《Decibel》名人堂（第 94 號），2007 年《Hit Parader》新美國金屬十大名單列第一，2009 年 MetalSucks 二十一世紀金屬名單列第四；嘶吼段落配清腔副歌的結構此後成為 metalcore 通用寫法，〈My Last Serenade〉靠 MTV《Headbangers Ball》進入大眾視野。"
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；2012 年入選《Decibel》名人堂（第 94 號），2007 年《Hit Parader》新美國金屬十大名單列第一，2009 年 MetalSucks 二十一世紀金屬名單列第四；嘶吼段落配清腔副歌的結構此後成為 metalcore 通用寫法，〈My Last Serenade〉靠 MTV《Headbangers Ball》進入大眾視野。",
+        "previousAccessibility": {
+          "accessibility": 3,
+          "rarity": "epic",
+          "at": "2026-11-04"
+        },
+        "loudFloorNote": "硬蕊度音量下限（2026-11-04 店主定案）：metalcore 嘶吼與重型"
       },
-      "rarity": "epic",
+      "rarity": "legendary",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -11602,13 +11842,19 @@
       "ratings": {
         "classic": 4,
         "obscurity": 3,
-        "accessibility": 2,
+        "accessibility": 3,
         "listeners": null,
         "source": "manual:genre-anchors",
         "checkedAt": "2026-08-23T20:20:34Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Metacritic 84、《衛報》五星、Christgau 給 A−，是樂團公認的突破作與 2010 年代美國 indie rock 主要文獻；短曲、乾鼓與說話式唱腔並不難入耳。"
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Metacritic 84、《衛報》五星、Christgau 給 A−，是樂團公認的突破作與 2010 年代美國 indie rock 主要文獻；短曲、乾鼓與說話式唱腔並不難入耳。",
+        "previousAccessibility": {
+          "accessibility": 2,
+          "rarity": "rare",
+          "at": "2026-11-04"
+        },
+        "loudFloorNote": "硬蕊度音量下限（2026-11-04 店主定案）：快速車庫龐克"
       },
-      "rarity": "rare",
+      "rarity": "uncommon",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -11872,13 +12118,19 @@
       "ratings": {
         "classic": 4,
         "obscurity": 2,
-        "accessibility": 1,
+        "accessibility": 3,
         "listeners": null,
         "source": "manual:genre-anchors",
         "checkedAt": "2026-08-23T20:20:34Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Metacritic 84、《滾石》十年百大第 91 名、Rock Hard 五百大第 399 名，是 2000 年代車庫復興的主要作品；十二首二十八分鐘的三和弦快歌，入耳幾乎沒有門檻。"
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Metacritic 84、《滾石》十年百大第 91 名、Rock Hard 五百大第 399 名，是 2000 年代車庫復興的主要作品；十二首二十八分鐘的三和弦快歌，入耳幾乎沒有門檻。",
+        "previousAccessibility": {
+          "accessibility": 1,
+          "rarity": "common",
+          "at": "2026-11-04"
+        },
+        "loudFloorNote": "硬蕊度音量下限（2026-11-04 店主定案）：車庫龐克，失真快速"
       },
-      "rarity": "common",
+      "rarity": "uncommon",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -14795,13 +15047,19 @@
       "ratings": {
         "classic": 4,
         "obscurity": 2,
-        "accessibility": 2,
+        "accessibility": 3,
         "listeners": null,
         "source": "manual:genre-anchors",
         "checkedAt": "2026-08-23T20:20:34Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；《滾石》2017 年金屬百大第 73 名、美國榜第十並取得白金認證，是 Scorpions 打進美國市場的一張；旋律取向的 hard rock，入耳門檻低。"
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；《滾石》2017 年金屬百大第 73 名、美國榜第十並取得白金認證，是 Scorpions 打進美國市場的一張；旋律取向的 hard rock，入耳門檻低。",
+        "previousAccessibility": {
+          "accessibility": 2,
+          "rarity": "rare",
+          "at": "2026-11-04"
+        },
+        "loudFloorNote": "硬蕊度音量下限（2026-11-04 店主定案）：傳統重金屬／硬搖滾，失真吉他為主"
       },
-      "rarity": "rare",
+      "rarity": "uncommon",
       "apexAssessment": {
         "eligible": false,
         "tier": null,

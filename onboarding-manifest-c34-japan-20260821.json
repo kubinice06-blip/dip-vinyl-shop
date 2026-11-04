@@ -8024,13 +8024,19 @@
       "ratings": {
         "classic": 5,
         "obscurity": 2,
-        "accessibility": 2,
+        "accessibility": 3,
         "listeners": null,
         "source": "manual:genre-anchors",
         "checkedAt": "2026-08-21T20:55:47Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；2007 年 Rolling Stone Japan 日本搖滾百大專輯第3位、HMV 日本流行百大藝人第19位，日本 punk 的定義性錄音；曲長短、旋律直。"
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；2007 年 Rolling Stone Japan 日本搖滾百大專輯第3位、HMV 日本流行百大藝人第19位，日本 punk 的定義性錄音；曲長短、旋律直。",
+        "previousAccessibility": {
+          "accessibility": 2,
+          "rarity": "uncommon",
+          "at": "2026-11-04"
+        },
+        "loudFloorNote": "硬蕊度音量下限（2026-11-04 店主定案）：日本龐克，失真吉他為主"
       },
-      "rarity": "uncommon",
+      "rarity": "epic",
       "apexAssessment": {
         "eligible": true,
         "tier": "hall",
@@ -8103,13 +8109,19 @@
       "ratings": {
         "classic": 4,
         "obscurity": 3,
-        "accessibility": 2,
+        "accessibility": 3,
         "listeners": null,
         "source": "manual:genre-anchors",
         "checkedAt": "2026-08-21T20:55:47Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；日本樂團首度打進 Billboard 200 百名內（第74名、停留23週），是日本 heavy metal 對外的代表作；編曲被刻意簡化，入耳不難。"
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；日本樂團首度打進 Billboard 200 百名內（第74名、停留23週），是日本 heavy metal 對外的代表作；編曲被刻意簡化，入耳不難。",
+        "previousAccessibility": {
+          "accessibility": 2,
+          "rarity": "rare",
+          "at": "2026-11-04"
+        },
+        "loudFloorNote": "硬蕊度音量下限（2026-11-04 店主定案）：日本重金屬"
       },
-      "rarity": "rare",
+      "rarity": "uncommon",
       "apexAssessment": {
         "eligible": false,
         "tier": null,

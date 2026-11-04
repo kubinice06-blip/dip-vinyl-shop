@@ -2304,12 +2304,18 @@
    "ratings": {
     "classic": 3,
     "obscurity": 3,
-    "accessibility": 2,
+    "accessibility": 3,
     "listeners": 1031,
     "source": "manual:regional-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "checkedAt": "2026-08-31T00:00:00.000Z",
+    "previousAccessibility": {
+     "accessibility": 2,
+     "rarity": "common",
+     "at": "2026-11-04"
+    },
+    "loudFloorNote": "硬蕊度音量下限（2026-11-04 店主定案）：流行龐克，失真吉他為主"
    },
-   "rarity": "common",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,

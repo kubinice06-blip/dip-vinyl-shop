@@ -5640,13 +5640,19 @@
       "ratings": {
         "classic": 4,
         "obscurity": 1,
-        "accessibility": 1,
+        "accessibility": 3,
         "listeners": null,
         "source": "manual:genre-anchors",
         "checkedAt": "2026-08-21T20:28:21Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；美國榜亞軍、八白金、全球約兩千五百萬張，且出過 Billboard Hot 100 冠軍單曲，是八〇年代硬式搖滾的公認主要作品；旋律與副歌都直白。"
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；美國榜亞軍、八白金、全球約兩千五百萬張，且出過 Billboard Hot 100 冠軍單曲，是八〇年代硬式搖滾的公認主要作品；旋律與副歌都直白。",
+        "previousAccessibility": {
+          "accessibility": 1,
+          "rarity": "common",
+          "at": "2026-11-04"
+        },
+        "loudFloorNote": "硬蕊度音量下限（2026-11-04 店主定案）：華麗硬式金屬，失真吉他為主"
       },
-      "rarity": "common",
+      "rarity": "uncommon",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
