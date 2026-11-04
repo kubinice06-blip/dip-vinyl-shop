@@ -3797,4 +3797,13 @@ window.DipPreviewStatus = Object.freeze({
   "milford graves|bäbi": "unavailable",
   "paul flaherty & chris corsano|the hated music": "unavailable",
   "william hooker|hard time": "unavailable",
+  "luigi russolo|die kunst der geräusche": "unavailable",
+  "pierre schaeffer|5 études de bruits - études aux objets": "unavailable",
+  "mainliner|mellow out": "unavailable",
+  "revenge|triumph.genocide.antichrist": "unavailable",
+  "die like a dog quartet|little birds have fast hearts no.1": "unavailable",
+  "グループ・音楽|ミュージック オブ グループ・音楽": "unavailable",
+  "sarcófago|i.n.r.i.": "unavailable",
+  "archgoat|whore of bethlehem": "unavailable",
+  "francisco lópez|untitled #360": "unavailable",
 });

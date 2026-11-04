@@ -1,5 +1,26 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-04｜dip-vinyl-shop｜新頂點盤線 ax8：異端新上架 10 張（店主放寬標準；Vomir《Proanomie》換掉《Claustration》）
+
+- **店主 11-04**：異端「稍微放寬」——可信來源描述出具體、持續整張的高強度聽感，或噪音史開創地位即可，不再要求樂評下「極端」結論；附噪音入門文點名作品。ax7（另一工作階段）做卡池既有盤升格，ax8 只上卡池沒有的藝人。
+- **上線 10（全 heresy）**：Vomir《Proanomie》、Luigi Russolo《Die Kunst der Geräusche》、Pierre Schaeffer《5 études de bruits / Études aux objets》、Mainliner《Mellow Out》、Revenge《Triumph.Genocide.Antichrist》＋ax6 汰換稿重判撿回 Die Like a Dog Quartet、グループ・音楽、Sarcófago《I.N.R.I.》、Archgoat《Whore of Bethlehem》、Francisco López《Untitled #360》。Vomir《Claustration》改一般卡（seed＋card_catalog）。**異端 140 → 149**，同級每藝人一張 0 重複；合併 ax7（升格 +8）後全池 **157**，同級同藝人 0 重複。
+- **命中率低**：提名 32、研究汰 22。開工掃 190 位，過半已在卡池；剩下的二線只有零售文案／社群評論或局部激烈。Amacher 策展漏查撞池（已是異端）被 build-cards 擋下。
+- **寫入**：card_catalog 11、KV 11 鍵回讀一致、試聽 ready 1／unavailable 9、seed 10 列＋改 1 列、Discogs 封面登錄 2（Archgoat CAA 500、Schaeffer 無圖）、曲風欄補 Vomir、genre-l3 補 2、子曲風樹與抽卡封面重建、情緒評分 `score-ax8`。
+- **藝人介紹**：ar-d-270 上線 8 位（skipped 0），ar-d-271 未用。審稿：專輯簡介改 4 張（刪聽眾意見、樂迷評論、禁語「里程碑」、Russolo 措辭），藝人介紹未改字。
+- **驗證**：prepare／published gate 0 error；對 origin claude/* 分支 seed 去重 0 撞；`kv-token-check` exit 0。
+- **留給本機**：`album_overrides.tier`（`batch-progress/add-20261104-ax8/album-overrides-tier.json`：設 10、清 1）；Schaeffer listeners 查無。卡池《Pierre Schaeffer｜Musique concrète》疑似 GRM 多人合輯掛 Schaeffer 一人，另排查。
+- 主要檔案：`batch-progress/add-20261104-ax8/*`、`batch-progress/apex-new-20261104/PLAN.md`、`batch-progress/mood-cells-20261022/curation-ax8{a..f}.json`、`desc-tools/batches/{cards,research,output}/add-20261104-ax8-*`、`onboarding-manifest-add-20261104-ax8-20261104.json`、`seed_cards.json`、`data/artist-intros/*`、`batch-progress/artist-intro/roster-ax8-ar-d-270.json`。
+### 2026-11-04｜dip-vinyl-shop｜新頂點盤線 ax7：異端升格 8 張（放寬後標準；卡池既有卡）
+
+- **店主 11-04「稍微放寬」**：異端改為「可信來源描述出具體、持續整張的高強度聽感就收」（全程無調、無固定節拍、集體即興密度極高、回授／失真音牆、尖叫式吹奏、超長篇不間斷、極端音量），不再要求樂評下「極端」結論；仍不收結構清楚的前衛、spiritual／modal、一般碾核與技術死金、只有局部激烈的盤。寫進 `ALBUM_ONBOARDING.md` §3 與 apex-new PLAN。ax7 只做卡池既有盤升格，ax8（另一工作階段）做新上架。
+- **升格 8**：Les Rallizes Dénudés《'77 Live》（店主點名，四張擇一）、高柳昌行《April Is the Cruellest Month》、灰野敬二《The Book of "Eternity Set Aflame"》、Musica Transonic、Phill Niblock《Touch Food》、Aaron Dilloway《Modern Jester》、Wold《Screech Owl》、Impetuous Ritual《Unholy Congregation of Hypocritical Ambivalence》。**異端 140 → 148**（同級每藝人一張 0 重複）。
+- **受檢約 80 張**：ax1／ax2／ax5 既有研究稿約 40 張照新標準直接重判（收 3）；新研究 20 組 43 張（Sonnet ×2，WebSearch 25）收 5。power electronics 卡帶七張（Taint、Consumer Electronics、Genocide Organ…）音響應屬高強度但查無針對該張的聽感描述，放寬的是結論不是來源，不收；Sun Ra《Magic City》因 Sun Ra 已在異端不升。卡池這一路已掃完，缺口留給新上架。
+- **裁定**：樂團與個人名義不同鍵（灰野個人可與不失者並存；高柳個人可與「高柳昌行 / 阿部薫」並存，更正 ax5 51947 的概括寫法）；`裸のラリーズ` 與 `Les Rallizes Dénudés` 算同一位。
+- **寫入**：card_catalog 8（tier heresy＋apex＋accessibility 5＋rarity 重算）讀回 8/8；KV 10 鍵（desc2 8＋desc4 2，舊值 `kv-before-ax7u.json`）回讀 10/10；seed 改 8 列（第 9 欄 heresy；灰野、Niblock、Musica Transonic、Wold 硬蕊 4→5）；onboarding manifest 同步 12 處／9 檔（簡介、三軸、apexAssessment、published.apexPool）。
+- **審稿**：8 張改 3 處（刪非本張的「回授氾濫」、刪「據傳」的效果器清單、單一評者改「被形容為」）。
+- **留給本機**：`album_overrides.tier` 8 張用後台「依卡池同步頂點旗標」（清單 `album-overrides-tier.json`）。研究層記下未升格卡的舊簡介疑點（光束夜《1st》年份 1991、Corrupted 第一片只有一首、Organum《Submission》1987、High Rise II 八軌）另排修。
+- 主要檔案：`batch-progress/add-20261104-ax7/*`、`desc-tools/batches/{cards,research,output}/ax7u*`、`seed_cards.json`、`ALBUM_ONBOARDING.md`、`batch-progress/apex-new-20261104/PLAN.md`、onboarding manifest 9 份。
+
 ### 2026-11-04｜dip-vinyl-shop｜頂點卡簡介重寫 s11：ad-21、ad-22 上線 60 張（流亡）
 
 - **內容**：ad-21（歐洲自由即興與 electroacoustic：Evan Parker、Barry Guy、Noetinger、eRikm、Rowe、Kerbaj、Zíngaro、Léandre、Roger Turner；Wackie’s 系 reggae showcase；Main、Wishart、Ric Colbeck）、ad-22（FMP 與東歐爵士：Gräwe、Favre、Tavitian、Grencsó、Przybielski、Conrad Bauer、String Connection；Zamrock；菊地雅章、강태환、Tokyo Kid Brothers；早期電子：Maxfield、Lundsten、Eloy、Curran；私壓民謠搖滾）。研究 3 Sonnet、寫作 2 Opus ×2 批；新增 `prompt-research-extra-s11.md`／`prompt-writer-extra-s11.md`（一直在版的歐洲即興盤不寫難找；Discogs 改走 API）。

@@ -1,0 +1,88 @@
+{
+ "group": "ax8b",
+ "factions": [
+  {
+   "id": "harsh-noise-pe",
+   "zh": "harsh noise／power electronics",
+   "count": 2,
+   "why": "卡池沒有的藝人；可信評論描述到位者"
+  }
+ ],
+ "albums": [
+  {
+   "artist": "Mauthausen Orchestra",
+   "album": "Murderfuck",
+   "year": 1983,
+   "label": "Aquilifer Sodality",
+   "country": "it",
+   "faction": "harsh-noise-pe",
+   "genres": [
+    "noise",
+    "industrial"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "義大利 power electronics 開創者的 1983 卡帶，三段長曲（21:43／13:03／6:54）的尖銳刺耳噪音。",
+   "listeners": null,
+   "why": "Pierpaolo Zoppo 的 Mauthausen Orchestra（1982 起）屬義大利早期 power electronics／harsh noise 開創者；1982–83 錄音、Aquilifer Sodality 卡帶首發，整張只有三段長篇（Part One 21:43、Two 13:03、Three 6:54），Urashima 2016 黑膠重發文案描述為「brutal and harsh tones that cut through the air」的 harsh noise／power electronics。維基稱其為「noise、電子失真與極高音人聲的殘暴拼貼」。出處以廠牌與維基為主，偏薄。",
+   "moodGuess": {
+    "x": 4.5,
+    "y": -1.5,
+    "z": -0.5,
+    "why": "整張三段長篇尖銳失真噪音與高頻嘶吼，無節拍"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/22bf493e-b304-4918-9e90-63e7c5889e96",
+    "https://coverartarchive.org/release-group/22bf493e-b304-4918-9e90-63e7c5889e96/front",
+    "https://www.soundohm.com/product/murderfuck",
+    "https://en.wikipedia.org/wiki/Mauthausen_Orchestra"
+   ],
+   "mbRgMbid": "22bf493e-b304-4918-9e90-63e7c5889e96",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "證據偏薄：找不到 Wire／AllMusic 等級樂評，只有 Urashima 廠牌文案（輔證）與維基 stub（無引註）；主線視寫作材料決定汰留。MB 首發 1983（IT, Aquilifer Sodality）。封面 CAA 回 307 轉址有圖。"
+  },
+  {
+   "artist": "Kazumoto Endo",
+   "album": "While You Were Out",
+   "year": 1999,
+   "label": "BOXmedia / Philosophy Shop",
+   "country": "us",
+   "faction": "harsh-noise-pe",
+   "genres": [
+    "noise",
+    "experimental"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "Tiny Mix Tapes 稱它實現了日本噪音前二十年的總和，Sputnik 等稱全盤 harsh noise 配突然切斷與流行取樣。",
+   "listeners": null,
+   "why": "遠藤一元 1999 年專輯，整張 harsh noise，以突然切斷、轉向與超現實拼貼切割噪音，並刻意用流行、舞曲取樣打斷純噪音；Tiny Mix Tapes（Delorean 專欄）稱其像是日本噪音前兩個十年的一次實現，音樂節介紹稱其為現代 harsh noise 的完美經典。",
+   "moodGuess": {
+    "x": 4,
+    "y": -0.5,
+    "z": -0.5,
+    "why": "高密度 harsh noise，跳接切割、帶玩笑感"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/64038bcb-77ac-4445-a969-46101d13e66a",
+    "https://coverartarchive.org/release-group/64038bcb-77ac-4445-a969-46101d13e66a/front",
+    "https://www.tinymixtapes.com/delorean/kazumoto-endo-while-you-were-out",
+    "https://www.sputnikmusic.com/review/66277/Kazumoto-Endo-While-You-Were-Out/"
+   ],
+   "mbRgMbid": "64038bcb-77ac-4445-a969-46101d13e66a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "聽感為「harsh noise 跳接＋流行取樣」，並非單一持續音牆，也偏玩笑；若主線認為不夠「持續整張」則汰。Tiny Mix Tapes 頁面本次抓取回 500，內容引自搜尋摘要，未逐字核對。"
+  }
+ ],
+ "notes": [
+  "WebSearch 8 次用盡、其餘靠 WebFetch／MB／CAA／Discogs API；候選池多數藝人找不到可信樂評，故只交 2 張，不湊數。",
+  "已被 ax1／ax2 提過並判 none 或汰換而跳過：Ramleh（Hole in the Heart）、Con-Dom（Subjection）、Anenzephalia、Sudden Infant（Radiorgasm）、Contagious Orgasm（Thin Skinned）、Mattin（Proletarian of Noise）。",
+  "chk 為 0 但查無足夠樂評或聽感不合：Jazkamer《Metal Music Machine》（樂評稱偏死亡金屬／grind，不是噪音牆；MMM2 是器樂金屬）、Puce Mary（Pitchfork《Persona》描述含 drum beats，結構多變）、Hiroshi Hasegawa《Never Ending Story of Noise Forest》（Big Takeover 稱 drone／類 Merzbow 磁帶迴圈，偏溫和）、Guilty Connector《Beats, Noise and Life》（Igloo 稱非單純噪音牆且 CAA 無封面）。",
+  "Torturing Nurse《Il comunismo doveva morire》（MB 9ff2a0b6-2321-48e3-9845-339d3ae6c704，Brainwashed 稱單一不間斷、持續翻湧的 harsh noise、仿 Hijokaidan）內容最合，但 CAA 與 Discogs 皆無封面且 Brainwashed 頁抓取 404，故未提；主線若能找到封面（Bandcamp／Mind Flare Media）可補入。",
+  "Cock E.S.P.（AllMusic Raggett 評《Excessive Size Punisher》，MB c3b158f7，CAA 無圖）、Slogun、Lockweld、Smell & Quim、Sickness、Knurl、Bloodyminded、Löwenbrück（MB 查無）、李劍鴻（偏民謠／drone，非本線）：未找到足夠可信聽感描述，未提。"
+ ]
+}

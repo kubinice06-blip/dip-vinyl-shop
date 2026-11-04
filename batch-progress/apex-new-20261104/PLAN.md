@@ -30,6 +30,8 @@
 | ax4 | 流亡 B：亞洲、拉美、非洲、東歐、早期電子私壓 | 30 | ar-d-264（✅ 介紹上線 15／skipped 3） | ✅ 上線 20（pearl 15／一般 5） |
 | ax5 | 異端 C：卡池既有自由爵士／即興升格＋新上架美國自由爵士（店主 11-04 撤銷「不收能量型自由爵士」） | 升格 32＋新卡 42 | ar-d-266（✅ 介紹上線 4／skipped 0；267 未用） | ✅ 異端 +13（升格 6、新上架 7 全 heresy）；新卡研究 30 汰 23 |
 | ax6 | 異端 C：卡池沒有的藝人——美國以外自由爵士／即興（店主點名 Kowald Quintet、姜泰煥）＋war metal、noisegrind、raw BM、drone doom、噪音搖滾、具象／現代音樂 | 50（8 組策展） | ar-d-268、ar-d-269（✅ 介紹上線 14＋3／skipped 0） | ✅ 上線 18（heresy 18／一般 0）；研究汰 32（none 不轉一般卡，52071）；試聽 ready 11 |
+| ax7 | 異端 D：卡池既有卡升格（放寬後標準；ax5 汰掉的升格候選、q2 刷掉的、店主點名裸のラリーズ、卡池自由爵士／即興／噪音盤重掃） | 升格候選 43 張／20 組＋舊研究稿重判約 40 張 | 不需（升格不新增藝人） | ✅ 升格 8（heresy 8）；異端 140 → 148 |
+| ax8 | 異端 D（店主 11-04 放寬：可信來源描述出具體、持續整張的高強度聽感即可）：卡池沒有的藝人——附文作品（Russolo、Group Ongaku、Schaeffer、Vomir《Proanomie》）、噪音史開創、harsh noise／PE、自由即興／噪音搖滾、極端金屬／noisecore／極端電子＋ax6 汰換稿重判 | 32（6 組＋ax6 撿回 5） | ar-d-270（✅ 介紹上線 8／skipped 0；271 未用） | ✅ 上線 10（heresy 10／一般 0）；Vomir《Claustration》改一般卡；研究汰 22；試聽 ready 1 |
 
 - 提名數比目標多約兩成，留給研究層汰換。
 - 一個工作階段跑 2 批（ax1＋ax2、ax3＋ax4），照 CLAUDE.md 的併行規則。
@@ -92,3 +94,18 @@
 - 店主點名的 Kowald Quintet、강태환 研究層判 none（評語溫和），主線依點名收（52074），簡介只寫編制與手法事實。
 - 研究汰換主因：查不到「針對這張」的具名 harsh／extreme 樂評（現代音樂、聲音詩、war metal 二線、lowercase 幾乎全軍覆沒）。下一輪要補異端，從本機（能讀 AllMusic／Pitchfork／The Wire）點名、研究層只做核實，命中率會高很多。
 - 研究層判 none 的卡**直接汰換、不轉一般卡**（52071），研究稿都留在 `desc-tools/batches/research/add-20261104-ax6-*.json`，日後可當一般卡撿回。
+## ax8 收工筆記（2026-11-04，分支 `claude/apex-new-ax8`）
+- **異端 140 → 149**（新上架 +10、Vomir《Claustration》改一般卡 −1）。店主放寬後仍只收到 10：提名 32、研究汰 22。
+- **卡池已極深**：開工掃 190 位常見噪音／即興／極端金屬名字，過半已有卡（異端或一般卡→歸 ax7）。卡池沒有的二線多半只有 Discogs、零售文案、社群評論，或只有局部激烈（Thurston Moore、Z'EV、Kluster、小杉武久、Chatham）。
+- 放寬標準實際撿回的是「地位型」（Russolo、Schaeffer、Group Ongaku）與「負評但描述具體」（Revenge）；ax6 汰換稿重判撿回 5。
+- 店主附文作品：Cage《4'33"》不收（Cage 已在異端）；Avraamov、Nuova Consonanza《The Feed-back》MB 無專輯；Schaeffer 卡池原卡《Musique concrète》實為 GRM 多人合輯（研究推斷 BAM LD 070），與《5 études》不重疊，不算取代。
+- 再往 200 推只剩 ax7 的升格路線；新上架這條在雲端已見底。
+
+## 異端標準放寬（店主 2026-11-04，ax7／ax8 起適用）
+- ax5／ax6 照「要有樂評明確說它極端」只補到 140。店主看過後決定「**稍微放寬**」：要有可信來源**描述出具體、持續整張的高強度聽感**就收（全程無調、沒有固定節拍、集體即興密度極高、回授／失真音牆、尖叫式吹奏、超長篇不間斷、極端音量），**不再要求樂評下「極端／刺耳」的結論**。
+- 仍不收：有清楚結構、聽得下去的前衛；spiritual／modal 爵士；一般碾核、技術死金；只有局部段落激烈的盤。同級一藝人一張，不同寫法算同一位。
+- 已寫進 `ALBUM_ONBOARDING.md` §3。分工：ax7 只做卡池已有盤升格（條號 52101–52180，`batch-progress/add-20261104-ax7/`）；ax8 只做新上架。
+
+## ax7 收工筆記（2026-11-04，分支 `claude/apex-new-ax7`）
+- **異端 140 → 148（+8，全為升格）**：'77 Live、April Is the Cruellest Month、Eternity Set Aflame、Musica Transonic、Touch Food、Modern Jester、Screech Owl、Impetuous Ritual。目標「ax7 約 30」差很多，照實。
+- 卡池裡的自由爵士／即興／噪音一般卡（acc≥4、相關子曲風 520 張）已掃過；剩下的不是結構清楚、spiritual，就是只有 Discogs 標籤沒有聽感描述的卡帶。再往 200 推只能靠新上架（ax8）。
