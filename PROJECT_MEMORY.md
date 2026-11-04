@@ -1,5 +1,15 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-04｜dip-vinyl-shop｜新頂點盤線 ax5：異端 +13（升格 6＋新上架美國自由爵士 7；併 ax6 後全池 140）
+
+- **店主 11-04**：撤銷「不收能量型自由爵士」，自由爵士／即興中高強度、無調、噪音化的代表作可進異端，但仍要可信資料支持具體極端特徵。ax5 管卡池既有卡升格＋新上架美國自由爵士；ax6（另一工作階段）管美國以外的新藝人。
+- **升格 6／32**：Frank Lowe《Black Beings》、Frank Wright Trio、Charles Gayle《Consecration》、Ayler《Bells》（硬蕊 4→5）、Dave Burrell《Echo》、Ornette《Free Jazz》。Sun Ra《Magic City》、Globe Unity、Sunny Murray、Sharrock、Cyrille、SME、LJCO 等樂評本身稱有結構／易入耳，none。流亡、殿堂卡不轉異端；Peter Kowald 讓給 ax6。
+- **新上架 7（全 heresy）**：Alan Silva《Luna Surface》、Milford Graves《Bäbi》、Flaherty & Corsano《The Hated Music》、William Hooker《Hard Time》、Little Women《Throat》、Gato Barbieri《In Search of the Mystery》、Sun Ra《Strange Strings》。三輪策展提名 42、研究 30、汰 23（判 none 不轉一般卡）。
+- **寫入**：KV 13 鍵（升格舊值存 `kv-before-ax5u.json`）回讀 13/13、前台 13/13；card_catalog 13（tier＋apex）；seed 新增 7 列、改 6 列；試聽 ready 4／unavailable 3；Discogs 封面 2 張登錄；子曲風／曲風樹／抽卡封面重建；情緒評分 `score-ax5` 7 張（build-card-moods 錨點 104/104）。
+- **藝人介紹**：ar-d-266 上線 4 位（skipped 0），Sun Ra and His Astro Infinity Arkestra 走別名鍵；ar-d-267 未用。
+- **驗證**：prepare／published gate 0 error；對 origin 224 分支 seed 去重 0 撞；同級每藝人一張 0 重複。審稿 3 處（`batch-progress/add-20261104-ax5/rulings.md`）。
+- **留給本機**：`album_overrides.tier` 13 張用後台「依卡池同步頂點旗標」（清單 `album-overrides-tier.json`＋manifest）。研究稿記下的未升格卡舊簡介疑點（Lehn/Schmickler《Bart》時長 30:10、曲名〈Du Funktion〉；Oxley《Ichnos》〈Cadilla〉是四重奏）另排修。
+- **主要檔案**：`batch-progress/add-20261104-ax5/`、`onboarding-manifest-add-20261104-ax5-20261104.json`、`seed_cards.json`、`desc-tools/batches/{cards,research,output}/{ax5u,add-20261104-ax5}*`、`batch-progress/mood-axes/score-ax5/`、`data/artist-intros/*`。
 ### 2026-11-04｜dip-vinyl-shop｜新頂點盤線 ax6：異端新上架 18 張（卡池沒有的藝人；含店主點名 Peter Kowald Quintet、姜泰煥）
 
 - **內容**：店主「異端有很多自由爵士可以收錄吧？」「應該可以加到 200」→ 撤銷「不收能量型自由爵士」。ax6 只上卡池完全沒有卡的藝人（`chk-artist.mjs` 逐位比對），8 組策展提名 50、研究層汰 32，上線 18 張全為 heresy：Peter Kowald Quintet、강태환《Live At Café Amores》、Okkyung Lee《Ghil》、Birchville Cat Motel、Blasphemy、Conqueror、Bestial Warlust、Black Witchery、Ildjarn、Sete Star Sept、Burning Witch、Dragged Into Sunlight、Mauricio Kagel《Acustica》、Zeitkratzer《WHITEHOUSE electronics》、Mike Patton《Adult Themes for Voice》、Sightings《Absolutes》、Stalaggh《Projekt Misanthropia》、Orthrelm《OV》。**異端 109 → 127**（同級每藝人一張，驗過 0 重複）。

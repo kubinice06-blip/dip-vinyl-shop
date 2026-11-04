@@ -3794,4 +3794,7 @@ window.DipPreviewStatus = Object.freeze({
   "dragged into sunlight|hatred for mankind": "unavailable",
   "stalaggh|projekt misanthropia": "unavailable",
   "orthrelm|ov": "unavailable",
+  "milford graves|bäbi": "unavailable",
+  "paul flaherty & chris corsano|the hated music": "unavailable",
+  "william hooker|hard time": "unavailable",
 });

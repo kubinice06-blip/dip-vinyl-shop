@@ -28,6 +28,7 @@
 | ax2 | 異端 B：極端現代音樂、激進即興、聲音藝術、極端電子、反結構金屬 | 40 | ar-d-262（✅ 介紹上線 32／skipped 3） | ✅ 上線 37（heresy 11／一般 26）；研究汰 7、補策展收 4；試聽 ready 17 |
 | ax3 | 流亡 A：歐美私壓（迷幻、民謠、福音、靈魂放克、地下爵士） | 30 | ar-d-263（✅ 介紹上線 16／skipped 9） | ✅ 上線 26（pearl 21／一般 5） |
 | ax4 | 流亡 B：亞洲、拉美、非洲、東歐、早期電子私壓 | 30 | ar-d-264（✅ 介紹上線 15／skipped 3） | ✅ 上線 20（pearl 15／一般 5） |
+| ax5 | 異端 C：卡池既有自由爵士／即興升格＋新上架美國自由爵士（店主 11-04 撤銷「不收能量型自由爵士」） | 升格 32＋新卡 42 | ar-d-266（✅ 介紹上線 4／skipped 0；267 未用） | ✅ 異端 +13（升格 6、新上架 7 全 heresy）；新卡研究 30 汰 23 |
 | ax6 | 異端 C：卡池沒有的藝人——美國以外自由爵士／即興（店主點名 Kowald Quintet、姜泰煥）＋war metal、noisegrind、raw BM、drone doom、噪音搖滾、具象／現代音樂 | 50（8 組策展） | ar-d-268、ar-d-269（✅ 介紹上線 14＋3／skipped 0） | ✅ 上線 18（heresy 18／一般 0）；研究汰 32（none 不轉一般卡，52071）；試聽 ready 11 |
 
 - 提名數比目標多約兩成，留給研究層汰換。
@@ -81,6 +82,10 @@
 - 情緒評分 `score-ax12` 69 張：ax1 暴躁 30／頹靡 2；ax2 暴躁 23／冷冽 9／頹靡 4／平靜 1。
 - 藝人介紹補洞層的 pubIssues 回頭修了 5 張已上線簡介（Hair Police、Taint、Impetuous Ritual、Karkowski、Tsunoda），KV 已重寫。
 
+## ax5 收工筆記（2026-11-04）
+- **異端 +13**（升格 6：Frank Lowe、Frank Wright Trio、Charles Gayle、Ayler《Bells》、Dave Burrell《Echo》、Ornette《Free Jazz》；新上架 7：Alan Silva《Luna Surface》、Milford Graves《Bäbi》、Flaherty & Corsano、William Hooker、Little Women、Gato Barbieri ESP、Sun Ra《Strange Strings》）。離「ax5 補約 45」差很多，照實上架，沒放寬證據門檻。
+- **命中率**：升格 6／32、新卡 7／30。撤銷「能量型」排除後，研究層仍要具體極端證據；ESP／BYG 時代多數盤的樂評講「前衛但有結構、聽得下去」（Sun Ra《Magic City》、Globe Unity、Giuseppi Logan、Burton Greene、Marzette Watts、Patty Waters 等都被樂評本身否掉）；2000 年後美國極端即興多半只有 Bandcamp／小站，過不了可信來源門檻。
+- **要再往 200 推**：只剩兩條路——(1) 從本機（讀得到 AllMusic／The Wire 全文）點名、研究層只核證據；(2) 店主放寬成「整張高強度」不必有具名極端評語。都需要店主決定。
 ## ax6 收工筆記（2026-11-04，分支 `claude/apex-new-ax6`）
 - **異端 109 → 127（+18）**（本工作階段開工時 seed 109；ax5 另計）。提名 50、汰 32，命中 36%。照實上架，沒有放寬標準湊數。
 - **店主撤銷「不收能量型自由爵士」**（11-04），但歐洲、日本、南非的自由爵士藝人卡池幾乎都已有卡（歸 ax5 升格）；ax6 只上卡池沒有的藝人，自由爵士只收到 Kowald Quintet、강태환、Okkyung Lee 三張。
