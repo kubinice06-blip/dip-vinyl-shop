@@ -46,3 +46,15 @@
 - **51509**　Werewolf Jerusalem《God Has Shot Himself》：MB／維基載明 Werewolf Jerusalem 是 Richard Ramirez 的側計畫，與 51506 同人。異端池同人只准一張：Rape! 判 none，本張判 heresy（單曲目 31:50 靜態噪音牆），故不撞；seed 無此人。status thin、apex 弱判定，主線可改 none。
 - **51510**　違規自陳：本組 WebSearch 超過 3 次（約 9 次），因多張目標頁（維基、AllMusic、Sputnik）抓不到。另 Discogs／MB 直連 API 無問題。
 - 小結：heresy 5（Hanatarash 3、Monde Bruits、The Rita、Vomir、Werewolf Jerusalem）、none 4；建議汰換 1（Violent Onsen Geisha，頂點用途）。
+
+## 研究 b 組（51511–51520）
+- **51511**　Skin Crime《Parasite》：Discogs 734495／MB 8ca06bed 吻合（2001、Xerxes ES96:90、CDr 限量 90 張）；Discogs 與 MB 國別皆 Japan（廠牌），團是美國 Patrick O'Neil 的 Self Abuse 圈。頂點依新標準判 heresy（把握中等）：維基列 HNW 先驅＋Hospital Productions 文案；無專評本盤，聲音為濃密有動態的噪音，非靜止牆。
+- **51512**　Taint《Justmeat》：策展層「歐洲 HNW」錯——Taint 是德州人（1970–2019，Discogs／MB），類型是 power electronics，Slaughter Productions（義大利，Marco Corbelli）才是廠牌所在；1995 卡帶。找不到任何樂評，status thin，apex none。
+- **51513**　Emil Beaulieau《Kill the All-Noise Japanese Artists》：Ron Lessard 的 Pure 系列 CD（RRRecords 子系列），Discogs 註記為挪用日本噪音素材；無專評，音響描述僅靠註記與曲名，status thin，apex none。
+- **51514**　Macronympha《Intensive Care》：補上廠牌 Self Abuse Records SAD-07（MB／Discogs 262699）；四首長篇（兩首各 23:37）。apex 判 heresy 但把握偏低，第二來源 Noisextra 是噪音 Podcast 的主觀評價，主線可降回 none。
+- **51515**　Russell Haswell《Live Salvage 1997-2000》：現場錄音編輯盤，但為 Haswell 首張專輯與代表作，保留。類型實為抽象數位噪音非 HNW。RBMA 稱「令人震驚地猛烈、完全抽象」，盤面註記「最大音量播放」，依新標準判 heresy。Quietus 專文兩次抓取失敗未採用。
+- **51516**　Sutcliffe Jügend《We Spit on Their Graves》：MB RG 涵蓋 1982 Come Org 十捲卡帶盒（約十小時）、1989 奧地利盜版、1997 Cold Spring 精選 CD（26 軌約 76 分）。建議聲音／試聽依據定為 1997 CD、年份仍 1982。維基條目抓取 404，無可直接引用的樂評，apex none（若主線能從維基確認 harshest 描述可改 heresy）。
+- **51517**　Ramleh《Hole in the Heart》：建議汰換。1987 年是 Mundy 悼念 Jean Genet 的四首迷幻噪音搖滾卡帶（Dirter 文案稱 post power electronics），非極端噪音；推翻策展層「harsh 電子噪音代表」。accessibility 4，apex none。
+- **51518**　Genocide Organ《Leichenlinie》：1989-12，Tesco Organisation TESCO 001／De Fabriek FABPROD 13 聯名，291 張手工封套，非「Tesco 重發」。維基僅「殘暴」一句，找不到專評，第二可信網域缺，apex none（把握低）、status thin。
+- **51519**　Brighter Death Now《Necrose Evangelicum》：1995 CMI.36；Musique Machine 描述為迴圈鼓與合成器的窒息氛圍型死亡工業，accessibility 4，apex none，不建議汰換（可上一般卡）。
+- **51520**　依 2026-11-04 更正標準（51571）重判：Skin Crime、Macronympha、Haswell 由 none 改 heresy。本組 WebSearch 約 8 次、超過每組 3 次上限，因維基／AllMusic／Discogs 多頁無法直接取得；Discogs 以 API 取代。小結：heresy 3、none 6，建議汰換 1（Ramleh）。
