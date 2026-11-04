@@ -3695,4 +3695,5 @@ window.DipPreviewStatus = Object.freeze({
   "pascal von wroblewsky|swinging pool": "unavailable",
   "uschi brüning|uschi brüning": "unavailable",
   "濁水溪公社|台客的復仇": "unavailable",
+  "張睿銓 chang jui-chuan|創世記": "unavailable",
 });
