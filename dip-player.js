@@ -5,7 +5,7 @@
   // 試聽索引每天跟著上架更新：載入用 cache:'no-cache'（每次帶 ETag 回伺服器確認，沒變只回 304）。
   // 2026-10-25 以前是 force-cache＋手動換 ?v，忘了換版號，玩家手機就一直拿舊索引——
   // 宇多田ヒカル《First Love》改掛名後店主手機查不到新鍵、試聽失效即為此。
-  const APPLE_AUDIO_MAP_URL = '/data/apple-audio-runtime-v1.json?v=4';
+  const APPLE_AUDIO_MAP_URL = '/data/apple-audio-runtime-v1.json?v=5';
   const SPOTIFY_PLACEHOLDER = 'spotify:album:4aawyAB9vmqN3uQ7FjRGTy';
   const YOUTUBE_PLACEHOLDER = 'M7lc1UVf-VE';
   const IOS_DEVICE = /iPad|iPhone|iPod/.test(navigator.userAgent || '') ||
@@ -1054,6 +1054,84 @@
     } catch (_) { lastFailCode = 'S9:fetch'; return {}; }
   }
 
+  // 2026-11-05 店主：「試聽播出時都是播在該專輯最紅的歌」。Apple 30 秒片段的起點由 Apple 決定、改不了，
+  // 能決定的是播哪一首：靜態地圖已離線選好最紅那首（scripts/popular-preview.mjs，Deezer 單曲 rank
+  // ＋Apple Music 熱門星號）；即時查到的曲目清單在這裡用 Deezer rank 挑最紅那首（JSONP，限時），
+  // 查不到才退回第一首 ≥60 秒、不是 demo／live／remix 的正曲。原本的「隨機挑一首」已拿掉。
+  const PREVIEW_VARIANT = /\b(demo|live|remix|instrumental|karaoke|a ?cappella|acapella|alternate|outtake|rough|take \d|session|rehearsal|radio edit|mono)\b/i;
+  const PREVIEW_VARIANT_BRACKET = /[\(\[\{（【][^\)\]\}）】]*(?:remaster|version|mono|stereo|edit|mix|live|demo|feat|with|bonus|single|explicit|deluxe|from|19\d\d|20\d\d)[^\)\]\}）】]*[\)\]\}）】]/gi;
+  function previewTitleKey(title) {
+    return normalizePreviewText(String(title || '').replace(PREVIEW_VARIANT_BRACKET, ' ').replace(/\s[-–—]\s.*$/, ' '));
+  }
+  function previewTrackEligible(tracks) {
+    const variantAlbum = tracks.filter(t => PREVIEW_VARIANT.test(t.trackName || '')).length > tracks.length / 2; // 現場專輯整張都是 live
+    return t => (!Number(t.duration) || Number(t.duration) >= 60000) && (variantAlbum || !PREVIEW_VARIANT.test(t.trackName || ''));
+  }
+  function firstRealTrack(tracks) {
+    return tracks.find(previewTrackEligible(tracks)) || tracks[0] || null;
+  }
+
+  function fetchJsonp(requestUrl, ms) {
+    return new Promise(resolve => {
+      const callback = `dipJsonp${Date.now()}_${Math.random().toString(36).slice(2)}`;
+      const script = document.createElement('script');
+      let settled = false;
+      const finish = value => {
+        if (settled) return;
+        settled = true;
+        clearTimeout(timer);
+        try { delete window[callback]; } catch (_) { window[callback] = undefined; }
+        script.remove?.();
+        resolve(value && typeof value === 'object' ? value : null);
+      };
+      window[callback] = value => finish(value);
+      requestUrl.searchParams.set('output', 'jsonp');
+      requestUrl.searchParams.set('callback', callback);
+      script.src = requestUrl.toString();
+      script.async = true;
+      script.onerror = () => finish(null);
+      const timer = setTimeout(() => finish(null), ms);
+      document.head.appendChild(script);
+    });
+  }
+
+  async function markPopularTrack(data, artist, album) {
+    const tracks = Array.isArray(data?.tracks) ? data.tracks : [];
+    if (!tracks.length || data.popularRanked) return data;
+    // 先放保底（第一首正曲），Deezer 逾時或查不到時直接用它
+    if (!data.popularId) data.popularId = String(firstRealTrack(tracks)?.id || '');
+    if (tracks.length < 2) return data;
+    try {
+      const search = new URL('https://api.deezer.com/search/album');
+      search.searchParams.set('q', `${artist} ${album}`);
+      search.searchParams.set('limit', '10');
+      const found = await fetchJsonp(search, 1500);
+      const hit = (found?.data || []).find(x => previewArtistMatches(x?.artist?.name, artist) && previewAlbumMatches(x?.title, album));
+      if (!hit?.id) return data;
+      const list = new URL(`https://api.deezer.com/album/${encodeURIComponent(hit.id)}/tracks`);
+      list.searchParams.set('limit', '300');
+      // 藝人熱門榜：同一首歌在精選輯／單曲版的 rank 常高於這張專輯的版本，歌的熱度取所有版本最高
+      const top = hit.artist?.id ? new URL(`https://api.deezer.com/artist/${encodeURIComponent(hit.artist.id)}/top`) : null;
+      top?.searchParams.set('limit', '100');
+      const [albumRows, topRows] = await Promise.all([fetchJsonp(list, 1500), top ? fetchJsonp(top, 1500) : null]);
+      const rank = new Map();
+      for (const row of [...(albumRows?.data || []), ...(topRows?.data || [])]) {
+        const key = previewTitleKey(row?.title);
+        if (key) rank.set(key, Math.max(rank.get(key) || 0, Number(row?.rank || 0)));
+        const bare = normalizePreviewText(String(row?.title || '').replace(/[\(\[][^\)\]]*[\)\]]/g, ' '));
+        if (bare && bare !== key) rank.set(bare, Math.max(rank.get(bare) || 0, Number(row?.rank || 0)));
+      }
+      const rankOfTitle = title => Math.max(rank.get(previewTitleKey(title)) || 0,
+        rank.get(normalizePreviewText(String(title || '').replace(/[\(\[][^\)\]]*[\)\]]/g, ' '))) || 0);
+      const ok = previewTrackEligible(tracks);
+      const scored = tracks.map(t => ({ t, r: rankOfTitle(t.trackName) })).filter(x => x.r > 0);
+      const pool = scored.some(x => ok(x.t)) ? scored.filter(x => ok(x.t)) : scored;
+      pool.sort((a, b) => b.r - a.r);
+      if (pool[0]) { data.popularId = String(pool[0].t.id || pool[0].t.previewUrl); data.popularRanked = true; }
+    } catch (_) {}
+    return data;
+  }
+
   async function fetchItunesPreview(artist, album, { skipMap = false } = {}) {
     if (!skipMap) {
       const mapped = await mappedItunesPreview(artist, album);
@@ -1064,7 +1142,11 @@
     const fallbacks = MOBILE_DEVICE ? [fetchItunesGateway, fetchItunesDirect] : [fetchItunesDirect, fetchItunesGateway];
     for (const fallback of fallbacks) {
       const data = await fallback(artist, album);
-      if (data?.tracks?.length) return data;
+      if (data?.tracks?.length) {
+        // 總共最多多等 2.5 秒；逾時就用保底那首（markPopularTrack 一開始就設好 popularId）
+        await withTimeout(markPopularTrack(data, artist, album), 2500).catch(() => {});
+        return data;
+      }
     }
     return {};
   }
@@ -1347,8 +1429,8 @@
     const tracks = Array.isArray(data?.tracks) ? data.tracks.filter(track => track?.previewUrl) : [];
     if (!tracks.length || token !== requestId) return false;
     const forced = forcedTrackId ? tracks.find(track => String(track.id || track.previewUrl) === forcedTrackId) : null;
-    const choices = tracks.length > 1 ? tracks.filter(track => track.id !== lastPreviewTrackId) : tracks;
-    const track = forced || choices[Math.floor(Math.random() * choices.length)] || tracks[0];
+    const popular = !forced && data?.popularId ? tracks.find(track => String(track.id || track.previewUrl) === data.popularId) : null;
+    const track = forced || popular || firstRealTrack(tracks) || tracks[0];
     const audio = ensurePreviewAudio();
     if (!audio || !track) return false;
     try {
