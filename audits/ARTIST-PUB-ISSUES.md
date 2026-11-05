@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1738 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1753 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -1515,6 +1515,21 @@
 | ar-d-504 | Heights of Abraham | Humidity | 1992 年組成的樂團 | Discogs 僅 Discogs 單源，維基未載成軍年；建議改『90 年代初』或略去年份 | https://www.discogs.com/artist/9261-Heights-Of-Abraham |
 | ar-d-504 | Jónsi & Alex | Lost and Found | 與 Sigur Rós 主唱 Jónsi 組成 ambient 組合（伴侶）；上線簡介《Riceboy Sleeps》卡寫「伴侶 Alex Somers」 | 維基 Alex Somers 條目稱兩人 2019 年分手；另有訪談稱「又復合」，現況不明，建議用語改為中性（合作夥伴）或不提 | https://en.wikipedia.org/wiki/Alex_Somers |
 | ar-d-505 | Moskwa TV | Dynamics & Discipline | 以〈Generator 7/8〉寫核電廠事故、車諾比事後被當成預言；原本只想做純器樂；由 DJ Talla 2XLC 等三人創立 | 維基與資料站都沒有核電廠主題、車諾比預言或「原本只想做純器樂」的說法（只有零售商文案提過核電廠，未證實）；維基只寫 Talla 與 RaHen 創團。需回查上線簡介依據，無依據則拿掉或標明出處。 | https://en.wikipedia.org/wiki/Moskwa_TV |
+| ar-d-505 | Mondo Loops | Forest Tales | 上線簡介稱《Forest Tales》為專輯、13 首約 34 分鐘 | Illustrate 訪談把《Forest Tales》稱為 EP，與卡池「專輯」的 MusicBrainz 登錄不一致；體裁待定，寫作層與簡介避免硬定名。 | https://illustratemagazine.com/?p=11541 |
+| ar-d-505 | New Risen Throne | Whispers of the Approaching Wastefulness / Crossing the Withered Regions | 成員寫作 Stielh | Side-line、Apple Music、Last.fm 皆拼作 Stiehl；MusicBrainz 為 Stielh。拼法待定，建議確認官方拼法再統一。 | https://side-line.com/?p=27181 |
+| ar-d-505 | Robert Hampson | Vectors | 1985 年共組了 Loop | 維基 Robert Hampson 條目寫 1985 年於倫敦共組，維基 Loop 條目與 PopMatters 寫 1986 年（Croydon）；年份兩說，建議改成『80 年代中期』 | https://en.wikipedia.org/wiki/Loop_(band) |
+| ar-d-505 | Void Stasis | Specimen 7 | Void Stasis 是 Kristof Bathory 獨自完成的 dark ambient 計畫 | 《Ruins》與《Viral Incubation》時期是三人（Bathory、Denman、Hedonia）；Specimen 7 是否改為 Bathory 獨自創作本層查不到來源，建議店主核對 Cryo Chamber 頁面。 | https://cryochamber.bandcamp.com/album/specimen-7 |
+| ar-d-505 | Waveshaper | Exploration 84 | 在斯德哥爾摩用硬體合成器作曲 | 本層未找到斯德哥爾摩的來源（維基只寫瑞典）；建議核對。 | https://en.wikipedia.org/wiki/Waveshaper_(musician) |
+| ar-d-505 | 't Geruis | The Kindest Encounters | 十首全由 't Geruis 一手完成、約 45 分鐘 | 搜尋摘要引 Deezer 稱該專輯 7 軌；曲數待店主核對 Home Normal 頁面。本層未開頁確認，僅供參考。 | https://www.deezer.com/artist/102776402 |
+| ar-d-506 | Amphior | Another Presence | 2022 年 3 月 11 日先上數位版 | Nordic Music Central 文章稱發行日為 2 月 28 日，與簡介日期不同，需對 Glacial Movements Bandcamp 頁核對；另該文稱此為第三張專輯，與簡介一致 | https://www.nordicmusiccentral.com/?p=2859 |
+| ar-d-506 | Archon Satani | Mind of Flesh and Bones | Archon Satani 是 Pettersson 與 Stavöstrand 的計畫；同一年，兩人的合作畫下句點 | compulsiononline 評論稱本張是 Stavöstrand 獨自掌控的第一張；Pettersson 離團後組成 Ordo Equilibrio（官方稱 1993 年 5 月）。簡介把本張寫成雙人作品可能不準，需對 Discogs 作者署名核對 | https://compulsiononline.com/Archon%20Satani%20-%20Flesh%20and%20Bones.htm |
+| ar-d-506 | Atrium Carceri & Eldar | Sacrosanct | Heath 在 2011 年創立 Cryo Chamber，當時廠牌才一歲多 | 創立年 2011（維基）與 2012（Bandcamp Daily）不一致；『才一歲多』隨之不穩，建議改成不寫創立年 | https://daily.bandcamp.com/label-profile/cryo-chamber-dark-ambient-guide |
+| ar-d-506 | Berlin | Pleasure Victim | 上線簡介稱《Pleasure Victim》為專輯，並稱其 1993 年獲 RIAA 白金、為樂團唯一美國白金專輯 | 維基稱 Pleasure Victim 為 EP（1982 年預算 2900 美元）；Geffen 1983 年重發。「唯一一張白金專輯」與樂團後來〈Take My Breath Away〉所在的《Top Gun》原聲帶（非 Berlin 專輯）、以及 Count Three & Pray 的認證未交叉查證，建議本機查 RIAA 後再確認 | https://en.wikipedia.org/wiki/Berlin_(band) |
+| ar-d-506 | Black Devil Disco Club | Disco Club | 後來 PP Roy 在舊貨市集買到原版，Richard D. James 與 Luke Vibert 都很喜歡 | Vinyl Factory 寫 Richard D. James 本人在 car boot sale 以 20p 找到原版（Rephlex 2004 重發）；與 PP Roy 一說不一致，宜再核對 | https://www.thevinylfactory.com/features/10-essential-french-cosmic-disco-records-selected-by-bernard-fevre |
+| ar-d-506 | Blackbird Blackbird | Hearts | 舊金山人 Mikey Sanders 曾在灣區打龐克鼓 | 後期報導稱本名 Mikey Maramag 且據點為洛杉磯（搜尋摘要，未開頁）；Sanders 與舊金山只見於 2010 年舊報導，宜再核 | https://www.turntablekitchen.com/?p=2055 |
+| ar-d-506 | Bluetech | Sines and Singularities | 以西雅圖為基地的 Bluetech | psybient.org 訪談寫他在聖地牙哥（曾住夏威夷），搜尋亦無來源確認西雅圖為基地 | https://www.psybient.org/love/?p=12953 |
+| ar-d-506 | Body of Light | Let Me Go | 由 Ben Greenberg 擔任製作 | Vice 預告文未提製作人，搜尋亦未核到；另發行日各說不一（7/22、7/29、8/17） | https://www.vice.com/en/article/qkaazm/body-of-light-tremble-track-let-me-go-stream |
+| ar-d-506 | Brandt Brauer Frick | You Make Me Real | 2008 年在威斯巴登成軍 | 英文維基導言稱柏林樂團、2009 年起一起演出；搜尋摘要稱 Frick 是在柏林學作曲時遇到另兩人，成軍年與地點待再核 | https://en.wikipedia.org/wiki/Brandt_Brauer_Frick |
 | ar-d-929 | Erik Truffaz | Rollin' | 2000 年簽進這個廠牌 | 上線簡介沿用 Blue Note 官網簡介的 2000 年簽約說；但維基與已上線的《Out of a Dream》《The Dawn》《Bending New Corners》簡介顯示 1997–1999 年已在 Blue Note 發片，瑞士聯邦文化局新聞稿也記《Bending New Corners》為 1999 年 Blue Note 專輯，2000 年簽約的說法與之矛盾，建議改為不寫簽約年。 | https://musikzeitung.ch/en/?p=44583 |
 | ar-d-929 | Erik Truffaz | The Walk of the Giant Turtle | 前一張四重奏盤在法國賣到十萬張的金唱片 | 維基只寫《Bending New Corners》（1999）是法國 Silver Album；本張的前一張是《Mantis》（2001），並非《Bending New Corners》。需核對金唱片的專輯歸屬與認證層級。 | https://en.wikipedia.org/wiki/Erik_Truffaz |
 | ar-d-929 | Stanley Jordan | Magic Touch | 九軌裡有五軌只有一把電吉他 … 六軌只有他的電吉他 | 同一則簡介前後自相矛盾：五軌 vs 六軌；事實庫引 jazzdisco 為六軌純獨奏、其餘三軌各配一組節奏，應統一為六軌。 | https://en.wikipedia.org/wiki/Magic_Touch_(Stanley_Jordan_album) |

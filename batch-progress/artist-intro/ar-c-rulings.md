@@ -2596,3 +2596,10 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 
 - 38 位寫：18 full、20 thin；Bcalm（只有事實庫一條單源、無國籍）與 Heights of Abraham（沒有聲音格）不寫（skipped）。
 - 主線審稿 13 處：第一句補國籍或身分——Supersilent、Xeno & Oaklander、青木孝允、And One、Chancha Vía Circuito、Christopher Willits、Elektro Guzzi（連帶刪青木《SILICOM》廠牌句、Chancha 地名、Willits 學琴細節、Xeno 的 DJ 選曲以壓回字數）；在世者只留一項成績——Supersilent 刪「最受推崇的即興樂團之一」、Jed Kurzel 刪 The Mess Hall 的澳洲音樂獎、Camouflage 刪美國舞曲榜登頂三週／Hot 100／德國金唱片，改寫「在美國俱樂部走紅，是他們最廣為人知的歌」。
+
+## ar-d-505（2026-11-05，電子、實驗電子、dark ambient、techno）
+
+- 39 位寫：15 full、24 thin；Proxyon 的聲音句借自 Laserdance，自己沒有聲音或做法事實，主線撤稿（skipped）。
+- 2025 年事實主線核實：Yasunao Tone 2025 年 5 月於紐約過世、享年 90 歲（RA、Mixmag 兩源）。
+- 主線審稿 18 處：第一句補國籍或身分——Robert Hampson、Recoil、Rockers Hi-Fi、Pan American、石野卓球、Thomas Brinkmann、Yasunao Tone（連帶刪細節壓字數）；在世者只留一項成績——Hampson 刪英國獨立榜榜首、Reznor & Ross 只留《The Social Network》奧斯卡（刪金球、《Soul》奧斯卡、葛萊美、艾美）；石野卓球 刪「世界最大」「號稱日本最大」，片假名ピエール瀧→皮耶瀧、電気グルーヴ→Denki Groove。
+- 已上線修正 2 處：ar-d-503 田中フミヤ 正文片假名改 Fumiya Tanaka，並刪「1990 年代前半」壓回 155 字（當時特注誤要求照寫片假名，與用字規則衝突，以規則為準）。
