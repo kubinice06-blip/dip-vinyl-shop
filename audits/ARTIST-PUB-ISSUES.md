@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1682 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1690 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -1360,6 +1360,14 @@
 | ar-d-131 | Enrique Morente | Despegando | 1977 年與 Pepe Habichuela 合作的《Homenaje a don Antonio Chacón》拿下第一屆國家獎 | 西班牙文維基寫該專輯獲『I Premio Nacional』（最佳民謠類唱片）在 1978 年，但專輯目錄列 1977 年發行；上線簡介把獲獎時間與發行年併成 1977，且『第一屆國家獎』的獎項名稱（Premio Nacional 的哪一類）寫得模糊，建議核對。單源。 | https://es.wikipedia.org/wiki/Enrique_Morente |
 | ar-d-132 | Mahala Rai Banda | Mahala Rai Banda | 銅管樂手則來自 Zece Prăjini 區 | World Music Central 與 Rebel Base（2008 年 Ionita 訪談）都說銅管樂手是來自摩爾達維亞鄉村的羅馬尼亞軍隊退伍樂手；Zece Prăjini 在摩爾達維亞，上線簡介若寫成布加勒斯特的區則有誤，建議改為『銅管樂手是來自摩爾達維亞鄉村的軍樂退伍者』 | https://www.rebelbase.be/interviews/detail/mahala-rai-banda---botanique-052008 |
 | ar-d-132 | Brave Old World | Beyond the Pale | 錄音在 1993 年 6 月於漢堡進行，德國 Pinorrekk 先行發行 | Klezmer Shack 的 Pinorrekk CD 5013 頁面標為 1992 年；英文維基專輯條目標 1994 年 Rounder。上線簡介的錄音月份與發行先後未能由本層兩源確認，建議本機查 Discogs 或 CD 內頁核對。 | https://www.klezmershack.com/bands/bow/pale/bow.pale.html |
+| ar-d-132 | อพาร์ตเมนต์คุณป้า | อพาร์ตเมนต์คุณป้า | 以團名命名的第五張作品 | The Standard 樂評稱為第六張；兩者計法（是否含 2004 EP）不同，待本機核對 | https://thestandard.co/?p=94287 |
+| ar-d-133 | ATΩMEGA | Đất mẹ | 被當地媒體列為越南第一張 heavy rock 專輯 | 本層只在越南維基 Rock Việt 條目找到這個說法（寫 1998 年發行，稱 heavy rock 而非 heavy metal），未找到媒體報導；『當地媒體』無依據，且『第一』為單源。 | https://vi.wikipedia.org/wiki/Rock_Vi%E1%BB%87t |
+| ar-d-133 | ATΩMEGA | Đất mẹ | 錄好的第十首〈Crazy World〉則因歌詞審查，留在了 CD 之外 | Spirit of Metal 與越南維基均查無此說，越南維基整頁未提及審查；查無來源，建議本機核對原始出處。 | https://www.spirit-of-metal.com/en/discography/Atomega/1 |
+| ar-d-133 | Gạt Tàn Đầy | Đám cưới chuột | 1996 年於河內成軍 | 越南維基寫 1996，NTS 寫 1997，來源不一致；建議改成「1993 年聚首」或不寫正式成軍年 | https://www.nts.live/artists/124183-g-t-tan-d-y |
+| ar-d-133 | Tạ Quang Thắng | Một tôi rất mới | 這回是第 10 屆的年度專輯與年度詞曲作者 | 越南維基與 Đại Đoàn Kết 都寫第 9 屆 Cống hiến，非第 10 屆 | https://daidoanket.vn/ta-quang-thang-tai-xuat-lang-nhac-sau-8-nam-vang-bong-10214790.html |
+| ar-d-133 | Tạ Quang Thắng | Một tôi rất mới | 〈Hạnh phúc〉由他與 Văn Mai Hương 對唱 | 越南維基與 Vietnamplus 都未提這首歌或這位對唱者，本層查無來源；建議店主查證，查不到就刪 | https://vi.wikipedia.org/wiki/T%E1%BA%A1_Quang_Th%E1%BA%AFng |
+| ar-d-133 | Padres | Night | 蘇慧倫把〈Water〉改唱成國語〈傻瓜〉，就在同一年 | 本層兩次搜尋均查不到〈傻瓜〉翻唱自 Padres〈Water〉的佐證（搜尋結果只提到〈Lemon Tree〉等翻唱），建議本機核實；找不到可靠來源就該刪 | https://www.marieclaire.com.tw/entertainment/story/49744 |
+| ar-d-133 | Padres | Night | 1996 年與滾石簽約、合約三張只做出一張、2000 年解散 | 搜尋與部落格皆未見滾石合約、三張約與 2000 解散之說，未能佐證 | https://play-through-history-musicculture.blogspot.com/2009/11/1990s-bands.html |
 | ar-d-141 | 沢田駿吾とオールスターズ | Fool On The Hill | 組團在 1952 年 | Victor 商品頁說 1952 年組自己的爵士 combo，但英文維基寫 1954 年成立 Double Beats、日文維基的 Double Beats Five 照片也是 1954 年；兩說並存。建議簡介註明『廠牌商品頁稱』或略去年份。 | https://en.wikipedia.org/wiki/Shungo_Sawada |
 | ar-d-141 | 秋吉敏子トリオ & Flute Quartet | Tuttie Flutie | 抵達波士頓第一晚台上正是 Bud Powell，舊識招她上去頂了一段 | NEA 傳記只寫她到波士頓後聽過 Bud Powell Trio、後來與他們同台，沒有『第一晚』與『舊識招上台』；jazz.com 完全沒提。細節可能來自日文維基或自傳，但本層找不到可開頁的來源，建議對一次來源或降級成『到波士頓後曾與 Bud Powell 同台』。 | https://www.arts.gov/honors/jazz/toshiko-akiyoshi |
 | ar-d-142 | The Wood Brothers | Ways Not to Lose | 2001 年重新合到一起，2001 年 5 月 24 日北卡羅來納州那場演出 | 英文維基持此說，但 Folk Alley 寫兄弟在 2004 年的同台演出後決定一起做音樂；年份有來源衝突，待店主視需要查證或改寫成不含年份。 | https://folkalley.com/basic-folk-podcast-oliver-wood/ |

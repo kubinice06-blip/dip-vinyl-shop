@@ -2503,3 +2503,10 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 40 位全寫：38 full、2 thin（Kassa Tessema、Krar Collective，評價面只有單源）。
 - 題材照寫：Ray Lema 拒寫歌頌蒙博托的歌劇、財產被沒收而離國；Ali Birra 歌中批評政府、流亡與國葬；Moses Molelekwa 與妻子雙雙身亡（死因三說不一，不寫死因）；Stella Chiweshe 在殖民政府禁 mbira 時地下演奏、腦癌過世；Diego el Cigala 2021 年因前伴侶家暴投訴被捕、判兩年多徒刑；Batsumi 領隊之父是被囚的泛非主義者大會主席；Mankunku 依《集團地區法》被迫遷。
 - 主線審稿 13 處：Ray Lema、Camané、Cristina Branco、Marceneiro、Fernando Maurício、Lucília do Carmo（2 處）、Noronha、Fernanda y Bernarda、Enrique Morente、Carmen Linares、José Mercé 的「最…之一／最好」改保守；Carminho 刪西班牙單曲榜冠軍（在世者不寫榜單）。
+
+## ar-d-132（2026-11-05，ts4／ts7／ts8 新卡藝人：探戈、巴爾幹、克萊茲莫、泰國與蒙古搖滾）
+
+- 40 位全寫：34 full、6 thin（Orquesta Típica Fernández Fierro、Mahala Rai Banda、Crub、Wolfpack、Smile Buffalo、Pru）。
+- 2026 年事實主線開頁核實：Daniel Melingo 6 月 30 日過世（阿根廷多家媒體：在家安寧照護、呼吸道疾病）；Yanka Rupkina 4 月中風後過世（BTA、BNR）。Asanee-Wasan 只寫宣布告別演出。
+- 題材照寫：Pugliese 1955 年因共產黨員身分入獄、琴上放紅康乃馨；Gabi Luncă 是 Ceaușescu 夫婦偏愛的歌手、後轉五旬節教會；Puceanu 晚年酗酒與車禍身亡；Soyol Erdene 由國家創辦以控制青年文化、成吉思汗頌歌引爭議；Tawan 在 1992 年 5 月民眾運動後的社會諷刺；Taitosmith 在示威集會免費演出；Sebestyén 的舞屋運動被當局視為危險。
+- 主線審稿 8 處：Gardel、Goyeneche、Salgán、Sosa、Brandwein 的「最…」改保守；Goyeneche 刪「第一位錄下」；Sebestyén 刪李斯特獎（在世者留一處：UNESCO 和平藝術家）；Hin Lek Fai 刪 Seesan 最佳新人（已留破百萬卷一處必要例外）。
