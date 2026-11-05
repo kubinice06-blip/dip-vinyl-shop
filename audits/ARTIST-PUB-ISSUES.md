@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1711 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1713 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -1715,3 +1715,5 @@
 | ar-u-028 | La Venexiana | Monteverdi: Selva morale e spirituale | 錄音是 2005 年 3 月西班牙 Cuenca 一場宗教音樂節的教堂現場 | Early Music Review 只寫錄音來自 2005 年 Cuenca 音樂節，未提月份；「3 月」查無來源，建議刪月份或補來源。 | https://earlymusicreview.com/monteverdi-salve-morale-e-spirituale/ |
 | ar-u-028 | Lack of Afro | Press On | 他在這間廠牌的作品目錄就從這張算起 | 維基與事實庫都寫 Freestyle 先發行的是出道單曲〈Wait A Minute〉，《Press On》是他在這間廠牌的第一張專輯，不是第一件作品。 | https://en.wikipedia.org/wiki/Lack_of_Afro |
 | ar-u-028 | Liz Story | Solid Colors | 樂評提到的重點是她讓每首曲子保持結構完整的能力 | 『scrupulous sense of compositional unity』是 Stephen Holden 評她 1986 年 The Bottom Line 現場演出的話（維基 Liz Story 條目），不是對《Solid Colors》專輯的評語；建議改為『樂評人 Holden 在 1986 年的現場評論中稱讚…』或刪除。 | https://en.wikipedia.org/wiki/Liz_Story |
+| ar-u-029 | Love Live Life | 殺人十章 | 1972 年 CBS/Sony 推出 | Progarchives 搜尋摘要寫 1974 年（署名市原宏祐與 3L）；Discogs 403 未能核實，建議店主本機對 Discogs release 8037977 查發行年 | https://www.discogs.com/release/8037977 |
+| ar-u-029 | Men I Trust | Headroom | 主唱 Emmanuelle Proulx 要到 2016 年 3 月才加入 | PAN M 360 2022 訪談稱 Emma 2015 年加入、搜尋摘要另引成員『我 2015 年加入』；Bandcamp 寫 2016 年 3 月以全職身分加入，兩說可能指兼職與全職，無法定論，僅供店主留意 | https://panm360.com/en/interviews-panm360/osheaga-2022-men-i-trust-chats-influences-and-diy-indie-success/ |

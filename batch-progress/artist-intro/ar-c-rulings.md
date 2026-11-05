@@ -2542,3 +2542,9 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 39 位全寫：17 full、22 thin。
 - 題材照寫：Giles Corey 源自 Dan Barrett 企圖輕生後的經歷；Midwife 為意外離世的室友 Colin Ward 而作的專輯；Planning for Burial 酗酒用藥的時期；The Caretaker 失智症構想在 TikTok 爆紅與「娛樂化失智症」的批評；Philip Jeck 2022 年病逝。
 - 主線審稿 4 處：The Caretaker 壓回 250 字（2 處）；Giles Corey「企圖自殺」改「企圖輕生」；Thomas Köner 刪 Prix Ars Electronica（在世者留一處：ZKM 的評價）。
+
+## ar-d-138（2026-11-05，md3／md4 新卡藝人：drone、darkwave、暗黑民謠、實驗 R&B、dub techno、台灣迷幻）
+
+- 34 位全寫：17 full、17 thin。
+- 題材照寫：Sevdaliza 回應川普入境禁令與 Mahsa Amini 之死的抗議歌；Space Afrika 回應喬治·佛洛伊德之死與英國種族歧視；Dylan Carlson（Earth）海洛因成癮、戒治與服刑；Tricky 少年犯罪與偽鈔入獄；Chelsea Wolfe 的睡眠癱瘓；Lycia 的 VanPortfleet 與糖尿病搏鬥；Peter Rehberg 2021 年過世。
+- 主線審稿 0 處。King Krule 與 Archy Marshall 是同一人的兩張卡，內容分開寫、未互抄。
