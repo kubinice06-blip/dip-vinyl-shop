@@ -59,3 +59,18 @@
 - **23295** 日期「日」後一字：Miles 日問、One Leg 日由、KRM 日出；Far Drifters 改寫「2016 年元旦」（原「日自」撞 md37 Blue Loops）；Mortiis 只到年。批內互異，也不撞 md37 的 推／以／自／才／交。
 - **23296** 媒體名不進 note：Sputnik、Clash、Bandcamp Daily、CTM、Merchants of Air 全未指派；樂評聲音描述一律寫成「樂評的觀察」或直接寫聲音；Far Drifters 的「悲傷、陰暗而憂鬱，雨天」是樂團自註，可引。One Leg 未提鼓，note 不寫有無鼓；KRM 的「無節拍」有來源。
 - **23297** n-gram 自查：hook 之間中文 4-gram 0 條；hook 對 md37 全部 hook＋note、md36 全部 hook＋note 0 條；hook 與自己 note 無 ≥6 字逐字重複。`node qa-batch.mjs hooks add-20261105-md38`：唯一標記「d 缺 hook 檔」（d 研究稿為空陣列，依派工不產檔）；`node chk-hook-crossgroup.mjs add-20261105-md38`：4 組 5 張全部通過（hook 加權 19–24、note 216–235）。
+
+## 寫作層（writer-1）
+- **23301** 交件：`desc-tools/batches/output/add-20261105-md38-out-1.json` 5 張，全 full，字數 231–240（Mortiis 234、Far Drifters 240、Miles to Midnight 233、One Leg One Eye 238、KRM & KMRU 231）。`qa-batch out`、`qa-check-research`、`fix-spacing` 皆 0 處；轉述引導詞與媒體／平台名 grep 0。初稿兩張超標（Far Drifters 266、Mortiis 245），整格或子句捨去：Mortiis 砍「那片低沉之中」「這個類型」；Far Drifters 合併身分句與發行句、捨去「約 58 分鐘」一格（note 末項，唯一捨去的 note 項）。
+- **23302** 第二句句型全照 23294：「…年起的個人計畫」「來自…由…領軍」「同門合寫」「另立…名義」「換上…搭上線」。日期「日」後一字照 23295（日問、日由、日出；Far Drifters 寫「年元旦」；Mortiis 只到年）。日期前一字：Mortiis「在」、Far Drifters「軍」、Miles「張」、One Leg「屬」、KRM「鐘」，批內互異。
+- **23303** 不複述 hook：Mortiis 的 hook 已給 Emperor 貝斯手，第二句補本名、計畫起始年，並把 Emperor 具名為黑金屬樂團；One Leg 的「他」由第二句以 Lankum 創始成員 Ian Lynch 具名；KRM 的 hook 已說 KMRU 向來做器樂，正文只寫「讓 KMRU 出聲是 Martin 的提議」與吟誦／口白，不再講器樂。Mortiis 的聲音寫成「樂評形容…」，不具名媒體。
+- **23304** 自掃 han() 4-gram（本檔＋md37 out-1 共 19 張）：途中拆掉 `樂評聽到`（對 md37 jason calhoun）、`自行發行`（對 md37 Blue Loops）、`首約分鐘`（批內 Miles×KRM）、`首曲子是`／`共約分鐘`（對 md37 Sirimiri）、`長約分鐘`（三張）、`首曲子約`（對 md37 Open Space）；定稿跨張 ≥2 張 0 條。第二句句型與 md37 的十四種領句無重複。
+
+## 主線試聽／封面／三軸（不佔條號；2026-11-05）
+- 試聽：自動配對 3 ready；`preview-override.json` 補 2 張（Mortiis 2019 remaster 把兩首長曲分成 9 段，曲目與原盤相同；KRM & KMRU 人工身分以 Apple 6 軌對 Bandcamp）→ **5 ready**。
+- 封面：CAA 4；KRM & KMRU（§1 人工身分）用 Bandcamp og:image 1200px（`covers.json`）。5 張 HTTP 200，主線縮圖表目視與盤名相符。
+- 三軸：機器基線為主；`ratings-override.json` 改 Mortiis《Keiser》3/4/3 → 4/4/3（dungeon synth 奠基者 Era I 代表作，場景尺度經典 4）。頂點 0。
+
+## 主線審稿（23311–23312；2026-11-05）
+- **23311** 逐張審 5 張（全文印出，逐句對研究稿 a、b、c、e：Mortiis Emperor 貝斯手、1993 起、CMI 第三張、兩首 52:35、戰鼓與低頻持續音；Far Drifters 第聶伯羅、Jol Tai、2016-01-01、獻給 Lynch、〈Heat〉敖德薩現場合作；Miles to Midnight 三人分工、2018-01-09、八首 41:57、偵探與旅館；One Leg One Eye Lankum 創始成員、父親童年工作的廢倉庫、2022-10-27 Nyahh；KRM & KMRU Instagram 結識、Martin 提議人聲、Clash「沒有節拍」、六首 48:39、2024-06-14 Phantom Limb），皆有出處。**逐張審過，未改字。**
+- **23312** 媒體名、榜單名次、「據說／據傳」、資料平台名全批 0；`qa-batch out`、`qa-check-research`、`fix-spacing` 0 處。

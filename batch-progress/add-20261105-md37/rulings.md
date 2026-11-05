@@ -72,3 +72,23 @@
 - **23218** hook 四型：場景（Tape Melt、Open Space）／人物定調（Conduits）／斷言（Snowblind、Ngunmal）／懸疑（Pitch Dark，收尾指派 exciter 放進箱子與垃圾桶）。合 a–c 全批 14 張開頭前四字互異，也不與 md34–md36 已上架 hook 開頭相同。開頭兩句交代身分：6 張 hook 只有 seah 帶名、其餘不帶名，note 第二句全部補國籍／身分＋樂種。
 - **23219** 「她／他」引入法與第二句句型配表（6 位皆單卡）：Geaney＝國籍＋職業「愛爾蘭作曲家」／「小時候」；seah＝名義具名「這個名字屬於」；Kirkegaard＝國籍＋身分「丹麥聲音藝術家」／「取材」；Laprida＝國籍「阿根廷藝術家」／「移居…後」；Amby Downs＝化名「是…的化名」；Goldston＝國籍＋樂器「美國大提琴家」／「擔任」。避開 a–c 已配的「常在」「是」「以…之名」「出生、長大」「以…聞名」「的…者」「本名」「出身…現居」，也避開 md36 的「原是」（Laprida 原稿有，已捨去）。「日」後一字：d、e 六張 note 全部只寫到年或月，0 筆（23214 預估的「上、在」已不存在）。
 - **23220** 補充指示照辦：媒體名、榜單與名次不進 note，評介內容一律改寫成聲音描述。Kirkegaard 1930 營地發現早於發行、屬題材背景；涉逝者標「語氣克制」。自查：hook 間中文 4-gram 0 撞（對全批 14 張與 md34–md36 hooks；Amby 原稿「首長曲裡」撞 md34 Bell Witch hook，改「長篇」）；hook 與自己 note 無逐字重複句（Kirkegaard「北極氣球」、Laprida「十五年前」、Goldston「失真踏板」已從 note 移除，只剩 Amby「的家族史」殘片）。`node qa-batch.mjs hooks add-20261105-md37` 全部通過；`node chk-hook-crossgroup.mjs add-20261105-md37` 全部通過（hook 加權 18–27、note 207–237；只報不擋 1 筆＝Kirkegaard 的「沒有出口、沒有溫暖」，是本人說法、屬內容）。
+
+## 寫作層（writer-1）（23221–23230）
+- **23221** 交件：`desc-tools/batches/output/add-20261105-md37-out-1.json` 14 張（全 full），字數 205–235。逐張：Deface 220、Sirimiri 231、Blue Loops 217、Dras 219、Clocktower 228、Pareidolia 235、Natur 225、small circle 224、Tape Melt 209、Conduits 205、Snowblind 229、Pitch Dark 230、Ngunmal 218、Open Space 209。初稿只有 Pareidolia 超標（250），整格捨去句尾「成厚重的 drone」（note 未列）與「這回」壓回；無掉下限。`qa-batch out`、`qa-check-research`（標記 0）、`fix-spacing`（待補 0）全部通過；「據」、媒體名、資料平台名 grep 0。
+- **23222** 第二句句型照鉤子層 23214／23219 配表：Kate 居住地領句「常在」、Irisarri「是」、KRM「以 The Bug 之名」領句、AZH「台北出生、多倫多長大」、Basinski「以…聞名」、Muir「的 DJ 與田野錄音者」、KMRU「本名」、calhoun「出身…現居」、Geaney「愛爾蘭作曲家…小時候」、seah「這名字屬於」（原「這個名字」與已上架兩張撞 4-gram，去「個」）、Kirkegaard「取材」、Laprida「移居…後」、Amby「是…的化名」、Goldston「擔任」。
+- **23223** 日期句偏離鉤子層「日」後一字表三處（可逆）：Kate 的「日推」與 KMRU 的「日交」都與已上架卡（md34–md36、shop）撞 `年月日推`／`年月日交`／`交給英國發行` 3 張以上，改成「制。2017 年…日，七首曲子在 Failing Forms 名下問世」與「2024 年…日，來自英國的 Touch 發行了它」；Irisarri「日以」、KRM「日自」、Basinski「日才」照表。只寫年的 7 張逐張錯開領頭：替它出版／唱片年交由／發行它的是…那是年的事／於年把它發行／年，替她出版／唱片面世於年／Room40 在年把…推出／年由…出版。
+- **23224** hook 不複述：Muir 第二句不重講「臉孔」，改為具名 Pareidolia（空想性錯視）並接 note 的用途；calhoun 不再寫「溫柔」（hook 已說），樂評觀察只留「新世紀氣息」，寫成「樂評聽到」；Geaney 的「VHS 受壓聲起點」與 Amby 的「兩首長曲」「家族史」已在 hook，正文不重寫（Amby 改「家族過往」）；Goldston「一次不間斷」已在 hook，正文只寫錄音時看大峽谷影片；Basinski 第二句以「撿回電視機的正是 Elaine」替 hook 的撿拾者具名。Kirkegaard「三人」補「同行」交代所指，涉逝者平敘。
+- **23225** 自掃（han() 中文 4-gram）：本檔 14 張 3 張以上 0 條，2 張殘片只剩「田野錄音」「聲音藝術家」（技法與職稱）。另合掃 md34–md36 與 add-20261006-shop 已上架 out：途中拆掉與舊卡撞成 3 張以上的「合計約分鐘」「加起來約分鐘」「分鐘左右」「年月日推」「年月日交」「是年月日」「在年月日」「時間是年」「專輯在年」「英國廠牌」「這個名字」「問世廠牌是」「的第一張」「首約分鐘」，一律整詞改寫；剩「薩克斯風」「田野錄音」兩個樂器／技法名。
+- **23226** 可逆小判斷：Irisarri「這張無鼓的 drone」、Kate／KRM 樂種描述取自 sound 欄（無鼓 drone），屬開頭兩句的樂種交代；KRM「碾壓式的電子樂」照 note 原意縮詞；AZH「深夜錄音」不寫誰吹奏。主線審稿可再看。
+
+## 主線試聽／封面／三軸（不佔條號；2026-11-05）
+- 試聽：自動配對 3 ready（Marc Kate、Irisarri、Kirkegaard）；`preview-override.json` 以 Apple 同名條目逐張核曲目數補 7 張（人工身分 6 張 MB 無曲目表、KMRU 數位版分 5 段、Goldston MB 無曲目）→ **10 ready**；KRM《Blue Loops》、Jake Muir、Susan Geaney、seah 四張 Apple us／gb／jp 無條目 → unavailable。
+- 封面：CAA 8（release-group front）；§1 人工身分 6 張用 Bandcamp og:image 1200px（`covers.json`）。14 張 HTTP 200，主線縮圖表目視與盤名相符。
+- 三軸：機器基線為主；`ratings-override.json` 改 3 張（Basinski 4/4/4 → 3/4/3：檔案錄音非代表作；KMRU 3/5/3 → 3/4/3：Touch 廠牌錨點；Laprida worker 查無 → 3/5/3）。頂點 0（無殿堂／遺珠／異端證據；listeners 皆非 <300 有效值或無串流證據）。
+
+## 主線審稿（23231–23233；2026-11-05）
+- **23231** 逐張審 14 張（全文印出，逐句對研究稿 a–e；抽核 Irisarri 卡帶 72 分鐘與紐約、KMRU 2022 完成、Dras 2020 洛杉磯封城完成、Basinski 香腸夾工廠與 Haight Street、Geaney VHS 壓迫聲、Laprida 十五年前玻利維亞地震、Amby Downs Murri 與歐洲混血（Room40 原文）、Marc Kate 舊金山、KRM 布魯塞爾、Goldston 1993–94 Nirvana 巡演，皆有出處）。改 2 張 2 處（`desc-override.json`），只動措辭、不動事實，研究／hooks／input 不需同步：
+  - `KMRU|Natur`：「這首 52 分 38 秒的單曲」→「這首 52 分 38 秒的長曲」（「單曲」會被讀成 single；研究 c 原文為「這首長曲」）。
+  - `Susan Geaney|Tape Melt`：「這首單曲一軌的曲子」→「這首只有一軌的曲子」（同上，且語句不通）。
+- **23232** 媒體名、榜單名次、「據說／據傳」、資料平台名全批 0；`qa-batch out`、`qa-check-research`、`fix-spacing` 0 處。
+- **23233** 寫作層自報兩個小判斷照准：Irisarri 第二句「無鼓的 drone」取自 sound 欄（研究 a 有 Noise Not Music 樂評支撐）；KRM「碾壓式的電子樂」是 note 原詞縮短。
