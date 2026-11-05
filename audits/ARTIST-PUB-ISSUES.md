@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1829 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1845 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -1606,6 +1606,22 @@
 | ar-d-519 | KING | We Are KING | 它成了第一張入圍葛萊美最佳都會當代專輯的獨立發行作品 | 『第一張』找不到兩源，Grammy.com 與 WUNC 只說首張專輯入圍、獨立發行；建議改成『入圍…的獨立發行首張』或查證後保留 | https://www.wunc.org/arts-culture/2017-05-19/king-on-making-independent-music-and-working-with-prince |
 | ar-d-519 | N’Dambi | Little Lost Girls Blues | 首作就賣出約 5 萬張 | 維基載逾 7 萬張（全球），實體 SoundScan 逾 2 萬張；5 萬無出處 | https://en.wikipedia.org/wiki/N'Dambi |
 | ar-d-519 | Barry Brown | Far East | 原盤 1982 年掛 Channel One 廠牌發行 | 維基寫 Brown 1983 年在 Studio One 錄 Far East；Discogs 列 Channel One 1982。兩邊矛盾，建議本機查 Discogs 版本與 Studio One 版是否為不同盤 | https://en.wikipedia.org/wiki/Barry_Brown_(singer) |
+| ar-d-519 | Harry Mudie | In Dub Conference Volume One | 1973 年起他的唱片開始掛上弦樂編制 | Jamaica Observer 載 Mudie 自述最早的弦樂錄音是 1970 年 5 月與 1971 年 9 月（與 John Holt，倫敦 Chalk Farm）；1973 年是《Time Is the Master》，並非起點。『把弦樂帶進雷鬼的人』屬維基與本人說法，建議加『據稱』或改成『1970 年代初』。 | https://www.jamaicaobserver.com/2013/01/12/harry-mudie-pulling-strings-for-reggae |
+| ar-d-519 | Junior Delgado | Taste of the Young Heart | 1979 年，這張個人專輯在 D.E.B. Music 問世 | 英文維基寫首張個人專輯《Taste of the Young Heart》與 Brown 共同製作於 1978 年；卡池年份 1979 與維基 1978 不一致，可能是錄音年與發行年之差，待本機核對 Discogs 後決定是否改 | https://en.wikipedia.org/wiki/Junior_Delgado |
+| ar-d-519 | Little John | Reggae Dance | 本名 John McMorris，1965 年於金斯敦誕生 | 生年有 1965（維基、Jamadio）與 1970（Perfect Sound Forever、Reggae-Vibes）兩說，wikidata 竟是 1970-01-01（疑佔位值）；建議簡介略去生年或改『1960 年代中期』之類寬鬆說法 | https://www.furious.com/perfect/littlejohn.html |
+| ar-d-519 | Love Joys | Lovers Rock Reggae Style | Love Joys 在 1983 年交出它，由 Wackie's 發行 | Forced Exposure 目錄文字寫原版為 1982 年（Turntable Lab 寫 1983），年份有出入；待本機以 Discogs 核對 | https://www.forcedexposure.com/Catalog/love-joys-lovers-rock-reggae-style-cd/WACK.2383CD.html |
+| ar-d-519 | Peter Broggs | Progressive Youth | Broggs 本名 Henry Hugh James，1952 年生在 Hanover | 生年各源不一（維基 1952，Reggae Vibes／Colorado Music 1954），無法定論 | https://en.wikipedia.org/wiki/Peter_Broggs |
+| ar-d-519 | Peter Broggs | Rastafari Liveth! | Doctor Dread 1979 年創辦 RAS Records | Jamaica Observer 訃聞（經 roots-archives 轉貼）寫 Himelfarb 於 1982 年『launched RAS Records』，維基 RAS Records 條目寫 1979，需核對廠牌首張專輯日期 | https://www.roots-archives.com/forum/viewtopic.php?t=157604 |
+| ar-d-520 | Tetrack | Let's Get Started | 1978 年的 roots 專輯，Rockers Intl 製作 | 多個來源（legendaryreggae、jackrussellmusic、unitedreggae 目錄）寫首發為 1980、Message 廠牌；1978 說只見 yardie's/Greensleeves，來源不一致，建議確認或改寫成不帶年份 | https://legendaryreggae.com/2014/02/02/you-dont-know-tetrack/ |
+| ar-d-520 | Wayne Wade | Poor and Humble | 標題曲比專輯早一年先以單曲面世；1981 年錄的批次到 1982 年才集結成專輯 | 維基只說 1981 年與 Linval Thompson 錄了單曲，未說明專輯化時間，可保留但來源薄 | https://en.wikipedia.org/wiki/Wayne_Wade |
+| ar-d-520 | Audley Rollens | Showcase Prevail | Rollens 1960 年代與 Keith Hudson 合作的〈Oh My Darling〉進過英國榜 | 僅藝人官網自述（1969 年、Hudson 製作、進英國榜），無獨立榜單來源；另 Caribbean Today 說這些歌在 70 年代的英國雷鬼圈受歡迎。建議改成『在英國雷鬼圈流行』或標明出處 | https://audleyrollen2.bandzoogle.com/bio |
+| ar-d-520 | Audley Rollens | Showcase Prevail | 牙買加 reggae 歌手 …… 1980 年代初發行 | 官網稱首張專輯《Prevail》為 1980 年自家廠牌發行，Discogs 版本為 1982；年份不一致 | https://audleyrollen2.bandzoogle.com/bio |
+| ar-d-520 | Earl Cunningham | Earl Cunningham | Heptones 的 Earl Morgan 替他製作 | roots-archives 與 Discogs 搜尋均未找到 Earl Morgan 製作此專輯的記載；Earl Morgan 的已知製作紀錄是 Earl Sixteen 的《Shining Star》，且 Cunningham 與 Earl 16 另有 Shining Star 合輯，疑為混淆。商品頁來源可能有寫，請在本機核對 Discogs 製作欄再決定是否改。 | https://www.roots-archives.com/artist/182 |
+| ar-d-520 | Flick Wilson | School Days | 錄音在 Channel One 進行，配唱和混音改在 King Tubby's | 本層找不到 School Days 的錄音地點記載（商品頁只列 Roots Radics、Jammy、Scientist）；請在本機核對 Discogs 製作欄再決定是否保留 | https://soundsoftheuniverse.com/product/flick-wilson-school-days |
+| ar-d-520 | I Kong | The Way It Is | 錄音分在 Harry J 與 Black Ark 兩處，Lee Perry 列在工程名單上 | United Reggae 訪談稱 Black Ark 的錄音是 1976 年《Zion's Pathway》，不是《The Way It Is》；Discogs 工程名單是否列 Perry 未能開頁核實，建議主線對 Discogs 原頁再核 | https://unitedreggae.com/articles/n2133/091216/interview-i-kong-in-kingston-part-1 |
+| ar-d-520 | Iration Steppas | Original Dub D.A.T. | 1996 年在自營廠牌推出第一張 | 『第一張』未能由來源證實（訪談只說他們有 10 至 12 張單曲與數張專輯；宣傳文稱 1993 年已有單曲〈Scud Missile〉），建議改成『1996 年的自營廠牌作品』或再核 | https://unitedreggae.com/articles/n1036/071512/interview-iration-steppas |
+| ar-d-520 | Jacob Miller | Tenement Yard | 約莫 1974 年起站上這個樂團的麥克風前 | 各來源 1973（DancehallMag）至 1974（維基）不一，建議改成『1970 年代中期』 | https://dancehallmag.com/?p=47667 |
+| ar-d-520 | Junior Ross & The Spears | Babylon Fall | 1970 年代中期問世，混音者 King Jammy | 來源不一致：United Reggae 稱 1992 年彙編 7 吋與 disco 版，Roots Archives 稱 1976；United Reggae 稱 Scientist 在 King Tubby's 混音，與上線簡介『混音者是 King Jammy』不同，建議主線對實物或 Discogs 再核 | https://unitedreggae.com/discographies/1992/junior-ross-and-the-spear-babylon-fall;954/ |
 | ar-d-929 | Erik Truffaz | Rollin' | 2000 年簽進這個廠牌 | 上線簡介沿用 Blue Note 官網簡介的 2000 年簽約說；但維基與已上線的《Out of a Dream》《The Dawn》《Bending New Corners》簡介顯示 1997–1999 年已在 Blue Note 發片，瑞士聯邦文化局新聞稿也記《Bending New Corners》為 1999 年 Blue Note 專輯，2000 年簽約的說法與之矛盾，建議改為不寫簽約年。 | https://musikzeitung.ch/en/?p=44583 |
 | ar-d-929 | Erik Truffaz | The Walk of the Giant Turtle | 前一張四重奏盤在法國賣到十萬張的金唱片 | 維基只寫《Bending New Corners》（1999）是法國 Silver Album；本張的前一張是《Mantis》（2001），並非《Bending New Corners》。需核對金唱片的專輯歸屬與認證層級。 | https://en.wikipedia.org/wiki/Erik_Truffaz |
 | ar-d-929 | Stanley Jordan | Magic Touch | 九軌裡有五軌只有一把電吉他 … 六軌只有他的電吉他 | 同一則簡介前後自相矛盾：五軌 vs 六軌；事實庫引 jazzdisco 為六軌純獨奏、其餘三軌各配一組節奏，應統一為六軌。 | https://en.wikipedia.org/wiki/Magic_Touch_(Stanley_Jordan_album) |

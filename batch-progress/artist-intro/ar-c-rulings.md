@@ -2687,3 +2687,10 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 2025 年事實主線核實：方大同 2025 年 2 月 21 日病逝、享年 41 歲，經紀公司稱抗病五年（TVBS、星島兩源）；不寫死因推測。出生地照 facts 寫夏威夷（特注誤寫「香港出生」，以 facts 為準）。
 - 題材照寫：Celeste 父親肺癌過世；Aaron Hall 自幼口吃；Kali Uchis 曾被趕出家門住在車裡。Intro 的 Kenny Greene 死於愛滋併發症只有維基家族單源，刪死因、只留「32 歲過世」；SiR 的物質濫用、Angela Winbush 的卵巢癌、Greentea Peng 的成癮都只有單源，不寫。
 - 主線審稿 32 處：第一句補國籍或身分——Celeste、Charlotte Day Wilson、David Porter、Gabriel Garzón-Montano、Gabriels、Gloria Scott、Jessie Ware、Kan Sano、Kali Uchis、Matt Martians、Raheem DeVaughn、SiR、Steve Spacek、Syleena Johnson、Aaron Hall、Andra Day、Angela Winbush（連帶刪細節壓回 250 字）；在世者只留一項成績——David Porter 刪孟菲斯名人堂、Marsha Ambrosius 刪 10 次葛萊美提名、Alex Isley 刪「兩項」、Andra Day 只留金球獎；Gloria Scott「重發並進了榜」改「重發後走紅」。
+
+## ar-d-519（2026-11-05，soul／R&B 與 roots reggae、dub、dancehall）
+
+- 37 位寫：24 full、13 thin；不寫 3 位——Keke Wyatt（沒有聲音事實）、Jezzreel（只有經銷商文案單源）、Don Carlos & Gold（主線撤稿：唯一的「做法」句只是 Gold 擔任合寫與和聲，過不了門檻；Don Carlos 本人已有介紹）。
+- 2025–26 年事實主線核實：Fat Freddy's Drop 創團成員 Chris Faiumu 2025 年 7 月意外辭世（RNZ、ODT 兩源）；Leon Thomas《Mutt》獲 2026 年葛萊美最佳 R&B 專輯（grammy.com、WERS 兩源）。
+- 題材照寫：Lacksley Castell 1983 年病逝、無墓碑，好友 Hugh Mundell 一個月前遇害；Junior Delgado 預言 Broadwater Farm 暴力的歌據傳遭禁、2005 年睡夢中過世；Peter Broggs 晚年中風癱瘓；Wesley Tinglin（The Viceroys）2018 年肺癌過世；Liniker 公開跨性別身分。
+- 主線審稿 16 處：在世者不寫榜單——Fat Freddy's Drop 刪紐西蘭專輯榜 111 週、Triston Palma 刪九首同時進前四十；第一句補國籍或身分——Triston Palma、Aisha、Don Carlos、Harry Mudie、Adrian Quesada、Junior Delgado、Little John（連帶刪細節壓回 250 字）；Junior Delgado 改寫句首避免連續兩句以年份開頭。
