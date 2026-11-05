@@ -2647,3 +2647,10 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 2025 年事實主線核實：Howard Riley 2025 年 2 月過世（Jazz Journal、Free Jazz Collective 兩源）；Marilyn Crispell 獲選 2025 NEA Jazz Masters（NEA、BMI 兩源）。
 - 題材照寫：Joe Harriott 晚年失業、赤貧，癌症過世；Peter Kowald 2002 年演出後心臟病發猝逝；Derek Bailey 2005 年因運動神經元疾病過世；Connie Crothers 2016 年肺癌過世；Alan Tomlinson 2024 年 2 月辭世。
 - 主線審稿 10 處：Joe Harriott 單名卡 270 字超標壓回 244；Aki Takase 片假名「高瀬アキ」改羅馬字，「德語區最重要的爵士獎之一」軟化為「德國爵士獎」；Bob Ostertag、Connie Crothers、Denman Maroney 第一句補國籍與身分（連帶刪 Ostertag 的 CC 授權句、Crothers 的教學細節）。
+
+## ar-d-513（2026-11-05，自由爵士與歐洲即興；幾乎全是合作卡）
+
+- 40 位全寫：31 full、9 thin。Evan Parker 六張合作卡、Joëlle Léandre 四張、Ivo Perelman 三張、Carter／Bradford 三張各取不同一面寫，每張只用一兩句帶過共同成員。
+- 補洞 QA 例外：Han Bennink / Misha Mengelberg / John Tchicai 三人卡搜尋 9 次超過上限 8，三人合計、照實記，不退件。
+- 題材照寫：Henry Grimes 1968 年前後賣掉受損的貝斯、淡出樂壇被誤列已故，2002 年被社工尋獲，2020 年因新冠併發症過世；Threadgill 隨陸軍赴越南、春節攻勢中受傷；Jimmy Lyons 1986 年肺癌過世；Karl Berger 2023 年手術併發症過世；John Russell 2021 年癌症過世；Barre Phillips 2024 年過世。
+- 主線審稿 6 處：Joe Morris「同代最傑出」改「同代重要的…之一」（兩源不獨立）；Georg Graewe 只留 SWR 爵士獎；Jacques Coursil 補「法國」；沖至的老師「渡辺貞夫」改台灣字形「渡邊貞夫」；Parker & Fernández 刪「加泰隆尼亞最早一批前衛音樂家」（序數宣稱、單源）；Threadgill 刪 NEA Jazz Master（在世者只留普立茲）。
