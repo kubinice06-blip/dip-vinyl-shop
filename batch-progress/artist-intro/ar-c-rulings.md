@@ -2668,3 +2668,9 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 2025 年事實主線核實：lovesliescrushing 2025 年 5 月加入 The Numero Group、同年 10 月重發擴充版首作（維基、多家唱片行目錄）；「排定推出」改為已推出。
 - 題材照寫：Acetone 主唱 Richie Lee 2001 年輕生、樂團解散；Bell Witch 前鼓手 Adrian Guerra 2016 年過世；Dark Sanctuary 與 Bushido 的取樣官司（只寫法院程序與結果）。Drowse 的「解離性崩潰」只有維基單源，不寫。
 - 主線審稿 6 處：Aidan Baker「冨田勲」改台灣字形「富田勳」；Polaris「柏原譲」改「柏原讓」；Fear Falls Burning 刪 2024 年最終演出（只有搜尋摘要單源）；Corrupted「最重、最黑暗」「不可估量」改「被認為深深影響」；Esben and the Witch 刪 BBC Sound of 2011（媒體榜單）；lovesliescrushing 時態更正。
+
+## ar-d-516（2026-11-05，post-rock、slowcore、funeral doom、stoner、no wave、日本／巴西／台灣獨立搖滾）
+
+- 36 位寫：12 full、24 thin；不寫 4 位——Numbers（沒有聲音事實）、sToa（主線撤稿：唯一的「做法」句只是「歌詞據說帶哲學性」，過不了門檻）、Valet、Calla（研究稿只有一條來源）。
+- 題材照寫：SIANspheric 前身 Gleet 成員 Scott Kish 1994 年車禍身亡；Colosseum 主腦 Palomäki 2010 年過世；James Chance 2024 年過世；Aarktica 的 DeRosa 右耳失聰。Asva 成員親屬遇害、Dead Meadow 成員過世只有單源，不寫。
+- 主線審稿 15 處：第一句補國籍或身分——Richard Hawley、sugar plant、As Mercenárias、Brant Bjork、Chris Isaak、Daniel Lanois（連帶刪細節壓字數）；在世者只留一項成績——Hawley 刪奧利佛獎、Chris Isaak 刪英美單曲榜前十；As Mercenárias 刪《Bizz》年度專輯（媒體榜單）；sugar plant 平假名「庄山ちなつ」改羅馬字；cero「髙城」「荒内」改台灣字形「高城」「荒內」。

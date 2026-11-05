@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1804 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1812 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -1581,6 +1581,14 @@
 | ar-d-516 | Richard Hawley | Coles Corner | 登上英國專輯榜第 16 名、拿下金唱片 | 搜尋結果摘要有『No.37』之說，與簡介不一致；本層未能開頁確認，請店主對 Official Charts 核對 | https://en.wikipedia.org/wiki/Richard_Hawley |
 | ar-d-516 | sToa | Porta VIII | 梅特林克的一齣童話劇，被改編成整張唱片 | 搜尋摘要（非可靠源）提到 Porta VIII 的概念出自梅特林克童話，但本層未開頁驗證；而上線簡介同段另說四個曲名取自布萊克，兩者並存，請店主復核 | https://de.wikipedia.org/wiki/Stoa_(Band) |
 | ar-d-516 | Ahab | The Call of the Wretched Sea | 首作把整部小說改寫成概念專輯 | Droste 訪談稱『Nantucket Saga』三部曲（The Oath EP、The Call of the Wretched Sea、The Divinity of Oceans）也取材 Philbrick 與 Owen Chase 記述的 Essex 號捕鯨船事件，不只《白鯨記》；『整部小說』說法可能過滿。 | https://www.teethofthedivine.com/interviews/interview-with-ahab/ |
+| ar-d-516 | Asunder | A Clarion Call | 四首歷時 52 分鐘 | Your Last Rites 寫三首、約 40 分鐘加 CD 專屬隱藏曲，與簡介曲數不一致；也有來源列四首（含無標題終曲），需看實物或 Discogs 定奪 | https://yourlastrites.com/2024/09/06/diamonds-rust-asunders-a-clarion-call/ |
+| ar-d-516 | Doctor Nerve | Armed Observation | Nick Didkovsky 於 1984 年創立 Doctor Nerve | 樂團官方簡介寫 1983 年成立（avant-rock octet），維基寫 1984，其他站兩說並存；年份未定，建議簡介改寫成不帶年份或標明『1980 年代前半』。 | https://doctornerve.org/nerve/pages/nick.shtml |
+| ar-d-517 | Jodis | Secret House | 2009 年 10 月 13 日 Hydra Head 出這張 | Lambgoat 2009-08-15 新聞稿寫預定 10 月 27 日上市（美國）；10 月 13 日可能是歐洲或另一版本日期，需對 Discogs／廠牌頁確認 | https://lambgoat.com/news/13170/jodis-isis-khanate-debut-set-for-release/ |
+| ar-d-517 | Korallreven | An Album by Korallreven | 構想來自他 2007 年的薩摩亞之旅 | It's a Trap! 2011 年訪談寫 Samoa 之行約三年前（約 2008），與 2007 不一致，年份宜刪或存疑；『旅遊記者』亦只有單一來源 | https://itsatrap.com/n/38438-interview-korallreven |
+| ar-d-517 | Lowlife | Permanent Sleep | 首張專輯 1986 年在愛丁堡錄成 | 1985 年秋已有同在 Palladium Studios（愛丁堡）錄的迷你專輯《Rain》；Permanent Sleep 是首張『長篇專輯』，並非樂團首張發行。搜尋摘要另稱錄於 1986 年 6–7 月（未開頁證實）。若簡介寫『首張專輯』宜補『首張長篇』 | https://ltmrecordings.com/lowlife.html |
+| ar-d-517 | Ommadon | V | 兩段長曲各約 45 分鐘 | The Sleeping Shaman 評論寫 V1 略多於 47 分鐘、V2 略少於 40 分鐘，兩段長度不同；『各約 45』不準（單源，可再核對 Bandcamp 曲長） | https://thesleepingshaman.com/reviews/o/ommadon-v-lp-dd-2014/ |
+| ar-d-517 | Kem | Kemistry | Kem 1967 年生於納許維爾 | 出生年來源不一致：維基寫 1967，wikidata 寫 1969，encyclopedia.com 寫 196?（本人不談年齡）。建議簡介改為不寫出生年 | https://www.encyclopedia.com/education/news-wires-white-papers-and-books/kem |
+| ar-d-517 | Kem | Kemistry | 2002 年自費推出之後，Motown 在 2003 年重新發行，16 個月後拿到金唱片 | 維基寫 Motown 2001 年 11 月簽約、2003 年 2 月 25 日重發；encyclopedia.com 寫 2003 年簽約。『16 個月後金唱片』未見獨立來源，需再核 | https://en.wikipedia.org/wiki/Kem_(singer) |
 | ar-d-929 | Erik Truffaz | Rollin' | 2000 年簽進這個廠牌 | 上線簡介沿用 Blue Note 官網簡介的 2000 年簽約說；但維基與已上線的《Out of a Dream》《The Dawn》《Bending New Corners》簡介顯示 1997–1999 年已在 Blue Note 發片，瑞士聯邦文化局新聞稿也記《Bending New Corners》為 1999 年 Blue Note 專輯，2000 年簽約的說法與之矛盾，建議改為不寫簽約年。 | https://musikzeitung.ch/en/?p=44583 |
 | ar-d-929 | Erik Truffaz | The Walk of the Giant Turtle | 前一張四重奏盤在法國賣到十萬張的金唱片 | 維基只寫《Bending New Corners》（1999）是法國 Silver Album；本張的前一張是《Mantis》（2001），並非《Bending New Corners》。需核對金唱片的專輯歸屬與認證層級。 | https://en.wikipedia.org/wiki/Erik_Truffaz |
 | ar-d-929 | Stanley Jordan | Magic Touch | 九軌裡有五軌只有一把電吉他 … 六軌只有他的電吉他 | 同一則簡介前後自相矛盾：五軌 vs 六軌；事實庫引 jazzdisco 為六軌純獨奏、其餘三軌各配一組節奏，應統一為六軌。 | https://en.wikipedia.org/wiki/Magic_Touch_(Stanley_Jordan_album) |
