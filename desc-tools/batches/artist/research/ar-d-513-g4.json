@@ -1,0 +1,953 @@
+[
+  {
+    "key": "john butcher",
+    "name": "John Butcher",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "John Butcher 1954 年生於英國布萊頓，是英國的次中音與高音薩克斯風手；1970 年代自學薩克斯風，在薩里大學讀物理時認識鋼琴手 Chris Burn，兩人開始一起即興。",
+            "src": "https://en.wikipedia.org/wiki/John_Butcher_(musician)",
+            "src2": "https://www.johnbutcher.org.uk/biog.html",
+            "from": "new"
+          },
+          {
+            "f": "他讀的是理論物理，博士研究的是夸克的數學模型，1982 年完成學位後離開學界；他自己說物理與音樂沒有直接關聯，但科學家那種堅持、願意試怪點子的習慣，影響了他工作的方式。",
+            "src": "https://www.paristransatlantic.com/magazine/interviews/butcher.html",
+            "src2": "https://www.johnbutcher.org.uk/biog.html",
+            "single": false,
+            "from": "new"
+          },
+          {
+            "f": "1970 年代末，他與 Chris Burn 每個星期天一起試音，大約一年後辦了第一場自由即興音樂會；他起初連傳統意義的音符都排除，專心處理在這種條件下怎麼成樂。",
+            "src": "https://www.paristransatlantic.com/magazine/interviews/butcher.html",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "他最喜歡的薩克斯風手包括 Lester Young、Sidney Bechet、Paul Desmond、Charlie Parker、Sonny Rollins、Dexter Gordon、Roland Kirk 與 Albert Ayler；早年對 Derek Bailey 的作品比 Evan Parker 熟，Bailey 的衝勁影響了他的取向。",
+            "src": "https://www.paristransatlantic.com/magazine/interviews/butcher.html",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "他把薩克斯風當成一根振動的空氣管，像弦樂手運弓一樣，靠嘴型壓力與偶爾的指法改變音色；他說「樂器會領你找到技法，有的有價值，有的沒用」。",
+            "src": "https://www.paristransatlantic.com/magazine/interviews/butcher.html",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "他用循環呼吸、複音（multiphonics）、貼近按鍵收音，也把小麥克風放進喇叭口做回授，讓薩克斯風不靠簧片就發聲；回授的聲音比較接近電子音樂，所以很適合與電子樂手合作。",
+            "src": "https://soundpropositions.com/2014/05/10/john-butcher-keeps-jazz-dangerous/",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "房間的聲學是他演奏的一部分：他常在非音樂廳的空間演出，錄過蘇格蘭與奧克尼群島的《Resonant Spaces》，也在廢棄油槽這類地方演奏；他說有些聲音只會在特定房間出現。",
+            "src": "https://www.johnbutcher.org.uk/biog.html",
+            "src2": "https://soundpropositions.com/2014/05/10/john-butcher-keeps-jazz-dangerous/",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Butcher 屬於英國第二代即興者，是 Spontaneous Music Ensemble 最終版本的成員；他在 1992 年應 John Stevens 之邀加入該團。",
+            "src": "https://en.wikipedia.org/wiki/Spontaneous_Music_Ensemble",
+            "src2": "https://www.paristransatlantic.com/magazine/interviews/butcher.html",
+            "from": "new"
+          },
+          {
+            "f": "他與數百位音樂人合作過，包括 Derek Bailey、Akio Suzuki、Matthew Shipp、Christian Marclay、Eddie Prévost、Phil Minton、Otomo Yoshihide，也曾以獨奏身分與 WDR 交響樂團同台。",
+            "src": "https://www.johnbutcher.org.uk/biog.html",
+            "src2": "https://en.wikipedia.org/wiki/John_Butcher_(musician)",
+            "from": "new"
+          },
+          {
+            "f": "他到皇家音樂學院、普林斯頓、史丹佛與吉爾德霍爾音樂學院等校開過即興與薩克斯風的工作坊、講座與大師班。",
+            "src": "https://www.johnbutcher.org.uk/biog.html",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "第一張專輯《Fonetiks》1984 年與 Chris Burn 合作發行。",
+            "src": "https://en.wikipedia.org/wiki/John_Butcher_(musician)",
+            "src2": "https://www.paristransatlantic.com/magazine/interviews/butcher.html",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [],
+    "conflicts": [
+      "Acta 成立年：維基與 John Russell 條目寫 1987 或 1988、Butcher 訪談稿說 1987；不一致，facts 不收年份"
+    ],
+    "searches": 5,
+    "failedFetches": 0,
+    "status": "thin",
+    "notes": "身分確認：卡池《Thirteen Friendly Numbers》(1992)，查的是英國薩克斯風手，不是維基預抓的澳洲足球員（預抓條目為同名誤抓，當沒有）。「Fonetiks 為首張專輯」：維基寫 debut，訪談稿未驗證，此條放 era 但不可寫成『首張』以外的強宣稱；Paul Hamlyn 作曲家獎 2011 僅單源（個人官網），移 notes 不放 facts；soundpropositions 『把薩克斯風推得比任何人更遠』是單一作者判斷，不收。legacy 無名人堂、國家榮譽或後輩點名類共識，查不到，判 thin。Paris Transatlantic 為 Dan Warburton 訪談（約 2001），維基與個人官網為非獨立來源家族。pubIssues 無。",
+    "pubIssues": []
+  },
+  {
+    "key": "john butcher / dylan van der schyff",
+    "name": "John Butcher / Dylan van der Schyff",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Dylan van der Schyff 1970 年生於南非約翰尼斯堡，後來在加拿大長大，是加拿大鼓手與打擊樂手；1970 年代中期移民加拿大。",
+            "src": "https://songlines.com/artist/dylan-van-der-schyff/",
+            "src2": "https://musicbrainz.org/artist/a54c7a9d-f773-4a7c-b61c-cca9a4e7ab39",
+            "from": "new"
+          },
+          {
+            "f": "他在維多利亞大學與（短暫）麥基爾大學音樂學院求學，也在渥太華的儀仗隊樂隊（Band of the Ceremonial Guard）受過軍樂鼓訓練，後來取得西門菲莎大學碩士，並在英國雪菲爾大學做音樂心理學的研究。",
+            "src": "https://songlines.com/artist/dylan-van-der-schyff/",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "John Butcher 1954 年生於布萊頓，在薩里大學讀物理時認識 Chris Burn 開始一起即興，1982 年完成物理博士後離開學界。",
+            "src": "https://www.johnbutcher.org.uk/biog.html",
+            "src2": "https://en.wikipedia.org/wiki/John_Butcher_(musician)",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "van der Schyff 的領域橫跨爵士、電聲、即興、實驗與新音樂，也做結合劇場、舞蹈與電影的跨界計畫；他留下約一百張錄音，演出遍及柏林、里斯本、斯德哥爾摩、紐約、芝加哥、蒙特婁、特倫托與莫爾德。",
+            "src": "https://songlines.com/artist/dylan-van-der-schyff/",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "Butcher 把薩克斯風當成振動的空氣管，靠嘴型壓力改變音色，並讓房間聲學成為演奏的一部分。",
+            "src": "https://www.paristransatlantic.com/magazine/interviews/butcher.html",
+            "src2": "https://www.johnbutcher.org.uk/biog.html",
+            "single": false,
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "none",
+        "facts": []
+      },
+      "era": {
+        "status": "none",
+        "facts": []
+      }
+    },
+    "milestones": [],
+    "conflicts": [],
+    "searches": 3,
+    "failedFetches": 1,
+    "status": "thin",
+    "notes": "身分確認：卡池《Points, Snags And Windings》(2001)，Butcher 為英國薩克斯風手，van der Schyff 為加拿大鼓手。維基 Dylan van der Schyff 條目 404（無條目）。legacy 查不到有出處的共識評價或後輩點名，判 none；搜尋顯示他現居墨爾本（Bandcamp 自述），但不收。Songlines 與 MusicBrainz 登記的出生地一致（約翰尼斯堡 1970）。移民年份兩源不一致（Last.fm 寫 1970 年代中期），facts 不寫確切年份。pubIssues：上線簡介「連母帶也自己做」查無來源，可能出自 Discogs 製作人欄，本層未驗證，不列為錯誤。",
+    "pubIssues": []
+  },
+  {
+    "key": "john butcher / georg graewe",
+    "name": "John Butcher / Georg Graewe",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Georg Gräwe（Graewe）1956 年 6 月 28 日生於德國波鴻，自學成才，1971 年先以搖滾樂團吉他手起步，1974 年組了自己的第一個鋼琴五重奏，留下兩張 Free Music Production 的專輯，樂團維持到 1980 年。",
+            "src": "https://de.wikipedia.org/wiki/Georg_Gr%C3%A4we",
+            "src2": "https://api.discogs.com/artists/1213288",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Gräwe 的音樂自由而精簡，一邊承接美國爵士鋼琴傳統（他長期鑽研非裔美國爵士鋼琴），一邊承接歐洲藝術音樂；除了即興，也寫過鋼琴、室內樂、管弦樂、電影與舞台作品，包括三部歌劇。",
+            "src": "https://de.wikipedia.org/wiki/Georg_Gr%C3%A4we",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "Grubenklang Orchestra 起初演奏 Hanns Eisler 的作品與礦工歌曲，後來發展成寫定段落與自由即興並置的自家風格，陣容國際化，維持了十多年。",
+            "src": "https://de.wikipedia.org/wiki/Georg_Gr%C3%A4we",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "2015 年 Gräwe 獲萊茵蘭－普法爾茨邦與西南廣播（SWR）爵士獎（Jazzpreis des Landes Rheinland-Pfalz und des SWR），在路德維希港的 Enjoy Jazz 音樂節頒發；獎項表彰他整體的音樂創作與獨特的個人風格。",
+            "src": "https://de.wikipedia.org/wiki/Georg_Gr%C3%A4we",
+            "src2": "https://www.jazzzeitung.de/cms/wp-json/wp/v2/posts/7307",
+            "from": "new"
+          },
+          {
+            "f": "他與 Anthony Braxton、John Tchicai、Evan Parker、Barre Phillips、Marilyn Crispell、Joëlle Léandre、Ken Vandermark 等人合作過；1989 年起與 Ernst Reijseger、Gerry Hemingway 組鋼琴三重奏（專輯名《The View from Points West》）。",
+            "src": "https://de.wikipedia.org/wiki/Georg_Gr%C3%A4we",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "1993 年他創辦自己的廠牌 Random Acoustics，曾在柏林爵士學院任教。",
+            "src": "https://de.wikipedia.org/wiki/Georg_Gr%C3%A4we",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "none",
+        "facts": []
+      }
+    },
+    "milestones": [],
+    "conflicts": [
+      "Grubenklang 年份：德文維基寫 1981 年成立，另一搜尋結果寫 1982–93；不一致，facts 不收任何年份"
+    ],
+    "searches": 3,
+    "failedFetches": 1,
+    "status": "thin",
+    "notes": "身分確認：卡池《Light's View》(1999)，Nuscope，Graewe 為波鴻鋼琴家。Grubenklang 成立年兩源不一致（1981 vs 1982），facts 不寫年份；Random Acoustics 1993 與柏林任教單源（德文維基），低風險。SWR 爵士獎：jazzzeitung 報導確認 2015 年於 Enjoy Jazz 頒發，維基寫獎金 1.5 萬歐元，陪同獎的 jury 引句『Maßstäbe』只見於維基，不收。英文維基 Georg Gräwe 條目 404（無）。Butcher 面向見 john butcher 一筆。pubIssues 無。",
+    "pubIssues": []
+  },
+  {
+    "key": "john carter / bobby bradford",
+    "name": "John Carter / Bobby Bradford",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "John Carter 生於德州沃思堡（Fort Worth），讀高中時與同學 Ornette Coleman、Charles Moffett 一起玩音樂；他 15 歲高中畢業、19 歲大學畢業，之後取得碩士學位，長年以公立學校音樂老師為業，直到過世前一年才全職演奏。",
+            "src": "https://en.wikipedia.org/wiki/John_Carter_(jazz_musician)",
+            "src2": "https://www.encyclopedia.com/arts/dictionaries-thesauruses-pictures-and-press-releases/carter-john-wallace",
+            "from": "new"
+          },
+          {
+            "f": "Bobby Bradford 1934 年 7 月 19 日生於密西西比州克里夫蘭（Cleveland），1946 年全家搬到德州達拉斯，後來在奧斯汀的 Huston–Tillotson 學院取得音樂學士。",
+            "src": "https://en.wikipedia.org/wiki/Bobby_Bradford",
+            "src2": "https://cajazz.org/2025-hall-of-fame/blog-post-title-two-nzyd2",
+            "from": "new"
+          },
+          {
+            "f": "Bradford 在 Ornette Coleman 搬到洛杉磯後於 1953 年與他重逢，一度要加入 Coleman 的團卻被徵召入伍；1961 至 1963 年才在 Coleman 四重奏裡吹小號，團員之後由 Freddie Hubbard 接替。",
+            "src": "https://en.wikipedia.org/wiki/Bobby_Bradford",
+            "src2": "https://cajazz.org/2025-hall-of-fame/blog-post-title-two-nzyd2",
+            "from": "new"
+          },
+          {
+            "f": "Carter 1961 年起以美國西岸為據點，1965 年在洛杉磯遇見 Bradford（Coleman 建議兩人合作），兩人一起組了 New Art Jazz Ensemble，合作持續到 Carter 1991 年過世。",
+            "src": "https://en.wikipedia.org/wiki/John_Carter_(jazz_musician)",
+            "src2": "https://misterioso.org/?p=105",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "兩人的團延續 Ornette Coleman 的無鋼琴編制與自由 bop，但走出自己的方向；兩位都是德州出身，音樂裡有藍調與 Texas bop 的底色，Carter 稱他們每次演出都要創造新東西的做法為「futuring」。",
+            "src": "https://www.pointofdeparture.org/PoD24/PoD24BobbyBradford.html",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "兩人是多年的摯友，音樂性格卻很不同；Point of Departure 說他們的組合示範了整體遠大於部分總和的團體即興，二重奏錄音《Tandem 1 & 2》（1996）則被形容為心電感應般的互動。",
+            "src": "https://www.pointofdeparture.org/PoD24/PoD24BobbyBradford.html",
+            "src2": "https://misterioso.org/?p=105",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "Carter 1974 年改以單簧管為主要樂器，1980 年代初離開教職，創辦自己的廠牌，並在 1984 至 1987 年間組了 Clarinet Summit。",
+            "src": "https://www.encyclopedia.com/arts/dictionaries-thesauruses-pictures-and-press-releases/carter-john-wallace",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Carter 在 1982 至 1990 年間寫成並錄製五張一組的 Roots and Folklore: Episodes in the Development of American Folk Music，以非裔美國人的歷史與經驗為題；維基稱這整組被爵士樂評人視為 1980 年代最好的唱片之一。",
+            "src": "https://en.wikipedia.org/wiki/John_Carter_(jazz_musician)",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "Encyclopedia.com 把《Roots and Folklore》稱為一部「monumental work」，是紐約公共劇院（Public Theater）委託的五段組曲，從非洲寫到奴隸制、再到非裔美國人遷往都市，由帶 bebop 味道的八重奏演出。",
+            "src": "https://www.encyclopedia.com/arts/dictionaries-thesauruses-pictures-and-press-releases/carter-john-wallace",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "Bradford 在波莫納學院（Pomona College）任教 44 年，2021 年 6 月退休；薩克斯風手 David Murray 1970 年代是他的學生。",
+            "src": "https://en.wikipedia.org/wiki/Bobby_Bradford",
+            "src2": "https://cajazz.org/2025-hall-of-fame/blog-post-title-two-nzyd2",
+            "from": "new"
+          },
+          {
+            "f": "兩人的唱片長期難買到，2010 年 Mosaic 廠牌把他們的錄音收成三張 CD 套裝（Mosaic Select 36）。",
+            "src": "https://www.discogs.com/release/5333287",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "New Art Jazz Ensemble 在 1965 至 1973 年間由 Carter 與 Bradford 共同領導，並曾與 Horace Tapscott 合作、赴歐洲巡演。",
+            "src": "https://www.encyclopedia.com/arts/dictionaries-thesauruses-pictures-and-press-releases/carter-john-wallace",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [],
+    "conflicts": [
+      "New Art Jazz Ensemble 團名：封面（Seeking）掛 New Art Jazz Ensemble，維基與 misterioso 拼成 New Jazz Art Ensemble / New Arts Jazz Ensemble；facts 採 encyclopedia.com 與上線簡介的 New Art Jazz Ensemble",
+      "Roots and Folklore 起訖：維基寫 1982–1990、encyclopedia.com 與 misterioso 寫最後一張 1989 發行；facts 只寫維基的「1982 至 1990 年間寫成並錄製」，並在 notes 標單源"
+    ],
+    "searches": 8,
+    "failedFetches": 2,
+    "status": "full",
+    "notes": " 身分確認：卡池《Self Determination Music》(1970)，Carter 為德州出身的簧管手、Bradford 為小號／短號手，兩人合作的唱片。三筆（john carter / bobby bradford、john carter & bobby bradford、… quartet）共用同一份研究，搜尋 8 次與失敗 2 次（texasmonthly 403、allaboutjazz 403）為三筆合計，非各自累加。Carter 生年：維基與 encyclopedia.com 主文寫 1929、另一條 encyclopedia.com 寫 1928，facts 不寫生年；死因文獻亦不一（非惡性腫瘤 vs 肺癌），不收。Down Beat Jazz Hall of Fame 1991 追入：僅維基單源（搜尋摘要另有站點轉述但未開頁），獎項類高風險，移 notes 不放 facts；Bradford 2025 年加州爵士聯盟名人堂（cajazz.org 單源）、2022 洛杉磯珍寶獎、2009 Festival of New Trumpet Music 獎，皆單源，移 notes。Bradford 稱小號或短號各站不一，facts 寫「小號」，上線簡介《Self Determination Music》寫短號、《Seeking》寫小號，寫作層請沿用各卡簡介的樂器稱呼。Bradford 與 Pomona 任教年數：維基與 cajazz 一致（44 年、2021 退休），另 cajazz 說 Pasadena City College 教過 30 餘年。",
+    "pubIssues": []
+  },
+  {
+    "key": "john carter & bobby bradford",
+    "name": "John Carter & Bobby Bradford",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "John Carter 生於德州沃思堡（Fort Worth），讀高中時與同學 Ornette Coleman、Charles Moffett 一起玩音樂；他 15 歲高中畢業、19 歲大學畢業，之後取得碩士學位，長年以公立學校音樂老師為業，直到過世前一年才全職演奏。",
+            "src": "https://en.wikipedia.org/wiki/John_Carter_(jazz_musician)",
+            "src2": "https://www.encyclopedia.com/arts/dictionaries-thesauruses-pictures-and-press-releases/carter-john-wallace",
+            "from": "new"
+          },
+          {
+            "f": "Bobby Bradford 1934 年 7 月 19 日生於密西西比州克里夫蘭（Cleveland），1946 年全家搬到德州達拉斯，後來在奧斯汀的 Huston–Tillotson 學院取得音樂學士。",
+            "src": "https://en.wikipedia.org/wiki/Bobby_Bradford",
+            "src2": "https://cajazz.org/2025-hall-of-fame/blog-post-title-two-nzyd2",
+            "from": "new"
+          },
+          {
+            "f": "Bradford 在 Ornette Coleman 搬到洛杉磯後於 1953 年與他重逢，一度要加入 Coleman 的團卻被徵召入伍；1961 至 1963 年才在 Coleman 四重奏裡吹小號，團員之後由 Freddie Hubbard 接替。",
+            "src": "https://en.wikipedia.org/wiki/Bobby_Bradford",
+            "src2": "https://cajazz.org/2025-hall-of-fame/blog-post-title-two-nzyd2",
+            "from": "new"
+          },
+          {
+            "f": "Carter 1961 年起以美國西岸為據點，1965 年在洛杉磯遇見 Bradford（Coleman 建議兩人合作），兩人一起組了 New Art Jazz Ensemble，合作持續到 Carter 1991 年過世。",
+            "src": "https://en.wikipedia.org/wiki/John_Carter_(jazz_musician)",
+            "src2": "https://misterioso.org/?p=105",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "兩人的團延續 Ornette Coleman 的無鋼琴編制與自由 bop，但走出自己的方向；兩位都是德州出身，音樂裡有藍調與 Texas bop 的底色，Carter 稱他們每次演出都要創造新東西的做法為「futuring」。",
+            "src": "https://www.pointofdeparture.org/PoD24/PoD24BobbyBradford.html",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "兩人是多年的摯友，音樂性格卻很不同；Point of Departure 說他們的組合示範了整體遠大於部分總和的團體即興，二重奏錄音《Tandem 1 & 2》（1996）則被形容為心電感應般的互動。",
+            "src": "https://www.pointofdeparture.org/PoD24/PoD24BobbyBradford.html",
+            "src2": "https://misterioso.org/?p=105",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "Carter 1974 年改以單簧管為主要樂器，1980 年代初離開教職，創辦自己的廠牌，並在 1984 至 1987 年間組了 Clarinet Summit。",
+            "src": "https://www.encyclopedia.com/arts/dictionaries-thesauruses-pictures-and-press-releases/carter-john-wallace",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Carter 在 1982 至 1990 年間寫成並錄製五張一組的 Roots and Folklore: Episodes in the Development of American Folk Music，以非裔美國人的歷史與經驗為題；維基稱這整組被爵士樂評人視為 1980 年代最好的唱片之一。",
+            "src": "https://en.wikipedia.org/wiki/John_Carter_(jazz_musician)",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "Encyclopedia.com 把《Roots and Folklore》稱為一部「monumental work」，是紐約公共劇院（Public Theater）委託的五段組曲，從非洲寫到奴隸制、再到非裔美國人遷往都市，由帶 bebop 味道的八重奏演出。",
+            "src": "https://www.encyclopedia.com/arts/dictionaries-thesauruses-pictures-and-press-releases/carter-john-wallace",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "Bradford 在波莫納學院（Pomona College）任教 44 年，2021 年 6 月退休；薩克斯風手 David Murray 1970 年代是他的學生。",
+            "src": "https://en.wikipedia.org/wiki/Bobby_Bradford",
+            "src2": "https://cajazz.org/2025-hall-of-fame/blog-post-title-two-nzyd2",
+            "from": "new"
+          },
+          {
+            "f": "兩人的唱片長期難買到，2010 年 Mosaic 廠牌把他們的錄音收成三張 CD 套裝（Mosaic Select 36）。",
+            "src": "https://www.discogs.com/release/5333287",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "New Art Jazz Ensemble 在 1965 至 1973 年間由 Carter 與 Bradford 共同領導，並曾與 Horace Tapscott 合作、赴歐洲巡演。",
+            "src": "https://www.encyclopedia.com/arts/dictionaries-thesauruses-pictures-and-press-releases/carter-john-wallace",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [],
+    "conflicts": [
+      "New Art Jazz Ensemble 團名：封面（Seeking）掛 New Art Jazz Ensemble，維基與 misterioso 拼成 New Jazz Art Ensemble / New Arts Jazz Ensemble；facts 採 encyclopedia.com 與上線簡介的 New Art Jazz Ensemble",
+      "Roots and Folklore 起訖：維基寫 1982–1990、encyclopedia.com 與 misterioso 寫最後一張 1989 發行；facts 只寫維基的「1982 至 1990 年間寫成並錄製」，並在 notes 標單源"
+    ],
+    "searches": 8,
+    "failedFetches": 2,
+    "status": "full",
+    "notes": " 身分確認：卡池《Seeking》(1969)，Carter 為德州出身的簧管手、Bradford 為小號／短號手，兩人合作的唱片。三筆（john carter / bobby bradford、john carter & bobby bradford、… quartet）共用同一份研究，搜尋 8 次與失敗 2 次（texasmonthly 403、allaboutjazz 403）為三筆合計，非各自累加。Carter 生年：維基與 encyclopedia.com 主文寫 1929、另一條 encyclopedia.com 寫 1928，facts 不寫生年；死因文獻亦不一（非惡性腫瘤 vs 肺癌），不收。Down Beat Jazz Hall of Fame 1991 追入：僅維基單源（搜尋摘要另有站點轉述但未開頁），獎項類高風險，移 notes 不放 facts；Bradford 2025 年加州爵士聯盟名人堂（cajazz.org 單源）、2022 洛杉磯珍寶獎、2009 Festival of New Trumpet Music 獎，皆單源，移 notes。Bradford 稱小號或短號各站不一，facts 寫「小號」，上線簡介《Self Determination Music》寫短號、《Seeking》寫小號，寫作層請沿用各卡簡介的樂器稱呼。Bradford 與 Pomona 任教年數：維基與 cajazz 一致（44 年、2021 退休），另 cajazz 說 Pasadena City College 教過 30 餘年。",
+    "pubIssues": []
+  },
+  {
+    "key": "john carter & bobby bradford quartet",
+    "name": "John Carter & Bobby Bradford Quartet",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "John Carter 生於德州沃思堡（Fort Worth），讀高中時與同學 Ornette Coleman、Charles Moffett 一起玩音樂；他 15 歲高中畢業、19 歲大學畢業，之後取得碩士學位，長年以公立學校音樂老師為業，直到過世前一年才全職演奏。",
+            "src": "https://en.wikipedia.org/wiki/John_Carter_(jazz_musician)",
+            "src2": "https://www.encyclopedia.com/arts/dictionaries-thesauruses-pictures-and-press-releases/carter-john-wallace",
+            "from": "new"
+          },
+          {
+            "f": "Bobby Bradford 1934 年 7 月 19 日生於密西西比州克里夫蘭（Cleveland），1946 年全家搬到德州達拉斯，後來在奧斯汀的 Huston–Tillotson 學院取得音樂學士。",
+            "src": "https://en.wikipedia.org/wiki/Bobby_Bradford",
+            "src2": "https://cajazz.org/2025-hall-of-fame/blog-post-title-two-nzyd2",
+            "from": "new"
+          },
+          {
+            "f": "Bradford 在 Ornette Coleman 搬到洛杉磯後於 1953 年與他重逢，一度要加入 Coleman 的團卻被徵召入伍；1961 至 1963 年才在 Coleman 四重奏裡吹小號，團員之後由 Freddie Hubbard 接替。",
+            "src": "https://en.wikipedia.org/wiki/Bobby_Bradford",
+            "src2": "https://cajazz.org/2025-hall-of-fame/blog-post-title-two-nzyd2",
+            "from": "new"
+          },
+          {
+            "f": "Carter 1961 年起以美國西岸為據點，1965 年在洛杉磯遇見 Bradford（Coleman 建議兩人合作），兩人一起組了 New Art Jazz Ensemble，合作持續到 Carter 1991 年過世。",
+            "src": "https://en.wikipedia.org/wiki/John_Carter_(jazz_musician)",
+            "src2": "https://misterioso.org/?p=105",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "兩人的團延續 Ornette Coleman 的無鋼琴編制與自由 bop，但走出自己的方向；兩位都是德州出身，音樂裡有藍調與 Texas bop 的底色，Carter 稱他們每次演出都要創造新東西的做法為「futuring」。",
+            "src": "https://www.pointofdeparture.org/PoD24/PoD24BobbyBradford.html",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "兩人是多年的摯友，音樂性格卻很不同；Point of Departure 說他們的組合示範了整體遠大於部分總和的團體即興，二重奏錄音《Tandem 1 & 2》（1996）則被形容為心電感應般的互動。",
+            "src": "https://www.pointofdeparture.org/PoD24/PoD24BobbyBradford.html",
+            "src2": "https://misterioso.org/?p=105",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "Carter 1974 年改以單簧管為主要樂器，1980 年代初離開教職，創辦自己的廠牌，並在 1984 至 1987 年間組了 Clarinet Summit。",
+            "src": "https://www.encyclopedia.com/arts/dictionaries-thesauruses-pictures-and-press-releases/carter-john-wallace",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Carter 在 1982 至 1990 年間寫成並錄製五張一組的 Roots and Folklore: Episodes in the Development of American Folk Music，以非裔美國人的歷史與經驗為題；維基稱這整組被爵士樂評人視為 1980 年代最好的唱片之一。",
+            "src": "https://en.wikipedia.org/wiki/John_Carter_(jazz_musician)",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "Encyclopedia.com 把《Roots and Folklore》稱為一部「monumental work」，是紐約公共劇院（Public Theater）委託的五段組曲，從非洲寫到奴隸制、再到非裔美國人遷往都市，由帶 bebop 味道的八重奏演出。",
+            "src": "https://www.encyclopedia.com/arts/dictionaries-thesauruses-pictures-and-press-releases/carter-john-wallace",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "Bradford 在波莫納學院（Pomona College）任教 44 年，2021 年 6 月退休；薩克斯風手 David Murray 1970 年代是他的學生。",
+            "src": "https://en.wikipedia.org/wiki/Bobby_Bradford",
+            "src2": "https://cajazz.org/2025-hall-of-fame/blog-post-title-two-nzyd2",
+            "from": "new"
+          },
+          {
+            "f": "兩人的唱片長期難買到，2010 年 Mosaic 廠牌把他們的錄音收成三張 CD 套裝（Mosaic Select 36）。",
+            "src": "https://www.discogs.com/release/5333287",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "New Art Jazz Ensemble 在 1965 至 1973 年間由 Carter 與 Bradford 共同領導，並曾與 Horace Tapscott 合作、赴歐洲巡演。",
+            "src": "https://www.encyclopedia.com/arts/dictionaries-thesauruses-pictures-and-press-releases/carter-john-wallace",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [],
+    "conflicts": [
+      "New Art Jazz Ensemble 團名：封面（Seeking）掛 New Art Jazz Ensemble，維基與 misterioso 拼成 New Jazz Art Ensemble / New Arts Jazz Ensemble；facts 採 encyclopedia.com 與上線簡介的 New Art Jazz Ensemble",
+      "Roots and Folklore 起訖：維基寫 1982–1990、encyclopedia.com 與 misterioso 寫最後一張 1989 發行；facts 只寫維基的「1982 至 1990 年間寫成並錄製」，並在 notes 標單源"
+    ],
+    "searches": 8,
+    "failedFetches": 2,
+    "status": "full",
+    "notes": " 身分確認：卡池《Flight for Four》(1969)，Carter 為德州出身的簧管手、Bradford 為小號／短號手，兩人合作的唱片。三筆（john carter / bobby bradford、john carter & bobby bradford、… quartet）共用同一份研究，搜尋 8 次與失敗 2 次（texasmonthly 403、allaboutjazz 403）為三筆合計，非各自累加。Carter 生年：維基與 encyclopedia.com 主文寫 1929、另一條 encyclopedia.com 寫 1928，facts 不寫生年；死因文獻亦不一（非惡性腫瘤 vs 肺癌），不收。Down Beat Jazz Hall of Fame 1991 追入：僅維基單源（搜尋摘要另有站點轉述但未開頁），獎項類高風險，移 notes 不放 facts；Bradford 2025 年加州爵士聯盟名人堂（cajazz.org 單源）、2022 洛杉磯珍寶獎、2009 Festival of New Trumpet Music 獎，皆單源，移 notes。Bradford 稱小號或短號各站不一，facts 寫「小號」，上線簡介《Self Determination Music》寫短號、《Seeking》寫小號，寫作層請沿用各卡簡介的樂器稱呼。Bradford 與 Pomona 任教年數：維基與 cajazz 一致（44 年、2021 退休），另 cajazz 說 Pasadena City College 教過 30 餘年。",
+    "pubIssues": []
+  },
+  {
+    "key": "john russell",
+    "name": "John Russell",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "John Russell 1954 年 12 月 19 日生於倫敦巴特西，在肯特郡拉金（Ruckinge）長大；十一歲時祖父送他第一把吉他，他愛藍調，在學校自學吉他並組了樂團。",
+            "src": "https://en.wikipedia.org/wiki/John_Russell_(musician)",
+            "src2": "https://api.discogs.com/artists/292491",
+            "from": "new"
+          },
+          {
+            "f": "十七歲搬到倫敦，在鼓手 John Stevens 主持的 Little Theatre Club 演出，成為 Musicians' Co-op 的成員並參與籌辦音樂會。",
+            "src": "https://en.wikipedia.org/wiki/John_Russell_(musician)",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "Russell 少年時當過 Derek Bailey 的吉他學生，維基記載有一年每週上課；Evan Parker 的悼文稱他是 Bailey 之後年輕一輩即興者裡的核心人物。1977 年他放棄電吉他，改專心彈原音吉他。",
+            "src": "https://en.wikipedia.org/wiki/John_Russell_(musician)",
+            "src2": "https://londonjazznews.com/2021/01/20/a-tribute-to-john-russell-1954-2021-by-evan-parker/",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Russell 自 1977 年起專攻原音吉他，在自由即興裡走的是細碎、貼近音色與音高的路線；樂評人 Ben Watson（The Wire）形容他與 Roger Turner 是「對細節有終生專注」的演奏者。",
+            "src": "https://encyclopedia.com/education/news-wires-white-papers-and-books/turner-roger",
+            "src2": "https://en.wikipedia.org/wiki/John_Russell_(musician)",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "他 2010 年替 Evan Parker 的 psi 廠牌錄了獨奏專輯《Hyste》，靈感來自肯特方言與他的故鄉肯特郡。",
+            "src": "https://londonjazznews.com/2021/01/20/a-tribute-to-john-russell-1954-2021-by-evan-parker/",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Russell 與鋼琴手兼小號手 Chris Burn 創辦 Mopomoso，這個倫敦即興音樂會系列在紅玫瑰俱樂部辦了約三百場月例音樂會，2008 年遷到 Vortex 爵士俱樂部；名稱照 Evan Parker 的說法是「modern, postmodern, so?」的玩笑。",
+            "src": "https://en.wikipedia.org/wiki/John_Russell_(musician)",
+            "src2": "https://londonjazznews.com/2021/01/20/a-tribute-to-john-russell-1954-2021-by-evan-parker/",
+            "from": "new"
+          },
+          {
+            "f": "疫情封鎖期間他與 Paul Jolly 開辦 Mopomoso TV，讓音樂會繼續線上播出；Parker 說他事先安排好，讓這個計畫能在自己身後繼續。",
+            "src": "https://londonjazznews.com/2021/01/20/a-tribute-to-john-russell-1954-2021-by-evan-parker/",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "Russell 1975 年協助創辦刊物《Musics》，1979 年與 Roger Turner、Anthony Wood 共同成立 CAW Records，1981 年成立隨成員流動的 Quaqua 團。",
+            "src": "https://en.wikipedia.org/wiki/John_Russell_(musician)",
+            "src2": "https://londonjazznews.com/2021/01/20/a-tribute-to-john-russell-1954-2021-by-evan-parker/",
+            "from": "new"
+          },
+          {
+            "f": "Evan Parker 悼文寫他「在世界即興音樂圈的中心占有一席之地」，並在漢諾威等地替年輕樂手開工作坊；他 2019 年擔任日本武藏野美術大學的客座教授。",
+            "src": "https://londonjazznews.com/2021/01/20/a-tribute-to-john-russell-1954-2021-by-evan-parker/",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "Russell 2021 年 1 月因癌症過世，享年 66 歲，生前留下五十多張錄音。",
+            "src": "https://en.wikipedia.org/wiki/John_Russell_(musician)",
+            "src2": "https://londonjazznews.com/2021/01/20/a-tribute-to-john-russell-1954-2021-by-evan-parker/",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "none",
+        "facts": []
+      }
+    },
+    "milestones": [],
+    "conflicts": [
+      "維基預抓的 John Russell 是美國演員（身分不符、已棄用）；改用 John Russell (musician) 條目"
+    ],
+    "searches": 2,
+    "failedFetches": 1,
+    "status": "full",
+    "notes": "身分確認：卡池《From Next To Last (Improvised Guitar Solos 2001-2)》(2002)，Emanem，英國原音吉他手。維基預抓條目是同名演員，不採用；採用的是 en.wikipedia.org/wiki/John_Russell_(musician)（與 john russell & roger turner 一筆預抓內容相同）。與 Bailey 的關係：維基寫 For a year 每週課，Parker 寫「teenage guitar student」，採兩者重疊的『少年時當過 Bailey 的學生』。忌諱事項：死亡日 18 或 19 日各源不一（維基 19、wikidata 與 Jazzwise 標題 18），facts 只寫 2021 年 1 月。Mopomoso 創辦年各源不一（維基『1980 年代中』、另有『自 1991 年』），facts 不寫年份；Acta 成立年（維基 1988、Butcher 訪談 1987）不一，不收。jazzwise.com 訃聞 503 取不到（失敗 1）；Guardian 訃聞被擋。Parker 悼文與維基非獨立，但悼文是當事人同行的具名說法。pubIssues 無。",
+    "pubIssues": []
+  },
+  {
+    "key": "john russell & roger turner",
+    "name": "John Russell & Roger Turner",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "John Russell 1954 年 12 月 19 日生於倫敦巴特西，在肯特郡拉金（Ruckinge）長大；十一歲時祖父送他第一把吉他，他愛藍調，在學校自學吉他並組了樂團。",
+            "src": "https://en.wikipedia.org/wiki/John_Russell_(musician)",
+            "src2": "https://api.discogs.com/artists/292491",
+            "from": "new"
+          },
+          {
+            "f": "Russell 少年時當過 Derek Bailey 的吉他學生，維基記載有一年每週上課；Evan Parker 的悼文稱他是 Bailey 之後年輕一輩即興者裡的核心人物。1977 年他放棄電吉他，改專心彈原音吉他。",
+            "src": "https://en.wikipedia.org/wiki/John_Russell_(musician)",
+            "src2": "https://londonjazznews.com/2021/01/20/a-tribute-to-john-russell-1954-2021-by-evan-parker/",
+            "from": "new"
+          },
+          {
+            "f": "Roger Turner 1946 年生，哥哥們愛爵士與視覺藝術，他從小就在家裡的爵士氛圍裡打鼓；1960 年代他在薩塞克斯大學讀英國文學與當代哲學，1968 年與 Chris Biscoe 為英國文化協會演出，維基稱這是他第一場即興演出。",
+            "src": "https://en.wikipedia.org/wiki/Roger_Turner_(musician)",
+            "src2": "https://encyclopedia.com/education/news-wires-white-papers-and-books/turner-roger",
+            "from": "new"
+          },
+          {
+            "f": "Turner 13 歲就在聽 Ornette Coleman 的《Change of the Century》，第一場現場是 John Coltrane 四重奏加 Eric Dolphy。",
+            "src": "https://encyclopedia.com/education/news-wires-white-papers-and-books/turner-roger",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Turner 從 1974 年前後起專心發展個人的打擊語彙，對任何發聲物都開放（鍋碗、雞蛋到筆電都用過），常用加了調音踏板的低音筒鼓與擺在地板的物件；踏板筒鼓讓他發展出旋律性、不推進節拍的「線條」打法，靈感來自中國古琴與 Steve Lacy 的獨奏高音薩克斯風。",
+            "src": "https://encyclopedia.com/education/news-wires-white-papers-and-books/turner-roger",
+            "src2": "https://en.wikipedia.org/wiki/Roger_Turner_(musician)",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "兩人的二重奏被樂評人 Ben Watson（The Wire）形容為對細節有終生專注的演奏者；1996 年的《Birthdays》完全不用擴音與電子設備。",
+            "src": "https://encyclopedia.com/education/news-wires-white-papers-and-books/turner-roger",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Russell 與鋼琴手兼小號手 Chris Burn 創辦 Mopomoso，這個倫敦即興音樂會系列在紅玫瑰俱樂部辦了約三百場月例音樂會，2008 年遷到 Vortex 爵士俱樂部；名稱照 Evan Parker 的說法是「modern, postmodern, so?」的玩笑。",
+            "src": "https://en.wikipedia.org/wiki/John_Russell_(musician)",
+            "src2": "https://londonjazznews.com/2021/01/20/a-tribute-to-john-russell-1954-2021-by-evan-parker/",
+            "from": "new"
+          },
+          {
+            "f": "Russell 與 Turner 1979 年與 Anthony Wood 共同成立 CAW Records；Turner 也是 Thomas Lehn、Tim Hodgkinson 組成的 Konk Pack 的成員，與 Derek Bailey、Evan Parker、Cecil Taylor、近藤等樹（Toshinori Kondo）、大友良英合作過。",
+            "src": "https://en.wikipedia.org/wiki/Roger_Turner_(musician)",
+            "src2": "https://encyclopedia.com/education/news-wires-white-papers-and-books/turner-roger",
+            "from": "new"
+          },
+          {
+            "f": "Turner 在 1980 與 1983 年獲英國藝術委員會獎助；Encyclopedia.com 稱他在歐洲享有傳奇地位，走的是 Derek Bailey、Tony Oxley、Evan Parker 開出的路。",
+            "src": "https://encyclopedia.com/education/news-wires-white-papers-and-books/turner-roger",
+            "src2": "https://en.wikipedia.org/wiki/Roger_Turner_(musician)",
+            "from": "new"
+          },
+          {
+            "f": "Russell 2021 年 1 月因癌症過世，享年 66 歲，生前留下五十多張錄音。",
+            "src": "https://en.wikipedia.org/wiki/John_Russell_(musician)",
+            "src2": "https://londonjazznews.com/2021/01/20/a-tribute-to-john-russell-1954-2021-by-evan-parker/",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "none",
+        "facts": []
+      }
+    },
+    "milestones": [],
+    "conflicts": [
+      "Turner 出生地：維基寫 Whitstable、Encyclopedia.com 寫 Canterbury，facts 不寫出生地"
+    ],
+    "searches": 6,
+    "failedFetches": 1,
+    "status": "full",
+    "notes": "身分確認：卡池《The Second Sky》(2001)，Emanem，Russell 與 Turner 二重奏。Russell 部分同 john russell 一筆。Turner 的 Wire 2001 稱他「自由即興的巨人之一」僅見於搜尋摘要（ausland.berlin），未開頁，不收；Turner 在薩塞克斯讀書與 1968 年首演為維基單源，encyclopedia.com 則寫 1968 搬倫敦、與迦納鼓團 Mask 同台，兩者不衝突但細節不同，只收維基版。「1980、1983 獎助」兩源一致。上線簡介『第一次同上唱片是 1980 年與 Toshinori Kondo 的三重奏』本層未驗證，維基與 encyclopedia.com 都沒有此說，列 pubIssues 供店主核對。",
+    "pubIssues": [
+      {
+        "album": "The Second Sky",
+        "claim": "兩人從 1970 年代中期起搭檔，第一次同上唱片是 1980 年與 Toshinori Kondo 的三重奏",
+        "problem": "維基與 Encyclopedia.com 的 Turner 條目都只說 1974 年後與 Russell 長期合作，沒有第一次同上唱片的年份與近藤三重奏的說法，本層查不到出處；若無來源建議改寫或刪除",
+        "src": "https://en.wikipedia.org/wiki/Roger_Turner_(musician)"
+      }
+    ]
+  },
+  {
+    "key": "john zorn & sato michihiro",
+    "name": "John Zorn & Sato Michihiro",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "佐藤通弘（Michihiro Sato）1957 年生於東京，母親是傳統舞蹈與音樂的演奏者，他受此影響，1970 年、十三歲起學三味線。",
+            "src": "https://en.wikipedia.org/wiki/Michihiro_Sato",
+            "src2": "https://contemporaryjapanmusic.blogspot.com/2007/06/michihiro-satoh.html",
+            "from": "new"
+          },
+          {
+            "f": "他原本在東海大學念海洋科學、想當船長；1977 年聽了津輕三味線名人山田千里的音樂會後，搬到青森縣弘前市拜山田為師。",
+            "src": "https://contemporaryjapanmusic.blogspot.com/2007/06/michihiro-satoh.html",
+            "src2": "https://en.wikipedia.org/wiki/Michihiro_Sato",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "John Zorn 生於紐約市，在皇后區長大，十幾歲聽 The Doors 並在衝浪樂團彈貝斯，同時鑽研 Ligeti、Kagel 與 Stockhausen；他受 Anthony Braxton 的《For Alto》啟發才開始吹薩克斯風。",
+            "src": "https://en.wikipedia.org/wiki/John_Zorn",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "佐藤出身津輕三味線，1983 年起走出以家元制度為主的三味線圈子，在爵士、搖滾與自由即興的場合演出，目標是把樂器帶離家元制度的框架。",
+            "src": "https://contemporaryjapanmusic.blogspot.com/2007/06/michihiro-satoh.html",
+            "src2": "https://en.wikipedia.org/wiki/Michihiro_Sato",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "《Ganryu Island》1984 年 11 月 23 日在 Radio City Studio 錄成；AllMusic 的 Joslyn Layne 認為這場即興遠非漫無目的，三味線的節奏給了二重奏「穩定卻有彈性的架構」。",
+            "src": "https://en.wikipedia.org/wiki/Ganryu_Island_(album)",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "Penguin Guide to Jazz 給這張 3 星（滿分 4），說聽它像淘金，好東西夾在冗長的段落中，最好的曲目反而是原版沒收的；1998 年 Tzadik 發行的 CD 加了五首。",
+            "src": "https://en.wikipedia.org/wiki/Ganryu_Island_(album)",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "佐藤 1982 與 1983 年連續兩年拿下全國津輕三味線大賽冠軍，1986 年獲洛克斐勒基金會的獎助，赴紐約與自由即興樂手合作。",
+            "src": "https://en.wikipedia.org/wiki/Michihiro_Sato",
+            "src2": "https://contemporaryjapanmusic.blogspot.com/2007/06/michihiro-satoh.html",
+            "from": "new"
+          },
+          {
+            "f": "1988 年佐藤在紐約與 Bill Frisell、Fred Frith、Elliott Sharp、Steve Coleman、Christian Marclay、Ikue Mori 等人錄音，1989 年以《Rodan》發行；1992 年成立自己的樂團，1994 年改名為津輕三味線樂團。",
+            "src": "https://contemporaryjapanmusic.blogspot.com/2007/06/michihiro-satoh.html",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "John Zorn 2006 年獲麥克阿瑟基金會獎助，基金會表彰他在類型與類型之間的空隙裡創作，並以 Tzadik 廠牌與 The Stone 空間支持實驗演出。",
+            "src": "https://macfound.org/fellows/class-of-2006/john-zorn",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "維基引 Rolling Stone 的話說，Zorn 雖然幾乎完全在主流之外活動，卻逐漸成為「當代最有影響力的音樂人之一」；Zorn 1995 年創辦 Tzadik 廠牌。",
+            "src": "https://en.wikipedia.org/wiki/John_Zorn",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "none",
+        "facts": []
+      }
+    },
+    "milestones": [],
+    "conflicts": [
+      "《Ganryu Island》首發年：維基內文 1984、資訊框 1985、上線簡介 1985；不確定，facts 只寫錄音日期，不寫首發年"
+    ],
+    "searches": 6,
+    "failedFetches": 0,
+    "status": "full",
+    "notes": "身分確認：卡池《Ganryu Island》(1985)，三味線＝佐藤通弘、薩克斯風與單簧管＝John Zorn。維基預抓的 Zorn 條目照用（url 同上）。佐藤的出生地各源一致為東京（維基細到町田），facts 只寫東京。MacArthur 獎助：基金會官網為原始出處（官方單源），搜尋摘要另見 New Music USA，但未開頁；Zorn 的 NEA Jazz Master 與 Praemium Imperiale 查不到，不收。「第一位連續兩年奪冠」的宣稱僅維基單源，且未排除反例，只寫成『連續兩年冠軍』。佐藤的卒年無，推定在世。Zorn 面向多半是背景，專輯主角是佐藤與 Zorn 的二重奏，寫作層請別把整篇寫成 Zorn 生平。",
+    "pubIssues": [
+      {
+        "album": "Ganryu Island",
+        "claim": "1985 年的發行商是 Yukon",
+        "problem": "維基內文寫 Yukon 1984 年發行 LP、資訊框寫 1985，Tzadik 於 1998 年再發 CD 加五首；首發年各源不一，建議改成不寫年份或標「1984–85 年間」",
+        "src": "https://en.wikipedia.org/wiki/Ganryu_Island_(album)"
+      }
+    ]
+  },
+  {
+    "key": "karl berger",
+    "name": "Karl Berger",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Karl Berger 1935 年 3 月 30 日生於德國海德堡，十歲開始學古典鋼琴；十四歲聽到一場爵士即興後決心走自己的音樂，1950 年代在海德堡的 Cave 54 當駐場鋼琴手，向駐德美軍的樂手學現代爵士。",
+            "src": "https://en.wikipedia.org/wiki/Karl_Berger",
+            "src2": "https://artdaily.com/news/156768/Karl-Berger--88--who-opened-minds-of-generations-of-musicians--is-dead",
+            "from": "new"
+          },
+          {
+            "f": "1963 年他在柏林自由大學取得博士學位，論文研究蘇聯意識形態下的音樂，後來也在德國大學教過哲學。",
+            "src": "https://en.wikipedia.org/wiki/Karl_Berger",
+            "src2": "https://artdaily.com/news/156768/Karl-Berger--88--who-opened-minds-of-generations-of-musicians--is-dead",
+            "from": "new"
+          },
+          {
+            "f": "1960 年代中期他在巴黎加入 Don Cherry 的樂團；Cherry 1966 年邀他到紐約，他參與了自由爵士名盤《Symphony for Improvisers》，同時錄下自己的首張領銜專輯。",
+            "src": "https://en.wikipedia.org/wiki/Karl_Berger",
+            "src2": "https://artdaily.com/news/156768/Karl-Berger--88--who-opened-minds-of-generations-of-musicians--is-dead",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Berger 的顫音琴演奏瘦、線性而富旋律性，在 Down Beat 樂手與樂評票選中反覆名列顫音琴榜首。",
+            "src": "https://artdaily.com/news/156768/Karl-Berger--88--who-opened-minds-of-generations-of-musicians--is-dead",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "他的教學口頭禪是「重點不在你彈什麼，而在你怎麼彈」；他著有《The Music Mind Experience》，主張每個人生來就有豐富的音樂天分，鼓手 Billy Martin 說他的做法「無關類型」。",
+            "src": "https://artdaily.com/news/156768/Karl-Berger--88--who-opened-minds-of-generations-of-musicians--is-dead",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "1972 年 Berger 與妻子 Ingrid Sertso、Ornette Coleman 在紐約州伍德斯托克創辦 Creative Music Studio（CMS），鼓勵學生追求自己的音樂想法；顧問團包括 John Cage、Gil Evans、Buckminster Fuller 與 Willem de Kooning。",
+            "src": "https://en.wikipedia.org/wiki/Karl_Berger",
+            "src2": "https://artdaily.com/news/156768/Karl-Berger--88--who-opened-minds-of-generations-of-musicians--is-dead",
+            "from": "new"
+          },
+          {
+            "f": "Anthony Braxton、Jack DeJohnette、Cecil Taylor、Dave Holland 等人都曾到 CMS 學習或授課；經費短缺使它 1984 年縮減營運，2010 年代由 Berger 與 Sertso 復辦，2017 年 Berger 退出領導。",
+            "src": "https://artdaily.com/news/156768/Karl-Berger--88--who-opened-minds-of-generations-of-musicians--is-dead",
+            "src2": "https://en.wikipedia.org/wiki/Karl_Berger",
+            "from": "new"
+          },
+          {
+            "f": "CMS 留下五百多場演出錄音，2012 年哥倫比亞大學圖書館購下這批檔案；Berger 也替 Jeff Buckley 的《Grace》（1994）、Natalie Merchant、Angélique Kidjo 等人的專輯編弦樂。",
+            "src": "https://artdaily.com/news/156768/Karl-Berger--88--who-opened-minds-of-generations-of-musicians--is-dead",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "Berger 2023 年 4 月 9 日在紐約州奧爾巴尼的醫院因手術併發症過世，享年 88 歲。",
+            "src": "https://en.wikipedia.org/wiki/Karl_Berger",
+            "src2": "https://artdaily.com/news/156768/Karl-Berger--88--who-opened-minds-of-generations-of-musicians--is-dead",
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "none",
+        "facts": []
+      }
+    },
+    "milestones": [],
+    "conflicts": [
+      "CMS 成立年：artdaily 寫基金會 1971 年成立、1972 年移居伍德斯托克開設；維基寫 1972。facts 採 1972 並指「創辦 Creative Music Studio」，與兩源的 1972 開設一致，基金會 1971 年不收",
+      "上線簡介寫 Berger 錄首張專輯時間為 1966 年 12 月，維基只說隨團赴紐約時錄下，不衝突"
+    ],
+    "searches": 2,
+    "failedFetches": 1,
+    "status": "full",
+    "notes": "身分確認：卡池《From Now On》(1967)，ESP-Disk，德裔顫音琴手。Down Beat 票選「六次」只見於搜尋摘要（來源未開頁），不收，facts 只寫「反覆名列榜首」且為單源（artdaily 轉載 NYT 訃聞）。artdaily 內容為 NYT 訃聞轉載，與維基非獨立程度不明；訪談類具名說法單源。NYT 原文被擋（失敗 1）。pubIssues 無。",
+    "pubIssues": []
+  }
+]
