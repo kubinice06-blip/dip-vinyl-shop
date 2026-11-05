@@ -1,0 +1,6264 @@
+{
+ "_note": "從卡池移出（不再被抽到）的卡。已抽到的卡照常顯示；card_catalog、KV 不動。publish-manifest --write-pool 不會把這些加回去，verify --published 略過它們的卡池檢查。鍵規則同 scripts/pool-keys.mjs。",
+ "batches": {
+  "prune-20261105": {
+   "at": "2026-11-05",
+   "count": 1042,
+   "why": "店主：雀躍／放鬆太多，移出不重要的唱片；名單與保留見 batch-progress/prune-20261105/"
+  }
+ },
+ "entries": [
+  {
+   "key": "barrymanilow|evennow",
+   "artist": "Barry Manilow",
+   "album": "Even Now",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "lippsinc|mouthtomouth",
+   "artist": "Lipps Inc.",
+   "album": "Mouth to Mouth",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "ida|willyoufindme",
+   "artist": "Ida",
+   "album": "Will You Find Me",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "raybrown|someofmybestfriendsaresingers",
+   "artist": "Ray Brown",
+   "album": "Some of My Best Friends Are... Singers",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "thecrusaders|southerncomfort",
+   "artist": "The Crusaders",
+   "album": "Southern Comfort",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "avishaicohen|fromdarkness",
+   "artist": "Avishai Cohen",
+   "album": "From Darkness",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "ambrosia|oneeighty",
+   "artist": "Ambrosia",
+   "album": "One Eighty",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "pages|pages",
+   "artist": "Pages",
+   "album": "Pages",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "littleriverband|diamantinacocktail",
+   "artist": "Little River Band",
+   "album": "Diamantina Cocktail",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "kennyloggins|keepthefire",
+   "artist": "Kenny Loggins",
+   "album": "Keep the Fire",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "marcjordan|mannequin",
+   "artist": "Marc Jordan",
+   "album": "Mannequin",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "netsky|netsky",
+   "artist": "Netsky",
+   "album": "Netsky",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "highcontrast|highsociety",
+   "artist": "High Contrast",
+   "album": "High Society",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "holyghost|holyghost",
+   "artist": "Holy Ghost!",
+   "album": "Holy Ghost!",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "mouseonmars|autoditacker",
+   "artist": "Mouse on Mars",
+   "album": "Autoditacker",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "guyclark|colddogsoup",
+   "artist": "Guy Clark",
+   "album": "Cold Dog Soup",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "langlang|newyorkrhapsody",
+   "artist": "Lang Lang",
+   "album": "New York Rhapsody",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "rodstewart|tonightimyours",
+   "artist": "Rod Stewart",
+   "album": "Tonight I'm Yours",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "deerhunter|fadingfrontier",
+   "artist": "Deerhunter",
+   "album": "Fading Frontier",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "harryconnickjr|starturtle",
+   "artist": "Harry Connick, Jr.",
+   "album": "Star Turtle",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "chicobuarque|chicobuarqueenespañol",
+   "artist": "Chico Buarque",
+   "album": "Chico Buarque en español",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "lorettalynn|songsfrommyheart",
+   "artist": "Loretta Lynn",
+   "album": "Songs From My Heart",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "morrissey|lowinhighschool",
+   "artist": "Morrissey",
+   "album": "Low in High School",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "santana|innersecrets",
+   "artist": "Santana",
+   "album": "Inner Secrets",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "hankmobley|jazzmessage2",
+   "artist": "Hank Mobley",
+   "album": "Jazz Message #2",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "sistersledge|betchasaythattoallthegirls",
+   "artist": "Sister Sledge",
+   "album": "Bet Cha Say That to All the Girls",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "smokeyrobinson|deepinmysoul",
+   "artist": "Smokey Robinson",
+   "album": "Deep in My Soul",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "soccermommy|evergreen",
+   "artist": "Soccer Mommy",
+   "album": "Evergreen",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "seanpaul|fullfrequency",
+   "artist": "Sean Paul",
+   "album": "Full Frequency",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "poppy|poppycomputer",
+   "artist": "Poppy",
+   "album": "Poppy.Computer",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "steelpulse|africanholocaust",
+   "artist": "Steel Pulse",
+   "album": "African Holocaust",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "wesmontgomery|bumpin",
+   "artist": "Wes Montgomery",
+   "album": "Bumpin'",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "dollyparton|oncemore",
+   "artist": "Dolly Parton",
+   "album": "Once More",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "melodygardot|entreeuxdeux",
+   "artist": "Melody Gardot",
+   "album": "Entre eux deux",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "thieverycorporation|symphonik",
+   "artist": "Thievery Corporation",
+   "album": "Symphonik",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "theflowerkings|lookatyounow",
+   "artist": "The Flower Kings",
+   "album": "Look at You Now",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "jethrotull|catfishrising",
+   "artist": "Jethro Tull",
+   "album": "Catfish Rising",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "dollyparton|touchyourwoman",
+   "artist": "Dolly Parton",
+   "album": "Touch Your Woman",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "ringostarr|ringosrotogravure",
+   "artist": "Ringo Starr",
+   "album": "Ringo's Rotogravure",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "gratefuldead|builttolast",
+   "artist": "Grateful Dead",
+   "album": "Built to Last",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "steelpulse|stateofemergency",
+   "artist": "Steel Pulse",
+   "album": "State of Emergency",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "earthwindfire|touchtheworld",
+   "artist": "Earth, Wind & Fire",
+   "album": "Touch the World",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "kennyrogers|onceuponachristmas",
+   "artist": "Kenny Rogers",
+   "album": "Once Upon a Christmas",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "frankieknuckles|welcometotherealworld",
+   "artist": "Frankie Knuckles",
+   "album": "Welcome to the Real World",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "salifkeita|folonthepast",
+   "artist": "Salif Keita",
+   "album": "\"Folon\"… The Past",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "ironwine|hensteeth",
+   "artist": "Iron & Wine",
+   "album": "Hen's Teeth",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "wildnothing|lifeofpause",
+   "artist": "Wild Nothing",
+   "album": "Life of Pause",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "natkingcole|justoneofthosethings",
+   "artist": "Nat King Cole",
+   "album": "Just One of Those Things",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "johnnycash|keeponthesunnyside",
+   "artist": "Johnny Cash",
+   "album": "Keep on the Sunny Side",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "deanmartin|dinoitalianlovesongs",
+   "artist": "Dean Martin",
+   "album": "Dino: Italian Love Songs",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "theojays|superbad",
+   "artist": "The O’Jays",
+   "album": "Super Bad",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "dollyparton|joshua",
+   "artist": "Dolly Parton",
+   "album": "Joshua",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "tangerinedream|tyger",
+   "artist": "Tangerine Dream",
+   "album": "Tyger",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "tycho|infinitehealth",
+   "artist": "Tycho",
+   "album": "Infinite Health",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "leemorgan|expoobident",
+   "artist": "Lee Morgan",
+   "album": "Expoobident",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "thebyrds|fartheralong",
+   "artist": "The Byrds",
+   "album": "Farther Along",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "stereophonics|screamabovethesounds",
+   "artist": "Stereophonics",
+   "album": "Scream Above the Sounds",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "sonvolt|electromelodier",
+   "artist": "Son Volt",
+   "album": "Electro Melodier",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "deanmartin|dinolatino",
+   "artist": "Dean Martin",
+   "album": "Dino Latino",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "harryconnickjr|comebyme",
+   "artist": "Harry Connick, Jr.",
+   "album": "Come by Me",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "herbertvonkarajan|diezauberflöte",
+   "artist": "Herbert von Karajan",
+   "album": "Die Zauberflöte",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "emmylouharris|lightofthestablethechristmasalbum",
+   "artist": "Emmylou Harris",
+   "album": "Light of the Stable: The Christmas Album",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "belleandsebastian|girlsinpeacetimewanttodance",
+   "artist": "Belle and Sebastian",
+   "album": "Girls in Peacetime Want to Dance",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "dashboardconfessional|duskandsummernowisthenisnow",
+   "artist": "Dashboard Confessional",
+   "album": "Dusk and Summer (Now Is Then Is Now)",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "teddypendergrass|thischristmasidratherhavelove",
+   "artist": "Teddy Pendergrass",
+   "album": "This Christmas (I'd Rather Have Love)",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "kriskristofferson|breakaway",
+   "artist": "Kris Kristofferson",
+   "album": "Breakaway",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "alanjackson|undertheinfluence",
+   "artist": "Alan Jackson",
+   "album": "Under the Influence",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "iggypop|party",
+   "artist": "Iggy Pop",
+   "album": "Party",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "carlysimon|filmnoir",
+   "artist": "Carly Simon",
+   "album": "Film Noir",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "chic|tongueinchic",
+   "artist": "Chic",
+   "album": "Tongue in Chic",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "chicago|twenty1",
+   "artist": "Chicago",
+   "album": "Twenty 1",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "madeleinepeyroux|standingontherooftop",
+   "artist": "Madeleine Peyroux",
+   "album": "Standing on the Rooftop",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "luthervandross|busybody",
+   "artist": "Luther Vandross",
+   "album": "Busy Body",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "haroldbudd|bythedawnsearlylight",
+   "artist": "Harold Budd",
+   "album": "By the Dawn's Early Light",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "deanmartin|houston",
+   "artist": "Dean Martin",
+   "album": "Houston",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "warrenzevon|mutineer",
+   "artist": "Warren Zevon",
+   "album": "Mutineer",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "paulmccartney|rundevilrun",
+   "artist": "Paul McCartney",
+   "album": "Run Devil Run",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "georgestrait|ifyouaintlovinyouaintlivin",
+   "artist": "George Strait",
+   "album": "If You Ain't Lovin', You Ain't Livin'",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "cameo|knightsofthesoundtable",
+   "artist": "Cameo",
+   "album": "Knights of the Sound Table",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "commodores|rocksolid",
+   "artist": "Commodores",
+   "album": "Rock Solid",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "christianmcbride|afamilyaffair",
+   "artist": "Christian McBride",
+   "album": "A Family Affair",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "groovearmada|edgeofthehorizon",
+   "artist": "Groove Armada",
+   "album": "Edge of the Horizon",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "dianaross|surrender",
+   "artist": "Diana Ross",
+   "album": "Surrender",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "mikeoldfield|platinum",
+   "artist": "Mike Oldfield",
+   "album": "Platinum",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "atmosphere|southsiders",
+   "artist": "Atmosphere",
+   "album": "Southsiders",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "yanntiersen|kerbersolopiano",
+   "artist": "Yann Tiersen",
+   "album": "Kerber (Solo Piano)",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "jamesbrown|gritssoul",
+   "artist": "James Brown",
+   "album": "Grits & Soul",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "wilsonpickett|righton",
+   "artist": "Wilson Pickett",
+   "album": "Right On",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "pnk|trustfall",
+   "artist": "P!nk",
+   "album": "TRUSTFALL",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "jamestaylor|neverdieyoung",
+   "artist": "James Taylor",
+   "album": "Never Die Young",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "earthwindfire|powerlight",
+   "artist": "Earth, Wind & Fire",
+   "album": "Powerlight",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "jimmycliff|musicmaker",
+   "artist": "Jimmy Cliff",
+   "album": "Music Maker",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "sébastientellier|confection",
+   "artist": "Sébastien Tellier",
+   "album": "Confection",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "falloutboy|mania",
+   "artist": "Fall Out Boy",
+   "album": "M A N I A",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "mirandalambert|palomino",
+   "artist": "Miranda Lambert",
+   "album": "Palomino",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "commodores|hotonthetracks",
+   "artist": "Commodores",
+   "album": "Hot on the Tracks",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "sting|symphonicities",
+   "artist": "Sting",
+   "album": "Symphonicities",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "emmylouharris|cowgirlsprayer",
+   "artist": "Emmylou Harris",
+   "album": "Cowgirl's Prayer",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "littlemix|lm5",
+   "artist": "Little Mix",
+   "album": "LM5",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "glencampbell|ohhappyday",
+   "artist": "Glen Campbell",
+   "album": "Oh Happy Day",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "khatiabuniatishvili|pianoconcertosnos2023",
+   "artist": "Khatia Buniatishvili",
+   "album": "Piano Concertos nos. 20 & 23",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "cultureclub|fromluxurytoheartache",
+   "artist": "Culture Club",
+   "album": "From Luxury to Heartache",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "gladysknightthepips|allineedistime",
+   "artist": "Gladys Knight & the Pips",
+   "album": "All I Need Is Time",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "emersonlakepalmer|inthehotseat",
+   "artist": "Emerson, Lake & Palmer",
+   "album": "In the Hot Seat",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "duranduran|thankyou",
+   "artist": "Duran Duran",
+   "album": "Thank You",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "corywong|meditations",
+   "artist": "Cory Wong",
+   "album": "Meditations",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "eluvium|similes",
+   "artist": "Eluvium",
+   "album": "Similes",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "usher|cominghome",
+   "artist": "Usher",
+   "album": "COMING HOME",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "vanmorrison|aperiodoftransition",
+   "artist": "Van Morrison",
+   "album": "A Period of Transition",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "elisregina|poemadeamor",
+   "artist": "Elis Regina",
+   "album": "Poema de amor",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "meatpuppets|ratfarm",
+   "artist": "Meat Puppets",
+   "album": "Rat Farm",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "eltonjohn|jumpup",
+   "artist": "Elton John",
+   "album": "Jump Up!",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "julielondon|londonbynight",
+   "artist": "Julie London",
+   "album": "London by Night",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "dianakrall|fromthismomenton",
+   "artist": "Diana Krall",
+   "album": "From This Moment On",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "devendrabanhart|mala",
+   "artist": "Devendra Banhart",
+   "album": "Mala",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "kennyrogers|eyesthatseeinthedark",
+   "artist": "Kenny Rogers",
+   "album": "Eyes That See in the Dark",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "thedoobiebrothers|stampede",
+   "artist": "The Doobie Brothers",
+   "album": "Stampede",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "tonibraxton|libra",
+   "artist": "Toni Braxton",
+   "album": "Libra",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "thestranglers|dreamtime",
+   "artist": "The Stranglers",
+   "album": "Dreamtime",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "janetjackson|dreamstreet",
+   "artist": "Janet Jackson",
+   "album": "Dream Street",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "atmosphere|fishingblues",
+   "artist": "Atmosphere",
+   "album": "Fishing Blues",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "chicago|chicago13",
+   "artist": "Chicago",
+   "album": "Chicago 13",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "panthaduprince|thetriad",
+   "artist": "Pantha du Prince",
+   "album": "The Triad",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "thieverycorporation|saudade",
+   "artist": "Thievery Corporation",
+   "album": "Saudade",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "georgestrait|carryingyourlovewithme",
+   "artist": "George Strait",
+   "album": "Carrying Your Love With Me",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "stonetemplepilots|perdida",
+   "artist": "Stone Temple Pilots",
+   "album": "Perdida",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "natkingcole|welcometotheclub",
+   "artist": "Nat King Cole",
+   "album": "Welcome to the Club",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "ólafurarnalds|adawning",
+   "artist": "Ólafur Arnalds",
+   "album": "A Dawning",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "kennygarrett|blackhope",
+   "artist": "Kenny Garrett",
+   "album": "Black Hope",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "arethafranklin|softandbeautiful",
+   "artist": "Aretha Franklin",
+   "album": "Soft and Beautiful",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "cultureclub|dontmindifido",
+   "artist": "Culture Club",
+   "album": "Don't Mind If I Do",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "tootsthemaytals|recoup",
+   "artist": "Toots & The Maytals",
+   "album": "Recoup",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "kriskristofferson|naturalact",
+   "artist": "Kris Kristofferson",
+   "album": "Natural Act",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "osmutantes|zzyzx",
+   "artist": "Os Mutantes",
+   "album": "Zzyzx",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "luthervandross|luthervandross",
+   "artist": "Luther Vandross",
+   "album": "Luther Vandross",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "michaelbublé|totallybublé",
+   "artist": "Michael Bublé",
+   "album": "Totally Bublé",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "panthaduprince|gardengaia",
+   "artist": "Pantha du Prince",
+   "album": "Garden Gaia",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "thesupremes|dianarossthesupremessingandperformfunnygirl",
+   "artist": "The Supremes",
+   "album": "Diana Ross & The Supremes Sing and Perform \"Funny Girl\"",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "μziq|scurlage",
+   "artist": "µ-Ziq",
+   "album": "Scurlage",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "dextergordon|generation",
+   "artist": "Dexter Gordon",
+   "album": "Generation",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "johnlegend|biggerlove",
+   "artist": "John Legend",
+   "album": "Bigger Love",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "courtneybarnett|creatureofhabit",
+   "artist": "Courtney Barnett",
+   "album": "Creature of Habit",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "waylonjennings|jewels",
+   "artist": "Waylon Jennings",
+   "album": "Jewels",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "morrissey|maladjusted",
+   "artist": "Morrissey",
+   "album": "Maladjusted",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "jasonisbell|sirensoftheditch",
+   "artist": "Jason Isbell",
+   "album": "Sirens of the Ditch",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "amontobin|longstories",
+   "artist": "Amon Tobin",
+   "album": "Long Stories",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "jacopastorius|stuttgartaria",
+   "artist": "Jaco Pastorius",
+   "album": "Stuttgart Aria",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "bestcoast|theonlyplace",
+   "artist": "Best Coast",
+   "album": "The Only Place",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "meatpuppets|sewntogether",
+   "artist": "Meat Puppets",
+   "album": "Sewn Together",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "langlang|lisztmypianohero",
+   "artist": "Lang Lang",
+   "album": "Liszt: My Piano Hero",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "plaid|feormfalorx",
+   "artist": "Plaid",
+   "album": "Feorm Falorx",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "camel|thesinglefactor",
+   "artist": "Camel",
+   "album": "The Single Factor",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "morcheeba|headuphigh",
+   "artist": "Morcheeba",
+   "album": "Head Up High",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "glencampbell|thatchristmasfeeling",
+   "artist": "Glen Campbell",
+   "album": "That Christmas Feeling",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "gratefuldead|gotoheaven",
+   "artist": "Grateful Dead",
+   "album": "Go to Heaven",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "kimpetras|feedthebeast",
+   "artist": "Kim Petras",
+   "album": "Feed the Beast",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "thespinners|lovetrippin",
+   "artist": "The Spinners",
+   "album": "Love Trippin'",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "donnasummer|catswithoutclaws",
+   "artist": "Donna Summer",
+   "album": "Cats Without Claws",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "falco|datadegroove",
+   "artist": "Falco",
+   "album": "Data de Groove",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "miguelbosé|milanomadrid",
+   "artist": "Miguel Bosé",
+   "album": "Milano-Madrid",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "shaggy|midnitelover",
+   "artist": "Shaggy",
+   "album": "Midnite Lover",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "rickjames|gardenoflove",
+   "artist": "Rick James",
+   "album": "Garden of Love",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "joshuaredman|timelesstalesforchangingtimes",
+   "artist": "Joshua Redman",
+   "album": "Timeless Tales (For Changing Times)",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "shaniatwain|queenofme",
+   "artist": "Shania Twain",
+   "album": "Queen of Me",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "horacesilver|itsgottobefunky",
+   "artist": "Horace Silver",
+   "album": "It's Got to Be Funky",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "andrewbird|echolocationsriver",
+   "artist": "Andrew Bird",
+   "album": "Echolocations: River",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "yes|magnification",
+   "artist": "Yes",
+   "album": "Magnification",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "johnlegend|alegendarychristmas",
+   "artist": "John Legend",
+   "album": "A Legendary Christmas",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "paulmccartney|presstoplay",
+   "artist": "Paul McCartney",
+   "album": "Press to Play",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "curtismayfield|doitallnight",
+   "artist": "Curtis Mayfield",
+   "album": "Do It All Night",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "snarkypuppy|theworldisgettingsmaller",
+   "artist": "Snarky Puppy",
+   "album": "The World is Getting Smaller",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "fleetwoodmac|behindthemask",
+   "artist": "Fleetwood Mac",
+   "album": "Behind the Mask",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "eltonjohn|asingleman",
+   "artist": "Elton John",
+   "album": "A Single Man",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "hankmobley|tenorconclave",
+   "artist": "Hank Mobley",
+   "album": "Tenor Conclave",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "chic|chicism",
+   "artist": "Chic",
+   "album": "Chic-ism",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "lindstrøm|smalhans",
+   "artist": "Lindstrøm",
+   "album": "Smalhans",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "willienelson|myownpeculiarway",
+   "artist": "Willie Nelson",
+   "album": "My Own Peculiar Way",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "bobdylan|dylan",
+   "artist": "Bob Dylan",
+   "album": "Dylan",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "peterbjornandjohn|seasiderock",
+   "artist": "Peter Bjorn and John",
+   "album": "Seaside Rock",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "willienelson|goodtimes",
+   "artist": "Willie Nelson",
+   "album": "Good Times",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "brighteyes|achristmasalbum",
+   "artist": "Bright Eyes",
+   "album": "A Christmas Album",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "cameo|emotionalviolence",
+   "artist": "Cameo",
+   "album": "Emotional Violence",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "julielondon|aroundmidnight",
+   "artist": "Julie London",
+   "album": "Around Midnight",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "earthwindfire|electricuniverse",
+   "artist": "Earth, Wind & Fire",
+   "album": "Electric Universe",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "carlysimon|anotherpassenger",
+   "artist": "Carly Simon",
+   "album": "Another Passenger",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "jacksonbrowne|timetheconqueror",
+   "artist": "Jackson Browne",
+   "album": "Time the Conqueror",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "billwithers|boutlove",
+   "artist": "Bill Withers",
+   "album": "'Bout Love",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "neilyoung|oldways",
+   "artist": "Neil Young",
+   "album": "Old Ways",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "ringostarr|iwannabesantaclaus",
+   "artist": "Ringo Starr",
+   "album": "I Wanna Be Santa Claus",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "shaggy|christmasintheislands",
+   "artist": "Shaggy",
+   "album": "Christmas in the Islands",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "underworld|barking",
+   "artist": "Underworld",
+   "album": "Barking",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "thenewpornographers|whiteoutconditions",
+   "artist": "The New Pornographers",
+   "album": "Whiteout Conditions",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "basementjaxx|crazyitchradio",
+   "artist": "Basement Jaxx",
+   "album": "Crazy Itch Radio",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "lorettalynn|ilikeemcountry",
+   "artist": "Loretta Lynn",
+   "album": "I Like 'Em Country",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "inxs|elegantlywasted",
+   "artist": "INXS",
+   "album": "Elegantly Wasted",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "abovebeyond|sirensofthesea",
+   "artist": "Above & Beyond",
+   "album": "Sirens of the Sea",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "christinaaguilera|liberation",
+   "artist": "Christina Aguilera",
+   "album": "Liberation",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "suzanneciani|silvership",
+   "artist": "Suzanne Ciani",
+   "album": "Silver Ship",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "usher|looking4myself",
+   "artist": "Usher",
+   "album": "Looking 4 Myself",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "yiruma|nocturnallightstheyscatter",
+   "artist": "Yiruma",
+   "album": "Nocturnal Lights… They Scatter",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "majorlazer|musicistheweapon",
+   "artist": "Major Lazer",
+   "album": "Music Is the Weapon",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "morrissey|californiason",
+   "artist": "Morrissey",
+   "album": "California Son",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "paulvandyk|inbetween",
+   "artist": "Paul van Dyk",
+   "album": "In Between",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "elbow|flyingdream1",
+   "artist": "Elbow",
+   "album": "Flying Dream 1",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "yanntiersen|portrait",
+   "artist": "Yann Tiersen",
+   "album": "Portrait",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "freddiehubbard|highbluespressure",
+   "artist": "Freddie Hubbard",
+   "album": "High Blues Pressure",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "caroleking|welcomehome",
+   "artist": "Carole King",
+   "album": "Welcome Home",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "gerrymulligan|bluesroots",
+   "artist": "Gerry Mulligan",
+   "album": "Blues Roots",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "caroleking|touchthesky",
+   "artist": "Carole King",
+   "album": "Touch the Sky",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "indiaarie|christmaswithfriends",
+   "artist": "India.Arie",
+   "album": "Christmas With Friends",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "thinlizzy|nightlife",
+   "artist": "Thin Lizzy",
+   "album": "Nightlife",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "jamestaylor|walkingman",
+   "artist": "James Taylor",
+   "album": "Walking Man",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "johnnycash|hymnsfromtheheart",
+   "artist": "Johnny Cash",
+   "album": "Hymns From the Heart",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "davidguetta|guettablaster",
+   "artist": "David Guetta",
+   "album": "Guetta Blaster",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "vangelis|direct",
+   "artist": "Vangelis",
+   "album": "Direct",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "eurythmics|peace",
+   "artist": "Eurythmics",
+   "album": "Peace",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "whitneyhouston|onewishtheholidayalbum",
+   "artist": "Whitney Houston",
+   "album": "One Wish: The Holiday Album",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "blondie|thecurseofblondie",
+   "artist": "Blondie",
+   "album": "The Curse of Blondie",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "neyo|selfexplanatory",
+   "artist": "Ne-Yo",
+   "album": "Self Explanatory",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "curtismayfield|givegettakeandhave",
+   "artist": "Curtis Mayfield",
+   "album": "Give, Get, Take and Have",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "johnnycash|nowtherewasasong",
+   "artist": "Johnny Cash",
+   "album": "Now, There Was a Song!",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "eltonjohn|breakinghearts",
+   "artist": "Elton John",
+   "album": "Breaking Hearts",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "alanjackson|letitbechristmas",
+   "artist": "Alan Jackson",
+   "album": "Let It Be Christmas",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "keithurban|getcloser",
+   "artist": "Keith Urban",
+   "album": "Get Closer",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "toriamos|oceantoocean",
+   "artist": "Tori Amos",
+   "album": "Ocean to Ocean",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "larryheard|lovesarrival",
+   "artist": "Larry Heard",
+   "album": "Love's Arrival",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "abovebeyond|journeytoabgt250djmix",
+   "artist": "Above & Beyond",
+   "album": "Journey To ABGT250 (DJ Mix)",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "charlesaznavour|cestça",
+   "artist": "Charles Aznavour",
+   "album": "C'est ça",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "avishaicohen|unity",
+   "artist": "Avishai Cohen",
+   "album": "Unity",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "luthervandross|iknow",
+   "artist": "Luther Vandross",
+   "album": "I Know",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "steelydan|everythingmustgo",
+   "artist": "Steely Dan",
+   "album": "Everything Must Go",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "morcheeba|escapethechaos",
+   "artist": "Morcheeba",
+   "album": "Escape the Chaos",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "townesvanzandt|somebodyhadtowriteit",
+   "artist": "Townes Van Zandt",
+   "album": "Somebody Had to Write It",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "echothebunnymen|siberia",
+   "artist": "Echo & the Bunnymen",
+   "album": "Siberia",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "fourtet|sixteenoceans",
+   "artist": "Four Tet",
+   "album": "Sixteen Oceans",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "dashboardconfessional|altertheending",
+   "artist": "Dashboard Confessional",
+   "album": "Alter the Ending",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "common|universalmindcontrol",
+   "artist": "Common",
+   "album": "Universal Mind Control",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "isaachayes|newhorizon",
+   "artist": "Isaac Hayes",
+   "album": "New Horizon",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "charleslloyd|pathlesspath",
+   "artist": "Charles Lloyd",
+   "album": "Pathless Path",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "ringostarr|chooselove",
+   "artist": "Ringo Starr",
+   "album": "Choose Love",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "aldousharding|trainontheisland",
+   "artist": "Aldous Harding",
+   "album": "Train on the Island",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "robertglasper|letgo",
+   "artist": "Robert Glasper",
+   "album": "Let Go",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "warrenzevon|myrideshere",
+   "artist": "Warren Zevon",
+   "album": "My Ride's Here",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "dirtyprojectors|songoftheearth",
+   "artist": "Dirty Projectors",
+   "album": "Song of the Earth",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "alanjackson|highmileage",
+   "artist": "Alan Jackson",
+   "album": "High Mileage",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "aceofbase|flowers",
+   "artist": "Ace of Base",
+   "album": "Flowers",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "zedd|telos",
+   "artist": "Zedd",
+   "album": "Telos",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "dianaross|babyitsme",
+   "artist": "Diana Ross",
+   "album": "Baby It's Me",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "peterbjornandjohn|breakinpoint",
+   "artist": "Peter Bjorn and John",
+   "album": "Breakin' Point",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "paulvandyk|thisworldisours",
+   "artist": "Paul van Dyk",
+   "album": "This World Is Ours",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "bonjovi|burningbridges",
+   "artist": "Bon Jovi",
+   "album": "Burning Bridges",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "anitabaker|christmasfantasy",
+   "artist": "Anita Baker",
+   "album": "Christmas Fantasy",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "donovan|7tease",
+   "artist": "Donovan",
+   "album": "7-Tease",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "leonardcohen|dearheather",
+   "artist": "Leonard Cohen",
+   "album": "Dear Heather",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "funkadelic|bywayofthedrum",
+   "artist": "Funkadelic",
+   "album": "By Way of the Drum",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "neyo|anotherkindofchristmas",
+   "artist": "Ne-Yo",
+   "album": "Another Kind of Christmas",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "realestate|daniel",
+   "artist": "Real Estate",
+   "album": "Daniel",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "dianaross|sweptaway",
+   "artist": "Diana Ross",
+   "album": "Swept Away",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "realestate|inmind",
+   "artist": "Real Estate",
+   "album": "In Mind",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "thesupremes|merrychristmas",
+   "artist": "The Supremes",
+   "album": "Merry Christmas",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "ericclapton|behindthesun",
+   "artist": "Eric Clapton",
+   "album": "Behind the Sun",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "solange|solostar",
+   "artist": "Solange",
+   "album": "Solo Star",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "zero7|yeahghost",
+   "artist": "Zero 7",
+   "album": "Yeah Ghost",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "koolthegang|asone",
+   "artist": "Kool & the Gang",
+   "album": "As One",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "thehumanleague|romantic",
+   "artist": "The Human League",
+   "album": "Romantic?",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "ofmonstersandmen|allisloveandpaininthemouseparade",
+   "artist": "Of Monsters and Men",
+   "album": "All Is Love and Pain in the Mouse Parade",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "theband|islands",
+   "artist": "The Band",
+   "album": "Islands",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "thetemptations|inamellowmood",
+   "artist": "The Temptations",
+   "album": "In a Mellow Mood",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "ironwine|singintomymouth",
+   "artist": "Iron & Wine",
+   "album": "Sing Into My Mouth",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "aceofbase|dacapo",
+   "artist": "Ace of Base",
+   "album": "Da Capo",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "donovan|slowdownworld",
+   "artist": "Donovan",
+   "album": "Slow Down World",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "basementjaxx|scars",
+   "artist": "Basement Jaxx",
+   "album": "Scars",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "neworder|waitingforthesirenscall",
+   "artist": "New Order",
+   "album": "Waiting for the Sirens' Call",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "timmcgraw|emotionaltraffic",
+   "artist": "Tim McGraw",
+   "album": "Emotional Traffic",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "katyperry|witness",
+   "artist": "Katy Perry",
+   "album": "Witness",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "janetjackson|discipline",
+   "artist": "Janet Jackson",
+   "album": "Discipline",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "theband|highonthehog",
+   "artist": "The Band",
+   "album": "High on the Hog",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "sonnyrollins|sonnyrollinsandthebigbrass",
+   "artist": "Sonny Rollins",
+   "album": "Sonny Rollins and the Big Brass",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "aliciakeys|santababy",
+   "artist": "Alicia Keys",
+   "album": "Santa Baby",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "destinyschild|8daysofchristmas",
+   "artist": "Destiny’s Child",
+   "album": "8 Days of Christmas",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "tonybennett|alonetogether",
+   "artist": "Tony Bennett",
+   "album": "Alone Together",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "lucindawilliams|littlehoney",
+   "artist": "Lucinda Williams",
+   "album": "Little Honey",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "delasoul|aoibionix",
+   "artist": "De La Soul",
+   "album": "AOI: Bionix",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "chancetherapper|starline",
+   "artist": "Chance the Rapper",
+   "album": "Star Line",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "ericclapton|anotherticket",
+   "artist": "Eric Clapton",
+   "album": "Another Ticket",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "jarule|thelasttemptation",
+   "artist": "Ja Rule",
+   "album": "The Last Temptation",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "louisarmstrong|louisandtheangels",
+   "artist": "Louis Armstrong",
+   "album": "Louis and the Angels",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "commodores|united",
+   "artist": "Commodores",
+   "album": "United",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "jeffersonairplane|jeffersonairplane",
+   "artist": "Jefferson Airplane",
+   "album": "Jefferson Airplane",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "bobseger|iknewyouwhen",
+   "artist": "Bob Seger",
+   "album": "I Knew You When",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "carrieunderwood|mysavior",
+   "artist": "Carrie Underwood",
+   "album": "My Savior",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "deathcabforcutie|codesandkeys",
+   "artist": "Death Cab for Cutie",
+   "album": "Codes and Keys",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "norahjones|visions",
+   "artist": "Norah Jones",
+   "album": "Visions",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "tiësto|atowncalledparadise",
+   "artist": "Tiësto",
+   "album": "A Town Called Paradise",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "lucydacus|foreverisafeeling",
+   "artist": "Lucy Dacus",
+   "album": "Forever Is a Feeling",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "slythefamilystone|backontherighttrack",
+   "artist": "Sly & the Family Stone",
+   "album": "Back on the Right Track",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "kimpetras|problématique",
+   "artist": "Kim Petras",
+   "album": "Problématique",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "weatherreport|thisisthis",
+   "artist": "Weather Report",
+   "album": "This Is This",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "disclosure|energy",
+   "artist": "Disclosure",
+   "album": "ENERGY",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "slythefamilystone|heardyamissedmewellimback",
+   "artist": "Sly & the Family Stone",
+   "album": "Heard Ya Missed Me, Well I'm Back",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "brandy|christmaswithbrandy",
+   "artist": "Brandy",
+   "album": "Christmas With Brandy",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "underworld|barbarabarbarawefaceashiningfuture",
+   "artist": "Underworld",
+   "album": "Barbara Barbara, we face a shining future",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "kygo|kidsinlove",
+   "artist": "Kygo",
+   "album": "Kids in Love",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "indiaarie|worthy",
+   "artist": "India.Arie",
+   "album": "Worthy",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "louiscole|album2",
+   "artist": "Louis Cole",
+   "album": "Album 2",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "sanholo|album1",
+   "artist": "San Holo",
+   "album": "album1",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "monica|codered",
+   "artist": "Monica",
+   "album": "Code Red",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "franzferdinand|alwaysascending",
+   "artist": "Franz Ferdinand",
+   "album": "Always Ascending",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "efterklang|thingswehaveincommon",
+   "artist": "Efterklang",
+   "album": "Things We Have in Common",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "britneyspears|glory",
+   "artist": "Britney Spears",
+   "album": "Glory",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "thedoors|othervoices",
+   "artist": "The Doors",
+   "album": "Other Voices",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "echothebunnymen|thefountain",
+   "artist": "Echo & the Bunnymen",
+   "album": "The Fountain",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "gorgoncity|olympia",
+   "artist": "Gorgon City",
+   "album": "Olympia",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "blocparty|hymns",
+   "artist": "Bloc Party",
+   "album": "Hymns",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "roxette|charmschool",
+   "artist": "Roxette",
+   "album": "Charm School",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "steviewonder|stevieatthebeach",
+   "artist": "Stevie Wonder",
+   "album": "Stevie at the Beach",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "kygo|thrillofthechase",
+   "artist": "Kygo",
+   "album": "Thrill of the Chase",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "nelly|heartland",
+   "artist": "Nelly",
+   "album": "Heartland",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "blondie|panicofgirls",
+   "artist": "Blondie",
+   "album": "Panic of Girls",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "roxette|travelling",
+   "artist": "Roxette",
+   "album": "Travelling",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "thechainsmokers|summertimefriends",
+   "artist": "The Chainsmokers",
+   "album": "Summertime Friends",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "madeon|victory",
+   "artist": "Madeon",
+   "album": "Victory",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "martingarrix|sentio",
+   "artist": "Martin Garrix",
+   "album": "Sentio",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "roxymusic|fleshblood",
+   "artist": "Roxy Music",
+   "album": "Flesh + Blood",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "mastersatwork|thealbum",
+   "artist": "Masters at Work",
+   "album": "The Album",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "timbaland|shockvalueii",
+   "artist": "Timbaland",
+   "album": "Shock Value II",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "snarkypuppy|theonlyconstant",
+   "artist": "Snarky Puppy",
+   "album": "The Only Constant",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "aqua|aquarius",
+   "artist": "Aqua",
+   "album": "Aquarius",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "beachfossils|theothersideoflifepianoballads",
+   "artist": "Beach Fossils",
+   "album": "The Other Side of Life: Piano Ballads",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "diplo|diplo",
+   "artist": "Diplo",
+   "album": "Diplo",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "marshmello|joytime",
+   "artist": "Marshmello",
+   "album": "Joytime",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "kaceymusgraves|averykaceychristmas",
+   "artist": "Kacey Musgraves",
+   "album": "A Very Kacey Christmas",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "indiaarie|songversation",
+   "artist": "India.Arie",
+   "album": "SongVersation",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "louiscole|louiscole",
+   "artist": "Louis Cole",
+   "album": "Louis Cole",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "dukedumont|duality",
+   "artist": "Duke Dumont",
+   "album": "Duality",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "alisonkrauss|iknowwhoholdstomorrow",
+   "artist": "Alison Krauss",
+   "album": "I Know Who Holds Tomorrow",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "joségonzález|againstthedyingofthelight",
+   "artist": "José González",
+   "album": "Against the Dying of the Light",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "brandy|twoeleven",
+   "artist": "Brandy",
+   "album": "Two Eleven",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "georgeharrison|extratexturereadallaboutit",
+   "artist": "George Harrison",
+   "album": "Extra Texture (Read All About It)",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "alisonkrauss|windycity",
+   "artist": "Alison Krauss",
+   "album": "Windy City",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "kaytranada|aintnodamnway",
+   "artist": "KAYTRANADA",
+   "album": "AIN'T NO DAMN WAY!",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "sabrinacarpenter|singularactii",
+   "artist": "Sabrina Carpenter",
+   "album": "Singular: Act II",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "supershy|happymusic",
+   "artist": "Supershy",
+   "album": "Happy Music",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "billwithers|watchingyouwatchingme",
+   "artist": "Bill Withers",
+   "album": "Watching You Watching Me",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "seujorge|anaejorge",
+   "artist": "Seu Jorge",
+   "album": "Ana E Jorge",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "sturgillsimpson|passagedudesir",
+   "artist": "Sturgill Simpson",
+   "album": "Passage du Desir",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "nodoubt|pushandshove",
+   "artist": "No Doubt",
+   "album": "Push and Shove",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "gorgoncity|reverie",
+   "artist": "Gorgon City",
+   "album": "Reverie",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "tearsforfears|raoulandthekingsofspain",
+   "artist": "Tears for Fears",
+   "album": "Raoul and The Kings of Spain",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "tatemcrae|theonedaylp",
+   "artist": "Tate McRae",
+   "album": "The One Day LP",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "faithhill|joytotheworld",
+   "artist": "Faith Hill",
+   "album": "Joy to the World",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "samsmith|hazeleyes",
+   "artist": "Sam Smith",
+   "album": "Hazel Eyes",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "buenavistasocialclub|carnegie25",
+   "artist": "Buena Vista Social Club",
+   "album": "Carnegie 25",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "paulmccartney|standingstone",
+   "artist": "Paul McCartney",
+   "album": "Standing Stone",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "wildnothing|hold",
+   "artist": "Wild Nothing",
+   "album": "Hold",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "bandofhorses|whyareyouok",
+   "artist": "Band of Horses",
+   "album": "Why Are You OK",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "monica|themakingsofme",
+   "artist": "Monica",
+   "album": "The Makings of Me",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "thedoobiebrothers|siblingrivalry",
+   "artist": "The Doobie Brothers",
+   "album": "Sibling Rivalry",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "skrillex|dontgettooclose",
+   "artist": "Skrillex",
+   "album": "Don't Get Too Close",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "electriclightorchestra|aloneintheuniverse",
+   "artist": "Electric Light Orchestra",
+   "album": "Alone in the Universe",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "sérgiomendes|thebeatofbrazil",
+   "artist": "Sérgio Mendes",
+   "album": "The Beat of Brazil",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "sondrelerche|patience",
+   "artist": "Sondre Lerche",
+   "album": "Patience",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "kimpetras|detour",
+   "artist": "Kim Petras",
+   "album": "Detour",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "common|abeautifulrevolutionpt1",
+   "artist": "Common",
+   "album": "A Beautiful Revolution, Pt. 1",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "fabriziodeandré|sognono1",
+   "artist": "Fabrizio De André",
+   "album": "Sogno nº 1",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "andrewbird|these13",
+   "artist": "Andrew Bird",
+   "album": "These 13",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "redhotchilipeppers|returnofthedreamcanteen",
+   "artist": "Red Hot Chili Peppers",
+   "album": "Return of the Dream Canteen",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "manicstreetpreachers|criticalthinking",
+   "artist": "Manic Street Preachers",
+   "album": "Critical Thinking",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "chrisbrown|brown",
+   "artist": "Chris Brown",
+   "album": "BROWN",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "thewho|facedances",
+   "artist": "The Who",
+   "album": "Face Dances",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "electriclightorchestra|fromoutofnowhere",
+   "artist": "Electric Light Orchestra",
+   "album": "From out of Nowhere",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "arminvanbuuren|feelagainpart2",
+   "artist": "Armin van Buuren",
+   "album": "Feel Again, part 2",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "rjd2|stsxrjd2",
+   "artist": "RJD2",
+   "album": "STS x RJD2",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "thenewpornographers|inthemorsecodeofbrakelights",
+   "artist": "The New Pornographers",
+   "album": "In the Morse Code of Brake Lights",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "arminvanbuuren|feelagainpart1",
+   "artist": "Armin van Buuren",
+   "album": "Feel Again, Part 1",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "franksinatra|franklysentimental",
+   "artist": "Frank Sinatra",
+   "album": "Frankly Sentimental",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "ryanadams|ryanadams",
+   "artist": "Ryan Adams",
+   "album": "Ryan Adams",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "tompettyandtheheartbreakers|echo",
+   "artist": "Tom Petty and the Heartbreakers",
+   "album": "Echo",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "thestreets|computersandblues",
+   "artist": "The Streets",
+   "album": "Computers and Blues",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "tonybennett|becauseofyou",
+   "artist": "Tony Bennett",
+   "album": "Because of You",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "chrisbrown|fame",
+   "artist": "Chris Brown",
+   "album": "F.A.M.E.",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "christinaaguilera|lotus",
+   "artist": "Christina Aguilera",
+   "album": "Lotus",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "justintimberlake|the2020experience2of2",
+   "artist": "Justin Timberlake",
+   "album": "The 20/20 Experience (2 of 2)",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "thelibertines|anthemsfordoomedyouth",
+   "artist": "The Libertines",
+   "album": "Anthems for Doomed Youth",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "common|abeautifulrevolutionpt12",
+   "artist": "Common",
+   "album": "A Beautiful Revolution Pt. 1 & 2",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "seanpaul|madlovetheprequel",
+   "artist": "Sean Paul",
+   "album": "Mad Love: The Prequel",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "jorjasmith|fallingorflying",
+   "artist": "Jorja Smith",
+   "album": "falling or flying",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "tylerchilders|snipehunter",
+   "artist": "Tyler Childers",
+   "album": "Snipe Hunter",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "jasonisbell|foxesinthesnow",
+   "artist": "Jason Isbell",
+   "album": "Foxes in the Snow",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "aqua|megalomania",
+   "artist": "Aqua",
+   "album": "Megalomania",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "aurora|infectionsofadifferentkindstep1",
+   "artist": "AURORA",
+   "album": "Infections of a Different Kind: Step 1",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "disclosure|alchemy",
+   "artist": "Disclosure",
+   "album": "Alchemy",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "richiebeirachtrio|whatisthisthingcalledlove",
+   "artist": "Richie Beirach Trio",
+   "album": "What Is This Thing Called Love?",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "haroldmabern|misty",
+   "artist": "Harold Mabern",
+   "album": "Misty",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "billcharlaptrio|swonderful",
+   "artist": "Bill Charlap Trio",
+   "album": "'S Wonderful",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "horaceparlan|arrival",
+   "artist": "Horace Parlan",
+   "album": "Arrival",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "bluelabbeats|xover",
+   "artist": "Blue Lab Beats",
+   "album": "Xover",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "bluelabbeats|motherlandjourney",
+   "artist": "Blue Lab Beats",
+   "album": "Motherland Journey",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "alanbroadbent|roundmidnight",
+   "artist": "Alan Broadbent",
+   "album": "'Round Midnight",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "kennybarron|whatif",
+   "artist": "Kenny Barron",
+   "album": "What If?",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "kennybarron|scratch",
+   "artist": "Kenny Barron",
+   "album": "Scratch",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "chetbaker|peace",
+   "artist": "Chet Baker",
+   "album": "Peace",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "tommyflanagan|letsplaythemusicofthadjones",
+   "artist": "Tommy Flanagan",
+   "album": "Let's Play the Music of Thad Jones",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "mccoytyner|rememberingjohn",
+   "artist": "McCoy Tyner",
+   "album": "Remembering John",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "donellis|soaring",
+   "artist": "Don Ellis",
+   "album": "Soaring",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "donellis|haiku",
+   "artist": "Don Ellis",
+   "album": "Haiku",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "alphonsemouzon|virtue",
+   "artist": "Alphonse Mouzon",
+   "album": "Virtue",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "marianmcpartland|interplay",
+   "artist": "Marian McPartland",
+   "album": "Interplay",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "georgeduke|mysoulthecompletempsfusionrecordings",
+   "artist": "George Duke",
+   "album": "My Soul - The Complete MPS Fusion Recordings",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "petshopboys|electric",
+   "artist": "Pet Shop Boys",
+   "album": "Electric",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "orchestralmanoeuvresinthedark|universal",
+   "artist": "Orchestral Manoeuvres in the Dark",
+   "album": "Universal",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "yello|baby",
+   "artist": "Yello",
+   "album": "Baby",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "mrfingers|cerebralhemispheres",
+   "artist": "Mr. Fingers",
+   "album": "Cerebral Hemispheres",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "innercity|praise",
+   "artist": "Inner City",
+   "album": "Praise",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "rontrent|liftoff",
+   "artist": "Ron Trent",
+   "album": "Lift Off",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "mrfingers|leevurmynd",
+   "artist": "Mr. Fingers",
+   "album": "Leev Ur Mynd",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "larryheard|icecastles",
+   "artist": "Larry Heard",
+   "album": "Ice Castles",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "suzanneciani|turning",
+   "artist": "Suzanne Ciani",
+   "album": "Turning",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "plaid|polymer",
+   "artist": "Plaid",
+   "album": "Polymer",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "oval|o",
+   "artist": "Oval",
+   "album": "O",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "janjelinek|tierbeobachtungen",
+   "artist": "Jan Jelinek",
+   "album": "Tierbeobachtungen",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "oval|wohnton",
+   "artist": "Oval",
+   "album": "Wohnton",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "oval|popp",
+   "artist": "Oval",
+   "album": "Popp",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "kenishii|sunriser",
+   "artist": "Ken Ishii",
+   "album": "Sunriser",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "電気グルーヴ|20",
+   "artist": "電気グルーヴ",
+   "album": "20",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "plaid|thediggingremedy",
+   "artist": "Plaid",
+   "album": "The Digging Remedy",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "plaid|spokes",
+   "artist": "Plaid",
+   "album": "Spokes",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "plaid|reachyprints",
+   "artist": "Plaid",
+   "album": "Reachy Prints",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "suzanneciani|dreamsuite",
+   "artist": "Suzanne Ciani",
+   "album": "Dream Suite",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "panthaduprince|conferenceoftrees",
+   "artist": "Pantha du Prince",
+   "album": "Conference of Trees",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "suzanneciani|pianissimoii",
+   "artist": "Suzanne Ciani",
+   "album": "Pianissimo II",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "glennunderground|atmosfear",
+   "artist": "Glenn Underground",
+   "album": "Atmosfear",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "cassius|aurêve",
+   "artist": "Cassius",
+   "album": "Au rêve",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "guy|thefuture",
+   "artist": "Guy",
+   "album": "The Future",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "112|partiii",
+   "artist": "112",
+   "album": "Part III",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "total|kimakeishapam",
+   "artist": "Total",
+   "album": "Kima, Keisha & Pam",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "swv|releasesometension",
+   "artist": "SWV",
+   "album": "Release Some Tension",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "faithevans|keepthefaith",
+   "artist": "Faith Evans",
+   "album": "Keep the Faith",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "faithevans|thefirstlady",
+   "artist": "Faith Evans",
+   "album": "The First Lady",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "ralphtresvant|ralphtresvant",
+   "artist": "Ralph Tresvant",
+   "album": "Ralph Tresvant",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "johnnygill|johnnygill",
+   "artist": "Johnny Gill",
+   "album": "Johnny Gill",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "johnnygill|provocative",
+   "artist": "Johnny Gill",
+   "album": "Provocative",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "albsure|privatetimesandthewhole9",
+   "artist": "Al B. Sure!",
+   "album": "Private Times... And the Whole 9!",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "fathermc|fathersday",
+   "artist": "Father MC",
+   "album": "Father's Day",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "troop|attitude",
+   "artist": "Troop",
+   "album": "Attitude",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "troop|troop",
+   "artist": "Troop",
+   "album": "Troop",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "christopherwilliams|changes",
+   "artist": "Christopher Williams",
+   "album": "Changes",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "hifive|hifive",
+   "artist": "Hi-Five",
+   "album": "Hi-Five",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "today|thenewformula",
+   "artist": "Today",
+   "album": "The New Formula",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "ashanti|concreterose",
+   "artist": "Ashanti",
+   "album": "Concrete Rose",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "amerie|becauseiloveit",
+   "artist": "Amerie",
+   "album": "Because I Love It",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "ciara|basicinstinct",
+   "artist": "Ciara",
+   "album": "Basic Instinct",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "mario|go",
+   "artist": "Mario",
+   "album": "Go",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "omarion|21",
+   "artist": "Omarion",
+   "album": "21",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "bobbyv|bobbyvalentino",
+   "artist": "Bobby V.",
+   "album": "Bobby Valentino",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "bobbyv|specialoccasion",
+   "artist": "Bobby V.",
+   "album": "Special Occasion",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "marqueshouston|mh",
+   "artist": "Marques Houston",
+   "album": "MH",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "prettyricky|latenightspecial",
+   "artist": "Pretty Ricky",
+   "album": "Late Night Special",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "mýa|moodring",
+   "artist": "Mýa",
+   "album": "Moodring",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "lloyd|southside",
+   "artist": "Lloyd",
+   "album": "Southside",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "lloyd|lessonsinlove",
+   "artist": "Lloyd",
+   "album": "Lessons in Love",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "jaggededge|jaggedlittlethrill",
+   "artist": "Jagged Edge",
+   "album": "Jagged Little Thrill",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "jaggededge|hard",
+   "artist": "Jagged Edge",
+   "album": "Hard",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "b2k|pandemonium",
+   "artist": "B2K",
+   "album": "Pandemonium",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "treysongz|igottamakeit",
+   "artist": "Trey Songz",
+   "album": "I Gotta Make It",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "treysongz|treyday",
+   "artist": "Trey Songz",
+   "album": "Trey Day",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "treysongz|ready",
+   "artist": "Trey Songz",
+   "album": "Ready",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "bigdaddykane|tasteofchocolate",
+   "artist": "Big Daddy Kane",
+   "album": "Taste of Chocolate",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "bigdaddykane|princeofdarkness",
+   "artist": "Big Daddy Kane",
+   "album": "Prince of Darkness",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "nicesmooth|jewelofthenile",
+   "artist": "Nice & Smooth",
+   "album": "Jewel of the Nile",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "fieldmob|613ashytoclassy",
+   "artist": "Field Mob",
+   "album": "613: Ashy to Classy",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "fieldmob|lightpolesandpinetrees",
+   "artist": "Field Mob",
+   "album": "Light Poles and Pine Trees",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "jurassic5|feedback",
+   "artist": "Jurassic 5",
+   "album": "Feedback",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "littlebrother|getback",
+   "artist": "Little Brother",
+   "album": "Getback",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "littlebrother|maythelordwatch",
+   "artist": "Little Brother",
+   "album": "May the Lord Watch",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "damuthefudgemunk|sparetime",
+   "artist": "Damu the Fudgemunk",
+   "album": "Spare Time",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "towerofpower|top",
+   "artist": "Tower of Power",
+   "album": "T.O.P.",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "towerofpower|souledout",
+   "artist": "Tower of Power",
+   "album": "Souled Out",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "koolthegang|intheheart",
+   "artist": "Kool & the Gang",
+   "album": "In the Heart",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "jamesbrown|sexmachinetoday",
+   "artist": "James Brown",
+   "album": "Sex Machine Today",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "themeters|newdirections",
+   "artist": "The Meters",
+   "album": "New Directions",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "towerofpower|greatamericansoulbook",
+   "artist": "Tower of Power",
+   "album": "Great American Soulbook",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "rickjames|coldblooded",
+   "artist": "Rick James",
+   "album": "Cold Blooded",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "towerofpower|soulsideoftown",
+   "artist": "Tower of Power",
+   "album": "Soul Side of Town",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "jamesbrown|getupoffathatthing",
+   "artist": "James Brown",
+   "album": "Get Up Offa That Thing",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "towerofpower|stepup",
+   "artist": "Tower of Power",
+   "album": "Step Up",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "cameo|machismo",
+   "artist": "Cameo",
+   "album": "Machismo",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "btexpress|functionatthejunction",
+   "artist": "B.T. Express",
+   "album": "Function At The Junction",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "bootsycollins|whatsbootsydoin",
+   "artist": "Bootsy Collins",
+   "album": "What's Bootsy Doin'?",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "oneway|onewayfeaturingalhudson",
+   "artist": "One Way",
+   "album": "One Way featuring Al Hudson",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "jamesbrown|hot",
+   "artist": "James Brown",
+   "album": "Hot",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "confunkshun|fever",
+   "artist": "Con Funk Shun",
+   "album": "Fever",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "brassconstruction|brassconstruction5",
+   "artist": "Brass Construction",
+   "album": "Brass Construction 5",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "grahamcentralstation|myradiosuresoundsgoodtome",
+   "artist": "Graham Central Station",
+   "album": "My Radio Sure Sounds Good to Me",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "confunkshun|confunkshun",
+   "artist": "Con Funk Shun",
+   "album": "Con Funk Shun",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "confunkshun|7",
+   "artist": "Con Funk Shun",
+   "album": "7",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "koolthegang|sweat",
+   "artist": "Kool & the Gang",
+   "album": "Sweat",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "kleeer|getready",
+   "artist": "Kleeer",
+   "album": "Get Ready",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "towerofpower|power",
+   "artist": "Tower of Power",
+   "album": "Power",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "jamesbrown|people",
+   "artist": "James Brown",
+   "album": "People",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "cameo|style",
+   "artist": "Cameo",
+   "album": "Style",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "fredwesley|sayblowbyblowbackwards",
+   "artist": "Fred Wesley",
+   "album": "Say Blow by Blow Backwards",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "thegapband|gapbandvjammin",
+   "artist": "The Gap Band",
+   "album": "Gap Band V: Jammin’",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "jamesbrown|imreal",
+   "artist": "James Brown",
+   "album": "I’m Real",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "towerofpower|aintnothinstoppinusnow",
+   "artist": "Tower of Power",
+   "album": "Ain’t Nothin’ Stoppin’ Us Now",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "commodores|inthepocket",
+   "artist": "Commodores",
+   "album": "In the Pocket",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "mtume|youmeandhe",
+   "artist": "Mtume",
+   "album": "You, Me and He",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "thesosband|sandsoftime",
+   "artist": "The S.O.S. Band",
+   "album": "Sands of Time",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "fatback|withlove",
+   "artist": "Fatback",
+   "album": "With Love",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "maceoparker|madebymaceo",
+   "artist": "Maceo Parker",
+   "album": "Made By Maceo",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "towerofpower|rhythmbusiness",
+   "artist": "Tower of Power",
+   "album": "Rhythm & Business",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "ohioplayers|angel",
+   "artist": "Ohio Players",
+   "album": "Angel",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "maceoparker|dialmaceo",
+   "artist": "Maceo Parker",
+   "album": "Dial: MACEO",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "towerofpower|monsteronaleash",
+   "artist": "Tower of Power",
+   "album": "Monster on a Leash",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "fredwesley|houseparty",
+   "artist": "Fred Wesley",
+   "album": "House Party",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "lakeside|yourwishismycommand",
+   "artist": "Lakeside",
+   "album": "Your Wish Is My Command",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "maceoparker|funkoverload",
+   "artist": "Maceo Parker",
+   "album": "Funkoverload",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "midnightstar|planetaryinvasion",
+   "artist": "Midnight Star",
+   "album": "Planetary Invasion",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "btexpress|keepitup",
+   "artist": "B.T. Express",
+   "album": "Keep It Up",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "mtume|kissthisworldgoodbye",
+   "artist": "Mtume",
+   "album": "Kiss This World Goodbye",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "confunkshun|spiritoflove",
+   "artist": "Con Funk Shun",
+   "album": "Spirit of Love",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "kleeer|ilovetodance",
+   "artist": "Kleeer",
+   "album": "I Love to Dance",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "zapp|zappiii",
+   "artist": "Zapp",
+   "album": "Zapp III",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "maceoparker|southernexposure",
+   "artist": "Maceo Parker",
+   "album": "Southern Exposure",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "aurra|alittlelove",
+   "artist": "Aurra",
+   "album": "A Little Love",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "midnightstar|midnightstar",
+   "artist": "Midnight Star",
+   "album": "Midnight Star",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "maze|backtobasics",
+   "artist": "Maze",
+   "album": "Back to Basics",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "jamesbrown|bodyheat",
+   "artist": "James Brown",
+   "album": "Bodyheat",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "theisleybrothers|soulontherocks",
+   "artist": "The Isley Brothers",
+   "album": "Soul on the Rocks",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "robertaflack|robertaflack",
+   "artist": "Roberta Flack",
+   "album": "Roberta Flack",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "mfsb|mfsbthegamblehufforchestra",
+   "artist": "MFSB",
+   "album": "MFSB, The Gamble-Huff Orchestra",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "smokeyrobinsonthemiracles|awayweagogo",
+   "artist": "Smokey Robinson & the Miracles",
+   "album": "Away We a Go-Go",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "patricerushen|now",
+   "artist": "Patrice Rushen",
+   "album": "Now",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "minnieriperton|minnie",
+   "artist": "Minnie Riperton",
+   "album": "Minnie",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "marvingayetammiterrell|easy",
+   "artist": "Marvin Gaye & Tammi Terrell",
+   "album": "Easy",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "thewhispers|imagination",
+   "artist": "The Whispers",
+   "album": "Imagination",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "bettywright|motherwit",
+   "artist": "Betty Wright",
+   "album": "Mother Wit",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "randycrawfordjoesample|feelinggood",
+   "artist": "Randy Crawford & Joe Sample",
+   "album": "Feeling Good",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "billypaul|onlythestrongsurvive",
+   "artist": "Billy Paul",
+   "album": "Only The Strong Survive",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "fourtops|ontop",
+   "artist": "Four Tops",
+   "album": "On Top",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "thedelfonics|alivekicking",
+   "artist": "The Delfonics",
+   "album": "Alive & Kicking",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "mfsb|summertime",
+   "artist": "MFSB",
+   "album": "Summertime",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "otisclay|truthis",
+   "artist": "Otis Clay",
+   "album": "Truth Is",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "thewhispers|sogood",
+   "artist": "The Whispers",
+   "album": "So Good",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "syljohnson|msfinebrownframe",
+   "artist": "Syl Johnson",
+   "album": "Ms. Fine Brown Frame",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "randycrawford|everythingmustchange",
+   "artist": "Randy Crawford",
+   "album": "Everything Must Change",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "thespinners|theoriginalspinners",
+   "artist": "The Spinners",
+   "album": "The Original Spinners",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "algreen|soulsurvivor",
+   "artist": "Al Green",
+   "album": "Soul Survivor",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "otisclay|thegospeltruth",
+   "artist": "Otis Clay",
+   "album": "The Gospel Truth",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "dianaross|ross",
+   "artist": "Diana Ross",
+   "album": "Ross",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "thetemptations|temptations60",
+   "artist": "The Temptations",
+   "album": "Temptations 60",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "arethafranklin|thetenderthemovingtheswingingarethafranklin",
+   "artist": "Aretha Franklin",
+   "album": "The Tender, the Moving, the Swinging Aretha Franklin",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "thetemptations|reflections",
+   "artist": "The Temptations",
+   "album": "Reflections",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "theemotions|sunbeam",
+   "artist": "The Emotions",
+   "album": "Sunbeam",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "theimpressions|firstimpressions",
+   "artist": "The Impressions",
+   "album": "First Impressions",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "thestylistics|fabulous",
+   "artist": "The Stylistics",
+   "album": "Fabulous",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "thespinners|yesterdaytodaytomorrow",
+   "artist": "The Spinners",
+   "album": "Yesterday, Today & Tomorrow",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "thestaplesingers|thislittlelight",
+   "artist": "The Staple Singers",
+   "album": "This Little Light",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "bluemagic|magic",
+   "artist": "Blue Magic",
+   "album": "Magic #",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "themoments|mything",
+   "artist": "The Moments",
+   "album": "My Thing",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "solomonburke|achangeisgonnacome",
+   "artist": "Solomon Burke",
+   "album": "A Change Is Gonna Come",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "patricerushen|signature",
+   "artist": "Patrice Rushen",
+   "album": "Signature",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "thestaplesingers|turningpoint",
+   "artist": "The Staple Singers",
+   "album": "Turning Point",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "mfsb|philadelphiafreedom",
+   "artist": "MFSB",
+   "album": "Philadelphia Freedom",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "algreen|preciouslord",
+   "artist": "Al Green",
+   "album": "Precious Lord",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "patricerushen|watchout",
+   "artist": "Patrice Rushen",
+   "album": "Watch Out!",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "thestaplesingers|thestaplesingers",
+   "artist": "The Staple Singers",
+   "album": "The Staple Singers",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "irmathomas|thestoryofmylife",
+   "artist": "Irma Thomas",
+   "album": "The Story of My Life",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "thespinners|8",
+   "artist": "The Spinners",
+   "album": "8",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "bookertthemgs|thebookertset",
+   "artist": "Booker T. & the MG’s",
+   "album": "The Booker T. Set",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "curtismayfield|takeittothestreets",
+   "artist": "Curtis Mayfield",
+   "album": "Take It to the Streets",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "candistaton|houseoflove",
+   "artist": "Candi Staton",
+   "album": "House of Love",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "shirleybrown|fortherealfeeling",
+   "artist": "Shirley Brown",
+   "album": "For the Real Feeling",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "irmathomas|thewayifeel",
+   "artist": "Irma Thomas",
+   "album": "The Way I Feel",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "fourtops|keeperofthecastle",
+   "artist": "Four Tops",
+   "album": "Keeper of the Castle",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "thespinners|grandslam",
+   "artist": "The Spinners",
+   "album": "Grand Slam",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "williehutch|midnightdancer",
+   "artist": "Willie Hutch",
+   "album": "Midnight Dancer",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "irmathomas|truebeliever",
+   "artist": "Irma Thomas",
+   "album": "True Believer",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "bookertthemgs|uptight",
+   "artist": "Booker T. & the MG’s",
+   "album": "Uptight",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "thestaplesingers|thisland",
+   "artist": "The Staple Singers",
+   "album": "This Land",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "theojays|backontop",
+   "artist": "The O’Jays",
+   "album": "Back On Top",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "bettywright|sevens",
+   "artist": "Betty Wright",
+   "album": "Sevens",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "leroyhutson|paradise",
+   "artist": "Leroy Hutson",
+   "album": "Paradise",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "thestylistics|youarebeautiful",
+   "artist": "The Stylistics",
+   "album": "You Are Beautiful",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "bettywright|bettywright",
+   "artist": "Betty Wright",
+   "album": "Betty Wright",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "theemotions|sincerely",
+   "artist": "The Emotions",
+   "album": "Sincerely",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "milliejackson|lovinglyyours",
+   "artist": "Millie Jackson",
+   "album": "Lovingly Yours",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "candistaton|unstoppable",
+   "artist": "Candi Staton",
+   "album": "Unstoppable",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "thestaplesingers|whattheworldneedsnowislove",
+   "artist": "The Staple Singers",
+   "album": "What the World Needs Now Is Love",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "stephaniemills|stephanie",
+   "artist": "Stephanie Mills",
+   "album": "Stephanie",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "thewhispers|foryourearsonly",
+   "artist": "The Whispers",
+   "album": "For Your Ears Only",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "nevillemarriner|handelwatermusic",
+   "artist": "Neville Marriner",
+   "album": "Handel: Water Music",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "ilgiardinoarmonico|vivaldiconcertiperflauto",
+   "artist": "Il Giardino Armonico",
+   "album": "Vivaldi: Concerti per flauto",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "christopherhogwood|handelmusicfortheroyalfireworks",
+   "artist": "Christopher Hogwood",
+   "album": "Handel: Music for the Royal Fireworks",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "imusici|corelliconcertigrossiop6",
+   "artist": "I Musici",
+   "album": "Corelli: Concerti Grossi op. 6",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "claudioabbado|pergolesistabatmater",
+   "artist": "Claudio Abbado",
+   "album": "Pergolesi: Stabat Mater",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "herbertvonkarajan|albinoniadagiopachelbelcanon",
+   "artist": "Herbert von Karajan",
+   "album": "Albinoni: Adagio / Pachelbel: Canon",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "emmakirkby|ariasformrsarne",
+   "artist": "Emma Kirkby",
+   "album": "Arias for Mrs Arne",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "thesixteen|handelcoronationanthems",
+   "artist": "The Sixteen",
+   "album": "Handel: Coronation Anthems",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "stileantico|songofsongs",
+   "artist": "Stile Antico",
+   "album": "Song of Songs",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "karlmünchinger|bachorchestralsuites",
+   "artist": "Karl Münchinger",
+   "album": "Bach: Orchestral Suites",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "colindavis|mozartdiezauberflöte",
+   "artist": "Colin Davis",
+   "album": "Mozart: Die Zauberflöte",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "rudolfserkin|mozartpianoconcertono27",
+   "artist": "Rudolf Serkin",
+   "album": "Mozart: Piano Concerto no. 27",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "quatuormosaïques|mozartquatuorsdédiésàhaydnk387k421",
+   "artist": "Quatuor Mosaïques",
+   "album": "Mozart: Quatuors dédiés à Haydn, K. 387 & K. 421",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "christopherhogwood|haydnsymphoniesaam",
+   "artist": "Christopher Hogwood",
+   "album": "Haydn: Symphonies (AAM)",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "fransbrüggen|haydnsymphonies8688",
+   "artist": "Frans Brüggen",
+   "album": "Haydn: Symphonies 86 & 88",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "rudolfserkin|beethovenpianoconcertono5emperor",
+   "artist": "Rudolf Serkin",
+   "album": "Beethoven: Piano Concerto no. 5 Emperor",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "annesophiemutter|carmenfantasie",
+   "artist": "Anne-Sophie Mutter",
+   "album": "Carmen-Fantasie",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "evgenykissin|thechopincollection",
+   "artist": "Evgeny Kissin",
+   "album": "The Chopin Collection",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "isaacstern|prokofievviolinconcertos",
+   "artist": "Isaac Stern",
+   "album": "Prokofiev: Violin Concertos",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "narcisoyepes|spanishguitarmusic",
+   "artist": "Narciso Yepes",
+   "album": "Spanish Guitar Music",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "herbertvonkarajan|griegpeergyntsuites",
+   "artist": "Herbert von Karajan",
+   "album": "Grieg: Peer Gynt Suites",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "jordisavall|beethovensymphonies古樂版",
+   "artist": "Jordi Savall",
+   "album": "Beethoven: Symphonies (古樂版)",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "georgesprêtre|poulencgloria",
+   "artist": "Georges Prêtre",
+   "album": "Poulenc: Gloria",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "takagimasakatsu高木正勝|marginaliai",
+   "artist": "Takagi Masakatsu 高木正勝",
+   "album": "Marginalia I",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "poppyackroyd|resolve",
+   "artist": "Poppy Ackroyd",
+   "album": "Resolve",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "leonardslatkin|barberadagioforstrings",
+   "artist": "Leonard Slatkin",
+   "album": "Barber: Adagio for Strings",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "gisèlebendor|ginasteraestanciapanambí",
+   "artist": "Gisèle Ben-Dor",
+   "album": "Ginastera: Estancia / Panambí",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "leifoveandsnes|griegpianoconcerto",
+   "artist": "Leif Ove Andsnes",
+   "album": "Grieg: Piano Concerto",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "tabeazimmermann|bartókviolaconcertohindemithderschwanendreher",
+   "artist": "Tabea Zimmermann",
+   "album": "Bartók: Viola Concerto / Hindemith: Der Schwanendreher",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "kimkashkashian|brahmsviolasonatas",
+   "artist": "Kim Kashkashian",
+   "album": "Brahms: Viola Sonatas",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "emmanuelpahud|mozartfluteconcertos",
+   "artist": "Emmanuel Pahud",
+   "album": "Mozart: Flute Concertos",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "mauriceandré|baroquetrumpetconcertos",
+   "artist": "Maurice André",
+   "album": "Baroque Trumpet Concertos",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "evelynglennie|rhythmsong",
+   "artist": "Evelyn Glennie",
+   "album": "Rhythm Song",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "janinejansen|bachviolinconcertos",
+   "artist": "Janine Jansen",
+   "album": "Bach: Violin Concertos",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "vadimrepin|brahmsviolinconcerto",
+   "artist": "Vadim Repin",
+   "album": "Brahms: Violin Concerto",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "paultortelier|elgarcelloconcerto",
+   "artist": "Paul Tortelier",
+   "album": "Elgar: Cello Concerto",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "andrénavarra|dvořákcelloconcerto",
+   "artist": "André Navarra",
+   "album": "Dvořák: Cello Concerto",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "solgabetta|schumanncelloconcerto",
+   "artist": "Sol Gabetta",
+   "album": "Schumann: Cello Concerto",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "shekukannehmason|inspiration",
+   "artist": "Sheku Kanneh-Mason",
+   "album": "Inspiration",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "kiritekanawa|mozartoperaarias",
+   "artist": "Kiri Te Kanawa",
+   "album": "Mozart: Opera Arias",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "nicolaigedda|airsdopérasoperaariasopernarien",
+   "artist": "Nicolai Gedda",
+   "album": "Airs d'opéras / Opera Arias / Opernarien",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "seongjincho趙成珍|ravelcompletesolopianoworks",
+   "artist": "Seong-Jin Cho 趙成珍",
+   "album": "Ravel: Complete Solo Piano Works",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "trulsmørk|brahmscellosonatas",
+   "artist": "Truls Mørk",
+   "album": "Brahms: Cello Sonatas",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "neemejärvi|glazunovsymphonies",
+   "artist": "Neeme Järvi",
+   "album": "Glazunov: Symphonies",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "renéjacobs|mozartcosìfantutte",
+   "artist": "René Jacobs",
+   "album": "Mozart: Così fan tutte",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "johneliotgardiner|mozartdiezauberflöte",
+   "artist": "John Eliot Gardiner",
+   "album": "Mozart: Die Zauberflöte",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "michaeltilsonthomas|coplandsymphonyno3",
+   "artist": "Michael Tilson Thomas",
+   "album": "Copland: Symphony no. 3",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "alexandergibson|gounodfaustballetmusicbizetcarmensuite",
+   "artist": "Alexander Gibson",
+   "album": "Gounod: Faust Ballet Music / Bizet: Carmen Suite",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "attaccaquartet|reallife",
+   "artist": "Attacca Quartet",
+   "album": "Real Life",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "ymusic|beautifulmechanical",
+   "artist": "yMusic",
+   "album": "Beautiful Mechanical",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "thekingssingers|renaissance",
+   "artist": "The King's Singers",
+   "album": "Renaissance",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "fransbrüggen|haydnparissymphonies",
+   "artist": "Frans Brüggen",
+   "album": "Haydn: Paris Symphonies",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "claudioarrau|arrauheritageliszt",
+   "artist": "Claudio Arrau",
+   "album": "Arrau Heritage: Liszt",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "johnleehooker|travelin",
+   "artist": "John Lee Hooker",
+   "album": "Travelin'",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "sonnyterrybrowniemcghee|sonnybrownie",
+   "artist": "Sonny Terry & Brownie McGhee",
+   "album": "Sonny & Brownie",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "albertcollins|frostbite",
+   "artist": "Albert Collins",
+   "album": "Frostbite",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "charlesbrown|justaluckysoandso",
+   "artist": "Charles Brown",
+   "album": "Just a Lucky So and So",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "jimmywitherspoon|eveninblues",
+   "artist": "Jimmy Witherspoon",
+   "album": "Evenin' Blues",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "championjackdupree|fromneworleanstochicago",
+   "artist": "Champion Jack Dupree",
+   "album": "From New Orleans to Chicago",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "bobbybluebland|membersonly",
+   "artist": "Bobby \"Blue\" Bland",
+   "album": "Members Only",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "ettajames|letsroll",
+   "artist": "Etta James",
+   "album": "Let's Roll",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "ruthbrown|bluesonbroadway",
+   "artist": "Ruth Brown",
+   "album": "Blues on Broadway",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "mariamuldaur|richlandwomanblues",
+   "artist": "Maria Muldaur",
+   "album": "Richland Woman Blues",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "samanthafish|killorbekind",
+   "artist": "Samantha Fish",
+   "album": "Kill or Be Kind",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "therobertcrayband|falseaccusations",
+   "artist": "The Robert Cray Band",
+   "album": "False Accusations",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "johnleehooker|urbanblues",
+   "artist": "John Lee Hooker",
+   "album": "Urban Blues",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "compaysegundo|lomejordelavida",
+   "artist": "Compay Segundo",
+   "album": "Lo Mejor de la Vida",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "compaysegundo|callesalud",
+   "artist": "Compay Segundo",
+   "album": "Calle Salud",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "thechieftains|thechieftains5",
+   "artist": "The Chieftains",
+   "album": "The Chieftains 5",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "theskatalites|hibopska",
+   "artist": "The Skatalites",
+   "album": "Hi-Bop Ska!",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "montyalexander|stiritupthemusicofbobmarley",
+   "artist": "Monty Alexander",
+   "album": "Stir It Up: The Music of Bob Marley",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "koffee|gifted",
+   "artist": "Koffee",
+   "album": "Gifted",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "bereshammond|amomentintime",
+   "artist": "Beres Hammond",
+   "album": "A Moment in Time",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "sturgillsimpson|cuttingrassvol1thebutchershoppesessions",
+   "artist": "Sturgill Simpson",
+   "album": "Cuttin' Grass, Vol. 1 (The Butcher Shoppe Sessions)",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "imwithher|seeyouaround",
+   "artist": "I'm With Her",
+   "album": "See You Around",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "katerusby|underneaththestars",
+   "artist": "Kate Rusby",
+   "album": "Underneath the Stars",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "sethlakeman|kittyjay",
+   "artist": "Seth Lakeman",
+   "album": "Kitty Jay",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "samlee|oldwow",
+   "artist": "Sam Lee",
+   "album": "Old Wow",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "thisisthekit|moonshinefreeze",
+   "artist": "This Is the Kit",
+   "album": "Moonshine Freeze",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "vetiver|tofindmegone",
+   "artist": "Vetiver",
+   "album": "To Find Me Gone",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "aleladiane|tobestill",
+   "artist": "Alela Diane",
+   "album": "To Be Still",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "phosphorescent|cestlavie",
+   "artist": "Phosphorescent",
+   "album": "C'est La Vie",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "hissgoldenmessenger|latenessofdancers",
+   "artist": "Hiss Golden Messenger",
+   "album": "Lateness of Dancers",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "hissgoldenmessenger|heartlikealevee",
+   "artist": "Hiss Golden Messenger",
+   "album": "Heart Like a Levee",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "themilkcartonkids|monterey",
+   "artist": "The Milk Carton Kids",
+   "album": "Monterey",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "billcallahan|shepherdinasheepskinvest",
+   "artist": "Bill Callahan",
+   "album": "Shepherd in a Sheepskin Vest",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "billcallahan|goldrecord",
+   "artist": "Bill Callahan",
+   "album": "Gold Record",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "catpower|wanderer",
+   "artist": "Cat Power",
+   "album": "Wanderer",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "leokottke|greenhouse",
+   "artist": "Leo Kottke",
+   "album": "Greenhouse",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "williamtyler|goeswest",
+   "artist": "William Tyler",
+   "album": "Goes West",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "marlonwilliams|makewayforlove",
+   "artist": "Marlon Williams",
+   "album": "Make Way for Love",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "pablocruise|worldsaway",
+   "artist": "Pablo Cruise",
+   "album": "Worlds Away",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "lionelrichie|dancingontheceiling",
+   "artist": "Lionel Richie",
+   "album": "Dancing on the Ceiling",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "billyocean|suddenly",
+   "artist": "Billy Ocean",
+   "album": "Suddenly",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "paulmauriat|bloominghits",
+   "artist": "Paul Mauriat",
+   "album": "Blooming Hits",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "中山美穂|catchthenite",
+   "artist": "中山美穂",
+   "album": "CATCH THE NITE",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "荻野目洋子|ラズベリーの風",
+   "artist": "荻野目洋子",
+   "album": "ラズベリーの風",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "小泉今日子|betty",
+   "artist": "小泉今日子",
+   "album": "Betty",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "斉藤由貴|axia",
+   "artist": "斉藤由貴",
+   "album": "AXIA",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "julielondon|abouttheblues",
+   "artist": "Julie London",
+   "album": "About the Blues",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "ellafitzgerald|claphandsherecomescharlie",
+   "artist": "Ella Fitzgerald",
+   "album": "Clap Hands, Here Comes Charlie!",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "redgarland|allmorninlong",
+   "artist": "Red Garland",
+   "album": "All Mornin' Long",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "redgarland|manteca",
+   "artist": "Red Garland",
+   "album": "Manteca",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "kennydrew|thisisnew",
+   "artist": "Kenny Drew",
+   "album": "This Is New",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "raybryant|raybryanttrio",
+   "artist": "Ray Bryant",
+   "album": "Ray Bryant Trio",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "raybryant|littlesusie",
+   "artist": "Ray Bryant",
+   "album": "Little Susie",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "dextergordon|thepanther",
+   "artist": "Dexter Gordon",
+   "album": "The Panther!",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "geneammons|thehappyblues",
+   "artist": "Gene Ammons",
+   "album": "The Happy Blues",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "geneammons|jug",
+   "artist": "Gene Ammons",
+   "album": "Jug",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "geneammons|bluegene",
+   "artist": "Gene Ammons",
+   "album": "Blue Gene",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "olivernelson|screamintheblues",
+   "artist": "Oliver Nelson",
+   "album": "Screamin' the Blues",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "shirleyscott|soulshoutin",
+   "artist": "Shirley Scott",
+   "album": "Soul Shoutin'",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "sarahvaughan|nocountsarah",
+   "artist": "Sarah Vaughan",
+   "album": "No Count Sarah",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "countbasie|basieinlondon",
+   "artist": "Count Basie",
+   "album": "Basie in London",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "woodyherman|woodyswinners",
+   "artist": "Woody Herman",
+   "album": "Woody's Winners",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "meltim|startingalloveragain",
+   "artist": "Mel & Tim",
+   "album": "Starting All Over Again",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "percysledge|thepercysledgeway",
+   "artist": "Percy Sledge",
+   "album": "The Percy Sledge Way",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "clarencecarter|thedynamicclarencecarter",
+   "artist": "Clarence Carter",
+   "album": "The Dynamic Clarence Carter",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "davidruffin|whoiam",
+   "artist": "David Ruffin",
+   "album": "Who I Am",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "thetemptations|asongforyou",
+   "artist": "The Temptations",
+   "album": "A Song for You",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "honeycone|sweetreplies",
+   "artist": "Honey Cone",
+   "album": "Sweet Replies",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "theintruders|savethechildren",
+   "artist": "The Intruders",
+   "album": "Save the Children",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "pattilabelle|pattilabelle",
+   "artist": "Patti LaBelle",
+   "album": "Patti LaBelle",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "thechilites|alettertomyself",
+   "artist": "The Chi-Lites",
+   "album": "A Letter to Myself",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "atlanticstarr|radiant",
+   "artist": "Atlantic Starr",
+   "album": "Radiant",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "cherrelle|fragile",
+   "artist": "Cherrelle",
+   "album": "Fragile",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "looseends|alittlespice",
+   "artist": "Loose Ends",
+   "album": "A Little Spice",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "looseends|zagora",
+   "artist": "Loose Ends",
+   "album": "Zagora",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "stephaniemills|whatchagonnadowithmylovin",
+   "artist": "Stephanie Mills",
+   "album": "What Cha Gonna Do with My Lovin'",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "renéangela|streetcalleddesire",
+   "artist": "René & Angela",
+   "album": "Street Called Desire",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "cheryllynn|instantlove",
+   "artist": "Cheryl Lynn",
+   "album": "Instant Love",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "eddiekendricks|hesafriend",
+   "artist": "Eddie Kendricks",
+   "album": "He's a Friend",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "jrwalkertheallstars|homecookin",
+   "artist": "Jr. Walker & the All Stars",
+   "album": "Home Cookin'",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "theimpressions|finallygotmyselftogether",
+   "artist": "The Impressions",
+   "album": "Finally Got Myself Together",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "ohioplayers|mrmean",
+   "artist": "Ohio Players",
+   "album": "Mr. Mean",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "confunkshun|loveshine",
+   "artist": "Con Funk Shun",
+   "album": "Loveshine",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "confunkshun|candy",
+   "artist": "Con Funk Shun",
+   "album": "Candy",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "confunkshun|touch",
+   "artist": "Con Funk Shun",
+   "album": "Touch",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "slave|showtime",
+   "artist": "Slave",
+   "album": "Show Time",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "thebarkays|toohottostop",
+   "artist": "The Bar-Kays",
+   "album": "Too Hot to Stop",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "thebarkays|moneytalks",
+   "artist": "The Bar-Kays",
+   "album": "Money Talks",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "thebarkays|injoy",
+   "artist": "The Bar-Kays",
+   "album": "Injoy",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "thefatbackband|raisinghell",
+   "artist": "The Fatback Band",
+   "album": "Raising Hell",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "fatback|hotbox",
+   "artist": "Fatback",
+   "album": "Hot Box",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "war|galaxy",
+   "artist": "War",
+   "album": "Galaxy",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "averagewhitebandbeneking|bennyandus",
+   "artist": "Average White Band & Ben E. King",
+   "album": "Benny and Us",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "rufusfeaturingchakakhan|streetplayer",
+   "artist": "Rufus featuring Chaka Khan",
+   "album": "Street Player",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "ltd|somethingtolove",
+   "artist": "L.T.D.",
+   "album": "Something to Love",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "ltd|togetherness",
+   "artist": "L.T.D.",
+   "album": "Togetherness",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "brick|brick",
+   "artist": "Brick",
+   "album": "Brick",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "sistersledge|lovesomebodytoday",
+   "artist": "Sister Sledge",
+   "album": "Love Somebody Today",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "amandalear|sweetrevenge",
+   "artist": "Amanda Lear",
+   "album": "Sweet Revenge",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "amiistewart|knockonwood",
+   "artist": "Amii Stewart",
+   "album": "Knock on Wood",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "thecrusaders|thosesouthernknights",
+   "artist": "The Crusaders",
+   "album": "Those Southern Knights",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "pleasure|futurenow",
+   "artist": "Pleasure",
+   "album": "Future Now",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "eu|livinlarge",
+   "artist": "E.U.",
+   "album": "Livin' Large",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "dannytenaglia|hardsoul",
+   "artist": "Danny Tenaglia",
+   "album": "Hard & Soul",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "bobsinclar|paradise",
+   "artist": "Bob Sinclar",
+   "album": "Paradise",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "orbital|themiddleofnowhere",
+   "artist": "Orbital",
+   "album": "The Middle of Nowhere",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "étiennedecrécy|tempovision",
+   "artist": "Étienne de Crécy",
+   "album": "Tempovision",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "charlestrenet|chansonsclaires10chansonsnouvelles",
+   "artist": "Charles Trenet",
+   "album": "Chansons claires : 10 chansons nouvelles",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "neildiamond|taprootmanuscript",
+   "artist": "Neil Diamond",
+   "album": "Tap Root Manuscript",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "jimreeves|moonlightandroses",
+   "artist": "Jim Reeves",
+   "album": "Moonlight and Roses",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "judygarland|alone",
+   "artist": "Judy Garland",
+   "album": "Alone",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "charlierich|thefabulouscharlierich",
+   "artist": "Charlie Rich",
+   "album": "The Fabulous Charlie Rich",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "charlierich|veryspeciallovesongs",
+   "artist": "Charlie Rich",
+   "album": "Very Special Love Songs",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "themightydiamonds|iceonfire",
+   "artist": "The Mighty Diamonds",
+   "album": "Ice on Fire",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "sweetcomfortband|sweetcomfort",
+   "artist": "Sweet Comfort Band",
+   "album": "Sweet Comfort",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "kingjamesversion|firsttimewemet",
+   "artist": "King James Version",
+   "album": "First Time We Met",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "tedlundybobpaisleyandthesouthernmountainboys|lovesickandsorrow",
+   "artist": "Ted Lundy, Bob Paisley and The Southern Mountain Boys",
+   "album": "Lovesick and Sorrow",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "harveywilliams|california",
+   "artist": "Harvey Williams",
+   "album": "California",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "blastoffcountrystyle|rainbowmayonnaisedeluxe",
+   "artist": "Blast Off Country Style",
+   "album": "Rainbow Mayonnaise Deluxe",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "johnnyclarke|yardstyle",
+   "artist": "Johnny Clarke",
+   "album": "Yard Style",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "shirleyscott|oneforme",
+   "artist": "Shirley Scott",
+   "album": "One for Me",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "tampared|donttampawiththeblues",
+   "artist": "Tampa Red",
+   "album": "Don't Tampa With the Blues",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "magicsam|givemetime",
+   "artist": "Magic Sam",
+   "album": "Give Me Time",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "kidory|kidoryplayswchandy",
+   "artist": "Kid Ory",
+   "album": "Kid Ory Plays W.C. Handy",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "themiracles|doinmickeysmonkey",
+   "artist": "The Miracles",
+   "album": "Doin' Mickey's Monkey",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "labelle|chameleon",
+   "artist": "Labelle",
+   "album": "Chameleon",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "rufuschakakhan|masterjam",
+   "artist": "Rufus & Chaka Khan",
+   "album": "Masterjam",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "marthareevesthevandellas|ridinhigh",
+   "artist": "Martha Reeves & the Vandellas",
+   "album": "Ridin' High",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "marthareevesthevandellas|naturalresources",
+   "artist": "Martha Reeves & the Vandellas",
+   "album": "Natural Resources",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "boyziimen|nathanmichaelshawnwanya",
+   "artist": "Boyz II Men",
+   "album": "Nathan Michael Shawn Wanya",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "frankieknuckles|anewreality",
+   "artist": "Frankie Knuckles",
+   "album": "A New Reality",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "coldcut|somelikeitcold",
+   "artist": "Coldcut",
+   "album": "Some Like It Cold",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "coldcut|soundmirrors",
+   "artist": "Coldcut",
+   "album": "Sound Mirrors",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "theartofnoise|innosensenonsense",
+   "artist": "The Art of Noise",
+   "album": "In No Sense? Nonsense!",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "odetta|onegrainofsand",
+   "artist": "Odetta",
+   "album": "One Grain of Sand",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "tammywynette|yourgoodgirlsgonnagobad",
+   "artist": "Tammy Wynette",
+   "album": "Your Good Girl's Gonna Go Bad",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "randytravis|old8x10",
+   "artist": "Randy Travis",
+   "album": "Old 8x10",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "thelouvinbrothers|nearermygodtothee",
+   "artist": "The Louvin Brothers",
+   "album": "Nearer My God to Thee",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "thelouvinbrothers|mybabysgone",
+   "artist": "The Louvin Brothers",
+   "album": "My Baby's Gone",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "grumiauxtrio|beethovenserenadesop8op25",
+   "artist": "Grumiaux Trio",
+   "album": "Beethoven: Serenades op. 8 & op. 25",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "石川さゆり|春一輪",
+   "artist": "石川さゆり",
+   "album": "春一輪",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "石川さゆり|波止場しぐれ",
+   "artist": "石川さゆり",
+   "album": "波止場しぐれ",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "藤圭子|歌いつがれて25年藤圭子演歌を歌う",
+   "artist": "藤圭子",
+   "album": "歌いつがれて25年 藤 圭子 演歌を歌う",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "藤圭子|さいはての女",
+   "artist": "藤圭子",
+   "album": "さいはての女",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "由紀さおり|恋文",
+   "artist": "由紀さおり",
+   "album": "恋文",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "由紀さおり|みち潮",
+   "artist": "由紀さおり",
+   "album": "みち潮",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "nena|fragezeichen",
+   "artist": "Nena",
+   "album": "? (Fragezeichen)",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "kaceymusgraves|middleofnowhere",
+   "artist": "Kacey Musgraves",
+   "album": "Middle of Nowhere",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "kevinmorby|littlewideopen",
+   "artist": "Kevin Morby",
+   "album": "Little Wide Open",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "billcallahan|mydaysof58",
+   "artist": "Bill Callahan",
+   "album": "My Days of 58",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "zachbryan|withheavenontop",
+   "artist": "Zach Bryan",
+   "album": "With Heaven on Top",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "殿さまキングス|なみだの操",
+   "artist": "殿さまキングス",
+   "album": "なみだの操",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "blaze|basicblaze",
+   "artist": "Blaze",
+   "album": "Basic Blaze",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "mahasti|bigane",
+   "artist": "Mahasti",
+   "album": "Bigane",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "stangetz|nobodyelsebutme",
+   "artist": "Stan Getz",
+   "album": "Nobody Else But Me",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "zootsimsbobbrookmeyer|stretchingout",
+   "artist": "Zoot Sims & Bob Brookmeyer",
+   "album": "Stretching Out",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "stanleyturrentine|upatmintonsvolume2",
+   "artist": "Stanley Turrentine",
+   "album": "Up at Minton's, Volume 2",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "thethreesounds|outofthisworld",
+   "artist": "The Three Sounds",
+   "album": "Out of This World",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "joepass|joyspring",
+   "artist": "Joe Pass",
+   "album": "Joy Spring",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "jimmysmith|bucket",
+   "artist": "Jimmy Smith",
+   "album": "Bucket",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "thethreesounds|vibrations",
+   "artist": "The Three Sounds",
+   "album": "Vibrations",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "loudonaldson|lushlife",
+   "artist": "Lou Donaldson",
+   "album": "Lush Life",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "leemorgan|standards",
+   "artist": "Lee Morgan",
+   "album": "Standards",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "jimmysmith|immovinon",
+   "artist": "Jimmy Smith",
+   "album": "I'm Movin' On",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "thejazzcrusaders|thefestivalalbum",
+   "artist": "The Jazz Crusaders",
+   "album": "The Festival Album",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "stanleyturrentine|commontouch",
+   "artist": "Stanley Turrentine",
+   "album": "Common Touch",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "frankfoster|manhattanfever",
+   "artist": "Frank Foster",
+   "album": "Manhattan Fever",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "hankmobley|reachout",
+   "artist": "Hank Mobley",
+   "album": "Reach Out!",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "jimmysmith|openhouse",
+   "artist": "Jimmy Smith",
+   "album": "Open House",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "dukepearson|introducingdukepearsonsbigband",
+   "artist": "Duke Pearson",
+   "album": "Introducing Duke Pearson's Big Band",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "horacesilver|yougottatakealittlelove",
+   "artist": "Horace Silver",
+   "album": "You Gotta Take a Little Love",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "hankmobley|theflip",
+   "artist": "Hank Mobley",
+   "album": "The Flip",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "dukepearson|merryolesoul",
+   "artist": "Duke Pearson",
+   "album": "Merry Ole Soul",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "randybrecker|score",
+   "artist": "Randy Brecker",
+   "album": "Score",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "jeremysteig|wayfaringstranger",
+   "artist": "Jeremy Steig",
+   "album": "Wayfaring Stranger",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "buddyrich|keepthecustomersatisfied",
+   "artist": "Buddy Rich",
+   "album": "Keep the Customer Satisfied",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "dukepearson|itcouldonlyhappenwithyou",
+   "artist": "Duke Pearson",
+   "album": "It Could Only Happen With You",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "waters|waters",
+   "artist": "Waters",
+   "album": "Waters",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "horacesilver|silvernbrass",
+   "artist": "Horace Silver",
+   "album": "Silver 'n Brass",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "mccoytyner|cosmos",
+   "artist": "McCoy Tyner",
+   "album": "Cosmos",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "bobbyhutcherson|waiting",
+   "artist": "Bobby Hutcherson",
+   "album": "Waiting",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "jackiemclean|tippinthescales",
+   "artist": "Jackie McLean",
+   "album": "Tippin' the Scales",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "jackiemclean|consequence",
+   "artist": "Jackie McLean",
+   "album": "Consequence",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "tommyflanagan|lonelytown",
+   "artist": "Tommy Flanagan",
+   "album": "Lonely Town",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "leemorgan|taru",
+   "artist": "Lee Morgan",
+   "album": "Taru",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "hankmobley|thirdseason",
+   "artist": "Hank Mobley",
+   "album": "Third Season",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "grantgreen|oleo",
+   "artist": "Grant Green",
+   "album": "Oleo",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "jimmysmith|coolblues",
+   "artist": "Jimmy Smith",
+   "album": "Cool Blues",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "ronnielaws|everygeneration",
+   "artist": "Ronnie Laws",
+   "album": "Every Generation",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "donaldbyrd|thecreeper",
+   "artist": "Donald Byrd",
+   "album": "The Creeper",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "kandacesprings|indigo",
+   "artist": "Kandace Springs",
+   "album": "Indigo",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "outofinto|motioni",
+   "artist": "Out Of/Into",
+   "album": "Motion I",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "outofinto|motionii",
+   "artist": "Out Of/Into",
+   "album": "Motion II",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "waltersmithiii|twiovol2",
+   "artist": "Walter Smith III",
+   "album": "Twio Vol. 2",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "melissaaldana|filin",
+   "artist": "Melissa Aldana",
+   "album": "Filin",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "julianlage|scenesfromabove",
+   "artist": "Julian Lage",
+   "album": "Scenes From Above",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "hankmobley|farawaylands",
+   "artist": "Hank Mobley",
+   "album": "Far Away Lands",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "hankmobley|straightnofilter",
+   "artist": "Hank Mobley",
+   "album": "Straight No Filter",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "elianeelias|illusions",
+   "artist": "Eliane Elias",
+   "album": "Illusions",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "stanleyturrentine|jubileeshout",
+   "artist": "Stanley Turrentine",
+   "album": "Jubilee Shout!!!",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "stanleyjordan|standardsvolume1",
+   "artist": "Stanley Jordan",
+   "album": "Standards, Volume 1",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "jimmysmith|goforwhatchaknow",
+   "artist": "Jimmy Smith",
+   "album": "Go for Whatcha Know",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "moseallison|eversincetheworldended",
+   "artist": "Mose Allison",
+   "album": "Ever Since the World Ended",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "mccoytyner|revelations",
+   "artist": "McCoy Tyner",
+   "album": "Revelations",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "lourawls|atlast",
+   "artist": "Lou Rawls",
+   "album": "At Last",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "mccoytyner|thingsaintwhattheyusedtobe",
+   "artist": "McCoy Tyner",
+   "album": "Things Ain't What They Used to Be",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "elianeelias|sofarsoclose",
+   "artist": "Eliane Elias",
+   "album": "So Far So Close",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "stanleyjordan|cornucopia",
+   "artist": "Stanley Jordan",
+   "album": "Cornucopia",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "stanleyjordan|stolenmoments",
+   "artist": "Stanley Jordan",
+   "album": "Stolen Moments",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "elianeelias|fantasia",
+   "artist": "Eliane Elias",
+   "album": "Fantasia",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "variousartists|newyorkstories",
+   "artist": "Various Artists",
+   "album": "New York Stories",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "lourawls|christmasisthetime",
+   "artist": "Lou Rawls",
+   "album": "Christmas is the Time",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "superblue|superblue",
+   "artist": "Superblue",
+   "album": "Superblue",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "superblue|superblue2",
+   "artist": "Superblue",
+   "album": "Superblue 2",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "joelovano|tenorlegacy",
+   "artist": "Joe Lovano",
+   "album": "Tenor Legacy",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "richardelliot|afterdark",
+   "artist": "Richard Elliot",
+   "album": "After Dark",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "kevineubanks|liveatbradleys",
+   "artist": "Kevin Eubanks",
+   "album": "Live at Bradley's",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "diannereeves|quietafterthestorm",
+   "artist": "Dianne Reeves",
+   "album": "Quiet After the Storm",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "piecesofadream|goodbyemanhattan",
+   "artist": "Pieces of a Dream",
+   "album": "Goodbye Manhattan",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "bobbymcferrin|bangzoom",
+   "artist": "Bobby McFerrin",
+   "album": "Bang! Zoom",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "richardelliot|cityspeak",
+   "artist": "Richard Elliot",
+   "album": "City Speak",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "dukepearson|idontcarewhoknowsit",
+   "artist": "Duke Pearson",
+   "album": "I Don't Care Who Knows It",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "thethreesounds|liveattheitclub",
+   "artist": "The Three Sounds",
+   "album": "Live at the “It Club”",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "bobdorough|rightonmywayhome",
+   "artist": "Bob Dorough",
+   "album": "Right On My Way Home",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "kevineubanks|spiritalk2revelations",
+   "artist": "Kevin Eubanks",
+   "album": "Spiritalk 2: Revelations",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "roncarter|stardust",
+   "artist": "Ron Carter",
+   "album": "Stardust",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "jamesfrancies|flight",
+   "artist": "James Francies",
+   "album": "Flight",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "piecesofadream|pieces",
+   "artist": "Pieces of a Dream",
+   "album": "Pieces",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "jackiemclean|firelove",
+   "artist": "Jackie McLean",
+   "album": "Fire & Love",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "woodyshaw|bemshaswing",
+   "artist": "Woody Shaw",
+   "album": "Bemsha Swing",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "roncarter|thebassandi",
+   "artist": "Ron Carter",
+   "album": "The Bass and I",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "patmartino|allsidesnow",
+   "artist": "Pat Martino",
+   "album": "All Sides Now",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "fareedhaque|dejavu",
+   "artist": "Fareed Haque",
+   "album": "Deja Vu",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "everetteharp|whatsgoingon",
+   "artist": "Everette Harp",
+   "album": "What's Going On",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "ronnielaws|tributetothelegendaryeddieharris",
+   "artist": "Ronnie Laws",
+   "album": "Tribute to the Legendary Eddie Harris",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "lenahorne|beingmyself",
+   "artist": "Lena Horne",
+   "album": "Being Myself",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "kurtelling|thistimeitslove",
+   "artist": "Kurt Elling",
+   "album": "This Time It's Love",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "philwoods|therevandi",
+   "artist": "Phil Woods",
+   "album": "The Rev and I",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "stanleyjordan|liveinnewyork",
+   "artist": "Stanley Jordan",
+   "album": "Live in New York",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "everetteharp|betterdays",
+   "artist": "Everette Harp",
+   "album": "Better Days",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "georgehoward|theresariotgoinon",
+   "artist": "George Howard",
+   "album": "There's a Riot Goin' On",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "marcusprintup|nocturnaltraces",
+   "artist": "Marcus Printup",
+   "album": "Nocturnal Traces",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "thethreesounds|standards",
+   "artist": "The Three Sounds",
+   "album": "Standards",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "charliehunterpoundforpound|returnofthecandyman",
+   "artist": "Charlie Hunter & Pound For Pound",
+   "album": "Return of the Candyman",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "moseallison|gimcracksandgewgaws",
+   "artist": "Mose Allison",
+   "album": "Gimcracks and Gewgaws",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "charliehunterleonparker|duo",
+   "artist": "Charlie Hunter / Leon Parker",
+   "album": "Duo",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "reneerosnes|artsoul",
+   "artist": "Renee Rosnes",
+   "album": "Art & Soul",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "jimmysmith|sixviewsoftheblues",
+   "artist": "Jimmy Smith",
+   "album": "Six Views of the Blues",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "grantgreen|bluesforlou",
+   "artist": "Grant Green",
+   "album": "Blues For Lou",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "dizzyreece|cominon",
+   "artist": "Dizzy Reece",
+   "album": "Comin' On",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "roncarter|orfeu",
+   "artist": "Ron Carter",
+   "album": "Orfeu",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "drjohn|dukeelegant",
+   "artist": "Dr. John",
+   "album": "Duke Elegant",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "diannereeves|bridges",
+   "artist": "Dianne Reeves",
+   "album": "Bridges",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "richardelliot|chillfactor",
+   "artist": "Richard Elliot",
+   "album": "Chill Factor",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "piecesofadream|aheadtothepast",
+   "artist": "Pieces of a Dream",
+   "album": "Ahead to the Past",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "bennygreen|thesearesoulfuldays",
+   "artist": "Benny Green",
+   "album": "These Are Soulful Days",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "everetteharp|forthelove",
+   "artist": "Everette Harp",
+   "album": "For the Love",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "jackiemclean|natureboy",
+   "artist": "Jackie McLean",
+   "album": "Nature Boy",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "elianeelias|everythingilove",
+   "artist": "Eliane Elias",
+   "album": "Everything I Love",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "thethreesounds|liveattheitclubvolume2",
+   "artist": "The Three Sounds",
+   "album": "Live at the \"It Club\", Volume 2",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "charliehunter|charliehunter",
+   "artist": "Charlie Hunter",
+   "album": "Charlie Hunter",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "donbyron|afineline",
+   "artist": "Don Byron",
+   "album": "A Fine Line",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "lonnieplaxico|melange",
+   "artist": "Lonnie Plaxico",
+   "album": "Melange",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "pauljacksonjr|thepowerofthestring",
+   "artist": "Paul Jackson, Jr.",
+   "album": "The Power of the String",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "rodneyjones|soulmanifesto",
+   "artist": "Rodney Jones",
+   "album": "Soul Manifesto",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "kurtelling|flirtingwithtwilight",
+   "artist": "Kurt Elling",
+   "album": "Flirting With Twilight",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "grantgreen|firstsession",
+   "artist": "Grant Green",
+   "album": "First Session",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "stangetzalbertdailey|poetry",
+   "artist": "Stan Getz & Albert Dailey",
+   "album": "Poetry",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "karldenson|dancelesson2",
+   "artist": "Karl Denson",
+   "album": "Dance Lesson #2",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "charliehunterquartet|songsfromtheanalogplayground",
+   "artist": "Charlie Hunter Quartet",
+   "album": "Songs From the Analog Playground",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "drjohn|creolemoon",
+   "artist": "Dr. John",
+   "album": "Creole Moon",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "bobbymcferrin|beyondwords",
+   "artist": "Bobby McFerrin",
+   "album": "Beyond Words",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "roncarter|thegoldenstriker",
+   "artist": "Ron Carter",
+   "album": "The Golden Striker",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "pauljacksonjr|stillsmallvoice",
+   "artist": "Paul Jackson, Jr.",
+   "album": "Still Small Voice",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "vanmorrison|whatswrongwiththispicture",
+   "artist": "Van Morrison",
+   "album": "What's Wrong With This Picture?",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "kurtelling|manintheair",
+   "artist": "Kurt Elling",
+   "album": "Man in the Air",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "cassandrawilson|glamoured",
+   "artist": "Cassandra Wilson",
+   "album": "Glamoured",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "patmartino|thinktank",
+   "artist": "Pat Martino",
+   "album": "Think Tank",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "diannereeves|christmastimeishere",
+   "artist": "Dianne Reeves",
+   "album": "Christmas Time Is Here",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "gonzalorubalcaba|paseo",
+   "artist": "Gonzalo Rubalcaba",
+   "album": "Paseo",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "wyntonmarsalisquartet|themagichour",
+   "artist": "Wynton Marsalis Quartet",
+   "album": "The Magic Hour",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "joelovano|joyousencounter",
+   "artist": "Joe Lovano",
+   "album": "Joyous Encounter",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "wyntonmarsalis|liveatthehouseoftribes",
+   "artist": "Wynton Marsalis",
+   "album": "Live at the House of Tribes",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "patmartino|rememberatributetowesmontgomery",
+   "artist": "Pat Martino",
+   "album": "Remember: A Tribute to Wes Montgomery",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "thewoodbrothers|waysnottolose",
+   "artist": "The Wood Brothers",
+   "album": "Ways Not to Lose",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "drjohn|mercernary",
+   "artist": "Dr. John",
+   "album": "Mercernary",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "norahjones|livein2007",
+   "artist": "Norah Jones",
+   "album": "Live in 2007",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "davekoz|memoriesofawintersnight",
+   "artist": "Dave Koz",
+   "album": "Memories of a Winter's Night",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "jefflorber|hehadahat",
+   "artist": "Jeff Lorber",
+   "album": "He Had a Hat",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "roncarter|dearmiles",
+   "artist": "Ron Carter",
+   "album": "Dear Miles,",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "kennyburrell|75thbirthdaybashlive",
+   "artist": "Kenny Burrell",
+   "album": "75th Birthday Bash Live!",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "ericdarius|goinallout",
+   "artist": "Eric Darius",
+   "album": "Goin' All Out",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "diannereeves|whenyouknow",
+   "artist": "Dianne Reeves",
+   "album": "When You Know",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "thewoodbrothers|loaded",
+   "artist": "The Wood Brothers",
+   "album": "Loaded",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "cassandrawilson|loverly",
+   "artist": "Cassandra Wilson",
+   "album": "Loverly",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "joelovano|symphonica",
+   "artist": "Joe Lovano",
+   "album": "Symphonica",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "patriciabarber|thecoleportermix",
+   "artist": "Patricia Barber",
+   "album": "The Cole Porter Mix",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "wyntonmarsalis|heandshe",
+   "artist": "Wynton Marsalis",
+   "album": "He and She",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "elianeelias|bossanovastories",
+   "artist": "Eliane Elias",
+   "album": "Bossa Nova Stories",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "trijntjeoosterhuis|nevercansaygoodbye",
+   "artist": "Trijntje Oosterhuis",
+   "album": "Never Can Say Goodbye",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "willienelson|americanclassic",
+   "artist": "Willie Nelson",
+   "album": "American Classic",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "sabrinastarke|bagssuitcases",
+   "artist": "Sabrina Starke",
+   "album": "Bags & Suitcases",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "trijntjeoosterhuis|thisistheseason",
+   "artist": "Trijntje Oosterhuis",
+   "album": "This is the Season",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "billcharlapreneerosnes|doubleportrait",
+   "artist": "Bill Charlap & Renee Rosnes",
+   "album": "Double Portrait",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "lionelloueke|mwaliko",
+   "artist": "Lionel Loueke",
+   "album": "Mwaliko",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "staceykent|racontemoi",
+   "artist": "Stacey Kent",
+   "album": "Raconte-moi…",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "staceykent|dreamerinconcert",
+   "artist": "Stacey Kent",
+   "album": "Dreamer in Concert",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "quasimode|magicensemble",
+   "artist": "quasimode",
+   "album": "Magic Ensemble",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "avishaicohen|duende",
+   "artist": "Avishai Cohen",
+   "album": "Duende",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "lionelloueke|heritage",
+   "artist": "Lionel Loueke",
+   "album": "Heritage",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "quasimode|soulcookin",
+   "artist": "quasimode",
+   "album": "Soul Cookin'",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "aaronneville|mytruestory",
+   "artist": "Aaron Neville",
+   "album": "My True Story",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "vintagetrouble|1hopefulrd",
+   "artist": "Vintage Trouble",
+   "album": "1 Hopeful Rd.",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "marcusmiller|afrodeezia",
+   "artist": "Marcus Miller",
+   "album": "Afrodeezia",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "lionelloueke|gaïa",
+   "artist": "Lionel Loueke",
+   "album": "Gaïa",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "robertglasper|artscience",
+   "artist": "Robert Glasper",
+   "album": "ArtScience",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "benlonclesoul|undermyskin",
+   "artist": "Ben l'Oncle Soul",
+   "album": "Under My Skin",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "joséjames|loveinatimeofmadness",
+   "artist": "José James",
+   "album": "Love in a Time of Madness",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "louishayes|serenadeforhorace",
+   "artist": "Louis Hayes",
+   "album": "Serenade for Horace",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "joséjames|leanonme",
+   "artist": "José James",
+   "album": "Lean On Me",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "markknopfler|downtheroadwherever",
+   "artist": "Mark Knopfler",
+   "album": "Down the Road Wherever",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "norahjones|beginagain",
+   "artist": "Norah Jones",
+   "album": "Begin Again",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "norahjones|pickmeupoffthefloor",
+   "artist": "Norah Jones",
+   "album": "Pick Me Up Off the Floor",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "benlonclesoul|addictedtoyou",
+   "artist": "Ben l'Oncle Soul",
+   "album": "Addicted to You",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "norahjones|tilwemeetagain",
+   "artist": "Norah Jones",
+   "album": "…'Til We Meet Again",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "billcharlaptrio|streetofdreams",
+   "artist": "Bill Charlap Trio",
+   "album": "Street of Dreams",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "jamesfrancies|purestform",
+   "artist": "James Francies",
+   "album": "Purest Form",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "johnathanblake|homewardbound",
+   "artist": "Johnathan Blake",
+   "album": "Homeward Bound",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "julianlage|viewwitharoom",
+   "artist": "Julian Lage",
+   "album": "View With a Room",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "donaldbyrd|livecookinwithbluenoteatmontreux",
+   "artist": "Donald Byrd",
+   "album": "Live: Cookin' with Blue Note at Montreux",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "ethaniverson|everynoteistrue",
+   "artist": "Ethan Iverson",
+   "album": "Every Note Is True",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "ronniefoster|reboot",
+   "artist": "Ronnie Foster",
+   "album": "Reboot",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "billfrisell|four",
+   "artist": "Bill Frisell",
+   "album": "Four",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "joshuaredman|wherearewe",
+   "artist": "Joshua Redman",
+   "album": "Where Are We",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "joechambers|dancekobina",
+   "artist": "Joe Chambers",
+   "album": "Dance Kobina",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "cautiousclay|karpeh",
+   "artist": "Cautious Clay",
+   "album": "KARPEH",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "aaronparks|littlebigiii",
+   "artist": "Aaron Parks",
+   "album": "Little Big III",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "markknopfler|onedeepriver",
+   "artist": "Mark Knopfler",
+   "album": "One Deep River",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "ethaniverson|technicallyacceptable",
+   "artist": "Ethan Iverson",
+   "album": "Technically Acceptable",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "julianlage|speaktome",
+   "artist": "Julian Lage",
+   "album": "Speak to Me",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "aaronparks|byallmeans",
+   "artist": "Aaron Parks",
+   "album": "By All Means",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "branfordmarsalisquartet|belonging",
+   "artist": "Branford Marsalis Quartet",
+   "album": "Belonging",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "johnathanblake|mylifematters",
+   "artist": "Johnathan Blake",
+   "album": "My Life Matters",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "joshuaredman|wordsfallshort",
+   "artist": "Joshua Redman",
+   "album": "Words Fall Short",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "jackieallen|tangled",
+   "artist": "Jackie Allen",
+   "album": "Tangled",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "malta|malta",
+   "artist": "MALTA",
+   "album": "Malta",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "malta|highpressure",
+   "artist": "MALTA",
+   "album": "High Pressure",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "中村照夫|songofthebirds",
+   "artist": "中村照夫",
+   "album": "Song Of The Birds",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "naniwaexpress|silentsavanna",
+   "artist": "NANIWA EXPRESS",
+   "album": "Silent Savanna",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "herbiehancock|directstep",
+   "artist": "Herbie Hancock",
+   "album": "Directstep",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "thebillholmanband|thebillholmanband",
+   "artist": "The Bill Holman Band",
+   "album": "The Bill Holman Band",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "ryanporter|theoptimist",
+   "artist": "Ryan Porter",
+   "album": "The Optimist",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "markdeclivelowe|heritage",
+   "artist": "Mark de Clive-Lowe",
+   "album": "Heritage",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "marquishill|thewayweplay",
+   "artist": "Marquis Hill",
+   "album": "The Way We Play",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "omeravital|abutbulmusic",
+   "artist": "Omer Avital",
+   "album": "Abutbul Music",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "giladhekselman|heartswideopen",
+   "artist": "Gilad Hekselman",
+   "album": "Hearts Wide Open",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "camilameza|traces",
+   "artist": "Camila Meza",
+   "album": "Traces",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "jsquad|jsquadii",
+   "artist": "J-Squad",
+   "album": "J-Squad II",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "answertoremember|answertorememberii",
+   "artist": "Answer to Remember",
+   "album": "Answer to Remember II",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "nostalgia77|thegarden",
+   "artist": "Nostalgia 77",
+   "album": "The Garden",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "emancipator|dusktodawn",
+   "artist": "Emancipator",
+   "album": "Dusk to Dawn",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "josépadilla|navigator",
+   "artist": "José Padilla",
+   "album": "Navigator",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "thunderball|scorpiorising",
+   "artist": "Thunderball",
+   "album": "Scorpio Rising",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "mohorizons|cometouchthesun",
+   "artist": "Mo' Horizons",
+   "album": "Come Touch the Sun",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "dzihankamien|freaksicons",
+   "artist": "dZihan & Kamien",
+   "album": "Freaks & Icons",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "télépopmusik|angelmilk",
+   "artist": "Télépopmusik",
+   "album": "Angel Milk",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "thediningrooms|tre",
+   "artist": "The Dining Rooms",
+   "album": "Tre",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "amancalledadam|duende",
+   "artist": "A Man Called Adam",
+   "album": "Duende",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "federicoaubele|panamericana",
+   "artist": "Federico Aubele",
+   "album": "Panamericana",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "cibelle|cibelle",
+   "artist": "Cibelle",
+   "album": "Cibelle",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "harukanakamura|melodica",
+   "artist": "haruka nakamura",
+   "album": "MELODICA",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "nitejewel|onesecondoflove",
+   "artist": "Nite Jewel",
+   "album": "One Second of Love",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "aswad|notsatisfied",
+   "artist": "Aswad",
+   "album": "Not Satisfied",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "theitals|givemepower",
+   "artist": "The Itals",
+   "album": "Give Me Power",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "tangerinedream|opticalrace",
+   "artist": "Tangerine Dream",
+   "album": "Optical Race",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "laserdance|aroundtheplanet",
+   "artist": "Laserdance",
+   "album": "Around the Planet",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "domogenesis|genesis",
+   "artist": "Domo Genesis",
+   "album": "Genesis",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "devinthedude|tothaxtreme",
+   "artist": "Devin the Dude",
+   "album": "To tha X-Treme",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "wailingsouls|ontherocks",
+   "artist": "Wailing Souls",
+   "album": "On the Rocks",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "hugar|hugar",
+   "artist": "Hugar",
+   "album": "Hugar",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "kennylattimore|timeless",
+   "artist": "Kenny Lattimore",
+   "album": "Timeless",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "philperry|theheartoftheman",
+   "artist": "Phil Perry",
+   "album": "The Heart of the Man",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "bcalm|elements",
+   "artist": "Bcalm",
+   "album": "Elements",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "steamhammer|mkii",
+   "artist": "Steamhammer",
+   "album": "MK II",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "almacogan|ilovetosing",
+   "artist": "Alma Cogan",
+   "album": "I Love to Sing",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "federicoalbanese|thehouseboatandthemoon",
+   "artist": "Federico Albanese",
+   "album": "The Houseboat and the Moon",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "photay|onism",
+   "artist": "Photay",
+   "album": "Onism",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "ruxpin|avalon",
+   "artist": "Ruxpin",
+   "album": "Avalon",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "projectpablo|hopeyourewell",
+   "artist": "Project Pablo",
+   "album": "Hope You're Well",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "クラムボン|imagination",
+   "artist": "クラムボン",
+   "album": "imagination",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "ironomi|虹",
+   "artist": "Ironomi",
+   "album": "虹",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "intheblueshirt|recollectthefeeling",
+   "artist": "in the blue shirt",
+   "album": "Recollect the Feeling",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "mindchatter|dreamsoup",
+   "artist": "Mindchatter",
+   "album": "DREAM SOUP",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "fishdoll|noonsense",
+   "artist": "Fishdoll",
+   "album": "Noonsense",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "championxiii|championstatus",
+   "artist": "Championxiii",
+   "album": "Champion Status",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "heladotropical|heladotropical",
+   "artist": "Helado Tropical",
+   "album": "Helado Tropical",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "hiatus|parklands",
+   "artist": "Hiatus",
+   "album": "Parklands",
+   "batch": "prune-20261105"
+  },
+  {
+   "key": "seahawks|eyesofthemoon",
+   "artist": "Seahawks",
+   "album": "Eyes of the Moon",
+   "batch": "prune-20261105"
+  }
+ ]
+}

@@ -1,5 +1,14 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-05｜dip-vinyl-shop｜prune-20261105 套用：雀躍／放鬆移出 1,042 張（卡池 22,824 → 21,782）
+
+- **店主**：看完勾選頁（封面、介紹、直連）按保留 236 張；另指示「歐洲爵士全部保留」「Blue Note 留代表性的，查價格」——Discogs 逐張查 want 與原版最低售價，want ≥1000 或 ≥US$100 留 68 張，歐洲爵士 61 張全留（明細 `auto-keep.json`、`rulings.md`）。最終確認後店主說「可以」。
+- **移出**：候選 1,278 − 保留 236 = 1,042 張（雀躍 583、放鬆 459；爵士 287、soul 216、電子 136、搖滾 118…）。0 張頂點、0 張三軸 ≥4、0 張店內庫存；184 位藝人整個離開卡池。只從 `seed_cards.json` 拿掉（抽不到）；card_catalog、KV、試聽檔不動，已抽到的卡照常顯示。
+- **八格**：雀躍 6,287 → 5,704、放鬆 5,220 → 4,761，其餘不變。
+- **防呆**：新增 `data/pool-removed.json`（移出清單，鍵同 `pool-keys.mjs`）；`publish-manifest --write-pool` 遇到清單內的卡略過、不加回；`verify-album-onboarding --published` 對清單內的卡略過卡池檢查（91 份舊 manifest 有被移出的卡）。新批去重照舊含 manifest，不會重新上架。
+- **主要檔案**：`seed_cards.json`、`data/pool-removed.json`、`data/mood/{card-moods,card-moods-v0,scale-v0}.json`、`batch-progress/mood-axes/{priors,scale}-v0-report.json`、`genre-tree.json`、`card-subgenres.json`、`draw-covers/`、`scripts/{publish-manifest,verify-album-onboarding}.mjs`、`batch-progress/prune-20261105/{removed-seed-rows.json,auto-keep.json,rulings.md}`。
+- **驗證**：seed 只刪 1,042 行、無其他變動；build-card-moods gate 綠（錨點 104/104、座標 21,782/21,782）；c156 manifest 乾跑 0 張待追加、`--published` 卡池檢查通過（剩封面 429 限流）；card-subgenres 少 1,007 鍵、0 新增。
+
 ### 2026-11-05｜dip-vinyl-shop｜藝人介紹十批上線（雲端，ar-d-131～138＋thin 升級 ar-u-029、030；介紹 9,384 → 9,650）
 
 - 先處理積壓：PR #80（第八～十二輪）三週未合、與 main 撞號（main 另有 ar-d-129～138），本分支舊 ar-d-129～140 改號 ar-d-929～940，合併 main 後依 2026-10-21 規則自行合併。
