@@ -1,5 +1,44 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-05｜dip-vinyl-shop｜藝人介紹二十批上線（雲端，卡池缺介紹藝人補登 ar-d-501～520；介紹 9,650 → 10,454）
+
+- **做了什麼**：卡池裡 1,019 位沒有介紹、也不在任何名冊的藝人，依卡數取前 800 位補登名冊 `batch-progress/artist-intro/roster-fill-20261105.json`（addedBy fill-20261105），按主類型切 ar-d-501～520（古典、電子、嘻哈、爵士、搖滾、soul、reggae／世界）。每批照 dip-artist-intro 跑完補洞 4 組、寫作 2 組、主線逐位審、上架。
+- **結果**：寫 770 位、不寫 30 位；主線審稿 247 處（另修已上線 1 位）。2025–26 年事實（Yasunao Tone、Howard Riley、方大同、Chris Faiumu 過世，Crispell NEA Jazz Masters、Courvoisier 瑞士音樂大獎、Marie Davidson Polaris 短名單、Leon Thomas 葛萊美、lovesliescrushing 加入 Numero）皆由主線以兩源核實。合併 main 後總數 10,454。
+- **主要檔案**：`batch-progress/artist-intro/fill-20261105.mjs`、`roster-fill-20261105.json`、`ar-c-rulings.md`（每批一段＋收尾段）；`desc-tools/batches/artist/{cut,facts,research,output}/ar-d-5xx-*`、`progress.json`；`data/artist-intros/`（manifest＋64 分片）；`audits/ARTIST-PUB-ISSUES.md`。
+- **驗證**：每批 `qa-artist.mjs gap`、`qa-artist.mjs out` 0 處（只剩刻意不寫的「缺 N 位」）；`scripts/build-artist-intros.mjs` 0 錯誤；與 main 合併後重建分片，main 另線同日寫的 5 位重複藝人以本線版本為準。
+
+### 2026-11-05｜dip-vinyl-shop｜情緒薄格恍惚 Bandcamp 線 ml66／ml67：24 張上線（落恍惚 10）＋藝人介紹 22 位
+
+- **店主 11-05**：「恍惚跟頹靡可以去 Bandcamp 爬梳」；不收嘻哈、雷鬼、dub；每張要有 Bandcamp Daily 專文／月度或年度榜（`CUR-DISPATCH-bandcamp.md`）。並行的 md37／md38 做頹靡。
+- **ml66**（`add-20261105-ml66`；Best Ambient 99 期＋Best Electronic 97 期與年度榜）：策展 47 → 主線汰 17 → 研究汰 14（breakbeat／techno／house 拍 9、陰冷 5）→ **上線 16、落恍惚 7（44%）**；出格判輕 6（Hinako Omori、Sofie Birch、Patricia Wolf、Nailah Hunter、maya ongaku、Midori Hirano）、判冷 3（Adam Wiltzie、Maria Somerville、Rachika Nayar，落頹靡）。
+- **ml67**（`add-20261105-ml67`；Best Jazz／Best Soul 151 期全掃＋Best Rock／Lists）：策展 23 → 主線汰 8 → 研究汰 7 → **上線 8、落恍惚 3（38%）**（Eddie Chacon 兩張、Acetone《If You Only Knew》）；KAINA、Cecily、Acetone 同名盤判輕，Napolin 判冷。
+- **Bandcamp 來源結論**：產率 13–15%，**兩場景都不建議再派**。暖而有旋律的 ambient 在評分尺下多判輕、厚的判冷；Best Electronic 九成舞池；暖爵士多乾淨原聲；`daily.bandcamp.com` 的 Best Rock／Lists 索引是前端渲染抓不到；dream pop 已被 ml2／ml44／ml62 收光。
+- **寫入（已即時生效）**：card_catalog 24、KV 24 鍵逐字回讀一致（stamp 20261105m66／m67）、試聽 24 ready（18 張換成最紅那首）、seed +24；prepare／published gate 皆 0 error；頂點 0。封面 CAA 22＋Bandcamp 2（Pedro Magina CAA 404、Cecily §1 人工身分）。審稿 ml66 未改字、ml67 改 3 處（Eddie Chacon 誤把詞曲獎 Ivor Novello 掛到演唱者、Johanna Burnheart「Guildhall 第一位」單源、Acetone 刪媒體名與年終榜）。
+- **藝人介紹**：ar-d-285（16 位，full 3／thin 13）、ar-d-286（6 位，full 3／thin 3）上線；審稿改 5 處（刪「據」轉述詞 2、無出處化名由來 1、Robotalco／Pedro Magina 補第二來源）。介紹 9,667 → 9,689。
+- **八格（合併 md37／md38 後）**：恍惚 1,671 → 1,681、頹靡 1,710 → 1,732（含 md37／md38）；錨點 104/104 同格。類型樹、抽卡封面、card-moods 重建。
+- **主要檔案**：`batch-progress/add-20261105-{ml66,ml67}/`、`batch-progress/mood-cells-20261022/{CUR-DISPATCH-bandcamp.md,dupchk.mjs,curation-ml66a,ml66b,ml67a,ml67b,master-*,cut-artist-intros-ml66.mjs}`、`SCENES.md`、`desc-tools/batches/{cards,research,hooks,input,output}/add-20261105-ml6[67]*`、`batch-progress/mood-axes/score-{ml66,ml67}/`、`batch-progress/artist-intro/{roster-ml66-ar-d-285,roster-ml67-ar-d-286,ar-d-rulings-ml66.md}`、`data/artist-intros/`、`seed_cards.json`、`data/mood/`、`genre-tree.json`、`card-subgenres.json`、`draw-covers/`。
+- **驗證**：`verify-album-onboarding --published` 兩批 0 error；`verify-wave-kv` 24／24 一致；`build-card-moods` 錨點 104/104；`qa-artist out` 兩批 0 處。
+
+### 2026-11-05｜dip-vinyl-shop｜情緒薄格頹靡 Bandcamp 線 md37／md38：19 張上線（落頹靡 18）＋藝人介紹 17 位
+
+- **店主 11-05**：「恍惚跟頹靡可以去 Bandcamp 爬梳」。來源只用 Bandcamp Daily（daily.bandcamp.com 可 curl；discover 頁前端渲染抓不到），每張至少一篇 Daily 專文／榜單／廠牌專訪，「要有故事才收」。條號 md37 23161–23240、md38 23241–23320（避開並行 ml66／ml67）。
+- **md37**（`add-20261105-md37`；Best Ambient／Best Experimental 冷暗重那半）：策展 47 → 主線汰 24（自我同名 2、貼邊 12、x 風險 4、資格或身分 3、單源 3）→ 研究汰 9（歌曲／人聲／節奏、明亮平靜、近乎寂靜、單源）→ **上線 14、落頹靡 13（93%）**；出格 Susan Geaney《Tape Melt》判輕。
+- **md38**（`add-20261105-md38`；Lists／Scene Report／Label Profile／AOTD 的 dungeon synth、dark jazz、dark folk、暗 downtempo）：策展 26 → 主線汰 12 → 研究汰 9（有鼓 2、判輕判亮 4、<30 分 1、故事薄 2）→ **上線 5、落頹靡 5（100%）**。
+- **來源結論**：Bandcamp Daily 冷暗重的盤很少（約 4,600 頁只挖到 73 張候選、上線 19）；小廠卡帶多半只有一段 Daily 評介，hauntology 廠牌沒有專訪、dungeon synth 多明亮。**兩線都不建議再單獨派。**
+- **寫入（已即時生效）**：card_catalog 19、KV 19 鍵逐字回讀一致（stamp 20261105md37／md38）、試聽 15 ready／4 unavailable（最紅那首換 10 張）、seed +19；prepare／published gate 皆 0 error；頂點 0。§1 人工身分 7 張（封面用 Bandcamp og:image 1200px）。審稿改 2 處（md37 兩張「單曲」措辭）。八格：頹靡 1,710 → 1,728。
+- **藝人介紹**：ar-d-283（md37，12 位）、ar-d-284（md38，5 位，含兩個合作組合鍵）照 dip-artist-intro 跑完上線（介紹 9,650 → 9,667）；審稿改 2 處（刪單源評價句、人名改拉丁原文）。
+- **主要檔案**：`batch-progress/add-20261105-{md37,md38}/`、`onboarding-manifest-add-20261105-md3[78]-20261105.json`、`batch-progress/mood-cells-20261022/{curation-md37a,md37b,md38a,md38b,master-*,CUR-BANDCAMP-md37.md,dedup-md37.mjs,cut-artist-intros-md37.mjs,SCENES.md}`、`desc-tools/batches/{cards,research,hooks,input,output}/add-20261105-md3*`、`batch-progress/mood-axes/score-{md37,md38}/`、`batch-progress/artist-intro/roster-md3[78]-*.json`、`data/artist-intros/`、`seed_cards.json`、`data/mood/`、`genre-tree.json`、`card-subgenres.json`、`draw-covers/`、試聽地圖。
+- **驗證**：`verify-album-onboarding --published` 兩批 0 error；`verify-wave-kv` 19／19；`build-card-moods` 錨點 104/104 同格；`qa-artist out` 兩批 0 處。
+
+### 2026-11-05｜dip-vinyl-shop｜prune-20261105 套用：雀躍／放鬆移出 1,042 張（卡池 22,824 → 21,782）
+
+- **店主**：看完勾選頁（封面、介紹、直連）按保留 236 張；另指示「歐洲爵士全部保留」「Blue Note 留代表性的，查價格」——Discogs 逐張查 want 與原版最低售價，want ≥1000 或 ≥US$100 留 68 張，歐洲爵士 61 張全留（明細 `auto-keep.json`、`rulings.md`）。最終確認後店主說「可以」。
+- **移出**：候選 1,278 − 保留 236 = 1,042 張（雀躍 583、放鬆 459；爵士 287、soul 216、電子 136、搖滾 118…）。0 張頂點、0 張三軸 ≥4、0 張店內庫存；184 位藝人整個離開卡池。只從 `seed_cards.json` 拿掉（抽不到）；card_catalog、KV、試聽檔不動，已抽到的卡照常顯示。
+- **八格**：雀躍 6,287 → 5,704、放鬆 5,220 → 4,761，其餘不變。
+- **防呆**：新增 `data/pool-removed.json`（移出清單，鍵同 `pool-keys.mjs`）；`publish-manifest --write-pool` 遇到清單內的卡略過、不加回；`verify-album-onboarding --published` 對清單內的卡略過卡池檢查（91 份舊 manifest 有被移出的卡）。新批去重照舊含 manifest，不會重新上架。
+- **主要檔案**：`seed_cards.json`、`data/pool-removed.json`、`data/mood/{card-moods,card-moods-v0,scale-v0}.json`、`batch-progress/mood-axes/{priors,scale}-v0-report.json`、`genre-tree.json`、`card-subgenres.json`、`draw-covers/`、`scripts/{publish-manifest,verify-album-onboarding}.mjs`、`batch-progress/prune-20261105/{removed-seed-rows.json,auto-keep.json,rulings.md}`。
+- **驗證**：seed 只刪 1,042 行、無其他變動；build-card-moods gate 綠（錨點 104/104、座標 21,782/21,782）；c156 manifest 乾跑 0 張待追加、`--published` 卡池檢查通過（剩封面 429 限流）；card-subgenres 少 1,007 鍵、0 新增。
+
 ### 2026-11-05｜dip-vinyl-shop｜藝人介紹十批上線（雲端，ar-d-131～138＋thin 升級 ar-u-029、030；介紹 9,384 → 9,650）
 
 - 先處理積壓：PR #80（第八～十二輪）三週未合、與 main 撞號（main 另有 ar-d-129～138），本分支舊 ar-d-129～140 改號 ar-d-929～940，合併 main 後依 2026-10-21 規則自行合併。

@@ -1,0 +1,1095 @@
+{
+ "schemaVersion": 1,
+ "batch": "2026-10-20-md37",
+ "batchNote": "薄細項策展線（add-20261105-md37）",
+ "createdAt": "2026-11-05T16:58:16Z",
+ "albums": [
+  {
+   "artist": "Marc Kate",
+   "album": "Deface",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "bde1db02-874c-401f-b755-c2ef3fbcea55",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "暗黑 ambient：Bandcamp Daily 寫它把極右黑金屬素材化為哀悼的 power ambient（77 分鐘）；厚霧殘響、無鼓、陰冷。｜⚠ 題材取自 NSBM 素材但作品立場是反轉與哀悼；若主線介意題材可汰。｜MB release-group bde1db02-874c-401f-b755-c2ef3fbcea55：title「Deface」、Album、first-release-date 2017-09-20、artist-credit「Marc Kate」。證據：https://daily.bandcamp.com/best-ambient/best-new-ambient-november-2017 https://failingforms.bandcamp.com/album/deface",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2017,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/bde1db02-874c-401f-b755-c2ef3fbcea55/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-05T16:58:16Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-05 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 19,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-05T16:58:16Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 19）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 19），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "整張唱片的原料，全是網路上蒐來的納粹黑金屬。住在舊金山的 Marc Kate 常在作品說明裡記下當時的政治氣候，這回他花了數月搜羅極右派音樂，專挑 NSBM 下手。素材經濾波與各種效果削去尖刺、只剩下和聲，他沒有添進任何別的聲音，就這樣拖成七首沒有鼓的長 drone，加總約 78 分鐘。這些曲子的情緒是哀悼，回應當下的政治時刻，把仇恨的素材翻轉成一種反制。2017 年 9 月 20 日，七首曲子在 Failing Forms 名下問世。",
+    "sourceUrls": [
+     "https://failingforms.bandcamp.com/album/deface",
+     "https://daily.bandcamp.com/best-ambient/best-new-ambient-november-2017",
+     "https://earslend.blogspot.com/2017/12/barbaric-bombast.html",
+     "https://musicbrainz.org/release-group/bde1db02-874c-401f-b755-c2ef3fbcea55"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview123/v4/b1/5c/7c/b15c7c41-71e2-f5cc-2a5e-d90234afdbc8/mzaf_11527624100356439739.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-11-05T16:58:16Z",
+    "appleCollectionId": "1480618095",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1480618095「Marc Kate《Deface》」：曲目 7/7 對上 MB 原盤（Apple 共 7 軌），取第 1 軌〈Deface I〉。主線 2026-11-05 lookup 核對、試聽檔 HTTP 206。",
+    "trackName": "Deface I",
+    "popularity": "apple-star-multi"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Rafael Anton Irisarri",
+   "album": "Sirimiri",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "033e7334-5715-43b7-9588-3f0080300692",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "drone：Bandcamp Daily 寫開場 Downfall 以哀傷旋律披在 gravelly 低頻上，像獨自長途火車上的沉思；池中 Irisarri 其他三張皆落頹靡。｜⚠ 有旋律線，z 估 -0.6 偏邊緣。｜MB release-group 033e7334-5715-43b7-9588-3f0080300692：title「Sirimiri」、Album、first-release-date 2018-03-16、artist-credit「Rafael Anton Irisarri」。證據：https://daily.bandcamp.com/best-ambient/best-new-ambient-june-2018 https://irisarri.bandcamp.com/album/sirimiri",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2018,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/033e7334-5715-43b7-9588-3f0080300692/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-05T16:58:16Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-05 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 4020,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-05T16:58:16Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 4020）"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "卡帶的 A、B 兩面，錄的是同樣四首曲子。Rafael Anton Irisarri 是紐約的作曲家與母帶工程師，這張無鼓的 drone 交給墨西哥廠牌 Umor Rex。對方 2018 年 3 月 16 日以卡帶與數位推出，四首總共約 37 分鐘，卡帶每面各放一輪，總長來到 72 分鐘。這種重複呼應 Eno 的想法：同一件事，不會以同樣的方式發生兩次。標題 Sirimiri 在巴斯克語是毛毛雨。開場〈Downfall〉在礫石般的低頻上，披著一道哀怨的旋律。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/033e7334-5715-43b7-9588-3f0080300692",
+     "https://irisarri.bandcamp.com/album/sirimiri",
+     "https://daily.bandcamp.com/best-ambient/best-new-ambient-june-2018",
+     "https://noisenotmusic.com/2018/03/22/review-rafael-anton-irisarri-sirimiri-umor-rex-mar-16/",
+     "https://en.wikipedia.org/wiki/Rafael_Anton_Irisarri"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/26/e8/5f/26e85f8c-5511-95ef-d254-c5939ffa330a/mzaf_26735195191033077.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-11-05T16:58:16Z",
+    "appleCollectionId": "1359296893",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1359296893「Rafael Anton Irisarri《Sirimiri》」：曲目 5/5 對上 MB 原盤（Apple 共 5 軌），取第 1 軌〈Downfall〉。主線 2026-11-05 lookup 核對、試聽檔 HTTP 206。",
+    "trackName": "Downfall",
+    "popularity": "deezer-rank"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Kevin Richard Martin",
+   "album": "Blue Loops",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "a42b6b9c-4352-42a8-a0a4-741ff5efc0b0",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "drone：Bandcamp Daily 稱它「manipulated feedback dirges」，把人推進無底深淵；The Bug 主腦的暗黑 drone。｜⚠ 2026 新盤，池中 KRM 三張皆頹靡。｜MB release-group a42b6b9c-4352-42a8-a0a4-741ff5efc0b0：title「Blue Loops」、Album、first-release-date 2026-05-01、artist-credit「Kevin Richard Martin」。證據：https://daily.bandcamp.com/best-ambient/the-best-ambient-music-on-bandcamp-may-2026 https://kevinrichardmartin.bandcamp.com/album/blue-loops",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2026,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/a42b6b9c-4352-42a8-a0a4-741ff5efc0b0/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-05T16:58:16Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-05 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 93,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-05T16:58:16Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 93）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 93），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "每一首，都從巡演後旅館房間裡的一段回授開始。以 The Bug 之名，英國人 Kevin Richard Martin 做的是碾壓式的電子樂；這回在歐洲各地演出之後，他把演出後錄下的一段段單一回授迴圈攢成一座素材庫。回到布魯塞爾的工作室，這些素材被他反覆處理，成了十四首無鼓的曲子，低頻放大到令人暈眩。曲名有〈Insomniac〉，也有〈A Fear Of Silence〉。2026 年 5 月 1 日自行發行，總長約 52 分鐘。",
+    "sourceUrls": [
+     "https://kevinrichardmartin.bandcamp.com/album/blue-loops",
+     "https://daily.bandcamp.com/best-ambient/the-best-ambient-music-on-bandcamp-may-2026",
+     "https://en.wikipedia.org/wiki/Kevin_Martin_(British_musician)",
+     "https://musicbrainz.org/release-group/a42b6b9c-4352-42a8-a0a4-741ff5efc0b0"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-05T16:58:16Z",
+    "note": "Apple us／gb／jp 以藝人搜尋專輯，無《Blue Loops》條目（2026-05 自發，只在 Bandcamp）。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Alex Zhang Hungtai",
+   "album": "Dras",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "manual",
+    "rgMbid": "",
+    "upc": "",
+    "aliasesChecked": true,
+    "mbAbsenceProof": {
+     "queries": [
+      "musicbrainz release-group artist:\"Alex Zhang Hungtai\"",
+      "musicbrainz release-group releasegroup:\"Dras\""
+     ],
+     "checkedAt": "2026-11-05",
+     "conclusion": "MB release-group 兩向查詢皆無對應 Album 條目，走人工身分。"
+    },
+    "manualEvidenceUrls": [
+     "https://alexzhanghungtai.bandcamp.com/album/dras",
+     "https://daily.bandcamp.com/best-ambient/the-best-ambient-music-on-bandcamp-april-2026"
+    ],
+    "manualRuling": "雲端主線 2026-11-05 依 ALBUM_ONBOARDING §1 人工身分核可（店主 2026-09-02 裁定權下放；薄細項策展線 add-20261105-md37）",
+    "coverSourceHint": "bandcamp",
+    "aliasReview": "drone：Bandcamp Daily 稱它荒涼，在蒙特婁聖若瑟聖堂錄成，是「露出獠牙的無調 drone」。｜⚠ 無調、可能有張力感（x 邊緣）；35 分鐘，9 軌。｜MB 查無（MB release-group 兩向查詢皆無對應 Album 條目，走人工身分。），走 §1 人工身分。證據：https://alexzhanghungtai.bandcamp.com/album/dras https://daily.bandcamp.com/best-ambient/the-best-ambient-music-on-bandcamp-april-2026 https://daily.bandcamp.com/best-ambient/the-best-ambient-music-on-bandcamp-april-2026 https://alexzhanghungtai.bandcamp.com/album/dras",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2026,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://f4.bcbits.com/img/a2422404072_10.jpg",
+    "source": "bandcamp",
+    "note": "§1 人工身分卡（MB 查無）；Bandcamp alexzhanghungtai.bandcamp.com/album/dras og:image（1200px），主線 2026-11-05 縮圖表目視與藝人、盤名相符。",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-05T16:58:16Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 801,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-05T16:58:16Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 801）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 801），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "它錄自薩克斯風，聽起來卻幾乎不像薩克斯風。台北出生、多倫多長大的 Alex Zhang Hungtai，早年的名義是 Dirty Beaches，如今寫電影配樂與前衛作品。2019 年，他和三位合作者在蒙特婁的聖若瑟聖堂深夜錄音，再把素材處理成帶金屬光澤的無調 drone。聖堂給了聲音洞窟般的空間；疫情期間，這批錄音在洛杉磯完成。直到收尾的〈Mazil〉，薩克斯風才完整地發出聲音。Shelter Press 在 2026 年替它出版。",
+    "sourceUrls": [
+     "https://alexzhanghungtai.bandcamp.com/album/dras",
+     "https://daily.bandcamp.com/best-ambient/the-best-ambient-music-on-bandcamp-april-2026",
+     "https://en.wikipedia.org/wiki/Alex_Zhang_Hungtai"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d6/f6/d9/d6f6d949-01b6-a385-b28d-76c9df827a0a/mzaf_11240175217264423779.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-05T16:59:13.543Z",
+    "appleCollectionId": "1866719695",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1866719695「Alex Zhang Hungtai《Dras》」：人工身分：Apple 9 軌，與 Bandcamp 九軌 35:23 一致，取第 1 軌〈Erg〉。主線 2026-11-05 lookup 核對、試聽檔 HTTP 206。",
+    "trackName": "Dras",
+    "popularity": "deezer-rank"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "William Basinski",
+   "album": "The Clocktower at the Beach (1979)",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "manual",
+    "rgMbid": "",
+    "upc": "",
+    "aliasesChecked": true,
+    "mbAbsenceProof": {
+     "queries": [
+      "musicbrainz release-group artist:\"William Basinski\"",
+      "musicbrainz release-group releasegroup:\"The Clocktower at the Beach (1979)\""
+     ],
+     "checkedAt": "2026-11-05",
+     "conclusion": "MB release-group 兩向查詢皆無對應 Album 條目，走人工身分。"
+    },
+    "manualEvidenceUrls": [
+     "https://lineimprint.bandcamp.com/album/the-clocktower-at-the-beach-1979",
+     "https://daily.bandcamp.com/best-ambient/the-best-ambient-on-bandcamp-march-2023"
+    ],
+    "manualRuling": "雲端主線 2026-11-05 依 ALBUM_ONBOARDING §1 人工身分核可（店主 2026-09-02 裁定權下放；薄細項策展線 add-20261105-md37）",
+    "coverSourceHint": "bandcamp",
+    "aliasReview": "磁帶迴圈：Bandcamp Daily 把它列為 Basinski 洞穴般的代表作之一：1979 年舊錄音以磁帶迴圈重發（LINE）；Basinski 池中多張頹靡。｜⚠ 色溫估 -0.7 偏邊緣（Basinski 常偏中性）。｜MB 查無（MB release-group 兩向查詢皆無對應 Album 條目，走人工身分。），走 §1 人工身分。證據：https://lineimprint.bandcamp.com/album/the-clocktower-at-the-beach-1979 https://daily.bandcamp.com/best-ambient/the-best-ambient-on-bandcamp-march-2023 https://daily.bandcamp.com/best-ambient/the-best-ambient-on-bandcamp-march-2023 https://lineimprint.bandcamp.com/album/the-clocktower-at-the-beach-1979",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2023,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://f4.bcbits.com/img/a3375515395_10.jpg",
+    "source": "bandcamp",
+    "note": "§1 人工身分卡（MB 查無）；Bandcamp lineimprint.bandcamp.com/album/the-clocktower-at-the-beach-1979 og:image（1200px），主線 2026-11-05 縮圖表目視與藝人、盤名相符。",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-05T16:58:16Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 4161,
+    "source": "manual:depth-rubric（§0.8.1）",
+    "checkedAt": "2026-11-05T16:58:16Z",
+    "note": "機器基線 4/4/4（Last.fm listeners 4161）；主線：1979 年未發表的檔案錄音，代表作仍是《The Disintegration Loops》＝經典 3；LINE 正規發行、Last.fm 4,161＝冷門 4；長音 tape drone＝硬蕊 3（機器 4/4/4）"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "街上撿回來的破電視機，在 1979 年成了聲源。以四碟《The Disintegration Loops》聞名的 William Basinski，慣用類比磁帶迴圈創作；那年他與伴侶 James Elaine 同住舊金山，撿回電視機的正是 Elaine。他把香腸夾工廠的夜班錄音與那台黑白電視機的聲音，一併做成磁帶迴圈。這件 42 分鐘的作品是他最早的 drone 之一，也讓他從此轉向長篇創作。直到 2023 年 3 月 3 日才由 LINE 首度發行。",
+    "sourceUrls": [
+     "https://lineimprint.bandcamp.com/album/the-clocktower-at-the-beach-1979",
+     "https://www.discogs.com/master/3030890-William-Basinski-The-Clocktower-At-The-Beach-1979",
+     "https://daily.bandcamp.com/best-ambient/the-best-ambient-on-bandcamp-march-2023"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/69/7f/43/697f4304-52c8-054b-c3a0-70c2a8d2f447/mzaf_10611471187893276111.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-05T16:59:15.467Z",
+    "appleCollectionId": "1671612439",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1671612439「William Basinski《The Clocktower at the Beach (1979)》」：人工身分：Apple 3 軌（兩段節錄＋42 分全曲），發行 2023-03-03 與 LINE 一致，取第 3 軌〈The Clocktower at the Beach (1979)〉。主線 2026-11-05 lookup 核對、試聽檔 HTTP 206。",
+    "trackName": "The Clocktower at the Beach (1979) (Excerpt 2)",
+    "popularity": "deezer-rank"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Jake Muir",
+   "album": "Pareidolia",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "5c9a743e-5471-4b22-a1fe-e5506e202feb",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "暗黑 ambient：Bandcamp Daily 寫它把極端失真片段縫合並注入 doom，比前作 Campana Sonans 更陰暗。｜⚠ 失真密度高，x 可能逼近 2.7；若判躁請汰。｜MB release-group 5c9a743e-5471-4b22-a1fe-e5506e202feb：title「Pareidolia」、Album、first-release-date 2026-06-05、artist-credit「Jake Muir」。證據：https://daily.bandcamp.com/best-ambient/the-best-ambient-music-on-bandcamp-june-2026 https://enmossed.bandcamp.com/album/pareidolia",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2026,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/5c9a743e-5471-4b22-a1fe-e5506e202feb/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-05T16:58:16Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-05 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 270,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-05T16:58:16Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 270）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 270），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "在隨機的東西裡看見臉孔，就是這張的標題。洛杉磯的 DJ 與田野錄音者 Jake Muir 借 Pareidolia（空想性錯視）這個詞，說明 ambient 與金屬之間的共通處。念頭始於 2022 年：他與 Evan Caminiti 合作《Talisman》，第一次動手處理吉他，從此回頭整理自己與金屬的關係。他從數百首 death metal 與 black metal 裡抽出最暈眩的段落，把 riff 拉長、放慢。唱片 2026 年交由 enmossed 推出。",
+    "sourceUrls": [
+     "https://enmossed.bandcamp.com/album/pareidolia",
+     "https://daily.bandcamp.com/best-ambient/the-best-ambient-music-on-bandcamp-june-2026",
+     "https://musicbrainz.org/release-group/5c9a743e-5471-4b22-a1fe-e5506e202feb"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-05T16:58:16Z",
+    "note": "Apple us／gb／jp 以藝人搜尋專輯，無《Pareidolia》條目（enmossed 只在 Bandcamp）。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "KMRU",
+   "album": "Natur",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "c083b8c6-9cb7-44f0-9a56-99064c6e346b",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "暗色田野錄音拼貼：Bandcamp Daily 年度榜寫它：顆粒嗡鳴與零碎田野錄音，從尖銳喀噠沉入無底虛空。｜⚠ 出處是年度榜（best-of-2024）；整體可能偏輕、偏空，y 邊緣。｜MB release-group c083b8c6-9cb7-44f0-9a56-99064c6e346b：title「Natur」、Album、first-release-date 2024-07-26、artist-credit「KMRU」。證據：https://daily.bandcamp.com/best-of-2024/the-best-ambient-music-of-2024 https://kmru.bandcamp.com/album/natur",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2024,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/c083b8c6-9cb7-44f0-9a56-99064c6e346b/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-05T16:58:16Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-05 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 2305,
+    "source": "manual:depth-rubric（§0.8.1）",
+    "checkedAt": "2026-11-05T16:58:16Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 2305）；主線：Touch 正規發行、KMRU 代表作是《Peel》＝經典 3；Last.fm 2,305（下限 3），Touch 廠牌錨點＝冷門 4；單曲 52 分 drone＝硬蕊 3（機器 3/5/3）"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "從奈洛比搬到柏林，他先聽見的是安靜。本名 Joseph Kamaru 的 KMRU，是肯亞的實驗電子音樂人。老家處處是鳥蟲、人聲，還有高壓電線的電磁嗡響，柏林卻把電線埋進地下，這份落差成了作品的起點。他用電磁麥克風收錄靜電與機械的低吼，田野錄音只在噪音之間當作轉場，沒有節拍也沒有旋律。這首 52 分 38 秒的長曲 2022 年完成，之後成了他的現場常駐曲。2024 年 7 月 26 日，來自英國的 Touch 發行了它，這是他在那裡的首張作品。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/c083b8c6-9cb7-44f0-9a56-99064c6e346b",
+     "https://touch33.net/?p=13287",
+     "https://kmru.bandcamp.com/album/natur",
+     "https://daily.bandcamp.com/best-of-2024/the-best-ambient-music-of-2024",
+     "https://igloomag.com/reviews/kmru-natur-touch"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/1c/87/55/1c8755ab-dab8-0a99-6500-efb641146dde/mzaf_16442324791306488331.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-11-05T16:58:16Z",
+    "appleCollectionId": "1743764327",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1743764327「KMRU《Natur》」：Apple 同名 5 軌（2024-07-26，Touch）；MB 只登 2 軌（CD 單曲＋節錄），數位版分段，同一張，取第 1 軌〈Natur 1〉。主線 2026-11-05 lookup 核對、試聽檔 HTTP 206。",
+    "trackName": "Natur 1",
+    "popularity": "deezer-rank"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "jason calhoun",
+   "album": "small circle",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "manual",
+    "rgMbid": "",
+    "upc": "",
+    "aliasesChecked": true,
+    "mbAbsenceProof": {
+     "queries": [
+      "musicbrainz release-group artist:\"jason calhoun\"",
+      "musicbrainz release-group releasegroup:\"small circle\""
+     ],
+     "checkedAt": "2026-11-05",
+     "conclusion": "MB release-group 兩向查詢皆無對應 Album 條目，走人工身分。"
+    },
+    "manualEvidenceUrls": [
+     "https://napsounds.bandcamp.com/album/small-circle",
+     "https://daily.bandcamp.com/best-ambient/the-best-ambient-music-on-bandcamp-october-2023"
+    ],
+    "manualRuling": "雲端主線 2026-11-05 依 ALBUM_ONBOARDING §1 人工身分核可（店主 2026-09-02 裁定權下放；薄細項策展線 add-20261105-md37）",
+    "coverSourceHint": "bandcamp",
+    "aliasReview": "drone：Bandcamp Daily 稱它像壞掉的收音機：鋸齒白噪音對撞厚 pad，成一團扭曲、霧霾般的不安。｜⚠ pad 帶 lush，色溫估 -0.9 偏邊緣。｜MB 查無（MB release-group 兩向查詢皆無對應 Album 條目，走人工身分。），走 §1 人工身分。證據：https://napsounds.bandcamp.com/album/small-circle https://daily.bandcamp.com/best-ambient/the-best-ambient-music-on-bandcamp-october-2023 https://daily.bandcamp.com/best-ambient/the-best-ambient-music-on-bandcamp-october-2023 https://napsounds.bandcamp.com/album/small-circle",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2023,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://f4.bcbits.com/img/a1799161491_10.jpg",
+    "source": "bandcamp",
+    "note": "§1 人工身分卡（MB 查無）；Bandcamp napsounds.bandcamp.com/album/small-circle og:image（1200px），主線 2026-11-05 縮圖表目視與藝人、盤名相符。",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-05T16:58:16Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 266,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-05T16:58:16Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 266）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 266），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "向來溫柔的 ambient，這回撞上了鋸齒白噪音。出身紐約州伊薩卡、現居費城的 jason calhoun，長年發行 ambient 與 drone，樂評聽到他過去的作品多半帶著新世紀氣息。這張卻失去了調性方向，只留下前作《ben c》的粗礪質地，鋸齒狀的白噪音與厚重的 pad 互相對撞，像一台壞掉的收音機。素材裡還藏著低聲交談、走在木頭步道上的腳步，以及隱約的修道院嗡鳴。發行它的是 Dear Life Records，那是 2023 年的事。",
+    "sourceUrls": [
+     "https://napsounds.bandcamp.com/album/small-circle",
+     "https://daily.bandcamp.com/best-ambient/the-best-ambient-music-on-bandcamp-october-2023"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6a/a3/ac/6aa3ac42-900e-aeea-3f63-4857018ce62e/mzaf_8438877577326968940.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-11-05T16:58:16Z",
+    "appleCollectionId": "1754430793",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1754430793「Jason Calhoun《small circle》」：人工身分：Apple 6 軌，與 Bandcamp 六首 53:40 一致，取第 1 軌〈small circle〉。主線 2026-11-05 lookup 核對、試聽檔 HTTP 206。",
+    "trackName": "small circle",
+    "popularity": "deezer-rank"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Susan Geaney",
+   "album": "Tape Melt",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "manual",
+    "rgMbid": "",
+    "upc": "",
+    "aliasesChecked": true,
+    "mbAbsenceProof": {
+     "queries": [
+      "artist:\"Susan Geaney\"",
+      "releasegroup:\"Tape Melt\""
+     ],
+     "checkedAt": "2026-11-05",
+     "conclusion": "MusicBrainz release-group 搜尋藝人＋專輯名皆無對應條目（Bandcamp-only 發行）"
+    },
+    "manualEvidenceUrls": [
+     "https://fortevilfruit.bandcamp.com/album/tape-melt",
+     "https://daily.bandcamp.com/best-experimental/the-best-experimental-music-on-bandcamp-august-2022"
+    ],
+    "manualRuling": "雲端主線 2026-11-05 依 ALBUM_ONBOARDING §1 人工身分核可（店主 2026-09-02 裁定權下放；薄細項策展線 add-20261105-md37）",
+    "coverSourceHint": "bandcamp",
+    "aliasReview": "磁帶衰變／loop：Bandcamp Daily 寫它從闇啞的 drone 長成合奏，模擬磁帶融化的失真；低音長笛、弦樂與卡帶機的糊感，落頹靡。｜⚠ 合奏後段密度上升，x 可能略高｜MB 查無（MusicBrainz release-group 搜尋藝人＋專輯名皆無對應條目（Bandcamp-only 發行）），走 §1 人工身分。證據：https://fortevilfruit.bandcamp.com/album/tape-melt https://daily.bandcamp.com/best-experimental/the-best-experimental-music-on-bandcamp-august-2022 https://daily.bandcamp.com/best-experimental/the-best-experimental-music-on-bandcamp-august-2022 https://fortevilfruit.bandcamp.com/album/tape-melt https://f4.bcbits.com/img/a4246294172_10.jpg",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2022,
+    "yearNote": ""
+   },
+   "genres": [
+    "classical"
+   ],
+   "cover": {
+    "url": "https://f4.bcbits.com/img/a4246294172_10.jpg",
+    "source": "bandcamp",
+    "note": "§1 人工身分卡（MB 查無）；Bandcamp fortevilfruit.bandcamp.com/album/tape-melt og:image（1200px），主線 2026-11-05 縮圖表目視與藝人、盤名相符。",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-05T16:58:16Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 70,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-05T16:58:16Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 70）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 70），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "錄影帶在機器裡受壓的聲音，長成一首 35 分鐘的合奏。愛爾蘭作曲家 Susan Geaney 小時候拿 VHS 與卡帶反覆重錄，錄帶一再變形，磨出融化般的雜聲。這首只有一軌的曲子，是為都柏林的 Kirkos Ensemble 而寫，編制是八位樂手加上三台卡帶機，低音長笛由她自己吹。樂聲從闇啞的 drone 起步，慢慢長成一整群忙碌的聲部，最後只剩下一個高音。Fort Evil Fruit 於 2022 年把它發行。",
+    "sourceUrls": [
+     "https://daily.bandcamp.com/best-experimental/the-best-experimental-music-on-bandcamp-august-2022",
+     "https://fortevilfruit.bandcamp.com/album/tape-melt",
+     "https://www.cmc.ie/node/185596"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-05T16:58:16Z",
+    "note": "Apple us／gb／jp 以藝人搜尋專輯，無《Tape Melt》條目（Fort Evil Fruit 卡帶＋Bandcamp）。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "seah",
+   "album": "Conduits of the Hydrosphere",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "3abd499e-bc0b-4589-9228-1ba2f01b6a48",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "暗黑 drone／長音：Bandcamp Daily 寫它是十年水體錄音揉成的「heavy, cavernous atmospheres」；重而不壓迫的低頻密度，落頹靡。｜策展無疑點｜MB release-group 3abd499e-bc0b-4589-9228-1ba2f01b6a48：title「Conduits of the Hydrosphere」、Album、first-release-date 2022-05-15、artist-credit「seah」。證據：https://daily.bandcamp.com/best-experimental/the-best-experimental-music-on-bandcamp-june-2022 https://somnimage.bandcamp.com/album/conduits-of-the-hydrosphere https://f4.bcbits.com/img/a3877974702_10.jpg",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2022,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/3abd499e-bc0b-4589-9228-1ba2f01b6a48/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-05T16:58:16Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-05 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 45,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-05T16:58:16Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 45）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 45），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "seah 帶著用舊的麥克風，到世界各地錄水。seah 這名字屬於伊利諾州的聲音藝術家 Chelsea Heikes。本作是她十年研究的成果：一邊拿麥克風與攝影機四處收錄水聲，一邊練習舞踏與野口體操。五首曲子探問的是，身為一個水體是什麼意思。水聲被拉成洞窟般厚重的低頻，〈asteroidal origin of water〉像一條灌滿撞擊與呼喊聲的風洞。2022 年，Somnimage 替她出版了這五首曲子。",
+    "sourceUrls": [
+     "https://daily.bandcamp.com/best-experimental/the-best-experimental-music-on-bandcamp-june-2022",
+     "https://somnimage.bandcamp.com/album/conduits-of-the-hydrosphere",
+     "https://musicbrainz.org/release-group/3abd499e-bc0b-4589-9228-1ba2f01b6a48"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-05T16:58:16Z",
+    "note": "Apple us／gb／jp 以藝人搜尋專輯，無《Conduits of the Hydrosphere》條目（Somnimage 只在 Bandcamp）。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Jacob Kirkegaard",
+   "album": "Snowblind",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "0411224d-de78-475e-a625-c9d11f707a9b",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "暗色 field recording／廢墟：Bandcamp Daily 寫它是「cold and hostile」的氣象 drone，取材 Andrée 北極氣球之旅；風雪、冰與陰森低鳴，池中 Kirkegaard 已落頹靡。｜策展無疑點｜MB release-group 0411224d-de78-475e-a625-c9d11f707a9b：title「Snowblind」、Album、first-release-date 2025-01-24、artist-credit「Jacob Kirkegaard」。證據：https://daily.bandcamp.com/best-experimental/the-best-experimental-music-on-bandcamp-january-2025 https://helenscarsdale.bandcamp.com/album/snowblind https://f4.bcbits.com/img/a2599450358_10.jpg",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2025,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/0411224d-de78-475e-a625-c9d11f707a9b/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-05T16:58:16Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-05 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 642,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-05T16:58:16Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 642）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 642），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "封面那張照片，拍於 1897 年一趟沒人生還的北極氣球之旅。丹麥聲音藝術家 Jacob Kirkegaard 取材的，是瑞典探險家 S.A. Andrée 那年 7 月的氣球探險。氣球升空兩天後墜上浮冰，同行三人最後死在白島。1930 年，有人發現了他們的營地，Nils Strindberg 留下的底片被沖洗出來，其中一張成了封面。Kirkegaard 想做一張沒有出口、沒有溫暖的唱片，用隱晦的音高、顫動的殘響與北極的狂風搭成。唱片面世於 2025 年。",
+    "sourceUrls": [
+     "https://daily.bandcamp.com/best-experimental/the-best-experimental-music-on-bandcamp-january-2025",
+     "https://helenscarsdale.bandcamp.com/album/snowblind",
+     "https://en.wikipedia.org/wiki/Andr%C3%A9e%27s_Arctic_balloon_expedition",
+     "https://en.wikipedia.org/wiki/Jacob_Kirkegaard",
+     "https://musicbrainz.org/release-group/0411224d-de78-475e-a625-c9d11f707a9b"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e7/30/4a/e7304a6f-da8e-62f2-691e-76f5cf07f400/mzaf_13523289009855125253.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-05T16:59:19.412Z",
+    "appleCollectionId": "1784292379",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1784292379「Jacob Kirkegaard《Snowblind》」：曲目 11/11 對上 MB 原盤（Apple 共 11 軌），取第 1 軌〈ascend〉。主線 2026-11-05 lookup 核對、試聽檔 HTTP 206。",
+    "trackName": "astray",
+    "popularity": "deezer-rank"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Alma Laprida",
+   "album": "Pitch Dark and Trembling",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "manual",
+    "rgMbid": "",
+    "upc": "",
+    "aliasesChecked": true,
+    "mbAbsenceProof": {
+     "queries": [
+      "artist:\"Alma Laprida\"",
+      "releasegroup:\"Pitch Dark and Trembling\""
+     ],
+     "checkedAt": "2026-11-05",
+     "conclusion": "MusicBrainz release-group 搜尋藝人＋專輯名皆無對應條目（Bandcamp-only 發行）"
+    },
+    "manualEvidenceUrls": [
+     "https://almalaprida.bandcamp.com/album/pitch-dark-and-trembling",
+     "https://daily.bandcamp.com/best-experimental/the-best-experimental-music-on-bandcamp-october-2024"
+    ],
+    "manualRuling": "雲端主線 2026-11-05 依 ALBUM_ONBOARDING §1 人工身分核可（店主 2026-09-02 裁定權下放；薄細項策展線 add-20261105-md37）",
+    "coverSourceHint": "bandcamp",
+    "aliasReview": "暗黑 drone／長音：Bandcamp Daily 寫 tromba marina 加效果器造出「subterranean waves」；低頻潮湧像地底暗流，落頹靡。｜⚠ 曲目合計約 31 分鐘，貼近專輯下限｜MB 查無（MusicBrainz release-group 搜尋藝人＋專輯名皆無對應條目（Bandcamp-only 發行）），走 §1 人工身分。證據：https://almalaprida.bandcamp.com/album/pitch-dark-and-trembling https://daily.bandcamp.com/best-experimental/the-best-experimental-music-on-bandcamp-october-2024 https://daily.bandcamp.com/best-experimental/the-best-experimental-music-on-bandcamp-october-2024 https://almalaprida.bandcamp.com/album/pitch-dark-and-trembling https://f4.bcbits.com/img/a3273353785_10.jpg",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2024,
+    "yearNote": ""
+   },
+   "genres": [
+    "classical"
+   ],
+   "cover": {
+    "url": "https://f4.bcbits.com/img/a3273353785_10.jpg",
+    "source": "bandcamp",
+    "note": "§1 人工身分卡（MB 查無）；Bandcamp almalaprida.bandcamp.com/album/pitch-dark-and-trembling og:image（1200px），主線 2026-11-05 縮圖表目視與藝人、盤名相符。",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-05T16:58:16Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": null,
+    "source": "manual:depth-rubric（§0.8.1）",
+    "checkedAt": "2026-11-05T16:58:16Z",
+    "note": "機器基線 undefined/undefined/undefined（Last.fm listeners 查無）；主線：worker 查無；Bandcamp 自發（Outside Time）、Last.fm 查無＝冷門 5；現場 drone＝硬蕊 3"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 查無），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "十五年前那場把她震醒的地震，後來被放進了垃圾桶。阿根廷藝術家 Alma Laprida 移居華盛頓特區後，在中世紀的弓弦樂器 tromba marina 上即興演奏。那場地震發生在玻利維亞；這次她把拆喇叭得來的 exciter 放進箱子與垃圾桶，讓它們隨低頻震顫，用在〈Trembling〉一曲。琴聲另外送進一台 18 吋重低音喇叭與一排效果踏板，連房間的牆壁都跟著共振。這場演出 2023 年 6 月在 Bard College 現場錄成，2024 年發行。",
+    "sourceUrls": [
+     "https://daily.bandcamp.com/best-experimental/the-best-experimental-music-on-bandcamp-october-2024",
+     "https://almalaprida.bandcamp.com/album/pitch-dark-and-trembling",
+     "https://en.wikipedia.org/wiki/Tromba_marina"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/8c/b4/34/8cb4347a-8823-66f9-702f-c70f2b6e27e3/mzaf_7594555174489676551.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-05T16:59:20.999Z",
+    "appleCollectionId": "1835739838",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1835739838「Alma Laprida《Pitch Dark and Trembling》」：人工身分：Apple 4 軌，與 Bandcamp 四軌 30:38 一致，取第 1 軌〈A Thick Event〉。主線 2026-11-05 lookup 核對、試聽檔 HTTP 206。",
+    "trackName": "Trust Me",
+    "popularity": "deezer-rank"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Amby Downs",
+   "album": "Ngunmal",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "manual",
+    "rgMbid": "",
+    "upc": "",
+    "aliasesChecked": true,
+    "mbAbsenceProof": {
+     "queries": [
+      "artist:\"Amby Downs\"",
+      "releasegroup:\"Ngunmal\""
+     ],
+     "checkedAt": "2026-11-05",
+     "conclusion": "MusicBrainz release-group 搜尋藝人＋專輯名皆無對應條目（Bandcamp-only 發行）"
+    },
+    "manualEvidenceUrls": [
+     "https://room40.bandcamp.com/album/ngunmal",
+     "https://daily.bandcamp.com/best-experimental/the-best-experimental-music-on-bandcamp-november-2023"
+    ],
+    "manualRuling": "雲端主線 2026-11-05 依 ALBUM_ONBOARDING §1 人工身分核可（店主 2026-09-02 裁定權下放；薄細項策展線 add-20261105-md37）",
+    "coverSourceHint": "bandcamp",
+    "aliasReview": "暗黑 drone／長音：Bandcamp Daily 寫其中「I Am Holding My Breath」是「cavernous … bass-heavy tremblings」；Room40 低頻 drone，落頹靡。｜⚠ 首曲有 clicks/clacks 節奏顆粒｜MB 查無（MusicBrainz release-group 搜尋藝人＋專輯名皆無對應條目（Bandcamp-only 發行）），走 §1 人工身分。證據：https://room40.bandcamp.com/album/ngunmal https://daily.bandcamp.com/best-experimental/the-best-experimental-music-on-bandcamp-november-2023 https://daily.bandcamp.com/best-experimental/the-best-experimental-music-on-bandcamp-november-2023 https://room40.bandcamp.com/album/ngunmal https://f4.bcbits.com/img/a2816650242_10.jpg",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2023,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://f4.bcbits.com/img/a2816650242_10.jpg",
+    "source": "bandcamp",
+    "note": "§1 人工身分卡（MB 查無）；Bandcamp room40.bandcamp.com/album/ngunmal og:image（1200px），主線 2026-11-05 縮圖表目視與藝人、盤名相符。",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-05T16:58:16Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 112,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-05T16:58:16Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 112）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 112），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "這兩首長篇裡的低頻，背著一段被殖民遮蔽的家族史。Amby Downs 是澳洲藝術家 Tahlia Palmer 的化名，她是 Murri 與歐洲的混血。過去約五年，她一路追查破碎的家族過往，把被殖民暴力壓住的血脈一點一點縫回來。標題曲〈Ngunmal〉約 29 分鐘，重複的喀喀聲包在狂風般的 drone 裡；〈I Am Holding My Breath〉約 21 分鐘，回聲深不見底。Room40 在 2023 年把這兩首一起推出。",
+    "sourceUrls": [
+     "https://room40.org/edition/ngunmal/",
+     "https://room40.bandcamp.com/album/ngunmal",
+     "https://daily.bandcamp.com/best-experimental/the-best-experimental-music-on-bandcamp-november-2023",
+     "https://room40.bandcamp.com/album/kinjarling-studies-soundtracks-five-years-on"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/75/29/bb/7529bbe7-18bc-7463-03c3-b3a4db993cc4/mzaf_13884793638602236964.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-05T16:59:22.577Z",
+    "appleCollectionId": "1707993091",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1707993091「amby downs《Ngunmal》」：人工身分：Apple 2 軌，與 Room40 兩首主曲一致，取第 1 軌〈Ngunmal〉。主線 2026-11-05 lookup 核對、試聽檔 HTTP 206。",
+    "trackName": "I Am Holding My Breath",
+    "popularity": "deezer-rank"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Lori Goldston",
+   "album": "Open Space",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "a439473e-d772-4fb4-93e8-5f78ba175608",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "冷音塊／弦樂失真：Bandcamp Daily 寫她用大提琴、音箱與失真踏板一口氣錄成：「heavy and grinding」的長音；失真大提琴像吉他牆，但是往下沉，落頹靡。｜⚠ 失真強，x 有跨 2.7 風險｜MB release-group a439473e-d772-4fb4-93e8-5f78ba175608：title「Open Space」、Album、first-release-date 2025-07-18、artist-credit「Lori Goldston」。證據：https://daily.bandcamp.com/best-experimental/the-best-experimental-music-on-bandcamp-august-2025 https://relativepitchrecords.bandcamp.com/album/open-space https://f4.bcbits.com/img/a1544469679_10.jpg",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2025,
+    "yearNote": ""
+   },
+   "genres": [
+    "classical"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/a439473e-d772-4fb4-93e8-5f78ba175608/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-05T16:58:16Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-05 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 234,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-05T16:58:16Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 234）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 234），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "一把大提琴、一台音箱、一顆失真踏板，一口氣錄完。美國大提琴家 Lori Goldston 在 1993 至 1994 年擔任 Nirvana 的巡演大提琴手，這張則是她的獨奏。錄音時，她看著一部用靜止鏡頭拍下大峽谷光影的影片。琴聲經過失真與回授，像過載的金屬，長音隨運弓不斷重塑，乍聽會以為是獨奏吉他，旋律卻始終是安靜的中心。十首曲子約 74 分半，2025 年由 Relative Pitch Records 出版。",
+    "sourceUrls": [
+     "https://relativepitchrecords.bandcamp.com/album/open-space",
+     "https://daily.bandcamp.com/best-experimental/the-best-experimental-music-on-bandcamp-august-2025",
+     "https://en.wikipedia.org/wiki/Lori_Goldston",
+     "https://musicbrainz.org/release-group/a439473e-d772-4fb4-93e8-5f78ba175608"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ec/ce/45/ecce45d8-a941-94d0-5c3e-cf720d354b0a/mzaf_6380826376511376017.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-11-05T16:58:16Z",
+    "appleCollectionId": "1812076711",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1812076711「Lori Goldston《Open Space》」：Apple 10 軌，與 Bandcamp 十軌約 74 分一致（MB 無曲目表），取第 1 軌〈Morning Air〉。主線 2026-11-05 lookup 核對、試聽檔 HTTP 206。",
+    "trackName": "Morning Air",
+    "popularity": "deezer-rank"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  }
+ ]
+}

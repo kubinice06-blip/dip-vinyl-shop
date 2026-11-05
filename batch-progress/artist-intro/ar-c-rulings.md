@@ -2701,3 +2701,10 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - Mad Professor 四張合作卡各寫搭檔，Mad Professor 本人只用一兩句帶過。
 - 題材照寫：Jacob Miller 1980 年車禍身亡；Larry Marshall 晚年阿茲海默症、2017 年過世；Devon Russell 1997 年腦瘤過世；Freddie McKay 1986 年心臟病過世；George Faith 2003 年癌症過世；Trinity Roots 解散時公司清算、欠稅；Carla Morrison 公開談焦慮與憂鬱。
 - 主線審稿 10 處：「金斯敦」全批統一為「京斯敦」（與前批一致）；在世者不寫榜單、銷量、獎項數——Tetrack 刪英國上榜、Trinity Roots 刪紐西蘭白金、Carla Morrison「三座拉丁葛萊美」改「拿過」、Susan Cadogan 刪英國前 5、Echo Minott 刪牙買加冠軍；Devon Russell 補「牙買加」；Oki 片假名「砂澤ビッキ」改 Bikki Sunazawa，刪成長地壓回 250 字。
+
+## 二十批收尾（2026-11-05）
+
+- ar-d-501～520 全數上架：寫 770 位、不寫 30 位（skipped，多為沒有聲音／身世事實或研究稿只有單源）；主線審稿合計 247 處，另修已上線 ar-d-503 田中フミヤ 2 處。
+- 與 main 合併時，main 同日另線（add-20261105-md38 等，ar-d-283～286）也寫了 Hammock、Kevin Richard Martin、Benoît Pioulard、Jacob Kirkegaard、Acetone 五位；建置依檔名排序，以本線 ar-d-5xx 版本為準（兩版都經主線審稿）。
+- 合併後介紹總數 10,454 位（本線前 9,650）。
+- 通則補充（本線累積）：研究稿只有一條來源的一律不寫；thin 的「做法」句若只剩角色分工或歌詞性質，撤稿；片假名與平假名人名一律改羅馬字，日文漢字轉台灣字形（冨→富、勲→勳、譲→讓、恵→惠、辺→邊、髙→高、内→內）；在世者的榜單名次、銷量、串流數、認證、獎項數一律不寫。

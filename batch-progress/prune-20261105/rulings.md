@@ -28,3 +28,18 @@
 - 改保留：Willie Dixon《Hidden Charms》（葛萊美）、Dustin O'Halloran《Piano Solos Vol. 2》、Lonnie Liston Smith《Renaissance》《Reflections of a Golden Dream》、Lalo Schifrin《Black Widow》、Joe Lee Wilson & Bond Street、Hank Mobley《Hank Mobley》（BN 1568）、Dane Donohue、Tom Jones《Along Came Jones》。
 - 改 borderline：Dylan《Dylan》、Neil Young《Old Ways》、Cohen《Dear Heather》、Shakatak《Night Birds》、The Who《Face Dances》、Fred Wesley《House Party》、Curtis《Do It All Night》、Loose Ends《Zagora》、L.T.D.《Togetherness》、Sister Sledge《Love Somebody Today》、Temptations《A Song for You》、Commodores《Hot on the Tracks》。
 - 保留側抽查：多數合理；偏寬處（日本融合、福音小廠、Steve Kuhn 現場等）不改，寧留給店主從 kept-near 挑。
+
+## 自動保留（2026-11-05 店主：「歐洲爵士全部保留；Blue Note 留代表性的，查價格」）
+
+- 459 張爵士候選逐張查 Discogs（廠牌、發行國、want/have），Blue Note 281 張再查 master 主版的最低售價。
+- **歐洲爵士 61 張全保留**：依藝人國籍／活動地認定（含 Petrucciani、Terrasson、Yaron Herman、Maya Delilah）；
+  Trijntje Oosterhuis 的 pop／soul 兩張、Aznavour／Trenet（香頌）、Van Morrison、以色列籍樂手不算。
+- **Blue Note 代表作 68 張保留**：want ≥ 1000 或原版最低售價 ≥ US$100。只看價格會偏向 1955–67 原版，所以兩者取其一。
+  其餘 174 張 Blue Note（多為 90 年代後 CD 期與 70–80 年代後期作）不自動保留，店主可再手動按。
+- 明細 `auto-keep.json`；寫進 artifact db `keep`（欄位 `auto` 標來源）。
+
+## 套用（2026-11-05，店主「可以」）
+
+- 保留：artifact db `keep` 249 筆，其中 236 筆在候選 1,278 張內（13 筆是嚴格條件前就剔除的舊候選）。
+- 移出 1,042 張；被拿掉的 seed 列原樣存 `removed-seed-rows.json`（要加回就照原列插回 seed、從 `data/pool-removed.json` 刪掉、重建 mood 與曲風樹）。
+- 最終確認時查過：0 頂點、0 三軸 ≥4、0 店內庫存、全部在 seed。

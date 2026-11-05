@@ -1,0 +1,884 @@
+{
+ "group": "ml66b",
+ "factions": [
+  {
+   "id": "warm-downtempo",
+   "zh": "暖 downtempo／electronica",
+   "count": 6,
+   "why": "Bandcamp Daily 有專文／榜單的暖慢有拍或有歌電子"
+  },
+  {
+   "id": "warm-electronica",
+   "zh": "暖 electronica／IDM 慢盤",
+   "count": 4,
+   "why": "Bandcamp Daily 有專文／榜單的暖慢有拍或有歌電子"
+  },
+  {
+   "id": "balearic-poolside",
+   "zh": "Balearic／泳池慢拍",
+   "count": 3,
+   "why": "Bandcamp Daily 有專文／榜單的暖慢有拍或有歌電子"
+  },
+  {
+   "id": "ambient-pop",
+   "zh": "ambient pop／電子女聲暖盤",
+   "count": 9,
+   "why": "Bandcamp Daily 有專文／榜單的暖慢有拍或有歌電子"
+  },
+  {
+   "id": "hypnagogic",
+   "zh": "chillwave 式糊濾波電子",
+   "count": 1,
+   "why": "Bandcamp Daily 有專文／榜單的暖慢有拍或有歌電子"
+  }
+ ],
+ "albums": [
+  {
+   "artist": "Sunken Foal",
+   "album": "Hexose",
+   "year": 2020,
+   "label": "self-released",
+   "country": "ie",
+   "faction": "warm-downtempo",
+   "genres": [
+    "electronic"
+   ],
+   "why": "BC Daily Best Electronic 2020-04：Countersunk（Sunken Foal）的晚90s downtempo，Plaid 旋律加 Boards of Canada 式恍惚，大殘響糊成一團，暖慢包覆落恍惚",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1.2,
+    "z": 0.4,
+    "why": "無四拍，Plaid式旋律與BoC式濾波，超大殘響糊"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/4e67d9ae-d3f0-4b8e-8734-804299ae63d8",
+    "https://countersunk.bandcamp.com/album/hexose",
+    "https://daily.bandcamp.com/best-electronic/the-best-electronic-music-on-bandcamp-april-2020",
+    "https://f4.bcbits.com/img/a1107052489_10.jpg"
+   ],
+   "mbRgMbid": "4e67d9ae-d3f0-4b8e-8734-804299ae63d8",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "BC Daily 稱殘響帶「gothic」氛圍，z 可能偏低；Bandcamp 以 Countersunk 名義掛，MB 正名 Sunken Foal",
+   "storyUrls": [
+    "https://daily.bandcamp.com/best-electronic/the-best-electronic-music-on-bandcamp-april-2020"
+   ],
+   "coverUrl": "https://f4.bcbits.com/img/a1107052489_10.jpg",
+   "bandcampUrl": "https://countersunk.bandcamp.com/album/hexose"
+  },
+  {
+   "artist": "Tudor Acid",
+   "album": "Clevolati",
+   "year": 2019,
+   "label": "self-released",
+   "country": "gb",
+   "faction": "warm-downtempo",
+   "genres": [
+    "electronic"
+   ],
+   "why": "BC Daily Best Electronic 2019-11：全硬體、90s Plaid／Aphex 式旋律電子，71 分鐘慢拍旋律層層堆疊，暖厚",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.0,
+    "z": 0.5,
+    "why": "硬體合成旋律柔軟，中慢碎拍，類比溫暖"
+   },
+   "evidence": [
+    "https://tudoracid.bandcamp.com/album/clevolati",
+    "https://daily.bandcamp.com/best-electronic/best-bandcamp-electronic-music-november-2019",
+    "https://f4.bcbits.com/img/a0266188433_10.jpg"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "artist:\"Tudor Acid\" AND releasegroup:\"Clevolati\"",
+     "releasegroup:\"Clevolati\""
+    ],
+    "checkedAt": "2026-11-05",
+    "conclusion": "MB 有 Tudor Acid 藝人但無 Clevolati 作品條目；BC／Daily 為證"
+   },
+   "manualEvidenceUrls": [
+    "https://tudoracid.bandcamp.com/album/clevolati",
+    "https://daily.bandcamp.com/best-electronic/best-bandcamp-electronic-music-november-2019"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "71 分鐘 12 軌偏長；碎拍密度可能讓 x 到 2.7",
+   "storyUrls": [
+    "https://daily.bandcamp.com/best-electronic/best-bandcamp-electronic-music-november-2019"
+   ],
+   "coverUrl": "https://f4.bcbits.com/img/a0266188433_10.jpg",
+   "bandcampUrl": "https://tudoracid.bandcamp.com/album/clevolati"
+  },
+  {
+   "artist": "patten",
+   "album": "GLOW",
+   "year": 2020,
+   "label": "Warp",
+   "country": "gb",
+   "faction": "warm-electronica",
+   "genres": [
+    "electronic"
+   ],
+   "why": "BC Daily Best Electronic 2020-07：Durutti Column 式吉他織進學院電子，霧面旋律人聲與電子墊，慢而暖",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.1,
+    "z": 0.4,
+    "why": "吉他加人聲採樣糊成霧，電子墊厚，中慢拍"
+   },
+   "evidence": [
+    "https://patttten.bandcamp.com/album/glow",
+    "https://daily.bandcamp.com/best-electronic/the-best-electronic-music-on-bandcamp-july-2020",
+    "https://f4.bcbits.com/img/a4193186609_10.jpg"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "artist:\"patten\" AND releasegroup:\"GLOW\"",
+     "releasegroup:\"GLOW\""
+    ],
+    "checkedAt": "2026-11-05",
+    "conclusion": "MB 有 patten（Damien Roach）藝人但無 GLOW 專輯條目；BC 頁為證"
+   },
+   "manualEvidenceUrls": [
+    "https://patttten.bandcamp.com/album/glow",
+    "https://daily.bandcamp.com/best-electronic/the-best-electronic-music-on-bandcamp-july-2020"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "前作 Estoile Naiant 偏冷偏躁，GLOW 才轉柔；z 可能壓在 0.3 附近",
+   "storyUrls": [
+    "https://daily.bandcamp.com/best-electronic/the-best-electronic-music-on-bandcamp-july-2020"
+   ],
+   "coverUrl": "https://f4.bcbits.com/img/a4193186609_10.jpg",
+   "bandcampUrl": "https://patttten.bandcamp.com/album/glow"
+  },
+  {
+   "artist": "Robotalco",
+   "album": "Callisto",
+   "year": 2019,
+   "label": "self-released",
+   "country": "it",
+   "faction": "balearic-poolside",
+   "genres": [
+    "electronic"
+   ],
+   "why": "BC Daily Best Electronic 2019-07：Moodymann 式「糊又散」的泳池邊 Balearic，synthpop 與 dub 慢律動，51 分鐘微醺暖",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1.2,
+    "z": 0.8,
+    "why": "慢板Balearic，dub感低頻，糊光澤合成"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/5fd87acd-bab3-4e90-baf5-f2cb0196c7b1",
+    "https://coverartarchive.org/release-group/5fd87acd-bab3-4e90-baf5-f2cb0196c7b1",
+    "https://robotalco.bandcamp.com/album/callisto",
+    "https://daily.bandcamp.com/best-electronic/best-bandcamp-electronic-music-july-2019"
+   ],
+   "mbRgMbid": "5fd87acd-bab3-4e90-baf5-f2cb0196c7b1",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "",
+   "storyUrls": [
+    "https://daily.bandcamp.com/best-electronic/best-bandcamp-electronic-music-july-2019"
+   ],
+   "coverUrl": "",
+   "bandcampUrl": "https://robotalco.bandcamp.com/album/callisto"
+  },
+  {
+   "artist": "Pedro Magina",
+   "album": "Olímpia",
+   "year": 2020,
+   "label": "",
+   "country": "es",
+   "faction": "balearic-poolside",
+   "genres": [
+    "electronic"
+   ],
+   "why": "BC Daily Best Electronic 2020-02：Not Not Fun 系出身，五年後返回的「woozier」Balearic，迷幻暖霧，48 分鐘",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.1,
+    "z": 0.7,
+    "why": "搖晃失焦的慢Balearic，暖合成與磁帶感"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/dd73c2ca-e7a7-4c2b-84f5-341039f3c221",
+    "https://pedromagina.bandcamp.com/album/ol-mpia",
+    "https://daily.bandcamp.com/best-electronic/best-bandcamp-electronic-music-february-2020",
+    "https://f4.bcbits.com/img/a0851714735_10.jpg"
+   ],
+   "mbRgMbid": "dd73c2ca-e7a7-4c2b-84f5-341039f3c221",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "廠牌欄位未核實；CAA 無圖，用 Bandcamp 圖",
+   "storyUrls": [
+    "https://daily.bandcamp.com/best-electronic/best-bandcamp-electronic-music-february-2020"
+   ],
+   "coverUrl": "https://f4.bcbits.com/img/a0851714735_10.jpg",
+   "bandcampUrl": "https://pedromagina.bandcamp.com/album/ol-mpia"
+  },
+  {
+   "artist": "Talaboman",
+   "album": "The Night Land",
+   "year": 2017,
+   "label": "",
+   "country": "se",
+   "faction": "balearic-poolside",
+   "genres": [
+    "electronic"
+   ],
+   "why": "BC Daily Best Electronic of 2017：John Talabot 與 Axel Boman 合作，60 分鐘慢拍宇宙 downtempo／deep，暖厚低頻",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.2,
+    "z": 0.5,
+    "why": "慢律動，厚低頻，暖合成與氛圍"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/2da62c4d-28ad-41d3-94eb-f4f52d9c7c73",
+    "https://coverartarchive.org/release-group/2da62c4d-28ad-41d3-94eb-f4f52d9c7c73",
+    "https://talaboman.bandcamp.com/album/the-night-land",
+    "https://daily.bandcamp.com/best-of-2017/the-best-electronic-albums-of-2017"
+   ],
+   "mbRgMbid": "2da62c4d-28ad-41d3-94eb-f4f52d9c7c73",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "部分曲目為 house 拍；x 可能 2.7 附近",
+   "storyUrls": [
+    "https://daily.bandcamp.com/best-of-2017/the-best-electronic-albums-of-2017"
+   ],
+   "coverUrl": "",
+   "bandcampUrl": "https://talaboman.bandcamp.com/album/the-night-land"
+  },
+  {
+   "artist": "Piu",
+   "album": "Milao",
+   "year": 2026,
+   "label": "",
+   "country": "us",
+   "faction": "warm-electronica",
+   "genres": [
+    "electronic"
+   ],
+   "why": "BC Daily Best Electronic 2026-06：西岸藝人 Priyanka Chakrabarti，trip-hop 與類比合成 ambience 的廣天空電子，54 分鐘",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1.1,
+    "z": 0.5,
+    "why": "類比合成寬墊，trip-hop慢拍"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/303107e6-3bb5-4efb-92db-7c27fe5ce9a6",
+    "https://coverartarchive.org/release-group/303107e6-3bb5-4efb-92db-7c27fe5ce9a6",
+    "https://piusound.bandcamp.com/album/milao",
+    "https://daily.bandcamp.com/best-electronic/the-best-electronic-music-on-bandcamp-june-2026"
+   ],
+   "mbRgMbid": "303107e6-3bb5-4efb-92db-7c27fe5ce9a6",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Daily 提到 wide-skies festival techno 的一面，部分段落可能拍快",
+   "storyUrls": [
+    "https://daily.bandcamp.com/best-electronic/the-best-electronic-music-on-bandcamp-june-2026"
+   ],
+   "coverUrl": "",
+   "bandcampUrl": "https://piusound.bandcamp.com/album/milao"
+  },
+  {
+   "artist": "U-I",
+   "album": "Enter the Garden",
+   "year": 2020,
+   "label": "all my thoughts",
+   "country": "",
+   "faction": "warm-downtempo",
+   "genres": [
+    "electronic"
+   ],
+   "why": "BC Daily Best Electronic of 2020：Bandcamp 標籤 ambient／downtempo／electronica／glitch，41 分鐘暖慢的花園感電子",
+   "moodGuess": {
+    "x": 2.0,
+    "y": 1.0,
+    "z": 0.4,
+    "why": "downtempo慢拍，glitch點綴，暖墊"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/95921055-9570-45f9-8ffa-feab35dd6e56",
+    "https://allmythoughts.bandcamp.com/album/enter-the-garden",
+    "https://daily.bandcamp.com/best-of-2020/the-best-electronic-albums-of-2020",
+    "https://f4.bcbits.com/img/a4122717618_10.jpg"
+   ],
+   "mbRgMbid": "95921055-9570-45f9-8ffa-feab35dd6e56",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "冷硬 glitch 比例未聽證；CAA 404 用 Bandcamp 圖；Bandcamp 藝人名 U-I（廠牌 all my thoughts）",
+   "storyUrls": [
+    "https://daily.bandcamp.com/best-of-2020/the-best-electronic-albums-of-2020"
+   ],
+   "coverUrl": "https://f4.bcbits.com/img/a4122717618_10.jpg",
+   "bandcampUrl": "https://allmythoughts.bandcamp.com/album/enter-the-garden"
+  },
+  {
+   "artist": "Rose Bonica",
+   "album": "Tears for the Tea Maker",
+   "year": 2020,
+   "label": "self-released",
+   "country": "za",
+   "faction": "warm-electronica",
+   "genres": [
+    "electronic"
+   ],
+   "why": "BC Daily Best Electronic of 2020：開普敦 Natalie-Rose Perel 的 dreamy electronica，63 分鐘小品串成的暖軟日記",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1.0,
+    "z": 0.6,
+    "why": "夢幻軟合成，輕人聲，慢拍"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/8aef96b7-4654-474a-8739-0c22404928d5",
+    "https://coverartarchive.org/release-group/8aef96b7-4654-474a-8739-0c22404928d5",
+    "https://rosebonica.bandcamp.com/album/tears-for-the-tea-maker",
+    "https://daily.bandcamp.com/best-of-2020/the-best-electronic-albums-of-2020"
+   ],
+   "mbRgMbid": "8aef96b7-4654-474a-8739-0c22404928d5",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "小品多，質地可能偏輕（y）",
+   "storyUrls": [
+    "https://daily.bandcamp.com/best-of-2020/the-best-electronic-albums-of-2020"
+   ],
+   "coverUrl": "",
+   "bandcampUrl": "https://rosebonica.bandcamp.com/album/tears-for-the-tea-maker"
+  },
+  {
+   "artist": "Object Agency",
+   "album": "Abaa Cove",
+   "year": 2018,
+   "label": "",
+   "country": "gb",
+   "faction": "warm-downtempo",
+   "genres": [
+    "electronic"
+   ],
+   "why": "BC Daily Best Electronic 2018-09：蘇格蘭 Object Agency，卡帶版霧面類比電子 31 分鐘",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.0,
+    "z": 0.4,
+    "why": "卡帶糊類比合成，微律動"
+   },
+   "evidence": [
+    "https://objectagency.bandcamp.com/album/abaa-cove",
+    "https://daily.bandcamp.com/best-electronic/the-best-electronic-music-september-2018",
+    "https://f4.bcbits.com/img/a1294598297_10.jpg"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "artist:\"Object Agency\" AND releasegroup:\"Abaa Cove\"",
+     "releasegroup:\"Abaa Cove\""
+    ],
+    "checkedAt": "2026-11-05",
+    "conclusion": "MB 查無 Object Agency 藝人與 Abaa Cove；BC／Daily 為證"
+   },
+   "manualEvidenceUrls": [
+    "https://objectagency.bandcamp.com/album/abaa-cove",
+    "https://daily.bandcamp.com/best-electronic/the-best-electronic-music-september-2018"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "31 分鐘偏短；廠牌待核；Daily 稱略抽象",
+   "storyUrls": [
+    "https://daily.bandcamp.com/best-electronic/the-best-electronic-music-september-2018"
+   ],
+   "coverUrl": "https://f4.bcbits.com/img/a1294598297_10.jpg",
+   "bandcampUrl": "https://objectagency.bandcamp.com/album/abaa-cove"
+  },
+  {
+   "artist": "Kaitlyn Aurelia Smith",
+   "album": "The Kid",
+   "year": 2017,
+   "label": "RVNG Intl.",
+   "country": "us",
+   "faction": "ambient-pop",
+   "genres": [
+    "electronic"
+   ],
+   "why": "BC Daily Best Electronic of 2017：Buchla 模組合成加人聲，從民謠轉向的暖電子歌，52 分鐘",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.0,
+    "z": 0.7,
+    "why": "Buchla綿密層疊加人聲旋律，無硬拍"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/b326ea70-674c-4ca8-ad7b-d0b5d053601a",
+    "https://coverartarchive.org/release-group/b326ea70-674c-4ca8-ad7b-d0b5d053601a",
+    "https://kaitlynaureliasmith.bandcamp.com/album/the-kid",
+    "https://daily.bandcamp.com/best-of-2017/the-best-electronic-albums-of-2017"
+   ],
+   "mbRgMbid": "b326ea70-674c-4ca8-ad7b-d0b5d053601a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Buchla 音色偏晶亮，y 可能壓在 0.8 附近",
+   "storyUrls": [
+    "https://daily.bandcamp.com/best-of-2017/the-best-electronic-albums-of-2017"
+   ],
+   "coverUrl": "",
+   "bandcampUrl": "https://kaitlynaureliasmith.bandcamp.com/album/the-kid"
+  },
+  {
+   "artist": "Carmen Villain",
+   "album": "Only Love From Now On",
+   "year": 2022,
+   "label": "Smalltown Supersound",
+   "country": "no",
+   "faction": "ambient-pop",
+   "genres": [
+    "electronic"
+   ],
+   "why": "BC Daily Best Electronic of 2022：挪威 Carmen Villain 的暖 ambient pop，ambient 與 field recording 加低語人聲，38 分鐘",
+   "moodGuess": {
+    "x": 1.9,
+    "y": 1.1,
+    "z": 0.6,
+    "why": "低語人聲加暖合成墊，field recording，慢"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/020fe314-7e50-470b-81d6-f7f8bd6e2737",
+    "https://coverartarchive.org/release-group/020fe314-7e50-470b-81d6-f7f8bd6e2737",
+    "https://carmenvillain.bandcamp.com/album/only-love-from-now-on",
+    "https://daily.bandcamp.com/best-of-2022/the-best-electronic-music-of-2022"
+   ],
+   "mbRgMbid": "020fe314-7e50-470b-81d6-f7f8bd6e2737",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "廠牌待核；旋律偏含蓄，z 可能到 0.3",
+   "storyUrls": [
+    "https://daily.bandcamp.com/best-of-2022/the-best-electronic-music-of-2022"
+   ],
+   "coverUrl": "",
+   "bandcampUrl": "https://carmenvillain.bandcamp.com/album/only-love-from-now-on"
+  },
+  {
+   "artist": "Kaela",
+   "album": "Supraliminal",
+   "year": 2025,
+   "label": "",
+   "country": "us",
+   "faction": "ambient-pop",
+   "genres": [
+    "electronic"
+   ],
+   "why": "BC Daily Best Electronic 2025-05：前 M83 成員 Kaela Sinclair，以 new age 音色造「個人 ambient 宇宙」，55 分鐘暖亮女聲電子",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1.0,
+    "z": 0.7,
+    "why": "new age合成厚墊，女聲旋律清楚"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/774cfd78-eee5-441e-80e1-204407d23730",
+    "https://coverartarchive.org/release-group/774cfd78-eee5-441e-80e1-204407d23730",
+    "https://kaela.bandcamp.com/album/supraliminal",
+    "https://daily.bandcamp.com/best-electronic/the-best-electronic-music-on-bandcamp-may-2025"
+   ],
+   "mbRgMbid": "774cfd78-eee5-441e-80e1-204407d23730",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "new age 乾淨處可能判輕",
+   "storyUrls": [
+    "https://daily.bandcamp.com/best-electronic/the-best-electronic-music-on-bandcamp-may-2025"
+   ],
+   "coverUrl": "",
+   "bandcampUrl": "https://kaela.bandcamp.com/album/supraliminal"
+  },
+  {
+   "artist": "Photay",
+   "album": "Waking Hours",
+   "year": 2020,
+   "label": "Western Vinyl",
+   "country": "us",
+   "faction": "ambient-pop",
+   "genres": [
+    "electronic"
+   ],
+   "why": "BC Best of 2020「It Got Heavy」：Daily 稱其 ambient pop 為「訓練蒙太奇」音樂，暖且緩，43 分鐘",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1.0,
+    "z": 0.6,
+    "why": "ambient pop，手作取樣加合成墊，慢"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/0062630a-d172-4d78-b471-6af7b38322a3",
+    "https://coverartarchive.org/release-group/0062630a-d172-4d78-b471-6af7b38322a3",
+    "https://photay.bandcamp.com/album/waking-hours",
+    "https://daily.bandcamp.com/best-of-2020/best-of-2020-it-got-heavy"
+   ],
+   "mbRgMbid": "0062630a-d172-4d78-b471-6af7b38322a3",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "部分曲有節拍推進；廠牌待核",
+   "storyUrls": [
+    "https://daily.bandcamp.com/best-of-2020/best-of-2020-it-got-heavy"
+   ],
+   "coverUrl": "",
+   "bandcampUrl": "https://photay.bandcamp.com/album/waking-hours"
+  },
+  {
+   "artist": "Maria BC",
+   "album": "Hyaline",
+   "year": 2022,
+   "label": "Sacred Bones",
+   "country": "us",
+   "faction": "ambient-pop",
+   "genres": [
+    "electronic"
+   ],
+   "why": "BC Best Ambient of 2022：Daily 稱「年度夢幻跨界寵兒」，Oakland 歌手兼製作人的 ambient dream pop，42 分鐘",
+   "moodGuess": {
+    "x": 1.8,
+    "y": 1.1,
+    "z": 0.4,
+    "why": "低語人聲加霧狀吉他與合成，慢"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/c8e82cf3-06f7-43d2-89c7-60bfbe384407",
+    "https://coverartarchive.org/release-group/c8e82cf3-06f7-43d2-89c7-60bfbe384407",
+    "https://mariabc.bandcamp.com/album/hyaline",
+    "https://daily.bandcamp.com/best-of-2022/the-best-ambient-of-2022"
+   ],
+   "mbRgMbid": "c8e82cf3-06f7-43d2-89c7-60bfbe384407",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "z 偏低風險：多為朦朧憂鬱；genres 可能近 folk；廠牌待核",
+   "storyUrls": [
+    "https://daily.bandcamp.com/best-of-2022/the-best-ambient-of-2022"
+   ],
+   "coverUrl": "",
+   "bandcampUrl": "https://mariabc.bandcamp.com/album/hyaline"
+  },
+  {
+   "artist": "Sui Zhen",
+   "album": "Losing, Linda",
+   "year": 2019,
+   "label": "Dream Damage",
+   "country": "au",
+   "faction": "ambient-pop",
+   "genres": [
+    "electronic"
+   ],
+   "why": "BC Best Albums of 2019（60-41）：Becky Sui Zhen 的慢拍電子流行，由不安到寧靜的溫柔旋律與人聲，電子 downtempo 質感",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1.0,
+    "z": 0.5,
+    "why": "慢拍電子流行，柔和人聲，暖合成"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/efd0a85a-df47-4102-b035-ae5844637559",
+    "https://coverartarchive.org/release-group/efd0a85a-df47-4102-b035-ae5844637559",
+    "https://suizhen.bandcamp.com/album/losing-linda",
+    "https://daily.bandcamp.com/best-of-2019/the-best-albums-of-2019-60-41"
+   ],
+   "mbRgMbid": "efd0a85a-df47-4102-b035-ae5844637559",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "廠牌待核；Daily 稱情緒由 uneasiness 到 serenity，z 取中",
+   "storyUrls": [
+    "https://daily.bandcamp.com/best-of-2019/the-best-albums-of-2019-60-41"
+   ],
+   "coverUrl": "",
+   "bandcampUrl": "https://suizhen.bandcamp.com/album/losing-linda"
+  },
+  {
+   "artist": "Nourished By Time",
+   "album": "Erotic Probiotic 2",
+   "year": 2023,
+   "label": "Dais",
+   "country": "us",
+   "faction": "ambient-pop",
+   "genres": [
+    "electronic"
+   ],
+   "why": "BC Best of 2023 essential releases：freestyle 與 new jack swing 般的「柔光 synth-pop」，34 分鐘渴望與心碎",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 0.9,
+    "z": 0.7,
+    "why": "柔光合成，低哼人聲，慢中拍"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/0af7f21b-34f8-499e-af71-7ad34c05bf5d",
+    "https://coverartarchive.org/release-group/0af7f21b-34f8-499e-af71-7ad34c05bf5d",
+    "https://nourishedbytime.bandcamp.com/album/erotic-probiotic-2",
+    "https://daily.bandcamp.com/best-of-2023/the-best-albums-of-2023-essential-releases"
+   ],
+   "mbRgMbid": "0af7f21b-34f8-499e-af71-7ad34c05bf5d",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "偏 R&B／synth-pop，y 可能剛好；有 new jack swing 拍子，x 可能到 2.7；廠牌待核",
+   "storyUrls": [
+    "https://daily.bandcamp.com/best-of-2023/the-best-albums-of-2023-essential-releases"
+   ],
+   "coverUrl": "",
+   "bandcampUrl": "https://nourishedbytime.bandcamp.com/album/erotic-probiotic-2"
+  },
+  {
+   "artist": "Michael Claus",
+   "album": "Lavender Palace",
+   "year": 2022,
+   "label": "100% Silk",
+   "country": "us",
+   "faction": "hypnagogic",
+   "genres": [
+    "electronic"
+   ],
+   "why": "BC Best Electronic 2022-10：100% Silk「非常非常溫柔」之作，疫情封城期錄製，46 分鐘夢境般的 ambient／dub house 暖霧",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 1.1,
+    "z": 0.6,
+    "why": "柔和合成墊，微弱 dub 律動，暖霧"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/e1a5ef46-c39e-4b19-be92-25d96ce2073f",
+    "https://coverartarchive.org/release-group/e1a5ef46-c39e-4b19-be92-25d96ce2073f",
+    "https://michaelclaus.bandcamp.com/album/lavender-palace",
+    "https://daily.bandcamp.com/best-electronic/the-best-electronic-music-on-bandcamp-october-2022"
+   ],
+   "mbRgMbid": "e1a5ef46-c39e-4b19-be92-25d96ce2073f",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 條目 primary type 未設；Bandcamp 標 house，部分曲有四拍",
+   "storyUrls": [
+    "https://daily.bandcamp.com/best-electronic/the-best-electronic-music-on-bandcamp-october-2022"
+   ],
+   "coverUrl": "",
+   "bandcampUrl": "https://michaelclaus.bandcamp.com/album/lavender-palace"
+  },
+  {
+   "artist": "Los Sara Fontan",
+   "album": "Consuelo",
+   "year": 2026,
+   "label": "",
+   "country": "es",
+   "faction": "warm-downtempo",
+   "genres": [
+    "electronic"
+   ],
+   "why": "BC Best Electronic 2026-02：巴塞隆納 Edi Pou 與 Sara Fontan 的親密 mini-album，真實與合成樂器交織的柔和旋律，40 分鐘",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 0.9,
+    "z": 0.5,
+    "why": "真樂器加合成，旋律柔和，鼓若隱若現"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/25bf370f-8cd6-4cfb-88c6-cebca4c5d79c",
+    "https://coverartarchive.org/release-group/25bf370f-8cd6-4cfb-88c6-cebca4c5d79c",
+    "https://lossarafontan.bandcamp.com/album/consuelo",
+    "https://daily.bandcamp.com/best-electronic/the-best-electronic-music-on-bandcamp-february-2026"
+   ],
+   "mbRgMbid": "25bf370f-8cd6-4cfb-88c6-cebca4c5d79c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Daily 稱 mini-album；Bandcamp 40 分鐘 8 軌可收；乾淨處可能判輕",
+   "storyUrls": [
+    "https://daily.bandcamp.com/best-electronic/the-best-electronic-music-on-bandcamp-february-2026"
+   ],
+   "coverUrl": "",
+   "bandcampUrl": "https://lossarafontan.bandcamp.com/album/consuelo"
+  },
+  {
+   "artist": "Metra Vestlud",
+   "album": "Ashes That Made the Shape of My Dreams",
+   "year": 2025,
+   "label": "Not Not Fun",
+   "country": "",
+   "faction": "ambient-pop",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp Daily Album of the Day：Not Not Fun 發行，以初為人父母的經驗為靈感，「天體般的溫暖」，49 分鐘",
+   "moodGuess": {
+    "x": 2.0,
+    "y": 1.0,
+    "z": 0.6,
+    "why": "暖合成與自然聲，慢，旋律性柔和"
+   },
+   "evidence": [
+    "https://metravestlud.bandcamp.com/album/ashes-that-made-the-shape-of-my-dreams",
+    "https://daily.bandcamp.com/album-of-the-day/metra-vestlud-ashes-that-made-the-shape-of-my-dreams-review",
+    "https://f4.bcbits.com/img/a2718387405_10.jpg"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "artist:\"Metra Vestlud\" AND releasegroup:\"Ashes That Made the Shape of My Dreams\"",
+     "releasegroup:\"Ashes That Made the Shape of My Dreams\""
+    ],
+    "checkedAt": "2026-11-05",
+    "conclusion": "MB 查無該藝人與作品；BC／Daily 為證"
+   },
+   "manualEvidenceUrls": [
+    "https://metravestlud.bandcamp.com/album/ashes-that-made-the-shape-of-my-dreams",
+    "https://daily.bandcamp.com/album-of-the-day/metra-vestlud-ashes-that-made-the-shape-of-my-dreams-review"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "標籤含 nature sounds／eco futurism，可能偏純質感 ambient 判冷；藝人 Bandcamp 名為 𝘮𝘦𝘵𝘳𝘢.𝘷𝘦𝘴𝘵𝘭𝘶𝘥",
+   "storyUrls": [
+    "https://daily.bandcamp.com/album-of-the-day/metra-vestlud-ashes-that-made-the-shape-of-my-dreams-review"
+   ],
+   "coverUrl": "https://f4.bcbits.com/img/a2718387405_10.jpg",
+   "bandcampUrl": "https://metravestlud.bandcamp.com/album/ashes-that-made-the-shape-of-my-dreams"
+  },
+  {
+   "artist": "Midori Hirano",
+   "album": "OTONOMA",
+   "year": 2026,
+   "label": "",
+   "country": "jp",
+   "faction": "warm-electronica",
+   "genres": [
+    "electronic"
+   ],
+   "why": "BC Album of the Day：Daily 稱「令人滿足如佳餚的合成器作品」，42 分鐘暖旋律電子",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 1.0,
+    "z": 0.6,
+    "why": "旋律清楚的合成器作品，暖厚，慢"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/52a4b6f3-fd27-4ebb-a5f1-f20750055e9f",
+    "https://coverartarchive.org/release-group/52a4b6f3-fd27-4ebb-a5f1-f20750055e9f",
+    "https://midorih.bandcamp.com/album/otonoma",
+    "https://daily.bandcamp.com/album-of-the-day/midori-hirano-otonoma-review"
+   ],
+   "mbRgMbid": "52a4b6f3-fd27-4ebb-a5f1-f20750055e9f",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "標籤含 acoustic／ambient；乾淨處可能判輕",
+   "storyUrls": [
+    "https://daily.bandcamp.com/album-of-the-day/midori-hirano-otonoma-review"
+   ],
+   "coverUrl": "",
+   "bandcampUrl": "https://midorih.bandcamp.com/album/otonoma"
+  },
+  {
+   "artist": "maya ongaku",
+   "album": "Nothing Space Music",
+   "year": 2026,
+   "label": "",
+   "country": "jp",
+   "faction": "ambient-pop",
+   "genres": [
+    "electronic"
+   ],
+   "why": "BC Album of the Day：日本三人組以「令人暈眩的 ambient 迷幻」搭配流行歌寫作，40 分鐘暖柔",
+   "moodGuess": {
+    "x": 2.1,
+    "y": 1.0,
+    "z": 0.7,
+    "why": "迷幻 ambient 加流行旋律與人聲，慢"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/1a7ca82d-6bde-44f1-a022-d9f2e82febb0",
+    "https://coverartarchive.org/release-group/1a7ca82d-6bde-44f1-a022-d9f2e82febb0",
+    "https://mayaongakuggb.bandcamp.com/album/nothing-space-music",
+    "https://daily.bandcamp.com/album-of-the-day/maya-ongaku-nothing-space-music-review"
+   ],
+   "mbRgMbid": "1a7ca82d-6bde-44f1-a022-d9f2e82febb0",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "廠牌待核；部分曲可能偏輕",
+   "storyUrls": [
+    "https://daily.bandcamp.com/album-of-the-day/maya-ongaku-nothing-space-music-review"
+   ],
+   "coverUrl": "",
+   "bandcampUrl": "https://mayaongakuggb.bandcamp.com/album/nothing-space-music"
+  },
+  {
+   "artist": "sachi's mirror",
+   "album": "Talking in a Different Way",
+   "year": 2026,
+   "label": "",
+   "country": "",
+   "faction": "warm-downtempo",
+   "genres": [
+    "electronic"
+   ],
+   "why": "BC Album of the Day：古典訓練小提琴家的「管弦 fourth-world trip-hop」首作，36 分鐘；暖慢弦樂與 downtempo 拍",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 1.0,
+    "z": 0.5,
+    "why": "弦樂墊加trip-hop慢拍，旋律清楚"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/f206e96a-094e-4281-89fd-a68d2203f88c",
+    "https://coverartarchive.org/release-group/f206e96a-094e-4281-89fd-a68d2203f88c",
+    "https://sachis-mirror.bandcamp.com/album/talking-in-a-different-way",
+    "https://daily.bandcamp.com/album-of-the-day/sachis-mirror-talking-in-a-different-way-review"
+   ],
+   "mbRgMbid": "f206e96a-094e-4281-89fd-a68d2203f88c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "弦樂乾淨處可能判輕；非 beat tape",
+   "storyUrls": [
+    "https://daily.bandcamp.com/album-of-the-day/sachis-mirror-talking-in-a-different-way-review"
+   ],
+   "coverUrl": "",
+   "bandcampUrl": "https://sachis-mirror.bandcamp.com/album/talking-in-a-different-way"
+  }
+ ],
+ "notes": [
+  "來源：Bandcamp Daily Best Electronic 2018–2026 月度專欄全數 97 期掃過、年度 Best Electronic 榜 2017–2025、Best of 各年精選、Album of the Day 近期 360 篇；月度專欄以舞池為主，暖慢盤產率低，合格者僅 23 張，未湊到 27。",
+  "已剔除：Helado Negro《PHASOR》（池中同人 y 0.4–0.6 判輕）、Loscil《Lake Fire》（池中同人判冷；歸 ml66a）、Lapalux／Teplice／Rhi 等 EP 或不足 28 分鐘、Actress（已在池）、Fishdoll（已被移出）、Purelink《Faith》（house 標籤）、Hannah Lew（cold beat）、Tanizaki（俏皮偏輕）、More Ghost Than Man 與 Mel Keane（身分查證不乾淨）。",
+  "身分：MB 釘住 19 張，人工 4 張（Tudor Acid、patten、Object Agency、Metra Vestlud）；Sunken Foal 以 MB 正名收，Michael Claus 的 MB 條目缺 primary type。",
+  "廠牌欄位多處空白或待核，建管線時請由 MB／Bandcamp 補。"
+ ]
+}
