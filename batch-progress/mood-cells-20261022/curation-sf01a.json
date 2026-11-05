@@ -1,0 +1,634 @@
+{
+ "group": "sf01a",
+ "factions": [
+  {
+   "id": "jazz-funk",
+   "zh": "jazz-funk",
+   "count": 1,
+   "why": "sf01 店主收藏指定盤"
+  },
+  {
+   "id": "jazz-europe",
+   "zh": "jazz-europe",
+   "count": 1,
+   "why": "sf01 店主收藏指定盤"
+  },
+  {
+   "id": "soundtrack",
+   "zh": "soundtrack",
+   "count": 1,
+   "why": "sf01 店主收藏指定盤"
+  },
+  {
+   "id": "hiphop",
+   "zh": "hiphop",
+   "count": 1,
+   "why": "sf01 店主收藏指定盤"
+  },
+  {
+   "id": "easy-piano-pop",
+   "zh": "easy-piano-pop",
+   "count": 1,
+   "why": "sf01 店主收藏指定盤"
+  },
+  {
+   "id": "electronic-beats",
+   "zh": "electronic-beats",
+   "count": 3,
+   "why": "sf01 店主收藏指定盤"
+  },
+  {
+   "id": "psych-folk",
+   "zh": "psych-folk",
+   "count": 1,
+   "why": "sf01 店主收藏指定盤"
+  },
+  {
+   "id": "post-punk-industrial",
+   "zh": "post-punk-industrial",
+   "count": 1,
+   "why": "sf01 店主收藏指定盤"
+  },
+  {
+   "id": "dub-ambient",
+   "zh": "dub-ambient",
+   "count": 1,
+   "why": "sf01 店主收藏指定盤"
+  },
+  {
+   "id": "classical-piano",
+   "zh": "classical-piano",
+   "count": 4,
+   "why": "sf01 店主收藏指定盤"
+  },
+  {
+   "id": "anatolian-psych",
+   "zh": "anatolian-psych",
+   "count": 1,
+   "why": "sf01 店主收藏指定盤"
+  },
+  {
+   "id": "spiritual-jazz-electronic",
+   "zh": "spiritual-jazz-electronic",
+   "count": 1,
+   "why": "sf01 店主收藏指定盤"
+  },
+  {
+   "id": "jazz-fusion",
+   "zh": "jazz-fusion",
+   "count": 1,
+   "why": "sf01 店主收藏指定盤"
+  }
+ ],
+ "albums": [
+  {
+   "label": "Verve",
+   "mbRgMbid": "855640e4-6aed-3635-aa5a-633c3474fa6d",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "池中有 Roy Hargrove 他盤（Earfood、The Vibe），非同盤，照收",
+   "artist": "The RH Factor",
+   "album": "Hard Groove",
+   "year": 2003,
+   "country": "us",
+   "faction": "jazz-funk",
+   "genres": [
+    "jazz",
+    "soul"
+   ],
+   "why": "店主收藏指定盤：Roy Hargrove 的 RH Factor 融合爵士、funk 與 neo-soul 代表作，Erykah Badu、D'Angelo 等參與。",
+   "moodGuess": {
+    "x": 3.2,
+    "y": 0.6,
+    "z": 0.9,
+    "why": "律動厚實的 funk 爵士，小號暖亮"
+   },
+   "evidence": [
+    "https://music.apple.com/us/album/hard-groove/1443070852",
+    "https://coverartarchive.org/release-group/855640e4-6aed-3635-aa5a-633c3474fa6d/front-250"
+   ],
+   "spotifyName": "The RH Factor — Hard Groove"
+  },
+  {
+   "label": "L+R Records",
+   "mbRgMbid": "22c70793-89f2-3053-9194-98832cc00a56",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "池中有 Albert Mangelsdorff Quartet/本名他盤，掛名 Quintet 照 Spotify 與 MB；非同盤",
+   "artist": "Albert Mangelsdorff Quintet",
+   "album": "Tension",
+   "year": 1963,
+   "country": "de",
+   "faction": "jazz-europe",
+   "genres": [
+    "jazz"
+   ],
+   "why": "店主收藏指定盤：Mangelsdorff 早期歐洲現代爵士與 cool/free 之間的經典錄音。",
+   "moodGuess": {
+    "x": 3.3,
+    "y": 0.3,
+    "z": -0.4,
+    "why": "緊繃的前衛硬咆勃，小號長號交錯"
+   },
+   "evidence": [
+    "https://music.apple.com/us/album/tension/157628011",
+    "https://coverartarchive.org/release-group/22c70793-89f2-3053-9194-98832cc00a56/front-250"
+   ],
+   "spotifyName": "Albert Mangelsdorff Quintet — Tension"
+  },
+  {
+   "label": "Columbia",
+   "mbRgMbid": "fdbb9046-11e1-3fe6-9a9b-e0efb8fe8beb",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "soundtrack 合輯（掛 Various Artists）；店主收藏指定盤",
+   "queryAlias": "Clerks (Music from the Motion Picture)",
+   "uncertain": "",
+   "artist": "Various Artists",
+   "album": "Clerks: Music from the Motion Picture",
+   "year": 1994,
+   "country": "us",
+   "faction": "soundtrack",
+   "genres": [
+    "rock"
+   ],
+   "why": "店主收藏指定盤：Kevin Smith《Clerks》90 年代另類搖滾原聲帶合輯（Soul Asylum、Bad Religion、Girls Against Boys）。",
+   "moodGuess": {
+    "x": 3.9,
+    "y": 0.8,
+    "z": -0.3,
+    "why": "90 年代吉他搖滾與龐克拼盤，粗糙"
+   },
+   "evidence": [
+    "https://music.apple.com/us/album/clerks-music-from-the-motion-picture/193012840",
+    "https://coverartarchive.org/release-group/fdbb9046-11e1-3fe6-9a9b-e0efb8fe8beb/front-250"
+   ],
+   "spotifyName": "Original Soundtrack — Music From The Motion Picture Clerks"
+  },
+  {
+   "label": "Silver Age",
+   "mbRgMbid": "c157360e-7f0a-4dc1-b503-bfc244a74bcf",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "CZARFACE",
+   "uncertain": "",
+   "artist": "Czarface & Ghostface Killah",
+   "album": "Czarface Meets Ghostface",
+   "year": 2019,
+   "country": "us",
+   "faction": "hiphop",
+   "genres": [
+    "hiphop"
+   ],
+   "why": "店主收藏指定盤：Czarface 與 Ghostface Killah 聯手的漫畫風硬派老派嘻哈。",
+   "moodGuess": {
+    "x": 3.6,
+    "y": 0.8,
+    "z": 0,
+    "why": "取樣厚重的 boom bap，漫畫腔"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/c157360e-7f0a-4dc1-b503-bfc244a74bcf/front-250",
+    "https://music.apple.com/us/album/czarface-meets-ghostface-instrumentals/1454326838"
+   ],
+   "spotifyName": "CZARFACE — Czarface Meets Ghostface"
+  },
+  {
+   "label": "Atco",
+   "mbRgMbid": "a4eb8d6f-6754-40ef-8ed5-f0f00609b2f6",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "池中有 Bent｜Programmed to Love，是英國電子二人組，不同人",
+   "artist": "Bent Fabric",
+   "album": "The Happy Puppy",
+   "year": 1962,
+   "country": "dk",
+   "faction": "easy-piano-pop",
+   "genres": [
+    "pop",
+    "jazz"
+   ],
+   "why": "店主收藏指定盤：丹麥鋼琴家 Bent Fabric 以《Alley Cat》聞名的輕快流行鋼琴專輯。",
+   "moodGuess": {
+    "x": 2.8,
+    "y": -1,
+    "z": 1.3,
+    "why": "俏皮明亮的酒館鋼琴，輕盈"
+   },
+   "evidence": [
+    "https://music.apple.com/dk/album/the-happy-puppy/1755329780",
+    "https://coverartarchive.org/release-group/a4eb8d6f-6754-40ef-8ed5-f0f00609b2f6/front-250"
+   ],
+   "spotifyName": "Bent Fabric — The Happy Puppy"
+  },
+  {
+   "label": "wavemob",
+   "mbRgMbid": "8de1abd5-fb19-473c-88b7-035fd2753713",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "",
+   "artist": "Klimeks",
+   "album": "Overnites",
+   "year": 2014,
+   "country": "gb",
+   "faction": "electronic-beats",
+   "genres": [
+    "electronic"
+   ],
+   "why": "店主收藏指定盤：Klimeks 的深夜氛圍 beats 專輯。",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 0.2,
+    "z": -0.2,
+    "why": "低速夜間電子節拍，迷濛"
+   },
+   "evidence": [
+    "https://music.apple.com/us/album/overnites/906376339",
+    "https://coverartarchive.org/release-group/8de1abd5-fb19-473c-88b7-035fd2753713/front-250"
+   ],
+   "spotifyName": "Klimeks — Overnites"
+  },
+  {
+   "label": "Play Me Records",
+   "mbRgMbid": "13857eb8-c5a9-4923-8df5-ed11ed141c9b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "EP（Discogs 3 首，不足 6 首）；店主收藏指定盤",
+   "queryAlias": "",
+   "uncertain": "CAA 無封面，封面取 iTunes；MB 藝人 Corporate 為 Dan Taylor（US）",
+   "artist": "Corporate",
+   "album": "A5 EP",
+   "year": 2016,
+   "country": "us",
+   "faction": "electronic-beats",
+   "genres": [
+    "electronic"
+   ],
+   "why": "店主收藏指定盤：Corporate（Dan Taylor）的 glitch hop／trap 電子 EP。",
+   "moodGuess": {
+    "x": 3.4,
+    "y": 0.8,
+    "z": -0.5,
+    "why": "失真重低音與 glitch 節拍"
+   },
+   "evidence": [
+    "https://music.apple.com/us/album/a5-ep/1097986565",
+    "https://coverartarchive.org/release-group/13857eb8-c5a9-4923-8df5-ed11ed141c9b/front-250"
+   ],
+   "spotifyName": "Corporate — A5 EP"
+  },
+  {
+   "label": "Belle Antique",
+   "mbRgMbid": "403d20ca-a800-4943-b919-a9977e299e33",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Discogs 作 Kay Hoffmann*（日版 Belle Antique 1985）；國籍依 Discogs 簡介（巴塞爾出生）",
+   "artist": "Kay Hoffman",
+   "album": "Floret Silva",
+   "year": 1985,
+   "country": "ch",
+   "faction": "psych-folk",
+   "genres": [
+    "folk",
+    "rock"
+   ],
+   "why": "店主收藏指定盤：瑞士鍵盤手 Kay Hoffman 的迷幻民謠私房名盤（1977 錄、1985 首發）。",
+   "moodGuess": {
+    "x": 2,
+    "y": -0.3,
+    "z": 0.5,
+    "why": "飄浮的迷幻民謠，鍵盤與人聲"
+   },
+   "evidence": [
+    "https://music.apple.com/us/album/floret-silva/1083924951",
+    "https://coverartarchive.org/release-group/403d20ca-a800-4943-b919-a9977e299e33/front-250",
+    "https://www.discogs.com/master/184056"
+   ],
+   "spotifyName": "Kay Hoffman — Floret Silva"
+  },
+  {
+   "label": "Dome Records",
+   "mbRgMbid": "1e032bbd-26c5-4f09-bd84-058bde1f097e",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "2",
+   "uncertain": "Spotify 盤名只寫「2」，正式名 Dome 2；Spotify 版可能為 2019 Editions Mego 重發，年份取 1980 首發",
+   "artist": "Dome",
+   "album": "Dome 2",
+   "year": 1980,
+   "country": "gb",
+   "faction": "post-punk-industrial",
+   "genres": [
+    "electronic",
+    "rock"
+   ],
+   "why": "店主收藏指定盤：Wire 成員 Gilbert/Lewis 的 Dome 第二張，實驗工業氛圍代表。",
+   "moodGuess": {
+    "x": 3,
+    "y": 0.9,
+    "z": -1,
+    "why": "陰鬱工業噪音與重複低頻"
+   },
+   "evidence": [
+    "https://music.apple.com/us/album/2/1799313890",
+    "https://coverartarchive.org/release-group/1e032bbd-26c5-4f09-bd84-058bde1f097e/front-250",
+    "https://www.discogs.com/release/167403-Dome-Dome-2"
+   ],
+   "spotifyName": "Dome — 2"
+  },
+  {
+   "label": "Apollo",
+   "mbRgMbid": "d9a8f460-e31b-3b32-9010-b08e0de20112",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Eraldo Bernocchi, Toshinori Kondo & Bill Laswell",
+   "uncertain": "iTunes 掛名順序為 Eraldo Bernocchi, Toshinori Kondo & Bill Laswell，MB 為 Kondo 在前；池中有 Bill Laswell 他盤，非同盤",
+   "artist": "Toshinori Kondo, Eraldo Bernocchi & Bill Laswell",
+   "album": "Charged",
+   "year": 1999,
+   "country": "it",
+   "faction": "dub-ambient",
+   "genres": [
+    "electronic",
+    "jazz"
+   ],
+   "why": "店主收藏指定盤：近藤等志、Bernocchi、Laswell 的 dub／ambient 電子小號，Bernocchi 掛名作品。",
+   "moodGuess": {
+    "x": 2.1,
+    "y": 0.7,
+    "z": -0.8,
+    "why": "電子小號懸浮在深沉 dub 低頻"
+   },
+   "evidence": [
+    "https://music.apple.com/us/album/charged/1881634851",
+    "https://coverartarchive.org/release-group/d9a8f460-e31b-3b32-9010-b08e0de20112/front-250",
+    "https://www.discogs.com/master/13630"
+   ],
+   "spotifyName": "Eraldo Bernocchi — Charged"
+  },
+  {
+   "label": "Hungaroton",
+   "mbRgMbid": "",
+   "mbAbsenceProof": "MB release-group 查 Ránki + Chopin Etudes/Ballades 無此盤；以 iTunes 同名盤（Dezső Ránki, Hungaroton 1971）與 Discogs 同曲目錄比對確認",
+   "manualEvidenceUrls": [
+    "https://music.apple.com/us/album/chopin-%C3%A9tudes-op-10-nocturne-op-9-no-3-ballades-opp-38-23/1816850349",
+    "https://www.discogs.com/release/12754253-Chopin-Dezs%C5%91-R%C3%A1nki-Etudes-Nocturne-Ballades"
+   ],
+   "releaseException": "",
+   "queryAlias": "Frédéric Chopin",
+   "uncertain": "演奏者由 iTunes 完全同名盤確認；掛名照池中慣例「演奏者｜作曲家: 曲目」",
+   "artist": "Dezső Ránki",
+   "album": "Chopin: Études op. 10, Nocturne op. 9 no. 3 & Ballades opp. 38 & 23",
+   "year": 1971,
+   "country": "hu",
+   "faction": "classical-piano",
+   "genres": [
+    "classical"
+   ],
+   "why": "店主收藏指定盤：Ránki 年輕時的 Hungaroton 蕭邦錄音，收練習曲、夜曲與兩首敘事曲。",
+   "moodGuess": {
+    "x": 3.3,
+    "y": 0.5,
+    "z": 0.2,
+    "why": "琴音清亮的蕭邦，技巧性強"
+   },
+   "evidence": [
+    "https://music.apple.com/us/album/chopin-%C3%A9tudes-op-10-nocturne-op-9-no-3-ballades-opp-38-23/1816850349",
+    "https://www.discogs.com/release/12754253-Chopin-Dezs%C5%91-R%C3%A1nki-Etudes-Nocturne-Ballades"
+   ],
+   "spotifyName": "Frédéric Chopin — Chopin: Etudes, Op. 10, Nocturne, Op. 9 No. 3 & Ballades, Opp. 38 & 23"
+  },
+  {
+   "label": "Bongo Joe",
+   "mbRgMbid": "412d844b-222c-4a64-a38b-05cb2a2fc2c8",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "DOST 2",
+   "uncertain": "",
+   "artist": "Derya Yıldırım & Grup Şimşek",
+   "album": "Dost 2",
+   "year": 2022,
+   "country": "tr",
+   "faction": "anatolian-psych",
+   "genres": [
+    "world",
+    "rock"
+   ],
+   "why": "店主收藏指定盤：德土混血的安那托利亞迷幻搖滾 Derya Yıldırım & Grup Şimşek，第二張專輯。",
+   "moodGuess": {
+    "x": 3.1,
+    "y": 0.2,
+    "z": 0.8,
+    "why": "saz 與迷幻吉他，律動溫暖"
+   },
+   "evidence": [
+    "https://music.apple.com/us/album/dost-2/1624671512",
+    "https://coverartarchive.org/release-group/412d844b-222c-4a64-a38b-05cb2a2fc2c8/front-250"
+   ],
+   "spotifyName": "Derya Yıldırım & Grup Şimşek — Dost 2"
+  },
+  {
+   "label": "Astral Industries",
+   "mbRgMbid": "ea3b7799-817b-4f32-8db9-8f1c88d4b915",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "iTunes 標 EP（MB 標 Album）；店主收藏指定盤",
+   "queryAlias": "Son of Chi / Arthur Flink",
+   "uncertain": "MB 掛名 Son of Chi/Arthur Flink，iTunes 掛名 Arthur Flink & Son of Chi",
+   "artist": "Arthur Flink & Son of Chi",
+   "album": "The Fifth World Recordings",
+   "year": 2022,
+   "country": "nl",
+   "faction": "spiritual-jazz-electronic",
+   "genres": [
+    "jazz",
+    "electronic"
+   ],
+   "why": "店主收藏指定盤：荷蘭 Arthur Flink 與 Son of Chi 的新靈魂爵士電子合作錄音。",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 0,
+    "z": 0.5,
+    "why": "冥想式靈魂爵士與電子紋理"
+   },
+   "evidence": [
+    "https://music.apple.com/us/album/the-fifth-world-recordings-ep/1684331379",
+    "https://coverartarchive.org/release-group/ea3b7799-817b-4f32-8db9-8f1c88d4b915/front-250"
+   ],
+   "spotifyName": "Arthur Flink — The Fifth World Recordings"
+  },
+  {
+   "label": "Audio Lab. Record",
+   "mbRgMbid": "",
+   "mbAbsenceProof": "MB 查 artist:Meiko Miyazawa 無任何 release-group",
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/release/11430327-Kuhlau-Clementi-Dussek-Meiko-Miyazawa-Sonatinen",
+    "https://music.apple.com/us/album/chopin-nocturnes/1329367209"
+   ],
+   "releaseException": "",
+   "queryAlias": "宮沢明子 ソナチネ・アルバム",
+   "uncertain": "Discogs 為 1974 Audio Lab 'Sonatinen'，Spotify 版（Trio Records 數位發行）可能是同錄音重發；iTunes 美區查無此盤，封面取 Discogs；年份 1974 待確認",
+   "artist": "Meiko Miyazawa 宮沢明子",
+   "album": "Kuhlau / Clementi / Dussek: Sonatinen Album I",
+   "year": 1974,
+   "country": "jp",
+   "faction": "classical-piano",
+   "genres": [
+    "classical"
+   ],
+   "why": "店主收藏指定盤：日本鋼琴家宮沢明子的奏鳴曲小品（Sonatinen）專輯，收庫勞、克萊門蒂、杜塞克。",
+   "moodGuess": {
+    "x": 1.8,
+    "y": -1,
+    "z": 1,
+    "why": "明亮清澈的古典小奏鳴曲，輕盈"
+   },
+   "evidence": [
+    "https://www.discogs.com/release/11430327-Kuhlau-Clementi-Dussek-Meiko-Miyazawa-Sonatinen",
+    "https://music.apple.com/us/album/plays-bosendorfer-imperial/1329368318"
+   ],
+   "spotifyName": "Meiko Miyazawa — SONATINEN ALBUM Ⅰ"
+  },
+  {
+   "label": "Bella Musica Edition",
+   "mbRgMbid": "",
+   "mbAbsenceProof": "MB 查 artist:Manfred Reuthe 無任何 release-group",
+   "manualEvidenceUrls": [
+    "https://music.apple.com/us/album/manfred-reuthe-klavier-solo-i/978521330",
+    "https://arkivmusic.com/products/v-2-klavier-solo"
+   ],
+   "releaseException": "",
+   "queryAlias": "Manfred Reuthe - Klavier Solo I",
+   "uncertain": "盤名在 iTunes/Spotify 為 'Manfred Reuthe - Klavier Solo I'，正式名取 Klavier Solo I；錄音年份可能早於 2015 數位發行",
+   "artist": "Manfred Reuthe",
+   "album": "Klavier Solo I",
+   "year": 2015,
+   "country": "de",
+   "faction": "classical-piano",
+   "genres": [
+    "classical"
+   ],
+   "why": "店主收藏指定盤：柏林鋼琴家 Manfred Reuthe 的浪漫派與印象派獨奏選集。",
+   "moodGuess": {
+    "x": 2.3,
+    "y": -0.6,
+    "z": 0.8,
+    "why": "柔和的蕭邦李斯特獨奏鋼琴"
+   },
+   "evidence": [
+    "https://music.apple.com/us/album/manfred-reuthe-klavier-solo-i/978521330",
+    "https://arkivmusic.com/products/v-2-klavier-solo"
+   ],
+   "spotifyName": "Manfred Reuthe — Manfred Reuthe - Klavier Solo I"
+  },
+  {
+   "label": "Misc",
+   "mbRgMbid": "4137dc7e-c317-4905-a8d0-a84dc5c38d52",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "",
+   "artist": "Misc",
+   "album": "Beat Bouquet",
+   "year": 2025,
+   "country": "ca",
+   "faction": "electronic-beats",
+   "genres": [
+    "electronic",
+    "hiphop"
+   ],
+   "why": "店主收藏指定盤：加拿大製作人 Misc 的 beat tape 專輯。",
+   "moodGuess": {
+    "x": 2.5,
+    "y": -0.3,
+    "z": 0.3,
+    "why": "柔和的 lo-fi 器樂節拍"
+   },
+   "evidence": [
+    "https://music.apple.com/us/album/beat-bouquet/1804240642",
+    "https://coverartarchive.org/release-group/4137dc7e-c317-4905-a8d0-a84dc5c38d52/front-250"
+   ],
+   "spotifyName": "Misc — Beat Bouquet"
+  },
+  {
+   "label": "Naxos",
+   "mbRgMbid": "f09d5f6f-b459-3c3d-ac00-e7952eff3a3c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "György Ligeti",
+   "uncertain": "演奏者為推定：Spotify 盤名 'Ligeti, G.: Etudes, Books 1 and 2' 是 Naxos 命名，Naxos 此曲目只有 Biret 2003 錄音（MB/Discogs 同名）；iTunes 查無，封面取 Discogs；池中有 Aimard 與 Driver 的 Ligeti Études 他盤",
+   "artist": "İdil Biret",
+   "album": "Ligeti: Études, Books I and II (1-14a)",
+   "year": 2003,
+   "country": "tr",
+   "faction": "classical-piano",
+   "genres": [
+    "classical"
+   ],
+   "why": "店主收藏指定盤：Biret 的 Naxos 錄音，收 Ligeti 練習曲第一、二冊（1–14a）。",
+   "moodGuess": {
+    "x": 4,
+    "y": 0.6,
+    "z": -0.7,
+    "why": "複節奏、不和諧的密集鋼琴，緊繃"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/971617-Gy%C3%B6rgy-Ligeti-Idil-Biret-Etudes-Books-I-And-II-1-14a",
+    "https://musicbrainz.org/release-group/f09d5f6f-b459-3c3d-ac00-e7952eff3a3c"
+   ],
+   "spotifyName": "György Ligeti — Ligeti, G.: Etudes, Books 1 and 2"
+  },
+  {
+   "label": "Columbia",
+   "mbRgMbid": "c6f1d98d-c1dd-3d36-98cc-1f19ad6fd2ee",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "池中有 John McLaughlin 他盤（Extrapolation），非同盤",
+   "artist": "John McLaughlin & The One Truth Band",
+   "album": "Electric Dreams",
+   "year": 1979,
+   "country": "gb",
+   "faction": "jazz-fusion",
+   "genres": [
+    "jazz",
+    "rock"
+   ],
+   "why": "店主收藏指定盤：McLaughlin 離開 Shakti 後以 One Truth Band 推出的電氣融合爵士專輯。",
+   "moodGuess": {
+    "x": 3.9,
+    "y": 0.8,
+    "z": 0.5,
+    "why": "電吉他與合成器的快速融合爵士"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/c6f1d98d-c1dd-3d36-98cc-1f19ad6fd2ee/front-250",
+    "https://musicbrainz.org/release-group/c6f1d98d-c1dd-3d36-98cc-1f19ad6fd2ee"
+   ],
+   "spotifyName": "John McLaughlin, The One Truth Band — Electric Dreams"
+  }
+ ],
+ "notes": [
+  "sf01a 範圍 favoriteAlbums 索引 0–18，共 19 張。指定盤去重以同一張盤為單位，池中均無同盤。",
+  "不收：Vayda — Dont Lose The Groove（索引 4）。MB、Discogs、iTunes 均查無此盤；僅在 Vayda（亞特蘭大饒舌製作人）SoundCloud 見同名單曲，應為單曲／無正式專輯，無封面來源。",
+  "Meiko Miyazawa、Manfred Reuthe 走人工身分（MB 查無）。Ligeti 演奏者為推定 İdil Biret（Naxos 2003）。Chopin 演奏者確認為 Dezső Ránki（Hungaroton 1971）。",
+  "EP／原聲帶：Corporate A5 EP（EP）、Clerks（soundtrack）、Arthur Flink（iTunes 標 EP）已在 releaseException 註明。"
+ ]
+}

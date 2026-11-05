@@ -1,0 +1,722 @@
+{
+ "group": "r",
+ "factions": [
+  {
+   "id": "th",
+   "zh": "泰國",
+   "count": 24,
+   "why": "泰國（一）1970–2004：以 Seesan Awards（สีสันอะวอร์ดส์）年度／搖滾大獎、場景里程碑與史料公認的代表作為收錄門檻"
+  }
+ ],
+ "albums": [
+  {
+   "artist": "ไมโคร",
+   "album": "สุริยคราส",
+   "year": 1995,
+   "label": "GMM Grammy",
+   "country": "th",
+   "faction": "th",
+   "genres": [
+    "rock"
+   ],
+   "why": "Micro 在原主唱 Ampol 單飛、改由吉他手 Kob 主唱後的作品，包下 Seesan Awards 第 8 屆（1995）「年度最佳專輯」與「最佳樂團」，是 80–90 年代泰國搖滾代表樂團的評論高峰。",
+   "evidence": [
+    "https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C",
+    "https://www.discogs.com/master/875428",
+    "https://th.wikipedia.org/wiki/%E0%B9%84%E0%B8%A1%E0%B9%82%E0%B8%84%E0%B8%A3_(%E0%B8%A7%E0%B8%87%E0%B8%94%E0%B8%99%E0%B8%95%E0%B8%A3%E0%B8%B5)"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "artist?query=ไมโคร → 36fb1799（TH，score 100）但該藝人 release-group 數 0",
+     "release-group?query=artist:\"ไมโคร\" AND releasegroup:\"สุริยคราส\"（count=0）；releasegroup:\"สุริยคราส\" 單查也 count=0"
+    ],
+    "checkedAt": "2026-10-20",
+    "conclusion": "MB 有藝人 ไมโคร 但未收任何 release-group；以 Discogs master 875428（1995，Grammy，LP／CD）與泰文維基、Seesan Awards 得獎清單人工確認。"
+   },
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/875428",
+    "https://th.wikipedia.org/wiki/%E0%B9%84%E0%B8%A1%E0%B9%82%E0%B8%84%E0%B8%A3_(%E0%B8%A7%E0%B8%87%E0%B8%94%E0%B8%99%E0%B8%95%E0%B8%A3%E0%B8%B5)",
+    "https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C"
+   ],
+   "releaseException": "",
+   "queryAlias": "Micro Suriyakhrat",
+   "uncertain": "MB 無此 release-group（走 §1）。"
+  },
+  {
+   "artist": "ไมโคร",
+   "album": "ร็อค เล็ก เล็ก",
+   "year": 1986,
+   "label": "GMM Grammy",
+   "country": "th",
+   "faction": "th",
+   "genres": [
+    "rock"
+   ],
+   "why": "Micro 的首張專輯，Rewat Buddhinan 簽進 Grammy 後推出，英文維基〈Thai rock〉把它列為 80 年代泰國搖滾起飛的代表作（〈รักปอนปอน〉〈จำฝังใจ〉），開啟 1986–1990 的樂團黃金期。",
+   "evidence": [
+    "https://en.wikipedia.org/wiki/Thai_rock",
+    "https://www.discogs.com/master/875385",
+    "https://th.wikipedia.org/wiki/%E0%B9%84%E0%B8%A1%E0%B9%82%E0%B8%84%E0%B8%A3_(%E0%B8%A7%E0%B8%87%E0%B8%94%E0%B8%99%E0%B8%95%E0%B8%A3%E0%B8%B5)"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "artist?query=ไมโคร → 36fb1799（TH）但該藝人 release-group 數 0",
+     "release-group?query=artist:\"ไมโคร\" AND releasegroup:\"ร็อค เล็ก เล็ก\"（count=0）；releasegroup 單查 count=0"
+    ],
+    "checkedAt": "2026-10-20",
+    "conclusion": "MB 有藝人無作品；以 Discogs master 875385（1986，泰國卡帶／LP）與泰文維基人工確認。"
+   },
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/875385",
+    "https://th.wikipedia.org/wiki/%E0%B9%84%E0%B8%A1%E0%B9%82%E0%B8%84%E0%B8%A3_(%E0%B8%A7%E0%B8%87%E0%B8%94%E0%B8%99%E0%B8%95%E0%B8%A3%E0%B8%B5)",
+    "https://en.wikipedia.org/wiki/Thai_rock"
+   ],
+   "releaseException": "",
+   "queryAlias": "ร็อก เล็ก เล็ก / Micro Rock Lek Lek",
+   "uncertain": "盤名拼法兩種：泰文維基與卡帶作「ร็อค」，Discogs master 作「ร็อก」；採維基與原卡帶。MB 無 release-group（走 §1）。"
+  },
+  {
+   "artist": "อัสนี-วสันต์",
+   "album": "รุ้งกินน้ำ",
+   "year": 1993,
+   "label": "GMM Grammy",
+   "country": "th",
+   "faction": "th",
+   "genres": [
+    "rock"
+   ],
+   "why": "Asanee–Wasan 兄弟檔第六張，拿下 Seesan Awards 第 6 屆「年度最佳專輯」，〈รักเธอเสมอ〉〈ลงเอย〉傳唱至今，是泰國主流搖滾的評論與銷量雙峰。",
+   "evidence": [
+    "https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C",
+    "https://musicbrainz.org/release-group/81a7eeec-b95f-439d-bdd5-87818b08b29b",
+    "https://www.discogs.com/master/873367",
+    "https://th.wikipedia.org/wiki/%E0%B8%AD%E0%B8%B1%E0%B8%AA%E0%B8%99%E0%B8%B5-%E0%B8%A7%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%95%E0%B9%8C"
+   ],
+   "mbRgMbid": "81a7eeec-b95f-439d-bdd5-87818b08b29b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Asanee–Wasan / อัสนี - วสันต์ โชติกุล / Rung Kin Nam",
+   "uncertain": "MB release-group 無首發日；年份依泰文維基（1993-05-25）與 Discogs。掛名 MB 作「อัสนี - วสันต์ โชติกุล」，Discogs 與維基作「อัสนี-วสันต์」，採後者。"
+  },
+  {
+   "artist": "อัสนี-วสันต์",
+   "album": "บ้าหอบฟาง",
+   "year": 1986,
+   "label": "Nite Spot Production",
+   "country": "th",
+   "faction": "th",
+   "genres": [
+    "rock"
+   ],
+   "why": "兄弟倆以二人組名義的首張專輯（Nite Spot／WEA 發行），英文維基〈Thai rock〉把它與 Micro 並列為 80 年代泰國搖滾起飛的代表作，也是他們進 Grammy 前的成名起點。",
+   "evidence": [
+    "https://en.wikipedia.org/wiki/Thai_rock",
+    "https://musicbrainz.org/release-group/d2959526-2763-4c4b-a91c-a2dcf0198c3b",
+    "https://www.discogs.com/master/873127",
+    "https://th.wikipedia.org/wiki/%E0%B8%AD%E0%B8%B1%E0%B8%AA%E0%B8%99%E0%B8%B5-%E0%B8%A7%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%95%E0%B9%8C"
+   ],
+   "mbRgMbid": "d2959526-2763-4c4b-a91c-a2dcf0198c3b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "อัสนี และ วสันต์ / Asanee–Wasan Bah Horb Fang",
+   "uncertain": "原版封面掛名作「อัสนี และ วสันต์」，卡名統一用「อัสนี-วสันต์」。泰文維基寫 1986 年 4 月；Discogs 有 1985 年標示的 promo，採 1986。"
+  },
+  {
+   "artist": "คาราบาว",
+   "album": "อเมริกันอันธพาล",
+   "year": 1998,
+   "label": "Warner Music Thailand",
+   "country": "th",
+   "faction": "th",
+   "genres": [
+    "rock",
+    "folk"
+   ],
+   "why": "Carabao 第 19 張錄音室專輯（Discogs 卡帶標 #19），拿下 Seesan Awards 第 11 屆（1998）「年度最佳專輯」——出道近 20 年仍獲泰國樂評最高肯定的晚期代表作。",
+   "evidence": [
+    "https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C",
+    "https://www.discogs.com/release/9242228",
+    "https://th.wikipedia.org/wiki/%E0%B8%84%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%9A%E0%B8%B2%E0%B8%A7"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "artist?query=คาราบาว → 0f16032c（TH）有 16 個 release-group，無本作",
+     "release-group?query=artist:\"คาราบาว\" AND releasegroup:\"อเมริกันอันธพาล\"（count=0）；releasegroup 單查 count=0"
+    ],
+    "checkedAt": "2026-10-20",
+    "conclusion": "MB 有藝人但無此 release-group；以 Discogs release 9242228（1998，Warner Music Thailand 卡帶，標 #19）與 Seesan Awards 得獎清單人工確認。"
+   },
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/release/9242228",
+    "https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C",
+    "https://th.wikipedia.org/wiki/%E0%B8%84%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%9A%E0%B8%B2%E0%B8%A7"
+   ],
+   "releaseException": "",
+   "queryAlias": "Carabao American Antapan",
+   "uncertain": "池中 คาราบาว 已 2 張，本張為第 3 張（上限）。Discogs 無 master，只有卡帶 release。MB 無此 release-group（走 §1）。"
+  },
+  {
+   "artist": "วงตาวัน",
+   "album": "ม็อบ",
+   "year": 1992,
+   "label": "Orange Music Group",
+   "country": "th",
+   "faction": "th",
+   "genres": [
+    "rock"
+   ],
+   "why": "由前 McIntosh（แมคอินทอช）樂手組成的前衛搖滾團 Tawan 的代表作，包下 Seesan Awards 第 5 屆（1992）「年度最佳專輯」與「最佳樂團」。",
+   "evidence": [
+    "https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C",
+    "https://musicbrainz.org/release-group/be5931d7-19c8-49b8-9916-25b911f2bfab",
+    "https://www.discogs.com/master/3365446",
+    "https://th.wikipedia.org/wiki/%E0%B8%95%E0%B8%B2%E0%B8%A7%E0%B8%B1%E0%B8%99_(%E0%B8%A7%E0%B8%87%E0%B8%94%E0%B8%99%E0%B8%95%E0%B8%A3%E0%B8%B5)"
+   ],
+   "mbRgMbid": "be5931d7-19c8-49b8-9916-25b911f2bfab",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "ตาวัน / Tawan Mob",
+   "uncertain": "MB release-group 無首發日，年份依泰文維基與 Discogs（1992）。"
+  },
+  {
+   "artist": "หิน เหล็ก ไฟ",
+   "album": "หิน เหล็ก ไฟ",
+   "year": 1993,
+   "label": "RS Promotion",
+   "country": "th",
+   "faction": "th",
+   "genres": [
+    "rock"
+   ],
+   "why": "Stone Metal Fire 的同名首作，泰文維基載銷量逾百萬卷，並獲 Seesan Awards 第 6 屆（1993）最佳新人與最佳製作人；英文維基〈Thai rock〉列其為 90 年代初泰國重金屬／硬搖滾主流化的代表團。",
+   "evidence": [
+    "https://th.wikipedia.org/wiki/%E0%B8%AB%E0%B8%B4%E0%B8%99_%E0%B9%80%E0%B8%AB%E0%B8%A5%E0%B9%87%E0%B8%81_%E0%B9%84%E0%B8%9F",
+    "https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C",
+    "https://en.wikipedia.org/wiki/Thai_rock",
+    "https://musicbrainz.org/release-group/5d08b037-d8c7-40a2-8657-c4489b82c5a8",
+    "https://www.discogs.com/master/669780"
+   ],
+   "mbRgMbid": "5d08b037-d8c7-40a2-8657-c4489b82c5a8",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Stone Metal Fire / SMF / Hin Lek Fai",
+   "uncertain": "MB 對同一張有兩個 release-group（5d08b037 泰文名 1993-01-01；0cb354e7 拉丁拼音 Hin Lek Fai 1993），釘泰文那個；可能需要 MB 合併。泰文維基發行日 1993-03-15。"
+  },
+  {
+   "artist": "Crub",
+   "album": "View",
+   "year": 1994,
+   "label": "Gecco Music",
+   "country": "th",
+   "faction": "th",
+   "genres": [
+    "rock",
+    "pop"
+   ],
+   "why": "Crub 唯一的專輯：英文維基〈Thai rock〉稱其與 Moderndog 同為泰國另類搖滾的先驅，受 shoegaze 與 Madchester 影響；當年銷量平平、只在一群樂迷間出名，2016 年再版黑膠。",
+   "evidence": [
+    "https://en.wikipedia.org/wiki/Thai_rock",
+    "https://www.discogs.com/master/4217739",
+    "https://th.wikipedia.org/wiki/%E0%B8%84%E0%B8%A3%E0%B8%B1%E0%B8%9A_(%E0%B8%A7%E0%B8%87%E0%B8%94%E0%B8%99%E0%B8%95%E0%B8%A3%E0%B8%B5)"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "artist?query=Crub → 無泰國 Crub（最接近 Scrubb TH，為另一團）",
+     "release-group?query=artist:\"Crub\" AND releasegroup:\"View\"（count=0）"
+    ],
+    "checkedAt": "2026-10-20",
+    "conclusion": "MB 查無藝人 Crub（ครับ）及本作；以 Discogs master 4217739（1994，Gecco Music 卡帶；2016 黑膠再版）與泰文維基、英文維基〈Thai rock〉人工確認。"
+   },
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/4217739",
+    "https://th.wikipedia.org/wiki/%E0%B8%84%E0%B8%A3%E0%B8%B1%E0%B8%9A_(%E0%B8%A7%E0%B8%87%E0%B8%94%E0%B8%99%E0%B8%95%E0%B8%A3%E0%B8%B5)",
+    "https://en.wikipedia.org/wiki/Thai_rock"
+   ],
+   "releaseException": "",
+   "queryAlias": "ครับ",
+   "uncertain": "封面掛名 Crub（Discogs 記 Crub = ครับ），採英文。MB 無此藝人（走 §1）。"
+  },
+  {
+   "artist": "วูล์ฟแพ็ค",
+   "album": "วูล์ฟแพ็ค",
+   "year": 1996,
+   "label": "M Squared",
+   "country": "th",
+   "faction": "th",
+   "genres": [
+    "rock"
+   ],
+   "why": "Inca 樂團的鼓手與吉他手等四位樂手組成的超級組合，唯一錄音室專輯以 60–70 年代復古硬搖滾為底，拿下 Seesan Awards 第 9 屆（1996）「最佳搖滾專輯」。",
+   "evidence": [
+    "https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C",
+    "https://www.discogs.com/release/37619697",
+    "https://th.wikipedia.org/wiki/%E0%B8%A7%E0%B8%B9%E0%B8%A5%E0%B9%8C%E0%B8%9F%E0%B9%81%E0%B8%9E%E0%B9%87%E0%B8%84"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "artist?query=Wolfpack → 僅瑞典／比利時／法國／澳洲同名團，無泰國 Wolfpack",
+     "release-group?query=artist:\"Wolfpack\" AND releasegroup:\"Wolfpack\"（count=1，為 Wreckshop Wolfpack 無關）"
+    ],
+    "checkedAt": "2026-10-20",
+    "conclusion": "MB 查無泰國 Wolfpack 與本作；以 Discogs release 37619697（1996，M Squared Music Entertainment 卡帶，11 首）與泰文維基、Seesan Awards 得獎清單人工確認。"
+   },
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/release/37619697",
+    "https://th.wikipedia.org/wiki/%E0%B8%A7%E0%B8%B9%E0%B8%A5%E0%B9%8C%E0%B8%9F%E0%B9%81%E0%B8%9E%E0%B9%87%E0%B8%84",
+    "https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C"
+   ],
+   "releaseException": "",
+   "queryAlias": "Wolfpack",
+   "uncertain": "封面主文字依 Discogs 標題作泰文 วูล์ฟแพ็ค（Discogs 記 Wolfpack (20) = วูล์ฟแพ็ค），英文放 alias。泰文維基寫 1996 年 4 月、廠牌 เอ็มสแควร์（M Squared）。MB 無（走 §1）。"
+  },
+  {
+   "artist": "Blackhead",
+   "album": "Full Flavor",
+   "year": 1997,
+   "label": "M Squared",
+   "country": "th",
+   "faction": "th",
+   "genres": [
+    "rock"
+   ],
+   "why": "Blackhead 第二張，包下 Seesan Awards 第 10 屆（1997）「最佳搖滾專輯」「最佳搖滾樂團」與最佳搖滾歌曲〈หลอน〉；英文維基〈Thai rock〉列其為 90 年代中泰國另類搖滾浪潮的代表團。",
+   "evidence": [
+    "https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C",
+    "https://th.wikipedia.org/wiki/%E0%B9%81%E0%B8%9A%E0%B8%A5%E0%B9%87%E0%B8%84%E0%B9%80%E0%B8%AE%E0%B8%94",
+    "https://www.discogs.com/master/2880793",
+    "https://en.wikipedia.org/wiki/Thai_rock"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "artist?query=Blackhead → 1ffcd27a（TH）有 Handmade／Pure／Real Hits／Blackhead，無 Full Flavor",
+     "release-group?query=artist:\"Blackhead\" AND releasegroup:\"Full Flavor\"（count=0）"
+    ],
+    "checkedAt": "2026-10-20",
+    "conclusion": "MB 有藝人但無此 release-group；以 Discogs master 2880793（含 M Squared 原版 CD 與 2015 黑膠）與泰文維基（1997 年 2 月，M Squared）人工確認。"
+   },
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/2880793",
+    "https://th.wikipedia.org/wiki/%E0%B9%81%E0%B8%9A%E0%B8%A5%E0%B9%87%E0%B8%84%E0%B9%80%E0%B8%AE%E0%B8%94",
+    "https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C"
+   ],
+   "releaseException": "",
+   "queryAlias": "แบล็คเฮด",
+   "uncertain": "Discogs master 年份標 2015（黑膠再版），原版年份依泰文維基 1997-02。MB 無此 release-group（走 §1）。"
+  },
+  {
+   "artist": "เดอะ ซัน",
+   "album": "เสือ สิงห์ กระทิง แรด",
+   "year": 1998,
+   "label": "RS Promotion",
+   "country": "th",
+   "faction": "th",
+   "genres": [
+    "rock"
+   ],
+   "why": "前 Stone Metal Fire 主唱 Pong 與吉他手 Pop 另組的重金屬團 The Sun 第二張，包下 Seesan Awards 第 11 屆（1998）「最佳搖滾專輯」與「最佳搖滾樂團」，同屆最佳搖滾歌曲〈เลือกเอา〉也出自本團。",
+   "evidence": [
+    "https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C",
+    "https://th.wikipedia.org/wiki/%E0%B9%80%E0%B8%94%E0%B8%AD%E0%B8%B0_%E0%B8%8B%E0%B8%B1%E0%B8%99",
+    "https://www.discogs.com/release/38360079"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "artist?query=The Sun AND country:TH → 3bff3182（Thai hard rock band）只有 ถนนพระอาทิตย์ 與 2024 The Sun，無本作",
+     "release-group?query=artist:\"The Sun\" AND releasegroup:\"เสือ สิงห์ กระทิง แรด\"（count=0）；releasegroup 單查 count=0"
+    ],
+    "checkedAt": "2026-10-20",
+    "conclusion": "MB 有藝人但無此 release-group；以 Discogs release 38360079（RS Promotion 卡帶）與泰文維基（1998-11-16，RS Promotion）、Seesan Awards 得獎清單人工確認。"
+   },
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/release/38360079",
+    "https://th.wikipedia.org/wiki/%E0%B9%80%E0%B8%94%E0%B8%AD%E0%B8%B0_%E0%B8%8B%E0%B8%B1%E0%B8%99",
+    "https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C"
+   ],
+   "releaseException": "",
+   "queryAlias": "The Sun (Thailand) / Suea Sing Krathing Raet",
+   "uncertain": "掛名用泰文 เดอะ ซัน 以免與他國 The Sun 混淆（Discogs 記 The Sun (31) = เดอะ ซัน，封面主文字待封面層目視）。Discogs release 無年份，年份依泰文維基。MB 無此 release-group（走 §1）。"
+  },
+  {
+   "artist": "สไมล์บัฟฟาโล่",
+   "album": "นอกคอก",
+   "year": 1999,
+   "label": "Maker Head",
+   "country": "th",
+   "faction": "th",
+   "genres": [
+    "rock"
+   ],
+   "why": "90 年代泰國另類搖滾團 Smile Buffalo 的第四張，拿下 Seesan Awards 第 12 屆（1999）「最佳樂團」；英文維基〈Thai rock〉把 Smile Buffalo 列為那波另類搖滾浪潮的代表團之一。",
+   "evidence": [
+    "https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C",
+    "https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B9%84%E0%B8%A1%E0%B8%A5%E0%B9%8C%E0%B8%9A%E0%B8%B1%E0%B8%9F%E0%B8%9F%E0%B8%B2%E0%B9%82%E0%B8%A5%E0%B9%88",
+    "https://en.wikipedia.org/wiki/Thai_rock",
+    "https://www.discogs.com/artist/4888184"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "artist?query=Smile Buffalo → 無（前列為 Buffalo Springfield 等）；artist?query=สไมล์บัฟฟาโล่ → 0 筆",
+     "release-group?query=artist:\"Smile Buffalo\" AND releasegroup:\"นอกคอก\"（count=0）；releasegroup 單查 count=0"
+    ],
+    "checkedAt": "2026-10-20",
+    "conclusion": "MB 查無藝人與作品；Discogs 只收首張（master 2842825），本作無條目。以泰文維基曲目表（1999-05-04 發行，10 首）與 Seesan Awards 得獎清單人工確認。"
+   },
+   "manualEvidenceUrls": [
+    "https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B9%84%E0%B8%A1%E0%B8%A5%E0%B9%8C%E0%B8%9A%E0%B8%B1%E0%B8%9F%E0%B8%9F%E0%B8%B2%E0%B9%82%E0%B8%A5%E0%B9%88",
+    "https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C",
+    "https://www.discogs.com/artist/4888184"
+   ],
+   "releaseException": "",
+   "queryAlias": "Smile Buffalo / Nok Khok",
+   "uncertain": "身分證據偏薄：Discogs 無本作條目，只有藝人頁；廠牌依泰文維基「Maker Head 1998–2000」推定。掛名封面文字未目視（Discogs 藝人名為 สไมล์ บัฟฟาโล）。MB 無（走 §1）。"
+  },
+  {
+   "artist": "Y Not 7",
+   "album": "Yeah!",
+   "year": 1999,
+   "label": "Grammy Grand",
+   "country": "th",
+   "faction": "th",
+   "genres": [
+    "rock"
+   ],
+   "why": "泰國 grunge／另類搖滾團 Y Not 7 的代表作，包下 Seesan Awards 第 12 屆（1999）「最佳搖滾專輯」「最佳搖滾樂團」與最佳搖滾歌曲〈Yeah! Yeah!〉。",
+   "evidence": [
+    "https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C",
+    "https://th.wikipedia.org/wiki/%E0%B8%A7%E0%B8%B2%E0%B8%A2_%E0%B8%99%E0%B9%87%E0%B8%AD%E0%B8%97_%E0%B9%80%E0%B8%8B%E0%B9%80%E0%B8%A7%E0%B9%88%E0%B8%99",
+    "https://en.wikipedia.org/wiki/Thai_rock"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "artist?query=Y Not 7 → 7a1e084e（TH）只有 Neverdie（1999），無 Yeah!",
+     "release-group?query=artist:\"Y Not 7\" AND releasegroup:\"Yeah!\"（count=0）"
+    ],
+    "checkedAt": "2026-10-20",
+    "conclusion": "MB 有藝人但無此 release-group；Discogs 藝人 4307204 亦無本作。以泰文維基曲目表（1999-01-28 發行）與 Seesan Awards 得獎清單人工確認。"
+   },
+   "manualEvidenceUrls": [
+    "https://th.wikipedia.org/wiki/%E0%B8%A7%E0%B8%B2%E0%B8%A2_%E0%B8%99%E0%B9%87%E0%B8%AD%E0%B8%97_%E0%B9%80%E0%B8%8B%E0%B9%80%E0%B8%A7%E0%B9%88%E0%B8%99",
+    "https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C",
+    "https://www.discogs.com/artist/4307204"
+   ],
+   "releaseException": "",
+   "queryAlias": "วาย น็อท เซเว่น",
+   "uncertain": "身分證據偏薄：Discogs 無本作條目。廠牌依泰文維基「Grammy Grand 1997–1999、Maker Head 1999–」推定為 Grammy Grand，需回核。MB 無（走 §1）。"
+  },
+  {
+   "artist": "Silly Fools",
+   "album": "Mint",
+   "year": 2000,
+   "label": "More Music",
+   "country": "th",
+   "faction": "th",
+   "genres": [
+    "rock"
+   ],
+   "why": "Silly Fools 第三張，英文維基〈Thai rock〉載銷量逾百萬，並包下 Seesan Awards 第 13 屆（2000）「最佳搖滾專輯」與「最佳搖滾樂團」，是泰國 nu-metal／另類搖滾的高峰。",
+   "evidence": [
+    "https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C",
+    "https://en.wikipedia.org/wiki/Thai_rock",
+    "https://musicbrainz.org/release-group/69e2efa5-5e17-3433-bf3d-8686e1c3b79b",
+    "https://www.discogs.com/master/2466259"
+   ],
+   "mbRgMbid": "69e2efa5-5e17-3433-bf3d-8686e1c3b79b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "ซิลลี่ ฟูลส์",
+   "uncertain": "MB 另有一個 Mint release-group（b90b0f71，日本版 2000）重複，釘泰國原版 69e2efa5（2000-09-28）。池中 Silly Fools 已 1 張（Candyman），本批連 Juicy 共 3 張（上限）。"
+  },
+  {
+   "artist": "Silly Fools",
+   "album": "Juicy",
+   "year": 2002,
+   "label": "More Music",
+   "country": "th",
+   "faction": "th",
+   "genres": [
+    "rock"
+   ],
+   "why": "Silly Fools 第四張，再度拿下 Seesan Awards 第 15 屆（2002）「最佳搖滾專輯」與「最佳搖滾樂團」——同一團兩年內第二次奪搖滾雙冠，英文維基稱它鞏固了樂團的一線地位。",
+   "evidence": [
+    "https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C",
+    "https://en.wikipedia.org/wiki/Thai_rock",
+    "https://musicbrainz.org/release-group/0d2b1134-9588-3f21-b7f1-82c523d308bb",
+    "https://www.discogs.com/master/2731274"
+   ],
+   "mbRgMbid": "0d2b1134-9588-3f21-b7f1-82c523d308bb",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "ซิลลี่ ฟูลส์",
+   "uncertain": "池中 Silly Fools 連本批共 3 張（上限）。"
+  },
+  {
+   "artist": "Moderndog",
+   "album": "Love Me Love My Life",
+   "year": 2001,
+   "label": "Bakery Music",
+   "country": "th",
+   "faction": "th",
+   "genres": [
+    "rock"
+   ],
+   "why": "Moderndog 第三張，拿下 Seesan Awards 第 14 屆（2001）「最佳樂團」，是這支泰國另類搖滾先驅在 Bakery 時期的成熟之作。",
+   "evidence": [
+    "https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C",
+    "https://musicbrainz.org/release-group/6e215c10-e425-4021-ad1f-7cca052c48d7",
+    "https://www.discogs.com/master/2722244"
+   ],
+   "mbRgMbid": "6e215c10-e425-4021-ad1f-7cca052c48d7",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "ModernDog / โมเดิร์นด็อก",
+   "uncertain": "MB 掛名 ModernDog，池中寫法為 Moderndog，沿用池中。池中已 1 張（เสริมสุขภาพ），s 組提名 ทิงนองนอย（2008），合計 3 張（上限）。附帶發現：MB 現已有 เสริมสุขภาพ release-group（6f5c4676），池中該卡原走 §1 人工身分，可改釘。"
+  },
+  {
+   "artist": "Pru",
+   "album": "Pru",
+   "year": 2001,
+   "label": "Sony Music",
+   "country": "th",
+   "faction": "th",
+   "genres": [
+    "rock"
+   ],
+   "why": "泰國另類搖滾團 Pru 的首張同名專輯，〈แค่〉〈ทุกสิ่ง〉衝上電台榜，並拿下 Seesan Awards 第 14 屆（2001）「最佳搖滾樂團」。",
+   "evidence": [
+    "https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C",
+    "https://th.wikipedia.org/wiki/%E0%B8%9E%E0%B8%A3%E0%B8%B9",
+    "https://musicbrainz.org/release-group/2ee21938-e591-4867-9cef-065b66af566f"
+   ],
+   "mbRgMbid": "2ee21938-e591-4867-9cef-065b66af566f",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "พรู",
+   "uncertain": "MB release-group 2ee21938 的首發日誤記為 2010-09-07（Sony Music 再發版），但曲目 12 首與泰文維基 2001 首張完全一致，故釘之、年份用 2001；MB 另有 a3d1ee5c「Pru」為美國同名歌手，勿混。Discogs 查無本作。"
+  },
+  {
+   "artist": "Big Ass",
+   "album": "My World",
+   "year": 2003,
+   "label": "Music Bugs",
+   "country": "th",
+   "faction": "th",
+   "genres": [
+    "rock"
+   ],
+   "why": "Big Ass 第三張，包下 Seesan Awards 第 16 屆（2003）「最佳搖滾專輯」與「最佳搖滾樂團」，同屆最佳搖滾歌曲〈ชีวิตหลังความตาย〉也出自本作。",
+   "evidence": [
+    "https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C",
+    "https://th.wikipedia.org/wiki/%E0%B8%9A%E0%B8%B4%E0%B9%8A%E0%B8%81%E0%B9%81%E0%B8%AD%E0%B8%AA",
+    "https://musicbrainz.org/release-group/4a711dfc-2938-4d4b-bf1e-167aaadff3b6",
+    "https://www.discogs.com/master/2283922"
+   ],
+   "mbRgMbid": "4a711dfc-2938-4d4b-bf1e-167aaadff3b6",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "บิ๊กแอส",
+   "uncertain": "MB 掛名 บิ๊กแอส，封面主文字為英文 BIG ASS（待封面層目視）。最佳搖滾歌曲歸屬依 Seesan 清單作詞作曲者（ขจรเดช／พูนศักดิ์ 為團員）推定，寫作層須回核。MB 首發日 2003-01-01 為佔位。"
+  },
+  {
+   "artist": "Big Ass",
+   "album": "Seven",
+   "year": 2004,
+   "label": "Genie Records",
+   "country": "th",
+   "faction": "th",
+   "genres": [
+    "rock"
+   ],
+   "why": "Big Ass 轉投 Genie Records 後的第四張，連續第二年拿下 Seesan Awards 第 17 屆（2004）「最佳搖滾專輯」與「最佳搖滾樂團」；英文維基〈Thai rock〉點名其單曲〈Len Kong Soong〉。",
+   "evidence": [
+    "https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C",
+    "https://en.wikipedia.org/wiki/Thai_rock",
+    "https://musicbrainz.org/release-group/605c9969-059c-4b53-9d45-120555c765bb",
+    "https://www.discogs.com/release/15491312"
+   ],
+   "mbRgMbid": "605c9969-059c-4b53-9d45-120555c765bb",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "บิ๊กแอส",
+   "uncertain": "池中 Big Ass 0 張，本批 2 張。"
+  },
+  {
+   "artist": "ดิ โอฬาร โปรเจ็คท์",
+   "album": "ลิขิตดวงดาว",
+   "year": 1996,
+   "label": "Perfect Record",
+   "country": "th",
+   "faction": "th",
+   "genres": [
+    "rock"
+   ],
+   "why": "吉他手 Olarn Promjai 領軍、1985 年成軍的泰國重金屬先驅 The Olarn Project 的 1996 年專輯，拿下 Seesan Awards 第 9 屆（1996）「最佳搖滾樂團」；英文維基〈Thai rock〉將其列為 80 年代泰國重金屬代表團。",
+   "evidence": [
+    "https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C",
+    "https://th.wikipedia.org/wiki/%E0%B8%94%E0%B8%B4_%E0%B9%82%E0%B8%AD%E0%B8%AC%E0%B8%B2%E0%B8%A3_%E0%B9%82%E0%B8%9B%E0%B8%A3%E0%B9%80%E0%B8%88%E0%B9%87%E0%B8%84%E0%B8%95%E0%B9%8C",
+    "https://www.discogs.com/master/804854",
+    "https://en.wikipedia.org/wiki/Thai_rock"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "artist?query=The Olarn Project → fd1e836b ดิ โอฬาร โปรเจ็คท์（TH）只有 กุมภาพันธ์ 2528／หูเหล็ก／ไตรภาค；另一重複藝人 959bede7 ดิ โอฬาร 也無本作",
+     "release-group?query=artist:\"The O-Larn Project\" AND releasegroup:\"ลิขิตดวงดาว\"（count=0）；releasegroup 單查 count=0"
+    ],
+    "checkedAt": "2026-10-20",
+    "conclusion": "MB 有藝人但無此 release-group；以 Discogs master 804854（1996，盤名 ลิขิต...ดวงดาว）與泰文維基、Seesan Awards 得獎清單人工確認。"
+   },
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/804854",
+    "https://th.wikipedia.org/wiki/%E0%B8%94%E0%B8%B4_%E0%B9%82%E0%B8%AD%E0%B8%AC%E0%B8%B2%E0%B8%A3_%E0%B9%82%E0%B8%9B%E0%B8%A3%E0%B9%80%E0%B8%88%E0%B9%87%E0%B8%84%E0%B8%95%E0%B9%8C",
+    "https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C"
+   ],
+   "releaseException": "",
+   "queryAlias": "The Olarn Project / The O-Larn Project / ลิขิต...ดวงดาว",
+   "uncertain": "掛名依 MB 藝人名 ดิ โอฬาร โปรเจ็คท์（維基作 โปรเจ็คต์，Discogs 作 The O-Larn Project），封面主文字待封面層目視。廠牌 Perfect Record 取自 Discogs 卡帶再版條目，原版廠牌待回核。泰文維基列 1987、1989 兩張正規＋1993 特別盤，本作序數寫作層回核。"
+  },
+  {
+   "artist": "ไมโคร",
+   "album": "เอี่ยมอ่องอรทัย",
+   "year": 1991,
+   "label": "GMM Grammy",
+   "country": "th",
+   "faction": "th",
+   "genres": [
+    "rock"
+   ],
+   "why": "原主唱 Ampol 單飛後、Micro 改由吉他手 Kob 主唱的第一張，當年即拿下 Seesan Awards 第 4 屆（1991）「最佳樂團」，證明樂團換聲後仍是泰國搖滾一線。",
+   "evidence": [
+    "https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C",
+    "https://www.discogs.com/master/875421",
+    "https://th.wikipedia.org/wiki/%E0%B9%84%E0%B8%A1%E0%B9%82%E0%B8%84%E0%B8%A3_(%E0%B8%A7%E0%B8%87%E0%B8%94%E0%B8%99%E0%B8%95%E0%B8%A3%E0%B8%B5)"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "artist?query=ไมโคร → 36fb1799（TH）但 release-group 數 0",
+     "release-group?query=artist:\"ไมโคร\" AND releasegroup:\"เอี่ยมอ่องอรทัย\"（count=0）；releasegroup 單查 count=0"
+    ],
+    "checkedAt": "2026-10-20",
+    "conclusion": "MB 有藝人無作品；以 Discogs master 875421（1991，LP／卡帶／CD 再版）與泰文維基、Seesan Awards 得獎清單人工確認。"
+   },
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/875421",
+    "https://th.wikipedia.org/wiki/%E0%B9%84%E0%B8%A1%E0%B9%82%E0%B8%84%E0%B8%A3_(%E0%B8%A7%E0%B8%87%E0%B8%94%E0%B8%99%E0%B8%95%E0%B8%A3%E0%B8%B5)",
+    "https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C"
+   ],
+   "releaseException": "",
+   "queryAlias": "Micro Iem Ong Ora Thai",
+   "uncertain": "池中 ไมโคร 0 張，本批 3 張（上限）。「換主唱後第一張」依泰文維基 1991 年 Ampol 單飛、Kob 接任與本作 1991 年發行推定，寫作層回核。MB 無（走 §1）。"
+  },
+  {
+   "artist": "เดอะ ซัน",
+   "album": "ถนนพระอาทิตย์",
+   "year": 2000,
+   "label": "Bakery Music",
+   "country": "th",
+   "faction": "th",
+   "genres": [
+    "rock"
+   ],
+   "why": "The Sun 轉投 Bakery Music 後的第三張，拿下 Seesan Awards 第 13 屆（2000）「最佳樂團」（全類別，不限搖滾），2017 年再推 Extended Edition。",
+   "evidence": [
+    "https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C",
+    "https://th.wikipedia.org/wiki/%E0%B9%80%E0%B8%94%E0%B8%AD%E0%B8%B0_%E0%B8%8B%E0%B8%B1%E0%B8%99",
+    "https://musicbrainz.org/release-group/1f38ff7e-b5ed-4e2a-b292-cb5299a0eed9",
+    "https://www.discogs.com/release/19949464"
+   ],
+   "mbRgMbid": "1f38ff7e-b5ed-4e2a-b292-cb5299a0eed9",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "The Sun (Thailand) / Thanon Phra Athit",
+   "uncertain": "MB release-group 首發日 2004-05-11 為再發版，原版依泰文維基 2000-11-01、Discogs VCD 2000。泰文維基稱其為第三張，但其間 1999 有一張電影原聲，序數寫作層回核。"
+  },
+  {
+   "artist": "Hi-Rock",
+   "album": "คนพันธุ์ร็อค",
+   "year": 1990,
+   "label": "RS Promotion",
+   "country": "th",
+   "faction": "th",
+   "genres": [
+    "rock"
+   ],
+   "why": "Hi-Rock 首張，泰文維基稱其在流行搖滾當道時以厚重金屬聲「翻轉泰國樂壇」；英文維基〈Thai rock〉列 Hi-Rock 為 90 年代初重金屬／硬搖滾主流化的代表團，同年〈กระจกร้าว〉獲金電視獎最佳 MV。",
+   "evidence": [
+    "https://th.wikipedia.org/wiki/%E0%B9%84%E0%B8%AE-%E0%B8%A3%E0%B9%87%E0%B8%AD%E0%B8%81",
+    "https://en.wikipedia.org/wiki/Thai_rock",
+    "https://musicbrainz.org/release-group/58280298-00dc-4f43-8667-3b001144b021",
+    "https://www.discogs.com/master/1502632"
+   ],
+   "mbRgMbid": "58280298-00dc-4f43-8667-3b001144b021",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "ไฮร็อก / Khon Pan Rock",
+   "uncertain": "MB release-group 標題為拉丁拼音 Khon Pan Rock，卡名用封面泰文（Discogs 卡帶 คนพันธุ์ร็อค；泰文維基作 คนพันธุ์ร็อก）。掛名封面為 ไฮร็อก／Hi-Rock 並列，採英文。"
+  },
+  {
+   "artist": "Clash",
+   "album": "ONE",
+   "year": 2001,
+   "label": "UP-G",
+   "country": "th",
+   "faction": "th",
+   "genres": [
+    "rock"
+   ],
+   "why": "Clash 首張專輯，英文維基〈Thai rock〉載首支單曲〈กอด〉大紅、讓樂團站穩主流；〈Love Scene〉拿下 Seesan Awards 第 14 屆（2001）最佳搖滾歌曲，泰文維基載銷量 76 萬套。",
+   "evidence": [
+    "https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C",
+    "https://en.wikipedia.org/wiki/Thai_rock",
+    "https://th.wikipedia.org/wiki/%E0%B9%81%E0%B8%84%E0%B8%A5%E0%B8%8A"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "artist（MB 泰國 Clash 85ee191e，取自 Soundcream RG 87f88142）release-group 列表：Soundcream、Crazy Clash、EMOTION 等，無 ONE",
+     "release-group?query=artist:\"Clash\" AND releasegroup:\"ONE\"（count=1，為 The Clash 無關）"
+    ],
+    "checkedAt": "2026-10-20",
+    "conclusion": "MB 有藝人但無此 release-group；Discogs 藝人 1094490 亦無本作。以泰文維基（2001-12-04，銷量 76 萬）、英文維基〈Thai rock〉（GMM Grammy 旗下 UP-G 發行）與 Seesan Awards 得獎清單人工確認。"
+   },
+   "manualEvidenceUrls": [
+    "https://th.wikipedia.org/wiki/%E0%B9%81%E0%B8%84%E0%B8%A5%E0%B8%8A",
+    "https://en.wikipedia.org/wiki/Thai_rock",
+    "https://th.wikipedia.org/wiki/%E0%B8%AA%E0%B8%B5%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B0%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%AA%E0%B9%8C"
+   ],
+   "releaseException": "",
+   "queryAlias": "แคลช / วัน",
+   "uncertain": "身分證據偏薄：MB／Discogs 均無本作，只有維基與 Seesan 清單。盤名泰文維基作「วัน」，英文維基與 Seesan 清單作 ONE／One，封面待目視。「讚」的證據是單曲獎與銷量，不是專輯獎，若主線嫌不夠可汰。"
+  }
+ ],
+ "notes": [
+  "範圍：泰國 1970–2004（2005 後歸 s 組）。交件前再讀 curation-s.json（20 張）：無同張重複，但有三位藝人合計超過 3 張上限，需主線裁定——(1) Moderndog：池中 1＋r《Love Me Love My Life》＋s《ทิงนองนอย》《Pod Pong May-T》＝4；(2) Big Ass：r《My World》《Seven》＋s《Begins》《THE LION》＝4（另 s 掛名用 MB 的 บิ๊กแอส、r 用封面的 Big Ass，需統一）；(3) Silly Fools：池中《Candyman》＋r《Mint》《Juicy》＋s《The One》＝4。r 組這 5 張都有 Seesan「最佳搖滾專輯」或「最佳樂團」獎；若要砍，建議比對 s 組那幾張的證據強度再定。",
+  "「讚」的主證據統一用 Seesan Awards（สีสันอะวอร์ดส์，泰國樂評雜誌獎）泰文維基得獎清單：24 張中 19 張本身拿過 Seesan 年度最佳專輯／最佳（搖滾）樂團／最佳搖滾專輯／最佳新人；4 張為場景里程碑（Micro《ร็อค เล็ก เล็ก》、Asanee–Wasan《บ้าหอบฟาง》、Crub《View》、Hi-Rock《คนพันธุ์ร็อค》，皆由英文維基〈Thai rock〉點名）。Clash《ONE》靠的是單曲獎＋銷量，最弱，可先汰。",
+  "提名 24 張（目標 22，含 2 張汰換餘量）。同藝人：ไมโคร 3、อัสนี-วสันต์ 2、Silly Fools 池中 1＋2＝3、คาราบาว 池中 2＋1＝3、Big Ass 2、เดอะ ซัน 2，其餘 1。",
+  "身分：MB 釘住 12 張、§1 人工身分 12 張。泰國 80–90 年代作品 MB 覆蓋很差（ไมโคร 藝人在 MB 有條目但 0 個 release-group）。身分最薄的三張：สไมล์บัฟฟาโล่《นอกคอก》、Y Not 7《Yeah!》、Clash《ONE》——Discogs 都沒有本作條目，只有泰文維基曲目表＋Seesan 清單（＋Discogs 藝人頁），主線若要求一定要有 Discogs／廠牌頁可汰這三張。",
+  "MB 資料問題（不影響提名）：หิน เหล็ก ไฟ 首張有兩個重複 release-group（5d08b037／0cb354e7）；Silly Fools《Mint》有兩個（69e2efa5 泰版／b90b0f71 日版）；Pru 首張 RG 2ee21938 首發日誤記 2010；เดอะ ซัน《ถนนพระอาทิตย์》RG 日期為 2004 再發。池中 Moderndog《เสริมสุขภาพ》當初走 §1，MB 現已有 RG 6f5c4676 可改釘。",
+  "考慮過但不收：The Impossibles《Hot Pepper》（1975 瑞典錄的全英文盤，泰國樂團首張海外英文專輯，但 Discogs 只標 Funk / Soul、內容多為翻唱，不符「只收搖滾」）；Caravan《Songs for Life》（1975 Paredon／Smithsonian Folkways，屬原聲民謠，且可能與池中《คนกับควาย》曲目重疊）；Nuvo 首張（泰文維基稱流行樂）；Crescendo 2004 年度最佳專輯（soul／funk／jazz）；Inca《คนล่าฝัน》（百萬銷量但無評論證據）；Loso 第 3 張（無夠格證據）；Clash《Soundshake》（只有銷量 110 萬）。",
+  "預算：WebSearch 用 1 次（無結果，改以維基與 Discogs API／MB API 為主）。"
+ ]
+}

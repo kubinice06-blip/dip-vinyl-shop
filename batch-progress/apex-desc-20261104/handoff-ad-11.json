@@ -1,0 +1,10 @@
+{
+ "batch": "ad-11",
+ "cards": 30,
+ "written": { "kvKeys": 30, "kvBefore": "kv-before-ad-11.json", "manifest": 0 },
+ "review": { "by": "cloud-main", "cards": 30, "changed": [
+  "napalm death|scum", "oleg malov|ustvolskaya: composition no. 2 dies irae", "john cage & david tudor|variations iv",
+  "the residents|eskimo", "captain beefheart & his magic band|trout mask replica" ] },
+ "qa": { "research": "pass", "out": "pass（5 標記皆誤報）", "kvReadback": "30/30", "front": "30/30" },
+ "pendingLocal": {}
+}

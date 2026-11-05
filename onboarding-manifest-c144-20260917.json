@@ -29,13 +29,22 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 5,
+    "obscurity": 4,
     "accessibility": 2,
     "listeners": 25,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Montreux 系列現場，非代表；L25＋ready 下限 4；長篇放克管風琴即興"
    },
-   "rarity": "uncommon",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -98,13 +107,22 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 5,
+    "obscurity": 4,
     "accessibility": 2,
     "listeners": 101,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Humphrey 現場盤非代表（Blacks and Blues）；L101＋ready 下限 4；長笛靈魂爵士"
    },
-   "rarity": "uncommon",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -166,11 +184,20 @@
    },
    "ratings": {
     "classic": 4,
-    "obscurity": 5,
-    "accessibility": 2,
+    "obscurity": 3,
+    "accessibility": 3,
     "listeners": 2093,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：70 年代 Hutcherson 強作、Woody Shaw 參與，常被推薦；L2093 下限 3；長篇調式後咆勃"
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -193,7 +220,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/46/f9/74/46f97408-2914-a0e5-d5bc-4831d7ea40f3/mzaf_229342164338147772.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/e4/4e/00/e44e0062-216d-6128-94d1-5db47423f0d5/mzaf_14166110437605539598.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -234,13 +261,22 @@
    },
    "ratings": {
     "classic": 4,
-    "obscurity": 4,
+    "obscurity": 3,
     "accessibility": 2,
     "listeners": 14466,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Santos BN 三部曲核心作之一；L14k BN 正規；巴西節奏人聲爵士"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -261,7 +297,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/68/33/98/68339874-5934-5cf4-1884-a5f96a5d10b8/mzaf_14772129565640684428.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/d4/b3/39/d4b3392f-b47c-a4a2-7f51-df2aed0b196f/mzaf_16166741148603103269.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -309,7 +345,7 @@
     "source": "worker:/album-rating",
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -330,7 +366,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/46/a6/34/46a63494-05d4-07ae-7171-7ce812b41325/mzaf_11491013921697908194.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/b3/6d/2e/b36d2e47-60f2-c772-e490-d3f6b8c95260/mzaf_10197947473977367169.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -372,14 +408,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 5,
-    "accessibility": 4,
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 1,
     "listeners": 1171,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 5,
+     "accessibility": 4,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：BN首支人聲團首張，非代表性；正規廠商業平淡L1171→3；家族和聲soul/disco"
    },
-   "rarity": "uncommon",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -401,7 +446,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/8b/a7/5f/8ba75fe0-3d2f-8fd9-730b-c2616261c71c/mzaf_7137634155099296986.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/f1/a5/f8/f1a5f8b8-fbea-7d0b-2f84-25a4342c7e50/mzaf_1045310088296198030.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -443,11 +488,20 @@
    },
    "ratings": {
     "classic": 4,
-    "obscurity": 4,
+    "obscurity": 3,
     "accessibility": 3,
     "listeners": 16686,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 4,
+     "accessibility": 3,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Mouzon 公認代表作、爵士搖滾 cult 盤；L16k BN 正規；重型融合吉他"
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -470,7 +524,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/d9/7f/76/d97f7655-7f5e-a924-e788-38dfa0f86431/mzaf_5935672205569436802.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/a3/54/1f/a3541f7b-367c-35e8-6d69-0735f7cb4afa/mzaf_2885282494387934865.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -513,13 +567,22 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 5,
+    "obscurity": 3,
     "accessibility": 2,
     "listeners": 1100,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：United States of Mind 後的系列首張，非代表；L1100 下限 3；銅管編制硬咆勃"
    },
-   "rarity": "uncommon",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -540,7 +603,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/b2/af/9f/b2af9f27-68b0-b58e-65d2-67463f7dfd2c/mzaf_6525676574459691887.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/f7/ec/a1/f7eca123-3304-7b03-13f6-7ddd5518de14/mzaf_194981634944343537.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -582,13 +645,22 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 4,
+    "obscurity": 3,
     "accessibility": 2,
     "listeners": 3830,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Benson 製作的 BN 末張，非代表；L3830 下限 3；放克爵士"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -609,7 +681,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/82/f6/cf/82f6cf27-1694-c251-7ff9-e4640568682d/mzaf_17239087226868117400.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/b4/82/11/b48211ef-071b-3773-d293-25bd17d96d09/mzaf_3550511562854559964.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -649,14 +721,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 4,
+    "classic": 3,
     "obscurity": 5,
     "accessibility": 3,
     "listeners": 232,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 5,
+     "accessibility": 3,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "epic"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：1965–70 未發場次彙編兩片，非代表；L232＋unavailable→5；Hill 稜角後咆勃"
    },
-   "rarity": "epic",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -715,14 +796,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 4,
-    "obscurity": 5,
-    "accessibility": 2,
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 1,
     "listeners": 313,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：BN 首作，非代表作；L313＋ready 下限 4；人聲流行抒情"
    },
-   "rarity": "uncommon",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -744,7 +834,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview128/v4/b8/60/d4/b860d470-2286-4586-50d6-65369e8255a5/mzaf_6837963730077798304.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview128/v4/1b/97/d9/1b97d90f-d421-f41b-1bb9-03cc7346bc41/mzaf_5804595010058147751.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -786,14 +876,23 @@
     "note": "試聽探測釘定的 collectionId 1765629860（us）：Moacir Santos — Carnival Of The Spirits"
    },
    "ratings": {
-    "classic": 4,
-    "obscurity": 5,
+    "classic": 3,
+    "obscurity": 4,
     "accessibility": 2,
     "listeners": 853,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：BN 三部曲末張，評價次於 Maestro／Saudade；L853＋ready 下限 4；巴西大編制"
    },
-   "rarity": "uncommon",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -814,7 +913,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/7f/bb/63/7fbb6369-9200-c06e-dd70-2cf9d7f5f9be/mzaf_8297860340148771210.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d9/9f/e8/d99fe854-4216-1fb9-72dc-8804dd8b18b6/mzaf_17545324930691076377.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -854,14 +953,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 4,
-    "obscurity": 4,
+    "classic": 3,
+    "obscurity": 3,
     "accessibility": 2,
     "listeners": 11431,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Hamilton 70 年代融合作，非代表（Gongs East 等）；L11k BN 正規；律動爵士"
    },
-   "rarity": "uncommon",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -883,7 +991,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/5e/4f/58/5e4f589c-896e-42db-d218-6d8526df7dc1/mzaf_7805318009018255026.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/20/6f/f5/206ff521-165c-60c9-f6f0-0859a9b15327/mzaf_3601759751746846682.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -926,14 +1034,23 @@
     "note": "試聽探測釘定的 collectionId 1202359486（us）：Jimmy Witherspoon — Spoonful"
    },
    "ratings": {
-    "classic": 4,
-    "obscurity": 5,
+    "classic": 3,
+    "obscurity": 4,
     "accessibility": 2,
     "listeners": 238,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Witherspoon 晚期 BN 作非代表；L238＋ready 下限 4；藍調人聲"
    },
-   "rarity": "uncommon",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -954,7 +1071,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview111/v4/03/4a/3e/034a3ec5-10ab-2140-4302-8fedcef9c331/mzaf_8102132010995024700.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview122/v4/70/9e/ac/709eace8-db54-a324-0384-51c237d7158d/mzaf_3592985626849340227.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -1001,7 +1118,7 @@
     "source": "worker:/album-rating",
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1061,13 +1178,22 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 4,
+    "obscurity": 3,
     "accessibility": 2,
     "listeners": 4563,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：流行爵士 crossover 中期作；L4563 下限 3；合成器律動"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1089,7 +1215,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/f0/45/3e/f0453efc-4cad-9166-2c76-454125542e00/mzaf_18062211191517314395.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/65/cf/10/65cf10d5-527f-ab62-3e04-14d1fc10cd6c/mzaf_1147366319889286082.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -1129,12 +1255,21 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 3,
-    "obscurity": 4,
+    "classic": 4,
+    "obscurity": 3,
     "accessibility": 3,
     "listeners": 11800,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 3,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：1965–66 擱置場次、Morgan/Tolliver 同台，評論普遍視為強作；L11.8k；後咆勃長軌"
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -1158,7 +1293,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/f1/be/39/f1be391b-0a92-e495-edb5-d4b45d01226c/mzaf_4455668064976100598.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/4c/c1/28/4cc1281a-f45e-4c87-2e45-bbb8f6aeeba7/mzaf_17458838079635452502.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -1198,14 +1333,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 4,
-    "obscurity": 5,
-    "accessibility": 2,
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
     "listeners": 1700,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：1969–70 未發場次彙編，非代表；L1700 下限 3；靈性調式長篇"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1227,7 +1371,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/51/24/05/51240553-ec0b-236e-990b-b7a3b3897047/mzaf_6824039047079722319.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/22/02/a2/2202a2c1-10ff-a96f-4d40-cb3abd213b8d/mzaf_9328320940139840374.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -1269,14 +1413,23 @@
     "note": "試聽探測釘定的 collectionId 1765580407（us）：Elvin Jones — The Prime Element"
    },
    "ratings": {
-    "classic": 4,
-    "obscurity": 5,
+    "classic": 3,
+    "obscurity": 4,
     "accessibility": 3,
     "listeners": 142,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 5,
+     "accessibility": 3,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "epic"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：未發場次彙編雙片，非代表；L142＋ready 下限 4；長篇後咆勃"
    },
-   "rarity": "epic",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1297,7 +1450,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/05/70/78/05707833-6b2a-0e96-82df-7dde6c1380c1/mzaf_1786171390292334416.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f4/5d/9f/f45d9f25-dd7d-34c0-eef2-a2881498741e/mzaf_18428746064586534897.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -1338,13 +1491,22 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 5,
+    "obscurity": 4,
     "accessibility": 2,
     "listeners": 535,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：系列作非代表；L535＋ready 下限 4；木管編制組曲"
    },
-   "rarity": "uncommon",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1366,7 +1528,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/bd/59/86/bd598637-df19-08d3-fd04-b541d23212e0/mzaf_2992284972466053350.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview113/v4/7d/b0/86/7db086cc-236b-2e14-7066-325f90726a1a/mzaf_5439144467540785672.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -1407,14 +1569,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 4,
-    "obscurity": 5,
-    "accessibility": 3,
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
     "listeners": 1248,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 5,
+     "accessibility": 3,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "epic"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：轉向舞曲放克，非代表；L1248 下限 3；律動易聽"
    },
-   "rarity": "epic",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1437,7 +1608,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/67/9b/52/679b528b-d52d-8304-2e6d-303561b6e471/mzaf_14663941946604443871.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/d9/55/4f/d9554fbe-e355-66c3-acb0-7d7c1b91b4c2/mzaf_1985098340043592999.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -1478,14 +1649,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 4,
-    "obscurity": 5,
-    "accessibility": 2,
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 1,
     "listeners": 828,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：代表作是 Who Is This Bitch Anyway；L828＋ready 下限 4；靈魂流行人聲"
    },
-   "rarity": "uncommon",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1506,7 +1686,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/eb/e9/73/ebe973b7-6340-440c-3f04-4e79385b4ab3/mzaf_3597109057130296223.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/f8/5c/e7/f85ce786-8f6b-d83a-50e8-d903b8445534/mzaf_111910706551971843.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -1546,14 +1726,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 4,
-    "obscurity": 5,
+    "classic": 3,
+    "obscurity": 3,
     "accessibility": 2,
     "listeners": 1050,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：BN 晚期作；L1050 下限 3；長軌主流爵士帶靈魂"
    },
-   "rarity": "uncommon",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1574,7 +1763,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/14/eb/97/14eb9705-32ad-fba8-992e-1d682afd2c9c/mzaf_14464726552830864350.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/e0/ef/71/e0ef713c-446c-0ab9-f29d-05a68bb84394/mzaf_8295485267264875495.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -1618,13 +1807,22 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 4,
+    "obscurity": 3,
     "accessibility": 2,
     "listeners": 16766,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Harris 70 年代放克作，取樣圈知名；L16k BN 正規；律動易聽"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1687,13 +1885,22 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 4,
-    "accessibility": 2,
+    "obscurity": 3,
+    "accessibility": 1,
     "listeners": 3484,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：McRae 70 年代流行翻唱盤，非代表；L3484 下限 3；人聲流行"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1714,7 +1921,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/32/52/a3/3252a336-2fd7-0f58-d572-23e87a8bc84b/mzaf_2267675873575186936.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/21/17/e3/2117e32a-97ff-9375-dc3c-3240b8a14f20/mzaf_10963727178342590259.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -1762,7 +1969,7 @@
     "source": "worker:/album-rating",
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1822,13 +2029,22 @@
    },
    "ratings": {
     "classic": 4,
-    "obscurity": 4,
-    "accessibility": 2,
+    "obscurity": 3,
+    "accessibility": 1,
     "listeners": 4483,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Klugh 首作、生涯代表之一；L4483 下限 3；柔和原聲吉他"
    },
-   "rarity": "uncommon",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1849,7 +2065,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/5a/95/57/5a9557a9-09f2-26f3-1dcd-aabe07a3969f/mzaf_8333226704724662398.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/37/45/cc/3745cce0-b850-4e96-fe7c-ae9fcae139f3/mzaf_453648182673436395.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -1891,13 +2107,22 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 3,
-    "accessibility": 2,
+    "obscurity": 2,
+    "accessibility": 1,
     "listeners": 22639,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：早期佳作非首選；L22k 正常流通；柔和吉他流行翻唱"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1918,7 +2143,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/35/88/c6/3588c6a8-3f28-6251-110e-5387cabbfe88/mzaf_15245081825065918697.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/77/25/94/772594ab-b008-ef0e-47a3-b4eed6617a17/mzaf_13481654198094060456.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -1960,13 +2185,22 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 4,
+    "obscurity": 3,
     "accessibility": 2,
     "listeners": 9530,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Henderson 轉向放克期作；L9.5k BN 正規；律動融合"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1987,7 +2221,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/5a/e6/38/5ae63838-1118-5b61-0f1a-709d74246308/mzaf_5840515936122680737.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/59/50/3b/59503b50-4873-77d9-a4e4-3585cfb6a876/mzaf_1388825174959067100.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -2029,13 +2263,22 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 4,
-    "accessibility": 2,
+    "obscurity": 3,
+    "accessibility": 1,
     "listeners": 8922,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：代表作是 Pressure Sensitive；L8.9k 正規；柔和放克流行"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2104,7 +2347,7 @@
     "source": "worker:/album-rating",
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2161,14 +2404,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 4,
-    "obscurity": 5,
+    "classic": 3,
+    "obscurity": 4,
     "accessibility": 2,
     "listeners": 703,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：BN 晚期作；L703＋ready 下限 4；主流爵士"
    },
-   "rarity": "uncommon",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2189,7 +2441,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/0b/3d/b7/0b3db739-14a9-3756-5f61-421988ecd5d7/mzaf_13646265715779755338.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/d5/ff/6b/d5ff6bf7-9f61-32b3-609b-f05d81655e49/mzaf_2092429734356679137.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -2233,13 +2485,22 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 5,
-    "accessibility": 2,
+    "obscurity": 4,
+    "accessibility": 1,
     "listeners": 398,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Bobo晚期BN-LA作，非代表作；L398有串流→4；拉丁放克/迪斯可易聽"
    },
-   "rarity": "uncommon",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2260,7 +2521,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/ff/c8/0b/ffc80bee-aaa1-4f37-24e2-a8322fa54abf/mzaf_5848727423389560986.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/f2/75/75/f275755b-6c21-559a-099f-74c28f292e72/mzaf_4901260364029376849.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -2303,12 +2564,21 @@
     "note": "試聽探測釘定的 collectionId 723905977（us）：Noel Pointer — Phantazia"
    },
    "ratings": {
-    "classic": 3,
-    "obscurity": 4,
+    "classic": 4,
+    "obscurity": 3,
     "accessibility": 2,
     "listeners": 5319,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Pointer 首作、生涯代表作；L5319 正規廠；小提琴融合易聽"
    },
    "rarity": "rare",
    "apexAssessment": {
@@ -2331,7 +2601,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/09/ee/af/09eeaf1e-f498-d2ac-1b07-ff06ebf9df3c/mzaf_2292547007396181776.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/97/2e/3c/972e3cc3-66b2-d793-b676-b0cde36b81dd/mzaf_16276053295413742873.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -2372,14 +2642,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 3,
-    "obscurity": 3,
-    "accessibility": 2,
+    "classic": 4,
+    "obscurity": 2,
+    "accessibility": 1,
     "listeners": 31308,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Klugh 最受肯定之作、MFSL 發燒再製；L31k 正常流通；柔和原聲吉他"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2442,13 +2721,22 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 4,
+    "obscurity": 3,
     "accessibility": 2,
     "listeners": 18244,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：BN 晚期作；L18k BN 正規；流行放克爵士"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2510,13 +2798,22 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 5,
+    "obscurity": 4,
     "accessibility": 2,
     "listeners": 738,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：BN 晚期作，評價中等；L738＋ready 下限 4；主流後咆勃"
    },
-   "rarity": "uncommon",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2537,7 +2834,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/27/d5/7d/27d57d77-09f0-3726-5dd7-d66da693d56b/mzaf_16183977442708674506.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/b2/43/10/b2431079-1282-fd1a-4b46-b9d65c1662cf/mzaf_14018777272617119114.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -2578,14 +2875,23 @@
     "discogsReleaseId": "3612187"
    },
    "ratings": {
-    "classic": 4,
-    "obscurity": 5,
+    "classic": 3,
+    "obscurity": 4,
     "accessibility": 3,
     "listeners": 1377,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 5,
+     "accessibility": 3,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "epic"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：1962 擱置場次日本才發；L1377 下限 3，串流無試聽、收藏家領域→4；硬咆勃"
    },
-   "rarity": "epic",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2642,14 +2948,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 4,
+    "classic": 3,
     "obscurity": 5,
     "accessibility": 2,
     "listeners": 16,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：多場現場拼裝雙片，非代表；L16＋unavailable→5；硬咆勃"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2707,13 +3022,22 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 5,
+    "obscurity": 4,
     "accessibility": 2,
     "listeners": 678,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：系列晚期作；L678＋ready 下限 4；打擊與人聲組曲但旋律直白"
    },
-   "rarity": "uncommon",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2734,7 +3058,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/58/f0/23/58f023e1-106d-12de-751f-df79ab170dbc/mzaf_16010392383258542738.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview123/v4/bb/11/10/bb1110df-a0a7-d064-14c3-2b0c3208e069/mzaf_17120156728396582803.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -2775,11 +3099,21 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 5,
-    "accessibility": 2,
+    "obscurity": 4,
+    "accessibility": 4,
     "listeners": 213,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 5,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Circle 時期自由即興檔案發行；L213＋ready 下限 4；22 分鐘 Drone、全自由即興",
+     "rarity": "epic"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：Corea 1968–70 自由即興場次合輯；無調但仍屬爵士語彙，硬蕊 4；聽眾 213 有串流→下限 4｜L=213"
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -2801,7 +3135,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/53/56/f8/5356f8cf-7adb-b58a-78ba-a48ce0a10aae/mzaf_3074214625390741013.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b8/c2/f4/b8c2f4cb-d5c8-9934-930b-ab0090b94b99/mzaf_3921796099797858691.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -2842,14 +3176,23 @@
     "discogsReleaseId": "3908120"
    },
    "ratings": {
-    "classic": 4,
+    "classic": 3,
     "obscurity": 5,
     "accessibility": 3,
     "listeners": 332,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 5,
+     "accessibility": 3,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "epic"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：1962/67 未發場次 1978 才發，非代表；L332＋unavailable→5；後咆勃"
    },
-   "rarity": "epic",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2906,14 +3249,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 4,
-    "obscurity": 5,
+    "classic": 3,
+    "obscurity": 3,
     "accessibility": 2,
     "listeners": 2467,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：1961 場次 1979 才發、Tone Poet 再版，非代表；L2467 下限 3；硬咆勃"
    },
-   "rarity": "uncommon",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2934,7 +3286,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/32/6c/4f/326c4f36-8866-1454-cebf-54957f9bff73/mzaf_10770758006296583910.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/37/5a/61/375a6130-2f72-2f41-1e65-f8dc56d1efe1/mzaf_13485485571674503101.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",

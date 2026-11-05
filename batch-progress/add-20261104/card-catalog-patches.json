@@ -1,0 +1,104 @@
+[
+ {
+  "docId": "張睿銓 chang jui-chuan|創世記",
+  "updateMask": [
+   "classic",
+   "obscurity",
+   "accessibility",
+   "rarity",
+   "coverUrl",
+   "upc",
+   "artist",
+   "album",
+   "cardId",
+   "updatedAt",
+   "seed"
+  ],
+  "body": {
+   "fields": {
+    "classic": {
+     "integerValue": "4"
+    },
+    "obscurity": {
+     "integerValue": "5"
+    },
+    "accessibility": {
+     "integerValue": "2"
+    },
+    "rarity": {
+     "stringValue": "uncommon"
+    },
+    "coverUrl": {
+     "stringValue": "https://www.ccr.com.tw/GIMG/90/4719851550300_wstL.JPG"
+    },
+    "upc": {
+     "stringValue": "4719851550300"
+    },
+    "artist": {
+     "stringValue": "張睿銓 Chang Jui-Chuan"
+    },
+    "album": {
+     "stringValue": "創世記"
+    },
+    "cardId": {
+     "stringValue": "張睿銓 chang jui-chuan|創世記"
+    },
+    "updatedAt": {
+     "integerValue": "1"
+    },
+    "seed": {
+     "booleanValue": true
+    }
+   }
+  }
+ },
+ {
+  "docId": "張睿銓 chang jui-chuan|出走",
+  "updateMask": [
+   "classic",
+   "obscurity",
+   "accessibility",
+   "rarity",
+   "coverUrl",
+   "artist",
+   "album",
+   "cardId",
+   "updatedAt",
+   "seed"
+  ],
+  "body": {
+   "fields": {
+    "classic": {
+     "integerValue": "4"
+    },
+    "obscurity": {
+     "integerValue": "4"
+    },
+    "accessibility": {
+     "integerValue": "2"
+    },
+    "rarity": {
+     "stringValue": "rare"
+    },
+    "coverUrl": {
+     "stringValue": "https://is1-ssl.mzstatic.com/image/thumb/Music/c3/a8/5d/mzi.zdisaidn.jpg/600x600bb.jpg"
+    },
+    "artist": {
+     "stringValue": "張睿銓 Chang Jui-Chuan"
+    },
+    "album": {
+     "stringValue": "出走"
+    },
+    "cardId": {
+     "stringValue": "張睿銓 chang jui-chuan|出走"
+    },
+    "updatedAt": {
+     "integerValue": "1"
+    },
+    "seed": {
+     "booleanValue": true
+    }
+   }
+  }
+ }
+]

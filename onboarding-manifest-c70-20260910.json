@@ -29,22 +29,43 @@
     "discogsReleaseId": "1707107"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 4,
-    "accessibility": 2,
+    "classic": 4,
+    "obscurity": 5,
+    "accessibility": 3,
     "listeners": 243,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Pablo Picasso 唯一專輯、東京 Rockers 三代代表；L243 無串流→5；金屬噪音吉他+dub"
    },
-   "rarity": "rare",
+   "rarity": "epic",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。L243有效，但壓量無據、無收藏圈聖杯地位依據；屬5星冷門，不到7",
+    "evidenceUrls": [
+     "https://www.last.fm/music/Pablo%20Picasso/Soft%20Type",
+     "https://musicbrainz.org/release-group/2fd2764a-fb7c-4e55-8a2a-1f89a3947600",
+     "https://www.discogs.com/release/1707107"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
-    "text": "主唱野村誠同時彈貝斯、吹中音薩克斯風，並在〈内側の歌〉加彈 Acetone 風琴。他還掛了製作、作曲與美術，三人組另外兩位是吉他兼邦哥鼓的榎本浩與鼓手清水武。1983 年錄於 Studio Magnet，由東京的 Telegraph 發行。唱片行的文案把他們形容成受 Friction 影響的東京 Rockers 第三世代代表：各件樂器像機器一樣刻著節奏，到本作才加進風琴與薩克斯風、吸收了 dub。1991 年的擴充 CD 另收了 1985 年新宿 Loft 的最後一場演出。",
+    "text": "《Soft Type》是東京三人組 Pablo Picasso 1983 年由獨立廠牌 Telegraph 發行的專輯，樂團 1981 年成軍、1985 年解散，這張只在 1991 年由 Wax 再版過一次。他們活動於東京的龐克與新浪潮場景，聲音在東京 Rockers 與 Friction 的影響下成形。專輯錄於 Studio Magnet，野村誠唱歌、彈貝斯也吹中音薩克斯風，另有一位兼打邦哥鼓的吉他手與鼓手清水武。在貝斯、吉他、鼓之上加進薩克斯風與邦哥鼓，路數偏前衛與 no wave；六首裡的〈内側の歌〉分成兩部分，橫跨兩面。",
     "sourceUrls": [
      "https://www.discogs.com/release/1707107",
      "https://diskunion.net/jp/ct/detail/IND5175",
@@ -62,8 +83,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -92,14 +113,24 @@
     "discogsReleaseId": "1447375"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 4,
+    "classic": 4,
+    "obscurity": 5,
     "accessibility": 2,
     "listeners": 313,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：獨立盤賣兩萬張的傳說首作、Captain 廠里程碑；L313 無串流→5；正向龐克",
+     "rarity": "epic"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：日本獨立廠 Captain 1985 暢銷盤、indie 爆發代表；場景要角非跨來源正典；聽眾 313 且無串流→5｜L=313"
    },
-   "rarity": "rare",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -159,22 +190,43 @@
     "discogsReleaseId": "1427264"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 4,
-    "accessibility": 4,
+    "classic": 4,
+    "obscurity": 5,
+    "accessibility": 3,
     "listeners": 102,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Z.O.A 首作代表；L102 無串流→5；哥德後龐克長曲+電小提琴"
    },
-   "rarity": "uncommon",
+   "rarity": "epic",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。L102有效，1992 SSE 有CD再發；不到7",
+    "evidenceUrls": [
+     "https://www.last.fm/music/Z.O.A/Humanical%20Garden",
+     "https://musicbrainz.org/release-group/1178fbfa-969d-4b5b-8c8e-d549c0b9fe01",
+     "https://www.discogs.com/release/1427264"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
-    "text": "四月到六月，三間錄音室，八首歌裡最長的一首叫〈Hatred〉。內頁記的是 1988 年 4 至 6 月在 MIB、Mod（目黑）與 Take Studio 錄成，唱片是 Transrecords 的 TRANS 37。森川誠一郎主唱與作詞、黒木真司吉他，另有貝斯與鼓，以及一把電小提琴與一台鍵盤。〈Hatred〉八分零九秒，最短的〈Taste Of Black〉兩分五十三秒。DOMMUNE 記森川從 1982 年前後就自己主辦 MORE records。",
+    "text": "《Humanical Garden》是日本樂團 Z.O.A 1988 年的首張專輯，由獨立廠牌 Trans Records 發行，1992 年再版過一次。樂團 1984 年以主唱森川誠一郎為中心成軍，早期多在硬核、後龐克與噪音的場合演出；1986 年其他團員離開，1987 年後吉他手黒木真司加入，樂團才在 Trans 復出。專輯 1988 年 4 到 6 月在東京三間錄音室錄成，吉他、貝斯、鼓與森川的人聲之外，還有電小提琴與鍵盤，曲風介於 positive punk、後龐克與前衛搖滾之間，八首裡〈Wall〉與〈Hatred〉都長近八分鐘。",
     "sourceUrls": [
      "https://www.discogs.com/release/1427264",
      "https://www.discogs.com/release/2531235",
@@ -192,8 +244,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   }
  ]

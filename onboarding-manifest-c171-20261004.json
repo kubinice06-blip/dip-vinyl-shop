@@ -27,12 +27,21 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 3,
+    "classic": 4,
     "obscurity": 5,
     "accessibility": 2,
     "listeners": 40,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Blue Note International 開線首號、Smith 首作，英國爵士場景要盤；L 40 串流無→5；主流 post-bop"
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -95,13 +104,22 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 5,
+    "obscurity": 4,
     "accessibility": 2,
     "listeners": 206,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：蘇格蘭 Tommy Smith 第二張 Blue Note；L 206→4；主流現代爵士"
    },
-   "rarity": "uncommon",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -165,13 +183,22 @@
    },
    "ratings": {
     "classic": 4,
-    "obscurity": 5,
+    "obscurity": 4,
     "accessibility": 2,
     "listeners": 77,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Pullen 非巴樂團追悼盤，其晚期代表作；L 77→4；非洲巴西律動，親切"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -192,7 +219,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview124/v4/84/9d/11/849d1143-1f27-8eb4-1a79-285432d7e010/mzaf_1192786643967456030.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/ce/60/12/ce6012dc-f347-0175-01e9-aa1e57d24f62/mzaf_14016130259151897258.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -235,13 +262,22 @@
    },
    "ratings": {
     "classic": 4,
-    "obscurity": 5,
+    "obscurity": 4,
     "accessibility": 2,
     "listeners": 105,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：大西順子第二張、Higgins 鼓，日本爵士代表作；L 105→4；鋼琴三重奏 bop"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -262,7 +298,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/ce/35/87/ce3587cc-498e-273b-3f20-d810e1479d49/mzaf_17849436515683135738.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/cd/ee/ff/cdeeffd7-7809-4f6b-5614-a19fafb5f8d7/mzaf_3536267872679885543.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -302,14 +338,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 4,
+    "classic": 3,
     "obscurity": 5,
     "accessibility": 2,
     "listeners": 382,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：無鼓三重奏標準曲，佳作非代表；L 382、串流無→5；柔和標準曲"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -368,13 +413,22 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 5,
+    "obscurity": 3,
     "accessibility": 2,
     "listeners": 13,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：Blue Note 大廠正規發行；聽眾 13 疑盤名寫法錯配，照錨點給 3｜L=13"
    },
-   "rarity": "uncommon",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -433,13 +487,22 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 5,
-    "accessibility": 3,
+    "obscurity": 4,
+    "accessibility": 2,
     "listeners": 32,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 3,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：McLean 晚期與大西合作，Billboard 好評但非代表；L 32→4；主流 bop"
    },
-   "rarity": "uncommon",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -461,7 +524,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/1d/a0/67/1da0670c-8689-fbce-076a-458d58a62bc9/mzaf_10623100349246085192.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/47/57/1f/47571f79-25a5-9ed7-b392-9cb81cc5db36/mzaf_3798617168391677391.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -502,13 +565,22 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 5,
-    "accessibility": 2,
+    "obscurity": 4,
+    "accessibility": 1,
     "listeners": 9,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Reeves 中期翻唱流行／民謠集，非 Grammy 代表作；L 9→4；人聲爵士易聽"
    },
-   "rarity": "uncommon",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -531,7 +603,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/52/84/f6/5284f66f-a966-9060-a27f-17e08cacc746/mzaf_3589723564974386845.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/40/80/8b/40808baf-5cbd-2c97-5ebb-3d5ad981deae/mzaf_3869844926943711638.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -579,7 +651,7 @@
     "source": "worker:/album-rating",
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -640,13 +712,22 @@
    },
    "ratings": {
     "classic": 4,
-    "obscurity": 5,
+    "obscurity": 3,
     "accessibility": 2,
     "listeners": 1066,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Blade 首張領班盤、Lanois 製作，公認代表作；L 1,066 下限 3；田園式 post-bop"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -670,7 +751,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/a4/ad/fc/a4adfc79-29c2-fb29-9711-c23cfc90f3bb/mzaf_8594880959822381061.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/8d/cb/ea/8dcbeaaf-e397-d64f-824c-c4df7234e3b5/mzaf_14444487708465856838.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -710,14 +791,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 4,
-    "obscurity": 5,
+    "classic": 3,
+    "obscurity": 4,
     "accessibility": 2,
     "listeners": 1554,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：日本先發標準曲三重奏，非其代表作；L 1,554、串流無→4；主流 bop"
    },
-   "rarity": "uncommon",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -772,14 +862,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 5,
-    "accessibility": 4,
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
     "listeners": 198,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 5,
+     "accessibility": 4,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：法國 Prysm 三重奏 Blue Note 作，場景二線佳作；L 198→4；現代鋼琴三重奏"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -798,7 +897,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/Music/v4/a6/01/c6/a601c646-fc0f-ca5c-fb1e-08eaad86ad0f/mzaf_3487855141449230473.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/Music/v4/01/87/82/0187823c-6b55-08a1-8b51-79227a711389/mzaf_1441757657370173616.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -838,14 +937,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 4,
-    "obscurity": 4,
+    "classic": 3,
+    "obscurity": 3,
     "accessibility": 2,
     "listeners": 9228,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Pettiford 致敬盤，晚期穩定作；L 9,228 串流無，照錨點 3；主流 bop"
    },
-   "rarity": "uncommon",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -902,13 +1010,22 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 5,
+    "obscurity": 3,
     "accessibility": 2,
     "listeners": 1598,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Vince Mendoza 弦樂編曲，中期佳作；L 1,598 下限 3；弦樂抒情爵士"
    },
-   "rarity": "uncommon",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -967,12 +1084,21 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 3,
-    "obscurity": 4,
+    "classic": 4,
+    "obscurity": 2,
     "accessibility": 3,
     "listeners": 9977,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 3,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Moran 三重奏 Vanguard 現場，2003 年度榜常客，代表作；Blue Note 流通；跨界拼貼有難度"
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -991,7 +1117,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview71/v4/08/56/95/0856951e-6dcb-8485-edfa-660f0b9f7b5f/mzaf_6412834213192317805.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/a9/fb/c9/a9fbc9c0-cf02-4183-8c51-bab33a6751a9/mzaf_14765104081211710967.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -1032,13 +1158,22 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 5,
+    "obscurity": 4,
     "accessibility": 1,
     "listeners": 180,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 1,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：母子鋼琴人聲二重奏，評價佳；L 180→4；柔和人聲標準曲"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1100,13 +1235,22 @@
    },
    "ratings": {
     "classic": 2,
-    "obscurity": 5,
-    "accessibility": 3,
+    "obscurity": 4,
+    "accessibility": 1,
     "listeners": 1017,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 5,
+     "accessibility": 3,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：荷蘭歌手與 Metropole 現場，本國流通；L 1,017 串流無→4；流行人聲"
    },
-   "rarity": "uncommon",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1162,13 +1306,22 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 4,
+    "obscurity": 2,
     "accessibility": 2,
     "listeners": 12222,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：首張個人作；Blue Note 主流、聽眾 1.2 萬；現代爵士帶 R&B"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1186,7 +1339,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/d8/17/21/d81721f3-1310-6aa5-c4db-4230d796ddc5/mzaf_3545784856796953330.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ac/2f/61/ac2f6170-fee8-6770-f02d-cff1e93a9e84/mzaf_3016525918271833241.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -1226,14 +1379,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 3,
-    "obscurity": 4,
-    "accessibility": 2,
+    "classic": 4,
+    "obscurity": 2,
+    "accessibility": 3,
     "listeners": 10174,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Ross 首作、多家年度榜，代表作；Blue Note 流通；現代 post-bop"
    },
-   "rarity": "rare",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1252,7 +1414,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/d2/f3/f4/d2f3f4b0-cec0-03fa-546f-e18b52d953c8/mzaf_15233159102866600510.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/fb/84/26/fb842629-17c8-01e5-34dc-c3437c7b5fe8/mzaf_143367315898702320.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -1293,13 +1455,22 @@
    },
    "ratings": {
     "classic": 4,
-    "obscurity": 3,
+    "obscurity": 2,
     "accessibility": 2,
     "listeners": 21167,
-    "source": "worker:/album-rating",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "worker:/album-rating",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Oracle 在 Blue Note 首作、Hodge 製作，代表作；主流流通；現代爵士敘事"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1318,7 +1489,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/19/f3/d4/19f3d42e-e61f-383f-18b3-f8fd71fdd7c8/mzaf_9233840913241841156.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/c0/06/f3/c006f385-8330-3d7b-cbf4-caf4ac512fca/mzaf_5036162777187521700.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",

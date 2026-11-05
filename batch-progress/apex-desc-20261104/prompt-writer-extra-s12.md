@@ -1,0 +1,47 @@
+# 寫作層補充（s12：流亡 ad-23、異端尾批 ad-24）
+
+## 共通
+
+- **前兩句用事實寫出它憑什麼是這一級**（不寫「頂點」「殿堂」「異端」「流亡」「入選」等遊戲用語）。
+- 有具名評價的寫成「被視為」；只有單一來源不用「常」，多份來源才用「常被列為」。**出處只放 facts，不寫進簡介**（不寫「某某說」「某廠形容」「有評論認為」「據訪談」）。
+- Discogs 收藏人數不寫數字，寫質性，且同卡要另有流通事實佐證。只查過單一版本的寫「沒有再版紀錄」。
+- 研究稿 notes 列為未證實、查不到、廠商文案的細節一律不寫；團體層級事實寫成團體或樂手的做法。
+- **舊稿的鉤子開頭不要沿用**（「曾開怪手撞穿後牆」「MSBR 四個字母縮寫的是……」這種冷知識開場正是這批要改掉的毛病）；冷知識最多一句，不開頭、不收尾。盤號、目錄號、發行日到「日」通常不寫。
+- 聲音段照舊最具體：樂器、音色、手法、結構、曲長。sound 塊 none 的不從曲名、封面、風格標籤推音色，只寫編制、分工、結構；風格標籤只准寫成「路數偏某某」。
+- 卡單 year 欄和研究稿的原發行年不同時，照研究稿寫，輸出物件加 `"yearNote"`。年份兩說的寫年代。
+- **暫存檔一律放你自己的目錄** `/tmp/claude-0/-home-user-dip-vinyl-shop/d9b6c5e1-3975-5497-836c-a776d66668cb/scratchpad/{BATCH}-w{N}/`。
+
+## ad-23（流亡）
+
+先讀 `prompt-writer-extra-s7.md`（流亡節）、`prompt-writer-extra-s8.md`、`prompt-writer-extra-s11.md`，照做：
+- **為什麼少有人聽**：私壓、壓量、沒再版、地方發行、小廠、樂團早散——要是研究稿 facts 的事實；沒有稀少證據的不寫「難找」，改寫實際流通。
+- **為什麼值得聽**：後來被誰重新發行（廠名＋年份）或點名、收藏圈怎麼看、它做到了什麼；沒有評價就寫它做到的具體事實，不硬擠。
+
+## ad-24（異端）
+
+先讀 `prompt-heresy-addendum.md` 與 `prompt-writer-extra-s7.md`（異端節），照做：
+- **極端在哪裡**：用研究稿 extreme 塊的數字與手法（總長、單軌長、軌數、聲源、器材、限量）講，不堆形容詞。
+- **為什麼這份極端被認真看待**：開了哪條路、當時的反應、後來的評價（reception 塊）。不寫「史上最吵」「最極端」這類沒具名出處的封號。
+
+## ad-23 個別特注（主線看過研究稿 coverage）
+
+- Free Enterprize：只有 Discogs。薄寫到 200 字附近：1980 年美國、不掛廠牌的私壓 LP、表演者 John Peebles 與 Tony Frank 兩人、14 首、沒有再版紀錄、在收藏圈想找的人多於手上有的人；風格只寫「路數偏 acid rock 與民謠」。不從曲名推聲音。
+- Probe《Direction》：年份 1969／1971 兩說，寫年代或照研究稿較可靠的一說並加 yearNote；不寫曲數。沒有評價，寫流通與再版事實。
+- Joe Bonner《Angel Eyes》：AllMusic 3.5 星可能是另一張，不寫。舊稿「五重奏、整張調式爵士」是錯的，照研究稿寫實際編制。
+- Ghostdance、David Lewis：照研究稿的實際風格與編制寫，舊稿的「兩人」「迷幻 folk rock」都是錯的。
+- Bad Cat 等賣家措辭（holy grail、tax scam label）不寫。
+
+## ad-24 個別特注（主線看過研究稿 coverage）
+
+- 本批 reception 普遍 thin：沒有具名樂評的卡，「被認真看待」改寫具體事實（再版、被誰點名、在某類型裡的位置有具名出處才寫、獎項）。廠商與零售文案的評語不寫成評價。
+- 藝人／團體層級的評價與手法（LA Weekly 排名、The Wire 談 Werewolf Jerusalem、Macronympha 金屬廢料互敲、Hanatarash 現場的怪手與動力工具）只能寫成團體的做法或名聲，不寫成本盤內容；Hanatarash 的現場事件不寫成這張錄音的聲音。
+- Russell Haswell：2002 年 Prix Ars Electronica 數位音樂類**榮譽提及**（不是金尼卡）。Musique Machine 的聲音描述是續作的，不用。
+- Vomir：可用 Sound Projector（2008）的評論內容，但不點名。
+- Werewolf Jerusalem：不寫「全程恆定平直」，只寫長篇連續噪音與實際長度。
+- MSBR：年份三說，寫「1990 年代初」；Yoko Ono〈Rising〉混音不寫。Sissy Spacek 年份兩說照研究稿處理並加 yearNote。
+- Henri Chopin：以 Igloo 1983 版為準；兩面曲長未驗證不寫。François Dufrêne：不要和 1975 年 Cramps 的《Crirythmes》混。
+- Lasse Marhaug：Spellemannprisen 只能寫「入圍」，不寫類別與年份以外沒查到的細節。
+- Harry Pussy：婚姻破裂、RAT 踏板、Miami New Times 說法是單一來源或搜尋摘要，婚姻一事除非研究稿有可靠出處否則不寫。
+- Zbigniew Karkowski：reception none，寫到 200 字附近；The Wire 追悼文是藝人層級，只能寫成他的名聲或做法。Tiny Mix Tapes「喇叭起火」不寫。
+- Teitanblood：BrooklynVegan「最不協和、最具破壞力」評的是前作，不寫。Dodecahedron：Angry Metal Guy 的結論是正面（a triumph），不要寫成負評。Gnaw Their Tongues：Mories 是荷蘭人。
+- 舊稿的比喻（「咬合不上的齒輪」「像警報」「佈道」）不沿用。

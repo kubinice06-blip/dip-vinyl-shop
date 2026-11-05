@@ -1,0 +1,743 @@
+{
+ "group": "eb5b",
+ "factions": [
+  {
+   "id": "emig-balkan",
+   "zh": "巴爾幹／蘇聯移民西方期",
+   "count": 5,
+   "why": "Goykovich 德國期、Leviev 美國期、Ponomarev 美國期"
+  },
+  {
+   "id": "emig-pl",
+   "zh": "波蘭移民西方期",
+   "count": 5,
+   "why": "Urbaniak、Makowicz 美國期"
+  },
+  {
+   "id": "emig-cs",
+   "zh": "捷克斯洛伐克移民西方期",
+   "count": 5,
+   "why": "Vitouš、Jan Hammer"
+  },
+  {
+   "id": "emig-hu",
+   "zh": "匈牙利移民西方期",
+   "count": 4,
+   "why": "Gábor Szabó、Elek Bacsik"
+  },
+  {
+   "id": "emig-dd",
+   "zh": "東德移民西方期",
+   "count": 3,
+   "why": "Joachim Kühn"
+  },
+  {
+   "id": "mps-extra",
+   "zh": "MPS／SABA 補充（東歐旅外）",
+   "count": 2,
+   "why": "Zoller 三人組、Komeda 追思盤"
+  }
+ ],
+ "albums": [
+  {
+   "artist": "Dusko Goykovich",
+   "album": "Swinging Macedonia",
+   "year": 1966,
+   "label": "Philips",
+   "country": "yu",
+   "faction": "emig-balkan",
+   "genres": [
+    "jazz"
+   ],
+   "why": "馬其頓出身小號手移居德國後的第一張代表作，把巴爾幹節奏塞進硬咆勃，Nathan Davis、Mal Waldron 同錄。",
+   "moodGuess": {
+    "x": 3.4,
+    "y": 0.6,
+    "z": 0.6,
+    "why": "硬咆勃推進、旋律清楚好入耳"
+   },
+   "evidence": [
+    "https://music.apple.com/us/album/swinging-macedonia-feat-nathan-davis-eddie-busnello/1696145265",
+    "https://musicbrainz.org/release-group/fb90cbf5-9c1e-3c16-99a8-d685e21e054f",
+    "https://www.discogs.com/master/233061"
+   ],
+   "mbRgMbid": "fb90cbf5-9c1e-3c16-99a8-d685e21e054f",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Dusko Gojkovic",
+   "uncertain": "MB 首發年 1967（Philips），iTunes／Discogs 作 1966 錄音年；年份請主線擇一"
+  },
+  {
+   "artist": "Dusko Gojkovic",
+   "album": "Slavic Mood",
+   "year": 1975,
+   "label": "Vista",
+   "country": "yu",
+   "faction": "emig-balkan",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Goykovich 西方期把斯拉夫民謠調式與硬咆勃合鑄的高峰，義大利廠牌錄製，常被視為他最有辨識度的一張。",
+   "moodGuess": {
+    "x": 3.2,
+    "y": 0.5,
+    "z": 0.4,
+    "why": "斯拉夫調式旋律明確，中快速推進"
+   },
+   "evidence": [
+    "https://music.apple.com/us/album/slavic-mood/274774730",
+    "https://musicbrainz.org/release-group/73b95664-3629-41c3-b2ec-e7b4624f953a",
+    "https://www.discogs.com/master/200556"
+   ],
+   "mbRgMbid": "73b95664-3629-41c3-b2ec-e7b4624f953a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Dusko Goykovich",
+   "uncertain": "藝人名拼法：封面為 Gojkovic，MB 為 Goykovich；與上一張同人，卡池慣例請主線統一"
+  },
+  {
+   "artist": "Dusko Goykovich",
+   "album": "After Hours",
+   "year": 1971,
+   "label": "Ensayo",
+   "country": "yu",
+   "faction": "emig-balkan",
+   "genres": [
+    "jazz"
+   ],
+   "why": "移居西歐後與歐洲爵士名手合作的深夜抒情硬咆勃，西班牙 Ensayo 廠錄製。",
+   "moodGuess": {
+    "x": 2.8,
+    "y": 0.5,
+    "z": 0.7,
+    "why": "慢中速、抒情、旋律溫暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/f2e52abd-f18b-4933-b735-db58e3327b66",
+    "https://coverartarchive.org/release-group/f2e52abd-f18b-4933-b735-db58e3327b66"
+   ],
+   "mbRgMbid": "f2e52abd-f18b-4933-b735-db58e3327b66",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "重要性弱於前兩張，主線汰換候選；備案可換同廠 It's About Blues Time（1972, MB ae5f580d, Discogs master 704719）"
+  },
+  {
+   "artist": "Milcho Leviev",
+   "album": "Blues for the Fisherman",
+   "year": 1980,
+   "label": "Mole Jazz",
+   "country": "bg",
+   "faction": "emig-balkan",
+   "genres": [
+    "jazz"
+   ],
+   "why": "保加利亞鋼琴家移居美國後的代表錄音，Milcho Leviev Quartet 以巴爾幹奇數拍混入西岸爵士，英國 Mole Jazz 發行。",
+   "moodGuess": {
+    "x": 3.3,
+    "y": 0.4,
+    "z": 0.2,
+    "why": "奇數拍律動、旋律有民謠感"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/369311",
+    "https://www.discogs.com/search/?q=Milcho+Leviev+Blues+for+the+Fisherman&type=master"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": "MusicBrainz 以 artist/releasegroup 查詢 Milcho Leviev／Milcho Leviev Quartet『Blues for the Fisherman』無結果（2026-11-01）",
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/369311",
+    "https://www.discogs.com/master/369311-The-Milcho-Leviev-Quartet-Blues-For-The-Fisherman"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "錄音地點（洛杉磯）未獨立證實；Discogs master 有封面圖"
+  },
+  {
+   "artist": "Michał Urbaniak",
+   "album": "Fusion",
+   "year": 1974,
+   "label": "Columbia",
+   "country": "pl",
+   "faction": "emig-pl",
+   "genres": [
+    "jazz"
+   ],
+   "why": "波蘭小提琴／薩克斯風手赴美簽 Columbia 後的第一張，波蘭人在紐約做出的電氣爵士融合代表。",
+   "moodGuess": {
+    "x": 3.8,
+    "y": 0.8,
+    "z": 0,
+    "why": "電氣融合、推進強、旋律抽象度中等"
+   },
+   "evidence": [
+    "https://music.apple.com/us/album/fusion/162248843",
+    "https://musicbrainz.org/release-group/c2e52abb-26d3-30fb-bc96-48ce422db8ed"
+   ],
+   "mbRgMbid": "c2e52abb-26d3-30fb-bc96-48ce422db8ed",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Facts of Life 已在池；Fusion 的 Columbia 版 Discogs master 未查，封面以 iTunes 為準"
+  },
+  {
+   "artist": "Michal Urbaniak",
+   "album": "Body English",
+   "year": 1976,
+   "label": "Arista",
+   "country": "pl",
+   "faction": "emig-pl",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Urbaniak 美國期的 funk-fusion 代表作，Urszula Dudziak 與 Basil Ndiaye 等參與，Arista 發行。",
+   "moodGuess": {
+    "x": 3.9,
+    "y": 0.8,
+    "z": 0.3,
+    "why": "funk 節奏、人聲 scat、躁動"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/636916",
+    "https://musicbrainz.org/release-group/ac3dd421-5d68-4d90-acc7-52accccb2994"
+   ],
+   "mbRgMbid": "ac3dd421-5d68-4d90-acc7-52accccb2994",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Michał Urbaniak",
+   "uncertain": ""
+  },
+  {
+   "artist": "Michał Urbaniak",
+   "album": "Atma",
+   "year": 1974,
+   "label": "Columbia",
+   "country": "pl",
+   "faction": "emig-pl",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Urbaniak 在美國錄的靈修氣質融合盤，與 Fusion 同期，第三張候選。",
+   "moodGuess": {
+    "x": 3.5,
+    "y": 0.7,
+    "z": -0.2,
+    "why": "電氣融合、律動重複、旋律較抽象"
+   },
+   "evidence": [
+    "https://music.apple.com/us/album/atma/1276251044",
+    "https://musicbrainz.org/release-group/4ed5924a-8b7a-3551-be76-9daa52a976ee"
+   ],
+   "mbRgMbid": "4ed5924a-8b7a-3551-be76-9daa52a976ee",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Urbaniak 池內已有 1 張，Fusion、Body English 已提；Atma 若汰換亦可；iTunes 年份 1975，MB 1974"
+  },
+  {
+   "artist": "Adam Makowicz & George Mraz",
+   "album": "Classic Jazz Duets",
+   "year": 1982,
+   "label": "Stash",
+   "country": "pl",
+   "faction": "emig-pl",
+   "genres": [
+    "jazz"
+   ],
+   "why": "波蘭鋼琴家與捷克貝斯手兩位東歐移民在紐約的雙人錄音，Stash 發行，兩人西方期最完整的對話。",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 0.3,
+    "z": 0.7,
+    "why": "雙人鋼琴貝斯、抒情標準曲、暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/8037248e-f6a3-4cd4-a05a-5540f7291128",
+    "https://www.discogs.com/master/1077221",
+    "https://coverartarchive.org/release-group/8037248e-f6a3-4cd4-a05a-5540f7291128"
+   ],
+   "mbRgMbid": "8037248e-f6a3-4cd4-a05a-5540f7291128",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "同時算 emig-pl 與 emig-cs；Makowicz 池內已有 Tribute to Art Tatum"
+  },
+  {
+   "artist": "Adam Makowicz",
+   "album": "The Name Is Makowicz",
+   "year": 1983,
+   "label": "Sheffield Lab",
+   "country": "pl",
+   "faction": "emig-pl",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Makowicz 在洛杉磯 Sheffield Lab 直刻錄音的獨奏鋼琴盤，錄音發燒界名盤，西方期代表。",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 0.2,
+    "z": 0.6,
+    "why": "獨奏鋼琴、技巧華麗但旋律清楚"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/e9eed05a-91ce-328c-9003-c7afafda02ab",
+    "https://www.discogs.com/master/319294",
+    "https://coverartarchive.org/release-group/e9eed05a-91ce-328c-9003-c7afafda02ab"
+   ],
+   "mbRgMbid": "e9eed05a-91ce-328c-9003-c7afafda02ab",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "The Name Is Makowicz (Ma-kó-vitch)",
+   "uncertain": "Discogs 全名含 (Ma-kó-vitch)"
+  },
+  {
+   "artist": "Miroslav Vitouš",
+   "album": "Infinite Search",
+   "year": 1969,
+   "label": "Embryo",
+   "country": "cs",
+   "faction": "emig-cs",
+   "genres": [
+    "jazz"
+   ],
+   "why": "捷克貝斯手抵美後的首張個人作，Herbie Hancock、John McLaughlin 同錄，Weather Report 前夜的實驗聲音。",
+   "moodGuess": {
+    "x": 3.3,
+    "y": 0.5,
+    "z": 0,
+    "why": "電氣氛圍、空間感、旋律不明確"
+   },
+   "evidence": [
+    "https://music.apple.com/us/album/infinite-search/59390633",
+    "https://musicbrainz.org/release-group/0f700889-d3ed-3a97-8642-b1dcdf1e35d6"
+   ],
+   "mbRgMbid": "0f700889-d3ed-3a97-8642-b1dcdf1e35d6",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Miroslav Vitous",
+   "uncertain": "池內已有 Purple、Rypdal/Vitous/DeJohnette；MB 首發 1970（Embryo）、實際 1969 錄音"
+  },
+  {
+   "artist": "Miroslav Vitouš",
+   "album": "Majesty Music",
+   "year": 1976,
+   "label": "Arista",
+   "country": "cs",
+   "faction": "emig-cs",
+   "genres": [
+    "jazz"
+   ],
+   "why": "離開 Weather Report 後的聚光作，Vitouš 以貝斯與合成器撐起的室內組曲，Arista 發行。",
+   "moodGuess": {
+    "x": 2.8,
+    "y": 0.4,
+    "z": 0.1,
+    "why": "沉靜室內樂，旋律線較抽象"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/284896",
+    "https://musicbrainz.org/release-group/9edc9c1e-99ce-40ad-8846-87cc637e2cb6"
+   ],
+   "mbRgMbid": "9edc9c1e-99ce-40ad-8846-87cc637e2cb6",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Miroslav Vitous",
+   "uncertain": "Vitouš 第三張候選，主線可汰換；Magical Shepherd（MB 4ef7840d，1976 Warner）為備案"
+  },
+  {
+   "artist": "Miroslav Vitouš",
+   "album": "First Meeting",
+   "year": 1980,
+   "label": "ECM",
+   "country": "cs",
+   "faction": "emig-cs",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Vitouš 與 Jan Garbarek、Peter Erskine、John Surman 的 ECM 四重奏，北歐冷光質地的歐洲爵士名盤。",
+   "moodGuess": {
+    "x": 2.7,
+    "y": 0.3,
+    "z": -0.4,
+    "why": "ECM 空間感、冷色旋律、慢"
+   },
+   "evidence": [
+    "https://music.apple.com/us/album/first-meeting/1442252368",
+    "https://musicbrainz.org/release-group/4fa00b8f-3327-3998-aae3-cfec34725051",
+    "https://coverartarchive.org/release-group/4fa00b8f-3327-3998-aae3-cfec34725051"
+   ],
+   "mbRgMbid": "4fa00b8f-3327-3998-aae3-cfec34725051",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Miroslav Vitous",
+   "uncertain": "實際參與者以 Discogs 為準：Garbarek / Surman? 請主線核對（我未獨立核樂手名單）"
+  },
+  {
+   "artist": "Jan Hammer",
+   "album": "The First Seven Days",
+   "year": 1975,
+   "label": "Nemperor",
+   "country": "cs",
+   "faction": "emig-cs",
+   "genres": [
+    "jazz"
+   ],
+   "why": "捷克鍵盤手從 Mahavishnu 轉單飛的創世記概念盤，一人包辦合成器與鼓，電氣融合經典。",
+   "moodGuess": {
+    "x": 3.8,
+    "y": 0.8,
+    "z": 0.2,
+    "why": "合成器高速獨奏、推進強"
+   },
+   "evidence": [
+    "https://music.apple.com/us/album/the-first-seven-days/193088092",
+    "https://musicbrainz.org/release-group/51f74e43-8585-3788-80d5-d1a68937bd84",
+    "https://coverartarchive.org/release-group/51f74e43-8585-3788-80d5-d1a68937bd84"
+   ],
+   "mbRgMbid": "51f74e43-8585-3788-80d5-d1a68937bd84",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Jan Hammer 池內無，名稱撞到 Armand Hammer 等不相干，去重子字串 0"
+  },
+  {
+   "artist": "Jerry Goodman & Jan Hammer",
+   "album": "Like Children",
+   "year": 1974,
+   "label": "Nemperor",
+   "country": "cs",
+   "faction": "emig-cs",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Mahavishnu 兩位成員的小提琴與鍵盤二重奏，溫暖旋律的融合早期代表。",
+   "moodGuess": {
+    "x": 3.1,
+    "y": 0.6,
+    "z": 0.5,
+    "why": "旋律明確的二重奏融合"
+   },
+   "evidence": [
+    "https://music.apple.com/us/album/like-children/452509343",
+    "https://musicbrainz.org/release-group/0b6e5c9c-ed2b-3a20-879e-df905034a449",
+    "https://coverartarchive.org/release-group/0b6e5c9c-ed2b-3a20-879e-df905034a449"
+   ],
+   "mbRgMbid": "0b6e5c9c-ed2b-3a20-879e-df905034a449",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "主署名人是 Goodman（美國人），Hammer 為共同署名；替代方案 Oh, Yeah?（Jan Hammer Group 1976）"
+  },
+  {
+   "artist": "Gábor Szabó",
+   "album": "Jazz Raga",
+   "year": 1966,
+   "label": "Impulse!",
+   "country": "hu",
+   "faction": "emig-hu",
+   "genres": [
+    "jazz"
+   ],
+   "why": "匈牙利吉他手流亡美國後的 Impulse 代表作，西塔琴式吉他把印度拉格與爵士焊在一起。",
+   "moodGuess": {
+    "x": 2.9,
+    "y": 0.4,
+    "z": -0.3,
+    "why": "拉格迷幻、慢而飄、旋律抽象"
+   },
+   "evidence": [
+    "https://music.apple.com/us/album/jazz-raga/1443852740",
+    "https://musicbrainz.org/release-group/8c0e9eba-aea1-31a5-a94b-c3ab6d3bbf4a",
+    "https://coverartarchive.org/release-group/8c0e9eba-aea1-31a5-a94b-c3ab6d3bbf4a"
+   ],
+   "mbRgMbid": "8c0e9eba-aea1-31a5-a94b-c3ab6d3bbf4a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Gabor Szabo",
+   "uncertain": "池內為 Gabor Szabo（無變音符號），卡名請沿用池內拼法"
+  },
+  {
+   "artist": "Gábor Szabó",
+   "album": "Wind, Sky and Diamonds",
+   "year": 1967,
+   "label": "Impulse!",
+   "country": "hu",
+   "faction": "emig-hu",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Szabó 與 California Dreamers 的 Impulse 後期作，流行融合與吉普賽吉他並置，他最暢銷的年代。",
+   "moodGuess": {
+    "x": 3,
+    "y": 0.5,
+    "z": 0.6,
+    "why": "輕快 groove、旋律好入耳"
+   },
+   "evidence": [
+    "https://music.apple.com/us/album/wind-sky-and-diamonds/1443812626",
+    "https://musicbrainz.org/release-group/c013708f-d4b1-46eb-bcb4-72f79d3b80cc",
+    "https://coverartarchive.org/release-group/c013708f-d4b1-46eb-bcb4-72f79d3b80cc"
+   ],
+   "mbRgMbid": "c013708f-d4b1-46eb-bcb4-72f79d3b80cc",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Gabor Szabo",
+   "uncertain": "池內已有 Dreams、Spellbinder，已達上限；第三張待主線判斷（備案 High Contrast，Blue Thumb 1971）"
+  },
+  {
+   "artist": "Attila Zoller, Hans Koller & Martial Solal",
+   "album": "Zoller Koller Solal",
+   "year": 1966,
+   "label": "SABA",
+   "country": "hu",
+   "faction": "mps-extra",
+   "genres": [
+    "jazz"
+   ],
+   "why": "匈牙利吉他手 Zoller 與 Koller、Solal 的 SABA 三人組，MPS 前身廠牌的歐洲先鋒爵士名盤（又名 Zo-Ko-So）。",
+   "moodGuess": {
+    "x": 3.2,
+    "y": 0.5,
+    "z": -0.2,
+    "why": "三人對話、半即興、旋律不明確"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/302994",
+    "https://musicbrainz.org/release-group/b9f034e3-766b-4c1c-a40e-0323a419a373",
+    "https://coverartarchive.org/release-group/b9f034e3-766b-4c1c-a40e-0323a419a373"
+   ],
+   "mbRgMbid": "b9f034e3-766b-4c1c-a40e-0323a419a373",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Zo-Ko-So",
+   "uncertain": "Hans Koller 由 eb5a 負責；此盤 Zoller 領銜，主線擇一歸屬，撞 eb5a 時請汰換"
+  },
+  {
+   "artist": "Michał Urbaniak, Tomasz Stańko, Attila Zoller & Urszula Dudziak",
+   "album": "We'll Remember Komeda",
+   "year": 1973,
+   "label": "MPS",
+   "country": "pl",
+   "faction": "mps-extra",
+   "genres": [
+    "jazz"
+   ],
+   "why": "波蘭同鄉在西德 MPS 為 Komeda 錄的追思專輯，Zoller 吉他、Stańko 小號、Urbaniak 小提琴、Dudziak 人聲同錄。",
+   "moodGuess": {
+    "x": 2.8,
+    "y": 0.5,
+    "z": 0,
+    "why": "追思、慢中速、Komeda 旋律"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/322053",
+    "https://musicbrainz.org/release-group/9e165137-aeef-4326-8e25-e6d157aa0e9e",
+    "https://coverartarchive.org/release-group/9e165137-aeef-4326-8e25-e6d157aa0e9e"
+   ],
+   "mbRgMbid": "9e165137-aeef-4326-8e25-e6d157aa0e9e",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Attila Zoller We'll Remember Komeda",
+   "uncertain": "藝人名過長，卡片署名請主線簡化；eb3 波蘭線可能也提，須查 curation-eb3*"
+  },
+  {
+   "artist": "Joachim Kühn",
+   "album": "Cinemascope",
+   "year": 1974,
+   "label": "MPS",
+   "country": "dd",
+   "faction": "emig-dd",
+   "genres": [
+    "jazz"
+   ],
+   "why": "東德鋼琴家逃到西方後的 MPS 時期代表作，電氣與原聲鋼琴並置的電影式組曲。",
+   "moodGuess": {
+    "x": 3.5,
+    "y": 0.6,
+    "z": 0.3,
+    "why": "融合推進、旋律中等清楚"
+   },
+   "evidence": [
+    "https://music.apple.com/us/album/cinemascope/1004535375",
+    "https://musicbrainz.org/release-group/0b638b2a-bb1a-4514-a007-3fd31dafc59c"
+   ],
+   "mbRgMbid": "0b638b2a-bb1a-4514-a007-3fd31dafc59c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "eb5a 有 Rolf Kühn；Joachim 池內已有 Solos、Transfiguration"
+  },
+  {
+   "artist": "Joachim Kühn",
+   "album": "Hip Elegy",
+   "year": 1976,
+   "label": "MPS",
+   "country": "dd",
+   "faction": "emig-dd",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Kühn 與 Alphonse Mouzon 的 MPS 融合爵士錄音，後以發燒版重發。",
+   "moodGuess": {
+    "x": 3.7,
+    "y": 0.7,
+    "z": 0.1,
+    "why": "節奏推進、電氣融合"
+   },
+   "evidence": [
+    "https://music.apple.com/us/album/hip-elegy-most-perfect-sound-edition-feat-alphonse-mouzon/802944933",
+    "https://musicbrainz.org/release-group/1355c669-8c56-35ec-8927-61ab5cbb8908",
+    "https://coverartarchive.org/release-group/1355c669-8c56-35ec-8927-61ab5cbb8908"
+   ],
+   "mbRgMbid": "1355c669-8c56-35ec-8927-61ab5cbb8908",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "iTunes 為重發版（1977），MPS 首發 1976"
+  },
+  {
+   "artist": "Joachim Kühn",
+   "album": "Springfever",
+   "year": 1976,
+   "label": "Atlantic",
+   "country": "dd",
+   "faction": "emig-dd",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Kühn 簽 Atlantic 的融合作，與 Jan Akkerman 等歐洲同行，電氣鋼琴時期。",
+   "moodGuess": {
+    "x": 3.4,
+    "y": 0.7,
+    "z": 0.2,
+    "why": "電氣鍵盤、律動重"
+   },
+   "evidence": [
+    "https://music.apple.com/us/album/springfever/362142883",
+    "https://musicbrainz.org/release-group/84e1be98-eaa0-470c-aaf1-aa87eb293e13"
+   ],
+   "mbRgMbid": "84e1be98-eaa0-470c-aaf1-aa87eb293e13",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "第三張，主線可汰換；與 Jan Akkerman 同錄為我記憶、未查證"
+  },
+  {
+   "artist": "Elek Bacsik",
+   "album": "Bird and Dizzy: A Musical Tribute",
+   "year": 1975,
+   "label": "Flying Dutchman",
+   "country": "hu",
+   "faction": "emig-hu",
+   "genres": [
+    "jazz"
+   ],
+   "why": "匈牙利吉普賽吉他手在巴黎後赴美的晚年名盤，以弓拉吉他與貝斯二重奏悼念 Bird 與 Dizzy。",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 0.3,
+    "z": 0.6,
+    "why": "抒情吉他、慢、暖"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/2464921",
+    "https://www.discogs.com/search/?q=Elek+Bacsik+Bird+And+Dizzy&type=master"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": "MusicBrainz 以 artist/releasegroup 查詢 Elek Bacsik『Bird and Dizzy』無結果（2026-11-01）",
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/2464921",
+    "https://www.discogs.com/master/2464921-Elek-Bacsik-Bird-And-Dizzy-A-Musical-Tribute"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "『弓拉吉他』細節取自記憶未核；Discogs 年份 1975"
+  },
+  {
+   "artist": "Elek Bacsik",
+   "album": "The Electric Guitar of the Eclectic Elek Bacsik",
+   "year": 1962,
+   "label": "Fontana",
+   "country": "hu",
+   "faction": "emig-hu",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Bacsik 在巴黎 Fontana 錄的電吉他代表作，Michel Gaudry 等同錄，後來被樂迷重新發現的歐洲吉他爵士珍品。",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 0.3,
+    "z": 0.5,
+    "why": "輕巧吉他爵士、旋律清楚"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/283978",
+    "https://musicbrainz.org/release-group/970133f2-11cb-47ca-8d9d-4dadbf53ba4a"
+   ],
+   "mbRgMbid": "970133f2-11cb-47ca-8d9d-4dadbf53ba4a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 日期為 1998 重發，原盤 1962 Fontana；錄於巴黎（西方、移民後）；Michel Gaudry 參與未核"
+  },
+  {
+   "artist": "Valery Ponomarev",
+   "album": "Means of Identification",
+   "year": 1987,
+   "label": "Reservoir",
+   "country": "su",
+   "faction": "emig-balkan",
+   "genres": [
+    "jazz"
+   ],
+   "why": "蘇聯小號手 1973 年出走美國，在 Art Blakey 之後自己領銜的硬咆勃代表作，Reservoir 發行。",
+   "moodGuess": {
+    "x": 3.5,
+    "y": 0.6,
+    "z": 0.7,
+    "why": "硬咆勃、旋律明確"
+   },
+   "evidence": [
+    "https://music.apple.com/us/album/means-of-identification-feat-kenny-washington-ralph/1679191074",
+    "https://musicbrainz.org/release-group/023501e8-426f-4323-ab4f-15de1e82e65d",
+    "https://www.discogs.com/master/1147511"
+   ],
+   "mbRgMbid": "023501e8-426f-4323-ab4f-15de1e82e65d",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "派系標 emig-balkan 為暫列，實為蘇聯移民（su），主線可改 emig-su；iTunes 日期 1985 為錄音年，Reservoir 首發 1987"
+  }
+ ],
+ "notes": [
+  "池子足夠，24 張。WebSearch 使用 0 次，全用 MB／Discogs／iTunes／CAA API。",
+  "Dusko Gojkovic/Goykovich 拼法需統一；封面署名 Gojkovic。",
+  "未提 Yancy Körössy（eb1）；Urszula Dudziak 池內已有 2 張，未提；Szabó 池內已有 2，提 2 張超過 1–3 上限的 5 張總量，主線可只留 Jazz Raga。",
+  "MPS 補充名單池子夠，未碰 eb5a 主名單；Joe Pass Intercontinental、Baden Powell Tristeza 已在池，故不提。",
+  "Zoller Koller Solal 含 Hans Koller 共同署名，若 eb5a 提 Koller 領銜盤不衝突；若 eb5a 也提這張請汰換。",
+  "撰寫期間 batch-progress/mood-cells-20261022 無其他 curation-eb*.json，eb1–eb4 完成後須再比對 Urbaniak/Dudziak/Stańko 的 We'll Remember Komeda。",
+  "『樂手名單』『錄音地點』類細節多取自記憶，已在 uncertain 註明。"
+ ]
+}

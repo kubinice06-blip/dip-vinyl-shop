@@ -1,0 +1,3390 @@
+{
+ "schemaVersion": 1,
+ "batch": "2026-10-20-eb3",
+ "batchNote": "薄細項策展線（add-20261101-eb3）",
+ "createdAt": "2026-11-01T11:56:00Z",
+ "albums": [
+  {
+   "artist": "Andrzej Kurylewicz Quintet",
+   "album": "Go Right",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "f0ad9ebb-8543-4c25-ae88-fdace9b5daec",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "波蘭 Polish Jazz 主流／modal／cool：Polish Jazz 系列早期的 hard bop 代表作，Kurylewicz 把歐式旋律感與美式搖擺揉在一起，是東歐 modern jazz 初期的標準樣本。｜策展無疑點｜MB release-group f0ad9ebb-8543-4c25-ae88-fdace9b5daec：title「Go Right」、Album、first-release-date 1963、artist-credit「Andrzej Kurylewicz Quintet」。證據：https://www.discogs.com/master/295406 https://music.apple.com/pl/album/go-right-polish-jazz/1122249516 https://musicbrainz.org/release-group/f0ad9ebb-8543-4c25-ae88-fdace9b5daec",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1963,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/f0ad9ebb-8543-4c25-ae88-fdace9b5daec/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-01T11:56:00Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-01 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 377,
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽 ready → ≥4，L=377）3→4",
+    "previous": {
+     "classic": 4,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "manual:rerate-20261101",
+     "checkedAt": "2026-11-01T00:00:00Z",
+     "note": "三軸重評（RUBRIC 2026-11-01）：Polish Jazz 系列 Vol.0 先聲、Kurylewicz 代表作；Muza 國營；hard bop 主流",
+     "rarity": "uncommon"
+    }
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 4、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "Polish Jazz 系列還沒開號，這張先出了兩年。帶隊的 Andrzej Kurylewicz 小號、長號、鋼琴都能演奏，這回他專心吹小號，和吹次中音薩克斯風的 Jan Ptaszyn Wróblewski 排成雙管前線，身後是原聲節奏組，走的是 hard bop。這份單聲道錄音由 Muza 在 1963 年發行，系列正式的第 1 號 1965 年才出，後人便稱它為 Vol. 0。斯圖加特爵士音樂節的首獎，他 1957 年就已拿下。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/2249417",
+     "https://www.discogs.com/master/295406",
+     "https://pl.wikipedia.org/wiki/Jan_Ptaszyn_Wróblewski",
+     "https://en.wikipedia.org/wiki/Andrzej_Kurylewicz",
+     "https://pl.wikipedia.org/wiki/Polish_Jazz",
+     "https://musicbrainz.org/release-group/f0ad9ebb-8543-4c25-ae88-fdace9b5daec"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/16/9c/21/169c210b-8160-7e10-58e0-ac4443dc1dbd/mzaf_17152442231149987365.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-11-01T11:56:00Z",
+    "appleCollectionId": "1122249516",
+    "storefront": "JP",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple jp 1122249516「Andrzej Kurylewicz Quintet《Go Right (Polish Jazz)》」：曲目 9/9 對上 MB 原盤（Apple 共 9 軌），取第 1 軌〈Go Right〉。主線 2026-11-01 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Andrzej Kurylewicz Quintet",
+   "album": "10+8",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "1c8cfd47-64b4-4a82-bddf-7ee6e7dd3e88",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "波蘭 Polish Jazz 主流／modal／cool：Kurylewicz 後期 Polish Jazz 作，更接近 modal 與第三流派的現代語法，與 Go Right 是不同高峰。｜策展無疑點｜MB release-group 1c8cfd47-64b4-4a82-bddf-7ee6e7dd3e88：title「10+8 / Ten+Eight」、Album、first-release-date 2006、artist-credit「Andrzej Kurylewicz Quintet」。證據：https://www.discogs.com/master/295407 https://musicbrainz.org/release-group/1c8cfd47-64b4-4a82-bddf-7ee6e7dd3e88 https://api.discogs.com/masters/295407",
+    "queryAlias": "10+8 / Ten+Eight"
+   },
+   "research": {
+    "suggestedYear": 1968,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "source": "discogs",
+    "discogsReleaseId": "685539",
+    "url": "https://i.discogs.com/8sqqr0ky8SBzUxRrqoLu14L5lWD_YHRRS2SXm3zLdUs/rs:fit/g:sm/q:90/h:595/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY4NTUz/OS0xNzIwNDM0OTcy/LTE4MDYuanBlZw.jpeg",
+    "note": "CAA 404；Discogs release 685539：目錄號 XL 0439、年份 1968、廠牌 Polskie Nagrania Muza、盤名 10+8 / Ten+Eight 皆對上（master 295407 原版 mono LP）；取該 release images[0]（原盤封面）。",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-01T11:56:00Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 4,
+    "listeners": 11,
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽非 ready → 5，L=11）3→5",
+    "previous": {
+     "classic": 3,
+     "obscurity": 3,
+     "accessibility": 4,
+     "source": "manual:rerate-20261101",
+     "checkedAt": "2026-11-01T00:00:00Z",
+     "note": "三軸重評（RUBRIC 2026-11-01）：Kurylewicz 轉向調式自由的中期作，非首選代表；Muza 國營；長曲抽象、人聲當樂器",
+     "rarity": "uncommon"
+    }
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "五首撐滿一張 LP，最長的〈Rondo〉近 12 分鐘。這是小號手 Andrzej Kurylewicz 的五重奏，他坐鎮鋼琴，另外掛名一件叫 Rebela 的樂器。錄音 1967 年 10 月在華沙收工，隔年才以單聲道 LP 問世。Wanda Warska 的人聲被當成一件樂器擺進編曲。比起他先前的 hard bop，曲子拉得更長、更抽象，從 modal 一路走到 free。1969 年起，他轉而帶領 Formacja Muzyki Współczesnej。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/685539",
+     "https://www.discogs.com/master/295407",
+     "https://en.wikipedia.org/wiki/Wanda_Warska",
+     "https://en.wikipedia.org/wiki/Andrzej_Kurylewicz",
+     "https://musicbrainz.org/release-group/1c8cfd47-64b4-4a82-bddf-7ee6e7dd3e88"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-01T11:56:00Z",
+    "note": "查過 jp／us／pl／de 藝人目錄（Kurylewicz Quintet 443946894 只有 2005《Go Right》，Quartet 只有 Somnambulists）與專輯搜尋 Ten Eight／10+8，無 1968 Muza XL 0439《10+8》。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Andrzej Kurylewicz",
+   "album": "Polish Radio Big Band",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "a3054a2f-dd56-413b-85f0-2c0a1ec14482",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "波蘭大樂團：Polish Jazz Vol.2，波蘭電台大樂團的現代大編制作品，Kurylewicz 作為作曲／編曲者的代表。｜策展無疑點｜MB release-group a3054a2f-dd56-413b-85f0-2c0a1ec14482：title「Polish Radio Big Band」、Album、first-release-date 1965、artist-credit「Andrzej Kurylewicz」。證據：https://www.discogs.com/master/861081 https://music.apple.com/pl/album/andrzej-kurylewicz-polish-big-band-polish-jazz-vol-2/1473272623 https://musicbrainz.org/release-group/a3054a2f-dd56-413b-85f0-2c0a1ec14482",
+    "queryAlias": "Andrzej Kurylewicz Polish Big Band"
+   },
+   "research": {
+    "suggestedYear": 1965,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "source": "apple-verified-collection",
+    "collectionId": "1473272623",
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/57/2d/61/572d61fd-99de-4bb9-faaf-42df8a495d44/190296865923.jpg/600x600bb.jpg",
+    "note": "CAA 404；Apple 已核對條目（逐軌對 MB 10/10，Polish Jazz Vol. 2 原盤封面，目視 XL 0241 版面）。 Apple 專輯頁 https://music.apple.com/jp/album/andrzej-kurylewicz-polish-big-band-polish-jazz-vol-2/1473272623",
+    "appleCollectionId": "1473272623",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-01T11:56:00Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 396,
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽 ready → ≥4，L=396）3→4",
+    "previous": {
+     "classic": 4,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "manual:rerate-20261101",
+     "checkedAt": "2026-11-01T00:00:00Z",
+     "note": "三軸重評（RUBRIC 2026-11-01）：Polish Jazz Vol.2、波蘭首支純爵士大樂團；Muza 國營；大樂團短曲易聽",
+     "rarity": "uncommon"
+    }
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "內頁說，波蘭到 1964 年才有第一支爵士大樂團。組團的 Andrzej Kurylewicz 當時主持波蘭廣播電視樂團。在此之前，波蘭幾乎沒有純爵士大編制的傳統，他便向爵士作曲家邀來編曲，再請有名的獨奏者入團。全團約 22 人，薩克斯風五支、小號五支、長號四支，加上長笛與節奏組，他自己吹活塞長號兼指揮。樂手們 1964 年 11 月齊聚華沙，錄下這張，1965 年發行的 LP 是單聲道。首場公開演出，選在華沙國家愛樂廳。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/2183311",
+     "https://www.discogs.com/master/861081",
+     "https://en.wikipedia.org/wiki/Andrzej_Kurylewicz",
+     "https://pl.wikipedia.org/wiki/Polish_Jazz",
+     "https://musicbrainz.org/release-group/a3054a2f-dd56-413b-85f0-2c0a1ec14482"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/75/1f/a4/751fa4fb-5525-ccd3-2a18-6b9720092240/mzaf_9272210062834455076.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-11-01T11:56:00Z",
+    "appleCollectionId": "1473272623",
+    "storefront": "JP",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple jp 1473272623「Polish Radio Big Band《Andrzej Kurylewicz Polish Big Band (Polish Jazz, Vol. 2)》」：Polskie Nagrania《Andrzej Kurylewicz Polish Big Band (Polish Jazz, Vol. 2)》10 軌，逐位置對 MB 10/10，℗1964，取第 1 軌〈Selector Junior〉。主線 2026-11-01 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Andrzej Trzaskowski Quintet",
+   "album": "Polish Jazz Vol. 4",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "b2a901a1-2b98-433c-82fa-f049998b8fd4",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "波蘭 Polish Jazz 主流／modal／cool：Trzaskowski 作為波蘭爵士理論家與作曲家的代表錄音室作，cool／third-stream 取向的 Polish Jazz 早期經典。｜策展無疑點｜MB release-group b2a901a1-2b98-433c-82fa-f049998b8fd4：title「Polish Jazz, Volume 4」、Album、first-release-date 1965、artist-credit「The Andrzej Trzaskowski Quintet」。證據：https://www.discogs.com/master/316561 https://music.apple.com/pl/album/the-andrzej-trzaskowski-quintet-polish-jazz-vol-4/1439457563 https://musicbrainz.org/release-group/b2a901a1-2b98-433c-82fa-f049998b8fd4",
+    "queryAlias": "The Andrzej Trzaskowski Quintet；Polish Jazz, Volume 4"
+   },
+   "research": {
+    "suggestedYear": 1965,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/b2a901a1-2b98-433c-82fa-f049998b8fd4/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-01T11:56:00Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-01 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 4,
+    "listeners": 17,
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽 ready → ≥4，L=17）3→4",
+    "previous": {
+     "classic": 4,
+     "obscurity": 3,
+     "accessibility": 4,
+     "source": "manual:rerate-20261101",
+     "checkedAt": "2026-11-01T00:00:00Z",
+     "note": "三軸重評（RUBRIC 2026-11-01）：Trzaskowski 代表作、Stańko 早期參與；Muza 國營；序列技法與第三潮流前衛",
+     "rarity": "epic"
+    }
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "鋼琴家兼音樂學者，把序列技法寫進 18 分鐘的爵士。他是 1933 年生在 Kraków 的 Andrzej Trzaskowski，曲子叫〈Synopsis〉，長 18 分 05 秒，分三段。作品 1964 年先有室內樂版，隔一年再有管弦樂版，序列之外還用上複節奏與受控的偶然性。第一段另加牛鈴與 timbales。1965 年 1 月的華沙錄音裡，小號交給 Tomasz Stańko。Trzaskowski 在 1960 年還帶過三重奏，替 Stan Getz 伴奏。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/1763330",
+     "https://www.discogs.com/master/316561",
+     "https://en.wikipedia.org/wiki/Andrzej_Trzaskowski",
+     "https://positive-feedback.com/reviews/music-reviews/polish-jazz-forever-iii/",
+     "https://musicbrainz.org/release-group/b2a901a1-2b98-433c-82fa-f049998b8fd4"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/5b/aa/6b/5baa6b15-48ae-bffa-d330-b620907ed12a/mzaf_11355639524211259556.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-11-01T11:56:00Z",
+    "appleCollectionId": "1439457563",
+    "storefront": "JP",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple jp 1439457563「The Andrzej Trzaskowski Quintet《The Andrzej Trzaskowski Quintet (Polish Jazz, Vol. 4)》」：Polskie Nagrania《The Andrzej Trzaskowski Quintet (Polish Jazz, Vol. 4)》6 軌，逐軌對 MB 6/6（Requiem dla Scotta La Faro…Wariacje na temat Chmiela），℗1965，取第 1 軌〈Requiem Dla Scotta La Faro〉。主線 2026-11-01 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Andrzej Trzaskowski Sextet",
+   "album": "Seant",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "12210b21-1258-476a-a381-26a64ec6bad4",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "波蘭 Polish Jazz 主流／modal／cool：Trzaskowski 與美國小號手 Ted Curson 合作，Polish Jazz 系列中最國際化的 post-bop／modal 錄音室專輯；與 Vol.4 是不同高峰。｜策展無疑點｜MB release-group 12210b21-1258-476a-a381-26a64ec6bad4：title「Seant」、Album、first-release-date 1967、artist-credit「The Andrzej Trzaskowski Sextet featuring Ted Curson」。證據：https://www.discogs.com/master/357332 https://music.apple.com/pl/album/seant-feat-ted-curson-polish-jazz-vol-11/1374876162 https://musicbrainz.org/release-group/12210b21-1258-476a-a381-26a64ec6bad4",
+    "queryAlias": "Seant feat. Ted Curson；The Andrzej Trzaskowski Sextet featuring Ted Curson"
+   },
+   "research": {
+    "suggestedYear": 1967,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/12210b21-1258-476a-a381-26a64ec6bad4/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-01T11:56:00Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-01 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 5,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": 1092,
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "note": "全池稽核 audit-20261102（方案 C）：Polish Jazz Vol.11 重要盤，但非波蘭爵士首位（Komeda Astigmatic）；聽眾1092→冷門≥3；modal 後 bop 帶前衛，硬蕊3｜L=1092",
+    "previous": {
+     "classic": 5,
+     "obscurity": 3,
+     "accessibility": 4,
+     "source": "manual:rerate-20261101",
+     "checkedAt": "2026-11-01T00:00:00Z",
+     "note": "三軸重評（RUBRIC 2026-11-01）：Polish Jazz Vol.11 正典名盤、波蘭前衛爵士里程碑；Muza 國營；25 分鐘前衛長曲",
+     "rarity": "legendary"
+    }
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 4、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "華沙的六重奏，請來美國小號手 Ted Curson 客座。曲子全由鋼琴手 Andrzej Trzaskowski 寫，前線排了三支管：Curson 吹小號，Włodzimierz Nahorny 負責中音薩克斯風，Janusz Muniak 負責高音薩克斯風。A 面先是 10 分鐘的〈Seant〉，B 面整面交給長達 24 分 35 秒的〈Cosinusoida〉。Muza 發行的單聲道 LP 上，年份標為 1967 年。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/2074350",
+     "https://www.discogs.com/master/357332",
+     "https://en.wikipedia.org/wiki/Seant",
+     "https://en.wikipedia.org/wiki/Andrzej_Trzaskowski",
+     "https://musicbrainz.org/release-group/12210b21-1258-476a-a381-26a64ec6bad4"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview128/v4/e0/8d/7d/e08d7d5c-8209-a40f-d621-5b956af9481f/mzaf_5043028241022752957.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-11-01T11:56:00Z",
+    "appleCollectionId": "1374876162",
+    "storefront": "JP",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple jp 1374876162「Andrzej Trzaskowski Sextet《Seant (feat. Ted Curson) [Polish Jazz, Vol. 11]》」：曲目 4/4 對上 MB 原盤（Apple 共 4 軌），取第 1 軌〈Seant (feat. Ted Curson)〉。主線 2026-11-01 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Polish Jazz Quartet",
+   "album": "Polish Jazz Quartet",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "0443ea13-1cf6-4ebf-8ae4-a1412fe983b5",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "波蘭 Polish Jazz 主流／modal／cool：Polish Jazz Vol.3，Wróblewski／Karolak 等組成的團名專輯，波蘭 modern mainstream 的標準範本。｜⚠ MB 該 RG 掛名 Jan Ptaszyn Wróblewski、日期 1964，與 Discogs 1965 差一年；藝人欄採團名。｜MB release-group 0443ea13-1cf6-4ebf-8ae4-a1412fe983b5：title「Polish Jazz Quartet」、Album、first-release-date 1964、artist-credit「Jan Ptaszyn Wróblewski」。證據：https://www.discogs.com/master/302966 https://music.apple.com/pl/album/polish-jazz-quartet-polish-jazz-vol-3/1439332084 https://musicbrainz.org/release-group/0443ea13-1cf6-4ebf-8ae4-a1412fe983b5",
+    "queryAlias": "Polish Jazz Quartet (Polish Jazz Vol. 3)；Jan Ptaszyn Wróblewski",
+    "selfTitledVerified": true
+   },
+   "research": {
+    "suggestedYear": 1965,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "source": "apple-verified-collection",
+    "collectionId": "1439332084",
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/cc/c9/ad/ccc9ad11-8eda-35ca-573c-8117dead36cb/190295851422.jpg/600x600bb.jpg",
+    "note": "CAA 404；Apple 已核對條目（逐軌對 MB 8/8，封面印 XL 0246）。 Apple 專輯頁 https://music.apple.com/jp/album/polish-jazz-quartet-polish-jazz-vol-3/1439332084",
+    "appleCollectionId": "1439332084",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-01T11:56:00Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 306,
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽 ready → ≥4，L=306）3→4",
+    "previous": {
+     "classic": 3,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "manual:rerate-20261101",
+     "checkedAt": "2026-11-01T00:00:00Z",
+     "note": "三軸重評（RUBRIC 2026-11-01）：Polish Jazz Vol.3，Wróblewski/Karolak 團穩定作；Muza 國營；主流 hard bop",
+     "rarity": "rare"
+    }
+   },
+   "rarity": "common",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "在土耳其地毯上跳扭扭舞，再散步穿過空街。曲子出自 Jan Ptaszyn Wróblewski 與 Wojciech Karolak 兩人之手，八首曲名譯成英文，讀起來像一趟夜遊，開頭那兩句就來自〈Twist Na Tureckim Dywanie〉與〈Przechadzka Pustymi Ulicami〉。夜遊停在〈Dedykowane Jaskółce〉，這首收尾曲不到兩分鐘。四重奏由次中音薩克斯風領頭，錄音日期是 1964 年 12 月，地點在華沙。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/1494419",
+     "https://www.discogs.com/master/302966",
+     "https://pl.wikipedia.org/wiki/Jan_Ptaszyn_Wróblewski",
+     "https://musicbrainz.org/release-group/0443ea13-1cf6-4ebf-8ae4-a1412fe983b5",
+     "https://pl.wikipedia.org/wiki/Polish_Jazz"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/a4/cd/f7/a4cdf768-2965-13e2-9339-7308c112ca38/mzaf_10506243225063751437.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-11-01T11:56:00Z",
+    "appleCollectionId": "1439332084",
+    "storefront": "JP",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple jp 1439332084「Polish Jazz Quartet《Polish Jazz Quartet (Polish Jazz, Vol. 3)》」：Polskie Nagrania《Polish Jazz Quartet (Polish Jazz, Vol. 3)》8 軌，曲名波蘭文／英文並列，逐位置對 MB 8/8，℗1965；jp 結果，非 Radio Jazz Archives 22，取第 1 軌〈Zarys〉。主線 2026-11-01 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Mieczysław Kosz",
+   "album": "Reminiscence",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "f2d20266-d461-32c7-a656-727f94b27923",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "波蘭 Polish Jazz 主流／modal／cool：Polish Jazz Vol.25，Kosz 抒情鋼琴三重奏，被樂迷公認為波蘭爵士最美的鋼琴專輯之一，Kosz 英年早逝使之成為遺作式經典。｜策展無疑點｜MB release-group f2d20266-d461-32c7-a656-727f94b27923：title「Reminiscence」、Album、first-release-date 1972、artist-credit「Mieczysław Kosz Trio」。證據：https://www.discogs.com/master/235564 https://music.apple.com/pl/album/reminiscence-polish-jazz-vol-25/1315075384 https://musicbrainz.org/release-group/f2d20266-d461-32c7-a656-727f94b27923",
+    "queryAlias": "Mieczysław Kosz Trio"
+   },
+   "research": {
+    "suggestedYear": 1972,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/f2d20266-d461-32c7-a656-727f94b27923/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-01T11:56:00Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-01 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 1363,
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：Kosz 公認代表作、Polish Jazz Vol.25；Muza 國營；抒情鋼琴三重奏改編古典",
+    "previous": {
+     "classic": 4,
+     "obscurity": 3,
+     "accessibility": 3,
+     "source": "manual:regional-rubric",
+     "checkedAt": "2026-11-01T11:56:00Z",
+     "note": "機器基線 3/5/3（Last.fm listeners 1363）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 地區錨點制：Polish Jazz／Muza 國營廠正規發行、Warner 重發進串流，屬「該語言圈一線作品、圈外幾乎無人知」；Last.fm 1363 偏英語圈不採；經典 4：波蘭爵士史公認代表作（研究稿：重發系列與樂史定位）",
+     "rarity": "uncommon"
+    }
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 4、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "童年失明的鋼琴手，在世時只發行過這一張 LP。1944 年出生的 Mieczysław Kosz，從 Kraków 的盲童音樂學校起步。1971 年 3 月，三人把這些曲子錄在華沙，1972 年出成立體聲 LP。A 面四首是改編，從〈Tańce Połowieckie〉排到〈Yesterday〉；B 面三首出自他自己。鼓手 Janusz Stefański 還兼打 flexatone。唱片問世隔年，他於 1973 年 5 月 31 日在華沙過世，年僅 29 歲。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/4756492",
+     "https://www.discogs.com/master/235564",
+     "https://en.wikipedia.org/wiki/Mieczysław_Kosz",
+     "https://salt-peanuts.eu/record/mieczyslaw-kosz/",
+     "https://musicbrainz.org/release-group/f2d20266-d461-32c7-a656-727f94b27923"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/df/b6/7d/dfb67d07-4e9a-ec0a-4414-d2a2c70b4118/mzaf_6404800865846355479.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-11-01T11:56:00Z",
+    "appleCollectionId": "1315075384",
+    "storefront": "JP",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple jp 1315075384「Mieczysław Kosz《Reminiscence (Polish Jazz, Vol. 25)》」：Polskie Nagrania《Reminiscence (Polish Jazz, Vol. 25)》7 軌，曲名去重音符號並附 Paraphrase 後綴，逐軌對 MB 7/7，℗1971，取第 1 軌〈Tance Polowieckie - Paraphrase〉。主線 2026-11-01 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Novi Singers",
+   "album": "Bossa Nova",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "a1b31410-fbee-39cc-9750-0f3fb0bae3c8",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "波蘭人聲（Novi、Warska、Marianna Wróblewska）：Novi 的 Polish Jazz 版專輯，無詞人聲與 bossa 的早期歐洲實驗。｜策展無疑點｜MB release-group a1b31410-fbee-39cc-9750-0f3fb0bae3c8：title「Bossa Nova」、Album、first-release-date 1967-06、artist-credit「Novi Singers」。證據：https://www.discogs.com/master/183858 https://music.apple.com/pl/album/bossa-nova-polish-jazz/1122252263 https://musicbrainz.org/release-group/a1b31410-fbee-39cc-9750-0f3fb0bae3c8",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1967,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/a1b31410-fbee-39cc-9750-0f3fb0bae3c8/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-01T11:56:00Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-01 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 1,
+    "listeners": 2653,
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：Novi 首作、Polish Jazz Vol.13，器樂式人聲開路；Muza 國營；巴薩諾瓦人聲短曲",
+    "previous": {
+     "classic": 2,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "manual:regional-rubric",
+     "checkedAt": "2026-11-01T11:56:00Z",
+     "note": "機器基線 2/5/2（Last.fm listeners 2653）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 地區錨點制：Polish Jazz／Muza 國營廠正規發行、Warner 重發進串流，屬「該語言圈一線作品、圈外幾乎無人知」；Last.fm 2653 偏英語圈不採",
+     "rarity": "rare"
+    }
+   },
+   "rarity": "common",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 2、obscurity 3、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "團名縮寫自「新的原創人聲樂器」，唱法也照著來。Novi Singers 是一支波蘭的爵士合唱團，團名原文為 New Original Vocal Instruments。1964 年，Bernard Kawka 找來四位華沙音樂學院同學組成這個團。首張 LP 在 1967 年 6 月於 Polskie Nagrania 的 Studio 12 錄成，收進 14 首短曲，波蘭語歌詞與無詞和聲輪番出現。伴奏只有鋼琴、吉他、貝斯與鼓，踩著巴薩諾瓦的律動。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/1907351",
+     "https://www.discogs.com/master/183858",
+     "https://pl.wikipedia.org/wiki/Novi_Singers",
+     "https://musicbrainz.org/release-group/a1b31410-fbee-39cc-9750-0f3fb0bae3c8"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/27/5b/d4/275bd4d7-d2d5-0905-af8a-aacc7bcaa243/mzaf_10062481219473561381.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-11-01T11:56:00Z",
+    "appleCollectionId": "1122252263",
+    "storefront": "JP",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple jp 1122252263「Novi Singers《Bossa Nova (Polish Jazz)》」：Polskie Nagrania《Bossa Nova (Polish Jazz)》14 軌，Apple 用波蘭文曲名、MB 用英譯，逐位置對照 14/14（Brownie／Cichy Wieczór=A Calm Evening…），℗1967，取第 1 軌〈Brownie〉。主線 2026-11-01 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Novi Singers",
+   "album": "Torpedo",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "0c19863c-aa16-416c-a2bb-e3c2a57219c9",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "波蘭人聲（Novi、Warska、Marianna Wróblewska）：Novi Singers 轉向前衛 scat 與人聲拼貼的轉折作，歐洲人聲爵士史上被重新評價的一張。｜⚠ 年份 MB／iTunes 1970，Discogs 1972；採 MB。｜MB release-group 0c19863c-aa16-416c-a2bb-e3c2a57219c9：title「Torpedo」、Album、first-release-date 1970、artist-credit「Novi Singers」。證據：https://www.discogs.com/master/183857 https://music.apple.com/pl/album/torpedo/1447285083 https://musicbrainz.org/release-group/0c19863c-aa16-416c-a2bb-e3c2a57219c9",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1970,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/0c19863c-aa16-416c-a2bb-e3c2a57219c9/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-01T11:56:00Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-01 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 2849,
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：Novi 代表作，人聲加全明星大樂團、掘盤名作；Muza 國營；人聲爵士易聽",
+    "previous": {
+     "classic": 2,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "manual:regional-rubric",
+     "checkedAt": "2026-11-01T11:56:00Z",
+     "note": "機器基線 2/5/2（Last.fm listeners 2849）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 地區錨點制：Polish Jazz／Muza 國營廠正規發行、Warner 重發進串流，屬「該語言圈一線作品、圈外幾乎無人知」；Last.fm 2849 偏英語圈不採",
+     "rarity": "rare"
+    }
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 2、obscurity 3、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "兩把電吉他加上 bongo，人聲團一路衝進標題曲。唱的是華沙的 Novi Singers，那首〈Torpedo〉排在 A 面。多數曲子由 Bernard Kawka 作曲並編曲，A1 與 A3 另掛名一支電台的爵士樂團，由 Jan Ptaszyn Wróblewski 帶領。兩把吉他之一出自 Michał Urbaniak，鋼琴有 Adam Makowicz，小號有 Tomasz Stańko。這張單聲道 LP 是 Muza 1970 年的出版品。",
+    "sourceUrls": [
+     "https://pl.wikipedia.org/wiki/Novi_Singers",
+     "https://www.discogs.com/release/441773",
+     "https://www.discogs.com/master/183857",
+     "https://musicbrainz.org/release-group/0c19863c-aa16-416c-a2bb-e3c2a57219c9"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/6f/c6/59/6fc6593a-e70d-d034-9f13-15eb6f1f961b/mzaf_6922049256034915359.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-11-01T11:56:00Z",
+    "appleCollectionId": "1447285083",
+    "storefront": "JP",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple jp 1447285083「Novi Singers《Torpedo》」：曲目 11/11 對上 MB 原盤（Apple 共 11 軌），取第 1 軌〈Coś specjalnego〉。主線 2026-11-01 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Novi Singers",
+   "album": "Rien ne va plus",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "51bba562-b16d-4590-9c73-9fef63487669",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "波蘭人聲（Novi、Warska、Marianna Wróblewska）：Novi Singers 的 Polish Jazz 高峰，人聲爵士與 Bernard Kawka 等編曲的成熟集大成。｜策展無疑點｜MB release-group 51bba562-b16d-4590-9c73-9fef63487669：title「Rien ne va plus」、Album、first-release-date 1973、artist-credit「Novi Singers」。證據：https://www.discogs.com/master/302942 https://music.apple.com/pl/album/rien-ne-va-plus/1610597286 https://musicbrainz.org/release-group/51bba562-b16d-4590-9c73-9fef63487669",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1973,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/51bba562-b16d-4590-9c73-9fef63487669/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-01T11:56:00Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-01 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 1049,
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：四人陣容後期作，非首選；Muza 國營；人聲加大樂團易聽",
+    "previous": {
+     "classic": 2,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "manual:regional-rubric",
+     "checkedAt": "2026-11-01T11:56:00Z",
+     "note": "機器基線 2/5/2（Last.fm listeners 1049）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 地區錨點制：Polish Jazz／Muza 國營廠正規發行、Warner 重發進串流，屬「該語言圈一線作品、圈外幾乎無人知」；Last.fm 1049 偏英語圈不採",
+     "rarity": "rare"
+    }
+   },
+   "rarity": "common",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 2、obscurity 3、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "披頭四與 Bacharach 的歌，交給波蘭人聲團來唱。Bernard Kawka 掛名音樂總監，曲目裡排著〈The Look of Love〉、〈The Fool on the Hill〉與〈Blue Moon〉等名曲。1973 年 6 月進棚時，指揮大樂團的是 Jan Ptaszyn Wróblewski，A4 還有 Zbigniew Seifert 拉了一段小提琴獨奏。節奏多半走巴薩諾瓦與放克。同年秋天 Kawka 離團，這張因此是四人陣容後期的作品。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/7838115",
+     "https://pl.wikipedia.org/wiki/Novi_Singers",
+     "https://www.discogs.com/master/302942",
+     "https://musicbrainz.org/release-group/51bba562-b16d-4590-9c73-9fef63487669"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/3a/4c/fb/3a4cfb55-033f-218c-e3aa-5671c9ae59ff/mzaf_17582095925575681274.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-11-01T11:56:00Z",
+    "appleCollectionId": "1610597286",
+    "storefront": "JP",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple jp 1610597286「Novi Singers《Rien ne va plus》」：曲目 10/10 對上 MB 原盤（Apple 共 10 軌），取第 1 軌〈Oh Woman〉。主線 2026-11-01 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Zbigniew Namysłowski Modern Jazz Quartet",
+   "album": "Lola",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "manual",
+    "rgMbid": "",
+    "upc": "",
+    "aliasesChecked": true,
+    "mbAbsenceProof": {
+     "queries": [
+      {
+       "query": "releasegroup:\"Lola\"",
+       "count": 298,
+       "topTitles": [
+        "Lola, Lola, Lola!｜Zwarte Lola",
+        "Lola Lola｜Rafeé",
+        "Lola, Lola｜Lowland Trio"
+       ]
+      },
+      {
+       "query": "artist:\"Zbigniew Namysłowski Modern Jazz Quartet\" AND releasegroup:\"Lola\"",
+       "count": 0,
+       "topTitles": []
+      },
+      {
+       "query": "releasegroup:\"Zbigniew Namysłowski Quartet Lola\"",
+       "count": 0,
+       "topTitles": []
+      }
+     ],
+     "checkedAt": "2026-11-01",
+     "conclusion": "MusicBrainz release-group 以盤名、藝人＋盤名、別名查詢，無本盤條目。MusicBrainz release-group 查 Lola／Namysłowski 無此 LP；Discogs master 322720 有 1964 Muza 原盤與 2025 重發。"
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/master/322720",
+     "https://www.discogs.com/release/3282923"
+    ],
+    "manualRuling": "雲端主線 2026-11-01 依 ALBUM_ONBOARDING §1 人工身分核可（店主 2026-09-02 裁定權下放；薄細項策展線 add-20261101-eb3）",
+    "coverSourceHint": "discogs",
+    "aliasReview": "波蘭 Polish Jazz 主流／modal／cool：Namysłowski 首張個人名義 LP，波蘭 hard bop 起點；與池中 Winobranie（1973）是不同時期。｜策展無疑點｜MB 查無（），走 §1 人工身分。證據：https://www.discogs.com/master/322720 https://www.discogs.com/release/3282923 https://www.discogs.com/master/322720 https://music.apple.com/pl/album/lola/1855520675",
+    "queryAlias": "Zbigniew Namysłowski Quartet Lola"
+   },
+   "research": {
+    "suggestedYear": 1964,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "source": "discogs",
+    "discogsReleaseId": "3282923",
+    "url": "https://i.discogs.com/BP47Ji-EXpySpffJYOb8lncOwSkkmawK2Sm3Zh8bOr8/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMyODI5/MjMtMTQzOTUwMzMy/My02MTAyLmpwZWc.jpeg",
+    "note": "manual 身分無 CAA；Discogs release 3282923：目錄號 LK 4644、年份 1964、廠牌 Decca、盤名 Lola、8 軌曲目皆對上（master 322720 英國 Decca 原版）；取該 release images[0]（原盤封面）。",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-01T11:56:00Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 46,
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽 ready → ≥4，L=46）3→4",
+    "previous": {
+     "classic": 4,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "manual:rerate-20261101",
+     "checkedAt": "2026-11-01T00:00:00Z",
+     "note": "三軸重評（RUBRIC 2026-11-01）：首張鐵幕外錄製的波蘭爵士盤、Namysłowski 早期代表；英 Decca 正規但當年發行有限；現代爵士四重奏",
+     "rarity": "uncommon"
+    }
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 4、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "在倫敦錄好的唱片，當時的波蘭人卻買不到。封面掛名 Zbigniew Namysłowski Modern Jazz Quartet，他吹中音薩克斯風。英國 Decca 於 1964 年出版這張，起因是四重奏 1963 年走紅，隨即受邀巡迴英國，經紀人 Roman Waschko 順勢談成 Decca 的合約。倫敦 Decca 3 號錄音室的錄音排在 1964 年夏末，製作人是 Mike Vernon。曲目裡的〈Piątawka〉用 5/4 拍寫成。",
+    "sourceUrls": [
+     "https://www.discogs.com/master/322720",
+     "https://londonjazznews.com/2019/04/09/interview-zbigniew-namyslowski-behind-the-iron-curtain-18-april/",
+     "https://www.everythingjazz.com/story/zbigniew-namyslowski-a-polish-jazz-classic/",
+     "https://www.discogs.com/release/3282923",
+     "https://en.wikipedia.org/wiki/Zbigniew_Namys%C5%82owski"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/0e/b0/8b/0eb08b3c-c1e0-9940-6917-66a1a9002af0/mzaf_15056358062909137079.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-11-01T11:56:00Z",
+    "appleCollectionId": "1855520675",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1855520675「Zbigniew Namyslowski Modern Jazz Quartet《Lola》」：Decca 2025 重製版《Lola》8 軌，逐軌對 Discogs release 3282923（Decca LK 4644, 1964）8/8，曲名僅加 Remastered 2025 後綴，取第 1 軌〈Piekna Lola, Kwiat Polnocy (Remastered 2025)〉。主線 2026-11-01 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Wanda Warska",
+   "album": "Somnambulicy",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "manual",
+    "rgMbid": "",
+    "upc": "",
+    "aliasesChecked": true,
+    "mbAbsenceProof": {
+     "queries": [
+      {
+       "query": "releasegroup:\"Somnambulicy\"",
+       "count": 0,
+       "topTitles": []
+      },
+      {
+       "query": "artist:\"Wanda Warska\" AND releasegroup:\"Somnambulicy\"",
+       "count": 0,
+       "topTitles": []
+      },
+      {
+       "query": "releasegroup:\"Wanda Warska & Andrzej Kurylewicz Somnambulicy\"",
+       "count": 0,
+       "topTitles": []
+      }
+     ],
+     "checkedAt": "2026-11-01",
+     "conclusion": "MusicBrainz release-group 以盤名、藝人＋盤名、別名查詢，無本盤條目。MusicBrainz 查 Somnambulicy 與 Wanda Warska 無此 RG（僅 Muzyka Teatralna I Telewizyjna）；Discogs master 1434460 有 1961 Muza 10\" LP。"
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/master/1434460",
+     "https://www.discogs.com/release/12625146"
+    ],
+    "manualRuling": "雲端主線 2026-11-01 依 ALBUM_ONBOARDING §1 人工身分核可（店主 2026-09-02 裁定權下放；薄細項策展線 add-20261101-eb3）",
+    "coverSourceHint": "discogs",
+    "aliasReview": "波蘭人聲（Novi、Warska、Marianna Wróblewska）：Warska 與 Kurylewicz 三重奏／四重奏合作的 10 吋 LP，波蘭 cool 人聲爵士的奠基錄音。｜⚠ iTunes 無；封面只能走 Discogs。10 吋 8 曲，長度偏短但為正規 LP。Warska 原提名 Sings Standards 為 7\" EP 已剔除。｜MB 查無（），走 §1 人工身分。證據：https://www.discogs.com/master/1434460 https://www.discogs.com/release/12625146 https://www.discogs.com/master/1434460 https://api.discogs.com/masters/1434460",
+    "queryAlias": "Wanda Warska & Andrzej Kurylewicz Somnambulicy"
+   },
+   "research": {
+    "suggestedYear": 1961,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "source": "discogs",
+    "discogsReleaseId": "12625146",
+    "url": "https://i.discogs.com/1RWc5jE9jNtuG-FaYG1EF6-rIB-5OAU2x5FxJQ2ruGg/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyNjI1/MTQ2LTE1Mzg4NDA5/OTQtOTg3MS5qcGVn.jpeg",
+    "note": "manual 身分無 CAA；Discogs release 12625146：目錄號 L 0348、年份 1961、廠牌 Polskie Nagrania Muza、盤名 Somnambulicy 皆對上（master 1434460 原版 10 吋 mono LP）；取該 release images[0]（原盤封面）。",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-01T11:56:00Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 1,
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽 ready → ≥4，L=1）3→4",
+    "previous": {
+     "classic": 3,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "manual:rerate-20261101",
+     "checkedAt": "2026-11-01T00:00:00Z",
+     "note": "三軸重評（RUBRIC 2026-11-01）：波蘭早期人聲爵士 10 吋，史料價值；Muza 10 吋小量、少見再發沿用 4；標準曲人聲〔主線：Muza 國營＝3〕",
+     "rarity": "rare"
+    }
+   },
+   "rarity": "common",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "她唱，丈夫吹小號，一張 10 吋小唱片收進八首。歌手 Wanda Warska 5 歲起學唱歌，吹小號的丈夫是 Andrzej Kurylewicz，兩人 1958 年結為夫妻。Muza 1961 年發行，錄音為單聲道。曲目以〈Lover Man〉這類美式標準曲為主，另有 Kurylewicz 作曲的〈Somnambulicy〉。到了 1964 年，夫妻倆在華沙開了一家夜店，店名 Piwnica Wandy Warskiej。",
+    "sourceUrls": [
+     "https://www.discogs.com/master/1434460",
+     "https://www.discogs.com/release/12625146",
+     "https://en.wikipedia.org/wiki/Wanda_Warska",
+     "https://en.wikipedia.org/wiki/Andrzej_Kurylewicz"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/8c/1e/21/8c1e21a5-9237-1c30-8228-743bd61b3bc8/mzaf_15571980585018155855.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-11-01T11:56:00Z",
+    "appleCollectionId": "1078629906",
+    "storefront": "JP",
+    "collectionExplicitness": "explicit",
+    "note": "Apple jp 1078629906「Andrzej Kurylewicz Quartet《Somnambulists》」：Trunk Records 2013 重發《Somnambulists》（Andrzej Kurylewicz Quartet）8 軌，逐軌對 Discogs release 12625146（Muza L 0348, 1961）8/8，順序相同，取第 1 軌〈Moonray〉。主線 2026-11-01 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "The Włodzimierz Nahorny Trio",
+   "album": "Heart",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "757b1d8c-dbd6-4f0f-851e-f6f8628cfccb",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "波蘭風琴／鋼琴三重奏／顫音：Polish Jazz Vol.15，Nahorny 鋼琴三重奏最完整的 60 年代錄音室作。｜⚠ MB 有兩個 RG：757b1d8c（1968，採用）與 9a0dd7e7-f9c2-41ec-8052-a770f5468899（1967）。｜MB release-group 757b1d8c-dbd6-4f0f-851e-f6f8628cfccb：title「Heart」、Album、first-release-date 1968、artist-credit「The Włodzimierz Nahorny Trio」。證據：https://www.discogs.com/master/317273 https://music.apple.com/pl/album/heart-polish-jazz-vol-15/1440504029 https://musicbrainz.org/release-group/757b1d8c-dbd6-4f0f-851e-f6f8628cfccb",
+    "queryAlias": "Włodzimierz Nahorny Trio Heart"
+   },
+   "research": {
+    "suggestedYear": 1968,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "source": "apple-verified-collection",
+    "collectionId": "1440504029",
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/3f/52/1f/3f521f44-bcd3-9e4f-bc69-e826fc487845/190296891236.jpg/600x600bb.jpg",
+    "note": "CAA 404；Apple jp《Heart (Polish Jazz, Vol. 15)》曲目命中 7/8，封面為 Polish Jazz 系列原盤版面。 Apple 專輯頁 https://music.apple.com/jp/album/heart-polish-jazz-vol-15/1440504029",
+    "appleCollectionId": "1440504029",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-01T11:56:00Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 272,
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽 ready → ≥4，L=272）3→4",
+    "previous": {
+     "classic": 3,
+     "obscurity": 3,
+     "accessibility": 3,
+     "source": "manual:rerate-20261101",
+     "checkedAt": "2026-11-01T00:00:00Z",
+     "note": "三軸重評（RUBRIC 2026-11-01）：Nahorny 首作、Polish Jazz Vol.15，原 2 偏低；Muza 國營；自由傾向器樂三重奏",
+     "rarity": "uncommon"
+    }
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 2、obscurity 3、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "Duke Ellington 在維也納親手把首獎頒給他。得獎的 Włodzimierz Nahorny 在索波特學豎笛出身，那座獎是 1967 年維也納業餘爵士節的個人首獎。同年 11 月他帶三重奏錄了這張，錄音地是華沙，1968 年 Muza 替它出了單聲道唱片。鋼琴和中音薩克斯風都由他包辦，八首全是自己寫的，貝斯手是 Jacek Ostaszewski，鼓手是 Sergiusz Perkowski。壓軸的是民謠曲調〈Na wysokiej cyrli〉。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/2072521",
+     "https://www.discogs.com/master/317273",
+     "https://polskabibliotekamuzyczna.pl/nahorny-wlodzimierz/?lang=en",
+     "https://pl.wikipedia.org/wiki/Polish_Jazz",
+     "https://musicbrainz.org/release-group/757b1d8c-dbd6-4f0f-851e-f6f8628cfccb"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview118/v4/a0/ad/c7/a0adc708-d61b-9161-cfc3-326d5691daa1/mzaf_2293787426546574094.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-11-01T11:56:00Z",
+    "appleCollectionId": "1440504029",
+    "storefront": "JP",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple jp 1440504029「The Włodzimierz Nahorny Trio《Heart (Polish Jazz, Vol. 15)》」：曲目 7/8 對上 MB 原盤（Apple 共 8 軌），取第 1 軌〈Ballada O Dwóch Serduszkach〉。主線 2026-11-01 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Jerzy Milian Trio",
+   "album": "Baazaar",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "eeb477f1-7284-42f2-bc5f-e6e5f0337900",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "波蘭風琴／鋼琴三重奏／顫音：Polish Jazz Vol.17，Milian 顫音琴三重奏的前衛 modal 作品，波蘭爵士中被 sample／crate 圈推崇的一張。｜⚠ 年份 MB／iTunes 1969，Discogs 1970；採 1969。｜MB release-group eeb477f1-7284-42f2-bc5f-e6e5f0337900：title「Baazaar」、Album、first-release-date 1969、artist-credit「Jerzy Milian Trio」。證據：https://www.discogs.com/master/306294 https://music.apple.com/pl/album/baazaar-polish-jazz-vol-17/1438910168 https://musicbrainz.org/release-group/eeb477f1-7284-42f2-bc5f-e6e5f0337900",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1969,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/eeb477f1-7284-42f2-bc5f-e6e5f0337900/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-01T11:56:00Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-01 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 787,
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽 ready → ≥4，L=787）3→4",
+    "previous": {
+     "classic": 4,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "manual:rerate-20261101",
+     "checkedAt": "2026-11-01T00:00:00Z",
+     "note": "三軸重評（RUBRIC 2026-11-01）：Milian 代表作、Polish Jazz Vol.17 掘盤名作；Muza 國營；顫音琴調式輕盈",
+     "rarity": "uncommon"
+    }
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "馬林巴琴與顫音琴領頭，長笛和女聲在旁點綴。Jerzy Milian 1956 至 1958 年在 Komeda 六重奏裡彈顫音琴，到了這張，他一人兼顧顫音琴和馬林巴。長笛手 Janusz Mych 是 Novi Singers 的創團成員，人聲則交給 Ewa Wanat。八首全由 Milian 寫，有〈Memory of Bach〉，也有描寫土庫曼市集的〈Bazar w Aszchabadzie〉。1969 年 6 月，唱片在華沙錄製，當年就發行。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/2683074",
+     "https://www.discogs.com/master/306294",
+     "https://en.wikipedia.org/wiki/Jerzy_Milian",
+     "https://pl.wikipedia.org/wiki/Polish_Jazz",
+     "https://musicbrainz.org/release-group/eeb477f1-7284-42f2-bc5f-e6e5f0337900"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/c0/a9/d1/c0a9d177-05b0-023f-19e2-2c9588aca9a9/mzaf_6409045214493653672.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-11-01T11:56:00Z",
+    "appleCollectionId": "1438910168",
+    "storefront": "JP",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple jp 1438910168「Jerzy Milian Trio《Baazaar (Polish Jazz, Vol. 17)》」：曲目 8/8 對上 MB 原盤（Apple 共 8 軌），取第 1 軌〈Memory of Bach〉。主線 2026-11-01 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Jazz Studio Orchestra of the Polish Radio",
+   "album": "Jazz Studio Orchestra of the Polish Radio",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "0418966c-aa83-4782-9d04-8b97c086b55b",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "波蘭大樂團：Polish Jazz Vol.19，波蘭電台爵士工作室大樂團，匯集 60–70 年代主力作曲編曲者的錄音室專輯。｜策展無疑點｜MB release-group 0418966c-aa83-4782-9d04-8b97c086b55b：title「Jazz Studio Orchestra Of The Polish Radio」、Album、first-release-date 1970、artist-credit「Jazz Studio Orchestra Of The Polish Radio」。證據：https://www.discogs.com/master/811264 https://music.apple.com/pl/album/jazz-studio-orchestra-of-the-polish-radio-polish-jazz-vol-19/1473813443 https://musicbrainz.org/release-group/0418966c-aa83-4782-9d04-8b97c086b55b",
+    "queryAlias": "Studio Jazzowe Polskiego Radia",
+    "selfTitledVerified": true
+   },
+   "research": {
+    "suggestedYear": 1970,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "source": "apple-verified-collection",
+    "collectionId": "1473813443",
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/d3/d2/12/d3d21238-1615-fd02-cde2-89cc748eecc4/190296866098.jpg/600x600bb.jpg",
+    "note": "CAA 404；Apple 已核對條目（曲目 9/9，封面印 XL 0341 Jan Ptaszyn Wróblewski 領軍）。 Apple 專輯頁 https://music.apple.com/jp/album/jazz-studio-orchestra-of-the-polish-radio-polish-jazz-vol-19/1473813443",
+    "appleCollectionId": "1473813443",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-01T11:56:00Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 29,
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽 ready → ≥4，L=29）3→4",
+    "previous": {
+     "classic": 3,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "manual:rerate-20261101",
+     "checkedAt": "2026-11-01T00:00:00Z",
+     "note": "三軸重評（RUBRIC 2026-11-01）：Polish Jazz Vol.19 電台大樂團，系列中段；Muza 國營；拉丁打擊大樂團",
+     "rarity": "rare"
+    }
+   },
+   "rarity": "common",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "Komeda 過世半年後，電台大樂團錄下他的搖籃曲。22 人的樂團由 Jan Ptaszyn Wróblewski 指揮，B 面收進 Komeda 替電影《Rosemary's Baby》寫的主題〈Kołysanka〉（搖籃曲）。Komeda 1969 年 4 月 23 日於華沙辭世，同年 10 月樂團進了錄音室。Tomasz Stańko 除了小號還吹 mellophone，打擊樂則添了 conga 與 bongo。唱片到 1970 年才上市。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/2291563",
+     "https://www.discogs.com/master/811264",
+     "https://en.wikipedia.org/wiki/Krzysztof_Komeda",
+     "https://pl.wikipedia.org/wiki/Polish_Jazz",
+     "https://musicbrainz.org/release-group/0418966c-aa83-4782-9d04-8b97c086b55b"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview113/v4/2a/f2/3f/2af23f95-d810-fe0a-99c9-667339f8da02/mzaf_3038121611442015898.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-11-01T11:56:00Z",
+    "appleCollectionId": "1473813443",
+    "storefront": "JP",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple jp 1473813443「Jazz Studio Orchestra Of The Polish Radio《Jazz Studio Orchestra of the Polish Radio (Polish Jazz, Vol. 19)》」：曲目 9/9 對上 MB 原盤（Apple 共 9 軌），取第 1 軌〈The Opener (feat. Włodzimierz Nahorny)〉。主線 2026-11-01 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Krzysztof Komeda",
+   "album": "Ballet Etudes",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "5f4ba72c-7ac3-482c-a106-9ace8190db3e",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "波蘭 Polish Jazz 主流／modal／cool：Komeda 在丹麥 Metronome 錄的國際五重奏專輯，歐洲爵士史上少數早期 Komeda 正規錄音室作，池中尚未收。｜⚠ MB 另有 Ballet Etudes（1995 重發）5b41de30-237e-4b7a-abf2-202c0d31cd8a；採 1963 原盤那筆。｜MB release-group 5f4ba72c-7ac3-482c-a106-9ace8190db3e：title「Ballet Etudes / The Music of Komeda - A Jazz Message From Poland Presented by an International Quintet」、Album、first-release-date 1963-05-03、artist-credit「Krzysztof Komeda」。證據：https://www.discogs.com/master/804910 https://music.apple.com/pl/album/ballet-etudes-the-music-of-komeda-a-jazz/1251998342 https://musicbrainz.org/release-group/5f4ba72c-7ac3-482c-a106-9ace8190db3e",
+    "queryAlias": "Ballet Etudes / The Music of Komeda - A Jazz Message From Poland Presented by an International Quintet"
+   },
+   "research": {
+    "suggestedYear": 1963,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/5f4ba72c-7ac3-482c-a106-9ace8190db3e/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-01T11:56:00Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-01 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 690,
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽 ready → ≥4，L=690）3→4",
+    "previous": {
+     "classic": 4,
+     "obscurity": 3,
+     "accessibility": 3,
+     "source": "manual:rerate-20261101",
+     "checkedAt": "2026-11-01T00:00:00Z",
+     "note": "三軸重評（RUBRIC 2026-11-01）：Komeda 最早西方錄音、組曲代表作；丹麥 Metronome 正規小量；四樂章器樂組曲",
+     "rarity": "uncommon"
+    }
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 4、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "在華沙遭冷淡以對的組曲，帶著他走進歐洲。Krzysztof Komeda 本名 Krzysztof Trzciński，彈鋼琴，四樂章的〈Ballet Etudes〉原是他為 1962 年華沙 Jazz Jamboree 所寫，冷眼看它的是國內樂評。1963 年 5 月 3 日進哥本哈根的 Metronome 棚內，他帶的是一支國際五重奏。組曲占去 A 面約 22 分鐘，B 面則是〈Crazy Girl〉與〈Alea〉。",
+    "sourceUrls": [
+     "https://www.discogs.com/master/804910",
+     "https://www.jazzdisco.org/krzysztof-komeda/discography/session-index/",
+     "https://en.wikipedia.org/wiki/Krzysztof_Komeda",
+     "https://www.discogs.com/release/4061872",
+     "https://www.forcedexposure.com/CATALOG/HONEY.091LP.html",
+     "https://musicbrainz.org/release-group/5f4ba72c-7ac3-482c-a106-9ace8190db3e"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/c9/49/67/c949673a-24a7-18d4-a7af-fa0cbf410847/mzaf_12807647970549894820.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-11-01T11:56:00Z",
+    "appleCollectionId": "1251998342",
+    "storefront": "JP",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple jp 1251998342「Krzysztof Komeda《Ballet Etudes - The Music Of Komeda: A Jazz Message From Poland Presented By An International Quintet》」：曲目 3/3 對上 MB 原盤（Apple 共 3 軌），取第 1 軌〈Ballet Etudes 1-4〉。主線 2026-11-01 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Janusz Zabiegliński",
+   "album": "Janusz Zabiegliński and His Swingtet",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "ab1fd068-8baa-4c88-90ef-e7b1a26ffd21",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "波蘭 Polish Jazz 主流／modal／cool：Polish Jazz Vol.9，波蘭 mainstream swing 的代表，與 modal／前衛路線對照。｜策展無疑點｜MB release-group ab1fd068-8baa-4c88-90ef-e7b1a26ffd21：title「Janusz Zabiegliński and His Swingtet」、Album、first-release-date 1967、artist-credit「Janusz Zabiegliński and His Swingtet」。證據：https://www.discogs.com/master/950178 https://music.apple.com/pl/album/janusz-zabiegli%C5%84ski-and-his-swingtet-polish-jazz-vol-9/1437547439 https://musicbrainz.org/release-group/ab1fd068-8baa-4c88-90ef-e7b1a26ffd21",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1967,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "source": "apple-verified-collection",
+    "collectionId": "1437547439",
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/75/52/41/755241c5-3c4b-49b5-0d31-478d37840014/190296895630.jpg/600x600bb.jpg",
+    "note": "CAA 404；Apple 條目曲目命中 12/13，封面為 Polish Jazz Vol. 9 原盤版面（XL 0337）。 Apple 專輯頁 https://music.apple.com/jp/album/janusz-zabiegli%C5%84ski-and-his-swingtet-polish-jazz-vol-9/1437547439",
+    "appleCollectionId": "1437547439",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-01T11:56:00Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 1,
+    "listeners": 38,
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽 ready → ≥4，L=38）3→4",
+    "previous": {
+     "classic": 3,
+     "obscurity": 3,
+     "accessibility": 1,
+     "source": "manual:rerate-20261101",
+     "checkedAt": "2026-11-01T00:00:00Z",
+     "note": "三軸重評（RUBRIC 2026-11-01）：Polish Jazz Vol.9 搖擺樂；Muza 國營；短曲 swing 親切",
+     "rarity": "rare"
+    }
+   },
+   "rarity": "common",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "本行是土木工程師，也吹豎笛帶著自己的 Swingtet。Janusz Zabiegliński 生於 Pabianice，從華沙工大畢業，1958 年隨 Hot Club Melomani 登上華沙愛樂廳的首場爵士音樂會。Swingtet 共六人，他除了豎笛還兼中音薩克斯風，其餘五人分掌顫音琴、吉他和節奏組。13 首短曲分兩段錄成，1966 年 5 月一次、11 月一次，地點華沙，單聲道黑膠在 1967 年上市。1969 年，他前往伊拉克當了三年營建工程師。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/2117515",
+     "https://pl.wikipedia.org/wiki/Polish_Jazz",
+     "https://pl.wikipedia.org/wiki/Janusz_Zabiegliński",
+     "https://www.discogs.com/master/950178",
+     "https://musicbrainz.org/release-group/ab1fd068-8baa-4c88-90ef-e7b1a26ffd21"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/12/68/2d/12682d84-e5a0-87fe-4007-42e74ea4424b/mzaf_16675497051592459534.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-11-01T11:56:00Z",
+    "appleCollectionId": "1437547439",
+    "storefront": "JP",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple jp 1437547439「Janusz Zabiegliński Swingtet《Janusz Zabiegliński And His Swingtet (Polish Jazz vol. 9)》」：曲目 12/13 對上 MB 原盤（Apple 共 13 軌），取第 1 軌〈Wieczor w Stodole〉。主線 2026-11-01 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Wojciech Karolak, Michał Urbaniak & Czesław Bartkowski",
+   "album": "Moving South",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "manual",
+    "rgMbid": "",
+    "upc": "",
+    "aliasesChecked": true,
+    "mbAbsenceProof": {
+     "queries": [
+      {
+       "query": "releasegroup:\"Moving South\"",
+       "count": 1,
+       "topTitles": [
+        "Moving South｜Southside Movement"
+       ]
+      },
+      {
+       "query": "artist:\"Wojciech Karolak, Michał Urbaniak & Czesław Bartkowski\" AND releasegroup:\"Moving South\"",
+       "count": 0,
+       "topTitles": []
+      },
+      {
+       "query": "releasegroup:\"Podróż na południe\"",
+       "count": 0,
+       "topTitles": []
+      }
+     ],
+     "checkedAt": "2026-11-01",
+     "conclusion": "MusicBrainz release-group 以盤名、藝人＋盤名、別名查詢，無本盤條目。MusicBrainz 查 Podróż na południe／Moving South 無對應（僅 Southside Movement 同名他作）；Discogs master 389551 有 1973 Pronit。"
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/master/389551",
+     "https://www.discogs.com/release/3252185"
+    ],
+    "manualRuling": "雲端主線 2026-11-01 依 ALBUM_ONBOARDING §1 人工身分核可（店主 2026-09-02 裁定權下放；薄細項策展線 add-20261101-eb3）",
+    "coverSourceHint": "discogs",
+    "aliasReview": "波蘭 Polish Jazz 主流／modal／cool：Karolak 管風琴領軍的三人錄音室作（原名 Podróż na południe），波蘭 70 年代初 Hammond groove 小品。｜⚠ 1973 剛好與 eb3b 的 Karolak 70s 銜接；Karolak 其餘盤歸 eb3b，此張可被主線取捨。｜MB 查無（），走 §1 人工身分。證據：https://www.discogs.com/master/389551 https://www.discogs.com/release/3252185 https://www.discogs.com/master/389551 https://music.apple.com/pl/album/moving-south/1599603167",
+    "queryAlias": "Podróż na południe"
+   },
+   "research": {
+    "suggestedYear": 1973,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "source": "discogs",
+    "discogsReleaseId": "3252185",
+    "url": "https://i.discogs.com/Xp91_wEfY34B0sSN_afWfHOGzJs_Dupq1Te71yMjIZ4/rs:fit/g:sm/q:90/h:599/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMyNTIx/ODUtMTQwMTM5MzY1/NS03MTM5LmpwZWc.jpeg",
+    "note": "manual 身分無 CAA；Discogs release 3252185：目錄號 Z-SXL 0551、年份 1973、廠牌 Pronit、盤名 Podróż Na Południe - Moving South 皆對上（master 389551 原版 LP）；取該 release images[0]（原盤封面）。",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-01T11:56:00Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 2,
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：三巨頭合作的俱樂部限定盤；PSJ 會員系列通路極窄，沿用 4；風琴電小提琴環形調變",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 3,
+     "source": "manual:regional-rubric",
+     "checkedAt": "2026-11-01T11:56:00Z",
+     "note": "機器基線 3/5/3（Last.fm listeners 2）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 地區錨點制：Pronit 壓製的波蘭爵士協會俱樂部 Biały Kruk 系列，原盤流通有限、未見授權串流再發；Last.fm 2 偏英語圈不採",
+     "rarity": "uncommon"
+    }
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "Hammond 風琴、電小提琴與鼓，三個人一天錄完。風琴手 Wojciech Karolak 那年剛有自己的 Hammond B3，錄音的日子是 1973 年 5 月 29 日。Karolak 兼彈 Hammond 與 Farfisa，電小提琴交給 Michał Urbaniak，Czesław Bartkowski 打鼓，名單上沒有貝斯手。ring modulator 與 phasing 兩種效果，唱片註明由英國的 Brian M. Taylor 處理。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/3252185",
+     "https://pl.wikipedia.org/wiki/Wojciech_Karolak",
+     "https://en.wikipedia.org/wiki/Michał_Urbaniak",
+     "https://pl.wikipedia.org/wiki/Czesław_Bartkowski",
+     "https://www.discogs.com/master/389551"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/53/e3/5c/53e35ca5-c8db-8acb-a33f-83fae2426a06/mzaf_10758573689814508071.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-11-01T11:56:00Z",
+    "appleCollectionId": "1599603167",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1599603167「Wojciech Karolak, Michał Urbaniak & Czesław Bartkowski《Moving South》」：Black Beard Records《Moving South》5 軌（℗1973），逐軌對 Discogs release 3252185（Pronit Z-SXL 0551）5/5，取第 1 軌〈Suita O Siedmiu Zbójach (Seven Brigands Story - Suite-A)〉。主線 2026-11-01 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Michał Urbaniak Group",
+   "album": "Paratyphus B",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "f4767fbf-ae5b-45b8-9e9b-2fdecdb7451b",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "波蘭融合／爵士放克：Urbaniak 離開波蘭前的電子小提琴融合代表作，德國 Spiegelei 發行，後世稀有融合盤的標竿。｜⚠ MB 掛名 Michal Urbaniak Group（無變音符號）；卡名用 Michał Urbaniak Group。同組 Inactin 同一藝人名。｜MB release-group f4767fbf-ae5b-45b8-9e9b-2fdecdb7451b：title「Paratyphus B」、Album、first-release-date 1973、artist-credit「Michal Urbaniak Group」。證據：https://www.discogs.com/master/938854 https://musicbrainz.org/release-group/f4767fbf-ae5b-45b8-9e9b-2fdecdb7451b https://coverartarchive.org/release-group/f4767fbf-ae5b-45b8-9e9b-2fdecdb7451b https://music.apple.com/pl/album/paratyphus-b/1355394963",
+    "queryAlias": "Michal Urbaniak Group"
+   },
+   "research": {
+    "suggestedYear": 1973,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "source": "apple-verified-collection",
+    "collectionId": "1355394963",
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/25/c8/48/25c848df-5c18-b013-d1e9-63da571b7e49/191924093770.jpg/600x600bb.jpg",
+    "note": "CAA 404；Apple us 條目（5 軌含 bonus，命中 MB 4/4），封面為樂手戶外合照的原盤圖，目視盤名相符。 Apple 專輯頁 https://music.apple.com/us/album/paratyphus-b/1355394963",
+    "appleCollectionId": "1355394963",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-01T11:56:00Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 10,
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽 ready → ≥4，L=10）3→4",
+    "previous": {
+     "classic": 3,
+     "obscurity": 3,
+     "accessibility": 3,
+     "source": "manual:rerate-20261101",
+     "checkedAt": "2026-11-01T00:00:00Z",
+     "note": "三軸重評（RUBRIC 2026-11-01）：Urbaniak 西德時期作，非首選；Spiegelei 正規小廠；兩首長曲融合即興",
+     "rarity": "uncommon"
+    }
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "移居美國那年，Urbaniak 帶著樂團在西德出了這張。Michał Urbaniak 6 歲學小提琴，這裡拉電小提琴。發片的是西德 Spiegelei，時間 1973 年，它被列為這個團最早的國外專輯之一。團裡有唱人聲的 Urszula Dudziak，也有坐在電鋼琴前的 Adam Makowicz。五首全出自 Urbaniak 筆下，光是〈Valium〉與〈Sound Pieces〉兩首就占去約 27 分鐘。同年 9 月 11 日他便和 Dudziak 一起搬到美國。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/2338531",
+     "https://pl.wikipedia.org/wiki/Michał_Urbaniak",
+     "https://en.wikipedia.org/wiki/Urszula_Dudziak",
+     "https://www.discogs.com/master/938854",
+     "https://musicbrainz.org/release-group/f4767fbf-ae5b-45b8-9e9b-2fdecdb7451b"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview118/v4/11/0f/75/110f7584-c40b-8aca-2272-b92a94a1205f/mzaf_5119856451722081337.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-11-01T11:56:00Z",
+    "appleCollectionId": "1355394963",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1355394963「Michał Urbaniak《Paratyphus B》」：曲目 4/4 對上 MB 原盤（Apple 共 5 軌），取第 1 軌〈Paratyphus B〉。主線 2026-11-01 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Michał Urbaniak Group",
+   "album": "Inactin",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "602d4348-5d0c-4209-a45b-cdbd86de6760",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "波蘭自由／實驗：與 Paratyphus B 同年的另一高峰，更偏自由即興與電聲實驗，是波蘭自由／融合交界的重要盤。｜⚠ MB 首發年 1973，部分資料記 1972；從 MB/Discogs 取 1973。｜MB release-group 602d4348-5d0c-4209-a45b-cdbd86de6760：title「Inactin」、Album、first-release-date 1973、artist-credit「Michał Urbaniak Group」。證據：https://www.discogs.com/master/496184 https://musicbrainz.org/release-group/602d4348-5d0c-4209-a45b-cdbd86de6760 https://coverartarchive.org/release-group/602d4348-5d0c-4209-a45b-cdbd86de6760",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1973,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/602d4348-5d0c-4209-a45b-cdbd86de6760/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-01T11:56:00Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-01 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 12,
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽 ready → ≥4，L=12）3→4",
+    "previous": {
+     "classic": 4,
+     "obscurity": 3,
+     "accessibility": 3,
+     "source": "manual:rerate-20261101",
+     "checkedAt": "2026-11-01T00:00:00Z",
+     "note": "三軸重評（RUBRIC 2026-11-01）：Urbaniak 歐洲時期評價最高之一；Spiegelei 正規小廠；自由傾向融合",
+     "rarity": "uncommon"
+    }
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "她的人聲接上一台 Echocord 回聲機。唱的是 Michał Urbaniak Group 的 Urszula Dudziak，那台效果器的全名是 Dynacord Echocord。錄音室是斯圖加特的 Horst-Jankowski-Studio，唱片由 Spiegelei 在 1973 年於西德推出。Urbaniak 拉的電小提琴裝了 Barcus Berry 拾音器，Adam Makowicz 則彈 Clavinet。作曲欄的七首都是 Urbaniak。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/2644289",
+     "https://www.discogs.com/master/496184",
+     "https://pl.wikipedia.org/wiki/Michał_Urbaniak",
+     "https://en.wikipedia.org/wiki/Urszula_Dudziak",
+     "https://musicbrainz.org/release-group/602d4348-5d0c-4209-a45b-cdbd86de6760"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/Music/v4/30/45/77/304577bd-186d-0f5f-2f58-513300615707/mzaf_7798647571231270316.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-11-01T11:56:00Z",
+    "appleCollectionId": "836216320",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 836216320「Michał Urbaniak《Inactin (Special Edition)》」：曲目 7/7 對上 MB 原盤（Apple 共 7 軌），取第 1 軌〈Inactin (Special Edition)〉。主線 2026-11-01 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Zbigniew Namysłowski Quintet",
+   "album": "Kujaviak Goes Funky",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "0de26f58-0f14-4ce9-9a91-14b3b6bdce2d",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "波蘭融合／爵士放克：Polish Jazz 系列 Vol.46，把庫雅維亞民謠旋律接上放克，是波蘭融合最常被推薦的一張。｜策展無疑點｜MB release-group 0de26f58-0f14-4ce9-9a91-14b3b6bdce2d：title「Kujaviak Goes Funky」、Album、first-release-date 1975、artist-credit「Zbigniew Namysłowski Quintet」。證據：https://www.discogs.com/master/322675 https://musicbrainz.org/release-group/0de26f58-0f14-4ce9-9a91-14b3b6bdce2d https://coverartarchive.org/release-group/0de26f58-0f14-4ce9-9a91-14b3b6bdce2d",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1975,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/0de26f58-0f14-4ce9-9a91-14b3b6bdce2d/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-01T11:56:00Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-01 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 5,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 133,
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽 ready → ≥4，L=133）3→4",
+    "previous": {
+     "classic": 5,
+     "obscurity": 3,
+     "accessibility": 3,
+     "source": "manual:rerate-20261101",
+     "checkedAt": "2026-11-01T00:00:00Z",
+     "note": "三軸重評（RUBRIC 2026-11-01）：Polish Jazz Vol.46、波蘭民謠融合爵士的公認里程碑；Muza 國營；20 分鐘長曲加放克律動",
+     "rarity": "epic"
+    }
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 4、obscurity 3、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "Kujawy 民間舞曲碰上放克，A 面就這一首 20 分鐘。作曲者是華沙人、中音薩克斯風手 Zbigniew Namysłowski，他慣用波蘭民間舞蹈的音階與節奏結構，寫出類民謠的旋律。曲名借自 kujawiak，那是 Kujawy 一帶的鄉間舞曲，同名曲實長 20 分 15 秒。五重奏於 1975 年 3 月進華沙灌錄，Tomasz Szukalski 吹高音與次中音薩克斯風，Wojciech Karolak 彈電鋼琴。翻到 B 面，則是三首 6 到 7 分鐘的曲子。",
+    "sourceUrls": [
+     "https://pl.wikipedia.org/wiki/Polish_Jazz",
+     "https://www.discogs.com/release/561367",
+     "https://polskabibliotekamuzyczna.pl/namyslowski-zbigniew/?lang=en",
+     "https://en.wikipedia.org/wiki/Zbigniew_Namysłowski",
+     "https://pl.wikipedia.org/wiki/Tomasz_Szukalski",
+     "https://pl.wikipedia.org/wiki/Czesław_Bartkowski",
+     "https://www.discogs.com/master/322675",
+     "https://musicbrainz.org/release-group/0de26f58-0f14-4ce9-9a91-14b3b6bdce2d"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview114/v4/54/79/4f/54794fef-27ac-5f25-990c-51ad5d6a9eff/mzaf_10498617801951019712.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-11-01T11:56:00Z",
+    "appleCollectionId": "1438895840",
+    "storefront": "JP",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple jp 1438895840「Zbigniew Namysłowski Quintet《Kujaviak Goes Funky (Polish Jazz, Vol. 46)》」：Polskie Nagrania《Kujaviak Goes Funky (Polish Jazz, Vol. 46)》4 軌，曲名採英譯，逐位置對 MB 4/4，℗1975，取第 1 軌〈Kujaviak Goes Funky〉。主線 2026-11-01 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Zbigniew Namysłowski",
+   "album": "Zbigniew Namysłowski",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "098d8104-a068-4e58-920e-2291ce6f885c",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "波蘭融合／爵士放克：Namysłowski 70 年代融合高峰之二（iTunes 標題 Namysłowski），爵士搖滾與放克，與 Kujaviak 風格不同。｜⚠ 同名自題專輯，注意去重只看 album 名；不是 1978 的《Namysłowski》（iTunes 另列）。｜MB release-group 098d8104-a068-4e58-920e-2291ce6f885c：title「Zbigniew Namysłowski」、Album、first-release-date 1977、artist-credit「Zbigniew Namysłowski」。證據：https://www.discogs.com/master/530584 https://musicbrainz.org/release-group/098d8104-a068-4e58-920e-2291ce6f885c https://coverartarchive.org/release-group/098d8104-a068-4e58-920e-2291ce6f885c",
+    "queryAlias": "",
+    "selfTitledVerified": true
+   },
+   "research": {
+    "suggestedYear": 1977,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/098d8104-a068-4e58-920e-2291ce6f885c/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-01T11:56:00Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-01 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 397,
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽 ready → ≥4，L=397）3→4",
+    "previous": {
+     "classic": 3,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "manual:rerate-20261101",
+     "checkedAt": "2026-11-01T00:00:00Z",
+     "note": "三軸重評（RUBRIC 2026-11-01）：非其代表作（Winobranie／Kujaviak 才是）；Muza 國營發行；爵士搖滾放克，旋律民謠化",
+     "rarity": "rare"
+    }
+   },
+   "rarity": "common",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "鋼琴、貝斯、鼓三位，同年也是另一支四重奏的班底。領頭的 Zbigniew Namysłowski 吹薩克斯風，作曲、編曲還兼任指揮。鋼琴是 Kulpowicz，貝斯是 Jarzębski，鼓是 Stefański，三人同屬 Szukalski 1977 年共組的 The Quartet。另有 Marek Bliziński 的吉他，還有一支樂團加入。六首裡最長的是 9 分 14 秒的〈Przejażdżka na UFO〉。這張 1977 年以立體聲 LP 推出。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/685529",
+     "https://www.discogs.com/master/530584",
+     "https://pl.wikipedia.org/wiki/Tomasz_Szukalski",
+     "https://polskabibliotekamuzyczna.pl/namyslowski-zbigniew/?lang=en",
+     "https://pl.wikipedia.org/wiki/Zbigniew_Namysłowski",
+     "https://musicbrainz.org/release-group/098d8104-a068-4e58-920e-2291ce6f885c"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/21/ab/e6/21abe693-9cc6-0886-cd04-ebd1a12ec120/mzaf_13959554131821945746.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-11-01T11:56:00Z",
+    "appleCollectionId": "1485584011",
+    "storefront": "JP",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple jp 1485584011「Zbigniew Namysłowski《Zbigniew Namysłowski》」：Polskie Nagrania《Zbigniew Namysłowski》6 軌（℗1977），Apple 用波蘭文曲名，逐位置對 MB 6/6；非 1978 年《Namysłowski》（1193783943）也非 Radio Archives，取第 1 軌〈Pod dobrą godziną〉。主線 2026-11-01 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Wojciech Karolak",
+   "album": "Easy!",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "1fa450a9-e457-4593-9bfe-dd96137c1f7c",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "波蘭融合／爵士放克：Karolak 的 Hammond／電鋼琴爵士放克代表作，Discogs 與歐洲 rare groove 圈長年追捧的波蘭融合盤。｜⚠ iTunes 標 1974，MB/Discogs 為 1975，取 1975；MB 無 CAA 封面，封面取 Discogs master 圖。｜MB release-group 1fa450a9-e457-4593-9bfe-dd96137c1f7c：title「Easy!」、Album、first-release-date 1975、artist-credit「Wojciech Karolak」。證據：https://www.discogs.com/master/302948 https://musicbrainz.org/release-group/1fa450a9-e457-4593-9bfe-dd96137c1f7c https://coverartarchive.org/release-group/1fa450a9-e457-4593-9bfe-dd96137c1f7c https://www.discogs.com/release/614100",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1975,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "source": "apple-verified-collection",
+    "collectionId": "1447285381",
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/00/22/5b/00225b21-660c-9b22-0919-9c2caebf0276/190296886065.jpg/600x600bb.jpg",
+    "note": "CAA 404；Apple 已核對條目（曲目 8/8，封面為 EASY! 對話框與頭像拼貼原盤圖）。 Apple 專輯頁 https://music.apple.com/jp/album/easy/1447285381",
+    "appleCollectionId": "1447285381",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-01T11:56:00Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 4228,
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：Karolak 代表作、波蘭 jazz-funk 稀有律動名盤；Muza 國營；Hammond 放克律動好入耳",
+    "previous": {
+     "classic": 3,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "manual:regional-rubric",
+     "checkedAt": "2026-11-01T11:56:00Z",
+     "note": "機器基線 3/4/2（Last.fm listeners 4228）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 地區錨點制：Polish Jazz／Muza 國營廠正規發行、Warner 重發進串流，屬「該語言圈一線作品、圈外幾乎無人知」；Last.fm 4228 偏英語圈不採",
+     "rarity": "rare"
+    }
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "作曲、製作、封套文字，都由這位風琴手自己來。Wojciech Karolak 1966 年曾去瑞典的俱樂部彈琴，這張他彈 Hammond、Farfisa 風琴與 Fender 電鋼琴。1974 年 1 月錄製於華沙，唱片隔年才出版。銅管名單裡有 Tomasz Stańko 與 Zbigniew Namysłowski，指揮是 Jan Ptaszyn Wróblewski，Novi Singers 的合唱再疊在上面。八首各 4 到 7 分鐘，走的是爵士放克。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/614100",
+     "https://www.discogs.com/master/302948",
+     "https://pl.wikipedia.org/wiki/Wojciech_Karolak",
+     "https://pl.wikipedia.org/wiki/Polish_Jazz",
+     "https://pl.wikipedia.org/wiki/Czesław_Bartkowski",
+     "https://musicbrainz.org/release-group/1fa450a9-e457-4593-9bfe-dd96137c1f7c"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/27/15/3f/27153fab-d52f-ad80-7061-f76aed167e03/mzaf_16124752622584496106.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-11-01T11:56:00Z",
+    "appleCollectionId": "1447285381",
+    "storefront": "JP",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple jp 1447285381「Wojciech Karolak《Easy!》」：曲目 8/8 對上 MB 原盤（Apple 共 8 軌），取第 1 軌〈A Day in the City〉。主線 2026-11-01 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Krzysztof Sadowski",
+   "album": "Three Thousands Points",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "64bba72d-14a8-4e72-b853-1342c7c90b83",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "波蘭融合／爵士放克：Hammond 風琴大師 Sadowski 的爵士搖滾轉型作，Polish Jazz 系列。｜策展無疑點｜MB release-group 64bba72d-14a8-4e72-b853-1342c7c90b83：title「Three Thousands Points」、Album、first-release-date 1975、artist-credit「Krzysztof Sadowski And His Group」。證據：https://www.discogs.com/master/463078 https://musicbrainz.org/release-group/64bba72d-14a8-4e72-b853-1342c7c90b83 https://coverartarchive.org/release-group/64bba72d-14a8-4e72-b853-1342c7c90b83",
+    "queryAlias": "Krzysztof Sadowski And His Group"
+   },
+   "research": {
+    "suggestedYear": 1975,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/64bba72d-14a8-4e72-b853-1342c7c90b83/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-01T11:56:00Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-01 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 30,
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽非 ready → 5，L=30）3→5",
+    "previous": {
+     "classic": 4,
+     "obscurity": 3,
+     "accessibility": 3,
+     "source": "manual:rerate-20261101",
+     "checkedAt": "2026-11-01T00:00:00Z",
+     "note": "三軸重評（RUBRIC 2026-11-01）：Polish Jazz 系列第47卷、Sadowski 代表作；Muza；A 面 21 分長組曲電氣爵士",
+     "rarity": "uncommon"
+    }
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "寫流行歌的人，把 Hammond 接上環形調變器。唱片署名 Krzysztof Sadowski and His Group，這位爵士風琴手也替 Irena Santor 等歌手寫歌。他最廣為人知的歌曲之一〈Ten nasz zwyczajny świat〉就收在 B 面。A 面整面是長 21 分 36 秒的〈Suita Trzy Tysiące〉，B 面則在隔年移到華沙愛樂廳錄。那台調變器接在他彈的 Hammond 上，替風琴染出一層電子音色。",
+    "sourceUrls": [
+     "https://pl.wikipedia.org/wiki/Polish_Jazz",
+     "https://www.discogs.com/release/588096",
+     "https://pl.wikipedia.org/wiki/Krzysztof_Sadowski_(kompozytor)",
+     "https://www.discogs.com/master/463078",
+     "https://musicbrainz.org/release-group/64bba72d-14a8-4e72-b853-1342c7c90b83"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-01T11:56:00Z",
+    "note": "查過 jp／us／pl／de：Sadowski 藝人目錄只有 1970《and His Hammond Organ (Polish Jazz Vol. 21)》與 1972《Na kosmodromie》，專輯搜尋 Three Thousands Points 無結果，無 1975 SX 1277 本盤。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Grupa Organowa Krzysztofa Sadowskiego",
+   "album": "Na kosmodromie",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "a96b835b-9e42-46f8-8d28-6e8db50a4ac2",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "波蘭融合／爵士放克：Sadowski 風琴團早期的爵士放克，波蘭稀有 groove 盤，與 Three Thousands Points 是不同時期的高峰。｜⚠ 藝人名為樂團名，與 Krzysztof Sadowski 互為子字串 Sadowski 重疊（同人兩張）。｜MB release-group a96b835b-9e42-46f8-8d28-6e8db50a4ac2：title「Na Kosmodromie」、Album、first-release-date 1972、artist-credit「Grupa Organowa Krzysztofa Sadowskiego」。證據：https://www.discogs.com/master/789638 https://musicbrainz.org/release-group/a96b835b-9e42-46f8-8d28-6e8db50a4ac2 https://coverartarchive.org/release-group/a96b835b-9e42-46f8-8d28-6e8db50a4ac2",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1972,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/a96b835b-9e42-46f8-8d28-6e8db50a4ac2/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-01T11:56:00Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-01 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 240,
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽 ready → ≥4，L=240）3→4",
+    "previous": {
+     "classic": 4,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "manual:rerate-20261101",
+     "checkedAt": "2026-11-01T00:00:00Z",
+     "note": "三軸重評（RUBRIC 2026-11-01）：波蘭風琴 jazz-funk 收藏名盤、Sadowski 招牌；Pronit 國營；風琴放克有人聲",
+     "rarity": "uncommon"
+    }
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "放下鋼琴、改彈 Hammond 風琴，是 1968 年的事。Krzysztof Sadowski 的 Grupa Organowa 走爵士放克，這支樂團就是他改彈風琴之後組的。在那之前，他在 Ptaszyn Wróblewski 等人的團裡彈鋼琴。七人編制 1972 年 3 月到華沙錄成這張：風琴領頭，電貝斯、鼓與康加鼓墊底，上面疊小號、中音薩克斯風、長笛。唱歌兼吹長笛的 Liliana Urbańska 是他的妻子。標題曲的意思是「在太空發射場」。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/6240204",
+     "https://pl.wikipedia.org/wiki/Krzysztof_Sadowski_(kompozytor)",
+     "https://www.discogs.com/master/789638",
+     "https://musicbrainz.org/release-group/a96b835b-9e42-46f8-8d28-6e8db50a4ac2"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/a0/b9/df/a0b9dfb0-a6c1-cdc8-ed9e-061511b4cee8/mzaf_1615053268290276353.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-11-01T11:56:00Z",
+    "appleCollectionId": "1613192475",
+    "storefront": "JP",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple jp 1613192475「Grupa Organowa Krzysztofa Sadowskiego & Krzysztof Sadowski《Na kosmodromie》」：曲目 5/6 對上 MB 原盤（Apple 共 6 軌），取第 1 軌〈Na kosmodromie〉。主線 2026-11-01 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Extra Ball",
+   "album": "Birthday",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "497af0f1-2881-4094-baff-60eafb97e796",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "波蘭融合／爵士放克：Extra Ball 的 Polish Jazz 系列首作，波蘭爵士搖滾／融合新生代的起點。｜策展無疑點｜MB release-group 497af0f1-2881-4094-baff-60eafb97e796：title「Birthday」、Album、first-release-date 1976、artist-credit「Extra Ball」。證據：https://www.discogs.com/master/302205 https://musicbrainz.org/release-group/497af0f1-2881-4094-baff-60eafb97e796 https://coverartarchive.org/release-group/497af0f1-2881-4094-baff-60eafb97e796",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1976,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/497af0f1-2881-4094-baff-60eafb97e796/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-01T11:56:00Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-01 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 720,
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽 ready → ≥4，L=720）3→4",
+    "previous": {
+     "classic": 3,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "manual:rerate-20261101",
+     "checkedAt": "2026-11-01T00:00:00Z",
+     "note": "三軸重評（RUBRIC 2026-11-01）：Polish Jazz 48、Śmietana 早期首作；Muza；抒情融合爵士",
+     "rarity": "rare"
+    }
+   },
+   "rarity": "common",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 2、obscurity 3、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "誕生，正是開場曲〈Narodziny〉的意思。Extra Ball 由卡托維治音樂學院的學生 1974 年在克拉科夫組成，同一年就在弗羅茨瓦夫的學生爵士節 Jazz nad Odrą 首次登台，拿下第二名，隔年再奪團體第一名。唱片以開場曲命名為《Birthday》，那首一拉就是 10 分 05 秒。五人編制：Śmietana 彈吉他，Sendecki 管電鋼琴、合成器，另有貝斯與薩克斯風，打擊樂只有 Radecki 一人。LP 於 1976 年發行。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/663625",
+     "https://pl.wikipedia.org/wiki/Extra_Ball",
+     "https://www.discogs.com/master/302205",
+     "https://musicbrainz.org/release-group/497af0f1-2881-4094-baff-60eafb97e796"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/a1/8e/71/a18e718c-1fd9-02c2-b716-33f0b0fb8eb3/mzaf_6186229019159278346.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-11-01T11:56:00Z",
+    "appleCollectionId": "1122252408",
+    "storefront": "JP",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple jp 1122252408「Extra Ball《Birthday (Polish Jazz)》」：Polskie Nagrania《Birthday (Polish Jazz)》8 軌，Apple 用波蘭文曲名，逐位置對 MB 8/8，℗1976，取第 1 軌〈Narodziny〉。主線 2026-11-01 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Extra Ball",
+   "album": "Go Ahead",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "9c2ec0a6-6b17-4b1f-a877-94411d668608",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "波蘭融合／爵士放克：Polish Jazz Vol.59，Extra Ball 更成熟的融合，與 Birthday 是不同階段。｜策展無疑點｜MB release-group 9c2ec0a6-6b17-4b1f-a877-94411d668608：title「Go Ahead: Polish Jazz, vol. 59」、Album、first-release-date 1979、artist-credit「Extra Ball」。證據：https://www.discogs.com/master/302207 https://musicbrainz.org/release-group/9c2ec0a6-6b17-4b1f-a877-94411d668608 https://coverartarchive.org/release-group/9c2ec0a6-6b17-4b1f-a877-94411d668608",
+    "queryAlias": "Go Ahead: Polish Jazz, vol. 59"
+   },
+   "research": {
+    "suggestedYear": 1979,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/9c2ec0a6-6b17-4b1f-a877-94411d668608/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-01T11:56:00Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-01 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 644,
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽 ready → ≥4，L=644）3→4",
+    "previous": {
+     "classic": 3,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "manual:rerate-20261101",
+     "checkedAt": "2026-11-01T00:00:00Z",
+     "note": "三軸重評（RUBRIC 2026-11-01）：Polish Jazz 59、二線穩定作；Muza；小型合奏融合，曲短",
+     "rarity": "rare"
+    }
+   },
+   "rarity": "common",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "再進錄音室時，原班只剩吉他手 Śmietana 一人。掛名領隊的 Śmietana 1951 年生於克拉科夫，團名 Extra Ball，這回其餘團員全數換過。新面孔有吹小號與柔音號的 Kawończyk、兼吹長號的鍵盤手 Groborz、電貝斯手 Dębski、鼓手 Bronikowski，Janusz Muniak 則客座吹薩克斯風、長笛。1979 年 5 月，全新陣容在華沙進棚。九首曲長落差很大，最短的〈Sepia〉只有 55 秒。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/667955",
+     "https://pl.wikipedia.org/wiki/Extra_Ball",
+     "https://pl.wikipedia.org/wiki/Jarosław_Śmietana",
+     "https://musicbrainz.org/release-group/9c2ec0a6-6b17-4b1f-a877-94411d668608"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/33/66/14/336614e9-5238-732d-5485-4fa16971b492/mzaf_1307110434209639957.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-11-01T11:56:00Z",
+    "appleCollectionId": "1438896174",
+    "storefront": "JP",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple jp 1438896174「Extra Ball《Go Ahead (Polish Jazz, Vol. 59)》」：曲目 9/9 對上 MB 原盤（Apple 共 9 軌），取第 1 軌〈Krakowski Festiwal Jazzowy〉。主線 2026-11-01 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Laboratorium",
+   "album": "Modern Pentathlon",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "3ce0eee6-5458-4438-8de9-8dd7917eec62",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "波蘭融合／爵士放克：Laboratorium 的 Polish Jazz 融合首作，波蘭爵士搖滾的標誌。｜策展無疑點｜MB release-group 3ce0eee6-5458-4438-8de9-8dd7917eec62：title「Modern Pentathlon」、Album、first-release-date 1976、artist-credit「Laboratorium」。證據：https://www.discogs.com/master/296414 https://musicbrainz.org/release-group/3ce0eee6-5458-4438-8de9-8dd7917eec62 https://coverartarchive.org/release-group/3ce0eee6-5458-4438-8de9-8dd7917eec62",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1976,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/3ce0eee6-5458-4438-8de9-8dd7917eec62/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-01T11:56:00Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-01 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": 2724,
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：Laboratorium 最具代表性、Polish Jazz 49；Muza；20 分長組曲、實驗融合",
+    "previous": {
+     "classic": 2,
+     "obscurity": 3,
+     "accessibility": 4,
+     "source": "manual:regional-rubric",
+     "checkedAt": "2026-11-01T11:56:00Z",
+     "note": "機器基線 2/5/4（Last.fm listeners 2724）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 地區錨點制：Polish Jazz／Muza 國營廠正規發行、Warner 重發進串流，屬「該語言圈一線作品、圈外幾乎無人知」；Last.fm 2724 偏英語圈不採",
+     "rarity": "uncommon"
+    }
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 2、obscurity 3、accessibility 4，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "一面放樂團的代表作，另一面留給好入耳的曲子。演出的 Laboratorium 來自克拉科夫，1971 年首度登台。被看作代表作的那一面只有同名曲〈Pięciobój nowoczesny〉（現代五項），長 19 分 55 秒；另一面四首，從 2 分 20 秒到 6 分鐘。旋律交給 Grzywacz 的 Fender 電鋼琴與 Roland 合成器，以及 Stryszowski 的中音薩克斯風與低音豎笛。華沙的錄音則完成於 1976 年 7 月。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/662895",
+     "https://pl.wikipedia.org/wiki/Laboratorium_(zespół_muzyczny)",
+     "https://www.discogs.com/master/296414",
+     "https://musicbrainz.org/release-group/3ce0eee6-5458-4438-8de9-8dd7917eec62"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/3a/22/ec/3a22eca8-6021-a67b-6ad5-789b08693c15/mzaf_14851850307177774064.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-11-01T11:56:00Z",
+    "appleCollectionId": "1195917131",
+    "storefront": "JP",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple jp 1195917131「Laboratorium《Modern Pentathlon (Polish Jazz)》」：曲目 5/5 對上 MB 原盤（Apple 共 5 軌），取第 1 軌〈Pięciobój Nowoczesny〉。主線 2026-11-01 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Laboratorium",
+   "album": "Quasimodo",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "063a92f2-3da0-4587-bb9d-3e165db42a39",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "波蘭融合／爵士放克：Polish Jazz Vol.58，Laboratorium 的另一高峰，更富戲劇與實驗。｜策展無疑點｜MB release-group 063a92f2-3da0-4587-bb9d-3e165db42a39：title「Quasimodo」、Album、first-release-date 1979、artist-credit「Laboratorium」。證據：https://www.discogs.com/master/323420 https://musicbrainz.org/release-group/063a92f2-3da0-4587-bb9d-3e165db42a39 https://coverartarchive.org/release-group/063a92f2-3da0-4587-bb9d-3e165db42a39",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1979,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/063a92f2-3da0-4587-bb9d-3e165db42a39/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-01T11:56:00Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-01 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": 3304,
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：Polish Jazz 58，前作之後的續作；Muza；融合含即興小品與效果人聲",
+    "previous": {
+     "classic": 2,
+     "obscurity": 3,
+     "accessibility": 4,
+     "source": "manual:regional-rubric",
+     "checkedAt": "2026-11-01T11:56:00Z",
+     "note": "機器基線 2/4/4（Last.fm listeners 3304）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 地區錨點制：Polish Jazz／Muza 國營廠正規發行、Warner 重發進串流，屬「該語言圈一線作品、圈外幾乎無人知」；Last.fm 3304 偏英語圈不採",
+     "rarity": "uncommon"
+    }
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 2、obscurity 3、accessibility 4，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "〈Ikona〉標明獻給小提琴手 Seifert。Laboratorium 這支克拉科夫融合爵士團的五人陣容與三年前相同，這張 1979 年 3 月錄於華沙。〈Ikona〉長 6 分 10 秒，受題獻的是 Zbigniew Seifert。四首完整作品之間夾著四段一分半左右的即興小品，最長的同名曲有 10 分 47 秒。Janusz Grzywacz 彈鋼琴、Rhodes 與 Arp Odyssey 合成器，Marek Stryszowski 吹薩克斯風，也開口唱歌。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/727439",
+     "https://pl.wikipedia.org/wiki/Laboratorium_(zespół_muzyczny)",
+     "https://www.discogs.com/release/4617409",
+     "https://musicbrainz.org/release-group/063a92f2-3da0-4587-bb9d-3e165db42a39"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/cd/84/19/cd8419c3-b84c-f613-b2f9-63c63db008dc/mzaf_17014266652800914870.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-11-01T11:56:00Z",
+    "appleCollectionId": "1436875944",
+    "storefront": "JP",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple jp 1436875944「Laboratorium《Quasimodo (Polish Jazz vol. 58)》」：曲目 6/8 對上 MB 原盤（Apple 共 8 軌），取第 1 軌〈Przejazd〉。主線 2026-11-01 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "String Connection",
+   "album": "Workoholic",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "00ab2297-41ab-44da-89b4-ef34a2daa9e3",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "波蘭融合／爵士放克：Dębski 的 String Connection，弦樂與爵士放克的獨特融合，80 年代波蘭爵士代表。｜策展無疑點｜MB release-group 00ab2297-41ab-44da-89b4-ef34a2daa9e3：title「Workoholic」、Album、first-release-date 1982、artist-credit「String Connection」。證據：https://www.discogs.com/master/497218 https://musicbrainz.org/release-group/00ab2297-41ab-44da-89b4-ef34a2daa9e3 https://coverartarchive.org/release-group/00ab2297-41ab-44da-89b4-ef34a2daa9e3",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1982,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/00ab2297-41ab-44da-89b4-ef34a2daa9e3/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-01T11:56:00Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-01 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 186,
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽非 ready → 5，L=186）4→5",
+    "previous": {
+     "classic": 4,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:rerate-20261101",
+     "checkedAt": "2026-11-01T00:00:00Z",
+     "note": "三軸重評（RUBRIC 2026-11-01）：String Connection 首作、Cantabile 名曲；PSJ 俱樂部版通路有限；旋律性小提琴融合",
+     "rarity": "uncommon"
+    }
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。L186有效，但壓量無據、無收藏圈聖杯地位依據；屬5星冷門，不到7",
+    "evidenceUrls": [
+     "https://www.last.fm/music/String%20Connection/Workoholic",
+     "https://musicbrainz.org/release-group/00ab2297-41ab-44da-89b4-ef34a2daa9e3"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：classic 3、obscurity 4、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
+   },
+   "description": {
+    "text": "團名掛著「弦」，提琴卻只有一把。String Connection 在 1981 年 2 月成軍於波茲南，那個「弦」就是團長 Krzesimir Dębski 的小提琴。Skowron 彈 Hammond，Krzysztof Ścierański 彈電貝斯，Olejniczak 吹薩克斯風。1982 年 5 月 17 日起，他們在波茲南的廣播錄音室連錄兩天，最知名的一首是〈Cantabile in h-moll〉。整張氣質歡快，這團因此被戲稱為「雅痞爵士」。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/2521151",
+     "https://pl.wikipedia.org/wiki/String_Connection",
+     "https://www.discogs.com/master/497218",
+     "https://musicbrainz.org/release-group/00ab2297-41ab-44da-89b4-ef34a2daa9e3"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-01T11:56:00Z",
+    "note": "Apple jp／us 搜尋只有 Andrzej Olejniczak & String Connection《2012》（2012 年新作，8 首）與同名無關作品，無 1982 PolJazz PSJ-107《Workoholic》。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": true
+   }
+  },
+  {
+   "artist": "Czesław Bartkowski",
+   "album": "Drums Dream",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "979d36b8-62e3-46ba-b200-55cadf146069",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "波蘭融合／爵士放克：波蘭頂尖鼓手 Bartkowski 的 Polish Jazz Vol.50 個人作。｜⚠ MB 首發年顯示 2006（重發），原盤 1976 取 Discogs/iTunes。｜MB release-group 979d36b8-62e3-46ba-b200-55cadf146069：title「Drums Dream」、Album、first-release-date 2006、artist-credit「Czesław Bartkowski」。證據：https://www.discogs.com/master/302943 https://musicbrainz.org/release-group/979d36b8-62e3-46ba-b200-55cadf146069 https://coverartarchive.org/release-group/979d36b8-62e3-46ba-b200-55cadf146069",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1976,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/979d36b8-62e3-46ba-b200-55cadf146069/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-01T11:56:00Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-01 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 119,
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽 ready → ≥4，L=119）3→4",
+    "previous": {
+     "classic": 4,
+     "obscurity": 3,
+     "accessibility": 3,
+     "source": "manual:rerate-20261101",
+     "checkedAt": "2026-11-01T00:00:00Z",
+     "note": "三軸重評（RUBRIC 2026-11-01）：Polish Jazz 50、Bartkowski 唯一領銜代表作；Muza；鼓為主小品＋電氣大編制",
+     "rarity": "uncommon"
+    }
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "鼓手給曲子取名〈與無籽李子交談〉。羅茲出身的鼓手 Czesław Bartkowski 曾在 Namysłowski 四重奏打鼓，那首的原名是〈Rozmowa ze śliwką bez pestek〉。九個曲目長短懸殊，〈Drums Dream〉只有 2 分鐘，〈FAO〉卻有 8 分鐘，短段落多半是以鼓為主的小品。獨奏交給三位：Stańko 吹小號，Szukalski 吹高音薩克斯風，Makowicz 彈電鋼琴。版面註明這是電台的錄音，LP 在 1976 年問世。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/685533",
+     "https://pl.wikipedia.org/wiki/Czesław_Bartkowski",
+     "https://pl.wikipedia.org/wiki/Studio_Jazzowe_Polskiego_Radia",
+     "https://www.discogs.com/master/302943",
+     "https://musicbrainz.org/release-group/979d36b8-62e3-46ba-b200-55cadf146069"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview128/v4/9c/14/9a/9c149a26-6351-aa9c-6fce-163b2fd9acdd/mzaf_3298104134485418347.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-11-01T11:56:00Z",
+    "appleCollectionId": "1440702391",
+    "storefront": "JP",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple jp 1440702391「Czeslaw Bartkowski《Drums Dream (Polish Jazz, Vol. 50)》」：Polskie Nagrania《Drums Dream (Polish Jazz, Vol. 50)》9 軌，逐軌對 MB 9/9，℗1976，取第 1 軌〈Drums Dream〉。主線 2026-11-01 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Jan Ptaszyn Wróblewski",
+   "album": "Sprzedawcy glonów",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "d320e072-69f0-35ea-9145-6ce33c3c245c",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "波蘭後 bop／大樂團：與 Studio Jazzowe PR 合作的大樂團爵士放克，波蘭大樂團融合的經典。｜⚠ MB 首發年 2006（重發）；Discogs 1973、iTunes 1974，取 1973。與 eb3a 的 Ptaszyn 1973 前切分邊界上，主線留意。｜MB release-group d320e072-69f0-35ea-9145-6ce33c3c245c：title「Sprzedawcy glonów」、Album、first-release-date 2006、artist-credit「Jan Ptaszyn Wróblewski」。證據：https://www.discogs.com/master/515628 https://musicbrainz.org/release-group/d320e072-69f0-35ea-9145-6ce33c3c245c https://coverartarchive.org/release-group/d320e072-69f0-35ea-9145-6ce33c3c245c",
+    "queryAlias": "Jan Ptaszyn Wróblewski & Studio Jazzowe PR"
+   },
+   "research": {
+    "suggestedYear": 1973,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/d320e072-69f0-35ea-9145-6ce33c3c245c/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-01T11:56:00Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-01 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 4,
+    "listeners": 1323,
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：Studio Jazzowe 代表作，第三潮流／自由爵士；Muza；不協和自由段落多",
+    "previous": {
+     "classic": 4,
+     "obscurity": 3,
+     "accessibility": 4,
+     "source": "manual:regional-rubric",
+     "checkedAt": "2026-11-01T11:56:00Z",
+     "note": "機器基線 3/5/4（Last.fm listeners 1323）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 地區錨點制：Polish Jazz／Muza 國營廠正規發行、Warner 重發進串流，屬「該語言圈一線作品、圈外幾乎無人知」；Last.fm 1323 偏英語圈不採；經典 4：波蘭爵士史公認代表作（研究稿：重發系列與樂史定位）",
+     "rarity": "epic"
+    }
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 4、obscurity 3、accessibility 4，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "前後將近三年的電台錄音，拼成一張六首。與 Jan Ptaszyn Wróblewski 共同署名的，是他發起的波蘭電台爵士工作室，標題意為「海藻商人」。六首裡最早一首錄於 1971 年 2 月，最晚一首要等到 1973 年 10 月，各曲的演奏者各有出入。名單上有六位小號手、四位長號手、兩位法國號手與低音號，小號有 Tomasz Stańko，Seifert 與 Urbaniak 吹薩克斯風之外也拉小提琴。節奏組裡則有 Fender 電鋼琴與 Hammond。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/4617409",
+     "https://pl.wikipedia.org/wiki/Studio_Jazzowe_Polskiego_Radia",
+     "https://www.discogs.com/master/515628",
+     "https://pl.wikipedia.org/wiki/Jan_Ptaszyn_Wróblewski",
+     "https://musicbrainz.org/release-group/d320e072-69f0-35ea-9145-6ce33c3c245c"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/4b/91/6e/4b916ea9-080e-8392-db64-2eb28baeafa1/mzaf_15510215901365963367.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-11-01T11:56:00Z",
+    "appleCollectionId": "1488960807",
+    "storefront": "JP",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple jp 1488960807「Jan Ptaszyn Wróblewski & Studio Jazzowe PR《Sprzedawcy glonów》」：曲目 5/6 對上 MB 原盤（Apple 共 6 軌），取第 1 軌〈Sprzedaż glonów〉。主線 2026-11-01 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Jan Ptaszyn Wróblewski",
+   "album": "Skleroptak",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "ad02c38d-30fc-4047-8957-0242ecc902ae",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "波蘭後 bop／大樂團：與 BRT Jazz Orchestra 的後 bop 大樂團作，Ptaszyn 70 年代中期另一高峰。｜⚠ Discogs 標 1976；實際首發廠牌待確認（PolJazz/Biały Kruk 為重發俱樂部版）。｜MB release-group ad02c38d-30fc-4047-8957-0242ecc902ae：title「Skleroptak」、Album、first-release-date 1976、artist-credit「Jan Ptaszyn Wróblewski」。證據：https://www.discogs.com/master/393331 https://musicbrainz.org/release-group/ad02c38d-30fc-4047-8957-0242ecc902ae https://coverartarchive.org/release-group/ad02c38d-30fc-4047-8957-0242ecc902ae",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1976,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/ad02c38d-30fc-4047-8957-0242ecc902ae/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-01T11:56:00Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-01 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 76,
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽非 ready → 5，L=76）4→5",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 3,
+     "source": "manual:rerate-20261101",
+     "checkedAt": "2026-11-01T00:00:00Z",
+     "note": "三軸重評（RUBRIC 2026-11-01）：Wróblewski 為 BRT 大樂團寫的作品，二線；PolJazz 小通路；長篇大樂團後咆勃",
+     "rarity": "uncommon"
+    }
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 4，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "曲子是波蘭人寫的，演奏的是整支比利時大樂團。Jan Ptaszyn Wróblewski 1956 年跟著 Komeda 的樂團在第一屆索波特爵士節出道，這回他寫曲，也坐進薩克斯風聲部吹次中音。1976 年 3 月 10 日開錄、隔天錄完，樂團是比利時廣播的 BRT Jazz Orchestra，地點在布魯塞爾的 BRT 錄音室。五支薩克斯風、三支小號、三支長號之下，兩位打擊手加上身兼顫音琴與邦哥鼓的 Sadi，墊出拉丁味的節奏層。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/1697790",
+     "https://www.discogs.com/master/393331",
+     "https://en.wikipedia.org/wiki/Jan_Ptaszyn_Wr%C3%B3blewski",
+     "https://musicbrainz.org/release-group/ad02c38d-30fc-4047-8957-0242ecc902ae"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-01T11:56:00Z",
+    "note": "Wróblewski 的 jp／us／pl／de 藝人目錄（161936298 等）只有 Sweet Beat、Mainstream、Sprzedawcy glonów、Flyin' Lady、On the Road 與電台選輯，專輯搜尋 Skleroptak 空，無 1976 PolJazz Z-SX-0680 本盤。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Marek Bliziński",
+   "album": "The Wave",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "cb0eea6c-481e-417d-b4f7-f3dce110cad4",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "波蘭後 bop／大樂團：吉他手 Bliziński 的後 bop／modal 代表作，Discogs 評價很高。｜⚠ MB 無首發年；Discogs master 1980；MB 無 CAA，封面取 Discogs。｜MB release-group cb0eea6c-481e-417d-b4f7-f3dce110cad4：title「The Wave」、Album、first-release-date （空）、artist-credit「Marek Bliziński」。證據：https://www.discogs.com/master/302210 https://musicbrainz.org/release-group/cb0eea6c-481e-417d-b4f7-f3dce110cad4 https://coverartarchive.org/release-group/cb0eea6c-481e-417d-b4f7-f3dce110cad4 https://www.discogs.com/release/2315706",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1980,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "source": "discogs",
+    "discogsReleaseId": "2315706",
+    "url": "https://i.discogs.com/LJC1Ghx1y4Iv1YjHiYWIyqOxxFCoyOUEYaSQiQRhr1s/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIzMTU3/MDYtMTY0ODkxNjM0/NC0zNjgyLmpwZWc.jpeg",
+    "note": "CAA 404；Discogs release 2315706：目錄號 PSJ-92、年份 1980、廠牌 Poljazz、盤名 The Wave 皆對上（master 302210 原版 LP）；取該 release images[0]（原盤封面）。",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-01T11:56:00Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 8,
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽非 ready → 5，L=8）4→5",
+    "previous": {
+     "classic": 4,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:rerate-20261101",
+     "checkedAt": "2026-11-01T00:00:00Z",
+     "note": "三軸重評（RUBRIC 2026-11-01）：Bliziński 唯一以本名聞名的領銜盤；PolJazz 小通路；標準曲吉他三重奏",
+     "rarity": "uncommon"
+    }
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "兩組節奏組各包一面，替他的吉他墊底。Marek Bliziński 1947 年生於華沙，1989 年過世，《The Wave》是他 1980 年的首張個人專輯。A 面由 Wegehaupt 的低音提琴與 Bartkowski 的鼓伴奏，1979 年 6 月錄；B 面換上 Jarzębski 與 Stefański，日期已到 1980 年 9 月。這組吉他三重奏彈的七首全是別人寫的，從 Cole Porter 的〈Love For Sale〉到〈Monk's Dream〉。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/2315706",
+     "https://www.discogs.com/master/302210",
+     "https://en.wikipedia.org/wiki/Marek_Bli%C5%BCi%C5%84ski",
+     "https://dzieje.pl/node/102159",
+     "https://musicbrainz.org/release-group/cb0eea6c-481e-417d-b4f7-f3dce110cad4"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-01T11:56:00Z",
+    "note": "Apple jp／us／pl／de 查 Marek Bliziński 藝人 id 443953352 目錄為空，專輯搜尋 The Wave 無本盤（1980 PolJazz PSJ-92）。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Janusz Muniak Quintet",
+   "album": "Question Mark",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "b219d70e-9942-41a8-8559-4f0f68f23ede",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "波蘭後 bop／大樂團：Polish Jazz Vol.54，Muniak 的後 bop／實驗代表作。｜⚠ 清單外增補（Muniak 名單外），可汰。｜MB release-group b219d70e-9942-41a8-8559-4f0f68f23ede：title「Question Mark」、Album、first-release-date 1978、artist-credit「Janusz Muniak Quintet」。證據：https://www.discogs.com/master/286474 https://musicbrainz.org/release-group/b219d70e-9942-41a8-8559-4f0f68f23ede https://coverartarchive.org/release-group/b219d70e-9942-41a8-8559-4f0f68f23ede",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1978,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/b219d70e-9942-41a8-8559-4f0f68f23ede/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-01T11:56:00Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-01 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 184,
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽 ready → ≥4，L=184）3→4",
+    "previous": {
+     "classic": 3,
+     "obscurity": 3,
+     "accessibility": 3,
+     "source": "manual:rerate-20261101",
+     "checkedAt": "2026-11-01T00:00:00Z",
+     "note": "三軸重評（RUBRIC 2026-11-01）：Polish Jazz 54、Muniak 中期作；Muza；10 分長曲當代爵士即興",
+     "rarity": "uncommon"
+    }
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "被稱作歐洲自由爵士先驅的 Muniak，後來轉向主流。這支五重奏的團長是薩克斯風手 Janusz Muniak，四首都由他自己寫成，錄音的城市是華沙，時間 1978 年 6 月。Bliziński 彈吉他，Perliński 彈鋼琴與電鋼琴，再配一組貝斯、鼓，聲音靠近 70 年代末的電氣化爵士。〈Przejażdżka Walcem〉長 12 分 10 秒，同名曲〈Znak Zapytania〉也有 10 分 12 秒，四首合計約 40 分鐘。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/786101",
+     "https://www.discogs.com/master/286474",
+     "https://en.wikipedia.org/wiki/Janusz_Muniak",
+     "https://musicbrainz.org/release-group/b219d70e-9942-41a8-8559-4f0f68f23ede"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/c6/35/55/c6355553-adbf-2ab0-2206-40d10eebb975/mzaf_17742715888455041407.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-11-01T11:56:00Z",
+    "appleCollectionId": "1373284617",
+    "storefront": "JP",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple jp 1373284617「Janusz Muniak Quintet《Question Mark (Polish Jazz, Vol. 54)》」：曲目 4/4 對上 MB 原盤（Apple 共 4 軌），取第 1 軌〈Przejażdżka Walcem〉。主線 2026-11-01 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Tomasz Szukalski",
+   "album": "Tina Kamila",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "2a1471a9-9e4a-499d-bde0-3ce755f33356",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "波蘭後 bop／大樂團：Szukalski 以薩克斯獨奏抒情與強吹並重的個人代表，80 年代波蘭後 bop。｜策展無疑點｜MB release-group 2a1471a9-9e4a-499d-bde0-3ce755f33356：title「Tina Kamila」、Album、first-release-date 1986、artist-credit「Tomasz Szukalski」。證據：https://www.discogs.com/master/853243 https://musicbrainz.org/release-group/2a1471a9-9e4a-499d-bde0-3ce755f33356 https://coverartarchive.org/release-group/2a1471a9-9e4a-499d-bde0-3ce755f33356",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1986,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/2a1471a9-9e4a-499d-bde0-3ce755f33356/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-01T11:56:00Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-01 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 1,
+    "listeners": 483,
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽非 ready → 5，L=483）3→5",
+    "previous": {
+     "classic": 3,
+     "obscurity": 3,
+     "accessibility": 1,
+     "source": "manual:rerate-20261101",
+     "checkedAt": "2026-11-01T00:00:00Z",
+     "note": "三軸重評（RUBRIC 2026-11-01）：Szukalski 抒情標準曲集，非強吹代表；Muza；管弦伴奏慢歌，極易入耳",
+     "rarity": "rare"
+    }
+   },
+   "rarity": "common",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 2、obscurity 3、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "Szukalski 這回吹的是〈Laura〉這類老歌。Tomasz Szukalski 學過單簧管，主奏次中音與高音薩克斯風。除了〈Laura〉，爵士標準曲還有〈Stardust〉與〈In A Sentimental Mood〉，合起來占去一半曲目；另外四首是波蘭曲目，同名的〈Tina Kamila〉也在其中。伴奏的 Grand Standard Orchestra 由 Ptaszyn Wróblewski 指揮，另加一組鋼琴三重奏。曲子都短，速度落在慢到中速之間。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/4743360",
+     "https://www.discogs.com/master/853243",
+     "https://en.wikipedia.org/wiki/Tomasz_Szukalski",
+     "https://en.wikipedia.org/wiki/Wojciech_Karolak",
+     "https://musicbrainz.org/release-group/2a1471a9-9e4a-499d-bde0-3ce755f33356"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-01T11:56:00Z",
+    "note": "Szukalski 的 jp／us／pl／de 藝人目錄只有 Stańko 合作盤（Balladyna、TWET）與 Karnas、Sośnicki 作品，專輯搜尋 Tina Kamila 無結果，無 1986 Muza SX 2250 本盤。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Krzysztof Ścierański",
+   "album": "Bass Line",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "63d4a0c1-58d8-4edb-9e46-19c6dc967fd1",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "波蘭融合／爵士放克：Ścierański（電貝斯）的個人首張代表，80 年代波蘭貝斯融合。｜⚠ MB 無 CAA，封面取 Discogs。｜MB release-group 63d4a0c1-58d8-4edb-9e46-19c6dc967fd1：title「Bass Line」、Album、first-release-date 1983、artist-credit「Krzysztof Ścierański」。證據：https://www.discogs.com/master/300734 https://musicbrainz.org/release-group/63d4a0c1-58d8-4edb-9e46-19c6dc967fd1 https://coverartarchive.org/release-group/63d4a0c1-58d8-4edb-9e46-19c6dc967fd1",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1983,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "source": "discogs",
+    "discogsReleaseId": "1708585",
+    "url": "https://i.discogs.com/L38oU5jByoUE-6KZDOp7MK7_NmrrTCJcuyb-_c9LeYU/rs:fit/g:sm/q:90/h:600/w:595/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE3MDg1/ODUtMTI0OTM3ODky/My5qcGVn.jpeg",
+    "note": "CAA 404；Discogs release 1708585：目錄號 PSJ-119、年份 1983、廠牌 PolJazz、盤名 Bass Line 皆對上（master 300734 原版 LP）；取該 release images[0]（原盤封面）。",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-01T11:56:00Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 86,
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽非 ready → 5，L=86）4→5",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:rerate-20261101",
+     "checkedAt": "2026-11-01T00:00:00Z",
+     "note": "三軸重評（RUBRIC 2026-11-01）：Ścierański 首張個人盤；PolJazz 小通路；貝斯放克小品，原 4 方向反了",
+     "rarity": "rare"
+    }
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 2、obscurity 4、accessibility 4，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "進樂團七年後，貝斯手錄下自己的第一張。克拉科夫人 Krzysztof Ścierański 自學貝斯，22 歲進了 Laboratorium，1976 到 1980 年跟著樂團錄了五張。輪到《Bass Line》，1983 年 3 月錄成，用的是華沙的 Studio M-1，由 PolJazz 出 LP。他彈 Kramer 電貝斯，接上 Roland 的 Chorus Echo。像 1 分 30 秒的〈Wieloryb Basowy〉這類貝斯小品，就穿插在團奏放克之間。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/1708585",
+     "https://www.discogs.com/master/300734",
+     "https://pl.wikipedia.org/wiki/Krzysztof_%C5%9Acierański",
+     "https://musicbrainz.org/release-group/63d4a0c1-58d8-4edb-9e46-19c6dc967fd1"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-01T11:56:00Z",
+    "note": "Ścierański 藝人目錄（jp／us／pl／de）只有 Directions 2013、Night Lakes 2014 與單曲，專輯搜尋 Bass Line 空，無 1983 PolJazz PSJ-119 本盤。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Andrzej Przybielski",
+   "album": "W sferze dotyku",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "manual",
+    "rgMbid": "",
+    "upc": "",
+    "aliasesChecked": true,
+    "mbAbsenceProof": {
+     "queries": [
+      {
+       "query": "releasegroup:\"W sferze dotyku\"",
+       "count": 0,
+       "topTitles": []
+      },
+      {
+       "query": "artist:\"Andrzej Przybielski\" AND releasegroup:\"W sferze dotyku\"",
+       "count": 0,
+       "topTitles": []
+      }
+     ],
+     "checkedAt": "2026-11-01",
+     "conclusion": "MusicBrainz release-group 以盤名、藝人＋盤名查詢，無本盤條目。MusicBrainz 搜尋 releasegroup:「W sferze dotyku」 與 artist:「Andrzej Przybielski」 無此盤（僅 Sesja Open 2011、Custom Trio 2001），人工身分。"
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/master/2115562",
+     "https://www.discogs.com/release/1356396"
+    ],
+    "manualRuling": "雲端主線 2026-11-01 依 ALBUM_ONBOARDING §1 人工身分核可（店主 2026-09-02 裁定權下放；薄細項策展線 add-20261101-eb3）",
+    "coverSourceHint": "discogs",
+    "aliasReview": "波蘭自由／實驗：波蘭自由爵士小號 Przybielski 最受推崇的盤之一，80 年代波蘭自由即興代表。｜⚠ Discogs 拼寫 W Sferze Dotyku；MB 查無。｜MB 查無（），走 §1 人工身分。證據：https://www.discogs.com/master/2115562 https://www.discogs.com/release/1356396 https://www.discogs.com/master/2115562 https://www.discogs.com/release/1356396",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1984,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "source": "discogs",
+    "discogsReleaseId": "1356396",
+    "url": "https://i.discogs.com/czxNeDuJHoMKY4HV8cbA8JnPSgdns6YI9kLpeYe_ibA/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzNTYz/OTYtMTYxNjAxMzk4/Ni0xMzU1LmpwZWc.jpeg",
+    "note": "manual 身分無 CAA；Discogs release 1356396：目錄號 Płyta nr 004、年份 1984、廠牌 Alma Art、盤名 W Sferze Dotyku 皆對上（master 2115562）；取該 release images[0]（原盤封面）。",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-01T11:56:00Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 5,
+    "accessibility": 4,
+    "listeners": 18,
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：Przybielski 代表作，限量 1000 張私發；無串流再發；自由／前衛爵士",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 3,
+     "source": "manual:regional-rubric",
+     "checkedAt": "2026-11-01T11:56:00Z",
+     "note": "機器基線 3/5/3（Last.fm listeners 18）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 地區錨點制：Alma Art 限量 800＋200，原盤壓量約千張、無串流再發；Last.fm 18 偏英語圈不採",
+     "rarity": "uncommon"
+    }
+   },
+   "rarity": "legendary",
+   "apexAssessment": {
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。Alma Art限量1000張，超過數百張門檻；非聖杯級",
+    "evidenceUrls": [
+     "https://www.last.fm/music/Andrzej%20Przybielski/W%20sferze%20dotyku",
+     "https://www.discogs.com/release/1356396"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 18），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
+   },
+   "description": {
+    "text": "黑色緞面封套，繫著一條印了名字的緞帶。Andrzej Przybielski 從比得哥什的傳統爵士團起步吹小號，60 年代中期後轉向前衛。這張是 1984 年 Alma Art 的限量 LP，常規版 800 張，另有 200 張附藝術套封。五人全用原聲樂器：他吹小號與富魯格號，Korecki 吹中音薩克斯風與長笛，再加鋼琴、低音提琴與鼓。六首分屬四位作者，〈Krzykousty〉〈Free Bop Towarzyski〉與標題曲出自他手。風格歸在自由即興與前衛爵士。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/1356396",
+     "https://www.discogs.com/master/2115562",
+     "https://en.wikipedia.org/wiki/Andrzej_Przybielski"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-01T11:56:00Z",
+    "note": "Przybielski 藝人目錄（jp／us／pl／de）只有 2000 年後的合作與 Oleś Brothers 作品，專輯搜尋 W sferze dotyku 空；1984 Alma Art 限量 800 張未上串流。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": true
+   }
+  },
+  {
+   "artist": "Stanisław Sojka",
+   "album": "Blublula",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "3227e5bd-9d7d-4c39-b3f0-e22844f9e611",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "波蘭人聲爵士：Polish Jazz 系列中 Sojka 的首張，鋼琴自彈自唱的人聲爵士，波蘭人聲爵士代表。｜⚠ Sojka 亦寫作 Soyka，採 Sojka（與 MB 及指定一致）。｜MB release-group 3227e5bd-9d7d-4c39-b3f0-e22844f9e611：title「Blublula」、Album、first-release-date 1981、artist-credit「Stanisław Sojka」。證據：https://www.discogs.com/master/302950 https://musicbrainz.org/release-group/3227e5bd-9d7d-4c39-b3f0-e22844f9e611 https://coverartarchive.org/release-group/3227e5bd-9d7d-4c39-b3f0-e22844f9e611",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1981,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/3227e5bd-9d7d-4c39-b3f0-e22844f9e611/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-01T11:56:00Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-01 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 43,
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽 ready → ≥4，L=43）3→4",
+    "previous": {
+     "classic": 3,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "manual:rerate-20261101",
+     "checkedAt": "2026-11-01T00:00:00Z",
+     "note": "三軸重評（RUBRIC 2026-11-01）：Polish Jazz 63、Sojka 爵士人聲標準曲；Muza；鋼琴三重奏伴唱，原 4 方向反",
+     "rarity": "rare"
+    }
+   },
+   "rarity": "common",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 2、obscurity 3、accessibility 4，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "童聲合唱團的高音部出身，Sojka 這張只唱爵士名曲。伴奏的是 Wojciech Karolak 領軍的鋼琴三重奏，Sojka 只掛名人聲。Stanisław Sojka 七歲起在格利維采主教座堂童聲合唱團唱高音部，後來在卡托維治音樂學院取得編曲與作曲碩士。1981 年 1 月那批錄音在華沙完成，八首裡有〈Satin Doll〉〈Blue Monk〉〈Naima〉，最長的〈I've Known Rivers〉8 分 40 秒。唱片在 1981 年 5 月 18 日上市。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/588465",
+     "https://www.discogs.com/master/302950",
+     "https://en.wikipedia.org/wiki/Stanis%C5%82aw_Soyka",
+     "https://en.wikipedia.org/wiki/Wojciech_Karolak",
+     "https://musicbrainz.org/release-group/3227e5bd-9d7d-4c39-b3f0-e22844f9e611"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/36/53/83/36538354-078c-f68e-469d-8149a59decad/mzaf_4599278344542428541.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-11-01T11:56:00Z",
+    "appleCollectionId": "1195918540",
+    "storefront": "JP",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple jp 1195918540「Stanisław Soyka《Blublula (Polish Jazz)》」：曲目 7/8 對上 MB 原盤（Apple 共 8 軌），取第 1 軌〈I'm Just a Lucky So and So〉。主線 2026-11-01 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Ewa Bem",
+   "album": "Dla Ciebie jestem sobą",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "7d7119b5-9468-4cad-9a09-3798bcd496b3",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "波蘭人聲爵士：Ewa Bem 與 Marek Bliziński 合作的 bossa／爵士人聲作，80 年代波蘭人聲爵士。｜⚠ 清單外增補（人聲類補足），可汰；Ewa Bem 可能與 eb3a 人聲組重疊，需 grep。｜MB release-group 7d7119b5-9468-4cad-9a09-3798bcd496b3：title「Dla Ciebie Jestem Sobą」、Album、first-release-date 1987、artist-credit「Ewa Bem - Marek Bliziński」。證據：https://www.discogs.com/master/848281 https://musicbrainz.org/release-group/7d7119b5-9468-4cad-9a09-3798bcd496b3 https://coverartarchive.org/release-group/7d7119b5-9468-4cad-9a09-3798bcd496b3",
+    "queryAlias": "Ewa Bem - Marek Bliziński"
+   },
+   "research": {
+    "suggestedYear": 1987,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/7d7119b5-9468-4cad-9a09-3798bcd496b3/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-01T11:56:00Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-01 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 1,
+    "listeners": 16,
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽非 ready → 5，L=16）4→5",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 1,
+     "source": "manual:rerate-20261101",
+     "checkedAt": "2026-11-01T00:00:00Z",
+     "note": "三軸重評（RUBRIC 2026-11-01）：Bem 與 Bliziński 人聲吉他二重奏；PolJazz 小通路；巴薩諾瓦人聲，最易入耳",
+     "rarity": "rare"
+    }
+   },
+   "rarity": "common",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "一個聲音、一把吉他，十一首波蘭文歌。Ewa Bem 有「波蘭爵士第一夫人」之稱，credits 上只有兩位演奏者：她唱，Marek Bliziński 彈吉他。這些歌在 1984 到 1986 年間陸續為電台錄成，每首長 2 分 25 秒到 5 分。1987 年 PolJazz 出 LP，兩人並列署名。她 1969 年起在 Grupa Bluesowa Stodoła 唱歌，1974 年起獨唱。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/1604347",
+     "https://www.discogs.com/master/848281",
+     "https://pl.wikipedia.org/wiki/Ewa_Bem",
+     "https://dzieje.pl/node/102159",
+     "https://musicbrainz.org/release-group/7d7119b5-9468-4cad-9a09-3798bcd496b3"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-01T11:56:00Z",
+    "note": "Ewa Bem 藝人目錄（jp／us／pl／de）有 Be a Man、Loves The Beatles 等，無 1987 PolJazz PSJ-140《Dla Ciebie jestem sobą》；搜尋同名只出 Linia Nocna 單曲與 Danuta Błażejczyk 選輯，非本盤。"
+   },
+   "published": {
+    "cardCatalog": false,
+    "descriptionKv": false,
+    "albumOverride": false,
+    "seedCards": false,
+    "apexPool": false
+   }
+  }
+ ]
+}

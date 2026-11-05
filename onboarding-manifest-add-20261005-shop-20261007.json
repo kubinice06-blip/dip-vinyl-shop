@@ -38,7 +38,7 @@
     "checkedAt": "2026-10-07T00:24:46Z",
     "note": "比照池中同藝人與同時期卡給分。｜本機 2026-10-07：Last.fm listeners 16"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -60,7 +60,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/Music2/v4/57/93/48/57934858-e01f-f39d-aa69-b83e9ee04e7e/mzaf_3929393743872368659.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/Music2/v4/1a/d7/8b/1ad78be3-905e-0f0b-8d11-bdbc5138e703/mzaf_5934116161569959172.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-10-07T00:24:46Z",
@@ -110,14 +110,23 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 4,
+    "obscurity": 3,
     "accessibility": 3,
     "listeners": 8379,
-    "source": "manual:pool-peers",
-    "checkedAt": "2026-10-07T00:24:46Z",
-    "note": "比照池中同藝人與同時期卡給分。｜本機 2026-10-07：Last.fm listeners 8379；三軸 3/3/3 → 3/4/3；冷門軸照聽眾數（8,379）取 4"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Columbia空窗期未發表錄音整理輯，非正典；L=8379正規流通但少人碰；含1967–70融合轉型期長篇",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 3,
+     "source": "manual:pool-peers",
+     "checkedAt": "2026-10-07T00:24:46Z",
+     "note": "比照池中同藝人與同時期卡給分。｜本機 2026-10-07：Last.fm listeners 8379；三軸 3/3/3 → 3/4/3；冷門軸照聽眾數（8,379）取 4",
+     "rarity": "uncommon"
+    }
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -136,7 +145,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e6/09/87/e60987cd-3713-08a4-5103-c2ed1ee8b248/mzaf_3469331497770939861.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/64/e0/76/64e0769e-1857-ef08-7027-19d6565b3168/mzaf_2436239302592829193.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-10-07T00:24:46Z",
@@ -185,15 +194,24 @@
     "visuallyVerified": true
    },
    "ratings": {
-    "classic": 3,
-    "obscurity": 4,
+    "classic": 4,
+    "obscurity": 5,
     "accessibility": 2,
     "listeners": 707,
-    "source": "manual:pool-peers",
-    "checkedAt": "2026-10-07T00:24:46Z",
-    "note": "比照池中同藝人與同時期卡給分。｜本機 2026-10-07：Last.fm listeners 707"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Criss晚期最受推崇的Xanadu四重奏盤，與Barry Harris同台；L=707且串流無→5；主流bop",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:pool-peers",
+     "checkedAt": "2026-10-07T00:24:46Z",
+     "note": "比照池中同藝人與同時期卡給分。｜本機 2026-10-07：Last.fm listeners 707",
+     "rarity": "rare"
+    }
    },
-   "rarity": "rare",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -255,13 +273,22 @@
     "note": "改用 Apple 官方圖（試聽釘定的 collectionId 156119863，jp：テテ・モントリュー・トリオ — Tete!），雲端的 CAA 圖是 CD 盒翻拍；本機看圖與原盤封面相同（雲端原圖：caa ）"
    },
    "ratings": {
-    "classic": 3,
+    "classic": 4,
     "obscurity": 4,
     "accessibility": 2,
     "listeners": 286,
-    "source": "manual:pool-peers",
-    "checkedAt": "2026-10-07T00:24:46Z",
-    "note": "比照池中同藝人與同時期卡給分。｜本機 2026-10-07：Last.fm listeners 286"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：SteepleChase三重奏，與NHØP、Heath合作，常列為Montoliu代表作；L=286有串流→下限4；標準曲bop三重奏",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:pool-peers",
+     "checkedAt": "2026-10-07T00:24:46Z",
+     "note": "比照池中同藝人與同時期卡給分。｜本機 2026-10-07：Last.fm listeners 286",
+     "rarity": "rare"
+    }
    },
    "rarity": "rare",
    "apexAssessment": {
@@ -334,12 +361,21 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 4,
+    "obscurity": 5,
     "accessibility": 2,
     "listeners": 24,
-    "source": "manual:pool-peers",
-    "checkedAt": "2026-10-07T00:24:46Z",
-    "note": "比照池中同藝人與同時期卡給分。｜本機 2026-10-07：Last.fm listeners 24；三軸 3/3/2 → 3/4/2；內容是名盤重編，但這個雙碟版本聽眾數只有 24，冷門軸取 4"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：1972 Prestige雙LP合輯（Coltrane＋Lush Life），內容重要但此版是重包裝；L=24且串流無此版→5；hard bop",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:pool-peers",
+     "checkedAt": "2026-10-07T00:24:46Z",
+     "note": "比照池中同藝人與同時期卡給分。｜本機 2026-10-07：Last.fm listeners 24；三軸 3/3/2 → 3/4/2；內容是名盤重編，但這個雙碟版本聽眾數只有 24，冷門軸取 4",
+     "rarity": "rare"
+    }
    },
    "rarity": "rare",
    "apexAssessment": {
@@ -408,14 +444,23 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 2,
-    "accessibility": 1,
+    "obscurity": 3,
+    "accessibility": 2,
     "listeners": 3216,
-    "source": "manual:pool-peers",
-    "checkedAt": "2026-10-07T00:24:46Z",
-    "note": "比照池中同藝人與同時期卡給分。｜本機 2026-10-07：Last.fm listeners 3216；聽眾數掛在 Bluenotes 名義下偏低，冷門軸照池中同藝人 80 年代卡維持 2"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：80年代號角藍調轉向作，評價中等；L=3216→下限3；直白藍調搖滾加號角組",
+    "previous": {
+     "classic": 3,
+     "obscurity": 2,
+     "accessibility": 1,
+     "source": "manual:pool-peers",
+     "checkedAt": "2026-10-07T00:24:46Z",
+     "note": "比照池中同藝人與同時期卡給分。｜本機 2026-10-07：Last.fm listeners 3216；聽眾數掛在 Bluenotes 名義下偏低，冷門軸照池中同藝人 80 年代卡維持 2",
+     "rarity": "rare"
+    }
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -481,7 +526,7 @@
     "checkedAt": "2026-10-07T00:24:46Z",
     "note": "比照池中同藝人與同時期卡給分。｜本機 2026-10-07：Last.fm listeners 116037"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -499,7 +544,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/c6/39/18/c639183b-c91a-8515-7397-a76d7c1ddfa4/mzaf_17150681104771771068.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e0/76/1c/e0761c6b-6e29-53b2-bc29-c0e219b2700d/mzaf_8494766358685645789.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-10-07T00:24:46Z",
@@ -544,13 +589,22 @@
     "note": "改用 Apple 官方圖（試聽釘定的 collectionId 1751400100，jp：下田逸郎 — Love Songs And Lamentations），雲端的 CAA 圖帶側標；本機看圖與原盤封面相同（雲端原圖：caa ）"
    },
    "ratings": {
-    "classic": 3,
+    "classic": 4,
     "obscurity": 4,
     "accessibility": 3,
     "listeners": 171,
-    "source": "manual:pool-peers",
-    "checkedAt": "2026-10-07T00:24:46Z",
-    "note": "比照池中同藝人與同時期卡給分。｜本機 2026-10-07：Last.fm listeners 171"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Tower稱acid folk名盤、藝人代表作；L=171有串流→下限4；日英雙面迷幻民謠、彼岸感",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 3,
+     "source": "manual:pool-peers",
+     "checkedAt": "2026-10-07T00:24:46Z",
+     "note": "比照池中同藝人與同時期卡給分。｜本機 2026-10-07：Last.fm listeners 171",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -618,13 +672,22 @@
     "visuallyVerified": true
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 4,
+    "classic": 3,
+    "obscurity": 5,
     "accessibility": 2,
     "listeners": 7,
-    "source": "manual:pool-peers",
-    "checkedAt": "2026-10-07T00:24:46Z",
-    "note": "比照池中同藝人與同時期卡給分。｜本機 2026-10-07：Last.fm listeners 7"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：第三張，高中正義、林立夫等名樂手參與的穩定作，非代表作；L=7無串流→5；民謠為主帶放克搖滾",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:pool-peers",
+     "checkedAt": "2026-10-07T00:24:46Z",
+     "note": "比照池中同藝人與同時期卡給分。｜本機 2026-10-07：Last.fm listeners 7",
+     "rarity": "rare"
+    }
    },
    "rarity": "rare",
    "apexAssessment": {
@@ -713,15 +776,24 @@
     "visuallyVerified": true
    },
    "ratings": {
-    "classic": 1,
+    "classic": 2,
     "obscurity": 5,
     "accessibility": 2,
     "listeners": 8,
-    "source": "manual:pool-peers",
-    "checkedAt": "2026-10-07T00:24:46Z",
-    "note": "比照池中同藝人與同時期卡給分。｜本機 2026-10-07：Last.fm listeners 8；自費壓製的私製盤，符合 §0.8 的 5 分錨點"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：業餘成員私製盤、廠牌只發這張，店主推介的歌心之作；L=8無串流→5；80年代民歌搖滾",
+    "previous": {
+     "classic": 1,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "manual:pool-peers",
+     "checkedAt": "2026-10-07T00:24:46Z",
+     "note": "比照池中同藝人與同時期卡給分。｜本機 2026-10-07：Last.fm listeners 8；自費壓製的私製盤，符合 §0.8 的 5 分錨點",
+     "rarity": "rare"
+    }
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": true,
     "tier": "pearl",
@@ -732,7 +804,7 @@
     ]
    },
    "description": {
-    "text": "モア是一群業餘樂手組成的日本樂團，這張 1983 年的同名唱片是自己出錢壓製的私製盤，網路上幾乎查不到任何音源與背景。乍聽像一張普通的 80 年代民歌專輯，翻開內頁，才發現作曲家佐藤勝寫下的一則小故事：一切源於一個單純的願望，「我們想做一張唱片」。成員都是業餘者，仍然滿懷誠意，三天錄完、一週混音，靠的不是技術，而是製作人口中的「歌心」。不完美，卻無比真實；它的重要不在市場，而在於它本身就是一段快樂時光的證據。",
+    "text": "《モア》是五人樂團モア 1983 年自主製作的 LP，由只出過這一張唱片的 Saturn Records 發行，沒有再版紀錄，在收藏圈想找的人多於手上有的人。成員是石井英樹與河端喜久一兩把電吉他、杉島篤彦貝斯、安藤初恵鍵盤、松尾恵子主唱，多人和聲；石井與杉島作詞作曲，石井與松尾編曲。Masaru Sato 擔任音樂監督，也寫了內頁文字。全張十三首，以〈序曲〉開頭、〈終曲〉收尾，〈まつりの歌〉分成兩部分各放一面，路數偏迷幻民謠搖滾。",
     "sourceUrls": [
      "https://www.discogs.com/release/20594359",
      "https://www.instagram.com/p/DM0GKQsPD7X/",
@@ -792,7 +864,7 @@
     "checkedAt": "2026-10-07T00:24:46Z",
     "note": "比照池中同藝人與同時期卡給分。｜本機 2026-10-07：Last.fm listeners 11"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -882,13 +954,22 @@
     "visuallyVerified": true
    },
    "ratings": {
-    "classic": 1,
+    "classic": 2,
     "obscurity": 5,
-    "accessibility": 1,
+    "accessibility": 2,
     "listeners": null,
-    "source": "manual:pool-peers",
-    "checkedAt": "2026-10-07T00:24:46Z",
-    "note": "比照池中同藝人與同時期卡給分。｜本機 2026-10-07：Last.fm listeners 查無；自己出資發行的私壓盤，符合 §0.8 的 5 分錨點"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：自製私壓LP、Discogs僅15人收藏、無評論；無串流→5；標準曲人聲輕爵士，B面8分長曲帶即興",
+    "previous": {
+     "classic": 1,
+     "obscurity": 5,
+     "accessibility": 1,
+     "source": "manual:pool-peers",
+     "checkedAt": "2026-10-07T00:24:46Z",
+     "note": "比照池中同藝人與同時期卡給分。｜本機 2026-10-07：Last.fm listeners 查無；自己出資發行的私壓盤，符合 §0.8 的 5 分錨點",
+     "rarity": "common"
+    }
    },
    "rarity": "common",
    "apexAssessment": {

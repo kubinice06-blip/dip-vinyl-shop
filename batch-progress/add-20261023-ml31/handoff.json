@@ -1,0 +1,34 @@
+{
+ "batch": "add-20261023-ml31",
+ "cards": 7,
+ "written": {
+  "cardCatalog": 7,
+  "kvKeys": 7,
+  "seedRows": 7,
+  "previewReady": 6,
+  "previewUnavailable": 1
+ },
+ "review": {
+  "by": "cloud-main",
+  "cards": 7,
+  "changed": [
+   "desc2:Kem|Album II",
+   "desc2:Kem|Promise to Love: Album IV",
+   "desc2:Mahalia Jackson|The Power and the Glory"
+  ]
+ },
+ "qa": {
+  "research": "pass",
+  "hooks": "pass",
+  "out": "pass",
+  "prepareGate": "0 error",
+  "publishedGate": "0 error"
+ },
+ "pendingLocal": {
+  "kv": "無",
+  "listeners": [],
+  "apexEvidence": [],
+  "genreTree": "已重建",
+  "albumOverrides": "無"
+ }
+}

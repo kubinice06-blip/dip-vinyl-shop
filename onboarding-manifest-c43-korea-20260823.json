@@ -34,7 +34,7 @@
         "checkedAt": "2026-08-23T04:08:31Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；申重鉉本人與其製作曲目的國際正典入口，Light in the Attic 授權編纂、流通廣，但作為選輯本身不列史上核心"
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -51,7 +51,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/1d/02/29/1d0229c3-9f2b-74c0-1317-49e7a79cee23/mzaf_1327268492403311652.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/a7/1a/9a/a71a9a48-6b57-c6b3-5073-f714993ef7e0/mzaf_7088635836985793561.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T04:08:31Z",
@@ -95,12 +95,21 @@
       },
       "ratings": {
         "classic": 5,
-        "obscurity": 4,
+        "obscurity": 3,
         "accessibility": 3,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-23T04:08:31Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；二〇〇七年《京鄉新聞》與가슴네트워크韓國大眾音樂百大名盤第七、銷量破百萬，韓國迷幻搖滾公認的最高點"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：2018 韓國百大名盤第 3；冷門度 4→3",
+        "previous": {
+          "classic": 5,
+          "obscurity": 4,
+          "accessibility": 3,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-23T04:08:31Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；二〇〇七年《京鄉新聞》與가슴네트워크韓國大眾音樂百大名盤第七、銷量破百萬，韓國迷幻搖滾公認的最高點",
+          "rarity": "epic"
+        }
       },
       "rarity": "epic",
       "apexAssessment": {
@@ -113,7 +122,7 @@
         ]
       },
       "description": {
-        "text": "申重鉉一九七二年與貝斯手이남이、鼓手김호식組成엽전들（葉錢們），一九七四年由지구레코드發行首張作品。開場的〈미인〉把美軍基地磨出來的 fuzz 吉他扣在五聲音階的旋律上，單張銷量破百萬；歌詞「한번 보고 두번 보고」被樂迷改字影射朴正熙取消連任限制，成了當局盯上的理由。一九七五年十二月申重鉉因大麻案被聲請羈押，樂隊隨即解散。二〇〇七年韓國大眾音樂百大名盤列第七。",
+        "text": "《신중현과 엽전들 1집》是신중현과 엽전들（Shin Joong-hyun & Yeopjeondeul）1974 年的第一張專輯，被視為韓國大眾音樂最重要的專輯之一；碟中的〈미인〉流傳極廣，被叫做「三千萬人之歌」。被尊稱為「韓國搖滾教父」的신중현 1972 年在首爾組團，自己彈吉他並主唱，이남이彈貝斯、김호식打鼓。音樂被歸為迷幻搖滾、硬搖滾與藍調搖滾，是帶著韓國味的搖滾，歌詞平白、節奏簡單、容易跟唱。學生與勞工改詞傳唱的〈미인〉被視為影射長期執政，1975 年遭禁；同年底신중현因大麻案被聲請羈押，隔年當局禁止一批藝人演出，樂團就此解散。",
         "sourceUrls": [
           "https://en.wikipedia.org/wiki/Shin_Jung_Hyun_%26_Yup_Juns",
           "https://ko.wikipedia.org/wiki/%ED%95%9C%EA%B5%AD%EB%8C%80%EC%A4%91%EC%9D%8C%EC%95%85_100%EB%8C%80_%EB%AA%85%EB%B0%98",
@@ -166,12 +175,21 @@
       },
       "ratings": {
         "classic": 5,
-        "obscurity": 4,
+        "obscurity": 3,
         "accessibility": 3,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-23T04:08:31Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；二〇〇七年韓國大眾音樂百大名盤第五，被稱為韓國樂史最具問題性的出道作，二〇二四年英國樂媒再評亦高"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：2018 韓國百大名盤第 5（新歌集即 1 集）；冷門度 4→3",
+        "previous": {
+          "classic": 5,
+          "obscurity": 4,
+          "accessibility": 3,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-23T04:08:31Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；二〇〇七年韓國大眾音樂百大名盤第五，被稱為韓國樂史最具問題性的出道作，二〇二四年英國樂媒再評亦高",
+          "rarity": "epic"
+        }
       },
       "rarity": "epic",
       "apexAssessment": {
@@ -184,7 +202,7 @@
         ]
       },
       "description": {
-        "text": "김창완、김창훈、김창익三兄弟一九七七年十二月由서라벌레코드推出的出道盤。錄音時김창훈用的是國產廉價貝斯，김창완用的是菲律賓樂團丟棄的二手吉他，後來向樂評이백천借琴重錄；因為練到閉眼能彈，整張一天錄完，김창완為此放棄了同日的銀行考試。〈아니 벌써〉粗礪的吉他與業餘感讓當年聽眾直呼怪異，卻在二十天內賣出四十萬張。封面是김창완用左手模仿孩童筆觸畫成。",
+        "text": "《산울림 1집 (아니 벌써)》是김창완（Kim Chang-wan）三兄弟組成的산울림（Sanullim）的出道專輯，被視為韓國大眾音樂最重要的專輯之一，也被看作補上了신중현과 엽전들之後韓國搖滾的空白、建立起韓式搖滾的新典型。1977 年 10 月在首爾 Seoul Studio 錄音，김창완用的是菲律賓樂團丟棄的二手吉他，錄不好就連夜向評論家借樂器重錄，三人練到閉眼也能彈，一天錄完。音樂是迷幻而放克的搖滾，演奏不修工整，歌詞低聲吟誦，不用既有歌謠的뽕짝節奏。發行時被說是「怪異的音樂」，卻在 20 天內掀起旋風。",
         "sourceUrls": [
           "https://ko.wikipedia.org/wiki/%EC%82%B0%EC%9A%B8%EB%A6%BC_1%EC%A7%91",
           "https://ko.wikipedia.org/wiki/%EC%82%B0%EC%9A%B8%EB%A6%BC",
@@ -193,7 +211,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/dc/13/ee/dc13ee2c-a662-b7a7-f9ae-b2beebcd2db6/mzaf_1437753529657480410.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/9a/fb/a5/9afba588-4617-4667-9e19-a8dad4bcc476/mzaf_17935672217330007463.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T04:08:31Z",
@@ -237,12 +255,21 @@
       },
       "ratings": {
         "classic": 5,
-        "obscurity": 4,
+        "obscurity": 3,
         "accessibility": 3,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-23T04:08:31Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；二〇〇七年韓國大眾音樂百大名盤第六，公認산울림 사이키델릭 手法最完整的一張，二〇二四年 Uncut 給九分"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：韓國百大名盤2007第5–6、2018第7；國內榜首級前段，跨國來源少，強度1",
+        "previous": {
+          "classic": 5,
+          "obscurity": 4,
+          "accessibility": 3,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-23T04:08:31Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；二〇〇七年韓國大眾音樂百大名盤第六，公認산울림 사이키델릭 手法最完整的一張，二〇二四年 Uncut 給九分",
+          "rarity": "epic"
+        }
       },
       "rarity": "epic",
       "apexAssessment": {
@@ -261,7 +288,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/64/e3/e6/64e3e6bf-3f37-4f5a-5154-1e833185156a/mzaf_17256140433964305899.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e7/89/fc/e789fce4-1cc5-6a2b-f30f-6b70066580d7/mzaf_14284762625177228934.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T04:08:31Z",
@@ -446,17 +473,29 @@
         "classic": 4,
         "obscurity": 5,
         "accessibility": 3,
-        "listeners": null,
+        "listeners": 148,
         "source": "manual:genre-anchors",
         "checkedAt": "2026-08-23T04:08:31Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；二〇〇七年韓國大眾音樂百大名盤第六十九，韓國 acid folk 的國際代表作，但發行量極小、聽眾圈窄"
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；二〇〇七年韓國大眾音樂百大名盤第六十九，韓國 acid folk 的國際代表作，但發行量極小、聽眾圈窄",
+        "listenersSource": "worker /album-rating（apex-rebalance-20261103 Q2 補值）"
       },
       "rarity": "epic",
       "apexAssessment": {
-        "eligible": false,
-        "tier": null,
-        "reason": "百大名盤第六十九屬明確地位但非史上核心；初版 LP 僅三百六十五張、藝人長期隱居，疑似 pearl，待店主補 listeners 覆核",
-        "evidenceUrls": []
+        "eligible": true,
+        "tier": "pearl",
+        "reason": "頂點重整（apex-rebalance-20261103，2026-11-03）：升為流亡。韓國 acid folk 邪典歌手的復出作，入選韓國流行百大專輯；屬圈外幾乎無人知的名作，但 2002 年 CD 並非稀有壓量",
+        "evidenceUrls": [
+          "https://www.last.fm/music/%EA%B9%80%EB%91%90%EC%88%98/%EC%9E%90%EC%9C%A0%ED%98%BC",
+          "https://preining.info/blog/?p=5038"
+        ],
+        "previous": {
+          "eligible": false,
+          "tier": null,
+          "reason": "百大名盤第六十九屬明確地位但非史上核心；初版 LP 僅三百六十五張、藝人長期隱居，疑似 pearl，待店主補 listeners 覆核",
+          "evidenceUrls": []
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:apex-rebalance-20261103"
       },
       "description": {
         "text": "김두수在一九九一年《보헤미안》之後隔了十一年才交出的第四張作品，二〇〇二年一月先以三百六十五張限量 LP 發行，同年三月才出 CD。全輯詞曲、編曲與製作一手包辦，在 NADA Studio 錄成：吉他多是單線行走，人聲貼得極近，〈들꽃〉〈기슭으로 가는 배〉〈나비〉一路維持稀疏的 acid folk 質地。二〇〇七年韓國大眾音樂百大名盤列第六十九。",
@@ -489,8 +528,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": true,
-        "apexPool": false
+        "seedCards": false,
+        "apexPool": true
       }
     },
     {
@@ -519,7 +558,7 @@
         "checkedAt": "2026-08-23T04:08:31Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；二〇〇七年韓國大眾音樂百大名盤第三十九，동아기획一系韓國都市民謠的源頭之作"
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -536,7 +575,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/ca/4d/a2/ca4da279-f402-cbb7-c6c7-3cb34b488c97/mzaf_1477004221710648925.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/4d/c7/e4/4dc7e41c-e06d-02b8-26bd-92bffee23b5f/mzaf_16781232285797770364.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T04:08:31Z",
@@ -580,12 +619,21 @@
       },
       "ratings": {
         "classic": 5,
-        "obscurity": 4,
+        "obscurity": 3,
         "accessibility": 2,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-23T04:08:31Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；二〇〇七年《京鄉新聞》與가슴네트워크韓國大眾音樂百大名盤第一名，韓國언더그라운드的開端"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：2007 韓國百大名盤第 1、2018 第 2；韓語圈主流，冷門度 4→3",
+        "previous": {
+          "classic": 5,
+          "obscurity": 4,
+          "accessibility": 2,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-23T04:08:31Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；二〇〇七年《京鄉新聞》與가슴네트워크韓國大眾音樂百大名盤第一名，韓國언더그라운드的開端",
+          "rarity": "uncommon"
+        }
       },
       "rarity": "uncommon",
       "apexAssessment": {
@@ -598,7 +646,7 @@
         ]
       },
       "description": {
-        "text": "一九八五年九月由서라벌레코드發行、樂團自任製作，在서울스튜디오錄成。전인권近乎嘶吼的唱腔配上최성원的貝斯與허성욱的鍵盤，〈행진〉〈그것만이 내 세상〉不靠電視打歌，全憑現場演出與唱片本身傳開，替韓國언더그라운드打開了通路。當年唱片必須收錄的건전가요，他們改用無伴奏合唱的〈우리의 소원〉頂替。二〇〇七年韓國大眾音樂百大名盤票選第一名。",
+        "text": "《들국화 1집 (행진)》是들국화（Deulgukhwa）的首張專輯，常被視為韓國最重要的專輯之一，也被看作 1980 年代新音樂的開始，開啟了以創作者為中心的韓國大眾音樂文藝復興。1985 年由전인권、최성원、허성욱、조덕환四人自任製作，在首爾 Seoul Studio 以多軌錄成，曲子多先用卡式錄音機打底。編制以原音吉他、鋼琴與合成器為底，전인권與최성원主唱並彈原音吉他，허성욱的鍵盤被形容為克制，另有豎笛；曲子洗練，貼近當時西方流行的走向。當時專輯結尾須收「健全歌謠」，他們改放一段無伴奏合唱的〈우리의 소원〉。",
         "sourceUrls": [
           "https://ko.wikipedia.org/wiki/%ED%96%89%EC%A7%84_(%EC%9D%8C%EB%B0%98)",
           "https://ko.wikipedia.org/wiki/%EB%93%A4%EA%B5%AD%ED%99%94_(%EB%B0%B4%EB%93%9C)",
@@ -607,7 +655,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/33/f4/50/33f4507a-b076-c25f-6601-573deb1bd7d4/mzaf_15368896863200438031.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/38/fb/05/38fb0578-c32f-5fba-80ae-a72be35784d6/mzaf_15822574434953244220.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T04:08:31Z",
@@ -651,14 +699,23 @@
       },
       "ratings": {
         "classic": 5,
-        "obscurity": 4,
+        "obscurity": 3,
         "accessibility": 1,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-23T04:08:31Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；二〇〇七年百大名盤第二、二〇一八年 Melon 與《한겨레》名盤百選第一，韓國발라드的原點"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：2018 韓國百大名盤第 1；韓語圈主流，冷門度 4→3",
+        "previous": {
+          "classic": 5,
+          "obscurity": 4,
+          "accessibility": 1,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-23T04:08:31Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；二〇〇七年百大名盤第二、二〇一八年 Melon 與《한겨레》名盤百選第一，韓國발라드的原點",
+          "rarity": "rare"
+        }
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": true,
         "tier": "hall",
@@ -669,7 +726,7 @@
         ]
       },
       "description": {
-        "text": "유재하出身漢陽大學作曲系，一九八四年曾任조용필과 위대한 탄생的鍵盤手。一九八七年八月他自作詞曲、自任編曲，並在서울스튜디오幾乎獨力彈完全部樂器，完成這張唯一的作品：以轉調推進的和聲走法，加上長笛、小提琴、雙簧管與大提琴的編寫，把발라드從既有的歌謠腔裡拉開。發行兩個多月後他因車禍身故，得年二十五。一九八九年起設有유재하 음악경연대회。",
+        "text": "《사랑하기 때문에》是유재하（Yoo Jae-ha）唯一的專輯，常被列為韓國大眾音樂最重要的專輯之一，也被視為韓國第一張由一人包辦詞曲與編曲的流行專輯；韓國抒情歌的轉變常被認為從這張開始。1986 年底到 1987 年初在首爾 Seoul Studio 自費錄成，鼓與貝斯另請樂手，其餘多由他自己演奏。歌曲以當時少見的轉調推進，在鼓、吉他、鍵盤之外加進長笛、雙簧管、豎笛、法國號與大提琴，〈Minuet〉是弦樂三重奏；他的唱法克制、近乎低語，不走高音的力量型唱法。唱片起初賣得不好，同年 11 月他車禍身亡，之後才熱賣。",
         "sourceUrls": [
           "https://ko.wikipedia.org/wiki/%EC%82%AC%EB%9E%91%ED%95%98%EA%B8%B0_%EB%95%8C%EB%AC%B8%EC%97%90_(%EC%9D%8C%EB%B0%98)",
           "https://ko.wikipedia.org/wiki/%EC%9C%A0%EC%9E%AC%ED%95%98",
@@ -678,7 +735,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/7a/90/09/7a90092d-655f-3a6e-b44c-e066798bb4bf/mzaf_17896396630365946783.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/34/8f/cb/348fcb48-9de4-5964-bdc2-0a817465c096/mzaf_1227383198204379883.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T04:08:31Z",
@@ -729,7 +786,7 @@
         "checkedAt": "2026-08-23T04:08:31Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；韓國第一張銷量破百萬的單張唱片、八〇年代韓國歌謠統治的起點，二〇〇七年百大名盤第二十九"
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -746,7 +803,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/a5/3f/ed/a53fed9f-07f8-8425-43ac-40a3e608fae3/mzaf_12159473921273861785.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/24/ea/92/24ea922d-06ef-ff27-914b-1c293c5514e0/mzaf_5147048630698193007.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T04:08:31Z",
@@ -797,7 +854,7 @@
         "checkedAt": "2026-08-23T04:08:31Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；〈서울 서울 서울〉與〈모나리자〉所在的後期代表作，地位明確但不及正規 1 집與 7 집"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -813,7 +870,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/95/fc/95/95fc95cb-7845-0f14-ba52-e5a0dd057d61/mzaf_9839651151330557129.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/61/a3/b9/61a3b9e4-8a78-9a9d-0c60-a16ef7fae880/mzaf_16593679048235499327.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T04:08:31Z",
@@ -881,7 +938,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/59/ff/79/59ff7961-f09a-f7f0-efb2-c0ff3cc123f6/mzaf_10579662540050810915.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e6/3b/04/e63b0476-0db1-f405-02ee-aa822b33411b/mzaf_6355364134988151913.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T04:08:31Z",
@@ -926,12 +983,21 @@
       },
       "ratings": {
         "classic": 5,
-        "obscurity": 4,
+        "obscurity": 3,
         "accessibility": 2,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-23T04:08:31Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；韓國《대중음악 100대 명반》第4位、韓國 folk／fusion 公認核心盤；當年銷量平平，屬深度愛好者領域，但入耳門檻低。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：2018 韓國百大名盤第 6；冷門度 4→3",
+        "previous": {
+          "classic": 5,
+          "obscurity": 4,
+          "accessibility": 2,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-23T04:08:31Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；韓國《대중음악 100대 명반》第4位、韓國 folk／fusion 公認核心盤；當年銷量平平，屬深度愛好者領域，但入耳門檻低。",
+          "rarity": "uncommon"
+        }
       },
       "rarity": "uncommon",
       "apexAssessment": {
@@ -944,7 +1010,7 @@
         ]
       },
       "description": {
-        "text": "조동익（1960 年生）與 이병우（1965 年生）的雙人組首作，封面上那組數字就是兩人的出生年。1986 年由 조동진 製作、서라벌레코드 發行。編曲刻意留白，木吉他與貝斯托著人聲走，長達七分多鐘的〈오후만 있던 일요일〉幾乎不催和聲，〈하늘〉〈겨울하루〉也維持同一種低音量。發行當時反應平淡，日後在韓國《대중음악 100대 명반》被列到第 4 位。末軌〈이나라 주인되어〉為건전가요。",
+        "text": "《어떤날 I》是雙人民謠團體어떤날（Eotteonnal）的第一張專輯，常被列為韓國大眾音樂最重要的專輯之一；1986 年發行時並未廣受歡迎，後來因為音樂的水準成了傳奇專輯。어떤날是조동익與以指彈聞名的吉他手이병우在 1984 年組成的計畫性團體，專輯由조동익的哥哥、民謠歌手조동진製作。十首歌由兩人分寫，〈하늘〉〈겨울하루〉〈오후만 있던 일요일〉等五首由이병우作曲，〈오래된친구〉〈비오는 날이면〉等四首由조동익詞曲。音樂被形容為平靜、淡然，最長的〈오후만 있던 일요일〉有 7 分 19 秒；封面的「1960 1965」是兩人的出生年。",
         "sourceUrls": [
           "https://ko.wikipedia.org/wiki/어떤날_I",
           "https://ko.wikipedia.org/wiki/어떤날",
@@ -953,7 +1019,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/de/a0/04/dea00443-2f23-e7f0-d85a-2553c1265222/mzaf_11170657127436795689.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/a8/69/5c/a8695c94-ccac-7d9f-a143-4cf60e2863b1/mzaf_6163742754886311756.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T04:08:31Z",
@@ -997,15 +1063,24 @@
         "visuallyVerified": true
       },
       "ratings": {
-        "classic": 5,
-        "obscurity": 4,
-        "accessibility": 3,
+        "classic": 4,
+        "obscurity": 3,
+        "accessibility": 2,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-23T04:08:31Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；韓國《대중음악 100대 명반》第11位；編曲與錄音水準公認，但多首逾七分鐘的長曲與單一音色使入耳略需時間。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：二輯重要，名盤前段是首張；韓語圈外少見→3",
+        "previous": {
+          "classic": 5,
+          "obscurity": 4,
+          "accessibility": 3,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-23T04:08:31Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；韓國《대중음악 100대 명반》第11位；編曲與錄音水準公認，但多首逾七分鐘的長曲與單一音色使入耳略需時間。",
+          "rarity": "epic"
+        }
       },
-      "rarity": "epic",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -1022,7 +1097,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/1a/c7/73/1ac7737c-476a-4681-656e-d69c3e5ab23c/mzaf_15466860666837676303.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/4f/f6/f7/4ff6f7ad-5a5b-45a9-6ad5-961308619be7/mzaf_6511394498429862662.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T04:08:31Z",
@@ -1066,12 +1141,21 @@
       },
       "ratings": {
         "classic": 5,
-        "obscurity": 4,
+        "obscurity": 3,
         "accessibility": 2,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-23T04:08:31Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；韓國《대중음악 100대 명반》第14位、하덕규 詞曲的韓國 folk 代表盤；編制精簡旋律直白，但海外流通稀少。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：百大名盤1998第5、2007／2018第14；未到榜首級；韓語一線→3",
+        "previous": {
+          "classic": 5,
+          "obscurity": 4,
+          "accessibility": 2,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-23T04:08:31Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；韓國《대중음악 100대 명반》第14位、하덕규 詞曲的韓國 folk 代表盤；編制精簡旋律直白，但海外流通稀少。",
+          "rarity": "uncommon"
+        }
       },
       "rarity": "uncommon",
       "apexAssessment": {
@@ -1090,7 +1174,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/42/4f/82/424f82b7-eab3-9318-4cf1-32683e821143/mzaf_13180625576477268429.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/cb/c8/8f/cbc88f61-5790-a260-ad1b-15ba50d907c5/mzaf_8798085052351055732.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T04:08:31Z",
@@ -1142,7 +1226,7 @@
         "checkedAt": "2026-08-23T04:08:31Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；入選韓國《대중음악 100대 명반》、韓國 fusion jazz 系公認代表首作；編曲清晰易入耳，但海外能見度低。"
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -1159,7 +1243,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/be/15/f8/be15f817-c530-1765-1fe1-a5b640961ee6/mzaf_9186286474540553042.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ca/51/47/ca514730-5217-bb54-6322-9493e9169181/mzaf_12037716503741030766.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T04:08:31Z",
@@ -1210,7 +1294,7 @@
         "checkedAt": "2026-08-23T04:08:31Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；韓國《대중음악 100대 명반》第88位、동아기획 系 fusion 樂隊代表首作；旋律直白但屬樂迷至深度愛好者領域。"
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -1227,7 +1311,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/2f/3a/ef/2f3aefe1-8eab-de2c-dadd-32bbdbce3771/mzaf_11485994058342412753.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/fc/7c/30/fc7c30ad-b2ca-4039-ea9e-d1c09a901af5/mzaf_16601334798432020607.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T04:08:31Z",
@@ -1273,25 +1357,42 @@
       "ratings": {
         "classic": 5,
         "obscurity": 2,
-        "accessibility": 1,
+        "accessibility": 2,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-23T04:08:31Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；韓國流行音樂的斷代作，出道盤銷量紀錄保持者且列《대중음악 100대 명반》第24位；旋律與節拍直白，屬大眾曲目。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：2007 韓國百大名盤第 24，K-pop 起點；硬蕊 1→2",
+        "previous": {
+          "classic": 5,
+          "obscurity": 2,
+          "accessibility": 1,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-23T04:08:31Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；韓國流行音樂的斷代作，出道盤銷量紀錄保持者且列《대중음악 100대 명반》第24位；旋律與節拍直白，屬大眾曲目。",
+          "rarity": "rare"
+        }
       },
       "rarity": "uncommon",
       "apexAssessment": {
         "eligible": true,
         "tier": "hall",
-        "reason": "公認為韓國流行音樂產業轉向的分界作，跨語圈長期共識明確，銷量與榜單地位皆有可查證記錄，足列該領域史上核心。",
+        "reason": "店主 2026-11-03 定案殿堂擴充（hall-expansion-20261103）：升為殿堂。",
         "evidenceUrls": [
-          "https://ko.wikipedia.org/wiki/Seotaiji_and_Boys_1",
-          "https://en.wikipedia.org/wiki/Seo_Taiji_and_Boys",
-          "https://ko.wikipedia.org/wiki/한국대중음악_100대_명반"
-        ]
+          "https://www.last.fm/music/%EC%84%9C%ED%83%9C%EC%A7%80%EC%99%80%20%EC%95%84%EC%9D%B4%EB%93%A4/%EC%84%9C%ED%83%9C%EC%A7%80%EC%99%80%20%EC%95%84%EC%9D%B4%EB%93%A4",
+          "https://musicbrainz.org/release-group/56946299-2041-3758-a3f8-b33636c9300e"
+        ],
+        "previous": {
+          "eligible": false,
+          "tier": null,
+          "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。K-pop 起點，國內里程碑（5）",
+          "evidenceUrls": [],
+          "source": "manual:audit-20261102"
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:hall-expansion-20261103"
       },
       "description": {
-        "text": "金屬樂隊 시나위 貝斯手出身的 서태지 帶著 양현석、이주노 於 1992 年推出的首作，作曲、編曲與錄音幾乎由他一人完成。〈난 알아요〉把韓語饒舌接上強拍舞曲，〈환상 속의 그대〉續推同一路子，〈Rock'N Roll Dance〉的曲則掛 Angus Young 之名。首次電視演出評審只給平均 7.8 分，唱片卻賣出約 170 萬張，至今仍是韓國銷量最高的出道專輯，也把十來歲聽眾推成唱片市場主力。",
+        "text": "《서태지와 아이들》是서태지와 아이들（Seo Taiji and Boys）的首張專輯，賣出約 170 萬張，被視為 K-pop 與韓國偶像產業的起點之一，讓舞曲成為韓國主流，也讓十幾歲聽眾成為唱片市場主力。1992 年發行，金屬樂團 Sinawe 貝斯手出身的서태지包辦大部分作曲、編曲與編程，양현석與이주노負責饒舌與編舞。曲風混合 new jack swing、techno、R&B 與嘻哈，〈난 알아요〉以韓語饒舌搭強拍舞曲，〈환상 속의 그대〉取樣 Bart Simpson 的聲音，〈Rock'N Roll Dance〉取樣 AC/DC。",
         "sourceUrls": [
           "https://ko.wikipedia.org/wiki/Seotaiji_and_Boys_1",
           "https://en.wikipedia.org/wiki/Seo_Taiji_and_Boys",
@@ -1300,7 +1401,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/38/f1/71/38f1717e-144a-bd34-d037-887899f1b7b8/mzaf_9273942356269570645.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/df/44/4d/df444d36-87ec-7246-25c1-6cf94b7f3888/mzaf_14811884677455670202.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T04:08:31Z",
@@ -1368,7 +1469,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/8d/b8/3a/8db83a18-522b-c9e5-1f81-9092166ab997/mzaf_16343824968120064240.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ad/c9/10/adc91018-618b-7ed0-257a-b46eefbfcfc7/mzaf_1899059674805069039.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T04:08:31Z",
@@ -1437,7 +1538,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview114/v4/21/65/9b/21659bf3-24be-408a-bd23-f404c25010d3/mzaf_12632761693478647696.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview114/v4/c8/0e/df/c80edf6c-f0a2-ab3e-bdca-bef383896667/mzaf_10169409065994515884.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T04:08:31Z",
@@ -1488,7 +1589,7 @@
         "checkedAt": "2026-08-23T04:08:31Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；韓國《대중음악 100대 명반》第16位、約280萬張銷量並獲골든디스크 음반 대상，是韓國 팝 발라드 成形期的定型之作。"
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -1505,7 +1606,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/de/6c/ad/de6cad88-2f01-30f6-a9dc-31c931c8c249/mzaf_6860068855885512111.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/7e/d4/d3/7ed4d3de-f165-8d36-bf4a-383018a3a25f/mzaf_13571489451374440466.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T04:08:31Z",
@@ -1562,7 +1663,7 @@
         "checkedAt": "2026-08-23T04:08:31Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；韓國《대중음악 100대 명반》第25位、韓國 모던포크 的致敬正典，也是 김광석 最流通的錄音；木吉他與人聲為主，入耳直白。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -1579,7 +1680,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/8f/20/b3/8f20b317-d641-80f6-5f7f-63651b9858b0/mzaf_15476468297653456134.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/3c/76/87/3c768740-14ac-3c0c-d263-848614420725/mzaf_5595195239773194446.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T04:08:31Z",
@@ -1630,7 +1731,7 @@
         "checkedAt": "2026-08-23T04:08:31Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；2000年代末韓國獨立場景的突破盤，銷量約五萬張並入選소리바다 2000年代名盤百選；當時樂評分歧，故不予更高分。"
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -1647,7 +1748,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/51/d8/e6/51d8e69d-8ebd-bf64-b7e0-a135f2db800e/mzaf_11387679180036253512.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/ad/da/d3/addad3ac-0c49-b4c5-d522-a2abce78eceb/mzaf_9660419250156814464.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T04:08:31Z",
@@ -1691,14 +1792,23 @@
       },
       "ratings": {
         "classic": 4,
-        "obscurity": 2,
+        "obscurity": 3,
         "accessibility": 2,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-23T04:08:31Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；首張正規即拿下한국대중음악상年度歌曲、가온榜第 5，是 K-indie 走向大眾與海外的門面，但入耳門檻低、能見度高。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：韓國獨立搖滾代表作之一，圈外知名度有限｜L=112103",
+        "previous": {
+          "classic": 4,
+          "obscurity": 2,
+          "accessibility": 2,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-23T04:08:31Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；首張正規即拿下한국대중음악상年度歌曲、가온榜第 5，是 K-indie 走向大眾與海外的門面，但入耳門檻低、能見度高。",
+          "rarity": "rare"
+        }
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -1715,7 +1825,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/f6/ba/4b/f6ba4b3a-0368-479e-86f0-6298f51ed0cf/mzaf_9101575353330784472.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e9/e0/ef/e9e0ef75-67e5-db9b-3e41-2ed66475f696/mzaf_18444971851154771095.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T04:08:31Z",
@@ -1766,7 +1876,7 @@
         "checkedAt": "2026-08-23T04:08:31Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；멜론月榜冠軍與한국대중음악상年度歌曲加持，是韓國獨立樂團史上最暢銷的作品之一，旋律直白好入口。"
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -1783,7 +1893,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/39/b4/c4/39b4c43c-f356-f46e-8055-b59f0d1bd19c/mzaf_12686605279587495674.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b1/a4/0a/b1a40a3e-65ca-f51b-3bb9-12145d970895/mzaf_509885747699732949.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T04:08:31Z",
@@ -1840,7 +1950,7 @@
         "checkedAt": "2026-08-23T04:08:31Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；出道 EP 即獲한국대중음악상年度新人與最佳搖滾歌曲，是新世代韓國樂團的起點，但作品體量小、樂迷領域為主。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -1856,7 +1966,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/ce/37/19/ce371982-c979-8523-4e6b-521dba030db0/mzaf_12748184405855995015.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b5/99/b2/b599b20b-cc17-649f-b1bf-21ec0e995f20/mzaf_17554607523643450847.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T04:08:31Z",
@@ -1924,7 +2034,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/7c/44/9f/7c449fde-1126-371a-ae01-23d9f7313853/mzaf_4434465929064451180.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/04/01/84/04018428-84ad-3182-ed5f-53562a4d1b4d/mzaf_13673237544970719259.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T04:08:31Z",
@@ -1992,7 +2102,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/c2/64/74/c26474ef-f586-ba3c-92bb-a2182bf8564e/mzaf_14825609437576735382.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/63/f0/53/63f053f9-84c1-ea11-6298-bbef1706a3a5/mzaf_22241342646930843.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T04:08:31Z",
@@ -2035,15 +2145,24 @@
         "visuallyVerified": true
       },
       "ratings": {
-        "classic": 5,
+        "classic": 4,
         "obscurity": 3,
         "accessibility": 2,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-23T04:08:31Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；한국대중음악상最佳現代搖滾專輯，並列名멜론／한겨레「명반 100」第 73，是 2000 年代홍대 indie pop 的標準文本。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：韓國獨立代表作之一，無跨來源正典",
+        "previous": {
+          "classic": 5,
+          "obscurity": 3,
+          "accessibility": 2,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-23T04:08:31Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；한국대중음악상最佳現代搖滾專輯，並列名멜론／한겨레「명반 100」第 73，是 2000 年代홍대 indie pop 的標準文本。",
+          "rarity": "uncommon"
+        }
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -2061,7 +2180,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/f2/45/65/f24565b6-1d7b-ef67-e484-9eb9a61be138/mzaf_9172851488101724648.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ad/e2/4e/ade24e58-ceaa-011f-4ff0-60b83b4ce8d3/mzaf_13791806651521067531.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T04:08:31Z",
@@ -2114,13 +2233,21 @@
       },
       "rarity": "uncommon",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "멜론／한겨레「한국 대중음악 명반 100」第 50 名，加上한국대중음악상年度專輯，跨來源長期共識足列韓國獨立搖滾史核心。",
-        "evidenceUrls": [
-          "https://ko.wikipedia.org/wiki/가장_보통의_존재",
-          "https://ko.wikipedia.org/wiki/한국_대중음악_명반_100"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。韓國獨立搖滾年度盤，國內級",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "멜론／한겨레「한국 대중음악 명반 100」第 50 名，加上한국대중음악상年度專輯，跨來源長期共識足列韓國獨立搖滾史核心。",
+          "evidenceUrls": [
+            "https://ko.wikipedia.org/wiki/가장_보통의_존재",
+            "https://ko.wikipedia.org/wiki/한국_대중음악_명반_100"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "언니네이발관第五張正規，2008 年 8 月 8 日經쌈넷發行，距前作《순간을 믿어요》四年。이석원與이능룡包辦全部作曲、이석원獨力作詞；每首混音重做十五次，母帶又花八天。樂團刻意避開過往的민요色彩而向黑人音樂的律動取徑，이석원要求聽者從第一軌依序聽完，全碟以單一主題貫串。獲한국대중음악상年度專輯等三項，並列「한국 대중음악 명반 100」第 50 名。",
@@ -2132,7 +2259,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/03/33/54/03335475-1531-b9cc-70ac-fc2b89090900/mzaf_6554693492456516341.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a3/31/80/a33180ee-6ce0-9187-4d9a-7d37fc635c61/mzaf_3138117906187562293.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T04:08:31Z",
@@ -2153,8 +2280,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": false,
-        "apexPool": true
+        "seedCards": true,
+        "apexPool": false
       }
     },
     {
@@ -2175,23 +2302,40 @@
         "visuallyVerified": true
       },
       "ratings": {
-        "classic": 5,
+        "classic": 4,
         "obscurity": 3,
         "accessibility": 2,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-23T04:08:31Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；「한국 대중음악 명반 100」第 18 名，韓國獨立第一世代的開山作，〈챠우챠우〉已是全時代標準曲。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：韓國獨立搖滾重要出道作，場景里程碑但非人人必提",
+        "previous": {
+          "classic": 5,
+          "obscurity": 3,
+          "accessibility": 2,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-23T04:08:31Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；「한국 대중음악 명반 100」第 18 名，韓國獨立第一世代的開山作，〈챠우챠우〉已是全時代標準曲。",
+          "rarity": "uncommon"
+        }
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "멜론／한겨레「명반 100」第 18 名，且被視為韓國인디文化起點的關鍵作，跨來源長期共識足列史上核心。",
-        "evidenceUrls": [
-          "https://ko.wikipedia.org/wiki/Deli_Spice",
-          "https://ko.wikipedia.org/wiki/한국_대중음악_명반_100"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。韓國獨立搖滾出道作，國內場景級",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "멜론／한겨레「명반 100」第 18 名，且被視為韓國인디文化起點的關鍵作，跨來源長期共識足列史上核心。",
+          "evidenceUrls": [
+            "https://ko.wikipedia.org/wiki/Deli_Spice",
+            "https://ko.wikipedia.org/wiki/한국_대중음악_명반_100"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "델리스파이스 1995 年由 PC 通訊하이텔的모던록同好會集結而成，김민규當年在板上貼出「想做 U2 和 R.E.M. 那樣的音樂」的徵人啟事。1997 年 8 月 8 日發行的同名首作共十一曲，捨棄地下헤비메탈路線，改以清脆刷弦與唯美旋律鋪陳。〈차우차우〉整首只繞著「너의 목소리가 들려」一句，2002 年因電影《후아유》再度翻紅；〈No Carrier〉取自連線中斷的提示。列「한국 대중음악 명반 100」第 18 名。",
@@ -2204,7 +2348,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/71/95/0a/71950a09-ebae-c96c-3a2f-0b605c4405e8/mzaf_8045416471701859319.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/69/8c/69/698c695c-849c-365a-a37f-a81b15028402/mzaf_6696246110360796904.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T04:08:31Z",
@@ -2225,8 +2369,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": false,
-        "apexPool": true
+        "seedCards": true,
+        "apexPool": false
       }
     },
     {
@@ -2255,7 +2399,7 @@
         "checkedAt": "2026-08-23T04:08:31Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；韓國最長壽樂團之一的出道盤，〈일탈〉是 1990 年代末的標誌曲，但未進「명반 100」等主要名榜單。"
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -2272,7 +2416,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/5a/5e/52/5a5e52a5-3d1f-6e48-0796-e551027fcffe/mzaf_15470768223471573095.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ce/74/a9/ce74a975-1436-fc87-0186-561004610969/mzaf_11830106668339388233.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T04:08:31Z",
@@ -2323,7 +2467,7 @@
         "checkedAt": "2026-08-23T04:08:31Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Metacritic 80 分與한국대중음악상最佳搖滾專輯、最佳搖滾歌曲雙料，是韓國樂團打進國際獨立線的代表案例。"
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -2408,7 +2552,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/1c/0c/2c/1c0c2cd7-476f-a12d-7e71-31cdf79a9b4d/mzaf_10022061872272740959.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a1/18/11/a118115b-29cc-de48-6778-98db0255f5b6/mzaf_18232567120891197133.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T04:08:31Z",
@@ -2459,7 +2603,7 @@
         "checkedAt": "2026-08-23T04:08:31Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；韓國 modern rock 抒情路線的長銷標準盤，帶動樂團脫離模仿標籤，但未見於主要名榜單。"
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -2476,7 +2620,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview112/v4/00/5a/35/005a357f-1ca1-f4d2-5b7b-dedc2421ba54/mzaf_15005606890247945073.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f8/bb/0a/f8bb0ae0-6149-6343-47ad-5d180094827a/mzaf_10323278988755958996.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T04:08:31Z",
@@ -2533,7 +2677,7 @@
         "checkedAt": "2026-08-23T04:08:31Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；韓國 alternative R&B 的規格轉換點，《告示牌》2016 年度十大 K-pop 專輯第五名，但仍屬樂迷領域、入耳無門檻"
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -2549,7 +2693,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/d6/d1/2b/d6d12bca-59bf-ca0e-17be-1715083db23a/mzaf_6717131306487040537.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/da/00/29/da0029b4-e181-857b-cfaf-489de6999020/mzaf_1580396445101899353.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T04:08:31Z",
@@ -2600,7 +2744,7 @@
         "checkedAt": "2026-08-23T04:08:31Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Epik High 主腦停工後的復出正規一輯，拿下힙합플레이야 2011 年度專輯，但未進韓國名盤正典，且旋律取向易入耳"
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -2668,13 +2812,21 @@
       },
       "rarity": "epic",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "韓語饒舌押韻技法的建立者最完整的一次陳列，同時入選國家級名盤百選與韓國大眾音樂獎最佳嘻哈專輯，跨來源長期共識足列韓國嘻哈史核心",
-        "evidenceUrls": [
-          "https://ko.wikipedia.org/wiki/%ED%95%9C%EA%B5%AD_%EB%8C%80%EC%A4%91%EC%9D%8C%EC%95%85_%EB%AA%85%EB%B0%98_100",
-          "https://ko.wikipedia.org/wiki/%EB%88%84%EB%AA%85_(%EC%9D%8C%EB%B0%98)"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。韓國嘻哈首位級，屬「該國該類型第一名」＝5",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "韓語饒舌押韻技法的建立者最完整的一次陳列，同時入選國家級名盤百選與韓國大眾音樂獎最佳嘻哈專輯，跨來源長期共識足列韓國嘻哈史核心",
+          "evidenceUrls": [
+            "https://ko.wikipedia.org/wiki/%ED%95%9C%EA%B5%AD_%EB%8C%80%EC%A4%91%EC%9D%8C%EC%95%85_%EB%AA%85%EB%B0%98_100",
+            "https://ko.wikipedia.org/wiki/%EB%88%84%EB%AA%85_(%EC%9D%8C%EB%B0%98)"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "버벌진트（Verbal Jint，本名김진태）在 SNP 時期率先攤開韓語多音節押韻的可能性，這張 2008 年 7 月 11 日發行的正規二輯是那套技法最完整的一次陳列。原本只打算做首張《무명》的混音盤，作業期間接連被扣上各種「누명」（冤名），索性寫成一整套辯白：〈2008 대한민국〉、〈역사의 간지〉、〈Tight이란 낱말의 존재이유〉。全長一小時四十二分、雙 CD，第二片整片是混音輯，製作有더 콰이엇、JA、오래된엘피。2009 年獲第六屆韓國大眾音樂獎最佳嘻哈專輯。",
@@ -2685,7 +2837,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview112/v4/ff/29/6e/ff296e98-ba0f-e4ab-7c7e-72c5de47c15a/mzaf_16313159208129948357.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/80/be/51/80be5117-70f2-71f9-aa71-5b73eb1d7e64/mzaf_9039584334294539550.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T04:08:31Z",
@@ -2706,8 +2858,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": false,
-        "apexPool": true
+        "seedCards": true,
+        "apexPool": false
       }
     },
     {
@@ -2800,7 +2952,7 @@
         "checkedAt": "2026-08-23T04:08:31Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；獨立廠牌自主發行卻席捲韓國榜單的雙碟正規一輯，2010 年代末韓國 R&B／indie pop 的代表案例，入耳無門檻"
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -2816,7 +2968,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/c0/4a/24/c04a2483-72ad-c4a7-d567-3140e090cdc2/mzaf_7084293144923562498.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f3/e4/37/f3e4377b-88ca-b7ef-4010-28b87ca5bb4c/mzaf_15316372445374388072.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T04:08:31Z",
@@ -2867,7 +3019,7 @@
         "checkedAt": "2026-08-23T04:08:31Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；獲 2017 年韓國大眾音樂獎最佳 R&B／靈魂專輯，是 AOMG 體系工業化製作的標準樣本，但非跨世代正典"
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -2883,7 +3035,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/5c/e0/c8/5ce0c851-b201-330a-c074-46c19d6e2eb5/mzaf_7202311150015119718.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ca/05/e7/ca05e711-5624-6436-32e5-9592ddc33411/mzaf_6354387961237279546.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T04:08:31Z",
@@ -2926,15 +3078,24 @@
         "visuallyVerified": true
       },
       "ratings": {
-        "classic": 5,
+        "classic": 4,
         "obscurity": 2,
         "accessibility": 1,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-23T04:08:31Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；韓國偶像工業的起點盤，銷量逾一百五十萬張並保持 SM 最暢銷紀錄二十四年，曲風直白易入耳"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：韓國第一代偶像首作，K-pop 史重要；非殿堂",
+        "previous": {
+          "classic": 5,
+          "obscurity": 2,
+          "accessibility": 1,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-23T04:08:31Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；韓國偶像工業的起點盤，銷量逾一百五十萬張並保持 SM 最暢銷紀錄二十四年，曲風直白易入耳",
+          "rarity": "rare"
+        }
       },
-      "rarity": "uncommon",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -2950,7 +3111,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/b9/3a/58/b93a5806-0a73-9c9d-ba1c-fe29e54db2e8/mzaf_12973314473649694196.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/60/cf/2b/60cf2b9b-a138-dbe2-639e-8316b4ce9d8a/mzaf_3303167736917705860.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T04:08:31Z",
@@ -3001,7 +3162,7 @@
         "checkedAt": "2026-08-23T04:08:31Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；韓流出海策略的第一個成功樣本，BoA 韓語專輯銷量最高的一張，但音樂本身是標準 europop 舞曲"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -3017,7 +3178,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/95/55/70/9555707d-733e-e79c-8316-4b2f798f702f/mzaf_8256146321191964484.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/74/03/f4/7403f4da-fda6-0df1-3b0e-badc91baf2ba/mzaf_1299857761481147450.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T04:08:31Z",
@@ -3068,7 +3229,7 @@
         "checkedAt": "2026-08-23T04:08:31Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；2006 年韓國全年銷量冠軍、二世代偶像聲樂路線的高點，但作品評價未進正典層級"
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -3084,7 +3245,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/d7/fc/c4/d7fcc494-810d-46a8-4674-c7f9d1844467/mzaf_17351419847293870926.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a0/0d/ef/a00def7b-af1a-1913-0a42-506165bd8a4a/mzaf_10259166174441159396.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T04:08:31Z",
@@ -3135,7 +3296,7 @@
         "checkedAt": "2026-08-23T04:08:31Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；소녀시대商業高點的正規二輯，2010 年 Gaon 年榜第二，甜面 bubblegum pop 入耳零門檻"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -3151,7 +3312,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/7c/eb/10/7ceb1052-44f5-81e0-dab3-19e80c03ac61/mzaf_3793375742620578513.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d3/0f/2a/d30f2a32-148e-716c-c888-fa3d257c72ff/mzaf_6617427209061559731.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T04:08:31Z",
@@ -3202,7 +3363,7 @@
         "checkedAt": "2026-08-23T04:08:31Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；YG 女團首張正規、걸크러시路線的原點，拿下 2010 年 MAMA 與 Melon 年度專輯，但樂評對 auto-tune 用量有保留"
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -3218,7 +3379,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/e1/e2/2f/e1e22f15-f6eb-43e0-07fb-bb76d14e1034/mzaf_14509221348328771512.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/09/20/c0/0920c092-c63d-e3d9-aa99-9c03bf07104a/mzaf_7417463639386744178.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T04:08:31Z",
@@ -3271,13 +3432,21 @@
       },
       "rarity": "epic",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "跨來源長期共識明確：멜론／한겨레名盤百選唯一入選的偶像團體專輯、Fuse 2013 年度榜唯一 K-pop 盤、《告示牌》2019 年評為該年代最偉大 K-pop 專輯，足列該領域史上核心",
-        "evidenceUrls": [
-          "https://en.wikipedia.org/wiki/Pink_Tape_(f(x)_album)",
-          "https://ko.wikipedia.org/wiki/%ED%95%9C%EA%B5%AD_%EB%8C%80%EC%A4%91%EC%9D%8C%EC%95%85_%EB%AA%85%EB%B0%98_100"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。K-pop 類型榜首位，非跨類型綜合正典",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "跨來源長期共識明確：멜론／한겨레名盤百選唯一入選的偶像團體專輯、Fuse 2013 年度榜唯一 K-pop 盤、《告示牌》2019 年評為該年代最偉大 K-pop 專輯，足列該領域史上核心",
+          "evidenceUrls": [
+            "https://en.wikipedia.org/wiki/Pink_Tape_(f(x)_album)",
+            "https://ko.wikipedia.org/wiki/%ED%95%9C%EA%B5%AD_%EB%8C%80%EC%A4%91%EC%9D%8C%EC%95%85_%EB%AA%85%EB%B0%98_100"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "f(x) 的第二張正規盤，2013 年 7 月 29 日由 SM 發行，是韓國偶像流行被樂評正典收編的關鍵一例。底子是 synth-pop、electropop 與 EDM，主打〈첫 사랑니 (Rum Pum Pum Pum)〉之外，〈미행 (그림자)〉、〈Airplane〉、〈Goodbye Summer〉各自岔到不同質地，十二首曲序像換帶一樣一段段跳。登上 Gaon 與《告示牌》世界專輯榜冠軍；在멜론與한겨레邀四十七位樂評選出的韓國名盤一百張中列第九十六，是名單上唯一的偶像團體作品。",
@@ -3288,7 +3457,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/be/2b/6f/be2b6fee-b8f3-3cb8-e178-bb92a48da5d6/mzaf_10784417156856948009.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/50/ce/d3/50ced363-cca7-56b7-2195-a2d7e255cf18/mzaf_6167753047408917318.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T04:08:31Z",
@@ -3309,8 +3478,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": false,
-        "apexPool": true
+        "seedCards": true,
+        "apexPool": false
       }
     },
     {
@@ -3339,7 +3508,7 @@
         "checkedAt": "2026-08-23T04:08:31Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Billboard 列為 2010 年代第二名的 K-pop 專輯，swing／bossa nova 編制在主流韓國流行中少見，但仍是旋律導向的流行盤。"
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -3355,7 +3524,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/2a/5e/b7/2a5eb702-4daf-cc1b-2675-5339236bd68c/mzaf_15467888579998456732.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/36/30/4c/36304cc5-2003-fe49-ea8e-0f614b7a2b02/mzaf_2688949342763801173.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T04:08:31Z",
@@ -3406,7 +3575,7 @@
         "checkedAt": "2026-08-23T04:08:31Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Melon Music Awards 年度專輯、第 15 屆韓國大眾音樂獎最優秀流行專輯、Billboard 2017 年 K-pop 專輯榜首，且入選 EBS 韓國百大專輯，是 IU 作者性的公認代表作。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -3422,7 +3591,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/cc/4b/ea/cc4beab3-409a-ca43-2a95-7c6d2dcdd40e/mzaf_13866297747755854883.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/1f/02/ec/1f02ec43-61e0-b241-3832-16ce29c3d280/mzaf_8074590719931790363.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T04:08:31Z",
@@ -3465,23 +3634,40 @@
         "visuallyVerified": true
       },
       "ratings": {
-        "classic": 5,
+        "classic": 4,
         "obscurity": 1,
-        "accessibility": 2,
+        "accessibility": 1,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-23T04:08:31Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；首張登上 Billboard 200 冠軍的韓語專輯，並帶來韓國人第二次葛萊美提名（最佳專輯包裝），跨來源記載其為韓國流行音樂進入美國主流市場的轉折點。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：商業里程碑（Billboard 冠軍），缺跨來源長期樂評正典共識；藝人代表作級，經典度 4",
+        "previous": {
+          "classic": 5,
+          "obscurity": 1,
+          "accessibility": 2,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-23T04:08:31Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；首張登上 Billboard 200 冠軍的韓語專輯，並帶來韓國人第二次葛萊美提名（最佳專輯包裝），跨來源記載其為韓國流行音樂進入美國主流市場的轉折點。",
+          "rarity": "uncommon"
+        }
       },
-      "rarity": "uncommon",
+      "rarity": "common",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "以 135,000 單位空降 Billboard 200 冠軍，為史上第一張攻頂美國專輯榜的韓語作品，英韓文百科與國際媒體長期一致將其列為 K-pop 全球化的分水嶺。",
-        "evidenceUrls": [
-          "https://en.wikipedia.org/wiki/Love_Yourself:_Tear",
-          "https://ko.wikipedia.org/wiki/LOVE_YOURSELF_轉_'Tear'"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。商業里程碑，缺綜合歷代榜正典共識",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "以 135,000 單位空降 Billboard 200 冠軍，為史上第一張攻頂美國專輯榜的韓語作品，英韓文百科與國際媒體長期一致將其列為 K-pop 全球化的分水嶺。",
+          "evidenceUrls": [
+            "https://en.wikipedia.org/wiki/Love_Yourself:_Tear",
+            "https://ko.wikipedia.org/wiki/LOVE_YOURSELF_轉_'Tear'"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "방탄소년단（BTS）的第三張韓語正規盤，2018 年 5 月由 Big Hit 發行，방시혁 與 Pdogg 掌製作。十一首曲從 뷔 獨唱的 neo-soul 開場〈Intro: Singularity〉，走到掛著 grunge 吉他音色與 trap 節拍的主打〈FAKE LOVE〉，再接上與 Steve Aoki 合作的〈The Truth Untold〉。發行隔週以 135,000 單位空降 Billboard 200 冠軍，是首張攻頂美國專輯榜的韓語作品；封面設計 HuskyFox 亦入圍葛萊美最佳專輯包裝獎。",
@@ -3492,7 +3678,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/2a/bc/66/2abc6668-9a54-3de6-116a-49eaf702f035/mzaf_7495097123915590317.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/83/6f/0f/836f0f3c-fb8d-a70e-5e77-5c87e2d37d62/mzaf_1406277017641177283.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T04:08:31Z",
@@ -3513,8 +3699,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": false,
-        "apexPool": true
+        "seedCards": true,
+        "apexPool": false
       }
     },
     {
@@ -3543,7 +3729,7 @@
         "checkedAt": "2026-08-23T04:08:31Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；出道四年才推出的首張正規盤，是韓國榜史上第一張破百萬的女性歌手專輯，也是 BLACKPINK 最具代表的一組錄音，惟樂評對其長度與製作老派有保留。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -3610,7 +3796,7 @@
         "checkedAt": "2026-08-23T04:08:31Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；睽違三年的第二張韓語正規盤，Billboard 選為 2020 年十大 K-pop 專輯第六名，風格跨度與成員參與度是其特色，但非該團最具指標的一作。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -3626,7 +3812,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/93/10/49/931049bb-8e0d-b987-cbf2-407631880911/mzaf_8393986293664874135.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/70/66/62/706662b3-3825-4397-82d7-bfd445ac4410/mzaf_10084979905200977324.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T04:08:31Z",
@@ -3683,7 +3869,7 @@
         "checkedAt": "2026-08-23T04:08:31Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；以哥本哈根寫歌工作坊把 UK garage、Jersey club 與 liquid drum'n'bass 帶進主流 K-pop，登上 Billboard 200 冠軍並入選多家媒體年度榜，是四代女團聲響轉向的關鍵作。"
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -3699,7 +3885,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a1/fa/58/a1fa5822-ae67-1034-afcd-572c6d0cb264/mzaf_5691875287854100815.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/fb/eb/dc/fbebdc04-d035-0b34-6df7-7c7e73e1c5ce/mzaf_1666920854414573023.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T04:08:31Z",

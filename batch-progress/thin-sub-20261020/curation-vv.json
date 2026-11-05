@@ -1,0 +1,664 @@
+{
+ "group": "vv",
+ "factions": [
+  {
+   "id": "vn",
+   "zh": "越南",
+   "count": 25,
+   "why": "ts10 放寬門檻：池中與前幾輪已收樂團的其他正規專輯＋前一輪 notes 候選（場景代表性，不再要求專輯級好評）"
+  }
+ ],
+ "albums": [
+  {
+   "label": "Guitar Plus Records / Thăng Long Audio Visual",
+   "country": "vn",
+   "faction": "vn",
+   "genres": [
+    "rock",
+    "folk"
+   ],
+   "mbRgMbid": "0c6d00db-1602-4474-b2ca-ce501aac118e",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "CAA 無圖，封面取 Apple Music。",
+   "artist": "Ngũ Cung",
+   "album": "Cao Nguyên Đá",
+   "year": 2014,
+   "why": "門檻 1＋2＋3：Ngũ Cung 是越南民族搖滾（hard／prog rock＋西北民歌）代表團，池中已有《365000》，越南文維基有長條目並為本盤單列一節（2014 年 Gió mùa 音樂節首演、Giảng Võ 同名演唱會）；Thăng Long 發行實體 CD（Discogs 10248511）、Apple Music 上架。前一輪（curation-q／v）因查無專輯級好評未收。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/0c6d00db-1602-4474-b2ca-ce501aac118e",
+    "https://www.discogs.com/release/10248511",
+    "https://music.apple.com/vn/album/1634102533",
+    "https://vi.wikipedia.org/wiki/Ng%C5%A9_Cung_(ban_nh%E1%BA%A1c)",
+    "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/e6/ee/4e/e6ee4e4f-3bc3-fd4e-b8fb-34a998d56da0/cover.jpg/600x600bb.jpg"
+   ]
+  },
+  {
+   "label": "Guitar Plus Records",
+   "country": "vn",
+   "faction": "vn",
+   "genres": [
+    "rock",
+    "folk"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "https://musicbrainz.org/ws/2/artist/820c786d-fcc6-49d5-84fe-58e065c72c7d (Ngũ Cung) 的 release-group 瀏覽",
+     "https://musicbrainz.org/ws/2/release-group?query=artist:\"Ngũ Cung\" AND releasegroup:\"Red\""
+    ],
+    "checkedAt": "2026-10-21",
+    "conclusion": "MB 有藝人（VN，820c786d…），其 release-group 只有《365000》《Cao Nguyên Đá》兩張；作品方向查詢 count=0"
+   },
+   "manualEvidenceUrls": [
+    "https://music.apple.com/vn/album/1655296208",
+    "https://vi.wikipedia.org/wiki/Ng%C5%A9_Cung_(ban_nh%E1%BA%A1c)"
+   ],
+   "releaseException": "",
+   "queryAlias": "Red",
+   "uncertain": "Discogs 查無此盤（僅數位版）；封面主文字為 RED，維基寫 Red。",
+   "artist": "Ngũ Cung",
+   "album": "RED",
+   "year": 2022,
+   "why": "門檻 1＋2：Ngũ Cung（越南民族搖滾代表團、池中已有）第三張錄音室專輯，越南文維基列為正規專輯並有「2020–2023：…Red」一節；Guitar Plus Records 發行、Apple Music 上架（11 首、48 分鐘）。",
+   "evidence": [
+    "https://music.apple.com/vn/album/1655296208",
+    "https://vi.wikipedia.org/wiki/Ng%C5%A9_Cung_(ban_nh%E1%BA%A1c)",
+    "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/6b/2d/22/6b2d2230-ee06-a489-03bc-0527f4ce79bf/cover.jpg/600x600bb.jpg"
+   ]
+  },
+  {
+   "label": "Guitar Plus Records",
+   "country": "vn",
+   "faction": "vn",
+   "genres": [
+    "rock",
+    "folk"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "https://musicbrainz.org/ws/2/artist/820c786d-fcc6-49d5-84fe-58e065c72c7d (Ngũ Cung) 的 release-group 瀏覽",
+     "https://musicbrainz.org/ws/2/release-group?query=artist:\"Ngũ Cung\" AND releasegroup:\"Di sản\""
+    ],
+    "checkedAt": "2026-10-21",
+    "conclusion": "MB 有藝人（VN），其 release-group 只有《365000》《Cao Nguyên Đá》；作品方向查詢 count=0"
+   },
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/release/37846959",
+    "https://www.discogs.com/release/33374672",
+    "https://music.apple.com/vn/album/1773939219"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "新主唱 Hồng Phi，長年主唱 Đỗ Hoàng Hiệp 已離團。",
+   "artist": "Ngũ Cung",
+   "album": "Di Sản",
+   "year": 2024,
+   "why": "門檻 1＋2：Ngũ Cung（越南民族搖滾代表團、池中已有）2024 年換主唱後的第四張專輯，越南文維基單列「2024–nay：…Di sản」一節；GuitarPlus 出限量編號 CD（Discogs 37846959）、Vọc Records 2025 出黑膠 LP（Discogs 33374672），Apple Music 上架。",
+   "evidence": [
+    "https://www.discogs.com/release/37846959",
+    "https://www.discogs.com/release/33374672",
+    "https://music.apple.com/vn/album/1773939219",
+    "https://vi.wikipedia.org/wiki/Ng%C5%A9_Cung_(ban_nh%E1%BA%A1c)",
+    "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/64/bc/74/64bc744a-cd35-1c86-b1d8-5e21fbd45947/cover.jpg/600x600bb.jpg"
+   ]
+  },
+  {
+   "label": "Luke Record",
+   "country": "vn",
+   "faction": "vn",
+   "genres": [
+    "rock"
+   ],
+   "mbRgMbid": "7fe678ca-2cfb-4dae-862d-5cc3286dab0c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "CAA 無圖，封面取 Apple Music；CD 首發 2014-11-27、數位 2015-05-13，年份取 2014。",
+   "artist": "Cá Hồi Hoang",
+   "album": "Chương II",
+   "year": 2014,
+   "why": "門檻 1＋3：Cá Hồi Hoang 是西貢獨立搖滾代表團（越南文維基有條目，池中已有《Gấp》《Hiệu Ứng Trốn Chạy》），本盤為第二張錄音室專輯（MB Album，CD 15 首／數位 10 首），Luke Record 發行、Apple Music 與 Qobuz 上架。前一輪（curation-v）因專輯頁無評價未收。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/7fe678ca-2cfb-4dae-862d-5cc3286dab0c",
+    "https://music.apple.com/vn/album/990727755",
+    "https://vi.wikipedia.org/wiki/C%C3%A1_H%E1%BB%93i_Hoang",
+    "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/18/8e/f5/188ef544-8806-9b2c-00d1-25fbb1e06cf3/cover.jpg/600x600bb.jpg"
+   ]
+  },
+  {
+   "label": "Luke Record",
+   "country": "vn",
+   "faction": "vn",
+   "genres": [
+    "rock"
+   ],
+   "mbRgMbid": "9087ad7c-0d25-4668-a46c-712829fdc093",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "",
+   "artist": "Cá Hồi Hoang",
+   "album": "Giấc.mơ.giấy",
+   "year": 2016,
+   "why": "門檻 1＋2：Cá Hồi Hoang（西貢獨立搖滾代表團、池中已有）第三張錄音室專輯，CD 與卡帶實體（MB 登 VN CD、Cassette）、Luke Record 數位發行，Apple Music／Spotify／Qobuz 上架（12 首、53 分鐘）。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/9087ad7c-0d25-4668-a46c-712829fdc093",
+    "https://music.apple.com/vn/album/1183012233",
+    "https://vi.wikipedia.org/wiki/C%C3%A1_H%E1%BB%93i_Hoang",
+    "https://coverartarchive.org/release/992f0701-5e30-4ddc-a152-17d911ce6d5f/40742199630.jpg"
+   ]
+  },
+  {
+   "label": "Lumif Recordings",
+   "country": "vn",
+   "faction": "vn",
+   "genres": [
+    "rock"
+   ],
+   "mbRgMbid": "a15bb944-a7b5-4a2a-acef-a3e223d0820e",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "",
+   "artist": "Cá Hồi Hoang",
+   "album": "Ngày Ấy Và Sau Này",
+   "year": 2021,
+   "why": "門檻 1＋2＋3：Cá Hồi Hoang（西貢獨立搖滾代表團，越南文維基稱在 indie／underground 圈「gây được tiếng vang lớn」，池中已有 2 張）第五張錄音室專輯，Lumif Recordings 發行、Apple Music 上架（10 首）。前一輪因評價褒貶參半未收。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/a15bb944-a7b5-4a2a-acef-a3e223d0820e",
+    "https://music.apple.com/vn/album/1566576549",
+    "https://vi.wikipedia.org/wiki/C%C3%A1_H%E1%BB%93i_Hoang",
+    "https://coverartarchive.org/release/674c9705-e525-466a-ba8f-254fc6fe6d31/45085846102.jpg"
+   ]
+  },
+  {
+   "label": "Cá Hồi Hoang（自主發行，MB 標 Lumif Recordings）",
+   "country": "vn",
+   "faction": "vn",
+   "genres": [
+    "rock"
+   ],
+   "mbRgMbid": "093cce0e-195d-4707-80ab-6ce73a770a78",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Apple ℗ 寫「Cá Hồi Hoang」、MB 寫 Lumif Recordings，廠牌欄待研究層定。",
+   "artist": "Cá Hồi Hoang",
+   "album": "Chúng Ta Đều Muốn Một Thứ",
+   "year": 2023,
+   "why": "門檻 1＋2：Cá Hồi Hoang（西貢獨立搖滾代表團、池中已有）的最後一張錄音室專輯，2023 年 6 月樂團宣布停止活動並以同名巡演「Chúng ta đều muốn một tour」告別（越南文維基）；Apple Music／Spotify／Tidal 上架（18 首、61 分鐘）。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/093cce0e-195d-4707-80ab-6ce73a770a78",
+    "https://music.apple.com/vn/album/1676175665",
+    "https://vi.wikipedia.org/wiki/C%C3%A1_H%E1%BB%93i_Hoang",
+    "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/65/9b/11/659b1102-e159-82d3-539e-b701335884a0/5063268050328_cover.jpg/600x600bb.jpg"
+   ]
+  },
+  {
+   "label": "Nghe nhìn Thăng Long（Thăng Long Audio Visual）",
+   "country": "vn",
+   "faction": "vn",
+   "genres": [
+    "rock"
+   ],
+   "mbRgMbid": "4334737d-9fd0-4255-9195-3a86b0437199",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "ts8 研究層 10242 曾建議移除（好評薄）；維基同段另載「對年輕樂迷偏難入耳」。",
+   "artist": "Bức Tường",
+   "album": "Ngày khác",
+   "year": 2010,
+   "why": "門檻 1＋3：Bức Tường 是越南搖滾第一代代表團（池中已有 5 張），本盤為 2010 年重組後第一張錄音室專輯（12 首），越南文維基專節記載、《Tuổi Trẻ》報導發行、《An ninh Thủ đô》給正面樂評；Thăng Long 實體 CD（Discogs 8875450），Apple Music 上架。ts8 因專輯級好評僅一則轉引而刪，放寬後依代表性重提。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/4334737d-9fd0-4255-9195-3a86b0437199",
+    "https://www.discogs.com/release/8875450",
+    "https://music.apple.com/vn/album/6768922593",
+    "https://tuoitre.vn/ngay-khac-cua-buc-tuong-405368.htm",
+    "https://vi.wikipedia.org/wiki/B%E1%BB%A9c_T%C6%B0%E1%BB%9Dng_(ban_nh%E1%BA%A1c)",
+    "https://coverartarchive.org/release/6f2477bf-2081-4e5f-abfd-e4420b70658c/1170656460.jpg"
+   ]
+  },
+  {
+   "label": "Hãng Đĩa Thời Đại",
+   "country": "vn",
+   "faction": "vn",
+   "genres": [
+    "rock"
+   ],
+   "mbRgMbid": "eae6c172-8aad-4038-9656-9f57cf402de7",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Discogs 27286512 格式標 CD-ROM，Album；發行日 MB 2023-04-16、Apple 2023-04-08，同年。",
+   "artist": "Bức Tường",
+   "album": "Cân bằng",
+   "year": 2023,
+   "why": "門檻 1＋2：Bức Tường（越南搖滾第一代代表團、池中已有 5 張）第七張錄音室專輯（越南文維基：10 首、Phạm Anh Khoa 主唱），Hãng Đĩa Thời Đại 發行實體（Discogs 27286512），Apple Music 上架。前一輪因查無評價未收。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/eae6c172-8aad-4038-9656-9f57cf402de7",
+    "https://www.discogs.com/release/27286512",
+    "https://music.apple.com/vn/album/1680871871",
+    "https://vi.wikipedia.org/wiki/B%E1%BB%A9c_T%C6%B0%E1%BB%9Dng_(ban_nh%E1%BA%A1c)",
+    "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/c2/40/ce/c240cee1-d02b-5b68-8fc2-e4e2aad92d7e/23UMGIM38832.rgb.jpg/600x600bb.jpg"
+   ]
+  },
+  {
+   "label": "Warner Music Vietnam",
+   "country": "vn",
+   "faction": "vn",
+   "genres": [
+    "rock",
+    "pop"
+   ],
+   "mbRgMbid": "6b721445-aade-4e91-b2fc-20e569123286",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "搖滾屬性偏軟（indie pop rock）；Cống hiến 前十口徑出自 ts8 rulings 10233。",
+   "artist": "Chillies",
+   "album": "KIM",
+   "year": 2025,
+   "why": "門檻 1＋2＋3：Chillies 是 Warner Music Vietnam 旗下 indie pop-rock 樂團（越南文維基有條目，池中已有《Qua Khung Cửa Sổ》），本盤第二張專輯進第 20 屆 Cống hiến 年度專輯前十名單（未入最終五張）；Warner 正規發行、Apple Music／Spotify 上架（9 首）。ts8 因只進前十、無樂評而刪，放寬後依代表性重提。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/6b721445-aade-4e91-b2fc-20e569123286",
+    "https://music.apple.com/vn/album/1844526956",
+    "https://vi.wikipedia.org/wiki/Chillies",
+    "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/a9/4a/7d/a94a7dba-8723-83b0-f965-780c2fff3f19/5021732987990.jpg/600x600bb.jpg"
+   ]
+  },
+  {
+   "label": "Dihavina",
+   "country": "vn",
+   "faction": "vn",
+   "genres": [
+    "rock"
+   ],
+   "mbRgMbid": "92cae0e6-6219-3339-9cec-8a1a05b57b39",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Thuỷ Triều Đỏ",
+   "uncertain": "Apple 掛名「Ban Nhạc Thuỷ Triều Đỏ」（舊式聲調位置 Thuỷ）。",
+   "artist": "Thủy Triều Đỏ",
+   "album": "Sau cơn mưa",
+   "year": 2006,
+   "why": "門檻 1＋3：Thủy Triều Đỏ 是河內重金屬代表團（越南文維基：2003 年第一屆 Đại hội Rock Việt 獲「最佳重金屬樂團」，MTV Việt Nam 列為越南最知名搖滾團之一；池中已有《Nắng mới》），本盤為其第二張也是最後一張錄音室專輯；Dihavina 發行實體 CD（Discogs 6632874），Apple Music 有上架。前一輪因無評價未收。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/92cae0e6-6219-3339-9cec-8a1a05b57b39",
+    "https://www.discogs.com/release/6632874",
+    "https://music.apple.com/vn/album/6818480388",
+    "https://vi.wikipedia.org/wiki/Th%E1%BB%A7y_Tri%E1%BB%81u_%C4%90%E1%BB%8F_(ban_nh%E1%BA%A1c)",
+    "https://coverartarchive.org/release/7fe703d8-5d96-4428-95b4-32946e48849d/1170754289.jpg"
+   ]
+  },
+  {
+   "label": "12 trái lê",
+   "country": "vn",
+   "faction": "vn",
+   "genres": [
+    "rock"
+   ],
+   "mbRgMbid": "40a636f1-caad-411c-9030-fa8ce283b2d1",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Vũ Trụ Nhỏ",
+   "uncertain": "CAA 無圖，封面取 Apple Music；無維基條目，代表性證據偏薄。",
+   "artist": "Raditori",
+   "album": "VŨ TRỤ NHỎ",
+   "year": 2024,
+   "why": "門檻 2＋3：Raditori 是胡志明市獨立搖滾團（池中已有首張《NHỮNG CON NGƯỜI》），本盤為第二張錄音室專輯，具名獨立廠牌 12 trái lê 發行、Apple Music／Spotify／YouTube Music 上架（10 首、46 分鐘），Vietcetera 有介紹專文。前一輪因無樂評或獎項未收。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/40a636f1-caad-411c-9030-fa8ce283b2d1",
+    "https://music.apple.com/vn/album/1769446953",
+    "https://open.spotify.com/album/5Xqb3PilwMfloPxhbjYOM0",
+    "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/cb/b7/9d/cbb79daf-d62c-90c7-9cb6-ae67a51183d4/5034644109886.jpg/600x600bb.jpg"
+   ]
+  },
+  {
+   "label": "Famined Records",
+   "country": "vn",
+   "faction": "vn",
+   "genres": [
+    "rock"
+   ],
+   "mbRgMbid": "206e67b7-4a03-4c8b-bf82-5f8237769216",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Tan",
+   "uncertain": "封面主文字 TAN（Apple 寫 Tan）；Sputnikmusic 3.5 出自前一輪 curation-p 備註，未再開頁核對。",
+   "artist": "Windrunner",
+   "album": "TAN",
+   "year": 2022,
+   "why": "門檻 1＋2：Windrunner 是河內 post-hardcore／metalcore 代表團（池中已有《MAI》），本盤為第二張錄音室專輯，美國具名獨立廠牌 Famined Records 出實體 CD（Discogs 33773463）、Bandcamp 與各串流上架，Sputnikmusic 有評分（3.5/5）。前一輪因查無好評證據未收。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/206e67b7-4a03-4c8b-bf82-5f8237769216",
+    "https://www.discogs.com/release/33773463",
+    "https://music.apple.com/vn/album/1606010078",
+    "https://windrunner.bandcamp.com/",
+    "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/0a/44/c0/0a44c038-bb93-f110-f127-8b2e94f00d49/195729315594_cover.jpg/600x600bb.jpg"
+   ]
+  },
+  {
+   "label": "Universal Music Indochina",
+   "country": "vn",
+   "faction": "vn",
+   "genres": [
+    "rock",
+    "folk"
+   ],
+   "mbRgMbid": "1afa78d3-4359-447f-823a-91ba4dcec07f",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "TỐI THƯỢNG",
+   "uncertain": "2025-12 新作，尚無獎項或評價；Apple ℗ 寫 VIVI ENM Co. Ltd.、MB 寫 Universal Music Indochina，廠牌待研究層定。",
+   "artist": "The Flob",
+   "album": "Tối Thượng",
+   "year": 2025,
+   "why": "門檻 1＋2：The Flob 是 2024 年以《Trời đánh tránh ta / Ta va trúng người》走紅的胡志明市民族金屬／搖滾團（越南文維基有條目、池中已有首張），本盤為第二張錄音室專輯（維基：rock、現代金屬結合越南民間素材，客席 Rhymastic、Tài Smile、Phùng Khánh Linh），Universal Music Indochina 發行、Apple Music／Spotify 上架（9 首、35 分鐘）。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/1afa78d3-4359-447f-823a-91ba4dcec07f",
+    "https://music.apple.com/vn/album/1856788391",
+    "https://vi.wikipedia.org/wiki/The_Flob",
+    "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/3d/b4/d6/3db4d6a3-3cf0-3874-2478-db105aebab7a/25UM1IM99116.rgb.jpg/600x600bb.jpg"
+   ]
+  },
+  {
+   "label": "Hãng Đĩa Thời Đại / 自主發行",
+   "country": "vn",
+   "faction": "vn",
+   "genres": [
+    "rock"
+   ],
+   "mbRgMbid": "cb824c08-d9c8-41cf-a054-6b89cb252c4d",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 登 2CD 合一的 release-group，Discogs 與 Apple 拆成 Vol. 1／Vol. 2 兩張（Discogs 年份 2013）；CAA 無圖，封面取 Apple Vol. 1，主線需決定是否改用合版封面。",
+   "artist": "Black Infinity",
+   "album": "The Illuminati of Love and Death I & II",
+   "year": 2014,
+   "why": "門檻 1＋2＋3：Black Infinity 是越南重金屬代表團（越南文維基有長條目、單曲入選《Metal Hammer》隨刊合輯；池中已有《666 Metal》），本盤為第二張錄音室專輯（2CD、22 首），維基專節記載製作人 Tim Palmer、Anssi Kippo 參與；實體 CD（Discogs 29763673／10934809），Apple Music 分兩卷上架。前一輪因缺評論未收。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/cb824c08-d9c8-41cf-a054-6b89cb252c4d",
+    "https://www.discogs.com/release/29763673",
+    "https://www.discogs.com/release/10934809",
+    "https://music.apple.com/vn/album/843358334",
+    "https://vi.wikipedia.org/wiki/Black_Infinity",
+    "https://is1-ssl.mzstatic.com/image/thumb/Music/v4/97/d6/c2/97d6c21d-ce6f-b4d0-129f-d7611dba285f/8932000438885.jpg/600x600bb.jpg"
+   ]
+  },
+  {
+   "label": "自主發行（CD：LP Club）",
+   "country": "vn",
+   "faction": "vn",
+   "genres": [
+    "rock",
+    "pop"
+   ],
+   "mbRgMbid": "31919c65-5245-4160-9a3a-640ccefea141",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "8 首 24 分鐘，長度偏短但 MB／Discogs／維基皆稱專輯；搖滾屬性偏軟（indie）。",
+   "artist": "Thắng",
+   "album": "Cái Đầu Tiên",
+   "year": 2023,
+   "why": "門檻 1＋2＋3：Thắng（Vũ Đinh Trọng Thắng）是河內獨立搖滾團 Ngọt 的主唱兼詞曲（Ngọt 池中已有 4 張；越南文維基個人條目曲風列 Indie／V-pop／Rock），本盤為 Ngọt 解散前後的首張個人錄音室專輯，進第 18 屆 Cống hiến 年度專輯前十名單；LP Club 出實體 CD（Discogs 29462776），Apple Music 上架。ts8 因只進前十、無樂評而刪，放寬後依代表性重提。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/31919c65-5245-4160-9a3a-640ccefea141",
+    "https://www.discogs.com/release/29462776",
+    "https://music.apple.com/vn/album/1685194200",
+    "https://vi.wikipedia.org/wiki/Th%E1%BA%AFng_(nh%E1%BA%A1c_s%C4%A9)",
+    "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/a5/74/b4/a574b408-776e-0617-a994-3eeeb7f6a8fc/cover.jpg/600x600bb.jpg"
+   ]
+  },
+  {
+   "label": "自主發行（CD：LP Club）",
+   "country": "vn",
+   "faction": "vn",
+   "genres": [
+    "rock",
+    "pop"
+   ],
+   "mbRgMbid": "1d5c5b39-024d-4046-b68d-9bafa8d38efc",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "2026 新作，尚無獎項或評價；搖滾屬性偏軟（indie）。",
+   "artist": "Thắng",
+   "album": "Cái Thứ Hai",
+   "year": 2026,
+   "why": "門檻 1＋2：Thắng（Ngọt 主唱兼詞曲，池中 Ngọt 已有 4 張）第二張個人錄音室專輯，越南文維基單列「2026：Cái Thứ Hai」一節（2026-02-02 LP Club 發售 CD，客席 Hà Lê 等），Apple Music／Spotify 上架（12 首、39 分鐘）。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/1d5c5b39-024d-4046-b68d-9bafa8d38efc",
+    "https://music.apple.com/vn/album/1872908629",
+    "https://vi.wikipedia.org/wiki/Th%E1%BA%AFng_(nh%E1%BA%A1c_s%C4%A9)",
+    "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/ee/31/e5/ee31e506-7d01-8527-0178-9ab3b066ef5a/cover.jpg/600x600bb.jpg"
+   ]
+  },
+  {
+   "label": "Bến Thành Audio & Video",
+   "country": "vn",
+   "faction": "vn",
+   "genres": [
+    "rock"
+   ],
+   "mbRgMbid": "e3951849-e3cb-329e-9e98-bacf80f6f5e5",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 藝人無國別（curation-a 曾因此疑非同一團），但 release 為 VN、Bến Thành 發行，與越南維基所述 Da Vàng 吻合；Apple 再發題為「Da Vàng S. O. S」、11 首 74 分鐘，曲目長度與原 CD 是否一致待研究層核對。",
+   "artist": "Da Vàng",
+   "album": "S.O.S.",
+   "year": 2000,
+   "why": "門檻 1＋3：Da Vàng 是西貢第一代重金屬團，越南文維基〈Rock Việt〉把它與 Đen trắng、Buổi sáng、Atomega 並列為 1992–95 年成名的「gạo cội」老牌搖滾團；本盤為其唯一錄音室專輯（1997 錄、2000 發），Bến Thành Audio & Video 出 CD，2018 年 Bến Thành Audio 數位再發上架 Apple Music。前一輪（curation-p）因查無專輯評價未收。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/e3951849-e3cb-329e-9e98-bacf80f6f5e5",
+    "https://music.apple.com/vn/album/6802263088",
+    "https://vi.wikipedia.org/wiki/Rock_Vi%E1%BB%87t",
+    "https://coverartarchive.org/release/b1199a27-add6-4c7e-8a4b-ce4d2c4d27b6/1170775921.jpg"
+   ]
+  },
+  {
+   "label": "自主發行",
+   "country": "vn",
+   "faction": "vn",
+   "genres": [
+    "rock",
+    "folk"
+   ],
+   "mbRgMbid": "62d00058-c644-411f-a27b-61f311d65d43",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "封面只有 Discogs 一張小圖（300×225），CAA／Apple 皆無；「民族金屬先聲」為策展層概括，無單一來源原句，研究層請核。",
+   "artist": "Sói Đen",
+   "album": "Chiến tranh và hòa bình",
+   "year": 2005,
+   "why": "門檻 1＋3：Sói Đen 是越南早期 folk metal／旋律死亡金屬團（Metal Archives 有條目），本盤為其唯一錄音室專輯，自主發行 CD（Discogs 10488499，風格標 Folk Metal／Melodic Death Metal），在越南金屬史上被視為民族金屬先聲；前一輪（curation-p）因無好評證據未收。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/62d00058-c644-411f-a27b-61f311d65d43",
+    "https://www.discogs.com/release/10488499",
+    "https://www.metal-archives.com/bands/S%C3%B3i_%C4%90en/18310",
+    "https://i.discogs.com/Uybri7Ohd87CVapUrW6zWjAb81WLMg_OgCq1x_HcBNE/rs:fit/g:sm/q:90/h:225/w:300/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwNDg4/NDk5LTE0OTg0ODQ3/MDktMzQyOC5qcGVn.jpeg"
+   ]
+  },
+  {
+   "label": "Yin Yang Media",
+   "country": "vn",
+   "faction": "vn",
+   "genres": [
+    "rock"
+   ],
+   "mbRgMbid": "d72f03ee-9ba0-4bfc-9eb4-7d592387a477",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "首發日 MB 2021-09-06、Apple 2021-06-09（Apple 為 2022 年重新上架版），同年；無維基條目。",
+   "artist": "The Cassette",
+   "album": "Rừng Đom Đóm",
+   "year": 2021,
+   "why": "門檻 2＋3：The Cassette 是峴港獨立搖滾團（MB／Discogs 有藝人頁），本盤為首張錄音室專輯，具名獨立廠牌 Yin Yang Media 發行、Apple Music／Spotify 上架（10 首、43 分鐘），Saigoneer 有評。前一輪（curation-q）因評語「有點單調」未收。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/d72f03ee-9ba0-4bfc-9eb4-7d592387a477",
+    "https://music.apple.com/vn/album/1637074604",
+    "https://www.discogs.com/artist/15898061",
+    "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/93/42/fa/9342fab2-ea9a-41de-e763-3f505fa99c21/190296164064.jpg/600x600bb.jpg"
+   ]
+  },
+  {
+   "label": "Warner Music Vietnam",
+   "country": "vn",
+   "faction": "vn",
+   "genres": [
+    "rock"
+   ],
+   "mbRgMbid": "aa621f41-67d9-4142-8aa2-8e8f9470d4e7",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB release 掛的 Apple 連結誤指《Rừng Đom Đóm》（1637074604），正確 Apple ID 為 1741907256；無維基條目。",
+   "artist": "The Cassette",
+   "album": "Từ Vực Thẳm Đến Rìa Ánh Sáng",
+   "year": 2024,
+   "why": "門檻 2：The Cassette（峴港獨立搖滾團）第二張錄音室專輯，Warner Music Vietnam 正規發行實體 CD（Discogs 33489056）、Apple Music／Spotify 上架（10 首、44 分鐘）；簽進主流廠牌顯示其在越南獨立圈的流通度。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/aa621f41-67d9-4142-8aa2-8e8f9470d4e7",
+    "https://www.discogs.com/release/33489056",
+    "https://music.apple.com/vn/album/1741907256",
+    "https://coverartarchive.org/release/31d87831-0b0c-4c6b-a72f-d2d03e1e3527/41372247172.jpg"
+   ]
+  },
+  {
+   "label": "M Music Records",
+   "country": "vn",
+   "faction": "vn",
+   "genres": [
+    "rock"
+   ],
+   "mbRgMbid": "edb2189d-2e3a-4f94-8721-a5c6b3e37f45",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "無越南文維基條目。",
+   "artist": "7UPPERCUTS",
+   "album": "7UPPERCUTS",
+   "year": 2024,
+   "why": "門檻 1＋2＋3：7UPPERCUTS 是胡志明市獨立搖滾團（Wikidata Q105687809，EP《Chái Mái》獲 Saigoneer 好評），本盤為首張同名錄音室專輯，M Music Records 數位發行、LP Club 出實體 CD（Discogs 34436092），Apple Music／Spotify 上架（11 首、43 分鐘）。前一輪（curation-q）因只查到 EP 好評未收。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/edb2189d-2e3a-4f94-8721-a5c6b3e37f45",
+    "https://www.discogs.com/release/34436092",
+    "https://music.apple.com/vn/album/1775134557",
+    "https://www.wikidata.org/wiki/Q105687809",
+    "https://coverartarchive.org/release/56a0cf42-2cc7-4ef5-ac4f-d601ab14f37b/43967918197.jpg"
+   ]
+  },
+  {
+   "label": "Skewers Records",
+   "country": "vn",
+   "faction": "vn",
+   "genres": [
+    "rock"
+   ],
+   "mbRgMbid": "3bb1a963-2f82-4942-8ead-ff9ccce488c6",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "10 首 23 分鐘（hardcore punk 曲短，MB／Apple 皆標專輯、不標 EP）；無維基條目。",
+   "artist": "Cút Lộn",
+   "album": "Xào Ke",
+   "year": 2019,
+   "why": "門檻 2＋3：Cút Lộn 是胡志明市 hardcore punk 代表團（作品收進歐美多張國際 punk 合輯，如 Punk For Ukraine Vol. 2、Continent Tapes Vol. II），本盤為首張錄音室專輯，具名獨立廠牌 Skewers Records 發行、卡帶實體（Discogs master 2165737）、Bandcamp 與 Apple Music 上架。前一輪（curation-p 備選）因只見地下圈報導未收。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/3bb1a963-2f82-4942-8ead-ff9ccce488c6",
+    "https://www.discogs.com/master/2165737",
+    "https://music.apple.com/vn/album/1456341885",
+    "https://cutlon.bandcamp.com/",
+    "https://coverartarchive.org/release/879d8a67-74fd-4cb8-8640-bfeb2297f5e2/42246825444.jpg"
+   ]
+  },
+  {
+   "label": "Skewers Records",
+   "country": "vn",
+   "faction": "vn",
+   "genres": [
+    "rock"
+   ],
+   "mbRgMbid": "76fa9566-a910-40c4-81fc-c92a17100ec0",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "10 首 23 分鐘，長度偏短；同團一次收兩張，主線可只留《Xào Ke》。",
+   "artist": "Cút Lộn",
+   "album": "Bắc Thảo",
+   "year": 2024,
+   "why": "門檻 2：Cút Lộn（胡志明市 hardcore punk 代表團）第二張錄音室專輯，Skewers Records 數位發行、自主發行卡帶（Discogs 31608619，標 Cass, Album），Apple Music／Spotify 上架（10 首）。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/76fa9566-a910-40c4-81fc-c92a17100ec0",
+    "https://www.discogs.com/release/31608619",
+    "https://music.apple.com/vn/album/1764694440",
+    "https://coverartarchive.org/release/9557a1b6-7f34-45aa-b10b-43b40634d16c/42246818275.jpg"
+   ]
+  },
+  {
+   "label": "Dihavina",
+   "country": "vn",
+   "faction": "vn",
+   "genres": [
+    "rock"
+   ],
+   "mbRgMbid": "1b8e2133-4e5d-4ab1-8776-a4d745dfbc2f",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "新藝人（池中 0 張、非前一輪 notes 候選），代表性證據偏薄；死亡金屬在搖滾邊界內但偏極端，主線可剔。",
+   "artist": "Final Stage",
+   "album": "Sân khấu cuối cùng",
+   "year": 2010,
+   "why": "門檻 1＋2：Final Stage 是河內長期活躍的死亡金屬團（2024 年發行 20 週年紀念單曲；越南文維基 Ngũ Cung 條目記載 2011 年與 Ngũ Cung、Nu Voltage 同台 Hanoi Rock City「Keep your Passion」），本盤為其首張也是唯一錄音室專輯（此前兩張 EP），Dihavina 發行 CD（12 首），Metal Archives 有專輯頁。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/1b8e2133-4e5d-4ab1-8776-a4d745dfbc2f",
+    "https://www.metal-archives.com/albums/Final_Stage/S%C3%A2n_kh%E1%BA%A5u_cu%E1%BB%91i_c%C3%B9ng/266075",
+    "https://vi.wikipedia.org/wiki/Ng%C5%A9_Cung_(ban_nh%E1%BA%A1c)",
+    "https://coverartarchive.org/release/1c56e94e-e3de-48a7-92da-87aa63d6ddfc/1173487400.jpg"
+   ]
+  }
+ ],
+ "notes": [
+  "共提名 25 張（目標 +19，派工提名上限 23，多出 2 張給主線汰換）：全部越南本地團，海外越南人 0 張（Thao & the Get Down Stay Down 已在 ts8 以美國團刪，不重提）。",
+  "身分：MB 釘住 23 張；§1 人工身分 2 張（Ngũ Cung《RED》《Di Sản》：MB 有藝人但無 release-group，《Di Sản》有 Discogs CD＋LP 實體，《RED》只有 Apple Music 數位版＋越南文維基）。去重指令 25 張皆輸出 0。",
+  "封面：每張 evidence 最後一個網址就是封面來源。Apple Music（mzstatic，600x600）14 張、CAA 10 張、Discogs 1 張（Sói Đen，僅 300×225 小圖，最弱）。真正 CAA 無圖的只有 Ngũ Cung《Cao Nguyên Đá》、Cá Hồi Hoang《Chương II》、Raditori《Vũ Trụ Nhỏ》、Black Infinity《Illuminati》、Sói Đen 與兩張人工身分卡；其餘列 Apple 的 CAA 亦有圖（release-group 回 307）。",
+  "依放寬門檻第 3 條重提的前一輪落選者：Chillies《KIM》、Thắng《Cái Đầu Tiên》、Bức Tường《Ngày khác》（三張皆 ts8 rulings 10271／10272 因好評薄而刪），以及 notes 列的 Ngũ Cung《Cao Nguyên Đá》、Cá Hồi Hoang 三張、Thủy Triều Đỏ《Sau cơn mưa》、Raditori《Vũ Trụ Nhỏ》、Windrunner《TAN》、Black Infinity《Illuminati》、Bức Tường《Cân bằng》、Da Vàng《S.O.S.》、Sói Đen、The Cassette《Rừng Đom Đóm》、7UPPERCUTS 同名專輯、Cút Lộn《Xào Ke》。",
+  "主線汰換建議順序（最弱在前）：Final Stage《Sân khấu cuối cùng》（新藝人、代表性證據最薄）→ Cút Lộn《Bắc Thảo》（同團第二張、23 分鐘）→ Sói Đen（封面只有小圖）→ Thắng《Cái Thứ Hai》（2026 新作、偏 indie）→ The Flob《Tối Thượng》（2025-12 新作）。",
+  "未提（不合規）：The Flob《Sống sai》（ts1 rulings 9875 已定為 7 首 EP）；Cút Lộn《Dzữa》（7 首 18 分鐘，EP 長度，雖 MB／Discogs 標 Album）；The Cassette《Đồng Hồ Cát》（2026，7 首）；Ngọt《Suýt 1》《Suýt 2》（EP）；Cá Hồi Hoang《Gấp Gap: Có cần phải có lý không?》（《Gấp》擴充版）與《102112》（未查明性質）；Windrunner《VUI》（EP）；Mademoiselle（越南民謠歌手，非搖滾）；Phạm Anh Khoa《Nghe》《Phá》（ts8 因 Discogs／Apple／CAA 皆無封面而刪，本輪 Apple 仍查無）。",
+  "查無：Ngủ Ngày Ngập Lụt、Lộn Xộn、Sputnik Mothership、Ra Khơi 在 MB 都 count=0、Apple 也查不到正規專輯；Rosewood、Gỗ 查不到越南同名團的專輯。Microwave、Ngọt、Chillies、Hạc San、UnlimiteD、Gạt Tàn Đầy、Quái Vật Tí Hon、ATΩMEGA 在 MB 已無池外的錄音室專輯。",
+  "待研究層核對：Black Infinity《Illuminati》MB 為 2CD 合一 RG、Discogs／Apple 拆兩卷（封面暫用 Vol. 1）；Da Vàng 的 MB 藝人無國別（release 為 VN、Bến Thành 發行，判定同一團），Apple 2018 再發 74 分鐘與原 CD 是否同曲目；Cá Hồi Hoang《Chúng Ta Đều Muốn Một Thứ》、The Flob《Tối Thượng》廠牌欄 MB 與 Apple ℗ 不一；Windrunner 的 Sputnikmusic 3.5 沿用前一輪備註未再開頁。",
+  "WebSearch 用了 0 次（上限 3）；全部走 MB API、CAA、iTunes Search／Lookup API、Discogs API 與越南文維基 raw（維基 API 中途被限流兩次，album 子條目是否存在未能確認，因此 evidence 只引用確認存在的樂團條目）。"
+ ]
+}

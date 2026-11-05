@@ -1,0 +1,1426 @@
+{
+ "group": "mc33",
+ "factions": [
+  {
+   "id": "glitch",
+   "zh": "glitch／microsound／尖細實驗電子（主場景）",
+   "count": 27,
+   "why": "密集尖細點擊、資料噪音、故障碎片、心理聲學高頻：薄、乾、無旋律，神經被挑起來"
+  },
+  {
+   "id": "rio",
+   "zh": "RIO／前衛搖滾尖細那半（擴寫 mc35）",
+   "count": 23,
+   "why": "室內樂式不和諧、尖銳木管與小提琴、拐彎拍號、乾瘦製作；厚重轟鳴與旋律清楚的 prog 不收"
+  }
+ ],
+ "albums": [
+  {
+   "artist": "Cyclo.",
+   "album": ".",
+   "year": 2001,
+   "label": "Raster-Noton",
+   "country": "de",
+   "faction": "glitch",
+   "genres": [
+    "electronic"
+   ],
+   "why": "池田亮司＋Carsten Nicolai 的 Cyclo. 首作，把示波器圖形化成點擊節奏，raster-noton 薄盤原型",
+   "moodGuess": {
+    "x": 3.4,
+    "y": -0.4,
+    "z": -1.8,
+    "why": "正弦波與尖細點擊的鎖相脈衝，乾、高頻、無旋律"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/a77fcfa9-0608-359f-a24b-177be7379cc4",
+    "https://coverartarchive.org/release-group/a77fcfa9-0608-359f-a24b-177be7379cc4/front"
+   ],
+   "mbRgMbid": "a77fcfa9-0608-359f-a24b-177be7379cc4",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Cyclo. Cyclo.",
+   "uncertain": "MB 盤名為「.」（Cyclo. 首作常被寫作 Cyclo.），上架名需主線定"
+  },
+  {
+   "artist": "Cyclo.",
+   "album": "Id",
+   "year": 2011,
+   "label": "Raster-Noton",
+   "country": "de",
+   "faction": "glitch",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Cyclo. 第二張，比首作更快更密的資料脈衝，神經被一路推著走",
+   "moodGuess": {
+    "x": 3.5,
+    "y": -0.3,
+    "z": -1.8,
+    "why": "密集點擊與脈衝交錯推進，頻率尖細刺耳，冷硬"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/57110cb1-b6b8-4ad2-ab1f-b35af14ad9e6",
+    "https://coverartarchive.org/release-group/57110cb1-b6b8-4ad2-ab1f-b35af14ad9e6/front"
+   ],
+   "mbRgMbid": "57110cb1-b6b8-4ad2-ab1f-b35af14ad9e6",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Ryoji Ikeda",
+   "album": "Dataphonics",
+   "year": 2010,
+   "label": "Dis Voir",
+   "country": "jp",
+   "faction": "glitch",
+   "genres": [
+    "electronic"
+   ],
+   "why": "池田亮司 datamatics 系列的聲音書，與《dataplex》《test pattern》同一路資料噪音式緊繃",
+   "moodGuess": {
+    "x": 3.5,
+    "y": -0.4,
+    "z": -1.9,
+    "why": "資料噪音、高頻嗶聲與碎拍高速切換，乾而刺"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/91afc3d6-273e-487f-bf9f-b8b7a13a927b",
+    "https://coverartarchive.org/release-group/91afc3d6-273e-487f-bf9f-b8b7a13a927b/front"
+   ],
+   "mbRgMbid": "91afc3d6-273e-487f-bf9f-b8b7a13a927b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "池中 Ikeda 冷冽盤多落 x 3.1–3.2，貼近下緣"
+  },
+  {
+   "artist": "Signal",
+   "album": "Robotron",
+   "year": 2007,
+   "label": "Raster-Noton",
+   "country": "de",
+   "faction": "glitch",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Signal（Bretschneider／Nicolai／Bender）raster-noton 三巨頭合體，點擊節奏比單人盤更緊",
+   "moodGuess": {
+    "x": 3.4,
+    "y": -0.3,
+    "z": -1.4,
+    "why": "尖細點擊節奏與電子脈衝，無低頻厚度，機械冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/cf294d30-2512-3129-97e3-32ad04a52f54",
+    "https://coverartarchive.org/release-group/cf294d30-2512-3129-97e3-32ad04a52f54/front"
+   ],
+   "mbRgMbid": "cf294d30-2512-3129-97e3-32ad04a52f54",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 首版標 GB、無廠牌；實為 raster-noton"
+  },
+  {
+   "artist": "Kyoka",
+   "album": "Is (Is Superpowered)",
+   "year": 2014,
+   "label": "Raster-Noton",
+   "country": "jp",
+   "faction": "glitch",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Kyoka 在 raster-noton 的首張全長，glitch 把人聲剁成神經質的切分節奏",
+   "moodGuess": {
+    "x": 3.8,
+    "y": 0.1,
+    "z": -0.6,
+    "why": "人聲切片被剁成高速碎拍，尖細跳躍，旋律破碎"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/efea0d8d-6180-4eb7-bf7d-ee9562647ee0",
+    "https://coverartarchive.org/release-group/efea0d8d-6180-4eb7-bf7d-ee9562647ee0/front"
+   ],
+   "mbRgMbid": "efea0d8d-6180-4eb7-bf7d-ee9562647ee0",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "人聲切片帶一點俏皮，色溫可能被判近 0；kick 偶有厚度"
+  },
+  {
+   "artist": "Farmers Manual",
+   "album": "fsck",
+   "year": 1997,
+   "label": "Tray",
+   "country": "at",
+   "faction": "glitch",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Farmers Manual 維也納 Mego 圈代表作，筆電故障美學的教科書盤",
+   "moodGuess": {
+    "x": 3.5,
+    "y": -0.2,
+    "z": -1.7,
+    "why": "數位錯誤碎片高速跳接，嗶嗶刮擦，無旋律"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/20a06e28-5a0d-3eaa-be43-72f2e690001d",
+    "https://coverartarchive.org/release-group/20a06e28-5a0d-3eaa-be43-72f2e690001d/front"
+   ],
+   "mbRgMbid": "20a06e28-5a0d-3eaa-be43-72f2e690001d",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Farmers Manual",
+   "album": "No Backup",
+   "year": 1996,
+   "label": "Mego",
+   "country": "at",
+   "faction": "glitch",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Farmers Manual 首張，Mego 廠牌早期 glitch 原點之一",
+   "moodGuess": {
+    "x": 3.4,
+    "y": -0.2,
+    "z": -1.6,
+    "why": "碎裂的數位節奏與故障點擊，薄而神經質"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/0579f2fa-aefe-351e-bf70-bc575c41a34e",
+    "https://coverartarchive.org/release-group/0579f2fa-aefe-351e-bf70-bc575c41a34e/front"
+   ],
+   "mbRgMbid": "0579f2fa-aefe-351e-bf70-bc575c41a34e",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Farmers Manual",
+   "album": "Explorers_We",
+   "year": 1998,
+   "label": "OR",
+   "country": "at",
+   "faction": "glitch",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Farmers Manual 在 Or 的單軌拼貼盤，故障碎片不給停頓",
+   "moodGuess": {
+    "x": 3.4,
+    "y": -0.3,
+    "z": -1.7,
+    "why": "上百段數位碎片隨機跳接，尖細、坐不住"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/b4313ca2-f8a5-3e4f-9e93-119c0e72f8c7",
+    "https://coverartarchive.org/release-group/b4313ca2-f8a5-3e4f-9e93-119c0e72f8c7/front"
+   ],
+   "mbRgMbid": "b4313ca2-f8a5-3e4f-9e93-119c0e72f8c7",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Pita",
+   "album": "Seven Tons for Free",
+   "year": 1996,
+   "label": "Mego",
+   "country": "at",
+   "faction": "glitch",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Pita（Peter Rehberg）Mego 首張，筆電噪音與 glitch 的源頭盤",
+   "moodGuess": {
+    "x": 3.4,
+    "y": 0,
+    "z": -1.6,
+    "why": "數位雜訊與刺耳高頻嘶鳴，偶有破碎節拍，乾"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/fb8d3e9c-0c29-3e23-b5e9-632cf7e345ee",
+    "https://coverartarchive.org/release-group/fb8d3e9c-0c29-3e23-b5e9-632cf7e345ee/front"
+   ],
+   "mbRgMbid": "fb8d3e9c-0c29-3e23-b5e9-632cf7e345ee",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Pita 部分段落噪音較滿，y 可能偏 +0.3"
+  },
+  {
+   "artist": "Hecker",
+   "album": "Sun Pandämonium",
+   "year": 2003,
+   "label": "Mego",
+   "country": "de",
+   "faction": "glitch",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Florian Hecker 的 Mego 名盤，心理聲學式的尖細合成噪音，極度挑神經",
+   "moodGuess": {
+    "x": 4.1,
+    "y": 0.1,
+    "z": -1.9,
+    "why": "合成噪音尖嘯高速翻轉，刺耳高頻、無旋律"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/f0169a7d-e17c-3353-800f-0ef3964b95ae",
+    "https://coverartarchive.org/release-group/f0169a7d-e17c-3353-800f-0ef3964b95ae/front"
+   ],
+   "mbRgMbid": "f0169a7d-e17c-3353-800f-0ef3964b95ae",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Florian Hecker",
+   "uncertain": "噪音音量大，y 可能被判 +0.3～0.5"
+  },
+  {
+   "artist": "Hecker",
+   "album": "Recordings for Rephlex",
+   "year": 2006,
+   "label": "Rephlex",
+   "country": "de",
+   "faction": "glitch",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Hecker 在 Rephlex 的盤，比 Mego 盤更有節奏推力的尖細電子",
+   "moodGuess": {
+    "x": 3.7,
+    "y": -0.2,
+    "z": -1.7,
+    "why": "跳動的合成點擊與碎節奏，乾、尖、冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/87a48cae-28d9-3d19-b247-e2832d3eb6ff",
+    "https://coverartarchive.org/release-group/87a48cae-28d9-3d19-b247-e2832d3eb6ff/front"
+   ],
+   "mbRgMbid": "87a48cae-28d9-3d19-b247-e2832d3eb6ff",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Florian Hecker",
+   "uncertain": ""
+  },
+  {
+   "artist": "Hecker",
+   "album": "Acid in the Style of David Tudor",
+   "year": 2009,
+   "label": "Editions Mego",
+   "country": "de",
+   "faction": "glitch",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Hecker 向 David Tudor 致敬的 acid 合成盤，單一音色反覆擰緊",
+   "moodGuess": {
+    "x": 3.5,
+    "y": -0.3,
+    "z": -1.8,
+    "why": "酸性合成音高速顫動，細、尖、緊繃"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/2f46e680-8d2d-4ee6-9e31-42d9720bb10f",
+    "https://coverartarchive.org/release-group/2f46e680-8d2d-4ee6-9e31-42d9720bb10f/front"
+   ],
+   "mbRgMbid": "2f46e680-8d2d-4ee6-9e31-42d9720bb10f",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Florian Hecker",
+   "uncertain": ""
+  },
+  {
+   "artist": "Hecker",
+   "album": "Speculative Solution",
+   "year": 2011,
+   "label": "Editions Mego",
+   "country": "de",
+   "faction": "glitch",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Hecker 與哲學家 Meillassoux 合作的計算音樂，聲響隨機跳接，神經一直被挑",
+   "moodGuess": {
+    "x": 3.6,
+    "y": -0.2,
+    "z": -1.9,
+    "why": "快速切換的合成碎音在空間中跳動，刺耳無調"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/48a7912b-7957-405a-995b-6f6c864ca0bb",
+    "https://coverartarchive.org/release-group/48a7912b-7957-405a-995b-6f6c864ca0bb/front"
+   ],
+   "mbRgMbid": "48a7912b-7957-405a-995b-6f6c864ca0bb",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Florian Hecker",
+   "uncertain": ""
+  },
+  {
+   "artist": "Yasunao Tone",
+   "album": "Solo for Wounded CD",
+   "year": 1997,
+   "label": "Tzadik",
+   "country": "jp",
+   "faction": "glitch",
+   "genres": [
+    "electronic"
+   ],
+   "why": "刀根康尚把刮傷 CD 當樂器，被公認為 glitch 的源頭之一",
+   "moodGuess": {
+    "x": 4,
+    "y": -0.4,
+    "z": -1.9,
+    "why": "刮傷 CD 的跳針碎片高速爆閃，尖細刺耳"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/6d4647bf-0312-3232-84da-9e824fa548fa",
+    "https://coverartarchive.org/release-group/6d4647bf-0312-3232-84da-9e824fa548fa/front"
+   ],
+   "mbRgMbid": "6d4647bf-0312-3232-84da-9e824fa548fa",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Yasunao Tone",
+   "album": "MP3 Deviations #6+7",
+   "year": 2011,
+   "label": "Editions Mego",
+   "country": "jp",
+   "faction": "glitch",
+   "genres": [
+    "electronic"
+   ],
+   "why": "刀根康尚以 MP3 故障演算法生成的晚期名作，Editions Mego 出版",
+   "moodGuess": {
+    "x": 3.9,
+    "y": -0.2,
+    "z": -1.9,
+    "why": "MP3 解碼錯誤生成的碎裂高頻，快而刺"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/647ac2c2-c238-4986-8fcc-ffcc226cfffd",
+    "https://music.apple.com/us/album/mp3-deviations-6-7/1825327612"
+   ],
+   "mbRgMbid": "647ac2c2-c238-4986-8fcc-ffcc226cfffd",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Ikue Mori",
+   "album": "Hex Kitchen",
+   "year": 1995,
+   "label": "Tzadik",
+   "country": "jp",
+   "faction": "glitch",
+   "genres": [
+    "electronic"
+   ],
+   "why": "森郁惠以改造鼓機做出的碎拍電子，紐約下城實驗電子代表",
+   "moodGuess": {
+    "x": 3.4,
+    "y": -0.6,
+    "z": -1.4,
+    "why": "鼓機碎拍與尖細電子音不規則交錯，乾、緊"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/68a37c10-211d-3fbb-99a8-a03a1a772681",
+    "https://coverartarchive.org/release-group/68a37c10-211d-3fbb-99a8-a03a1a772681/front"
+   ],
+   "mbRgMbid": "68a37c10-211d-3fbb-99a8-a03a1a772681",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "森郁惠也可能被 mc34 日本前衛即興線認領"
+  },
+  {
+   "artist": "Ikue Mori",
+   "album": "Garden",
+   "year": 1996,
+   "label": "Tzadik",
+   "country": "jp",
+   "faction": "glitch",
+   "genres": [
+    "electronic"
+   ],
+   "why": "森郁惠 Tzadik 第二張，鼓機碎拍比前作更密",
+   "moodGuess": {
+    "x": 3.4,
+    "y": -0.6,
+    "z": -1.4,
+    "why": "鼓機點擊與取樣碎片的不規則脈衝，薄而神經質"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/c3f99c6b-5700-31a0-84f9-e68c513d5ec4",
+    "https://coverartarchive.org/release-group/c3f99c6b-5700-31a0-84f9-e68c513d5ec4/front"
+   ],
+   "mbRgMbid": "c3f99c6b-5700-31a0-84f9-e68c513d5ec4",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Ikue Mori",
+   "album": "Labyrinth",
+   "year": 2001,
+   "label": "Tzadik",
+   "country": "jp",
+   "faction": "glitch",
+   "genres": [
+    "electronic"
+   ],
+   "why": "森郁惠轉向筆電後的作品，點擊與碎音構成緊繃的迷宮",
+   "moodGuess": {
+    "x": 3.3,
+    "y": -0.6,
+    "z": -1.5,
+    "why": "筆電碎音與點擊快速游移，無調、乾"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/8889f36c-1b71-3090-83e6-5c3a17c0936e",
+    "https://coverartarchive.org/release-group/8889f36c-1b71-3090-83e6-5c3a17c0936e/front"
+   ],
+   "mbRgMbid": "8889f36c-1b71-3090-83e6-5c3a17c0936e",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "較前兩張留白多，x 貼近 3.3"
+  },
+  {
+   "artist": "Ikue Mori",
+   "album": "Myrninerest",
+   "year": 2005,
+   "label": "Tzadik",
+   "country": "jp",
+   "faction": "glitch",
+   "genres": [
+    "electronic"
+   ],
+   "why": "森郁惠 2000 年代筆電盤，碎音與點擊密度高",
+   "moodGuess": {
+    "x": 3.4,
+    "y": -0.5,
+    "z": -1.5,
+    "why": "筆電電子碎響密集翻滾，尖細、無旋律"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/c1bf84f4-d3d2-3516-8ca9-931365757d00",
+    "https://coverartarchive.org/release-group/c1bf84f4-d3d2-3516-8ca9-931365757d00/front"
+   ],
+   "mbRgMbid": "c1bf84f4-d3d2-3516-8ca9-931365757d00",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "EVOL",
+   "album": "Proper Headshrinker",
+   "year": 2013,
+   "label": "Editions Mego",
+   "country": "gb",
+   "faction": "glitch",
+   "genres": [
+    "electronic"
+   ],
+   "why": "EVOL（Roc Jiménez de Cisneros）把 rave hoover 音色抽離成純粹刺激",
+   "moodGuess": {
+    "x": 3.8,
+    "y": 0,
+    "z": -1.4,
+    "why": "單一銳利的 rave 合成音高速翻滾，刺耳、無旋律"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/a084f8b9-d544-44b0-8388-046f56e65959",
+    "https://coverartarchive.org/release-group/a084f8b9-d544-44b0-8388-046f56e65959/front"
+   ],
+   "mbRgMbid": "a084f8b9-d544-44b0-8388-046f56e65959",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "EVOL",
+   "album": "Wormhole Shubz: Finitude and Homeomorphism in Postulatory Rave Synthesis",
+   "year": 2011,
+   "label": "Entr’acte",
+   "country": "es",
+   "faction": "glitch",
+   "genres": [
+    "electronic"
+   ],
+   "why": "EVOL 長篇 rave 合成研究，單一音色被擰到神經緊繃",
+   "moodGuess": {
+    "x": 3.8,
+    "y": 0,
+    "z": -1.5,
+    "why": "rave 合成音的高速捲動與跳接，尖、乾、坐不住"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/90ae9a30-323d-4d45-b6ba-4f02d6f9d20e",
+    "https://www.discogs.com/master/1547822"
+   ],
+   "mbRgMbid": "90ae9a30-323d-4d45-b6ba-4f02d6f9d20e",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "EVOL",
+   "album": "Rave Synthesis Approximations of György Ligeti’s Continuum",
+   "year": 2011,
+   "label": "Sound Proof",
+   "country": "es",
+   "faction": "glitch",
+   "genres": [
+    "electronic"
+   ],
+   "why": "EVOL 把 Ligeti 大鍵琴名作改寫成 rave 合成，高速連打把神經繃到最緊",
+   "moodGuess": {
+    "x": 4,
+    "y": -0.3,
+    "z": -1.6,
+    "why": "Ligeti《Continuum》的機械快速顫音用 rave 合成重做，尖細刺耳"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/9ef4d219-5509-442c-82db-d826ac7bbd7a",
+    "https://www.discogs.com/release/4719097"
+   ],
+   "mbRgMbid": "9ef4d219-5509-442c-82db-d826ac7bbd7a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "限量卡帶（Discogs 4719097），正規全長 31 分"
+  },
+  {
+   "artist": "Rashad Becker",
+   "album": "Traditional Music of Notional Species, Vol. I",
+   "year": 2013,
+   "label": "PAN",
+   "country": "de",
+   "faction": "glitch",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Rashad Becker 的 PAN 盤，合成器做出不存在的民俗音樂，聽了一直不安",
+   "moodGuess": {
+    "x": 3.4,
+    "y": 0.1,
+    "z": -1.6,
+    "why": "怪異合成音如異種生物鳴叫，扭曲無調，不安"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/efc5d8ba-395b-48b3-af51-3c3762f49ad8",
+    "https://coverartarchive.org/release-group/efc5d8ba-395b-48b3-af51-3c3762f49ad8/front"
+   ],
+   "mbRgMbid": "efc5d8ba-395b-48b3-af51-3c3762f49ad8",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "部分段落合成音較厚，y 可能 +0.3"
+  },
+  {
+   "artist": "Maryanne Amacher",
+   "album": "Sound Characters (Making the Third Ear)",
+   "year": 1999,
+   "label": "Tzadik",
+   "country": "us",
+   "faction": "glitch",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Maryanne Amacher 的「第三耳」作品，高頻音讓耳朵自己發聲，神經極緊",
+   "moodGuess": {
+    "x": 3.6,
+    "y": 0.1,
+    "z": -1.8,
+    "why": "耳聲傳射的尖細高頻音交錯，刺耳、令耳朵繃緊"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/3a5dda2d-5ea8-38c3-a860-4c7a36a939b5",
+    "https://coverartarchive.org/release-group/3a5dda2d-5ea8-38c3-a860-4c7a36a939b5/front"
+   ],
+   "mbRgMbid": "3a5dda2d-5ea8-38c3-a860-4c7a36a939b5",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Head Rhythm 段有低頻轟鳴，y 可能偏重"
+  },
+  {
+   "artist": "Gescom",
+   "album": "Minidisc",
+   "year": 1998,
+   "label": "OR",
+   "country": "gb",
+   "faction": "glitch",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Autechre 成員的 Gescom 為 MiniDisc 隨機播放設計的碎片盤",
+   "moodGuess": {
+    "x": 3.5,
+    "y": 0,
+    "z": -1.4,
+    "why": "數十段短碎拍與點擊片段跳接，乾、冷、坐不住"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/a96442ad-e887-3c0f-850f-07955cd24943",
+    "https://coverartarchive.org/release-group/a96442ad-e887-3c0f-850f-07955cd24943/front"
+   ],
+   "mbRgMbid": "a96442ad-e887-3c0f-850f-07955cd24943",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Marcus Schmickler",
+   "album": "Palace of Marvels [Queered Pitch]",
+   "year": 2010,
+   "label": "Editions Mego",
+   "country": "de",
+   "faction": "glitch",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Marcus Schmickler 的 Mego 盤，心理聲學滑音讓人坐立難安",
+   "moodGuess": {
+    "x": 3.6,
+    "y": 0,
+    "z": -1.8,
+    "why": "Shepard-Risset 無限滑音與微分音堆疊，暈眩緊繃"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/d91718fd-de55-47c5-8c57-bb00eec6b682",
+    "https://coverartarchive.org/release-group/d91718fd-de55-47c5-8c57-bb00eec6b682/front"
+   ],
+   "mbRgMbid": "d91718fd-de55-47c5-8c57-bb00eec6b682",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "General Magic",
+   "album": "Frantz!",
+   "year": 1997,
+   "label": "Mego",
+   "country": "at",
+   "faction": "glitch",
+   "genres": [
+    "electronic"
+   ],
+   "why": "General Magic 在 Mego 的盤，維也納早期 glitch 的混亂碎拍",
+   "moodGuess": {
+    "x": 3.6,
+    "y": 0,
+    "z": -1.3,
+    "why": "數位故障節奏與碎拍亂跳，薄、尖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/6973fa44-d5af-3a83-add4-bf0aa4af21a6",
+    "https://coverartarchive.org/release-group/6973fa44-d5af-3a83-add4-bf0aa4af21a6/front"
+   ],
+   "mbRgMbid": "6973fa44-d5af-3a83-add4-bf0aa4af21a6",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "較少評論，三軸 conf 偏低"
+  },
+  {
+   "artist": "Henry Cow",
+   "album": "Western Culture",
+   "year": 1978,
+   "label": "Broadcast",
+   "country": "gb",
+   "faction": "rio",
+   "genres": [
+    "rock"
+   ],
+   "why": "Henry Cow 最後一張錄音室盤，Hodgkinson／Cooper 的無調室內搖滾，RIO 核心",
+   "moodGuess": {
+    "x": 3.4,
+    "y": 0,
+    "z": -1.4,
+    "why": "木管、鋼琴與鼓的無調寫作，拐彎拍號，乾而尖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/f7aa2b48-563b-3e0f-b630-5ad983a78b53",
+    "https://coverartarchive.org/release-group/f7aa2b48-563b-3e0f-b630-5ad983a78b53/front"
+   ],
+   "mbRgMbid": "f7aa2b48-563b-3e0f-b630-5ad983a78b53",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "池中 Henry Cow 他盤 x 3.0–3.1"
+  },
+  {
+   "artist": "Art Bears",
+   "album": "The World as It Is Today",
+   "year": 1981,
+   "label": "Recommended Records",
+   "country": "gb",
+   "faction": "rio",
+   "genres": [
+    "rock"
+   ],
+   "why": "Art Bears 最後一張，比前兩張更短更尖的 RIO 歌曲",
+   "moodGuess": {
+    "x": 3.4,
+    "y": 0,
+    "z": -1.3,
+    "why": "Dagmar 尖聲吟唱配短促無調器樂，緊繃不安"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/2a446bb5-1dd9-3011-a8f7-3f9ff5a10ca2",
+    "https://coverartarchive.org/release-group/2a446bb5-1dd9-3011-a8f7-3f9ff5a10ca2/front"
+   ],
+   "mbRgMbid": "2a446bb5-1dd9-3011-a8f7-3f9ff5a10ca2",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "池中 Art Bears 他盤 x 3.1"
+  },
+  {
+   "artist": "Étron Fou Leloublan",
+   "album": "Batelages",
+   "year": 1977,
+   "label": "",
+   "country": "fr",
+   "faction": "rio",
+   "genres": [
+    "rock"
+   ],
+   "why": "Etron Fou Leloublan 首張，RIO 創始五團之一的法國怪趣搖滾",
+   "moodGuess": {
+    "x": 3.5,
+    "y": -0.3,
+    "z": -0.9,
+    "why": "薩克斯、貝斯與鼓的跳拍怪趣，乾、尖、無清楚旋律"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/e904d524-8d22-369d-8ada-7c798ae0c1c6",
+    "https://coverartarchive.org/release-group/e904d524-8d22-369d-8ada-7c798ae0c1c6/front"
+   ],
+   "mbRgMbid": "e904d524-8d22-369d-8ada-7c798ae0c1c6",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Étron Fou Leloublan",
+   "album": "Les Trois Fou's Perdégagnent (Au Pays Des...)",
+   "year": 1978,
+   "label": "Gratte-Ciel",
+   "country": "fr",
+   "faction": "rio",
+   "genres": [
+    "rock"
+   ],
+   "why": "Etron Fou Leloublan 第二張，1978 首發（MB 只收 2014 再版日期）",
+   "moodGuess": {
+    "x": 3.6,
+    "y": -0.3,
+    "z": -0.9,
+    "why": "拐彎拍號與尖銳薩克斯，三人編制乾瘦急促"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/f0437b6d-ba20-4e4e-b64f-d7a05080942e",
+    "https://coverartarchive.org/release-group/f0437b6d-ba20-4e4e-b64f-d7a05080942e/front"
+   ],
+   "mbRgMbid": "f0437b6d-ba20-4e4e-b64f-d7a05080942e",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB release-group 首發日誤為 2014，原盤 1978"
+  },
+  {
+   "artist": "Étron Fou Leloublan",
+   "album": "Les Sillons de la terre",
+   "year": 1984,
+   "label": "Le Chant du Monde",
+   "country": "fr",
+   "faction": "rio",
+   "genres": [
+    "rock"
+   ],
+   "why": "Etron Fou Leloublan 中期盤，與 Fred Frith 合作後更尖",
+   "moodGuess": {
+    "x": 3.5,
+    "y": -0.2,
+    "z": -1,
+    "why": "鍵盤、薩克斯與鼓的鋸齒節奏，乾而神經質"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/d73000f6-7493-3584-a246-00cbcea4e68a",
+    "https://coverartarchive.org/release-group/d73000f6-7493-3584-a246-00cbcea4e68a/front"
+   ],
+   "mbRgMbid": "d73000f6-7493-3584-a246-00cbcea4e68a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Étron Fou Leloublan",
+   "album": "Face aux éléments déchaînés",
+   "year": 1985,
+   "label": "AYAA",
+   "country": "fr",
+   "faction": "rio",
+   "genres": [
+    "rock"
+   ],
+   "why": "Etron Fou Leloublan 最後一張錄音室盤，Fred Frith 製作",
+   "moodGuess": {
+    "x": 3.6,
+    "y": -0.2,
+    "z": -0.9,
+    "why": "急促拐彎的節奏與尖銳管樂，薄、乾"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/63c61f56-f5cb-4852-ae95-a100de2175b3",
+    "https://coverartarchive.org/release-group/63c61f56-f5cb-4852-ae95-a100de2175b3/front"
+   ],
+   "mbRgMbid": "63c61f56-f5cb-4852-ae95-a100de2175b3",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Thinking Plague",
+   "album": "In This Life",
+   "year": 1989,
+   "label": "Recommended Records",
+   "country": "us",
+   "faction": "rio",
+   "genres": [
+    "rock"
+   ],
+   "why": "Thinking Plague 在 RēR 的代表作，美國 RIO 第二代核心",
+   "moodGuess": {
+    "x": 3.4,
+    "y": 0,
+    "z": -1.3,
+    "why": "無調女聲旋線與尖細木管、吉他的複節奏，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/720610dd-c8a3-3b60-8628-7464f12656ae",
+    "https://coverartarchive.org/release-group/720610dd-c8a3-3b60-8628-7464f12656ae/front"
+   ],
+   "mbRgMbid": "720610dd-c8a3-3b60-8628-7464f12656ae",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Thinking Plague",
+   "album": "In Extremis",
+   "year": 1998,
+   "label": "Cuneiform Records",
+   "country": "us",
+   "faction": "rio",
+   "genres": [
+    "rock"
+   ],
+   "why": "Thinking Plague 公認巔峰，Cuneiform 出版的無調室內搖滾",
+   "moodGuess": {
+    "x": 3.5,
+    "y": 0.1,
+    "z": -1.4,
+    "why": "不和諧的室內搖滾對位，拍號頻變，緊繃無調"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/66570264-45ca-3f7e-8689-1fb19d71e8cb",
+    "https://coverartarchive.org/release-group/66570264-45ca-3f7e-8689-1fb19d71e8cb/front"
+   ],
+   "mbRgMbid": "66570264-45ca-3f7e-8689-1fb19d71e8cb",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "編制較密，y 可能 +0.3"
+  },
+  {
+   "artist": "Thinking Plague",
+   "album": "A History of Madness",
+   "year": 2003,
+   "label": "Cuneiform Records",
+   "country": "us",
+   "faction": "rio",
+   "genres": [
+    "rock"
+   ],
+   "why": "Thinking Plague 2003 盤，延續 In Extremis 的無調寫作",
+   "moodGuess": {
+    "x": 3.4,
+    "y": 0.1,
+    "z": -1.5,
+    "why": "無調對位與拐彎節奏，陰冷緊繃"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/82c120f1-c6e3-3608-bcdc-44febf4133d5",
+    "https://coverartarchive.org/release-group/82c120f1-c6e3-3608-bcdc-44febf4133d5/front"
+   ],
+   "mbRgMbid": "82c120f1-c6e3-3608-bcdc-44febf4133d5",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "編制較密，y 可能 +0.3"
+  },
+  {
+   "artist": "Aksak Maboul",
+   "album": "Un peu de l’âme des bandits",
+   "year": 1980,
+   "label": "Atem",
+   "country": "be",
+   "faction": "rio",
+   "genres": [
+    "rock"
+   ],
+   "why": "Aksak Maboul 加入 Frith／Cutler 後的第二張，比首作尖冷得多",
+   "moodGuess": {
+    "x": 3.4,
+    "y": 0,
+    "z": -0.9,
+    "why": "拼貼、無調器樂與突然切換，尖、不安"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/6c4e0092-ede8-3b96-a906-1fcc4ad7c91a",
+    "https://coverartarchive.org/release-group/6c4e0092-ede8-3b96-a906-1fcc4ad7c91a/front"
+   ],
+   "mbRgMbid": "6c4e0092-ede8-3b96-a906-1fcc4ad7c91a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "池中首作《Onze danses》判暖落放鬆；這張明顯更尖"
+  },
+  {
+   "artist": "Cassiber",
+   "album": "Beauty and the Beast",
+   "year": 1984,
+   "label": "Rē Records",
+   "country": "de",
+   "faction": "rio",
+   "genres": [
+    "rock"
+   ],
+   "why": "Cassiber（Cutler／Goebbels／Harth／Rodelius）第二張，RIO 電子化的尖細那支",
+   "moodGuess": {
+    "x": 3.5,
+    "y": 0.1,
+    "z": -1.3,
+    "why": "磁帶拼貼、尖叫薩克斯與破碎鼓組，緊繃"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/839176eb-2940-317f-add3-7801af9b37ac",
+    "https://coverartarchive.org/release-group/839176eb-2940-317f-add3-7801af9b37ac/front"
+   ],
+   "mbRgMbid": "839176eb-2940-317f-add3-7801af9b37ac",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Cassiber",
+   "album": "Perfect Worlds",
+   "year": 1986,
+   "label": "Riskant",
+   "country": "de",
+   "faction": "rio",
+   "genres": [
+    "rock"
+   ],
+   "why": "Cassiber 第三張，取樣器與電子化更明顯",
+   "moodGuess": {
+    "x": 3.5,
+    "y": 0,
+    "z": -1.2,
+    "why": "取樣器碎片與 Cutler 的說唱式人聲，乾、冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/b0d0e5c0-ac13-4004-bfab-6603cc99d5a0",
+    "https://coverartarchive.org/release-group/b0d0e5c0-ac13-4004-bfab-6603cc99d5a0/front"
+   ],
+   "mbRgMbid": "b0d0e5c0-ac13-4004-bfab-6603cc99d5a0",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Cassiber",
+   "album": "A Face We All Know",
+   "year": 1990,
+   "label": "ReR Megacorp",
+   "country": "de",
+   "faction": "rio",
+   "genres": [
+    "rock"
+   ],
+   "why": "Cassiber 三人編制的最後一張",
+   "moodGuess": {
+    "x": 3.4,
+    "y": 0,
+    "z": -1.2,
+    "why": "取樣切片與跳拍鼓，冷硬緊繃"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/e2768cce-7e97-3559-b593-df76ac426a33",
+    "https://coverartarchive.org/release-group/e2768cce-7e97-3559-b593-df76ac426a33/front"
+   ],
+   "mbRgMbid": "e2768cce-7e97-3559-b593-df76ac426a33",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Fred Frith",
+   "album": "Speechless",
+   "year": 1981,
+   "label": "Ralph Records",
+   "country": "gb",
+   "faction": "rio",
+   "genres": [
+    "rock"
+   ],
+   "why": "Fred Frith 與 Etron Fou、Massacre 合作的 Ralph 盤，RIO 尖細面的典型",
+   "moodGuess": {
+    "x": 3.6,
+    "y": 0.1,
+    "z": -1,
+    "why": "碎裂的器樂片段急促切換，吉他尖刺、拍號亂"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/b3b1d19f-8bec-352e-bc68-8981819295a8",
+    "https://coverartarchive.org/release-group/b3b1d19f-8bec-352e-bc68-8981819295a8/front"
+   ],
+   "mbRgMbid": "b3b1d19f-8bec-352e-bc68-8981819295a8",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Skeleton Crew",
+   "album": "Learn To Talk",
+   "year": 1984,
+   "label": "Recommended Records",
+   "country": "us",
+   "faction": "rio",
+   "genres": [
+    "rock"
+   ],
+   "why": "Fred Frith 與 Tom Cora 的 Skeleton Crew 首張，邊彈邊打的尖細 RIO",
+   "moodGuess": {
+    "x": 3.6,
+    "y": 0,
+    "z": -1,
+    "why": "吉他、大提琴與鼓的急促鋸齒節奏，乾瘦"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/acd185f5-fe9c-4018-95e9-1c6f15f90114",
+    "https://coverartarchive.org/release-group/acd185f5-fe9c-4018-95e9-1c6f15f90114/front"
+   ],
+   "mbRgMbid": "acd185f5-fe9c-4018-95e9-1c6f15f90114",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Skeleton Crew",
+   "album": "The Country of Blinds",
+   "year": 1986,
+   "label": "RecRec Music",
+   "country": "us",
+   "faction": "rio",
+   "genres": [
+    "rock"
+   ],
+   "why": "Skeleton Crew 加入 Zeena Parkins 後的第二張",
+   "moodGuess": {
+    "x": 3.5,
+    "y": 0,
+    "z": -0.9,
+    "why": "大提琴、豎琴與吉他的不和諧短句，神經質"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/87dda191-7446-4c8f-822a-6234470c2ac3",
+    "https://coverartarchive.org/release-group/87dda191-7446-4c8f-822a-6234470c2ac3/front"
+   ],
+   "mbRgMbid": "87dda191-7446-4c8f-822a-6234470c2ac3",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "歌曲性略強，z 可能 −0.5"
+  },
+  {
+   "artist": "5uu's",
+   "album": "Hunger's Teeth",
+   "year": 1994,
+   "label": "ReR Megacorp",
+   "country": "us",
+   "faction": "rio",
+   "genres": [
+    "rock"
+   ],
+   "why": "5uu's 的 RēR 代表作，Bob Drake 乾瘦製作的美國 RIO",
+   "moodGuess": {
+    "x": 3.6,
+    "y": 0.1,
+    "z": -1.2,
+    "why": "拐彎拍號與尖銳吉他、鍵盤對位，乾、無調"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/7edc6fcf-61b0-310a-88c7-9fc9fd74f7f7",
+    "https://coverartarchive.org/release-group/7edc6fcf-61b0-310a-88c7-9fc9fd74f7f7/front"
+   ],
+   "mbRgMbid": "7edc6fcf-61b0-310a-88c7-9fc9fd74f7f7",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "5uu's",
+   "album": "Crisis in Clay",
+   "year": 1997,
+   "label": "ReR Megacorp",
+   "country": "us",
+   "faction": "rio",
+   "genres": [
+    "rock"
+   ],
+   "why": "5uu's 與 Bob Drake 的續作，延續 Hunger's Teeth 的尖細寫作",
+   "moodGuess": {
+    "x": 3.6,
+    "y": 0.1,
+    "z": -1.2,
+    "why": "急促複節奏與無調短句，乾而緊"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/8138352b-6988-396b-b42e-89e61742765c",
+    "https://coverartarchive.org/release-group/8138352b-6988-396b-b42e-89e61742765c/front"
+   ],
+   "mbRgMbid": "8138352b-6988-396b-b42e-89e61742765c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Doctor Nerve",
+   "album": "Armed Observation",
+   "year": 1987,
+   "label": "Cuneiform Records",
+   "country": "us",
+   "faction": "rio",
+   "genres": [
+    "rock"
+   ],
+   "why": "Doctor Nerve 在 Cuneiform 的盤，紐約 RIO 最快最尖的一支",
+   "moodGuess": {
+    "x": 3.9,
+    "y": 0.2,
+    "z": -1,
+    "why": "銅管與吉他的高速無調齊奏，拍號亂，緊繃"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/40299e31-9812-4b44-a5a1-bcf6d001189b",
+    "https://coverartarchive.org/release-group/40299e31-9812-4b44-a5a1-bcf6d001189b/front"
+   ],
+   "mbRgMbid": "40299e31-9812-4b44-a5a1-bcf6d001189b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "銅管較滿，y 貼 0.2"
+  },
+  {
+   "artist": "U Totem",
+   "album": "U Totem",
+   "year": 1990,
+   "label": "Cuneiform Records",
+   "country": "us",
+   "faction": "rio",
+   "genres": [
+    "rock"
+   ],
+   "why": "U Totem（Motor Totemist Guild＋5uu's）唯一同名首作，室內 RIO",
+   "moodGuess": {
+    "x": 3.4,
+    "y": -0.2,
+    "z": -1.2,
+    "why": "巴松管、小提琴與鍵盤的無調室內搖滾，乾"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/4a17064c-2ea3-3ce0-b618-37a1bf014a1b",
+    "https://coverartarchive.org/release-group/4a17064c-2ea3-3ce0-b618-37a1bf014a1b/front"
+   ],
+   "mbRgMbid": "4a17064c-2ea3-3ce0-b618-37a1bf014a1b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Yugen",
+   "album": "Labirinto d'acqua",
+   "year": 2006,
+   "label": "AltrOck",
+   "country": "it",
+   "faction": "rio",
+   "genres": [
+    "rock"
+   ],
+   "why": "Yugen 首張，AltrOck 新世代 RIO 代表，Henry Cow 一路的室內無調",
+   "moodGuess": {
+    "x": 3.5,
+    "y": 0,
+    "z": -1.3,
+    "why": "木管、鋼琴與鐵琴的無調對位，複雜拍號，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/a303261e-ab95-4d63-b592-9f45d14bf59a",
+    "https://coverartarchive.org/release-group/a303261e-ab95-4d63-b592-9f45d14bf59a/front"
+   ],
+   "mbRgMbid": "a303261e-ab95-4d63-b592-9f45d14bf59a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Stormy Six",
+   "album": "Macchina maccheronica",
+   "year": 1980,
+   "label": "L'orchestra",
+   "country": "it",
+   "faction": "rio",
+   "genres": [
+    "rock"
+   ],
+   "why": "Stormy Six 的 RIO 期作品，創始五團之一",
+   "moodGuess": {
+    "x": 3.4,
+    "y": -0.2,
+    "z": -0.7,
+    "why": "尖銳小提琴、薩克斯與拐彎節奏，乾"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/e092f1f3-e383-32c3-ae6a-2507245f91cd",
+    "https://coverartarchive.org/release-group/e092f1f3-e383-32c3-ae6a-2507245f91cd/front"
+   ],
+   "mbRgMbid": "e092f1f3-e383-32c3-ae6a-2507245f91cd",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "義語人聲有吟唱旋律，z 可能被判 −0.3 附近"
+  },
+  {
+   "artist": "Debile Menthol",
+   "album": "Emile au jardin patrologique",
+   "year": 1981,
+   "label": "RecRec Music",
+   "country": "ch",
+   "faction": "rio",
+   "genres": [
+    "rock"
+   ],
+   "why": "瑞士 Debile Menthol 首張，RecRec 廠牌的 RIO 第二波",
+   "moodGuess": {
+    "x": 3.5,
+    "y": -0.1,
+    "z": -0.9,
+    "why": "跳拍、尖銳管樂與無調短句，神經質"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/5246f5cd-e956-34bc-90cc-b8ce02466eac",
+    "https://coverartarchive.org/release-group/5246f5cd-e956-34bc-90cc-b8ce02466eac/front"
+   ],
+   "mbRgMbid": "5246f5cd-e956-34bc-90cc-b8ce02466eac",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "冷門，conf 偏低"
+  }
+ ],
+ "notes": [
+  "共 50 張（glitch 27＋rio 23），未湊滿 54：其餘候選都貼邊，不提。全數 MB 釘住，0 張人工身分。",
+  "擋掉：Oval 全系、Alva Noto 其餘盤（池中多判靜）、Ikeda《Time and Space》（稀疏判靜）、Signal《Centrum》（x 貼 3.3）、Aoki Takamasa《RV8》與 Grischa Lichtenberger（kick／飽和偏重）、Pita《Get Out》（噪音滿＋長段旋律）、Richard Devine／Rian Treanor（池中已有或判重）、CoH《Love Uncut》（EP）、Thomas Ankersmit（MB 無主類型）。",
+  "RIO 擋掉：Univers Zero 全系（池中判重 y 0.7–0.9）、Art Zoyd（池中 y 0.3）、Cassiber《Man or Monkey》與 Massacre《Killing Time》（偏厚）、Thinking Plague 後期兩張（較厚）、Étron Fou《Les Poumons gonflés》（MB 標 Live）、Curlew（無封面）、News from Babel／Samla（旋律清楚判暖）。",
+  "跨組：Bretschneider、Mark Fell、SND、Atom™、Sutekh、Brinkmann 已屬 mc7／mc15，不重提；森郁惠可能與 mc34（日本前衛即興）重疊，主線若 mc34 要收請擇一。",
+  "x 風險：池中同類先例 Ikeda 冷冽盤 x 3.1–3.2、Henry Cow／Art Bears 3.0–3.1，本批猜值 3.3–3.6 的在下緣附近，評分後可能有一部分落平靜／放鬆邊。"
+ ]
+}

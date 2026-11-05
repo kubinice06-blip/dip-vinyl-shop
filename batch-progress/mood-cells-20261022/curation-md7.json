@@ -1,0 +1,1590 @@
+{
+ "group": "md7",
+ "factions": [
+  {
+   "id": "kranky-slow",
+   "zh": "Kranky 系慢盤（Labradford／吉他 drone）",
+   "count": 12,
+   "why": ""
+  },
+  {
+   "id": "constellation",
+   "zh": "Constellation 系暗黑後搖",
+   "count": 5,
+   "why": ""
+  },
+  {
+   "id": "temporary-residence",
+   "zh": "Temporary Residence 系慢燃器樂",
+   "count": 5,
+   "why": ""
+  },
+  {
+   "id": "cold-postrock",
+   "zh": "冷調 post-rock／慢核",
+   "count": 5,
+   "why": ""
+  },
+  {
+   "id": "uk-chamber-slow",
+   "zh": "暗色室內慢搖",
+   "count": 3,
+   "why": ""
+  },
+  {
+   "id": "supersilent-drone",
+   "zh": "Supersilent／drone 吉他",
+   "count": 5,
+   "why": ""
+  },
+  {
+   "id": "cold-score",
+   "zh": "冷色電子配樂",
+   "count": 8,
+   "why": ""
+  },
+  {
+   "id": "guitar-drone-backup",
+   "zh": "無鼓吉他 drone（候補）",
+   "count": 10,
+   "why": ""
+  }
+ ],
+ "albums": [
+  {
+   "artist": "Labradford",
+   "album": "A Stable Reference",
+   "year": 1995,
+   "label": "Kranky",
+   "country": "us",
+   "faction": "kranky-slow",
+   "genres": [
+    "rock",
+    "electronic"
+   ],
+   "why": "Kranky 慢盤原點：低頻嗡鳴吉他與老式合成器墊，幾乎無鼓，冷而厚",
+   "moodGuess": {
+    "x": 1.4,
+    "y": 1.2,
+    "z": -1.2,
+    "why": "無鼓，低頻嗡鳴＋吉他霧，冷灰色"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/b2cb5b5f-baa7-3418-8dc7-327329054e17",
+    "https://coverartarchive.org/release-group/b2cb5b5f-baa7-3418-8dc7-327329054e17/front-250"
+   ],
+   "mbRgMbid": "b2cb5b5f-baa7-3418-8dc7-327329054e17",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Labradford",
+   "album": "Labradford",
+   "year": 1996,
+   "label": "Kranky",
+   "country": "us",
+   "faction": "kranky-slow",
+   "genres": [
+    "rock",
+    "electronic"
+   ],
+   "why": "Kranky 慢盤代表：鼓缺席、聲部緩慢堆疊成一團冷色低頻",
+   "moodGuess": {
+    "x": 1.4,
+    "y": 1.3,
+    "z": -1.2,
+    "why": "幾乎無鼓，低頻厚，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/6e59c047-f75c-3042-a383-07f4ee1e0672",
+    "https://coverartarchive.org/release-group/6e59c047-f75c-3042-a383-07f4ee1e0672/front-250"
+   ],
+   "mbRgMbid": "6e59c047-f75c-3042-a383-07f4ee1e0672",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Labradford",
+   "album": "E luxo so",
+   "year": 1999,
+   "label": "Kranky",
+   "country": "us",
+   "faction": "kranky-slow",
+   "genres": [
+    "rock",
+    "electronic"
+   ],
+   "why": "Labradford 後期靜態傑作：Moog 與吉他緩慢流動，鼓極稀",
+   "moodGuess": {
+    "x": 1.3,
+    "y": 1,
+    "z": -1,
+    "why": "無鼓，Moog 低鳴，疏離"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/49a731ad-ff5e-37a4-ad9d-1ae8438281c2",
+    "https://coverartarchive.org/release-group/49a731ad-ff5e-37a4-ad9d-1ae8438281c2/front-250"
+   ],
+   "mbRgMbid": "49a731ad-ff5e-37a4-ad9d-1ae8438281c2",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Labradford",
+   "album": "fixed::context",
+   "year": 2000,
+   "label": "Kranky",
+   "country": "us",
+   "faction": "kranky-slow",
+   "genres": [
+    "rock",
+    "electronic"
+   ],
+   "why": "Labradford 加入 Mark Nelson 的電子與弦，近乎凝固的冷色紋理",
+   "moodGuess": {
+    "x": 1.3,
+    "y": 1,
+    "z": -1,
+    "why": "無鼓，厚墊與弦，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/7aa3c85d-1e41-34f8-95ab-3453035b5c5b",
+    "https://coverartarchive.org/release-group/7aa3c85d-1e41-34f8-95ab-3453035b5c5b/front-250"
+   ],
+   "mbRgMbid": "7aa3c85d-1e41-34f8-95ab-3453035b5c5b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Windy & Carl",
+   "album": "Bliss Out, Volume 2: Antarctica",
+   "year": 1997,
+   "label": "Darla Records",
+   "country": "us",
+   "faction": "kranky-slow",
+   "genres": [
+    "rock",
+    "electronic"
+   ],
+   "why": "南極為題的吉他 drone 專輯，殘響霧厚、冷色、無鼓",
+   "moodGuess": {
+    "x": 1.2,
+    "y": 1.2,
+    "z": -0.8,
+    "why": "無鼓，吉他殘響霧，冰冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/5461bfa5-7c01-355e-a3f4-01db3d01b1ab",
+    "https://coverartarchive.org/release-group/5461bfa5-7c01-355e-a3f4-01db3d01b1ab/front-250"
+   ],
+   "mbRgMbid": "5461bfa5-7c01-355e-a3f4-01db3d01b1ab",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Roy Montgomery",
+   "album": "Temple IV",
+   "year": 1996,
+   "label": "kranky",
+   "country": "us",
+   "faction": "kranky-slow",
+   "genres": [
+    "rock",
+    "electronic"
+   ],
+   "why": "紐西蘭獨行吉他手的慢燃代表作，殘響浸泡、鼓極少、冷",
+   "moodGuess": {
+    "x": 1.5,
+    "y": 1.1,
+    "z": -1,
+    "why": "殘響吉他，鼓極少，陰冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/2c2a7a22-382e-3241-8f44-01c10eb22774",
+    "https://coverartarchive.org/release-group/2c2a7a22-382e-3241-8f44-01c10eb22774/front-250"
+   ],
+   "mbRgMbid": "2c2a7a22-382e-3241-8f44-01c10eb22774",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Roy Montgomery",
+   "album": "Silver Wheel of Prayer",
+   "year": 2001,
+   "label": "VHF Records",
+   "country": "us",
+   "faction": "kranky-slow",
+   "genres": [
+    "rock",
+    "electronic"
+   ],
+   "why": "Montgomery 的吉他霧牆慢盤，無鼓為主，冷而糊",
+   "moodGuess": {
+    "x": 1.5,
+    "y": 1.2,
+    "z": -0.9,
+    "why": "吉他霧牆，幾乎無鼓"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/17c2a624-4c7f-3e7f-af39-504065870c6e",
+    "https://music.apple.com/us/album/silver-wheel-of-prayer/42565466"
+   ],
+   "mbRgMbid": "17c2a624-4c7f-3e7f-af39-504065870c6e",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Roy Montgomery",
+   "album": "Scenes From the South Island",
+   "year": 1995,
+   "label": "Drunken Fish Records",
+   "country": "us",
+   "faction": "kranky-slow",
+   "genres": [
+    "rock",
+    "electronic"
+   ],
+   "why": "南島風景般荒涼的器樂吉他慢盤，殘響厚、色調冷灰",
+   "moodGuess": {
+    "x": 1.5,
+    "y": 1,
+    "z": -0.9,
+    "why": "荒涼吉他，鼓稀，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/53a6cf4b-a572-38fa-8a5c-42110fa89d1e",
+    "https://coverartarchive.org/release-group/53a6cf4b-a572-38fa-8a5c-42110fa89d1e/front-250"
+   ],
+   "mbRgMbid": "53a6cf4b-a572-38fa-8a5c-42110fa89d1e",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Pan American",
+   "album": "The River Made No Sound",
+   "year": 2002,
+   "label": "Kranky",
+   "country": "us",
+   "faction": "kranky-slow",
+   "genres": [
+    "electronic",
+    "rock"
+   ],
+   "why": "Pan•American 的 dub 式極簡後搖，低頻暗湧、鼓聲稀疏、冷",
+   "moodGuess": {
+    "x": 2,
+    "y": 1,
+    "z": -0.8,
+    "why": "dub 低頻，鼓稀，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/2b589058-a4b6-3f54-87db-a26b02470f55",
+    "https://coverartarchive.org/release-group/2b589058-a4b6-3f54-87db-a26b02470f55/front-250"
+   ],
+   "mbRgMbid": "2b589058-a4b6-3f54-87db-a26b02470f55",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Pan•American",
+   "uncertain": ""
+  },
+  {
+   "artist": "Pan American",
+   "album": "Quiet City",
+   "year": 2004,
+   "label": "kranky",
+   "country": "us",
+   "faction": "kranky-slow",
+   "genres": [
+    "electronic",
+    "rock"
+   ],
+   "why": "夜城般的暗色低頻與稀疏拍點，Kranky 式冷調後搖",
+   "moodGuess": {
+    "x": 2,
+    "y": 1,
+    "z": -0.9,
+    "why": "稀拍低頻，夜城冷色"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/67527605-7225-3785-8445-2fefd446893e",
+    "https://coverartarchive.org/release-group/67527605-7225-3785-8445-2fefd446893e/front-250"
+   ],
+   "mbRgMbid": "67527605-7225-3785-8445-2fefd446893e",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Pan•American",
+   "uncertain": ""
+  },
+  {
+   "artist": "Aarktica",
+   "album": "No Solace in Sleep",
+   "year": 2000,
+   "label": "Silber Records",
+   "country": "us",
+   "faction": "kranky-slow",
+   "genres": [
+    "rock",
+    "electronic"
+   ],
+   "why": "Aarktica 的冷霧後搖：緩慢吉他疊層與電子墊，鼓極少",
+   "moodGuess": {
+    "x": 1.4,
+    "y": 1,
+    "z": -0.8,
+    "why": "電子墊＋吉他霧，鼓少"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/21d39e3b-c6f0-3664-939f-46dd5434588f",
+    "https://coverartarchive.org/release-group/21d39e3b-c6f0-3664-939f-46dd5434588f/front-250"
+   ],
+   "mbRgMbid": "21d39e3b-c6f0-3664-939f-46dd5434588f",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Barn Owl",
+   "album": "Lost in the Glare",
+   "year": 2011,
+   "label": "Thrill Jockey",
+   "country": "us",
+   "faction": "kranky-slow",
+   "genres": [
+    "rock",
+    "electronic"
+   ],
+   "why": "Barn Owl 吉他 drone 加低頻共鳴，無鼓厚牆，色調偏冷",
+   "moodGuess": {
+    "x": 1.5,
+    "y": 1.4,
+    "z": -0.7,
+    "why": "吉他 drone 厚牆，無鼓"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/8d3747c9-b972-487b-958b-1356a16d6ae3",
+    "https://coverartarchive.org/release-group/8d3747c9-b972-487b-958b-1356a16d6ae3/front-250"
+   ],
+   "mbRgMbid": "8d3747c9-b972-487b-958b-1356a16d6ae3",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "z 偏暖風險（沙漠吉他）"
+  },
+  {
+   "artist": "Set Fire to Flames",
+   "album": "Sings Reign Rebuilder",
+   "year": 2001,
+   "label": "Alien8 Recordings",
+   "country": "ca",
+   "faction": "constellation",
+   "genres": [
+    "rock",
+    "electronic"
+   ],
+   "why": "Constellation 的低語式暗黑後搖：田野錄音、緩慢低音與稀鼓，冷而陰",
+   "moodGuess": {
+    "x": 1.8,
+    "y": 1,
+    "z": -1.3,
+    "why": "稀鼓、低音與錄音，陰冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/ee7dd237-0c7f-3eda-a056-8c0f69e7e07a",
+    "https://coverartarchive.org/release-group/ee7dd237-0c7f-3eda-a056-8c0f69e7e07a/front-250"
+   ],
+   "mbRgMbid": "ee7dd237-0c7f-3eda-a056-8c0f69e7e07a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Set Fire to Flames",
+   "album": "Telegraphs in Negative / Mouths Trapped in Static",
+   "year": 2003,
+   "label": "130701",
+   "country": "gb",
+   "faction": "constellation",
+   "genres": [
+    "rock",
+    "electronic"
+   ],
+   "why": "雙碟長篇暗黑後搖，靜電、弦與吉他緩緩推進，鼓少而陰沉",
+   "moodGuess": {
+    "x": 2,
+    "y": 1.1,
+    "z": -1.3,
+    "why": "靜電霧、弦、稀鼓，陰"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/ba6f925a-6ebf-306f-bbfe-e071237df075",
+    "https://coverartarchive.org/release-group/ba6f925a-6ebf-306f-bbfe-e071237df075/front-250"
+   ],
+   "mbRgMbid": "ba6f925a-6ebf-306f-bbfe-e071237df075",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Godspeed You! Black Emperor",
+   "album": "‘Asunder, Sweet and Other Distress’",
+   "year": 2015,
+   "label": "Constellation",
+   "country": "ca",
+   "faction": "constellation",
+   "genres": [
+    "rock"
+   ],
+   "why": "GY!BE 最 drone 的一張，大段低鳴與噪響，鼓退到背後",
+   "moodGuess": {
+    "x": 1.7,
+    "y": 1.5,
+    "z": -1.4,
+    "why": "drone 噪牆，鼓少，陰冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/c74035da-e212-4048-abed-40a7b5343e9a",
+    "https://coverartarchive.org/release-group/c74035da-e212-4048-abed-40a7b5343e9a/front-250"
+   ],
+   "mbRgMbid": "c74035da-e212-4048-abed-40a7b5343e9a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Godspeed You! Black Emperor",
+   "album": "G_d’s Pee AT STATE’S END!",
+   "year": 2021,
+   "label": "Constellation",
+   "country": "ca",
+   "faction": "constellation",
+   "genres": [
+    "rock"
+   ],
+   "why": "GY!BE 的暗色長篇，drone 與低頻咒語段落佔大半，冷而沉",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1.5,
+    "z": -1.3,
+    "why": "drone 段多，鼓偏後，陰"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/3805cfb2-b333-4ed0-a696-019666cca5d7",
+    "https://coverartarchive.org/release-group/3805cfb2-b333-4ed0-a696-019666cca5d7/front-250"
+   ],
+   "mbRgMbid": "3805cfb2-b333-4ed0-a696-019666cca5d7",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "鼓與漸強段較多，x 邊距小"
+  },
+  {
+   "artist": "The Evpatoria Report",
+   "album": "Golevka",
+   "year": 2005,
+   "label": "Shayo Records",
+   "country": "ch",
+   "faction": "constellation",
+   "genres": [
+    "rock",
+    "electronic"
+   ],
+   "why": "俄國宇宙暗黑後搖，太空雜訊與低頻吉他，鼓退後，冷色",
+   "moodGuess": {
+    "x": 1.7,
+    "y": 1.3,
+    "z": -1.2,
+    "why": "太空雜訊與低頻吉他，鼓少"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/6ed00070-0a27-3d1f-890e-ad7a86c70a73",
+    "https://coverartarchive.org/release-group/6ed00070-0a27-3d1f-890e-ad7a86c70a73/front-250"
+   ],
+   "mbRgMbid": "6ed00070-0a27-3d1f-890e-ad7a86c70a73",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Tarentel",
+   "album": "The Order of Things",
+   "year": 2001,
+   "label": "Neurot Recordings",
+   "country": "us",
+   "faction": "temporary-residence",
+   "genres": [
+    "rock",
+    "electronic"
+   ],
+   "why": "舊金山 Tarentel 的暗色器樂慢燃，回授與電子層疊、鼓少",
+   "moodGuess": {
+    "x": 1.7,
+    "y": 1,
+    "z": -0.7,
+    "why": "回授吉他層疊，鼓少"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/92c0a0e4-8682-3ba1-892c-ee749c3a6c2d",
+    "https://coverartarchive.org/release-group/92c0a0e4-8682-3ba1-892c-ee749c3a6c2d/front-250"
+   ],
+   "mbRgMbid": "92c0a0e4-8682-3ba1-892c-ee749c3a6c2d",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Tarentel",
+   "album": "From Bone to Satellite",
+   "year": 1999,
+   "label": "Temporary Residence Limited",
+   "country": "us",
+   "faction": "temporary-residence",
+   "genres": [
+    "rock",
+    "electronic"
+   ],
+   "why": "Tarentel 早期長篇，緩慢的吉他、顫音與低頻，無猛爆",
+   "moodGuess": {
+    "x": 1.9,
+    "y": 1,
+    "z": -0.6,
+    "why": "慢吉他與顫音，鼓稀"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/2b8c18ab-3f52-3d7e-9cd2-0cd2852c7863",
+    "https://coverartarchive.org/release-group/2b8c18ab-3f52-3d7e-9cd2-0cd2852c7863/front-250"
+   ],
+   "mbRgMbid": "2b8c18ab-3f52-3d7e-9cd2-0cd2852c7863",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "z 邊距小"
+  },
+  {
+   "artist": "Tarentel",
+   "album": "We Move Through Weather",
+   "year": 2004,
+   "label": "Temporary Residence Limited",
+   "country": "us",
+   "faction": "temporary-residence",
+   "genres": [
+    "rock",
+    "electronic"
+   ],
+   "why": "Tarentel 後期濃霧般的器樂，緩拍加殘響吉他，色調冷灰",
+   "moodGuess": {
+    "x": 2,
+    "y": 1.1,
+    "z": -0.7,
+    "why": "緩拍殘響吉他，霧"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/75fc6782-269d-3c08-9e4c-ec2aaa0f0389",
+    "https://coverartarchive.org/release-group/75fc6782-269d-3c08-9e4c-ec2aaa0f0389/front-250"
+   ],
+   "mbRgMbid": "75fc6782-269d-3c08-9e4c-ec2aaa0f0389",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "This Will Destroy You",
+   "album": "Tunnel Blanket",
+   "year": 2011,
+   "label": "Monotreme Records",
+   "country": "gb",
+   "faction": "temporary-residence",
+   "genres": [
+    "rock",
+    "electronic"
+   ],
+   "why": "TWDY 最暗最厚的一張，drone 層與緩慢鼓點，像沉在水底",
+   "moodGuess": {
+    "x": 2.1,
+    "y": 1.5,
+    "z": -1,
+    "why": "drone 層厚，慢鼓，陰"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/932067d2-4d80-495d-a037-e9c46d8d9314",
+    "https://coverartarchive.org/release-group/932067d2-4d80-495d-a037-e9c46d8d9314/front-250"
+   ],
+   "mbRgMbid": "932067d2-4d80-495d-a037-e9c46d8d9314",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "This Will Destroy You",
+   "album": "This Will Destroy You",
+   "year": 2008,
+   "label": "Dark Operative",
+   "country": "us",
+   "faction": "temporary-residence",
+   "genres": [
+    "rock"
+   ],
+   "why": "TWDY 自題專輯，緩慢堆疊的殘響吉他，鼓克制，色調冷",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1,
+    "z": -0.5,
+    "why": "殘響吉他慢堆，鼓克制"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/1de570ee-7a63-3702-ab9c-1387c044306c",
+    "https://coverartarchive.org/release-group/1de570ee-7a63-3702-ab9c-1387c044306c/front-250"
+   ],
+   "mbRgMbid": "1de570ee-7a63-3702-ab9c-1387c044306c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "z -0.5 邊距小；鼓有漸強"
+  },
+  {
+   "artist": "Mogwai",
+   "album": "Les Revenants",
+   "year": 2013,
+   "label": "Rock Action Records",
+   "country": "gb",
+   "faction": "cold-postrock",
+   "genres": [
+    "rock",
+    "electronic"
+   ],
+   "why": "Mogwai 為法國喪屍劇所作，低調的琴與合成器墊，鼓極少、冷",
+   "moodGuess": {
+    "x": 1.9,
+    "y": 1,
+    "z": -0.7,
+    "why": "合成器墊與鋼琴，鼓少，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/f008e1b0-35fb-4724-b6f3-11dd6acb0bf5",
+    "https://coverartarchive.org/release-group/f008e1b0-35fb-4724-b6f3-11dd6acb0bf5/front-250"
+   ],
+   "mbRgMbid": "f008e1b0-35fb-4724-b6f3-11dd6acb0bf5",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "y／z 邊距小，後搖配樂偏暖風險"
+  },
+  {
+   "artist": "Mogwai",
+   "album": "Atomic",
+   "year": 2016,
+   "label": "Rock Action Records",
+   "country": "gb",
+   "faction": "cold-postrock",
+   "genres": [
+    "rock",
+    "electronic"
+   ],
+   "why": "Mogwai 為核能紀錄片所作的合成器與吉他慢盤，厚墊、鼓稀",
+   "moodGuess": {
+    "x": 2,
+    "y": 0.9,
+    "z": -0.8,
+    "why": "厚合成器墊，鼓稀，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/abf559f9-8c52-4295-9b8c-79b72f8d9837",
+    "https://coverartarchive.org/release-group/abf559f9-8c52-4295-9b8c-79b72f8d9837/front-250"
+   ],
+   "mbRgMbid": "abf559f9-8c52-4295-9b8c-79b72f8d9837",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "y／z 邊距小，後搖配樂偏暖風險"
+  },
+  {
+   "artist": "Gregor Samsa",
+   "album": "Rest",
+   "year": 2008,
+   "label": "The Kora Records",
+   "country": "us",
+   "faction": "cold-postrock",
+   "genres": [
+    "rock"
+   ],
+   "why": "Gregor Samsa 的低語式慢核，殘響吉他與弦，拍子輕、色調冷",
+   "moodGuess": {
+    "x": 1.5,
+    "y": 1,
+    "z": -0.5,
+    "why": "低語人聲，殘響與弦，鼓輕"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/4582ff1a-eb9e-3012-9c7c-57cc5495aee7",
+    "https://coverartarchive.org/release-group/4582ff1a-eb9e-3012-9c7c-57cc5495aee7/front-250"
+   ],
+   "mbRgMbid": "4582ff1a-eb9e-3012-9c7c-57cc5495aee7",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "z 邊距小，人聲偏柔"
+  },
+  {
+   "artist": "Calla",
+   "album": "Scavengers",
+   "year": 2001,
+   "label": "Quatermass",
+   "country": "be",
+   "faction": "cold-postrock",
+   "genres": [
+    "rock"
+   ],
+   "why": "Calla 的暗色慢搖，低沉人聲與厚吉他，節拍緩、都市冷感",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1,
+    "z": -0.9,
+    "why": "低沉人聲，厚吉他，慢拍"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/a2166fbc-4b4e-3567-9c1c-fcf59fc881fd",
+    "https://coverartarchive.org/release-group/a2166fbc-4b4e-3567-9c1c-fcf59fc881fd/front-250"
+   ],
+   "mbRgMbid": "a2166fbc-4b4e-3567-9c1c-fcf59fc881fd",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "x 2.3–2.4 接近門檻，鼓中速"
+  },
+  {
+   "artist": "Calla",
+   "album": "Televise",
+   "year": 2003,
+   "label": "Arena Rock",
+   "country": "us",
+   "faction": "cold-postrock",
+   "genres": [
+    "rock"
+   ],
+   "why": "Calla 的黑夜都市感慢燃專輯，殘響吉他與低音，拍子克制",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 0.9,
+    "z": -0.9,
+    "why": "殘響吉他，低音，拍克制"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/973e5f85-5b36-381d-94ae-345afec2047e",
+    "https://coverartarchive.org/release-group/973e5f85-5b36-381d-94ae-345afec2047e/front-250"
+   ],
+   "mbRgMbid": "973e5f85-5b36-381d-94ae-345afec2047e",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "x 2.3–2.4 接近門檻，鼓中速"
+  },
+  {
+   "artist": "Low",
+   "album": "Ones and Sixes",
+   "year": 2015,
+   "label": "Sub Pop Records",
+   "country": "us",
+   "faction": "uk-chamber-slow",
+   "genres": [
+    "rock",
+    "electronic"
+   ],
+   "why": "Low 轉向電子質地的暗色慢盤，稀鼓與嗡鳴低頻，冷",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 0.9,
+    "z": -0.9,
+    "why": "稀鼓，嗡鳴低頻，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/1e9dd0d9-59dc-4356-88db-a5353d0a17bc",
+    "https://coverartarchive.org/release-group/1e9dd0d9-59dc-4356-88db-a5353d0a17bc/front-250"
+   ],
+   "mbRgMbid": "1e9dd0d9-59dc-4356-88db-a5353d0a17bc",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "稀鼓＋電子，x 邊距小"
+  },
+  {
+   "artist": "Piano Magic",
+   "album": "Writers Without Homes",
+   "year": 2002,
+   "label": "Labels",
+   "country": "gb",
+   "faction": "uk-chamber-slow",
+   "genres": [
+    "rock",
+    "electronic"
+   ],
+   "why": "Piano Magic 的灰暗室內慢搖，低語、電子墊與稀拍，冷",
+   "moodGuess": {
+    "x": 2,
+    "y": 0.9,
+    "z": -1,
+    "why": "低語、電子墊，稀拍，陰"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/2dfaf7ec-c059-330a-bc4d-3dbce733d874",
+    "https://coverartarchive.org/release-group/2dfaf7ec-c059-330a-bc4d-3dbce733d874/front-250"
+   ],
+   "mbRgMbid": "2dfaf7ec-c059-330a-bc4d-3dbce733d874",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Piano Magic",
+   "album": "Part Monster",
+   "year": 2007,
+   "label": "Homesleep Music",
+   "country": "it",
+   "faction": "uk-chamber-slow",
+   "genres": [
+    "rock",
+    "electronic"
+   ],
+   "why": "Piano Magic 的暗色合成器與弦慢盤，節拍輕、寒冷",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 0.9,
+    "z": -1,
+    "why": "合成器與弦，輕拍，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/4be449e9-4192-3e88-843b-c66dce11b6b9",
+    "https://coverartarchive.org/release-group/4be449e9-4192-3e88-843b-c66dce11b6b9/front-250"
+   ],
+   "mbRgMbid": "4be449e9-4192-3e88-843b-c66dce11b6b9",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Supersilent",
+   "album": "1–3",
+   "year": 1998,
+   "label": "Rune Grammofon",
+   "country": "no",
+   "faction": "supersilent-drone",
+   "genres": [
+    "electronic",
+    "jazz"
+   ],
+   "why": "Rune Grammofon 的 Supersilent 早期即興，電子鳴響與稀疏打擊，冷而厚",
+   "moodGuess": {
+    "x": 1.6,
+    "y": 1.3,
+    "z": -1.2,
+    "why": "電子低鳴，打擊稀，陰冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/57f98f31-0345-32a3-9373-3373675c9e27",
+    "https://coverartarchive.org/release-group/57f98f31-0345-32a3-9373-3373675c9e27/front-250"
+   ],
+   "mbRgMbid": "57f98f31-0345-32a3-9373-3373675c9e27",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Supersilent",
+   "album": "4",
+   "year": 1998,
+   "label": "Rune Grammofon",
+   "country": "no",
+   "faction": "supersilent-drone",
+   "genres": [
+    "electronic",
+    "jazz"
+   ],
+   "why": "Supersilent 第四張，長段電子氛圍與稀少打擊，冷峻",
+   "moodGuess": {
+    "x": 1.6,
+    "y": 1.2,
+    "z": -1.2,
+    "why": "電子氛圍，打擊稀，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/770bb218-527a-3fd0-b3ba-e3c4e41c483e",
+    "https://coverartarchive.org/release-group/770bb218-527a-3fd0-b3ba-e3c4e41c483e/front-250"
+   ],
+   "mbRgMbid": "770bb218-527a-3fd0-b3ba-e3c4e41c483e",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Supersilent",
+   "album": "6",
+   "year": 2003,
+   "label": "Rune Grammofon",
+   "country": "no",
+   "faction": "supersilent-drone",
+   "genres": [
+    "electronic",
+    "jazz"
+   ],
+   "why": "Supersilent 第六張，低頻鳴響、爵士鼓偶現，冷調厚重",
+   "moodGuess": {
+    "x": 1.8,
+    "y": 1.3,
+    "z": -1.2,
+    "why": "低頻鳴響，鼓偶現，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/a76f9502-98c1-3917-9938-ea2897b75d08",
+    "https://coverartarchive.org/release-group/a76f9502-98c1-3917-9938-ea2897b75d08/front-250"
+   ],
+   "mbRgMbid": "a76f9502-98c1-3917-9938-ea2897b75d08",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Nadja",
+   "album": "Radiance of Shadows",
+   "year": 2007,
+   "label": "Alien8 Recordings",
+   "country": "ca",
+   "faction": "supersilent-drone",
+   "genres": [
+    "rock",
+    "electronic"
+   ],
+   "why": "Nadja 的 drone 加鼓機慢盤，吉他牆如潮，鼓機極稀、冷",
+   "moodGuess": {
+    "x": 1.9,
+    "y": 1.9,
+    "z": -1.2,
+    "why": "吉他牆，鼓機極稀，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/c72b27f7-cc7e-33f5-af2f-97ebf36459d9",
+    "https://coverartarchive.org/release-group/c72b27f7-cc7e-33f5-af2f-97ebf36459d9/front-250"
+   ],
+   "mbRgMbid": "c72b27f7-cc7e-33f5-af2f-97ebf36459d9",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "鼓機＋失真牆，可能被判 x≥2.8（兇＋有拍）"
+  },
+  {
+   "artist": "Nadja",
+   "album": "Touched",
+   "year": 2003,
+   "label": "Deserted Factory",
+   "country": "jp",
+   "faction": "supersilent-drone",
+   "genres": [
+    "rock",
+    "electronic"
+   ],
+   "why": "Nadja 的 drone 慢盤，吉他噪牆緩緩推移，鼓機極稀、陰冷",
+   "moodGuess": {
+    "x": 2,
+    "y": 1.9,
+    "z": -1.3,
+    "why": "噪牆慢移，鼓機極稀"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/86801b57-7183-3525-8500-a58b834fa38d",
+    "https://coverartarchive.org/release-group/86801b57-7183-3525-8500-a58b834fa38d/front-250"
+   ],
+   "mbRgMbid": "86801b57-7183-3525-8500-a58b834fa38d",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "鼓機＋失真牆，可能被判 x≥2.8（兇＋有拍）"
+  },
+  {
+   "artist": "Nine Inch Nails",
+   "album": "Ghosts I–IV",
+   "year": 2008,
+   "label": "The Null Corporation",
+   "country": "us",
+   "faction": "cold-score",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Reznor 的四輯器樂 Ghosts，冷色合成器與稀少打擊，厚而疏離",
+   "moodGuess": {
+    "x": 1.8,
+    "y": 1.2,
+    "z": -1.2,
+    "why": "冷合成器，打擊稀，疏離"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/550bf4b9-92ca-30ba-9ea2-8b45f9d081f1",
+    "https://coverartarchive.org/release-group/550bf4b9-92ca-30ba-9ea2-8b45f9d081f1/front-250"
+   ],
+   "mbRgMbid": "550bf4b9-92ca-30ba-9ea2-8b45f9d081f1",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Trent Reznor & Atticus Ross",
+   "album": "The Girl With the Dragon Tattoo",
+   "year": 2011,
+   "label": "The Null Corporation",
+   "country": "us",
+   "faction": "cold-score",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Reznor 與 Ross 的冰冷配樂，工業質地的合成器墊與低鳴，鼓稀",
+   "moodGuess": {
+    "x": 1.9,
+    "y": 1.3,
+    "z": -1.2,
+    "why": "工業合成墊，低鳴，鼓稀"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/5bae78a4-6a78-42bb-9272-ea1252fec6fd",
+    "https://coverartarchive.org/release-group/5bae78a4-6a78-42bb-9272-ea1252fec6fd/front-250"
+   ],
+   "mbRgMbid": "5bae78a4-6a78-42bb-9272-ea1252fec6fd",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Trent Reznor & Atticus Ross",
+   "album": "The Social Network",
+   "year": 2010,
+   "label": "The Null Corporation",
+   "country": "us",
+   "faction": "cold-score",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Reznor 與 Ross 的冷色電子配樂，低頻脈動與合成器墊，鼓少",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 0.9,
+    "z": -1,
+    "why": "脈動低頻，合成墊，鼓少"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/68d34935-78f4-4dfc-8891-7155de2d2f6b",
+    "https://coverartarchive.org/release-group/68d34935-78f4-4dfc-8891-7155de2d2f6b/front-250"
+   ],
+   "mbRgMbid": "68d34935-78f4-4dfc-8891-7155de2d2f6b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "含較輕的鋼琴曲，y 邊距小"
+  },
+  {
+   "artist": "Jóhann Jóhannsson",
+   "album": "Mandy: Original Motion Picture Soundtrack",
+   "year": 2018,
+   "label": "Invada",
+   "country": "gb",
+   "faction": "cold-score",
+   "genres": [
+    "electronic",
+    "classical"
+   ],
+   "why": "Jóhannsson 遺作：極慢的低頻合成器與弦，鼓缺席、暗而厚",
+   "moodGuess": {
+    "x": 1.5,
+    "y": 1.4,
+    "z": -1.3,
+    "why": "低頻合成器，無鼓，暗"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/fe445224-8269-46b0-bf5c-0274f29bf56a",
+    "https://coverartarchive.org/release-group/fe445224-8269-46b0-bf5c-0274f29bf56a/front-250"
+   ],
+   "mbRgMbid": "fe445224-8269-46b0-bf5c-0274f29bf56a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Jóhann Jóhannsson",
+   "album": "Prisoners: Original Motion Picture Soundtrack",
+   "year": 2013,
+   "label": "WaterTower Music",
+   "country": "us",
+   "faction": "cold-score",
+   "genres": [
+    "classical",
+    "electronic"
+   ],
+   "why": "Jóhannsson 的 Prisoners 配樂，低弦與氛圍墊，幾乎無鼓、陰冷",
+   "moodGuess": {
+    "x": 1.5,
+    "y": 1,
+    "z": -1.1,
+    "why": "低弦與墊，無鼓，陰冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/b461b01f-b6aa-4ed2-b712-3922971044d2",
+    "https://coverartarchive.org/release-group/b461b01f-b6aa-4ed2-b712-3922971044d2/front-250"
+   ],
+   "mbRgMbid": "b461b01f-b6aa-4ed2-b712-3922971044d2",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Jóhann Jóhannsson",
+   "album": "Arrival: Complete Score",
+   "year": 2017,
+   "label": "Deutsche Grammophon",
+   "country": "de",
+   "faction": "cold-score",
+   "genres": [
+    "classical",
+    "electronic"
+   ],
+   "why": "Jóhannsson 的 Arrival，合唱般低鳴與弦，無鼓、冷而厚",
+   "moodGuess": {
+    "x": 1.4,
+    "y": 1,
+    "z": -0.9,
+    "why": "低鳴與弦，無鼓，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/0ae66bb6-8b31-4404-a7a4-9d829d4b2694",
+    "https://coverartarchive.org/release-group/0ae66bb6-8b31-4404-a7a4-9d829d4b2694/front-250"
+   ],
+   "mbRgMbid": "0ae66bb6-8b31-4404-a7a4-9d829d4b2694",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Ben Salisbury & Geoff Barrow",
+   "album": "Annihilation",
+   "year": 2018,
+   "label": "Invada",
+   "country": "gb",
+   "faction": "cold-score",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Annihilation 配樂：冷色合成器與原聲吉他，鼓極少，疏離",
+   "moodGuess": {
+    "x": 1.8,
+    "y": 1,
+    "z": -0.9,
+    "why": "冷合成器，鼓極少，疏離"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/e9a881c7-4204-4c49-b073-92489a7a534f",
+    "https://coverartarchive.org/release-group/e9a881c7-4204-4c49-b073-92489a7a534f/front-250"
+   ],
+   "mbRgMbid": "e9a881c7-4204-4c49-b073-92489a7a534f",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Cliff Martinez",
+   "album": "Only God Forgives",
+   "year": 2013,
+   "label": "Wild Bunch AG",
+   "country": "fr",
+   "faction": "cold-score",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Martinez 的暗色合成器配樂，緩慢霓虹冷光、鼓稀",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 1,
+    "z": -1,
+    "why": "暗合成器，鼓稀，冷光"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/e1f815a5-d122-4aaf-ac51-e00d4e131f73",
+    "https://coverartarchive.org/release-group/e1f815a5-d122-4aaf-ac51-e00d4e131f73/front-250"
+   ],
+   "mbRgMbid": "e1f815a5-d122-4aaf-ac51-e00d4e131f73",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Roy Montgomery",
+   "album": "And Now the Rain Sounds Like Life Is Falling Down Through It",
+   "year": 1998,
+   "label": "Drunken Fish Records",
+   "country": "us",
+   "faction": "guitar-drone-backup",
+   "genres": [
+    "rock",
+    "electronic"
+   ],
+   "why": "候補：Montgomery 的殘響吉他長篇，鼓幾乎不出現，陰冷而糊",
+   "moodGuess": {
+    "x": 1.4,
+    "y": 1.2,
+    "z": -0.9,
+    "why": "殘響吉他，無鼓，陰冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/69d0b5b3-4d28-30d5-b543-4ab4b3388b31",
+    "https://coverartarchive.org/release-group/69d0b5b3-4d28-30d5-b543-4ab4b3388b31/front-250"
+   ],
+   "mbRgMbid": "69d0b5b3-4d28-30d5-b543-4ab4b3388b31",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "候補；Bandcamp／小廠發行，label 取自 MB 最早 Official release"
+  },
+  {
+   "artist": "Roy Montgomery",
+   "album": "The Allegory of Hearing",
+   "year": 2000,
+   "label": "Drunken Fish Records",
+   "country": "us",
+   "faction": "guitar-drone-backup",
+   "genres": [
+    "rock",
+    "electronic"
+   ],
+   "why": "候補：Montgomery 的緩慢吉他層疊，空曠冷色，鼓極少",
+   "moodGuess": {
+    "x": 1.4,
+    "y": 1.1,
+    "z": -0.8,
+    "why": "吉他層疊，鼓極少，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/34f2e842-8a12-3df5-bbe0-68b1508cfb44",
+    "https://coverartarchive.org/release-group/34f2e842-8a12-3df5-bbe0-68b1508cfb44/front-250"
+   ],
+   "mbRgMbid": "34f2e842-8a12-3df5-bbe0-68b1508cfb44",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "候補；Bandcamp／小廠發行，label 取自 MB 最早 Official release"
+  },
+  {
+   "artist": "Roy Montgomery",
+   "album": "Camera Melancholia",
+   "year": 2022,
+   "label": "Grapefruit Records",
+   "country": "us",
+   "faction": "guitar-drone-backup",
+   "genres": [
+    "rock",
+    "electronic"
+   ],
+   "why": "候補：Montgomery 晚期的暗色吉他與氛圍墊，無鼓、冷",
+   "moodGuess": {
+    "x": 1.4,
+    "y": 1.1,
+    "z": -0.8,
+    "why": "吉他與墊，無鼓，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/db2b52d1-9e5e-4106-92af-3659dde92c55",
+    "https://coverartarchive.org/release-group/db2b52d1-9e5e-4106-92af-3659dde92c55/front-250"
+   ],
+   "mbRgMbid": "db2b52d1-9e5e-4106-92af-3659dde92c55",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "候補；Bandcamp／小廠發行，label 取自 MB 最早 Official release"
+  },
+  {
+   "artist": "Thisquietarmy",
+   "album": "Hex Mountains",
+   "year": 2013,
+   "label": "Denovali Records",
+   "country": "de",
+   "faction": "guitar-drone-backup",
+   "genres": [
+    "rock",
+    "electronic"
+   ],
+   "why": "候補：加拿大 Thisquietarmy 的失真吉他 drone，無鼓厚牆，冷",
+   "moodGuess": {
+    "x": 1.4,
+    "y": 1.6,
+    "z": -1.2,
+    "why": "失真吉他 drone，無鼓"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/4ca9fa09-71f5-4ba4-82f9-4f47726d42a8",
+    "https://coverartarchive.org/release-group/4ca9fa09-71f5-4ba4-82f9-4f47726d42a8/front-250"
+   ],
+   "mbRgMbid": "4ca9fa09-71f5-4ba4-82f9-4f47726d42a8",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "候補；Bandcamp／小廠發行，label 取自 MB 最早 Official release"
+  },
+  {
+   "artist": "Thisquietarmy",
+   "album": "Vessels",
+   "year": 2011,
+   "label": "Aurora Borealis",
+   "country": "gb",
+   "faction": "guitar-drone-backup",
+   "genres": [
+    "rock",
+    "electronic"
+   ],
+   "why": "候補：Thisquietarmy 的吉他回授長篇，低頻厚、無鼓、陰冷",
+   "moodGuess": {
+    "x": 1.4,
+    "y": 1.6,
+    "z": -1.2,
+    "why": "吉他回授，低頻厚，無鼓"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/e614eb25-33f6-43d4-8eac-e29025feae1b",
+    "https://coverartarchive.org/release-group/e614eb25-33f6-43d4-8eac-e29025feae1b/front-250"
+   ],
+   "mbRgMbid": "e614eb25-33f6-43d4-8eac-e29025feae1b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "候補；Bandcamp／小廠發行，label 取自 MB 最早 Official release"
+  },
+  {
+   "artist": "Thisquietarmy",
+   "album": "Aftermath",
+   "year": 2010,
+   "label": "Basses Frequences",
+   "country": "fr",
+   "faction": "guitar-drone-backup",
+   "genres": [
+    "rock",
+    "electronic"
+   ],
+   "why": "候補：Thisquietarmy 的暗色吉他 drone，灰燼般的厚霧，鼓缺席",
+   "moodGuess": {
+    "x": 1.4,
+    "y": 1.5,
+    "z": -1.2,
+    "why": "吉他 drone 厚霧，無鼓"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/cd6600be-6bec-4b35-947d-625ff3d45fee",
+    "https://coverartarchive.org/release-group/cd6600be-6bec-4b35-947d-625ff3d45fee/front-250"
+   ],
+   "mbRgMbid": "cd6600be-6bec-4b35-947d-625ff3d45fee",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "候補；Bandcamp／小廠發行，label 取自 MB 最早 Official release"
+  },
+  {
+   "artist": "Aidan Baker",
+   "album": "Green & Cold",
+   "year": 2007,
+   "label": "Gears of Sand",
+   "country": "us",
+   "faction": "guitar-drone-backup",
+   "genres": [
+    "rock",
+    "electronic"
+   ],
+   "why": "候補：Aidan Baker 的吉他 drone，冰冷質地加循環殘響，無鼓",
+   "moodGuess": {
+    "x": 1.3,
+    "y": 1.3,
+    "z": -1,
+    "why": "循環吉他殘響，無鼓，冰冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/0a4c66e3-942b-39d5-9eff-cd9104e0f245",
+    "https://coverartarchive.org/release-group/0a4c66e3-942b-39d5-9eff-cd9104e0f245/front-250"
+   ],
+   "mbRgMbid": "0a4c66e3-942b-39d5-9eff-cd9104e0f245",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "候補；Bandcamp／小廠發行，label 取自 MB 最早 Official release"
+  },
+  {
+   "artist": "Aidan Baker",
+   "album": "Ice Against My Skin",
+   "year": 2004,
+   "label": "Arrêt Arrêt Recordings",
+   "country": "be",
+   "faction": "guitar-drone-backup",
+   "genres": [
+    "rock",
+    "electronic"
+   ],
+   "why": "候補：Baker 的冷色吉他 drone，殘響厚、無鼓",
+   "moodGuess": {
+    "x": 1.3,
+    "y": 1.3,
+    "z": -1.1,
+    "why": "吉他殘響，無鼓，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/ba8cbf7b-cdfe-30a4-bec4-d3abfc3d3258",
+    "https://coverartarchive.org/release-group/ba8cbf7b-cdfe-30a4-bec4-d3abfc3d3258/front-250"
+   ],
+   "mbRgMbid": "ba8cbf7b-cdfe-30a4-bec4-d3abfc3d3258",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "候補；Bandcamp／小廠發行，label 取自 MB 最早 Official release"
+  },
+  {
+   "artist": "Aidan Baker",
+   "album": "Field of Drones",
+   "year": 2004,
+   "label": "Arcolepsy Records",
+   "country": "ca",
+   "faction": "guitar-drone-backup",
+   "genres": [
+    "rock",
+    "electronic"
+   ],
+   "why": "候補：Baker 的長篇吉他 drone，低鳴厚牆、無鼓",
+   "moodGuess": {
+    "x": 1.2,
+    "y": 1.5,
+    "z": -0.9,
+    "why": "低鳴 drone 厚牆，無鼓"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/b9a541a4-07ce-3b15-8ae5-af3b45e0b189",
+    "https://coverartarchive.org/release-group/b9a541a4-07ce-3b15-8ae5-af3b45e0b189/front-250"
+   ],
+   "mbRgMbid": "b9a541a4-07ce-3b15-8ae5-af3b45e0b189",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "候補；Bandcamp／小廠發行，label 取自 MB 最早 Official release"
+  },
+  {
+   "artist": "Windy & Carl",
+   "album": "Consciousness",
+   "year": 2001,
+   "label": "kranky",
+   "country": "us",
+   "faction": "guitar-drone-backup",
+   "genres": [
+    "rock",
+    "electronic"
+   ],
+   "why": "候補：Windy & Carl 的吉他霧 drone，無鼓、殘響厚",
+   "moodGuess": {
+    "x": 1.2,
+    "y": 1.2,
+    "z": -0.6,
+    "why": "吉他霧，無鼓，z 邊距小"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/a8f2c9a3-cf10-3c84-87aa-37439a17d0ab",
+    "https://coverartarchive.org/release-group/a8f2c9a3-cf10-3c84-87aa-37439a17d0ab/front-250"
+   ],
+   "mbRgMbid": "a8f2c9a3-cf10-3c84-87aa-37439a17d0ab",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "z 邊距小"
+  }
+ ],
+ "notes": [
+  "場景只挖到 43 張（目標 54）：Kranky／Constellation／Temporary Residence 一線與二線慢盤大半已在池或在 md1/md2 提名（Prazision LP、Bowery Electric、Lushlife、Low《Curtain》、Stars of the Lid、Svarte Greiner 等已排除），不湊數。",
+  "刻意排除：有鼓大爆發的 post-rock（Mono、Explosions in the Sky、Red Sparowes、Pelican、Maserati、Rosetta）、溫暖漸強（Hammock、Eluvium、Sigur Rós、TWDY《Another Language》、Do Make Say Think）、乾淨段落多的（Rachel’s、Dirty Three、Cul de Sac）。",
+  "Pan American 兩張與 Labradford 偏電子，若 md6（Kranky 電子）也提到同名，以 md6 或 md7 先交件者為準；已 grep 目前其他 curation-*.json 無重複。",
+  "Roy Montgomery《Silver Wheel of Prayer》CAA 無封面，改用 Apple Music 網頁為封面來源（iTunes 有收錄）。",
+  "Mogwai《Les Revenants》《Atomic》、Reznor/Ross《Social Network》、Jóhannsson 配樂為 MB 標 Soundtrack 的正規全長專輯，歸入 cold-score／cold-postrock；若主線不收配樂型專輯可整組砍。",
+  "Supersilent《5》《7》為 Live 型，未收；《1–3》《4》《6》為錄音室專輯。",
+  "候補 10 張（guitar-drone-backup）：Roy Montgomery 3、Thisquietarmy 3、Aidan Baker 3、Windy & Carl 1；無鼓吉他 drone，已對 seed 與 curation-md1/2/3/4/8 去重。"
+ ]
+}

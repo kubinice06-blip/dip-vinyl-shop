@@ -1,0 +1,1278 @@
+{
+ "_note": "甲類補標（2026-10-20）：節點路徑 → 藝人（卡池掛名逐字）。build-genre-tree.mjs 步驟 2.6 對主類型＝該節點第一層的卡加掛第二、三層。",
+ "electronic/jp-electronic": [
+  "Ken Ishii",
+  "Susumu Yokota",
+  "電気グルーヴ",
+  "Takkyu Ishino",
+  "Yoshinori Sunahara",
+  "吉村弘",
+  "高田みどり",
+  "清水靖晃",
+  "芦川聡",
+  "Ryoji Ikeda",
+  "Ametsub",
+  "haruka nakamura",
+  "Yellow Magic Orchestra",
+  "坂本龍一",
+  "細野晴臣",
+  "Perfume",
+  "Meitei",
+  "Rei Harakami",
+  "Yutaka Hirose",
+  "Nobukazu Takemura",
+  "Masayoshi Fujita",
+  "DJ Krush",
+  "日向敏文",
+  "浜瀬元彦",
+  "TOWA TEI",
+  "尾島由郎",
+  "Alva Noto & Ryuichi Sakamoto",
+  "川井憲次",
+  "NTsKi",
+  "Sketch Show",
+  "YPY",
+  "in the blue shirt"
+ ],
+ "blues/soulblues": [
+  "Bobby \"Blue\" Bland",
+  "B.B. King & Bobby Bland",
+  "Little Milton",
+  "Z.Z. Hill",
+  "Little Johnny Taylor",
+  "Bobby Rush",
+  "Irma Thomas",
+  "Etta James",
+  "Albert King",
+  "Shemekia Copeland",
+  "The Robert Cray Band",
+  "Koko Taylor"
+ ],
+ "soul/classic-rnb/chicago": [
+  "Curtis Mayfield",
+  "The Impressions",
+  "Jerry Butler",
+  "Gene Chandler",
+  "Major Lance",
+  "The Chi-Lites",
+  "The Dells",
+  "Tyrone Davis",
+  "Syl Johnson",
+  "Billy Stewart",
+  "Mitty Collier",
+  "Barbara Acklin",
+  "Betty Everett",
+  "Garland Green",
+  "Mel & Tim",
+  "Leroy Hutson",
+  "Terry Callier",
+  "Rotary Connection",
+  "Minnie Riperton",
+  "The Emotions",
+  "Ruby Andrews",
+  "The Staple Singers",
+  "Jackie Wilson",
+  "Natalie Cole",
+  "Donny Hathaway",
+  "Sam Cooke",
+  "Lou Rawls"
+ ],
+ "electronic/industrial/industrial-rock": [
+  "Nine Inch Nails",
+  "KMFDM",
+  "Laibach",
+  "HEALTH",
+  "Einstürzende Neubauten",
+  "Front Line Assembly",
+  "Skinny Puppy"
+ ],
+ "folk/indie-folk/lo-fi": [
+  "Elliott Smith",
+  "Mount Eerie",
+  "Smog",
+  "Bill Callahan",
+  "Songs: Ohia",
+  "Red House Painters",
+  "Sun Kil Moon",
+  "Bonnie \"Prince\" Billy",
+  "Grouper",
+  "Cat Power",
+  "Iron & Wine",
+  "Neutral Milk Hotel",
+  "The Mountain Goats",
+  "Sibylle Baier",
+  "Palace Brothers",
+  "Palace Music",
+  "Jessica Pratt",
+  "Big Thief",
+  "Adrianne Lenker",
+  "Karen Dalton",
+  "Linda Perhacs",
+  "Judee Sill",
+  "Phoebe Bridgers",
+  "Lucinda Williams",
+  "Townes Van Zandt",
+  "Gillian Welch",
+  "Angel Olsen",
+  "Weyes Blood",
+  "Vashti Bunyan",
+  "Nick Drake",
+  "Sufjan Stevens",
+  "Bon Iver",
+  "Ryley Walker",
+  "Julien Baker",
+  "Haley Heynderickx"
+ ],
+ "folk/psych-folk/british": [
+  "The Incredible String Band",
+  "Comus",
+  "Vashti Bunyan",
+  "Pentangle",
+  "Trees",
+  "Mellow Candle",
+  "Dr. Strangely Strange",
+  "Bridget St John",
+  "Shelagh McDonald",
+  "Spirogyra",
+  "Forest",
+  "Jan Dukes de Grey",
+  "Fresh Maggots",
+  "Tudor Lodge",
+  "Trader Horne",
+  "Dando Shaft",
+  "Heron",
+  "Synanthesia",
+  "Bread, Love and Dreams",
+  "Stone Angel",
+  "Agincourt",
+  "Donovan",
+  "Shirley Collins & Davy Graham",
+  "C.O.B.",
+  "Mr. Fox",
+  "Nick Drake",
+  "Bert Jansch",
+  "John Renbourn",
+  "Davy Graham",
+  "Anne Briggs",
+  "Shirley Collins",
+  "Sandy Denny",
+  "Fotheringay",
+  "Steeleye Span",
+  "Fairport Convention",
+  "Linda Perhacs",
+  "Ithaca",
+  "Midwinter",
+  "Bill Fay"
+ ],
+ "folk/songwriter/latin": [
+  "Silvio Rodríguez",
+  "Pablo Milanés",
+  "Natalia Lafourcade",
+  "Belchior",
+  "João Bosco",
+  "Atahualpa Yupanqui",
+  "Violeta Parra",
+  "Víctor Jara",
+  "Victor Jara",
+  "Mercedes Sosa",
+  "Daniel Viglietti",
+  "Lula Côrtes e Zé Ramalho"
+ ],
+ "folk/world-folk/latin": [
+  "Violeta Parra",
+  "Víctor Jara",
+  "Victor Jara",
+  "Brigada Víctor Jara",
+  "Mercedes Sosa",
+  "Atahualpa Yupanqui",
+  "Inti-Illimani",
+  "Quilapayún",
+  "Los Jaivas",
+  "Daniel Viglietti",
+  "Patricio Manns",
+  "Silvio Rodríguez",
+  "Pablo Milanés",
+  "Natalia Lafourcade",
+  "Cuarteto Cedrón"
+ ],
+ "pop/synth/asia": [
+  "Yellow Magic Orchestra",
+  "戸川純",
+  "ヤプーズ",
+  "中森明菜",
+  "菊池桃子",
+  "荻野目洋子",
+  "f(x)",
+  "SHINee",
+  "Red Velvet",
+  "aespa",
+  "EXO",
+  "Girls' Generation",
+  "2NE1",
+  "BIGBANG",
+  "김완선",
+  "BoA",
+  "YOASOBI",
+  "m-flo",
+  "NewJeans",
+  "EPO",
+  "杏里",
+  "Mariah",
+  "大貫妙子",
+  "宇多田ヒカル",
+  "安室奈美恵",
+  "Pizzicato Five",
+  "Cornelius",
+  "松田聖子",
+  "小泉今日子",
+  "서태지와 아이들",
+  "IU",
+  "BTS",
+  "TVXQ!",
+  "達明一派"
+ ],
+ "pop/pop-rock/power-pop": [
+  "Big Star",
+  "XTC",
+  "The Go-Go's"
+ ],
+ "pop/jp-pop/anime": [
+  "菅野よう子",
+  "久石譲",
+  "目黒将司",
+  "鷺巣詩郎",
+  "YOASOBI",
+  "米津玄師",
+  "神前暁",
+  "宮川泰"
+ ],
+ "pop/jp-pop/shibuya-kei": [
+  "Pizzicato Five",
+  "Cornelius",
+  "小沢健二",
+  "ORIGINAL LOVE",
+  "Fishmans"
+ ],
+ "world/african/south": [
+  "Miriam Makeba",
+  "Ladysmith Black Mambazo",
+  "Mahlathini and the Mahotella Queens",
+  "Johnny Clegg & Savuka",
+  "Juluka",
+  "Brenda Fassie",
+  "Lucky Dube",
+  "Thomas Mapfumo",
+  "Thomas Mapfumo & The Blacks Unlimited",
+  "Oliver Mtukudzi",
+  "Bhundu Boys",
+  "Letta Mbulu",
+  "Malombo",
+  "Batsumi",
+  "Mankunku Quartet",
+  "Moses Taiwa Molelekwa",
+  "Stella Chiweshe"
+ ],
+ "world/african/ethio": [
+  "Ayalew Mesfin",
+  "Gigi",
+  "Alèmayèhu Eshèté",
+  "Various Artists|Éthiopiques 3: Golden Years of Modern Ethiopian Music, 1969-1975",
+  "Various Artists|Éthiopiques 5: Tigrigna Music 1970-1975",
+  "Asnaqètch Wèrqu",
+  "Various Artists|Éthiopiques 18: Asguèbba!",
+  "Mahmoud Ahmed",
+  "Orchestra Ethiopia",
+  "Various Artists|Éthiopiques 25: 1971 > 1975 Modern Roots",
+  "Ali Mohammed Birra",
+  "Kassa Tessema",
+  "Girma Bèyènè & Akalé Wubé",
+  "Gétatchèw Mèkurya & The Ex",
+  "Krar Collective",
+  "Muluken Melesse & The Dahlak Band"
+ ],
+ "world/arabic/turkish": [
+  "Selda",
+  "Orhan Gencebay",
+  "Zeki Müren",
+  "Sezen Aksu",
+  "Mercan Dede",
+  "Urfalı Babi"
+ ],
+ "world/arabic/persian": [
+  "Nusrat Fateh Ali Khan",
+  "Nusrat Fateh Ali Khan & Michael Brook",
+  "Sabri Brothers",
+  "Mohammad Reza Shajarian, Hossein Alizadeh, Kayhan Kalhor & Homayoun Shajarian",
+  "Hossein Alizadeh & Djivan Gasparyan",
+  "Mercan Dede",
+  "Kudsi Erguner"
+ ],
+ "world/arabic/maghreb": [
+  "Khaled",
+  "Rachid Taha",
+  "Cheikha Rimitti",
+  "Souad Massi",
+  "Nass El Ghiwane",
+  "Idir",
+  "The Master Musicians of Jajouka",
+  "Natacha Atlas",
+  "Le Trio Joubran",
+  "Anouar Brahem"
+ ],
+ "blues/desert": [
+  "Tinariwen",
+  "Mdou Moctar",
+  "Bombino",
+  "Imarhan",
+  "Songhoy Blues",
+  "Ali Farka Touré"
+ ],
+ "classical/musical": [
+  "Stephen Sondheim",
+  "Leonard Bernstein & Stephen Sondheim",
+  "Rodgers & Hammerstein",
+  "Andrew Lloyd Webber",
+  "Andrew Lloyd Webber & Tim Rice",
+  "Claude-Michel Schönberg",
+  "Lerner & Loewe",
+  "Jule Styne",
+  "Kander & Ebb",
+  "Stephen Schwartz",
+  "Leonard Bernstein"
+ ],
+ "electronic/house/garage": [
+  "Horsepower Productions",
+  "Disclosure",
+  "Darkstar",
+  "Burial",
+  "Zomby",
+  "Overmono",
+  "Todd Terry"
+ ],
+ "world/reggae/lovers": [
+  "Janet Kay",
+  "Dennis Bovell",
+  "Matumbi",
+  "Aswad",
+  "Gregory Isaacs",
+  "Sugar Minott",
+  "Beres Hammond",
+  "Marcia Griffiths",
+  "Ken Boothe",
+  "John Holt",
+  "Alton Ellis",
+  "Phyllis Dillon",
+  "Hopeton Lewis",
+  "Delroy Wilson",
+  "Dennis Brown",
+  "Tradition",
+  "Misty in Roots",
+  "UB40",
+  "Jean Adebambo",
+  "Victor Romero Evans",
+  "Owen Gray",
+  "Jimmy Riley",
+  "Jah Free",
+  "Al Campbell",
+  "Johnny Clarke",
+  "Horace Andy",
+  "Leroy Smart",
+  "Hugh Mundell",
+  "Susan Cadogan|Hurt So Good",
+  "Rita Marley|Who Feels It Knows It"
+ ],
+ "world/african/congo": [
+  "Zaïko Langa Langa",
+  "Papa Wemba",
+  "Kanda Bongo Man",
+  "Pépé Kallé",
+  "Sam Mangwana",
+  "M’bilia Bel",
+  "Koffi Olomidé",
+  "Tshala Muana",
+  "Bozi Boziana",
+  "Nyboma",
+  "Verckys et l'Orchestre Vévé",
+  "Docteur Nico",
+  "Ray Lema",
+  "Lokua Kanza",
+  "Kékélé",
+  "Diblo Dibala & Loketo"
+ ],
+ "world/med/fado": [
+  "Camané",
+  "Cristina Branco",
+  "Mísia",
+  "Carminho",
+  "Gisela João",
+  "Katia Guerreiro",
+  "Alfredo Marceneiro",
+  "Fernando Maurício",
+  "Lucília do Carmo",
+  "Maria Teresa de Noronha",
+  "António Zambujo",
+  "Ricardo Ribeiro"
+ ],
+ "world/med/flamenco": [
+  "Lole y Manuel",
+  "Ketama, Toumani Diabaté & Danny Thompson",
+  "Pata Negra",
+  "Diego el Cigala",
+  "Estrella Morente",
+  "Carmen Linares",
+  "José Mercé",
+  "La Paquera de Jerez",
+  "Enrique Morente",
+  "Fernanda de Utrera y Bernarda de Utrera",
+  "Antonio Mairena"
+ ],
+ "world/latin/tango": [
+  "Carlos Gardel",
+  "Aníbal Troilo",
+  "Osvaldo Pugliese",
+  "Juan d'Arienzo",
+  "Carlos Di Sarli",
+  "Roberto Goyeneche",
+  "Horacio Salgán",
+  "Julio Sosa",
+  "Orquesta Típica Fernández Fierro",
+  "Daniel Melingo",
+  "Adriana Varela"
+ ],
+ "world/med/balkan": [
+  "Le Mystère des Voix Bulgares",
+  "Šaban Bajramović",
+  "Romica Puceanu",
+  "Gabi Luncă",
+  "Mahala Rai Banda",
+  "Naftule Brandwein",
+  "Dave Tarras",
+  "Brave Old World",
+  "Márta Sebestyén",
+  "The Trio Bulgarka"
+ ],
+ "hiphop/asia-rap": [
+  "Jogja Hip Hop Foundation"
+ ],
+ "folk/psych-folk/dark": [
+  "Death in June|Nada!",
+  "Death in June|But, What Ends When the Symbols Shatter?",
+  "Sol Invictus|Trees in Winter",
+  "Ordo Rosarius Equilibrio|Make Love, and War: The Wedlock of Roses",
+  "Forseti|Windzeit",
+  "Sonne Hagal|Helfahrt",
+  ":Of the Wand & the Moon:|:Emptiness:Emptiness:Emptiness:",
+  "Rome|Flowers From Exile",
+  "Tenhi|Maaäet",
+  "Wardruna|Runaljod – Yggdrasil",
+  "Hexvessel|No Holier Temple",
+  "Fire + Ice|Gilded by the Sun"
+ ],
+ "electronic/trance/psy": [
+  "Infected Mushroom|The Gathering",
+  "Infected Mushroom|Classical Mushroom",
+  "Astral Projection|Dancing Galaxy",
+  "Juno Reactor|Bible of Dreams",
+  "Hallucinogen|The Lone Deranger",
+  "Shpongle|Tales of the Inexpressible",
+  "Hux Flux|Cryptic Crunch",
+  "Cosmosis|Cosmology",
+  "X-Dream|We Created Our Own Happiness",
+  "Etnica|Alien Protein",
+  "Vibrasphere|Lime Structure",
+  "Growling Mad Scientists|Chaos Laboratory"
+ ],
+ "rock/classic/50s": [
+  "Buddy Holly|Buddy Holly",
+  "Jerry Lee Lewis|Jerry Lee Lewis",
+  "Gene Vincent and His Blue Caps|Bluejean Bop!",
+  "Gene Vincent and His Blue Caps|Gene Vincent and the Blue Caps",
+  "Bill Haley and His Comets|Rock Around the Clock",
+  "Fats Domino|Rock and Rollin' with Fats Domino",
+  "Fats Domino|This Is Fats Domino!",
+  "Wanda Jackson|Rockin' with Wanda",
+  "The Everly Brothers|The Everly Brothers",
+  "Johnny Burnette and the Rock 'n' Roll Trio|Johnny Burnette and the Rock 'n' Roll Trio",
+  "Carl Perkins (rockabilly)|Dance Album of Carl Perkins"
+ ],
+ "soul/classic-rnb/doo-wop": [
+  "The Platters|The Platters",
+  "The Drifters|Rockin' & Driftin'",
+  "The Coasters|The Coasters",
+  "Clyde McPhatter|Love Ballads",
+  "The Penguins|The Cool, Cool Penguins",
+  "The Five Satins|The 5 Satins Sing",
+  "The Del-Vikings|Come Go with the Del Vikings",
+  "The Clovers|The Clovers",
+  "The Cadillacs|The Fabulous Cadillacs",
+  "LaVern Baker|LaVern Baker"
+ ],
+ "hiphop/asia-rap/tw-cn": [
+  "國蛋|GDNA",
+  "ØZI|ØZI: The Album",
+  "高爾宣 OSN|#osnrap",
+  "瘦子 E.SO|Outta Body 靈魂出竅",
+  "Higher Brothers|Black Cab",
+  "GAI|光宗耀祖",
+  "艾福杰尼|楼兰",
+  "熊仔|夢想成真 Sisyphus' Dream",
+  "LMF|大懶堂",
+  "Miss Ko 葛仲珊|皇后區的皇后",
+  "谢帝|人、社会、钱",
+  "廿四味|24HERBS",
+  "KUNG 龔敬文",
+  "潮州土狗",
+  "Juzzy Orange & GoodieK"
+ ],
+ "hiphop/asia-rap/kr": [
+  "Drunken Tiger|Year of the Tiger",
+  "Jazzyfact|Lifes Like",
+  "Deepflow|양화",
+  "넉살|작은 것들의 신",
+  "Changmo|Boyhood",
+  "pH-1|HALO",
+  "Beenzino|NOWITZKI",
+  "The Quiett|Q Train",
+  "Dok2|Multillionaire",
+  "Khundi Panda|GAROSAWK"
+ ],
+ "hiphop/uk-euro/french": [
+  "Oxmo Puccino|Opéra Puccino",
+  "Rohff|La Vie avant la mort",
+  "Diam's|Dans ma bulle",
+  "Kery James|Si c'était à refaire...",
+  "Damso|Ipséité",
+  "La Rumeur|L'Ombre sur la mesure",
+  "Lunatic|Mauvais œil",
+  "Booba|Panthéon",
+  "Ärsenik|Quelques gouttes suffisent…",
+  "113|Les Princes de la ville"
+ ],
+ "hiphop/south/new-orleans": [
+  "Big Freedia|Just Be Free",
+  "Partners-N-Crime|Pump tha Party (Puttin' in Work)",
+  "DJ Jubilee|Take It to the St. Thomas",
+  "U.N.L.V.|6th & Baronne",
+  "Soulja Slim|Give It 2 'Em Raw",
+  "Mia X|Unlady Like",
+  "Turk|Young & Thuggin'",
+  "Curren$y x The Alchemist|Covert Coup"
+ ],
+ "hiphop/south/cloud": [
+  "SpaceGhostPurrp|Mysterious Phonk: The Chronicles of SpaceGhostPurrp",
+  "Xavier Wulf|Project X",
+  "$uicideboy$|I Want to Die in New Orleans"
+ ],
+ "hiphop/underground/cloud": [
+  "BONES|Garbage",
+  "Lil Tracy|Anarchy",
+  "Ecco2k|E"
+ ],
+ "jazz/contemporary": [
+  "Bohren & der Club of Gore",
+  "Angelo Badalamenti",
+  "Radare",
+  "Mansur",
+  "The Thing With Five Eyes",
+  "吳書齊",
+  "陳穎達"
+ ],
+ "jazz/contemporary/nu-jazz": [
+  "Bohren & der Club of Gore",
+  "Malia & Boris Blank|Convergence",
+  "Misc",
+  "Yasushi Ide 井出靖"
+ ],
+ "electronic/ambient/dark-ambient": [
+  "Svarte Greiner",
+  "Ben Salisbury & Geoff Barrow|Annihilation",
+  "Cryobiosis",
+  "Hall of Mirrors",
+  "Coil presents Black Light District",
+  "Mica Levi & Johnnie Burn|The Zone Of Interest",
+  "David García Díaz|Hellblade: Senua’s Sacrifice",
+  "Aethek & Lustmord|Scorn: Original Soundtrack",
+  "Christopher Young|Sinister: Original Motion Picture Soundtrack",
+  "Love Is Colder Than Death|Teignmouth",
+  "Dronny Darko & protoU",
+  "Kolhoosi 13",
+  "Metatron Omega",
+  "Crypthios"
+ ],
+ "rock/metal/doom": [
+  "Sunn O))) & Ulver|Terrestrials",
+  "Æthenor|Deep in Ocean Sunk the Lamp of Light",
+  "Jodis",
+  "Æthenor",
+  "Mamiffer & Circle",
+  "Stephen O’Malley",
+  "Fear Falls Burning",
+  "Locrian",
+  "GREENMACHiNE"
+ ],
+ "rock/dream-post/dream-pop": [
+  "His Name Is Alive|Livonia",
+  "Helado Negro|This Is How You Smile",
+  "Helado Negro|Far In",
+  "Daniel Lanois|Acadie"
+ ],
+ "rock/punk-wave/goth": [
+  "Zola Jesus|The Spoils",
+  "Zola Jesus|Stridulum II",
+  "Arcana"
+ ],
+ "electronic/synth/synthpop": [
+  "Zola Jesus|The Spoils",
+  "Zola Jesus|Stridulum II",
+  "Robert Görl",
+  "Xeno & Oaklander",
+  "Linea Aspera",
+  "John Foxx and the Maths",
+  "DIN A Testbild",
+  "Plastics|ORIGATO PLASTICO",
+  "TESTPATTERN",
+  "CAPSULE|NEXUS-2060",
+  "Glen Check"
+ ],
+ "soul/neo-soul": [
+  "Tirzah|Colourgrade",
+  "Klein|Lifetime",
+  "小沢健二|Eclectic",
+  "Eric Lau|New Territories",
+  "The Midnight Hour|The Midnight Hour",
+  "Homeshake|Under the Weather",
+  "Shafiq Husayn",
+  "問題總部",
+  "Frank McComb|Love Stories",
+  "Leon Thomas (R&B)|Electric Dusk",
+  "mabanua|Blurred",
+  "Kan Sano|Ghost Notes",
+  "Alice Russell|My Favourite Letters",
+  "N’Dambi",
+  "Yo-Sea",
+  "Puma Blue"
+ ],
+ "electronic/ambient/drone": [
+  "夢東 Mong Tong|向位",
+  "King Midas Sound & Fennesz|Edition 1",
+  "John Duncan & Max Springer",
+  "Michael Brook",
+  "David Cordero & Rhucle",
+  "citrine",
+  "Yair Elazar Glotman",
+  "Kristof Hahn",
+  "Opening Performance Orchestra Plays Phill Niblock",
+  "Mohammad",
+  "thisquietarmy",
+  "盧家齊"
+ ],
+ "rock/punk-wave/no-wave": [
+  "にせんねんもんだい"
+ ],
+ "jazz/cool": [
+  "Connie Crothers",
+  "Jerzy Milian Trio",
+  "Prince Lasha Ensemble"
+ ],
+ "hiphop/underground/instrumental": [
+  "Ta-ku|50 Days For Dilla, Vol. 1",
+  "Ta-ku|50 Days For Dilla, Vol. 2",
+  "tomppabeats|Arcade",
+  "Onra & Quetzal|Tribute",
+  "Sixtoo|Chewing on Glass & Other Miracle Cures",
+  "Sixtoo|Jackals and Vipers in Envy of Man",
+  "Blue Sky Black Death|NOIR",
+  "Blue Sky Black Death|Glaciers",
+  "Req|One",
+  "Req|Car Paint Scheme",
+  "Tsutchie|samurai champloo music record: playlist",
+  "Kupla",
+  "sleepy fish",
+  "jinsang",
+  "SwuM. & Jinsang",
+  "SwuM.",
+  "wun two",
+  "Wun Two",
+  "Ohbliv",
+  "mt. fujitive",
+  "Purrple Cat",
+  "Hoogway",
+  "less.people",
+  "Psalm Trees",
+  "Psalm Trees & Moose Dawa",
+  "Mono:Massive & Philanthrope",
+  "B-Side & Philanthrope",
+  "Philanthrope & Devaloop",
+  "Blue Wednesday",
+  "The Deli",
+  "L'Indécis",
+  "BROCKBEATS",
+  "Blue in Green",
+  "Ta-ku",
+  "Fitz Ambro$e & Ohbliv",
+  "Wun Two & Boora",
+  "Smuv, mt. fujitive",
+  "mt. fujitive & oofoe",
+  "Elaquent",
+  "Stan Forebee",
+  "Jazzinuf",
+  "eevee",
+  "Aviino",
+  "NOGYMX",
+  "Nogymx",
+  "Freddie Joachim",
+  "KUSO GVKI",
+  "Emapea",
+  "Mad Keys",
+  "PUZZLEMAN"
+ ],
+ "hiphop/underground/jazz-rap": [
+  "L’Orange|The Orchid Days",
+  "Quelle Chris & Chris Keys|Innocent Country 2",
+  "Superstar Quamallah"
+ ],
+ "rock/psych-prog/psych": [
+  "Peaking Lights|936",
+  "Peaking Lights|Lucifer",
+  "Sun Araw & M. Geddes Gengras meet The Congos|Icon Give Thank",
+  "Nick Hakim|Green Twins",
+  "Kadhja Bonet|Childqueen",
+  "Bardo Pond, Acid Mothers Temple & Guru Guru",
+  "Seiichi Yamamoto 山本精一",
+  "スズキジュンゾ",
+  "dip",
+  "Jesper Siliya",
+  "Mike Nyoni",
+  "Circulation",
+  "Probe",
+  "Smack"
+ ],
+ "electronic/synth/electro": [
+  "AUX 88 Presents Black Tokyo|AUX 88 Presents Black Tokyo"
+ ],
+ "world/reggae/roots": [
+  "Jacob Miller|Tenement Yard",
+  "Tony Tuff|Presenting Mr. Tuff",
+  "Lacksley Castell|Morning Glory",
+  "Horace Andy & Mad Professor|From the Roots",
+  "Wayne Wade",
+  "Tyrone Evans",
+  "Jezzreel",
+  "Audley Rollens",
+  "Noel Phillips",
+  "Winston Jarrett",
+  "Aisha|High Priestess",
+  "Mo’Kalamity meets Sly & Robbie",
+  "Aisha|True Roots",
+  "Junior Ross & The Spears",
+  "Noel Ellis",
+  "Junior Keatting",
+  "Well Pleased & Satisfied",
+  "David Jahson",
+  "Flick Wilson",
+  "Mwanamke Mwafrika",
+  "Aisha|Daughters of Zion",
+  "Congo Ashanti Roy|Sign of the Star",
+  "ジョー山中"
+ ],
+ "soul/classic-rnb/smooth": [
+  "Will Downing",
+  "Lalah Hathaway",
+  "Martin & Garp"
+ ],
+ "soul/classic-rnb": [
+  "Tom Brock",
+  "Gloria Scott",
+  "Thee Sinseers & Joey Quinones|Sinseerly Yours"
+ ],
+ "rock/dream-post/shoegaze": [
+  "Drowse",
+  "Infinite Body"
+ ],
+ "electronic/downtempo/chillwave": [
+  "SLEEP ∞ OVER|Forever",
+  "蜃気楼MIRAGE",
+  "Sun Glitters"
+ ],
+ "rock/indie-alt/neo-psych": [
+  "Nightlands|Forget the Mantra",
+  "Lord Huron|Long Lost",
+  "Jim James|Regions of Light and Sound of God"
+ ],
+ "pop/indie-pop/bedroom": [
+  "Yellow Days|Is Everything Okay in Your World?",
+  "Michael Seyer|Bad Bonez",
+  "Yu Ching 黃雨晴",
+  "狩生健志"
+ ],
+ "electronic/downtempo/chillout": [
+  "Gaudi + Nusrat Fateh Ali Khan"
+ ],
+ "hiphop/uk-euro/uk": [
+  "Coby Sey|Conduit",
+  "Noblemen",
+  "Sad Night Dynamite"
+ ],
+ "hiphop/south/memphis": [
+  "MJG|No More Glory"
+ ],
+ "electronic/synth/synthwave": [
+  "Dynatron",
+  "Pye Corner Audio|Stasis"
+ ],
+ "electronic/downtempo/beats": [
+  "Salami Rose Joe Louis",
+  "Mndsgn|Body Wash",
+  "Bcalm",
+  "Mondo Loops",
+  "delayde",
+  "Fishdoll"
+ ],
+ "jazz/modal/spiritual": [
+  "Miguel Atwood-Ferguson",
+  "Rich Ruth"
+ ],
+ "electronic/synth/new-wave": [
+  "Snowy Red",
+  "立花ハジメ Hajime Tachibana"
+ ],
+ "pop/pop-rock/soft-rock": [
+  "Lewis|L'Amour",
+  "Lewis|Romantic Times",
+  "Ducktails|Jersey Devil"
+ ],
+ "jazz/free/avant": [
+  "Roscoe Mitchell, Anthony Braxton",
+  "Jimmy Lyons & Sunny Murray Trio",
+  "Jimmy Lyons / Andrew Cyrille",
+  "John Carter / Bobby Bradford",
+  "Chick Corea|Is",
+  "Fieldwork",
+  "Mary Halvorson Trio",
+  "Rudresh Mahanthappa",
+  "Tim Berne, Craig Taborn & Tom Rainey",
+  "Ostertag with Zorn with Frith|Attention Span",
+  "Matthew Shipp Duo with Roscoe Mitchell|2-Z",
+  "Matthew Shipp “String” Trio|By the Law of Music",
+  "Matthew Shipp Duo|Thesis",
+  "Marilyn Crispell / Doug James|And Your Ivory Voice Sings",
+  "The Angelica Sanchez Trio, Michael Formanek, Tyshawn Sorey|Float the Edge",
+  "Aruán Ortiz|Cub(an)ism",
+  "Sonny Simmons|Staying on the Watch",
+  "Jacques Coursil Unit",
+  "Rolf + Joachim Kühn Quintet",
+  "György Szabados & MAKUZ",
+  "Grencsó Kollektíva",
+  "Jiří Stivín & Co. Jazz System",
+  "Friedhelm Schönfeld",
+  "Friedhelm Schönfeld & Hubert Katzenbeier"
+ ],
+ "soul/southern": [
+  "Matthew E. White|Big Inner"
+ ],
+ "rock/dream-post/slowcore": [
+  "Acetone|York Blvd."
+ ],
+ "electronic/idm/glitch": [
+  "EVOL|Proper Headshrinker",
+  "Jamie Lidell|Muddlin Gear"
+ ],
+ "electronic/noise/concrete": [
+  "Maryanne Amacher|Sound Characters (Making the Third Ear)",
+  "Otomo Yoshihide & Martin Tétreault|21 Situations",
+  "Otomo Yoshihide & Martin Tétreault|Studio — Analogique — Numérique",
+  "Keith Rowe & Thomas Lehn & Marcus Schmickler|Rabbit Run",
+  "Günter Müller / Norbert Möslang|Vlan_Voilà",
+  "Mazen Kerbaj – Toshimaru Nakamura|East of Where?",
+  "Andy Moor, Thomas Lehn & John Butcher|Thermal",
+  "Trevor Wishart",
+  "A_dontigny",
+  "Nikos Stavropoulos",
+  "Stéphane Roy",
+  "Alain Thibault",
+  "非／密閉空間",
+  "Richard Maxfield",
+  "グループ・音楽"
+ ],
+ "world/latin/latin-pop": [
+  "Carla Morrison|Amor supremo",
+  "Graciela Susana"
+ ],
+ "jazz/free/free-improv": [
+  "Han Bennink / Misha Mengelberg / John Tchicai|Instant Composers Pool",
+  "Phil Minton|A Doughnut in One Hand",
+  "吉田アミ|Tiger Thrush",
+  "Derek Bailey, George Lewis & John Zorn|Yankees",
+  "Polly Bradfield, Andrea Centazzo, Eugene Chadbourne, Tom Cora, Toshinori Kondo, John Zorn|Environment for Sextet",
+  "Tom Cora, David Moss|Cargo Cult Revival",
+  "Agustí Fernández / Barry Guy|Some Other Place",
+  "Jane Rigler & Agustí Fernández|Mandorla",
+  "Axel Dörner & Mazen Kerbaj|Döner Kebab",
+  "Nate Wooley, Seymour Wright|About Trumpet And Saxophone",
+  "Anthony Braxton featuring John Lindberg",
+  "Evan Parker / John Stevens",
+  "Evan Parker / Matthew Shipp",
+  "John Butcher / Georg Graewe",
+  "John Butcher / Dylan van der Schyff",
+  "Ned Rothenberg, Mark Feldman & Sylvie Courvoisier",
+  "Ivo Perelman / Mat Maneri",
+  "Ivo Perelman / Rudi Mahall",
+  "Joëlle Léandre, Carlos Zingaro|Ecritures",
+  "Mat Maneri & Randy Peterson|Light Trigger",
+  "Philipp Wachsmann / Teppo Hauta-Aho|August Steps",
+  "Philipp Wachsmann, Roger Turner|Alizarin",
+  "Fred Lonberg-Holm and Nick Stephens|Crackle: Six improvisations for Cello and Double Bass",
+  "David Stackenäs + Fred Lonberg-Holm|Stackenäs + Lonberg-Holm",
+  "Joëlle Léandre, Alexandra Grimal|Désordre",
+  "Joëlle Léandre / Gianni Lenoci|Sur Une Balançoire",
+  "Barry Guy / Howard Riley / Philipp Wachsmann|Improvisations Are Forever Now (1977-9)",
+  "Perelman • Maneri • Feldman • Hwang|Strings 1",
+  "Pierre Favre & Andrea Centazzo|Dialogues",
+  "Steve Beresford / Han Bennink|Directly to Pyjamas",
+  "Daniele D'Agaro, Alexander von Schlippenbach & Han Bennink|Fingerprints",
+  "Phil Minton / Roger Turner|Dada Da",
+  "Stefano Battaglia, Tony Oxley|Explore",
+  "Pilz, Kowald, Lovens|Carpathes",
+  "Alan Tomlinson / Steve Beresford / Roger Turner|Trap Street",
+  "Isabelle Duthoit, Alexander Frangenheim, Roger Turner|Kochuu",
+  "Chris Corsano|The Young Cricketer",
+  "Urs Voerkel, Peter K. Frey, Paul Lovens",
+  "Christmann Schönenberg Duo",
+  "Wolfgang Fuchs, Hans Schneider, Klaus Huber",
+  "Georg Gräwe Quintet",
+  "Eje Thelin / Pierre Favre / Jouk Minor",
+  "Ernst-Ludwig Petrowsky Quartet",
+  "Itaru Oki, Michel Pilz, Ralf Hübner",
+  "Károly Binder",
+  "Jiří Stivín & Pierre Favre",
+  "Владимир Тарасов",
+  "Ulrich Gumpert",
+  "Manfred Schulze Bläserquintett",
+  "Alan Silva & His Celestial Communication Orchestra"
+ ],
+ "pop/art-pop/baroque": [
+  "k.d. lang|Ingénue",
+  "Danger Mouse & Daniele Luppi"
+ ],
+ "soul/classic-rnb/neo-contemporary": [
+  "Natalie Prass|Natalie Prass",
+  "Brownstone|Still Climbing",
+  "Keke Wyatt",
+  "Alina Baraz"
+ ],
+ "rock/indie-alt/art-exp": [
+  "Timber Timbre|Hot Dreams"
+ ],
+ "world/reggae/dub": [
+  "Ryukyu Underground|Shimadelica",
+  "Mad Professor & The Mad Men Band|Dub You Crazy With Love (Part 2)",
+  "Rico Rodriguez",
+  "Mad Professor & Sandra Cross",
+  "Mad Professor & Susan Cadogan",
+  "Horace Andy & Jah Wobble",
+  "Stick Figure"
+ ],
+ "electronic/bass/dub": [
+  "Almamegretta",
+  "Blundetto & Liam Bailey"
+ ],
+ "classical/contemporary/avant": [
+  "Roger Woodward",
+  "The Fine Arts Quartet|Babbitt: Quartet no. 3 / Wuorinen: String Quartet",
+  "The Contemporary Chamber Players of the University of Chicago|Shapey: String Quartet No. 7",
+  "Robert Miller|Wuorinen / Wolpe / Wyner / Perle: Contemporary Piano Music"
+ ],
+ "pop/t-pop": [
+  "Karencici",
+  "宝島材料行",
+  "諾頓街",
+  "Everfor",
+  "亂彈阿翔"
+ ],
+ "jazz/fusion/jazz-rock": [
+  "Affinity",
+  "Marius Popp",
+  "Toranj 77",
+  "Birdland",
+  "Septet Rousse",
+  "Vesselin Nikolov and White, Green and Red",
+  "Emil Viklický",
+  "Gonda Sextet",
+  "Béla Szakcsi Lakatos",
+  "Wolfgang Dauner Quintet",
+  "Charlie Mariano",
+  "Michał Urbaniak",
+  "Jerry Goodman & Jan Hammer",
+  "Günther Fischer-Quintett"
+ ],
+ "rock/punk-wave/post-punk": [
+  "Eyeless in Gaza"
+ ],
+ "jazz/fusion/guitar": [
+  "David Becker Tribune"
+ ],
+ "jazz/bop/piano": [
+  "Jacques Loussier",
+  "Michel Sardaby",
+  "Yancy Körössy",
+  "Johnny Răducanu",
+  "Lyubomir Denev Jazz Trio",
+  "Gusztáv Csík Quartet",
+  "Karel Růžička",
+  "Oscar Peterson",
+  "Adam Makowicz & George Mraz",
+  "Attila Zoller, Hans Koller & Martial Solal",
+  "Mieczysław Kosz",
+  "Леонид Чижик"
+ ],
+ "jazz/contemporary/vocal": [
+  "Tyreek McDole",
+  "Dominique Fils-Aimé",
+  "The Singers Unlimited"
+ ],
+ "jazz/contemporary/world": [
+  "Greg Foat, Sokratis Votskos & The Giorgos Pappas Trio",
+  "Anca Parghel",
+  "Lala Kovačev",
+  "Theodosii Spassov & Stefan Moutafchiev",
+  "Mihály Dresch Quartet",
+  "George Gruntz",
+  "Monty Alexander / Ernest Ranglin",
+  "Gabor Szabo",
+  "ВИА Севиль",
+  "Lembit Saarsalu kvartett",
+  "Petras Vyšniauskas Quartet"
+ ],
+ "electronic/downtempo/nu-jazz": [
+  "Fresh Moods",
+  "Spiral Deluxe"
+ ],
+ "rock/psych-prog/art-rock": [
+  "Assagai"
+ ],
+ "pop/jp-pop/singer-songwriter": [
+  "swing slow"
+ ],
+ "electronic/house/deep": [
+  "Barry Can't Swim"
+ ],
+ "electronic/idm/ambient-idm": [
+  "Luke Abbott"
+ ],
+ "electronic/downtempo/folktronica": [
+  "Photay",
+  "The Pictish Trail"
+ ],
+ "rock/psych-prog/space-rock": [
+  "Vapour Theories"
+ ],
+ "soul/funk/disco-funk": [
+  "Yung Bae"
+ ],
+ "rock/punk-wave/garage": [
+  "Thee Michelle Gun Elephant"
+ ],
+ "rock/psych-prog/prog": [
+  "コスモス・ファクトリー"
+ ],
+ "rock/classic/70s": [
+  "ジョー山中"
+ ],
+ "rock/indie-alt/indie-pop": [
+  "ないあがらせっと",
+  "ヨシンバ"
+ ],
+ "classical/classical-era": [
+  "Meiko Miyazawa 宮沢明子"
+ ],
+ "electronic/bass/breakbeat": [
+  "Corporate"
+ ],
+ "jazz/contemporary/euro": [
+  "Arthur Flink & Son of Chi",
+  "Mircea Tiberian",
+  "Focus Jazz Quartet",
+  "Csaba Deseő Jazz Quintet",
+  "Gabriel Jonáš",
+  "Karel Velebný & SHQ",
+  "The Włodzimierz Nahorny Trio",
+  "Marek Bliziński",
+  "Janusz Muniak Quintet",
+  "Tomasz Szukalski",
+  "Лембит Саарсалу, Леонид Винцкевич",
+  "Алексей Кузнецов, Николай Громин",
+  "Tiit Paulus",
+  "Džässkvartett «Tallinn»",
+  "Ensemble Studio 4 (Ernst-Ludwig Petrowsky)"
+ ],
+ "world/asia": [
+  "東方沙羅",
+  "三橋貴風 & 山屋清"
+ ],
+ "folk/songwriter/japan": [
+  "穂高亜希子",
+  "バズ"
+ ],
+ "folk/indie-folk/contemporary": [
+  "Sam Gendel & Shin Sasakubo"
+ ],
+ "pop/synth/synthpop": [
+  "越美晴 Miharu Koshi"
+ ],
+ "jazz/vocal": [
+  "沖山秀子 Hideko Okiyama",
+  "Eva Olmerová",
+  "Tamás Berki & Shabu-Shabu",
+  "Wanda Warska",
+  "Ewa Bem",
+  "Tatevik Oganesyan",
+  "Джаз-хорал Александра Киладзе",
+  "Pascal von Wroblewsky"
+ ],
+ "classical/contemporary": [
+  "篠崎史子 Ayako Shinozaki"
+ ],
+ "pop/art-pop/modern": [
+  "AKA lisa",
+  "Blubell"
+ ],
+ "pop/synth/indie": [
+  "Marian Hill"
+ ],
+ "rock/jrock-asia/hk": [
+  "The Offset: Spectacles"
+ ],
+ "hiphop/south/trap": [
+  "ERISTHEPLANET"
+ ],
+ "world/arabic/arab": [
+  "Dudu Tassa & the Kuwaitis"
+ ],
+ "rock/jrock-asia/tw": [
+  "The Sign Of Human 記號士",
+  "My Skin Against Your Skin 激膚"
+ ],
+ "hiphop/conscious/conscious": [
+  "Michael Franti & Spearhead"
+ ],
+ "hiphop/underground/abstract": [
+  "Onry Ozzborn"
+ ],
+ "rock/indie-alt/alt-rock": [
+  "Dudu Tassa"
+ ],
+ "rock/punk-wave/new-wave": [
+  "Fortisakharof"
+ ],
+ "electronic/synth/indietronica": [
+  "Mindchatter",
+  "張亞東",
+  "dotzio",
+  "Loose Meat"
+ ],
+ "pop/indie-pop/dream": [
+  "Parks, Squares and Alleys"
+ ],
+ "jazz/fusion/jazz-funk": [
+  "The Luvmenauts",
+  "Ramon Tavernier / Cătălin Tîrcolea",
+  "Cătălin Tîrcolea",
+  "Tomsits Jazz Group",
+  "Ion Baciu Jr.",
+  "Wojciech Karolak, Michał Urbaniak & Czesław Bartkowski",
+  "Grupa Organowa Krzysztofa Sadowskiego",
+  "Czesław Bartkowski",
+  "Klaus Lenz Modern Soul Big Band"
+ ],
+ "pop/synth/dance-pop": [
+  "Jason Derulo"
+ ],
+ "jazz/swing/big-band": [
+  "Monique Chao Jazz Orchestra",
+  "B.P. Convention",
+  "Stjepko Gut & Big Band RTB",
+  "Friedrich Gulda",
+  "The Kenny Clarke - Francy Boland Big Band",
+  "Jazz Studio Orchestra of the Polish Radio",
+  "Константин Петросян, Татевик Оганесян, Биг-бэнд Владимира Чекасина"
+ ],
+ "pop/sea-pop": [
+  "JUU4E"
+ ],
+ "hiphop/pop-rap": [
+  "Championxiii"
+ ],
+ "rock/indie-alt/lo-fi": [
+  "Tobin Sprout"
+ ],
+ "jazz/bop/hard-bop": [
+  "Marković-Gut Sextet",
+  "Zagreb Jazz Quartet",
+  "Jazz Focus 65",
+  "Laco Déczi",
+  "Trumpets & Rhythm Unit",
+  "Valery Ponomarev",
+  "Andrzej Kurylewicz Quintet",
+  "Zbigniew Namysłowski Modern Jazz Quartet",
+  "Rolf Kühn Quintett"
+ ],
+ "jazz/modal/modal": [
+  "Cvartetul de Jazz Paul Weiner"
+ ],
+ "jazz/contemporary/piano": [
+  "The Super Trio"
+ ],
+ "jazz/free/euro": [
+  "Wolfgang Dauner",
+  "Albert Mangelsdorff Quartet",
+  "Michał Urbaniak, Tomasz Stańko, Attila Zoller & Urszula Dudziak"
+ ],
+ "folk/folk-rock/psych": [
+  "Richard William Turner",
+  "David Lewis",
+  "McAllen",
+  "Ghostdance"
+ ],
+ "folk/psych-folk/freak": [
+  "Free Enterprize",
+  "Jeremy Dormouse",
+  "Rin Eric",
+  "Princess Flower and the Moon Rays"
+ ],
+ "pop/pop-rock/baroque": [
+  "Inner Dialogue"
+ ],
+ "folk/british/folk-rock": [
+  "Ian A. Anderson"
+ ],
+ "soul/classic-rnb/funk": [
+  "Ebony Rhythm Funk Campaign"
+ ],
+ "jazz/fusion/japan": [
+  "菊地雅章セクステット"
+ ],
+ "rock/jrock-asia/id": [
+  "Fanny's Group"
+ ],
+ "soul/funk/afro-funk": [
+  "Cool Knights"
+ ],
+ "world/brazil": [
+  "Marlui Miranda"
+ ],
+ "folk/folk-rock": [
+  "Lutajuća Srca"
+ ],
+ "rock/metal/black": [
+  "Ildjarn"
+ ],
+ "rock/metal/death": [
+  "Sete Star Sept"
+ ],
+ "rock/metal/prog-metal": [
+  "Orthrelm"
+ ],
+ "electronic/noise/harsh": [
+  "Vomir"
+ ]
+}

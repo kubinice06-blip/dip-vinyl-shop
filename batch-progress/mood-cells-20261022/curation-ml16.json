@@ -1,0 +1,1151 @@
+{
+ "group": "ml16",
+ "factions": [
+  {
+   "id": "jazz-rap",
+   "zh": "jazz-rap／boom bap 暖盤（90s–10s 美國）",
+   "count": 11,
+   "why": ""
+  },
+  {
+   "id": "asia-jazz-rap",
+   "zh": "亞洲 jazz-rap 暖盤（日本 S.L.A.C.K.、台灣蛋堡）",
+   "count": 7,
+   "why": ""
+  },
+  {
+   "id": "soul-rap",
+   "zh": "當代慢靈魂饒舌暖盤",
+   "count": 4,
+   "why": ""
+  },
+  {
+   "id": "southern-slow",
+   "zh": "Houston／南方慢饒舌",
+   "count": 10,
+   "why": ""
+  },
+  {
+   "id": "lazy-rap",
+   "zh": "懶散暖饒舌（Curren$y 合作盤、Devin the Dude）",
+   "count": 6,
+   "why": ""
+  }
+ ],
+ "albums": [
+  {
+   "artist": "P.M. Dawn",
+   "album": "Of the Heart, of the Soul and of the Cross: The Utopian Experience",
+   "year": 1991,
+   "label": "Gee Street",
+   "country": "us",
+   "faction": "jazz-rap",
+   "genres": [
+    "hiphop",
+    "pop"
+   ],
+   "why": "夢幻 hip-hop 的源頭，〈Set Adrift on Memory Bliss〉取樣 Spandau Ballet 鋪成一層暖霧，拍子慢、聲音軟而厚",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 0.9,
+    "z": 1.1,
+    "why": "慢拍，夢幻取樣與合聲墊厚成霧，溫柔"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/112262c3-b6c6-384a-be2a-90429ddd03ce",
+    "https://coverartarchive.org/release-group/112262c3-b6c6-384a-be2a-90429ddd03ce/front"
+   ],
+   "mbRgMbid": "112262c3-b6c6-384a-be2a-90429ddd03ce",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "x 中段有幾首中速；整張仍以夢幻慢曲為主"
+  },
+  {
+   "artist": "P.M. Dawn",
+   "album": "The Bliss Album…? (Vibrations of Love and Anger and the Ponderance of Life and Existence)",
+   "year": 1993,
+   "label": "Gee Street",
+   "country": "us",
+   "faction": "jazz-rap",
+   "genres": [
+    "hiphop",
+    "soul"
+   ],
+   "why": "P.M. Dawn 最夢幻的一張，〈I'd Die Without You〉〈Looking Through Patient Eyes〉慢板合聲與殘響把人整個裹住",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.0,
+    "z": 1.2,
+    "why": "慢，合聲殘響與合成器墊包覆，溫暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/cda9d188-675c-3e88-8060-06144f58b4d5",
+    "https://coverartarchive.org/release-group/cda9d188-675c-3e88-8060-06144f58b4d5/front"
+   ],
+   "mbRgMbid": "cda9d188-675c-3e88-8060-06144f58b4d5",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "P.M. Dawn",
+   "album": "Jesus Wept",
+   "year": 1995,
+   "label": "Gee Street",
+   "country": "us",
+   "faction": "jazz-rap",
+   "genres": [
+    "hiphop",
+    "soul"
+   ],
+   "why": "更往迷幻靈魂靠的第三張，慢板抒情與厚合聲層層疊疊，hip-hop 拍子只剩懶懶的底",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1.0,
+    "z": 1.0,
+    "why": "慢板，厚合聲與迷幻墊，溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/7ab5fb86-4a48-3962-9a53-faba51b572cd",
+    "https://coverartarchive.org/release-group/7ab5fb86-4a48-3962-9a53-faba51b572cd/front"
+   ],
+   "mbRgMbid": "7ab5fb86-4a48-3962-9a53-faba51b572cd",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Q-Tip",
+   "album": "Kamaal the Abstract",
+   "year": 2009,
+   "label": "Battery Records",
+   "country": "us",
+   "faction": "jazz-rap",
+   "genres": [
+    "hiphop",
+    "jazz"
+   ],
+   "why": "Q-Tip 被雪藏八年的爵士融合饒舌，Rhodes、長笛、現場低音貝斯慢慢鋪開，jazz-rap 往爵士走到底的一張",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 0.8,
+    "z": 0.9,
+    "why": "鬆的現場鼓，Rhodes 與低音厚而暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/5470d87c-af85-49e8-ab43-0a4c62803255",
+    "https://coverartarchive.org/release-group/5470d87c-af85-49e8-ab43-0a4c62803255/front"
+   ],
+   "mbRgMbid": "5470d87c-af85-49e8-ab43-0a4c62803255",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "y 可能偏輕（現場樂團較乾淨）；年份取 2009 正式發行（MB 首發日 2001 為宣傳片）"
+  },
+  {
+   "artist": "Talib Kweli & Madlib",
+   "album": "Liberation",
+   "year": 2006,
+   "label": "Blacksmith",
+   "country": "us",
+   "faction": "jazz-rap",
+   "genres": [
+    "hiphop",
+    "jazz"
+   ],
+   "why": "Madlib 一手包辦的 dusty 靈魂取樣，Kweli 放慢了講，續作《Liberation 2》已落恍惚",
+   "moodGuess": {
+    "x": 2.7,
+    "y": 1.1,
+    "z": 0.8,
+    "why": "懶鼓，dusty 靈魂取樣糊而暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/b1f29a11-2c78-3dc4-ac93-7cd1af577854",
+    "https://coverartarchive.org/release-group/b1f29a11-2c78-3dc4-ac93-7cd1af577854/front"
+   ],
+   "mbRgMbid": "b1f29a11-2c78-3dc4-ac93-7cd1af577854",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "x 貼 2.7；續作 2.7/1.0/0.6 落恍惚"
+  },
+  {
+   "artist": "Quelle Chris",
+   "album": "Innocent Country",
+   "year": 2015,
+   "label": "Mello Music Group",
+   "country": "us",
+   "faction": "jazz-rap",
+   "genres": [
+    "hiphop",
+    "jazz"
+   ],
+   "why": "Chris Keys 的爵士鋼琴配 Quelle Chris 慵懶的 Detroit 腔，Mello Music 的暖 jazz-rap 代表",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 0.9,
+    "z": 0.5,
+    "why": "慢，爵士鋼琴與 dusty 鼓，略帶自嘲的暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/06dc3c9c-a4df-428d-9134-232d41bd9126",
+    "https://coverartarchive.org/release-group/06dc3c9c-a4df-428d-9134-232d41bd9126/front"
+   ],
+   "mbRgMbid": "06dc3c9c-a4df-428d-9134-232d41bd9126",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "z 可能偏中性"
+  },
+  {
+   "artist": "Quelle Chris & Chris Keys",
+   "album": "Innocent Country 2",
+   "year": 2020,
+   "label": "Mello Music Group",
+   "country": "us",
+   "faction": "jazz-rap",
+   "genres": [
+    "hiphop",
+    "jazz"
+   ],
+   "why": "續作更鬆更溫，鋼琴與弦樂墊在慢拍上，客串 Earl、Big Sen 也走同一種懶",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 0.9,
+    "z": 0.6,
+    "why": "慢拍，鋼琴弦樂墊厚，溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/8d439a11-9bf2-4fbc-997c-89ae212b3b39",
+    "https://coverartarchive.org/release-group/8d439a11-9bf2-4fbc-997c-89ae212b3b39/front"
+   ],
+   "mbRgMbid": "8d439a11-9bf2-4fbc-997c-89ae212b3b39",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Ladybug Mecca",
+   "album": "Trip the Light Fantastic",
+   "year": 2005,
+   "label": "Nu Paradigm",
+   "country": "us",
+   "faction": "jazz-rap",
+   "genres": [
+    "hiphop",
+    "jazz"
+   ],
+   "why": "Digable Planets 的 Ladybug 個人唯一一張，延續 Digable 的爵士慵懶，帶拉丁與靈魂的暖",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 0.8,
+    "z": 0.9,
+    "why": "鬆拍，爵士與拉丁取樣，溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/79a0ef95-8a55-3d1f-9237-c8f5666e5e83",
+    "https://coverartarchive.org/release-group/79a0ef95-8a55-3d1f-9237-c8f5666e5e83/front"
+   ],
+   "mbRgMbid": "79a0ef95-8a55-3d1f-9237-c8f5666e5e83",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "y 可能偏輕（拉丁段較乾淨）"
+  },
+  {
+   "artist": "The Nonce",
+   "album": "World Ultimate",
+   "year": 1995,
+   "label": "American Recordings",
+   "country": "us",
+   "faction": "jazz-rap",
+   "genres": [
+    "hiphop",
+    "jazz"
+   ],
+   "why": "LA 地下 jazz-rap 小經典，〈Mix Tapes〉懶洋洋的爵士取樣與鬆拍，西岸版的 Digable",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 0.9,
+    "z": 0.8,
+    "why": "鬆拍，dusty 爵士取樣，溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/e65c6e62-5782-30fa-be10-687197fda931",
+    "https://coverartarchive.org/release-group/e65c6e62-5782-30fa-be10-687197fda931/front"
+   ],
+   "mbRgMbid": "e65c6e62-5782-30fa-be10-687197fda931",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Jazz Liberatorz",
+   "album": "Clin d’œil",
+   "year": 2007,
+   "label": "Kif Records",
+   "country": "fr",
+   "faction": "jazz-rap",
+   "genres": [
+    "hiphop",
+    "jazz"
+   ],
+   "why": "法國三人製作組邀美國地下 MC，dusty 爵士取樣的懷舊 boom bap，日本 P-Vine 發行後成 jazzy hip-hop 名盤",
+   "moodGuess": {
+    "x": 2.7,
+    "y": 0.9,
+    "z": 0.9,
+    "why": "中慢拍，dusty 爵士取樣厚，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/aa2a57ac-0084-3650-959e-134a3cb306c4",
+    "https://coverartarchive.org/release-group/aa2a57ac-0084-3650-959e-134a3cb306c4/front"
+   ],
+   "mbRgMbid": "aa2a57ac-0084-3650-959e-134a3cb306c4",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "x 貼 2.7；部分歌偏 boom bap 中速"
+  },
+  {
+   "artist": "DJ Day",
+   "album": "The Day Before",
+   "year": 2007,
+   "label": "Melting Pot Music",
+   "country": "us",
+   "faction": "jazz-rap",
+   "genres": [
+    "hiphop",
+    "electronic"
+   ],
+   "why": "Palm Springs 的 DJ Day 器樂盤，老靈魂取樣切得溫熱，鼓懶、磁帶感厚",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.1,
+    "z": 0.8,
+    "why": "懶鼓，靈魂取樣糊而暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/81f95702-686d-42d1-91cb-758d27fb03e7",
+    "https://coverartarchive.org/release-group/81f95702-686d-42d1-91cb-758d27fb03e7/front"
+   ],
+   "mbRgMbid": "81f95702-686d-42d1-91cb-758d27fb03e7",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "S.L.A.C.K.",
+   "album": "MY SPACE",
+   "year": 2009,
+   "label": "DOGEAR RECORDS",
+   "country": "jp",
+   "faction": "asia-jazz-rap",
+   "genres": [
+    "hiphop",
+    "jazz"
+   ],
+   "why": "5lack 的出道作，懶到不行的饒舌與自製 dusty 爵士 loop，日本 lazy rap 的起點",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.0,
+    "z": 0.6,
+    "why": "懶拍，dusty loop 糊，煙霧暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/1b617a5a-b977-4446-b08e-f5c6c4d2b8a2",
+    "https://coverartarchive.org/release-group/1b617a5a-b977-4446-b08e-f5c6c4d2b8a2/front"
+   ],
+   "mbRgMbid": "1b617a5a-b977-4446-b08e-f5c6c4d2b8a2",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "5lack",
+   "uncertain": ""
+  },
+  {
+   "artist": "S.L.A.C.K.",
+   "album": "WHALABOUT?",
+   "year": 2009,
+   "label": "DOGEAR RECORDS",
+   "country": "jp",
+   "faction": "asia-jazz-rap",
+   "genres": [
+    "hiphop",
+    "jazz"
+   ],
+   "why": "同年第二張，更鬆更糊，取樣的霧比《MY SPACE》更厚",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1.1,
+    "z": 0.6,
+    "why": "慢，取樣霧厚，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/5c4bd8bb-f61d-4b72-ad09-fd0449da51d7",
+    "https://coverartarchive.org/release-group/5c4bd8bb-f61d-4b72-ad09-fd0449da51d7/front"
+   ],
+   "mbRgMbid": "5c4bd8bb-f61d-4b72-ad09-fd0449da51d7",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "5lack",
+   "uncertain": ""
+  },
+  {
+   "artist": "S.L.A.C.K.",
+   "album": "我時想う愛",
+   "year": 2011,
+   "label": "高田音楽制作事務所",
+   "country": "jp",
+   "faction": "asia-jazz-rap",
+   "genres": [
+    "hiphop",
+    "jazz"
+   ],
+   "why": "5lack 第三張，情歌與日常的慵懶，靈魂取樣更溫柔",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 0.9,
+    "z": 0.8,
+    "why": "懶拍，溫柔靈魂取樣，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/fb7e7018-fba7-4b6e-bb65-66f095f5f09f",
+    "https://coverartarchive.org/release-group/fb7e7018-fba7-4b6e-bb65-66f095f5f09f/front"
+   ],
+   "mbRgMbid": "fb7e7018-fba7-4b6e-bb65-66f095f5f09f",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "5lack",
+   "uncertain": ""
+  },
+  {
+   "artist": "蛋堡",
+   "album": "Winter Sweet",
+   "year": 2009,
+   "label": "顏社",
+   "country": "tw",
+   "faction": "asia-jazz-rap",
+   "genres": [
+    "hiphop",
+    "jazz"
+   ],
+   "why": "台灣 jazz-rap 代表蛋堡 2009 年第二張，冬天題材的爵士取樣，同期《收斂水》已落恍惚",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 0.9,
+    "z": 1.0,
+    "why": "慢拍，爵士取樣溫軟，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/e6e030f0-07a7-429f-82e8-4ea22bea4ce4",
+    "https://coverartarchive.org/release-group/e6e030f0-07a7-429f-82e8-4ea22bea4ce4/front"
+   ],
+   "mbRgMbid": "e6e030f0-07a7-429f-82e8-4ea22bea4ce4",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "蛋堡 Soft Lipa",
+   "uncertain": "y 可能貼 0.8（同藝人兩張池中 y=0.8）"
+  },
+  {
+   "artist": "蛋堡",
+   "album": "踩腳踏車",
+   "year": 2011,
+   "label": "顏社",
+   "country": "tw",
+   "faction": "asia-jazz-rap",
+   "genres": [
+    "hiphop",
+    "jazz"
+   ],
+   "why": "蛋堡第三張個人作，騎單車般的悠閒節奏、爵士鋼琴與管樂取樣",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 0.9,
+    "z": 1.1,
+    "why": "懶拍，爵士取樣，日常的暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/12936847-334b-4851-bd25-d4c7889d5037",
+    "https://coverartarchive.org/release-group/12936847-334b-4851-bd25-d4c7889d5037/front"
+   ],
+   "mbRgMbid": "12936847-334b-4851-bd25-d4c7889d5037",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "蛋堡 Soft Lipa",
+   "uncertain": "y 可能貼 0.8"
+  },
+  {
+   "artist": "蛋堡",
+   "album": "你所不知道的杜振熙之内部整修",
+   "year": 2013,
+   "label": "顏社",
+   "country": "tw",
+   "faction": "asia-jazz-rap",
+   "genres": [
+    "hiphop",
+    "soul"
+   ],
+   "why": "蛋堡往內看的一張，慢而低沉的靈魂取樣與厚低頻",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1.0,
+    "z": 0.7,
+    "why": "慢，低頻厚，內省但溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/f1bf800c-8948-4113-bec2-fa0be2dcae58",
+    "https://coverartarchive.org/release-group/f1bf800c-8948-4113-bec2-fa0be2dcae58/front"
+   ],
+   "mbRgMbid": "f1bf800c-8948-4113-bec2-fa0be2dcae58",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "蛋堡 Soft Lipa",
+   "uncertain": "z 內省可能偏中性"
+  },
+  {
+   "artist": "蛋堡",
+   "album": "家常音樂",
+   "year": 2020,
+   "label": "任性的人",
+   "country": "tw",
+   "faction": "asia-jazz-rap",
+   "genres": [
+    "hiphop",
+    "jazz"
+   ],
+   "why": "隔七年的回歸作，家常題材，現場爵士樂手與暖色調製作",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 0.8,
+    "z": 1.1,
+    "why": "慢，現場爵士，家的暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/418be3be-234a-43aa-9d16-40ed6e680d1b",
+    "https://coverartarchive.org/release-group/418be3be-234a-43aa-9d16-40ed6e680d1b/front"
+   ],
+   "mbRgMbid": "418be3be-234a-43aa-9d16-40ed6e680d1b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "蛋堡 Soft Lipa",
+   "uncertain": "y 可能偏輕（現場樂手較乾淨）"
+  },
+  {
+   "artist": "Mac Miller",
+   "album": "The Divine Feminine",
+   "year": 2016,
+   "label": "Warner Bros. Records",
+   "country": "us",
+   "faction": "soul-rap",
+   "genres": [
+    "hiphop",
+    "soul"
+   ],
+   "why": "Mac Miller 的情歌專輯，弦樂、Thundercat 低音與 Anderson .Paak 等靈魂客串，慢而濃",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 0.9,
+    "z": 1.3,
+    "why": "慢，弦樂與厚低音包覆，甜暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/be55ffec-5312-4275-ab1f-d6504b19bd61",
+    "https://coverartarchive.org/release-group/be55ffec-5312-4275-ab1f-d6504b19bd61/front"
+   ],
+   "mbRgMbid": "be55ffec-5312-4275-ab1f-d6504b19bd61",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Isaiah Rashad",
+   "album": "The House Is Burning",
+   "year": 2021,
+   "label": "Top Dawg Entertainment",
+   "country": "us",
+   "faction": "soul-rap",
+   "genres": [
+    "hiphop",
+    "soul"
+   ],
+   "why": "Rashad 的南方慢饒舌，霧狀靈魂取樣與 808 低頻，《The Sun's Tirade》已落恍惚",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 0.9,
+    "z": 0.5,
+    "why": "慢，霧狀取樣與低頻厚，溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/18266e77-efd2-44bb-97e0-e278ed10399e",
+    "https://coverartarchive.org/release-group/18266e77-efd2-44bb-97e0-e278ed10399e/front"
+   ],
+   "mbRgMbid": "18266e77-efd2-44bb-97e0-e278ed10399e",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "x 有幾首較彈（Lay Wit Ya）"
+  },
+  {
+   "artist": "Maxo",
+   "album": "Even God Has a Sense of Humor",
+   "year": 2023,
+   "label": "Def Jam Recordings",
+   "country": "us",
+   "faction": "soul-rap",
+   "genres": [
+    "hiphop",
+    "soul"
+   ],
+   "why": "LA 地下 Maxo 的 Def Jam 作，靈魂取樣糊成一片，喃喃的慢饒舌，前作《LIL BIG MAN》已落恍惚",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 1.2,
+    "z": 0.6,
+    "why": "懶拍，靈魂取樣糊，溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/bc4657fd-616f-4f42-846b-c249fbc7e19e",
+    "https://coverartarchive.org/release-group/bc4657fd-616f-4f42-846b-c249fbc7e19e/front"
+   ],
+   "mbRgMbid": "bc4657fd-616f-4f42-846b-c249fbc7e19e",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Domo Genesis",
+   "album": "Genesis",
+   "year": 2016,
+   "label": "Odd Future Records",
+   "country": "us",
+   "faction": "soul-rap",
+   "genres": [
+    "hiphop",
+    "soul"
+   ],
+   "why": "Odd Future 裡最慵懶的 Domo 首張正規作，Alchemist 等人的靈魂取樣、慢而厚",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 0.9,
+    "z": 0.7,
+    "why": "慢拍，靈魂取樣與厚低頻，溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/53eaad5b-273c-44ba-b4f1-4e6955a82c0b",
+    "https://coverartarchive.org/release-group/53eaad5b-273c-44ba-b4f1-4e6955a82c0b/front"
+   ],
+   "mbRgMbid": "53eaad5b-273c-44ba-b4f1-4e6955a82c0b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Big Moe",
+   "album": "City of Syrup",
+   "year": 2000,
+   "label": "Wreckshop Records",
+   "country": "us",
+   "faction": "southern-slow",
+   "genres": [
+    "hiphop",
+    "soul"
+   ],
+   "why": "Screwed Up Click 的 Big Moe 首張，半唱半饒的 syrup 慢饒舌，〈Mann!〉是 Houston 慢盤經典",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.1,
+    "z": 0.5,
+    "why": "慢，厚低頻與糖漿般拖拍，溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/be8760fa-3efb-3f3b-8553-759430365d91",
+    "https://coverartarchive.org/release-group/be8760fa-3efb-3f3b-8553-759430365d91/front"
+   ],
+   "mbRgMbid": "be8760fa-3efb-3f3b-8553-759430365d91",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "z 可能偏中性"
+  },
+  {
+   "artist": "Big Moe",
+   "album": "Purple World",
+   "year": 2002,
+   "label": "Wreckshop Records",
+   "country": "us",
+   "faction": "southern-slow",
+   "genres": [
+    "hiphop",
+    "soul"
+   ],
+   "why": "〈Purple Stuff〉〈Barre Baby〉靈魂唱腔配 Houston 慢拍，Big Moe 最暖的一張",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.1,
+    "z": 0.6,
+    "why": "慢，低頻厚，靈魂唱腔溫熱"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/45e9acf5-7a76-3941-bee9-ec02588960d0",
+    "https://coverartarchive.org/release-group/45e9acf5-7a76-3941-bee9-ec02588960d0/front"
+   ],
+   "mbRgMbid": "45e9acf5-7a76-3941-bee9-ec02588960d0",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Big Moe",
+   "album": "Moe Life",
+   "year": 2003,
+   "label": "Wreckshop Records",
+   "country": "us",
+   "faction": "southern-slow",
+   "genres": [
+    "hiphop",
+    "soul"
+   ],
+   "why": "Big Moe 生前最後一張，延續 syrup 慢拍與靈魂唱腔",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.0,
+    "z": 0.5,
+    "why": "慢，低頻厚，溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/43a80582-9300-314e-90a1-0f9ef30f6925",
+    "https://coverartarchive.org/release-group/43a80582-9300-314e-90a1-0f9ef30f6925/front"
+   ],
+   "mbRgMbid": "43a80582-9300-314e-90a1-0f9ef30f6925",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "z 可能偏中性"
+  },
+  {
+   "artist": "E.S.G.",
+   "album": "Ocean of Funk",
+   "year": 1994,
+   "label": "Perrion Entertainment",
+   "country": "us",
+   "faction": "southern-slow",
+   "genres": [
+    "hiphop",
+    "soul"
+   ],
+   "why": "Houston 慢饒舌先驅 E.S.G. 首張，funk 取樣慢慢搖，是 DJ Screw 大量 screw 的素材",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 1.0,
+    "z": 0.5,
+    "why": "慢，funk 低音厚，溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/83bab14e-e2fe-3b91-b048-c53c44f7d03c",
+    "https://coverartarchive.org/release-group/83bab14e-e2fe-3b91-b048-c53c44f7d03c/front"
+   ],
+   "mbRgMbid": "83bab14e-e2fe-3b91-b048-c53c44f7d03c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "E.S.G.",
+   "album": "Sailin’ da South",
+   "year": 1995,
+   "label": "Perrion Entertainment",
+   "country": "us",
+   "faction": "southern-slow",
+   "genres": [
+    "hiphop",
+    "soul"
+   ],
+   "why": "〈Swangin' and Bangin'〉的風琴與慢拍，Houston 南方慢盤經典",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 1.0,
+    "z": 0.5,
+    "why": "慢拍，風琴與低音厚，溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/f7d42af1-0743-3f2c-85ef-a818815d335c",
+    "https://coverartarchive.org/release-group/f7d42af1-0743-3f2c-85ef-a818815d335c/front"
+   ],
+   "mbRgMbid": "f7d42af1-0743-3f2c-85ef-a818815d335c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Paul Wall & Chamillionaire",
+   "album": "Get Ya Mind Correct",
+   "year": 2002,
+   "label": "Paid in Full Records",
+   "country": "us",
+   "faction": "southern-slow",
+   "genres": [
+    "hiphop"
+   ],
+   "why": "兩人成名前的 Houston 獨立經典，slab 文化的慢拍與厚低頻；Paul Wall《Chick Magnet》已落恍惚",
+   "moodGuess": {
+    "x": 2.7,
+    "y": 1.0,
+    "z": 0.4,
+    "why": "中慢拍，808 低頻厚，溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/45980e29-b09f-3a23-9777-acf980a9ea54",
+    "https://coverartarchive.org/release-group/45980e29-b09f-3a23-9777-acf980a9ea54/front"
+   ],
+   "mbRgMbid": "45980e29-b09f-3a23-9777-acf980a9ea54",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "x 貼 2.7（Chamillionaire 個人盤判躁）"
+  },
+  {
+   "artist": "Pimp C",
+   "album": "The Naked Soul of Sweet Jones",
+   "year": 2010,
+   "label": "Rap-A-Lot Records",
+   "country": "us",
+   "faction": "southern-slow",
+   "genres": [
+    "hiphop",
+    "soul"
+   ],
+   "why": "Pimp C 身後作，靈魂取樣與南方慢拍；同藝人兩張池中都落恍惚",
+   "moodGuess": {
+    "x": 2.7,
+    "y": 1.0,
+    "z": 0.8,
+    "why": "慢拍，靈魂取樣與低頻厚，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/c9f7bcca-7ee6-4543-a2c1-4c3fe15017a4",
+    "https://coverartarchive.org/release-group/c9f7bcca-7ee6-4543-a2c1-4c3fe15017a4/front"
+   ],
+   "mbRgMbid": "c9f7bcca-7ee6-4543-a2c1-4c3fe15017a4",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "x 貼 2.7"
+  },
+  {
+   "artist": "Witchdoctor",
+   "album": "...a s.w.a.t. healin' ritual",
+   "year": 1998,
+   "label": "Interscope Records",
+   "country": "us",
+   "faction": "southern-slow",
+   "genres": [
+    "hiphop",
+    "soul"
+   ],
+   "why": "Dungeon Family 的 Witchdoctor 首張，Organized Noize 的迷幻靈魂慢拍，Goodie Mob《Soul Food》同脈",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 1.1,
+    "z": 0.4,
+    "why": "慢，迷幻靈魂取樣厚，溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/668ff710-97ce-328e-b75c-ff2ab0dfbafa",
+    "https://coverartarchive.org/release-group/668ff710-97ce-328e-b75c-ff2ab0dfbafa/front"
+   ],
+   "mbRgMbid": "668ff710-97ce-328e-b75c-ff2ab0dfbafa",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "z 可能偏中性（迷幻段較暗）"
+  },
+  {
+   "artist": "Tela",
+   "album": "Piece of Mind",
+   "year": 1996,
+   "label": "Suave House",
+   "country": "us",
+   "faction": "southern-slow",
+   "genres": [
+    "hiphop",
+    "soul"
+   ],
+   "why": "Memphis Suave House 的柔順慢盤，〈Sho Nuff〉溫熱鍵盤與慢拍；同廠 8Ball & MJG 多張落恍惚",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 0.9,
+    "z": 0.5,
+    "why": "慢，溫熱鍵盤與低頻，溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/e76c8d7d-bd91-330c-a630-6a06716fb3f7",
+    "https://coverartarchive.org/release-group/e76c8d7d-bd91-330c-a630-6a06716fb3f7/front"
+   ],
+   "mbRgMbid": "e76c8d7d-bd91-330c-a630-6a06716fb3f7",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "MJG",
+   "album": "No More Glory",
+   "year": 1997,
+   "label": "Suave House",
+   "country": "us",
+   "faction": "southern-slow",
+   "genres": [
+    "hiphop",
+    "soul"
+   ],
+   "why": "MJG 個人首張，Suave House 柔順南方慢拍與 soul 鍵盤，8Ball & MJG 前期盤多落恍惚",
+   "moodGuess": {
+    "x": 2.7,
+    "y": 0.9,
+    "z": 0.5,
+    "why": "慢拍，柔順鍵盤與低頻，溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/c35e9463-078b-3525-84c0-717ebcd74894",
+    "https://coverartarchive.org/release-group/c35e9463-078b-3525-84c0-717ebcd74894/front"
+   ],
+   "mbRgMbid": "c35e9463-078b-3525-84c0-717ebcd74894",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "x 貼 2.7"
+  },
+  {
+   "artist": "Curren$y x The Alchemist",
+   "album": "Covert Coup",
+   "year": 2011,
+   "label": "Jet Life Recordings",
+   "country": "us",
+   "faction": "lazy-rap",
+   "genres": [
+    "hiphop",
+    "soul"
+   ],
+   "why": "Jet Life 懶饒舌與 Alchemist 煙霧般的靈魂 loop，Record Store Day 首發後成 Curren$y 最受推崇的合作盤",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.0,
+    "z": 0.7,
+    "why": "懶拍，濾波靈魂 loop 糊而暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/b2aecba5-d656-41d7-a7d4-9c7b0e26c901",
+    "https://coverartarchive.org/release-group/b2aecba5-d656-41d7-a7d4-9c7b0e26c901/front"
+   ],
+   "mbRgMbid": "b2aecba5-d656-41d7-a7d4-9c7b0e26c901",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "y：池中《Pilot Talk》y0.6（Ski Beatz 較乾淨），本盤 Alchemist loop 較糊，估 1.0"
+  },
+  {
+   "artist": "Curren$y & The Alchemist",
+   "album": "Continuance",
+   "year": 2022,
+   "label": "Jet Life Recordings",
+   "country": "us",
+   "faction": "lazy-rap",
+   "genres": [
+    "hiphop",
+    "soul"
+   ],
+   "why": "十年後再合作，Alchemist 的 dusty 靈魂與爵士 loop 更慢更鬆，Curren$y 一貫的低聲懶流",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1.0,
+    "z": 0.8,
+    "why": "慢，dusty 靈魂爵士 loop，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/aefa753f-c97c-45d0-a4c3-da59333d8e29",
+    "https://coverartarchive.org/release-group/aefa753f-c97c-45d0-a4c3-da59333d8e29/front"
+   ],
+   "mbRgMbid": "aefa753f-c97c-45d0-a4c3-da59333d8e29",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "y 依同藝人池中 0.6 需留意"
+  },
+  {
+   "artist": "Curren$y & Harry Fraud",
+   "album": "The OutRunners",
+   "year": 2020,
+   "label": "Jet Life Recordings",
+   "country": "us",
+   "faction": "lazy-rap",
+   "genres": [
+    "hiphop",
+    "soul"
+   ],
+   "why": "Harry Fraud 的殘響 soul 取樣與厚低音，煙霧繚繞的慢盤",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.0,
+    "z": 0.8,
+    "why": "慢拍，殘響取樣霧厚，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/65fd449d-5f46-4b06-9420-d771b63ceff0",
+    "https://coverartarchive.org/release-group/65fd449d-5f46-4b06-9420-d771b63ceff0/front"
+   ],
+   "mbRgMbid": "65fd449d-5f46-4b06-9420-d771b63ceff0",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "y 依同藝人池中 0.6 需留意"
+  },
+  {
+   "artist": "Curren$y & Harry Fraud",
+   "album": "VICES",
+   "year": 2023,
+   "label": "Jet Life Recordings",
+   "country": "us",
+   "faction": "lazy-rap",
+   "genres": [
+    "hiphop",
+    "soul"
+   ],
+   "why": "兩人第三張合作，Harry Fraud 招牌的濕潤殘響 soul loop，懶到底的豪華慢盤",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.0,
+    "z": 0.7,
+    "why": "懶拍，濕潤殘響取樣，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/8da963fc-fe07-47a7-9cf1-d61ab41f8d78",
+    "https://coverartarchive.org/release-group/8da963fc-fe07-47a7-9cf1-d61ab41f8d78/front"
+   ],
+   "mbRgMbid": "8da963fc-fe07-47a7-9cf1-d61ab41f8d78",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "y 依同藝人池中 0.6 需留意"
+  },
+  {
+   "artist": "Devin the Dude",
+   "album": "The Dude",
+   "year": 1998,
+   "label": "Rap-A-Lot Records",
+   "country": "us",
+   "faction": "lazy-rap",
+   "genres": [
+    "hiphop",
+    "soul"
+   ],
+   "why": "Houston 懶饒舌宗師的首張，Mike Dean 等人的厚 funk 低音與慢拍，Devin 半唱半饒的溫吞",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 0.8,
+    "z": 1.2,
+    "why": "慢，厚 funk 低音，溫暖幽默"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/2991dae7-88f7-3cf9-a105-a96a5efec8ca",
+    "https://coverartarchive.org/release-group/2991dae7-88f7-3cf9-a105-a96a5efec8ca/front"
+   ],
+   "mbRgMbid": "2991dae7-88f7-3cf9-a105-a96a5efec8ca",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "y 貼 0.8：池中《Just Tryin' ta Live》y0.6，本盤低音較厚但仍可能判輕；MB 署名 Devin"
+  },
+  {
+   "artist": "Devin the Dude",
+   "album": "To tha X-Treme",
+   "year": 2004,
+   "label": "Rap-A-Lot Records",
+   "country": "us",
+   "faction": "lazy-rap",
+   "genres": [
+    "hiphop",
+    "soul"
+   ],
+   "why": "Devin 第三張，靈魂取樣與 Rhodes 的慢拍，煙霧裡的南方溫吞",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 0.8,
+    "z": 1.2,
+    "why": "慢，靈魂取樣與 Rhodes，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/b8b0b601-9743-3178-99be-930de8ced10d",
+    "https://coverartarchive.org/release-group/b8b0b601-9743-3178-99be-930de8ced10d/front"
+   ],
+   "mbRgMbid": "b8b0b601-9743-3178-99be-930de8ced10d",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "y 貼 0.8：池中同藝人 y0.6"
+  }
+ ],
+ "notes": [
+  "第一輪 32 張，不湊 54：場景頭牌幾乎都已在池（Pete Rock & C.L. Smooth 兩張、Pete Rock 三張、Digable 兩張、Tribe 六張、Souls、Pharcyde、Common 六張、Slum Village、Dilla 七張、Madlib、MF DOOM、Guru Jazzmatazz 1、Little Brother、UGK 六張、Pimp C 兩張、8Ball & MJG 六張、Paul Wall 兩張、Big K.R.I.T. 五張、蛋堡兩張、Jazzyfact 等），而且池中同類大多被評在 x 2.9–3.2。",
+  "x 貼邊不提（同藝人池中 ≥2.9 或本盤明顯中速）：InI《Center of Attention》、Common《One Day It'll All Make Sense》、Guru《Jazzmatazz Vol.2/3》、The Roots《Do You Want More?!!!??!》、Blu & Exile、Fashawn、Apollo Brown 饒舌合作盤、O.C.《Jewelz》、Ghostface & BADBADNOTGOOD《Sour Soul》、Smif-N-Wessun／Smoke DZA 與 Pete Rock 合作盤、Big K.R.I.T. 其餘、Bun B、Chamillionaire 個人盤。",
+  "y 判輕不提：Loyle Carner、Noname、Saba、Devin the Dude（池中 y0.6）、Curren$y、Larry June、Dom Kennedy、Kero One、STUTS、R.A.P. Ferreira《Purple Moonlight Pages》。",
+  "z 偏冷／中性不提（屬 md16 或貼邊）：Mick Jenkins、Roc Marciano、Z-Ro、DJ Screw 各 tape（池中 Part Two 落頹靡，未找到確定溫熱的 screw 正規盤）、Fat Pat、Lil' Keke、Oxmo Puccino《Lipopette Bar》（黑色電影調）、Lewis Parker、Roots Manuva《Brand New Second Hand》、Mac Miller《Balloonerism》、Ab-Soul。",
+  "G-funk 擴寫場景 0 張：池中 G-funk 不是判躁（Dr. Dre 3.0、Dogg Pound 3.2、Nate Dogg 3.0、DJ Quik 3.2–3.4、Above the Law 3.3）就是判輕（Warren G y0.3），Snoop 兩張已在池；找不到慢而厚、有把握過三條邊距的未上池 G-funk 正規盤。",
+  "screwed 版（City of Syrup／Moe Life／Get Ya Mind Correct 的 Chopped & Screwed）MB 為 Remix／Compilation 次類型，不收，只收原版。",
+  "同藝人跨組：Isaiah Rashad、Maxo 在 ml3 各提過另一張（已上線），本組提的是不同專輯；Sa-Ra、The Foreign Exchange 歸 ml5，未提。",
+  "x 貼 2.7 的四張已標 uncertain：Talib Kweli & Madlib《Liberation》、Jazz Liberatorz、Paul Wall & Chamillionaire、Pimp C、MJG（主線汰換時可優先汰）。",
+  "身分全部 MB 釘住、封面全部 CAA（HEAD 307 轉址確認有圖）；WebSearch 用 1 次。",
+  "第二輪（主線回饋）補 6 張：Curren$y × Alchemist《Covert Coup》《Continuance》、Curren$y × Harry Fraud《The OutRunners》《VICES》、Devin the Dude《The Dude》《To tha X-Treme》（Devin 兩張 y 貼 0.8、Curren$y 四張 y 依池中《Pilot Talk》0.6 需留意，均標 uncertain）。",
+  "第二輪查過不提：Smoke DZA × Pete Rock《Don't Smoke Rock》（Pete Rock 池中 2.9–3.2）；Larry June（y 輕）；Mick Jenkins《The Healing Component》（同藝人池中 z−0.8，從嚴）；Freddie Gibbs & Madlib 已在池兩張 x2.9、其餘 ≥3；Shing02（偏暗、實驗）；Uyama Hiroto（池中 y0.7）、Substantial（池中 x2.8）、Kev Brown／Oddisee（x 2.8、y 輕）、Kenichiro Nishihara（輕）；韓國 Beenzino／Verbal Jint／Dynamic Duo／The Quiett 池中皆判輕或躁；Lil' Keke、Fat Pat、Big Hawk（z 估中性，無把握）；Z-Ro（池中 z−0.1）；Bun B（≥2.9）、Pimp C《Long Live the Pimp》（估 2.8）；Curren$y 其餘數十張 Jet Life 盤未逐張提（多為 Ski Beatz／自家乾淨製作，y 輕風險同《Pilot Talk》）；French Montana × Harry Fraud《Montega》z 無把握。G-funk 仍 0。"
+ ]
+}

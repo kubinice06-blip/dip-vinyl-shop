@@ -41,6 +41,10 @@ export function shardOf(key) {
 const rosterFile = fs.readdirSync('batch-progress/artist-intro').filter(f => /^roster-\d+\.json$/.test(f)).sort().pop()
 const roster = new Map(JSON.parse(fs.readFileSync(path.join('batch-progress/artist-intro', rosterFile), 'utf8')).entries.map(e => [e.key, e]))
 
+// 上架批另存的補充名冊（roster-sf05.json 這類非日期檔）一併讀；主名冊是單行 JSON，並行工作階段一起改必撞（2026-10-30）
+for (const f of fs.readdirSync('batch-progress/artist-intro').filter(f => /^roster-.+\.json$/.test(f) && !/^roster-\d+\.json$/.test(f)))
+  for (const e of JSON.parse(fs.readFileSync(path.join('batch-progress/artist-intro', f), 'utf8')).entries || []) if (!roster.has(e.key)) roster.set(e.key, e)
+
 // 寫作層分組時會是 <批名>-out-1.json、-out-2.json，一併收（2026-09-29 v3 起）
 const allFiles = fs.readdirSync(OUT_SRC).filter(f => /-out(?:-\d+)?\.json$/.test(f)).sort()
 // 量產批（ar-a-001 這類）只收 progress.json 標 published 的：審稿中或寫作中的成品不得進分片

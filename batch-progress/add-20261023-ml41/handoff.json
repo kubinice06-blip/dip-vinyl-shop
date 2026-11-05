@@ -1,0 +1,37 @@
+{
+ "batch": "add-20261023-ml41",
+ "cards": 12,
+ "written": {
+  "cardCatalog": 12,
+  "kvKeys": 12,
+  "seedRows": 12,
+  "previewReady": 9,
+  "previewUnavailable": 3
+ },
+ "review": {
+  "by": "cloud-main",
+  "cards": 12,
+  "changed": [
+   "desc2:LITTLE TEMPO|KEDACO IS BORN",
+   "desc2:Polaris|Music",
+   "desc2:Horace Andy|Midnight Rocker"
+  ]
+ },
+ "qa": {
+  "research": "pass",
+  "hooks": "pass",
+  "out": "pass",
+  "prepareGate": "0 error",
+  "publishedGate": "0 error"
+ },
+ "pendingLocal": {
+  "kv": "無",
+  "listeners": [
+   "desc2:LITTLE TEMPO|Ron Riddim In Dub",
+   "desc2:Polaris|Union"
+  ],
+  "apexEvidence": [],
+  "genreTree": "已重建",
+  "albumOverrides": "無"
+ }
+}

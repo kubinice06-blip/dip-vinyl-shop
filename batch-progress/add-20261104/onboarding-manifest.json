@@ -1,0 +1,203 @@
+{
+ "schemaVersion": 1,
+ "batch": "2026-11-04-add-chang-jui-chuan",
+ "batchNote": "店主指定上架（add-20261104）：張睿銓《創世記》《出走》",
+ "createdAt": "2026-11-04T08:00:00Z",
+ "albums": [
+  {
+   "artist": "張睿銓 Chang Jui-Chuan",
+   "album": "創世記",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "manual",
+    "rgMbid": "",
+    "upc": "4719851550300",
+    "aliasesChecked": true,
+    "aliasReview": "藝人欄依池內台灣藝人「中文 拉丁名」慣例（林強 Lim Giong、張懸 Deserts Chang）取「張睿銓 Chang Jui-Chuan」，拉丁拼法照 Apple 藝人頁與《出走》封面。盤名用「創世記」（佳佳唱片行商品頁、中文維基、店主寫法）；張鐵志 2012 評論寫「創世紀」、佳佳另有一筆 90499「創世紀 + 創世紀第二章 重生」套裝為 2007 國際版合售，非本張。英文名 GENESIS。卡池查無張睿銓任何卡，也無同名卡。2006 年 9 月阿弟仔工作室發行，條碼 4719851550300（佳佳 schema.org gtin13），首張專輯。",
+    "mbAbsenceProof": {
+     "queries": [
+      "artist/?query=張睿銓 → 命中藝人 8a0b292b-2041-4461-8bbe-aec7318b6e32（張睿銓，sort-name Chang, Jui-chuan）",
+      "release-group?artist=8a0b292b-2041-4461-8bbe-aec7318b6e32 → release-group-count=0",
+      "release?artist=8a0b292b-2041-4461-8bbe-aec7318b6e32 → release-count=0（recording 僅 1 筆〈官逼民反 Part.2〉）",
+      "release-group/?query=releasegroup:\"創世記\" AND artist:\"張睿銓\" → count=0",
+      "release-group/?query=releasegroup:\"出走\" AND artist:\"張睿銓\" → count=0",
+      "release-group/?query=releasegroup:\"Exodus: Retrospective and Prospective\" → count=0",
+      "artist/?query=artist:\"Chang Jui-Chuan\"、release-group/?query=artist:\"Chang Jui-Chuan\" → 皆 count=0"
+     ],
+     "checkedAt": "2026-11-04T08:00:00Z",
+     "conclusion": "MusicBrainz 有張睿銓藝人條目 8a0b292b，但名下 release-group 與 release 皆 count=0；兩張以中文、英文盤名與拉丁拼音掛名查詢亦全數 count=0，確認未建檔。Discogs 搜尋張睿銓／Chang Jui-Chuan 亦無這兩張。"
+    },
+    "manualEvidenceUrls": [
+     "https://www.ccr.com.tw/goods/90497",
+     "https://zh.wikipedia.org/zh-tw/%E5%BC%B5%E7%9D%BF%E9%8A%93",
+     "https://chinadigitaltimes.net/chinese/?p=220394"
+    ],
+    "manualRuling": "店主 2026-11-04 指定「兩張都收」（張睿銓《創世記》《出走》）。依 verify-album-onboarding.mjs 的 MBID 窄例外（2026-08-15 店主核定）走人工身分，比照李雙澤《敬！李雙澤》先例。",
+    "queryAlias": "Chang Jui-Chuan"
+   },
+   "research": {
+    "suggestedYear": 2006,
+    "yearNote": "佳佳唱片行發行日 2006/09/01；中文維基與張鐵志 2012 評論皆 2006。"
+   },
+   "genres": [
+    "hiphop"
+   ],
+   "cover": {
+    "url": "https://www.ccr.com.tw/GIMG/90/4719851550300_wstL.JPG",
+    "source": "manual",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-04T08:00:00Z",
+    "visuallyVerified": true,
+    "note": "人工身分、Apple／Spotify 未上架、CAA／Discogs 無；取佳佳唱片行商品頁 90497 的 og:image（檔名即條碼 4719851550300，與頁內 gtin13 相符）。主線 2026-11-04 目視：紅綠底插畫，戲仿〈創造亞當〉的咬奶嘴嬰兒伸手接麥克風，右下「張睿銓：創世記」字樣，與盤名相符。460×405 實體 CD 掃圖。"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": null,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-11-04T08:00:00Z",
+    "note": "worker /album-rating 回空（Last.fm 無此盤，中文名與 Chang Jui-Chuan 皆查無）。經典度：台語饒舌場景的重要作品，〈囡仔〉常被稱為台灣第一首記錄二二八與白色恐怖的饒舌歌，張鐵志稱當年被媒體選入年度十大；找不到權威榜單或正典書目可撐 5 → 4。冷門度：錨點——阿弟仔工作室獨立小量發行、已停售、從未上串流（Apple／Spotify 皆無）→ 5；listeners 缺值不套下限。硬蕊度：饒舌，阿弟仔流行製作，台語＋英語，主流易聽有一點門檻 → 2（與池中 MC HotDog、大支 2 一致）。"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "hall 需跨類型史上正典（本張經典度 4）；pearl 需 listeners 有效值 <300，本張 Last.fm 查無，不得當 0；heresy 需硬蕊度 5（本張 2）。一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "2006 年 9 月由阿弟仔工作室獨立發行的首張專輯，阿弟仔製作，當年被媒體選進年度十大專輯。份量最重的是〈囡仔〉：張睿銓寫給哥哥剛出生的孩子，用台語饒舌把二二八和白色恐怖講給下一代聽，常被稱為台灣流行音樂史上第一首記錄這段歷史的饒舌歌。他說一直想寫這樣的歌，因為台灣過去少有；多年後他乾脆說，要聽直接的歌，去聽〈囡仔〉。2014 年他靠集資重錄這首歌、拍成 MV，選在 2 月 28 日首播。封面戲仿米開朗基羅的《創造亞當》：一個咬著奶嘴的嬰兒，伸手去接遞過來的麥克風。",
+    "sourceUrls": [
+     "https://zh.wikipedia.org/zh-tw/%E5%BC%B5%E7%9D%BF%E9%8A%93",
+     "https://chinadigitaltimes.net/chinese/?p=220394",
+     "https://www.ccr.com.tw/goods/90497",
+     "https://zh-yue.wikipedia.org/wiki/%E9%98%BF%E5%BC%9F%E4%BB%94",
+     "https://moshang.net/soundjeweler_blog/remixes/jui-chuan-chang-hey-kid-disquiet-mix/",
+     "https://www.cna.com.tw/culture/article/20180620w001",
+     "https://www.taipeitimes.com/News/feat/archives/2009/06/24/2003446974"
+    ],
+    "note": "add-20261104：研究 1 組（Sonnet）＋主線補查 → 寫作（主線，依店主 2026-11-04 認可的新寫法）→ 主線審稿。聲音素材查無，不編造。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-04T08:00:00Z",
+    "note": "Apple tw／us／jp 藝人 374396816 名下只有《出走》；搜尋「創世記」「張睿銓」無本張；Spotify、YouTube Music 亦無正式上架。實體 CD 已停售，無可靠來源。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "張睿銓 Chang Jui-Chuan",
+   "album": "出走",
+   "identity": {
+    "releaseType": "Compilation",
+    "identitySource": "manual",
+    "rgMbid": "",
+    "upc": "",
+    "releaseException": "店主指定，精選輯例外",
+    "exceptionReason": "店主 2026-11-04 指定收錄的自選精選輯：回顧 1999–2009 十年作品並大量重混（林強、DJ Point、MoShang），2020 年獲美國 Just Plain Folks 音樂獎 Rap Album 第 1 名，是張睿銓流通最廣、唯一上串流的專輯。",
+    "exceptionEvidenceUrls": [
+     "https://www.jpfolks.com/forum/ubbthreads.php/topics/1173002/2020-just-plain-folks-music-awards-winners.html",
+     "https://www.cna.com.tw/news/ahel/202012310384.aspx",
+     "https://www.taipeitimes.com/News/feat/archives/2009/06/24/2003446974"
+    ],
+    "aliasesChecked": true,
+    "aliasReview": "藝人欄同《創世記》取「張睿銓 Chang Jui-Chuan」。盤名用中文「出走」（博客來、佳佳、中文維基、店主寫法）；Apple 英文名 Exodus: Retrospective and Prospective 1999-2009、掛名 Chang Jui-Chuan。年份：Apple 2009-06-01、博客來 2009-06-03、佳佳 2009-06-04、℗ 2009 Uloud Music（有料音樂，ULOUD-006）；「2017」是 JPF 入圍年（台灣教會公報 2017-05-03），非發行或再版年。卡池無同名卡。",
+    "mbAbsenceProof": {
+     "queries": [
+      "artist/?query=張睿銓 → 命中藝人 8a0b292b-2041-4461-8bbe-aec7318b6e32（張睿銓，sort-name Chang, Jui-chuan）",
+      "release-group?artist=8a0b292b-2041-4461-8bbe-aec7318b6e32 → release-group-count=0",
+      "release?artist=8a0b292b-2041-4461-8bbe-aec7318b6e32 → release-count=0（recording 僅 1 筆〈官逼民反 Part.2〉）",
+      "release-group/?query=releasegroup:\"創世記\" AND artist:\"張睿銓\" → count=0",
+      "release-group/?query=releasegroup:\"出走\" AND artist:\"張睿銓\" → count=0",
+      "release-group/?query=releasegroup:\"Exodus: Retrospective and Prospective\" → count=0",
+      "artist/?query=artist:\"Chang Jui-Chuan\"、release-group/?query=artist:\"Chang Jui-Chuan\" → 皆 count=0"
+     ],
+     "checkedAt": "2026-11-04T08:00:00Z",
+     "conclusion": "MusicBrainz 有張睿銓藝人條目 8a0b292b，但名下 release-group 與 release 皆 count=0；兩張以中文、英文盤名與拉丁拼音掛名查詢亦全數 count=0，確認未建檔。Discogs 搜尋張睿銓／Chang Jui-Chuan 亦無這兩張。"
+    },
+    "manualEvidenceUrls": [
+     "https://music.apple.com/tw/album/exodus-retrospective-and-prospective-1999-2009/374396812",
+     "https://www.books.com.tw/products/0020145435",
+     "https://www.ccr.com.tw/goods/173164"
+    ],
+    "manualRuling": "店主 2026-11-04 指定「兩張都收」（張睿銓《創世記》《出走》）。依 verify-album-onboarding.mjs 的 MBID 窄例外（2026-08-15 店主核定）走人工身分，比照李雙澤《敬！李雙澤》先例。本張為精選輯，店主指定，releaseException＝「店主指定，精選輯例外」。",
+    "queryAlias": "Chang Jui-Chuan — Exodus: Retrospective and Prospective 1999-2009"
+   },
+   "research": {
+    "suggestedYear": 2009,
+    "yearNote": "Apple 2009-06-01、博客來 2009-06-03、℗ 2009；2017 為 JPF 入圍年、2020 為得獎年。"
+   },
+   "genres": [
+    "hiphop"
+   ],
+   "cover": {
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music/c3/a8/5d/mzi.zdisaidn.jpg/600x600bb.jpg",
+    "source": "apple-verified-collection",
+    "appleCollectionId": "374396812",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-04T08:00:00Z",
+    "visuallyVerified": true,
+    "note": "Apple collection 374396812（藝人、盤名、15 軌、℗ 2009 Uloud Music 皆相符）官方圖。主線 2026-11-04 目視：黑白照片，戴手銬的雙手握麥克風，上方紅字 EXODUS、RETROSPECTIVE AND PROSPECTIVE 1999-2009，右下 CHANG JUI-CHUAN。"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 39,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-11-04T08:00:00Z",
+    "note": "worker /album-rating 機器值 classic 3／obscurity 5／accessibility 3，L=39（以 Chang Jui-Chuan — Exodus… 查；中文名「出走」L=6）。經典度：JPF 2020 Rap Album 第 1 名（重要獎項得獎）、藝人流通最廣的作品 → 4。冷門度：錨點——台灣獨立小廠有料音樂、首發即上串流 → 3；下限 L<1,000 且試聽 ready → 至少 4 → 4。硬蕊度：饒舌加 dub、雷鬼、R&B 混音，易聽 → 2。"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "reason": "經典度 4、冷門度 4、硬蕊度 2，三種頂點門檻都不到（pearl 需 obscurity 5）。一般卡。",
+    "evidenceUrls": []
+   },
+   "description": {
+    "text": "張睿銓回顧 1999 到 2009 年的自選精選輯，2020 年拿下美國 JPF 獨立音樂獎的 Rap Album 第一名，他說評審聽不懂台語，照樣把獎頒給它。曲目大半是首張專輯《創世記》的歌重新混過：林強混了〈My Language〉，DJ Point 混了〈官逼民反第一章〉，MoShang 把〈囡仔〉混成九〇年代初的爵士嘻哈；〈希望的所在〉的 dub 版由雷鬼樂團 Red-I & the Riddim Outlawz 撐底，律動和台語咬字貼得剛好。盤名取自聖經〈出埃及記〉，替這十年畫個句點再出發。",
+    "sourceUrls": [
+     "https://itunes.apple.com/lookup?id=374396812&entity=song&country=tw",
+     "https://www.books.com.tw/products/0020145435",
+     "https://www.ccr.com.tw/goods/173164",
+     "https://zh.wikipedia.org/zh-tw/%E5%BC%B5%E7%9D%BF%E9%8A%93",
+     "https://moshang.net/soundjeweler_blog/remixes/jui-chuan-chang-hey-kid-disquiet-mix/",
+     "https://www.taipeitimes.com/News/feat/archives/2009/06/24/2003446974",
+     "https://tcnn.org.tw/archives/21350",
+     "https://www.jpfolks.com/forum/ubbthreads.php/topics/1173002/2020-just-plain-folks-music-awards-winners.html",
+     "https://ent.ltn.com.tw/news/breakingnews/3398260",
+     "https://www.cna.com.tw/news/ahel/202012310384.aspx",
+     "https://taiwaninsight.org/2023/09/15/hoklo-rap-and-taiwanese-resistance-vernaculars/"
+    ],
+    "note": "add-20261104：研究 1 組（Sonnet）→ 寫作（主線，依店主 2026-11-04 認可的新寫法）→ 主線審稿。253 字，低於硬上限 280。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/Music1/v4/89/16/e4/8916e425-b154-7c88-36bd-04e29f3efd90/mzaf_8830355818459159636.plus.aac.p.m4a",
+    "source": "apple",
+    "storefront": "TW",
+    "appleCollectionId": "374396812",
+    "appleCollectionName": "Exodus: Retrospective and Prospective 1999-2009",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-04T08:00:00Z",
+    "note": "Apple tw collection 374396812 第 1 軌〈Lovesick Across Space and Time (Formosan Yuan Mix)〉（戰相思）preview；collectionExplicitness notExplicit，無 explicit／cleaned 雙胞胎。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  }
+ ]
+}

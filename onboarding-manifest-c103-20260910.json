@@ -29,13 +29,22 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 3,
+    "obscurity": 4,
     "accessibility": 2,
     "listeners": null,
-    "source": "manual:regional-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "manual:regional-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：端唄企劃 10 吋盤→3；L 缺、Columbia 正規但無串流→4；三味線端唄"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -95,10 +104,20 @@
     "obscurity": 3,
     "accessibility": 1,
     "listeners": 1,
-    "source": "manual:regional-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 1,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：收〈港町十三番地〉的主題盤→3；L1 無串流→5；歌謡",
+     "rarity": "common"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：日本コロムビア 10 吋盤，收〈港町十三番地〉等大熱曲、廣見於串流精選；主流歌手疑錯配照錨點 3；非 pearl｜L=1"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -153,14 +172,24 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 4,
+    "classic": 3,
     "obscurity": 3,
-    "accessibility": 2,
+    "accessibility": 1,
     "listeners": 1,
-    "source": "manual:regional-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 5,
+     "accessibility": 1,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：〈哀愁波止場〉唱片大賞歌唱賞同名盤→4；L1 無串流→5；歌謡",
+     "rarity": "rare"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：日本コロムビア 10 吋盤，曲目（哀愁波止場等）廣收於串流精選；主流歌手盤名拆名疑錯配，照錨點 3；非代表作，經典 4→3；非 pearl｜L=1"
    },
-   "rarity": "uncommon",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -220,10 +249,20 @@
     "obscurity": 3,
     "accessibility": 1,
     "listeners": 1,
-    "source": "manual:regional-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 1,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：同名單曲 10 吋盤→3；L1 無串流→5；旅物歌謡",
+     "rarity": "common"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：日本コロムビア 10 吋盤，A1／B4 即同名單曲、已上串流；主流歌手疑錯配照錨點 3；非 pearl｜L=1"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -283,8 +322,18 @@
     "obscurity": 3,
     "accessibility": 1,
     "listeners": 58,
-    "source": "manual:regional-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 5,
+     "accessibility": 1,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：B 面全翻唱的常規盤→2；L58 無串流→5；歌謡",
+     "rarity": "common"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：主流名曲盤屬錯配(b)，照錨點：Columbia 大廠正規盤→3｜L=58"
    },
    "rarity": "common",
    "apexAssessment": {
@@ -342,14 +391,24 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 4,
+    "classic": 3,
     "obscurity": 3,
-    "accessibility": 2,
+    "accessibility": 1,
     "listeners": 3,
-    "source": "manual:regional-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 1,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：雨主題企劃盤、同名曲獲獎→3；L3 無串流→5；演歌",
+     "rarity": "common"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：主流名曲盤屬錯配(b)，照錨點：Columbia 大廠正規盤→3｜L=3"
    },
-   "rarity": "uncommon",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -405,14 +464,24 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 5,
+    "classic": 4,
     "obscurity": 3,
     "accessibility": 1,
     "listeners": 247,
-    "source": "manual:regional-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 5,
+     "accessibility": 1,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：〈天城越え〉同名盤但前 11 軌翻唱→4 非 5；L247 無串流→5；演歌",
+     "rarity": "rare"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：主流名曲盤屬錯配(b)，照錨點：Columbia／DENON 大廠演歌盤、收名曲〈天城越え〉→3｜L=247"
    },
-   "rarity": "uncommon",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -468,14 +537,24 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 4,
-    "obscurity": 3,
-    "accessibility": 2,
+    "classic": 2,
+    "obscurity": 5,
+    "accessibility": 1,
     "listeners": 2,
-    "source": "manual:regional-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 1,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：早期原創盤、非代表作→3；L2 無串流→5；演歌旋律直白",
+     "rarity": "common"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：Teichiku 大廠演歌翻唱企劃盤，不符流亡；非代表作，經典度 3→2｜L=2"
    },
-   "rarity": "uncommon",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -533,13 +612,23 @@
    },
    "ratings": {
     "classic": 4,
-    "obscurity": 3,
-    "accessibility": 2,
+    "obscurity": 2,
+    "accessibility": 1,
     "listeners": 65,
-    "source": "manual:regional-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 5,
+     "accessibility": 1,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：招牌曲〈舟唄〉同名盤（多翻唱）→4；L65 無串流→5；演歌",
+     "rarity": "rare"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：Teichiku 大廠、同名單曲為國民級名曲的名曲盤，listeners 65 疑錯配（主線 b 類），冷門度照錨點 5→2；不符流亡｜L=65"
    },
-   "rarity": "uncommon",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -598,13 +687,22 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 3,
+    "obscurity": 4,
     "accessibility": 2,
     "listeners": 6,
-    "source": "manual:regional-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "manual:regional-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：ブルース歌謡翻唱盤→3；L6 有串流→4；沙啞演歌稍有門檻"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -664,12 +762,21 @@
     "discogsReleaseId": "10202524"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 3,
+    "classic": 3,
+    "obscurity": 5,
     "accessibility": 2,
     "listeners": 0,
-    "source": "manual:regional-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "manual:regional-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：原創整組曲目的企劃盤→3；L0 無串流→5；演歌"
    },
    "rarity": "rare",
    "apexAssessment": {
@@ -728,11 +835,20 @@
    },
    "ratings": {
     "classic": 2,
-    "obscurity": 3,
+    "obscurity": 5,
     "accessibility": 1,
     "listeners": 0,
-    "source": "manual:regional-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 3,
+     "accessibility": 1,
+     "source": "manual:regional-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "common"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：1958 早期 10 吋選曲盤→2；L0 無串流→5；少女歌謡"
    },
    "rarity": "common",
    "apexAssessment": {
@@ -790,14 +906,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 3,
-    "obscurity": 3,
-    "accessibility": 2,
+    "classic": 2,
+    "obscurity": 5,
+    "accessibility": 1,
     "listeners": 0,
-    "source": "manual:regional-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "manual:regional-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：翻唱東海林太郎的カバー盤→2；L0 無串流→5；懷舊歌謡"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -853,14 +978,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 3,
-    "obscurity": 3,
-    "accessibility": 2,
+    "classic": 2,
+    "obscurity": 5,
+    "accessibility": 1,
     "listeners": 0,
-    "source": "manual:regional-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "manual:regional-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：戰時歌謡翻唱企劃→2；L0 無串流→5；歌謡旋律"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -917,14 +1051,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 3,
-    "obscurity": 3,
+    "classic": 2,
+    "obscurity": 5,
     "accessibility": 2,
     "listeners": 3,
-    "source": "manual:regional-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "manual:regional-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：民謡翻唱企劃→2；L3 無串流→5；民謡唱腔稍有門檻"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -983,12 +1126,22 @@
    "ratings": {
     "classic": 4,
     "obscurity": 3,
-    "accessibility": 2,
+    "accessibility": 1,
     "listeners": 23,
-    "source": "manual:regional-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 5,
+     "accessibility": 1,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：出道期招牌曲〈祝い酒〉同名盤→4；L23 無串流→5；演歌",
+     "rarity": "rare"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：錯配(b)：同名曲為大熱演歌，日語圈主流暢銷作→照錨點 3；東芝 EMI 非流亡｜L=23"
    },
-   "rarity": "uncommon",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1044,14 +1197,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 3,
-    "accessibility": 2,
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 1,
     "listeners": 101,
-    "source": "manual:regional-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "manual:regional-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：突破期百萬曲〈おもいで酒〉同名盤→4；L101，2023 Warner 數位版在→4；演歌；冷門度下限豁免：ADDENDUM 但書：確知有正式數位版"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1107,14 +1269,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 4,
-    "obscurity": 3,
-    "accessibility": 2,
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 1,
     "listeners": null,
-    "source": "manual:regional-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "manual:regional-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：出道 LP 收單曲、非代表→3；L 缺值且無串流→4；歌謠流行"
    },
-   "rarity": "uncommon",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1171,14 +1342,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 4,
-    "obscurity": 3,
+    "classic": 3,
+    "obscurity": 4,
     "accessibility": 2,
     "listeners": 35,
-    "source": "manual:regional-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "manual:regional-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：翻唱船村徹作品企劃盤、非代表→3；L35 有串流→4；演歌"
    },
-   "rarity": "uncommon",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1198,7 +1378,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/43/c4/9c/43c49cf4-0a29-6ab8-02a8-6068fced22d2/mzaf_18082154268404942516.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/04/d4/c2/04d4c265-1977-6625-2389-18a13afa4a6e/mzaf_9632666708985051737.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -1238,14 +1418,24 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 4,
-    "obscurity": 3,
-    "accessibility": 2,
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 1,
     "listeners": 126,
-    "source": "manual:regional-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Victor 期翻唱戰前歌謠、編曲獲讚→4；L126 無串流→5；新編歌謠",
+     "rarity": "uncommon"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：Victor／Invitation 大廠翻唱盤，不符流亡；後兩度改題再發。屬翻唱企劃非代表作，經典度 4→3｜L=126"
    },
-   "rarity": "uncommon",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1305,10 +1495,20 @@
     "obscurity": 3,
     "accessibility": 2,
     "listeners": 29,
-    "source": "manual:regional-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：收〈恍惚〉〈伊勢佐木町〉ブルース盤→3；L29 無串流→5；ブルース歌謡",
+     "rarity": "rare"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：Victor 大廠、青江三奈一線歌謠歌手、2005 CD 化；拆名錯配不套下限→3｜L=29"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1365,13 +1565,22 @@
    },
    "ratings": {
     "classic": 2,
-    "obscurity": 3,
+    "obscurity": 4,
     "accessibility": 2,
     "listeners": 2,
-    "source": "manual:regional-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "manual:regional-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：全翻唱流し企劃→2；L2 有串流→4；沙啞歌謡"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1391,7 +1600,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/4c/d2/0a/4cd20aec-4320-3654-2100-0d54595a31c5/mzaf_10355618853930748282.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/80/ec/ab/80ecabb3-1a06-1872-db8e-9b1b9298d2fa/mzaf_8979707476256661939.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -1432,12 +1641,22 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 4,
+    "classic": 5,
     "obscurity": 3,
     "accessibility": 2,
     "listeners": 98,
-    "source": "manual:regional-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Oricon 連 17 週冠軍、與新宿の女合計破紀錄→5；L98 無串流→5；暗色演歌",
+     "rarity": "epic"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：Oricon長期冠軍的代表作；日文盤名疑錯配→照錨點3（無串流）｜L=98"
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -1496,14 +1715,24 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 3,
+    "classic": 2,
     "obscurity": 3,
-    "accessibility": 2,
+    "accessibility": 1,
     "listeners": 1,
-    "source": "manual:regional-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：2LP 懷舊翻唱→2；L1 無串流→5；演歌",
+     "rarity": "common"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：拆名錯配；RCA 現場翻唱 2LP，只 2 首自唱曲，2016 收進 CD-BOX；大廠盤→3｜L=1"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1559,14 +1788,24 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 4,
+    "classic": 3,
     "obscurity": 3,
-    "accessibility": 2,
+    "accessibility": 1,
     "listeners": 11,
-    "source": "manual:regional-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：首三張連續 Oricon 冠軍之一→4；L11 無串流→5；暗色演歌",
+     "rarity": "uncommon"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：拆名錯配（Keiko Fuji）；RCA 大廠正規盤、2013 Sony CD 化；一線演歌歌手中期作，代表作是新宿の女→3｜L=11"
    },
-   "rarity": "uncommon",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1623,14 +1862,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 3,
+    "classic": 3,
+    "obscurity": 4,
     "accessibility": 2,
     "listeners": 303,
-    "source": "manual:regional-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "manual:regional-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：首張、Wewantsounds 再版，次於はじき詩集→3；L276/303 有串流→4；歌謡"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1650,7 +1898,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/18/05/bc/1805bc9a-f1c2-4199-2f0f-35f0994f0b90/mzaf_3281200059736521494.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a6/ac/e6/a6ace6bc-0abe-2a9f-3ada-875d1a90d92c/mzaf_4294651472801931800.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -1691,14 +1939,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 3,
-    "accessibility": 4,
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
     "listeners": 276,
-    "source": "manual:regional-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 3,
+     "accessibility": 4,
+     "source": "manual:regional-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：收〈怨み節〉、Wewantsounds 再版的代表盤→4；L276 有串流→4；任俠歌謡非前衛"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1717,7 +1974,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/47/ca/db/47cadb64-28a9-aa41-1325-349e17f50fa7/mzaf_12132829965601619104.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/19/a8/6f/19a86f93-c6d7-64b7-4979-fb746f6b2584/mzaf_14875643959048766887.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -1759,14 +2016,24 @@
     "discogsReleaseId": "7916491"
    },
    "ratings": {
-    "classic": 3,
+    "classic": 4,
     "obscurity": 3,
-    "accessibility": 2,
+    "accessibility": 1,
     "listeners": 11,
-    "source": "manual:regional-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 5,
+     "accessibility": 1,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：出道盤收〈長崎は今日も雨だった〉代表作→4；L11 無串流→5；ムード歌謡",
+     "rarity": "rare"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：錯配(b)：〈長崎は今日も雨だった〉百萬暢銷出道盤，日語圈主流→照錨點 3；RCA 大廠非流亡｜L=11"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1822,14 +2089,24 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 3,
+    "classic": 2,
     "obscurity": 3,
-    "accessibility": 2,
+    "accessibility": 1,
     "listeners": 1,
-    "source": "manual:regional-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 5,
+     "accessibility": 1,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：全翻唱盛り場歌謡→2；L1 無串流→5；ムード歌謡",
+     "rarity": "common"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：拆名錯配；Polydor 大廠盤、一線歌手翻唱集，無串流；照錨點大廠正規→3｜L=1"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1884,14 +2161,24 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 3,
+    "classic": 4,
     "obscurity": 3,
-    "accessibility": 2,
+    "accessibility": 1,
     "listeners": 125,
-    "source": "manual:regional-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 5,
+     "accessibility": 1,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：出道百萬曲同名代表盤→4；L125 無串流→5；スキャット歌謡",
+     "rarity": "rare"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：主流名曲盤屬錯配(b)，照錨點：EXPRESS 大廠出道名曲盤、多次再發（1972、2008 CD）→3｜L=125"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1950,12 +2237,22 @@
    "ratings": {
     "classic": 3,
     "obscurity": 3,
-    "accessibility": 2,
+    "accessibility": 1,
     "listeners": 151,
-    "source": "manual:regional-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 1,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：〈恋文〉大賞曲同名盤、半翻唱→3；L151 無串流→5；歌謡",
+     "rarity": "common"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：主流名曲盤屬錯配(b)，照錨點：EXPRESS 大廠，同名曲獲唱片大賞歌唱賞→3｜L=151"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2011,14 +2308,24 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 3,
+    "classic": 2,
     "obscurity": 3,
-    "accessibility": 2,
+    "accessibility": 1,
     "listeners": 20,
-    "source": "manual:regional-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 5,
+     "accessibility": 1,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：半張翻唱流行曲→2；L20 無串流→5；歌謡",
+     "rarity": "common"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：主流名曲盤屬錯配(b)，照錨點：EXPRESS／東芝大廠正規盤→3｜L=20"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2075,14 +2382,24 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 3,
-    "obscurity": 3,
-    "accessibility": 2,
+    "classic": 2,
+    "obscurity": 5,
+    "accessibility": 1,
     "listeners": 3,
-    "source": "manual:regional-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 1,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：立體聲重錄自家名曲集→3；L3 無串流→5；ムード歌謡",
+     "rarity": "common"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：Victor 大廠立體聲精選式錄音，不符流亡；非原創專輯、無評論地位，經典度 3→2｜L=3"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2140,13 +2457,22 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 3,
+    "obscurity": 4,
     "accessibility": 2,
     "listeners": 95,
-    "source": "manual:regional-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "manual:regional-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：東京キューバンボーイズ伴奏民謡盤→3；L95，2025 數位版在→4；拉丁大樂團民謡；冷門度下限豁免：ADDENDUM 但書：確知有正式數位版"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,

@@ -1,0 +1,60 @@
+{
+  "name": "頻率光譜 — dip 選歌",
+  "short_name": "頻率光譜",
+  "description": "不分類型，以光譜的方式探索音樂。",
+  "lang": "zh-Hant",
+  "start_url": "/tune/?app=1",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#ffffff",
+  "theme_color": "#111111",
+  "icons": [
+    {
+      "src": "/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "頻率光譜",
+      "short_name": "頻率光譜",
+      "url": "/?app=1#tune"
+    },
+    {
+      "name": "直接來一張",
+      "short_name": "直接來一張",
+      "url": "/?app=1#random"
+    },
+    {
+      "name": "心情選歌",
+      "short_name": "心情選歌",
+      "url": "/?app=1#quiz"
+    },
+    {
+      "name": "類型挑片",
+      "short_name": "類型挑片",
+      "url": "/?app=1#genre"
+    },
+    {
+      "name": "猜你喜歡",
+      "short_name": "猜你喜歡",
+      "url": "/?app=1#artist"
+    }
+  ],
+  "id": "/tune/"
+}

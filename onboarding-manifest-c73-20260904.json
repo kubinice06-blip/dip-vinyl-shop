@@ -27,14 +27,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
+    "classic": 3,
     "obscurity": 4,
     "accessibility": 2,
     "listeners": 127,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：後期作，代表作是《一触即発》；L 127 有串流→4；轉向流行／融合的歌曲"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -102,7 +111,7 @@
     "source": "manual:depth-rubric",
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -158,14 +167,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 4,
-    "accessibility": 2,
+    "classic": 4,
+    "obscurity": 5,
+    "accessibility": 3,
     "listeners": 15,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：NOVELA 首張、日本交響硬式前衛代表作；L 15 無串流→5；11–15 分長曲"
    },
-   "rarity": "rare",
+   "rarity": "epic",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -222,12 +240,22 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
+    "classic": 4,
     "obscurity": 4,
-    "accessibility": 4,
+    "accessibility": 3,
     "listeners": 1295,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 4,
+     "accessibility": 3,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：日本前衛/坎特伯里里程碑，日本 prog 史必提、屢次再版；L=1295 無串流→4；器樂爵士搖滾",
+     "rarity": "epic"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：日本前衛搖滾代表作之一，場景內評價高但非首要里程碑｜L=1295"
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -284,12 +312,21 @@
    "ratings": {
     "classic": 4,
     "obscurity": 4,
-    "accessibility": 4,
+    "accessibility": 3,
     "listeners": 911,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "epic"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：日本前衛搖滾代表團早期名作；千張自主盤、L<1000 有串流→4；器樂交響／爵士搖滾需投入，非不協和"
    },
-   "rarity": "epic",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -307,7 +344,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/85/e2/68/85e268fb-f428-2107-71c8-8e932aae4470/mzaf_14062810448605002504.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/d6/8d/99/d68d9997-d063-9275-ee0a-710fb75defbe/mzaf_15387818733818874006.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -348,14 +385,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 4,
-    "accessibility": 4,
+    "classic": 4,
+    "obscurity": 5,
+    "accessibility": 3,
     "listeners": 591,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Nexus 首張、日本 Crimson 系代表盤；L 591 試聽 unavailable→5；14 分重型長曲"
    },
-   "rarity": "uncommon",
+   "rarity": "epic",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -410,12 +456,21 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 3,
+    "classic": 4,
     "obscurity": 4,
-    "accessibility": 4,
+    "accessibility": 3,
     "listeners": 242,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：第二張、B 面 21 分組曲《乱》，與首張並列代表作；L 242 有串流→4；Crimson 式重前衛"
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -476,22 +531,42 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 4,
-    "accessibility": 4,
+    "classic": 4,
+    "obscurity": 5,
+    "accessibility": 3,
     "listeners": 25,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：首張、LLE 時期日本前衛代表；L 25 無串流→5；長篇器樂交響前衛"
    },
-   "rarity": "uncommon",
+   "rarity": "epic",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。L25有效，但壓量無據、無收藏圈聖杯地位依據；屬5星冷門，不到7",
+    "evidenceUrls": [
+     "https://www.last.fm/music/Negasphere/Castle%20in%20the%20Air",
+     "https://musicbrainz.org/release-group/bf05cec3-4f1e-4d36-8e4c-5c2265202e85"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
-    "text": "唱片一九八四年壓出來，下一個版本要等到二〇一六年。原盤是 LLE Label 的 LLE-1007，錄音在東京方南町的 Green Studio，一九八四年三月到六月。五個人分掛吉他兼人聲、貝斯、鼓、鍵盤與合成器。Discogs 的廠牌條目寫 LLE 做的是日本的 prog、實驗與 new wave，八〇年代由 Marquee Moon 經營。五軌裡最長的〈Holly Ground Ceremony〉十分五十一秒；二〇一六年那次做成紙封套複刻。",
+    "text": "《Castle in the Air》是日本前衛搖滾樂團 Negasphere 的第一張專輯，1984 年由小廠 LLE Label 發行；樂團 1986 年停止活動，母帶開盤帶存放在鍵盤手川崎薫老家，2011 年東日本大震災時老家受災，帶子沒有損壞，2016 年為結成 40 週年才再發。錄音在 1984 年 3 到 6 月的方南町 Green Studio，吉他手真嶋宏佳兼任主唱。編制是吉他、貝斯、電子鼓，加上鋼琴與合成器兩組鍵盤，最長的〈Holly Ground Ceremony〉10 分 51 秒；樂團的曲子多用變拍子，屬前衛搖滾與交響搖滾。",
     "sourceUrls": [
      "https://www.discogs.com/release/4076736",
      "https://www.discogs.com/label/127434",
@@ -510,8 +585,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -539,22 +614,42 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 4,
-    "accessibility": 2,
+    "classic": 4,
+    "obscurity": 5,
+    "accessibility": 3,
     "listeners": 30,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：自主首張、日本交響前衛收藏名盤；L 30 無串流→5；含 18 分標題組曲"
    },
-   "rarity": "rare",
+   "rarity": "epic",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。Not On Label 原盤但已有 MIJ／Musea CD 正式再發，無壓量依據、非聖杯級；L=30",
+    "evidenceUrls": [
+     "https://www.last.fm/music/%E5%A4%A2%E5%B9%BB/Sinfonia%20della%20Luna",
+     "https://musicbrainz.org/release-group/0873c2fd-ed50-42e4-9be7-4925e12da539"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
-    "text": "廠牌欄上寫的是 Not On Label，編號只有 Luna 001。一九八四年那張黑膠在 Discogs 上就只剩這些欄位。一九九七年法國 Musea 的 CD 才列出完整 credit：林克彦一人掛鍵盤、木吉他、直笛與全部詞曲和製作，另有貝斯、電吉他、鼓與兩位人聲。六軌從〈Sinfonia Della Luna〉的十八分二十秒到兩分鐘都有。他後來在一九八九年 CD 的內頁〈夢幻ヒストリー〉寫，樂團一九七八年由他與中村隆士、古田雅也組成，首作以自主制作的形式發表。",
+    "text": "《Sinfonia della Luna》是日本交響搖滾團夢幻（Mugen）1984 年自主發行的首張專輯，後來 Made in Japan 與法國 Musea 先後出了 CD。樂團 1978 年由林克彦與主唱 Takashi Nakamura 組成，林克彦作曲、製作，彈合成器與 Mellotron，也吹直笛、彈木吉他。整張以層疊的 Mellotron 與合成器為主體，配上古典吉他與細緻的電吉他獨奏，人聲用英文與義大利文唱，在混音裡偏低；路數接近七〇年代的義大利交響搖滾，鍵盤彈法明顯受 Genesis 的 Tony Banks 影響。",
     "sourceUrls": [
      "https://www.discogs.com/release/3520651",
      "https://www.discogs.com/master/497217",
@@ -573,8 +668,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -604,12 +699,21 @@
    "ratings": {
     "classic": 4,
     "obscurity": 4,
-    "accessibility": 4,
+    "accessibility": 3,
     "listeners": 509,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "epic"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：King NEXUS 正式出道作、團史要角；L 509 有串流→4；器樂前衛融合，旋律清楚"
    },
-   "rarity": "epic",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -668,12 +772,21 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
+    "classic": 4,
     "obscurity": 4,
-    "accessibility": 4,
+    "accessibility": 3,
     "listeners": 224,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Gerard 首作、日本鍵盤前衛代表；L=224 有串流→4；交響前衛、硬派鍵盤"
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -734,12 +847,21 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 4,
-    "accessibility": 4,
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
     "listeners": 21,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：第二張，較首張次要；L 21 無串流→5；歌曲化但含 17 分長曲"
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -795,14 +917,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 4,
-    "accessibility": 2,
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
     "listeners": 2,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：平山照継個人名義首作，場景二線；L 2 無串流→5；器樂交響前衛"
    },
-   "rarity": "rare",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -858,14 +989,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
+    "classic": 4,
     "obscurity": 4,
-    "accessibility": 2,
+    "accessibility": 3,
     "listeners": 560,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：首張、MIJ 廠起點盤之一；L 560 有串流→4；小提琴交響器樂前衛"
    },
-   "rarity": "rare",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -924,14 +1064,29 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 4,
-    "accessibility": 2,
+    "classic": 4,
+    "obscurity": 5,
+    "accessibility": 3,
     "listeners": 155,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：首張代表作、天野喜孝封面；L 155 無串流→5；旋律重金屬",
+    "previousAccessibility": {
+     "accessibility": 2,
+     "rarity": "uncommon",
+     "at": "2026-11-04"
+    },
+    "loudFloorNote": "硬蕊度音量下限（2026-11-04 店主定案）：關西重金屬，失真吉他與高亢人聲貫穿全碟"
    },
-   "rarity": "rare",
+   "rarity": "epic",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -986,14 +1141,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 4,
-    "accessibility": 4,
+    "classic": 4,
+    "obscurity": 5,
+    "accessibility": 3,
     "listeners": 469,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Ain Soph 第二張、致敬坎特伯里的重要作；L=469 無串流→5；器樂爵士搖滾組曲"
    },
-   "rarity": "uncommon",
+   "rarity": "epic",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1047,12 +1211,21 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
+    "classic": 4,
     "obscurity": 4,
-    "accessibility": 4,
+    "accessibility": 3,
     "listeners": 689,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：首張、Pageant 公認代表作；L 689 有串流→4；8–9 分長曲交響前衛"
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -1116,14 +1289,23 @@
     "note": "試聽探測釘定的 collectionId 1726146462（jp）：Outer Limits — A BOY PLAYING THE MAGICAL BUGLE HORN"
    },
    "ratings": {
-    "classic": 2,
+    "classic": 4,
     "obscurity": 4,
-    "accessibility": 2,
+    "accessibility": 3,
     "listeners": 129,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：樂團公認代表作、概念盤；L 129 有串流→4；小提琴交響前衛，長篇敘事"
    },
-   "rarity": "rare",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1181,14 +1363,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 4,
-    "accessibility": 2,
+    "classic": 4,
+    "obscurity": 5,
+    "accessibility": 3,
     "listeners": 20,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Nexus 時期代表作、場景樂手大會串；L 20 無串流→5；Mellotron 浪漫交響前衛"
    },
-   "rarity": "rare",
+   "rarity": "epic",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1243,14 +1434,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
+    "classic": 3,
     "obscurity": 4,
-    "accessibility": 4,
+    "accessibility": 3,
     "listeners": 447,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：中期作，次於《Bugle Horn》；L 447 有串流、Musea 授權再發→4；小提琴交響前衛"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1270,7 +1470,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview71/v4/e9/f2/1d/e9f21d66-feb9-058d-7bae-0d2f42674107/mzaf_3095535099434400511.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview71/v4/8f/97/02/8f9702ba-a8a2-8882-943e-f3f18e9e0a06/mzaf_6123141048980782396.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -1310,14 +1510,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
+    "classic": 3,
     "obscurity": 4,
-    "accessibility": 4,
+    "accessibility": 2,
     "listeners": 437,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：重混＋現場的限定盤，非代表作；L 437 有串流→4；女聲哥德交響前衛，曲長 4–8 分"
    },
-   "rarity": "uncommon",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1337,7 +1546,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview62/v4/db/83/0f/db830f3a-5d82-0c7a-6726-02c335377cef/mzaf_3950278809743168467.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview62/v4/fe/da/ca/fedaca17-b66f-ce64-9e20-087b42f753c2/mzaf_5281320895185978118.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -1377,12 +1586,21 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
+    "classic": 4,
     "obscurity": 4,
-    "accessibility": 4,
+    "accessibility": 3,
     "listeners": 294,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：首張、日本交響前衛代表盤之一；L 294 有串流→4；女聲交響前衛，旋律性強但長篇編排"
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -1445,12 +1663,21 @@
     "note": "試聽探測釘定的 collectionId 815136128（jp）：Vermilion Sands — Water Blue"
    },
    "ratings": {
-    "classic": 2,
+    "classic": 4,
     "obscurity": 4,
     "accessibility": 2,
     "listeners": 540,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：唯一專輯＝代表作，Musea 授權再發；L 540 有串流→4；Renaissance 式女聲柔和交響前衛"
    },
    "rarity": "rare",
    "apexAssessment": {
@@ -1473,7 +1700,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/Music4/v4/dd/b2/fc/ddb2fc92-901a-b291-51e9-358ae8642f6b/mzaf_1017505240715760094.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/Music/v4/b3/c1/0a/b3c10aca-0ab1-ce12-dbfb-6d8f16ac742c/mzaf_3729165002940199625.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -1513,14 +1740,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
+    "classic": 4,
     "obscurity": 4,
-    "accessibility": 2,
+    "accessibility": 3,
     "listeners": 404,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Bellaphon 首作、Made in Japan 廠代表；L=404 有串流→4；長篇器樂交響前衛"
    },
-   "rarity": "rare",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1580,12 +1816,21 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
+    "classic": 4,
     "obscurity": 4,
-    "accessibility": 4,
+    "accessibility": 3,
     "listeners": 563,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：團員自評「代表作」；L 563 有串流→4；鍵盤前衛金屬含大作長曲"
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -1648,12 +1893,21 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 3,
+    "classic": 4,
     "obscurity": 4,
-    "accessibility": 4,
+    "accessibility": 3,
     "listeners": 29,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：櫻庭統樂團唯一專輯；L=29 有串流→4；鍵盤主導 ELP 式前衛，技巧繁複但有旋律"
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -1676,7 +1930,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/Music/65/05/93/mzm.zohpswqj.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/Music/e2/52/25/mzm.prisedqm.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -1716,22 +1970,43 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 4,
-    "accessibility": 2,
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
     "listeners": 89,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 5,
+     "accessibility": 3,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：唯一專輯，Exposé 評為 80 年代末日本交響前衛佳作；L 89 無串流→5；兩首 15 分鐘以上長篇",
+     "rarity": "epic"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：Made in Japan 小型前衛搖滾廠唯一作，僅 1994 CD 再發、無串流；聽眾 89｜L=89"
    },
-   "rarity": "rare",
+   "rarity": "uncommon",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。小廠／自發盤、聽眾<300，但壓量未見數百張以下的確據，也非收藏圈公認聖杯；只到 5",
+    "evidenceUrls": [
+     "https://www.last.fm/music/Midas/Beyond%20the%20Clear%20Air",
+     "https://musicbrainz.org/release-group/45cf225c-32ae-4ed3-bb1b-610961b9f6fa"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
-    "text": "《Exposé》的 Mike McLatchey 說，這裡的鍵盤帶著明確的 Genesis 味。那篇一九九五年三月一日刊出的評論還寫：這支團一九八八年只錄過這一張，音樂由一位出色的小提琴手與大量鍵盤音色主導，質地厚實而交響化；至於人聲，他寫的是與許多同期日本團相仿，尚可但偶有不穩。原盤 MIJ-1021LP 上只登了四首曲子，其中兩首超過十五分鐘，末軌十八分四十五秒；Discogs 的那筆條目沒有任何演奏或製作的 credit 欄。",
+    "text": "《Beyond the Clear Air》是大阪樂團 Midas 1988 年的首張專輯，原版黑膠由 Made in Japan 發行，2009 年由法國 Musea 重發。專輯 1988 年下半年在大阪 Studio Jam 錄成，領團的 Eigo Utoh 拉五弦電小提琴並主唱，另有鍵盤、兼彈踏板合成器的貝斯與鼓。約 18 分鐘的標題曲以鋼琴、仿木管的合成器與小提琴的憂鬱前奏開場，再走進 Genesis 式的仿古典慢板；電小提琴的拉法近似 Curved Air 的 Darryl Way，合成器放得很前面，人聲多用假音，偏單薄。",
     "sourceUrls": [
      "https://www.discogs.com/release/3522040",
      "https://www.discogs.com/artist/2697944",
@@ -1750,8 +2025,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -1779,19 +2054,40 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 4,
-    "accessibility": 4,
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
     "listeners": 5,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：第三張，次於前兩張；L 5 無串流→5；交響前衛，非不協和"
    },
    "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "reason": "頂點重整（apex-rebalance-20261103，2026-11-03）：原流亡降為一般卡。同級內一藝人一張：夢幻 pearl 留《Sinfonia della Luna》。經典度 4、稽核強度 2（另一張 1）",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": true,
+     "tier": "pearl",
+     "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。Made In Japan Records 正規小廠 LP／CD 兩版，壓量無據，不到聖杯；L=5",
+     "evidenceUrls": [
+      "https://www.last.fm/music/%E5%A4%A2%E5%B9%BB/%E9%81%8E%E3%81%8E%E5%8E%BB%E3%82%8A%E3%81%97%E7%8E%8B%E5%9B%BD%E3%81%AE%E7%8E%8B%E5%A5%B3",
+      "https://musicbrainz.org/release-group/89f59f78-32b0-4e8e-b71e-03f6b445e2d3"
+     ],
+     "source": "manual:audit-20261102"
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:apex-rebalance-20261103"
    },
    "description": {
     "text": "第三軌的主唱是客座 Kazue Akao。同一份 credit 上，封面美術掛的是 Tomoki Ueno——這張一九八八年的 MIJ-1020LP 上，外人插手的地方就這兩處。其餘欄位是鍵盤手兼製作、主唱、貝斯與鼓，另有一人在七首裡的三首上彈木吉他與電吉他。曲名有兩個直接取自英美文學：〈The Lady Of Shalott〉出自 Tennyson 那首敘事詩；〈Dazzling Ligeia〉裡的 Ligeia，則是 Poe 一八三八年那篇短篇小說的女主角。",
@@ -1844,12 +2140,21 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
+    "classic": 4,
     "obscurity": 4,
     "accessibility": 2,
     "listeners": 368,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Asturias 首作、日本新交響前衛代表；L=368 有串流→4；旋律化程式交響搖滾"
    },
    "rarity": "rare",
    "apexAssessment": {
@@ -1871,7 +2176,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/e1/5f/20/e15f20e3-adb2-8a36-288e-782e241f520b/mzaf_572828764248152967.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/f9/f7/df/f9f7dfe4-bbb5-4fa1-1501-2917282c6ed6/mzaf_7439222357835353420.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -1913,12 +2218,21 @@
    "ratings": {
     "classic": 4,
     "obscurity": 4,
-    "accessibility": 4,
+    "accessibility": 3,
     "listeners": 515,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "epic"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：KENSO 公認高峰之一；L 515 有串流→4；複雜器樂融合前衛，長篇但有調"
    },
-   "rarity": "epic",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1977,14 +2291,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
+    "classic": 4,
     "obscurity": 4,
-    "accessibility": 2,
+    "accessibility": 3,
     "listeners": 143,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：兩張主要錄音室盤之一；L 143 有串流→4；10 分長曲交響前衛"
    },
-   "rarity": "rare",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2045,12 +2368,21 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
+    "classic": 3,
     "obscurity": 4,
-    "accessibility": 2,
+    "accessibility": 3,
     "listeners": null,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Crime 限定盤，場景二線；L 缺值，Crime/King 小眾前衛廠、有串流→4；8–9 分長曲交響前衛"
    },
    "rarity": "rare",
    "apexAssessment": {
@@ -2114,12 +2446,27 @@
     "note": "試聽探測釘定的 collectionId 1712474995（jp）：Terra Rosa — HONESTY"
    },
    "ratings": {
-    "classic": 2,
+    "classic": 3,
     "obscurity": 4,
-    "accessibility": 2,
+    "accessibility": 3,
     "listeners": 264,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：第二張，次於《Endless Basis》；L 264 有串流→4；旋律硬式前衛金屬歌曲",
+    "previousAccessibility": {
+     "accessibility": 2,
+     "rarity": "common",
+     "at": "2026-11-04"
+    },
+    "loudFloorNote": "硬蕊度音量下限（2026-11-04 店主定案）：日本重金屬／前衛金屬，全碟失真重型"
    },
    "rarity": "rare",
    "apexAssessment": {
@@ -2144,7 +2491,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/c9/d8/a4/c9d8a454-7c66-ab6b-c2c2-e3e10fca5f71/mzaf_1968696842434752574.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/8e/ea/17/8eea1729-8c62-1a8c-6d86-4e8c3e67ed93/mzaf_16962354304115968355.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -2185,11 +2532,21 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 4,
-    "accessibility": 4,
+    "obscurity": 5,
+    "accessibility": 3,
     "listeners": 25,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 5,
+     "accessibility": 3,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：首張、日本交響前衛代表盤；L 25 無串流→5；四首長篇、單曲 14 分",
+     "rarity": "epic"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：原盤 B.S.P. 小廠，但 King Records 1990–2018 四度 CD 再發，收藏圈易得，不算流亡｜L=25"
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -2246,12 +2603,21 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
+    "classic": 4,
     "obscurity": 4,
-    "accessibility": 4,
+    "accessibility": 3,
     "listeners": 366,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：樂團另一代表作，含 21 分組曲；L 366 有串流→4；交響前衛，非不協和"
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -2313,12 +2679,21 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
+    "classic": 3,
     "obscurity": 4,
-    "accessibility": 2,
+    "accessibility": 3,
     "listeners": 365,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：大山曜第二張，次於首作；L=365 有串流→4；22 分鐘交響組曲"
    },
    "rarity": "rare",
    "apexAssessment": {
@@ -2339,7 +2714,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/10/90/13/10901395-cead-c8f8-4de8-d139e96e4dbc/mzaf_7097771875661762626.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/db/ec/4b/dbec4b8f-c538-4116-13f8-7c21a2830d7f/mzaf_5064835116400952910.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",

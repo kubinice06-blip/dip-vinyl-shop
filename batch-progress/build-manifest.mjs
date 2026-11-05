@@ -64,7 +64,7 @@ const candGenres = a => {
   const ok = g.filter(x => MAP_GENRES.has(x));
   return ok.length ? ok : null;
 };
-const RARITY = s => s >= 10 ? 'legendary' : s >= 8 ? 'epic' : s >= 6 ? 'uncommon' : s >= 4 ? 'rare' : 'common';
+const RARITY = s => s >= 9 ? 'legendary' : s >= 8 ? 'epic' : s >= 7 ? 'uncommon' : s >= 6 ? 'rare' : 'common';
 
 // c-48 的人工三軸是在策展定名之前跑的，之後不少卡把耦合曲目補進標題
 // （「Mendelssohn: Octet」→「Mendelssohn: Octet / String Quintet op. 87」），

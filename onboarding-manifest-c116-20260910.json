@@ -29,10 +29,19 @@
    "ratings": {
     "classic": 5,
     "obscurity": 3,
-    "accessibility": 5,
+    "accessibility": 4,
     "listeners": 28374,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 3,
+     "accessibility": 5,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "legendary"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：日本硬蕊正典里程碑、Relapse再版；L2.8萬有串流→3；極端嘶吼與金屬吉他"
    },
    "rarity": "legendary",
    "apexAssessment": {
@@ -56,7 +65,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/a6/ce/52/a6ce5230-3330-5f3e-d02c-0cff8d28349a/mzaf_16316321915008427455.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/a8/b6/e9/a8b6e91f-0a4f-160d-8710-9077678c78af/mzaf_15002076840578970523.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -98,10 +107,19 @@
    "ratings": {
     "classic": 4,
     "obscurity": 4,
-    "accessibility": 5,
+    "accessibility": 4,
     "listeners": 699,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 4,
+     "accessibility": 5,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "epic"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：G.I.S.M.第二張代表作；L699有串流(Relapse)→4；長篇金屬化後龐克，粗糲"
    },
    "rarity": "epic",
    "apexAssessment": {
@@ -164,14 +182,24 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 4,
+    "classic": 5,
     "obscurity": 4,
     "accessibility": 4,
     "listeners": 5492,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 4,
+     "accessibility": 3,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：日本硬蕊正典常列名盤；Selfish無串流→4；短促高速硬蕊",
+     "rarity": "epic"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：日本硬蕊代表；無串流、聽眾 5492；粗糲噪感→4｜L=5492"
    },
-   "rarity": "epic",
+   "rarity": "legendary",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -228,12 +256,27 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 4,
-    "obscurity": 4,
+    "classic": 3,
+    "obscurity": 5,
     "accessibility": 4,
     "listeners": 835,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "epic"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Gauze後續作，含蘇格蘭現場；L835無串流→5；高速硬蕊",
+    "previousAccessibility": {
+     "accessibility": 3,
+     "rarity": "uncommon",
+     "at": "2026-11-04"
+    },
+    "loudFloorNote": "硬蕊度音量下限（2026-11-04 店主定案）：日本 hardcore 龐克，極速嘶吼"
    },
    "rarity": "epic",
    "apexAssessment": {
@@ -296,8 +339,23 @@
     "obscurity": 4,
     "accessibility": 4,
     "listeners": 7280,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "epic"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Death Side首張全長代表作；Selfish無串流、收藏家領域→4；快速硬蕊",
+    "previousAccessibility": {
+     "accessibility": 3,
+     "rarity": "uncommon",
+     "at": "2026-11-04"
+    },
+    "loudFloorNote": "硬蕊度音量下限（2026-11-04 店主定案）：日本 hardcore，極速吶喊"
    },
    "rarity": "epic",
    "apexAssessment": {
@@ -359,8 +417,23 @@
     "obscurity": 4,
     "accessibility": 4,
     "listeners": 8636,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "epic"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Death Side代表作、burning spirit名盤；Selfish獨立廠無串流→4；快速硬蕊帶旋律吉他",
+    "previousAccessibility": {
+     "accessibility": 3,
+     "rarity": "uncommon",
+     "at": "2026-11-04"
+    },
+    "loudFloorNote": "硬蕊度音量下限（2026-11-04 店主定案）：日本 hardcore 龐克，極速嘶吼"
    },
    "rarity": "epic",
    "apexAssessment": {
@@ -418,14 +491,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 3,
-    "obscurity": 4,
-    "accessibility": 2,
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 3,
     "listeners": 7976,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：The Comes代表作、Dogma DOG2，LVEUM再版；L7976有串流→3；生猛硬蕊"
    },
-   "rarity": "rare",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -446,7 +528,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/11/50/d5/1150d55e-4f3d-9e39-c76b-fad3e9215a64/mzaf_8346402421718583754.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/c1/14/ac/c114aca1-a899-d5cd-67d7-5ecff64c0e23/mzaf_9449407789125381242.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -486,14 +568,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 4,
-    "accessibility": 2,
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
     "listeners": 530,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：The Comes後期金屬化作；L530無串流→5；硬蕊/金屬"
    },
-   "rarity": "rare",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -549,30 +640,41 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
+    "classic": 4,
     "obscurity": 4,
-    "accessibility": 4,
+    "accessibility": 5,
     "listeners": 1109,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：團名下唯一正規專輯，日本噪音 hardcore 開山盤→4；L=1109 無串流、CD 再發→4；極度失真"
    },
-   "rarity": "uncommon",
+   "rarity": "legendary",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "heresy",
+    "reason": "異端（accessibility 5；ax9 升格，主線 52355）：Last Rites 與 Vice 描述整張是失真回授糊成一片、人聲聽不清的噪音；符合 noise punk 整張高強度標準。",
+    "evidenceUrls": [
+     "https://yourlastrites.com/2018/02/19/kawakami-forever-japanese-raw-punk-101-part-2/",
+     "https://munchies.vice.com/en/article/7b8gka/talc-bring-the-blurred-distortion-of-kyushu-punk-to-adelaide"
+    ]
    },
    "description": {
-    "text": "1984 年的原盤是一捲卡帶，編號欄空著。十三軌裡第二軌以團名〈Confuse〉為題、第八軌才是標題曲〈Indignation〉，第六軌的曲名到現在只寫成〈Kill the ...〉，後面就是刪節號。要到十三年後，才由 Anarchy Centre 與樂團自營的 Confuse Records 聯名壓成黑膠與 CD。",
+    "text": "《Indignation》是九州 noise punk 樂團 Confuse 1984 年的首張專輯，整張由失真與回授堆成，吼聲埋在吉他噪音底下聽不出字句，被視為日本 raw punk 裡 noisecore 一路的代表。它把 Discharge 的公式再削減，只留下速度、失真與吼叫。這張原本只以卡帶發行，1997 年才壓成 LP。吉他在混音裡拉得很高，尖嘯的噪音一波接一波，底下是粗糙的打擊，回授幾乎不斷。之後美國 Fan Club 出了 12 吋 LP，把整卷卡帶連同軟膠片、合輯曲目與現場錄音收在一起。",
     "sourceUrls": [
-     "https://musicbrainz.org/ws/2/release-group/9542baa9-9056-4802-abf1-790c11b16eaf?fmt=json&inc=artist-credits+releases",
-     "https://musicbrainz.org/ws/2/release?release-group=9542baa9-9056-4802-abf1-790c11b16eaf&fmt=json&inc=media+labels+recordings&limit=100",
-     "https://musicbrainz.org/ws/2/release-group?artist=7349f02d-3be4-435b-af69-55742979ca67&fmt=json&limit=100&offset=0",
-     "https://musicbrainz.org/ws/2/artist/7349f02d-3be4-435b-af69-55742979ca67?fmt=json&inc=aliases+artist-rels",
-     "https://itunes.apple.com/search?term=Confuse%20Indignation&country=us&media=music&entity=album&limit=10",
-     "https://musicbrainz.org/release-group/9542baa9-9056-4802-abf1-790c11b16eaf"
-    ]
+     "https://munchies.vice.com/en/article/7b8gka/talc-bring-the-blurred-distortion-of-kyushu-punk-to-adelaide",
+     "https://www.discogs.com/master/488154-Confuse-Indignation",
+     "https://yourlastrites.com/2018/02/19/kawakami-forever-japanese-raw-punk-101-part-2/",
+     "https://www.sorrystaterecords.com/products/confusepeoplearenuclearpoisoning12"
+    ],
+    "lengthReviewed": true
    },
    "preview": {
     "status": "unavailable",
@@ -584,7 +686,7 @@
     "descriptionKv": true,
     "albumOverride": true,
     "seedCards": true,
-    "apexPool": false
+    "apexPool": true
    }
   },
   {
@@ -612,22 +714,42 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 4,
+    "classic": 3,
+    "obscurity": 5,
     "accessibility": 4,
     "listeners": 33,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：噪音龐克卡帶合輯，場景史料；L33無串流→5；lo-fi噪音龐克"
    },
-   "rarity": "uncommon",
+   "rarity": "epic",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。小廠／自發盤、聽眾<300，但壓量未見數百張以下的確據，也非收藏圈公認聖杯；只到 5",
+    "evidenceUrls": [
+     "https://www.last.fm/music/Gai/1981-1985",
+     "https://musicbrainz.org/release-group/322bdced-afe2-4f0f-aa04-3f16d08fba40"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
-    "text": "十八軌裡有四軌到現在還沒有曲名。其餘十四軌以英文題為主，只有開場兩首是日文題〈戦争を知らない子どもたち〉〈地獄に堕ちた天使の金玉〉，收尾〈Yes!! Future〉與第七軌〈Future〉同源。盤名寫的是 1981 到 1985 年的收錄範圍，1985 年的發行形態則是一捲卡帶，出在 Violent Party Records。",
+    "text": "《1981-1985》是日本硬蕊龐克樂團 Gai 1985 年在 Violent Party Records 發行的卡帶，收 Gai 的曲子，也收同一批團員以 The Swankys 名義留下的素材。這批 1981 到 1985 年的錄音後來被巴西的粉絲廠牌非官方出成 12 吋。他們的聲音受英國噪音系龐克影響，是不停歇的失真急速 thrash：吉他破音很重，人聲狂躁，多數曲子很快；後期的錄音較乾淨，貝斯線更活潑，帶進 Toy Dolls、Adicts 一路的旋律。",
     "sourceUrls": [
      "https://musicbrainz.org/ws/2/release-group/322bdced-afe2-4f0f-aa04-3f16d08fba40?fmt=json&inc=artist-credits+releases",
      "https://musicbrainz.org/ws/2/release?release-group=322bdced-afe2-4f0f-aa04-3f16d08fba40&fmt=json&inc=media+labels+recordings&limit=100",
@@ -646,8 +768,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -675,14 +797,29 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
+    "classic": 4,
     "obscurity": 4,
-    "accessibility": 2,
+    "accessibility": 4,
     "listeners": 487,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：The Swankys代表LP(Dogma)，2024再版；L487有串流→4；龐克搖滾",
+    "previousAccessibility": {
+     "accessibility": 2,
+     "rarity": "rare",
+     "at": "2026-11-04"
+    },
+    "loudFloorNote": "硬蕊度音量下限（2026-11-04 店主定案）：日本 hardcore 龐克，快速吼唱"
    },
-   "rarity": "rare",
+   "rarity": "epic",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -743,14 +880,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
+    "classic": 4,
     "obscurity": 4,
     "accessibility": 4,
     "listeners": 1230,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：あぶらだこ首張12吋代表作；L1230無串流→4；前衛硬蕊"
    },
-   "rarity": "uncommon",
+   "rarity": "epic",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -808,11 +954,26 @@
    },
    "ratings": {
     "classic": 4,
-    "obscurity": 4,
+    "obscurity": 3,
     "accessibility": 4,
     "listeners": 2780,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "epic"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Lip Cream代表作，Relapse再版；L2780有串流→3；短促硬蕊",
+    "previousAccessibility": {
+     "accessibility": 3,
+     "rarity": "uncommon",
+     "at": "2026-11-04"
+    },
+    "loudFloorNote": "硬蕊度音量下限（2026-11-04 店主定案）：日本 hardcore 龐克，極速嘶吼"
    },
    "rarity": "epic",
    "apexAssessment": {
@@ -835,7 +996,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b3/18/ce/b318ce80-df9b-aa35-2169-56678725db5a/mzaf_10584386772409253249.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f5/b1/cd/f5b1cdd9-03f6-a15b-6457-67996032fc68/mzaf_9695820183136208043.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -875,12 +1036,27 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
+    "classic": 3,
     "obscurity": 4,
     "accessibility": 4,
     "listeners": 194,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Lip Cream第二張；L194有串流→4；硬蕊",
+    "previousAccessibility": {
+     "accessibility": 3,
+     "rarity": "rare",
+     "at": "2026-11-04"
+    },
+    "loudFloorNote": "硬蕊度音量下限（2026-11-04 店主定案）：日本 hardcore／crossover，極速嘶吼"
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -943,14 +1119,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 4,
-    "obscurity": 4,
-    "accessibility": 4,
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
     "listeners": 33,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "epic"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：ザ・スターリン末期作；L33(疑鍵值偏低)無串流按硬規則→5；龐克"
    },
-   "rarity": "epic",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1008,14 +1193,30 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 4,
+    "classic": 3,
+    "obscurity": 5,
     "accessibility": 4,
     "listeners": 275,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 5,
+     "accessibility": 3,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：鉄アレイ首張全長代表作；L275無串流→5；硬蕊",
+     "rarity": "epic"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：小廠 Sunshine Sherbet 唯一版、無串流，275 有效→5。pearl 候選但身分靠曲目推定、無 Discogs 頁可引→暫 none，待主線查｜L=275",
+    "previousAccessibility": {
+     "accessibility": 3,
+     "rarity": "uncommon",
+     "at": "2026-11-04"
+    },
+    "loudFloorNote": "硬蕊度音量下限（2026-11-04 店主定案）：日本 hardcore／街頭龐克，快速粗獷"
    },
-   "rarity": "uncommon",
+   "rarity": "epic",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1070,14 +1271,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
+    "classic": 4,
     "obscurity": 4,
-    "accessibility": 2,
+    "accessibility": 4,
     "listeners": 4049,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：日本早期grindcore代表作；L4049無再發無串流→4；grindcore(原2偏錯)"
    },
-   "rarity": "rare",
+   "rarity": "epic",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1133,14 +1343,24 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 4,
-    "accessibility": 2,
+    "classic": 4,
+    "obscurity": 5,
+    "accessibility": 3,
     "listeners": 105,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：1983主流廠龐克合輯；L105無串流→5；龐克",
+     "rarity": "rare"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：德間 Japan Record 主要廠牌發行並有兩次 CD 再發；日本硬蕊早期要輯，硬蕊 2→3｜L=105"
    },
-   "rarity": "rare",
+   "rarity": "epic",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1195,19 +1415,40 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 4,
-    "accessibility": 2,
+    "classic": 4,
+    "obscurity": 5,
+    "accessibility": 3,
     "listeners": 155,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：AA Records硬蕊場景代表合輯；L155無串流→5；龐克硬蕊"
    },
-   "rarity": "rare",
+   "rarity": "epic",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "reason": "頂點重整（apex-rebalance-20261103，2026-11-03）：原流亡降為一般卡。同級內一藝人一張：Various Artists pearl 留《Bouquet of Steel》。三張中稽核強度最高（pearl2）；Sheffield 1980 地下合輯。註：VA 不是單一藝人，套用時可考慮豁免",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": true,
+     "tier": "pearl",
+     "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。L155有效，GISM／Lip Cream 名合輯，曲目多見他處與盜版、壓量無據；不到7",
+     "evidenceUrls": [
+      "https://www.last.fm/music/Various%20Artists/Hardcore%20Unlawful%20Assembly",
+      "https://musicbrainz.org/release-group/ebfa26ae-74f5-4d08-a961-dec256e04b81"
+     ],
+     "source": "manual:audit-20261102"
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:apex-rebalance-20261103"
    },
    "description": {
     "text": "八支樂團各兩首，第七、八軌的主唱當年沒有掛名。十六軌約五十四分鐘，最短一分二十七秒、最長五分二十三秒，四首超過四分鐘。那沒有掛名的兩軌是 Lip Cream，當時他們還沒有自己的專輯，唱的是 Baki。1984 年 8 月由 AA Records 發行，編號 AA 004，被視為這條線合輯裡的金字塔。",
@@ -1258,14 +1499,24 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
+    "classic": 5,
     "obscurity": 4,
     "accessibility": 4,
     "listeners": 7185,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 4,
+     "accessibility": 3,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Burning Spirits 時期代表團唯一專輯，評論稱 hardcore 頂峰、深遠影響→5；Feral Ward 黑膠再發未串流→4；暴烈 hardcore",
+     "rarity": "epic"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：日本 hardcore 場景聖盤，小廠原盤；粗糙高速 hardcore 入耳門檻偏高｜L=7185"
    },
-   "rarity": "uncommon",
+   "rarity": "legendary",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1325,26 +1576,38 @@
     "obscurity": 4,
     "accessibility": 5,
     "listeners": 1597,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 4,
+     "accessibility": 5,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "epic"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：日本d-beat代表作，LVEUM再版；L1597無串流→4；噪音化d-beat"
    },
-   "rarity": "epic",
+   "rarity": "legendary",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：accessibility=5（heresy 最低門檻），但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "heresy",
+    "reason": "異端（accessibility 5；ax9 升格，主線 52355）：Last Rites 描述整張是回授暴風雪般的粗暴聲響；維基與廠牌文案佐證失真極重、吉他為先的噪音 D-beat。邊緣案例。",
+    "evidenceUrls": [
+     "https://yourlastrites.com/2018/02/19/kawakami-forever-japanese-raw-punk-101-part/",
+     "https://en.wikipedia.org/wiki/Disclose"
+    ]
    },
    "description": {
-    "text": "留下的四十二筆出版裡有二十七筆是七吋。十五軌全是英文題，標題曲〈Tragedy〉排在第十二軌而不在頭尾，收尾是〈The End of Blood〉。1994 年的日本原盤出在 Overthrow Records，二十一年後由英國的 La vida es un mus 再發——接手的與同批《No Side》那次再發是同一家。",
+    "text": "《Tragedy》是高知 D-beat 樂團 Disclose 1994 年的 LP，吉他加了極重的 fuzz 與失真，回授成片不斷，被當成檢驗這團聲響的試金石。它處處致敬 Discharge，但失真與回授壓過其他聲部，有些寫法是 Discharge 沒做過的。主腦 Hideki Kawakami 彈吉他兼主唱，唱腔照著 Discharge 走，歌詞談核戰與戰後；樂團 1990 年起活動，2007 年隨他過世結束。名古屋的噪音 D-beat 團把 Disclose 與 Discharge 並列為範本，D-Clone 就是從翻唱 Disclose 起家。",
     "sourceUrls": [
-     "https://musicbrainz.org/ws/2/release-group/b1f7e538-22a3-3d03-ae15-dca63b132b59?fmt=json&inc=artist-credits+releases",
-     "https://musicbrainz.org/ws/2/release?release-group=b1f7e538-22a3-3d03-ae15-dca63b132b59&fmt=json&inc=media+labels+recordings&limit=100",
-     "https://musicbrainz.org/ws/2/release-group?artist=4e3ae10c-b302-40a2-be94-80d76547c4ea&fmt=json&limit=100&offset=0",
-     "https://musicbrainz.org/ws/2/artist/4e3ae10c-b302-40a2-be94-80d76547c4ea?fmt=json&inc=aliases+artist-rels",
-     "https://itunes.apple.com/search?term=Disclose&country=us&media=music&entity=musicArtist&limit=20",
-     "https://musicbrainz.org/release-group/b1f7e538-22a3-3d03-ae15-dca63b132b59"
-    ]
+     "https://en.wikipedia.org/wiki/Disclose",
+     "https://deadtankrecords.com/products/disclose-tragedy-lp",
+     "https://yourlastrites.com/2018/02/19/kawakami-forever-japanese-raw-punk-101-part/",
+     "https://sorrystaterecords.com/products/disclose-tragedy-12",
+     "https://www.maximumrocknroll.com/blast-from-the-past-d-clone/"
+    ],
+    "lengthReviewed": true
    },
    "preview": {
     "status": "unavailable",
@@ -1356,7 +1619,7 @@
     "descriptionKv": true,
     "albumOverride": true,
     "seedCards": true,
-    "apexPool": false
+    "apexPool": true
    }
   },
   {
@@ -1384,14 +1647,29 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 4,
-    "accessibility": 2,
+    "classic": 4,
+    "obscurity": 5,
+    "accessibility": 4,
     "listeners": 388,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：大阪龐克唯一80年代全長，藝人代表作；L388無串流→5；生猛硬蕊龐克",
+    "previousAccessibility": {
+     "accessibility": 3,
+     "rarity": "epic",
+     "at": "2026-11-04"
+    },
+    "loudFloorNote": "硬蕊度音量下限（2026-11-04 店主定案）：日本 hardcore，快速吶喊"
    },
-   "rarity": "rare",
+   "rarity": "legendary",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1447,22 +1725,43 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 4,
-    "accessibility": 4,
+    "classic": 5,
+    "obscurity": 5,
+    "accessibility": 5,
     "listeners": 495,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：日本噪音里程碑，VOD/Alchemy多次再版；L495無串流→5；噪音現場"
    },
-   "rarity": "uncommon",
+   "rarity": "legendary",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "heresy",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為異端（該軸 7 星）。非常階段首張，破壞式現場噪音；定義表明列非常階段為 7 星異端錨點，Japanoise 奠基",
+    "evidenceUrls": [
+     "https://en.wikipedia.org/wiki/Hijokaidan",
+     "https://en.wikipedia.org/wiki/Japanoise",
+     "https://ja.wikipedia.org/wiki/非常階段_(バンド)"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
-    "text": "六段錄音的曲名就是六個場地與日期，最後一段錄在大學的一間教室。六段的長度從一分二十三秒到十六分二十七秒，收尾那一段一首就佔掉全碟的三分之一，總長約四十五分鐘。六場演出橫跨 1980 年 11 月到 1981 年 11 月，場地從大阪與京都的展演空間排到大學校園，其中兩場就錄在慶応大学與同志社大学的教室裡。這些現場錄音在 1982 年 4 月由一家自主製作廠牌壓成十二吋，也是非常階段第一張自己的 LP。",
+    "text": "《蔵六の奇病》是京都噪音團體非常階段的第一張專輯，1982 年 4 月由大阪獨立廠牌 Unbalance Records 發行，收錄 1981 年的現場錄音。這支樂團的名聲先來自演出：砸燈、噴乾粉滅火器、撒垃圾與生魚、破壞場地與音響，八卦雜誌報導的是醜聞而不是音樂，被視為關西最兇惡的樂團。樂團 1979 年由 JOJO 廣重與 Naoki Zushi 成立，起初是不設旋律與節奏的雙吉他即興噪音二人組，後來重心轉向音樂，成為密集的噪音牆。收錄的現場有兩場錄在慶応大学與同志社大学的教室，封面用的是日野日出志的漫畫《蔵六の奇病》。",
     "sourceUrls": [
      "https://musicbrainz.org/ws/2/release-group/290a6d01-d533-4af5-a704-648e9c717a99?fmt=json&inc=artist-credits+releases",
      "https://musicbrainz.org/ws/2/release?release-group=290a6d01-d533-4af5-a704-648e9c717a99&fmt=json&inc=media+labels+recordings&limit=100",
@@ -1482,8 +1781,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -1511,14 +1810,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 4,
-    "accessibility": 2,
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 5,
     "listeners": 66,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：非常階段一軌長篇；L66無串流→5；harsh noise(原2偏錯)"
    },
-   "rarity": "rare",
+   "rarity": "legendary",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1576,21 +1884,41 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 4,
+    "obscurity": 5,
     "accessibility": 5,
     "listeners": 68,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 5,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "epic"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Incapacitants早期一軌卡帶；L68無串流→5；harsh noise"
    },
-   "rarity": "epic",
+   "rarity": "legendary",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：accessibility=5（heresy 最低門檻），但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。Incapacitants 首卷卡帶，2025 已正式再發；代表作是 As Loud As Possible，非本張",
+    "evidenceUrls": [
+     "https://www.last.fm/music/Incapacitants/Eternal%20Paralysis",
+     "https://musicbrainz.org/release-group/35720d81-2e0c-4573-acac-84d9852796eb"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：accessibility=5（heresy 最低門檻），但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
-    "text": "1981 年的原件是一捲卡帶，整捲只有一軌。卡帶的編號 PT-1 是那家卡帶廠的創廠第一號，同期的另外四筆同樣全是卡帶；美川俊治在大阪起手時，這還是他在樂團之外的個人計畫，要到八年後才有第一張黑膠。四十四年後的再發把同一份錄音切成三段，由 advaita records 重出成數位與卡帶兩種形式。",
+    "text": "《Eternal Paralysis》是 Incapacitants 最早的卡帶，1981 年美川俊治在自己的 Pariah Tapes 做出來，從未公開販售，只送給朋友；2024 年才由 Old Europa Cafe 與《Peony Crackers》合成 3CD 重新發行。當時這還是美川在 Hijokaidan 之外的個人計畫，他不滿外界只注意 Hijokaidan 的極端舞台表演，想專注在噪音本身。聲音來自他自製的噪音產生器「The MIKAWA」，加上 Roland AF-100 BeeBaa 與晶體麥克風的回授、即興電吉他與打擊聲。",
     "sourceUrls": [
      "https://musicbrainz.org/ws/2/release-group/35720d81-2e0c-4573-acac-84d9852796eb?fmt=json&inc=artist-credits+releases",
      "https://musicbrainz.org/ws/2/release?release-group=35720d81-2e0c-4573-acac-84d9852796eb&fmt=json&inc=media+labels+recordings&limit=100",
@@ -1609,8 +1937,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -1706,22 +2034,43 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 3,
-    "obscurity": 4,
+    "classic": 4,
+    "obscurity": 5,
     "accessibility": 5,
     "listeners": 497,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 5,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "epic"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Incapacitants巔峰期常被推薦之作；L497無串流→5；長篇harsh noise"
    },
-   "rarity": "epic",
+   "rarity": "legendary",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：accessibility=5（heresy 最低門檻），但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "heresy",
+    "reason": "頂點重整（apex-rebalance-20261103，2026-11-03）：升為異端。日本 harsh noise 雙人組代表作，全程高密度回授尖嘯噪音牆，日本噪音第二波核心；該團頂點原只在流亡（主線補）",
+    "evidenceUrls": [
+     "https://en.wikipedia.org/wiki/Incapacitants",
+     "https://musicbrainz.org/release-group/6d75acb3-c9d7-3855-9d4c-635e816e3158",
+     "https://www.last.fm/music/Incapacitants/Quietus"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：accessibility=5（heresy 最低門檻），但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:apex-rebalance-20261103"
    },
    "description": {
-    "text": "兩段二十多分鐘的長曲中間，夾了一首四分二十三秒的短曲。頭尾兩軌分別是二十三分十二秒與二十一分零七秒，三軌總長約四十九分鐘，長度比例接近五比一比五。有一處來源記這兩位的曲名常引用自己的職業，他們的正職分別是銀行員與公務員。這張是 1993 年在 Alchemy Records 出的 CD，從最早的卡帶到黑膠再到這張，三種載體各佔一張。",
+    "text": "《Quietus》是日本噪音二人組 Incapacitants 的第四張專輯，1993 年由 Alchemy Records 發行，三首曲子裡兩首各長二十多分鐘。樂團 1981 年由非常階段的三川敏治在大阪起步，搬到東京後加入 C.C.C.C. 的 Fumio Kosakai，兩人要做沒有音樂構想的「純粹」噪音，強調音量、拒絕敘事，被視為 1990 年後日本噪音崛起的代表之一。聲源是吉他、循環效果、自製電路、回授與人聲，所有頻率同時塞滿；首曲〈No Risk, No Return〉是強烈的電子失真，末曲〈Goby Fishing〉密而細碎，帶著回授。",
     "sourceUrls": [
      "https://musicbrainz.org/ws/2/release-group/6d75acb3-c9d7-3855-9d4c-635e816e3158?fmt=json&inc=artist-credits+releases",
      "https://musicbrainz.org/ws/2/release?release-group=6d75acb3-c9d7-3855-9d4c-635e816e3158&fmt=json&inc=media+labels+recordings&limit=100",
@@ -1740,8 +2089,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -1776,7 +2125,7 @@
     "source": "manual:depth-rubric",
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
-   "rarity": "epic",
+   "rarity": "legendary",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1836,12 +2185,21 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 4,
+    "classic": 3,
     "obscurity": 4,
     "accessibility": 5,
     "listeners": 1645,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 4,
+     "accessibility": 5,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "legendary"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：32 段平均不足一分鐘的嘶吼回授爆音；1645 聽眾、2022 數位版→4｜L=1645"
    },
    "rarity": "epic",
    "apexAssessment": {
@@ -1900,22 +2258,42 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
+    "classic": 4,
     "obscurity": 4,
-    "accessibility": 4,
+    "accessibility": 5,
     "listeners": 1781,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：首張錄音室 CD，日本噪音代表團體早期要作→4；L=1781 無串流、有實體再發→4；41 分鐘 harsh noise"
    },
-   "rarity": "uncommon",
+   "rarity": "legendary",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "heresy",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為異端（該軸 7 星）。Japanoise 代表團體首張錄音室作，41 分鐘 harsh noise 長軌；里程碑地位不及 Merzbow，勉強",
+    "evidenceUrls": [
+     "https://en.wikipedia.org/wiki/C.C.C.C.",
+     "https://en.wikipedia.org/wiki/Japanoise"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
-    "text": "三軌五十二分鐘，第三軌〈Sonic Machine〉一首就佔掉四十一分十二秒。前兩軌分別是六分零四秒與四分多鐘，全碟一半以上的時間都落在最後那一首。盤名就是團名 C.C.C.C. 四個字母的全稱。這是樂團自營廠牌的第一張 CD、編號 EDP CD-01，也是他們名下第一筆非現場作品——排在它前面的兩筆都帶著現場標記。",
+    "text": "《Cosmic Coincidence Control Center》是東京噪音團體 C.C.C.C. 的第一張專輯，盤名就是團名全稱。樂團的名聲來自現場，人聲 Mayuko Hino 在台上脫衣、把尿袋丟向觀眾，1998 年登上 John Peel 策劃的 Meltdown 音樂節。這張 1991 年錄音，1992 年由團員 Hiroshi Hasegawa 自營的 Endorphine Factory 出 CD。早期錄音比多數日本噪音唱片安靜、失真少；細密的噪音氛圍與擷取來的聲音碎片被電子脈衝操作、打斷，從電子噪音、持續音到合成器段落都有。",
     "sourceUrls": [
      "https://musicbrainz.org/ws/2/release-group/a62af6e7-897d-37ed-96ad-bfac682396cd?fmt=json&inc=artist-credits+releases",
      "https://musicbrainz.org/ws/2/release?release-group=a62af6e7-897d-37ed-96ad-bfac682396cd&fmt=json&inc=media+labels+recordings&limit=100",
@@ -1934,8 +2312,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -1963,14 +2341,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
+    "classic": 3,
     "obscurity": 4,
-    "accessibility": 4,
+    "accessibility": 5,
     "listeners": 583,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：早期錄音室作、2023 復刻上串流；L=583 ready→4；兩段 harsh noise"
    },
-   "rarity": "uncommon",
+   "rarity": "epic",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2031,13 +2418,22 @@
    },
    "ratings": {
     "classic": 2,
-    "obscurity": 4,
-    "accessibility": 4,
+    "obscurity": 5,
+    "accessibility": 5,
     "listeners": 13,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Fatagaga連號卡帶之一，素材稀薄；L13→5；噪音"
    },
-   "rarity": "uncommon",
+   "rarity": "epic",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2093,22 +2489,43 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 4,
-    "accessibility": 4,
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 5,
     "listeners": 205,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Solmania Alchemy作；L205無串流→5；長篇噪音"
    },
-   "rarity": "uncommon",
+   "rarity": "legendary",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "heresy",
+    "reason": "頂點重整（apex-rebalance-20261103，2026-11-03）：升為異端。大阪 harsh noise 核心計畫，自製多頸吉他噪音、28 分長軌；類型本身極端，但單盤評述缺，質感偏紋理",
+    "evidenceUrls": [
+     "https://en.wikipedia.org/wiki/Solmania",
+     "https://nts.live/artists/31918-solmania",
+     "https://www.forcedexposure.com/Artists/SOLMANIA.html"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:apex-rebalance-20261103"
    },
    "description": {
-    "text": "第一首佔掉二十七分四十七秒，第二首只有三十四秒。兩首同題的〈Metamorphor Chorus〉分列第三與第五軌，前者二十分二十二秒、後者三分零七秒，長度差了六倍以上，五軌總長約五十六分鐘。這是大野雅彦從早年那批卡帶轉到 Alchemy Records 之後的第一張 CD，1991 年 1 月發行；那家廠牌幾乎所有作品的平面設計都出自他手。",
+    "text": "《Metamorphor Chorus》是大野雅彥（Masahiko Ohno）的噪音計畫 Solmania 的作品，1991 年 1 月由 Alchemy Records 出 CD，五軌約 56 分鐘，開場的〈Flood〉一首將近 28 分鐘。Solmania 1984 年在大阪成立，是 1980 年代後期以自製樂器與系統做噪音的日本噪音計畫之一，後來也被列為日本噪音興盛期的重要名字。大野的做法是用備用零件自己造電吉他：特殊的琴身、多琴頸、多弦、裝在意想不到位置的拾音器，經過效果器處理，配上他自己的人聲。",
     "sourceUrls": [
      "https://musicbrainz.org/ws/2/release-group/be17f67f-b994-4c21-a4d7-f3f0a9c1e818?fmt=json&inc=artist-credits+releases",
      "https://musicbrainz.org/ws/2/release?release-group=be17f67f-b994-4c21-a4d7-f3f0a9c1e818&fmt=json&inc=media+labels+recordings&limit=100",
@@ -2127,8 +2544,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -2156,22 +2573,42 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 4,
-    "accessibility": 4,
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 5,
     "listeners": 109,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：K2眾作之一，Hospital再版；L109無串流→5；噪音"
    },
-   "rarity": "uncommon",
+   "rarity": "legendary",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。聽眾 109，但 2018 Hospital 雙黑膠正式再發，流亡不成立；異端也只到 5",
+    "evidenceUrls": [
+     "https://www.last.fm/music/K2/The%20Rust",
+     "https://musicbrainz.org/release-group/4891be57-de1a-44e5-ae01-f4da9f3ce3e5"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
-    "text": "一個標題切成四個 Part，雙黑膠版每一面剛好放一段。草深公秀在 1983 年出過兩筆之後，隔了整整十年才有下一張，要到 1993 年起才密集起來。1996 年的原盤是 CD、編號 KMI-022，同一年他名下還有別張碟，指認本張要看這組編號；二十二年後由紐約一家廠牌重壓成雙黑膠。",
+    "text": "《The Rust》是草深公秀一人噪音計畫 K2 的作品，1996 年在千葉錄成，原版是他自家 Kinky Music Institute 的 CD，2018 年才由美國 Hospital Productions 首次出成雙黑膠。K2 約 1983 年起活動，1990 年代初開始密集發行，累積近兩百個作品，最早都出在自家廠牌。這張由多軌錄音剪接成四段金屬廢料噪音：用拳頭敲擊金屬再裹上回授，再用草深自稱「Friktor」的裝置以 flange 把金屬聲切開。之後 Ant Zen 的 10 吋與 Torn Light 2021 年的卡帶都取材自這批素材。",
     "sourceUrls": [
      "https://musicbrainz.org/ws/2/release-group/4891be57-de1a-44e5-ae01-f4da9f3ce3e5?fmt=json&inc=artist-credits+releases",
      "https://musicbrainz.org/ws/2/release?release-group=4891be57-de1a-44e5-ae01-f4da9f3ce3e5&fmt=json&inc=media+labels+recordings&limit=100",
@@ -2190,8 +2627,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -2219,22 +2656,42 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 4,
-    "accessibility": 4,
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 5,
     "listeners": 454,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：多產噪音人眾作之一；L454無串流→5；harsh noise"
    },
-   "rarity": "uncommon",
+   "rarity": "legendary",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "heresy",
+    "reason": "頂點重整（apex-rebalance-20261103，2026-11-03）：升為異端。吉田恭淑 harsh noise 計畫，Xerxes 廠主，日本噪音第二波代表；整面高密度刺耳噪音，類型即極端",
+    "evidenceUrls": [
+     "https://en.wikipedia.org/wiki/Government_Alpha",
+     "https://www.discogs.com/artist/74531"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:apex-rebalance-20261103"
    },
    "description": {
-    "text": "七軌四十二分鐘，六軌擠在四分半到六分半之間，收尾那軌九分十七秒。七個曲名全是英文的造詞或罕用字：收尾那首題作〈Enantiodromia〉，字眼出自榮格心理學，〈Clairaudient Isabelle〉的頭一個字指聽覺通靈，其餘幾首則是自造的複合詞。這張唯一的實體版本 1999 年 9 月出在瑞典、編號 SEGER 1，作者本名吉田恭淑。",
+    "text": "《Alphaville》是東京噪音音樂家吉田恭淑以 Government Alpha 名義做的 harsh noise 專輯，1999 年 9 月由瑞典廠牌 Segerhuva 發行，七軌約 42 分鐘。他 1994 年起專做 harsh noise；他受 Whitehouse、SPK 啟發，看過 Incapacitants 演出後決定做得更強，也經營發行過八十多個品項的廠牌 Xerxes。他的做法是快速剪接，讓彼此對比的噪音片段相撞再合在一起，嗓音不唱歌詞，當成另一件樂器處理。",
     "sourceUrls": [
      "https://musicbrainz.org/ws/2/release-group/6a2cc19d-eda8-4f1a-8cd4-b053014b82c9?fmt=json&inc=artist-credits+releases",
      "https://musicbrainz.org/ws/2/release?release-group=6a2cc19d-eda8-4f1a-8cd4-b053014b82c9&fmt=json&inc=media+labels+recordings&limit=100",
@@ -2253,8 +2710,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -2350,21 +2807,42 @@
    },
    "ratings": {
     "classic": 2,
-    "obscurity": 4,
-    "accessibility": 2,
+    "obscurity": 5,
+    "accessibility": 5,
     "listeners": 59,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 5,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：MSBR首作；L59無串流→5；兩段長篇harsh noise(原2偏錯)",
+     "rarity": "legendary"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：田野直之 harsh noise 首張私壓，兩軌 48 分；59 聽眾無再發→5；聲音資料薄｜L=59"
    },
-   "rarity": "rare",
+   "rarity": "epic",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。listeners 59私壓，但壓量與聖杯地位無據；harsh noise資料薄",
+    "evidenceUrls": [
+     "https://www.last.fm/music/MSBR/Ultimate%20Ambience",
+     "https://musicbrainz.org/release-group/ed8a9c18-74dc-4bc3-9898-78892d2760be"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
-    "text": "四個字母的展開寫在別名欄裡：Molten Salt Breeder Reactor。整張碟只有一個標題，用 #1 與 #2 分開，二十五分十五秒對二十二分二十四秒，一面一段，兩段差兩分五十一秒。1992 年那張黑膠的編號是 MR 01，廠牌名與這個名字同一串字母；作者本人生於 1961 年，2005 年過世。",
+    "text": "《Ultimate Ambience》是田野幸治以 MSBR 名義的作品，1991 年 2 月錄成，1992 年在自己的 MSBR Records 出版黑膠，限量 400 張，前 100 張是手工摺頁封套；2019 年義大利 Urashima 重壓 199 張。田野在東京經營唱片行 Ned's，推廣日本噪音，2005 年過世。兩面各一個長段，約 25 分與 22 分，用自然與人造的聲源做成刺耳的噪音，器材有 Korg 吉他合成器與效果器，取法具象音樂與電聲音樂。他的噪音層疊而帶節奏，靠類比延遲與快速變化的音色推進，現場幾乎不動地站在合成器前轉旋鈕。",
     "sourceUrls": [
      "https://musicbrainz.org/ws/2/release-group/ed8a9c18-74dc-4bc3-9898-78892d2760be?fmt=json&inc=artist-credits+releases",
      "https://musicbrainz.org/ws/2/release?release-group=ed8a9c18-74dc-4bc3-9898-78892d2760be&fmt=json&inc=media+labels+recordings&limit=100",
@@ -2383,8 +2861,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -2412,22 +2890,42 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 4,
-    "accessibility": 4,
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 5,
     "listeners": 120,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Pain Jerk卡帶眾作之一；L120無串流→5；harsh noise"
    },
-   "rarity": "uncommon",
+   "rarity": "legendary",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。日本harsh noise次要代表，依據不足以並列Merzbow/非常階段",
+    "evidenceUrls": [
+     "https://www.last.fm/music/Pain%20Jerk/Aktion%20Bruit",
+     "https://musicbrainz.org/release-group/4ce3524d-1e39-423b-9d01-ddb866c7f762"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
-    "text": "三軌的長度一路遞減：十九分半、十二分五十、九分三十七。三個曲名分屬三種寫法：〈Neon Kid〉是英文，〈In die Glutenkiste〉是德文，〈Mosquitomagus〉則是拉丁語式的造詞。1995 年那捲卡帶的編號是 AMP-013；光那一年，五味浩平名下就有八筆，隔年再添十四筆，兩年合計二十二筆，這張只是其中之一。",
+    "text": "《Aktion Bruit》是五味浩平的噪音計畫 Pain Jerk 1995 年在自己的卡帶廠牌 AMP 出的卡帶，只有卡帶形式，沒有再版紀錄。AMP 在 1990 年代出了約五十捲 Pain Jerk 卡帶，這是其中一捲；同期另一捲《Neurotten》原版只有 80 張，2021 年由義大利 Urashima 出成黑膠。這捲共三軌，〈Neon Kid〉約 19 分半、〈In die Glutenkiste〉12 分 50 秒、〈Mosquitomagus〉約 9 分半。他同期的做法是用重疊的高音、撕裂聲、脈動的瞬態聲與循環堆出噪音，切割多於重擊。",
     "sourceUrls": [
      "https://musicbrainz.org/ws/2/release-group/4ce3524d-1e39-423b-9d01-ddb866c7f762?fmt=json&inc=artist-credits+releases",
      "https://musicbrainz.org/ws/2/release?release-group=4ce3524d-1e39-423b-9d01-ddb866c7f762&fmt=json&inc=media+labels+recordings&limit=100",
@@ -2446,8 +2944,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -2476,21 +2974,41 @@
    },
    "ratings": {
     "classic": 2,
-    "obscurity": 4,
-    "accessibility": 2,
+    "obscurity": 5,
+    "accessibility": 5,
     "listeners": 69,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：多產計畫 78 張專輯之一的 CD-R；L=69 無串流→下限 5；兩段各 30 分的迷幻 harsh noise"
    },
-   "rarity": "rare",
+   "rarity": "epic",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。ASTRO 百餘張作品中一般一張，非 harsh noise 里程碑",
+    "evidenceUrls": [
+     "https://www.last.fm/music/ASTRO/Bio-Galaxy",
+     "https://musicbrainz.org/release-group/14f589f5-ffa4-4d19-a266-b055bb8af4e2"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
-    "text": "2000 年那張 CD-R 上是完整不切的一軌，二十一年後才分成兩段。切開後是三十分四十一秒與三十一分零二秒，只差二十一秒，全碟超過一小時。這個名字是長谷川洋 1993 年起的個人計畫，當時他仍在 C.C.C.C. 裡，兩條線同時在跑；器材用的是老式的類比合成器。這張出在德國一家小廠，同廠的前一筆是三年前的十二吋黑膠。",
+    "text": "《Bio-Galaxy》是長谷川洋的個人計畫 ASTRO 2000 年在柏林小廠 Tochnit Aleph 出的 CD-R，不是正式壓製的 CD，也沒有實體再版紀錄；2021 年長谷川自己把它放上數位平台，切成兩段。長谷川是日本噪音團 C.C.C.C. 的創始成員，ASTRO 是他 1993 年起的個人計畫。原版整張只有一軌，長 61 分 41 秒，由他一人演奏錄音，他把類型寫成「electro-acoustic brutal ambient」。ASTRO 用的是 Moog、EMS 等老式類比合成器，範圍從太空音樂到帶迷幻色彩的刺耳噪音。",
     "sourceUrls": [
      "https://musicbrainz.org/ws/2/release-group/14f589f5-ffa4-4d19-a266-b055bb8af4e2?fmt=json&inc=artist-credits+releases",
      "https://musicbrainz.org/ws/2/release?release-group=14f589f5-ffa4-4d19-a266-b055bb8af4e2&fmt=json&inc=media+labels+recordings&limit=100",
@@ -2509,8 +3027,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -2540,22 +3058,42 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 4,
-    "accessibility": 4,
+    "classic": 4,
+    "obscurity": 5,
+    "accessibility": 5,
     "listeners": 171,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：ハナタラシ惡名代表作；L171無串流→5；極端噪音"
    },
-   "rarity": "uncommon",
+   "rarity": "legendary",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。樂團惡名來自現場破壞，錄音本身最難入耳依據薄",
+    "evidenceUrls": [
+     "https://www.last.fm/music/%E3%83%8F%E3%83%8A%E3%82%BF%E3%83%A9%E3%82%B7/%E3%83%8F%E3%83%8A%E3%82%BF%E3%83%A9%E3%82%B7",
+     "https://musicbrainz.org/release-group/d21a0114-c2b9-3647-b5ef-0b4ec8920853"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
-    "text": "八軌裡第三軌四十八秒，第七軌十七分五十三秒。長的那一軌一首就佔掉全碟三分之一以上，八軌總長約四十七分鐘，兩軌超過十分鐘、五軌不到五分鐘。團名的意思是流鼻涕的，這張發行之後，羅馬字拼法裡的 i 就被拿掉了。在此之前名下的四筆全是卡帶，1985 年這張才是第一張黑膠，出在 Alchemy Records、編號 ARLP-007。",
+    "text": "《ハナタラシ》是山塚アイ為中心的大阪噪音團ハナタラシ的第一張黑膠，1985 年 6 月由 Alchemy Records 發行，之前的作品都是自家廠牌 Condome Cassex 的卡帶。團體以現場聞名，動用過挖土機，也把玻璃與混凝土塊丟向觀眾，屢次被場地禁演；這份名聲經廣播節目放大，後來帶動了 1990 年代對日本噪音的關注。團體 1983 年組成，被視為山塚的個人單位，約 1988 年起停擺，山塚另與人組了 Boredoms。他們的噪音以電鑽、電動工具與重機械等非樂器聲源為主，主題是破壞、暴力與辱罵；這張共八軌，最長的一軌 17 分 53 秒。",
     "sourceUrls": [
      "https://musicbrainz.org/ws/2/release-group/d21a0114-c2b9-3647-b5ef-0b4ec8920853?fmt=json&inc=artist-credits+releases",
      "https://musicbrainz.org/ws/2/release?release-group=d21a0114-c2b9-3647-b5ef-0b4ec8920853&fmt=json&inc=media+labels+recordings&limit=100",
@@ -2574,8 +3112,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -2604,21 +3142,43 @@
    },
    "ratings": {
     "classic": 4,
-    "obscurity": 4,
-    "accessibility": 5,
+    "obscurity": 5,
+    "accessibility": 4,
     "listeners": 250,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 5,
+     "accessibility": 5,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：灰野敬二PSF代表作之一；L250無串流→5；前衛獨奏",
+     "rarity": "legendary"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：灰野早期獨奏代表作之一，單軌 53 分鐘幽靜與爆裂交錯→4；非噪音牆。250 無串流→5｜L=250"
    },
-   "rarity": "epic",
+   "rarity": "legendary",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：accessibility=5（heresy 最低門檻），但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "頂點重整（apex-rebalance-20261103，2026-11-03）：升為流亡。1990 P.S.F. 小廠 PSF-7、灰野首張 PSF 獨奏 CD，絕版三十五年至 2025 Black Truffle 才重發；日本地下聖典之一",
+    "evidenceUrls": [
+     "https://www.last.fm/music/%E7%81%B0%E9%87%8E%E6%95%AC%E4%BA%8C/%E6%BB%B2%E6%9C%89%E7%84%A1",
+     "https://en.wikipedia.org/wiki/Keiji_Haino",
+     "https://www.allmusic.com/album/nijiumu-mw0001127655"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：accessibility=5（heresy 最低門檻），但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:apex-rebalance-20261103"
    },
    "description": {
-    "text": "一段五十三分四十一秒的錄音從頭到尾沒有分軌。整張碟因此沒有曲序可談。這個漢字盤名同時是灰野敬二個人名義下一個計畫的名字，羅馬字讀作 Nijiumu。1990 年由 P.S.F. Records 發行、編號 PSFD-7；那家廠牌設在東京，專做地下迷幻與自由即興，名字取自四年前的另一張碟。",
+    "text": "《滲有無》是灰野敬二 1990 年 10 月由東京 P.S.F. Records 發行的個人作品，是他自 1981 年《Watashi Dake?》以來第一張個人錄音，初版是手繪封面、限量 300 張。P.S.F. 由池泉秀夫創辦於東京唱片行 Modern Music，專做日本地下迷幻。整張約 54 分鐘，不分軌：從輕微的叮噹聲與耳語開始，轉到尖銳的叫喊、drone 式的電子聲、敲擊金屬物的即興與吉他拍打出的環境聲，中段持續的人聲和飄浮的弦樂一起拉長，推到一段長長的高潮。英文圈把這張讀作 Nijiumu，灰野之後也用這個名字當個人計畫的名義。",
     "sourceUrls": [
      "https://musicbrainz.org/ws/2/release-group/ee8732e3-2a6c-40c2-a55a-92b33de7d08c?fmt=json&inc=artist-credits+releases",
      "https://musicbrainz.org/ws/2/release?release-group=ee8732e3-2a6c-40c2-a55a-92b33de7d08c&fmt=json&inc=media+labels+recordings&limit=100",
@@ -2638,8 +3198,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -2667,14 +3227,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 4,
+    "classic": 4,
+    "obscurity": 5,
     "accessibility": 4,
     "listeners": 612,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：High Rise首作、PSF-1，迷幻噪音代表；L612無串流→5；重度失真迷幻"
    },
-   "rarity": "uncommon",
+   "rarity": "legendary",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2730,14 +3299,24 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 4,
+    "classic": 3,
+    "obscurity": 5,
     "accessibility": 4,
     "listeners": 502,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 5,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：不失者Avant時期作；L502無串流→5；儀式性噪音即興",
+     "rarity": "legendary"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：不失者 Avant 盤；噪音迷幻搖滾→4，非代表作，無單盤依據。502 無串流→5｜L=502"
    },
-   "rarity": "uncommon",
+   "rarity": "epic",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2795,10 +3374,19 @@
    "ratings": {
     "classic": 4,
     "obscurity": 4,
-    "accessibility": 5,
+    "accessibility": 4,
     "listeners": 1477,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 4,
+     "accessibility": 5,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "epic"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Zeni Geva代表作之一；L1477無串流→4；噪音搖滾，原5偏高"
    },
    "rarity": "epic",
    "apexAssessment": {

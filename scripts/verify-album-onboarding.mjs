@@ -7,7 +7,7 @@ const HERE = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(HERE, '..');
 const FIRESTORE = process.env.DIP_ONBOARD_FIRESTORE_BASE || 'https://firestore.googleapis.com/v1/projects/price-manager-e8846/databases/(default)/documents';
 const WORKER = process.env.DIP_ONBOARD_WORKER_BASE || 'https://dip-vinyl-worker.kubinice06.workers.dev';
-const RARITY = score => score >= 10 ? 'legendary' : score >= 8 ? 'epic' : score >= 6 ? 'uncommon' : score >= 4 ? 'rare' : 'common';
+const RARITY = score => score >= 9 ? 'legendary' : score >= 8 ? 'epic' : score >= 7 ? 'uncommon' : score >= 6 ? 'rare' : 'common';
 const TIERS = new Set(['hall', 'pearl', 'heresy']);
 const PREVIEW_STATUSES = new Set(['ready', 'unavailable', 'disabled']);
 // apple-verified-collection 是 ALBUM_ONBOARDING §4 於 2026-09-02（c-64）增列的例外：

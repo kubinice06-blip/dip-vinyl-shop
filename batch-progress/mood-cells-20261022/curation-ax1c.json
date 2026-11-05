@@ -1,0 +1,450 @@
+{
+ "group": "ax1c",
+ "factions": [
+  {
+   "id": "eu-noise",
+   "zh": "歐洲噪音",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "us-noiserock",
+   "zh": "美國噪音搖滾",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "us-freenoise",
+   "zh": "美國即興噪音",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "us-hnw",
+   "zh": "美國 harsh noise",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "se-noiserock",
+   "zh": "瑞典噪音搖滾",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "pe-uk",
+   "zh": "英國 power electronics",
+   "count": 2,
+   "why": ""
+  },
+  {
+   "id": "us-noise",
+   "zh": "美國噪音",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "eu-hnw",
+   "zh": "歐洲 harsh noise",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "jp-noise",
+   "zh": "日本噪音",
+   "count": 3,
+   "why": ""
+  }
+ ],
+ "albums": [
+  {
+   "artist": "Hototogisu",
+   "album": "Ghosts From the Sun",
+   "year": 2005,
+   "label": "Important Records",
+   "country": "GB",
+   "faction": "eu-noise",
+   "genres": [
+    "noise",
+    "experimental"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "Hototogisu 的噪音／迷幻雜訊代表作，由 Important 發行，常被列為 2000 年代新一代 harsh noise 的標誌盤",
+   "listeners": null,
+   "why": "Hototogisu 的噪音／迷幻雜訊代表作，由 Important 發行，常被列為 2000 年代新一代 harsh noise 的標誌盤",
+   "moodGuess": {
+    "x": 1,
+    "y": 5,
+    "z": 1,
+    "why": "回授與失真牆，無節奏旋律"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/8d95c22d-0a80-3189-ac1a-160bb10e13b5",
+    "https://www.discogs.com/search/?q=Hototogisu+Ghosts+From+the+Sun&type=master"
+   ],
+   "mbRgMbid": "8d95c22d-0a80-3189-ac1a-160bb10e13b5",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "CAA 無封面，須查 Apple／Bandcamp／Discogs 確認；極端程度為記憶判斷，未能引用具體榜單"
+  },
+  {
+   "artist": "Harry Pussy",
+   "album": "Ride a Dove",
+   "year": 1996,
+   "label": "Siltbreeze",
+   "country": "US",
+   "faction": "us-noiserock",
+   "genres": [
+    "noise",
+    "punk"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "邁阿密 Harry Pussy 的 Siltbreeze 專輯，維基稱其暴烈音樂影響噪音搖滾圈；Wire 評論過其作品",
+   "listeners": null,
+   "why": "邁阿密 Harry Pussy 的 Siltbreeze 專輯，維基稱其暴烈音樂影響噪音搖滾圈；Wire 評論過其作品",
+   "moodGuess": {
+    "x": 1,
+    "y": 5,
+    "z": 2,
+    "why": "鼓與嘶吼失控的反搖滾"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/01fd8ed8-a66a-39f1-9c6e-6d8758b2962a",
+    "https://coverartarchive.org/release-group/01fd8ed8-a66a-39f1-9c6e-6d8758b2962a"
+   ],
+   "mbRgMbid": "01fd8ed8-a66a-39f1-9c6e-6d8758b2962a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 首發 1996；亦可考慮同名首張或 What Was Music?；是否達 7 星請研究層再核"
+  },
+  {
+   "artist": "Borbetomagus",
+   "album": "Barbed Wire Maggots",
+   "year": 1983,
+   "label": "Agaric Records",
+   "country": "US",
+   "faction": "us-freenoise",
+   "genres": [
+    "noise",
+    "jazz"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "Borbetomagus 以雙薩克斯加電子的極端噪音聞名，維基稱其為侵略性即興噪音先驅",
+   "listeners": null,
+   "why": "Borbetomagus 以雙薩克斯加電子的極端噪音聞名，維基稱其為侵略性即興噪音先驅",
+   "moodGuess": {
+    "x": 1,
+    "y": 5,
+    "z": 2,
+    "why": "薩克斯過載牆式即興"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/a01f24f9-e269-3cb8-8463-768ff885ba42",
+    "https://coverartarchive.org/release-group/a01f24f9-e269-3cb8-8463-768ff885ba42"
+   ],
+   "mbRgMbid": "a01f24f9-e269-3cb8-8463-768ff885ba42",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "屬能量型自由爵士邊界，可能被汰；若要換盤可選 1980 同名首張（39fecd1b-dc19-3485-89e3-4646b034e834）"
+  },
+  {
+   "artist": "Sissy Spacek",
+   "album": "Sissy Spacek",
+   "year": 2001,
+   "label": "Helicopter",
+   "country": "US",
+   "faction": "us-hnw",
+   "genres": [
+    "noise",
+    "experimental"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "Sissy Spacek（Jon Wiese）的 2001 年同名首張，美國 harsh noise 地下的高強度代表",
+   "listeners": null,
+   "why": "Sissy Spacek（Jon Wiese）的 2001 年同名首張，美國 harsh noise 地下的高強度代表",
+   "moodGuess": {
+    "x": 1,
+    "y": 5,
+    "z": 1,
+    "why": "高密度失真與切割聲響"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/75633088-e845-3966-bb9a-fd5b36e9411f",
+    "https://coverartarchive.org/release-group/75633088-e845-3966-bb9a-fd5b36e9411f"
+   ],
+   "mbRgMbid": "75633088-e845-3966-bb9a-fd5b36e9411f",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "代表盤是否為首張記憶不確定，請核；藝人需與同名演員區分"
+  },
+  {
+   "artist": "Brainbombs",
+   "album": "Urge to Kill",
+   "year": 1999,
+   "label": "Load Records",
+   "country": "SE",
+   "faction": "se-noiserock",
+   "genres": [
+    "noise",
+    "punk"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "瑞典 Brainbombs 以最極端的噪音搖滾與病態歌詞著稱，Urge to Kill 常被列為其最難入耳之作",
+   "listeners": null,
+   "why": "瑞典 Brainbombs 以最極端的噪音搖滾與病態歌詞著稱，Urge to Kill 常被列為其最難入耳之作",
+   "moodGuess": {
+    "x": 1,
+    "y": 4,
+    "z": 1,
+    "why": "單音反覆的緩慢暴力搖滾"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/da188e3c-abbd-39e8-b1d8-46ee51a854b4",
+    "https://coverartarchive.org/release-group/da188e3c-abbd-39e8-b1d8-46ee51a854b4"
+   ],
+   "mbRgMbid": "da188e3c-abbd-39e8-b1d8-46ee51a854b4",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "硬蕊度偏向主題而非音響，可能不及噪音牆 7 星；請研究層核"
+  },
+  {
+   "artist": "The Grey Wolves",
+   "album": "Catholic Priests Fuck Children",
+   "year": 1996,
+   "label": "Praxis Dr. Bearmann",
+   "country": "GB",
+   "faction": "pe-uk",
+   "genres": [
+    "noise",
+    "industrial"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "Grey Wolves 為英國 death industrial／power electronics 團，此盤以挑釁主題與極端聲響聞名",
+   "listeners": null,
+   "why": "Grey Wolves 為英國 death industrial／power electronics 團，此盤以挑釁主題與極端聲響聞名",
+   "moodGuess": {
+    "x": 1,
+    "y": 5,
+    "z": 1,
+    "why": "尖銳回授與嘶吼"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/6b918538-7490-4a59-848a-f4be9d553942",
+    "https://coverartarchive.org/release-group/6b918538-7490-4a59-848a-f4be9d553942"
+   ],
+   "mbRgMbid": "6b918538-7490-4a59-848a-f4be9d553942",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "代表作選擇憑記憶（亦有 Slash、Legion of Hell）；與 ax1b 的 PE 藝人不重複"
+  },
+  {
+   "artist": "Hair Police",
+   "album": "Mercurial Rites",
+   "year": 2013,
+   "label": "Hair Police",
+   "country": "US",
+   "faction": "us-noise",
+   "genres": [
+    "noise",
+    "experimental"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "Hair Police 為底特律／肯塔基 harsh noise 團，常與 Wolf Eyes 並列新美國噪音場景",
+   "listeners": null,
+   "why": "Hair Police 為底特律／肯塔基 harsh noise 團，常與 Wolf Eyes 並列新美國噪音場景",
+   "moodGuess": {
+    "x": 1,
+    "y": 4,
+    "z": 1,
+    "why": "噪音與嘶吼層疊"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/2a78f07f-fb74-407f-a104-d0a23703ea31",
+    "https://music.apple.com/search?term=Hair+Police+Mercurial+Rites",
+    "https://www.discogs.com/search/?q=Hair+Police+Mercurial+Rites&type=master"
+   ],
+   "mbRgMbid": "2a78f07f-fb74-407f-a104-d0a23703ea31",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "封面 iTunes 搜尋有；Hair Police 代表作恐為 Obedience Cuts，極端程度存疑，建議低優先"
+  },
+  {
+   "artist": "Consumer Electronics",
+   "album": "Leathersex",
+   "year": 1982,
+   "label": "Iphar",
+   "country": "GB",
+   "faction": "pe-uk",
+   "genres": [
+    "noise",
+    "industrial"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "Consumer Electronics（Philip Best）為英國 power electronics 奠基者之一，早期錄音以極端敵意聞名",
+   "listeners": null,
+   "why": "Consumer Electronics（Philip Best）為英國 power electronics 奠基者之一，早期錄音以極端敵意聞名",
+   "moodGuess": {
+    "x": 1,
+    "y": 5,
+    "z": 1,
+    "why": "失真嘶吼與電子噪音"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/498e277b-93ab-448c-b410-8f801ecbdb22",
+    "https://www.discogs.com/search/?q=Consumer+Electronics+Leathersex&type=master"
+   ],
+   "mbRgMbid": "498e277b-93ab-448c-b410-8f801ecbdb22",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "CAA 無封面；亦可選 Teenage Nuremburg 1995；請核"
+  },
+  {
+   "artist": "Sudden Infant",
+   "album": "Radiorgasm",
+   "year": 2006,
+   "label": "Blossoming Noise",
+   "country": "DE",
+   "faction": "eu-hnw",
+   "genres": [
+    "noise",
+    "experimental"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "Sudden Infant（Joke Lanz）以人聲與電子噪音的極端表演著稱，歐洲 harsh noise／人聲噪音代表",
+   "listeners": null,
+   "why": "Sudden Infant（Joke Lanz）以人聲與電子噪音的極端表演著稱，歐洲 harsh noise／人聲噪音代表",
+   "moodGuess": {
+    "x": 1,
+    "y": 5,
+    "z": 1,
+    "why": "人聲嘶吼與電子噪音"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/550ad836-8e3e-471e-bf2e-a4aab5f5a39b",
+    "https://www.discogs.com/search/?q=Sudden+Infant+Radiorgasm&type=master"
+   ],
+   "mbRgMbid": "550ad836-8e3e-471e-bf2e-a4aab5f5a39b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "CAA 無封面；代表盤選擇不確定"
+  },
+  {
+   "artist": "Contagious Orgasm",
+   "album": "Thin Skinned",
+   "year": 1989,
+   "label": "",
+   "country": "JP",
+   "faction": "jp-noise",
+   "genres": [
+    "noise"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "Contagious Orgasm 為大阪噪音團，維基列入日本噪音場景，Thin Skinned 為其早期高強度錄音",
+   "listeners": null,
+   "why": "Contagious Orgasm 為大阪噪音團，維基列入日本噪音場景，Thin Skinned 為其早期高強度錄音",
+   "moodGuess": {
+    "x": 1,
+    "y": 5,
+    "z": 1,
+    "why": "高頻失真噪音"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/765c1784-75c1-4bdf-8c57-631a2e5bfa29",
+    "https://coverartarchive.org/release-group/765c1784-75c1-4bdf-8c57-631a2e5bfa29"
+   ],
+   "mbRgMbid": "765c1784-75c1-4bdf-8c57-631a2e5bfa29",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "代表作憑記憶，拿不準；廠牌 MB 未填"
+  },
+  {
+   "artist": "Pain Jerk",
+   "album": "Exhibition of Electro-Disease",
+   "year": 1995,
+   "label": "",
+   "country": "JP",
+   "faction": "jp-noise",
+   "genres": [
+    "noise"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "Pain Jerk 是 Aktion Bruit 之外的另一張 harsh noise 錄音，Pain Jerk 為日本 90 年代 harsh noise 多產名義",
+   "listeners": null,
+   "why": "Pain Jerk 是 Aktion Bruit 之外的另一張 harsh noise 錄音，Pain Jerk 為日本 90 年代 harsh noise 多產名義",
+   "moodGuess": {
+    "x": 1,
+    "y": 5,
+    "z": 1,
+    "why": "電子失真牆"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/88c47562-1120-4d5c-9f1d-f067e9d1856d",
+    "https://coverartarchive.org/release-group/88c47562-1120-4d5c-9f1d-f067e9d1856d"
+   ],
+   "mbRgMbid": "88c47562-1120-4d5c-9f1d-f067e9d1856d",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "跨級（Pain Jerk 在池為 pearl 流亡）；選盤拿不準；廠牌未填"
+  },
+  {
+   "artist": "MSBR",
+   "album": "Structured Suicide",
+   "year": 1993,
+   "label": "",
+   "country": "JP",
+   "faction": "jp-noise",
+   "genres": [
+    "noise"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "MSBR 為 90 年代最多產的日本 harsh noise 名義之一，此為其早期專輯",
+   "listeners": null,
+   "why": "MSBR 為 90 年代最多產的日本 harsh noise 名義之一，此為其早期專輯",
+   "moodGuess": {
+    "x": 1,
+    "y": 5,
+    "z": 1,
+    "why": "金屬撞擊式 harsh noise"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/af82da45-3698-360b-8d42-f2b3a6ed2271",
+    "https://coverartarchive.org/release-group/af82da45-3698-360b-8d42-f2b3a6ed2271"
+   ],
+   "mbRgMbid": "af82da45-3698-360b-8d42-f2b3a6ed2271",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "跨級（MSBR 在池為 pearl）；選盤拿不準"
+  }
+ ],
+ "notes": [
+  "12 張，池子拿不準的未提：K2、Bastard Noise、Kazumoto Endo、Guilty Connector、Smegma、Fat Worm of Error、Hijokaidan（MB 只有 Jazz Hijokaidan 另一名義）、Keiji Haino 個人名義",
+  "Le Forte Four／LAFMS 已在池（Bikini Tennis Shoes）故未提",
+  "Nihilist Spasm Band、Dead C、Maurizio Bianchi、Ground Zero 已是 heresy，未提",
+  "WebSearch 僅用 2 次，產出有限；多數『極端』判斷來自記憶，各張 uncertain 已標，MSBR／Pain Jerk／Contagious Orgasm／Sissy Spacek 選盤最弱",
+  "evidence 中 Discogs search 連結只是封面待確認的佔位，非 master 頁"
+ ]
+}

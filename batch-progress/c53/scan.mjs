@@ -1,5 +1,5 @@
 // 用法：node scan.mjs "name1" "name2" ... — 對每個名字查 artist，並列出 top1 的 release-group
-const UA = 'dip-vinyl-shop/1.0 (kubinice06@gmail.com)';
+const UA = 'dip-vinyl-shop/1.0 (+https://dipvinyl.tw)';
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 const _f = globalThis.fetch;
 globalThis.fetch = async (u, o) => {

@@ -29,22 +29,43 @@
     "discogsReleaseId": "13813030"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 4,
+    "classic": 3,
+    "obscurity": 5,
     "accessibility": 2,
     "listeners": 1,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：樂團首張、Shalom 小廠；L=1 無串流→5；鄉村民謠搖滾加管樂"
    },
    "rarity": "rare",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。小廠／自發盤、聽眾<300，但壓量未見數百張以下的確據，也非收藏圈公認聖杯；只到 5",
+    "evidenceUrls": [
+     "https://www.last.fm/music/Hope%20of%20Glory/Under%20the%20Spout%20Where%20the%20Glory%20Comes%20Out",
+     "https://musicbrainz.org/release-group/1c1af9d5-febb-41a2-b478-b3a8edfd0ae3",
+     "https://www.discogs.com/release/13813030"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
-    "text": "碟上沒有一個固定團員的名字，只有一整排客席樂手。Hank Alrich 的班鳩與曼陀林、Mary Egan 的小提琴、只掛在 B1 的 Van Wilks 主奏吉他，加上單簧管、長號與一位只留下名字 Kerry 的小號，製作是 Rocky Romano。發行它的 Shalom Records 由 Sherman Andrus 與 Andraé Crouch 創辦；這也不是第一張，同一家廠牌 1973 年已經出過他們的自我同名專輯。十軌全在兩分半到四分之間。",
+    "text": "《Under the Spout Where the Glory Comes Out》是 Hope of Glory 1974 年在美國 Shalom Records 發行的福音唱片，只有原版黑膠，從未再版，流通很少。唱片沒有列出團員，credits 記的是演奏者：Hank Alrich 的班鳩琴與曼陀林、Mary Egan 的小提琴、Van Wilks 的主奏電吉他，加上單簧管、次中音薩克斯風、長號與小號。十首歌每首兩分半到三分多，多是教會詩歌、福音傳統曲與敬拜短歌，像〈He Is Lord〉，以民謠弦樂為底，加上電吉他與管樂。",
     "sourceUrls": [
      "https://www.discogs.com/label/202626-Shalom-Records-3",
      "https://www.discogs.com/release/15164336-Hope-Of-Glory-Under-The-Spout-Where-The-Glory-Comes-Out-",
@@ -63,8 +84,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -93,22 +114,43 @@
     "discogsReleaseId": "2058610"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 4,
-    "accessibility": 2,
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 1,
     "listeners": 19,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Ayala 客壓首作、後由 Myrrh 再發，場景二線；L=19 試聽無→5；原聲民謠"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。客壓LP翌年即由Myrrh正規再發，不符",
+    "evidenceUrls": [
+     "https://www.last.fm/music/Bob%20Ayala/Joy%20by%20Surprise",
+     "https://musicbrainz.org/release-group/3df63c92-4f76-4c41-9316-02f35a13f642",
+     "https://www.discogs.com/release/2058610"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
-    "text": "自費做的對開封套盤，隔年由 Myrrh 重新發行、換了封面。原盤掛 Pure Joy Records PJ 102，1976 年 7 月出，錄於加州杭亭頓灘的 Buddy King Studios，製作、錄音與混音都掛 Buddy King。十軌的詞曲全出自 Ayala 一人，前九首的和聲也固定由他妹妹 Shirley 一人唱；只有收尾的〈New Beginnings〉整個換手，編曲、鋼琴與大鍵琴改由 Peter Jacobs 負責，和聲換成一組合唱團。",
+    "text": "《Joy by Surprise》是美國基督教民謠歌手 Bob Ayala 的第一張專輯，1976 年先在自己的小廠 Pure Joy Records 發行，隔年才由 Myrrh 換封面重發；發行當年他被 CCM 雜誌票選為最佳新人。Ayala 患有視網膜色素變性，1969 年起在基督教咖啡館演唱。專輯由 Buddy King 製作錄音，十首歌全是他自己寫的，以原聲吉他與歌聲為主，伴奏有 Al Perkins 的踏板鋼棒吉他、Don Gerber 的班鳩琴、Peter Jacobs 的鋼琴與大鍵琴，再加上雙簧管、弦樂與銅管五重奏。",
     "sourceUrls": [
      "https://www.discogs.com/release/4106444-Bob-Ayala-Joy-By-Surprise",
      "https://en.wikipedia.org/wiki/Bob_Ayala",
@@ -125,8 +167,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -156,12 +198,21 @@
     "discogsReleaseId": "2126484"
    },
    "ratings": {
-    "classic": 1,
-    "obscurity": 4,
+    "classic": 2,
+    "obscurity": 5,
     "accessibility": 1,
     "listeners": 51,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 1,
+     "obscurity": 4,
+     "accessibility": 1,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "common"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Myrrh 流行搖滾，評價平淡；L=51 試聽無→5；流行搖滾"
    },
    "rarity": "common",
    "apexAssessment": {

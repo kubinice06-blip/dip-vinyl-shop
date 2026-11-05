@@ -72,11 +72,13 @@
 | score | 稀有度 | 顏色 |
 |---|---|---|
 | —（無數值） | 殿堂 Hall | 🩶 銀 |
-| ≥10 | 傳奇 Legendary | 🟠 橘 |
-| 8–9 | 史詩 Epic | 🟣 紫 |
-| 6–7 | 獨特 Uncommon | 🟢 綠 |
-| 4–5 | 稀有 Rare | 🔵 藍 |
-| ≤3 | 普通 Common | ⚪ 灰 |
+| ≥9 | 傳奇 Legendary | 🟠 橘 |
+| 8 | 史詩 Epic | 🟣 紫 |
+| 7 | 獨特 Uncommon | 🟢 綠 |
+| 6 | 稀有 Rare | 🔵 藍 |
+| ≤5 | 普通 Common | ⚪ 灰 |
+
+（2026-11-02 店主定案方案 A 改門檻，原為 10/8/6/4；全池約 傳奇 3%／史詩 7%／獨特 17%／稀有 28%／普通 40%。）
 
 > **三張「頂點卡」（各把一個數值軸衝到 7 星，互斥、抽中率各 ~3%）：**
 > | tier | 名稱 | 衝 7 星的軸 | 判定方式 | 邊框（掃光） | 旗標 |
@@ -92,7 +94,7 @@
 > 另：可在 `RARITY_OVERRIDES`（index.html）手動指定某藝人的稀有度（目前 `dollar brand / abdullah ibrahim → epic`），優先於 score 計算。
 
 > 註：依用戶指定，「獨特綠」順位高於「稀有藍」。
-> 例：classic5＋access5＋冷門5 → 11 → 傳奇；classic5＋access3 → 8 → 史詩；classic3＋access2 → 5 → 稀有。
+> 例：classic5＋access5＋冷門5 → 11 → 傳奇；classic5＋access3 → 8 → 史詩；classic3＋access2 → 5 → 普通；classic4＋access2 → 6 → 稀有。
 > 程式：`rarityFromRatings()`（index.html），門檻為 config 可調。
 
 ### 固定卡池（2026-07-03 新增）

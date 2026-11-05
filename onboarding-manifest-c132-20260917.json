@@ -29,12 +29,21 @@
    "ratings": {
     "classic": 4,
     "obscurity": 4,
-    "accessibility": 2,
+    "accessibility": 1,
     "listeners": 1,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：渡辺貞夫經典抒情標準曲集；L1+ready→4；全是 ballad，柔和"
    },
-   "rarity": "uncommon",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -54,7 +63,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/06/3d/25/063d25cd-8e47-1694-7321-8fac63971221/mzaf_6561367903704219196.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/7c/6c/d1/7c6cd1c2-2da4-482c-1df6-f4f5b5bca359/mzaf_7705410538452652039.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -94,14 +103,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 3,
+    "classic": 4,
     "obscurity": 4,
-    "accessibility": 2,
+    "accessibility": 1,
     "listeners": 25,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：聖保羅錄音的 bossa 名作，收藏家常推；L25+ready→4；短曲 bossa"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -168,7 +186,7 @@
     "source": "manual:depth-rubric",
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -229,13 +247,23 @@
    },
    "ratings": {
     "classic": 4,
-    "obscurity": 4,
+    "obscurity": 3,
     "accessibility": 2,
     "listeners": 34,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：bossa 電氣化的代表作；L34+unavailable→5；柔和電氣爵士",
+     "rarity": "uncommon"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：主線改：Last.fm 掛漢字名（實際聽眾在羅馬拼音名下）屬拆名錯配，不套下限；日本大廠正規盤、多次再發，照錨點冷門 3｜L=34"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -291,14 +319,24 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 3,
-    "obscurity": 4,
-    "accessibility": 2,
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 4,
     "listeners": 19,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 5,
+     "accessibility": 4,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：菊地、Peacock、富樫雙鼓，被稱 Peacock 傑作；L19+unavailable→5；空間感自由即興",
+     "rarity": "legendary"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：主線改：Last.fm 掛漢字名（實際聽眾在羅馬拼音名下）屬拆名錯配，不套下限；日本大廠正規盤、多次再發，照錨點冷門 3｜L=19"
    },
-   "rarity": "rare",
+   "rarity": "epic",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -354,14 +392,24 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 4,
-    "obscurity": 4,
+    "classic": 3,
+    "obscurity": 3,
     "accessibility": 2,
     "listeners": 22,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：日比谷現場雙LP，非洲／巴西色彩轉型期代表；L22+unavailable→5；原創易聽",
+     "rarity": "uncommon"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：主線改：Last.fm 掛漢字名（實際聽眾在羅馬拼音名下）屬拆名錯配，不套下限；日本大廠正規盤、多次再發，照錨點冷門 3｜L=22"
    },
-   "rarity": "uncommon",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -423,7 +471,7 @@
     "source": "manual:depth-rubric",
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -485,10 +533,19 @@
    "ratings": {
     "classic": 4,
     "obscurity": 4,
-    "accessibility": 2,
+    "accessibility": 3,
     "listeners": 9,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：日野轉向電氣 8 beat 的關鍵作；L9+ready→4；二十分鐘同名長曲"
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -613,13 +670,23 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 4,
+    "obscurity": 3,
     "accessibility": 2,
     "listeners": 33,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：轉 CBS/Sony 首作，原創 modal 小品；L33+unavailable→5；主流 post-bop",
+     "rarity": "rare"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：藝人國際上以羅馬字名為主（Last.fm 主頁在 Terumasa Hino），L 屬拆名錯配不套下限；CBS/Sony 大廠正規盤，冷門照錨點 3，非流亡｜L=33"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -675,11 +742,21 @@
    },
    "ratings": {
     "classic": 4,
-    "obscurity": 4,
-    "accessibility": 2,
+    "obscurity": 3,
+    "accessibility": 3,
     "listeners": 6,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 5,
+     "accessibility": 3,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：日野 CBS/Sony 期雙LP，長篇 modal 群奏；L6+unavailable→5；長曲需投入",
+     "rarity": "epic"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：藝人國際上以羅馬字名為主（Last.fm 主頁在 Terumasa Hino），L 屬拆名錯配不套下限；CBS/Sony 大廠正規盤，冷門照錨點 3，非流亡｜L=6"
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -738,12 +815,21 @@
    "ratings": {
     "classic": 4,
     "obscurity": 4,
-    "accessibility": 3,
+    "accessibility": 2,
     "listeners": 2,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 4,
+     "accessibility": 3,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：菊地出道作、長年幻の名盤；L2+ready→4；post-bop 兼標準曲"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -763,7 +849,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/bf/98/4f/bf984f46-a464-5318-984d-d733905420ef/mzaf_4775285636163992440.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/47/38/5a/47385a6d-8a8d-70a8-c9ef-3204cae76b44/mzaf_14056090690507497599.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -805,12 +891,21 @@
    "ratings": {
     "classic": 4,
     "obscurity": 4,
-    "accessibility": 3,
+    "accessibility": 4,
     "listeners": null,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 4,
+     "accessibility": 3,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：雙鼓手十八分半長曲的前衛作；L 缺、2015 再發 ready→4；趨向自由即興"
    },
-   "rarity": "uncommon",
+   "rarity": "epic",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -871,10 +966,19 @@
    "ratings": {
     "classic": 4,
     "obscurity": 4,
-    "accessibility": 2,
+    "accessibility": 3,
     "listeners": 23,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：East Wind 廠牌創立第一號，日野、Booth 參與；L23+ready→4；兩首長篇 modal"
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -936,14 +1040,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 3,
+    "classic": 4,
     "obscurity": 4,
-    "accessibility": 2,
+    "accessibility": 3,
     "listeners": 4,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：東風唯一作，Liebman、Grossman 電氣 jazz-funk 名盤；L4+ready→4；長篇電氣即興"
    },
-   "rarity": "rare",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1003,14 +1116,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 4,
+    "classic": 5,
     "obscurity": 4,
-    "accessibility": 2,
+    "accessibility": 3,
     "listeners": 8,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：出道作，獲 Swing Journal ジャズ・ディスク大賞日本ジャズ賞，日本爵士場景里程碑；L 8＋ready→4；prepared piano、15 分鐘長曲"
    },
-   "rarity": "uncommon",
+   "rarity": "epic",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1030,7 +1152,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview128/v4/1a/9a/d1/1a9ad10e-6f8d-48f8-f146-8f9370832927/mzaf_9039251721561604402.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/af/e1/0f/afe10f89-023f-d945-cb8c-eb703acdc379/mzaf_13841154334077951562.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -1139,12 +1261,21 @@
    "ratings": {
     "classic": 4,
     "obscurity": 4,
-    "accessibility": 3,
+    "accessibility": 4,
     "listeners": null,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 4,
+     "accessibility": 3,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Palladium 同班底的自由化延伸，Think! 再發；L 缺值、有串流→4；集體即興長篇"
    },
-   "rarity": "uncommon",
+   "rarity": "epic",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1206,10 +1337,19 @@
    "ratings": {
     "classic": 4,
     "obscurity": 4,
-    "accessibility": 2,
+    "accessibility": 3,
     "listeners": 8,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：宮沢賢治題材的室內樂爵士，佐藤 DENON 期代表作之一；L 8＋ready→4；低音長笛/大鍵琴音色實驗"
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -1272,11 +1412,20 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 4,
+    "obscurity": 5,
     "accessibility": 3,
     "listeners": 19,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 3,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：紐約錄音融合作，Liebman/Brecker 客席，中期作；L 19＋unavailable→5；密集爵士融合"
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -1333,12 +1482,21 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
+    "classic": 4,
     "obscurity": 4,
-    "accessibility": 4,
+    "accessibility": 3,
     "listeners": 21,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：East Wind 早期名作、菊地雅章參與，深掘日爵士常被推薦；L21+ready→4；三首長篇 modal 即興"
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -1407,7 +1565,7 @@
     "source": "manual:depth-rubric",
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1467,12 +1625,21 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
+    "classic": 3,
     "obscurity": 4,
-    "accessibility": 2,
+    "accessibility": 3,
     "listeners": 914,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Days of Delight 晚期佳作，非生涯代表作；L 914＋ready→4；十分鐘級調式長曲"
    },
    "rarity": "rare",
    "apexAssessment": {
@@ -1534,12 +1701,21 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 3,
+    "classic": 4,
     "obscurity": 4,
-    "accessibility": 4,
+    "accessibility": 3,
     "listeners": 1,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Reggie Workman 參與的 modal 三重奏，深掘日爵士名盤；L1+ready→4；長篇 modal，非自由"
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -1606,7 +1782,7 @@
     "source": "manual:depth-rubric",
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1624,7 +1800,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/4f/1a/69/4f1a6952-4c8b-255b-fb7c-cdb6424aa2bd/mzaf_13076797423459643197.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/6a/94/05/6a940511-0374-e14a-a4a9-f15510957ca1/mzaf_8822522952834832292.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -1671,7 +1847,7 @@
     "source": "manual:depth-rubric",
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1730,14 +1906,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
+    "classic": 3,
     "obscurity": 4,
     "accessibility": 2,
     "listeners": null,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：大編制 soul-jazz 翻唱集，2012 Solid 再發；L 缺、有數位→4；靈魂律動"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1802,7 +1987,7 @@
     "source": "manual:depth-rubric",
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1821,7 +2006,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/ac/11/bb/ac11bb64-53ce-6e62-a88e-cb8530bc2145/mzaf_8714502212905017945.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/e8/43/eb/e843eba6-9d23-f8a8-6b14-e4740b1b7395/mzaf_9716487680116235701.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -1863,12 +2048,21 @@
     "note": "試聽探測釘定的 collectionId 1777008409（jp）：宮沢 昭 — YAMAME"
    },
    "ratings": {
-    "classic": 3,
+    "classic": 4,
     "obscurity": 4,
     "accessibility": 2,
     "listeners": 142,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：首張領銜作，Swing Journal 選定金唱片，和ジャズ名盤；L 142＋ready→4；硬咆勃"
    },
    "rarity": "rare",
    "apexAssessment": {
@@ -1931,12 +2125,21 @@
    "ratings": {
     "classic": 3,
     "obscurity": 4,
-    "accessibility": 4,
+    "accessibility": 3,
     "listeners": 13,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：1969 四重奏，Le Très Jazz Club 再發，Iwana 同年次作；L 13＋ready→4；調式長曲"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2002,7 +2205,7 @@
     "source": "manual:depth-rubric",
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2063,7 +2266,7 @@
     "source": "manual:depth-rubric",
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2117,14 +2320,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 3,
-    "obscurity": 4,
+    "classic": 2,
+    "obscurity": 5,
     "accessibility": 2,
     "listeners": 7,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：1982 標準曲四重奏，合格非首選；L 7＋unavailable→5；主流 bop"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2180,12 +2392,21 @@
    "ratings": {
     "classic": 2,
     "obscurity": 4,
-    "accessibility": 2,
+    "accessibility": 1,
     "listeners": null,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：晚期弦樂抒情標準曲集，合格非首選；L 缺值、有串流→4；弦樂慢歌"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2254,7 +2475,7 @@
     "source": "manual:depth-rubric",
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2314,12 +2535,21 @@
    "ratings": {
     "classic": 3,
     "obscurity": 4,
-    "accessibility": 4,
+    "accessibility": 2,
     "listeners": 13,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：產經會館現場，鼓手秀；L13+ready→4；搖擺標準曲，非前衛（原 4 方向錯）"
    },
-   "rarity": "uncommon",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2337,7 +2567,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/7f/87/40/7f8740a1-e546-752c-ace0-039f64f5044d/mzaf_11467627065906517622.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e7/16/67/e716678c-aabc-226e-9a02-d869d62756a7/mzaf_12169489980131688857.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -2379,12 +2609,21 @@
    "ratings": {
     "classic": 3,
     "obscurity": 4,
-    "accessibility": 2,
+    "accessibility": 1,
     "listeners": 5,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：King 時期 bossa 企劃，Think! 再發；L5+ready→4；拉丁名曲輕快"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2403,7 +2642,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/87/9b/b2/879bb237-0a51-bdf4-382d-2d6ae7b84b96/mzaf_18022805931730556050.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/71/e6/af/71e6af8c-5186-2099-7a60-1de350fc7c49/mzaf_13212725085735966270.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -2452,7 +2691,7 @@
     "source": "manual:depth-rubric",
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2511,14 +2750,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 3,
+    "classic": 4,
     "obscurity": 4,
-    "accessibility": 4,
+    "accessibility": 2,
     "listeners": 37,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：白木代表作，Think!／Trunk 再發；L37+ready→4；hard bop 加和風打擊"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2577,14 +2825,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 3,
+    "classic": 2,
     "obscurity": 4,
     "accessibility": 2,
     "listeners": 2,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：1989 地方現場、2002 出土，合格非首選；L 2＋ready→4；標準曲主流"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,

@@ -20,21 +20,38 @@
    },
    "ratings": {
     "classic": 5,
-    "obscurity": 5,
+    "obscurity": 2,
     "accessibility": 2,
     "listeners": 258,
-    "source": "worker:/album-rating + last.fm listeners",
-    "checkedAt": "2026-08-29T11:30:00Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker:/album-rating + last.fm listeners",
+     "checkedAt": "2026-08-29T11:30:00Z",
+     "rarity": "epic"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：墨西哥流行經典現場盤；listeners 258 疑錯配（墨西哥主流巨星），不套下限，冷門度 5→2；無權威榜首位依據｜L=258"
    },
-   "rarity": "epic",
+   "rarity": "uncommon",
    "apexAssessment": {
-    "eligible": true,
-    "tier": "hall",
-    "reason": "1990年伯雅之殿(Palacio de Bellas Artes)演唱會實況,被多方媒體稱為墨西哥音樂史指標性事件,錄音專輯至今被視為經典且引發文化包容性的討論。",
-    "evidenceUrls": [
-     "https://en.wikipedia.org/wiki/Juan_Gabriel_en_el_Palacio_de_Bellas_Artes",
-     "https://www.infobae.com/mexico/2025/11/07/esto-costo-el-boleto-para-ver-a-juan-gabriel-en-su-emblematico-concierto-de-bellas-artes-en-1990/"
-    ]
+    "eligible": false,
+    "tier": null,
+    "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。墨西哥流行經典現場盤，綜合歷代榜不收，國別級",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": true,
+     "tier": "hall",
+     "reason": "1990年伯雅之殿(Palacio de Bellas Artes)演唱會實況,被多方媒體稱為墨西哥音樂史指標性事件,錄音專輯至今被視為經典且引發文化包容性的討論。",
+     "evidenceUrls": [
+      "https://en.wikipedia.org/wiki/Juan_Gabriel_en_el_Palacio_de_Bellas_Artes",
+      "https://www.infobae.com/mexico/2025/11/07/esto-costo-el-boleto-para-ver-a-juan-gabriel-en-su-emblematico-concierto-de-bellas-artes-en-1990/"
+     ]
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "藝術宮原本只排古典樂、歌劇與芭蕾，1990 年為他破了例。消息公布後，館內部分音樂家與文化界人士聯署抗議，稱這是褻瀆他們的殿堂。他仍在同年 5 月 9 日至 12 日連演四場，由墨西哥國家交響樂團協奏。實況於 12 月 20 日發行成雙碟 19 曲，第二張以長達 25 分鐘的〈Hasta Que Te Conocí (Popurrí)〉開場，1991 年在告示牌 Latin Pop Albums 榜攻上第 4 名。",
@@ -66,8 +83,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": false,
-    "apexPool": true
+    "seedCards": true,
+    "apexPool": false
    }
   },
   {
@@ -94,7 +111,7 @@
     "source": "worker:/album-rating + last.fm listeners",
     "checkedAt": "2026-08-29T11:30:00Z"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -156,7 +173,7 @@
     "source": "worker:/album-rating + last.fm listeners",
     "checkedAt": "2026-08-29T11:30:00Z"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -172,7 +189,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/0a/32/db/0a32db11-ce37-0fe7-9efd-565b73443803/mzaf_9721920817796406773.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f5/a2/bc/f5a2bc1d-5043-a635-43a2-69c283746136/mzaf_3062404642125233456.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-29T11:30:00Z",
@@ -214,13 +231,22 @@
    },
    "ratings": {
     "classic": 4,
-    "obscurity": 5,
-    "accessibility": 2,
+    "obscurity": 2,
+    "accessibility": 1,
     "listeners": 31,
-    "source": "worker:/album-rating + last.fm listeners",
-    "checkedAt": "2026-08-29T11:30:00Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker:/album-rating + last.fm listeners",
+     "checkedAt": "2026-08-29T11:30:00Z",
+     "rarity": "uncommon"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：墨西哥／西語圈主流暢銷盤，Vol.2 拆名致聽眾數錯配；照錨點 2｜L=31"
    },
-   "rarity": "uncommon",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -282,7 +308,7 @@
     "source": "worker:/album-rating + last.fm listeners",
     "checkedAt": "2026-08-29T11:30:00Z"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -299,7 +325,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/a1/39/45/a1394514-9b42-0919-c4d6-c218aac0aa71/mzaf_8068692006710227577.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ed/1d/46/ed1d46cd-720b-6554-b613-91f7de05159d/mzaf_15287451244316000419.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-29T11:30:00Z",
@@ -348,15 +374,23 @@
     "source": "worker:/album-rating + last.fm listeners",
     "checkedAt": "2026-08-29T11:30:00Z"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
-    "eligible": true,
-    "tier": "hall",
-    "reason": "Tejano音樂史上最暢銷專輯、首張登上Billboard Top Latin Albums冠軍的Tejano唱片,美國史上最暢銷拉丁專輯之一,2026年獲選葛萊美名人堂。",
-    "evidenceUrls": [
-     "https://en.wikipedia.org/wiki/Amor_Prohibido",
-     "https://tejanonation.net/2026/02/11/selenas-amor-prohibido-album-inducted-into-2026-grammy-hall-of-fame/"
-    ]
+    "eligible": false,
+    "tier": null,
+    "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。Tejano 核心作、RS500(2020) 收錄，但屬類型／地區名盤，未達幾乎所有歷代榜",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": true,
+     "tier": "hall",
+     "reason": "Tejano音樂史上最暢銷專輯、首張登上Billboard Top Latin Albums冠軍的Tejano唱片,美國史上最暢銷拉丁專輯之一,2026年獲選葛萊美名人堂。",
+     "evidenceUrls": [
+      "https://en.wikipedia.org/wiki/Amor_Prohibido",
+      "https://tejanonation.net/2026/02/11/selenas-amor-prohibido-album-inducted-into-2026-grammy-hall-of-fame/"
+     ]
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "曾祖母在雇主家幫傭時的一段禁忌戀情，成了這張的標題曲。那是階級差距讓這段感情被禁的舊事，經過留在家族書信裡，Selena 提議把它寫成歌，與兄長 A.B. Quintanilla 三世合寫完成。1994 年 6 月 11 日本輯登上 Billboard Top Latin Albums 榜冠軍，同名曲同日拿下 Hot Latin Songs 冠軍並蟬聯九週，是她第一首單飛冠軍單曲。本輯在 Regional Mexican Albums 榜的冠軍週數累積到 97 週。",
@@ -392,8 +426,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": false,
-    "apexPool": true
+    "seedCards": true,
+    "apexPool": false
    }
   },
   {
@@ -420,7 +454,7 @@
     "source": "worker:/album-rating + last.fm listeners",
     "checkedAt": "2026-08-29T11:30:00Z"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -436,7 +470,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e6/1a/e6/e61ae6dc-71a0-c343-5e2a-b674afe5a454/mzaf_6838942877118141285.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/53/b0/fe/53b0fe70-400e-fb89-c424-68b7d9c5b794/mzaf_13189721846978644499.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-29T11:30:00Z",
@@ -485,7 +519,7 @@
     "source": "worker:/album-rating + last.fm listeners",
     "checkedAt": "2026-08-29T11:30:00Z"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -502,7 +536,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/3a/18/63/3a1863ef-7849-d8ce-f7f3-b4dff44497d9/mzaf_15137099757104377555.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/17/5e/53/175e5367-06d2-df43-cd85-f0ea8212523f/mzaf_17888099521690543091.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-29T11:30:00Z",
@@ -546,20 +580,37 @@
    "ratings": {
     "classic": 5,
     "obscurity": 2,
-    "accessibility": 2,
+    "accessibility": 1,
     "listeners": 350069,
-    "source": "worker:/album-rating + last.fm listeners",
-    "checkedAt": "2026-08-29T11:30:00Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 2,
+     "accessibility": 2,
+     "source": "worker:/album-rating + last.fm listeners",
+     "checkedAt": "2026-08-29T11:30:00Z",
+     "rarity": "uncommon"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：拉丁流行搖滾銷量里程碑，但拉美歷代榜未居前段；聽眾 35 萬主流，旋律親切硬蕊度 1｜L=350069"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
-    "eligible": true,
-    "tier": "hall",
-    "reason": "確立Maná為90年代拉丁搖滾代表團體的里程碑作,兼具社會/環保主題與商業成功,長期樂評共識視為其巔峰代表作,2023年Apple Music首度為拉丁藝人推出Rediscovered系列亦選此輯。",
-    "evidenceUrls": [
-     "https://en.wikipedia.org/wiki/%C2%BFD%C3%B3nde_Jugar%C3%A1n_los_Ni%C3%B1os%3F",
-     "https://www.rollingstone.com/music/music-latin-lists/mana-our-life-in-15-songs-919502/donde-jugaran-los-ninos-1992-920175/"
-    ]
+    "eligible": false,
+    "tier": null,
+    "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。拉丁流行搖滾銷量里程碑，未進綜合歷代榜",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": true,
+     "tier": "hall",
+     "reason": "確立Maná為90年代拉丁搖滾代表團體的里程碑作,兼具社會/環保主題與商業成功,長期樂評共識視為其巔峰代表作,2023年Apple Music首度為拉丁藝人推出Rediscovered系列亦選此輯。",
+     "evidenceUrls": [
+      "https://en.wikipedia.org/wiki/%C2%BFD%C3%B3nde_Jugar%C3%A1n_los_Ni%C3%B1os%3F",
+      "https://www.rollingstone.com/music/music-latin-lists/mana-our-life-in-15-songs-919502/donde-jugaran-los-ninos-1992-920175/"
+     ]
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "老人回憶童年那條清澈的河，然後問孩子將來要去哪裡玩。標題曲用這段回憶對比眼前遭污染的環境，是 Maná 最早的環保主題作品。樂團前身 Sombrero Verde 於 1983 年解散，1986 年鼓手 Álex González 加入後由主唱 Fher Olvera 等人重組，改名取自玻里尼西亞語意指正能量的 Maná。1992 年的這張讓他們真正打開國際市場，是史上最暢銷的西語搖滾專輯之一，在美國 Billboard Top Latin Albums 榜拿到第 4 名。",
@@ -573,7 +624,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/35/7b/12/357b1268-14a7-4d02-1373-5d36e4628781/mzaf_12718497430972252411.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/90/ca/ae/90caae3e-906e-e180-87f9-5e6595e91104/mzaf_14056589342577674040.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-29T11:30:00Z",
@@ -594,8 +645,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": false,
-    "apexPool": true
+    "seedCards": true,
+    "apexPool": false
    }
   },
   {
@@ -622,7 +673,7 @@
     "source": "worker:/album-rating + last.fm listeners",
     "checkedAt": "2026-08-29T11:30:00Z"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -639,7 +690,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/fb/b8/16/fbb816e7-05ec-3d4a-8a27-e3672d2c5909/mzaf_14181665043921771422.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/2b/b5/e6/2bb5e6a9-9220-77fe-3e5b-a4f1e9758efa/mzaf_13956117157476340570.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-29T11:30:00Z",
@@ -688,7 +739,7 @@
     "source": "worker:/album-rating + last.fm listeners",
     "checkedAt": "2026-08-29T11:30:00Z"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -705,7 +756,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/67/77/7c/67777c42-d99d-7700-022f-3809fde999bb/mzaf_1005235569969926363.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/26/ea/10/26ea1031-4f4e-42e6-0055-6dcfa9cb7219/mzaf_11316335864768314486.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-29T11:30:00Z",
@@ -748,13 +799,22 @@
    },
    "ratings": {
     "classic": 5,
-    "obscurity": 5,
-    "accessibility": 2,
+    "obscurity": 2,
+    "accessibility": 1,
     "listeners": 0,
-    "source": "worker:/album-rating + last.fm listeners",
-    "checkedAt": "2026-08-29T11:30:00Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker:/album-rating + last.fm listeners",
+     "checkedAt": "2026-08-29T11:30:00Z",
+     "rarity": "epic"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：RS 阿根廷搖滾百大第 13、阿根廷搖滾史最暢銷；聽眾 0 為漏抓，主流→冷門 5→2｜L=0"
    },
-   "rarity": "epic",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -772,7 +832,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/6a/70/56/6a7056d3-9be1-a361-da3e-c8d3892f6b0e/mzaf_14277446257543788124.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/bf/8d/ce/bf8dcefe-3818-9328-6fa3-4975e2388f49/mzaf_7284787473696489715.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-29T11:30:00Z",
@@ -821,7 +881,7 @@
     "source": "worker:/album-rating + last.fm listeners",
     "checkedAt": "2026-08-29T11:30:00Z"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -838,7 +898,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/39/1c/09/391c09a7-9975-009b-0b17-8ffb1fefda82/mzaf_10075498391200225322.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d4/ae/87/d4ae87ca-c382-1ad5-626a-c83e5fbb214f/mzaf_7840710846031844788.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-29T11:30:00Z",
@@ -887,7 +947,7 @@
     "source": "worker:/album-rating + last.fm listeners",
     "checkedAt": "2026-08-29T11:30:00Z"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -905,7 +965,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ac/f0/13/acf013f3-72e3-b500-14a1-023d05b1d4ab/mzaf_4790579607415074253.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/c1/e2/fa/c1e2fa97-5e42-21db-d337-d7f717c145f9/mzaf_13078085132394856333.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-29T11:30:00Z",
@@ -954,7 +1014,7 @@
     "source": "worker:/album-rating + last.fm listeners",
     "checkedAt": "2026-08-29T11:30:00Z"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -971,7 +1031,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/da/79/9c/da799c5e-732a-7ca2-e248-19282c643adf/mzaf_7010198659355701261.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ed/76/75/ed76759f-711e-2f75-eb77-b450a07dc00b/mzaf_14439773228696724453.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-29T11:30:00Z",
@@ -1014,21 +1074,38 @@
    },
    "ratings": {
     "classic": 5,
-    "obscurity": 3,
+    "obscurity": 2,
     "accessibility": 2,
     "listeners": 80627,
-    "source": "worker:/album-rating + last.fm listeners",
-    "checkedAt": "2026-08-29T11:30:00Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "worker:/album-rating + last.fm listeners",
+     "checkedAt": "2026-08-29T11:30:00Z",
+     "rarity": "uncommon"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：西語搖滾代表作，但查無國家權威專輯榜首位級依據；80,627 聽眾，冷門度 3 改 2｜L=80627"
    },
    "rarity": "uncommon",
    "apexAssessment": {
-    "eligible": true,
-    "tier": "hall",
-    "reason": "被多方西語樂評稱為西語搖滾史上最佳專輯之一,由Phil Manzanera製作,是該團創作高峰亦是西班牙搖滾正典代表作,全球銷量750,000張(截至1993年)。",
-    "evidenceUrls": [
-     "https://en.wikipedia.org/wiki/Senderos_de_traici%C3%B3n",
-     "https://www.mondosonoro.com/criticas/discos-musica/heroes-del-silencio-senderos-de-traicion-25-aniversario/"
-    ]
+    "eligible": false,
+    "tier": null,
+    "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。西語搖滾國內經典屬 5，綜合歷代榜不收",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": true,
+     "tier": "hall",
+     "reason": "被多方西語樂評稱為西語搖滾史上最佳專輯之一,由Phil Manzanera製作,是該團創作高峰亦是西班牙搖滾正典代表作,全球銷量750,000張(截至1993年)。",
+     "evidenceUrls": [
+      "https://en.wikipedia.org/wiki/Senderos_de_traici%C3%B3n",
+      "https://www.mondosonoro.com/criticas/discos-musica/heroes-del-silencio-senderos-de-traicion-25-aniversario/"
+     ]
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "單曲在德國正式發行前，電台已經被點播的樂迷灌爆。那首歌是〈Entre dos tierras〉，收在 Héroes del Silencio 1990 年 12 月 4 日發行的這張唱片裡，同年由 Roxy Music 吉他手 Phil Manzanera 在馬德里 Kirios Studios 監製完成。專輯在西班牙登上排行榜冠軍、賣出約 50 萬張並拿下三白金；德國最高排到第 17 名。隨後約 140 場的巡迴，把樂團帶進歐洲與拉丁美洲市場。",
@@ -1041,7 +1118,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/12/dd/be/12ddbe78-eecc-e96f-922a-178a6382b7b2/mzaf_6281696052597172387.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c6/c8/25/c6c82525-eddb-98dc-d363-a8983b7eedac/mzaf_6287803120614849579.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-29T11:30:00Z",
@@ -1062,8 +1139,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": false,
-    "apexPool": true
+    "seedCards": true,
+    "apexPool": false
    }
   },
   {
@@ -1090,7 +1167,7 @@
     "source": "worker:/album-rating + last.fm listeners",
     "checkedAt": "2026-08-29T11:30:00Z"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1152,7 +1229,7 @@
     "source": "worker:/album-rating + last.fm listeners",
     "checkedAt": "2026-08-29T11:30:00Z"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1169,7 +1246,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/fc/0c/3c/fc0c3c41-4ebc-bf2e-c493-73ea726be8a3/mzaf_8584027846799972918.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/82/70/a0/8270a04d-a979-49cf-7a72-bf33882481a1/mzaf_316092880046968071.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-29T11:30:00Z",
@@ -1237,7 +1314,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/d1/19/1c/d1191c88-3036-4774-6c2e-2b4b19ef82e3/mzaf_2352673018199506019.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f4/5f/22/f45f223a-7e93-bb81-8e31-63dece30229a/mzaf_8804881063475594459.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-29T11:30:00Z",
@@ -1286,7 +1363,7 @@
     "source": "worker:/album-rating + last.fm listeners",
     "checkedAt": "2026-08-29T11:30:00Z"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1304,7 +1381,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/e5/2a/a6/e52aa628-8cf9-955d-ce7a-07b5784cd0e0/mzaf_6681075673114643579.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f0/fc/de/f0fcde49-d4a8-b84f-7f31-7a2b9daba515/mzaf_6908820873070865257.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-29T11:30:00Z",
@@ -1353,7 +1430,7 @@
     "source": "worker:/album-rating + last.fm listeners",
     "checkedAt": "2026-08-29T11:30:00Z"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1419,7 +1496,7 @@
     "source": "worker:/album-rating + last.fm listeners",
     "checkedAt": "2026-08-29T11:30:00Z"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1482,7 +1559,7 @@
     "source": "worker:/album-rating + last.fm listeners",
     "checkedAt": "2026-08-29T11:30:00Z"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1543,13 +1620,22 @@
    },
    "ratings": {
     "classic": 4,
-    "obscurity": 5,
-    "accessibility": 2,
+    "obscurity": 2,
+    "accessibility": 1,
     "listeners": 36,
-    "source": "worker:/album-rating + last.fm listeners",
-    "checkedAt": "2026-08-29T11:30:00Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker:/album-rating + last.fm listeners",
+     "checkedAt": "2026-08-29T11:30:00Z",
+     "rarity": "uncommon"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：疑錯配：Vicente Fernández 招牌名曲同名盤，墨西哥主流大廠；冷門度 2｜L=36"
    },
-   "rarity": "uncommon",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1605,14 +1691,23 @@
     "checkedAt": "2026-08-29T11:30:00Z"
    },
    "ratings": {
-    "classic": 3,
+    "classic": 4,
     "obscurity": 1,
     "accessibility": 1,
     "listeners": 681217,
-    "source": "worker:/album-rating + last.fm listeners",
-    "checkedAt": "2026-08-29T11:30:00Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 1,
+     "accessibility": 1,
+     "source": "worker:/album-rating + last.fm listeners",
+     "checkedAt": "2026-08-29T11:30:00Z",
+     "rarity": "common"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：拉丁葛萊美年度專輯、Billboard 200 冠軍；主流拉丁流行｜L=681217"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1629,7 +1724,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/fd/6a/b6/fd6ab6e7-ba3d-997c-7296-588b078a3672/mzaf_10817540144909936658.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/50/23/16/502316bf-8877-b988-8f27-36fb77553d9b/mzaf_6666868348843179073.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-29T11:30:00Z",
@@ -1678,7 +1773,7 @@
     "source": "worker:/album-rating + last.fm listeners",
     "checkedAt": "2026-08-29T11:30:00Z"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1740,7 +1835,7 @@
     "source": "worker:/album-rating + last.fm listeners",
     "checkedAt": "2026-08-29T11:30:00Z"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1758,7 +1853,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e1/50/e6/e150e695-a876-cebb-a73a-1d5ece821229/mzaf_7650992445677607909.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/db/7c/5f/db7c5fd2-f470-dc30-847e-1fd9e6a9104f/mzaf_6458782794011080565.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-29T11:30:00Z",
@@ -1801,13 +1896,22 @@
    },
    "ratings": {
     "classic": 5,
-    "obscurity": 5,
-    "accessibility": 2,
+    "obscurity": 2,
+    "accessibility": 1,
     "listeners": 3,
-    "source": "worker:/album-rating + last.fm listeners",
-    "checkedAt": "2026-08-29T11:30:00Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker:/album-rating + last.fm listeners",
+     "checkedAt": "2026-08-29T11:30:00Z",
+     "rarity": "epic"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：香頌正典首輯；聽眾 3 疑錯配（長標題），Polydor 主流→2｜L=3"
    },
-   "rarity": "epic",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1870,7 +1974,7 @@
     "source": "worker:/album-rating + last.fm listeners",
     "checkedAt": "2026-08-29T11:30:00Z"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1887,7 +1991,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/cc/15/5e/cc155ea7-5190-4cba-e620-b0278cfcb332/mzaf_17642500754043117601.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/bd/e3/a7/bde3a7fe-9ea3-4429-980f-aaa908bd587a/mzaf_13868978991227928411.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-29T11:30:00Z",
@@ -1936,7 +2040,7 @@
     "source": "worker:/album-rating + last.fm listeners",
     "checkedAt": "2026-08-29T11:30:00Z"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1990,14 +2094,23 @@
     "checkedAt": "2026-08-29T11:30:00Z"
    },
    "ratings": {
-    "classic": 5,
-    "obscurity": 5,
-    "accessibility": 2,
+    "classic": 4,
+    "obscurity": 2,
+    "accessibility": 1,
     "listeners": 15,
-    "source": "worker:/album-rating + last.fm listeners",
-    "checkedAt": "2026-08-29T11:30:00Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker:/album-rating + last.fm listeners",
+     "checkedAt": "2026-08-29T11:30:00Z",
+     "rarity": "epic"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：Piaf 名演現場；15聽眾疑錯配（主流巨星），照錨點2；香頌非爵士，易聽1｜L=15"
    },
-   "rarity": "epic",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2014,7 +2127,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/93/84/30/93843073-f452-4f1d-9aa0-c42e6df9b8b8/mzaf_786232600889968543.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/97/c4/0b/97c40b5f-d318-3b91-68f0-115708343112/mzaf_8072239003517680686.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-29T11:30:00Z",
@@ -2118,13 +2231,22 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 5,
+    "obscurity": 3,
     "accessibility": 1,
     "listeners": 6,
-    "source": "worker:/album-rating + last.fm listeners",
-    "checkedAt": "2026-08-29T11:30:00Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 1,
+     "source": "worker:/album-rating + last.fm listeners",
+     "checkedAt": "2026-08-29T11:30:00Z",
+     "rarity": "common"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：Trenet 大廠盤，聽眾6屬標題錯配，照錨點3｜L=6"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2245,7 +2367,7 @@
     "source": "worker:/album-rating + last.fm listeners",
     "checkedAt": "2026-08-29T11:30:00Z"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2306,7 +2428,7 @@
     "source": "worker:/album-rating + last.fm listeners",
     "checkedAt": "2026-08-29T11:30:00Z"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2368,7 +2490,7 @@
     "source": "worker:/album-rating + last.fm listeners",
     "checkedAt": "2026-08-29T11:30:00Z"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2500,7 +2622,7 @@
     "source": "worker:/album-rating + last.fm listeners",
     "checkedAt": "2026-08-29T11:30:00Z"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2516,7 +2638,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d8/f5/8f/d8f58f27-f1ef-f96c-0c72-31a50bb6b05b/mzaf_15102402115163158254.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d2/78/8a/d2788a76-bc09-1d4b-1385-94d6c73e32fc/mzaf_9510350670301662102.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-29T11:30:00Z",
@@ -2559,13 +2681,22 @@
    },
    "ratings": {
     "classic": 4,
-    "obscurity": 3,
-    "accessibility": 2,
+    "obscurity": 2,
+    "accessibility": 1,
     "listeners": 31491,
-    "source": "worker:/album-rating + last.fm listeners",
-    "checkedAt": "2026-08-29T11:30:00Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "worker:/album-rating + last.fm listeners",
+     "checkedAt": "2026-08-29T11:30:00Z",
+     "rarity": "rare"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：法語流行天后代表作，法語圈主流大賣；31k 聽眾｜L=31491"
    },
-   "rarity": "uncommon",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2582,7 +2713,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/77/26/72/772672af-d6c6-1eec-1116-9e3ca3f56b41/mzaf_1179600197606004550.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/be/79/c7/be79c7eb-5ce8-a140-ce8e-741a1303ec3d/mzaf_4539972257521395694.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-29T11:30:00Z",
@@ -2631,7 +2762,7 @@
     "source": "worker:/album-rating + last.fm listeners",
     "checkedAt": "2026-08-29T11:30:00Z"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2647,7 +2778,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/ee/81/0e/ee810e4f-5908-fee0-e325-1e30a95a2513/mzaf_14736207087277876860.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/66/6f/08/666f0852-ab49-986c-5962-e2d27fec4f42/mzaf_9932525603180140292.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-29T11:30:00Z",
@@ -2696,7 +2827,7 @@
     "source": "worker:/album-rating + last.fm listeners",
     "checkedAt": "2026-08-29T11:30:00Z"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2712,7 +2843,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/3f/e0/35/3fe0354e-2f6c-19c6-1914-8ec7765070a9/mzaf_16297888518189155809.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/31/ac/f4/31acf4fa-4444-c8ea-38ac-2431e7e3b425/mzaf_14030217246881116896.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-29T11:30:00Z",
@@ -2761,7 +2892,7 @@
     "source": "worker:/album-rating + last.fm listeners",
     "checkedAt": "2026-08-29T11:30:00Z"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2822,7 +2953,7 @@
     "source": "worker:/album-rating + last.fm listeners",
     "checkedAt": "2026-08-29T11:30:00Z"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2839,7 +2970,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/41/3e/3b/413e3b0e-62c5-2525-891a-e351e0637752/mzaf_17301243388942095907.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/eb/79/b7/eb79b79e-6783-4225-4331-6e0fac2646cc/mzaf_17876168266679953206.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-29T11:30:00Z",
@@ -2881,22 +3012,39 @@
     "checkedAt": "2026-08-29T11:30:00Z"
    },
    "ratings": {
-    "classic": 5,
+    "classic": 4,
     "obscurity": 1,
-    "accessibility": 2,
+    "accessibility": 1,
     "listeners": 825792,
-    "source": "worker:/album-rating + last.fm listeners",
-    "checkedAt": "2026-08-29T11:30:00Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 1,
+     "accessibility": 2,
+     "source": "worker:/album-rating + last.fm listeners",
+     "checkedAt": "2026-08-29T11:30:00Z",
+     "rarity": "uncommon"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：法語流行大熱代表作，但無跨來源史上核心共識；旋律直白硬蕊 1｜L=825792"
    },
-   "rarity": "uncommon",
+   "rarity": "common",
    "apexAssessment": {
-    "eligible": true,
-    "tier": "hall",
-    "reason": "法國 2013 年最暢銷專輯（銷量超越 Daft Punk《Random Access Memories》），法國唱片工會認證 4x 鑽石（200 萬張），樂評公認為 Stromae 突破代表作，常與 Jacques Brel 相提並論。",
-    "evidenceUrls": [
-     "https://en.wikipedia.org/wiki/Racine_carr%C3%A9e",
-     "https://chartmasters.org/an-odyssey-into-france-best-selling-albums-ever-racine-carree-by-stromae-2013/"
-    ]
+    "eligible": false,
+    "tier": null,
+    "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。法語流行大熱，綜合歷代榜不收，7 星不成立",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": true,
+     "tier": "hall",
+     "reason": "法國 2013 年最暢銷專輯（銷量超越 Daft Punk《Random Access Memories》），法國唱片工會認證 4x 鑽石（200 萬張），樂評公認為 Stromae 突破代表作，常與 Jacques Brel 相提並論。",
+     "evidenceUrls": [
+      "https://en.wikipedia.org/wiki/Racine_carr%C3%A9e",
+      "https://chartmasters.org/an-odyssey-into-france-best-selling-albums-ever-racine-carree-by-stromae-2013/"
+     ]
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "隱藏攝影機拍下他在布魯塞爾街頭踉蹌，路人先舉起的是手機。2013 年 5 月 21 日，〈Formidable〉的音樂錄影帶在 Louise 電車站附近開拍，他假扮成喝醉的路人，多數人選擇拿出手機錄影而不是上前攙扶，影片上線一天觀看數就逼近 70 萬次。2014 年的第 29 屆 Victoires de la musique，這張專輯一次拿下最佳男歌手與年度最佳歌曲專輯等三項。法國 SNEP 認證 4×鑽石，2015 年 12 月公布的全球銷量約 250 萬張。",
@@ -2911,7 +3059,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/42/13/9d/42139d85-2dba-f3b5-1d7f-758220b418ca/mzaf_11490670434976318422.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/1f/2e/8b/1f2e8bcf-c8af-e869-cbee-db97a42b3962/mzaf_11147312230706983173.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-29T11:30:00Z",
@@ -2932,8 +3080,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": false,
-    "apexPool": true
+    "seedCards": true,
+    "apexPool": false
    }
   },
   {
@@ -2960,7 +3108,7 @@
     "source": "worker:/album-rating + last.fm listeners",
     "checkedAt": "2026-08-29T11:30:00Z"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2977,7 +3125,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ef/5e/2b/ef5e2b13-ae5e-50c9-a997-b510e34be8d3/mzaf_10587952620295156569.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/59/99/52/5999529c-6e9e-18a1-9121-233451f62f45/mzaf_8125056669315136304.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-29T11:30:00Z",
@@ -3021,12 +3169,21 @@
    "ratings": {
     "classic": 4,
     "obscurity": 2,
-    "accessibility": 2,
+    "accessibility": 1,
     "listeners": 236028,
-    "source": "worker:/album-rating + last.fm listeners",
-    "checkedAt": "2026-08-29T11:30:00Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 2,
+     "accessibility": 2,
+     "source": "worker:/album-rating + last.fm listeners",
+     "checkedAt": "2026-08-29T11:30:00Z",
+     "rarity": "rare"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：法國 2010 年代流行代表作，國際暢銷｜L=236028"
    },
-   "rarity": "uncommon",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -3044,7 +3201,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/2b/58/91/2b5891b0-491b-ab03-0fd0-4c68c1ed4a03/mzaf_8585134362708779144.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/09/f1/61/09f1615f-766e-242e-04af-aaeac46ca2f3/mzaf_889370286064953691.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-29T11:30:00Z",
@@ -3093,7 +3250,7 @@
     "source": "worker:/album-rating + last.fm listeners",
     "checkedAt": "2026-08-29T11:30:00Z"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -3215,21 +3372,38 @@
    },
    "ratings": {
     "classic": 5,
-    "obscurity": 5,
+    "obscurity": 2,
     "accessibility": 2,
     "listeners": 185,
-    "source": "worker:/album-rating + last.fm listeners",
-    "checkedAt": "2026-08-29T11:30:00Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker:/album-rating + last.fm listeners",
+     "checkedAt": "2026-08-29T11:30:00Z",
+     "rarity": "epic"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：含 Ne me quitte pas 的香頌代表作；listeners 185 疑拆名錯配不套下限，冷門度 2；圈外無跨來源專輯正典｜L=185"
    },
-   "rarity": "epic",
+   "rarity": "uncommon",
    "apexAssessment": {
-    "eligible": true,
-    "tier": "hall",
-    "reason": "1999 年法國民調中 31% 受訪者選為 20 世紀最佳歌曲；被視為 Brel「終極經典」，翻唱為多國語言版本（含英語版「If You Go Away」），法語香頌史上最常被引用的作品之一。",
-    "evidenceUrls": [
-     "https://en.wikipedia.org/wiki/Ne_me_quitte_pas",
-     "https://www.franceinfo.fr/culture/musique/chanson-francaise/quand-brel-suppliait-ne-me-quitte-pas-l-histoire-d-une-chanson-incomprise_3367805.html"
-    ]
+    "eligible": false,
+    "tier": null,
+    "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。香頌代表作屬該國經典 5；listeners 185 疑錯配，不適用流亡",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": true,
+     "tier": "hall",
+     "reason": "1999 年法國民調中 31% 受訪者選為 20 世紀最佳歌曲；被視為 Brel「終極經典」，翻唱為多國語言版本（含英語版「If You Go Away」），法語香頌史上最常被引用的作品之一。",
+     "evidenceUrls": [
+      "https://en.wikipedia.org/wiki/Ne_me_quitte_pas",
+      "https://www.franceinfo.fr/culture/musique/chanson-francaise/quand-brel-suppliait-ne-me-quitte-pas-l-histoire-d-une-chanson-incomprise_3367805.html"
+     ]
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "巴黎一家小酒館裡，他和鋼琴師把剛結束的一段感情寫成了第五軌。那家店叫 Au Rêve，鋼琴師是 Gérard Jouannest，兩人合寫的是〈Ne me quitte pas〉，寫成時 Brel 與情人、歌手 Suzanne Gabriello 分手不久。他日後公開否認這首歌寫給任何特定女性，說那是一個混蛋與一個失敗者的故事；Gabriello 的說法相反，指他曾當著朋友的面把歌唱給她聽。收錄這首歌的是 1959 年由 Philips 發行的第四張錄音室專輯。",
@@ -3264,8 +3438,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": false,
-    "apexPool": true
+    "seedCards": true,
+    "apexPool": false
    }
   },
   {
@@ -3309,7 +3483,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/24/af/10/24af104e-b5b7-2f17-f630-aa6ed3cba476/mzaf_15540881777531872203.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/30/e4/ee/30e4eec3-8e8f-dd30-7e44-d9c09e457dae/mzaf_14021017214664353770.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-29T11:30:00Z",
@@ -3351,14 +3525,23 @@
     "checkedAt": "2026-08-29T11:30:00Z"
    },
    "ratings": {
-    "classic": 4,
-    "obscurity": 5,
-    "accessibility": 2,
+    "classic": 3,
+    "obscurity": 2,
+    "accessibility": 1,
     "listeners": 1,
-    "source": "worker:/album-rating + last.fm listeners",
-    "checkedAt": "2026-08-29T11:30:00Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker:/album-rating + last.fm listeners",
+     "checkedAt": "2026-08-29T11:30:00Z",
+     "rarity": "uncommon"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：L1 是盤名「Mina®」拆寫錯配；PDU／EMI 發行的義大利主流盤，有串流，照錨點給 2｜L=1"
    },
-   "rarity": "uncommon",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -3414,21 +3597,38 @@
    },
    "ratings": {
     "classic": 5,
-    "obscurity": 3,
-    "accessibility": 2,
+    "obscurity": 2,
+    "accessibility": 1,
     "listeners": 46128,
-    "source": "worker:/album-rating + last.fm listeners",
-    "checkedAt": "2026-08-29T11:30:00Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "worker:/album-rating + last.fm listeners",
+     "checkedAt": "2026-08-29T11:30:00Z",
+     "rarity": "uncommon"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：1973 義大利年度暢銷、場景里程碑，但樂評正典多推 Anima latina，無跨來源榜首級共識；聽眾 4.6 萬冷門度 2｜L=46128"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
-    "eligible": true,
-    "tier": "hall",
-    "reason": "1972–73 年義大利銷售冠軍專輯（初期即賣出 45 萬張，1973 年義大利年度最暢銷專輯），樂評公認為義大利流行音樂成熟期的分水嶺代表作，将其推下榜首的正是 Pink Floyd《The Dark Side of the Moon》。",
-    "evidenceUrls": [
-     "https://it.wikipedia.org/wiki/Il_mio_canto_libero_(album_Lucio_Battisti)",
-     "https://www.blogdellamusica.eu/il-mio-canto-libero-di-lucio-battisti-storia-disco-1972/"
-    ]
+    "eligible": false,
+    "tier": null,
+    "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。義大利流行里程碑，未進綜合歷代榜，非該類型樂迷不識，5 星",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": true,
+     "tier": "hall",
+     "reason": "1972–73 年義大利銷售冠軍專輯（初期即賣出 45 萬張，1973 年義大利年度最暢銷專輯），樂評公認為義大利流行音樂成熟期的分水嶺代表作，将其推下榜首的正是 Pink Floyd《The Dark Side of the Moon》。",
+     "evidenceUrls": [
+      "https://it.wikipedia.org/wiki/Il_mio_canto_libero_(album_Lucio_Battisti)",
+      "https://www.blogdellamusica.eu/il-mio-canto-libero-di-lucio-battisti-storia-disco-1972/"
+     ]
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "為了保住創作自主權開的廠牌，發出了 1973 年義大利最暢銷的專輯。那家廠牌是 Numero Uno，由 Battisti 與作詞人 Mogol 在 1969 年共同創辦，這張 1972 年 11 月推出的唱片是他最早掛自家廠牌的作品之一。專輯在 Musica e dischi 榜連續 8 週蟬聯冠軍；其中一首後來由 Mick Ronson 翻唱、David Bowie 重寫英語詞，改題〈Music Is Lethal〉。編制豐厚的義式流行搖滾。",
@@ -3441,7 +3641,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9f/15/2e/9f152ec0-3ab0-250a-9027-d8340cffcd9d/mzaf_3999594370905795630.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ee/41/1c/ee411c93-6961-3475-1d7b-aa64275cab0d/mzaf_8297109431875020512.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-29T11:30:00Z",
@@ -3462,8 +3662,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": false,
-    "apexPool": true
+    "seedCards": true,
+    "apexPool": false
    }
   },
   {
@@ -3490,7 +3690,7 @@
     "source": "worker:/album-rating + last.fm listeners",
     "checkedAt": "2026-08-29T11:30:00Z"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -3507,7 +3707,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6a/eb/26/6aeb26cb-9fca-ba38-6372-60fce3531a60/mzaf_7139668791141955998.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/40/90/b7/4090b7d3-4927-7c0b-656b-ca8c767fec09/mzaf_17023464073088090875.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-29T11:30:00Z",
@@ -3549,22 +3749,39 @@
     "checkedAt": "2026-08-29T11:30:00Z"
    },
    "ratings": {
-    "classic": 5,
-    "obscurity": 4,
+    "classic": 4,
+    "obscurity": 3,
     "accessibility": 2,
     "listeners": 17267,
-    "source": "worker:/album-rating + last.fm listeners",
-    "checkedAt": "2026-08-29T11:30:00Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "worker:/album-rating + last.fm listeners",
+     "checkedAt": "2026-08-29T11:30:00Z",
+     "rarity": "uncommon"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：De André 重要概念作但非其首推；listeners 1.7 萬，冷門度 3｜L=17267"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
-    "eligible": true,
-    "tier": "hall",
-    "reason": "樂評公認為 De André 最具野心與大膽的作品之一，將美國《Spoon River Anthology》詩選引介入義大利文化，普遍被評為義大利音樂史上的重要傑作。",
-    "evidenceUrls": [
-     "https://www.sentireascoltare.com/recensioni/fabrizio-de-andre-non-al-denaro-non-allamore-ne-al-cielo/",
-     "https://en.debaser.it/fabrizio-de-andre/non-al-denaro-non-allamore-ne-al-cielo/review"
-    ]
+    "eligible": false,
+    "tier": null,
+    "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。藝人重要作但非首推，該國級",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": true,
+     "tier": "hall",
+     "reason": "樂評公認為 De André 最具野心與大膽的作品之一，將美國《Spoon River Anthology》詩選引介入義大利文化，普遍被評為義大利音樂史上的重要傑作。",
+     "evidenceUrls": [
+      "https://www.sentireascoltare.com/recensioni/fabrizio-de-andre-non-al-denaro-non-allamore-ne-al-cielo/",
+      "https://en.debaser.it/fabrizio-de-andre/non-al-denaro-non-allamore-ne-al-cielo/review"
+     ]
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "向詩人借來的一本詩集，私下譯成義大利文，最後長成一整張概念專輯。譯者是作家 Fernanda Pivano，她向 Cesare Pavese 借得 Edgar Lee Masters 的《Spoon River Anthology》後私下譯出，手稿被 Pavese 發現才促成出版。1971 年由 Produttori Associati 發行的這張唱片就以它為本，De André 與作詞人把墓園裡的人物詩改寫成歌，並拿掉了原詩中每個角色的姓名。",
@@ -3594,8 +3811,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": false,
-    "apexPool": true
+    "seedCards": true,
+    "apexPool": false
    }
   },
   {
@@ -3685,13 +3902,21 @@
    },
    "rarity": "uncommon",
    "apexAssessment": {
-    "eligible": true,
-    "tier": "hall",
-    "reason": "義大利有史以來第一張銷量突破 100 萬張的專輯，1982 年連續（非連續）18 週冠軍；Musica e dischi 調查評為 1980 年代義大利第二佳輕音樂專輯，僅次於 De André《Crêuza de mä》。",
-    "evidenceUrls": [
-     "https://en.wikipedia.org/wiki/La_voce_del_padrone_(album)",
-     "https://www.lidentita.it/la-voce-del-padrone-del-maestro-franco-battiato-compie-43-anni-una-pietra-miliare-della-musica-italiana/"
-    ]
+    "eligible": false,
+    "tier": null,
+    "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。義大利國內榜首級，屬該國第一名盤＝5 星，非跨類型史上正典",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": true,
+     "tier": "hall",
+     "reason": "義大利有史以來第一張銷量突破 100 萬張的專輯，1982 年連續（非連續）18 週冠軍；Musica e dischi 調查評為 1980 年代義大利第二佳輕音樂專輯，僅次於 De André《Crêuza de mä》。",
+     "evidenceUrls": [
+      "https://en.wikipedia.org/wiki/La_voce_del_padrone_(album)",
+      "https://www.lidentita.it/la-voce-del-padrone-del-maestro-franco-battiato-compie-43-anni-una-pietra-miliare-della-musica-italiana/"
+     ]
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "借唱片公司的商標語當標題，結果成了義大利史上第一張百萬銷量專輯。「La voce del padrone」意思是主人的聲音，取自唱片業老商標 His Master's Voice。1981 年 9 月 21 日由 EMI Italiana 發行，Angelo Carrara 製作，隔年在義大利 Hit Parade 拿下週榜與年度榜的雙料冠軍。破百萬張的說法有 1989 年的一篇報導與 1992 年的一本專書為據。",
@@ -3703,7 +3928,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/9f/0c/c0/9f0cc088-ba5c-554d-461d-63ea14f5d720/mzaf_6394041465030378631.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/45/25/03/45250341-9ff7-ab97-5ad9-f1572ff0ff6f/mzaf_14800655136841845536.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-29T11:30:00Z",
@@ -3724,8 +3949,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": false,
-    "apexPool": true
+    "seedCards": true,
+    "apexPool": false
    }
   },
   {
@@ -3746,13 +3971,22 @@
    },
    "ratings": {
     "classic": 4,
-    "obscurity": 5,
+    "obscurity": 2,
     "accessibility": 2,
     "listeners": 184,
-    "source": "worker:/album-rating + last.fm listeners",
-    "checkedAt": "2026-08-29T11:30:00Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker:/album-rating + last.fm listeners",
+     "checkedAt": "2026-08-29T11:30:00Z",
+     "rarity": "uncommon"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：疑錯配：Paolo Conte 有多張同名專輯，1984 這張（Sotto le stelle del jazz）是主流名盤｜L=184"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -3807,14 +4041,23 @@
     "checkedAt": "2026-08-29T11:30:00Z"
    },
    "ratings": {
-    "classic": 4,
-    "obscurity": 5,
+    "classic": 3,
+    "obscurity": 3,
     "accessibility": 1,
     "listeners": 27,
-    "source": "worker:/album-rating + last.fm listeners",
-    "checkedAt": "2026-08-29T11:30:00Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 5,
+     "accessibility": 1,
+     "source": "worker:/album-rating + last.fm listeners",
+     "checkedAt": "2026-08-29T11:30:00Z",
+     "rarity": "rare"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：美版 Decca 合輯含〈Volare〉，聽眾數疑拆名錯配，照錨點 3｜L=27"
    },
-   "rarity": "uncommon",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -3870,13 +4113,22 @@
    },
    "ratings": {
     "classic": 4,
-    "obscurity": 5,
+    "obscurity": 2,
     "accessibility": 1,
     "listeners": 111,
-    "source": "worker:/album-rating + last.fm listeners",
-    "checkedAt": "2026-08-29T11:30:00Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 5,
+     "accessibility": 1,
+     "source": "worker:/album-rating + last.fm listeners",
+     "checkedAt": "2026-08-29T11:30:00Z",
+     "rarity": "rare"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：疑錯配：Celentano 招牌單曲，雙曲名拆分致 111 聽眾；Clan 主流發行｜L=111"
    },
-   "rarity": "uncommon",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -3937,7 +4189,7 @@
     "source": "worker:/album-rating + last.fm listeners",
     "checkedAt": "2026-08-29T11:30:00Z"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -3953,7 +4205,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ef/f6/1c/eff61cd2-1ad0-1a75-1279-1859e2efa57e/mzaf_4648292924482442195.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/61/0b/0a/610b0aa3-5f26-a50d-e6e9-ab7cf4935ada/mzaf_16697932156953106657.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-29T11:30:00Z",
@@ -4004,7 +4256,7 @@
     "source": "worker:/album-rating + last.fm listeners",
     "checkedAt": "2026-08-29T11:30:00Z"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -4021,7 +4273,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/81/bf/6d/81bf6dc2-f313-21a7-1dd3-89142e74414b/mzaf_12205888591421107357.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/42/08/c9/4208c916-b2ed-043b-aabc-5903e0bd06a6/mzaf_16714766855387140627.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-29T11:30:00Z",
@@ -4072,7 +4324,7 @@
     "source": "worker:/album-rating + last.fm listeners",
     "checkedAt": "2026-08-29T11:30:00Z"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -4090,7 +4342,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/88/03/e4/8803e4b3-d9d7-4ac4-1d3b-d6360530ed0a/mzaf_17098090738476987150.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/6e/59/e8/6e59e8f7-eb22-e5c7-626b-1c34f8097f9e/mzaf_11790509111476426304.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-29T11:30:00Z",
@@ -4139,7 +4391,7 @@
     "source": "worker:/album-rating + last.fm listeners",
     "checkedAt": "2026-08-29T11:30:00Z"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -4155,7 +4407,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/8f/b6/68/8fb66815-a7de-edb9-75da-56a7cedd0772/mzaf_13245199472981553431.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/3e/fe/60/3efe6046-46c9-83ba-eaab-655f2d099326/mzaf_18062217798192367674.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-29T11:30:00Z",
@@ -4197,14 +4449,23 @@
     "checkedAt": "2026-08-29T11:30:00Z"
    },
    "ratings": {
-    "classic": 3,
-    "obscurity": 5,
+    "classic": 4,
+    "obscurity": 2,
     "accessibility": 2,
     "listeners": 253,
-    "source": "worker:/album-rating + last.fm listeners",
-    "checkedAt": "2026-08-29T11:30:00Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker:/album-rating + last.fm listeners",
+     "checkedAt": "2026-08-29T11:30:00Z",
+     "rarity": "rare"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：疑錯配：義大利史上暢銷盤之一，試聽 ready；冷門度 2，經典度 3→4｜L=253"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -4221,7 +4482,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/c0/b5/11/c0b511f3-c264-7d13-8713-ae0fe2fc42fd/mzaf_3799766111297140535.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/19/e2/c0/19e2c024-4848-549c-14ea-75ed0b6dddfd/mzaf_15765295888631037130.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-29T11:30:00Z",
@@ -4268,14 +4529,23 @@
     "checkedAt": "2026-08-29T11:30:00Z"
    },
    "ratings": {
-    "classic": 5,
-    "obscurity": 2,
+    "classic": 3,
+    "obscurity": 1,
     "accessibility": 1,
     "listeners": 185984,
-    "source": "worker:/album-rating + last.fm listeners",
-    "checkedAt": "2026-08-29T11:30:00Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 2,
+     "accessibility": 1,
+     "source": "worker:/album-rating + last.fm listeners",
+     "checkedAt": "2026-08-29T11:30:00Z",
+     "rarity": "rare"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：超級暢銷精選，樂評地位平平，經典度 5 過高｜L=185984"
    },
-   "rarity": "uncommon",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -4329,14 +4599,23 @@
     "checkedAt": "2026-08-29T11:30:00Z"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 5,
+    "classic": 3,
+    "obscurity": 2,
     "accessibility": 1,
     "listeners": 1,
-    "source": "worker:/album-rating + last.fm listeners",
-    "checkedAt": "2026-08-29T11:30:00Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 5,
+     "accessibility": 1,
+     "source": "worker:/album-rating + last.fm listeners",
+     "checkedAt": "2026-08-29T11:30:00Z",
+     "rarity": "common"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：L1 為盤名拆寫錯配；Polydor 西班牙主流歌手，照錨點給 2｜L=1"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -4391,13 +4670,22 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 5,
-    "accessibility": 2,
+    "obscurity": 2,
+    "accessibility": 1,
     "listeners": 128,
-    "source": "worker:/album-rating + last.fm listeners",
-    "checkedAt": "2026-08-29T11:30:00Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker:/album-rating + last.fm listeners",
+     "checkedAt": "2026-08-29T11:30:00Z",
+     "rarity": "rare"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：疑錯配：西班牙巨星 Raphael 同名盤多張，聽眾數分散；主流抒情，冷門度照錨點 2｜L=128"
    },
-   "rarity": "uncommon",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -4460,7 +4748,7 @@
     "source": "worker:/album-rating + last.fm listeners",
     "checkedAt": "2026-08-29T11:30:00Z"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -4478,7 +4766,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e2/36/a7/e236a7d8-e0b7-34c5-32c3-3a75d62e1c81/mzaf_4448770821573727579.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/9b/30/71/9b307157-fe14-8481-344f-e0d2ef2eb198/mzaf_1035564477881381760.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-29T11:30:00Z",
@@ -4521,13 +4809,22 @@
    },
    "ratings": {
     "classic": 4,
-    "obscurity": 5,
+    "obscurity": 2,
     "accessibility": 1,
     "listeners": 8,
-    "source": "worker:/album-rating + last.fm listeners",
-    "checkedAt": "2026-08-29T11:30:00Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 5,
+     "accessibility": 1,
+     "source": "worker:/album-rating + last.fm listeners",
+     "checkedAt": "2026-08-29T11:30:00Z",
+     "rarity": "rare"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：L8 為盤名拆寫錯配；CBS 德國暢銷盤（99 Luftballons），照錨點給 2｜L=8"
    },
-   "rarity": "uncommon",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -4545,7 +4842,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/1c/f1/db/1cf1db88-d674-e887-44f8-470bc9f5a9c4/mzaf_6903610803561243195.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/bc/91/9c/bc919cdf-2c33-fb72-9ce8-ada7a73196dd/mzaf_5241711530129278709.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-29T11:30:00Z",
@@ -4594,7 +4891,7 @@
     "source": "worker:/album-rating + last.fm listeners",
     "checkedAt": "2026-08-29T11:30:00Z"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -4610,7 +4907,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/80/2f/1e/802f1eea-69fd-c882-74c9-16126da1b875/mzaf_10923317167290237576.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/fa/47/93/fa479372-3254-6640-1857-f3506b8220d0/mzaf_14892817577763894850.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-29T11:30:00Z",
@@ -4659,7 +4956,7 @@
     "source": "worker:/album-rating + last.fm listeners",
     "checkedAt": "2026-08-29T11:30:00Z"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -4677,7 +4974,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/55/b2/de/55b2de2c-722e-107e-8078-87e7eca4e84c/mzaf_5298571162326181950.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/bd/45/3f/bd453f58-596a-7c0e-9ed0-b7e93b5d0e22/mzaf_17001796060709031213.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-29T11:30:00Z",
@@ -4728,7 +5025,7 @@
     "source": "worker:/album-rating + last.fm listeners",
     "checkedAt": "2026-08-29T11:30:00Z"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -4787,13 +5084,22 @@
    },
    "ratings": {
     "classic": 4,
-    "obscurity": 5,
+    "obscurity": 3,
     "accessibility": 2,
     "listeners": 167,
-    "source": "worker:/album-rating + last.fm listeners",
-    "checkedAt": "2026-08-29T11:30:00Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker:/album-rating + last.fm listeners",
+     "checkedAt": "2026-08-29T11:30:00Z",
+     "rarity": "uncommon"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：名人現場盤、大廠多次再版；聽眾 167 疑盤名錯配，照錨點 3｜L=167"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -4849,24 +5155,42 @@
    },
    "ratings": {
     "classic": 5,
-    "obscurity": 5,
+    "obscurity": 2,
     "accessibility": 1,
     "listeners": 613,
-    "source": "worker:/album-rating + last.fm listeners",
-    "checkedAt": "2026-08-29T11:30:00Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 5,
+     "accessibility": 1,
+     "source": "worker:/album-rating + last.fm listeners",
+     "checkedAt": "2026-08-29T11:30:00Z",
+     "rarity": "uncommon"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：首張完整百老匯原卡司唱片，入國家錄音登錄；613 聽眾是拆名錯配，主流盤冷門 2｜L=613"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": true,
     "tier": "hall",
-    "reason": "史上第一張完整原班卡司＋原編制樂團錄製的音樂劇專輯，開創「原卡司錄音」品類；2003 年入選美國國家錄音登記簿（National Recording Registry）。",
+    "reason": "店主 2026-11-03 定案殿堂擴充（hall-expansion-20261103）：升為殿堂。",
     "evidenceUrls": [
-     "https://www.loc.gov/static/programs/national-recording-preservation-board/documents/OKLAHOMA!.pdf",
-     "https://en.wikipedia.org/wiki/Oklahoma!_(original_Broadway_cast_recording)"
-    ]
+     "https://www.last.fm/music/Rodgers%20%26%20Hammerstein/Oklahoma!",
+     "https://musicbrainz.org/release-group/d6603675-74b0-4a50-9fa8-3cb9e77c476f"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。國家錄音登錄，但非綜合歷代專輯榜正典；聽眾 613 屬拆名錯配",
+     "evidenceUrls": [],
+     "source": "manual:audit-20261102"
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:hall-expansion-20261103"
    },
    "description": {
-    "text": "六張 78 轉唱片裝成一套，1943 年的 Decca 把整齣戲搬進了唱片行。這套錄音發行於 1943 年 12 月 1 日，由原班卡司與原劇院管弦樂團演出，Robert Russell Bennett 編曲、Jay Blackton 指揮。在此之前，把一齣舞台劇的主要歌曲交給原班人馬灌成整套，在美國只有零星嘗試，這套是把構想做成完整商品的先例；其後二十年間，卡司與電影原聲帶專輯一度主導唱片銷售榜。78 轉套裝賣出逾百萬份，發行以來從未絕版。",
+    "text": "《Oklahoma!》是 Rodgers & Hammerstein 1943 年百老匯音樂劇《奧克拉荷馬！》的原班卡司錄音，被視為讓原卡司專輯真正流行起來的唱片；78 轉套裝賣出逾一百萬套，其後約二十年間，卡司與電影原聲專輯主導了唱片銷售。當時美國音樂家工會罷錄，Decca 9 月與工會和解，約三週後就把原班人馬送進錄音室。此前百老匯歌曲多由流行歌手配小樂隊錄，這套由原班卡司、合唱團與原劇院管弦樂團演出，Jay Blackton 指揮，以獨唱、二重唱與合唱唱出全劇主要歌曲，前後以樂團序曲與終曲包起。",
     "sourceUrls": [
      "https://en.wikipedia.org/wiki/Oklahoma!_(original_Broadway_cast_recording)",
      "https://www.loc.gov/static/programs/national-recording-preservation-board/documents/OKLAHOMA!.pdf",
@@ -4914,21 +5238,38 @@
    },
    "ratings": {
     "classic": 5,
-    "obscurity": 4,
+    "obscurity": 3,
     "accessibility": 1,
     "listeners": 3214,
-    "source": "worker:/album-rating + last.fm listeners",
-    "checkedAt": "2026-08-29T11:30:00Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 4,
+     "accessibility": 1,
+     "source": "worker:/album-rating + last.fm listeners",
+     "checkedAt": "2026-08-29T11:30:00Z",
+     "rarity": "rare"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：百老匯暢銷原卡司盤，地位高但影響與正典性不及 Oklahoma!；殿堂從嚴不成立；聽眾 3214 下限 3｜L=3214"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
-    "eligible": true,
-    "tier": "hall",
-    "reason": "美國國家錄音登記簿收錄：條目為 South Pacific 原版百老匯卡司錄音（Mary Martin、Ezio Pinza 與原版卡司），本卡即該錄音。",
-    "evidenceUrls": [
-     "https://en.wikipedia.org/wiki/National_Recording_Registry",
-     "https://en.wikipedia.org/wiki/South_Pacific_(musical)"
-    ]
+    "eligible": false,
+    "tier": null,
+    "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。百老匯暢銷盤，殿堂不成立",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": true,
+     "tier": "hall",
+     "reason": "美國國家錄音登記簿收錄：條目為 South Pacific 原版百老匯卡司錄音（Mary Martin、Ezio Pinza 與原版卡司），本卡即該錄音。",
+     "evidenceUrls": [
+      "https://en.wikipedia.org/wiki/National_Recording_Registry",
+      "https://en.wikipedia.org/wiki/South_Pacific_(musical)"
+     ]
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "普立茲戲劇獎的得主欄位，1950 年第一次寫上了作曲家的名字。委員會那年把 Richard Rodgers 與兩位編劇並列為共同得主。這張原版百老匯卡司錄音早一年就完成，1949 年 4 月錄於紐約 Columbia 第 30 街錄音室。劇中〈You've Got to Be Carefully Taught〉直言種族偏見是後天教出來的，在美國南方引發強烈爭議，面對刪歌壓力，兩位創作者始終不肯讓步。專輯在 Billboard 暢銷專輯榜合計盤踞冠軍 69 週。",
@@ -4961,8 +5302,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": false,
-    "apexPool": true
+    "seedCards": true,
+    "apexPool": false
    }
   },
   {
@@ -4982,14 +5323,23 @@
     "checkedAt": "2026-08-29T11:30:00Z"
    },
    "ratings": {
-    "classic": 5,
-    "obscurity": 5,
+    "classic": 4,
+    "obscurity": 3,
     "accessibility": 1,
     "listeners": 151,
-    "source": "worker:/album-rating + last.fm listeners",
-    "checkedAt": "2026-08-29T11:30:00Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 5,
+     "accessibility": 1,
+     "source": "worker:/album-rating + last.fm listeners",
+     "checkedAt": "2026-08-29T11:30:00Z",
+     "rarity": "uncommon"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：原版百老匯卡司錄音；聽眾151疑錯配（拆名）｜L=151"
    },
-   "rarity": "uncommon",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -5046,22 +5396,39 @@
     "checkedAt": "2026-08-29T11:30:00Z"
    },
    "ratings": {
-    "classic": 5,
-    "obscurity": 5,
+    "classic": 4,
+    "obscurity": 2,
     "accessibility": 1,
     "listeners": 333,
-    "source": "worker:/album-rating + last.fm listeners",
-    "checkedAt": "2026-08-29T11:30:00Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 5,
+     "accessibility": 1,
+     "source": "worker:/album-rating + last.fm listeners",
+     "checkedAt": "2026-08-29T11:30:00Z",
+     "rarity": "uncommon"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：劇目為百老匯經典，但卡司錄音無跨來源專輯正典共識；listeners 333 疑錯配（卡司盤掛名），不套下限｜L=333"
    },
-   "rarity": "uncommon",
+   "rarity": "common",
    "apexAssessment": {
-    "eligible": true,
-    "tier": "hall",
-    "reason": "2004 年入選美國國家錄音登記簿，音樂劇喜劇代表作之公認地位。",
-    "evidenceUrls": [
-     "https://www.loc.gov/static/programs/national-recording-preservation-board/documents/GuysAndDolls.pdf",
-     "https://en.wikipedia.org/wiki/Guys_and_Dolls_(original_Broadway_cast_recording)"
-    ]
+    "eligible": false,
+    "tier": null,
+    "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。百老匯卡司盤，無綜合歷代專輯榜共識",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": true,
+     "tier": "hall",
+     "reason": "2004 年入選美國國家錄音登記簿，音樂劇喜劇代表作之公認地位。",
+     "evidenceUrls": [
+      "https://www.loc.gov/static/programs/national-recording-preservation-board/documents/GuysAndDolls.pdf",
+      "https://en.wikipedia.org/wiki/Guys_and_Dolls_(original_Broadway_cast_recording)"
+     ]
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "詞和曲都出自同一個人的手，這張卡司專輯後來登上了 Billboard 榜首。Frank Loesser 此前在百老匯與好萊塢多半只掛作詞，《Guys and Dolls》才確立他詞曲一手包辦的身分。舞台版 1950 年 11 月 24 日首演，連演 1,200 場，隔年東尼獎拿下含最佳音樂劇在內的五項；Decca 的原版百老匯卡司錄音則要到 1951 年 1 月 8 日才上市，同年 3 月 17 日當週登上 33⅓ 轉最暢銷唱片榜冠軍。",
@@ -5091,8 +5458,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": false,
-    "apexPool": true
+    "seedCards": true,
+    "apexPool": false
    }
   },
   {
@@ -5112,22 +5479,39 @@
     "checkedAt": "2026-08-29T11:30:00Z"
    },
    "ratings": {
-    "classic": 5,
-    "obscurity": 5,
+    "classic": 4,
+    "obscurity": 2,
     "accessibility": 2,
     "listeners": 96,
-    "source": "worker:/album-rating + last.fm listeners",
-    "checkedAt": "2026-08-29T11:30:00Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker:/album-rating + last.fm listeners",
+     "checkedAt": "2026-08-29T11:30:00Z",
+     "rarity": "epic"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：百老匯卡司錄音；listeners 96 疑錯配（卡司盤掛名），不套下限，冷門度 5→2；無專輯正典共識｜L=96"
    },
-   "rarity": "epic",
+   "rarity": "rare",
    "apexAssessment": {
-    "eligible": true,
-    "tier": "hall",
-    "reason": "1959 年 Grammy Best Original Cast Recording 得主，2009 年入選美國國家錄音登記簿，Ethel Merman 代表演出。",
-    "evidenceUrls": [
-     "https://www.loc.gov/static/programs/national-recording-preservation-board/documents/Gypsy_Flinn.pdf",
-     "https://en.wikipedia.org/wiki/Gypsy_(original_Broadway_cast_recording)"
-    ]
+    "eligible": false,
+    "tier": null,
+    "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。百老匯卡司錄音，綜合歷代榜不收",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": true,
+     "tier": "hall",
+     "reason": "1959 年 Grammy Best Original Cast Recording 得主，2009 年入選美國國家錄音登記簿，Ethel Merman 代表演出。",
+     "evidenceUrls": [
+      "https://www.loc.gov/static/programs/national-recording-preservation-board/documents/Gypsy_Flinn.pdf",
+      "https://en.wikipedia.org/wiki/Gypsy_(original_Broadway_cast_recording)"
+     ]
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "Ethel Merman 全靠一副天生嗓子，在擴音時代之前壓過整團管弦樂。那副未經正式訓練的聲音能穿透整座劇院，Cole Porter 曾形容它像一輛駛過的銅管樂隊。1959 年 5 月 21 日她在百老匯首演 Rose 一角，三天後灌下這張原版卡司錄音，是她生涯第一次用上剛問世的立體聲技術；作曲是 Jule Styne，作詞是尚未以作曲家立足百老匯的 Stephen Sondheim。有文化評論者把 Rose 比作音樂劇版的李爾王，是頂尖女演員都想登頂的聖母峰。",
@@ -5160,8 +5544,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": false,
-    "apexPool": true
+    "seedCards": true,
+    "apexPool": false
    }
   },
   {
@@ -5182,21 +5566,38 @@
    },
    "ratings": {
     "classic": 5,
-    "obscurity": 5,
+    "obscurity": 2,
     "accessibility": 1,
     "listeners": 90,
-    "source": "worker:/album-rating + last.fm listeners",
-    "checkedAt": "2026-08-29T11:30:00Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 5,
+     "accessibility": 1,
+     "source": "worker:/album-rating + last.fm listeners",
+     "checkedAt": "2026-08-29T11:30:00Z",
+     "rarity": "uncommon"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：劇目為百老匯經典，但卡司錄音無跨來源專輯正典；listeners 90 疑掛名錯配，不套下限｜L=90"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
-    "eligible": true,
-    "tier": "hall",
-    "reason": "2020 年入選美國國家錄音登記簿，Zero Mostel 主演的經典原卡司錄音。",
-    "evidenceUrls": [
-     "https://www.loc.gov/static/programs/national-recording-preservation-board/documents/FiddlerOnTheRoof_Solomon.pdf",
-     "https://en.wikipedia.org/wiki/Fiddler_on_the_Roof_(original_Broadway_cast_recording)"
-    ]
+    "eligible": false,
+    "tier": null,
+    "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。劇目經典但卡司錄音無綜合專輯榜收錄；listeners 疑錯配",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": true,
+     "tier": "hall",
+     "reason": "2020 年入選美國國家錄音登記簿，Zero Mostel 主演的經典原卡司錄音。",
+     "evidenceUrls": [
+      "https://www.loc.gov/static/programs/national-recording-preservation-board/documents/FiddlerOnTheRoof_Solomon.pdf",
+      "https://en.wikipedia.org/wiki/Fiddler_on_the_Roof_(original_Broadway_cast_recording)"
+     ]
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "連演 3242 場，音樂劇史上第一次有製作跨過三千場這道門檻。寫下這個數字的是 1964 年 9 月 22 日在百老匯帝國劇院首演的原版製作，Zero Mostel 飾乳品商 Tevye，RCA Victor 同年發行原版卡司錄音。全劇改編自 Sholem Aleichem 的意第緒語故事，背景設在俄羅斯帝國的猶太人隔離區，結局是沙皇一紙驅逐令逼散全村。百老匯最長壽紀錄由它保持到 1979 年才被《Grease》接手，專輯則在 2020 年入選國家錄音登記簿。",
@@ -5231,8 +5632,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": false,
-    "apexPool": true
+    "seedCards": true,
+    "apexPool": false
    }
   },
   {
@@ -5253,13 +5654,22 @@
    },
    "ratings": {
     "classic": 5,
-    "obscurity": 5,
+    "obscurity": 2,
     "accessibility": 2,
     "listeners": 89,
-    "source": "worker:/album-rating + last.fm listeners",
-    "checkedAt": "2026-08-29T11:30:00Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker:/album-rating + last.fm listeners",
+     "checkedAt": "2026-08-29T11:30:00Z",
+     "rarity": "epic"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：聽眾 89 屬原卡司盤疑錯配，Columbia 主流發行照錨點 2｜L=89"
    },
-   "rarity": "epic",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -5314,22 +5724,39 @@
     "checkedAt": "2026-08-29T11:30:00Z"
    },
    "ratings": {
-    "classic": 5,
-    "obscurity": 5,
-    "accessibility": 2,
+    "classic": 4,
+    "obscurity": 2,
+    "accessibility": 1,
     "listeners": 83,
-    "source": "worker:/album-rating + last.fm listeners",
-    "checkedAt": "2026-08-29T11:30:00Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker:/album-rating + last.fm listeners",
+     "checkedAt": "2026-08-29T11:30:00Z",
+     "rarity": "epic"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：百老匯卡司盤暢銷經典，但無跨來源專輯正典共識；listeners 83 為掛名錯配，不套下限｜L=83"
    },
-   "rarity": "epic",
+   "rarity": "common",
    "apexAssessment": {
-    "eligible": true,
-    "tier": "hall",
-    "reason": "反文化搖滾音樂劇開創之作，2018 年入選美國國家錄音登記簿。",
-    "evidenceUrls": [
-     "https://www.loc.gov/static/programs/national-recording-preservation-board/documents/Hair_OriginalBroadwayCast.pdf",
-     "https://en.wikipedia.org/wiki/Hair_(Original_Broadway_Cast_Recording)"
-    ]
+    "eligible": false,
+    "tier": null,
+    "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。卡司盤，無專輯正典共識",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": true,
+     "tier": "hall",
+     "reason": "反文化搖滾音樂劇開創之作，2018 年入選美國國家錄音登記簿。",
+     "evidenceUrls": [
+      "https://www.loc.gov/static/programs/national-recording-preservation-board/documents/Hair_OriginalBroadwayCast.pdf",
+      "https://en.wikipedia.org/wiki/Hair_(Original_Broadway_Cast_Recording)"
+     ]
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "昏暗燈光下，全體演員全裸站上舞台——這場戲的官司後來打進了最高法院。那是第一幕終場，也是百老匯史上首次出現的全裸場面。田納西州查塔努加市政府拒發場地許可一案一路上訴，1975 年最高法院判定該市的審核制度構成對言論的事前限制，違反第一修正案。這齣戲 1967 年先在外百老匯開演，1968 年 4 月 29 日轉進百老匯，RCA Victor 同年發行這張百老匯版原版卡司錄音，它在 1969 年蟬聯 Billboard 200 冠軍 13 週。",
@@ -5362,8 +5789,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": false,
-    "apexPool": true
+    "seedCards": true,
+    "apexPool": false
    }
   },
   {
@@ -5383,14 +5810,23 @@
     "checkedAt": "2026-08-29T11:30:00Z"
    },
    "ratings": {
-    "classic": 5,
-    "obscurity": 5,
-    "accessibility": 2,
+    "classic": 4,
+    "obscurity": 2,
+    "accessibility": 1,
     "listeners": 23,
-    "source": "worker:/album-rating + last.fm listeners",
-    "checkedAt": "2026-08-29T11:30:00Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker:/album-rating + last.fm listeners",
+     "checkedAt": "2026-08-29T11:30:00Z",
+     "rarity": "epic"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：百老匯原卡司錄音，聽眾23疑錯配不套下限；冷門 5→2，經典 5→4｜L=23"
    },
-   "rarity": "epic",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -5409,7 +5845,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/7c/62/90/7c629049-eadf-c01f-514d-da90754a74e4/mzaf_10532308196768642455.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ee/ae/5e/eeae5e2c-a3f3-48a6-5b1f-08ae57f37eb4/mzaf_6232079831075997780.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-29T11:30:00Z",
@@ -5452,21 +5888,38 @@
    },
    "ratings": {
     "classic": 5,
-    "obscurity": 5,
+    "obscurity": 2,
     "accessibility": 1,
     "listeners": 229,
-    "source": "worker:/album-rating + last.fm listeners",
-    "checkedAt": "2026-08-29T11:30:00Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 5,
+     "accessibility": 1,
+     "source": "worker:/album-rating + last.fm listeners",
+     "checkedAt": "2026-08-29T11:30:00Z",
+     "rarity": "uncommon"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：原版卡司錄音是音樂劇史核心作、當年暢銷冠軍；listeners 229 疑盤名錯配，冷門不套下限給 2｜L=229"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
-    "eligible": true,
-    "tier": "hall",
-    "reason": "Grammy Hall of Fame（1977）與美國國家錄音登記簿（2007）雙重殊榮，Billboard 200 累積 480 週上榜的史上最暢銷原卡司錄音之一。",
-    "evidenceUrls": [
-     "https://www.loc.gov/item/2014621183/",
-     "https://en.wikipedia.org/wiki/My_Fair_Lady_(Broadway_cast_recording)"
-    ]
+    "eligible": false,
+    "tier": null,
+    "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。原卡司錄音暢銷正典，但屬音樂劇類型，綜合樂評歷代榜不收",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": true,
+     "tier": "hall",
+     "reason": "Grammy Hall of Fame（1977）與美國國家錄音登記簿（2007）雙重殊榮，Billboard 200 累積 480 週上榜的史上最暢銷原卡司錄音之一。",
+     "evidenceUrls": [
+      "https://www.loc.gov/item/2014621183/",
+      "https://en.wikipedia.org/wiki/My_Fair_Lady_(Broadway_cast_recording)"
+     ]
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "美國第一張賣破一百萬張的密紋唱片，來自 1956 年的百老匯舞台。3 月 15 日首演，十天後卡司在 Columbia 第 30 街錄音室用一整天錄完，4 月 2 日發行。這張錄音在 Billboard 榜上蟬聯冠軍 15 週。飾演 Higgins 的 Rex Harrison 音域被作曲 Frederick Loewe 形容只有一個半音，劇組因此替他設計出以旋律的節奏與音高說出歌詞、不真正唱出音符的處理，這種半說半唱成了這個角色的表演標誌。1977 年它進入葛萊美名人堂。",
@@ -5479,7 +5932,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/17/df/e8/17dfe848-14c8-b7c1-bd29-901623ca1e78/mzaf_8189687039069859161.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ed/7c/1f/ed7c1f0e-a308-dd22-d13a-11cca5ec3974/mzaf_3824001342214786386.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-29T11:30:00Z",
@@ -5500,8 +5953,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": false,
-    "apexPool": true
+    "seedCards": true,
+    "apexPool": false
    }
   },
   {
@@ -5522,13 +5975,22 @@
    },
    "ratings": {
     "classic": 5,
-    "obscurity": 5,
+    "obscurity": 2,
     "accessibility": 2,
     "listeners": 1987,
-    "source": "worker:/album-rating + last.fm listeners",
-    "checkedAt": "2026-08-29T11:30:00Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker:/album-rating + last.fm listeners",
+     "checkedAt": "2026-08-29T11:30:00Z",
+     "rarity": "epic"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：倫敦原卡司錄音極知名；listeners 1987 疑錯配（盤名寫法），不套下限。音樂劇錄音缺正典榜依據｜L=1987"
    },
-   "rarity": "epic",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -5584,13 +6046,22 @@
    },
    "ratings": {
     "classic": 5,
-    "obscurity": 2,
+    "obscurity": 1,
     "accessibility": 1,
     "listeners": 182018,
-    "source": "worker:/album-rating + last.fm listeners",
-    "checkedAt": "2026-08-29T11:30:00Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 2,
+     "accessibility": 1,
+     "source": "worker:/album-rating + last.fm listeners",
+     "checkedAt": "2026-08-29T11:30:00Z",
+     "rarity": "rare"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：音樂劇史必提，但缺樂評正典共識；入門名單常客，冷門 2→1｜L=182018"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -5607,7 +6078,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/2b/75/38/2b753831-8135-42b9-b014-388cefb12654/mzaf_1230822638574000386.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d0/60/dd/d060dd76-ee5f-079f-e831-338027d45a79/mzaf_14748774032643105874.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-29T11:30:00Z",
@@ -5649,14 +6120,23 @@
     "checkedAt": "2026-08-29T11:30:00Z"
    },
    "ratings": {
-    "classic": 5,
-    "obscurity": 3,
+    "classic": 4,
+    "obscurity": 2,
     "accessibility": 2,
     "listeners": 42150,
-    "source": "worker:/album-rating + last.fm listeners",
-    "checkedAt": "2026-08-29T11:30:00Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "worker:/album-rating + last.fm listeners",
+     "checkedAt": "2026-08-29T11:30:00Z",
+     "rarity": "uncommon"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：音樂劇概念專輯名作，非跨來源殿堂；冷門 3→2｜L=42150"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -5718,7 +6198,7 @@
     "source": "worker:/album-rating + last.fm listeners",
     "checkedAt": "2026-08-29T11:30:00Z"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -5775,21 +6255,38 @@
    },
    "ratings": {
     "classic": 5,
-    "obscurity": 5,
-    "accessibility": 1,
+    "obscurity": 1,
+    "accessibility": 2,
     "listeners": 473,
-    "source": "worker:/album-rating + last.fm listeners",
-    "checkedAt": "2026-08-29T11:30:00Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 5,
+     "accessibility": 1,
+     "source": "worker:/album-rating + last.fm listeners",
+     "checkedAt": "2026-08-29T11:30:00Z",
+     "rarity": "uncommon"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：2010 年代音樂劇正典，Grammy、全球現象；listeners 473 疑錯配，冷門給 1｜L=473"
    },
    "rarity": "uncommon",
    "apexAssessment": {
-    "eligible": true,
-    "tier": "hall",
-    "reason": "史上最暢銷原卡司錄音（RIAA 鑽石唱片），2016 年 Grammy 最佳音樂劇專輯，2025 年入選美國國家錄音登記簿。",
-    "evidenceUrls": [
-     "https://www.grammy.com/news/library-of-congress-2025-national-recording-registry-additions-elton-john-mary-j-blige-hamilton-amy-winehouse/",
-     "https://playbill.com/article/hamilton-broadway-cast-album-inducted-into-national-recording-registry"
-    ]
+    "eligible": false,
+    "tier": null,
+    "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。全球現象但屬音樂劇原聲，綜合樂評歷代榜收錄零散；listeners 473 疑錯配",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": true,
+     "tier": "hall",
+     "reason": "史上最暢銷原卡司錄音（RIAA 鑽石唱片），2016 年 Grammy 最佳音樂劇專輯，2025 年入選美國國家錄音登記簿。",
+     "evidenceUrls": [
+      "https://www.grammy.com/news/library-of-congress-2025-national-recording-registry-additions-elton-john-mary-j-blige-hamilton-amy-winehouse/",
+      "https://playbill.com/article/hamilton-broadway-cast-album-inducted-into-national-recording-registry"
+     ]
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "開國元勳的故事用饒舌唱完，2016 年一年之內收下普立茲、葛萊美與 11 座東尼獎。Lin-Manuel Miranda 一人身兼編劇、作曲與作詞，並在原班卡司裡親自主演 Alexander Hamilton。全劇大量取材自嘻哈，再摻入 R&B、流行、靈魂樂與傳統百老匯唱段，用這套語彙把建國史講完。那年的第 58 屆葛萊美把最佳音樂劇專輯頒給這份錄音，第 70 屆東尼獎則以 16 項提名創下紀錄。2025 年，這份原班卡司錄音獲美國國會圖書館選入《國家錄音登記簿》。",
@@ -5821,8 +6318,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": false,
-    "apexPool": true
+    "seedCards": true,
+    "apexPool": false
    }
   },
   {
@@ -5843,13 +6340,22 @@
    },
    "ratings": {
     "classic": 5,
-    "obscurity": 4,
+    "obscurity": 2,
     "accessibility": 1,
     "listeners": 5659,
-    "source": "worker:/album-rating + last.fm listeners",
-    "checkedAt": "2026-08-29T11:30:00Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 4,
+     "accessibility": 1,
+     "source": "worker:/album-rating + last.fm listeners",
+     "checkedAt": "2026-08-29T11:30:00Z",
+     "rarity": "rare"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：百老匯經典原卡司盤；聽眾 5659 不套下限，主流流通 4→2；未達跨領域殿堂｜L=5659"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -5911,7 +6417,7 @@
     "source": "worker:/album-rating + last.fm listeners",
     "checkedAt": "2026-08-29T11:30:00Z"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -5929,7 +6435,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/de/65/36/de6536e9-afaa-424a-79bf-3de1ca0da39d/mzaf_12140307195781749809.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b9/6b/7f/b96b7f25-efc4-fe39-bb32-d5b3488b796d/mzaf_3710893702971126969.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-29T11:30:00Z",
@@ -5972,21 +6478,38 @@
    },
    "ratings": {
     "classic": 5,
-    "obscurity": 4,
+    "obscurity": 3,
     "accessibility": 3,
     "listeners": 8596,
-    "source": "worker:/album-rating + last.fm listeners",
-    "checkedAt": "2026-08-29T11:30:00Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 4,
+     "accessibility": 3,
+     "source": "worker:/album-rating + last.fm listeners",
+     "checkedAt": "2026-08-29T11:30:00Z",
+     "rarity": "epic"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：音樂劇原卡司錄音正典、Grammy；8596 聽眾 RCA 正規盤冷門 4 過高降 3｜L=8596"
    },
    "rarity": "epic",
    "apexAssessment": {
-    "eligible": true,
-    "tier": "hall",
-    "reason": "1980 年 Grammy 最佳原聲音樂劇專輯得主，已入選美國國家錄音登記簿，Angela Lansbury／Len Cariou 主演的公認經典。",
-    "evidenceUrls": [
-     "https://playbill.com/article/library-of-congress-adds-original-sweeney-todd-cast-album-to-national-recording-registry-com-216756",
-     "https://www.loc.gov/static/programs/national-recording-preservation-board/documents/SweeneyTodd.pdf"
-    ]
+    "eligible": false,
+    "tier": null,
+    "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。音樂劇原卡司錄音正典，但綜合歷代專輯榜（RS500、1001 等）幾乎不收，5 星",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": true,
+     "tier": "hall",
+     "reason": "1980 年 Grammy 最佳原聲音樂劇專輯得主，已入選美國國家錄音登記簿，Angela Lansbury／Len Cariou 主演的公認經典。",
+     "evidenceUrls": [
+      "https://playbill.com/article/library-of-congress-adds-original-sweeney-todd-cast-album-to-national-recording-registry-com-216756",
+      "https://www.loc.gov/static/programs/national-recording-preservation-board/documents/SweeneyTodd.pdf"
+     ]
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "Sondheim 親手在劇名後補了一行副標——A Musical Thriller，音樂驚悚劇。這行字對應的是近乎歌劇規格的寫法：配樂縱貫全場，大量運用穿插對位與主導動機。1979 年 3 月 1 日在百老匯 Uris 劇院首演，Angela Lansbury 與 Len Cariou 主演。原班卡司錄音以雙碟 LP 收錄完整樂譜，是 RCA 自十年前《Hair》以來賣得最好的百老匯專輯，並在 1980 年舉行的第 22 屆葛萊美獎拿下最佳卡司秀專輯。",
@@ -6018,8 +6541,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": false,
-    "apexPool": true
+    "seedCards": true,
+    "apexPool": false
    }
   },
   {
@@ -6041,12 +6564,21 @@
    "ratings": {
     "classic": 5,
     "obscurity": 3,
-    "accessibility": 4,
+    "accessibility": 2,
     "listeners": 69616,
-    "source": "worker:/album-rating + last.fm listeners",
-    "checkedAt": "2026-08-29T11:30:00Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 3,
+     "accessibility": 4,
+     "source": "worker:/album-rating + last.fm listeners",
+     "checkedAt": "2026-08-29T11:30:00Z",
+     "rarity": "legendary"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：百老匯卡司錄音正典；音樂劇旋律結構，硬蕊4→2｜L=69616"
    },
-   "rarity": "epic",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -6064,7 +6596,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/62/50/f2/6250f23b-2962-b2a5-a926-fcc5e2421a79/mzaf_3858301920310926198.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b7/fa/88/b7fa8880-0087-d41e-a4bc-0d8b03db2074/mzaf_16783002222977387801.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-29T11:30:00Z",
@@ -6107,13 +6639,22 @@
    },
    "ratings": {
     "classic": 5,
-    "obscurity": 4,
-    "accessibility": 3,
+    "obscurity": 3,
+    "accessibility": 2,
     "listeners": 19093,
-    "source": "worker:/album-rating + last.fm listeners",
-    "checkedAt": "2026-08-29T11:30:00Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 4,
+     "accessibility": 3,
+     "source": "worker:/album-rating + last.fm listeners",
+     "checkedAt": "2026-08-29T11:30:00Z",
+     "rarity": "epic"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：Sondheim 代表卡司錄音；19093 聽眾，冷門4→3；硬蕊3→2｜L=19093"
    },
-   "rarity": "epic",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -6168,14 +6709,23 @@
     "checkedAt": "2026-08-29T11:30:00Z"
    },
    "ratings": {
-    "classic": 5,
-    "obscurity": 5,
+    "classic": 4,
+    "obscurity": 3,
     "accessibility": 1,
     "listeners": 1233,
-    "source": "worker:/album-rating + last.fm listeners",
-    "checkedAt": "2026-08-29T11:30:00Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 5,
+     "accessibility": 1,
+     "source": "worker:/album-rating + last.fm listeners",
+     "checkedAt": "2026-08-29T11:30:00Z",
+     "rarity": "uncommon"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：電影原聲 1956 版 LP；聽眾疑錯配，照錨點 3｜L=1233"
    },
-   "rarity": "uncommon",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -6231,14 +6781,23 @@
     "checkedAt": "2026-08-29T11:30:00Z"
    },
    "ratings": {
-    "classic": 5,
-    "obscurity": 4,
-    "accessibility": 2,
+    "classic": 4,
+    "obscurity": 2,
+    "accessibility": 1,
     "listeners": 12425,
-    "source": "worker:/album-rating + last.fm listeners",
-    "checkedAt": "2026-08-29T11:30:00Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "worker:/album-rating + last.fm listeners",
+     "checkedAt": "2026-08-29T11:30:00Z",
+     "rarity": "uncommon"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：Songbook 系列佳作，但非 Cole Porter／Gershwin 那類核心卷；聽眾 1.2 萬→冷門 2｜L=12425"
    },
-   "rarity": "uncommon",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -6255,7 +6814,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/2d/c6/6e/2dc66e9d-5e0e-da0b-b368-858faf613651/mzaf_17145621798495841115.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/89/6b/44/896b4451-c793-a29f-0917-e6502bf34715/mzaf_9644427332015002690.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-29T11:30:00Z",
@@ -6297,14 +6856,23 @@
     "checkedAt": "2026-08-29T11:30:00Z"
    },
    "ratings": {
-    "classic": 5,
+    "classic": 4,
     "obscurity": 2,
-    "accessibility": 2,
+    "accessibility": 1,
     "listeners": 108341,
-    "source": "worker:/album-rating + last.fm listeners",
-    "checkedAt": "2026-08-29T11:30:00Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 2,
+     "accessibility": 2,
+     "source": "worker:/album-rating + last.fm listeners",
+     "checkedAt": "2026-08-29T11:30:00Z",
+     "rarity": "uncommon"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：Songbook 系列一卷，強作非首選；標準曲人聲爵士入耳 1｜L=108341"
    },
-   "rarity": "uncommon",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -6322,7 +6890,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/dc/c7/26/dcc7269b-fd7c-a530-757c-88672725c810/mzaf_10597317456979839380.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e6/b5/4b/e6b54b6f-ee85-5785-34af-c7016906404f/mzaf_7098067038875801498.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-29T11:30:00Z",
@@ -6364,22 +6932,39 @@
     "checkedAt": "2026-08-29T11:30:00Z"
    },
    "ratings": {
-    "classic": 5,
-    "obscurity": 4,
-    "accessibility": 2,
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 1,
     "listeners": 10577,
-    "source": "worker:/album-rating + last.fm listeners",
-    "checkedAt": "2026-08-29T11:30:00Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "worker:/album-rating + last.fm listeners",
+     "checkedAt": "2026-08-29T11:30:00Z",
+     "rarity": "uncommon"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：Granz 製作、Oscar Peterson 伴奏的佳作，但非人聲爵士正典核心；10,577 聽眾冷門度 3｜L=10577"
    },
-   "rarity": "uncommon",
+   "rarity": "common",
    "apexAssessment": {
-    "eligible": true,
-    "tier": "hall",
-    "reason": "葛萊美名人堂收錄：條目為 The Astaire Story／Fred Astaire & The Oscar Peterson Quintet／Mercury／1953／Vocal Jazz／Album，1999 年入選。",
-    "evidenceUrls": [
-     "https://en.wikipedia.org/wiki/List_of_Grammy_Hall_of_Fame_Award_recipients_(A%E2%80%93D)",
-     "https://en.wikipedia.org/wiki/Grammy_Hall_of_Fame"
-    ]
+    "eligible": false,
+    "tier": null,
+    "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。人聲爵士佳作，非綜合歷代榜正典",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": true,
+     "tier": "hall",
+     "reason": "葛萊美名人堂收錄：條目為 The Astaire Story／Fred Astaire & The Oscar Peterson Quintet／Mercury／1953／Vocal Jazz／Album，1999 年入選。",
+     "evidenceUrls": [
+      "https://en.wikipedia.org/wiki/List_of_Grammy_Hall_of_Fame_Award_recipients_(A%E2%80%93D)",
+      "https://en.wikipedia.org/wiki/Grammy_Hall_of_Fame"
+     ]
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "限量 1384 套四張裝，每一套都帶著 Astaire 的親筆簽名。這套 1952 年 12 月的錄音由 Norman Granz 製作。在成為好萊塢舞王之前，Astaire 本就是百老匯與好萊塢多首新曲的原唱人選，作曲家放心把新歌交給他親自試唱引介；他在這裡以歌手身分重新演繹自己經手過的曲目，另有三首穿插踢踏示範。伴奏是 Oscar Peterson 領軍的六人小組，鋼琴、小號、次中音薩克斯風、吉他、貝斯與鼓各一。1999 年，這套錄音獲頒葛萊美名人堂獎。",
@@ -6410,8 +6995,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": false,
-    "apexPool": true
+    "seedCards": true,
+    "apexPool": false
    }
   },
   {
@@ -6438,7 +7023,7 @@
     "source": "worker:/album-rating + last.fm listeners",
     "checkedAt": "2026-08-29T11:30:00Z"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -6499,7 +7084,7 @@
     "source": "worker:/album-rating + last.fm listeners",
     "checkedAt": "2026-08-29T11:30:00Z"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -6515,7 +7100,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/07/f3/a9/07f3a93f-a3a2-ee22-3de9-224cd995ae4b/mzaf_5110517375566086002.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/77/68/be/7768be2b-6243-7808-561f-334335297178/mzaf_11695859997579566843.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-29T11:30:00Z",
@@ -6558,21 +7143,38 @@
    },
    "ratings": {
     "classic": 5,
-    "obscurity": 4,
+    "obscurity": 2,
     "accessibility": 1,
     "listeners": 18673,
-    "source": "worker:/album-rating + last.fm listeners",
-    "checkedAt": "2026-08-29T11:30:00Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 4,
+     "accessibility": 1,
+     "source": "worker:/album-rating + last.fm listeners",
+     "checkedAt": "2026-08-29T11:30:00Z",
+     "rarity": "rare"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：RS500、1001 Albums 收錄，殿堂成立；18,673 聽眾，原冷門度 4 偏高改 2｜L=18673"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
-    "eligible": true,
-    "tier": "hall",
-    "reason": "1999 年追授 Grammy Hall of Fame；長期被樂評與 Sinatra 研究者列為其 Capitol 時期核心概念專輯",
-    "evidenceUrls": [
-     "https://www.udiscovermusic.com/stories/sings-for-only-the-lonely/",
-     "https://en.wikipedia.org/wiki/Frank_Sinatra_Sings_for_Only_the_Lonely"
-    ]
+    "eligible": false,
+    "tier": null,
+    "reason": "頂點重整（apex-rebalance-20261103，2026-11-03）：原殿堂降為一般卡。同級內一藝人一張：Frank Sinatra hall 留《In the Wee Small Hours》。7 星重審通過、listeners 高出另一張 15 倍；概念專輯先驅",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": true,
+     "tier": "hall",
+     "reason": "1999 年追授 Grammy Hall of Fame；長期被樂評與 Sinatra 研究者列為其 Capitol 時期核心概念專輯",
+     "evidenceUrls": [
+      "https://www.udiscovermusic.com/stories/sings-for-only-the-lonely/",
+      "https://en.wikipedia.org/wiki/Frank_Sinatra_Sings_for_Only_the_Lonely"
+     ]
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:apex-rebalance-20261103"
    },
    "description": {
     "text": "畫成小丑的 Sinatra 肖像，摘下首屆葛萊美的最佳專輯封面獎。畫家 Nicholas Volpe 把他畫成落寞的 Pagliacci 式小丑，這幅作品在 1959 年 5 月 4 日的第 1 屆典禮上獲獎。錄音在 1958 年 5 至 6 月進行，編曲 Nelson Riddle 在這段期間先後失去六個月大的女兒與母親，母親過世就在首場錄音後四天，成品是深夜獨飲式的陰鬱弦樂。1970 年代中期有人問他最喜歡自己哪張專輯，據傳記記載，他不假思索選了這張。",
@@ -6601,8 +7203,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": false,
-    "apexPool": true
+    "seedCards": true,
+    "apexPool": false
    }
   },
   {
@@ -6629,7 +7231,7 @@
     "source": "worker:/album-rating + last.fm listeners",
     "checkedAt": "2026-08-29T11:30:00Z"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -6645,7 +7247,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/1e/7f/26/1e7f268d-16b1-1617-0da5-4056fee7ba68/mzaf_13911220640327535235.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/cc/c4/15/ccc41542-bff3-b6a2-5bde-88f9d5053e0d/mzaf_10597865916401765285.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-29T11:30:00Z",
@@ -6687,14 +7289,23 @@
     "checkedAt": "2026-08-29T11:30:00Z"
    },
    "ratings": {
-    "classic": 5,
-    "obscurity": 4,
+    "classic": 4,
+    "obscurity": 2,
     "accessibility": 1,
     "listeners": 18888,
-    "source": "worker:/album-rating + last.fm listeners",
-    "checkedAt": "2026-08-29T11:30:00Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 4,
+     "accessibility": 1,
+     "source": "worker:/album-rating + last.fm listeners",
+     "checkedAt": "2026-08-29T11:30:00Z",
+     "rarity": "rare"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：Capitol 抒情盤，次於 Wee Small Hours／Only the Lonely→4；聽眾 1.9 萬｜L=18888"
    },
-   "rarity": "uncommon",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -6710,7 +7321,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/01/66/73/01667342-ec8e-e14e-e544-f62f78f27b16/mzaf_2545026862649670173.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/fd/1f/52/fd1f52bc-c14c-c085-065b-062ae78f09e9/mzaf_16417282676265507536.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-29T11:30:00Z",
@@ -6759,7 +7370,7 @@
     "source": "worker:/album-rating + last.fm listeners",
     "checkedAt": "2026-08-29T11:30:00Z"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -6775,7 +7386,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/be/0a/0d/be0a0db5-7a2d-786c-876c-8a9faed7523e/mzaf_350434412353701638.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/29/67/ff/2967ffeb-2eba-77cc-648a-dd32e97c5195/mzaf_12471607713880609709.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-29T11:30:00Z",
@@ -6824,7 +7435,7 @@
     "source": "worker:/album-rating + last.fm listeners",
     "checkedAt": "2026-08-29T11:30:00Z"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -6840,7 +7451,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/2b/43/68/2b436821-3f28-2601-a1cd-8a3659a326d7/mzaf_13643822333445951590.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b2/6b/d9/b26bd9bb-68b1-1897-555e-05e1c9267f92/mzaf_11612813327740920236.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-29T11:30:00Z",
@@ -6883,13 +7494,22 @@
    },
    "ratings": {
     "classic": 5,
-    "obscurity": 4,
+    "obscurity": 2,
     "accessibility": 1,
     "listeners": 15765,
-    "source": "worker:/album-rating + last.fm listeners",
-    "checkedAt": "2026-08-29T11:30:00Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 4,
+     "accessibility": 1,
+     "source": "worker:/album-rating + last.fm listeners",
+     "checkedAt": "2026-08-29T11:30:00Z",
+     "rarity": "rare"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：Grammy 年度專輯，晚期代表；聽眾 1.5 萬、Reprise 主流→冷門 2｜L=15765"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -6906,7 +7526,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/20/06/b1/2006b1dc-7ffd-56be-fe35-59b23a21f9f8/mzaf_18433033765769383103.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d3/a1/57/d3a157cb-da9b-0767-99b0-6ac44baf4689/mzaf_10128694575769709919.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-29T11:30:00Z",
@@ -6955,7 +7575,7 @@
     "source": "worker:/album-rating + last.fm listeners",
     "checkedAt": "2026-08-29T11:30:00Z"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -6973,7 +7593,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f9/9c/77/f99c7777-384f-1737-7d20-2da79ced2b6f/mzaf_15128331738446280920.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e6/92/21/e692212a-7f0f-70fa-b143-fdbb7fc5e6b1/mzaf_15858493588919725765.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-29T11:30:00Z",
@@ -7017,12 +7637,21 @@
    "ratings": {
     "classic": 5,
     "obscurity": 1,
-    "accessibility": 2,
+    "accessibility": 1,
     "listeners": 714825,
-    "source": "worker:/album-rating + last.fm listeners",
-    "checkedAt": "2026-08-29T11:30:00Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 1,
+     "accessibility": 2,
+     "source": "worker:/album-rating + last.fm listeners",
+     "checkedAt": "2026-08-29T11:30:00Z",
+     "rarity": "uncommon"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：1001 Albums、RS500 前段；藍眼靈魂正典｜L=714825"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": true,
     "tier": "hall",
@@ -7033,7 +7662,7 @@
     ]
    },
    "description": {
-    "text": "靈魂樂重鎮錄好伴奏，沒信心開嗓的她把人聲留到紐約才補完。這是 Springfield 轉投 Atlantic 之後的首張專輯，基礎伴奏 1968 年由當地樂手團 Memphis Boys 在孟菲斯錄成；她對自己的嗓音沒有信心，一想到 Aretha Franklin 等靈魂歌手也在同一批錄音室開嗓就更卻步，主唱部分最終改在紐約補錄。〈Son of a Preacher Man〉原是為 Franklin 量身寫的，錄過一版沒發行才轉到她手上。這張 2001 年入選葛萊美名人堂。",
+    "text": "《Dusty in Memphis》是 Dusty Springfield 1969 年的專輯，當年只到 Billboard 200 第 99 名，後來常被列為史上最好的專輯之一，入選葛萊美名人堂與美國國家錄音登記表。製作人是 Jerry Wexler，伴奏在孟菲斯錄成，主唱與弦樂在紐約補錄。伴奏由孟菲斯樂手 Memphis Boys 擔綱，有吉他與電子西塔琴、兩位貝斯手、兩位鍵盤手與鼓，加上 The Sweet Inspirations 的和聲；選曲出自 Randy Newman、Bacharach & David 等流行作曲家，配上南方靈魂樂的節奏。",
     "sourceUrls": [
      "https://en.wikipedia.org/wiki/Dusty_in_Memphis",
      "https://en.wikipedia.org/wiki/Son_of_a_Preacher_Man",
@@ -7043,7 +7672,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/2c/12/c0/2c12c0cb-665f-9552-f984-cc3a4e40d8ef/mzaf_11637915745841003275.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/a6/43/27/a643271b-a549-a33d-fdf9-001697b345d9/mzaf_14258491382214114627.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-29T11:30:00Z",
@@ -7086,21 +7715,38 @@
    },
    "ratings": {
     "classic": 5,
-    "obscurity": 4,
+    "obscurity": 2,
     "accessibility": 1,
     "listeners": 19709,
-    "source": "worker:/album-rating + last.fm listeners",
-    "checkedAt": "2026-08-29T11:30:00Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 4,
+     "accessibility": 1,
+     "source": "worker:/album-rating + last.fm listeners",
+     "checkedAt": "2026-08-29T11:30:00Z",
+     "rarity": "rare"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：葛萊美年度專輯、國會圖書館錄音名錄、榜首 13 週，傳統流行人人必提，殿堂成立；冷門度 4 錯→2｜L=19709"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
-    "eligible": true,
-    "tier": "hall",
-    "reason": "1962 Grammy Album of the Year（首張獲此獎項的現場專輯，亦是首位獲獎女性歌手）；2003 年入選美國國會圖書館 National Recording Registry",
-    "evidenceUrls": [
-     "https://www.loc.gov/static/programs/national-recording-preservation-board/documents/judy.pdf",
-     "https://en.wikipedia.org/wiki/Judy_at_Carnegie_Hall"
-    ]
+    "eligible": false,
+    "tier": null,
+    "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。葛萊美年度專輯、國會名錄，但現代綜合歷代榜罕收",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": true,
+     "tier": "hall",
+     "reason": "1962 Grammy Album of the Year（首張獲此獎項的現場專輯，亦是首位獲獎女性歌手）；2003 年入選美國國會圖書館 National Recording Registry",
+     "evidenceUrls": [
+      "https://www.loc.gov/static/programs/national-recording-preservation-board/documents/judy.pdf",
+      "https://en.wikipedia.org/wiki/Judy_at_Carnegie_Hall"
+     ]
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "一夜實況錄成雙唱片，讓 Garland 成為首位拿下葛萊美年度專輯獎的女性。演唱會辦在 1961 年 4 月 23 日的卡內基音樂廳，同年 7 月 10 日由 Capitol 發成雙唱片。1962 年頒發的第 4 屆葛萊美，這張四項全數得獎：年度專輯、最佳女歌手演唱、最佳非古典類錄音工程，連最佳專輯封面都拿下。專輯在告示牌榜上停留 73 週、其中 13 週坐鎮冠軍，並獲金唱片認證。現場錄音整段保留她與觀眾之間的即時互動，唱腔渾厚而戲劇化。",
@@ -7129,8 +7775,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": false,
-    "apexPool": true
+    "seedCards": true,
+    "apexPool": false
    }
   },
   {
@@ -7150,14 +7796,23 @@
     "checkedAt": "2026-08-29T11:30:00Z"
    },
    "ratings": {
-    "classic": 5,
+    "classic": 4,
     "obscurity": 1,
     "accessibility": 1,
     "listeners": 506864,
-    "source": "worker:/album-rating + last.fm listeners",
-    "checkedAt": "2026-08-29T11:30:00Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 1,
+     "accessibility": 1,
+     "source": "worker:/album-rating + last.fm listeners",
+     "checkedAt": "2026-08-29T11:30:00Z",
+     "rarity": "rare"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：經典節慶盤，屬耶誕歌集非藝術正典，經典 5→4｜L=506864"
    },
-   "rarity": "uncommon",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -7219,7 +7874,7 @@
     "source": "worker:/album-rating + last.fm listeners",
     "checkedAt": "2026-08-29T11:30:00Z"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -7235,7 +7890,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f2/f1/c1/f2f1c147-2790-0ed2-5970-0db36a993520/mzaf_2048244599697356574.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/97/19/dc/9719dcca-869a-f932-fc2d-b33ed4a6286f/mzaf_11398331248493571189.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-29T11:30:00Z",
@@ -7284,7 +7939,7 @@
     "source": "worker:/album-rating + last.fm listeners",
     "checkedAt": "2026-08-29T11:30:00Z"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -7302,7 +7957,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/31/b4/d0/31b4d08b-4ee5-45ec-bd96-1e83b0381408/mzaf_7012993277070123876.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/8f/01/d5/8f01d5ca-5b66-96b5-73e4-76ae22ff4d22/mzaf_2690218771763715903.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-29T11:30:00Z",
@@ -7349,14 +8004,23 @@
     "checkedAt": "2026-08-29T11:30:00Z"
    },
    "ratings": {
-    "classic": 5,
-    "obscurity": 3,
+    "classic": 4,
+    "obscurity": 2,
     "accessibility": 1,
     "listeners": 48390,
-    "source": "worker:/album-rating + last.fm listeners",
-    "checkedAt": "2026-08-29T11:30:00Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 3,
+     "accessibility": 1,
+     "source": "worker:/album-rating + last.fm listeners",
+     "checkedAt": "2026-08-29T11:30:00Z",
+     "rarity": "rare"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：史上最暢銷耶誕專輯之一，但非樂評正典｜L=48390"
    },
-   "rarity": "uncommon",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -7416,7 +8080,7 @@
     "source": "worker:/album-rating + last.fm listeners",
     "checkedAt": "2026-08-29T11:30:00Z"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -7478,7 +8142,7 @@
     "source": "worker:/album-rating + last.fm listeners",
     "checkedAt": "2026-08-29T11:30:00Z"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -7494,7 +8158,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/03/51/0b/03510b0b-8db7-aa0b-bcf5-2f7ab4ba90c2/mzaf_13290124568816735082.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d9/48/6a/d9486a71-d1ed-2bf8-9601-49ee0789b7f8/mzaf_6162177868026276486.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-29T11:30:00Z",
@@ -7543,7 +8207,7 @@
     "source": "worker:/album-rating + last.fm listeners",
     "checkedAt": "2026-08-29T11:30:00Z"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -7559,7 +8223,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview112/v4/65/03/bd/6503bdcf-adf7-2ae8-0944-9f305cc36c25/mzaf_2590871910231570010.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/7c/7c/e6/7c7ce6a4-c5b1-4477-2d8f-a33d8215a8f3/mzaf_11664177119952105458.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-29T11:30:00Z",
@@ -7607,7 +8271,7 @@
     "source": "worker:/album-rating + last.fm listeners",
     "checkedAt": "2026-08-29T11:30:00Z"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -7662,22 +8326,39 @@
     "checkedAt": "2026-08-29T11:30:00Z"
    },
    "ratings": {
-    "classic": 5,
-    "obscurity": 4,
-    "accessibility": 2,
+    "classic": 4,
+    "obscurity": 2,
+    "accessibility": 1,
     "listeners": 5045,
-    "source": "worker:/album-rating + last.fm listeners",
-    "checkedAt": "2026-08-29T11:30:00Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "worker:/album-rating + last.fm listeners",
+     "checkedAt": "2026-08-29T11:30:00Z",
+     "rarity": "uncommon"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：葛萊美年度專輯，但無 1001／RS500 級長期正典；listeners 5045 不套下限，主流 Columbia 盤冷門度 2｜L=5045"
    },
-   "rarity": "uncommon",
+   "rarity": "common",
    "apexAssessment": {
-    "eligible": true,
-    "tier": "hall",
-    "reason": "葛萊美名人堂收錄：條目為 The Barbra Streisand Album／Barbra Streisand／Columbia／1963／Traditional Pop／Album，2006 年入選。",
-    "evidenceUrls": [
-     "https://en.wikipedia.org/wiki/List_of_Grammy_Hall_of_Fame_Award_recipients_(A%E2%80%93D)",
-     "https://en.wikipedia.org/wiki/Grammy_Hall_of_Fame"
-    ]
+    "eligible": false,
+    "tier": null,
+    "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。葛萊美年度專輯，但綜合歷代榜罕見收錄，類型內經典 5",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": true,
+     "tier": "hall",
+     "reason": "葛萊美名人堂收錄：條目為 The Barbra Streisand Album／Barbra Streisand／Columbia／1963／Traditional Pop／Album，2006 年入選。",
+     "evidenceUrls": [
+      "https://en.wikipedia.org/wiki/List_of_Grammy_Hall_of_Fame_Award_recipients_(A%E2%80%93D)",
+      "https://en.wikipedia.org/wiki/Grammy_Hall_of_Fame"
+     ]
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "22 歲抱走葛萊美年度專輯獎，最年輕得主紀錄一守就超過三十年。首張錄音室專輯 1963 年 2 月 25 日由 Columbia 發行，多首錄音完成時她還不滿 21 歲。1964 年 5 月的第 6 屆葛萊美，它同時拿下年度專輯與最佳女歌手演唱獎，同屆共入圍五項，另抱回最佳專輯封面獎。紀錄要到 1996 年才由 21 歲的 Alanis Morissette 打破，其後 Taylor Swift 與 Billie Eilish 相繼刷新，目前掛在 Eilish 名下。",
@@ -7692,7 +8373,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/df/3e/ca/df3ecaec-21ad-6927-c3f8-c1ea4dc8631f/mzaf_4312909895192312787.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/a5/49/bc/a549bcd8-9207-ee55-c9ea-739ff32ef211/mzaf_13365701254904624541.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-29T11:30:00Z",
@@ -7713,8 +8394,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": false,
-    "apexPool": true
+    "seedCards": true,
+    "apexPool": false
    }
   },
   {
@@ -7741,7 +8422,7 @@
     "source": "worker:/album-rating + last.fm listeners",
     "checkedAt": "2026-08-29T11:30:00Z"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -7759,7 +8440,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/1e/4c/fe/1e4cfe19-3fa1-0612-9576-022f6af77462/mzaf_9764641366842196925.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/1f/15/fa/1f15fae4-a66e-2c06-8596-eed6343a9c96/mzaf_1147618503203859303.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-29T11:30:00Z",
@@ -7808,7 +8489,7 @@
     "source": "worker:/album-rating + last.fm listeners",
     "checkedAt": "2026-08-29T11:30:00Z"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -7827,7 +8508,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/c0/a4/18/c0a41886-43e7-aa77-b26a-f9584c4dd304/mzaf_15669145605021892844.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/bf/4b/ea/bf4beada-2caa-4c18-5dbc-3d7af19a388d/mzaf_15579828425327061808.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-29T11:30:00Z",
@@ -7876,7 +8557,7 @@
     "source": "worker:/album-rating + last.fm listeners",
     "checkedAt": "2026-08-29T11:30:00Z"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -7942,7 +8623,7 @@
     "source": "worker:/album-rating + last.fm listeners",
     "checkedAt": "2026-08-29T11:30:00Z"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -7959,7 +8640,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/17/aa/a6/17aaa69a-b53f-b2f8-f569-106a8805d820/mzaf_14164307082184164446.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f4/e9/69/f4e9695a-ab90-1946-abe0-77e8fa96ccfc/mzaf_10170763914731960323.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-29T11:30:00Z",
@@ -8008,7 +8689,7 @@
     "source": "worker:/album-rating + last.fm listeners",
     "checkedAt": "2026-08-29T11:30:00Z"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -8024,7 +8705,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/4a/81/35/4a8135ab-68f2-2b32-b50b-e36876c168c9/mzaf_11638023739236671854.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/4b/7c/da/4b7cda87-31fc-93a0-a43c-a799e15a2530/mzaf_14089297923275915072.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-29T11:30:00Z",
@@ -8073,7 +8754,7 @@
     "source": "worker:/album-rating + last.fm listeners",
     "checkedAt": "2026-08-29T11:30:00Z"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -8138,7 +8819,7 @@
     "source": "worker:/album-rating + last.fm listeners",
     "checkedAt": "2026-08-29T11:30:00Z"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -8199,7 +8880,7 @@
     "source": "worker:/album-rating + last.fm listeners",
     "checkedAt": "2026-08-29T11:30:00Z"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -8216,7 +8897,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/ff/dc/53/ffdc534f-88e1-3ed9-dc46-69f5cb0d7d1b/mzaf_14346961882281354948.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/4b/45/8a/4b458a28-fa4c-9807-fd05-d03b22cda551/mzaf_4195913893112046648.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-29T11:30:00Z",
@@ -8265,7 +8946,7 @@
     "source": "worker:/album-rating + last.fm listeners",
     "checkedAt": "2026-08-29T11:30:00Z"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -8327,7 +9008,7 @@
     "source": "worker:/album-rating + last.fm listeners",
     "checkedAt": "2026-08-29T11:30:00Z"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -8344,7 +9025,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/3e/9e/b6/3e9eb619-0963-2b5c-d559-1b033e3a926c/mzaf_10533358169975742614.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d6/9f/30/d69f305a-abc4-30c0-2749-8b62de54006c/mzaf_7175323200469760813.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-29T11:30:00Z",
@@ -8393,7 +9074,7 @@
     "source": "worker:/album-rating + last.fm listeners",
     "checkedAt": "2026-08-29T11:30:00Z"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -8457,7 +9138,7 @@
     "source": "worker:/album-rating + last.fm listeners",
     "checkedAt": "2026-08-29T11:30:00Z"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -8522,7 +9203,7 @@
     "source": "worker:/album-rating + last.fm listeners",
     "checkedAt": "2026-08-29T11:30:00Z"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -8582,14 +9263,23 @@
     "checkedAt": "2026-08-29T11:30:00Z"
    },
    "ratings": {
-    "classic": 5,
+    "classic": 4,
     "obscurity": 1,
-    "accessibility": 2,
+    "accessibility": 1,
     "listeners": 2665190,
-    "source": "worker:/album-rating + last.fm listeners",
-    "checkedAt": "2026-08-29T11:30:00Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 1,
+     "accessibility": 2,
+     "source": "worker:/album-rating + last.fm listeners",
+     "checkedAt": "2026-08-29T11:30:00Z",
+     "rarity": "uncommon"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：暢銷出道作，評論共識是強作非正典；聽眾 266 萬｜L=2665190"
    },
-   "rarity": "uncommon",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -8606,7 +9296,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/2e/83/f9/2e83f9f7-d365-e5c6-dfcd-2a73e6d0e794/mzaf_5545098613570617368.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ee/8d/13/ee8d136d-eaa4-451f-74fe-ad69793bc902/mzaf_42146715278532917.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-29T11:30:00Z",
@@ -8655,7 +9345,7 @@
     "source": "worker:/album-rating + last.fm listeners",
     "checkedAt": "2026-08-29T11:30:00Z"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -8792,7 +9482,7 @@
     "source": "worker:/album-rating + last.fm listeners",
     "checkedAt": "2026-08-29T11:30:00Z"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -8847,14 +9537,23 @@
     "checkedAt": "2026-08-29T11:30:00Z"
    },
    "ratings": {
-    "classic": 5,
+    "classic": 4,
     "obscurity": 1,
     "accessibility": 1,
     "listeners": 555525,
-    "source": "worker:/album-rating + last.fm listeners",
-    "checkedAt": "2026-08-29T11:30:00Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 1,
+     "accessibility": 1,
+     "source": "worker:/album-rating + last.fm listeners",
+     "checkedAt": "2026-08-29T11:30:00Z",
+     "rarity": "rare"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：暢銷代表作之一，但 Watermark 才是首要經典｜L=555525"
    },
-   "rarity": "uncommon",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -8871,7 +9570,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d0/a4/27/d0a4273e-35ec-80d8-b866-2be72a027a39/mzaf_17223824742338619932.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ae/03/f3/ae03f36c-54d2-05e8-2746-0560d516544b/mzaf_7403126320371960947.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-29T11:30:00Z",
@@ -8914,21 +9613,38 @@
    },
    "ratings": {
     "classic": 5,
-    "obscurity": 2,
+    "obscurity": 1,
     "accessibility": 1,
     "listeners": 279763,
-    "source": "worker:/album-rating + last.fm listeners",
-    "checkedAt": "2026-08-29T11:30:00Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 2,
+     "accessibility": 1,
+     "source": "worker:/album-rating + last.fm listeners",
+     "checkedAt": "2026-08-29T11:30:00Z",
+     "rarity": "rare"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：含〈Crazy〉的鄉村經典，經典度 5；正典榜多收其精選，原專輯殿堂從嚴不成立；聽眾 28 萬冷門度 2→1｜L=279763"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
-    "eligible": true,
-    "tier": "hall",
-    "reason": "跨來源長期共識：AllMusic 列為 Cline 入門首選；I Fall to Pieces／Crazy 兩首指標曲首度定型於此輯，Nashville Sound 教科書等級案例。",
-    "evidenceUrls": [
-     "https://www.allmusic.com/album/patsy-cline-showcase-mw0000195207",
-     "https://en.wikipedia.org/wiki/Showcase_(Patsy_Cline_album)"
-    ]
+    "eligible": false,
+    "tier": null,
+    "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。綜合榜多收精選輯，原專輯非跨類型正典",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": true,
+     "tier": "hall",
+     "reason": "跨來源長期共識：AllMusic 列為 Cline 入門首選；I Fall to Pieces／Crazy 兩首指標曲首度定型於此輯，Nashville Sound 教科書等級案例。",
+     "evidenceUrls": [
+      "https://www.allmusic.com/album/patsy-cline-showcase-mw0000195207",
+      "https://en.wikipedia.org/wiki/Showcase_(Patsy_Cline_album)"
+     ]
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "小提琴、中提琴與大提琴一字排開，鋼琴、電吉他與 steel guitar 照樣都在編制裡。這是 Patsy Cline 1961 年 11 月由 Decca 發行的第二張錄音室專輯，Owen Bradley 製作；他把絃樂與人聲和聲加進既有編制，把嗓音往流行質感修飾，Nashville Sound 就在這樣的並存裡成形。〈I Fall to Pieces〉是她生涯第一首鄉村榜冠軍曲，Willie Nelson 寫的〈Crazy〉也登上鄉村榜前 5，兩首都同時打進流行榜。",
@@ -8941,7 +9657,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/57/0c/c9/570cc959-5fc5-a0d5-18e6-48cf45e1102f/mzaf_512407110361075416.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/72/b1/2d/72b12dba-36a7-d390-74f1-99c8abf1a3c6/mzaf_1954451832625719483.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-29T11:30:00Z",
@@ -8962,8 +9678,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": false,
-    "apexPool": true
+    "seedCards": true,
+    "apexPool": false
    }
   },
   {
@@ -8990,7 +9706,7 @@
     "source": "worker:/album-rating + last.fm listeners",
     "checkedAt": "2026-08-29T11:30:00Z"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -9008,7 +9724,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/81/7f/bd/817fbd96-913d-ebf6-3d82-2df71e5cea00/mzaf_15391670453436203635.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ca/f8/bb/caf8bbb6-3165-3ad0-d702-936aa759d03f/mzaf_4939961638997029637.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-29T11:30:00Z",
@@ -9057,15 +9773,23 @@
     "source": "worker:/album-rating + last.fm listeners",
     "checkedAt": "2026-08-29T11:30:00Z"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
-    "eligible": true,
-    "tier": "hall",
-    "reason": "AllMusic 專文稱其為「戰後美國西部歌謠最具影響力的專輯」；El Paso 為 1960 年 Billboard 流行榜與鄉村榜雙料冠軍，長年入選經典牛仔／西部主題最高代表作。",
-    "evidenceUrls": [
-     "https://www.allmusic.com/album/gunfighter-ballads-and-trail-songs-mw0000202077",
-     "https://en.wikipedia.org/wiki/Gunfighter_Ballads_and_Trail_Songs"
-    ]
+    "eligible": false,
+    "tier": null,
+    "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。1001 Albums 有收，但多數綜合歷代榜未收，鄉村西部類型里程碑 5 星",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": true,
+     "tier": "hall",
+     "reason": "AllMusic 專文稱其為「戰後美國西部歌謠最具影響力的專輯」；El Paso 為 1960 年 Billboard 流行榜與鄉村榜雙料冠軍，長年入選經典牛仔／西部主題最高代表作。",
+     "evidenceUrls": [
+      "https://www.allmusic.com/album/gunfighter-ballads-and-trail-songs-mw0000202077",
+      "https://en.wikipedia.org/wiki/Gunfighter_Ballads_and_Trail_Songs"
+     ]
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "四分半的單曲嚇得 Columbia 另剪三分鐘版備著，聽眾與 DJ 偏偏挑了完整版。那首歌是〈El Paso〉，長約 4 分 38 秒，遠超當時鄉村單曲慣例，剪短版還拿掉了主角懊悔的那段歌詞。專輯 1959 年 9 月由 Columbia 發行，整張在 4 月 7 日一場八小時的場次裡錄完。〈El Paso〉在 1960 年跨年那一週登上 Hot 100 冠軍，是史上第一首超過四分鐘的該榜冠軍曲，並在 1961 年第 3 屆葛萊美拿下最佳鄉村與西部歌曲錄音獎。",
@@ -9095,8 +9819,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": false,
-    "apexPool": true
+    "seedCards": true,
+    "apexPool": false
    }
   },
   {
@@ -9123,7 +9847,7 @@
     "source": "worker:/album-rating + last.fm listeners",
     "checkedAt": "2026-08-29T11:30:00Z"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -9140,7 +9864,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/3c/b6/2c/3cb62c66-752e-c900-48a8-db51ff02e4d3/mzaf_10691096839956171901.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e5/ea/17/e5ea1719-6d86-3bf3-9313-0de7ef142c2c/mzaf_16425289819189043093.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-29T11:30:00Z",
@@ -9182,14 +9906,23 @@
     "checkedAt": "2026-08-29T11:30:00Z"
    },
    "ratings": {
-    "classic": 5,
-    "obscurity": 3,
+    "classic": 4,
+    "obscurity": 2,
     "accessibility": 1,
     "listeners": 92495,
-    "source": "worker:/album-rating + last.fm listeners",
-    "checkedAt": "2026-08-29T11:30:00Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 3,
+     "accessibility": 1,
+     "source": "worker:/album-rating + last.fm listeners",
+     "checkedAt": "2026-08-29T11:30:00Z",
+     "rarity": "rare"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：同名曲是經典，專輯本身是代表作而非正典榜常客；聽眾 9 萬｜L=92495"
    },
-   "rarity": "uncommon",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -9245,22 +9978,39 @@
     "checkedAt": "2026-08-29T11:30:00Z"
    },
    "ratings": {
-    "classic": 5,
-    "obscurity": 3,
+    "classic": 4,
+    "obscurity": 2,
     "accessibility": 1,
     "listeners": 73458,
-    "source": "worker:/album-rating + last.fm listeners",
-    "checkedAt": "2026-08-29T11:30:00Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 3,
+     "accessibility": 1,
+     "source": "worker:/album-rating + last.fm listeners",
+     "checkedAt": "2026-08-29T11:30:00Z",
+     "rarity": "rare"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：CMA 年度專輯、商業成功，但非樂評歷代核心；73k listeners 冷門度 2｜L=73458"
    },
-   "rarity": "uncommon",
+   "rarity": "common",
    "apexAssessment": {
-    "eligible": true,
-    "tier": "hall",
-    "reason": "1973 年 CMA 年度專輯（Album of the Year）、CMA 年度單曲、Rich 同屆拿下 CMA 最佳男歌手，另獲 4 座 ACM 獎與 1974 Grammy 最佳男鄉村演唱，官方獎項證據齊全。",
-    "evidenceUrls": [
-     "https://en.wikipedia.org/wiki/Behind_Closed_Doors_(Charlie_Rich_album)",
-     "https://savingcountrymusic.com/50-years-ago-charlie-rich-records-iconic-behind-closed-doors/"
-    ]
+    "eligible": false,
+    "tier": null,
+    "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。CMA 年度專輯，非樂評歷代核心",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": true,
+     "tier": "hall",
+     "reason": "1973 年 CMA 年度專輯（Album of the Year）、CMA 年度單曲、Rich 同屆拿下 CMA 最佳男歌手，另獲 4 座 ACM 獎與 1974 Grammy 最佳男鄉村演唱，官方獎項證據齊全。",
+     "evidenceUrls": [
+      "https://en.wikipedia.org/wiki/Behind_Closed_Doors_(Charlie_Rich_album)",
+      "https://savingcountrymusic.com/50-years-ago-charlie-rich-records-iconic-behind-closed-doors/"
+     ]
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "Sam Phillips 嫌他太爵士、太優雅，二十年後他成了 CMA 頒獎夜的最大贏家。Charlie Rich 曾在曼菲斯 Sun 替人伴奏兼寫歌，此後蹲了將近二十年。本作 1973 年 5 月由 Epic 發行，Billy Sherrill 製作，把沙啞帶爵士味的嗓音包進絃樂與電鋼琴裡。1973 年 10 月 15 日的 CMA 頒獎夜，專輯獲年度專輯獎、Rich 獲年度男歌手，同名單曲另拿年度單曲獎；第 16 屆葛萊美他再獲最佳鄉村男歌手演唱獎。",
@@ -9275,7 +10025,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview122/v4/a4/54/a1/a454a1ff-bafa-9626-2a0e-ffabc487f688/mzaf_16397815402565661885.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview112/v4/9b/7b/2b/9b7b2b23-1b92-535e-cb87-24dbeb047588/mzaf_641068663877834720.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-29T11:30:00Z",
@@ -9296,8 +10046,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": false,
-    "apexPool": true
+    "seedCards": true,
+    "apexPool": false
    }
   },
   {
@@ -9323,7 +10073,7 @@
     "source": "worker:/album-rating + last.fm listeners",
     "checkedAt": "2026-08-29T11:30:00Z"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -9378,13 +10128,22 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 5,
+    "obscurity": 2,
     "accessibility": 1,
     "listeners": 136,
-    "source": "worker:/album-rating + last.fm listeners",
-    "checkedAt": "2026-08-29T11:30:00Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 1,
+     "source": "worker:/album-rating + last.fm listeners",
+     "checkedAt": "2026-08-29T11:30:00Z",
+     "rarity": "common"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：RCA 大廠、1964 英國專輯榜冠軍；136 聽眾為疑錯配，依錨點2｜L=136"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -9447,7 +10206,7 @@
     "source": "worker:/album-rating + last.fm listeners",
     "checkedAt": "2026-08-29T11:30:00Z"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -9464,7 +10223,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/49/aa/ee/49aaeeff-bed7-f0b6-2cba-655f49476522/mzaf_11962897547151329850.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/26/11/47/261147d0-f8cc-0479-dd78-b60cc700e53b/mzaf_16246096120067305434.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-29T11:30:00Z",
@@ -9513,7 +10272,7 @@
     "source": "worker:/album-rating + last.fm listeners",
     "checkedAt": "2026-08-29T11:30:00Z"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -9531,7 +10290,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/6f/f6/34/6ff63465-cc57-9c30-20a4-e5ee5613d415/mzaf_6602940988939493588.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/16/92/da/1692daa1-f0e0-f6f0-63c2-51b138dfb5e6/mzaf_15984883970763867083.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-29T11:30:00Z",
@@ -9580,7 +10339,7 @@
     "source": "worker:/album-rating + last.fm listeners",
     "checkedAt": "2026-08-29T11:30:00Z"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -9597,7 +10356,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/7f/4d/bd/7f4dbd1c-9dbb-3029-97b4-992b020adbb2/mzaf_3659449975465340380.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/26/36/15/26361503-f57f-5c9d-58bb-681aa5cab587/mzaf_11763768453533137842.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-29T11:30:00Z",
@@ -9646,7 +10405,7 @@
     "source": "worker:/album-rating + last.fm listeners",
     "checkedAt": "2026-08-29T11:30:00Z"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -9663,7 +10422,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a4/aa/72/a4aa7246-8e18-a1e4-f0a8-42d37ff17052/mzaf_6429672929201267118.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/4b/27/7d/4b277d54-1912-8b9d-045d-f3b3775d60d3/mzaf_4545906519949344801.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-29T11:30:00Z",
@@ -9729,7 +10488,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/59/4d/4d/594d4de2-43d6-c7ab-30ff-29a151dd388e/mzaf_12310688754008992634.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/f2/e6/55/f2e65569-ed06-ef50-017b-03eef0592732/mzaf_15133977815214388909.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-29T11:30:00Z",
@@ -9771,22 +10530,39 @@
     "checkedAt": "2026-08-29T11:30:00Z"
    },
    "ratings": {
-    "classic": 5,
+    "classic": 4,
     "obscurity": 2,
     "accessibility": 2,
     "listeners": 264372,
-    "source": "worker:/album-rating + last.fm listeners",
-    "checkedAt": "2026-08-29T11:30:00Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 2,
+     "accessibility": 2,
+     "source": "worker:/album-rating + last.fm listeners",
+     "checkedAt": "2026-08-29T11:30:00Z",
+     "rarity": "uncommon"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：晚年復出代表作、葛萊美，但鄉村領域人人必提的是 Folsom Prison；經典度 5→4｜L=264372"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
-    "eligible": true,
-    "tier": "hall",
-    "reason": "Rolling Stone《90 年代百大專輯》入選；1994 年 Grammy 最佳當代民謠專輯獎；公認為 Cash 晚年藝術重生的起點與極簡製作美學的標竿。",
-    "evidenceUrls": [
-     "https://www.rollingstone.com/music/music-lists/100-best-albums-of-the-90s-152425/johnny-cash-american-recordings-2-163119/",
-     "https://superdeluxeedition.com/news/johnny-cash-american-recordings/"
-    ]
+    "eligible": false,
+    "tier": null,
+    "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。晚年復出名作，綜合歷代榜收錄零散",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": true,
+     "tier": "hall",
+     "reason": "Rolling Stone《90 年代百大專輯》入選；1994 年 Grammy 最佳當代民謠專輯獎；公認為 Cash 晚年藝術重生的起點與極簡製作美學的標竿。",
+     "evidenceUrls": [
+      "https://www.rollingstone.com/music/music-lists/100-best-albums-of-the-90s-152425/johnny-cash-american-recordings-2-163119/",
+      "https://superdeluxeedition.com/news/johnny-cash-american-recordings/"
+     ]
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "做嘻哈與重金屬起家的製作人主動敲門，錄音地點選在 Cash 自家的客廳。Rick Rubin 在 1992 年 Bob Dylan 出道 30 週年演唱會上看到 Johnny Cash 演出，認定他仍有未被開發的活力——當時唱片業已對 Cash 失去興趣，他正從藥癮復發中恢復。錄音就在 Hendersonville 自宅客廳近乎不插電、獨自彈唱錄成，1994 年 4 月由 Rubin 的廠牌發行。這次首度合作開啟他晚期的復興，拿下 1995 年葛萊美最佳當代民謠專輯獎。",
@@ -9801,7 +10577,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/78/2c/f5/782cf519-ffdd-1b40-3010-af0ca0be1869/mzaf_12215653467771016405.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/3b/ba/17/3bba17e1-c041-935c-a462-574b2fdd5df3/mzaf_14420608041667308354.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-29T11:30:00Z",
@@ -9822,8 +10598,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": false,
-    "apexPool": true
+    "seedCards": true,
+    "apexPool": false
    }
   },
   {
@@ -9850,7 +10626,7 @@
     "source": "worker:/album-rating + last.fm listeners",
     "checkedAt": "2026-08-29T11:30:00Z"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -9868,7 +10644,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/fd/b2/09/fdb2092b-4c0f-8c92-2c2b-e8fa1325a2bf/mzaf_10534241641080066348.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/8a/db/69/8adb6981-31e5-cb06-ccee-f6ed45f76343/mzaf_2792713295931774152.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-29T11:30:00Z",
@@ -9917,7 +10693,7 @@
     "source": "worker:/album-rating + last.fm listeners",
     "checkedAt": "2026-08-29T11:30:00Z"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -9934,7 +10710,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/16/60/de/1660de78-b859-ce60-dad8-fa0ecba87bf5/mzaf_18399664924883818335.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/02/f5/f6/02f5f692-e05f-bf67-ab92-23207dbd2438/mzaf_1620367052201476671.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-29T11:30:00Z",
@@ -9983,7 +10759,7 @@
     "source": "worker:/album-rating + last.fm listeners",
     "checkedAt": "2026-08-29T11:30:00Z"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -10046,7 +10822,7 @@
     "source": "worker:/album-rating + last.fm listeners",
     "checkedAt": "2026-08-29T11:30:00Z"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -10063,7 +10839,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/61/d0/ec/61d0ec41-44cf-ddc0-8e72-126aefff3cb3/mzaf_6541778780040758716.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/7b/ee/7e/7bee7ea9-ec9c-b234-cdde-17a60b6fae96/mzaf_3339881952804748767.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-29T11:30:00Z",
@@ -10112,24 +10888,42 @@
    },
    "ratings": {
     "classic": 5,
-    "obscurity": 5,
-    "accessibility": 2,
+    "obscurity": 2,
+    "accessibility": 1,
     "listeners": 38,
-    "source": "worker:/album-rating + last.fm listeners",
-    "checkedAt": "2026-08-29T11:30:00Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker:/album-rating + last.fm listeners",
+     "checkedAt": "2026-08-29T11:30:00Z",
+     "rarity": "epic"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：首張白金鄉村專輯，outlaw 里程碑；listeners 38 疑錯配不套下限→2；殿堂未達｜L=38"
    },
-   "rarity": "epic",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": true,
     "tier": "hall",
-    "reason": "史上第一張 RIAA 認證白金的鄉村專輯（1976），公認 outlaw country 運動的商業與文化分水嶺，Billboard／Rolling Stone 均有專文回顧其歷史地位。",
+    "reason": "店主 2026-11-03 定案殿堂擴充（hall-expansion-20261103）：升為殿堂。",
     "evidenceUrls": [
-     "https://en.wikipedia.org/wiki/Wanted!_The_Outlaws",
-     "https://www.billboard.com/music/country/wanted-the-outlaws-50th-anniversary-legacy-1236196033/"
-    ]
+     "https://www.last.fm/music/Waylon%20Jennings%2C%20Willie%20Nelson%2C%20Jessi%20Colter%20%26%20Tompall%20Glaser/Wanted!%20The%20Outlaws",
+     "https://musicbrainz.org/release-group/0025dfaa-e5d8-31b7-83ab-e702897f1fbe"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。outlaw country 里程碑、首張白金鄉村盤，類型級",
+     "evidenceUrls": [],
+     "source": "manual:audit-20261102"
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:hall-expansion-20261103"
    },
    "description": {
-    "text": "封面印成西部通緝海報，內容多半是四個人發過的舊錄音，卻賣成鄉村史上第一張白金唱片。1976 年 1 月 12 日由 RCA 發行，收四位歌手先前已發行的錄音另加四首新曲，由廠牌重新包裝作行銷主打。「outlaw」一詞最早可溯至 Jennings 1972 年的〈Ladies Love Outlaws〉，到本作以通緝海報封面發行才定型流傳，成為 outlaw country 運動的命名起點。同年 2 月起在鄉村專輯榜蟬聯 6 週冠軍，11 月獲 RIAA 白金認證。",
+    "text": "《Wanted! The Outlaws》是 Waylon Jennings、Willie Nelson、Jessi Colter 與 Tompall Glaser 的合輯，1976 年成為第一張獲 RIAA 白金認證的鄉村專輯，也拿下 CMA 年度專輯。內容是四人 1970 至 1975 年的錄音，部分重混或補錄。開場〈My Heroes Have Always Been Cowboys〉寫 outlaw 的孤獨，其餘多半輕快：Nelson 唱懷舊與牛仔，Jennings 與 Nelson 合唱〈Good Hearted Woman〉。",
     "sourceUrls": [
      "https://en.wikipedia.org/wiki/Wanted!_The_Outlaws",
      "https://americansongwriter.com/on-this-day-in-1976-an-outlaw-compilation-becomes-the-first-country-album-to-go-platinum/",
@@ -10141,7 +10935,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/b6/56/02/b65602a7-0131-6036-6dfb-ed6b84771217/mzaf_14045390901826889572.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/a7/5c/33/a75c33fa-8f0c-4391-9ec3-c78e99801236/mzaf_9245375634656580418.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-29T11:30:00Z",
@@ -10190,15 +10984,23 @@
     "source": "worker:/album-rating + last.fm listeners",
     "checkedAt": "2026-08-29T11:30:00Z"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
-    "eligible": true,
-    "tier": "hall",
-    "reason": "多方樂評與音樂史文章一致將其列為「該十年最受推崇的鄉村專輯之一」，並公認點燃新傳統主義運動、鋪路 Garth Brooks 等後續世代，屬跨來源長期共識。",
-    "evidenceUrls": [
-     "https://en.wikipedia.org/wiki/Storms_of_Life",
-     "https://americansongwriter.com/on-this-day-in-1986-randy-travis-released-the-album-that-helped-shape-country-music-for-the-next-decade/"
-    ]
+    "eligible": false,
+    "tier": null,
+    "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。鄉村領域必提，跨類型共識弱",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": true,
+     "tier": "hall",
+     "reason": "多方樂評與音樂史文章一致將其列為「該十年最受推崇的鄉村專輯之一」，並公認點燃新傳統主義運動、鋪路 Garth Brooks 等後續世代，屬跨來源長期共識。",
+     "evidenceUrls": [
+      "https://en.wikipedia.org/wiki/Storms_of_Life",
+      "https://americansongwriter.com/on-this-day-in-1986-randy-travis-released-the-album-that-helped-shape-country-music-for-the-next-decade/"
+     ]
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "太過鄉村，是 Nashville 各家廠牌回絕他的理由，一講就講了五年。經紀人 Lib Hatcher 持續奔走，1985 年 2 月替他簽下 Warner Bros.，1986 年 6 月 2 日發行這張首張錄音室專輯。回絕理由就此反轉成浪潮起點：本作被視為新傳統主義浪潮的開端，帶動 Nashville 製作路線回歸鋼棒吉他與傳統唱腔。專輯 1987 年登上鄉村專輯榜冠軍，獲 RIAA 認證三白金，是史上第一張發行一年內銷量破 100 萬張的鄉村音樂首張錄音室專輯。",
@@ -10229,8 +11031,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": false,
-    "apexPool": true
+    "seedCards": true,
+    "apexPool": false
    }
   },
   {
@@ -10251,21 +11053,38 @@
    },
    "ratings": {
     "classic": 5,
-    "obscurity": 3,
+    "obscurity": 2,
     "accessibility": 1,
     "listeners": 41959,
-    "source": "worker:/album-rating + last.fm listeners",
-    "checkedAt": "2026-08-29T11:30:00Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 3,
+     "accessibility": 1,
+     "source": "worker:/album-rating + last.fm listeners",
+     "checkedAt": "2026-08-29T11:30:00Z",
+     "rarity": "rare"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：90 年代鄉村代表作（經典度 5），但無跨類型樂評正典共識；不上串流但極暢銷，冷門度 2｜L=41959"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
-    "eligible": true,
-    "tier": "hall",
-    "reason": "1990 年 CMA 年度專輯獎；史上最暢銷鄉村專輯（RIAA 18 倍白金），90 年代鄉村音樂商業化浪潮的指標作品，跨來源共識明確。",
-    "evidenceUrls": [
-     "https://en.wikipedia.org/wiki/No_Fences",
-     "https://theboot.com/garth-brooks-no-fences-album/"
-    ]
+    "eligible": false,
+    "tier": null,
+    "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。鄉村暢銷代表，樂評歷代榜不收",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": true,
+     "tier": "hall",
+     "reason": "1990 年 CMA 年度專輯獎；史上最暢銷鄉村專輯（RIAA 18 倍白金），90 年代鄉村音樂商業化浪潮的指標作品，跨來源共識明確。",
+     "evidenceUrls": [
+      "https://en.wikipedia.org/wiki/No_Fences",
+      "https://theboot.com/garth-brooks-no-fences-album/"
+     ]
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "餐廳裡忘了帶錢包，一句玩笑話後來寫成了〈Friends in Low Places〉。玩笑出自詞曲作者 Earl Bud Lee——他脫口說的那句「在下等階層有朋友」，1991 年替這首歌拿下 CMA 與 ACM 年度單曲獎。專輯 1990 年 8 月 27 日由 Capitol Nashville 發行，在鄉村專輯榜合計蟬聯 41 週冠軍，獲 RIAA 認證 18 白金，是美國史上最暢銷的鄉村專輯之一，也是 Brooks 轉向體育場鄉村、帶動九〇年代初商業大爆發的轉捩點。",
@@ -10296,8 +11115,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": false,
-    "apexPool": true
+    "seedCards": true,
+    "apexPool": false
    }
   },
   {
@@ -10317,22 +11136,39 @@
     "checkedAt": "2026-08-29T11:30:00Z"
    },
    "ratings": {
-    "classic": 5,
-    "obscurity": 2,
+    "classic": 4,
+    "obscurity": 1,
     "accessibility": 1,
     "listeners": 208869,
-    "source": "worker:/album-rating + last.fm listeners",
-    "checkedAt": "2026-08-29T11:30:00Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 2,
+     "accessibility": 1,
+     "source": "worker:/album-rating + last.fm listeners",
+     "checkedAt": "2026-08-29T11:30:00Z",
+     "rarity": "rare"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：listeners 20 萬，主流鄉村暢銷作；非跨來源正典，經典度降 4，冷門度改 1｜L=208869"
    },
-   "rarity": "uncommon",
+   "rarity": "common",
    "apexAssessment": {
-    "eligible": true,
-    "tier": "hall",
-    "reason": "1998 年 ACM 年度專輯獎；RIAA 鑽石認證，史上最暢銷鄉村團體／雙人輯紀錄保持者，公認 90 年代末鄉村主流化的代表作。",
-    "evidenceUrls": [
-     "https://en.wikipedia.org/wiki/Wide_Open_Spaces_(album)",
-     "https://albumism.com/features/10-fast-facts-dixie-chicks-wide-open-spaces"
-    ]
+    "eligible": false,
+    "tier": null,
+    "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。主流鄉村暢銷作，非跨來源正典",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": true,
+     "tier": "hall",
+     "reason": "1998 年 ACM 年度專輯獎；RIAA 鑽石認證，史上最暢銷鄉村團體／雙人輯紀錄保持者，公認 90 年代末鄉村主流化的代表作。",
+     "evidenceUrls": [
+      "https://en.wikipedia.org/wiki/Wide_Open_Spaces_(album)",
+      "https://albumism.com/features/10-fast-facts-dixie-chicks-wide-open-spaces"
+     ]
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "換了主唱、簽進大廠才灌錄的第四張，反而成了外界認識她們的第一張。Dixie Chicks 先以 Laura Lynch 領唱、在獨立廠牌發過三張專輯，本作是 Natalie Maines 加入後灌錄的第一張，也是樂團首張主流大廠 Monument 作品。1998 年 CMA 獎拿下年度團體與新人獎，隔年再以本作奪下年度專輯，1999 年 2 月的第 41 屆葛萊美另抱回最佳鄉村專輯。2003 年獲 RIAA 鑽石認證，全球出貨 1300 萬張。",
@@ -10344,7 +11180,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/3a/e6/5d/3ae65dfc-cde4-ad7d-ccd0-9e0899696774/mzaf_14187661489396535464.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f4/d5/c5/f4d5c587-0683-87e1-9118-5ead3660964c/mzaf_12885501140153992051.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-29T11:30:00Z",
@@ -10365,8 +11201,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": false,
-    "apexPool": true
+    "seedCards": true,
+    "apexPool": false
    }
   },
   {
@@ -10393,7 +11229,7 @@
     "source": "worker:/album-rating + last.fm listeners",
     "checkedAt": "2026-08-29T11:30:00Z"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -10410,7 +11246,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b7/07/64/b7076487-6ec1-6918-3543-cc639d27e41d/mzaf_15256635921620104194.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/8d/a8/75/8da875f7-10b6-0b87-357e-1efad5947bbb/mzaf_4261764851000198211.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-29T11:30:00Z",
@@ -10459,7 +11295,7 @@
     "source": "worker:/album-rating + last.fm listeners",
     "checkedAt": "2026-08-29T11:30:00Z"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -10477,7 +11313,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/fa/38/59/fa385924-4c0e-b6ab-15ac-c84d61d3e5ec/mzaf_14120317714244760942.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f7/57/6f/f7576f3d-d72e-b0b2-ab25-18289a7c3cfe/mzaf_4808820923463832880.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-29T11:30:00Z",
@@ -10526,7 +11362,7 @@
     "source": "worker:/album-rating + last.fm listeners",
     "checkedAt": "2026-08-29T11:30:00Z"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -10544,7 +11380,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/44/a7/99/44a79956-23b2-c234-f5a9-a4e4bfa28bf5/mzaf_17879880417771999838.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/7b/4f/1a/7b4f1ad6-031e-80df-5cd5-49673227341c/mzaf_14830690123986125516.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-29T11:30:00Z",
@@ -10593,7 +11429,7 @@
     "source": "worker:/album-rating + last.fm listeners",
     "checkedAt": "2026-08-29T11:30:00Z"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -10611,7 +11447,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/45/cf/54/45cf54d6-aa98-b9c5-93b3-61734b6f2aff/mzaf_15819265843943623392.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/3d/2d/d7/3d2dd7f0-846b-bbaf-aa97-cd29842a7a45/mzaf_3584536158276635994.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-29T11:30:00Z",
@@ -10678,7 +11514,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview112/v4/6e/b1/64/6eb164a8-13e3-23b0-304a-195a3b56482b/mzaf_6379962090569749242.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/53/7d/33/537d33d9-1f2a-e9c6-3287-b63b63326128/mzaf_1870679056119648651.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-29T11:30:00Z",
@@ -10727,7 +11563,7 @@
     "source": "worker:/album-rating + last.fm listeners",
     "checkedAt": "2026-08-29T11:30:00Z"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -10745,7 +11581,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/99/bb/f7/99bbf72a-5288-71eb-79a9-a1b4a8d89cdb/mzaf_17989628660766151708.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/60/8f/27/608f2726-6ff7-672b-520b-46e089153381/mzaf_4724250643593689447.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-29T11:30:00Z",
@@ -10794,7 +11630,7 @@
     "source": "worker:/album-rating + last.fm listeners",
     "checkedAt": "2026-08-29T11:30:00Z"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -10812,7 +11648,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/69/5e/fb/695efb55-b96f-fb4c-8f44-7042a91685d0/mzaf_18323420924109948143.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/44/d1/83/44d1834b-0fc9-feb2-4344-0b84c06b9d4f/mzaf_4178119913089125677.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-29T11:30:00Z",
@@ -10861,7 +11697,7 @@
     "source": "worker:/album-rating + last.fm listeners",
     "checkedAt": "2026-08-29T11:30:00Z"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -10881,7 +11717,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a5/02/37/a50237eb-4500-8553-3f19-e9ba99ad41fc/mzaf_555406682869929109.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/18/4b/26/184b2625-2be8-e79a-035f-d10ecec1f657/mzaf_9980193967122904947.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-29T11:30:00Z",
@@ -10930,7 +11766,7 @@
     "source": "worker:/album-rating + last.fm listeners",
     "checkedAt": "2026-08-29T11:30:00Z"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -10993,7 +11829,7 @@
     "source": "worker:/album-rating + last.fm listeners",
     "checkedAt": "2026-08-29T11:30:00Z"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -11057,7 +11893,7 @@
     "source": "worker:/album-rating + last.fm listeners",
     "checkedAt": "2026-08-29T11:30:00Z"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -11074,7 +11910,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/97/e6/73/97e673de-6197-6e4e-8fba-3c75b25ffb23/mzaf_14792315150417881956.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/06/ce/e1/06cee1b8-68b3-4e40-aa9b-2d5bc267b3dc/mzaf_3693645787661875132.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-29T11:30:00Z",
@@ -11139,7 +11975,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/99/43/75/994375b9-bcaa-90f3-82a7-ab2df1701c7e/mzaf_18351881274507002524.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/3c/6d/50/3c6d50ca-dd31-5208-7256-0b7ed579137a/mzaf_17732447856575321108.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-29T11:30:00Z",

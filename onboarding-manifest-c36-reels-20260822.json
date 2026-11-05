@@ -22,22 +22,39 @@
       },
       "ratings": {
         "classic": 3,
-        "obscurity": 5,
-        "accessibility": 5,
+        "obscurity": 4,
+        "accessibility": 4,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-22T02:55:01Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；1978年Victor（KVX-1039）的合成器妖怪音響設計盤，日本電子／實驗地下圈公認的特色品，一般玩家幾乎撞不到，且全碟無旋律可依附。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：查無可信前衛／噪音依據，異端不成立；試聽 ready，冷門度 5→4，硬蕊 5→4",
+        "previous": {
+          "classic": 3,
+          "obscurity": 5,
+          "accessibility": 5,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-22T02:55:01Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；1978年Victor（KVX-1039）的合成器妖怪音響設計盤，日本電子／實驗地下圈公認的特色品，一般玩家幾乎撞不到，且全碟無旋律可依附。",
+          "rarity": "legendary"
+        }
       },
-      "rarity": "epic",
+      "rarity": "uncommon",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "heresy",
-        "reason": "十首皆為依水木茂畫作而作的合成器音響設計，沒有節拍與旋律骨架，Victor原盤與2010年復刻皆歸類電子／musique concrète、實驗，明確不以悅耳為目的，符合異端門檻。",
-        "evidenceUrls": [
-          "https://music.apple.com/jp/album/yokai-genso-kaisetsu-e-shigeru-mizuki/369124054",
-          "https://musicbrainz.org/release-group/6a197692-c6a0-4a31-83cf-6cd85f50eb5f"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原異端未達該軸 7 星，降為一般卡。冷門實驗作，無「史上最難入耳之一」公認依據；listeners 缺值",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "heresy",
+          "reason": "十首皆為依水木茂畫作而作的合成器音響設計，沒有節拍與旋律骨架，Victor原盤與2010年復刻皆歸類電子／musique concrète、實驗，明確不以悅耳為目的，符合異端門檻。",
+          "evidenceUrls": [
+            "https://music.apple.com/jp/album/yokai-genso-kaisetsu-e-shigeru-mizuki/369124054",
+            "https://musicbrainz.org/release-group/6a197692-c6a0-4a31-83cf-6cd85f50eb5f"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "《鬼太郎》作者水木茂繪製各種日本傳統妖怪，森下登喜彦再依畫作以電子合成器設計聲音，共同完成這張「妖怪音響學」唱片。除了河童、座敷童，還收錄一反木綿、ぬらりひょん、砂かけ婆等台灣較陌生的妖怪，每首製作耗時超過五十小時。內容並非以悅耳為目的，而是聲響設計的百鬼夜行，一場「用耳朵見鬼」的體驗；內頁插畫全出自水木之手。",
@@ -49,7 +66,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/Music/v4/88/b6/3e/88b63ec3-f942-a390-0645-05a9408e1e7a/mzaf_437588174484120876.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/Music/v4/62/3d/ae/623dae0d-bcd9-d6f2-c3fe-b72195d2d3cd/mzaf_4891653668856016939.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-22T02:55:01Z",
@@ -69,8 +86,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": false,
-        "apexPool": true
+        "seedCards": true,
+        "apexPool": false
       }
     },
     {
@@ -182,7 +199,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/b8/b9/96/b8b996bd-683c-92cf-09bf-18f87dba03c1/mzaf_1460556165727561555.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/a7/14/6b/a7146b03-3613-0eb0-1d9e-982ba3a34e21/mzaf_9211237658540681227.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-22T02:55:01Z",
@@ -233,7 +250,7 @@
         "checkedAt": "2026-08-22T02:55:01Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Prestige 1956年名盤級陣容的 hard bop 現場感錄音，評價穩健但非該廠牌首選；靠 Coltrane 之名長年在爵士樂迷圈流通，非收藏家才知；四首中規中矩的長篇即興，入耳無礙。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -251,7 +268,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/04/32/35/0432356b-0268-950e-0f80-a4e7675307c7/mzaf_17201815899904561229.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/54/e6/9e/54e69eab-f94c-6e51-2a6e-3c17d077b2b7/mzaf_2266733530746411738.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-22T02:55:01Z",
@@ -301,7 +318,7 @@
         "checkedAt": "2026-08-22T02:55:01Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；廉價廠牌的蝙蝠俠搭車企劃，本身無樂史份量，但因 Sun Ra 與 Blues Project 同場而成為爵士／迷幻收藏的著名奇品，需要深度愛好者才會追；音樂是好懂的器樂搖滾。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -368,7 +385,7 @@
         "checkedAt": "2026-08-22T02:55:01Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；和ジャズ收藏圈評價高、近年由 Production Dessinée 復刻，但在菊地雅章作品序列中仍次於《Poo-Sun》《Hollow Out》；原盤屬深度愛好者領域，長篇原創modal演奏偏長但可聽。"
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -385,7 +402,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview118/v4/96/9e/f2/969ef2a9-d434-16de-0679-94f93e36d540/mzaf_9179430853668030431.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview128/v4/65/77/6f/65776fb9-3e62-5da9-9de2-43129a6386d5/mzaf_8965482132996222033.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-22T02:55:01Z",
@@ -449,20 +466,32 @@
         "classic": 3,
         "obscurity": 5,
         "accessibility": 4,
-        "listeners": null,
+        "listeners": 191,
         "source": "manual:genre-anchors",
         "checkedAt": "2026-08-22T02:55:01Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Wilen 從bebop轉向自由爵士時期的關鍵冷門盤，1966年 Vogue 原壓銷量極差、母帶佚失，2022年才有官方復刻，屬收藏家／學術領域；十二首短曲以破碎不規則的自由爵士語法寫成，入耳門檻高但仍有主題可循。"
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Wilen 從bebop轉向自由爵士時期的關鍵冷門盤，1966年 Vogue 原壓銷量極差、母帶佚失，2022年才有官方復刻，屬收藏家／學術領域；十二首短曲以破碎不規則的自由爵士語法寫成，入耳門檻高但仍有主題可循。",
+        "listenersSource": "worker /album-rating（apex-rebalance-20261103 Q2 補值）"
       },
       "rarity": "epic",
       "apexAssessment": {
-        "eligible": false,
-        "tier": null,
-        "reason": "歐洲自由爵士的重要側翼作品，但長期近乎絕跡、缺乏持續的跨來源正典討論，不足以列入殿堂；硬蕊 4 未達異端門檻。本環境無 listeners，流亡不評，惟原盤稀有、2022年前幾無流通，疑似 pearl，待店主補 listeners 覆核。",
-        "evidenceUrls": []
+        "eligible": true,
+        "tier": "pearl",
+        "reason": "頂點重整（apex-rebalance-20261103，2026-11-03）：升為流亡。Vogue 法國正規廠，收藏價高但已多次再發；非私壓、壓量無據極小（主線補收：代理判 no 是因缺聖杯口碑，但過硬條件：listeners 有效 1–299、非錯配、冷門度 5）",
+        "evidenceUrls": [
+          "https://www.last.fm/music/Barney+Wilen/Zodiac",
+          "https://en.wikipedia.org/wiki/Barney_Wilen"
+        ],
+        "previous": {
+          "eligible": false,
+          "tier": null,
+          "reason": "歐洲自由爵士的重要側翼作品，但長期近乎絕跡、缺乏持續的跨來源正典討論，不足以列入殿堂；硬蕊 4 未達異端門檻。本環境無 listeners，流亡不評，惟原盤稀有、2022年前幾無流通，疑似 pearl，待店主補 listeners 覆核。",
+          "evidenceUrls": []
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:apex-rebalance-20261103"
       },
       "description": {
-        "text": "法國薩克斯風手Barney Wilen 1966年為好友一部「不存在的電影」——受克蘇魯文學影響、最終只停在分鏡階段的超級英雄動畫——所寫的配樂。電影沒拍成，他們便以「黃道十二宮」概念建構出以音樂為敘事主體的聲音電影；正逢自由爵士盛行，Wilen放棄拿手的悠揚旋律，改以破碎、不規則、極具張力的自由爵士刻畫各星座性格。每首僅兩三分鐘，封面可愛內容卻驚人，當年銷量極差、母帶佚失，直到2022年才由家族提供私藏首版修復再版。",
+        "text": "《Zodiac》是法國次中音薩克斯風手 Barney Wilen 1966 年在 Disques Vogue 發行的專輯，十二首曲子以十二星座命名。當年銷量不佳，之後只有盜版流通，直到 2022 年 We Are Busy Bodies 取 Wilen 本人留下的原版唱片做母帶，才第一次正式再版。他曾和封面畫家想拿它當一部動畫電影的配樂，電影沒有拍成。編制是次中音薩克斯風、顫音琴兼鋼琴、貝斯與鼓。即興成分明顯，但不是最激進的自由爵士，整體氣氛接近電影配樂；〈Balance〉以顫音琴為重心，〈Lion〉是四人走得最遠的一首。",
         "sourceUrls": [
           "https://www.instagram.com/p/DTc31WpDyRD/",
           "https://barneywilenfr.bandcamp.com/album/zodiac",
@@ -489,8 +518,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": true,
-        "apexPool": false
+        "seedCards": false,
+        "apexPool": true
       }
     },
     {
@@ -537,7 +566,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/23/8f/a9/238fa969-b9c5-803f-48ba-4d6c113307f2/mzaf_9226215728418043171.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/16/ed/dd/16eddd29-4447-896c-0f60-2b04077a45ab/mzaf_3251796118761511989.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-22T02:55:01Z",
@@ -655,7 +684,7 @@
         "checkedAt": "2026-08-22T02:55:01Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Impulse! A-32，2008年入選葛萊美名人堂，是爵士抒情演奏的公認範本、Coltrane 流通量最大的作品之一；入門者最容易遇到的一張，旋律直白。"
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": true,
         "tier": "hall",
@@ -726,7 +755,7 @@
         "checkedAt": "2026-08-22T02:55:01Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；De La Soul 是嘻哈正典團體，但本作非其代表作；曾登 Billboard 200 第九名並獲葛萊美提名，旋律與取樣親人好入耳。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -743,7 +772,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b0/e4/f1/b0e4f1d0-9e39-8eb0-5ec7-4f6f7f4c74e0/mzaf_9055996080241136760.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/05/a4/e6/05a4e66e-1f1c-f45d-eb8b-906640718275/mzaf_8750227738771737769.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-22T02:55:01Z",
@@ -794,7 +823,7 @@
         "checkedAt": "2026-08-22T02:55:01Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；日本 1977 年 King Records 企畫盤，在 rare groove／和ジャズ挖掘圈有明確地位但無主流樂史論述；一般玩家幾乎不會撞見，音色卻華麗好入耳。"
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -859,7 +888,7 @@
         "checkedAt": "2026-08-22T02:55:01Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；取樣名團第三作，樂評與客座陣容俱強但地位不及《Since I Left You》；大牌加持下能見度高，聲響夢幻不刺耳。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -876,7 +905,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/a4/13/c0/a413c0e7-0cf2-3621-942c-2017a3077849/mzaf_16830926980984970477.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/28/66/2d/28662d5b-8a41-874d-e664-455ac6825150/mzaf_17645416149704549489.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-22T02:55:01Z",
@@ -926,7 +955,7 @@
         "checkedAt": "2026-08-22T02:55:01Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；戶川純在日本地下／new wave 的影響力明確，但本作非其最廣為傳頌者；日本以外屬深度愛好者領域，狂吼式唱腔與電子聲響需要一點適應。"
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -994,7 +1023,7 @@
         "checkedAt": "2026-08-22T02:55:01Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；2018 年 Born Bad 出品的當代法國團作，圈內評價好但尚無確立地位；一般玩家難撞見，聲響毛邊卻旋律直白。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -1011,7 +1040,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/1d/70/ff/1d70ff6c-eee1-c433-9f72-211e5466962a/mzaf_15138768716939006871.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/45/0a/12/450a12ec-c11e-6a6b-fd21-9cebc80c52bf/mzaf_388512888277399207.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-22T02:55:01Z",
@@ -1062,7 +1091,7 @@
         "checkedAt": "2026-08-22T02:55:01Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Aphex Twin 與 μ-Ziq 唯一一次合作，於 IDM 圈屬公認要作並在 2016 年由 Planet Mu 增訂再版；樂迷領域知名度高，聲響輕盈易入耳。"
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -1079,7 +1108,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/90/15/96/9015961a-11d6-fcb0-4c55-79aa86cf0c65/mzaf_10212856108558396706.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f9/c7/e4/f9c7e4fe-8bc7-dbf2-fa76-2c8a4155094f/mzaf_9135251342862052749.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-22T02:55:01Z",
@@ -1130,7 +1159,7 @@
         "checkedAt": "2026-08-22T02:55:01Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Luke Vibert 於 Ninja Tune 的代表期作品，Pitchfork 8.0、NME 3.5／5 有明確評價地位；屬樂迷領域，鼓點圓潤不刺耳。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -1147,7 +1176,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/ac/15/61/ac156176-6943-2a42-ec79-f1cd990a03f4/mzaf_6059873312884387486.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/21/47/0b/21470b31-42e1-5dfa-d2f8-27aa6d45b1b7/mzaf_6418369998367627142.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-22T02:55:01Z",
@@ -1198,7 +1227,7 @@
         "checkedAt": "2026-08-22T02:55:01Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；2024 年自主發行的當代 trip-hop／ambient 作品，圈外幾無論述，屬深度愛好者領域；編曲情緒明確、旋律直白好入耳。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -1215,7 +1244,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/59/13/cf/5913cf70-d2c4-eb79-3981-f4031ec3112b/mzaf_7646555934270498752.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/93/a4/06/93a40693-27c3-3956-3d62-c67b2e3f98ae/mzaf_4726541718673069627.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-22T02:55:01Z",
@@ -1266,7 +1295,7 @@
         "checkedAt": "2026-08-22T02:55:01Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Eno 與 Jah Wobble 唯一一次合作，且源自 Derek Jarman 遺作配樂，有明確特色與文獻價值；屬樂迷領域，長篇 dub 器樂需要耐心。"
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -1283,7 +1312,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview113/v4/94/91/6e/94916e89-8252-9404-7174-a3569dcf2411/mzaf_9014522820070997613.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview123/v4/f9/11/5d/f9115d77-fb4c-ace0-b633-affccb0c6a83/mzaf_14907376667132285899.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-22T02:55:01Z",
@@ -1401,7 +1430,7 @@
         "checkedAt": "2026-08-22T02:55:01Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Galaxy 1978 年的鋼琴三重奏標準曲盤，被視為 Red Garland 晚期最好的錄音之一，但非爵士正典核心；廠牌小、曲目直白好入耳，玩家多半要翻到 70 年代後期硬派爵士區才會遇到。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -1418,7 +1447,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/af/2c/3f/af2c3fff-80d7-8309-6e9a-d28973fb3cec/mzaf_4681739711774572398.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/1b/44/18/1b4418d7-4b2d-b240-8082-d5b9b9f32d36/mzaf_16670944588862893786.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-22T02:55:01Z",
@@ -1432,73 +1461,6 @@
         "mbArtist": "Red Garland / Ron Carter / Philly Joe Jones",
         "mbFirstRelease": "1978",
         "upcNote": "Crossings (? US)",
-        "curatorWhy": "IG reel 用過,店主要求入卡池成為有封面有屬性的正式卡",
-        "curatorRisk": ""
-      },
-      "published": {
-        "cardCatalog": true,
-        "descriptionKv": true,
-        "albumOverride": true,
-        "seedCards": true,
-        "apexPool": false
-      }
-    },
-    {
-      "artist": "Guru",
-      "album": "Jazzmatazz Volume 1",
-      "identity": {
-        "releaseType": "Album",
-        "rgMbid": "cb4db891-330d-394d-af54-3edc37e8416e",
-        "upc": "094632199829",
-        "aliasesChecked": true,
-        "aliasReview": "卡片用名 Guru（Gang Starr 的 Keith Elam），與 MB credit 相同。卡片album 寫作《Jazzmatazz Volume 1》，MB 作《Jazzmatazz, Volume 1》、Wikipedia 條目名為《Guru's Jazzmatazz, Vol. 1》，三者同指 1993 年 Chrysalis 原盤，僅標點與冠名差異。已排除 Vol. 2／Vol. 3／Vol. 4 續作與 Deluxe Edition。Apple 日本商店把藝人譯為「グールー」，僅為在地化寫法。"
-      },
-      "cover": {
-        "url": "https://coverartarchive.org/release-group/cb4db891-330d-394d-af54-3edc37e8416e/front",
-        "source": "caa",
-        "httpStatus": 307,
-        "checkedAt": "2026-08-22T02:55:01Z",
-        "visuallyVerified": true
-      },
-      "ratings": {
-        "classic": 4,
-        "obscurity": 3,
-        "accessibility": 1,
-        "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-22T02:55:01Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；公認替 jazz rap 立下做法的作品、也是 Guru 個人名下代表作，SPIN 選為 1993 年度第 20 名；曾進 Billboard 200 第 94 名，屬嘻哈樂迷普遍知道但一般聽眾未必碰到的層級，聲響溫潤直白。"
-      },
-      "rarity": "rare",
-      "apexAssessment": {
-        "eligible": false,
-        "tier": null,
-        "reason": "影響力集中在 jazz rap 一脈，尚未達到跨來源公認的嘻哈史核心共識，故不列殿堂。",
-        "evidenceUrls": []
-      },
-      "description": {
-        "text": "爵士嘻哈（jazz rap）的起點——不再只是取樣爵士唱片，而是真的請來爵士樂手與嘻哈音樂人現場合作。陣容囊括 Donald Byrd（小號）、Roy Ayers（鐵琴）、Branford Marsalis（薩克斯風）、Courtney Pine、Lonnie Liston Smith 等人。Guru 先立好電子節拍與 bass line，讓爵士樂手在律動上即興，最後才填詞，做出嘻哈前所未見的有機聲響。1993 年由 Chrysalis 發行，把嘻哈的節奏與爵士的生命力接在一起，三十年後依然鮮活。",
-        "sourceUrls": [
-          "https://www.instagram.com/p/DWgtirEjwlW/",
-          "https://en.wikipedia.org/wiki/Guru%27s_Jazzmatazz,_Vol._1",
-          "https://musicbrainz.org/release-group/cb4db891-330d-394d-af54-3edc37e8416e"
-        ]
-      },
-      "preview": {
-        "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/a6/ac/68/a6ac68f6-db8b-9133-cce1-f4520ed85814/mzaf_6845301876910627534.plus.aac.p.m4a",
-        "source": "apple",
-        "httpStatus": 200,
-        "checkedAt": "2026-08-22T02:55:01Z",
-        "note": "先前只抓到 22 曲的《Guru's Jazzmatazz, Vol. 1 (Deluxe Edition)》(1362365584)，依配對紀律不採用；改取 us 商店 collectionId 723627224《Jazzmatazz, Vol.1》（12 曲，℗ 1993 Virgin Records America）。曲序與 MB Chrysalis 原盤 12 曲完全一致：Introduction／Loungin'／When You're Near…Sights in the City，且非 Vol. II／Vol. 4。首曲〈Introduction〉試聽實測 200。"
-      },
-      "research": {
-        "suggestedYear": 1993,
-        "yearNote": "MB first-release 1993-05-18，與 Wikipedia 記載的 1993 年 5 月 18 日 Chrysalis 發行一致。",
-        "mbTitle": "Jazzmatazz, Volume 1",
-        "mbArtist": "Guru",
-        "mbFirstRelease": "1993-05-18",
-        "upcNote": "Jazzmatazz, Volume 1 (1993 CA)",
         "curatorWhy": "IG reel 用過,店主要求入卡池成為有封面有屬性的正式卡",
         "curatorRisk": ""
       },
@@ -1603,7 +1565,7 @@
         "checkedAt": "2026-08-22T02:55:01Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Erroll Garner 本人地位極高，但本作是 1961 年 Mercury 重錄自作名曲的商業企畫盤，不在《Concert by the Sea》那一級的正典位置；發行後少被再版、串流上長期只掛合輯，唯有翻找 Mercury 目錄才會遇到，演奏溫潤好入耳。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -1620,7 +1582,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e5/64/4b/e5644b85-4364-80a9-34b3-3df230a77685/mzaf_18253393790326018263.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6c/ae/64/6cae64b1-6ccd-9366-0bcb-a940afd6a466/mzaf_12146610703886097280.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-22T02:55:01Z",
@@ -1670,7 +1632,7 @@
         "checkedAt": "2026-08-22T02:55:01Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；日本自由爵士與地下嘻哈跨界的主要成果，2015 年被 Fact 選入史上最佳 trip-hop 專輯第 25 名；但屬日盤起家、國際流通有限的深度愛好者領域，聲響沉穩流暢並不難入耳。"
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -1735,7 +1697,7 @@
         "checkedAt": "2026-08-22T02:55:01Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；2025 年獨立發行的當代人聲爵士新作，合格但尚無樂史評價可言；MB 全站僅此一筆 release-group、廠牌 Quai Son Records 規模極小，屬收藏／在地圈才會遇到，演唱與編曲都相當直白。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -1752,7 +1714,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/4c/a1/a7/4ca1a7ab-faa1-bb75-cf10-527bd57ccf00/mzaf_16402630709224195059.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/10/f5/a1/10f5a187-2f61-c939-5a9e-1f3daa0ae393/mzaf_9096945741226221374.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-22T02:55:01Z",
@@ -1798,21 +1760,38 @@
       "ratings": {
         "classic": 5,
         "obscurity": 2,
-        "accessibility": 1,
+        "accessibility": 2,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-22T02:55:01Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；hard bop 成形期的核心文獻，Wikipedia 記其錄音「helped establish the hard bop style」、hard bop 條目直指此風格一般被視為源自 Blakey 領軍的 Jazz Messengers；Blue Note BLP 1518 是長銷正典，爵士入門就會遇到，〈The Preacher〉旋律通俗好入耳。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：硬咆勃奠基作，爵士史必提；主流 bop 硬蕊 1 偏低改 2",
+        "previous": {
+          "classic": 5,
+          "obscurity": 2,
+          "accessibility": 1,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-22T02:55:01Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；hard bop 成形期的核心文獻，Wikipedia 記其錄音「helped establish the hard bop style」、hard bop 條目直指此風格一般被視為源自 Blakey 領軍的 Jazz Messengers；Blue Note BLP 1518 是長銷正典，爵士入門就會遇到，〈The Preacher〉旋律通俗好入耳。",
+          "rarity": "rare"
+        }
       },
       "rarity": "uncommon",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "跨來源長期共識視本次錄音為 hard bop 成形的核心文獻：Blue Note 1500 系列長銷正典、Silver 首張 12 吋，且 Jazz Messengers 由此起家，符合殿堂「該領域史上核心」標準。",
-        "evidenceUrls": [
-          "https://en.wikipedia.org/wiki/Horace_Silver_and_the_Jazz_Messengers",
-          "https://en.wikipedia.org/wiki/Hard_bop"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。硬咆勃奠基作屬爵士類型內 5，綜合歷代榜罕收",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "跨來源長期共識視本次錄音為 hard bop 成形的核心文獻：Blue Note 1500 系列長銷正典、Silver 首張 12 吋，且 Jazz Messengers 由此起家，符合殿堂「該領域史上核心」標準。",
+          "evidenceUrls": [
+            "https://en.wikipedia.org/wiki/Horace_Silver_and_the_Jazz_Messengers",
+            "https://en.wikipedia.org/wiki/Hard_bop"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "hard bop 的誕生之作。當 bebop 把爵士門檻拉得太高，兩股勢力起而對抗：一是 Miles Davis 的 cool，放慢節奏追求優美；另一是 Horace Silver 與 Art Blakey 領銜的 fire——保留快節奏，但旋律更通俗、讓人跟著跺腳歡呼。本張收錄替 hard bop 定調的〈The Preacher〉與〈Doodlin'〉，也是 The Jazz Messengers 草創期的首張專輯；這支樂團日後猶如爵士界的「變種人學校」，孕育出 Wayne Shorter、Lee Morgan 等大師。",
@@ -1824,7 +1803,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/60/79/6f/60796f8f-929f-426e-8363-fbbcdb0e0481/mzaf_17143058198802336089.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a7/dd/a2/a7dda2f5-07cb-ba86-eaad-d4389521dcfd/mzaf_13131253089110373438.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-22T02:55:01Z",
@@ -1844,8 +1823,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": false,
-        "apexPool": true
+        "seedCards": true,
+        "apexPool": false
       }
     }
   ]

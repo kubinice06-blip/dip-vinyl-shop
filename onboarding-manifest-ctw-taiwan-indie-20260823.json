@@ -94,7 +94,7 @@
         "checkedAt": "2026-08-23T08:52:19Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；1985 年成軍、台灣最早一批自行創作的重金屬樂團的首張正式發行，有明確樂史位置但非跨界共識代表作；旋律性重金屬入耳不難。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -162,7 +162,7 @@
         "checkedAt": "2026-08-23T08:52:19Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；2000 年代中期台北 The Wall／地下社會世代後搖滾團的唯一一張專輯，場景內有明確位置；器樂鋪陳的長段落使入耳需要耐心。"
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -178,7 +178,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview112/v4/ba/a4/52/baa45286-7560-4a29-3b73-7a8626cb95e3/mzaf_4481536167802857924.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview112/v4/4a/eb/41/4aeb415f-e9a7-d1e4-efb3-04b55514eb9c/mzaf_17568910209738425759.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T08:52:19Z",
@@ -229,7 +229,7 @@
         "checkedAt": "2026-08-23T08:52:19Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；1976 水晶唱片時期的第三張、也是休團前最後一張，同名曲進入《藍色大門》原聲帶，在台灣獨立場景有明確地位但非其代表作。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -245,7 +245,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/44/06/85/440685cf-9b0a-ca89-edd6-61b366600c1b/mzaf_7991356389591385662.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/4e/0b/74/4e0b749e-43d0-19b1-506e-b30cf453febb/mzaf_1249544039580837391.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T08:52:19Z",
@@ -297,7 +297,7 @@
         "checkedAt": "2026-08-23T08:52:19Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；第 21 屆金曲獎流行類最佳樂團獎得主，是 1976 由地下走進主流體系的分水嶺，樂迷領域內知名度高、入耳門檻低。"
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -365,7 +365,7 @@
         "checkedAt": "2026-08-23T08:52:19Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；董事長樂團編號第 01 張的正規專輯，台語搖滾在 2000 年前後由地下走向通路的樣本，地位明確但獎項落在後續作品。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -381,7 +381,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/f9/08/87/f90887bf-7fcb-0e7c-5999-a7e6da72746e/mzaf_5183611952188065644.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f9/93/f3/f993f30c-f3d9-a6ae-fed6-a95ea4fae778/mzaf_5900247988376794124.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T08:52:19Z",
@@ -501,14 +501,23 @@
       "apexAssessment": {
         "eligible": true,
         "tier": "heresy",
-        "reason": "全碟母帶做成單一軌、約 51 分鐘不分軌，Discogs 標記 Noise／Experimental／Industrial，段落標題與勞工遊行現場錄音直接嵌入，無旋律與節拍可依附，符合異端的極端入耳難度。",
+        "reason": "頂點重整（apex-rebalance-20261103，2026-11-03）：升為異端。台灣第一個噪音團、自製自發的首張噪音專輯，反藝術暴力表演；華語圈極端先驅，但缺國際「史上極端」公論",
         "evidenceUrls": [
-          "https://api.discogs.com/releases/1360708",
-          "https://musicbrainz.org/release-group/c653c34d-05c6-47e0-afc7-be22f3607542"
-        ]
+          "https://soundtraces.tw/?p=100580",
+          "https://whitefungus.com/wasteland-utopia-history-taiwanese-noise"
+        ],
+        "previous": {
+          "eligible": false,
+          "tier": null,
+          "reason": "方案 C（audit-20261102，2026-11-03）：原異端未達該軸 7 星，降為一般卡。台灣噪音先驅，但無「史上最難入耳之一」國際公認依據，止於5",
+          "evidenceUrls": [],
+          "source": "manual:audit-20261102"
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:apex-rebalance-20261103"
       },
       "description": {
-        "text": "1994 年由台北的 Noise 廠牌發行（NA 03），只壓四百張。母帶做成單一軌、約五十一分鐘不斷開，內部分成十二個標題段落，其中〈11:15 AM, June 29, 1994. Labor's Demonstration／Police's Declaration in Taipei〉直接嵌入那天台北勞工遊行與警方廣播的現場錄音。噪音、工業與電子器材的持續堆疊是全片唯一的語言，封面自稱 Made in Taiwan Noise Production。",
+        "text": "《Z.S.L.O.》是零與聲音解放組織 1994 年的作品。這個團 1992 年由輔仁大學學生林其蔚、劉行一、陳家強成立，是台灣第一個噪音團體，發行過台灣第一張自製、自發、自銷的噪音專輯。1993 年王福瑞創立實驗音樂廠牌兼刊物《NOISE》，同年就在刊物裡介紹過他們的卡帶。他們的演出採低度控制，帶暴力與性愛元素，引來藝術界與大眾媒體強烈批評；1995 年臺北國際後工業藝術祭上，他們潑灑一桶廚餘，腐臭讓日本團體 C.C.C.C. 拒絕演出。成員自述素材來自貧困的成長背景與台北近郊的工業城鎮。他們的作品現已全部絕版。",
         "sourceUrls": [
           "https://api.discogs.com/releases/1360708",
           "https://musicbrainz.org/release-group/c653c34d-05c6-47e0-afc7-be22f3607542",
@@ -577,23 +586,40 @@
         "visuallyVerified": true
       },
       "ratings": {
-        "classic": 5,
+        "classic": 4,
         "obscurity": 4,
         "accessibility": 3,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-23T08:52:19Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；台灣出版史最後一張被行政院新聞局查禁的專輯，是解嚴後禁歌史的收尾事件，跨中文維基、聲軌與《造音翻土》多方記載。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：台灣地下搖滾 cult 作，場景里程碑而非人人必提；經典度 5→4",
+        "previous": {
+          "classic": 5,
+          "obscurity": 4,
+          "accessibility": 3,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-23T08:52:19Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；台灣出版史最後一張被行政院新聞局查禁的專輯，是解嚴後禁歌史的收尾事件，跨中文維基、聲軌與《造音翻土》多方記載。",
+          "rarity": "epic"
+        }
       },
-      "rarity": "epic",
+      "rarity": "uncommon",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "店主裁定升殿堂（2026-08-23）：台灣出版史最後一張被行政院新聞局查禁的專輯，解嚴後禁歌史的收尾事件；店主本人查閱過查禁的原始文件。中文維基〈趙一豪〉載新聞局以「歌詞粗俗不雅、有違社會善良風俗」為由查扣並發布新聞稿，該條目引用的一手整理是聲軌（soundtraces.tw）〈最後一張查禁專輯〉。研究階段因 soundtraces.tw 在遠端環境被 egress proxy 擋住無法實讀而保守判 false，此處依店主第一手查證改判；第二個證據網址是維基所引之來源，本環境未能親讀，店主已確認。",
-        "evidenceUrls": [
-          "https://zh.wikipedia.org/wiki/%E8%B6%99%E4%B8%80%E8%B1%AA",
-          "https://soundtraces.tw/media-publication/%E6%9C%80%E5%BE%8C%E4%B8%80%E5%BC%B5%E6%9F%A5%E7%A6%81%E5%B0%88%E8%BC%AF%E3%80%8A%E6%8A%8A%E6%88%91%E8%87%AA%E5%B7%B1%E6%8E%8F%E5%87%BA%E4%BE%86%E3%80%8B/"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。台灣地下搖滾代表，該國類型里程碑止於5",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "店主裁定升殿堂（2026-08-23）：台灣出版史最後一張被行政院新聞局查禁的專輯，解嚴後禁歌史的收尾事件；店主本人查閱過查禁的原始文件。中文維基〈趙一豪〉載新聞局以「歌詞粗俗不雅、有違社會善良風俗」為由查扣並發布新聞稿，該條目引用的一手整理是聲軌（soundtraces.tw）〈最後一張查禁專輯〉。研究階段因 soundtraces.tw 在遠端環境被 egress proxy 擋住無法實讀而保守判 false，此處依店主第一手查證改判；第二個證據網址是維基所引之來源，本環境未能親讀，店主已確認。",
+          "evidenceUrls": [
+            "https://zh.wikipedia.org/wiki/%E8%B6%99%E4%B8%80%E8%B1%AA",
+            "https://soundtraces.tw/media-publication/%E6%9C%80%E5%BE%8C%E4%B8%80%E5%BC%B5%E6%9F%A5%E7%A6%81%E5%B0%88%E8%BC%AF%E3%80%8A%E6%8A%8A%E6%88%91%E8%87%AA%E5%B7%B1%E6%8E%8F%E5%87%BA%E4%BE%86%E3%80%8B/"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "水晶唱片出版，1988 年錄音、1990 年發行，隨即被行政院新聞局以「歌詞粗俗不雅、有違社會善良風俗」查扣，是台灣出版史最後一張被查禁的專輯——新聞稿還寫下「屬於作者個人的情緒垃圾」。查禁後水晶改題《把我自己收回來》重發，把〈改變〉〈把我自己掏出來〉〈震動〉換成〈這幾天〉〈把我自己收回來〉〈創造〉三首新版。趙一豪同時是 Double X 成員。",
@@ -626,8 +652,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": false,
-        "apexPool": true
+        "seedCards": true,
+        "apexPool": false
       }
     },
     {
@@ -743,7 +769,7 @@
         "checkedAt": "2026-08-23T08:52:19Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；雷光夏首張個人作品、水晶唱片聲音實驗路線在流行邊界上的起點，她日後橫跨電影配樂並三金入圍，作品本身則清簡易入。"
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -827,7 +853,7 @@
         "checkedAt": "2026-08-23T08:52:19Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；台客搖滾成型期的原型作，〈轉吧！七彩霓虹燈〉是辨識度最高的一首；旋律俗艷直白但作品本身在台灣以外近乎不流通。"
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -844,7 +870,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/54/58/bb/5458bba3-169c-0cbb-37ea-234bced1433a/mzaf_15066083130830521542.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/8b/f0/5d/8bf05de5-15d5-96c2-dba2-73a21d3b3a4e/mzaf_2956292439613994048.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T08:52:19Z",
@@ -895,7 +921,7 @@
         "checkedAt": "2026-08-23T08:52:19Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；1990 年代末被主流唱片公司簽下的台灣獨立樂團代表之一，解散前的最後一張；旋律直白，但全球數位通路與資料庫幾乎不流通。"
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -1042,7 +1068,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/a0/41/f8/a041f834-c295-3c01-e7d0-2bcf8e07d6d9/mzaf_1729234052264625906.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/17/95/74/1795743d-5589-5d28-7c9e-baf8a028c8fc/mzaf_6544547075912916563.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T08:52:19Z",
@@ -1094,7 +1120,7 @@
         "checkedAt": "2026-08-23T08:52:19Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；海洋音樂祭大賞後的首張，入圍第十八屆金曲獎最佳樂團並獲中華音樂人交流協會年度十大專輯；旋律直白易入耳，但流通僅限台灣獨立市場。"
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -1111,7 +1137,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/f2/ff/47/f2ff47a2-24b3-e67e-5c3e-0d0a776adc54/mzaf_17513058064982049304.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/4f/bb/1a/4fbb1a33-8373-a5d5-7f3d-1eb3a99632b1/mzaf_9921425653066199478.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T08:52:19Z",
@@ -1180,7 +1206,7 @@
         "checkedAt": "2026-08-23T08:52:19Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；入圍第二十一屆金曲獎最佳樂團的第二張，地位在首張之下但仍是這條原住民獨立樂團路線的主要作品；旋律直白，MB 未建檔、流通有限。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -1283,7 +1309,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/Music/b7/0c/4e/mzm.dreosxjo.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/Music/cb/e6/83/mzm.imlvwaib.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T08:52:19Z",
@@ -1335,7 +1361,7 @@
         "checkedAt": "2026-08-23T08:52:19Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；入圍二○一二年金曲獎最佳專輯包裝獎與最佳台語專輯獎，是樂團把社運參與與母語嘻哈做得最完整的一張，但地位在前作之下。"
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -1403,7 +1429,7 @@
         "checkedAt": "2026-08-23T08:52:19Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；入圍二○一四年金音創作獎最佳樂團與最佳搖滾專輯，其中〈失去記憶的城市〉拿下最佳民謠單曲；台語民謠搖滾的旋律直白，流通限於台灣獨立市場。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -1419,7 +1445,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a7/be/c0/a7bec074-ed44-9c03-231c-60ecb284dd9c/mzaf_6072633113259359768.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/bd/15/a2/bd15a2bf-ff2b-872a-3607-c1a37c479e44/mzaf_17191749598222129553.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T08:52:19Z",
@@ -1608,7 +1634,7 @@
         "checkedAt": "2026-08-23T08:52:19Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；小白兔唱片第一號出版品、廠牌世代的開場，但樂團本身流通極窄；長曲式器樂鋪陳入耳需要一點時間。"
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -1676,7 +1702,7 @@
         "checkedAt": "2026-08-23T08:52:19Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；2000 年代末台北 indie rock 世代的固定班底、樂團第一張全長作品，地位清楚但非開創；旋律線明確，長曲式略增門檻。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -1743,7 +1769,7 @@
         "checkedAt": "2026-08-23T08:52:19Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；2000 年代台北清新吉他流的代表首作，有明確場景位置但無獎項或榜單背書；雙吉他編寫清亮好入耳。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -1810,7 +1836,7 @@
         "checkedAt": "2026-08-23T08:52:19Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；風和日麗世代的代表作、台灣民謠搖滾接上土地與文學議題的一線，地位明確但非開創；民謠編制入耳無礙。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -1877,7 +1903,7 @@
         "checkedAt": "2026-08-23T08:52:19Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；「師大公園四大天王」與絕望世代代表團的首張，場景位置明確；狂躁電吉他與失真破嗓有一定粗礪門檻。"
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -1893,7 +1919,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/29/8b/5a/298b5af5-2d18-e8e5-2d81-7cbc6c0aee8e/mzaf_4369616448121546151.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/9f/3c/5b/9f3c5b7b-ccad-1311-bcdc-a03008f4951a/mzaf_4739376752111374071.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T08:52:19Z",
@@ -1945,7 +1971,7 @@
         "checkedAt": "2026-08-23T08:52:19Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；陳珊妮出道作、台灣女性創作者從地下廠牌起步的關鍵樣本，屬公認的藝人代表作之一；歌本身旋律清楚。"
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -2005,15 +2031,24 @@
         "visuallyVerified": true
       },
       "ratings": {
-        "classic": 5,
+        "classic": 4,
         "obscurity": 3,
         "accessibility": 3,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-23T08:52:19Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；名列 1993–2005 台灣流行音樂百張最佳專輯、樂評長期高度評價的正典盤；電子搖滾編曲與情慾主題比她早期作品硬一些。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：藝人代表作級另類流行；非場景必提首選",
+        "previous": {
+          "classic": 5,
+          "obscurity": 3,
+          "accessibility": 3,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-23T08:52:19Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；名列 1993–2005 台灣流行音樂百張最佳專輯、樂評長期高度評價的正典盤；電子搖滾編曲與情慾主題比她早期作品硬一些。",
+          "rarity": "epic"
+        }
       },
-      "rarity": "epic",
+      "rarity": "uncommon",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -2029,7 +2064,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/82/1e/c0/821ec039-d103-6e3c-e5be-80e7b7bba65f/mzaf_8628414072717883150.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d5/b9/ac/d5b9ac97-f1d0-a62e-3a7e-50cbd9d20476/mzaf_5583347480127937152.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T08:52:19Z",
@@ -2080,7 +2115,7 @@
         "checkedAt": "2026-08-23T08:52:19Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；入圍第十屆金曲獎最佳新人、台灣 lo-fi 與臥室民謠的先聲，是後來女聲創作線公認的上游；歌本身輕巧好入耳。"
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -2165,7 +2200,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/cf/c4/c1/cfc4c16f-c255-34c2-c44e-208aac0f9aeb/mzaf_1806445213009074928.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/1f/d3/82/1fd38290-f1e7-c91a-9687-07ea6229d591/mzaf_10100343315570233408.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T08:52:19Z",
@@ -2210,11 +2245,17 @@
       "ratings": {
         "classic": 4,
         "obscurity": 3,
-        "accessibility": 2,
+        "accessibility": 3,
         "listeners": null,
         "source": "manual:genre-anchors",
         "checkedAt": "2026-08-23T08:52:19Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；滅火器從高雄地方龐克團走向全國前的關鍵作，收有後來成為社運場合合唱曲的〈晚安台灣〉；龐克編制直白好入耳。"
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；滅火器從高雄地方龐克團走向全國前的關鍵作，收有後來成為社運場合合唱曲的〈晚安台灣〉；龐克編制直白好入耳。",
+        "previousAccessibility": {
+          "accessibility": 2,
+          "rarity": "rare",
+          "at": "2026-11-04"
+        },
+        "loudFloorNote": "硬蕊度音量下限（2026-11-04 店主定案）：台式流行龐克，失真吉他全程推進"
       },
       "rarity": "uncommon",
       "apexAssessment": {
@@ -2233,7 +2274,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/bf/1f/5c/bf1f5c0f-39f7-7240-c721-c8e95df29cc6/mzaf_9019679743908260392.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/32/5b/cd/325bcd1b-8145-4a21-ea12-f811f1efc8cb/mzaf_9862685217528187717.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T08:52:19Z",
@@ -2285,7 +2326,7 @@
         "checkedAt": "2026-08-23T08:52:19Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；入圍第 17 屆金曲獎最佳樂團的首張正式專輯，是蘇打綠公認的起點；樂團後來極為知名，曲目旋律直白。"
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -2301,7 +2342,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/4d/15/a5/4d15a567-2441-866b-3b50-c7aa2baf5b6e/mzaf_12546892781542933113.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/22/a2/5c/22a25cb9-737b-25cb-8c0f-5c9934ae6ffa/mzaf_4547136249213791226.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T08:52:19Z",
@@ -2369,7 +2410,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/31/95/ed/3195ed6a-8b1c-9323-05b9-ba4005f9d2ba/mzaf_1948730061508960872.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/af/f7/62/aff762c0-8186-e288-d5dc-2464ade8f609/mzaf_12102660752311283860.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T08:52:19Z",
@@ -2499,23 +2540,44 @@
         "note": "原圖 250×215 非正方，右緣整條綠底直排側標宣傳條（印「掌聲鼓勵鼓勵!!」＋團員合照）。改用 Apple 台灣商店 165681960《新寶島康樂隊I - 多情兄》官方封面（1000×1000bf），已下載目視確認：正方、褐調台灣公路與鐵道號誌堆疊（通霄 Tunghsiao／梧棲 Wuchi／新竹 17／通霄海水浴場等），中央霓虹燈箱印直排「新寶島康樂隊」，無側標無貼紙"
       },
       "ratings": {
-        "classic": 4,
+        "classic": 5,
         "obscurity": 2,
         "accessibility": 2,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-23T08:52:19Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；新台語歌運動之後把台語／客語搖滾團體化的第一步，樂團日後兩度拿下金曲最佳演唱組合；陳昇為主流大牌，此作在台灣流通量大、旋律直白。"
+        "source": "manual:hall-expansion-20261103",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "店主 2026-11-03 定案殿堂擴充：殿堂最低門檻 classic=5，經典度由 4 調為 5（只動經典度）",
+        "previous": {
+          "classic": 4,
+          "obscurity": 2,
+          "accessibility": 2,
+          "listeners": null,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-23T08:52:19Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；新台語歌運動之後把台語／客語搖滾團體化的第一步，樂團日後兩度拿下金曲最佳演唱組合；陳昇為主流大牌，此作在台灣流通量大、旋律直白。",
+          "rarity": "rare"
+        }
       },
       "rarity": "uncommon",
       "apexAssessment": {
-        "eligible": false,
-        "tier": null,
-        "reason": "對台灣雙語搖滾團的開路作用清楚，但樂團的公認代表作與獲獎作皆在後期，本張未達跨來源長期共識的殿堂層級。",
-        "evidenceUrls": []
+        "eligible": true,
+        "tier": "hall",
+        "reason": "店主 2026-11-03 定案殿堂擴充（hall-expansion-20261103）：升為殿堂。",
+        "evidenceUrls": [
+          "https://www.last.fm/music/%E6%96%B0%E5%AF%B6%E5%B3%B6%E5%BA%B7%E6%A8%82%E9%9A%8A/%E6%96%B0%E5%AF%B6%E5%B3%B6%E5%BA%B7%E6%A8%82%E9%9A%8A",
+          "https://musicbrainz.org/release-group/4842b5e1-30b5-4a0e-bf2e-7b3ca7a2b9ac"
+        ],
+        "previous": {
+          "eligible": false,
+          "tier": null,
+          "reason": "對台灣雙語搖滾團的開路作用清楚，但樂團的公認代表作與獲獎作皆在後期，本張未達跨來源長期共識的殿堂層級。",
+          "evidenceUrls": []
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:hall-expansion-20261103"
       },
       "description": {
-        "text": "陳昇與黃連煜 1992 年 7 月在滾石發表的二人組首作（RD-1172）。開場曲〈多情兄〉把台語與客語混在同一首歌裡唱，〈在這恬靜的暗晡頭〉〈河壩唇的阿伯〉整首用客語，在當時的台語唱片裡罕見；〈跑路英雄〉〈水泥山〉〈壞子〉則寫市井人物。排灣族樂手陳世隆（阿Van）要到第四張才加入，此時仍是兩人編制。中文維基以主打歌名把這張列作《多情兄》，卡片沿用與團名同字的正名。",
+        "text": "《新寶島康樂隊》是陳昇與黃連煜 1992 年組成二人團體後的首張專輯，同年 7 月由滾石發行，刷新了滾石的熱賣紀錄；陳昇唱台語、黃連煜唱客語，一台一客的搭配改變了不少聽眾對客家音樂的看法。黃連煜當時是錄音室學徒，在唱片公司老闆鼓勵下寫了一批客語歌，帶著 demo 到 Roxy 酒吧找陳昇；他原本只想在幕後寫歌與製作，另兩位候選主唱試唱沒過，才由他自己唱。團名來自兩人共同的軍樂隊背景。單曲〈多情兄〉把台語和客語混在同一首歌裡。唱片公司原本沒預期會大賣，樂團第一年就演出近一百場。",
         "sourceUrls": [
           "https://zh.wikipedia.org/wiki/%E6%96%B0%E5%AF%B6%E5%B3%B6%E5%BA%B7%E6%A8%82%E9%9A%8A",
           "https://musicbrainz.org/release-group/4842b5e1-30b5-4a0e-bf2e-7b3ca7a2b9ac"
@@ -2543,8 +2605,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": true,
-        "apexPool": false
+        "seedCards": false,
+        "apexPool": true
       }
     },
     {
@@ -2592,7 +2654,7 @@
         "checkedAt": "2026-08-23T08:52:19Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；角頭 2000 年代廠牌世代裡的長青車庫搖滾團，有海洋大賞與多屆金音獎的明確地位但非場景首選；粗礪的 garage punk 聽感生猛，發行量小、僅台灣流通。"
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -2659,7 +2721,7 @@
         "checkedAt": "2026-08-23T08:52:19Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；無吉他的鋼琴三人編制在 2003 年的台灣獨立場景是異數，中華音樂人交流協會年度十大專輯＋金曲最佳樂團入圍；旋律清楚但曲長懸殊，屬樂迷領域。"
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -2676,7 +2738,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/f1/80/ab/f180ab55-5d45-1e50-ac58-9ba33660ad7d/mzaf_6365654952393833586.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/68/62/4e/68624e83-6111-59f9-f5ef-fd11dd9d5374/mzaf_9602410269477638550.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T08:52:19Z",
@@ -2746,7 +2808,7 @@
         "checkedAt": "2026-08-23T08:52:19Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；水晶唱片末期最賣座的發行品，把 1990 年代地下團接到 2000 年代獨立世代的關鍵一張；英式搖滾旋律直白，但實體早已絕版、屬深度愛好者領域。"
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -2762,7 +2824,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/6b/51/af/6b51aff7-627e-9528-19f1-3279d45aba93/mzaf_3622421834439014428.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/45/d7/61/45d7612b-2b7f-4d64-2d63-e630f7e3295c/mzaf_5049172086999936563.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T08:52:19Z",
@@ -2813,7 +2875,7 @@
         "checkedAt": "2026-08-23T08:52:19Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；風和日麗唱片行的第一號出品（AGD-001）與 2000 年代台灣輕獨立路線的原型，第 16 屆金曲獎最佳樂團入圍；編曲輕省、旋律直白。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -2830,7 +2892,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/eb/02/51/eb0251dc-7862-d114-6d88-4cc775592354/mzaf_14566946935355910646.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/0c/59/34/0c59345a-ad1b-f2c4-fa3f-53f6e4713f49/mzaf_8290496802537597657.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T08:52:19Z",
@@ -2881,7 +2943,7 @@
         "checkedAt": "2026-08-23T08:52:19Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；小白兔本地團出版線上的重要單飛作、鄭宜農個人生涯起點，有 2020 黑膠再版；聲響溫和不刁鑽，屬樂迷領域。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -2898,7 +2960,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/4c/51/49/4c5149ff-8a5a-c8a4-7f2f-dea7af00a48c/mzaf_3435706115153853090.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/85/dd/c6/85ddc66e-b52d-5da4-5292-d2a024e389e6/mzaf_3728703629578212560.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T08:52:19Z",
@@ -2950,7 +3012,7 @@
         "checkedAt": "2026-08-23T08:52:19Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；小白兔本地團出版線後段的代表作、鄭宜農從單飛轉向樂團的轉折點；噪音與後搖段落生猛粗礪，發行量小、屬深度愛好者領域。"
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -2967,7 +3029,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/03/3d/8a/033d8a34-4b37-6a23-8445-e55b44f07555/mzaf_13815933864335488140.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f1/f0/f3/f1f0f365-3d6c-624d-e7c8-a7603af8900e/mzaf_9665906863433901047.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T08:52:19Z",
@@ -3019,7 +3081,7 @@
         "checkedAt": "2026-08-23T08:52:19Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；台灣第一支入圍金曲獎最佳樂團的後搖團的第二張，小白兔出版線上的明確一格；長篇器樂結構與單一音色推進，發行量小。"
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -3036,7 +3098,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/a3/f1/d3/a3f1d369-e8d5-489d-348b-1080d5e84b44/mzaf_4680969369757932201.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/b8/17/29/b81729a7-1cee-9627-4bc0-bd044d4bad7e/mzaf_18063209600515774465.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T08:52:19Z",
@@ -3087,7 +3149,7 @@
         "checkedAt": "2026-08-23T08:52:19Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；2000 年代末簡單生活節世代清新獨立流行的樣本，有新加坡 Freshmusic 年度最佳新音樂團體與 AR 首例的特色，但非場景硬核；旋律直白、當年通路流通量大。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -3103,7 +3165,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/eb/12/85/eb128537-ed97-317e-2572-c16c0c76f131/mzaf_188372997030867258.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/8c/e9/af/8ce9af99-270c-b467-3f9c-1acf58a85142/mzaf_9720664743857853025.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T08:52:19Z",
@@ -3154,7 +3216,7 @@
         "checkedAt": "2026-08-23T08:52:19Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；台灣後搖滾要角跨到電影配樂、主題曲入圍金馬獎，地位明確但非樂史核心；器樂配樂盤，樂迷以上領域才會遇到。"
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -3222,7 +3284,7 @@
         "checkedAt": "2026-08-23T08:52:19Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；小白兔唱片 WWR002，廠牌史位置明確、當年獲香港《音樂殖民地》年終榜推薦；但 CD 早已絕版、無數位發行、中文維基無條目，屬收藏家領域。"
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -3306,7 +3368,7 @@
         "checkedAt": "2026-08-23T08:52:19Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；水晶唱片晚期目錄裡的補充盤，二手文獻幾近於零、MB 名下零張錄音；作品本身無可查證的樂史地位，但冷門度到收藏家等級。"
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -3375,7 +3437,7 @@
         "checkedAt": "2026-08-23T08:52:19Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；三度入圍金曲獎最佳樂團的台灣搖滾團，本作為第二張、入圍第13屆；旋律直白的國語搖滾，樂迷領域內知名度中上。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -3391,7 +3453,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/31/57/66/31576695-7fd8-f231-c46b-58102d0c6474/mzaf_3932451957609621919.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f7/27/e3/f727e3ce-b897-3c70-5508-8cc7fd7c7626/mzaf_5016509917783697490.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T08:52:19Z",
@@ -3468,7 +3530,7 @@
         "checkedAt": "2026-08-23T08:52:19Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；角頭音樂編號 015，是 2000 年代台灣獨立樂團的入場合輯，蘇打綠、八十八顆芭樂籽、回聲樂團、旺福的早期錄音皆出於此；資料可查但屬深度愛好者領域。"
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -3485,7 +3547,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview71/v4/4a/34/55/4a34557d-2ca7-8f7a-813f-4018bd5e7aef/mzaf_6185357567482247308.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/Music/v4/ae/35/93/ae3593b7-b232-abcd-78ba-525bc37f0ad0/mzaf_2887633069680908254.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T08:52:19Z",
@@ -3536,7 +3598,7 @@
         "checkedAt": "2026-08-23T08:52:19Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；台灣第一代後搖滾代表團的收尾之作，樂團地位高於本作單張地位；全器樂、長篇鋪陳，屬樂迷以上領域。"
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -3552,7 +3614,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/d0/fa/9b/d0fa9b4a-850c-4559-8329-7d9bf66c42d6/mzaf_13738806241894187594.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/88/64/ef/8864ef72-660d-1374-1e93-7d8478cf5512/mzaf_2034582006825121869.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T08:52:19Z",
@@ -3599,11 +3661,26 @@
         "obscurity": 4,
         "accessibility": 3,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-23T08:52:19Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；1996 年成軍的台北車庫龐克團，海洋大賞與多屆金音獎入圍紀錄明確；生猛粗礪的唱奏與髒話曲名讓入耳門檻高於一般搖滾。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：台灣龐克樂團，場景二線｜L=954",
+        "previous": {
+          "classic": 3,
+          "obscurity": 4,
+          "accessibility": 3,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-23T08:52:19Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；1996 年成軍的台北車庫龐克團，海洋大賞與多屆金音獎入圍紀錄明確；生猛粗礪的唱奏與髒話曲名讓入耳門檻高於一般搖滾。",
+          "rarity": "rare"
+        },
+        "previousAccessibility": {
+          "accessibility": 2,
+          "rarity": "common",
+          "at": "2026-11-04"
+        },
+        "loudFloorNote": "硬蕊度音量下限（2026-11-04 店主定案）：台灣龐克，失真吉他為主"
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -3619,7 +3696,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/22/73/0e/22730ea0-ea35-e46a-b0c0-33320afed5dd/mzaf_6050792638966753717.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/10/b4/27/10b42795-aec1-2d2e-d3b7-fc9bac715a82/mzaf_16625392004872860828.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T08:52:19Z",
@@ -3689,7 +3766,7 @@
         "checkedAt": "2026-08-23T08:52:19Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；第20屆金曲獎最佳客語流行音樂演唱專輯獎得獎作，是客語音樂領域公認的主要作品；曲調明亮好入耳，但客語與獨立發行讓它停在深度愛好者領域。"
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -3705,7 +3782,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/21/74/1a/21741a20-4682-e4f9-9a94-bcc1396d64f8/mzaf_16721225856033498288.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/70/b6/21/70b6212b-85c9-436f-e2b5-7acfacd8f117/mzaf_11467843880188734879.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T08:52:19Z",

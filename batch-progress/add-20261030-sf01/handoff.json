@@ -1,0 +1,40 @@
+{
+ "batch": "add-20261030-sf01",
+ "cards": 36,
+ "written": {
+  "cardCatalog": 36,
+  "kvKeys": 47,
+  "seedRows": 36,
+  "previewReady": 31,
+  "previewUnavailable": 5
+ },
+ "review": {
+  "by": "cloud-main",
+  "cards": 36,
+  "changed": [
+   "desc2:Corporate|A5 EP",
+   "desc2:Klimeks|Overnites",
+   "desc2:Richie Beirach|Eon"
+  ]
+ },
+ "qa": {
+  "research": "pass",
+  "hooks": "pass",
+  "out": "pass",
+  "prepareGate": "0 error",
+  "publishedGate": "0 error"
+ },
+ "pendingLocal": {
+  "kv": "無",
+  "listeners": [],
+  "apexEvidence": [],
+  "genreTree": "已重建（Bent Fabric 1 張無對應節點未落位）",
+  "albumOverrides": "無"
+ },
+ "artistIntro": {
+  "batch": "ar-d-201",
+  "roster": "batch-progress/artist-intro/roster-sf01.json",
+  "artists": 30,
+  "state": "cut"
+ }
+}

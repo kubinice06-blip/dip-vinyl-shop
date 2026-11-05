@@ -1,0 +1,1598 @@
+{
+ "group": "ml54",
+ "factions": [
+  {
+   "id": "lofi-chillhop",
+   "zh": "lo-fi／chillhop 二線",
+   "count": 21,
+   "why": "Jazzinuf、eevee、Bcalm、Mondo Loops、Aviino、Yasumu、Laffey、delayde、Glimlip 等主場景二線 beat tape 全長盤"
+  },
+  {
+   "id": "korean-lofi",
+   "zh": "韓國 lo-fi 二線",
+   "count": 3,
+   "why": "NOGYMX 全長盤（韓國 lo-fi 其餘多為 EP 長度）"
+  },
+  {
+   "id": "warm-downtempo",
+   "zh": "暖 downtempo／beatstrumental",
+   "count": 7,
+   "why": "Sweatson Klank、Teebs、Natureboy Flako、Wizard of Loneliness（擴寫場景 a）"
+  },
+  {
+   "id": "jazzy-ihh",
+   "zh": "暖爵士 instrumental hip-hop 慢盤",
+   "count": 8,
+   "why": "Freddie Joachim、Tall Black Guy、DJ Okawari（擴寫場景 b）"
+  },
+  {
+   "id": "dub-downtempo",
+   "zh": "暖 dub 化／迷幻靈魂",
+   "count": 11,
+   "why": "Pachyman、Dubmatix、Skinshape（擴寫場景 a）"
+  },
+  {
+   "id": "warm-reverb-guitar",
+   "zh": "暖混響吉他器樂",
+   "count": 4,
+   "why": "Hermanos Gutiérrez（以聲音判格的擴寫）"
+  }
+ ],
+ "albums": [
+  {
+   "artist": "Jazzinuf",
+   "album": "Snow in My Shoe",
+   "year": 2020,
+   "label": "",
+   "country": "us",
+   "faction": "lofi-chillhop",
+   "genres": [
+    "hiphop"
+   ],
+   "why": "Jazzinuf 冬日主題的爵士取樣 beat 全長盤，壁爐、暖茶式的低速鋼琴 loop。 約 34 分鐘全長，聲音落恍惚：靜、重（鋼琴取樣加黑膠沙沙，中慢速鼓，暖）。",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 0.9,
+    "z": 0.9,
+    "why": "鋼琴取樣加黑膠沙沙，中慢速鼓，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/9c6440ed-4bb0-4b2f-8be5-bf5d1de9bf9b",
+    "https://music.apple.com/us/album/1540378569",
+    "https://jazzinuf.bandcamp.com/"
+   ],
+   "mbRgMbid": "9c6440ed-4bb0-4b2f-8be5-bf5d1de9bf9b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Jazzinuf 部分盤偏 swing 彈跳，此張以冬日慢拍為主但未逐曲聽過；y 約 0.9 靠近門檻"
+  },
+  {
+   "artist": "Jazzinuf",
+   "album": "Audio Bartending",
+   "year": 2018,
+   "label": "",
+   "country": "us",
+   "faction": "lofi-chillhop",
+   "genres": [
+    "hiphop"
+   ],
+   "why": "Jazzinuf 酒吧意象的爵士 lofi 全長盤，煙霧感鋼琴與慢拍。 約 37 分鐘全長，聲音落恍惚：靜、重（爵士鋼琴取樣，懶拍，煙燻暖）。",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 0.9,
+    "z": 0.8,
+    "why": "爵士鋼琴取樣，懶拍，煙燻暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/08707718-bc79-4c38-96ef-f1e632df3dc5",
+    "https://music.apple.com/us/album/1588314443",
+    "https://jazzinuf.bandcamp.com/"
+   ],
+   "mbRgMbid": "08707718-bc79-4c38-96ef-f1e632df3dc5",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "17 曲 37 分，有 Feat. Henry Solomon（器樂薩克斯）；bounce 風險，x/y 貼邊"
+  },
+  {
+   "artist": "Jazzinuf",
+   "album": "dazzle",
+   "year": 2018,
+   "label": "",
+   "country": "us",
+   "faction": "lofi-chillhop",
+   "genres": [
+    "hiphop"
+   ],
+   "why": "Jazzinuf《dazzle》19 曲爵士 lofi，Cozy／Fire Place／Cotton Candy 的暖調鋼琴 loop。 約 43 分鐘全長，聲音落恍惚：靜、重（暖鋼琴 loop 慢拍，沙沙底噪）。",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 0.8,
+    "z": 0.9,
+    "why": "暖鋼琴 loop 慢拍，沙沙底噪"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/4c701f84-75c6-41cc-9f02-531c2b231056",
+    "https://music.apple.com/us/album/1441356240",
+    "https://jazzinuf.bandcamp.com/"
+   ],
+   "mbRgMbid": "4c701f84-75c6-41cc-9f02-531c2b231056",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Apple 分類 Jazz，偏輕盈風險；y 0.8 貼邊，建議評分代理把關"
+  },
+  {
+   "artist": "Jazzinuf",
+   "album": "Sun Dance",
+   "year": 2022,
+   "label": "",
+   "country": "us",
+   "faction": "lofi-chillhop",
+   "genres": [
+    "hiphop"
+   ],
+   "why": "Jazzinuf《Sun Dance》14 曲 lofi 爵士，Lounge Kudasai／Moon Beams 等慢拍夜景。 約 35 分鐘全長，聲音落恍惚：靜、重（鋼琴取樣，慢拍，暖黃）。",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 0.9,
+    "z": 0.8,
+    "why": "鋼琴取樣，慢拍，暖黃"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/ea165a67-1b9f-4041-a600-5b16427cf212",
+    "https://music.apple.com/us/album/1604283989",
+    "https://jazzinuf.bandcamp.com/"
+   ],
+   "mbRgMbid": "ea165a67-1b9f-4041-a600-5b16427cf212",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "曲名有 Sun Dance，可能偏明亮；y/z 邊距小"
+  },
+  {
+   "artist": "eevee",
+   "album": "TIME.",
+   "year": 2021,
+   "label": "",
+   "country": "nl",
+   "faction": "lofi-chillhop",
+   "genres": [
+    "hiphop"
+   ],
+   "why": "荷蘭 eevee 以一日作息為題的 17 曲 lofi 全長盤（FallingAsleep、RemSleep、Morning）。 約 34 分鐘全長，聲音落恍惚：靜、重（睡前作息主題，磁帶糊，慢拍）。",
+   "moodGuess": {
+    "x": 1.9,
+    "y": 1,
+    "z": 0.8,
+    "why": "睡前作息主題，磁帶糊，慢拍"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/2633a329-2f6c-4748-b104-df7968150838",
+    "https://music.apple.com/us/album/1599163706",
+    "https://eeveebeats.bandcamp.com/"
+   ],
+   "mbRgMbid": "2633a329-2f6c-4748-b104-df7968150838",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "曲子偏短（均 2 分鐘），整體 34 分鐘"
+  },
+  {
+   "artist": "Bcalm",
+   "album": "Elements",
+   "year": 2021,
+   "label": "",
+   "country": "gb",
+   "faction": "lofi-chillhop",
+   "genres": [
+    "electronic"
+   ],
+   "why": "英國 lo-fi beatmaker Bcalm 的 13 曲鋼琴 lofi 全長盤，雲彩、玫瑰田式柔焦。 約 33 分鐘全長，聲音落恍惚：靜、重（柔焦鋼琴 loop，慢拍，暖）。",
+   "moodGuess": {
+    "x": 2,
+    "y": 0.9,
+    "z": 0.8,
+    "why": "柔焦鋼琴 loop，慢拍，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/c00bcdd3-b371-42b6-a97e-9aab1a4710a0",
+    "https://music.apple.com/us/album/6770631155"
+   ],
+   "mbRgMbid": "c00bcdd3-b371-42b6-a97e-9aab1a4710a0",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Bcalm 風格偏乾淨 chillhop，y 約 0.9 貼近門檻；MB 無 Bandcamp 連結"
+  },
+  {
+   "artist": "Bcalm",
+   "album": "Close to Home",
+   "year": 2024,
+   "label": "",
+   "country": "gb",
+   "faction": "lofi-chillhop",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bcalm《Close to Home》15 曲，Nightcap／Serenity／Nostalgia 的夜讀式 lofi。 約 32 分鐘全長，聲音落恍惚：靜、重（慢拍鋼琴，磁帶味，暖）。",
+   "moodGuess": {
+    "x": 1.9,
+    "y": 0.9,
+    "z": 0.9,
+    "why": "慢拍鋼琴，磁帶味，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/a03325d2-9c4d-4bcd-bc2e-61ea04063f9d",
+    "https://music.apple.com/us/album/6770676528"
+   ],
+   "mbRgMbid": "a03325d2-9c4d-4bcd-bc2e-61ea04063f9d",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "同上，y 貼邊"
+  },
+  {
+   "artist": "Mondo Loops",
+   "album": "Forest Tales",
+   "year": 2021,
+   "label": "",
+   "country": "gb",
+   "faction": "lofi-chillhop",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Mondo Loops 以森林奇幻為題的 13 曲 dusty lofi 全長盤。 約 34 分鐘全長，聲音落恍惚：靜、重（舊錄音機糊感，慢拍，奇幻暖）。",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 1,
+    "z": 0.8,
+    "why": "舊錄音機糊感，慢拍，奇幻暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/a6cd676a-dd50-4dc4-8696-07b47cd5d4d9",
+    "https://music.apple.com/us/album/6770614939",
+    "https://mondoloops.bandcamp.com/"
+   ],
+   "mbRgMbid": "a6cd676a-dd50-4dc4-8696-07b47cd5d4d9",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "奇幻／遊戲配樂式意象，旋律清楚度未查"
+  },
+  {
+   "artist": "Mondo Loops",
+   "album": "Golden Age",
+   "year": 2023,
+   "label": "",
+   "country": "gb",
+   "faction": "lofi-chillhop",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Mondo Loops《Golden Age》13 曲，Dusty Reels／Ancient Stones 的懷舊 lofi。 約 30 分鐘全長，聲音落恍惚：靜、重（dusty 取樣，慢拍，懷舊暖）。",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 1,
+    "z": 0.7,
+    "why": "dusty 取樣，慢拍，懷舊暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/229e4b3f-adeb-4a19-ad51-a819dd2be01b",
+    "https://music.apple.com/us/album/6770672265",
+    "https://mondoloops.bandcamp.com/"
+   ],
+   "mbRgMbid": "229e4b3f-adeb-4a19-ad51-a819dd2be01b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "z 未聽，標題偏史詩，可能中性"
+  },
+  {
+   "artist": "Aviino",
+   "album": "Cocoon",
+   "year": 2021,
+   "label": "",
+   "country": "",
+   "faction": "lofi-chillhop",
+   "genres": [
+    "hiphop"
+   ],
+   "why": "Aviino《Cocoon》9 曲 30 分鐘，Chillhop 系柔軟鋼琴 beat tape（Jasmine、Hope Island）。 約 30 分鐘全長，聲音落恍惚：靜、重（柔軟 loop，慢拍，被包住）。",
+   "moodGuess": {
+    "x": 1.9,
+    "y": 0.9,
+    "z": 0.8,
+    "why": "柔軟 loop，慢拍，被包住"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/d0f26c52-7711-44eb-858a-83450c84267f",
+    "https://music.apple.com/us/album/1585126478"
+   ],
+   "mbRgMbid": "d0f26c52-7711-44eb-858a-83450c84267f",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 國家空缺；Aviino 質地偏乾淨，y 貼邊"
+  },
+  {
+   "artist": "Yasumu",
+   "album": "Until Forever",
+   "year": 2020,
+   "label": "",
+   "country": "de",
+   "faction": "lofi-chillhop",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Yasumu《Until Forever》16 曲 41 分鐘，情侶日常主題的暖調 lofi 鋼琴。 約 41 分鐘全長，聲音落恍惚：靜、重（溫柔鋼琴 loop，慢拍，笑意暖）。",
+   "moodGuess": {
+    "x": 1.9,
+    "y": 0.8,
+    "z": 0.9,
+    "why": "溫柔鋼琴 loop，慢拍，笑意暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/34799eed-4b7c-4dd2-acb6-2ee6ece10763",
+    "https://music.apple.com/us/album/6770654921"
+   ],
+   "mbRgMbid": "34799eed-4b7c-4dd2-acb6-2ee6ece10763",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Yasumu 偏乾淨可愛型，y 恐不足；列為汰換候補"
+  },
+  {
+   "artist": "Yasumu",
+   "album": "Escaping Reality",
+   "year": 2022,
+   "label": "",
+   "country": "de",
+   "faction": "lofi-chillhop",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Yasumu《Escaping Reality》13 曲，Moonshadow／Golden Lights 的夜間 lofi。 約 32 分鐘全長，聲音落恍惚：靜、重（柔和 loop，慢拍，夢境暖）。",
+   "moodGuess": {
+    "x": 1.9,
+    "y": 0.8,
+    "z": 0.8,
+    "why": "柔和 loop，慢拍，夢境暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/44f53d3f-4faf-4663-97f6-71b90560a754",
+    "https://music.apple.com/us/album/6770668293"
+   ],
+   "mbRgMbid": "44f53d3f-4faf-4663-97f6-71b90560a754",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "同上，y 貼邊"
+  },
+  {
+   "artist": "Yasumu",
+   "album": "In My Dreams",
+   "year": 2023,
+   "label": "",
+   "country": "de",
+   "faction": "lofi-chillhop",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Yasumu《In My Dreams》11 曲 26 分鐘 lofi。 約 26 分鐘全長，聲音落恍惚：靜、重（夢幻柔濾波，慢拍，暖）。",
+   "moodGuess": {
+    "x": 2,
+    "y": 0.8,
+    "z": 0.8,
+    "why": "夢幻柔濾波，慢拍，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/ef23cc0d-f8a3-453e-b1ee-c6c2d914767c",
+    "https://music.apple.com/us/album/1647921827"
+   ],
+   "mbRgMbid": "ef23cc0d-f8a3-453e-b1ee-c6c2d914767c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "26 分鐘貼近長度下限；y 貼邊"
+  },
+  {
+   "artist": "Sweatson Klank",
+   "album": "Postcards",
+   "year": 2022,
+   "label": "",
+   "country": "us",
+   "faction": "warm-downtempo",
+   "genres": [
+    "electronic"
+   ],
+   "why": "洛杉磯 Sweatson Klank 的旅途明信片式 beatstrumental，Apple 分類 Ambient，10 曲 41 分鐘。 約 41 分鐘全長，聲音落恍惚：靜、重（暖氛圍 downtempo，低頻圓潤，慢）。",
+   "moodGuess": {
+    "x": 1.8,
+    "y": 1,
+    "z": 0.8,
+    "why": "暖氛圍 downtempo，低頻圓潤，慢"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/55ca2c0a-9223-486e-9be6-7e4b6c8389a1",
+    "https://music.apple.com/us/album/1616058898",
+    "https://sweatsonklank.bandcamp.com/"
+   ],
+   "mbRgMbid": "55ca2c0a-9223-486e-9be6-7e4b6c8389a1",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Bandcamp 標籤 downtempo／beatstrumental，旋律清楚度中等"
+  },
+  {
+   "artist": "Sweatson Klank",
+   "album": "Fine Lines",
+   "year": 2018,
+   "label": "",
+   "country": "us",
+   "faction": "warm-downtempo",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Sweatson Klank《Fine Lines》12 曲 47 分鐘，暖低頻 beat 與 Rhodes。 約 47 分鐘全長，聲音落恍惚：靜、重（Rhodes 暖，中慢拍，低頻圓）。",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1,
+    "z": 0.7,
+    "why": "Rhodes 暖，中慢拍，低頻圓"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/35f9df0f-d07b-49b9-99ad-8ca448091e08",
+    "https://music.apple.com/us/album/1364089989",
+    "https://sweatsonklank.bandcamp.com/"
+   ],
+   "mbRgMbid": "35f9df0f-d07b-49b9-99ad-8ca448091e08",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Apple 分類 Dance，且可能有人聲客串；x 風險"
+  },
+  {
+   "artist": "Sweatson Klank",
+   "album": "Good Days",
+   "year": 2020,
+   "label": "",
+   "country": "us",
+   "faction": "warm-downtempo",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Sweatson Klank《Good Days》12 曲 33 分鐘，陽光午後式暖 beat。 約 33 分鐘全長，聲音落恍惚：靜、重（暖 Rhodes，中慢拍，陽光）。",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1,
+    "z": 0.8,
+    "why": "暖 Rhodes，中慢拍，陽光"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/8ae61fb7-ecc7-40a3-9412-0f3a76ff6471",
+    "https://music.apple.com/us/album/1502730649",
+    "https://sweatsonklank.bandcamp.com/"
+   ],
+   "mbRgMbid": "8ae61fb7-ecc7-40a3-9412-0f3a76ff6471",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Apple 分類 Rock（誤分）；可能有人聲客串，z 可能偏雀躍"
+  },
+  {
+   "artist": "NOGYMX",
+   "album": "NO EMPERORS",
+   "year": 2018,
+   "label": "",
+   "country": "kr",
+   "faction": "korean-lofi",
+   "genres": [
+    "hiphop"
+   ],
+   "why": "首爾 NOGYMX 的第一張全長，10 曲 47 分鐘 lofi 爵士 beat。 約 47 分鐘全長，聲音落恍惚：靜、重（爵士 loop，磁帶糊，慢拍，暖）。",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 1,
+    "z": 0.9,
+    "why": "爵士 loop，磁帶糊，慢拍，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/7f23e2c0-143d-454b-afaf-548d88af4923",
+    "https://music.apple.com/us/album/1613158837",
+    "https://nogymx.bandcamp.com/"
+   ],
+   "mbRgMbid": "7f23e2c0-143d-454b-afaf-548d88af4923",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "未逐曲聽過；Bandcamp 列表未見此張頁面"
+  },
+  {
+   "artist": "Nogymx",
+   "album": "Eien’s Fable",
+   "year": 2022,
+   "label": "",
+   "country": "kr",
+   "faction": "korean-lofi",
+   "genres": [
+    "hiphop"
+   ],
+   "why": "NOGYMX《Eien's Fable》13 曲 34 分鐘，Bandcamp 標籤 downtempo／nujabes／lounge 的暖調故事盤。 約 34 分鐘全長，聲音落恍惚：靜、重（Nujabes 系鋼琴與長笛 loop，慢，暖）。",
+   "moodGuess": {
+    "x": 2,
+    "y": 1,
+    "z": 1,
+    "why": "Nujabes 系鋼琴與長笛 loop，慢，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/1fc5a9ef-facf-4cf9-b244-2654e2c0b5c6",
+    "https://music.apple.com/us/album/1635678628",
+    "https://nogymx.bandcamp.com/"
+   ],
+   "mbRgMbid": "1fc5a9ef-facf-4cf9-b244-2654e2c0b5c6",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "含多位客串（Daniele Raciti 等器樂），需確認無饒舌"
+  },
+  {
+   "artist": "NOGYMX",
+   "album": "Locus",
+   "year": 2019,
+   "label": "",
+   "country": "kr",
+   "faction": "korean-lofi",
+   "genres": [
+    "hiphop"
+   ],
+   "why": "NOGYMX《Locus》8 曲 30 分鐘 lofi 爵士。 約 30 分鐘全長，聲音落恍惚：靜、重（爵士取樣，慢拍，暖）。",
+   "moodGuess": {
+    "x": 2.1,
+    "y": 1,
+    "z": 0.9,
+    "why": "爵士取樣，慢拍，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/a6679f1e-183c-41f8-a8bc-0f175d2d63c7",
+    "https://music.apple.com/us/album/1613171788",
+    "https://nogymx.bandcamp.com/"
+   ],
+   "mbRgMbid": "a6679f1e-183c-41f8-a8bc-0f175d2d63c7",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "未逐曲聽過"
+  },
+  {
+   "artist": "Wizard of Loneliness",
+   "album": "The Beautiful World",
+   "year": 2019,
+   "label": "",
+   "country": "us",
+   "faction": "warm-downtempo",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Halcyon Tapes 的 Wizard of Loneliness（Colin Gross）《The Beautiful World》13 曲 43 分鐘 downtempo。 約 43 分鐘全長，聲音落恍惚：靜、重（磁帶糊 downtempo，慢，溫）。",
+   "moodGuess": {
+    "x": 1.8,
+    "y": 1,
+    "z": 0.5,
+    "why": "磁帶糊 downtempo，慢，溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/b84f40b8-db53-48f4-8c77-efb9c8cadfc9",
+    "https://music.apple.com/us/album/1492581031",
+    "https://halcyontapes.bandcamp.com/"
+   ],
+   "mbRgMbid": "b84f40b8-db53-48f4-8c77-efb9c8cadfc9",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "z 偏中性風險；廠牌 Bandcamp 為 halcyontapes"
+  },
+  {
+   "artist": "Freddie Joachim",
+   "album": "Beyond the Sea of Trees",
+   "year": 2019,
+   "label": "",
+   "country": "us",
+   "faction": "jazzy-ihh",
+   "genres": [
+    "hiphop"
+   ],
+   "why": "LA 製作人 Freddie Joachim 的 16 曲 59 分鐘爵士取樣 beat 全長盤，Nujabes 系暖調。 約 59 分鐘全長，聲音落恍惚：靜、重（爵士取樣，Rhodes，慢中拍，暖）。",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 1,
+    "z": 1,
+    "why": "爵士取樣，Rhodes，慢中拍，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/2d82a0c5-8530-4d6a-99f7-c2650f460f3d",
+    "https://music.apple.com/us/album/1842285247"
+   ],
+   "mbRgMbid": "2d82a0c5-8530-4d6a-99f7-c2650f460f3d",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "部分曲 boom bap 彈跳，x 約 2.4–2.7 可能"
+  },
+  {
+   "artist": "Freddie Joachim",
+   "album": "Study Guide",
+   "year": 2009,
+   "label": "",
+   "country": "us",
+   "faction": "jazzy-ihh",
+   "genres": [
+    "hiphop"
+   ],
+   "why": "Freddie Joachim 2009《Study Guide》17 曲 51 分鐘，爵士／靈魂取樣的早期代表。 約 51 分鐘全長，聲音落恍惚：靜、重（soul 取樣，中慢拍，溫）。",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1,
+    "z": 0.9,
+    "why": "soul 取樣，中慢拍，溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/e31ed653-672c-4432-91e8-4565a6202fc8",
+    "https://music.apple.com/us/album/314311036"
+   ],
+   "mbRgMbid": "e31ed653-672c-4432-91e8-4565a6202fc8",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "2009 老盤，boom bap 彈跳風險"
+  },
+  {
+   "artist": "Freddie Joachim",
+   "album": "Dust",
+   "year": 2010,
+   "label": "",
+   "country": "us",
+   "faction": "jazzy-ihh",
+   "genres": [
+    "hiphop"
+   ],
+   "why": "Freddie Joachim《Dust》20 曲 43 分鐘，沙沙黑膠取樣的暖調 beat。 約 43 分鐘全長，聲音落恍惚：靜、重（黑膠沙沙取樣，慢拍，暖）。",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1.1,
+    "z": 0.9,
+    "why": "黑膠沙沙取樣，慢拍，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/792d335c-bfe1-4655-a0a9-ab6c8539638b",
+    "https://music.apple.com/us/album/1663972502"
+   ],
+   "mbRgMbid": "792d335c-bfe1-4655-a0a9-ab6c8539638b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 年份 2010（Apple 重發 2015）"
+  },
+  {
+   "artist": "Tall Black Guy",
+   "album": "Airplane Mode",
+   "year": 2021,
+   "label": "",
+   "country": "us",
+   "faction": "jazzy-ihh",
+   "genres": [
+    "hiphop"
+   ],
+   "why": "Tall Black Guy《Airplane Mode》12 曲 37 分鐘，Rhodes 與爵士取樣的旅途慢 beat。 約 37 分鐘全長，聲音落恍惚：靜、重（Rhodes，中慢拍，暖）。",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 0.9,
+    "z": 0.9,
+    "why": "Rhodes，中慢拍，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/1e767bf5-cf33-44d8-a83f-e4836c536cc2",
+    "https://music.apple.com/us/album/1555904091"
+   ],
+   "mbRgMbid": "1e767bf5-cf33-44d8-a83f-e4836c536cc2",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "可能有人聲客串；x/y 貼邊"
+  },
+  {
+   "artist": "Tall Black Guy",
+   "album": "Let’s Take a Trip",
+   "year": 2016,
+   "label": "",
+   "country": "us",
+   "faction": "jazzy-ihh",
+   "genres": [
+    "hiphop"
+   ],
+   "why": "Tall Black Guy《Let's Take a Trip》13 曲 55 分鐘，爵士／靈魂取樣 beat。 約 55 分鐘全長，聲音落恍惚：靜、重（soul 取樣，中拍，暖）。",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 0.9,
+    "z": 0.9,
+    "why": "soul 取樣，中拍，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/363043ad-3ee3-4f60-bf8c-77836ecac049",
+    "https://music.apple.com/us/album/1164307982"
+   ],
+   "mbRgMbid": "363043ad-3ee3-4f60-bf8c-77836ecac049",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Apple 標 East Coast Rap，可能有饒舌客串；x 貼邊"
+  },
+  {
+   "artist": "Laffey",
+   "album": "A Day at a Time",
+   "year": 2021,
+   "label": "",
+   "country": "ca",
+   "faction": "lofi-chillhop",
+   "genres": [
+    "electronic"
+   ],
+   "why": "加拿大 Laffey《A Day at a Time》13 曲 35 分鐘柔和鋼琴 lofi。 約 35 分鐘全長，聲音落恍惚：靜、重（柔和鋼琴，慢拍，溫）。",
+   "moodGuess": {
+    "x": 2,
+    "y": 0.9,
+    "z": 0.8,
+    "why": "柔和鋼琴，慢拍，溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/1bce76c8-11b7-44cd-96a6-67062cab062d",
+    "https://music.apple.com/us/album/6770619446"
+   ],
+   "mbRgMbid": "1bce76c8-11b7-44cd-96a6-67062cab062d",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Laffey 偏乾淨 chillhop，y 貼邊"
+  },
+  {
+   "artist": "Laffey",
+   "album": "Forever Changing",
+   "year": 2020,
+   "label": "",
+   "country": "ca",
+   "faction": "lofi-chillhop",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Laffey《Forever Changing》10 曲 26 分鐘 lofi。 約 26 分鐘全長，聲音落恍惚：靜、重（柔和 loop，慢，暖）。",
+   "moodGuess": {
+    "x": 2,
+    "y": 0.9,
+    "z": 0.8,
+    "why": "柔和 loop，慢，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/bd02ea95-bde2-4fa9-b09d-fe25f134c7bb",
+    "https://music.apple.com/us/album/6770654841"
+   ],
+   "mbRgMbid": "bd02ea95-bde2-4fa9-b09d-fe25f134c7bb",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "26 分鐘貼近長度下限"
+  },
+  {
+   "artist": "Laffey",
+   "album": "The Moon and the Mind",
+   "year": 2022,
+   "label": "",
+   "country": "ca",
+   "faction": "lofi-chillhop",
+   "genres": [
+    "hiphop"
+   ],
+   "why": "Laffey《The Moon and the Mind》10 曲 26 分鐘夜間 lofi。 約 26 分鐘全長，聲音落恍惚：靜、重（夜間 loop，慢，溫）。",
+   "moodGuess": {
+    "x": 2,
+    "y": 0.9,
+    "z": 0.7,
+    "why": "夜間 loop，慢，溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/f1432b7f-4a46-49bb-9bde-104e000625bc",
+    "https://music.apple.com/us/album/1769263186"
+   ],
+   "mbRgMbid": "f1432b7f-4a46-49bb-9bde-104e000625bc",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "夜色題材 z 可能偏 0；26 分鐘"
+  },
+  {
+   "artist": "Laffey",
+   "album": "After the Rain",
+   "year": 2021,
+   "label": "",
+   "country": "ca",
+   "faction": "lofi-chillhop",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Laffey《After the Rain》11 曲 27 分鐘雨後 lofi。 約 27 分鐘全長，聲音落恍惚：靜、重（雨聲鋼琴 loop，慢，溫）。",
+   "moodGuess": {
+    "x": 1.9,
+    "y": 0.9,
+    "z": 0.8,
+    "why": "雨聲鋼琴 loop，慢，溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/4007a870-6947-41d2-9ba1-6d85513cb526",
+    "https://music.apple.com/us/album/6770657224"
+   ],
+   "mbRgMbid": "4007a870-6947-41d2-9ba1-6d85513cb526",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "27 分鐘貼近下限"
+  },
+  {
+   "artist": "Glimlip, Søren Søstrom & Soul Food Horns",
+   "album": "Twelve Chapters",
+   "year": 2022,
+   "label": "",
+   "country": "nl",
+   "faction": "lofi-chillhop",
+   "genres": [
+    "hiphop"
+   ],
+   "why": "Glimlip、Søren Søstrom 與 Soul Food Horns 的 14 曲 38 分鐘爵士 lofi 合作盤，銅管與 Rhodes。 約 38 分鐘全長，聲音落恍惚：靜、重（銅管與 Rhodes，慢中拍，暖）。",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1,
+    "z": 0.9,
+    "why": "銅管與 Rhodes，慢中拍，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/c38d9250-327d-4ff7-90b2-fc713914803b",
+    "https://music.apple.com/us/album/1614694991",
+    "https://glimlip.bandcamp.com/"
+   ],
+   "mbRgMbid": "c38d9250-327d-4ff7-90b2-fc713914803b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "三人合作，卡單 artist 須用合作掛名；Soul Food Horns 曲目可能較有彈性"
+  },
+  {
+   "artist": "delayde",
+   "album": "finding solitude",
+   "year": 2018,
+   "label": "",
+   "country": "gb",
+   "faction": "lofi-chillhop",
+   "genres": [
+    "electronic"
+   ],
+   "why": "英國 delayde《finding solitude》13 曲 28 分鐘，Bandcamp 標 ambient／lofi，英國田野式慢 beat。 約 28 分鐘全長，聲音落恍惚：靜、重（田野氛圍 loop，磁帶糊，慢）。",
+   "moodGuess": {
+    "x": 1.9,
+    "y": 1,
+    "z": 0.8,
+    "why": "田野氛圍 loop，磁帶糊，慢"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/f66c207f-e01d-4bfa-ab4b-83efd5e57400",
+    "https://music.apple.com/us/album/1679473645",
+    "https://delayde.bandcamp.com/"
+   ],
+   "mbRgMbid": "f66c207f-e01d-4bfa-ab4b-83efd5e57400",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "有 loftii 客串（器樂）；28 分鐘"
+  },
+  {
+   "artist": "delayde",
+   "album": "finding solitude 2",
+   "year": 2020,
+   "label": "",
+   "country": "gb",
+   "faction": "lofi-chillhop",
+   "genres": [
+    "electronic"
+   ],
+   "why": "delayde《finding solitude 2》14 曲 32 分鐘，warmth (of fire)／warmth (of friends) 的暖調續作。 約 32 分鐘全長，聲音落恍惚：靜、重（暖調 loop，磁帶糊，慢）。",
+   "moodGuess": {
+    "x": 1.9,
+    "y": 1,
+    "z": 0.9,
+    "why": "暖調 loop，磁帶糊，慢"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/56490ca8-3be0-4641-83c0-ea360c2b8507",
+    "https://music.apple.com/us/album/1679471630",
+    "https://delayde.bandcamp.com/"
+   ],
+   "mbRgMbid": "56490ca8-3be0-4641-83c0-ea360c2b8507",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "—"
+  },
+  {
+   "artist": "Zmeyev",
+   "album": "Urban Melancholy",
+   "year": 2019,
+   "label": "",
+   "country": "ru",
+   "faction": "lofi-chillhop",
+   "genres": [
+    "hiphop"
+   ],
+   "why": "俄羅斯 Zmeyev《Urban Melancholy》12 曲 31 分鐘爵士 lofi。 約 31 分鐘全長，聲音落恍惚：靜、重（爵士 loop，都市夜，中慢）。",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 0.9,
+    "z": 0.5,
+    "why": "爵士 loop，都市夜，中慢"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/e7ecdd52-dfdb-48fa-b668-d35cdabc825a",
+    "https://music.apple.com/us/album/1566634481",
+    "https://zmeyev.bandcamp.com/"
+   ],
+   "mbRgMbid": "e7ecdd52-dfdb-48fa-b668-d35cdabc825a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "題名偏都市憂鬱，z 可能貼 0.3–0.5，風險較高"
+  },
+  {
+   "artist": "Hermanos Gutiérrez",
+   "album": "Hijos del sol",
+   "year": 2020,
+   "label": "",
+   "country": "ch",
+   "faction": "warm-reverb-guitar",
+   "genres": [
+    "world"
+   ],
+   "why": "瑞士厄瓜多混血兄弟檔的慢速混響電吉他器樂，《Hijos del Sol》10 曲 26 分鐘。 約 26 分鐘全長，聲音落恍惚：靜、重（混響吉他，無鼓或極輕拍，暖）。",
+   "moodGuess": {
+    "x": 1.9,
+    "y": 0.9,
+    "z": 0.9,
+    "why": "混響吉他，無鼓或極輕拍，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/3bb34aae-7f0b-487f-99fa-dce777bc5982",
+    "https://music.apple.com/us/album/1743222540",
+    "https://hermanosgutierrez.bandcamp.com/"
+   ],
+   "mbRgMbid": "3bb34aae-7f0b-487f-99fa-dce777bc5982",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "非 lofi 場景（歸擴寫的暖慢包覆感）；26 分鐘貼近下限；y 靠混響"
+  },
+  {
+   "artist": "Hermanos Gutiérrez",
+   "album": "El bueno y el malo",
+   "year": 2022,
+   "label": "",
+   "country": "ch",
+   "faction": "warm-reverb-guitar",
+   "genres": [
+    "world"
+   ],
+   "why": "Hermanos Gutiérrez《El Bueno y el Malo》10 曲 34 分鐘，Apple 分類 Instrumental，沙漠混響吉他。 約 34 分鐘全長，聲音落恍惚：靜、重（混響吉他，極慢，暖，包覆）。",
+   "moodGuess": {
+    "x": 1.9,
+    "y": 1,
+    "z": 0.9,
+    "why": "混響吉他，極慢，暖，包覆"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/4a179170-9f93-4b73-829d-a8dc48873233",
+    "https://music.apple.com/us/album/1632317760",
+    "https://hermanosgutierrez.bandcamp.com/"
+   ],
+   "mbRgMbid": "4a179170-9f93-4b73-829d-a8dc48873233",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "同上"
+  },
+  {
+   "artist": "Hermanos Gutiérrez",
+   "album": "Sonido cósmico",
+   "year": 2024,
+   "label": "",
+   "country": "ch",
+   "faction": "warm-reverb-guitar",
+   "genres": [
+    "world"
+   ],
+   "why": "Hermanos Gutiérrez《Sonido Cósmico》12 曲 40 分鐘，Daniel Lanois 式空間混響（Apple 分類 Worldwide）。 約 40 分鐘全長，聲音落恍惚：靜、重（混響吉他，極慢，暖，包覆）。",
+   "moodGuess": {
+    "x": 1.9,
+    "y": 1,
+    "z": 0.9,
+    "why": "混響吉他，極慢，暖，包覆"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/e62a945c-f07c-4feb-ae5e-f631d0e7f030",
+    "https://music.apple.com/us/album/1728320036",
+    "https://hermanosgutierrez.bandcamp.com/"
+   ],
+   "mbRgMbid": "e62a945c-f07c-4feb-ae5e-f631d0e7f030",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "同上"
+  },
+  {
+   "artist": "Hermanos Gutiérrez",
+   "album": "El camino de mi alma",
+   "year": 2018,
+   "label": "",
+   "country": "ch",
+   "faction": "warm-reverb-guitar",
+   "genres": [
+    "world"
+   ],
+   "why": "Hermanos Gutiérrez《El Camino de Mi Alma》8 曲 33 分鐘。 約 33 分鐘全長，聲音落恍惚：靜、重（混響吉他，慢，暖）。",
+   "moodGuess": {
+    "x": 2,
+    "y": 0.9,
+    "z": 0.9,
+    "why": "混響吉他，慢，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/a0844c55-8cc3-41be-8d41-19edf45175a4",
+    "https://music.apple.com/us/album/1743247984",
+    "https://hermanosgutierrez.bandcamp.com/"
+   ],
+   "mbRgMbid": "a0844c55-8cc3-41be-8d41-19edf45175a4",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "同上；曲少而長"
+  },
+  {
+   "artist": "Skinshape",
+   "album": "Umoja",
+   "year": 2020,
+   "label": "",
+   "country": "gb",
+   "faction": "dub-downtempo",
+   "genres": [
+    "soul"
+   ],
+   "why": "英國 Skinshape 的《Umoja》10 曲 43 分鐘，Apple 分類 Afro-Beat，帶 dub 感的暖調迷幻靈魂。 約 43 分鐘全長，聲音落恍惚：靜、重（dub 感低頻，Rhodes，中慢，暖）。",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.1,
+    "z": 1,
+    "why": "dub 感低頻，Rhodes，中慢，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/24202102-e399-4222-b568-b5e5b64a952a",
+    "https://music.apple.com/us/album/1516423474",
+    "https://skinshape.bandcamp.com/"
+   ],
+   "mbRgMbid": "24202102-e399-4222-b568-b5e5b64a952a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "有人聲，x 可能 2.6–2.9 貼邊"
+  },
+  {
+   "artist": "Skinshape",
+   "album": "Nostalgia",
+   "year": 2022,
+   "label": "",
+   "country": "gb",
+   "faction": "dub-downtempo",
+   "genres": [
+    "soul"
+   ],
+   "why": "Skinshape《Nostalgia》11 曲 39 分鐘迷幻靈魂，dub 化低頻與復古鍵盤。 約 39 分鐘全長，聲音落恍惚：靜、重（迷幻靈魂，低頻厚，慢，暖）。",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1.1,
+    "z": 1,
+    "why": "迷幻靈魂，低頻厚，慢，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/163995f8-dbbd-4b59-b433-ae8071c506b3",
+    "https://music.apple.com/us/album/1640697661",
+    "https://skinshape.bandcamp.com/"
+   ],
+   "mbRgMbid": "163995f8-dbbd-4b59-b433-ae8071c506b3",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "有人聲；Apple 分類 Psychedelic"
+  },
+  {
+   "artist": "Skinshape",
+   "album": "Life & Love",
+   "year": 2017,
+   "label": "",
+   "country": "gb",
+   "faction": "dub-downtempo",
+   "genres": [
+    "soul"
+   ],
+   "why": "Skinshape《Life & Love》10 曲 38 分鐘，暖調迷幻 dub 靈魂。 約 38 分鐘全長，聲音落恍惚：靜、重（迷幻靈魂，中慢，暖）。",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1,
+    "z": 1,
+    "why": "迷幻靈魂，中慢，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/50df4941-61ab-4cd1-8f76-ef365c3eb780",
+    "https://music.apple.com/us/album/1231461693",
+    "https://skinshape.bandcamp.com/"
+   ],
+   "mbRgMbid": "50df4941-61ab-4cd1-8f76-ef365c3eb780",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Apple 分類 Indie Rock，x 邊距小"
+  },
+  {
+   "artist": "Skinshape",
+   "album": "Filoxiny",
+   "year": 2018,
+   "label": "",
+   "country": "gb",
+   "faction": "dub-downtempo",
+   "genres": [
+    "soul"
+   ],
+   "why": "Skinshape《Filoxiny》8 曲 33 分鐘，希臘夏日調的 dub 化迷幻靈魂。 約 33 分鐘全長，聲音落恍惚：靜、重（迷幻 dub，慢中拍，暖）。",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.1,
+    "z": 1,
+    "why": "迷幻 dub，慢中拍，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/8cd93953-e065-4cb4-b439-5dee6e489cf0",
+    "https://music.apple.com/us/album/1806120555",
+    "https://skinshape.bandcamp.com/"
+   ],
+   "mbRgMbid": "8cd93953-e065-4cb4-b439-5dee6e489cf0",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Apple 分類 Alternative；x 邊距小"
+  },
+  {
+   "artist": "Pachyman",
+   "album": "In Dub",
+   "year": 2019,
+   "label": "",
+   "country": "us",
+   "faction": "dub-downtempo",
+   "genres": [
+    "world"
+   ],
+   "why": "Pachyman《In Dub》13 曲 41 分鐘，風琴與回授迴音的 roots dub。 約 41 分鐘全長，聲音落恍惚：靜、重（風琴，回授迴音，一滴鼓，低頻厚）。",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1.2,
+    "z": 0.8,
+    "why": "風琴，回授迴音，一滴鼓，低頻厚"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/581bdc47-4574-4144-9433-b3fe18b4e065",
+    "https://music.apple.com/us/album/1732388238",
+    "https://pachyman.bandcamp.com/"
+   ],
+   "mbRgMbid": "581bdc47-4574-4144-9433-b3fe18b4e065",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "—"
+  },
+  {
+   "artist": "Pachyman",
+   "album": "At 333 House",
+   "year": 2020,
+   "label": "",
+   "country": "us",
+   "faction": "dub-downtempo",
+   "genres": [
+    "world"
+   ],
+   "why": "Pachyman《At 333 House》14 曲 46 分鐘，家庭錄音室式的暖調 dub。 約 46 分鐘全長，聲音落恍惚：靜、重（風琴，慢 dub 拍，低頻）。",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1.2,
+    "z": 0.8,
+    "why": "風琴，慢 dub 拍，低頻"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/dacccb8d-233d-4a39-adf1-3e1ea13817f1",
+    "https://music.apple.com/us/album/1735545752",
+    "https://pachyman.bandcamp.com/"
+   ],
+   "mbRgMbid": "dacccb8d-233d-4a39-adf1-3e1ea13817f1",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "—"
+  },
+  {
+   "artist": "Pachyman",
+   "album": "Switched-On",
+   "year": 2023,
+   "label": "",
+   "country": "us",
+   "faction": "dub-downtempo",
+   "genres": [
+    "world"
+   ],
+   "why": "Pachyman《Switched-On》10 曲 35 分鐘 Moog／風琴 dub。 約 35 分鐘全長，聲音落恍惚：靜、重（合成器與風琴 dub，低頻，慢）。",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.2,
+    "z": 0.8,
+    "why": "合成器與風琴 dub，低頻，慢"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/3573c05d-81e0-4cab-b390-8359338b8928",
+    "https://music.apple.com/us/album/1693921971",
+    "https://pachyman.bandcamp.com/"
+   ],
+   "mbRgMbid": "3573c05d-81e0-4cab-b390-8359338b8928",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "合成器音色可能偏亮；z 風險"
+  },
+  {
+   "artist": "Pachyman",
+   "album": "The Return Of...",
+   "year": 2021,
+   "label": "",
+   "country": "us",
+   "faction": "dub-downtempo",
+   "genres": [
+    "world"
+   ],
+   "why": "Pachyman《The Return of…》12 曲 43 分鐘 dub。 約 43 分鐘全長，聲音落恍惚：靜、重（風琴 dub，慢中拍，低頻厚）。",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.2,
+    "z": 0.8,
+    "why": "風琴 dub，慢中拍，低頻厚"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/eab4cff8-413f-4390-85ea-fc4a03825d5a",
+    "https://music.apple.com/us/album/1565171632",
+    "https://pachyman.bandcamp.com/"
+   ],
+   "mbRgMbid": "eab4cff8-413f-4390-85ea-fc4a03825d5a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "—"
+  },
+  {
+   "artist": "Dubmatix",
+   "album": "The Dub Sessions, Vol. 1",
+   "year": 2023,
+   "label": "",
+   "country": "ca",
+   "faction": "dub-downtempo",
+   "genres": [
+    "world"
+   ],
+   "why": "加拿大 Dubmatix《The Dub Sessions Vol. 1》19 曲 56 分鐘 roots dub。 約 56 分鐘全長，聲音落恍惚：靜、重（roots dub，低頻厚，中慢拍）。",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.3,
+    "z": 0.7,
+    "why": "roots dub，低頻厚，中慢拍"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/95f72aaa-fd25-47b8-8fc4-2db730881853",
+    "https://music.apple.com/us/album/1721753893",
+    "https://dubmatix.bandcamp.com/"
+   ],
+   "mbRgMbid": "95f72aaa-fd25-47b8-8fc4-2db730881853",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Dubmatix 部分盤鼓拍密、有 dancehall 客串，x 邊距小"
+  },
+  {
+   "artist": "Dubmatix",
+   "album": "System Shakedown",
+   "year": 2010,
+   "label": "",
+   "country": "ca",
+   "faction": "dub-downtempo",
+   "genres": [
+    "world"
+   ],
+   "why": "Dubmatix《System Shakedown》13 曲 58 分鐘 dub／steppers。 約 58 分鐘全長，聲音落恍惚：靜、重（steppers 低頻，dub 回授，中拍）。",
+   "moodGuess": {
+    "x": 2.7,
+    "y": 1.4,
+    "z": 0.6,
+    "why": "steppers 低頻，dub 回授，中拍"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/52f906b4-c013-4e57-a74d-2873203f300b",
+    "https://music.apple.com/us/album/389423631",
+    "https://dubmatix.bandcamp.com/"
+   ],
+   "mbRgMbid": "52f906b4-c013-4e57-a74d-2873203f300b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "帶人聲客串，x 2.7 貼邊；列為汰換候補"
+  },
+  {
+   "artist": "Dubmatix",
+   "album": "Atomic Subsonic",
+   "year": 2006,
+   "label": "",
+   "country": "ca",
+   "faction": "dub-downtempo",
+   "genres": [
+    "world"
+   ],
+   "why": "Dubmatix《Atomic Subsonic》12 曲 57 分鐘 dub。 約 57 分鐘全長，聲音落恍惚：靜、重（dub 低頻厚，中慢拍）。",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 1.4,
+    "z": 0.6,
+    "why": "dub 低頻厚，中慢拍"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/2f1a1ba9-426b-3b66-9c4b-f19c96e7297e",
+    "https://music.apple.com/us/album/207156031",
+    "https://dubmatix.bandcamp.com/"
+   ],
+   "mbRgMbid": "2f1a1ba9-426b-3b66-9c4b-f19c96e7297e",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "帶人聲客串與電子鼓，x 貼邊；列為汰換候補"
+  },
+  {
+   "artist": "Teebs",
+   "album": "Collections 01",
+   "year": 2011,
+   "label": "",
+   "country": "us",
+   "faction": "warm-downtempo",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Brainfeeder 的 Teebs《Collections 01》10 曲 29 分鐘，磁帶糊的迷幻 beat。 約 29 分鐘全長，聲音落恍惚：靜、重（迷幻磁帶糊 beat，慢，暖）。",
+   "moodGuess": {
+    "x": 2,
+    "y": 1.2,
+    "z": 0.8,
+    "why": "迷幻磁帶糊 beat，慢，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/f4ebf083-382f-497d-961b-26f8c4680633",
+    "https://music.apple.com/us/album/472038029",
+    "https://teebs.bandcamp.com/"
+   ],
+   "mbRgMbid": "f4ebf083-382f-497d-961b-26f8c4680633",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "29 分鐘；旋律抽象，z 恐中性"
+  },
+  {
+   "artist": "DJ OKAWARI",
+   "album": "Diorama",
+   "year": 2008,
+   "label": "",
+   "country": "jp",
+   "faction": "jazzy-ihh",
+   "genres": [
+    "hiphop"
+   ],
+   "why": "日本 DJ Okawari 首張《Diorama》14 曲 55 分鐘，爵士鋼琴 jazzhop。 約 55 分鐘全長，聲音落恍惚：靜、重（爵士鋼琴取樣，中慢，暖）。",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 0.8,
+    "z": 0.9,
+    "why": "爵士鋼琴取樣，中慢，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/bdd09cf9-dab9-3631-b432-0795b1f430f6",
+    "https://music.apple.com/us/album/280133818"
+   ],
+   "mbRgMbid": "bdd09cf9-dab9-3631-b432-0795b1f430f6",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Okawari 偏輕盈乾淨，y 風險高；列為汰換候補"
+  },
+  {
+   "artist": "DJ OKAWARI",
+   "album": "Kaleidoscope",
+   "year": 2011,
+   "label": "",
+   "country": "jp",
+   "faction": "jazzy-ihh",
+   "genres": [
+    "hiphop"
+   ],
+   "why": "DJ Okawari《Kaleidoscope》13 曲 56 分鐘 jazzhop。 約 56 分鐘全長，聲音落恍惚：靜、重（爵士鋼琴取樣，中慢，暖）。",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 0.8,
+    "z": 0.9,
+    "why": "爵士鋼琴取樣，中慢，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/f2ee5cc7-7d59-4598-b60d-e9fdb8cdc5f1",
+    "https://music.apple.com/us/album/445788118"
+   ],
+   "mbRgMbid": "f2ee5cc7-7d59-4598-b60d-e9fdb8cdc5f1",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "同上；可能有人聲客串"
+  },
+  {
+   "artist": "DJ OKAWARI",
+   "album": "Compass",
+   "year": 2017,
+   "label": "",
+   "country": "jp",
+   "faction": "jazzy-ihh",
+   "genres": [
+    "hiphop"
+   ],
+   "why": "DJ Okawari《Compass》11 曲 44 分鐘 jazz 取向 beat。 約 44 分鐘全長，聲音落恍惚：靜、重（爵士鋼琴，中慢，暖）。",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 0.8,
+    "z": 0.9,
+    "why": "爵士鋼琴，中慢，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/b6f1b710-6813-4cdc-b9d0-f41b1d138220",
+    "https://music.apple.com/us/album/1187051962"
+   ],
+   "mbRgMbid": "b6f1b710-6813-4cdc-b9d0-f41b1d138220",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Apple 分類 Jazz，偏輕盈；y 風險高"
+  },
+  {
+   "artist": "Natureboy Flako",
+   "album": "Theme For A Dream",
+   "year": 2018,
+   "label": "",
+   "country": "de",
+   "faction": "warm-downtempo",
+   "genres": [
+    "electronic"
+   ],
+   "why": "德國 Natureboy Flako《Theme for a Dream》8 曲 28 分鐘，迷幻靈魂 beat。 約 28 分鐘全長，聲音落恍惚：靜、重（Rhodes 與糊濾波，慢，暖）。",
+   "moodGuess": {
+    "x": 2,
+    "y": 1,
+    "z": 0.8,
+    "why": "Rhodes 與糊濾波，慢，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/648927a3-cb91-4f82-88c0-c82b0c05a7cc",
+    "https://music.apple.com/us/album/1391193783"
+   ],
+   "mbRgMbid": "648927a3-cb91-4f82-88c0-c82b0c05a7cc",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "28 分鐘；可能有人聲"
+  },
+  {
+   "artist": "Natureboy Flako",
+   "album": "Natureboy",
+   "year": 2015,
+   "label": "",
+   "country": "de",
+   "faction": "warm-downtempo",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Natureboy Flako《Natureboy》16 曲 45 分鐘，Brainfeeder 系暖調 beat。 約 45 分鐘全長，聲音落恍惚：靜、重（暖 beat，糊濾波，中慢）。",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 1.1,
+    "z": 0.9,
+    "why": "暖 beat，糊濾波，中慢"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/62f87fba-9e9f-4648-83dd-f6497e3ed459",
+    "https://music.apple.com/us/album/1884408161"
+   ],
+   "mbRgMbid": "62f87fba-9e9f-4648-83dd-f6497e3ed459",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "16 曲有些短小，旋律抽象"
+  }
+ ],
+ "notes": [
+  "提名 54 張，全部 MB 釘住（primary-type Album、無 secondary type），0 張人工身分；封面來源 Apple Music（iTunes lookup 皆有 artwork），證據含 MB release-group、Apple 專輯頁，有 Bandcamp 的附藝人頁。",
+  "去重：已對 seed_cards.json（含 ml42／ml47／ml51 已上線的 80 張）與所有其他 curation-*.json 逐張比對，0 撞。",
+  "主場景挖不滿：Sleepy Fish 五張全在 ml42（Beneath Your Waves 已入池），其餘為 EP；Idealism 的 amaranthine 在 MB 為 EP（nobody else 16 分鐘、Sit In Silence 已在 ml42）；eevee 的 beat tape 01–13 皆短於 25 分鐘且 Apple 無上架，只收 TIME.；韓國 lo-fi（Park Bird、OVN、Blurred Figures、Nogymx 其他）幾乎全是 EP 長度，只 NOGYMX 三張達 30 分鐘；Jazzinuf 其餘多為 swing 彈跳或 Compilation 取向故只收 4 張。因此補了擴寫場景 (a) dub 化／迷幻靈魂（Pachyman、Dubmatix、Skinshape）、Teebs／Natureboy Flako 暖 beat，(b) 日本與美國爵士 jazzhop（Okawari、Freddie Joachim、Tall Black Guy），以及聲音相符的 Hermanos Gutiérrez 暖混響吉他。",
+  "已刪掉的候選（供主線知悉）：nvmnd《Distant.》（MB 同名是羅馬尼亞歌手）、burbank《a warm home》（實驗取向，MB 名稱與 danielburbank 重製版並存）、MYRONE《Hue》（遊戲編曲者）、Kainbeats《Skylight City》（有人聲客串與重複器樂版）、HM Surf（多首 feat. 人聲）、Les Gordon（電子流行）、Jav Cast（funk，z 風險）、Sweatson Klank《A Free Mind》（house／boogie＋人聲）、Marcus D、smuv、Hanshiro、Natse（身分或聲音不明）。",
+  "風險最高的 moodGuess：標 y 0.8 的 Jazzinuf《dazzle》、Yasumu 三張、DJ Okawari 三張（質地偏乾淨輕盈，可能落放鬆）；x 貼 2.6–2.7 的 Dubmatix 兩張、Skinshape、Tall Black Guy；Zmeyev《Urban Melancholy》z 可能貼 0.3。這些我無法試聽，moodGuess 全憑藝人風格與 Apple／Bandcamp 曲名標籤推估，建議主線評分代理優先汰換。",
+  "Bcalm、Laffey、Yasumu、Aviino 為 MB 無 Bandcamp 連結的 Chillhop／Steezy 系小藝人，卡單 artist 名照 MB。Glimlip 那張 MB 掛名為「Glimlip, Søren Søstrom & Soul Food Horns」，卡單須用合作掛名。DJ OKAWARI 與 NOGYMX 照 MB 大小寫。",
+  "Apple 時長（分鐘）皆已寫進 why；最短 26 分鐘（Hijos del sol、Laffey 兩張、Yasumu《In My Dreams》），貼 25 分鐘長度下限。"
+ ]
+}

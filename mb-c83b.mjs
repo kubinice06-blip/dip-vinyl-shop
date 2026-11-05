@@ -1,5 +1,5 @@
 // c83 b 組研究層暫存工具（用完刪）
-const UA = 'dip-vinyl-shop-research/1.0 ( kubinice06@gmail.com )';
+const UA = 'dip-vinyl-shop-research/1.0 (+https://dipvinyl.tw)';
 const CACHE = '/tmp/claude-0/-home-user-dip-vinyl-shop/f5085309-84aa-5485-a270-96aad3644d92/scratchpad/c83b';
 import fs from 'fs';
 import crypto from 'crypto';

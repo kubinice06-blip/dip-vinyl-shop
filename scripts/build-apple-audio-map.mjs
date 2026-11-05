@@ -139,6 +139,8 @@ async function appleLookup(collectionId, storefront) {
   if (!response.ok) throw new Error(`lookup-http-${response.status}`);
   const json = await response.json();
   const previews = (json.results || []).filter(item => item.wrapperType === 'track' && item.previewUrl);
+  // 這裡先取第一軌只是佔位；2026-11-05 起試聽一律播最紅那首，重建後要跑
+  // scripts/popular-preview.mjs（apple → deezer → amp → pick → apply）改選曲。
   return { previewTrackCount:previews.length, previewUrl:previews[0]?.previewUrl || '' };
 }
 

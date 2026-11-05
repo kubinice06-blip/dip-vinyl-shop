@@ -28,22 +28,43 @@
     "discogsReleaseId": "4253420"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 4,
+    "classic": 4,
+    "obscurity": 5,
     "accessibility": 2,
     "listeners": 148,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：第二張私壓、收藏家聖杯；L 148 且無串流→5；旋律 beat／迷幻流行"
    },
-   "rarity": "rare",
+   "rarity": "uncommon",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。傳99張但有Wooden Hill重發與2022 Cherry Red套盒（串流可得），不到7",
+    "evidenceUrls": [
+     "https://www.last.fm/music/Complex/The%20Way%20We%20Feel",
+     "https://musicbrainz.org/release-group/7870bfb0-b9a6-4c70-9520-02625ff27803",
+     "https://www.discogs.com/release/4253420"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
-    "text": "五月那張本來是拿去給大唱片公司聽的 demo，八月這張是第二張。1968 年成軍於 Blackpool，原盤是 Deroy 的 DER 671 S，錄音與壓片都由 Carnforth 的 Deroy Sound Service 一手包辦，封套是很薄的卡紙、開口開在上方。Steve Coe 的風琴與電鋼琴撐住和聲底，作曲掛他與 Bob Mitchell。Coe 後來在 1980 年代初共同組成 Monsoon，並與該團主唱 Sheila Chandra 結婚。",
+    "text": "《The Way We Feel》是英格蘭 Blackpool 樂團 Complex 1971 年的第二張專輯，當初只在 Deroy Sound Studio 的名下極小量壓製，同年的首張更只壓了 99 張，兩張到 1999 年才由 Wooden Hill 重發。這張比首張更想走商業路線，演奏卻常更鬆散。主要質地是豐厚的和聲人聲、Farfisa 風琴與大鍵琴，加上 fuzz 失真吉他，聽起來更像 1960 年代；器樂曲〈Moving Moor〉由古典式段落組成，接近 Procol Harum 與 Moody Blues。",
     "sourceUrls": [
      "https://www.discogs.com/artist/1540860-Complex-19",
      "https://www.discogs.com/release/4253420-Complex-19-The-Way-We-Feel",
@@ -62,8 +83,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   }
  ]

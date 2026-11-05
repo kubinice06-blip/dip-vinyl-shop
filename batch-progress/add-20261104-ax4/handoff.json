@@ -1,0 +1,45 @@
+{
+ "batch": "add-20261104-ax4",
+ "cards": 20,
+ "written": {
+  "cardCatalog": 20,
+  "kvKeys": 23,
+  "seedRows": 20,
+  "previewReady": 3,
+  "previewUnavailable": 17
+ },
+ "review": {
+  "by": "cloud-main",
+  "cards": 20,
+  "changed": [
+   "desc4:菊地雅章セクステット|Hairpin Circus",
+   "desc2:Krzak|Paczka"
+  ]
+ },
+ "qa": {
+  "research": "pass",
+  "hooks": "pass",
+  "out": "pass",
+  "prepareGate": "0 error",
+  "publishedGate": "0 error"
+ },
+ "apex": {
+  "pearl": 15,
+  "general": 5
+ },
+ "pendingLocal": {
+  "kv": "無",
+  "listeners": [],
+  "apexEvidence": [],
+  "genreTree": "已重建",
+  "albumOverrides": "album_overrides.tier 留給本機後台「依卡池同步頂點旗標」"
+ },
+ "artistIntro": {
+  "roster": "batch-progress/artist-intro/roster-ax4.json",
+  "batch": "ar-d-264",
+  "artists": 18,
+  "published": 15,
+  "skipped": 3,
+  "state": "published"
+ }
+}

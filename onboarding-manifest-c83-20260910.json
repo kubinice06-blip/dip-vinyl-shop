@@ -28,14 +28,23 @@
     "discogsReleaseId": "701765"
    },
    "ratings": {
-    "classic": 4,
-    "obscurity": 4,
-    "accessibility": 4,
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
     "listeners": 204,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "epic"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：DI 首張，代表作是 D.I. Go Pop；L204 本盤無串流→5；早期吉他後龐克，尚未取樣化"
    },
-   "rarity": "epic",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -92,22 +101,42 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 4,
+    "classic": 4,
+    "obscurity": 5,
     "accessibility": 2,
     "listeners": 15,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Y Cyrff 唯一專輯、威爾斯場景重要；L15 無串流→5；新浪潮另類搖滾"
    },
-   "rarity": "rare",
+   "rarity": "uncommon",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。L15有效，Ankst 小廠LP，壓量無據、非收藏聖杯；5星",
+    "evidenceUrls": [
+     "https://www.last.fm/music/Y%20Cyrff/Llawenydd%20Heb%20Ddiwedd",
+     "https://musicbrainz.org/release-group/976dd56d-49a0-3027-995b-b79808f4546f"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
-    "text": "製作、作曲與演奏三個 credit 欄，填的都是 Y Cyrff 一個名字。欄位旁的威爾斯語是 Cynhyrchydd、Ysgrifennwyd Gan 與 Offerynnau Gan。Discogs 廠牌頁說 Ankst 在 1988 至 1998 年間專營威爾斯語的另類音樂。錄音在 Stiwdio Les，註記欄另寫地點在 Bethesda，壓片 Damont、刻紋在 The Exchange。Discogs 登錄的曲長，〈Colofn〉3:49，同名曲 2:48。",
+    "text": "《Llawenydd Heb Ddiwedd》是北威爾斯 Llanrwst 的威爾斯語獨立樂團 Y Cyrff 的首張專輯，1991 年由 Ankst 發行黑膠與卡帶，盤名意思是「無盡的喜悅」。樂團 1983 年在當地學校成立，早年的〈Cymru, Lloegr a Llanrwst〉成了威爾斯樂團常翻唱的歌；這張之後不久他們解散，認為只唱威爾斯語無法在主流成功，Mark Roberts 與 Paul Jones 後來進了 Catatonia。歌曲、演奏與製作都由樂團自己包辦，在 Bethesda 的 Stiwdio Les 錄音，十二首多在兩到四分鐘。",
     "sourceUrls": [
      "https://www.discogs.com/release/3725168",
      "https://musicbrainz.org/release-group/976dd56d-49a0-3027-995b-b79808f4546f",
@@ -126,8 +155,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -155,12 +184,21 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 3,
-    "obscurity": 4,
-    "accessibility": 4,
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 3,
     "listeners": 3693,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Faith Healers 首張代表作；Too Pure L3693 下限3；噪音 kraut 長篇即興"
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -224,12 +262,21 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
+    "classic": 4,
     "obscurity": 4,
     "accessibility": 2,
     "listeners": 837,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Gruff Rhys 前身樂團末作、威爾斯場景重要；L837 有串流→4；旋律獨立搖滾"
    },
    "rarity": "rare",
    "apexAssessment": {
@@ -252,7 +299,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/c9/f6/c0/c9f6c01e-0c73-bb5b-b880-2508df5cad5e/mzaf_14435826273003172158.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/dd/26/a8/dd26a80f-a418-8554-caee-5bf0eff88a6a/mzaf_11692656845907583293.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -292,12 +339,21 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 3,
+    "classic": 4,
     "obscurity": 4,
-    "accessibility": 4,
+    "accessibility": 3,
     "listeners": 1364,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：威爾斯語地下名團代表作之一、Peel 愛盤；L1364，Ankst 小廠收藏領域→4；lo-fi 後龐克念白"
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -357,14 +413,29 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 3,
-    "obscurity": 4,
-    "accessibility": 2,
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 3,
     "listeners": 8372,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Voodoo Queens 唯一專輯即代表作、英國 riot grrrl；L8372→3；龐克流行",
+    "previousAccessibility": {
+     "accessibility": 2,
+     "rarity": "rare",
+     "at": "2026-11-04"
+    },
+    "loudFloorNote": "硬蕊度音量下限（2026-11-04 店主定案）：riot grrrl 龐克，失真吉他為主"
    },
-   "rarity": "rare",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -386,7 +457,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/dc/95/65/dc956541-dad5-6004-e968-de80f0531516/mzaf_7989667858685750573.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/ab/81/34/ab8134b4-b9dc-5a1d-b1bc-71ce43c3dfb2/mzaf_18400005351444394782.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -427,14 +498,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 3,
-    "obscurity": 4,
+    "classic": 4,
+    "obscurity": 3,
     "accessibility": 4,
     "listeners": 4281,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Moonshake 重要作，與 Eva Life 並列；Too Pure L4281 下限3；取樣尖銳後搖"
    },
-   "rarity": "uncommon",
+   "rarity": "epic",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -454,7 +534,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview112/v4/e1/b6/df/e1b6df2c-8553-47d5-d631-61a09c76967e/mzaf_2743663008172497529.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview112/v4/cb/d1/53/cbd15333-99fe-934d-fdcb-ce4f0e1d1995/mzaf_2013668520222833300.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -502,7 +582,7 @@
     "source": "manual:depth-rubric",
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -558,14 +638,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
+    "classic": 3,
     "obscurity": 4,
-    "accessibility": 4,
+    "accessibility": 2,
     "listeners": 385,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Too Pure 小團；L385 有串流→4；短曲噪感獨立搖滾"
    },
-   "rarity": "uncommon",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -587,7 +676,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview71/v4/26/20/dd/2620dd81-c326-8cb9-7e43-80ee5f774fcf/mzaf_4450366322783467741.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/Music/v4/14/c0/73/14c0731c-d7d4-7a45-cb68-65589016c4f7/mzaf_5927434762439789863.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -627,14 +716,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 4,
+    "classic": 4,
+    "obscurity": 3,
     "accessibility": 3,
     "listeners": 18834,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 3,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：LFK 首張代表作、Mark E. Smith 客串；Too Pure L1.9萬→3；藝術後搖、布祖基"
    },
-   "rarity": "rare",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -655,7 +753,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/20/c2/aa/20c2aac7-b412-6fba-721d-1947fd5c9535/mzaf_9262880348725019770.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/e4/d7/5e/e4d75eec-b6fb-0fcc-19cf-01b1c6984841/mzaf_4349801898140858291.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -697,12 +795,21 @@
    "ratings": {
     "classic": 3,
     "obscurity": 4,
-    "accessibility": 4,
+    "accessibility": 3,
     "listeners": 1021,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：非代表作（Pointless Walks 才是）；L1021 小廠黑膠→4；噪感 kraut 對吵人聲"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -724,7 +831,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview113/v4/ad/59/5c/ad595c70-1c84-f87c-fc21-0a2ac6093d25/mzaf_11424441441138451281.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview113/v4/03/c7/a0/03c7a0f3-7153-6339-88ec-4e3d205b2b12/mzaf_6972756109414021693.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -765,14 +872,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 4,
-    "accessibility": 4,
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 2,
     "listeners": 2466,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Jack 首張、獲樂評盛讚的代表作；Too Pure 正常流通 L2466→3；Scott Walker 式室內搖滾"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -833,14 +949,29 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 4,
-    "accessibility": 2,
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 3,
     "listeners": 8379,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：UY 首張代表作；ché 流通 L8379→3；fuzz 噪音流行",
+    "previousAccessibility": {
+     "accessibility": 2,
+     "rarity": "rare",
+     "at": "2026-11-04"
+    },
+    "loudFloorNote": "硬蕊度音量下限（2026-11-04 店主定案）：噪音獨立搖滾，失真吉他為主"
    },
-   "rarity": "rare",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -861,7 +992,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/0a/a7/68/0aa76835-3015-9d3b-6bd8-0f9d11c23e17/mzaf_7938936372626256057.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview20/v4/c6/c5/56/c6c55681-6d3d-41c9-5723-73a82f33191b/mzaf_3376315117078514565.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -904,12 +1035,21 @@
    "ratings": {
     "classic": 3,
     "obscurity": 4,
-    "accessibility": 4,
+    "accessibility": 2,
     "listeners": 5831,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Yummy Fur 首張；L5831 但雙小廠黑膠無串流→4；角度後龐克短曲"
    },
-   "rarity": "uncommon",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -968,14 +1108,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
+    "classic": 3,
     "obscurity": 4,
-    "accessibility": 4,
+    "accessibility": 2,
     "listeners": 307,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：藝人主要專輯但少評論；L307 有串流→4；香頌式抒情"
    },
-   "rarity": "uncommon",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -995,7 +1144,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview118/v4/d8/e4/b8/d8e4b8a7-377c-524f-a0a2-498184cebd02/mzaf_2121693259092195825.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview128/v4/2e/4f/67/2e4f67c5-2a48-46c1-03d5-8e1454695dee/mzaf_2500556917204280778.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -1035,12 +1184,21 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
+    "classic": 3,
     "obscurity": 4,
-    "accessibility": 2,
+    "accessibility": 3,
     "listeners": 310,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Ectogram 首張；L310 有串流→4；65分鐘迷幻太空搖滾、前衛成分"
    },
    "rarity": "rare",
    "apexAssessment": {
@@ -1062,7 +1220,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/Music7/v4/3d/91/18/3d911824-905c-8d67-281a-6960483ef38c/mzaf_7735853036257206456.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/Music7/v4/0a/ac/a4/0aaca4fa-8565-c04c-2372-d7639a2f7451/mzaf_1724740124928164771.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -1103,14 +1261,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 3,
+    "classic": 4,
     "obscurity": 3,
-    "accessibility": 2,
+    "accessibility": 1,
     "listeners": 22227,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：TBS 首張代表作；Shinkansen L2.2萬→3；柔和憂傷流行"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1132,7 +1299,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/f0/04/bb/f004bb9f-4e65-0a07-b623-19e01bc1bf1f/mzaf_6688880430474081078.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/01/67/35/016735ed-82b4-2ac1-85a9-a525e483ac84/mzaf_4323438768604987368.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -1172,14 +1339,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 4,
-    "accessibility": 2,
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
     "listeners": 343,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：格拉斯哥後搖首張；L343 無串流→5；角度器樂後搖"
    },
-   "rarity": "rare",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1239,13 +1415,22 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 4,
-    "accessibility": 2,
+    "obscurity": 3,
+    "accessibility": 1,
     "listeners": 11624,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Blueboy 末張，代表作為 If Wishes/Unisex；正常獨立流通 L1.1萬→3；柔和 twee pop"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1266,7 +1451,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/08/5c/31/085c3166-5a3a-f510-1907-c832523fded9/mzaf_1723214871090325104.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/1c/f8/fb/1cf8fb5c-d2c6-d9eb-377d-b6333d061014/mzaf_272930758449321468.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -1307,14 +1492,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 4,
-    "accessibility": 2,
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 1,
     "listeners": 1520,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Another Sunny Day 主唱個人迷你專輯；L1520 下限3；溫柔室內流行"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1335,7 +1529,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/af/2b/9c/af2b9c85-b1cb-353f-6d7e-8f6d11389632/mzaf_46617010231322808.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/5b/ef/0b/5bef0bbe-3ed2-d14c-eb19-19c2c3d783de/mzaf_2091656772352961788.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -1376,12 +1570,21 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
+    "classic": 3,
     "obscurity": 4,
     "accessibility": 4,
     "listeners": 99,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：VtB 首張；L99 有串流→4；前衛民謠即興"
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -1404,7 +1607,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/Music69/v4/05/b2/22/05b2225a-73b4-2206-4223-b01da9c0c7ac/mzaf_8298518633585704292.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/Music69/v4/1c/09/6a/1c096a21-3a82-69a1-adb1-0bee31ecee2f/mzaf_2185416483282943046.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -1444,12 +1647,21 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 4,
-    "accessibility": 4,
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
     "listeners": 402,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Worm Interface 首發、藝人主要專輯但少評論；L402 無串流→5；8分鐘長篇氛圍techno"
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -1580,14 +1792,24 @@
     "discogsReleaseId": "42966"
    },
    "ratings": {
-    "classic": 4,
-    "obscurity": 4,
-    "accessibility": 5,
+    "classic": 2,
+    "obscurity": 5,
+    "accessibility": 4,
     "listeners": 816,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 5,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：H3o 非最知名作；L816 試聽無，但 MB 有 2020 XW 數位版→4；抽象聲音藝術；冷門度下限豁免：ADDENDUM 但書：確知有正式數位版",
+     "rarity": "epic"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：Ash International 限量黑膠，聽眾 816；2020 有官方數位版（Simply Superior）故 4；抽象聲響但無單盤極端樂評｜L=816"
    },
-   "rarity": "epic",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1644,14 +1866,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
+    "classic": 3,
     "obscurity": 4,
-    "accessibility": 4,
+    "accessibility": 3,
     "listeners": 1761,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Simon Pyke 首張 IDM；L1761，Worm Interface 小廠有串流→4；glitch 電子"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1672,7 +1903,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview71/v4/0a/09/10/0a0910ed-24b1-e2f3-72d5-b87e3f129fe5/mzaf_1139210107666348841.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview71/v4/7c/36/da/7c36da47-a15e-4beb-4a60-30eff7334b36/mzaf_3062872968576605765.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -1713,14 +1944,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 4,
-    "accessibility": 2,
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
     "listeners": 564,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Wurlitzer Jukebox 小團；L564 無串流→5；迷幻氛圍搖滾"
    },
-   "rarity": "rare",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1779,14 +2019,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
+    "classic": 3,
     "obscurity": 4,
-    "accessibility": 4,
+    "accessibility": 3,
     "listeners": 1405,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Amp 早期太空搖滾/drone 佳作非頂峰；L1405 下限3，小廠有串流→4；長篇漂浮音牆"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1809,7 +2058,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview122/v4/9d/ad/c4/9dadc46f-82e5-357c-a8f4-e1489da30685/mzaf_8057668605963295337.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview112/v4/7f/d5/a0/7fd5a0c9-38ef-7d7f-c87c-81bd991f297f/mzaf_674589387226518344.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -1851,22 +2100,42 @@
     "note": "https://electroscope.bandcamp.com/album/homemade-electroscope"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 4,
-    "accessibility": 4,
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
     "listeners": 56,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Wurlitzer Jukebox 家庭電子迷幻；L56 無串流→5；需投入的 lo-fi 電子"
    },
    "rarity": "uncommon",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。附風箏限定LP但壓量無據，非公認聖杯",
+    "evidenceUrls": [
+     "https://www.last.fm/music/Electroscope/Homemade%20Electroscope",
+     "https://musicbrainz.org/release-group/cf42f305-ed98-3f43-8a1e-718774a9968e"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
-    "text": "十五軌裡有兩軌另在別處以單聲道錄成。註記欄寫其餘各軌錄在 Globbot Sound 的 3M 400 series 八軌機，〈Tunguska〉與〈Dunwich〉錄在 Pink's Attic Chamber。credit 欄兩條 Composed By，寫 Gayle Harrison 與 John Cavanagh；Discogs 藝人頁的成員欄列的是 Gayle Brogan。MusicBrainz 登錄的曲長最長〈Fusechain〉4:43。",
+    "text": "《Homemade Electroscope》是格拉斯哥雙人組 Electroscope 的首張專輯，1997 年 9 月由英國小廠 Wurlitzer Jukebox 發行，沒有再版紀錄，至今主要由樂團自己販售。Gayle Brogan 與 John Cavanagh 此前各以 Pefkin 與 Phosphene 名義錄音約十年。全碟用八軌機錄成，核心是 VCS3 合成器、1950 年代的無線電麥克風與人聲，另有吉他、貝斯、單簧管、銅管、腳踏風琴與小鍵盤。多數是器樂，穿插兩人各自念的口白故事，Cavanagh 低沉的嗓音最突出，整體內向、以氣氛為主。",
     "sourceUrls": [
      "https://musicbrainz.org/release-group/cf42f305-ed98-3f43-8a1e-718774a9968e",
      "https://musicbrainz.org/release/58ed5e0f-13c3-4be9-acb4-34181c0a9b77",
@@ -1887,8 +2156,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -1916,14 +2185,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 3,
+    "classic": 4,
     "obscurity": 3,
-    "accessibility": 2,
+    "accessibility": 3,
     "listeners": 36645,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Movietone 公認最佳、Domino；L3.7萬→3；緩慢稀疏長曲"
    },
-   "rarity": "rare",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1945,7 +2223,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/05/f4/5b/05f45bf4-7adb-f056-db69-562b8a8a4733/mzaf_9480944747492596620.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/a6/00/cb/a600cb8e-d453-01c4-4bb8-48bbf8f564a6/mzaf_2810879655542728082.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -1986,14 +2264,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 3,
-    "obscurity": 4,
+    "classic": 4,
+    "obscurity": 3,
     "accessibility": 4,
     "listeners": 9060,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：TEF 公認代表作；Domino/Merge 流通 L9060→3；失真密集鼓打貝斯陰鬱音牆"
    },
-   "rarity": "uncommon",
+   "rarity": "epic",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2057,12 +2344,21 @@
     "note": "試聽探測釘定的 collectionId 41848531（gb）：Twisted Science — Blown"
    },
    "ratings": {
-    "classic": 2,
+    "classic": 3,
     "obscurity": 4,
-    "accessibility": 2,
+    "accessibility": 3,
     "listeners": 453,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Lo Recordings 小團；L453 有串流→4；glitch 電子"
    },
    "rarity": "rare",
    "apexAssessment": {
@@ -2126,22 +2422,44 @@
     "discogsReleaseId": "1216386"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 4,
-    "accessibility": 4,
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
     "listeners": 24,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Wurlitzer Jukebox 小團、少評論；L24 無串流→5；短曲氛圍電子",
+     "rarity": "rare"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：Wurlitzer Jukebox 小廠 CD 單一版本、無再發；listeners 24 有效｜L=24"
    },
    "rarity": "uncommon",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。L24有效，但壓量無據、無收藏圈聖杯地位依據；屬5星冷門，不到7",
+    "evidenceUrls": [
+     "https://www.last.fm/music/Soundsmith/Aquanaut",
+     "https://musicbrainz.org/release-group/8b76d01f-2624-4fd0-96b7-439535fef360",
+     "https://www.discogs.com/release/1216386"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
-    "text": "隨盤宣傳單的文案被逐字抄進了 Discogs 原盤條目的註記欄。那段文案要人想像鐵匠打鐵，再想 Paul Gulati (Soundsmith) 在自己房間裡做出這張碟，後面接了兩句 West Country Psych 的宣傳語。同站藝人頁的 realname 欄也寫 Paul Gulati。credit 欄只有一條 Written-By。公司欄記 Cargo (2) 經銷、PMDC, UK 製造。MusicBrainz 登錄末軌〈Tatski〉只有 43 秒。",
+    "text": "《Aquanaut》是 Paul Gulati 以 Soundsmith 名義在 1998 年發行的 CD，出版者是前一年發行 Electroscope 首張專輯的英國小廠 Wurlitzer Jukebox。它只發行過這一次，沒有留下樂評，收藏的人很少。隨盤宣傳單把它放在「West Country Psych」，即英格蘭西部的迷幻樂，並拿 Flying Saucer Attack 對照。全碟只署名他一人作曲，在自己臥室獨力完成。十四首共約 50 分鐘，最長的〈Lovers of the Unknown〉5:49，末首〈Tatski〉只有 43 秒。",
     "sourceUrls": [
      "https://musicbrainz.org/release-group/8b76d01f-2624-4fd0-96b7-439535fef360",
      "https://musicbrainz.org/release/cd69aaab-1182-49fe-be1e-837f3f00b1b7",
@@ -2160,8 +2478,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -2190,14 +2508,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
+    "classic": 3,
     "obscurity": 4,
-    "accessibility": 4,
+    "accessibility": 2,
     "listeners": 149,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Earworm 小團；L149 有串流→4；3分鐘短曲電子流行"
    },
-   "rarity": "uncommon",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2219,7 +2546,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/Music6/v4/6b/f6/9a/6bf69a2b-b9f2-ff26-69c1-5231b76d407a/mzaf_8782502826924212342.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/Music3/v4/b9/10/81/b910814d-9ad9-2a51-17f7-756ead817bbd/mzaf_9135070041529002128.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -2260,14 +2587,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 4,
-    "accessibility": 2,
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
     "listeners": 26,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Earworm 唯一專輯、少評論；L26 無串流→5；12分鐘拼貼實驗流行"
    },
-   "rarity": "rare",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2326,12 +2662,21 @@
     "note": "試聽探測釘定的 collectionId 1617856856（gb）：Longstone — Surrounded by Glass"
    },
    "ratings": {
-    "classic": 2,
+    "classic": 3,
     "obscurity": 4,
-    "accessibility": 2,
+    "accessibility": 3,
     "listeners": 66,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Ochre 氛圍電子；L66 有串流→4；10分鐘長篇氛圍"
    },
    "rarity": "rare",
    "apexAssessment": {
@@ -2398,21 +2743,43 @@
    },
    "ratings": {
     "classic": 2,
-    "obscurity": 4,
-    "accessibility": 2,
+    "obscurity": 5,
+    "accessibility": 3,
     "listeners": 50,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 3,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：英國太空搖滾小廠 Enraptured；聽眾50、無試聽→5；太空迷幻 drone",
+     "rarity": "uncommon"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：Enraptured 微型太空搖滾廠單版 CD、無串流｜L=50"
    },
    "rarity": "rare",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。微型廠CD，壓量無據，非收藏聖杯",
+    "evidenceUrls": [
+     "https://www.last.fm/music/Alpha%20Stone/Elasticated%20Waveband",
+     "https://musicbrainz.org/release-group/5099f1f6-23be-3ca0-b12e-3cd1462aaa76",
+     "https://www.discogs.com/release/897022"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
-    "text": "八軌的頭尾兩軌就叫〈Intro〉與〈Outro〉，末軌長 6:16。credit 欄把吉他、人聲、合成器、程式、寫作、錄音與製作七項全掛在 Pete Bassman 底下，另有 Andy Smith (2) 的貝斯與 Digger (4) 的鍵盤。註記欄寫第 1、6 軌出自 Dominic DeJoseph 的片子。Discogs 廠牌頁的簡介欄說 Enraptured 1993 年成立，1996 年其中一位創辦人另開 Earworm。註記欄另寫封套有一層感溫液晶。",
+    "text": "《Elasticated Waveband》是 Pete Bassman 以 Alpha Stone 名義的專輯，1998 年由英國小廠 Enraptured 出 CD，沒有再版紀錄。Bassman 曾是 Spacemen 3 的成員，在 The Darkside 之後組了這個計畫。吉他、人聲、合成器、程式、錄音與製作都是他一人，另有 Andy Smith 彈貝斯、Dannie Payne 打鼓、Digger 彈鍵盤。這個計畫的聲音以 fuzz 吉他、合成器掃頻、程式鼓與處理過的人聲為核心。八首約 52 分鐘，多首超過六分鐘。",
     "sourceUrls": [
      "https://musicbrainz.org/release-group/5099f1f6-23be-3ca0-b12e-3cd1462aaa76",
      "https://musicbrainz.org/release/9159ac23-f4d5-4300-bc52-75d7701780eb",
@@ -2433,8 +2800,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -2465,14 +2832,23 @@
     "note": "試聽探測釘定的 collectionId 1645278329（gb）：The Freed Unit — Things Are Looking Up"
    },
    "ratings": {
-    "classic": 2,
+    "classic": 3,
     "obscurity": 4,
     "accessibility": 2,
     "listeners": 17,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Enraptured 小團；L17 有串流→4；旋律電子搖滾"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2494,7 +2870,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview122/v4/5e/b6/b2/5eb6b2f8-eab7-7b28-11f8-10a25647f046/mzaf_5566083329177944524.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview112/v4/04/ae/57/04ae57d3-f178-6865-5545-2faaae61a6e7/mzaf_9466310195643713755.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -2534,14 +2910,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
+    "classic": 4,
     "obscurity": 4,
-    "accessibility": 2,
+    "accessibility": 4,
     "listeners": 947,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Benny Nilsen/Hazard 代表作、Ash Intl 名盤；L947 有串流→4；田野錄音暗黑 drone"
    },
-   "rarity": "rare",
+   "rarity": "epic",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2563,7 +2948,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/88/e4/0e/88e40e26-8d4f-6e8f-a9e6-83c6422ea520/mzaf_6615453878505063538.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/Music/v4/cc/d5/09/ccd5096f-e4d7-b35b-6345-901db1dba007/mzaf_9054035790133073801.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -2603,22 +2988,42 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 4,
-    "accessibility": 4,
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
     "listeners": 266,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Earworm 單張專輯、少評論覆蓋；L266 無串流→5；器樂電子後搖、10分長曲"
    },
    "rarity": "uncommon",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。listeners 266接近門檻，小廠CD壓量無據",
+    "evidenceUrls": [
+     "https://www.last.fm/music/Avrocar/Cinematography",
+     "https://musicbrainz.org/release-group/d048857d-0b6c-48f7-8b1b-c7821ada7ac1"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
-    "text": "九軌的末軌〈Cathode & Cello'd〉一首就有 10 分 11 秒。〈Amplify〉7:03 撐起後半。credit 欄只有三條，Live Drums 掛 Damian Gaffney、Mastered By 掛 Adam Nunn、Production Assistant 掛 Antony Harding。Discogs 藝人頁的簡介欄說這團來自 Birmingham 與 black country，2013 年 6 月解散。",
+    "text": "《Cinematography》是英國伯明罕電子樂團 Avrocar 的首張專輯，1999 年由 Earworm 出 CD，只壓了 1000 張，沒有黑膠或再版紀錄。他們和 Broadcast、Pram、Plone 被歸在同一批伯明罕樂團。母帶在 Abbey Road 由 Adam Nunn 完成，Damian Gaffney 打現場鼓。樂團用吉他、鍵盤、貝斯、程式鼓、大提琴、鋼琴與不明的電子裝置做實驗音樂；開場的〈Fega〉6:07 與末首〈Cathode & Cello'd〉10:11 都是綿長的持續音器樂曲。",
     "sourceUrls": [
      "https://musicbrainz.org/release-group/d048857d-0b6c-48f7-8b1b-c7821ada7ac1",
      "https://musicbrainz.org/release/436f0784-cd4b-45f6-9991-25d0720fc87b",
@@ -2639,8 +3044,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -2673,12 +3078,21 @@
    "ratings": {
     "classic": 3,
     "obscurity": 4,
-    "accessibility": 4,
+    "accessibility": 3,
     "listeners": 7,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Earworm 冰島題材小團；L7 有串流→4；15分鐘後搖長曲"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2700,7 +3114,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/2e/33/47/2e334734-2d38-4229-2f84-6a3c3c3ae12a/mzaf_12324412593982857162.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6b/0a/47/6b0a4757-522b-8597-a877-12f031f5cb26/mzaf_5896850263679006956.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -2741,14 +3155,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 3,
+    "classic": 4,
     "obscurity": 3,
-    "accessibility": 3,
+    "accessibility": 2,
     "listeners": 44007,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 3,
+     "accessibility": 3,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Piano Magic 代表作；Rocket Girl 流通 L4.4萬→3；電子夢幻流行"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2770,7 +3193,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/06/db/d5/06dbd5ba-9055-d17e-a593-1f73b7c5a8a6/mzaf_12510216848526553871.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/d8/10/d4/d810d4fc-c8c2-8a4a-9e96-7ce1f2eee66d/mzaf_18393578235724116261.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -2811,12 +3234,21 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 4,
-    "accessibility": 4,
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
     "listeners": 158,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Ochre 太空搖滾小團；L158 無串流→5；drone 迷幻"
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -2878,21 +3310,43 @@
    },
    "ratings": {
     "classic": 2,
-    "obscurity": 4,
-    "accessibility": 4,
+    "obscurity": 5,
+    "accessibility": 3,
     "listeners": 29,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 3,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Ochre 小團；L29 無串流→5；氛圍電子搖滾",
+     "rarity": "uncommon"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：Ochre Records 英國極小廠單一CD版，無串流再發；L=29｜L=29"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。L29有效，Ochre 小廠CD，壓量無據、無聖杯地位；5星冷門",
+    "evidenceUrls": [
+     "https://www.last.fm/music/The%20Land%20of%20Nod/Translucent",
+     "https://musicbrainz.org/release-group/8815bf46-3513-416a-9469-96bffdfbbbdd",
+     "https://www.discogs.com/release/2004140"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
-    "text": "十軌錄在三個地方，註記欄逐軌標明哪一軌錄在哪裡。六軌在 nod studios，三軌在 Bethesda 的 bryn derwen，一軌在 Ossett 的 riverside studios。credit 欄四條，Design 掛 VSA、Mastered By 掛 Mike Cross，兩條 Recorded By 各帶軌號。首軌與末軌共用同一個曲名主幹，各帶一個括號副題。Discogs 藝人頁的簡介欄寫這是 Cheltenham 的團。",
+    "text": "《Translucent》是切爾滕納姆二人組 The Land of Nod 的首張專輯，1999 年 2 月由 Ochre Records 發行，CD 限量 500 張。吉他手 Ant Walker 與貝斯手 Dave Battersby 在 1990 年代中期組團，2003 年錄過 BBC Radio 1 的 John Peel session，被拿來和 Neu! 等 Krautrock 以及 Godspeed You! Black Emperor 相比。音樂以吉他器樂配鼓機為主，被歸在後搖滾、太空搖滾與 shoegaze。",
     "sourceUrls": [
      "https://musicbrainz.org/release-group/8815bf46-3513-416a-9469-96bffdfbbbdd",
      "https://musicbrainz.org/release/0657ae26-7240-4718-8122-3510fd07542d",
@@ -2912,8 +3366,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -2943,12 +3397,21 @@
     "note": "試聽探測釘定的 collectionId 1528305253（gb）：Experimental Audio Research — Pestrepeller"
    },
    "ratings": {
-    "classic": 2,
+    "classic": 3,
     "obscurity": 4,
-    "accessibility": 5,
+    "accessibility": 4,
     "listeners": 248,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 5,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：EAR 非 Sonic Boom 名下主力；L248 有串流→4；20分鐘振盪器、環形調變 drone"
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -3012,14 +3475,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 4,
-    "accessibility": 4,
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
     "listeners": 13909,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Rothko 三貝斯早期佳作；Lo 流通 L1.4萬→3；器樂貝斯氛圍後搖"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -3041,7 +3513,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/Music2/v4/be/4d/7d/be4d7d09-350b-4613-8c2b-4e68f5fbb7d6/mzaf_8220138538489654546.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/Music2/v4/95/b8/18/95b81860-76b2-e785-20a9-e10186d24939/mzaf_6392555692081176411.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",

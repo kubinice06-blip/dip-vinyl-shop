@@ -1,0 +1,1133 @@
+{
+ "group": "ml15",
+ "factions": [
+  {
+   "id": "warm-downtempo",
+   "zh": "暖 trip-hop／downtempo 厚盤（含 dub 化 downtempo、紐西蘭 dub 靈魂、弦樂 dub）",
+   "count": 19,
+   "why": "慢、低頻厚、dub 回音濕、人聲或弦樂溫"
+  },
+  {
+   "id": "ambient-dub",
+   "zh": "ml23 ambient dub／world-dub／psy-dub 暖盤",
+   "count": 19,
+   "why": "慢、低頻厚、drone／墊包覆、人聲取樣溫"
+  }
+ ],
+ "albums": [
+  {
+   "artist": "Nightmares on Wax",
+   "album": "In a Space Outta Sound",
+   "year": 2006,
+   "label": "Warp",
+   "country": "gb",
+   "faction": "warm-downtempo",
+   "genres": [
+    "electronic",
+    "soul"
+   ],
+   "why": "NoW 中期最 dub 化的一張，雷鬼低頻與靈魂取樣混得濕，池中 Smokers Delight 同形 y1.0，落恍惚",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.1,
+    "z": 1.3,
+    "why": "慢拍 dub 低頻、黑膠灰塵靈魂取樣，煙霧暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/2ea9fdb4-e78d-3c56-8a18-3a8c44ebed86",
+    "https://coverartarchive.org/release-group/2ea9fdb4-e78d-3c56-8a18-3a8c44ebed86/front"
+   ],
+   "mbRgMbid": "2ea9fdb4-e78d-3c56-8a18-3a8c44ebed86",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Nightmares on Wax",
+   "album": "Mind Elevation",
+   "year": 2002,
+   "label": "Warp",
+   "country": "gb",
+   "faction": "warm-downtempo",
+   "genres": [
+    "electronic",
+    "soul"
+   ],
+   "why": "承接 Carboot Soul 的 Leeds 暖 downtempo，低頻比前作更厚、人聲靈魂味重，落恍惚",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.0,
+    "z": 1.3,
+    "why": "懶拍、厚貝斯、靈魂人聲與弦樂墊，溫熱"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/efa7cfbc-86f7-3f6e-b4bd-747d63eef2e4",
+    "https://coverartarchive.org/release-group/efa7cfbc-86f7-3f6e-b4bd-747d63eef2e4/front"
+   ],
+   "mbRgMbid": "efa7cfbc-86f7-3f6e-b4bd-747d63eef2e4",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "池中 Carboot Soul 判 y0.7，本張略厚但仍貼 0.8–1.0"
+  },
+  {
+   "artist": "Nightmares on Wax",
+   "album": "Feelin’ Good",
+   "year": 2013,
+   "label": "Warp",
+   "country": "gb",
+   "faction": "warm-downtempo",
+   "genres": [
+    "electronic",
+    "world"
+   ],
+   "why": "NoW 搬到伊比薩後的雷鬼／dub 化暖盤，低頻厚、回音濕、人聲溫，落恍惚",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.0,
+    "z": 1.2,
+    "why": "one-drop 慢拍、dub 回音、暖靈魂人聲"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/96ba64af-7923-40e7-a245-520260ca9563",
+    "https://coverartarchive.org/release-group/96ba64af-7923-40e7-a245-520260ca9563/front"
+   ],
+   "mbRgMbid": "96ba64af-7923-40e7-a245-520260ca9563",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Thievery Corporation",
+   "album": "The Temple of I & I",
+   "year": 2017,
+   "label": "Eighteenth Street Lounge Music",
+   "country": "us",
+   "faction": "warm-downtempo",
+   "genres": [
+    "electronic",
+    "world"
+   ],
+   "why": "TC 全面轉向牙買加 roots dub 的一張，比池中 lounge 盤（y0.4–0.6）厚得多，落恍惚",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.1,
+    "z": 1.0,
+    "why": "牙買加錄的 roots／dub 慢拍，低頻厚、回音濕"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/c679f73e-8085-4916-8bf7-cd5682eab497",
+    "https://coverartarchive.org/release-group/c679f73e-8085-4916-8bf7-cd5682eab497/front"
+   ],
+   "mbRgMbid": "c679f73e-8085-4916-8bf7-cd5682eab497",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Tosca",
+   "album": "J.A.C.",
+   "year": 2005,
+   "label": "!K7",
+   "country": "at",
+   "faction": "warm-downtempo",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Dorfmeister 的 Tosca 承接 Opera（池中 y1.0 z0.6）的維也納濕 dub downtempo，落恍惚",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1.0,
+    "z": 0.7,
+    "why": "慢 dub 拍、厚貝斯、霧狀人聲與鍵盤墊"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/01ca2ca7-2158-3b73-bbc8-e6eaaa599521",
+    "https://coverartarchive.org/release-group/01ca2ca7-2158-3b73-bbc8-e6eaaa599521/front"
+   ],
+   "mbRgMbid": "01ca2ca7-2158-3b73-bbc8-e6eaaa599521",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Fila Brazillia",
+   "album": "Black Market Gardening",
+   "year": 1996,
+   "label": "Pork Recordings",
+   "country": "gb",
+   "faction": "warm-downtempo",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Hull 的 Pork 廠牌代表作，dub 化的懶 downtempo，比池中 Maim That Tune 更鬆更濕，落恍惚",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.0,
+    "z": 0.6,
+    "why": "慢 dub 拍、厚低頻、迷幻暖墊與爵士取樣"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/9f354775-c268-3b02-9398-bd47cc2d2b69",
+    "https://coverartarchive.org/release-group/9f354775-c268-3b02-9398-bd47cc2d2b69/front"
+   ],
+   "mbRgMbid": "9f354775-c268-3b02-9398-bd47cc2d2b69",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "色溫可能只到 0.4–0.6"
+  },
+  {
+   "artist": "Fat Freddy's Drop",
+   "album": "Based on a True Story",
+   "year": 2005,
+   "label": "The Drop",
+   "country": "nz",
+   "faction": "warm-downtempo",
+   "genres": [
+    "world",
+    "electronic"
+   ],
+   "why": "紐西蘭 dub／靈魂 downtempo 的里程碑，慢而長的 one-drop 加厚低頻與溫熱人聲，落恍惚",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.1,
+    "z": 1.3,
+    "why": "長篇慢 dub 律動、厚貝斯、Dallas Tamaira 暖靈魂嗓"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/a90009fd-94d1-37f7-aa0a-8c59c0ad1f60",
+    "https://coverartarchive.org/release-group/a90009fd-94d1-37f7-aa0a-8c59c0ad1f60/front"
+   ],
+   "mbRgMbid": "a90009fd-94d1-37f7-aa0a-8c59c0ad1f60",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Fat Freddy's Drop",
+   "album": "SLO MO",
+   "year": 2024,
+   "label": "The Drop",
+   "country": "nz",
+   "faction": "warm-downtempo",
+   "genres": [
+    "world",
+    "electronic"
+   ],
+   "why": "FFD 以慢速為題的近作，回到 Based on a True Story 的慢 dub 靈魂路線，落恍惚",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.0,
+    "z": 1.2,
+    "why": "刻意放慢的 dub 靈魂律動，厚低頻、銅管暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/9ac66c21-a19b-41bd-96d9-b3c03c677138",
+    "https://coverartarchive.org/release-group/9ac66c21-a19b-41bd-96d9-b3c03c677138/front"
+   ],
+   "mbRgMbid": "9ac66c21-a19b-41bd-96d9-b3c03c677138",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "近作，速度與厚度憑廠牌定位推估，研究層請聽一下"
+  },
+  {
+   "artist": "Trinity Roots",
+   "album": "True",
+   "year": 2002,
+   "label": "TrinityRoots",
+   "country": "nz",
+   "faction": "warm-downtempo",
+   "genres": [
+    "world",
+    "electronic"
+   ],
+   "why": "紐西蘭 dub／roots 靈魂一路的首作，與 FFD 同圈，慢而濕、人聲溫，落恍惚",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1.0,
+    "z": 1.1,
+    "why": "慢 roots dub 三人組，厚貝斯、迴響吉他、溫柔人聲"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/8e92a02f-bd59-3980-b274-a26bc5ffba42",
+    "https://coverartarchive.org/release-group/8e92a02f-bd59-3980-b274-a26bc5ffba42/front"
+   ],
+   "mbRgMbid": "8e92a02f-bd59-3980-b274-a26bc5ffba42",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "樂團編制，曲風介於 roots dub 與 downtempo"
+  },
+  {
+   "artist": "Trinity Roots",
+   "album": "Home, Land and Sea",
+   "year": 2004,
+   "label": "TrinityRoots",
+   "country": "nz",
+   "faction": "warm-downtempo",
+   "genres": [
+    "world",
+    "electronic"
+   ],
+   "why": "Trinity Roots 第二張，更長更慢的 dub 化編曲，暖而包覆，落恍惚",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1.0,
+    "z": 1.1,
+    "why": "慢 dub 長曲、厚低頻、空間回音、溫暖合聲"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/cdc8c526-9537-3128-aa10-d1d083ae6fa9",
+    "https://coverartarchive.org/release-group/cdc8c526-9537-3128-aa10-d1d083ae6fa9/front"
+   ],
+   "mbRgMbid": "cdc8c526-9537-3128-aa10-d1d083ae6fa9",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Salmonella Dub",
+   "album": "Inside the Dub Plates",
+   "year": 2001,
+   "label": "Salmonella Dub Recordings",
+   "country": "nz",
+   "faction": "warm-downtempo",
+   "genres": [
+    "electronic",
+    "world"
+   ],
+   "why": "紐西蘭 dub electronica 代表作，最放鬆的一張，低頻與回音厚、氣氛溫，落恍惚",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 1.2,
+    "z": 0.6,
+    "why": "dub 低頻厚、回音濕、懶拍，夏日暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/2ff3e0f9-0404-38bb-ad37-11dedbd81493",
+    "https://coverartarchive.org/release-group/2ff3e0f9-0404-38bb-ad37-11dedbd81493/front"
+   ],
+   "mbRgMbid": "2ff3e0f9-0404-38bb-ad37-11dedbd81493",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "部分曲拍子較快，整體能量估 2.5–2.7"
+  },
+  {
+   "artist": "Bombay Dub Orchestra",
+   "album": "Bombay Dub Orchestra",
+   "year": 2006,
+   "label": "Six Degrees Records",
+   "country": "gb",
+   "faction": "warm-downtempo",
+   "genres": [
+    "electronic",
+    "world"
+   ],
+   "why": "孟買錄弦樂的 dub downtempo 首作，慢、低頻厚、弦樂墊包覆，落恍惚",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 1.0,
+    "z": 0.8,
+    "why": "孟買弦樂團＋西塔琴鋪在慢 dub 低頻上，厚而暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/1bbbc13a-b111-305a-8bb1-79a0bb415b43",
+    "https://coverartarchive.org/release-group/1bbbc13a-b111-305a-8bb1-79a0bb415b43/front"
+   ],
+   "mbRgMbid": "1bbbc13a-b111-305a-8bb1-79a0bb415b43",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Bombay Dub Orchestra",
+   "album": "3 Cities",
+   "year": 2008,
+   "label": "Six Degrees Records",
+   "country": "gb",
+   "faction": "warm-downtempo",
+   "genres": [
+    "electronic",
+    "world"
+   ],
+   "why": "BDO 第二張，三城錄音的弦樂 dub，同樣慢、厚、暖，落恍惚",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1.0,
+    "z": 0.8,
+    "why": "孟買／伊斯坦堡／金斯頓弦樂與 dub 低頻，慢而濕"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/91f7ef6e-f612-3494-92d8-512171455db4",
+    "https://coverartarchive.org/release-group/91f7ef6e-f612-3494-92d8-512171455db4/front"
+   ],
+   "mbRgMbid": "91f7ef6e-f612-3494-92d8-512171455db4",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Bombay Dub Orchestra",
+   "album": "Tales From the Grand Bazaar",
+   "year": 2013,
+   "label": "Six Degrees Records",
+   "country": "gb",
+   "faction": "warm-downtempo",
+   "genres": [
+    "electronic",
+    "world"
+   ],
+   "why": "BDO 第三張，土耳其樂手加入的慢弦樂 dub，延續包覆暖聲，落恍惚",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1.0,
+    "z": 0.8,
+    "why": "伊斯坦堡弦樂、慢 dub 拍、厚墊，溫熱"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/099a8f04-f02f-44bb-9b1a-8b3f4fc53b91",
+    "https://coverartarchive.org/release-group/099a8f04-f02f-44bb-9b1a-8b3f4fc53b91/front"
+   ],
+   "mbRgMbid": "099a8f04-f02f-44bb-9b1a-8b3f4fc53b91",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Rockers Hi-Fi",
+   "album": "Rockers to Rockers",
+   "year": 1995,
+   "label": "Fourth and Broadway Records",
+   "country": "gb",
+   "faction": "warm-downtempo",
+   "genres": [
+    "electronic",
+    "world"
+   ],
+   "why": "伯明罕 dub／trip-hop 二人組首作，低頻與回音很厚、roots 取樣帶人味，落恍惚",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.3,
+    "z": 0.5,
+    "why": "伯明罕 dub 低頻厚、懶 breakbeat、roots 取樣回音"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/b73699f7-e3ae-3a10-a13e-b37309491146",
+    "https://coverartarchive.org/release-group/b73699f7-e3ae-3a10-a13e-b37309491146/front"
+   ],
+   "mbRgMbid": "b73699f7-e3ae-3a10-a13e-b37309491146",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "dub 器樂色溫可能只到 0.3–0.5"
+  },
+  {
+   "artist": "Rockers Hi-Fi",
+   "album": "Mish Mash",
+   "year": 1996,
+   "label": "WEA Records",
+   "country": "gb",
+   "faction": "warm-downtempo",
+   "genres": [
+    "electronic",
+    "world"
+   ],
+   "why": "Rockers Hi-Fi 第二張，dub 與 trip-hop 的濕混音，低頻厚，落恍惚",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.3,
+    "z": 0.5,
+    "why": "慢 dub 拍、厚貝斯、迴響與 ragga 人聲取樣"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/b3dcc500-6723-3d89-b99d-d2195c76d8d1",
+    "https://coverartarchive.org/release-group/b3dcc500-6723-3d89-b99d-d2195c76d8d1/front"
+   ],
+   "mbRgMbid": "b3dcc500-6723-3d89-b99d-d2195c76d8d1",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "色溫同上，貼 0.4–0.5"
+  },
+  {
+   "artist": "Yppah",
+   "album": "Eighty One",
+   "year": 2012,
+   "label": "Counter Records",
+   "country": "us",
+   "faction": "warm-downtempo",
+   "genres": [
+    "electronic",
+    "rock"
+   ],
+   "why": "Ninja Tune 的 shoegaze 化 downtempo，比池中 They Know What Ghost Know 更慢更霧，落恍惚",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.1,
+    "z": 0.7,
+    "why": "慢 breaks＋殘響吉他與合成器霧，懷舊暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/caee1023-b322-498f-b7aa-3104bfca03d4",
+    "https://coverartarchive.org/release-group/caee1023-b322-498f-b7aa-3104bfca03d4/front"
+   ],
+   "mbRgMbid": "caee1023-b322-498f-b7aa-3104bfca03d4",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Yppah",
+   "album": "Sunset in the Deep End",
+   "year": 2020,
+   "label": "Future Archive Recordings",
+   "country": "us",
+   "faction": "warm-downtempo",
+   "genres": [
+    "electronic",
+    "rock"
+   ],
+   "why": "Yppah 近作，夢幻吉他與厚墊的慢 downtempo，暖而霧，落恍惚",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.1,
+    "z": 0.7,
+    "why": "夕陽感合成器墊、殘響吉他、懶拍，包覆"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/284d0ea7-65d7-407f-8d1f-d4c0d15f387b",
+    "https://coverartarchive.org/release-group/284d0ea7-65d7-407f-8d1f-d4c0d15f387b/front"
+   ],
+   "mbRgMbid": "284d0ea7-65d7-407f-8d1f-d4c0d15f387b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "The Orb",
+   "album": "More Tales From the Orbservatory",
+   "year": 2013,
+   "label": "Cooking Vinyl",
+   "country": "gb",
+   "faction": "ambient-dub",
+   "genres": [
+    "electronic",
+    "world"
+   ],
+   "why": "Orbserver in the Star House（池中 y1.2 z0.9）的續篇，更偏環境 dub、更慢，落恍惚",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.3,
+    "z": 0.8,
+    "why": "Lee Perry 碎唸＋Orb 環境 dub 低頻，慢、濕、暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/9b47af4b-e12e-4311-8387-dce79fcd9b9a",
+    "https://coverartarchive.org/release-group/9b47af4b-e12e-4311-8387-dce79fcd9b9a/front"
+   ],
+   "mbRgMbid": "9b47af4b-e12e-4311-8387-dce79fcd9b9a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Ott",
+   "album": "Skylon",
+   "year": 2008,
+   "label": "Twisted Records",
+   "country": "gb",
+   "faction": "ambient-dub",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Ott 第二張，承接 Blumenkraft（池中 y1.3 z0.6）的暖 psy-dub，低頻厚、旋律甜，落恍惚",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.3,
+    "z": 0.7,
+    "why": "psy-dub 厚低頻、慢拍、暖合成器與回音"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/d21c604f-13a0-3fc7-9965-1ed65fd919d0",
+    "https://coverartarchive.org/release-group/d21c604f-13a0-3fc7-9965-1ed65fd919d0/front"
+   ],
+   "mbRgMbid": "d21c604f-13a0-3fc7-9965-1ed65fd919d0",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Kaya Project",
+   "album": "Walking Through",
+   "year": 2004,
+   "label": "LoveCat Music",
+   "country": "gb",
+   "faction": "ambient-dub",
+   "genres": [
+    "electronic",
+    "world"
+   ],
+   "why": "Seb Taylor 的 world-dub／psy-chill 首作，慢、低頻厚、人聲溫，落恍惚",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.1,
+    "z": 0.6,
+    "why": "世界音樂取樣＋慢 dub 低頻、民族人聲、暖墊"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/d2d0d4da-98f4-316e-83bf-6b3b5aa7c1e3",
+    "https://coverartarchive.org/release-group/d2d0d4da-98f4-316e-83bf-6b3b5aa7c1e3/front"
+   ],
+   "mbRgMbid": "d2d0d4da-98f4-316e-83bf-6b3b5aa7c1e3",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Kaya Project",
+   "album": "Elixir",
+   "year": 2005,
+   "label": "Interchill Records",
+   "country": "gb",
+   "faction": "ambient-dub",
+   "genres": [
+    "electronic",
+    "world"
+   ],
+   "why": "Interchill 的 world-dub 代表作之一，延續 Walking Through 的暖濕聲，落恍惚",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.1,
+    "z": 0.6,
+    "why": "慢 dub 拍、中東／印度人聲、厚墊回音"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/4982ce6c-7673-32bd-b9b7-7ca9708ecf79",
+    "https://coverartarchive.org/release-group/4982ce6c-7673-32bd-b9b7-7ca9708ecf79/front"
+   ],
+   "mbRgMbid": "4982ce6c-7673-32bd-b9b7-7ca9708ecf79",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Loop Guru",
+   "album": "Duniya: The Intrinsic Passion of Mysterious Joy",
+   "year": 1994,
+   "label": "Nation Records",
+   "country": "gb",
+   "faction": "ambient-dub",
+   "genres": [
+    "electronic",
+    "world"
+   ],
+   "why": "Nation 廠牌的 ambient world-dub 名盤，慢而迴旋、低頻厚、人聲溫，落恍惚",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1.0,
+    "z": 0.6,
+    "why": "慢 loop、dub 低頻、民族人聲取樣與 drone 墊"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/d47d7a83-176d-33ac-a868-3c9e489d1578",
+    "https://coverartarchive.org/release-group/d47d7a83-176d-33ac-a868-3c9e489d1578/front"
+   ],
+   "mbRgMbid": "d47d7a83-176d-33ac-a868-3c9e489d1578",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Gaudi + Nusrat Fateh Ali Khan",
+   "album": "Dub Qawwali",
+   "year": 2007,
+   "label": "Six Degrees Records",
+   "country": "it",
+   "faction": "ambient-dub",
+   "genres": [
+    "electronic",
+    "world"
+   ],
+   "why": "Gaudi 把 Nusrat 未發表人聲做成慢 dub，低頻厚、回音濕、吟唱溫熱，落恍惚",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.2,
+    "z": 0.9,
+    "why": "Nusrat 吟唱鋪在慢 dub 低頻與回音上，熱而濕"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/5b8402d4-44e6-39d9-b493-1c1b33ed9cbe",
+    "https://coverartarchive.org/release-group/5b8402d4-44e6-39d9-b493-1c1b33ed9cbe/front"
+   ],
+   "mbRgMbid": "5b8402d4-44e6-39d9-b493-1c1b33ed9cbe",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Nusrat 原作池中判 y0.3–0.4；本張加 dub 低頻"
+  },
+  {
+   "artist": "DJ Cheb i Sabbah",
+   "album": "Krishna Lila",
+   "year": 2002,
+   "label": "Six Degrees Records",
+   "country": "us",
+   "faction": "ambient-dub",
+   "genres": [
+    "electronic",
+    "world"
+   ],
+   "why": "舊金山 Six Degrees 的亞洲 dub 代表，虔誠人聲與 drone 鋪在慢 dub 低頻上，落恍惚",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 1.0,
+    "z": 0.8,
+    "why": "印度虔誠歌唱＋tanpura drone＋慢 dub 低頻，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/f0f60673-b2c7-4fe5-b09e-31c8e6c71053",
+    "https://coverartarchive.org/release-group/f0f60673-b2c7-4fe5-b09e-31c8e6c71053/front"
+   ],
+   "mbRgMbid": "f0f60673-b2c7-4fe5-b09e-31c8e6c71053",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "DJ Cheb i Sabbah",
+   "album": "Shri Durga",
+   "year": 1999,
+   "label": "Six Degrees Records",
+   "country": "us",
+   "faction": "ambient-dub",
+   "genres": [
+    "electronic",
+    "world"
+   ],
+   "why": "Cheb i Sabbah 的拉格 dub 首作，慢而迴旋、包覆暖，落恍惚",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 1.0,
+    "z": 0.7,
+    "why": "拉格人聲與 drone、慢 dub 拍、厚低頻"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/13216349-385b-3591-981a-53dfc742764a",
+    "https://coverartarchive.org/release-group/13216349-385b-3591-981a-53dfc742764a/front"
+   ],
+   "mbRgMbid": "13216349-385b-3591-981a-53dfc742764a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Sounds From the Ground",
+   "album": "Kin",
+   "year": 1995,
+   "label": "Universal Egg",
+   "country": "gb",
+   "faction": "ambient-dub",
+   "genres": [
+    "electronic"
+   ],
+   "why": "90 年代英國 chill-out 圈的 ambient dub 首作（Universal Egg），慢、厚、暖，落恍惚",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1.1,
+    "z": 0.6,
+    "why": "ambient dub 低頻厚、慢拍、溫暖合成器墊"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/37c855ab-8ec1-339d-b712-1b03b878bded",
+    "https://coverartarchive.org/release-group/37c855ab-8ec1-339d-b712-1b03b878bded/front"
+   ],
+   "mbRgMbid": "37c855ab-8ec1-339d-b712-1b03b878bded",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Sounds From the Ground",
+   "album": "Terra Firma",
+   "year": 2000,
+   "label": "Waveform Records",
+   "country": "gb",
+   "faction": "ambient-dub",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Waveform 的 ambient dub 盤，延續 Kin 的暖濕低頻，落恍惚",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1.1,
+    "z": 0.6,
+    "why": "慢 dub 低頻、回音、民族取樣與暖墊"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/30b028ff-2cdd-3fc2-b404-0ad7ddbcb122",
+    "https://coverartarchive.org/release-group/30b028ff-2cdd-3fc2-b404-0ad7ddbcb122/front"
+   ],
+   "mbRgMbid": "30b028ff-2cdd-3fc2-b404-0ad7ddbcb122",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Ott",
+   "album": "Fairchildren",
+   "year": 2015,
+   "label": "Ottsonic Music",
+   "country": "gb",
+   "faction": "ambient-dub",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Ott 第四張，延續 Blumenkraft／Mir（池中 y0.9–1.3 z0.6–0.9）的暖 psy-dub，落恍惚",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.2,
+    "z": 0.7,
+    "why": "psy-dub 厚低頻、慢拍、甜旋律與回音"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/a54772d1-f25a-424e-b61e-8240eef58a13",
+    "https://coverartarchive.org/release-group/a54772d1-f25a-424e-b61e-8240eef58a13/front"
+   ],
+   "mbRgMbid": "a54772d1-f25a-424e-b61e-8240eef58a13",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "",
+   "round": 2
+  },
+  {
+   "artist": "Boozoo Bajou",
+   "album": "Grains",
+   "year": 2009,
+   "label": "!K7",
+   "country": "de",
+   "faction": "warm-downtempo",
+   "genres": [
+    "electronic"
+   ],
+   "why": "紐倫堡二人組第三張，比 Satta（池中 y1.0 z0.8）更土、更濕的慢 dub downtempo，落恍惚",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1.0,
+    "z": 0.9,
+    "why": "慢 dub 拍、dusty 藍調吉他與厚低頻，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/d50be429-aaa4-3c3e-9237-03eb8bc96f80",
+    "https://coverartarchive.org/release-group/d50be429-aaa4-3c3e-9237-03eb8bc96f80/front"
+   ],
+   "mbRgMbid": "d50be429-aaa4-3c3e-9237-03eb8bc96f80",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "池中 Dust My Broom 只 y0.8，本張可能貼 0.8–1.0",
+   "round": 2
+  },
+  {
+   "artist": "Kalya Scintilla",
+   "album": "Gaian Code",
+   "year": 2019,
+   "label": "Merkaba Music",
+   "country": "au",
+   "faction": "ambient-dub",
+   "genres": [
+    "electronic",
+    "world"
+   ],
+   "why": "澳洲 psy-dub／world bass 代表，新世紀樂器與厚低頻的慢盤，落恍惚",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.2,
+    "z": 0.6,
+    "why": "冥想 drone＋民族樂器＋厚 bass，慢而包覆"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/8891c14d-7bae-405e-b006-33bd7f4810f1",
+    "https://coverartarchive.org/release-group/8891c14d-7bae-405e-b006-33bd7f4810f1/front"
+   ],
+   "mbRgMbid": "8891c14d-7bae-405e-b006-33bd7f4810f1",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "此人部分作品偏 glitch 半速拍，能量可能到 2.7",
+   "round": 2
+  },
+  {
+   "artist": "Liquid Bloom",
+   "album": "Heart of the Shamans",
+   "year": 2015,
+   "label": "Global Dragon",
+   "country": "us",
+   "faction": "ambient-dub",
+   "genres": [
+    "electronic",
+    "world"
+   ],
+   "why": "美國暖 ambient psy-dub，部落吟唱鋪在慢低頻與厚墊上，落恍惚",
+   "moodGuess": {
+    "x": 2.1,
+    "y": 1.0,
+    "z": 0.7,
+    "why": "薩滿吟唱、手鼓、慢 dub 低頻與暖墊"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/543177cf-61b1-4240-89a7-1e29f244e3a2",
+    "https://coverartarchive.org/release-group/543177cf-61b1-4240-89a7-1e29f244e3a2/front"
+   ],
+   "mbRgMbid": "543177cf-61b1-4240-89a7-1e29f244e3a2",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "",
+   "round": 2
+  },
+  {
+   "artist": "Desert Dwellers",
+   "album": "Downtemple Dub: Waves",
+   "year": 2006,
+   "label": "White Swan Records",
+   "country": "us",
+   "faction": "ambient-dub",
+   "genres": [
+    "electronic",
+    "world"
+   ],
+   "why": "Desert Dwellers 的 Downtemple Dub 系列，把梵唱做成慢 dub downtempo，落恍惚",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1.1,
+    "z": 0.8,
+    "why": "梵唱人聲重製成慢 dub，厚低頻、回音、暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/f1be0590-5285-4ca1-8465-08813c6d37a6",
+    "https://coverartarchive.org/release-group/f1be0590-5285-4ca1-8465-08813c6d37a6/front"
+   ],
+   "mbRgMbid": "f1be0590-5285-4ca1-8465-08813c6d37a6",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "系列是把 White Swan 唱片的梵唱重製，MB 列 Album；主線若視為重混輯可汰",
+   "round": 2
+  },
+  {
+   "artist": "Desert Dwellers",
+   "album": "DownTemple Dub: Roots",
+   "year": 2009,
+   "label": "White Swan Records",
+   "country": "us",
+   "faction": "ambient-dub",
+   "genres": [
+    "electronic",
+    "world"
+   ],
+   "why": "Downtemple Dub 系列第三張，同樣慢、厚、暖的瑜伽 dub，落恍惚",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1.1,
+    "z": 0.8,
+    "why": "慢 dub 拍、梵唱與民族樂器、厚低頻"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/2086aad6-573c-47aa-b4aa-53976246e2c6",
+    "https://coverartarchive.org/release-group/2086aad6-573c-47aa-b4aa-53976246e2c6/front"
+   ],
+   "mbRgMbid": "2086aad6-573c-47aa-b4aa-53976246e2c6",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "同上，重製性質",
+   "round": 2
+  },
+  {
+   "artist": "Gaudi",
+   "album": "Bass, Sweat & Tears",
+   "year": 2004,
+   "label": "Interchill Records",
+   "country": "it",
+   "faction": "ambient-dub",
+   "genres": [
+    "electronic",
+    "world"
+   ],
+   "why": "Gaudi 在 Interchill 的 ambient dub 盤，低頻與回音厚、旋律溫，落恍惚",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.2,
+    "z": 0.5,
+    "why": "dub 低頻厚、回音、溫暖旋律與人聲取樣"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/c063ba80-2a12-320b-b951-44e2509efed6",
+    "https://coverartarchive.org/release-group/c063ba80-2a12-320b-b951-44e2509efed6/front"
+   ],
+   "mbRgMbid": "c063ba80-2a12-320b-b951-44e2509efed6",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "色溫可能只到 0.3–0.5",
+   "round": 2
+  },
+  {
+   "artist": "Bill Laswell",
+   "album": "Imaginary Cuba",
+   "year": 1999,
+   "label": "Wicklow",
+   "country": "us",
+   "faction": "ambient-dub",
+   "genres": [
+    "electronic",
+    "world"
+   ],
+   "why": "Laswell 系少見的暖盤：古巴歌唱與打擊融進慢 dub 低頻，比池中 Dub Chamber 3（z−0.4）暖，落恍惚",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1.3,
+    "z": 0.6,
+    "why": "古巴樂手錄音拆成慢 ambient dub，厚低頻、暖人聲"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/201a009a-2072-3734-9f35-85b1d0f2458b",
+    "https://coverartarchive.org/release-group/201a009a-2072-3734-9f35-85b1d0f2458b/front"
+   ],
+   "mbRgMbid": "201a009a-2072-3734-9f35-85b1d0f2458b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Laswell 系池中多判冷，本張靠古巴人聲轉暖，色溫是主要風險",
+   "round": 2
+  },
+  {
+   "artist": "Kaya Project",
+   "album": "And So It Goes",
+   "year": 2008,
+   "label": "Interchill Records",
+   "country": "gb",
+   "faction": "ambient-dub",
+   "genres": [
+    "electronic",
+    "world"
+   ],
+   "why": "Kaya Project 第三張，延續前兩張的暖濕 world-dub，落恍惚",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1.1,
+    "z": 0.6,
+    "why": "慢 world-dub、民族人聲、厚墊與回音"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/34d6e531-2dba-3a0b-bd25-6366f693b0cd",
+    "https://coverartarchive.org/release-group/34d6e531-2dba-3a0b-bd25-6366f693b0cd/front"
+   ],
+   "mbRgMbid": "34d6e531-2dba-3a0b-bd25-6366f693b0cd",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "",
+   "round": 2
+  },
+  {
+   "artist": "Sounds From the Ground",
+   "album": "Mosaic",
+   "year": 1999,
+   "label": "Upstream Records",
+   "country": "gb",
+   "faction": "ambient-dub",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Sounds From the Ground 第二張，與 Kin 同路的暖 ambient dub，落恍惚",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1.1,
+    "z": 0.6,
+    "why": "ambient dub 低頻、慢拍、暖墊與民族取樣"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/99725626-809b-4a49-bf8b-9ee93546c557",
+    "https://coverartarchive.org/release-group/99725626-809b-4a49-bf8b-9ee93546c557/front"
+   ],
+   "mbRgMbid": "99725626-809b-4a49-bf8b-9ee93546c557",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "",
+   "round": 2
+  }
+ ],
+ "notes": [
+  "提名 28 張（目標 54，照實交不湊數）：主場景池中已極密（Morcheeba 5、TC 4、NoW 3、K&D 3、Zero 7 4、Bonobo 6、Tosca 3、Boozoo 2 等都已在池），且池中乾淨 lounge／downtempo 多判 y 0.3–0.7，能過 y≥0.8 邊距的只剩 dub 化、低頻厚的那一路。",
+  "Morcheeba 0 張：池中 y 0.0–0.9，其餘專輯（Fragments of Freedom、Charango、Dive Deep、Blaze Away）都不比池中更厚。Thievery 只收 The Temple of I & I（roots dub 全面化）；Richest Man in Babylon、Culture of Fear、Radio Retaliation 估 y≈0.6–0.8 貼邊不提。NoW 不提 Thought So…、Shape the Future、Shout Out! To Freedom…（較亮、估 y≤0.8）。",
+  "ml23 主名單（Global Communication、Higher Intelligence Agency、KLF、Irresistible Force、Namlook）池中不是已收就是判輕或冷（GC 76:14 y−0.3、HIA z−0.2/−0.3、KLF Chill Out y−0.4），不提；改收暖 world-dub／psy-dub（Ott、Kaya Project、Loop Guru、Gaudi、Cheb i Sabbah、Sounds From the Ground）與 Orb＋Lee Perry 續篇。",
+  "跨組避讓：Ulrich Schnauss、Manual／Jonas Munk 屬 ml2（已提過）；tomppabeats Habits 在 ml3 卡單；Mute Beat、Little Tempo 等日本 dub 屬 ml9；Knxwledge／jinsang 類 lo-fi beat tape 留給 ml16，不提。",
+  "Trinity Roots、Fat Freddy's Drop 是紐西蘭 dub／roots 靈魂樂團，曲風介於 ml9（暖 dub）與 downtempo，genres 第一個給 world；主線若認為屬 ml9 範圍可汰。",
+  "全部 28 張 MB 釘住、CAA 封面皆 307（有圖）；去重（seed、origin 各 claude/mood*／thin* 分支 seed、其他 curation-*.json）全 0。WebSearch 第一輪 0 次。",
+  "第二輪（主線指示）加 10 張，全部 ambient-dub 以外只有 Boozoo Bajou Grains 1 張。不提的方向與理由（池中錨）：Kid Loco y0.3–0.6、Up, Bustle & Out y0.4、Quantic 5th Exotic y0.6、Smoke City y0、Federico Aubele y−0.3/−0.4、Gotan y0.1–0.2 z−0.2–0.3、Waldeck y0.2–0.7、Bent y−0.3、Lemon Jelly y−0.4/0.4、Kinobe 同型輕 → 乾淨 lounge 判輕；Zion Train z−0.2/−0.6、Adrian Sherwood z−0.3、Dub Syndicate z−0.1～−0.5、Laswell Dub Chamber 3 z−0.4 → 器樂 dub 判冷；Dreadzone、Banco de Gaia（池中 x3.1–3.3）、Beats Antique 拍子推進估 x≥2.8；Bluetech 偏科幻冷、Kalya Scintilla 其他盤偏 glitch 半速拍，只各收或不收。Laswell Emerald Aether 是 Remix 型不收。",
+  "第二輪 WebSearch 1 次（Kalya Scintilla 風格確認）；10 張皆 MB 釘住、CAA 有圖、去重 0。"
+ ]
+}

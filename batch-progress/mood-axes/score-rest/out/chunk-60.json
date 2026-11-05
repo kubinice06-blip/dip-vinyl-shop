@@ -1,0 +1,802 @@
+[
+ {
+  "id": "neil diamond|hot august night",
+  "x": 3.2,
+  "y": -0.2,
+  "z": 1.4,
+  "why": "現場演唱，管弦與合唱撐場，男中音溫厚，觀眾熱烈",
+  "conf": "mid"
+ },
+ {
+  "id": "neil young|zuma",
+  "x": 3.2,
+  "y": 1.0,
+  "z": 0.2,
+  "why": "Crazy Horse 粗糙電吉他長獨奏，鬆垮中速，帶荒涼感",
+  "conf": "high"
+ },
+ {
+  "id": "p. mobil|mobilizmo",
+  "x": 4.0,
+  "y": 1.2,
+  "z": -0.2,
+  "why": "八〇年代初東歐硬搖滾，厚重吉他與快板鼓",
+  "conf": "low"
+ },
+ {
+  "id": "paul clark|aim for the heart",
+  "x": 2.8,
+  "y": -0.6,
+  "z": 1.0,
+  "why": "柔和軟搖滾，乾淨原聲吉他與鋼琴，溫暖讚美氣息",
+  "conf": "low"
+ },
+ {
+  "id": "paul mccartney|the boys of dungeon lane",
+  "x": 2.8,
+  "y": -0.3,
+  "z": 1.0,
+  "why": "晚期麥卡尼，旋律溫和、製作乾淨，憑藝人推估",
+  "conf": "low"
+ },
+ {
+  "id": "paul roland|burnt orchids",
+  "x": 2.6,
+  "y": -0.2,
+  "z": -0.6,
+  "why": "迷幻哥德流行，大鍵琴與弦樂，詭異陰暗的童話感",
+  "conf": "low"
+ },
+ {
+  "id": "perfect|unu",
+  "x": 3.6,
+  "y": 0.5,
+  "z": 0.0,
+  "why": "八〇年代波蘭搖滾，新浪潮節奏與明亮吉他",
+  "conf": "low"
+ },
+ {
+  "id": "petra|come and join us",
+  "x": 3.6,
+  "y": 0.6,
+  "z": 0.8,
+  "why": "雙吉他南方風搖滾，中快板，明朗熱情",
+  "conf": "low"
+ },
+ {
+  "id": "phil keaggy|what a day",
+  "x": 2.5,
+  "y": -1.0,
+  "z": 1.0,
+  "why": "原聲吉他為主的福音民謠搖滾，輕柔溫暖",
+  "conf": "low"
+ },
+ {
+  "id": "phil keaggy|love broke thru",
+  "x": 2.3,
+  "y": -1.2,
+  "z": 1.2,
+  "why": "更偏原聲與鋼琴，慢速柔和，溫暖親密",
+  "conf": "low"
+ },
+ {
+  "id": "queen|queen",
+  "x": 3.8,
+  "y": 1.0,
+  "z": 0.0,
+  "why": "層疊吉他與重型鼓擊，華麗和聲，快慢交錯",
+  "conf": "high"
+ },
+ {
+  "id": "rainbow|down to earth",
+  "x": 4.0,
+  "y": 0.8,
+  "z": 0.3,
+  "why": "商業化硬搖滾，勁道吉他與高亢嗓音，副歌明亮",
+  "conf": "mid"
+ },
+ {
+  "id": "rainbow|straight between the eyes",
+  "x": 3.8,
+  "y": 0.6,
+  "z": -0.2,
+  "why": "AOR 硬搖滾，合成器墊底，光滑但偏冷調",
+  "conf": "mid"
+ },
+ {
+  "id": "rainbow|stranger in us all",
+  "x": 3.8,
+  "y": 1.1,
+  "z": -0.5,
+  "why": "九〇年代厚實製作，重吉他偏暗，中東音階味",
+  "conf": "low"
+ },
+ {
+  "id": "randy stonehill|welcome to paradise",
+  "x": 2.6,
+  "y": -0.9,
+  "z": 0.9,
+  "why": "原聲民謠搖滾，木吉他與溫和人聲，鬆弛",
+  "conf": "low"
+ },
+ {
+  "id": "randy stonehill|the sky is falling",
+  "x": 3.3,
+  "y": -0.1,
+  "z": 0.4,
+  "why": "轉向較硬的流行搖滾，新浪潮式節奏",
+  "conf": "low"
+ },
+ {
+  "id": "raspberries|fresh",
+  "x": 3.6,
+  "y": -0.2,
+  "z": 1.4,
+  "why": "強力流行，披頭式和聲與響亮吉他，甜而明亮",
+  "conf": "mid"
+ },
+ {
+  "id": "resurrection band|awaiting your reply",
+  "x": 3.9,
+  "y": 1.3,
+  "z": -0.2,
+  "why": "藍調硬搖滾，粗重吉他與女聲嘶吼",
+  "conf": "low"
+ },
+ {
+  "id": "ricky nelson|ricky",
+  "x": 3.0,
+  "y": -1.2,
+  "z": 1.4,
+  "why": "五〇年代乾淨單聲道，輕快 rockabilly 與甜嗓",
+  "conf": "mid"
+ },
+ {
+  "id": "ringo starr|ringo",
+  "x": 3.2,
+  "y": -0.4,
+  "z": 1.6,
+  "why": "群星相助的親切流行搖滾，管弦明亮，笑意滿滿",
+  "conf": "high"
+ },
+ {
+  "id": "ringo starr|choose love",
+  "x": 3.3,
+  "y": 0.0,
+  "z": 1.3,
+  "why": "明亮流行搖滾，現代製作，友善輕快",
+  "conf": "low"
+ },
+ {
+  "id": "robert randolph & the family band|lickety split",
+  "x": 4.0,
+  "y": 0.5,
+  "z": 1.3,
+  "why": "聖鋼吉他放克搖滾，律動強勁，派對熱度",
+  "conf": "low"
+ },
+ {
+  "id": "rory gallagher|rory gallagher",
+  "x": 3.4,
+  "y": 0.5,
+  "z": 0.3,
+  "why": "藍調搖滾三人編制，乾燥吉他，夾雜原聲小品",
+  "conf": "mid"
+ },
+ {
+  "id": "rory gallagher|irish tour '74",
+  "x": 4.0,
+  "y": 0.9,
+  "z": 0.6,
+  "why": "現場長篇藍調搖滾，吉他火熱粗糙，群眾熱烈",
+  "conf": "mid"
+ },
+ {
+  "id": "roy harper|flat baroque and berserk",
+  "x": 2.2,
+  "y": -1.2,
+  "z": -0.1,
+  "why": "以木吉他與人聲為主的長篇民謠，偶有搖滾爆發",
+  "conf": "mid"
+ },
+ {
+  "id": "samantha fish|kill or be kind",
+  "x": 3.4,
+  "y": 0.4,
+  "z": 0.9,
+  "why": "藍調靈魂搖滾，粗吉他配銅管，熱度中等",
+  "conf": "low"
+ },
+ {
+  "id": "slade|slade alive!",
+  "x": 4.4,
+  "y": 1.4,
+  "z": 0.8,
+  "why": "粗獷現場華麗搖滾，跺腳節奏與嘶吼，群眾大合唱",
+  "conf": "mid"
+ },
+ {
+  "id": "slank|kampungan",
+  "x": 3.5,
+  "y": 0.3,
+  "z": 0.8,
+  "why": "滾石式藍調流行搖滾，鬆快律動，街頭親切感",
+  "conf": "low"
+ },
+ {
+  "id": "status quo|piledriver",
+  "x": 4.0,
+  "y": 1.0,
+  "z": 0.4,
+  "why": "一路推進的 boogie 搖滾，厚實節奏吉他",
+  "conf": "mid"
+ },
+ {
+  "id": "steve winwood|arc of a diver",
+  "x": 3.2,
+  "y": -0.3,
+  "z": 0.4,
+  "why": "合成器與鼓機打底的光滑流行，靈魂味嗓音",
+  "conf": "mid"
+ },
+ {
+  "id": "styx|the grand illusion",
+  "x": 3.4,
+  "y": 0.3,
+  "z": 0.2,
+  "why": "華麗 AOR 前衛，合成器與大和聲，戲劇感",
+  "conf": "mid"
+ },
+ {
+  "id": "susan tedeschi|hope and desire",
+  "x": 2.7,
+  "y": 0.0,
+  "z": 1.4,
+  "why": "慢板靈魂與福音翻唱，沙啞女聲，溫熱",
+  "conf": "low"
+ },
+ {
+  "id": "sweet|desolation boulevard",
+  "x": 4.2,
+  "y": 1.1,
+  "z": 0.6,
+  "why": "華麗搖滾重拍與強力和聲，吉他飽滿",
+  "conf": "mid"
+ },
+ {
+  "id": "sweet comfort band|sweet comfort",
+  "x": 3.0,
+  "y": -0.6,
+  "z": 1.1,
+  "why": "爵士味軟搖滾，乾淨鍵盤與靈魂和聲",
+  "conf": "low"
+ },
+ {
+  "id": "sweet comfort band|breakin' the ice",
+  "x": 3.3,
+  "y": -0.5,
+  "z": 1.0,
+  "why": "更多放克律動的軟搖滾，乾淨明亮",
+  "conf": "low"
+ },
+ {
+  "id": "t. rex|tanx",
+  "x": 3.1,
+  "y": 0.6,
+  "z": 0.7,
+  "why": "華麗搖滾加入靈魂合唱與弦樂，糊厚吉他",
+  "conf": "mid"
+ },
+ {
+  "id": "ted nugent|ted nugent",
+  "x": 4.1,
+  "y": 1.4,
+  "z": -0.1,
+  "why": "粗重硬搖滾吉他狂飆，強勁且帶陰沉長獨奏",
+  "conf": "mid"
+ },
+ {
+  "id": "téléphone|téléphone",
+  "x": 4.3,
+  "y": 1.1,
+  "z": 0.1,
+  "why": "法語龐克味搖滾，快速直接，吉他生猛",
+  "conf": "low"
+ },
+ {
+  "id": "téléphone|au cœur de la nuit",
+  "x": 4.0,
+  "y": 0.7,
+  "z": -0.2,
+  "why": "製作更緊的搖滾，新浪潮節奏，都市夜感",
+  "conf": "low"
+ },
+ {
+  "id": "the association|insight out",
+  "x": 2.9,
+  "y": -1.0,
+  "z": 1.6,
+  "why": "陽光流行，多聲部和聲與輕盈編曲",
+  "conf": "mid"
+ },
+ {
+  "id": "the byrds|turn! turn! turn!",
+  "x": 3.0,
+  "y": -0.7,
+  "z": 0.8,
+  "why": "十二弦吉他叮噹聲，民謠搖滾和聲乾淨",
+  "conf": "high"
+ },
+ {
+  "id": "the byrds|younger than yesterday",
+  "x": 3.0,
+  "y": -0.3,
+  "z": 0.5,
+  "why": "加入迷幻與銅管，鄉村味點綴，輕盈和聲",
+  "conf": "mid"
+ },
+ {
+  "id": "the byrds|farther along",
+  "x": 2.9,
+  "y": -0.6,
+  "z": 0.9,
+  "why": "鄉村搖滾，簡單編制，鬆散溫和",
+  "conf": "low"
+ },
+ {
+  "id": "the doobie brothers|what were once vices are now habits",
+  "x": 3.4,
+  "y": 0.1,
+  "z": 1.1,
+  "why": "原聲與電吉他交織的 boogie 搖滾，陽光和聲",
+  "conf": "mid"
+ },
+ {
+  "id": "the doobie brothers|stampede",
+  "x": 3.6,
+  "y": 0.3,
+  "z": 1.0,
+  "why": "銅管與弦樂加入，放克搖滾律動更強",
+  "conf": "mid"
+ },
+ {
+  "id": "the doobie brothers|sibling rivalry",
+  "x": 3.1,
+  "y": -0.2,
+  "z": 0.8,
+  "why": "成人抒情搖滾，製作圓滑，溫和",
+  "conf": "low"
+ },
+ {
+  "id": "the everly brothers|a date with the everly brothers",
+  "x": 3.1,
+  "y": -1.2,
+  "z": 1.0,
+  "why": "緊密兄弟和聲，早期搖滾樂，乾淨輕快",
+  "conf": "mid"
+ },
+ {
+  "id": "the guess who|american woman",
+  "x": 3.5,
+  "y": 0.6,
+  "z": 0.2,
+  "why": "沉重吉他主導的搖滾，間雜鋼琴抒情曲",
+  "conf": "mid"
+ },
+ {
+  "id": "the kinks|muswell hillbillies",
+  "x": 2.9,
+  "y": -0.3,
+  "z": 0.8,
+  "why": "音樂廳與鄉村混搭，銅管溫暖但帶憂鬱",
+  "conf": "high"
+ },
+ {
+  "id": "the lovin' spoonful|daydream",
+  "x": 2.9,
+  "y": -1.1,
+  "z": 1.6,
+  "why": "jug band 輕快好時光，原聲樂器輕盈",
+  "conf": "mid"
+ },
+ {
+  "id": "the move|shazam",
+  "x": 3.6,
+  "y": 1.2,
+  "z": 0.1,
+  "why": "重型迷幻長曲，厚失真吉他與粗獷嗓音",
+  "conf": "mid"
+ },
+ {
+  "id": "the sensational nightingales|the best of the sensational nightingales",
+  "x": 3.1,
+  "y": -0.6,
+  "z": 1.6,
+  "why": "福音四重唱，嘶喊領唱與和聲，簡潔伴奏",
+  "conf": "low"
+ },
+ {
+  "id": "the small faces|ogdens' nut gone flake",
+  "x": 3.4,
+  "y": 0.6,
+  "z": 0.9,
+  "why": "迷幻 mod 搖滾，倫敦腔與鋼琴，帶戲謔暖意",
+  "conf": "high"
+ },
+ {
+  "id": "the turtles|happy together",
+  "x": 3.1,
+  "y": -0.9,
+  "z": 1.6,
+  "why": "陽光流行和聲，弦樂銅管輕盈甜美",
+  "conf": "mid"
+ },
+ {
+  "id": "the who|a quick one",
+  "x": 3.8,
+  "y": 0.7,
+  "z": 0.5,
+  "why": "生猛 mod 力量流行，鼓點狂亂，和聲明亮",
+  "conf": "mid"
+ },
+ {
+  "id": "the who|the who by numbers",
+  "x": 3.0,
+  "y": 0.2,
+  "z": -0.2,
+  "why": "內省的搖滾，鋼琴抒情與原聲，帶疲憊感",
+  "conf": "mid"
+ },
+ {
+  "id": "the yardbirds|roger the engineer",
+  "x": 3.8,
+  "y": 0.9,
+  "z": 0.0,
+  "why": "破音吉他與藍調迷幻，節奏急促",
+  "conf": "mid"
+ },
+ {
+  "id": "thin lizzy|nightlife",
+  "x": 2.8,
+  "y": 0.0,
+  "z": 0.6,
+  "why": "柔和靈魂味搖滾，慢板抒情為主",
+  "conf": "mid"
+ },
+ {
+  "id": "thin lizzy|fighting",
+  "x": 3.8,
+  "y": 0.9,
+  "z": 0.3,
+  "why": "雙主奏吉他硬搖滾，節奏緊湊",
+  "conf": "mid"
+ },
+ {
+  "id": "thin lizzy|thunder and lightning",
+  "x": 4.3,
+  "y": 1.5,
+  "z": -0.5,
+  "why": "最重的一張，金屬化吉他與快速雙踏",
+  "conf": "mid"
+ },
+ {
+  "id": "three dog night|suitable for framing",
+  "x": 3.4,
+  "y": 0.1,
+  "z": 1.3,
+  "why": "風琴與靈魂流行搖滾，三聲部熱情合唱",
+  "conf": "mid"
+ },
+ {
+  "id": "tim buckley|goodbye and hello",
+  "x": 2.6,
+  "y": -0.6,
+  "z": 0.1,
+  "why": "巴洛克迷幻民謠，管弦編曲與戲劇性高音",
+  "conf": "mid"
+ },
+ {
+  "id": "tim buckley|blue afternoon",
+  "x": 2.0,
+  "y": -1.0,
+  "z": 0.4,
+  "why": "爵士味民謠，鐵琴與木吉他，慵懶低迴",
+  "conf": "mid"
+ },
+ {
+  "id": "todd rundgren|runt",
+  "x": 3.1,
+  "y": -0.2,
+  "z": 0.8,
+  "why": "鋼琴流行與搖滾混雜，旋律明朗",
+  "conf": "mid"
+ },
+ {
+  "id": "todd rundgren|todd",
+  "x": 3.0,
+  "y": 0.5,
+  "z": -0.3,
+  "why": "合成器迷幻實驗，怪奇音色，忽明忽暗",
+  "conf": "mid"
+ },
+ {
+  "id": "tõnis mägi & muusik-seif|mäe kaks nõlva",
+  "x": 3.3,
+  "y": 0.6,
+  "z": -0.2,
+  "why": "愛沙尼亞搖滾，厚實吉他與鍵盤，略帶憂鬱",
+  "conf": "low"
+ },
+ {
+  "id": "trees|the garden of jane delawney",
+  "x": 2.8,
+  "y": 0.2,
+  "z": -0.4,
+  "why": "英倫民謠搖滾，傳統謠曲配電吉他長即興，霧冷",
+  "conf": "mid"
+ },
+ {
+  "id": "ufo|lights out",
+  "x": 3.8,
+  "y": 0.9,
+  "z": -0.2,
+  "why": "硬搖滾吉他配弦樂，旋律銳利",
+  "conf": "mid"
+ },
+ {
+  "id": "ufo|strangers in the night",
+  "x": 4.2,
+  "y": 1.2,
+  "z": 0.2,
+  "why": "現場硬搖滾，吉他火力全開，熱烈",
+  "conf": "mid"
+ },
+ {
+  "id": "ufo|sharks",
+  "x": 3.8,
+  "y": 1.1,
+  "z": -0.3,
+  "why": "二〇〇〇年代硬搖滾製作，厚實吉他",
+  "conf": "low"
+ },
+ {
+  "id": "uriah heep|demons and wizards",
+  "x": 3.5,
+  "y": 1.1,
+  "z": 0.1,
+  "why": "管風琴與高音和聲，重拍硬搖滾夾奇幻原聲曲",
+  "conf": "mid"
+ },
+ {
+  "id": "van morrison|saint dominic's preview",
+  "x": 2.9,
+  "y": -0.3,
+  "z": 1.3,
+  "why": "靈魂民謠搖滾，銅管與長篇即興吟唱，溫熱",
+  "conf": "mid"
+ },
+ {
+  "id": "vintage trouble|1 hopeful rd.",
+  "x": 3.3,
+  "y": 0.1,
+  "z": 1.3,
+  "why": "復古靈魂搖滾，較柔和的原聲編制，溫暖",
+  "conf": "low"
+ },
+ {
+  "id": "vladimír mišík|vladimír mišík",
+  "x": 2.7,
+  "y": 0.0,
+  "z": -0.1,
+  "why": "捷克藍調搖滾，吟詩式人聲，沉鬱",
+  "conf": "low"
+ },
+ {
+  "id": "wings|red rose speedway",
+  "x": 2.6,
+  "y": -0.6,
+  "z": 1.3,
+  "why": "柔和流行，抒情鋼琴與組曲，溫馨",
+  "conf": "mid"
+ },
+ {
+  "id": "wishbone ash|argus",
+  "x": 3.3,
+  "y": 0.4,
+  "z": -0.2,
+  "why": "雙主奏吉他交織，中古味旋律，略帶憂鬱",
+  "conf": "mid"
+ },
+ {
+  "id": "yat-kha|yenisei punk",
+  "x": 3.3,
+  "y": 0.8,
+  "z": -0.4,
+  "why": "呼麥低沉喉音配粗糙搖滾，低頻嗡鳴荒涼",
+  "conf": "low"
+ },
+ {
+  "id": "yu grupa|yu grupa",
+  "x": 3.6,
+  "y": 1.0,
+  "z": 0.0,
+  "why": "硬搖滾吉他配巴爾幹民謠旋律，粗厚",
+  "conf": "low"
+ },
+ {
+  "id": "zucchero|oro, incenso & birra",
+  "x": 3.4,
+  "y": 0.3,
+  "z": 1.4,
+  "why": "藍調靈魂流行，福音合唱與管風琴，熱情",
+  "conf": "mid"
+ },
+ {
+  "id": "ддт|периферия",
+  "x": 3.4,
+  "y": 0.7,
+  "z": -0.4,
+  "why": "早期俄羅斯搖滾，錄音粗糙，嗓音沙啞",
+  "conf": "low"
+ },
+ {
+  "id": "ддт|оттепель",
+  "x": 3.2,
+  "y": 0.8,
+  "z": -0.6,
+  "why": "厚實俄式搖滾，嘶啞嗓音，陰鬱沉重",
+  "conf": "low"
+ },
+ {
+  "id": "щурците|20-и век",
+  "x": 3.2,
+  "y": 0.6,
+  "z": -0.4,
+  "why": "保加利亞前衛硬搖滾，詩意而陰鬱",
+  "conf": "low"
+ },
+ {
+  "id": "ဇော်ဝင်းထွဋ်|မာကျူရီည",
+  "x": 3.0,
+  "y": -0.2,
+  "z": 0.6,
+  "why": "八〇年代緬甸流行搖滾，乾淨製作，溫和",
+  "conf": "low"
+ },
+ {
+  "id": "ザ・テンプターズ|ファースト・アルバム",
+  "x": 3.3,
+  "y": 0.2,
+  "z": 0.5,
+  "why": "GS 車庫流行，風琴與厚吉他，抒情與熱鬧參半",
+  "conf": "low"
+ },
+ {
+  "id": "2814|新しい日の誕生",
+  "x": 1.4,
+  "y": 1.4,
+  "z": -0.8,
+  "why": "蒸汽波氛圍，雨聲與深殘響合成器，緩慢夜城",
+  "conf": "mid"
+ },
+ {
+  "id": "65daysofstatic|the fall of math",
+  "x": 4.1,
+  "y": 1.5,
+  "z": -1.0,
+  "why": "碎拍電子鼓與轟鳴吉他牆，鋼琴冷冽",
+  "conf": "mid"
+ },
+ {
+  "id": "8mm sky|finders keepers",
+  "x": 2.6,
+  "y": 0.8,
+  "z": -0.3,
+  "why": "器樂後搖，漸進吉他殘響，憑曲風推估",
+  "conf": "low"
+ },
+ {
+  "id": "a silver mt. zion|he has left us alone but shafts of light sometimes grace the corner of our rooms...",
+  "x": 1.8,
+  "y": 0.8,
+  "z": -1.0,
+  "why": "弦樂長音與鋼琴，緩慢堆疊，悲涼",
+  "conf": "mid"
+ },
+ {
+  "id": "a.r. kane|69",
+  "x": 2.3,
+  "y": 1.4,
+  "z": -0.2,
+  "why": "dub 空間與回授噪音，鬆散夢幻",
+  "conf": "mid"
+ },
+ {
+  "id": "a.r. kane|i",
+  "x": 2.9,
+  "y": 0.6,
+  "z": 0.4,
+  "why": "風格雜糅，house 節拍與夢幻流行，較明亮",
+  "conf": "low"
+ },
+ {
+  "id": "american music club|mercury",
+  "x": 2.3,
+  "y": 0.3,
+  "z": -0.8,
+  "why": "緩慢憂傷，低語嗓音與克制編曲",
+  "conf": "mid"
+ },
+ {
+  "id": "amp|sirènes",
+  "x": 1.4,
+  "y": 1.6,
+  "z": -0.8,
+  "why": "長音嗡鳴與迴授，霧狀吉他氛圍",
+  "conf": "low"
+ },
+ {
+  "id": "atlas sound|logos",
+  "x": 2.6,
+  "y": 0.8,
+  "z": 0.1,
+  "why": "迴圈電子與夢幻吉他，殘響溫柔",
+  "conf": "mid"
+ },
+ {
+  "id": "balmorhea|all is wild, all is silent",
+  "x": 1.9,
+  "y": -1.2,
+  "z": 0.4,
+  "why": "鋼琴、弦樂與原聲吉他，田園室內樂",
+  "conf": "mid"
+ },
+ {
+  "id": "bedhead|whatfunlifewas",
+  "x": 2.3,
+  "y": 0.9,
+  "z": -0.8,
+  "why": "三把吉他緩慢堆疊，低語與爆發，陰鬱",
+  "conf": "mid"
+ },
+ {
+  "id": "black country, new road|for the first time",
+  "x": 3.8,
+  "y": 1.1,
+  "z": -0.8,
+  "why": "薩克斯與小提琴猶太風，急促碎念，緊繃",
+  "conf": "high"
+ },
+ {
+  "id": "bowery electric|beat",
+  "x": 2.0,
+  "y": 1.5,
+  "z": -1.0,
+  "why": "緩慢碎拍與嗡鳴吉他，霧狀低頻，冷",
+  "conf": "mid"
+ },
+ {
+  "id": "catherine wheel|ferment",
+  "x": 3.0,
+  "y": 1.6,
+  "z": -0.5,
+  "why": "厚重吉他牆，偏搖滾的推進力，暗沉",
+  "conf": "mid"
+ },
+ {
+  "id": "chapterhouse|whirlpool",
+  "x": 3.2,
+  "y": 1.5,
+  "z": 0.2,
+  "why": "吉他牆加 baggy 律動，夢幻輕快",
+  "conf": "mid"
+ },
+ {
+  "id": "cocteau twins|blue bell knoll",
+  "x": 2.4,
+  "y": 0.8,
+  "z": 0.4,
+  "why": "晶亮吉他與殘響，空靈囈語人聲，明亮甜美",
+  "conf": "high"
+ }
+]

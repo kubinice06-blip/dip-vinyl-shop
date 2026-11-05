@@ -1,0 +1,1032 @@
+[
+ {
+  "key": "desc2:Sly Boots|Notes on a Journey",
+  "artist": "Sly Boots",
+  "album": "Notes on a Journey",
+  "year": 1969,
+  "genre": "folk",
+  "genres": [
+   "folk",
+   "psychedelic"
+  ],
+  "label": "Faithful Virtue Records",
+  "country": "US",
+  "moodGuess": {
+   "x": 2,
+   "y": 0,
+   "z": 0.5,
+   "why": "輕柔迷幻民謠，暖調"
+  },
+  "rgMbid": "",
+  "identitySource": "manual",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist:\"Sly Boots\" AND releasegroup:\"Notes on a Journey\" → count 0",
+    "releasegroup:\"Notes on a Journey\" → count 0",
+    "artist:\"Sly Boots\" → count 1"
+   ],
+   "checkedAt": "2026-11-04T07:17:47.981Z",
+   "conclusion": "artist:\"Sly Boots\" AND releasegroup:\"Notes on a Journey\" → count 0，前 0 筆無同藝人同盤名的 release-group；releasegroup:\"Notes on a Journey\" → count 0，前 0 筆無同藝人同盤名的 release-group；artist:\"Sly Boots\" → count 1，前 1 筆無同藝人同盤名的 release-group。身分以 Discogs master／release 為準。"
+  },
+  "manualEvidenceUrls": [
+   "https://www.discogs.com/master/656009",
+   "https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Sly%20Boots&album=Notes%20on%20a%20Journey"
+  ],
+  "curatorWhy": "美國民謠私壓：1969 年 Faithful Virtue 小廠發行的美國迷幻民謠，Discogs 單一版本、收藏圈冷門名盤；Apple 無此專輯。",
+  "curatorRisk": "",
+  "mbNote": "MB 查無（），走 §1 人工身分。證據：https://www.discogs.com/master/656009 https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Sly%20Boots&album=Notes%20on%20a%20Journey https://www.discogs.com/master/656009 https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Sly%20Boots&album=Notes%20on%20a%20Journey",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "genreException": "",
+  "selfTitled": false,
+  "apex": "pearl",
+  "group": "a",
+  "lineType": "廣度",
+  "scene": "新頂點盤線・流亡（美國民謠私壓）",
+  "queryAlias": "",
+  "republic": "",
+  "cover": null
+ },
+ {
+  "key": "desc2:Richard William Turner|The Passenger",
+  "artist": "Richard William Turner",
+  "album": "The Passenger",
+  "year": 1973,
+  "genre": "folk",
+  "genres": [
+   "folk",
+   "psychedelic"
+  ],
+  "label": "Not On Label (self-released)",
+  "country": "US",
+  "moodGuess": {
+   "x": 2,
+   "y": 0.2,
+   "z": 0,
+   "why": "內向孤獨的私壓民謠"
+  },
+  "rgMbid": "",
+  "identitySource": "manual",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist:\"Richard William Turner\" AND releasegroup:\"The Passenger\" → count 0",
+    "releasegroup:\"The Passenger\" → count 38",
+    "artist:\"Richard William Turner\" → count 0"
+   ],
+   "checkedAt": "2026-11-04T07:17:47.981Z",
+   "conclusion": "artist:\"Richard William Turner\" AND releasegroup:\"The Passenger\" → count 0，前 0 筆無同藝人同盤名的 release-group；releasegroup:\"The Passenger\" → count 38，前 10 筆無同藝人同盤名的 release-group；artist:\"Richard William Turner\" → count 0，前 0 筆無同藝人同盤名的 release-group。身分以 Discogs master／release 為準。"
+  },
+  "manualEvidenceUrls": [
+   "https://www.discogs.com/master/1674125",
+   "https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Richard%20William%20Turner&album=The%20Passenger"
+  ],
+  "curatorWhy": "美國民謠私壓：1973 年好萊塢 Ascot Studios 自費私壓（Not On Label），迷幻民謠收藏圈冷門盤；Apple 無。",
+  "curatorRisk": "",
+  "mbNote": "MB 查無（），走 §1 人工身分。證據：https://www.discogs.com/master/1674125 https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Richard%20William%20Turner&album=The%20Passenger https://www.discogs.com/master/1674125 https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Richard%20William%20Turner&album=The%20Passenger",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "genreException": "",
+  "selfTitled": false,
+  "apex": "pearl",
+  "group": "a",
+  "lineType": "廣度",
+  "scene": "新頂點盤線・流亡（美國民謠私壓）",
+  "queryAlias": "",
+  "republic": "",
+  "cover": null
+ },
+ {
+  "key": "desc2:Free Enterprize|The Eye of the Beholder",
+  "artist": "Free Enterprize",
+  "album": "The Eye of the Beholder",
+  "year": 1980,
+  "genre": "psychedelic",
+  "genres": [
+   "psychedelic",
+   "folk"
+  ],
+  "label": "Not On Label (self-released)",
+  "country": "US",
+  "moodGuess": {
+   "x": 2.3,
+   "y": 0.2,
+   "z": 0.2,
+   "why": "柔和迷幻"
+  },
+  "rgMbid": "",
+  "identitySource": "manual",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist:\"Free Enterprize\" AND releasegroup:\"The Eye of the Beholder\" → count 0",
+    "releasegroup:\"The Eye of the Beholder\" → count 6",
+    "artist:\"Free Enterprize\" → count 0"
+   ],
+   "checkedAt": "2026-11-04T07:17:47.981Z",
+   "conclusion": "artist:\"Free Enterprize\" AND releasegroup:\"The Eye of the Beholder\" → count 0，前 0 筆無同藝人同盤名的 release-group；releasegroup:\"The Eye of the Beholder\" → count 6，前 6 筆無同藝人同盤名的 release-group；artist:\"Free Enterprize\" → count 0，前 0 筆無同藝人同盤名的 release-group。身分以 Discogs master／release 為準。"
+  },
+  "manualEvidenceUrls": [
+   "https://www.discogs.com/master/1702214",
+   "https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Free%20Enterprize&album=The%20Eye%20of%20the%20Beholder"
+  ],
+  "curatorWhy": "美國迷幻私壓：1980 年 Century Record Mfg. 壓製的自費私壓，迷幻民謠／軟搖，Discogs 無串流再發；Apple 無。",
+  "curatorRisk": "⚠ 年份 1980，略晚於 60-70 年代黃金期",
+  "mbNote": "MB 查無（），走 §1 人工身分。證據：https://www.discogs.com/master/1702214 https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Free%20Enterprize&album=The%20Eye%20of%20the%20Beholder https://www.discogs.com/master/1702214 https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Free%20Enterprize&album=The%20Eye%20of%20the%20Beholder",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "genreException": "",
+  "selfTitled": false,
+  "apex": "pearl",
+  "group": "a",
+  "lineType": "廣度",
+  "scene": "新頂點盤線・流亡（美國迷幻私壓）",
+  "queryAlias": "",
+  "republic": "",
+  "cover": null
+ },
+ {
+  "key": "desc2:David Lewis|Just Mollie and Me…",
+  "artist": "David Lewis",
+  "album": "Just Mollie and Me…",
+  "year": 1976,
+  "genre": "folk",
+  "genres": [
+   "folk"
+  ],
+  "label": "Tiger Lily Records",
+  "country": "US",
+  "moodGuess": {
+   "x": 1.8,
+   "y": 0,
+   "z": 0.6,
+   "why": "輕柔暖調民謠"
+  },
+  "rgMbid": "b723e802-fa5b-47d0-b472-d42323c7bd54",
+  "identitySource": "pinned",
+  "curatorWhy": "美國民謠私壓：1976 年 Tiger Lily 小廠民謠專輯，Roulette 壓製，日韓 CD 再發過但無串流；Apple 無。",
+  "curatorRisk": "",
+  "mbNote": "MB release-group b723e802-fa5b-47d0-b472-d42323c7bd54：title「Just Mollie and Me…」、Album、first-release-date 1976、artist-credit「David Lewis」。證據：https://www.discogs.com/master/1240783 https://musicbrainz.org/release-group/b723e802-fa5b-47d0-b472-d42323c7bd54 https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=David%20Lewis&album=Just%20Mollie%20and%20Me…",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "genreException": "",
+  "selfTitled": false,
+  "apex": "pearl",
+  "group": "a",
+  "lineType": "廣度",
+  "scene": "新頂點盤線・流亡（美國民謠私壓）",
+  "queryAlias": "",
+  "republic": "",
+  "cover": null
+ },
+ {
+  "key": "desc2:Ghostdance|Ghostdance",
+  "artist": "Ghostdance",
+  "album": "Ghostdance",
+  "year": 1980,
+  "genre": "folk",
+  "genres": [
+   "folk",
+   "psychedelic"
+  ],
+  "label": "Root River Records",
+  "country": "US",
+  "moodGuess": {
+   "x": 2.2,
+   "y": 0.3,
+   "z": -0.2,
+   "why": "空靈偏冷的迷幻民謠"
+  },
+  "rgMbid": "",
+  "identitySource": "manual",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist:\"Ghostdance\" AND releasegroup:\"Ghostdance\" → count 0",
+    "releasegroup:\"Ghostdance\" → count 5",
+    "artist:\"Ghostdance\" → count 0"
+   ],
+   "checkedAt": "2026-11-04T07:17:47.981Z",
+   "conclusion": "artist:\"Ghostdance\" AND releasegroup:\"Ghostdance\" → count 0，前 0 筆無同藝人同盤名的 release-group；releasegroup:\"Ghostdance\" → count 5，前 5 筆無同藝人同盤名的 release-group；artist:\"Ghostdance\" → count 0，前 0 筆無同藝人同盤名的 release-group。身分以 Discogs master／release 為準。"
+  },
+  "manualEvidenceUrls": [
+   "https://www.discogs.com/master/955953",
+   "https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Ghostdance&album=Ghostdance"
+  ],
+  "curatorWhy": "美國民謠私壓：1980 年 Root River Records 私壓，Discogs 收錄的美國地下迷幻民謠，無串流；Apple 無。",
+  "curatorRisk": "⚠ Discogs 另有 1989 比利時同名專輯 (master 1713275)，非此張",
+  "mbNote": "MB 查無（），走 §1 人工身分。證據：https://www.discogs.com/master/955953 https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Ghostdance&album=Ghostdance https://www.discogs.com/master/955953 https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Ghostdance&album=Ghostdance",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "genreException": "",
+  "selfTitled": true,
+  "apex": "pearl",
+  "group": "a",
+  "lineType": "廣度",
+  "scene": "新頂點盤線・流亡（美國民謠私壓）",
+  "queryAlias": "",
+  "republic": "",
+  "cover": null
+ },
+ {
+  "key": "desc2:Drnwyn|Gypsies in the Mist",
+  "artist": "Drnwyn",
+  "album": "Gypsies in the Mist",
+  "year": 1978,
+  "genre": "folk",
+  "genres": [
+   "folk",
+   "psychedelic"
+  ],
+  "label": "Not On Label (self-released)",
+  "country": "US",
+  "moodGuess": {
+   "x": 2,
+   "y": 0.1,
+   "z": 0.4,
+   "why": "奇幻民謠，柔和"
+  },
+  "rgMbid": "ac2c37dc-4b56-4a11-9802-3b236983c1cb",
+  "identitySource": "pinned",
+  "curatorWhy": "美國民謠私壓：1978 年 Wilderland Recording Studios 自費私壓的奇幻迷幻民謠，Underground Masters、Wohn 重發過但無串流；Apple 無。",
+  "curatorRisk": "",
+  "mbNote": "MB release-group ac2c37dc-4b56-4a11-9802-3b236983c1cb：title「Gypsies in the Mist」、Album、first-release-date 1978、artist-credit「Drnwyn」。證據：https://www.discogs.com/master/526746 https://musicbrainz.org/release-group/ac2c37dc-4b56-4a11-9802-3b236983c1cb https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Drnwyn&album=Gypsies%20in%20the%20Mist",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "genreException": "",
+  "selfTitled": false,
+  "apex": "pearl",
+  "group": "a",
+  "lineType": "廣度",
+  "scene": "新頂點盤線・流亡（美國民謠私壓）",
+  "queryAlias": "",
+  "republic": "",
+  "cover": null
+ },
+ {
+  "key": "desc2:McAllen|McAllen",
+  "artist": "McAllen",
+  "album": "McAllen",
+  "year": 1971,
+  "genre": "folk",
+  "genres": [
+   "folk",
+   "psychedelic"
+  ],
+  "label": "Spirit",
+  "country": "US",
+  "moodGuess": {
+   "x": 2,
+   "y": 0.2,
+   "z": 0.3,
+   "why": "靜態私壓民謠"
+  },
+  "rgMbid": "f4eda2d3-1330-48a5-9779-3ef8510a63b8",
+  "identitySource": "pinned",
+  "curatorWhy": "美國民謠私壓：1971 年 Lansing Sound Studios 錄製、Spirit 小廠私壓，Vivid Sound/Big Pink 日韓 CD 再發但無串流；Apple 無。",
+  "curatorRisk": "⚠ MB 藝人名為 Bob McAllen",
+  "mbNote": "MB release-group f4eda2d3-1330-48a5-9779-3ef8510a63b8：title「McAllen」、Album、first-release-date 1971、artist-credit「Bob McAllen」。證據：https://www.discogs.com/master/1292621 https://musicbrainz.org/release-group/f4eda2d3-1330-48a5-9779-3ef8510a63b8 https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=McAllen&album=McAllen",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "genreException": "",
+  "selfTitled": true,
+  "apex": "pearl",
+  "group": "a",
+  "lineType": "廣度",
+  "scene": "新頂點盤線・流亡（美國民謠私壓）",
+  "queryAlias": "Bob McAllen",
+  "republic": "",
+  "cover": null
+ },
+ {
+  "key": "desc2:Jeremy Dormouse|The Toad Recordings",
+  "artist": "Jeremy Dormouse",
+  "album": "The Toad Recordings",
+  "year": 1967,
+  "genre": "folk",
+  "genres": [
+   "folk",
+   "psychedelic"
+  ],
+  "label": "Not On Label (self-released)",
+  "country": "CA",
+  "moodGuess": {
+   "x": 2,
+   "y": 0,
+   "z": 0.4,
+   "why": "輕柔私壓民謠"
+  },
+  "rgMbid": "4cb8833c-c959-453a-8eec-f048acb6c9af",
+  "identitySource": "pinned",
+  "curatorWhy": "美國民謠私壓：1967 年加拿大自費私壓的迷幻民謠，Discogs 標 Not On Label 自行發行、收藏圈冷門名盤；Apple 無。",
+  "curatorRisk": "⚠ 加拿大",
+  "mbNote": "MB release-group 4cb8833c-c959-453a-8eec-f048acb6c9af：title「The Toad Recordings」、Album、first-release-date 1967、artist-credit「Jeremy Dormouse」。證據：https://www.discogs.com/master/637776 https://musicbrainz.org/release-group/4cb8833c-c959-453a-8eec-f048acb6c9af https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Jeremy%20Dormouse&album=The%20Toad%20Recordings",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "genreException": "",
+  "selfTitled": false,
+  "apex": "pearl",
+  "group": "a",
+  "lineType": "廣度",
+  "scene": "新頂點盤線・流亡（美國民謠私壓）",
+  "queryAlias": "",
+  "republic": "",
+  "cover": null
+ },
+ {
+  "key": "desc2:Stefan Gnys|English Oaks and Evangeline",
+  "artist": "Stefan Gnys",
+  "album": "English Oaks and Evangeline",
+  "year": 1969,
+  "genre": "folk",
+  "genres": [
+   "folk",
+   "psychedelic"
+  ],
+  "label": "Not On Label (self-released)",
+  "country": "CA",
+  "moodGuess": {
+   "x": 2,
+   "y": 0.2,
+   "z": 0.3,
+   "why": "內省私壓民謠"
+  },
+  "rgMbid": "",
+  "identitySource": "manual",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist:\"Stefan Gnys\" AND releasegroup:\"English Oaks and Evangeline\" → count 0",
+    "releasegroup:\"English Oaks and Evangeline\" → count 0",
+    "artist:\"Stefan Gnys\" → count 1"
+   ],
+   "checkedAt": "2026-11-04T07:17:47.981Z",
+   "conclusion": "artist:\"Stefan Gnys\" AND releasegroup:\"English Oaks and Evangeline\" → count 0，前 0 筆無同藝人同盤名的 release-group；releasegroup:\"English Oaks and Evangeline\" → count 0，前 0 筆無同藝人同盤名的 release-group；artist:\"Stefan Gnys\" → count 1，前 1 筆無同藝人同盤名的 release-group。身分以 Discogs master／release 為準。"
+  },
+  "manualEvidenceUrls": [
+   "https://www.discogs.com/master/4057558",
+   "https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Stefan%20Gnys&album=English%20Oaks%20and%20Evangeline"
+  ],
+  "curatorWhy": "美國民謠私壓：1969 年加拿大自費私壓民謠（Not On Label），Discogs 單一版本；Apple 無。",
+  "curatorRisk": "⚠ MB 查無，走人工身分",
+  "mbNote": "MB 查無（），走 §1 人工身分。證據：https://www.discogs.com/master/4057558 https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Stefan%20Gnys&album=English%20Oaks%20and%20Evangeline https://www.discogs.com/master/4057558 https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Stefan%20Gnys&album=English%20Oaks%20and%20Evangeline",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "genreException": "",
+  "selfTitled": false,
+  "apex": "",
+  "group": "a",
+  "lineType": "廣度",
+  "scene": "新頂點盤線・流亡（美國民謠私壓）",
+  "queryAlias": "",
+  "republic": "",
+  "cover": null
+ },
+ {
+  "key": "desc2:Rin Eric|The Soundtrack to the Movie in Your Mind",
+  "artist": "Rin Eric",
+  "album": "The Soundtrack to the Movie in Your Mind",
+  "year": 1972,
+  "genre": "psychedelic",
+  "genres": [
+   "psychedelic",
+   "folk"
+  ],
+  "label": "Not On Label (private press)",
+  "country": "US",
+  "moodGuess": {
+   "x": 2.3,
+   "y": 0.3,
+   "z": 0.2,
+   "why": "夢幻迷幻民謠"
+  },
+  "rgMbid": "bbae0afb-1179-48b4-ae62-1b5c5c6f07e9",
+  "identitySource": "pinned",
+  "curatorWhy": "美國迷幻私壓：1972 年美國私壓（Not On Label），迷幻民謠收藏冷門盤；Apple 無。",
+  "curatorRisk": "",
+  "mbNote": "MB release-group bbae0afb-1179-48b4-ae62-1b5c5c6f07e9：title「The Soundtrack To The Movie In Your Mind」、Album、first-release-date 1972、artist-credit「Rin Eric」。證據：https://www.discogs.com/master/1220210 https://musicbrainz.org/release-group/bbae0afb-1179-48b4-ae62-1b5c5c6f07e9 https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Rin%20Eric&album=The%20Soundtrack%20to%20the%20Movie%20in%20Your%20Mind",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "genreException": "",
+  "selfTitled": false,
+  "apex": "pearl",
+  "group": "b",
+  "lineType": "廣度",
+  "scene": "新頂點盤線・流亡（美國迷幻私壓）",
+  "queryAlias": "",
+  "republic": "",
+  "cover": null
+ },
+ {
+  "key": "desc2:Circulation|Tank Tracks",
+  "artist": "Circulation",
+  "album": "Tank Tracks",
+  "year": 1969,
+  "genre": "psychedelic",
+  "genres": [
+   "psychedelic"
+  ],
+  "label": "Deroy",
+  "country": "UK",
+  "moodGuess": {
+   "x": 3,
+   "y": 0.3,
+   "z": 0.2,
+   "why": "迷幻搖滾，中速"
+  },
+  "rgMbid": "",
+  "identitySource": "manual",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist:\"Circulation\" AND releasegroup:\"Tank Tracks\" → count 0",
+    "releasegroup:\"Tank Tracks\" → count 2",
+    "artist:\"Circulation\" → count 86"
+   ],
+   "checkedAt": "2026-11-04T07:17:47.981Z",
+   "conclusion": "artist:\"Circulation\" AND releasegroup:\"Tank Tracks\" → count 0，前 0 筆無同藝人同盤名的 release-group；releasegroup:\"Tank Tracks\" → count 2，前 2 筆無同藝人同盤名的 release-group；artist:\"Circulation\" → count 86，前 25 筆無同藝人同盤名的 release-group。身分以 Discogs master／release 為準。"
+  },
+  "manualEvidenceUrls": [
+   "https://www.discogs.com/master/1061597",
+   "https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Circulation&album=Tank%20Tracks"
+  ],
+  "curatorWhy": "英國迷幻私壓：1969 年英國 Deroy（私壓／圖書館級小廠）發行的迷幻專輯，Discogs 單一版本；Apple 無。",
+  "curatorRisk": "⚠ MB 查無；Deroy 屬私壓性質小廠",
+  "mbNote": "MB 查無（），走 §1 人工身分。證據：https://www.discogs.com/master/1061597 https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Circulation&album=Tank%20Tracks https://www.discogs.com/master/1061597 https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Circulation&album=Tank%20Tracks",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "genreException": "",
+  "selfTitled": false,
+  "apex": "pearl",
+  "group": "b",
+  "lineType": "廣度",
+  "scene": "新頂點盤線・流亡（英國迷幻私壓）",
+  "queryAlias": "",
+  "republic": "",
+  "cover": null
+ },
+ {
+  "key": "desc2:Fairy Tale|Once Upon a Time...",
+  "artist": "Fairy Tale",
+  "album": "Once Upon a Time...",
+  "year": 1969,
+  "genre": "psychedelic",
+  "genres": [
+   "psychedelic",
+   "folk"
+  ],
+  "label": "Blossom Records",
+  "country": "NL",
+  "moodGuess": {
+   "x": 2.2,
+   "y": 0,
+   "z": 0.5,
+   "why": "童話感迷幻民謠"
+  },
+  "rgMbid": "c8f3cf58-dc0c-417f-9e4e-b152a4a877f5",
+  "identitySource": "pinned",
+  "curatorWhy": "歐陸迷幻私壓：1969 年荷蘭 Blossom Records 小廠迷幻民謠，Discogs 單一版本；Apple 無。",
+  "curatorRisk": "",
+  "mbNote": "MB release-group c8f3cf58-dc0c-417f-9e4e-b152a4a877f5：title「Once Upon a Time...」、Album、first-release-date 1969、artist-credit「Fairy Tale」。證據：https://www.discogs.com/master/225632 https://musicbrainz.org/release-group/c8f3cf58-dc0c-417f-9e4e-b152a4a877f5 https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Fairy%20Tale&album=Once%20Upon%20a%20Time...",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "genreException": "",
+  "selfTitled": false,
+  "apex": "pearl",
+  "group": "b",
+  "lineType": "廣度",
+  "scene": "新頂點盤線・流亡（歐陸迷幻私壓）",
+  "queryAlias": "",
+  "republic": "",
+  "cover": null
+ },
+ {
+  "key": "desc2:Ton Vlasman|White Room With Disintegrating Walls",
+  "artist": "Ton Vlasman",
+  "album": "White Room With Disintegrating Walls",
+  "year": 1970,
+  "genre": "psychedelic",
+  "genres": [
+   "psychedelic"
+  ],
+  "label": "Flame Records",
+  "country": "NL",
+  "moodGuess": {
+   "x": 3,
+   "y": 0.5,
+   "z": -0.2,
+   "why": "迷幻實驗，偏暗"
+  },
+  "rgMbid": "",
+  "identitySource": "manual",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist:\"Ton Vlasman\" AND releasegroup:\"White Room With Disintegrating Walls\" → count 0",
+    "releasegroup:\"White Room With Disintegrating Walls\" → count 0",
+    "artist:\"Ton Vlasman\" → count 1"
+   ],
+   "checkedAt": "2026-11-04T07:17:47.981Z",
+   "conclusion": "artist:\"Ton Vlasman\" AND releasegroup:\"White Room With Disintegrating Walls\" → count 0，前 0 筆無同藝人同盤名的 release-group；releasegroup:\"White Room With Disintegrating Walls\" → count 0，前 0 筆無同藝人同盤名的 release-group；artist:\"Ton Vlasman\" → count 1，前 1 筆無同藝人同盤名的 release-group。身分以 Discogs master／release 為準。"
+  },
+  "manualEvidenceUrls": [
+   "https://www.discogs.com/master/268315",
+   "https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Ton%20Vlasman&album=White%20Room%20With%20Disintegrating%20Walls"
+  ],
+  "curatorWhy": "歐陸迷幻私壓：1970 年荷蘭 Flame Records 小廠迷幻專輯，Discogs 單一版本；Apple 無。",
+  "curatorRisk": "⚠ MB 查無，走人工身分",
+  "mbNote": "MB 查無（），走 §1 人工身分。證據：https://www.discogs.com/master/268315 https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Ton%20Vlasman&album=White%20Room%20With%20Disintegrating%20Walls https://www.discogs.com/master/268315 https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Ton%20Vlasman&album=White%20Room%20With%20Disintegrating%20Walls",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "genreException": "",
+  "selfTitled": false,
+  "apex": "pearl",
+  "group": "b",
+  "lineType": "廣度",
+  "scene": "新頂點盤線・流亡（歐陸迷幻私壓）",
+  "queryAlias": "",
+  "republic": "",
+  "cover": null
+ },
+ {
+  "key": "desc2:Princess Flower and the Moon Rays|Dreaming the Magic of Your Maya",
+  "artist": "Princess Flower and the Moon Rays",
+  "album": "Dreaming the Magic of Your Maya",
+  "year": 1968,
+  "genre": "psychedelic",
+  "genres": [
+   "psychedelic"
+  ],
+  "label": "Akashic Records",
+  "country": "US",
+  "moodGuess": {
+   "x": 2.5,
+   "y": 0.3,
+   "z": 0.3,
+   "why": "靈修迷幻"
+  },
+  "rgMbid": "2454d4de-0e3b-4ad5-b0eb-58668836b071",
+  "identitySource": "pinned",
+  "curatorWhy": "美國迷幻私壓：1968 年 Akashic Records 私壓的美國靈修迷幻專輯，2012 年才有再發（MB 另有合輯版）；Apple 無。",
+  "curatorRisk": "",
+  "mbNote": "MB release-group 2454d4de-0e3b-4ad5-b0eb-58668836b071：title「Dreaming the Magic of Your Maya」、Album、first-release-date 1968、artist-credit「Princess Flower and The Moon Rays」。證據：https://www.discogs.com/master/545299 https://musicbrainz.org/release-group/2454d4de-0e3b-4ad5-b0eb-58668836b071 https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Princess%20Flower%20and%20the%20Moon%20Rays&album=Dreaming%20the%20Magic%20of%20Your%20Maya",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "genreException": "",
+  "selfTitled": false,
+  "apex": "pearl",
+  "group": "b",
+  "lineType": "廣度",
+  "scene": "新頂點盤線・流亡（美國迷幻私壓）",
+  "queryAlias": "",
+  "republic": "",
+  "cover": null
+ },
+ {
+  "key": "desc2:Inner Dialogue|Friend",
+  "artist": "Inner Dialogue",
+  "album": "Friend",
+  "year": 1970,
+  "genre": "folk",
+  "genres": [
+   "folk",
+   "psychedelic"
+  ],
+  "label": "Ranwood",
+  "country": "US",
+  "moodGuess": {
+   "x": 2,
+   "y": 0.1,
+   "z": 0.4,
+   "why": "柔和民謠"
+  },
+  "rgMbid": "f00a5fbc-58f7-4d0c-9e9e-bc1ed718fa70",
+  "identitySource": "pinned",
+  "curatorWhy": "美國民謠私壓：1970 年 Ranwood 小廠發行的美國迷幻民謠，Discogs 單一版本；Apple 無。",
+  "curatorRisk": "⚠ Ranwood 是中小型唱片公司，非純私壓",
+  "mbNote": "MB release-group f00a5fbc-58f7-4d0c-9e9e-bc1ed718fa70：title「Friend」、Album、first-release-date 1970、artist-credit「Inner Dialogue」。證據：https://www.discogs.com/master/669911 https://musicbrainz.org/release-group/f00a5fbc-58f7-4d0c-9e9e-bc1ed718fa70 https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Inner%20Dialogue&album=Friend",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "genreException": "",
+  "selfTitled": false,
+  "apex": "",
+  "group": "b",
+  "lineType": "廣度",
+  "scene": "新頂點盤線・流亡（美國民謠私壓）",
+  "queryAlias": "",
+  "republic": "",
+  "cover": null
+ },
+ {
+  "key": "desc2:Smack|Smack",
+  "artist": "Smack",
+  "album": "Smack",
+  "year": 1968,
+  "genre": "psychedelic",
+  "genres": [
+   "psychedelic"
+  ],
+  "label": "Audio House",
+  "country": "US",
+  "moodGuess": {
+   "x": 3.5,
+   "y": 0.8,
+   "z": 0,
+   "why": "迷幻車庫，偏重"
+  },
+  "rgMbid": "eff7399a-bfcf-4bc2-bd42-73dba025fb16",
+  "identitySource": "pinned",
+  "curatorWhy": "美國迷幻私壓：1968 年 Audio House 私壓的美國迷幻車庫專輯；Apple 無。",
+  "curatorRisk": "",
+  "mbNote": "MB release-group eff7399a-bfcf-4bc2-bd42-73dba025fb16：title「Smack」、Album、first-release-date 1968、artist-credit「Smack」。證據：https://www.discogs.com/master/461600 https://musicbrainz.org/release-group/eff7399a-bfcf-4bc2-bd42-73dba025fb16 https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Smack&album=Smack",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "genreException": "",
+  "selfTitled": true,
+  "apex": "pearl",
+  "group": "b",
+  "lineType": "廣度",
+  "scene": "新頂點盤線・流亡（美國迷幻私壓）",
+  "queryAlias": "",
+  "republic": "",
+  "cover": null
+ },
+ {
+  "key": "desc2:Ian A. Anderson|A Vulture Is Not a Bird You Can Trust",
+  "artist": "Ian A. Anderson",
+  "album": "A Vulture Is Not a Bird You Can Trust",
+  "year": 1971,
+  "genre": "folk",
+  "genres": [
+   "folk"
+  ],
+  "label": "The Village Thing",
+  "country": "UK",
+  "moodGuess": {
+   "x": 2.3,
+   "y": 0.3,
+   "z": 0.2,
+   "why": "民謠藍調，溫和"
+  },
+  "rgMbid": "",
+  "identitySource": "manual",
+  "mbAbsenceProof": {
+   "queries": [
+    "artist:\"Ian A. Anderson\" AND releasegroup:\"A Vulture Is Not a Bird You Can Trust\" → count 0",
+    "releasegroup:\"A Vulture Is Not a Bird You Can Trust\" → count 0",
+    "artist:\"Ian A. Anderson\" → count 2"
+   ],
+   "checkedAt": "2026-11-04T07:17:47.981Z",
+   "conclusion": "artist:\"Ian A. Anderson\" AND releasegroup:\"A Vulture Is Not a Bird You Can Trust\" → count 0，前 0 筆無同藝人同盤名的 release-group；releasegroup:\"A Vulture Is Not a Bird You Can Trust\" → count 0，前 0 筆無同藝人同盤名的 release-group；artist:\"Ian A. Anderson\" → count 2，前 2 筆無同藝人同盤名的 release-group。身分以 Discogs master／release 為準。"
+  },
+  "manualEvidenceUrls": [
+   "https://www.discogs.com/master/3011291",
+   "https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Ian%20A.%20Anderson&album=A%20Vulture%20Is%20Not%20a%20Bird%20You%20Can%20Trust"
+  ],
+  "curatorWhy": "英國民謠私壓：1971 年布里斯托小廠 Village Thing 發行的英國民謠藍調，廠牌本身就是地下民謠指標；Apple 無。",
+  "curatorRisk": "⚠ MB 查無，走人工身分",
+  "mbNote": "MB 查無（），走 §1 人工身分。證據：https://www.discogs.com/master/3011291 https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Ian%20A.%20Anderson&album=A%20Vulture%20Is%20Not%20a%20Bird%20You%20Can%20Trust https://www.discogs.com/master/3011291 https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Ian%20A.%20Anderson&album=A%20Vulture%20Is%20Not%20a%20Bird%20You%20Can%20Trust",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "genreException": "",
+  "selfTitled": false,
+  "apex": "pearl",
+  "group": "b",
+  "lineType": "廣度",
+  "scene": "新頂點盤線・流亡（英國民謠私壓）",
+  "queryAlias": "",
+  "republic": "",
+  "cover": null
+ },
+ {
+  "key": "desc2:Probe|Direction",
+  "artist": "Probe",
+  "album": "Direction",
+  "year": 1971,
+  "genre": "psychedelic",
+  "genres": [
+   "psychedelic",
+   "folk"
+  ],
+  "label": "Eborp, Ltd",
+  "country": "US",
+  "moodGuess": {
+   "x": 2.6,
+   "y": 0.3,
+   "z": 0.2,
+   "why": "迷幻民謠搖滾"
+  },
+  "rgMbid": "337622d4-999b-32ab-9e18-95f89387bc28",
+  "identitySource": "pinned",
+  "curatorWhy": "美國迷幻私壓：1971 年 Eborp Ltd（Probe 倒寫，自家私壓廠）發行的美國迷幻專輯；Apple 無。",
+  "curatorRisk": "",
+  "mbNote": "MB release-group 337622d4-999b-32ab-9e18-95f89387bc28：title「Direction」、Album、first-release-date 1971、artist-credit「Probe」。證據：https://www.discogs.com/master/542205 https://musicbrainz.org/release-group/337622d4-999b-32ab-9e18-95f89387bc28 https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Probe&album=Direction",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "genreException": "",
+  "selfTitled": false,
+  "apex": "pearl",
+  "group": "b",
+  "lineType": "廣度",
+  "scene": "新頂點盤線・流亡（美國迷幻私壓）",
+  "queryAlias": "",
+  "republic": "",
+  "cover": null
+ },
+ {
+  "key": "desc2:Ebony Rhythm Funk Campaign|Ebony Rhythm Funk Campaign",
+  "artist": "Ebony Rhythm Funk Campaign",
+  "album": "Ebony Rhythm Funk Campaign",
+  "year": 1973,
+  "genre": "soul",
+  "genres": [
+   "soul"
+  ],
+  "label": "UNI",
+  "country": "US",
+  "moodGuess": {
+   "x": 0,
+   "y": 0,
+   "z": 0,
+   "why": "未評，主線上線日打分"
+  },
+  "rgMbid": "da0852e3-91b0-4c11-98e0-f92614b246aa",
+  "identitySource": "pinned",
+  "curatorWhy": "靈魂／放克私壓：UNI 旗下 Band Aide 單張 LP，Mack Rice 與 Luther Ingram 圈的底特律放克，收藏圈熱門私壓級；Apple 無此專輯（僅有 1976 另一張與單曲）。",
+  "curatorRisk": "⚠ Apple 有該團另一張專輯與單曲，同名首張無串流",
+  "mbNote": "MB release-group da0852e3-91b0-4c11-98e0-f92614b246aa：title「Ebony Rhythm Funk Campaign」、Album、first-release-date 1973、artist-credit「Ebony Rhythm Funk Campaign」。證據：https://musicbrainz.org/release-group/da0852e3-91b0-4c11-98e0-f92614b246aa https://www.discogs.com/master/681444 https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Ebony%20Rhythm%20Funk%20Campaign&album=Ebony%20Rhythm%20Funk%20Campaign",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "genreException": "",
+  "selfTitled": true,
+  "apex": "",
+  "group": "c",
+  "lineType": "廣度",
+  "scene": "新頂點盤線・流亡（靈魂／放克私壓）",
+  "queryAlias": "",
+  "republic": "",
+  "cover": null
+ },
+ {
+  "key": "desc2:Heaven & Earth|Heaven and Earth",
+  "artist": "Heaven & Earth",
+  "album": "Heaven and Earth",
+  "year": 1978,
+  "genre": "soul",
+  "genres": [
+   "soul"
+  ],
+  "label": "Mercury / Chicago Recording Company",
+  "country": "US",
+  "moodGuess": {
+   "x": 0,
+   "y": 0,
+   "z": 0,
+   "why": "未評"
+  },
+  "rgMbid": "7cfefd6c-9eb5-4626-bab7-1308abfcbdb7",
+  "identitySource": "pinned",
+  "curatorWhy": "靈魂／放克私壓：芝加哥 Chicago Recording Company 製作的 modern soul/boogie 小眾名盤，無串流。",
+  "curatorRisk": "⚠ Mercury 發行，非嚴格私壓",
+  "mbNote": "MB release-group 7cfefd6c-9eb5-4626-bab7-1308abfcbdb7：title「Heaven and Earth」、Album、first-release-date 1978-04-10、artist-credit「Heaven & Earth」。證據：https://musicbrainz.org/release-group/7cfefd6c-9eb5-4626-bab7-1308abfcbdb7 https://www.discogs.com/master/779599 https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Heaven%20%26%20Earth&album=Heaven%20%26%20Earth",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "genreException": "",
+  "selfTitled": false,
+  "apex": "",
+  "group": "c",
+  "lineType": "廣度",
+  "scene": "新頂點盤線・流亡（靈魂／放克私壓）",
+  "queryAlias": "",
+  "republic": "",
+  "cover": null
+ },
+ {
+  "key": "desc2:Joe Bonner|Angel Eyes",
+  "artist": "Joe Bonner",
+  "album": "Angel Eyes",
+  "year": 1976,
+  "genre": "jazz",
+  "genres": [
+   "jazz"
+  ],
+  "label": "Muse",
+  "country": "US",
+  "moodGuess": {
+   "x": 0,
+   "y": 0,
+   "z": 0,
+   "why": "未評"
+  },
+  "rgMbid": "359170c5-af7c-4e0a-9bee-c440884158b9",
+  "identitySource": "pinned",
+  "curatorWhy": "地下爵士私壓：Muse 小廠 spiritual 鋼琴作，無串流。",
+  "curatorRisk": "⚠ 非私壓，小廠",
+  "mbNote": "MB release-group 359170c5-af7c-4e0a-9bee-c440884158b9：title「Angel Eyes」、Album、first-release-date 1976、artist-credit「Joe Bonner」。證據：https://musicbrainz.org/release-group/359170c5-af7c-4e0a-9bee-c440884158b9 https://www.discogs.com/master/350194 https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Joe%20Bonner&album=Angel%20Eyes",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "genreException": "",
+  "selfTitled": false,
+  "apex": "pearl",
+  "group": "c",
+  "lineType": "廣度",
+  "scene": "新頂點盤線・流亡（地下爵士私壓）",
+  "queryAlias": "",
+  "republic": "",
+  "cover": null
+ },
+ {
+  "key": "desc2:Prince Lasha Ensemble|Insight",
+  "artist": "Prince Lasha Ensemble",
+  "album": "Insight",
+  "year": 1966,
+  "genre": "jazz",
+  "genres": [
+   "jazz"
+  ],
+  "label": "CBS",
+  "country": "US",
+  "moodGuess": {
+   "x": 0,
+   "y": 0,
+   "z": 0,
+   "why": "未評"
+  },
+  "rgMbid": "662bd358-f5fe-4fb2-a7ed-5c61b16a88ce",
+  "identitySource": "pinned",
+  "curatorWhy": "地下爵士私壓：1966 Prince Lasha/Sonny Simmons 西岸 spiritual jazz 稀有盤，無串流。",
+  "curatorRisk": "⚠ Last.fm 以 Prince Lasha 藝人名查得 45，MB 另有 2009 重發同名條目",
+  "mbNote": "MB release-group 662bd358-f5fe-4fb2-a7ed-5c61b16a88ce：title「Insight」、Album、first-release-date 1966、artist-credit「Prince Lasha Ensemble」。證據：https://musicbrainz.org/release-group/662bd358-f5fe-4fb2-a7ed-5c61b16a88ce https://www.discogs.com/master/227429 https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Prince%20Lasha%20Ensemble&album=Insight",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "genreException": "",
+  "selfTitled": false,
+  "apex": "",
+  "group": "c",
+  "lineType": "廣度",
+  "scene": "新頂點盤線・流亡（地下爵士私壓）",
+  "queryAlias": "",
+  "republic": "",
+  "cover": null
+ },
+ {
+  "key": "desc2:Odean Pope|Almost Like Me",
+  "artist": "Odean Pope",
+  "album": "Almost Like Me",
+  "year": 1982,
+  "genre": "jazz",
+  "genres": [
+   "jazz"
+  ],
+  "label": "Moers Music",
+  "country": "DE",
+  "moodGuess": {
+   "x": 0,
+   "y": 0,
+   "z": 0,
+   "why": "未評"
+  },
+  "rgMbid": "d50c3e06-9d9f-36c4-bf19-ea8d26dc3ab8",
+  "identitySource": "pinned",
+  "curatorWhy": "地下爵士私壓：費城薩克斯風 Odean Pope 的 Moers 歐洲小廠盤，無串流。",
+  "curatorRisk": "⚠ MB 首發年 1982，非 1960s",
+  "mbNote": "MB release-group d50c3e06-9d9f-36c4-bf19-ea8d26dc3ab8：title「Almost Like Me」、Album、first-release-date 1982、artist-credit「Odean Pope」。證據：https://musicbrainz.org/release-group/d50c3e06-9d9f-36c4-bf19-ea8d26dc3ab8 https://www.discogs.com/master/265517 https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Odean%20Pope&album=Almost%20Like%20Me",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "genreException": "",
+  "selfTitled": false,
+  "apex": "pearl",
+  "group": "c",
+  "lineType": "廣度",
+  "scene": "新頂點盤線・流亡（地下爵士私壓）",
+  "queryAlias": "",
+  "republic": "",
+  "cover": null
+ },
+ {
+  "key": "desc2:Bobby Few|More or Less Few",
+  "artist": "Bobby Few",
+  "album": "More or Less Few",
+  "year": 1973,
+  "genre": "jazz",
+  "genres": [
+   "jazz"
+  ],
+  "label": "Center of the World",
+  "country": "FR",
+  "moodGuess": {
+   "x": 0,
+   "y": 0,
+   "z": 0,
+   "why": "未評"
+  },
+  "rgMbid": "2f20779a-a3cc-4553-bfdd-80f25b17931d",
+  "identitySource": "pinned",
+  "curatorWhy": "地下爵士私壓：巴黎自由爵士圈鋼琴家的自營廠首作，無串流。",
+  "curatorRisk": "",
+  "mbNote": "MB release-group 2f20779a-a3cc-4553-bfdd-80f25b17931d：title「More or Less Few」、Album、first-release-date 1973、artist-credit「Bobby Few」。證據：https://musicbrainz.org/release-group/2f20779a-a3cc-4553-bfdd-80f25b17931d https://www.discogs.com/master/439888 https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Bobby%20Few&album=More%20or%20Less%20Few",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "genreException": "",
+  "selfTitled": false,
+  "apex": "pearl",
+  "group": "c",
+  "lineType": "廣度",
+  "scene": "新頂點盤線・流亡（地下爵士私壓）",
+  "queryAlias": "",
+  "republic": "",
+  "cover": null
+ },
+ {
+  "key": "desc2:Mtume Umoja Ensemble|Alkebu-Lan: Land of the Blacks",
+  "artist": "Mtume Umoja Ensemble",
+  "album": "Alkebu-Lan: Land of the Blacks",
+  "year": 1972,
+  "genre": "jazz",
+  "genres": [
+   "jazz"
+  ],
+  "label": "Strata-East",
+  "country": "US",
+  "moodGuess": {
+   "x": 0,
+   "y": 0,
+   "z": 0,
+   "why": "未評"
+  },
+  "rgMbid": "28b08ac4-3803-439d-9082-47f6229a1d2d",
+  "identitySource": "pinned",
+  "curatorWhy": "地下爵士私壓：Strata-East 現場 spiritual jazz 雙 LP，紐約 The East 文化中心，無串流。",
+  "curatorRisk": "⚠ listeners 僅 2，需主線確認未錯配；現場盤",
+  "mbNote": "MB release-group 28b08ac4-3803-439d-9082-47f6229a1d2d：title「Alkebu-Lan: Land of the Blacks」、Album＋Live、first-release-date 1972、artist-credit「Mtume Umoja Ensemble」。證據：https://musicbrainz.org/release-group/28b08ac4-3803-439d-9082-47f6229a1d2d https://www.discogs.com/master/451699 https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Mtume%20Umoja%20Ensemble&album=Alkebu-Lan%3A%20Land%20of%20the%20Blacks%20(Live%20at%20the%20East)",
+  "releaseType": "Album",
+  "exceptionReason": "現場例外：1971 年 8 月 29 日布魯克林 The East 文化中心的現場錄音原盤（MB RG 主類型 Album＋Live），Mtume 首次以本人名義掛名的作品本來就是這場演出（Ganelin 先例）",
+  "exceptionEvidenceUrls": [
+   "https://musicbrainz.org/release-group/28b08ac4-3803-439d-9082-47f6229a1d2d",
+   "https://www.discogs.com/master/451699",
+   "https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Mtume%20Umoja%20Ensemble&album=Alkebu-Lan%3A%20Land%20of%20the%20Blacks%20(Live%20at%20the%20East)"
+  ],
+  "genreException": "",
+  "selfTitled": false,
+  "apex": "pearl",
+  "group": "c",
+  "lineType": "廣度",
+  "scene": "新頂點盤線・流亡（地下爵士私壓）",
+  "queryAlias": "Alkebu-Lan: Land of the Blacks (Live at the East)",
+  "republic": "",
+  "cover": null
+ },
+ {
+  "key": "desc2:Clifford Thornton & The Jazz Composer's Orchestra|The Gardens of Harlem",
+  "artist": "Clifford Thornton & The Jazz Composer's Orchestra",
+  "album": "The Gardens of Harlem",
+  "year": 1975,
+  "genre": "jazz",
+  "genres": [
+   "jazz"
+  ],
+  "label": "JCOA",
+  "country": "US",
+  "moodGuess": {
+   "x": 0,
+   "y": 0,
+   "z": 0,
+   "why": "未評"
+  },
+  "rgMbid": "72303fde-2f9f-427c-9a07-71333b784037",
+  "identitySource": "pinned",
+  "curatorWhy": "地下爵士私壓：JCOA 自營廠，Harlem 社區爵士大樂隊錄音，無串流。",
+  "curatorRisk": "",
+  "mbNote": "MB release-group 72303fde-2f9f-427c-9a07-71333b784037：title「The Gardens of Harlem」、Album、first-release-date 1975、artist-credit「Clifford Thornton, The Jazz Composer's Orchestra」。證據：https://musicbrainz.org/release-group/72303fde-2f9f-427c-9a07-71333b784037 https://www.discogs.com/master/200305 https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Clifford%20Thornton%20%26%20The%20Jazz%20Composer's%20Orchestra&album=The%20Gardens%20of%20Harlem",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "genreException": "",
+  "selfTitled": false,
+  "apex": "pearl",
+  "group": "c",
+  "lineType": "廣度",
+  "scene": "新頂點盤線・流亡（地下爵士私壓）",
+  "queryAlias": "",
+  "republic": "",
+  "cover": null
+ }
+]

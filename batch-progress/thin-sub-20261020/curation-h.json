@@ -1,0 +1,532 @@
+{
+ "group": "h",
+ "factions": [
+  {
+   "id": "zh",
+   "zh": "台灣與華語嘻哈",
+   "count": 12,
+   "why": "台灣、中國、香港饒舌：補池中 MC HotDog／大支／頑童／蛋堡／Leo王 之外的世代代表作"
+  },
+  {
+   "id": "kr",
+   "zh": "韓國嘻哈",
+   "count": 10,
+   "why": "韓國饒舌：補池中 Epik High／Dynamic Duo／Garion／Verbal Jint／E SENS 之外的正典"
+  }
+ ],
+ "albums": [
+  {
+   "artist": "國蛋",
+   "album": "GDNA",
+   "year": 2023,
+   "label": "顏社",
+   "country": "tw",
+   "faction": "zh",
+   "genres": [
+    "hiphop",
+    "rnb"
+   ],
+   "why": "顏社招牌 MC 國蛋 GorDoN 歷經多張 mixtape／EP 後的第一張正規錄音室專輯（11 首），把他招牌的 boom bap 律動與台式幽默歌詞收成完整長篇，是台灣地下饒舌走進成熟期的代表作。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/55c65aa4-9563-4371-b0bd-8ecc74542605",
+    "https://zh.wikipedia.org/wiki/國蛋"
+   ],
+   "mbRgMbid": "55c65aa4-9563-4371-b0bd-8ecc74542605",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "GorDoN 國蛋",
+   "uncertain": "MB 唯一標 Album 的作品；早期 Dr. Paper 系列 MB 未分類、維基未區分 mixtape。MB release 標廠牌為飛碟企業（發行商），維基記顏社，取顏社。"
+  },
+  {
+   "artist": "ØZI",
+   "album": "ØZI: The Album",
+   "year": 2018,
+   "label": "Forbidden Paradise",
+   "country": "tw",
+   "faction": "zh",
+   "genres": [
+    "hiphop",
+    "rnb"
+   ],
+   "why": "ØZI 首張專輯，以 trap／R&B 混血的製作與雙語唱法打開新一代台灣饒舌的主流市場，入圍第 30 屆金曲獎六項並拿下最佳新人。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/78a9468c-4126-4437-89ff-b2c0e714fb6d",
+    "https://en.wikipedia.org/wiki/%C3%98ZI"
+   ],
+   "mbRgMbid": "78a9468c-4126-4437-89ff-b2c0e714fb6d",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "OZI The Album 王詩安",
+   "uncertain": ""
+  },
+  {
+   "artist": "高爾宣 OSN",
+   "album": "#osnrap",
+   "year": 2019,
+   "label": "陶山音樂",
+   "country": "tw",
+   "faction": "zh",
+   "genres": [
+    "hiphop",
+    "rnb"
+   ],
+   "why": "高爾宣首張正規專輯，以旋律饒舌與 R&B 唱腔走紅，入圍第 31 屆金曲獎最佳新人與第 10 屆金音獎最佳嘻哈專輯，並獲 MAMA 最佳亞洲新人（台灣）。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/6a1ae1ac-b8b4-4ad1-a3e8-a37e530e57fe",
+    "https://zh.wikipedia.org/wiki/高爾宣"
+   ],
+   "mbRgMbid": "6a1ae1ac-b8b4-4ad1-a3e8-a37e530e57fe",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "OSN osnrap",
+   "uncertain": "發行日 MB 與維基傳記記 2019-04-30，維基唱片表記 2019-05-08；年份同為 2019。"
+  },
+  {
+   "artist": "瘦子 E.SO",
+   "album": "Outta Body 靈魂出竅",
+   "year": 2020,
+   "label": "滾石唱片",
+   "country": "tw",
+   "faction": "zh",
+   "genres": [
+    "hiphop"
+   ],
+   "why": "頑童 MJ116 成員瘦子的首張個人專輯（14 首），把團體的 old school 底色推向更陰暗內省的 trap 聲響，獲 Hit FM 年度十大專輯與 Hito 聲猛新人。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/8bd5593c-20af-4f1b-86b3-7a87318bed58",
+    "https://zh.wikipedia.org/wiki/瘦子E.SO"
+   ],
+   "mbRgMbid": "8bd5593c-20af-4f1b-86b3-7a87318bed58",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "E.SO 瘦子E.SO Outta Body",
+   "uncertain": "MB 藝人名為「瘦子」、credit 寫「瘦子E.SO」（無空格）；掛名比照池中「蛋堡 Soft Lipa」雙名寫法加空格。"
+  },
+  {
+   "artist": "Higher Brothers",
+   "album": "Black Cab",
+   "year": 2017,
+   "label": "CXSHXNLY",
+   "country": "cn",
+   "faction": "zh",
+   "genres": [
+    "hiphop"
+   ],
+   "why": "成都四人組的首張錄音室專輯（14 首），以四川話 trap 把中國西南饒舌推上國際，88rising 簽約與北美巡演由此開始，是華語 trap 的分水嶺。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/f1271777-2354-4c2e-b469-9aacce611a7c",
+    "https://en.wikipedia.org/wiki/Higher_Brothers"
+   ],
+   "mbRgMbid": "f1271777-2354-4c2e-b469-9aacce611a7c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "海尔兄弟 Black Cab",
+   "uncertain": "2016 同名作英文維基標 mixtape，故取 Black Cab 為首張錄音室專輯。"
+  },
+  {
+   "artist": "GAI",
+   "album": "光宗耀祖",
+   "year": 2018,
+   "label": "",
+   "country": "cn",
+   "faction": "zh",
+   "genres": [
+    "hiphop"
+   ],
+   "why": "重慶饒舌手 GAI 周延在《中國有嘻哈》奪冠後的首張個人專輯（9 首），把重慶方言、京劇與民樂素材揉進 trap，是「中國風嘻哈」走進主流的標竿作。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/c0ea25f7-ccdb-4bd0-b863-02c59dcda3c0",
+    "https://music.apple.com/tw/album/%E5%85%89%E5%AE%97%E8%80%80%E7%A5%96/1883006190",
+    "https://m.maigoo.com/citiao/267414.html"
+   ],
+   "mbRgMbid": "c0ea25f7-ccdb-4bd0-b863-02c59dcda3c0",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "GAI周延 光宗耀祖",
+   "uncertain": "MB 與 Apple 皆未記原發行廠牌（Apple 現為 ℗2026 Dream Music Group 重上架），label 留空待查；英文維基無唱片目錄，第二證據取 Apple＋maigoo。"
+  },
+  {
+   "artist": "艾福杰尼",
+   "album": "楼兰",
+   "year": 2018,
+   "label": "百纳娱乐",
+   "country": "cn",
+   "faction": "zh",
+   "genres": [
+    "hiphop"
+   ],
+   "why": "《中國有嘻哈》人氣饒舌手艾福杰尼的第一張完整長度專輯（10 首），以新疆身世與西域意象為題的概念作，代表 2017 選秀後中國嘻哈的商業高峰期。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/d1c8be43-930b-4a0f-a5f9-d48a0b977150",
+    "https://music.apple.com/tw/album/%E6%A5%BC%E5%85%B0/1690356163"
+   ],
+   "mbRgMbid": "d1c8be43-930b-4a0f-a5f9-d48a0b977150",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "艾福傑尼 樓蘭",
+   "uncertain": "原本想收首作《五亿探长》，但 Apple 標 EP（6 首），改收 MB 標 Album 的《楼兰》（10 首、2018-12-05）；『新疆身世／西域概念』僅據專輯名與其維吾爾族背景推論，待研究層核實。"
+  },
+  {
+   "artist": "熊仔",
+   "album": "夢想成真 Sisyphus' Dream",
+   "year": 2019,
+   "label": "Sony Music",
+   "country": "tw",
+   "faction": "zh",
+   "genres": [
+    "hiphop"
+   ],
+   "why": "台北饒舌手熊仔 Kumachan 的第二張專輯（14 首），以薛西弗斯神話寫追夢者的困頓，拿下第 10 屆金音創作獎最佳嘻哈專輯，是 2010 年代末台灣饒舌的代表長篇。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/e712e7a6-3b4a-4df3-8f6f-a36818063517",
+    "https://zh.wikipedia.org/wiki/熊仔"
+   ],
+   "mbRgMbid": "e712e7a6-3b4a-4df3-8f6f-a36818063517",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Kumachan 夢想成真",
+   "uncertain": ""
+  },
+  {
+   "artist": "LMF",
+   "album": "大懶堂",
+   "year": 2000,
+   "label": "Warner Music Hong Kong",
+   "country": "hk",
+   "faction": "zh",
+   "genres": [
+    "hiphop"
+   ],
+   "why": "香港 LMF（大懶堂）首張正規專輯，把融合 rap metal 的編制與粵語粗口街頭語言帶進主流唱片業，開啟香港本土嘻哈的時代，MC 仁、DJ Tommy 等都由此出道。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/b784dd87-fa38-4c22-9b99-21e76e7bb582",
+    "https://zh.wikipedia.org/wiki/LMF",
+    "https://music.apple.com/tw/album/lazy-clan/367988349"
+   ],
+   "mbRgMbid": "b784dd87-fa38-4c22-9b99-21e76e7bb582",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "大懒堂 Lazy Clan Lazy Mutha Fucka",
+   "uncertain": "MB 標題用簡體「大懒堂」，香港原盤封面應為繁體，依 ts5 規則掛「大懶堂」；Apple 英文標題 Lazy Clan。1999 同名 EP 不收。同日 MB 另有一個 RG『Aroom Represents』（維基記 2001），非此張。"
+  },
+  {
+   "artist": "Miss Ko 葛仲珊",
+   "album": "Knock Out 葛屁",
+   "year": 2012,
+   "label": "顏社",
+   "country": "tw",
+   "faction": "zh",
+   "genres": [
+    "hiphop"
+   ],
+   "why": "美國皇后區長大的葛仲珊在顏社出道的首張專輯，由蛋堡製作，以道地英中雙語 flow 拿下第 24 屆金曲獎最佳新人，評審稱「台灣從未有過的嘻哈女歌手」——華語女性饒舌的里程碑。",
+   "evidence": [
+    "https://en.wikipedia.org/wiki/Miss_Ko",
+    "https://zh.wikipedia.org/wiki/葛仲珊",
+    "https://en.wikipedia.org/wiki/Golden_Melody_Award_for_Best_New_Artist"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "release-group?query=artist:\"Miss Ko\" AND releasegroup:\"Knock Out\"（count=0）；artist a9400a25-2c3e-4594-95ea-79849dbd5ae7 (Miss Ko) 的 release-group 僅 皇后區的皇后、soul.food 與一首合作單曲",
+     "release-group?query=releasegroup:\"葛屁\"（count=0）"
+    ],
+    "checkedAt": "2026-10-22",
+    "conclusion": "MB 有藝人 Miss Ko 但無此 release-group"
+   },
+   "manualEvidenceUrls": [
+    "https://en.wikipedia.org/wiki/Miss_Ko",
+    "https://zh.wikipedia.org/wiki/葛仲珊",
+    "https://www.storm.mg/lifestyle/4817122"
+   ],
+   "releaseException": "",
+   "queryAlias": "葛仲珊 Miss Ko Knock Out",
+   "uncertain": "MB 無此張、Apple 台灣區搜尋不到（只見 XXXIII）、Discogs 403 未能核對；封面來源可能不佳，若補不到封面可改收 MB 已有的《皇后區的皇后》（2016，c523b264-a105-49df-8536-a916d356e6e8，金曲最佳國語女歌手入圍）。盤名寫法維基記『Knock Out 葛屁』，部分報導作『葛屁 Knock Out』。storm.mg 網址來自搜尋摘要未直接開啟。"
+  },
+  {
+   "artist": "谢帝",
+   "album": "人、社会、钱",
+   "year": 2015,
+   "label": "",
+   "country": "cn",
+   "faction": "zh",
+   "genres": [
+    "hiphop"
+   ],
+   "why": "成都 CDC 說唱會館核心人物謝帝的首張個人專輯（CD 15 首），以四川話寫街頭與社會現實，比《中國有嘻哈》早兩年確立了川渝方言饒舌的地下正統。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/ed070490-2899-45d4-ab27-2402eee048ff",
+    "https://zh.wikipedia.org/wiki/谢帝"
+   ],
+   "mbRgMbid": "ed070490-2899-45d4-ab27-2402eee048ff",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "謝帝 人社會錢 Xie Di",
+   "uncertain": "MB 未記廠牌（label 留空）；維基標題寫「人，社会，钱」（全形逗號），MB 用頓號「人、社会、钱」，照 MB。"
+  },
+  {
+   "artist": "廿四味",
+   "album": "24HERBS",
+   "year": 2008,
+   "label": "東亞唱片",
+   "country": "hk",
+   "faction": "zh",
+   "genres": [
+    "hiphop"
+   ],
+   "why": "香港嘻哈組合廿四味（24Herbs）的首張同名專輯，以粵語饒舌結合中樂與功夫片意象，主打〈Respect 就 OK〉拿下叱咤樂壇生力軍組合銅獎，是 LMF 之後香港嘻哈的第二波代表。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/d4da4824-1198-429f-9fc9-e0ca3323f063",
+    "https://zh.wikipedia.org/wiki/廿四味_(樂隊)"
+   ],
+   "mbRgMbid": "d4da4824-1198-429f-9fc9-e0ca3323f063",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "24Herbs 24味",
+   "uncertain": "MB 此 RG credit 寫「24味」、藝人主名「廿四味」；封面主文字可能是英文 24HERBS，若封面以英文為主則掛名改 24Herbs。MB release 為 2CD（9+12 首），可能是含 bonus 的版本。『中樂與功夫片意象』待研究層核實。"
+  },
+  {
+   "artist": "Drunken Tiger",
+   "album": "Year of the Tiger",
+   "year": 1999,
+   "label": "도레미레코드",
+   "country": "kr",
+   "faction": "kr",
+   "genres": [
+    "hiphop"
+   ],
+   "why": "Tiger JK 與 DJ Shine 的出道專輯，被視為韓國第一張正統嘻哈專輯，把美式 boom bap 與韓英雙語饒舌帶進 1990 年代末的韓國主流，奠定 K-hiphop 的起點。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/8d856072-67ff-33fa-8ea9-c5cd549c8a15",
+    "http://www.maniadb.com/album/121187",
+    "https://en.wikipedia.org/wiki/Drunken_Tiger"
+   ],
+   "mbRgMbid": "8d856072-67ff-33fa-8ea9-c5cd549c8a15",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "드렁큰 타이거 Year of the Tiger 1집",
+   "uncertain": "maniadb 網址為 http（MB 所附）；https 證據另有 MB 與英文維基（未直接開啟維基頁）。池中已有該團 2000 年《위대한 탄생》。"
+  },
+  {
+   "artist": "Jazzyfact",
+   "album": "Lifes Like",
+   "year": 2010,
+   "label": "Hiphop Playa",
+   "country": "kr",
+   "faction": "kr",
+   "genres": [
+    "hiphop",
+    "rnb"
+   ],
+   "why": "Beenzino 與製作人 Shimmy Twice 的雙人組唯一專輯，以爵士取樣與 Beenzino 的英韓混語 flow 定義了 2010 年代韓國地下嘻哈的美學，常列韓國嘻哈歷代名盤前段。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/48336d48-3a62-4b8f-985a-64bb97d0e906",
+    "https://en.wikipedia.org/wiki/Jazzyfact"
+   ],
+   "mbRgMbid": "48336d48-3a62-4b8f-985a-64bb97d0e906",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "재지팩트 Life's Like",
+   "uncertain": "MB 與英文維基皆寫「Lifes Like」（無撇號），照此；部分韓國資料寫 Life's Like。"
+  },
+  {
+   "artist": "Deepflow",
+   "album": "양화",
+   "year": 2015,
+   "label": "VMC",
+   "country": "kr",
+   "faction": "kr",
+   "genres": [
+    "hiphop"
+   ],
+   "why": "VMC 主腦 Deepflow 的第三張正規專輯，收錄獲韓國大眾音樂獎最佳嘻哈歌曲的〈Cut Cut Cut〉（feat. Nucksal、Huckleberry P），本人同屆獲年度音樂人，是 2010 年代韓國硬派嘻哈的代表作。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/dca05f10-c699-4a77-84ee-37a0f9ea83f0",
+    "https://en.wikipedia.org/wiki/Deepflow"
+   ],
+   "mbRgMbid": "dca05f10-c699-4a77-84ee-37a0f9ea83f0",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "딥플로우 Yanghwa",
+   "uncertain": "『獲 KMA 最佳饒舌專輯』未能證實（英文維基只列年度音樂人與最佳嘻哈歌曲），why 只寫已證實部分。"
+  },
+  {
+   "artist": "넉살",
+   "album": "작은 것들의 신",
+   "year": 2016,
+   "label": "VMC",
+   "country": "kr",
+   "faction": "kr",
+   "genres": [
+    "hiphop"
+   ],
+   "why": "VMC 饒舌手 Nucksal 的首張正規專輯，以老派敘事與幽默自嘲寫小人物生活，拿下 2017 韓國嘻哈大獎年度嘻哈專輯，是他走紅《Show Me the Money》之前的地下代表作。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/6db5607f-ba1d-4e26-a138-53a939db2739",
+    "https://en.wikipedia.org/wiki/Nucksal"
+   ],
+   "mbRgMbid": "6db5607f-ba1d-4e26-a138-53a939db2739",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Nucksal The God of Small Things",
+   "uncertain": "原考慮 KMA 獲獎的《당신께》（與樂團 Cadejo，2022），但英文維基標 EP，改收此張。掛名依 MB 韓文主名；封面主文字是否為 NUCKSAL 英文待封面確認。"
+  },
+  {
+   "artist": "Changmo",
+   "album": "Boyhood",
+   "year": 2019,
+   "label": "Ambition Musik",
+   "country": "kr",
+   "faction": "kr",
+   "genres": [
+    "hiphop"
+   ],
+   "why": "創作型饒舌手兼製作人 Changmo 的首張正規專輯，收錄獲金唱片獎最佳 R&B／嘻哈與韓國嘻哈大獎年度單曲的〈Meteor〉，入圍年度嘻哈專輯，是韓國旋律 trap 世代的標竿。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/8d55cf10-2a5d-4669-a630-4bf55dfdf860",
+    "https://en.wikipedia.org/wiki/Changmo"
+   ],
+   "mbRgMbid": "8d55cf10-2a5d-4669-a630-4bf55dfdf860",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "창모 Boyhood",
+   "uncertain": "MB 藝人主名「창모」，release credit 寫 Changmo，掛名依 credit。"
+  },
+  {
+   "artist": "pH-1",
+   "album": "HALO",
+   "year": 2019,
+   "label": "H1GHR MUSIC",
+   "country": "kr",
+   "faction": "kr",
+   "genres": [
+    "hiphop",
+    "rnb"
+   ],
+   "why": "Jay Park 旗下 H1GHR MUSIC 的紐約長大饒舌手 pH-1 的首張錄音室專輯，以溫潤的英韓雙語旋律饒舌代表 2010 年代末 K-hiphop 的 R&B 化走向。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/be6c9e39-02ff-4f1a-b8fd-5c71234a363a",
+    "https://en.wikipedia.org/wiki/PH-1_(rapper)"
+   ],
+   "mbRgMbid": "be6c9e39-02ff-4f1a-b8fd-5c71234a363a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "피에이치원 HALO",
+   "uncertain": "無重大獎項（維基只列單曲提名），收錄理由偏『世代代表』。"
+  },
+  {
+   "artist": "Beenzino",
+   "album": "NOWITZKI",
+   "year": 2023,
+   "label": "BANA",
+   "country": "kr",
+   "faction": "kr",
+   "genres": [
+    "hiphop"
+   ],
+   "why": "Beenzino 退伍後的第二張正規專輯，拿下第 21 屆韓國大眾音樂獎最佳饒舌與嘻哈專輯，延續 Jazzyfact 以來的爵士取樣與英韓混語 flow，寫成熟期的自我回顧。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/92302b5f-7df7-4ab2-9a5b-5989b4a8b3fa",
+    "https://en.wikipedia.org/wiki/21st_Korean_Music_Awards"
+   ],
+   "mbRgMbid": "92302b5f-7df7-4ab2-9a5b-5989b4a8b3fa",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "빈지노 Nowitzki",
+   "uncertain": "池中已有 Beenzino《12》（1 張），未達 2 張門檻。"
+  },
+  {
+   "artist": "The Quiett",
+   "album": "Q Train",
+   "year": 2006,
+   "label": "Soul Company",
+   "country": "kr",
+   "faction": "kr",
+   "genres": [
+    "hiphop",
+    "rnb"
+   ],
+   "why": "製作人兼饒舌手 The Quiett 的第二張專輯，以爵士與靈魂樂取樣的抒情 boom bap 成為 Soul Company 時期韓國地下嘻哈的代表聲響，後來更在 Illionaire 時期出了續作《Q Train 2》。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/da1aa6e5-75fc-4f80-a579-8f51078bce30",
+    "https://en.wikipedia.org/wiki/The_Quiett",
+    "http://www.maniadb.com/album/157701"
+   ],
+   "mbRgMbid": "da1aa6e5-75fc-4f80-a579-8f51078bce30",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "더 콰이엇 Q Train",
+   "uncertain": "英文維基記 Brownie Entertainment 發行（2006-02-07），MB 列 Mnet Media／Soul Company／Tyle Music（2006-02-03），label 取 Soul Company 待核。維基無獎項記載；『代表聲響』屬策展判斷。"
+  },
+  {
+   "artist": "Dok2",
+   "album": "Multillionaire",
+   "year": 2015,
+   "label": "Illionaire Records",
+   "country": "kr",
+   "faction": "kr",
+   "genres": [
+    "hiphop"
+   ],
+   "why": "Illionaire Records 創辦人 Dok2 在《Show Me the Money》爆紅高峰期的正規專輯，把『財富炫耀』式美式 trap 美學全面帶進韓國主流，是 Illionaire 時代的代表作。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/01437269-3f64-41c1-b92c-2abec94df84a",
+    "https://en.wikipedia.org/wiki/Dok2"
+   ],
+   "mbRgMbid": "01437269-3f64-41c1-b92c-2abec94df84a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "도끼 Multillionaire",
+   "uncertain": "評論界更常提的是 2011《Hustle Real Hard》（英文維基列為正規專輯，Hiphopplaya），但 MB 查無（artist:\"Dok2\" AND releasegroup:\"Hustle Real Hard\" count=0）、Apple 查詢失敗，故取 MB 可釘的此張；若研究層能補 Hustle Real Hard 的 Discogs／Apple 證據，可改走 §1 人工身分換掉。無獎項記載。"
+  },
+  {
+   "artist": "Khundi Panda",
+   "album": "GAROSAWK",
+   "year": 2020,
+   "label": "Dejavu Group",
+   "country": "kr",
+   "faction": "kr",
+   "genres": [
+    "hiphop"
+   ],
+   "why": "以高密度押韻著稱的 Khundi Panda 首張正規專輯，拿下韓國大眾音樂獎最佳饒舌專輯（他繼 2017 年與製作人 Viann 合作的《Reconstruction》後第二度獲此獎），是韓國 lyricist 派的當代代表。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/504010e0-3472-4333-aef4-3064a1578b95",
+    "https://en.wikipedia.org/wiki/Khundi_Panda",
+    "https://www.soompi.com/article/1132953wpp/winners-15th-korean-music-awards"
+   ],
+   "mbRgMbid": "504010e0-3472-4333-aef4-3064a1578b95",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "쿤디판다 가로사옥 Garosawk",
+   "uncertain": "《Reconstruction》（Viann X Khundi Panda，2017）MB 查無，未收；soompi 網址為該張獲獎佐證。『高密度押韻』屬一般評價，待研究層核實。"
+  }
+ ],
+ "notes": [
+  "去重：22 張皆跑 CUR-DISPATCH 去重指令，輸出 0。池中已 2 張以上而跳過：MC HotDog 熱狗(4)、大支(5+)、頑童MJ116(3)、蛋堡 Soft Lipa(2)、Leo王(6)、李英宏(2)、春艷(2)、拷秋勤(2)、Epik High(5)、Dynamic Duo(2)、가리온(2)、Verbal Jint(2)、E SENS(2)。",
+  "派工點名但未收：MC仁（MB 無任何 release-group，未找到可靠正規專輯資料）；Lee Young Ji（只有 EP《16 Fantasy》）；Jay Park（池中已有 Everything You Wanted，其餘作品非公認正典，名額讓給 Deepflow／Nucksal／The Quiett）；Keith Ape（代表作 It G Ma 為單曲）。艾福杰尼首作《五亿探长》Apple 標 EP，改收《楼兰》。",
+  "Wikimedia API 對本環境 429 限流，維基頁面改用 WebFetch 開啟核對；Apple iTunes 搜尋 API 時有空回應。WebSearch 用 5 次。",
+  "Miss Ko 為唯一 §1 人工身分（MB 有藝人無此盤），封面來源可能不佳，備案見該筆 uncertain。"
+ ]
+}

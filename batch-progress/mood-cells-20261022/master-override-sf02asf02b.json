@@ -1,0 +1,55 @@
+{
+ "drop": [
+  [
+   "姫神",
+   "遠野"
+  ]
+ ],
+ "fix": {
+  "Thee Michelle Gun Elephant|Casanova Snake": {
+   "album": "GEAR BLUES",
+   "year": 1998,
+   "label": "Triad",
+   "mbRgMbid": "5d2820d3-b82d-350f-8645-26efee20389f",
+   "why": "1998 年第三張錄音室專輯，與《Chicken Zombies》並列樂團 garage／pub rock 路線的兩個高峰，收錄〈ダニー・ゴー〉〈スモーキン・ビリー〉",
+   "evidence": [
+    "https://musicbrainz.org/release-group/5d2820d3-b82d-350f-8645-26efee20389f",
+    "https://coverartarchive.org/release-group/5d2820d3-b82d-350f-8645-26efee20389f/front"
+   ]
+  },
+  "ピューパ|えそらことば": {
+   "artist": "ピューパ!!"
+  },
+  "yuragi|Still Dreaming, Still Deafening": {
+   "artist": "揺らぎ",
+   "queryAlias": "yuragi"
+  },
+  "THE天国畑JAPON|HIGHROCKER": {
+   "artist": "THE 天国畑 JAPON",
+   "album": "BORONGE",
+   "year": 2018,
+   "label": "The Tengokubatake Japon",
+   "mbRgMbid": "",
+   "releaseException": "",
+   "uncertain": "",
+   "why": "2018 年自主發行的第三張正規專輯，收錄樂團代表曲目的錄音室版本；原策展 HIGHROCKER 在 MB 掛名 PUNK ROCKER LABOR UNION（別名企劃），主線改收本團名義正規作",
+   "mbAbsenceProof": {
+    "queries": [
+     "artist:\"Tengokubatake\"",
+     "artist:\"Tengokubatake\" AND releasegroup:\"BORONGE\""
+    ],
+    "checkedAt": "2026-10-30",
+    "conclusion": "MB 藝人只建了 2022 年 EP 與合作盤，查無 BORONGE 的 release group，以 Discogs release 15314386 與 Apple 1400033521 為身分依據"
+   },
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/release/15314386",
+    "https://music.apple.com/jp/album/boronge/1400033521"
+   ],
+   "evidence": [
+    "https://www.discogs.com/release/15314386",
+    "https://music.apple.com/jp/album/boronge/1400033521"
+   ],
+   "queryAlias": "The Tengokubatake Japon"
+  }
+ }
+}

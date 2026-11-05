@@ -1,0 +1,639 @@
+{
+ "group": "sf01b",
+ "factions": [
+  {
+   "id": "ecm-jazz",
+   "zh": "ecm-jazz",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "ca-electronic",
+   "zh": "ca-electronic",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "tw-pop",
+   "zh": "tw-pop",
+   "count": 3,
+   "why": ""
+  },
+  {
+   "id": "de-postrock",
+   "zh": "de-postrock",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "us-psych",
+   "zh": "us-psych",
+   "count": 3,
+   "why": ""
+  },
+  {
+   "id": "jp-metal",
+   "zh": "jp-metal",
+   "count": 2,
+   "why": ""
+  },
+  {
+   "id": "tw-hiphop",
+   "zh": "tw-hiphop",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "uk-grime",
+   "zh": "uk-grime",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "us-postcore",
+   "zh": "us-postcore",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "tw-folkrock",
+   "zh": "tw-folkrock",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "jp-pop",
+   "zh": "jp-pop",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "tw-indie",
+   "zh": "tw-indie",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "hk-pop",
+   "zh": "hk-pop",
+   "count": 1,
+   "why": ""
+  }
+ ],
+ "albums": [
+  {
+   "artist": "Richie Beirach",
+   "album": "Eon",
+   "year": 1975,
+   "label": "ECM",
+   "country": "us",
+   "faction": "ecm-jazz",
+   "genres": [
+    "jazz"
+   ],
+   "why": "ECM 時期 Beirach 早期獨奏／三重奏代表作，指定盤。",
+   "moodGuess": {
+    "x": 2.0,
+    "y": -0.4,
+    "z": -0.8,
+    "why": "冷調鋼琴為主，留白多、沉靜"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/a22f2e32-41a0-4501-ba0a-7493abbb0ecc",
+    "https://coverartarchive.org/release-group/a22f2e32-41a0-4501-ba0a-7493abbb0ecc/front"
+   ],
+   "spotifyName": "Richard Beirach",
+   "mbRgMbid": "a22f2e32-41a0-4501-ba0a-7493abbb0ecc",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Richard Beirach",
+   "uncertain": "Spotify 寫 Richard Beirach，池中慣用 Richie Beirach（同人）；MB 單人署名，編制（Frank Tusa 等）未逐項核"
+  },
+  {
+   "artist": "Project Pablo",
+   "album": "Hope You're Well",
+   "year": 2017,
+   "label": "Technicolour",
+   "country": "ca",
+   "faction": "ca-electronic",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Patrick Holland 的 Project Pablo 名義 2017 EP，指定盤。",
+   "moodGuess": {
+    "x": 3.2,
+    "y": 0.0,
+    "z": 0.6,
+    "why": "house／lo-fi 律動，暖而輕"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/2b32a2fa-8692-4caf-8936-40b0f9836a1a",
+    "https://coverartarchive.org/release-group/2b32a2fa-8692-4caf-8936-40b0f9836a1a/front",
+    "https://www.discogs.com/release/11023536-Project-Pablo-Hope-Youre-Well"
+   ],
+   "spotifyName": "Patrick Holland",
+   "mbRgMbid": "2b32a2fa-8692-4caf-8936-40b0f9836a1a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "EP（Spotify 掛 Patrick Holland，正式發行名義為 Project Pablo）；店主收藏指定盤",
+   "queryAlias": "Patrick Holland",
+   "uncertain": "CAA 查無封面，封面來源待用 Discogs 11023536；藝人名義需決定用 Project Pablo 或 Patrick Holland"
+  },
+  {
+   "artist": "冠宇",
+   "album": "單飛",
+   "year": 2003,
+   "label": "",
+   "country": "tw",
+   "faction": "tw-pop",
+   "genres": [
+    "pop"
+   ],
+   "why": "冠宇 2003 年個人專輯，指定盤。",
+   "moodGuess": {
+    "x": 3.2,
+    "y": -0.2,
+    "z": 0.3,
+    "why": "流行舞曲 R&B 取向"
+   },
+   "evidence": [
+    "https://music.apple.com/hk/album/id716534944",
+    "https://itunes.apple.com/lookup?id=716534944&country=HK"
+   ],
+   "spotifyName": "冠宇",
+   "mbRgMbid": "",
+   "mbAbsenceProof": "MB 查 artist:冠宇、releasegroup:單飛 皆無",
+   "manualEvidenceUrls": [
+    "https://music.apple.com/hk/album/id716534944",
+    "https://itunes.apple.com/lookup?id=716534944&country=HK"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "身分證據僅 iTunes HK（13 首，2003-09-01），第二個獨立來源未找到；曲風未核"
+  },
+  {
+   "artist": "張震嶽",
+   "album": "遠走高飛",
+   "year": 2019,
+   "label": "",
+   "country": "tw",
+   "faction": "tw-pop",
+   "genres": [
+    "pop",
+    "hiphop"
+   ],
+   "why": "張震嶽 2019 EP，指定盤。",
+   "moodGuess": {
+    "x": 2.8,
+    "y": 0.2,
+    "z": 0.6,
+    "why": "民謠嘻哈取向，鬆弛"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/cb36b269-4600-45f5-b6cd-6d52e3bcb9d3",
+    "https://coverartarchive.org/release-group/cb36b269-4600-45f5-b6cd-6d52e3bcb9d3/front",
+    "https://music.apple.com/tw/album/id1482092776"
+   ],
+   "spotifyName": "Zhang Zhen Yue",
+   "mbRgMbid": "cb36b269-4600-45f5-b6cd-6d52e3bcb9d3",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "EP（5 首）；店主收藏指定盤",
+   "queryAlias": "",
+   "uncertain": "曲風為推測"
+  },
+  {
+   "artist": "My Sleeping Karma",
+   "album": "Moksha",
+   "year": 2015,
+   "label": "Napalm Records",
+   "country": "de",
+   "faction": "de-postrock",
+   "genres": [
+    "rock"
+   ],
+   "why": "德國器樂迷幻／太空搖滾樂團 2015 專輯，指定盤。",
+   "moodGuess": {
+    "x": 2.8,
+    "y": 0.4,
+    "z": 0.2,
+    "why": "器樂迷幻 riff，緩慢堆疊"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/802cf4e2-840c-46fd-80f0-348c623a1360",
+    "https://coverartarchive.org/release-group/802cf4e2-840c-46fd-80f0-348c623a1360/front"
+   ],
+   "spotifyName": "My Sleeping Karma",
+   "mbRgMbid": "802cf4e2-840c-46fd-80f0-348c623a1360",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Bardo Pond",
+   "album": "Amanita",
+   "year": 1996,
+   "label": "Matador",
+   "country": "us",
+   "faction": "us-psych",
+   "genres": [
+    "rock"
+   ],
+   "why": "費城迷幻搖滾 Bardo Pond 早期專輯，指定盤。",
+   "moodGuess": {
+    "x": 3.0,
+    "y": 1.2,
+    "z": -0.2,
+    "why": "厚重失真 drone 噪牆"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/4c85e616-2122-3a74-bb24-47dc468f2f00",
+    "https://coverartarchive.org/release-group/4c85e616-2122-3a74-bb24-47dc468f2f00/front"
+   ],
+   "spotifyName": "Bardo Pond",
+   "mbRgMbid": "4c85e616-2122-3a74-bb24-47dc468f2f00",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Amanita 首發為 Matador 1996，label 未逐項核"
+  },
+  {
+   "artist": "人間椅子",
+   "album": "頽廃芸術展",
+   "year": 1998,
+   "label": "",
+   "country": "jp",
+   "faction": "jp-metal",
+   "genres": [
+    "rock"
+   ],
+   "why": "日本重金屬／昭和怪奇名團，指定盤。",
+   "moodGuess": {
+    "x": 4.0,
+    "y": 1.4,
+    "z": 0.0,
+    "why": "重 riff 昭和怪奇金屬"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/9105da20-2452-46a3-aab9-ec5ed04dc418",
+    "https://coverartarchive.org/release-group/9105da20-2452-46a3-aab9-ec5ed04dc418/front",
+    "https://music.apple.com/jp/album/id1880369527"
+   ],
+   "spotifyName": "Ningen Isu",
+   "mbRgMbid": "9105da20-2452-46a3-aab9-ec5ed04dc418",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "人間椅子",
+   "album": "怪人二十面相",
+   "year": 2000,
+   "label": "",
+   "country": "jp",
+   "faction": "jp-metal",
+   "genres": [
+    "rock"
+   ],
+   "why": "人間椅子 2000 專輯，指定盤。",
+   "moodGuess": {
+    "x": 4.0,
+    "y": 1.4,
+    "z": 0.0,
+    "why": "重 riff 昭和怪奇金屬"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/e9d96a12-2c0d-4005-a57d-434c32bcaaf2",
+    "https://coverartarchive.org/release-group/e9d96a12-2c0d-4005-a57d-434c32bcaaf2/front"
+   ],
+   "spotifyName": "Ningen Isu",
+   "mbRgMbid": "e9d96a12-2c0d-4005-a57d-434c32bcaaf2",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Bardo Pond",
+   "album": "Selections: Volumes I-IV",
+   "year": 2005,
+   "label": "",
+   "country": "us",
+   "faction": "us-psych",
+   "genres": [
+    "rock"
+   ],
+   "why": "Bardo Pond 歷年單曲／EP 精選，指定盤。",
+   "moodGuess": {
+    "x": 3.0,
+    "y": 1.2,
+    "z": -0.2,
+    "why": "厚重失真 drone 噪牆"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/fbb56bbb-efbf-32c8-9bf5-aed821cb1d37",
+    "https://coverartarchive.org/release-group/fbb56bbb-efbf-32c8-9bf5-aed821cb1d37/front"
+   ],
+   "spotifyName": "Bardo Pond",
+   "mbRgMbid": "fbb56bbb-efbf-32c8-9bf5-aed821cb1d37",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "compilation（Selections: Volumes 1-4）；店主收藏指定盤",
+   "queryAlias": "Selections: Volumes 1-4",
+   "uncertain": ""
+  },
+  {
+   "artist": "Bardo Pond, Acid Mothers Temple & Guru Guru",
+   "album": "Acid Guru Pond",
+   "year": 2016,
+   "label": "",
+   "country": "us",
+   "faction": "us-psych",
+   "genres": [
+    "rock"
+   ],
+   "why": "三團合作 LP，指定盤。",
+   "moodGuess": {
+    "x": 3.3,
+    "y": 1.2,
+    "z": -0.2,
+    "why": "長篇迷幻噪搖合奏"
+   },
+   "evidence": [
+    "https://www.discogs.com/release/8397802-Bardo-Pond-Acid-Mothers-Temple-Guru-Guru-Acid-Guru-Pond",
+    "https://www.discogs.com/release/8496250-Bardo-Pond-Acid-Guru-Pond"
+   ],
+   "spotifyName": "Bardo Pond",
+   "mbRgMbid": "",
+   "mbAbsenceProof": "MB 查 releasegroup:Acid Guru 無結果",
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/release/8397802-Bardo-Pond-Acid-Mothers-Temple-Guru-Guru-Acid-Guru-Pond",
+    "https://www.discogs.com/release/8496250-Bardo-Pond-Acid-Guru-Pond"
+   ],
+   "releaseException": "三團合作盤（Bardo Pond / Acid Mothers Temple / Guru Guru）；店主收藏指定盤",
+   "queryAlias": "Bardo Pond",
+   "uncertain": "Spotify 掛 Bardo Pond；藝人署名要用哪種寫法待主線定；封面用 Discogs"
+  },
+  {
+   "artist": "Juzzy Orange & GoodieK",
+   "album": "沒有靈魂的工程師",
+   "year": 2015,
+   "label": "",
+   "country": "tw",
+   "faction": "tw-hiphop",
+   "genres": [
+    "hiphop"
+   ],
+   "why": "汁橙音樂 Juzzy Orange 與 GoodieK 合作專輯，指定盤。",
+   "moodGuess": {
+    "x": 3.3,
+    "y": 0.3,
+    "z": 0.2,
+    "why": "都會嘻哈節奏"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/4a997d6f-0369-413a-8dfc-2b6ef7fca640",
+    "https://coverartarchive.org/release-group/4a997d6f-0369-413a-8dfc-2b6ef7fca640/front"
+   ],
+   "spotifyName": "Juzzy Orange Presents GoodieK",
+   "mbRgMbid": "4a997d6f-0369-413a-8dfc-2b6ef7fca640",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "A Soulless Engineer",
+   "uncertain": "MB 署名 Juzzy Orange, GoodieK；汁橙音樂為台灣製作人集團"
+  },
+  {
+   "artist": "Smasher",
+   "album": "So High",
+   "year": 2017,
+   "label": "On Top Records",
+   "country": "gb",
+   "faction": "uk-grime",
+   "genres": [
+    "electronic"
+   ],
+   "why": "英國 Smasher 2017 單曲，指定盤。",
+   "moodGuess": {
+    "x": 3.8,
+    "y": 0.8,
+    "z": -0.2,
+    "why": "grime／UK garage 節拍"
+   },
+   "evidence": [
+    "https://www.discogs.com/release/16198751-Smasher-So-High",
+    "https://music.apple.com/us/album/id1268940615"
+   ],
+   "spotifyName": "Smasher",
+   "mbRgMbid": "",
+   "mbAbsenceProof": "MB 查 artist:Smasher AND So High 無結果",
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/release/16198751-Smasher-So-High",
+    "https://music.apple.com/us/album/id1268940615"
+   ],
+   "releaseException": "single（1 首）；店主收藏指定盤",
+   "queryAlias": "",
+   "uncertain": "身分（英國 grime 製作人）為與 Spotify 名單的推定，無法確認；若是單曲建議主線決定是否放行"
+  },
+  {
+   "artist": "蕭亞軒",
+   "album": "蕭亞軒",
+   "year": 1999,
+   "label": "Virgin",
+   "country": "tw",
+   "faction": "tw-pop",
+   "genres": [
+    "pop"
+   ],
+   "why": "蕭亞軒首張同名專輯，Spotify 「蕭亞軒--」還原判斷。",
+   "moodGuess": {
+    "x": 3.5,
+    "y": 0.0,
+    "z": 0.4,
+    "why": "Mandopop 舞曲 R&B"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/0e2f8f9f-c0dc-4efa-b2a4-cc995f2a70d4",
+    "https://coverartarchive.org/release-group/0e2f8f9f-c0dc-4efa-b2a4-cc995f2a70d4/front",
+    "https://music.apple.com/tw/album/id905208168"
+   ],
+   "spotifyName": "Elva Hsiao",
+   "mbRgMbid": "0e2f8f9f-c0dc-4efa-b2a4-cc995f2a70d4",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "蕭亞軒同名專輯 Elva First Album",
+   "uncertain": "「蕭亞軒--」無法在 MB／iTunes／維基找到同名，推定為 1999 首張同名專輯；非確定"
+  },
+  {
+   "artist": "Drive Like Jehu",
+   "album": "Yank Crime",
+   "year": 1994,
+   "label": "Interscope",
+   "country": "us",
+   "faction": "us-postcore",
+   "genres": [
+    "rock"
+   ],
+   "why": "聖地牙哥後硬核名盤，指定盤。",
+   "moodGuess": {
+    "x": 4.3,
+    "y": 1.0,
+    "z": -0.8,
+    "why": "尖銳吉他、緊繃推進"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/532210d8-5101-3893-a2bb-f9cd8df6e303",
+    "https://coverartarchive.org/release-group/532210d8-5101-3893-a2bb-f9cd8df6e303/front",
+    "https://music.apple.com/us/album/id321075318"
+   ],
+   "spotifyName": "Drive Like Jehu",
+   "mbRgMbid": "532210d8-5101-3893-a2bb-f9cd8df6e303",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "青春大衛",
+   "album": "第一到六天",
+   "year": 2014,
+   "label": "禾廣",
+   "country": "tw",
+   "faction": "tw-folkrock",
+   "genres": [
+    "rock",
+    "folk"
+   ],
+   "why": "青春大衛首張創作專輯，指定盤。",
+   "moodGuess": {
+    "x": 2.8,
+    "y": 0.0,
+    "z": 0.5,
+    "why": "民謠搖滾，洋蔥系"
+   },
+   "evidence": [
+    "https://streetvoice.com/young_david/songs/album/93025462/",
+    "https://www.kkbox.com/tw/tc/album/ZgQBUmIO2BziTB0FGC.q0091-index.html",
+    "https://open.spotify.com/album/6FMzds4NCCuztnmwjvLXXl"
+   ],
+   "spotifyName": "Young David",
+   "mbRgMbid": "",
+   "mbAbsenceProof": "MB 查 Young David／青春大衛 無此盤",
+   "manualEvidenceUrls": [
+    "https://streetvoice.com/young_david/songs/album/93025462/",
+    "https://www.kkbox.com/tw/tc/album/ZgQBUmIO2BziTB0FGC.q0091-index.html"
+   ],
+   "releaseException": "",
+   "queryAlias": "Young David",
+   "uncertain": "封面僅 StreetVoice／KKBOX／Spotify，Apple／CAA／Discogs／Bandcamp 未找到"
+  },
+  {
+   "artist": "椎名林檎",
+   "album": "唄ひ手冥利〜其ノ壱〜",
+   "year": 2002,
+   "label": "EMI",
+   "country": "jp",
+   "faction": "jp-pop",
+   "genres": [
+    "rock",
+    "pop"
+   ],
+   "why": "椎名林檎翻唱專輯，指定盤。",
+   "moodGuess": {
+    "x": 3.3,
+    "y": 0.4,
+    "z": 0.2,
+    "why": "翻唱流行曲，編制多元"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/fb5964c9-f11d-45aa-9a23-286d545ae778",
+    "https://coverartarchive.org/release-group/fb5964c9-f11d-45aa-9a23-286d545ae778/front",
+    "https://music.apple.com/jp/album/id1385312220"
+   ],
+   "spotifyName": "Sheena Ringo",
+   "mbRgMbid": "fb5964c9-f11d-45aa-9a23-286d545ae778",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "covers（翻唱輯）；店主收藏指定盤",
+   "queryAlias": "唄ひ手冥利 〜其の壱〜",
+   "uncertain": ""
+  },
+  {
+   "artist": "烏賊紳士",
+   "album": "狗",
+   "year": 2016,
+   "label": "禾廣",
+   "country": "tw",
+   "faction": "tw-indie",
+   "genres": [
+    "rock"
+   ],
+   "why": "台南後龐克樂團首張專輯，指定盤。",
+   "moodGuess": {
+    "x": 3.6,
+    "y": 0.5,
+    "z": -0.5,
+    "why": "後龐克、緊繃"
+   },
+   "evidence": [
+    "https://music.apple.com/tw/album/id1579263280",
+    "https://www.books.com.tw/products/0020192414",
+    "https://streetvoice.com/gentlesquid/"
+   ],
+   "spotifyName": "烏賊紳士",
+   "mbRgMbid": "",
+   "mbAbsenceProof": "MB 查 artist:烏賊紳士／Gentle Squid 無結果",
+   "manualEvidenceUrls": [
+    "https://www.books.com.tw/products/0020192414",
+    "https://streetvoice.com/gentlesquid/"
+   ],
+   "releaseException": "mini album（7 首）；店主收藏指定盤",
+   "queryAlias": "",
+   "uncertain": "曲風為搜尋摘要推定"
+  },
+  {
+   "artist": "陳奕迅",
+   "album": "?",
+   "year": 2011,
+   "label": "",
+   "country": "hk",
+   "faction": "hk-pop",
+   "genres": [
+    "pop"
+   ],
+   "why": "陳奕迅 2011 國語專輯《？》，指定盤。",
+   "moodGuess": {
+    "x": 2.8,
+    "y": 0.0,
+    "z": 0.3,
+    "why": "國語流行抒情"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/f9a5860a-dd8d-4d9e-9f74-f8a29a2f250f",
+    "https://coverartarchive.org/release-group/f9a5860a-dd8d-4d9e-9f74-f8a29a2f250f/front"
+   ],
+   "spotifyName": "Eason Chan",
+   "mbRgMbid": "f9a5860a-dd8d-4d9e-9f74-f8a29a2f250f",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "？",
+   "uncertain": "MB 拼寫 ?，正式寫法可能為全形《？》，主線決定"
+  }
+ ],
+ "notes": [
+  "跳過：Sheena Ringo《無罪モラトリアム》→ 池中已有 椎名林檎｜無罪モラトリアム（同盤）",
+  "sf01 指定盤原則：不換，EP／合輯／翻唱照收並註 releaseException",
+  "全 19 張已交代：18 張收錄、1 張跳過",
+  "身分：Zhang Zhen Yue＝張震嶽；Young David＝青春大衛；烏賊紳士＝Gentle Squid；Juzzy Orange＝汁橙音樂；Patrick Holland 這張實為 Project Pablo 名義"
+ ]
+}

@@ -1,251 +1,633 @@
 {
- "產出日期": "2026-10-14",
+ "產出日期": "2026-11-05",
  "minNode": 20,
  "genres": [
   {
    "id": "rock",
    "zh": "搖滾",
-   "count": 4614,
+   "count": 5505,
    "children": [
     {
-     "id": "indie-alt",
-     "zh": "獨立另類",
-     "count": 938,
-     "children": []
-    },
-    {
-     "id": "punk-wave",
-     "zh": "龐克新浪潮",
-     "count": 891,
+     "id": "jrock-asia",
+     "zh": "日亞搖滾",
+     "count": 1074,
      "children": [
       {
-       "id": "punk",
-       "zh": "龐克硬蕊",
-       "count": 452
+       "id": "jp",
+       "zh": "日本",
+       "count": 327
       },
       {
-       "id": "post-punk",
-       "zh": "後龐克",
-       "count": 330
+       "id": "tw",
+       "zh": "台灣",
+       "count": 303
       },
       {
-       "id": "new-wave",
-       "zh": "新浪潮",
-       "count": 232
+       "id": "cn",
+       "zh": "中國",
+       "count": 60
       },
       {
-       "id": "no-wave",
-       "zh": "No Wave",
-       "count": 85
+       "id": "th",
+       "zh": "泰國",
+       "count": 57
       },
       {
-       "id": "goth",
-       "zh": "哥德暗潮",
-       "count": 52
+       "id": "vn",
+       "zh": "越南",
+       "count": 56
       },
       {
-       "id": "industrial",
-       "zh": "工業",
-       "count": 33
+       "id": "kr",
+       "zh": "韓國",
+       "count": 54
+      },
+      {
+       "id": "sg",
+       "zh": "新加坡",
+       "count": 54
+      },
+      {
+       "id": "mn",
+       "zh": "蒙古",
+       "count": 43
+      },
+      {
+       "id": "id",
+       "zh": "印尼",
+       "count": 36
+      },
+      {
+       "id": "hk",
+       "zh": "香港",
+       "count": 24
+      },
+      {
+       "id": "ph",
+       "zh": "菲律賓",
+       "count": 20
+      },
+      {
+       "id": "my",
+       "zh": "馬來西亞",
+       "count": 15
+      },
+      {
+       "id": "pk",
+       "zh": "巴基斯坦",
+       "count": 8
+      },
+      {
+       "id": "in",
+       "zh": "印度",
+       "count": 7
+      },
+      {
+       "id": "kh",
+       "zh": "柬埔寨",
+       "count": 5
+      },
+      {
+       "id": "bd",
+       "zh": "孟加拉",
+       "count": 2
+      },
+      {
+       "id": "np",
+       "zh": "尼泊爾",
+       "count": 2
       }
      ]
     },
     {
-     "id": "psych-prog",
-     "zh": "迷幻前衛",
-     "count": 663,
+     "id": "punk-wave",
+     "zh": "龐克新浪潮",
+     "count": 1048,
      "children": [
       {
-       "id": "prog",
-       "zh": "前衛搖滾",
-       "count": 344
+       "id": "punk",
+       "zh": "龐克",
+       "count": 458
       },
       {
-       "id": "psych",
-       "zh": "迷幻搖滾",
-       "count": 278
+       "id": "post-punk",
+       "zh": "後龐克",
+       "count": 373
       },
       {
-       "id": "art-rock",
-       "zh": "藝術搖滾",
-       "count": 95
+       "id": "new-wave",
+       "zh": "新浪潮",
+       "count": 246
       },
       {
-       "id": "krautrock",
-       "zh": "Krautrock",
-       "count": 50
+       "id": "hardcore",
+       "zh": "硬蕊",
+       "count": 203
       },
       {
-       "id": "space-rock",
-       "zh": "太空搖滾",
-       "count": 34
+       "id": "no-wave",
+       "zh": "No Wave",
+       "count": 118
+      },
+      {
+       "id": "goth",
+       "zh": "哥德暗潮",
+       "count": 96
+      },
+      {
+       "id": "pop-punk",
+       "zh": "Pop Punk / Emo",
+       "count": 92
+      },
+      {
+       "id": "garage",
+       "zh": "車庫與原型龐克",
+       "count": 54
+      },
+      {
+       "id": "industrial",
+       "zh": "工業",
+       "count": 37
+      }
+     ]
+    },
+    {
+     "id": "indie-alt",
+     "zh": "獨立另類",
+     "count": 1040,
+     "children": [
+      {
+       "id": "indie-rock",
+       "zh": "獨立搖滾",
+       "count": 520
+      },
+      {
+       "id": "alt-rock",
+       "zh": "另類搖滾與油漬",
+       "count": 484
+      },
+      {
+       "id": "indie-pop",
+       "zh": "獨立流行",
+       "count": 293
+      },
+      {
+       "id": "art-exp",
+       "zh": "藝術與實驗",
+       "count": 161
+      },
+      {
+       "id": "folk-side",
+       "zh": "民謠與創作歌手",
+       "count": 155
+      },
+      {
+       "id": "emo",
+       "zh": "Emo / 後硬蕊",
+       "count": 98
+      },
+      {
+       "id": "neo-psych",
+       "zh": "新迷幻",
+       "count": 86
+      },
+      {
+       "id": "britpop",
+       "zh": "Britpop",
+       "count": 85
+      },
+      {
+       "id": "lo-fi",
+       "zh": "Lo-fi",
+       "count": 83
       }
      ]
     },
     {
      "id": "metal",
      "zh": "金屬",
-     "count": 611,
+     "count": 821,
      "children": [
       {
        "id": "trad",
        "zh": "傳統重金屬",
-       "count": 217
+       "count": 261
       },
       {
        "id": "alt-metal",
        "zh": "另類與新金屬",
-       "count": 169
-      },
-      {
-       "id": "death",
-       "zh": "死亡金屬",
-       "count": 120
-      },
-      {
-       "id": "thrash",
-       "zh": "鞭擊",
-       "count": 119
-      },
-      {
-       "id": "prog-metal",
-       "zh": "前衛與技術",
-       "count": 113
+       "count": 203
       },
       {
        "id": "doom",
        "zh": "厄運與粗厚",
-       "count": 93
+       "count": 191
+      },
+      {
+       "id": "death",
+       "zh": "死亡金屬",
+       "count": 159
+      },
+      {
+       "id": "thrash",
+       "zh": "鞭擊",
+       "count": 138
+      },
+      {
+       "id": "prog-metal",
+       "zh": "前衛與技術",
+       "count": 129
       },
       {
        "id": "black",
        "zh": "黑金屬",
-       "count": 78
+       "count": 106
+      }
+     ]
+    },
+    {
+     "id": "psych-prog",
+     "zh": "迷幻前衛",
+     "count": 760,
+     "children": [
+      {
+       "id": "prog",
+       "zh": "前衛搖滾",
+       "count": 380
+      },
+      {
+       "id": "psych",
+       "zh": "迷幻搖滾",
+       "count": 329
+      },
+      {
+       "id": "art-rock",
+       "zh": "藝術搖滾",
+       "count": 105
+      },
+      {
+       "id": "symphonic",
+       "zh": "交響前衛",
+       "count": 71
+      },
+      {
+       "id": "krautrock",
+       "zh": "Krautrock",
+       "count": 57
+      },
+      {
+       "id": "space-rock",
+       "zh": "太空搖滾",
+       "count": 41
       }
      ]
     },
     {
      "id": "classic",
      "zh": "老搖滾",
-     "count": 573,
-     "children": []
-    },
-    {
-     "id": "jrock-asia",
-     "zh": "日亞搖滾",
-     "count": 372,
-     "children": []
+     "count": 621,
+     "children": [
+      {
+       "id": "50s",
+       "zh": "50 年代",
+       "count": 25
+      },
+      {
+       "id": "60s",
+       "zh": "60 年代",
+       "count": 95
+      },
+      {
+       "id": "70s",
+       "zh": "70 年代",
+       "count": 308
+      },
+      {
+       "id": "80s",
+       "zh": "80 年代",
+       "count": 98
+      },
+      {
+       "id": "later",
+       "zh": "90 年代之後",
+       "count": 76
+      }
+     ]
     },
     {
      "id": "dream-post",
      "zh": "音牆後搖",
-     "count": 206,
+     "count": 401,
      "children": [
       {
        "id": "post-rock",
        "zh": "後搖滾",
-       "count": 95
+       "count": 190
       },
       {
        "id": "shoegaze",
        "zh": "瞪鞋",
-       "count": 88
+       "count": 176
       },
       {
        "id": "dream-pop",
        "zh": "夢幻流行",
-       "count": 74
+       "count": 155
       },
       {
        "id": "slowcore",
        "zh": "慢核",
-       "count": 30
+       "count": 63
       }
      ]
     },
     {
      "id": "roots-other",
      "zh": "根源其他",
-     "count": 192,
-     "children": []
+     "count": 194,
+     "children": [
+      {
+       "id": "roots",
+       "zh": "根源與藍調搖滾",
+       "count": 57
+      },
+      {
+       "id": "soft-rock",
+       "zh": "軟搖滾 / AOR",
+       "count": 54
+      }
+     ]
     }
    ]
   },
   {
    "id": "jazz",
    "zh": "爵士",
-   "count": 4672,
+   "count": 5208,
    "children": [
     {
      "id": "bop",
      "zh": "Bebop / Hard Bop",
-     "count": 1415,
-     "children": []
-    },
-    {
-     "id": "fusion",
-     "zh": "Fusion / Jazz-Funk",
-     "count": 868,
-     "children": []
-    },
-    {
-     "id": "contemporary",
-     "zh": "當代與 Nu Jazz",
-     "count": 749,
-     "children": []
+     "count": 1472,
+     "children": [
+      {
+       "id": "hard-bop",
+       "zh": "Hard Bop",
+       "count": 437
+      },
+      {
+       "id": "post-bop",
+       "zh": "Post-Bop / 現代爵士",
+       "count": 405
+      },
+      {
+       "id": "bebop",
+       "zh": "Bebop",
+       "count": 392
+      },
+      {
+       "id": "piano",
+       "zh": "鋼琴",
+       "count": 206
+      },
+      {
+       "id": "sax",
+       "zh": "薩克斯風",
+       "count": 120
+      },
+      {
+       "id": "blue-note",
+       "zh": "Blue Note 廠牌",
+       "count": 38
+      }
+     ]
     },
     {
      "id": "free",
      "zh": "自由與前衛",
-     "count": 732,
-     "children": []
+     "count": 1048,
+     "children": [
+      {
+       "id": "avant",
+       "zh": "前衛與 New Thing",
+       "count": 539
+      },
+      {
+       "id": "free-improv",
+       "zh": "自由即興",
+       "count": 241
+      },
+      {
+       "id": "post-bop",
+       "zh": "偏 Post-Bop",
+       "count": 151
+      },
+      {
+       "id": "fusion",
+       "zh": "偏 Fusion",
+       "count": 87
+      },
+      {
+       "id": "euro",
+       "zh": "歐陸自由爵士",
+       "count": 69
+      },
+      {
+       "id": "spiritual",
+       "zh": "靈性與 Modal",
+       "count": 64
+      }
+     ]
+    },
+    {
+     "id": "fusion",
+     "zh": "Fusion / Jazz-Funk",
+     "count": 963,
+     "children": [
+      {
+       "id": "jazz-funk",
+       "zh": "Jazz-Funk",
+       "count": 261
+      },
+      {
+       "id": "smooth",
+       "zh": "Smooth / 當代",
+       "count": 168
+      },
+      {
+       "id": "jazz-rock",
+       "zh": "Jazz-Rock",
+       "count": 104
+      },
+      {
+       "id": "acid-nu",
+       "zh": "Acid / Nu Jazz",
+       "count": 81
+      },
+      {
+       "id": "japan",
+       "zh": "日本 Fusion",
+       "count": 78
+      },
+      {
+       "id": "latin",
+       "zh": "拉丁與非洲",
+       "count": 45
+      },
+      {
+       "id": "guitar",
+       "zh": "吉他",
+       "count": 42
+      }
+     ]
+    },
+    {
+     "id": "contemporary",
+     "zh": "當代與 Nu Jazz",
+     "count": 874,
+     "children": [
+      {
+       "id": "nu-jazz",
+       "zh": "Nu / Acid Jazz",
+       "count": 292
+      },
+      {
+       "id": "smooth",
+       "zh": "Smooth / Lounge",
+       "count": 261
+      },
+      {
+       "id": "post-bop",
+       "zh": "偏 Post-Bop",
+       "count": 163
+      },
+      {
+       "id": "free",
+       "zh": "偏前衛",
+       "count": 121
+      },
+      {
+       "id": "piano",
+       "zh": "鋼琴",
+       "count": 112
+      },
+      {
+       "id": "euro",
+       "zh": "ECM / 歐陸",
+       "count": 94
+      },
+      {
+       "id": "vocal",
+       "zh": "人聲",
+       "count": 73
+      },
+      {
+       "id": "world",
+       "zh": "世界與靈性",
+       "count": 66
+      }
+     ]
     },
     {
      "id": "vocal",
      "zh": "人聲爵士",
-     "count": 361,
+     "count": 380,
      "children": []
     },
     {
      "id": "swing",
      "zh": "Swing / 大樂團",
-     "count": 278,
-     "children": []
+     "count": 300,
+     "children": [
+      {
+       "id": "big-band",
+       "zh": "大樂團",
+       "count": 94
+      },
+      {
+       "id": "vocal",
+       "zh": "人聲與標準曲",
+       "count": 76
+      },
+      {
+       "id": "piano",
+       "zh": "鋼琴",
+       "count": 41
+      },
+      {
+       "id": "dixieland",
+       "zh": "Dixieland / 紐奧良",
+       "count": 34
+      }
+     ]
     },
     {
      "id": "soul-jazz",
      "zh": "Soul Jazz / 管風琴",
-     "count": 219,
-     "children": []
+     "count": 220,
+     "children": [
+      {
+       "id": "groove",
+       "zh": "Groove / Jazz-Funk",
+       "count": 78
+      },
+      {
+       "id": "organ",
+       "zh": "管風琴",
+       "count": 24
+      }
+     ]
     },
     {
      "id": "modal",
      "zh": "Modal / 靈性爵士",
-     "count": 187,
-     "children": []
+     "count": 197,
+     "children": [
+      {
+       "id": "modal",
+       "zh": "Modal",
+       "count": 94
+      },
+      {
+       "id": "spiritual",
+       "zh": "靈性爵士",
+       "count": 84
+      }
+     ]
     },
     {
      "id": "cool",
      "zh": "Cool / 西岸",
-     "count": 180,
+     "count": 189,
      "children": []
     },
     {
      "id": "latin",
      "zh": "拉丁與巴莎",
-     "count": 160,
-     "children": []
+     "count": 165,
+     "children": [
+      {
+       "id": "afro-cuban",
+       "zh": "Afro-Cuban / 拉丁",
+       "count": 82
+      },
+      {
+       "id": "bossa",
+       "zh": "Bossa / 巴西",
+       "count": 81
+      }
+     ]
     },
     {
      "id": "ecm",
      "zh": "ECM / 歐陸",
-     "count": 114,
+     "count": 126,
      "children": []
     },
     {
      "id": "jp-jazz",
      "zh": "日本爵士",
-     "count": 22,
+     "count": 23,
      "children": []
     }
    ]
@@ -253,72 +635,368 @@
   {
    "id": "electronic",
    "zh": "電子",
-   "count": 1955,
+   "count": 3032,
    "children": [
     {
      "id": "ambient",
      "zh": "Ambient / Drone",
-     "count": 738,
-     "children": []
+     "count": 1466,
+     "children": [
+      {
+       "id": "drone",
+       "zh": "Drone",
+       "count": 417
+      },
+      {
+       "id": "dark-ambient",
+       "zh": "Dark Ambient",
+       "count": 413
+      },
+      {
+       "id": "idm",
+       "zh": "偏 IDM",
+       "count": 281
+      },
+      {
+       "id": "ambient-techno",
+       "zh": "Ambient Techno / Dub",
+       "count": 185
+      },
+      {
+       "id": "neoclassical",
+       "zh": "偏現代古典",
+       "count": 107
+      },
+      {
+       "id": "new-age",
+       "zh": "New Age",
+       "count": 63
+      }
+     ]
     },
     {
      "id": "techno",
      "zh": "Techno",
-     "count": 492,
-     "children": []
+     "count": 716,
+     "children": [
+      {
+       "id": "minimal",
+       "zh": "Minimal",
+       "count": 342
+      },
+      {
+       "id": "ambient-techno",
+       "zh": "Ambient Techno",
+       "count": 316
+      },
+      {
+       "id": "detroit",
+       "zh": "Detroit",
+       "count": 102
+      },
+      {
+       "id": "electro",
+       "zh": "Electro",
+       "count": 97
+      },
+      {
+       "id": "dub-techno",
+       "zh": "Dub Techno",
+       "count": 85
+      },
+      {
+       "id": "hard",
+       "zh": "Hard / Rave / Industrial",
+       "count": 60
+      },
+      {
+       "id": "tech-house",
+       "zh": "Tech House",
+       "count": 46
+      },
+      {
+       "id": "acid",
+       "zh": "Acid",
+       "count": 35
+      }
+     ]
     },
     {
      "id": "downtempo",
      "zh": "Trip-hop / Downtempo",
-     "count": 372,
-     "children": []
+     "count": 524,
+     "children": [
+      {
+       "id": "chillout",
+       "zh": "Chillout / Lounge",
+       "count": 289
+      },
+      {
+       "id": "ambient",
+       "zh": "偏 Ambient",
+       "count": 256
+      },
+      {
+       "id": "trip-hop",
+       "zh": "Trip-hop",
+       "count": 184
+      },
+      {
+       "id": "nu-jazz",
+       "zh": "Nu Jazz / Acid Jazz",
+       "count": 53
+      },
+      {
+       "id": "beats",
+       "zh": "Instrumental Hip-hop / Beats",
+       "count": 51
+      },
+      {
+       "id": "chillwave",
+       "zh": "Chillwave / Synthwave",
+       "count": 40
+      },
+      {
+       "id": "folktronica",
+       "zh": "Folktronica / Indietronica",
+       "count": 39
+      }
+     ]
     },
     {
      "id": "synth",
      "zh": "Synthpop / Electro",
-     "count": 353,
-     "children": []
+     "count": 486,
+     "children": [
+      {
+       "id": "synthpop",
+       "zh": "Synthpop",
+       "count": 227
+      },
+      {
+       "id": "electro",
+       "zh": "Electro / Electroclash",
+       "count": 216
+      },
+      {
+       "id": "techno",
+       "zh": "偏 Techno",
+       "count": 142
+      },
+      {
+       "id": "electropop",
+       "zh": "Electropop / Dance",
+       "count": 100
+      },
+      {
+       "id": "new-wave",
+       "zh": "New Wave",
+       "count": 81
+      },
+      {
+       "id": "indietronica",
+       "zh": "Indietronica",
+       "count": 58
+      },
+      {
+       "id": "synthwave",
+       "zh": "Synthwave / Italo",
+       "count": 30
+      }
+     ]
     },
     {
      "id": "idm",
      "zh": "IDM / Glitch",
-     "count": 348,
-     "children": []
+     "count": 479,
+     "children": [
+      {
+       "id": "ambient-idm",
+       "zh": "Ambient IDM",
+       "count": 273
+      },
+      {
+       "id": "glitch",
+       "zh": "Glitch / Microsound",
+       "count": 201
+      },
+      {
+       "id": "warp",
+       "zh": "Warp / Braindance",
+       "count": 41
+      },
+      {
+       "id": "glitch-hop",
+       "zh": "Glitch Hop / Folktronica",
+       "count": 29
+      },
+      {
+       "id": "breakcore",
+       "zh": "Breakcore / Drill n Bass",
+       "count": 23
+      }
+     ]
     },
     {
      "id": "house",
      "zh": "House",
-     "count": 347,
-     "children": []
+     "count": 377,
+     "children": [
+      {
+       "id": "deep",
+       "zh": "Deep House",
+       "count": 103
+      },
+      {
+       "id": "tech",
+       "zh": "Tech House",
+       "count": 67
+      },
+      {
+       "id": "progressive",
+       "zh": "Progressive / Electro House",
+       "count": 53
+      },
+      {
+       "id": "acid",
+       "zh": "Acid House",
+       "count": 45
+      },
+      {
+       "id": "detroit",
+       "zh": "Detroit",
+       "count": 43
+      },
+      {
+       "id": "chicago",
+       "zh": "Chicago",
+       "count": 41
+      },
+      {
+       "id": "french",
+       "zh": "French / Disco House",
+       "count": 31
+      },
+      {
+       "id": "garage",
+       "zh": "UK Garage",
+       "count": 26
+      }
+     ]
     },
     {
      "id": "bass",
      "zh": "Dub / Bass",
-     "count": 244,
-     "children": []
-    },
-    {
-     "id": "industrial",
-     "zh": "Industrial / EBM",
-     "count": 165,
-     "children": []
+     "count": 365,
+     "children": [
+      {
+       "id": "dub",
+       "zh": "Dub / Dub Techno",
+       "count": 196
+      },
+      {
+       "id": "dubstep",
+       "zh": "Dubstep / UK Bass",
+       "count": 98
+      },
+      {
+       "id": "dnb",
+       "zh": "Drum & Bass / Jungle",
+       "count": 69
+      },
+      {
+       "id": "breakbeat",
+       "zh": "Breakbeat / Big Beat",
+       "count": 60
+      }
+     ]
     },
     {
      "id": "noise",
      "zh": "實驗與噪音",
-     "count": 138,
+     "count": 349,
+     "children": [
+      {
+       "id": "harsh",
+       "zh": "Harsh Noise / 日本噪音",
+       "count": 269
+      },
+      {
+       "id": "drone",
+       "zh": "Drone / Dark Ambient",
+       "count": 208
+      },
+      {
+       "id": "concrete",
+       "zh": "具象音樂與拼貼",
+       "count": 91
+      },
+      {
+       "id": "glitch",
+       "zh": "Glitch / Microsound",
+       "count": 75
+      }
+     ]
+    },
+    {
+     "id": "industrial",
+     "zh": "Industrial / EBM",
+     "count": 342,
+     "children": [
+      {
+       "id": "dark-ambient",
+       "zh": "Dark Ambient / Post-Industrial",
+       "count": 186
+      },
+      {
+       "id": "power-electronics",
+       "zh": "Power Electronics / 噪音",
+       "count": 135
+      },
+      {
+       "id": "old-school",
+       "zh": "老派工業",
+       "count": 92
+      },
+      {
+       "id": "ebm",
+       "zh": "EBM / Electro-Industrial",
+       "count": 49
+      },
+      {
+       "id": "industrial-rock",
+       "zh": "Industrial Rock / Metal",
+       "count": 36
+      }
+     ]
+    },
+    {
+     "id": "jp-electronic",
+     "zh": "日系電子",
+     "count": 84,
      "children": []
     },
     {
      "id": "trance",
      "zh": "Trance / Goa",
-     "count": 61,
-     "children": []
+     "count": 79,
+     "children": [
+      {
+       "id": "progressive",
+       "zh": "Progressive / Uplifting",
+       "count": 35
+      },
+      {
+       "id": "psy",
+       "zh": "Psy / Goa",
+       "count": 30
+      }
+     ]
     },
     {
      "id": "nu-disco",
      "zh": "Disco / Nu-Disco",
-     "count": 51,
+     "count": 60,
      "children": []
     }
    ]
@@ -326,60 +1004,132 @@
   {
    "id": "soul",
    "zh": "靈魂放克",
-   "count": 1588,
+   "count": 1847,
    "children": [
-    {
-     "id": "funk",
-     "zh": "Funk / P-Funk",
-     "count": 898,
-     "children": []
-    },
     {
      "id": "classic-rnb",
      "zh": "經典 R&B / Doo-wop",
-     "count": 760,
-     "children": []
+     "count": 993,
+     "children": [
+      {
+       "id": "funk",
+       "zh": "偏 Funk",
+       "count": 462
+      },
+      {
+       "id": "neo-contemporary",
+       "zh": "Neo-Soul / 當代",
+       "count": 166
+      },
+      {
+       "id": "smooth",
+       "zh": "Smooth / Philly / Quiet Storm",
+       "count": 133
+      },
+      {
+       "id": "motown",
+       "zh": "Motown / Northern",
+       "count": 130
+      },
+      {
+       "id": "southern",
+       "zh": "Southern / Stax / Deep",
+       "count": 121
+      },
+      {
+       "id": "chicago",
+       "zh": "Chicago Soul",
+       "count": 105
+      },
+      {
+       "id": "gospel",
+       "zh": "Gospel",
+       "count": 51
+      },
+      {
+       "id": "doo-wop",
+       "zh": "50s R&B / Doo-wop",
+       "count": 27
+      }
+     ]
+    },
+    {
+     "id": "funk",
+     "zh": "Funk / P-Funk",
+     "count": 939,
+     "children": [
+      {
+       "id": "soul-side",
+       "zh": "偏靈魂樂",
+       "count": 271
+      },
+      {
+       "id": "disco-funk",
+       "zh": "Disco Funk / Boogie",
+       "count": 206
+      },
+      {
+       "id": "jazz-funk",
+       "zh": "Jazz-Funk / Fusion",
+       "count": 90
+      },
+      {
+       "id": "p-funk",
+       "zh": "P-Funk / Funk Rock",
+       "count": 71
+      },
+      {
+       "id": "synth-funk",
+       "zh": "80s Synth Funk",
+       "count": 38
+      },
+      {
+       "id": "afro-funk",
+       "zh": "Afro-Funk / Deep Funk",
+       "count": 29
+      }
+     ]
     },
     {
      "id": "disco",
      "zh": "Disco / Boogie",
-     "count": 263,
+     "count": 275,
      "children": []
     },
     {
      "id": "motown",
      "zh": "Motown / Northern",
-     "count": 189,
-     "children": []
-    },
-    {
-     "id": "southern",
-     "zh": "Southern / Stax",
-     "count": 168,
-     "children": []
-    },
-    {
-     "id": "philly",
-     "zh": "Philly / Quiet Storm",
-     "count": 143,
-     "children": []
-    },
-    {
-     "id": "gospel",
-     "zh": "Gospel",
-     "count": 104,
+     "count": 195,
      "children": []
     },
     {
      "id": "neo-soul",
      "zh": "Neo-Soul",
-     "count": 93,
+     "count": 186,
+     "children": []
+    },
+    {
+     "id": "philly",
+     "zh": "Philly / Quiet Storm",
+     "count": 183,
+     "children": []
+    },
+    {
+     "id": "southern",
+     "zh": "Southern / Stax",
+     "count": 172,
+     "children": []
+    },
+    {
+     "id": "gospel",
+     "zh": "Gospel",
+     "count": 107,
      "children": []
     },
     {
      "id": "psych-soul",
      "zh": "迷幻靈魂",
-     "count": 47,
+     "count": 52,
      "children": []
     }
    ]
@@ -387,80 +1137,269 @@
   {
    "id": "hiphop",
    "zh": "嘻哈 R&B",
-   "count": 1362,
+   "count": 1629,
    "children": [
+    {
+     "id": "underground",
+     "zh": "地下與抽象",
+     "count": 435,
+     "children": [
+      {
+       "id": "instrumental",
+       "zh": "Instrumental / Beats",
+       "count": 171
+      },
+      {
+       "id": "abstract",
+       "zh": "抽象與實驗",
+       "count": 145
+      },
+      {
+       "id": "east-coast",
+       "zh": "東岸地下",
+       "count": 95
+      },
+      {
+       "id": "jazz-rap",
+       "zh": "Jazz Rap / Conscious",
+       "count": 85
+      },
+      {
+       "id": "cloud",
+       "zh": "Cloud / Emo Rap",
+       "count": 26
+      },
+      {
+       "id": "industrial",
+       "zh": "Industrial / Noise Rap",
+       "count": 25
+      }
+     ]
+    },
     {
      "id": "east-coast",
      "zh": "東岸 / Boom Bap",
-     "count": 359,
-     "children": []
+     "count": 368,
+     "children": [
+      {
+       "id": "hardcore",
+       "zh": "Hardcore / Gangsta",
+       "count": 135
+      },
+      {
+       "id": "boom-bap",
+       "zh": "Boom Bap / 黃金年代",
+       "count": 98
+      },
+      {
+       "id": "abstract",
+       "zh": "抽象與地下",
+       "count": 98
+      },
+      {
+       "id": "jazz-rap",
+       "zh": "Jazz Rap / Conscious",
+       "count": 78
+      }
+     ]
     },
     {
      "id": "rnb",
      "zh": "當代 R&B",
-     "count": 354,
-     "children": []
-    },
-    {
-     "id": "underground",
-     "zh": "地下與抽象",
-     "count": 283,
-     "children": []
+     "count": 367,
+     "children": [
+      {
+       "id": "contemporary",
+       "zh": "當代 R&B / 90s",
+       "count": 74
+      },
+      {
+       "id": "hiphop-side",
+       "zh": "偏嘻哈",
+       "count": 68
+      },
+      {
+       "id": "neo-soul",
+       "zh": "Neo-Soul",
+       "count": 67
+      },
+      {
+       "id": "alt",
+       "zh": "Alternative R&B",
+       "count": 53
+      },
+      {
+       "id": "asia",
+       "zh": "日韓華 R&B",
+       "count": 24
+      }
+     ]
     },
     {
      "id": "south",
      "zh": "南方 / Trap",
-     "count": 262,
-     "children": []
+     "count": 308,
+     "children": [
+      {
+       "id": "dirty-south",
+       "zh": "Dirty South / Crunk",
+       "count": 157
+      },
+      {
+       "id": "trap",
+       "zh": "Trap / Drill",
+       "count": 139
+      },
+      {
+       "id": "cloud",
+       "zh": "Cloud / Emo Rap",
+       "count": 52
+      },
+      {
+       "id": "memphis",
+       "zh": "Memphis / Horrorcore",
+       "count": 29
+      },
+      {
+       "id": "new-orleans",
+       "zh": "New Orleans / Bounce",
+       "count": 24
+      }
+     ]
     },
     {
      "id": "conscious",
      "zh": "Jazz Rap / Conscious",
-     "count": 215,
-     "children": []
+     "count": 247,
+     "children": [
+      {
+       "id": "jazz-rap",
+       "zh": "Jazz Rap",
+       "count": 108
+      },
+      {
+       "id": "alternative",
+       "zh": "Alternative Hip-hop",
+       "count": 97
+      },
+      {
+       "id": "conscious",
+       "zh": "Conscious / Political",
+       "count": 70
+      },
+      {
+       "id": "neo-soul",
+       "zh": "偏 Neo-Soul",
+       "count": 36
+      }
+     ]
     },
     {
      "id": "gangsta",
      "zh": "Gangsta",
-     "count": 207,
-     "children": []
+     "count": 213,
+     "children": [
+      {
+       "id": "east",
+       "zh": "東岸 / Hardcore",
+       "count": 90
+      },
+      {
+       "id": "south",
+       "zh": "南方 / Trap",
+       "count": 86
+      },
+      {
+       "id": "west",
+       "zh": "西岸 / G-Funk",
+       "count": 38
+      }
+     ]
+    },
+    {
+     "id": "asia-rap",
+     "zh": "亞洲嘻哈",
+     "count": 94,
+     "children": [
+      {
+       "id": "jp",
+       "zh": "日本",
+       "count": 27
+      },
+      {
+       "id": "tw-cn",
+       "zh": "台灣與華語",
+       "count": 24
+      },
+      {
+       "id": "kr",
+       "zh": "韓國",
+       "count": 21
+      }
+     ]
     },
     {
      "id": "west-coast",
      "zh": "西岸 / G-Funk",
-     "count": 74,
+     "count": 80,
      "children": []
     },
     {
      "id": "pop-rap",
      "zh": "Pop Rap",
-     "count": 67,
-     "children": []
-    },
-    {
-     "id": "asia-rap",
-     "zh": "亞洲嘻哈",
-     "count": 62,
+     "count": 72,
      "children": []
     },
     {
      "id": "uk-euro",
      "zh": "英國與歐陸",
-     "count": 50,
-     "children": []
+     "count": 72,
+     "children": [
+      {
+       "id": "uk",
+       "zh": "英國 Grime / Drill",
+       "count": 45
+      },
+      {
+       "id": "french",
+       "zh": "法語嘻哈",
+       "count": 20
+      }
+     ]
     }
    ]
   },
   {
    "id": "classical",
    "zh": "古典",
-   "count": 1279,
+   "count": 1493,
    "children": [
     {
      "id": "contemporary",
      "zh": "當代與極簡",
-     "count": 509,
-     "children": []
+     "count": 696,
+     "children": [
+      {
+       "id": "avant",
+       "zh": "前衛與現代",
+       "count": 246
+      },
+      {
+       "id": "neoclassical",
+       "zh": "新古典 / 氛圍鋼琴",
+       "count": 113
+      },
+      {
+       "id": "film-score",
+       "zh": "偏配樂",
+       "count": 62
+      },
+      {
+       "id": "minimal",
+       "zh": "極簡主義",
+       "count": 44
+      }
+     ]
     },
     {
      "id": "romantic",
@@ -471,37 +1410,37 @@
     {
      "id": "modern",
      "zh": "20 世紀",
-     "count": 174,
+     "count": 221,
      "children": []
     },
     {
      "id": "classical-era",
      "zh": "古典時期",
-     "count": 142,
+     "count": 145,
      "children": []
     },
     {
      "id": "baroque",
      "zh": "巴洛克與早期",
-     "count": 110,
+     "count": 115,
      "children": []
     },
     {
      "id": "film",
      "zh": "電影配樂",
-     "count": 87,
+     "count": 94,
      "children": []
     },
     {
      "id": "opera",
      "zh": "歌劇與聲樂",
-     "count": 58,
+     "count": 59,
      "children": []
     },
     {
      "id": "musical",
      "zh": "音樂劇",
-     "count": 19,
+     "count": 23,
      "children": []
     }
    ]
@@ -509,60 +1448,228 @@
   {
    "id": "folk",
    "zh": "民謠",
-   "count": 1322,
+   "count": 1386,
    "children": [
     {
      "id": "songwriter",
      "zh": "創作歌手",
-     "count": 578,
-     "children": []
+     "count": 598,
+     "children": [
+      {
+       "id": "americana",
+       "zh": "Americana / 鄉村",
+       "count": 128
+      },
+      {
+       "id": "indie",
+       "zh": "獨立與室內",
+       "count": 123
+      },
+      {
+       "id": "folk-rock",
+       "zh": "民謠搖滾 / 軟搖滾",
+       "count": 108
+      },
+      {
+       "id": "psych",
+       "zh": "迷幻",
+       "count": 45
+      },
+      {
+       "id": "japan",
+       "zh": "日本",
+       "count": 35
+      },
+      {
+       "id": "latin",
+       "zh": "拉丁美洲",
+       "count": 32
+      },
+      {
+       "id": "british",
+       "zh": "英倫",
+       "count": 30
+      },
+      {
+       "id": "folk-pop",
+       "zh": "Folk Pop",
+       "count": 20
+      }
+     ]
     },
     {
      "id": "americana",
      "zh": "Americana / Alt-Country",
-     "count": 226,
-     "children": []
-    },
-    {
-     "id": "folk-rock",
-     "zh": "民謠搖滾",
-     "count": 209,
-     "children": []
-    },
-    {
-     "id": "indie-folk",
-     "zh": "獨立與室內民謠",
-     "count": 145,
-     "children": []
-    },
-    {
-     "id": "british",
-     "zh": "英倫與凱爾特",
-     "count": 141,
-     "children": []
+     "count": 235,
+     "children": [
+      {
+       "id": "alt-country",
+       "zh": "Alt-Country",
+       "count": 94
+      },
+      {
+       "id": "bluegrass",
+       "zh": "Bluegrass / 老時光",
+       "count": 36
+      },
+      {
+       "id": "country-rock",
+       "zh": "Country Rock / 根源搖滾",
+       "count": 35
+      },
+      {
+       "id": "indie",
+       "zh": "偏獨立民謠",
+       "count": 33
+      },
+      {
+       "id": "classic-country",
+       "zh": "經典鄉村",
+       "count": 32
+      }
+     ]
     },
     {
      "id": "psych-folk",
      "zh": "迷幻與怪奇民謠",
-     "count": 139,
-     "children": []
+     "count": 221,
+     "children": [
+      {
+       "id": "british",
+       "zh": "英倫迷幻",
+       "count": 91
+      },
+      {
+       "id": "freak",
+       "zh": "Freak Folk / New Weird America",
+       "count": 47
+      },
+      {
+       "id": "prog",
+       "zh": "前衛民謠",
+       "count": 39
+      },
+      {
+       "id": "dark",
+       "zh": "Neofolk / Dark Folk",
+       "count": 33
+      }
+     ]
+    },
+    {
+     "id": "folk-rock",
+     "zh": "民謠搖滾",
+     "count": 221,
+     "children": [
+      {
+       "id": "psych",
+       "zh": "迷幻與前衛",
+       "count": 74
+      },
+      {
+       "id": "british",
+       "zh": "英倫",
+       "count": 38
+      },
+      {
+       "id": "americana",
+       "zh": "Americana",
+       "count": 28
+      }
+     ]
+    },
+    {
+     "id": "indie-folk",
+     "zh": "獨立與室內民謠",
+     "count": 183,
+     "children": [
+      {
+       "id": "lo-fi",
+       "zh": "Lo-fi / Slowcore",
+       "count": 93
+      },
+      {
+       "id": "contemporary",
+       "zh": "當代民謠",
+       "count": 60
+      },
+      {
+       "id": "chamber",
+       "zh": "Chamber / Baroque",
+       "count": 40
+      },
+      {
+       "id": "americana",
+       "zh": "偏 Americana",
+       "count": 37
+      },
+      {
+       "id": "psych",
+       "zh": "偏迷幻",
+       "count": 37
+      }
+     ]
+    },
+    {
+     "id": "british",
+     "zh": "英倫與凱爾特",
+     "count": 142,
+     "children": [
+      {
+       "id": "english",
+       "zh": "英格蘭傳統",
+       "count": 65
+      },
+      {
+       "id": "celtic",
+       "zh": "凱爾特 / 愛爾蘭 / 蘇格蘭",
+       "count": 43
+      },
+      {
+       "id": "folk-rock",
+       "zh": "英倫民謠搖滾",
+       "count": 33
+      }
+     ]
     },
     {
      "id": "country",
      "zh": "鄉村",
-     "count": 127,
-     "children": []
+     "count": 128,
+     "children": [
+      {
+       "id": "classic",
+       "zh": "經典與 Outlaw",
+       "count": 54
+      },
+      {
+       "id": "modern",
+       "zh": "當代與流行鄉村",
+       "count": 41
+      },
+      {
+       "id": "americana",
+       "zh": "偏 Americana",
+       "count": 33
+      }
+     ]
     },
     {
      "id": "world-folk",
      "zh": "各地傳統民謠",
-     "count": 97,
-     "children": []
+     "count": 113,
+     "children": [
+      {
+       "id": "latin",
+       "zh": "拉丁美洲新歌謠",
+       "count": 34
+      }
+     ]
     },
     {
      "id": "bluegrass",
      "zh": "Bluegrass",
-     "count": 71,
+     "count": 72,
      "children": []
     },
     {
@@ -576,55 +1683,197 @@
   {
    "id": "pop",
    "zh": "流行",
-   "count": 1107,
+   "count": 1182,
    "children": [
     {
      "id": "jp-pop",
      "zh": "日本流行 / City Pop",
-     "count": 248,
-     "children": []
-    },
-    {
-     "id": "art-pop",
-     "zh": "藝術流行",
-     "count": 170,
-     "children": []
+     "count": 267,
+     "children": [
+      {
+       "id": "city-pop",
+       "zh": "City Pop / New Music",
+       "count": 75
+      },
+      {
+       "id": "kayokyoku",
+       "zh": "歌謠曲 / 演歌 / 昭和",
+       "count": 51
+      },
+      {
+       "id": "singer-songwriter",
+       "zh": "創作歌手",
+       "count": 45
+      },
+      {
+       "id": "idol",
+       "zh": "偶像",
+       "count": 28
+      },
+      {
+       "id": "anime",
+       "zh": "動畫與遊戲",
+       "count": 16
+      },
+      {
+       "id": "shibuya-kei",
+       "zh": "澀谷系",
+       "count": 12
+      }
+     ]
     },
     {
      "id": "synth",
      "zh": "合成器流行",
-     "count": 158,
-     "children": []
+     "count": 260,
+     "children": [
+      {
+       "id": "synthpop",
+       "zh": "80s Synthpop / New Wave",
+       "count": 118
+      },
+      {
+       "id": "asia",
+       "zh": "日韓",
+       "count": 99
+      },
+      {
+       "id": "dance-pop",
+       "zh": "Dance Pop / Electropop",
+       "count": 77
+      },
+      {
+       "id": "indie",
+       "zh": "偏獨立",
+       "count": 54
+      }
+     ]
+    },
+    {
+     "id": "art-pop",
+     "zh": "藝術流行",
+     "count": 185,
+     "children": [
+      {
+       "id": "baroque",
+       "zh": "Baroque / Chamber / Sunshine",
+       "count": 112
+      },
+      {
+       "id": "sophisti",
+       "zh": "Sophisti-pop / New Wave",
+       "count": 57
+      },
+      {
+       "id": "dream",
+       "zh": "Dream / Ambient Pop",
+       "count": 54
+      },
+      {
+       "id": "modern",
+       "zh": "當代 Alt-pop",
+       "count": 29
+      }
+     ]
     },
     {
      "id": "indie-pop",
      "zh": "獨立流行",
-     "count": 151,
-     "children": []
+     "count": 171,
+     "children": [
+      {
+       "id": "dream",
+       "zh": "Dream Pop",
+       "count": 64
+      },
+      {
+       "id": "bedroom",
+       "zh": "Bedroom / Indietronica",
+       "count": 49
+      },
+      {
+       "id": "chamber",
+       "zh": "Chamber / Art Pop",
+       "count": 42
+      },
+      {
+       "id": "jangle",
+       "zh": "Jangle / Twee",
+       "count": 39
+      },
+      {
+       "id": "psych",
+       "zh": "新迷幻流行",
+       "count": 28
+      }
+     ]
     },
     {
      "id": "pop-rock",
      "zh": "流行搖滾",
-     "count": 130,
-     "children": []
+     "count": 136,
+     "children": [
+      {
+       "id": "new-wave",
+       "zh": "New Wave / Synth",
+       "count": 34
+      },
+      {
+       "id": "baroque",
+       "zh": "Baroque / Art Pop",
+       "count": 32
+      },
+      {
+       "id": "soft-rock",
+       "zh": "Soft Rock / AOR",
+       "count": 25
+      },
+      {
+       "id": "power-pop",
+       "zh": "Power Pop",
+       "count": 15
+      }
+     ]
     },
     {
      "id": "k-pop",
      "zh": "韓國流行",
      "count": 93,
-     "children": []
+     "children": [
+      {
+       "id": "idol",
+       "zh": "偶像團體",
+       "count": 26
+      },
+      {
+       "id": "ballad",
+       "zh": "抒情與獨立",
+       "count": 23
+      }
+     ]
     },
     {
      "id": "t-pop",
      "zh": "台灣流行",
-     "count": 83,
+     "count": 92,
      "children": []
     },
     {
      "id": "c-pop",
      "zh": "華語流行",
-     "count": 79,
-     "children": []
+     "count": 82,
+     "children": [
+      {
+       "id": "cantopop",
+       "zh": "粵語流行",
+       "count": 38
+      },
+      {
+       "id": "mandopop",
+       "zh": "國語流行",
+       "count": 28
+      }
+     ]
     },
     {
      "id": "chanson",
@@ -635,7 +1884,7 @@
     {
      "id": "sea-pop",
      "zh": "東南亞流行",
-     "count": 27,
+     "count": 28,
      "children": []
     },
     {
@@ -649,42 +1898,152 @@
   {
    "id": "world",
    "zh": "世界",
-   "count": 864,
+   "count": 1181,
    "children": [
     {
      "id": "reggae",
      "zh": "Reggae / Dub",
-     "count": 294,
-     "children": []
+     "count": 515,
+     "children": [
+      {
+       "id": "roots",
+       "zh": "Roots Reggae",
+       "count": 274
+      },
+      {
+       "id": "dub",
+       "zh": "Dub",
+       "count": 260
+      },
+      {
+       "id": "dancehall",
+       "zh": "Dancehall / Ragga",
+       "count": 91
+      },
+      {
+       "id": "lovers",
+       "zh": "Lovers Rock",
+       "count": 90
+      },
+      {
+       "id": "ska",
+       "zh": "Ska / Rocksteady",
+       "count": 87
+      }
+     ]
     },
     {
      "id": "latin",
      "zh": "拉丁 / 古巴",
-     "count": 176,
-     "children": []
+     "count": 200,
+     "children": [
+      {
+       "id": "salsa",
+       "zh": "Salsa / 古巴",
+       "count": 66
+      },
+      {
+       "id": "latin-pop",
+       "zh": "拉丁流行與西語",
+       "count": 46
+      },
+      {
+       "id": "cumbia",
+       "zh": "Cumbia / Chicha / 安地斯",
+       "count": 36
+      },
+      {
+       "id": "tango",
+       "zh": "Tango",
+       "count": 15
+      }
+     ]
     },
     {
      "id": "african",
      "zh": "非洲",
-     "count": 147,
-     "children": []
-    },
-    {
-     "id": "arabic",
-     "zh": "中東與土耳其",
-     "count": 64,
-     "children": []
+     "count": 195,
+     "children": [
+      {
+       "id": "west",
+       "zh": "西非 Afrobeat / Highlife",
+       "count": 38
+      },
+      {
+       "id": "congo",
+       "zh": "剛果 Soukous / Rumba",
+       "count": 31
+      },
+      {
+       "id": "south",
+       "zh": "南部非洲",
+       "count": 29
+      },
+      {
+       "id": "sahel",
+       "zh": "馬利 / 塞內加爾 / 沙漠",
+       "count": 26
+      },
+      {
+       "id": "ethio",
+       "zh": "衣索比亞",
+       "count": 19
+      }
+     ]
     },
     {
      "id": "med",
      "zh": "地中海與巴爾幹",
-     "count": 62,
-     "children": []
+     "count": 95,
+     "children": [
+      {
+       "id": "flamenco",
+       "zh": "Flamenco",
+       "count": 28
+      },
+      {
+       "id": "fado",
+       "zh": "Fado",
+       "count": 24
+      },
+      {
+       "id": "balkan",
+       "zh": "巴爾幹 / 吉普賽 / Klezmer",
+       "count": 23
+      }
+     ]
+    },
+    {
+     "id": "arabic",
+     "zh": "中東與土耳其",
+     "count": 71,
+     "children": [
+      {
+       "id": "arab",
+       "zh": "阿拉伯",
+       "count": 22
+      },
+      {
+       "id": "maghreb",
+       "zh": "北非 / Raï",
+       "count": 16
+      },
+      {
+       "id": "persian",
+       "zh": "波斯與蘇菲",
+       "count": 15
+      },
+      {
+       "id": "turkish",
+       "zh": "土耳其",
+       "count": 12
+      }
+     ]
     },
     {
      "id": "asia",
      "zh": "亞洲",
-     "count": 48,
+     "count": 50,
      "children": []
     },
     {
@@ -696,7 +2055,7 @@
     {
      "id": "brazil",
      "zh": "巴西 / Bossa",
-     "count": 22,
+     "count": 24,
      "children": []
     }
    ]
@@ -704,12 +2063,12 @@
   {
    "id": "blues",
    "zh": "藍調",
-   "count": 358,
+   "count": 359,
    "children": [
     {
      "id": "delta",
      "zh": "Delta / 鄉村藍調",
-     "count": 130,
+     "count": 131,
      "children": []
     },
     {
@@ -740,6 +2099,12 @@
      "id": "piano",
      "zh": "鋼琴與 Boogie",
      "count": 27,
+     "children": []
+    },
+    {
+     "id": "soulblues",
+     "zh": "Soul Blues",
+     "count": 24,
      "children": []
     },
     {

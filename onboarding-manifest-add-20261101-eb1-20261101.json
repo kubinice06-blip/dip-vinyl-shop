@@ -1,0 +1,3486 @@
+{
+ "schemaVersion": 1,
+ "batch": "2026-10-20-eb1",
+ "batchNote": "薄細項策展線（add-20261101-eb1）",
+ "createdAt": "2026-11-01T11:56:52Z",
+ "albums": [
+  {
+   "artist": "Yancy Körössy",
+   "album": "Identification",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "dbb6ed3d-b6c7-4c77-8300-92701186ec0c",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "Kőrössy 本人：Kőrössy 1969 年在西德 MPS 錄的第一張西方作品，Rettenbacher／Antolini 三重奏，羅馬尼亞爵士鋼琴手打進西歐的代表｜⚠ MB 的首發日期是 2006 重發（日本盤），原盤 1970；西德發行但藝人為羅馬尼亞背景，country 填 de 以符合發行地，主線可改 ro｜MB release-group dbb6ed3d-b6c7-4c77-8300-92701186ec0c：title「Identification」、Album、first-release-date 2006-02-22、artist-credit「Yancy Körössy」。證據：https://musicbrainz.org/release-group/dbb6ed3d-b6c7-4c77-8300-92701186ec0c https://www.discogs.com/master/431493 https://api.discogs.com/masters/431493 https://music.apple.com/us/album/identification/1075911193",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1970,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "source": "discogs",
+    "discogsMasterId": "431493",
+    "discogsReleaseId": "5945049",
+    "url": "https://i.discogs.com/Lfl6bGim_mWEtIEXZg0BZynkejlSBX5dSa51fbskoME/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTU5NDUw/NDktMTQ3OTIxODU3/NS05MjAzLmpwZWc.jpeg",
+    "note": "CAA 無圖；取 Discogs master 431493（「Identification」1970）主圖；主線 2026-11-01 目視與盤名相符。",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-01T11:56:52Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 113,
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽 ready → ≥4，L=113）3→4",
+    "previous": {
+     "classic": 4,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "manual:rerate-20261101",
+     "checkedAt": "2026-11-01T00:00:00Z",
+     "note": "三軸重評（RUBRIC 2026-11-01）：MPS 國際發行、Körössy 公認代表作；國際廠正規發行；咆勃鋼琴三重奏標準曲",
+     "rarity": "uncommon"
+    }
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "Körössy 定居美國那年，在西德錄下一盤鋼琴三重奏。這位羅馬尼亞爵士鋼琴手 1926 年生於 Cluj，匈牙利裔。他在 1969 年搬到亞特蘭大落腳，同年 9 月 9 日在 Villingen 錄音，Hans Rettenbacher 拉貝斯，Charly Antolini 打鼓。唱片 1970 年掛 MPS 廠牌上市，曲目以標準曲為主，另收他自寫的〈Sorrow〉與標題曲。最長的一首是 8 分 15 秒的〈Stompin' At The Savoy〉。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/5945049",
+     "https://www.discogs.com/master/431493",
+     "https://ro.wikipedia.org/wiki/J%C3%A1nos_K%C5%91r%C3%B6ssy",
+     "https://musicbrainz.org/release-group/dbb6ed3d-b6c7-4c77-8300-92701186ec0c"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview122/v4/92/df/56/92df56f4-458a-ed3d-a493-3b6e2a3185c0/mzaf_14127768829614318920.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-11-01T11:56:52Z",
+    "appleCollectionId": "1075911193",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1075911193「Yancy Körössy《Identification》」：Apple us 1075911193「Yancy Körössy《Identification》」：曲目 8/8，取第 1 軌；主線 2026-11-01 lookup 核對。，取第 1 軌〈All the Things You Are〉。主線 2026-11-01 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Yancy Körössy",
+   "album": "Seria Jazz Nr. 1",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "e859d48f-bff7-449f-a08c-f258364cd94f",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "Kőrössy 本人：Electrecord「Seria Jazz」系列第 1 號，1965 年 8 月羅馬尼亞廣播電視錄音室錄製，羅馬尼亞戰後爵士的起點盤｜⚠ MB 對應的是 2011 Jazzhus Disk 數位重發，標題為「Jancsi Körössy」，曲目與原盤完全一致；原盤為 10 吋 LP（Discogs 標 LP 10\"），若店規不收 10 吋請主線汰換｜MB release-group e859d48f-bff7-449f-a08c-f258364cd94f：title「Jancsi Körössy」、Album、first-release-date 2011、artist-credit「Jancsi Körössy」。證據：https://musicbrainz.org/release-group/e859d48f-bff7-449f-a08c-f258364cd94f https://www.discogs.com/master/140817 https://api.discogs.com/masters/140817 https://www.discogs.com/release/7785671",
+    "queryAlias": "Jancsi Körössy；Kőrössy János"
+   },
+   "research": {
+    "suggestedYear": 1965,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "source": "discogs",
+    "discogsMasterId": "140817",
+    "discogsReleaseId": "7785671",
+    "url": "https://i.discogs.com/JfhJ9Pw07sJNJCpGb5y89pUMGQHCDixcEJokICuHFHI/rs:fit/g:sm/q:90/h:430/w:435/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTc3ODU2/NzEtMTQ0ODczMzY1/Ni01ODQ3LmpwZWc.jpeg",
+    "note": "CAA 無圖；取 Discogs master 140817（「Seria Jazz Nr. 1」1965）主圖；主線 2026-11-01 目視與盤名相符。",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-01T11:56:52Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": null,
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：Electrecord Seria Jazz 第1號，羅馬尼亞爵士系列起點；國營廠；硬咆勃三重奏",
+    "previous": {
+     "classic": 3,
+     "obscurity": 3,
+     "accessibility": 3,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-11-01T11:56:52Z",
+     "note": "機器基線 undefined/undefined/undefined（Last.fm listeners 查無）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 錨點制：國營廠／小廠正規發行，在該國爵士圈有名、圈外幾乎無人知（錨點 3）；Last.fm 查無 是英語圈偏差，不採機器 5。經典軸 3（該國爵士史代表盤，無國際正典地位）。",
+     "rarity": "uncommon"
+    }
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "爵士系列的第 1 號，錄在羅馬尼亞電台的音樂廳。彈鋼琴的是 Körössy，低音提琴交給 Johnny Răducanu，鼓手是 Bob Iosifescu。這套系列叫 Seria Jazz，屬於 Electrecord，開篇採單聲道 10 吋規格，1965 年 8 月錄成。爵士評論人 Mihai Berindei 一人兼任錄音師與內頁作者。曲目有〈My Funny Valentine〉一類標準曲，也有 Körössy 自作的〈Blues For Garay〉等三首。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/7785671",
+     "https://www.discogs.com/master/140817",
+     "https://ro.wikipedia.org/wiki/J%C3%A1nos_K%C5%91r%C3%B6ssy",
+     "https://ro.wikipedia.org/wiki/Marius_Popp",
+     "https://www.sonarkollektiv.com/events/romanian-jazz-jazz-from-the-electrecord-archives-1966-1978-compiled-by-jazzanova/",
+     "https://ro.wikipedia.org/wiki/Aura_Urziceanu",
+     "https://musicbrainz.org/release-group/e859d48f-bff7-449f-a08c-f258364cd94f"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-01T11:56:52Z",
+    "note": "Apple us／ro／hu／cz／de 以藝人＋盤名搜尋，無曲目對得上原盤的條目（最佳候選 Yancy Körössy《Identification》0/8，非同盤）；MB release url-rels 亦無 Apple 連結。國營廠原盤未進串流，照實標 unavailable。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Yancy Körössy",
+   "album": "Kőrössy János És Együttese",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "manual",
+    "rgMbid": "",
+    "upc": "",
+    "aliasesChecked": true,
+    "mbAbsenceProof": {
+     "queries": [
+      "artist:\"Yancy Körössy\" AND releasegroup:\"Kőrössy János És Együttese\" → count 0",
+      "releasegroup:\"Kőrössy János És Együttese\" → count 0",
+      "artist:\"Kőrössy János\" AND releasegroup:\"Kőrössy János És Együttese\" → count 0"
+     ],
+     "checkedAt": "2026-11-01T11:53:48.497Z",
+     "conclusion": "「artist:\"Yancy Körössy\" AND releasegroup:\"Kőrössy János És Együttese\"」count=0，前五筆無同藝人同盤名的 release-group；「releasegroup:\"Kőrössy János És Együttese\"」count=0，前五筆無同藝人同盤名的 release-group；「artist:\"Kőrössy János\" AND releasegroup:\"Kőrössy János És Együttese\"」count=0，前五筆無同藝人同盤名的 release-group。策展層：MusicBrainz 以 Kőrössy／Körössy／Korossy 與盤名查詢，只有 Identification、2011 Jazzhus 重發與晚年錄音，無 1964 Qualiton LP"
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/master/507009",
+     "https://api.discogs.com/masters/507009"
+    ],
+    "manualRuling": "雲端主線 2026-11-01 依 ALBUM_ONBOARDING §1 人工身分核可（店主 2026-09-02 裁定權下放；薄細項策展線 add-20261101-eb1）",
+    "coverSourceHint": "discogs",
+    "aliasReview": "Kőrössy 本人：匈牙利 Qualiton 為他出的早期 LP，西移前的匈牙利／羅馬尼亞時期作品，對照 Electrecord 錄音｜⚠ 曲目 13 首、LPX 7301，可能偏短曲合集式 LP；藝人名拼法與 Identification 不同，建議主線合併為同一人；匈牙利盤，eb2 可能也會碰到｜MB 查無（），走 §1 人工身分。證據：https://www.discogs.com/master/507009 https://api.discogs.com/masters/507009 https://www.discogs.com/master/507009 https://api.discogs.com/masters/507009",
+    "queryAlias": "Kőrössy János；Jancsi Körössy"
+   },
+   "research": {
+    "suggestedYear": 1964,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "source": "discogs",
+    "discogsMasterId": "507009",
+    "discogsReleaseId": "3518291",
+    "url": "https://i.discogs.com/_zHpBRSaClm958vuH0IVmb32cqvRa_WdBrL9VWo97qw/rs:fit/g:sm/q:90/h:592/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM1MTgy/OTEtMTU5MzAxMTEw/My05OTczLmpwZWc.jpeg",
+    "note": "MB 查無；取 Discogs master 507009（「Kőrössy János És Együttese」1964）主圖；主線 2026-11-01 目視與盤名相符。",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-01T11:56:52Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": null,
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：匈牙利 Qualiton 期作品，非代表作；國營廠；短曲標準曲",
+    "previous": {
+     "classic": 3,
+     "obscurity": 3,
+     "accessibility": 3,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-11-01T11:56:52Z",
+     "note": "機器基線 undefined/undefined/undefined（Last.fm listeners 查無）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 錨點制：國營廠／小廠正規發行，在該國爵士圈有名、圈外幾乎無人知（錨點 3）；Last.fm 查無 是英語圈偏差，不採機器 5。經典軸 3（該國爵士史代表盤，無國際正典地位）。",
+     "rarity": "uncommon"
+    }
+   },
+   "rarity": "common",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "封面寫 Kőrössy János，名字照匈牙利語順序排。他 1926 年生於 Cluj，匈牙利裔，國籍羅馬尼亞，以鋼琴演奏爵士。匈牙利的 Qualiton 在 1964 年替他錄製並出版一張單聲道唱片。13 首都是短曲，標準曲與匈牙利語曲名的作品混排，例如〈Hulló Levelek〉（枯葉）。1960 年代他在匈牙利、捷克斯洛伐克與波蘭都受到讚賞。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/3518291",
+     "https://www.discogs.com/master/507009",
+     "https://ro.wikipedia.org/wiki/J%C3%A1nos_K%C5%91r%C3%B6ssy",
+     "https://www.discogs.com/artist/828123",
+     "https://api.discogs.com/masters/507009"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-01T11:56:52Z",
+    "note": "Apple us／ro／hu／cz／de 以藝人＋盤名搜尋，無曲目對得上原盤的條目（最佳候選 Yancy Körössy《Identification》1/13，非同盤）；MB release url-rels 亦無 Apple 連結。國營廠原盤未進串流，照實標 unavailable。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Cvartetul de Jazz Paul Weiner",
+   "album": "Spirale",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "a59e1ab9-9b25-4474-96fc-9f7b6b47a47c",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "羅馬尼亞 Electrecord 爵士：羅馬尼亞爵士黑膠最搶手的一張，modal／靈性爵士，Discogs 想要數全區最高，Jazzanova 合輯也收｜策展無疑點｜MB release-group a59e1ab9-9b25-4474-96fc-9f7b6b47a47c：title「Spirale」、Album、first-release-date 1976、artist-credit「Cvartetul de Jazz Paul Weiner」。證據：https://musicbrainz.org/release-group/a59e1ab9-9b25-4474-96fc-9f7b6b47a47c https://www.discogs.com/master/686332 https://api.discogs.com/masters/686332",
+    "queryAlias": "Paul Weiner"
+   },
+   "research": {
+    "suggestedYear": 1976,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/a59e1ab9-9b25-4474-96fc-9f7b6b47a47c/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-01T11:56:52Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-01 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 2156,
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：Weiner 四重奏唯一代表盤，日本重發、Sonar 合輯收錄；國營廠；樂評稱旋律明快好親近",
+    "previous": {
+     "classic": 3,
+     "obscurity": 3,
+     "accessibility": 3,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-11-01T11:56:52Z",
+     "note": "機器基線 3/5/3（Last.fm listeners 2156）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 錨點制：國營廠／小廠正規發行，在該國爵士圈有名、圈外幾乎無人知（錨點 3）；Last.fm 2156 是英語圈偏差，不採機器 5。經典軸 3（該國爵士史代表盤，無國際正典地位）。",
+     "rarity": "uncommon"
+    }
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "長笛與雙簧管站在前線，羅馬尼亞的四重奏走調式爵士。Paul Weiner 讀的是電機，在團裡負責鋼琴。他從 1973 年起在 Timișoara 的 Flora 咖啡館駐場，到 1977 年為止，三重奏夥伴 Hromadka、Kamocsa、Butoi 也都列在本盤的樂手欄。Butoi 吹長笛與雙簧管，電貝斯歸 Kamocsa，鼓手是 Hromadka。本盤 1976 年交 Electrecord 出版，風格被標為 Modal，其中兩首取材羅馬尼亞聖誕頌歌 colindă。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/2514546",
+     "https://www.discogs.com/master/686332",
+     "https://musicregular.substack.com/p/issue-32-nov-2023",
+     "https://ro.wikipedia.org/wiki/Paul_Weiner",
+     "https://www.popmatters.com/romanian-jazz-jazz-from-the-electrecord-archives-1966-1978-2496211376.html",
+     "https://musicbrainz.org/release-group/a59e1ab9-9b25-4474-96fc-9f7b6b47a47c"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/5e/01/6d/5e016d0e-4dc4-ee9d-4904-c2ed6c4f1cde/mzaf_6241971335831636901.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-11-01T11:56:52Z",
+    "appleCollectionId": "1870698554",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1870698554「Cvartetul De Jazz Paul Weiner《Spirale》」：Apple us 1870698554「Cvartetul De Jazz Paul Weiner《Spirale》」：曲目 8/8，取第 1 軌；主線 2026-11-01 lookup 核對。，取第 1 軌〈Colinda P〉。主線 2026-11-01 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Marius Popp",
+   "album": "Panoramic Jazz Rock",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "a2c28a42-4678-4ecf-9cca-91eaa0f32a22",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "羅馬尼亞 Electrecord 爵士：羅馬尼亞爵士搖滾代表作，Electrecord 鍵盤手 Marius Popp 的原典，近年海外 crate-digger 首選｜策展無疑點｜MB release-group a2c28a42-4678-4ecf-9cca-91eaa0f32a22：title「Panoramic Jazz Rock」、Album、first-release-date 1977、artist-credit「Marius Popp」。證據：https://musicbrainz.org/release-group/a2c28a42-4678-4ecf-9cca-91eaa0f32a22 https://www.discogs.com/master/553787 https://api.discogs.com/masters/553787",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1977,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz",
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/a2c28a42-4678-4ecf-9cca-91eaa0f32a22/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-01T11:56:52Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-01 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 43,
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽非 ready → 5，L=43）3→5",
+    "previous": {
+     "classic": 4,
+     "obscurity": 3,
+     "accessibility": 3,
+     "source": "manual:rerate-20261101",
+     "checkedAt": "2026-11-01T00:00:00Z",
+     "note": "三軸重評（RUBRIC 2026-11-01）：Popp 爵士搖滾代表作、2013 CD 重發；國營廠；電聲爵士搖滾長曲",
+     "rarity": "uncommon"
+    }
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "建築師出身的 Marius Popp，用三位鼓手錄爵士搖滾。在 Electrecord 的爵士系列裡，Popp 是常客。他 1935 年出生在 Sibiu，畢業自 Ion Mincu 建築學院，1964 年在學生文化宮的爵士俱樂部登台。1977 年問世的這盤由他指揮、作曲，電鋼琴獨奏也是他；三位吉他手與三位鼓手輪流上陣，另有小號、長號、薩克斯風，還有一位女聲。全盤最長的〈Inscription〉有 11 分鐘。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/2518806",
+     "https://www.discogs.com/master/553787",
+     "https://ro.wikipedia.org/wiki/Marius_Popp",
+     "https://en.wikipedia.org/wiki/Marius_Popp",
+     "https://musicbrainz.org/release-group/a2c28a42-4678-4ecf-9cca-91eaa0f32a22"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-01T11:56:52Z",
+    "note": "Apple us／ro／hu／cz／de 以藝人＋盤名搜尋，無曲目對得上原盤的條目（最佳候選 Marius Popp《Wunderkammer (550. Geburtsjubiläum von Lucas Cranach d.Ä.)》0/6，非同盤）；MB release url-rels 亦無 Apple 連結。國營廠原盤未進串流，照實標 unavailable。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Marius Popp",
+   "album": "Nodul Gordian",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "a5a98dd5-1e0f-4a5a-941d-b389714522aa",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "羅馬尼亞 Electrecord 爵士：Popp 80 年代 jazz-funk／後咆勃作，與 1977 年爵士搖滾是不同高峰｜策展無疑點｜MB release-group a5a98dd5-1e0f-4a5a-941d-b389714522aa：title「Nodul Gordian」、Album、first-release-date 1984、artist-credit「Marius Popp」。證據：https://musicbrainz.org/release-group/a5a98dd5-1e0f-4a5a-941d-b389714522aa https://www.discogs.com/master/747041 https://api.discogs.com/masters/747041",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1984,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/a5a98dd5-1e0f-4a5a-941d-b389714522aa/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-01T11:56:52Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-01 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 44,
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽非 ready → 5，L=44）3→5",
+    "previous": {
+     "classic": 3,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "manual:rerate-20261101",
+     "checkedAt": "2026-11-01T00:00:00Z",
+     "note": "三軸重評（RUBRIC 2026-11-01）：Popp 後期 Seria Jazz 盤，非首選；國營廠；爵士放克／後咆勃",
+     "rarity": "rare"
+    }
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "Kon-Tiki 與尼莫船長，都寫進了這盤爵士的曲名。寫過《爵士即興中的應用和聲》的 Popp 是羅馬尼亞鍵盤手，在盤上兼任鋼琴、電鋼琴兩種鍵盤，並包辦作曲。1984 年，Electrecord 推出這六首，裡頭有〈Kon-Tiki〉，也有長 8 分 52 秒的〈Cîntecul Căpitanului Nemo〉。前線排著小號、中音長笛，另有一人兼吹次中音薩克斯風與單簧管，後方由兩位鼓手撐住節奏。曲風標籤列了 Jazz-Funk 與 Post Bop。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/2521030",
+     "https://www.discogs.com/master/747041",
+     "https://ro.wikipedia.org/wiki/Marius_Popp",
+     "https://musicbrainz.org/release-group/a5a98dd5-1e0f-4a5a-941d-b389714522aa"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-01T11:56:52Z",
+    "note": "Apple us／ro／hu／cz／de 以藝人＋盤名搜尋，無曲目對得上原盤的條目（最佳候選 Marius Popp《Wunderkammer (550. Geburtsjubiläum von Lucas Cranach d.Ä.)》0/6，非同盤）；MB release url-rels 亦無 Apple 連結。國營廠原盤未進串流，照實標 unavailable。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Aura Urziceanu",
+   "album": "Seară de Jazz cu Aura",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "63ec995b-0a5a-4014-8092-ab6ac3c9b0c0",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "羅馬尼亞 Electrecord 爵士：羅馬尼亞爵士人聲第一人的爵士專輯，大樂團伴奏加吉普賽爵士色彩｜策展無疑點｜MB release-group 63ec995b-0a5a-4014-8092-ab6ac3c9b0c0：title「Seară De Jazz Cu Aura」、Album、first-release-date 1974、artist-credit「Aura Urziceanu」。證據：https://musicbrainz.org/release-group/63ec995b-0a5a-4014-8092-ab6ac3c9b0c0 https://www.discogs.com/master/1151033 https://api.discogs.com/masters/1151033",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1974,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/63ec995b-0a5a-4014-8092-ab6ac3c9b0c0/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-01T11:56:52Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-01 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 322,
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽 ready → ≥4，L=322）3→4",
+    "previous": {
+     "classic": 4,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "manual:rerate-20261101",
+     "checkedAt": "2026-11-01T00:00:00Z",
+     "note": "三軸重評（RUBRIC 2026-11-01）：Urziceanu 爵士代表作，P-Vine 重發、Sonar 合輯；國營廠；人聲大樂團民謠爵士",
+     "rarity": "uncommon"
+    }
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 4，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "用羅馬尼亞語唱 swing，背後是布加勒斯特七重奏。Aura Urziceanu 早年唱流行歌，這位女歌手在 1966 年春的劇場節目裡與 Kőrössy、Răducanu 同台，以爵士版的艾涅斯庫《羅馬尼亞狂想曲第一號》受到矚目。1974 年 Electrecord 替她灌了這張，七重奏裡，Marius Popp 彈鋼琴、Johnny Răducanu 拉貝斯，Ron Rully 指揮兼打鼓。曲名多取自民間歌謠。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/602104",
+     "https://www.discogs.com/master/1151033",
+     "https://ro.wikipedia.org/wiki/Aura_Urziceanu",
+     "https://www.popmatters.com/romanian-jazz-jazz-from-the-electrecord-archives-1966-1978-2496211376.html",
+     "https://musicbrainz.org/release-group/63ec995b-0a5a-4014-8092-ab6ac3c9b0c0"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/14/80/5e/14805e54-21b2-0f2a-f329-83df45b06c76/mzaf_152368148486700921.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-11-01T11:56:52Z",
+    "appleCollectionId": "1862038034",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1862038034「Aura Urziceanu《Seară De Jazz Cu Aura》」：Apple us 1862038034「Aura Urziceanu《Seară De Jazz Cu Aura》」：曲目 8/9（Apple 曲名拼法差一首，逐軌核對 9/9 同序），取第 1 軌；主線 2026-11-01 lookup 核對。，取第 1 軌〈Jocul Țambalelor〉。主線 2026-11-01 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Aura Urziceanu",
+   "album": "Oh, My Love",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "manual",
+    "rgMbid": "",
+    "upc": "",
+    "aliasesChecked": true,
+    "mbAbsenceProof": {
+     "queries": [
+      "artist:\"Aura Urziceanu\" AND releasegroup:\"Oh, My Love\" → count 0",
+      "releasegroup:\"Oh, My Love\" → count 26"
+     ],
+     "checkedAt": "2026-11-01T11:53:51.649Z",
+     "conclusion": "「artist:\"Aura Urziceanu\" AND releasegroup:\"Oh, My Love\"」count=0，前五筆無同藝人同盤名的 release-group；「releasegroup:\"Oh, My Love\"」count=26，前五筆無同藝人同盤名的 release-group。策展層：MusicBrainz 以 Aura Urziceanu 與 Oh, My Love 查詢無此盤"
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/master/445824",
+     "https://api.discogs.com/masters/445824"
+    ],
+    "manualRuling": "雲端主線 2026-11-01 依 ALBUM_ONBOARDING §1 人工身分核可（店主 2026-09-02 裁定權下放；薄細項策展線 add-20261101-eb1）",
+    "coverSourceHint": "discogs",
+    "aliasReview": "羅馬尼亞 Electrecord 爵士：Aura 英語靈魂爵士一面，Soul-Jazz／jazz-funk，與《Seară de Jazz》是不同路線｜⚠ Apple 上有數位版（1974 標年）｜MB 查無（），走 §1 人工身分。證據：https://www.discogs.com/master/445824 https://api.discogs.com/masters/445824 https://www.discogs.com/master/445824 https://api.discogs.com/masters/445824 https://music.apple.com/us/album/oh-my-love/1894791195",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1974,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "source": "discogs",
+    "discogsMasterId": "445824",
+    "discogsReleaseId": "1165145",
+    "url": "https://i.discogs.com/tmmPAlmRYDmYyZBG63QXOLQPS3dOdE-qcj5A6Z-a308/rs:fit/g:sm/q:90/h:600/w:595/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExNjUx/NDUtMTM1NzU4ODM2/MC04NTczLmpwZWc.jpeg",
+    "note": "MB 查無；取 Discogs master 445824（「Oh, My Love」1974）主圖；主線 2026-11-01 目視與盤名相符。",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-01T11:56:52Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 1,
+    "listeners": 30,
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽 ready → ≥4，L=30）3→4",
+    "previous": {
+     "classic": 3,
+     "obscurity": 3,
+     "accessibility": 1,
+     "source": "manual:rerate-20261101",
+     "checkedAt": "2026-11-01T00:00:00Z",
+     "note": "三軸重評（RUBRIC 2026-11-01）：英語流行靈魂翻唱盤，非代表作；國營廠；人聲流行歌結構",
+     "rarity": "rare"
+    }
+   },
+   "rarity": "common",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 4，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "Aura 用英語唱流行與靈魂歌，伴奏是廠內管弦樂團。1959 年，她以羅馬尼亞廣播電台為起點出道，後來轉唱爵士。Electrecord 1974 年出版的這張以英語翻唱為主，伴奏掛名 Orchestra Electrecord，標籤是 Soul-Jazz。1972 年她曾在卡內基音樂廳與 Duke Ellington 樂團登台。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/1165145",
+     "https://www.discogs.com/master/445824",
+     "https://www.discogs.com/release/602104",
+     "https://ro.wikipedia.org/wiki/Aura_Urziceanu",
+     "https://api.discogs.com/masters/445824"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/59/45/74/594574c4-6613-eb7f-cd07-f9082d907250/mzaf_845737463204672410.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-11-01T11:56:52Z",
+    "appleCollectionId": "1894791195",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1894791195「Aura Urziceanu《Oh, My Love》」：Apple us 1894791195「Aura Urziceanu《Oh, My Love》」：曲目 12/12，取第 1 軌；主線 2026-11-01 lookup 核對。，取第 1 軌〈Oh, My Love〉。主線 2026-11-01 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Dan Mîndrilă",
+   "album": "Alter Ego",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "8fa2d047-d120-4d32-b25b-90b76acc4d80",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "羅馬尼亞 Electrecord 爵士：羅馬尼亞融合爵士代表作，爵士搖滾／funk 的 80 年代成熟形態｜策展無疑點｜MB release-group 8fa2d047-d120-4d32-b25b-90b76acc4d80：title「Alter Ego」、Album、first-release-date 1981、artist-credit「Dan Mîndrilă」。證據：https://musicbrainz.org/release-group/8fa2d047-d120-4d32-b25b-90b76acc4d80 https://www.discogs.com/master/616359 https://api.discogs.com/masters/616359",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1981,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz",
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/8fa2d047-d120-4d32-b25b-90b76acc4d80/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-01T11:56:52Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-01 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 12,
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽非 ready → 5，L=12）3→5",
+    "previous": {
+     "classic": 4,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "manual:rerate-20261101",
+     "checkedAt": "2026-11-01T00:00:00Z",
+     "note": "三軸重評（RUBRIC 2026-11-01）：Mîndrilă 領銜代表作，RYM 樂迷稱東歐融合上乘；國營廠；融合爵士",
+     "rarity": "uncommon"
+    }
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "La Șezătoare 是鄉村冬夜聚會，曲子卻配上合成器。吹薩克斯風的 Dan Mîndrilă 1938 年生於基希涅夫，這回包辦次中音與高音薩克斯風，也負責配器。那種聚會上，村人圍坐織紗、說故事；樂團則用合成器、電貝斯、電吉他伴奏，歸在 Jazz-Rock 一類。他 1963 年進入 Electrecord 管弦樂團，隨團到東德、西德、芬蘭、瑞典與波蘭巡演。1981 年，同一家廠牌替他發行了本盤。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/5073334",
+     "https://www.discogs.com/master/616359",
+     "https://www.discogs.com/artist/775079-Dan-Mîndrilă",
+     "https://www.discogs.com/release/4800510",
+     "https://www.discogs.com/release/2413094",
+     "https://rateyourmusic.com/release/album/dan-mindrila/alter-ego/",
+     "https://musicbrainz.org/release-group/8fa2d047-d120-4d32-b25b-90b76acc4d80"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-01T11:56:52Z",
+    "note": "Apple us／ro／hu／cz／de 以藝人＋盤名搜尋，無曲目對得上原盤的條目；MB release url-rels 亦無 Apple 連結。國營廠原盤未進串流，照實標 unavailable。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Johnny Răducanu",
+   "album": "Jazz în Trio",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "12fff548-7818-473d-ad18-da807d0dffe9",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "羅馬尼亞 Electrecord 爵士：羅馬尼亞爵士貝斯手 Johnny Răducanu 的首批 Electrecord 錄音，Trio 咆勃之後的後咆勃經典｜⚠ Discogs 署名「Johnny - Crețu Răducanu」，MB 為 2011 數位重發｜MB release-group 12fff548-7818-473d-ad18-da807d0dffe9：title「Jazz În Trio」、Album、first-release-date 2011、artist-credit「Johnny Răducanu」。證據：https://musicbrainz.org/release-group/12fff548-7818-473d-ad18-da807d0dffe9 https://www.discogs.com/master/232971 https://api.discogs.com/masters/232971",
+    "queryAlias": "Johnny Crețu Răducanu"
+   },
+   "research": {
+    "suggestedYear": 1967,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/12fff548-7818-473d-ad18-da807d0dffe9/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-01T11:56:52Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-01 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 0,
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽非 ready → 5，L=0）3→5",
+    "previous": {
+     "classic": 4,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "manual:rerate-20261101",
+     "checkedAt": "2026-11-01T00:00:00Z",
+     "note": "三軸重評（RUBRIC 2026-11-01）：Răducanu 早期三重奏代表，2011 重發；國營廠；後咆勃／輕鬆標準曲",
+     "rarity": "uncommon"
+    }
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 4，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "八首三重奏，鋼琴手換了四位、鼓手換了三位。Johnny Răducanu 本名 Răducan Crețu，1931 年生於羅馬尼亞布勒伊拉，是位貝斯手，這張由他拉低音大提琴領軍。輪替的四位鋼琴手裡，有 Marius Popp 與 Körössy。音樂 1966 年錄成，隔年以 Electrecord 的 10 吋單聲道盤出版。曲目翻奏美式爵士名曲，例如 Monk 的〈Round About Midnight〉與 Ellington 的〈Satin Doll〉。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/2048175",
+     "https://www.discogs.com/release/6098938",
+     "https://www.discogs.com/artist/775073-Johnny-Răducanu",
+     "https://en.wikipedia.org/wiki/Johnny_R%C4%83ducanu",
+     "https://www.discogs.com/master/232971",
+     "https://musicbrainz.org/release-group/12fff548-7818-473d-ad18-da807d0dffe9"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-01T11:56:52Z",
+    "note": "Apple us／ro／hu／cz／de 以藝人＋盤名搜尋，無曲目對得上原盤的條目（最佳候選 Johnny Raducanu & Teodora Enache《Jazz Made in Romania》0/8，非同盤）；MB release url-rels 亦無 Apple 連結。國營廠原盤未進串流，照實標 unavailable。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Johnny Răducanu",
+   "album": "Jazz în Țara Mea / Jazz in My Country",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "05bd8055-dd82-4568-956c-85e07291b5e2",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "羅馬尼亞 Electrecord 爵士：把羅馬尼亞民謠素材帶進爵士的民謠融合名作，Răducanu 後期風格代表｜策展無疑點｜MB release-group 05bd8055-dd82-4568-956c-85e07291b5e2：title「Jazz În Țara Mea / Jazz In My Country」、Album、first-release-date 1976、artist-credit「Johnny Răducanu」。證據：https://musicbrainz.org/release-group/05bd8055-dd82-4568-956c-85e07291b5e2 https://www.discogs.com/master/570364 https://api.discogs.com/masters/570364",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1976,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz",
+    "world"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/05bd8055-dd82-4568-956c-85e07291b5e2/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-01T11:56:52Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-01 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 2,
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽非 ready → 5，L=2）3→5",
+    "previous": {
+     "classic": 4,
+     "obscurity": 3,
+     "accessibility": 3,
+     "source": "manual:rerate-20261101",
+     "checkedAt": "2026-11-01T00:00:00Z",
+     "note": "三軸重評（RUBRIC 2026-11-01）：Răducanu 民族爵士代表作，2006 Retrospectiva 重發；國營廠；七人當代爵士",
+     "rarity": "uncommon"
+    }
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "被叫作羅馬尼亞爵士先生的貝斯手，帶起七人樂團。他出身羅姆人音樂世家，名叫 Johnny Răducanu，這個稱號出自 Leonard Feather。1976 年 Electrecord 發行本盤，掛名 Formația Johnny Răducanu，他既指揮，也負責低音大提琴。薩克斯風、小號與長笛三種管樂站在前面，後面是吉他、鋼琴與鼓。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/4800510",
+     "https://www.discogs.com/release/3593059",
+     "https://www.discogs.com/artist/775073-Johnny-Răducanu",
+     "https://en.wikipedia.org/wiki/Johnny_R%C4%83ducanu",
+     "https://www.sonarkollektiv.com/events/romanian-jazz-jazz-from-the-electrecord-archives-1966-1978-compiled-by-jazzanova/",
+     "https://www.discogs.com/master/570364",
+     "https://musicbrainz.org/release-group/05bd8055-dd82-4568-956c-85e07291b5e2"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-01T11:56:52Z",
+    "note": "Apple us／ro／hu／cz／de 以藝人＋盤名搜尋，無曲目對得上原盤的條目（最佳候選 Johnny Raducanu & Teodora Enache《Jazz Made in Romania》1/6，非同盤）；MB release url-rels 亦無 Apple 連結。國營廠原盤未進串流，照實標 unavailable。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Guido Manusardi",
+   "album": "Free Jazz",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "6251246f-edff-4524-9c0a-49c5da82583c",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "羅馬尼亞 Electrecord 爵士：東歐最早的自由爵士唱片之一，羅馬尼亞自由爵士的起點｜⚠ 同上，義大利人，Electrecord 錄製發行｜MB release-group 6251246f-edff-4524-9c0a-49c5da82583c：title「Free Jazz」、Album、first-release-date 1968、artist-credit「Guido Manusardi」。證據：https://musicbrainz.org/release-group/6251246f-edff-4524-9c0a-49c5da82583c https://www.discogs.com/master/452995 https://api.discogs.com/masters/452995",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1968,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "source": "discogs",
+    "discogsMasterId": "452995",
+    "discogsReleaseId": "3593059",
+    "url": "https://i.discogs.com/AHcLyGkBE2Sb1OAkCfhZ-5dRTy8Rmv9lopOhED5QdFE/rs:fit/g:sm/q:90/h:600/w:598/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM1OTMw/NTktMTUyNjkwNTY5/Ni01OTczLmpwZWc.jpeg",
+    "note": "CAA 無圖；取 Discogs master 452995（「Free Jazz」1968）主圖；主線 2026-11-01 目視與盤名相符。",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-01T11:56:52Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 10,
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽非 ready → 5，L=10）3→5",
+    "previous": {
+     "classic": 4,
+     "obscurity": 3,
+     "accessibility": 3,
+     "source": "manual:rerate-20261101",
+     "checkedAt": "2026-11-01T00:00:00Z",
+     "note": "三軸重評（RUBRIC 2026-11-01）：羅馬尼亞首張前衛爵士盤之一，Norma 重發、Sonar 合輯；國營廠；抒情現代主義非全自由",
+     "rarity": "uncommon"
+    }
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "義大利鋼琴手 1967 年搬進布加勒斯特，一住七年。他先後待過瑞士、德國、荷蘭、丹麥，在瑞典住了約五年，名字是 Guido Manusardi。1967 年秋，他與 Johnny Răducanu（低音大提琴）、Dan Mîndrilă（次中音薩克斯風）等人在布加勒斯特錄音，隔年 Electrecord 以 10 吋規格發行。A 面的〈Suita No. 1〉足足 12 分 25 秒，撐起整盤的主體。風格標記寫著 Free Jazz。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/3593059",
+     "https://www.discogs.com/release/6098796",
+     "https://it.wikipedia.org/wiki/Guido_Manusardi",
+     "https://www.dustygroove.com/item/633536/Guido-Manusardi:Free-Jazz-10-inch-LP",
+     "https://sonarkollektiv.bandcamp.com/track/blues-for-vali",
+     "https://musicbrainz.org/release-group/6251246f-edff-4524-9c0a-49c5da82583c"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-01T11:56:52Z",
+    "note": "Apple us／ro／hu／cz／de 以藝人＋盤名搜尋，無曲目對得上原盤的條目（最佳候選 Guido Manusardi《Jazz from Italy: Blue & New Things》0/5，非同盤）；MB release url-rels 亦無 Apple 連結。國營廠原盤未進串流，照實標 unavailable。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Ramon Tavernier / Cătălin Tîrcolea",
+   "album": "Panpipe in Jazz",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "d4bbc19b-2e6a-4bb5-ae07-33e1cf502334",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "羅馬尼亞 Electrecord 爵士：排笛（nai）進爵士 funk 的特殊盤，羅馬尼亞民族樂器爵士化的代表｜策展無疑點｜MB release-group d4bbc19b-2e6a-4bb5-ae07-33e1cf502334：title「Panpipe In Jazz」、Album、first-release-date 1979、artist-credit「Ramon Tavernier / Nai: Cătălin Tîrcolea」。證據：https://musicbrainz.org/release-group/d4bbc19b-2e6a-4bb5-ae07-33e1cf502334 https://www.discogs.com/master/609126 https://api.discogs.com/masters/609126",
+    "queryAlias": "Ramon Tavernier；Ramon Tavernier / Nai: Cătălin Tîrcolea"
+   },
+   "research": {
+    "suggestedYear": 1979,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz",
+    "world"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/d4bbc19b-2e6a-4bb5-ae07-33e1cf502334/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-01T11:56:52Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-01 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 1,
+    "listeners": null,
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：輕音樂排簫盤，地位一般；國營廠；人聲歌曲、旋律親切",
+    "previous": {
+     "classic": 3,
+     "obscurity": 3,
+     "accessibility": 4,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-11-01T11:56:52Z",
+     "note": "機器基線 undefined/undefined/undefined（Last.fm listeners 查無）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 錨點制：國營廠／小廠正規發行，在該國爵士圈有名、圈外幾乎無人知（錨點 3）；Last.fm 查無 是英語圈偏差，不採機器 5。經典軸 3（該國爵士史代表盤，無國際正典地位）。易聽軸 4（主線依研究稿編制判斷）。",
+     "rarity": "uncommon"
+    }
+   },
+   "rarity": "common",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 4，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "一支羅馬尼亞排簫，站到爵士放克樂團前面。唱片掛的是 Orchestra Ramon Tavernier，由 Tavernier 配器並指揮，排簫手是 Cătălin Tîrcolea。Tavernier 是法國裔，1989 年前也用 Constantin Alexandru 這個筆名。1979 年 Electrecord 推出此盤，風格標為 Jazz-Funk；十一首裡有六首加進女聲獨唱與合唱團。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/2043139",
+     "https://ro.wikipedia.org/wiki/Ramon_Tavernier",
+     "https://www.discogs.com/artist/774584-Cătălin-Tîrcolea",
+     "https://musicbrainz.org/release-group/d4bbc19b-2e6a-4bb5-ae07-33e1cf502334"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-01T11:56:52Z",
+    "note": "Apple us／ro／hu／cz／de 以藝人＋盤名搜尋，無曲目對得上原盤的條目；MB release url-rels 亦無 Apple 連結。國營廠原盤未進串流，照實標 unavailable。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Cătălin Tîrcolea",
+   "album": "Zboruri",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "1a868e5c-92d6-4aeb-987a-2653e6dba3c6",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "羅馬尼亞 Electrecord 爵士：Tîrcolea 融合爵士代表，鍵盤主導的 80 年代羅馬尼亞 jazz-funk｜策展無疑點｜MB release-group 1a868e5c-92d6-4aeb-987a-2653e6dba3c6：title「Zboruri」、Album、first-release-date 1982、artist-credit「Cătălin Tîrcolea」。證據：https://musicbrainz.org/release-group/1a868e5c-92d6-4aeb-987a-2653e6dba3c6 https://www.discogs.com/master/504013 https://api.discogs.com/masters/504013",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1982,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/1a868e5c-92d6-4aeb-987a-2653e6dba3c6/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-01T11:56:52Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-01 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 11,
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽非 ready → 5，L=11）3→5",
+    "previous": {
+     "classic": 4,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "manual:rerate-20261101",
+     "checkedAt": "2026-11-01T00:00:00Z",
+     "note": "三軸重評（RUBRIC 2026-11-01）：Tîrcolea 領銜代表作；國營廠；排簫融合爵士",
+     "rarity": "uncommon"
+    }
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "五歲上電視拉小提琴，十七歲改吹排簫。Cătălin Tîrcolea 在盤上吹高、中、低三種排簫。他生於布加勒斯特，1979 年完成音樂院作曲系的學業。羅馬尼亞廣播電視替他錄音，1980 年 12 月 28 日開錄，1981 年 6 月 6 日收工。1982 年唱片問世時，鍵盤交給 Mircea Tiberian，Erwin Surin 管合成器。盤上另翻了 Deodato 與 Paul Desmond 各一首。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/4130920",
+     "https://www.discogs.com/master/504013",
+     "https://www.discogs.com/artist/774584-Cătălin-Tîrcolea",
+     "https://www.discogs.com/release/2043139",
+     "https://musicbrainz.org/release-group/1a868e5c-92d6-4aeb-987a-2653e6dba3c6"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-01T11:56:52Z",
+    "note": "Apple us／ro／hu／cz／de 以藝人＋盤名搜尋，無曲目對得上原盤的條目（最佳候選 Catalin Tircolea & Alter Ego《Ez 4U》0/7，非同盤）；MB release url-rels 亦無 Apple 連結。國營廠原盤未進串流，照實標 unavailable。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Ion Baciu Jr.",
+   "album": "Jazz cu Ion Baciu Jr.",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "manual",
+    "rgMbid": "",
+    "upc": "",
+    "aliasesChecked": true,
+    "mbAbsenceProof": {
+     "queries": [
+      "artist:\"Ion Baciu Jr.\" AND releasegroup:\"Jazz cu Ion Baciu Jr.\" → count 0",
+      "releasegroup:\"Jazz cu Ion Baciu Jr.\" → count 0"
+     ],
+     "checkedAt": "2026-11-01T11:53:58.101Z",
+     "conclusion": "「artist:\"Ion Baciu Jr.\" AND releasegroup:\"Jazz cu Ion Baciu Jr.\"」count=0，前五筆無同藝人同盤名的 release-group；「releasegroup:\"Jazz cu Ion Baciu Jr.\"」count=0，前五筆無同藝人同盤名的 release-group。策展層：MusicBrainz 以 Ion Baciu 與盤名查詢無結果"
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/master/999185",
+     "https://api.discogs.com/masters/999185"
+    ],
+    "manualRuling": "雲端主線 2026-11-01 依 ALBUM_ONBOARDING §1 人工身分核可（店主 2026-09-02 裁定權下放；薄細項策展線 add-20261101-eb1）",
+    "coverSourceHint": "discogs",
+    "aliasReview": "羅馬尼亞 Electrecord 爵士：Baciu 靈魂爵士與後咆勃混合的個人專輯，羅馬尼亞 80 年代鍵盤爵士｜⚠ manualEvidence 只有 Discogs，第二來源待主線補（Bandcamp／重發廠）｜MB 查無（），走 §1 人工身分。證據：https://www.discogs.com/master/999185 https://api.discogs.com/masters/999185 https://www.discogs.com/master/999185 https://api.discogs.com/masters/999185",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1981,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "source": "discogs",
+    "discogsMasterId": "999185",
+    "discogsReleaseId": "2413094",
+    "url": "https://i.discogs.com/vFx_QpAFNJ9FIBiIlWCz8bZnWPRSk6T54uvJJYHY07o/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI0MTMw/OTQtMTI5Njg5MjQ0/My5qcGVn.jpeg",
+    "note": "MB 查無；取 Discogs master 999185（「Jazz Cu Ion Baciu Jr.」1981）主圖；主線 2026-11-01 目視與盤名相符。",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-01T11:56:52Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 9,
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽非 ready → 5，L=9）3→5",
+    "previous": {
+     "classic": 3,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "manual:rerate-20261101",
+     "checkedAt": "2026-11-01T00:00:00Z",
+     "note": "三軸重評（RUBRIC 2026-11-01）：Baciu Jr. 22 歲出道盤，無評論記錄；國營廠；靈魂爵士／後咆勃",
+     "rarity": "rare"
+    }
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "父親在雅西指揮愛樂，兒子約 22 歲寫了六首爵士。這位 1959 年生的鋼琴手叫 Ion Baciu Jr.，羅馬尼亞人。父親 Ion Baciu 從 1962 到 1986 年擔任雅西「摩爾多瓦」愛樂的常任指揮。唱片在 1981 年 11 月由 Electrecord 上架，他彈鋼琴，六首全由自己作曲與配器；編制為薩克斯風加長號兩支管樂，外加電貝斯跟鼓。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/2413094",
+     "https://www.discogs.com/master/999185",
+     "https://www.discogs.com/artist/1025872",
+     "https://www.discogs.com/release/5073334",
+     "https://www.discogs.com/release/8503183",
+     "https://www.discogs.com/artist/775079-Dan-Mîndrilă",
+     "https://api.discogs.com/masters/999185"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-01T11:56:52Z",
+    "note": "Apple us／ro／hu／cz／de 以藝人＋盤名搜尋，無曲目對得上原盤的條目；MB release url-rels 亦無 Apple 連結。國營廠原盤未進串流，照實標 unavailable。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Harry Tavitian & Corneliu Stroe",
+   "album": "Transylvanian Suite",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "6879b549-5ade-4fe0-85ce-8fbc4680798e",
+    "upc": "",
+    "aliasesChecked": true,
+    "exceptionReason": "現場例外：1985 年布加勒斯特與錫比烏爵士節兩場現場，1986 年由倫敦 Leo Records 發行，是 Tavitian 與 Stroe 二重奏在西方出版的代表作；他的錄音室盤另收《Axis Mundi》。",
+    "exceptionEvidenceUrls": [
+     "https://www.discogs.com/release/2896224",
+     "https://www.discogs.com/release/4437886"
+    ],
+    "aliasReview": "羅馬尼亞自由／現代與旅外：羅馬尼亞自由即興的國際代表：亞美尼亞裔 Tavitian 的提琴與 Stroe 鼓，英國 Leo 發行｜策展無疑點｜MB release-group 6879b549-5ade-4fe0-85ce-8fbc4680798e：title「Transylvanian Suite」、Album＋Live、first-release-date 1986、artist-credit「Harry Tavitian, Corneliu Stroe」。證據：https://musicbrainz.org/release-group/6879b549-5ade-4fe0-85ce-8fbc4680798e https://www.discogs.com/master/540084 https://api.discogs.com/masters/540084",
+    "queryAlias": "Harry Tavitian"
+   },
+   "research": {
+    "suggestedYear": 1986,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/6879b549-5ade-4fe0-85ce-8fbc4680798e/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-01T11:56:52Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-01 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 5,
+    "accessibility": 4,
+    "listeners": 2,
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽非 ready → 5，L=2）3→5",
+    "previous": {
+     "classic": 4,
+     "obscurity": 3,
+     "accessibility": 4,
+     "source": "manual:rerate-20261101",
+     "checkedAt": "2026-11-01T00:00:00Z",
+     "note": "三軸重評（RUBRIC 2026-11-01）：Tavitian 代表作、英國 Leo Records 國際發行；專門小廠正規發行；自由爵士長篇現場",
+     "rarity": "epic"
+    }
+   },
+   "rarity": "legendary",
+   "apexAssessment": {
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。小廠／自發盤、聽眾<300，但壓量未見數百張以下的確據，也非收藏圈公認聖杯；只到 5",
+    "evidenceUrls": [
+     "https://www.last.fm/music/Harry%20Tavitian%20%26%20Corneliu%20Stroe/Transylvanian%20Suite",
+     "https://musicbrainz.org/release-group/6879b549-5ade-4fe0-85ce-8fbc4680798e"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：classic 3、obscurity 3、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
+   },
+   "description": {
+    "text": "《Transylvanian Suite》是羅馬尼亞鋼琴手 Harry Tavitian 與鼓手 Corneliu Stroe 的二重奏現場錄音，沒能在國內出版，母帶設法帶出國後，1986 年由倫敦的前衛爵士廠 Leo Records 發行。A 面錄於 1985 年 2 月布加勒斯特，B 面錄於同年 3 月的 Sibiu 國際爵士節，共四首長曲。Tavitian 彈鋼琴，也吹牧羊人長笛 fluier；Stroe 打鼓，另吹 fluier 與低音號。其中一首的兩支舞曲取材 17 世紀特蘭西瓦尼亞的 Caioni 手稿。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/2896224",
+     "https://en.wikipedia.org/wiki/Leo_Records",
+     "https://www.discogs.com/release/4437886",
+     "https://en.wikipedia.org/wiki/Harry_Tavitian",
+     "https://www.discogs.com/artist/2447802-Creativ-2",
+     "https://en.wikipedia.org/wiki/Corneliu_Stroe",
+     "https://musicbrainz.org/release-group/6879b549-5ade-4fe0-85ce-8fbc4680798e"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-01T11:56:52Z",
+    "note": "Apple us／ro／hu／cz／de 以藝人＋盤名搜尋，無曲目對得上原盤的條目；MB release url-rels 亦無 Apple 連結。國營廠原盤未進串流，照實標 unavailable。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": false,
+    "apexPool": true
+   }
+  },
+  {
+   "artist": "Harry Tavitian & Orient Express",
+   "album": "Axis Mundi",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "3464619e-7dac-4089-bed3-23116e5c2780",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "羅馬尼亞自由／現代與旅外：Tavitian 把東方音階與爵士融合的後期代表｜策展無疑點｜MB release-group 3464619e-7dac-4089-bed3-23116e5c2780：title「Axis Mundi」、Album、first-release-date 1999、artist-credit「Harry Tavitian & Orient Express」。證據：https://musicbrainz.org/release-group/3464619e-7dac-4089-bed3-23116e5c2780 https://www.discogs.com/master/450923 https://api.discogs.com/masters/450923",
+    "queryAlias": "Harry Tavitian"
+   },
+   "research": {
+    "suggestedYear": 1999,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz",
+    "world"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/3464619e-7dac-4089-bed3-23116e5c2780/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-01T11:56:52Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-01 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 83,
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽非 ready → 5，L=83）3→5",
+    "previous": {
+     "classic": 3,
+     "obscurity": 3,
+     "accessibility": 3,
+     "source": "manual:rerate-20261101",
+     "checkedAt": "2026-11-01T00:00:00Z",
+     "note": "三軸重評（RUBRIC 2026-11-01）：Tavitian 晚期七重奏作；電台出版社；民族爵士長篇",
+     "rarity": "uncommon"
+    }
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "幾乎每位團員都兼吹牧羊人長笛，還有人吹猶太琴。亞美尼亞裔的 Harry Tavitian 生在康斯坦察，這支七重奏由他坐鎮鋼琴。1978 到 1987 年，他在康斯坦察圖書館主持爵士俱樂部，辦了 35 場即興工作坊，1998 年再組 Orient Express。1999 年 9 月 6 日至 10 日，樂團進國家廣播公司錄音，團員另敲牛鈴，吹猶太琴的是 Hanno Höfer。六首裡收了 Johnny Răducanu 的〈Țăndărică〉。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/2026573",
+     "https://www.discogs.com/master/450923",
+     "https://en.wikipedia.org/wiki/Harry_Tavitian",
+     "https://ro.wikipedia.org/wiki/Harry_Tavitian",
+     "https://musicbrainz.org/release-group/3464619e-7dac-4089-bed3-23116e5c2780"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-01T11:56:52Z",
+    "note": "Apple us／ro／hu／cz／de 以藝人＋盤名搜尋，無曲目對得上原盤的條目；MB release url-rels 亦無 Apple 連結。國營廠原盤未進串流，照實標 unavailable。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Mircea Tiberian",
+   "album": "Alone in Heaven",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "dfeb5622-2b55-4032-ae9f-92ab6915b1d8",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "羅馬尼亞自由／現代與旅外：Tiberian 獨奏鋼琴代表作，羅馬尼亞 90 年代爵士鋼琴的核心｜策展無疑點｜MB release-group dfeb5622-2b55-4032-ae9f-92ab6915b1d8：title「Alone in Heaven」、Album、first-release-date 1998、artist-credit「Mircea Tiberian」。證據：https://musicbrainz.org/release-group/dfeb5622-2b55-4032-ae9f-92ab6915b1d8 https://www.discogs.com/master/484884 https://api.discogs.com/masters/484884",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1998,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/dfeb5622-2b55-4032-ae9f-92ab6915b1d8/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-01T11:56:52Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-01 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 6,
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽非 ready → 5，L=6）3→5",
+    "previous": {
+     "classic": 3,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "manual:rerate-20261101",
+     "checkedAt": "2026-11-01T00:00:00Z",
+     "note": "三軸重評（RUBRIC 2026-11-01）：Tiberian 90 年代作，非代表作；本地小廠；當代爵士／融合",
+     "rarity": "rare"
+    }
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。L6有效，但壓量無據、無收藏圈聖杯地位依據；屬5星冷門，不到7",
+    "evidenceUrls": [
+     "https://www.last.fm/music/Mircea%20Tiberian/Alone%20in%20Heaven",
+     "https://musicbrainz.org/release-group/dfeb5622-2b55-4032-ae9f-92ab6915b1d8"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
+   },
+   "description": {
+    "text": "《Alone in Heaven》是羅馬尼亞爵士鋼琴手 Mircea Tiberian 的四重奏專輯，1998 年由羅馬尼亞的 Intercont Music 發行 CD 與卡帶。Tiberian 在布加勒斯特國立音樂大學創立爵士系，與 Larry Coryell、Tomasz Stańko 合作過，多次獲選羅馬尼亞年度音樂家。本盤 1996 年 11 月錄成。他彈鋼琴並包辦作曲與編曲，另有薩克斯風、低音提琴與鼓各一人。11 首長短差很多，最短的〈My City〉1 分 44 秒，最長的〈Eppur Si Muove〉8 分 47 秒。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/3978090",
+     "https://www.discogs.com/master/484884",
+     "https://ro.wikipedia.org/wiki/Mircea_Tiberian",
+     "https://en.wikipedia.org/wiki/Mircea_Tiberian",
+     "https://musicbrainz.org/release-group/dfeb5622-2b55-4032-ae9f-92ab6915b1d8"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-01T11:56:52Z",
+    "note": "Apple us／ro／hu／cz／de 以藝人＋盤名搜尋，無曲目對得上原盤的條目（最佳候選 Mircea Tiberian《Back To My Angel》0/11，非同盤）；MB release url-rels 亦無 Apple 連結。國營廠原盤未進串流，照實標 unavailable。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": false,
+    "apexPool": true
+   }
+  },
+  {
+   "artist": "Anca Parghel",
+   "album": "Carpathian Colors",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "e8e6b04c-ce74-4092-ba86-2d981c3abb87",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "羅馬尼亞自由／現代與旅外：羅馬尼亞人聲爵士旅德代表作，喀爾巴阡民謠與爵士｜策展無疑點｜MB release-group e8e6b04c-ce74-4092-ba86-2d981c3abb87：title「Carpathian Colors」、Album、first-release-date 1993、artist-credit「Anca Parghel」。證據：https://musicbrainz.org/release-group/e8e6b04c-ce74-4092-ba86-2d981c3abb87 https://www.discogs.com/master/1403403 https://api.discogs.com/masters/1403403",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1993,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz",
+    "world"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/e8e6b04c-ce74-4092-ba86-2d981c3abb87/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-01T11:56:52Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-01 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 307,
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽 ready → ≥4，L=307）3→4",
+    "previous": {
+     "classic": 4,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "manual:rerate-20261101",
+     "checkedAt": "2026-11-01T00:00:00Z",
+     "note": "三軸重評（RUBRIC 2026-11-01）：Parghel 代表作、德國 NABEL 國際發行；正規廠；人聲鋼琴民謠爵士",
+     "rarity": "uncommon"
+    }
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "論文寫 Charlie Parker，歌卻取自羅馬尼亞民間。她叫 Anca Parghel，1957 年生於 Câmpulung Moldovenesc，是一位來自羅馬尼亞、唱爵士的女歌手，畢業於雅西音樂學院。1993 年德國的 NABEL 發行這張，11 首的作曲欄都寫傳統，曲名取自羅馬尼亞各地，例如〈Bucovina〉。信用欄只列出她的人聲與鋼琴。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/12349463",
+     "https://www.discogs.com/master/1403403",
+     "https://ro.wikipedia.org/wiki/Anca_Parghel",
+     "https://www.discogs.com/artist/1101381-Anca-Parghel",
+     "https://musicbrainz.org/release-group/e8e6b04c-ce74-4092-ba86-2d981c3abb87"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/49/ff/ad/49ffad29-5e3d-eff0-e9f8-19cdcdced678/mzaf_7195406286826755645.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-11-01T11:56:52Z",
+    "appleCollectionId": "739263788",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 739263788「Anca Parghel《Carpathian Colors》」：Apple us 739263788「Anca Parghel《Carpathian Colors》」：曲目 12/12，取第 1 軌；主線 2026-11-01 lookup 核對。，取第 1 軌〈Doina Olt〉。主線 2026-11-01 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Dusko Goykovich",
+   "album": "Belgrade Blues",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "c28205ea-f48c-445e-9c7b-ba9ea53f6ac0",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "南斯拉夫 PGP-RTB（貝爾格勒）：南斯拉夫爵士史上最常被提起的國營廠硬咆勃／調式專輯：Gojković 在貝爾格勒與美國獨奏家 Sal Nistico、Carl Fontana 合錄，PGP RTB 原版｜⚠ 在地錄製於貝爾格勒；Goykovich 西方期（Enja／MPS）留給 eb5｜MB release-group c28205ea-f48c-445e-9c7b-ba9ea53f6ac0：title「Belgrade Blues」、Album、first-release-date 2013-12-02（只登錄 2013 德國數位重發）、artist-credit「Dusko Goykovich」；原盤 1967 PGP RTB，曲目一致。證據：https://www.discogs.com/master/561714-The-Duško-Gojković-Sextet-Featuring-Sal-Nistico-And-Carl-Fontana-Belgrade-Blues https://www.discogs.com/release/5046024",
+    "queryAlias": "Duško Gojković"
+   },
+   "research": {
+    "suggestedYear": 1967,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "source": "discogs",
+    "discogsMasterId": "561714",
+    "discogsReleaseId": "5046024",
+    "url": "https://i.discogs.com/WYsasqUbGtUjr5yUElTn13jgOo1EDHm4Ex-NbhEOMko/rs:fit/g:sm/q:90/h:600/w:596/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTUwNDYw/MjQtMTczOTk4NDQ0/Mi01NjM4LmpwZWc.jpeg",
+    "note": "MB 查無；取 Discogs master 561714（「Belgrade Blues」1967）主圖；主線 2026-11-01 目視與盤名相符。",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-01T11:56:52Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 46,
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽 ready → ≥4，L=46）3→4",
+    "previous": {
+     "classic": 4,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "manual:rerate-20261101",
+     "checkedAt": "2026-11-01T00:00:00Z",
+     "note": "三軸重評（RUBRIC 2026-11-01）：《Vreme》稱邪典盤、Goykovich 早期代表、Cosmic Sounds 重發；國營廠；硬咆勃",
+     "rarity": "uncommon"
+    }
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "住在西德的小號手回到貝爾格勒，同台全是美國樂手。這位小號手是波士尼亞雅伊采人 Dusko Goykovich，1956 年前往西德。1966 年 5 月 19 日與兩位美國管樂手錄音：次中音薩克斯風 Sal Nistico、長號 Carl Fontana，加上一組美國節奏組。PGP RTB 1967 年把它出成唱片，曲風屬 Hard Bop。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/5046024",
+     "https://en.wikipedia.org/wiki/Du%C5%A1ko_Gojkovi%C4%87",
+     "https://sr.wikipedia.org/wiki/%D0%94%D1%83%D1%88%D0%BA%D0%BE_%D0%93%D0%BE%D1%98%D0%BA%D0%BE%D0%B2%D0%B8%D1%9B",
+     "https://vreme.com/kultura/sambasador-gojkovic/",
+     "https://musicbrainz.org/release-group/c28205ea-f48c-445e-9c7b-ba9ea53f6ac0"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview71/v4/4e/fd/3b/4efd3bae-0ce1-b27f-e687-f2966f9843af/mzaf_6446205776509045348.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-11-01T11:56:52Z",
+    "appleCollectionId": "719618062",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 719618062「Duško Gojković《Belgrade Blues》」：Apple us 719618062「Duško Gojković《Belgrade Blues》」：曲目 原盤 4 首全在（Apple 版加收 6 首同場次延伸曲），Apple 版前 6 首為同時期其他場次錄音，取第 7 軌〈Belgrade Blues〉（原盤 A1）；主線 2026-11-01 lookup 核對。，取第 7 軌〈Belgrade Blues〉。主線 2026-11-01 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Dusko Goykovich",
+   "album": "Internacionalni jazz oktet Duška Gojkovića sa Keni Klarkom",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "manual",
+    "rgMbid": "",
+    "upc": "",
+    "aliasesChecked": true,
+    "mbAbsenceProof": {
+     "queries": [
+      "artist:\"Dusko Goykovich\" AND releasegroup:\"Internacionalni jazz oktet Duška Gojkovića sa Keni Klarkom\" → count 0",
+      "releasegroup:\"Internacionalni jazz oktet Duška Gojkovića sa Keni Klarkom\" → count 0",
+      "artist:\"Duško Gojković Kenny Clarke Internacionalni Jazz Oktet\" AND releasegroup:\"Internacionalni jazz oktet Duška Gojkovića sa Keni Klarkom\" → count 0"
+     ],
+     "checkedAt": "2026-11-01T11:54:12.416Z",
+     "conclusion": "「artist:\"Dusko Goykovich\" AND releasegroup:\"Internacionalni jazz oktet Duška Gojkovića sa Keni Klarkom\"」count=0，前五筆無同藝人同盤名的 release-group；「releasegroup:\"Internacionalni jazz oktet Duška Gojkovića sa Keni Klarkom\"」count=0，前五筆無同藝人同盤名的 release-group；「artist:\"Duško Gojković Kenny Clarke Internacionalni Jazz Oktet\" AND releasegroup:\"Internacionalni jazz oktet Duška Gojkovića sa Keni Klarkom\"」count=0，前五筆無同藝人同盤名的 release-group。策展層：MusicBrainz release-group 搜尋藝人＋盤名皆無結果（2026-11-01）；國營廠盤以 Discogs master 與主發行頁建立身分"
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/master/493508-Duško-Gojković-Kenny-Clarke-Internacionalni-Jazz-Oktet-Duška-Gojkovića-Sa-Keni-Klarkom",
+     "https://www.discogs.com/release/4046446"
+    ],
+    "manualRuling": "雲端主線 2026-11-01 依 ALBUM_ONBOARDING §1 人工身分核可（店主 2026-09-02 裁定權下放；薄細項策展線 add-20261101-eb1）",
+    "coverSourceHint": "discogs",
+    "aliasReview": "南斯拉夫 PGP-RTB（貝爾格勒）：南斯拉夫第一代現代爵士的奠基錄音，Gojković 八重奏加 Kenny Clarke 客席，PGP RTB 早期 10 吋｜⚠ 10 吋形式；若主線不收 10 吋可汰換｜MB 查無（），走 §1 人工身分。證據：https://www.discogs.com/master/493508-Duško-Gojković-Kenny-Clarke-Internacionalni-Jazz-Oktet-Duška-Gojkovića-Sa-Keni-Klarkom https://www.discogs.com/release/4046446 https://www.discogs.com/master/493508-Duško-Gojković-Kenny-Clarke-Internacionalni-Jazz-Oktet-Duška-Gojkovića-Sa-Keni-Klarkom https://www.discogs.com/release/4046446 https://i.discogs.com/xSpR0RfRULwKO0NHdpT8NZ3qg1p3PLGyIH1uY_tE4a0/rs:fit/g:sm/q:90/h:598/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQwNDY0/NDYtMTQ5NDk3MzUy/OC0xNzA0LmpwZWc.jpeg",
+    "queryAlias": "Duško Gojković Kenny Clarke Internacionalni Jazz Oktet"
+   },
+   "research": {
+    "suggestedYear": 1961,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "source": "discogs",
+    "discogsMasterId": "493508",
+    "discogsReleaseId": "4046446",
+    "url": "https://i.discogs.com/xSpR0RfRULwKO0NHdpT8NZ3qg1p3PLGyIH1uY_tE4a0/rs:fit/g:sm/q:90/h:598/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQwNDY0/NDYtMTQ5NDk3MzUy/OC0xNzA0LmpwZWc.jpeg",
+    "note": "MB 查無；取 Discogs master 493508（「Internacionalni Jazz Oktet Duška Gojkovića Sa Keni Klarkom」1961）主圖；主線 2026-11-01 目視與盤名相符。",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-01T11:56:52Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": null,
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：與 Kenny Clarke 合錄的早期史料盤，非代表作；國營廠 10吋；咆勃八重奏",
+    "previous": {
+     "classic": 3,
+     "obscurity": 3,
+     "accessibility": 3,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-11-01T11:56:52Z",
+     "note": "機器基線 undefined/undefined/undefined（Last.fm listeners 查無）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 錨點制：國營廠／小廠正規發行，在該國爵士圈有名、圈外幾乎無人知（錨點 3）；Last.fm 查無 是英語圈偏差，不採機器 5。經典軸 3（該國爵士史代表盤，無國際正典地位）。",
+     "rarity": "uncommon"
+    }
+   },
+   "rarity": "common",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "Kenny Clarke 打鼓，八重奏裡還有低音單簧管。領軍的南斯拉夫小號手是 Goykovich，1961 年交給 PGP RTB 出成 10 吋爵士盤。Francy Boland 坐鋼琴並寫下編曲，低音那一側另有上低音薩克斯風撐著。也是這一年，Goykovich 拿到伯克利音樂學院的作曲與編曲獎學金。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/4046446",
+     "https://en.wikipedia.org/wiki/Du%C5%A1ko_Gojkovi%C4%87",
+     "https://sr.wikipedia.org/wiki/%D0%94%D1%83%D1%88%D0%BA%D0%BE_%D0%93%D0%BE%D1%98%D0%BA%D0%BE%D0%B2%D0%B8%D1%9B",
+     "https://www.discogs.com/master/493508-Duško-Gojković-Kenny-Clarke-Internacionalni-Jazz-Oktet-Duška-Gojkovića-Sa-Keni-Klarkom"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-01T11:56:52Z",
+    "note": "Apple us／ro／hu／cz／de 以藝人＋盤名搜尋，無曲目對得上原盤的條目（最佳候選 Scott Hamilton & Dusko Goykovich《Tight but Loose》0/6，非同盤）；MB release url-rels 亦無 Apple 連結。國營廠原盤未進串流，照實標 unavailable。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Trumpets & Rhythm Unit",
+   "album": "Trumpets & Rhythm Unit",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "manual",
+    "rgMbid": "",
+    "upc": "",
+    "aliasesChecked": true,
+    "mbAbsenceProof": {
+     "queries": [
+      "artist:\"Trumpets & Rhythm Unit\" AND releasegroup:\"Trumpets & Rhythm Unit\" → count 0",
+      "releasegroup:\"Trumpets & Rhythm Unit\" → count 0",
+      "artist:\"Gojković Kovačev Trumpets & Rhythm Unit\" AND releasegroup:\"Trumpets & Rhythm Unit\" → count 0"
+     ],
+     "checkedAt": "2026-11-01T11:54:20.422Z",
+     "conclusion": "「artist:\"Trumpets & Rhythm Unit\" AND releasegroup:\"Trumpets & Rhythm Unit\"」count=0，前五筆無同藝人同盤名的 release-group；「releasegroup:\"Trumpets & Rhythm Unit\"」count=0，前五筆無同藝人同盤名的 release-group；「artist:\"Gojković Kovačev Trumpets & Rhythm Unit\" AND releasegroup:\"Trumpets & Rhythm Unit\"」count=0，前五筆無同藝人同盤名的 release-group。策展層：MusicBrainz release-group 搜尋藝人＋盤名皆無結果（2026-11-01）；國營廠盤以 Discogs master 與主發行頁建立身分"
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/master/253610-Trumpets-Rhythm-Unit-Gojković-Kovačev-Trumpets-Rhythm-Unit",
+     "https://www.discogs.com/release/634442"
+    ],
+    "manualRuling": "雲端主線 2026-11-01 依 ALBUM_ONBOARDING §1 人工身分核可（店主 2026-09-02 裁定權下放；薄細項策展線 add-20261101-eb1）",
+    "coverSourceHint": "discogs",
+    "aliasReview": "南斯拉夫 PGP-RTB（貝爾格勒）：Duško Gojković 與 Lala Kovačev 雙小號對峙的 PGP RTB 錄音室專輯，南斯拉夫後期硬咆勃代表作｜⚠ 藝人名取封面團名；Gojković／Kovačev 為領銜者｜MB 查無（），走 §1 人工身分。證據：https://www.discogs.com/master/253610-Trumpets-Rhythm-Unit-Gojković-Kovačev-Trumpets-Rhythm-Unit https://www.discogs.com/release/634442 https://www.discogs.com/master/253610-Trumpets-Rhythm-Unit-Gojković-Kovačev-Trumpets-Rhythm-Unit https://www.discogs.com/release/634442 https://i.discogs.com/MZxFixc27P4vNKZrC1NTzLnI5O-EUz6NtkCkQPsDjY8/rs:fit/g:sm/q:90/h:594/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTYzNDQ0/Mi0xNDQ4MzAzNzQy/LTk5MDUuanBlZw.jpeg",
+    "queryAlias": "Gojković Kovačev Trumpets & Rhythm Unit",
+    "selfTitledVerified": true
+   },
+   "research": {
+    "suggestedYear": 1979,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "source": "discogs",
+    "discogsMasterId": "253610",
+    "discogsReleaseId": "634442",
+    "url": "https://i.discogs.com/MZxFixc27P4vNKZrC1NTzLnI5O-EUz6NtkCkQPsDjY8/rs:fit/g:sm/q:90/h:594/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTYzNDQ0/Mi0xNDQ4MzAzNzQy/LTk5MDUuanBlZw.jpeg",
+    "note": "MB 查無；取 Discogs master 253610（「Trumpets & Rhythm Unit」1979）主圖；主線 2026-11-01 目視與盤名相符。",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-01T11:56:52Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": null,
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：四小號合作盤，Cosmic Sounds CD 重發；國營廠；靈魂爵士／咆勃",
+    "previous": {
+     "classic": 3,
+     "obscurity": 3,
+     "accessibility": 3,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-11-01T11:56:52Z",
+     "note": "機器基線 undefined/undefined/undefined（Last.fm listeners 查無）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 錨點制：國營廠／小廠正規發行，在該國爵士圈有名、圈外幾乎無人知（錨點 3）；Last.fm 查無 是英語圈偏差，不採機器 5。經典軸 3（該國爵士史代表盤，無國際正典地位）。",
+     "rarity": "uncommon"
+    }
+   },
+   "rarity": "common",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "團名叫小號與節奏組，前排真的站了四把小號。Goykovich 與鼓手 Lala Kovačev 在 1970 年代末合組這個南斯拉夫爵士團體。1979 年 3 月 16、17 日兩天，錄音在貝爾格勒完成，由 PGP RTB 發行。四把小號依序是 Goykovich、Fidri、Ugrin 與 Gut，Roković 從頭到尾坐在電鋼琴前。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/634442",
+     "https://en.wikipedia.org/wiki/Branislav_Lala_Kova%C4%8Dev",
+     "https://en.wikipedia.org/wiki/Du%C5%A1ko_Gojkovi%C4%87",
+     "https://vreme.com/kultura/sambasador-gojkovic/",
+     "https://www.discogs.com/master/253610-Trumpets-Rhythm-Unit-Gojković-Kovačev-Trumpets-Rhythm-Unit"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-01T11:56:52Z",
+    "note": "Apple us／ro／hu／cz／de 以藝人＋盤名搜尋，無曲目對得上原盤的條目（最佳候選 Jazz Trumpet Club《Riffing in Rhythm with the Trumpet’s Voice》0/7，非同盤）；MB release url-rels 亦無 Apple 連結。國營廠原盤未進串流，照實標 unavailable。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Bora Roković",
+   "album": "III sastanak u studiju",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "manual",
+    "rgMbid": "",
+    "upc": "",
+    "aliasesChecked": true,
+    "mbAbsenceProof": {
+     "queries": [
+      "artist:\"Bora Roković\" AND releasegroup:\"III sastanak u studiju\" → count 0",
+      "releasegroup:\"III sastanak u studiju\" → count 0",
+      "artist:\"Trio Borislava Rokovića III Sastanak U Studiju\" AND releasegroup:\"III sastanak u studiju\" → count 0"
+     ],
+     "checkedAt": "2026-11-01T11:54:28.256Z",
+     "conclusion": "「artist:\"Bora Roković\" AND releasegroup:\"III sastanak u studiju\"」count=0，前五筆無同藝人同盤名的 release-group；「releasegroup:\"III sastanak u studiju\"」count=0，前五筆無同藝人同盤名的 release-group；「artist:\"Trio Borislava Rokovića III Sastanak U Studiju\" AND releasegroup:\"III sastanak u studiju\"」count=0，前五筆無同藝人同盤名的 release-group。策展層：MusicBrainz release-group 搜尋藝人＋盤名皆無結果（2026-11-01）；國營廠盤以 Discogs master 與主發行頁建立身分"
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/master/567751-Trio-Borislava-Rokovića-Sa-Milanom-Stojanovićem-I-Vojislavom-Đonovićem-III-Sastanak-U-Studiju",
+     "https://www.discogs.com/release/4668704"
+    ],
+    "manualRuling": "雲端主線 2026-11-01 依 ALBUM_ONBOARDING §1 人工身分核可（店主 2026-09-02 裁定權下放；薄細項策展線 add-20261101-eb1）",
+    "coverSourceHint": "discogs",
+    "aliasReview": "南斯拉夫 PGP-RTB（貝爾格勒）：貝爾格勒爵士鋼琴手 Borislav Roković 三重奏的 PGP RTB「棚內相會」系列第三輯，早期南斯拉夫硬咆勃代表盤；Roković 後來才赴西德（MPS《Ultra Native》留給 eb5）｜⚠ 10 吋形式｜MB 查無（），走 §1 人工身分。證據：https://www.discogs.com/master/567751-Trio-Borislava-Rokovića-Sa-Milanom-Stojanovićem-I-Vojislavom-Đonovićem-III-Sastanak-U-Studiju https://www.discogs.com/release/4668704 https://www.discogs.com/master/567751-Trio-Borislava-Rokovića-Sa-Milanom-Stojanovićem-I-Vojislavom-Đonovićem-III-Sastanak-U-Studiju https://www.discogs.com/release/4668704 https://i.discogs.com/7-uQg_DfzQaOoMpicaEDSuGgCSFubXJgY0Vb-8mzKwc/rs:fit/g:sm/q:90/h:600/w:598/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ2Njg3/MDQtMTQ4MTY1NTAz/Ni00MDg5LmpwZWc.jpeg",
+    "queryAlias": "Trio Borislava Rokovića III Sastanak U Studiju"
+   },
+   "research": {
+    "suggestedYear": 1961,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "source": "discogs",
+    "discogsMasterId": "567751",
+    "discogsReleaseId": "4668704",
+    "url": "https://i.discogs.com/7-uQg_DfzQaOoMpicaEDSuGgCSFubXJgY0Vb-8mzKwc/rs:fit/g:sm/q:90/h:600/w:598/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ2Njg3/MDQtMTQ4MTY1NTAz/Ni00MDg5LmpwZWc.jpeg",
+    "note": "MB 查無；取 Discogs master 567751（「III Sastanak U Studiju」1961）主圖；主線 2026-11-01 目視與盤名相符。",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-01T11:56:52Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 1,
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽非 ready → 5，L=1）3→5",
+    "previous": {
+     "classic": 3,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "manual:rerate-20261101",
+     "checkedAt": "2026-11-01T00:00:00Z",
+     "note": "三軸重評（RUBRIC 2026-11-01）：PGP RTB 棚內系列第三輯，史料性；國營廠；咆勃標準曲",
+     "rarity": "rare"
+    }
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "硬咆勃小組在 1961 年的貝爾格勒，奏起《乞丐歌劇》主題。封面寫的是 Trio Borislava Rokovića，Bora Roković 擔任鋼琴。另加次中音薩克斯風兼長笛與吉他，6 月 14、15 日於當地錄下六首，PGP RTB 壓成 10 吋盤。曲目有他自作的〈Ružan San〉與 Kurt Weill 的主題，部分附南斯拉夫語譯名。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/4668704",
+     "https://www.discogs.com/artist/873280",
+     "https://www.discogs.com/master/567751-Trio-Borislava-Rokovića-Sa-Milanom-Stojanovićem-I-Vojislavom-Đonovićem-III-Sastanak-U-Studiju"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-01T11:56:52Z",
+    "note": "Apple us／ro／hu／cz／de 以藝人＋盤名搜尋，無曲目對得上原盤的條目（最佳候選 Bora Rokovic《Ultra Native》0/6，非同盤）；MB release url-rels 亦無 Apple 連結。國營廠原盤未進串流，照實標 unavailable。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Jack Dieval",
+   "album": "II sastanak u studiju",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "manual",
+    "rgMbid": "",
+    "upc": "",
+    "aliasesChecked": true,
+    "mbAbsenceProof": {
+     "queries": [
+      "artist:\"Jack Dieval\" AND releasegroup:\"II sastanak u studiju\" → count 0",
+      "releasegroup:\"II sastanak u studiju\" → count 0",
+      "artist:\"Jack Dieval Quartet Sastanak U Studiju\" AND releasegroup:\"II sastanak u studiju\" → count 0"
+     ],
+     "checkedAt": "2026-11-01T11:54:36.314Z",
+     "conclusion": "「artist:\"Jack Dieval\" AND releasegroup:\"II sastanak u studiju\"」count=0，前五筆無同藝人同盤名的 release-group；「releasegroup:\"II sastanak u studiju\"」count=0，前五筆無同藝人同盤名的 release-group；「artist:\"Jack Dieval Quartet Sastanak U Studiju\" AND releasegroup:\"II sastanak u studiju\"」count=0，前五筆無同藝人同盤名的 release-group。策展層：MusicBrainz release-group 搜尋藝人＋盤名皆無結果（2026-11-01）；國營廠盤以 Discogs master 與主發行頁建立身分"
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/master/567750-Jack-Dieval-I-Njegov-Kvartet-Sa-Eduardom-Sadjilom-I-Predragom-Ivanovićem-II-Sastanak-U-Studiju",
+     "https://www.discogs.com/release/4668644"
+    ],
+    "manualRuling": "雲端主線 2026-11-01 依 ALBUM_ONBOARDING §1 人工身分核可（店主 2026-09-02 裁定權下放；薄細項策展線 add-20261101-eb1）",
+    "coverSourceHint": "discogs",
+    "aliasReview": "南斯拉夫 PGP-RTB（貝爾格勒）：法國鋼琴手 Jack Dieval 在貝爾格勒錄的 PGP RTB「棚內相會」系列第二輯，與 Bora Roković 那張並稱南斯拉夫爵士起點｜⚠ 10 吋形式｜MB 查無（），走 §1 人工身分。證據：https://www.discogs.com/master/567750-Jack-Dieval-I-Njegov-Kvartet-Sa-Eduardom-Sadjilom-I-Predragom-Ivanovićem-II-Sastanak-U-Studiju https://www.discogs.com/release/4668644 https://www.discogs.com/master/567750-Jack-Dieval-I-Njegov-Kvartet-Sa-Eduardom-Sadjilom-I-Predragom-Ivanovićem-II-Sastanak-U-Studiju https://www.discogs.com/release/4668644 https://i.discogs.com/j5XhtaO34UGxQzG1ChBkoZXQlmItWKVXnvGMBFFWtb8/rs:fit/g:sm/q:90/h:591/w:591/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ2Njg2/NDQtMTM3MTY2MTE1/OS02NTMxLmpwZWc.jpeg",
+    "queryAlias": "Jack Dieval Quartet Sastanak U Studiju"
+   },
+   "research": {
+    "suggestedYear": 1961,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "source": "discogs",
+    "discogsMasterId": "567750",
+    "discogsReleaseId": "4668644",
+    "url": "https://i.discogs.com/j5XhtaO34UGxQzG1ChBkoZXQlmItWKVXnvGMBFFWtb8/rs:fit/g:sm/q:90/h:591/w:591/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ2Njg2/NDQtMTM3MTY2MTE1/OS02NTMxLmpwZWc.jpeg",
+    "note": "MB 查無；取 Discogs master 567750（「II Sastanak U Studiju」1961）主圖；主線 2026-11-01 目視與盤名相符。",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-01T11:56:52Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 3,
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽非 ready → 5，L=3）3→5",
+    "previous": {
+     "classic": 3,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "manual:rerate-20261101",
+     "checkedAt": "2026-11-01T00:00:00Z",
+     "note": "三軸重評（RUBRIC 2026-11-01）：PGP RTB 棚內系列第二輯，Art Taylor 參與；國營廠；咆勃標準曲",
+     "rarity": "rare"
+    }
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "法國鋼琴手的 B 面，三首都出自南斯拉夫作曲家。Jack Dieval 是生於杜埃的法國鋼琴手，這回帶著四重奏演奏硬咆勃。1961 年 3 月 4、5 日由 Dieval 帶隊錄於貝爾格勒，PGP RTB 發行。A 面請來本地薩克斯風手 Sađil 與小號手 Ivanović 客席，B 面收了 Ivo Robić 的〈Moj Rodni Kraj〉。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/4668644",
+     "https://www.discogs.com/artist/873196",
+     "https://en.wikipedia.org/wiki/Jack_Di%C3%A9val",
+     "https://www.discogs.com/master/567750-Jack-Dieval-I-Njegov-Kvartet-Sa-Eduardom-Sadjilom-I-Predragom-Ivanovićem-II-Sastanak-U-Studiju"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-01T11:56:52Z",
+    "note": "Apple us／ro／hu／cz／de 以藝人＋盤名搜尋，無曲目對得上原盤的條目（最佳候選 Jack Diéval《Jazz in Paris : Jazz aux Champ-Élysées》0/6，非同盤）；MB release url-rels 亦無 Apple 連結。國營廠原盤未進串流，照實標 unavailable。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Jazz Orkestar Radio-Televizije Beograd",
+   "album": "Jazz Orkestar Radio-Televizije Beograd",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "manual",
+    "rgMbid": "",
+    "upc": "",
+    "aliasesChecked": true,
+    "mbAbsenceProof": {
+     "queries": [
+      "artist:\"Jazz Orkestar Radio-Televizije Beograd\" AND releasegroup:\"Jazz Orkestar Radio-Televizije Beograd\" → count 1",
+      "releasegroup:\"Jazz Orkestar Radio-Televizije Beograd\" → count 1"
+     ],
+     "checkedAt": "2026-11-01T11:54:39.016Z",
+     "conclusion": "「artist:\"Jazz Orkestar Radio-Televizije Beograd\" AND releasegroup:\"Jazz Orkestar Radio-Televizije Beograd\"」count=1，前五筆無同藝人同盤名的 release-group；「releasegroup:\"Jazz Orkestar Radio-Televizije Beograd\"」count=1，前五筆無同藝人同盤名的 release-group。策展層：MusicBrainz release-group 搜尋藝人＋盤名皆無結果（2026-11-01）；國營廠盤以 Discogs master 與主發行頁建立身分"
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/master/1740242-Jazz-Orkestar-Radio-Televizije-Beograd-Jazz-Orkestar-Radio-Televizije-Beograd-",
+     "https://www.discogs.com/release/15324684"
+    ],
+    "manualRuling": "雲端主線 2026-11-01 依 ALBUM_ONBOARDING §1 人工身分核可（店主 2026-09-02 裁定權下放；薄細項策展線 add-20261101-eb1）",
+    "coverSourceHint": "discogs",
+    "aliasReview": "南斯拉夫 PGP-RTB（貝爾格勒）：貝爾格勒廣播爵士大樂團的第一張 LP，Count Basie 致敬到 Afro-Cuban 曼波，代表南斯拉夫大樂團傳統｜⚠ 1978 年同名雙 LP（master 484874）為另一高峰，此處只提 1963｜MB 查無（），走 §1 人工身分。證據：https://www.discogs.com/master/1740242-Jazz-Orkestar-Radio-Televizije-Beograd-Jazz-Orkestar-Radio-Televizije-Beograd- https://www.discogs.com/release/15324684 https://www.discogs.com/master/1740242-Jazz-Orkestar-Radio-Televizije-Beograd-Jazz-Orkestar-Radio-Televizije-Beograd- https://www.discogs.com/release/15324684 https://i.discogs.com/Jx6QdVR-a9kWGQameMKxHYTpvxs_DTpGf_iu372cwiM/rs:fit/g:sm/q:90/h:600/w:597/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1MzI0/Njg0LTE2MDU2MzY4/MjEtNTk0Ny5qcGVn.jpeg",
+    "queryAlias": "",
+    "selfTitledVerified": true
+   },
+   "research": {
+    "suggestedYear": 1963,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "source": "discogs",
+    "discogsMasterId": "1740242",
+    "discogsReleaseId": "15324684",
+    "url": "https://i.discogs.com/Jx6QdVR-a9kWGQameMKxHYTpvxs_DTpGf_iu372cwiM/rs:fit/g:sm/q:90/h:600/w:597/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1MzI0/Njg0LTE2MDU2MzY4/MjEtNTk0Ny5qcGVn.jpeg",
+    "note": "MB 查無；取 Discogs master 1740242（「Jazz Orkestar Radio-Televizije Beograd 」1963）主圖；主線 2026-11-01 目視與盤名相符。",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-01T11:56:52Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 59,
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽非 ready → 5，L=59）3→5",
+    "previous": {
+     "classic": 4,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "manual:rerate-20261101",
+     "checkedAt": "2026-11-01T00:00:00Z",
+     "note": "三軸重評（RUBRIC 2026-11-01）：南斯拉夫首要廣播大樂團首張 LP，場景重要作；國營廠；搖擺大樂團",
+     "rarity": "uncommon"
+    }
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "貝爾格勒電台大樂團的首張 LP，最老一首錄於 1957 年。指揮 Vojislav Simić 從 1953 年起執掌這支廣播爵士大樂團，1960 年在 Juan-les-Pins 爵士節奪下大樂團組首獎。PGP RTB 在 1963 年 5 月推出唱片，十二首錄於 1961 到 1963 年間，只有〈Mambo〉是 1957 年的舊錄音。曲目從向 Basie 致敬的搖擺與曼波，走到末曲的巴爾幹吉普賽舞曲。鼓手 Branislav Kovačev 是團裡最年輕的成員。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/15324684",
+     "https://en.wikipedia.org/wiki/Vojislav_Simi%C4%87",
+     "https://en.wikipedia.org/wiki/Branislav_Lala_Kova%C4%8Dev",
+     "https://www.discogs.com/master/1740242-Jazz-Orkestar-Radio-Televizije-Beograd-Jazz-Orkestar-Radio-Televizije-Beograd-"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-01T11:56:52Z",
+    "note": "Apple us／ro／hu／cz／de 以藝人＋盤名搜尋，無曲目對得上原盤的條目（最佳候選 Jazz orkestar Radio- televizije Beograd《Jazz Orkestar radio- Televizije Beograd Sa Gostima》0/12，非同盤）；MB release url-rels 亦無 Apple 連結。國營廠原盤未進串流，照實標 unavailable。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Marković-Gut Sextet",
+   "album": "Marković-Gut Sextet",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "manual",
+    "rgMbid": "",
+    "upc": "",
+    "aliasesChecked": true,
+    "mbAbsenceProof": {
+     "queries": [
+      "artist:\"Marković-Gut Sextet\" AND releasegroup:\"Marković-Gut Sextet\" → count 0",
+      "releasegroup:\"Marković-Gut Sextet\" → count 0"
+     ],
+     "checkedAt": "2026-11-01T11:54:45.295Z",
+     "conclusion": "「artist:\"Marković-Gut Sextet\" AND releasegroup:\"Marković-Gut Sextet\"」count=0，前五筆無同藝人同盤名的 release-group；「releasegroup:\"Marković-Gut Sextet\"」count=0，前五筆無同藝人同盤名的 release-group。策展層：MusicBrainz release-group 搜尋藝人＋盤名皆無結果（2026-11-01）；國營廠盤以 Discogs master 與主發行頁建立身分"
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/master/1150183-Marković-Gut-Sextet-Marković-Gut-Sextet",
+     "https://www.discogs.com/release/3625227"
+    ],
+    "manualRuling": "雲端主線 2026-11-01 依 ALBUM_ONBOARDING §1 人工身分核可（店主 2026-09-02 裁定權下放；薄細項策展線 add-20261101-eb1）",
+    "coverSourceHint": "discogs",
+    "aliasReview": "南斯拉夫 PGP-RTB（貝爾格勒）：薩克斯風 Marković 與長號／編曲 Stjepko Gut 的六重奏，80 年代 PGP RTB 咆勃正規盤｜策展無疑點｜MB 查無（），走 §1 人工身分。證據：https://www.discogs.com/master/1150183-Marković-Gut-Sextet-Marković-Gut-Sextet https://www.discogs.com/release/3625227 https://www.discogs.com/master/1150183-Marković-Gut-Sextet-Marković-Gut-Sextet https://www.discogs.com/release/3625227 https://i.discogs.com/dKYe5hzuYGwLu9GaH9cRjRBqy-8eGqLVuzrMh3I_lFI/rs:fit/g:sm/q:90/h:403/w:400/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM2MjUy/MjctMTMzNzg2MDUy/Mi02MDI4LmpwZWc.jpeg",
+    "queryAlias": "",
+    "selfTitledVerified": true
+   },
+   "research": {
+    "suggestedYear": 1980,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "source": "discogs",
+    "discogsMasterId": "1150183",
+    "discogsReleaseId": "3625227",
+    "url": "https://i.discogs.com/dKYe5hzuYGwLu9GaH9cRjRBqy-8eGqLVuzrMh3I_lFI/rs:fit/g:sm/q:90/h:403/w:400/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM2MjUy/MjctMTMzNzg2MDUy/Mi02MDI4LmpwZWc.jpeg",
+    "note": "MB 查無；取 Discogs master 1150183（「Marković-Gut Sextet」1980）主圖；主線 2026-11-01 目視與盤名相符。",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-01T11:56:52Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 4,
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽非 ready → 5，L=4）3→5",
+    "previous": {
+     "classic": 3,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "manual:rerate-20261101",
+     "checkedAt": "2026-11-01T00:00:00Z",
+     "note": "三軸重評（RUBRIC 2026-11-01）：六重奏五張 PGP 盤之一，非首選；國營廠；硬咆勃",
+     "rarity": "rare"
+    }
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "一位吹次中音薩克斯風、一位吹小號，兩人合領六重奏。1939 年出生的塞爾維亞樂手 Milivoje Marković 是薩克斯風那一位，小號則是 Stjepko Gut，兩人帶著這個爵士六重奏替 PGP RTB 錄了五張 LP。1980 年這張收七首，前線多一把富魯格號，後面是鋼琴、低音提琴與鼓。壓軸的〈Oleo〉長 7 分 09 秒。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/3625227",
+     "https://www.discogs.com/artist/3171575",
+     "https://www.discogs.com/artist/707619",
+     "https://en.wikipedia.org/wiki/Stjepko_Gut",
+     "https://www.discogs.com/master/1150183",
+     "https://www.discogs.com/master/1150183-Marković-Gut-Sextet-Marković-Gut-Sextet"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-01T11:56:52Z",
+    "note": "Apple us／ro／hu／cz／de 以藝人＋盤名搜尋，無曲目對得上原盤的條目（最佳候選 Markovic Gut Sextet《Message from Belgrade》1/7，非同盤）；MB release url-rels 亦無 Apple 連結。國營廠原盤未進串流，照實標 unavailable。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Lala Kovačev Group",
+   "album": "Balkan Impressions",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "manual",
+    "rgMbid": "",
+    "upc": "",
+    "aliasesChecked": true,
+    "mbAbsenceProof": {
+     "queries": [
+      "artist:\"Lala Kovačev Group\" AND releasegroup:\"Balkan Impressions\" → count 0",
+      "releasegroup:\"Balkan Impressions\" → count 0"
+     ],
+     "checkedAt": "2026-11-01T11:54:48.022Z",
+     "conclusion": "「artist:\"Lala Kovačev Group\" AND releasegroup:\"Balkan Impressions\"」count=0，前五筆無同藝人同盤名的 release-group；「releasegroup:\"Balkan Impressions\"」count=0，前五筆無同藝人同盤名的 release-group。策展層：MusicBrainz release-group 搜尋藝人＋盤名皆無結果（2026-11-01）；國營廠盤以 Discogs master 與主發行頁建立身分"
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/master/1526344-Lala-Kovačev-Group-Balkan-Impressions",
+     "https://www.discogs.com/release/2643518"
+    ],
+    "manualRuling": "雲端主線 2026-11-01 依 ALBUM_ONBOARDING §1 人工身分核可（店主 2026-09-02 裁定權下放；薄細項策展線 add-20261101-eb1）",
+    "coverSourceHint": "discogs",
+    "aliasReview": "南斯拉夫 PGP-RTB（貝爾格勒）：塞爾維亞薩克斯風 Lala Kovačev 把巴爾幹舞曲節奏與爵士即興焊在一起的 PGP RTB 代表作｜策展無疑點｜MB 查無（），走 §1 人工身分。證據：https://www.discogs.com/master/1526344-Lala-Kovačev-Group-Balkan-Impressions https://www.discogs.com/release/2643518 https://www.discogs.com/master/1526344-Lala-Kovačev-Group-Balkan-Impressions https://www.discogs.com/release/2643518 https://i.discogs.com/hq65aaXXy-H27ljmrTDSdhM2SP_syg5X7lT4_FSohHo/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI2NDM1/MTgtMTM4OTIwMTEy/My00OTkwLmpwZWc.jpeg",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1982,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz",
+    "world"
+   ],
+   "cover": {
+    "source": "discogs",
+    "discogsMasterId": "1526344",
+    "discogsReleaseId": "2643518",
+    "url": "https://i.discogs.com/hq65aaXXy-H27ljmrTDSdhM2SP_syg5X7lT4_FSohHo/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI2NDM1/MTgtMTM4OTIwMTEy/My00OTkwLmpwZWc.jpeg",
+    "note": "MB 查無；取 Discogs master 1526344（「Balkan Impressions」1982）主圖；主線 2026-11-01 目視與盤名相符。",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-01T11:56:52Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 18,
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽非 ready → 5，L=18）3→5",
+    "previous": {
+     "classic": 4,
+     "obscurity": 3,
+     "accessibility": 3,
+     "source": "manual:rerate-20261101",
+     "checkedAt": "2026-11-01T00:00:00Z",
+     "note": "三軸重評（RUBRIC 2026-11-01）：Kovačev 巴爾幹民族爵士代表作；國營廠；複雜節拍＋zurna",
+     "rarity": "uncommon"
+    }
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "替 Jankowski 打了六年鼓，他轉做巴爾幹舞曲爵士。他原本吹小號，後來才改打鼓；1960 年代中期，南斯拉夫出身的 Lala Kovačev 移居德國，替鋼琴家 Horst Jankowski 巡演打鼓。1982 年他組起自己的團，6 月 30 日一天就錄完，地點貝爾格勒。整張由他編曲，六首都標傳統曲，前線是巴爾幹吹管 zurna 與兩支薩克斯風。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/2643518",
+     "https://en.wikipedia.org/wiki/Branislav_Lala_Kova%C4%8Dev",
+     "https://www.discogs.com/master/1526344-Lala-Kovačev-Group-Balkan-Impressions"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-01T11:56:52Z",
+    "note": "Apple us／ro／hu／cz／de 以藝人＋盤名搜尋，無曲目對得上原盤的條目；MB release url-rels 亦無 Apple 連結。國營廠原盤未進串流，照實標 unavailable。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Lala Kovačev",
+   "album": "Izvorni folklor i džez Lale Kovačeva",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "manual",
+    "rgMbid": "",
+    "upc": "",
+    "aliasesChecked": true,
+    "mbAbsenceProof": {
+     "queries": [
+      "artist:\"Lala Kovačev\" AND releasegroup:\"Izvorni folklor i džez Lale Kovačeva\" → count 0",
+      "releasegroup:\"Izvorni folklor i džez Lale Kovačeva\" → count 0"
+     ],
+     "checkedAt": "2026-11-01T11:54:50.805Z",
+     "conclusion": "「artist:\"Lala Kovačev\" AND releasegroup:\"Izvorni folklor i džez Lale Kovačeva\"」count=0，前五筆無同藝人同盤名的 release-group；「releasegroup:\"Izvorni folklor i džez Lale Kovačeva\"」count=0，前五筆無同藝人同盤名的 release-group。策展層：MusicBrainz release-group 搜尋藝人＋盤名皆無結果（2026-11-01）；國營廠盤以 Discogs master 與主發行頁建立身分"
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/master/784312-Lala-Kovačev-Izvorni-Folklor-I-Džez-Lale-Kovačeva",
+     "https://www.discogs.com/release/6529464"
+    ],
+    "manualRuling": "雲端主線 2026-11-01 依 ALBUM_ONBOARDING §1 人工身分核可（店主 2026-09-02 裁定權下放；薄細項策展線 add-20261101-eb1）",
+    "coverSourceHint": "discogs",
+    "aliasReview": "南斯拉夫 PGP-RTB（貝爾格勒）：Kovačev 把塞爾維亞民間舞曲拆開重組的第二高峰，銅管與自由即興並置｜⚠ Kovačev 第二張，與 Balkan Impressions 角度不同（民謠拆解 vs 融合）｜MB 查無（），走 §1 人工身分。證據：https://www.discogs.com/master/784312-Lala-Kovačev-Izvorni-Folklor-I-Džez-Lale-Kovačeva https://www.discogs.com/release/6529464 https://www.discogs.com/master/784312-Lala-Kovačev-Izvorni-Folklor-I-Džez-Lale-Kovačeva https://www.discogs.com/release/6529464 https://i.discogs.com/mcXehE2Shyhigt4pK4Ao0JT_jsOwKkHWxubt0NN8jpI/rs:fit/g:sm/q:90/h:450/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY1Mjk0/NjQtMTQyMTMzMzU1/Mi0yNjk3LmpwZWc.jpeg",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1986,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz",
+    "world"
+   ],
+   "cover": {
+    "source": "discogs",
+    "discogsMasterId": "784312",
+    "discogsReleaseId": "6529464",
+    "url": "https://i.discogs.com/mcXehE2Shyhigt4pK4Ao0JT_jsOwKkHWxubt0NN8jpI/rs:fit/g:sm/q:90/h:450/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY1Mjk0/NjQtMTQyMTMzMzU1/Mi0yNjk3LmpwZWc.jpeg",
+    "note": "MB 查無；取 Discogs master 784312（「Izvorni Folklor I Džez Lale Kovačeva」1986）主圖；主線 2026-11-01 目視與盤名相符。",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-01T11:56:52Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 2,
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽非 ready → 5，L=2）3→5",
+    "previous": {
+     "classic": 3,
+     "obscurity": 3,
+     "accessibility": 3,
+     "source": "manual:rerate-20261101",
+     "checkedAt": "2026-11-01T00:00:00Z",
+     "note": "三軸重評（RUBRIC 2026-11-01）：Balkan Impressions 後續民俗實驗；國營廠；民歌合唱＋即興",
+     "rarity": "uncommon"
+    }
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "四支 fife、四位女聲，圍著一套爵士鼓。領團人 Lala Kovačev 是南斯拉夫鼓手，這回親自打鼓、編曲，把八首塞爾維亞民間舞曲與歌謠改寫成爵士，開場〈Svadbarska〉長 8 分 36 秒。四位 fife 手當中有一位兼吹 duduk，女聲合唱出現在其中三首，吉他是 Vlatko Stefanovski。1986 年，PGP RTB 替它出版。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/6529464",
+     "https://en.wikipedia.org/wiki/Branislav_Lala_Kova%C4%8Dev",
+     "https://www.discogs.com/master/784312-Lala-Kovačev-Izvorni-Folklor-I-Džez-Lale-Kovačeva"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-01T11:56:52Z",
+    "note": "Apple us／ro／hu／cz／de 以藝人＋盤名搜尋，無曲目對得上原盤的條目；MB release url-rels 亦無 Apple 連結。國營廠原盤未進串流，照實標 unavailable。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "B.P. Convention",
+   "album": "Blue Sunset",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "6bbfe55e-1e90-4c94-b6d5-61d099850d49",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "南斯拉夫 Jugoton（札格拉布）：Boško Petrović 的 B.P. Convention 大樂團 Jugoton 代表盤，札格拉布硬咆勃大樂團傳統｜⚠ 領銜者 Boško Petrović；MPS 的《Swinging East》現場盤留給 eb5｜MB release-group 6bbfe55e-1e90-4c94-b6d5-61d099850d49：title「Blue Sunset」、Album、first-release-date 1975、artist-credit「B.P. Convention」。證據：https://musicbrainz.org/release-group/6bbfe55e-1e90-4c94-b6d5-61d099850d49 https://www.discogs.com/master/1086190-BP-Convention-Big-Band-Blue-Sunset https://www.discogs.com/release/3173124 https://i.discogs.com/2k_Qaf5a4Fdj-XA4LSrQv01EPIOhHHEUJFOGXH_2e2k/rs:fit/g:sm/q:90/h:600/w:595/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMxNzMx/MjQtMTU0OTg3NTA3/Ni03OTkzLmpwZWc.jpeg",
+    "queryAlias": "Boško Petrović B.P. Convention Big Band"
+   },
+   "research": {
+    "suggestedYear": 1975,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "source": "discogs",
+    "discogsMasterId": "1086190",
+    "discogsReleaseId": "3173124",
+    "url": "https://i.discogs.com/2k_Qaf5a4Fdj-XA4LSrQv01EPIOhHHEUJFOGXH_2e2k/rs:fit/g:sm/q:90/h:600/w:595/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMxNzMx/MjQtMTU0OTg3NTA3/Ni03OTkzLmpwZWc.jpeg",
+    "note": "CAA 無圖；取 Discogs master 1086190（「Blue Sunset」1975）主圖；主線 2026-11-01 目視與盤名相符。",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-01T11:56:52Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 2,
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽 ready → ≥4，L=2）3→4",
+    "previous": {
+     "classic": 4,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "manual:rerate-20261101",
+     "checkedAt": "2026-11-01T00:00:00Z",
+     "note": "三軸重評（RUBRIC 2026-11-01）：BP Convention 大樂團代表盤，Clark Terry、Art Farmer 客席；國營廠；硬咆勃大樂團",
+     "rarity": "uncommon"
+    }
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "札格拉布顫音琴手的大樂團，請 Clark Terry 客席。敲顫音琴的 Boško Petrović 領著 BP Convention，這個大樂團最初的班底來自當地搖滾圈。Jugoton 的錄音間裡，樂團在 1975 年 6 月 16、17 日完成錄音。同來客席的還有小號手 Art Farmer、長號手 Albert Mangelsdorff 與薩克斯風手 Ernie Wilkins。六首走的是硬咆勃路線。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/3173124",
+     "https://hr.wikipedia.org/wiki/Bo%C5%A1ko_Petrovi%C4%87",
+     "https://musicbrainz.org/release-group/6bbfe55e-1e90-4c94-b6d5-61d099850d49"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/e8/c8/72/e8c87281-2dd4-59b4-c642-a95c949701cf/mzaf_13701442460233674537.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-11-01T11:56:52Z",
+    "appleCollectionId": "923953191",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 923953191「B.P. Convention《Blue Sunset》」：Apple us 923953191「B.P. Convention《Blue Sunset》」：曲目 6 軌同盤名同掛名同年，曲名寫法差 2 首，逐軌核對同序，取第 1 軌；主線 2026-11-01 lookup 核對。，取第 1 軌〈Blue Sunset〉。主線 2026-11-01 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Zagreb Jazz Quartet",
+   "album": "With Pain I Was Born",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "b7f62d54-3131-4753-bcfb-9364bce5b52e",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "南斯拉夫 Jugoton（札格拉布）：札格拉布爵士四重奏（Boško Petrović 領軍）最知名的錄音室盤，西歐也被引用的南斯拉夫冷派爵士｜⚠ Fontana 荷蘭版發行，錄音在札格拉布；country 取團體所屬｜MB release-group b7f62d54-3131-4753-bcfb-9364bce5b52e：title「With Pain I Was Born」、Album、first-release-date 1966、artist-credit「Zagreb Jazz Quartet」。證據：https://musicbrainz.org/release-group/b7f62d54-3131-4753-bcfb-9364bce5b52e https://www.discogs.com/master/375937-Zagreb-Jazz-Quartet-With-Pain-I-Was-Born https://www.discogs.com/release/3160548 https://i.discogs.com/7NxfhWZ07Pafwr9to1FCiGm8okmD9SZmmubEG49Px-M/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMxNjA1/NDgtMTcyNDkxODA2/My02ODg0LmpwZWc.jpeg",
+    "queryAlias": "Zagrebački Jazz Kvartet"
+   },
+   "research": {
+    "suggestedYear": 1966,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/b7f62d54-3131-4753-bcfb-9364bce5b52e/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-01T11:56:52Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-01 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 9,
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽非 ready → 5，L=9）3→5",
+    "previous": {
+     "classic": 4,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "manual:rerate-20261101",
+     "checkedAt": "2026-11-01T00:00:00Z",
+     "note": "三軸重評（RUBRIC 2026-11-01）：招牌曲同名、Fontana 國際發行，南斯拉夫爵士重要團代表；正規廠；MJQ 式室內爵士",
+     "rarity": "uncommon"
+    }
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "南斯拉夫的爵士團裡，只有這一團交給外國經紀人。顫音琴、鋼琴、低音提琴與鼓四件樂器，就是札格拉布 Zagreb Jazz Quartet 的全部編制。1965 年 4 月 9 日錄於法蘭克福旁的 Walldorf，製作人是 Horst Lippmann，隔年由荷蘭 Fontana 發行。1959 年創團的是顫音琴手 Boško Petrović，他與 John Lewis 往來密切；團裡把巴爾幹民間元素用進爵士，因此被稱為 Balkan Jazz。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/3160548",
+     "https://hr.wikipedia.org/wiki/Zagreba%C4%8Dki_jazz_kvartet",
+     "https://hr.wikipedia.org/wiki/Bo%C5%A1ko_Petrovi%C4%87",
+     "https://musicbrainz.org/release-group/b7f62d54-3131-4753-bcfb-9364bce5b52e"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-01T11:56:52Z",
+    "note": "Apple us／ro／hu／cz／de 以藝人＋盤名搜尋，無曲目對得上原盤的條目（最佳候選 Alfred Krips, Anthony Halstead, Arthur Fiedler, Aurèle Nicolet, Barbara Wilson, Baroque Chamber Orchestra, Boston Pops Orchestra, Christiane Jacottet, English Chamber Orchestra, Ettore Stratta, Festival Strings Lucerne, Gerry O'Riordan, Guy Touvron, Harry Rabinowitz, I Solisti di Zagreb, James Galway, John Varner, Josef Suk, José-Luis Garcia, Leonard Slatkin, Leopold Stokowski, Maurice Bourgue, Musica Sacra, RCA Victor Symphony Orchestra, Richard Westenburg, Rudolf Baumgartner, The United Kingdom Symphony Orchestra & Virgil Fox《Pachelbel Canon and Other Baroque Hits》0/8，非同盤）；MB release url-rels 亦無 Apple 連結。國營廠原盤未進串流，照實標 unavailable。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Toranj 77",
+   "album": "Miting",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "manual",
+    "rgMbid": "",
+    "upc": "",
+    "aliasesChecked": true,
+    "mbAbsenceProof": {
+     "queries": [
+      "artist:\"Toranj 77\" AND releasegroup:\"Miting\" → count 0",
+      "releasegroup:\"Miting\" → count 0",
+      "artist:\"Željko Kovačević Toranj 77\" AND releasegroup:\"Miting\" → count 0"
+     ],
+     "checkedAt": "2026-11-01T11:54:57.956Z",
+     "conclusion": "「artist:\"Toranj 77\" AND releasegroup:\"Miting\"」count=0，前五筆無同藝人同盤名的 release-group；「releasegroup:\"Miting\"」count=0，前五筆無同藝人同盤名的 release-group；「artist:\"Željko Kovačević Toranj 77\" AND releasegroup:\"Miting\"」count=0，前五筆無同藝人同盤名的 release-group。策展層：MusicBrainz release-group 搜尋藝人＋盤名皆無結果（2026-11-01）；國營廠盤以 Discogs master 與主發行頁建立身分"
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/master/1949875-Željko-Kovačević-Toranj-77-Miting",
+     "https://www.discogs.com/release/3121284"
+    ],
+    "manualRuling": "雲端主線 2026-11-01 依 ALBUM_ONBOARDING §1 人工身分核可（店主 2026-09-02 裁定權下放；薄細項策展線 add-20261101-eb1）",
+    "coverSourceHint": "discogs",
+    "aliasReview": "南斯拉夫 PGP-RTB（貝爾格勒）：札格拉布樂團 Željko Kovačević／Toranj 77 的調式融合爵士，PGP RTB 專輯｜⚠ Discogs 標示 Fusion／Modal，藝人頁寫作 Željko Kovačević / Toranj 77｜MB 查無（），走 §1 人工身分。證據：https://www.discogs.com/master/1949875-Željko-Kovačević-Toranj-77-Miting https://www.discogs.com/release/3121284 https://www.discogs.com/master/1949875-Željko-Kovačević-Toranj-77-Miting https://www.discogs.com/release/3121284 https://i.discogs.com/P9pgwJqv6cmawUHHYiiZDzug5m8NYn8Dli7oZtDRAdw/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMxMjEy/ODQtMTMxNjc3OTQ0/NC5qcGVn.jpeg",
+    "queryAlias": "Željko Kovačević Toranj 77"
+   },
+   "research": {
+    "suggestedYear": 1980,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "source": "discogs",
+    "discogsMasterId": "1949875",
+    "discogsReleaseId": "3121284",
+    "url": "https://i.discogs.com/P9pgwJqv6cmawUHHYiiZDzug5m8NYn8Dli7oZtDRAdw/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMxMjEy/ODQtMTMxNjc3OTQ0/NC5qcGVn.jpeg",
+    "note": "MB 查無；取 Discogs master 1949875（「Miting」1980）主圖；主線 2026-11-01 目視與盤名相符。",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-01T11:56:52Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 4,
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽非 ready → 5，L=4）3→5",
+    "previous": {
+     "classic": 3,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "manual:rerate-20261101",
+     "checkedAt": "2026-11-01T00:00:00Z",
+     "note": "三軸重評（RUBRIC 2026-11-01）：Toranj 77 單張作，地位中等；國營廠；融合爵士",
+     "rarity": "rare"
+    }
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "電鋼琴、電吉他之外，客席還帶來一台 Polymoog。Zlatko Tanodi 是彈這台合成器的客席，底下托著的，是 Toranj 77 這支南斯拉夫融合樂團的貝斯與鼓。次中音薩克斯風由克羅埃西亞樂手 Željko Kovačević 吹奏，他寫了其中四首，之前待過幾支搖滾與爵士團。1980 年 PGP RTB 發行的這張，六首都在 5 分半以上。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/3121284",
+     "https://www.discogs.com/artist/1116286",
+     "https://www.discogs.com/artist/2426865",
+     "https://www.discogs.com/master/1949875-Željko-Kovačević-Toranj-77-Miting"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-01T11:56:52Z",
+    "note": "Apple us／ro／hu／cz／de 以藝人＋盤名搜尋，無曲目對得上原盤的條目；MB release url-rels 亦無 Apple 連結。國營廠原盤未進串流，照實標 unavailable。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Birdland",
+   "album": "Darkness of Light",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "36c0a756-f7a9-4b42-a6d6-ba3820e65de2",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "南斯拉夫 PGP-RTB（貝爾格勒）：貝爾格勒融合爵士團 Birdland 的 PGP RTB 專輯，南斯拉夫調式融合代表之一｜⚠ 同名藝人撞名風險：去重時 Birdland 要核對｜MB release-group 36c0a756-f7a9-4b42-a6d6-ba3820e65de2：title「Darkness Of Light」、Album、first-release-date 1980、artist-credit「Birdland」。證據：https://musicbrainz.org/release-group/36c0a756-f7a9-4b42-a6d6-ba3820e65de2 https://www.discogs.com/master/1532840-Birdland-3-Darkness-Of-Light https://www.discogs.com/release/2956328 https://i.discogs.com/mPEWtb_kTh-5qX7IDXvbXtCTkXMjDjl965U18UFtkLM/rs:fit/g:sm/q:90/h:300/w:300/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI5NTYz/MjgtMTMwOTAzNTU0/NS5qcGVn.jpeg",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1980,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/36c0a756-f7a9-4b42-a6d6-ba3820e65de2/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-01T11:56:52Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-01 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 56,
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽非 ready → 5，L=56）3→5",
+    "previous": {
+     "classic": 3,
+     "obscurity": 3,
+     "accessibility": 3,
+     "source": "manual:rerate-20261101",
+     "checkedAt": "2026-11-01T00:00:00Z",
+     "note": "三軸重評（RUBRIC 2026-11-01）：瑞士留學生團的南斯拉夫盤；國營廠；長篇融合",
+     "rarity": "uncommon"
+    }
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "伯恩的南斯拉夫留學生，在 1978 年春天湊成了這支團。Birdland 是他們的團名，路線是融合與調式爵士，成團地點在瑞士。1980 年 7 月 8、9 日回貝爾格勒錄音，用的是電台的第六錄音室，PGP RTB 發行。吉他手 Predrag Banković 寫了前三首，四首長度各超過 6 分鐘。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/2956328",
+     "https://www.discogs.com/artist/605549",
+     "https://last.fm/music/Birdland/+wiki",
+     "https://musicbrainz.org/release-group/36c0a756-f7a9-4b42-a6d6-ba3820e65de2"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-01T11:56:52Z",
+    "note": "Apple us／ro／hu／cz／de 以藝人＋盤名搜尋，無曲目對得上原盤的條目（最佳候選 Birdland《Middle Ground - Single》0/4，非同盤）；MB release url-rels 亦無 Apple 連結。國營廠原盤未進串流，照實標 unavailable。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Petar Ugrin",
+   "album": "Samo muzika",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "manual",
+    "rgMbid": "",
+    "upc": "",
+    "aliasesChecked": true,
+    "mbAbsenceProof": {
+     "queries": [
+      "artist:\"Petar Ugrin\" AND releasegroup:\"Samo muzika\" → count 0",
+      "releasegroup:\"Samo muzika\" → count 1"
+     ],
+     "checkedAt": "2026-11-01T11:55:01.393Z",
+     "conclusion": "「artist:\"Petar Ugrin\" AND releasegroup:\"Samo muzika\"」count=0，前五筆無同藝人同盤名的 release-group；「releasegroup:\"Samo muzika\"」count=1，前五筆無同藝人同盤名的 release-group。策展層：MusicBrainz release-group 搜尋藝人＋盤名皆無結果（2026-11-01）；國營廠盤以 Discogs master 與主發行頁建立身分"
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/master/586251-Petar-Ugrin-Samo-Muzika",
+     "https://www.discogs.com/release/1244753"
+    ],
+    "manualRuling": "雲端主線 2026-11-01 依 ALBUM_ONBOARDING §1 人工身分核可（店主 2026-09-02 裁定權下放；薄細項策展線 add-20261101-eb1）",
+    "coverSourceHint": "discogs",
+    "aliasReview": "南斯拉夫 斯洛維尼亞 RTV Ljubljana：斯洛維尼亞廣播的融合爵士，Petar Ugrin（小提琴）領軍的電聲爵士，Cosmic Sounds《Balkan Express》系列常引｜策展無疑點｜MB 查無（），走 §1 人工身分。證據：https://www.discogs.com/master/586251-Petar-Ugrin-Samo-Muzika https://www.discogs.com/release/1244753 https://www.discogs.com/master/586251-Petar-Ugrin-Samo-Muzika https://www.discogs.com/release/1244753 https://i.discogs.com/iALaRs_V8m6eo3h9ntPgBWYaLRmZBZcngnFEF62zECM/rs:fit/g:sm/q:90/h:600/w:598/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyNDQ3/NTMtMTYyNDQ1NTc4/Ny02MDExLmpwZWc.jpeg",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1979,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "source": "discogs",
+    "discogsMasterId": "586251",
+    "discogsReleaseId": "1244753",
+    "url": "https://i.discogs.com/iALaRs_V8m6eo3h9ntPgBWYaLRmZBZcngnFEF62zECM/rs:fit/g:sm/q:90/h:600/w:598/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyNDQ3/NTMtMTYyNDQ1NTc4/Ny02MDExLmpwZWc.jpeg",
+    "note": "MB 查無；取 Discogs master 586251（「Samo Muzika」1979）主圖；主線 2026-11-01 目視與盤名相符。",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-01T11:56:52Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 820,
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽非 ready → 5，L=820）3→5",
+    "previous": {
+     "classic": 4,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "manual:rerate-20261101",
+     "checkedAt": "2026-11-01T00:00:00Z",
+     "note": "三軸重評（RUBRIC 2026-11-01）：Ugrin 唯一個人盤，回顧評價高；地方國營廠；爵士放克含人聲",
+     "rarity": "uncommon"
+    }
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "Petar Ugrin 一輩子只出了這一張個人錄音室專輯。1963 至 1971 年，斯洛維尼亞愛樂的小提琴手裡就有他；1966 年他又以小號贏得維也納年輕爵士小號手比賽。這張融合爵士 1979 年由 RTV Ljubljana 發行，製作、編曲兼指揮是 Jože Privšek。Ugrin 一人吹小號與富魯格號，也拉電小提琴、開口主唱，電貝斯與康加鼓推著律動。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/1244753",
+     "https://sl.wikipedia.org/wiki/Samo_muzika",
+     "https://sl.wikipedia.org/wiki/Petar_Ugrin",
+     "https://www.discogs.com/master/586251-Petar-Ugrin-Samo-Muzika"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-01T11:56:52Z",
+    "note": "Apple us／ro／hu／cz／de 以藝人＋盤名搜尋，無曲目對得上原盤的條目（最佳候選 Petar Ugrin Quintet《Ozri Se V Gnevu》0/7，非同盤）；MB release url-rels 亦無 Apple 連結。國營廠原盤未進串流，照實標 unavailable。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Stjepko Gut & Big Band RTB",
+   "album": "Stjepko Gut & Big Band RTB",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "manual",
+    "rgMbid": "",
+    "upc": "",
+    "aliasesChecked": true,
+    "mbAbsenceProof": {
+     "queries": [
+      "artist:\"Stjepko Gut & Big Band RTB\" AND releasegroup:\"Stjepko Gut & Big Band RTB\" → count 0",
+      "releasegroup:\"Stjepko Gut & Big Band RTB\" → count 0"
+     ],
+     "checkedAt": "2026-11-01T11:55:04.067Z",
+     "conclusion": "「artist:\"Stjepko Gut & Big Band RTB\" AND releasegroup:\"Stjepko Gut & Big Band RTB\"」count=0，前五筆無同藝人同盤名的 release-group；「releasegroup:\"Stjepko Gut & Big Band RTB\"」count=0，前五筆無同藝人同盤名的 release-group。策展層：MusicBrainz release-group 搜尋藝人＋盤名皆無結果（2026-11-01）；國營廠盤以 Discogs master 與主發行頁建立身分"
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/master/882078-Stjepko-Gut-Big-Band-RTB-Stjepko-Gut-Big-Band-RTB",
+     "https://www.discogs.com/release/7445345"
+    ],
+    "manualRuling": "雲端主線 2026-11-01 依 ALBUM_ONBOARDING §1 人工身分核可（店主 2026-09-02 裁定權下放；薄細項策展線 add-20261101-eb1）",
+    "coverSourceHint": "discogs",
+    "aliasReview": "南斯拉夫 PGP-RTB（貝爾格勒）：小號手 Stjepko Gut 與貝爾格勒 RTB 大樂團的編曲作品，80 年代南斯拉夫大樂團爵士代表｜⚠ 若主線已收 RTB 大樂團 1963 可汰換｜MB 查無（），走 §1 人工身分。證據：https://www.discogs.com/master/882078-Stjepko-Gut-Big-Band-RTB-Stjepko-Gut-Big-Band-RTB https://www.discogs.com/release/7445345 https://www.discogs.com/master/882078-Stjepko-Gut-Big-Band-RTB-Stjepko-Gut-Big-Band-RTB https://www.discogs.com/release/7445345 https://i.discogs.com/7PNSqoVZpEHYQ9Xyz4P8K_jlOz_0Mu1lt8NQMjC0AFA/rs:fit/g:sm/q:90/h:587/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTc0NDUz/NDUtMTQ0MTY0Mjc1/Mi0yNTgwLmpwZWc.jpeg",
+    "queryAlias": "",
+    "selfTitledVerified": true
+   },
+   "research": {
+    "suggestedYear": 1987,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "source": "discogs",
+    "discogsMasterId": "882078",
+    "discogsReleaseId": "7445345",
+    "url": "https://i.discogs.com/7PNSqoVZpEHYQ9Xyz4P8K_jlOz_0Mu1lt8NQMjC0AFA/rs:fit/g:sm/q:90/h:587/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTc0NDUz/NDUtMTQ0MTY0Mjc1/Mi0yNTgwLmpwZWc.jpeg",
+    "note": "MB 查無；取 Discogs master 882078（「Stjepko Gut & Big Band RTB」1987）主圖；主線 2026-11-01 目視與盤名相符。",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-01T11:56:52Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 2,
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽非 ready → 5，L=2）3→5",
+    "previous": {
+     "classic": 3,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "manual:rerate-20261101",
+     "checkedAt": "2026-11-01T00:00:00Z",
+     "note": "三軸重評（RUBRIC 2026-11-01）：Gut 大樂團盤，地位中等；國營廠；大樂團短曲",
+     "rarity": "rare"
+    }
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "標準曲只有一首，其餘多是小號手 Gut 自己寫的。Lionel Hampton 全明星大樂團在 1980 至 1981 年的小號席上，坐著塞爾維亞的 Stjepko Gut；這回替他伴奏的是 RTB 大樂團。他吹小號，也彈 Fender 電鋼琴。PGP RTB 在 1987 年發行，那首標準曲是〈Polka Dots And Moonbeams〉。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/7445345",
+     "https://sr.wikipedia.org/wiki/Стјепко_Гут",
+     "https://en.wikipedia.org/wiki/Stjepko_Gut",
+     "https://www.discogs.com/master/882078-Stjepko-Gut-Big-Band-RTB-Stjepko-Gut-Big-Band-RTB"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-01T11:56:52Z",
+    "note": "Apple us／ro／hu／cz／de 以藝人＋盤名搜尋，無曲目對得上原盤的條目；MB release url-rels 亦無 Apple 連結。國營廠原盤未進串流，照實標 unavailable。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Jazz Focus 65",
+   "album": "Quartet Jazz Focus-65",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "manual",
+    "rgMbid": "",
+    "upc": "",
+    "aliasesChecked": true,
+    "mbAbsenceProof": {
+     "queries": [
+      "artist:\"Jazz Focus 65\" AND releasegroup:\"Quartet Jazz Focus-65\" → count 0",
+      "releasegroup:\"Quartet Jazz Focus-65\" → count 0",
+      "artist:\"Джаз Фокус-65\" AND releasegroup:\"Quartet Jazz Focus-65\" → count 0"
+     ],
+     "checkedAt": "2026-11-01T11:55:08.228Z",
+     "conclusion": "「artist:\"Jazz Focus 65\" AND releasegroup:\"Quartet Jazz Focus-65\"」count=0，前五筆無同藝人同盤名的 release-group；「releasegroup:\"Quartet Jazz Focus-65\"」count=0，前五筆無同藝人同盤名的 release-group；「artist:\"Джаз Фокус-65\" AND releasegroup:\"Quartet Jazz Focus-65\"」count=0，前五筆無同藝人同盤名的 release-group。策展層：MusicBrainz release-group 搜尋藝人＋盤名皆無結果（2026-11-01）；國營廠盤以 Discogs master 與主發行頁建立身分"
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/master/1241832-Джаз-Фокус-65-Квартет-Джаз-Фокус-65-Quartet-Jazz-Focus-65",
+     "https://www.discogs.com/release/3698688"
+    ],
+    "manualRuling": "雲端主線 2026-11-01 依 ALBUM_ONBOARDING §1 人工身分核可（店主 2026-09-02 裁定權下放；薄細項策展線 add-20261101-eb1）",
+    "coverSourceHint": "discogs",
+    "exceptionReason": "現場例外：Jazz Focus 65 在保加利亞本國只出過這張 LP，即 1967 年索非亞 Bulgaria 音樂廳實況；樂團的錄音室盤是西德 MPS 發行，屬另一批。",
+    "exceptionEvidenceUrls": [
+     "https://www.discogs.com/release/3698688",
+     "https://www.discogs.com/master/1241832"
+    ],
+    "aliasReview": "保加利亞 Balkanton：Milcho Leviev 領軍的 Jazz Focus 65，保加利亞第一支現代爵士四重奏，Balkanton 首張正規 LP，Leviev 出走前的代表作｜⚠ 1968 年第二張（master 640036）同名封套相近，只提第一張避免盤名撞；MPS《Jazz Focus '65》西德盤留給 eb5｜MB 查無（），走 §1 人工身分。證據：https://www.discogs.com/master/1241832-Джаз-Фокус-65-Квартет-Джаз-Фокус-65-Quartet-Jazz-Focus-65 https://www.discogs.com/release/3698688 https://www.discogs.com/master/1241832-Джаз-Фокус-65-Квартет-Джаз-Фокус-65-Quartet-Jazz-Focus-65 https://www.discogs.com/release/3698688 https://i.discogs.com/8Ps7UjyMfVUdQc_36_fiItJh91aH2vV0wVoJkLhImQs/rs:fit/g:sm/q:90/h:600/w:597/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM2OTg2/ODgtMTUzOTUzMTcz/OS0yOTE0LmpwZWc.jpeg",
+    "queryAlias": "Джаз Фокус-65"
+   },
+   "research": {
+    "suggestedYear": 1967,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "source": "discogs",
+    "discogsMasterId": "1241832",
+    "discogsReleaseId": "3698688",
+    "url": "https://i.discogs.com/8Ps7UjyMfVUdQc_36_fiItJh91aH2vV0wVoJkLhImQs/rs:fit/g:sm/q:90/h:600/w:597/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM2OTg2/ODgtMTUzOTUzMTcz/OS0yOTE0LmpwZWc.jpeg",
+    "note": "MB 查無；取 Discogs master 1241832（「Квартет \"Джаз Фокус 65\" = Quartet \"Jazz Focus-65\"」1967）主圖；主線 2026-11-01 目視與盤名相符。",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-01T11:56:52Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": null,
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：Leviev Jazz Focus 65 首張，保加利亞爵士重要盤；國營廠；調式現場長曲",
+    "previous": {
+     "classic": 3,
+     "obscurity": 3,
+     "accessibility": 3,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-11-01T11:56:52Z",
+     "note": "機器基線 undefined/undefined/undefined（Last.fm listeners 查無）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 錨點制：國營廠／小廠正規發行，在該國爵士圈有名、圈外幾乎無人知（錨點 3）；Last.fm 查無 是英語圈偏差，不採機器 5。經典軸 3（該國爵士史代表盤，無國際正典地位）。",
+     "rarity": "uncommon"
+    }
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "作家 Radoy Ralin 出的點子，讓這支四重奏成了形。創團人 Milcho Leviev 彈鋼琴，1965 年在保加利亞成立 Jazz Focus '65。唱片錄自 1967 年 4 月索非亞 Bulgaria 音樂廳的一場現場，由 Balkanton 發行。旋律交給長笛，五首裡有巴哈的〈Badinerie〉。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/3698688",
+     "https://www.discogs.com/master/1241832",
+     "https://www.alo.bg/gramofonni-plochi-s-balgarska-muzika-ot-balkanton-bulgarian-music-vinyl-records-made-by-balkanton-2999962",
+     "https://en.wikipedia.org/wiki/Milcho_Leviev",
+     "https://www.discogs.com/master/1241832-Джаз-Фокус-65-Квартет-Джаз-Фокус-65-Quartet-Jazz-Focus-65"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-01T11:56:52Z",
+    "note": "Apple us／ro／hu／cz／de 以藝人＋盤名搜尋，無曲目對得上原盤的條目；MB release url-rels 亦無 Apple 連結。國營廠原盤未進串流，照實標 unavailable。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Septet Rousse",
+   "album": "Septet Rousse",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "5f9c1155-ed13-4589-a9f1-2f14d0447cf5",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "保加利亞 Balkanton：魯塞七重奏的 Balkanton 自由爵士專輯，80 年代保加利亞少見的前衛盤｜策展無疑點｜MB release-group 5f9c1155-ed13-4589-a9f1-2f14d0447cf5：title「Septet Rousse」、Album、first-release-date 1980、artist-credit「Septet Rousse」。證據：https://musicbrainz.org/release-group/5f9c1155-ed13-4589-a9f1-2f14d0447cf5 https://www.discogs.com/master/732303-Septet-Rousse-Оркестър-Русе-Septet-Rousse https://www.discogs.com/release/1023496 https://i.discogs.com/KTYtOm6mYMeO5bB5KJZiwVMgRSp7dIy8QPMmon1MB8Q/rs:fit/g:sm/q:90/h:600/w:597/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwMjM0/OTYtMTQxMDU0MTI2/Ny0zOTgyLmpwZWc.jpeg",
+    "queryAlias": "Оркестър Русе",
+    "selfTitledVerified": true
+   },
+   "research": {
+    "suggestedYear": 1980,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/5f9c1155-ed13-4589-a9f1-2f14d0447cf5/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-01T11:56:52Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-01 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 4,
+    "listeners": 14,
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "note": "全池稽核 audit-20261102（方案 C）：Balkanton 國營廠，Discogs 標 free jazz；非極小廠｜L=14",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 3,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽非 ready → 5，L=14）3→5",
+     "rarity": "uncommon"
+    }
+   },
+   "rarity": "epic",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "多瑙河港城魯塞的名字，掛在這支七人團的封面上。七人編制的保加利亞自由爵士團，鋼琴、合成器與 Fender 電鋼琴都歸 Ivan Kurtev，其餘是吉他、電貝斯、鼓與兩支薩克斯風。魯塞位於保加利亞北部；他們 1980 年錄下這張的地方，是索非亞的 Balkanton 錄音室。〈Opus 2〉長 12 分 20 秒。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/1023496",
+     "https://musicbrainz.org/release-group/5f9c1155-ed13-4589-a9f1-2f14d0447cf5",
+     "https://www.discogs.com/master/732303"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-01T11:56:52Z",
+    "note": "Apple us／ro／hu／cz／de 以藝人＋盤名搜尋，無曲目對得上原盤的條目；MB release url-rels 亦無 Apple 連結。國營廠原盤未進串流，照實標 unavailable。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Lyubomir Denev Jazz Trio",
+   "album": "Lyubomir Denev Jazz Trio",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "manual",
+    "rgMbid": "",
+    "upc": "",
+    "aliasesChecked": true,
+    "mbAbsenceProof": {
+     "queries": [
+      "artist:\"Lyubomir Denev Jazz Trio\" AND releasegroup:\"Lyubomir Denev Jazz Trio\" → count 0",
+      "releasegroup:\"Lyubomir Denev Jazz Trio\" → count 0",
+      "artist:\"Любомир Денев\" AND releasegroup:\"Lyubomir Denev Jazz Trio\" → count 0"
+     ],
+     "checkedAt": "2026-11-01T11:55:13.004Z",
+     "conclusion": "「artist:\"Lyubomir Denev Jazz Trio\" AND releasegroup:\"Lyubomir Denev Jazz Trio\"」count=0，前五筆無同藝人同盤名的 release-group；「releasegroup:\"Lyubomir Denev Jazz Trio\"」count=0，前五筆無同藝人同盤名的 release-group；「artist:\"Любомир Денев\" AND releasegroup:\"Lyubomir Denev Jazz Trio\"」count=0，前五筆無同藝人同盤名的 release-group。策展層：MusicBrainz release-group 搜尋藝人＋盤名皆無結果（2026-11-01）；國營廠盤以 Discogs master 與主發行頁建立身分"
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/master/731785-Lyubomir-Denev-Jazz-Trio-And-Petko-Tomanov-Lyubomir-Denev-Jazz-Trio",
+     "https://www.discogs.com/release/1654518"
+    ],
+    "manualRuling": "雲端主線 2026-11-01 依 ALBUM_ONBOARDING §1 人工身分核可（店主 2026-09-02 裁定權下放；薄細項策展線 add-20261101-eb1）",
+    "coverSourceHint": "discogs",
+    "aliasReview": "保加利亞 Balkanton：鋼琴手 Lyubomir Denev 與 Petko Tomanov 的 Balkanton 三重奏，保加利亞爵士搖滾與前衛的交會｜策展無疑點｜MB 查無（），走 §1 人工身分。證據：https://www.discogs.com/master/731785-Lyubomir-Denev-Jazz-Trio-And-Petko-Tomanov-Lyubomir-Denev-Jazz-Trio https://www.discogs.com/release/1654518 https://www.discogs.com/master/731785-Lyubomir-Denev-Jazz-Trio-And-Petko-Tomanov-Lyubomir-Denev-Jazz-Trio https://www.discogs.com/release/1654518 https://i.discogs.com/V-OaUC__-RU8u6dAgOu40QRZugT8F77Ly-t2G8lgd5k/rs:fit/g:sm/q:90/h:500/w:500/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE2NTQ1/MTgtMTIzNDgwNTAw/NS5qcGVn.jpeg",
+    "queryAlias": "Любомир Денев",
+    "selfTitledVerified": true
+   },
+   "research": {
+    "suggestedYear": 1980,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "source": "discogs",
+    "discogsMasterId": "731785",
+    "discogsReleaseId": "1654518",
+    "url": "https://i.discogs.com/V-OaUC__-RU8u6dAgOu40QRZugT8F77Ly-t2G8lgd5k/rs:fit/g:sm/q:90/h:500/w:500/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE2NTQ1/MTgtMTIzNDgwNTAw/NS5qcGVn.jpeg",
+    "note": "MB 查無；取 Discogs master 731785（「Lyubomir Denev Jazz Trio」1980）主圖；主線 2026-11-01 目視與盤名相符。",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-01T11:56:52Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 4,
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽非 ready → 5，L=4）3→5",
+    "previous": {
+     "classic": 3,
+     "obscurity": 3,
+     "accessibility": 3,
+     "source": "manual:rerate-20261101",
+     "checkedAt": "2026-11-01T00:00:00Z",
+     "note": "三軸重評（RUBRIC 2026-11-01）：Denev 早期作；國營廠；前衛爵士搖滾",
+     "rarity": "uncommon"
+    }
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "還在念作曲系，他就帶著三重奏跑遍東歐，一路到古巴。維丁出身的 Lyubomir Denev 來自保加利亞，就讀索非亞國家音樂學院時帶團跑過捷克、波蘭與古巴等地的音樂節。1979 年作曲系畢業，同年他就進 Balkanton 的棚錄好三重奏爵士專輯，隔年出版。鋼琴、Fender、Clavinet、Mellotron 與 Moog 都由他一人彈。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/1654518",
+     "https://www.discogs.com/master/731785",
+     "https://bg.wikipedia.org/wiki/Любомир_Денев",
+     "https://www.discogs.com/master/731785-Lyubomir-Denev-Jazz-Trio-And-Petko-Tomanov-Lyubomir-Denev-Jazz-Trio"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-01T11:56:52Z",
+    "note": "Apple us／ro／hu／cz／de 以藝人＋盤名搜尋，無曲目對得上原盤的條目；MB release url-rels 亦無 Apple 連結。國營廠原盤未進串流，照實標 unavailable。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Vesselin Nikolov and White, Green and Red",
+   "album": "Don Juan",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "manual",
+    "rgMbid": "",
+    "upc": "",
+    "aliasesChecked": true,
+    "mbAbsenceProof": {
+     "queries": [
+      "artist:\"Vesselin Nikolov and White, Green and Red\" AND releasegroup:\"Don Juan\" → count 0",
+      "releasegroup:\"Don Juan\" → count 180",
+      "artist:\"Веселин Николов Дон Жуан\" AND releasegroup:\"Don Juan\" → count 0"
+     ],
+     "checkedAt": "2026-11-01T11:55:17.600Z",
+     "conclusion": "「artist:\"Vesselin Nikolov and White, Green and Red\" AND releasegroup:\"Don Juan\"」count=0，前五筆無同藝人同盤名的 release-group；「releasegroup:\"Don Juan\"」count=180，前五筆無同藝人同盤名的 release-group；「artist:\"Веселин Николов Дон Жуан\" AND releasegroup:\"Don Juan\"」count=0，前五筆無同藝人同盤名的 release-group。策展層：MusicBrainz release-group 搜尋藝人＋盤名皆無結果（2026-11-01）；國營廠盤以 Discogs master 與主發行頁建立身分"
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/master/846080-Vesselin-Nikolov-And-White-Green-And-Reds-Дон-Жуан-Don-Juan",
+     "https://www.discogs.com/release/3853019"
+    ],
+    "manualRuling": "雲端主線 2026-11-01 依 ALBUM_ONBOARDING §1 人工身分核可（店主 2026-09-02 裁定權下放；薄細項策展線 add-20261101-eb1）",
+    "coverSourceHint": "discogs",
+    "aliasReview": "保加利亞 Balkanton：保加利亞融合爵士代表，Vesselin Nikolov 與 White, Green and Red 的 Balkanton 專輯，Cosmic Sounds 保加利亞系列常引｜策展無疑點｜MB 查無（），走 §1 人工身分。證據：https://www.discogs.com/master/846080-Vesselin-Nikolov-And-White-Green-And-Reds-Дон-Жуан-Don-Juan https://www.discogs.com/release/3853019 https://www.discogs.com/master/846080-Vesselin-Nikolov-And-White-Green-And-Reds-Дон-Жуан-Don-Juan https://www.discogs.com/release/3853019 https://i.discogs.com/G-E8R0E8V-E7eX39OgnClpBbDZo0znMkhmyIv59vECI/rs:fit/g:sm/q:90/h:600/w:578/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM4NTMw/MTktMTU0MzM2MTIz/OC0zMTE2LmpwZWc.jpeg",
+    "queryAlias": "Веселин Николов Дон Жуан"
+   },
+   "research": {
+    "suggestedYear": 1979,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "source": "discogs",
+    "discogsMasterId": "846080",
+    "discogsReleaseId": "3853019",
+    "url": "https://i.discogs.com/G-E8R0E8V-E7eX39OgnClpBbDZo0znMkhmyIv59vECI/rs:fit/g:sm/q:90/h:600/w:578/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM4NTMw/MTktMTU0MzM2MTIz/OC0zMTE2LmpwZWc.jpeg",
+    "note": "MB 查無；取 Discogs master 846080（「Дон Жуан / Don Juan」1979）主圖；主線 2026-11-01 目視與盤名相符。",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-01T11:56:52Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": null,
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：Nikolov 樂團盤；國營廠；爵士搖滾帶前衛標籤",
+    "previous": {
+     "classic": 3,
+     "obscurity": 3,
+     "accessibility": 3,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-11-01T11:56:52Z",
+     "note": "機器基線 undefined/undefined/undefined（Last.fm listeners 查無）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 錨點制：國營廠／小廠正規發行，在該國爵士圈有名、圈外幾乎無人知（錨點 3）；Last.fm 查無 是英語圈偏差，不採機器 5。經典軸 3（該國爵士史代表盤，無國際正典地位）。",
+     "rarity": "uncommon"
+    }
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "帕扎爾吉克的一支流行樂團，後來怎麼吹起了爵士？答案在長笛手 Vesselin Nikolov 身上：這個保加利亞樂團 1971 年成軍，原本演流行曲目，是他把樂團帶向爵士。他除了長笛，也吹高音與次中音薩克斯風。1978 年 10 月的錄音由 Balkanton 錄音室完成，1979 年出版，Fender 電鋼琴、Moog 與電貝斯撐起底盤。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/3853019",
+     "https://www.discogs.com/master/846080",
+     "https://www.bnr.bg/en/post/101044748/petar-jurkov-we-lit-the-spark-the-young-are-continuing-the-legacy",
+     "https://www.bta.bg/bg/galleries/archive/182224",
+     "https://www.discogs.com/master/846080-Vesselin-Nikolov-And-White-Green-And-Reds-Дон-Жуан-Don-Juan"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-01T11:56:52Z",
+    "note": "Apple us／ro／hu／cz／de 以藝人＋盤名搜尋，無曲目對得上原盤的條目；MB release url-rels 亦無 Apple 連結。國營廠原盤未進串流，照實標 unavailable。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Focus Jazz Quartet",
+   "album": "Focus Jazz Quartet",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "manual",
+    "rgMbid": "",
+    "upc": "",
+    "aliasesChecked": true,
+    "mbAbsenceProof": {
+     "queries": [
+      "artist:\"Focus Jazz Quartet\" AND releasegroup:\"Focus Jazz Quartet\" → count 0",
+      "releasegroup:\"Focus Jazz Quartet\" → count 0",
+      "artist:\"Джаз Квартет Фокус\" AND releasegroup:\"Focus Jazz Quartet\" → count 0"
+     ],
+     "checkedAt": "2026-11-01T11:55:25.757Z",
+     "conclusion": "「artist:\"Focus Jazz Quartet\" AND releasegroup:\"Focus Jazz Quartet\"」count=0，前五筆無同藝人同盤名的 release-group；「releasegroup:\"Focus Jazz Quartet\"」count=0，前五筆無同藝人同盤名的 release-group；「artist:\"Джаз Квартет Фокус\" AND releasegroup:\"Focus Jazz Quartet\"」count=0，前五筆無同藝人同盤名的 release-group。策展層：MusicBrainz release-group 搜尋藝人＋盤名皆無結果（2026-11-01）；國營廠盤以 Discogs master 與主發行頁建立身分"
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/master/732201-Джаз-Квартет-Фокус-Джаз-Квартет-Фокус-Focus-Jazz-Quartet",
+     "https://www.discogs.com/release/5917435"
+    ],
+    "manualRuling": "雲端主線 2026-11-01 依 ALBUM_ONBOARDING §1 人工身分核可（店主 2026-09-02 裁定權下放；薄細項策展線 add-20261101-eb1）",
+    "coverSourceHint": "discogs",
+    "aliasReview": "保加利亞 Balkanton：Focus 爵士四重奏（Jazz Focus 65 的後繼）的 Balkanton 專輯，後咆勃與爵士搖滾並陳｜策展無疑點｜MB 查無（），走 §1 人工身分。證據：https://www.discogs.com/master/732201-Джаз-Квартет-Фокус-Джаз-Квартет-Фокус-Focus-Jazz-Quartet https://www.discogs.com/release/5917435 https://www.discogs.com/master/732201-Джаз-Квартет-Фокус-Джаз-Квартет-Фокус-Focus-Jazz-Quartet https://www.discogs.com/release/5917435 https://i.discogs.com/d3dUreGCsBdJUoVM-wTH7ovwJlBIfhOUEdkkVJNHV-M/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTU5MTc0/MzUtMTQwNjI4NjU0/Ny00NDczLmpwZWc.jpeg",
+    "queryAlias": "Джаз Квартет Фокус",
+    "selfTitledVerified": true
+   },
+   "research": {
+    "suggestedYear": 1986,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "source": "discogs",
+    "discogsMasterId": "732201",
+    "discogsReleaseId": "5917435",
+    "url": "https://i.discogs.com/d3dUreGCsBdJUoVM-wTH7ovwJlBIfhOUEdkkVJNHV-M/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTU5MTc0/MzUtMTQwNjI4NjU0/Ny00NDczLmpwZWc.jpeg",
+    "note": "MB 查無；取 Discogs master 732201（「Джаз Квартет \"Фокус\" = \"Focus\" Jazz Quartet」1986）主圖；主線 2026-11-01 目視與盤名相符。",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-01T11:56:52Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 5,
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "第一輪值補冷門度下限（ADDENDUM 2026-11-02）；冷門度下限（L<1000 試聽非 ready → 5，L=5）3→5",
+    "previous": {
+     "classic": 3,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "manual:rerate-20261101",
+     "checkedAt": "2026-11-01T00:00:00Z",
+     "note": "三軸重評（RUBRIC 2026-11-01）：Focus 四重奏單張；國營廠；後咆勃／調式",
+     "rarity": "rare"
+    }
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "錄音那年，鋼琴手和鼓手另起爐灶，還拿了獎。中音長笛領旋律、貝斯撐底，這支保加利亞爵士四重奏的鋼琴兼合成器是 Antoni Donchev，鼓則是 Hristo Yotsov。1985 年 6 月錄音；Donchev 與 Yotsov 同年另組 Acoustic Version，奪下比利時 Oelaart 首獎。唱片 1986 年由 Balkanton 推出。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/5917435",
+     "https://www.discogs.com/master/732201",
+     "https://bg.wikipedia.org/wiki/Антони_Дончев",
+     "https://www.discogs.com/master/732201-Джаз-Квартет-Фокус-Джаз-Квартет-Фокус-Focus-Jazz-Quartet"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-01T11:56:52Z",
+    "note": "Apple us／ro／hu／cz／de 以藝人＋盤名搜尋，無曲目對得上原盤的條目；MB release url-rels 亦無 Apple 連結。國營廠原盤未進串流，照實標 unavailable。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Theodosii Spassov & Stefan Moutafchiev",
+   "album": "The Long Road",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "manual",
+    "rgMbid": "",
+    "upc": "",
+    "aliasesChecked": true,
+    "mbAbsenceProof": {
+     "queries": [
+      "artist:\"Theodosii Spassov & Stefan Moutafchiev\" AND releasegroup:\"The Long Road\" → count 0",
+      "releasegroup:\"The Long Road\" → count 70",
+      "artist:\"Теодосий Спасов Дълъг Път\" AND releasegroup:\"The Long Road\" → count 0"
+     ],
+     "checkedAt": "2026-11-01T11:55:30.309Z",
+     "conclusion": "「artist:\"Theodosii Spassov & Stefan Moutafchiev\" AND releasegroup:\"The Long Road\"」count=0，前五筆無同藝人同盤名的 release-group；「releasegroup:\"The Long Road\"」count=70，前五筆無同藝人同盤名的 release-group；「artist:\"Теодосий Спасов Дълъг Път\" AND releasegroup:\"The Long Road\"」count=0，前五筆無同藝人同盤名的 release-group。策展層：MusicBrainz release-group 搜尋藝人＋盤名皆無結果（2026-11-01）；國營廠盤以 Discogs master 與主發行頁建立身分"
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/master/3015161-Теодосий-Спасов-Theodosii-Spassov-Стефан-Мутафчиев-Stefan-Moutafchiev-",
+     "https://www.discogs.com/release/2339037"
+    ],
+    "manualRuling": "雲端主線 2026-11-01 依 ALBUM_ONBOARDING §1 人工身分核可（店主 2026-09-02 裁定權下放；薄細項策展線 add-20261101-eb1）",
+    "coverSourceHint": "discogs",
+    "aliasReview": "保加利亞 Balkanton：Teodosii Spassov（卡瓦爾笛）與 Stefan Moutafchiev 的 Balkanton 專輯，保加利亞民謠融合爵士的起點｜策展無疑點｜MB 查無（），走 §1 人工身分。證據：https://www.discogs.com/master/3015161-Теодосий-Спасов-Theodosii-Spassov-Стефан-Мутафчиев-Stefan-Moutafchiev- https://www.discogs.com/release/2339037 https://www.discogs.com/master/3015161-Теодосий-Спасов-Theodosii-Spassov-Стефан-Мутафчиев-Stefan-Moutafchiev- https://www.discogs.com/release/2339037 https://i.discogs.com/pkJyUUi1er95KAOeHfJZLjJFyB0ozCq-rU49wPrE0Zc/rs:fit/g:sm/q:90/h:561/w:567/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIzMzkw/MzctMTI4NzUwMTU3/NC5naWY.jpeg",
+    "queryAlias": "Теодосий Спасов Дълъг Път"
+   },
+   "research": {
+    "suggestedYear": 1986,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz",
+    "world"
+   ],
+   "cover": {
+    "source": "discogs",
+    "discogsMasterId": "3015161",
+    "discogsReleaseId": "2339037",
+    "url": "https://i.discogs.com/pkJyUUi1er95KAOeHfJZLjJFyB0ozCq-rU49wPrE0Zc/rs:fit/g:sm/q:90/h:561/w:567/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIzMzkw/MzctMTI4NzUwMTU3/NC5naWY.jpeg",
+    "note": "MB 查無；取 Discogs master 3015161（「Дълъг Път = The Long Road」1986）主圖；主線 2026-11-01 目視與盤名相符。",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-01T11:56:52Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": null,
+    "source": "manual:rerate-20261101",
+    "checkedAt": "2026-11-01T00:00:00Z",
+    "note": "三軸重評（RUBRIC 2026-11-01）：Spassov 出道盤，非代表作；國營廠；卡瓦爾民謠短曲",
+    "previous": {
+     "classic": 3,
+     "obscurity": 3,
+     "accessibility": 3,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-11-01T11:56:52Z",
+     "note": "機器基線 undefined/undefined/undefined（Last.fm listeners 查無）；主線：冷門軸照 ALBUM_ONBOARDING §0.8 錨點制：國營廠／小廠正規發行，在該國爵士圈有名、圈外幾乎無人知（錨點 3）；Last.fm 查無 是英語圈偏差，不採機器 5。經典軸 3（該國爵士史代表盤，無國際正典地位）。",
+     "rarity": "uncommon"
+    }
+   },
+   "rarity": "common",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "同一支卡瓦爾笛，一會兒跟民歌合奏團，一會兒跟爵士組合。保加利亞的斜吹木笛卡瓦爾，在這張唱片上由 Theodosii Spassov 吹奏，Stefan Moutafchiev 負責編曲與指揮。A 面前四首由廣播電視民歌合奏團伴奏，後兩首出自 Spassov 之手，交給爵士組合 Jazz Line 演奏。Balkanton 於 1986 年發行。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/2339037",
+     "https://www.discogs.com/master/3015161",
+     "https://bg.wikipedia.org/wiki/Теодосий_Спасов",
+     "https://www.discogs.com/master/3015161-Теодосий-Спасов-Theodosii-Spassov-Стефан-Мутафчиев-Stefan-Moutafchiev-"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-01T11:56:52Z",
+    "note": "Apple us／ro／hu／cz／de 以藝人＋盤名搜尋，無曲目對得上原盤的條目（最佳候選 Theodosii Spassov《The Long Road II》4/11，非同盤）；MB release url-rels 亦無 Apple 連結。國營廠原盤未進串流，照實標 unavailable。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  }
+ ]
+}

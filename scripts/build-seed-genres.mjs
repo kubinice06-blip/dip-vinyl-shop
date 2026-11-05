@@ -31,6 +31,20 @@ const SOUL_FIX = new Set([
 ]);
 // 專輯級覆寫：Last.fm 個別誤標（jazz/rock 雜訊）直接指定正確標籤
 const ALBUM_GENRE_FIX = {
+  'Vomir|Proanomie': ['electronic', 'rock'], // ax8 2026-11-04：私發噪音盤 worker 無標籤，照同藝人《Claustration》
+  // 新頂點盤線 ax1／ax2（2026-11-04）：噪音／聲音詩／古典前衛卡標籤推不出曲風
+  // ax6（2026-11-04）：Sete Star Sept 標籤空、Zeitkratzer 被誤標 folk
+  "Sete Star Sept|Revision of Noise": ["rock","electronic"],
+  "Zeitkratzer|WHITEHOUSE electronics": ["electronic","classical"],
+  "Ildjarn|Strength and Anger": ["rock","electronic"],
+  "Monde Bruits|Purgatory": ["electronic","rock"],
+  "Vomir|Claustration": ["electronic","rock"],
+  "Sissy Spacek|Sissy Spacek": ["electronic","rock"],
+  "François Dufrêne|Cri-Rythmes": ["electronic"],
+  "Demetrio Stratos|Metrodora": ["electronic","rock"],
+  "Martine Viard|Aperghis: Récitations": ["classical"],
+  "Ensemble 13|Hespos: Works": ["classical"],
+  "Bernhard Kontarsky|Zimmermann: Requiem für einen jungen Dichter": ["classical"],
   'Bobby Brown|Bobby': ['hiphop','soul'],
   'Guy|Guy': ['hiphop','soul'],
   'Total|Kima, Keisha & Pam': ['hiphop','soul'],
@@ -48,6 +62,23 @@ const ALBUM_GENRE_FIX = {
   'Murs|Murs 3:16: The 9th Edition': ['hiphop'],
   'Techno Animal|Re-Entry': ['hiphop','electronic'],
   'Moor Mother|Analog Fluids of Sonic Black Holes': ['hiphop','electronic'],
+  // 2026-11-04 新頂點盤線（流亡 ax3／ax4）：私壓盤 Spotify／Last.fm 無標籤，照卡單曲風
+  "Richard William Turner|The Passenger": ["folk"],
+  "Free Enterprize|The Eye of the Beholder": ["folk"],
+  "McAllen|McAllen": ["folk"],
+  "Jeremy Dormouse|The Toad Recordings": ["folk"],
+  "Rin Eric|The Soundtrack to the Movie in Your Mind": ["folk"],
+  "Princess Flower and the Moon Rays|Dreaming the Magic of Your Maya": ["folk"],
+  "Jesper Siliya|Giant Steps": ["rock"],
+  "Fanny's Group|Cium Mesra": ["rock"],
+  "Marlui Miranda|Olho D'Água": ["world","folk"],
+  // 同名團標籤污染（Last.fm 把別的 Circulation／Probe／Smack／Ghostdance 的標籤算進來）
+  "Ghostdance|Ghostdance": ["folk","rock"],
+  "Circulation|Tank Tracks": ["rock"],
+  "Smack|Smack": ["rock"],
+  "Probe|Direction": ["rock"],
+  "Urfalı Babi|Disko Kebap": ["world","electronic"],
+  "Cool Knights|Bana Mulenga": ["soul","rock"],
 };
 function applySoulFix(artist, genres, album) {
   if (album !== undefined && ALBUM_GENRE_FIX[artist + '|' + album]) return ALBUM_GENRE_FIX[artist + '|' + album].slice();

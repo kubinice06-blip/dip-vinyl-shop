@@ -1,0 +1,57 @@
+{
+ "drop": [
+  [
+   "Mária Toldy",
+   "Viaszbaba"
+  ],
+  [
+   "Karel Velebný & SHQ",
+   "Jazzové nebajky"
+  ],
+  [
+   "Jiří Stivín",
+   "Zvěrokruh"
+  ],
+  [
+   "Gustav Brom & Maynard Ferguson",
+   "Maynard + Gustav"
+  ],
+  [
+   "Aladár Pege Trio",
+   "Bass On Top"
+  ],
+  [
+   "György Vukán",
+   "Derby"
+  ],
+  [
+   "Aladár Pege",
+   "Pege"
+  ],
+  [
+   "Mihály Dresch Quartet",
+   "...Folyondár..."
+  ],
+  [
+   "Walter Norris & Aladár Pege",
+   "Synchronicity"
+  ]
+ ],
+ "fix": {
+  "Szabados Quartet|Az Esküvő = The Wedding": {
+   "artist": "György Szabados",
+   "queryAlias": "Szabados Quartet；Szabados György"
+  },
+  "György Szabados / MAKUZ|A Szarvassá Vált Fiak": {
+   "artist": "György Szabados & MAKUZ",
+   "queryAlias": "Szabados György；MAKUZ"
+  },
+  "Pege Trio|Bass On Top": {
+   "artist": "Aladár Pege Trio",
+   "queryAlias": "Pege Trio；Pege Aladár"
+  },
+  "Walter Norris & Aladár Pege|Synchronicity": {
+   "country": "hu"
+  }
+ }
+}

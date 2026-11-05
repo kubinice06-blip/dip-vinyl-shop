@@ -1,0 +1,593 @@
+{
+ "generatedAt": "2026-10-30",
+ "source": "onboarding-manifest-add-20261030-sf02-20261030.json",
+ "note": "店主 Spotify 追蹤藝人補卡池 add-20261030-sf02 上架卡缺介紹的藝人（ALBUM_ONBOARDING §11）。主名冊 roster-20260929.json 為單行 JSON、並行工作階段必互撞，併入主名冊由藝人介紹工作階段處理。",
+ "artists": 30,
+ "entries": [
+  {
+   "key": "betcover!!",
+   "name": "betcover!!",
+   "variants": null,
+   "cards": 2,
+   "tier": "D",
+   "mainGenre": "rock",
+   "yearMin": 2021,
+   "yearMax": 2022,
+   "script": "latin",
+   "classicalPerformer": false,
+   "collab": false,
+   "sampleAlbums": [
+    "時間",
+    "卵"
+   ],
+   "shard": null,
+   "addedBy": "add-20261030-sf02",
+   "inMainRoster": false
+  },
+  {
+   "key": "クラムボン",
+   "name": "クラムボン",
+   "variants": null,
+   "cards": 1,
+   "tier": "D",
+   "mainGenre": "pop",
+   "yearMin": 2003,
+   "yearMax": 2003,
+   "script": "ja",
+   "classicalPerformer": false,
+   "collab": false,
+   "sampleAlbums": [
+    "imagination"
+   ],
+   "shard": null,
+   "addedBy": "add-20261030-sf02",
+   "inMainRoster": false
+  },
+  {
+   "key": "dir en grey",
+   "name": "DIR EN GREY",
+   "variants": null,
+   "cards": 2,
+   "tier": "D",
+   "mainGenre": "rock",
+   "yearMin": 2005,
+   "yearMax": 2008,
+   "script": "latin",
+   "classicalPerformer": false,
+   "collab": false,
+   "sampleAlbums": [
+    "UROBOROS",
+    "Withering to death."
+   ],
+   "shard": null,
+   "addedBy": "add-20261030-sf02",
+   "inMainRoster": false
+  },
+  {
+   "key": "grass valley",
+   "name": "GRASS VALLEY",
+   "variants": null,
+   "cards": 1,
+   "tier": "D",
+   "mainGenre": "rock",
+   "yearMin": 1989,
+   "yearMax": 1989,
+   "script": "latin",
+   "classicalPerformer": false,
+   "collab": false,
+   "sampleAlbums": [
+    "LOGOS～行～"
+   ],
+   "shard": null,
+   "addedBy": "add-20261030-sf02",
+   "inMainRoster": false
+  },
+  {
+   "key": "きのこ帝国",
+   "name": "きのこ帝国",
+   "variants": null,
+   "cards": 2,
+   "tier": "D",
+   "mainGenre": "rock",
+   "yearMin": 2014,
+   "yearMax": 2016,
+   "script": "ja",
+   "classicalPerformer": false,
+   "collab": false,
+   "sampleAlbums": [
+    "フェイクワールドワンダーランド",
+    "愛のゆくえ"
+   ],
+   "shard": null,
+   "addedBy": "add-20261030-sf02",
+   "inMainRoster": false
+  },
+  {
+   "key": "kirinji",
+   "name": "KIRINJI",
+   "variants": null,
+   "cards": 2,
+   "tier": "D",
+   "mainGenre": "pop",
+   "yearMin": 2000,
+   "yearMax": 2001,
+   "script": "latin",
+   "classicalPerformer": false,
+   "collab": false,
+   "sampleAlbums": [
+    "3",
+    "Fine"
+   ],
+   "shard": null,
+   "addedBy": "add-20261030-sf02",
+   "inMainRoster": false
+  },
+  {
+   "key": "ogre you asshole",
+   "name": "OGRE YOU ASSHOLE",
+   "variants": null,
+   "cards": 2,
+   "tier": "D",
+   "mainGenre": "rock",
+   "yearMin": 2011,
+   "yearMax": 2012,
+   "script": "latin",
+   "classicalPerformer": false,
+   "collab": false,
+   "sampleAlbums": [
+    "homely",
+    "100年後"
+   ],
+   "shard": null,
+   "addedBy": "add-20261030-sf02",
+   "inMainRoster": false
+  },
+  {
+   "key": "the back horn",
+   "name": "THE BACK HORN",
+   "variants": null,
+   "cards": 2,
+   "tier": "D",
+   "mainGenre": "rock",
+   "yearMin": 2001,
+   "yearMax": 2006,
+   "script": "latin",
+   "classicalPerformer": false,
+   "collab": false,
+   "sampleAlbums": [
+    "人間プログラム",
+    "太陽の中の生活"
+   ],
+   "shard": null,
+   "addedBy": "add-20261030-sf02",
+   "inMainRoster": false
+  },
+  {
+   "key": "thee michelle gun elephant",
+   "name": "Thee Michelle Gun Elephant",
+   "variants": null,
+   "cards": 2,
+   "tier": "D",
+   "mainGenre": "rock",
+   "yearMin": 1997,
+   "yearMax": 1998,
+   "script": "latin",
+   "classicalPerformer": false,
+   "collab": false,
+   "sampleAlbums": [
+    "Chicken Zombies",
+    "GEAR BLUES"
+   ],
+   "shard": null,
+   "addedBy": "add-20261030-sf02",
+   "inMainRoster": false
+  },
+  {
+   "key": "yogee new waves",
+   "name": "Yogee New Waves",
+   "variants": null,
+   "cards": 2,
+   "tier": "D",
+   "mainGenre": "pop",
+   "yearMin": 2014,
+   "yearMax": 2017,
+   "script": "latin",
+   "classicalPerformer": false,
+   "collab": false,
+   "sampleAlbums": [
+    "PARAISO",
+    "WAVES"
+   ],
+   "shard": null,
+   "addedBy": "add-20261030-sf02",
+   "inMainRoster": false
+  },
+  {
+   "key": "揺らぎ",
+   "name": "揺らぎ",
+   "variants": null,
+   "cards": 1,
+   "tier": "D",
+   "mainGenre": "rock",
+   "yearMin": 2018,
+   "yearMax": 2018,
+   "script": "ja",
+   "classicalPerformer": false,
+   "collab": false,
+   "sampleAlbums": [
+    "Still Dreaming, Still Deafening"
+   ],
+   "shard": null,
+   "addedBy": "add-20261030-sf02",
+   "inMainRoster": false
+  },
+  {
+   "key": "kiki vivi lily",
+   "name": "kiki vivi lily",
+   "variants": null,
+   "cards": 1,
+   "tier": "D",
+   "mainGenre": "pop",
+   "yearMin": 2019,
+   "yearMax": 2019,
+   "script": "latin",
+   "classicalPerformer": false,
+   "collab": false,
+   "sampleAlbums": [
+    "vivid"
+   ],
+   "shard": null,
+   "addedBy": "add-20261030-sf02",
+   "inMainRoster": false
+  },
+  {
+   "key": "mei ehara",
+   "name": "mei ehara",
+   "variants": null,
+   "cards": 2,
+   "tier": "D",
+   "mainGenre": "folk",
+   "yearMin": 2017,
+   "yearMax": 2020,
+   "script": "latin",
+   "classicalPerformer": false,
+   "collab": false,
+   "sampleAlbums": [
+    "Sway",
+    "Ampersands"
+   ],
+   "shard": null,
+   "addedBy": "add-20261030-sf02",
+   "inMainRoster": false
+  },
+  {
+   "key": "ntski",
+   "name": "NTsKi",
+   "variants": null,
+   "cards": 1,
+   "tier": "D",
+   "mainGenre": "electronic",
+   "yearMin": 2021,
+   "yearMax": 2021,
+   "script": "latin",
+   "classicalPerformer": false,
+   "collab": false,
+   "sampleAlbums": [
+    "Orca"
+   ],
+   "shard": null,
+   "addedBy": "add-20261030-sf02",
+   "inMainRoster": false
+  },
+  {
+   "key": "wink",
+   "name": "Wink",
+   "variants": null,
+   "cards": 2,
+   "tier": "D",
+   "mainGenre": "pop",
+   "yearMin": 1989,
+   "yearMax": 1989,
+   "script": "latin",
+   "classicalPerformer": false,
+   "collab": false,
+   "sampleAlbums": [
+    "Especially For You ～優しさにつつまれて～",
+    "Twin Memories"
+   ],
+   "shard": null,
+   "addedBy": "add-20261030-sf02",
+   "inMainRoster": false
+  },
+  {
+   "key": "コスモス・ファクトリー",
+   "name": "コスモス・ファクトリー",
+   "variants": null,
+   "cards": 2,
+   "tier": "D",
+   "mainGenre": "rock",
+   "yearMin": 1973,
+   "yearMax": 1975,
+   "script": "ja",
+   "classicalPerformer": false,
+   "collab": false,
+   "sampleAlbums": [
+    "トランシルヴァニアの古城",
+    "謎のコスモス号"
+   ],
+   "shard": null,
+   "addedBy": "add-20261030-sf02",
+   "inMainRoster": false
+  },
+  {
+   "key": "ジョー山中",
+   "name": "ジョー山中",
+   "variants": null,
+   "cards": 2,
+   "tier": "D",
+   "mainGenre": "rock",
+   "yearMin": 1974,
+   "yearMax": 1982,
+   "script": "ja",
+   "classicalPerformer": false,
+   "collab": false,
+   "sampleAlbums": [
+    "Joe",
+    "Reggae Vibration"
+   ],
+   "shard": null,
+   "addedBy": "add-20261030-sf02",
+   "inMainRoster": false
+  },
+  {
+   "key": "爆風スランプ",
+   "name": "爆風スランプ",
+   "variants": null,
+   "cards": 1,
+   "tier": "D",
+   "mainGenre": "rock",
+   "yearMin": 1988,
+   "yearMax": 1988,
+   "script": "ja",
+   "classicalPerformer": false,
+   "collab": false,
+   "sampleAlbums": [
+    "HIGHLANDER"
+   ],
+   "shard": null,
+   "addedBy": "add-20261030-sf02",
+   "inMainRoster": false
+  },
+  {
+   "key": "greenmachine",
+   "name": "GREENMACHiNE",
+   "variants": null,
+   "cards": 2,
+   "tier": "D",
+   "mainGenre": "rock",
+   "yearMin": 1996,
+   "yearMax": 1998,
+   "script": "latin",
+   "classicalPerformer": false,
+   "collab": false,
+   "sampleAlbums": [
+    "D.A.M.N.",
+    "The Earth Beater"
+   ],
+   "shard": null,
+   "addedBy": "add-20261030-sf02",
+   "inMainRoster": false
+  },
+  {
+   "key": "cohol",
+   "name": "COHOL",
+   "variants": null,
+   "cards": 1,
+   "tier": "D",
+   "mainGenre": "rock",
+   "yearMin": 2010,
+   "yearMax": 2010,
+   "script": "latin",
+   "classicalPerformer": false,
+   "collab": false,
+   "sampleAlbums": [
+    "空洞"
+   ],
+   "shard": null,
+   "addedBy": "add-20261030-sf02",
+   "inMainRoster": false
+  },
+  {
+   "key": "中学生棺桶",
+   "name": "中学生棺桶",
+   "variants": null,
+   "cards": 1,
+   "tier": "D",
+   "mainGenre": "rock",
+   "yearMin": 2010,
+   "yearMax": 2010,
+   "script": "zh",
+   "classicalPerformer": false,
+   "collab": false,
+   "sampleAlbums": [
+    "矛先についたガム"
+   ],
+   "shard": null,
+   "addedBy": "add-20261030-sf02",
+   "inMainRoster": false
+  },
+  {
+   "key": "犬神サーカス団",
+   "name": "犬神サーカス団",
+   "variants": null,
+   "cards": 2,
+   "tier": "D",
+   "mainGenre": "rock",
+   "yearMin": 1999,
+   "yearMax": 2003,
+   "script": "ja",
+   "classicalPerformer": false,
+   "collab": false,
+   "sampleAlbums": [
+    "地獄の子守唄",
+    "神の犬"
+   ],
+   "shard": null,
+   "addedBy": "add-20261030-sf02",
+   "inMainRoster": false
+  },
+  {
+   "key": "ないあがらせっと",
+   "name": "ないあがらせっと",
+   "variants": null,
+   "cards": 1,
+   "tier": "D",
+   "mainGenre": "rock",
+   "yearMin": 2009,
+   "yearMax": 2009,
+   "script": "ja",
+   "classicalPerformer": false,
+   "collab": false,
+   "sampleAlbums": [
+    "POP CITY"
+   ],
+   "shard": null,
+   "addedBy": "add-20261030-sf02",
+   "inMainRoster": false
+  },
+  {
+   "key": "ヨシンバ",
+   "name": "ヨシンバ",
+   "variants": null,
+   "cards": 1,
+   "tier": "D",
+   "mainGenre": "rock",
+   "yearMin": 1999,
+   "yearMax": 1999,
+   "script": "ja",
+   "classicalPerformer": false,
+   "collab": false,
+   "sampleAlbums": [
+    "042"
+   ],
+   "shard": null,
+   "addedBy": "add-20261030-sf02",
+   "inMainRoster": false
+  },
+  {
+   "key": "ピューパ!!",
+   "name": "ピューパ!!",
+   "variants": null,
+   "cards": 1,
+   "tier": "D",
+   "mainGenre": "pop",
+   "yearMin": 2020,
+   "yearMax": 2020,
+   "script": "ja",
+   "classicalPerformer": false,
+   "collab": false,
+   "sampleAlbums": [
+    "えそらことば"
+   ],
+   "shard": null,
+   "addedBy": "add-20261030-sf02",
+   "inMainRoster": false
+  },
+  {
+   "key": "比屋定篤子",
+   "name": "比屋定篤子",
+   "variants": null,
+   "cards": 2,
+   "tier": "D",
+   "mainGenre": "pop",
+   "yearMin": 1999,
+   "yearMax": 1999,
+   "script": "zh",
+   "classicalPerformer": false,
+   "collab": false,
+   "sampleAlbums": [
+    "ささやかれた夢の話",
+    "ルア・ラランジャ"
+   ],
+   "shard": null,
+   "addedBy": "add-20261030-sf02",
+   "inMainRoster": false
+  },
+  {
+   "key": "姫神",
+   "name": "姫神",
+   "variants": null,
+   "cards": 1,
+   "tier": "D",
+   "mainGenre": "classical",
+   "yearMin": 1981,
+   "yearMax": 1981,
+   "script": "zh",
+   "classicalPerformer": true,
+   "collab": false,
+   "sampleAlbums": [
+    "奥の細道"
+   ],
+   "shard": null,
+   "addedBy": "add-20261030-sf02",
+   "inMainRoster": false
+  },
+  {
+   "key": "poison girl friend",
+   "name": "POiSON GiRL FRiEND",
+   "variants": null,
+   "cards": 1,
+   "tier": "D",
+   "mainGenre": "electronic",
+   "yearMin": 1993,
+   "yearMax": 1993,
+   "script": "latin",
+   "classicalPerformer": false,
+   "collab": false,
+   "sampleAlbums": [
+    "Shyness"
+   ],
+   "shard": null,
+   "addedBy": "add-20261030-sf02",
+   "inMainRoster": false
+  },
+  {
+   "key": "the 天国畑 japon",
+   "name": "THE 天国畑 JAPON",
+   "variants": null,
+   "cards": 1,
+   "tier": "D",
+   "mainGenre": "rock",
+   "yearMin": 2018,
+   "yearMax": 2018,
+   "script": "zh",
+   "classicalPerformer": false,
+   "collab": false,
+   "sampleAlbums": [
+    "BORONGE"
+   ],
+   "shard": null,
+   "addedBy": "add-20261030-sf02",
+   "inMainRoster": false
+  },
+  {
+   "key": "静香",
+   "name": "静香",
+   "variants": null,
+   "cards": 1,
+   "tier": "D",
+   "mainGenre": "rock",
+   "yearMin": 1994,
+   "yearMax": 1994,
+   "script": "zh",
+   "classicalPerformer": false,
+   "collab": false,
+   "sampleAlbums": [
+    "天界のペルソナ"
+   ],
+   "shard": null,
+   "addedBy": "add-20261030-sf02",
+   "inMainRoster": false
+  }
+ ]
+}

@@ -49,14 +49,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 4,
-    "obscurity": 3,
+    "classic": 3,
+    "obscurity": 4,
     "accessibility": 2,
     "listeners": 6,
-    "source": "manual:regional-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "manual:regional-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：限量300張合輯，非原專輯；L<1000，facts 記有正式數位版→4；迷幻放克；冷門度下限豁免：ADDENDUM 但書：確知有正式數位版"
    },
-   "rarity": "uncommon",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -114,11 +123,21 @@
    },
    "ratings": {
     "classic": 4,
-    "obscurity": 3,
+    "obscurity": 5,
     "accessibility": 2,
     "listeners": 31,
-    "source": "manual:regional-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：RS Indonesia 150 大第28、樂團最暢銷；L<1000 無串流→5；民謠搖滾",
+     "rarity": "epic"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：RS Indonesia 150 收錄，最暢銷作；聽眾 31、無串流套下限 5；非殿堂｜L=31"
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -179,10 +198,20 @@
     "obscurity": 3,
     "accessibility": 2,
     "listeners": 36,
-    "source": "manual:regional-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Soneta 第四輯、〈Darah Muda〉招牌曲，dangdut 代表作；L<1000 無串流→5；dangdut",
+     "rarity": "uncommon"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：印尼 dangdut 天王主流盤，Soneta Vol.4 拆名致聽眾數疑錯配，不套下限，照錨點 3｜L=36"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -242,10 +271,20 @@
     "obscurity": 3,
     "accessibility": 2,
     "listeners": 11,
-    "source": "manual:regional-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Soneta 第七輯，電影插曲，二線作；L<1000 無串流→5；dangdut",
+     "rarity": "rare"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：印尼主流天王盤，Soneta 編號系列拆名，聽眾數疑錯配；照錨點 3｜L=11"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -301,12 +340,21 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 4,
+    "classic": 5,
     "obscurity": 3,
     "accessibility": 2,
     "listeners": 11779,
-    "source": "manual:regional-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "manual:regional-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：RS Indonesia 150 大專輯第1；印尼一線、圈外少人知；抒情流行搖滾"
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -362,14 +410,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 3,
+    "classic": 4,
+    "obscurity": 5,
     "accessibility": 2,
     "listeners": 61,
-    "source": "manual:regional-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "manual:regional-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：首張個人作，兩曲入 RS Indonesia 百五十大歌；L<1000 無串流→5；流行搖滾"
    },
-   "rarity": "rare",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -443,12 +500,21 @@
     "note": "試聽探測釘定的 collectionId 1555572704（id）：Karimata — Pasti"
    },
    "ratings": {
-    "classic": 2,
+    "classic": 4,
     "obscurity": 3,
     "accessibility": 2,
     "listeners": 1734,
-    "source": "manual:regional-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "manual:regional-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Karimata 首作、入 RS Indonesia 150 大；L=1734→下限3；fusion"
    },
    "rarity": "rare",
    "apexAssessment": {
@@ -470,7 +536,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/2f/3e/02/2f3e02d1-097e-41fd-ed27-2da6fba5aff5/mzaf_3630404667361450662.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/06/a8/34/06a83453-7d67-41f3-93ba-0961d2de51a6/mzaf_9190296263996353332.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -516,11 +582,20 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 3,
-    "accessibility": 2,
+    "obscurity": 4,
+    "accessibility": 3,
     "listeners": 619,
-    "source": "manual:regional-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "manual:regional-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Smithsonian Folkways 系列第20卷；L<1000 有串流→下限4；田野吉他歌"
    },
    "rarity": "rare",
    "apexAssessment": {
@@ -541,7 +616,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/68/54/b2/6854b248-34b0-01b7-616c-6c3bbaacb89a/mzaf_5830341481515092835.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/Music/v4/a7/3f/30/a73f30af-712b-cb34-9812-08413b1f65d6/mzaf_6697182969415461379.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -586,14 +661,24 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 4,
+    "classic": 5,
     "obscurity": 3,
-    "accessibility": 2,
+    "accessibility": 3,
     "listeners": 18,
-    "source": "manual:regional-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 4,
+     "accessibility": 3,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：入選美國國會 National Recording Registry、開啟 Explorer 系列；Nonesuch Explorer 有串流→4；甘美朗田野錄音；冷門度下限豁免：ADDENDUM 但書：確知有正式數位版",
+     "rarity": "epic"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：Nonesuch Explorer開山盤；18聽眾疑錯配（再發名Bali: Music from…，串流有），照錨點正規廠3｜L=18"
    },
-   "rarity": "uncommon",
+   "rarity": "epic",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -650,22 +735,42 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 3,
-    "obscurity": 3,
+    "classic": 5,
+    "obscurity": 5,
     "accessibility": 2,
     "listeners": 135,
-    "source": "manual:regional-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "manual:regional-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：首度融合 molam 與 luk thung，開創 luk thung Isan；L<1000 無串流→5；泰東北流行"
    },
-   "rarity": "rare",
+   "rarity": "epic",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "頂點重整（apex-rebalance-20261103，2026-11-03）：升為流亡。1975 泰國商業熱門盤（電影主題曲），EM Records 2014 重發；原盤非私壓（主線補收：代理判 no 是因缺聖杯口碑，但過硬條件：listeners 有效 1–299、非錯配、冷門度 5）",
+    "evidenceUrls": [
+     "https://www.last.fm/music/Angkanang+Kunchai+With+Ubon-Pattana+Band/Isan+Lam+Plearn",
+     "https://www.forcedexposure.com/Catalog/EM.1126CD.html"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:apex-rebalance-20261103"
    },
    "description": {
-    "text": "十六歲那年她唱紅〈Isan Lam Phloen〉，molam 就此接上曼谷的節奏。那是 1971 年的錄音，第一次把 Isan 的 molam 與 luk thung 接成 luk thung Isan。四年後它成了她首張專輯的同名曲，原盤 1975 年發行，Ubon-Pattana Band 伴奏、Surin Phaksiri 製作。他的做法把 molam 班子改裝成搖滾樂隊般的編制，底下是鼓、貝斯與電吉他，khaen 仍在。EM Records 2014 年做過復刻。",
+    "text": "《Isan Lam Plearn》是泰國東北烏汶府歌手 Angkanang Kunchai 的首張專輯，1975 年發行。泰國以外長年很少人知道她，2014 年 EM Records 才重新發行這張。她十幾歲就在 Ubon-Pattana Band 當主唱，同名曲是她 16 歲發行的首支單曲，後來成為經典，近年還被泰國流行歌手翻唱。整張以她年輕的歌聲為中心，聲音比製作人 Surin Paksiri 其他打磨精緻的製作來得原始。",
     "sourceUrls": [
      "https://emrecords.bandcamp.com/album/isan-lam-phloen",
      "https://emrecords.ocnk.net/product/13",
@@ -682,8 +787,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -718,13 +823,22 @@
    },
    "ratings": {
     "classic": 4,
-    "obscurity": 3,
-    "accessibility": 2,
+    "obscurity": 5,
+    "accessibility": 3,
     "listeners": 25,
-    "source": "manual:regional-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "manual:regional-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Finders Keepers 考古合輯；L<1000 無串流→5；重型迷幻 luk thung、fuzz 吉他"
    },
-   "rarity": "uncommon",
+   "rarity": "epic",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -789,11 +903,20 @@
    },
    "ratings": {
     "classic": 4,
-    "obscurity": 3,
+    "obscurity": 5,
     "accessibility": 2,
     "listeners": 27,
-    "source": "manual:regional-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "manual:regional-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：EM／Paradise Bangkok 精選，代表錄音；L<1000 無串流→5；molam 輕快"
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -852,14 +975,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 3,
-    "accessibility": 2,
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 1,
     "listeners": null,
-    "source": "manual:regional-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "manual:regional-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Hoàng Oanh 第二卷盤帶，非代表作；聽眾缺值，原盤卡帶小量、未見再發；bolero 吟詩"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -920,11 +1052,20 @@
    },
    "ratings": {
     "classic": 4,
-    "obscurity": 3,
+    "obscurity": 5,
     "accessibility": 2,
     "listeners": 10,
-    "source": "manual:regional-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "manual:regional-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Sublime Frequencies 八年研究的權威合輯；L<1000 無串流→5；車庫流行"
    },
    "rarity": "uncommon",
    "apexAssessment": {

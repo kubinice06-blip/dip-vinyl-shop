@@ -1,0 +1,456 @@
+{
+ "group": "sf04b",
+ "factions": [
+  {
+   "id": "jp-bedroom",
+   "zh": "日本寢室電子",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "lofi-hiphop",
+   "zh": "Lo-fi 嘻哈",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "jp-hiphop",
+   "zh": "日本嘻哈",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "jp-ambient",
+   "zh": "日本 ambient",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "hu-electronic",
+   "zh": "電子",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "jp-hardcore",
+   "zh": "日本硬核",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "post-rock",
+   "zh": "後搖",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "cn-shoegaze",
+   "zh": "華語 shoegaze",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "indie-pop",
+   "zh": "獨立流行",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "jp-psych",
+   "zh": "日本迷幻",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "jp-rock",
+   "zh": "日本搖滾",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "jp-electronic",
+   "zh": "日本電子",
+   "count": 1,
+   "why": ""
+  }
+ ],
+ "albums": [
+  {
+   "artist": "kinoue64",
+   "album": "空間、事情、時間、事象。",
+   "year": 2022,
+   "label": "BSDJ / Reasonable Records",
+   "country": "jp",
+   "faction": "jp-bedroom",
+   "genres": [
+    "electronic",
+    "pop"
+   ],
+   "why": "日本寢室系製作人的首張全長，奠定其空靈電子與日常感歌聲的風格",
+   "moodGuess": {
+    "x": 2.6,
+    "y": -0.3,
+    "z": -0.4,
+    "why": "輕盈電子拍與疏離人聲，微涼"
+   },
+   "evidence": [
+    "https://music.apple.com/jp/album/1608512211",
+    "https://musicbrainz.org/release-group/01197e7d-5f3f-4f54-a806-2a60cd315b58"
+   ],
+   "spotifyName": "kinoue64",
+   "mbRgMbid": "01197e7d-5f3f-4f54-a806-2a60cd315b58",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "多張專輯無公認代表，取首張全長；2023 年另有《終末エンドロール》"
+  },
+  {
+   "artist": "Emapea",
+   "album": "Zoning Out Volume 1",
+   "year": 2018,
+   "label": "Cold Busted",
+   "country": "pl",
+   "faction": "lofi-hiphop",
+   "genres": [
+    "hiphop",
+    "electronic"
+   ],
+   "why": "波蘭 lo-fi 節拍製作人，Zoning Out 系列為其招牌，Cold Busted 發行",
+   "moodGuess": {
+    "x": 2.0,
+    "y": 0.6,
+    "z": 0.5,
+    "why": "暖調採樣、慵懶鼓點"
+   },
+   "evidence": [
+    "https://music.apple.com/us/album/1339218544",
+    "https://musicbrainz.org/release-group/ebb79bd7-e957-4297-aac2-9e9dfaecd039"
+   ],
+   "spotifyName": "Emapea",
+   "mbRgMbid": "ebb79bd7-e957-4297-aac2-9e9dfaecd039",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "多為節拍集，代表作無評論共識；取招牌系列首作"
+  },
+  {
+   "artist": "志人",
+   "album": "Zymolytic Human ~発酵人間~",
+   "year": 2012,
+   "label": "P-VINE RECORDS",
+   "country": "jp",
+   "faction": "jp-hiphop",
+   "genres": [
+    "hiphop"
+   ],
+   "why": "降神成員志人的個人代表全長，獨特詩性flow",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 0.4,
+    "z": 0.3,
+    "why": "詩意說唱配鬆弛節拍"
+   },
+   "evidence": [
+    "https://music.apple.com/jp/album/1857543255",
+    "https://musicbrainz.org/release-group/aa89105e-5d2b-4727-bdcf-60a398e88eb3"
+   ],
+   "spotifyName": "sibitt",
+   "mbRgMbid": "aa89105e-5d2b-4727-bdcf-60a398e88eb3",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Sibitt",
+   "uncertain": "Spotify 寫法 sibitt＝志人（Discogs 345683）；另有與スガダイロー合作《詩種》"
+  },
+  {
+   "artist": "Ironomi",
+   "album": "虹",
+   "year": 2015,
+   "label": "Kitchen. Label",
+   "country": "jp",
+   "faction": "jp-ambient",
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "why": "日本 ambient／電子作者，Kitchen. Label 發行的柔光之作",
+   "moodGuess": {
+    "x": 1.6,
+    "y": -0.2,
+    "z": 0.3,
+    "why": "柔和環境電子與吉他殘響"
+   },
+   "evidence": [
+    "https://music.apple.com/jp/album/1512512928",
+    "https://musicbrainz.org/release-group/68520dcf-8092-4f8d-b899-2d6f333c3eee"
+   ],
+   "spotifyName": "Ironomi",
+   "mbRgMbid": "68520dcf-8092-4f8d-b899-2d6f333c3eee",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "多張專輯，代表作憑印象取《虹》"
+  },
+  {
+   "artist": "Magamura",
+   "album": "Supernaturals",
+   "year": 2017,
+   "label": "Si Kebko Music",
+   "country": "hu",
+   "faction": "hu-electronic",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Magamura 唯一全長，雙黑膠限量發行",
+   "moodGuess": {
+    "x": 3.0,
+    "y": 0.5,
+    "z": -0.3,
+    "why": "律動電子，微冷"
+   },
+   "evidence": [
+    "https://music.apple.com/jp/album/1283296203",
+    "https://www.discogs.com/release/10023740"
+   ],
+   "spotifyName": "Magamura",
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "artist Magamura 無MB條目",
+     "releasegroup:Supernaturals AND artist:Magamura 0 筆"
+    ],
+    "checkedAt": "2026-10-30",
+    "conclusion": "MB 查無；以 Discogs release 10023740（Si Kebko Music，2xLP）與 Apple Music 為身分依據"
+   },
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/release/10023740",
+    "https://www.discogs.com/artist/1799610-Magamura"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "國籍依廠牌 Si Kebko（匈牙利）推定"
+  },
+  {
+   "artist": "Ill Bone",
+   "album": "死者",
+   "year": 1985,
+   "label": "Transrecords",
+   "country": "jp",
+   "faction": "jp-hardcore",
+   "genres": [
+    "rock"
+   ],
+   "why": "80年代日本地下噪音／硬核樂團唯一原始作品，2015 重發",
+   "moodGuess": {
+    "x": 4.3,
+    "y": 1.2,
+    "z": -1.0,
+    "why": "嘶吼噪音硬核，暗冷"
+   },
+   "evidence": [
+    "https://music.apple.com/jp/album/6782912177",
+    "https://musicbrainz.org/release-group/90548c82-9857-4581-9e75-1bf98cc0cd14"
+   ],
+   "spotifyName": "ILL BONE",
+   "mbRgMbid": "90548c82-9857-4581-9e75-1bf98cc0cd14",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "MB 類型為 EP，但 1985 年 Transrecords 作為主要作品發行，重發版 12 曲",
+   "queryAlias": "",
+   "uncertain": "Spotify 的 Ill Bone＝1985 日本樂團（非嘻哈）；與場景不符"
+  },
+  {
+   "artist": "concrete concrete",
+   "album": "Drifter",
+   "year": 2019,
+   "label": "Self-released",
+   "country": "us",
+   "faction": "post-rock",
+   "genres": [
+    "rock"
+   ],
+   "why": "器樂數學搖滾／後搖滾，唯一全長",
+   "moodGuess": {
+    "x": 3.2,
+    "y": 0.3,
+    "z": 0.0,
+    "why": "器樂math rock，節奏推進"
+   },
+   "evidence": [
+    "https://music.apple.com/jp/album/1473233618",
+    "https://musicbrainz.org/release-group/a1545a94-5d36-40b2-9ab8-197bbfa437e9"
+   ],
+   "spotifyName": "concrete concrete",
+   "mbRgMbid": "a1545a94-5d36-40b2-9ab8-197bbfa437e9",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "同名者多；以 Spotify 上有 Drifter 者為準，國籍未確認"
+  },
+  {
+   "artist": "Chestnut Bakery",
+   "album": "Diaries",
+   "year": 2015,
+   "label": "BoringProductions",
+   "country": "cn",
+   "faction": "cn-shoegaze",
+   "genres": [
+    "rock"
+   ],
+   "why": "中國 shoegaze／dream pop 樂團首張全長",
+   "moodGuess": {
+    "x": 2.8,
+    "y": 0.8,
+    "z": 0.1,
+    "why": "暖霧吉他與夢幻殘響"
+   },
+   "evidence": [
+    "https://music.apple.com/us/album/1867773485",
+    "https://musicbrainz.org/release-group/2ae03718-474a-42f7-8cfc-8a9dc0fe96ba"
+   ],
+   "spotifyName": "Chestnut Bakery",
+   "mbRgMbid": "2ae03718-474a-42f7-8cfc-8a9dc0fe96ba",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "AKA lisa",
+   "album": "Laminar Flow",
+   "year": 2025,
+   "label": "Time & Pitch Machine",
+   "country": "se",
+   "faction": "indie-pop",
+   "genres": [
+    "pop"
+   ],
+   "why": "瑞典獨立流行創作者首張全長",
+   "moodGuess": {
+    "x": 2.5,
+    "y": -0.2,
+    "z": 0.2,
+    "why": "輕柔 indie pop"
+   },
+   "evidence": [
+    "https://music.apple.com/us/album/1835390132",
+    "https://musicbrainz.org/release-group/2c4b1ce0-0f1f-4e6a-ae3e-926a3066d5e8"
+   ],
+   "spotifyName": "AKA lisa",
+   "mbRgMbid": "2c4b1ce0-0f1f-4e6a-ae3e-926a3066d5e8",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "SOFT",
+   "album": "Passing Tone",
+   "year": 2024,
+   "label": "Softribe",
+   "country": "jp",
+   "faction": "jp-psych",
+   "genres": [
+    "rock",
+    "jazz"
+   ],
+   "why": "京都 SOFT 結成 30 週年的第 11 張專輯，器樂迷幻",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 0.2,
+    "z": 0.2,
+    "why": "器樂迷幻，鬆弛"
+   },
+   "evidence": [
+    "https://music.apple.com/jp/album/1738504214",
+    "https://www.discogs.com/release/30921996-Soft-Passing-Tone",
+    "https://oye-records.com/releases/soft-passing-tone"
+   ],
+   "spotifyName": "SOFT",
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "MB artist Soft 42f724d4（Kyoto）release-group 僅 2 筆單曲",
+     "Passing Tone 無"
+    ],
+    "checkedAt": "2026-10-30",
+    "conclusion": "MB 未收錄此專輯；Discogs 30921996 LP Album 為身分依據"
+   },
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/release/30921996-Soft-Passing-Tone",
+    "https://oye-records.com/releases/soft-passing-tone"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Spotify 的 SOFT 無法百分百確定是京都樂團（以 Passing Tone 對上 iTunes 推定）；曲數僅 5"
+  },
+  {
+   "artist": "dip",
+   "album": "TIME ACID NO CRY AIR",
+   "year": 1997,
+   "label": "EASTWORLD",
+   "country": "jp",
+   "faction": "jp-rock",
+   "genres": [
+    "rock"
+   ],
+   "why": "日本 dip（ヤマジカズヒデ）代表作，迷幻另類搖滾",
+   "moodGuess": {
+    "x": 3.4,
+    "y": 0.7,
+    "z": -0.2,
+    "why": "迷幻吉他噪音"
+   },
+   "evidence": [
+    "https://music.apple.com/jp/album/1774600875",
+    "https://musicbrainz.org/release-group/3a0df86c-a270-4dd9-a407-19926f663ae0"
+   ],
+   "spotifyName": "dip",
+   "mbRgMbid": "3a0df86c-a270-4dd9-a407-19926f663ae0",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "dip ヤマジカズヒデ",
+   "uncertain": "代表作憑印象取 1997；另有《Love to Sleep》1995"
+  },
+  {
+   "artist": "in the blue shirt",
+   "album": "Recollect the Feeling",
+   "year": 2019,
+   "label": "The Wonder Laundry",
+   "country": "jp",
+   "faction": "jp-electronic",
+   "genres": [
+    "electronic"
+   ],
+   "why": "日本電子製作人 in the blue shirt 的代表全長，清新 chillwave 質地",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 0.0,
+    "z": 0.5,
+    "why": "暖色合成器與輕快電子"
+   },
+   "evidence": [
+    "https://music.apple.com/jp/album/1457910726",
+    "https://musicbrainz.org/release-group/2b0a406d-eac4-415b-87cf-001c799d4ba4"
+   ],
+   "spotifyName": "in the blue shirt",
+   "mbRgMbid": "2b0a406d-eac4-415b-87cf-001c799d4ba4",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "另有 Cyanotype 2015、Park with a Pond 2022"
+  }
+ ],
+ "notes": [
+  "跳過：U.TA屋塔 → 已在 curation-ml4.json（緩飆公路 Highway Cruising，mood-cells 線）",
+  "不收：Buddhablessyou（MB/Discogs/iTunes/WebSearch 均查無）"
+ ]
+}

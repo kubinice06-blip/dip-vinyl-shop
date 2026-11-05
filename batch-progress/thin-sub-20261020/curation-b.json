@@ -1,0 +1,770 @@
+{
+ "group": "b",
+ "factions": [
+  {
+   "id": "th",
+   "zh": "泰國",
+   "count": 11,
+   "why": "Carabao／Caravan 已在池；補 90s 另類搖滾、2000s 主流搖滾、phleng phuea chiwit 與考古合輯"
+  },
+  {
+   "id": "ph",
+   "zh": "菲律賓",
+   "count": 12,
+   "why": "Pinoy rock 正典：Rivermaya、Wolfgang、Sandwich、Parokya、UDD 等，補 70s Asin／Mike Hanopol 與 2019 IV of Spades"
+  },
+  {
+   "id": "my",
+   "zh": "馬來西亞",
+   "count": 9,
+   "why": "rock kapak（Search、Wings）加 90s–2000s 大馬搖滾與獨立"
+  }
+ ],
+ "albums": [
+  {
+   "artist": "Rivermaya",
+   "album": "RiverMaya",
+   "year": 1994,
+   "label": "BMG Records (Pilipinas)",
+   "country": "ph",
+   "faction": "ph",
+   "genres": [
+    "rock",
+    "pop"
+   ],
+   "why": "Pinoy rock 90 年代主流搖滾的起點，Rivermaya 同名處女作把 Eraserheads 之外的另一條旋律線帶進菲律賓主流電台。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/b642c153-e3b5-3ac1-b4d6-297d9ddf8087",
+    "https://www.discogs.com/master/1733774",
+    "https://en.wikipedia.org/wiki/Rivermaya_(album)"
+   ],
+   "mbRgMbid": "b642c153-e3b5-3ac1-b4d6-297d9ddf8087",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Rivermaya",
+   "uncertain": ""
+  },
+  {
+   "artist": "Rivermaya",
+   "album": "Trip",
+   "year": 1996,
+   "label": "BMG Records (Pilipinas)",
+   "country": "ph",
+   "faction": "ph",
+   "genres": [
+    "rock",
+    "pop"
+   ],
+   "why": "Rivermaya 最受推崇的第二張專輯，Rico Blanco 與 Bamboo 時期的寫作高峰，Pinoy rock 90 年代正典之一。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/082bad92-9aa2-3002-b66e-258c5c7e90e1",
+    "https://www.discogs.com/master/814264",
+    "https://en.wikipedia.org/wiki/Trip_(Rivermaya_album)"
+   ],
+   "mbRgMbid": "082bad92-9aa2-3002-b66e-258c5c7e90e1",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Wolfgang",
+   "album": "Wolfgang",
+   "year": 1995,
+   "label": "Ivory Music & Video",
+   "country": "ph",
+   "faction": "ph",
+   "genres": [
+    "rock"
+   ],
+   "why": "馬尼拉重搖滾／硬搖滾的代表，Wolfgang 同名處女作定下 90 年代菲律賓地下搖滾的粗礪聲響。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/d23c6285-feb8-4a4f-95b3-5a8ae90ab926",
+    "https://www.discogs.com/master/795033"
+   ],
+   "mbRgMbid": "d23c6285-feb8-4a4f-95b3-5a8ae90ab926",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Sandwich",
+   "album": "Grip Stand Throw",
+   "year": 1999,
+   "label": "BMG Records (Pilipinas)",
+   "country": "ph",
+   "faction": "ph",
+   "genres": [
+    "rock"
+   ],
+   "why": "Sandwich 的首張專輯，菲律賓 90 年代末另類／新浪潮搖滾的代表作，Raimund Marasigan 的舞曲化吉他寫法由此成形。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/6132bf51-1f83-3d16-976d-7e65a322ca8b",
+    "https://www.discogs.com/master/802483"
+   ],
+   "mbRgMbid": "6132bf51-1f83-3d16-976d-7e65a322ca8b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Up Dharma Down",
+   "album": "Bipolar",
+   "year": 2008,
+   "label": "Terno Recordings",
+   "country": "ph",
+   "faction": "ph",
+   "genres": [
+    "rock",
+    "electronic"
+   ],
+   "why": "Up Dharma Down 把 trip-hop 與夢幻搖滾帶進 Pinoy 獨立場景的代表作，2000 後菲律賓獨立搖滾的標竿。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/e833c7c9-197b-40b2-9b53-9fc8dff4c1e3",
+    "https://www.discogs.com/master/912081"
+   ],
+   "mbRgMbid": "e833c7c9-197b-40b2-9b53-9fc8dff4c1e3",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Parokya ni Edgar",
+   "album": "Buruguduystunstugudunstuy",
+   "year": 1997,
+   "label": "Universal Records",
+   "country": "ph",
+   "faction": "ph",
+   "genres": [
+    "rock",
+    "pop"
+   ],
+   "why": "Parokya ni Edgar 的第二張專輯，把 rap-rock 與搞笑歌詞推成菲律賓大學生世代的共同語言，90 年代後期 Pinoy rock 代表作。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/4f05f0d3-e6ed-3490-bc29-36b35ef4fa2c",
+    "https://www.discogs.com/master/786354"
+   ],
+   "mbRgMbid": "4f05f0d3-e6ed-3490-bc29-36b35ef4fa2c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Radioactive Sago Project",
+   "album": "Urban Gulaman",
+   "year": 2004,
+   "label": "Terno Recordings",
+   "country": "ph",
+   "faction": "ph",
+   "genres": [
+    "rock"
+   ],
+   "why": "spoken-word 加爵士搖滾的 Radioactive Sago Project 首張專輯，菲律賓 2000 年代獨立搖滾最怪也最有辨識度的一張。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/5dd75ff3-a57a-3567-816f-1661b03a9b50",
+    "https://www.discogs.com/master/4065049"
+   ],
+   "mbRgMbid": "5dd75ff3-a57a-3567-816f-1661b03a9b50",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "The Jerks",
+   "album": "The Jerks",
+   "year": 1997,
+   "label": "Star Records",
+   "country": "ph",
+   "faction": "ph",
+   "genres": [
+    "rock"
+   ],
+   "why": "The Jerks 的錄音室同名專輯，90 年代馬尼拉另類搖滾場景的代表，粗糙吉他與街頭歌詞。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/62828ab3-ee3b-4c93-b8e2-c06f24c246db",
+    "https://www.discogs.com/master/347581"
+   ],
+   "mbRgMbid": "62828ab3-ee3b-4c93-b8e2-c06f24c246db",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "IV of Spades",
+   "album": "CLAPCLAPCLAP!",
+   "year": 2019,
+   "label": "Warner Music Philippines",
+   "country": "ph",
+   "faction": "ph",
+   "genres": [
+    "rock",
+    "pop"
+   ],
+   "why": "IV of Spades 的首張專輯，以 70 年代 funk-rock 與 disco 復古聲響帶動 2010 年代 Pinoy 新世代搖滾。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/52df00e0-52e8-45a6-92f4-2be44df6c5f0",
+    "https://en.wikipedia.org/wiki/IV_of_Spades"
+   ],
+   "mbRgMbid": "52df00e0-52e8-45a6-92f4-2be44df6c5f0",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Asin",
+   "album": "Himig Ng Pag-ibig",
+   "year": 1979,
+   "label": "Ugat",
+   "country": "ph",
+   "faction": "ph",
+   "genres": [
+    "rock",
+    "folk"
+   ],
+   "why": "Asin 是 70 年代末菲律賓民謠搖滾與抗議歌謠的代表樂團，第二張專輯延續處女作的社會意識與在地民謠搖滾聲響。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/06f974e0-13e4-3c74-bf79-cfa5fefd9f18",
+    "https://www.discogs.com/master/625875"
+   ],
+   "mbRgMbid": "06f974e0-13e4-3c74-bf79-cfa5fefd9f18",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Mike Hanopol",
+   "album": "Buhay Musikero",
+   "year": 1977,
+   "label": "Jem",
+   "country": "ph",
+   "faction": "ph",
+   "genres": [
+    "rock"
+   ],
+   "why": "Juan de la Cruz Band 吉他手 Mike Hanopol 的 70 年代個人專輯，Pinoy hard rock／blues rock 的原點之一。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/6fbbed17-3e5c-42b7-a1bb-247a3a0a4859",
+    "https://www.discogs.com/master/739788"
+   ],
+   "mbRgMbid": "6fbbed17-3e5c-42b7-a1bb-247a3a0a4859",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Bamboo",
+   "album": "As the Music Plays",
+   "year": 2004,
+   "label": "PolyEast Records",
+   "country": "ph",
+   "faction": "ph",
+   "genres": [
+    "rock"
+   ],
+   "why": "Bamboo 脫離 Rivermaya 後的首張個人樂團專輯，把重一點的硬搖滾帶回菲律賓主流，2000 年代 Pinoy rock 銷量代表。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/6760a50e-e972-37ff-928c-6efb2d52b4f4",
+    "https://www.discogs.com/master/1031320"
+   ],
+   "mbRgMbid": "6760a50e-e972-37ff-928c-6efb2d52b4f4",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Loso",
+   "album": "Lo-Society",
+   "year": 1996,
+   "label": "More Music",
+   "country": "th",
+   "faction": "th",
+   "genres": [
+    "rock"
+   ],
+   "why": "Loso 的首張專輯，Sek Loso 領軍的泰國 90 年代中期另類／grunge 搖滾代表作，樂團名即由 high society 轉化而來。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/0e2f04b6-3942-4b38-b8f3-ea33bc189bba",
+    "https://www.discogs.com/master/795188",
+    "https://en.wikipedia.org/wiki/Loso"
+   ],
+   "mbRgMbid": "0e2f04b6-3942-4b38-b8f3-ea33bc189bba",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "โลโซ Lo Society",
+   "uncertain": ""
+  },
+  {
+   "artist": "Loso",
+   "album": "เอ็นเตอร์เทนเม้นท์",
+   "year": 1998,
+   "label": "GMM Grammy",
+   "country": "th",
+   "faction": "th",
+   "genres": [
+    "rock"
+   ],
+   "why": "Loso 第二張專輯 Entertainment，泰國搖滾主流化的里程碑，Sek Loso 把另類搖滾寫成全國合唱歌曲。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/22ca85cb-a367-40ef-9a7f-0313de60b67e",
+    "https://en.wikipedia.org/wiki/Loso"
+   ],
+   "mbRgMbid": "22ca85cb-a367-40ef-9a7f-0313de60b67e",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Loso Entertainment",
+   "uncertain": ""
+  },
+  {
+   "artist": "Silly Fools",
+   "album": "Candyman",
+   "year": 1999,
+   "label": "MGA",
+   "country": "th",
+   "faction": "th",
+   "genres": [
+    "rock",
+    "pop"
+   ],
+   "why": "Silly Fools 的突破專輯，泰國 90 年代末 pop-rock 與另類搖滾的代表，是 Bakery Music／More Music 時期泰國流行搖滾的代表唱片。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/593c9bff-9a87-3bc2-b5d4-e8d8525da7ab",
+    "https://www.discogs.com/master/1817849",
+    "https://en.wikipedia.org/wiki/Silly_Fools"
+   ],
+   "mbRgMbid": "593c9bff-9a87-3bc2-b5d4-e8d8525da7ab",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "แคนดี้แมน",
+   "uncertain": ""
+  },
+  {
+   "artist": "bodyslam",
+   "album": "bodyslam",
+   "year": 2002,
+   "label": "Genie Records",
+   "country": "th",
+   "faction": "th",
+   "genres": [
+    "rock"
+   ],
+   "why": "Bodyslam 的首張專輯，Yoonoo 把重一點的泰國硬搖滾推上主流，2000 年代泰國搖滾的核心樂團之一。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/84800d01-fbec-41dd-8529-0ad30ce745ff",
+    "https://www.discogs.com/master/1765535",
+    "https://en.wikipedia.org/wiki/Bodyslam"
+   ],
+   "mbRgMbid": "84800d01-fbec-41dd-8529-0ad30ce745ff",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Bodyslam",
+   "uncertain": ""
+  },
+  {
+   "artist": "Slot Machine",
+   "album": "Slot Machine",
+   "year": 2004,
+   "label": "Tero Records",
+   "country": "th",
+   "faction": "th",
+   "genres": [
+    "rock"
+   ],
+   "why": "Slot Machine 的首張專輯，2000 年代泰國另類搖滾的代表，是泰國另類搖滾圈的重要樂團首作。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/e3df1808-efe3-4358-b3f9-6c5ddacb12cf",
+    "https://en.wikipedia.org/wiki/Slot_Machine_(band)"
+   ],
+   "mbRgMbid": "e3df1808-efe3-4358-b3f9-6c5ddacb12cf",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Clash",
+   "album": "Soundcream",
+   "year": 2003,
+   "label": "GMM Grammy",
+   "country": "th",
+   "faction": "th",
+   "genres": [
+    "rock"
+   ],
+   "why": "Clash 的首張專輯，泰國 2000 年代初主流另類搖滾代表作，樂團後續在 GMM Grammy 體系裡長年活躍。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/87f88142-34b9-40b9-bc72-82f67a55513f",
+    "https://www.discogs.com/master/2717432",
+    "https://en.wikipedia.org/wiki/Clash_(Thai_band)"
+   ],
+   "mbRgMbid": "87f88142-34b9-40b9-bc72-82f67a55513f",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Moderndog",
+   "album": "เสริมสุขภาพ",
+   "year": 1994,
+   "label": "Bakery Music",
+   "country": "th",
+   "faction": "th",
+   "genres": [
+    "rock"
+   ],
+   "why": "Moderndog 的首張專輯，Bakery Music 旗下泰國另類搖滾的奠基作，據稱銷量逾百萬。",
+   "evidence": [
+    "https://www.discogs.com/master/1461562",
+    "https://en.wikipedia.org/wiki/Moderndog"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "release-group?query=artist:\"Moderndog\" AND releasegroup:\"Modern Dog\"（作品方向，count=0）",
+     "artist:\"Modern Dog\"（藝人方向，count=0）；artist:\"Moderndog\" 僅 1 個 ModernDog（c63263f7）且只收一張合輯 The Very Common of Moderndog"
+    ],
+    "checkedAt": "2026-10-20",
+    "conclusion": "MB 有 ModernDog 藝人但無 1994 首張專輯的 release-group；以 Discogs master 1461562 與維基百科 Discography 人工確認（首張專輯 Modern Dog / เสริมสุขภาพ，Bakery Music，1994）。"
+   },
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/1461562",
+    "https://en.wikipedia.org/wiki/Moderndog"
+   ],
+   "releaseException": "",
+   "queryAlias": "Modern Dog Soem Sukhaphap",
+   "uncertain": "MB 無此 release-group；封面主標題為泰文（Discogs 標題 เสริมสุขภาพ，維基稱 Modern Dog (Soem Sukhaphap)）。"
+  },
+  {
+   "artist": "Potato",
+   "album": "Life",
+   "year": 2005,
+   "label": "",
+   "country": "th",
+   "faction": "th",
+   "genres": [
+    "rock",
+    "pop"
+   ],
+   "why": "Potato 的第三張錄音室專輯，拿下 2005 年 Seed Awards 年度專輯，泰國 2000 年代主流 pop-rock 的代表作。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/3a08f065-7e1c-41ce-b09b-7996cda58ef0",
+    "https://en.wikipedia.org/wiki/Potato_(band)"
+   ],
+   "mbRgMbid": "3a08f065-7e1c-41ce-b09b-7996cda58ef0",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "發行廠牌 MB／維基未載，label 留空。"
+  },
+  {
+   "artist": "พงษ์สิทธิ์ คำภีร์",
+   "album": "เสือตัวที่ 11",
+   "year": 1990,
+   "label": "Music Train",
+   "country": "th",
+   "faction": "th",
+   "genres": [
+    "rock",
+    "folk"
+   ],
+   "why": "Phleng phuea chiwit 的代表人物之一 Pongsit Kampee，此張延續 80 年代 Carabao／Caravan 一脈把社會批判寫進民謠搖滾。",
+   "evidence": [
+    "https://www.discogs.com/master/870050",
+    "https://en.wikipedia.org/wiki/Pongsit_Kampee"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "release-group?query=artist:\"พงษ์สิทธิ์ คำภีร์\" AND releasegroup:\"Sua Tua Thi 11\"（作品方向，count=0）",
+     "release-group?query=artist:\"Pongsit Kampee\" AND releasegroup:\"เสือตัวที่ 11\"（count=0）；artist:\"พงษ์สิทธิ์ คำภีร์\" 有藝人 ea9f9fd7 但只收合輯 Best Hits"
+    ],
+    "checkedAt": "2026-10-20",
+    "conclusion": "MB 有藝人但無此專輯 release-group，Discogs master 870050 與維基百科人工確認（1990，Music Train）。"
+   },
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/870050",
+    "https://en.wikipedia.org/wiki/Pongsit_Kampee"
+   ],
+   "releaseException": "",
+   "queryAlias": "Pongsit Kampee Sua Tua Thi 11",
+   "uncertain": "MB 無此 release-group；Discogs 掛名為 คำภีร์，MB 為 พงษ์สิทธิ์ คำภีร์。"
+  },
+  {
+   "artist": "Various Artists",
+   "album": "Thai Beat a Go-Go, Volume 2",
+   "year": 2004,
+   "label": "Subliminal Sounds",
+   "country": "th",
+   "faction": "th",
+   "genres": [
+    "rock",
+    "world"
+   ],
+   "why": "考古整理盤（收錄 60 年代泰國樂團錄音，2004 年由 Subliminal Sounds 整理再發），泰國車庫／衝浪／beat 搖滾的重要檔案。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/272227fe-6659-3953-a104-d34740e70698",
+    "https://www.discogs.com/master/306317"
+   ],
+   "mbRgMbid": "272227fe-6659-3953-a104-d34740e70698",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "archival-compilation",
+   "queryAlias": "Thai Beat A Go-Go Volume 2",
+   "uncertain": ""
+  },
+  {
+   "artist": "Various Artists",
+   "album": "Thai Beat a Go-Go, Volume 3: Groovy Sounds From the Land of Smile!",
+   "year": 2005,
+   "label": "Subliminal Sounds",
+   "country": "th",
+   "faction": "th",
+   "genres": [
+    "rock",
+    "world"
+   ],
+   "why": "考古整理盤（收錄 60–70 年代泰國樂團錄音，2005 年由 Subliminal Sounds 再發），Thai Beat a Go-Go 系列第三輯，泰式 beat／psych 搖滾檔案。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/4406c4cd-23ec-4be0-ba73-28e94f65c94b",
+    "https://www.discogs.com/master/264071"
+   ],
+   "mbRgMbid": "4406c4cd-23ec-4be0-ba73-28e94f65c94b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "archival-compilation",
+   "queryAlias": "Thai Beat A Go-Go Volume 3",
+   "uncertain": ""
+  },
+  {
+   "artist": "Wings (Malaysia)",
+   "album": "Hukum Karma",
+   "year": 1988,
+   "label": "ASP",
+   "country": "my",
+   "faction": "my",
+   "genres": [
+    "rock"
+   ],
+   "why": "Wings 的第二張專輯，馬來西亞 rock kapak 全盛期的代表作，與 Search 並列 80 年代末馬來搖滾雙雄。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/7ef3e330-c8c3-4166-9309-0d945b118cf6",
+    "https://www.discogs.com/master/666742"
+   ],
+   "mbRgMbid": "7ef3e330-c8c3-4166-9309-0d945b118cf6",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Wings",
+   "uncertain": ""
+  },
+  {
+   "artist": "Search",
+   "album": "Mentari Merah Di Ufuk Timur",
+   "year": 1987,
+   "label": "PolyGram",
+   "country": "my",
+   "faction": "my",
+   "genres": [
+    "rock"
+   ],
+   "why": "Search 被視為馬來西亞最偉大的搖滾樂團，此張是 rock kapak 風潮的核心專輯，Amy Search 的標誌高音。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/15797e7c-d825-30ba-acb3-b7cf03d0e3c5",
+    "https://www.discogs.com/master/665661",
+    "https://en.wikipedia.org/wiki/Search_(band)"
+   ],
+   "mbRgMbid": "15797e7c-d825-30ba-acb3-b7cf03d0e3c5",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Mentari Merah Diufuk Timur",
+   "uncertain": ""
+  },
+  {
+   "artist": "XPDC",
+   "album": "Timurbarat",
+   "year": 1992,
+   "label": "Hup Hup",
+   "country": "my",
+   "faction": "my",
+   "genres": [
+    "rock"
+   ],
+   "why": "XPDC 的第二張專輯，承接 rock kapak 之後，把馬來西亞 90 年代搖滾推向硬搖滾與融合聲響。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/9e6f341a-2c46-416d-ba9f-712caf5fa893",
+    "https://www.discogs.com/master/667010"
+   ],
+   "mbRgMbid": "9e6f341a-2c46-416d-ba9f-712caf5fa893",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Exists",
+   "album": "Exist",
+   "year": 1991,
+   "label": "Jojo's Production",
+   "country": "my",
+   "faction": "my",
+   "genres": [
+    "rock",
+    "pop"
+   ],
+   "why": "Exists 的首張專輯，馬來西亞 90 年代初 pop-rock 與抒情搖滾的代表，Exists 是大馬主流搖滾的長青樂團。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/f57b0645-57d9-4fa1-b4d1-74fd64fb25bc",
+    "https://www.discogs.com/master/1396995"
+   ],
+   "mbRgMbid": "f57b0645-57d9-4fa1-b4d1-74fd64fb25bc",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Butterfingers",
+   "album": "1.2 Milligrams",
+   "year": 1996,
+   "label": "EMI Malaysia",
+   "country": "my",
+   "faction": "my",
+   "genres": [
+    "rock"
+   ],
+   "why": "Butterfingers 的首張專輯，馬來西亞 90 年代中期另類／funk-metal 的先鋒，開啟英文歌詞大馬搖滾的線。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/2a971f78-3950-3155-b70d-03410c6f79b1",
+    "https://www.discogs.com/master/2107255"
+   ],
+   "mbRgMbid": "2a971f78-3950-3155-b70d-03410c6f79b1",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Hujan",
+   "album": "Hujan",
+   "year": 2008,
+   "label": "Noh Phrofile Enterprise",
+   "country": "my",
+   "faction": "my",
+   "genres": [
+    "rock"
+   ],
+   "why": "Hujan 的首張專輯，2000 年代後期馬來西亞獨立流行搖滾的代表作，也是大馬獨立搖滾場景的標誌性唱片。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/9bf42522-5667-4c3b-9f51-706e586f880c",
+    "https://en.wikipedia.org/wiki/Hujan_(band)"
+   ],
+   "mbRgMbid": "9bf42522-5667-4c3b-9f51-706e586f880c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Pop Shuvit",
+   "album": "Take It & Shuvit",
+   "year": 2002,
+   "label": "EMI Malaysia",
+   "country": "my",
+   "faction": "my",
+   "genres": [
+    "rock"
+   ],
+   "why": "Pop Shuvit 的首張專輯，大馬 2000 年代 rap-rock／nu-metal 的代表，把新金屬帶進馬來西亞主流。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/caf9232b-6ed9-3a70-9d9e-c4fc9ddfe24c",
+    "https://www.discogs.com/master/2477638"
+   ],
+   "mbRgMbid": "caf9232b-6ed9-3a70-9d9e-c4fc9ddfe24c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Slam",
+   "album": "Kesan Terbukti",
+   "year": 1995,
+   "label": "Matahari",
+   "country": "my",
+   "faction": "my",
+   "genres": [
+    "rock",
+    "pop"
+   ],
+   "why": "Slam 在 90 年代中期的專輯，馬來西亞 pop-rock 的代表，Wings 之後新世代搖滾樂團的名作。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/880b3cf1-13b8-4856-9578-af84a4fd78a7",
+    "https://www.discogs.com/master/1807286"
+   ],
+   "mbRgMbid": "880b3cf1-13b8-4856-9578-af84a4fd78a7",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Estranged",
+   "album": "Remain Unknown",
+   "year": 2008,
+   "label": "",
+   "country": "my",
+   "faction": "my",
+   "genres": [
+    "rock"
+   ],
+   "why": "Estranged 的首張專輯，2000 年代馬來西亞獨立另類搖滾的代表作。",
+   "evidence": [
+    "https://musicbrainz.org/release-group/289e8beb-f560-412d-93fe-d0e4d4671fba",
+    "https://en.wikipedia.org/wiki/Estranged_(band)"
+   ],
+   "mbRgMbid": "289e8beb-f560-412d-93fe-d0e4d4671fba",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "發行廠牌 MB 未載，label 留空。"
+  }
+ ],
+ "notes": []
+}

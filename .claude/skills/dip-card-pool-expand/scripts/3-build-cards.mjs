@@ -64,7 +64,7 @@ for (const c of cards) {
 }
 fs.writeFileSync(outPath, JSON.stringify(out, null, 1));
 
-const rarity = (c, o, a) => { const s = c + a + (o >= 5 ? 1 : 0); return s >= 10 ? 'legendary' : s >= 8 ? 'epic' : s >= 6 ? 'uncommon' : s >= 4 ? 'rare' : 'common'; };
+const rarity = (c, o, a) => { const s = c + a + (o >= 5 ? 1 : 0); return s >= 9 ? 'legendary' : s >= 8 ? 'epic' : s >= 7 ? 'uncommon' : s >= 6 ? 'rare' : 'common'; };
 const dist = f => out.reduce((m, c) => (m[f(c)] = (m[f(c)] || 0) + 1, m), {});
 console.log(`\n完成 ${out.length} 張 → ${outPath}`);
 console.log('classic      ', JSON.stringify(dist(c => c.classic)));

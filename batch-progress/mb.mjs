@@ -5,7 +5,7 @@
 // MB 規定 1 req/sec 且必須帶可辨識的 User-Agent。
 import fs from 'node:fs';
 
-const UA = 'dip-vinyl-shop/1.0 (kubinice06@gmail.com)';
+const UA = 'dip-vinyl-shop/1.0 (+https://dipvinyl.tw)';
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 const esc = s => String(s).replace(/([+\-!(){}\[\]^"~*?:\\/])/g, '\\$1');
 

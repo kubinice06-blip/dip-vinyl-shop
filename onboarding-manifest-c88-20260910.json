@@ -33,11 +33,20 @@
    },
    "ratings": {
     "classic": 5,
-    "obscurity": 4,
+    "obscurity": 2,
     "accessibility": 2,
     "listeners": 259,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：主線：Last.fm 鍵錯配視同缺值、免下限；大廠流通原聲→2（原 5）；冷門度下限豁免：floorExempt（評分工作階段主線裁定）"
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -97,13 +106,22 @@
    },
    "ratings": {
     "classic": 5,
-    "obscurity": 3,
-    "accessibility": 2,
+    "obscurity": 2,
+    "accessibility": 1,
     "listeners": 34950,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：cult 音樂劇經典，L=3.5 萬；glam 搖滾歌曲直白"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -123,7 +141,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/91/ed/6a/91ed6a59-9517-e95d-7616-9c7867409499/mzaf_5958408650030712271.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/7f/07/dc/7f07dcd5-a29e-dd7b-e23c-c0b9f83e91d2/mzaf_10675338924138202842.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -163,14 +181,24 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 5,
-    "obscurity": 4,
-    "accessibility": 1,
+    "classic": 4,
+    "obscurity": 2,
+    "accessibility": 2,
     "listeners": 49,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 2,
+     "accessibility": 1,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：主線：Last.fm 鍵錯配視同缺值、免下限；大廠流通原聲→2（原 4）；冷門度下限豁免：floorExempt（評分工作階段主線裁定）",
+     "rarity": "rare"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：主題家喻戶曉，但配樂專輯本身非正典；聽眾 49 疑錯配不套下限｜L=49"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -190,7 +218,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/12/bb/13/12bb13e3-2648-1063-b066-1a2722e699e1/mzaf_2098887073138485834.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f2/85/6f/f2856fcd-eb8a-2cb2-b2ed-0147511a0564/mzaf_1736768332961850672.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -231,14 +259,24 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 5,
-    "obscurity": 4,
+    "classic": 4,
+    "obscurity": 1,
     "accessibility": 1,
     "listeners": 1587,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 1,
+     "accessibility": 1,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：主線：Last.fm 鍵錯配視同缺值、免下限；大廠流通原聲→1（原 3）；冷門度下限豁免：floorExempt（評分工作階段主線裁定）",
+     "rarity": "rare"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：史上最暢銷配樂之一，評論非正典；聽眾1587為拆名疑錯配，不套下限｜L=1587"
    },
-   "rarity": "uncommon",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -257,7 +295,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/2c/a8/96/2ca896df-3b19-4b0f-748d-ecf9a0d35fc7/mzaf_8370343829220892794.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/bc/79/72/bc797256-7eac-6fb2-3307-dd6bc36b2d42/mzaf_14250077088982445990.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -298,14 +336,24 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 5,
-    "obscurity": 4,
+    "classic": 4,
+    "obscurity": 2,
     "accessibility": 1,
     "listeners": 1309,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 2,
+     "accessibility": 1,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：主線：Last.fm 鍵錯配視同缺值、免下限；大廠流通原聲→2（原 3）；冷門度下限豁免：floorExempt（評分工作階段主線裁定）",
+     "rarity": "rare"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：電影配樂經典；L=1309 疑盤名錯配，依錨點2｜L=1309"
    },
-   "rarity": "uncommon",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -324,7 +372,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ea/02/6d/ea026df4-5a5d-f6a0-c526-2a9958c4c22a/mzaf_6885755452086543650.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/13/ca/2f/13ca2fcc-d065-209e-9d7e-2936d6d51c14/mzaf_16519994492149317178.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -365,13 +413,22 @@
    },
    "ratings": {
     "classic": 5,
-    "obscurity": 4,
+    "obscurity": 2,
     "accessibility": 1,
     "listeners": 469,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 4,
+     "accessibility": 1,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：主線：Last.fm 鍵錯配視同缺值、免下限；大廠流通原聲→2（原 4）；冷門度下限豁免：floorExempt（評分工作階段主線裁定）"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -391,7 +448,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/6b/9b/9b/6b9b9b40-eb90-797a-b1b1-dfab87f9c01e/mzaf_3956043219895060991.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/21/af/b6/21afb676-d30b-c653-07ba-063f33c62777/mzaf_9752066553228610988.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -432,14 +489,24 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 5,
-    "obscurity": 4,
+    "classic": 4,
+    "obscurity": 3,
     "accessibility": 1,
     "listeners": 1732,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 3,
+     "accessibility": 1,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Harry Lime 主題為影史名曲；L=1732 下限 3；齊特琴旋律直白",
+     "rarity": "rare"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：主題曲標誌性，但本盤是1999年Soundtrack Factory合輯；聽眾1732→≥3｜L=1732"
    },
-   "rarity": "uncommon",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -459,7 +526,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/Music/73/4b/7b/mzi.zacqvdtw.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/2d/3d/71/2d3d71d7-3bac-7fe2-45a0-4fe3897d4265/mzaf_6829027195518225661.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -505,13 +572,22 @@
    },
    "ratings": {
     "classic": 4,
-    "obscurity": 4,
-    "accessibility": 2,
+    "obscurity": 2,
+    "accessibility": 1,
     "listeners": 18,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：主線：Last.fm 鍵錯配視同缺值、免下限；大廠流通原聲→2（原 4）；冷門度下限豁免：floorExempt（評分工作階段主線裁定）"
    },
-   "rarity": "uncommon",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -573,14 +649,24 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 5,
-    "obscurity": 4,
+    "classic": 4,
+    "obscurity": 2,
     "accessibility": 2,
     "listeners": 193,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 2,
+     "accessibility": 2,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：主線：Last.fm 鍵錯配視同缺值、免下限；大廠流通原聲→2（原 4）；冷門度下限豁免：floorExempt（評分工作階段主線裁定）",
+     "rarity": "uncommon"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：奧斯卡最佳配樂但年代新、場景地位未定；聽眾 193 疑錯配照錨點 2；經典 5→4｜L=193"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -600,7 +686,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/41/4c/f9/414cf93d-bcd7-4657-1869-33d10cf50e08/mzaf_15153344929952671769.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/7d/c2/76/7dc27669-825d-6732-ea1e-0b711d660cae/mzaf_11373139896134018439.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -641,14 +727,24 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 5,
-    "obscurity": 2,
+    "classic": 4,
+    "obscurity": 1,
     "accessibility": 1,
     "listeners": 214862,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 1,
+     "accessibility": 1,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：影史最廣傳原聲之一，L=21 萬入門常客；手風琴鋼琴小品",
+     "rarity": "rare"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：熱門電影原聲；非正典5｜L=214862"
    },
-   "rarity": "uncommon",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -705,13 +801,22 @@
    },
    "ratings": {
     "classic": 4,
-    "obscurity": 4,
+    "obscurity": 3,
     "accessibility": 2,
     "listeners": 2514,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Dust Brothers 唯一大片配樂、邪典片代表；L=2514 下限 3；breakbeat 電子"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -730,7 +835,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/dc/c7/05/dcc7050d-89e6-c66d-20b9-4776f219b9cb/mzaf_2736025844066011652.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/dd/01/bd/dd01bde9-fb0b-b5fc-870d-e954a727f542/mzaf_17675742177944722970.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -777,13 +882,22 @@
    },
    "ratings": {
     "classic": 4,
-    "obscurity": 4,
+    "obscurity": 1,
     "accessibility": 1,
     "listeners": 1544,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 4,
+     "accessibility": 1,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：主線：Last.fm 鍵錯配視同缺值、免下限；大廠流通原聲→1（原 3）；冷門度下限豁免：floorExempt（評分工作階段主線裁定）"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -845,11 +959,20 @@
    },
    "ratings": {
     "classic": 4,
-    "obscurity": 4,
-    "accessibility": 2,
+    "obscurity": 2,
+    "accessibility": 3,
     "listeners": 944,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：主線：Last.fm 鍵錯配視同缺值、免下限；大廠流通原聲→2（原 5）；冷門度下限豁免：floorExempt（評分工作階段主線裁定）"
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -911,14 +1034,24 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 5,
-    "obscurity": 4,
+    "classic": 4,
+    "obscurity": 2,
     "accessibility": 2,
     "listeners": 392,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 2,
+     "accessibility": 2,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：主線：Last.fm 鍵錯配視同缺值、免下限；大廠流通原聲→2（原 4）；冷門度下限豁免：floorExempt（評分工作階段主線裁定）",
+     "rarity": "uncommon"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：暢銷Grammy年度專輯但屬電影原聲，樂評正典地位不到5；392聽眾疑錯配，冷門2｜L=392"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -938,7 +1071,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/73/bd/8f/73bd8ff8-bd9f-64d3-41b9-41502a51b53a/mzaf_9567978468851350970.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/86/9c/e9/869ce9af-cd0e-ba87-f0c1-9fb02d7c491b/mzaf_13508711196996379324.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -985,13 +1118,22 @@
    },
    "ratings": {
     "classic": 4,
-    "obscurity": 4,
+    "obscurity": 1,
     "accessibility": 1,
     "listeners": 968,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 4,
+     "accessibility": 1,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：主線：Last.fm 鍵錯配視同缺值、免下限；大廠流通原聲→1（原 4）；冷門度下限豁免：floorExempt（評分工作階段主線裁定）"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1057,13 +1199,22 @@
    },
    "ratings": {
     "classic": 4,
-    "obscurity": 4,
+    "obscurity": 2,
     "accessibility": 2,
     "listeners": 234,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：主線：Last.fm 鍵錯配視同缺值、免下限；大廠流通原聲→2（原 4）；冷門度下限豁免：floorExempt（評分工作階段主線裁定）"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1083,7 +1234,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/d6/03/d5/d603d5e9-ee24-ee47-2296-3430f34272e5/mzaf_16239358717230501913.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/67/c9/e3/67c9e3d5-b0fb-f47d-6a18-e95bbc5f3b8a/mzaf_17110856391009669186.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -1129,13 +1280,22 @@
    },
    "ratings": {
     "classic": 4,
-    "obscurity": 4,
+    "obscurity": 2,
     "accessibility": 1,
     "listeners": 163,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 4,
+     "accessibility": 1,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：主線：Last.fm 鍵錯配視同缺值、免下限；大廠流通原聲→2（原 5）；冷門度下限豁免：floorExempt（評分工作階段主線裁定）"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1191,14 +1351,24 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 5,
-    "obscurity": 4,
+    "classic": 4,
+    "obscurity": 2,
     "accessibility": 1,
     "listeners": 231,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 2,
+     "accessibility": 1,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：主線：Last.fm 鍵錯配視同缺值、免下限；大廠流通原聲→2（原 4）；冷門度下限豁免：floorExempt（評分工作階段主線裁定）",
+     "rarity": "rare"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：Williams 名作但非其頭號代表（Star Wars／Jaws）；聽眾 231 為拆名疑錯配，照錨點 2｜L=231"
    },
-   "rarity": "uncommon",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1217,7 +1387,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e0/b4/01/e0b401b7-4f47-d559-e6e5-d10687e96557/mzaf_1687680894474973388.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f1/35/b0/f135b050-e26f-1bee-8f24-67b755164d03/mzaf_4917044184840233126.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -1258,14 +1428,24 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 5,
-    "obscurity": 4,
+    "classic": 4,
+    "obscurity": 1,
     "accessibility": 1,
     "listeners": 99,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 1,
+     "accessibility": 1,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：主線：Last.fm 鍵錯配視同缺值、免下限；大廠流通原聲→1（原 4）；冷門度下限豁免：floorExempt（評分工作階段主線裁定）",
+     "rarity": "rare"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：暢銷葛萊美原聲，非樂評正典；聽眾 99 為錯配不套下限｜L=99"
    },
-   "rarity": "uncommon",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1284,7 +1464,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d2/29/55/d229559e-5fc7-7cb0-2567-847ec15feabc/mzaf_2397341119625965340.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/73/c0/64/73c06423-3e0e-7d93-a194-78a04e30613a/mzaf_14975497174733361405.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -1324,14 +1504,24 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 5,
-    "obscurity": 4,
+    "classic": 4,
+    "obscurity": 3,
     "accessibility": 2,
     "listeners": 3326,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 2,
+     "accessibility": 2,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：主線：Last.fm 鍵錯配視同缺值、免下限；大廠流通原聲→2（原 3）；冷門度下限豁免：floorExempt（評分工作階段主線裁定）",
+     "rarity": "uncommon"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：影響深遠的超級英雄配樂；但電影配樂正典首選另有他作｜L=3326"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1391,14 +1581,24 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 5,
-    "obscurity": 4,
+    "classic": 4,
+    "obscurity": 2,
     "accessibility": 2,
     "listeners": 3228,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 2,
+     "accessibility": 2,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：主線：Last.fm 鍵錯配視同缺值、免下限；大廠流通原聲→2（原 3）；冷門度下限豁免：floorExempt（評分工作階段主線裁定）",
+     "rarity": "uncommon"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：暢銷電影原聲；聽眾 3228 疑因盤名錯配，照錨點給 2｜L=3228"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1417,7 +1617,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/06/80/07/06800766-1bba-b87c-cbf0-8189c2e1a5a3/mzaf_5043337350865441706.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/c4/04/5a/c4045aa4-bbf2-4488-2f92-f2267a0dbcad/mzaf_12801710174086686068.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -1458,13 +1658,22 @@
    },
    "ratings": {
     "classic": 5,
-    "obscurity": 4,
-    "accessibility": 2,
+    "obscurity": 2,
+    "accessibility": 1,
     "listeners": 1378,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：主線：Last.fm 鍵錯配視同缺值、免下限；大廠流通原聲→2（原 3）；冷門度下限豁免：floorExempt（評分工作階段主線裁定）"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1483,7 +1692,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/5b/09/0c/5b090cbf-f7b7-0cb5-069c-f67fdfe56cb3/mzaf_4435176080600560718.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b0/c5/84/b0c58429-d2f4-69aa-3ac4-ed3cf4f7cfa9/mzaf_2092786710689791779.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -1531,7 +1740,7 @@
     "source": "manual:depth-rubric",
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
-   "rarity": "epic",
+   "rarity": "legendary",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1553,7 +1762,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/19/64/9e/19649ece-55ae-b088-815e-b03ce3f5e878/mzaf_5719869023887893745.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/fe/e8/7b/fee87bf5-3977-7cfc-c7b0-61a81968a0b0/mzaf_7406557196095055582.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -1593,14 +1802,24 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 5,
+    "classic": 4,
     "obscurity": 4,
     "accessibility": 2,
     "listeners": 0,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：黑澤明兩部名片配樂，早坂代表作；L=0 試聽無→5；日式管弦主題",
+     "rarity": "epic"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：黑澤明電影配樂合輯LP；聽眾0視同缺值，無串流再發→4｜L=0"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1658,13 +1877,22 @@
    },
    "ratings": {
     "classic": 4,
-    "obscurity": 4,
-    "accessibility": 2,
+    "obscurity": 5,
+    "accessibility": 3,
     "listeners": 0,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：武滿徹電影音樂精選，Victor 日本盤；L=0 試聽無→5；含前衛音色與抒情段"
    },
-   "rarity": "uncommon",
+   "rarity": "epic",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1720,11 +1948,20 @@
    },
    "ratings": {
     "classic": 5,
-    "obscurity": 4,
+    "obscurity": 3,
     "accessibility": 2,
     "listeners": 1087,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Camille 主題為新浪潮名曲、Delerue 代表；L=1087 下限 3；浪漫弦樂"
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -1748,7 +1985,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b4/a0/24/b4a024c8-1257-00ac-a25c-4bd87200ba73/mzaf_18198492880612242559.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ea/57/a3/ea57a39a-a419-9c16-0742-20e2f68f4476/mzaf_3513273912704422668.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -1789,11 +2026,20 @@
    },
    "ratings": {
     "classic": 4,
-    "obscurity": 4,
+    "obscurity": 5,
     "accessibility": 2,
     "listeners": 443,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Duhamel 為高達代表配樂；L=443 試聽無→5；新浪潮弦樂主題，旋律清楚"
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -1850,14 +2096,24 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 5,
-    "obscurity": 3,
+    "classic": 4,
+    "obscurity": 2,
     "accessibility": 2,
     "listeners": 81289,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 2,
+     "accessibility": 2,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Preisner/Kieślowski 代表作，L=8.1 萬；聖詠式管弦與女聲",
+     "rarity": "uncommon"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：Preisner 代表作之一，電影配樂場景強作但非里程碑級→4｜L=81289"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1877,7 +2133,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview122/v4/b3/59/8e/b3598ef6-7bfd-7446-65e4-3c4961e2f557/mzaf_18015474428017013050.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview112/v4/41/90/36/419036ea-c9d1-fc1c-3a03-39427a50c44c/mzaf_2954422575653757703.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -1918,13 +2174,22 @@
    },
    "ratings": {
     "classic": 4,
-    "obscurity": 4,
+    "obscurity": 3,
     "accessibility": 2,
     "listeners": 250,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：主線：Last.fm 鍵錯配視同缺值、免下限；大廠流通原聲→3（原 5）；冷門度下限豁免：floorExempt（評分工作階段主線裁定）"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1983,11 +2248,20 @@
    },
    "ratings": {
     "classic": 5,
-    "obscurity": 4,
+    "obscurity": 3,
     "accessibility": 3,
     "listeners": 4941,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 4,
+     "accessibility": 3,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "epic"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Nyman 成名里程碑、Charisma 原發；L=4941 下限 3；Purcell 底的激進極簡"
    },
    "rarity": "epic",
    "apexAssessment": {
@@ -2051,13 +2325,22 @@
    },
    "ratings": {
     "classic": 4,
-    "obscurity": 3,
+    "obscurity": 2,
     "accessibility": 2,
     "listeners": 29693,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Nyman/Greenaway 代表作之一；L=2.9 萬流通廣；莫札特式極簡反覆"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2113,14 +2396,24 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 5,
-    "obscurity": 4,
+    "classic": 4,
+    "obscurity": 3,
     "accessibility": 2,
     "listeners": 3165,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Barbieri 代表作、葛萊美得獎；UA 正規發行；L=3165 下限 3；拉丁抒情薩克斯",
+     "rarity": "uncommon"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：Grammy 配樂獎、Barbieri 最知名作→4；聽眾 3165→下限 3｜L=3165"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2140,7 +2433,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/8f/5d/da/8f5ddafc-c0f2-5bad-e630-9a7efbb10a03/mzaf_12363711247888808550.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/27/25/db/2725db3c-bc52-5cfb-0385-a741b560c15b/mzaf_6801583626580366110.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -2181,14 +2474,24 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 3,
-    "obscurity": 4,
-    "accessibility": 2,
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 1,
     "listeners": 7339,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 2,
+     "accessibility": 1,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：王家衛片原聲名盤，夢二主題廣為人知；L=7339 一般流通；華爾茲與老歌",
+     "rarity": "rare"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：電影原聲、名曲多為梅林茂與 Nat King Cole，Galasso 非代表；聽眾 7339 下限 3。經典 5→4、冷門 2→3｜L=7339"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2209,7 +2512,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview128/v4/c2/11/f7/c211f724-18ff-0446-f3b4-1205cfece44f/mzaf_4084946579248680444.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/42/f1/2f/42f12fb3-ed0e-16ae-c7c2-29d912b275e0/mzaf_3895758778249181125.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -2257,7 +2560,7 @@
     "source": "manual:depth-rubric",
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2280,7 +2583,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/b3/de/a3/b3dea38e-d611-9ab0-1a09-d18d88da6a7d/mzaf_1652355210613356511.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/3a/b2/9a/3ab29ab5-9eca-bc57-95db-89c01e144bb3/mzaf_4705150801184575900.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -2321,14 +2624,24 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 4,
-    "obscurity": 4,
-    "accessibility": 2,
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
     "listeners": 9,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 5,
+     "accessibility": 3,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：張藝謀《大紅燈籠》配樂，趙季平代表作；L9 無串流→5；京劇鑼鼓短場景段",
+     "rarity": "epic"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：拆名錯配（Zhao Jiping）；Milan 國際發行原聲，美歐兩版→3；戲曲配樂片段短→3｜L=9"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2386,14 +2699,24 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 5,
-    "obscurity": 4,
-    "accessibility": 5,
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 3,
     "listeners": 2093,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 3,
+     "accessibility": 3,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Apple Records 原發，cult 片配樂、Finders Keepers/ABKCO 再發；L=2093 下限 3；民謠爵士拼貼、短曲迷幻",
+     "rarity": "epic"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：Apple Records 發行的邪典電影原聲，有地位但非場景里程碑｜L=2093"
    },
-   "rarity": "legendary",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2458,11 +2781,20 @@
    },
    "ratings": {
     "classic": 4,
-    "obscurity": 4,
-    "accessibility": 2,
+    "obscurity": 3,
+    "accessibility": 3,
     "listeners": 4544,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Antonioni 片原聲、Pink Floyd 等；L=4544 下限 3；迷幻長段即興"
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -2485,7 +2817,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview124/v4/ae/fb/ae/aefbaea4-877b-610a-3391-16cb92e5bf82/mzaf_1439316664042783168.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/7d/76/42/7d7642eb-9c96-08f7-4c94-76bfae54624a/mzaf_12971257682835904213.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -2526,12 +2858,22 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 5,
-    "obscurity": 4,
+    "classic": 4,
+    "obscurity": 5,
     "accessibility": 2,
     "listeners": 40,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 5,
+     "accessibility": 3,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Fusco 為 Antonioni 代表配樂；L=40 試聽無→5；稀疏不協和室內樂",
+     "rarity": "epic"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：1960 年 Antonioni 片配樂，Doxy 再發；Deezer 有多個串流版→冷門4，非私壓｜L=40"
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -2590,14 +2932,24 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 5,
-    "obscurity": 4,
-    "accessibility": 5,
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 4,
     "listeners": 2442,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 3,
+     "accessibility": 5,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Lynch 片配樂地下經典，I.R.S. 原發、Sacred Bones 再發；L=2442 下限 3；工業噪音聲景",
+     "rarity": "legendary"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：工業 drone 音景，邪典；非正典榜｜L=2442"
    },
-   "rarity": "legendary",
+   "rarity": "epic",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2617,7 +2969,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/ec/b6/3a/ecb63a09-9cb5-2a7f-6809-ae9145caae4c/mzaf_9451595134304572996.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6b/87/53/6b87536a-07d9-7efe-3657-93110c440d5b/mzaf_15150287547776068919.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -2658,14 +3010,24 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 5,
-    "obscurity": 3,
+    "classic": 4,
+    "obscurity": 2,
     "accessibility": 2,
     "listeners": 37368,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 2,
+     "accessibility": 2,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Lynch/Badalamenti 代表作，L=3.7 萬；黑暗弦樂氛圍＋懷舊歌曲，門檻不高",
+     "rarity": "uncommon"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：Lynch 片配樂代表作，非配樂史人人必提；經典度降4｜L=37368"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2723,12 +3085,21 @@
    "ratings": {
     "classic": 4,
     "obscurity": 4,
-    "accessibility": 4,
+    "accessibility": 3,
     "listeners": 5,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "epic"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Fassbinder 遺作配樂、Raben 代表；L=5 有串流→4；歌曲與陰鬱配樂"
    },
-   "rarity": "epic",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2793,12 +3164,22 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 5,
-    "obscurity": 4,
-    "accessibility": 2,
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 3,
     "listeners": 114,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 5,
+     "accessibility": 3,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Wenders 片原聲，Nick Cave 等柏林後龐克；L=114 試聽無→5；後龐克加現代配樂",
+     "rarity": "epic"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：疑錯配：Elektra Nonesuch／Milan 國際發行的電影原聲，聽眾數因 VA 盤名失真；冷門度 3｜L=114"
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -2857,14 +3238,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 4,
-    "obscurity": 4,
+    "classic": 5,
+    "obscurity": 5,
     "accessibility": 4,
     "listeners": 0,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "epic"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：影評票選捷克影史最佳片之配樂，Liška 代表作；L=0 試聽無→5；古樸合唱與不協和"
    },
-   "rarity": "epic",
+   "rarity": "legendary",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2919,14 +3309,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 5,
+    "classic": 4,
     "obscurity": 4,
     "accessibility": 2,
     "listeners": 394,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：de Roubaix 為 Melville 代表配樂，2018 Decca 才出專輯；L=394 有串流→4；冷調爵士"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2947,7 +3346,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/39/62/6e/39626eba-c5be-f8c3-73b9-201f89609c89/mzaf_10850508908782007931.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ee/81/c6/ee81c68e-f395-c151-0add-afec50a05e46/mzaf_8020510387891752068.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",

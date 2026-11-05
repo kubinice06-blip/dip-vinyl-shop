@@ -1,0 +1,15 @@
+{
+ "batch": "add-20261104-zxzz", "cards": 3,
+ "written": { "cardCatalog": 3, "kvKeys": 6, "seedRows": 3, "previewReady": 3, "previewUnavailable": 0 },
+ "review": { "by": "cloud-main", "cards": 3, "changed": ["desc4:左小祖咒|左小祖咒在地安門", "desc4:左小祖咒|你知道東方在哪一邊", "desc4:左小祖咒|走失的主人"] },
+ "qa": { "research": "pass", "hooks": "省略（3 張批，主線寫）", "out": "pass", "prepareGate": "0 error", "publishedGate": "0 error" },
+ "apex": 0,
+ "pendingLocal": {
+  "kv": "無",
+  "listeners": [],
+  "apexEvidence": [],
+  "genreTree": "已重建",
+  "albumOverrides": "無（試聽走靜態路徑）"
+ },
+ "artistIntro": { "state": "已有（data/artist-intros/ 有左小祖咒），不補" }
+}

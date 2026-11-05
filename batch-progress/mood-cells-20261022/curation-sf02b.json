@@ -1,0 +1,699 @@
+{
+ "group": "sf02b",
+ "factions": [
+  {
+   "id": "jp-prog",
+   "zh": "日本前衛搖滾",
+   "count": 2,
+   "why": ""
+  },
+  {
+   "id": "jp-rock",
+   "zh": "日本搖滾",
+   "count": 4,
+   "why": ""
+  },
+  {
+   "id": "jp-heavy",
+   "zh": "日本重型／sludge",
+   "count": 4,
+   "why": ""
+  },
+  {
+   "id": "jp-punk",
+   "zh": "日本龐克",
+   "count": 2,
+   "why": ""
+  },
+  {
+   "id": "jp-indie",
+   "zh": "日本獨立",
+   "count": 2,
+   "why": ""
+  },
+  {
+   "id": "jp-idol",
+   "zh": "日本偶像",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "jp-folk",
+   "zh": "日本民謠",
+   "count": 2,
+   "why": ""
+  },
+  {
+   "id": "jp-newage",
+   "zh": "日本新世紀",
+   "count": 2,
+   "why": ""
+  },
+  {
+   "id": "jp-electro",
+   "zh": "日本電子",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "jp-psych",
+   "zh": "日本迷幻搖滾",
+   "count": 1,
+   "why": ""
+  }
+ ],
+ "albums": [
+  {
+   "artist": "コスモス・ファクトリー",
+   "album": "トランシルヴァニアの古城",
+   "year": 1973,
+   "label": "",
+   "country": "jp",
+   "faction": "jp-prog",
+   "genres": [
+    "rock",
+    "electronic"
+   ],
+   "why": "1973年首作，日本早期前衛／迷幻搖滾的地下名盤，團名的代表作",
+   "moodGuess": {
+    "x": 3.2,
+    "y": 1,
+    "z": -0.5,
+    "why": "詭譎管風琴與迷幻吉他的怪奇前衛"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/14b18f3c-ed5c-44af-899f-b74fd59e3563",
+    "https://coverartarchive.org/release-group/14b18f3c-ed5c-44af-899f-b74fd59e3563"
+   ],
+   "spotifyName": "Cosmos Factory",
+   "mbRgMbid": "14b18f3c-ed5c-44af-899f-b74fd59e3563",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Cosmos Factory コスモス・ファクトリー",
+   "uncertain": ""
+  },
+  {
+   "artist": "コスモス・ファクトリー",
+   "album": "謎のコスモス号",
+   "year": 1975,
+   "label": "",
+   "country": "jp",
+   "faction": "jp-prog",
+   "genres": [
+    "rock"
+   ],
+   "why": "1975年概念作，樂迷公認的第二個高峰",
+   "moodGuess": {
+    "x": 3.2,
+    "y": 1,
+    "z": -0.3,
+    "why": "太空題材的前衛搖滾，合成器與吉他交織"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/d93fe230-8a78-46be-b21f-9c0ac53b0091",
+    "https://coverartarchive.org/release-group/d93fe230-8a78-46be-b21f-9c0ac53b0091"
+   ],
+   "spotifyName": "Cosmos Factory",
+   "mbRgMbid": "d93fe230-8a78-46be-b21f-9c0ac53b0091",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Cosmos Factory コスモス・ファクトリー",
+   "uncertain": "第二張是否夠格請審"
+  },
+  {
+   "artist": "ジョー山中",
+   "album": "Joe",
+   "year": 1974,
+   "label": "",
+   "country": "jp",
+   "faction": "jp-rock",
+   "genres": [
+    "rock"
+   ],
+   "why": "Flower Travellin' Band 主唱的首張個人作，70年代日本搖滾代表聲音",
+   "moodGuess": {
+    "x": 3.0,
+    "y": 0,
+    "z": 0.5,
+    "why": "粗礪嗓音的硬搖滾與民謠搖滾"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/1bb2b8ca-736d-4692-9a59-dc05d23e0750",
+    "https://coverartarchive.org/release-group/1bb2b8ca-736d-4692-9a59-dc05d23e0750"
+   ],
+   "spotifyName": "Joe Yamanaka",
+   "mbRgMbid": "1bb2b8ca-736d-4692-9a59-dc05d23e0750",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Joe Yamanaka ジョー山中",
+   "uncertain": ""
+  },
+  {
+   "artist": "ジョー山中",
+   "album": "Reggae Vibration",
+   "year": 1982,
+   "label": "",
+   "country": "jp",
+   "faction": "jp-rock",
+   "genres": [
+    "world",
+    "rock"
+   ],
+   "why": "轉向雷鬼後的代表作，開出他晚期路線",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 0.4,
+    "z": 0.9,
+    "why": "日式雷鬼的搖擺節拍與溫暖嗓音"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/310fe1c7-5682-4366-b5e3-7b7fe8799758",
+    "https://coverartarchive.org/release-group/310fe1c7-5682-4366-b5e3-7b7fe8799758"
+   ],
+   "spotifyName": "Joe Yamanaka",
+   "mbRgMbid": "310fe1c7-5682-4366-b5e3-7b7fe8799758",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Joe Yamanaka ジョー山中",
+   "uncertain": ""
+  },
+  {
+   "artist": "爆風スランプ",
+   "album": "HIGHLANDER",
+   "year": 1988,
+   "label": "",
+   "country": "jp",
+   "faction": "jp-rock",
+   "genres": [
+    "rock",
+    "pop"
+   ],
+   "why": "收錄代表曲〈Runner〉的專輯，爆風スランプ最廣為人知的一張",
+   "moodGuess": {
+    "x": 3.8,
+    "y": 0.2,
+    "z": 1.0,
+    "why": "明亮硬搖滾搭怪腔唱法，快歌為主"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/af431459-d811-42c6-9fdd-e73efaf93d51",
+    "https://coverartarchive.org/release-group/af431459-d811-42c6-9fdd-e73efaf93d51"
+   ],
+   "spotifyName": "Bakufu Slump",
+   "mbRgMbid": "af431459-d811-42c6-9fdd-e73efaf93d51",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Bakufu Slump 爆風スランプ",
+   "uncertain": ""
+  },
+  {
+   "artist": "GREENMACHiNE",
+   "album": "D.A.M.N.",
+   "year": 1996,
+   "label": "",
+   "country": "jp",
+   "faction": "jp-heavy",
+   "genres": [
+    "rock",
+    "metal"
+   ],
+   "why": "日本 sludge／stoner 先驅，首張全長即定調",
+   "moodGuess": {
+    "x": 3.6,
+    "y": 1.6,
+    "z": -0.6,
+    "why": "沉重失真 riff 與緩慢推進的泥沼感"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/567a9239-f95e-3855-8504-edf09e910cbd",
+    "https://coverartarchive.org/release-group/567a9239-f95e-3855-8504-edf09e910cbd"
+   ],
+   "spotifyName": "GREENMACHiNE",
+   "mbRgMbid": "567a9239-f95e-3855-8504-edf09e910cbd",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "GREENMACHiNE",
+   "album": "The Earth Beater",
+   "year": 1998,
+   "label": "",
+   "country": "jp",
+   "faction": "jp-heavy",
+   "genres": [
+    "rock",
+    "metal"
+   ],
+   "why": "第二張全長，樂迷與評論公認的另一個高峰",
+   "moodGuess": {
+    "x": 3.7,
+    "y": 1.6,
+    "z": -0.6,
+    "why": "更緊的 doom／stoner 重低頻"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/15cbf1ab-3eb0-31fa-a595-fe0950f470f1",
+    "https://coverartarchive.org/release-group/15cbf1ab-3eb0-31fa-a595-fe0950f470f1"
+   ],
+   "spotifyName": "GREENMACHiNE",
+   "mbRgMbid": "15cbf1ab-3eb0-31fa-a595-fe0950f470f1",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "二選一時可只收 D.A.M.N."
+  },
+  {
+   "artist": "COHOL",
+   "album": "空洞",
+   "year": 2010,
+   "label": "",
+   "country": "jp",
+   "faction": "jp-heavy",
+   "genres": [
+    "rock",
+    "metal"
+   ],
+   "why": "日本 sludge／doom 團 COHOL 的首張全長",
+   "moodGuess": {
+    "x": 3.5,
+    "y": 1.8,
+    "z": -1.0,
+    "why": "陰鬱厚重的 sludge／doom 失真牆"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/b1bff288-02a8-49b8-9779-6c1f7d5c71c9",
+    "https://coverartarchive.org/release-group/b1bff288-02a8-49b8-9779-6c1f7d5c71c9"
+   ],
+   "spotifyName": "Cohol",
+   "mbRgMbid": "b1bff288-02a8-49b8-9779-6c1f7d5c71c9",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Cohol",
+   "uncertain": "Rigen 裏現(2015)也可能是高峰"
+  },
+  {
+   "artist": "中学生棺桶",
+   "album": "矛先についたガム",
+   "year": 2010,
+   "label": "",
+   "country": "jp",
+   "faction": "jp-heavy",
+   "genres": [
+    "rock",
+    "metal"
+   ],
+   "why": "2010年全長，團的最後一批作品之一；2004–2010 唯一有封面來源的正規盤",
+   "moodGuess": {
+    "x": 4.5,
+    "y": 1.6,
+    "z": -0.8,
+    "why": "極端金屬／grind 的暴衝與嘶吼"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/202e453d-1163-48c8-80da-4a69b504e3b3",
+    "https://coverartarchive.org/release-group/202e453d-1163-48c8-80da-4a69b504e3b3",
+    "https://www.discogs.com/release/5075801"
+   ],
+   "spotifyName": "Chugakusei Kanoke",
+   "mbRgMbid": "202e453d-1163-48c8-80da-4a69b504e3b3",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Chugakusei Kanoke 中学生棺桶",
+   "uncertain": "代表作憑資料有限，未必是最高峰（むすめ戦争中 2007 亦可）"
+  },
+  {
+   "artist": "犬神サーカス団",
+   "album": "地獄の子守唄",
+   "year": 1999,
+   "label": "",
+   "country": "jp",
+   "faction": "jp-punk",
+   "genres": [
+    "rock",
+    "punk"
+   ],
+   "why": "1999年首張全長，奠定昭和歌謠×龐克風格",
+   "moodGuess": {
+    "x": 4.0,
+    "y": 0.6,
+    "z": 0.4,
+    "why": "昭和風旋律包著龐克硬搖滾與嘶唱"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/325a1da0-71cb-394b-aad3-96869c952902",
+    "https://coverartarchive.org/release-group/325a1da0-71cb-394b-aad3-96869c952902"
+   ],
+   "spotifyName": "InugamiCircusDan",
+   "mbRgMbid": "325a1da0-71cb-394b-aad3-96869c952902",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "犬神サーカス団",
+   "uncertain": ""
+  },
+  {
+   "artist": "犬神サーカス団",
+   "album": "神の犬",
+   "year": 2003,
+   "label": "",
+   "country": "jp",
+   "faction": "jp-punk",
+   "genres": [
+    "rock",
+    "punk"
+   ],
+   "why": "2003年作，中期成熟代表作",
+   "moodGuess": {
+    "x": 4.0,
+    "y": 0.6,
+    "z": 0.3,
+    "why": "更成熟的暗黑歌謠龐克"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/c0dfc48e-0d68-38d3-960a-74e7d4b4ef98",
+    "https://coverartarchive.org/release-group/c0dfc48e-0d68-38d3-960a-74e7d4b4ef98"
+   ],
+   "spotifyName": "InugamiCircusDan",
+   "mbRgMbid": "c0dfc48e-0d68-38d3-960a-74e7d4b4ef98",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "犬神サーカス団",
+   "uncertain": "第二張選擇偏主觀"
+  },
+  {
+   "artist": "ないあがらせっと",
+   "album": "POP CITY",
+   "year": 2009,
+   "label": "",
+   "country": "jp",
+   "faction": "jp-indie",
+   "genres": [
+    "rock",
+    "pop"
+   ],
+   "why": "唯一正規全長專輯",
+   "moodGuess": {
+    "x": 3.2,
+    "y": -0.5,
+    "z": 0.5,
+    "why": "輕快的日本獨立流行搖滾"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/6c97bed8-3239-4e54-9d91-fbce61eb550c",
+    "https://music.apple.com/jp/album/375272098"
+   ],
+   "spotifyName": "ないあがらせっと",
+   "mbRgMbid": "6c97bed8-3239-4e54-9d91-fbce61eb550c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Naigara Set",
+   "uncertain": ""
+  },
+  {
+   "artist": "ヨシンバ",
+   "album": "042",
+   "year": 1999,
+   "label": "",
+   "country": "jp",
+   "faction": "jp-indie",
+   "genres": [
+    "rock"
+   ],
+   "why": "1999年首張全長，團的出發點",
+   "moodGuess": {
+    "x": 3.4,
+    "y": 0.2,
+    "z": 0.2,
+    "why": "九〇年代日本獨立搖滾"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/55cf2811-6d74-4b6b-a244-e18ef7ba23e4",
+    "https://music.apple.com/jp/album/1882637060",
+    "https://www.discogs.com/master/3167439"
+   ],
+   "spotifyName": "ヨシンバ",
+   "mbRgMbid": "55cf2811-6d74-4b6b-a244-e18ef7ba23e4",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Yoshimba",
+   "uncertain": ""
+  },
+  {
+   "artist": "ピューパ",
+   "album": "えそらことば",
+   "year": 2020,
+   "label": "",
+   "country": "jp",
+   "faction": "jp-idol",
+   "genres": [
+    "pop"
+   ],
+   "why": "2020年首張，9首全長，該組合的主要作品",
+   "moodGuess": {
+    "x": 3.8,
+    "y": -0.8,
+    "z": 0.8,
+    "why": "偶像流行，明亮電子與合唱"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/c3eb65e2-6979-4d2c-a95d-35445fc97ae8",
+    "https://coverartarchive.org/release-group/c3eb65e2-6979-4d2c-a95d-35445fc97ae8"
+   ],
+   "spotifyName": "ピューパ",
+   "mbRgMbid": "c3eb65e2-6979-4d2c-a95d-35445fc97ae8",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "pupa!!",
+   "uncertain": "偶像團，代表性弱"
+  },
+  {
+   "artist": "比屋定篤子",
+   "album": "ささやかれた夢の話",
+   "year": 2015,
+   "label": "",
+   "country": "jp",
+   "faction": "jp-folk",
+   "genres": [
+    "pop",
+    "folk"
+   ],
+   "why": "沖繩出身創作歌手，2015年13首全長；另收《ルア・ラランジャ》(1999)，早期代表作",
+   "moodGuess": {
+    "x": 1.8,
+    "y": -0.8,
+    "z": 0.8,
+    "why": "溫柔的原聲吉他與耳語般的唱腔"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/5407558f-eea6-47cc-944b-f2805afbb68a",
+    "https://coverartarchive.org/release-group/5407558f-eea6-47cc-944b-f2805afbb68a"
+   ],
+   "spotifyName": "Hiyajo Atsuko",
+   "mbRgMbid": "5407558f-eea6-47cc-944b-f2805afbb68a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Hiyajo Atsuko 比屋定篤子",
+   "uncertain": "最具代表的可能是早期專輯ルア・ラランジャ（MB 年份空白，未收）"
+  },
+  {
+   "artist": "姫神",
+   "album": "奥の細道",
+   "year": 1993,
+   "label": "",
+   "country": "jp",
+   "faction": "jp-newage",
+   "genres": [
+    "classical",
+    "world"
+   ],
+   "why": "姫神標誌性的東北意象新世紀音樂，90年代代表作",
+   "moodGuess": {
+    "x": 1.8,
+    "y": 0.2,
+    "z": 0.2,
+    "why": "鋼琴與日本民俗旋律的新世紀氛圍"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/472bd88f-dde0-3e0e-a2e4-5c92b691a623",
+    "https://coverartarchive.org/release-group/472bd88f-dde0-3e0e-a2e4-5c92b691a623"
+   ],
+   "spotifyName": "Himekami",
+   "mbRgMbid": "472bd88f-dde0-3e0e-a2e4-5c92b691a623",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Himekami 姫神",
+   "uncertain": ""
+  },
+  {
+   "artist": "姫神",
+   "album": "遠野",
+   "year": 1982,
+   "label": "",
+   "country": "jp",
+   "faction": "jp-newage",
+   "genres": [
+    "classical",
+    "world"
+   ],
+   "why": "1982年首作，確立姫神的東北民俗世界",
+   "moodGuess": {
+    "x": 1.8,
+    "y": 0.3,
+    "z": 0.0,
+    "why": "鋼琴、合成器與遠野傳說氣氛"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/ca7f5786-4f12-4ec4-a41d-d1b39ec180f1",
+    "https://coverartarchive.org/release-group/ca7f5786-4f12-4ec4-a41d-d1b39ec180f1"
+   ],
+   "spotifyName": "Himekami",
+   "mbRgMbid": "ca7f5786-4f12-4ec4-a41d-d1b39ec180f1",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Himekami 姫神",
+   "uncertain": "第二張選擇偏主觀"
+  },
+  {
+   "artist": "POiSON GiRL FRiEND",
+   "album": "Shyness",
+   "year": 1993,
+   "label": "",
+   "country": "jp",
+   "faction": "jp-electro",
+   "genres": [
+    "electronic",
+    "pop"
+   ],
+   "why": "關口紀子個人計畫，90年代首張全長",
+   "moodGuess": {
+    "x": 3.0,
+    "y": -0.8,
+    "z": 0.3,
+    "why": "輕盈的日本電子流行"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/f1cc24fc-edc2-3898-8be0-c7a9c243554b",
+    "https://coverartarchive.org/release-group/f1cc24fc-edc2-3898-8be0-c7a9c243554b"
+   ],
+   "spotifyName": "POiSON GiRL FRiEND",
+   "mbRgMbid": "f1cc24fc-edc2-3898-8be0-c7a9c243554b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "POiSON GiRL FRiEND",
+   "uncertain": ""
+  },
+  {
+   "artist": "THE天国畑JAPON",
+   "album": "HIGHROCKER",
+   "year": 2020,
+   "label": "",
+   "country": "jp",
+   "faction": "jp-rock",
+   "genres": [
+    "rock"
+   ],
+   "why": "七首的作品作為主要發行，兩張中的較長者",
+   "moodGuess": {
+    "x": 3.6,
+    "y": 0.3,
+    "z": 0.3,
+    "why": "硬搖滾派對氣質"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/c8eff490-2bc1-4d65-b8d8-1c191212a19d",
+    "https://coverartarchive.org/release-group/c8eff490-2bc1-4d65-b8d8-1c191212a19d"
+   ],
+   "spotifyName": "THE天国畑JAPON",
+   "mbRgMbid": "c8eff490-2bc1-4d65-b8d8-1c191212a19d",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "7首，作為主要作品發行的長EP",
+   "queryAlias": "The Tengokubatake Japon",
+   "uncertain": "MB 標 Album，實為 7 首"
+  },
+  {
+   "artist": "比屋定篤子",
+   "album": "ルア・ラランジャ",
+   "year": 1999,
+   "label": "",
+   "country": "jp",
+   "faction": "jp-folk",
+   "genres": [
+    "pop",
+    "folk"
+   ],
+   "why": "沖繩出身創作歌手的首張全長，1999年，公認早期代表作",
+   "moodGuess": {
+    "x": 1.9,
+    "y": -0.8,
+    "z": 0.8,
+    "why": "輕柔的巴薩風原聲與耳語唱腔"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/1301dbd3-2570-455e-8651-1d48a225eaca",
+    "https://music.apple.com/jp/album/1539275187"
+   ],
+   "spotifyName": "Hiyajo Atsuko",
+   "mbRgMbid": "1301dbd3-2570-455e-8651-1d48a225eaca",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Hiyajo Atsuko 比屋定篤子",
+   "uncertain": "MB 首發年空白，1999 依 iTunes"
+  },
+  {
+   "artist": "静香",
+   "album": "天界のペルソナ",
+   "year": 1994,
+   "label": "PSF Records",
+   "country": "jp",
+   "faction": "jp-psych",
+   "genres": [
+    "rock"
+   ],
+   "why": "PSF 日本迷幻地下搖滾名盤，静香的代表作",
+   "moodGuess": {
+    "x": 2.8,
+    "y": 1.0,
+    "z": -0.5,
+    "why": "迷幻吉他與飄忽人聲的緩慢朦朧"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/f0dbee99-7f80-3a4f-aac0-765d7bb08e83",
+    "https://www.discogs.com/release/1123502"
+   ],
+   "spotifyName": "Shizuka",
+   "mbRgMbid": "f0dbee99-7f80-3a4f-aac0-765d7bb08e83",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Shizuka 静香",
+   "uncertain": "封面需 Discogs release 1123502 取圖（CAA 500）"
+  }
+ ],
+ "notes": [
+  "全部 15 位在 seed_cards.json、data/artist-intros、aliases.json 均無（Poison Girls 為英國另一團，非同一人）",
+  "iTunes API 被 proxy 403，封面皆走 CAA／Discogs；ないあがらせっと、ヨシンバ封面已補 Apple Music",
+  "所有 MB 皆用 mbRgMbid 釘住，無人工身分",
+  "身分：Shizuka＝静香（MB 5c125b18-d098-4321-8a06-09dd06871a32，PSF Records 迷幻搖滾團），主線定案"
+ ]
+}

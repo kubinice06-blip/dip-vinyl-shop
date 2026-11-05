@@ -1,0 +1,815 @@
+{
+ "note": "頂點重整 apex-rebalance-20261103：album_overrides.tier 要設／要清（管理員集合，雲端寫不了）。本機後台「頂級牌管理」→「⇄ 依卡池同步頂點旗標」以 seed 第 9 欄為準一鍵處理。",
+ "set": [
+  {
+   "key": "Pearl Jam|Ten",
+   "tier": "hall"
+  },
+  {
+   "key": "Green Day|Dookie",
+   "tier": "hall"
+  },
+  {
+   "key": "Adele|21",
+   "tier": "hall"
+  },
+  {
+   "key": "Rage Against the Machine|Rage Against the Machine",
+   "tier": "hall"
+  },
+  {
+   "key": "Neutral Milk Hotel|In the Aeroplane Over the Sea",
+   "tier": "hall"
+  },
+  {
+   "key": "Nine Inch Nails|The Downward Spiral",
+   "tier": "hall"
+  },
+  {
+   "key": "Red Hot Chili Peppers|Blood Sugar Sex Magik",
+   "tier": "hall"
+  },
+  {
+   "key": "OutKast|Aquemini",
+   "tier": "hall"
+  },
+  {
+   "key": "Beyoncé|Lemonade",
+   "tier": "hall"
+  },
+  {
+   "key": "Arctic Monkeys|Whatever People Say I Am, That's What I'm Not",
+   "tier": "hall"
+  },
+  {
+   "key": "The White Stripes|Elephant",
+   "tier": "hall"
+  },
+  {
+   "key": "Björk|Homogenic",
+   "tier": "hall"
+  },
+  {
+   "key": "Beck|Odelay",
+   "tier": "hall"
+  },
+  {
+   "key": "Pulp|Different Class",
+   "tier": "hall"
+  },
+  {
+   "key": "Nick Drake|Pink Moon",
+   "tier": "hall"
+  },
+  {
+   "key": "Soundgarden|Superunknown",
+   "tier": "hall"
+  },
+  {
+   "key": "Madvillain|Madvillainy",
+   "tier": "hall"
+  },
+  {
+   "key": "Elliott Smith|Either/Or",
+   "tier": "hall"
+  },
+  {
+   "key": "Blur|Parklife",
+   "tier": "hall"
+  },
+  {
+   "key": "Erykah Badu|Baduizm",
+   "tier": "hall"
+  },
+  {
+   "key": "Chet Baker|Chet Baker Sings",
+   "tier": "hall"
+  },
+  {
+   "key": "Smashing Pumpkins|Siamese Dream",
+   "tier": "hall"
+  },
+  {
+   "key": "Eagles|Hotel California",
+   "tier": "hall"
+  },
+  {
+   "key": "The Band|The Band",
+   "tier": "hall"
+  },
+  {
+   "key": "Derek and the Dominos|Layla and Other Assorted Love Songs",
+   "tier": "hall"
+  },
+  {
+   "key": "Blondie|Parallel Lines",
+   "tier": "hall"
+  },
+  {
+   "key": "Buena Vista Social Club|Buena Vista Social Club",
+   "tier": "hall"
+  },
+  {
+   "key": "Sonny Rollins|Saxophone Colossus",
+   "tier": "hall"
+  },
+  {
+   "key": "Steve Reich|Music for 18 Musicians",
+   "tier": "hall"
+  },
+  {
+   "key": "Can|Tago Mago",
+   "tier": "hall"
+  },
+  {
+   "key": "De La Soul|3 Feet High and Rising",
+   "tier": "hall"
+  },
+  {
+   "key": "Boards of Canada|Music Has the Right to Children",
+   "tier": "hall"
+  },
+  {
+   "key": "Creedence Clearwater Revival|Cosmo's Factory",
+   "tier": "hall"
+  },
+  {
+   "key": "Serge Gainsbourg|Histoire de Melody Nelson",
+   "tier": "hall"
+  },
+  {
+   "key": "Peter Gabriel|So",
+   "tier": "hall"
+  },
+  {
+   "key": "Cocteau Twins|Heaven or Las Vegas",
+   "tier": "hall"
+  },
+  {
+   "key": "Arthur Doyle|Alabama Feeling",
+   "tier": "heresy"
+  },
+  {
+   "key": "Napalm Death|Scum",
+   "tier": "heresy"
+  },
+  {
+   "key": "Gorguts|Obscura",
+   "tier": "heresy"
+  },
+  {
+   "key": "Krzysztof Penderecki|Threnody to the Victims of Hiroshima",
+   "tier": "heresy"
+  },
+  {
+   "key": "Alvin Lucier|I Am Sitting in a Room",
+   "tier": "heresy"
+  },
+  {
+   "key": "FLUX Quartet|Feldman: String Quartet No. 2",
+   "tier": "heresy"
+  },
+  {
+   "key": "John Ogdon|Sorabji: Opus Clavicembalisticum",
+   "tier": "heresy"
+  },
+  {
+   "key": "Oleg Malov|Ustvolskaya: Composition No. 2 Dies Irae",
+   "tier": "heresy"
+  },
+  {
+   "key": "Helmut Lachenmann|Das Mädchen mit den Schwefelhölzern",
+   "tier": "heresy"
+  },
+  {
+   "key": "John Cage & David Tudor|Variations IV",
+   "tier": "heresy"
+  },
+  {
+   "key": "Yoko Ono|Yoko Ono/Plastic Ono Band",
+   "tier": "heresy"
+  },
+  {
+   "key": "Royal Trux|Twin Infinitives",
+   "tier": "heresy"
+  },
+  {
+   "key": "The Dead C|Harsh 70s Reality",
+   "tier": "heresy"
+  },
+  {
+   "key": "AMM|AMMMusic",
+   "tier": "heresy"
+  },
+  {
+   "key": "Last Exit|Last Exit",
+   "tier": "heresy"
+  },
+  {
+   "key": "Painkiller|Guts of a Virgin",
+   "tier": "heresy"
+  },
+  {
+   "key": "Ground Zero|Consume Red",
+   "tier": "heresy"
+  },
+  {
+   "key": "Éliane Radigue|Trilogie de la Mort",
+   "tier": "heresy"
+  },
+  {
+   "key": "Prurient|Pleasure Ground",
+   "tier": "heresy"
+  },
+  {
+   "key": "Pharmakon|Bestial Burden",
+   "tier": "heresy"
+  },
+  {
+   "key": "Wolf Eyes|Burned Mind",
+   "tier": "heresy"
+  },
+  {
+   "key": "Khanate|Khanate",
+   "tier": "heresy"
+  },
+  {
+   "key": "John Wiese|Soft Punk",
+   "tier": "heresy"
+  },
+  {
+   "key": "不失者|不失者 (Double Live)",
+   "tier": "heresy"
+  },
+  {
+   "key": "零與聲音解放組織|Z.S.L.O.",
+   "tier": "heresy"
+  },
+  {
+   "key": "Manfred Schoof|European Echoes",
+   "tier": "heresy"
+  },
+  {
+   "key": "Nihilist Spasm Band|No Record",
+   "tier": "heresy"
+  },
+  {
+   "key": "阿部薫|Mort À Crédit",
+   "tier": "heresy"
+  },
+  {
+   "key": "Toshimaru Nakamura|No-Input Mixing Board",
+   "tier": "heresy"
+  },
+  {
+   "key": "Solmania|Metamorphor Chorus",
+   "tier": "heresy"
+  },
+  {
+   "key": "Government Alpha|Alphaville",
+   "tier": "heresy"
+  },
+  {
+   "key": "Current 93|Nature Unveiled",
+   "tier": "heresy"
+  },
+  {
+   "key": "Daniel Menche|Static Burn",
+   "tier": "heresy"
+  },
+  {
+   "key": "Hecker|Acid in the Style of David Tudor",
+   "tier": "heresy"
+  },
+  {
+   "key": "Maryanne Amacher|Sound Characters (Making the Third Ear)",
+   "tier": "heresy"
+  },
+  {
+   "key": "Evan Parker, Derek Bailey & Han Bennink|The Topography of the Lungs",
+   "tier": "heresy"
+  },
+  {
+   "key": "Phil Minton|A Doughnut in One Hand",
+   "tier": "heresy"
+  },
+  {
+   "key": "吉田アミ|Tiger Thrush",
+   "tier": "heresy"
+  },
+  {
+   "key": "Dead Neanderthals|Craters",
+   "tier": "heresy"
+  },
+  {
+   "key": "David Tudor|Microphone",
+   "tier": "heresy"
+  },
+  {
+   "key": "Incapacitants|Quietus",
+   "tier": "heresy"
+  },
+  {
+   "key": "Maurizio Bianchi|Symphony for a Genocide",
+   "tier": "heresy"
+  },
+  {
+   "key": "Mazen Kerbaj|Solo Trumpet Vol. 2.1: No Cuts, No Overdubs, No Use of Electronics",
+   "tier": "heresy"
+  },
+  {
+   "key": "John Lennon|Unfinished Music No. 1: Two Virgins",
+   "tier": "heresy"
+  },
+  {
+   "key": "Alvin Curran|Canti e vedute del giardino magnetico",
+   "tier": "pearl"
+  },
+  {
+   "key": "Bladder Flask|One Day I Was So Sad That the Corners of My Mouth Met & Everybody Thought I Was Whistling",
+   "tier": "pearl"
+  },
+  {
+   "key": "浜瀬元彦|Reminiscence",
+   "tier": "pearl"
+  },
+  {
+   "key": "尾島由郎|Club",
+   "tier": "pearl"
+  },
+  {
+   "key": "Maitreya Kali|Apache",
+   "tier": "pearl"
+  },
+  {
+   "key": "한대수|고무신",
+   "tier": "pearl"
+  },
+  {
+   "key": "김두수|자유혼",
+   "tier": "pearl"
+  },
+  {
+   "key": "John Taylor|Pause, and Think Again",
+   "tier": "pearl"
+  },
+  {
+   "key": "Black Artists Group|In Paris, Aries 1973",
+   "tier": "pearl"
+  },
+  {
+   "key": "明田川荘之|Aketa's Erotical Piano Solo & Grotesque Piano Trio",
+   "tier": "pearl"
+  },
+  {
+   "key": "高柳昌行|Eclipse/侵蝕",
+   "tier": "pearl"
+  },
+  {
+   "key": "Tony Oxley|Tony Oxley",
+   "tier": "pearl"
+  },
+  {
+   "key": "Harry Roesli|Ken Arok",
+   "tier": "pearl"
+  },
+  {
+   "key": "Black Renaissance|Body, Mind and Spirit",
+   "tier": "pearl"
+  },
+  {
+   "key": "Paul Rutherford|The Gentle Harm of the Bourgeoisie",
+   "tier": "pearl"
+  },
+  {
+   "key": "Blue Notes|Blue Notes for Mongezi",
+   "tier": "pearl"
+  },
+  {
+   "key": "Peter Cusack|After Being in Holland for Two Years",
+   "tier": "pearl"
+  },
+  {
+   "key": "Keith Tippett's Ark|Frames (Music for an Imaginary Film)",
+   "tier": "pearl"
+  },
+  {
+   "key": "Alterations|Alterations",
+   "tier": "pearl"
+  },
+  {
+   "key": "Paul Lytton|The Inclined Stick",
+   "tier": "pearl"
+  },
+  {
+   "key": "Polly Bradfield, Andrea Centazzo, Eugene Chadbourne, Tom Cora, Toshinori Kondo, John Zorn|Environment for Sextet",
+   "tier": "pearl"
+  },
+  {
+   "key": "Linda Hill|Lullaby for Linda",
+   "tier": "pearl"
+  },
+  {
+   "key": "キングコングパラダイス|あつさもさむさも",
+   "tier": "pearl"
+  },
+  {
+   "key": "Zaratustra|Su Música... Su Filosofía...",
+   "tier": "pearl"
+  },
+  {
+   "key": "Company Caine|A Product of a Broken Reality",
+   "tier": "pearl"
+  },
+  {
+   "key": "Lightyears Away / Thundermother|Astral Navigations",
+   "tier": "pearl"
+  },
+  {
+   "key": "Ariesta Birawa Group|Ariesta Birawa Group, Vol. 1",
+   "tier": "pearl"
+  },
+  {
+   "key": "Grow-Up|The Best Thing",
+   "tier": "pearl"
+  },
+  {
+   "key": "Ché-SHIZU|約束はできない",
+   "tier": "pearl"
+  },
+  {
+   "key": "のいづんずり|抱擁",
+   "tier": "pearl"
+  },
+  {
+   "key": "Maher Shalal Hash Baz|maher shalal hash baz 第１集",
+   "tier": "pearl"
+  },
+  {
+   "key": "灰野敬二|滲有無",
+   "tier": "pearl"
+  },
+  {
+   "key": "The Brief Encounter|Introducing - The Brief Encounter",
+   "tier": "pearl"
+  },
+  {
+   "key": "İlhan Mimaroğlu|Wings of the Delirious Demon and Other Electronic Works",
+   "tier": "pearl"
+  },
+  {
+   "key": "Francis Monkman|Energism",
+   "tier": "pearl"
+  },
+  {
+   "key": "Zoviet France|Norsch",
+   "tier": "pearl"
+  },
+  {
+   "key": "Philemon Arthur and the Dung|Philemon Arthur and the Dung",
+   "tier": "pearl"
+  },
+  {
+   "key": "Barney Wilen|Zodiac",
+   "tier": "pearl"
+  },
+  {
+   "key": "Svein Finnerud Trio|Plastic Sun",
+   "tier": "pearl"
+  },
+  {
+   "key": "The Ric Colbeck Quartet|The Sun Is Coming Up",
+   "tier": "pearl"
+  },
+  {
+   "key": "The Piano Choir|Handscapes",
+   "tier": "pearl"
+  },
+  {
+   "key": "Muriel Winston|A Fresh Viewpoint",
+   "tier": "pearl"
+  },
+  {
+   "key": "Rien Djamain|Api Asmara",
+   "tier": "pearl"
+  },
+  {
+   "key": "Evan Parker & Barry Guy|Incision",
+   "tier": "pearl"
+  },
+  {
+   "key": "Transs|Hotel San Vicente",
+   "tier": "pearl"
+  },
+  {
+   "key": "Angkanang Kunchai With Ubon-Pattana Band|Isan Lam Plearn",
+   "tier": "pearl"
+  },
+  {
+   "key": "Tyrone Evans|Sings Bullwackie Style",
+   "tier": "pearl"
+  }
+ ],
+ "clear": [
+  {
+   "key": "Oasis|Definitely Maybe",
+   "was": "hall"
+  },
+  {
+   "key": "Stevie Wonder|Talking Book",
+   "was": "hall"
+  },
+  {
+   "key": "Stevie Wonder|Innervisions",
+   "was": "hall"
+  },
+  {
+   "key": "Aretha Franklin|Amazing Grace",
+   "was": "hall"
+  },
+  {
+   "key": "Frank Ocean|Channel Orange",
+   "was": "hall"
+  },
+  {
+   "key": "The Beatles|The Beatles",
+   "was": "hall"
+  },
+  {
+   "key": "The Beatles|Revolver",
+   "was": "hall"
+  },
+  {
+   "key": "The Beatles|Sgt. Pepper's Lonely Hearts Club Band",
+   "was": "hall"
+  },
+  {
+   "key": "The Beatles|Rubber Soul",
+   "was": "hall"
+  },
+  {
+   "key": "The Beatles|The Beatles (White Album)",
+   "was": "hall"
+  },
+  {
+   "key": "Bob Marley & The Wailers|Legend",
+   "was": "hall"
+  },
+  {
+   "key": "Bob Dylan|Blood on the Tracks",
+   "was": "hall"
+  },
+  {
+   "key": "Bob Dylan|Blonde on Blonde",
+   "was": "hall"
+  },
+  {
+   "key": "Bob Dylan|Bringing It All Back Home",
+   "was": "hall"
+  },
+  {
+   "key": "Bob Dylan|The Freewheelin' Bob Dylan",
+   "was": "hall"
+  },
+  {
+   "key": "The Rolling Stones|Let It Bleed",
+   "was": "hall"
+  },
+  {
+   "key": "The Rolling Stones|Sticky Fingers",
+   "was": "hall"
+  },
+  {
+   "key": "The Rolling Stones|Beggars Banquet",
+   "was": "hall"
+  },
+  {
+   "key": "The Velvet Underground|White Light/White Heat",
+   "was": "hall"
+  },
+  {
+   "key": "The Jimi Hendrix Experience|Electric Ladyland",
+   "was": "hall"
+  },
+  {
+   "key": "Led Zeppelin|Led Zeppelin II",
+   "was": "hall"
+  },
+  {
+   "key": "Pink Floyd|Wish You Were Here",
+   "was": "hall"
+  },
+  {
+   "key": "David Bowie|Hunky Dory",
+   "was": "hall"
+  },
+  {
+   "key": "David Bowie|Low",
+   "was": "hall"
+  },
+  {
+   "key": "David Bowie|\"Heroes\"",
+   "was": "hall"
+  },
+  {
+   "key": "Michael Jackson|Off the Wall",
+   "was": "hall"
+  },
+  {
+   "key": "Prince|Sign 'O' the Times",
+   "was": "hall"
+  },
+  {
+   "key": "U2|Achtung Baby",
+   "was": "hall"
+  },
+  {
+   "key": "Radiohead|Kid A",
+   "was": "hall"
+  },
+  {
+   "key": "Black Sabbath|Black Sabbath",
+   "was": "hall"
+  },
+  {
+   "key": "Miles Davis|Bitches Brew",
+   "was": "hall"
+  },
+  {
+   "key": "Miles Davis|Birth of the Cool",
+   "was": "hall"
+  },
+  {
+   "key": "John Coltrane|Giant Steps",
+   "was": "hall"
+  },
+  {
+   "key": "Frank Sinatra|Frank Sinatra Sings for Only the Lonely",
+   "was": "hall"
+  },
+  {
+   "key": "Brian Eno|Ambient 1: Music for Airports",
+   "was": "hall"
+  },
+  {
+   "key": "Various Artists|Hardcore Unlawful Assembly",
+   "was": "pearl"
+  },
+  {
+   "key": "Various Artists|Laos - L'art Du Khène",
+   "was": "pearl"
+  },
+  {
+   "key": "John Williams|Jaws: Music From the Original Motion Picture Soundtrack",
+   "was": "hall"
+  },
+  {
+   "key": "Louis Armstrong|The Complete Hot Five & Hot Seven Recordings, Volume 3",
+   "was": "hall"
+  },
+  {
+   "key": "Merzbow|Venereology",
+   "was": "heresy"
+  },
+  {
+   "key": "Merzbow|1930",
+   "was": "heresy"
+  },
+  {
+   "key": "Merzbow|Noisembryo",
+   "was": "heresy"
+  },
+  {
+   "key": "Merzbow|Rainbow Electronics",
+   "was": "heresy"
+  },
+  {
+   "key": "Masonna|Inner Mind Mystique",
+   "was": "heresy"
+  },
+  {
+   "key": "非常階段|King of Noise",
+   "was": "heresy"
+  },
+  {
+   "key": "The Residents|Not Available",
+   "was": "heresy"
+  },
+  {
+   "key": "Scott Walker|Bish Bosch",
+   "was": "heresy"
+  },
+  {
+   "key": "Swans|Cop",
+   "was": "heresy"
+  },
+  {
+   "key": "Derek Bailey|Lot 74 Solo Improvisations",
+   "was": "pearl"
+  },
+  {
+   "key": "Anthony Braxton|Saxophone Improvisations, Series F.",
+   "was": "pearl"
+  },
+  {
+   "key": "Throbbing Gristle|D.o.A: The Third and Final Report",
+   "was": "heresy"
+  },
+  {
+   "key": "This Heat|This Heat",
+   "was": "heresy"
+  },
+  {
+   "key": "Ryoji Ikeda|Dataplex",
+   "was": "heresy"
+  },
+  {
+   "key": "Ryoji Ikeda|Test Pattern",
+   "was": "heresy"
+  },
+  {
+   "key": "AKA|Crazy Joe",
+   "was": "pearl"
+  },
+  {
+   "key": "生活向上委員会|Live in Masuda",
+   "was": "pearl"
+  },
+  {
+   "key": "Wilson McKinley|On Stage",
+   "was": "pearl"
+  },
+  {
+   "key": "Hope of Glory|Second Look",
+   "was": "pearl"
+  },
+  {
+   "key": "夢幻|過ぎ去りし王国の王女",
+   "was": "pearl"
+  },
+  {
+   "key": "The Clark Sisters|Count It All Joy",
+   "was": "pearl"
+  },
+  {
+   "key": "Third Quadrant|Seeing Yourself as You Really Are",
+   "was": "pearl"
+  },
+  {
+   "key": "Treatment|The World of Treatment",
+   "was": "pearl"
+  },
+  {
+   "key": "Geoff Mann|Chants Would Be a Fine Thing",
+   "was": "pearl"
+  },
+  {
+   "key": "Geoff Mann|Psalm Enchanted Evening",
+   "was": "pearl"
+  },
+  {
+   "key": "Suzukiski|Kamakura",
+   "was": "pearl"
+  },
+  {
+   "key": "Roscoe Mitchell|L-R-G / The Maze / S II Examples",
+   "was": "pearl"
+  },
+  {
+   "key": "光束夜|ファースト・ライブ1979 吉祥寺マイナー [First live 1979 Kichijoji Minor]",
+   "was": "pearl"
+  },
+  {
+   "key": "北村英治|Happy Cooking Vol. II",
+   "was": "pearl"
+  },
+  {
+   "key": "Altan Urag|Nation",
+   "was": "pearl"
+  },
+  {
+   "key": "Spontaneous Music Ensemble|So, What Do You Think?",
+   "was": "pearl"
+  },
+  {
+   "key": "Organum|Sanctus",
+   "was": "pearl"
+  },
+  {
+   "key": "Organum|Amen",
+   "was": "pearl"
+  },
+  {
+   "key": "Company|Fables",
+   "was": "pearl"
+  },
+  {
+   "key": "Ned Rothenberg|Trespass",
+   "was": "pearl"
+  },
+  {
+   "key": "濁水溪公社|鬼島社會檔案",
+   "was": "pearl"
+  }
+ ]
+}

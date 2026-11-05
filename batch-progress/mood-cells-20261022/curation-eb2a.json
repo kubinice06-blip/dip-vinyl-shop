@@ -1,0 +1,761 @@
+{
+ "group": "eb2a",
+ "factions": [
+  {
+   "id": "hu-free",
+   "zh": "匈牙利自由／前衛",
+   "count": 7,
+   "why": ""
+  },
+  {
+   "id": "hu-mainstream",
+   "zh": "匈牙利主流／後咆勃",
+   "count": 6,
+   "why": ""
+  },
+  {
+   "id": "hu-fusion",
+   "zh": "匈牙利融合",
+   "count": 7,
+   "why": ""
+  },
+  {
+   "id": "hu-folk-fusion",
+   "zh": "匈牙利民謠融合",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "hu-vocal",
+   "zh": "匈牙利人聲",
+   "count": 3,
+   "why": ""
+  }
+ ],
+ "albums": [
+  {
+   "artist": "Szabados Quartet",
+   "album": "Az Esküvő = The Wedding",
+   "year": 1975,
+   "label": "Hungaroton / Pepita",
+   "country": "hu",
+   "faction": "hu-free",
+   "genres": [
+    "jazz"
+   ],
+   "why": "匈牙利自由爵士奠基盤，Szabados 把匈牙利民謠、現代作曲與即興擰成一體，被視為鐵幕自由爵士的標誌。",
+   "moodGuess": {
+    "x": 3.8,
+    "y": 0.2,
+    "z": -0.9,
+    "why": "無調即興加戲劇性，自由爵士一律躁；質地偏薄，旋律不明偏冷"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/834388",
+    "https://www.discogs.com/release/1955083",
+    "https://musicbrainz.org/release-group/1e791e3e-61f2-4007-94ec-132c423176ad"
+   ],
+   "mbRgMbid": "1e791e3e-61f2-4007-94ec-132c423176ad",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Szabados György Az Esküvő",
+   "uncertain": "Szabados György 名，國際寫作 György Szabados；封面署名 Szabados Quartet。"
+  },
+  {
+   "artist": "György Szabados",
+   "album": "Adyton",
+   "year": 1983,
+   "label": "Krém",
+   "country": "hu",
+   "faction": "hu-free",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Szabados 80 年代代表作，獨奏／小編制的神祕儀式性鋼琴即興，匈牙利 Krém 廠的自由爵士核心。",
+   "moodGuess": {
+    "x": 3.5,
+    "y": 0.6,
+    "z": -1.0,
+    "why": "鋼琴低音塊與無調即興，緊繃偏重偏冷"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/2557472",
+    "https://www.discogs.com/release/2426960"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": "MusicBrainz release-group 以 artist+title 搜尋無此盤；Discogs master 2557472 為身分來源",
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/2557472",
+    "https://www.discogs.com/release/2426960"
+   ],
+   "releaseException": "",
+   "queryAlias": "Szabados Adyton",
+   "uncertain": "MB 查無。"
+  },
+  {
+   "artist": "György Szabados / MAKUZ",
+   "album": "A Szarvassá Vált Fiak",
+   "year": 1989,
+   "label": "Krém / Hungaroton",
+   "country": "hu",
+   "faction": "hu-free",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Szabados 以大型即興合唱團 MAKUZ 錄製的清唱劇，匈牙利自由爵士的大編制巔峰。",
+   "moodGuess": {
+    "x": 3.7,
+    "y": 0.9,
+    "z": -0.8,
+    "why": "合唱加樂團的壓迫厚度，躁、重、冷"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/784373",
+    "https://www.discogs.com/release/2709251"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": "MusicBrainz release-group 以 artist+title 搜尋無此盤；Discogs master 784373 為身分來源",
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/784373",
+    "https://www.discogs.com/release/2709251"
+   ],
+   "releaseException": "",
+   "queryAlias": "Szabados György MAKUZ A szarvassá vált fiak",
+   "uncertain": "MB 查無；為清唱劇式作品，爵士歸屬偏邊緣。"
+  },
+  {
+   "artist": "Binder Quintet",
+   "album": "Binder Quintet Featuring John Tchicai",
+   "year": 1983,
+   "label": "Krém",
+   "country": "hu",
+   "faction": "hu-free",
+   "genres": [
+    "jazz"
+   ],
+   "why": "丹麥自由爵士薩克斯手 Tchicai 客席匈牙利 Binder 五重奏，80 年代匈牙利自由爵士與國際接軌的少數紀錄。",
+   "moodGuess": {
+    "x": 3.7,
+    "y": 0.3,
+    "z": -0.7,
+    "why": "自由即興，躁、偏輕偏冷"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/833950",
+    "https://www.discogs.com/release/2393483",
+    "https://musicbrainz.org/release-group/a7e24d94-81fe-4bc2-a232-e8158a72c4f0"
+   ],
+   "mbRgMbid": "a7e24d94-81fe-4bc2-a232-e8158a72c4f0",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Károly Binder",
+   "album": "Kontinentspiel",
+   "year": 1989,
+   "label": "Krém",
+   "country": "hu",
+   "faction": "hu-free",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Binder Károly 鋼琴／樂團的前衛爵士代表，Krém 廠 80 年代匈牙利前衛的重要一張。",
+   "moodGuess": {
+    "x": 3.4,
+    "y": 0.3,
+    "z": -0.5,
+    "why": "現代爵士與即興混合，邊緣躁、輕、微冷"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/797830",
+    "https://www.discogs.com/release/6657639",
+    "https://musicbrainz.org/release-group/00b7d470-2326-4d62-8d7b-c79f291fa847"
+   ],
+   "mbRgMbid": "00b7d470-2326-4d62-8d7b-c79f291fa847",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Mihály Dresch Quartet",
+   "album": "Mozdulatlan Utazás",
+   "year": 2000,
+   "label": "Fonó Records",
+   "country": "hu",
+   "faction": "hu-free",
+   "genres": [
+    "jazz",
+    "world"
+   ],
+   "why": "Dresch 把匈牙利民謠音階與自由爵士熔成一爐，這張是其四重奏成熟期的代表錄音室作。",
+   "moodGuess": {
+    "x": 3.2,
+    "y": 0.2,
+    "z": 0.0,
+    "why": "民謠旋律清楚的當代爵士，邊緣躁、輕、中性偏暖"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/1016742",
+    "https://www.discogs.com/release/5968986",
+    "https://musicbrainz.org/release-group/08a42b18-29f6-44ec-a8a3-d60e46d31657"
+   ],
+   "mbRgMbid": "08a42b18-29f6-44ec-a8a3-d60e46d31657",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Dresch Quartet Mozdulatlan utazás",
+   "uncertain": "團名在國際上寫 Dresch Quartet；Dresch Mihály 人名依 Western order。"
+  },
+  {
+   "artist": "Mihály Dresch Quartet",
+   "album": "...Folyondár...",
+   "year": 1995,
+   "label": "Adyton",
+   "country": "hu",
+   "faction": "hu-folk-fusion",
+   "genres": [
+    "jazz",
+    "world"
+   ],
+   "why": "Dresch 與 Dudás Mihály 的四重奏，匈牙利民謠爵士融合的 90 年代代表。",
+   "moodGuess": {
+    "x": 3.0,
+    "y": 0.3,
+    "z": 0.2,
+    "why": "民謠旋律明確，中速，邊緣躁、輕、暖"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/2361526",
+    "https://www.discogs.com/release/8699059",
+    "https://musicbrainz.org/release-group/4a566f60-c7c1-4632-95f8-20f413ff41a7"
+   ],
+   "mbRgMbid": "4a566f60-c7c1-4632-95f8-20f413ff41a7",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Dresch Dudás Mihály Quartett Folyondár",
+   "uncertain": "MB 署名 Dresch Dudás Mihály Quartett。"
+  },
+  {
+   "artist": "Grencsó Kollektíva",
+   "album": "1988-89",
+   "year": 1990,
+   "label": "Adyton",
+   "country": "hu",
+   "faction": "hu-free",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Grencsó István 率領的集體即興，匈牙利 80 年代末自由爵士新世代的代表錄音。",
+   "moodGuess": {
+    "x": 3.8,
+    "y": 0.3,
+    "z": -0.9,
+    "why": "集體自由即興，躁、輕、冷"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/1283485",
+    "https://www.discogs.com/release/2491745"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": "MusicBrainz release-group 以 artist+title 搜尋無此盤；Discogs master 1283485 為身分來源",
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/1283485",
+    "https://www.discogs.com/release/2491745"
+   ],
+   "releaseException": "",
+   "queryAlias": "Grencsó Kollektíva 1988 89",
+   "uncertain": "MB 查無。"
+  },
+  {
+   "artist": "Aladár Pege",
+   "album": "Pege",
+   "year": 1980,
+   "label": "Pepita",
+   "country": "hu",
+   "faction": "hu-mainstream",
+   "genres": [
+    "jazz"
+   ],
+   "why": "匈牙利低音大提琴巨匠 Pege 的 Pepita 代表作，匈牙利後咆勃主流爵士的標準盤。",
+   "moodGuess": {
+    "x": 3.0,
+    "y": 0.5,
+    "z": 0.6,
+    "why": "後咆勃，旋律明確、搖擺好入耳，邊緣躁、重、暖"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/928084",
+    "https://www.discogs.com/release/2482663"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": "MusicBrainz release-group 以 artist+title 搜尋無此盤；Discogs master 928084 為身分來源",
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/928084",
+    "https://www.discogs.com/release/2482663"
+   ],
+   "releaseException": "",
+   "queryAlias": "Pege Aladár Pege",
+   "uncertain": "MB 查無。Pege Aladár 依國際寫法 Aladár Pege。"
+  },
+  {
+   "artist": "Pege Trio",
+   "album": "Bass On Top",
+   "year": 1966,
+   "label": "Supraphon",
+   "country": "hu",
+   "faction": "hu-mainstream",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Pege 60 年代的硬咆勃／cool 三重奏，在捷克 Supraphon 錄製，歐洲低音大提琴爵士的早期經典。",
+   "moodGuess": {
+    "x": 2.9,
+    "y": 0.4,
+    "z": 0.6,
+    "why": "硬咆勃主題清楚，邊緣靜、輕、暖"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/1591988",
+    "https://www.discogs.com/release/8157958"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": "MusicBrainz release-group 以 artist+title 搜尋無此盤；Discogs master 1591988 為身分來源",
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/1591988",
+    "https://www.discogs.com/release/8157958"
+   ],
+   "releaseException": "",
+   "queryAlias": "Pege Bass On Top",
+   "uncertain": "MB 查無。廠牌為捷克 Supraphon，但為匈牙利藝人；country 填 hu。"
+  },
+  {
+   "artist": "Walter Norris & Aladár Pege",
+   "album": "Synchronicity",
+   "year": 1979,
+   "label": "Enja",
+   "country": "de",
+   "faction": "hu-mainstream",
+   "genres": [
+    "jazz"
+   ],
+   "why": "美國鋼琴家 Walter Norris 與 Pege 的二重奏，Enja 出品，匈牙利爵士登上西方樂壇的代表盤。",
+   "moodGuess": {
+    "x": 3.2,
+    "y": 0.4,
+    "z": 0.0,
+    "why": "鋼琴／低音二重奏，即興偏自由，邊緣躁、輕、中性"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/374370",
+    "https://www.discogs.com/release/1098974"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": "MusicBrainz release-group 以 artist+title 搜尋無此盤；Discogs master 374370 為身分來源",
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/374370",
+    "https://www.discogs.com/release/1098974"
+   ],
+   "releaseException": "",
+   "queryAlias": "Norris Pege Synchronicity",
+   "uncertain": "MB 查無（找到 Synchronicity 皆非此盤）。country 填 de（Enja 慕尼黑），派系仍屬匈牙利。"
+  },
+  {
+   "artist": "György Vukán",
+   "album": "Derby",
+   "year": 1989,
+   "label": "Krém / Magyar Rádió",
+   "country": "hu",
+   "faction": "hu-mainstream",
+   "genres": [
+    "jazz"
+   ],
+   "why": "鋼琴家兼作曲家 Vukán 的 80 年代作，匈牙利現代爵士鋼琴的代表。",
+   "moodGuess": {
+    "x": 3.0,
+    "y": 0.4,
+    "z": 0.4,
+    "why": "現代爵士鋼琴，邊緣躁、輕、微暖"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/1933443",
+    "https://www.discogs.com/release/4881364",
+    "https://musicbrainz.org/release-group/fba5793f-ac8a-4624-8a14-1ecdf8f6820a"
+   ],
+   "mbRgMbid": "fba5793f-ac8a-4624-8a14-1ecdf8f6820a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Vukán Derby",
+   "uncertain": "Vukán György 依國際寫法 György Vukán。"
+  },
+  {
+   "artist": "The Super Trio",
+   "album": "Birthday Party",
+   "year": 1987,
+   "label": "Krém / Magyar Rádió",
+   "country": "hu",
+   "faction": "hu-mainstream",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Vukán、Berkes、Kőszegi 三位匈牙利爵士名家合組，80 年代匈牙利主流爵士的合奏代表。",
+   "moodGuess": {
+    "x": 3.1,
+    "y": 0.4,
+    "z": 0.5,
+    "why": "後咆勃合奏，邊緣躁、輕、暖"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/3279115",
+    "https://www.discogs.com/release/5539362"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": "MusicBrainz release-group 以 artist+title 搜尋無此盤；Discogs master 3279115 為身分來源",
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/3279115",
+    "https://www.discogs.com/release/5539362"
+   ],
+   "releaseException": "",
+   "queryAlias": "Super Trio Vukán Berkes Kőszegi Birthday Party",
+   "uncertain": "MB 查無（同名盤皆他人）。為三人合組團。"
+  },
+  {
+   "artist": "Béla Szakcsi Lakatos",
+   "album": "Sham",
+   "year": 1990,
+   "label": "Krém / Hungaroton",
+   "country": "hu",
+   "faction": "hu-mainstream",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Szakcsi Lakatos Béla 與 Jinda、Babos、Mandel 的四重奏，匈牙利現代爵士名手的聯手錄音。",
+   "moodGuess": {
+    "x": 3.1,
+    "y": 0.4,
+    "z": 0.3,
+    "why": "現代爵士，邊緣躁、輕、微暖"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/2636027",
+    "https://www.discogs.com/release/3954768",
+    "https://musicbrainz.org/release-group/eaf4f25b-e5f8-4445-9fe6-073a6ea30f4f"
+   ],
+   "mbRgMbid": "eaf4f25b-e5f8-4445-9fe6-073a6ea30f4f",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Szakcsi Lakatos Béla Sham",
+   "uncertain": "Szakcsi Lakatos Béla 依國際寫法 Béla Szakcsi Lakatos。"
+  },
+  {
+   "artist": "Gonda Sextet",
+   "album": "Sámánének",
+   "year": 1976,
+   "label": "Pepita",
+   "country": "hu",
+   "faction": "hu-fusion",
+   "genres": [
+    "jazz",
+    "world"
+   ],
+   "why": "Gonda János 的六重奏，把匈牙利薩滿民謠意象化進融合爵士，Jazzman 等評論共識的匈牙利名盤。",
+   "moodGuess": {
+    "x": 3.3,
+    "y": 0.5,
+    "z": 0.0,
+    "why": "民謠融合，律動帶推進，邊緣躁、重、中性"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/961305",
+    "https://www.discogs.com/release/8144498",
+    "https://musicbrainz.org/release-group/3ae24a46-2ac3-4212-8e59-74acc2d8aeee"
+   ],
+   "mbRgMbid": "3ae24a46-2ac3-4212-8e59-74acc2d8aeee",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Gonda János Sámánének",
+   "uncertain": "Gonda János 在團名中用 Gonda Sextet。"
+  },
+  {
+   "artist": "Tomsits Jazz Group",
+   "album": "Álom És Valóság (Dream And Reality)",
+   "year": 1978,
+   "label": "Pepita",
+   "country": "hu",
+   "faction": "hu-fusion",
+   "genres": [
+    "jazz"
+   ],
+   "why": "小號手 Tomsits Rudolf 的 soul-jazz／融合名盤，是匈牙利 70 年代融合的代表。",
+   "moodGuess": {
+    "x": 3.6,
+    "y": 0.5,
+    "z": 0.8,
+    "why": "funk／soul-jazz 律動，躁、重、暖"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/321004",
+    "https://www.discogs.com/release/16040421",
+    "https://musicbrainz.org/release-group/498c6cdf-2f0b-45b3-9335-32016ae22a67"
+   ],
+   "mbRgMbid": "498c6cdf-2f0b-45b3-9335-32016ae22a67",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Tomsits Álom és valóság",
+   "uncertain": "MB 署名 Tomsits Jazz Group，Discogs 署名 Tomsits Együttes。"
+  },
+  {
+   "artist": "Csaba Deseő Jazz Quintet",
+   "album": "Ultraviola",
+   "year": 1977,
+   "label": "Pepita",
+   "country": "hu",
+   "faction": "hu-fusion",
+   "genres": [
+    "jazz"
+   ],
+   "why": "小提琴家 Deseő Csaba 的爵士搖滾五重奏，匈牙利 70 年代小提琴融合的代表作。",
+   "moodGuess": {
+    "x": 3.7,
+    "y": 0.4,
+    "z": 0.4,
+    "why": "jazz-rock 推進，躁、輕、微暖"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/703437",
+    "https://www.discogs.com/release/1344168",
+    "https://musicbrainz.org/release-group/33863b93-69f3-4917-87ca-94053dc8969a"
+   ],
+   "mbRgMbid": "33863b93-69f3-4917-87ca-94053dc8969a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Deseő Csaba Ultraviola",
+   "uncertain": "MB 登記的是 2009 重發日期；原盤 1977 Pepita。署名含 Friends。"
+  },
+  {
+   "artist": "Gusztáv Csík Quartet",
+   "album": "Csík Gusztáv És Együttese",
+   "year": 1977,
+   "label": "Pepita",
+   "country": "hu",
+   "faction": "hu-fusion",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Csík Gusztáv 四重奏，後咆勃加 jazz-funk 的 Pepita 70 年代名盤，近年重發頻頻。",
+   "moodGuess": {
+    "x": 3.5,
+    "y": 0.5,
+    "z": 0.7,
+    "why": "jazz-funk 律動，躁、重、暖"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/726810",
+    "https://www.discogs.com/release/1145197",
+    "https://musicbrainz.org/release-group/871a67ce-484b-478b-b46d-9e7348095c17"
+   ],
+   "mbRgMbid": "871a67ce-484b-478b-b46d-9e7348095c17",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Csík Gusztáv és együttese",
+   "uncertain": ""
+  },
+  {
+   "artist": "Bergendy",
+   "album": "Jazz",
+   "year": 1976,
+   "label": "Pepita",
+   "country": "hu",
+   "faction": "hu-fusion",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Bergendy 樂團（原為舞曲樂團）轉向爵士的專輯，匈牙利流行與爵士融合的標誌。",
+   "moodGuess": {
+    "x": 3.4,
+    "y": 0.5,
+    "z": 0.7,
+    "why": "爵士搖滾有旋律，邊緣躁、重、暖"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/1443402",
+    "https://www.discogs.com/release/1343005",
+    "https://musicbrainz.org/release-group/ff5ad72f-14de-40fa-9af6-3e2f2e65562b"
+   ],
+   "mbRgMbid": "ff5ad72f-14de-40fa-9af6-3e2f2e65562b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Bergendy 主體是流行樂團，這張是爵士專輯。"
+  },
+  {
+   "artist": "Dimenzió",
+   "album": "Dimenzió",
+   "year": 1981,
+   "label": "Pepita",
+   "country": "hu",
+   "faction": "hu-fusion",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Dimenzió 的同名首作，匈牙利 80 年代初 fusion／jazz-funk 的代表。",
+   "moodGuess": {
+    "x": 3.6,
+    "y": 0.4,
+    "z": 0.5,
+    "why": "fusion 與 jazz-funk，躁、輕、暖"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/200809",
+    "https://www.discogs.com/release/842882",
+    "https://musicbrainz.org/release-group/d92c4bdb-7b86-4cdb-94ea-284b0ae70b91"
+   ],
+   "mbRgMbid": "d92c4bdb-7b86-4cdb-94ea-284b0ae70b91",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Syrius",
+   "album": "Széttört Álmok",
+   "year": 1976,
+   "label": "Pepita",
+   "country": "hu",
+   "faction": "hu-fusion",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Syrius 的匈牙利語爵士搖滾／融合名盤，Discogs 館藏人數匈牙利爵士第一。",
+   "moodGuess": {
+    "x": 3.5,
+    "y": 0.5,
+    "z": 0.4,
+    "why": "jazz-funk 帶prog，躁、重、微暖"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/534787",
+    "https://www.discogs.com/release/578038",
+    "https://musicbrainz.org/release-group/c7ab7e41-8762-4f69-864f-596680863e7a"
+   ],
+   "mbRgMbid": "c7ab7e41-8762-4f69-864f-596680863e7a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Syrius 池中已有 Devil's Masquerade，本盤為不同專輯。"
+  },
+  {
+   "artist": "Mária Toldy",
+   "album": "Viaszbaba",
+   "year": 1965,
+   "label": "Qualiton",
+   "country": "hu",
+   "faction": "hu-vocal",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Toldy Mária 的 60 年代 Qualiton 專輯，匈牙利爵士化流行人聲與 bossa 的少見紀錄。",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 0.3,
+    "z": 0.8,
+    "why": "柔和人聲加 bossa，靜、輕、暖"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/2117173",
+    "https://www.discogs.com/release/3368312"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": "MusicBrainz release-group 以 artist+title 搜尋無此盤；Discogs master 2117173 為身分來源",
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/2117173",
+    "https://www.discogs.com/release/3368312"
+   ],
+   "releaseException": "",
+   "queryAlias": "Toldi Mária Viaszbaba",
+   "uncertain": "MB 查無。封面署名 Toldi Mária，通行寫 Toldy。為爵士化流行／bossa，爵士歸屬偏邊緣。"
+  },
+  {
+   "artist": "Tamás Berki & Shabu-Shabu",
+   "album": "Berki Sings Jazz",
+   "year": 1996,
+   "label": "Dávid Társas Ügyvédi Iroda",
+   "country": "hu",
+   "faction": "hu-vocal",
+   "genres": [
+    "jazz"
+   ],
+   "why": "男歌手 Berki Tamás 的爵士人聲專輯，90 年代匈牙利人聲爵士的代表。",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 0.5,
+    "z": 0.8,
+    "why": "爵士標準曲人聲，靜、重、暖"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/2122984",
+    "https://www.discogs.com/release/6745524",
+    "https://musicbrainz.org/release-group/fed94a46-cfc9-45be-b331-4d842dd5f983"
+   ],
+   "mbRgMbid": "fed94a46-cfc9-45be-b331-4d842dd5f983",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Berki Tamás Berki sings jazz",
+   "uncertain": ""
+  },
+  {
+   "artist": "Veronika Harcsa",
+   "album": "Red Baggage",
+   "year": 2008,
+   "label": "Smart Music Records",
+   "country": "hu",
+   "faction": "hu-vocal",
+   "genres": [
+    "jazz",
+    "world"
+   ],
+   "why": "Harcsa Veronika 的 2008 年專輯，當代匈牙利女性爵士人聲的代表，融入民謠與電子。",
+   "moodGuess": {
+    "x": 2.7,
+    "y": 0.3,
+    "z": 0.1,
+    "why": "當代人聲爵士，邊緣靜、輕、中性"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/734539",
+    "https://www.discogs.com/release/6099635",
+    "https://musicbrainz.org/release-group/4a76f898-f1e1-396a-bd0c-219504c1041d"
+   ],
+   "mbRgMbid": "4a76f898-f1e1-396a-bd0c-219504c1041d",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Harcsa Veronika Red Baggage",
+   "uncertain": "Harcsa Veronika 依國際寫法 Veronika Harcsa。"
+  }
+ ],
+ "notes": [
+  "匈牙利人名採國際寫法（名 姓，如 György Szabados、Aladár Pege）；團名保持封面署名（Szabados Quartet、Gonda Sextet 等）；Toldy／Toldi 兩種拼法並存，沿用 Toldy。",
+  "封面來源皆為 Discogs master／release 圖像；iTunes 對這批多半查無。",
+  "不收：Gábor Szabó（eb5）、Kőrössy János（eb1）、Eugen Cicero／Attila Zoller（西方期，歸 eb5）、Benkó Dixieland、合輯 Modern Jazz Anthology 系列。",
+  "備用（汰換用，已查 Discogs 身分，未入 24 張）：Dresch Quartet《Live In Cologne》1988 West Wind（現場，Discogs 888720，MB 無）、Babos《Kinn és benn》1988 已有 MB 651731b8-dcac-4a9b-b885-2a9ad0137019（Discogs 943057）、Mini《Vissza a városba》1978（MB de5e6c59-3de2-4eca-b40d-873015751ca2，Discogs 710555）、Kaszakő《Édenkert》1983（MB 20eef8ba-97ce-4b78-9870-02b1dee7675d，Discogs 295949）、Dés László《A fal mögött》1984（Discogs 811765）、Debreceni Jazz Együttes 1979（Discogs 1634492）。",
+  "池子：匈牙利爵士國營廠盤能確認為『重要』的約 30 張，24 張已收；Kőszegi Imre、Rátonyi Róbert、Lakatos Tony、Bontovics 查無個人名義的重要錄音室專輯（Lakatos Tony 為西德期、Rátonyi 為歌手），故未入選。",
+  "人工身分盤：Adyton、A Szarvassá Vált Fiak、Grencsó 1988-89、Pege《Pege》、Bass On Top、Synchronicity、Super Trio、Viaszbaba，其餘有 MB RG。"
+ ]
+}

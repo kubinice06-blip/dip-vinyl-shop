@@ -29,12 +29,22 @@
    "ratings": {
     "classic": 4,
     "obscurity": 4,
-    "accessibility": 3,
+    "accessibility": 4,
     "listeners": 1,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 5,
+     "accessibility": 4,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：L1 無試聽→5；New Directions 首作；自由爵士",
+     "rarity": "legendary"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：高柳國際知名、有 Tiliqua 與 2022 義大利 Cinedelic 再發→疑拆名錯配不套下限，照錨點考古再發→4；非 pearl｜L=1"
    },
-   "rarity": "uncommon",
+   "rarity": "epic",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -90,12 +100,21 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 3,
+    "classic": 4,
     "obscurity": 4,
     "accessibility": 2,
     "listeners": 27,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：L27 有串流→4；高柳主流吉他代表作；標準曲抒情"
    },
    "rarity": "rare",
    "apexAssessment": {
@@ -117,7 +136,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/8c/5d/0e/8c5d0e47-b0ab-d629-500b-30f451c5bc26/mzaf_17031869695029025574.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/e2/6f/67/e26f67ad-cceb-32cc-3e6c-250dac9965d2/mzaf_2758865114501462652.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -158,21 +177,43 @@
    },
    "ratings": {
     "classic": 4,
-    "obscurity": 4,
-    "accessibility": 4,
+    "obscurity": 5,
+    "accessibility": 5,
     "listeners": 3,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 4,
+     "accessibility": 5,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：清單 unavailable，但 Black Editions 2022 數位版→4；New Direction 重要作；噪音即興；冷門度下限豁免：ADDENDUM 但書：確知有正式數位版",
+     "rarity": "legendary"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：原壓 100 張，B 面 Mass Projection 近噪音牆→5；依據僅零售／廠牌文案→none。Black Editions 2022 數位版→4｜L=3"
    },
-   "rarity": "epic",
+   "rarity": "legendary",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "頂點重整（apex-rebalance-20261103，2026-11-03）：升為流亡。Iskra 原壓僅 100 張旋即絕跡，被稱史上最稀有自由爵士 LP 之一；近年才有 Black Editions 等復刻",
+    "evidenceUrls": [
+     "https://www.last.fm/music/%E9%AB%98%E6%9F%B3%E6%98%8C%E8%A1%8C/Eclipse%2F%E4%BE%B5%E8%9D%95",
+     "https://tobirarecords.com/products/masayuki-takayanagi-eclipse-lp",
+     "https://fusetronsound.com/products/takayanagi-new-direction-unit-masayuki-eclipse"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:apex-rebalance-20261103"
    },
    "description": {
-    "text": "B 面整面是一首 25:23，A 面的兩首來自同一次 session。〈First Session I〉10:47 與〈First Session II〉9:07 切自同一場，B 面則是〈Second Session (Mass Projection)〉一首到底；三個標題都不是曲題，而是場次編號加上括號裡的方法名。錄音關係記著 1975 年 3 月 14 日，編制是電吉他、木管、電貝斯與鼓加打擊四人，錄音工程是青木幹夫。",
+    "text": "《Eclipse/侵蝕》是自由爵士吉他手高柳昌行與 New Direction Unit 1975 年的錄音，原版 Iskra 只壓 100 張，成為日本收藏家追逐的對象；2006 年才由 P.S.F. Records 第一次出成 CD，之後又兩度從原始母帶重發。專輯 1975 年 3 月在東京錄音，編制是電吉他、木管、電貝斯與鼓。A 面兩段以高柳「Gradually Projection」的概念為基礎，從稀疏的質地慢慢堆到緊張；B 面約 25 分鐘的〈Second Session (Mass Projection)〉是持續高強度的密集聲牆。",
     "sourceUrls": [
      "https://musicbrainz.org/ws/2/release-group/63e7b676-3b31-4014-b6af-97f8cffa1ea7?fmt=json&inc=artist-credits+releases",
      "https://musicbrainz.org/ws/2/release?release-group=63e7b676-3b31-4014-b6af-97f8cffa1ea7&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
@@ -191,8 +232,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -220,22 +261,37 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 3,
+    "classic": 4,
     "obscurity": 4,
-    "accessibility": 4,
+    "accessibility": 5,
     "listeners": 81,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 4,
+     "accessibility": 5,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Blank Forms 考古再發、日本噪音爵士里程碑；L81→4；極端噪音即興",
+     "rarity": "legendary"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：New Direction Unit 1975錄音，Blank Forms再發；81聽眾有串流→4｜L=81"
    },
-   "rarity": "uncommon",
+   "rarity": "legendary",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "heresy",
+    "evidenceUrls": [
+     "https://freejazzblog.org/2019/09/masayuki-takayanagi-new-direction-unit.html?m=1",
+     "https://daily.bandcamp.com/2019/06/11/masayuki-takayanagi-new-direction-unit-april-is-the-cruellest-month-review/",
+     "https://thequietus.com/?p=26576",
+     "https://jazzjournal.co.uk/2019/08/29/masayuki-takayanagi-new-direction-unit-april-is-the-cruellest-month/"
+    ],
+    "reason": "2026-11-04 ax7 升格（店主放寬後異端標準：可信來源描述整張持續高強度聽感）；裁定見 batch-progress/add-20261104-ax7/rulings.md 52103／52111／52121–52124。"
    },
    "description": {
-    "text": "首版四首裡，第四首是第一首的另一次演奏。〈We Have Existed〉10:29 開場，末軌是同題的另一個 take 10:10，中間夾著〈What Have We Given?〉6:50 與長達 19:46 的〈My Friend, Blood Shaking My Heart〉。2019 年 Blank Forms Editions 的黑膠與數位版把末尾那一軌拿掉，只留前三首，能聽到的也是這個三軌版本。",
+    "text": "《April Is the Cruellest Month》是高柳昌行的四人編制 1975 年在東京的錄音，團規是「隨時 forte、不跟隨他人演奏、不重複樂句」，約 20 分鐘的終曲〈My Friend, Blood Shaking My Heart〉從頭到尾是不間斷的集體猛攻。它被視為至今仍兇猛前衛的錄音。原訂由 ESP-Disk 發行，因廠牌倒閉擱置到 1991 年才在日本出 CD。高柳用搖滾的刮擦與回授技法，替管樂、貝斯與打擊的原聲編制加上刺耳的失真；回授一波波湧起，鼓點碎跳，低音單簧管與金屬打擊始終維持高密度。",
     "sourceUrls": [
      "https://musicbrainz.org/ws/2/release-group/ef3f2c0a-3ed3-42c0-a148-eacab86ab189?fmt=json&inc=artist-credits+releases",
      "https://musicbrainz.org/ws/2/release?release-group=ef3f2c0a-3ed3-42c0-a148-eacab86ab189&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
@@ -247,7 +303,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview122/v4/ad/30/2d/ad302d32-425e-1ba2-6ed7-3e6f7b334564/mzaf_4331106769454029026.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview122/v4/6b/d1/ac/6bd1ac44-2195-0b9b-49d6-a322a111e6be/mzaf_16106028113518010417.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -258,8 +314,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -287,14 +343,24 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 4,
+    "classic": 3,
     "obscurity": 4,
     "accessibility": 4,
     "listeners": null,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 4,
+     "accessibility": 5,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：小廠多次 CD 再發、無串流；阿部重要錄音室紀錄；44分鐘中音薩克斯自由",
+     "rarity": "legendary"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：阿部唯一錄音室盤，鋼琴／口琴／中音薩→4；多次 CD 再發，聽眾缺值→4"
    },
-   "rarity": "epic",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -350,14 +416,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 4,
-    "accessibility": 2,
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 4,
     "listeners": null,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：無廠牌私壓、無再發→5；與芳賀隆夫雙人自由即興"
    },
-   "rarity": "rare",
+   "rarity": "epic",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -413,14 +488,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 4,
+    "classic": 3,
+    "obscurity": 5,
     "accessibility": 4,
     "listeners": null,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Scissors 小廠無串流；與 Wadada Leo Smith 自由即興"
    },
-   "rarity": "uncommon",
+   "rarity": "epic",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -477,10 +561,19 @@
    "ratings": {
     "classic": 4,
     "obscurity": 4,
-    "accessibility": 2,
+    "accessibility": 3,
     "listeners": 3,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：L3 有串流→4；富樫復出代表作；四段長篇即興"
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -542,14 +635,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 4,
+    "classic": 5,
     "obscurity": 4,
     "accessibility": 3,
     "listeners": 7,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 4,
+     "accessibility": 3,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Swing Journal 金唱片、日本爵士正典；有再發→4；靈性爵士長篇"
    },
-   "rarity": "uncommon",
+   "rarity": "epic",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -611,12 +713,21 @@
    "ratings": {
     "classic": 4,
     "obscurity": 4,
-    "accessibility": 3,
+    "accessibility": 4,
     "listeners": 5,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 4,
+     "accessibility": 3,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：L5 有串流→4；富樫中期重要作；自由打擊即興"
    },
-   "rarity": "uncommon",
+   "rarity": "epic",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -676,14 +787,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 4,
+    "classic": 3,
     "obscurity": 4,
     "accessibility": 4,
     "listeners": 5,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "epic"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：L5 有串流→4；雙LP 打擊樂系列；抽象打擊即興"
    },
-   "rarity": "epic",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -703,7 +823,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview118/v4/a5/08/ae/a508ae52-2053-1697-2c66-a57f2b599173/mzaf_7847021045171827115.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview118/v4/0c/d1/fd/0cd1fd67-1b72-35f3-c00a-2dd4b5d2784a/mzaf_3138783134225376535.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -744,13 +864,22 @@
    },
    "ratings": {
     "classic": 4,
-    "obscurity": 4,
+    "obscurity": 5,
     "accessibility": 4,
     "listeners": 31,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "epic"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：L31 無試聽→5；Crown 單發；三重奏能量自由爵士"
    },
-   "rarity": "epic",
+   "rarity": "legendary",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -808,12 +937,21 @@
    "ratings": {
     "classic": 4,
     "obscurity": 4,
-    "accessibility": 4,
+    "accessibility": 3,
     "listeners": 0,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "epic"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：L0 有串流→4；山下 enja 獨奏代表作；標準曲＋能量式自由彈奏"
    },
-   "rarity": "epic",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -873,12 +1011,21 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 4,
-    "obscurity": 4,
+    "classic": 3,
+    "obscurity": 5,
     "accessibility": 4,
     "listeners": 49,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "epic"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：L49 無試聽→5；與大駱駝艦舞踏合作；鑼、人聲、自由爵士"
    },
    "rarity": "epic",
    "apexAssessment": {
@@ -935,12 +1082,21 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 4,
-    "obscurity": 4,
+    "classic": 3,
+    "obscurity": 5,
     "accessibility": 4,
     "listeners": 7,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "epic"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：L7 無試聽→5；三段同名組曲；自由爵士"
    },
    "rarity": "epic",
    "apexAssessment": {
@@ -997,12 +1153,21 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 3,
+    "classic": 4,
     "obscurity": 4,
-    "accessibility": 4,
+    "accessibility": 3,
     "listeners": null,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Polydor＋2017 再發，收藏領域；IMA 首作代表；電氣融合爵士"
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -1064,14 +1229,24 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 4,
-    "accessibility": 4,
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
     "listeners": 1,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 3,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：L1 無試聽→5；IMA 電氣放克融合",
+     "rarity": "uncommon"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：拆名錯配；Epic/Sony 大廠盤、無再發無串流，照錨點大廠商業有限→3｜L=1"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1128,10 +1303,19 @@
    "ratings": {
     "classic": 4,
     "obscurity": 4,
-    "accessibility": 2,
+    "accessibility": 3,
     "listeners": 1,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：L1 有串流→4；坂田明演唱怪作代表；民謠歌曲與自由爵士混雜"
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -1153,7 +1337,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e1/52/92/e15292c0-fe8a-5dad-8c59-1bd26335a807/mzaf_7409517320868196693.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/fe/47/2e/fe472e85-7f4c-260a-2bab-f141d97cbfb5/mzaf_12830244848199123934.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -1195,12 +1379,21 @@
    "ratings": {
     "classic": 4,
     "obscurity": 4,
-    "accessibility": 2,
+    "accessibility": 4,
     "listeners": 10,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：enja 原盤 L10 有串流→4；佐藤三重奏重要作；雙長篇自由爵士"
    },
-   "rarity": "uncommon",
+   "rarity": "epic",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1261,13 +1454,22 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 4,
+    "obscurity": 5,
     "accessibility": 4,
     "listeners": null,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Ohrai 小廠無串流；與松風鉱一雙人；自由即興"
    },
-   "rarity": "uncommon",
+   "rarity": "epic",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1323,13 +1525,23 @@
    },
    "ratings": {
     "classic": 4,
-    "obscurity": 4,
+    "obscurity": 5,
     "accessibility": 4,
     "listeners": null,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 5,
+     "accessibility": 5,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：ALM 小廠無串流；阿部×吉沢雙人名演；長篇自由即興",
+     "rarity": "legendary"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：阿部薫・吉沢元治 75 年二重奏，自由即興→4；藝人層描述不足以判異端。ALM 小廠無串流→5"
    },
-   "rarity": "epic",
+   "rarity": "legendary",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1385,14 +1597,24 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 5,
-    "obscurity": 4,
-    "accessibility": 4,
+    "classic": 4,
+    "obscurity": 5,
+    "accessibility": 5,
     "listeners": 3,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 5,
+     "accessibility": 5,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：L3 無試聽→5；死前12天的最後演出，日本自由爵士傳說；極端即興",
+     "rarity": "legendary"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：身後出版的最後現場，DIW唯一版；3聽眾無串流→5｜L=3"
    },
-   "rarity": "epic",
+   "rarity": "legendary",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1516,12 +1738,21 @@
    "ratings": {
     "classic": 4,
     "obscurity": 4,
-    "accessibility": 3,
+    "accessibility": 4,
     "listeners": 8,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 4,
+     "accessibility": 3,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：L8 有串流→4；富樫×佐藤雙人經典現場；自由即興"
    },
-   "rarity": "uncommon",
+   "rarity": "epic",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1541,7 +1772,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview118/v4/61/1c/75/611c75f7-0661-a0f6-400d-1b54e846197c/mzaf_5071960897375580772.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/4c/d7/fa/4cd7faf5-eab8-721f-d1ca-108857352998/mzaf_5203089593753200358.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -1581,14 +1812,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
+    "classic": 4,
     "obscurity": 4,
     "accessibility": 4,
     "listeners": 16,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：L16 有串流→4；吉沢元治獨奏低音提琴代表作；現場自由即興"
    },
-   "rarity": "uncommon",
+   "rarity": "epic",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1648,12 +1888,21 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 4,
-    "obscurity": 4,
-    "accessibility": 5,
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 4,
     "listeners": 272,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 4,
+     "accessibility": 5,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "legendary"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：單軌 67 分鐘即興長篇→4；無單盤極端依據。Alien8 2023 數位版→4｜L=272"
    },
    "rarity": "epic",
    "apexAssessment": {
@@ -1711,14 +1960,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 4,
+    "classic": 3,
     "obscurity": 4,
-    "accessibility": 5,
+    "accessibility": 4,
     "listeners": 1938,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 4,
+     "accessibility": 5,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "epic"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Streamline 小廠無再發、L1938 下限3；人聲吉他碎裂短曲"
    },
-   "rarity": "epic",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1773,22 +2031,36 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 4,
-    "obscurity": 4,
+    "classic": 3,
+    "obscurity": 5,
     "accessibility": 5,
     "listeners": 141,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 5,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：L141 無試聽→5；三段長篇噪音即興",
+     "rarity": "legendary"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：Forced Exposure 三段長篇獨奏，證據只到藝人層。141 無串流→5｜L=141"
    },
-   "rarity": "epic",
+   "rarity": "legendary",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：accessibility=5（heresy 最低門檻），但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "heresy",
+    "evidenceUrls": [
+     "https://arcanecandy.com/?p=141",
+     "https://lifeferocity.blogspot.com/2009/09/keiji-haino-book-of-eternity-set-aflame.html",
+     "https://www.artforum.com/columns/keiji-haino-202085/"
+    ],
+    "reason": "2026-11-04 ax7 升格（店主放寬後異端標準：可信來源描述整張持續高強度聽感）；裁定見 batch-progress/add-20261104-ax7/rulings.md 52103／52111／52121–52124。"
    },
    "description": {
-    "text": "三軌共用同一個標題、用羅馬數字編號，第三軌 39:32 比前兩軌加起來還長。〈Eternity Set Aflame I〉18:41、II 12:01、III 39:32，末軌一軌就佔掉全張 70:14 的一半以上，而夾在中間的第二軌反倒是三軌裡最短的。盤名本身還帶著一對半形雙引號，那是標題字串的一部分。這張 CD 出在 1996 年的美國 Forced Exposure，廠牌所在地登錄的是 Malden。",
+    "text": "《The Book of \"Eternity Set Aflame\"》是灰野敬二約 70 分鐘的三軌錄音，各軌約 18、12、39 分鐘：第一軌是踏板與放大器全面過載的電吉他獨奏，第三軌的重型即興逐漸聚成極度稠密的電暴。灰野以激烈宣洩的聲音探索著稱，這張被形容為密度極高、經電子處理的吉他演奏。錄音年份有 1995 年一說，發行一般記為 1996 年，由美國的 Forced Exposure 發行。第一軌的高音弦鳴壓在不尋常的回授上，結尾是一串刺耳的鋁片刮擦聲；中間一軌轉成陰鬱的電子音層，不以吉他為主；第三軌堆成連綿的吉他撕扯，最後退回安靜的放大器嗡聲。",
     "sourceUrls": [
      "https://musicbrainz.org/ws/2/release-group/86b1999e-a1c5-41c1-8d9a-f06b7175a698?fmt=json&inc=artist-credits+releases",
      "https://musicbrainz.org/ws/2/release?release-group=86b1999e-a1c5-41c1-8d9a-f06b7175a698&fmt=json&inc=media+labels+recordings&limit=100",
@@ -1806,8 +2078,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -1835,12 +2107,22 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
+    "classic": 3,
     "obscurity": 4,
     "accessibility": 4,
     "listeners": 3101,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 5,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：PSF 單發無串流、L3101；不失者中期作；44分鐘噪音吉他長篇",
+     "rarity": "epic"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：PSF 四軌長篇，不失者中期作；證據只到藝人層→none。3101 聽眾、無串流，維持 4｜L=3101"
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -1897,14 +2179,24 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 4,
+    "classic": 3,
+    "obscurity": 5,
     "accessibility": 4,
     "listeners": 156,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 5,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：L156 無試聽→5；中期作；三軌20分以上噪音即興",
+     "rarity": "legendary"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：Tokuma 雙生盤之一，長篇迷幻噪音搖滾→4；無單盤依據。156 無串流→5｜L=156"
    },
-   "rarity": "uncommon",
+   "rarity": "epic",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1959,14 +2251,24 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 4,
-    "accessibility": 2,
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 4,
     "listeners": 14194,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 3,
+     "accessibility": 4,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：日本噪音迷幻里程碑，Black Editions 再版；L1.4萬；過載轟鳴",
+     "rarity": "legendary"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：日本 PSF 噪音迷幻代表作；地下場景重要非殿堂｜L=14194"
    },
-   "rarity": "rare",
+   "rarity": "epic",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1986,7 +2288,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/cd/65/0e/cd650e0d-ae84-f067-f25f-021a51af5180/mzaf_251126047319865599.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/aa/c5/f0/aac5f09c-a2e2-e7e2-01bb-53b373a10149/mzaf_18101164243502327269.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -2026,14 +2328,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 3,
+    "classic": 4,
     "obscurity": 4,
     "accessibility": 4,
     "listeners": 2931,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：High Rise 重要作、Black Editions 再版；L2931 收藏圈；轟鳴迷幻"
    },
-   "rarity": "uncommon",
+   "rarity": "epic",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2052,7 +2363,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/d7/cb/73/d7cb73b2-f246-4809-0659-9fe456e1669f/mzaf_2455142750335502579.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/ff/76/a7/ff76a756-8b79-93d6-79b2-ce9da4e73a61/mzaf_1518195678015962483.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -2092,14 +2403,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 4,
-    "accessibility": 2,
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 4,
     "listeners": 308,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：L308 無試聽→5；光束夜出道作 PSF 再發；長篇黑暗迷幻噪音吉他"
    },
-   "rarity": "rare",
+   "rarity": "epic",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2155,22 +2475,42 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 4,
-    "accessibility": 2,
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 4,
     "listeners": 22,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：L22 無試聽→5；與浦邊雅祥合作；長篇噪音迷幻"
    },
-   "rarity": "rare",
+   "rarity": "epic",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。L22有效，PSF CD，壓量無據；PSF有cult名氣但非聖杯；5星",
+    "evidenceUrls": [
+     "https://www.last.fm/music/%E5%85%89%E6%9D%9F%E5%A4%9C/The%20Dark%20Spot",
+     "https://musicbrainz.org/release-group/07eb2643-2fdb-4092-b8b0-46ffd1099c80"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
-    "text": "〈夢の影〉在同一張碟上出現兩次，第二軌 14:23、末軌 10:35。六軌的長度全壓在偏長那一側——〈暗黒場〉8:24、〈苦痛壊歌〉14:27、〈平原 -Scene.1-〉15:01，六軌裡有三軌超過十四分鐘，全張約 69:25。〈暗黒場〉與〈苦痛壊歌〉都是七年前那張碟上就有的曲名，這次各自又錄了一遍，長度相差不到一分鐘。這張 CD 出在 1997 年的日本 P.S.F. Records，編號 PSFD-90。",
+    "text": "《The Dark Spot》是東京迷幻搖滾團光束夜與薩克斯風手卜部正義合作、1997 年由 P.S.F. Records 出版的 CD。光束夜 1978 年由吉他手金子寿徳成立，錄音不多、海外發行很少，與灰野敬二、工藤冬里同屬東京的即興噪音搖滾場景；這張沒有再版紀錄。六軌是 1996 年在京都、岐阜、高圓寺、新宿的現場錄音。金子彈吉他並唱，Sachiko 唱歌兼彈合成器，長尾ひばり打鼓，卜部吹中音薩克斯風與直笛。全長約 69 分鐘，有三首超過 14 分，〈夢の影〉在京都與岐阜各錄一次、兩版都收；路數偏迷幻搖滾與自由即興。",
     "sourceUrls": [
      "https://musicbrainz.org/ws/2/release-group/07eb2643-2fdb-4092-b8b0-46ffd1099c80?fmt=json&inc=artist-credits+releases",
      "https://musicbrainz.org/ws/2/release?release-group=07eb2643-2fdb-4092-b8b0-46ffd1099c80&fmt=json&inc=media+labels+recordings&limit=100",
@@ -2188,8 +2528,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -2217,12 +2557,21 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 4,
-    "accessibility": 4,
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 3,
     "listeners": 6708,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：PSF 出道代表作，Black Editions 再發；長篇迷幻吉他 jam"
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -2244,7 +2593,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/ea/76/57/ea765758-f125-37dd-af2e-24d9f38c0349/mzaf_4984635972007677248.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/45/1e/bb/451ebb22-8912-e854-a686-fe51b8ab79ff/mzaf_17876610888021738124.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -2284,14 +2633,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
+    "classic": 3,
     "obscurity": 4,
     "accessibility": 2,
     "listeners": 1955,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：PSF 黑膠＋2023 數位再發，收藏領域；短曲迷幻搖滾，最平易"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2350,14 +2708,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
+    "classic": 3,
     "obscurity": 4,
     "accessibility": 2,
     "listeners": 844,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：L844 有串流→4；White Heaven 二線作；旋律性迷幻搖滾"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2376,7 +2743,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c8/ec/3a/c8ec3a17-1fb6-839c-1d49-29df7e540a1f/mzaf_16983709313164458279.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a3/f8/c8/a3f8c878-ff92-0ada-1fd0-93437b66608d/mzaf_2304062275103317109.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -2417,14 +2784,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 3,
-    "obscurity": 4,
-    "accessibility": 2,
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 3,
     "listeners": 8654,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Ghost 首作代表；PSF/Drag City L8654；迷幻民謠長曲"
    },
-   "rarity": "rare",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2483,12 +2859,21 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 4,
-    "accessibility": 2,
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
     "listeners": 3005,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：第二張；Drag City L3005 下限3；迷幻民謠"
    },
    "rarity": "rare",
    "apexAssessment": {
@@ -2509,7 +2894,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview113/v4/16/d0/4e/16d04e28-6ef5-7c4f-cb82-80bf42a0aeaa/mzaf_12424748521937308120.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview113/v4/07/67/d0/0767d08c-1413-d496-87ec-1257a76abf58/mzaf_15655526310849853988.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -2549,14 +2934,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 4,
-    "accessibility": 4,
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
     "listeners": 3726,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：中期作；Drag City L3726 下限3；迷幻實驗"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2575,7 +2969,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview113/v4/d0/4d/90/d04d902e-d9b1-1f4c-b95d-0d20f3ff6ff9/mzaf_4776312919090588847.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview113/v4/26/17/3c/26173c9c-6924-c23f-8879-1e926f0fe957/mzaf_14545924736780656725.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -2615,14 +3009,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
+    "classic": 4,
     "obscurity": 4,
-    "accessibility": 2,
+    "accessibility": 4,
     "listeners": 793,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Ché-SHIZU 代表、Black Editions 再版；L793 有串流 → 4；陰暗實驗民謠"
    },
-   "rarity": "rare",
+   "rarity": "epic",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2641,7 +3044,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview128/v4/6a/c7/bf/6ac7bfeb-2bce-d8d3-9500-79205ea616ee/mzaf_229213701151236251.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview118/v4/e3/43/5e/e3435e8a-29e2-6801-cce6-021e4501b255/mzaf_6755880544646324954.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -2681,22 +3084,42 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 4,
-    "obscurity": 4,
+    "classic": 3,
+    "obscurity": 5,
     "accessibility": 4,
     "listeners": 60,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "epic"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：首張卡帶、L60 無試聽→5；出道作的歷史意義；粗糙素人歌謠"
    },
    "rarity": "epic",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "頂點重整（apex-rebalance-20261103，2026-11-03）：升為流亡。工藤冬里早期自主卡帶（轉 Org 前），原帶極罕；但 2021 已有官方數位版，盤名對應待查",
+    "evidenceUrls": [
+     "https://www.last.fm/music/Maher+Shalal+Hash+Baz/maher+shalal+hash+baz+%E7%AC%AC%EF%BC%91%E9%9B%86",
+     "https://en.wikipedia.org/wiki/Maher_Shalal_Hash_Baz_(band)"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:apex-rebalance-20261103"
    },
    "description": {
-    "text": "十九軌裡最短的曲名只有一個字，最長的那個有三十一個字。一個字的是〈蝶〉與〈夏〉，三十一個字的那首把一個路口的名字整句寫進了標題。長度也一樣散：十九軌裡有四軌不到一分鐘，最短的〈蝶〉只有 0:34，第八軌 7:22 是它的十三倍，全張約 63:22。這捲卡帶出在 1985 年的日本 D's レーベル，編號 D-021，是 工藤冬里 這支團名下 65 個盤裡年份最早的兩張之一。",
+    "text": "《maher shalal hash baz 第１集》是工藤冬里的合奏團 Maher Shalal Hash Baz 1985 年在自己的 D's レーベル 發行的卡帶，是 1991 年第一張正式專輯之前的兩捲自製卡帶之一，2021 年才再版。樂團後來在 Geographic 與 K Records 出專輯，被視為日本地下最神祕的團體之一。內容是 1984 到 1985 年初在明大前、荻窪、國分寺的演出，加上更早在四國、京都、紐約等地的錄音。樂器有中音薩克斯風、胡弓、鋼琴、合成器、節奏吉他與鼓。〈蝶〉只有 34 秒，最長一首 7 分 22 秒。",
     "sourceUrls": [
      "https://musicbrainz.org/ws/2/release-group/a96ddeee-64be-4d0c-a77e-7d8105881d70?fmt=json&inc=artist-credits+releases",
      "https://musicbrainz.org/ws/2/release?release-group=a96ddeee-64be-4d0c-a77e-7d8105881d70&fmt=json&inc=media+labels+recordings&limit=100",
@@ -2714,8 +3137,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -2743,14 +3166,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 4,
+    "classic": 3,
+    "obscurity": 5,
     "accessibility": 4,
     "listeners": 1412,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Org 小廠三CD、無串流→5；團體中期大部頭；業餘破碎外圍民謠搖滾"
    },
-   "rarity": "uncommon",
+   "rarity": "epic",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2804,14 +3236,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 4,
-    "accessibility": 2,
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 5,
     "listeners": 153,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：L153 無試聽→5；非常階段77分鐘單軌；純噪音"
    },
-   "rarity": "rare",
+   "rarity": "legendary",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2866,14 +3307,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 4,
-    "accessibility": 2,
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 5,
     "listeners": 59,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：L59 無試聽→5；噪音長篇"
    },
-   "rarity": "rare",
+   "rarity": "legendary",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2928,14 +3378,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 4,
-    "accessibility": 2,
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 4,
     "listeners": null,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Station Kids 小廠、無串流；Barre Phillips 雙人自由即興"
    },
-   "rarity": "rare",
+   "rarity": "epic",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2993,12 +3452,21 @@
    "ratings": {
     "classic": 4,
     "obscurity": 4,
-    "accessibility": 4,
+    "accessibility": 3,
     "listeners": 11,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "epic"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：L11 有串流→4；官方三部曲之一，〈The Last One〉；較柔的迷幻長篇"
    },
-   "rarity": "epic",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -3084,7 +3552,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview112/v4/13/bd/a8/13bda8a3-b1b1-3a45-8342-76607e33ba96/mzaf_16321376147235106439.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview122/v4/f8/b5/59/f8b559ab-15fd-09c4-0af9-6a7bbcc4ea60/mzaf_16269940151854837824.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -3124,22 +3592,42 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 4,
-    "accessibility": 4,
+    "classic": 4,
+    "obscurity": 5,
+    "accessibility": 5,
     "listeners": 160,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：日本前衛即興傳說盤（小杉武久學生）；L160 無串流 → 5；集體噪音即興"
    },
-   "rarity": "uncommon",
+   "rarity": "legendary",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。日本集體即興噪音，稀有但硬蕊度屬前衛即興 5 星範圍；listeners 160 但有非官方再發",
+    "evidenceUrls": [
+     "https://www.last.fm/music/East%20Bionic%20Symphonia/Recorded%20Live",
+     "https://musicbrainz.org/release-group/9b0da5fd-f497-40b3-a499-aa6e8235449d"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
-    "text": "兩軌的名字都是時鐘上的時間，第二軌標題寫的二十八分鐘，實際長 28:26。第一軌〈7.30 P.M. ~ 7.47 P.M.〉就對不上了：標題寫的是十七分鐘，唱片上卻走了 19:23，多出兩分二十三秒。兩軌中間從七點四十七分到八點十五分那段沒收進唱片的空白，長度和第二軌幾乎一樣，全張 47:49。這張 12 吋出在 1976 年的日本 ALM RECORDS，編號 AL-3001，登錄的成員有十人。",
+    "text": "《Recorded Live》是 East Bionic Symphonia 唯一的發行，1976 年由 ALM Records 出版。成員是東京美學校裡跟小杉武久學習的學生，這張是畢業製作；沒有官方再版紀錄，只有 2000 年德國一版非官方再版，殘餘成員 1997 年重組為 Marginal Consort。錄音是 1976 年 7 月在美學校的現場，小杉監修並剪輯磁帶，高橋悠治寫內頁文字。十位演奏者做集體自由即興，分成兩段，A 面 19 分 23 秒、B 面 28 分 26 秒，曲名就是當晚演奏的時段，兩段之間隔了將近半小時。",
     "sourceUrls": [
      "https://musicbrainz.org/ws/2/release-group/9b0da5fd-f497-40b3-a499-aa6e8235449d?fmt=json&inc=artist-credits+releases",
      "https://musicbrainz.org/ws/2/release?release-group=9b0da5fd-f497-40b3-a499-aa6e8235449d&fmt=json&inc=media+labels+recordings&limit=100",
@@ -3158,8 +3646,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -3187,14 +3675,24 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 4,
-    "accessibility": 2,
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 4,
     "listeners": 3999,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：日本 drone 里程碑（Japrocksampler 必提）；收藏領域有再發；50分鐘集體即興 drone",
+     "rarity": "legendary"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：現場錄音，日本 Columbia 正規發行，冷門4→3；August 1974 才是代表作｜L=3999"
    },
-   "rarity": "rare",
+   "rarity": "epic",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -3254,19 +3752,40 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 4,
-    "obscurity": 4,
+    "classic": 2,
+    "obscurity": 5,
     "accessibility": 4,
     "listeners": 4,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "epic"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：L4 無試聽→5；檔案現場 25 分鐘，歷史紀錄意義為主"
    },
-   "rarity": "epic",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "reason": "頂點重整（apex-rebalance-20261103，2026-11-03）：原流亡降為一般卡。同級內一藝人一張：光束夜 pearl 留《The Dark Spot》。經典度 3（另一張 2）",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": true,
+     "tier": "pearl",
+     "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。L4有效，PSF 2006檔案現場CD，壓量無據；5星冷門",
+     "evidenceUrls": [
+      "https://www.last.fm/music/%E5%85%89%E6%9D%9F%E5%A4%9C/%E3%83%95%E3%82%A1%E3%83%BC%E3%82%B9%E3%83%88%E3%83%BB%E3%83%A9%E3%82%A4%E3%83%961979%20%E5%90%89%E7%A5%A5%E5%AF%BA%E3%83%9E%E3%82%A4%E3%83%8A%E3%83%BC%20%5BFirst%20live%201979%20Kichijoji%20Minor%5D",
+      "https://musicbrainz.org/release-group/d5b84838-b8b5-4145-b280-438eb083fb5f"
+     ],
+     "source": "manual:audit-20261102"
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:apex-rebalance-20261103"
    },
    "description": {
     "text": "三軌全部無題，長度分別是 7:06、9:14、8:48，全張 25:08。三軌之間相差不到兩分半，是一組幾乎等寬的錄音，也沒有一個曲名可以引。盤名自己把年份與場所寫了進去，還在方括號裡附上一行英譯：那是 1979 年在 吉祥寺マイナー 的演出；唱片要到 2006 年才問世。這張 CD 出在日本的 P.S.F. Records，編號 PSFD-166。",

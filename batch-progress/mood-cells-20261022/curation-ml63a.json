@@ -1,0 +1,576 @@
+{
+ "group": "ml63a",
+ "factions": [
+  {
+   "id": "brazil-thick",
+   "zh": "巴西 MPB 厚編曲慢盤",
+   "why": "弦樂、合成器墊、殘響吉他包覆的慢板",
+   "count": 13
+  },
+  {
+   "id": "latam-hazy",
+   "zh": "拉美迷幻慢盤",
+   "why": "殘響厚的迷幻搖滾慢盤",
+   "count": 2
+  },
+  {
+   "id": "afro-thick",
+   "zh": "衣索比亞爵士與非洲慢厚盤",
+   "why": "非雷鬼，低頻厚、鼓帶灰塵的慢盤",
+   "count": 4
+  }
+ ],
+ "albums": [
+  {
+   "artist": "Taiguara",
+   "album": "Viagem",
+   "year": 1970,
+   "label": "Odeon",
+   "country": "br",
+   "faction": "brazil-thick",
+   "genres": [
+    "world"
+   ],
+   "why": "Taiguara 以弦樂鋪滿的慢板代表作，旋律清楚、人聲低暖，弦樂墊把整張包成一層溫厚的霧。",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 0.8,
+    "z": 0.8,
+    "why": "無快拍，厚弦樂墊包覆，低沉人聲，旋律清楚溫暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/06286891-6798-40c8-a41a-13a7d3fdd960",
+    "https://coverartarchive.org/release-group/06286891-6798-40c8-a41a-13a7d3fdd960/front"
+   ],
+   "mbRgMbid": "06286891-6798-40c8-a41a-13a7d3fdd960",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "y 貼 0.8 邊緣；弦樂墊若被判乾淨會落放鬆"
+  },
+  {
+   "artist": "Ronnie Von",
+   "album": "Ronnie Von",
+   "year": 1969,
+   "label": "Polydor",
+   "country": "br",
+   "faction": "brazil-thick",
+   "genres": [
+    "rock",
+    "pop"
+   ],
+   "why": "巴西 sicodelia 軟迷幻代表：弦樂、殘響人聲與慵懶節奏，霧濛濛而溫暖。",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 0.9,
+    "z": 0.8,
+    "why": "殘響厚的迷幻流行＋弦樂，拍子懶，旋律甜暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/6f0f3b3c-6e68-356d-8d36-ef4c5e818ef1",
+    "https://coverartarchive.org/release-group/6f0f3b3c-6e68-356d-8d36-ef4c5e818ef1/front"
+   ],
+   "mbRgMbid": "6f0f3b3c-6e68-356d-8d36-ef4c5e818ef1",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "1969 錄音偏窄頻，y 可能掉到 0.5"
+  },
+  {
+   "artist": "Milton Nascimento",
+   "album": "Änïmä",
+   "year": 1982,
+   "label": "Ariola",
+   "country": "br",
+   "faction": "brazil-thick",
+   "genres": [
+    "world"
+   ],
+   "why": "Milton 80 年代最厚的一張：合成器墊、合唱與弦樂堆成緩慢包覆的暖色音牆。",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 0.9,
+    "z": 0.5,
+    "why": "厚合成器墊＋合唱，慢板，包覆感強，人聲溫熱"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/e46bf97a-dfb8-3193-9904-15096d68bc1f",
+    "https://coverartarchive.org/release-group/e46bf97a-dfb8-3193-9904-15096d68bc1f/front"
+   ],
+   "mbRgMbid": "e46bf97a-dfb8-3193-9904-15096d68bc1f",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "池中 Milton 同人多落放鬆（y≤0.3）；這張是最厚的一張但仍不確定"
+  },
+  {
+   "artist": "Milton Nascimento",
+   "album": "Geraes",
+   "year": 1976,
+   "label": "EMI Odeon Brazil",
+   "country": "br",
+   "faction": "brazil-thick",
+   "genres": [
+    "world"
+   ],
+   "why": "Clube da Esquina 之後 Milton 編制最厚的一張，弦樂與合唱鋪成慢而暖的底。",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 0.8,
+    "z": 0.7,
+    "why": "弦樂＋合唱厚墊，中慢板，旋律清楚溫暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/d6640f20-7d47-365e-ae6a-94159c2d3c4b",
+    "https://coverartarchive.org/release-group/d6640f20-7d47-365e-ae6a-94159c2d3c4b/front"
+   ],
+   "mbRgMbid": "d6640f20-7d47-365e-ae6a-94159c2d3c4b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "y 貼邊；x 若受節奏曲拉高會落雀躍"
+  },
+  {
+   "artist": "Lô Borges",
+   "album": "A Via-Láctea",
+   "year": 1979,
+   "label": "EMI",
+   "country": "br",
+   "faction": "brazil-thick",
+   "genres": [
+    "world",
+    "rock"
+   ],
+   "why": "Clube da Esquina 系的夢幻軟搖滾慢盤，Rhodes 與合成器墊把人聲包成暖霧。",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 0.8,
+    "z": 0.9,
+    "why": "Rhodes＋合成器墊、殘響人聲，慢速暖調"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/00f5d9c2-32a0-4d5f-a10b-df5d726f4b2e",
+    "https://coverartarchive.org/release-group/00f5d9c2-32a0-4d5f-a10b-df5d726f4b2e/front"
+   ],
+   "mbRgMbid": "00f5d9c2-32a0-4d5f-a10b-df5d726f4b2e",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "池中 Lô Borges 同名盤 y −0.3，這張編制較厚但無把握"
+  },
+  {
+   "artist": "Beto Guedes",
+   "album": "A Página do Relâmpago Elétrico",
+   "year": 1977,
+   "label": "EMI",
+   "country": "br",
+   "faction": "brazil-thick",
+   "genres": [
+    "world",
+    "pop"
+   ],
+   "why": "Beto Guedes 以電鋼琴與弦樂鋪的 Clube da Esquina 慢盤，軟、暖、被包住。",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 0.8,
+    "z": 1,
+    "why": "電鋼琴＋弦樂墊，輕搖擺慢拍，旋律暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/ce5e1bfe-3507-4fc3-a581-2287c0480bae",
+    "https://coverartarchive.org/release-group/ce5e1bfe-3507-4fc3-a581-2287c0480bae/front"
+   ],
+   "mbRgMbid": "ce5e1bfe-3507-4fc3-a581-2287c0480bae",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "y 貼邊，可能落放鬆"
+  },
+  {
+   "artist": "14 Bis",
+   "album": "Espelho das Águas",
+   "year": 1981,
+   "label": "EMI",
+   "country": "br",
+   "faction": "brazil-thick",
+   "genres": [
+    "rock",
+    "world"
+   ],
+   "why": "米納斯軟前衛：長合成器墊與和聲鋪出慢而暖的霧，14 Bis 最厚的一張。",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 0.9,
+    "z": 0.9,
+    "why": "厚合成器墊、和聲、中慢拍，旋律清楚溫暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/a261771e-dfee-3355-a6f5-04524eab671a",
+    "https://coverartarchive.org/release-group/a261771e-dfee-3355-a6f5-04524eab671a/front"
+   ],
+   "mbRgMbid": "a261771e-dfee-3355-a6f5-04524eab671a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "x 可能因抒情搖滾曲拉到 2.9"
+  },
+  {
+   "artist": "Toninho Horta & Orquestra Fantasma",
+   "album": "Terra dos Pássaros",
+   "year": 1980,
+   "label": "EMI",
+   "country": "br",
+   "faction": "brazil-thick",
+   "genres": [
+    "world",
+    "jazz"
+   ],
+   "why": "Toninho Horta 管弦樂鋪滿的米納斯慢盤，弦與木管疊成溫暖厚墊。",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 0.8,
+    "z": 0.8,
+    "why": "管弦厚墊＋吉他，慢拍，暖而有包覆感"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/8434af70-08ad-3fd4-91f1-26d333fbbaa5",
+    "https://coverartarchive.org/release-group/8434af70-08ad-3fd4-91f1-26d333fbbaa5/front"
+   ],
+   "mbRgMbid": "8434af70-08ad-3fd4-91f1-26d333fbbaa5",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "y 貼邊；編曲複雜若判聲部分明則落放鬆"
+  },
+  {
+   "artist": "Luiz Melodia",
+   "album": "Pérola Negra",
+   "year": 1973,
+   "label": "Philips",
+   "country": "br",
+   "faction": "brazil-thick",
+   "genres": [
+    "soul",
+    "world"
+   ],
+   "why": "里約黑人靈魂藍調慢盤，低沉人聲、厚吉他與鋼琴墊，煙霧般的暖。",
+   "moodGuess": {
+    "x": 2.7,
+    "y": 0.8,
+    "z": 0.9,
+    "why": "低沉人聲，厚吉他鍵盤，懶慢藍調靈魂，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/3974eeb5-52dd-453e-9587-b48bc99b3aa7",
+    "https://coverartarchive.org/release-group/3974eeb5-52dd-453e-9587-b48bc99b3aa7/front"
+   ],
+   "mbRgMbid": "3974eeb5-52dd-453e-9587-b48bc99b3aa7",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "x 2.7 貼邊"
+  },
+  {
+   "artist": "Tim Bernardes",
+   "album": "Mil Coisas Invisíveis",
+   "year": 2022,
+   "label": "Psychic Hotline",
+   "country": "br",
+   "faction": "brazil-thick",
+   "genres": [
+    "pop",
+    "world"
+   ],
+   "why": "當代 MPB 最厚的一張：弦樂與殘響吉他把低語人聲包成暖霧。",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 0.8,
+    "z": 0.8,
+    "why": "弦樂＋濕殘響吉他，輕聲人聲，慢板，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/c152cc57-ff70-4280-b041-ca1c260e01f6",
+    "https://coverartarchive.org/release-group/c152cc57-ff70-4280-b041-ca1c260e01f6/front"
+   ],
+   "mbRgMbid": "c152cc57-ff70-4280-b041-ca1c260e01f6",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "現代錄音偏乾淨，y 可能 0.4；2022 年作"
+  },
+  {
+   "artist": "Rodrigo Amarante",
+   "album": "Cavalo",
+   "year": 2014,
+   "label": "Rough Trade",
+   "country": "br",
+   "faction": "brazil-thick",
+   "genres": [
+    "pop",
+    "world"
+   ],
+   "why": "低語人聲加回聲吉他與稀疏鼓，慵懶潮濕的夜晚暖調。",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 0.8,
+    "z": 0.5,
+    "why": "回聲吉他、低語人聲、慢鼓，潮濕慵懶，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/0a9405b4-773c-4cab-84e5-ebbfc38b884a",
+    "https://coverartarchive.org/release-group/0a9405b4-773c-4cab-84e5-ebbfc38b884a/front"
+   ],
+   "mbRgMbid": "0a9405b4-773c-4cab-84e5-ebbfc38b884a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "y 貼邊，z 約 0.5 偏近"
+  },
+  {
+   "artist": "Zé Ramalho",
+   "album": "A Peleja do Diabo com o Dono do Céu",
+   "year": 1979,
+   "label": "Epic",
+   "country": "br",
+   "faction": "brazil-thick",
+   "genres": [
+    "world",
+    "rock"
+   ],
+   "why": "東北部迷幻民謠搖滾，厚重電吉他與弦樂鋪底，緩慢而灼熱。",
+   "moodGuess": {
+    "x": 2.7,
+    "y": 1,
+    "z": 0.5,
+    "why": "厚吉他殘響、弦樂、慢中板，沙啞低沉人聲"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/310064be-268a-37dd-b707-a0af9cbb6371",
+    "https://coverartarchive.org/release-group/310064be-268a-37dd-b707-a0af9cbb6371/front"
+   ],
+   "mbRgMbid": "310064be-268a-37dd-b707-a0af9cbb6371",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "x 2.7 貼邊，旋律明確但偏沉；z 0.5 靠近門檻"
+  },
+  {
+   "artist": "Ednardo",
+   "album": "O Romance do Pavão Mysteriozo",
+   "year": 1974,
+   "label": "RCA Vik",
+   "country": "br",
+   "faction": "brazil-thick",
+   "genres": [
+    "world",
+    "rock"
+   ],
+   "why": "Pessoal do Ceará 的迷幻民謠代表，弦樂與厚編制鋪出慢而暖的東北部霧景。",
+   "moodGuess": {
+    "x": 2.7,
+    "y": 0.8,
+    "z": 0.8,
+    "why": "厚編制弦樂＋迷幻吉他，中慢拍，旋律暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/f6669f7b-e65e-4311-8612-027c2459a161",
+    "https://coverartarchive.org/release-group/f6669f7b-e65e-4311-8612-027c2459a161/front"
+   ],
+   "mbRgMbid": "f6669f7b-e65e-4311-8612-027c2459a161",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Ednardo do Pessoal do Ceará",
+   "uncertain": "x、y 都貼邊；MB 署名為 Ednardo do Pessoal do Ceará"
+  },
+  {
+   "artist": "Boogarins",
+   "album": "Lá Vem a Morte",
+   "year": 2017,
+   "label": "",
+   "country": "br",
+   "faction": "latam-hazy",
+   "genres": [
+    "rock"
+   ],
+   "why": "戈亞尼亞迷幻搖滾較慢較濕的一張，殘響吉他與磁帶糊的人聲包成暖霧。",
+   "moodGuess": {
+    "x": 2.7,
+    "y": 1,
+    "z": 0.5,
+    "why": "殘響＋fuzz 吉他、磁帶糊質地、中慢拍，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/5605441c-135d-48f7-aca0-ef9592192110",
+    "https://coverartarchive.org/release-group/5605441c-135d-48f7-aca0-ef9592192110/front"
+   ],
+   "mbRgMbid": "5605441c-135d-48f7-aca0-ef9592192110",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "x 2.7 貼邊，迷幻搖滾易被判到 3.0 以上"
+  },
+  {
+   "artist": "Invisible",
+   "album": "Durazno Sangrando",
+   "year": 1975,
+   "label": "Discos CBS",
+   "country": "ar",
+   "faction": "latam-hazy",
+   "genres": [
+    "rock"
+   ],
+   "why": "阿根廷迷幻前衛慢盤，Spinetta 一脈的厚鍵盤與長吉他，暖而緩。",
+   "moodGuess": {
+    "x": 2.7,
+    "y": 1,
+    "z": 0.6,
+    "why": "厚鍵盤＋長音吉他，中慢拍，抒情暖調"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/329c99df-ed65-3a59-991c-c51e1760a1d7",
+    "https://coverartarchive.org/release-group/329c99df-ed65-3a59-991c-c51e1760a1d7/front"
+   ],
+   "mbRgMbid": "329c99df-ed65-3a59-991c-c51e1760a1d7",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Spinetta 同系《Artaud》池中 y −0.6，風險在 y"
+  },
+  {
+   "artist": "The Heliocentrics",
+   "album": "Out There",
+   "year": 2007,
+   "label": "Now-Again Records",
+   "country": "gb",
+   "faction": "afro-thick",
+   "genres": [
+    "jazz"
+   ],
+   "why": "衣索比亞爵士一路的暗色迷幻 funk 錄音，灰塵鼓與厚墊低頻。",
+   "moodGuess": {
+    "x": 2.8,
+    "y": 1.2,
+    "z": 0.3,
+    "why": "dusty 鼓、厚低頻、風琴墊，中慢拍，煙霧般"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/57a95102-28ba-377b-adf5-0c1d85ea091e",
+    "https://coverartarchive.org/release-group/57a95102-28ba-377b-adf5-0c1d85ea091e/front"
+   ],
+   "mbRgMbid": "57a95102-28ba-377b-adf5-0c1d85ea091e",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "z 0.3 貼邊；池中同團《Inspiration Information Vol. 3》z 0.2"
+  },
+  {
+   "artist": "The Heliocentrics",
+   "album": "A World of Masks",
+   "year": 2017,
+   "label": "Soundway",
+   "country": "gb",
+   "faction": "afro-thick",
+   "genres": [
+    "jazz"
+   ],
+   "why": "部落式節奏與厚重迷幻器樂，Heliocentrics 後期較慢、較濕的一張。",
+   "moodGuess": {
+    "x": 2.8,
+    "y": 1.1,
+    "z": 0.3,
+    "why": "厚鼓低頻、迷幻殘響、中慢拍，部落氛圍"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/754109b9-9f84-4300-97eb-5b553b733c54",
+    "https://coverartarchive.org/release-group/754109b9-9f84-4300-97eb-5b553b733c54/front"
+   ],
+   "mbRgMbid": "754109b9-9f84-4300-97eb-5b553b733c54",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "z 0.3 貼邊"
+  },
+  {
+   "artist": "Tamikrest",
+   "album": "Toumastin",
+   "year": 2011,
+   "label": "Glitterbeat Records",
+   "country": "ml",
+   "faction": "afro-thick",
+   "genres": [
+    "world",
+    "rock"
+   ],
+   "why": "圖阿雷格沙漠搖滾較厚較慢的一張，殘響吉他與低頻鼓織成暖霧。",
+   "moodGuess": {
+    "x": 2.8,
+    "y": 0.9,
+    "z": 0.4,
+    "why": "殘響厚吉他、沉鼓、中慢拍，沙漠暖調"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/159e1ac0-7f41-476a-80e0-a0885fc60d3c",
+    "https://coverartarchive.org/release-group/159e1ac0-7f41-476a-80e0-a0885fc60d3c/front"
+   ],
+   "mbRgMbid": "159e1ac0-7f41-476a-80e0-a0885fc60d3c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "池中同團《Chatma》x 3.2、y 0.3 落雀躍；風險高，z 0.4 貼邊"
+  },
+  {
+   "artist": "Gigi",
+   "album": "Gold & Wax",
+   "year": 2006,
+   "label": "Palm Pictures",
+   "country": "et",
+   "faction": "afro-thick",
+   "genres": [
+    "world",
+    "soul"
+   ],
+   "why": "衣索比亞女聲搭 Laswell 厚低頻與弦樂，慢而包覆的暖色。",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 0.9,
+    "z": 0.7,
+    "why": "厚低頻、弦樂與電子墊、慢拍，女聲溫熱"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/ecb62178-377b-380b-acec-c04a9303a67e",
+    "https://coverartarchive.org/release-group/ecb62178-377b-380b-acec-c04a9303a67e/front"
+   ],
+   "mbRgMbid": "ecb62178-377b-380b-acec-c04a9303a67e",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "池中同人《Gigi》2.9/0.5/0.6 落恍惚；這張偏舞曲，x 可能 3.0"
+  }
+ ],
+ "notes": [
+  "池中 Arthur Verocai、Milton、Lô Borges、Marcos Valle、Ivan Lins、Joyce、Azymuth、Tim Maia、Cassiano、Hyldon、Erasmo、Mulatu、Hailu Mergia、Ali Farka、Orchestra Baobab 同人全落放鬆／雀躍，故不再提這些人的其他盤。",
+  "已在池：Lula Côrtes＆Zé Ramalho《Paêbirú》（雀躍）、Gigi《Gigi》、Cerati《Bocanada》、Soda Stereo《Sueño Stereo》。已在 ml13：Som Imaginário 兩張、Terakaft、Kel Assouf、Samba Touré、Dirtmusic；ml2：Boogarins《As Plantas Que Curam》。Marconi Notaro 已在 seed。",
+  "砍掉：Taiguara《Imyra, Tayra, Ipy》（MB 釘得住、但 CAA 與 iTunes 都找不到封面，Discogs master 844010 有條目；封面補不到，不提）。Jards Macalé、Walter Franco、Eduardo Mateo、Verocai《Encore》、Sessa、Silva、Terno Rei、Zoé：色溫貼冷或質地判乾淨，不提。",
+  "本場景 MPB／desert blues／Ethio 池中本來就判輕；19 張 moodGuess 多為 x 2.3–2.8、y 0.8–1.2，其中 y 0.8 或 z 0.3–0.5 貼邊的在 uncertain 欄標明，預期落格率偏低（約五到六成），主線請作好汰換準備。",
+  "年份：Tamikrest《Toumastin》MB 為 2011 發行年（馬利首發 2010 年底）；Invisible 為 1975-09。Milton《Änïmä》MB 正規名保留變音符號；Lô Borges 的連字號 MB 為 U+2010，已改 ASCII。"
+ ]
+}

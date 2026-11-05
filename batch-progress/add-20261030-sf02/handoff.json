@@ -1,0 +1,38 @@
+{
+ "batch": "add-20261030-sf02",
+ "cards": 45,
+ "written": {
+  "cardCatalog": 45,
+  "kvKeys": 73,
+  "seedRows": 45,
+  "previewReady": 42,
+  "previewUnavailable": 3
+ },
+ "review": {
+  "by": "cloud-main",
+  "cards": 45,
+  "changed": [
+   "desc4:静香|天界のペルソナ"
+  ]
+ },
+ "qa": {
+  "research": "pass",
+  "hooks": "pass",
+  "out": "pass",
+  "prepareGate": "0 error",
+  "publishedGate": "0 error"
+ },
+ "pendingLocal": {
+  "kv": "無",
+  "listeners": [],
+  "apexEvidence": [],
+  "genreTree": "已重建",
+  "albumOverrides": "無"
+ },
+ "artistIntro": {
+  "batch": "ar-d-202",
+  "roster": "batch-progress/artist-intro/roster-sf02.json",
+  "artists": 30,
+  "state": "cut"
+ }
+}

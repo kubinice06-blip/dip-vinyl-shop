@@ -399,6 +399,41 @@
   .enc-ov.out{transition:opacity .35s;opacity:0;}
   .enc-ov .enc-note{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);color:#fff;font-family:var(--mono);font-size:12px;letter-spacing:.1em;opacity:0;}
   .enc-ov.black .enc-note{opacity:1;}
+  /* 頂級牌詳情彈窗（2026-11-04）：樣式搬自 shop-all.html 的 .cd-*，一律掛在 #apexCdOv 底下，避免撞到既有 class */
+  #apexCdOv { --silver-shine: linear-gradient(115deg,#9498a0 0%,#9498a0 34%,#c8ccd2 40%,#ffffff 47%,#ffffff 50%,#ffffff 53%,#c8ccd2 60%,#9498a0 66%,#9498a0 100%);
+    --oil-shine: linear-gradient(115deg,#241b3a 0%,#241b3a 30%,#3a2a5d 38%,#2bb6a3 44%,#c84ad6 50%,#2b6fd6 56%,#3a2a5d 62%,#241b3a 70%,#241b3a 100%);
+    --crimson-shine: linear-gradient(115deg,#4a0a13 0%,#4a0a13 36%,#7a1020 41%,#c11628 47%,#ff3048 50%,#c11628 53%,#7a1020 59%,#4a0a13 64%,#4a0a13 100%);
+    position: fixed; inset: 0; z-index: 900; background: rgba(0,0,0,0.55); display: none; align-items: flex-start; justify-content: center; overflow-y: auto; padding: 40px 16px; }
+  #apexCdOv.open { display: flex; }
+  @keyframes apexCdShimmer { from { background-position: 200% 0; } to { background-position: -200% 0; } }
+  #apexCdOv .cd-body { background: #fff; width: 100%; max-width: 400px; padding: 24px 22px 26px; position: relative; text-align: center; font-family: var(--mono); color: #111; }
+  #apexCdOv .cd-close { position: absolute; top: 8px; right: 10px; background: none; border: none; font-size: 18px; cursor: pointer; color: var(--gray); line-height: 1; padding: 6px; font-family: var(--mono); }
+  #apexCdOv .cd-rarity { font-size: 11px; font-weight: 700; letter-spacing: 0.14em; margin-bottom: 14px; min-height: 16px; background-size: 200% 100%; -webkit-background-clip: text; background-clip: text; color: transparent; animation: apexCdShimmer 7.8s linear infinite; }
+  #apexCdOv .cd-rarity.rarity-hall, #apexCdOv .cd-stars b.sp-hall { background-image: var(--silver-shine); }
+  #apexCdOv .cd-rarity.rarity-pearl, #apexCdOv .cd-stars b.sp-pearl { background-image: var(--oil-shine); }
+  #apexCdOv .cd-rarity.rarity-heresy, #apexCdOv .cd-stars b.sp-heresy { background-image: var(--crimson-shine); }
+  #apexCdOv .cd-cover { position: relative; width: 100%; aspect-ratio: 1; overflow: hidden; margin-bottom: 14px; background: #f0f0f0; }
+  #apexCdOv .cd-cover img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; }
+  #apexCdOv .cd-nocover { width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px; padding: 12px; text-align: center; background: #111; color: #fff; }
+  #apexCdOv .cd-nocover b { font-size: 13px; line-height: 1.4; }
+  #apexCdOv .cd-nocover span { font-size: 9px; color: #aaa; }
+  #apexCdOv .cd-artist { font-size: 12px; color: var(--gray); }
+  #apexCdOv .cd-album { font-size: 17px; font-weight: 700; line-height: 1.5; margin-bottom: 4px; }
+  #apexCdOv .cd-meta { font-size: 11px; color: var(--gray); letter-spacing: 0.1em; }
+  #apexCdOv .cd-stars { display: flex; justify-content: center; gap: 14px; margin: 14px 0 2px; font-size: 10px; color: var(--gray); }
+  #apexCdOv .cd-stars b { display: block; color: #111; font-weight: 400; font-size: 12px; letter-spacing: 0.04em; margin-top: 2px; }
+  #apexCdOv .cd-stars b s { text-decoration: none; color: #ccc; }
+  #apexCdOv .cd-stars b.sp { background-size: 200% 100%; -webkit-background-clip: text; background-clip: text; color: transparent; animation: apexCdShimmer 7.8s linear infinite; }
+  #apexCdOv .cd-desc { font-size: 12px; line-height: 1.95; text-align: left; padding: 14px; border: 1px solid var(--line); margin: 14px 0 14px; white-space: pre-wrap; }
+  #apexCdOv .cd-desc.empty { color: var(--gray); text-align: center; }
+  #apexCdOv .cd-adm { font-size: 10px; color: var(--gray); text-align: left; line-height: 1.7; border-top: 1px solid #111; padding-top: 10px; }
+  #apexCdOv .streaming-btns { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; margin-top: 16px; }
+  #apexCdOv .streaming-btn { display: flex; align-items: center; justify-content: center; text-align: center; padding: 11px 6px; border: 1px solid #111; text-decoration: none; font-family: var(--mono); font-size: 10px; letter-spacing: 0.08em; color: #111; background: none; }
+  #apexCdOv .streaming-btn:hover { background: #111; color: #fff; }
+  #apexCdOv .streaming-btn[disabled] { border-color: var(--line); color: var(--gray); opacity: 0.5; pointer-events: none; }
+  #apexOrphans { margin-top: 18px; }
+  #apexOrphans table { border-collapse: collapse; width: 100%; font-size: 11px; }
+  #apexOrphans td { border-bottom: 1px solid var(--line); padding: 4px 6px; }
   </style>
 </head>
 <body>
@@ -1046,6 +1081,7 @@
         </p>
         <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:14px;">
           <button class="gbtn" id="apexImportBtn">⬆ 匯入固定名單（跳過已存在）</button>
+          <button class="gbtn" id="apexSyncBtn" title="以 seed_cards.json 第 9 欄為準，補寫／清除 album_overrides.tier，並同步 apex_pool 的 tier／demoted">⇄ 依卡池同步頂點旗標</button>
           <button class="gbtn gbtn-primary" id="apexGenAllBtn">⚡⚡ 全部入庫（三分類）</button>
           <button class="gbtn" id="apexGenAllStopBtn" style="display:none;color:var(--red);">■ 停止</button>
           <span id="apexImportMsg" style="font-size:11px;color:var(--gray);"></span>
@@ -1062,6 +1098,7 @@
         </div>
         <div id="apexResult" style="margin-bottom:12px;"></div>
         <div id="apexList" style="font-size:12px;color:var(--gray);">切換分類或按重新載入</div>
+        <div id="apexOrphans"></div>
       </div>
       <div class="section">
         <div class="section-label">手動新增／編輯（寫入目前選取的分類）</div>
@@ -1086,6 +1123,7 @@
         </div>
       </div>
       </div><!-- end sub-apex -->
+      <div id="apexCdOv" role="dialog" aria-modal="true"><div class="cd-body" id="apexCd"></div></div>
     </div>
   </div><!-- end panel-cards -->
 
@@ -1179,8 +1217,8 @@
         </p>
         <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:14px;">
           <button class="gbtn" id="scPreviewFx">▶ 播放遇敵特效</button>
-          <a class="gbtn" href="roguelike.html?prologue=1" target="_blank" rel="noopener" style="text-decoration:none;display:inline-block;">▶ 到前台看序章</a>
-          <span style="font-size:10px;color:var(--gray);">（已經有角色的話會直接跳過序章；用無痕視窗，或在預覽站按右下角「🧪 重置」）</span>
+          <a class="gbtn" href="roguelike.html?prologue=preview" target="_blank" rel="noopener" style="text-decoration:none;display:inline-block;">▶ 到前台看序章</a>
+          <span style="font-size:10px;color:var(--gray);">（用店主帳號登入時是預覽模式：以全新玩家跑一輪、不存檔，正式紀錄不動；其他帳號已有角色會直接跳過序章）</span>
         </div>
         <div class="sc-group">序章對白 · 唱片行（<span id="scBeatsN">0</span> 句）</div>
         <div id="scBeats"></div>
@@ -3507,10 +3545,10 @@ ${discogs ? '- Discogs：' + discogs : ''}
     if (!row) return null;
     if (row[8] && SHOP_TIER_LABEL[row[8]]) return { tier: row[8], label: SHOP_TIER_LABEL[row[8]] };
     const score = (Number(row[2]) || 0) + (Number(row[4]) || 0) + ((Number(row[3]) || 0) >= 5 ? 1 : 0);
-    if (score >= 10) return { tier: 'legendary', label: '傳奇' };
+    if (score >= 9) return { tier: 'legendary', label: '傳奇' };
     if (score >= 8) return { tier: 'epic', label: '史詩' };
-    if (score >= 6) return { tier: 'uncommon', label: '獨特' };
-    if (score >= 4) return { tier: 'rare', label: '稀有' };
+    if (score >= 7) return { tier: 'uncommon', label: '獨特' };
+    if (score >= 6) return { tier: 'rare', label: '稀有' };
     return { tier: 'common', label: '普通' };
   }
   let shopItems = [];
@@ -3871,54 +3909,96 @@ ${discogs ? '- Discogs：' + discogs : ''}
     renderApexList();
   });
 
+  // 2026-11-04 改：頂級牌清單與張數**以卡池 seed_cards.json 第 9 欄為準**（前台判定頂點就看這欄）。
+  // apex_pool 只補輔助資訊（入庫時間 generatedAt、noCover）。舊做法直接列 apex_pool，
+  // 但那份集合沒跟上 11-03 的殿堂擴充（只有 260 張殿堂），又留著簡轉繁前的舊鍵
+  //（唐朝乐队|唐朝 與 唐朝樂隊|唐朝 兩筆都是殿堂），清單就會少卡又重複。
+  // 不在卡池、或卡池等級不同的 apex_pool 文件另列「待清理（舊名單）」。
+  let apexCards = [];          // 卡池裡有 tier 的卡，合併 apex_pool 輔助欄位後的物件（三分類都在）
+  let apexPoolTierOf = new Map();   // 卡池 id → tier（null = 一般卡）
   async function loadApexPool() {
     const list = document.getElementById('apexList');
     if (list) { list.className = ''; list.textContent = '載入中…'; }
     try {
-      const [snap, catSnap] = await Promise.all([
+      const [rows, snap, catSnap, catTierSnap] = await Promise.all([
+        fetch('seed_cards.json?v=' + Date.now()).then(r => { if (!r.ok) throw new Error('seed_cards.json ' + r.status); return r.json(); }),
         getDocs(collection(db, 'apex_pool')),
         getDocs(query(collection(db, 'card_catalog'), where('apex', '==', true))).catch(() => ({ docs: [] })),
+        getDocs(query(collection(db, 'card_catalog'), where('tier', 'in', ['hall', 'pearl', 'heresy']))).catch(() => ({ docs: [] })),
       ]);
       apexCovers = {};
-      catSnap.docs.forEach(d => { const c = d.data().coverUrl; if (c) apexCovers[d.id] = c; });
+      [...catSnap.docs, ...catTierSnap.docs].forEach(d => { const c = d.data().coverUrl; if (c) apexCovers[d.id] = c; });
       apexDocs = snap.docs.map(d => ({ id: d.id, ...d.data() }));
       apexLoadOk = true;
-      // 卡池檔裡「還掛著 tier」的卡＝前台仍當它是頂級牌。
-      // 2026-08-30 合併後只有 seed_cards.json 一份，第 9 欄是 tier。
-      try {
-        const rows = await (await fetch('seed_cards.json?v=' + Date.now())).json();
-        apexPoolFileKeys = new Set((rows || []).filter(r => r[8]).map(r => ovCardId(r[0], r[1])));
-      } catch (e) { apexPoolFileKeys = new Set(); }
+      const aux = new Map(apexDocs.map(d => [d.id, d]));
+      apexPoolTierOf = new Map();
+      apexCards = [];
+      for (const r of (rows || [])) {
+        const id = ovCardId(r[0], r[1]);
+        const tier = APEX_INFO[r[8]] ? r[8] : null;
+        apexPoolTierOf.set(id, tier);
+        if (!tier) continue;
+        const a = aux.get(id);
+        apexCards.push({
+          id, artist: r[0], album: r[1], tier,
+          axes: [r[2], r[3], r[4]].map(Number), genres: r[5] || [], year: r[6] || null,
+          addedAt: a?.addedAt || null, generatedAt: a?.generatedAt || null, noCover: !!a?.noCover,
+          demoted: !!a?.demoted,
+          // apex_pool 與卡池不一致（沒文件、等級不同、被標降級）＝按「依卡池同步」會補的
+          auxStale: !a || a.tier !== tier || !!a.demoted,
+        });
+      }
+      apexPoolFileKeys = new Set(apexCards.map(c => c.id));
       renderApexList();
-    } catch (e) { apexLoadOk = false; if (list) list.textContent = '載入失敗（Firestore 規則需開放 apex_pool 管理員讀寫）：' + (e.message || e); }
+    } catch (e) { apexLoadOk = false; if (list) list.textContent = '載入失敗（卡池檔或 Firestore apex_pool 讀不到）：' + (e.message || e); }
+  }
+
+  // apex_pool 裡未降級、但卡池不認它是同一級頂點的文件
+  function apexOrphanDocs() {
+    return apexDocs.filter(d => !d.demoted && apexPoolTierOf.get(d.id) !== d.tier).map(d => {
+      const t = apexPoolTierOf.has(d.id) ? apexPoolTierOf.get(d.id) : undefined;
+      const why = t === undefined ? '卡池沒有這個鍵（改名／簡轉繁／已合併刪除）'
+        : t === null ? '卡池是一般卡（已降級）' : `卡池是${APEX_INFO[t].label}`;
+      return { ...d, why };
+    }).sort((a, b) => (a.tier || '').localeCompare(b.tier || '') || (a.artist || '').localeCompare(b.artist || ''));
+  }
+
+  function renderApexOrphans() {
+    const box = document.getElementById('apexOrphans');
+    if (!box) return;
+    const orphans = apexOrphanDocs();
+    if (!orphans.length) { box.innerHTML = ''; return; }
+    box.innerHTML = `<div class="section-label" style="margin-top:6px;">待清理（舊名單）· ${orphans.length} 筆</div>
+      <div style="font-size:11px;color:var(--gray);margin-bottom:8px;line-height:1.7;">apex_pool 裡還沒標降級、但卡池（seed_cards.json 第 9 欄）不是這一級的文件。前台不會把它們當頂點卡，只是舊名單殘留。按上方「⇄ 依卡池同步頂點旗標」會一併標成 demoted。</div>
+      <table>${orphans.map(d => `<tr><td>${APEX_INFO[d.tier] ? APEX_INFO[d.tier].emoji + ' ' + APEX_INFO[d.tier].label : esc(d.tier || '—')}</td><td>${esc(d.artist) || '—'} — ${esc(d.album) || '—'}</td><td style="color:var(--gray);">${esc(d.id)}</td><td style="color:var(--gray);">${esc(d.why)}</td></tr>`).join('')}</table>`;
   }
 
   function renderApexList() {
     const list = document.getElementById('apexList');
     const stat = document.getElementById('apexStat');
     if (!list) return;
-    // 已降級的不列在頂級牌清單裡，但**仍留在 apexDocs**——「匯入固定名單」靠 apexDocs 判斷
-    // 「已存在就跳過」，濾掉的話下次匯入會把降級過的又塞回來。
-    const items = apexDocs.filter(d => d.tier === apexTier && !d.demoted)
+    renderApexOrphans();
+    const items = apexCards.filter(d => d.tier === apexTier)
       .sort((a, b) => (a.artist || '').localeCompare(b.artist || ''));
     const done = items.filter(d => d.generatedAt).length;
-    const dead = items.filter(d => d.noCover).length;
-    // 「待同步」＝已標降級、但卡池檔那一列還掛著 tier（前台仍當它是頂級牌）。
-    // 不用 Firestore 旗標記錄同步狀態，因為 apex_pool 的規則是 isAdmin() 才能寫，
-    // 本機腳本用公開 key 打 PATCH 會 403（2026-08-30 實測）。改看卡池檔最準，
-    // 部署後這個提示會自己消失。
-    const pendingDemote = apexDocs.filter(d => d.demoted && apexPoolFileKeys.has(d.id)).length;
-    if (stat) stat.textContent = `${APEX_INFO[apexTier].emoji} ${APEX_INFO[apexTier].label}：共 ${items.length} 張 · 已入庫 ${done} · 無封面 ${dead}`
-      + (pendingDemote ? ` ⚠ 另有 ${pendingDemote} 張已降級，待跑本機 scripts/apply-apex-demotions.mjs 同步卡池檔` : '');
-    if (!items.length) { list.className = ''; list.textContent = '此分類還沒有牌，按上方「匯入固定名單」或手動新增。'; return; }
+    const dead = items.filter(d => !d.generatedAt && d.noCover).length;
+    const stale = apexCards.filter(d => d.auxStale).length;
+    const orphanN = apexOrphanDocs().length;
+    const all = t => apexCards.filter(d => d.tier === t).length;
+    if (stat) stat.textContent = `${APEX_INFO[apexTier].emoji} ${APEX_INFO[apexTier].label}：共 ${items.length} 張（卡池）· 已入庫 ${done} · 無封面 ${dead}`
+      + `　｜ 全部 殿堂 ${all('hall')}／異端 ${all('heresy')}／流亡 ${all('pearl')}`
+      + ((stale || orphanN) ? `　⚠ apex_pool 待同步 ${stale} 張、舊名單 ${orphanN} 筆，按「⇄ 依卡池同步頂點旗標」` : '');
+    if (!items.length) { list.className = ''; list.textContent = '卡池裡這一級沒有卡。'; return; }
     list.className = 'cardgrid';
     list.innerHTML = items.map(d => {
       const cover = apexCovers[d.id];
-      const badge = d.generatedAt
+      const badge = d.demoted
+        ? `<span class="cardgrid-badge" style="background:var(--red);">apex_pool 標降級</span>`
+        : d.generatedAt
         ? `<span class="cardgrid-badge">已入庫 ${fmtDate(d.generatedAt)}</span>`
         : (d.noCover ? `<span class="cardgrid-badge" style="background:var(--red);">無封面略過</span>`
                      : `<span class="cardgrid-badge" style="background:var(--gray);">未入庫</span>`);
-      return `<div class="cardgrid-cell" style="cursor:default;">
+      return `<div class="cardgrid-cell" data-apex-open="${esc(d.id)}" tabindex="0" title="點開看專輯卡">
         <div class="cardgrid-thumb">${cover ? `<img src="${esc(cover)}" alt="" loading="lazy">` : `<div class="cardgrid-nocover">♪</div>`}${badge}</div>
         <div class="cardgrid-album" title="${esc(d.album)}">${esc(d.album) || '—'}</div>
         <div class="cardgrid-artist" title="${esc(d.artist)}">${esc(d.artist) || '—'}</div>
@@ -3929,37 +4009,126 @@ ${discogs ? '- Discogs：' + discogs : ''}
         </div>
       </div>`;
     }).join('');
-    list.querySelectorAll('.apex-gen-one').forEach(b => b.addEventListener('click', () => produceApexCard(apexTier, b.dataset.id)));
-    list.querySelectorAll('.apex-edit').forEach(b => b.addEventListener('click', () => {
-      const d = apexDocs.find(x => x.id === b.dataset.id); if (!d) return;
+    list.querySelectorAll('.apex-gen-one').forEach(b => b.addEventListener('click', (e) => { e.stopPropagation(); produceApexCard(apexTier, b.dataset.id); }));
+    list.querySelectorAll('.apex-edit').forEach(b => b.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const d = apexCards.find(x => x.id === b.dataset.id); if (!d) return;
       apexEditingId = d.id;
       document.getElementById('apexArtist').value = d.artist || '';
       document.getElementById('apexAlbum').value = d.album || '';
       document.getElementById('apexCancelEditBtn').style.display = '';
       document.getElementById('apexEditMsg').textContent = `編輯中：${d.artist} — ${d.album}`;
     }));
-    // 降級成一般卡。原本這顆是「✕ 從卡池刪除」，但只刪 apex_pool 那筆等於什麼都沒做——
-    // **前台判定殿堂看的是 seed_cards.json 這個 git 檔的第 9 欄 tier**（loadCardPool 直接 fetch），
-    // Firestore 只影響唱片櫃與 gate。刪完卡片照樣是殿堂，下次按「匯入固定名單」還會被加回來。
-    // 所以這裡改成：Firestore 該清的欄位一次清乾淨，並在 apex_pool 那筆留 demoted 旗標，
+    // 降級成一般卡：Firestore 該清的欄位一次清乾淨，並在 apex_pool 那筆留 demoted 旗標，
     // 讓本機的 scripts/apply-apex-demotions.mjs 據以拿掉卡池檔那一列的 tier 欄。
-    // 留著文件而不是刪掉，是為了讓「匯入固定名單」的跳過判斷仍認得它，不會又被塞回來。
-    list.querySelectorAll('.apex-demote').forEach(b => b.addEventListener('click', async () => {
-      const d = apexDocs.find(x => x.id === b.dataset.id); if (!d) return;
+    // **前台判定頂點看的是 seed_cards.json 第 9 欄**，所以卡池改掉之前這張仍會列在這裡（紅色徽章）。
+    list.querySelectorAll('.apex-demote').forEach(b => b.addEventListener('click', async (e) => {
+      e.stopPropagation();
+      const d = apexCards.find(x => x.id === b.dataset.id); if (!d) return;
       if (!confirm(`把「${d.artist} — ${d.album}」降級成一般卡？\n\n`
         + `後台這邊會立刻清掉 card_catalog.apex／tier 與 album_overrides.tier。\n`
-        + `但卡池檔（seed_cards.json）在 git 裡，要另外跑本機同步才會真的變成一般卡。`)) return;
+        + `但卡池檔（seed_cards.json）在 git 裡，要另外跑本機同步才會真的變成一般卡；\n`
+        + `在那之前別按「依卡池同步頂點旗標」，否則會照卡池把旗標寫回去。`)) return;
       try {
-        await setDoc(doc(db, 'apex_pool', d.id), { demoted: true, demotedAt: Date.now() }, { merge: true });
+        await setDoc(doc(db, 'apex_pool', d.id), { artist: d.artist, album: d.album, tier: d.tier, demoted: true, demotedAt: Date.now() }, { merge: true });
         await setDoc(doc(db, 'card_catalog', d.id), { apex: false, tier: deleteField(), updatedAt: Date.now() }, { merge: true });
         await updateDoc(doc(db, 'album_overrides', d.id), { tier: deleteField(), updatedAt: Date.now() }).catch(() => {});
-        d.demoted = true; d.demotedAt = Date.now();
+        d.demoted = true; d.auxStale = true;
+        const a = apexDocs.find(x => x.id === d.id);
+        if (a) { a.demoted = true; a.demotedAt = Date.now(); } else apexDocs.push({ id: d.id, artist: d.artist, album: d.album, tier: d.tier, demoted: true, demotedAt: Date.now() });
         renderApexList();
       } catch (e) { alert('降級失敗：' + (e.message || e)); }
     }));
-    // 背景補抓還沒有封面的牌（不改變入庫狀態，只是顯示 + 快取回 apex_pool）
+    // 背景補抓還沒有封面的牌（不改變入庫狀態，只是顯示）
     fillApexCovers(items, apexTier);
   }
+
+  // ── 點卡片彈出專輯卡（版型同 shop-all.html 的詳情）──
+  const APEX_DIM = { hall: 0, pearl: 1, heresy: 2 };   // 頂點那一軸照前台固定 7 顆：殿堂→經典度、流亡→冷門度、異端→硬蕊度
+  const apexStars = (n, total = 5) => { n = Math.max(0, Math.min(total, Math.round(Number(n) || 0))); return '★'.repeat(n) + `<s>${'★'.repeat(total - n)}</s>`; };
+  let apexCdCur = null, apexCdLastFocus = null;
+  const apexCdGet = (path, d) => fetch(`${WORKER_URL}/${path}?artist=${encodeURIComponent(d.artist)}&album=${encodeURIComponent(d.album)}`, { signal: AbortSignal.timeout(9000) }).then(x => x.ok ? x.json() : {}).catch(() => ({}));
+  function apexCardHtml(d) {
+    const cover = apexCovers[d.id] || '';
+    const sp = APEX_DIM[d.tier];
+    const axis = (label, i) => {
+      const special = i === sp;
+      return `<div>${label}<b class="${special ? 'sp sp-' + d.tier : ''}">${special ? apexStars(7, 7) : apexStars(d.axes[i])}</b></div>`;
+    };
+    const metaLine = [d.year, (d.genres || []).join('・')].filter(Boolean).join('　');
+    const q = encodeURIComponent(`${d.artist} ${d.album}`.trim());
+    const aux = [d.generatedAt ? `入庫 ${fmtDate(d.generatedAt)}` : '未入庫', d.addedAt ? `加入名單 ${fmtDate(d.addedAt)}` : 'apex_pool 無文件', d.noCover ? 'noCover' : '', d.demoted ? 'apex_pool 標了 demoted，但卡池仍是頂點（同步會清掉；若是剛按降級，要先改卡池檔）' : ''].filter(Boolean).join('　·　');
+    return `
+      <button class="cd-close" aria-label="關閉">✕</button>
+      <div class="cd-rarity rarity-${d.tier}">${APEX_INFO[d.tier].label}</div>
+      <div class="cd-cover" id="apexCdCover"><div class="cd-nocover"><b>${esc(d.album)}</b><span>${esc(d.artist)}</span></div>${cover ? `<img src="${esc(cover)}" alt="" referrerpolicy="no-referrer" onerror="this.remove()">` : ''}</div>
+      <div class="cd-artist">${esc(d.artist)}</div>
+      <div class="cd-album">${esc(d.album)}</div>
+      <div class="cd-meta">${esc(String(metaLine))}</div>
+      <div class="cd-stars">${axis('經典度', 0)}${axis('冷門度', 1)}${axis('硬蕊度', 2)}</div>
+      <div class="cd-desc empty" id="apexCdDesc">載入介紹…</div>
+      <div class="cd-adm">${esc(aux)}<br>${esc(d.id)}</div>
+      <div class="streaming-btns">
+        <a class="streaming-btn" data-platform="apple" href="https://music.apple.com/tw/search?term=${q}" target="_blank" rel="noopener">Apple Music</a>
+        <a class="streaming-btn" data-platform="spotify" disabled>Spotify</a>
+        <a class="streaming-btn" data-platform="yt" href="https://music.youtube.com/search?q=${q}" target="_blank" rel="noopener">YT Music</a>
+        <a class="streaming-btn" data-platform="bandcamp" disabled>Bandcamp</a>
+      </div>`;
+  }
+  async function openApexCard(id) {
+    const d = apexCards.find(x => x.id === id); if (!d) return;
+    const ov = document.getElementById('apexCdOv'), cd = document.getElementById('apexCd');
+    apexCdCur = id;
+    cd.innerHTML = apexCardHtml(d);
+    if (!ov.classList.contains('open')) { apexCdLastFocus = document.activeElement; ov.classList.add('open'); document.body.style.overflow = 'hidden'; }
+    ov.scrollTop = 0;
+    cd.querySelector('.cd-close').focus();
+    const still = () => apexCdCur === id && ov.classList.contains('open');
+    // 封面：card_catalog.coverUrl（清單載入時已讀過的就不再讀）
+    if (!apexCovers[d.id]) {
+      getDoc(doc(db, 'card_catalog', d.id)).then(s => {
+        const u = s.exists() ? (s.data().coverUrl || '') : '';
+        if (!u || !still()) return;
+        apexCovers[d.id] = u;
+        document.getElementById('apexCdCover')?.insertAdjacentHTML('beforeend', `<img src="${esc(u)}" alt="" referrerpolicy="no-referrer" onerror="this.remove()">`);
+      }).catch(() => {});
+    }
+    // 簡介：與前台搜尋詳情同一套優先序——後台校正 album_overrides.desc > worker /album-desc（KV 固定簡介）
+    (async () => {
+      let text = '';
+      try { const s = await getDoc(doc(db, 'album_overrides', d.id)); text = s.exists() ? String(s.data().desc || '').trim() : ''; } catch (e) {}
+      if (!text) text = String((await apexCdGet('album-desc', d)).desc || '').trim();
+      if (!still()) return;
+      const el = document.getElementById('apexCdDesc'); if (!el) return;
+      el.textContent = text || '（暫無介紹）';
+      el.classList.toggle('empty', !text);
+    })();
+    // 串流：同 shop-all.html——查到直連才啟用 Spotify／Bandcamp，YT 有直連就換掉搜尋連結
+    Promise.all([apexCdGet('spotify-search', d), apexCdGet('yt-music-link', d), apexCdGet('bandcamp-search', d)]).then(async ([sp, yt, bc]) => {
+      const spotify = sp?.spotifyUrl || (await apexCdGet('spotify-album-link', d))?.url;
+      if (!still()) return;
+      const set = (p, u) => { const a = document.querySelector(`#apexCd .streaming-btn[data-platform="${p}"]`); if (a && u) { a.href = u; a.target = '_blank'; a.rel = 'noopener'; a.removeAttribute('disabled'); } };
+      set('spotify', spotify); set('yt', yt?.url); set('bandcamp', bc?.bandcampUrl);
+    });
+  }
+  function closeApexCard() {
+    const ov = document.getElementById('apexCdOv');
+    ov.classList.remove('open'); document.body.style.overflow = ''; apexCdCur = null; apexCdLastFocus?.focus?.();
+  }
+  document.getElementById('apexList')?.addEventListener('click', (e) => {
+    if (e.target.closest('button')) return;   // ⚡入庫／✎編輯／⬇降級 不開彈窗
+    const cell = e.target.closest('[data-apex-open]'); if (cell) openApexCard(cell.dataset.apexOpen);
+  });
+  document.getElementById('apexList')?.addEventListener('keydown', (e) => {
+    if ((e.key !== 'Enter' && e.key !== ' ') || e.target.closest('button')) return;
+    const cell = e.target.closest('[data-apex-open]'); if (cell) { e.preventDefault(); openApexCard(cell.dataset.apexOpen); }
+  });
+  document.getElementById('apexCdOv')?.addEventListener('click', (e) => {
+    if (e.target.id === 'apexCdOv' || e.target.closest('.cd-close')) closeApexCard();
+  });
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && document.getElementById('apexCdOv')?.classList.contains('open')) closeApexCard();
+  });
 
   // 背景抓 Spotify 封面：只處理沒封面、也沒被標記無封面的牌，限流併發，抓到就即時填圖並快取
   let apexFillToken = 0;
@@ -3983,7 +4152,7 @@ ${discogs ? '- Discogs：' + discogs : ''}
         apexCovers[d.id] = cover;   // 本次 session 記著，切分類來回不重抓；跨 session 靠 worker KV 快取
         // 只有目前仍在畫面上（同分類）才更新該格的圖
         if (tier === apexTier) {
-          const cell = document.querySelector(`#apexList .apex-edit[data-id="${CSS.escape(d.id)}"]`)?.closest('.cardgrid-cell');
+          const cell = document.querySelector(`#apexList [data-apex-open="${CSS.escape(d.id)}"]`);
           const thumb = cell?.querySelector('.cardgrid-thumb');
           const noCover = thumb?.querySelector('.cardgrid-nocover');
           if (noCover) noCover.outerHTML = `<img src="${esc(cover)}" alt="" loading="lazy">`;
@@ -4032,6 +4201,52 @@ ${discogs ? '- Discogs：' + discogs : ''}
     btn.disabled = false;
   });
 
+  // 依卡池同步頂點旗標（2026-11-03 方案 C 套用後加）：卡池檔 seed_cards.json 第 9 欄是唯一真相，
+  // 雲端寫得了 card_catalog、寫不了管理員集合，所以 album_overrides.tier 與 apex_pool 由這顆補齊：
+  //   - 卡池有 tier、album_overrides.tier 不同 → merge 寫 tier
+  //   - 卡池沒 tier、album_overrides 卻有 tier → 刪 tier 欄（不在卡池的 id 不動）
+  //   - apex_pool：卡池有 tier → merge 寫 tier、清 demoted；卡池沒 tier 而 apex_pool 未降級 → 標 demoted
+  // 冪等：重按只會處理仍不一致的。
+  document.getElementById('apexSyncBtn')?.addEventListener('click', async () => {
+    const msg = document.getElementById('apexImportMsg');
+    const btn = document.getElementById('apexSyncBtn');
+    btn.disabled = true; msg.textContent = '比對卡池與 album_overrides／apex_pool…';
+    try {
+      const rows = await (await fetch('seed_cards.json?v=' + Date.now())).json();
+      const poolTier = new Map();
+      for (const r of (rows || [])) poolTier.set(ovCardId(r[0], r[1]), { artist: r[0], album: r[1], tier: r[8] || null });
+      const [ovSnap, apSnap] = await Promise.all([getDocs(collection(db, 'album_overrides')), getDocs(collection(db, 'apex_pool'))]);
+      const ov = new Map(ovSnap.docs.map(d => [d.id, d.data()]));
+      const ap = new Map(apSnap.docs.map(d => [d.id, d.data()]));
+      const ops = [];
+      for (const [id, p] of poolTier) {
+        const o = ov.get(id), a = ap.get(id);
+        if (p.tier) {
+          if (!o || o.tier !== p.tier) ops.push(['album_overrides', id, { artist: p.artist, album: p.album, tier: p.tier, updatedAt: Date.now() }]);
+          if (!a || a.tier !== p.tier || a.demoted) ops.push(['apex_pool', id, { artist: p.artist, album: p.album, tier: p.tier, demoted: deleteField(), ...(a ? {} : { addedAt: Date.now() }) }]);
+        } else {
+          if (o && o.tier) ops.push(['album_overrides', id, { tier: deleteField(), updatedAt: Date.now() }]);
+          if (a && !a.demoted) ops.push(['apex_pool', id, { demoted: true, demotedAt: Date.now() }]);
+        }
+      }
+      // 2026-11-04：apex_pool 裡卡池沒有的鍵（簡轉繁前的舊名、已合併刪除的重複卡）也標 demoted，
+      // 不然清單外永遠掛著一份孤兒（唐朝乐队|唐朝 就是這樣跟 唐朝樂隊|唐朝 疊成兩張）。
+      for (const [id, a] of ap) if (!poolTier.has(id) && !a.demoted) ops.push(['apex_pool', id, { demoted: true, demotedAt: Date.now() }]);
+      const n = c => ops.filter(x => x[0] === c).length;
+      if (!ops.length) { msg.textContent = '✓ 已一致，無需同步'; btn.disabled = false; return; }
+      if (!confirm(`依卡池同步頂點旗標：album_overrides ${n('album_overrides')} 筆、apex_pool ${n('apex_pool')} 筆。繼續？`)) { msg.textContent = ''; btn.disabled = false; return; }
+      for (let i = 0; i < ops.length; i += 400) {
+        const batch = writeBatch(db);
+        ops.slice(i, i + 400).forEach(([c, id, data]) => batch.set(doc(db, c, id), data, { merge: true }));
+        await batch.commit();
+        msg.textContent = `同步中… ${Math.min(i + 400, ops.length)}/${ops.length}`;
+      }
+      msg.textContent = `✓ 已同步 album_overrides ${n('album_overrides')}、apex_pool ${n('apex_pool')}`;
+      await loadApexPool();
+    } catch (e) { msg.textContent = '同步失敗：' + (e.message || e); }
+    btn.disabled = false;
+  });
+
   // 手動新增／編輯
   document.getElementById('apexSaveBtn')?.addEventListener('click', async () => {
     const artist = document.getElementById('apexArtist').value.trim();
@@ -4040,7 +4255,7 @@ ${discogs ? '- Discogs：' + discogs : ''}
     if (!artist || !album) { msg.textContent = '藝人與專輯都要填'; return; }
     const id = ovCardId(artist, album);
     try {
-      const old = apexEditingId ? apexDocs.find(x => x.id === apexEditingId) : null;
+      const old = apexEditingId ? (apexCards.find(x => x.id === apexEditingId) || apexDocs.find(x => x.id === apexEditingId)) : null;
       await setDoc(doc(db, 'apex_pool', id), {
         artist, album, tier: old ? old.tier : apexTier,
         addedAt: old?.addedAt || Date.now(),
@@ -4090,7 +4305,7 @@ ${discogs ? '- Discogs：' + discogs : ''}
     btn.disabled = true;
     try {
       // noCover 的也重試：封面鏈已補 card_catalog／Bandcamp 來源，先前被 Spotify 誤判的能救回
-      let candidates = apexDocs.filter(d => d.tier === tier && !d.generatedAt);
+      let candidates = apexCards.filter(d => d.tier === tier && !d.generatedAt && !d.demoted);
       if (specificId) candidates = candidates.filter(d => d.id === specificId);
       if (!candidates.length) { msg.textContent = '沒有可產出的牌（都入庫了）'; return; }
       // 隨機順序最多試 5 張：抓不到封面就標記 noCover 換下一張（未標記的優先）
@@ -4100,7 +4315,7 @@ ${discogs ? '- Discogs：' + discogs : ''}
         msg.textContent = `抓封面驗證中：${cand.artist} — ${cand.album}…`;
         const cover = await apexFindCover(cand);
         if (!cover) {
-          await setDoc(doc(db, 'apex_pool', cand.id), { noCover: true }, { merge: true }).catch(() => {});
+          await setDoc(doc(db, 'apex_pool', cand.id), { artist: cand.artist, album: cand.album, tier: cand.tier, noCover: true }, { merge: true }).catch(() => {});
           cand.noCover = true;
           continue;
         }
@@ -4112,7 +4327,7 @@ ${discogs ? '- Discogs：' + discogs : ''}
         await setDoc(doc(db, 'album_overrides', cand.id), {
           artist: cand.artist, album: cand.album, tier, updatedAt: now,
         }, { merge: true });
-        await setDoc(doc(db, 'apex_pool', cand.id), { generatedAt: now, noCover: deleteField() }, { merge: true });
+        await setDoc(doc(db, 'apex_pool', cand.id), { artist: cand.artist, album: cand.album, tier: cand.tier, generatedAt: now, noCover: deleteField() }, { merge: true });
         cand.generatedAt = now;
         delete cand.noCover;
         apexCovers[cand.id] = cover;
@@ -4138,7 +4353,7 @@ ${discogs ? '- Discogs：' + discogs : ''}
   document.getElementById('apexGenAllBtn')?.addEventListener('click', async () => {
     if (apexAllBusy || apexGenBusy) return;
     // noCover 的也納入重試：封面鏈為 card_catalog → Spotify → Bandcamp。已降級的不再入庫。
-    const pending = apexDocs.filter(d => !d.generatedAt && !d.demoted)
+    const pending = apexCards.filter(d => !d.generatedAt && !d.demoted)
       .sort((a, b) => (!!a.noCover - !!b.noCover));
     if (!pending.length) { document.getElementById('apexGenMsg').textContent = '沒有待入庫的牌（先匯入名單或全部都已入庫）'; return; }
     if (!confirm(`把 ${pending.length} 張未入庫的頂級牌全部入庫？（先讀既有封面、查無才打 Spotify/Bandcamp，約需幾分鐘）`)) return;
@@ -4158,7 +4373,7 @@ ${discogs ? '- Discogs：' + discogs : ''}
         const cover = await apexFindCover(cand);
         const now = Date.now();
         if (!cover) {
-          batch.set(doc(db, 'apex_pool', cand.id), { noCover: true }, { merge: true });
+          batch.set(doc(db, 'apex_pool', cand.id), { artist: cand.artist, album: cand.album, tier: cand.tier, noCover: true }, { merge: true });
           cand.noCover = true; bad++; inBatch++;
         } else {
           batch.set(doc(db, 'card_catalog', cand.id), {
@@ -4168,7 +4383,7 @@ ${discogs ? '- Discogs：' + discogs : ''}
           batch.set(doc(db, 'album_overrides', cand.id), {
             artist: cand.artist, album: cand.album, tier: cand.tier, updatedAt: now,
           }, { merge: true });
-          batch.set(doc(db, 'apex_pool', cand.id), { generatedAt: now, noCover: deleteField() }, { merge: true });
+          batch.set(doc(db, 'apex_pool', cand.id), { artist: cand.artist, album: cand.album, tier: cand.tier, generatedAt: now, noCover: deleteField() }, { merge: true });
           cand.generatedAt = now; delete cand.noCover; apexCovers[cand.id] = cover; ok++; inBatch += 3;
         }
         if (inBatch >= 300) { await flush(); renderApexList(); }
@@ -4187,7 +4402,7 @@ ${discogs ? '- Discogs：' + discogs : ''}
   // ───────── 一般卡池批次匯入（seed_cards.json → card_catalog）─────────
   const rarityFromStats = (c, o, a) => {
     const s = (c || 0) + (a || 0) + ((o || 0) >= 5 ? 1 : 0);
-    return s >= 10 ? 'legendary' : s >= 8 ? 'epic' : s >= 6 ? 'uncommon' : s >= 4 ? 'rare' : 'common';
+    return s >= 9 ? 'legendary' : s >= 8 ? 'epic' : s >= 7 ? 'uncommon' : s >= 6 ? 'rare' : 'common';
   };
   document.getElementById('seedImportBtn')?.addEventListener('click', async () => {
     const msg = document.getElementById('seedImportMsg');

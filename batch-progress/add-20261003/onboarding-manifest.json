@@ -27,11 +27,20 @@
         "obscurity": 4,
         "accessibility": 2,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-10-03T12:44:26Z",
-        "note": "listeners 待本機（雲端擋 Last.fm）。錨點：金曲獎最佳新人與最佳專輯製作人（李欣芸）雙入圍、《台灣流行音樂 200 最佳專輯》新百佳第 46 名 → classic 4；從未數位化、只有 1999 一版 CD → obscurity 4（比池中同藝人《她的。發光搖擺》的 3 高一級）；李欣芸編曲的中文另類流行、易入耳 → accessibility 2。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：李欣芸製作的出道作，小眾經典；小廠無串流、聽眾缺值→4",
+        "previous": {
+          "classic": 5,
+          "obscurity": 4,
+          "accessibility": 2,
+          "source": "manual:rerate-20261102",
+          "checkedAt": "2026-11-02T00:00:00Z",
+          "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：出道作，入選《台灣流行音樂200最佳專輯》新百佳46名；台灣小廠唯一CD版、無串流；李欣芸製作的獨立流行搖滾",
+          "rarity": "uncommon"
+        }
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -58,7 +67,7 @@
         "cardCatalog": false,
         "descriptionKv": false,
         "albumOverride": false,
-        "seedCards": false,
+        "seedCards": true,
         "apexPool": false
       }
     }

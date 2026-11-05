@@ -1,0 +1,131 @@
+{
+ "group": "ax8d",
+ "factions": [
+  {
+   "id": "extreme-electronic",
+   "zh": "極端電子",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "war-metal",
+   "zh": "戰爭金屬",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "noisecore",
+   "zh": "噪音核",
+   "count": 1,
+   "why": ""
+  }
+ ],
+ "albums": [
+  {
+   "artist": "Alec Empire",
+   "album": "The Destroyer",
+   "year": 1995,
+   "label": "Digital Hardcore Recordings",
+   "country": "de",
+   "faction": "extreme-electronic",
+   "genres": [
+    "electronic",
+    "noise"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "數位硬核／早期 breakcore 的奠基盤，AllMusic 4.5 星，聽感為全程失真高速鼓機加噪音牆。",
+   "listeners": null,
+   "why": "維基與 AllMusic（4.5 星）、Pitchfork（6.7）皆把它列為最早的 breakcore 唱片之一，聲音比 Alec Empire 早期 Mille Plateaux 作品重得多，近似 Atari Teenage Riot 的失真鼓機加噪音；全程無傳統編曲結構。依據偏薄：未能取得樂評全文。",
+   "moodGuess": {
+    "x": 4,
+    "y": 2,
+    "z": -3,
+    "why": "高速失真鼓機噪音"
+   },
+   "evidence": [
+    "https://en.wikipedia.org/wiki/The_Destroyer_(Alec_Empire_album)",
+    "https://musicbrainz.org/release-group/8e78c6c2-8ee1-3f11-b834-1a4cfd833f3a",
+    "https://coverartarchive.org/release-group/8e78c6c2-8ee1-3f11-b834-1a4cfd833f3a/front"
+   ],
+   "mbRgMbid": "8e78c6c2-8ee1-3f11-b834-1a4cfd833f3a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 另有 1994 同名 EP、1996 單曲，已鎖 Album 1995-06-03；維基寫 1996 歐洲首發，年份請主線裁定。依據偏薄。"
+  },
+  {
+   "artist": "Revenge",
+   "album": "Triumph.Genocide.Antichrist",
+   "year": 2003,
+   "label": "Osmose Productions",
+   "country": "ca",
+   "faction": "war-metal",
+   "genres": [
+    "metal"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "加拿大 war metal 代表作，評論形容為全程均質、無喘息的轟炸。",
+   "listeners": null,
+   "why": "Metal.Academy 評為非常一致的 war metal，無亮點起伏，全程高密度blast beat與失真；Metalbite 評論稱毫無動態起伏。依據僅有社群評論，未取得 Terrorizer／Decibel 等主流評。",
+   "moodGuess": {
+    "x": 4,
+    "y": 1,
+    "z": -3,
+    "why": "均質轟炸"
+   },
+   "evidence": [
+    "https://metal.academy/releases/4782",
+    "https://metalbite.com/album/2118/revenge-triumphgenocideantichrist",
+    "https://coverartarchive.org/release-group/5a04b451-0a6e-3ac4-9d90-918ac8b50a48/front"
+   ],
+   "mbRgMbid": "5a04b451-0a6e-3ac4-9d90-918ac8b50a48",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "chk-artist 輸出 0。依據偏薄，建議汰換；ax6c 稱 MB 同名撞，此處已用 artist 加專輯名鎖定單一 RG。"
+  },
+  {
+   "artist": "Seven Minutes of Nausea",
+   "album": "Your Father Was a Poser… And What’s About You??",
+   "year": 1990,
+   "label": "",
+   "country": "us",
+   "faction": "noisecore",
+   "genres": [
+    "punk",
+    "noise"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "noisecore 開創樂團（維基列為早期代表，1986 年起），極短曲、無結構。",
+   "listeners": null,
+   "why": "維基 Noisecore 條目載其 1986 年 demo 與 1989 年和 Anal Cunt 的 split，為該類型早期代表；noisecore 的特徵為快速混亂鼓點、回授失真、拒絕詩副歌結構。具體該盤聽感描述無可信樂評，依據薄。",
+   "moodGuess": {
+    "x": 4,
+    "y": 0,
+    "z": -3,
+    "why": "短曲噪音核"
+   },
+   "evidence": [
+    "https://en.wikipedia.org/wiki/Noisecore",
+    "https://musicbrainz.org/release-group/5a74ca68-c8f5-49b0-a876-9100d02feadb",
+    "https://coverartarchive.org/release-group/5a74ca68-c8f5-49b0-a876-9100d02feadb/front"
+   ],
+   "mbRgMbid": "5a74ca68-c8f5-49b0-a876-9100d02feadb",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "chk-artist 命中 Nausea|Extinction 為不同藝人之假陽性。廠牌未查。極薄，建議汰換。"
+  }
+ ],
+ "notes": [
+  "只交 3 張：樂評全文多被擋（Pitchfork 禁抓、AllMusic 未取得），多數只有維基／社群評論，依據偏薄。",
+  "Gore Beyond Necropsy：chk 命中 Beyond 為假陽性，但 ax6c 已查 MB 只有 demo／split EP，無正規專輯，未提。",
+  "Profanatica：MB 有 Disgusting Blasphemies Against God (2010, 9de92a69-4ae0-447c-99e5-dc3fd5fcead7)，Decibel/Exclaim 有評，但是有結構的黑金屬，不符標準，未提。",
+  "Ove-Naxx：MB 有 Ovnx Shoot Accel Core (2002, ffa5c4a2-da32-3f04-b89d-c3f154bed57a) 與 Ovekeyashiki，CAA 皆 404，找不到封面，未提。",
+  "Revenge 的其他 ax 組未提過；Atari Teenage Riot（ax2d）與 Sore Throat（ax6g）已被提，Brutal Truth／Anal Cunt 已判 none，皆未重提。",
+  "speedcore／extratone 與 breakcore 補位未完成：維基無 Ove-Naxx、DJ Scud 條目可引。"
+ ]
+}

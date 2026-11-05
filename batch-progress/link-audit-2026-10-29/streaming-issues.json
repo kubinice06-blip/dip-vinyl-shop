@@ -1,0 +1,2163 @@
+{
+ "generatedAt": "2026-10-29",
+ "source": "KV cover6:*（12,455 鍵）× Spotify oEmbed",
+ "stat": {
+  "kvKeys": 12455,
+  "withSpotify": 7955,
+  "emptySpotify": 5,
+  "nullSpotify": 4495,
+  "inSeed": 7647,
+  "badFormat": 0,
+  "dead": 0,
+  "unknown": 0,
+  "wrongVersion": 84,
+  "albumMismatch": 122,
+  "albumPartial": 432,
+  "skippedFixed": 0,
+  "skippedPriorOk": 86
+ },
+ "verdictCount": {
+  "ok": 379,
+  "wrong": 92,
+  "review": 40
+ },
+ "otherPlatformFields": "cover6 值只有 imageUrl／coverSource／rgMbid／spotifyUrl／spotifyChecked／replacedSpotifyAlbum，沒有 Apple／YouTube 等其他平台欄位；Apple Music 鈕走試聽索引（見 preview-issues.json）。",
+ "items": [
+  {
+   "verdict": "wrong",
+   "reason": "配到單曲 Die stille Stadt",
+   "key": "cover6:alma mahler|lieder",
+   "artist": "Alma Mahler",
+   "album": "Lieder",
+   "inSeed": true,
+   "spotifyUrl": "https://open.spotify.com/album/2sOx2WClxdZQm3mz7fM6ws",
+   "spotifyTitle": "A. Mahler: 5 Lieder: I. Die stille Stadt",
+   "oembedStatus": 200,
+   "rgMbid": null,
+   "spotifyChecked": null,
+   "flags": [
+    "album-partial"
+   ]
+  },
+  {
+   "verdict": "review",
+   "reason": "配到 EVITA: The Full Album",
+   "key": "cover6:andrew lloyd webber & tim rice|evita",
+   "artist": "Andrew Lloyd Webber & Tim Rice",
+   "album": "Evita",
+   "inSeed": true,
+   "spotifyUrl": "https://open.spotify.com/album/4yp4ryiYyXn4UuRE60TBns",
+   "spotifyTitle": "EVITA: The Full Album",
+   "oembedStatus": 200,
+   "rgMbid": null,
+   "spotifyChecked": null,
+   "flags": [
+    "album-partial"
+   ]
+  },
+  {
+   "verdict": "review",
+   "reason": "配到 Mozart: Violin Concertos（曲目未明）",
+   "key": "cover6:arthur grumiaux|mozart: violin concertos 3 & 5",
+   "artist": "Arthur Grumiaux",
+   "album": "Mozart: Violin Concertos 3 & 5",
+   "inSeed": true,
+   "spotifyUrl": "https://open.spotify.com/album/0VE3LAxOh0ij9jMyItT6rm",
+   "spotifyTitle": "Mozart: Violin Concertos",
+   "oembedStatus": 200,
+   "rgMbid": null,
+   "spotifyChecked": null,
+   "flags": [
+    "album-partial"
+   ]
+  },
+  {
+   "verdict": "wrong",
+   "reason": "配到 Better Since You're Gone",
+   "key": "cover6:aus|since",
+   "artist": "aus",
+   "album": "since",
+   "inSeed": false,
+   "spotifyUrl": "https://open.spotify.com/album/45UDwebhK9aS8Ab7RFrCVQ",
+   "spotifyTitle": "Better Since You're Gone",
+   "oembedStatus": 200,
+   "rgMbid": null,
+   "spotifyChecked": null,
+   "flags": [
+    "album-partial"
+   ]
+  },
+  {
+   "verdict": "review",
+   "reason": "配到 AWB R&B",
+   "key": "cover6:average white band|awb",
+   "artist": "Average White Band",
+   "album": "AWB",
+   "inSeed": true,
+   "spotifyUrl": "https://open.spotify.com/album/3HXGcbMeRNh6kEkwlWXIWl",
+   "spotifyTitle": "AWB R&B",
+   "oembedStatus": 200,
+   "rgMbid": null,
+   "spotifyChecked": null,
+   "flags": [
+    "album-mismatch"
+   ]
+  },
+  {
+   "verdict": "wrong",
+   "reason": "配到單曲 The Orgy",
+   "key": "cover6:basil poledouris|conan the barbarian",
+   "artist": "Basil Poledouris",
+   "album": "Conan the Barbarian",
+   "inSeed": true,
+   "spotifyUrl": "https://open.spotify.com/album/12eNz9Ov5m97DEKy2E9EmX",
+   "spotifyTitle": "The Orgy (from the motion picture \"Conan The Barbarian\")",
+   "oembedStatus": 200,
+   "rgMbid": null,
+   "spotifyChecked": null,
+   "flags": [
+    "album-partial"
+   ]
+  },
+  {
+   "verdict": "wrong",
+   "reason": "配到精選 THE BEST OF BIGBANG 2006-2014",
+   "key": "cover6:bigbang|bigbang2",
+   "artist": "BIGBANG",
+   "album": "BIGBANG2",
+   "inSeed": true,
+   "spotifyUrl": "https://open.spotify.com/album/1JwbdXLKJVffgSW95WcTUp",
+   "spotifyTitle": "THE BEST OF BIGBANG 2006-2014",
+   "oembedStatus": 200,
+   "rgMbid": null,
+   "spotifyChecked": null,
+   "flags": [
+    "wrong-version:compilation",
+    "album-partial"
+   ]
+  },
+  {
+   "verdict": "wrong",
+   "reason": "配到另一張 Brother Jack",
+   "key": "cover6:brother jack mcduff|brother jack mcduff live!",
+   "artist": "Brother Jack McDuff",
+   "album": "Brother Jack McDuff Live!",
+   "inSeed": true,
+   "spotifyUrl": "https://open.spotify.com/album/4AdBLXutQ2Tumd3kdyISXq",
+   "spotifyTitle": "Brother Jack",
+   "oembedStatus": 200,
+   "rgMbid": null,
+   "spotifyChecked": null,
+   "flags": [
+    "album-partial"
+   ]
+  },
+  {
+   "verdict": "review",
+   "reason": "配到 Mozart／Brahms／Beethoven 合輯",
+   "key": "cover6:bruno walter|brahms: symphony no. 2",
+   "artist": "Bruno Walter",
+   "album": "Brahms: Symphony no. 2",
+   "inSeed": true,
+   "spotifyUrl": "https://open.spotify.com/album/0YYG0A1tfd6ZyUYEqb32hB",
+   "spotifyTitle": "MOZART: SYMPHONY No. 40; BRAHMS: SYMPHONY No.2; BEETHOVEN: EGMONT \"MUSIK ZU GOETHE'S TRAUERSPIEL\"",
+   "oembedStatus": 200,
+   "rgMbid": null,
+   "spotifyChecked": null,
+   "flags": [
+    "album-partial"
+   ]
+  },
+  {
+   "verdict": "review",
+   "reason": "配到 The Amazing Bud Powell（卷次不明）",
+   "key": "cover6:bud powell|the amazing bud powell, volume two",
+   "artist": "Bud Powell",
+   "album": "The Amazing Bud Powell, Volume Two",
+   "inSeed": true,
+   "spotifyUrl": "https://open.spotify.com/album/6zmiY7rh11iF7Bp7Z9zcHp",
+   "spotifyTitle": "The Amazing Bud Powell",
+   "oembedStatus": 200,
+   "rgMbid": null,
+   "spotifyChecked": null,
+   "flags": [
+    "album-partial"
+   ]
+  },
+  {
+   "verdict": "review",
+   "reason": "配到 (Live) 錄音",
+   "key": "cover6:budapest string quartet|beethoven: late string quartets",
+   "artist": "Budapest String Quartet",
+   "album": "Beethoven: Late String Quartets",
+   "inSeed": true,
+   "spotifyUrl": "https://open.spotify.com/album/2jEEm6RQMVMBEms9ZRrKMu",
+   "spotifyTitle": "Beethoven: Late String Quartets (Live)",
+   "oembedStatus": 200,
+   "rgMbid": null,
+   "spotifyChecked": null,
+   "flags": [
+    "wrong-version:live"
+   ]
+  },
+  {
+   "verdict": "wrong",
+   "reason": "配到 Don Giovanni／Boris Godunov／Don Carlo 合輯",
+   "key": "cover6:carlo maria giulini|mozart: don giovanni",
+   "artist": "Carlo Maria Giulini",
+   "album": "Mozart: Don Giovanni",
+   "inSeed": true,
+   "spotifyUrl": "https://open.spotify.com/album/4RLyC2Zwh6emrR7phBM1Db",
+   "spotifyTitle": "MOZART: DON GIOVANNI; MUSSORGSKY: BORIS GODUNOV; VERDI: DON CARLO",
+   "oembedStatus": 200,
+   "rgMbid": null,
+   "spotifyChecked": null,
+   "flags": [
+    "album-partial"
+   ]
+  },
+  {
+   "verdict": "review",
+   "reason": "配到 2026 西雅圖現場錄音（非原錄音）",
+   "key": "cover6:chen qigang 陳其鋼|iris dévoilée",
+   "artist": "Chen Qigang 陳其鋼",
+   "album": "Iris dévoilée",
+   "inSeed": true,
+   "spotifyUrl": "https://open.spotify.com/album/0XsJ7kT67bEtW0Ykn2ls6X",
+   "spotifyTitle": "Qigang Chen: Iris dévoilée & L'Éloignement (Live at Benaroya Hall, Seattle, WA, 2/2026)",
+   "oembedStatus": 200,
+   "rgMbid": null,
+   "spotifyChecked": null,
+   "flags": [
+    "wrong-version:live",
+    "album-partial"
+   ]
+  },
+  {
+   "verdict": "wrong",
+   "reason": "配到精選 My Funny Valentine: The Best Of Chet Baker",
+   "key": "cover6:chet baker|chet",
+   "artist": "Chet Baker",
+   "album": "Chet",
+   "inSeed": true,
+   "spotifyUrl": "https://open.spotify.com/album/1N1slntg5Bz5fe9S5S1R3t",
+   "spotifyTitle": "My Funny Valentine: The Best Of Chet Baker",
+   "oembedStatus": 200,
+   "rgMbid": null,
+   "spotifyChecked": null,
+   "flags": [
+    "wrong-version:compilation",
+    "album-partial"
+   ]
+  },
+  {
+   "verdict": "review",
+   "reason": "配到 Four Classic Albums Plus 合集",
+   "key": "cover6:chris connor|sings lullabys of birdland",
+   "artist": "Chris Connor",
+   "album": "Sings Lullabys of Birdland",
+   "inSeed": true,
+   "spotifyUrl": "https://open.spotify.com/album/2scPwWTBlEkYxmQb6DI9aJ",
+   "spotifyTitle": "Four Classic Albums Plus (Sings Lullabys of Birdland / Chris / This Is Chris / Chris Connor) [Remastered]",
+   "oembedStatus": 200,
+   "rgMbid": null,
+   "spotifyChecked": null,
+   "flags": [
+    "album-partial"
+   ]
+  },
+  {
+   "verdict": "wrong",
+   "reason": "配到 Chopin, Schumann & Liszt 合輯",
+   "key": "cover6:claudio arrau|liszt",
+   "artist": "claudio arrau",
+   "album": "liszt",
+   "inSeed": false,
+   "spotifyUrl": "https://open.spotify.com/album/3E7oBLhFLROgQwH8rZ2vbN",
+   "spotifyTitle": "Chopin, Schumann & Liszt",
+   "oembedStatus": 200,
+   "rgMbid": null,
+   "spotifyChecked": null,
+   "flags": [
+    "album-partial"
+   ]
+  },
+  {
+   "verdict": "review",
+   "reason": "配到 Complete Studio Recordings 合集",
+   "key": "cover6:clifford brown & max roach|clifford brown & max roach",
+   "artist": "Clifford Brown & Max Roach",
+   "album": "Clifford Brown & Max Roach",
+   "inSeed": true,
+   "spotifyUrl": "https://open.spotify.com/album/3KJsd3MKPZM64P0SNhbZpE",
+   "spotifyTitle": "Clifford Brown & Max Roach Quintet with Harold Land. Complete Studio Recordings",
+   "oembedStatus": 200,
+   "rgMbid": null,
+   "spotifyChecked": null,
+   "flags": [
+    "album-partial"
+   ]
+  },
+  {
+   "verdict": "wrong",
+   "reason": "配到兒童詩歌單曲",
+   "key": "cover6:company|company 1",
+   "artist": "Company",
+   "album": "Company 1",
+   "inSeed": true,
+   "spotifyUrl": "https://open.spotify.com/album/501UjKdxLrnu6wdQ3W3Khw",
+   "spotifyTitle": "Kids Praise! Company - 10,000 Reasons (Bless The Lord)",
+   "oembedStatus": 200,
+   "rgMbid": null,
+   "spotifyChecked": null,
+   "flags": [
+    "album-partial"
+   ]
+  },
+  {
+   "verdict": "wrong",
+   "reason": "配到單曲 House of Pianos: V. Praise House",
+   "key": "cover6:courtney bryan|house of pianos",
+   "artist": "courtney bryan",
+   "album": "house of pianos",
+   "inSeed": false,
+   "spotifyUrl": "https://open.spotify.com/album/03cFKqUtNBHeBiJxpERcUL",
+   "spotifyTitle": "House of Pianos: V. Praise House",
+   "oembedStatus": 200,
+   "rgMbid": null,
+   "spotifyChecked": null,
+   "flags": [
+    "album-partial"
+   ]
+  },
+  {
+   "verdict": "wrong",
+   "reason": "配到 Darius Lim: Songs of Dreams（錯藝人）",
+   "key": "cover6:darius|darius",
+   "artist": "Darius",
+   "album": "Darius",
+   "inSeed": true,
+   "spotifyUrl": "https://open.spotify.com/album/0r1hON0eRW000r2rZayENn",
+   "spotifyTitle": "Darius Lim: Songs of Dreams",
+   "oembedStatus": 200,
+   "rgMbid": null,
+   "spotifyChecked": null,
+   "flags": [
+    "wrong-version:cover/tribute",
+    "album-partial"
+   ]
+  },
+  {
+   "verdict": "wrong",
+   "reason": "配到 Live At Carnegie Hall",
+   "key": "cover6:dexter gordon|go",
+   "artist": "Dexter Gordon",
+   "album": "Go",
+   "inSeed": true,
+   "spotifyUrl": "https://open.spotify.com/album/2bOFYAtbsRHLmIqLyjta97",
+   "spotifyTitle": "Dexter Gordon-Live At Carnegie Hall",
+   "oembedStatus": 200,
+   "rgMbid": null,
+   "spotifyChecked": null,
+   "flags": [
+    "wrong-version:live",
+    "album-mismatch"
+   ]
+  },
+  {
+   "verdict": "wrong",
+   "reason": "錄音室專輯配到 Black Byrd (Live)",
+   "key": "cover6:donald byrd|black byrd",
+   "artist": "Donald Byrd",
+   "album": "Black Byrd",
+   "inSeed": true,
+   "spotifyUrl": "https://open.spotify.com/album/0tcRH6QgOx1ki56vL1FEXl",
+   "spotifyTitle": "Black Byrd (Live)",
+   "oembedStatus": 200,
+   "rgMbid": null,
+   "spotifyChecked": null,
+   "flags": [
+    "wrong-version:live"
+   ]
+  },
+  {
+   "verdict": "wrong",
+   "reason": "配到單曲（Marry the Man Today）",
+   "key": "cover6:frank loesser|guys and dolls",
+   "artist": "Frank Loesser",
+   "album": "Guys and Dolls",
+   "inSeed": true,
+   "spotifyUrl": "https://open.spotify.com/album/2Xz7lyKV52JJo6TRhLYmoV",
+   "spotifyTitle": "Guys and Dolls: Act 2, Scene 6 No. 30, Marry the Man Today",
+   "oembedStatus": 200,
+   "rgMbid": null,
+   "spotifyChecked": null,
+   "flags": [
+    "album-partial"
+   ]
+  },
+  {
+   "verdict": "wrong",
+   "reason": "配到 Christmas Songs by Sinatra",
+   "key": "cover6:frank sinatra|songs by sinatra",
+   "artist": "Frank Sinatra",
+   "album": "Songs by Sinatra",
+   "inSeed": true,
+   "spotifyUrl": "https://open.spotify.com/album/4XbPmVHP7EYBMoE7ZVjKCU",
+   "spotifyTitle": "Christmas Songs by Sinatra",
+   "oembedStatus": 200,
+   "rgMbid": null,
+   "spotifyChecked": null,
+   "flags": [
+    "album-partial"
+   ]
+  },
+  {
+   "verdict": "wrong",
+   "reason": "配到 Del Water Gap（錯藝人）",
+   "key": "cover6:gap|gap",
+   "artist": "gap",
+   "album": "gap",
+   "inSeed": false,
+   "spotifyUrl": "https://open.spotify.com/album/24dUrUrj2VKixMRGGaSNs3",
+   "spotifyTitle": "Del Water Gap",
+   "oembedStatus": 200,
+   "rgMbid": null,
+   "spotifyChecked": null,
+   "flags": [
+    "album-mismatch"
+   ]
+  },
+  {
+   "verdict": "wrong",
+   "reason": "配到 Garbage Garden（別的作品）",
+   "key": "cover6:garbage|garbage",
+   "artist": "Garbage",
+   "album": "Garbage",
+   "inSeed": true,
+   "spotifyUrl": "https://open.spotify.com/album/0uGTcbovYCaoPGkjXwqsHJ",
+   "spotifyTitle": "Garbage Garden",
+   "oembedStatus": 200,
+   "rgMbid": null,
+   "spotifyChecked": null,
+   "flags": [
+    "album-partial"
+   ]
+  },
+  {
+   "verdict": "review",
+   "reason": "卡片是套裝，配到原單張 Crystal Silence",
+   "key": "cover6:gary burton & chick corea|crystal silence: the ecm recordings 1972–79",
+   "artist": "Gary Burton & Chick Corea",
+   "album": "Crystal Silence: The ECM Recordings 1972–79",
+   "inSeed": true,
+   "spotifyUrl": "https://open.spotify.com/album/1bvhjpp45aO2i1d7kjbsjh",
+   "spotifyTitle": "Crystal Silence",
+   "oembedStatus": 200,
+   "rgMbid": null,
+   "spotifyChecked": null,
+   "flags": [
+    "album-partial"
+   ]
+  },
+  {
+   "verdict": "wrong",
+   "reason": "配到 The Ascension: The Sequel",
+   "key": "cover6:glenn branca|the ascension",
+   "artist": "Glenn Branca",
+   "album": "The Ascension",
+   "inSeed": true,
+   "spotifyUrl": "https://open.spotify.com/album/1xOjcsiHHA8VAsc77TJF4Q",
+   "spotifyTitle": "The Ascension: The Sequel",
+   "oembedStatus": 200,
+   "rgMbid": null,
+   "spotifyChecked": null,
+   "flags": [
+    "album-partial"
+   ]
+  },
+  {
+   "verdict": "wrong",
+   "reason": "配到 Your little flaws that attract me（別的團）",
+   "key": "cover6:gong|you",
+   "artist": "Gong",
+   "album": "You",
+   "inSeed": true,
+   "spotifyUrl": "https://open.spotify.com/album/1Np6CbsdoQPxCcroaJo0nL",
+   "spotifyTitle": "Your little flaws that attract me",
+   "oembedStatus": 200,
+   "rgMbid": null,
+   "spotifyChecked": null,
+   "flags": [
+    "album-mismatch"
+   ]
+  },
+  {
+   "verdict": "wrong",
+   "reason": "配到 Happy Birthday Chantal Goya（錯藝人）",
+   "key": "cover6:grenadine|goya",
+   "artist": "Grenadine",
+   "album": "Goya",
+   "inSeed": true,
+   "spotifyUrl": "https://open.spotify.com/album/4ai3qYZzv7RNF2pnzWa9X0",
+   "spotifyTitle": "Happy Birthday Chantal Goya",
+   "oembedStatus": 200,
+   "rgMbid": null,
+   "spotifyChecked": null,
+   "flags": [
+    "album-partial"
+   ]
+  },
+  {
+   "verdict": "wrong",
+   "reason": "配到 Helen Merrill With Strings",
+   "key": "cover6:helen merrill|helen merrill",
+   "artist": "Helen Merrill",
+   "album": "Helen Merrill",
+   "inSeed": true,
+   "spotifyUrl": "https://open.spotify.com/album/1ZCXk8phZLNQSpOOMhIbWG",
+   "spotifyTitle": "Helen Merrill With Strings",
+   "oembedStatus": 200,
+   "rgMbid": null,
+   "spotifyChecked": null,
+   "flags": [
+    "album-partial"
+   ]
+  },
+  {
+   "verdict": "wrong",
+   "reason": "配到 Cowell 單曲 The Tides of Manaunaun",
+   "key": "cover6:henry cow|legend",
+   "artist": "Henry Cow",
+   "album": "Legend",
+   "inSeed": true,
+   "spotifyUrl": "https://open.spotify.com/album/4pVovR6IP0Fs5J2HYHgsKn",
+   "spotifyTitle": "Cowell: 3 Irish Legends, HC 354: No. 1, The Tides of Manaunaun",
+   "oembedStatus": 200,
+   "rgMbid": null,
+   "spotifyChecked": null,
+   "flags": [
+    "album-partial"
+   ]
+  },
+  {
+   "verdict": "review",
+   "reason": "配到 2、4、8 號",
+   "key": "cover6:hermann scherchen|beethoven: symphonies",
+   "artist": "Hermann Scherchen",
+   "album": "Beethoven: Symphonies",
+   "inSeed": true,
+   "spotifyUrl": "https://open.spotify.com/album/0jsQ5l1Hkn95F7l2eIckDY",
+   "spotifyTitle": "Beethoven: Symphonies No. 2 in D Major, Op. 36; No. 4 in B-Flat Major, Op. 60 & No. 8 in F Major, Op. 93",
+   "oembedStatus": 200,
+   "rgMbid": null,
+   "spotifyChecked": null,
+   "flags": [
+    "album-partial"
+   ]
+  },
+  {
+   "verdict": "wrong",
+   "reason": "配到 Hermanos Zuleta 95",
+   "key": "cover6:hermano|hermano",
+   "artist": "hermano",
+   "album": "hermano",
+   "inSeed": false,
+   "spotifyUrl": "https://open.spotify.com/album/5iahz1tcth5kMSH3XgfjAC",
+   "spotifyTitle": "Hermanos Zuleta 95",
+   "oembedStatus": 200,
+   "rgMbid": null,
+   "spotifyChecked": null,
+   "flags": [
+    "album-partial"
+   ]
+  },
+  {
+   "verdict": "wrong",
+   "reason": "配到另一張 Hermeto (1970)",
+   "key": "cover6:hermeto pascoal|a música livre de hermeto paschoal",
+   "artist": "Hermeto Pascoal",
+   "album": "A Música Livre de Hermeto Paschoal",
+   "inSeed": true,
+   "spotifyUrl": "https://open.spotify.com/album/1a27XMHaGOKql51XRXoR2z",
+   "spotifyTitle": "Hermeto",
+   "oembedStatus": 200,
+   "rgMbid": null,
+   "spotifyChecked": null,
+   "flags": [
+    "album-partial"
+   ]
+  },
+  {
+   "verdict": "wrong",
+   "reason": "配到《向祢》（別的作品）",
+   "key": "cover6:hope of glory|under the spout where the glory comes out",
+   "artist": "Hope of Glory",
+   "album": "Under the Spout Where the Glory Comes Out",
+   "inSeed": true,
+   "spotifyUrl": "https://open.spotify.com/album/7doTH31bgsOtBH0rnVqoHM",
+   "spotifyTitle": "向祢",
+   "oembedStatus": 200,
+   "rgMbid": null,
+   "spotifyChecked": null,
+   "flags": [
+    "album-mismatch"
+   ]
+  },
+  {
+   "verdict": "wrong",
+   "reason": "配到 2026 罐頭爵士合輯",
+   "key": "cover6:interior|interior",
+   "artist": "Interior",
+   "album": "Interior",
+   "inSeed": true,
+   "spotifyUrl": "https://open.spotify.com/album/0SOyBlVHLvXSWhyaz3lhKK",
+   "spotifyTitle": "Contemporary Jazz Interiors - Modern Jazz for Refined Spaces 2026",
+   "oembedStatus": 200,
+   "rgMbid": null,
+   "spotifyChecked": null,
+   "flags": [
+    "album-partial"
+   ]
+  },
+  {
+   "verdict": "review",
+   "reason": "配到現場錄音（非 Decca 名盤）",
+   "key": "cover6:istván kertész|dvořák: symphony no. 9 from the new world",
+   "artist": "István Kertész",
+   "album": "Dvořák: Symphony no. 9 From the New World",
+   "inSeed": true,
+   "spotifyUrl": "https://open.spotify.com/album/4ofJzO503UjmRdtnDdYEuf",
+   "spotifyTitle": "Dvořák: Symphony No. 9 \"From the New World\" (Live)",
+   "oembedStatus": 200,
+   "rgMbid": null,
+   "spotifyChecked": null,
+   "flags": [
+    "wrong-version:live"
+   ]
+  },
+  {
+   "verdict": "wrong",
+   "reason": "配到 Energía Lado B",
+   "key": "cover6:j balvin|energía",
+   "artist": "J Balvin",
+   "album": "Energía",
+   "inSeed": true,
+   "spotifyUrl": "https://open.spotify.com/album/79447qgPdAlZVX0Xx4Fzfv",
+   "spotifyTitle": "Energía Lado B",
+   "oembedStatus": 200,
+   "rgMbid": "486643f7-d95a-4949-af39-ed09cc2ef76c",
+   "spotifyChecked": "repair-2026-10-mb",
+   "flags": [
+    "album-partial"
+   ]
+  },
+  {
+   "verdict": "wrong",
+   "reason": "配到 Best Of",
+   "key": "cover6:jacques dutronc|jacques dutronc",
+   "artist": "Jacques Dutronc",
+   "album": "Jacques Dutronc",
+   "inSeed": true,
+   "spotifyUrl": "https://open.spotify.com/album/2UkpeSy1X7UxMDgfrBKe5x",
+   "spotifyTitle": "Best Of Jacques Dutronc",
+   "oembedStatus": 200,
+   "rgMbid": null,
+   "spotifyChecked": null,
+   "flags": [
+    "wrong-version:compilation",
+    "album-partial"
+   ]
+  },
+  {
+   "verdict": "wrong",
+   "reason": "配到合輯 Cold Sweat & Other Soul Classics",
+   "key": "cover6:james brown|cold sweat",
+   "artist": "James Brown",
+   "album": "Cold Sweat",
+   "inSeed": true,
+   "spotifyUrl": "https://open.spotify.com/album/6CygdzTfDPgHKm8RAuiV7R",
+   "spotifyTitle": "Cold Sweat & Other Soul Classics: James Brown",
+   "oembedStatus": 200,
+   "rgMbid": null,
+   "spotifyChecked": null,
+   "flags": [
+    "album-partial"
+   ]
+  },
+  {
+   "verdict": "wrong",
+   "reason": "配到出道專輯 Janet Jackson",
+   "key": "cover6:janet jackson|janet.",
+   "artist": "Janet Jackson",
+   "album": "janet.",
+   "inSeed": true,
+   "spotifyUrl": "https://open.spotify.com/album/1WQ2ANCxAJNjlVkh69oV0O",
+   "spotifyTitle": "Janet Jackson",
+   "oembedStatus": 200,
+   "rgMbid": "a03d7530-7bd2-35f2-b49e-0f036ea3ecc4",
+   "spotifyChecked": "repair-2026-10-mb",
+   "flags": [
+    "album-partial"
+   ]
+  },
+  {
+   "verdict": "wrong",
+   "reason": "配到 Chronologie, Pt. 3 單曲",
+   "key": "cover6:jean-michel jarre|chronologie",
+   "artist": "Jean-Michel Jarre",
+   "album": "Chronologie",
+   "inSeed": true,
+   "spotifyUrl": "https://open.spotify.com/album/0tKd9US1R3UtlorOv3Bbr3",
+   "spotifyTitle": "Chronologie, Pt. 3",
+   "oembedStatus": 200,
+   "rgMbid": null,
+   "spotifyChecked": null,
+   "flags": [
+    "album-partial"
+   ]
+  },
+  {
+   "verdict": "wrong",
+   "reason": "配到 Metropolis Metropolis（另一張）",
+   "key": "cover6:jeff mills|metropolis",
+   "artist": "Jeff Mills",
+   "album": "Metropolis",
+   "inSeed": true,
+   "spotifyUrl": "https://open.spotify.com/album/42bHiKuuxkdIOe60Kj2U2Z",
+   "spotifyTitle": "Metropolis Metropolis",
+   "oembedStatus": 200,
+   "rgMbid": null,
+   "spotifyChecked": null,
+   "flags": [
+    "album-partial"
+   ]
+  },
+  {
+   "verdict": "wrong",
+   "reason": "配到 Jesus Fashion（別的作品）",
+   "key": "cover6:jesu|jesu",
+   "artist": "Jesu",
+   "album": "Jesu",
+   "inSeed": true,
+   "spotifyUrl": "https://open.spotify.com/album/61b7R662BAETw85pdqFGMH",
+   "spotifyTitle": "Jesus Fashion",
+   "oembedStatus": 200,
+   "rgMbid": null,
+   "spotifyChecked": null,
+   "flags": [
+    "album-partial"
+   ]
+  },
+  {
+   "verdict": "wrong",
+   "reason": "配到 The Master II",
+   "key": "cover6:jimmy smith|the master",
+   "artist": "jimmy smith",
+   "album": "the master",
+   "inSeed": false,
+   "spotifyUrl": "https://open.spotify.com/album/0JinHq7FNzD1m4XJFR5PUg",
+   "spotifyTitle": "ザ・マスターII",
+   "oembedStatus": 200,
+   "rgMbid": null,
+   "spotifyChecked": null,
+   "flags": [
+    "album-mismatch"
+   ]
+  },
+  {
+   "verdict": "wrong",
+   "reason": "配到 Virtuoso #2",
+   "key": "cover6:joe pass|virtuoso",
+   "artist": "Joe Pass",
+   "album": "Virtuoso",
+   "inSeed": true,
+   "spotifyUrl": "https://open.spotify.com/album/4CRSy3LI7Z9mzavJXFVsrW",
+   "spotifyTitle": "Virtuoso #2",
+   "oembedStatus": 200,
+   "rgMbid": null,
+   "spotifyChecked": null,
+   "flags": [
+    "album-partial"
+   ]
+  },
+  {
+   "verdict": "wrong",
+   "reason": "配到 Solomun Remix",
+   "key": "cover6:jon hopkins|emerald rush",
+   "artist": "jon hopkins",
+   "album": "emerald rush",
+   "inSeed": false,
+   "spotifyUrl": "https://open.spotify.com/album/1aNHNh5fDmMtpRWc6j4QXi",
+   "spotifyTitle": "Emerald Rush (Solomun Remix)",
+   "oembedStatus": 200,
+   "rgMbid": null,
+   "spotifyChecked": null,
+   "flags": [
+    "wrong-version:remix"
+   ]
+  },
+  {
+   "verdict": "wrong",
+   "reason": "配到 Live In Houston 1981: The Escape Tour",
+   "key": "cover6:journey|escape",
+   "artist": "Journey",
+   "album": "Escape",
+   "inSeed": true,
+   "spotifyUrl": "https://open.spotify.com/album/0gHmMKZ9s3ztqeMfAzwxRL",
+   "spotifyTitle": "Live In Houston 1981: The Escape Tour (2022 Remaster)",
+   "oembedStatus": 200,
+   "rgMbid": null,
+   "spotifyChecked": null,
+   "flags": [
+    "wrong-version:live",
+    "album-partial"
+   ]
+  },
+  {
+   "verdict": "wrong",
+   "reason": "配到《十鼓》（別的團）",
+   "key": "cover6:ju percussion group|ju percussion group",
+   "artist": "ju percussion group",
+   "album": "ju percussion group",
+   "inSeed": false,
+   "spotifyUrl": "https://open.spotify.com/album/2rpTqzxIjWIVeTdAPmLAay",
+   "spotifyTitle": "十鼓",
+   "oembedStatus": 200,
+   "rgMbid": null,
+   "spotifyChecked": null,
+   "flags": [
+    "album-mismatch"
+   ]
+  },
+  {
+   "verdict": "wrong",
+   "reason": "配到《十鼓》（別的團）",
+   "key": "cover6:ju percussion group|percussion",
+   "artist": "ju percussion group",
+   "album": "percussion",
+   "inSeed": false,
+   "spotifyUrl": "https://open.spotify.com/album/2rpTqzxIjWIVeTdAPmLAay",
+   "spotifyTitle": "十鼓",
+   "oembedStatus": 200,
+   "rgMbid": null,
+   "spotifyChecked": null,
+   "flags": [
+    "album-mismatch"
+   ]
+  },
+  {
+   "verdict": "review",
+   "reason": "配到 Celebrando 25 Años（另一場）",
+   "key": "cover6:juan gabriel|juan gabriel en el palacio de bellas artes",
+   "artist": "Juan Gabriel",
+   "album": "Juan Gabriel en el Palacio de Bellas Artes",
+   "inSeed": true,
+   "spotifyUrl": "https://open.spotify.com/album/3EdXKrmsoiThC0FWi9ctNH",
+   "spotifyTitle": "Celebrando 25 Años De Juan Gabriel En El Palacio De Bellas Artes",
+   "oembedStatus": 200,
+   "rgMbid": null,
+   "spotifyChecked": null,
+   "flags": [
+    "album-partial"
+   ]
+  },
+  {
+   "verdict": "wrong",
+   "reason": "配到 A Cross The Universe（現場盤）",
+   "key": "cover6:justice|cross",
+   "artist": "Justice",
+   "album": "Cross",
+   "inSeed": true,
+   "spotifyUrl": "https://open.spotify.com/album/41solTO3bJJh1OTzBF1GUo",
+   "spotifyTitle": "A Cross The Universe",
+   "oembedStatus": 200,
+   "rgMbid": "2fedcb2d-c224-3a34-b9bc-d8f8e9bea4c4",
+   "spotifyChecked": "repair-2026-10-mb",
+   "flags": [
+    "album-partial"
+   ]
+  },
+  {
+   "verdict": "review",
+   "reason": "卡片是完整版套裝，配到單張 At The Blue Note",
+   "key": "cover6:keith jarrett|at the blue note: the complete recordings",
+   "artist": "Keith Jarrett",
+   "album": "At the Blue Note: The Complete Recordings",
+   "inSeed": true,
+   "spotifyUrl": "https://open.spotify.com/album/6sJLTN1J3PhPQ0OybVsqVz",
+   "spotifyTitle": "At The Blue Note",
+   "oembedStatus": 200,
+   "rgMbid": "c81c22f8-0fbe-3a16-8dcf-7226737bf115",
+   "spotifyChecked": "repair-2026-10-mb",
+   "flags": [
+    "album-partial"
+   ]
+  },
+  {
+   "verdict": "wrong",
+   "reason": "配到 2023 Elemental Mixes 混音版",
+   "key": "cover6:king crimson|larks' tongues in aspic",
+   "artist": "King Crimson",
+   "album": "Larks' Tongues in Aspic",
+   "inSeed": true,
+   "spotifyUrl": "https://open.spotify.com/album/60JkjckSnhNBQFavSUubje",
+   "spotifyTitle": "LARKS' TONGUES IN ASPIC (2023 Elemental Mixes)",
+   "oembedStatus": 200,
+   "rgMbid": null,
+   "spotifyChecked": null,
+   "flags": [
+    "wrong-version:remix"
+   ]
+  },
+  {
+   "verdict": "review",
+   "reason": "配到 Renft Nr. 2",
+   "key": "cover6:klaus renft combo|renft",
+   "artist": "Klaus Renft Combo",
+   "album": "Renft",
+   "inSeed": true,
+   "spotifyUrl": "https://open.spotify.com/album/1XR4F9QMvkYliPg5edfan2",
+   "spotifyTitle": "Renft Nr. 2",
+   "oembedStatus": 200,
+   "rgMbid": "0dac1333-c524-4f5a-b799-f113e2529006",
+   "spotifyChecked": "repair-2026-10-mb",
+   "flags": [
+    "album-partial"
+   ]
+  },
+  {
+   "verdict": "review",
+   "reason": "配到 Angherr Shisspa Revisited",
+   "key": "cover6:koenjihyakkei|angherr shisspa",
+   "artist": "Koenjihyakkei",
+   "album": "Angherr Shisspa",
+   "inSeed": true,
+   "spotifyUrl": "https://open.spotify.com/album/4lrTpk9RBA2Srt40cuWaw8",
+   "spotifyTitle": "Angherr Shisspa Revisited",
+   "oembedStatus": 200,
+   "rgMbid": null,
+   "spotifyChecked": null,
+   "flags": [
+    "wrong-version:reimagined",
+    "album-partial"
+   ]
+  },
+  {
+   "verdict": "wrong",
+   "reason": "配到 Pop Melayu Volume 4",
+   "key": "cover6:koes plus|volume 4",
+   "artist": "koes plus",
+   "album": "volume 4",
+   "inSeed": false,
+   "spotifyUrl": "https://open.spotify.com/album/0CZAKUor9cBRFNwyDV8DqP",
+   "spotifyTitle": "Pop Melayu Volume 4",
+   "oembedStatus": 200,
+   "rgMbid": null,
+   "spotifyChecked": null,
+   "flags": [
+    "album-partial"
+   ]
+  },
+  {
+   "verdict": "wrong",
+   "reason": "配到 Jaxx Madicine Remix 單曲",
+   "key": "cover6:kyoto jazz sextet|mission",
+   "artist": "Kyoto Jazz Sextet",
+   "album": "Mission",
+   "inSeed": true,
+   "spotifyUrl": "https://open.spotify.com/album/3JQJoLfYWEJnyiyh1yauLd",
+   "spotifyTitle": "Mission (Jaxx Madicine Remix)",
+   "oembedStatus": 200,
+   "rgMbid": null,
+   "spotifyChecked": null,
+   "flags": [
+    "wrong-version:remix"
+   ]
+  },
+  {
+   "verdict": "review",
+   "reason": "配到 30 週年重錄 Shaka Zulu Revisited",
+   "key": "cover6:ladysmith black mambazo|shaka zulu",
+   "artist": "Ladysmith Black Mambazo",
+   "album": "Shaka Zulu",
+   "inSeed": true,
+   "spotifyUrl": "https://open.spotify.com/album/5GoqzAwIz3px7nSHXDOb3X",
+   "spotifyTitle": "Shaka Zulu Revisited: 30th Anniversary Celebration",
+   "oembedStatus": 200,
+   "rgMbid": "a7db6b13-54c1-4628-9182-60d97d4e101c",
+   "spotifyChecked": "repair-2026-10-mb",
+   "flags": [
+    "wrong-version:reimagined",
+    "album-partial"
+   ]
+  },
+  {
+   "verdict": "review",
+   "reason": "配到 1953 Modern Sounds",
+   "key": "cover6:lars gullin|modern sounds",
+   "artist": "lars gullin",
+   "album": "modern sounds",
+   "inSeed": false,
+   "spotifyUrl": "https://open.spotify.com/album/6Lzp1SGKSIhN1vpmtsHaHX",
+   "spotifyTitle": "1953 Modern Sounds",
+   "oembedStatus": 200,
+   "rgMbid": null,
+   "spotifyChecked": null,
+   "flags": [
+    "album-partial"
+   ]
+  },
+  {
+   "verdict": "wrong",
+   "reason": "配到 Led Zeppelin III",
+   "key": "cover6:led zeppelin|led zeppelin ii",
+   "artist": "Led Zeppelin",
+   "album": "Led Zeppelin II",
+   "inSeed": true,
+   "spotifyUrl": "https://open.spotify.com/album/6P5QHz4XtxOmS5EuiGIPut",
+   "spotifyTitle": "Led Zeppelin III (Remaster)",
+   "oembedStatus": 200,
+   "rgMbid": null,
+   "spotifyChecked": null,
+   "flags": [
+    "album-partial"
+   ]
+  },
+  {
+   "verdict": "wrong",
+   "reason": "配到多部歌劇合輯",
+   "key": "cover6:leontyne price|verdi: aida",
+   "artist": "Leontyne Price",
+   "album": "Verdi: Aida",
+   "inSeed": true,
+   "spotifyUrl": "https://open.spotify.com/album/09SunoEBDyy2IRZZcrnvZs",
+   "spotifyTitle": "Verdi Aida & Il Trovatore and Puccini Madama Butterfly, La Rondine, Tosca and Turandot",
+   "oembedStatus": 200,
+   "rgMbid": null,
+   "spotifyChecked": null,
+   "flags": [
+    "album-partial"
+   ]
+  },
+  {
+   "verdict": "wrong",
+   "reason": "配到單曲 I Could Have Danced All Night",
+   "key": "cover6:lerner & loewe|my fair lady",
+   "artist": "Lerner & Loewe",
+   "album": "My Fair Lady",
+   "inSeed": true,
+   "spotifyUrl": "https://open.spotify.com/album/2nuCcFb1MFwm3RYwTEZXOm",
+   "spotifyTitle": "I Could Have Danced All Night (From \"My Fair Lady\")",
+   "oembedStatus": 200,
+   "rgMbid": null,
+   "spotifyChecked": null,
+   "flags": [
+    "album-partial"
+   ]
+  },
+  {
+   "verdict": "wrong",
+   "reason": "配到 Bamako Nights: Live at Bar Bozo 1995",
+   "key": "cover6:lobi traoré|bamako",
+   "artist": "lobi traoré",
+   "album": "bamako",
+   "inSeed": false,
+   "spotifyUrl": "https://open.spotify.com/album/0zlnrTfbR4ejt1A41oqDHs",
+   "spotifyTitle": "Bamako Nights: Live at Bar Bozo 1995",
+   "oembedStatus": 200,
+   "rgMbid": null,
+   "spotifyChecked": null,
+   "flags": [
+    "wrong-version:live",
+    "album-partial"
+   ]
+  },
+  {
+   "verdict": "wrong",
+   "reason": "配到 Special Selection 單曲",
+   "key": "cover6:london symphony orchestra robert kajanus|sibelius",
+   "artist": "london symphony orchestra robert kajanus",
+   "album": "sibelius",
+   "inSeed": false,
+   "spotifyUrl": "https://open.spotify.com/album/3swd2NpWC1WoJ6fz3jnuPh",
+   "spotifyTitle": "Special Selection / Jean Sibelius: Symphony No. 1 in E Major, Op. 39",
+   "oembedStatus": 200,
+   "rgMbid": null,
+   "spotifyChecked": null,
+   "flags": [
+    "album-partial"
+   ]
+  },
+  {
+   "verdict": "wrong",
+   "reason": "配到 Ed Sullivan Show 現場",
+   "key": "cover6:loretta lynn|coal miner's daughter",
+   "artist": "Loretta Lynn",
+   "album": "Coal Miner's Daughter",
+   "inSeed": true,
+   "spotifyUrl": "https://open.spotify.com/album/11XBy309urGhiJu30pn8GU",
+   "spotifyTitle": "Coal Miner's Daughter (Live On The Ed Sullivan Show, May 30, 1971)",
+   "oembedStatus": 200,
+   "rgMbid": null,
+   "spotifyChecked": null,
+   "flags": [
+    "wrong-version:live"
+   ]
+  },
+  {
+   "verdict": "wrong",
+   "reason": "配到 1973 現場盤 Presentación ARTAUD (En Vivo)",
+   "key": "cover6:luis alberto spinetta|artaud",
+   "artist": "Luis Alberto Spinetta",
+   "album": "Artaud",
+   "inSeed": true,
+   "spotifyUrl": "https://open.spotify.com/album/5CbY6UpjMyIllLdB9VPxv4",
+   "spotifyTitle": "Presentación ARTAUD - 1973 - Teatro Astral (En Vivo)",
+   "oembedStatus": 200,
+   "rgMbid": null,
+   "spotifyChecked": null,
+   "flags": [
+    "wrong-version:live",
+    "album-partial"
+   ]
+  },
+  {
+   "verdict": "review",
+   "reason": "配到 What’s Going On: Then, Now, Always",
+   "key": "cover6:marvin gaye|what's going on",
+   "artist": "Marvin Gaye",
+   "album": "What's Going On",
+   "inSeed": true,
+   "spotifyUrl": "https://open.spotify.com/album/5Wrf1VUIYJXvuE3pvIOAYA",
+   "spotifyTitle": "What’s Going On: Then, Now, Always",
+   "oembedStatus": 200,
+   "rgMbid": null,
+   "spotifyChecked": null,
+   "flags": [
+    "album-partial"
+   ]
+  },
+  {
+   "verdict": "wrong",
+   "reason": "配到 Cheer",
+   "key": "cover6:mary see the future|cheers",
+   "artist": "mary see the future",
+   "album": "cheers",
+   "inSeed": false,
+   "spotifyUrl": "https://open.spotify.com/album/7gWkPqbB4UqN89sO7dcxw7",
+   "spotifyTitle": "Cheer",
+   "oembedStatus": 200,
+   "rgMbid": null,
+   "spotifyChecked": null,
+   "flags": [
+    "album-partial"
+   ]
+  },
+  {
+   "verdict": "wrong",
+   "reason": "配到 2009-2012 Best Singles Collection",
+   "key": "cover6:mc hotdog 熱狗|貧民百萬歌星",
+   "artist": "MC HotDog 熱狗",
+   "album": "貧民百萬歌星",
+   "inSeed": true,
+   "spotifyUrl": "https://open.spotify.com/album/6rqodxjuEAmDIwe8iWsxPj",
+   "spotifyTitle": "貧民百萬歌星 2009-2012 Best Singles Collection",
+   "oembedStatus": 200,
+   "rgMbid": null,
+   "spotifyChecked": null,
+   "flags": [
+    "wrong-version:compilation",
+    "album-partial"
+   ]
+  },
+  {
+   "verdict": "review",
+   "reason": "配到 Ecobag 套裝",
+   "key": "cover6:merzbow|13 japanese birds",
+   "artist": "merzbow",
+   "album": "13 japanese birds",
+   "inSeed": false,
+   "spotifyUrl": "https://open.spotify.com/album/7KKHO6ygylCz8G6EnkTcbH",
+   "spotifyTitle": "Ecobag: 13 Japanese Birds In A Bag",
+   "oembedStatus": 200,
+   "rgMbid": null,
+   "spotifyChecked": null,
+   "flags": [
+    "album-partial"
+   ]
+  },
+  {
+   "verdict": "review",
+   "reason": "配到《言ノ葉》（可能只是日文／中文原題，待確認）",
+   "key": "cover6:midori takada|through the looking glass",
+   "artist": "midori takada",
+   "album": "through the looking glass",
+   "inSeed": false,
+   "spotifyUrl": "https://open.spotify.com/album/0fBfQqaMCXmFe2rgHPi24t",
+   "spotifyTitle": "言ノ葉",
+   "oembedStatus": 200,
+   "rgMbid": null,
+   "spotifyChecked": null,
+   "flags": [
+    "album-mismatch"
+   ]
+  },
+  {
+   "verdict": "wrong",
+   "reason": "配到致敬現場盤 After Abbey Road",
+   "key": "cover6:mike westbrook|live",
+   "artist": "Mike Westbrook",
+   "album": "Live",
+   "inSeed": true,
+   "spotifyUrl": "https://open.spotify.com/album/2xgUZovSv7rmSvPtpeKIaH",
+   "spotifyTitle": "After Abbey Road: Celebrating the 50th Anniversary of The Beatles' Classic (Live)",
+   "oembedStatus": 200,
+   "rgMbid": null,
+   "spotifyChecked": null,
+   "flags": [
+    "album-partial"
+   ]
+  },
+  {
+   "verdict": "wrong",
+   "reason": "配到《OGS》",
+   "key": "cover6:mj116|big thing",
+   "artist": "mj116",
+   "album": "big thing",
+   "inSeed": false,
+   "spotifyUrl": "https://open.spotify.com/album/7D9rOL7WY5ZIJVpVAkhvs5",
+   "spotifyTitle": "OGS",
+   "oembedStatus": 200,
+   "rgMbid": null,
+   "spotifyChecked": null,
+   "flags": [
+    "album-mismatch"
+   ]
+  },
+  {
+   "verdict": "wrong",
+   "reason": "配到精選 Crosstalk",
+   "key": "cover6:moby grape|moby grape",
+   "artist": "Moby Grape",
+   "album": "Moby Grape",
+   "inSeed": true,
+   "spotifyUrl": "https://open.spotify.com/album/0WD8ECEOHIn0iQ2ejzAsBh",
+   "spotifyTitle": "Crosstalk: The Best Of Moby Grape",
+   "oembedStatus": 200,
+   "rgMbid": null,
+   "spotifyChecked": null,
+   "flags": [
+    "wrong-version:compilation",
+    "album-partial"
+   ]
+  },
+  {
+   "verdict": "wrong",
+   "reason": "配到 The Ghost of Mr Fox",
+   "key": "cover6:mr. fox|mr. fox",
+   "artist": "mr. fox",
+   "album": "mr. fox",
+   "inSeed": false,
+   "spotifyUrl": "https://open.spotify.com/album/0tKqm9mAxjRNkMcM3WTH4V",
+   "spotifyTitle": "The Ghost of Mr Fox",
+   "oembedStatus": 200,
+   "rgMbid": null,
+   "spotifyChecked": null,
+   "flags": [
+    "album-partial"
+   ]
+  },
+  {
+   "verdict": "review",
+   "reason": "配到 Vol. 4",
+   "key": "cover6:muzio clementi|gradus ad parnassum",
+   "artist": "Muzio Clementi",
+   "album": "Gradus ad Parnassum",
+   "inSeed": true,
+   "spotifyUrl": "https://open.spotify.com/album/661dwBTTDopgFBbBrPrBcE",
+   "spotifyTitle": "Clementi: Gradus ad Parnassum, Vol. 4 (Nos. 66-100)",
+   "oembedStatus": 200,
+   "rgMbid": null,
+   "spotifyChecked": null,
+   "flags": [
+    "album-partial"
+   ]
+  },
+  {
+   "verdict": "review",
+   "reason": "配到《足跡》（可能只是日文／中文原題，待確認）",
+   "key": "cover6:nan-chang chien|chien nan-chang",
+   "artist": "nan-chang chien",
+   "album": "chien nan-chang",
+   "inSeed": false,
+   "spotifyUrl": "https://open.spotify.com/album/0TEP9qbASB8SdZ7j7sTSDW",
+   "spotifyTitle": "足跡",
+   "oembedStatus": 200,
+   "rgMbid": null,
+   "spotifyChecked": null,
+   "flags": [
+    "album-mismatch"
+   ]
+  },
+  {
+   "verdict": "wrong",
+   "reason": "配到 Hot August Night III",
+   "key": "cover6:neil diamond|hot august night",
+   "artist": "Neil Diamond",
+   "album": "Hot August Night",
+   "inSeed": true,
+   "spotifyUrl": "https://open.spotify.com/album/1IhDxOBmaLQQEu6zvdHLz8",
+   "spotifyTitle": "Hot August Night III",
+   "oembedStatus": 200,
+   "rgMbid": null,
+   "spotifyChecked": null,
+   "flags": [
+    "album-partial"
+   ]
+  },
+  {
+   "verdict": "wrong",
+   "reason": "配到 1913 年單樂章錄音",
+   "key": "cover6:nikisch|beethoven symphony no. 5",
+   "artist": "nikisch",
+   "album": "beethoven symphony no. 5",
+   "inSeed": false,
+   "spotifyUrl": "https://open.spotify.com/album/47ATvGSr2XsytAjznZojx6",
+   "spotifyTitle": "Beethoven: Symphony No.5 In C Minor, Op.67 - 1. Allegro con brio (Recorded 1913)",
+   "oembedStatus": 200,
+   "rgMbid": null,
+   "spotifyChecked": null,
+   "flags": [
+    "album-partial"
+   ]
+  },
+  {
+   "verdict": "wrong",
+   "reason": "配到 The Godfather Part II",
+   "key": "cover6:nino rota|the godfather",
+   "artist": "Nino Rota",
+   "album": "The Godfather",
+   "inSeed": true,
+   "spotifyUrl": "https://open.spotify.com/album/7gCLy5T7jb4289uHSbP3Js",
+   "spotifyTitle": "The Godfather Part II (Original Soundtrack Recording)",
+   "oembedStatus": 200,
+   "rgMbid": null,
+   "spotifyChecked": null,
+   "flags": [
+    "album-partial"
+   ]
+  },
+  {
+   "verdict": "wrong",
+   "reason": "配到《浴室 (2019 Reprise)》",
+   "key": "cover6:nurse with wound|homotopy to marie curie",
+   "artist": "nurse with wound",
+   "album": "homotopy to marie curie",
+   "inSeed": false,
+   "spotifyUrl": "https://open.spotify.com/album/0iZc8PYagG8Yw42WQfHued",
+   "spotifyTitle": "浴室 (2019 Reprise)",
+   "oembedStatus": 200,
+   "rgMbid": null,
+   "spotifyChecked": null,
+   "flags": [
+    "album-mismatch"
+   ]
+  },
+  {
+   "verdict": "review",
+   "reason": "配到 The Complete Science Fiction Sessions",
+   "key": "cover6:ornette coleman|science fiction",
+   "artist": "Ornette Coleman",
+   "album": "Science Fiction",
+   "inSeed": true,
+   "spotifyUrl": "https://open.spotify.com/album/1WEi45sOKRTSC1UkQWN74b",
+   "spotifyTitle": "The Complete Science Fiction Sessions",
+   "oembedStatus": 200,
+   "rgMbid": null,
+   "spotifyChecked": null,
+   "flags": [
+    "wrong-version:sessions",
+    "album-partial"
+   ]
+  },
+  {
+   "verdict": "wrong",
+   "reason": "配到 Selected Hits",
+   "key": "cover6:osibisa|osibisa",
+   "artist": "Osibisa",
+   "album": "Osibisa",
+   "inSeed": true,
+   "spotifyUrl": "https://open.spotify.com/album/1AGUs8NVy0PyBmAiSps1Zg",
+   "spotifyTitle": "Osibisa Selected Hits",
+   "oembedStatus": 200,
+   "rgMbid": null,
+   "spotifyChecked": null,
+   "flags": [
+    "wrong-version:compilation",
+    "album-partial"
+   ]
+  },
+  {
+   "verdict": "wrong",
+   "reason": "配到 1992 現場版",
+   "key": "cover6:pavement|summer babe",
+   "artist": "Pavement",
+   "album": "Summer Babe",
+   "inSeed": true,
+   "spotifyUrl": "https://open.spotify.com/album/1Kc8ZQtJV9ssTNTqmdesvz",
+   "spotifyTitle": "Summer Babe (Live May 19, 1992)",
+   "oembedStatus": 200,
+   "rgMbid": null,
+   "spotifyChecked": null,
+   "flags": [
+    "wrong-version:live"
+   ]
+  },
+  {
+   "verdict": "review",
+   "reason": "配到 Panorama de musique concrète",
+   "key": "cover6:pierre schaeffer|musique concrète",
+   "artist": "Pierre Schaeffer",
+   "album": "Musique concrète",
+   "inSeed": true,
+   "spotifyUrl": "https://open.spotify.com/album/7eZubnBWmJOcjyHixMZJdr",
+   "spotifyTitle": "Panorama de musique concrète (Mono Version)",
+   "oembedStatus": 200,
+   "rgMbid": null,
+   "spotifyChecked": null,
+   "flags": [
+    "album-partial"
+   ]
+  },
+  {
+   "verdict": "review",
+   "reason": "配到 Pharrell vs. Ye 版",
+   "key": "cover6:pusha t|it's almost dry",
+   "artist": "Pusha T",
+   "album": "It's Almost Dry",
+   "inSeed": true,
+   "spotifyUrl": "https://open.spotify.com/album/74xlON1sCCChynzbgLlc7Q",
+   "spotifyTitle": "It's Almost Dry: Pharrell vs. Ye",
+   "oembedStatus": 200,
+   "rgMbid": "6f9df0f8-8d8d-41b4-a623-8fbbd30d7e64",
+   "spotifyChecked": "repair-2026-10-mb",
+   "flags": [
+    "album-partial"
+   ]
+  },
+  {
+   "verdict": "wrong",
+   "reason": "配到 Pygmalion Beat Generation Vol.1",
+   "key": "cover6:pygmalion|pygmalion",
+   "artist": "pygmalion",
+   "album": "pygmalion",
+   "inSeed": false,
+   "spotifyUrl": "https://open.spotify.com/album/7e1nOBTiHYYG6flnqUjyGQ",
+   "spotifyTitle": "Pygmalion Beat Generation Vol.1",
+   "oembedStatus": 200,
+   "rgMbid": null,
+   "spotifyChecked": null,
+   "flags": [
+    "album-partial"
+   ]
+  },
+  {
+   "verdict": "wrong",
+   "reason": "配到 Ricky Sings Again",
+   "key": "cover6:ricky nelson|ricky",
+   "artist": "Ricky Nelson",
+   "album": "Ricky",
+   "inSeed": true,
+   "spotifyUrl": "https://open.spotify.com/album/30csxUzrzcgwuOT5QVmFmg",
+   "spotifyTitle": "Ricky Sings Again (Expanded Edition / Remastered)",
+   "oembedStatus": 200,
+   "rgMbid": null,
+   "spotifyChecked": null,
+   "flags": [
+    "album-partial"
+   ]
+  },
+  {
+   "verdict": "wrong",
+   "reason": "配到 Black Radio III",
+   "key": "cover6:robert glasper|black radio",
+   "artist": "Robert Glasper",
+   "album": "Black Radio",
+   "inSeed": true,
+   "spotifyUrl": "https://open.spotify.com/album/0koSNz785od22spE0DlKO7",
+   "spotifyTitle": "Black Radio III (Supreme Edition)",
+   "oembedStatus": 200,
+   "rgMbid": "63051304-797a-4620-a047-9d7144bf44fa",
+   "spotifyChecked": "repair-2026-10-mb",
+   "flags": [
+    "album-partial"
+   ]
+  },
+  {
+   "verdict": "wrong",
+   "reason": "配到 Just Between Friends",
+   "key": "cover6:ron carter|friends",
+   "artist": "ron carter",
+   "album": "friends",
+   "inSeed": false,
+   "spotifyUrl": "https://open.spotify.com/album/1uJcuNJdLgN3gmIH4brp84",
+   "spotifyTitle": "Just Between Friends",
+   "oembedStatus": 200,
+   "rgMbid": null,
+   "spotifyChecked": null,
+   "flags": [
+    "album-partial"
+   ]
+  },
+  {
+   "verdict": "review",
+   "reason": "配到 Seferberlik Türküleri...",
+   "key": "cover6:ruhi su|yunus emre",
+   "artist": "Ruhi Su",
+   "album": "Yunus Emre",
+   "inSeed": true,
+   "spotifyUrl": "https://open.spotify.com/album/4Rsxwf1E66JkRY4sb93AQ6",
+   "spotifyTitle": "Seferberlik Türküleri Ve Kuvayi Milliye Destanı - Yunus Emre",
+   "oembedStatus": 200,
+   "rgMbid": null,
+   "spotifyChecked": null,
+   "flags": [
+    "album-partial"
+   ]
+  },
+  {
+   "verdict": "wrong",
+   "reason": "配到《+ / -》",
+   "key": "cover6:ryoji ikeda|spectra",
+   "artist": "ryoji ikeda",
+   "album": "spectra",
+   "inSeed": false,
+   "spotifyUrl": "https://open.spotify.com/album/0ZyLCAUwSbnXMGwDNuj8CE",
+   "spotifyTitle": "+ / -",
+   "oembedStatus": 200,
+   "rgMbid": null,
+   "spotifyChecked": null,
+   "flags": [
+    "album-mismatch"
+   ]
+  },
+  {
+   "verdict": "wrong",
+   "reason": "配到《+ / -》",
+   "key": "cover6:ryoji ikeda|superposition",
+   "artist": "ryoji ikeda",
+   "album": "superposition",
+   "inSeed": false,
+   "spotifyUrl": "https://open.spotify.com/album/0ZyLCAUwSbnXMGwDNuj8CE",
+   "spotifyTitle": "+ / -",
+   "oembedStatus": 200,
+   "rgMbid": null,
+   "spotifyChecked": null,
+   "flags": [
+    "album-mismatch"
+   ]
+  },
+  {
+   "verdict": "wrong",
+   "reason": "配到精選《ザ・ベスト》",
+   "key": "cover6:sadistics|sadistics",
+   "artist": "Sadistics",
+   "album": "Sadistics",
+   "inSeed": true,
+   "spotifyUrl": "https://open.spotify.com/album/6A34idMpfb5WqzegCtRBWB",
+   "spotifyTitle": "ザ・ベスト",
+   "oembedStatus": 200,
+   "rgMbid": null,
+   "spotifyChecked": null,
+   "flags": [
+    "wrong-version:compilation",
+    "album-mismatch"
+   ]
+  },
+  {
+   "verdict": "wrong",
+   "reason": "配到 Santana's Greatest Hits",
+   "key": "cover6:santana|santana",
+   "artist": "Santana",
+   "album": "Santana",
+   "inSeed": true,
+   "spotifyUrl": "https://open.spotify.com/album/1YrdGK2y2Edq2R5gFja2ai",
+   "spotifyTitle": "Santana's Greatest Hits",
+   "oembedStatus": 200,
+   "rgMbid": null,
+   "spotifyChecked": null,
+   "flags": [
+    "wrong-version:compilation",
+    "album-partial"
+   ]
+  },
+  {
+   "verdict": "review",
+   "reason": "配到 Trouble: The Best Of The Excello Masters",
+   "key": "cover6:silas hogan|trouble",
+   "artist": "Silas Hogan",
+   "album": "Trouble",
+   "inSeed": true,
+   "spotifyUrl": "https://open.spotify.com/album/6RTO34EmCpIFGnvDtjzWCu",
+   "spotifyTitle": "Trouble: The Best Of The Excello Masters",
+   "oembedStatus": 200,
+   "rgMbid": null,
+   "spotifyChecked": null,
+   "flags": [
+    "wrong-version:compilation",
+    "album-partial"
+   ]
+  },
+  {
+   "verdict": "wrong",
+   "reason": "配到 2022 Remix",
+   "key": "cover6:spandau ballet|true",
+   "artist": "Spandau Ballet",
+   "album": "True",
+   "inSeed": true,
+   "spotifyUrl": "https://open.spotify.com/album/29PcBIJpIXGkmWKUBMDg0s",
+   "spotifyTitle": "True (2022 Remix)",
+   "oembedStatus": 200,
+   "rgMbid": null,
+   "spotifyChecked": null,
+   "flags": [
+    "wrong-version:remix"
+   ]
+  },
+  {
+   "verdict": "wrong",
+   "reason": "配到 The Return of Captain Adventure",
+   "key": "cover6:stan tracey quartet|captain adventure",
+   "artist": "Stan Tracey Quartet",
+   "album": "Captain Adventure",
+   "inSeed": true,
+   "spotifyUrl": "https://open.spotify.com/album/4aqZAz9CAprzPfi88WObzp",
+   "spotifyTitle": "The Return of Captain Adventure",
+   "oembedStatus": 200,
+   "rgMbid": null,
+   "spotifyChecked": null,
+   "flags": [
+    "album-partial"
+   ]
+  },
+  {
+   "verdict": "wrong",
+   "reason": "配到 25th Anniversary EP",
+   "key": "cover6:sugar ray|14:59",
+   "artist": "Sugar Ray",
+   "album": "14:59",
+   "inSeed": true,
+   "spotifyUrl": "https://open.spotify.com/album/25zfRx0ujSg2B1PN7yzYfL",
+   "spotifyTitle": "14:59 25th Anniversary EP",
+   "oembedStatus": 200,
+   "rgMbid": null,
+   "spotifyChecked": null,
+   "flags": [
+    "album-partial"
+   ]
+  },
+  {
+   "verdict": "wrong",
+   "reason": "配到 SUNBURST CLUB",
+   "key": "cover6:sunburst|sunburst",
+   "artist": "Sunburst",
+   "album": "Sunburst",
+   "inSeed": true,
+   "spotifyUrl": "https://open.spotify.com/album/5aiLXHnDvNmGYEZiXTAXkm",
+   "spotifyTitle": "SUNBURST CLUB",
+   "oembedStatus": 200,
+   "rgMbid": null,
+   "spotifyChecked": null,
+   "flags": [
+    "album-partial"
+   ]
+  },
+  {
+   "verdict": "review",
+   "reason": "配到 Fever's End Pt. 2 EP",
+   "key": "cover6:tablo|열꽃",
+   "artist": "Tablo",
+   "album": "열꽃",
+   "inSeed": true,
+   "spotifyUrl": "https://open.spotify.com/album/6bcvEP3490ouA7PW2DD168",
+   "spotifyTitle": "Fever's End (열꽃) Pt. 2 - EP",
+   "oembedStatus": 200,
+   "rgMbid": null,
+   "spotifyChecked": null,
+   "flags": [
+    "wrong-version:single/EP",
+    "album-partial"
+   ]
+  },
+  {
+   "verdict": "wrong",
+   "reason": "配到 Taylor's Version 重錄版",
+   "key": "cover6:taylor swift|fearless",
+   "artist": "Taylor Swift",
+   "album": "Fearless",
+   "inSeed": true,
+   "spotifyUrl": "https://open.spotify.com/album/4hDok0OAJd57SGIT8xuWJH",
+   "spotifyTitle": "Fearless (Taylor's Version)",
+   "oembedStatus": 200,
+   "rgMbid": null,
+   "spotifyChecked": null,
+   "flags": [
+    "wrong-version:reimagined"
+   ]
+  },
+  {
+   "verdict": "review",
+   "reason": "配到 Declaration 1984-1985",
+   "key": "cover6:the alarm|declaration",
+   "artist": "The Alarm",
+   "album": "Declaration",
+   "inSeed": true,
+   "spotifyUrl": "https://open.spotify.com/album/5VYWeuiYGMeughiGXDzz1n",
+   "spotifyTitle": "Declaration 1984-1985",
+   "oembedStatus": 200,
+   "rgMbid": null,
+   "spotifyChecked": null,
+   "flags": [
+    "album-partial"
+   ]
+  },
+  {
+   "verdict": "wrong",
+   "reason": "配到 As The Music Plays the Band（別的團）",
+   "key": "cover6:the band|the band",
+   "artist": "The Band",
+   "album": "The Band",
+   "inSeed": true,
+   "spotifyUrl": "https://open.spotify.com/album/79tRafEG4pTTbZHNpGlKUI",
+   "spotifyTitle": "As The Music Plays the Band",
+   "oembedStatus": 200,
+   "rgMbid": null,
+   "spotifyChecked": null,
+   "flags": [
+    "wrong-version:cover/tribute",
+    "album-partial"
+   ]
+  },
+  {
+   "verdict": "wrong",
+   "reason": "配到草東沒有派對《醜奴兒》（錯藝人）",
+   "key": "cover6:the birthday party|junkyard",
+   "artist": "The Birthday Party",
+   "album": "Junkyard",
+   "inSeed": true,
+   "spotifyUrl": "https://open.spotify.com/album/2Qfn3LNC6qhxgpyPjBQFJh",
+   "spotifyTitle": "醜奴兒",
+   "oembedStatus": 200,
+   "rgMbid": null,
+   "spotifyChecked": null,
+   "flags": [
+    "album-mismatch"
+   ]
+  },
+  {
+   "verdict": "wrong",
+   "reason": "配到 Beyond The Last Star",
+   "key": "cover6:the la's|the la's",
+   "artist": "The La's",
+   "album": "The La's",
+   "inSeed": true,
+   "spotifyUrl": "https://open.spotify.com/album/6HB8IHuSbf5k1ufN8LRAv4",
+   "spotifyTitle": "Beyond The Last Star",
+   "oembedStatus": 200,
+   "rgMbid": null,
+   "spotifyChecked": null,
+   "flags": [
+    "album-mismatch"
+   ]
+  },
+  {
+   "verdict": "wrong",
+   "reason": "配到 More Music for the Jilted Generation",
+   "key": "cover6:the prodigy|music for the jilted generation",
+   "artist": "The Prodigy",
+   "album": "Music for the Jilted Generation",
+   "inSeed": true,
+   "spotifyUrl": "https://open.spotify.com/album/02Lkjh6NyUJCey2brMNQcg",
+   "spotifyTitle": "More Music for the Jilted Generation",
+   "oembedStatus": 200,
+   "rgMbid": "f9fa083f-db00-3048-99e7-5b186672bb09",
+   "spotifyChecked": "repair-2026-10-mb",
+   "flags": [
+    "album-partial"
+   ]
+  },
+  {
+   "verdict": "review",
+   "reason": "配到 Swing Low Sweet Chariot",
+   "key": "cover6:the staple singers|swing low",
+   "artist": "The Staple Singers",
+   "album": "Swing Low",
+   "inSeed": true,
+   "spotifyUrl": "https://open.spotify.com/album/2vGEwqjJYyz9RXeTLCKOf1",
+   "spotifyTitle": "Swing Low Sweet Chariot",
+   "oembedStatus": 200,
+   "rgMbid": null,
+   "spotifyChecked": null,
+   "flags": [
+    "album-partial"
+   ]
+  },
+  {
+   "verdict": "wrong",
+   "reason": "配到 The Temptations Do The Temptations",
+   "key": "cover6:the temptations|the temptations",
+   "artist": "The Temptations",
+   "album": "The Temptations",
+   "inSeed": true,
+   "spotifyUrl": "https://open.spotify.com/album/1DFCWW9IEvfdk1uTAHGzPS",
+   "spotifyTitle": "The Temptations Do The Temptations",
+   "oembedStatus": 200,
+   "rgMbid": "8937b40e-f4dc-4281-af3a-d4dd6b191bbb",
+   "spotifyChecked": "repair-2026-10-mb",
+   "flags": [
+    "album-partial"
+   ]
+  },
+  {
+   "verdict": "wrong",
+   "reason": "配到 When The Smile Dissapears",
+   "key": "cover6:the trinity|smile",
+   "artist": "the trinity",
+   "album": "smile",
+   "inSeed": false,
+   "spotifyUrl": "https://open.spotify.com/album/6vwAxdwYEq3355gYEpCzGS",
+   "spotifyTitle": "When The Smile Dissapears",
+   "oembedStatus": 200,
+   "rgMbid": null,
+   "spotifyChecked": null,
+   "flags": [
+    "album-partial"
+   ]
+  },
+  {
+   "verdict": "wrong",
+   "reason": "第三張同名專輯配到 The Velvet Underground & Nico",
+   "key": "cover6:the velvet underground|the velvet underground",
+   "artist": "The Velvet Underground",
+   "album": "The Velvet Underground",
+   "inSeed": true,
+   "spotifyUrl": "https://open.spotify.com/album/4xwx0x7k6c5VuThz5qVqmV",
+   "spotifyTitle": "The Velvet Underground & Nico 45th Anniversary",
+   "oembedStatus": 200,
+   "rgMbid": null,
+   "spotifyChecked": null,
+   "flags": [
+    "album-partial"
+   ]
+  },
+  {
+   "verdict": "wrong",
+   "reason": "配到 Fisherman's Box 完整錄音套裝",
+   "key": "cover6:the waterboys|fisherman's blues",
+   "artist": "The Waterboys",
+   "album": "Fisherman's Blues",
+   "inSeed": true,
+   "spotifyUrl": "https://open.spotify.com/album/5jpvpAKlWgOxbsBYGwLRZl",
+   "spotifyTitle": "Fisherman's Box: The Complete Fisherman's Blues Sessions (1986-1988)",
+   "oembedStatus": 200,
+   "rgMbid": null,
+   "spotifyChecked": null,
+   "flags": [
+    "wrong-version:sessions",
+    "album-partial"
+   ]
+  },
+  {
+   "verdict": "review",
+   "reason": "配到 Haunt Me",
+   "key": "cover6:tim hecker|haunt me, haunt me do it again",
+   "artist": "Tim Hecker",
+   "album": "Haunt Me, Haunt Me Do It Again",
+   "inSeed": true,
+   "spotifyUrl": "https://open.spotify.com/album/5MZRB9G4snRWIG0otfxJYq",
+   "spotifyTitle": "Haunt Me",
+   "oembedStatus": 200,
+   "rgMbid": null,
+   "spotifyChecked": null,
+   "flags": [
+    "album-partial"
+   ]
+  },
+  {
+   "verdict": "wrong",
+   "reason": "配到 The King",
+   "key": "cover6:tito puente|the king and i / el rey y yo",
+   "artist": "Tito Puente",
+   "album": "The King and I / El Rey y yo",
+   "inSeed": true,
+   "spotifyUrl": "https://open.spotify.com/album/7xgkOmB7syD8a5Srn3Z5va",
+   "spotifyTitle": "The King",
+   "oembedStatus": 200,
+   "rgMbid": null,
+   "spotifyChecked": null,
+   "flags": [
+    "album-partial"
+   ]
+  },
+  {
+   "verdict": "review",
+   "reason": "配到 Tachibana",
+   "key": "cover6:tohru aizawa quartet|tachibana vol. 1",
+   "artist": "Tohru Aizawa Quartet",
+   "album": "Tachibana Vol. 1",
+   "inSeed": true,
+   "spotifyUrl": "https://open.spotify.com/album/0fvoBSelfLJ1fR7vHLaVqH",
+   "spotifyTitle": "Tachibana",
+   "oembedStatus": 200,
+   "rgMbid": null,
+   "spotifyChecked": null,
+   "flags": [
+    "album-partial"
+   ]
+  },
+  {
+   "verdict": "review",
+   "reason": "配到《ひとつぶの海》（可能只是日文／中文原題，待確認）",
+   "key": "cover6:toshifumi hinata|reality in love",
+   "artist": "toshifumi hinata",
+   "album": "reality in love",
+   "inSeed": false,
+   "spotifyUrl": "https://open.spotify.com/album/0k4j3uetJHFATIt4VxwCPz",
+   "spotifyTitle": "ひとつぶの海",
+   "oembedStatus": 200,
+   "rgMbid": null,
+   "spotifyChecked": null,
+   "flags": [
+    "album-mismatch"
+   ]
+  },
+  {
+   "verdict": "wrong",
+   "reason": "配到 The Return Of The Stuff That Dreams Are Made Of",
+   "key": "cover6:various artists|the stuff that dreams are made of",
+   "artist": "various artists",
+   "album": "the stuff that dreams are made of",
+   "inSeed": false,
+   "spotifyUrl": "https://open.spotify.com/album/0rwNn6ajCbuG0bCcizSK02",
+   "spotifyTitle": "The Return Of The Stuff That Dreams Are Made Of",
+   "oembedStatus": 200,
+   "rgMbid": null,
+   "spotifyChecked": null,
+   "flags": [
+    "album-partial"
+   ]
+  },
+  {
+   "verdict": "wrong",
+   "reason": "配到 Thrill of the Arts",
+   "key": "cover6:vulfpeck|thrill",
+   "artist": "vulfpeck",
+   "album": "thrill",
+   "inSeed": false,
+   "spotifyUrl": "https://open.spotify.com/album/5ssCRF6doIj5IpM6w8EsXx",
+   "spotifyTitle": "Thrill of the Arts",
+   "oembedStatus": 200,
+   "rgMbid": null,
+   "spotifyChecked": null,
+   "flags": [
+    "album-partial"
+   ]
+  },
+  {
+   "verdict": "review",
+   "reason": "配到《火種》（可能只是日文／中文原題，待確認）",
+   "key": "cover6:yasutaka hemmi|unfinished paintings and objects",
+   "artist": "yasutaka hemmi",
+   "album": "unfinished paintings and objects",
+   "inSeed": false,
+   "spotifyUrl": "https://open.spotify.com/album/1usOiy15DL5VbcguyZmrX5",
+   "spotifyTitle": "火種",
+   "oembedStatus": 200,
+   "rgMbid": null,
+   "spotifyChecked": null,
+   "flags": [
+    "album-mismatch"
+   ]
+  },
+  {
+   "verdict": "review",
+   "reason": "配到 Naughty Boys & Instrumental 合併盤",
+   "key": "cover6:yellow magic orchestra|naughty boys",
+   "artist": "Yellow Magic Orchestra",
+   "album": "Naughty Boys",
+   "inSeed": true,
+   "spotifyUrl": "https://open.spotify.com/album/0Apb4rWlRu82RGhfyuLaVh",
+   "spotifyTitle": "Naughty Boys & Instrumental",
+   "oembedStatus": 200,
+   "rgMbid": null,
+   "spotifyChecked": null,
+   "flags": [
+    "wrong-version:instrumental",
+    "album-partial"
+   ]
+  },
+  {
+   "verdict": "review",
+   "reason": "配到 Discography 合集",
+   "key": "cover6:zounds|the curse of zounds",
+   "artist": "Zounds",
+   "album": "The Curse of Zounds",
+   "inSeed": true,
+   "spotifyUrl": "https://open.spotify.com/album/7xQL9UGIjKnjYCRnloRzv3",
+   "spotifyTitle": "The Curse of Zounds Discography (Remastered)",
+   "oembedStatus": 200,
+   "rgMbid": null,
+   "spotifyChecked": null,
+   "flags": [
+    "album-partial"
+   ]
+  },
+  {
+   "verdict": "wrong",
+   "reason": "配到 Superdiscount 2",
+   "key": "cover6:étienne de crécy|super discount",
+   "artist": "Étienne de Crécy",
+   "album": "Super Discount",
+   "inSeed": true,
+   "spotifyUrl": "https://open.spotify.com/album/2ep903dNtgniGlJHF0EPMm",
+   "spotifyTitle": "Superdiscount 2",
+   "oembedStatus": 200,
+   "rgMbid": "ce4bb332-5580-3362-a9d6-c538fd8c1e75",
+   "spotifyChecked": "repair-2026-10-mb",
+   "flags": [
+    "album-partial"
+   ]
+  },
+  {
+   "verdict": "review",
+   "reason": "附卡拉 OK 音軌的擴充重發（主體正確）",
+   "key": "cover6:中森明菜|d404me",
+   "artist": "中森明菜",
+   "album": "D404ME",
+   "inSeed": true,
+   "spotifyUrl": "https://open.spotify.com/album/66DeCPO6scKMSXQfMIK7xr",
+   "spotifyTitle": "D404ME (+4; オリジナル・カラオケ付; 2023ラッカーマスターサウンド)",
+   "oembedStatus": 200,
+   "rgMbid": "9faa7451-5050-4f8d-88a5-74bc1baf755c",
+   "spotifyChecked": "repair-2026-10-mb",
+   "flags": [
+    "wrong-version:karaoke"
+   ]
+  },
+  {
+   "verdict": "wrong",
+   "reason": "配到紀錄片原聲帶",
+   "key": "cover6:大象體操 elephant gym|夢境",
+   "artist": "大象體操 Elephant Gym",
+   "album": "夢境",
+   "inSeed": true,
+   "spotifyUrl": "https://open.spotify.com/album/1mMhbLjuTZpCdQMnYMnfMK",
+   "spotifyTitle": "《大象體操：比夢境更真實》 紀錄片原聲帶",
+   "oembedStatus": 200,
+   "rgMbid": null,
+   "spotifyChecked": null,
+   "flags": [
+    "album-mismatch"
+   ]
+  },
+  {
+   "verdict": "review",
+   "reason": "配到 The Wonderful World of Mieko Hirota",
+   "key": "cover6:弘田三枝子|弘田三枝子の世界",
+   "artist": "弘田三枝子",
+   "album": "弘田三枝子の世界",
+   "inSeed": true,
+   "spotifyUrl": "https://open.spotify.com/album/775q1PQu4iWjp6NHxMyKsC",
+   "spotifyTitle": "The Wonderful World of Mieko Hirota",
+   "oembedStatus": 200,
+   "rgMbid": null,
+   "spotifyChecked": null,
+   "flags": [
+    "album-mismatch"
+   ]
+  },
+  {
+   "verdict": "wrong",
+   "reason": "配到《朱宗慶兒童打擊樂(二)》",
+   "key": "cover6:朱宗慶打擊樂團|擊樂",
+   "artist": "朱宗慶打擊樂團",
+   "album": "擊樂",
+   "inSeed": false,
+   "spotifyUrl": "https://open.spotify.com/album/0tceaLmcyVIdAYXGSwVCAU",
+   "spotifyTitle": "朱宗慶兒童打擊樂(二) - 生活小故事",
+   "oembedStatus": 200,
+   "rgMbid": null,
+   "spotifyChecked": null,
+   "flags": [
+    "album-mismatch"
+   ]
+  },
+  {
+   "verdict": "wrong",
+   "reason": "配到精選《李宗盛作品精選1》",
+   "key": "cover6:李宗盛|生命中的精靈",
+   "artist": "李宗盛",
+   "album": "生命中的精靈",
+   "inSeed": true,
+   "spotifyUrl": "https://open.spotify.com/album/5pHAKb55ltL9mfPe2CWGLm",
+   "spotifyTitle": "李宗盛作品精選1生命中的精靈",
+   "oembedStatus": 200,
+   "rgMbid": null,
+   "spotifyChecked": null,
+   "flags": [
+    "wrong-version:compilation",
+    "album-partial"
+   ]
+  },
+  {
+   "verdict": "wrong",
+   "reason": "配到 DJ Remix",
+   "key": "cover6:葉啟田|愛拚才會贏",
+   "artist": "葉啟田",
+   "album": "愛拚才會贏",
+   "inSeed": true,
+   "spotifyUrl": "https://open.spotify.com/album/0gap88llni9rxbSvZ6mea1",
+   "spotifyTitle": "愛拚才會贏 (Dj Remix)",
+   "oembedStatus": 200,
+   "rgMbid": null,
+   "spotifyChecked": null,
+   "flags": [
+    "wrong-version:remix"
+   ]
+  },
+  {
+   "verdict": "review",
+   "reason": "配到《此情可待 最後一夜》",
+   "key": "cover6:蔡琴|此情可待",
+   "artist": "蔡琴",
+   "album": "此情可待",
+   "inSeed": true,
+   "spotifyUrl": "https://open.spotify.com/album/2agVa2R3ovJMvqbwbr311j",
+   "spotifyTitle": "此情可待 最後一夜",
+   "oembedStatus": 200,
+   "rgMbid": "2b6597ce-067f-4f75-aaf4-89a043add061",
+   "spotifyChecked": "repair-2026-10-mb",
+   "flags": [
+    "album-partial"
+   ]
+  },
+  {
+   "verdict": "wrong",
+   "reason": "配到《想要彈同調最精選》",
+   "key": "cover6:鳳飛飛|想要彈同調",
+   "artist": "鳳飛飛",
+   "album": "想要彈同調",
+   "inSeed": true,
+   "spotifyUrl": "https://open.spotify.com/album/1iLohinCgigyqjujxZLqmq",
+   "spotifyTitle": "想要彈同調最精選",
+   "oembedStatus": 200,
+   "rgMbid": null,
+   "spotifyChecked": null,
+   "flags": [
+    "wrong-version:compilation",
+    "album-partial"
+   ]
+  }
+ ]
+}

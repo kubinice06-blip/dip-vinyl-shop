@@ -86,7 +86,7 @@ Badal Roy 寫成「Alyrio Roy」）——**`miqqe.jp` 只可用於發行日／�
 衝突時一律以 Discogs 原壓為準、Apple 那一邊整格不寫）。
 
 ⚠ **Apple 的 403／429 是暫時性錯誤，退避重試**；**節流 1.35 秒，超過 60 次調到 1.5 秒。**
-MB 守 1 req/s，UA 逐字 `dip-vinyl-shop/1.0 (kubinice06@gmail.com)`；Discogs 節流到約 1 req/3s。
+MB 守 1 req/s，UA 逐字 `dip-vinyl-shop/1.0 (+https://dipvinyl.tw)`；Discogs 節流到約 1 req/3s。
 ⚠ **查不到不要編**——`facts` 寧可少兩條、`status` 誠實標 `thin`。
 
 

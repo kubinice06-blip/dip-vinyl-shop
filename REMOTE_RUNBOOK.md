@@ -9,7 +9,7 @@
 1. **雲端可以寫** `seed_cards.json`（含第 9 欄的頂點 tier；`apex_pool.json` 已在 08-30 併進這一份）、
    `PROJECT_MEMORY.md`、Firestore `card_catalog`。
 2. **KV 要有可寫的 token 才做**；沒有就不寫，也**不得寫 seed**（見「KV」一節）。
-3. **雲端推自己的分支、開 PR，由店主合併。** 雲端不推 `main`、不自己合併 PR。
+3. **雲端推自己的分支、開 PR，開完就自己合併**（2026-10-21 店主：「不用再等了 直接合併」）。雲端不直接推 `main`。
 
 ## 分工表
 
@@ -29,7 +29,7 @@
 | published gate | 雲端 | seed 寫了才跑 |
 | `build-genre-tree.mjs --pull --write` | 雲端，有 token 才做 | `--pull` 要從 KV 重建 `data/rawgenres-cache.json`；沒有 token 就留給本機 |
 | `PROJECT_MEMORY.md` | 雲端 | 在自己的分支最上方插一筆 |
-| 合併進 `main` | **店主** | 雲端只開 PR |
+| 合併進 `main` | 雲端 | 開 PR 後自己合併（2026-10-21 起）；條件見「分支與 PR」 |
 | `album_overrides`、`settings` 等管理員集合 | 店主（後台） | Firestore 規則是 `isAdmin()`，雲端沒有身分，也不設服務帳戶 |
 | Worker 部署 | 店主（本機） | 這次沒有開放 |
 
@@ -129,7 +129,7 @@
   - 動到事實的改動，同步改 research／hooks／input 三層，並在紀錄註明已同步；
   - 沒有改動的批也要寫一行「逐張審過，未改字」。
 - `handoff.json` 加 `"review": { "by": "cloud-main", "cards": N, "changed": ["<key>…"] }`。
-- 店主合併 PR 前要看的就是這一段；所以寫給人看，不要只丟 diff。
+- 店主事後查核看的就是這一段；所以寫給人看，不要只丟 diff。
 
 ## KV（有可寫的 token 才做）
 
@@ -165,7 +165,13 @@ node scripts/kv-token-check.mjs      # 會寫一個測試鍵、讀回、刪掉�
   4. gate 結果（prepare／published 各幾個 error）；
   5. 審稿改了幾處（指到 `rulings.md` 的段落）；
   6. **留給本機／店主的事**（KV 沒寫、listeners 沒拿到、子曲風表沒重建、要貼後台的 `album_overrides`…）。
-- **雲端不合併自己的 PR。** 店主合併後 Cloudflare Pages 才部署，卡才真的進卡池。
+- **開完 PR 就自己合併**（2026-10-21 店主：「不用再等了 直接合併」，取代原本的「雲端不合併自己的 PR」）。
+  合併後 Cloudflare Pages 才部署，卡才真的進卡池。合併前要滿足：
+  - 草稿 PR 先轉成 ready，再合併（merge commit，不 squash）；
+  - `origin/main` 已併進分支、沒有衝突；
+  - 本次上架的批 published gate 0 error、KV 回讀一致；
+  - **`pendingLocal` 還有 KV／seed 沒寫的批不合併**——那種 PR 留給本機補完後再合。
+- 合併後分支就結束了；後續工作從最新 `main` 重開同名分支、開新 PR。
 
 ## 交接檔
 
@@ -189,16 +195,16 @@ node scripts/kv-token-check.mjs      # 會寫一個測試鍵、讀回、刪掉�
 
 ## 本機／店主還要做的
 
-雲端整條線跑完時，店主只需要**看 PR、合併**。下列情況才需要本機接手：
+雲端整條線跑完時會自己合併，店主不用做事。下列情況才需要本機接手：
 
-1. **KV 沒寫**（沒有可寫 token）：本機 `git fetch` → checkout 該分支 → 寫 KV 並回讀 → 寫 seed → published gate → 推回同一個分支，再由店主合併。
+1. **KV 沒寫**（沒有可寫 token）：本機 `git fetch` → checkout 該分支 → 寫 KV 並回讀 → 寫 seed → published gate → 推回同一個分支，再合併。
 2. **listeners 沒拿到**、或有 `pending-local` 的頂點證據：本機補查後更新 manifest 與 seed。
 3. **子曲風表沒重建**：合併後在本機跑 `node scripts/warm-album-genres.mjs`（分段）＋ `node scripts/build-genre-tree.mjs --pull --write`。
 4. 要走後台的：`album_overrides`（YouTube 固定試聽等）、Worker 部署。
 
 ## 兩個對話怎麼串聯
 
-- **主通道是 git 與 PR**：雲端 push 分支、開 PR，店主合併；需要本機補做時，本機 fetch 同一個分支接手。
+- **主通道是 git 與 PR**：雲端 push 分支、開 PR、自己合併；需要本機補做時，本機 fetch 同一個分支接手。
 - 本機兩個 Claude Code 對話可雙向互傳訊息；本機→雲端只能單向（雲端無法回話），
   故**不要**設計成「雲端跑完通知本機」——PR 就是通知。
 - 雲端工作階段開工詞建議固定為：

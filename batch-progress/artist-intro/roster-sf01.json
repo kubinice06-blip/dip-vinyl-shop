@@ -1,0 +1,581 @@
+{
+ "generatedAt": "2026-10-30",
+ "source": "onboarding-manifest-add-20261030-sf01-20261030.json",
+ "note": "店主 Spotify 追蹤藝人補卡池 add-20261030-sf01 上架卡缺介紹的藝人（ALBUM_ONBOARDING §11）。主名冊 roster-20260929.json 為單行 JSON、並行工作階段必互撞，併入主名冊由藝人介紹工作階段處理。",
+ "artists": 30,
+ "entries": [
+  {
+   "key": "the rh factor",
+   "name": "The RH Factor",
+   "variants": null,
+   "cards": 1,
+   "tier": "D",
+   "mainGenre": "jazz",
+   "yearMin": 2003,
+   "yearMax": 2003,
+   "script": "latin",
+   "classicalPerformer": false,
+   "collab": false,
+   "sampleAlbums": [
+    "Hard Groove"
+   ],
+   "shard": null,
+   "addedBy": "add-20261030-sf01",
+   "inMainRoster": false
+  },
+  {
+   "key": "albert mangelsdorff quintet",
+   "name": "Albert Mangelsdorff Quintet",
+   "variants": null,
+   "cards": 1,
+   "tier": "D",
+   "mainGenre": "jazz",
+   "yearMin": 1963,
+   "yearMax": 1963,
+   "script": "latin",
+   "classicalPerformer": false,
+   "collab": false,
+   "sampleAlbums": [
+    "Tension"
+   ],
+   "shard": null,
+   "addedBy": "add-20261030-sf01",
+   "inMainRoster": false
+  },
+  {
+   "key": "czarface & ghostface killah",
+   "name": "Czarface & Ghostface Killah",
+   "variants": null,
+   "cards": 1,
+   "tier": "D",
+   "mainGenre": "hiphop",
+   "yearMin": 2019,
+   "yearMax": 2019,
+   "script": "latin",
+   "classicalPerformer": false,
+   "collab": true,
+   "sampleAlbums": [
+    "Czarface Meets Ghostface"
+   ],
+   "shard": null,
+   "addedBy": "add-20261030-sf01",
+   "inMainRoster": false
+  },
+  {
+   "key": "bent fabric",
+   "name": "Bent Fabric",
+   "variants": null,
+   "cards": 1,
+   "tier": "D",
+   "mainGenre": "pop",
+   "yearMin": 1962,
+   "yearMax": 1962,
+   "script": "latin",
+   "classicalPerformer": false,
+   "collab": false,
+   "sampleAlbums": [
+    "The Happy Puppy"
+   ],
+   "shard": null,
+   "addedBy": "add-20261030-sf01",
+   "inMainRoster": false
+  },
+  {
+   "key": "klimeks",
+   "name": "Klimeks",
+   "variants": null,
+   "cards": 1,
+   "tier": "D",
+   "mainGenre": "electronic",
+   "yearMin": 2013,
+   "yearMax": 2013,
+   "script": "latin",
+   "classicalPerformer": false,
+   "collab": false,
+   "sampleAlbums": [
+    "Overnites"
+   ],
+   "shard": null,
+   "addedBy": "add-20261030-sf01",
+   "inMainRoster": false
+  },
+  {
+   "key": "corporate",
+   "name": "Corporate",
+   "variants": null,
+   "cards": 1,
+   "tier": "D",
+   "mainGenre": "electronic",
+   "yearMin": 2016,
+   "yearMax": 2016,
+   "script": "latin",
+   "classicalPerformer": false,
+   "collab": false,
+   "sampleAlbums": [
+    "A5 EP"
+   ],
+   "shard": null,
+   "addedBy": "add-20261030-sf01",
+   "inMainRoster": false
+  },
+  {
+   "key": "kay hoffman",
+   "name": "Kay Hoffman",
+   "variants": null,
+   "cards": 1,
+   "tier": "D",
+   "mainGenre": "folk",
+   "yearMin": 1985,
+   "yearMax": 1985,
+   "script": "latin",
+   "classicalPerformer": false,
+   "collab": false,
+   "sampleAlbums": [
+    "Floret Silva"
+   ],
+   "shard": null,
+   "addedBy": "add-20261030-sf01",
+   "inMainRoster": false
+  },
+  {
+   "key": "dome",
+   "name": "Dome",
+   "variants": null,
+   "cards": 1,
+   "tier": "D",
+   "mainGenre": "electronic",
+   "yearMin": 1980,
+   "yearMax": 1980,
+   "script": "latin",
+   "classicalPerformer": false,
+   "collab": false,
+   "sampleAlbums": [
+    "Dome 2"
+   ],
+   "shard": null,
+   "addedBy": "add-20261030-sf01",
+   "inMainRoster": false
+  },
+  {
+   "key": "toshinori kondo, eraldo bernocchi & bill laswell",
+   "name": "Toshinori Kondo, Eraldo Bernocchi & Bill Laswell",
+   "variants": null,
+   "cards": 1,
+   "tier": "D",
+   "mainGenre": "electronic",
+   "yearMin": 1999,
+   "yearMax": 1999,
+   "script": "latin",
+   "classicalPerformer": false,
+   "collab": true,
+   "sampleAlbums": [
+    "Charged"
+   ],
+   "shard": null,
+   "addedBy": "add-20261030-sf01",
+   "inMainRoster": false
+  },
+  {
+   "key": "dezső ránki",
+   "name": "Dezső Ránki",
+   "variants": null,
+   "cards": 1,
+   "tier": "D",
+   "mainGenre": "classical",
+   "yearMin": 1971,
+   "yearMax": 1971,
+   "script": "latin",
+   "classicalPerformer": true,
+   "collab": false,
+   "sampleAlbums": [
+    "Chopin: Études op. 10, Nocturne op. 9 no. 3 & Ballades opp. 38 & 23"
+   ],
+   "shard": null,
+   "addedBy": "add-20261030-sf01",
+   "inMainRoster": false
+  },
+  {
+   "key": "derya yıldırım & grup şimşek",
+   "name": "Derya Yıldırım & Grup Şimşek",
+   "variants": null,
+   "cards": 1,
+   "tier": "D",
+   "mainGenre": "world",
+   "yearMin": 2022,
+   "yearMax": 2022,
+   "script": "latin",
+   "classicalPerformer": false,
+   "collab": true,
+   "sampleAlbums": [
+    "Dost 2"
+   ],
+   "shard": null,
+   "addedBy": "add-20261030-sf01",
+   "inMainRoster": false
+  },
+  {
+   "key": "arthur flink & son of chi",
+   "name": "Arthur Flink & Son of Chi",
+   "variants": null,
+   "cards": 1,
+   "tier": "D",
+   "mainGenre": "jazz",
+   "yearMin": 2022,
+   "yearMax": 2022,
+   "script": "latin",
+   "classicalPerformer": false,
+   "collab": true,
+   "sampleAlbums": [
+    "The Fifth World Recordings"
+   ],
+   "shard": null,
+   "addedBy": "add-20261030-sf01",
+   "inMainRoster": false
+  },
+  {
+   "key": "meiko miyazawa 宮沢明子",
+   "name": "Meiko Miyazawa 宮沢明子",
+   "variants": null,
+   "cards": 1,
+   "tier": "D",
+   "mainGenre": "classical",
+   "yearMin": 1974,
+   "yearMax": 1974,
+   "script": "zh",
+   "classicalPerformer": true,
+   "collab": false,
+   "sampleAlbums": [
+    "Kuhlau / Clementi / Dussek: Sonatinen Album I"
+   ],
+   "shard": null,
+   "addedBy": "add-20261030-sf01",
+   "inMainRoster": false
+  },
+  {
+   "key": "manfred reuthe",
+   "name": "Manfred Reuthe",
+   "variants": null,
+   "cards": 1,
+   "tier": "D",
+   "mainGenre": "classical",
+   "yearMin": 2015,
+   "yearMax": 2015,
+   "script": "latin",
+   "classicalPerformer": true,
+   "collab": false,
+   "sampleAlbums": [
+    "Klavier Solo I"
+   ],
+   "shard": null,
+   "addedBy": "add-20261030-sf01",
+   "inMainRoster": false
+  },
+  {
+   "key": "misc",
+   "name": "Misc",
+   "variants": null,
+   "cards": 1,
+   "tier": "D",
+   "mainGenre": "jazz",
+   "yearMin": 2025,
+   "yearMax": 2025,
+   "script": "latin",
+   "classicalPerformer": false,
+   "collab": false,
+   "sampleAlbums": [
+    "Beat Bouquet"
+   ],
+   "shard": null,
+   "addedBy": "add-20261030-sf01",
+   "inMainRoster": false
+  },
+  {
+   "key": "i̇dil biret",
+   "name": "İdil Biret",
+   "variants": null,
+   "cards": 2,
+   "tier": "D",
+   "mainGenre": "classical",
+   "yearMin": 1995,
+   "yearMax": 2003,
+   "script": "latin",
+   "classicalPerformer": true,
+   "collab": false,
+   "sampleAlbums": [
+    "Boulez: Piano Sonatas nos. 1 - 3",
+    "Ligeti: Études, Books I and II (1-14a)"
+   ],
+   "shard": null,
+   "addedBy": "add-20261030-sf01",
+   "inMainRoster": false
+  },
+  {
+   "key": "john mclaughlin & the one truth band",
+   "name": "John McLaughlin & The One Truth Band",
+   "variants": null,
+   "cards": 1,
+   "tier": "D",
+   "mainGenre": "jazz",
+   "yearMin": 1979,
+   "yearMax": 1979,
+   "script": "latin",
+   "classicalPerformer": false,
+   "collab": true,
+   "sampleAlbums": [
+    "Electric Dreams"
+   ],
+   "shard": null,
+   "addedBy": "add-20261030-sf01",
+   "inMainRoster": false
+  },
+  {
+   "key": "project pablo",
+   "name": "Project Pablo",
+   "variants": null,
+   "cards": 1,
+   "tier": "D",
+   "mainGenre": "electronic",
+   "yearMin": 2017,
+   "yearMax": 2017,
+   "script": "latin",
+   "classicalPerformer": false,
+   "collab": false,
+   "sampleAlbums": [
+    "Hope You're Well"
+   ],
+   "shard": null,
+   "addedBy": "add-20261030-sf01",
+   "inMainRoster": false
+  },
+  {
+   "key": "冠宇",
+   "name": "冠宇",
+   "variants": null,
+   "cards": 1,
+   "tier": "D",
+   "mainGenre": "rock",
+   "yearMin": 2003,
+   "yearMax": 2003,
+   "script": "zh",
+   "classicalPerformer": false,
+   "collab": false,
+   "sampleAlbums": [
+    "單飛"
+   ],
+   "shard": null,
+   "addedBy": "add-20261030-sf01",
+   "inMainRoster": false
+  },
+  {
+   "key": "張震嶽",
+   "name": "張震嶽",
+   "variants": null,
+   "cards": 1,
+   "tier": "D",
+   "mainGenre": "pop",
+   "yearMin": 2019,
+   "yearMax": 2019,
+   "script": "zh",
+   "classicalPerformer": false,
+   "collab": false,
+   "sampleAlbums": [
+    "遠走高飛"
+   ],
+   "shard": null,
+   "addedBy": "add-20261030-sf01",
+   "inMainRoster": false
+  },
+  {
+   "key": "my sleeping karma",
+   "name": "My Sleeping Karma",
+   "variants": null,
+   "cards": 1,
+   "tier": "D",
+   "mainGenre": "rock",
+   "yearMin": 2015,
+   "yearMax": 2015,
+   "script": "latin",
+   "classicalPerformer": false,
+   "collab": false,
+   "sampleAlbums": [
+    "Moksha"
+   ],
+   "shard": null,
+   "addedBy": "add-20261030-sf01",
+   "inMainRoster": false
+  },
+  {
+   "key": "bardo pond",
+   "name": "Bardo Pond",
+   "variants": null,
+   "cards": 2,
+   "tier": "D",
+   "mainGenre": "rock",
+   "yearMin": 1996,
+   "yearMax": 2005,
+   "script": "latin",
+   "classicalPerformer": false,
+   "collab": false,
+   "sampleAlbums": [
+    "Amanita",
+    "Selections: Volumes I-IV"
+   ],
+   "shard": null,
+   "addedBy": "add-20261030-sf01",
+   "inMainRoster": false
+  },
+  {
+   "key": "人間椅子",
+   "name": "人間椅子",
+   "variants": null,
+   "cards": 2,
+   "tier": "D",
+   "mainGenre": "rock",
+   "yearMin": 1998,
+   "yearMax": 2000,
+   "script": "zh",
+   "classicalPerformer": false,
+   "collab": false,
+   "sampleAlbums": [
+    "頽廃芸術展",
+    "怪人二十面相"
+   ],
+   "shard": null,
+   "addedBy": "add-20261030-sf01",
+   "inMainRoster": false
+  },
+  {
+   "key": "bardo pond, acid mothers temple & guru guru",
+   "name": "Bardo Pond, Acid Mothers Temple & Guru Guru",
+   "variants": null,
+   "cards": 1,
+   "tier": "D",
+   "mainGenre": "rock",
+   "yearMin": 2016,
+   "yearMax": 2016,
+   "script": "latin",
+   "classicalPerformer": false,
+   "collab": true,
+   "sampleAlbums": [
+    "Acid Guru Pond"
+   ],
+   "shard": null,
+   "addedBy": "add-20261030-sf01",
+   "inMainRoster": false
+  },
+  {
+   "key": "juzzy orange & goodiek",
+   "name": "Juzzy Orange & GoodieK",
+   "variants": null,
+   "cards": 1,
+   "tier": "D",
+   "mainGenre": "hiphop",
+   "yearMin": 2015,
+   "yearMax": 2015,
+   "script": "latin",
+   "classicalPerformer": false,
+   "collab": true,
+   "sampleAlbums": [
+    "沒有靈魂的工程師"
+   ],
+   "shard": null,
+   "addedBy": "add-20261030-sf01",
+   "inMainRoster": false
+  },
+  {
+   "key": "smasher",
+   "name": "Smasher",
+   "variants": null,
+   "cards": 1,
+   "tier": "D",
+   "mainGenre": "electronic",
+   "yearMin": 2017,
+   "yearMax": 2017,
+   "script": "latin",
+   "classicalPerformer": false,
+   "collab": false,
+   "sampleAlbums": [
+    "So High"
+   ],
+   "shard": null,
+   "addedBy": "add-20261030-sf01",
+   "inMainRoster": false
+  },
+  {
+   "key": "蕭亞軒",
+   "name": "蕭亞軒",
+   "variants": null,
+   "cards": 1,
+   "tier": "D",
+   "mainGenre": "pop",
+   "yearMin": 1999,
+   "yearMax": 1999,
+   "script": "zh",
+   "classicalPerformer": false,
+   "collab": false,
+   "sampleAlbums": [
+    "蕭亞軒"
+   ],
+   "shard": null,
+   "addedBy": "add-20261030-sf01",
+   "inMainRoster": false
+  },
+  {
+   "key": "drive like jehu",
+   "name": "Drive Like Jehu",
+   "variants": null,
+   "cards": 1,
+   "tier": "D",
+   "mainGenre": "rock",
+   "yearMin": 1994,
+   "yearMax": 1994,
+   "script": "latin",
+   "classicalPerformer": false,
+   "collab": false,
+   "sampleAlbums": [
+    "Yank Crime"
+   ],
+   "shard": null,
+   "addedBy": "add-20261030-sf01",
+   "inMainRoster": false
+  },
+  {
+   "key": "青春大衛",
+   "name": "青春大衛",
+   "variants": null,
+   "cards": 1,
+   "tier": "D",
+   "mainGenre": "rock",
+   "yearMin": 2014,
+   "yearMax": 2014,
+   "script": "zh",
+   "classicalPerformer": false,
+   "collab": false,
+   "sampleAlbums": [
+    "第一到六天"
+   ],
+   "shard": null,
+   "addedBy": "add-20261030-sf01",
+   "inMainRoster": false
+  },
+  {
+   "key": "烏賊紳士",
+   "name": "烏賊紳士",
+   "variants": null,
+   "cards": 1,
+   "tier": "D",
+   "mainGenre": "rock",
+   "yearMin": 2016,
+   "yearMax": 2016,
+   "script": "zh",
+   "classicalPerformer": false,
+   "collab": false,
+   "sampleAlbums": [
+    "狗"
+   ],
+   "shard": null,
+   "addedBy": "add-20261030-sf01",
+   "inMainRoster": false
+  }
+ ]
+}

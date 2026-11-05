@@ -1,0 +1,340 @@
+{
+ "group": "sf05a",
+ "factions": [
+  {
+   "id": "tw-pop-diva",
+   "zh": "台灣華語流行",
+   "count": 3,
+   "why": "徐佳瑩、王心凌、Karencici 主流華語流行／R&B"
+  },
+  {
+   "id": "tw-indie",
+   "zh": "台灣獨立／另類",
+   "count": 4,
+   "why": "黃雨晴、老貓偵探社、宝島材料行、庸俗禿鷹"
+  },
+  {
+   "id": "jp-rnb",
+   "zh": "日系 R&B",
+   "count": 1,
+   "why": "Yo-Sea"
+  }
+ ],
+ "albums": [
+  {
+   "label": "AsiaMuse Entertainment",
+   "country": "tw",
+   "mbRgMbid": "1a5ed261-5e3f-4ecc-923e-5f578440a978",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "LaLa Hsu 徐佳瑩 / 徐佳瑩LaLa首張創作專輯",
+   "uncertain": "",
+   "artist": "徐佳瑩",
+   "album": "LaLa首張創作專輯",
+   "year": 2009,
+   "faction": "tw-pop-diva",
+   "genres": [
+    "pop",
+    "folk"
+   ],
+   "why": "首張創作專輯，奠定唱作歌后形象並獲金曲最佳新人肯定",
+   "moodGuess": {
+    "x": -0.3,
+    "y": -0.2,
+    "z": 0.2,
+    "why": "抒情鋼琴吉他、嗓音濃烈"
+   },
+   "evidence": [
+    "https://music.apple.com/tw/album/%E5%BE%90%E4%BD%B3%E7%91%A9lala%E9%A6%96%E5%BC%B5%E5%89%B5%E4%BD%9C%E5%B0%88%E8%BC%AF/672648486",
+    "https://musicbrainz.org/release-group/1a5ed261-5e3f-4ecc-923e-5f578440a978"
+   ],
+   "spotifyName": "LaLa Hsu"
+  },
+  {
+   "label": "AsiaMuse Entertainment",
+   "country": "tw",
+   "mbRgMbid": "aaf9890c-d7ee-4fe6-9bcc-7cafbedd0028",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "金曲獎得獎細節憑記憶，未逐條查證（不影響入選）",
+   "artist": "徐佳瑩",
+   "album": "尋人啟事",
+   "year": 2014,
+   "faction": "tw-pop-diva",
+   "genres": [
+    "pop",
+    "folk"
+   ],
+   "why": "第二個高峰：成熟寫作與編曲，金曲獎肯定的代表專輯",
+   "moodGuess": {
+    "x": -0.3,
+    "y": -0.3,
+    "z": 0.1,
+    "why": "抒情中慢板、弦樂與鋼琴"
+   },
+   "evidence": [
+    "https://music.apple.com/tw/album/%E5%B0%8B%E4%BA%BA%E5%95%9F%E4%BA%8B/877943519",
+    "https://musicbrainz.org/release-group/aaf9890c-d7ee-4fe6-9bcc-7cafbedd0028"
+   ],
+   "spotifyName": "LaLa Hsu"
+  },
+  {
+   "label": "",
+   "country": "tw",
+   "mbRgMbid": "5f3de964-dce5-3aff-b205-d35052442dab",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Cyndi Wang 王心凌；Spotify 上為拼音名 Ai Ni",
+   "uncertain": "label 未查證留空；Apple 數位版標題為拼音 Ai Ni",
+   "artist": "王心凌",
+   "album": "Cyndi Loves You",
+   "year": 2004,
+   "faction": "tw-pop-diva",
+   "genres": [
+    "pop"
+   ],
+   "why": "〈愛你〉所在的甜心教主代表作，王心凌最具標誌性的專輯",
+   "moodGuess": {
+    "x": 0.6,
+    "y": 0.5,
+    "z": -0.3,
+    "why": "明亮甜美的少女舞曲流行"
+   },
+   "evidence": [
+    "https://music.apple.com/tw/album/ai-ni/1847591249",
+    "https://musicbrainz.org/release-group/5f3de964-dce5-3aff-b205-d35052442dab"
+   ],
+   "spotifyName": "Cyndi Wang"
+  },
+  {
+   "label": "",
+   "country": "tw",
+   "mbRgMbid": "d220d354-7c9c-3bff-9a72-54b6744ac8d6",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "第二張是否夠格另一高峰有主觀成分，label 留空；同名單曲 MB 另有 Single，注意別撞",
+   "artist": "王心凌",
+   "album": "Honey",
+   "year": 2005,
+   "faction": "tw-pop-diva",
+   "genres": [
+    "pop"
+   ],
+   "why": "甜心流行巔峰期延續作，同樣是 Sweet Pop 時代的核心專輯",
+   "moodGuess": {
+    "x": 0.6,
+    "y": 0.5,
+    "z": -0.3,
+    "why": "輕快甜美流行舞曲"
+   },
+   "evidence": [
+    "https://music.apple.com/tw/album/honey/1847591844",
+    "https://musicbrainz.org/release-group/d220d354-7c9c-3bff-9a72-54b6744ac8d6"
+   ],
+   "spotifyName": "Cyndi Wang"
+  },
+  {
+   "label": "HIM International Music",
+   "country": "tw",
+   "mbRgMbid": "",
+   "mbAbsenceProof": "MusicBrainz artist/release-group 搜尋 Karencici 無結果（2026-10-30）",
+   "manualEvidenceUrls": [
+    "https://music.apple.com/tw/album/sha-yan/1445990496",
+    "https://en.wikipedia.org/wiki/Karencici"
+   ],
+   "releaseException": "",
+   "queryAlias": "林愷倫；中文盤名《傻眼》待確認",
+   "uncertain": "官方盤名 Sha Yan 還是《傻眼》未確證（Apple 為 Sha Yan，TVBS 提 傻眼了 為歌名）；第二張 99% Angel(2022) 未收",
+   "artist": "Karencici",
+   "album": "Sha Yan",
+   "year": 2018,
+   "faction": "tw-pop-diva",
+   "genres": [
+    "pop",
+    "soul"
+   ],
+   "why": "首張專輯，入圍金曲最佳新人，自寫自曲的 R&B 流行",
+   "moodGuess": {
+    "x": 0.1,
+    "y": 0,
+    "z": 0.1,
+    "why": "R&B 底的華語流行、中板"
+   },
+   "evidence": [
+    "https://music.apple.com/tw/album/sha-yan/1445990496",
+    "https://en.wikipedia.org/wiki/Karencici"
+   ],
+   "spotifyName": "Karencici"
+  },
+  {
+   "label": "Night School",
+   "country": "tw",
+   "mbRgMbid": "b220cf98-fbed-4b4c-8982-3ecf2cf19491",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "《化為人形》(2022，8 首，Airhead，獨立搖滾) 疑為迷你專輯未收；藝人名池中寫法用 Spotify 雙寫",
+   "artist": "Yu Ching 黃雨晴",
+   "album": "The Crystal Hum",
+   "year": 2024,
+   "faction": "tw-indie",
+   "genres": [
+    "pop",
+    "rock"
+   ],
+   "why": "最新也最完整的全長專輯，獨立流行代表作",
+   "moodGuess": {
+    "x": -0.2,
+    "y": -0.3,
+    "z": 0.4,
+    "why": "夢幻獨立流行、輕柔聲線"
+   },
+   "evidence": [
+    "https://music.apple.com/tw/album/the-crystal-hum/1735792497",
+    "https://musicbrainz.org/release-group/b220cf98-fbed-4b4c-8982-3ecf2cf19491"
+   ],
+   "spotifyName": "Yu Ching 黃雨晴"
+  },
+  {
+   "label": "Radio Wave Express Studio",
+   "country": "tw",
+   "mbRgMbid": "503c85b8-b962-40e8-8c8d-8492b2d5d4d9",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "《窮的人類》(2014)、《動物》(2025) 未收；樂團所在地（高雄）憑小港之名推測，未查證",
+   "artist": "老貓偵探社",
+   "album": "小港羅曼史",
+   "year": 2017,
+   "faction": "tw-indie",
+   "genres": [
+    "rock"
+   ],
+   "why": "高雄獨立樂團的代表全長專輯，13 首，樂迷公認成熟之作",
+   "moodGuess": {
+    "x": 0.1,
+    "y": -0.1,
+    "z": -0.1,
+    "why": "中速搖滾，帶台味與懷舊"
+   },
+   "evidence": [
+    "https://music.apple.com/tw/album/%E5%B0%8F%E6%B8%AF%E7%BE%85%E6%9B%BC%E5%8F%B2/1259697872",
+    "https://musicbrainz.org/release-group/503c85b8-b962-40e8-8c8d-8492b2d5d4d9"
+   ],
+   "spotifyName": "老貓偵探社"
+  },
+  {
+   "label": "potohardwarestore",
+   "country": "tw",
+   "mbRgMbid": "",
+   "mbAbsenceProof": "MusicBrainz artist 搜尋 宝島材料行 無此團（2026-10-30）",
+   "manualEvidenceUrls": [
+    "https://music.apple.com/tw/album/%E5%AE%9D%E6%AD%A3%E5%A5%BD%E5%BB%B3/1822713060",
+    "https://vocus.cc/user/@songofthesouth_tw"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "曲風憑 Apple 分類（另類音樂）與報導推斷",
+   "artist": "宝島材料行",
+   "album": "宝正好廳",
+   "year": 2023,
+   "faction": "tw-indie",
+   "genres": [
+    "rock",
+    "electronic"
+   ],
+   "why": "首張創作專輯，唯一全長作品，合成器與流行搖滾路線",
+   "moodGuess": {
+    "x": 0.1,
+    "y": 0.1,
+    "z": 0.3,
+    "why": "合成器 indie pop、中板"
+   },
+   "evidence": [
+    "https://music.apple.com/tw/album/%E5%AE%9D%E6%AD%A3%E5%A5%BD%E5%BB%B3/1822713060",
+    "https://vocus.cc/user/@songofthesouth_tw"
+   ],
+   "spotifyName": "宝島材料行"
+  },
+  {
+   "label": "Vulgar Vultures (self-released)",
+   "country": "tw",
+   "mbRgMbid": "",
+   "mbAbsenceProof": "MusicBrainz artist/release-group 搜尋 庸俗禿鷹 無結果（2026-10-30）",
+   "manualEvidenceUrls": [
+    "https://music.apple.com/tw/album/%E5%BA%B8%E4%BF%97%E7%A6%BF%E9%B7%B9/1506729187",
+    "https://itunes.apple.com/lookup?id=1506729187&country=TW"
+   ],
+   "releaseException": "",
+   "queryAlias": "Vulgar Vultures",
+   "uncertain": "證據薄弱：僅 Apple 頁（℗ Vulgar Vultures），WebSearch 查無樂團報導，易與庸俗救星 Vulgar Savior 混淆（不同團）；曲風與 moodGuess 為推測，建議主線審稿時決定",
+   "artist": "庸俗禿鷹",
+   "album": "庸俗禿鷹",
+   "year": 2020,
+   "faction": "tw-indie",
+   "genres": [
+    "rock"
+   ],
+   "why": "樂團唯一全長，15 首、68 分鐘的同名首作",
+   "moodGuess": {
+    "x": 0.4,
+    "y": 0.3,
+    "z": -0.4,
+    "why": "搖滾，吵鬧粗糲"
+   },
+   "evidence": [
+    "https://music.apple.com/tw/album/%E5%BA%B8%E4%BF%97%E7%A6%BF%E9%B7%B9/1506729187"
+   ],
+   "spotifyName": "庸俗禿鷹 Vulgar Vultures"
+  },
+  {
+   "label": "AOTL",
+   "country": "jp",
+   "mbRgMbid": "5ee25c3e-2afd-4d30-a97e-e90f71b2dbc4",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 判為 JP 藝人（有日文單曲），非台灣；Spotify 上的 Yo-Sea 與此是否同一人未百分百證實。另有 7878(2019，MB 有) 未收",
+   "artist": "Yo-Sea",
+   "album": "Sea of Love",
+   "year": 2023,
+   "faction": "jp-rnb",
+   "genres": [
+    "soul",
+    "pop"
+   ],
+   "why": "13 首全長專輯，Yo-Sea 的主要作品",
+   "moodGuess": {
+    "x": 0.2,
+    "y": 0,
+    "z": 0.2,
+    "why": "日系 R&B 流行、中慢板"
+   },
+   "evidence": [
+    "https://music.apple.com/tw/album/sea-of-love/1700800181",
+    "https://musicbrainz.org/release-group/5ee25c3e-2afd-4d30-a97e-e90f71b2dbc4"
+   ],
+   "spotifyName": "Yo-Sea"
+  }
+ ],
+ "notes": [
+  "跳過：Jo-Yu Chen → 池中寫法 陳珊妮（2 張：華盛頓砍倒櫻桃樹、完美的呻吟）",
+  "跳過：Layton Wu → 吳卓源 (MB: Wu, Julia)；curation-ml4.json 已收《1994 依舊舊事》《5 am》，不重複",
+  "跳過：YELLOW黃宣 → curation-ml20.json 已收《浮世擊》，《BEANSTALK》為 8 首 EP 長度不收，不重複",
+  "不收：KUNG 龔敬文（iTunes TW 只有單曲，無正規專輯或 6 首以上長 EP；池內亦無）",
+  "不收：Wendy Gondeln（僅 Fracking EP，5 首，無全長；MB 查無）",
+  "不收：Norton Street 諾頓街（iTunes TW 與搜尋只見單曲，無專輯；MB 查無）",
+  "去重備註：池中 seed_cards 對 徐佳瑩、王心凌、Karencici、Yo-Sea、黃雨晴、老貓偵探社、宝島材料行、庸俗禿鷹 均 0 張；Cyndi Lauper 等為誤中",
+  "label 空白者（王心凌兩張）為 Apple 數位版僅標 Sony/D SOUND 再發，原發行廠牌未查證",
+  "WebSearch 用 6 次；wikipedia zh 原文抓取被擋"
+ ]
+}

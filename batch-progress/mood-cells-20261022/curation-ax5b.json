@@ -1,0 +1,394 @@
+{
+ "group": "ax5b",
+ "factions": [
+  {
+   "id": "us-free-classic",
+   "zh": "美國自由爵士 經典／60-90 年代",
+   "why": "自由爵士與後 Coltrane 時期的集體即興、長篇作品",
+   "count": 4
+  },
+  {
+   "id": "us-improv-noise",
+   "zh": "美國自由即興 噪音化",
+   "why": "尖嘯、無拍、集體噪音、延伸技巧的即興作品",
+   "count": 4
+  },
+  {
+   "id": "us-guitar-extreme",
+   "zh": "美國極端吉他／地下即興",
+   "why": "1980 年代後以吉他為核心的極端即興與實驗",
+   "count": 3
+  }
+ ],
+ "albums": [
+  {
+   "artist": "Sauter & Dietrich",
+   "album": "Bells Together",
+   "year": 1985,
+   "label": "Agaric Records",
+   "country": "us",
+   "faction": "us-improv-noise",
+   "genres": [
+    "jazz",
+    "noise"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "雙薩克斯風把號口對頂吹奏（bells together 技法），是 Borbetomagus 核心兩人最近乎純粹的噪音化集體轟鳴，Furious.com 形容其音樂為「壓倒性、毫不留情的音牆」",
+   "listeners": null,
+   "why": "Jim Sauter 與 Don Dietrich（Borbetomagus 兩位薩克斯風手）1985 年 Agaric 二重奏專輯，兩支薩克斯風號口相抵吹奏，無拍、無旋律的聲音牆",
+   "moodGuess": {
+    "x": 4.9,
+    "y": 1.5,
+    "z": -1.8,
+    "why": "雙薩克斯風對頂的持續高強度噪音牆，無拍無調，刺耳厚重"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/5e3fb837-675a-48ca-b351-f79c412c0e46",
+    "https://api.discogs.com/releases/956530",
+    "https://en.wikipedia.org/wiki/Borbetomagus"
+   ],
+   "mbRgMbid": "5e3fb837-675a-48ca-b351-f79c412c0e46",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "藝人鍵：MB 掛在 Jim Sauter／Don Dietrich 兩人名下，Discogs 署名 Jimmy Sauter, Donny Dietrich；此處合寫為 Sauter & Dietrich（非 Borbetomagus 名義，已 dd 0）。封面 CAA 無，改用 Discogs release 956530 的 primary 圖。分類為二重奏即興，非嚴格爵士，已標 noise。"
+  },
+  {
+   "artist": "Weasel Walter / Mary Halvorson / Peter Evans",
+   "album": "Mechanical Malfunction",
+   "year": 2012,
+   "label": "Thirsty Ear",
+   "country": "us",
+   "faction": "us-improv-noise",
+   "genres": [
+    "jazz"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "Consequence of Sound 評為「表面上粗礪、令人偏頭痛」的混亂自由即興；Weasel Walter 以鼓手主導的高速密集集體即興",
+   "listeners": null,
+   "why": "Weasel Walter（鼓）、Mary Halvorson（吉他）、Peter Evans（小號）2012 年三重奏，高速密集、無拍的集體即興，尖銳而不間斷",
+   "moodGuess": {
+    "x": 4.7,
+    "y": 0.9,
+    "z": -1.6,
+    "why": "高速密集的無調集體即興，尖銳不間斷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/55590243-90ee-4b37-b70a-ce244f21772e",
+    "https://coverartarchive.org/release-group/55590243-90ee-4b37-b70a-ce244f21772e",
+    "https://consequence.net/2012/11/album-review-weasel-walter-mary-halvorson-peter-evans-mechanical-malfunction/"
+   ],
+   "mbRgMbid": "55590243-90ee-4b37-b70a-ce244f21772e",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Weasel Walter 名義下沒找到評論明確稱「最極端」的一張；挑此張因為有可查獨立樂評（Consequence of Sound）稱其粗礪傷神。同為 Walter 領銜的 Sandy Ewen／Damon Smith／Weasel Walter（2012，MB 675ee79e，All About Jazz 稱近噪音）可備選，主線可換。"
+  },
+  {
+   "artist": "Chris Pitsiokos",
+   "album": "Speak in Tongues",
+   "year": 2020,
+   "label": "Relative Pitch Records",
+   "country": "us",
+   "faction": "us-improv-noise",
+   "genres": [
+    "jazz"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "Relative Pitch 描述為把中音薩克斯風語彙撕裂的高鋼索式獨奏，Chicago Reader 稱其「精準與狂怒並存」；獨奏薩克斯風的循環換氣與延伸技巧",
+   "listeners": null,
+   "why": "Chris Pitsiokos 2020 年 Relative Pitch 薩克斯風獨奏專輯，高速、尖銳、無拍，靠延伸技巧把樂器聲音拆散",
+   "moodGuess": {
+    "x": 4.6,
+    "y": 0.2,
+    "z": -1.5,
+    "why": "獨奏中音薩克斯風的高速尖銳吹奏，無拍無調"
+   },
+   "evidence": [
+    "https://relativepitchrecords.bandcamp.com/album/speak-in-tongues",
+    "https://chicagoreader.com/music/new-york-alto-saxophonist-chris-pitsiokos-combines-precision-and-fury/"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": "MusicBrainz 搜尋 artist 頁（00ed15b2）已列 Gordian Twine、Art of the Alto 等，未見 Speak in Tongues 與 Neoplasticity；Bandcamp（Relative Pitch）有此盤",
+   "manualEvidenceUrls": [
+    "https://relativepitchrecords.bandcamp.com/album/speak-in-tongues",
+    "https://www.discogs.com/artist/2971113-Chris-Pitsiokos"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "主線點名的 Neoplasticity（2015）全網查無此盤（WebSearch 與 MB 皆無），已換成同藝人 Speak in Tongues。年份 2020 取自 WebSearch 摘要，未在 Bandcamp 頁內核到日期，請主線核。封面來源 Bandcamp og:image https://f4.bcbits.com/img/a3024127108_5.jpg。"
+  },
+  {
+   "artist": "Elliott Sharp",
+   "album": "Carbon",
+   "year": 1984,
+   "label": "zOaR Records",
+   "country": "us",
+   "faction": "us-guitar-extreme",
+   "genres": [
+    "jazz",
+    "experimental"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "Scaruffi 稱此盤為「最解構的混亂」；Trouser Press 描述吉他、薩克斯風與打擊樂的尖刺節奏，紐約 1980 年代地下即興／No Wave 邊界的代表作",
+   "listeners": null,
+   "why": "Elliott Sharp 與 Carbon 1984 年首張作品，吉他、薩克斯風、單簧管加密集打擊樂，尖刺而支離的紐約地下即興",
+   "moodGuess": {
+    "x": 4.4,
+    "y": 1.0,
+    "z": -1.5,
+    "why": "支離尖刺的節奏與噪音化吉他，緊繃冷硬"
+   },
+   "evidence": [
+    "https://api.discogs.com/releases/1169170",
+    "https://www.discogs.com/master/32898-Elliott-Sharp-Carbon",
+    "https://musicbrainz.org/release-group/c9ba3c52-885f-4582-9e00-1e6527261deb"
+   ],
+   "mbRgMbid": "c9ba3c52-885f-4582-9e00-1e6527261deb",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "此盤偏 No Wave／實驗，與「只收爵士／即興」的界線模糊；主線若嫌偏 no wave 可汰。找不到比它更噪音化且有可信評述的 Sharp 1980s 正規專輯。封面 CAA 無，用 Discogs release 1169170 primary 圖。"
+  },
+  {
+   "artist": "Ocrilim",
+   "album": "Annwn",
+   "year": 2008,
+   "label": "Hydra Head Records",
+   "country": "us",
+   "faction": "us-guitar-extreme",
+   "genres": [
+    "experimental",
+    "metal"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "Mick Barr 的獨奏電吉他以極高速重複音型與炸裂的 shred 堆出無間斷的音牆，在極端金屬／前衛吉他圈被視為其最具野心之作",
+   "listeners": null,
+   "why": "Ocrilim（Mick Barr）2008 年 Hydra Head 專輯，高速、重複、密集的電吉他，無拍點的聲音牆",
+   "moodGuess": {
+    "x": 4.8,
+    "y": 1.2,
+    "z": -1.2,
+    "why": "極高速的重複吉他音型，尖銳密集，持續緊繃"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/78f9bfc3-dc34-305c-afed-71b806c7726e",
+    "https://coverartarchive.org/release-group/78f9bfc3-dc34-305c-afed-71b806c7726e",
+    "https://music.apple.com/us/album/annwn/1787436174"
+   ],
+   "mbRgMbid": "78f9bfc3-dc34-305c-afed-71b806c7726e",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "年份：MB 與 Apple 皆為 2008（主線寫 2007），已採 2008。此盤是作曲式極端吉他，不是爵士／即興，超出本組範圍，建議主線決定是否改歸他組。apexWhy 未取得具名樂評（只有作品特徵），強度依據偏弱。"
+  },
+  {
+   "artist": "Glenn Spearman Double Trio",
+   "album": "Mystery Project",
+   "year": 1992,
+   "label": "Black Saint",
+   "country": "us",
+   "faction": "us-free-classic",
+   "genres": [
+    "jazz"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "Spearman 雙三重奏（兩組貝斯／鼓／薩克斯風）的首張，厚重、持續高強度的後 Coltrane 式吹奏，是其最集中、最激烈的錄音之一",
+   "listeners": null,
+   "why": "Glenn Spearman Double Trio 1992 年錄製、Black Saint 發行，Spearman 與 Larry Ochs 兩支薩克斯風、William Winant 打擊、Lisle Ellis 貝斯，長篇集體即興",
+   "moodGuess": {
+    "x": 4.5,
+    "y": 1.2,
+    "z": -0.8,
+    "why": "兩支薩克斯風加雙節奏組的長篇高強度吹奏，濃密沉重"
+   },
+   "evidence": [
+    "https://en.wikipedia.org/wiki/Mystery_Project",
+    "https://music.apple.com/us/album/mystery-project/305836297"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": "MusicBrainz 搜尋 artist:Glenn Spearman Double Trio 與 releasegroup:Mystery Project 皆無此盤；artist 頁只列 Smokehouse（1994）、The Fields（1996）",
+   "manualEvidenceUrls": [
+    "https://en.wikipedia.org/wiki/Mystery_Project",
+    "https://music.apple.com/us/album/mystery-project/305836297"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "年份：Apple／AllMusic 1992（錄音 1992-08），Wikipedia 1993 發行，採主線的 1992。找不到具名樂評稱其「最極端」，依據偏弱，屬強度高但仍有旋律輪廓的後 Coltrane 路線，可能被判為能量型而汰。封面 Apple。"
+  },
+  {
+   "artist": "Byard Lancaster",
+   "album": "Live at Macalester College",
+   "year": 1972,
+   "label": "Dogtown Records",
+   "country": "us",
+   "faction": "us-free-classic",
+   "genres": [
+    "jazz"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "AllMusic（Thom Jurek）稱「後 Coltrane 自由爵士的驚人紀錄」，薩克斯風／長笛手 Byard Lancaster 與鼓手 J.R. Mitchell 的高強度現場",
+   "listeners": null,
+   "why": "Byard Lancaster 與 J.R. Mitchell 1972 年 Dogtown 現場專輯，錄於波士頓與 Macalester College，長篇尖銳吹奏與鼓的對轟",
+   "moodGuess": {
+    "x": 4.3,
+    "y": 0.6,
+    "z": -0.6,
+    "why": "高強度的薩克斯風與鼓對轟，粗礪但帶靈性"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/6e939ecc-4574-4136-a905-37049ab1f4e4",
+    "https://coverartarchive.org/release-group/6e939ecc-4574-4136-a905-37049ab1f4e4",
+    "https://en.wikipedia.org/wiki/Live_at_Macalester_College"
+   ],
+   "mbRgMbid": "6e939ecc-4574-4136-a905-37049ab1f4e4",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "本盤是 Lancaster 最受評論的現場盤，無對應棚錄專輯",
+   "queryAlias": "Live At Macalester College 72",
+   "uncertain": "MB 標題為 Live At Macalester College 72、藝人 Byard Lancaster Unit，Wikipedia 署名 J.R. Mitchell／Byard Lancaster Experience；已用 queryAlias 保留 MB 標題。AllMusic 4 星、AAJ 3 星，評價分歧，AAJ 認為拼湊感重。"
+  },
+  {
+   "artist": "Airway",
+   "album": "Live at LACE",
+   "year": 1978,
+   "label": "Los Angeles Free Music Society",
+   "country": "us",
+   "faction": "us-improv-noise",
+   "genres": [
+    "jazz",
+    "noise"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "LAFMS 旗下 Airway 1978 年現場，Wikipedia 描述為在噪音牆下以磁帶延遲埋入潛意識訊息，據稱影響日本 Hijokaidan 等噪音團；被歸為美國自由即興團體",
+   "listeners": null,
+   "why": "Airway 1978 年 8 月在 LACE 畫廊的首場現場，電子、曼陀林、薩克斯風、貝斯、鼓與人聲，在磁帶延遲製造的噪音牆中即興",
+   "moodGuess": {
+    "x": 4.3,
+    "y": 1.2,
+    "z": -1.4,
+    "why": "磁帶延遲與多樂器堆出的噪音牆，混濁壓迫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/416b6f92-b54a-45a0-bd61-4365c88e9c27",
+    "https://coverartarchive.org/release-group/416b6f92-b54a-45a0-bd61-4365c88e9c27",
+    "https://en.wikipedia.org/wiki/Airway_(band)"
+   ],
+   "mbRgMbid": "416b6f92-b54a-45a0-bd61-4365c88e9c27",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "Airway 的代表作即此現場盤（1978 首演），無棚錄正規專輯",
+   "queryAlias": "",
+   "uncertain": "MB 的主類型為空（只標 Live），屬現場；偏 LAFMS 實驗噪音而非爵士，強度依據來自 Wikipedia，無具名樂評，主線自行判斷是否算爵士／即興。"
+  },
+  {
+   "artist": "Lester Bowie",
+   "album": "Numbers 1 & 2",
+   "year": 1967,
+   "label": "Nessa Records",
+   "country": "us",
+   "faction": "us-free-classic",
+   "genres": [
+    "jazz"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "Rolling Stone Jazz Record Guide 給五顆星；後來的 Art Ensemble of Chicago 雛形（Bowie、Mitchell、Favors、Jarman）以兩段約 22 與 24 分鐘的集體即興開啟芝加哥 AACM 前衛路線",
+   "listeners": null,
+   "why": "Lester Bowie 1967 年 Nessa 專輯，兩面各一首二十分鐘上下的自由集體即興，用空間與小樂器、無拍點展開",
+   "moodGuess": {
+    "x": 3.2,
+    "y": -0.4,
+    "z": -1.0,
+    "why": "長篇稀疏的集體即興，緊張但不喧囂"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/148caab8-75f7-4eb4-8e92-136af22d4935",
+    "https://coverartarchive.org/release-group/148caab8-75f7-4eb4-8e92-136af22d4935",
+    "https://en.wikipedia.org/wiki/Numbers_1_%26_2"
+   ],
+   "mbRgMbid": "148caab8-75f7-4eb4-8e92-136af22d4935",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "AllMusic（Yanow）形容為「自發、漫遊、善用空間」，並非尖嘯或噪音化，極端程度偏弱，屬無拍、超長篇的路線；主線可汰。"
+  },
+  {
+   "artist": "Henry Kaiser",
+   "album": "Outside Pleasure",
+   "year": 1980,
+   "label": "Metalanguage",
+   "country": "us",
+   "faction": "us-guitar-extreme",
+   "genres": [
+    "jazz",
+    "experimental"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "Kaiser 1979 年於舊金山現場錄的電吉他獨奏即興，Soundohm 稱為從未完整重發的冒險獨奏吉他作品",
+   "listeners": null,
+   "why": "Henry Kaiser 1980 年 Metalanguage 獨奏吉他即興，八首，錄於 Fort Mason Center 與柏克萊，含收音機聲",
+   "moodGuess": {
+    "x": 3.8,
+    "y": 0.6,
+    "z": -1.0,
+    "why": "獨奏電吉他的無拍噪音化即興，緊繃偏冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/8d5c48c8-5d23-4f2f-82d5-2a309dd33a3e",
+    "https://coverartarchive.org/release-group/8d5c48c8-5d23-4f2f-82d5-2a309dd33a3e",
+    "https://www.discogs.com/master/276975-Henry-Kaiser-Outside-Pleasure"
+   ],
+   "mbRgMbid": "8d5c48c8-5d23-4f2f-82d5-2a309dd33a3e",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "找不到正式樂評稱其極端（只有 Soundohm 商品說明與一篇可疑 Substack），Discogs 4.5／5（12 人）。依據偏弱，建議主線視同候補。"
+  },
+  {
+   "artist": "Kidd Jordan",
+   "album": "Trio and Duo in New Orleans",
+   "year": 2013,
+   "label": "NoBusiness Records",
+   "country": "us",
+   "faction": "us-free-classic",
+   "genres": [
+    "jazz"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "Free Jazz Collective 給 4.5 星，All About Jazz 稱二重奏〈Duo Flight〉是充滿能量的核心；Kidd Jordan 與 Alvin Fielder 以及 Peter Kowald 的高強度現場自由即興",
+   "listeners": null,
+   "why": "Kidd Jordan（薩克斯風）、Alvin Fielder（鼓）、Peter Kowald（貝斯）2013 年 NoBusiness 發行的新奧爾良現場，三重奏與二重奏的連續高強度吹奏",
+   "moodGuess": {
+    "x": 4.5,
+    "y": 0.8,
+    "z": -0.6,
+    "why": "高強度的薩克斯風與鼓貝斯對轟，粗獷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/b3a058b9-9d4e-45fa-8812-fc7f1d06e6fe",
+    "https://coverartarchive.org/release-group/b3a058b9-9d4e-45fa-8812-fc7f1d06e6fe",
+    "https://www.freejazzblog.org/2014/01/kidd-jordanalvin-fielderpeter-kowald.html",
+    "https://www.allaboutjazz.com/trio-and-duo-in-new-orleans-kidd-jordan-nobusiness-records-review-by-john-sharpe"
+   ],
+   "mbRgMbid": "b3a058b9-9d4e-45fa-8812-fc7f1d06e6fe",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 國別標立陶宛（發行廠），錄音在美國已標 us。Kidd Jordan 的專輯評述多為「能量／激烈」，未見「噪音化」類具體稱法，可能被判為能量型。主線點名的資料最充分一張即此。Jim Sauter＆Don Dietrich 已交 Bells Together；Sonny Sharrock 名下其餘正規專輯皆在卡池或不夠尖嘯，已跳過。"
+  }
+ ],
+ "notes": [
+  "Sonny Sharrock：Black Woman、Monkey-Pockie-Boo、Ask the Ages 皆已在卡池，其餘正規專輯（Paradise、Guitar 等）不夠尖嘯，跳過。",
+  "Chris Pitsiokos《Neoplasticity》查無，換成 Speak in Tongues。Elliott Sharp 以 Carbon 代表，偏 No Wave。",
+  "Ocrilim 為作曲式極端吉他，不屬爵士／即興；Henry Kaiser、Lester Bowie、Glenn Spearman 三張依據偏弱。",
+  "Albert Ayler Spirits Rejoice 已在卡池（dd 1），New York Eye and Ear Control 為多人名義配樂盤，未提。額外自補未成：資料足夠且不重複的美國極端自由爵士在搜尋預算內找不到更多，照實交 11 張。",
+  "封面：Sauter&Dietrich 與 Elliott Sharp 用 Discogs；Pitsiokos 用 Bandcamp；Spearman 用 Apple；其餘 CAA。"
+ ]
+}

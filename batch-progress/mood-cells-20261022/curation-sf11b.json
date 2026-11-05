@@ -1,0 +1,495 @@
+{
+ "group": "sf11b",
+ "factions": [
+  {
+   "id": "tw-beats",
+   "zh": "台灣節拍製作",
+   "count": 2,
+   "why": ""
+  },
+  {
+   "id": "tw-indie",
+   "zh": "台灣獨立",
+   "count": 3,
+   "why": ""
+  },
+  {
+   "id": "global-club",
+   "zh": "跨國電子舞曲",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "uk-electronic",
+   "zh": "英國電子",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "by-postpunk",
+   "zh": "白俄後龐克",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "il-world",
+   "zh": "以色列世界音樂",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "it-funk",
+   "zh": "義大利放克爵士",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "jp-rock",
+   "zh": "日本搖滾",
+   "count": 2,
+   "why": ""
+  },
+  {
+   "id": "be-coldwave",
+   "zh": "比利時 coldwave",
+   "count": 2,
+   "why": ""
+  }
+ ],
+ "albums": [
+  {
+   "artist": "pololu",
+   "album": "A Ghost Shaped Lotus",
+   "year": 2023,
+   "label": "",
+   "country": "tw",
+   "faction": "tw-beats",
+   "genres": [
+    "electronic",
+    "hiphop"
+   ],
+   "why": "台灣 beatmaker 最完整的長篇專輯（12 首），Flow State Records 一系列單曲的前身風格",
+   "moodGuess": {
+    "x": -0.3,
+    "y": -0.5,
+    "z": 0.0,
+    "why": "鬆軟採樣節拍，安靜夢幻"
+   },
+   "evidence": [
+    "https://music.apple.com/tw/album/a-ghost-shaped-lotus/1798940376",
+    "https://www.discogs.com/artist/13276194-Pololu"
+   ],
+   "spotifyName": "pololu",
+   "mbRgMbid": "",
+   "mbAbsenceProof": "MB 無此藝人",
+   "manualEvidenceUrls": [
+    "https://music.apple.com/tw/album/a-ghost-shaped-lotus/1798940376",
+    "https://www.discogs.com/artist/13276194-Pololu"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "身分靠 iTunes+Discogs；無評論共識，12 首長盤取其完整度"
+  },
+  {
+   "artist": "Posh Inverse 優雅逆轉",
+   "album": "我想要的都在這裡",
+   "year": 2016,
+   "label": "",
+   "country": "tw",
+   "faction": "tw-indie",
+   "genres": [
+    "rock",
+    "pop"
+   ],
+   "why": "台灣獨立樂團優雅逆轉的首張正規專輯",
+   "moodGuess": {
+    "x": -0.2,
+    "y": -0.2,
+    "z": 0.0,
+    "why": "清亮吉他與抒情嗓音"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/ee62ea2f-2e1a-493e-b7e8-ef3ea3040f60",
+    "https://musicbrainz.org/release-group/ee62ea2f-2e1a-493e-b7e8-ef3ea3040f60",
+    "https://music.apple.com/tw/search?term=Posh+Inverse"
+   ],
+   "spotifyName": "Posh Inverse",
+   "mbRgMbid": "ee62ea2f-2e1a-493e-b7e8-ef3ea3040f60",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "iTunes 名為 This Is All I Need（9 首）；池中寫法需與店主確認（Posh Inverse 優雅逆轉）"
+  },
+  {
+   "artist": "PUZZLEMAN",
+   "album": "睏前愛用PUZZLEMAN",
+   "year": 2021,
+   "label": "",
+   "country": "tw",
+   "faction": "tw-beats",
+   "genres": [
+    "hiphop",
+    "electronic"
+   ],
+   "why": "台灣 beatmaker PUZZLEMAN 的 13 首專輯，含黃玠、薛詒丹合作曲",
+   "moodGuess": {
+    "x": -0.3,
+    "y": -0.4,
+    "z": 0.0,
+    "why": "暖調採樣節拍，睡前放鬆"
+   },
+   "evidence": [
+    "https://music.apple.com/tw/album/%E7%9D%8F%E5%89%8D%E6%84%9B%E7%94%A8puzzleman/1558991144",
+    "https://www.discogs.com/artist/16569935-PUZZLEMAN"
+   ],
+   "spotifyName": "PUZZLEMAN",
+   "mbRgMbid": "",
+   "mbAbsenceProof": "MB 無此藝人",
+   "manualEvidenceUrls": [
+    "https://music.apple.com/tw/album/%E7%9D%8F%E5%89%8D%E6%84%9B%E7%94%A8puzzleman/1558991144",
+    "https://www.discogs.com/artist/16569935-PUZZLEMAN"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "無評論共識，取最新完整專輯；另有 2017 Organic Melodies、2022 上山採樣"
+  },
+  {
+   "artist": "Skip Skip Ben Ben",
+   "album": "鏡中鏡 Mirror in Mirror",
+   "year": 2015,
+   "label": "",
+   "country": "tw",
+   "faction": "tw-indie",
+   "genres": [
+    "rock",
+    "electronic"
+   ],
+   "why": "台灣後搖／電子樂團代表作，《無限大》《海嘯列車》時期之前的成熟專輯",
+   "moodGuess": {
+    "x": -0.1,
+    "y": 0.1,
+    "z": 0.2,
+    "why": "迷幻合成器與流動節奏"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/bedee95b-a1c9-48eb-891b-ffa136970628",
+    "https://music.apple.com/tw/album/%E9%8F%A1%E4%B8%AD%E9%8F%A1/1207167345"
+   ],
+   "spotifyName": "skip skip ben ben",
+   "mbRgMbid": "bedee95b-a1c9-48eb-891b-ffa136970628",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Spotify 熱門曲（交雜隕石、無限大、海嘯列車）可能來自較新專輯；MB 只列到 2015，需店主確認"
+  },
+  {
+   "artist": "Sonia Calico",
+   "album": "Simulation Of An Overloaded World",
+   "year": 2020,
+   "label": "",
+   "country": "jp",
+   "faction": "global-club",
+   "genres": [
+    "electronic",
+    "world"
+   ],
+   "why": "東京／台北圈電子製作人 Sonia Calico 唯一完整長盤，混合 afro 與亞洲民俗取樣",
+   "moodGuess": {
+    "x": 0.4,
+    "y": 0.3,
+    "z": 0.5,
+    "why": "繁複打擊樂與電子舞曲"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/a1ffb60a-2cc5-4029-95e6-0cc1fc474b2c",
+    "https://musicbrainz.org/release-group/a1ffb60a-2cc5-4029-95e6-0cc1fc474b2c"
+   ],
+   "spotifyName": "Sonia Calico",
+   "mbRgMbid": "a1ffb60a-2cc5-4029-95e6-0cc1fc474b2c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "國籍不確定（熱門曲含中文，東京民謠主題），country 暫填 jp"
+  },
+  {
+   "artist": "Space Raiders",
+   "album": "Hot Cakes",
+   "year": 2000,
+   "label": "",
+   "country": "gb",
+   "faction": "uk-electronic",
+   "genres": [
+    "electronic"
+   ],
+   "why": "英國 Space Raiders 的 big beat／downtempo 代表專輯，含 Beautiful Crazy、Glam Raid",
+   "moodGuess": {
+    "x": 0.3,
+    "y": 0.4,
+    "z": 0.3,
+    "why": "復古合成器與律動鼓組"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/44d76c59-8618-3348-bb50-23058b96fa53",
+    "https://music.apple.com/us/album/hot-cakes/1435788165"
+   ],
+   "spotifyName": "Space Raiders",
+   "mbRgMbid": "44d76c59-8618-3348-bb50-23058b96fa53",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Super Besse",
+   "album": "la nuit*",
+   "year": 2017,
+   "label": "",
+   "country": "by",
+   "faction": "by-postpunk",
+   "genres": [
+    "rock"
+   ],
+   "why": "白俄羅斯 cold wave／post-punk 樂團的第二張專輯，俄語冷冽",
+   "moodGuess": {
+    "x": -0.4,
+    "y": 0.2,
+    "z": 0.2,
+    "why": "冷調合成器與俄語吟唱"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/06e6cac1-4e67-4743-bede-f6da0460e7e0",
+    "https://music.apple.com/us/album/la-nuit/1293244193"
+   ],
+   "spotifyName": "Super Besse",
+   "mbRgMbid": "06e6cac1-4e67-4743-bede-f6da0460e7e0",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "另有 Un Rêve 2020、Tristesse 2022 也受歡迎"
+  },
+  {
+   "artist": "Dudu Tassa & the Kuwaitis",
+   "album": "El Hajar",
+   "year": 2019,
+   "label": "",
+   "country": "il",
+   "faction": "il-world",
+   "genres": [
+    "world",
+    "rock"
+   ],
+   "why": "以色列 Dudu Tassa 重新詮釋科威特猶太音樂人遺產的代表作",
+   "moodGuess": {
+    "x": 0.1,
+    "y": 0.2,
+    "z": 0.4,
+    "why": "阿拉伯旋律配搖滾編制"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/598babc0-bb42-48eb-817f-4f1079ccdcff",
+    "https://music.apple.com/us/album/el-hajar/1742819116"
+   ],
+   "spotifyName": "The Kuwaitis",
+   "mbRgMbid": "598babc0-bb42-48eb-817f-4f1079ccdcff",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Spotify 名 The Kuwaitis＝Dudu Tassa & the Kuwaitis；sf12b 另有 Dudu Tassa，掛名不同"
+  },
+  {
+   "artist": "The Luvmenauts",
+   "album": "Ephemera",
+   "year": 2024,
+   "label": "",
+   "country": "it",
+   "faction": "it-funk",
+   "genres": [
+    "jazz",
+    "soul"
+   ],
+   "why": "義大利 Luvmenauts 太空爵士放克樂隊近作（MB 唯一收錄）",
+   "moodGuess": {
+    "x": 0.3,
+    "y": 0.3,
+    "z": 0.4,
+    "why": "宇宙放克與爵士即興"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/fb1fe3d9-0274-41fb-9eed-6fa8a28ad539",
+    "https://music.apple.com/us/album/ephemera/6773040670"
+   ],
+   "spotifyName": "The Luvmenauts",
+   "mbRgMbid": "fb1fe3d9-0274-41fb-9eed-6fa8a28ad539",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "國籍未證實（暫填 it）；無評論共識，熱門曲可能來自 In Space／Presenting..."
+  },
+  {
+   "artist": "The Sign Of Human 記號士",
+   "album": "為時間做過的註解",
+   "year": 2014,
+   "label": "",
+   "country": "tw",
+   "faction": "tw-indie",
+   "genres": [
+    "rock"
+   ],
+   "why": "台灣樂團 The Sign Of Human（記號士）首張專輯，含〈二十七樓大廈〉",
+   "moodGuess": {
+    "x": -0.2,
+    "y": 0.0,
+    "z": 0.1,
+    "why": "抒情搖滾，中文歌詞"
+   },
+   "evidence": [
+    "https://music.apple.com/us/album/%E7%82%BA%E6%99%82%E9%96%93%E5%81%9A%E9%81%8E%E7%9A%84%E8%A8%BB%E8%A7%A3/893291242",
+    "https://www.discogs.com/artist/13213701"
+   ],
+   "spotifyName": "The Sign Of Human",
+   "mbRgMbid": "",
+   "mbAbsenceProof": "MB 無此藝人",
+   "manualEvidenceUrls": [
+    "https://music.apple.com/us/album/%E7%82%BA%E6%99%82%E9%96%93%E5%81%9A%E9%81%8E%E7%9A%84%E8%A8%BB%E8%A7%A3/893291242",
+    "https://www.discogs.com/artist/13213701"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "國別（台／港）未證實；2018《重建》為另一選項"
+  },
+  {
+   "artist": "特撮",
+   "album": "ヌイグルマー",
+   "year": 2000,
+   "label": "",
+   "country": "jp",
+   "faction": "jp-rock",
+   "genres": [
+    "rock"
+   ],
+   "why": "大槻ケンヂ組成的特撮，第二張專輯，奠定重搖滾加怪奇歌詞的風格",
+   "moodGuess": {
+    "x": 0.6,
+    "y": 0.4,
+    "z": 0.5,
+    "why": "重型吉他加戲劇化唱腔"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/7ec3b095-10eb-49f5-b9b1-12d33f2bb78c",
+    "https://musicbrainz.org/release-group/7ec3b095-10eb-49f5-b9b1-12d33f2bb78c"
+   ],
+   "spotifyName": "Tokusatsu",
+   "mbRgMbid": "7ec3b095-10eb-49f5-b9b1-12d33f2bb78c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "熱門曲對應哪張專輯未逐曲核對"
+  },
+  {
+   "artist": "特撮",
+   "album": "爆誕",
+   "year": 2000,
+   "label": "",
+   "country": "jp",
+   "faction": "jp-rock",
+   "genres": [
+    "rock"
+   ],
+   "why": "特撮首張專輯",
+   "moodGuess": {
+    "x": 0.6,
+    "y": 0.4,
+    "z": 0.5,
+    "why": "重型吉他加戲劇化唱腔"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/763d5913-6a46-4d16-892d-ea577b1fef00",
+    "https://musicbrainz.org/release-group/763d5913-6a46-4d16-892d-ea577b1fef00"
+   ],
+   "spotifyName": "Tokusatsu",
+   "mbRgMbid": "763d5913-6a46-4d16-892d-ea577b1fef00",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "第二張候選；如只收一張可刪此張"
+  },
+  {
+   "artist": "ULTRA SUNN",
+   "album": "US",
+   "year": 2024,
+   "label": "",
+   "country": "be",
+   "faction": "be-coldwave",
+   "genres": [
+    "electronic",
+    "rock"
+   ],
+   "why": "比利時 coldwave／EBM 二人組的首張正規專輯",
+   "moodGuess": {
+    "x": 0.3,
+    "y": 0.3,
+    "z": 0.5,
+    "why": "冷冽合成器與電子節拍"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/7efea862-fd2e-4091-b42f-9b2ae98ae758",
+    "https://music.apple.com/us/album/us/1726038404"
+   ],
+   "spotifyName": "ULTRA SUNN",
+   "mbRgMbid": "7efea862-fd2e-4091-b42f-9b2ae98ae758",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "ULTRA SUNN",
+   "album": "The Beast in You",
+   "year": 2025,
+   "label": "",
+   "country": "be",
+   "faction": "be-coldwave",
+   "genres": [
+    "electronic",
+    "rock"
+   ],
+   "why": "2025 新作，第二張正規專輯，含同名主打",
+   "moodGuess": {
+    "x": 0.3,
+    "y": 0.3,
+    "z": 0.5,
+    "why": "冷冽合成器與電子節拍"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/188b7a73-6ae4-482d-9464-166475efc200",
+    "https://music.apple.com/us/album/the-beast-in-you/1818826684"
+   ],
+   "spotifyName": "ULTRA SUNN",
+   "mbRgMbid": "188b7a73-6ae4-482d-9464-166475efc200",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "第二張候選；新作尚無長期評價"
+  }
+ ],
+ "notes": [
+  "跳過：Scattered Purgatory → 池中寫法 破地獄（1 張）",
+  "不收：sloje（只有單曲與 4 首 EP nylon，無正規專輯）",
+  "不收：ZipZap（日本，Spotify 熱門曲為羅馬拼音單曲；MB 僅 code:December 一張且無法確認是同一人；iTunes 僅單曲／EP）",
+  "不收：Whyte（台灣華語流行，只找到 2025《Boundary》9 首一張與 iTunes 單一來源，缺第二來源且無共識）",
+  "不收：Nice Face（MB／iTunes 有 Immer Etwas 2010、Horizon Fires 2012，但無評論共識且無法對上 Spotify 熱門曲所屬專輯，身分不穩）",
+  "疑點：pololu、PUZZLEMAN、The Sign Of Human 走人工身分；Skip Skip Ben Ben 近期專輯 MB 缺漏，建議店主確認是否有更新代表作",
+  "WebSearch 使用 0 次；身分用 MB／iTunes／Discogs API 與主線 Spotify top.txt 核對"
+ ]
+}

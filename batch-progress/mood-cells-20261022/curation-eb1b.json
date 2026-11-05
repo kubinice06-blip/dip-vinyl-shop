@@ -1,0 +1,843 @@
+{
+ "group": "eb1b",
+ "factions": [
+  {
+   "id": "yu-pgp",
+   "zh": "南斯拉夫 PGP-RTB（貝爾格勒）",
+   "count": 13,
+   "why": ""
+  },
+  {
+   "id": "yu-jugoton",
+   "zh": "南斯拉夫 Jugoton（札格拉布）",
+   "count": 2,
+   "why": ""
+  },
+  {
+   "id": "yu-slovenia",
+   "zh": "南斯拉夫 斯洛維尼亞 RTV Ljubljana",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "bg-balkanton",
+   "zh": "保加利亞 Balkanton",
+   "count": 8,
+   "why": ""
+  },
+  {
+   "id": "ro-electrecord",
+   "zh": "羅馬尼亞 Electrecord（補遺）",
+   "count": 1,
+   "why": ""
+  }
+ ],
+ "albums": [
+  {
+   "artist": "Dusko Goykovich",
+   "album": "Belgrade Blues",
+   "year": 1967,
+   "label": "PGP RTB",
+   "country": "yu",
+   "faction": "yu-pgp",
+   "genres": [
+    "jazz"
+   ],
+   "why": "南斯拉夫爵士史上最常被提起的國營廠硬咆勃／調式專輯：Gojković 在貝爾格勒與美國獨奏家 Sal Nistico、Carl Fontana 合錄，PGP RTB 原版",
+   "moodGuess": {
+    "x": 3.3,
+    "y": 0.3,
+    "z": 0.6,
+    "why": "硬咆勃／調式，旋律清楚，搖擺推進"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/561714-The-Duško-Gojković-Sextet-Featuring-Sal-Nistico-And-Carl-Fontana-Belgrade-Blues",
+    "https://www.discogs.com/release/5046024",
+    "https://i.discogs.com/WYsasqUbGtUjr5yUElTn13jgOo1EDHm4Ex-NbhEOMko/rs:fit/g:sm/q:90/h:600/w:596/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTUwNDYw/MjQtMTczOTk4NDQ0/Mi01NjM4LmpwZWc.jpeg"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": "MusicBrainz release-group 搜尋藝人＋盤名皆無結果（2026-11-01）；國營廠盤以 Discogs master 與主發行頁建立身分",
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/561714-The-Duško-Gojković-Sextet-Featuring-Sal-Nistico-And-Carl-Fontana-Belgrade-Blues",
+    "https://www.discogs.com/release/5046024"
+   ],
+   "releaseException": "",
+   "queryAlias": "Duško Gojković",
+   "uncertain": "在地錄製於貝爾格勒；Goykovich 西方期（Enja／MPS）留給 eb5"
+  },
+  {
+   "artist": "Dusko Goykovich",
+   "album": "Internacionalni jazz oktet Duška Gojkovića sa Keni Klarkom",
+   "year": 1961,
+   "label": "PGP RTB",
+   "country": "yu",
+   "faction": "yu-pgp",
+   "genres": [
+    "jazz"
+   ],
+   "why": "南斯拉夫第一代現代爵士的奠基錄音，Gojković 八重奏加 Kenny Clarke 客席，PGP RTB 早期 10 吋",
+   "moodGuess": {
+    "x": 3.0,
+    "y": 0.1,
+    "z": 0.7,
+    "why": "冷派硬咆勃，旋律清楚、不躁"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/493508-Duško-Gojković-Kenny-Clarke-Internacionalni-Jazz-Oktet-Duška-Gojkovića-Sa-Keni-Klarkom",
+    "https://www.discogs.com/release/4046446",
+    "https://i.discogs.com/xSpR0RfRULwKO0NHdpT8NZ3qg1p3PLGyIH1uY_tE4a0/rs:fit/g:sm/q:90/h:598/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQwNDY0/NDYtMTQ5NDk3MzUy/OC0xNzA0LmpwZWc.jpeg"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": "MusicBrainz release-group 搜尋藝人＋盤名皆無結果（2026-11-01）；國營廠盤以 Discogs master 與主發行頁建立身分",
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/493508-Duško-Gojković-Kenny-Clarke-Internacionalni-Jazz-Oktet-Duška-Gojkovića-Sa-Keni-Klarkom",
+    "https://www.discogs.com/release/4046446"
+   ],
+   "releaseException": "10 吋 LP 六首，但屬完整專輯，且是南斯拉夫現代爵士首批 LP",
+   "queryAlias": "Duško Gojković Kenny Clarke Internacionalni Jazz Oktet",
+   "uncertain": "10 吋形式；若主線不收 10 吋可汰換"
+  },
+  {
+   "artist": "Trumpets & Rhythm Unit",
+   "album": "Trumpets & Rhythm Unit",
+   "year": 1979,
+   "label": "PGP RTB",
+   "country": "yu",
+   "faction": "yu-pgp",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Duško Gojković 與 Lala Kovačev 雙小號對峙的 PGP RTB 錄音室專輯，南斯拉夫後期硬咆勃代表作",
+   "moodGuess": {
+    "x": 3.3,
+    "y": 0.2,
+    "z": 0.6,
+    "why": "雙小號 bop 快板，旋律明確"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/253610-Trumpets-Rhythm-Unit-Gojković-Kovačev-Trumpets-Rhythm-Unit",
+    "https://www.discogs.com/release/634442",
+    "https://i.discogs.com/MZxFixc27P4vNKZrC1NTzLnI5O-EUz6NtkCkQPsDjY8/rs:fit/g:sm/q:90/h:594/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTYzNDQ0/Mi0xNDQ4MzAzNzQy/LTk5MDUuanBlZw.jpeg"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": "MusicBrainz release-group 搜尋藝人＋盤名皆無結果（2026-11-01）；國營廠盤以 Discogs master 與主發行頁建立身分",
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/253610-Trumpets-Rhythm-Unit-Gojković-Kovačev-Trumpets-Rhythm-Unit",
+    "https://www.discogs.com/release/634442"
+   ],
+   "releaseException": "",
+   "queryAlias": "Gojković Kovačev Trumpets & Rhythm Unit",
+   "uncertain": "藝人名取封面團名；Gojković／Kovačev 為領銜者"
+  },
+  {
+   "artist": "Bora Roković",
+   "album": "III sastanak u studiju",
+   "year": 1961,
+   "label": "PGP RTB",
+   "country": "yu",
+   "faction": "yu-pgp",
+   "genres": [
+    "jazz"
+   ],
+   "why": "貝爾格勒爵士鋼琴手 Borislav Roković 三重奏的 PGP RTB「棚內相會」系列第三輯，早期南斯拉夫硬咆勃代表盤；Roković 後來才赴西德（MPS《Ultra Native》留給 eb5）",
+   "moodGuess": {
+    "x": 2.8,
+    "y": 0.2,
+    "z": 0.7,
+    "why": "小編制硬咆勃，輕快好入耳"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/567751-Trio-Borislava-Rokovića-Sa-Milanom-Stojanovićem-I-Vojislavom-Đonovićem-III-Sastanak-U-Studiju",
+    "https://www.discogs.com/release/4668704",
+    "https://i.discogs.com/7-uQg_DfzQaOoMpicaEDSuGgCSFubXJgY0Vb-8mzKwc/rs:fit/g:sm/q:90/h:600/w:598/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ2Njg3/MDQtMTQ4MTY1NTAz/Ni00MDg5LmpwZWc.jpeg"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": "MusicBrainz release-group 搜尋藝人＋盤名皆無結果（2026-11-01）；國營廠盤以 Discogs master 與主發行頁建立身分",
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/567751-Trio-Borislava-Rokovića-Sa-Milanom-Stojanovićem-I-Vojislavom-Đonovićem-III-Sastanak-U-Studiju",
+    "https://www.discogs.com/release/4668704"
+   ],
+   "releaseException": "",
+   "queryAlias": "Trio Borislava Rokovića III Sastanak U Studiju",
+   "uncertain": "10 吋形式"
+  },
+  {
+   "artist": "Jack Dieval",
+   "album": "II sastanak u studiju",
+   "year": 1961,
+   "label": "PGP RTB",
+   "country": "yu",
+   "faction": "yu-pgp",
+   "genres": [
+    "jazz"
+   ],
+   "why": "法國鋼琴手 Jack Dieval 在貝爾格勒錄的 PGP RTB「棚內相會」系列第二輯，與 Bora Roković 那張並稱南斯拉夫爵士起點",
+   "moodGuess": {
+    "x": 2.7,
+    "y": 0.1,
+    "z": 0.7,
+    "why": "抒情硬咆勃四重奏"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/567750-Jack-Dieval-I-Njegov-Kvartet-Sa-Eduardom-Sadjilom-I-Predragom-Ivanovićem-II-Sastanak-U-Studiju",
+    "https://www.discogs.com/release/4668644",
+    "https://i.discogs.com/j5XhtaO34UGxQzG1ChBkoZXQlmItWKVXnvGMBFFWtb8/rs:fit/g:sm/q:90/h:591/w:591/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ2Njg2/NDQtMTM3MTY2MTE1/OS02NTMxLmpwZWc.jpeg"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": "MusicBrainz release-group 搜尋藝人＋盤名皆無結果（2026-11-01）；國營廠盤以 Discogs master 與主發行頁建立身分",
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/567750-Jack-Dieval-I-Njegov-Kvartet-Sa-Eduardom-Sadjilom-I-Predragom-Ivanovićem-II-Sastanak-U-Studiju",
+    "https://www.discogs.com/release/4668644"
+   ],
+   "releaseException": "",
+   "queryAlias": "Jack Dieval Quartet Sastanak U Studiju",
+   "uncertain": "10 吋形式"
+  },
+  {
+   "artist": "Jazz Orkestar Radio-Televizije Beograd",
+   "album": "Jazz Orkestar Radio-Televizije Beograd",
+   "year": 1963,
+   "label": "PGP RTB",
+   "country": "yu",
+   "faction": "yu-pgp",
+   "genres": [
+    "jazz"
+   ],
+   "why": "貝爾格勒廣播爵士大樂團的第一張 LP，Count Basie 致敬到 Afro-Cuban 曼波，代表南斯拉夫大樂團傳統",
+   "moodGuess": {
+    "x": 3.4,
+    "y": 0.4,
+    "z": 0.6,
+    "why": "大樂團擺盪＋曼波，熱鬧"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/1740242-Jazz-Orkestar-Radio-Televizije-Beograd-Jazz-Orkestar-Radio-Televizije-Beograd-",
+    "https://www.discogs.com/release/15324684",
+    "https://i.discogs.com/Jx6QdVR-a9kWGQameMKxHYTpvxs_DTpGf_iu372cwiM/rs:fit/g:sm/q:90/h:600/w:597/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1MzI0/Njg0LTE2MDU2MzY4/MjEtNTk0Ny5qcGVn.jpeg"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": "MusicBrainz release-group 搜尋藝人＋盤名皆無結果（2026-11-01）；國營廠盤以 Discogs master 與主發行頁建立身分",
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/1740242-Jazz-Orkestar-Radio-Televizije-Beograd-Jazz-Orkestar-Radio-Televizije-Beograd-",
+    "https://www.discogs.com/release/15324684"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "1978 年同名雙 LP（master 484874）為另一高峰，此處只提 1963"
+  },
+  {
+   "artist": "Marković-Gut Sextet",
+   "album": "Marković-Gut Sextet",
+   "year": 1980,
+   "label": "PGP RTB",
+   "country": "yu",
+   "faction": "yu-pgp",
+   "genres": [
+    "jazz"
+   ],
+   "why": "薩克斯風 Marković 與長號／編曲 Stjepko Gut 的六重奏，80 年代 PGP RTB 咆勃正規盤",
+   "moodGuess": {
+    "x": 3.2,
+    "y": 0.3,
+    "z": 0.6,
+    "why": "咆勃重奏，Oleo 等標準曲，旋律清楚"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/1150183-Marković-Gut-Sextet-Marković-Gut-Sextet",
+    "https://www.discogs.com/release/3625227",
+    "https://i.discogs.com/dKYe5hzuYGwLu9GaH9cRjRBqy-8eGqLVuzrMh3I_lFI/rs:fit/g:sm/q:90/h:403/w:400/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM2MjUy/MjctMTMzNzg2MDUy/Mi02MDI4LmpwZWc.jpeg"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": "MusicBrainz release-group 搜尋藝人＋盤名皆無結果（2026-11-01）；國營廠盤以 Discogs master 與主發行頁建立身分",
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/1150183-Marković-Gut-Sextet-Marković-Gut-Sextet",
+    "https://www.discogs.com/release/3625227"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Lala Kovačev Group",
+   "album": "Balkan Impressions",
+   "year": 1982,
+   "label": "PGP RTB",
+   "country": "yu",
+   "faction": "yu-pgp",
+   "genres": [
+    "jazz",
+    "world"
+   ],
+   "why": "塞爾維亞薩克斯風 Lala Kovačev 把巴爾幹舞曲節奏與爵士即興焊在一起的 PGP RTB 代表作",
+   "moodGuess": {
+    "x": 3.6,
+    "y": 0.3,
+    "z": 0.4,
+    "why": "巴爾幹奇數拍＋即興，熱烈"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/1526344-Lala-Kovačev-Group-Balkan-Impressions",
+    "https://www.discogs.com/release/2643518",
+    "https://i.discogs.com/hq65aaXXy-H27ljmrTDSdhM2SP_syg5X7lT4_FSohHo/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI2NDM1/MTgtMTM4OTIwMTEy/My00OTkwLmpwZWc.jpeg"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": "MusicBrainz release-group 搜尋藝人＋盤名皆無結果（2026-11-01）；國營廠盤以 Discogs master 與主發行頁建立身分",
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/1526344-Lala-Kovačev-Group-Balkan-Impressions",
+    "https://www.discogs.com/release/2643518"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Lala Kovačev",
+   "album": "Izvorni folklor i džez Lale Kovačeva",
+   "year": 1986,
+   "label": "PGP RTB",
+   "country": "yu",
+   "faction": "yu-pgp",
+   "genres": [
+    "jazz",
+    "world"
+   ],
+   "why": "Kovačev 把塞爾維亞民間舞曲拆開重組的第二高峰，銅管與自由即興並置",
+   "moodGuess": {
+    "x": 3.7,
+    "y": 0.4,
+    "z": 0.2,
+    "why": "民間舞曲＋自由即興，躁動"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/784312-Lala-Kovačev-Izvorni-Folklor-I-Džez-Lale-Kovačeva",
+    "https://www.discogs.com/release/6529464",
+    "https://i.discogs.com/mcXehE2Shyhigt4pK4Ao0JT_jsOwKkHWxubt0NN8jpI/rs:fit/g:sm/q:90/h:450/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY1Mjk0/NjQtMTQyMTMzMzU1/Mi0yNjk3LmpwZWc.jpeg"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": "MusicBrainz release-group 搜尋藝人＋盤名皆無結果（2026-11-01）；國營廠盤以 Discogs master 與主發行頁建立身分",
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/784312-Lala-Kovačev-Izvorni-Folklor-I-Džez-Lale-Kovačeva",
+    "https://www.discogs.com/release/6529464"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Kovačev 第二張，與 Balkan Impressions 角度不同（民謠拆解 vs 融合）"
+  },
+  {
+   "artist": "B.P. Convention",
+   "album": "Blue Sunset",
+   "year": 1975,
+   "label": "Jugoton",
+   "country": "yu",
+   "faction": "yu-jugoton",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Boško Petrović 的 B.P. Convention 大樂團 Jugoton 代表盤，札格拉布硬咆勃大樂團傳統",
+   "moodGuess": {
+    "x": 3.3,
+    "y": 0.4,
+    "z": 0.6,
+    "why": "大樂團硬咆勃，旋律清楚"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/6bbfe55e-1e90-4c94-b6d5-61d099850d49",
+    "https://www.discogs.com/master/1086190-BP-Convention-Big-Band-Blue-Sunset",
+    "https://www.discogs.com/release/3173124",
+    "https://i.discogs.com/2k_Qaf5a4Fdj-XA4LSrQv01EPIOhHHEUJFOGXH_2e2k/rs:fit/g:sm/q:90/h:600/w:595/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMxNzMx/MjQtMTU0OTg3NTA3/Ni03OTkzLmpwZWc.jpeg"
+   ],
+   "mbRgMbid": "6bbfe55e-1e90-4c94-b6d5-61d099850d49",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Boško Petrović B.P. Convention Big Band",
+   "uncertain": "領銜者 Boško Petrović；MPS 的《Swinging East》現場盤留給 eb5"
+  },
+  {
+   "artist": "Zagreb Jazz Quartet",
+   "album": "With Pain I Was Born",
+   "year": 1966,
+   "label": "Fontana",
+   "country": "yu",
+   "faction": "yu-jugoton",
+   "genres": [
+    "jazz"
+   ],
+   "why": "札格拉布爵士四重奏（Boško Petrović 領軍）最知名的錄音室盤，西歐也被引用的南斯拉夫冷派爵士",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 0.0,
+    "z": 0.4,
+    "why": "冷派顫音琴四重奏，空氣感"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/b7f62d54-3131-4753-bcfb-9364bce5b52e",
+    "https://www.discogs.com/master/375937-Zagreb-Jazz-Quartet-With-Pain-I-Was-Born",
+    "https://www.discogs.com/release/3160548",
+    "https://i.discogs.com/7NxfhWZ07Pafwr9to1FCiGm8okmD9SZmmubEG49Px-M/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMxNjA1/NDgtMTcyNDkxODA2/My02ODg0LmpwZWc.jpeg"
+   ],
+   "mbRgMbid": "b7f62d54-3131-4753-bcfb-9364bce5b52e",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Zagrebački Jazz Kvartet",
+   "uncertain": "Fontana 荷蘭版發行，錄音在札格拉布；country 取團體所屬"
+  },
+  {
+   "artist": "Tone Janša Quartet",
+   "album": "Beogradski Jazz Festival '78",
+   "year": 1978,
+   "label": "PGP RTB",
+   "country": "yu",
+   "faction": "yu-pgp",
+   "genres": [
+    "jazz"
+   ],
+   "why": "斯洛維尼亞薩克斯風 Tone Janša 的調式後咆勃四重奏，PGP RTB 官方 LP，後來被 Cosmic Sounds 重發為 Bouyancy",
+   "moodGuess": {
+    "x": 3.2,
+    "y": 0.2,
+    "z": -0.2,
+    "why": "調式四重奏，旋律較抽象"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/1453275-Tone-Janša-Kvartet-Beogradski-Jazz-Festival-78",
+    "https://www.discogs.com/release/12778153",
+    "https://i.discogs.com/d8fMLSbGN9gM7Mg3KS0trfd2QUJnVNKbni4T4xevvCc/rs:fit/g:sm/q:90/h:600/w:599/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyNzc4/MTUzLTE2OTczMDky/NDAtNjc4Ny5qcGVn.jpeg"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": "MusicBrainz release-group 搜尋藝人＋盤名皆無結果（2026-11-01）；國營廠盤以 Discogs master 與主發行頁建立身分",
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/1453275-Tone-Janša-Kvartet-Beogradski-Jazz-Festival-78",
+    "https://www.discogs.com/release/12778153"
+   ],
+   "releaseException": "音樂節現場錄音，但這張是他本國最重要作品，且發行為官方正規 LP",
+   "queryAlias": "Tone Jansa Quartet",
+   "uncertain": "現場"
+  },
+  {
+   "artist": "Toranj 77",
+   "album": "Miting",
+   "year": 1980,
+   "label": "PGP RTB",
+   "country": "yu",
+   "faction": "yu-pgp",
+   "genres": [
+    "jazz"
+   ],
+   "why": "札格拉布樂團 Željko Kovačević／Toranj 77 的調式融合爵士，PGP RTB 專輯",
+   "moodGuess": {
+    "x": 3.5,
+    "y": 0.4,
+    "z": -0.1,
+    "why": "電聲調式融合"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/1949875-Željko-Kovačević-Toranj-77-Miting",
+    "https://www.discogs.com/release/3121284",
+    "https://i.discogs.com/P9pgwJqv6cmawUHHYiiZDzug5m8NYn8Dli7oZtDRAdw/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMxMjEy/ODQtMTMxNjc3OTQ0/NC5qcGVn.jpeg"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": "MusicBrainz release-group 搜尋藝人＋盤名皆無結果（2026-11-01）；國營廠盤以 Discogs master 與主發行頁建立身分",
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/1949875-Željko-Kovačević-Toranj-77-Miting",
+    "https://www.discogs.com/release/3121284"
+   ],
+   "releaseException": "",
+   "queryAlias": "Željko Kovačević Toranj 77",
+   "uncertain": "Discogs 標示 Fusion／Modal，藝人頁寫作 Željko Kovačević / Toranj 77"
+  },
+  {
+   "artist": "Birdland",
+   "album": "Darkness of Light",
+   "year": 1980,
+   "label": "PGP RTB",
+   "country": "yu",
+   "faction": "yu-pgp",
+   "genres": [
+    "jazz"
+   ],
+   "why": "貝爾格勒融合爵士團 Birdland 的 PGP RTB 專輯，南斯拉夫調式融合代表之一",
+   "moodGuess": {
+    "x": 3.4,
+    "y": 0.5,
+    "z": -0.2,
+    "why": "融合調式，電聲厚"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/36c0a756-f7a9-4b42-a6d6-ba3820e65de2",
+    "https://www.discogs.com/master/1532840-Birdland-3-Darkness-Of-Light",
+    "https://www.discogs.com/release/2956328",
+    "https://i.discogs.com/mPEWtb_kTh-5qX7IDXvbXtCTkXMjDjl965U18UFtkLM/rs:fit/g:sm/q:90/h:300/w:300/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI5NTYz/MjgtMTMwOTAzNTU0/NS5qcGVn.jpeg"
+   ],
+   "mbRgMbid": "36c0a756-f7a9-4b42-a6d6-ba3820e65de2",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "同名藝人撞名風險：去重時 Birdland 要核對"
+  },
+  {
+   "artist": "Petar Ugrin",
+   "album": "Samo muzika",
+   "year": 1979,
+   "label": "RTV Ljubljana",
+   "country": "yu",
+   "faction": "yu-slovenia",
+   "genres": [
+    "jazz"
+   ],
+   "why": "斯洛維尼亞廣播的融合爵士，Petar Ugrin（小提琴）領軍的電聲爵士，Cosmic Sounds《Balkan Express》系列常引",
+   "moodGuess": {
+    "x": 3.5,
+    "y": 0.2,
+    "z": 0.1,
+    "why": "融合 groove，電聲小提琴"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/586251-Petar-Ugrin-Samo-Muzika",
+    "https://www.discogs.com/release/1244753",
+    "https://i.discogs.com/iALaRs_V8m6eo3h9ntPgBWYaLRmZBZcngnFEF62zECM/rs:fit/g:sm/q:90/h:600/w:598/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyNDQ3/NTMtMTYyNDQ1NTc4/Ny02MDExLmpwZWc.jpeg"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": "MusicBrainz release-group 搜尋藝人＋盤名皆無結果（2026-11-01）；國營廠盤以 Discogs master 與主發行頁建立身分",
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/586251-Petar-Ugrin-Samo-Muzika",
+    "https://www.discogs.com/release/1244753"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Stjepko Gut & Big Band RTB",
+   "album": "Stjepko Gut & Big Band RTB",
+   "year": 1987,
+   "label": "PGP RTB",
+   "country": "yu",
+   "faction": "yu-pgp",
+   "genres": [
+    "jazz"
+   ],
+   "why": "小號手 Stjepko Gut 與貝爾格勒 RTB 大樂團的編曲作品，80 年代南斯拉夫大樂團爵士代表",
+   "moodGuess": {
+    "x": 3.2,
+    "y": 0.4,
+    "z": 0.6,
+    "why": "大樂團，標準曲編曲"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/882078-Stjepko-Gut-Big-Band-RTB-Stjepko-Gut-Big-Band-RTB",
+    "https://www.discogs.com/release/7445345",
+    "https://i.discogs.com/7PNSqoVZpEHYQ9Xyz4P8K_jlOz_0Mu1lt8NQMjC0AFA/rs:fit/g:sm/q:90/h:587/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTc0NDUz/NDUtMTQ0MTY0Mjc1/Mi0yNTgwLmpwZWc.jpeg"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": "MusicBrainz release-group 搜尋藝人＋盤名皆無結果（2026-11-01）；國營廠盤以 Discogs master 與主發行頁建立身分",
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/882078-Stjepko-Gut-Big-Band-RTB-Stjepko-Gut-Big-Band-RTB",
+    "https://www.discogs.com/release/7445345"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "若主線已收 RTB 大樂團 1963 可汰換"
+  },
+  {
+   "artist": "Jazz Focus 65",
+   "album": "Quartet Jazz Focus-65",
+   "year": 1967,
+   "label": "Balkanton",
+   "country": "bg",
+   "faction": "bg-balkanton",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Milcho Leviev 領軍的 Jazz Focus 65，保加利亞第一支現代爵士四重奏，Balkanton 首張正規 LP，Leviev 出走前的代表作",
+   "moodGuess": {
+    "x": 3.0,
+    "y": 0.3,
+    "z": 0.4,
+    "why": "調式後咆勃，旋律抽象"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/1241832-Джаз-Фокус-65-Квартет-Джаз-Фокус-65-Quartet-Jazz-Focus-65",
+    "https://www.discogs.com/release/3698688",
+    "https://i.discogs.com/8Ps7UjyMfVUdQc_36_fiItJh91aH2vV0wVoJkLhImQs/rs:fit/g:sm/q:90/h:600/w:597/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM2OTg2/ODgtMTUzOTUzMTcz/OS0yOTE0LmpwZWc.jpeg"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": "MusicBrainz release-group 搜尋藝人＋盤名皆無結果（2026-11-01）；國營廠盤以 Discogs master 與主發行頁建立身分",
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/1241832-Джаз-Фокус-65-Квартет-Джаз-Фокус-65-Quartet-Jazz-Focus-65",
+    "https://www.discogs.com/release/3698688"
+   ],
+   "releaseException": "",
+   "queryAlias": "Джаз Фокус-65",
+   "uncertain": "1968 年第二張（master 640036）同名封套相近，只提第一張避免盤名撞；MPS《Jazz Focus '65》西德盤留給 eb5"
+  },
+  {
+   "artist": "Septet Rousse",
+   "album": "Septet Rousse",
+   "year": 1980,
+   "label": "Balkanton",
+   "country": "bg",
+   "faction": "bg-balkanton",
+   "genres": [
+    "jazz"
+   ],
+   "why": "魯塞七重奏的 Balkanton 自由爵士專輯，80 年代保加利亞少見的前衛盤",
+   "moodGuess": {
+    "x": 4.0,
+    "y": 0.4,
+    "z": -0.6,
+    "why": "自由爵士"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/5f9c1155-ed13-4589-a9f1-2f14d0447cf5",
+    "https://www.discogs.com/master/732303-Septet-Rousse-Оркестър-Русе-Septet-Rousse",
+    "https://www.discogs.com/release/1023496",
+    "https://i.discogs.com/KTYtOm6mYMeO5bB5KJZiwVMgRSp7dIy8QPMmon1MB8Q/rs:fit/g:sm/q:90/h:600/w:597/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwMjM0/OTYtMTQxMDU0MTI2/Ny0zOTgyLmpwZWc.jpeg"
+   ],
+   "mbRgMbid": "5f9c1155-ed13-4589-a9f1-2f14d0447cf5",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Оркестър Русе",
+   "uncertain": ""
+  },
+  {
+   "artist": "Lyubomir Denev Jazz Trio",
+   "album": "Lyubomir Denev Jazz Trio",
+   "year": 1980,
+   "label": "Balkanton",
+   "country": "bg",
+   "faction": "bg-balkanton",
+   "genres": [
+    "jazz"
+   ],
+   "why": "鋼琴手 Lyubomir Denev 與 Petko Tomanov 的 Balkanton 三重奏，保加利亞爵士搖滾與前衛的交會",
+   "moodGuess": {
+    "x": 3.5,
+    "y": 0.3,
+    "z": -0.3,
+    "why": "爵士搖滾／前衛，旋律抽象"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/731785-Lyubomir-Denev-Jazz-Trio-And-Petko-Tomanov-Lyubomir-Denev-Jazz-Trio",
+    "https://www.discogs.com/release/1654518",
+    "https://i.discogs.com/V-OaUC__-RU8u6dAgOu40QRZugT8F77Ly-t2G8lgd5k/rs:fit/g:sm/q:90/h:500/w:500/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE2NTQ1/MTgtMTIzNDgwNTAw/NS5qcGVn.jpeg"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": "MusicBrainz release-group 搜尋藝人＋盤名皆無結果（2026-11-01）；國營廠盤以 Discogs master 與主發行頁建立身分",
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/731785-Lyubomir-Denev-Jazz-Trio-And-Petko-Tomanov-Lyubomir-Denev-Jazz-Trio",
+    "https://www.discogs.com/release/1654518"
+   ],
+   "releaseException": "",
+   "queryAlias": "Любомир Денев",
+   "uncertain": ""
+  },
+  {
+   "artist": "Vesselin Nikolov and White, Green and Red",
+   "album": "Don Juan",
+   "year": 1979,
+   "label": "Balkanton",
+   "country": "bg",
+   "faction": "bg-balkanton",
+   "genres": [
+    "jazz"
+   ],
+   "why": "保加利亞融合爵士代表，Vesselin Nikolov 與 White, Green and Red 的 Balkanton 專輯，Cosmic Sounds 保加利亞系列常引",
+   "moodGuess": {
+    "x": 3.6,
+    "y": 0.3,
+    "z": -0.1,
+    "why": "電聲融合，律動明確"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/846080-Vesselin-Nikolov-And-White-Green-And-Reds-Дон-Жуан-Don-Juan",
+    "https://www.discogs.com/release/3853019",
+    "https://i.discogs.com/G-E8R0E8V-E7eX39OgnClpBbDZo0znMkhmyIv59vECI/rs:fit/g:sm/q:90/h:600/w:578/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM4NTMw/MTktMTU0MzM2MTIz/OC0zMTE2LmpwZWc.jpeg"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": "MusicBrainz release-group 搜尋藝人＋盤名皆無結果（2026-11-01）；國營廠盤以 Discogs master 與主發行頁建立身分",
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/846080-Vesselin-Nikolov-And-White-Green-And-Reds-Дон-Жуан-Don-Juan",
+    "https://www.discogs.com/release/3853019"
+   ],
+   "releaseException": "",
+   "queryAlias": "Веселин Николов Дон Жуан",
+   "uncertain": ""
+  },
+  {
+   "artist": "Jazz Quintet",
+   "album": "Idea",
+   "year": 1978,
+   "label": "Balkanton",
+   "country": "bg",
+   "faction": "bg-balkanton",
+   "genres": [
+    "jazz"
+   ],
+   "why": "保加利亞 Balkanton 的現代爵士五重奏專輯，咆勃／調式",
+   "moodGuess": {
+    "x": 3.0,
+    "y": 0.3,
+    "z": 0.5,
+    "why": "咆勃五重奏"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/756815-Jazz-Quintet-Idea",
+    "https://www.discogs.com/release/6290480",
+    "https://i.discogs.com/30owrI1D_1OuDjcZAca7pXggL5wHTjTa3LfDpYNIefs/rs:fit/g:sm/q:90/h:600/w:587/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTYyOTA0/ODAtMTQyMTg2MTk2/MC0xMTg4LmpwZWc.jpeg"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": "MusicBrainz release-group 搜尋藝人＋盤名皆無結果（2026-11-01）；國營廠盤以 Discogs master 與主發行頁建立身分",
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/756815-Jazz-Quintet-Idea",
+    "https://www.discogs.com/release/6290480"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "團名過於通用；成員資料薄，主線可汰換"
+  },
+  {
+   "artist": "Focus Jazz Quartet",
+   "album": "Focus Jazz Quartet",
+   "year": 1986,
+   "label": "Balkanton",
+   "country": "bg",
+   "faction": "bg-balkanton",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Focus 爵士四重奏（Jazz Focus 65 的後繼）的 Balkanton 專輯，後咆勃與爵士搖滾並陳",
+   "moodGuess": {
+    "x": 3.1,
+    "y": 0.3,
+    "z": 0.2,
+    "why": "調式／爵士搖滾"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/732201-Джаз-Квартет-Фокус-Джаз-Квартет-Фокус-Focus-Jazz-Quartet",
+    "https://www.discogs.com/release/5917435",
+    "https://i.discogs.com/d3dUreGCsBdJUoVM-wTH7ovwJlBIfhOUEdkkVJNHV-M/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTU5MTc0/MzUtMTQwNjI4NjU0/Ny00NDczLmpwZWc.jpeg"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": "MusicBrainz release-group 搜尋藝人＋盤名皆無結果（2026-11-01）；國營廠盤以 Discogs master 與主發行頁建立身分",
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/732201-Джаз-Квартет-Фокус-Джаз-Квартет-Фокус-Focus-Jazz-Quartet",
+    "https://www.discogs.com/release/5917435"
+   ],
+   "releaseException": "",
+   "queryAlias": "Джаз Квартет Фокус",
+   "uncertain": ""
+  },
+  {
+   "artist": "Theodosii Spassov & Stefan Moutafchiev",
+   "album": "The Long Road",
+   "year": 1986,
+   "label": "Balkanton",
+   "country": "bg",
+   "faction": "bg-balkanton",
+   "genres": [
+    "jazz",
+    "world"
+   ],
+   "why": "Teodosii Spassov（卡瓦爾笛）與 Stefan Moutafchiev 的 Balkanton 專輯，保加利亞民謠融合爵士的起點",
+   "moodGuess": {
+    "x": 2.8,
+    "y": 0.1,
+    "z": 0.3,
+    "why": "民謠融合，笛聲清亮"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/3015161-Теодосий-Спасов-Theodosii-Spassov-Стефан-Мутафчиев-Stefan-Moutafchiev-",
+    "https://www.discogs.com/release/2339037",
+    "https://i.discogs.com/pkJyUUi1er95KAOeHfJZLjJFyB0ozCq-rU49wPrE0Zc/rs:fit/g:sm/q:90/h:561/w:567/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIzMzkw/MzctMTI4NzUwMTU3/NC5naWY.jpeg"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": "MusicBrainz release-group 搜尋藝人＋盤名皆無結果（2026-11-01）；國營廠盤以 Discogs master 與主發行頁建立身分",
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/3015161-Теодосий-Спасов-Theodosii-Spassov-Стефан-Мутафчиев-Stefan-Moutafchiev-",
+    "https://www.discogs.com/release/2339037"
+   ],
+   "releaseException": "",
+   "queryAlias": "Теодосий Спасов Дълъг Път",
+   "uncertain": ""
+  },
+  {
+   "artist": "Lyudmil Georgiev",
+   "album": "Midnight Hour",
+   "year": 1976,
+   "label": "Balkanton",
+   "country": "bg",
+   "faction": "bg-balkanton",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Balkanton 的靈魂爵士／bossa 專輯，保加利亞的 cool jazz 取向代表",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 0.1,
+    "z": 0.7,
+    "why": "輕靈魂爵士，bossa"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/1635943-Lyudmil-Georgiev-Среднощен-Час-Midnight-Hour",
+    "https://www.discogs.com/release/3664431",
+    "https://i.discogs.com/Jpt0LqWOIa1XNQmlSSJ3tzrHEzcPje678Rav91yPDzE/rs:fit/g:sm/q:90/h:469/w:467/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM2NjQ0/MzEtMTMzOTQ0MTEy/Ny0yNzIxLmpwZWc.jpeg"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": "MusicBrainz release-group 搜尋藝人＋盤名皆無結果（2026-11-01）；國營廠盤以 Discogs master 與主發行頁建立身分",
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/1635943-Lyudmil-Georgiev-Среднощен-Час-Midnight-Hour",
+    "https://www.discogs.com/release/3664431"
+   ],
+   "releaseException": "",
+   "queryAlias": "Людмил Георгиев",
+   "uncertain": "風格偏輕爵士，可視情況汰換"
+  },
+  {
+   "artist": "Johnny Răducanu",
+   "album": "Confesiuni",
+   "year": 1979,
+   "label": "Electrecord",
+   "country": "ro",
+   "faction": "ro-electrecord",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Răducanu 在 Electrecord 的《Confesiuni》系列首作，把羅馬尼亞民謠素材（Doinind、Spații Românești）寫成鋼琴爵士，羅馬尼亞「民謠爵士」代表",
+   "moodGuess": {
+    "x": 2.8,
+    "y": 0.2,
+    "z": 0.6,
+    "why": "鋼琴爵士＋民謠旋律，溫暖"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/2760914-Johnny-Răducanu-Confesiuni-Confessions",
+    "https://www.discogs.com/release/4029366",
+    "https://i.discogs.com/WD8uZURXP4_UvcsgfZjFZKQd_fgutmcWQIJ8kcz-G88/rs:fit/g:sm/q:90/h:600/w:562/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQwMjkz/NjYtMTM1NzYwODIz/Ny04NDk4LmpwZWc.jpeg"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": "MusicBrainz release-group 搜尋藝人＋盤名皆無結果（2026-11-01）；國營廠盤以 Discogs master 與主發行頁建立身分",
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/2760914-Johnny-Răducanu-Confesiuni-Confessions",
+    "https://www.discogs.com/release/4029366"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "eb1a 已提 Răducanu 兩張（Jazz în Trio、Jazz în Țara Mea）；此為第三張，角度是民謠融合，可汰換"
+  }
+ ],
+ "notes": [
+  "共 25 張（目標 24 + 汰換餘裕）。MB 查得到 4、人工身分 21。",
+  "Leb i Sol《Leb i sol》已在池（及 Ručni rad、Beskonačno），已剔除。",
+  "羅馬尼亞：eb1a 已涵蓋 Electrecord 主線並含 Weiner、Manusardi、Tîrcolea（我原本想補的），僅補 Răducanu《Confesiuni》1 張；羅馬尼亞池已滿，未湊數。",
+  "Prohaska 唯一的 Discogs 錄音室盤《Golden Hours》（1983）標為 Compilation，未收；Boško Petrović 的 MPS《Swinging East》現場、Goykovich 的 MPS／Enja 盤、Roković《Ultra Native》（MPS 1972）、Jazz Focus '65（MPS 1969，MB: Bulgarian Jazz Quartet）屬 eb5。",
+  "Leviev 保加利亞國營廠時期的獨立正規盤僅 Jazz Focus-65 第一張；Jazz Focus-65 第二張（Balkanton ВТА 1098，1968，Discogs master 640036）盤名與第一張幾乎相同，僅提第一張避免撞名。",
+  "Vapirov 的正規盤在蘇聯 Melodiya（Мистерия 1980、Ленинградский Джаз-Ансамбль 1976）與英國 Leo，Balkanton 無正規盤，留給 eb4／eb5。Simeon Shterev、Sofia Radio Big Band 查無代表性正規錄音室專輯（後者僅有 Easy Listening 大樂團盤《Studio 1》1984）。",
+  "1961 PGP RTB 三張（Gojković／Clarke、Roković、Dieval）為 10 吋 LP 六首，屬完整專輯但形式特殊；主線可汰換。",
+  "Bora Roković 在 Discogs 為 Trio Borislava Rokovića，藝人欄採 Bora Roković 並在 queryAlias 保留原寫法；Goykovich 採國際通用拼法 Dusko Goykovich（MB 同），queryAlias 留 Duško Gojković，以便 eb5 同藝人合併。",
+  "人工身分的 manualEvidenceUrls = Discogs master + 主發行頁，封面來源為 evidence 內的 i.discogs.com 影像。"
+ ]
+}

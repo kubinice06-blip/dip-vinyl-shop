@@ -1,0 +1,38 @@
+{
+ "batch": "add-20261030-sf04",
+ "cards": 28,
+ "written": {
+  "cardCatalog": 28,
+  "kvKeys": 40,
+  "seedRows": 28,
+  "previewReady": 24,
+  "previewUnavailable": 4
+ },
+ "review": {
+  "by": "cloud-main",
+  "cards": 28,
+  "changed": [
+   "desc4:越美晴 Miharu Koshi|パラレリズム"
+  ]
+ },
+ "qa": {
+  "research": "pass",
+  "hooks": "pass",
+  "out": "pass",
+  "prepareGate": "0 error",
+  "publishedGate": "0 error"
+ },
+ "pendingLocal": {
+  "kv": "無",
+  "listeners": [],
+  "apexEvidence": [],
+  "genreTree": "已重建",
+  "albumOverrides": "無"
+ },
+ "artistIntro": {
+  "roster": "batch-progress/artist-intro/roster-sf04.json",
+  "batch": "ar-d-204",
+  "artists": 26,
+  "state": "cut"
+ }
+}

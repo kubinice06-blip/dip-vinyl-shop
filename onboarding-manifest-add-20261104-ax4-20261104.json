@@ -1,0 +1,1660 @@
+{
+ "schemaVersion": 1,
+ "batch": "2026-10-20-ax4",
+ "batchNote": "薄細項策展線（add-20261104-ax4）",
+ "createdAt": "2026-11-04T07:17:48Z",
+ "albums": [
+  {
+   "artist": "菊地雅章セクステット",
+   "album": "Hairpin Circus",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "f8230428-b0b6-49a1-ae78-cc1a10fae57c",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "日本地下爵士：菊地雅章 1972 年為電影《ヘアピン・サーカス》錄的六重奏，爵士放克融合，日本地下爵士收藏聖杯｜⚠ MB 藝人名為 Masabumi Kikuchi，Last.fm 以 Masabumi Kikuchi 查得 13 listeners｜MB release-group f8230428-b0b6-49a1-ae78-cc1a10fae57c：title「Hairpin Circus」、Album＋Soundtrack、first-release-date 1972、artist-credit「Masabumi Kikuchi Sextet」。證據：https://musicbrainz.org/release-group/f8230428-b0b6-49a1-ae78-cc1a10fae57c https://www.discogs.com/master/3419320",
+    "queryAlias": "Masabumi Kikuchi Sextet；ヘアピン・サーカス"
+   },
+   "research": {
+    "suggestedYear": 1972,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/f8230428-b0b6-49a1-ae78-cc1a10fae57c/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-04T07:17:48Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-04 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 9,
+    "source": "worker /album-rating（以英文掛名 Masabumi Kikuchi Sextet 查；日文掛名無回應）",
+    "checkedAt": "2026-11-04T07:17:48Z",
+    "note": "機器基線 undefined/undefined/undefined（Last.fm listeners 查無）；主線：日文掛名查無，改以 queryAlias 英文掛名取 Last.fm listeners 9（主線 2026-11-04 複查；研究 a 記 9–13）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": true,
+    "tier": "pearl",
+    "evidenceUrls": [
+     "https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Masabumi%20Kikuchi%20Sextet&album=Hairpin%20Circus",
+     "https://www.discogs.com/master/539078",
+     "https://musicbrainz.org/release-group/f8230428-b0b6-49a1-ae78-cc1a10fae57c"
+    ],
+    "reason": "流亡採用：Last.fm listeners 9（有效值、1–299）、研究層核對同藝人同盤非錯配、私壓或獨立小廠且無整張正式串流再發（Apple 多店面查無；考古廠黑膠／CD 重發不算），冷門度 5。研究層判定：合格（listeners 9–13，證據 https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Masabumi%20Kikuchi%20Sextet&album=Hairpin%20Circus 回 9、artist=Masabumi%20Kikuchi 回 13；Last.fm 頁面本機連線被擋 600，改用 worker 的 _listeners；Discogs 母版 https://www.discogs.com/master/539078；iTunes jp/us 搜尋無此盤、無串流；僅 2006 Bridge CD 實體再版）。注意：策展卡單 manualEvidenceUrls 寫的 master/3419320 是 1972 年 7 吋單曲 FS-1707，專輯 LP 的正確母版是 maste（三軸 3/5/3、Last.fm listeners 9）",
+    "assessedAt": "2026-11-04T07:17:48Z",
+    "source": "主線 add-20261104-ax4 頂點採用"
+   },
+   "description": {
+    "text": "《Hairpin Circus》是電影《ヘアピン・サーカス》的原聲帶，由爵士鋼琴手菊地雅章作曲，1972 年日本 Philips 發行。電影由西村潔導演、改編五木寛之的短篇。原版在收藏圈想找的人遠多於手上有的人，1978 年重壓，2006 年才出 CD。菊地雅章被視為日本最早做電子爵士搖滾的人之一。他自己彈鋼琴與 Fender 電鋼琴，弟弟菊地雅洋彈管風琴，峰厚介吹高音薩克斯風，鈴木良雄彈貝斯，日野元彥與中村よしゆき兩位鼓手並列。八首長短懸殊，兩首超過 11 分鐘，〈Sadness〉只有 51 秒，路數偏後 bop 與爵士搖滾。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/5975202",
+     "https://musicbrainz.org/release-group/f8230428-b0b6-49a1-ae78-cc1a10fae57c",
+     "https://www.discogs.com/release/4429013",
+     "https://api.discogs.com/masters/539078/versions",
+     "https://en.wikipedia.org/wiki/Masabumi_Kikuchi",
+     "https://api.discogs.com/masters/539078"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-04T07:17:48Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": false,
+    "apexPool": true
+   }
+  },
+  {
+   "artist": "Les Ambassadeurs",
+   "album": "Mandjou",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "manual",
+    "rgMbid": "",
+    "upc": "",
+    "aliasesChecked": true,
+    "mbAbsenceProof": {
+     "queries": [
+      "artist:\"Les Ambassadeurs\" AND releasegroup:\"Mandjou\" → count 0",
+      "releasegroup:\"Mandjou\" → count 2",
+      "artist:\"Les Ambassadeurs\" → count 30"
+     ],
+     "checkedAt": "2026-11-04T07:17:47.981Z",
+     "conclusion": "artist:\"Les Ambassadeurs\" AND releasegroup:\"Mandjou\" → count 0，前 0 筆無同藝人同盤名的 release-group；releasegroup:\"Mandjou\" → count 2，前 2 筆無同藝人同盤名的 release-group；artist:\"Les Ambassadeurs\" → count 30，前 25 筆無同藝人同盤名的 release-group。身分以 Discogs master／release 為準。"
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/master/533505",
+     "https://api.discogs.com/masters/533505"
+    ],
+    "manualRuling": "雲端主線 2026-11-04 依 ALBUM_ONBOARDING §1 人工身分核可（店主 2026-09-02 裁定權下放；薄細項策展線 add-20261104-ax4）",
+    "coverSourceHint": "discogs",
+    "aliasReview": "西非私壓：馬利裔班底在阿比讓的 Ambassadeur International 1978 年專輯｜⚠ Discogs 署名 Ambassadeur International；Last.fm 為 Les Ambassadeurs。MB absence 文字需主線核｜MB 查無（），走 §1 人工身分。證據：https://www.discogs.com/master/533505 https://api.discogs.com/masters/533505 https://www.discogs.com/master/533505 https://api.discogs.com/masters/533505",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1978,
+    "yearNote": ""
+   },
+   "genres": [
+    "funk",
+    "world"
+   ],
+   "cover": {
+    "source": "discogs",
+    "discogsMasterId": "533505",
+    "discogsReleaseId": "6461375",
+    "url": "https://i.discogs.com/bioSQvolOVLoxcizFqZBTp3FfDoBtZF-4baRLbiZsFc/rs:fit/g:sm/q:90/h:225/w:225/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY0NjEz/NzUtMTQxOTgwODQ2/OC0zODUzLmpwZWc.jpeg",
+    "note": "MB 查無；取 Discogs master 533505（「 Mandjou 」1978）主圖；主線 2026-11-04 聯絡表目視與盤名相符、live-check 200。",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-04T07:17:48Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 13,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-04T07:17:48Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 13）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 13），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "巴拉風和薩克斯風，同排在一張 1978 年的 LP 上。領銜署名是 Les Ambassadeurs Internationaux，發行唱片的是 Amons Records，地點在象牙海岸，收五首曲子。敲巴拉風的是 Kaba Kanté，薩克斯風則由 Cissoko Moussa 吹奏。到了 1984 年，法國 Celluloid 把它再版成 LP。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/6461375",
+     "https://api.discogs.com/masters/533505/versions",
+     "https://music.apple.com/us/album/mandjou/1277074451",
+     "https://api.discogs.com/masters/533505",
+     "https://www.discogs.com/master/533505"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/8e/af/8d/8eaf8de4-f4c9-3299-77bb-aed87be495f3/mzaf_9341361528245905488.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-11-04T07:17:48Z",
+    "appleCollectionId": "1277074451",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1277074451「Ambassadeur International《Mandjou》」：Badmos International 2017 正式數位版（掛名 Ambassadeur International），六首與 1978 原盤相同，標題曲為原盤 A1，取第 1 軌〈Mandjou (feat. Salif Keita)〉。主線 2026-11-04 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Jesper Siliya",
+   "album": "Giant Steps",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "d8f39af4-be8b-4921-ba87-2c1dda144dd8",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "尚比亞私壓：Jesper Siliya 1978 年自製的尚比亞前衛迷幻專輯，近年才被考古廠挖出｜⚠ MB 首發日期 2018 為重發，原盤 1978；Apple 查無｜MB release-group d8f39af4-be8b-4921-ba87-2c1dda144dd8：title「Giant Steps」、Album、first-release-date 2018-05-05、artist-credit「Jesper Siliya」。證據：https://musicbrainz.org/release-group/d8f39af4-be8b-4921-ba87-2c1dda144dd8 https://www.discogs.com/master/1364723",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1978,
+    "yearNote": ""
+   },
+   "genres": [
+    "psychedelic",
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/d8f39af4-be8b-4921-ba87-2c1dda144dd8/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-04T07:17:48Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-04 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 22,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-04T07:17:48Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 22）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": true,
+    "tier": "pearl",
+    "evidenceUrls": [
+     "https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Jesper%20Siliya&album=Giant%20Steps",
+     "https://www.discogs.com/master/1364723",
+     "https://musicbrainz.org/release-group/d8f39af4-be8b-4921-ba87-2c1dda144dd8"
+    ],
+    "reason": "流亡採用：Last.fm listeners 22（有效值、1–299）、研究層核對同藝人同盤非錯配、私壓或獨立小廠且無整張正式串流再發（Apple 多店面查無；考古廠黑膠／CD 重發不算），冷門度 5。研究層判定：合格（listeners 22，證據 https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Jesper%20Siliya&album=Giant%20Steps；Discogs https://www.discogs.com/master/1364723 確認是同一張尚比亞 1978 Chris Editions 盤；iTunes us/jp/kr/tr 搜尋 Jesper Siliya 無結果；僅 2018 Shadoks LP+CD 實體再版，WebSearch 查無 Bandcamp／Spotify 上架。Spotify 與 Bandcamp 無法直接開頁驗證，主線若有登入環境建議再搜一次）。冷門度 5 成立。年份取 1978 原盤。sound 一句是依曲目與編制推論，無單一樂評來源，已降成保守描述。（三軸 3/5/3、Last.fm listeners 22）",
+    "assessedAt": "2026-11-04T07:17:48Z",
+    "source": "主線 add-20261104-ax4 頂點採用"
+   },
+   "description": {
+    "text": "《Giant Steps》是尚比亞吉他手兼歌手 Jesper Siliya 唯一一張領銜專輯，1978 年由當地的 Chris Editions 出版；收藏圈想找的人遠多於手上有的人，2018 年 Shadoks Music 才重壓成 500 張編號黑膠。Siliya 包辦作曲、編曲、吉他與主唱，另一把吉他與和聲是 Zamrock 樂團 Ngozi Family 的 Paul Ngozi，Chrissy Zebby Tembo 打鼓，Tommy Mwale 彈貝斯。八首曲子以重度 fuzz 吉他配上非洲節奏，歌詞帶政治性。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/10052954",
+     "https://www.discogs.com/release/12001470",
+     "https://musicbrainz.org/release-group/d8f39af4-be8b-4921-ba87-2c1dda144dd8",
+     "https://api.discogs.com/masters/1364723"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-04T07:17:48Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": false,
+    "apexPool": true
+   }
+  },
+  {
+   "artist": "Blackfoot",
+   "album": "Youth Power",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "0ed73804-7f2c-49b1-a3e2-5a45408cba7a",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "尚比亞私壓：贊比亞 Zamrock 團 Blackfoot 的 1975 年專輯，迷幻重搖滾私壓｜⚠ MB 首發日期 2021 為重發，原盤 1975；Last.fm 另有同名 The Blackfoot 287，主線注意錯配；Apple 查無｜MB release-group 0ed73804-7f2c-49b1-a3e2-5a45408cba7a：title「Youth Power」、Album、first-release-date 2021-02、artist-credit「Blackfoot」。證據：https://musicbrainz.org/release-group/0ed73804-7f2c-49b1-a3e2-5a45408cba7a https://www.discogs.com/master/942670",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1975,
+    "yearNote": ""
+   },
+   "genres": [
+    "psychedelic",
+    "rock"
+   ],
+   "cover": {
+    "source": "discogs",
+    "discogsMasterId": "942670",
+    "discogsReleaseId": "7964587",
+    "url": "https://i.discogs.com/AT76Qs0xn0bJD6QmTM4XCU-JgeaT0HUWV9QbbOmPtg4/rs:fit/g:sm/q:90/h:600/w:587/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTc5NjQ1/ODctMTQ1MjU0MDY4/OC05NTY1LmpwZWc.jpeg",
+    "note": "CAA 無圖；取 Discogs master 942670（「Youth Power」1975）主圖；主線 2026-11-04 聯絡表目視與盤名相符、live-check 200。",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-04T07:17:48Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 33,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-04T07:17:48Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 33）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": true,
+    "tier": "pearl",
+    "evidenceUrls": [
+     "https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Blackfoot&album=Youth%20Power",
+     "https://www.discogs.com/master/942670",
+     "https://musicbrainz.org/release-group/0ed73804-7f2c-49b1-a3e2-5a45408cba7a"
+    ],
+    "reason": "流亡採用：Last.fm listeners 33（有效值、1–299）、研究層核對同藝人同盤非錯配、私壓或獨立小廠且無整張正式串流再發（Apple 多店面查無；考古廠黑膠／CD 重發不算），冷門度 5。研究層判定：合格（listeners 33，證據 https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Blackfoot&album=Youth%20Power；專輯名只有尚比亞這個團有，不會與美國南方搖滾團 Blackfoot 錯配，Discogs https://www.discogs.com/master/942670 標藝人為 Blackfoot (5)；iTunes 搜尋 Blackfoot Millie／Youth Power 無結果；所有版本皆為實體 LP，WebSearch 查無串流上架；LITA 商品頁無數位連結。待主線覆核：卡單 curatorRisk 提到另有 The Blackfoot 287 listeners，那是另一個團 Sounds In My Sleep 的藝人頁，非本盤）。冷門度屬私（三軸 3/5/3、Last.fm listeners 33）",
+    "assessedAt": "2026-11-04T07:17:48Z",
+    "source": "主線 add-20261104-ax4 頂點採用"
+   },
+   "description": {
+    "text": "《Youth Power》是尚比亞銅帶省學生樂團 Blackfoot 的專輯，1975 年由地方私人廠牌 Goodson Records 首發，隔年被 Zambia Music Parlour 改名《Millie》再發，原版壓量沒有紀錄；2021 年與 2025 年先後由 Vinyl Me, Please 和 Light in the Attic 從原母帶重新發行。錄音在盧薩卡的 dB Studios 完成，團員當時都還在上學。編制是兩把吉他、貝斯和鼓，由 Ottiman Mpondzi 主奏吉他兼主唱。九首都在三到五分鐘之間，路數偏車庫搖滾。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/7964587",
+     "https://zamrockorg.blogspot.com/2019/02/blackfoot-millie.html",
+     "https://www.discogs.com/release/7842486",
+     "https://lightintheattic.net/products/millie",
+     "https://www.discogs.com/release/17446729",
+     "https://api.discogs.com/masters/942670/versions",
+     "https://musicbrainz.org/release-group/0ed73804-7f2c-49b1-a3e2-5a45408cba7a"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-04T07:17:48Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": false,
+    "apexPool": true
+   }
+  },
+  {
+   "artist": "Brigth Engelberts And The B.E. Movement",
+   "album": "Tolambo Funk",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "5b326de8-595f-4872-ac9c-4980be882883",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "西非私壓：阿比讓 B.E. Movement 1978 年放克專輯｜⚠ Discogs 拼寫 Brigth（原樣）｜MB release-group 5b326de8-595f-4872-ac9c-4980be882883：title「Tolambo Funk」、Album、first-release-date 1978、artist-credit「Brigth Engelberts and the B.E. Movement」。證據：https://musicbrainz.org/release-group/5b326de8-595f-4872-ac9c-4980be882883 https://www.discogs.com/master/434615",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1978,
+    "yearNote": ""
+   },
+   "genres": [
+    "funk"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/5b326de8-595f-4872-ac9c-4980be882883/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-04T07:17:48Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-04 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 29,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-04T07:17:48Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 29）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 29），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "六首歌錄在拉哥斯，唱片卻由象牙海岸的廠牌發行。掛名 Brigth Engelberts And The B.E. Movement 的這張 LP，發行者是 Discogram，時間是 1978 年。錄音的來歷要等到 2009 年才寫明：法國 Hot Casa 重發時註記，這些歌當年進的是 EMI 在當地的錄音室，用 16 軌錄成。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/3592199",
+     "https://www.discogs.com/release/2028018",
+     "https://api.discogs.com/masters/434615/versions",
+     "https://hotcasarecords.com/about/",
+     "https://music.apple.com/jp/album/civilisation-in-the-world/1276573888",
+     "https://api.discogs.com/masters/434615",
+     "https://musicbrainz.org/release-group/5b326de8-595f-4872-ac9c-4980be882883"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/22/3a/53/223a536b-10b7-400f-33fa-4f9e7873db9d/mzaf_14436731929516405941.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-11-04T07:17:48Z",
+    "appleCollectionId": "1276573888",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1276573888「Brigth Engelberts and the B.E. Mouvement《Civilisation in the World》」：Badmos 2017 正式數位版改名《Civilisation in the World》，六首與原盤《Tolambo Funk》同曲目（研究 a），取同名曲，取第 3 軌〈Tolambo Funk〉。主線 2026-11-04 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Blackbuster",
+   "album": "Blackbuster 3",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "8f76ff61-0ab8-4c1a-9762-0fbae05aaaf5",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "菲律賓地下：馬尼拉放克樂團 Blackbuster 1976 年 RCA 專輯，近年被 DJ 圈挖出的 Pinoy funk｜策展無疑點｜MB release-group 8f76ff61-0ab8-4c1a-9762-0fbae05aaaf5：title「Blackbuster 3」、Album、first-release-date 1976、artist-credit「Blackbuster」。證據：https://musicbrainz.org/release-group/8f76ff61-0ab8-4c1a-9762-0fbae05aaaf5 https://www.discogs.com/master/364961",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1976,
+    "yearNote": ""
+   },
+   "genres": [
+    "funk",
+    "soul"
+   ],
+   "cover": {
+    "source": "discogs",
+    "discogsMasterId": "364961",
+    "discogsReleaseId": "2881761",
+    "url": "https://i.discogs.com/H9lTINi1jYnPQ00GuatlIyxTLZfOwFz27zOKE2Gz6NM/rs:fit/g:sm/q:90/h:400/w:400/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI4ODE3/NjEtMTQ4NDYxOTI2/Mi0yMDk4LmpwZWc.jpeg",
+    "note": "CAA 無圖；取 Discogs master 364961（「Blackbuster 3」1976）主圖；主線 2026-11-04 聯絡表目視與盤名相符、live-check 200。",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-04T07:17:48Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 6,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-04T07:17:48Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 6）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": true,
+    "tier": "pearl",
+    "evidenceUrls": [
+     "https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Blackbuster&album=Blackbuster%203",
+     "https://www.discogs.com/master/364961",
+     "https://musicbrainz.org/release-group/8f76ff61-0ab8-4c1a-9762-0fbae05aaaf5"
+    ],
+    "reason": "流亡採用：Last.fm listeners 6（有效值、1–299）、研究層核對同藝人同盤非錯配、私壓或獨立小廠且無整張正式串流再發（Apple 多店面查無；考古廠黑膠／CD 重發不算），冷門度 5。研究層判定：合格（listeners 6，證據 https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Blackbuster&album=Blackbuster%203；Discogs https://www.discogs.com/master/364961 確認為同一張 1976 RCA 菲律賓盤；iTunes us/tr/ph 搜尋無此盤；僅 1976 年實體 LP 各國版本，無再發）。冷門度 5 成立。注意：卡單 mood 文案說「近年被 DJ 圈挖出的 Pinoy funk」我查不到來源，內容其實是舞廳舞曲串燒（含舞步海報），已不採用該說法，改以曲目與製作註記為準；moodGuess 存疑：x 3.9／y 0.3 的「放克迪斯可」大致符合，但全盤是短曲串燒、含老標準曲改編，放克成分比預估淡。（三軸 3/5/3、Last.fm listeners 6）",
+    "assessedAt": "2026-11-04T07:17:48Z",
+    "source": "主線 add-20261104-ax4 頂點採用"
+   },
+   "description": {
+    "text": "《Blackbuster 3》是菲律賓 RCA 在 1976 年推出的不停歇舞曲 LP，製作與編曲由 Orly R. Ilacad 負責，同年也在馬來西亞、日本與德國發行。演奏者都是菲律賓樂手，另有人編寫弦樂與銅管，並有八位女聲負責和聲。十三首曲子不停頓地接在一起，把〈Spanish Hustle〉這類當時的 hustle 舞曲、〈Love Roller Coaster〉等迪斯可翻唱，和〈Moonlight Serenade〉〈Charleston〉這些老標準曲串成每面一整段，路數偏放克與迪斯可。各國版本在收藏圈都是手上有的人少、想找的人多。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/2881761",
+     "https://www.discogs.com/release/1310694",
+     "https://api.discogs.com/masters/364961/versions",
+     "https://musicbrainz.org/release-group/8f76ff61-0ab8-4c1a-9762-0fbae05aaaf5",
+     "https://api.discogs.com/masters/364961"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-04T07:17:48Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": false,
+    "apexPool": true
+   }
+  },
+  {
+   "artist": "강태환",
+   "album": "Korean Free Music",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "cbdebdaf-3fab-4c36-9c10-bacc7e1202f9",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "韓國地下：薩克斯風手姜泰煥 1989 年的 Korean Free Music，韓國自由爵士的起點｜⚠ Last.fm 以原文名查得 28｜MB release-group cbdebdaf-3fab-4c36-9c10-bacc7e1202f9：title「Korean Free Music」、Album＋Live、first-release-date 1989-11-30、artist-credit「강태환」。證據：https://musicbrainz.org/release-group/cbdebdaf-3fab-4c36-9c10-bacc7e1202f9 https://www.discogs.com/master/218161",
+    "queryAlias": "Kang Tae Hwan|Korean Free Music"
+   },
+   "research": {
+    "suggestedYear": 1989,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/cbdebdaf-3fab-4c36-9c10-bacc7e1202f9/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-04T07:17:48Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-04 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 28,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-04T07:17:48Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 28）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": true,
+    "tier": "pearl",
+    "evidenceUrls": [
+     "https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=강태환&album=Korean%20Free%20Music",
+     "https://www.discogs.com/master/218161",
+     "https://musicbrainz.org/release-group/cbdebdaf-3fab-4c36-9c10-bacc7e1202f9"
+    ],
+    "reason": "流亡採用：Last.fm listeners 28（有效值、1–299）、研究層核對同藝人同盤非錯配、私壓或獨立小廠且無整張正式串流再發（Apple 多店面查無；考古廠黑膠／CD 重發不算），冷門度 5。研究層判定：合格（listeners 28，證據 https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=강태환&album=Korean%20Free%20Music 回 28；以 Kang Tae Hwan 查回 147，皆在 1–299 內，Discogs https://www.discogs.com/master/218161 確認為 1989 Yeh Eum 盤；iTunes 搜尋姜泰煥無此盤；僅 1998 Ponycanyon CD 實體再版）。冷門度 5 成立。補充：池中另有姜泰煥卡，但非 pearl，同級一人一張不受影響（主線裁定）。facts 中「Seoul Free Music Trio」成員名單 Discogs 只列姜泰煥，另兩位樂手查不到可靠來源，故不寫。（三軸 3/5/3、Last.fm listeners 28）",
+    "assessedAt": "2026-11-04T07:17:48Z",
+    "source": "主線 add-20261104-ax4 頂點採用"
+   },
+   "description": {
+    "text": "《Korean Free Music》是韓國中音薩克斯風手강태환（Kang Tae Hwan）的現場即興錄音，1989 年由 Yeh Eum Records 出版 LP，1998 年才有改名的 CD 再版，原版在收藏圈想找的人遠多於手上有的人。他 1978 年組的三重奏被視為韓國第一個自由爵士團體。本盤由日本的副島輝人共同製作，1988 年 6 至 9 月在東京兩座音樂廳與首爾收音。四軌依序是 11 分多鐘的三重奏、13 分與 15 分的兩段二重奏，以及 7 分多鐘的獨奏。他的吹法以多音、泛音、按鍵敲擊聲、循環換氣與微分音為人所知。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/1210602",
+     "https://musicbrainz.org/release-group/cbdebdaf-3fab-4c36-9c10-bacc7e1202f9",
+     "https://www.discogs.com/release/1210243",
+     "https://music.apple.com/us/search?term=Kang%20Tae%20Hwan",
+     "https://api.discogs.com/masters/218161"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-04T07:17:48Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": false,
+    "apexPool": true
+   }
+  },
+  {
+   "artist": "Fanny's Group",
+   "album": "Cium Mesra",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "manual",
+    "rgMbid": "",
+    "upc": "",
+    "aliasesChecked": true,
+    "mbAbsenceProof": {
+     "queries": [
+      "artist:\"Fanny's Group\" AND releasegroup:\"Cium Mesra\" → count 0",
+      "releasegroup:\"Cium Mesra\" → count 0",
+      "artist:\"Fanny's Group\" → count 0"
+     ],
+     "checkedAt": "2026-11-04T07:17:47.981Z",
+     "conclusion": "artist:\"Fanny's Group\" AND releasegroup:\"Cium Mesra\" → count 0，前 0 筆無同藝人同盤名的 release-group；releasegroup:\"Cium Mesra\" → count 0，前 0 筆無同藝人同盤名的 release-group；artist:\"Fanny's Group\" → count 0，前 0 筆無同藝人同盤名的 release-group。身分以 Discogs master／release 為準。"
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/master/1780374",
+     "https://api.discogs.com/masters/1780374"
+    ],
+    "manualRuling": "雲端主線 2026-11-04 依 ALBUM_ONBOARDING §1 人工身分核可（店主 2026-09-02 裁定權下放；薄細項策展線 add-20261104-ax4）",
+    "coverSourceHint": "discogs",
+    "aliasReview": "印尼搖滾／迷幻：Fanny's Group 1968 年 Lokananta 專輯，印尼車庫／迷幻搖滾｜⚠ MB 無；listeners 2 偏低，查是否錯配｜MB 查無（），走 §1 人工身分。證據：https://www.discogs.com/master/1780374 https://api.discogs.com/masters/1780374 https://www.discogs.com/master/1780374 https://api.discogs.com/masters/1780374",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1968,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock",
+    "psychedelic"
+   ],
+   "cover": {
+    "source": "discogs",
+    "discogsMasterId": "1780374",
+    "discogsReleaseId": "7322647",
+    "url": "https://i.discogs.com/DjQZ_wy6zQ7rOu7UEDX2LVC5lLV49rxnzgziji54ZtQ/rs:fit/g:sm/q:90/h:500/w:500/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTczMjI2/NDctMTQzODg3MTI5/OS04OTI0LmpwZWc.jpeg",
+    "note": "MB 查無；取 Discogs master 1780374（「Cium Mesra」1968）主圖；主線 2026-11-04 聯絡表目視與盤名相符、live-check 200。",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-04T07:17:48Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 2,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-04T07:17:48Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 2）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": true,
+    "tier": "pearl",
+    "evidenceUrls": [
+     "https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Fanny%27s%20Group&album=Cium%20Mesra",
+     "https://www.discogs.com/master/1780374"
+    ],
+    "reason": "流亡採用：Last.fm listeners 2（有效值、1–299）、研究層核對同藝人同盤非錯配、私壓或獨立小廠且無整張正式串流再發（Apple 多店面查無；考古廠黑膠／CD 重發不算），冷門度 5。研究層判定：合格（listeners 2，證據 https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Fanny%27s%20Group&album=Cium%20Mesra；Discogs https://www.discogs.com/master/1780374 為同一張 1968 Lokananta 盤，卡單 curatorRisk 擔心 listeners 2 是否錯配：此名稱不見於其他團，專輯名 Cium Mesra 也是印尼語，判斷無錯配；iTunes id/ph/tr 搜尋無此盤；無任何再發，僅 1972 年團自製卡帶）。冷門度 5 成立。年份、廠牌、目錄號對得上卡單。status 標 thin：樂團成員、錄音地點、迷幻／車庫的聲音描述查不到可靠來源，故不寫；moodGuess 存疑：x 3.4／y 0.（三軸 3/5/3、Last.fm listeners 2）",
+    "assessedAt": "2026-11-04T07:17:48Z",
+    "source": "主線 add-20261104-ax4 頂點採用"
+   },
+   "description": {
+    "text": "《Cium Mesra》是印尼樂團 Fanny's Group 在 1968 年由梭羅的 Lokananta Records 出版的 LP，除了 1972 年樂團自行發行的卡帶，沒有再版紀錄，在收藏圈想找的人遠多於手上有的人。Lokananta 1956 年成立，是印尼第一間唱片公司，屬國營機構，早期以民族音樂與老流行歌為大宗。這張 LP 兩面各六首，歌名幾乎全是印尼語，收〈Cium Mesra〉〈Hampa〉等，路數偏迷幻與車庫搖滾。1972 年的卡帶版擴充到 17 首，另有一首〈By The Time I Get To Phoenix〉的演奏版。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/7322647",
+     "https://www.discogs.com/release/15694443",
+     "https://en.wikipedia.org/wiki/Lokananta",
+     "https://api.discogs.com/masters/1780374",
+     "https://www.discogs.com/master/1780374"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-04T07:17:48Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": false,
+    "apexPool": true
+   }
+  },
+  {
+   "artist": "Urfalı Babi",
+   "album": "Disko Kebap",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "a0636a77-2e81-4802-9c4d-d3ce05f9e32e",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "土耳其地下：Urfalı Babi 1978 年的 Disko-Kebap，奧斯曼古典、民謠與迪斯可混合｜策展無疑點｜MB release-group a0636a77-2e81-4802-9c4d-d3ce05f9e32e：title「Disko Kebap」、Album、first-release-date 1978、artist-credit「Urfalı Babi」。證據：https://musicbrainz.org/release-group/a0636a77-2e81-4802-9c4d-d3ce05f9e32e https://www.discogs.com/master/1467954",
+    "queryAlias": "Urfalı Babi|Disko-Kebap"
+   },
+   "research": {
+    "suggestedYear": 1978,
+    "yearNote": ""
+   },
+   "genres": [
+    "folk",
+    "funk"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/a0636a77-2e81-4802-9c4d-d3ce05f9e32e/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-04T07:17:48Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-04 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 5,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-04T07:17:48Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 5）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": true,
+    "tier": "pearl",
+    "evidenceUrls": [
+     "https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Urfal%C4%B1%20Babi&album=Disko%20Kebap",
+     "https://www.discogs.com/master/1467954",
+     "https://musicbrainz.org/release-group/a0636a77-2e81-4802-9c4d-d3ce05f9e32e"
+    ],
+    "reason": "流亡採用：Last.fm listeners 5（有效值、1–299）、研究層核對同藝人同盤非錯配、私壓或獨立小廠且無整張正式串流再發（Apple 多店面查無；考古廠黑膠／CD 重發不算），冷門度 5。研究層判定：合格（listeners 5～34，證據 https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Urfal%C4%B1%20Babi&album=Disko%20Kebap 回 5、album=Disko-Kebap 回 34，皆在 1–299 內，Discogs https://www.discogs.com/master/1467954 為同一張 1978 S&S 盤；iTunes tr/us 搜尋無此盤；僅 1980 德國 Minareci 卡帶版。MB 掛的 Ezgi Müzik 1732 為後來的版本，原盤是 S&S）。冷門度 5 成立。注意：卡單 label 寫 S&S 對、但 meta 的 MB 版次標 Ezgi Müzik（可能是重發），請主線以 S&S 為準。曲目名只有 Karışık Ke（三軸 3/5/3、Last.fm listeners 5）",
+    "assessedAt": "2026-11-04T07:17:48Z",
+    "source": "主線 add-20261104-ax4 頂點採用"
+   },
+   "description": {
+    "text": "《Disko Kebap》是土耳其民間詩人 Urfalı Babi 唯一的專輯，1970 年代由 S&S 出版。他 1922 年生於 Şanlıurfa。原版之後只查到 1980 年德國的卡帶版，LP 在收藏圈想找的人遠多於手上有的人；2011 年起，紐約的 Nublu Records 在 İstanbul 70 系列裡收入〈Disko Kebap〉的重剪版。他彈巴拉馬琴，Ahmet Kurtuluş 負責合成器、鋼琴與長笛，Michael Oliver 打鼓並操作節奏機。四軌都叫〈Karışık Kebap〉，各長八分多鐘，路數偏迪斯可與放克。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/3529970",
+     "https://www.discogs.com/release/10693099",
+     "https://en.wikipedia.org/wiki/Urfa",
+     "https://api.discogs.com/masters/1467954",
+     "https://musicbrainz.org/release-group/a0636a77-2e81-4802-9c4d-d3ce05f9e32e"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-04T07:17:48Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": false,
+    "apexPool": true
+   }
+  },
+  {
+   "artist": "Tokyo Kid Brothers",
+   "album": "黄金バット Golden Bat",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "manual",
+    "rgMbid": "",
+    "upc": "",
+    "aliasesChecked": true,
+    "mbAbsenceProof": {
+     "queries": [
+      "artist:\"Tokyo Kid Brothers\" AND releasegroup:\"黄金バット Golden Bat\" → count 0",
+      "releasegroup:\"黄金バット Golden Bat\" → count 0",
+      "artist:\"Tokyo Kid Brothers\" → count 3"
+     ],
+     "checkedAt": "2026-11-04T07:17:47.981Z",
+     "conclusion": "artist:\"Tokyo Kid Brothers\" AND releasegroup:\"黄金バット Golden Bat\" → count 0，前 0 筆無同藝人同盤名的 release-group；releasegroup:\"黄金バット Golden Bat\" → count 0，前 0 筆無同藝人同盤名的 release-group；artist:\"Tokyo Kid Brothers\" → count 3，前 3 筆無同藝人同盤名的 release-group。身分以 Discogs master／release 為準。"
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/master/674627",
+     "https://api.discogs.com/masters/674627"
+    ],
+    "manualRuling": "雲端主線 2026-11-04 依 ALBUM_ONBOARDING §1 人工身分核可（店主 2026-09-02 裁定權下放；薄細項策展線 add-20261104-ax4）",
+    "coverSourceHint": "discogs",
+    "aliasReview": "日本迷幻／搖滾：東京 Kid Brothers 1971 年的音樂劇《黄金バット》原聲，日本迷幻搖滾收藏盤｜⚠ MB 無；Apple 查無｜MB 查無（），走 §1 人工身分。證據：https://www.discogs.com/master/674627 https://api.discogs.com/masters/674627 https://www.discogs.com/master/674627 https://api.discogs.com/masters/674627",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1971,
+    "yearNote": ""
+   },
+   "genres": [
+    "psychedelic",
+    "rock"
+   ],
+   "cover": {
+    "source": "discogs",
+    "discogsMasterId": "674627",
+    "discogsReleaseId": "2946656",
+    "url": "https://i.discogs.com/TOGfndfsNtG9lJP_BIktlAu_KJ1ApGjVXG-Ng31d5S4/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI5NDY2/NTYtMTc3NjU5MTE5/My01OTkwLmpwZWc.jpeg",
+    "note": "MB 查無；取 Discogs master 674627（「黄金バット Golden Bat」1971）主圖；主線 2026-11-04 聯絡表目視與盤名相符、live-check 200。",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-04T07:17:48Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 10,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-04T07:17:48Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 10）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": true,
+    "tier": "pearl",
+    "evidenceUrls": [
+     "https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Tokyo%20Kid%20Brothers&album=Golden%20Bat",
+     "https://www.discogs.com/master/674627"
+    ],
+    "reason": "流亡採用：Last.fm listeners 10（有效值、1–299）、研究層核對同藝人同盤非錯配、私壓或獨立小廠且無整張正式串流再發（Apple 多店面查無；考古廠黑膠／CD 重發不算），冷門度 5。研究層判定：合格（listeners 10，證據 https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Tokyo%20Kid%20Brothers&album=Golden%20Bat ；Discogs 版本只有 1971 LP、1979 LP、1995 CD；Apple jp/us 搜尋只出現該團《西遊記》2014 與單曲，無《黃金蝙蝠》；Spotify／Bandcamp 未查到；Last.fm 頁面因 proxy 無法開啟，listeners 取自 worker）（三軸 3/5/3、Last.fm listeners 10）",
+    "assessedAt": "2026-11-04T07:17:48Z",
+    "source": "主線 add-20261104-ax4 頂點採用"
+   },
+   "description": {
+    "text": "《黄金バット Golden Bat》是東京キッドブラザース搖滾音樂劇的錄音，1971 年由 Polydor 出版，原版 LP 很難聽到，網上流傳的錄音多半是 1977 年另一次現場演出。劇團 1968 年由東由多加創立，以原創的「和製搖滾音樂劇」為號召；這齣戲 1970 年先在紐約的 La MaMa 實驗劇場演出。唱片由柳田ヒロ編曲、まんだら Ensemble 演奏，劇團成員演唱並念台詞。十二首把神樂、祭典、童謠等日本題材（〈おかぐら〉〈まつり〉）和取自美國電影的〈シェーン・カム・バック〉〈北北西に進路をとれ〉排在一起。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/2946656",
+     "https://www.discogs.com/master/674627",
+     "https://ja.wikipedia.org/wiki/%E6%9D%B1%E4%BA%AC%E3%82%AD%E3%83%83%E3%83%89%E3%83%96%E3%83%A9%E3%82%B6%E3%83%BC%E3%82%B9",
+     "https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Tokyo%20Kid%20Brothers&album=Golden%20Bat",
+     "https://api.discogs.com/masters/674627"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-04T07:17:48Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": false,
+    "apexPool": true
+   }
+  },
+  {
+   "artist": "Cool Knights",
+   "album": "Bana Mulenga",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "manual",
+    "rgMbid": "",
+    "upc": "",
+    "aliasesChecked": true,
+    "mbAbsenceProof": {
+     "queries": [
+      "artist:\"Cool Knights\" AND releasegroup:\"Bana Mulenga\" → count 0",
+      "releasegroup:\"Bana Mulenga\" → count 0",
+      "artist:\"Cool Knights\" → count 0"
+     ],
+     "checkedAt": "2026-11-04T07:17:47.981Z",
+     "conclusion": "artist:\"Cool Knights\" AND releasegroup:\"Bana Mulenga\" → count 0，前 0 筆無同藝人同盤名的 release-group；releasegroup:\"Bana Mulenga\" → count 0，前 0 筆無同藝人同盤名的 release-group；artist:\"Cool Knights\" → count 0，前 0 筆無同藝人同盤名的 release-group。身分以 Discogs master／release 為準。"
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/master/1100576",
+     "https://api.discogs.com/masters/1100576"
+    ],
+    "manualRuling": "雲端主線 2026-11-04 依 ALBUM_ONBOARDING §1 人工身分核可（店主 2026-09-02 裁定權下放；薄細項策展線 add-20261104-ax4）",
+    "coverSourceHint": "discogs",
+    "aliasReview": "尚比亞私壓：Cool Knights 1975 年 Bana Mulenga，尚比亞迷幻放克｜⚠ MB 查無；Apple 查無｜MB 查無（），走 §1 人工身分。證據：https://www.discogs.com/master/1100576 https://api.discogs.com/masters/1100576 https://www.discogs.com/master/1100576 https://api.discogs.com/masters/1100576",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1975,
+    "yearNote": ""
+   },
+   "genres": [
+    "funk",
+    "psychedelic"
+   ],
+   "cover": {
+    "source": "discogs",
+    "discogsMasterId": "1100576",
+    "discogsReleaseId": "9087158",
+    "url": "https://i.discogs.com/eVwDjWBEaYZr2N2hRjhT_jCyvBy2xnMS0gnqPYv3TTc/rs:fit/g:sm/q:90/h:600/w:592/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTkwODcx/NTgtMTQ3NDU1MTE2/MS02NjU1Lm1wbw.jpeg",
+    "note": "MB 查無；取 Discogs master 1100576（「Bana Mulenga」1975）主圖；主線 2026-11-04 聯絡表目視與盤名相符、live-check 200。",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-04T07:17:48Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 13,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-04T07:17:48Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 13）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": true,
+    "tier": "pearl",
+    "evidenceUrls": [
+     "https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Cool%20Knights&album=Bana%20Mulenga",
+     "https://www.discogs.com/master/1100576"
+    ],
+    "reason": "流亡採用：Last.fm listeners 13（有效值、1–299）、研究層核對同藝人同盤非錯配、私壓或獨立小廠且無整張正式串流再發（Apple 多店面查無；考古廠黑膠／CD 重發不算），冷門度 5。研究層判定：合格（listeners 13，證據 https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Cool%20Knights&album=Bana%20Mulenga ；Discogs 只有 2016 義大利非官方再版；Apple us/gb 搜尋『Bana Mulenga』只出現他人同名單曲，無此盤；Bandcamp 的 zambiamusicparlour.bandcamp.com 為廠牌頁，未見此盤；Last.fm 頁面無法開啟，listeners 取自 worker）（三軸 3/5/3、Last.fm listeners 13）",
+    "assessedAt": "2026-11-04T07:17:48Z",
+    "source": "主線 add-20261104-ax4 頂點採用"
+   },
+   "description": {
+    "text": "《Bana Mulenga》是尚比亞樂團 Cool Knights 的 LP，1975 年由 Zambia Music Parlour 出版，除了 2016 年義大利的盜版重壓，沒有正式再版紀錄，原版在收藏圈想找的人遠多於手上有的人。錄音在盧薩卡的 dB Applications 錄音室進行，Edward Godfrey Khuzwayo 製作，Billie David Nyati 編曲。十首詞曲分屬三位作者，M.Z. Lembi 寫了〈Tired of Being Alone〉等五首英文歌，S. N'Cube 寫了三首非英語歌。路數偏放克、靈魂與迷幻。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/9087158",
+     "https://www.discogs.com/master/1100576",
+     "https://www.nowagainrecords.com/?p=5729",
+     "https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Cool%20Knights&album=Bana%20Mulenga",
+     "https://api.discogs.com/masters/1100576"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-04T07:17:48Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": false,
+    "apexPool": true
+   }
+  },
+  {
+   "artist": "Mike Nyoni",
+   "album": "I Can't Understand You",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "manual",
+    "rgMbid": "",
+    "upc": "",
+    "aliasesChecked": true,
+    "mbAbsenceProof": {
+     "queries": [
+      "artist:\"Mike Nyoni\" AND releasegroup:\"I Can't Understand You\" → count 0",
+      "releasegroup:\"I Can't Understand You\" → count 0",
+      "artist:\"Mike Nyoni\" → count 1"
+     ],
+     "checkedAt": "2026-11-04T07:17:47.981Z",
+     "conclusion": "artist:\"Mike Nyoni\" AND releasegroup:\"I Can't Understand You\" → count 0，前 0 筆無同藝人同盤名的 release-group；releasegroup:\"I Can't Understand You\" → count 0，前 0 筆無同藝人同盤名的 release-group；artist:\"Mike Nyoni\" → count 1，前 1 筆無同藝人同盤名的 release-group。身分以 Discogs master／release 為準。"
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/master/942566",
+     "https://api.discogs.com/masters/942566"
+    ],
+    "manualRuling": "雲端主線 2026-11-04 依 ALBUM_ONBOARDING §1 人工身分核可（店主 2026-09-02 裁定權下放；薄細項策展線 add-20261104-ax4）",
+    "coverSourceHint": "discogs",
+    "aliasReview": "尚比亞私壓：Mike Nyoni 1978 年專輯，尚比亞放克、迪斯可與靈魂混合｜⚠ MB 查無；Apple 查無｜MB 查無（），走 §1 人工身分。證據：https://www.discogs.com/master/942566 https://api.discogs.com/masters/942566 https://www.discogs.com/master/942566 https://api.discogs.com/masters/942566",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1978,
+    "yearNote": ""
+   },
+   "genres": [
+    "funk",
+    "soul"
+   ],
+   "cover": {
+    "source": "discogs",
+    "discogsMasterId": "942566",
+    "discogsReleaseId": "7841827",
+    "url": "https://i.discogs.com/slpM83o_RL8cjpfEqNTw6EB6dAoAkirJv5oZhV0zWIc/rs:fit/g:sm/q:90/h:598/w:598/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTc4NDE4/MjctMTQ0OTk1MDM3/MC0zNDA3LmpwZWc.jpeg",
+    "note": "MB 查無；取 Discogs master 942566（「I Can't Understand You」1978）主圖；主線 2026-11-04 聯絡表目視與盤名相符、live-check 200。",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-04T07:17:48Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 19,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-04T07:17:48Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 19）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": true,
+    "tier": "pearl",
+    "evidenceUrls": [
+     "https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Mike%20Nyoni&album=I%20Can%27t%20Understand%20You",
+     "https://www.discogs.com/master/942566"
+    ],
+    "reason": "流亡採用：Last.fm listeners 19（有效值、1–299）、研究層核對同藝人同盤非錯配、私壓或獨立小廠且無整張正式串流再發（Apple 多店面查無；考古廠黑膠／CD 重發不算），冷門度 5。研究層判定：合格（listeners 19，證據 https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Mike%20Nyoni&album=I%20Can%27t%20Understand%20You ；Apple 上只有 2018 Now-Again 選輯《My Own Thing》收其中 4 首，整張無單獨串流；Reprise 版為 1978 當年壓片，非近年數位再發；Last.fm 頁面無法開啟，listeners 取自 worker）（三軸 3/5/3、Last.fm listeners 19）",
+    "assessedAt": "2026-11-04T07:17:48Z",
+    "source": "主線 add-20261104-ax4 頂點採用"
+   },
+   "description": {
+    "text": "《I Can't Understand You》是尚比亞吉他手 Mike Nyoni 離開 Born Free 後的第二張個人專輯，約 1978 年由 Chris Editions 出版，同期也有法國與肯亞版，之後沒有再版紀錄，在收藏圈想找的人遠多於手上有的人。他在 Born Free 擔任主唱與主奏吉他，本盤十首曲子的作曲與編曲都只掛他一人，由 George Fombe 錄音。本盤把 Zamrock 的 fuzz 吉他搖滾換成 wah-wah 踏板與放克、靈魂。之後他在 1980 年代轉向一連串 kalindula 唱片。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/7841827",
+     "https://www.discogs.com/master/942566",
+     "https://www.nowagainrecords.com/?p=5729",
+     "https://en.wikipedia.org/wiki/Mike_Nyoni",
+     "https://www.nowagainrecords.com/?p=5161",
+     "https://music.apple.com/gb/album/my-own-thing/1658879680",
+     "https://api.discogs.com/masters/942566"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-04T07:17:48Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": false,
+    "apexPool": true
+   }
+  },
+  {
+   "artist": "Sagrado Coração da Terra",
+   "album": "Sagrado Coração da Terra",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "manual",
+    "rgMbid": "",
+    "upc": "",
+    "aliasesChecked": true,
+    "mbAbsenceProof": {
+     "queries": [
+      "artist:\"Sagrado Coração da Terra\" AND releasegroup:\"Sagrado Coração da Terra\" → count 0",
+      "releasegroup:\"Sagrado Coração da Terra\" → count 0",
+      "artist:\"Sagrado Coração da Terra\" → count 8"
+     ],
+     "checkedAt": "2026-11-04T07:17:47.981Z",
+     "conclusion": "artist:\"Sagrado Coração da Terra\" AND releasegroup:\"Sagrado Coração da Terra\" → count 0，前 0 筆無同藝人同盤名的 release-group；releasegroup:\"Sagrado Coração da Terra\" → count 0，前 0 筆無同藝人同盤名的 release-group；artist:\"Sagrado Coração da Terra\" → count 8，前 8 筆有同藝人同盤名的 release-group。藝人查詢唯一近似條目是 RG f3d56604「Sagrado」1985（盤名不同、年份晚一年，為 Bemol 再發或另一張），不是 1984 自費原盤。。身分以 Discogs master／release 為準。"
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/master/389803",
+     "https://www.discogs.com/release/15452530"
+    ],
+    "manualRuling": "雲端主線 2026-11-04 依 ALBUM_ONBOARDING §1 人工身分核可（店主 2026-09-02 裁定權下放；薄細項策展線 add-20261104-ax4）",
+    "coverSourceHint": "discogs",
+    "aliasReview": "拉美私壓：巴西自費發行的交響搖滾私壓，藏家圈的 Pernambuco/Minas 地下名盤｜策展無疑點｜MB 查無（），走 §1 人工身分。證據：https://www.discogs.com/master/389803 https://www.discogs.com/release/15452530 https://www.discogs.com/master/389803 https://www.discogs.com/release/15452530 https://itunes.apple.com/search?entity=album&term=Sagrado%20Cora%C3%A7%C3%A3o%20da%20Terra%20Sagrado%20Cora%C3%A7%C3%A3o%20da%20Terra（無結果，封面取 Discogs）",
+    "queryAlias": "",
+    "selfTitledVerified": true
+   },
+   "research": {
+    "suggestedYear": 1984,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock",
+    "psychedelic"
+   ],
+   "cover": {
+    "source": "discogs",
+    "discogsMasterId": "389803",
+    "discogsReleaseId": "15452530",
+    "url": "https://i.discogs.com/kA3uNo2S6sP5f7ZsfInv1CRJM3EZB6yOPMyxr1wuZck/rs:fit/g:sm/q:90/h:395/w:393/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1NDUy/NTMwLTE1OTE4MDE5/MDUtODQxMy5qcGVn.jpeg",
+    "note": "MB 查無；取 Discogs master 389803（「Sagrado Coração Da Terra」1984）主圖；主線 2026-11-04 聯絡表目視與盤名相符、live-check 200。",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-04T07:17:48Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 170,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-04T07:17:48Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 170）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 170），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "這張巴西自費首作，最早出成 CD 的地方是日本。米納斯吉拉斯州的小提琴手 Marcus Viana 1979 年組起這個團，作曲、作詞與管絃編寫全出自他手，1984 年先自己掏錢壓成 LP。首作在日本特別受歡迎，日本 Crime 於 1988 年同時推出 LP 與 CD。編制裡有 Andersen Viana 與 Sebastião Viana 兩支長笛，豎琴由 Miriam Rugani Viana 彈。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/15452530",
+     "https://www.discogs.com/master/389803",
+     "https://pt.wikipedia.org/wiki/Sagrado_Cora%C3%A7%C3%A3o_da_Terra",
+     "https://itunes.apple.com/search?entity=album&country=br&term=Sagrado%20Cora%C3%A7%C3%A3o%20da%20Terra",
+     "https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Sagrado%20Cora%C3%A7%C3%A3o%20da%20Terra&album=Sagrado%20Cora%C3%A7%C3%A3o%20da%20Terra"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-04T07:17:48Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Marlui Miranda",
+   "album": "Olho D'Água",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "manual",
+    "rgMbid": "",
+    "upc": "",
+    "aliasesChecked": true,
+    "mbAbsenceProof": {
+     "queries": [
+      "artist:\"Marlui Miranda\" AND releasegroup:\"Olho D'Água\" → count 0",
+      "releasegroup:\"Olho D'Água\" → count 3",
+      "artist:\"Marlui Miranda\" → count 5"
+     ],
+     "checkedAt": "2026-11-04T07:17:47.981Z",
+     "conclusion": "artist:\"Marlui Miranda\" AND releasegroup:\"Olho D'Água\" → count 0，前 0 筆無同藝人同盤名的 release-group；releasegroup:\"Olho D'Água\" → count 3，前 3 筆無同藝人同盤名的 release-group；artist:\"Marlui Miranda\" → count 5，前 5 筆無同藝人同盤名的 release-group。身分以 Discogs master／release 為準。"
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/master/1046270",
+     "https://www.discogs.com/release/7077149"
+    ],
+    "manualRuling": "雲端主線 2026-11-04 依 ALBUM_ONBOARDING §1 人工身分核可（店主 2026-09-02 裁定權下放；薄細項策展線 add-20261104-ax4）",
+    "coverSourceHint": "discogs",
+    "aliasReview": "拉美私壓：巴西原住民音樂研究者結合爵士與巴亞奧的人聲作品｜⚠ worker 查詢含撇號，listeners 101 為 chk 值，主線可複核｜MB 查無（），走 §1 人工身分。證據：https://www.discogs.com/master/1046270 https://www.discogs.com/release/7077149 https://www.discogs.com/master/1046270 https://www.discogs.com/release/7077149 https://itunes.apple.com/search?entity=album&term=Marlui%20Miranda%20Olho%20D'%C3%81gua（無結果，封面取 Discogs）",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1979,
+    "yearNote": ""
+   },
+   "genres": [
+    "folk",
+    "experimental"
+   ],
+   "cover": {
+    "source": "discogs",
+    "discogsMasterId": "1046270",
+    "discogsReleaseId": "7077149",
+    "url": "https://i.discogs.com/FlXHZMlwNjjEIlY26Tt-ZFoRCMyAGODzLKDVfmTsV3U/rs:fit/g:sm/q:90/h:600/w:595/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTcwNzcx/NDktMTYzMTY0MDAx/OS03MDY4LmpwZWc.jpeg",
+    "note": "MB 查無；取 Discogs master 1046270（「Olho D' Água」1979）主圖；主線 2026-11-04 聯絡表目視與盤名相符、live-check 200。",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-04T07:17:48Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 101,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-04T07:17:48Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 101）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 101），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "她研究亞馬遜各族音樂，第一張唱片由 Gismonti 伴奏。Marlui Miranda 1949 年生於福塔萊薩，那份研究始於 1974 年。五年後巴西 Continental 替她發行本作，是她官方錄音室專輯的第一張，風格橫跨民謠、巴亞奧與拉丁爵士。Egberto Gismonti 包辦鋼琴、電鋼琴、原聲吉他與 viola caipira，Mauro Senise 吹長笛與薩克斯風，Zeca Assumpção 撐起貝斯。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/7077149",
+     "https://www.discogs.com/master/1046270",
+     "https://pt.wikipedia.org/wiki/Marlui_Miranda",
+     "https://music.apple.com/br/album/olhos-d%C3%A1gua/398909454"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/a7/76/0f/a7760f34-4cca-d1bc-e7ca-3725d5c3ff73/mzaf_17012574570912433675.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-11-04T07:17:48Z",
+    "appleCollectionId": "398909454",
+    "storefront": "BR",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple br 398909454「Marlui Miranda《Olhos D'Água》」：Continental 1979 原盤數位版《Olhos D'Água》，11 首與原盤相同，取同名曲〈Olho D'Água〉，取第 5 軌〈Olho D'Água〉。主線 2026-11-04 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Cuarteto Cedrón",
+   "album": "De Argentina",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "0bbf2004-d486-477f-b485-924452a8cfe1",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "拉美私壓：流亡巴黎的阿根廷新探戈／政治歌謠四重奏｜⚠ Discogs 登記為西班牙 Polydor 壓片；Apple 另有同團 Canciones Tradicionales de Argentina（不同專輯）｜主線 2026-11-04 gate 前 MB 重查：release-group 0bbf2004-d486-477f-b485-924452a8cfe1 即本盤（研究層 c 組亦指出），改釘住。證據：https://musicbrainz.org/release-group/0bbf2004-d486-477f-b485-924452a8cfe1",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1972,
+    "yearNote": ""
+   },
+   "genres": [
+    "folk",
+    "jazz"
+   ],
+   "cover": {
+    "source": "discogs",
+    "discogsMasterId": "1106261",
+    "discogsReleaseId": "21813586",
+    "url": "https://i.discogs.com/pf8v17dvXHD7t521tNw7cBxuz0lflZCwgLvALo1bSh8/rs:fit/g:sm/q:90/h:595/w:599/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIxODEz/NTg2LTE2NDI2Nzc2/NjEtNDE4Ni5qcGVn.jpeg",
+    "note": "MB 查無；取 Discogs master 1106261（「De Argentina」1972）主圖；主線 2026-11-04 聯絡表目視與盤名相符、live-check 200。",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-04T07:17:48Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 16,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-04T07:17:48Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 16）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": true,
+    "tier": "pearl",
+    "evidenceUrls": [
+     "https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Cuarteto%20Cedr%C3%B3n&album=De%20Argentina",
+     "https://www.discogs.com/master/1106261",
+     "https://www.discogs.com/release/21813586"
+    ],
+    "reason": "流亡採用：Last.fm listeners 16（有效值、1–299）、研究層核對同藝人同盤非錯配、私壓或獨立小廠且無整張正式串流再發（Apple 多店面查無；考古廠黑膠／CD 重發不算），冷門度 5。研究層判定：合格（listeners 16，證據 https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Cuarteto%20Cedr%C3%B3n&album=De%20Argentina ；Apple us/ar 搜尋該團有 Madrugada、Arrabal Salvaje 等多張，但無 De Argentina；多次黑膠再版（1974–1982 Polydor）屬舊壓片，非數位；Last.fm 頁面無法開啟，listeners 取自 worker）（三軸 3/5/3、Last.fm listeners 16）",
+    "assessedAt": "2026-11-04T07:17:48Z",
+    "source": "主線 add-20261104-ax4 頂點採用"
+   },
+   "description": {
+    "text": "《De Argentina》是阿根廷探戈團 Cuarteto Cedrón 的專輯，1972 年由西班牙 Polydor 首發，法國版到 1980 年代初仍有重壓。樂團 1964 年在布宜諾斯艾利斯成立，1971 年應 Paco Ibáñez 之邀到歐洲演出，1974 年因死亡威脅流亡巴黎。他們把不是寫來唱的詩譜成探戈，唱過 Juan Gelman、Julio Cortázar 等人的詩。編制是人聲與吉他、班多鈕、中提琴和低音提琴，沒有鼓與電聲樂器，以中提琴取代探戈的小提琴。這張收〈Los Ladrones〉〈A Lola Mora〉等十首。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/21813586",
+     "https://www.discogs.com/master/1106261",
+     "https://es.wikipedia.org/wiki/Cuarteto_Cedr%C3%B3n",
+     "https://music.apple.com/us/album/chansons-traditionnelles-dargentine/569113959",
+     "https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Cuarteto%20Cedr%C3%B3n&album=De%20Argentina",
+     "https://musicbrainz.org/release-group/0bbf2004-d486-477f-b485-924452a8cfe1"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-04T07:17:48Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：Cuarteto Cedrón《Canciones Tradicionales de Argentina》0/0）。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": false,
+    "apexPool": true
+   }
+  },
+  {
+   "artist": "Krzak",
+   "album": "Paczka",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "32e5e0ab-ffc3-4dd8-8d69-970ccbaaefd6",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "東歐國營廠冷門盤：波蘭藍調／爵士搖滾團，國營廠冷門盤｜⚠ Discogs 條目 873309 為 master 下 release id，廠牌取推測 Muza；主線核對｜主線 2026-11-04 gate 前 MB 重查：release-group 32e5e0ab-ffc3-4dd8-8d69-970ccbaaefd6 即本盤（研究層 c 組亦指出），改釘住。證據：https://musicbrainz.org/release-group/32e5e0ab-ffc3-4dd8-8d69-970ccbaaefd6",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1982,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock",
+    "jazz"
+   ],
+   "cover": {
+    "source": "discogs",
+    "discogsMasterId": "873309",
+    "discogsReleaseId": "2394903",
+    "url": "https://i.discogs.com/X6cpb7pxXrcSGRc1J4fo2vCAzO0y3beA4NypqjmPzn4/rs:fit/g:sm/q:90/h:590/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIzOTQ5/MDMtMTY5NDk2MTM0/Ni04MTE3LmpwZWc.jpeg",
+    "note": "MB 查無；取 Discogs master 873309（「Paczka」1982）主圖；主線 2026-11-04 聯絡表目視與盤名相符、live-check 200。",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-04T07:17:48Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 238,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-04T07:17:48Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 238）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 238），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "卡托維茲的器樂搖滾團，把 B 面最後一首拉到 10 分鐘。1975 年定名的 Krzak，1981 年由吉他手 Leszek Winder 接替離團的創團者 Jan Błędowski 領導。波蘭 Pronit 1982 年出版本盤，共八首，壓軸的〈Tajemniczy Świat Mariana〉長 10 分 5 秒。陣容是雙吉他、貝斯與鼓四人，主奏由 Winder 擔綱。八〇年代初，它是波蘭最受歡迎的器樂搖滾團之一，拿過幾張金唱片。",
+    "sourceUrls": [
+     "https://www.discogs.com/master/873309",
+     "https://www.discogs.com/release/2394903",
+     "https://pl.wikipedia.org/wiki/Krzak_(zespół_muzyczny)",
+     "https://culture.pl/en/artist/krzak",
+     "https://music.apple.com/pl/album/pomara%C5%84czowy-kartofel/6805073409",
+     "https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Krzak&album=Paczka",
+     "https://musicbrainz.org/release-group/32e5e0ab-ffc3-4dd8-8d69-970ccbaaefd6"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-04T07:17:48Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Lutajuća Srca",
+   "album": "Lutajuća Srca 1",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "manual",
+    "rgMbid": "",
+    "upc": "",
+    "aliasesChecked": true,
+    "mbAbsenceProof": {
+     "queries": [
+      "artist:\"Lutajuća Srca\" AND releasegroup:\"Lutajuća Srca 1\" → count 0",
+      "releasegroup:\"Lutajuća Srca 1\" → count 0",
+      "artist:\"Lutajuća Srca\" → count 0"
+     ],
+     "checkedAt": "2026-11-04T07:17:47.981Z",
+     "conclusion": "artist:\"Lutajuća Srca\" AND releasegroup:\"Lutajuća Srca 1\" → count 0，前 0 筆無同藝人同盤名的 release-group；releasegroup:\"Lutajuća Srca 1\" → count 0，前 0 筆無同藝人同盤名的 release-group；artist:\"Lutajuća Srca\" → count 0，前 0 筆無同藝人同盤名的 release-group。身分以 Discogs master／release 為準。"
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/master/1118673",
+     "https://www.discogs.com/release/1054395"
+    ],
+    "manualRuling": "雲端主線 2026-11-04 依 ALBUM_ONBOARDING §1 人工身分核可（店主 2026-09-02 裁定權下放；薄細項策展線 add-20261104-ax4）",
+    "coverSourceHint": "discogs",
+    "aliasReview": "東歐國營廠冷門盤：南斯拉夫民謠搖滾，PGP RTB 國營廠冷門盤｜策展無疑點｜MB 查無（），走 §1 人工身分。證據：https://www.discogs.com/master/1118673 https://www.discogs.com/release/1054395 https://www.discogs.com/master/1118673 https://www.discogs.com/release/1054395 https://itunes.apple.com/search?entity=album&term=Lutaju%C4%87a%20Srca%20Lutaju%C4%87a%20Srca%201（無結果，封面取 Discogs）",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1974,
+    "yearNote": ""
+   },
+   "genres": [
+    "folk",
+    "rock"
+   ],
+   "cover": {
+    "source": "discogs",
+    "discogsMasterId": "1118673",
+    "discogsReleaseId": "1054395",
+    "url": "https://i.discogs.com/6pp6N8ppWPT4FmfQ51TwnXducBlIt9ltRupB4ii-lTI/rs:fit/g:sm/q:90/h:596/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwNTQz/OTUtMTE4ODQ3Njcy/NC5qcGVn.jpeg",
+    "note": "MB 查無；取 Discogs master 1118673（「Lutajuća Srca 1」1974）主圖；主線 2026-11-04 聯絡表目視與盤名相符、live-check 200。",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-04T07:17:48Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 12,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-04T07:17:48Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 12）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": true,
+    "tier": "pearl",
+    "evidenceUrls": [
+     "https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Lutaju%C4%87a%20Srca&album=Lutaju%C4%87a%20Srca%201",
+     "https://www.discogs.com/master/1118673",
+     "https://www.discogs.com/release/1054395"
+    ],
+    "reason": "流亡採用：Last.fm listeners 12（有效值、1–299）、研究層核對同藝人同盤非錯配、私壓或獨立小廠且無整張正式串流再發（Apple 多店面查無；考古廠黑膠／CD 重發不算），冷門度 5。研究層判定：合格（listeners 12，證據 https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Lutaju%C4%87a%20Srca&album=Lutaju%C4%87a%20Srca%201 ；Discogs 版本僅 1974 LP＋卡帶，Apple 搜尋無結果；Spotify／Bandcamp 未能直接核對，Last.fm 專輯頁當下回 600，僅用 worker 回報的 listeners）（三軸 3/5/3、Last.fm listeners 12）",
+    "assessedAt": "2026-11-04T07:17:48Z",
+    "source": "主線 add-20261104-ax4 頂點採用"
+   },
+   "description": {
+    "text": "《Lutajuća Srca 1》是塞爾維亞尼什三人組 Lutajuća Srca 的第一張專輯，1974 年 4 月由國營的 PGP RTB 出版。樂團 1972 年以〈Još malo〉在青年音樂節得到觀眾獎與最佳歌詞獎，〈Jefimija〉在 2006 年 B92 的國內歌曲百大排第 94 名。專輯在盧比安納錄音，由 Jure Robežnik 製作並編寫多數曲目，伴奏是貝爾格勒與盧比安納廣播電視的管弦樂團。兩位男團員彈吉他並和聲，其中一人兼彈鋼琴與大提琴，Spomenka Đokić 以花腔女高音主唱，以原聲樂器配弦樂唱抒情曲。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/1054395",
+     "https://www.discogs.com/artist/880659",
+     "https://www.discogs.com/master/1118673"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-04T07:17:48Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": false,
+    "apexPool": true
+   }
+  },
+  {
+   "artist": "Jean-Claude Eloy",
+   "album": "Shānti",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "67561f1f-85b5-459f-aae9-1d5242caff2f",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "早期電子私壓：法國電聲具體音樂大作，融合東方冥想｜策展無疑點｜主線 2026-11-04 gate 前 MB 重查：release-group 67561f1f-85b5-459f-aae9-1d5242caff2f 即本盤（研究層 c 組亦指出），改釘住。證據：https://musicbrainz.org/release-group/67561f1f-85b5-459f-aae9-1d5242caff2f",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1979,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic",
+    "experimental"
+   ],
+   "cover": {
+    "source": "discogs",
+    "discogsMasterId": "317935",
+    "discogsReleaseId": "938401",
+    "url": "https://i.discogs.com/7iBTEncoJt14e3e2024BM48Sg1XHDf5NG8GXh9PeW9Y/rs:fit/g:sm/q:90/h:590/w:590/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTkzODQw/MS0xNDM1Njg5MTk3/LTczMTguanBlZw.jpeg",
+    "note": "MB 查無；取 Discogs master 317935（「Shānti」1979）主圖；主線 2026-11-04 聯絡表目視與盤名相符、live-check 200。",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-04T07:17:48Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 12,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-04T07:17:48Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 12）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": true,
+    "tier": "pearl",
+    "evidenceUrls": [
+     "https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Jean-Claude%20Eloy&album=Sh%C4%81nti",
+     "https://www.discogs.com/master/317935",
+     "https://www.discogs.com/release/938401"
+    ],
+    "reason": "流亡採用：Last.fm listeners 12（有效值、1–299）、研究層核對同藝人同盤非錯配、私壓或獨立小廠且無整張正式串流再發（Apple 多店面查無；考古廠黑膠／CD 重發不算），冷門度 5。研究層判定：合格（listeners 12，證據 https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Jean-Claude%20Eloy&album=Sh%C4%81nti ；Apple 搜尋 Jean-Claude Eloy 0 筆，Discogs 版本僅 Erato LP、2006 非官方 CDr、2010 Hors Territoires CD，無串流跡象；Bandcamp／Spotify 頁面無法載入未能核對，結論為暫時合格，建議主線人工抽查 Spotify）（三軸 3/5/3、Last.fm listeners 12）",
+    "assessedAt": "2026-11-04T07:17:48Z",
+    "source": "主線 add-20261104-ax4 頂點採用"
+   },
+   "description": {
+    "text": "《Shānti》是法國作曲家 Jean-Claude Eloy 應 Stockhausen 之邀，1972 至 1973 年在科隆西德廣播電子音樂工作室完成的磁帶作品，長約 96 分鐘，Erato 到 1979 年才出成雙 LP，原版在收藏圈想找的人遠多於手上有的人。這是他第一件電子與具體聲音作品，1974 年在 Royan 音樂節首演。副題是電子與具體聲音的冥想音樂，獻給 Sri Aurobindo，四面各是一段 19 到 29 分鐘的持續長音，並由一位女聲擔任 Aurobindo 的聲音。唱片從四軌母帶混成兩軌，廠方建議用四支喇叭、大音量播放。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/938401",
+     "https://www.discogs.com/artist/575297",
+     "https://en.wikipedia.org/wiki/Jean-Claude_Eloy",
+     "https://www.discogs.com/master/317935",
+     "https://musicbrainz.org/release-group/67561f1f-85b5-459f-aae9-1d5242caff2f"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-04T07:17:48Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": false,
+    "apexPool": true
+   }
+  },
+  {
+   "artist": "Richard Maxfield",
+   "album": "Electronic Music",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "85d86ba0-366f-4656-8c35-41aced83fc5c",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "早期電子私壓：美國磁帶音樂先驅，La Monte Young 同輩，僅限量壓製｜⚠ Apple 另有 New Sounds in Electronic Music 合輯（不同專輯）；MB 有同名 RG 85d86ba0（1969）可補｜主線 2026-11-04 gate 前 MB 重查：release-group 85d86ba0-366f-4656-8c35-41aced83fc5c 即本盤（研究層 c 組亦指出），改釘住。證據：https://musicbrainz.org/release-group/85d86ba0-366f-4656-8c35-41aced83fc5c",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1969,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic",
+    "experimental"
+   ],
+   "cover": {
+    "source": "discogs",
+    "discogsMasterId": "430466",
+    "discogsReleaseId": "1151501",
+    "url": "https://i.discogs.com/9AStMZxR23kvmGRHnyyeFuCV385P8ubtXfoMLn3YmEQ/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExNTE1/MDEtMTMxNzA2NDgw/NC5qcGVn.jpeg",
+    "note": "MB 查無；取 Discogs master 430466（「Electronic Music」1969）主圖；主線 2026-11-04 聯絡表目視與盤名相符、live-check 200。",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-04T07:17:48Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 75,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-04T07:17:48Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 75）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": true,
+    "tier": "pearl",
+    "evidenceUrls": [
+     "https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Richard%20Maxfield&album=Electronic%20Music",
+     "https://www.discogs.com/master/430466",
+     "https://www.discogs.com/release/1151501"
+    ],
+    "reason": "流亡採用：Last.fm listeners 75（有效值、1–299）、研究層核對同藝人同盤非錯配、私壓或獨立小廠且無整張正式串流再發（Apple 多店面查無；考古廠黑膠／CD 重發不算），冷門度 5。研究層判定：合格（listeners 75，證據 https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Richard%20Maxfield&album=Electronic%20Music ；Apple 僅見不同專輯的合輯，Discogs 版本只有 LP、1988 卡帶、UbuWeb 檔與 2025 非官方義大利黑膠；New World 1999 《The Oak of the Golden Dreams》為不同專輯。Spotify／Bandcamp 未能核對）（三軸 3/5/3、Last.fm listeners 75）",
+    "assessedAt": "2026-11-04T07:17:48Z",
+    "source": "主線 add-20261104-ax4 頂點採用"
+   },
+   "description": {
+    "text": "《Electronic Music》收錄美國作曲家 Richard Maxfield 1960 至 1963 年的四首磁帶作品，1969 年由 Advance 出版。他被視為電子音樂的先驅之一，也是第一位教純電子音樂的美國人。〈Pastoral Symphony〉是早期類比電子音；〈Bacchanale〉以 Five Spot 的爵士現場錄音開頭，再拼進他的舊作、民間音樂磁帶、朗誦、打字機，以及處理過的薩克斯風與小提琴刮擦聲；〈Amazing Grace〉把佈道人聲做成磁帶循環，被視為 Steve Reich〈It's Gonna Rain〉的先聲。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/1151501",
+     "https://en.wikipedia.org/wiki/Richard_Maxfield",
+     "https://www.discogs.com/artist/32188",
+     "https://www.discogs.com/master/430466",
+     "https://itunes.apple.com/search?entity=album&term=Richard%20Maxfield",
+     "https://musicbrainz.org/release-group/85d86ba0-366f-4656-8c35-41aced83fc5c"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-04T07:17:48Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：Steve Reich, Richard Maxfield & Pauline Oliveros《New Sounds in Electronic Music》0/0）。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": false,
+    "apexPool": true
+   }
+  },
+  {
+   "artist": "Ralph Lundsten",
+   "album": "Elektronisk Musik",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "manual",
+    "rgMbid": "",
+    "upc": "",
+    "aliasesChecked": true,
+    "mbAbsenceProof": {
+     "queries": [
+      "artist:\"Ralph Lundsten\" AND releasegroup:\"Elektronisk Musik\" → count 0",
+      "releasegroup:\"Elektronisk Musik\" → count 1",
+      "artist:\"Ralph Lundsten\" → count 31"
+     ],
+     "checkedAt": "2026-11-04T07:17:47.981Z",
+     "conclusion": "artist:\"Ralph Lundsten\" AND releasegroup:\"Elektronisk Musik\" → count 0，前 0 筆無同藝人同盤名的 release-group；releasegroup:\"Elektronisk Musik\" → count 1，前 1 筆無同藝人同盤名的 release-group；artist:\"Ralph Lundsten\" → count 31，前 25 筆無同藝人同盤名的 release-group。身分以 Discogs master／release 為準。"
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/master/2467426",
+     "https://www.discogs.com/release/907465"
+    ],
+    "manualRuling": "雲端主線 2026-11-04 依 ALBUM_ONBOARDING §1 人工身分核可（店主 2026-09-02 裁定權下放；薄細項策展線 add-20261104-ax4）",
+    "coverSourceHint": "discogs",
+    "aliasReview": "早期電子私壓：瑞典電聲先驅與 Leo Nilson 的 HMV 電子音樂盤｜⚠ 署名 Ralph Lundsten & Leo Nilson｜MB 查無（），走 §1 人工身分。證據：https://www.discogs.com/master/2467426 https://www.discogs.com/release/907465 https://www.discogs.com/master/2467426 https://www.discogs.com/release/907465 https://itunes.apple.com/search?entity=album&term=Ralph%20Lundsten%20Elektronisk%20Musik（無結果，封面取 Discogs）",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1968,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic",
+    "experimental"
+   ],
+   "cover": {
+    "source": "discogs",
+    "discogsMasterId": "2467426",
+    "discogsReleaseId": "907465",
+    "url": "https://i.discogs.com/B5Poe8cuylyLTSCc_HBFgeqnJx5KWMkxODAGm0J-NeI/rs:fit/g:sm/q:90/h:433/w:450/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTkwNzQ2/NS0xMjc0MzE3OTI3/LmpwZWc.jpeg",
+    "note": "MB 查無；取 Discogs master 2467426（「Elektronisk Musik」1968）主圖；主線 2026-11-04 聯絡表目視與盤名相符、live-check 200。",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-04T07:17:48Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 25,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-04T07:17:48Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 25）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": true,
+    "tier": "pearl",
+    "evidenceUrls": [
+     "https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Ralph%20Lundsten&album=Elektronisk%20Musik",
+     "https://www.discogs.com/master/2467426",
+     "https://www.discogs.com/release/907465"
+    ],
+    "reason": "流亡採用：Last.fm listeners 25（有效值、1–299）、研究層核對同藝人同盤非錯配、私壓或獨立小廠且無整張正式串流再發（Apple 多店面查無；考古廠黑膠／CD 重發不算），冷門度 5。研究層判定：不合格（listeners 25，證據 https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Ralph%20Lundsten&album=Elektronisk%20Musik ；本盤無單張重發，但四張 CD 合輯在 Apple 正式串流並含〈Mizar〉，屬部分曲目的正式串流再發，邊緣案例，建議主線視為不合格或降級一般卡）（三軸 3/5/3、Last.fm listeners 25）",
+    "assessedAt": "2026-11-04T07:17:48Z",
+    "source": "主線 add-20261104-ax4 頂點採用"
+   },
+   "description": {
+    "text": "《Elektronisk Musik》是瑞典電子音樂先驅 Ralph Lundsten 與 Leo Nilson 共同署名的 LP，1968 年由 HMV 出版，原版在收藏圈想找的人遠多於手上有的人，早期作品要到 1999 年才由 Lundsten 自己的廠牌收進四片 CD 合集。四首 1967 至 1968 年在他自宅的 Andromeda Studio 做成，這間私人工作室被視為瑞典最早的同類工作室之一。兩人這時期用振盪器、早期合成器、加裝磁頭的磁帶機與濾波器，做出嗡鳴音、粗糙的調變和不成旋律的織體，再以磁帶回聲堆出循環音群。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/907465",
+     "https://www.discogs.com/artist/14632",
+     "https://en.wikipedia.org/wiki/Ralph_Lundsten",
+     "https://www.discogs.com/artist/184711",
+     "https://www.discogs.com/master/2467426",
+     "https://music.apple.com/us/album/electronic-music-from-the-60s-and-70s/533836744"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-04T07:17:48Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": false,
+    "apexPool": true
+   }
+  }
+ ]
+}

@@ -1,0 +1,771 @@
+[
+ {
+  "key": "atomic rooster",
+  "name": "Atomic Rooster",
+  "slots": {
+   "origin": {
+    "status": "bank",
+    "facts": [
+     {
+      "f": "樂團源自 The Crazy World of Arthur Brown：1969 年夏天該團在美國巡演中解散，鍵盤手 Vincent Crane 與鼓手 Carl Palmer 回英國，原想與剛離開滾石樂團的 Brian Jones 合作，Jones 7 月 3 日過世後兩人改組 Atomic Rooster。",
+      "src": "https://en.wikipedia.org/wiki/Atomic_Rooster",
+      "from": "bank",
+      "single": true
+     },
+     {
+      "f": "Vincent Crane 本名 Vincent Rodney Cheesman，1943 年 5 月 21 日生於英格蘭雷丁（Reading），1989 年 2 月 14 日過世，享年 45 歲。",
+      "src": "https://en.wikipedia.org/wiki/Vincent_Crane",
+      "src2": "https://musicbrainz.org/ws/2/artist/?query=artist:%22Vincent%20Crane%22&fmt=json",
+      "from": "new"
+     },
+     {
+      "f": "Crane 少年時自學 boogie-woogie 鋼琴，1961 至 1964 年就讀 Trinity College of Music；Graham Bond 的影響讓他改彈 Hammond 風琴。",
+      "src": "https://en.wikipedia.org/wiki/Vincent_Crane",
+      "from": "new",
+      "single": true
+     }
+    ]
+   },
+   "sound": {
+    "status": "bank",
+    "facts": [
+     {
+      "f": "樂團是風琴領軍的編制，沒有專職貝斯手，低音線由 Crane 的 Hammond 風琴（左手加腳踏板）補上，吉他手 John Du Cann 兼任主唱。",
+      "src": "https://en.wikipedia.org/wiki/Atomic_Rooster",
+      "from": "bank",
+      "single": true
+     },
+     {
+      "f": "樂團最知名的是 1971 年的硬調前衛搖滾單曲〈Tomorrow Night〉（英國單曲榜第 11 名）與〈Devil's Answer〉（第 4 名）；風格歷經多次劇變，1983 年《Headline News》全由 Crane 寫成、大量使用電子合成器，甚至被部分人視為 Crane 個人專輯。",
+      "src": "https://en.wikipedia.org/wiki/Atomic_Rooster",
+      "from": "new",
+      "single": true
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Crane 與 Arthur Brown 合寫的〈Fire〉（1968）在英國、美國與加拿大都登上榜首，他的風琴與銅管編曲是錄音的特色。",
+      "src": "https://en.wikipedia.org/wiki/Vincent_Crane",
+      "from": "new",
+      "single": true
+     },
+     {
+      "f": "Crane 是 Atomic Rooster 歷次陣容中唯一不變的成員、也是主要詞曲作者；日後與 Rory Gallagher、Peter Green、Dexys Midnight Runners 等合作過。",
+      "src": "https://en.wikipedia.org/wiki/Vincent_Crane",
+      "from": "new",
+      "single": true
+     },
+     {
+      "f": "2016 年樂團經 Crane 遺孀同意重組，新陣容有兩位來自 1970 年代各期的成員。",
+      "src": "https://en.wikipedia.org/wiki/Atomic_Rooster",
+      "from": "new",
+      "single": true
+     }
+    ]
+   },
+   "era": {
+    "status": "bank",
+    "facts": [
+     {
+      "f": "Carl Palmer 1970 年 6 月離團加入 Emerson, Lake & Palmer，Paul Hammond 8 月補位，隨即錄製《Death Walks Behind You》。",
+      "src": "https://en.wikipedia.org/wiki/Atomic_Rooster",
+      "from": "bank",
+      "single": true
+     },
+     {
+      "f": "1971 年 9 月新陣容在倫敦 The Oval 慈善演出與 Faces、The Who 同台，現場約 6.5 萬人。",
+      "src": "https://en.wikipedia.org/wiki/Atomic_Rooster",
+      "from": "bank",
+      "single": true
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "〈Devil's Answer〉1971 年登上英國單曲榜第 4 名，〈Tomorrow Night〉第 11 名。",
+    "src": "https://en.wikipedia.org/wiki/Atomic_Rooster",
+    "from": "new",
+    "single": true
+   }
+  ],
+  "conflicts": [],
+  "searches": 4,
+  "failedFetches": [],
+  "status": "thin",
+  "pubIssues": [],
+  "notes": "身分確認：poolAlbums 兩張皆為英國 Atomic Rooster，無同名混卡。Crane 逝世年 1989 兩源（維基、MusicBrainz，MusicBrainz 部分取自維基，非完全獨立）；死因：維基與搜尋結果指向自殺，依「避免」原則不收。legacy 查不到後輩點名或名人堂式共識，只有 Crane 的 Fire 與合作者名單；Paul Hammond 1992 過世僅見單一搜尋摘要，未收。上線簡介與研究稿一致，無衝突。"
+ },
+ {
+  "key": "black widow",
+  "name": "Black Widow",
+  "slots": {
+   "origin": {
+    "status": "bank",
+    "facts": [
+     {
+      "f": "這是英國萊斯特的 Black Widow 樂團（非漫畫角色）：前身是 Pesky Gee!，1969 年在 Pye 發過一張《Exclamation Mark》，女主唱 Kay Garrett 離團後改名 Black Widow。",
+      "src": "https://en.wikipedia.org/wiki/Black_Widow_(band)",
+      "from": "bank",
+      "single": true
+     },
+     {
+      "f": "Kip Trevor 是主唱、吉他與口琴手，1966 至 1972 年在團，離團前由 Rick 'E.' 接替。",
+      "src": "https://en.wikipedia.org/wiki/Black_Widow_(band)",
+      "from": "new",
+      "single": true
+     }
+    ]
+   },
+   "sound": {
+    "status": "bank",
+    "facts": [
+     {
+      "f": "專輯《Sacrifice》被描述為「原始、前衛的節奏加上相當邪惡的神祕學序曲」，帶著陰森氛圍，主題圍繞撒旦與神祕學。",
+      "src": "https://en.wikipedia.org/wiki/Sacrifice_(Black_Widow_album)",
+      "from": "new",
+      "single": true
+     },
+     {
+      "f": "長笛、薩克斯風與風琴構成音色核心，並帶爵士邊緣的前衛搖滾質地。",
+      "src": "https://en.wikipedia.org/wiki/Black_Widow_(band)",
+      "from": "bank",
+      "single": true
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "《Classic Rock》雜誌的編輯群認為，〈Sacrifice〉、〈Conjuration〉與〈In Ancient Days〉是黑金屬的「精神先驅」。",
+      "src": "https://en.wikipedia.org/wiki/Sacrifice_(Black_Widow_album)",
+      "from": "bank",
+      "single": true
+     },
+     {
+      "f": "〈Come to the Sabbat〉是樂團最知名的歌，被許多藝人翻唱，包括 1971 年在紐西蘭打進前十的 Timberjack。",
+      "src": "https://en.wikipedia.org/wiki/Black_Widow_(band)",
+      "from": "new",
+      "single": true
+     },
+     {
+      "f": "樂團是早期把撒旦與神祕學意象放進舞台與唱片的英國團，因含裸露的舞台秀招來大眾媒體的怒火。",
+      "src": "https://en.wikipedia.org/wiki/Black_Widow_(band)",
+      "from": "new",
+      "single": true
+     }
+    ]
+   },
+   "era": {
+    "status": "bank",
+    "facts": [
+     {
+      "f": "1971 年起樂團淡化神祕學形象以求擴大聽眾，未奏效；CBS 在《Black Widow》（1971）與《Black Widow III》（1972）後放棄他們，樂團 1972–73 年解散。",
+      "src": "https://en.wikipedia.org/wiki/Black_Widow_(band)",
+      "from": "new",
+      "single": true
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "《Sacrifice》1970 年在英國專輯榜最高第 32 名，同年登上 Isle of Wight 音樂節。",
+    "src": "https://en.wikipedia.org/wiki/Black_Widow_(band)",
+    "src2": "https://en.wikipedia.org/wiki/Sacrifice_(Black_Widow_album)",
+    "from": "new"
+   }
+  ],
+  "conflicts": [],
+  "searches": 3,
+  "failedFetches": [
+   "spookyisles.com 403",
+   "en.wikipedia Come_to_the_Sabbat 404"
+  ],
+  "status": "full",
+  "pubIssues": [],
+  "notes": "⚠ 同名：維基預抓是漫畫角色 Black Widow，與卡池無關，一條不收；樂團頁已另行抓取。與 Alex Sanders 的連結查無，不寫。維基自相矛盾：導言稱 1969 年 9 月成軍、歷史段稱 1966 年 Pesky Gee! 成立，facts 只寫前身而不寫年份。『Classic Rock 編輯群』單源，為具名說法，屬維基整理。BBC 禁播等僅見搜尋摘要，未實際開頁，不收。上線簡介與維基一致，無衝突。"
+ },
+ {
+  "key": "bloodrock",
+  "name": "Bloodrock",
+  "slots": {
+   "origin": {
+    "status": "bank",
+    "facts": [
+     {
+      "f": "樂團是德州沃思堡的硬搖滾團，前身 1963 年為 The Naturals、1966 年改稱 Crowd +1，1969 年定名 Bloodrock，由 Grand Funk Railroad 的經理人 Terry Knight 取名並協助簽進 Capitol。",
+      "src": "https://en.wikipedia.org/wiki/Bloodrock",
+      "src2": "https://texasstandard.org/stories/texas-music-history-bloodrock-debut-album-1970/",
+      "from": "bank"
+     },
+     {
+      "f": "1969 年的核心成員是 Jim Rutledge、Lee Pickens、Nick Taylor、Ed Grundy 與 Stevie Hill，早已活躍於達拉斯與沃思堡場景；Rutledge 起初打鼓，聽從 Knight 建議轉任主唱。",
+      "src": "https://texasstandard.org/stories/texas-music-history-bloodrock-debut-album-1970/",
+      "from": "new",
+      "single": true
+     }
+    ]
+   },
+   "sound": {
+    "status": "bank",
+    "facts": [
+     {
+      "f": "首作混合迷幻、riff 驅動的硬搖滾與實驗性的前衛雛形，受 Cream、Deep Purple 與 Jimi Hendrix 影響。",
+      "src": "https://texasstandard.org/stories/texas-music-history-bloodrock-debut-album-1970/",
+      "from": "new",
+      "single": true
+     },
+     {
+      "f": "音樂主要被歸為硬搖滾，部分評論把首作放在硬搖滾與早期重金屬的脈絡；1972 年人事更動後轉向前衛搖滾、爵士與流行，疏遠了部分樂迷。",
+      "src": "https://en.wikipedia.org/wiki/Bloodrock",
+      "from": "new",
+      "single": true
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "〈D.O.A.〉是樂團最大的熱門曲，單曲版 1971 年春發行、最高 Hot 100 第 36 名，部分電台因歌詞寫實與警笛音效而拒播。",
+      "src": "https://en.wikipedia.org/wiki/Bloodrock",
+      "src2": "https://texasstandard.org/stories/texas-music-history-bloodrock-debut-album-1970/",
+      "from": "new",
+      "note": "必要例外：名次為這首歌爭議的註腳，屬在世者榜單，主線可刪"
+     },
+     {
+      "f": "《Bloodrock 2》在 Billboard 專輯榜最高第 21 名，1990 年 1 月 3 日獲 RIAA 金唱片認證。",
+      "src": "https://en.wikipedia.org/wiki/Bloodrock_2",
+      "src2": "https://en.wikipedia.org/wiki/Bloodrock",
+      "from": "new"
+     },
+     {
+      "f": "樂團曾為 Jimi Hendrix 暖場，並在 1970 年 Atlanta International Pop Festival 同台；Texas Standard 稱他們協助德州進入 Dazed and Confused 的年代。",
+      "src": "https://texasstandard.org/stories/texas-music-history-bloodrock-debut-album-1970/",
+      "from": "new",
+      "single": true
+     }
+    ]
+   },
+   "era": {
+    "status": "bank",
+    "facts": [
+     {
+      "f": "1972 年 5 月 Lee Pickens 與 Jim Rutledge 離團，Warren Ham（人聲、長笛、薩克斯風）加入，樂團轉向前衛；1974 年解散。",
+      "src": "https://en.wikipedia.org/wiki/Bloodrock",
+      "src2": "https://texasstandard.org/stories/texas-music-history-bloodrock-debut-album-1970/",
+      "from": "new",
+      "note": "解散年兩源有 1974／1975 差異，採兩源一致的 1974 作範圍"
+     },
+     {
+      "f": "2005 年 3 月原班人馬在沃思堡重聚，為罹患白血病的鍵盤手 Stevie Hill 義演；Hill 於 2013 年過世、Nick Taylor 於 2010 年過世。",
+      "src": "https://en.wikipedia.org/wiki/Bloodrock",
+      "from": "new",
+      "single": true
+     }
+    ]
+   }
+  },
+  "milestones": [],
+  "conflicts": [],
+  "searches": 4,
+  "failedFetches": [
+   "metrotimes.com 403"
+  ],
+  "status": "full",
+  "pubIssues": [],
+  "notes": "身分確認：卡池為 Bloodrock 2，德州沃思堡 Bloodrock，無混卡。解散年 1974（維基、Texas Standard）與 1975（搜尋摘要／另一維基段）不一致，facts 用 1974 但屬矛盾，寫作層建議不寫解散年。Terry Knight 取名見兩源。Taylor、Hill 死亡年份單源，低風險附帶。D.O.A. 名次為『必要例外』且是上線簡介已寫內容。上線簡介『Bloodrock 2 美國專輯榜第 21 名、單曲 Hot 100 第 36』與維基一致；維基 Bloodrock 頁自稱 D.O.A. 為 1971 年單曲，而 Bloodrock 2 頁載『spring 1971』，一致。"
+ },
+ {
+  "key": "frijid pink",
+  "name": "Frijid Pink",
+  "slots": {
+   "origin": {
+    "status": "bank",
+    "facts": [
+     {
+      "f": "樂團出自底特律郊區 Allen Park：1964 年先是 Rick Stevers 家地下室裡的少年 R&B 翻唱團 Detroit Vibrations，1967 年轉做原創並改名 Frijid Pink（名字部分取自冰箱品牌 Frigidaire）。",
+      "src": "https://michiganrockandrolllegends.com/hall-of-fame/artists/330-frijid-pink",
+      "src2": "https://classicbands.com/FrijidPinkInterview.html",
+      "from": "new",
+      "note": "classicbands 稱 1967 年 10 月改名；Michigan Hall 非獨立（業餘網站），Stevers 訪談為本人說法"
+     },
+     {
+      "f": "Frijid Pink 由 Detroit Vibrations 的鼓手 Richard Stevers 與貝斯手 Tom Harris，加上吉他手 Gary Ray Thompson、主唱 Tom Beaudry（藝名 Kelly Green）組成，簽進 Parrot。",
+      "src": "https://en.wikipedia.org/wiki/Frijid_Pink",
+      "from": "bank",
+      "single": true
+     }
+    ]
+   },
+   "sound": {
+    "status": "bank",
+    "facts": [
+     {
+      "f": "樂團把 R&B 根底接上滿是 fuzz 的底特律硬搖滾（Motor City hard rock），翻唱曲如〈House of the Rising Sun〉被改成侵略性的狂歡版本。",
+      "src": "https://michiganrockandrolllegends.com/hall-of-fame/artists/330-frijid-pink",
+      "from": "new",
+      "single": true
+     },
+     {
+      "f": "〈House of the Rising Sun〉被維基描述為失真吉他驅動的版本；據 Stevers，一位 Dearborn 電台經理聽了試聽帶，勸樂團放掉原定單曲〈God Gave Me You〉改推這首。",
+      "src": "https://en.wikipedia.org/wiki/Frijid_Pink",
+      "src2": "https://classicbands.com/FrijidPinkInterview.html",
+      "from": "new",
+      "note": "上線簡介寫『電台音樂總監』，Stevers 訪談寫 radio station manager，見 pubIssues"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "樂團是第一個把單曲打進 Top 10 的底特律搖滾團，也是第一個在密西根以外大紅的；〈House of the Rising Sun〉讓底特律硬搖滾團拿到第一張金唱片。",
+      "src": "https://michiganrockandrolllegends.com/hall-of-fame/artists/330-frijid-pink",
+      "from": "new",
+      "single": true,
+      "note": "『第一個』宣稱單源且出自密西根搖滾傳奇名人堂的自家網站，寫作層需謹慎或不寫"
+     },
+     {
+      "f": "〈House of the Rising Sun〉2009 年被選為 Legendary Michigan Song，樂團 2013 年入選 Michigan Rock and Roll Legends 名人堂。",
+      "src": "https://michiganrockandrolllegends.com/hall-of-fame/artists/330-frijid-pink",
+      "src2": "https://en.wikipedia.org/wiki/Frijid_Pink",
+      "from": "new",
+      "note": "維基只證實 2013 入選；2009 年單源"
+     },
+     {
+      "f": "樂團常與 MC5、The Stooges、Amboy Dukes 等底特律團同台。",
+      "src": "https://en.wikipedia.org/wiki/Frijid_Pink",
+      "from": "new",
+      "single": true
+     },
+     {
+      "f": "〈House of the Rising Sun〉1970 年登上 Hot 100 第 7 名、英國第 4、德國第 1（德國榜首持續 11 週）。",
+      "src": "https://en.wikipedia.org/wiki/Frijid_Pink",
+      "src2": "https://michiganrockandrolllegends.com/hall-of-fame/artists/330-frijid-pink",
+      "from": "new",
+      "note": "必要例外：名次是上線簡介已寫內容；加拿大第 3 名搜尋摘要與維基相符"
+     }
+    ]
+   },
+   "era": {
+    "status": "bank",
+    "facts": [
+     {
+      "f": "《Earth Omen》（1972）發行時商業失利，後來被視為被忽略的前衛搖滾佳作；Gary Thompson 與 Kelly Green 1971 年離團。",
+      "src": "https://michiganrockandrolllegends.com/hall-of-fame/artists/330-frijid-pink",
+      "from": "new",
+      "single": true
+     },
+     {
+      "f": "Richard Stevers 2006 年重新取得團名後復出，Tom Beaudry（Kelly Green）2021 年過世。",
+      "src": "https://en.wikipedia.org/wiki/Frijid_Pink",
+      "from": "new",
+      "single": true
+     }
+    ]
+   }
+  },
+  "milestones": [],
+  "conflicts": [
+   "上線簡介寫『一位電台音樂總監』；Stevers 訪談與維基寫電台經理（station manager）／音樂總監 Paul Cannon 兩說並存，採上線簡介不動，列 pubIssues"
+  ],
+  "searches": 4,
+  "failedFetches": [],
+  "status": "full",
+  "pubIssues": [
+   {
+    "album": "Frijid Pink",
+    "claim": "一位電台音樂總監聽了，建議廠牌改推這首",
+    "problem": "Stevers 本人訪談稱是 Dearborn AM 電台經理（station manager）；Michigan 名人堂與維基稱 DJ／音樂總監 Paul Cannon。職稱兩說並存，建議簽改寫『一位電台人士』",
+    "src": "https://classicbands.com/FrijidPinkInterview.html"
+   },
+   {
+    "album": "Frijid Pink",
+    "claim": "在一次錄音預約剩下的時間即興錄下",
+    "problem": "Michigan 名人堂稱 1967 年 session 一次錄成，與維基『session 尾端的填充曲』大致一致，無錯；僅備查",
+    "src": "https://michiganrockandrolllegends.com/hall-of-fame/artists/330-frijid-pink"
+   }
+  ],
+  "notes": "⚠ 維基預抓帶 warn（未提卡池專輯），已核對：卡池為 1970 同名首作，與底特律 Frijid Pink 吻合，非同名。搜尋摘要提到『第一張專輯 #11』Billboard，來自 Michigan Hall 單源，不收。Stevers 的 750 萬張銷量為本人說法且未驗證，不收。簡介裡『與 MC5、The Stooges 同台』維基有、訪談無。上線簡介『常與 MC5、The Stooges 同台』維基支持。"
+ },
+ {
+  "key": "gravy train",
+  "name": "Gravy Train",
+  "slots": {
+   "origin": {
+    "status": "bank",
+    "facts": [
+     {
+      "f": "樂團 1969 年夏天在蘭開夏郡聖海倫斯成軍，主腦 Norman Barratt 生於 Newton-le-Willows，成員還有 J.D. Hughes（鍵盤、長笛等）、Les Williams（貝斯）、Barry Davenport（鼓），初期在聖海倫斯板球俱樂部排練。",
+      "src": "https://en.wikipedia.org/wiki/Gravy_Train_(band)",
+      "src2": "https://theprogressiveaspect.net/blog/2016/11/21/gravy-train-second-birth-staircase-to-the-day/",
+      "from": "bank",
+      "note": "第二源只證實 St. Helens 與 Vertigo 兩張，不含成員"
+     },
+     {
+      "f": "成員原本多在 Merseybeat 與靈魂團圈子打滾（Hughes 與 Williams 曾同在 Spaghetti House 大型靈魂團），Barratt 則從會計見習轉為職業樂手；他們想組只演原創曲、而非翻唱的樂團。",
+      "src": "https://en.wikipedia.org/wiki/Gravy_Train_(band)",
+      "from": "new",
+      "single": true
+     }
+    ]
+   },
+   "sound": {
+    "status": "bank",
+    "facts": [
+     {
+      "f": "Barry Davenport 受 Art Blakey、Buddy Rich 等爵士鼓手影響，早期的怪拍子與全員自由即興（freak-outs）多出自他的主意；他離團後寫作變得更旋律化，曲目多半出自 Barratt。",
+      "src": "https://en.wikipedia.org/wiki/Gravy_Train_(band)",
+      "from": "bank",
+      "single": true
+     },
+     {
+      "f": "樂評把首作比作早期 Jethro Tull（相近的長笛線），也指出樂團缺乏 Ian Anderson 那樣強勢的主唱；另有評論拿 Barratt 的嗓音比 Roger Chapman，並說樂團夾雜爵士味鍵盤、薩克斯風與長笛，社會與環境議題的歌詞在同期前衛團中少見。",
+      "src": "https://en.wikipedia.org/wiki/Gravy_Train_(band)",
+      "src2": "https://theprogressiveaspect.net/blog/2016/11/21/gravy-train-second-birth-staircase-to-the-day/",
+      "from": "new",
+      "note": "兩評論是具名說法，非共識"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Barratt 1969 年底成為重生的基督徒，他說歌詞「不是明講，但確實是從基督徒的觀點寫的」。",
+      "src": "https://en.wikipedia.org/wiki/Gravy_Train_(band)",
+      "from": "new",
+      "single": true,
+      "note": "搜尋摘要另有紀念文稱他在團期間成為基督徒，不獨立；Barratt 2011 年過世，維基稱手術併發症、搜尋摘要稱 7 月 30 日，未收死因"
+     },
+     {
+      "f": "樂團唱片宣傳少、銷量差，首作『幾乎沒激起漣漪』，卻靠現場在英國前衛圈累積了擁護者；英國前衛復興後被收藏家與樂迷重新關注，四張專輯都有 CD 再版，Esoteric 2016 年再版前兩張。",
+      "src": "https://en.wikipedia.org/wiki/Gravy_Train_(band)",
+      "src2": "https://theprogressiveaspect.net/blog/2016/11/21/gravy-train-second-birth-staircase-to-the-day/",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "bank",
+    "facts": [
+     {
+      "f": "前兩張在 Vertigo、後兩張在 Pye 旗下的前衛廠牌 Dawn（1973 起）；樂團 1975 年解散，維基歸因於運氣差、經營失當、銷量低與設備被偷。",
+      "src": "https://en.wikipedia.org/wiki/Gravy_Train_(band)",
+      "from": "new",
+      "single": true
+     }
+    ]
+   }
+  },
+  "milestones": [],
+  "conflicts": [],
+  "searches": 4,
+  "failedFetches": [],
+  "status": "full",
+  "pubIssues": [
+   {
+    "album": "(A Ballad of) A Peaceful Man",
+    "claim": "歌詞不明講，卻都從基督教觀點出發，在英國前衛圈很少見",
+    "problem": "Barratt 原話是『不明顯，但確實是從基督徒的觀點寫的』；『在英國前衛圈很少見』是簡介自己的判斷，無來源（Barratt 自己的說法只涵蓋歌詞立場）；『都』也過滿",
+    "src": "https://en.wikipedia.org/wiki/Gravy_Train_(band)"
+   },
+   {
+    "album": "(A Ballad of) A Peaceful Man",
+    "claim": "本作為其第二張（維基首作年份 1970／1971 自相矛盾）",
+    "problem": "維基導言稱首作 1971，discography 稱 1970；Progressive Aspect 稱首作 1970、本作 1971。上線簡介不寫首作年份，無錯，僅備查",
+    "src": "https://theprogressiveaspect.net/blog/2016/11/21/gravy-train-second-birth-staircase-to-the-day/"
+   }
+  ],
+  "notes": "身分確認：卡池為 (A Ballad of) A Peaceful Man 1971，英國蘭開夏 Gravy Train，無同名混卡。維基自相矛盾首作年份 1970／1971，facts 不帶首作年份。Barratt 2011 年過世（維基＋搜尋摘要皆有，但搜尋摘要僅 findagrave/Qobuz，未實際開頁），不寫死因。『在英國前衛圈很少見』查無來源。"
+ },
+ {
+  "key": "high tide",
+  "name": "High Tide",
+  "slots": {
+   "origin": {
+    "status": "bank",
+    "facts": [
+     {
+      "f": "High Tide 1969 年由 Tony Hill（吉他、人聲，曾屬 The Misunderstood）、Simon House（小提琴、鍵盤）、Peter Pavli（貝斯）與 Roger Hadden（鼓）組成；維基稱樂團在北安普敦（Northampton）成形。",
+      "src": "https://en.wikipedia.org/wiki/High_Tide_(band)",
+      "from": "bank",
+      "single": true
+     },
+     {
+      "f": "樂團先為 Denny Gerrard 的《Sinister Morning》伴奏，Gerrard 接著製作他們的首作《Sea Shanties》（1969 年 10 月）。",
+      "src": "https://en.wikipedia.org/wiki/High_Tide_(band)",
+      "from": "new",
+      "single": true
+     }
+    ]
+   },
+   "sound": {
+    "status": "bank",
+    "facts": [
+     {
+      "f": "AllMusic 的 Wilson Neate 寫道：High Tide 有不囉嗦的原型金屬團那種肌肉感，也踏進前衛領域，有變換拍號與速度、軟硬動態、多段式編曲，甚至華麗的偽巴洛克間奏。",
+      "src": "https://en.wikipedia.org/wiki/High_Tide_(band)",
+      "from": "bank",
+      "single": true,
+      "note": "具名評論，非共識"
+     },
+     {
+      "f": "Tony Hill 的人聲與唱腔常被拿來比 The Doors 的 Jim Morrison。",
+      "src": "https://en.wikipedia.org/wiki/High_Tide_(band)",
+      "from": "bank",
+      "single": true
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "發行當時評價分歧，Melody Maker 措辭嚴厲，地下刊物大多正面；銷量剛好讓 Liberty 批准第二張，但樂團商業成績有限。",
+      "src": "https://en.wikipedia.org/wiki/High_Tide_(band)",
+      "from": "new",
+      "single": true
+     },
+     {
+      "f": "1989 至 1990 年起，Hill 重啟團名發行新錄音與庫存錄音（《Interesting Times》《Precious Cargo》《The Flood》），Esoteric 2023 年 9 月推出三 CD 的《The Complete Liberty Recordings》。",
+      "src": "https://en.wikipedia.org/wiki/High_Tide_(band)",
+      "from": "new",
+      "single": true
+     },
+     {
+      "f": "維基稱該團被認為影響了原型金屬與前衛搖滾，但沒有後輩具名點名。",
+      "src": "https://en.wikipedia.org/wiki/High_Tide_(band)",
+      "from": "new",
+      "single": true,
+      "note": "籠統宣稱，寫作層不宜寫成『影響了誰』"
+     }
+    ]
+   },
+   "era": {
+    "status": "bank",
+    "facts": [
+     {
+      "f": "鼓手 Roger Hadden 長期受精神不穩與憂鬱所苦，1970 年第三張未完成時崩潰住院，樂團因此解散。",
+      "src": "https://en.wikipedia.org/wiki/High_Tide_(band)",
+      "src2": "https://en.wikipedia.org/wiki/High_Tide_(album)",
+      "from": "bank",
+      "note": "兩條皆維基，非獨立"
+     },
+     {
+      "f": "Tony Hill 於 2022 年 12 月 8 日過世。",
+      "src": "https://en.wikipedia.org/wiki/High_Tide_(band)",
+      "from": "new",
+      "single": true,
+      "note": "逝世高風險，第二源查無（搜尋只回同一維基），寫作層若要寫須標單源或避免"
+     }
+    ]
+   }
+  },
+  "milestones": [],
+  "conflicts": [],
+  "searches": 2,
+  "failedFetches": [
+   "progarchives.com 403"
+  ],
+  "status": "thin",
+  "pubIssues": [],
+  "notes": "身分確認：卡池 Sea Shanties 與 High Tide（1969、1970）皆為英國 Tony Hill 的 High Tide。維基稱 Northampton 成形，與上線簡介一致。Tony Hill 2022 逝世、Simon House 2025 逝世皆只有維基單源，高風險未滿兩源，寫作層不寫『一生』與死亡細節。上線簡介『原型金屬的重量』與維基 AllMusic 引言相符。上線簡介『製作人 Denny Gerrard 先找他們伴奏』與維基一致。legacy 無權威共識，僅單源維基。"
+ },
+ {
+  "key": "jade warrior",
+  "name": "Jade Warrior",
+  "slots": {
+   "origin": {
+    "status": "bank",
+    "facts": [
+     {
+      "f": "創團兩人 Tony Duhig（吉他）與 Jon Field（長笛、打擊、鍵盤）1960 年代初在倫敦一家工廠開堆高機時認識，共同愛好爵士、非洲音樂與日本音樂，並在家用四軌機上實驗多層疊錄。",
+      "src": "https://en.wikipedia.org/wiki/Jade_Warrior_(band)",
+      "src2": "https://theprogressiveaspect.net/blog/2023/01/27/jade-warrior-wind-borne-the-island-albums-1974-1978/",
+      "from": "new"
+     },
+     {
+      "f": "樂團 1970 年由 July 演變而來，創團三人為 Duhig、Field 與人聲兼貝斯 Glyn Havard；團名取自 Duhig 與 Field 合寫的一齣舞劇，由『軟』『硬』兩個詞合成，呼應樂團的兩面聲音。",
+      "src": "https://en.wikipedia.org/wiki/Jade_Warrior_(band)",
+      "from": "bank",
+      "single": true
+     },
+     {
+      "f": "1970 年 Vertigo 簽下他們，據 Havard 說是為了簽 Afro-rock 團 Assagai 而被『綁在一起』。",
+      "src": "https://en.wikipedia.org/wiki/Jade_Warrior_(band)",
+      "from": "bank",
+      "single": true
+     }
+    ]
+   },
+   "sound": {
+    "status": "bank",
+    "facts": [
+     {
+      "f": "樂團以輕柔與響亮的對比見稱：Field 層層疊錄的長笛與打擊，對上 Duhig 銳利的吉他；Island 時期的專輯加進合唱、豎琴與弦樂四重奏。",
+      "src": "https://en.wikipedia.org/wiki/Jade_Warrior_(band)",
+      "src2": "https://theprogressiveaspect.net/blog/2023/01/27/jade-warrior-wind-borne-the-island-albums-1974-1978/",
+      "from": "new",
+      "note": "弦樂四重奏／合唱僅維基；第二源證實層疊吉他與長笛、異國打擊"
+     },
+     {
+      "f": "《Floating World》（1974）以日本『浮世（ukiyo）』概念為骨幹；之後《Kites》有最濃的東方色彩，圍繞九世紀中國禪師的歌曲循環，《Way of the Sun》則取材南美文化。",
+      "src": "https://en.wikipedia.org/wiki/Jade_Warrior_(band)",
+      "src2": "https://theprogressiveaspect.net/blog/2023/01/27/jade-warrior-wind-borne-the-island-albums-1974-1978/",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "AllMusic 稱《Floating World》是『無可否認的傑作』，Brian Eno 稱它是『重要的專輯』。",
+      "src": "https://en.wikipedia.org/wiki/Jade_Warrior_(band)",
+      "from": "new",
+      "note": "具名說法，第二源（Sputnik 摘要）未實際開頁，單源；非共識，寫作層慎用",
+      "single": true
+     },
+     {
+      "f": "Island 四張專輯贏得樂評讚賞，卻賣得很差；評論認為樂團折衷的風格讓他們難以走向更廣的聽眾。",
+      "src": "https://theprogressiveaspect.net/blog/2023/01/27/jade-warrior-wind-borne-the-island-albums-1974-1978/",
+      "from": "new",
+      "single": true
+     },
+     {
+      "f": "Steve Winwood 在 Traffic 巡演支援場次後向 Island 老闆 Chris Blackwell 推薦他們，1974 年簽約；Field 也在 Mike Oldfield《Tubular Bells》裡吹過長笛。",
+      "src": "https://theprogressiveaspect.net/blog/2023/01/27/jade-warrior-wind-borne-the-island-albums-1974-1978/",
+      "src2": "https://en.wikipedia.org/wiki/Jade_Warrior_(band)",
+      "from": "new",
+      "note": "Tubular Bells 僅維基單源；巡演場次僅第一源"
+     },
+     {
+      "f": "Island 時期 2023 年有《Wind Borne》盒裝再版四張專輯。",
+      "src": "https://theprogressiveaspect.net/blog/2023/01/27/jade-warrior-wind-borne-the-island-albums-1974-1978/",
+      "from": "new",
+      "single": true
+     }
+    ]
+   },
+   "era": {
+    "status": "bank",
+    "facts": [
+     {
+      "f": "2008 年三人重聚發行《NOW》，同年 10 月在倫敦舉行約 35 年來首場演出。David Duhig 2021 年過世。",
+      "src": "https://en.wikipedia.org/wiki/Jade_Warrior_(band)",
+      "from": "new",
+      "single": true
+     }
+    ]
+   }
+  },
+  "milestones": [],
+  "conflicts": [],
+  "searches": 3,
+  "failedFetches": [],
+  "status": "full",
+  "pubIssues": [],
+  "notes": "身分確認：卡池 Floating World（1974）與 Last Autumn's Dream（1972），英國 Jade Warrior，無同名。Duhig 逝世年 1990 目前僅維基（含生卒日期）單源，搜尋摘要為第二線索但未開頁，高風險故不應寫死亡細節。Eno／AllMusic 評語單源。上線簡介 Floating World『1972 年兩人與 Vertigo 合約告終』：維基 Floating World 條目稱美國巡演後合約被取消，一致。上線簡介稱『Steve Winwood 推薦』一致。Progressive Aspect 稱 1969 年簽 Vertigo、維基稱 1970，年份不一致，facts 只寫 1970 作 Havard 說法，不帶簽約年。 單源（未入 facts）：Tony Duhig 1941-09-18 生、1990-11-11 過世（維基），第二源未開頁取得。"
+ },
+ {
+  "key": "khan",
+  "name": "Khan",
+  "slots": {
+   "origin": {
+    "status": "bank",
+    "facts": [
+     {
+      "f": "這是 Steve Hillage 1971 年初在英國組成的 Khan（非同名它團）：成員有貝斯兼主唱 Nick Greenwood、鍵盤 Dick Heninghem，鼓手 Pip Pyle 在 6 月首演前轉去 Gong，由 Eric Peachey 接替；Heninghem 1971 年 10 月離團，Dave Stewart 為錄製專輯加入。",
+      "src": "https://en.wikipedia.org/wiki/Khan_(band)",
+      "src2": "https://en.wikipedia.org/wiki/Steve_Hillage",
+      "from": "new",
+      "note": "兩源皆維基，非獨立；Stewart 在維基其他頁被稱『客座』"
+     },
+     {
+      "f": "Hillage 1951 年 8 月 2 日生於艾塞克斯 Chingford，中學時就加入 Uriel（Dave Stewart、Mont Campbell、Clive Brooks 同團，後三人另組 Egg），1969 年進坎特伯里的肯特大學，與 Caravan、Spirogyra 往來。",
+      "src": "https://en.wikipedia.org/wiki/Steve_Hillage",
+      "from": "new",
+      "single": true
+     }
+    ]
+   },
+   "sound": {
+    "status": "bank",
+    "facts": [
+     {
+      "f": "《Space Shanty》被歸入前衛搖滾、坎特伯里與太空搖滾；Hillage 說它『不是概念專輯』，歌曲有各種不同主題，穿插相當複雜的器樂段落。",
+      "src": "https://en.wikipedia.org/wiki/Space_Shanty",
+      "from": "new",
+      "single": true
+     },
+     {
+      "f": "Sputnik Music 稱 Stewart 的管風琴音色辨識度高，加上 Hillage 的吉他，給了樂團 Egg 沒有的音域。",
+      "src": "https://www.sputnikmusic.com/review/80477/Khan-Space-Shanty/",
+      "from": "new",
+      "single": true,
+      "note": "搜尋摘要所見，未實際開頁"
+     },
+     {
+      "f": "維基稱專輯有受 Uriah Heep 影響的史詩式抒情曲，歌詞態度真摯，不像 Kevin Ayers 那樣諷刺。",
+      "src": "https://en.wikipedia.org/wiki/Khan_(band)",
+      "from": "new",
+      "single": true
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Khan 只存在 1971 至 1972 年、只出一張專輯，但 Hillage 之後的 Gong 與個人專輯延續其路線：為第二版 Khan 寫的部分曲子，收進他 1975 年首張個人專輯《Fish Rising》。",
+      "src": "https://en.wikipedia.org/wiki/Khan_(band)",
+      "src2": "https://en.wikipedia.org/wiki/Space_Shanty",
+      "from": "new",
+      "note": "兩源皆維基，非獨立"
+     },
+     {
+      "f": "Hillage 後來加入 Kevin Ayers 樂團，1973 年成為 Gong 『經典陣容』正式成員；1990 年代初以 System 7 做環境舞曲，並因 The Orb 播放其 1979 年環境專輯《Rainbow Dome Musick》而起；2013 年獲 Progressive Music Awards 的 Visionary 獎。",
+      "src": "https://en.wikipedia.org/wiki/Steve_Hillage",
+      "from": "new",
+      "single": true,
+      "note": "講的是 Hillage 本人而非 Khan，Visionary 獎高風險單源，維基自標需補來源，寫作層慎用"
+     },
+     {
+      "f": "Louder 把坎特伯里場景稱為『前衛迷的烏托邦』，Space Shanty 被稱為相對不為人知的寶石；Prog Archives 使用者評分約 4.30（867 筆）。",
+      "src": "https://www.sputnikmusic.com/review/80477/Khan-Space-Shanty/",
+      "from": "new",
+      "single": true,
+      "note": "搜尋摘要所見，未開頁，不建議收；Louder 專頁截斷"
+     }
+    ]
+   },
+   "era": {
+    "status": "bank",
+    "facts": [
+     {
+      "f": "專輯 1972 年 6 月發行，Khan 隨後與 Caravan 巡迴英國，Val Stevens 補鍵盤；Greenwood 巡演後離團，Hillage 與 Peachey、Stewart、Nigel Griggs 重組，Decca 不承諾第二張，他 1972 年 10 月底解散樂團。",
+      "src": "https://en.wikipedia.org/wiki/Khan_(band)",
+      "from": "bank",
+      "single": true
+     }
+    ]
+   }
+  },
+  "milestones": [],
+  "conflicts": [],
+  "searches": 4,
+  "failedFetches": [
+   "loudersound.com 頁面截斷未見 Khan"
+  ],
+  "status": "thin",
+  "pubIssues": [],
+  "notes": "⚠ 維基預抓無條目（null），已另開 Khan_(band) 確認為 Steve Hillage 英國 Khan，與 poolAlbums Space Shanty 一致，不與他團混。上線簡介『開錄前少了鍵盤手，頂上來的是少年時期的團友』：Stewart 與 Hillage 同在 Uriel 屬實；『Decca 不肯再出第二張』一致。上線簡介稱『樂團前後只出了這一張』一致。Stewart 為正式團員或客座兩說，facts 只寫『為錄製專輯加入』。legacy 無後輩點名與權威共識，整體 thin。"
+ }
+]

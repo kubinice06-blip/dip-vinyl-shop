@@ -28,14 +28,23 @@
     "discogsReleaseId": "2927959"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 4,
-    "accessibility": 2,
+    "classic": 4,
+    "obscurity": 5,
+    "accessibility": 3,
     "listeners": 337,
-    "source": "manual:regional-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:regional-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Psí vojáci 代表作、捷克地下團；L337 無串流→5；陰暗鋼琴地下搖滾"
    },
-   "rarity": "rare",
+   "rarity": "epic",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -89,14 +98,24 @@
     "discogsReleaseId": "2852212"
    },
    "ratings": {
-    "classic": 2,
+    "classic": 3,
     "obscurity": 3,
-    "accessibility": 4,
+    "accessibility": 3,
     "listeners": 77,
-    "source": "manual:regional-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 3,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：保加利亞前衛團首張、多翻奏；L77 無串流→5；前衛搖滾",
+     "rarity": "uncommon"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：Balkanton 國營廠錄音室企畫首張，非私壓；非拉丁字母掛名，listeners 疑拆名錯配，不套下限，照錨點給 3｜L=77"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,

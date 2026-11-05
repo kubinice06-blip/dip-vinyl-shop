@@ -1,0 +1,141 @@
+{
+ "group": "ax8c",
+ "factions": [
+  {
+   "id": "jp-noise-rock",
+   "zh": "日本地下噪音搖滾",
+   "why": "Charnel／PSF 系的失真牆集體即興",
+   "count": 1
+  },
+  {
+   "id": "uk-noise-rock",
+   "zh": "英國噪音搖滾",
+   "why": "Broken Flag／Cold Spring 圈回授牆",
+   "count": 1
+  },
+  {
+   "id": "de-noise-rock",
+   "zh": "德國噪音搖滾",
+   "why": "Brötzmann 之子的電吉他回授",
+   "count": 1
+  }
+ ],
+ "albums": [
+  {
+   "artist": "Mainliner",
+   "album": "Mellow Out",
+   "year": 1996,
+   "label": "Charnel Music",
+   "country": "jp",
+   "faction": "jp-noise-rock",
+   "genres": [
+    "noise",
+    "psychedelic"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "三首共 35 分，兩首 15、18 分長曲全程失真牆；Scaruffi 稱『爆發式的失真、坦克般節奏』，Kawabata 吉他失真在終曲達『純然瘋狂』。",
+   "listeners": null,
+   "why": "南條麻人（貝斯、人聲）、川端誠（吉他）、小泉一（鼓）1995 東京錄音，三首：1:51 引子加 15:17〈Black Sky〉、18:37〈M.〉兩首長篇，錄音爆音到失真、貝斯糊成一片，吉他獨奏在轟鳴泥沼中持續十幾分鐘。Scaruffi（8/10）稱『一場失真、坦克節奏與刺耳雜音的壯觀爆發』、『Chrome 的最佳加 Feedtime 的最差都造不成更大破壞』，終曲吉他失真達『pure madness』；Burning Ambulance 稱混音『blown-out』、貝斯失真到像放大器塞進你腦殼；AllMusic 4 星。",
+   "moodGuess": {
+    "x": 4.5,
+    "y": 1.6,
+    "z": -0.6,
+    "why": "失真牆加坦克節奏，長篇不歇"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/ca6e7ef8-0558-33fd-bda2-89128f7a5cc3",
+    "https://coverartarchive.org/release-group/ca6e7ef8-0558-33fd-bda2-89128f7a5cc3/front",
+    "https://www.scaruffi.com/vol6/mainline.html",
+    "https://burningambulance.com/2022/04/22/mainliner/",
+    "https://en.wikipedia.org/wiki/Mellow_Out"
+   ],
+   "mbRgMbid": "ca6e7ef8-0558-33fd-bda2-89128f7a5cc3",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "可信樂評只有 Scaruffi（個人史書，視為專書）＋AllMusic 4 星（未取得全文）＋Burning Ambulance（刊物型樂評站）；Julian Cope 評語未取到全文。"
+  },
+  {
+   "artist": "Skullflower",
+   "album": "IIIrd Gatekeeper",
+   "year": 1992,
+   "label": "Headdirt",
+   "country": "gb",
+   "faction": "uk-noise-rock",
+   "genres": [
+    "noise",
+    "experimental"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "Bower 的失真吉他牆把鼓壓到幾乎聽不見，Sea of Tranquility 稱『感官的持續攻擊』；Trouser Press 則說噪音強度不如早期，故為偏薄之選。",
+   "listeners": null,
+   "why": "Matthew Bower（吉他）、Stuart Dennison（鼓）等樂團編制，九首以慢速沉重的失真 riff 加回授鋪成連續音牆，失真推到極限、蓋過鼓聲，〈Godzilla〉長 11 分鐘、鑽孔機般的脈動。Sea of Tranquility 稱 Bower『原始音牆是對感官的持續攻擊』，Tiny Mix Tapes 稱『混亂卻壯麗』，Amazon 編輯文把它歸入 Godflesh／Swans／Ramleh 同列的後工業沉重搖滾；AllMusic 傳記稱樂團以回授加高音量著稱。",
+   "moodGuess": {
+    "x": 4.2,
+    "y": 1.7,
+    "z": -0.7,
+    "why": "慢重 riff 加回授，壓迫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/b1365d2f-51fa-331e-9b00-1d1851b37f40",
+    "https://coverartarchive.org/release-group/b1365d2f-51fa-331e-9b00-1d1851b37f40/front",
+    "https://www.seaoftranquility.org/reviews.php?op=showcontent&id=6248",
+    "https://www.tinymixtapes.com/delorean/skullflower-iiird-gatekeeper",
+    "https://trouserpress.com/reviews/skullflower/"
+   ],
+   "mbRgMbid": "b1365d2f-51fa-331e-9b00-1d1851b37f40",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "依據偏薄：Trouser Press 明說此盤噪音強度不及早期（Xaman／Form Destroyer），Scene Point Blank 重發評也說音量不如預期壓迫；有節奏（工業式鼓組）。ax6 已判 Form Destroyer none，Xaman 不在 MB 的 Album 清單，故取此張。可汰換。"
+  },
+  {
+   "artist": "Caspar Brötzmann Massaker",
+   "album": "Koksofen",
+   "year": 1993,
+   "label": "Our Choice",
+   "country": "de",
+   "faction": "de-noise-rock",
+   "genres": [
+    "noise",
+    "experimental"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "五首共 60 分的錄音室現場即興，吉他回授與嚎叫；The Wire 1993 年度專輯第 29，Terrorizer 90 年代百大，Boomkat 稱『高聳的噪音崩落』。",
+   "listeners": null,
+   "why": "Caspar Brötzmann（吉他、人聲）、Eduardo Delgado-Lopez（貝斯）、Danny Arnold Lommen（鼓）1993 年 1 月科隆錄成，五首 8–16 分鐘（〈Hymne〉14:30、〈Koksofen〉16:14），錄音室內現場即興，回授與過載的吉他音牆加喉音吼叫。Boomkat 稱『山岳般的噪音高聳又崩落、受折磨的聲音從不祥的沸騰地面升起』；Trouser Press 稱五首即興動態更精準，〈Kerkersong〉從 thrash 轉為 Last Exit 式律動；The Wire 1993 年度專輯第 29，Terrorizer 2000 列入 90 年代百大重要專輯。",
+   "moodGuess": {
+    "x": 4.3,
+    "y": 1.5,
+    "z": -0.8,
+    "why": "重低頻吉他牆加吼叫，冷暗"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/29437982-fce8-366d-bfb2-8946748c5cbb",
+    "https://coverartarchive.org/release-group/29437982-fce8-366d-bfb2-8946748c5cbb/front",
+    "https://boomkat.com/products/koksofen",
+    "https://trouserpress.com/reviews/caspar-brtzmann-massaker/",
+    "https://en.wikipedia.org/wiki/Koksofen"
+   ],
+   "mbRgMbid": "29437982-fce8-366d-bfb2-8946748c5cbb",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "依據偏薄：Trouser Press 稱動態『更精準』、有 groove（〈Kerkersong〉Last Exit 式律動），AllMusic 3 星；『極端』靠 Boomkat 與榜單。有鼓、有結構段落，接近噪音搖滾而非無拍。可汰換；備選 Black Axis（1989，MB bb7efcf0）。"
+  }
+ ],
+ "notes": [
+  "提名 3 張（目標 11）：池子不夠就照實交，不湊數。",
+  "The Flying Luttenbachers：ax5a 已提《Destroy All Music》，同藝人不再提。",
+  "Skullflower：Form Destroyer ax6 已判 none；Xaman 不在 MB Album 清單；取 IIIrd Gatekeeper 但依據偏薄（Trouser Press 稱噪音強度不如早期）。",
+  "浦邉雅祥：可信描述（Free Jazz Collective、Monocular Times）強調長靜默與漸強，非整張持續高強度，不收。",
+  "広瀬淳二：僅 RYM 使用者評論，無可信樂評，不收。",
+  "Willem Breuker：MB 只有 1976 起的盤，皆為諧謔／有結構的集體，查無可信極端描述；《Litany for the 14th of June 1966》MB 查無，不收。",
+  "Hototogisu：可入耳的 Some Blood Will Stick（Boomkat：最極端的 psych 一端、吉他噪音與回授）2013 Important 版是 2004／2005 Heavy Blossom 素材的合輯，非正規專輯，MB 2006 同名 RG 與之關係未確認，暫不收；若主線願放寬可補。",
+  "補充候選零命中（卡池沒有）但未找到足夠可信來源：No Neck Blues Band、Burning Star Core、Mouthus、Overhang Party、Shit and Shine、Zu、Magik Markers。其餘（Hijokaidan／非常階段、高柳昌行、坂田明、阿部薫、Charles Gayle、Frank Wright、Ivo Perelman、David S. Ware、Branca、Conrad、Orthrelm）卡池已有。",
+  "WebSearch 已用 8 次。"
+ ]
+}

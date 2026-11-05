@@ -1,0 +1,29 @@
+{
+ "batch": "ad-02",
+ "cards": 30,
+ "written": {
+  "kvKeys": 31,
+  "kvBefore": "kv-before-ad-02.json",
+  "manifest": 0
+ },
+ "review": {
+  "by": "cloud-main",
+  "cards": 30,
+  "changed": [
+   "aphex twin|selected ambient works 85-92",
+   "steve reich|music for 18 musicians",
+   "buena vista social club|buena vista social club",
+   "beastie boys|paul's boutique",
+   "eric b. & rakim|paid in full",
+   "jay-z|the blueprint",
+   "dj shadow|endtroducing....."
+  ]
+ },
+ "qa": {
+  "research": "pass",
+  "out": "pass（5 個具名出處誤報）",
+  "kvReadback": "31/31",
+  "front": "30/30"
+ },
+ "pendingLocal": {}
+}

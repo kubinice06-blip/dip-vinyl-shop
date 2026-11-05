@@ -1,0 +1,18 @@
+{
+ "batch": "add-20261104-ax6",
+ "cards": 18,
+ "nominated": 50,
+ "dropped": 32,
+ "written": { "cardCatalog": 18, "kvKeys": 19, "seedRows": 18, "previewReady": 11, "previewUnavailable": 7 },
+ "review": { "by": "cloud-main", "cards": 18, "changed": ["desc2:Peter Kowald Quintet|Peter Kowald Quintet", "desc2:Birchville Cat Motel|Seventh Ruined Hex", "desc2:Okkyung Lee|Ghil"] },
+ "qa": { "research": "pass（a–h 8 組）", "hooks": "不適用（頂點卡照 apex-desc-base，不走鉤子層）", "out": "pass（200–280 字）", "prepareGate": "0 error", "publishedGate": "0 error" },
+ "apex": { "heresy": 18, "general": 0, "ownerNamed": ["Peter Kowald Quintet", "강태환"] },
+ "artistIntros": { "ar-d-268": 14, "ar-d-269": 3, "skipped": 0 },
+ "pendingLocal": {
+  "kv": "無",
+  "listeners": ["desc4:강태환|Live At Café Amores"],
+  "apexEvidence": [],
+  "genreTree": "已重建",
+  "albumOverrides": "album_overrides.tier 留給本機後台「依卡池同步頂點旗標」（18 張）"
+ }
+}

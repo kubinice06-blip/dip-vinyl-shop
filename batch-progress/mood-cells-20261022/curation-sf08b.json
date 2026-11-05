@@ -1,0 +1,908 @@
+{
+ "group": "sf08b",
+ "factions": [
+  {
+   "id": "indie-folktronica",
+   "zh": "indie-folktronica",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "doom-sludge",
+   "zh": "doom-sludge",
+   "count": 2,
+   "why": ""
+  },
+  {
+   "id": "neo-psych",
+   "zh": "neo-psych",
+   "count": 8,
+   "why": ""
+  },
+  {
+   "id": "alt-metal",
+   "zh": "alt-metal",
+   "count": 2,
+   "why": ""
+  },
+  {
+   "id": "post-punk-art",
+   "zh": "post-punk-art",
+   "count": 2,
+   "why": ""
+  },
+  {
+   "id": "indie-folk-rock",
+   "zh": "indie-folk-rock",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "c86-indie-pop",
+   "zh": "c86-indie-pop",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "post-rock",
+   "zh": "post-rock",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "experimental-rock",
+   "zh": "experimental-rock",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "lofi-indie",
+   "zh": "lofi-indie",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "doom-stoner",
+   "zh": "doom-stoner",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "singer-songwriter",
+   "zh": "singer-songwriter",
+   "count": 2,
+   "why": ""
+  },
+  {
+   "id": "emo-hardcore",
+   "zh": "emo-hardcore",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "post-punk",
+   "zh": "post-punk",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "acoustic-blues",
+   "zh": "acoustic-blues",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "dream-pop-hk",
+   "zh": "dream-pop-hk",
+   "count": 1,
+   "why": ""
+  }
+ ],
+ "albums": [
+  {
+   "artist": "The Pictish Trail",
+   "album": "Future Echoes",
+   "year": 2016,
+   "label": "Fire Records",
+   "country": "gb",
+   "faction": "indie-folktronica",
+   "genres": [
+    "electronic",
+    "folk"
+   ],
+   "why": "Johnny Lynch 最完整的電子民謠流行專輯，評論共識的代表作。",
+   "moodGuess": {
+    "x": 3.3,
+    "y": 0,
+    "z": 0.6,
+    "why": "蘇格蘭怪咖電子流行，旋律明亮"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/4e2fdb7a-de73-49a0-b2d5-6119a050e914",
+    "https://coverartarchive.org/release-group/4e2fdb7a-de73-49a0-b2d5-6119a050e914/front"
+   ],
+   "spotifyName": "Pictish Trail",
+   "mbRgMbid": "4e2fdb7a-de73-49a0-b2d5-6119a050e914",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Pictish Trail",
+   "uncertain": "MB 名為 The Pictish Trail；廠牌憑記憶"
+  },
+  {
+   "artist": "Pigs Pigs Pigs Pigs Pigs Pigs Pigs",
+   "album": "King of Cowards",
+   "year": 2018,
+   "label": "Rocket Recordings",
+   "country": "gb",
+   "faction": "doom-sludge",
+   "genres": [
+    "rock"
+   ],
+   "why": "紐卡索 stoner／sludge 代表作，樂迷與評論最常推的一張。",
+   "moodGuess": {
+    "x": 3.8,
+    "y": 1.5,
+    "z": -0.8,
+    "why": "厚重失真 riff 與嘶吼"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/d99dbb8e-89f7-464e-9cfe-d428ca131d69",
+    "https://coverartarchive.org/release-group/d99dbb8e-89f7-464e-9cfe-d428ca131d69/front"
+   ],
+   "spotifyName": "Pigs Pigs Pigs Pigs Pigs Pigs Pigs",
+   "mbRgMbid": "d99dbb8e-89f7-464e-9cfe-d428ca131d69",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Pigs Pigs Pigs Pigs Pigs Pigs Pigs",
+   "album": "Viscerals",
+   "year": 2020,
+   "label": "Rocket Recordings",
+   "country": "gb",
+   "faction": "doom-sludge",
+   "genres": [
+    "rock"
+   ],
+   "why": "第二高峰：更重更肉的 sludge，多數榜單年度推薦。",
+   "moodGuess": {
+    "x": 4,
+    "y": 1.6,
+    "z": -1,
+    "why": "低頻牆與暴烈鼓點"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/28751be3-8f4b-439e-a07c-400a461db1c5",
+    "https://coverartarchive.org/release-group/28751be3-8f4b-439e-a07c-400a461db1c5/front"
+   ],
+   "spotifyName": "Pigs Pigs Pigs Pigs Pigs Pigs Pigs",
+   "mbRgMbid": "28751be3-8f4b-439e-a07c-400a461db1c5",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Psychic Ills",
+   "album": "Mirror Eye",
+   "year": 2009,
+   "label": "Sacred Bones",
+   "country": "us",
+   "faction": "neo-psych",
+   "genres": [
+    "rock"
+   ],
+   "why": "紐約迷幻 drone 搖滾的成熟之作，常被視為其代表專輯。",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1,
+    "z": -0.3,
+    "why": "慢速迷幻霧面吉他"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/2f5776f6-debd-3700-8a31-8a9c2d47c844",
+    "https://coverartarchive.org/release-group/2f5776f6-debd-3700-8a31-8a9c2d47c844/front"
+   ],
+   "spotifyName": "Psychic Ills",
+   "mbRgMbid": "2f5776f6-debd-3700-8a31-8a9c2d47c844",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Psychic Ills",
+   "album": "Hazed Dream",
+   "year": 2011,
+   "label": "Sacred Bones",
+   "country": "us",
+   "faction": "neo-psych",
+   "genres": [
+    "rock"
+   ],
+   "why": "另一個高峰：更民謠藍調向的迷幻，旋律較清晰。",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 0.8,
+    "z": 0.1,
+    "why": "鬆散慢搖迷幻與回授"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/127dd032-585a-4362-a1dc-492208e5a8b5",
+    "https://coverartarchive.org/release-group/127dd032-585a-4362-a1dc-492208e5a8b5/front"
+   ],
+   "spotifyName": "Psychic Ills",
+   "mbRgMbid": "127dd032-585a-4362-a1dc-492208e5a8b5",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "SLIFT",
+   "album": "Ummon",
+   "year": 2020,
+   "label": "Stolen Body Records",
+   "country": "fr",
+   "faction": "neo-psych",
+   "genres": [
+    "rock"
+   ],
+   "why": "圖盧茲太空搖滾，以 Ummon 躍上國際，口碑最強。",
+   "moodGuess": {
+    "x": 3.9,
+    "y": 1.2,
+    "z": -0.4,
+    "why": "長篇太空 riff 與壓迫鼓"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/5d2c01db-823a-4066-8236-5d3652b555dd",
+    "https://coverartarchive.org/release-group/5d2c01db-823a-4066-8236-5d3652b555dd/front"
+   ],
+   "spotifyName": "SLIFT",
+   "mbRgMbid": "5d2c01db-823a-4066-8236-5d3652b555dd",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "SLIFT",
+   "album": "ILION",
+   "year": 2024,
+   "label": "Stolen Body Records",
+   "country": "fr",
+   "faction": "neo-psych",
+   "genres": [
+    "rock"
+   ],
+   "why": "第二個高峰：更精煉的概念專輯，評論認為是新巔峰。",
+   "moodGuess": {
+    "x": 3.8,
+    "y": 1.1,
+    "z": -0.2,
+    "why": "太空迷幻加重 riff"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/4a67d3c7-92c1-43ef-bc28-12177a74472d",
+    "https://coverartarchive.org/release-group/4a67d3c7-92c1-43ef-bc28-12177a74472d/front"
+   ],
+   "spotifyName": "SLIFT",
+   "mbRgMbid": "4a67d3c7-92c1-43ef-bc28-12177a74472d",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "廠牌憑記憶"
+  },
+  {
+   "artist": "Stone Sour",
+   "album": "Stone Sour",
+   "year": 2002,
+   "label": "Roadrunner Records",
+   "country": "us",
+   "faction": "alt-metal",
+   "genres": [
+    "rock"
+   ],
+   "why": "Corey Taylor 側團的白金首作，奠定代表地位。",
+   "moodGuess": {
+    "x": 4.1,
+    "y": 1.2,
+    "z": -0.3,
+    "why": "重 riff 與嘶吼對旋律副歌"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/77915cb0-cfaf-3af7-a7b6-bbed33f60df0",
+    "https://coverartarchive.org/release-group/77915cb0-cfaf-3af7-a7b6-bbed33f60df0/front"
+   ],
+   "spotifyName": "Stone Sour",
+   "mbRgMbid": "77915cb0-cfaf-3af7-a7b6-bbed33f60df0",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Stone Sour",
+   "album": "Come What(ever) May",
+   "year": 2006,
+   "label": "Roadrunner Records",
+   "country": "us",
+   "faction": "alt-metal",
+   "genres": [
+    "rock"
+   ],
+   "why": "第二個高峰：商業與評論皆好，含〈Through Glass〉。",
+   "moodGuess": {
+    "x": 3.8,
+    "y": 1,
+    "z": 0,
+    "why": "重搖滾與抒情並陳"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/3b57a56a-8377-37d7-9dba-cd1b4471c35e",
+    "https://coverartarchive.org/release-group/3b57a56a-8377-37d7-9dba-cd1b4471c35e/front"
+   ],
+   "spotifyName": "Stone Sour",
+   "mbRgMbid": "3b57a56a-8377-37d7-9dba-cd1b4471c35e",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "SUUNS",
+   "album": "Zeroes QC",
+   "year": 2010,
+   "label": "Secretly Canadian",
+   "country": "ca",
+   "faction": "post-punk-art",
+   "genres": [
+    "rock",
+    "electronic"
+   ],
+   "why": "蒙特婁迷幻後龐克首作，入圍 Polaris，樂迷公認代表。",
+   "moodGuess": {
+    "x": 3.4,
+    "y": 0.2,
+    "z": -1,
+    "why": "緊繃脈動與冷硬合成器"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/5a1dfd52-8482-4344-a164-249ee309d2f8",
+    "https://coverartarchive.org/release-group/5a1dfd52-8482-4344-a164-249ee309d2f8/front"
+   ],
+   "spotifyName": "SUUNS",
+   "mbRgMbid": "5a1dfd52-8482-4344-a164-249ee309d2f8",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "SUUNS",
+   "album": "Images du futur",
+   "year": 2013,
+   "label": "Secretly Canadian",
+   "country": "ca",
+   "faction": "post-punk-art",
+   "genres": [
+    "rock",
+    "electronic"
+   ],
+   "why": "第二個高峰：更電子、更陰鬱，評論普遍給高分。",
+   "moodGuess": {
+    "x": 3.3,
+    "y": 0.4,
+    "z": -1.2,
+    "why": "冷冽電子律動與失真人聲"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/f0309824-1f3a-4f7a-89ec-80cbfecbd854",
+    "https://coverartarchive.org/release-group/f0309824-1f3a-4f7a-89ec-80cbfecbd854/front"
+   ],
+   "spotifyName": "SUUNS",
+   "mbRgMbid": "f0309824-1f3a-4f7a-89ec-80cbfecbd854",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Tacoma Radar",
+   "album": "No One Waved Goodbye",
+   "year": 2004,
+   "label": "",
+   "country": "gb",
+   "faction": "indie-folk-rock",
+   "genres": [
+    "rock",
+    "folk"
+   ],
+   "why": "MB 只有這張正規專輯，也是其主要作品。",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 0.3,
+    "z": 0.1,
+    "why": "低調另類民謠搖滾"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/6d2aa788-4029-3390-8e3f-a5dc31b9d719",
+    "https://coverartarchive.org/release-group/6d2aa788-4029-3390-8e3f-a5dc31b9d719/front"
+   ],
+   "spotifyName": "Tacoma Radar",
+   "mbRgMbid": "6d2aa788-4029-3390-8e3f-a5dc31b9d719",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "國籍依 Discogs 標 UK；廠牌未查"
+  },
+  {
+   "artist": "The Black Angels",
+   "album": "Passover",
+   "year": 2006,
+   "label": "Light in the Attic",
+   "country": "us",
+   "faction": "neo-psych",
+   "genres": [
+    "rock"
+   ],
+   "why": "奧斯汀迷幻搖滾首作，奠定 Reverberation 風格，經典。",
+   "moodGuess": {
+    "x": 3.3,
+    "y": 1.2,
+    "z": -0.8,
+    "why": "Velvet 式節奏與昏暗回授"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/23d02a5d-31cb-308f-b177-6760bcc6c744",
+    "https://coverartarchive.org/release-group/23d02a5d-31cb-308f-b177-6760bcc6c744/front"
+   ],
+   "spotifyName": "The Black Angels",
+   "mbRgMbid": "23d02a5d-31cb-308f-b177-6760bcc6c744",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "The Black Angels",
+   "album": "Phosphene Dream",
+   "year": 2010,
+   "label": "Blue Horizon",
+   "country": "us",
+   "faction": "neo-psych",
+   "genres": [
+    "rock"
+   ],
+   "why": "第二個高峰：更具旋律的迷幻，樂迷常推。",
+   "moodGuess": {
+    "x": 3.2,
+    "y": 1,
+    "z": -0.4,
+    "why": "迷幻搖滾加管風琴感"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/669f16a1-7926-4e93-bbb3-cc53387354df",
+    "https://coverartarchive.org/release-group/669f16a1-7926-4e93-bbb3-cc53387354df/front"
+   ],
+   "spotifyName": "The Black Angels",
+   "mbRgMbid": "669f16a1-7926-4e93-bbb3-cc53387354df",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "The Charlottes",
+   "album": "Lovehappy",
+   "year": 1989,
+   "label": "",
+   "country": "gb",
+   "faction": "c86-indie-pop",
+   "genres": [
+    "rock",
+    "pop"
+   ],
+   "why": "C86 後期英國吉他流行，首張專輯是其代表。",
+   "moodGuess": {
+    "x": 3,
+    "y": 0,
+    "z": 0.7,
+    "why": "明亮吉他流行與柔和人聲"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/71764990-8025-329c-a9b1-9deafa1b8de1",
+    "https://www.discogs.com/master/28005-The-Charlottes-Lovehappy"
+   ],
+   "spotifyName": "The Charlottes",
+   "mbRgMbid": "71764990-8025-329c-a9b1-9deafa1b8de1",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "CAA 無封面，改以 Discogs master 為證，需確認封面來源；備選 Things Come Apart (48729481-e89e-39b1-b136-3e63de6b4916)，該盤 CAA 有圖"
+  },
+  {
+   "artist": "The Sonora Pine",
+   "album": "The Sonora Pine",
+   "year": 1996,
+   "label": "",
+   "country": "us",
+   "faction": "post-rock",
+   "genres": [
+    "rock"
+   ],
+   "why": "MB 兩張專輯中的首作，後搖早期代表。",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 0,
+    "z": -0.4,
+    "why": "稀疏後搖器樂"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/84caed09-aef0-3b34-aed7-dff6c698200d",
+    "https://coverartarchive.org/release-group/84caed09-aef0-3b34-aed7-dff6c698200d/front"
+   ],
+   "spotifyName": "The Sonora Pine",
+   "mbRgMbid": "84caed09-aef0-3b34-aed7-dff6c698200d",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "國籍與廠牌未查證；另有 II (1997)"
+  },
+  {
+   "artist": "The Voidz",
+   "album": "Tyranny",
+   "year": 2014,
+   "label": "Cult Records",
+   "country": "us",
+   "faction": "experimental-rock",
+   "genres": [
+    "rock"
+   ],
+   "why": "Julian Casablancas 的樂團首作，爭議但最具代表。",
+   "moodGuess": {
+    "x": 4,
+    "y": 1,
+    "z": -1,
+    "why": "嘈雜失真與實驗合成"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/06db9991-5deb-4f29-92cf-1cc3d111b555",
+    "https://coverartarchive.org/release-group/06db9991-5deb-4f29-92cf-1cc3d111b555/front"
+   ],
+   "spotifyName": "The Voidz",
+   "mbRgMbid": "06db9991-5deb-4f29-92cf-1cc3d111b555",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Tobin Sprout",
+   "album": "Carnival Boy",
+   "year": 1996,
+   "label": "Matador",
+   "country": "us",
+   "faction": "lofi-indie",
+   "genres": [
+    "rock"
+   ],
+   "why": "GBV 成員個人首作，低傳真流行的代表。",
+   "moodGuess": {
+    "x": 2.8,
+    "y": 0.2,
+    "z": 0.8,
+    "why": "低傳真吉他流行旋律"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/ae1f1db5-5bce-34a7-a64f-76d89c29e382",
+    "https://coverartarchive.org/release-group/ae1f1db5-5bce-34a7-a64f-76d89c29e382/front"
+   ],
+   "spotifyName": "Tobin Sprout",
+   "mbRgMbid": "ae1f1db5-5bce-34a7-a64f-76d89c29e382",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Vinnum Sabbathi",
+   "album": "Gravity Works",
+   "year": 2017,
+   "label": "",
+   "country": "mx",
+   "faction": "doom-stoner",
+   "genres": [
+    "rock"
+   ],
+   "why": "墨西哥太空 doom 代表專輯。",
+   "moodGuess": {
+    "x": 2.9,
+    "y": 1.4,
+    "z": -0.6,
+    "why": "沉重慢速迷幻 doom riff"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/f26f24bd-2f64-4e19-8530-fce723bbeb3d",
+    "https://coverartarchive.org/release-group/f26f24bd-2f64-4e19-8530-fce723bbeb3d/front"
+   ],
+   "spotifyName": "Vinnum Sabbathi",
+   "mbRgMbid": "f26f24bd-2f64-4e19-8530-fce723bbeb3d",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "廠牌未查；另有 Fuzzonaut (2015)"
+  },
+  {
+   "artist": "Wooden Shjips",
+   "album": "Dos",
+   "year": 2009,
+   "label": "Holy Mountain",
+   "country": "us",
+   "faction": "neo-psych",
+   "genres": [
+    "rock"
+   ],
+   "why": "舊金山迷幻 drone 搖滾的代表之作。",
+   "moodGuess": {
+    "x": 3,
+    "y": 1.1,
+    "z": -0.5,
+    "why": "單調 motorik 與管風琴"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/44f7fcc5-83bb-3f18-a714-42dffd6da833",
+    "https://coverartarchive.org/release-group/44f7fcc5-83bb-3f18-a714-42dffd6da833/front"
+   ],
+   "spotifyName": "Wooden Shjips",
+   "mbRgMbid": "44f7fcc5-83bb-3f18-a714-42dffd6da833",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Wooden Shjips",
+   "album": "West",
+   "year": 2011,
+   "label": "Thrill Jockey",
+   "country": "us",
+   "faction": "neo-psych",
+   "genres": [
+    "rock"
+   ],
+   "why": "第二個高峰：更明亮更好入耳的迷幻。",
+   "moodGuess": {
+    "x": 3.2,
+    "y": 0.9,
+    "z": 0,
+    "why": "律動鮮明迷幻吉他"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/619b814c-8a34-4309-b069-e07097e9f19f",
+    "https://coverartarchive.org/release-group/619b814c-8a34-4309-b069-e07097e9f19f/front"
+   ],
+   "spotifyName": "Wooden Shjips",
+   "mbRgMbid": "619b814c-8a34-4309-b069-e07097e9f19f",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Ben Watt",
+   "album": "North Marine Drive",
+   "year": 1983,
+   "label": "Cherry Red",
+   "country": "gb",
+   "faction": "singer-songwriter",
+   "genres": [
+    "folk",
+    "pop"
+   ],
+   "why": "EBTG 成員的個人首作，鄉愁式民謠爵士名作。",
+   "moodGuess": {
+    "x": 1.8,
+    "y": -0.3,
+    "z": 0.2,
+    "why": "安靜吉他與低語"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/e75891e6-2537-39f5-adef-08bbe8ecf25c",
+    "https://coverartarchive.org/release-group/e75891e6-2537-39f5-adef-08bbe8ecf25c/front"
+   ],
+   "spotifyName": "Ben Watt",
+   "mbRgMbid": "e75891e6-2537-39f5-adef-08bbe8ecf25c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "池中僅 EBTG，Ben Watt 個人署名視為不同藝人"
+  },
+  {
+   "artist": "Ben Watt",
+   "album": "Hendra",
+   "year": 2014,
+   "label": "Caroline International",
+   "country": "gb",
+   "faction": "singer-songwriter",
+   "genres": [
+    "folk",
+    "rock"
+   ],
+   "why": "31 年後的第二張個人作，評論盛讚的成熟之作。",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 0.4,
+    "z": 0.3,
+    "why": "成熟民謠搖滾與沉靜人聲"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/cc50b4ec-b4d8-45ba-acd0-6324b4e1d93d",
+    "https://coverartarchive.org/release-group/cc50b4ec-b4d8-45ba-acd0-6324b4e1d93d/front"
+   ],
+   "spotifyName": "Ben Watt",
+   "mbRgMbid": "cc50b4ec-b4d8-45ba-acd0-6324b4e1d93d",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Sleepytime Trio",
+   "album": "Plus 6000",
+   "year": 1997,
+   "label": "",
+   "country": "us",
+   "faction": "emo-hardcore",
+   "genres": [
+    "rock"
+   ],
+   "why": "90 年代 emo／數學搖滾代表作，6 曲作為主要作品。",
+   "moodGuess": {
+    "x": 4,
+    "y": 0.2,
+    "z": -0.9,
+    "why": "尖銳糾結的 emo 吉他"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/3036668-Sleepytime-Trio-Plus-6000",
+    "https://musicbrainz.org/artist/d9f25711-8e79-4567-89e4-4be1335d258e"
+   ],
+   "spotifyName": "Sleepytime Trio",
+   "mbRgMbid": "",
+   "mbAbsenceProof": "MB 有此藝人但僅 Memory-Minus（合輯），Plus 6000 無 RG；Discogs master 3036668 六曲",
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/3036668-Sleepytime-Trio-Plus-6000",
+    "https://i.discogs.com/81CyLD5YyrTfKlswxJxI6JWPxzTp9b4sw9K7R-Jzap0/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1MTgx/MzQtMTYxNjA0NTE4/OC0zMTY0LmpwZWc.jpeg"
+   ],
+   "releaseException": "6 首 1997 長 EP，Discogs 列為 master，無正規專輯（Memory-Minus 為合輯）",
+   "queryAlias": "",
+   "uncertain": "長 EP；封面來自 Discogs，正式用前確認"
+  },
+  {
+   "artist": "СОЮЗ",
+   "album": "Это всё совсем не то",
+   "year": 2018,
+   "label": "",
+   "country": "by",
+   "faction": "post-punk",
+   "genres": [
+    "rock"
+   ],
+   "why": "白俄羅斯樂團首作，兩張中的第一張代表。",
+   "moodGuess": {
+    "x": 3.2,
+    "y": 0.3,
+    "z": -0.9,
+    "why": "俄語後龐克冷硬吉他"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/09dfbfb8-5cae-45b6-bada-497f0d264d40",
+    "https://coverartarchive.org/release-group/09dfbfb8-5cae-45b6-bada-497f0d264d40/front"
+   ],
+   "spotifyName": "СОЮЗ",
+   "mbRgMbid": "09dfbfb8-5cae-45b6-bada-497f0d264d40",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "白俄羅斯樂團（MB 2017 成軍），非蘇聯 Союз；類型為推測，未聽證；另有 II (2019)"
+  },
+  {
+   "artist": "Mamie Minch",
+   "album": "Razorburn Blues",
+   "year": 2008,
+   "label": "自行發行",
+   "country": "us",
+   "faction": "acoustic-blues",
+   "genres": [
+    "blues",
+    "folk"
+   ],
+   "why": "首張個人專輯，古老鄉村藍調風格，被各榜單推薦。",
+   "moodGuess": {
+    "x": 2.2,
+    "y": -0.4,
+    "z": 0.4,
+    "why": "原聲吉他老藍調"
+   },
+   "evidence": [
+    "https://music.apple.com/us/album/razorburn-blues/282954268",
+    "https://www.chronogram.com/arts/mamie-minch-2148546"
+   ],
+   "spotifyName": "Mamie Minch",
+   "mbRgMbid": "",
+   "mbAbsenceProof": "MB 只有 Slow Burn (EP)；Razorburn Blues 無 RG",
+   "manualEvidenceUrls": [
+    "https://music.apple.com/us/album/razorburn-blues/282954268",
+    "https://www.chronogram.com/arts/mamie-minch-2148546",
+    "https://www.thecountryblues.com/?p=6978"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Apple 頁在 US 區；2008 年份依 iTunes／Chronogram"
+  },
+  {
+   "artist": "David Boring",
+   "album": "Unnatural Objects and Their Humans",
+   "year": 2017,
+   "label": "",
+   "country": "hk",
+   "faction": "dream-pop-hk",
+   "genres": [
+    "rock"
+   ],
+   "why": "香港樂團（非法國同名歌手）首張專輯。",
+   "moodGuess": {
+    "x": 2.7,
+    "y": 0.7,
+    "z": -0.2,
+    "why": "夢幻 shoegaze 吉他"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/4d655916-2331-4168-b44e-d39ad4686eef",
+    "https://coverartarchive.org/release-group/4d655916-2331-4168-b44e-d39ad4686eef/front"
+   ],
+   "spotifyName": "David Boring",
+   "mbRgMbid": "4d655916-2331-4168-b44e-d39ad4686eef",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "香港樂團 MB 2013；類型推測；另有 Liminal Beings and Their Echoes (2026)"
+  }
+ ],
+ "notes": [
+  "跳過：Ben Watt 並非整位跳過——池中僅 Everything but the Girl（Idlewild、Walking Wounded），Ben Watt 個人名義無卡，故收 2 張",
+  "不收：Valley Hi!（Discogs 僅 2021 年 4 曲 EP《Valley Hi!》，MB 無此藝人；無正規專輯，也非 Valley 樂團）",
+  "疑點：Sleepytime Trio 為 6 曲長 EP 例外；Charlottes 封面 CAA 無圖，需 Discogs 或換 Things Come Apart",
+  "疑點：Tacoma Radar／The Sonora Pine／Vinnum Sabbathi／СОЮЗ／David Boring 的 label 或曲風為推測，moodGuess 僅參考",
+  "池比對：Psychic Ills、SLIFT、Stone Sour、SUUNS 等皆無；Chic／Sleep／Char 為子字串誤中"
+ ]
+}

@@ -33,13 +33,22 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-12 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 3,
-    "obscurity": 4,
+    "classic": 4,
+    "obscurity": 3,
     "accessibility": 2,
     "listeners": 10169,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-12T08:46:17Z",
-    "note": "機器基線 3/4/2（廣度線冷門軸照 Last.fm listeners 10169）"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Arocena 出道代表作（Brownswood）；10k→3；古巴人聲爵士易聽",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-12T08:46:17Z",
+     "note": "機器基線 3/4/2（廣度線冷門軸照 Last.fm listeners 10169）",
+     "rarity": "rare"
+    }
    },
    "rarity": "rare",
    "apexAssessment": {
@@ -62,7 +71,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview114/v4/88/f8/c8/88f8c837-5382-18c1-a482-496adf4eb666/mzaf_7889794007462544076.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview114/v4/35/64/e2/3564e2b4-9f85-8d0f-b919-c58959aae0a8/mzaf_36122817856307370.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 206,
     "checkedAt": "2026-10-12T08:46:17Z",
@@ -107,13 +116,22 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-12 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 3,
+    "classic": 4,
     "obscurity": 2,
     "accessibility": 3,
     "listeners": 143347,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-12T08:46:17Z",
-    "note": "機器基線 3/2/3（廣度線冷門軸照 Last.fm listeners 143347）"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：BBNG 代表作之一；XL 國際發行、143k→2；長篇迷幻器樂即興需投入",
+    "previous": {
+     "classic": 3,
+     "obscurity": 2,
+     "accessibility": 3,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-12T08:46:17Z",
+     "note": "機器基線 3/2/3（廣度線冷門軸照 Last.fm listeners 143347）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -133,7 +151,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f6/e2/00/f6e200d3-5c72-fd8d-4430-c9ed39441cf6/mzaf_2562967527268378404.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/3c/89/0d/3c890db2-0260-4b2f-3669-ce37eadd7b3e/mzaf_13231155041270825717.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 206,
     "checkedAt": "2026-10-12T08:46:17Z",
@@ -179,15 +197,24 @@
     "visuallyVerified": true
    },
    "ratings": {
-    "classic": 3,
-    "obscurity": 5,
+    "classic": 4,
+    "obscurity": 4,
     "accessibility": 2,
     "listeners": 227,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-12T08:46:17Z",
-    "note": "機器基線 3/5/2（廣度線冷門軸照 Last.fm listeners 227）"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Jensen 代表作、2011 Juno 年度當代爵士專輯；<1000 有串流→4；豐潤大樂團和聲",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-12T08:46:17Z",
+     "note": "機器基線 3/5/2（廣度線冷門軸照 Last.fm listeners 227）",
+     "rarity": "uncommon"
+    }
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -208,7 +235,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview122/v4/93/ec/79/93ec79e2-1659-1b61-0f8b-831ed7037f0d/mzaf_12034691487888522058.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview122/v4/ea/3c/ae/ea3cae43-d772-8b48-2456-493f135968ec/mzaf_13625901697196778762.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 206,
     "checkedAt": "2026-10-12T08:46:17Z",
@@ -254,14 +281,23 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 4,
-    "accessibility": 2,
+    "obscurity": 3,
+    "accessibility": 1,
     "listeners": 8741,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-12T08:46:17Z",
-    "note": "機器基線 3/4/2（廣度線冷門軸照 Last.fm listeners 8741）"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：三部作前的單曲合輯、非代表作；日本一線器樂團圈外少人知；歡樂流行鋼琴三重奏",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-12T08:46:17Z",
+     "note": "機器基線 3/4/2（廣度線冷門軸照 Last.fm listeners 8741）",
+     "rarity": "rare"
+    }
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -280,7 +316,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/da/49/be/da49be38-ae8b-b29e-136c-4bc928090dc7/mzaf_17990635426344276412.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/f6/72/98/f67298c0-bf94-b188-de76-cfd068a611cd/mzaf_14196295339567376133.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 206,
     "checkedAt": "2026-10-12T08:46:17Z",
@@ -326,14 +362,23 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 4,
-    "accessibility": 4,
+    "obscurity": 3,
+    "accessibility": 1,
     "listeners": 5142,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-12T08:46:17Z",
-    "note": "機器基線 3/4/4（廣度線冷門軸照 Last.fm listeners 5142）"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：H ZETTRIO 第四張，日本流行鋼琴三重奏；5k、圈外少知→3；娛樂性強、旋律直白",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-12T08:46:17Z",
+     "note": "機器基線 3/4/4（廣度線冷門軸照 Last.fm listeners 5142）",
+     "rarity": "uncommon"
+    }
    },
-   "rarity": "uncommon",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -353,7 +398,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/6d/37/20/6d3720c1-e3c7-267a-6279-4339a23614b6/mzaf_15322178067562671315.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/08/1d/8a/081d8a7e-58fe-bc13-b217-0f9261805b53/mzaf_9322126817368336935.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 206,
     "checkedAt": "2026-10-12T08:46:17Z",
@@ -398,15 +443,24 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-12 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 4,
+    "classic": 3,
+    "obscurity": 3,
     "accessibility": 2,
     "listeners": 13019,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-12T08:46:17Z",
-    "note": "機器基線 2/4/2（廣度線冷門軸照 Last.fm listeners 13019）"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：鋼琴＋鼓雙人盤、新聞主題曲；Verve 日盤；旋律性強的二重奏",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-12T08:46:17Z",
+     "note": "機器基線 2/4/2（廣度線冷門軸照 Last.fm listeners 13019）",
+     "rarity": "rare"
+    }
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -472,15 +526,24 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-12 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 5,
+    "classic": 3,
+    "obscurity": 4,
     "accessibility": 2,
     "listeners": 163,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-12T08:46:17Z",
-    "note": "機器基線 2/5/2（廣度線冷門軸照 Last.fm listeners 163）"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：第六張三重奏＋客席；聽眾<1千有串流下限4；跨類型但旋律為主",
+    "previous": {
+     "classic": 2,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-12T08:46:17Z",
+     "note": "機器基線 2/5/2（廣度線冷門軸照 Last.fm listeners 163）",
+     "rarity": "rare"
+    }
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -499,7 +562,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/a0/5d/0d/a05d0dc7-885c-3be5-8b5f-00b0aa4a436b/mzaf_16168864227788141030.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/88/98/9d/88989d81-2b61-eb31-6bd7-58e54d4ddb63/mzaf_17353246537646987747.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 206,
     "checkedAt": "2026-10-12T08:46:17Z",
@@ -545,12 +608,21 @@
    },
    "ratings": {
     "classic": 4,
-    "obscurity": 3,
-    "accessibility": 2,
+    "obscurity": 2,
+    "accessibility": 3,
     "listeners": 30349,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-12T08:46:17Z",
-    "note": "機器基線 4/3/2（廣度線冷門軸照 Last.fm listeners 30349）"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Trio Project 代表作之一；Telarc 國際流通；高速炫技前衛融合長曲",
+    "previous": {
+     "classic": 4,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-12T08:46:17Z",
+     "note": "機器基線 4/3/2（廣度線冷門軸照 Last.fm listeners 30349）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -573,7 +645,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/e0/57/22/e0572289-eb3e-27bc-99fc-b36af8117cc8/mzaf_3923846996648138469.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/16/2d/b7/162db751-3763-c893-e61c-c623c97c6bfb/mzaf_981827111731754715.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 206,
     "checkedAt": "2026-10-12T08:46:17Z",
@@ -619,15 +691,24 @@
     "visuallyVerified": true
    },
    "ratings": {
-    "classic": 4,
-    "obscurity": 3,
-    "accessibility": 2,
+    "classic": 3,
+    "obscurity": 2,
+    "accessibility": 3,
     "listeners": 23292,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-12T08:46:17Z",
-    "note": "機器基線 4/3/2（廣度線冷門軸照 Last.fm listeners 23292）"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：十年後第二張獨奏，佳評非首選；Telarc 國際發行；獨奏長篇含 20 分組曲",
+    "previous": {
+     "classic": 4,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-12T08:46:17Z",
+     "note": "機器基線 4/3/2（廣度線冷門軸照 Last.fm listeners 23292）",
+     "rarity": "uncommon"
+    }
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -646,7 +727,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e5/ed/e6/e5ede6cc-0f34-ffd8-0270-5adca050d9b0/mzaf_10341703845791202610.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d5/83/25/d583250e-8e5a-a240-69ab-abf94e78bb93/mzaf_12627829862899800124.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 206,
     "checkedAt": "2026-10-12T08:46:17Z",
@@ -693,14 +774,23 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 4,
-    "accessibility": 4,
+    "obscurity": 3,
+    "accessibility": 2,
     "listeners": 5111,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-12T08:46:17Z",
-    "note": "機器基線 3/4/4（廣度線冷門軸照 Last.fm listeners 5111）"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：首張完整專輯；Playwright 小量發行；jazz-rock 鋼琴三重奏",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-12T08:46:17Z",
+     "note": "機器基線 3/4/4（廣度線冷門軸照 Last.fm listeners 5111）",
+     "rarity": "uncommon"
+    }
    },
-   "rarity": "uncommon",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -719,7 +809,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/1f/c9/af/1fc9af99-23d6-ae3e-6d02-6471cc091cf1/mzaf_532780677311373800.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f5/e0/e1/f5e0e1f5-7f9e-8aac-33a1-6fb4d95475e9/mzaf_17346692869414395725.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 206,
     "checkedAt": "2026-10-12T08:46:17Z",
@@ -764,15 +854,24 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-12 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 3,
-    "obscurity": 3,
-    "accessibility": 4,
+    "classic": 4,
+    "obscurity": 2,
+    "accessibility": 2,
     "listeners": 62670,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-12T08:46:17Z",
-    "note": "機器基線 3/3/4（廣度線冷門軸照 Last.fm listeners 62670）"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：JAZZ JAPAN AWARD 年度、CD Shop 大賞；聽眾 6 萬；現代 jazz-rock 鋼琴三重奏，循環旋律",
+    "previous": {
+     "classic": 3,
+     "obscurity": 3,
+     "accessibility": 4,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-12T08:46:17Z",
+     "note": "機器基線 3/3/4（廣度線冷門軸照 Last.fm listeners 62670）",
+     "rarity": "uncommon"
+    }
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -792,7 +891,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/85/ea/9c/85ea9cf8-bfb2-adba-0363-f9bcf75d750e/mzaf_2164863522314602407.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e2/f5/6e/e2f56ea1-8d58-b0e4-0f4e-29825291bcfe/mzaf_4387934395820738327.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 206,
     "checkedAt": "2026-10-12T08:46:17Z",
@@ -838,14 +937,23 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 4,
-    "accessibility": 4,
+    "obscurity": 3,
+    "accessibility": 2,
     "listeners": 12784,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-12T08:46:17Z",
-    "note": "機器基線 3/4/4（廣度線冷門軸照 Last.fm listeners 12784）"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：第五張、中期作；Playwright 日盤；失真低音加弦樂的 jazz-rock，好入耳",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-12T08:46:17Z",
+     "note": "機器基線 3/4/4（廣度線冷門軸照 Last.fm listeners 12784）",
+     "rarity": "uncommon"
+    }
    },
-   "rarity": "uncommon",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -864,7 +972,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ff/7d/f2/ff7df2a8-f889-22d2-adc9-3af6ae5371b0/mzaf_17872219979262528721.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9a/4f/93/9a4f93d8-a66d-bea1-3569-5f5a34adf2fe/mzaf_17379589506559721268.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 206,
     "checkedAt": "2026-10-12T08:46:17Z",
@@ -911,14 +1019,23 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 5,
+    "obscurity": 3,
     "accessibility": 2,
     "listeners": 1624,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-12T08:46:17Z",
-    "note": "機器基線 3/5/2（廣度線冷門軸照 Last.fm listeners 1624）"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：轉 Playwright 首張、中期作；聽眾<5千下限3；熱力 jazz-rock 管樂團",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-12T08:46:17Z",
+     "note": "機器基線 3/5/2（廣度線冷門軸照 Last.fm listeners 1624）",
+     "rarity": "uncommon"
+    }
    },
-   "rarity": "uncommon",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -939,7 +1056,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/19/9f/e9/199fe99e-5538-481f-4b7e-967a11e7d3b3/mzaf_11925827069071874829.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/80/2b/29/802b2967-1d08-0d7a-f4b0-d9344a59cc50/mzaf_10411100463702716672.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 206,
     "checkedAt": "2026-10-12T08:46:17Z",
@@ -985,14 +1102,23 @@
    },
    "ratings": {
     "classic": 2,
-    "obscurity": 5,
+    "obscurity": 4,
     "accessibility": 2,
     "listeners": 165,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-12T08:46:17Z",
-    "note": "機器基線 2/5/2（廣度線冷門軸照 Last.fm listeners 165）"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：日本器樂名曲翻奏盤；聽眾<1千有串流下限4；翻奏輕快易聽",
+    "previous": {
+     "classic": 2,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-12T08:46:17Z",
+     "note": "機器基線 2/5/2（廣度線冷門軸照 Last.fm listeners 165）",
+     "rarity": "rare"
+    }
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1011,7 +1137,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/2f/df/69/2fdf6912-93ac-5507-5e38-3a7083e85641/mzaf_4262627361243276728.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/42/2f/a4/422fa481-4ada-9dd5-28f6-48b5abc05894/mzaf_1506619127078231349.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 206,
     "checkedAt": "2026-10-12T08:46:17Z",
@@ -1057,15 +1183,24 @@
     "visuallyVerified": true
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 5,
-    "accessibility": 4,
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
     "listeners": 494,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-12T08:46:17Z",
-    "note": "機器基線 2/5/4（廣度線冷門軸照 Last.fm listeners 494）"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：京都 club jazz 中期作；小廠 Vithmic、聽眾<1千有串流；舞曲 club jazz 好入耳",
+    "previous": {
+     "classic": 2,
+     "obscurity": 5,
+     "accessibility": 4,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-12T08:46:17Z",
+     "note": "機器基線 2/5/4（廣度線冷門軸照 Last.fm listeners 494）",
+     "rarity": "uncommon"
+    }
    },
-   "rarity": "uncommon",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1083,7 +1218,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/Music2/v4/ad/a9/bc/ada9bc70-22d9-3084-20b0-d0f3a37701ed/mzaf_5042908607443276586.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/74/cd/14/74cd1416-240b-ff43-dbf8-93db96a82f3b/mzaf_8591754209579060213.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 206,
     "checkedAt": "2026-10-12T08:46:17Z",
@@ -1129,15 +1264,24 @@
     "visuallyVerified": true
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 5,
+    "classic": 3,
+    "obscurity": 4,
     "accessibility": 2,
     "listeners": 443,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-12T08:46:17Z",
-    "note": "機器基線 2/5/2（廣度線冷門軸照 Last.fm listeners 443）"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：P-VINE 首張完整專輯；聽眾<1千有串流下限4；future jazz 旋律器樂",
+    "previous": {
+     "classic": 2,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-12T08:46:17Z",
+     "note": "機器基線 2/5/2（廣度線冷門軸照 Last.fm listeners 443）",
+     "rarity": "rare"
+    }
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1155,7 +1299,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d9/4c/d3/d94cd340-1c1a-59a7-424b-d3dc3a67e462/mzaf_17616186346762749505.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/aa/67/cb/aa67cb51-e488-9e73-b376-8a728eb91db7/mzaf_10067024736406504254.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 206,
     "checkedAt": "2026-10-12T08:46:17Z",
@@ -1200,13 +1344,22 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-12 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 4,
+    "classic": 4,
+    "obscurity": 3,
     "accessibility": 2,
     "listeners": 11731,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-12T08:46:17Z",
-    "note": "機器基線 2/4/2（廣度線冷門軸照 Last.fm listeners 11731）"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：收〈Adria Blue〉的代表作（MV 540 萬播）；Playwright 日盤圈外少知；旋律 groove 器樂",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-12T08:46:17Z",
+     "note": "機器基線 2/4/2（廣度線冷門軸照 Last.fm listeners 11731）",
+     "rarity": "rare"
+    }
    },
    "rarity": "rare",
    "apexAssessment": {
@@ -1228,7 +1381,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/a8/32/2f/a8322f26-22dc-a37e-87b8-7e574537564a/mzaf_10605021956215848379.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/7f/bc/48/7fbc484c-5d86-de93-c676-4a4a7eef49dc/mzaf_17230465601975211222.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 206,
     "checkedAt": "2026-10-12T08:46:17Z",
@@ -1273,15 +1426,24 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-12 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 5,
-    "accessibility": 4,
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
     "listeners": 907,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-12T08:46:17Z",
-    "note": "機器基線 2/5/4（廣度線冷門軸照 Last.fm listeners 907）"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：大阪雙鼓 club jazz 中期作；聽眾<1千有串流下限4；推進型律動",
+    "previous": {
+     "classic": 2,
+     "obscurity": 5,
+     "accessibility": 4,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-12T08:46:17Z",
+     "note": "機器基線 2/5/4（廣度線冷門軸照 Last.fm listeners 907）",
+     "rarity": "uncommon"
+    }
    },
-   "rarity": "uncommon",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1346,15 +1508,24 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-12 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 4,
-    "obscurity": 5,
-    "accessibility": 3,
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
     "listeners": 743,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-12T08:46:17Z",
-    "note": "機器基線 4/5/3（廣度線冷門軸照 Last.fm listeners 743）"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：十週年全客席合作盤、非代表作；聽眾<1千有串流下限4；death jazz 高能但好跟",
+    "previous": {
+     "classic": 4,
+     "obscurity": 5,
+     "accessibility": 3,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-12T08:46:17Z",
+     "note": "機器基線 4/5/3（廣度線冷門軸照 Last.fm listeners 743）",
+     "rarity": "epic"
+    }
    },
-   "rarity": "epic",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1422,14 +1593,23 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 5,
-    "accessibility": 3,
+    "obscurity": 4,
+    "accessibility": 2,
     "listeners": 362,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-12T08:46:17Z",
-    "note": "機器基線 3/5/3（廣度線冷門軸照 Last.fm listeners 362）"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：重啟後客席盤；聽眾<1千有串流下限4；客席流行人聲，律動直白",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 3,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-12T08:46:17Z",
+     "note": "機器基線 3/5/3（廣度線冷門軸照 Last.fm listeners 362）",
+     "rarity": "uncommon"
+    }
    },
-   "rarity": "uncommon",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1447,7 +1627,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ae/07/3d/ae073d2c-63e0-d2d8-115b-11f496e1a2dc/mzaf_17195880205063545186.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/a3/96/a8/a396a891-4ebf-4a86-6ec1-8980fe5a9abc/mzaf_13472009748220962607.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 206,
     "checkedAt": "2026-10-12T08:46:17Z",
@@ -1492,15 +1672,24 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-12 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 5,
+    "classic": 3,
+    "obscurity": 4,
     "accessibility": 2,
     "listeners": 391,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-12T08:46:17Z",
-    "note": "機器基線 2/5/2（廣度線冷門軸照 Last.fm listeners 391）"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Concord 中期作，代表作是 Rising Son；聽眾<1千有串流下限4；jazz-funk 律動",
+    "previous": {
+     "classic": 2,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-12T08:46:17Z",
+     "note": "機器基線 2/5/2（廣度線冷門軸照 Last.fm listeners 391）",
+     "rarity": "rare"
+    }
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1520,7 +1709,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/bc/71/1b/bc711b6a-cdde-5ddb-39c0-af463e24a9a3/mzaf_4605378683740774436.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/4a/20/3e/4a203e6f-3f3b-2ac4-0591-a2ab317a13fb/mzaf_12529549730681777496.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 206,
     "checkedAt": "2026-10-12T08:46:17Z",
@@ -1566,15 +1755,24 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-12 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 5,
-    "accessibility": 4,
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
     "listeners": 244,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-12T08:46:17Z",
-    "note": "機器基線 2/5/4（廣度線冷門軸照 Last.fm listeners 244）"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：First Word 廠 beat 爵士；聽眾<1千有串流下限4；節拍導向 jazz-soul、自唱",
+    "previous": {
+     "classic": 2,
+     "obscurity": 5,
+     "accessibility": 4,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-12T08:46:17Z",
+     "note": "機器基線 2/5/4（廣度線冷門軸照 Last.fm listeners 244）",
+     "rarity": "uncommon"
+    }
    },
-   "rarity": "uncommon",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1594,7 +1792,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/65/8e/de/658ede37-e0ea-34e9-9a36-7ed2083bac30/mzaf_3505476293956863430.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/00/c9/77/00c97793-f639-9bbd-f0bb-7ffbe7cb2148/mzaf_8936121473330949924.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 206,
     "checkedAt": "2026-10-12T08:46:17Z",
@@ -1639,15 +1837,24 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-12 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 5,
+    "classic": 3,
+    "obscurity": 3,
     "accessibility": 2,
     "listeners": 1458,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-12T08:46:17Z",
-    "note": "機器基線 2/5/2（廣度線冷門軸照 Last.fm listeners 1458）"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：紐約日籍超級樂團第二張；Universal 日盤，聽眾<5千下限3；主流現代爵士",
+    "previous": {
+     "classic": 2,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-12T08:46:17Z",
+     "note": "機器基線 2/5/2（廣度線冷門軸照 Last.fm listeners 1458）",
+     "rarity": "rare"
+    }
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1714,13 +1921,22 @@
     "visuallyVerified": true
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 4,
+    "classic": 4,
+    "obscurity": 3,
     "accessibility": 2,
     "listeners": 3183,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-12T08:46:17Z",
-    "note": "機器基線 2/4/2（廣度線冷門軸照 Last.fm listeners 3183）"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：石若駿計畫首作即代表作；Sony Japan、1–5k 下限 3；嘻哈客座爵士易聽",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-12T08:46:17Z",
+     "note": "機器基線 2/4/2（廣度線冷門軸照 Last.fm listeners 3183）",
+     "rarity": "rare"
+    }
    },
    "rarity": "rare",
    "apexAssessment": {
@@ -1741,7 +1957,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/df/01/4c/df014c21-03f7-ed0a-8d01-8205969e7e93/mzaf_3146967335817307748.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/51/af/83/51af83cc-37f5-665a-743b-e921b4b5a5d8/mzaf_15294825825132282991.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 206,
     "checkedAt": "2026-10-12T08:46:17Z",
@@ -1788,15 +2004,24 @@
     "visuallyVerified": true
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 5,
+    "classic": 3,
+    "obscurity": 3,
     "accessibility": 2,
     "listeners": 1993,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-12T08:46:17Z",
-    "note": "機器基線 2/5/2（廣度線冷門軸照 Last.fm listeners 1993）"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：第二張，延續首作非首選；Universal、1–5k 下限 3；客座人聲爵士易聽",
+    "previous": {
+     "classic": 2,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-12T08:46:17Z",
+     "note": "機器基線 2/5/2（廣度線冷門軸照 Last.fm listeners 1993）",
+     "rarity": "rare"
+    }
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1817,7 +2042,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ee/c5/d0/eec5d047-f905-4889-8c82-8e3b1e2ba2e1/mzaf_6720316395544309654.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/2c/76/a4/2c76a446-ca91-c53c-8362-958452e681e2/mzaf_739150831655347505.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 206,
     "checkedAt": "2026-10-12T08:46:17Z",
@@ -1862,15 +2087,24 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-12 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 5,
-    "accessibility": 4,
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
     "listeners": 70,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-12T08:46:17Z",
-    "note": "機器基線 2/5/4（廣度線冷門軸照 Last.fm listeners 70）"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：T5Jazz 小廠第三張；聽眾<1千有串流下限4；電氣 Miles 式長篇即興，12 分長曲",
+    "previous": {
+     "classic": 2,
+     "obscurity": 5,
+     "accessibility": 4,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-12T08:46:17Z",
+     "note": "機器基線 2/5/4（廣度線冷門軸照 Last.fm listeners 70）",
+     "rarity": "uncommon"
+    }
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1935,13 +2169,22 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-12 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 5,
+    "classic": 3,
+    "obscurity": 4,
     "accessibility": 4,
     "listeners": 8,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-12T08:46:17Z",
-    "note": "機器基線 2/5/4（廣度線冷門軸照 Last.fm listeners 8）"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：第二張個人作、東京前衛圈；聽眾<1千有串流下限4；實驗薩克斯風、抽象結構",
+    "previous": {
+     "classic": 2,
+     "obscurity": 5,
+     "accessibility": 4,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-12T08:46:17Z",
+     "note": "機器基線 2/5/4（廣度線冷門軸照 Last.fm listeners 8）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -2009,13 +2252,22 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-12 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 5,
-    "accessibility": 2,
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
     "listeners": 41,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-12T08:46:17Z",
-    "note": "機器基線 2/5/2（廣度線冷門軸照 Last.fm listeners 41）"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：m_unit 首張；聽眾<1千有串流下限4；大樂團＋室內樂混合編寫",
+    "previous": {
+     "classic": 2,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-12T08:46:17Z",
+     "note": "機器基線 2/5/2（廣度線冷門軸照 Last.fm listeners 41）",
+     "rarity": "rare"
+    }
    },
    "rarity": "rare",
    "apexAssessment": {
@@ -2082,13 +2334,22 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-12 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 3,
-    "obscurity": 5,
-    "accessibility": 2,
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 3,
     "listeners": 144,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-12T08:46:17Z",
-    "note": "機器基線 3/5/2（廣度線冷門軸照 Last.fm listeners 144）"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：葛萊美大型爵士合奏提名、代表作；聽眾<1千有串流下限4；現代大編制作曲",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-12T08:46:17Z",
+     "note": "機器基線 3/5/2（廣度線冷門軸照 Last.fm listeners 144）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -2155,14 +2416,23 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 5,
-    "accessibility": 2,
+    "obscurity": 4,
+    "accessibility": 3,
     "listeners": 63,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-12T08:46:17Z",
-    "note": "機器基線 3/5/2（廣度線冷門軸照 Last.fm listeners 63）"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：指揮 DRBB 全自作；Edition 廠、聽眾<1千有串流下限4；大樂團現代和聲",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-12T08:46:17Z",
+     "note": "機器基線 3/5/2（廣度線冷門軸照 Last.fm listeners 63）",
+     "rarity": "uncommon"
+    }
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2226,13 +2496,22 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-12 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 5,
-    "accessibility": 4,
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 3,
     "listeners": 667,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-12T08:46:17Z",
-    "note": "機器基線 2/5/4（廣度線冷門軸照 Last.fm listeners 667）"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Black String ACT 首作即代表作、Songlines 推崇；<1000 有串流→4；巫俗節奏與即興",
+    "previous": {
+     "classic": 2,
+     "obscurity": 5,
+     "accessibility": 4,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-12T08:46:17Z",
+     "note": "機器基線 2/5/4（廣度線冷門軸照 Last.fm listeners 667）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -2255,7 +2534,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/b6/cb/87/b6cb87b3-0da6-52a7-c1ed-601750b4ecfa/mzaf_6605994602624443256.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview71/v4/15/85/49/1585495c-8206-5cf8-fc55-5bde979f1dc2/mzaf_7985458589082428190.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 206,
     "checkedAt": "2026-10-12T08:46:17Z",
@@ -2300,13 +2579,22 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-12 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 5,
-    "accessibility": 2,
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
     "listeners": 1637,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-12T08:46:17Z",
-    "note": "機器基線 2/5/2（廣度線冷門軸照 Last.fm listeners 1637）"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Black String ACT 第二張；1–5k 下限 3；玄琴與電子、韓國傳統音色需投入",
+    "previous": {
+     "classic": 2,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-12T08:46:17Z",
+     "note": "機器基線 2/5/2（廣度線冷門軸照 Last.fm listeners 1637）",
+     "rarity": "rare"
+    }
    },
    "rarity": "rare",
    "apexAssessment": {
@@ -2373,13 +2661,22 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-12 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 5,
+    "classic": 4,
+    "obscurity": 4,
     "accessibility": 2,
     "listeners": 129,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-12T08:46:17Z",
-    "note": "機器基線 2/5/2（廣度線冷門軸照 Last.fm listeners 129）"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：ACT 第三張、國際巡演主力盤；ACT 目錄確有 Spotify 正式數位版，下限給4；柔和人聲爵士；冷門度下限豁免：ADDENDUM 但書：確知有正式數位版",
+    "previous": {
+     "classic": 2,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-12T08:46:17Z",
+     "note": "機器基線 2/5/2（廣度線冷門軸照 Last.fm listeners 129）",
+     "rarity": "rare"
+    }
    },
    "rarity": "rare",
    "apexAssessment": {
@@ -2441,15 +2738,24 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-12 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 5,
+    "classic": 3,
+    "obscurity": 4,
     "accessibility": 2,
     "listeners": 37,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-12T08:46:17Z",
-    "note": "機器基線 2/5/2（廣度線冷門軸照 Last.fm listeners 37）"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：紐約班底後期作；聽眾<1千有串流下限4；人聲爵士、Ribot 吉他略帶粗糲",
+    "previous": {
+     "classic": 2,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-12T08:46:17Z",
+     "note": "機器基線 2/5/2（廣度線冷門軸照 Last.fm listeners 37）",
+     "rarity": "rare"
+    }
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2471,7 +2777,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/7e/65/84/7e6584ce-fabb-ceb7-8c97-1dc5375c92a2/mzaf_12332059496764997308.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d1/4f/d4/d14fd435-3d53-5174-d262-ad4ba343ace3/mzaf_14846789051828699399.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 206,
     "checkedAt": "2026-10-12T08:46:17Z",
@@ -2516,13 +2822,22 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-12 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 5,
+    "classic": 4,
+    "obscurity": 4,
     "accessibility": 2,
     "listeners": 620,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-12T08:46:17Z",
-    "note": "機器基線 2/5/2（廣度線冷門軸照 Last.fm listeners 620）"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：法韓熱賣代表作；聽眾<1千有串流下限4；無鋼琴無鼓組的柔和人聲",
+    "previous": {
+     "classic": 2,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-12T08:46:17Z",
+     "note": "機器基線 2/5/2（廣度線冷門軸照 Last.fm listeners 620）",
+     "rarity": "rare"
+    }
    },
    "rarity": "rare",
    "apexAssessment": {
@@ -2590,13 +2905,22 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-12 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 3,
-    "obscurity": 5,
+    "classic": 4,
+    "obscurity": 3,
     "accessibility": 3,
     "listeners": 2493,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-12T08:46:17Z",
-    "note": "機器基線 3/5/3（廣度線冷門軸照 Last.fm listeners 2493）"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Grammy 新秀作曲家代表作、樂評盛讚；Motéma 小廠；現代大樂團作曲需投入",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 3,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-12T08:46:17Z",
+     "note": "機器基線 3/5/3（廣度線冷門軸照 Last.fm listeners 2493）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -2618,7 +2942,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview124/v4/1c/b2/a8/1cb2a8b4-8681-4c26-ebf3-25b6ab3bf476/mzaf_5293655452695351065.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview124/v4/42/51/5c/42515cb7-6e87-8b54-d86f-1d9f512f2897/mzaf_6355429144250488194.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 206,
     "checkedAt": "2026-10-12T08:46:17Z",
@@ -2663,15 +2987,24 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-12 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 4,
-    "obscurity": 3,
+    "classic": 3,
+    "obscurity": 2,
     "accessibility": 2,
     "listeners": 38819,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-12T08:46:17Z",
-    "note": "機器基線 4/3/2（廣度線冷門軸照 Last.fm listeners 38819）"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：第二張、葛萊美提名，代表性不及首作；Motéma 國際流通；主流後 bop 三重奏",
+    "previous": {
+     "classic": 4,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-12T08:46:17Z",
+     "note": "機器基線 4/3/2（廣度線冷門軸照 Last.fm listeners 38819）",
+     "rarity": "uncommon"
+    }
    },
-   "rarity": "uncommon",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2735,14 +3068,23 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 3,
+    "obscurity": 2,
     "accessibility": 2,
     "listeners": 48720,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-12T08:46:17Z",
-    "note": "機器基線 3/3/2（廣度線冷門軸照 Last.fm listeners 48720）"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：第四張、Redman 客席，中期作；國際流通；抒情主流鋼琴三重奏",
+    "previous": {
+     "classic": 3,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-12T08:46:17Z",
+     "note": "機器基線 3/3/2（廣度線冷門軸照 Last.fm listeners 48720）",
+     "rarity": "rare"
+    }
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2762,7 +3104,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/39/37/ce/3937ce10-81d6-fab3-7479-8830bc1ad4f2/mzaf_17937766633816933456.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/aa/96/da/aa96da97-fbb5-5c36-8236-dd72889867c1/mzaf_1446277866687593791.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 206,
     "checkedAt": "2026-10-12T08:46:17Z",
@@ -2810,14 +3152,23 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 5,
-    "accessibility": 2,
+    "obscurity": 4,
+    "accessibility": 3,
     "listeners": 414,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-12T08:46:17Z",
-    "note": "機器基線 3/5/2（廣度線冷門軸照 Last.fm listeners 414）"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Budjana MoonJune 期佳作；<1000 有串流→4；雙碟前衛融合需投入",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-12T08:46:17Z",
+     "note": "機器基線 3/5/2（廣度線冷門軸照 Last.fm listeners 414）",
+     "rarity": "uncommon"
+    }
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2839,7 +3190,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/d0/47/4b/d0474b89-842b-3c83-6190-e64f922fa743/mzaf_15639358021926787702.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/0c/f3/3a/0cf33a7c-806e-6a25-6201-5208b6a930ae/mzaf_9118431326851078047.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 206,
     "checkedAt": "2026-10-12T08:46:17Z",

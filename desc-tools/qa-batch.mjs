@@ -106,7 +106,7 @@ const warn = (...a) => { flags++; console.log('⚠', ...a); };
 // 人名與曲名，摻進來等於讓這道檢查失效——寫作層只能寫研究層查證過的東西，這條界線不能鬆。
 function factBlob(r, card) {
   let raw = [r.artist, r.album, r.sound || '', card && card.year ? String(card.year) : '',
-    ...(r.facts || []).map(f => (typeof f === 'object' ? f.f : f)),
+    ...(r.facts || []).map(f => (typeof f === 'object' ? (f.f ?? f.text) : f)),
     ...(r.keyTracks || []), ...(r.hookCandidates || []), r.notes || ''].join(' ');
   // 研究稿常混用中文數字年份（一九八六年），轉成阿拉伯數字再比對，避免誤報
   const CN = { 〇: '0', 零: '0', 一: '1', 二: '2', 三: '3', 四: '4', 五: '5', 六: '6', 七: '7', 八: '8', 九: '9' };

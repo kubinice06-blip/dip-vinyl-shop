@@ -1,0 +1,9 @@
+{
+ "batch": "add-20261030-sf09",
+ "cards": 39,
+ "written": { "cardCatalog": 39, "kvKeys": 42, "seedRows": 39, "previewReady": 35, "previewUnavailable": 4 },
+ "review": { "by": "cloud-main", "cards": 39, "changed": ["desc2:Bill Bruford's Earthworks|Earthworks", "desc2:Bobo Stenson Trio|Serenity"] },
+ "qa": { "research": "pass", "hooks": "pass", "out": "pass", "prepareGate": "0 error", "publishedGate": "0 error" },
+ "pendingLocal": { "kv": "無", "listeners": [], "apexEvidence": [], "genreTree": "已重建", "albumOverrides": "無" },
+ "artistIntro": { "roster": "batch-progress/artist-intro/roster-sf09.json", "batch": "ar-d-209", "artists": 32, "state": "cut" }
+}

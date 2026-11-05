@@ -21,15 +21,24 @@
         "visuallyVerified": true
       },
       "ratings": {
-        "classic": 5,
+        "classic": 4,
         "obscurity": 1,
         "accessibility": 1,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-21T20:28:21Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；史上最暢銷的精選輯、2016 年入選美國國會圖書館國家錄音登錄,曲目全是排行熱門,店頭與耳朵都毫無門檻。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：史上最暢銷之一，但精選輯無樂評正典共識",
+        "previous": {
+          "classic": 5,
+          "obscurity": 1,
+          "accessibility": 1,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-21T20:28:21Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；史上最暢銷的精選輯、2016 年入選美國國會圖書館國家錄音登錄,曲目全是排行熱門,店頭與耳朵都毫無門檻。",
+          "rarity": "rare"
+        }
       },
-      "rarity": "uncommon",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -45,7 +54,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/9d/59/76/9d59760b-8a26-8135-aab0-acfc5e562299/mzaf_7801428242367310016.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/a0/eb/c9/a0ebc9d8-9a89-a2b4-8ccf-2898034a48d5/mzaf_17622395446791058842.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -96,7 +105,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；老鷹合唱團第一張美國冠軍專輯並拿下首座葛萊美,是大牌的大眾曲目,編曲主流不刺耳。"
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -161,15 +170,24 @@
         "visuallyVerified": true
       },
       "ratings": {
-        "classic": 5,
+        "classic": 4,
         "obscurity": 1,
         "accessibility": 1,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-21T20:28:21Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；英國史上最暢銷專輯、全球銷量逾 2500 萬張,是最典型的入門常客。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：英國史上最暢銷專輯，但銷量不等於樂評正典；精選輯",
+        "previous": {
+          "classic": 5,
+          "obscurity": 1,
+          "accessibility": 1,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-21T20:28:21Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；英國史上最暢銷專輯、全球銷量逾 2500 萬張,是最典型的入門常客。",
+          "rarity": "rare"
+        }
       },
-      "rarity": "uncommon",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -185,7 +203,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c3/29/40/c3294027-644c-ca9d-ea2a-68a498431c8f/mzaf_1930657702308615235.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/22/62/99/22629918-bc73-ac75-4751-7bc3bb2bf322/mzaf_3646528785331925443.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 206,
         "checkedAt": "2026-10-04T00:00:00.000Z",
@@ -236,7 +254,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；英國、日本、荷蘭三地冠軍且為樂團首張自製作品,屬大牌主要作品,聲響華麗但仍是流行搖滾寫法。"
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -303,7 +321,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；全球銷量逾六百萬張、留下兩首標誌性單曲,但在樂團作品序列中屬中段位置。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -370,7 +388,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；轉向舞曲的爭議之作,在樂團討論中位置明確但非代表作;節奏取向平順,不難入耳。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -437,7 +455,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；英國空降冠軍、四首熱門單曲,曲風直白好入耳,但作為半原聲帶性質的作品地位次於樂團前期正典。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -509,7 +527,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；1976 年英國年度銷售冠軍、七〇年代英國第二暢銷專輯,是二手箱最常見的 ABBA 盤,曲目全為旋律直白的流行單曲。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -573,7 +591,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；含兩首英國冠軍單曲,是 ABBA 錄音室正典的主要作品之一,編曲是最直白的流行寫法。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -637,7 +655,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；歐洲歌唱大賽奪冠的成名作,是 ABBA 國際生涯的起點,曲風輕快直白。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -709,7 +727,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；1974 年美國冠軍、RIAA 三白金,帶動樂團商業復興,曲目全為旋律直白的早期熱門。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -725,7 +743,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f9/8a/d3/f98ad325-8ee4-2e14-f529-72465d715e52/mzaf_11818768292914172020.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/01/b0/35/01b0356c-8797-df25-d672-54205ccfdf3d/mzaf_8539719488448847579.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -781,7 +799,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；滾石生涯銷量最高的一張,是六〇年代錄音最通行的入口,曲目粗礪但旋律好抓。"
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -797,7 +815,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/15/87/93/158793d0-7392-14a4-8102-3c964fa93e3c/mzaf_11978390303502339413.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/53/52/e3/5352e3cd-94a1-c8e2-fdce-2f5bfbfe2d91/mzaf_8460046236450026438.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -848,7 +866,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Billboard 200 冠軍且收錄樂團最知名的〈Start Me Up〉,是八〇年代滾石最常見的店頭盤。"
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -864,7 +882,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f0/08/e1/f008e1c9-913e-64f7-7005-43fc3bdf3bb9/mzaf_36228879574654947.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/fe/5f/97/fe5f9751-21e6-662e-601c-cbdcb9733d52/mzaf_14530716341270119799.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -920,7 +938,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；2003 年滾石五百大專輯第 293 名,是 folk-rock 箱最常見的精選,聲響柔和好入耳。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -936,7 +954,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/62/ec/e6/62ece675-7ec8-3d90-19be-1861190c2d8c/mzaf_2997008405962777856.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/30/08/86/30088636-0d12-d928-6276-5a20a9e2b3c9/mzaf_5450064663782108438.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -987,7 +1005,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Wings 美英雙冠的主要商業作，但公認代表作仍是前作《Band on the Run》，旋律直白且日本店頭與再版量極大。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -1003,7 +1021,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/90/94/fa/9094fab8-040a-2aa0-ef5d-4709f6657a80/mzaf_3212558362896001745.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/bd/d8/70/bdd870dd-5a44-0ef9-f4c2-9c53335fea64/mzaf_17069948735995722126.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -1054,7 +1072,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；美國榜冠軍且含年終總冠軍單曲〈Silly Love Songs〉，地位明確但評價低於同期名作；曲風為直白流行搖滾，二手店常備。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -1071,7 +1089,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/73/e2/8d/73e28d17-c281-37a2-1dfc-3f43840b3a70/mzaf_1413446869744071281.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a3/cb/47/a3cb4730-8920-3415-3f82-f8e153a25972/mzaf_3440749485822900176.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -1122,7 +1140,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；史上首張首週空降 Billboard 200 冠軍的專輯，並列名《滾石》五百大第 158，屬 Elton John 公認主要作品；概念自傳結構稍需耐心。"
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -1138,7 +1156,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/17/32/45/1732453e-d2ba-bffd-e1c9-d006f0ceddfa/mzaf_10750090488477978912.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/87/e3/08/87e3085e-9a30-b3ba-4642-40fbbae310dd/mzaf_10502974282187569324.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -1189,7 +1207,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；美國連兩張、英國首張冠軍作，含〈Crocodile Rock〉與〈Daniel〉兩支大單曲，地位明確但非其代表作；旋律極為直白。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -1205,7 +1223,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/90/9f/ff/909fff95-affa-dd67-9d1c-49ece448cc81/mzaf_2100567448208248595.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/a9/80/15/a98015e5-06c2-101f-5c8d-7c5c627a1d9c/mzaf_6788803206095592994.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -1256,7 +1274,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；美國第四張冠軍作、雙白金並入圍葛萊美年度專輯，但評論長期認為不屬其七〇年代高峰，故給 3。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -1323,7 +1341,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；早期公認的重要作品，列《滾石》五百大第 458、英國榜第二，屬 Elton John 主要作品但非入門首選。"
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -1339,7 +1357,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/a8/c8/ca/a8c8ca2a-3961-d7f1-9895-096b18963d28/mzaf_10133046585011812511.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/fd/d0/f9/fdd0f982-8042-6159-4001-97e156db0826/mzaf_1511268852901446653.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -1390,7 +1408,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；連發七支單曲、三首打進美國前十的代表性大熱作，doo-wop 與靈魂樂致敬手法明確，入耳門檻極低。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -1406,7 +1424,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/0e/c3/f0/0ec3f0cf-9ac2-bab4-99f3-b44fd99b753d/mzaf_15426746701558633317.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/47/ed/6a/47ed6a89-63aa-12c0-7b13-8c2c086f3f47/mzaf_13314293207054965636.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -1457,7 +1475,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Joel 自認最滿意、評論界公認他野心最大的一張，題材與製作都遠離單曲導向，屬其代表作之一但非入門。"
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -1521,7 +1539,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；收錄〈New York State of Mind〉等長銷曲、是他首度用自家巡演樂團錄音的轉折點，地位明確但銷量與知名度不及後續大碟。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -1537,7 +1555,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/38/16/a6/3816a611-6510-0646-1473-67df5b902e17/mzaf_4905503365436487506.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/26/77/22/2677221c-2be4-2d89-c7ef-41478a122233/mzaf_5211588923829341321.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -1588,7 +1606,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；《滾石》五百大第 379 並入選百大出道專輯，是 Springsteen 公認的起點之作；歌詞密度高使入耳略需適應。"
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -1604,7 +1622,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/42/b0/53/42b0539a-490f-aea3-f1f4-4f23b604eec6/mzaf_1072977213077342185.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/70/93/3a/70933a8e-a810-95b7-0757-107d768f2d8b/mzaf_1218177036341227706.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -1655,7 +1673,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；《滾石》八〇年代百大第 25、五百大第 467 並獲葛萊美，是 Springsteen 公認的主要作品，編制內斂但仍好入耳。"
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -1671,7 +1689,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/46/6a/ad/466aad56-4d1e-d1f6-9094-c9143a2be118/mzaf_2261716655182847472.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/07/47/43/0747430c-1e0c-4db0-dec3-078ecd9cc228/mzaf_9214774436958876593.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -1722,7 +1740,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Carpenters 單曲密度最高、被視為其代表性的一張，〈Goodbye to Love〉的破音獨奏另有樂史意義；旋律極為直白。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -1739,7 +1757,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/45/6f/8e/456f8eec-80df-ef25-780d-f982a70a02ba/mzaf_1301079995963653147.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/6c/b0/30/6cb0304f-9fde-376c-446e-1fae9d05efd6/mzaf_9790072974421313943.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -1790,7 +1808,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；含該團全球最大單曲〈Yesterday Once More〉、B 面懷舊串燒是特色鮮明的做法，但整體地位次於《A Song for You》。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -1806,7 +1824,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/c1/aa/61/c1aa6111-829e-87ac-667c-9173aa8e64ef/mzaf_12416231459329671899.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/35/33/aa/3533aa35-a193-f697-e52d-bd3f239e7ffb/mzaf_17963539070037874197.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -1857,7 +1875,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；英國與日本雙料冠軍、美國白金，錄音工藝講究且單曲強，但美國榜第 13 中斷連勝，地位略遜前作。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -1873,7 +1891,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/dd/d9/43/ddd943e2-4536-3efc-4d50-a25f18c1a001/mzaf_13328757911905932903.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/43/48/a4/4348a40b-e2eb-b8db-152d-ee0744f3b899/mzaf_1472188968168070654.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -1929,7 +1947,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；美國唯一冠軍專輯、七白金、英國榜 17 週冠軍，是 Carpenters 最主要的正典入口；軟式流行旋律直白，二手箱極常見。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -1945,7 +1963,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/dd/94/ba/dd94baab-7245-1182-0655-4af0576e5fc3/mzaf_8589283214459671910.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9c/24/0c/9c240c40-dd7b-3337-954c-2b1ad0b25928/mzaf_6151623675140937084.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -1996,7 +2014,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Bee Gees 巔峰期代表作，前三首單曲全數奪冠並締造一年六連冠紀錄，唯一的英國冠軍專輯；disco-pop 寫法入耳無門檻。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -2063,15 +2081,23 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；《Thriller》之前史上最暢銷專輯，四首美國冠軍單曲，2012 年入選美國國家錄音登記處，是 disco 定形之作；歌曲全部走大眾路線。"
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "跨來源長期共識：美國國會圖書館 2012 年以「文化、歷史或美學上具重要性」列入國家錄音登記處，全球銷量逾四千萬張、美國 16 白金、告示牌 200 榜連續 24 週冠軍，公認為 disco 一線的史上核心文獻。",
-        "evidenceUrls": [
-          "https://en.wikipedia.org/wiki/Saturday_Night_Fever_(soundtrack)",
-          "https://musicbrainz.org/release-group/6e9a06a8-c8bb-3ea9-877a-417e74bb1c2e"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。RS500、1001 有收，迪斯可時代文化現象，但屬類型／時代代表，不到 Kind of Blue 級",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "跨來源長期共識：美國國會圖書館 2012 年以「文化、歷史或美學上具重要性」列入國家錄音登記處，全球銷量逾四千萬張、美國 16 白金、告示牌 200 榜連續 24 週冠軍，公認為 disco 一線的史上核心文獻。",
+          "evidenceUrls": [
+            "https://en.wikipedia.org/wiki/Saturday_Night_Fever_(soundtrack)",
+            "https://musicbrainz.org/release-group/6e9a06a8-c8bb-3ea9-877a-417e74bb1c2e"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "1977 年 11 月由 RSO 發行的雙黑膠原聲帶，在《Thriller》問世前是史上最暢銷專輯，全球銷量逾四千萬張，美國認證 16 白金，告示牌 200 榜從 1978 年 1 月起連續 24 週登頂、在榜 120 週。Bee Gees 供稿的〈Stayin' Alive〉、〈Night Fever〉、〈How Deep Is Your Love〉與 Yvonne Elliman 的〈If I Can't Have You〉四首都拿下美國冠軍單曲，英國榜則連續 18 週冠軍。2012 年獲美國國會圖書館列入國家錄音登記處。",
@@ -2082,7 +2108,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/72/f8/ca/72f8ca41-e760-6fb4-009d-a8b2b6b287bb/mzaf_18123089491337557034.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/fe/f5/a5/fef5a528-c484-779b-9910-eba7037b1d9a/mzaf_3223856399910536844.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -2103,8 +2129,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": false,
-        "apexPool": true
+        "seedCards": true,
+        "apexPool": false
       }
     },
     {
@@ -2133,7 +2159,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；全球逾三千萬張、史上最暢銷原聲帶之一，兩首美國冠軍單曲；曲目全是 50 年代復古流行寫法，入耳零門檻。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -2197,7 +2223,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；1986 年最暢銷原聲帶、美國榜五週冠軍、主題曲拿下奧斯卡，地位明確但屬商業指標而非樂評正典；曲目均為八〇年代主流搖滾流行。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -2213,7 +2239,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/84/ce/ad/84ceadc1-f8e6-b0fc-2850-8d8254340650/mzaf_2204285353260886850.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/8d/c8/19/8dc81935-5620-0b29-3f4c-acc3f6479796/mzaf_14998514993249023640.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -2264,7 +2290,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；18 週美國榜冠軍、14 白金、德國史上最暢銷專輯，銷量地位明確但音樂內容以舊曲與八〇年代新歌拼接；旋律直白。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -2328,7 +2354,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；美國榜九週冠軍、六首熱門百大前四十單曲含兩首冠軍，八〇年代歌曲主導型原聲帶的標準樣本；曲風直白。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -2344,7 +2370,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/33/cf/41/33cf4187-ae6b-3148-7c2c-d446379bd964/mzaf_15613682742595734674.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/22/18/68/2218688a-ff36-7277-56de-c6b221d691c8/mzaf_12250270063124855744.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -2395,7 +2421,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Giorgio Moroder 主導、主題曲六週美國冠軍並奪奧斯卡，八〇年代合成器舞曲流行化的重要樣本；入耳無門檻。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -2411,7 +2437,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/d0/d5/ad/d0d5ade7-f12f-78f7-8bb2-d95590209290/mzaf_13779639647096266319.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/af/54/a2/af54a2e6-07d7-f8c7-110a-f737d9190bbf/mzaf_8393871627689742237.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -2463,7 +2489,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；史上最暢銷原聲帶、21 國專輯榜冠軍並奪葛萊美年度專輯，Houston 生涯定錨之作；主流流行靈魂樂唱法直白。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -2530,7 +2556,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；主題曲拿下奧斯卡與金球獎最佳原創歌曲、美國熱門百大第四，八〇年代校園歌舞片配樂的明確代表；比同批其他原聲帶稍少見。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -2595,7 +2621,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；電影失利但唱片美加雙白金，〈Magic〉美國冠軍、〈Xanadu〉英國冠軍，ELO 與 Newton-John 各佔一面的特殊企劃；曲風直白。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -2659,7 +2685,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；奧斯卡最佳原創配樂、主題曲美國熱門百大冠軍，是合成器配樂進入主流的關鍵作；純器樂需要一點適應但旋律清晰。"
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -2676,7 +2702,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d5/a2/26/d5a2269b-9c72-31c4-73d6-4832ea5e32f6/mzaf_6171134686307270547.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/81/77/85/8177852e-8340-6209-c57a-44403a06f7ab/mzaf_5748426747777002320.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -2738,7 +2764,7 @@
         ]
       },
       "description": {
-        "text": "John Williams 作曲指揮、倫敦交響樂團演奏，1977 年三月在 Denham 的 Anvil Studios 分八次錄完，同年六月由 20th Century Records 以雙黑膠推出。Williams 從 88 分鐘總譜裡挑出 75 分鐘，並刻意不照片中順序編排。專輯在美國告示牌 200 榜最高第二，主題曲單曲進熱門百大第十，另拿下 1977 年奧斯卡最佳原創配樂與 1978 年三座葛萊美。編曲由 Williams 與 Herbert W. Spencer、Alexander Courage、Angela Morley 等人分工完成。",
+        "text": "這是 1977 年電影《星際大戰》（Star Wars）的原聲帶，John Williams 的配樂拿下奧斯卡最佳原創配樂，2004 年入選國家錄音登記表，2005 年被美國電影學會選為美國影史最偉大的電影配樂。George Lucas 原本想拼貼既有的古典音樂，最後改由 Williams 寫原創配樂，在英國由倫敦交響樂團錄成。編制是完整的交響樂團，用到九支法國號，寫法承襲 Richard Strauss 與 Korngold，並用主導動機替路克、原力、莉亞公主與帝國各寫一段主題。它被視為史上最暢銷的交響樂專輯。",
         "sourceUrls": [
           "https://en.wikipedia.org/wiki/Star_Wars_(soundtrack)",
           "https://musicbrainz.org/release-group/80fe84a4-b606-3491-a170-f2ca17501493"
@@ -2794,7 +2820,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；帶動六〇年代靈魂樂舊曲在八〇年代重新流通、電影懷舊選輯風潮的樣板，地位明確但音樂本身全是既有錄音；旋律直白。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -2810,7 +2836,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/8e/fc/fc/8efcfc43-30e6-5c10-4c61-3c63463e2e73/mzaf_16460962643306020562.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/58/e6/52/58e6528c-cc5a-3b34-6269-8d2ae9301326/mzaf_12152521112954905853.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -2854,14 +2880,23 @@
       },
       "ratings": {
         "classic": 3,
-        "obscurity": 1,
+        "obscurity": 2,
         "accessibility": 1,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-21T20:28:21Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；1985 年 Billboard 200 冠軍、1986 年葛萊美最佳影視配樂，〈Axel F〉全球熱門，唱片行 80 年代原聲帶箱最常見的一張，入耳門檻極低。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：Axel F 與 Grammy 原聲獎，八〇年代主流原聲；常見通路｜L=22709",
+        "previous": {
+          "classic": 3,
+          "obscurity": 1,
+          "accessibility": 1,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-21T20:28:21Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；1985 年 Billboard 200 冠軍、1986 年葛萊美最佳影視配樂，〈Axel F〉全球熱門，唱片行 80 年代原聲帶箱最常見的一張，入耳門檻極低。",
+          "rarity": "common"
+        }
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -2877,7 +2912,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/9f/72/a3/9f72a320-585e-3390-ca0e-65315d0e40b9/mzaf_4993867470368721490.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/28/5f/75/285f7556-8d6b-c192-d47a-ebc0ee232d0c/mzaf_9736515358810970311.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -2928,15 +2963,23 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；全球銷量逾兩千萬張、英國榜累計 70 週冠軍，2015 年 Billboard 列為史上榜單成績第二強專輯，音樂劇原聲帶史上地位可跨來源查證；旋律直白，二手店必見。"
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "音樂劇電影原聲帶史上銷量與榜單成績最頂尖者之一：全球逾兩千萬張、英國榜 70 週冠軍、Billboard 200 蟬聯榜上 238 週並獲評史上榜單成績第二強專輯，電影本身亦獲奧斯卡最佳影片，長期共識足列該領域核心。",
-        "evidenceUrls": [
-          "https://en.wikipedia.org/wiki/The_Sound_of_Music_(soundtrack)",
-          "https://en.wikipedia.org/wiki/The_Sound_of_Music_(film)"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。暢銷原聲帶，但不在綜合歷代專輯榜，非樂評正典",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "音樂劇電影原聲帶史上銷量與榜單成績最頂尖者之一：全球逾兩千萬張、英國榜 70 週冠軍、Billboard 200 蟬聯榜上 238 週並獲評史上榜單成績第二強專輯，電影本身亦獲奧斯卡最佳影片，長期共識足列該領域核心。",
+          "evidenceUrls": [
+            "https://en.wikipedia.org/wiki/The_Sound_of_Music_(soundtrack)",
+            "https://en.wikipedia.org/wiki/The_Sound_of_Music_(film)"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "1965 年由 RCA Victor 發行的《The Sound of Music》電影原聲帶，音樂與歌詞出自 Richard Rodgers 與 Oscar Hammerstein II，Julie Andrews 主唱。電影版把百老匯原版的〈An Ordinary Couple〉等三首換成〈I Have Confidence〉與〈Something Good〉。全球銷量逾兩千萬張，在 Billboard 200 前十名停留 109 週、總計在榜 238 週，英國榜累計 70 週冠軍，2015 年獲 Billboard 列為史上榜單成績第二強的專輯。",
@@ -2966,8 +3009,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": false,
-        "apexPool": true
+        "seedCards": true,
+        "apexPool": false
       }
     },
     {
@@ -2990,24 +3033,42 @@
       "ratings": {
         "classic": 5,
         "obscurity": 1,
-        "accessibility": 2,
+        "accessibility": 1,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-21T20:28:21Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Billboard 立體聲榜蟬聯 54 週冠軍為史上最長紀錄，1962 年獲葛萊美原聲帶獎、美國三白金，電影奪十座奧斯卡；曲目為旋律清楚的音樂劇歌曲但編制與節拍較繁複。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：百老匯／電影原聲正典，Billboard 冠軍 54 週，音樂劇領域人人必提",
+        "previous": {
+          "classic": 5,
+          "obscurity": 1,
+          "accessibility": 2,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-21T20:28:21Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Billboard 立體聲榜蟬聯 54 週冠軍為史上最長紀錄，1962 年獲葛萊美原聲帶獎、美國三白金，電影奪十座奧斯卡；曲目為旋律清楚的音樂劇歌曲但編制與節拍較繁複。",
+          "rarity": "uncommon"
+        }
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": true,
         "tier": "hall",
-        "reason": "Billboard 立體聲榜 54 週冠軍是專輯榜史上最長的榜首紀錄，另獲 1962 年葛萊美最佳原聲帶／原班卡司獎與 RIAA 三白金，電影以十座奧斯卡創音樂片紀錄，跨來源長期共識足列美國音樂劇與原聲帶史核心。",
+        "reason": "店主 2026-11-03 定案殿堂擴充（hall-expansion-20261103）：升為殿堂。",
         "evidenceUrls": [
-          "https://en.wikipedia.org/wiki/West_Side_Story_(1961_soundtrack)",
-          "https://en.wikipedia.org/wiki/West_Side_Story_(1961_film)"
-        ]
+          "https://www.last.fm/music/Leonard%20Bernstein%20%26%20Stephen%20Sondheim/West%20Side%20Story%20(Original%20Sound%20Track%20Recording)",
+          "https://musicbrainz.org/release-group/dd5d8373-4ae3-3908-9235-c871e49ebd76"
+        ],
+        "previous": {
+          "eligible": false,
+          "tier": null,
+          "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。全民熟知但屬音樂劇原聲，綜合樂評歷代榜多不收；類型正典 5 星",
+          "evidenceUrls": [],
+          "source": "manual:audit-20261102"
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:hall-expansion-20261103"
       },
       "description": {
-        "text": "1961 年電影《West Side Story》的原聲帶，Leonard Bernstein 作曲、Stephen Sondheim 作詞。片中歌唱多由幕後歌手代勞，Marni Nixon 頂替 Natalie Wood 演唱 Maria，最終如何取用各人聲軌由製片 Saul Chaplin 拍板。唱片在 Billboard 立體聲專輯榜蟬聯 54 週冠軍，是專輯榜史上最長的榜首紀錄，另在單聲道榜六週奪冠；1962 年獲葛萊美最佳原聲帶／原班卡司獎，1986 年獲 RIAA 三白金認證。",
+        "text": "這是 1961 年電影《西城故事》（West Side Story）的原聲帶，音樂是 Leonard Bernstein 作曲、Stephen Sondheim 作詞的百老匯配樂，在 Billboard 立體聲專輯榜連續 54 週第一，是該榜最長的冠軍紀錄，1962 年拿下葛萊美最佳原聲帶專輯。電影樂團約是百老匯編制的三倍，加了薩克斯風、小號、鋼琴與木琴；Marni Nixon 替 Natalie Wood 唱 Maria。配樂把爵士、拉丁節奏、交響式鋪陳與音樂劇慣例混在一起。",
         "sourceUrls": [
           "https://en.wikipedia.org/wiki/West_Side_Story_(1961_soundtrack)",
           "https://en.wikipedia.org/wiki/West_Side_Story_(1961_film)",
@@ -3064,7 +3125,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；搖滾歌劇形式的開端之作，1971 年兩度登上美國專輯榜冠軍並居年終榜首，至 1983 年全球銷逾七百萬張；雙唱片但歌曲結構清楚、搖滾語彙直接。"
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -3080,7 +3141,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/18/e1/b8/18e1b850-b745-dffb-1a88-5ba325efb306/mzaf_10117178734852893272.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/29/38/d8/2938d8b5-01e9-95f4-3c92-6f106811a774/mzaf_5150890405893608173.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -3131,7 +3192,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Billboard 200 六週冠軍、RIAA 四白金、全球約八百萬張，〈Evergreen〉為 Hot 100 三週冠軍；商業地位明確但屬流行原聲帶而非樂史開創作，旋律極易入耳。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -3147,7 +3208,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/a2/d6/58/a2d658ae-6b11-8046-82d2-af6aa407479e/mzaf_12263704851298553930.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/20/0d/68/200d68bd-c850-7b1e-143f-98e18d014c6e/mzaf_15006987509793379100.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -3198,7 +3259,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；全球銷量逾一千五百萬張、Barry Gibb 全程操刀的流行對唱名盤，商業地位清楚但非樂史開創作；製作光滑、旋律直白。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -3214,7 +3275,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/48/04/b2/4804b20a-2d48-f186-d915-7ddcfd5d2577/mzaf_9502749967816339035.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/21/5b/25/215b259c-2e34-01d2-28b9-f03dad9eabeb/mzaf_3598933764377241711.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -3266,7 +3327,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；公認的樂團突破作，三首 Hot 100 前十單曲、美榜第 4、三項葛萊美提名，銅管搖滾陣營的主要作品；雙唱片含長篇組曲但旋律線清楚。"
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -3282,7 +3343,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/54/71/bf/5471bf66-a65b-a200-614a-05f3c441d8e6/mzaf_3037629320810833341.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/3d/2e/e0/3d2ee0d4-108a-2e27-7407-f59797edac2a/mzaf_6549592048815692333.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -3333,7 +3394,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；樂團第一張美國冠軍專輯、首張單片作，〈Saturday in the Park〉為當時最高名次單曲；地位明確但不及 Chicago II 的評價高度。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -3350,7 +3411,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/59/b9/53/59b95321-f431-8127-2d79-258c091ad923/mzaf_2132472681641243821.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/3d/7f/2f/3d7f2fc6-36dd-b260-2b7a-a7458409f9bd/mzaf_56365983600514338.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -3401,7 +3462,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；產出樂團首支美國冠軍單曲〈If You Leave Me Now〉並奪兩座葛萊美、美榜第 3、多白金；抒情主導、入耳門檻低，日本二手箱極常見。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -3417,7 +3478,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/a2/63/b9/a263b9f8-458a-d74d-696d-0edb84e42523/mzaf_17054432670728091193.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e8/da/26/e8da265a-f07c-cb5c-c316-ba32e6a162a9/mzaf_13985469207289940105.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -3468,7 +3529,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；樂團銷量最高的一張（美英日合計逾 610 萬、RIAA 六白金），四首單曲全進 Hot 100 前 20，1985 年拿下三座葛萊美；製作光滑、入耳門檻極低。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -3484,7 +3545,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/f4/3c/40/f43c40c4-a378-6ea4-bd4f-7f633aedfb52/mzaf_16112160744261358426.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/49/e1/9c/49e19c91-8fab-19cf-7fac-dc3c088db058/mzaf_648953176201301162.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -3540,7 +3601,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；美國冠軍、在榜 72 週、RIAA 五白金的樂團首張精選，是進入其 1969–1974 年單曲目錄的標準入口；全為熱門單曲，入耳極易。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -3556,7 +3617,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/a0/c4/4e/a0c44ec2-853d-7f30-ea60-0e79625b566e/mzaf_3521970720006950573.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/de/59/90/de599009-b153-a7f6-6240-898db970c04a/mzaf_1457608888561046707.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -3609,7 +3670,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；出道作即產出三首美國前 50 單曲、確立樂團招牌聲響，日本 AOR 箱常客；旋律直白但評論界初期評價不高，給 3。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -3625,7 +3686,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/cd/ea/0e/cdea0e99-4f01-a258-c83f-40f2fd6a174b/mzaf_5037122837431264973.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/71/06/ac/7106acdf-fb4c-d5d1-0d14-8f55cc774693/mzaf_10584998606139439194.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -3676,7 +3737,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Billboard 200 累計 10 週冠軍、美國銷破六百萬張，〈Juke Box Hero〉〈Urgent〉〈Waiting for a Girl Like You〉皆為長青曲，是 80 年代主流搖滾的主要作品；製作光滑好入耳。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -3692,7 +3753,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/24/92/3f/24923f20-31de-8a52-1424-13c30e3e2ca3/mzaf_16138197467937664003.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/28/d5/d2/28d5d288-d540-c7d8-00b4-f3f9b6edd4c7/mzaf_16846010654918940996.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -3743,7 +3804,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；美榜第 3、RIAA 七白金、三首單曲全上榜，是樂團銷量最高作之一；當年樂評對其原創性頗有保留，故不給 4。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -3811,7 +3872,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；AOR 出道作的公認主要作品，三首單曲至今是電台常備曲，唱片行箱子裡幾乎必有，入耳門檻極低。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -3878,7 +3939,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；美國榜冠軍與四白金確立地位，但份量不及首張同名作；旋律直白，二手箱極常見。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -3894,7 +3955,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/21/e9/82/21e98237-cda4-7b32-aacb-89ca7e8d11c6/mzaf_13656349798873456970.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/86/c2/ac/86c2ac04-c838-49b8-f7b8-dd88b01cae35/mzaf_5751966688113315861.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -3945,7 +4006,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；樂團在美國第一張金唱片、地位明確，但主要正典仍是前後兩作；十分鐘長曲拉高一點聆聽負擔。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -4012,7 +4073,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；六白金、四首前四十單曲，是 AOR 領域公認主要作品；歌曲結構直白，日本二手店尤其常見。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -4028,7 +4089,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/33/54/2c/33542cb1-446f-4fa6-50ed-1576b8ce2bcc/mzaf_7742227042743035006.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/de/06/e1/de06e1f8-60a5-d40e-14c5-579462e3930e/mzaf_8738366424346893685.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -4079,7 +4140,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Steve Perry 加入的轉向點，是樂團史上關鍵作品；聽感直白，二手箱常見但略遜於《Escape》。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -4095,7 +4156,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/47/74/86/4774868c-12a4-d663-024f-6d82368a9676/mzaf_2386610945990530469.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/61/13/11/611311d5-d6c3-8c16-ecf1-f348d8392884/mzaf_893063007828826609.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -4146,7 +4207,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；樂團商業高峰、冠軍概念專輯，是 arena rock 的主要作品；概念串接稍長但旋律仍直白。"
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -4162,7 +4223,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f0/c4/c8/f0c4c8c7-6ab0-3a82-bdc8-49854c410200/mzaf_9900690216510209306.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/42/47/3a/42473a4f-e2c2-3ec0-6835-51409f6a4aea/mzaf_8109243112161433213.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -4213,7 +4274,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；三白金、美國榜第六，地位明確但非樂團首選；prog 骨架讓入耳難度略高於前後作。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -4229,7 +4290,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/5c/66/84/5c66844c-d4ad-083b-5122-27d8c5b46c10/mzaf_1119553770497311820.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/72/c0/20/72c02020-992f-665e-f962-1025f284d458/mzaf_1234050239247202681.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -4280,7 +4341,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；樂團在美國名次最高的四白金作品，〈Dust in the Wind〉是跨世代標準曲；編曲仍帶 prog 密度。"
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -4296,7 +4357,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/39/0e/05/390e05ed-7a53-4fa3-a29d-e2f7c4631543/mzaf_4431793421302598618.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/27/b8/d4/27b8d4da-5f78-7fd2-78a4-adc3597faaf3/mzaf_13805179560609693792.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -4347,7 +4408,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；雙白金、樂團首度打進前四十，兩首代表曲長紅，但整體地位仍在《Hi Infidelity》之下。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -4363,7 +4424,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/13/91/ce/1391ce46-326d-f2a3-42e5-c508bad34801/mzaf_9291021661085572940.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f3/b3/b7/f3b3b734-f0c5-3e23-40d5-21528e5da062/mzaf_3693764296117118496.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -4415,7 +4476,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；1982 年全美最暢銷專輯、四白金，是 prog 團員轉進電台格式的主要案例；聽感直白好入耳。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -4482,7 +4543,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；同名曲是流行文化定番、專輯美國第二，但除主題曲外評價平平，屬有明確地位的非首選。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -4541,23 +4602,40 @@
         "visuallyVerified": true
       },
       "ratings": {
-        "classic": 5,
+        "classic": 4,
         "obscurity": 1,
         "accessibility": 2,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-21T20:28:21Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；《滾石》五百大與美國國家錄音登記簿雙重背書，跨來源地位可查證；合成器段落略長但整體好入耳。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：暢銷代表作，但無跨來源核心正典共識；殿堂不成立",
+        "previous": {
+          "classic": 5,
+          "obscurity": 1,
+          "accessibility": 2,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-21T20:28:21Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；《滾石》五百大與美國國家錄音登記簿雙重背書，跨來源地位可查證；合成器段落略長但整體好入耳。",
+          "rarity": "uncommon"
+        }
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "2012 年《滾石》五百大專輯第 445 名、2025 年獲美國國會圖書館選入國家錄音登記簿，另有 Colin Larkin 千大專輯第 400 名，屬跨來源長期共識。",
-        "evidenceUrls": [
-          "https://en.wikipedia.org/wiki/Fly_Like_an_Eagle_(album)",
-          "https://en.wikipedia.org/wiki/National_Recording_Registry"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。暢銷代表作，歷代榜收錄不齊；listeners 缺值，殿堂 7 星不成立",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "2012 年《滾石》五百大專輯第 445 名、2025 年獲美國國會圖書館選入國家錄音登記簿，另有 Colin Larkin 千大專輯第 400 名，屬跨來源長期共識。",
+          "evidenceUrls": [
+            "https://en.wikipedia.org/wiki/Fly_Like_an_Eagle_(album)",
+            "https://en.wikipedia.org/wiki/National_Recording_Registry"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "1976 年 5 月 Capitol 發行，Steve Miller 用 ARP Odyssey 把藍調搖滾推向太空感，開場〈Space Intro〉直接接進同名曲。〈Take the Money and Run〉與〈Rock'n Me〉一併成為電台常備曲，美國認證四白金，盤中還收了 Sam Cooke 的〈You Send Me〉。2012 年列入《滾石》五百大專輯第 445 名，2025 年獲美國國會圖書館選入國家錄音登記簿。封面那把黑色 Stratocaster 原是 Hendrix 訂購的左手琴，Miller 買下後改成右手弦序。",
@@ -4569,7 +4647,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/d4/4f/31/d44f312e-2c6b-174c-9384-d0113c9b6f4a/mzaf_5879901459984316763.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/1c/2a/86/1c2a86bb-c0e9-4354-6258-aa9e1e565429/mzaf_9913827085492080955.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -4590,8 +4668,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": false,
-        "apexPool": true
+        "seedCards": true,
+        "apexPool": false
       }
     },
     {
@@ -4620,7 +4698,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；與前作同批錄音、三首單曲走紅且加拿大榜冠軍，地位明確但仍是《Fly Like an Eagle》的姊妹作。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -4636,7 +4714,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/e5/5c/12/e55c12bf-eaaa-05b9-1048-15a593aeaab9/mzaf_5691763360783170207.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/dd/ea/ba/ddeaba5e-5ab3-dc6d-2c17-60610efda974/mzaf_5476723104243641980.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -4687,7 +4765,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；1976 年全美最暢銷專輯、Billboard 200 十週冠軍且入選 Grammy Hall of Fame，地位明確；美國二手箱最常見的盤之一，talk box 主導的旋律搖滾入耳無門檻。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -4703,7 +4781,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d4/cb/0c/d4cb0c0c-e665-b6be-6bcd-6370f83873b5/mzaf_6210237001574701486.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b9/96/8b/b9968bb2-9783-3362-8670-4f2b9af0ff26/mzaf_17609594425942062166.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -4754,7 +4832,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；ELO 首張英國冠軍專輯、同一張 LP 出四首英國前十單曲，地位明確但非樂團最受推崇之作；大牌加大眾曲目，迪斯可化的流行搖滾直白好入口。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -4770,7 +4848,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/9e/c0/a5/9ec0a535-ee76-1154-4be8-890a5c5befb5/mzaf_15636590583074476432.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/af/7d/7e/af7d7edb-4b6d-f660-629e-67767cede396/mzaf_4127899813992073731.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -4821,7 +4899,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；英國冠軍的科幻概念作，發行時評價分歧、近年被重新看待，有明確特色但非公認核心；曲子仍是清楚的流行寫法，只是編制換成合成器。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -4837,7 +4915,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/5a/a7/01/5aa70178-a4ec-8aeb-fce9-b19b70d6f99e/mzaf_8539917744504225519.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e9/60/a5/e960a545-7688-b4d7-2282-bf3f7a687dcd/mzaf_13211045396745948455.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -4888,7 +4966,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；ELO 第一張完整概念專輯、樂團在美國的突破點與首張全美金唱片，屬公認的主要作品；管弦編制加序曲結構，比單曲取向的作品稍難入耳。"
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -4904,7 +4982,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f4/24/bf/f424bfa5-b597-b7fa-519d-d2bb1017e013/mzaf_13286120598684465344.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d5/3d/00/d53d00e2-0579-4cc2-deae-28164b102dae/mzaf_10304607439252753490.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -4955,7 +5033,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；美國榜第九、百萬銷量，是這個錄音室計畫公認的主要作品；概念鋪陳與器樂段落偏長，但旋律仍清楚。"
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -4971,7 +5049,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/1f/c6/3a/1fc63a6a-538a-2202-674d-208f4d211766/mzaf_10461031097748997046.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/be/02/58/be0258cf-5719-b708-64fb-aaf6fe789f32/mzaf_14741902340384607499.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -5022,7 +5100,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；同名曲美國第三、開場曲〈Sirius〉成為北美球場常備樂，是這個計畫流通最廣也最為人熟知的一張；製作光滑、旋律直白。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -5038,7 +5116,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/00/b0/6e/00b06e73-eb20-cf42-9b67-3fc681ef2d6c/mzaf_7342564557588261005.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/67/82/37/67823770-117c-5d4f-1cf3-11d3cc1be1df/mzaf_17918887526532921036.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -5081,13 +5159,22 @@
         "visuallyVerified": true
       },
       "ratings": {
-        "classic": 3,
+        "classic": 4,
         "obscurity": 2,
         "accessibility": 2,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-21T20:28:21Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；兩人編制重整後的英國第三名專輯，靠〈The Things We Do for Love〉留下明確地位，但不及樂團四人時期的評價；編曲精巧仍屬流行寫法。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：藝人中期代表作，含暢銷單曲，主流流通｜L=314409",
+        "previous": {
+          "classic": 3,
+          "obscurity": 2,
+          "accessibility": 2,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-21T20:28:21Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；兩人編制重整後的英國第三名專輯，靠〈The Things We Do for Love〉留下明確地位，但不及樂團四人時期的評價；編曲精巧仍屬流行寫法。",
+          "rarity": "common"
+        }
       },
       "rarity": "rare",
       "apexAssessment": {
@@ -5105,7 +5192,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/78/9d/5f/789d5ff4-d511-48f4-da0b-b8684839ad6b/mzaf_8069367716980430679.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/dd/7d/e3/dd7de323-5f9a-6bd3-9581-95a8bb8f7835/mzaf_10347861685170235543.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -5156,7 +5243,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；個人首作即英國冠軍、美國五白金，〈In the Air Tonight〉的鼓聲處理影響整個八〇年代錄音室做法，屬公認代表作；歌曲寫法直白。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -5172,7 +5259,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/fc/39/bf/fc39bf9d-7248-ac97-8a77-f20130a28cae/mzaf_3474078554153649098.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/05/3b/80/053b8034-f220-2952-6220-8f4117d6e126/mzaf_9473828645058223239.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -5223,7 +5310,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；葛萊美年度專輯、RIAA 鑽石認證、全球逾兩千五百萬張，是八〇年代主流流行的公認代表作；製作光亮、入耳零門檻。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -5239,7 +5326,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/57/0f/af/570faf6b-376b-73fd-eb52-e945f1c35581/mzaf_437749081343486667.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/36/87/ae/3687aee3-e979-3f62-4aa4-0cac82980023/mzaf_3675282724607010251.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -5290,7 +5377,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；英美雙冠、1990 年全英最暢銷專輯，並以〈Another Day in Paradise〉拿下葛萊美年度單曲，地位明確但評價不及前作；曲風仍是主流流行。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -5306,7 +5393,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/89/4c/ef/894cef72-c656-4e94-04f4-886c35d7637c/mzaf_10309257042210726018.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/32/44/ba/3244ba46-40b2-f28c-2341-e8d864c849e3/mzaf_10465170178399609940.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -5357,7 +5444,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；樂團最暢銷專輯、單張出五首美國前五單曲的非美國團體首例，流行期公認代表作；歌曲短小直白。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -5373,7 +5460,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/c9/c7/6b/c9c76ba6-ea3f-7bcb-5a25-6ed61997e6d7/mzaf_15343059007044103049.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/2c/5e/98/2c5e9874-a24e-cd35-e89e-6161b1446c83/mzaf_12745063051654670226.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -5424,7 +5511,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；英國冠軍、樂團首張美國前十作，是從 art rock 轉向流行的關鍵一步，有明確地位但非首選代表；仍留有節奏與結構上的稜角。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -5440,7 +5527,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/de/00/29/de002951-a2d2-4691-5467-893f79dc2ed3/mzaf_2192837767528373528.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/df/aa/cf/dfaacfb6-9c1c-881b-24db-6c5e99c6dc04/mzaf_15962423616021407337.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -5491,7 +5578,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；英國兩週冠軍，且以〈Turn It On Again〉留下長銷曲目，是樂團由組曲寫法過渡到單曲導向的公認關鍵作；仍有組曲殘骸與較長段落。"
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -5507,7 +5594,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/26/5b/f3/265bf374-65fd-9957-2b1e-dbb975407d29/mzaf_6207203199791345887.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/0e/a9/08/0ea90898-149e-6123-70ee-0eb7b7e507db/mzaf_5027218807418813260.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -5553,13 +5640,19 @@
       "ratings": {
         "classic": 4,
         "obscurity": 1,
-        "accessibility": 1,
+        "accessibility": 3,
         "listeners": null,
         "source": "manual:genre-anchors",
         "checkedAt": "2026-08-21T20:28:21Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；美國榜亞軍、八白金、全球約兩千五百萬張，且出過 Billboard Hot 100 冠軍單曲，是八〇年代硬式搖滾的公認主要作品；旋律與副歌都直白。"
+        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；美國榜亞軍、八白金、全球約兩千五百萬張，且出過 Billboard Hot 100 冠軍單曲，是八〇年代硬式搖滾的公認主要作品；旋律與副歌都直白。",
+        "previousAccessibility": {
+          "accessibility": 1,
+          "rarity": "common",
+          "at": "2026-11-04"
+        },
+        "loudFloorNote": "硬蕊度音量下限（2026-11-04 店主定案）：華麗硬式金屬，失真吉他為主"
       },
-      "rarity": "rare",
+      "rarity": "uncommon",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -5575,7 +5668,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/a0/bb/3d/a0bb3dcd-4d6a-377c-4090-ea6a7be9319d/mzaf_17862245633851141093.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d3/f7/d0/d3f7d036-6f8e-7f78-6354-572d3d0c23b6/mzaf_7573213827959394846.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -5626,7 +5719,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Mutt Lange 打磨出的 pop-metal 電台範式、RIAA 鑽石認證,唱片行搖滾箱幾乎必有,入耳門檻極低。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -5642,7 +5735,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d2/61/00/d26100ae-e436-c48a-aede-8ae38395fbc4/mzaf_17164832984323031254.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/51/99/c5/5199c526-589a-6ab4-4dae-c392d447a1cb/mzaf_2360784526910334177.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -5693,7 +5786,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；1980 年代銷量最高的搖滾專輯之一、arena rock 商業範式,二手箱入門常客,旋律直白。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -5709,7 +5802,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/08/3b/53/083b535c-8a4a-735a-97df-ae8556b30b5c/mzaf_4264587334917419216.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/75/15/30/75153020-b7c4-7958-8907-4aa1b965dc24/mzaf_2377504467597068152.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -5760,7 +5853,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；冠軍續作、五首 Hot 100 前十為當時 hard rock 之最,地位明確但仍在前作陰影下;店頭極常見。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -5776,7 +5869,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/bf/34/13/bf34131d-bb8c-cfaa-0794-35c63bf31b31/mzaf_18395040904601897529.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/fc/7f/f7/fc7ff7b1-130c-1d9d-395f-286f5aa89274/mzaf_9451530336905487661.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -5827,7 +5920,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Adams 生涯代表作、四首美國前十五單曲、加拿大首張本土百萬盤,曲式直白,二手箱常備。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -5843,7 +5936,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/0b/2e/2e/0b2e2eee-c0d3-c47c-4199-974e436fd398/mzaf_16238726224863289390.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f8/c5/6b/f8c56ba6-b52a-4cce-3234-f225da838e7d/mzaf_3847569261753735800.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -5894,7 +5987,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；MTV 時代的美國主流標配、四首 Hot 100 前十與 7 白金,地位明確但非樂評正典;店頭極常見。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -5958,7 +6051,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；冠軍續作、兩首 Hot 100 冠軍單曲,地位次於《Sports》;大眾曲目配大牌,故 obscurity 2。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -6022,7 +6115,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；連九週美國冠軍、heartland rock 的成名點,曲風直白;非首選經典故 classic 3。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -6089,7 +6182,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Seger 公認代表作之一、6 白金與四首進榜單曲,粗獷但不難入耳;美國箱常客、日本箱稍少故 obscurity 2。"
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -6105,7 +6198,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/2f/5d/13/2f5d1344-0e03-4179-abf7-063c21e00641/mzaf_2765557241299547292.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/a3/86/e5/a386e5c0-525f-b689-9934-2313b0eb3047/mzaf_11310257539228893459.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -6156,7 +6249,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Seger 唯一冠軍專輯並拿下葛萊美,但當年樂評分歧、史論份量低於前作,故 classic 3。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -6172,7 +6265,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/ce/de/c8/cedec821-7137-03f0-5f8c-2118620746a9/mzaf_7868850486525866721.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b6/f9/ba/b6f9bae1-bc9d-575c-343a-52c0797e84ab/mzaf_1085410677916272145.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -6223,7 +6316,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；英國榜冠軍且是他轉向美國製作的關鍵轉折點,地位明確但非其最高評價之作。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -6239,7 +6332,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/96/da/6d/96da6d98-3a2e-1a2f-eb94-e49075eb80b6/mzaf_15094126160633776494.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a8/8f/a7/a88fa71e-0402-00b1-121b-23948625b030/mzaf_16963232274954989968.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -6290,7 +6383,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；美國冠軍與世界級單曲、disco 期招牌,樂評分歧故 classic 3;二手箱幾乎必見,節奏直白。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -6357,7 +6450,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；擠下《Rumours》的五週冠軍、雙前五單曲創紀錄,Ronstadt 公認代表作,曲式易入耳。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -6373,7 +6466,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/6f/e1/21/6fe121fb-5b60-9563-0201-e882043b41b7/mzaf_3854937860109491496.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/7f/8f/6a/7f8f6a7e-d367-42d3-56b4-2707889504d9/mzaf_16098322253411170089.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -6430,7 +6523,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；4 白金的正典精選、America 單曲最通行入口,地位明確但屬結集性質;店頭極常見,旋律直白。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -6500,7 +6593,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；5 白金、Billboard 200 亞軍的 soft rock 正典精選,地位明確但屬結集;店頭常備,入耳門檻極低。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -6516,7 +6609,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview112/v4/3c/8e/6b/3c8e6b63-5062-178d-a45c-17e097a50b71/mzaf_17340992481429948588.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/45/ed/44/45ed447f-78a5-58a3-4463-d46a363db4c4/mzaf_16648747542293297693.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -6567,7 +6660,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；同名曲為 soft rock 常青曲、專輯登 Billboard 第 7 名且為 1973 年年終亞軍,地位明確但非樂史核心;二手箱常客故 obscurity 低,folk-rock 編制入耳無門檻。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -6583,7 +6676,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview112/v4/5a/98/23/5a98234e-22ff-fb71-bfc3-27d1087d3f49/mzaf_14874894008536419290.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/7e/cc/64/7ecc6485-d01b-32b5-cdfe-92ea7bcfcc93/mzaf_484416485332291447.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -6640,7 +6733,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；RIAA 十白金的首張精選,曲目為樂團前期正典結集,地位明確但屬精選而非開創之作;美國二手箱幾乎必有故 obscurity 給 1,搖滾律動直白。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -6656,7 +6749,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ab/30/fb/ab30fbaa-4d00-360a-fd9e-9cbcdcad0ee6/mzaf_15407463893972772238.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/6f/b5/8c/6fb58cd0-7fd7-37be-bcea-bffd965a1e57/mzaf_3352295927129510548.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -6707,7 +6800,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；兩支 Billboard Hot 100 冠軍單曲、〈I Can't Go for That〉並攻頂 R&B 榜,是二人黃金期公認代表作;店頭與二手箱極常見,編曲精簡好入耳。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -6723,7 +6816,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/01/f1/3b/01f13bfa-de54-f2a3-5c50-ad04ffa5a45d/mzaf_12206523989913769438.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/1b/0d/0a/1b0d0ab3-2d2e-3d3b-3429-f6e4c2986b79/mzaf_4377936110611495094.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -6774,7 +6867,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；〈Maneater〉四週冠軍、專輯 Billboard 200 第 3 名為二人最高名次,雙白金,黃金期代表作;流通量極大,pop-soul 編制直白。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -6790,7 +6883,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/b8/28/87/b82887cd-9a46-9f22-1d63-847afe165b40/mzaf_15511323866728650820.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/8e/dd/26/8edd265d-15ca-2bfb-1506-41fce4a94639/mzaf_18153453911737166607.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -6841,7 +6934,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；〈Out of Touch〉冠軍、專輯第 5 名與雙白金,是二人 80 年代熱賣期收尾之作,地位明確但不及前兩張;電子化編曲較密,入耳仍算正常。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -6857,7 +6950,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/1b/7e/ac/1b7eac83-9040-933a-6aa1-fa7a578b45c0/mzaf_13196791097230818113.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b2/4d/86/b24d86ec-41c8-ca81-d6bc-b13748d6178c/mzaf_12183053055194649493.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -6908,7 +7001,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；美國榜三週冠軍、白金認證,是 Cat Stevens 商業高峰之一,但公認代表作仍屬前兩張;二手箱常見,管弦編制略厚仍屬正常入耳。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -6924,7 +7017,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/22/64/c7/2264c7a3-74fe-ecb9-3015-0d71cefa32bc/mzaf_11730611773770110157.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f4/90/a7/f490a7f8-5b57-c8a3-387f-0fb19d1bed2c/mzaf_15521860920842247536.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -6975,7 +7068,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；三白金、Billboard 200 第 4 名,〈Handy Man〉獲葛萊美最佳男性流行演唱、專輯入圍年度專輯,是他中期公認代表作;二手箱常見,唱法與編曲平易。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -6991,7 +7084,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/2c/61/06/2c61066f-b6ee-73ae-c655-6aed46004035/mzaf_12285540851550008178.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/55/9b/a5/559ba5cf-1f08-12e5-07cf-3c158b14126a/mzaf_11079189548383713460.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -7042,7 +7135,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；五白金、Billboard 200 第 3 名與三支 Hot 100 前十單曲,是 Neil Diamond 在美國最暢銷的一張,但電影本身評價不佳、樂史討論有限;二手箱極常見,流行搖滾入耳無門檻。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -7058,7 +7151,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6c/ef/f7/6ceff7a6-1930-1579-8112-3a257beae2f5/mzaf_10564418568210257000.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9c/c0/1d/9cc01d11-a414-4c76-98fc-f026f6503d76/mzaf_8940102041715932062.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -7109,7 +7202,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；同名曲十週冠軍為 80 年代初最大單曲之一,配套錄影帶專輯獲葛萊美年度音樂錄影帶,是她公認代表作;雙白金且極常見,dance-pop 編曲直白。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -7125,7 +7218,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/fc/dc/c6/fcdcc6cb-0d7a-7bb5-49da-97cc5e0cdcee/mzaf_15839189999326981891.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c4/6c/ba/c46cba4a-7b51-68e9-3f51-7a0d989376df/mzaf_10922524826765059840.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -7182,7 +7275,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；九白金、Billboard 200 冠軍且在榜 176 週,收錄的重錄版本此後成為大眾認知的標準版本,是他公認的正典入口;美日二手箱常備,民謠流行編曲平易。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -7198,7 +7291,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/ed/e9/47/ede9473f-3334-29c4-21f5-dcd3aa3c029e/mzaf_8295710681386150675.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/18/89/f4/1889f4fb-d189-da8f-aed7-94d4a1b871ff/mzaf_10641524345630639518.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -7255,7 +7348,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；12 白金、流行榜與鄉村榜雙冠,至今仍是鄉村樂史上最暢銷的精選輯,並首度發表〈Lady〉;美國二手箱常客,跨界鄉村流行入耳無門檻。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -7319,7 +7412,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；同名曲四週冠軍、年度單曲第一並獲葛萊美年度製作,專輯 Billboard 200 第 2 名,地位明確但屬 70 年代流行主流;二手箱常客,編曲甜而直白。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -7335,7 +7428,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/66/4a/21/664a21e4-9711-236b-acbb-0a12a0079162/mzaf_4150380495035423682.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d0/55/da/d055da8d-0cb5-a57b-0467-ceeefc42f603/mzaf_13277792148035335251.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -7386,7 +7479,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；同名曲拿下 Hot 100 冠軍、另有兩支前十單曲,是他生涯最高名次的作品,但整體地位仍在 Bee Gees 陰影下;店頭常見,disco 流行編曲好入耳。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -7402,7 +7495,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/32/6a/03/326a0381-f117-e0e0-89b5-f547629e38ff/mzaf_8518835310840934857.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f5/68/7e/f5687e90-15f2-5998-ab57-8f05ee38e057/mzaf_13425259342939072842.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -7453,7 +7546,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；英美雙白金、英國第 4 名美國第 10 名,〈You Make Me Feel Like Dancing〉獲葛萊美最佳節奏藍調歌曲,是他商業高峰之作;店頭常見,soft rock 編曲直白。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -7469,7 +7562,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e1/b3/e0/e1b3e084-fe6f-2a8b-167c-591a69d3cc04/mzaf_10759853824743502802.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/07/1e/10/071e10e5-4d62-3291-b5ea-f01ab069aba4/mzaf_7929505164143116374.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -7520,7 +7613,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；英國專輯榜冠軍、〈Clair〉英國單曲榜冠軍，是 O'Sullivan 與《Himself》並列的主要作品；鋼琴流行歌旋律直白，二手店常見度高。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -7536,7 +7629,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/03/07/a9/0307a907-5beb-6a53-ca0a-96c5428f8d7b/mzaf_18415648637240440340.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/ab/c0/a2/abc0a274-8f82-2c79-89bd-c0af055b47c5/mzaf_1167621171133739341.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -7587,7 +7680,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；樂團商業成績最好的一張，美國專輯榜第 6、〈Love Will Find a Way〉單曲第 6，是西岸 AOR 的固定盤面但非該類型定調之作；聲響明亮好入耳。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -7603,7 +7696,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/6f/eb/0b/6feb0b82-db45-587f-4170-c98480e2b37d/mzaf_9424018408060553606.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/33/87/a5/3387a5fd-a180-bd0b-8b43-a74a4cabf0ae/mzaf_16903282861912437150.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -7654,15 +7747,23 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；全球逾兩千一百萬張、RIAA 鑽石認證，2023 年入選美國國家錄音登記簿，是 80 年代流行樂的核心文本；旋律與節奏皆直白，二手店入門常客。"
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "跨來源長期共識：美國國會圖書館 2023 年選入國家錄音登記簿（文化／歷史／美學重要性），並長年名列 Rolling Stone 五百大專輯，公認確立 Madonna 超級巨星地位與 80 年代 dance-pop 樣板。",
-        "evidenceUrls": [
-          "https://en.wikipedia.org/wiki/Like_a_Virgin_(album)",
-          "https://en.wikipedia.org/wiki/National_Recording_Registry"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。80 年代流行強作，Madonna 正典歸 Like a Prayer，非跨類型正典",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "跨來源長期共識：美國國會圖書館 2023 年選入國家錄音登記簿（文化／歷史／美學重要性），並長年名列 Rolling Stone 五百大專輯，公認確立 Madonna 超級巨星地位與 80 年代 dance-pop 樣板。",
+          "evidenceUrls": [
+            "https://en.wikipedia.org/wiki/Like_a_Virgin_(album)",
+            "https://en.wikipedia.org/wiki/National_Recording_Registry"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "Madonna 的第二張錄音室專輯，1984 年 11 月由 Sire 發行。她指名 Nile Rodgers 製作，因為喜歡他替 David Bowie《Let's Dance》做的聲音；錄音在紐約 Power Station，Rodgers 找來 Chic 舊搭檔 Bernard Edwards 與 Tony Thompson 撐起節奏組。全碟曲目由她親自挑定，其中五首出自她手筆。美國四張單曲全進前五，同名曲拿下她生涯首支冠軍。全球銷量逾兩千一百萬張，2023 年獲美國國會圖書館選入國家錄音登記簿。",
@@ -7673,7 +7774,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f9/a3/69/f9a369cc-16a4-3064-2c12-56ecf13f18bc/mzaf_2371968126843790037.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/52/ee/ec/52eeec98-6c48-2279-c2d4-ee30e1cb5773/mzaf_1260343774460561650.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -7694,8 +7795,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": false,
-        "apexPool": true
+        "seedCards": true,
+        "apexPool": false
       }
     },
     {
@@ -7725,7 +7826,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；美國專輯榜第 8、RIAA 五白金、全球約千萬張，被回顧評價視為最佳出道作之一並被認為重新帶動舞曲流行；聲音直白易入耳，店頭極常見。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -7741,7 +7842,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/94/a4/88/94a488bc-46ee-b179-1ad4-9a222871a2be/mzaf_16798711035437670059.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/3c/b4/eb/3cb4ebad-354d-8ee9-b620-1cd00a947857/mzaf_11444694527867274920.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -7797,7 +7898,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；全球逾三千兩百萬張、個人歌手史上最暢銷精選，評論公認是 80 年代流行樂的定調式回顧；曲目全為熱門單曲，入耳門檻最低。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -7813,7 +7914,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/a2/8d/e4/a28de420-49b2-d8fc-70d6-6b7772b9a1c4/mzaf_8078167560663584430.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c4/92/82/c4928251-03f0-a2cd-b212-a12570d72ca6/mzaf_140728255329431414.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -7864,15 +7965,23 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；四支美國前五單曲、葛萊美最佳新人、2019 年入選國家錄音登記簿並名列 Rolling Stone 五百大，是 80 年代流行樂核心文本；旋律直白，店頭極常見。"
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "跨來源長期共識：2019 年入選美國國會圖書館國家錄音登記簿，並在 Rolling Stone 五百大專輯 2020 年版升至第 184 名，加上葛萊美最佳新人與四支美國前五單曲的紀錄，足列 80 年代流行樂史核心。",
-        "evidenceUrls": [
-          "https://en.wikipedia.org/wiki/She%27s_So_Unusual",
-          "https://en.wikipedia.org/wiki/National_Recording_Registry"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。80 年代流行暢銷作，綜合歷代榜收錄零散，未達跨類型正典",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "跨來源長期共識：2019 年入選美國國會圖書館國家錄音登記簿，並在 Rolling Stone 五百大專輯 2020 年版升至第 184 名，加上葛萊美最佳新人與四支美國前五單曲的紀錄，足列 80 年代流行樂史核心。",
+          "evidenceUrls": [
+            "https://en.wikipedia.org/wiki/She%27s_So_Unusual",
+            "https://en.wikipedia.org/wiki/National_Recording_Registry"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "Cyndi Lauper 的個人首作，1983 年 10 月由 Portrait 發行，Rick Chertoff 製作。做法是把 new wave 的怪趣味塞進主流流行歌的骨架，唱腔在稚氣與撕裂之間來回切換。〈Girls Just Want to Have Fun〉、〈Time After Time〉、〈She Bop〉與〈All Through the Night〉四首單曲全數擠進美國前五，〈Time After Time〉更拿下冠軍。專輯在美國榜最高第 4、加拿大登頂，隔年替她拿下葛萊美最佳新人，2019 年入選美國國家錄音登記簿。",
@@ -7883,7 +7992,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/0a/27/cc/0a27cc78-1c3d-0371-23f4-e47117892d56/mzaf_3242150454727131151.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/95/1d/ed/951ded3d-4e31-1452-42b6-cc36070a2204/mzaf_10794841548233618528.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -7904,8 +8013,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": false,
-        "apexPool": true
+        "seedCards": true,
+        "apexPool": false
       }
     },
     {
@@ -7934,7 +8043,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；美國專輯榜第 4、同名曲奪冠、全球約七百萬張，是她第二暢銷作但地位不及首作；歌唱路線收斂好入耳，二手箱常見。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -7950,7 +8059,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/a5/f6/e3/a5f6e3f4-9c69-f776-5db6-cf1c1bd1976d/mzaf_15766595501375036138.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f9/e4/c9/f9e4c95c-a0a0-3188-575d-a10c3043159f/mzaf_10964285277291892917.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -8001,7 +8110,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；英國專輯榜冠軍、美國第 4，〈Total Eclipse of the Heart〉為跨國冠軍單曲，是 Tyler 無可爭議的代表作；編制華麗但旋律直白。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -8017,7 +8126,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/f0/11/0f/f0110ffc-5d5b-c121-28d2-fdf5b01aa0f5/mzaf_9030985870183876731.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/47/3d/35/473d35b3-b379-12d9-8fbf-88299e3cad7e/mzaf_5191559564499798673.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -8068,7 +8177,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；英國專輯榜冠軍出道作、英國三白金，但樂團代表作公認是《Make It Big》；曲風輕快直白，日本二手箱常見。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -8084,7 +8193,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/20/00/25/2000256c-28b9-8b33-24b6-01ff7ba391fd/mzaf_10140506689176137059.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/79/37/c0/7937c0a7-e72f-9943-e917-465e028af305/mzaf_14076373055681178127.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -8135,7 +8244,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；出道作、全球約五百萬張，〈Do You Really Want to Hurt Me〉英國冠軍美國第 2，但樂團最高評價集中在《Colour by Numbers》；旋律好入耳。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -8151,7 +8260,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/76/df/49/76df4931-755a-a337-45ec-fed22a3e8f1f/mzaf_1158223596634364226.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/1e/01/34/1e0134ea-207b-8a2c-90ee-d4ac555acb58/mzaf_11839336714336335229.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -8202,7 +8311,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；英國專輯榜冠軍、美國第 8、兩白金，〈The Reflex〉英美同時奪冠，但樂團核心評價仍在《Rio》；編曲華麗而好入耳。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -8218,7 +8327,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/4b/4d/7e/4b4d7ee5-109c-8000-a278-1eca0870d1a0/mzaf_3022187333022966255.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d2/7e/98/d27e9851-9947-8237-444c-bf03f37a5b3e/mzaf_4058488760316550681.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -8269,7 +8378,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；美國白金、同名曲美國第 2，Nile Rodgers 帶來的 funk rock 轉向是樂團生涯關鍵一步，但整體成績較前作回落；節奏取向較前作稍硬。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -8285,7 +8394,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/e9/1d/ce/e91dce3b-8066-5c58-f15f-ba2f30f583ec/mzaf_11055301800655526648.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/c4/ae/f8/c4aef87b-52fa-8659-fe51-6ff5d579d5ea/mzaf_13204907070051598730.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -8336,7 +8445,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；樂團商業高峰，英國第 3、美國第 9，含其唯一英國冠軍單曲與 Aretha Franklin 對唱曲，是二重唱的主要作品之一；轉向搖滾與節奏藍調後更好入耳。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -8352,7 +8461,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/4e/e7/67/4ee76792-446b-f1ac-6e17-e1363b452255/mzaf_7730329672189332809.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/90/c2/b4/90c2b40d-71d8-c1a3-a0e2-cf59c75a5a53/mzaf_7402881944782383558.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -8404,7 +8513,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；〈Cruel Summer〉與〈Robert De Niro's Waiting...〉兩支代表單曲皆出自此作，但專輯本身英國僅第 16、美國第 30；dance-pop 編曲直白好入耳。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -8420,7 +8529,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/8c/35/b5/8c35b502-8aa3-dded-65c3-1b81b6da2371/mzaf_10329606858947765877.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/66/66/51/66665188-2270-1780-3a4e-f0cf0e28b1d7/mzaf_6829155267441589106.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -8471,7 +8580,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Billboard 200 四週冠軍、白金認證、葛萊美年度專輯入圍，地位明確但非樂史核心；單曲太紅使它成為店頭最常見的八○年代盤之一，合成器流行旋律直白。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -8539,7 +8648,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；美國白金、歐洲多國前五，同名曲是八○年代歐陸標準曲目，地位明確但非樂史核心；大牌大眾曲目、二手箱常見，合成器舞曲旋律直白。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -8556,7 +8665,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview112/v4/5e/81/32/5e81326b-2bb3-f8ba-e097-c88c734b2baa/mzaf_11198971414140303277.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/5a/73/f6/5a73f64d-ad41-6cfc-0e85-741e4f63bc68/mzaf_9034753905038821643.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -8606,7 +8715,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；承載奧斯卡與葛萊美獲獎名曲、Cara 個人生涯代表作，但專輯評價本身普通；八○年代箱常見的大眾曲目，Moroder 式舞曲流行入耳無門檻。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -8623,7 +8732,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/f6/21/46/f621465e-5e80-098a-ba9f-bf1b5c6d889d/mzaf_951228877242740365.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ee/f0/fd/eef0fda5-3a77-ba9a-41e1-31e0fe603faa/mzaf_4287430643698303778.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -8674,7 +8783,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；三首美國前十單曲含一首冠軍、美白金英三白金，是 Carlisle 單飛代表作但非樂史核心；店頭極常見，Rick Nowels 式亮面流行搖滾旋律直白。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -8690,7 +8799,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview122/v4/c0/7a/23/c07a2352-457d-2c90-e2b6-6afcc9166abb/mzaf_16864768099108073402.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/15/bc/28/15bc28c1-46a7-cd1f-9acb-62fe9c3d2653/mzaf_12699317909129477797.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -8741,7 +8850,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；四首 Hot 100 冠軍與首位女性以出道作達成此紀錄，商業史地位明確但非樂史核心；銷量巨大使其成為 dollar bin 常客，dance-pop 入耳無門檻。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -8757,7 +8866,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/7d/a6/c8/7da6c870-a4b6-6e99-018e-7bade65b551e/mzaf_10296230519891386775.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c5/24/b2/c524b26c-a558-0614-c00e-9a98f3063c49/mzaf_13069439758194500842.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -8808,7 +8917,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；音樂本身普通，但假唱醜聞與唯一被撤銷的葛萊美使它在流行工業史上有明確位置；六白金加醜聞後大量流入二手市場，出現率極高，曲風入耳無門檻。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -8872,7 +8981,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；樂團最成功且公認的代表作，兩首 Hot 100 前二單曲、美國三白金；八○年代箱最常見的盤之一，排行榜取向的流行搖滾入耳無門檻。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -8888,7 +8997,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/bb/a3/91/bba391bb-3c31-b77c-940a-f3a1a12e0451/mzaf_8737901434586831009.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/da/5c/94/da5c940c-b993-13cd-4473-89b8a281794c/mzaf_7994381876426862342.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -8931,24 +9040,41 @@
         "visuallyVerified": true
       },
       "ratings": {
-        "classic": 5,
+        "classic": 4,
         "obscurity": 1,
         "accessibility": 1,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-21T20:28:21Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；史上首張由自寫自彈的全女子樂團拿下 Billboard 冠軍的專輯，Rolling Stone 五百大三版皆入選且獲國家錄音登記處收錄；銷量與傳唱度使其成為店頭常客，new wave 流行旋律直白。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：新浪潮流行名盤、RS500，但不到人人必提；經典度 5 偏高",
+        "previous": {
+          "classic": 5,
+          "obscurity": 1,
+          "accessibility": 1,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-21T20:28:21Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；史上首張由自寫自彈的全女子樂團拿下 Billboard 冠軍的專輯，Rolling Stone 五百大三版皆入選且獲國家錄音登記處收錄；銷量與傳唱度使其成為店頭常客，new wave 流行旋律直白。",
+          "rarity": "rare"
+        }
       },
-      "rarity": "uncommon",
+      "rarity": "common",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "全女子樂團自寫自彈奪 Billboard 冠軍的首例，Rolling Stone 五百大專輯 2003／2012／2020 三版皆列入（2020 年第 400 名），二○二六年獲美國國會圖書館國家錄音登記處收錄，另居 1981 年 Pazz & Jop 樂評票選第十，跨來源長期共識足列美國 new wave 核心。",
-        "evidenceUrls": [
-          "https://en.wikipedia.org/wiki/Beauty_and_the_Beat_(The_Go-Go%27s_album)",
-          "https://en.wikipedia.org/wiki/Rolling_Stone%27s_500_Greatest_Albums_of_All_Time",
-          "https://en.wikipedia.org/wiki/National_Recording_Registry"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。新浪潮流行名盤，RS500 但非跨類型正典",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "全女子樂團自寫自彈奪 Billboard 冠軍的首例，Rolling Stone 五百大專輯 2003／2012／2020 三版皆列入（2020 年第 400 名），二○二六年獲美國國會圖書館國家錄音登記處收錄，另居 1981 年 Pazz & Jop 樂評票選第十，跨來源長期共識足列美國 new wave 核心。",
+          "evidenceUrls": [
+            "https://en.wikipedia.org/wiki/Beauty_and_the_Beat_(The_Go-Go%27s_album)",
+            "https://en.wikipedia.org/wiki/Rolling_Stone%27s_500_Greatest_Albums_of_All_Time",
+            "https://en.wikipedia.org/wiki/National_Recording_Registry"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "洛杉磯全女子樂團 the Go-Go's 一九八一年七月由 I.R.S. 發行的出道作，Richard Gottehrer 與 Rob Freeman 製作，錄於紐約 Penny Lane 與 Record Plant。〈Our Lips Are Sealed〉與〈We Got the Beat〉兩首打進 Hot 100，專輯於一九八二年三月登上 Billboard 冠軍並停留六週，是史上首張由自寫自彈的全女子樂團奪冠的專輯，美國雙白金。Rolling Stone 五百大專輯二○二○年版列第 400 名，二○二六年獲選進入美國國家錄音登記處。",
@@ -8981,8 +9107,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": false,
-        "apexPool": true
+        "seedCards": true,
+        "apexPool": false
       }
     },
     {
@@ -9011,7 +9137,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；團員接連過世後重整旗鼓的專輯，樂評高評價且是樂團在美國最高名次之作，屬公認主要作品；店頭常見，搖滾編制入耳屬正常難度。"
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -9027,7 +9153,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/fc/77/2e/fc772e43-87f3-2d12-d999-37ab8733a45c/mzaf_10203109225079428367.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e0/74/d7/e074d753-7619-e198-cb33-7c405ebbad97/mzaf_13740429083578424121.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -9078,7 +9204,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；全英獎最佳英國專輯、葛萊美年度專輯入圍、Rolling Stone 八○年代百大第 90 名，是 Sting 個人期公認主要作品；店頭極常見，爵士化編制但旋律清晰，入耳屬正常難度。"
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -9094,7 +9220,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ce/c4/06/cec40669-c8d7-f7d8-6db1-814eb80c6829/mzaf_16599845503534141729.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/78/fa/d3/78fad391-c635-5141-016e-adc17da854c5/mzaf_7879647988605505312.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -9145,7 +9271,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；英國專輯榜五度奪冠、在榜 119 週、BPI 四白金，英國藍眼靈魂的重要出道作但美國影響有限；歐日二手箱常客，翻唱為主的流行靈魂入耳無門檻。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -9161,7 +9287,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/64/18/be/6418be1b-194b-e84a-336a-00864832a46d/mzaf_15995911204613749944.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/73/9d/0d/739d0da9-0850-680a-c143-ab063eba3551/mzaf_16422818932086883138.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -9212,7 +9338,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；澳洲冠軍、美國第三、兩首美國前十單曲，是樂團僅次於出道作的主要作品但非樂史核心；銷量大、店頭常見，明亮的流行搖滾入耳無門檻。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -9229,7 +9355,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/ed/78/80/ed78808c-bf3a-4f9e-49f3-15ce2119f1e4/mzaf_3683948998746211801.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b7/77/f2/b777f28a-db6c-8699-4b5e-bab60c22ba82/mzaf_8148932230064328324.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -9280,7 +9406,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；兩首 Hot 100 冠軍讓它在八○年代排行榜史上有明確位置，惟樂評評價偏負面；八○年代箱常客，企業式流行搖滾入耳無門檻。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -9348,7 +9474,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；〈Jessie's Girl〉拿下葛萊美並登上 Hot 100 冠軍，是 80 年代 power pop 的公認代表作，美國二手箱極常見，旋律直白好入耳。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -9364,7 +9490,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/8d/da/5f/8dda5fed-8b95-3ece-78a5-80e99bbc875e/mzaf_7497646484624442001.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/be/e8/16/bee81672-eedf-4f25-3eb0-628e0104b276/mzaf_10130309262563614139.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -9415,7 +9541,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；英國專輯榜三週冠軍、全球約五百萬張，是該團最成功的作品，但在 synth-pop 史上非開創性座標；旋律與節奏都直白。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -9431,7 +9557,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/16/70/84/1670848c-87af-1060-0d35-681cdf9d98ca/mzaf_11834470057679152756.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/1e/21/0e/1e210ed9-5348-a0fc-c31d-522abdf62f9f/mzaf_11616678452999265679.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -9482,7 +9608,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；出道即英國榜冠軍、預購破百萬，Trevor Horn 的製作手法是 80 年代錄音室流行的公認範例；雙碟與長篇組曲讓入耳難度略高於一般流行盤。"
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -9498,7 +9624,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f2/39/d8/f239d832-a18d-112b-08fb-8f416faed707/mzaf_10827388827648995462.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/6d/b6/48/6db648ab-8b25-648a-420a-15fd086f0947/mzaf_17017095599203750844.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -9549,7 +9675,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；美國雙白金、四支 MTV 常播單曲，是 Billy Idol 最公認的代表作，二手箱入門常客，聽感直白。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -9565,7 +9691,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/6a/05/ef/6a05ef6f-965f-fcd6-e791-a9bdbf05ffb0/mzaf_17811172469801160646.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/da/00/72/da007273-31ad-af9c-f725-685be8a7ab9e/mzaf_1467939125190171545.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -9616,7 +9742,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；美國四白金、Billboard 200 第三名，是 The Cars 商業高峰與 MTV 時代代表盤，二手箱入門常客，Mutt Lange 的製作極為光滑好入耳。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -9632,7 +9758,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/cf/59/28/cf592800-862c-4380-ca76-378ad2acc905/mzaf_13043688451028174381.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e0/b9/39/e0b93966-a078-5dd8-6410-57153caa0bcb/mzaf_12408490585332901576.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -9683,7 +9809,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；葛萊美年度專輯、美國鑽石認證、五支單曲全進 Hot 100 前十，是 80 年代成人流行的公認頂級商業盤，二手箱到處都是。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -9699,7 +9825,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/7d/e2/1b/7de21b18-58a5-2073-aa9b-f5eaac174452/mzaf_6456723110146434825.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f0/cc/62/f0cc62b5-389c-325c-2230-f2477fccafe2/mzaf_15126553811640936372.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -9751,7 +9877,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；美國四白金、〈Truly〉拿下 Hot 100 冠軍，是他單飛起點的重要作品，但地位明顯次於《Can't Slow Down》；同名專輯在店頭稍不顯眼。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -9767,7 +9893,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/97/90/41/97904123-fadb-6be3-b701-337107d944de/mzaf_1522088045371702958.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/84/0a/36/840a364e-1766-8584-1ace-2c726c8707e8/mzaf_16921657169485313944.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -9818,7 +9944,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；美國四白金、Billboard 200 冠軍，商業上延續前作熱度但評價與影響力較弱，二手箱到處撞得到。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -9834,7 +9960,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/a3/2b/c2/a32bc20c-1318-221a-0281-f9520dca02e7/mzaf_16088564425844555237.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f6/7f/32/f67f32d7-684f-8d5b-026f-8027711b0141/mzaf_13075767513241057629.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -9885,7 +10011,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；〈Le Freak〉三榜奪冠、Rodgers 與 Edwards 的節奏組寫法成為後世 disco 與 funk 的教科書，是該領域公認主要作品；聲響乾淨易入耳。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -9901,7 +10027,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/dd/bf/d7/ddbfd7c6-9b06-fdf5-b2c7-f1d72f26f614/mzaf_3476834305313926981.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/76/18/dd/7618dd92-b61f-65c7-a1a5-6d08dc7d8b2d/mzaf_10536878235644314919.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -9952,7 +10078,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；同名曲入選葛萊美名人堂與美國國家錄音登錄，Chic 製作的 disco 正典，二手箱入門常客，旋律直白。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -9968,7 +10094,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/23/d3/b8/23d3b8a7-c0b0-28a4-2241-aea7d0e6291c/mzaf_14020239667400229833.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/05/ae/32/05ae3236-0fed-58c3-b39e-e254237c0540/mzaf_14791843418181837776.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -10019,7 +10145,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；收錄〈I Will Survive〉這首 Hot 100 冠軍兼葛萊美最佳迪斯可錄音，是 disco 箱最常備的盤之一，聽感直白。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -10036,7 +10162,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f9/ae/19/f9ae1913-ee48-edab-6c0b-6518e43f997e/mzaf_17622414945666891962.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c5/62/85/c562855a-5013-b427-4f11-759a713e04d7/mzaf_5076326841824231377.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -10087,7 +10213,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Billboard 200 六週冠軍、雙白金，兩首 Hot 100 冠軍單曲，是 disco 高峰期公認的主要作品，店頭極常見。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -10154,7 +10280,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；〈Y.M.C.A.〉是全球性的文化現象，但專輯其餘部分評價普通，屬有明確特色而非樂史核心；二手箱幾乎必見。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -10170,7 +10296,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/78/82/e3/7882e336-4e97-c49c-362b-ce77ba6ddb6c/mzaf_4094520282024762203.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ba/d4/f8/bad4f867-7741-8f3f-720a-a41835e0bf72/mzaf_7671034670120278334.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -10221,7 +10347,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；靈魂樂專輯榜冠軍、美國雙白金，〈Boogie Wonderland〉與〈After the Love Has Gone〉都是該團代表曲，二手箱常見。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -10237,7 +10363,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/5e/a9/b3/5ea9b346-7262-4b20-cef1-a1d1055ee531/mzaf_4902091025195932833.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b7/0b/98/b70b9825-ae86-85b0-3ed0-b8cefb9fe7e8/mzaf_3286029532135755043.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -10293,7 +10419,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；含〈September〉等唯一收錄新曲的五白金結集，soul 箱最基本的一張，入耳全無門檻。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -10309,7 +10435,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b8/16/7a/b8167ad3-48bb-a6f4-349c-b35cdafd89cf/mzaf_7845572142034034717.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/49/2d/44/492d441e-f0ce-5c3a-dcc6-3a892d2600f2/mzaf_2765278844043228646.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -10360,7 +10486,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；四首美國前十單曲、三白金與兩座葛萊美，是該團商業代表作；大牌大眾曲目，旋律直白。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -10376,7 +10502,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/e6/02/83/e6028316-639c-3e3f-e29f-09864c09d741/mzaf_12054233568522585368.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6c/e4/05/6ce4058c-fe06-19f7-9d98-14070eaba46a/mzaf_17954292081782911011.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -10427,7 +10553,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；白金復出作與兩座葛萊美單曲確立其地位，但非樂評正典；大牌大眾曲目，編曲柔順好入耳。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -10443,7 +10569,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/64/78/19/64781932-bcc5-45c6-c2ad-2f4752987a72/mzaf_16124525723484063021.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/1b/db/c1/1bdbc118-6583-56cb-9142-364f888fca93/mzaf_6055645179212355121.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -10494,7 +10620,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；雙白金出道作、R&B 榜冠軍，並入 2020 年《滾石》五百大第 362 名，是他公認的代表作。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -10554,14 +10680,23 @@
       },
       "ratings": {
         "classic": 5,
-        "obscurity": 1,
-        "accessibility": 2,
+        "obscurity": 2,
+        "accessibility": 1,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-21T20:28:21Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；同時攻頂流行、R&B 與爵士三榜、三白金，公認打開爵士跨界市場，二手箱幾乎必見。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：首張登 Billboard 200 冠軍的爵士盤，smooth jazz 標竿；冷門 1→2",
+        "previous": {
+          "classic": 5,
+          "obscurity": 1,
+          "accessibility": 2,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-21T20:28:21Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；同時攻頂流行、R&B 與爵士三榜、三白金，公認打開爵士跨界市場，二手箱幾乎必見。",
+          "rarity": "uncommon"
+        }
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -10628,7 +10763,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Quincy Jones 製作的白金作，Soul 與爵士榜雙冠並帶來三座葛萊美，是他放克路線的代表。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -10644,7 +10779,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/16/37/cf/1637cf14-45b3-d55f-ac37-07efc6bb210f/mzaf_16230565930280913210.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/35/54/ab/3554ab34-cf55-6b9f-5a86-dde12c2bf753/mzaf_8529875484408625468.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -10695,7 +10830,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；白金雙唱片現場錄音、R&B 榜冠軍，地位明確但屬其錄音室正典之外的延伸。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -10711,7 +10846,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/ec/34/a7/ec34a772-c2f6-c597-9a12-018083ed25de/mzaf_1271625900660286044.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c2/f2/d4/c2f2d40e-1c1d-c389-175e-4f1c78090e84/mzaf_1732040814041202273.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -10762,7 +10897,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；葛萊美最佳融合爵士演奏獎、兩白金，並被視為 1980 年代 smooth jazz 熱潮起點，二手箱常客。"
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -10778,7 +10913,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/6d/40/5f/6d405f58-0a0e-e9f9-b303-f56fda8243b4/mzaf_3235971784512634305.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/21/da/e4/21dae430-d409-7b66-7124-2a5e6553ce16/mzaf_5044946554246952567.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -10829,7 +10964,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；12 項葛萊美提名、三座得獎與白金銷量，是 Quincy Jones 個人名下最具份量的一張。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -10845,7 +10980,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/56/12/9a/56129ac4-9331-3ea7-016a-48cca19d4fae/mzaf_13900185192361840564.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c0/89/1c/c0891cd7-fe30-7ff2-e98c-1fb674980fe3/mzaf_461680974745336940.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -10896,7 +11031,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；美國兩白金、Hot 100 冠軍單曲與葛萊美獎，屬八〇年代 soul／pop 主流常備而非正典核心。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -10913,7 +11048,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/a3/db/61/a3db61c3-0404-a1d6-6e39-2255e2f781b2/mzaf_2149166151765300793.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9e/b4/62/9eb462fa-4f53-225e-f23b-d2a575eeb103/mzaf_16679104359460193745.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -10964,7 +11099,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；美國 R&B 榜冠軍、英國白金與四支英國前二十單曲，是 boogie／post-disco 路線的核心之作。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -10980,7 +11115,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/8d/b7/5b/8db75b65-ec1d-45a1-d31b-9092c0eee1e5/mzaf_7277950847862475395.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a1/c4/7e/a1c47e7f-0249-7a7a-d582-504549610284/mzaf_6845655373127345288.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -11031,7 +11166,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；八週 Billboard 冠軍、美國逾六百萬銷量，封面進史密森尼典藏，是 easy listening 箱的基本盤。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -11048,7 +11183,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/b1/52/41/b15241ab-436d-cf10-d7b4-d9bf08729fd6/mzaf_5890246219902112276.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/63/66/3d/63663da7-c0d8-5f25-0db6-e6ff4b2e8da9/mzaf_7612068438221005805.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -11099,7 +11234,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；同名曲 Hot 100 冠軍、專輯逾三百萬銷量，地位明確但屬其後期商業轉向而非正典核心。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -11116,7 +11251,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/91/88/30/91883040-ad60-414a-cefe-ab7be7b6c21c/mzaf_6226480844363404907.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b6/5c/61/b65c6199-3e52-5248-bf67-3b1068d269be/mzaf_18386996624164289686.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -11167,7 +11302,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Billboard 200 五週冠軍與 Hot 100 冠軍單曲，日本二手店 easy listening 區的基本盤。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -11183,7 +11318,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ce/13/d0/ce13d01e-1a94-2b28-3ff3-39df2623b084/mzaf_3294341227754672336.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/8a/1d/b5/8a1db560-f4da-c4ac-fa20-013dbfc15ae7/mzaf_16895110955817007000.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -11234,7 +11369,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；器樂搖滾開路的首張專輯，Billboard 第 11 名並拿下金唱片，樂史地位穩固；日本二手店幾乎必有 Ventures 專區，撞見機率極高，純旋律電吉他器樂入耳無門檻。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -11251,7 +11386,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/2e/44/62/2e446282-cd5c-7cb1-6754-272972674789/mzaf_6514535624206779229.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/43/a4/0b/43a40ba4-0cdc-eda8-a761-373a7ad477c8/mzaf_12041019832176519106.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -11301,7 +11436,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；英語市場的突破作與全球大賣盤，地位明確但非樂評正典；壓片量極大、二手箱常見，成人抒情編曲直白好入耳。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -11317,7 +11452,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/27/f6/99/27f699f6-e85b-ebb2-2cca-521364c561d6/mzaf_12950617142079510970.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e9/d2/a0/e9d2a03c-7aff-4902-cae4-fe50a3f5ecd4/mzaf_12700860526639927739.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -11368,7 +11503,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；英國 jazz-funk 的國際突破作與樂團代表作之一，地位明確；大牌大眾曲目、日盤流通量大，編曲緊實不難入耳。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -11385,7 +11520,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/41/ec/d0/41ecd0b8-bf70-c3b2-5512-0e6aade08f24/mzaf_4803411520051604810.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/83/51/d5/8351d597-7d6a-c253-f217-57295f3a0df1/mzaf_5044128479285181477.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -11436,7 +11571,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；英國榜第 4 名、確立樂團招牌聲音的代表作，領域內地位明確；日盤大量流通，聽感輕盈流暢。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -11452,7 +11587,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/df/b1/73/dfb173a6-e573-a689-0a64-00ec77f966b7/mzaf_6586748813771766777.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/5e/28/f9/5e28f9e1-e57d-2ef8-c910-e94cb35d73e8/mzaf_1120879277297002660.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -11503,7 +11638,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；首張獲美國鑽石認證的 hip hop 專輯、首張由獨立饒舌歌手登上流行榜冠軍的作品，領域地位明確；壓片量極大，副歌直白好入耳。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -11519,7 +11654,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/22/1e/3d/221e3da5-9408-5220-978a-e85d22ab6ecd/mzaf_14068034287939196579.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/1d/96/9d/1d969d6a-f800-e343-ce9c-60b9b2087299/mzaf_14173052132822020241.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -11570,7 +11705,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；〈Ice Ice Baby〉是首支登上 Hot 100 冠軍的饒舌單曲，有明確史實地位但樂評評價低；壓片量巨大、dollar bin 常客，聽感毫無門檻。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -11637,7 +11772,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；樂團突破作與千禧年代流行嘻哈的主要商業成果，地位明確但非樂史核心；全球銷量逾九百萬張，二手箱極常見，旋律直白。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -11701,7 +11836,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；樂團最大賣作、英國榜冠軍與唯一一座葛萊美的來源，公認代表作；八百萬銷量使二手撞見率極高，聲響雖暗但旋律好抓。"
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -11717,7 +11852,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/b5/52/4c/b5524c2c-e1f7-9457-4bbe-1b082afc4873/mzaf_3748637820370636327.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/9a/a7/90/9aa790e3-651e-9674-26ac-14aba4d3b8d1/mzaf_10454527198707970464.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -11768,7 +11903,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；金氏紀錄認定史上最暢銷放克專輯、VMA 年度最佳錄影帶，樂團公認代表作；日本壓片量極大，節奏取向順耳。"
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -11835,7 +11970,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；英國榜冠軍出道作、acid jazz 浪潮的主要成果，地位明確但影響力次於後作；日盤常見，管弦編制不難入耳。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -11851,7 +11986,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/09/72/6d/09726dc4-cb5d-73fa-49d0-6ddfe95f081f/mzaf_705472758495335567.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/79/a5/de/79a5dee1-01ac-3f51-af06-26585fda56c8/mzaf_7655037455347098070.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -11902,7 +12037,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；英國榜第 3 名與白金認證、樂團最成功一張，領域內地位明確；在台灣屬樂迷領域而非大眾常識，聲響仍以歌為主。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -11918,7 +12053,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview118/v4/ff/6b/81/ff6b81f4-1f4a-aa71-fcac-883c6a028d42/mzaf_3618233288741156403.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b2/2d/97/b22d97ba-7b5b-3198-19df-9cfb119ad028/mzaf_10721513608654036121.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -11969,12 +12104,24 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；史上最暢銷的 reggae 專輯、《滾石》五百大第 46 名、Billboard 200 累計逾 950 週在榜，跨來源地位明確；二手店 reggae 箱幾乎必有，選曲全為順耳的單曲面。"
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
-        "reason": "地位確實達到殿堂等級，但性質是身後精選而非錄音室正典，殿堂席位宜留給《Exodus》一類原作；建議店主另行裁定合輯可否入殿堂。",
-        "evidenceUrls": []
+        "reason": "頂點重整（apex-rebalance-20261103，2026-11-03）：原殿堂降為一般卡。同級內一藝人一張：Bob Marley & The Wailers hall 留《Exodus》。Time 二十世紀最佳專輯；Legend 是精選輯，原創專輯優先",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "方案 C（audit-20261102，2026-11-03）：升為殿堂（該軸 7 星）。RS 500 前段、史上最暢銷雷鬼盤、全球非樂迷皆知；合輯性質扣一級",
+          "evidenceUrls": [
+            "https://en.wikipedia.org/wiki/Legend_(Bob_Marley_and_the_Wailers_album)",
+            "https://www.rollingstone.com/music/music-lists/best-albums-of-all-time-1062063/"
+          ],
+          "source": "manual:audit-20261102"
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:apex-rebalance-20261103"
       },
       "description": {
         "text": "Bob Marley 過世三年後，Island 於 1984 年 5 月推出的身後精選，由 Chris Blackwell 等人操刀選曲，把〈No Woman, No Cry〉〈Three Little Birds〉〈Could You Be Loved〉〈Buffalo Soldier〉等 Island 時期單曲集中在一處。編排刻意偏向流暢好入耳的一面，因而成為多數人接觸 reggae 的第一張唱片。全球賣出約兩千五百萬張，是史上最暢銷的 reggae 專輯，並在 Billboard 200 累計逾 950 週在榜。",
@@ -11985,7 +12132,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/57/b4/86/57b48651-318d-4e27-e486-33f4e5faaa75/mzaf_5322223461518697391.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/08/96/b4/0896b437-f975-f94d-52d5-06c5b0c4c937/mzaf_16842992457304565935.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -12036,7 +12183,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Marley 中後期主要作品，英國榜第 4、內含〈Is This Love〉，二手箱與串流都極易撞見，曲調柔和好入耳。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -12052,7 +12199,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/5e/32/f4/5e32f46e-ecf8-5f07-0ffe-7dfd466353a7/mzaf_15972276572950807702.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/24/e7/d0/24e7d079-2e2f-370e-031e-59af0af93ff8/mzaf_16011944127105836309.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -12103,7 +12250,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Marley 首張打進美國前十的專輯、含〈War〉與〈Roots, Rock, Reggae〉，各地二手箱常備；吉他偏搖滾但旋律仍直白。"
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -12119,7 +12266,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/98/67/b7/9867b7f7-d901-02fe-bf27-8d04efc0b1ac/mzaf_1693134515077106384.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/80/90/98/80909868-f45d-e2e5-aeb7-8e9fba87727e/mzaf_5960814850948705512.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -12170,7 +12317,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；泛非政治宣言與〈Zimbabwe〉的歷史連結使地位穩固，但比《Legend》《Exodus》少一層大眾入口；編曲硬朗仍屬好入耳。"
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -12186,7 +12333,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/a1/8f/84/a18f8410-a842-ae5a-7839-461d10ee77aa/mzaf_10257981302906137364.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/01/21/1f/01211fcd-6f37-b6e2-f117-81e8eb8b3fa2/mzaf_327342259300115678.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -12237,7 +12384,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；公認的 Marley 主要現場記錄且長期再版，但屬巡演文獻而非創作核心；雙碟長度與現場延伸段稍增門檻。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -12253,7 +12400,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/47/02/e9/4702e953-8774-53e5-9971-7e63a640d69b/mzaf_15594600736227612649.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d9/a7/68/d9a76834-4521-1808-b8cc-ae64b28f3325/mzaf_4462767218213116758.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -12304,7 +12451,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；英國榜冠軍、美國白金，〈Red Red Wine〉是跨世代大眾曲目；翻唱企劃地位明確但非原創史地位，入耳門檻極低。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -12320,7 +12467,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/1a/1a/65/1a1a658a-1a4d-cb87-b840-2bd0f85f93c3/mzaf_17262423115719950233.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/de/ff/23/deff234b-2593-962a-0d21-74b4e171dc43/mzaf_4426361717698170056.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -12371,7 +12518,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；荷蘭 psychobilly 代表團在自家廠牌的正規錄音室作，類型內地位明確但外圈少見、串流無源；速度與吼唱粗礪，非一般大眾曲風。"
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -12436,7 +12583,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；1980 年代 rockabilly 復興的起點作，英國榜第 6、三支前 40 單曲，日本再版多而易見；曲式是最直白的三件式搖滾。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -12453,7 +12600,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/f3/d6/9e/f3d69e49-d0a1-2856-2f43-551d50a9e3f7/mzaf_9501772014583795279.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/c7/ae/a5/c7aea50a-d143-849a-34f3-efd4bddfface/mzaf_17322629397318357668.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",
@@ -12503,7 +12650,7 @@
         "checkedAt": "2026-08-21T20:28:21Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；美國榜第 2、白金認證且是 MTV 時代 rockabilly 復興的大眾入口，但選曲取自英版舊作，原創份量低於出道盤。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -12519,7 +12666,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/b3/4d/be/b34dbe16-b5aa-e5fe-c3c9-8c7867375c98/mzaf_5857305801782726547.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d9/0f/05/d90f0576-78bf-fb1c-1e8d-ae96bd350c36/mzaf_5043621830812086035.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T20:28:21Z",

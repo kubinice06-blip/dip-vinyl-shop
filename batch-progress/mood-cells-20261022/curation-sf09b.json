@@ -1,0 +1,580 @@
+{
+ "group": "sf09b",
+ "factions": [
+  {
+   "id": "modern-jazz",
+   "zh": "當代／歐陸爵士",
+   "count": 4,
+   "why": ""
+  },
+  {
+   "id": "vocal-jazz",
+   "zh": "人聲爵士",
+   "count": 3,
+   "why": ""
+  },
+  {
+   "id": "jp-jazz",
+   "zh": "日本爵士",
+   "count": 2,
+   "why": ""
+  },
+  {
+   "id": "jp-rock",
+   "zh": "jp-rock",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "world-jazz",
+   "zh": "世界爵士與非洲節奏",
+   "count": 2,
+   "why": ""
+  },
+  {
+   "id": "downtempo",
+   "zh": "電子下拍",
+   "count": 2,
+   "why": ""
+  },
+  {
+   "id": "jp-pop",
+   "zh": "日本流行",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "jazz-rock",
+   "zh": "爵士搖滾",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "tango",
+   "zh": "探戈",
+   "count": 1,
+   "why": ""
+  }
+ ],
+ "albums": [
+  {
+   "label": "",
+   "mbRgMbid": "e93c0e33-146f-443d-a107-0d06f5992625",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Spotify 名為 Votskos with Pappas Trio，正式署名為 Greg Foat/Sokratis Votskos；Votskos 自己名下只有 Quartet 專輯，此張是唯一與 Pappas Trio 同署名者；標籤未查",
+   "artist": "Greg Foat, Sokratis Votskos & The Giorgos Pappas Trio",
+   "album": "Impressions of Samos",
+   "year": 2026,
+   "country": "gr",
+   "faction": "modern-jazz",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Votskos 與 Pappas Trio 同名義發行的唯一正規合作專輯，希臘爵士與 Foat 的靈修爵士合流",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 0.3,
+    "z": 0.6,
+    "why": "愛琴海風情的靈修爵士，薩克斯與鍵盤悠然鋪陳"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/e93c0e33-146f-443d-a107-0d06f5992625",
+    "https://music.apple.com/us/album/impressions-of-samos/1870310709"
+   ],
+   "spotifyName": "Sokratis Votskos with The Giorgos Pappas Trio"
+  },
+  {
+   "label": "Jazzman",
+   "mbRgMbid": "b075ae2a-a23e-4274-869c-51515fd4d87a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "",
+   "artist": "The Greg Foat Group",
+   "album": "Girl and Robot With Flowers",
+   "year": 2012,
+   "country": "gb",
+   "faction": "modern-jazz",
+   "genres": [
+    "jazz",
+    "electronic"
+   ],
+   "why": "Foat 團名下 Jazzman 出道作，Fender Rhodes 靈修爵士與電影配樂感，廣被視為團代表作",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 0.2,
+    "z": 0.7,
+    "why": "Rhodes 與弦樂的電影感爵士，悠緩溫暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/b075ae2a-a23e-4274-869c-51515fd4d87a",
+    "https://coverartarchive.org/release-group/b075ae2a-a23e-4274-869c-51515fd4d87a/front"
+   ],
+   "spotifyName": "The Greg Foat Group"
+  },
+  {
+   "label": "INGRID",
+   "mbRgMbid": "4f393973-1dff-3990-90dc-f3422936c80f",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "首發年 MB 2005，發行版本 label 為 2014 INGRID 再版",
+   "artist": "Yttling Jazz",
+   "album": "Oh Lord, Why Can't I Keep My Big Mouth Shut",
+   "year": 2005,
+   "country": "se",
+   "faction": "modern-jazz",
+   "genres": [
+    "jazz",
+    "electronic"
+   ],
+   "why": "Peter Bjorn and John 的 Björn Yttling 爵士三重奏，北歐電子爵士代表作",
+   "moodGuess": {
+    "x": 2.8,
+    "y": 0.4,
+    "z": -0.2,
+    "why": "電子節拍與爵士即興，冷靜帶點律動"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/4f393973-1dff-3990-90dc-f3422936c80f",
+    "https://coverartarchive.org/release-group/4f393973-1dff-3990-90dc-f3422936c80f/front"
+   ],
+   "spotifyName": "Yttling Jazz"
+  },
+  {
+   "label": "Artwork Records",
+   "mbRgMbid": "6508575a-1e4d-470b-9b6c-084f665ded6c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "2025 新作，樂評共識尚淺；僅此一張正規專輯",
+   "artist": "Tyreek McDole",
+   "album": "Open Up Your Senses",
+   "year": 2025,
+   "country": "us",
+   "faction": "vocal-jazz",
+   "genres": [
+    "jazz"
+   ],
+   "why": "男中音新秀的出道專輯，Down Beat 與樂評看好的當代人聲爵士",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 0.5,
+    "z": 0.8,
+    "why": "渾厚男中音，暖而從容的爵士人聲"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/6508575a-1e4d-470b-9b6c-084f665ded6c",
+    "https://coverartarchive.org/release-group/6508575a-1e4d-470b-9b6c-084f665ded6c/front"
+   ],
+   "spotifyName": "Tyreek McDole"
+  },
+  {
+   "label": "Interval",
+   "mbRgMbid": "",
+   "mbAbsenceProof": "MB release-group 搜 artist:高木元輝 / Mototeru Takagi 與 releasegroup:Mosura Freight 皆無此盤（2026-10-30）",
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/512067-Mototeru-Takagi-Trio-Mosura-Freight",
+    "https://www.discogs.com/artist/860429-Mototeru-Takagi-Trio",
+    "https://www.jazzmusicarchives.com/artist/mototeru-takagi"
+   ],
+   "releaseException": "",
+   "queryAlias": "高木元輝トリオ モスラ・フレイト",
+   "uncertain": "池中僅有他的合作名義（高木元輝＝加古隆カルテット、土取利行・高木元輝），未有個人領銜卡，故收；盤名羅馬拼音依 Discogs；封面來源 Discogs",
+   "artist": "高木元輝",
+   "album": "Mosura Freight!",
+   "year": 1975,
+   "country": "jp",
+   "faction": "jp-jazz",
+   "genres": [
+    "jazz"
+   ],
+   "why": "日本自由爵士薩克斯風手高木元輝以三重奏名義的代表作，日本前衛爵士名盤",
+   "moodGuess": {
+    "x": 4,
+    "y": 0.2,
+    "z": -1.2,
+    "why": "自由爵士薩克斯風嘶鳴，無調、緊繃"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/512067-Mototeru-Takagi-Trio-Mosura-Freight",
+    "https://www.discogs.com/artist/822047-Mototeru-Takagi"
+   ],
+   "spotifyName": "高木元輝"
+  },
+  {
+   "label": "Shi Zen",
+   "mbRgMbid": "f30b41c7-0c6d-43d0-abc8-6c5bab5d4ce8",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Motohiko Hamase",
+   "uncertain": "Spotify 上可能是 2018 Studio Mule 重錄版；卡以 1986 原盤年；MB 另有 Anecdote(1993)、Intaglio(2018)",
+   "artist": "濱瀬元彦",
+   "album": "Reminiscence",
+   "year": 1986,
+   "country": "jp",
+   "faction": "jp-jazz",
+   "genres": [
+    "electronic",
+    "jazz"
+   ],
+   "why": "貝斯手濱瀬元彦轉向環境電子的名作，近年海外挖掘再版的日本環境音樂經典",
+   "moodGuess": {
+    "x": 1.9,
+    "y": 0.7,
+    "z": 0.5,
+    "why": "無品貝斯與合成器，環境氛圍柔緩包覆"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/f30b41c7-0c6d-43d0-abc8-6c5bab5d4ce8",
+    "https://coverartarchive.org/release-group/f30b41c7-0c6d-43d0-abc8-6c5bab5d4ce8/front"
+   ],
+   "spotifyName": "濱瀬元彦"
+  },
+  {
+   "label": "",
+   "mbRgMbid": "8cf69189-f8be-3f7f-845f-865f5f4eb629",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Kazuyoshi Nakamura",
+   "uncertain": "Spotify 名 Kazuyoshi Nakamura 推定為 中村一義（非其他同名者），label 未確認；池中無此人",
+   "artist": "中村一義",
+   "album": "金字塔",
+   "year": 1997,
+   "country": "jp",
+   "faction": "jp-rock",
+   "genres": [
+    "rock",
+    "pop"
+   ],
+   "why": "家庭錄音式自錄出道作，九〇年代日本流行搖滾名盤，樂迷公認巔峰",
+   "moodGuess": {
+    "x": 3.4,
+    "y": 0.4,
+    "z": 0.7,
+    "why": "披頭四式旋律與自錄粗糙感，明亮而躁動"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/8cf69189-f8be-3f7f-845f-865f5f4eb629",
+    "https://coverartarchive.org/release-group/8cf69189-f8be-3f7f-845f-865f5f4eb629/front"
+   ],
+   "spotifyName": "Kazuyoshi Nakamura"
+  },
+  {
+   "label": "Ensoul Records",
+   "mbRgMbid": "0c8c0140-630e-4a61-86bd-1791353ea2b0",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "",
+   "artist": "Dominique Fils-Aimé",
+   "album": "Nameless",
+   "year": 2018,
+   "country": "ca",
+   "faction": "vocal-jazz",
+   "genres": [
+    "jazz",
+    "soul"
+   ],
+   "why": "蒙特婁歌手的三部曲首作，藍調靈魂爵士奠定其風格（Juno 提名）",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 0.8,
+    "z": 0.5,
+    "why": "低沉嗓音配簡約伴奏，藍調靈魂沉緩"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/0c8c0140-630e-4a61-86bd-1791353ea2b0",
+    "https://coverartarchive.org/release-group/0c8c0140-630e-4a61-86bd-1791353ea2b0/front"
+   ],
+   "spotifyName": "Dominique Fils-Aimé"
+  },
+  {
+   "label": "Ensoul Records",
+   "mbRgMbid": "3d7f207e-5ab4-44b5-a724-482e5cb6656a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "",
+   "artist": "Dominique Fils-Aimé",
+   "album": "Three Little Words",
+   "year": 2021,
+   "country": "ca",
+   "faction": "vocal-jazz",
+   "genres": [
+    "jazz",
+    "soul"
+   ],
+   "why": "三部曲終章，獲 Juno 獎，更豐滿的靈魂與爵士編曲，另一高峰",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 0.7,
+    "z": 0.8,
+    "why": "靈魂爵士人聲溫暖，編制較豐滿"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/3d7f207e-5ab4-44b5-a724-482e5cb6656a",
+    "https://coverartarchive.org/release-group/3d7f207e-5ab4-44b5-a724-482e5cb6656a/front"
+   ],
+   "spotifyName": "Dominique Fils-Aimé"
+  },
+  {
+   "label": "Buda Musique",
+   "mbRgMbid": "feb6af05-bd7b-4e35-b83a-c852880e5628",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Ukandanz",
+   "uncertain": "MB 寫作 uKanDanZ；Awo(2016)、Yeketelale(2018) 亦可，僅收首作",
+   "artist": "uKanDanZ",
+   "album": "Yetchalal",
+   "year": 2012,
+   "country": "et",
+   "faction": "world-jazz",
+   "genres": [
+    "world",
+    "jazz"
+   ],
+   "why": "艾蒂亞比亞音樂與爵士、放克融合的樂團出道作，現代 Ethio-jazz 代表",
+   "moodGuess": {
+    "x": 3.6,
+    "y": 0.4,
+    "z": 0.2,
+    "why": "Ethio-jazz 銅管與律動推進，熱而緊湊"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/feb6af05-bd7b-4e35-b83a-c852880e5628",
+    "https://coverartarchive.org/release-group/feb6af05-bd7b-4e35-b83a-c852880e5628/front"
+   ],
+   "spotifyName": "Ukandanz"
+  },
+  {
+   "label": "Vertigo",
+   "mbRgMbid": "f245d840-ed56-3c40-8232-e21f2eed0042",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "同盤 US 版題為 Zimbabwe（MB 另立 b0cfc553），取 Assagai 為正名",
+   "artist": "Assagai",
+   "album": "Assagai",
+   "year": 1971,
+   "country": "gb",
+   "faction": "world-jazz",
+   "genres": [
+    "rock",
+    "world"
+   ],
+   "why": "南非流亡者在倫敦組的非洲搖滾／靈魂爵士團唯一代表作，含名曲 Telephone Girl／Kari",
+   "moodGuess": {
+    "x": 3.7,
+    "y": 0.5,
+    "z": 0.6,
+    "why": "非洲打擊與放克搖滾，熱烈有勁"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/f245d840-ed56-3c40-8232-e21f2eed0042",
+    "https://coverartarchive.org/release-group/f245d840-ed56-3c40-8232-e21f2eed0042/front"
+   ],
+   "spotifyName": "Assagai"
+  },
+  {
+   "label": "Pling Music",
+   "mbRgMbid": "27c52dd1-0e7f-46f7-b6db-67f0e9c28176",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Anders Lønne Grønseth Multiverse",
+   "uncertain": "Multiverse 同名者眾（俄羅斯另類搖滾、英國 downtempo 等）；依清單鄰近皆爵士，推定為挪威爵士團；MB 署名 Anders Lønne Grønseth/Multiverse",
+   "artist": "Multiverse",
+   "album": "Theory of Anything",
+   "year": 2019,
+   "country": "no",
+   "faction": "modern-jazz",
+   "genres": [
+    "jazz"
+   ],
+   "why": "挪威當代爵士團 Multiverse 的代表作（Anders Lønne Grønseth 領軍）",
+   "moodGuess": {
+    "x": 3.2,
+    "y": 0.2,
+    "z": -0.3,
+    "why": "當代前衛爵士，薩克斯與鍵盤推進，偏冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/27c52dd1-0e7f-46f7-b6db-67f0e9c28176",
+    "https://coverartarchive.org/release-group/27c52dd1-0e7f-46f7-b6db-67f0e9c28176/front"
+   ],
+   "spotifyName": "Multiverse"
+  },
+  {
+   "label": "",
+   "mbRgMbid": "02328c13-fa4b-4ccd-8d92-c76b4f5b9df1",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "僅此一張正規專輯（另有 2018 Voodoo Magic EP 不收）；國別 us 依 Discogs/Axis 推定，label 未確認",
+   "artist": "Spiral Deluxe",
+   "album": "The Love Pretender",
+   "year": 2025,
+   "country": "us",
+   "faction": "downtempo",
+   "genres": [
+    "electronic",
+    "jazz"
+   ],
+   "why": "底特律 future jazz／deep house 二人組唯一一張正規專輯",
+   "moodGuess": {
+    "x": 3,
+    "y": 0.3,
+    "z": 0.4,
+    "why": "爵士 house 四拍，律動輕快帶暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/02328c13-fa4b-4ccd-8d92-c76b4f5b9df1",
+    "https://coverartarchive.org/release-group/02328c13-fa4b-4ccd-8d92-c76b4f5b9df1/front"
+   ],
+   "spotifyName": "Spiral Deluxe"
+  },
+  {
+   "label": "Mercury Records",
+   "mbRgMbid": "a9e65acb-63dd-3f8d-8901-45befcd9b7e6",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "スウィング・スロウ 細野晴臣 越美晴",
+   "uncertain": "Swing Slow 為細野×越美晴計畫名，池中有細野晴臣名下卡但非同一署名，故收",
+   "artist": "swing slow",
+   "album": "swing slow",
+   "year": 1996,
+   "country": "jp",
+   "faction": "jp-pop",
+   "genres": [
+    "pop",
+    "electronic"
+   ],
+   "why": "細野晴臣與越美晴的合作計畫，唯一原創專輯，九〇年代日本電子流行的雅致之作",
+   "moodGuess": {
+    "x": 2.1,
+    "y": 0.2,
+    "z": 0.9,
+    "why": "柔和電子流行與嗓音，輕盈暖暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/a9e65acb-63dd-3f8d-8901-45befcd9b7e6",
+    "https://coverartarchive.org/release-group/a9e65acb-63dd-3f8d-8901-45befcd9b7e6/front"
+   ],
+   "spotifyName": "Swing Slow"
+  },
+  {
+   "label": "Elektrolux",
+   "mbRgMbid": "610861c1-d62f-35fb-9de6-7f194e285571",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "裁定：Fresh Moods 是德國 Elektrolux 的個人／計畫藝人（Discogs artist 10072），非廠牌或合輯帳號，按藝人收；另有 Love. Death. Angels(2002)、Exhale(2006) 可選",
+   "artist": "Fresh Moods",
+   "album": "Fresh Moods",
+   "year": 1997,
+   "country": "de",
+   "faction": "downtempo",
+   "genres": [
+    "electronic"
+   ],
+   "why": "德國 Elektrolux 廠牌的 downtempo／future jazz 藝人出道專輯",
+   "moodGuess": {
+    "x": 2,
+    "y": 0.4,
+    "z": 0.2,
+    "why": "downtempo 節拍與爵士取樣，慵懶沉緩"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/610861c1-d62f-35fb-9de6-7f194e285571",
+    "https://coverartarchive.org/release-group/610861c1-d62f-35fb-9de6-7f194e285571/front"
+   ],
+   "spotifyName": "Fresh Moods"
+  },
+  {
+   "label": "Nonesuch",
+   "mbRgMbid": "72a726f5-5a54-4f32-a5bf-fd63289eed20",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "池中有 Red Hot Chili Peppers 6 張，但 Flea 個人名義無卡，故收；2026 新作評價尚淺",
+   "artist": "Flea",
+   "album": "Honora",
+   "year": 2026,
+   "country": "us",
+   "faction": "jazz-rock",
+   "genres": [
+    "jazz",
+    "rock"
+   ],
+   "why": "Red Hot Chili Peppers 貝斯手 Flea 的首張個人錄音室專輯，爵士底蘊的個人作品",
+   "moodGuess": {
+    "x": 3,
+    "y": 0.3,
+    "z": 0.2,
+    "why": "小號與貝斯主導的爵士搖滾，鬆而帶勁"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/72a726f5-5a54-4f32-a5bf-fd63289eed20",
+    "https://coverartarchive.org/release-group/72a726f5-5a54-4f32-a5bf-fd63289eed20/front"
+   ],
+   "spotifyName": "Flea"
+  },
+  {
+   "label": "Express",
+   "mbRgMbid": "de816482-a454-476e-a5e5-a51ea8e3d5cf",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "グラシェラ・スサーナ アドロ・サバの女王",
+   "uncertain": "MB 無 CAA 封面，封面來源 Discogs master 993120；Spotify 上可能為日本盤精選，盤名依原版",
+   "artist": "Graciela Susana",
+   "album": "Adoro, la reine de Saba",
+   "year": 1973,
+   "country": "ar",
+   "faction": "tango",
+   "genres": [
+    "world"
+   ],
+   "why": "阿根廷歌手在日本走紅的探戈／拉丁歌曲代表作，最成功的專輯",
+   "moodGuess": {
+    "x": 3.3,
+    "y": 0.6,
+    "z": 0.5,
+    "why": "戲劇性嗓音搭拉丁編曲，熾烈而溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/de816482-a454-476e-a5e5-a51ea8e3d5cf",
+    "https://www.discogs.com/master/993120-Graciela-Susana-Adoro-La-Reine-De-Saba"
+   ],
+   "spotifyName": "Graciela Susana"
+  }
+ ],
+ "notes": [
+  "跳過：Toshiko Akiyoshi Trio → 池中寫法 秋吉敏子（8+ 張，另有 Toshiko Akiyoshi-Lew Tabackin Big Band）",
+  "跳過：The Joe Harriott-John Mayer Double Quintet → 池中寫法 Joe Harriott（Free Form、Abstract 2 張）；池中的 John Mayer 是流行歌手，非此位",
+  "跳過：板橋文夫トリオ → 池中寫法 板橋文夫／Fumio Itabashi Trio（板橋文夫 2 張＋Fumio Itabashi Trio Toh）",
+  "跳過：菊地雅章クインテット → 池中寫法 菊地雅章／Masabumi Kikuchi Quintet（8+ 張）",
+  "Sokratis Votskos with The Giorgos Pappas Trio：Votskos（希臘薩克斯風手）以 Pappas Trio 名義僅見於 Greg Foat 合作專輯 Impressions of Samos（2026），照該盤收；Greg Foat 另以 The Greg Foat Group 收一張（與 Foat 合作專輯視為不同署名）",
+  "The Greg Foat Group 僅收 1 張（Girl and Robot With Flowers）；Dancers at the Edge of Time、Symphonie Pacifique 等不收",
+  "Fresh Moods 裁定：德國 Elektrolux 下的藝人，非廠牌帳號，已收 1 張",
+  "Flea 裁定：確為 RHCP 貝斯手，個人錄音室專輯目前僅 Honora（2026，Nonesuch）；池中 RHCP 與其個人名義不同故收",
+  "Tyreek McDole、Yttling Jazz 僅有 1 張正規專輯／代表作，各收 1；Dominique Fils-Aimé 收 2（Nameless、Three Little Words）"
+ ]
+}

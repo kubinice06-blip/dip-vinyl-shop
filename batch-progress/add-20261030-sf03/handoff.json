@@ -1,0 +1,39 @@
+{
+ "batch": "add-20261030-sf03",
+ "cards": 23,
+ "written": {
+  "cardCatalog": 23,
+  "kvKeys": 40,
+  "seedRows": 23,
+  "previewReady": 19,
+  "previewUnavailable": 4
+ },
+ "review": {
+  "by": "cloud-main",
+  "cards": 23,
+  "changed": [
+   "desc2:Sinsuke Fujieda Group|Informel",
+   "desc4:バズ|Buzz"
+  ]
+ },
+ "qa": {
+  "research": "pass",
+  "hooks": "pass",
+  "out": "pass",
+  "prepareGate": "0 error",
+  "publishedGate": "0 error"
+ },
+ "pendingLocal": {
+  "kv": "無",
+  "listeners": [],
+  "apexEvidence": [],
+  "genreTree": "已重建",
+  "albumOverrides": "無"
+ },
+ "artistIntro": {
+  "roster": "batch-progress/artist-intro/roster-sf03.json",
+  "batch": "ar-d-203",
+  "artists": 20,
+  "state": "cut"
+ }
+}

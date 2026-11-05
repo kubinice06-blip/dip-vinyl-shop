@@ -1,0 +1,38 @@
+{
+ "batch": "add-20261022-mc1",
+ "cards": 22,
+ "written": {
+  "cardCatalog": 22,
+  "kvKeys": 22,
+  "seedRows": 22,
+  "previewReady": 20,
+  "previewUnavailable": 2
+ },
+ "review": {
+  "by": "cloud-main",
+  "cards": 22,
+  "changed": [
+   "desc2:KaS Product|By Pass",
+   "desc2:Xeno & Oaklander|Par Avion"
+  ]
+ },
+ "qa": {
+  "research": "pass",
+  "hooks": "pass",
+  "out": "pass",
+  "prepareGate": "0 error",
+  "publishedGate": "0 error"
+ },
+ "mood": {
+  "target": "冷冽",
+  "landed": "17/22",
+  "scored": "batch-progress/mood-axes/score-mc1/scored-mc1.json"
+ },
+ "pendingLocal": {
+  "kv": "無",
+  "listeners": [],
+  "apexEvidence": [],
+  "genreTree": "已重建",
+  "albumOverrides": "無"
+ }
+}

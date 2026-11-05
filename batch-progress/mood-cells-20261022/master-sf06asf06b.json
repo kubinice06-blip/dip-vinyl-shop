@@ -1,0 +1,777 @@
+[
+ {
+  "label": "非池中",
+  "mbRgMbid": "d1ddb824-fb47-3cca-ac90-df9423b3aa5c",
+  "mbAbsenceProof": null,
+  "manualEvidenceUrls": [
+   "https://zh.wikipedia.org/wiki/%E5%8A%89%E4%BB%A5%E9%81%94",
+   "https://www.discogs.com/master/3488311"
+  ],
+  "releaseException": "MB 與 Spotify 標 compilation，但中文維基列為錄音室專輯、1996 年 1 月以個人專輯名義發行（非池中），曲目為新作，主線裁定照錄音室專輯收",
+  "queryAlias": "",
+  "uncertain": "MB 標 Compilation；封面僅 Discogs master；池中有達明一派但劉以達另立，不算已有",
+  "artist": "劉以達",
+  "album": "麻木",
+  "year": 1996,
+  "country": "hk",
+  "faction": "hk-indie",
+  "genres": [
+   "rock",
+   "electronic"
+  ],
+  "why": "達明一派吉他手／作曲人的首張個人專輯，粵語搖滾與電子實驗的代表作。",
+  "moodGuess": {
+   "x": -0.3,
+   "y": -0.4,
+   "z": 0.4,
+   "why": "陰鬱電子與吉他、略帶迷幻"
+  },
+  "evidence": [
+   "https://www.discogs.com/master/3488311",
+   "https://musicbrainz.org/release-group/d1ddb824-fb47-3cca-ac90-df9423b3aa5c"
+  ],
+  "spotifyName": "劉以達",
+  "group": "sf06a",
+  "factionZh": "香港獨立／搖滾",
+  "mb": {
+   "title": "麻木",
+   "type": "Album",
+   "sec": [
+    "Compilation"
+   ],
+   "date": "1996",
+   "credit": "劉以達"
+  }
+ },
+ {
+  "label": "GDJYB Independent",
+  "mbRgMbid": "03ca41f5-79b5-4f7e-a82c-0f9f315a1166",
+  "mbAbsenceProof": null,
+  "manualEvidenceUrls": [],
+  "releaseException": "",
+  "queryAlias": "",
+  "uncertain": "MB 首發 2017-01-21，Wikipedia 為 2016-12-17，年份用 2016",
+  "artist": "雞蛋蒸肉餅",
+  "album": "23:59 Before Tomorrow",
+  "year": 2016,
+  "country": "hk",
+  "faction": "hk-indie",
+  "genres": [
+   "rock"
+  ],
+  "why": "香港全女子樂團首張正規專輯，獲 2017 香港樂評選年度樂團並入圍金曲獎最佳樂團。",
+  "moodGuess": {
+   "x": 0.2,
+   "y": 0.2,
+   "z": 0.5,
+   "why": "中性風搖滾、帶電子與舞曲脈衝"
+  },
+  "evidence": [
+   "https://coverartarchive.org/release-group/03ca41f5-79b5-4f7e-a82c-0f9f315a1166/front",
+   "https://music.apple.com/tw/album/23-59-before-tomorrow/1716818460"
+  ],
+  "spotifyName": "GDJYB 雞蛋蒸肉餅",
+  "group": "sf06a",
+  "factionZh": "香港獨立／搖滾",
+  "mb": {
+   "title": "23:59 Before Tomorrow",
+   "type": "Album",
+   "sec": [],
+   "date": "2017-01-21",
+   "credit": "GDJYB"
+  }
+ },
+ {
+  "label": "Wings Music",
+  "mbRgMbid": "b98782c5-185a-4163-807a-c7bacdce19da",
+  "mbAbsenceProof": null,
+  "manualEvidenceUrls": [],
+  "releaseException": "",
+  "queryAlias": "张亚东",
+  "uncertain": "MB 首發日 1999-05-13，Wikipedia 與 Apple 為 1998；封面用 Apple（CAA 無）",
+  "artist": "張亞東",
+  "album": "Ya Tung",
+  "year": 1998,
+  "country": "cn",
+  "faction": "cn-rock",
+  "genres": [
+   "electronic",
+   "rock"
+  ],
+  "why": "王菲御用製作人的首張個人專輯，電子與實驗搖滾，其個人作品中最被提及者。",
+  "moodGuess": {
+   "x": 0,
+   "y": -0.2,
+   "z": 0.6,
+   "why": "電子節拍加迷幻吉他，疏離冷調"
+  },
+  "evidence": [
+   "https://music.apple.com/tw/album/ya-tung/53494409",
+   "https://www.allmusic.com/album/ya-tung-mw0000330036"
+  ],
+  "spotifyName": "Chang Ya Tung",
+  "group": "sf06a",
+  "factionZh": "中國搖滾製作人",
+  "mb": {
+   "title": "Ya Tung",
+   "type": "Album",
+   "sec": [],
+   "date": "1999-05-13",
+   "credit": "张亚东"
+  }
+ },
+ {
+  "label": "Moon Records",
+  "mbRgMbid": "fbf13ff8-ffcb-3d12-9e54-bd739b31686a",
+  "mbAbsenceProof": null,
+  "manualEvidenceUrls": [],
+  "releaseException": "",
+  "queryAlias": "AB's",
+  "uncertain": "MB 名為 AB’s；廠牌為 Moon Records 係據 AB'S-2 推定",
+  "artist": "AB'S",
+  "album": "AB'S",
+  "year": 1983,
+  "country": "jp",
+  "faction": "jp-aor",
+  "genres": [
+   "rock",
+   "pop"
+  ],
+  "why": "芳野藤丸、松下誠等組成的日本 AOR 樂團首張專輯，城市流行的代表。",
+  "moodGuess": {
+   "x": 0.5,
+   "y": -0.3,
+   "z": 0.3,
+   "why": "明亮 AOR、吉他與合成器"
+  },
+  "evidence": [
+   "https://coverartarchive.org/release-group/fbf13ff8-ffcb-3d12-9e54-bd739b31686a/front",
+   "https://music.apple.com/tw/album/abs-2-2023-remaster/1661080695"
+  ],
+  "spotifyName": "AB'S",
+  "group": "sf06a",
+  "factionZh": "日本 AOR",
+  "mb": {
+   "title": "AB’s",
+   "type": "Album",
+   "sec": [],
+   "date": "1983-01-21",
+   "credit": "AB’s"
+  }
+ },
+ {
+  "label": "",
+  "mbRgMbid": "8b7ef6ac-f2ab-4865-b66c-6f0f2dcb0118",
+  "mbAbsenceProof": null,
+  "manualEvidenceUrls": [],
+  "releaseException": "",
+  "queryAlias": "",
+  "uncertain": "風格據推測，聲音未驗證",
+  "artist": "Everfor",
+  "album": "空中閣樓",
+  "year": 2021,
+  "country": "tw",
+  "faction": "tw-rock",
+  "genres": [
+   "pop",
+   "rock"
+  ],
+  "why": "台灣創作者蘇偉安 Everfor 的首張專輯，也是 MB 上唯一正規專輯。",
+  "moodGuess": {
+   "x": 0.3,
+   "y": 0.3,
+   "z": 0.4,
+   "why": "輕盈夢幻的流行搖滾"
+  },
+  "evidence": [
+   "https://coverartarchive.org/release-group/8b7ef6ac-f2ab-4865-b66c-6f0f2dcb0118/front",
+   "https://music.apple.com/tw/album/%E7%A9%BA%E4%B8%AD%E9%96%A3%E6%A8%93/1818394415"
+  ],
+  "spotifyName": "Everfor",
+  "group": "sf06a",
+  "factionZh": "台灣搖滾／流行",
+  "mb": {
+   "title": "空中閣樓",
+   "type": "Album",
+   "sec": [],
+   "date": "2021-10-29",
+   "credit": "Everfor"
+  }
+ },
+ {
+  "label": "",
+  "mbRgMbid": "3f6e759d-f253-46ac-9668-55bdd7a23403",
+  "mbAbsenceProof": null,
+  "manualEvidenceUrls": [],
+  "releaseException": "6 首長 EP，為目前唯一主要作品",
+  "queryAlias": "",
+  "uncertain": "無正規專輯，靠 releaseException 收；MB 標 EP",
+  "artist": "Kaishandao",
+  "album": "Homeland",
+  "year": 2021,
+  "country": "cn",
+  "faction": "cn-indie",
+  "genres": [
+   "electronic"
+  ],
+  "why": "成都製作人 Kristen Ng 的主要作品，6 首長 EP，也是 MB 上唯一一張。",
+  "moodGuess": {
+   "x": -0.2,
+   "y": 0.1,
+   "z": 0.7,
+   "why": "實驗電子，顆粒質感與氛圍"
+  },
+  "evidence": [
+   "https://coverartarchive.org/release-group/3f6e759d-f253-46ac-9668-55bdd7a23403/front",
+   "https://music.apple.com/tw/album/homeland/6786099119"
+  ],
+  "spotifyName": "Kaishandao",
+  "group": "sf06a",
+  "factionZh": "中國獨立／電子",
+  "mb": {
+   "title": "Homeland",
+   "type": "EP",
+   "sec": [],
+   "date": "2021-05-21",
+   "credit": "Kaishandao"
+  }
+ },
+ {
+  "label": "相信音樂",
+  "mbRgMbid": "bff94efd-6eac-44b3-8ae6-755807037603",
+  "mbAbsenceProof": null,
+  "manualEvidenceUrls": [],
+  "releaseException": "",
+  "queryAlias": "亂彈阿翔",
+  "uncertain": "Apple 版標題含「十年幕後創作精華」副題；MB 2011，維基 2012-02-03；MB 無封面，Apple 有。Luantan Ascent 由維基連結推定",
+  "artist": "亂彈阿翔",
+  "album": "把我換成你",
+  "year": 2011,
+  "country": "tw",
+  "faction": "tw-rock",
+  "genres": [
+   "pop",
+   "rock"
+  ],
+  "why": "以幕後創作人身分累積十年後的專輯，獲金曲獎最佳國語男歌手。",
+  "moodGuess": {
+   "x": 0,
+   "y": 0,
+   "z": 0.1,
+   "why": "溫厚民謠搖滾，抒情中帶沙啞"
+  },
+  "evidence": [
+   "https://musicbrainz.org/release-group/bff94efd-6eac-44b3-8ae6-755807037603",
+   "https://music.apple.com/tw/album/%E6%8A%8A%E6%88%91%E6%8F%9B%E6%88%90%E4%BD%A0-%E5%8D%81%E5%B9%B4%E5%B9%95%E5%BE%8C%E5%89%B5%E4%BD%9C%E7%B2%BE%E8%8F%AF-%E9%9B%BB%E5%BD%B1%E9%9B%BB%E8%A6%96%E4%B8%BB%E9%A1%8C%E6%AD%8C%E6%9B%B2%E5%B0%88%E8%BC%AF/1535762054"
+  ],
+  "spotifyName": "Luantan Ascent",
+  "group": "sf06a",
+  "factionZh": "台灣搖滾／流行",
+  "mb": {
+   "title": "把我換成你 Me in Place of You",
+   "type": "Album",
+   "sec": [],
+   "date": "2011",
+   "credit": "Luantan Ascent"
+  }
+ },
+ {
+  "label": "",
+  "mbRgMbid": "2784d2ca-82bc-4692-b7a6-605b0675e5a0",
+  "mbAbsenceProof": null,
+  "manualEvidenceUrls": [],
+  "releaseException": "",
+  "queryAlias": "Lujiachi",
+  "uncertain": "",
+  "artist": "盧家齊",
+  "album": "Circle = 圆",
+  "year": 2016,
+  "country": "tw",
+  "faction": "tw-ambient",
+  "genres": [
+   "electronic",
+   "world"
+  ],
+  "why": "台灣氛圍／drone／部落電子藝人 Lujiachi 的首張專輯，也是唯一正規長專。",
+  "moodGuess": {
+   "x": -0.3,
+   "y": -0.2,
+   "z": 0.8,
+   "why": "drone 與部落打擊，催眠氛圍"
+  },
+  "evidence": [
+   "https://coverartarchive.org/release-group/2784d2ca-82bc-4692-b7a6-605b0675e5a0/front",
+   "https://musicbrainz.org/release-group/2784d2ca-82bc-4692-b7a6-605b0675e5a0"
+  ],
+  "spotifyName": "Lujiachi",
+  "group": "sf06a",
+  "factionZh": "台灣氛圍／實驗",
+  "mb": {
+   "title": "Circle = 圆",
+   "type": "Album",
+   "sec": [],
+   "date": "2016-09-09",
+   "credit": "Lujiachi = 盧家齊"
+  }
+ },
+ {
+  "label": "",
+  "mbRgMbid": "21aa44c4-a39f-4049-b40c-183f31fd6669",
+  "mbAbsenceProof": null,
+  "manualEvidenceUrls": [],
+  "releaseException": "",
+  "queryAlias": "",
+  "uncertain": "Apple 僅 5 首；Spotify 的 Shaa Khan 是否即此德國團未能由 Spotify 端驗證，靠名稱唯一性判定",
+  "artist": "Shaa Khan",
+  "album": "The World Will End on Friday",
+  "year": 1978,
+  "country": "de",
+  "faction": "krautrock",
+  "genres": [
+   "rock",
+   "electronic"
+  ],
+  "why": "1970 年代德國 Krautrock 樂團唯一的時期專輯，MB 上最具代表。",
+  "moodGuess": {
+   "x": 0.1,
+   "y": 0.1,
+   "z": 0.6,
+   "why": "太空搖滾，合成器與重複節奏"
+  },
+  "evidence": [
+   "https://coverartarchive.org/release-group/21aa44c4-a39f-4049-b40c-183f31fd6669/front",
+   "https://music.apple.com/us/album/the-world-will-end-on-friday/1047702627"
+  ],
+  "spotifyName": "Shaa Khan",
+  "group": "sf06a",
+  "factionZh": "德國 Krautrock",
+  "mb": {
+   "title": "The World Will End On Friday",
+   "type": "Album",
+   "sec": [],
+   "date": "1978",
+   "credit": "Shaa Khan"
+  }
+ },
+ {
+  "label": "",
+  "mbRgMbid": "3cf3fb65-1622-4d67-ae1b-1247b88efbd2",
+  "mbAbsenceProof": null,
+  "manualEvidenceUrls": [],
+  "releaseException": "",
+  "queryAlias": "",
+  "uncertain": "代表性依據薄（只有 Last.fm 簡介），第二張為 2022 Analog Love",
+  "artist": "The Cheers Cheers",
+  "album": "Carinae",
+  "year": 2016,
+  "country": "cn",
+  "faction": "cn-indie",
+  "genres": [
+   "rock"
+  ],
+  "why": "紹興夢幻流行／shoegaze 樂團的首張專輯。",
+  "moodGuess": {
+   "x": 0.2,
+   "y": -0.1,
+   "z": 0.7,
+   "why": "柔霧吉他與夢幻合成器"
+  },
+  "evidence": [
+   "https://coverartarchive.org/release-group/3cf3fb65-1622-4d67-ae1b-1247b88efbd2/front",
+   "https://www.last.fm/music/The+Cheers+Cheers"
+  ],
+  "spotifyName": "The Cheers Cheers",
+  "group": "sf06a",
+  "factionZh": "中國獨立／電子",
+  "mb": {
+   "title": "Carinae",
+   "type": "Album",
+   "sec": [],
+   "date": "2016-08-30",
+   "credit": "The Cheers Cheers"
+  }
+ },
+ {
+  "label": "",
+  "mbRgMbid": "8c5e16fd-176f-4ab4-bb58-999b6de5975e",
+  "mbAbsenceProof": null,
+  "manualEvidenceUrls": [],
+  "releaseException": "",
+  "queryAlias": "",
+  "uncertain": "MB 作 hip hop producer；北京身分由 Apple 單曲名推定",
+  "artist": "Fishdoll",
+  "album": "Noonsense",
+  "year": 2018,
+  "country": "cn",
+  "faction": "cn-hiphop",
+  "genres": [
+   "hiphop",
+   "electronic"
+  ],
+  "why": "北京製作人 Fishdoll 的首張專輯，中式 lo-fi 嘻哈節拍的代表。",
+  "moodGuess": {
+   "x": 0,
+   "y": -0.2,
+   "z": 0.5,
+   "why": "採樣 lo-fi 節拍，慵懶迷幻"
+  },
+  "evidence": [
+   "https://coverartarchive.org/release-group/8c5e16fd-176f-4ab4-bb58-999b6de5975e/front",
+   "https://music.apple.com/us/album/noonsense/1322048332"
+  ],
+  "spotifyName": "Fishdoll",
+  "group": "sf06a",
+  "factionZh": "中國嘻哈／實驗電子",
+  "mb": {
+   "title": "Noonsense",
+   "type": "Album",
+   "sec": [],
+   "date": "2018-01-19",
+   "credit": "Fishdoll"
+  }
+ },
+ {
+  "artist": "Juggaknots",
+  "album": "The Juggaknots",
+  "year": 1996,
+  "label": "Fondle 'Em Records",
+  "country": "us",
+  "faction": "us-underground-hiphop",
+  "genres": [
+   "hiphop"
+  ],
+  "why": "紐約地下嘻哈公認經典，家族式連珠炮押韻與爵士取樣，常被列為90年代被低估的神盤",
+  "moodGuess": {
+   "x": 3.6,
+   "y": 0.3,
+   "z": -0.3,
+   "why": "密集連珠炮押韻、鼓點硬、取樣偏灰暗"
+  },
+  "evidence": [
+   "https://coverartarchive.org/release-group/58836a73-2789-4a61-8795-ea09a424aff8/front",
+   "https://musicbrainz.org/release-group/58836a73-2789-4a61-8795-ea09a424aff8"
+  ],
+  "spotifyName": "Juggaknots",
+  "mbRgMbid": "58836a73-2789-4a61-8795-ea09a424aff8",
+  "mbAbsenceProof": null,
+  "manualEvidenceUrls": [],
+  "releaseException": "",
+  "queryAlias": "",
+  "uncertain": "",
+  "group": "sf06b",
+  "factionZh": "us-underground-hiphop",
+  "mb": {
+   "title": "The Juggaknots",
+   "type": "Album",
+   "sec": [],
+   "date": "1996",
+   "credit": "Juggaknots"
+  }
+ },
+ {
+  "artist": "Glen Check",
+  "album": "Haute Couture",
+  "year": 2012,
+  "label": "",
+  "country": "kr",
+  "faction": "kr-indie",
+  "genres": [
+   "electronic",
+   "pop"
+  ],
+  "why": "首張正規專輯，奪韓國大眾音樂獎最佳電子專輯，首爾電子搖滾雙人組的成名作",
+  "moodGuess": {
+   "x": 3.4,
+   "y": -0.4,
+   "z": 0.8,
+   "why": "明亮 disco 律動、清亮吉他與合成器"
+  },
+  "evidence": [
+   "https://musicbrainz.org/release-group/32136921-f59e-43a2-8bfa-e3d64515c5de",
+   "https://coverartarchive.org/release-group/32136921-f59e-43a2-8bfa-e3d64515c5de/front"
+  ],
+  "spotifyName": "Glen Check",
+  "mbRgMbid": "32136921-f59e-43a2-8bfa-e3d64515c5de",
+  "mbAbsenceProof": null,
+  "manualEvidenceUrls": [],
+  "releaseException": "",
+  "queryAlias": "",
+  "uncertain": "主線改盤：原選 2022《Bleach》；國別改 kr（首爾樂團）",
+  "group": "sf06b",
+  "factionZh": "kr-indie",
+  "mb": {
+   "title": "Haute couture",
+   "type": "Album",
+   "sec": [],
+   "date": "2012-02-28",
+   "credit": "Glen Check"
+  }
+ },
+ {
+  "artist": "강태환",
+  "album": "소리 (Sorefa)",
+  "year": 2011,
+  "label": "",
+  "country": "kr",
+  "faction": "kr-free-jazz",
+  "genres": [
+   "jazz"
+  ],
+  "why": "韓國自由爵士薩克斯風先驅強太煥的錄音室專輯，Spotify 上以 Sorefa 收錄",
+  "moodGuess": {
+   "x": 4.2,
+   "y": 0,
+   "z": -1.5,
+   "why": "無調自由即興薩克斯、尖銳緊繃"
+  },
+  "evidence": [
+   "https://coverartarchive.org/release-group/a4921815-49f0-4eca-87e6-c96d3c048cb0/front",
+   "https://musicbrainz.org/release-group/a4921815-49f0-4eca-87e6-c96d3c048cb0"
+  ],
+  "spotifyName": "Kang Tae Hwan",
+  "mbRgMbid": "a4921815-49f0-4eca-87e6-c96d3c048cb0",
+  "mbAbsenceProof": null,
+  "manualEvidenceUrls": [],
+  "releaseException": "",
+  "queryAlias": "Kang Tae-Hwan",
+  "uncertain": "盤名在 MB／Apple 為 Sorefa（소리 之羅馬拼音），Spotify 版年份 2020 為再上架；選 Sorefa 對應 Apple 盤，若不符可改 1991《Tokebi》",
+  "group": "sf06b",
+  "factionZh": "kr-free-jazz",
+  "mb": {
+   "title": "Sorefa",
+   "type": "Album",
+   "sec": [],
+   "date": "2011-12-29",
+   "credit": "Kang Tae Hwan"
+  }
+ },
+ {
+  "artist": "Superstar Quamallah",
+  "album": "Invisible Man",
+  "year": 2009,
+  "label": "Brick Records",
+  "country": "us",
+  "faction": "us-jazz-rap",
+  "genres": [
+   "hiphop",
+   "jazz"
+  ],
+  "why": "與 DeQawn 合作的爵士饒舌地下名盤，Gilles Peterson 2009 年度選盤，2024 首度發行黑膠",
+  "moodGuess": {
+   "x": 2.8,
+   "y": 0.2,
+   "z": 0.6,
+   "why": "爵士取樣暖調、老派押韻、節奏放鬆"
+  },
+  "evidence": [
+   "https://coverartarchive.org/release-group/1691a814-f1c1-496a-957e-bef40bee5b5c/front",
+   "https://musicbrainz.org/release-group/1691a814-f1c1-496a-957e-bef40bee5b5c"
+  ],
+  "spotifyName": "Superstar Quamallah",
+  "mbRgMbid": "1691a814-f1c1-496a-957e-bef40bee5b5c",
+  "mbAbsenceProof": null,
+  "manualEvidenceUrls": [],
+  "releaseException": "",
+  "queryAlias": "",
+  "uncertain": "與 DeQawn 共同署名，Discogs 主版 1532004",
+  "group": "sf06b",
+  "factionZh": "us-jazz-rap",
+  "mb": {
+   "title": "Invisible Man",
+   "type": "Album",
+   "sec": [],
+   "date": "2009",
+   "credit": "Superstar Quamallah"
+  }
+ },
+ {
+  "artist": "7FO",
+  "album": "Water Falls Into a Blank",
+  "year": 2016,
+  "label": "",
+  "country": "jp",
+  "faction": "jp-bedroom-electronic",
+  "genres": [
+   "electronic"
+  ],
+  "why": "日本個人電子音樂家 7FO 的錄音室專輯（Apple 為 2026 再上架），輕柔實驗電子",
+  "moodGuess": {
+   "x": 2,
+   "y": -0.6,
+   "z": -0.2,
+   "why": "細碎電子音與空氣感，安靜"
+  },
+  "evidence": [
+   "https://coverartarchive.org/release-group/1020997c-9130-427c-9bf2-d356b97b85c3/front",
+   "https://musicbrainz.org/release-group/1020997c-9130-427c-9bf2-d356b97b85c3"
+  ],
+  "spotifyName": "7FO",
+  "mbRgMbid": "1020997c-9130-427c-9bf2-d356b97b85c3",
+  "mbAbsenceProof": null,
+  "manualEvidenceUrls": [],
+  "releaseException": "",
+  "queryAlias": "",
+  "uncertain": "極小眾；代表性證據薄弱，僅 MB 與 CAA；第二候補 電氣爆発(2019)",
+  "group": "sf06b",
+  "factionZh": "jp-bedroom-electronic",
+  "mb": {
+   "title": "Water Falls Into a Blank",
+   "type": "Album",
+   "sec": [],
+   "date": "2016-10-07",
+   "credit": "7FO"
+  }
+ },
+ {
+  "artist": "Monique Chao Jazz Orchestra",
+  "album": "Time Chamber",
+  "year": 2024,
+  "label": "",
+  "country": "it",
+  "faction": "it-jazz",
+  "genres": [
+   "jazz"
+  ],
+  "why": "該樂團唯一的錄音室專輯，8 首原創大編制爵士",
+  "moodGuess": {
+   "x": 3,
+   "y": 0.3,
+   "z": 0.4,
+   "why": "大編制爵士，旋律明確"
+  },
+  "evidence": [
+   "https://coverartarchive.org/release-group/14a6518b-2526-421f-8bf0-ce6c54a4505b/front",
+   "https://musicbrainz.org/release-group/14a6518b-2526-421f-8bf0-ce6c54a4505b"
+  ],
+  "spotifyName": "Monique Chao Jazz Orchestra",
+  "mbRgMbid": "14a6518b-2526-421f-8bf0-ce6c54a4505b",
+  "mbAbsenceProof": null,
+  "manualEvidenceUrls": [],
+  "releaseException": "",
+  "queryAlias": "",
+  "uncertain": "僅一張、評論資料薄弱；Apple 有 https://music.apple.com/us/album/time-chamber/1754473271",
+  "group": "sf06b",
+  "factionZh": "it-jazz",
+  "mb": {
+   "title": "Time Chamber",
+   "type": "Album",
+   "sec": [],
+   "date": "2024-09-07",
+   "credit": "Monique Chao Jazz Orchestra"
+  }
+ },
+ {
+  "artist": "JUU4E",
+  "album": "馬鹿世界 โลกบ้า (Crazy World)",
+  "year": 2021,
+  "label": "",
+  "country": "th",
+  "faction": "th-indie",
+  "genres": [
+   "pop"
+  ],
+  "why": "泰日混合藝人 JUU4E 的首張專輯，最具辨識度的作品",
+  "moodGuess": {
+   "x": 3,
+   "y": 0,
+   "z": 0,
+   "why": "未聽證，待評"
+  },
+  "evidence": [
+   "https://coverartarchive.org/release-group/2732e98f-fa6a-4642-8667-3e1348cd9a5c/front",
+   "https://musicbrainz.org/release-group/2732e98f-fa6a-4642-8667-3e1348cd9a5c"
+  ],
+  "spotifyName": "JUU4E",
+  "mbRgMbid": "2732e98f-fa6a-4642-8667-3e1348cd9a5c",
+  "mbAbsenceProof": null,
+  "manualEvidenceUrls": [],
+  "releaseException": "",
+  "queryAlias": "",
+  "uncertain": "身分資料極薄（MB 無國別、無簡介），代表作未經評論證實；建議店主不必收",
+  "group": "sf06b",
+  "factionZh": "th-indie",
+  "mb": {
+   "title": "馬鹿世界 โลกบ้า (Crazy World)",
+   "type": "Album",
+   "sec": [],
+   "date": "2021-03-19",
+   "credit": "JUU4E"
+  }
+ },
+ {
+  "artist": "dotzio",
+  "album": "The File You're Looking for No Longer Exist",
+  "year": 2018,
+  "label": "",
+  "country": "tw",
+  "faction": "tw-electronic",
+  "genres": [
+   "electronic"
+  ],
+  "why": "台灣獨立音樂人張軒（Hsuan Chang）的 dotzio 計畫，唯一一張錄音室專輯",
+  "moodGuess": {
+   "x": 2.6,
+   "y": 0,
+   "z": -0.4,
+   "why": "實驗電子，偏安靜"
+  },
+  "evidence": [
+   "https://coverartarchive.org/release-group/a2af3cce-d018-42a1-88dc-9e7d00636080/front",
+   "https://musicbrainz.org/release-group/a2af3cce-d018-42a1-88dc-9e7d00636080"
+  ],
+  "spotifyName": "dotzio",
+  "mbRgMbid": "a2af3cce-d018-42a1-88dc-9e7d00636080",
+  "mbAbsenceProof": null,
+  "manualEvidenceUrls": [],
+  "releaseException": "",
+  "queryAlias": "",
+  "uncertain": "唯一專輯、極小眾；Apple TW 無自家專輯",
+  "group": "sf06b",
+  "factionZh": "tw-electronic",
+  "mb": {
+   "title": "The File You’re Looking for No Longer Exist",
+   "type": "Album",
+   "sec": [],
+   "date": "2018-08-09",
+   "credit": "dotzio"
+  }
+ },
+ {
+  "artist": "Championxiii",
+  "album": "Champion Status",
+  "year": 2019,
+  "label": "",
+  "country": "us",
+  "faction": "us-internet-rap",
+  "genres": [
+   "hiphop"
+  ],
+  "why": "TikTok 起家的美國饒舌歌手，唯一正規專輯",
+  "moodGuess": {
+   "x": 4,
+   "y": 0.5,
+   "z": -0.5,
+   "why": "trap 節奏、重低頻、攻擊性"
+  },
+  "evidence": [
+   "https://coverartarchive.org/release-group/396985ac-4b3b-4563-addc-3b85f64124ab/front",
+   "https://musicbrainz.org/release-group/396985ac-4b3b-4563-addc-3b85f64124ab"
+  ],
+  "spotifyName": "Championxiii",
+  "mbRgMbid": "396985ac-4b3b-4563-addc-3b85f64124ab",
+  "mbAbsenceProof": null,
+  "manualEvidenceUrls": [],
+  "releaseException": "",
+  "queryAlias": "",
+  "uncertain": "網路爆紅型，樂評共識薄弱；建議店主視情況刪",
+  "group": "sf06b",
+  "factionZh": "us-internet-rap",
+  "mb": {
+   "title": "Champion Status",
+   "type": "Album",
+   "sec": [],
+   "date": "2019-06-03",
+   "credit": "Championxiii"
+  }
+ }
+]

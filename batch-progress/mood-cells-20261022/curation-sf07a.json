@@ -1,0 +1,792 @@
+{
+ "group": "sf07a",
+ "factions": [
+  {
+   "id": "uk-psych-prog",
+   "zh": "英國迷幻／前衛搖滾",
+   "count": 12,
+   "why": ""
+  },
+  {
+   "id": "uk-hard-heavy",
+   "zh": "英國硬搖滾／風琴重搖",
+   "count": 3,
+   "why": ""
+  },
+  {
+   "id": "us-psych-hard",
+   "zh": "美國迷幻／硬搖滾",
+   "count": 5,
+   "why": ""
+  },
+  {
+   "id": "de-it-prog",
+   "zh": "德國／義大利 krautrock 與 prog",
+   "count": 5,
+   "why": ""
+  }
+ ],
+ "albums": [
+  {
+   "artist": "Atomic Rooster",
+   "album": "Death Walks Behind You",
+   "year": 1970,
+   "label": "B&C",
+   "country": "gb",
+   "faction": "uk-hard-heavy",
+   "genres": [
+    "rock",
+    "metal"
+   ],
+   "why": "風琴領軍的硬搖滾二人組經典，Vincent Crane 的 Hammond 與 Death Walks Behind You 奠定樂團名聲",
+   "moodGuess": {
+    "x": 3.9,
+    "y": 1.2,
+    "z": -0.8,
+    "why": "風琴與重 riff 壓著走，陰沉有衝勁"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/c784ac73-88e3-370f-bf8e-7196a070c63e/front",
+    "https://music.apple.com/gb/album/death-walks-behind-you/1435671653",
+    "https://musicbrainz.org/release-group/c784ac73-88e3-370f-bf8e-7196a070c63e"
+   ],
+   "spotifyName": "Atomic Rooster",
+   "mbRgMbid": "c784ac73-88e3-370f-bf8e-7196a070c63e",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Atomic Rooster",
+   "album": "In Hearing Of Atomic Rooster",
+   "year": 1971,
+   "label": "Pegasus",
+   "country": "gb",
+   "faction": "uk-hard-heavy",
+   "genres": [
+    "rock",
+    "metal"
+   ],
+   "why": "最高銷量的英國榜專輯（榜上第 18），加入 Pete French 主唱，Break the Sun 等代表曲",
+   "moodGuess": {
+    "x": 3.8,
+    "y": 1.0,
+    "z": -0.3,
+    "why": "風琴硬搖加嘶吼人聲，旋律較清楚"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/75d1a8c4-1d1f-3447-9824-883880530965/front",
+    "https://music.apple.com/gb/album/in-hearing-of-atomic-rooster/1436129409",
+    "https://musicbrainz.org/release-group/75d1a8c4-1d1f-3447-9824-883880530965"
+   ],
+   "spotifyName": "Atomic Rooster",
+   "mbRgMbid": "75d1a8c4-1d1f-3447-9824-883880530965",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "In Hearing Of",
+   "uncertain": ""
+  },
+  {
+   "artist": "Black Widow",
+   "album": "Sacrifice",
+   "year": 1970,
+   "label": "CBS",
+   "country": "gb",
+   "faction": "uk-psych-prog",
+   "genres": [
+    "rock"
+   ],
+   "why": "以黑魔法儀式舞台聞名的英國 prog／迷幻代表作，長篇 Come to the Sabbat 為樂迷公認經典",
+   "moodGuess": {
+    "x": 3.4,
+    "y": 1.0,
+    "z": -1.0,
+    "why": "陰森長篇曲，長笛與管風琴帶儀式感"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/2d250203-9074-325f-bb03-8af87b124712/front",
+    "https://musicbrainz.org/release-group/2d250203-9074-325f-bb03-8af87b124712"
+   ],
+   "spotifyName": "Black Widow",
+   "mbRgMbid": "2d250203-9074-325f-bb03-8af87b124712",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Bloodrock",
+   "album": "Bloodrock 2",
+   "year": 1970,
+   "label": "Capitol",
+   "country": "us",
+   "faction": "us-psych-hard",
+   "genres": [
+    "rock",
+    "metal"
+   ],
+   "why": "樂團最暢銷之作，收錄恐怖車禍歌 D.O.A. 上榜，德州重型迷幻搖滾代表",
+   "moodGuess": {
+    "x": 3.8,
+    "y": 1.4,
+    "z": -1.2,
+    "why": "低頻厚重的失真與陰鬱歌詞"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/a7d19c59-7269-39d3-b05f-68125f219f9c/front",
+    "https://musicbrainz.org/release-group/a7d19c59-7269-39d3-b05f-68125f219f9c"
+   ],
+   "spotifyName": "Bloodrock",
+   "mbRgMbid": "a7d19c59-7269-39d3-b05f-68125f219f9c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Frijid Pink",
+   "album": "Frijid Pink",
+   "year": 1970,
+   "label": "Parrot",
+   "country": "us",
+   "faction": "us-psych-hard",
+   "genres": [
+    "rock",
+    "blues"
+   ],
+   "why": "底特律迷幻硬搖，翻唱 House of the Rising Sun 成全球暢銷曲，同名首作即巔峰",
+   "moodGuess": {
+    "x": 3.8,
+    "y": 1.3,
+    "z": -0.5,
+    "why": "失真吉他與哇音嘶吼的藍調重搖滾"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/105073a1-01aa-3674-9966-708fe96417a9/front",
+    "https://music.apple.com/gb/album/frijid-pink-digitially-remastered/1580600981",
+    "https://musicbrainz.org/release-group/105073a1-01aa-3674-9966-708fe96417a9"
+   ],
+   "spotifyName": "Frijid Pink",
+   "mbRgMbid": "105073a1-01aa-3674-9966-708fe96417a9",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Gravy Train",
+   "album": "(A Ballad of) A Peaceful Man",
+   "year": 1971,
+   "label": "Vertigo",
+   "country": "gb",
+   "faction": "uk-psych-prog",
+   "genres": [
+    "rock",
+    "folk"
+   ],
+   "why": "曼徹斯特 prog 民謠搖滾的公認代表，長笛、原聲吉他與管風琴交織的牧歌氣質",
+   "moodGuess": {
+    "x": 2.9,
+    "y": 0.3,
+    "z": 0.3,
+    "why": "長笛與原聲吉他，田園溫暖帶起伏"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/1d3e41d9-2892-36d1-8260-016a33abde86/front",
+    "https://music.apple.com/gb/album/a-ballad-of-a-peaceful-man/1563803638",
+    "https://musicbrainz.org/release-group/1d3e41d9-2892-36d1-8260-016a33abde86"
+   ],
+   "spotifyName": "Gravy Train",
+   "mbRgMbid": "1d3e41d9-2892-36d1-8260-016a33abde86",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "High Tide",
+   "album": "Sea Shanties",
+   "year": 1969,
+   "label": "Liberty",
+   "country": "gb",
+   "faction": "uk-psych-prog",
+   "genres": [
+    "rock"
+   ],
+   "why": "Simon House 小提琴與 Tony Hill 吉他的暗黑迷幻 proto-prog 經典，被公認為樂團唯一巔峰",
+   "moodGuess": {
+    "x": 3.8,
+    "y": 1.1,
+    "z": -1.2,
+    "why": "小提琴與失真吉他狂暴交纏，陰暗"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/0144a88b-27c7-35b9-8f4b-7433bc70de73/front",
+    "https://musicbrainz.org/release-group/0144a88b-27c7-35b9-8f4b-7433bc70de73"
+   ],
+   "spotifyName": "High Tide",
+   "mbRgMbid": "0144a88b-27c7-35b9-8f4b-7433bc70de73",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "High Tide",
+   "album": "High Tide",
+   "year": 1970,
+   "label": "Liberty",
+   "country": "gb",
+   "faction": "uk-psych-prog",
+   "genres": [
+    "rock"
+   ],
+   "why": "第二張專輯，更長的器樂即興與更成熟的編排，是與首作並列的另一個高峰",
+   "moodGuess": {
+    "x": 3.7,
+    "y": 1.0,
+    "z": -1.0,
+    "why": "小提琴與重吉他長段即興，晦暗"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/e9b28d19-de59-3e26-9dbc-995d215cacd9/front",
+    "https://musicbrainz.org/release-group/e9b28d19-de59-3e26-9dbc-995d215cacd9"
+   ],
+   "spotifyName": "High Tide",
+   "mbRgMbid": "e9b28d19-de59-3e26-9dbc-995d215cacd9",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Jade Warrior",
+   "album": "Floating World",
+   "year": 1974,
+   "label": "Island",
+   "country": "gb",
+   "faction": "uk-psych-prog",
+   "genres": [
+    "rock",
+    "world"
+   ],
+   "why": "Island 時期代表作，融合東方五聲音階、笛與打擊的器樂 prog，樂迷公認巔峰",
+   "moodGuess": {
+    "x": 2.2,
+    "y": -0.4,
+    "z": 0.2,
+    "why": "笛與東方打擊樂，空靈懸浮"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/ec10deb8-83d0-3180-9e69-1fd83c7875f8/front",
+    "https://musicbrainz.org/release-group/ec10deb8-83d0-3180-9e69-1fd83c7875f8"
+   ],
+   "spotifyName": "Jade Warrior",
+   "mbRgMbid": "ec10deb8-83d0-3180-9e69-1fd83c7875f8",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Jade Warrior",
+   "album": "Last Autumn's Dream",
+   "year": 1972,
+   "label": "Vertigo",
+   "country": "gb",
+   "faction": "uk-psych-prog",
+   "genres": [
+    "rock",
+    "world"
+   ],
+   "why": "Vertigo 時期的另一高峰，更抒情的原聲配器與東方色彩，Jon Field 笛聲為主軸",
+   "moodGuess": {
+    "x": 2.4,
+    "y": -0.2,
+    "z": 0.3,
+    "why": "柔和原聲與笛，田園靜謐"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/da82df3a-c966-36fd-af12-485956f62a52/front",
+    "https://musicbrainz.org/release-group/da82df3a-c966-36fd-af12-485956f62a52"
+   ],
+   "spotifyName": "Jade Warrior",
+   "mbRgMbid": "da82df3a-c966-36fd-af12-485956f62a52",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Khan",
+   "album": "Space Shanty",
+   "year": 1972,
+   "label": "Deram",
+   "country": "gb",
+   "faction": "uk-psych-prog",
+   "genres": [
+    "rock",
+    "electronic"
+   ],
+   "why": "Steve Hillage 加入 Canterbury 圈前的唯一專輯，吉他漩渦與 Dave Stewart 風琴的 prog 名盤",
+   "moodGuess": {
+    "x": 3.5,
+    "y": 0.8,
+    "z": -0.2,
+    "why": "漩渦吉他與風琴，奇幻起伏"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/b4681d43-92ad-3835-ae40-524c50c8adca/front",
+    "https://musicbrainz.org/release-group/b4681d43-92ad-3835-ae40-524c50c8adca"
+   ],
+   "spotifyName": "Khan",
+   "mbRgMbid": "b4681d43-92ad-3835-ae40-524c50c8adca",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Space Shanty",
+   "uncertain": ""
+  },
+  {
+   "artist": "Steamhammer",
+   "album": "MK II",
+   "year": 1969,
+   "label": "CBS",
+   "country": "gb",
+   "faction": "uk-psych-prog",
+   "genres": [
+    "rock",
+    "blues"
+   ],
+   "why": "藍調轉向 prog 的過渡之作，樂迷公認樂團最成熟的一張，Martin Quittenton 與 Kieran White 唱作並重",
+   "moodGuess": {
+    "x": 3.2,
+    "y": 0.7,
+    "z": 0.1,
+    "why": "藍調底的吉他與口琴，旋律清楚"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/3ed0c8ee-9d30-381b-92e2-e154af42932f/front",
+    "https://musicbrainz.org/release-group/3ed0c8ee-9d30-381b-92e2-e154af42932f"
+   ],
+   "spotifyName": "Steamhammer",
+   "mbRgMbid": "3ed0c8ee-9d30-381b-92e2-e154af42932f",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Steamhammer",
+   "album": "Mountains",
+   "year": 1970,
+   "label": "CBS",
+   "country": "gb",
+   "faction": "uk-psych-prog",
+   "genres": [
+    "rock"
+   ],
+   "why": "更偏 prog 的第三張，長曲與器樂拓展，與 MK II 並列為樂團代表",
+   "moodGuess": {
+    "x": 3.3,
+    "y": 0.8,
+    "z": -0.3,
+    "why": "吉他與管風琴的長段推進，略陰"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/e32eccbe-3f92-3c92-a4de-05549545bc21/front",
+    "https://music.apple.com/gb/album/mountains/1633358842",
+    "https://musicbrainz.org/release-group/e32eccbe-3f92-3c92-a4de-05549545bc21"
+   ],
+   "spotifyName": "Steamhammer",
+   "mbRgMbid": "e32eccbe-3f92-3c92-a4de-05549545bc21",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Paul Kossoff",
+   "album": "Back Street Crawler",
+   "year": 1973,
+   "label": "Island",
+   "country": "gb",
+   "faction": "uk-hard-heavy",
+   "genres": [
+    "rock",
+    "blues"
+   ],
+   "why": "Free 吉他手唯一個人專輯，也是他逝世前的最後錄音，Kossoff 招牌哭泣顫音的悲情藍調搖滾",
+   "moodGuess": {
+    "x": 2.9,
+    "y": 0.6,
+    "z": -0.1,
+    "why": "哭泣吉他顫音的慢板藍調，帶傷感"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/e3028c11-3abe-3dc1-9e3d-f975858e0b6c/front",
+    "https://music.apple.com/us/album/back-street-crawler-deluxe-edition/1452801628",
+    "https://musicbrainz.org/release-group/e3028c11-3abe-3dc1-9e3d-f975858e0b6c"
+   ],
+   "spotifyName": "Paul Kossoff",
+   "mbRgMbid": "e3028c11-3abe-3dc1-9e3d-f975858e0b6c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Back Street Crawler",
+   "uncertain": ""
+  },
+  {
+   "artist": "Peter Kaukonen",
+   "album": "Black Kangaroo",
+   "year": 1972,
+   "label": "Grunt",
+   "country": "us",
+   "faction": "us-psych-hard",
+   "genres": [
+    "rock"
+   ],
+   "why": "Jefferson Airplane 圈的吉他手個人唯一專輯，Grunt 廠牌發行，迷幻藍調搖滾的小眾名盤",
+   "moodGuess": {
+    "x": 3.3,
+    "y": 0.9,
+    "z": -0.4,
+    "why": "重吉他與迷幻藍調，鬆散粗糙"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/ec2092d5-e9c1-4813-9cb6-c275a5c4cbe7/front",
+    "https://www.discogs.com/master/598288-Peter-Kaukonen-Black-Kangaroo",
+    "https://i.discogs.com/6tUviiw0YWgOtdm4Ojkp9Gq_4MTq1lsLKp14oOvOajc/rs:fit/g:sm/q:90/h:588/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE5OTgz/NzUtMTU2NzcyMjQ2/Ny04NzU3LmpwZWc.jpeg",
+    "https://musicbrainz.org/release-group/ec2092d5-e9c1-4813-9cb6-c275a5c4cbe7"
+   ],
+   "spotifyName": "Peter Kaukonen",
+   "mbRgMbid": "ec2092d5-e9c1-4813-9cb6-c275a5c4cbe7",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "CAA 無封面，封面來源為 Discogs master 598288 圖片"
+  },
+  {
+   "artist": "The West Coast Pop Art Experimental Band",
+   "album": "Volume One",
+   "year": 1966,
+   "label": "Fontana",
+   "country": "us",
+   "faction": "us-psych-hard",
+   "genres": [
+    "rock",
+    "pop"
+   ],
+   "why": "洛杉磯車庫迷幻先驅，首作以音響實驗與流行歌曲拼貼，被視為加州迷幻 pop 的奇作",
+   "moodGuess": {
+    "x": 3.1,
+    "y": 0.2,
+    "z": 0.4,
+    "why": "車庫迷幻帶童趣旋律，輕快怪異"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/883f6f46-3890-3009-afca-843c12523c19/front",
+    "https://musicbrainz.org/release-group/883f6f46-3890-3009-afca-843c12523c19"
+   ],
+   "spotifyName": "The West Coast Pop Art Experimental Band",
+   "mbRgMbid": "883f6f46-3890-3009-afca-843c12523c19",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "The West Coast Pop Art Experimental Band",
+   "album": "Part One",
+   "year": 1967,
+   "label": "Reprise",
+   "country": "us",
+   "faction": "us-psych-hard",
+   "genres": [
+    "rock",
+    "pop"
+   ],
+   "why": "Reprise 發行的巴洛克迷幻 pop 名盤，Shifting Sands 等曲讓樂迷公認為樂團最佳",
+   "moodGuess": {
+    "x": 2.9,
+    "y": 0.1,
+    "z": 0.6,
+    "why": "巴洛克迷幻 pop，旋律甜亮"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/85551464-b57b-36cf-a19f-d11c4d491ca9/front",
+    "https://musicbrainz.org/release-group/85551464-b57b-36cf-a19f-d11c4d491ca9"
+   ],
+   "spotifyName": "The West Coast Pop Art Experimental Band",
+   "mbRgMbid": "85551464-b57b-36cf-a19f-d11c4d491ca9",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "The Open Mind",
+   "album": "The Open Mind",
+   "year": 1969,
+   "label": "Philips",
+   "country": "gb",
+   "faction": "uk-psych-prog",
+   "genres": [
+    "rock"
+   ],
+   "why": "英國迷幻搖滾的稀有名盤，唯一專輯，Magic Potion 等曲以失真吉他與迷幻聲響聞名",
+   "moodGuess": {
+    "x": 3.6,
+    "y": 1.1,
+    "z": -0.5,
+    "why": "重失真迷幻吉他，粗獷"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/71f670ce-d0fa-3c7c-88e8-89a635aee193/front",
+    "https://music.apple.com/us/album/the-open-mind/418843509",
+    "https://musicbrainz.org/release-group/71f670ce-d0fa-3c7c-88e8-89a635aee193"
+   ],
+   "spotifyName": "The Open Mind",
+   "mbRgMbid": "71f670ce-d0fa-3c7c-88e8-89a635aee193",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "The Cosmic Jokers",
+   "album": "The Cosmic Jokers",
+   "year": 1974,
+   "label": "Kosmische Musik",
+   "country": "de",
+   "faction": "de-it-prog",
+   "genres": [
+    "electronic",
+    "rock"
+   ],
+   "why": "Dierks 錄音室裡 Göttsching、Schulze 等人的太空即興帶，被 Rolf-Ulrich Kaiser 未經樂手同意剪輯發行的爭議盤，仍是 krautrock 經典",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 0.6,
+    "z": -0.6,
+    "why": "漂浮合成器與電吉他，迷幻太空"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/274c1f5c-c3f2-3afa-a34b-d4decf3aee65/front",
+    "https://musicbrainz.org/release-group/274c1f5c-c3f2-3afa-a34b-d4decf3aee65"
+   ],
+   "spotifyName": "Cosmic Jokers",
+   "mbRgMbid": "274c1f5c-c3f2-3afa-a34b-d4decf3aee65",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "爭議盤：Rolf-Ulrich Kaiser 未經參與樂手同意發行；MB 標籤為 Die Kosmischen Kuriere／Kosmische Musik"
+  },
+  {
+   "artist": "The Cosmic Jokers",
+   "album": "Galactic Supermarket",
+   "year": 1974,
+   "label": "Kosmische Musik",
+   "country": "de",
+   "faction": "de-it-prog",
+   "genres": [
+    "electronic",
+    "rock"
+   ],
+   "why": "同樣由 Kaiser 未經樂手同意剪輯發行的爭議盤，太空電子氛圍最完整的一張",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 0.6,
+    "z": -0.7,
+    "why": "漂浮合成器長段，宇宙迷幻"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/9e73de8b-b0b9-39f9-8e16-28dcc91ef672/front",
+    "https://musicbrainz.org/release-group/9e73de8b-b0b9-39f9-8e16-28dcc91ef672"
+   ],
+   "spotifyName": "Cosmic Jokers",
+   "mbRgMbid": "9e73de8b-b0b9-39f9-8e16-28dcc91ef672",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "爭議盤：同上，Kaiser 未經樂手同意發行"
+  },
+  {
+   "artist": "Ikarus",
+   "album": "Ikarus",
+   "year": 1971,
+   "label": "+plus+",
+   "country": "de",
+   "faction": "de-it-prog",
+   "genres": [
+    "rock"
+   ],
+   "why": "德國 1971 年 progressive／爵士搖滾，Ikarus 唯一專輯，被 krautrock 蒐藏圈視為稀有名盤",
+   "moodGuess": {
+    "x": 3.2,
+    "y": 0.6,
+    "z": -0.3,
+    "why": "爵士搖滾的管樂與吉他即興，略冷"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/6e6af5e7-31de-3a97-b169-83593552d18b/front",
+    "https://musicbrainz.org/release-group/6e6af5e7-31de-3a97-b169-83593552d18b"
+   ],
+   "spotifyName": "Ikarus",
+   "mbRgMbid": "6e6af5e7-31de-3a97-b169-83593552d18b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "封面 CAA 有；簡介／評價資料較少，label 取 MB 的 +plus+"
+  },
+  {
+   "artist": "Pierrot Lunaire",
+   "album": "Pierrot Lunaire",
+   "year": 1974,
+   "label": "Grog",
+   "country": "it",
+   "faction": "de-it-prog",
+   "genres": [
+    "rock",
+    "classical"
+   ],
+   "why": "義大利前衛搖滾名盤，Arturo Stalteri 鋼琴與 Gaio Chiocchio 作曲，融合古典、民謠與實驗，樂迷公認巔峰",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 0.1,
+    "z": 0.1,
+    "why": "鋼琴與弦樂的室內 prog，空靈細緻"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/eb48f155-ed8c-3c3b-a364-861e304356c9/front",
+    "https://musicbrainz.org/release-group/eb48f155-ed8c-3c3b-a364-861e304356c9"
+   ],
+   "spotifyName": "Pierrot Lunaire",
+   "mbRgMbid": "eb48f155-ed8c-3c3b-a364-861e304356c9",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Grog 為記憶中的 label，MB 無標示"
+  },
+  {
+   "artist": "Pierrot Lunaire",
+   "album": "Gudrun",
+   "year": 1977,
+   "label": "Grog",
+   "country": "it",
+   "faction": "de-it-prog",
+   "genres": [
+    "rock",
+    "classical"
+   ],
+   "why": "第二張專輯，更偏新古典與器樂，Stalteri 主導，樂迷並列為另一個高峰",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 0.0,
+    "z": 0.0,
+    "why": "鋼琴與合成器的新古典 prog，悠遠"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/910c7df3-6a9a-3437-a2a4-e87eac1f377a/front",
+    "https://music.apple.com/us/album/gudrun/920500366",
+    "https://musicbrainz.org/release-group/910c7df3-6a9a-3437-a2a4-e87eac1f377a"
+   ],
+   "spotifyName": "Pierrot Lunaire",
+   "mbRgMbid": "910c7df3-6a9a-3437-a2a4-e87eac1f377a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "label 未證實，MB 無標示"
+  },
+  {
+   "artist": "Affinity",
+   "album": "Affinity",
+   "year": 1970,
+   "label": "Vertigo",
+   "country": "gb",
+   "faction": "uk-psych-prog",
+   "genres": [
+    "jazz",
+    "rock"
+   ],
+   "why": "Linda Hoyle 主唱的英國爵士搖滾稀有名盤，Vertigo 唯一專輯，Mr. Joy 與 I Am and So Are You 為樂迷所愛",
+   "moodGuess": {
+    "x": 3.1,
+    "y": 0.3,
+    "z": 0.2,
+    "why": "女聲與風琴爵士搖滾，旋律清楚"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/46e43946-4d4f-3289-93c3-1fa5e090ba88/front",
+    "https://musicbrainz.org/release-group/46e43946-4d4f-3289-93c3-1fa5e090ba88"
+   ],
+   "spotifyName": "Affinity",
+   "mbRgMbid": "46e43946-4d4f-3289-93c3-1fa5e090ba88",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Mike Ratledge",
+   "album": "Riddles of the Sphinx",
+   "year": 2013,
+   "label": "Mordant Music",
+   "country": "gb",
+   "faction": "uk-psych-prog",
+   "genres": [
+    "electronic",
+    "jazz"
+   ],
+   "why": "Soft Machine 風琴手唯一的個人署名作品，1977 年 Laura Mulvey／Peter Wollen 電影配樂，2013 年首次發行",
+   "moodGuess": {
+    "x": 2.7,
+    "y": 0.3,
+    "z": -0.9,
+    "why": "電子鍵盤與前衛配樂，疏離"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/455601de-9eff-4985-ae0b-190a935a76bd/front",
+    "https://www.discogs.com/master/634981-Mike-Ratledge-Riddles-Of-The-Sphinx",
+    "https://musicbrainz.org/release-group/455601de-9eff-4985-ae0b-190a935a76bd"
+   ],
+   "spotifyName": "Mike Ratledge",
+   "mbRgMbid": "455601de-9eff-4985-ae0b-190a935a76bd",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "配樂專輯：MB 次類型 Soundtrack，Ratledge 唯一個人署名作品；2013 年首發，原電影 1977",
+   "queryAlias": "",
+   "uncertain": "是否算正規專輯：見 releaseException"
+  }
+ ],
+ "notes": [
+  "Mike Ratledge：個人署名只有 Riddles of the Sphinx（2013，電影配樂）；For Christmas, For Children（1981）署名為 Karl Jenkins／Ratledge 合作的廣告配樂盤，不收。Riddles 以配樂例外收入。",
+  "同名辨識：Khan＝英國 1972《Space Shanty》（MB 2a64fd7c）；Ikarus＝德國 1971（MB 41a4993f）；Pierrot Lunaire＝義大利（c45b3b6c）；Affinity＝英國 1970（a8886317）；Black Widow＝英國 1969 樂團（4873e4f1）；High Tide＝英國 1969（d7e615f2）。",
+  "全部 18 位在 seed_cards.json、data/artist-intros、aliases 皆查無，無跳過。",
+  "不收：Atomic Rooster 其他（Made in England 等）、Gravy Train 1970 首作、Frijid Pink 其他、Steamhammer 首作、Pierrot Lunaire 其餘、WCPAEB Volume 2／3（只取兩張）。",
+  "封面：除 Kaukonen 外皆有 CAA 前封面（200）；Kaukonen 走 Discogs master 圖。"
+ ]
+}

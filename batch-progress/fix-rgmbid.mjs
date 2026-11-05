@@ -5,7 +5,7 @@
 // 正確做法：把 mbNote 裡**所有** MBID 都拿去回問 MB，取第一個確實是 release-group 的。
 // 用法：node batch-progress/fix-rgmbid.mjs <批名>
 import fs from 'node:fs';
-const UA = { 'User-Agent': 'dip-vinyl-shop/1.0 (kubinice06@gmail.com)' };
+const UA = { 'User-Agent': 'dip-vinyl-shop/1.0 (+https://dipvinyl.tw)' };
 // §5.5 白名單，與 scripts/verify-album-onboarding.mjs 的 EXCEPTION_GENRES 同步。
 // 增列新曲風時三處要一起改：那支驗證器、各批的 chk-prop.mjs、這裡。
 const EXCEPTION_GENRES = new Set(['electronic', 'hardcore-7inch', 'asia-mini-album']);

@@ -1,0 +1,480 @@
+{
+ "group": "ax1a",
+ "factions": [
+  {
+   "id": "jp-noise",
+   "zh": "日本噪音",
+   "count": 5,
+   "why": "Japanoise 第一、二代"
+  },
+  {
+   "id": "us-hnw",
+   "zh": "美加 HNW／harsh noise",
+   "count": 5,
+   "why": "HNW 開創者與美國 90s 極端噪音"
+  },
+  {
+   "id": "eu-hnw",
+   "zh": "歐洲 HNW",
+   "count": 4,
+   "why": "歐洲噪音牆與高密度數位噪音"
+  }
+ ],
+ "albums": [
+  {
+   "artist": "Hanatarash",
+   "album": "Hanatarash 3",
+   "year": 1989,
+   "label": "RRRecords",
+   "country": "US",
+   "faction": "jp-noise",
+   "genres": [
+    "noise"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "山塚アイ的 Hanatarash 最暴烈的正式專輯；維基 Harsh noise 條列為日本噪音奠基團，Discogs 想要數 1994 遠高於持有數",
+   "listeners": null,
+   "why": "山塚アイ的 Hanatarash 最暴烈的正式專輯；維基 Harsh noise 條列為日本噪音奠基團，Discogs 想要數 1994 遠高於持有數",
+   "moodGuess": {
+    "x": 1,
+    "y": 5,
+    "z": 1,
+    "why": "全頻寬失真噪音，無旋律節奏"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/26a365e1-ae71-30e6-88cb-50155172c106",
+    "https://www.discogs.com/master/6211",
+    "https://coverartarchive.org/release-group/26a365e1-ae71-30e6-88cb-50155172c106"
+   ],
+   "mbRgMbid": "26a365e1-ae71-30e6-88cb-50155172c106",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 首發年 1992（CD 版），Discogs master 1989 LP；取 1989"
+  },
+  {
+   "artist": "The Gerogerigegege",
+   "album": "Instruments Disorder (170 Songs CD)",
+   "year": 1994,
+   "label": "Mediacapsule",
+   "country": "JP",
+   "faction": "jp-noise",
+   "genres": [
+    "noise"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "Gerogerigegege 以 170 軌極短噪音爆發組成，日本噪音反音樂代表之一",
+   "listeners": null,
+   "why": "Gerogerigegege 以 170 軌極短噪音爆發組成，日本噪音反音樂代表之一",
+   "moodGuess": {
+    "x": 1,
+    "y": 4,
+    "z": 1,
+    "why": "極短碎裂噪音與打擊"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/3ca51832-d4f3-4323-866b-b2defa8bd3b1",
+    "https://www.discogs.com/master/806252",
+    "https://coverartarchive.org/release-group/3ca51832-d4f3-4323-866b-b2defa8bd3b1"
+   ],
+   "mbRgMbid": "3ca51832-d4f3-4323-866b-b2defa8bd3b1",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "是否為其「最極端」代表有爭議（Senzuri Champion／Tokyo Anal Dance 亦可），僅 7 星把握中等"
+  },
+  {
+   "artist": "Aube",
+   "album": "Purification to Numbness",
+   "year": 1994,
+   "label": "Pure",
+   "country": "JP",
+   "faction": "jp-noise",
+   "genres": [
+    "noise"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "中島昭文 Aube 以單一金屬音源製作的全金屬噪音；與卡池同名 Aube/Spindrift 是另一位藝人",
+   "listeners": null,
+   "why": "中島昭文 Aube 以單一金屬音源製作的全金屬噪音；與卡池同名 Aube/Spindrift 是另一位藝人",
+   "moodGuess": {
+    "x": 1,
+    "y": 5,
+    "z": 1,
+    "why": "全頻寬失真噪音，無旋律節奏"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/750e62b6-c45b-334e-9191-3899785d9ac3",
+    "https://www.discogs.com/master/49115",
+    "https://coverartarchive.org/release-group/750e62b6-c45b-334e-9191-3899785d9ac3"
+   ],
+   "mbRgMbid": "750e62b6-c45b-334e-9191-3899785d9ac3",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "藝人名撞卡池 Aube（Spindrift，另一人）；代表作是否此盤把握中等"
+  },
+  {
+   "artist": "Monde Bruits",
+   "album": "Purgatory",
+   "year": 1992,
+   "label": "G.R.O.S.S.",
+   "country": "JP",
+   "faction": "jp-noise",
+   "genres": [
+    "noise"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "Monde Bruits 為 90 年代日本 harsh noise 代表（Aube 等同圈），Purgatory 為其早期正式專輯",
+   "listeners": null,
+   "why": "Monde Bruits 為 90 年代日本 harsh noise 代表（Aube 等同圈），Purgatory 為其早期正式專輯",
+   "moodGuess": {
+    "x": 1,
+    "y": 5,
+    "z": 1,
+    "why": "全頻寬失真噪音，無旋律節奏"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/82f7bf56-ccee-4071-85e8-56b489033464",
+    "https://www.discogs.com/master/1453624",
+    "https://coverartarchive.org/release-group/82f7bf56-ccee-4071-85e8-56b489033464"
+   ],
+   "mbRgMbid": "82f7bf56-ccee-4071-85e8-56b489033464",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "代表作選擇把握中等"
+  },
+  {
+   "artist": "Violent Onsen Geisha",
+   "album": "Shocks! Shocks! Shocks!",
+   "year": 1989,
+   "label": "Vanilla Records",
+   "country": "JP",
+   "faction": "jp-noise",
+   "genres": [
+    "noise"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "Violent Onsen Geisha 為 Japanoise 第二代代表，Shocks 系列是其最粗暴的開山作",
+   "listeners": null,
+   "why": "Violent Onsen Geisha 為 Japanoise 第二代代表，Shocks 系列是其最粗暴的開山作",
+   "moodGuess": {
+    "x": 1,
+    "y": 5,
+    "z": 1,
+    "why": "全頻寬失真噪音，無旋律節奏"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/f0bf4ace-5a55-4a04-b761-abb13a22ae3a",
+    "https://www.discogs.com/master/1601684",
+    "https://coverartarchive.org/release-group/f0bf4ace-5a55-4a04-b761-abb13a22ae3a"
+   ],
+   "mbRgMbid": "f0bf4ace-5a55-4a04-b761-abb13a22ae3a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 1989，Discogs master 1991；取 MB 首發年"
+  },
+  {
+   "artist": "Richard Ramirez",
+   "album": "Rape!",
+   "year": 1995,
+   "label": "Mother Savage Noise Productions",
+   "country": "US",
+   "faction": "us-hnw",
+   "genres": [
+    "noise"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "維基 Harsh noise wall 條列 Richard Ramirez 為 HNW 開創者；Rape! 為其 90 年代牆式噪音原型",
+   "listeners": null,
+   "why": "維基 Harsh noise wall 條列 Richard Ramirez 為 HNW 開創者；Rape! 為其 90 年代牆式噪音原型",
+   "moodGuess": {
+    "x": 1,
+    "y": 5,
+    "z": 1,
+    "why": "全頻寬失真噪音，無旋律節奏"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/88e15bd9-5c1d-4642-975e-4603b7d1621b",
+    "https://www.discogs.com/master/1277646",
+    "https://en.wikipedia.org/wiki/Harsh_noise"
+   ],
+   "mbRgMbid": "88e15bd9-5c1d-4642-975e-4603b7d1621b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 無封面，封面來源 Discogs；是否其最極端盤把握中等"
+  },
+  {
+   "artist": "The Rita",
+   "album": "Living Dead Girl",
+   "year": 1998,
+   "label": "Self-released",
+   "country": "CA",
+   "faction": "us-hnw",
+   "genres": [
+    "noise"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "維基列 The Rita 為 HNW 開創者之一；Living Dead Girl 為其 1998 自發的牆式噪音專輯",
+   "listeners": null,
+   "why": "維基列 The Rita 為 HNW 開創者之一；Living Dead Girl 為其 1998 自發的牆式噪音專輯",
+   "moodGuess": {
+    "x": 1,
+    "y": 5,
+    "z": 1,
+    "why": "全頻寬失真噪音，無旋律節奏"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/1710428",
+    "https://en.wikipedia.org/wiki/Harsh_noise"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": "MB search releasegroup:Living Dead Girl 2026-11-04 無 The Rita 條目",
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/1710428",
+    "https://en.wikipedia.org/wiki/Harsh_noise"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 查無；第二來源僅 Wikipedia 藝人層級，需補專輯級來源；封面來源 Discogs"
+  },
+  {
+   "artist": "Vomir",
+   "album": "Claustration",
+   "year": 2007,
+   "label": "",
+   "country": "FR",
+   "faction": "eu-hnw",
+   "genres": [
+    "noise"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "Vomir 為法國 HNW 代表，以「無想法、無變化、無發展」自述其美學（維基引述）",
+   "listeners": null,
+   "why": "Vomir 為法國 HNW 代表，以「無想法、無變化、無發展」自述其美學（維基引述）",
+   "moodGuess": {
+    "x": 1,
+    "y": 5,
+    "z": 1,
+    "why": "全頻寬失真噪音，無旋律節奏"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/c05894d6-053d-4a1f-aaf9-60bb35683af8",
+    "https://coverartarchive.org/release-group/c05894d6-053d-4a1f-aaf9-60bb35683af8",
+    "https://en.wikipedia.org/wiki/Harsh_noise"
+   ],
+   "mbRgMbid": "c05894d6-053d-4a1f-aaf9-60bb35683af8",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Vomir 專輯量極大，代表作選擇把握低；廠牌未查"
+  },
+  {
+   "artist": "Werewolf Jerusalem",
+   "album": "God Has Shot Himself",
+   "year": 2003,
+   "label": "Legion Sudan",
+   "country": "DK",
+   "faction": "eu-hnw",
+   "genres": [
+    "noise"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "Werewolf Jerusalem 為 HNW 場景代表（廠牌描述其聲音核心為 harsh noise wall）",
+   "listeners": null,
+   "why": "Werewolf Jerusalem 為 HNW 場景代表（廠牌描述其聲音核心為 harsh noise wall）",
+   "moodGuess": {
+    "x": 1,
+    "y": 5,
+    "z": 1,
+    "why": "全頻寬失真噪音，無旋律節奏"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/572d119f-1c35-437c-8092-7ee73fd9fe4c",
+    "https://www.discogs.com/master/3239704",
+    "https://coverartarchive.org/release-group/572d119f-1c35-437c-8092-7ee73fd9fe4c"
+   ],
+   "mbRgMbid": "572d119f-1c35-437c-8092-7ee73fd9fe4c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "代表作選擇把握低；國別依 Discogs"
+  },
+  {
+   "artist": "Skin Crime",
+   "album": "Parasite",
+   "year": 2001,
+   "label": "Xerxes",
+   "country": "JP",
+   "faction": "us-hnw",
+   "genres": [
+    "noise"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "維基列 Skin Crime 為 HNW 開創者之一；Parasite 為其早期正式專輯",
+   "listeners": null,
+   "why": "維基列 Skin Crime 為 HNW 開創者之一；Parasite 為其早期正式專輯",
+   "moodGuess": {
+    "x": 1,
+    "y": 5,
+    "z": 1,
+    "why": "全頻寬失真噪音，無旋律節奏"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/8ca06bed-e704-4be2-9d76-82a359baf315",
+    "https://www.discogs.com/release/734495",
+    "https://en.wikipedia.org/wiki/Harsh_noise"
+   ],
+   "mbRgMbid": "8ca06bed-e704-4be2-9d76-82a359baf315",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 無封面，封面 Discogs；代表作選擇把握低；Discogs 國別 Japan（廠牌 Xerxes）"
+  },
+  {
+   "artist": "Taint",
+   "album": "Justmeat",
+   "year": 1995,
+   "label": "Slaughter Productions",
+   "country": "IT",
+   "faction": "eu-hnw",
+   "genres": [
+    "noise"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "Taint 為 90 年代極端噪音／PE 名字，Justmeat 為其 Discogs 想要數最高的專輯（641）",
+   "listeners": null,
+   "why": "Taint 為 90 年代極端噪音／PE 名字，Justmeat 為其 Discogs 想要數最高的專輯（641）",
+   "moodGuess": {
+    "x": 1,
+    "y": 5,
+    "z": 1,
+    "why": "全頻寬失真噪音，無旋律節奏"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/6aed71ab-3751-4410-89eb-bbcdd1b9f150",
+    "https://www.discogs.com/master/28275"
+   ],
+   "mbRgMbid": "6aed71ab-3751-4410-89eb-bbcdd1b9f150",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 另有 1999 同名 RG（e8ebf268）；是否 harsh noise 而非 PE 把握中等；封面 Discogs"
+  },
+  {
+   "artist": "Emil Beaulieau",
+   "album": "Kill the All-Noise Japanese Artists",
+   "year": 1995,
+   "label": "Pure",
+   "country": "US",
+   "faction": "us-hnw",
+   "genres": [
+    "noise"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "Emil Beaulieau 為美國 90 年代極端噪音帶，以針對日本噪音的挑釁題名聞名",
+   "listeners": null,
+   "why": "Emil Beaulieau 為美國 90 年代極端噪音帶，以針對日本噪音的挑釁題名聞名",
+   "moodGuess": {
+    "x": 1,
+    "y": 5,
+    "z": 1,
+    "why": "全頻寬失真噪音，無旋律節奏"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/1bdc095e-d540-4210-8359-46e4c10071b5",
+    "https://www.discogs.com/release/348891"
+   ],
+   "mbRgMbid": "1bdc095e-d540-4210-8359-46e4c10071b5",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 無封面，封面 Discogs；代表作選擇把握低"
+  },
+  {
+   "artist": "Macronympha",
+   "album": "Intensive Care",
+   "year": 1998,
+   "label": "",
+   "country": "US",
+   "faction": "us-hnw",
+   "genres": [
+    "noise"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "Macronympha 為美國 harsh noise 長壽名字，Intensive Care 為其 90 年代正式專輯",
+   "listeners": null,
+   "why": "Macronympha 為美國 harsh noise 長壽名字，Intensive Care 為其 90 年代正式專輯",
+   "moodGuess": {
+    "x": 1,
+    "y": 5,
+    "z": 1,
+    "why": "全頻寬失真噪音，無旋律節奏"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/27254503-3df5-4ecb-a253-1b6ede46c807",
+    "https://coverartarchive.org/release-group/27254503-3df5-4ecb-a253-1b6ede46c807"
+   ],
+   "mbRgMbid": "27254503-3df5-4ecb-a253-1b6ede46c807",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "代表作選擇把握低；廠牌未查"
+  },
+  {
+   "artist": "Russell Haswell",
+   "album": "Live Salvage 1997-2000",
+   "year": 2001,
+   "label": "Mego",
+   "country": "AT",
+   "faction": "eu-hnw",
+   "genres": [
+    "noise"
+   ],
+   "apexTier": "heresy",
+   "apexWhy": "Haswell 的 Mego 專輯是歐洲 harsh noise 的極端代表，以高密度數位噪音為主",
+   "listeners": null,
+   "why": "Haswell 的 Mego 專輯是歐洲 harsh noise 的極端代表，以高密度數位噪音為主",
+   "moodGuess": {
+    "x": 1,
+    "y": 5,
+    "z": 1,
+    "why": "全頻寬失真噪音，無旋律節奏"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/71e20a34-9d74-3875-971c-d4478046b531",
+    "https://www.discogs.com/master/249672",
+    "https://coverartarchive.org/release-group/71e20a34-9d74-3875-971c-d4478046b531"
+   ],
+   "mbRgMbid": "71e20a34-9d74-3875-971c-d4478046b531",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Live Salvage 1997→2000",
+   "uncertain": "原題為 1997→2000；是否達 7 星把握中等"
+  }
+ ],
+ "notes": [
+  "池子不夠：僅 14 張，不湊數。",
+  "剔除：MSBR（Ultimate Ambience）與 Pain Jerk（Aktion Bruit）已在卡池為 pearl；Merzbow、Masonna、Incapacitants、C.C.C.C.、非常階段、不失者、Kevin Drumm、Wolf Eyes、John Wiese、Prurient、Daniel Menche、Solmania、Government Alpha 已在異端。",
+  "因身分／代表作把握不足而未提：K2、Contagious Orgasm、Bastard Noise、Sudden Infant（MB 2006 與 Discogs 1991 不符）、Hototogisu、Haino 個人作（皆為現場或非極端）。",
+  "Aube 與卡池 Aube/Spindrift 撞名（疑為另一位藝人），請主線判斷；去重查詢用「藝人互含」會因短名誤報（Ash、AI、-M-），已人工排除。",
+  "多數為 CAA 有封面；Ramirez／The Rita／Skin Crime／Taint／Beaulieau 無 CAA，封面來源 Discogs。",
+  "WebSearch 用 2 次，均未取得專輯級榜單，代表作選擇主要憑記憶＋MB/Discogs 核對，多數標「把握中等／低」。"
+ ]
+}

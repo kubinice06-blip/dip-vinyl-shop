@@ -1,0 +1,35 @@
+[
+ {
+  "docId": "big brother & the holding company|cheap thrills",
+  "updateMask": [
+   "artist",
+   "classic",
+   "obscurity",
+   "accessibility",
+   "rarity",
+   "rgMbid"
+  ],
+  "body": {
+   "fields": {
+    "artist": {
+     "stringValue": "Big Brother & the Holding Company"
+    },
+    "classic": {
+     "integerValue": "5"
+    },
+    "obscurity": {
+     "integerValue": "1"
+    },
+    "accessibility": {
+     "integerValue": "3"
+    },
+    "rarity": {
+     "stringValue": "epic"
+    },
+    "rgMbid": {
+     "stringValue": "02de8887-e93b-3ea6-8b6d-de072a159bba"
+    }
+   }
+  }
+ }
+]

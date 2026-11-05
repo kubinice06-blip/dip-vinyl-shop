@@ -1,18 +1,18 @@
 # 已上線簡介・第二輪待修清單
 
-`scripts/build-pub-fix-queue.mjs` 產生於 2026-10-04（第一輪修正包套用之後的 KV 現值）。機器可讀版是 `ROUND2-QUEUE.json`。
+`scripts/build-pub-fix-queue.mjs` 產生於 2026-10-16（第一輪修正包套用之後的 KV 現值）。機器可讀版是 `ROUND2-QUEUE.json`。
 
 | 區 | 內容 | 數量 |
 |---|---|---:|
 | B1 | 退件說明／管線字樣——**客人看得到，最優先** | 0 則 |
-| B1b | 正文以「本卡」當主詞的版本說明（非退件，次優先） | 7 則 |
-| B3 | 資料庫口吻——把條目結構講給客人聽（2026-10-04 店主裁示改寫） | 176 則 |
-| B4 | 正文夾諺文（機構名、人名沒譯） | 71 則 |
+| B1b | 正文以「本卡」當主詞的版本說明（非退件，次優先） | 0 則 |
+| B3 | 資料庫口吻——把條目結構講給客人聽（2026-10-04 店主裁示改寫） | 1 則 |
+| B4 | 正文夾諺文（機構名、人名沒譯） | 0 則 |
 | C | 人工補記（含另一個工作區點名的五件） | 6 則 |
-| A | 事實更正，需研究後改寫 | 268 條／234 張卡 |
-| B2 | 正文點名出處的**候選**（維基／MusicBrainz／Discogs／AllMusic…），逐則判斷要不要改成不具名敘述 | 786 則 |
+| A | 事實更正，需研究後改寫 | 819 條／693 張卡 |
+| B2 | 正文點名出處的**候選**（維基／MusicBrainz／Discogs／AllMusic…），逐則判斷要不要改成不具名敘述 | 3 則 |
 
-A 區有 55 條的原句在線上已經找不到（多半被第一輪的去出處改寫順手改掉），派工前先看「原句還在」欄；6 條對不到卡。
+A 區有 807 條的原句在線上已經找不到（多半被第一輪的去出處改寫順手改掉），派工前先看「原句還在」欄；8 條對不到卡。
 
 ## B1　退件說明／管線字樣
 
@@ -20,270 +20,17 @@ A 區有 55 條的原句在線上已經找不到（多半被第一輪的去出�
 
 | 鍵 | 前後文 |
 |---|---|
-| `desc2:ewan maccoll & a.l. lloyd／the english and scottish popular ballads` |  Ballads》四輯八張，是英倫民謠復興最直接的曲目來源。本卡對應的是其中第二卷，Folkways 於 1964 年以 FG 3510 重發， |
-| `desc2:pacific 231／tropical songs gold` | ic 231，靠 disambiguation 欄才分得開。本卡是日本那個實體，那一欄寫 Shigeomi Hasumi、Takemasa Mi |
-| `desc2:the rolling stones／between the buttons` | 1967 年 1 月 20 日英國 Decca 首發，本卡取隨後上市的美版 London——它把英版的〈Back Street Girl〉 |
-| `desc2:the strokes／is this it` | Cops〉換上〈When It Started〉並另換封面，本卡採含該曲、封面為黑手套的國際版。 |
-| `desc2:various artists／laos: lam saravane / musique pour le khène` | 二。這份錄音 1978 年先以雙 LP 由法國國家電台出版，本卡是 1989 年的 Ocora CD 版，六軌約七十分鐘。開頭那首長篇由兩位歌者 |
-| `desc2:wanda landowska／bach: goldberg variations` | -la-Forêt 為 HMV 錄下二十世紀第一份此曲唱片；本卡則是 1945 年 3 月至 6 月在紐約 RCA Victor 第一錄音室的重 |
-| `desc2:新寶島康樂隊／第3輯` | 目，一筆把這一軌算了進去記成 12 軌，另一筆記 11 軌。本卡採的是十二軌那筆，1995 年滾石唱片、一片 CD，開場〈歡聚歌〉2:22，最短 |
 
 ## B3　資料庫口吻
 
 | 鍵 | 前後文 |
 |---|---|
-| `desc2:9와 숫자들／9와 숫자들` | 、3、4。這張出道盤的碟名與掛名同形，只留下一筆建檔——單片十三軌的韓國 CD，廠牌 Tunetable Mov |
-| `desc2:a witness／i am john's pancreas` | ON1 排到 ZRON34，其中整張 LP 只有五筆。 |
-| `desc2:airbridge／paradise moves` | -Up Records 的目錄只有四個編號，另外三筆都是七吋與十二吋，這張是它唯一的 LP。英文維基的樂團條目說 |
-| `desc2:akbar golpaygani, elaheh, mahmoodi khansari & hayedeh／golhaye rangarang 539 & 540` | 端上記的日期是 1976 年 4 月 16 日，那一筆載體記成數位媒體，廠牌記 Caltex Records、沒有 |
-| `desc2:akira yamaoka／silent hill 2 original soundtracks` | -100，同一天上市。MusicBrainz 記兩筆都在 2001 年 10 月 3 日出、都是單片 30 軌， |
-| `desc2:akmu／개화` | 、由 YG PLUS 發行、編號 YP0829，兩筆數位掛的是二人組自己的廠牌。這是第四張錄音室專輯。 |
-| `desc2:alan braufman／valley of search` | :00。逐軌曲長只有 MusicBrainz 那兩筆填了，最短的一軌 0:21。維基條目說，這家廠牌由 Bob  |
-| `desc2:antis／kažkas atsitiko` | 12-31 到 1990-11，這五年多裡名下的三筆碟連著三年。 |
-| `desc2:antis／ša!` | 分半。1988 那筆的廠牌與形態欄都是空的，這個條目底下唯一掛得出廠牌的，是 2003 年那筆數位版的。 |
-| `desc2:argo／discophonia` | 各擺在一面的開頭，合計約三十八分半。1981 年兩筆原壓都是 Мелодия、目錄號 С 60—15173-4、 |
-| `desc2:bigbang／always` | 軌的詞由四位團員合寫，曲與編曲交給 Perry。四筆建檔同一天、同為六軌，韓國實體只有一筆。 |
-| `desc2:black brothers／terima kaseh` | 。這支樂團出自查亞普拉，1975 年遷到雅加達。資料庫端登記在案的只有一筆：1978 年馬來西亞 EMI 的壓片、編 |
-| `desc2:brigada víctor jara／eito fora` | 碟上也出現過，其中一個只差一個母音。1977 年那一筆發行的國別欄與廠牌欄都是空的，也沒有再版。 |
-| `desc2:bts／dark&wild` | ，中間的主體前重後輕。全碟 51 分 32 秒，三筆建檔同一天，同為十四軌。 |
-| `desc2:c.c.c.c.／cosmic coincidence control center` | 1，也是他們名下第一筆非現場作品——排在它前面的兩筆都帶著現場標記。 |
-| `desc2:carlos do carmo／um homem na cidade` |  那筆標的是宣傳片，1980 那筆才是正式發行。兩筆的編號完全相同，都是 Trova 的 MOV. 7005。十 |
-| `desc2:cecilia／un ramito de violetas` | 軌；同名曲另有一筆 1974 年的單曲條目，分開建檔。黑膠的欄位沒有登錄長度，1992 年那張曲序相同的 CD  |
-| `desc2:chain of strength／true till death` | 兩筆同規格的壓片裡，只有一筆記下了六軌的長度。六軌合計 13 分 8 秒，第三軌3:02  |
-| `desc2:charles dodge／earth's magnetic field` | 曲名，一面十四分四秒、另一面十五分十四秒。版本頁五筆全是 Nonesuch 同一個編號的壓次，沒有第三方廠牌碰過 |
-| `desc2:credo／melnais kliedziens` | 行國別則從 LV 換成 SU，俄語那版的盤名是。兩筆的六軌都沒有登錄長度，能看的只有寫法：第一與第五軌的軌名都是 |
-| `desc2:crying nut／crying nut` | 貨架上這張碟叫，那其實是第 3 軌的英譯。海外那一筆連十三軌的諺文曲名都換成了英文題——Epitaph、Seag |
-| `desc2:crying nut／서커스 매직 유랑단` | 002 年那張DMK144-2，三張都掛在底下。三筆建檔同在 1999 年 11 月 5 日、全是十三軌。全碟  |
-| `desc2:dariush／cheshme man` | 同一個條目底下的三張碟，只有一軌是共同的。三筆的曲目幾乎不重疊，可以逐軌寫的是十二軌那一筆，合計 1:01 |
-| `desc2:dzeltenie pastnieki／bolderājas dzelzceļš` | 發才有廠牌與編號 IBCD 201，那個人名正是五筆成員關係之一。末軌把樂團名字改了一個字。 |
-| `desc2:earth crisis／firestorm` | 長度一模一樣，換的只有國別、廠牌名與編號。所釘的這一筆是 CD，廠牌欄掛 Victory Europe、編號記為  |
-| `desc2:ebi／khalij` | ；末軌3:37 最短，十軌合計 48:30。這個條目底下只有一筆發行，廠牌與載體兩欄都是空的，剩下的只有年份、發行地 |
-| `desc2:elaheh, aref & emad raam／elaheh, vol 5` | 唯一可得的日期是 1972 年 8 月 1 日，那一筆的廠牌欄由兩家合掛、兩家都沒有編號。Aref 名下十五個條目 |
-| `desc2:elaheh, mohammad-reza shajarian & jalil shahnaz／golhaye tazeh no. 23: abu ata` | rchestra 都在裡面，第三軌另外還多一位。這一筆的著作權欄把兩個年份分開記著：℗ 年是 1975、持有者記的 |
-| `desc2:električni orgazam／električni orgazam` | 創性，PGP-RTB 則對其中兩首的歌詞有意見，兩筆都是編輯判斷；唱片最後在 1981 年 5 月由 Jugot |
-| `desc2:fausto／madrugada dos trapeiros` | 。開場的4:07 就落在偏長的一側。1977 年這一筆是名下唯一的發行，廠牌欄與載體欄都是空白的。掛名的別名記著  |
-| `desc2:fin.k.l／white` | 同一天建檔的兩筆，數位那筆掛 DSP、CD 那筆掛 DAEYOUNG AV。 |
-| `desc2:fix／värviline maailm` | 的起始年 1968 隔了十一年。成員關係多達四十四筆，其中一位原始成員的區間分成兩段，1979 剛好落在空檔裡。 |
-| `desc2:foje／geltoni krantai` | 寫的是卡帶盒。廠牌、編號與條碼三欄全空，整張只有這一筆建檔、沒有再發，九軌卻全部有長度。第五軌8:42 最長，三軌 |
-| `desc2:franco & le tpok jazz／20ème anniversaire 6 juin 1956 - 6 juin 1976, volume 2` | 383。Discogs 那筆的備註只有一句，同站另一筆 360.082/83 就是那張雙唱片，本張五軌正是它的 C |
-| `desc2:fritz wunderlich／salzburger liederabend` | 高音與鋼琴 Hubert Giesen 兩個人。兩筆 Discogs 條目各自直記同一場：1965 年 8 月  |
-| `desc2:gary burton & chick corea／crystal silence: the ecm recordings 1972–79` | 跨七年的三筆錄音收進一個盒子，兩首現場曲首度數位化。2009 年 ECM |
-| `desc2:geoff mann／chants would be a fine thing` | dios——廠牌名與錄音室名是同一個字。廠牌頁十三筆多半是本地樂團的七吋單曲，本捲是裡面唯一不用 TRS 編號的 |
-| `desc2:googoosh／akharin khabar` | 八軌全部關在一分三十三秒寬的帶子裡。取數位那一筆來看，最長的5:28 與最短的3:55 就是帶子的兩端，與盤 |
-| `desc2:googoosh／mordaab` | 短與最長差了將近三倍。端上釘住的是 1990 年那一筆發行，一張 CD、十四軌，發行國與廠牌兩欄都是空的。這個掛名 |
-| `desc2:googoosh／persian music: googoosh 3, dou mahi` | 標題只寫作，帶著卷號的長盤名只存在於上一層。端上那一筆是一張 CD、十四軌，廠牌記 Caltex Records、 |
-| `desc2:guadalcanal diary／walking in the shadow of the big man` | 內戰神話，以及人體自燃。版本頁上 1984 年的四筆全掛 DB Recs，1985 年起的全掛 Elektra  |
-| `desc2:h.o.t.／resurrection` | 在最前面兩格，中段的5 分 20 秒是全碟最長。三筆建檔都是十四軌。 |
-| `desc2:h.o.t.／wolf and sheep` | 內頁的團員名字都走塗鴉字，出自洛杉磯的美術團隊。三筆建檔都是單片九軌，每軌的諺文原題後面都附一個英文副題。 |
-| `desc2:hayedeh／sogand` |  Mahasti 是手足，兩人生年相差四年。這個條目底下只有一筆發行，載體記的是數位媒體，廠牌欄一個字都沒填。 |
 | `desc2:helen reddy／i am woman` | 製想借歌，Reddy 開出的價碼是重錄一次、外加三筆婦女中心捐款。原是 1971 年出道專輯裡一個她並不滿意的版 |
-| `desc2:hitoshi okano／double image` | 曲長，也沒有替任何一軌登錄作曲者，版本頁底下只有兩筆，都是 1982 年的黑膠。川端民生 1947 年生於北海道 |
-| `desc2:i mean us／into innerverse` | 上發行公司。兩種實體共用編號 IMU003，黑膠那一筆的廠牌欄寫的就是樂團自主發行，CD 那筆才填上公司名。這張碟 |
-| `desc2:imants kalniņš／4. simfonija` | 個速度術語，三次壓片都沒有登錄長度。四軌依序是，三筆盤面都是十二吋、四軌、紙套，差別只在編號與國別：1974 年 |
-| `desc2:imrat khan／ragas marva · sudda saranga` | ao Popatkar；Discogs 底下只有三筆版位，此後沒有再發。Marva 用 tivra Ma 與 k |
-| `desc2:incapacitants／eternal paralysis` |  PT-1 是那家卡帶廠的創廠第一號，同期的另外四筆同樣全是卡帶；美川俊治在大阪起手時，這還是他在樂團之外的個人 |
-| `desc2:incapacitants／repo` | 四十七分鐘。在這張之前，美川俊治與小堺文雄名下的四筆全是卡帶，這是他們第一次把聲音壓進黑膠，1989 年由 Al |
-| `desc2:inside out／no spiritual surrender` | 28 秒。1990 年那張黑膠之外，這批錄音還有三筆版本，目錄編號在四筆上寫成四種樣子，所釘的這一筆記為 REV |
-| `desc2:integrity／those who fear tomorrow` | 美國 Overkill，只出過 CD 一種載體，那一筆的廠牌欄有名字、編號欄卻是空的，本張也是名下最早的一張長篇。 |
-| `desc2:iu／chat-shire` | 數位版七軌，實體多的那兩首只印在光碟上。數位那三筆是七軌，晚四天的韓國實體 CD 則是九軌，多出來的與只印在光 |
-| `desc2:jah free／breaking out` | MB 上這張 CD 有兩筆紀錄，日期、廠牌、編號與軌數全部相同，只有條碼不同。黑膠條目 |
-| `desc2:jalil shahnaz, abdolvahhab shahidi, asqar bahari, faramarz payvar, hasan nahid & hoseyn tehrani／musique persane` | 式的名字。那兩個長度是 1971 年法國盤上的，這一筆掛 Ocora、編號 OCR 57。並列在每一軌欄位上的六個 |
-| `desc2:jarcha／libertad sin ira` | NLX-1.070 是一張 12 吋、十軌，名下兩筆發行都是西班牙盤、都是十軌，曲序也相同。這個掛名底下一共只有 |
-| `desc2:jimmy riley／majority rule` | Discogs 版本欄裡美國 Makossa 那兩筆寫、Camille 那筆寫。十個曲位以開場、以收尾。 |
-| `desc2:john gordon／erotica suite` |  Records, Inc.；2021 年英國那兩筆，廠牌欄掛的則是 Strata-East 自己。 |
-| `desc2:jumprava／pilsēta` | 欄只寫、沒有登錄尺寸。成員關係欄裡，三位團員的那三筆在同一天結束：1991-12-15。 |
-| `desc2:k2／the rust` | 版每一面剛好放一段。草深公秀在 1983 年出過兩筆之後，隔了整整十年才有下一張，要到 1993 年起才密集起來 |
-| `desc2:katedra／mors ultima ratio` |  С60 30149 009、12 吋九軌，這個條目底下就這一筆，沒有再發。成員關係欄完全空白，名下只有四個發行品， |
-| `desc2:krakdown／krakdown` | ause，編號記為 NR-18183，名下就只有這一筆。 |
-| `desc2:lard free／gilbert artman's lard free` | 的 291 筆名單上，樂團與 Artman 分列兩筆。 |
-| `desc2:lluís llach／com un arbre nu` | ay 的 S-30031 是一張 12 吋，名下四筆發行都是九軌。九個曲名裡有三個不是加泰隆尼亞語。 |
-| `desc2:los bravos／black is black` | 二個曲名清一色英語，一個西班牙語曲名都沒有。目前建檔的只有兩筆發行：1966 年美國 Press Records |
-| `desc2:los destellos／destellantes` | 與，1974 年這個團名下就只有這張碟與那張單曲兩筆。十一軌全部擠在 2:23 到 3:28 之間，最長與最短只 |
-| `desc2:m83／junk` | 路公開徵選進來的。2016 年 4 月 8 日的五筆發行版本全部 15 軌，總長 55 分 40 秒，製作是 A |
-| `desc2:mahasti／bigane` | 兩軌差到三分鐘。首軌的拼法比盤名多一個 h。這個條目底下只有一筆發行，十六軌合計 1:16:42，載體記數位媒體，廠 |
-| `desc2:menuets／dzeguzes balss` | ，末軌那一段的長度是同名曲的三倍多；這組時間取自兩筆 1979 原壓裡有登長度的那一筆，另一筆八軌一格都沒填。盤 |
-| `desc2:mohsen namjoo／toranj` | 長與第二長的兩軌，分別站在第一軌與第九軌。以端上那一筆計，與盤名同字的首軌6:35 與末軌6:21 把中間七軌整個 |
-| `desc2:montage／anthropologie` | 期於澀谷開過唱片行 Paris-Peking。第三筆 credit 是 Akira Yamamichi，作曲、混 |
-| `desc2:multi-story／chimes` | 接填團名，Discogs 上那個廠牌實體整頁只有這一筆；七軌，錄音在格溫特郡凱爾利恩的 Loco Studios， |
-| `desc2:noir désir／666.667 club` | 版與更正版同時在市面上。11 月 11 日發出的兩筆 CD 用同一個品號，區別只寫在附註上，一筆標更正、一筆標印 |
-| `desc2:noir désir／veuillez rendre l'âme (à qui elle appartient)` | 風欄記 rock alternatif。前一張的四筆壓片全部只有 6 軌。 |
-| `desc2:o-hum／nahal-e heyrat` | 兩個十一軌版之間逐軌只差 0 到 8 秒。取重製那一筆來看，與盤名同字的第四軌 6:06 是全張最長的一軌，第八軌 |
-| `desc2:owen gray／forward on the scene` | ，以及加拿大 Monica's Records 那一筆，released 欄是 0。曲目從開場。 |
-| `desc2:pain jerk／aktion bruit` | 13；光那一年，五味浩平名下就有八筆，隔年再添十四筆，兩年合計二十二筆，這張只是其中之一。 |
-| `desc2:pari zanganeh／the series of music for young adults: iranian folk songs` | 的與末軌5:08，十一軌加起來約三十七分鐘。端上兩筆發行都缺著欄位：一筆沒有日期，一筆沒有狀態，其中一筆連廠牌實 |
-| `desc2:parálisis permanente／el acto` |  12 吋、十三軌，A 面六首、B 面七首，名下兩筆發行都是十三軌。這個掛名底下的十筆條目裡只有這一張是專輯，另 |
-| `desc2:pete seeger／american favorite ballads, vol. 1` | 的。Discogs 記 1963 與 1965 兩筆再壓才印出 Volume One，1968 年的立體聲版又拿 |
-| `desc2:phil pratt／star wars dub` | 、2024 與 2025 各出過一次，2024 那一筆的標題欄還多打了一個 s。條目本身卻很薄：credit 欄只 |
-| `desc2:phương tâm／magical nights: saigon surf, twist & soul (1964-1966)` |  Mark Gergis 把這批失散的錄音找回來建檔；1975 年之前的越南既沒母帶也沒有文件。Sublime  |
-| `desc2:raimon／per destruir aquell qui l'ha desert` | R. 30 是一張 12 吋、十二軌，這張碟只有這一筆發行，沒有再版也沒有 CD 版。名下在 1976 年之前的錄 |
-| `desc2:riow arai／mind edit` | D，編號回到廠牌主線，前一張走的是子廠牌那一條。三筆 release 逐版比對下來，十一軌的曲名與曲序完全相同， |
-| `desc2:robert calvert／hype` |  Discogs 實體底下只有 IF 0311 這一筆發行，圓標上還印著 Made in France。錄音在倫敦 |
-| `desc2:rufus featuring chaka khan／rufus featuring chaka khan` | 的名字排進了團名裡。MusicBrainz 收的這一筆，每一軌的 artist-credit 都與盤名同字。由 K |
-| `desc2:ruja／ruja` | одия С60-16885-6、12 吋十軌，另外兩筆掛同一個目錄號的，是同內容的翻譯盤面。那十軌從 1:49 到 |
-| `desc2:s.e.s.／sea & eugene & shoo` | 同一張碟，封面上印過三個不同的標題。四筆韓國版分別題，目錄號 KSC-8087 與條碼卻同屬一組。三 |
-| `desc2:sergiu celibidache／tchaikovsky: symphony no. 5` | ，第五軌就是那段掌聲；MusicBrainz 上這一筆並沒有給它現場標記。英文維基記，他在世時斷然拒絕把演出發成商 |
-| `desc2:shahram nazeri／atashi dar neyestan` | 8，第五軌反過來從 8:05 拉到 13:38。四筆發行分屬三家廠牌，1991 年的兩筆都掛 Caltex Re |
-| `desc2:siavash ghomayshi／farangis` | 的第四軌 5:48，兩軌緊挨著。那兩個數字是端上這一筆登錄的長度，後來上架的版本把第三軌記成 4:57，兩端差了將 |
-| `desc2:side by side／you're only young once...` |  26 秒。廠牌欄寫的是 Revelation，兩筆壓片的編號分別記成 5 與 REVELATION:5。 |
-| `desc2:sisa／qualsevol nit pot sortir el sol` | ste 兩家合掛同一個目錄編號 UM 2021，三筆發行都是八軌，也都是西班牙盤。這是 1971 年之後的第二張 |
-| `desc2:smash／glorieta de los lotos` | 行西班牙盤，唱片本身沒有留下目錄編號，名下也只有這一筆發行。純 Album 一共三張，這是最早的一張。 |
-| `desc2:suzukiski／waiting` | tastic Explosion。credit 三筆，當事人掛 Written-By、Mixed By 與 Pr |
-| `desc2:tagomago／flower instrumental` | 一次，逐軌只差一兩秒。MusicBrainz 的兩筆 release 掛同一個目錄編號 ZGV-007：1996 |
-| `desc2:tamaru／fuyu ni katarite` | 21、12:04、11:00。credit 只有三筆，當事人掛 Producer、Written-By 與 Mi |
-| `desc2:tamaru／夢の途中` | ，本張是三張裡唯一記成整數的。credit 只有三筆：當事人掛 Producer，Kazunao Nagata  |
-| `desc2:temdendam suay／sounzer paranoun (sound tracks of some films)` | Treatment]。本張 credit 欄只有四筆，Discogs 條目上也沒有 ℗／© 的登錄。內註一行寫著 |
-| `desc2:the argo singers／the soul of the argo singers` | 出 Richard Simpson。英國與法國那兩筆的立體聲是電子模擬的。 |
-| `desc2:the awakening／mirage` | 51 秒：Discogs 記 5:08，MB 那四筆全記 5:59。A1 反過來是 Discogs 記 5:37 |
-| `desc2:the black skirts／don't you worry baby (i'm only swimming)` | 創作歌手 Jo Hyu-il 一個人的單人樂團。兩筆建檔都是韓國正式盤、都掛 Doggy Rich，CD 的目錄 |
-| `desc2:the black skirts／team baby` | 持的廠牌 HIGHGRND 簽約，隔年這張碟留下兩筆同日建檔，一筆掛 Doggy Rich、目錄號 YP 000 |
-| `desc2:the icemen／rest in peace e.p.` | 最長，收在只有 2:20 的。這個掛名名下就只有這一筆碟，而實體記著的存在期橫跨 1982 到 1992 年，它落 |
-| `desc2:the roberta martin singers／prayer meeting` | 張碟後來由 Kenwood 沿用同一組編號再版，那一筆沒有登記年份。 |
-| `desc2:the third eye foundation／ghost` | ie Parsons 的另一個掛名。廠牌欄英國那兩筆是 Domino 的 WIGCD32 與 WIGLP32，美 |
-| `desc2:third quadrant／seeing yourself as you really are` | 個實體的 Discogs 簡介只有一句，底下只有兩筆。四個人的分工這次固定，不再一軌一換。第五軌兩邊對不上：Di |
-| `desc2:third quadrant／voyage to pluto` | 個站上是個獨立實體，底下只有 CSC 0001 這一筆。credit 只有三個人，而且分軌換手：Chris Dun |
-| `desc2:titiek puspa／sok teu` | 八軌 20 分 22 秒，1970 年之後她在資料庫端空白了十六年。這張由印尼 J&B Records 以 JBL |
-| `desc2:uno naissoo／mälestusi kodust` | 同一張碟四年後又壓了一次，那一筆連目錄號都沒有登記。1978 年那筆是 Мелодия С6 |
-| `desc2:various artists／băng nhạc shotguns 7 (yêu)` | 名。1970 一整年這個帶名發了九捲，本捲是十月那一筆：十五軌裡 Thái Thanh 唱三首、全捲最多，壓在開頭 |
-| `desc2:various artists／guitars of the golden triangle: folk and pop music of myanmar, volume 2` | shio Thein Aung 四軌；來源卡帶在資料庫端沒有可對應的原盤。當年的樂評形容這批電吉他沒有 power  |
-| `desc2:various artists／laos - l'art du khène` | 二十二秒，最短的正是那段二重奏，只有兩分十三秒。資料庫端以 Laos 為題的盤裡，這張建檔年代最早。 |
-| `desc2:various artists／princess nicotine: folk and pop music of myanmar (burma), vol. 1` | 。收的是橫跨約五十年的錄音，來源卡帶與廣播母帶在資料庫端沒有對應的原盤，整張因此以合輯建檔。2011 年黑膠再版、2 |
-| `desc2:various artists／shadow music of thailand` | P.M. 占八軌，其餘三組分走九軌，參與的樂隊在資料庫端只有軌級登記。錄音全在 1960 年代中的曼谷，選輯與設計出 |
-| `desc2:various artists／thai beat a go-go, volume 1` | 。是衝浪吉他，那一軌改用泰國樂器奏，參與的樂隊在資料庫端只有軌級登記。2009 年的黑膠版只收十三軌，選曲也換過。 |
-| `desc2:various artists／zabriskie point` | 盤的盤名，後來的版本一路把它縮短。1970 年那三筆黑膠的標題欄寫的是，1990 年那幾筆 CD 只剩，1997 |
-| `desc2:various artists／赤聲搖滾第一集：scum` | 中四組在 MusicBrainz 留下的錄音只有這一筆。 |
-| `desc2:walter bishop, jr.'s 4th cycle／keeper of my soul` | scogs 一致用團名。版本欄裡的日本授權盤排了五筆，從 1973 年的 YX-6090、2005 年的 P-V |
-| `desc2:world standard／country gazette` | t 欄是空的，整份 credit 只出現在美國盤那一筆：Larry Campbell 掛班鳩、多布羅、曼陀林與踏板 |
-| `desc2:zeni geva／nai-ha` | 三筆實體版本全部出在美國，沒有日本版。六軌總長約三十二分鐘，最短 |
-| `desc2:zigmars liepiņš & opus／pēc likuma` | 團 1982 至 1989 的存續年完全重合，有五筆從頭到尾都在。 |
-| `desc2:zodiac／in memoriam` | 同一個編號底下的兩筆原壓，一種盤面七軌、一種八軌。俄語那套把 9:06 的開場拆 |
-| `desc2:zodiac／music in the universe` | одия С60-18365-6、12 吋七軌，四筆實體盤共用同一個編號，建檔的字串卻沒有兩筆一模一樣。七軌長度 |
-| `desc2:чернавский/матецкий проджект／банановые острова` | 成為 1987 年電影的核心角色。1983 年那兩筆發行沒有廠牌登錄，最早帶廠牌的是 1995 年 APEX R |
-| `desc2:คาราวาน／คนตีเหล็ก` | 同一張碟三種曲序：卡帶 A、B 面各五首，資料庫端那版多了一個演奏版。多出來的末軌是的演奏版，這首 3 分半也 |
-| `desc2:ထူးအိမ်သင်／မှော်ဆရာအိပ်မက်` | asis 錄音室出版，這張隔年二月接上，十六軌，資料庫端只留下軌數與曲目，載體欄是空的。曲長從 2 分 35 秒到  |
-| `desc2:လေးဖြူ／ပါဝါ ၅၄` | 年代中期的第二張個人盤，與名下最早那張隔了兩年；資料庫端只登記 1996 年的緬甸 CD 一筆，沒有任何再版。十二軌 |
-| `desc2:ほうむず／朝日に向かって` | MusicBrainz 兩邊都只有 1978 年那一筆。 |
-| `desc2:ハナタラシ／ハナタラシ` | ，羅馬字拼法裡的 i 就被拿掉了。在此之前名下的四筆全是卡帶，1985 年這張才是第一張黑膠，出在 Alchem |
-| `desc2:不失者／allegorical misunderstanding` | ，也是不失者名下第一筆非現場作品——排在它前面的三筆都帶著現場標記。 |
-| `desc2:伍佰 & china blue／太空彈` | 隔年又錄了一次，資料庫把兩個版本記成兩筆錄音。這張碟上的那一版 5:18，上的那一版 5:27。十軌 |
-| `desc2:伍佰 & china blue／無盡閃亮的哀愁` |  軌，開場的同名曲 4:01，也在其中。紀錄上有兩筆發行：2013 年 12 月 13 日的數位版，以及同年台灣 |
-| `desc2:佐藤允彦／trinity` | 什麼樂器的紀錄，只有 Peter Warren 那一筆的註記寫著低音提琴與大提琴。這張 12 吋 1971 年由  |
-| `desc2:原田依幸／無明 [mu-myo]` | 分鐘。掛名是原田依幸與松風鉱一兩人平列，其中松風那一筆的註記寫著薩克斯風與長笛。 |
-| `desc2:大支／暗網` | 體加一位道長，第十軌的客座欄寫的是。2018 年兩筆都掛 AsiaMuse，數位先行、實體晚七天。 |
-| `desc2:大支／硬` | 兩軌在盤上記了客座。盤名只有一個字。2016 年那一筆台灣發行的載體欄是空的，也沒有掛廠牌，條碼 47129315 |
-| `desc2:大支／音政樂治` | 一位創作者 2016 與 2018 那兩張都短。這一筆發行沒有掛廠牌。2020 年 12 月的台灣盤是一張 CD、 |
-| `desc2:大谷幸／新機動戦記ガンダムw operation 1` | 軌裡有二十軌不到兩分鐘，最短的只有四十秒。MB 四筆 release 一致記大谷幸這張單片 40 軌，那首四十秒 |
-| `desc2:天野正道／ジャイアントロボ the animation -地球が静止する日- original sound track i` | LLON BCCM-18 名下，單片 19 軌，四筆 release 軌數一致；盤名有三種：日本原盤的長標題、德 |
-| `desc2:宇宙人／一萬小時` | 獎；另外兩張台灣 CD 標的是英文盤名，只有數位那一筆用中文。 |
-| `desc2:小栗均トリオ／みどりいろの渓流` | 的廠牌回顧輯選走的則是另一軌。Discogs 的建檔者說曲名照他手上那張原盤抄、拼字一個都沒改，條目上因此留著  |
-| `desc2:崎元仁／final fantasy xii original soundtrack` | rainz 記 2006 年 5 月 31 日那兩筆 CD 的廠牌欄同時掛 Aniplex 與 SQUARE E |
-| `desc2:崎元仁／vagrantstory original soundtrack` | 連寫、分寫、片假名。MusicBrainz 底下三筆 Official 各用一種：2000 年 DigiCube |
-| `desc2:川井憲次／patlabor 2 the movie` | -84206，川井憲次這張單片 13 軌，MB 五筆 release 軌數一致。曲名全是英文短詞——outset |
-| `desc2:巴奈／愛，不到` | 盤名自己也帶一個逗號。2020 年的台灣 CD，這一筆發行沒有掛廠牌，也沒有條碼與目錄編號。 |
-| `desc2:康士坦的變化球 constant & change／擱淺的人` | 長到十七個字，落差就是這張碟的節奏。他們名下只有三筆發行，三張全是專輯，一張 EP 與一首單曲都沒有。團名則出自 |
-| `desc2:康士坦的變化球 constant & change／眠月線` | CD 9 月 2 日跟上，編號 KFK2309，兩筆共用同一個條碼。 |
-| `desc2:新寶島康樂隊／第3輯` | 名叫。那個玩笑在紀錄上留下一組雙胞胎：資料庫裡有兩筆標題、年份、藝人、廠牌與條碼都相同的條目，一筆把這一軌算了進 |
-| `desc2:新寶島康樂隊／第二輯` | CD，開場4:22。Discogs 把它建在這個條目底下，原盤條目的標題則印成 New Formosa Band V |
-| `desc2:李英宏／台北直直撞` | 9 兩軌，兩位的名字寫在軌級掛名上。2016 年那一筆發行掛顏社，條碼欄是空的，這也是名下最早的一張長篇。 |
-| `desc2:李英宏／水哥 2020` | 者四年前那張十二軌，只有兩軌有客座。2020 年這一筆掛顏社，條碼 4712862000260，是名下最晚的一張長 |
-| `desc2:林強／千禧曼波 電影原聲帶` | 內附三張電影劇照明信片。CD 版本十軌，紀錄上的兩筆數位發行只有九軌，少掉的是第 6 軌那首 remix，收的是 |
-| `desc2:林生祥／林生祥童謠專輯: 頭擺頭擺` | 9、條碼 4713012741903。名下九筆有五筆是原聲帶，扣掉之後四張長篇裡本張最晚。 |
-| `desc2:植松伸夫／final fantasy vii: original soundtrack` | sicBrainz 的 release 清單把這四筆都標成 Bootleg——笙美 A&G-007〜010、K- |
-| `desc2:滅火器／家和萬事興` | 行、編號 FIREON-0141，10 軌。成績兩筆都入圍未得獎：2024 年第 35 屆金曲獎的年度專輯獎、最 |
-| `desc2:滅火器／進擊下半場` | 同日發了台灣的 CD 與數位版，同條碼、同曲序，兩筆都掛火氣音樂。 |
-| `desc2:無妄合作社／二十一世紀的破青年` | 五分鐘以上，八軌一位客座都沒有。2019 年留下三筆發行：台灣的 CD（編號 AR-012）、一筆數位版，再加一 |
-| `desc2:煙雨飄渺／霧島` | 所全都收在同一間公司底下，還辦起自己的音樂祭。的兩筆發行與實體編號，走的就是這一整套自己蓋起來的產線——2023 |
-| `desc2:百合花 lilium／不是路` | 的最佳專輯製作人獎。同年第 13 屆金音創作獎的兩筆也都是入圍未得獎：最佳現場演出獎，與的最佳搖滾歌曲獎。樂團的 |
-| `desc2:竇唯／幻聽` |  02 秒。中國首版 1999 年出，線上流通的那一筆標的則是 2001 年的臺灣版。 |
-| `desc2:舒米恩／bondada` | 03 到 4:22，一位客座都沒有。2019 年三筆發行的載體全部是數位，兩筆同日的版本共用同一個條碼，十天後那 |
-| `desc2:落差草原 wwww／泥土 soil` | 計約六十七分鐘，一位客座都沒有。2015 年同日兩筆發行的盤名寫法不同：數位版中間是一條斜線，實體 CD 中間只 |
-| `desc2:董事長樂團／真的假的!?` | 一個句點，之後的第二十軌才是4:04。同一組底下另一筆只登錄到第十二軌，兩筆同編號 CMD204、同是 2006  |
-| `desc2:血肉果汁機 flesh juicer／深海童話` | 單上的報名單位卻是另一個名字，好球娛樂有限公司。兩筆成績都是入圍未得獎：2019 年第 30 屆金曲獎最佳樂團獎 |
-| `desc2:豬頭皮／人生半百古來嘻` | 場那一軌 6:26，最長的11:12。同一年另有兩筆單曲規格的實體出版，其中一筆的曲名就是碟上的7:08，另一筆 |
-| `desc2:鄭宜農／水逆` |  CD（編號 FIREON-0074）與數位版，兩筆都掛火氣音樂。 |
-| `desc2:閃靈／台灣大凱旋` | ；三軌帶客座，收尾那一位的名字是全張唯一的漢字。兩筆發行都是數位版，一筆掛 Wind Music。 |
-| `desc2:閃靈／台灣閃閃爍 megaport 2021` |  8:46 的。第三軌之後的七軌都掛同一位客座。三筆發行的盤名不一樣：數位版印完整的漢字加英文，兩張台灣實體 C |
-| `desc2:閃靈／武德殿不插電演唱會實況` | 4 差了五分鐘以上，中段還有壓得很短的1:51。這一筆的藝人掛名寫的是漢字，十二項的軌級掛名也都是漢字。唯一一筆發 |
-| `desc2:閃靈／演武` | 五筆發行的載體全部是 DVD-Video，其中一筆另附一張十軌的 |
-| `desc2:閃靈／醒靈寺大決戰` | 四筆發行裡三筆是兩張 CD 加一張 DVD，第四筆是單張藍光。四十個項目一律沒有留下長度。兩張 CD 分成十軌 |
-| `desc2:陳小霞／老翅膀` | 7 日由華研國際發行，收十軌，紀錄上一筆是數位、另一筆是同年的黑膠；最短的3:50，最長的一軌 5:05。她 19 |
-| `desc2:브로콜리 너마저／보편적인 노래` |  22 秒明顯拉長，收尾的2 分 38 秒最短。兩筆建檔同一天，實體是韓國 CD、廠牌 Luova Factor |
-| `desc2:장기하와 얼굴들／장기하와 얼굴들` | 第 9 軌才開始拉長，全碟 44 分 29 秒。兩筆建檔同一天，CD 掛、目錄號 BGF-012。這張碟拿下 2 |
 
 ## B4　正文夾諺文
 
 | 鍵 | 前後文 |
 |---|---|
-| `desc2:bigbang／remember` |  Noeul，中文常譯）翻唱自 이문세（Lee Moon-se）的原曲。第 17 屆首 |
-| `desc2:boa／no.1` | 보아（BoA）的韓國第二張正規盤，2002 年 4  |
-| `desc2:brown eyed soul／soul free` | 2003 年 9 月 17 日，나얼（Naul）、정엽（Jungyup）、성훈（Su |
-| `desc2:f(x)／pink tape` |  Gaon 與世界專輯榜冠軍；在멜론與한겨레邀四十七位樂評選出的韓國名盤一百張中列第 |
-| `desc2:girls' generation／oh!` | 소녀시대的第二張正規盤，2010 年 1 月 28 日由 |
-| `desc2:h.o.t.／we hate all kinds of violence` | ，通常被算作韓國偶像工業的起點。이수만事前對首爾的高中生做問卷，依調查結果組出문희준、 |
-| `desc2:hyukoh／23` | 혁오（HYUKOH）由主唱兼吉他手오혁領軍，2014 |
-| `desc2:iu／modern times` | 아이유（IU）的第三張正規盤，2013 年 10 月由 |
-| `desc2:iu／palette` | 아이유（IU）2017 年的第四張正規盤，詞曲絕大多數 |
-| `desc2:jambinai／différance` | 2009 年於首爾組成的잠비나이，以奚琴(haegeum)、篳篥(piri)與玄 |
-| `desc2:jay park／everything you wanted` | 박재범（Jay Park）第四張個人正規盤，2016  |
-| `desc2:n.ex.t／the return of n.ex.t part 1: the being` | 신해철 因 1993 年大麻案沉潛後，帶 N.EX.T |
-| `desc2:nell／healing process` | 넬（NELL）在後離開서태지컴퍼니，轉往울림 엔터테인먼트推出 2006 年 9  |
-| `desc2:newjeans／get up` | NewJeans（뉴진스）的第二張 EP，2023 年 7 月由 ADO |
-| `desc2:parannoul／to see the next part of the dream` | 파란노을（Parannoul）是首爾一位匿名獨立音樂人， |
-| `desc2:samulnori／record of changes` | 1978 年由金德洙(김덕수)與金龍培、李光洙、崔鍾實等人創始的四物놀이，把 |
-| `desc2:say sue me／where we were together` | 세이수미（Say Sue Me）2012 年組於釜山，第 |
-| `desc2:shin joong hyun／beautiful rivers and mountains: the psychedelic rock sound of south korea's shin joong hyun 1958-1974` | 韓國搖滾教父申重鉉（신중현）一九五七年自美軍第八軍團樂隊出身，一九六四年組 |
-| `desc2:silica gel／power andre 99` | 실리카겔 2013 年成軍於서울예술대학교，以사이키델릭 록為底，把合成器、取樣與 VJ  |
-| `desc2:the black skirts／201` | 검정치마是조휴일的個人名義；他十二歲移居美國、2006 年返韓後 |
-| `desc2:twice／eyes wide open` | 曲以 retro 為軸。主打由 박진영 與 심은지 作詞、Melanie Fontan |
-| `desc2:yerin baek／every letter i sent you.` | 백예린（Yerin Baek）與 JYP 約滿後自立廠 |
-| `desc2:가리온／가리온` | 純韓文寫饒舌，1998 年組成 가리온（Garion）。團名取自朝鮮傳說中一種棲息白頭 |
-| `desc2:박효신／second story` | 約 44 萬張後，第二張他找來 윤상（Yoon Sang）掌舵。這位製作人把抒情底子 |
-| `desc2:부활／부활 vol.1` | sbourne。走前者路線的是 부활，對面那支是 시나위，而 부활 正式成軍也就在同 |
-| `desc2:산울림／산울림 3집 (내 마음)` | 張白底抽象畫出自團裡吉他手之手，산울림 早期各張的封面都用他自己的畫。 |
-| `desc2:시인과 촌장／숲` | ，上頭的字也是他寫的。他學過畫，시인과 촌장的封面因此沒有假手他人。十軌總長約 39  |
-| `desc2:신촌블루스／신촌 blues ii` | 一張碟上輪流換人唱，김현식、한영애 各自負責不同曲目。除了這兩位，還有第三位歌手也 |
-| `desc2:윤상／윤상 1집` | 前他的身分是作曲家與樂手，當過 김완선 後場樂團的貝斯手，也替 변진섭 做過樂手。19 |
-| `desc2:이승철／이승철 part 1` | 裡只剩兩分二十四秒。那個樂團是 부활，他離開之後才有這張 1980 年代末的個人盤。 |
-| `desc2:이찬혁／eros` | 實是第 3 軌；全碟的詞都出自 이찬혁，作曲固定掛他與另外兩人。2025 年 7 月  |
-| `desc2:한영애／바라본다` | ，同去的幾位樂手與她組成的團叫 신촌블루스。她名下第二張的這一碟九軌約 40 分，同名的5 |
-| `desc4:bts／love yourself 轉 'tear'` | 방탄소년단（BTS）的第三張韓語正規盤，2018 年 5  |
-| `desc4:drunken tiger／위대한 탄생` | 타이거 JK 與 DJ 샤인 的드렁큰 타이거 正規二輯，2000 年 3 月 29  |
-| `desc4:hwang byungki／침향무` | 伽倻琴宗師黃秉冀(황병기，1936–2018)自作曲集，是其系列第一輯， |
-| `desc4:leenalchi／수궁가` | 이날치是 2019 年成軍的판소리流行樂團，團名取自 1880 年代的판소리名家李 |
-| `desc4:mid-air thief／무너지기` | 공중도둑（Mid-Air Thief）是韓國匿名音樂人， |
-| `desc4:se so neon／여름깃` | 새소년（SE SO NEON）2016 年於붕가붕가레 |
-| `desc4:tablo／열꽃` | Epik High 主腦타블로（Tablo）在學歷爭議停工一年八個月後交出的首 |
-| `desc4:tvxq!／"o"-正.反.合.` | 동방신기的韓語第三張正規盤，2006 年 9 月 29  |
-| `desc4:verbal jint／누명` | 버벌진트（Verbal Jint，本名김진태）在 SNP |
-| `desc4:김광석／네 번째` | 김광석（金光石，一九九六年一月過世）一九九四年六月由킹 |
-| `desc4:김광석／다시 부르기 ii` | 김광석 1995 年的第二張重唱盤，由 조동익 製作， |
-| `desc4:김두수／자유혼` | 김두수在一九九一年之後隔了十一年才交出的第四張作品，二 |
-| `desc4:김추자／늦기전에` | 一九六九年十月，十八歲的김추자以申重鉉作編曲集出道。前半走 soul 的節奏與 |
-| `desc4:김현식／김현식 3집` | 김현식（金賢植）1986 年的第三張正規盤，掛名義錄成 |
-| `desc4:델리스파이스／deli spice` | 델리스파이스 1995 年由 PC 通訊하이텔的모던록同好會 |
-| `desc4:들국화／들국화 1집 (행진)` | 一九八五年九月由서라벌레코드發行、樂團自任製作，在서울스튜디오錄成。전인권近 |
-| `desc4:봄여름가을겨울／봄여름가을겨울` | 김종진 與 전태관 離開 김현식 的伴奏樂隊後自組的雙人編制，1988 年由 송 |
-| `desc4:빛과 소금／빛과 소금 vol.1` | 장기호、박성식、한경훈 三人組的首作，1990 年由 동아기획 發行。 |
-| `desc4:산울림／산울림 1집 (아니 벌써)` | 김창완、김창훈、김창익三兄弟一九七七年十二月由서라벌레코드推出的出道盤 |
-| `desc4:산울림／산울림 2집 (내 마음에 주단을 깔고)` | 一九七八年五月由서라벌레코드發行、방기남製作。標題曲以六分餘的長度讓吉他緩慢 |
-| `desc4:서태지와 아이들／서태지와 아이들` | 金屬樂隊 시나위 貝斯手出身的 서태지 帶著 양현석、이주노 於 1992 年推出的首 |
-| `desc4:시인과 촌장／푸른 돛` | 하덕규 包辦全部詞曲、함춘호 擔任吉他的二人編制，1986 年錄於한국음반스 |
-| `desc4:신중현과 엽전들／신중현과 엽전들 1집` | 申重鉉一九七二年與貝斯手이남이、鼓手김호식組成엽전들（葉錢們），一九七四年由지 |
-| `desc4:양희은／양희은 고운노래 모음` | 양희은（楊姬銀，一九五二年生）大學一年級時的首張個人專 |
-| `desc4:어떤날／어떤날 i` | 조동익（1960 年生）與 이병우（1965 年生）的雙人組首作，封面上那組數字就 |
-| `desc4:어떤날／어떤날 ii` | 어떤날 的完結作，1989 年錄於서울 스튜디오。조동 |
-| `desc4:언니네 이발관／가장 보통의 존재` | 언니네이발관第五張正規，2008 年 8 月 8 日經쌈넷發 |
-| `desc4:유재하／사랑하기 때문에` | 유재하出身漢陽大學作曲系，一九八四年曾任조용필과 위대 |
-| `desc4:이문세／이문세 4집` | 이영훈 包辦全碟詞曲並任製作，1987 年由 서라벌레 |
-| `desc4:자우림／purple heart` | 자우림（紫雨林）1997 年以電影原聲帶裡的出道，同年 |
-| `desc4:잔나비／전설` | 잔나비（Jannabi）第二張正規2019 年 3 月 |
-| `desc4:장기하와 얼굴들／별일 없이 산다` | 장기하 包辦製作與詞曲編曲，錄音多半在 나잠 수 位於 |
-| `desc4:정태춘／시인의 마을` | 정태춘（鄭泰春，一九五四年生於京畿道平澤）一九七五至七 |
-| `desc4:조동진／조동진 1집 (행복한 사람)` | 조동진一九六七年以미8군 재즈록 밴드 쉐그린的吉他手兼主唱出道，十二年後才發表 |
-| `desc4:조용필／조용필 10집 part.1` | 奧運閉幕的電視轉播中放送而傳開，조용필受訪時說寫這首歌是因為他料想奧運結束後社會會轉為 |
-| `desc4:조용필／조용필 1집 (창밖의 여자)` | 조용필一九七七年因大麻파동被迫停止活動，解禁後於一九七九年組成위대한 탄생 |
-| `desc4:펄 시스터즈／님아` | 배인순、배인숙姊妹一九六八年的出道盤，全輯由申重鉉作曲編曲，封 |
-| `desc4:한대수／고무신` | 한대수第二張，一九七五年由 Four Season 發 |
-| `desc4:한대수／멀고 먼-길` | 한대수（韓大洙，一九四八年生）在釜山與紐約哈林區之間往 |
 
 ## C　人工補記
 
@@ -300,1062 +47,830 @@ A 區有 55 條的原句在線上已經找不到（多半被第一輪的去出�
 
 | 批次 | 卡 | 上線寫法 | 問題 | 依據 | 原句還在 |
 |---|---|---|---|---|---|
-| ar-b-012 | 929《也許像星星》 | 929 由吳志寧與黃玠 2004 年在大學時期組成 | 此句依中文維基〈吳志寧〉；馬世芳〈8/14 耳朵借我：專訪929樂團〉寫 2005 年首次上節目是志寧和嘟嘟兩人組，黃玠後來才在四人編制出現、再因單飛退出，兩源對創團成員不一致；建議簡介只寫「吳志寧在大學時期組成」、不點黃玠為共同創團者，或標明出處 | https://vocus.cc/article/601a697bfd89780001367b50 | 是 |
+| ar-b-012 | 929《也許像星星》 | 929 由吳志寧與黃玠 2004 年在大學時期組成 | 此句依中文維基〈吳志寧〉；馬世芳〈8/14 耳朵借我：專訪929樂團〉寫 2005 年首次上節目是志寧和嘟嘟兩人組，黃玠後來才在四人編制出現、再因單飛退出，兩源對創團成員不一致；建議簡介只寫「吳志寧在大學時期組成」、不點黃玠為共同創團者，或標明出處 | https://vocus.cc/article/601a697bfd89780001367b50 | 否 |
 | ar-b-012 | 929《929同名專輯》 | 2004 年吳志寧與黃玠在大學時期成立 929；同名碟是兩人編制做出來的 | 同上：兩人編制的另一位，馬世芳寫是嘟嘟（貝斯），中文維基則說成立者是黃玠；簡介引中文維基原句本身無誤，但讀者會以為兩人編制就是吳志寧與黃玠，建議不暗示這一點 | https://vocus.cc/article/601a697bfd89780001367b50 | 否 |
-| ar-b-013 | Gene Clark《No Other》 | 2019 年 4AD 重製後評價翻轉 | 維基 No Other 條寫評價早在 2000 年代就已翻轉，4AD 2019 年重發是翻轉之後的豪華版（Metacritic 94）；The Quietus 的長文原稿寫於 1995 年已稱它是史上最偉大專輯之一。建議改成「多年後重新評價，2019 年 4AD 推出豪華重發」。 | https://en.wikipedia.org/wiki/No_Other | 是 |
+| ar-b-013 | Gene Clark《No Other》 | 2019 年 4AD 重製後評價翻轉 | 維基 No Other 條寫評價早在 2000 年代就已翻轉，4AD 2019 年重發是翻轉之後的豪華版（Metacritic 94）；The Quietus 的長文原稿寫於 1995 年已稱它是史上最偉大專輯之一。建議改成「多年後重新評價，2019 年 4AD 推出豪華重發」。 | https://en.wikipedia.org/wiki/No_Other | 否 |
 | ar-b-013 | Gorilla Biscuits《Start Today》 | 全張總長 24 分 45 秒、十四軌 | 英文維基 Start Today 條寫總長 24:09，Crack 雜誌寫 12 軌；與上線簡介的 24:45、十四軌不一致，可能是不同版本（CD 再版加曲或 MusicBrainz 版本差異），請在本機對 MusicBrainz 與原盤核對。 | https://en.wikipedia.org/wiki/Start_Today | 否 |
-| ar-b-014 | Leb i Sol《Leb i sol》 | 團名是馬其頓的待客語：貴客上門，先端出麵包和一撮鹽 | en 維基同此說，但 sr 維基把團名解釋為『只吃麵包和鹽也不放棄』的堅持之意，兩源解釋不一；建議改成只寫『團名是馬其頓語的麵包與鹽』或標明由來有兩種說法。低優先。 | https://sr.wikipedia.org/wiki/Леб_и_сол | 是 |
-| ar-b-015 | Phil Collins《...But Seriously》 | 談無家者的〈Another Day in Paradise〉拿下第三十三屆葛萊美年度單曲 | 維基〈Another Day in Paradise〉條目寫它在 1991 年葛萊美獎得的是 Record of the Year（年度唱片），Song of the Year（年度歌曲）只是入圍沒得；『年度單曲』易被讀成 Song of the Year，建議改成『年度唱片』或寫成 Record of the Year。單源，建議本機再核。 | https://en.wikipedia.org/wiki/Another_Day_in_Paradise | 是 |
-| ar-b-015 | Robert Calvert《Test-Tube Conceived》 | 1988 年他在拉姆斯蓋特去世，墓碑上刻著莎士比亞的一句詩 | 死亡地點兩源不一致：英文維基寫在 Ramsgate 的 Corner House 咖啡館外、Encyclopedia.com 寫在 Margate 家中；建議簡介只留「1988 年去世」，不寫地點（墓碑刻句只見維基與衍生網站，單源）。 | https://www.encyclopedia.com/education/news-wires-white-papers-and-books/calvert-robert | 是 |
-| ar-b-015 | The Black Skirts《201》 | 他十二歲移居美國、2006 年返韓後以單人樂團起步。 | 移居年齡有 12 歲（英文維基）與 13 歲（韓文維基、搜尋摘要）兩說；返韓年份英文維基寫 2006，但韓文維基、Bugs 訪談、Newsis 訪談都指向 2007 年來韓，2006 年是樂團轉為單人專案的年份。建議把『十二歲』改成『青少年時期』、『2006 年返韓』改成『2007 年來韓發展』。 | https://ko.wikipedia.org/wiki/%EA%B2%80%EC%A0%95%EC%B9%98%EB%A7%88 | 是 |
-| ar-b-015 | THE BLUE HEARTS《THE BLUE HEARTS》 | 甲本ヒロト、真島昌利、河口純之助、梶原徹也1985年組成 | 日文維基寫 1985 年成軍時是甲本、真島與河口，鼓手梶原徹也 1986 年才加入；單源（日文維基），建議把『四人 1985 年組成』改為『甲本與真島 1985 年起頭、1986 年補齊四人』或改成不點年份。 | https://ja.wikipedia.org/wiki/THE_BLUE_HEARTS | 是 |
-| ar-b-016 | 光束夜《1st》 | 這張 12 吋出在 1990 年的日本 Ray Night Music，編號 RNM0001 | 英文維基系統來源（搜尋摘要）寫首張 LP 在 Ray Night Music 於 1991 年發行；MusicBrainz 記 1990；兩源不一致，未能判定，建議店主再核對 Discogs 實體資料。 | https://en.wikipedia.org/wiki/Kousokuya | 是 |
-| ar-b-017 | 老王樂隊《暮夜徐行》 | 發行約半年之後樂團宣布暫時休團，這張碟因而成為目前的最後一張 | ETtoday 報導樂團 2025 年 11 月 30 日在簡單生活節 Legacy 舞台宣布暫時休團，中文維基寫 2025 年底在簡單生活節宣布；而本專輯首發為 2025 年 10 月 30 日（事實庫 MusicBrainz），第二張實體碟 11 月 13 日。休團距首發約一個月，不是約半年；建議改為『發行約一個月之後』，並因『目前的最後一張』會過期，建議改寫。 | https://star.ettoday.net/news/3076296 | 是 |
-| ar-b-017 | 脫拉庫《飛向陽光飛向你》 | 一九九九年首張《歡迎脫拉庫》入圍第十一屆金曲獎最佳演唱團體獎 | 第 11 屆金曲獎典禮於 2000 年 4 月 28 日舉行，1999 年是專輯發行年；寫『一九九九年…入圍』易讀成入圍發生在 1999 年，建議改為『首張專輯入圍 2000 年第 11 屆…』或去掉年份。 | https://zh.wikipedia.org/zh-tw/%E7%AC%AC11%E5%B1%86%E9%87%91%E6%9B%B2%E7%8D%8E | 是 |
-| ar-b-017 | 脫拉庫《歡迎脫拉庫》 | 貝斯彭承吉、鼓陳沐凡 | 本層開頁的中文維基摘要與聯合報 udn 專題都寫彭丞吉、陳牧凡，與上線簡介（彭承吉、陳沐凡）寫法不同；中文維基原頁字形請店主於本機核對（本層讀的是工具摘要，字形可能被轉寫，不確定）。 | https://time.udn.com/udntime/story/122834/8011437 | 是 |
-| ar-b-017 | Dick Gaughan《Coppers & Brass》 | 同一段時間，他還與一支凱爾特搖滾團錄了四張 | Stoneyport（藝人經紀簡介）寫與 Five Hand Reel 錄了三張專輯，與簡介的『四張』不一致；是否有誤待店主用 Five Hand Reel 目錄核對（本層未查到可確認的專輯清單，僅供核對）。 | https://stoneyport.biz/dick-gaughan | 是 |
-| ar-b-017 | Garth Brooks《No Fences》 | 獲 RIAA 認證 18 白金 | 本批特注規定 Garth Brooks 銷量與認證倍數不寫；這不是事實錯誤，是規則問題，建議店主本機改寫時拿掉認證倍數與週數統計 | https://en.wikipedia.org/wiki/Garth_Brooks | 是 |
+| ar-b-014 | Leb i Sol《Leb i sol》 | 團名是馬其頓的待客語：貴客上門，先端出麵包和一撮鹽 | en 維基同此說，但 sr 維基把團名解釋為『只吃麵包和鹽也不放棄』的堅持之意，兩源解釋不一；建議改成只寫『團名是馬其頓語的麵包與鹽』或標明由來有兩種說法。低優先。 | https://sr.wikipedia.org/wiki/Леб_и_сол | 否 |
+| ar-b-015 | Phil Collins《...But Seriously》 | 談無家者的〈Another Day in Paradise〉拿下第三十三屆葛萊美年度單曲 | 維基〈Another Day in Paradise〉條目寫它在 1991 年葛萊美獎得的是 Record of the Year（年度唱片），Song of the Year（年度歌曲）只是入圍沒得；『年度單曲』易被讀成 Song of the Year，建議改成『年度唱片』或寫成 Record of the Year。單源，建議本機再核。 | https://en.wikipedia.org/wiki/Another_Day_in_Paradise | 否 |
+| ar-b-015 | Robert Calvert《Test-Tube Conceived》 | 1988 年他在拉姆斯蓋特去世，墓碑上刻著莎士比亞的一句詩 | 死亡地點兩源不一致：英文維基寫在 Ramsgate 的 Corner House 咖啡館外、Encyclopedia.com 寫在 Margate 家中；建議簡介只留「1988 年去世」，不寫地點（墓碑刻句只見維基與衍生網站，單源）。 | https://www.encyclopedia.com/education/news-wires-white-papers-and-books/calvert-robert | 否 |
+| ar-b-015 | The Black Skirts《201》 | 他十二歲移居美國、2006 年返韓後以單人樂團起步。 | 移居年齡有 12 歲（英文維基）與 13 歲（韓文維基、搜尋摘要）兩說；返韓年份英文維基寫 2006，但韓文維基、Bugs 訪談、Newsis 訪談都指向 2007 年來韓，2006 年是樂團轉為單人專案的年份。建議把『十二歲』改成『青少年時期』、『2006 年返韓』改成『2007 年來韓發展』。 | https://ko.wikipedia.org/wiki/%EA%B2%80%EC%A0%95%EC%B9%98%EB%A7%88 | 否 |
+| ar-b-015 | THE BLUE HEARTS《THE BLUE HEARTS》 | 甲本ヒロト、真島昌利、河口純之助、梶原徹也1985年組成 | 日文維基寫 1985 年成軍時是甲本、真島與河口，鼓手梶原徹也 1986 年才加入；單源（日文維基），建議把『四人 1985 年組成』改為『甲本與真島 1985 年起頭、1986 年補齊四人』或改成不點年份。 | https://ja.wikipedia.org/wiki/THE_BLUE_HEARTS | 否 |
+| ar-b-016 | 光束夜《1st》 | 這張 12 吋出在 1990 年的日本 Ray Night Music，編號 RNM0001 | 英文維基系統來源（搜尋摘要）寫首張 LP 在 Ray Night Music 於 1991 年發行；MusicBrainz 記 1990；兩源不一致，未能判定，建議店主再核對 Discogs 實體資料。 | https://en.wikipedia.org/wiki/Kousokuya | 否 |
+| ar-b-017 | 老王樂隊《暮夜徐行》 | 發行約半年之後樂團宣布暫時休團，這張碟因而成為目前的最後一張 | ETtoday 報導樂團 2025 年 11 月 30 日在簡單生活節 Legacy 舞台宣布暫時休團，中文維基寫 2025 年底在簡單生活節宣布；而本專輯首發為 2025 年 10 月 30 日（事實庫 MusicBrainz），第二張實體碟 11 月 13 日。休團距首發約一個月，不是約半年；建議改為『發行約一個月之後』，並因『目前的最後一張』會過期，建議改寫。 | https://star.ettoday.net/news/3076296 | 否 |
+| ar-b-017 | 脫拉庫《飛向陽光飛向你》 | 一九九九年首張《歡迎脫拉庫》入圍第十一屆金曲獎最佳演唱團體獎 | 第 11 屆金曲獎典禮於 2000 年 4 月 28 日舉行，1999 年是專輯發行年；寫『一九九九年…入圍』易讀成入圍發生在 1999 年，建議改為『首張專輯入圍 2000 年第 11 屆…』或去掉年份。 | https://zh.wikipedia.org/zh-tw/%E7%AC%AC11%E5%B1%86%E9%87%91%E6%9B%B2%E7%8D%8E | 否 |
+| ar-b-017 | 脫拉庫《歡迎脫拉庫》 | 貝斯彭承吉、鼓陳沐凡 | 本層開頁的中文維基摘要與聯合報 udn 專題都寫彭丞吉、陳牧凡，與上線簡介（彭承吉、陳沐凡）寫法不同；中文維基原頁字形請店主於本機核對（本層讀的是工具摘要，字形可能被轉寫，不確定）。 | https://time.udn.com/udntime/story/122834/8011437 | 否 |
+| ar-b-017 | Dick Gaughan《Coppers & Brass》 | 同一段時間，他還與一支凱爾特搖滾團錄了四張 | Stoneyport（藝人經紀簡介）寫與 Five Hand Reel 錄了三張專輯，與簡介的『四張』不一致；是否有誤待店主用 Five Hand Reel 目錄核對（本層未查到可確認的專輯清單，僅供核對）。 | https://stoneyport.biz/dick-gaughan | 否 |
+| ar-b-017 | Garth Brooks《No Fences》 | 獲 RIAA 認證 18 白金 | 本批特注規定 Garth Brooks 銷量與認證倍數不寫；這不是事實錯誤，是規則問題，建議店主本機改寫時拿掉認證倍數與週數統計 | https://en.wikipedia.org/wiki/Garth_Brooks | 否 |
 | ar-b-017 | Garth Brooks《Garth Brooks》 | 2006 年 11 月鑽石認證、美國出貨超過一千萬張 | 同上，在世者認證與銷量不寫 | https://en.wikipedia.org/wiki/Garth_Brooks | 否 |
 | ar-b-017 | Garth Brooks《The Chase》 | 首週賣出 403000 張並獲 RIAA 鑽石認證 | 同上，在世者銷量與認證不寫 | https://en.wikipedia.org/wiki/Garth_Brooks | 否 |
-| ar-b-017 | Steve Earle《Copperhead Road》 | B 面轉成情歌，收尾的〈Nothing but a Child〉與 Maria McKee 對唱 | 維基〈Copperhead Road〉專輯條目把〈Nothing but a Child〉描述為聖誕主題的二重唱（Christmas-themed duet），不是情歌；建議把『B 面轉成情歌』改成較中性的說法 | https://en.wikipedia.org/wiki/Copperhead_Road | 是 |
+| ar-b-017 | Steve Earle《Copperhead Road》 | B 面轉成情歌，收尾的〈Nothing but a Child〉與 Maria McKee 對唱 | 維基〈Copperhead Road〉專輯條目把〈Nothing but a Child〉描述為聖誕主題的二重唱（Christmas-themed duet），不是情歌；建議把『B 面轉成情歌』改成較中性的說法 | https://en.wikipedia.org/wiki/Copperhead_Road | 否 |
 | ar-b-018 | Woody Guthrie《Library of Congress Recordings》 | 維基記這是 Guthrie 最早的錄音 | Britannica 的傳記寫他『1941 年與 Alan Lomax 做了首批錄音』，與『1940 年 3 月最早』矛盾；『最早』一類宣稱兩源不一致，建議店主在本機改為不寫『最早』，只寫 1940 年 3 月為 Lomax 錄音、編目於國會圖書館 | https://www.britannica.com/biography/Woody-Guthrie | 否 |
 | ar-b-018 | Charlie Rich《The Fabulous Charlie Rich》 | 1958 年剛進 Sun Records；九年後 Epic 簽下他（即 1967 年） | 年份來源不一致：Encyclopedia of Arkansas 寫 1957 年簽 Sun，encyclopedia.com 寫 1968 年簽 Epic，英文維基為 1958 與 1967。建議改為『1950 年代後期』與『1960 年代後期』，或不寫確切年份。 | https://encyclopediaofarkansas.net/entries/charlie-rich-2519/ | 否 |
 | ar-b-018 | Dwight Yoakam《Guitars, Cadillacs, Etc., Etc.》 | 1980 年代初…從 Nashville 移居洛杉磯 | 年份來源不一致：PBS SoCal 寫 1977 年離開 Ohio State 與 Nashville 後來到洛杉磯，維基寫約 1982 年。建議不寫年份，或改成『離開 Nashville 後移居洛杉磯』。另『1984 年先在獨立廠牌發行同名六曲 EP』本層只查到 EP 在 1984 年錄成、之後簽 Warner 旗下廠牌，未查到『獨立廠牌發行』一節，請本機覆核。 | https://www.pbssocal.org/shows/artbound/dwight-yoakam-on-his-early-cowpunk-years-in-los-angeles | 否 |
-| ar-b-018 | Fred Cockerham, Tommy Jarrell & Oscar Jenkins《Down to the Cider Mill》 | 這家廠牌的第一張唱片，材料直接來自老闆自己的收藏 | County Records 的第一張出版品是 1964 年的《A Collection of Mountain Fiddle Music》（County 501）；本張是 1968 年的 County 713，只能說是三人聯名的第一張。另外簡介「Charles Faurot 替廠牌錄的十幾張都在這一段」未在事實庫找到出處，建議一併查核。 | https://en.wikipedia.org/wiki/County_Records | 是 |
-| ar-b-018 | Karel Kryl《Bratříčku, zavírej vrátka》 | 起初印一萬張很快售罄，換社長後庫存被圓鋸切掉，總印量估計五萬張 | 需確認口徑：Radiožurnál 報導該專輯數週內賣出約四萬張，捷克維基則稱該首歌 2015 年前累計約 30 萬張；簡介的『總印量五萬張』與這兩個數字的時間尺度不同，建議店主對照原始出處確認是哪個口徑。 | https://radiozurnal.rozhlas.cz/osobnosti-a-kultura-68-7571690/2 | 是 |
+| ar-b-018 | Fred Cockerham, Tommy Jarrell & Oscar Jenkins《Down to the Cider Mill》 | 這家廠牌的第一張唱片，材料直接來自老闆自己的收藏 | County Records 的第一張出版品是 1964 年的《A Collection of Mountain Fiddle Music》（County 501）；本張是 1968 年的 County 713，只能說是三人聯名的第一張。另外簡介「Charles Faurot 替廠牌錄的十幾張都在這一段」未在事實庫找到出處，建議一併查核。 | https://en.wikipedia.org/wiki/County_Records | 否 |
+| ar-b-018 | Karel Kryl《Bratříčku, zavírej vrátka》 | 起初印一萬張很快售罄，換社長後庫存被圓鋸切掉，總印量估計五萬張 | 需確認口徑：Radiožurnál 報導該專輯數週內賣出約四萬張，捷克維基則稱該首歌 2015 年前累計約 30 萬張；簡介的『總印量五萬張』與這兩個數字的時間尺度不同，建議店主對照原始出處確認是哪個口徑。 | https://radiozurnal.rozhlas.cz/osobnosti-a-kultura-68-7571690/2 | 否 |
 | ar-b-018 | Léo Ferré《Verlaine et Rimbaud chantés par Léo Ferré》 | 同一條目記這是流行音樂史上第一張錄音室雙唱片 | 這句出自法文維基單源、屬「史上第一」型宣稱，本層沒有另一個獨立來源，也沒有查到反例；建議改成『法文維基稱⋯』或刪去。上線簡介已寫成『同一條目記』，風險有限，列出供店主決定。 | https://fr.wikipedia.org/wiki/Verlaine_et_Rimbaud_chant%C3%A9s_par_L%C3%A9o_Ferr%C3%A9 | 否 |
-| ar-b-018 | Michael Chapman《Rainmaker》 | 1967 年才進倫敦與 Cornwall 的民謠場演出 | 本層查到的來源對年份說法不一：維基與 KLOF 寫 1966 年在 Cornwall 演出，Tompkins Square 寫 1967 年在康瓦爾圈起步；上線簡介的『1967 年』與『才進倫敦』兩點無兩個一致來源，建議改為『1960 年代中期』或刪去年份。 | https://klofmag.com/2021/09/michael-chapman-dies-aged-80/ | 是 |
-| ar-b-019 | Nic Jones《The Noah's Ark Trap》 | 聽過 Martin Carthy 的錄音之後，他把標準調弦換成了 DADGAD | DADGAD 只見英文維基單一說法；Living Tradition 專文寫他的招牌是 C 與 G modal 開放調弦，兩源不一致，建議改成「開放調弦」。 | https://www.livingtradition.co.uk/articles/nicjones | 是 |
-| ar-b-019 | Randy Travis《Storms of Life》 | 史上第一張發行一年內銷量破 100 萬張的鄉村音樂首張錄音室專輯 | 鄉村音樂名人堂官網的措辭是『第一位以首張專輯達白金的鄉村藝人、第一位首張專輯達多白金的新人』，與上線簡介的『一年內破 100 萬張』不同口徑，且『第一』類宣稱本層無法獨立驗證；另外在世者的銷量與認證倍數（三白金）依現行規則不寫。建議改成名人堂官網的措辭或刪除。 | https://countrymusichalloffame.org/artist/randy-travis | 是 |
-| ar-b-019 | Ray LaMontagne《God Willin' & the Creek Don't Rise》 | 同年 12 月獲兩項葛萊美提名，拿下最佳當代民謠專輯 | 提名公布在 2010 年 12 月 1 日，最佳當代民謠專輯的得獎在 2011 年 2 月 13 日的第 53 屆葛萊美獎；『同年 12 月……拿下』容易讓人讀成 2010 年得獎。建議改成『2010 年 12 月入圍、2011 年 2 月得獎』。 | https://en.wikipedia.org/wiki/53rd_Annual_Grammy_Awards | 是 |
-| ar-b-019 | Seu Jorge《Cru》 | 第二張個人錄音室作 | 疑為第三張：KVPR 稱他 2001 年憑《Samba Esporte Fino》已在巴西成名，英文維基摘要另列 2003《Carolina》在《Cru》（2004）之前；上線簡介若按錄音室專輯數算，Cru 應是第三張（América Brasil o Disco 稱第四張則與此一致）。我只讀到維基摘要與 KVPR，未逐張核對年表，請店主本機覆核。 | https://www.kvpr.org/2016-02-27/brazilian-singer-seu-jorge-on-music-race-and-luck-versus-hard-work | 是 |
+| ar-b-018 | Michael Chapman《Rainmaker》 | 1967 年才進倫敦與 Cornwall 的民謠場演出 | 本層查到的來源對年份說法不一：維基與 KLOF 寫 1966 年在 Cornwall 演出，Tompkins Square 寫 1967 年在康瓦爾圈起步；上線簡介的『1967 年』與『才進倫敦』兩點無兩個一致來源，建議改為『1960 年代中期』或刪去年份。 | https://klofmag.com/2021/09/michael-chapman-dies-aged-80/ | 否 |
+| ar-b-019 | Nic Jones《The Noah's Ark Trap》 | 聽過 Martin Carthy 的錄音之後，他把標準調弦換成了 DADGAD | DADGAD 只見英文維基單一說法；Living Tradition 專文寫他的招牌是 C 與 G modal 開放調弦，兩源不一致，建議改成「開放調弦」。 | https://www.livingtradition.co.uk/articles/nicjones | 否 |
+| ar-b-019 | Randy Travis《Storms of Life》 | 史上第一張發行一年內銷量破 100 萬張的鄉村音樂首張錄音室專輯 | 鄉村音樂名人堂官網的措辭是『第一位以首張專輯達白金的鄉村藝人、第一位首張專輯達多白金的新人』，與上線簡介的『一年內破 100 萬張』不同口徑，且『第一』類宣稱本層無法獨立驗證；另外在世者的銷量與認證倍數（三白金）依現行規則不寫。建議改成名人堂官網的措辭或刪除。 | https://countrymusichalloffame.org/artist/randy-travis | 否 |
+| ar-b-019 | Ray LaMontagne《God Willin' & the Creek Don't Rise》 | 同年 12 月獲兩項葛萊美提名，拿下最佳當代民謠專輯 | 提名公布在 2010 年 12 月 1 日，最佳當代民謠專輯的得獎在 2011 年 2 月 13 日的第 53 屆葛萊美獎；『同年 12 月……拿下』容易讓人讀成 2010 年得獎。建議改成『2010 年 12 月入圍、2011 年 2 月得獎』。 | https://en.wikipedia.org/wiki/53rd_Annual_Grammy_Awards | 否 |
+| ar-b-019 | Seu Jorge《Cru》 | 第二張個人錄音室作 | 疑為第三張：KVPR 稱他 2001 年憑《Samba Esporte Fino》已在巴西成名，英文維基摘要另列 2003《Carolina》在《Cru》（2004）之前；上線簡介若按錄音室專輯數算，Cru 應是第三張（América Brasil o Disco 稱第四張則與此一致）。我只讀到維基摘要與 KVPR，未逐張核對年表，請店主本機覆核。 | https://www.kvpr.org/2016-02-27/brazilian-singer-seu-jorge-on-music-race-and-luck-versus-hard-work | 否 |
 | ar-b-019 | Tammy Wynette《Your Good Girl's Gonna Go Bad》 | 維基記她 1965 年搬去（納許維爾） | 本次讀到的英文維基、Britannica、Country Music Hall of Fame 都寫 1966 年搬到納許維爾（維基寫 1966 年 1 月）；1965 年說法與本次三個來源不符，請店主在本機查原條目再決定是否改成 1966。 | https://www.countrymusichalloffame.org/artist/tammy-wynette | 否 |
 | ar-b-019 | The Bothy Band《The Bothy Band 1975》 | Dónal Lunny 離開 Planxty、創辦 Mulligan 後召集的七人編制，首張同名專輯以 Keenan、Molloy、Peoples 齊奏 | 維基稱樂團最初的陣容有七人（原名 Seachtar，意為七人），但 Paddy Glackin 與 Tony MacMahon 在首張專輯前後離開，首張專輯的實際陣容是六人（RTÉ 與維基列出 Lunny、Keenan、Molloy、Peoples、Tríona Ní Dhomhnaill、Mícheál Ó Domhnaill）；寫成『首張專輯七人編制』不準確。另『Lunny 離開 Planxty、創辦 Mulligan』只見維基單源，我未取得第二源。 | https://www.rte.ie/culture/2018/0809/984081-simply-folk-recommends-the-bothy-band-1975-by-the-bothy-band/ | 否 |
 | ar-b-019 | William Tyler《Impossible Truth》 | 2013 年這張…是他登陸 Merge 的第一張 | 本位未能查證：BOMB 2014 年 4 月稿寫 2014 年 4 月 29 日 Merge 發行《Lost Colony》EP，並稱《Impossible Truth》為 2013 年佳評作品，沒說明該張的廠牌；維基資訊框只列三個廠牌；建議店主在本機核對 Merge 官網或 Discogs 後再決定是否保留『Merge 的第一張』 | https://bombmagazine.org/articles/2014/04/24/william-tyler/ | 否 |
-| ar-b-019 | คาราวาน《อเมริกันอันตราย》 | 碟是 1976 年 1 月的第二張，距首張一年多 | 泰文維基專輯表列首張《คนกับควาย》為 2518 年 12 月（1975 年 12 月）、《อเมริกันอันตราย》為 2519 年 1 月（1976 年 1 月），兩張只差約一個月；英文維基只標 1975 與 1976。泰文維基月份為單源，建議店主在本機以 Discogs 或 MusicBrainz 覆核後再改 KV。 | https://th.wikipedia.org/wiki/%E0%B8%84%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A7%E0%B8%B2%E0%B8%99_(%E0%B8%A7%E0%B8%87%E0%B8%94%E0%B8%99%E0%B8%95%E0%B8%A3%E0%B8%B5) | 是 |
-| ar-b-019 | คาราวาน《อเมริกันอันตราย》 | 此後作品表空了七年，下一張要到 1983 年 | 英文維基寫 1976 年另有《Ruam Botpleng Sipsee Tulaa Siphok Vol. 2》，並稱 1982 年已出《Deuan Phen》（Full Moon）；泰文維基專輯表則在 1976 年 1 月後直接接 1983 年 6 月《บ้านนาสะเทือน》，無 1982 年一張。兩源不一致，『空了七年』『下一張是 1983』宜改為保守寫法或再覆核。 | https://en.wikipedia.org/wiki/Caravan_(Thai_band) | 是 |
-| ar-b-019 | คาราวาน《บ้านนาสะเทือน》 | 七年沒出片之後，1983 年 6 月回來的這一張 | 同上：英文維基稱 1982 年已有《Deuan Phen》，故『七年沒出片之後』未必成立；泰文維基列 2526 年 6 月（1983 年 6 月）為《บ้านนาสะเทือน》。 | https://en.wikipedia.org/wiki/Caravan_(Thai_band) | 是 |
-| ar-b-019 | あがた森魚《日本少年》 | マリオ／ニュー・モーニング 發行（FW-8001-02） | Mikiki 2021 年專欄『1976 年の細野晴臣』把本作標為『あがた森魚『日本少年（ヂパング・ボーイ）』フィリップス（1976）』，與上線簡介的發行廠牌寫法不同；FW- 開頭的編號是否屬 Philips 系統本層未核到，建議店主在本機以 Discogs 覆核廠牌與編號後再決定。 | https://mikiki.tokyo.jp/articles/-/44459 | 是 |
-| ar-b-019 | あがた森魚《日本少年》 | 細野晴臣製作 | Mikiki 寫的是『細野晴臣が共同プロデュース』（共同製作），上線簡介寫『細野晴臣製作』，建議改為『共同製作』。 | https://mikiki.tokyo.jp/articles/-/44459 | 是 |
+| ar-b-019 | คาราวาน《อเมริกันอันตราย》 | 碟是 1976 年 1 月的第二張，距首張一年多 | 泰文維基專輯表列首張《คนกับควาย》為 2518 年 12 月（1975 年 12 月）、《อเมริกันอันตราย》為 2519 年 1 月（1976 年 1 月），兩張只差約一個月；英文維基只標 1975 與 1976。泰文維基月份為單源，建議店主在本機以 Discogs 或 MusicBrainz 覆核後再改 KV。 | https://th.wikipedia.org/wiki/%E0%B8%84%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%A7%E0%B8%B2%E0%B8%99_(%E0%B8%A7%E0%B8%87%E0%B8%94%E0%B8%99%E0%B8%95%E0%B8%A3%E0%B8%B5) | 否 |
+| ar-b-019 | คาราวาน《อเมริกันอันตราย》 | 此後作品表空了七年，下一張要到 1983 年 | 英文維基寫 1976 年另有《Ruam Botpleng Sipsee Tulaa Siphok Vol. 2》，並稱 1982 年已出《Deuan Phen》（Full Moon）；泰文維基專輯表則在 1976 年 1 月後直接接 1983 年 6 月《บ้านนาสะเทือน》，無 1982 年一張。兩源不一致，『空了七年』『下一張是 1983』宜改為保守寫法或再覆核。 | https://en.wikipedia.org/wiki/Caravan_(Thai_band) | 否 |
+| ar-b-019 | คาราวาน《บ้านนาสะเทือน》 | 七年沒出片之後，1983 年 6 月回來的這一張 | 同上：英文維基稱 1982 年已有《Deuan Phen》，故『七年沒出片之後』未必成立；泰文維基列 2526 年 6 月（1983 年 6 月）為《บ้านนาสะเทือน》。 | https://en.wikipedia.org/wiki/Caravan_(Thai_band) | 否 |
+| ar-b-019 | あがた森魚《日本少年》 | マリオ／ニュー・モーニング 發行（FW-8001-02） | Mikiki 2021 年專欄『1976 年の細野晴臣』把本作標為『あがた森魚『日本少年（ヂパング・ボーイ）』フィリップス（1976）』，與上線簡介的發行廠牌寫法不同；FW- 開頭的編號是否屬 Philips 系統本層未核到，建議店主在本機以 Discogs 覆核廠牌與編號後再決定。 | https://mikiki.tokyo.jp/articles/-/44459 | 否 |
+| ar-b-019 | あがた森魚《日本少年》 | 細野晴臣製作 | Mikiki 寫的是『細野晴臣が共同プロデュース』（共同製作），上線簡介寫『細野晴臣製作』，建議改為『共同製作』。 | https://mikiki.tokyo.jp/articles/-/44459 | 否 |
 | ar-b-019 | 中島みゆき《愛していると云ってくれ》 | 先行單曲〈わかれうた〉…累計銷量破百萬 | ja 維基寫〈わかれうた〉銷量超過 70 萬枚（70万枚を超える），en 維基寫 more than 700,000；兩源都未達百萬；建議改為『超過 70 萬枚』或刪掉銷量。 | https://ja.wikipedia.org/wiki/%E4%B8%AD%E5%B3%B6%E3%81%BF%E3%82%86%E3%81%8D | 否 |
-| ar-b-019 | 中島みゆき《愛していると云ってくれ》 | 〈世情〉後來因1980年《3年B組金八先生》第二季選為插入曲 | ja 維基與 en 維基都寫是 1981 年被該劇劇中使用而走紅（未提第二季）；上線簡介寫 1980 年。建議核對 TBS 播出年份後再決定，或改為『被《3年B組金八先生》使用後廣為人知』。 | https://en.wikipedia.org/wiki/Miyuki_Nakajima | 是 |
-| ar-b-019 | 中島みゆき《予感》 | 末曲〈ファイト!〉後來在1994年被住友生命廣告啟用，並以兩A面單曲重新發行 | ja 維基只寫 1994 年的〈空と君のあいだに／ファイト!〉是雙 A 面單曲，並以〈空と君のあいだに〉為日本電視台《家なき子》主題歌；本位未查到〈ファイト!〉被住友生命廣告啟用一事，建議在本機核對。 | https://ja.wikipedia.org/wiki/%E4%B8%AD%E5%B3%B6%E3%81%BF%E3%82%86%E3%81%8D | 是 |
-| ar-b-019 | 周雲蓬《牛羊下山》 | 此作使他獲得南方音樂盛典最佳民謠藝人 | 本層查得的最佳民謠藝人與最佳作詞是第 8 屆音樂風雲榜（Chinese Music Media Awards），中文維基連到的是《中國孩子》；未查到《牛羊下山》與南方音樂盛典的連結，建議店主本機核對該獎名稱與得獎專輯。 | https://zh.wikipedia.org/wiki/%E5%91%A8%E4%BA%91%E8%93%AC | 是 |
-| ar-b-019 | 周雲蓬《沉默如謎的呼吸》 | 這是 2004 年的碟，也是他的首張專輯 | 中文與英文維基寫首張專輯 2003 年由摩登天空發行；MusicBrainz 的 release 年為 2004，兩種年份並存，建議簡介改成不寫發行年或標明為 2004 年版本。 | https://en.wikipedia.org/wiki/Zhou_Yunpeng | 是 |
-| ar-b-020 | 林俊傑《和自己對話》 | 全球第一張以假人頭麥克風（人頭錄音）製作的華語流行唱片 | 『首張』的範圍有三種說法：中文維基〈和自己對話〉寫為全球首張以 Dummy Head 錄製的流行音樂專輯；媒體（人民網、Audionet）寫為華語樂壇先例或台灣創舉；英文維基該專輯頁未載。『第一』類宣稱兩源不一致，建議簡介改成較保守的『以人頭錄音技術錄製』，或寫成『中文維基稱…全球首張』。 | https://zh.wikipedia.org/zh-tw/%E5%92%8C%E8%87%AA%E5%B7%B1%E5%B0%8D%E8%A9%B1 | 是 |
-| ar-b-020 | 藤圭子《新宿の女》 | 連續二十週第一，接續的《女のブルース》再連十七週，合計三十七週 | 《女のブルース》的連續週數與合計週數與來源不一致：Weblio（〈新宿の女／“演歌の星”藤圭子のすべて〉條目）寫《女のブルース》16 週、與其他作品合計 41 週；Tower Records 訃報與日文維基摘要寫其後三張共計 42 週。首張 20 週四源一致。建議簡介只留『首張連續二十週第一』，或查原始榜單後再定合計。 | https://www.weblio.jp/content/%E6%96%B0%E5%AE%BF%E3%81%AE%E5%A5%B3/%E2%80%9C%E6%BC%94%E6%AD%8C%E3%81%AE%E6%98%9F%E2%80%9D%E8%97%A4%E5%9C%AD%E5%AD%90%E3%81%AE%E3%81%99%E3%81%B9%E3%81%A6 | 是 |
+| ar-b-019 | 中島みゆき《愛していると云ってくれ》 | 〈世情〉後來因1980年《3年B組金八先生》第二季選為插入曲 | ja 維基與 en 維基都寫是 1981 年被該劇劇中使用而走紅（未提第二季）；上線簡介寫 1980 年。建議核對 TBS 播出年份後再決定，或改為『被《3年B組金八先生》使用後廣為人知』。 | https://en.wikipedia.org/wiki/Miyuki_Nakajima | 否 |
+| ar-b-019 | 中島みゆき《予感》 | 末曲〈ファイト!〉後來在1994年被住友生命廣告啟用，並以兩A面單曲重新發行 | ja 維基只寫 1994 年的〈空と君のあいだに／ファイト!〉是雙 A 面單曲，並以〈空と君のあいだに〉為日本電視台《家なき子》主題歌；本位未查到〈ファイト!〉被住友生命廣告啟用一事，建議在本機核對。 | https://ja.wikipedia.org/wiki/%E4%B8%AD%E5%B3%B6%E3%81%BF%E3%82%86%E3%81%8D | 否 |
+| ar-b-019 | 周雲蓬《牛羊下山》 | 此作使他獲得南方音樂盛典最佳民謠藝人 | 本層查得的最佳民謠藝人與最佳作詞是第 8 屆音樂風雲榜（Chinese Music Media Awards），中文維基連到的是《中國孩子》；未查到《牛羊下山》與南方音樂盛典的連結，建議店主本機核對該獎名稱與得獎專輯。 | https://zh.wikipedia.org/wiki/%E5%91%A8%E4%BA%91%E8%93%AC | 否 |
+| ar-b-019 | 周雲蓬《沉默如謎的呼吸》 | 這是 2004 年的碟，也是他的首張專輯 | 中文與英文維基寫首張專輯 2003 年由摩登天空發行；MusicBrainz 的 release 年為 2004，兩種年份並存，建議簡介改成不寫發行年或標明為 2004 年版本。 | https://en.wikipedia.org/wiki/Zhou_Yunpeng | 否 |
+| ar-b-020 | 林俊傑《和自己對話》 | 全球第一張以假人頭麥克風（人頭錄音）製作的華語流行唱片 | 『首張』的範圍有三種說法：中文維基〈和自己對話〉寫為全球首張以 Dummy Head 錄製的流行音樂專輯；媒體（人民網、Audionet）寫為華語樂壇先例或台灣創舉；英文維基該專輯頁未載。『第一』類宣稱兩源不一致，建議簡介改成較保守的『以人頭錄音技術錄製』，或寫成『中文維基稱…全球首張』。 | https://zh.wikipedia.org/zh-tw/%E5%92%8C%E8%87%AA%E5%B7%B1%E5%B0%8D%E8%A9%B1 | 否 |
+| ar-b-020 | 藤圭子《新宿の女》 | 連續二十週第一，接續的《女のブルース》再連十七週，合計三十七週 | 《女のブルース》的連續週數與合計週數與來源不一致：Weblio（〈新宿の女／“演歌の星”藤圭子のすべて〉條目）寫《女のブルース》16 週、與其他作品合計 41 週；Tower Records 訃報與日文維基摘要寫其後三張共計 42 週。首張 20 週四源一致。建議簡介只留『首張連續二十週第一』，或查原始榜單後再定合計。 | https://www.weblio.jp/content/%E6%96%B0%E5%AE%BF%E3%81%AE%E5%A5%B3/%E2%80%9C%E6%BC%94%E6%AD%8C%E3%81%AE%E6%98%9F%E2%80%9D%E8%97%A4%E5%9C%AD%E5%AD%90%E3%81%AE%E3%81%99%E3%81%B9%E3%81%A6 | 否 |
 | ar-b-020 | 謝雷《梨山痴情花》 | 1974 年在菲律賓被檢舉遣返，台灣也禁止他出境兩年，之後轉往歌廳與秀場 | 高風險事件只有中文維基單一來源；百度百科、WSM 經紀簡介、udn 專訪皆未提；本層未能找到第二來源，建議店主審視是否保留或改成較模糊寫法。 | https://zh.wikipedia.org/wiki/%E8%AC%9D%E9%9B%B7_%28%E6%AD%8C%E6%89%8B%29 | 否 |
-| ar-b-021 | Collage《Collage》 | 成員關係欄只有六筆，六位全是女性 | 該句只依 MusicBrainz 關係欄；愛沙尼亞文維基列有 Aarne Vahuri、Tauno Vahter、Enn Tomson、Uno Loop 等人名為歌手，專輯條目另列男性樂手 German Pekarevski（長號）與 Lembit Saarsalu（次中音薩克斯風，性別由名字判斷、未另查），全是女性的說法恐誤導。 | https://et.wikipedia.org/wiki/Collage | 是 |
-| ar-b-021 | Collage《Kadriko》 | 盤面是 1975 年 Мелодия СМ 02821-2 | 愛沙尼亞文維基團條目的唱片目錄把《Kadriko》記為 1974，與 MusicBrainz 的 1975 不一致，年份待核（Melodiya 目錄號本層未驗）。 | https://et.wikipedia.org/wiki/Collage | 是 |
+| ar-b-021 | Collage《Collage》 | 成員關係欄只有六筆，六位全是女性 | 該句只依 MusicBrainz 關係欄；愛沙尼亞文維基列有 Aarne Vahuri、Tauno Vahter、Enn Tomson、Uno Loop 等人名為歌手，專輯條目另列男性樂手 German Pekarevski（長號）與 Lembit Saarsalu（次中音薩克斯風，性別由名字判斷、未另查），全是女性的說法恐誤導。 | https://et.wikipedia.org/wiki/Collage | 否 |
+| ar-b-021 | Collage《Kadriko》 | 盤面是 1975 年 Мелодия СМ 02821-2 | 愛沙尼亞文維基團條目的唱片目錄把《Kadriko》記為 1974，與 MusicBrainz 的 1975 不一致，年份待核（Melodiya 目錄號本層未驗）。 | https://et.wikipedia.org/wiki/Collage | 否 |
 | ar-b-021 | Collage《Käokiri》 | 盤面是 1977 年 Мелодия С60-08739-40；團史裡最後一個當年出的發行品 | 愛沙尼亞文維基記《Käokiri》為 1978，與 MusicBrainz 的 1977 不一致，年份待核；『最後一個當年出的發行品』的說法隨年份而變。 | https://et.wikipedia.org/wiki/Collage | 否 |
-| ar-b-021 | Girls' Generation《Oh!》 | 原版在 2010 年 Gaon 年榜以 197,934 張排到全年第二 | 含銷量數字，依本批特注『K-pop 團體銷量、獎座數不寫』不應出現；數字本層未驗證。 | https://en.wikipedia.org/wiki/Girls%27_Generation | 是 |
-| ar-b-021 | Girls' Generation《Gee》 | 實體是韓國一筆加中國一筆 | 事實庫引的英文維基〈Gee (EP)〉Release history 表列出南韓、菲律賓、台灣等地，與『韓國加中國』的說法對不上，待店主對照 MusicBrainz 核對。 | https://en.wikipedia.org/wiki/Gee_(EP) | 是 |
-| ar-b-021 | H.O.T.《We Hate All Kinds of Violence》 | 銷量逾一百五十萬張，此後二十四年一直是 SM 旗下最暢銷的專輯，2020 年才被 NCT 打破 | 含銷量與排名宣稱，依本批特注『K-pop 團體銷量、獎座數不寫』不應出現；本層未驗證數字。 | https://en.wikipedia.org/wiki/H.O.T. | 是 |
-| ar-b-021 | Phương Dung《Băng nhạc hương quê 1 - Tiếng hát Phương Dung》 | 她 1945 年生於 Gò Công | 越文維基寫 1945 年 8 月 9 日，英文維基寫 1946 年；來源不一致，建議店主確認或改成不帶年份 | https://en.wikipedia.org/wiki/Phuong_Dung | 是 |
-| ar-b-021 | 이문세《이문세 4집》 | 〈그女의 웃음소리뿐〉 | 曲名中混入漢字「女」，疑為手誤，通行寫法應為純韓文〈그녀의 웃음소리뿐〉（英維〈Lee Young-hoon〉條目以 Only the Sound of Her Laughter 指同一曲；本層未逐字核對韓文曲名，建議店主在本機確認後改）。 | https://en.wikipedia.org/wiki/Lee_Young-hoon_(composer) | 是 |
+| ar-b-021 | Girls' Generation《Oh!》 | 原版在 2010 年 Gaon 年榜以 197,934 張排到全年第二 | 含銷量數字，依本批特注『K-pop 團體銷量、獎座數不寫』不應出現；數字本層未驗證。 | https://en.wikipedia.org/wiki/Girls%27_Generation | 否 |
+| ar-b-021 | Girls' Generation《Gee》 | 實體是韓國一筆加中國一筆 | 事實庫引的英文維基〈Gee (EP)〉Release history 表列出南韓、菲律賓、台灣等地，與『韓國加中國』的說法對不上，待店主對照 MusicBrainz 核對。 | https://en.wikipedia.org/wiki/Gee_(EP) | 否 |
+| ar-b-021 | H.O.T.《We Hate All Kinds of Violence》 | 銷量逾一百五十萬張，此後二十四年一直是 SM 旗下最暢銷的專輯，2020 年才被 NCT 打破 | 含銷量與排名宣稱，依本批特注『K-pop 團體銷量、獎座數不寫』不應出現；本層未驗證數字。 | https://en.wikipedia.org/wiki/H.O.T. | 否 |
+| ar-b-021 | Phương Dung《Băng nhạc hương quê 1 - Tiếng hát Phương Dung》 | 她 1945 年生於 Gò Công | 越文維基寫 1945 年 8 月 9 日，英文維基寫 1946 年；來源不一致，建議店主確認或改成不帶年份 | https://en.wikipedia.org/wiki/Phuong_Dung | 否 |
+| ar-b-021 | 이문세《이문세 4집》 | 〈그女의 웃음소리뿐〉 | 曲名中混入漢字「女」，疑為手誤，通行寫法應為純韓文〈그녀의 웃음소리뿐〉（英維〈Lee Young-hoon〉條目以 Only the Sound of Her Laughter 指同一曲；本層未逐字核對韓文曲名，建議店主在本機確認後改）。 | https://en.wikipedia.org/wiki/Lee_Young-hoon_(composer) | 否 |
 | ar-b-021 | 이문세《이문세 4집》 | 銷量約 280 萬張 | 在世歌手的累計銷量，依本線規則不寫；英維與〈이영훈〉條目同為 2.85 million，數字本身有出處，是否保留請店主裁示。 | https://en.wikipedia.org/wiki/Lee_Moon-sae | 是 |
-| ar-b-021 | 조용필《조용필 1집 (창밖의 여자)》 | 全輯成為韓國第一張銷量突破百萬的單張唱片 | 「第一張」類宣稱：韓國一日報只寫 1 집賣 100 萬張並載入金氏紀錄，沒寫『韓國第一張』；另有在世者累計銷量不寫的規則，建議店主複核這句。 | https://www.hankookilbo.com/news/article/201804121123249996 | 是 |
+| ar-b-021 | 조용필《조용필 1집 (창밖의 여자)》 | 全輯成為韓國第一張銷量突破百萬的單張唱片 | 「第一張」類宣稱：韓國一日報只寫 1 집賣 100 萬張並載入金氏紀錄，沒寫『韓國第一張』；另有在世者累計銷量不寫的規則，建議店主複核這句。 | https://www.hankookilbo.com/news/article/201804121123249996 | 否 |
 | ar-b-021 | サザンオールスターズ《NUDE MAN／KAMAKURA／熱い胸さわぎ》 | NUDE MAN『Oricon 累計97.1萬張』、KAMAKURA『累計95.3萬張』；熱い胸さわぎ『Music Magazine 2019 年 50 年邦樂專輯 100 選第 30 名』 | 規則面提醒而非事實錯誤：在世團體的累計銷量與樂評雜誌榜單名次依本線規則不寫（本層未查證這些數字）；是否保留請店主決定。 | https://ja.wikipedia.org/wiki/%E3%82%B5%E3%82%B6%E3%83%B3%E3%82%AA%E3%83%BC%E3%83%AB%E3%82%B9%E3%82%BF%E3%83%BC%E3%82%BA | 對不到卡 |
 | ar-b-021 | 原子邦妮《折桂令》 | 這是首張專輯，2012 年發行；組合『一說分別來自櫻桃幫的查查與展翼樂團的 Nu』 | For Good Music 介紹稱 2011 年已推出獨立製作專輯，與『首張專輯』是否成立有出入（單源，未能確認 2011 年那張是否為正式專輯）；另 Star ETtoday 2017 年報導稱《孤單會消失離開不見》為『第二張專輯』，與《折桂令》為首張相符，故此疑點僅供店主參考。成員出身『一說』已有 zh 維基與兩篇新聞證實，可去掉『一說』。 | https://forgoodmusic.com.tw/live/concert/25 | 否 |
 | ar-b-021 | 孫燕姿《孫燕姿同名專輯／我要的幸福》 | 『賣破三十三萬張』『上市十天賣破二十萬、累積三十八萬』『2000 年／2001 年全台銷售總冠軍』 | 規則面提醒而非事實錯誤：孫燕姿在世，累計銷量依本線規則不寫（本層未查證數字；zh 維基首張專輯 33 萬張、2000 年銷售冠軍一致）；是否保留請店主裁示。 | https://zh.wikipedia.org/zh-tw/%E5%AD%AB%E7%87%95%E5%A7%BF | 對不到卡 |
-| ar-b-022 | 徐小鳳《風雨同路》 | 她的女低音在這批 1978 年的錄音裡壓得很低，「小白光」這個外號就是這麼來的 | 「小白光」是 1965 年她在「香港之鶯」歌唱比賽以白光的〈戀之火〉奪冠、出道時得到的稱號，與 1978 年的錄音音域無關；中文維基把這個外號放在出道段落（單源）；粵語維基與 ourchinastory 都只寫她 1965 年憑〈戀之火〉奪冠入行，未提外號。 | https://zh.wikipedia.org/wiki/%E5%BE%90%E5%B0%8F%E9%B3%B3 | 是 |
-| ar-b-022 | 徐小鳳《每一步》 | 〈冬〉是 1985 年她加盟寶麗金時先灌的一首 | 中文維基寫她 1986 年起與寶麗金合作；上線簡介的〈全新歌集3〉則寫「翌年（1986）轉投寶麗金」。『1985 年加盟寶麗金』與兩處不一致，疑為 1985 年底簽約或 1986 年起算的差別，需回頭查單曲〈冬〉的實際年份。 | https://zh.wikipedia.org/wiki/%E5%BE%90%E5%B0%8F%E9%B3%B3 | 是 |
-| ar-b-022 | 王菲《天空》 | 一九九四年十一月十日以「王靖雯」之名發行 | 中文維基王菲條寫 1992 年起藝名已改為 Faye Wong（王菲），而 ourchinastory 寫 1994 年才改回本名；兩說對不上，若採中文維基，1994 年的《天空》署名應核對原盤。建議核對原盤署名後再決定是否保留『以王靖雯之名發行』。 | https://zh.wikipedia.org/wiki/%E7%8E%8B%E8%8F%B2 | 是 |
-| ar-b-022 | 蔡琴《此情可待》 | 〈最後一夜〉同時是電影《金大班的最後一夜》主題曲，拿下第 21 屆金馬獎最佳原創電影歌曲 | 中文維基第 21 屆金馬獎（1984 年）頁的獎項名稱寫『最佳電影插曲』，得獎者列為作曲陳志遠與作詞慎芝，不是演唱者蔡琴；簡介說『是主題曲』與『最佳原創電影歌曲』兩處的稱呼可能與當年獎名及片中用途不同。屬單源（只開了該屆維基頁），請主線在本機核對金馬獎官網的歷屆名單後再改。 | https://zh.wikipedia.org/wiki/第21屆金馬獎 | 是 |
+| ar-b-022 | 徐小鳳《風雨同路》 | 她的女低音在這批 1978 年的錄音裡壓得很低，「小白光」這個外號就是這麼來的 | 「小白光」是 1965 年她在「香港之鶯」歌唱比賽以白光的〈戀之火〉奪冠、出道時得到的稱號，與 1978 年的錄音音域無關；中文維基把這個外號放在出道段落（單源）；粵語維基與 ourchinastory 都只寫她 1965 年憑〈戀之火〉奪冠入行，未提外號。 | https://zh.wikipedia.org/wiki/%E5%BE%90%E5%B0%8F%E9%B3%B3 | 否 |
+| ar-b-022 | 徐小鳳《每一步》 | 〈冬〉是 1985 年她加盟寶麗金時先灌的一首 | 中文維基寫她 1986 年起與寶麗金合作；上線簡介的〈全新歌集3〉則寫「翌年（1986）轉投寶麗金」。『1985 年加盟寶麗金』與兩處不一致，疑為 1985 年底簽約或 1986 年起算的差別，需回頭查單曲〈冬〉的實際年份。 | https://zh.wikipedia.org/wiki/%E5%BE%90%E5%B0%8F%E9%B3%B3 | 否 |
+| ar-b-022 | 王菲《天空》 | 一九九四年十一月十日以「王靖雯」之名發行 | 中文維基王菲條寫 1992 年起藝名已改為 Faye Wong（王菲），而 ourchinastory 寫 1994 年才改回本名；兩說對不上，若採中文維基，1994 年的《天空》署名應核對原盤。建議核對原盤署名後再決定是否保留『以王靖雯之名發行』。 | https://zh.wikipedia.org/wiki/%E7%8E%8B%E8%8F%B2 | 否 |
+| ar-b-022 | 蔡琴《此情可待》 | 〈最後一夜〉同時是電影《金大班的最後一夜》主題曲，拿下第 21 屆金馬獎最佳原創電影歌曲 | 中文維基第 21 屆金馬獎（1984 年）頁的獎項名稱寫『最佳電影插曲』，得獎者列為作曲陳志遠與作詞慎芝，不是演唱者蔡琴；簡介說『是主題曲』與『最佳原創電影歌曲』兩處的稱呼可能與當年獎名及片中用途不同。屬單源（只開了該屆維基頁），請主線在本機核對金馬獎官網的歷屆名單後再改。 | https://zh.wikipedia.org/wiki/第21屆金馬獎 | 否 |
 | ar-b-022 | 蔡琴《出塞曲》 | 1979 年參加民謠風大賽走紅，『隔年』推出個人首作 | 中文維基蔡琴條目寫 1979 年同年發行首張專輯《出塞曲》；簡介的『隔年』與卡池年 1980 若是依 MusicBrainz 首發日期，可能不同於維基。單源，請主線本機以 MusicBrainz release-group 核對首發年。 | https://zh.wikipedia.org/wiki/蔡琴 | 否 |
-| ar-b-022 | 陳慧嫻《永遠是你的朋友》 | 她也是唯一以同一張唱片有兩首歌同年入選十大中文金曲的女歌手 | 『唯一』類宣稱，補查的中文維基陳慧嫻條與〈千千闋歌〉條都只記〈千千闋歌〉入選 1989 年十大中文金曲，沒有『唯一』或另一首同年入選的記載，無法找到來源；建議主線在本機核對 1989 年十大中文金曲名單，查不到就刪掉這句。 | https://zh.wikipedia.org/wiki/千千闋歌 | 是 |
-| ar-b-022 | Cesária Évora《Mar Azul》 | 前兩張唱片反應冷淡，1991 年這套八曲作品才真正賣動 | 英文維基與 Britannica 都寫的是 1992 年的《Miss Perfumado》帶來歐洲普遍的人氣與國際巡演；1991 年《Mar Azul》是她第三張，說它才真正賣動與兩源的突破作說法不符。建議改成『Miss Perfumado 之前的作品』或拿掉『才真正賣動』。另該簡介說 1987 年由 José da Silva 發掘，Britannica 與維基只說她 1985 年復出、1988 年首張專輯，1987 年未見支持。 | https://www.britannica.com/biography/Cesaria-Evora | 是 |
-| ar-b-022 | Fania All-Stars《Latin-Soul-Rock》 | 同一條目抄下 1974 年原壓的說明欄：錄於 1973 年 8 月 24 日的洋基球場與紐約 Good Vibrations 錄音室，只有〈Soul Makossa〉錄在聖胡安 | 這句是轉述 Discogs 說明欄，洋基球場日期與美國國會圖書館文章不同（8 月 23 日 vs 24 日，LOC 文內自己也寫成『星期五』但 8 月 23 日是星期四），建議簡介保留轉述語氣，或把日期改成『1973 年 8 月』。另外 LOC 文章說《Live at Yankee Stadium》的音源有一部分取自 1973 年 11 月的波多黎各演出，與簡介無直接衝突。 | https://www.loc.gov/static/programs/national-recording-preservation-board/documents/FaniaAllStars.pdf | 是 |
-| ar-b-022 | Goran Bregović《Time of the Gypsies》 | 是 Goran Bregović 結束 Bijelo Dugme 後跨進電影音樂的第一份工作 | 維基寫 Bijelo Dugme 1989 年才因政治危機解散，而《Time of the Gypsies》1988 年 12 月 21 日已在南斯拉夫首映，配樂早在樂團解散前完成，『結束 Bijelo Dugme 後』的時序對不上；『第一份電影音樂工作』也只見簡介，兩源都沒有這樣寫（Save The Music 只寫他『從 Time of the Gypsies 起』成為電影配樂主力）。建議改成『他在 Bijelo Dugme 時期之末跨進電影音樂的重要一步』或拿掉『第一份』。 | https://en.wikipedia.org/wiki/Time_of_the_Gypsies | 是 |
-| ar-b-023 | Yellowman《Zungguzungguguzungguzeng》 | 源頭是 Alton Ellis 1967 年為 Coxsone Dodd 錄的〈Mad, Mad, Mad〉 | 維基 Alton Ellis 條目寫〈Mad Mad〉底軌是 1968 年與 Sound Dimension 錄製，與上線簡介的 1967 年不符；僅維基單源，建議店主在本機核對 Studio One 目錄再改。（此條在補查 Alton Ellis 時發現。） | https://en.wikipedia.org/wiki/Alton_Ellis | 是 |
-| ar-b-023 | Youssou N'Dour《Egypt》 | 拿下 2004 年葛萊美最佳當代世界音樂專輯 | Grammy 官網的藝人頁記為第 47 屆（2005 年）Best Contemporary World Music Album 得獎專輯《Egypt》；2004 年（第 46 屆）他的提名是另一張《Nothing's In Vain (Coono du Réér)》。維基《Egypt》專輯條目寫成『2004 Grammy Award』，應是上線簡介出錯的來源。 | https://www.grammy.com/artists/youssou-ndour/17140/ | 是 |
+| ar-b-022 | 陳慧嫻《永遠是你的朋友》 | 她也是唯一以同一張唱片有兩首歌同年入選十大中文金曲的女歌手 | 『唯一』類宣稱，補查的中文維基陳慧嫻條與〈千千闋歌〉條都只記〈千千闋歌〉入選 1989 年十大中文金曲，沒有『唯一』或另一首同年入選的記載，無法找到來源；建議主線在本機核對 1989 年十大中文金曲名單，查不到就刪掉這句。 | https://zh.wikipedia.org/wiki/千千闋歌 | 否 |
+| ar-b-022 | Cesária Évora《Mar Azul》 | 前兩張唱片反應冷淡，1991 年這套八曲作品才真正賣動 | 英文維基與 Britannica 都寫的是 1992 年的《Miss Perfumado》帶來歐洲普遍的人氣與國際巡演；1991 年《Mar Azul》是她第三張，說它才真正賣動與兩源的突破作說法不符。建議改成『Miss Perfumado 之前的作品』或拿掉『才真正賣動』。另該簡介說 1987 年由 José da Silva 發掘，Britannica 與維基只說她 1985 年復出、1988 年首張專輯，1987 年未見支持。 | https://www.britannica.com/biography/Cesaria-Evora | 否 |
+| ar-b-022 | Fania All-Stars《Latin-Soul-Rock》 | 同一條目抄下 1974 年原壓的說明欄：錄於 1973 年 8 月 24 日的洋基球場與紐約 Good Vibrations 錄音室，只有〈Soul Makossa〉錄在聖胡安 | 這句是轉述 Discogs 說明欄，洋基球場日期與美國國會圖書館文章不同（8 月 23 日 vs 24 日，LOC 文內自己也寫成『星期五』但 8 月 23 日是星期四），建議簡介保留轉述語氣，或把日期改成『1973 年 8 月』。另外 LOC 文章說《Live at Yankee Stadium》的音源有一部分取自 1973 年 11 月的波多黎各演出，與簡介無直接衝突。 | https://www.loc.gov/static/programs/national-recording-preservation-board/documents/FaniaAllStars.pdf | 否 |
+| ar-b-022 | Goran Bregović《Time of the Gypsies》 | 是 Goran Bregović 結束 Bijelo Dugme 後跨進電影音樂的第一份工作 | 維基寫 Bijelo Dugme 1989 年才因政治危機解散，而《Time of the Gypsies》1988 年 12 月 21 日已在南斯拉夫首映，配樂早在樂團解散前完成，『結束 Bijelo Dugme 後』的時序對不上；『第一份電影音樂工作』也只見簡介，兩源都沒有這樣寫（Save The Music 只寫他『從 Time of the Gypsies 起』成為電影配樂主力）。建議改成『他在 Bijelo Dugme 時期之末跨進電影音樂的重要一步』或拿掉『第一份』。 | https://en.wikipedia.org/wiki/Time_of_the_Gypsies | 否 |
+| ar-b-023 | Yellowman《Zungguzungguguzungguzeng》 | 源頭是 Alton Ellis 1967 年為 Coxsone Dodd 錄的〈Mad, Mad, Mad〉 | 維基 Alton Ellis 條目寫〈Mad Mad〉底軌是 1968 年與 Sound Dimension 錄製，與上線簡介的 1967 年不符；僅維基單源，建議店主在本機核對 Studio One 目錄再改。（此條在補查 Alton Ellis 時發現。） | https://en.wikipedia.org/wiki/Alton_Ellis | 否 |
+| ar-b-023 | Youssou N'Dour《Egypt》 | 拿下 2004 年葛萊美最佳當代世界音樂專輯 | Grammy 官網的藝人頁記為第 47 屆（2005 年）Best Contemporary World Music Album 得獎專輯《Egypt》；2004 年（第 46 屆）他的提名是另一張《Nothing's In Vain (Coono du Réér)》。維基《Egypt》專輯條目寫成『2004 Grammy Award』，應是上線簡介出錯的來源。 | https://www.grammy.com/artists/youssou-ndour/17140/ | 否 |
 | ar-b-023 | Alton Ellis《Sings Rock and Soul》 | 同年（1967）替 Duke Reid 錄的〈Rock Steady〉是第一首在歌名裡指出這個樂種的作品 | 維基 Alton Ellis 條目記〈Rock Steady〉為 1967 年；Songfacts 引 Ellis 本人說『1965 年我替它命名』並記發行 1965 年；兩源不一致，年份不宜寫死，建議刪年份或改寫『1960 年代中期』。 | https://www.songfacts.com/facts/alton-ellis/get-ready-rock-steady | 否 |
-| ar-b-023 | Alton Ellis《Mr. Soul of Jamaica》 | Ellis 1967 年的〈Rock Steady〉是第一首把這個節奏名稱唱進歌名的作品 | 維基 Alton Ellis 條目記〈Rock Steady〉為 1967 年；Songfacts 引 Ellis 本人說『1965 年我替它命名』並記發行 1965 年；兩源不一致，年份不宜寫死，建議刪年份或改寫『1960 年代中期』。 | https://www.songfacts.com/facts/alton-ellis/get-ready-rock-steady | 是 |
+| ar-b-023 | Alton Ellis《Mr. Soul of Jamaica》 | Ellis 1967 年的〈Rock Steady〉是第一首把這個節奏名稱唱進歌名的作品 | 維基 Alton Ellis 條目記〈Rock Steady〉為 1967 年；Songfacts 引 Ellis 本人說『1965 年我替它命名』並記發行 1965 年；兩源不一致，年份不宜寫死，建議刪年份或改寫『1960 年代中期』。 | https://www.songfacts.com/facts/alton-ellis/get-ready-rock-steady | 否 |
 | ar-b-023 | Alton Ellis《（Yellowman 卡）Zungguzungguguzungguzeng》 | 源頭是 Alton Ellis 1967 年為 Coxsone Dodd 錄的〈Mad, Mad, Mad〉 | 維基 Alton Ellis 條目寫〈Mad Mad〉底軌是 1968 年與 Sound Dimension 錄製，與上線簡介的 1967 年不符；僅維基單源，建議店主在本機核對 Studio One 目錄再改。 | https://en.wikipedia.org/wiki/Alton_Ellis | 對不到卡 |
-| ar-b-023 | Dennis Brown《Wolf & Leopards》 | Bob Marley 口中的 Crown Prince of Reggae | 維基稱 Marley 贈此稱號，但 jamaicasonice 稱此稱號是 1980 年代前後才得到，各源只一致於『Marley 說他是最愛的歌手』；建議改寫成『Marley 曾說他是自己最喜歡的歌手』 | https://www.jamaicasonice.com/post/famous-jamaicans-the-crown-prince-of-reggae-dennis-emmanuel-brown | 是 |
+| ar-b-023 | Dennis Brown《Wolf & Leopards》 | Bob Marley 口中的 Crown Prince of Reggae | 維基稱 Marley 贈此稱號，但 jamaicasonice 稱此稱號是 1980 年代前後才得到，各源只一致於『Marley 說他是最愛的歌手』；建議改寫成『Marley 曾說他是自己最喜歡的歌手』 | https://www.jamaicasonice.com/post/famous-jamaicans-the-crown-prince-of-reggae-dennis-emmanuel-brown | 否 |
 | ar-b-023 | Dennis Brown《No Man Is an Island》 | 錄這批母帶時他 12 歲；錄音在 1969 至 1970 年間完成，他當時 12 到 13 歲 | 各源對出道錄音時的年齡不一（維基 12 歲、jamaicasonice 與 reggae museum 11 歲、牙買加國家圖書館 13 歲被發掘），建議改成『還是個孩子』避開年齡 | https://nlj.gov.jm/reggaeportal/dennisbrown/ | 否 |
-| ar-b-023 | Los Van Van《Llegó... Van Van (Van Van Is Here)》 | 拿下 2000 年葛萊美最佳 salsa 專輯 | 2000 年是美國葛萊美（非拉丁葛萊美），當年類別名為 Best Salsa Performance（該類別後來改稱 Best Salsa Album），寫成『最佳 salsa 專輯』與當年名稱不同；另 en 維基〈Los Van Van〉條目把它寫成 2000 年拉丁葛萊美提名，與葛萊美類別條目、AfroCubaWeb 衝突（拉丁葛萊美 2000 年最佳 salsa 專輯另有提名紀錄、得獎者為 Celia Cruz）。建議簡介寫『2000 年葛萊美 Best Salsa Performance』或加上屆次。 | https://en.wikipedia.org/wiki/Grammy_Award_for_Best_Salsa_Album | 是 |
-| ar-b-023 | Orhan Gencebay《Bir Teselli Ver》 | 〈Bir Teselli Ver〉最早是 1971 年的 45 轉單曲 | Daily Sabah 寫該曲所在 EP 為 1970 年；tr 維基寫 1969 年的突破單曲；上線簡介寫 1971；三源不一致，建議店主在本機核對原盤年份後再決定是否保留該年份 | https://www.dailysabah.com/portrait/2015/06/06/orhan-gencebay-inventor-of-turkish-arabesque-music | 是 |
+| ar-b-023 | Los Van Van《Llegó... Van Van (Van Van Is Here)》 | 拿下 2000 年葛萊美最佳 salsa 專輯 | 2000 年是美國葛萊美（非拉丁葛萊美），當年類別名為 Best Salsa Performance（該類別後來改稱 Best Salsa Album），寫成『最佳 salsa 專輯』與當年名稱不同；另 en 維基〈Los Van Van〉條目把它寫成 2000 年拉丁葛萊美提名，與葛萊美類別條目、AfroCubaWeb 衝突（拉丁葛萊美 2000 年最佳 salsa 專輯另有提名紀錄、得獎者為 Celia Cruz）。建議簡介寫『2000 年葛萊美 Best Salsa Performance』或加上屆次。 | https://en.wikipedia.org/wiki/Grammy_Award_for_Best_Salsa_Album | 否 |
+| ar-b-023 | Orhan Gencebay《Bir Teselli Ver》 | 〈Bir Teselli Ver〉最早是 1971 年的 45 轉單曲 | Daily Sabah 寫該曲所在 EP 為 1970 年；tr 維基寫 1969 年的突破單曲；上線簡介寫 1971；三源不一致，建議店主在本機核對原盤年份後再決定是否保留該年份 | https://www.dailysabah.com/portrait/2015/06/06/orhan-gencebay-inventor-of-turkish-arabesque-music | 否 |
 | ar-b-024 | พุ่มพวง ดวงจันทร์（Pumpuang Duangjan）《ตะวันลับฟ้า／ลำเพลิน พุ่มพวง ดวงจันทร์》 | 《ตะวันลับฟ้า》寫「1975 年拜師之後才改用現在這個藝名」；《ลำเพลิน》寫「1976 年一位 luk thung 歌師收她為徒，替她取了名字」 | 兩張上線簡介對拜師與改名年份自相矛盾（1975 vs 1976）；泰文維基（事實庫）為 1975，英文維基只寫 15 歲（約 1976）被 Waiphot Phetsuphan 的巡演樂團發現，師父人名也不同。建議兩張都改成不帶年份的寫法，或由店主本機以泰文原始資料裁定。 | https://th.wikipedia.org/wiki/พุ่มพวง_ดวงจันทร์ | 對不到卡 |
-| ar-b-024 | Amon Tobin《Supermodified》 | Metacritic 依八篇樂評給出 85 分，2012 年獲 IMPALA 雙銀認證，代表歐洲銷量逾四萬張 | 認證倍數與銷量（在世者）、樂評評分依共同特注不寫；事實本身與維基一致，只是違反寫作規範，建議本機刪去。 | https://en.wikipedia.org/wiki/Supermodified_(album) | 是 |
-| ar-b-024 | Amon Tobin《Bricolage》 | Pitchfork 給滿分十分，Fact 在 2015 年 50 張最佳 trip-hop 專輯榜列第 23 | 雜誌榜單名次依共同特注不收；事實與維基一致，只是違反寫作規範，建議本機刪去。 | https://en.wikipedia.org/wiki/Bricolage_(album) | 是 |
-| ar-b-024 | Bernard Parmegiani《Chants magnétiques》 | 法文維基記他 1959 至 1992 年是 GRM 的常任成員 | 待核：本層讀到的法文維基摘要寫 1960 年因 Schaeffer 邀請加入、到 1992 年；英文維基寫 1959 年加入。兩種維基對起始年不一致，上線簡介若要保留年份，建議改寫成不分起始年的說法或回頭對照法文維基原文（本層只讀到 WebFetch 摘要）。 | https://fr.wikipedia.org/wiki/Bernard_Parmegiani | 是 |
-| ar-b-024 | Faithless《Reverence》 | Rollo、Sister Bliss 與 Maxi Jazz 在 1996 年 4 月推出的首張專輯 | 待核：CBS 訃聞與英文維基 Maxi Jazz 條目都寫創團成員還有 Jamie Catto，簡介只列三人，可能漏了一位創團成員；Catto 是否參與《Reverence》錄音本層未查，請店主對照專輯人員名單後決定是否補上。 | https://www.cbsnews.com/news/maxi-jazz-lead-singer-british-band-faithless-dies-at-65/ | 是 |
+| ar-b-024 | Amon Tobin《Supermodified》 | Metacritic 依八篇樂評給出 85 分，2012 年獲 IMPALA 雙銀認證，代表歐洲銷量逾四萬張 | 認證倍數與銷量（在世者）、樂評評分依共同特注不寫；事實本身與維基一致，只是違反寫作規範，建議本機刪去。 | https://en.wikipedia.org/wiki/Supermodified_(album) | 否 |
+| ar-b-024 | Amon Tobin《Bricolage》 | Pitchfork 給滿分十分，Fact 在 2015 年 50 張最佳 trip-hop 專輯榜列第 23 | 雜誌榜單名次依共同特注不收；事實與維基一致，只是違反寫作規範，建議本機刪去。 | https://en.wikipedia.org/wiki/Bricolage_(album) | 否 |
+| ar-b-024 | Bernard Parmegiani《Chants magnétiques》 | 法文維基記他 1959 至 1992 年是 GRM 的常任成員 | 待核：本層讀到的法文維基摘要寫 1960 年因 Schaeffer 邀請加入、到 1992 年；英文維基寫 1959 年加入。兩種維基對起始年不一致，上線簡介若要保留年份，建議改寫成不分起始年的說法或回頭對照法文維基原文（本層只讀到 WebFetch 摘要）。 | https://fr.wikipedia.org/wiki/Bernard_Parmegiani | 否 |
+| ar-b-024 | Faithless《Reverence》 | Rollo、Sister Bliss 與 Maxi Jazz 在 1996 年 4 月推出的首張專輯 | 待核：CBS 訃聞與英文維基 Maxi Jazz 條目都寫創團成員還有 Jamie Catto，簡介只列三人，可能漏了一位創團成員；Catto 是否參與《Reverence》錄音本層未查，請店主對照專輯人員名單後決定是否補上。 | https://www.cbsnews.com/news/maxi-jazz-lead-singer-british-band-faithless-dies-at-65/ | 否 |
 | ar-b-024 | Masonna《Inner Mind Mystique》 | 團名是一整句法文的縮寫……山崎マゾ 1987 年起用它當這個獨作計畫的名字 | 維基〈Masonna〉寫團名是マゾ與女的組合、亦為 Madonna 的諧音，縮寫展開只是『有時』的另一種讀法（且有兩種展開）；簡介把縮寫說成唯一由來，過度肯定。建議改成『名字常被拆成一句法文縮寫來讀』。 | https://en.wikipedia.org/wiki/Masonna | 否 |
-| ar-b-025 | 冨田勲《展覧会の絵》 | 1960 年代末購入 Moog III 模組合成器 | 日文維基寫 1969 年在大阪的唱片行遇到《Switched-On Bach》、1971 年秋個人進口 Moog III-P；CISAC 與 Consequence 也都寫 1971 年進口。『1960 年代末購入』與來源不符，建議改『1971 年進口』。 | https://ja.wikipedia.org/wiki/冨田勲 | 是 |
-| ar-b-025 | Cliff Martinez《Solaris》 | 本片獲 2003 年 Satellite Awards 最佳音效 | 獎項屬於電影音響（得主 Larry Blake），與 Martinez 的配樂無關；字面無誤但放在配樂簡介易被讀成配樂得獎，建議改寫或刪去 | https://en.wikipedia.org/wiki/Solaris_(2002_film) | 是 |
-| ar-b-025 | DJ Koze《Kosi Comes Around》 | Stefan Kozalla 出身德國 Flensburg | en 維基寫生於 Flensburg，de 維基與 Pampa Records 官方頁寫生於 Marrakech，來源衝突；建議改成『在 Flensburg 的嘻哈圈起家』較穩。 | https://de.wikipedia.org/wiki/DJ_Koze | 是 |
-| ar-b-026 | Paul van Dyk《Out There and Back》 | 自營廠牌 Vandit 的第一號發行 | 維基 Vandit Records 條目稱廠牌最早的發行是 Paul van Dyk 的單曲〈Another Way〉與〈Avenue〉；維基《Out There and Back》條目稱這是廠牌的第一張專輯。建議改成「Vandit 的第一張專輯」。兩條都是維基，非獨立，建議店主再核廠牌目錄。 | https://en.wikipedia.org/wiki/Vandit_Records | 是 |
-| ar-b-026 | Sven Grünberg《Hingus》 | 愛沙尼亞文維基記載，1981 年完成的《Hingus》是整個蘇聯的第一張電子音樂唱片。 | 簡介把『蘇聯第一張電子音樂唱片』掛在愛沙尼亞文維基名下，原句確實出自該條目；但這是『第一』類宣稱且有明顯反例：拉脫維亞團 Zodiac 的《Disco Alliance》1980 年已由國營 Melodiya 發行，英文維基說它大量使用當時罕見的合成器音色，早於 1981 年。建議改成『愛沙尼亞文維基稱…』並加『說法有爭議』，或刪掉這個『第一』。另，Bureau B 重發頁（搜尋摘要）寫本作錄製於 1978 至 1980 年、1981 年發行，簡介『1981 年完成』可改『1981 年發行』。 | https://en.wikipedia.org/wiki/Zodiac_(Latvian_band) | 是 |
-| ar-b-026 | 浜瀬元彦《Reminiscence》 | 1986 年 1 月 25 日由 Shi Zen 發行的個人作 | 日文維基唱片表把《Reminiscence》記為 1985 年，與上線簡介的 1986 年 1 月 25 日不一致；不確定誰對（Discogs／MusicBrainz 為 1986），僅供店主核對，非確定錯誤 | https://ja.wikipedia.org/wiki/%E6%BF%B1%E7%80%AC%E5%85%83%E5%BD%A6 | 是 |
+| ar-b-025 | 冨田勲《展覧会の絵》 | 1960 年代末購入 Moog III 模組合成器 | 日文維基寫 1969 年在大阪的唱片行遇到《Switched-On Bach》、1971 年秋個人進口 Moog III-P；CISAC 與 Consequence 也都寫 1971 年進口。『1960 年代末購入』與來源不符，建議改『1971 年進口』。 | https://ja.wikipedia.org/wiki/冨田勲 | 否 |
+| ar-b-025 | Cliff Martinez《Solaris》 | 本片獲 2003 年 Satellite Awards 最佳音效 | 獎項屬於電影音響（得主 Larry Blake），與 Martinez 的配樂無關；字面無誤但放在配樂簡介易被讀成配樂得獎，建議改寫或刪去 | https://en.wikipedia.org/wiki/Solaris_(2002_film) | 否 |
+| ar-b-025 | DJ Koze《Kosi Comes Around》 | Stefan Kozalla 出身德國 Flensburg | en 維基寫生於 Flensburg，de 維基與 Pampa Records 官方頁寫生於 Marrakech，來源衝突；建議改成『在 Flensburg 的嘻哈圈起家』較穩。 | https://de.wikipedia.org/wiki/DJ_Koze | 否 |
+| ar-b-026 | Paul van Dyk《Out There and Back》 | 自營廠牌 Vandit 的第一號發行 | 維基 Vandit Records 條目稱廠牌最早的發行是 Paul van Dyk 的單曲〈Another Way〉與〈Avenue〉；維基《Out There and Back》條目稱這是廠牌的第一張專輯。建議改成「Vandit 的第一張專輯」。兩條都是維基，非獨立，建議店主再核廠牌目錄。 | https://en.wikipedia.org/wiki/Vandit_Records | 否 |
+| ar-b-026 | Sven Grünberg《Hingus》 | 愛沙尼亞文維基記載，1981 年完成的《Hingus》是整個蘇聯的第一張電子音樂唱片。 | 簡介把『蘇聯第一張電子音樂唱片』掛在愛沙尼亞文維基名下，原句確實出自該條目；但這是『第一』類宣稱且有明顯反例：拉脫維亞團 Zodiac 的《Disco Alliance》1980 年已由國營 Melodiya 發行，英文維基說它大量使用當時罕見的合成器音色，早於 1981 年。建議改成『愛沙尼亞文維基稱…』並加『說法有爭議』，或刪掉這個『第一』。另，Bureau B 重發頁（搜尋摘要）寫本作錄製於 1978 至 1980 年、1981 年發行，簡介『1981 年完成』可改『1981 年發行』。 | https://en.wikipedia.org/wiki/Zodiac_(Latvian_band) | 否 |
+| ar-b-026 | 浜瀬元彦《Reminiscence》 | 1986 年 1 月 25 日由 Shi Zen 發行的個人作 | 日文維基唱片表把《Reminiscence》記為 1985 年，與上線簡介的 1986 年 1 月 25 日不一致；不確定誰對（Discogs／MusicBrainz 為 1986），僅供店主核對，非確定錯誤 | https://ja.wikipedia.org/wiki/%E6%BF%B1%E7%80%AC%E5%85%83%E5%BD%A6 | 否 |
 | ar-b-028 | Blood Orange《Essex Honey》 | 距上一張完整長篇七年，中間只出過一張四首的 EP；2018 年《Negro Swan》之後他只放了那張 EP | 2018 年《Negro Swan》到 2025 年之間，Blood Orange 另有 2019 年 7 月 12 日的混音帶《Angel's Pulse》（Fader 稱《Essex Honey》距《Angel's Pulse》六年）；『只放了那張 EP』不成立。『七年』若指與《Negro Swan》之間的完整長篇，算法成立，但需避免暗示中間沒有其他發行。四首 EP《Four Songs》為 2022 年 9 月 16 日 RCA 發行、是他在 RCA 的第一個發行，上線簡介此點正確（RCA 簽約消息為 2022 年 9 月，維基與搜尋摘要一致）。 | https://www.thefader.com/2025/07/17/blood-orange-essex-honey-release-date | 否 |
 | ar-b-028 | Chief Keef《Back From the Dead》 | 2012 年 3 月 … 的第五張 mixtape | 維基稱《Back from the Dead》是他的第五張 mixtape，Billboard（2019，Songs That Defined the Decade）卻稱是第三張；序數兩源不一致，建議店主改寫成不帶序數的版本，或另查 mixtape 目錄後再定。其餘如〈I Don't Like〉Hot 100 第 73 名、Kanye West 官方 remix 收進《Cruel Summer》，Billboard 與維基皆支持，無誤。 | https://www.billboard.com/music/music-news/chief-keef-dont-like-songs-that-defined-the-decade-8543876/ | 否 |
 | ar-b-030 | 陶喆《I'm OK》 | 他以此拿下第十一屆金曲獎最佳唱片製作人獎 | 維基第 11 屆金曲獎頁與陶喆條目都寫第 11 屆該獎為『最佳專輯製作人獎』（維基第 9 屆頁則寫『最佳唱片製作人獎』），疑似該獎名在第 11 屆前後有更名；上線簡介的得獎事實本身與維基一致，只有獎項名稱待對官方資料確認，建議改寫成『最佳專輯製作人』或查金曲獎官網後定案 | https://zh.wikipedia.org/zh-tw/%E7%AC%AC11%E5%B1%86%E9%87%91%E6%9B%B2%E7%8D%8E | 否 |
 | ar-b-030 | Astor Piazzolla《Adiós Nonino》 | 1959 年 10 月在紐約得知父親死訊後，不到一小時寫成 | 維基 Adiós Nonino 條目（僅見搜尋摘要，未開頁）與 Piazzolla 條目都說他是在波多黎各巡演時得知死訊；前者說幾天後在紐約寫成，後者說得知後不到一小時寫成，建議本機核對地點與『不到一小時』 | https://en.wikipedia.org/wiki/Adi%C3%B3s_Nonino | 否 |
-| ar-b-030 | Bernard Herrmann《Taxi Driver》 | 錄音完成數小時後他即於 1975 年 12 月 24 日過世 | Britannica 寫他 1975 年 12 月 24 日過世、是完成配樂的隔天；『數小時後』與之不一致（僅 Britannica 單源，建議本機再核） | https://www.britannica.com/biography/Bernard-Herrmann | 是 |
-| ar-b-030 | Jascha Heifetz《Korngold: Violin Concerto》 | 這是本曲的第一份錄音，往後很多年裡也是唯一的一份 | 英文維基 Korngold 小提琴協奏曲條目記 Heifetz 1947 年 2 月 15 日聖路易首演、1947 年 3 月 30 日 Carnegie Hall 演出有廣播轉錄盤；因此『第一份錄音』至少應限定為『第一份商業錄音』，『唯一』也沒有來源（僅查到維基，未能證實或推翻） | https://en.wikipedia.org/wiki/Violin_Concerto_(Korngold) | 是 |
-| ar-b-031 | Budapest String Quartet《Ravel: Quartet in F major / Debussy: Quartet in G minor》 | 此後三十五年他們為 Columbia 錄下 89 首作品 | 1940 年轉投 Columbia、1967 年解散，只有約 27 年；維基人物條目首段寫『from 1940 through 1967 it recorded for Columbia』，內文另有一句『Over 35 years the quartet recorded 89 individual works』，條目自己前後不一，建議改寫成『在 Columbia 期間錄下 89 首作品』並避開年數 | https://en.wikipedia.org/wiki/Budapest_String_Quartet | 是 |
+| ar-b-030 | Bernard Herrmann《Taxi Driver》 | 錄音完成數小時後他即於 1975 年 12 月 24 日過世 | Britannica 寫他 1975 年 12 月 24 日過世、是完成配樂的隔天；『數小時後』與之不一致（僅 Britannica 單源，建議本機再核） | https://www.britannica.com/biography/Bernard-Herrmann | 否 |
+| ar-b-030 | Jascha Heifetz《Korngold: Violin Concerto》 | 這是本曲的第一份錄音，往後很多年裡也是唯一的一份 | 英文維基 Korngold 小提琴協奏曲條目記 Heifetz 1947 年 2 月 15 日聖路易首演、1947 年 3 月 30 日 Carnegie Hall 演出有廣播轉錄盤；因此『第一份錄音』至少應限定為『第一份商業錄音』，『唯一』也沒有來源（僅查到維基，未能證實或推翻） | https://en.wikipedia.org/wiki/Violin_Concerto_(Korngold) | 否 |
+| ar-b-031 | Budapest String Quartet《Ravel: Quartet in F major / Debussy: Quartet in G minor》 | 此後三十五年他們為 Columbia 錄下 89 首作品 | 1940 年轉投 Columbia、1967 年解散，只有約 27 年；維基人物條目首段寫『from 1940 through 1967 it recorded for Columbia』，內文另有一句『Over 35 years the quartet recorded 89 individual works』，條目自己前後不一，建議改寫成『在 Columbia 期間錄下 89 首作品』並避開年數 | https://en.wikipedia.org/wiki/Budapest_String_Quartet | 否 |
 | ar-b-031 | Budapest String Quartet《Mozart: Haydn Quartets》 | 1939 年美方委託他們固定使用館藏五把史特拉底瓦里 | WETA 轉述的國會圖書館資料寫他們 1938 至 1962 年在該館演出，與維基的 1939 差一年，兩源不一致，建議改成『1930 年代末』 | https://weta.org/fm/classical-score/budapest-quartet-century-music-library-congress | 否 |
-| ar-b-031 | Michael Nyman《The Piano》 | 售出超過三百萬張 | 各來源數字不一致（維基、IRCAM、Wise Music 寫三百萬張以上，encyclopedia.com 寫一百五十萬張），且藝人在世，依本批規則不寫累計銷量；建議移除該句。 | https://www.encyclopedia.com/people/literature-and-arts/music-popular-and-jazz-biographies/michael-nyman | 是 |
-| ar-b-032 | Trevor Pinnock《Haydn: Nelson Mass》 | 他 1973 年創立 The English Concert | 創立年兩說：維基（Pinnock 與 English Concert 條目）、Askonas Holt、AMC、Avie 寫 1972 年（維基並註明常被寫成 1973 年）；樂團官網與 bach-cantatas 寫 1973 年；建議改成『1970 年代初』或加註。 | https://en.wikipedia.org/wiki/The_English_Concert | 是 |
-| ar-c-001 | Astrud Gilberto《Beach Samba》 | 全片被收進《1001 Albums You Must Hear Before You Die》書單 | 「全片」不得用來指整張專輯（writer-base 用語規則），建議改「整張專輯」或「這張專輯」；書單收錄本身本層未查證。 | https://en.wikipedia.org/wiki/Astrud_Gilberto | 是 |
-| ar-c-001 | Barney Wilen《Zodiac》 | 受克蘇魯文學影響 | Jazz Journal 與再版介紹（搜尋摘要）只寫 Larivière 構想的超現實超級英雄劇本（活的地景與怪物），未提 Lovecraft／克蘇魯；本層查不到此說依據，建議店主回頭核對再版內頁或刪除。 | https://jazzjournal.co.uk/2022/07/09/barney-wilen-zodiac/ | 是 |
-| ar-c-001 | Barney Wilen《Zodiac》 | 直到 2022 年才由家族提供私藏首版修復再版 | Jazz Journal 寫「restored and remastered from Barney Wilen's personal copy」（取自 Wilen 本人的那一張），未寫由家族提供，也未明言母帶佚失；建議改成「取自 Wilen 本人留下的唱片修復」。 | https://jazzjournal.co.uk/2022/07/09/barney-wilen-zodiac/ | 是 |
+| ar-b-031 | Michael Nyman《The Piano》 | 售出超過三百萬張 | 各來源數字不一致（維基、IRCAM、Wise Music 寫三百萬張以上，encyclopedia.com 寫一百五十萬張），且藝人在世，依本批規則不寫累計銷量；建議移除該句。 | https://www.encyclopedia.com/people/literature-and-arts/music-popular-and-jazz-biographies/michael-nyman | 否 |
+| ar-b-032 | Trevor Pinnock《Haydn: Nelson Mass》 | 他 1973 年創立 The English Concert | 創立年兩說：維基（Pinnock 與 English Concert 條目）、Askonas Holt、AMC、Avie 寫 1972 年（維基並註明常被寫成 1973 年）；樂團官網與 bach-cantatas 寫 1973 年；建議改成『1970 年代初』或加註。 | https://en.wikipedia.org/wiki/The_English_Concert | 否 |
+| ar-c-001 | Astrud Gilberto《Beach Samba》 | 全片被收進《1001 Albums You Must Hear Before You Die》書單 | 「全片」不得用來指整張專輯（writer-base 用語規則），建議改「整張專輯」或「這張專輯」；書單收錄本身本層未查證。 | https://en.wikipedia.org/wiki/Astrud_Gilberto | 否 |
+| ar-c-001 | Barney Wilen《Zodiac》 | 受克蘇魯文學影響 | Jazz Journal 與再版介紹（搜尋摘要）只寫 Larivière 構想的超現實超級英雄劇本（活的地景與怪物），未提 Lovecraft／克蘇魯；本層查不到此說依據，建議店主回頭核對再版內頁或刪除。 | https://jazzjournal.co.uk/2022/07/09/barney-wilen-zodiac/ | 否 |
+| ar-c-001 | Barney Wilen《Zodiac》 | 直到 2022 年才由家族提供私藏首版修復再版 | Jazz Journal 寫「restored and remastered from Barney Wilen's personal copy」（取自 Wilen 本人的那一張），未寫由家族提供，也未明言母帶佚失；建議改成「取自 Wilen 本人留下的唱片修復」。 | https://jazzjournal.co.uk/2022/07/09/barney-wilen-zodiac/ | 否 |
 | ar-c-001 | Barney Wilen《Zodiac》 | 當年銷量極差、每首僅兩三分鐘、最終只停在分鏡階段 | 本層開頁的來源都沒有這三點（銷量、曲長、分鏡階段）；Jazz Journal 只說電影當時沒有拍成，建議店主自行核實或刪除。 | https://jazzjournal.co.uk/2022/07/09/barney-wilen-zodiac/ | 否 |
-| ar-c-001 | Clara Nunes《Canto das Três Raças》 | 一九七一年後改信溫班達（umbanda），舞台上以白衣與頭巾示人 | 宗教歸屬各源不一致：英文維基與 Dicionário Cravo Albin 寫她皈依 Candomblé，葡文維基寫 1971 年離開 Candomblé 轉 Umbanda，Projeto Colabora 說她兼信 Kardec 派、Umbanda 與 Candomblé。建議改成較中性的寫法（她的歌與舞台形象與非裔巴西宗教相連），不指定 1971 年與單一宗教。 | https://pt.wikipedia.org/wiki/Clara_Nunes | 是 |
-| ar-c-001 | Clara Nunes《Alvorecer》 | 唱片銷量讓她成為巴西當時最暢銷的女歌手，也替 Alcione、Beth Carvalho 等人打開市場 | Alcione 與 Beth Carvalho 因她而受惠一說只見英文維基；銷量約 30 萬張兩源一致。建議保留銷量、對『最暢銷』與替他人開路的因果句降級。 | https://dicionariompb.com.br/artista/clara-nunes/ | 是 |
-| ar-c-001 | Clara Nunes《Alvorecer》 | Clara Nunes 的第七張 | 英文維基專輯列表在 Alvorecer 之前已有 1966、1968、1969、1971、1972、1973、1973（與 Vinicius de Moraes、Toquinho 合輯）、1974《Brasileiro Profissão Esperança》，序數取決於是否計入合輯與演出專輯，各源口徑不一；建議刪『第七張』。 | https://en.wikipedia.org/wiki/Clara_Nunes | 是 |
-| ar-c-001 | Cortex《Vol. 2》 | 1977 年由法國 Disques Espérance 發行（ESP 165501） | 維基目錄寫 Vol. 2 為 Sonodisc 發行（再版 Trad Vibe），Micro-Chop 則寫兩張都在 Disques Espérance；各源不一致，建議對照原盤標籤再定廠牌。 | https://en.wikipedia.org/wiki/Cortex_(band) | 是 |
+| ar-c-001 | Clara Nunes《Canto das Três Raças》 | 一九七一年後改信溫班達（umbanda），舞台上以白衣與頭巾示人 | 宗教歸屬各源不一致：英文維基與 Dicionário Cravo Albin 寫她皈依 Candomblé，葡文維基寫 1971 年離開 Candomblé 轉 Umbanda，Projeto Colabora 說她兼信 Kardec 派、Umbanda 與 Candomblé。建議改成較中性的寫法（她的歌與舞台形象與非裔巴西宗教相連），不指定 1971 年與單一宗教。 | https://pt.wikipedia.org/wiki/Clara_Nunes | 否 |
+| ar-c-001 | Clara Nunes《Alvorecer》 | 唱片銷量讓她成為巴西當時最暢銷的女歌手，也替 Alcione、Beth Carvalho 等人打開市場 | Alcione 與 Beth Carvalho 因她而受惠一說只見英文維基；銷量約 30 萬張兩源一致。建議保留銷量、對『最暢銷』與替他人開路的因果句降級。 | https://dicionariompb.com.br/artista/clara-nunes/ | 否 |
+| ar-c-001 | Clara Nunes《Alvorecer》 | Clara Nunes 的第七張 | 英文維基專輯列表在 Alvorecer 之前已有 1966、1968、1969、1971、1972、1973、1973（與 Vinicius de Moraes、Toquinho 合輯）、1974《Brasileiro Profissão Esperança》，序數取決於是否計入合輯與演出專輯，各源口徑不一；建議刪『第七張』。 | https://en.wikipedia.org/wiki/Clara_Nunes | 否 |
+| ar-c-001 | Cortex《Vol. 2》 | 1977 年由法國 Disques Espérance 發行（ESP 165501） | 維基目錄寫 Vol. 2 為 Sonodisc 發行（再版 Trad Vibe），Micro-Chop 則寫兩張都在 Disques Espérance；各源不一致，建議對照原盤標籤再定廠牌。 | https://en.wikipedia.org/wiki/Cortex_(band) | 否 |
 | ar-c-002 | Édith Piaf《À l'Olympia 1961》 | 那一晚（1960 年 12 月 29 日）她首度在觀眾面前唱出〈Non, je ne regrette rien〉 | 上線簡介自己引用的 INA 專文，標題為『Piaf 首度演唱 Non, je ne regrette rien』，內文摘要指首唱是 1960 年 12 月 Olympia 開演前一晚、電視節目《Cinq colonnes à la Une》上（摘要寫 12 月 1 日，日期本層未能二次確認）；維基《Piaf》條目另寫 1961 年 Olympia 場次首唱。建議把『首度在觀眾面前』改成較不具體的寫法，或本機再核對 INA 原文。 | https://www.ina.fr/ina-eclaire-actu/edith-piaf-chante-pour-la-premiere-fois-non-je-ne-regrette-rien | 否 |
-| ar-c-002 | Grover Washington Jr.《Winelight》 | 由 Bill Withers 獻聲的〈Just the Two of Us〉拿下 Hot 100 亞軍與葛萊美獎 | 〈Just the Two of Us〉的葛萊美是第 24 屆（1982 年）最佳 R&B 歌曲獎，得主是詞曲作者 Bill Withers、Ralph MacDonald 與 William Salter，不是演出者；原句主詞容易被讀成 Grover 或該曲演出者得獎，建議改寫主詞。專輯本身的最佳融合爵士演奏獎得主則是 Grover Washington Jr.（寫法無誤）。 | https://en.wikipedia.org/wiki/24th_Annual_Grammy_Awards | 是 |
-| ar-c-002 | Guru《Jazzmatazz Volume 1》 | 爵士嘻哈（jazz rap）的起點——不再只是取樣爵士唱片，而是真的請來爵士樂手與嘻哈音樂人現場合作 | 『起點』過頭：維基 Jazz rap 條目列出更早的 Gang Starr〈Words I Manifest〉（取樣 Dizzy Gillespie）、1990 年〈Jazz Thing〉、Stetsasonic〈Talkin' All That Jazz〉（1989）與 Native Tongues 自 1988 年起的爵士取向專輯，並把 Jazzmatazz 描述為『持續的爵士饒舌合作系列』；建議改成『把爵士樂手請進錄音室的系列起點』之類的限定寫法。 | https://en.wikipedia.org/wiki/Jazz_rap | 是 |
-| ar-c-002 | Harry Roesli《Titik Api》 | 在 1973 年《Philosophy Gang》、1975 年《Ken Arok》之後推出的第三作，1976 年問世 | 與《Ken Arok》上線簡介互相矛盾：該簡介與 MusicBrainz 都說《Ken Arok》唱片是 1977 年 Eterna 出版（1975 年是萬隆首演的搖滾歌劇），若如此 1976 年的《Titik Api》就不是《Ken Arok》唱片之後的第三作；Bandung Bergerak 另把《Ken Arok》列為 1975 年作品，兩邊對不上，建議改成不排專輯先後的寫法，或查清《Ken Arok》首版年再定。 | https://musicbrainz.org/release-group/480b1428-33b7-4aaa-b8d0-b39ee65d8486 | 是 |
-| ar-c-002 | Ivo Papasov & His Bulgarian Wedding Band《Orpheus Ascending》 | 一九八二年因土耳其裔身分被當局拘捕毆打，社會主義政權要求他改名為 Ivo | 維基與 WOMEX 都寫 Papasov 是羅姆人，1982 年被捕是因為出身與在土耳其裔居民間的人氣，並非本人為土耳其裔；改名則是 1980 年代（多數來源寫中期）的同化政策，不是 1982 年的同一事件。建議改寫成『羅姆家庭、1982 年因出身與在土耳其裔居民間的人氣被拘捕毆打；1980 年代被迫改名 Ivo』。 | https://en.wikipedia.org/wiki/Ivo_Papazov | 是 |
+| ar-c-002 | Grover Washington Jr.《Winelight》 | 由 Bill Withers 獻聲的〈Just the Two of Us〉拿下 Hot 100 亞軍與葛萊美獎 | 〈Just the Two of Us〉的葛萊美是第 24 屆（1982 年）最佳 R&B 歌曲獎，得主是詞曲作者 Bill Withers、Ralph MacDonald 與 William Salter，不是演出者；原句主詞容易被讀成 Grover 或該曲演出者得獎，建議改寫主詞。專輯本身的最佳融合爵士演奏獎得主則是 Grover Washington Jr.（寫法無誤）。 | https://en.wikipedia.org/wiki/24th_Annual_Grammy_Awards | 否 |
+| ar-c-002 | Guru《Jazzmatazz Volume 1》 | 爵士嘻哈（jazz rap）的起點——不再只是取樣爵士唱片，而是真的請來爵士樂手與嘻哈音樂人現場合作 | 『起點』過頭：維基 Jazz rap 條目列出更早的 Gang Starr〈Words I Manifest〉（取樣 Dizzy Gillespie）、1990 年〈Jazz Thing〉、Stetsasonic〈Talkin' All That Jazz〉（1989）與 Native Tongues 自 1988 年起的爵士取向專輯，並把 Jazzmatazz 描述為『持續的爵士饒舌合作系列』；建議改成『把爵士樂手請進錄音室的系列起點』之類的限定寫法。 | https://en.wikipedia.org/wiki/Jazz_rap | 否 |
+| ar-c-002 | Harry Roesli《Titik Api》 | 在 1973 年《Philosophy Gang》、1975 年《Ken Arok》之後推出的第三作，1976 年問世 | 與《Ken Arok》上線簡介互相矛盾：該簡介與 MusicBrainz 都說《Ken Arok》唱片是 1977 年 Eterna 出版（1975 年是萬隆首演的搖滾歌劇），若如此 1976 年的《Titik Api》就不是《Ken Arok》唱片之後的第三作；Bandung Bergerak 另把《Ken Arok》列為 1975 年作品，兩邊對不上，建議改成不排專輯先後的寫法，或查清《Ken Arok》首版年再定。 | https://musicbrainz.org/release-group/480b1428-33b7-4aaa-b8d0-b39ee65d8486 | 否 |
+| ar-c-002 | Ivo Papasov & His Bulgarian Wedding Band《Orpheus Ascending》 | 一九八二年因土耳其裔身分被當局拘捕毆打，社會主義政權要求他改名為 Ivo | 維基與 WOMEX 都寫 Papasov 是羅姆人，1982 年被捕是因為出身與在土耳其裔居民間的人氣，並非本人為土耳其裔；改名則是 1980 年代（多數來源寫中期）的同化政策，不是 1982 年的同一事件。建議改寫成『羅姆家庭、1982 年因出身與在土耳其裔居民間的人氣被拘捕毆打；1980 年代被迫改名 Ivo』。 | https://en.wikipedia.org/wiki/Ivo_Papazov | 否 |
 | ar-c-002 | Janko Nilovic《Soul Impressions》 | 替專做配樂授權的廠牌一口氣做了十張唱片 | Bandcamp Daily 寫 over 10 albums，It's Psychedelic Baby 訪談中他說為 MP 2000 作了約 60 張；『十張』疑為低估，兩源不一致，建議改成不寫確切張數或標明說法不一。 | https://www.psychedelicbabymag.com/2013/02/janko-nilovic-interview.html | 否 |
-| ar-c-003 | Leo Parker《Let Me Tell You 'Bout It》 | John Burks 的小號與 Bill Swindell 的次中音在前六首加進來 | 維基專輯條目摘要寫七首主要曲目的六重奏都有管樂，與簡介『前六首』可能不符；本層讀到的是網頁摘要，可能不精確，請主線對照維基原文與 Discogs 曲目後再決定是否改。人員名單、1961 年 9 月 9 日 Van Gelder 錄音、前一次錄音為 1957 年均與簡介一致。 | https://en.wikipedia.org/wiki/Let_Me_Tell_You_%27Bout_It | 是 |
+| ar-c-003 | Leo Parker《Let Me Tell You 'Bout It》 | John Burks 的小號與 Bill Swindell 的次中音在前六首加進來 | 維基專輯條目摘要寫七首主要曲目的六重奏都有管樂，與簡介『前六首』可能不符；本層讀到的是網頁摘要，可能不精確，請主線對照維基原文與 Discogs 曲目後再決定是否改。人員名單、1961 年 9 月 9 日 Van Gelder 錄音、前一次錄音為 1957 年均與簡介一致。 | https://en.wikipedia.org/wiki/Let_Me_Tell_You_%27Bout_It | 否 |
 | ar-c-003 | Louis Smith《Here Comes Louis Smith》 | 〈Tribute to Brownie〉是 Duke Pearson 寫給 Clifford Brown 的 | 本層未能開頁驗證曲目作曲者（AllMusic 403）；建議對 Blue Note BLP 1584 內頁或 Discogs 覆核。非確認有誤，只是未見兩源支持。 | https://en.wikipedia.org/wiki/Here_Comes_Louis_Smith | 是 |
-| ar-c-003 | Mina《Mina® (1974)》 | 義大利第一位自己開唱片公司的歌手 | 本層查到 PDU 是 Mina 與父親 Giacomo Mazzini 於 1967 年在 Lugano 創立（義大利文維基、搜尋摘要一致），但沒有任何來源把這件事寫成『義大利第一位自己開唱片公司的歌手』，『第一位』宣稱無出處，建議退成『與父親創立 PDU』 | https://it.wikipedia.org/wiki/Mina_(cantante) | 是 |
-| ar-c-004 | Rabih Abou-Khalil《Blue Camel》 | 在貝魯特隨 Georges Farah 學 oud | 英文維基支持 Georges Farah，但 Jazz in the Park 的簡介寫的是 Wadih El Safi，兩說並存；建議店主改成不點名老師，或另查官方傳記確認。 | https://jazzinthepark.ro/en/rabih-abou-khalil-a-unique-map-of-the-music/ | 是 |
-| ar-c-004 | Serge Chaloff《Boston Blow-Up!》 | 1955 年 4 月在紐約為 Capitol 錄下 | boppinbob 亦寫 1955 年 4 月錄《Boston Blow-Up!》、Stan Kenton 製作、Capitol；未見錄音地點的第二源，「在紐約」維持未驗證，建議店主複核。 | https://fromthevaults-boppinbob.blogspot.com/2022/11/serge-chaloff-born-24-november-1923.html | 是 |
-| ar-c-005 | Анатолий Вапиров《Мистерия》 | 他 1982 至 1983 年以「黑市投機」的罪名入獄。 | 俄文維基只寫『видимо（看來）за спекуляцию』，罪名並不確定；另有搜尋摘要稱 1982 年 8 月被判兩年、『私營企業』罪，提前獲釋。建議改成「1982 年入獄、次年獲釋」，不寫確切罪名。 | https://ru.wikipedia.org/wiki/%D0%92%D0%B0%D0%BF%D0%B8%D1%80%D0%BE%D0%B2%2C_%D0%90%D0%BD%D0%B0%D1%82%D0%BE%D0%BB%D0%B8%D0%B9_%D0%9F%D0%B5%D1%82%D1%80%D0%BE%D0%B2%D0%B8%D1%87 | 是 |
-| ar-c-005 | Оркестр Олега Лундстрема《Оркестр Олега Лундстрема》 | 一支 1935 年在哈爾濱成立的大樂團 | 成軍年來源不一致：英文維基與 worldofjazz 寫 1935，樂團官方介紹頁寫 1934（2024 年慶祝 90 週年）。建議改成「1930 年代中期」或查證官方說法。 | https://ruskeala-symphony.com/en/page/lundstrem | 是 |
+| ar-c-003 | Mina《Mina® (1974)》 | 義大利第一位自己開唱片公司的歌手 | 本層查到 PDU 是 Mina 與父親 Giacomo Mazzini 於 1967 年在 Lugano 創立（義大利文維基、搜尋摘要一致），但沒有任何來源把這件事寫成『義大利第一位自己開唱片公司的歌手』，『第一位』宣稱無出處，建議退成『與父親創立 PDU』 | https://it.wikipedia.org/wiki/Mina_(cantante) | 否 |
+| ar-c-004 | Rabih Abou-Khalil《Blue Camel》 | 在貝魯特隨 Georges Farah 學 oud | 英文維基支持 Georges Farah，但 Jazz in the Park 的簡介寫的是 Wadih El Safi，兩說並存；建議店主改成不點名老師，或另查官方傳記確認。 | https://jazzinthepark.ro/en/rabih-abou-khalil-a-unique-map-of-the-music/ | 否 |
+| ar-c-004 | Serge Chaloff《Boston Blow-Up!》 | 1955 年 4 月在紐約為 Capitol 錄下 | boppinbob 亦寫 1955 年 4 月錄《Boston Blow-Up!》、Stan Kenton 製作、Capitol；未見錄音地點的第二源，「在紐約」維持未驗證，建議店主複核。 | https://fromthevaults-boppinbob.blogspot.com/2022/11/serge-chaloff-born-24-november-1923.html | 否 |
+| ar-c-005 | Анатолий Вапиров《Мистерия》 | 他 1982 至 1983 年以「黑市投機」的罪名入獄。 | 俄文維基只寫『видимо（看來）за спекуляцию』，罪名並不確定；另有搜尋摘要稱 1982 年 8 月被判兩年、『私營企業』罪，提前獲釋。建議改成「1982 年入獄、次年獲釋」，不寫確切罪名。 | https://ru.wikipedia.org/wiki/%D0%92%D0%B0%D0%BF%D0%B8%D1%80%D0%BE%D0%B2%2C_%D0%90%D0%BD%D0%B0%D1%82%D0%BE%D0%BB%D0%B8%D0%B9_%D0%9F%D0%B5%D1%82%D1%80%D0%BE%D0%B2%D0%B8%D1%87 | 否 |
+| ar-c-005 | Оркестр Олега Лундстрема《Оркестр Олега Лундстрема》 | 一支 1935 年在哈爾濱成立的大樂團 | 成軍年來源不一致：英文維基與 worldofjazz 寫 1935，樂團官方介紹頁寫 1934（2024 年慶祝 90 週年）。建議改成「1930 年代中期」或查證官方說法。 | https://ruskeala-symphony.com/en/page/lundstrem | 否 |
 | ar-c-005 | 봄여름가을겨울《항상 기뻐하는 사람들》 | 整張以春夏秋冬四首曲名構成、CD 版十一軌 | 卡池的《봄여름가을겨울》（1988）與《항상 기뻐하는 사람들》（1988）疑為同一張專輯：Bugs 的專輯頁《봄여름가을겨울》1988-06-15 發行、1989-03 CD 版、11 軌，曲序與《항상 기뻐하는 사람들》簡介所列完全相同（第 1 軌〈항상 기뻐하는 사람들〉標春、第 4 軌〈거리의 악사〉標夏、第 6 軌〈사람들은 모두 변하나봐〉標秋、第 10 軌〈12월 31일〉標冬）。建議店主查是否重複上架。 | https://music.bugs.co.kr/album/3976 | 否 |
-| ar-c-005 | ジョージ大塚トリオ《Page 1》 | 三重奏是他 1966 年組起的第一支樂團 | 日文維基寫 1966 年組成；arban 訃報寫 1965 年起以ジョージ大塚トリオ走紅，年份來源不一致。建議改成『1960 年代中期』。 | https://www.arban-mag.com/article/52595 | 是 |
+| ar-c-005 | ジョージ大塚トリオ《Page 1》 | 三重奏是他 1966 年組起的第一支樂團 | 日文維基寫 1966 年組成；arban 訃報寫 1965 年起以ジョージ大塚トリオ走紅，年份來源不一致。建議改成『1960 年代中期』。 | https://www.arban-mag.com/article/52595 | 否 |
 | ar-c-005 | 張露《繁星點點 張露／百代中國時代曲名典13：張露 給我一個吻》 | 1975 年退出歌壇（離 1973 年這張不到兩年） | zh／en 維基支持 1975 年；但 TVBS 與新浪的訃聞都寫她 1957 年婚後息影。兩說衝突、未能裁定（1973 年確有專輯，傾向 1975 年說法），請店主視需要把「退出歌壇」寫成「淡出」或保留 1975 說並知悉分歧。 | https://ent.sina.cn/music/ygangtai/2009-02-02/detail-icczmvun3359630.d.html | 對不到卡 |
-| ar-c-005 | 渋谷毅《ドリーム》 | 高中時聽到 Erroll Garner 才轉向爵士 | ja 維基寫 Erroll Garner，但 oil-magazine 的本人訪談說是同學帶來 George Shearing 的唱片讓他大受衝擊；兩說不一，建議改成『高中時接觸爵士』或明寫出處。 | https://oil-magazine.claska.com/tokyoandme/97928/ | 是 |
+| ar-c-005 | 渋谷毅《ドリーム》 | 高中時聽到 Erroll Garner 才轉向爵士 | ja 維基寫 Erroll Garner，但 oil-magazine 的本人訪談說是同學帶來 George Shearing 的唱片讓他大受衝擊；兩說不一，建議改成『高中時接觸爵士』或明寫出處。 | https://oil-magazine.claska.com/tokyoandme/97928/ | 否 |
 | ar-c-006 | Jazmine Sullivan《Heaux Tales》 | 〈Pick Up Your Feelings〉拿下第 64 屆葛萊美最佳 R&B 演唱 | 該獎項是與 Silk Sonic〈Leave the Door Open〉並列得獎（The FADER 報導）；原句未寫並列，不算錯但建議補上。 | https://www.thefader.com/2022/04/03/jazmine-sullivan-wins-best-rb-album-for-heaux-tales-at-the-2022-grammys | 否 |
-| ar-c-006 | L.T.D.《Togetherness》 | 專輯拿下 R&B 榜第 3、Billboard 200 第 18 | theseconddisc.com（The Second Disc 2018）摘要寫 Something to Love 與 Togetherness 皆為 R&B 專輯榜第 1；與簡介的第 3 名不一致。僅此單源、頁面為小模型摘要，可能誤讀，建議本機查 Billboard 專輯榜確認再決定要不要改。 | https://theseconddisc.com/2018/05/25/back-in-love-again-robinsongs-collects-four-albums-from-soul-funk-disco-band-l-t-d/ | 是 |
-| ar-c-006 | L.T.D.《Togetherness》 | 洛杉磯的九人編制放克／靈魂樂團 | theseconddisc.com 稱 L.T.D. 是 ten-piece band（十人編制）；簡介寫九人。編制隨年代增減，單源，建議本機核對 Togetherness 時期的實際人數。 | https://theseconddisc.com/2018/05/25/back-in-love-again-robinsongs-collects-four-albums-from-soul-funk-disco-band-l-t-d/ | 是 |
+| ar-c-006 | L.T.D.《Togetherness》 | 專輯拿下 R&B 榜第 3、Billboard 200 第 18 | theseconddisc.com（The Second Disc 2018）摘要寫 Something to Love 與 Togetherness 皆為 R&B 專輯榜第 1；與簡介的第 3 名不一致。僅此單源、頁面為小模型摘要，可能誤讀，建議本機查 Billboard 專輯榜確認再決定要不要改。 | https://theseconddisc.com/2018/05/25/back-in-love-again-robinsongs-collects-four-albums-from-soul-funk-disco-band-l-t-d/ | 否 |
+| ar-c-006 | L.T.D.《Togetherness》 | 洛杉磯的九人編制放克／靈魂樂團 | theseconddisc.com 稱 L.T.D. 是 ten-piece band（十人編制）；簡介寫九人。編制隨年代增減，單源，建議本機核對 Togetherness 時期的實際人數。 | https://theseconddisc.com/2018/05/25/back-in-love-again-robinsongs-collects-four-albums-from-soul-funk-disco-band-l-t-d/ | 否 |
 | ar-c-006 | Maceo & All the King's Men《Funky Music Machine》 | 1975 年才正式發行（樂隊活動末期完成） | 維基 Maceo Parker 條目寫 Funky Music Machine 為 1972 年專輯；搜尋摘要稱 1971 年底錄製、1972 年由 Excello 發行（未開頁）。1975 年可能是再版年，建議本機核對 MusicBrainz／Discogs 的首發年與廠牌後改簡介與卡池年份。 | https://en.wikipedia.org/wiki/Maceo_Parker | 否 |
-| ar-c-006 | Marvin Gaye & Tammi Terrell《You're All I Need》 | 這批 1966–67 年錄音 | 維基 Tammi Terrell 條目寫兩人二重唱是 1967 年初才開始錄製，上線簡介的「1966–67 年」起點疑偏早；單源，建議本機核對後再決定是否改成 1967 年。 | https://en.wikipedia.org/wiki/Tammi_Terrell | 是 |
+| ar-c-006 | Marvin Gaye & Tammi Terrell《You're All I Need》 | 這批 1966–67 年錄音 | 維基 Tammi Terrell 條目寫兩人二重唱是 1967 年初才開始錄製，上線簡介的「1966–67 年」起點疑偏早；單源，建議本機核對後再決定是否改成 1967 年。 | https://en.wikipedia.org/wiki/Tammi_Terrell | 否 |
 | ar-c-007 | Phyllis Hyman《Somewhere in My Lifetime》 | 「轉投 Arista 的首張專輯，1979 年 1 月發行」 | 英文維基藝人條目寫該專輯於 1978 年發行（Arista 首張，標題曲由 Barry Manilow 製作）；本層未取得專輯條目或第二源，無法判定哪邊對，待店主核對發行日 | https://en.wikipedia.org/wiki/Phyllis_Hyman | 否 |
-| ar-c-007 | The Angelic Gospel Singers《Songs From The Heart》 | 1949 年的〈Touch Me, Lord Jesus〉售出超過一百萬張 | 維基寫 sold over a million，Hymnology Archive 寫首次錄音 sold over 100,000 copies，兩源差十倍；建議改為「在節奏藍調電台走紅」或查到更可靠的銷量來源後再寫。 | https://www.hymnologyarchive.com/margaret-wells-allison | 是 |
-| ar-c-007 | The Angelic Gospel Singers《Songs From The Heart》 | 1947 年簽進費城的 Gotham | 維基寫 1947 年簽約 Gotham，Hymnology Archive 寫 1949 年 Gotham 依 Allison 編排的 Lucie Campbell 作品簽下她們；年份來源不一致，建議改寫「1940 年代後期」。 | https://www.hymnologyarchive.com/margaret-wells-allison | 是 |
-| ar-c-007 | The Fatback Band《Raising Hell》 | 鼓手 Bill Curtis 一九七〇年在紐約組成 Fatback Band | 維基資料庫寫 formed 1970，北卡羅來納音樂名人堂 Bill Curtis 頁寫 1971 年在紐約組成；來源不一致，建議改寫「一九七〇年代初」。 | https://northcarolinamusichalloffame.org/inductee-item/bill-fatback-curtis/ | 是 |
-| ar-c-007 | The Salsoul Orchestra《Salsoul Orchestra》 | 薩克斯風只保留上低音一支 | The Second Disc 的樂評稱 Salsoul 的薩克斯風編制是兩支（對照 MFSB 的五支），與上線簡介「一支」不一致；該評文字有銅管並用的說法，待核 | https://theseconddisc.com/2016/02/01/heat-it-up-groove-line-tells-the-salsoul-orchestra-story-40th-anniversary-collection/ | 是 |
-| ar-c-007 | The Soul Stirrers《Shine on Me》 | 1930 年代初 R. H. Harris 成為音樂主導者 | 德州州立歷史協會 Handbook of Texas 說 Harris 約在 1930 年代中期加入、約 1937 年起推出 swing lead；與「1930 年代初」有落差，待核 | https://www.tshaonline.org/handbook/entries/harris-rebert-h | 是 |
-| ar-c-007 | The Soul Stirrers《Shine on Me》 | 1950 年底他因不滿業界作風離團 | Handbook of Texas 的 Harris 條目寫他離團的原因是長年巡演的疲累（reportedly），與簡介的離團理由不一致，待核 | https://www.tshaonline.org/handbook/entries/harris-rebert-h | 是 |
-| ar-c-007 | Big Walter Horton《The Soul of Blues Harmonica》 | Walter Horton（1921–1981） | 出生年有 1917（wikidata）、1918（密西西比藍調步道標誌牌）、1921（維基與 Earwig）三說，簡介取 1921 屬其中一說，建議拿掉出生年或改寫成生年有爭議。 | https://msbluestrail.org/blues-trail-markers/big-walter-horton | 是 |
-| ar-c-007 | Blind Lemon Jefferson《King of the Country Blues》 | 是唱片工業裡第一位大量賣座的男聲鄉村藍調歌手 | TSHA 的說法是「第一位獲得全國聽眾的藍調自彈自唱歌手」，並明講他不是第一個錄音的人；「第一」類宣稱建議改成 TSHA 的限定說法或改成「最早的暢銷藍調歌手之一」。 | https://www.tshaonline.org/handbook/entries/jefferson-blind-lemon | 是 |
-| ar-c-008 | Hound Dog Taylor and the HouseRockers《Natural Boogie》 | 1917 年生於密西西比 Natchez | 出生年有爭議：英文維基寫 1917 但註明有來源說 1915 或 1916，Alligator 官網與 Wikidata 為 1915；建議改寫「1917 年（一說 1915 年）」或略去年份 | https://en.wikipedia.org/wiki/Hound_Dog_Taylor | 是 |
+| ar-c-007 | The Angelic Gospel Singers《Songs From The Heart》 | 1949 年的〈Touch Me, Lord Jesus〉售出超過一百萬張 | 維基寫 sold over a million，Hymnology Archive 寫首次錄音 sold over 100,000 copies，兩源差十倍；建議改為「在節奏藍調電台走紅」或查到更可靠的銷量來源後再寫。 | https://www.hymnologyarchive.com/margaret-wells-allison | 否 |
+| ar-c-007 | The Angelic Gospel Singers《Songs From The Heart》 | 1947 年簽進費城的 Gotham | 維基寫 1947 年簽約 Gotham，Hymnology Archive 寫 1949 年 Gotham 依 Allison 編排的 Lucie Campbell 作品簽下她們；年份來源不一致，建議改寫「1940 年代後期」。 | https://www.hymnologyarchive.com/margaret-wells-allison | 否 |
+| ar-c-007 | The Fatback Band《Raising Hell》 | 鼓手 Bill Curtis 一九七〇年在紐約組成 Fatback Band | 維基資料庫寫 formed 1970，北卡羅來納音樂名人堂 Bill Curtis 頁寫 1971 年在紐約組成；來源不一致，建議改寫「一九七〇年代初」。 | https://northcarolinamusichalloffame.org/inductee-item/bill-fatback-curtis/ | 否 |
+| ar-c-007 | The Salsoul Orchestra《Salsoul Orchestra》 | 薩克斯風只保留上低音一支 | The Second Disc 的樂評稱 Salsoul 的薩克斯風編制是兩支（對照 MFSB 的五支），與上線簡介「一支」不一致；該評文字有銅管並用的說法，待核 | https://theseconddisc.com/2016/02/01/heat-it-up-groove-line-tells-the-salsoul-orchestra-story-40th-anniversary-collection/ | 否 |
+| ar-c-007 | The Soul Stirrers《Shine on Me》 | 1930 年代初 R. H. Harris 成為音樂主導者 | 德州州立歷史協會 Handbook of Texas 說 Harris 約在 1930 年代中期加入、約 1937 年起推出 swing lead；與「1930 年代初」有落差，待核 | https://www.tshaonline.org/handbook/entries/harris-rebert-h | 否 |
+| ar-c-007 | The Soul Stirrers《Shine on Me》 | 1950 年底他因不滿業界作風離團 | Handbook of Texas 的 Harris 條目寫他離團的原因是長年巡演的疲累（reportedly），與簡介的離團理由不一致，待核 | https://www.tshaonline.org/handbook/entries/harris-rebert-h | 否 |
+| ar-c-007 | Big Walter Horton《The Soul of Blues Harmonica》 | Walter Horton（1921–1981） | 出生年有 1917（wikidata）、1918（密西西比藍調步道標誌牌）、1921（維基與 Earwig）三說，簡介取 1921 屬其中一說，建議拿掉出生年或改寫成生年有爭議。 | https://msbluestrail.org/blues-trail-markers/big-walter-horton | 否 |
+| ar-c-007 | Blind Lemon Jefferson《King of the Country Blues》 | 是唱片工業裡第一位大量賣座的男聲鄉村藍調歌手 | TSHA 的說法是「第一位獲得全國聽眾的藍調自彈自唱歌手」，並明講他不是第一個錄音的人；「第一」類宣稱建議改成 TSHA 的限定說法或改成「最早的暢銷藍調歌手之一」。 | https://www.tshaonline.org/handbook/entries/jefferson-blind-lemon | 否 |
+| ar-c-008 | Hound Dog Taylor and the HouseRockers《Natural Boogie》 | 1917 年生於密西西比 Natchez | 出生年有爭議：英文維基寫 1917 但註明有來源說 1915 或 1916，Alligator 官網與 Wikidata 為 1915；建議改寫「1917 年（一說 1915 年）」或略去年份 | https://en.wikipedia.org/wiki/Hound_Dog_Taylor | 否 |
 | ar-c-008 | Jimmy Dawkins《All for Business》 | 錄音 1971 年，要到 1973 年才由 Delmark 發行 | 英文維基寫 1971 年 Delmark 發行第二張專輯，American Blues Scene 也寫 All For Business (1971)；與上線簡介的 1973 不一致。請在本機對 Delmark 目錄或 Discogs 原盤欄位核對後定稿（本層未能開 Discogs 驗證） | https://en.wikipedia.org/wiki/Jimmy_Dawkins | 否 |
 | ar-c-008 | Lazy Lester《All Over You》 | 簡介引 Excello 時期，歌名「Hello Mary Lee�)」 | 上線簡介曲名「Hello Mary Lee�)」帶亂碼字元（應為 Hello Mary Lee），請在 KV 檢查修正 | https://www.alligator.com/artists/Lazy-Lester/ | 否 |
-| ar-c-008 | Ma Rainey《Mother of the Blues》 | 五年間錄下九十餘個曲目 | 英文維基與 Georgia Encyclopedia 都寫五年間錄了一百多首（more than 100 recordings），womenshistory.org 寫近百首；若「九十餘個曲目」指不同曲名數則無誤，請本機核對後決定是否改成「百餘首錄音」 | https://www.georgiaencyclopedia.org/articles/arts-culture/gertrude-ma-rainey-1886-1939/ | 是 |
-| ar-c-008 | Michael Burks《Iron Man》 | 他生前五度入圍 Blues Music Award | Alligator 官方介紹稱入圍 4 次（含 2012 年最佳吉他手），維基稱 5 次，兩源不一致，建議改成不寫次數或改寫「多次入圍」 | https://www.alligator.com/artists/Michael-Burks/ | 是 |
-| ar-c-008 | Shemekia Copeland《Turn the Heat Up》 | 她約十歲就在 Cotton Club 首度公開演唱 | 維基稱約 10 歲，Alligator 官方介紹與多篇報導稱 8 歲，兩源不一致；建議改成不寫年紀（『很小就在 Cotton Club 登台』） | https://www.alligator.com/artists/Shemekia-Copeland/ | 是 |
+| ar-c-008 | Ma Rainey《Mother of the Blues》 | 五年間錄下九十餘個曲目 | 英文維基與 Georgia Encyclopedia 都寫五年間錄了一百多首（more than 100 recordings），womenshistory.org 寫近百首；若「九十餘個曲目」指不同曲名數則無誤，請本機核對後決定是否改成「百餘首錄音」 | https://www.georgiaencyclopedia.org/articles/arts-culture/gertrude-ma-rainey-1886-1939/ | 否 |
+| ar-c-008 | Michael Burks《Iron Man》 | 他生前五度入圍 Blues Music Award | Alligator 官方介紹稱入圍 4 次（含 2012 年最佳吉他手），維基稱 5 次，兩源不一致，建議改成不寫次數或改寫「多次入圍」 | https://www.alligator.com/artists/Michael-Burks/ | 否 |
+| ar-c-008 | Shemekia Copeland《Turn the Heat Up》 | 她約十歲就在 Cotton Club 首度公開演唱 | 維基稱約 10 歲，Alligator 官方介紹與多篇報導稱 8 歲，兩源不一致；建議改成不寫年紀（『很小就在 Cotton Club 登台』） | https://www.alligator.com/artists/Shemekia-Copeland/ | 否 |
 | ar-c-008 | Susan Tedeschi《Just Won't Burn》 | 《Just Won't Burn》是她的『第二張個人作品』 | 維基稱 1995 年的《Better Days》是 Susan Tedeschi Band 名義發行，《Just Won't Burn》是首張以她個人名義發行的專輯；建議改成『她 1998 年的全國性出道作』或不寫序數 | https://en.wikipedia.org/wiki/Susan_Tedeschi | 否 |
-| ar-c-008 | Tampa Red《The Guitar Wizard》 | 與 Georgia Tom Dorsey 1928 年賣破百萬的 hokum 名曲〈(Honey) It's Tight Like That〉 | 維基稱賣了一百萬張，Encyclopedia.com 稱近百萬張，『破百萬』偏強；建議改成『據稱約百萬張』 | https://www.encyclopedia.com/people/literature-and-arts/music-popular-and-jazz-biographies/tampa-red | 是 |
-| ar-c-008 | Area《Crac!》 | Stratos 1979 年因白血病去世 | 英文維基 Area (Italian band) 條目寫 Stratos 1979 年 6 月、34 歲因 aplastic anemia（再生不良性貧血）併發症過世，並非白血病；另依共同特注，死因不宜寫進介紹，簡介可改成只寫『1979 年過世』。 | https://en.wikipedia.org/wiki/Area_(Italian_band) | 是 |
+| ar-c-008 | Tampa Red《The Guitar Wizard》 | 與 Georgia Tom Dorsey 1928 年賣破百萬的 hokum 名曲〈(Honey) It's Tight Like That〉 | 維基稱賣了一百萬張，Encyclopedia.com 稱近百萬張，『破百萬』偏強；建議改成『據稱約百萬張』 | https://www.encyclopedia.com/people/literature-and-arts/music-popular-and-jazz-biographies/tampa-red | 否 |
+| ar-c-008 | Area《Crac!》 | Stratos 1979 年因白血病去世 | 英文維基 Area (Italian band) 條目寫 Stratos 1979 年 6 月、34 歲因 aplastic anemia（再生不良性貧血）併發症過世，並非白血病；另依共同特注，死因不宜寫進介紹，簡介可改成只寫『1979 年過世』。 | https://en.wikipedia.org/wiki/Area_(Italian_band) | 否 |
 | ar-c-009 | Big Brother & The Holding Company《Big Brother & The Holding Company》 | 1966 年 12 月錄於洛杉磯（簡介寫法） | LoC 專文寫 Joplin 加入『數週後』樂團就趕進錄音室錄首張（Mainstream）；搜尋摘要又稱錄音在 1966 年 12 月進行。時序有出入但兩邊都有可能（可能分芝加哥與洛杉磯兩段場次），未能證實簡介錯誤，僅列請店主核對；本層不判定為錯。 | https://www.loc.gov/static/programs/national-recording-preservation-board/documents/BigBrotherAndTheHoldingCompany.pdf | 否 |
-| ar-c-009 | Budka Suflera《Cień wielkiej góry》 | 樂隊 1969 年在 Lublin 成立 | 來源對成軍年份不一致：pl 維基與 ebilet 寫 1974 年，bibliotekapiosenki 寫 1973 年，en 維基首段兩種年份並陳（1969 是 Cugowski 早期同名前身團，1974 才是現行樂團成立）；建議改成不帶年份或寫「1970 年代前半」。 | https://pl.wikipedia.org/wiki/Budka_Suflera | 是 |
-| ar-c-010 | Dara Puspita《Jang Pertama》 | 1968 到 1971 年她們在西歐巡演三年 | 行程包含匈牙利（英文維基列出 West Germany、Hungary、England、France、Belgium、Netherlands、Spain）與土耳其、伊朗（Garage Hangover），不只西歐；起訖年份各源不一（1968 年 7 月出國，印尼文維基寫巡演到 1969 年 10 月，Groovie 寫 1969 至 1971 駐歐）。建議改為「1968 年起赴歐洲巡演，約三年後返國」。 | https://en.wikipedia.org/wiki/Dara_Puspita | 是 |
-| ar-c-010 | DEATH SIDE《Wasted Dream》 | 1989 年由 Selfish Records 發行，編號 BEL-12036，是 DEATH SIDE 目錄上最早的一張。 | 樂團的首張 EP《Satisfy the Instinct》1987 年已由 Selfish 發行（Maximum Rocknroll 稱其為該風格的奠基發行），比《Wasted Dream》早兩年；若簡介指「首張全長專輯」需另行查證，寫成「目錄上最早的一張」與 1987 年 EP 衝突。 | https://www.maximumrocknroll.com/band/death-side/ | 是 |
-| ar-c-011 | Herbert Grönemeyer《Mensch》 | 期間他的兄長與其妻在幾天之內相繼過世 | 英文維基《Herbert Grönemeyer》條寫「his brother Wilhelm and his wife Anna」，Anna 是演員 Anna Henkel，即 Grönemeyer 自己的妻子（同條稍早寫他在片場認識「his later wife, the actress Anna Henkel」）；德文《Mensch (Album)》條也寫 Wilhelm 與妻子 Anna Henkel。上線簡介的「兄長與其妻」讀成兄長的妻子，疑為誤讀，應改為「他的哥哥與妻子」。兩源同屬維基家族，我只開了英文與德文維基，建議店主在本機覆核一個非維基來源。 | https://en.wikipedia.org/wiki/Herbert_Gr%C3%B6nemeyer | 是 |
-| ar-c-011 | Hum《Downward Is Heavenward》 | Pitchfork 1999 年的九〇年代百大把它排在第 81 | 屬實（英文維基《Downward Is Heavenward》條：Pitchfork 1999 年 Top 100 Albums of the 1990s 第 81），但這是樂評媒體榜單名次，依本批特注不收；另 Ned Raggett 的評語是單一樂評人的形容。是否保留請店主裁示。 | https://en.wikipedia.org/wiki/Downward_Is_Heavenward | 是 |
-| ar-c-011 | Idoli《VIS Idoli》 | 這張賣了約 200000 張，是樂團銷量最高的一張 | 搜尋摘要（維基《Čokolada》專輯頁）稱 1983 年《Čokolada》『被視為南斯拉夫賣得最好的唱片之一』；若屬實，『VIS Idoli 是樂團銷量最高的一張』可能過頭。本層沒實讀該頁數字，只提醒店主在本機核對兩張的銷量出處，不確定就改成不比較。 | https://en.wikipedia.org/wiki/%C4%8Cokolada_(album) | 是 |
-| ar-c-011 | Jeff Buckley《Sketches for My Sweetheart the Drunk》 | 1997 年 5 月 29 日傍晚在密西西比河游泳時溺斃 | 英文維基寫的是 Wolf River，為密西西比河的支流；『在密西西比河』不精確，建議改為支流名稱或乾脆只寫年份 | https://en.wikipedia.org/wiki/Jeff_Buckley | 是 |
-| ar-c-011 | Khun Narin《Khun Narin's Electric Phin Band》 | 看到當地樂手上傳的演出影片後找上 Innovative Leisure，由廠牌出資飛往泰國 | 兩源（Newsweek、Bandcamp）都寫影片是在 Dangerous Minds 部落格流傳，Newsweek 並說樂隊本身網路曝光極少；『當地樂手上傳』與『由廠牌出資』查無來源，建議改成『網路上流傳的演出影片』 | https://www.newsweek.com/khun-narin-phin-sing-psychedelic-rock-band-discovered-remote-village-thailand-266649 | 是 |
-| ar-c-011 | Killswitch Engage《Alive or Just Breathing》 | 2001 年 11 月到 2002 年 2 月在麻州 Westfield 的 Zing Studios 錄音 | Loudwire 週年報導寫錄音期間是 2001 年 10 月到 2002 年 2 月；僅單源，建議店主對照維基專輯條目與專輯內頁後再決定是否改成「2001 年底到 2002 年 2 月」 | https://loudwire.com/killswitch-engage-alive-or-just-breathing-anniversary/ | 是 |
-| ar-c-011 | La Düsseldorf《La Düsseldorf》 | David Bowie 稱這個團是八〇年代的原聲帶 | 只有英文維基首段（與依它轉述的頁面）有這句；本層另開的 Electricity Club、Tiny Mix Tapes、維基 Klaus Dinger 頁都沒有，湊不到第二源。建議店主改寫成「被 Bowie 與 Eno 視為影響來源」或確認原始出處（維基該句的引用） | https://en.wikipedia.org/wiki/La_D%C3%BCsseldorf | 是 |
-| ar-c-011 | La Düsseldorf《La Düsseldorf》 | 他們後來用這張唱片的收益買下了自己的錄音室 | 本層讀到的來源（維基、Electricity Club、Tiny Mix Tapes）皆未提到，無法證實；建議店主確認原出處或刪除 | https://en.wikipedia.org/wiki/La_D%C3%BCsseldorf_(album) | 是 |
-| ar-c-012 | Lady Pank《Lady Pank》 | 這張黑膠也賣到百萬張、獲金唱片 | 團仍在活動；本批特注規定在世者／仍在活動團體的累計銷量不收，建議上線簡介日後改寫時拿掉銷量句。 | https://pl.wikipedia.org/wiki/Lady_Pank_(album) | 是 |
-| ar-c-012 | Linda Ronstadt《Simple Dreams》 | 一年內在美銷出逾三百五十萬張 | 事實本身與英文維基一致（不到一年在美國賣出逾 350 萬張），但依本批特注在世者累計銷量不收，建議日後改寫時拿掉。其餘（擠下已蟬聯 29 週的《Rumours》、自佔五週、兩首單曲同時進前五且為繼披頭四後首組、首位女歌手）經英文維基核對無誤。 | https://en.wikipedia.org/wiki/Simple_Dreams | 是 |
-| ar-c-012 | Litfiba《El diablo》 | 〈Il volo〉悼念樂團的鼓手，他因海洛因過量過世 | 依本批特注，成員死亡只收年份與公開層級、不收死因；建議日後改寫時拿掉死因。 | https://it.wikipedia.org/wiki/El_diablo_(album_Litfiba) | 是 |
-| ar-c-012 | Litfiba《El diablo》 | 約一年半內賣出四十萬張 | 團仍在活動；依本批特注在世者累計銷量不收，建議日後改寫時拿掉。 | https://it.wikipedia.org/wiki/El_diablo_(album_Litfiba) | 是 |
-| ar-c-012 | Mr.Children《Atomic Heart》 | 並獲第 36 屆日本唱片大賞最佳專輯獎 | 日本作曲家協會的第 36 回頁面，Atomic Heart 列在『ベストアルバム賞』，『最優秀アルバム賞』是桑田佳祐《孤独の太陽》；『最佳專輯獎』易被讀成最優秀專輯獎，建議改寫為『ベストアルバム賞（優秀作品獎之一）』。 | https://www.jacompa.or.jp/record/36.php | 是 |
+| ar-c-009 | Budka Suflera《Cień wielkiej góry》 | 樂隊 1969 年在 Lublin 成立 | 來源對成軍年份不一致：pl 維基與 ebilet 寫 1974 年，bibliotekapiosenki 寫 1973 年，en 維基首段兩種年份並陳（1969 是 Cugowski 早期同名前身團，1974 才是現行樂團成立）；建議改成不帶年份或寫「1970 年代前半」。 | https://pl.wikipedia.org/wiki/Budka_Suflera | 否 |
+| ar-c-010 | Dara Puspita《Jang Pertama》 | 1968 到 1971 年她們在西歐巡演三年 | 行程包含匈牙利（英文維基列出 West Germany、Hungary、England、France、Belgium、Netherlands、Spain）與土耳其、伊朗（Garage Hangover），不只西歐；起訖年份各源不一（1968 年 7 月出國，印尼文維基寫巡演到 1969 年 10 月，Groovie 寫 1969 至 1971 駐歐）。建議改為「1968 年起赴歐洲巡演，約三年後返國」。 | https://en.wikipedia.org/wiki/Dara_Puspita | 否 |
+| ar-c-010 | DEATH SIDE《Wasted Dream》 | 1989 年由 Selfish Records 發行，編號 BEL-12036，是 DEATH SIDE 目錄上最早的一張。 | 樂團的首張 EP《Satisfy the Instinct》1987 年已由 Selfish 發行（Maximum Rocknroll 稱其為該風格的奠基發行），比《Wasted Dream》早兩年；若簡介指「首張全長專輯」需另行查證，寫成「目錄上最早的一張」與 1987 年 EP 衝突。 | https://www.maximumrocknroll.com/band/death-side/ | 否 |
+| ar-c-011 | Herbert Grönemeyer《Mensch》 | 期間他的兄長與其妻在幾天之內相繼過世 | 英文維基《Herbert Grönemeyer》條寫「his brother Wilhelm and his wife Anna」，Anna 是演員 Anna Henkel，即 Grönemeyer 自己的妻子（同條稍早寫他在片場認識「his later wife, the actress Anna Henkel」）；德文《Mensch (Album)》條也寫 Wilhelm 與妻子 Anna Henkel。上線簡介的「兄長與其妻」讀成兄長的妻子，疑為誤讀，應改為「他的哥哥與妻子」。兩源同屬維基家族，我只開了英文與德文維基，建議店主在本機覆核一個非維基來源。 | https://en.wikipedia.org/wiki/Herbert_Gr%C3%B6nemeyer | 否 |
+| ar-c-011 | Hum《Downward Is Heavenward》 | Pitchfork 1999 年的九〇年代百大把它排在第 81 | 屬實（英文維基《Downward Is Heavenward》條：Pitchfork 1999 年 Top 100 Albums of the 1990s 第 81），但這是樂評媒體榜單名次，依本批特注不收；另 Ned Raggett 的評語是單一樂評人的形容。是否保留請店主裁示。 | https://en.wikipedia.org/wiki/Downward_Is_Heavenward | 否 |
+| ar-c-011 | Idoli《VIS Idoli》 | 這張賣了約 200000 張，是樂團銷量最高的一張 | 搜尋摘要（維基《Čokolada》專輯頁）稱 1983 年《Čokolada》『被視為南斯拉夫賣得最好的唱片之一』；若屬實，『VIS Idoli 是樂團銷量最高的一張』可能過頭。本層沒實讀該頁數字，只提醒店主在本機核對兩張的銷量出處，不確定就改成不比較。 | https://en.wikipedia.org/wiki/%C4%8Cokolada_(album) | 否 |
+| ar-c-011 | Jeff Buckley《Sketches for My Sweetheart the Drunk》 | 1997 年 5 月 29 日傍晚在密西西比河游泳時溺斃 | 英文維基寫的是 Wolf River，為密西西比河的支流；『在密西西比河』不精確，建議改為支流名稱或乾脆只寫年份 | https://en.wikipedia.org/wiki/Jeff_Buckley | 否 |
+| ar-c-011 | Khun Narin《Khun Narin's Electric Phin Band》 | 看到當地樂手上傳的演出影片後找上 Innovative Leisure，由廠牌出資飛往泰國 | 兩源（Newsweek、Bandcamp）都寫影片是在 Dangerous Minds 部落格流傳，Newsweek 並說樂隊本身網路曝光極少；『當地樂手上傳』與『由廠牌出資』查無來源，建議改成『網路上流傳的演出影片』 | https://www.newsweek.com/khun-narin-phin-sing-psychedelic-rock-band-discovered-remote-village-thailand-266649 | 否 |
+| ar-c-011 | Killswitch Engage《Alive or Just Breathing》 | 2001 年 11 月到 2002 年 2 月在麻州 Westfield 的 Zing Studios 錄音 | Loudwire 週年報導寫錄音期間是 2001 年 10 月到 2002 年 2 月；僅單源，建議店主對照維基專輯條目與專輯內頁後再決定是否改成「2001 年底到 2002 年 2 月」 | https://loudwire.com/killswitch-engage-alive-or-just-breathing-anniversary/ | 否 |
+| ar-c-011 | La Düsseldorf《La Düsseldorf》 | David Bowie 稱這個團是八〇年代的原聲帶 | 只有英文維基首段（與依它轉述的頁面）有這句；本層另開的 Electricity Club、Tiny Mix Tapes、維基 Klaus Dinger 頁都沒有，湊不到第二源。建議店主改寫成「被 Bowie 與 Eno 視為影響來源」或確認原始出處（維基該句的引用） | https://en.wikipedia.org/wiki/La_D%C3%BCsseldorf | 否 |
+| ar-c-011 | La Düsseldorf《La Düsseldorf》 | 他們後來用這張唱片的收益買下了自己的錄音室 | 本層讀到的來源（維基、Electricity Club、Tiny Mix Tapes）皆未提到，無法證實；建議店主確認原出處或刪除 | https://en.wikipedia.org/wiki/La_D%C3%BCsseldorf_(album) | 否 |
+| ar-c-012 | Lady Pank《Lady Pank》 | 這張黑膠也賣到百萬張、獲金唱片 | 團仍在活動；本批特注規定在世者／仍在活動團體的累計銷量不收，建議上線簡介日後改寫時拿掉銷量句。 | https://pl.wikipedia.org/wiki/Lady_Pank_(album) | 否 |
+| ar-c-012 | Linda Ronstadt《Simple Dreams》 | 一年內在美銷出逾三百五十萬張 | 事實本身與英文維基一致（不到一年在美國賣出逾 350 萬張），但依本批特注在世者累計銷量不收，建議日後改寫時拿掉。其餘（擠下已蟬聯 29 週的《Rumours》、自佔五週、兩首單曲同時進前五且為繼披頭四後首組、首位女歌手）經英文維基核對無誤。 | https://en.wikipedia.org/wiki/Simple_Dreams | 否 |
+| ar-c-012 | Litfiba《El diablo》 | 〈Il volo〉悼念樂團的鼓手，他因海洛因過量過世 | 依本批特注，成員死亡只收年份與公開層級、不收死因；建議日後改寫時拿掉死因。 | https://it.wikipedia.org/wiki/El_diablo_(album_Litfiba) | 否 |
+| ar-c-012 | Litfiba《El diablo》 | 約一年半內賣出四十萬張 | 團仍在活動；依本批特注在世者累計銷量不收，建議日後改寫時拿掉。 | https://it.wikipedia.org/wiki/El_diablo_(album_Litfiba) | 否 |
+| ar-c-012 | Mr.Children《Atomic Heart》 | 並獲第 36 屆日本唱片大賞最佳專輯獎 | 日本作曲家協會的第 36 回頁面，Atomic Heart 列在『ベストアルバム賞』，『最優秀アルバム賞』是桑田佳祐《孤独の太陽》；『最佳專輯獎』易被讀成最優秀專輯獎，建議改寫為『ベストアルバム賞（優秀作品獎之一）』。 | https://www.jacompa.or.jp/record/36.php | 否 |
 | ar-c-013 | Negasphere《Disadvantage》 | 鍵盤的基本軌由川崎馨在東京方南町的 Green Studio 錄下 | 日文維基與 Disk Union 的樂團頁把鍵盤手寫成「川崎薫」，上線簡介寫「川崎馨」。Discogs 製作名單可能用不同寫法，待店主對照原盤內頁確認。 | https://ja.wikipedia.org/wiki/Negasphere | 否 |
-| ar-c-013 | Perfect《Perfect》 | 首張只在波蘭境內發行，估計賣了超過一百萬張 | Polskie Radio 店頁稱首版約數十萬張；pl 維基估計超過一百萬張，兩源衝突；Perfect 仍在活動，銷量與認證類內容依規則本就不該寫（含 2013 年白金認證）。建議改掉銷量句。 | https://sklep.polskieradio.pl/pl/p/Perfect-Perfect-reedycja-winyl/1399 | 是 |
-| ar-c-013 | Radar《Trofee》 | 1985 這一年正好是三位團員在團區間的結束年，也是另外三位的起始年 | 這句的依據是 MusicBrainz 一家的成員起訖年；愛沙尼亞維基與 Jazzkaar 的年份與 MusicBrainz 有一年的落差（例：樂團存續 MB 為 1978 至 1988、愛沙尼亞維基為 1977 至 1987；首席吉他 Riho Lilje MB 1978 至 1982、愛沙尼亞維基 1977 至 1981），只有 Nevil Blumberg 1981 至 1985 兩邊一致。這種「剛好三進三出」的年份巧合建立在單一來源上，建議降級成較保守的寫法或刪句。 | https://et.wikipedia.org/wiki/Radar_(ansambel) | 是 |
+| ar-c-013 | Perfect《Perfect》 | 首張只在波蘭境內發行，估計賣了超過一百萬張 | Polskie Radio 店頁稱首版約數十萬張；pl 維基估計超過一百萬張，兩源衝突；Perfect 仍在活動，銷量與認證類內容依規則本就不該寫（含 2013 年白金認證）。建議改掉銷量句。 | https://sklep.polskieradio.pl/pl/p/Perfect-Perfect-reedycja-winyl/1399 | 否 |
+| ar-c-013 | Radar《Trofee》 | 1985 這一年正好是三位團員在團區間的結束年，也是另外三位的起始年 | 這句的依據是 MusicBrainz 一家的成員起訖年；愛沙尼亞維基與 Jazzkaar 的年份與 MusicBrainz 有一年的落差（例：樂團存續 MB 為 1978 至 1988、愛沙尼亞維基為 1977 至 1987；首席吉他 Riho Lilje MB 1978 至 1982、愛沙尼亞維基 1977 至 1981），只有 Nevil Blumberg 1981 至 1985 兩邊一致。這種「剛好三進三出」的年份巧合建立在單一來源上，建議降級成較保守的寫法或刪句。 | https://et.wikipedia.org/wiki/Radar_(ansambel) | 否 |
 | ar-c-013 | Radar《Baltic Coast》 | 到這一年（1987），1978 年那批原始成員只剩一位還在區間內 | 「1978 年那批原始成員」同樣建立在 MusicBrainz 的起始年上；愛沙尼亞維基把起點寫 1977 年，且團在 1987 年解散，Sergei Pedersen 與 Paap Kõlar 到 1987 兩源都在團。Pedersen 是原始成員這點成立，但「只剩一位」的說法取決於把 1978 還是 1977 當起點，可信度低於單源年份的寫法，建議改成「創團鍵盤手 Pedersen 還在團裡」這類可驗證的說法。 | https://et.wikipedia.org/wiki/Radar_(ansambel) | 否 |
-| ar-c-013 | Rare Earth《Ecology》 | Motown 為進軍白人搖滾市場設立新廠牌時還沒想好名字，樂團開玩笑提議就叫 Rare Earth——公司真的採用了 | 本層開頁的底特律歷史協會、Motown 博物館、Louder、Michigan Rock and Roll Legends 皆只說廠牌「以團名命名／為紀念這支樂團而設」，團名早於廠牌（1968 年已改名），沒有一源提到「還沒想好名字」與「開玩笑提議」；這段軼事無法兩源驗證，建議刪或改成「廠牌以團名命名」。 | https://www.detroithistorical.org/learn/online-research/encyclopedia-of-detroit/rare-earth | 是 |
-| ar-c-014 | Socrates Drank the Conium《Phos》 | 希臘文維基記它賣出超過二十萬張 | 各源數字不一：希臘文維基 20 萬以上，rocktime.gr 寫超過 30 萬，rockmachine 只說 70 年代希臘搖滾銷量最冠；原句已標明『希臘文維基記』，屬轉述無誤，但建議店主考慮改成『被稱為 1970 年代希臘搖滾銷量最高的一張』以免數字爭議。 | https://rocktime.gr/articles/socrates-drank-the-conium-o-ellenikos-rok-muthos-pou-xetrellane-to-sumpan | 是 |
-| ar-c-014 | Stray Cats《Built for Speed》 | 十二首取自英國時期的《Stray Cats》與《Gonna Ball》，再加一首未發表的同名曲 | 英文維基《Built for Speed》條目寫：六首取自《Stray Cats》（1981 年 2 月）、五首取自《Gonna Ball》（1981 年 11 月），再加同名曲，共 11 加 1 等於 12 首；簡介『十二首取自…再加一首』會變成 13 首，疑似算錯。建議本機核對實際曲目表，再改成『十一首取自…再加一首同名曲』或『共十二首』。 | https://en.wikipedia.org/wiki/Built_for_Speed_(Stray_Cats_album) | 是 |
-| ar-c-014 | Taj Mahal Travellers《August 1974》 | 一台廂型車從歐洲經中近東開到泰姬瑪哈陵，十一個月，沿路演奏 | Wire 小杉武久文章只說 1972 年 4 月在鹿特丹買福斯巴士、約一個月行經阿爾卑斯前往印度阿格拉；「十一個月」未在任何已開頁來源找到。建議店主核對原文或改成不寫長度（待核，非確定錯誤）。 | https://www.thewire.co.uk/in-writing/essays/p=14225 | 是 |
+| ar-c-013 | Rare Earth《Ecology》 | Motown 為進軍白人搖滾市場設立新廠牌時還沒想好名字，樂團開玩笑提議就叫 Rare Earth——公司真的採用了 | 本層開頁的底特律歷史協會、Motown 博物館、Louder、Michigan Rock and Roll Legends 皆只說廠牌「以團名命名／為紀念這支樂團而設」，團名早於廠牌（1968 年已改名），沒有一源提到「還沒想好名字」與「開玩笑提議」；這段軼事無法兩源驗證，建議刪或改成「廠牌以團名命名」。 | https://www.detroithistorical.org/learn/online-research/encyclopedia-of-detroit/rare-earth | 否 |
+| ar-c-014 | Socrates Drank the Conium《Phos》 | 希臘文維基記它賣出超過二十萬張 | 各源數字不一：希臘文維基 20 萬以上，rocktime.gr 寫超過 30 萬，rockmachine 只說 70 年代希臘搖滾銷量最冠；原句已標明『希臘文維基記』，屬轉述無誤，但建議店主考慮改成『被稱為 1970 年代希臘搖滾銷量最高的一張』以免數字爭議。 | https://rocktime.gr/articles/socrates-drank-the-conium-o-ellenikos-rok-muthos-pou-xetrellane-to-sumpan | 否 |
+| ar-c-014 | Stray Cats《Built for Speed》 | 十二首取自英國時期的《Stray Cats》與《Gonna Ball》，再加一首未發表的同名曲 | 英文維基《Built for Speed》條目寫：六首取自《Stray Cats》（1981 年 2 月）、五首取自《Gonna Ball》（1981 年 11 月），再加同名曲，共 11 加 1 等於 12 首；簡介『十二首取自…再加一首』會變成 13 首，疑似算錯。建議本機核對實際曲目表，再改成『十一首取自…再加一首同名曲』或『共十二首』。 | https://en.wikipedia.org/wiki/Built_for_Speed_(Stray_Cats_album) | 否 |
+| ar-c-014 | Taj Mahal Travellers《August 1974》 | 一台廂型車從歐洲經中近東開到泰姬瑪哈陵，十一個月，沿路演奏 | Wire 小杉武久文章只說 1972 年 4 月在鹿特丹買福斯巴士、約一個月行經阿爾卑斯前往印度阿格拉；「十一個月」未在任何已開頁來源找到。建議店主核對原文或改成不寫長度（待核，非確定錯誤）。 | https://www.thewire.co.uk/in-writing/essays/p=14225 | 否 |
 | ar-c-014 | The Ethiopians《Engine 54》 | 簡介寫「Leonard Dillon、Stephen Taylor 與 Aston Morrison 的三部和聲」 | 兩個獨立來源都寫成員名為 Aston Morris（非 Morrison）；建議以 Doctor Bird 原盤 credit 再核對後改為 Morris。 | https://bendbulletin.com/2011/10/03/reggae-pioneer-leonard-dillon-dies/ | 否 |
-| ar-c-015 | The Sensational Nightingales《The Best of the Sensational Nightingales》 | John Fogerty 寫〈Proud Mary〉時想召喚的男聲和聲，正是這一支。 | 英文維基原文是 Fogerty 想召喚的是男聲福音和聲，『以 Swan Silvertones、Sensational Nightingales、Five Blind Boys of Mississippi 這類團體為代表』，Nightingales 只是被舉例的幾支之一，不是『正是這一支』。建議改成『Fogerty 想召喚的那種男聲福音和聲，Nightingales 是代表之一』。 | https://en.wikipedia.org/wiki/Sensational_Nightingales | 是 |
+| ar-c-015 | The Sensational Nightingales《The Best of the Sensational Nightingales》 | John Fogerty 寫〈Proud Mary〉時想召喚的男聲和聲，正是這一支。 | 英文維基原文是 Fogerty 想召喚的是男聲福音和聲，『以 Swan Silvertones、Sensational Nightingales、Five Blind Boys of Mississippi 這類團體為代表』，Nightingales 只是被舉例的幾支之一，不是『正是這一支』。建議改成『Fogerty 想召喚的那種男聲福音和聲，Nightingales 是代表之一』。 | https://en.wikipedia.org/wiki/Sensational_Nightingales | 否 |
 | ar-c-015 | The Sensational Nightingales《The Best of the Sensational Nightingales》 | 四重唱 1942 年由 Dixie Hummingbirds 出身的 Barney Parks 組成，1946 年 Julius「June」Cheeks 加入。 | 英文維基與 Journal of Gospel Music 作 1942 年 Parks 創團，但 Malaco 官方傳記寫前身為費城 Lamplighters、1949 年改名 Nightingale Quartet、Cheeks 1950 年才加入，來源不一致，Cheeks 加入年建議改為『四〇年代後期』或不寫年份。 | https://malaco.com/artist/gospel/the-sensational-nightingales/ | 否 |
-| ar-c-015 | The Weather Station《Ignorance》 | 《紐約時報》Lindsay Zoladz 稱其為刺人的新作 | 簡介點出樂評姓名與媒體，違反『來源平台與樂評姓名不進正文』規則，建議改為不具名或刪除 | https://www.climateone.org/people/tamara-lindeman | 是 |
-| ar-c-015 | Tim Hardin《Tim Hardin 2》 | 全片僅 22 分 38 秒 | 『全片』不得用來指整張專輯（writer-base 文字節）；建議改為『整張專輯』或直接寫『22 分 38 秒』 | https://en.wikipedia.org/wiki/Tim_Hardin | 是 |
-| ar-c-015 | Tim Hardin《Tim Hardin 2》 | AllMusic 的 Richie Unterberger 認為它大概是 Hardin 最好的單張 | 點名來源平台與樂評姓名，違反『來源平台與樂評姓名不進正文』規則（writer-base）；建議改成不具名或刪除 | https://en.wikipedia.org/wiki/Tim_Hardin | 是 |
+| ar-c-015 | The Weather Station《Ignorance》 | 《紐約時報》Lindsay Zoladz 稱其為刺人的新作 | 簡介點出樂評姓名與媒體，違反『來源平台與樂評姓名不進正文』規則，建議改為不具名或刪除 | https://www.climateone.org/people/tamara-lindeman | 否 |
+| ar-c-015 | Tim Hardin《Tim Hardin 2》 | 全片僅 22 分 38 秒 | 『全片』不得用來指整張專輯（writer-base 文字節）；建議改為『整張專輯』或直接寫『22 分 38 秒』 | https://en.wikipedia.org/wiki/Tim_Hardin | 否 |
+| ar-c-015 | Tim Hardin《Tim Hardin 2》 | AllMusic 的 Richie Unterberger 認為它大概是 Hardin 最好的單張 | 點名來源平台與樂評姓名，違反『來源平台與樂評姓名不進正文』規則（writer-base）；建議改成不具名或刪除 | https://en.wikipedia.org/wiki/Tim_Hardin | 否 |
 | ar-c-015 | Ton Steine Scherben《Warum geht es mir so dreckig?》 | 上線簡介寫「A 面四首、B 面五首」 | 英文維基專輯條目寫 Side 1 五首、Side 2 四首（並說 A 面是 1971 年 6 月 Mariannenplatz 活動的實況、B 面是錄音室精選）；與上線簡介的軌數分配相反。條目為單源、原盤實際分面待店主核對；其餘 1971 年 6 月 Mariannenplatz 活動與自發佔屋的說法與維基一致。 | https://en.wikipedia.org/wiki/Warum_geht_es_mir_so_dreckig%3F | 否 |
-| ar-c-016 | 五條人《縣城記》 | 屬民謠大類，中國大陸多歸為「方言民謠」 | 店主用語規則（2026-09-29）：稱呼中國一律寫「中國」，不寫「中國大陸」；此句改成「在中國多歸為方言民謠」。 | https://zh.wikipedia.org/zh-tw/%E4%BA%94%E6%9D%A1%E4%BA%BA | 是 |
-| ar-c-016 | 五條人《夢幻麗莎髮廊》 | 屬民謠大類，中國大陸多歸為「方言民謠」 | 同上，用語規則：不寫「中國大陸」。 | https://zh.wikipedia.org/zh-tw/%E4%BA%94%E6%9D%A1%E4%BA%BA | 是 |
-| ar-c-016 | 唐朝樂隊《演義》 | 創隊貝斯手在 1995 年車禍身故 | 店主特注：成員死亡只收年份，不收死因；這句帶了死因，建議改成『創隊貝斯手 1995 年過世』。 | https://zh.wikipedia.org/wiki/%E5%94%90%E6%9C%9D%E4%B9%90%E9%98%9F | 是 |
-| ar-c-016 | 唐朝樂隊《演義》 | 五月十一日出事之後，同年七月由新人接任貝斯 | 日期寫成中文數字，違反『年月日一律用阿拉伯數字』；且五月十一日是死亡日期，與死因同屬案情細節，建議一併刪去，改寫為『同年 7 月由新人接任貝斯』。 | https://zh.wikipedia.org/wiki/%E5%94%90%E6%9C%9D%E4%B9%90%E9%98%9F | 是 |
+| ar-c-016 | 五條人《縣城記》 | 屬民謠大類，中國大陸多歸為「方言民謠」 | 店主用語規則（2026-09-29）：稱呼中國一律寫「中國」，不寫「中國大陸」；此句改成「在中國多歸為方言民謠」。 | https://zh.wikipedia.org/zh-tw/%E4%BA%94%E6%9D%A1%E4%BA%BA | 否 |
+| ar-c-016 | 五條人《夢幻麗莎髮廊》 | 屬民謠大類，中國大陸多歸為「方言民謠」 | 同上，用語規則：不寫「中國大陸」。 | https://zh.wikipedia.org/zh-tw/%E4%BA%94%E6%9D%A1%E4%BA%BA | 否 |
+| ar-c-016 | 唐朝樂隊《演義》 | 創隊貝斯手在 1995 年車禍身故 | 店主特注：成員死亡只收年份，不收死因；這句帶了死因，建議改成『創隊貝斯手 1995 年過世』。 | https://zh.wikipedia.org/wiki/%E5%94%90%E6%9C%9D%E4%B9%90%E9%98%9F | 否 |
+| ar-c-016 | 唐朝樂隊《演義》 | 五月十一日出事之後，同年七月由新人接任貝斯 | 日期寫成中文數字，違反『年月日一律用阿拉伯數字』；且五月十一日是死亡日期，與死因同屬案情細節，建議一併刪去，改寫為『同年 7 月由新人接任貝斯』。 | https://zh.wikipedia.org/wiki/%E5%94%90%E6%9C%9D%E4%B9%90%E9%98%9F | 否 |
 | ar-c-016 | 圖騰樂團《我在那邊唱》 | 二○○五年拿下貢寮國際海洋音樂祭大賞、二○○六年四月由彎的音樂發行首張 | 年份寫成中文數字（二○○五）；規則是年月日用阿拉伯數字。事實本身與維基、ltn 相符。 | https://zh.wikipedia.org/zh-tw/%E5%9C%96%E9%A8%B0%E6%A8%82%E5%9C%98 | 否 |
 | ar-c-016 | 圖騰樂團《放羊的孩子》 | 彎的音樂二○○九年九月發行、樂團二○○二年成軍 | 同樣是年份寫成中文數字（二○○九、二○○二）；二○○二年成軍與維基相符。 | https://zh.wikipedia.org/zh-tw/%E5%9C%96%E9%A8%B0%E6%A8%82%E5%9C%98 | 否 |
-| ar-c-017 | 陳珊妮《完美的呻吟》 | 末曲翻唱薛岳〈你在煩惱些什麼？親愛的〉並收進詩人夏宇的口白 | 中文維基寫的曲名是〈你在煩惱什麼呢？親愛的〉，與上線簡介〈你在煩惱些什麼？親愛的〉不同；實際曲名請對照曲目表，「末曲」一說維基未提 | https://zh.wikipedia.org/wiki/%E9%99%B3%E7%8F%8A%E5%A6%AE | 是 |
-| ar-c-017 | Alela Diane《The Pirate's Gospel》 | 歌寫於一趟歐洲旅行 | 英文維基如此寫，但 Raise the Stakes 專訪（藝人本人說法）指最早的歌寫於 2002 至 2003 年搬到舊金山之後、標題曲來自露營划船，兩說不一，建議改成不指明寫作地點，或對照原始專訪後再定 | https://raisethestakeseditions.com/alela-diane/ | 是 |
-| ar-c-017 | Barbara《Barbara chante Barbara》 | 是第一張全部由自己寫詞寫曲的唱片 | 法文維基專輯條目寫該張除兩首與外人合作的曲目外，其餘由她自己寫（單源，建議改為『幾乎全部』或『主要由自己創作』）。 | https://fr.wikipedia.org/wiki/Barbara_chante_Barbara | 是 |
-| ar-c-017 | Buffy Sainte-Marie《It's My Way!》 | 2023 年 CBC 調查認定她長年宣稱的原住民血統不實 | 把 CBC 的調查結論寫成定論；她本人回應說從未確定出生地、從未把公民身分當祕密，並已交還勳章。建議改成中性寫法：『2023 年 CBC 調查報導認為她出生於美國，2025 年她的 Order of Canada、Juno 與 Polaris 等加拿大榮譽因公民身分被撤銷或交還』。 | https://consequence.net/2025/03/buffy-sainte-maries-polaris-juno-prizes-revoked/ | 是 |
-| ar-c-017 | Buffy Sainte-Marie《Illuminations》 | Sainte-Marie 與製作人 Maynard Solomon 用 Buchla 合成器處理人聲 | Musicworks 寫 Buchla 的濾波、調變與閘控是 Juilliard 教師 Michael Czajkowski 操作；維基列製作人為 Maynard Solomon 與 Mark Roth。『他們用 Buchla 處理人聲』應補上 Czajkowski 或改寫為『人聲經 Buchla 處理』（Musicworks 單源）。 | https://www.musicworks.ca/profile/buffy-sainte-marie-reflects-illuminations | 是 |
-| ar-c-017 | C.O.B.《Spirit of Love》 | 1970 年 CBS 的 12 吋原盤 | klofmag 悼文與搜尋摘要（維基 Clive Palmer 條目）都把《Spirit of Love》記為 1971 年；卡池年份為 1970，建議店主核對原盤年份（Discogs）後同步卡單與簡介。 | https://klofmag.com/2014/12/tribute-to-clive-palmer/ | 是 |
-| ar-c-017 | Curly Ray Cline《Why Me, Ralph?》 | Ralph Stanley 在 Cline 的葬禮上這樣說他——他拉提琴的方式，有點像我彈五弦琴的方式 | 英文維基只寫 Stanley 曾這樣評論他（remarked），並未說是在葬禮上；『葬禮』場合本層找不到出處，建議改成『Ralph Stanley 評他』或查證出處 | https://en.wikipedia.org/wiki/Curly_Ray_Cline | 是 |
-| ar-c-017 | Ewa Demarczyk《Live》 | 這是她的第三張：1967 年首張之後，1975 年那張只在蘇聯發行。 | 英文維基寫 1972 年離團『兩年後』發行第二張並在蘇聯賣數百萬張（約 1974），pl 維基作品目錄寫 1975 年、只在蘇聯發行；年份與『只在蘇聯』兩源不一致，建議店主對 Melodiya 目錄確認再決定是否保留年份。 | https://en.wikipedia.org/wiki/Ewa_Demarczyk | 是 |
+| ar-c-017 | 陳珊妮《完美的呻吟》 | 末曲翻唱薛岳〈你在煩惱些什麼？親愛的〉並收進詩人夏宇的口白 | 中文維基寫的曲名是〈你在煩惱什麼呢？親愛的〉，與上線簡介〈你在煩惱些什麼？親愛的〉不同；實際曲名請對照曲目表，「末曲」一說維基未提 | https://zh.wikipedia.org/wiki/%E9%99%B3%E7%8F%8A%E5%A6%AE | 否 |
+| ar-c-017 | Alela Diane《The Pirate's Gospel》 | 歌寫於一趟歐洲旅行 | 英文維基如此寫，但 Raise the Stakes 專訪（藝人本人說法）指最早的歌寫於 2002 至 2003 年搬到舊金山之後、標題曲來自露營划船，兩說不一，建議改成不指明寫作地點，或對照原始專訪後再定 | https://raisethestakeseditions.com/alela-diane/ | 否 |
+| ar-c-017 | Barbara《Barbara chante Barbara》 | 是第一張全部由自己寫詞寫曲的唱片 | 法文維基專輯條目寫該張除兩首與外人合作的曲目外，其餘由她自己寫（單源，建議改為『幾乎全部』或『主要由自己創作』）。 | https://fr.wikipedia.org/wiki/Barbara_chante_Barbara | 否 |
+| ar-c-017 | Buffy Sainte-Marie《It's My Way!》 | 2023 年 CBC 調查認定她長年宣稱的原住民血統不實 | 把 CBC 的調查結論寫成定論；她本人回應說從未確定出生地、從未把公民身分當祕密，並已交還勳章。建議改成中性寫法：『2023 年 CBC 調查報導認為她出生於美國，2025 年她的 Order of Canada、Juno 與 Polaris 等加拿大榮譽因公民身分被撤銷或交還』。 | https://consequence.net/2025/03/buffy-sainte-maries-polaris-juno-prizes-revoked/ | 否 |
+| ar-c-017 | Buffy Sainte-Marie《Illuminations》 | Sainte-Marie 與製作人 Maynard Solomon 用 Buchla 合成器處理人聲 | Musicworks 寫 Buchla 的濾波、調變與閘控是 Juilliard 教師 Michael Czajkowski 操作；維基列製作人為 Maynard Solomon 與 Mark Roth。『他們用 Buchla 處理人聲』應補上 Czajkowski 或改寫為『人聲經 Buchla 處理』（Musicworks 單源）。 | https://www.musicworks.ca/profile/buffy-sainte-marie-reflects-illuminations | 否 |
+| ar-c-017 | C.O.B.《Spirit of Love》 | 1970 年 CBS 的 12 吋原盤 | klofmag 悼文與搜尋摘要（維基 Clive Palmer 條目）都把《Spirit of Love》記為 1971 年；卡池年份為 1970，建議店主核對原盤年份（Discogs）後同步卡單與簡介。 | https://klofmag.com/2014/12/tribute-to-clive-palmer/ | 否 |
+| ar-c-017 | Curly Ray Cline《Why Me, Ralph?》 | Ralph Stanley 在 Cline 的葬禮上這樣說他——他拉提琴的方式，有點像我彈五弦琴的方式 | 英文維基只寫 Stanley 曾這樣評論他（remarked），並未說是在葬禮上；『葬禮』場合本層找不到出處，建議改成『Ralph Stanley 評他』或查證出處 | https://en.wikipedia.org/wiki/Curly_Ray_Cline | 否 |
+| ar-c-017 | Ewa Demarczyk《Live》 | 這是她的第三張：1967 年首張之後，1975 年那張只在蘇聯發行。 | 英文維基寫 1972 年離團『兩年後』發行第二張並在蘇聯賣數百萬張（約 1974），pl 維基作品目錄寫 1975 年、只在蘇聯發行；年份與『只在蘇聯』兩源不一致，建議店主對 Melodiya 目錄確認再決定是否保留年份。 | https://en.wikipedia.org/wiki/Ewa_Demarczyk | 否 |
 | ar-c-017 | Ewa Demarczyk《Ewa Demarczyk śpiewa piosenki Zygmunta Koniecznego》 | 「波蘭歌曲的黑天使」這個稱號，是一位主持人 Lucjan Kydryński 給的。 | dzieje.pl 與 encyklopediateatru 都把『Czarny Anioł』說成源自她全身黑衣的舞台形象，沒有提到由哪位主持人命名；兩種說法未必矛盾，但命名者一節本層查不到兩源，建議店主複核。 | https://dzieje.pl/kultura-i-sztuka/nie-zyje-ewa-demarczyk-czarny-aniol-polskiej-piosenki | 否 |
-| ar-c-018 | Iwan Fals《Sarjana Muda》 | 收在 1981 年 9 月 3 日由 Musica Studio's 發行的這張個人出道專輯裡 | 英文維基《Sarjana Muda》只寫 1981 年發行、沒有月日；9 月 3 日同時是歌手生日與《Opini》（1982 年）的發行日，疑為誤植。建議改寫成「1981 年」。 | https://en.wikipedia.org/wiki/Sarjana_Muda | 是 |
-| ar-c-018 | Jack Rose《Luck in the Valley》 | 1999 年前後才專攻原音 | NPR Illinois 說他約 30 歲（約 2001 年）賣掉電吉他專心彈原音指彈；Bandcamp Daily 說 2000 年代初苦練後才轉向獨奏。1999 年沒有來源支持，建議改成「2000 年代初前後」。 | https://www.nprillinois.org/2010-02-19/remembering-dr-ragtime-guitarist-jack-rose | 是 |
-| ar-c-018 | Jan Dukes de Grey《Sorcerers》 | 1969 年 Decca 的 12 吋原盤 | 維基條目寫《Sorcerers》1969 年 10 月錄完、1970 年 1 月發行（1969 年是與 Decca 簽約與錄音年）；發行年有兩說，建議改寫成「1969 年錄音、Decca 發行」之類不點明發行年的說法。 | https://en.wikipedia.org/wiki/Jan_Dukes_de_Grey | 是 |
-| ar-c-018 | Jim Sullivan《Jim Sullivan》 | 車上留著一箱他沒賣掉的唱片。那一箱正是這張 1972 年的同名專輯 | 來源對車上唱片的描述不一：Ultimate Classic Rock 寫「Playboy 發行的 LP」、LARB 寫「一箱 Playboy 唱片」，另有搜尋摘要寫「兩張專輯各一箱」；沒有來源明指「正是這張同名專輯」。建議改成「一箱唱片」或「他自己的唱片」。 | https://ultimateclassicrock.com/missing-ufo-singer-songwriter/ | 是 |
-| ar-c-018 | Malicorne《Almanach》 | 銷量逾五十萬張，拿下金唱片與法國唱片學院大獎 | 來源互相矛盾：法文維基記 1977 年 11 月達雙金唱片（10 萬張），French Music 電子報寫 50 萬張；獎項部分，法文維基與搜尋摘要寫的是 Académie Charles Cros 的 Grand Prix du disque（另有摘要稱 Académie du disque français 亦有大獎），與簡介的「法國唱片學院」是否同一機構未能第二源確認。建議刪去銷量數字，獎項改查 Académie Charles Cros 官方得獎名單後再寫。 | https://fr.wikipedia.org/wiki/Malicorne_(groupe) | 是 |
-| ar-c-018 | Marissa Nadler《Songs III: Bird on the Water》 | 獲二〇〇七年 PLUG 獎最佳 Americana 專輯提名 | 維基 Songs III 條目的搜尋摘要寫該專輯入圍 2008 年 PLUG Independent Music Awards 的 Best Female Artist 與 Best Americana Record 兩項；PLUG 頒獎年與簡介的 2007 年可能對不上，且入圍不只一項。僅見搜尋摘要、未開頁，待店主本機核對。 | https://en.wikipedia.org/wiki/Songs_III:_Bird_on_the_Water | 是 |
-| ar-c-018 | Marlon Williams《Marlon Williams》 | 2016 年 2 月才透過 Caroline Australia 推向國際 | 英文維基人物條目寫 2015 年 9 月簽下美國獨立廠牌 Dead Oceans，2016 年 2 月 2 日由 Dead Oceans 在全球發行；簡介的廠牌寫法與此不同，本層未能用第二源判定，建議店主對照專輯條目與廠牌頁後再決定是否改。 | https://en.wikipedia.org/wiki/Marlon_Williams_(New_Zealand_musician) | 是 |
+| ar-c-018 | Iwan Fals《Sarjana Muda》 | 收在 1981 年 9 月 3 日由 Musica Studio's 發行的這張個人出道專輯裡 | 英文維基《Sarjana Muda》只寫 1981 年發行、沒有月日；9 月 3 日同時是歌手生日與《Opini》（1982 年）的發行日，疑為誤植。建議改寫成「1981 年」。 | https://en.wikipedia.org/wiki/Sarjana_Muda | 否 |
+| ar-c-018 | Jack Rose《Luck in the Valley》 | 1999 年前後才專攻原音 | NPR Illinois 說他約 30 歲（約 2001 年）賣掉電吉他專心彈原音指彈；Bandcamp Daily 說 2000 年代初苦練後才轉向獨奏。1999 年沒有來源支持，建議改成「2000 年代初前後」。 | https://www.nprillinois.org/2010-02-19/remembering-dr-ragtime-guitarist-jack-rose | 否 |
+| ar-c-018 | Jan Dukes de Grey《Sorcerers》 | 1969 年 Decca 的 12 吋原盤 | 維基條目寫《Sorcerers》1969 年 10 月錄完、1970 年 1 月發行（1969 年是與 Decca 簽約與錄音年）；發行年有兩說，建議改寫成「1969 年錄音、Decca 發行」之類不點明發行年的說法。 | https://en.wikipedia.org/wiki/Jan_Dukes_de_Grey | 否 |
+| ar-c-018 | Jim Sullivan《Jim Sullivan》 | 車上留著一箱他沒賣掉的唱片。那一箱正是這張 1972 年的同名專輯 | 來源對車上唱片的描述不一：Ultimate Classic Rock 寫「Playboy 發行的 LP」、LARB 寫「一箱 Playboy 唱片」，另有搜尋摘要寫「兩張專輯各一箱」；沒有來源明指「正是這張同名專輯」。建議改成「一箱唱片」或「他自己的唱片」。 | https://ultimateclassicrock.com/missing-ufo-singer-songwriter/ | 否 |
+| ar-c-018 | Malicorne《Almanach》 | 銷量逾五十萬張，拿下金唱片與法國唱片學院大獎 | 來源互相矛盾：法文維基記 1977 年 11 月達雙金唱片（10 萬張），French Music 電子報寫 50 萬張；獎項部分，法文維基與搜尋摘要寫的是 Académie Charles Cros 的 Grand Prix du disque（另有摘要稱 Académie du disque français 亦有大獎），與簡介的「法國唱片學院」是否同一機構未能第二源確認。建議刪去銷量數字，獎項改查 Académie Charles Cros 官方得獎名單後再寫。 | https://fr.wikipedia.org/wiki/Malicorne_(groupe) | 否 |
+| ar-c-018 | Marissa Nadler《Songs III: Bird on the Water》 | 獲二〇〇七年 PLUG 獎最佳 Americana 專輯提名 | 維基 Songs III 條目的搜尋摘要寫該專輯入圍 2008 年 PLUG Independent Music Awards 的 Best Female Artist 與 Best Americana Record 兩項；PLUG 頒獎年與簡介的 2007 年可能對不上，且入圍不只一項。僅見搜尋摘要、未開頁，待店主本機核對。 | https://en.wikipedia.org/wiki/Songs_III:_Bird_on_the_Water | 否 |
+| ar-c-018 | Marlon Williams《Marlon Williams》 | 2016 年 2 月才透過 Caroline Australia 推向國際 | 英文維基人物條目寫 2015 年 9 月簽下美國獨立廠牌 Dead Oceans，2016 年 2 月 2 日由 Dead Oceans 在全球發行；簡介的廠牌寫法與此不同，本層未能用第二源判定，建議店主對照專輯條目與廠牌頁後再決定是否改。 | https://en.wikipedia.org/wiki/Marlon_Williams_(New_Zealand_musician) | 否 |
 | ar-c-018 | Martin Carthy & Dave Swarbrick《But Two Came By》 | 搭檔的提琴手生於 Surrey 的 Stoneleigh | 維基寫 Stoneleigh，Exclaim! 訃聞寫 New Malden，兩源不一致，簡介若要保守可只寫 Surrey 或不寫出生地。 | https://exclaim.ca/music/article/fairport_convention_fiddler_dave_swarbrick_dies_at_75 | 否 |
-| ar-c-018 | Nadia Reid《Preservation》 | 十四歲開始彈吉他 | 維基寫 14 歲，AudioCulture 與 North & South 都寫 15 歲左右；來源不一致，建議簡介改寫成「十幾歲」或不寫年紀。 | https://www.audioculture.co.nz/profile/nadia-reid | 是 |
-| ar-c-018 | Nadia Reid《Preservation》 | 2015 年以群眾募資完成首作起步 | 維基與 North & South 都寫首張《Listen to Formation, Look for the Signs》2014 年發行；簡介寫 2015 年，群眾募資一事本層沒有查到來源，建議核對。 | https://northandsouth.co.nz/2025/05/06/first-in-folk/ | 是 |
-| ar-c-018 | Taraf de Haïdouks《Dumbala Dumba》 | 比利時人 Stéphane Karo 與 Michel Winter 自 1980 年代末把他們帶進西歐 | Nonesuch 官方頁寫兩人 1990 年赴羅馬尼亞時發現樂團，Chicago Reader 寫樂團 1990 年代初組成；『1980 年代末』找不到來源支持，建議改為『1990 年代初』或『1990 年起』。 | https://www.nonesuch.com/artists/taraf-de-haidouks | 是 |
+| ar-c-018 | Nadia Reid《Preservation》 | 十四歲開始彈吉他 | 維基寫 14 歲，AudioCulture 與 North & South 都寫 15 歲左右；來源不一致，建議簡介改寫成「十幾歲」或不寫年紀。 | https://www.audioculture.co.nz/profile/nadia-reid | 否 |
+| ar-c-018 | Nadia Reid《Preservation》 | 2015 年以群眾募資完成首作起步 | 維基與 North & South 都寫首張《Listen to Formation, Look for the Signs》2014 年發行；簡介寫 2015 年，群眾募資一事本層沒有查到來源，建議核對。 | https://northandsouth.co.nz/2025/05/06/first-in-folk/ | 否 |
+| ar-c-018 | Taraf de Haïdouks《Dumbala Dumba》 | 比利時人 Stéphane Karo 與 Michel Winter 自 1980 年代末把他們帶進西歐 | Nonesuch 官方頁寫兩人 1990 年赴羅馬尼亞時發現樂團，Chicago Reader 寫樂團 1990 年代初組成；『1980 年代末』找不到來源支持，建議改為『1990 年代初』或『1990 年起』。 | https://www.nonesuch.com/artists/taraf-de-haidouks | 否 |
 | ar-c-019 | Terry Allen《Lubbock (On Everything)》 | Lloyd Maines「後來製作了 Wilco」 | 英文維基 Lloyd Maines 條目只寫他參與（鋼棒吉他）Wilco 首作《A.M.》等 alt-country 錄音；製作名單裡有 Uncle Tupelo、Chicks、Richard Buckner、Robert Earl Keen 等，沒有 Wilco。『製作了 Wilco』無據，建議改成『後來製作過 Uncle Tupelo、The Chicks 等』或『參與 Wilco 首作』。 | https://en.wikipedia.org/wiki/Lloyd_Maines | 否 |
-| ar-c-019 | The Jayhawks《Hollywood Town Hall》 | 1992 年 9 月由 American 發行 | 維基寫 1992 年發行時廠牌是 Def American（Rick Rubin 的廠牌，後來改名 American Recordings，約 1993 年），上線簡介寫『American』可能是用了日後的名稱；建議寫 Def American 或『American（原名 Def American）』。證據強度中，建議店主核對發行頁。 | https://en.wikipedia.org/wiki/The_Jayhawks | 是 |
-| ar-c-019 | Tír na nÓg《Tír na nÓg》 | 1969 年在都柏林組成 | Irish Rock 與 journalofmusic 都寫成軍約 1969 年底或 1970 年初（journalofmusic 寫 1970 年初）；維基寫 1969 年。來源互相不一致，非明確錯誤，建議店主視情況改為『約 1969–70 年』。 | https://www.irishrock.org/irodb/bands/tirnanog.html | 是 |
-| ar-c-019 | Zach Bryan《American Heartbreak》 | 首週締造 7.1 萬張專輯等效單位，是 2022 年鄉村專輯最佳首週成績 | 維基《American Heartbreak》只記首週 71,500 單位、Billboard 200 第 5、鄉村專輯榜冠軍，以及「當日 Spotify 與 Apple Music 鄉村專輯串流最高」；查不到「2022 年鄉村專輯最佳首週」的來源，建議改成只寫單位數與榜位，或補來源。 | https://en.wikipedia.org/wiki/American_Heartbreak | 是 |
-| ar-c-019 | Владимир Высоцкий《Баллады и песни》 | 他生前在蘇聯只拿到過一張 12 吋長片，其餘全是 7 吋的小碟 | 1976 年 Мелодия 發行了二張 12 吋的《Алиса в Стране чудес》，歌曲全由他作詞作曲、他並演唱數個角色（俄文維基稱這是他第一次以作者身分在國家出版唱片上合法露面）。「只拿到過一張 12 吋長片」不成立；可改成「生前在蘇聯境內合法發行的 12 吋唱片極少」之類說法，或指明 1978 年這張是以他個人名義的長片。 | https://ru.wikipedia.org/wiki/%D0%90%D0%BB%D0%B8%D1%81%D0%B0_%D0%B2_%D0%A1%D1%82%D1%80%D0%B0%D0%BD%D0%B5_%D1%87%D1%83%D0%B4%D0%B5%D1%81_(%D1%80%D0%B0%D0%B4%D0%B8%D0%BE%D0%BF%D1%8C%D0%B5%D1%81%D0%B0,_1976) | 是 |
-| ar-c-019 | 한대수《멀고 먼-길》 | 一九六八年帶著長髮和吉他回首爾，在세시봉唱自作曲 | 韓文維基與英文維基都記 1968 年回國、1969 年才在세시봉出道並辦남산드라마센터演出；簡介把세시봉演唱放在 1968 年，似乎提早一年。其餘（신세계레코드簽約金、錄音班底、八小時錄完）本層未查到來源，未覆核。 | https://ko.wikipedia.org/wiki/%ED%95%9C%EB%8C%80%EC%88%98_(%EA%B0%80%EC%88%98) | 是 |
+| ar-c-019 | The Jayhawks《Hollywood Town Hall》 | 1992 年 9 月由 American 發行 | 維基寫 1992 年發行時廠牌是 Def American（Rick Rubin 的廠牌，後來改名 American Recordings，約 1993 年），上線簡介寫『American』可能是用了日後的名稱；建議寫 Def American 或『American（原名 Def American）』。證據強度中，建議店主核對發行頁。 | https://en.wikipedia.org/wiki/The_Jayhawks | 否 |
+| ar-c-019 | Tír na nÓg《Tír na nÓg》 | 1969 年在都柏林組成 | Irish Rock 與 journalofmusic 都寫成軍約 1969 年底或 1970 年初（journalofmusic 寫 1970 年初）；維基寫 1969 年。來源互相不一致，非明確錯誤，建議店主視情況改為『約 1969–70 年』。 | https://www.irishrock.org/irodb/bands/tirnanog.html | 否 |
+| ar-c-019 | Zach Bryan《American Heartbreak》 | 首週締造 7.1 萬張專輯等效單位，是 2022 年鄉村專輯最佳首週成績 | 維基《American Heartbreak》只記首週 71,500 單位、Billboard 200 第 5、鄉村專輯榜冠軍，以及「當日 Spotify 與 Apple Music 鄉村專輯串流最高」；查不到「2022 年鄉村專輯最佳首週」的來源，建議改成只寫單位數與榜位，或補來源。 | https://en.wikipedia.org/wiki/American_Heartbreak | 否 |
+| ar-c-019 | Владимир Высоцкий《Баллады и песни》 | 他生前在蘇聯只拿到過一張 12 吋長片，其餘全是 7 吋的小碟 | 1976 年 Мелодия 發行了二張 12 吋的《Алиса в Стране чудес》，歌曲全由他作詞作曲、他並演唱數個角色（俄文維基稱這是他第一次以作者身分在國家出版唱片上合法露面）。「只拿到過一張 12 吋長片」不成立；可改成「生前在蘇聯境內合法發行的 12 吋唱片極少」之類說法，或指明 1978 年這張是以他個人名義的長片。 | https://ru.wikipedia.org/wiki/%D0%90%D0%BB%D0%B8%D1%81%D0%B0_%D0%B2_%D0%A1%D1%82%D1%80%D0%B0%D0%BD%D0%B5_%D1%87%D1%83%D0%B4%D0%B5%D1%81_(%D1%80%D0%B0%D0%B4%D0%B8%D0%BE%D0%BF%D1%8C%D0%B5%D1%81%D0%B0,_1976) | 否 |
+| ar-c-019 | 한대수《멀고 먼-길》 | 一九六八年帶著長髮和吉他回首爾，在세시봉唱自作曲 | 韓文維基與英文維基都記 1968 年回國、1969 年才在세시봉出道並辦남산드라마센터演出；簡介把세시봉演唱放在 1968 年，似乎提早一年。其餘（신세계레코드簽約金、錄音班底、八小時錄完）本層未查到來源，未覆核。 | https://ko.wikipedia.org/wiki/%ED%95%9C%EB%8C%80%EC%88%98_(%EA%B0%80%EC%88%98) | 否 |
 | ar-c-019 | かぐや姫《かぐや姫さあど》 | 〈神田川〉最後賣出一百二十萬張以上 | 英文與日文維基首段皆寫 160 萬張；「120 萬以上」不算錯但偏保守，可考慮改成維基首段的約 160 萬張或加註各紀錄不一。 | https://en.wikipedia.org/wiki/Kaguyahime_(band) | 否 |
-| ar-c-019 | 好樂團《在遊蕩的路上學會寬容》 | 成團七年才交出第一張專輯，而且是先向歌迷募到錢才錄的 | 本層讀到的 VERSE、中央社、美麗佳人、維基皆未提及募資；『先募資才錄』無法核實，建議店主回頭確認該簡介的募資出處，找不到就改寫。 | https://www.cna.com.tw/news/amov/202212110123.aspx | 是 |
-| ar-c-019 | 小河《飛的高的鳥不落在跑不快的牛的背上》 | 屬民謠大類，中國大陸慣稱「實驗民謠」（experimental folk） | 違反用語房規（2026-09-29 店主裁定）：稱呼中國一律寫「中國」，不寫「中國大陸」；此句另屬自行補充的類別說明，本層所讀來源（界面新聞、澎湃、Bandcamp Daily）沒有一處稱「實驗民謠」是中國慣稱，建議整句改寫或刪除。 | https://www.jiemian.com/article/8926943.html | 是 |
+| ar-c-019 | 好樂團《在遊蕩的路上學會寬容》 | 成團七年才交出第一張專輯，而且是先向歌迷募到錢才錄的 | 本層讀到的 VERSE、中央社、美麗佳人、維基皆未提及募資；『先募資才錄』無法核實，建議店主回頭確認該簡介的募資出處，找不到就改寫。 | https://www.cna.com.tw/news/amov/202212110123.aspx | 否 |
+| ar-c-019 | 小河《飛的高的鳥不落在跑不快的牛的背上》 | 屬民謠大類，中國大陸慣稱「實驗民謠」（experimental folk） | 違反用語房規（2026-09-29 店主裁定）：稱呼中國一律寫「中國」，不寫「中國大陸」；此句另屬自行補充的類別說明，本層所讀來源（界面新聞、澎湃、Bandcamp Daily）沒有一處稱「實驗民謠」是中國慣稱，建議整句改寫或刪除。 | https://www.jiemian.com/article/8926943.html | 否 |
 | ar-c-019 | 李志《被禁忌的遊戲》 | 作品在中國大陸串流平台陸續下架；中國大陸慣稱「獨立民謠」 | 用語不符 2026-09-29 店主裁定：稱中國一律寫「中國」，不寫「中國大陸」。 | https://zh.wikipedia.org/wiki/%E6%9D%8E%E5%BF%97 | 否 |
-| ar-c-019 | 遠藤賢司《満足できるかな》 | 〈カレーライス〉先在此作出現，1972 年另錄的單曲版賣出十萬張 | 待核：日文維基寫〈カレーライス〉1972 年「シングルカット」並達 10 万枚；「シングルカット」通常指從專輯曲目切成單曲，與上線簡介的「另錄的單曲版」可能不符，本位未能另開一手資料確認。 | https://ja.wikipedia.org/wiki/%E9%81%A0%E8%97%A4%E8%B3%A2%E5%8F%B8 | 是 |
+| ar-c-019 | 遠藤賢司《満足できるかな》 | 〈カレーライス〉先在此作出現，1972 年另錄的單曲版賣出十萬張 | 待核：日文維基寫〈カレーライス〉1972 年「シングルカット」並達 10 万枚；「シングルカット」通常指從專輯曲目切成單曲，與上線簡介的「另錄的單曲版」可能不符，本位未能另開一手資料確認。 | https://ja.wikipedia.org/wiki/%E9%81%A0%E8%97%A4%E8%B3%A2%E5%8F%B8 | 否 |
 | ar-c-020 | 陳建年《大地》 | 2000 年得獎，同年自願調往蘭嶼服勤 | 調往蘭嶼的年份兩源不一致：中文維基寫 2000 年 9 月，中央社（開箱老照片）寫 2001 年 2 月 20 日自願請調；「同年」不確定，建議改寫成「得獎後自願調往蘭嶼」。 | https://www.cna.com.tw/news/ahel/202502195002.aspx | 否 |
-| ar-c-020 | 齊豫《橄欖樹》 | 〈橄欖樹〉因「我的故鄉在遠方」一句被當局列為禁歌 | 中央社（李泰祥逝世 10 周年）與 Yam（禁唱八年）都說，新聞局把歌裡的「流浪」解讀為流浪海外而列禁歌，齊豫自己的說法也是「流浪」，兩篇都沒提「我的故鄉在遠方」這一句；建議改成「歌中的『流浪』被解讀為流浪海外」。 | https://n.yam.com/Article/20140103027966 | 是 |
+| ar-c-020 | 齊豫《橄欖樹》 | 〈橄欖樹〉因「我的故鄉在遠方」一句被當局列為禁歌 | 中央社（李泰祥逝世 10 周年）與 Yam（禁唱八年）都說，新聞局把歌裡的「流浪」解讀為流浪海外而列禁歌，齊豫自己的說法也是「流浪」，兩篇都沒提「我的故鄉在遠方」這一句；建議改成「歌中的『流浪』被解讀為流浪海外」。 | https://n.yam.com/Article/20140103027966 | 否 |
 | ar-c-020 | 齊豫《橄欖樹》 | 齊豫並以〈歡顏〉拿下金馬獎最佳電影插曲 | 台大圖書館頁與金曲獎官方簡介只寫〈歡顏〉獲第 16 屆金馬獎最佳電影插曲／齊豫個人成就含電影金馬獎音樂獎項，沒說獎頒給誰；是否「齊豫拿下」本位未能查證，建議改成「〈歡顏〉獲第 16 屆金馬獎最佳電影插曲」。 | https://focus.lib.ntu.edu.tw/?q=zh-hant%2F%E5%8F%B0%E7%81%A3%E6%A0%A1%E5%9C%92%E6%B0%91%E6%AD%8C%2F%E5%A4%A9%E7%B1%9F%E4%B9%8B%E9%9F%B3-%E9%BD%8A%E8%B1%AB | 否 |
-| ar-c-021 | 潘迪華《The Exciting Rebecca Pan 我的心．潘迪華》 | 第十軌〈Bengawan Solo〉錄的時候她三十三歲 | 低優先：英文維基寫她 18 歲時錄，中英維基的生年又差一年（1930／1931），年齡說法不一；專輯為 1963 年，推算約 32 或 33 歲。建議確認錄音日期，或淡化成「三十出頭」。 | https://en.wikipedia.org/wiki/Bengawan_Solo_(song) | 是 |
-| ar-c-021 | 藤井風《HELP EVER HURT NEVER》 | 日本唱片協會白金 | 英文維基 Fujii Kaze 條目導言寫該專輯 certified gold in Japan，與簡介的白金不一致，需查日本唱片協會認證資料庫後再改（待核，未確認哪邊錯） | https://en.wikipedia.org/wiki/Fujii_Kaze | 是 |
-| ar-c-021 | 陳百強《偏偏喜歡你》 | 陳百強自任監製的第六張粵語大碟 | 英文維基寫前五張由譚國基監製、第六張《傾訴》起陳百強自己監製並與下一張《偏偏喜歡你》達五白金，與簡介「《偏偏喜歡你》是第六張」不一致；序數待核（未確認哪邊錯） | https://en.wikipedia.org/wiki/Danny_Chan | 是 |
-| ar-c-021 | 陳芬蘭《親愛的母親》 | 她 8 歲就以〈孤女的願望〉一曲成名 | 中文維基寫 8 歲、中央社寫 9 歲、風傳媒寫 11 歲，來源不一；年齡待核，建議改成不寫年齡 | https://www.cna.com.tw/news/ahel/202402205002.aspx | 是 |
-| ar-c-021 | 黃鶯鶯《雪在燒》 | 一九八七年八月二十七日、黃鶯鶯生日當天由飛碟唱片推出 | 中文維基寫 8 月 29 日生日當天發行，英文維基與 wikidata 生日也是 8 月 29 日，簡介的「二十七日」可能寫錯（發行日第二源未找到，建議改成「八月、她生日當天」或核對後改 29 日） | https://zh.wikipedia.org/zh-tw/%E9%BB%83%E9%B6%AF%E9%B6%AF | 是 |
-| ar-c-021 | Ana Moura《Leva-me aos fados》 | 同年她獲 Amália 獎最佳藝人 | 英文維基寫 2008 年她獲 Prémio Amália 最佳演出者（Melhor Intérprete），Museu do Fado 寫是《Para Além da Saudade》獲 Amália Rodrigues 獎；簡介把獎項放在 2009 年並寫成「最佳藝人」，年份與類別對不上（待核） | https://en.wikipedia.org/wiki/Ana_Moura | 是 |
-| ar-c-022 | Chavela Vargas《La Llorona》 | 2003 年在 Pedro Almodóvar 的推動下以 83 歲之齡首度登上卡內基音樂廳 | 她 1919 年 4 月 17 日生（英文維基、wikidata），2003 年 9 月登台應為 84 歲；Mexico News Daily 也寫 83 歲，兩者互相呼應但與生年不合；『首度』與『Almodóvar 推動』我未查到獨立來源。建議改成『2003 年登上卡內基音樂廳』或另查。 | https://mexiconewsdaily.com/culture/made-in-mexico-chavela-vargas/ | 是 |
-| ar-c-022 | Djivan Gasparyan《I Will Not Be Sad in This World》 | 1959 至 1980 年間四度在 UNESCO 競賽奪金 | 維基與 armradio 只寫在 UNESCO 世界競賽得過四面獎牌（1959、1962、1973、1980），沒有寫金牌；「奪金」查無依據，建議改「四度獲 UNESCO 獎牌」。 | https://en.wikipedia.org/wiki/Djivan_Gasparyan | 是 |
-| ar-c-022 | Djivan Gasparyan《I Will Not Be Sad in This World》 | 六歲起吹 duduk | 維基與 armradio 寫六歲，Songlines 導覽寫八歲，來源不一致，建議改成較含糊的「幼年」或註明來源。 | https://www.songlines.co.uk/content/features/djivan-gasparyan-a-beginners-guide | 是 |
-| ar-c-022 | Dr Alimantado《Best Dressed Chicken in Town》 | Johnny Rotten 推崇後，這張在英國龐克圈流傳開來 | Songfacts 與搜尋結果指出 Rotten 點名的是單曲〈Born for a Purpose〉，維基只寫他在訪談中稱讚 Alimantado；維基與 Songfacts 都沒有把 Rotten 的推崇和這張專輯直接連起來，建議改成「Rotten 推崇他的單曲〈Born for a Purpose〉」。 | https://www.songfacts.com/facts/the-clash/rudie-cant-fail | 是 |
+| ar-c-021 | 潘迪華《The Exciting Rebecca Pan 我的心．潘迪華》 | 第十軌〈Bengawan Solo〉錄的時候她三十三歲 | 低優先：英文維基寫她 18 歲時錄，中英維基的生年又差一年（1930／1931），年齡說法不一；專輯為 1963 年，推算約 32 或 33 歲。建議確認錄音日期，或淡化成「三十出頭」。 | https://en.wikipedia.org/wiki/Bengawan_Solo_(song) | 否 |
+| ar-c-021 | 藤井風《HELP EVER HURT NEVER》 | 日本唱片協會白金 | 英文維基 Fujii Kaze 條目導言寫該專輯 certified gold in Japan，與簡介的白金不一致，需查日本唱片協會認證資料庫後再改（待核，未確認哪邊錯） | https://en.wikipedia.org/wiki/Fujii_Kaze | 否 |
+| ar-c-021 | 陳百強《偏偏喜歡你》 | 陳百強自任監製的第六張粵語大碟 | 英文維基寫前五張由譚國基監製、第六張《傾訴》起陳百強自己監製並與下一張《偏偏喜歡你》達五白金，與簡介「《偏偏喜歡你》是第六張」不一致；序數待核（未確認哪邊錯） | https://en.wikipedia.org/wiki/Danny_Chan | 否 |
+| ar-c-021 | 陳芬蘭《親愛的母親》 | 她 8 歲就以〈孤女的願望〉一曲成名 | 中文維基寫 8 歲、中央社寫 9 歲、風傳媒寫 11 歲，來源不一；年齡待核，建議改成不寫年齡 | https://www.cna.com.tw/news/ahel/202402205002.aspx | 否 |
+| ar-c-021 | 黃鶯鶯《雪在燒》 | 一九八七年八月二十七日、黃鶯鶯生日當天由飛碟唱片推出 | 中文維基寫 8 月 29 日生日當天發行，英文維基與 wikidata 生日也是 8 月 29 日，簡介的「二十七日」可能寫錯（發行日第二源未找到，建議改成「八月、她生日當天」或核對後改 29 日） | https://zh.wikipedia.org/zh-tw/%E9%BB%83%E9%B6%AF%E9%B6%AF | 否 |
+| ar-c-021 | Ana Moura《Leva-me aos fados》 | 同年她獲 Amália 獎最佳藝人 | 英文維基寫 2008 年她獲 Prémio Amália 最佳演出者（Melhor Intérprete），Museu do Fado 寫是《Para Além da Saudade》獲 Amália Rodrigues 獎；簡介把獎項放在 2009 年並寫成「最佳藝人」，年份與類別對不上（待核） | https://en.wikipedia.org/wiki/Ana_Moura | 否 |
+| ar-c-022 | Chavela Vargas《La Llorona》 | 2003 年在 Pedro Almodóvar 的推動下以 83 歲之齡首度登上卡內基音樂廳 | 她 1919 年 4 月 17 日生（英文維基、wikidata），2003 年 9 月登台應為 84 歲；Mexico News Daily 也寫 83 歲，兩者互相呼應但與生年不合；『首度』與『Almodóvar 推動』我未查到獨立來源。建議改成『2003 年登上卡內基音樂廳』或另查。 | https://mexiconewsdaily.com/culture/made-in-mexico-chavela-vargas/ | 否 |
+| ar-c-022 | Djivan Gasparyan《I Will Not Be Sad in This World》 | 1959 至 1980 年間四度在 UNESCO 競賽奪金 | 維基與 armradio 只寫在 UNESCO 世界競賽得過四面獎牌（1959、1962、1973、1980），沒有寫金牌；「奪金」查無依據，建議改「四度獲 UNESCO 獎牌」。 | https://en.wikipedia.org/wiki/Djivan_Gasparyan | 否 |
+| ar-c-022 | Djivan Gasparyan《I Will Not Be Sad in This World》 | 六歲起吹 duduk | 維基與 armradio 寫六歲，Songlines 導覽寫八歲，來源不一致，建議改成較含糊的「幼年」或註明來源。 | https://www.songlines.co.uk/content/features/djivan-gasparyan-a-beginners-guide | 否 |
+| ar-c-022 | Dr Alimantado《Best Dressed Chicken in Town》 | Johnny Rotten 推崇後，這張在英國龐克圈流傳開來 | Songfacts 與搜尋結果指出 Rotten 點名的是單曲〈Born for a Purpose〉，維基只寫他在訪談中稱讚 Alimantado；維基與 Songfacts 都沒有把 Rotten 的推崇和這張專輯直接連起來，建議改成「Rotten 推崇他的單曲〈Born for a Purpose〉」。 | https://www.songfacts.com/facts/the-clash/rudie-cant-fail | 否 |
 | ar-c-022 | Dr Alimantado《Best Dressed Chicken in Town》 | 1978 年由 Greensleeves 集結成該廠牌的第一張專輯；十首分別錄於 Black Ark、King Tubby's 與 Channel One | 維基只寫 1978 年 Greensleeves 彙整 1970 年代中期錄音，沒有寫「該廠牌第一張專輯」，也沒有各曲的錄音室；本層未找到佐證，屬「某廠牌第一張」類宣稱，建議反查 Greensleeves 沿革或退成可查證的說法。 | https://en.wikipedia.org/wiki/Dr_Alimantado | 否 |
-| ar-c-022 | E.T. Mensah & the Tempos《All for You》 | 1957 年與 Louis Armstrong 同台 | Armstrong 訪問 Accra 是 1956 年 5 月 23 至 24 日（Georgetown 圖書館展覽、Afropop 皆如此）；英文維基寫 1957 年有誤。建議改為 1956 年，並可補一句：Armstrong 抵達時，13 支樂團在機場以〈All for You〉迎接。 | https://library.georgetown.edu/exhibition/jazz-ambassador-louis-armstrong-ghana-1956 | 是 |
-| ar-c-022 | Fanfare Ciocărlia《Radio Pașcani》 | CD賣過十五萬張,成為該廠牌最暢銷的一張 | 搜尋結果摘要引維基〈Radio Pașcani〉寫的是 one of the biggest-selling albums in Piranha Musik's catalogue（該廠牌最暢銷專輯之一），不是「最暢銷的一張」；Songlines 導覽則寫銷量 8 萬餘張。維基頁本層沒有實際開頁，建議本機核對後改成「該廠牌最暢銷的專輯之一」或拿掉銷量。 | https://en.wikipedia.org/wiki/Radio_Pa%C8%99cani | 是 |
-| ar-c-022 | Hugh Mundell《Blackman's Foundation》 | 1983 年由 Shanachie 發行 | LegendaryReggae 寫 Shanachie 是在 Mundell 身後發行《Blackman's Foundation》（1988 年）；事實庫的 MusicBrainz release group 登記的兩個 Shanachie release 為 1988 與 2005，沒有 1983 年的版本。上線簡介的 1983 年可能把他過世的年份誤當發行年，建議改為 1988 年。 | https://legendaryreggae.com/2013/10/01/hugh-mundell/ | 是 |
-| ar-c-022 | Idir《A Vava Inou Va》 | 標題曲後來被譯成七種語言 | 英文維基寫七種語言，但 La Vie éco 的訃聞寫譯成 15 種語言、77 個國家播出；來源不一致，建議改成『被翻成多種語言』。 | https://www.lavieeco.com/au-royaume/idir-linterprete-du-celebre-a-vava-inouva-nest-plus/ | 是 |
-| ar-c-022 | Juaneco y su Combo《El gran cacique》 | 1970 年由祕魯 Infopesa 壓成黑膠，編號 LPS 8063 | 發行年各源不一：西班牙文維基列 1972 年、Vice 寫 1971 年、MusicBrainz 與卡池列 1970 年；本層無法判定，建議以 Discogs 的 Infopesa LPS 8063 原盤年份核對後再決定是否改簡介。 | https://www.vice.com/es/article/juaneco-y-su-combo-reconstruyendo-la-raiz/ | 是 |
-| ar-c-022 | Junior Murvin《Bad Man Possee》 | 開場的同名曲 7 分 05 秒，是全片唯一超過六分鐘的一首 | 用『全片』指整張專輯，與全站用語規則（『全片』『全曲』不用來指整張專輯）衝突，建議改成『整張』。 | https://api.discogs.com/masters/300561 | 是 |
-| ar-c-022 | Junior Murvin《Bad Man Possee》 | 唱針一落是人聲版接它自己的 dub，兩首併成一個索引點 | MusicBrainz 與 Discogs 的曲目表中，A1 只列〈Bad Man Possee〉一首，被併成一個索引點的是 A2〈Guitar / Guitar Dub〉、A3、B1 等；開場句與後文列舉的併軌位置不一致（但 A1 長達 7 分 05 秒，可能實際含 dub，待核對原盤），建議店主本機查實後再改。 | https://musicbrainz.org/release-group/becb70b0-6019-4e13-8687-b74ef2fb3b06 | 是 |
-| ar-c-022 | Khaled《Khaled》 | 1985 年在奧蘭音樂節得首獎後被冠上「Cheb」的稱號 | Cheb 是「年輕人」之意，男性 raï 歌手慣用的稱號，Khaled 青少年時就以 Cheb Khaled 錄音；1985 年是在首屆官方 raï 音樂節被加冕為「raï 之王」，1992 年出《Khaled》時才拿掉 Cheb。原句因果顛倒。 | https://en.wikipedia.org/wiki/Khaled_(musician) | 是 |
-| ar-c-022 | Lee "Scratch" Perry《Time Boom X De Devil Dead》 | 1978 年整間燒掉，他一貫堅稱是自己在盛怒中放的火 | Black Ark 燒毀年份各源不一：Perry 自述為 1979，家屬說是 1983 年重建期間的電氣意外，Relix 與 X-Press 寫 1983；1978 找不到來源。建議改成 1979 年（Perry 自述）或迴避年份。 | https://en.wikipedia.org/wiki/Black_Ark_Studios | 是 |
-| ar-c-022 | Lucky Dube《Slave》 | 隔年《Think About the Children》拿下白金 | 來源互相矛盾：Encyclopedia.com 記為 1986 年南非第一張雷鬼「金」唱片，African American Registry 寫 1985 年「白金」；「隔年」也取決於以《Rastas Never Die》的發行年（1984）或禁令年（1985）起算。建議改成不帶認證等級的寫法，例如「成為他在南非打開局面的專輯」。 | https://www.encyclopedia.com/education/news-wires-white-papers-and-books/dube-lucky | 是 |
-| ar-c-022 | Lucky Dube《Slave》 | 1984 年的《Rastas Never Die》遭當局查禁 | 專輯 1984 年發行，禁令在 1985 年（AAR、Encyclopedia.com）；原句語序易讀成 1984 年被禁。 | https://aaregistry.org/story/lucky-dube-a-south-african-reggae-artist/ | 是 |
-| ar-c-022 | Max Romeo《Reconstruction》 | 英文維基記那次拆夥發生在《War Ina Babylon》錄完之後 | 非事實錯誤，屬行文：簡介正文直接寫出「英文維基記」，其他簡介沒有這種寫法；內容本身與維基（兩人在《War Ina Babylon》後鬧翻、Romeo 自己製作《Reconstruction》）一致，建議改成直接陳述。 | https://en.wikipedia.org/wiki/Max_Romeo | 是 |
+| ar-c-022 | E.T. Mensah & the Tempos《All for You》 | 1957 年與 Louis Armstrong 同台 | Armstrong 訪問 Accra 是 1956 年 5 月 23 至 24 日（Georgetown 圖書館展覽、Afropop 皆如此）；英文維基寫 1957 年有誤。建議改為 1956 年，並可補一句：Armstrong 抵達時，13 支樂團在機場以〈All for You〉迎接。 | https://library.georgetown.edu/exhibition/jazz-ambassador-louis-armstrong-ghana-1956 | 否 |
+| ar-c-022 | Fanfare Ciocărlia《Radio Pașcani》 | CD賣過十五萬張,成為該廠牌最暢銷的一張 | 搜尋結果摘要引維基〈Radio Pașcani〉寫的是 one of the biggest-selling albums in Piranha Musik's catalogue（該廠牌最暢銷專輯之一），不是「最暢銷的一張」；Songlines 導覽則寫銷量 8 萬餘張。維基頁本層沒有實際開頁，建議本機核對後改成「該廠牌最暢銷的專輯之一」或拿掉銷量。 | https://en.wikipedia.org/wiki/Radio_Pa%C8%99cani | 否 |
+| ar-c-022 | Hugh Mundell《Blackman's Foundation》 | 1983 年由 Shanachie 發行 | LegendaryReggae 寫 Shanachie 是在 Mundell 身後發行《Blackman's Foundation》（1988 年）；事實庫的 MusicBrainz release group 登記的兩個 Shanachie release 為 1988 與 2005，沒有 1983 年的版本。上線簡介的 1983 年可能把他過世的年份誤當發行年，建議改為 1988 年。 | https://legendaryreggae.com/2013/10/01/hugh-mundell/ | 否 |
+| ar-c-022 | Idir《A Vava Inou Va》 | 標題曲後來被譯成七種語言 | 英文維基寫七種語言，但 La Vie éco 的訃聞寫譯成 15 種語言、77 個國家播出；來源不一致，建議改成『被翻成多種語言』。 | https://www.lavieeco.com/au-royaume/idir-linterprete-du-celebre-a-vava-inouva-nest-plus/ | 否 |
+| ar-c-022 | Juaneco y su Combo《El gran cacique》 | 1970 年由祕魯 Infopesa 壓成黑膠，編號 LPS 8063 | 發行年各源不一：西班牙文維基列 1972 年、Vice 寫 1971 年、MusicBrainz 與卡池列 1970 年；本層無法判定，建議以 Discogs 的 Infopesa LPS 8063 原盤年份核對後再決定是否改簡介。 | https://www.vice.com/es/article/juaneco-y-su-combo-reconstruyendo-la-raiz/ | 否 |
+| ar-c-022 | Junior Murvin《Bad Man Possee》 | 開場的同名曲 7 分 05 秒，是全片唯一超過六分鐘的一首 | 用『全片』指整張專輯，與全站用語規則（『全片』『全曲』不用來指整張專輯）衝突，建議改成『整張』。 | https://api.discogs.com/masters/300561 | 否 |
+| ar-c-022 | Junior Murvin《Bad Man Possee》 | 唱針一落是人聲版接它自己的 dub，兩首併成一個索引點 | MusicBrainz 與 Discogs 的曲目表中，A1 只列〈Bad Man Possee〉一首，被併成一個索引點的是 A2〈Guitar / Guitar Dub〉、A3、B1 等；開場句與後文列舉的併軌位置不一致（但 A1 長達 7 分 05 秒，可能實際含 dub，待核對原盤），建議店主本機查實後再改。 | https://musicbrainz.org/release-group/becb70b0-6019-4e13-8687-b74ef2fb3b06 | 否 |
+| ar-c-022 | Khaled《Khaled》 | 1985 年在奧蘭音樂節得首獎後被冠上「Cheb」的稱號 | Cheb 是「年輕人」之意，男性 raï 歌手慣用的稱號，Khaled 青少年時就以 Cheb Khaled 錄音；1985 年是在首屆官方 raï 音樂節被加冕為「raï 之王」，1992 年出《Khaled》時才拿掉 Cheb。原句因果顛倒。 | https://en.wikipedia.org/wiki/Khaled_(musician) | 否 |
+| ar-c-022 | Lee "Scratch" Perry《Time Boom X De Devil Dead》 | 1978 年整間燒掉，他一貫堅稱是自己在盛怒中放的火 | Black Ark 燒毀年份各源不一：Perry 自述為 1979，家屬說是 1983 年重建期間的電氣意外，Relix 與 X-Press 寫 1983；1978 找不到來源。建議改成 1979 年（Perry 自述）或迴避年份。 | https://en.wikipedia.org/wiki/Black_Ark_Studios | 否 |
+| ar-c-022 | Lucky Dube《Slave》 | 隔年《Think About the Children》拿下白金 | 來源互相矛盾：Encyclopedia.com 記為 1986 年南非第一張雷鬼「金」唱片，African American Registry 寫 1985 年「白金」；「隔年」也取決於以《Rastas Never Die》的發行年（1984）或禁令年（1985）起算。建議改成不帶認證等級的寫法，例如「成為他在南非打開局面的專輯」。 | https://www.encyclopedia.com/education/news-wires-white-papers-and-books/dube-lucky | 否 |
+| ar-c-022 | Lucky Dube《Slave》 | 1984 年的《Rastas Never Die》遭當局查禁 | 專輯 1984 年發行，禁令在 1985 年（AAR、Encyclopedia.com）；原句語序易讀成 1984 年被禁。 | https://aaregistry.org/story/lucky-dube-a-south-african-reggae-artist/ | 否 |
+| ar-c-022 | Max Romeo《Reconstruction》 | 英文維基記那次拆夥發生在《War Ina Babylon》錄完之後 | 非事實錯誤，屬行文：簡介正文直接寫出「英文維基記」，其他簡介沒有這種寫法；內容本身與維基（兩人在《War Ina Babylon》後鬧翻、Romeo 自己製作《Reconstruction》）一致，建議改成直接陳述。 | https://en.wikipedia.org/wiki/Max_Romeo | 否 |
 | ar-c-023 | Nass El Ghiwane《Nass El Ghiwane》 | 他們從前衛政治劇團走出來，第一件事是把班鳩琴帶進 chaabi | Aramco World 的班鳩琴專文指出，班鳩琴 1960 年代已出現在阿馬齊格民間表演與馬拉喀什 Jemaa el-Fnaa 廣場；Nass El Ghiwane 的貢獻是把它變成招牌聲響、帶進主流流行文化，不是最早。「把班鳩琴帶進 chaabi」可改寫為「讓班鳩琴成為樂團的招牌聲響」。英文維基「第一支引進班鳩琴等西方樂器」的說法有反例。 | https://www.aramcoworld.com/articles/2026/ja26/banjo-on-the-atlas | 否 |
-| ar-c-023 | Nass El Ghiwane《Nass El Ghiwane》 | 樂團 1969 年成立於卡薩布蘭卡 | 1969 年只見英文維基；維基資料庫作 1970，法文維基與 Aramco World 作 1970 年代初。建議改「約 1970 年前後」或不寫年。 | https://www.aramcoworld.com/articles/2024/nass-el-ghiwane-the-voice-of-morocco | 是 |
-| ar-c-023 | Natacha Atlas《Gedida》 | 1999 年由 Mantra Records 發行，Natacha Atlas 第三張個人專輯 | 英文維基藝人條目把《Gedida》列為 1998 年；卡單與簡介作 1999 年。發行年（各地區版本可能不同）待核，未開專輯頁確認。 | https://en.wikipedia.org/wiki/Natacha_Atlas | 是 |
-| ar-c-023 | Ofra Haza《Yemenite Songs》 | 唱的是十六世紀拉比 Shalom Shabazi 的葉門猶太詩作 | Shalom Shabazi 為十七世紀的詩人；Encyclopedia.com 與〈Im Nin'alu〉相關文章都作 17th century。建議改「十七世紀」或略去世紀。 | https://www.encyclopedia.com/people/literature-and-arts/music-popular-and-jazz-biographies/ofra-haza | 是 |
-| ar-c-023 | Prince Far I《Psalms for I》 | 伴奏多半是 Bunny Lee 製作、The Aggrovators 演奏的既有 riddim | Perfect Sound Forever 稱這張 LP 是「為 Lloydie Slim 錄的」，製作歸屬與簡介所寫不同；Discogs 的致謝欄有 Lee Perry、Bunny Lee，但製作人是誰沒有確證。簡介的「Bunny Lee 製作」待核。 | https://www.furious.com/perfect/princefari.html | 是 |
-| ar-c-023 | Souad Massi《Raoui》 | 受死亡威脅後離開阿爾及利亞 | Massi 在 The Markaz Review 訪談中說「說她是因為死亡威脅離開，那是謊話」，1999 年是辭去工程師工作、受邀到巴黎演出後決定留下，因為她覺得自己在阿爾及利亞像「外星人」；維基與 The National 則寫成受威脅或遭極端分子針對。來源互相矛盾，建議改為中性寫法（Atakor 的政治歌詞使樂團成為目標、她 1999 年到巴黎演出後留下），不要寫成因死亡威脅離開。 | https://themarkaz.org/the-artist-at-work-a-conversation-with-souad-massi/ | 是 |
-| ar-c-023 | Souad Massi《Deb》 | 因伊斯蘭保守派的死亡威脅於 1999 年遷居巴黎 | 同上，Massi 本人在 The Markaz Review 否認自己是因死亡威脅離開，說是受邀演出後選擇留在巴黎；建議改為中性寫法。 | https://themarkaz.org/the-artist-at-work-a-conversation-with-souad-massi/ | 是 |
-| ar-c-023 | The Gladiators《Proverbial Reggae》 | Richard Branson 帶著 Johnny Rotten 到 Kingston 簽人，這是那條產線的第二號 | 待核：事實庫所引維基的 Front Line 條目只列 Prince Far I、Big Youth、Prince Hammer、Tappa Zukie、Sly Dunbar、The Twinkle Brothers 為那趟 Kingston 簽約行的人選，沒有 The Gladiators；維基與 Reggaeville 都稱 Gladiators 早在 1976 年就與 Virgin 簽約並發行《Trenchtown Mix Up》。簡介開頭把 Gladiators 寫成 Branson 與 Rotten 那趟簽人之行的產物，可能誤導；建議改為「Front Line 是 Virgin 1978 年成立的雷鬼子廠牌，Gladiators 已在 1976 年簽入 Virgin 旗下，本作是樂團的第二張、Front Line 的第二號目錄」。 | https://en.wikipedia.org/wiki/Front_Line_(record_label) | 是 |
+| ar-c-023 | Nass El Ghiwane《Nass El Ghiwane》 | 樂團 1969 年成立於卡薩布蘭卡 | 1969 年只見英文維基；維基資料庫作 1970，法文維基與 Aramco World 作 1970 年代初。建議改「約 1970 年前後」或不寫年。 | https://www.aramcoworld.com/articles/2024/nass-el-ghiwane-the-voice-of-morocco | 否 |
+| ar-c-023 | Natacha Atlas《Gedida》 | 1999 年由 Mantra Records 發行，Natacha Atlas 第三張個人專輯 | 英文維基藝人條目把《Gedida》列為 1998 年；卡單與簡介作 1999 年。發行年（各地區版本可能不同）待核，未開專輯頁確認。 | https://en.wikipedia.org/wiki/Natacha_Atlas | 否 |
+| ar-c-023 | Ofra Haza《Yemenite Songs》 | 唱的是十六世紀拉比 Shalom Shabazi 的葉門猶太詩作 | Shalom Shabazi 為十七世紀的詩人；Encyclopedia.com 與〈Im Nin'alu〉相關文章都作 17th century。建議改「十七世紀」或略去世紀。 | https://www.encyclopedia.com/people/literature-and-arts/music-popular-and-jazz-biographies/ofra-haza | 否 |
+| ar-c-023 | Prince Far I《Psalms for I》 | 伴奏多半是 Bunny Lee 製作、The Aggrovators 演奏的既有 riddim | Perfect Sound Forever 稱這張 LP 是「為 Lloydie Slim 錄的」，製作歸屬與簡介所寫不同；Discogs 的致謝欄有 Lee Perry、Bunny Lee，但製作人是誰沒有確證。簡介的「Bunny Lee 製作」待核。 | https://www.furious.com/perfect/princefari.html | 否 |
+| ar-c-023 | Souad Massi《Raoui》 | 受死亡威脅後離開阿爾及利亞 | Massi 在 The Markaz Review 訪談中說「說她是因為死亡威脅離開，那是謊話」，1999 年是辭去工程師工作、受邀到巴黎演出後決定留下，因為她覺得自己在阿爾及利亞像「外星人」；維基與 The National 則寫成受威脅或遭極端分子針對。來源互相矛盾，建議改為中性寫法（Atakor 的政治歌詞使樂團成為目標、她 1999 年到巴黎演出後留下），不要寫成因死亡威脅離開。 | https://themarkaz.org/the-artist-at-work-a-conversation-with-souad-massi/ | 否 |
+| ar-c-023 | Souad Massi《Deb》 | 因伊斯蘭保守派的死亡威脅於 1999 年遷居巴黎 | 同上，Massi 本人在 The Markaz Review 否認自己是因死亡威脅離開，說是受邀演出後選擇留在巴黎；建議改為中性寫法。 | https://themarkaz.org/the-artist-at-work-a-conversation-with-souad-massi/ | 否 |
+| ar-c-023 | The Gladiators《Proverbial Reggae》 | Richard Branson 帶著 Johnny Rotten 到 Kingston 簽人，這是那條產線的第二號 | 待核：事實庫所引維基的 Front Line 條目只列 Prince Far I、Big Youth、Prince Hammer、Tappa Zukie、Sly Dunbar、The Twinkle Brothers 為那趟 Kingston 簽約行的人選，沒有 The Gladiators；維基與 Reggaeville 都稱 Gladiators 早在 1976 年就與 Virgin 簽約並發行《Trenchtown Mix Up》。簡介開頭把 Gladiators 寫成 Branson 與 Rotten 那趟簽人之行的產物，可能誤導；建議改為「Front Line 是 Virgin 1978 年成立的雷鬼子廠牌，Gladiators 已在 1976 年簽入 Virgin 旗下，本作是樂團的第二張、Front Line 的第二號目錄」。 | https://en.wikipedia.org/wiki/Front_Line_(record_label) | 否 |
 | ar-c-023 | The Meditations《Message from the Meditations》 | 上線簡介寫這是首作，1976 年由 Dobby Dobson 製作兼編曲、Double-D 發行 | 維基的專輯清單把《Message From The Meditations》列為 1977 年，卡池年份為 1976；發行年待本機以 Discogs 原盤核對，若為 1977 則簡介與卡年份皆須改 | https://en.wikipedia.org/wiki/The_Meditations | 否 |
 | ar-c-023 | Vicente Amigo《De mi corazón al aire》 | 師從 Manolo Sanlúcar 十年；1988 年在 La Unión 的 Festival Nacional del Cante de las Minas 拿下吉他首獎 | 「十年」只見維基單源，Córdoba Flamenca 記 1983 至 1988 年在 Sanlúcar 樂團（約五年）；La Unión 首獎年份 El Arte de Vivir el Flamenco 為 1988，Córdoba Flamenca 的年表寫成 1989；兩點兩源不一致，建議店主本機核對西班牙語官方傳記後再決定是否改 | https://cordobaflamenca.com/guitarristas/vicente-amigo/ | 否 |
-| ar-c-023 | Wailing Souls《Fire House Rock》 | 當時陣容還包含 Black Uhuru 創團成員 Rudolph「Garth」Dennis | 維基整頁與 Encyclopedia.com 都沒有 Garth Dennis 或 Black Uhuru 的連結；本層沒找到佐證，建議店主本機以專輯內頁或 Discogs 核對陣容；若無法佐證，建議刪除此句 | https://en.wikipedia.org/wiki/The_Wailing_Souls | 是 |
-| ar-c-024 | Aux 88《Is It Man or Machine?》 | Tommy Hamilton（TomTom）與 William「BJ」Smith（Posatronix）1993 年以《Bass Magnetic》出道 | 早期成員是 Hamilton 與 Keith Tucker（XLR8R：Hamilton 與 Tucker 組成 Aux 88；Mutek Montreal：1993 年由兩人成軍、Tucker 1995 年離團後 Smith 才成為核心）；最早的發行是 EP《Technology》，接著才是雙 EP《Bass Magnetic》，維基則把《Bass Magnetic》寫成首張專輯。建議改成「Hamilton 與 Keith Tucker 1993 年前後以《Bass Magnetic》亮相，Smith 後來成為搭檔」，或拿掉具名成員。 | https://montreal.mutek.org/en/artists/aux-88 | 是 |
+| ar-c-023 | Wailing Souls《Fire House Rock》 | 當時陣容還包含 Black Uhuru 創團成員 Rudolph「Garth」Dennis | 維基整頁與 Encyclopedia.com 都沒有 Garth Dennis 或 Black Uhuru 的連結；本層沒找到佐證，建議店主本機以專輯內頁或 Discogs 核對陣容；若無法佐證，建議刪除此句 | https://en.wikipedia.org/wiki/The_Wailing_Souls | 否 |
+| ar-c-024 | Aux 88《Is It Man or Machine?》 | Tommy Hamilton（TomTom）與 William「BJ」Smith（Posatronix）1993 年以《Bass Magnetic》出道 | 早期成員是 Hamilton 與 Keith Tucker（XLR8R：Hamilton 與 Tucker 組成 Aux 88；Mutek Montreal：1993 年由兩人成軍、Tucker 1995 年離團後 Smith 才成為核心）；最早的發行是 EP《Technology》，接著才是雙 EP《Bass Magnetic》，維基則把《Bass Magnetic》寫成首張專輯。建議改成「Hamilton 與 Keith Tucker 1993 年前後以《Bass Magnetic》亮相，Smith 後來成為搭檔」，或拿掉具名成員。 | https://montreal.mutek.org/en/artists/aux-88 | 否 |
 | ar-c-024 | Carl Cox《F.A.C.T.》 | Mixmag 記述他同年在舞池『把三台唱盤拆了』的三盤手法，正是這份混音的底氣 | 讀到的 Mixmag 長文《Carl Cox: The Legend》摘要未見此句；Cox 以三唱盤成名的事件所有來源都記為 1988 年 Sunrise rave，不是 1995 年。引文出處建議回頭核對，找不到就改寫成 1988 年 Sunrise 的說法。 | https://mixmag.net/feature/carl-cox-the-legend | 否 |
 | ar-c-024 | Derrick May《Innovator》 | 這套雙 CD 結集…二十六軌收齊 Transmat 時期的〈Nude Photo〉〈It Is What It Is〉〈Kaotic Harmony〉 | RA 傳記寫 1995 年由 Sony Japan 編成『單碟』的《Innovator》；MusicBrainz 記 Innovator 的 release group 首發日 1996 年 4 月 21 日、共 8 個 release。碟數與軌數依版本而異，建議以卡池實際對應的 release 在 MusicBrainz 核對『雙 CD、26 軌』是否屬同一版本。 | https://ra.co/dj/derrickmay/biography | 否 |
-| ar-c-024 | Green Velvet《Constant Chaos》 | Curtis Alan Jones 1968 年生於芝加哥 | 生年各來源不一致：維基 1968-04-26、wikidata 1967-04-26、List 專訪摘要 1968；上線簡介的 1968 年未必錯，但建議主線核對一個權威來源（如 Billboard 或官方傳記）後再決定是否保留生年。 | https://www.wikidata.org/wiki/Q1544666 | 是 |
-| ar-c-024 | Harold Budd & Brian Eno《Ambient 2: The Plateaux of Mirror》 | 1980 年於安大略省咸美頓錄成 | 英文維基 Ambient 2 條目寫 1979 年於 Hamilton 的 Grant Avenue Studio 錄音、1980 年 4 月發行；錄音年只有維基單一來源，需主線找第二源（如專輯內頁或 Eno 訪談）再決定是否改為 1979 年。 | https://en.wikipedia.org/wiki/Ambient_2:_The_Plateaux_of_Mirror | 是 |
-| ar-c-fix1 | Buffy Sainte-Marie《It's My Way!》 | 2023 年 CBC 調查認定她長年宣稱的原住民血統不實 | 把 CBC 的調查結論寫成定論；她本人回應說從未確定出生地、從未把公民身分當祕密，並已交還勳章。建議改成中性寫法：『2023 年 CBC 調查報導認為她出生於美國，2025 年她的 Order of Canada、Juno 與 Polaris 等加拿大榮譽因公民身分被撤銷或交還』。 | https://consequence.net/2025/03/buffy-sainte-maries-polaris-juno-prizes-revoked/ | 是 |
-| ar-c-fix1 | Buffy Sainte-Marie《Illuminations》 | Sainte-Marie 與製作人 Maynard Solomon 用 Buchla 合成器處理人聲 | Musicworks 寫 Buchla 的濾波、調變與閘控是 Juilliard 教師 Michael Czajkowski 操作；維基列製作人為 Maynard Solomon 與 Mark Roth。『他們用 Buchla 處理人聲』應補上 Czajkowski 或改寫為『人聲經 Buchla 處理』（Musicworks 單源）。 | https://www.musicworks.ca/profile/buffy-sainte-marie-reflects-illuminations | 是 |
-| ar-c-fix1 | 何欣穗《她的。發光搖擺》 | 隔年在華語音樂傳媒大獎四項提名中獲十大華語唱片 | zh 維基寫的獎名是「第三屆華語流行樂傳媒大獎」（十大華語唱片獲獎，另有最佳搖滾藝人、最佳作詞人、獨立音樂大獎提名），上線簡介寫「華語音樂傳媒大獎」，獎名不完整；內容事實一致，屬獎名寫法問題。 | https://zh.wikipedia.org/wiki/%E4%BD%95%E6%AC%A3%E7%A9%97 | 是 |
-| ar-c-fix2 | Barbara《Barbara chante Barbara》 | 是第一張全部由自己寫詞寫曲的唱片 | 法文維基專輯條目寫該張除兩首與外人合作的曲目外，其餘由她自己寫（單源，建議改為「幾乎全部」或「主要由自己創作」）。 | https://fr.wikipedia.org/wiki/Barbara_chante_Barbara | 是 |
-| ar-c-fix2 | C.O.B.《Spirit of Love》 | 1970 年 CBS 的 12 吋原盤 | 英文維基、klofmag 悼文與 At The Barrier 樂評都把《Spirit of Love》記為 1971 年（BGO 重發頁寫 1972 年）；卡池年份為 1970，建議店主核對原盤年份（Discogs）後同步卡單與簡介。 | https://atthebarrier.com/2021/04/21/c-o-b-spirit-of-love-album-review/ | 是 |
-| ar-c-fix2 | The Rollies《Dansa Yok Dansa》 | 樂團 1965 年成軍於萬隆 | 印尼文維基寫 1965 年，但 ANTARA 的印尼搖滾史報導寫 1967 年起在 Deddy Stanzah 領導下起步，兩說並存；建議改成「1960 年代中期」或加註兩說。 | https://www.antaranews.com/berita/1116114/histori-rock-indonesia-lahirnya-musisi-legenda | 是 |
-| ar-c-fix2 | Curly Ray Cline《Chicken Reel》 | Cline 十五歲時與堂兄 Ezra、哥哥 Ned 組了 Lonesome Pine Fiddlers | 親屬關係兩說：英文維基寫堂兄 Ezra 與哥哥 Ned，e-WV（Ivan M. Tribe）寫 Curly Ray、Charlie、Ned 是堂（表）兄弟；建議改成「與親族」。 | https://www.wvencyclopedia.org/entries/1401 | 是 |
+| ar-c-024 | Green Velvet《Constant Chaos》 | Curtis Alan Jones 1968 年生於芝加哥 | 生年各來源不一致：維基 1968-04-26、wikidata 1967-04-26、List 專訪摘要 1968；上線簡介的 1968 年未必錯，但建議主線核對一個權威來源（如 Billboard 或官方傳記）後再決定是否保留生年。 | https://www.wikidata.org/wiki/Q1544666 | 否 |
+| ar-c-024 | Harold Budd & Brian Eno《Ambient 2: The Plateaux of Mirror》 | 1980 年於安大略省咸美頓錄成 | 英文維基 Ambient 2 條目寫 1979 年於 Hamilton 的 Grant Avenue Studio 錄音、1980 年 4 月發行；錄音年只有維基單一來源，需主線找第二源（如專輯內頁或 Eno 訪談）再決定是否改為 1979 年。 | https://en.wikipedia.org/wiki/Ambient_2:_The_Plateaux_of_Mirror | 否 |
+| ar-c-025 | Kerri Chandler《Atmosphere E.P.》 | 他長年駐場的 Newark 的 Club Zanzibar | 駐場說法只見維基單源；RBMA 傳記寫他成長於 Zanzibar 與其駐場 DJ Tony Humphries 的年代，Zanzibar 的駐場 DJ 是 Humphries。建議改成「成長於 Newark 的 Club Zanzibar 那個年代」，或補第二源證實他曾駐場。 | https://www.redbullmusicacademy.com/lectures/kerri-chandler-a-basement-a-red-light-and-a-feeling | 否 |
+| ar-c-025 | Kevin Drumm《Imperial Distortion》 | 改用 1995 到 2008 年間的存檔錄音 | Quietus 2025 年訪談以編註寫「Imperial Distortion 的曲子錄於 1997–2008 年」，與簡介的 1995 年起點不同；同篇也未提到簡介中「原本要做 fuzz 效果器實驗」與「Dominick Fernow 說服他保留原名」，訪談只說他原在替 Hospital Productions 做別的東西、進行不順才回頭挑舊錄音。這兩點未能驗證，建議改成可驗證的版本。 | https://thequietus.com/?p=257497 | 否 |
+| ar-c-025 | Loreena McKennitt《The Visit》 | 安大略出身的她自此打開國際市場 | 她生於曼尼托巴省 Morden、在 Winnipeg 求學，1981 年才搬到安大略省 Stratford；不是安大略出身，可改寫成「現居安大略 Stratford 的她」或刪去出身。 | https://thecanadianencyclopedia.ca/en/article/loreena-mckennitt | 否 |
+| ar-c-025 | Michael Stearns《Encounter》 | 這是他第一張主題明確指向太空的作品：先前的錄音聲響同樣空曠，卻不以太空為題 | 他 1981 年的《Planetary Unfolding》被 Echoes 與維基稱為 ambient／太空氛圍電子樂的經典；『第一張主題指向太空』屬『第一』類宣稱，未找到來源支持，可能有反例，建議改寫或刪去。（未證實為錯，僅提請複核。） | https://echoes.org/2022/04/07/echoes-podcast-michael-stearns/ | 否 |
+| ar-c-026 | The Irresistible Force《Global Chillage》 | 1987 年起另用 The Irresistible Force 發表錄音 | 英文維基 Mixmaster Morris 條目寫他 1987 年起與 Des de Moor 合作，首支單曲〈I Want To〉1988 年才發行；Boiler Room 專文說他 1988 年採用這個名義。「1987 年起發表錄音」把合作起點寫成發行起點，建議改「1987 年起」為「1988 年起」或改寫成「1987 年起以此名義合作」。 | https://en.wikipedia.org/wiki/Mixmaster_Morris | 否 |
+| ar-c-026 | The Irresistible Force《Flying High》 | 這張是他從 DJ 轉向製作的起點 | 維基記他 1988 年已發行首支單曲〈I Want To〉，並在 1985 年起做混音（Coldcut〈Autumn Leaves〉等），《Flying High》是首張專輯而不是他開始製作的起點；建議改成「首張專輯」。 | https://en.wikipedia.org/wiki/Mixmaster_Morris | 否 |
+| ar-c-026 | Wagon Christ《Throbbing Pouch》 | 1993 年應 Rising High 之邀以 Wagon Christ 名義交出一張環境音樂唱片 | 英文維基 Throbbing Pouch 條目寫首張《Phat Lab Nightmare》為 1994 年（Rising High），Luke Vibert 條目的作品表同為 1994，正文卻寫 1993；來源互相不一致，建議把年份改成『1990 年代前期』或查 Discogs 後再定。 | https://en.wikipedia.org/wiki/Throbbing_Pouch | 否 |
+| ar-c-026 | 日向敏文《Sarah's Crime》 | 1978 年再轉到明尼蘇達大學雙城分校，主修古典鋼琴四年 | 日向敏文官方年表與英文維基寫 1978 年 8 月轉入 University of Minnesota Duluth（杜魯斯校區），只有日文維基寫雙城分校；校區有爭議，建議改成「明尼蘇達大學」 | https://toshifumihinata.com/jp/time-line/ | 否 |
+| ar-c-026 | 阿爆《vavayan. 女人》 | 2003 年以阿爆＆Brandy 拿下金曲最佳重唱組合 | 中文維基〈第14屆金曲獎〉（2003 年）最佳重唱組合得獎者是 S.H.E，入圍為動力火車與 B.A.D，頁面沒有阿爆&Brandy；阿爆條目雖寫此獎，屆次或獎項可能有誤。建議在查到原始得獎紀錄前改寫成「2003 年以阿爆&Brandy 出道」。 | https://zh.wikipedia.org/wiki/%E7%AC%AC14%E5%B1%86%E9%87%91%E6%9B%B2%E7%8D%8E | 否 |
+| ar-c-026 | 阿爆《vavayan. 女人》 | 2017 年第 28 屆金曲獎拿下最佳原住民語專輯獎與最佳專輯製作人獎 | 最佳原住民語專輯獎是阿爆得獎；最佳專輯製作人獎的得獎者是製作人荒井十一（入圍作品《Vavayan 女人》），不是阿爆本人。句子主詞是阿爆，易讀成她得製作人獎，建議寫明「荒井十一以該專輯獲最佳專輯製作人獎」。 | https://zh.wikipedia.org/wiki/%E7%AC%AC28%E5%B1%86%E9%87%91%E6%9B%B2%E7%8D%8E | 否 |
+| ar-c-027 | Earl King《Sexual Telepathy》 | 〈Come On〉與〈Big Chief〉的作者自 1960 年代中期起幾乎只在幕後寫歌製作 | 英文維基載 King 1972 年錄製專輯《Street Parade》（1981 年才由 Charly 發行）、1977 年 Sonet 發行《That Good Old New New Orleans Rock 'n Roll》，並在 1976 年爵士節專輯露面，1960 年代中期後並非「幾乎只在幕後」；《Glazed》簡介「長年沒有唱片合約」同理，建議改成「1960 年代起主要在幕後，間有零星錄音」。 | https://en.wikipedia.org/wiki/Earl_King | 否 |
+| ar-c-029 | Ultramagnetic MC's《Critical Beatdown》 | 同一套 SP-1200 手法也用在 BDP《Criminal Minded》上 | Ced-Gee 自述 1987 年前後他買的是 E-mu SP-12（1.2 秒取樣時間），搜尋摘要另有 SP-1200 說法但未開頁；上線簡介把兩張專輯都寫成 SP-1200，機型待核。《Criminal Minded》是 1987 年發行，SP-1200 剛上市不久，保險寫法是『同一種 E-mu 取樣鼓機手法』。 | https://ambrosiaforheads.com/2018/10/ced-gee-boogie-down-productions-criminal-minded-bpd/ | 否 |
+| ar-c-029 | Ultramagnetic MC's《Critical Beatdown》 | Kool Keith 的詞⋯後來從 Public Enemy 到地下嘻哈幾代人都接手了這套 | 本層找到的具名說法只有 RZA、Ghostface Killah、MF DOOM、Pharoahe Monch、Tyler, The Creator 受 Kool Keith 影響（Fact Magazine、維基），沒有 Public Enemy 受 Kool Keith 影響的來源；『Public Enemy』一句待核。 | https://www.factmag.com/2013/08/06/the-essential-kool-keith/ | 否 |
+| ar-c-029 | Verbal Jint《Go Easy》 | 2001 年的首張迷你專輯《누명》（Modern Rhymes）被認為第一次把真正的韻腳結構帶進韓語饒舌 | 把兩張混成一張：2001 年的首張迷你專輯（EP）名稱是《Modern Rhymes》；《누명》是 2008 年的第二張正規專輯（英文 Framed），前面還有 2007 年正規一輯《무명》。依據韓文維基（ko.wikipedia 버벌_진트）：『2001년 EP Modern Rhymes』『2007년 《무명》（정규 1집）』『2008년 《누명》（정규 2집）』；英文維基也記 2008 年的專輯為 Framed。建議改為『2001 年首張迷你專輯《Modern Rhymes》被認為⋯』。另『被認為第一次把真正的韻腳結構帶進韓語饒舌』來自英文維基，韓文維基與 Pressian 只說『最早廣泛提出多音節押韻的可能性』，保守寫法應加『被認為』並維持具名評價。 | https://ko.wikipedia.org/wiki/버벌_진트 | 否 |
+| ar-c-029 | Westside Gunn《FLYGOD》 | 客演橫跨 Conway the Machine、Benny the Butcher 與 Danny Brown | Albumism 列出的客串是 Meyhem Lauren、Danny Brown、Your Old Droog、Action Bronson、Mach-Hommy、Tha God Fahim 與 Skyzoo，沒有 Conway 與 Benny；是否漏列待核（曲目頁可查）。上線簡介其他部分（Daringer 製作過半、Roc Marciano、Apollo Brown、Statik Selektah、The Alchemist、DJ Q-Bert 刮盤）與 Albumism 一致。 | https://albumism.com/features/westside-gunn-debut-album-flygod-album-anniversary | 否 |
+| ar-c-029 | 李英宏《水哥 2020》 | 2020 年這一筆掛顏社，條碼 4712862000260，是名下最晚的一張長篇 | Tatler Asia 2025 年報導與中文維基（摘要）載他 2025 年 3 月發行第三張專輯《東方美人》，「名下最晚的一張長篇」已過時；《台北直直撞》簡介的「名下最早的一張長篇」仍成立。 | https://www.tatlerasia.com/lifestyle/entertainment/didilong-2025-zh-hant | 否 |
+| ar-c-029 | Alban Berg Quartett《Beethoven: The Late String Quartets》 | 四位維也納音樂學院的年輕教授 1970 年組團 | 成軍年不一致：維基首段寫 1970 年，wikidata 與 PCMS 小傳寫 1971 年，Pichler 訪談只確認 1971 年秋天首演。建議改寫成「1971 年秋天首演」較穩，或保留 1970 並註明維基說法。 | https://www.pcmsconcerts.org/?p=13565 | 否 |
+| ar-c-029 | Alfred Cortot《Victor Recordings of 1919-1926》 | 他錄下史上第一份古典電氣錄音 | 「第一」只見英文維基單源（寫成商業電氣古典錄音的世界第一），其他搜尋結果是轉述同一句；上線簡介少了「商業」限定。建議改成「維基記為 Victor 最早的商業電氣古典錄音之一」或限縮為「他最早的一批電氣錄音」。 | https://en.wikipedia.org/wiki/Alfred_Cortot | 否 |
+| ar-c-029 | André Cluytens《Fauré: Requiem (1962)》 | 他 1967 年 6 月過世，同年該團由法國政府決定解散 | 本層查證 Cluytens 過世年月（1967 年 6 月）有兩源，但「同年該團由法國政府決定解散」未在本層開過的任何頁面找到佐證，建議店主核實該句來源。 | https://en.wikipedia.org/wiki/Andr%C3%A9_Cluytens | 否 |
+| ar-c-030 | Emerson String Quartet《Bartók: The 6 String Quartets》 | 英文維基記，這套 1989 年同時拿下葛萊美的最佳室內樂演奏與最佳古典專輯 | grammy.com 把 Bartók 全集的兩項得獎列在 1990 年（第 32 屆）；維基用 1989（作品年度）。簡介若寫『1989 年拿下葛萊美』，與官方典禮年份差一年，建議改成『1989 年度的葛萊美』或改用 1990 年。 | https://grammy.com/artists/emerson-string-quartet/14683 | 否 |
+| ar-c-030 | Fou Ts'ong 傅聰《Chopin: Nocturnes (1978)》 | 1955 年…是第一位在國際性鋼琴比賽獲獎的中國音樂家 | 英文維基寫他 1953 年已在 George Enescu 國際比賽拿第三名，『第一位』易被反駁；來源 Violin Channel 與 Eloquence 只寫『最早獲國際聲譽的中國鋼琴家之一』。建議改成『最早在國際鋼琴比賽獲獎的中國音樂家之一』，或加上蕭邦大賽的限定。 | https://en.wikipedia.org/wiki/Fou_Ts%27ong | 否 |
+| ar-c-031 | Roberto Cacciapaglia《Sei Note in Logica》 | 日後 Jim O'Rourke、Fennesz 等人把這批早期錄音列為影響來源 | 唯一來源是再版廠牌 Superior Viaduct 的文案，只寫「影響可以在 Jim O'Rourke、Fennesz 與 Ben Vida 的作品中聽到」，沒有後輩自己點名；建議改成「再版廠牌稱…」或刪掉。 | https://www.superiorviaduct.com/products/roberto-cacciapaglia-sei-note-in-logica-lp | 否 |
+| ar-c-031 | Roberto Cacciapaglia《Sei Note in Logica》 | 他自己的路線則很快轉向流行與鋼琴 | 義大利維基與本人官方簡介的年表顯示 1980 年代之後仍有實驗電子與 Ricordi／Fonit Cetra 的作品，新古典與商業成功要到 2000 年代；「很快轉向」缺依據，Superior Viaduct 頁面本層也沒讀到這句。 | https://it.wikipedia.org/wiki/Roberto_Cacciapaglia | 否 |
+| ar-c-fix1 | Buffy Sainte-Marie《It's My Way!》 | 2023 年 CBC 調查認定她長年宣稱的原住民血統不實 | 把 CBC 的調查結論寫成定論；她本人回應說從未確定出生地、從未把公民身分當祕密，並已交還勳章。建議改成中性寫法：『2023 年 CBC 調查報導認為她出生於美國，2025 年她的 Order of Canada、Juno 與 Polaris 等加拿大榮譽因公民身分被撤銷或交還』。 | https://consequence.net/2025/03/buffy-sainte-maries-polaris-juno-prizes-revoked/ | 否 |
+| ar-c-fix1 | Buffy Sainte-Marie《Illuminations》 | Sainte-Marie 與製作人 Maynard Solomon 用 Buchla 合成器處理人聲 | Musicworks 寫 Buchla 的濾波、調變與閘控是 Juilliard 教師 Michael Czajkowski 操作；維基列製作人為 Maynard Solomon 與 Mark Roth。『他們用 Buchla 處理人聲』應補上 Czajkowski 或改寫為『人聲經 Buchla 處理』（Musicworks 單源）。 | https://www.musicworks.ca/profile/buffy-sainte-marie-reflects-illuminations | 否 |
+| ar-c-fix1 | 何欣穗《她的。發光搖擺》 | 隔年在華語音樂傳媒大獎四項提名中獲十大華語唱片 | zh 維基寫的獎名是「第三屆華語流行樂傳媒大獎」（十大華語唱片獲獎，另有最佳搖滾藝人、最佳作詞人、獨立音樂大獎提名），上線簡介寫「華語音樂傳媒大獎」，獎名不完整；內容事實一致，屬獎名寫法問題。 | https://zh.wikipedia.org/wiki/%E4%BD%95%E6%AC%A3%E7%A9%97 | 否 |
+| ar-c-fix2 | Barbara《Barbara chante Barbara》 | 是第一張全部由自己寫詞寫曲的唱片 | 法文維基專輯條目寫該張除兩首與外人合作的曲目外，其餘由她自己寫（單源，建議改為「幾乎全部」或「主要由自己創作」）。 | https://fr.wikipedia.org/wiki/Barbara_chante_Barbara | 否 |
+| ar-c-fix2 | C.O.B.《Spirit of Love》 | 1970 年 CBS 的 12 吋原盤 | 英文維基、klofmag 悼文與 At The Barrier 樂評都把《Spirit of Love》記為 1971 年（BGO 重發頁寫 1972 年）；卡池年份為 1970，建議店主核對原盤年份（Discogs）後同步卡單與簡介。 | https://atthebarrier.com/2021/04/21/c-o-b-spirit-of-love-album-review/ | 否 |
+| ar-c-fix2 | The Rollies《Dansa Yok Dansa》 | 樂團 1965 年成軍於萬隆 | 印尼文維基寫 1965 年，但 ANTARA 的印尼搖滾史報導寫 1967 年起在 Deddy Stanzah 領導下起步，兩說並存；建議改成「1960 年代中期」或加註兩說。 | https://www.antaranews.com/berita/1116114/histori-rock-indonesia-lahirnya-musisi-legenda | 否 |
+| ar-c-fix2 | Curly Ray Cline《Chicken Reel》 | Cline 十五歲時與堂兄 Ezra、哥哥 Ned 組了 Lonesome Pine Fiddlers | 親屬關係兩說：英文維基寫堂兄 Ezra 與哥哥 Ned，e-WV（Ivan M. Tribe）寫 Curly Ray、Charlie、Ned 是堂（表）兄弟；建議改成「與親族」。 | https://www.wvencyclopedia.org/entries/1401 | 否 |
 | ar-c-fix2 | Michael Burks《Make It Rain／Iron Man》 | 他生前五度入圍 Blues Music Award（Iron Man 簡介） | Alligator 官網寫入圍四次，維基寫五次，兩源不一致；建議改成『多次入圍』 | https://www.alligator.com/artists/Michael-Burks/ | 對不到卡 |
-| ar-c-fix2 | Perfect《Perfect》 | 首張只在波蘭境內發行，估計賣了超過一百萬張 | Polskie Radio 店頁稱首版約數十萬張；pl／en 維基稱約一百萬張，說法不一；Perfect 在世且仍有成員活動，銷量與認證類內容依規則不寫（含 2013 年白金認證）。建議改掉銷量句。 | https://sklep.polskieradio.pl/pl/p/Perfect-Perfect-reedycja-winyl/1399 | 是 |
-| ar-c-fix2 | 何欣穗《她的。發光搖擺》 | 隔年在華語音樂傳媒大獎四項提名中獲十大華語唱片 | zh 維基寫的獎名是「第三屆華語流行樂傳媒大獎」（十大華語唱片獲獎，另有最佳搖滾藝人、最佳作詞人、獨立音樂大獎提名），上線簡介寫「華語音樂傳媒大獎」，獎名不完整；內容事實一致，屬獎名寫法問題。 | https://zh.wikipedia.org/wiki/%E4%BD%95%E6%AC%A3%E7%A9%97 | 是 |
-| ar-c-fix2 | 脆樂團《有多少光就有多少黑》 | 專輯裡十首歌各有一幅畫，其中五幅後來進了波隆那插畫展 | TiBE 台北國際書展的 2020 波隆那插畫展台灣入選頁，丁律妏名下只列《虛線．Déjà Vu》一件；『五幅』只見 zh 維基與搜尋摘要。建議把『五幅』改成『入選波隆那插畫展』，或確認件數再寫。 | https://www.tibe.org.tw/tw/show_detail/47/87/484 | 是 |
+| ar-c-fix2 | Perfect《Perfect》 | 首張只在波蘭境內發行，估計賣了超過一百萬張 | Polskie Radio 店頁稱首版約數十萬張；pl／en 維基稱約一百萬張，說法不一；Perfect 在世且仍有成員活動，銷量與認證類內容依規則不寫（含 2013 年白金認證）。建議改掉銷量句。 | https://sklep.polskieradio.pl/pl/p/Perfect-Perfect-reedycja-winyl/1399 | 否 |
+| ar-c-fix2 | 何欣穗《她的。發光搖擺》 | 隔年在華語音樂傳媒大獎四項提名中獲十大華語唱片 | zh 維基寫的獎名是「第三屆華語流行樂傳媒大獎」（十大華語唱片獲獎，另有最佳搖滾藝人、最佳作詞人、獨立音樂大獎提名），上線簡介寫「華語音樂傳媒大獎」，獎名不完整；內容事實一致，屬獎名寫法問題。 | https://zh.wikipedia.org/wiki/%E4%BD%95%E6%AC%A3%E7%A9%97 | 否 |
+| ar-c-fix2 | 脆樂團《有多少光就有多少黑》 | 專輯裡十首歌各有一幅畫，其中五幅後來進了波隆那插畫展 | TiBE 台北國際書展的 2020 波隆那插畫展台灣入選頁，丁律妏名下只列《虛線．Déjà Vu》一件；『五幅』只見 zh 維基與搜尋摘要。建議把『五幅』改成『入選波隆那插畫展』，或確認件數再寫。 | https://www.tibe.org.tw/tw/show_detail/47/87/484 | 否 |
+| ar-d-001 | Adelaide Hall《The Adelaide Hall Collection: 1927-60》 | 第一軌是 1927 年與 Duke Ellington 錄的〈Creole Love Call〉……那也是 Ellington 首次讓女歌手參與錄音 | 「首次讓女歌手參與錄音」找不到任何來源；英國遺產機構與維基只稱她的無歌詞人聲運用是創新，並說這錄音成為兩人的首支國際熱門。「第一／首次」類宣稱無雙源，建議店主在本機改成可查證的說法（無歌詞人聲當樂器、成為 Ellington 與她的首個國際熱門）或刪去。 | https://www.english-heritage.org.uk/visit/blue-plaques/adelaide-hall/ | 否 |
+| ar-d-001 | Adele Sebastian《Desert Fairy Princess》 | 長笛乾淨少顫音，情緒明亮而不激烈 | Active Listening 形容她的長笛音色為 equally lush and piercing（既豐潤又尖銳），與「乾淨少顫音、不激烈」方向不同；找不到支持「少顫音」的來源，建議改成有出處的描述或刪去。 | https://activelistening.substack.com/p/adele-sebastian-was-a-quiet-force | 否 |
+| ar-d-001 | Akira Ohmori《To Be Young and Foolish》 | Mingus《Me Myself An Eye》的薩克斯部門裡，有他的名字……那是 1979 年 | 錄音是 1978 年 1 月（18、19、23 日，紐約），《Me, Myself an Eye》1979 年才發行；他也同列於 1980 年發行的《Something Like a Bird》。若「那是 1979 年」要指錄音年則有誤，建議改成「1978 年錄音、1979 年發行」並可補《Something Like a Bird》。 | https://jazzdisco.org/atlantic-records/discography-1978 | 否 |
+| ar-d-001 | Andy Williams《Moon River & Other Great Movie Themes》 | 收的是前一個十年的電影主題曲 | 曲目含〈As Time Goes By〉（出自 1942 年《北非諜影》）與〈Never on Sunday〉（1960 年電影），並非全是 1950 年代的片子；建議改成『收的是 1950 年代前後的電影主題曲』或刪去年代斷語 | https://en.wikipedia.org/wiki/Moon_River_and_Other_Great_Movie_Themes | 否 |
+| ar-d-001 | Angela Bofill《Angie》 | 上線簡介全文使用半形逗號與冒號（『Bofill 的首張,1978 年』『編制往爵士靠:』『編制』段落） | 中文行文不應用半形逗號與冒號，與站內規則不符；內容事實查證無誤，只需改全形標點 | https://en.wikipedia.org/wiki/Angie_(Angela_Bofill_album) | 否 |
+| ar-d-002 | Basil Kirchin《Worlds Within Worlds》 | Evan Parker 吹高音薩克斯風，Derek Bailey 彈吉他卻沒列名（1971 年 Columbia SCX 6463） | 英文維基 Basil Kirchin 條目寫 Parker 與 Bailey 參與的是第二集（1974 年 Island HELP 18），未明說 1971 版也有；搜尋摘要卻說第一集含 Parker 與 Bailey；證據互相矛盾，建議店主對照原盤 credit 或 Discogs 後再決定是否保留。另該簡介寫「動物園的叫聲與自閉症孩童的說話聲放慢」，維基只寫錄下聲音，「放慢」一說本層未查到出處。 | https://en.wikipedia.org/wiki/Basil_Kirchin | 否 |
+| ar-d-002 | Billy Parker's Fourth World《Freedom of Speech》 | 兩家是兄妹自己的 Bridgewater Publishing 與樂團的 Fourth World Publishing | Dee Dee Bridgewater 是 Cecil Bridgewater 的妻子（1970 年代婚姻，後來離婚），不是他與 Ron 的姊妹；Cecil 與 Ron 才是兄弟。簡介的「兄妹」與「Bridgewater 家的三個人」要改成「Bridgewater 夫婦與 Cecil 的弟弟 Ron」之類的寫法。 | https://en.wikipedia.org/wiki/Cecil_Bridgewater | 否 |
+| ar-d-002 | Billy Parker's Fourth World《Freedom of Speech》 | 兩家是兄妹自己的 Bridgewater Publishing | Dee Dee Bridgewater 條目寫她與 Cecil Bridgewater 結婚、後來離婚，並非兄妹關係。 | https://en.wikipedia.org/wiki/Dee_Dee_Bridgewater | 否 |
+| ar-d-002 | Black Renaissance《Body, Mind and Spirit》 | 錄音是 1976 年 6 月 15 日在紐約的 Sound Ideas 完成的 | Aquarium Drunkard 與 Village Voice 兩源皆寫錄音日為 1976 年 1 月 15 日（馬丁路德金恩 47 歲冥誕），地點同為 Sound Ideas；6 月 15 日與兩源不符，建議改為 1 月 15 日。 | https://aquariumdrunkard.com/2024/07/03/on-harry-whitakers-black-renaissance/ | 否 |
+| ar-d-003 | Bunk Johnson《Bunk Johnson and His Superior Jazz Band》 | 1931 年他在路易斯安那州 Rayne 的舞會上因為打架掉了小號與門牙 | 維基寫 1931 年、丟了小號與門牙；Syncopated Times 寫 1930 年 11 月的舞會鬥毆、他掉牙並弄壞樂器，同團小號手 Evan Thomas 當場遇害。年份與樂器是遺失或損壞兩說並存，建議年份改『1930 或 1931 年』或略去，樂器寫『小號出事』 | https://syncopatedtimes.com/bunk-johnson-out-of-the-shadows/ | 否 |
+| ar-d-003 | Bunny Berigan《The Pied Piper 1934-1940》 | Berigan 1942 年因肝硬化死於三十三歲，錄音幾乎全部集中在這六年 | 維基與 Sherman Jazz Museum 都寫他 1930 至 1931 年起就是紐約搶手的錄音室樂手，在數百張商業唱片中擔任伴奏；他最早的錄音獨奏更在 1930 年的 Hal Kemp 樂團。『錄音集中在 1934 至 1940 這六年』不成立，建議改成『領銜錄音集中在 1930 年代後半』或略去 | https://en.wikipedia.org/wiki/Bunny_Berigan | 否 |
+| ar-d-003 | Cab Calloway《The Early Years 1930-1934》 | 〈Minnie the Moocher〉…成為第一張賣破百萬的爵士唱片 | 國會圖書館與 Britannica 只寫這張唱片賣破百萬張，沒有『第一張』的說法；維基的『第一』指的是 Calloway 是第一位賣破百萬張唱片的非裔美國音樂人，主體不同。『第一張賣破百萬的爵士唱片』查不到來源，建議改成『賣破百萬張』 | https://en.wikipedia.org/wiki/Cab_Calloway | 否 |
+| ar-d-003 | Carmell Jones《The Remarkable Carmell Jones》 | 貝斯是 Gary Peacock——十年後他會是 Keith Jarrett 三重奏的一半 | 維基 Gary Peacock 條目載他 1977 年才首次與 Keith Jarrett 錄音（《Tales of Another》，與 Jack DeJohnette），這組三重奏 1983 年才以《Standards, Vol. 1》推出標準曲系列；從 1961 年算起是十六年與二十二年，不是十年。建議改成『十六年後他會是 Keith Jarrett 三重奏的一半』或略去年數 | https://en.wikipedia.org/wiki/Gary_Peacock | 否 |
+| ar-d-003 | Cassandra Wilson《New Moon Daughter》 | 1996 年出版，爵士榜以 NEW 直接進第 1 | 英文維基新專輯條目寫 1995 年由 Blue Note 發行（Billboard Top Jazz Albums 第 1 是 1996 年的事）；EWN 的葛萊美敘述亦稱「1995 年專輯」。上線簡介的「1996 年出版」可能是上榜年，建議複核實際發行日。 | https://en.wikipedia.org/wiki/New_Moon_Daughter | 否 |
+| ar-d-003 | Charles Brackeen《Rhythm X》 | 他 1940 年生於奧克拉荷馬州 Eufaula | 出生年有 1938（WMBR）與 1940（維基、MusicBrainz）兩說，出生地維基寫 Eufaula、wikidata 寫 Oklahoma City；高風險生年單靠維基家族，建議複核或改寫成「生於奧克拉荷馬州」。 | https://wmbr.mit.edu/cgi-bin/events?e=12526 | 否 |
+| ar-d-003 | Chester Thompson《Powerhouse》 | 「這張 1971 年 12 月由 Black Jazz 發行的首作是四人編制加一支長號」 | Discogs 的人員欄只有四位演奏者：風琴 Chester Thompson、鼓 Raymond Pounds、薩克斯風 Rudolph Johnson、長號 Al Hall；長號手就在四人之內，不是四人之外再加一支。建議改成「風琴、鼓、薩克斯風與長號的四人編制」。 | https://www.discogs.com/release/1186448 | 否 |
+| ar-d-003 | Chet Baker & Art Pepper《Playboys》 | 「領著一支六重奏進棚，另加一支次中音與三人節奏組」 | 維基列的人員是 Chet Baker、Art Pepper、次中音 Phil Urso、鋼琴 Carl Perkins、貝斯 Curtis Counce、鼓 Larance Marable，共六人，次中音與三人節奏組已含在內；原句讀起來像六人再加四人。建議改成「六人編制，兩支管樂之外還有次中音與三人節奏組」。 | https://en.wikipedia.org/wiki/Playboys_(Chet_Baker_and_Art_Pepper_album) | 否 |
+| ar-d-003 | Chet Baker Quartet《Singin' in the Midnight》 | 「三天的荷蘭錄音……其餘曲目，荷蘭 Timeless 遲至 1989、1990 年才分兩張出版」 | 維基《As Time Goes By》（同一四重奏 Baker／Danko／Burr／Riley）寫 1986 年 12 月 17 至 18 日在荷蘭 Monster 的 Studio 44 錄音（兩天）、1987 年由 Timeless 發行雙 LP（SJP 251/252）。與上線簡介的「三天」及「1989、1990 年」不一致；是否同一批錄音待核對 Discogs 的 Polydor 與 Timeless 版本。 | https://en.wikipedia.org/wiki/As_Time_Goes_By_(Chet_Baker_album) | 否 |
+| ar-d-003 | Chick Webb《Spinnin' the Webb: The Original Decca Recordings》 | Webb 1939 年病逝，得年三十四 | Webb 出生年份有爭議：維基與 jazz.com、PAS 採 1905（得年 34）；當年 DownBeat 與墓碑寫 1909（得年 30），紐約時報寫 1907。『得年三十四』只在 1905 說成立，建議改寫成只寫病逝年份，或加『據多數資料』。 | https://en.wikipedia.org/wiki/Chick_Webb | 否 |
+| ar-d-004 | Curtis Amy & Dupree Bolton《Katanga!》 | 小號手 Dupree Bolton 一生只留下兩張唱片，這是其中一張 | 「只留下兩張唱片」過度精簡：Bolton 另有 1944 年 Buddy Johnson 樂團錄音與 1963 年與 Gerald Wilson、Lou Rawls 等的錄音；維基與 jazz.com 的說法是主要的兩張領銜／參與唱片（Harold Land《The Fox》與本作）。建議改為「留下的主要唱片只有兩張」 | https://www.jazz.com/encyclopedia/bolton-dupree | 否 |
+| ar-d-004 | Dakota Staton《The Late, Late Show》 | 爵士歌手 Dakota Staton 在 Capitol 的 1957 年出道專輯……出道即大賣 | 「出道專輯」成立（維基專輯條目與 Encyclopedia.com 都稱 1957 年是她的首張專輯），但「出道即大賣」與時序不符：她 1954 年已在 Capitol 發單曲、1955 年獲 Down Beat 新人獎。建議改為「首張專輯就大賣」 | https://en.wikipedia.org/wiki/The_Late,_Late_Show_(album) | 否 |
+| ar-d-004 | David Mancuso《David Mancuso Presents The Loft》 | 他親自挑選的雙碟選曲 | 維基寫該選輯系列由 David Mancuso 與 Colleen "Cosmo" Murphy 共同製作（1999 年 Volume One、2000 年 Volume Two，Nuphonic），簡介漏了共同製作人；另外簡介寫「The Village Voice 形容他與其說是 DJ，不如說是派對工程師」與〈Is It All Over My Face〉未發行完整版，本層沒有找到來源可核對 | https://en.wikipedia.org/wiki/David_Mancuso | 否 |
+| ar-d-004 | Debashish Bhattacharya & Bob Brozman《Mahima》 | 開出全世界第一份滑棒吉他教程 | 維基 Debashish Bhattacharya 條目導言寫 is said to have introduced the first Slide Guitar Syllabus（據稱），生平節又寫 2016–2021 年寫出第一份滑棒吉他教程，兩處年代與說法不同，只有單一來源；建議改成『據稱』或拿掉。 | https://en.wikipedia.org/wiki/Debashish_Bhattacharya | 否 |
+| ar-d-004 | Debashish Bhattacharya & Bob Brozman《Mahima》 | 曾進 Billboard 世界音樂榜前十 | 只見維基單一來源（條目寫 Mahima 與 3: Calcutta Slide-Guitar 都進 Billboard World Music Charts 前十），沒有榜單原頁；榜名次屬高風險事實，建議店主自行核對或改寫。 | https://en.wikipedia.org/wiki/Debashish_Bhattacharya | 否 |
+| ar-d-004 | Dick Griffin《The Eighth Wonder》 | 1994 年那筆德國 CD 的標題後面多了 & More | 維基 Dick Griffin 條目寫 Konnex 的 The Eighth Wonder & More 是 1995 年發行，Discogs 條目（事實庫來源）寫 1994 年，兩處不一致；上線簡介採 1994 年，建議核對 Konnex KCD 5059 的實際發行年，或改成不帶年份的寫法。 | https://en.wikipedia.org/wiki/Dick_Griffin | 否 |
+| ar-d-004 | Dodo Marmarosa《Dodo's Back!》 | 一九六〇年他開車赴加州途中車子在芝加哥拋錨，推廣人 Joe Segal 趁機安排 Argo 錄音 | 本層讀了維基 Dodo Marmarosa、維基《Dodo's Back!》、notoriousjazz 與 Pittsburgh Music History 四頁，都沒有車子拋錨與 Joe Segal 這段；《Dodo's Back!》維基條目寫的是 Jack Tracy 監製。建議店主回查這段出處，查不到就拿掉或改寫。 | https://en.wikipedia.org/wiki/Dodo%27s_Back! | 否 |
+| ar-d-004 | Dodo Marmarosa《Dodo's Back!》 | Leonard Feather 說凡認真關心現代爵士鋼琴史的人都應當聽它 | 已讀來源裡沒有這句話；搜尋結果摘要裡 Feather 的說法是 Marmarosa 在爵士史上佔有『小而重要的位置』（a small but significant place），出處不是這張專輯。建議核對原文出處。 | https://en.wikipedia.org/wiki/Dodo_Marmarosa | 否 |
+| ar-d-004 | Dodo Marmarosa《Dodo's Back!》 | 一九四〇年代末退回匹茲堡，幾近銷聲匿跡 | 維基寫 1948 年回匹茲堡後『只在地方上演出約十年』，Pittsburgh Music History 寫 1950 年代末仍在當地錄音（含 1958 年《Pittsburgh》專輯），兩源都不支持『銷聲匿跡』；建議改成『退回匹茲堡、只在地方演出』。 | https://sites.google.com/view/pittsburghmusichistory/pittsburgh-music-story/jazz/jazz---early-years/dodo-marmarosa | 否 |
+| ar-d-004 | Doris Day《Day by Day》 | 這是他（Paul Weston）與 Day 首度合作 | 本層讀了 Paul Weston 維基頁、Day by Day 與 Day by Night 兩張專輯的維基頁，都沒有寫這是兩人的首度合作，查不到支持來源；建議改寫成可查證說法或刪去。 | https://en.wikipedia.org/wiki/Paul_Weston | 否 |
+| ar-d-004 | Doris Day《Day by Day》 | 小編制爵士樂隊換下華麗管弦，質地輕盈 | 維基專輯頁只寫 Paul Weston 樂團伴奏、由他編曲與指揮，分類為 pop，沒有「小編制爵士」的描述；搜尋摘要提到續作《Day by Night》改用大樂團與弦樂，但該句未開到原頁證實。建議對照 Discogs 編制再決定是否保留。 | https://en.wikipedia.org/wiki/Day_by_Day_(Doris_Day_album) | 否 |
+| ar-d-005 | Eliades Ochoa《Sublime Ilusión》 | 1978 年起接掌 1939 年創團的 Cuarteto Patria | Cuarteto Patria 的團長年份各來源不一致：英文維基 1978、官網與 World Circuit 與芝加哥交響樂團網站 1982；創團年也有 1939（維基）與 1940（官網）兩種寫法，建議改成不帶年份或標明說法不一。 | https://eliadesochoaofficial.com/biography/ | 否 |
+| ar-d-005 | Eliades Ochoa《Sublime Ilusión》 | 入圍第 42 屆葛萊美最佳傳統熱帶拉丁專輯 | 2000 年（第 42 屆）該類別在維基歷年表中名稱為 Best Traditional Tropical Latin Performance，官網寫成 Album；『專輯』二字與維基類別名不符，建議核對葛萊美官方網站後再定名。 | https://en.wikipedia.org/wiki/Grammy_Award_for_Best_Tropical_Latin_Album | 否 |
+| ar-d-005 | Elton Dean Quartet《They All Be on This Old Road》 | 1977 年由 Ogun 以 OG 410 發行 | Ogun 官方頁面把原版 LP 編號寫成 OG400；Discogs 與官方頁面不一致，建議核對 LP 標籤實物或 Discogs 頁後再定。 | https://ogunrecording.co.uk/releases/elton-dean-quartet-they-all-be-on-this-old-road | 否 |
+| ar-d-005 | Fats Sadi《"Fats" Sadi's Combo》 | 美國的 Blue Note BLP 5061 八軌相同、曲序全異，1955 年才出 | 本層未能核對：維基寫 Blue Note 1954 年發行，上線簡介寫 1955 年；BLP 5061 曲序與『八個人』也無資料可驗。僅提醒店主複核。 | https://en.wikipedia.org/wiki/Fats_Sadi | 否 |
+| ar-d-005 | Frank Loesser《Guys and Dolls》 | 隔年東尼獎拿下含最佳音樂劇在內的五項 | 本層只讀到 Songwriters Hall of Fame『swept the Tony Awards』與維基『won a Tony Award』，沒有開到逐項得獎名單，『五項』建議回頭核對東尼獎官網或維基 1951 年東尼獎頁。 | https://www.songhall.org/profiles/frank-loesser | 否 |
+| ar-d-005 | Fred Jackson《Hootin' 'n Tootin'》 | Fred Jackson 一生只留下這一張領銜錄音 | 維基與 Blue Note 傳記都記載他另有一次領銜錄音（第二次 Blue Note session），直到 1998 年才作為 CD 加碼曲目發行；『一生只留下這一張』建議改成『生前只發行過這一張個人專輯』。 | https://en.wikipedia.org/wiki/Fred_Jackson_(saxophonist) | 否 |
+| ar-d-005 | George Coleman《Amsterdam After Dark》 | 標題曲是 Coleman 獻給阿姆斯特丹的小調主題，日後成為他的保留曲目 | 英文維基專輯條目明說該條沒有關於標題曲的創作背景或靈感；錄音地點是紐約而不是阿姆斯特丹。「小調」「獻給阿姆斯特丹」「保留曲目」三項均查無來源，建議刪除或改寫為可查證的版本。 | https://en.wikipedia.org/wiki/Amsterdam_After_Dark | 否 |
+| ar-d-005 | George Coleman《Amsterdam After Dark》 | 他以領袖身分最廣被引述的錄音多半從這張數起 | 查無任何來源支持這個說法（維基只記 AllMusic 與 Rolling Stone Jazz Record Guide 各給四星）；屬無出處的評價句，建議刪除。 | https://en.wikipedia.org/wiki/Amsterdam_After_Dark | 否 |
+| ar-d-005 | Getatchew Mekuria《Éthiopiques 14: Negus of Ethiopian Sax》 | 五〇年代初在未接觸西方自由爵士的情況下自行長出近似的吹法 | 來源只說他獨立於西方自由爵士之外發展、不熟悉 Ornette Coleman 與 Albert Ayler，沒有「五〇年代初」這個時間點；他 1955 年才轉進 Haile Selassie I 劇院樂團，shellela 薩克斯風獨奏的成形時間未見來源。建議刪去「五〇年代初」。 | https://en.wikipedia.org/wiki/Getatchew_Mekurya | 否 |
+| ar-d-006 | Glenn Miller《The Complete Glenn Miller 1938-1942》 | 〈In the Mood〉2002 年入選美國國家錄音資料登記 | 維基 In the Mood 條目寫 1983 年入選葛萊美名人堂、2004 年入選國家錄音資料登記；搜尋結果摘要也寫 2004。本層只讀到維基一個來源（loc.gov 清單 403），建議店主在 loc.gov 核對後再改。 | https://en.wikipedia.org/wiki/In_the_Mood | 否 |
+| ar-d-006 | Hailu Mergia & Dahlak Band《Wede Harer Guzo》 | 〈Bati Bati〉與〈Yene Nesh Wey〉是常被引用的段落 | 本層讀到的四個來源（維基、okayafrica、pan-african-music 兩篇）只點名〈Sintayehu〉與〈Anchin Kfu Ayinkash〉（後者維基稱串流破千萬），沒有出現〈Bati Bati〉與〈Yene Nesh Wey〉；曲名未能核實，建議店主對照 Discogs 曲目表後再決定保留與否。 | https://www.okayafrica.com/hailu-mergia-wede-harer-guzo-reissue/ | 否 |
+| ar-d-006 | Harold Arlen《The Wizard of Oz》 | 1939 年的電影配樂，等到 1956 年 LP 問世才第一次成為唱片 | 維基原聲帶條目寫 1956 年的 MGM Records LP 是電影原聲帶的首度發行，但 1956 年之前已有 1939 年 Decca 發行的專輯（Judy Garland 與 Ken Darby Singers 專門錄製，只有歌聲、不是電影音軌）。上線簡介同一段又寫 1939 年 Decca 版〈Over the Rainbow〉，建議把『第一次成為唱片』改成『電影原音的第一次發行』。 | https://en.wikipedia.org/wiki/The_Wizard_of_Oz_(soundtrack) | 否 |
+| ar-d-006 | Hiromi《Another Mind》 | 翌年拿下日本金唱片大獎的年度海外爵士專輯 | imidas 與 renote 兩源只寫日本金唱片大獎的『Jazz Album of the Year』（年間ジャズアルバム大賞），沒有『海外』的限定語；頒獎年份兩源也不一致（2003 或 2004）。『海外』二字與『翌年』建議店主確認或刪去。 | https://renote.net/articles/329258 | 否 |
+| ar-d-007 | Jimmie Lunceford《Lunceford Special》 | Lunceford 是師範出身的樂團訓練者 | Lunceford 讀的是納許維爾的 Fisk University（Britannica 稱取得學位，另在紐約市立學院念過研究所課程），並非師範學院出身；他當過孟菲斯高中的音樂與體育老師，『師範出身』容易讀成讀過師範學校，建議改成『曾任高中老師、Fisk 大學出身』 | https://www.britannica.com/print/article/351395 | 否 |
+| ar-d-007 | Jimmy Raney《A》 | 1958 年由 Prestige 以單字母《A》為題發行 | 英文維基《A》專輯頁寫 1957 年由 Prestige 發行（PR 7089）；卡池年份欄為 1958，與維基不一致，單源，待本機以 Discogs 或 Prestige 目錄核對 | https://en.wikipedia.org/wiki/A_(Jimmy_Raney_album) | 否 |
+| ar-d-007 | Joe McPhee《Nation Time》 | 身後是風琴、電吉他與兩位打擊樂手 | 維基專輯頁列的陣容核心是 Mike Kull（鋼琴與電鋼琴）、Tyrone Crabb（貝斯與電貝斯）與兩位打擊樂手，風琴（Herbie Lehman）與吉他（Dave Jones）、中音薩克斯風（Otis Greene）只在部分曲目出現；簡介只列風琴、電吉他與打擊樂，漏了鋼琴與貝斯，可能讓讀者以為沒有節奏組。建議改寫或補上。 | https://en.wikipedia.org/wiki/Nation_Time | 否 |
+| ar-d-008 | Keith Mansfield / John Cameron《Voices in Harmony》 | 「John Cameron 替 Donovan 編了美國冠軍單曲〈Sunshine Superman〉；那個編曲是他的樂團 CCS 為 Led Zeppelin 的〈Whole Lotta Love〉做的器樂版」 | 「那個編曲」緊接在〈Sunshine Superman〉之後，讀起來像是說〈Sunshine Superman〉的編曲就是 CCS 的〈Whole Lotta Love〉；實際上兩件事不同：維基寫 Cameron 與 Spike Heatley 共同為 Donovan 的〈Sunshine Superman〉編曲，而〈Whole Lotta Love〉器樂版是 Top of the Pops 主題曲的來源。建議拆成兩句、補明「Top of the Pops 主題曲」。 | https://en.wikipedia.org/wiki/John_Cameron_(musician) | 否 |
+| ar-d-008 | Kočani Orkestar《L'Orient est rouge》 | 「多年後樂隊因《Borat》未經授權使用〈Siki siki baba〉而與片方興訟，同案的另一位原告正是 Esma Redžepova」 | 維基 Borat (soundtrack) 寫的是 Esma Redžepova 與 Naat Veliov（Kočani Orkestar 的前領軍、〈Siki siki baba〉的作曲者，2000 年前後已離團）「planned to file a lawsuit」，並非樂隊本身提告；最後獲賠 26000 歐元的只有 Redžepova，原因是她的製作人曾授權卻沒通知她。沒有來源說樂隊是原告，也沒有來源說 Veliov 實際成為原告。建議改成「作曲者 Naat Veliov 與 Esma Redžepova 曾表示要對片方提告」，或整句刪除。 | https://en.wikipedia.org/wiki/Borat_(soundtrack) | 否 |
+| ar-d-008 | Kočani Orkestar《L'Orient est rouge》 | 「北馬其頓Kočani的羅姆銅管樂隊,2000年前由小號手Naat Veliov領軍」整段 | 格式不合房規：中文與英數之間沒有空格、中文行文用了半形逗號「,」，且「Borat」「Siki siki baba」等處同樣缺空格；屬格式問題，不是事實錯誤。 | https://en.wikipedia.org/wiki/Ko%C4%8Dani_Orkestar | 否 |
+| ar-d-009 | Makoto Terashita《Topology》 | 1984 年 6 月 11 日錄於 Victor Studio，Aketa's Disk 的 AD-16 | BBE 與 Audiopile 都寫原版 1983 年於 Aketa's Disk 發行；若 1983 年屬實，簡介的 1984 年錄音日期與卡池年份 1984 需主線核對 Discogs 版次。簡介本身只寫錄音日，未寫發行年，故僅提示。 | https://bbemusic.com/product/topology | 否 |
+| ar-d-009 | Maria Bethânia《Álibi》 | 第一張賣到九十萬張的巴西女歌手唱片，單曲〈Álibi〉本身售出逾七十八萬張 | 兩個來源（Brasil de Fato 2025、維基）都寫《Álibi》1978 年賣破一百萬張、是第一位達此門檻的巴西女歌手；九十萬與單曲七十八萬可能是另一種口徑（例：特定認證或統計時點），需主線核對上線簡介的出處再決定是否改口 | https://www.brasildefato.com.br/2025/02/14/60-curiosidades-e-informacoes-sobre-os-60-anos-de-carreira-de-maria-bethania/ | 否 |
+| ar-d-010 | Nara Leão《Dez Anos Depois》 | 1969 年在軍政府壓力下移居巴黎，「一度對外宣布退出歌壇」 | 來源只寫她 1970 年代為家庭暫離音樂、不想再要那種事業的喧囂，查不到她對外「宣布退出」的出處；「二十四首」也未能在專輯條目核對 | https://en.wikipedia.org/wiki/Nara_Le%C3%A3o | 否 |
+| ar-d-010 | Nucleus《We'll Talk About It Later》 | 碟上是 Carr 的小號、Karl Jenkins 的上低音薩克斯風與雙簧管、Chris Spedding 的吉他與布祖基琴、Jeff Clyne 的貝斯 | Be With Records 商品頁列的班底還有 Brian Smith（薩克斯風）與 John Marshall（鼓），上線簡介的名單少兩人；同頁把 Jenkins 列為電鍵盤，與簡介寫的上低音薩克斯風與雙簧管不一致。建議用 Discogs 或原盤背面核對。 | https://www.bewithrecords.com/products/nucleus-well-talk-about-it-later-lp | 否 |
+| ar-d-010 | Original Dixieland Jazz Band《The 75th Anniversary》 | 同年 3 月 7 日以 Victor 18255 發行 | 發行日各來源不一致：維基〈Livery Stable Blues〉寫 1917 年 3 月 7 日，維基樂團條目與 earlyjas.org 寫 1917 年 5 月；建議改寫成不帶日期的版本，或核對 Victor 目錄 | https://earlyjas.org/Personalities/FirstJazzRecording.html | 否 |
+| ar-d-010 | Paolo Conte《Paolo Conte (1984)》 | 也是他與 CGD 二十年合作關係的起點 | 義大利維基專輯條目只寫這是他在 CGD 的第一張、也是與經理人兼製作人 Renzo Fantini 合作的開端，沒有「二十年合作」的出處；建議核對或改寫成「他在 CGD 的第一張」 | https://it.wikipedia.org/wiki/Paolo_Conte_(album_1984) | 否 |
+| ar-d-011 | Paul Rutherford《The Gentle Harm of the Bourgeoisie》 | 這是史上第一張長號獨奏的自由即興唱片。 | 找不到任何來源把本盤稱為史上第一張；維基專輯頁只說它是 Rutherford 以個人名義的首張發行、是長號獨奏的重要錄音（1974 年錄、1976 年 Emanem 發行）。維基 Albert Mangelsdorff 條目記他 1972 年在 MPS 錄了第一張長號獨奏專輯《Trombirds》，比本盤早四年（該專輯偏爵士、是否算自由即興可議，但『史上第一張長號獨奏』站不住）。建議改成「他以個人名義的首張發行」或「長號獨奏的重要錄音」。 | https://en.wikipedia.org/wiki/Albert_Mangelsdorff | 否 |
+| ar-d-011 | Rien Djamain《Api Asmara》 | 這張 1975 年由萬隆的 Hidayat 唱片公司發行 | id.wikipedia 把《Api Asmara》列為 1976 年，kumparan 與 MusicBrainz 寫 1975；年份待核，建議店主以實體盤或 Discogs 版次確認。 | https://id.wikipedia.org/wiki/Rien_Djamain | 否 |
+| ar-d-012 | Savina Yannatou & Primavera en Salonico《Sumiglia》 | 2005年發行，是她轉入ECM後的第一張 | ECM 官方頁面：Primavera en Salonico 的 ECM 首作是 2003 年 1 月發行的現場專輯《Terra Nostra》（ECM 1856）；《Sumiglia》（ECM 1903，2005 年 3 月）是第一張 ECM 錄音室專輯與她和 Manfred Eicher 的首次合作，應改寫為『第一張 ECM 錄音室專輯』 | https://ecmrecords.com/product/sumiglia-savina-yannatou-primavera-en-salonico/ | 否 |
+| ar-d-012 | Savina Yannatou & Primavera en Salonico《Sumiglia》 | 與1990年代中期組成的樂隊Primavera en Salonico合作 | World Music Central 寫樂團 1990 年代初由她與塞薩洛尼基的樂手合組，1994 年已發行首張同名專輯（猶太歌謠）；與維基的『1990 年代中期』不一致，建議改成『1990 年代』或略去起點；僅單一獨立來源，待核 | https://worldmusiccentral.org/?p=64782 | 否 |
+| ar-d-012 | Shadowfax《Folksongs for a Nuclear Village》 | 隔年拿下葛萊美最佳新世紀專輯 | 葛萊美該類別在第 31 屆（1989 年）名稱是 Best New Age Performance，1992 年起才改稱 Best New Age Album，『最佳新世紀專輯』是後來的名稱；建議改為『最佳新世紀演出』或『葛萊美新世紀類別』；兩源（維基樂團條目與維基葛萊美類別條目）屬同一家族，非獨立，grammy.com 查不到頁面 | https://en.wikipedia.org/wiki/Grammy_Award_for_Best_New_Age_Album | 否 |
+| ar-d-012 | SOIL & "PIMP" SESSIONS《Pimp Master》 | 東京六人編制 2005 年 2 月的首張全長作由 Victor 發行 | 英文維基《Pimp Master》寫發行日是 2005 年 6 月 23 日、是第二張錄音室專輯（前一張為 2004 年《Pimpin'》）；《Pimpoint》條目的專輯序列（Pimp Master 2005、Pimp of the Year 2006、Pimpoint 2007 為第四張）與之一致。月份與「首張」皆需改，建議本機再核對 Victor 官方或 Discogs。 | https://en.wikipedia.org/wiki/Pimp_Master | 否 |
+| ar-d-012 | Sona Jobarteh《Fasiya》 | 堂兄為 Toumani Diabaté | 維基與 Mail & Guardian 只寫 cousin，且兩人姓氏不同（Jobarteh 與 Diabaté），『堂兄』指同姓父系，與來源不符；宜改寫為表親或堂表親。 | https://en.wikipedia.org/wiki/Sona_Jobarteh | 否 |
+| ar-d-013 | Syrius《Devil's Masquerade》 | 英文歌詞由 Charlie Fischer 寫 | 開頁讀到的來源（匈牙利文 Origo、英文維基 Orszaczky 條）都拼作 Fisher，Fischer 拼法待核；若以 Discogs 製作欄或原盤封底為準則維持，請店主對照原盤 | https://www.origo.hu/kultura/2008/02/az-elfeledett-legenda-orszaczky-jackie-es-a-syrius-tortenete | 否 |
+| ar-d-013 | The Golden Gate Quartet《Swing Down, Chariot》 | 1937 年 8 月 14 日的首次 Bluebird 錄音兩小時內錄完十四首 | 日期來源不一：維基寫 8 月 14 日，encyclopedia.com 與（搜尋摘要所述）UCSB 唱片錄音史資料庫寫 8 月 4 日；建議簡介改寫「1937 年 8 月」或只寫 1937 年 | https://www.encyclopedia.com/education/news-wires-white-papers-and-books/golden-gate-quartet | 否 |
+| ar-d-013 | The Golden Gate Quartet《Swing Down, Chariot》 | 1941 年在羅斯福就職典禮獻唱，成為首組在憲法廳獻唱的黑人團體 | 開得到的來源（encyclopedia.com）只寫他們在 1941 年羅斯福就職晚會於 Constitution Hall 演出，沒有「首組黑人團體」的說法；這句只見搜尋摘要，屬「第一」類宣稱，建議簡介刪去「首組」或找到兩源 | https://www.encyclopedia.com/education/news-wires-white-papers-and-books/golden-gate-quartet | 否 |
+| ar-d-013 | The Golden Gate Quartet《Swing Down, Chariot》 | 1940 年轉入 Columbia 旗下的 OKeh | Cross Rhythms 寫 1939 年起為 Columbia 錄音，與簡介的 1940 年與 OKeh 不同；未見 OKeh 的來源，建議核對 | https://www.crossrhythms.co.uk/articles/music/Gospel_Roots/9265/p1/ | 否 |
+| ar-d-013 | The Greyboy Allstars《West Coast Boogaloo》 | James Brown 班底的長號手 Fred Wesley 全程參與、共同掛名 | DownBeat 樂評寫 Wesley 在「數首曲子」裡獨奏，Whopperjaw 與維基都稱他是首張的特別來賓（special guest）；「全程參與、共同掛名」與這些來源不符，建議改為「特別來賓、在數首曲子裡獨奏」，除非有封面或唱片標佐證 | https://downbeat.com/reviews/detail/west-coast-boogaloo | 否 |
+| ar-d-013 | The Modest Jazz Trio《Good Friday Blues》 | 團名只用過這一次，三個人對等：Jim Hall 的吉他，加兩把低音，沒有鼓。兩位低音手 Red Mitchell 與 Red Kelly 都叫 Red。 | Red Mitchell 在這張彈的是鋼琴，貝斯是 Red Kelly 一人；Blue Note Tone Poet 頁寫 Jim Hall 吉他、Red Mitchell 鋼琴、Red Kelly 貝斯，MusicBrainz 的團體成員關係也記 Mitchell 為 piano、Kelly 為 bass。簡介的『加兩把低音』與『兩位低音手』須改為吉他、鋼琴、貝斯。 | https://shop.udiscovermusic.com/products/modest-jazz-trio-good-friday-blues-tone-poet-vinyl-series-lp | 否 |
+| ar-d-013 | The Muddy Basin Ramblers《Formosa Medicine Show》 | 這是 2003 年由住在台北的美籍與英籍外僑組成的 jug band 第二張專輯 | 英文維基《The Muddy Basin Ramblers》寫 formed in 2002，《Taipei Times》2015 年 2 月報導寫樂團 2002 年由外僑成立；兩源皆為 2002 年，簡介的 2003 年應改為 2002 年。維基《Formosa Medicine Show》條目寫 2003 年，與同家族的樂團條目互相不一致。 | https://www.taipeitimes.com/News/feat/archives/2015/02/02/2003610619 | 否 |
+| ar-d-013 | The Mystery Kindaichi Band《金田一耕助の冒険》 | 一張虛構的電影原聲帶 | 來源（Wewantsounds 文案轉載）寫的是以橫溝正史小說為本的 imaginary soundtrack、並非任何官方電影或電視配樂；1977 年 LP 早於 1979 年的同名東映電影，也與之無關。「電影原聲帶」易讓人誤會是某部電影的配樂，建議改成「以小說為題的想像原聲帶」。 | https://goodtasterecords.com/collections/lp-albums/products/mystery-kindaichi-band-the-adventures-of-kindaichi-kosuke-vinyl-lp | 否 |
+| ar-d-013 | The Piano Choir《Handscapes》 | 全碟錄於 1972 年 10 月 28 日 | 英文維基專輯條目寫錄音有兩場，1972 年 6 月 18 日與 10 月 28 日，皆在紐約 The Public Theater；Substack 專文也說現場錄音橫跨 1972 年 6 至 10 月。 | https://en.wikipedia.org/wiki/Handscapes | 否 |
+| ar-d-014 | Tony Oxley《February Papers》 | 他 1966 年起在 Ronnie Scott's 當駐店鼓手 | 英文維基寫 1966 年搬到倫敦，International Times 與 Drumming News Network 的訃聞寫 1967 年，來源不一致，建議改成「1960 年代中期」或再查一源 | https://internationaltimes.it/tony-oxley-1938-2023/ | 否 |
+| ar-d-014 | Tony Oxley Quintet《The Baptised Traveller》 | Tony Oxley 掛鼓與編曲，另有 Kenny Wheeler 的小號、Derek Bailey 的吉他與 Jeff Clyne 的貝斯 | 編制是五重奏，漏列 Evan Parker（次中音薩克斯風）；維基專輯條目與 Tony Oxley 條目都列 Parker | https://en.wikipedia.org/wiki/The_Baptised_Traveller | 否 |
+| ar-d-014 | Tony Oxley Quintet《The Baptised Traveller》 | 內頁文字把四個曲名解成一趟想像的旅程 | 維基曲目表只有三軌（〈Crossing / Arrival〉、〈Stone Garden〉、〈Preparation〉），其中 Crossing 與 Arrival 併為一軌；若簡介所指是內頁的四段說明可保留，建議核對 | https://en.wikipedia.org/wiki/The_Baptised_Traveller | 否 |
+| ar-d-014 | Tosca《Opera》 | 1994 年兩人以 Tosca 之名在 G-Stone 發行十二吋〈Chocolate Elvis〉 | 年份兩源不一致：英文維基與 ruperthuber.com 寫 1994，Resident Advisor 的 Dorfmeister 簡介寫 1995（兩人重聚的年份）。建議在確認前改寫成不帶年份。 | https://ja.ra.co/dj/richarddorfmeister/biography | 否 |
+| ar-d-014 | Vi Redd《Bird Call》 | 1963 年以 United Artists Jazz UAJ 14016 發行 | 英文維基、jazzdisco（UAJ 14016 與 UAJS 15016，錄音 1962 年 5 月 21 至 22 日、發行 1962）、MusicBrainz 都記 1962 年；上線簡介寫 1963 年。研究稿 c139-a 曾判定 MusicBrainz 的 1962-05-22 只是 session 日，但 jazzdisco 與維基的發行年仍是 1962，建議本機再用 Billboard 或 Cash Box 查證上市月份後決定是否改簡介。 | https://www.jazzdisco.org/vi-redd/discography/ | 否 |
+| ar-d-015 | Вагиф Мустафазаде《Джазовые Композиции》 | 他被視為 jazz mugham 的開創者 | 英文維基〈Azerbaijani jazz〉把 jazz mugham 的成形歸功於 Rafig Babayev 與他的 Gaya Quartet 和 Vagif Mustafazadeh 兩方，azer.com 與 azertag 摘要則稱 Mustafazadeh 創立這個運動；『開創者』不是唯一，建議改成『jazz mugham 的奠基者之一』或加上 Babayev。 | https://en.wikipedia.org/wiki/Azerbaijani_jazz | 否 |
+| ar-d-015 | Эдди Рознер《Караван》 | 1933 年在波蘭組建仿美式編制的大樂團 | 定居與組團的年份有三種說法（英文維基 1933、ORT 專頁 1935 年底抵華沙、俄文維基波蘭時期 1934 至 1939 年），單寫 1933 年不夠穩，建議改成「納粹上台後到波蘭組建」不帶年份。 | https://holocaustmusic.ort.org/resistance-and-exile/eddie-rosner/ | 否 |
+| ar-d-015 | 中村ヨシミツ《魂のギター》 | 他在 1979 至 1985 年間替山崎ハコ、高橋ていこ、石黒ケイ伴奏 | 三次搜尋（含山崎ハコ英文維基）與 Discogs 藝人頁都找不到這句的來源，也無法確認這位中村ヨシミツ就是那位伴奏吉他手；建議在 KV 簡介確認出處，沒有就刪。 | https://api.discogs.com/artists/4609269 | 否 |
+| ar-d-015 | 坂田明《Pochi》 | 離開待了八年的三重奏 | 日文維基、jazz.com 皆寫 1972 至 1979 年，serai 訪談寫『7 年間』，約七年；『八年』是把 1972 到 1980 當成整年算，建議改『待了七年』或直接寫年份。 | https://serai.jp/?p=364762 | 否 |
+| ar-d-016 | 日野元彦クアルテット《TOKO: Motohiko Hino Quartet at Nemu Jazz Inn》 | 電吉他是當時才二十二歲的 渡辺香津美（錄音 1975 年 7 月） | MusicBrainz 記渡辺香津美生於 1953-10-14，1975 年 7 月 20 日錄音時應為 21 歲（同年 10 月才滿 22）；若簡介是以發行年算則不一致，建議改成「二十一歲」或「才二十出頭」。單源（MusicBrainz），店主改前建議再用日文維基渡辺香津美條目核一次。 | https://musicbrainz.org/artist/9a93b39f-d227-44d9-94df-965a0b52804a | 否 |
+| ar-d-016 | 白木秀雄クインテット＆スリー琴ガールズ《Sakura Sakura》 | 日本要到 1970 年才有代理盤，題名還換成了《Japan Meets Jazz》 | jazz.com 的白木條目把《Japan Meets Jazz》列為 1968 年作品，與簡介的 1970 年不符；可能是不同版本或不同年份，建議店主在本機核對日本盤實際年份後再決定是否改簡介（本層查不到該日本盤的第二來源）。 | https://jazz.com/encyclopedia/shiraki-hideo | 否 |
+| ar-d-016 | 秋吉敏子カルテット《Meditation》 | 1971 年原盤把曲子剪短了，1976 年再發才放回完整版；〈Straight No Chaser〉12 分半、〈What Now My Love〉12 分 16 秒 | microgroove 只說 1976 年版音質較佳且〈Straight No Chaser〉換了 take、鋼琴獨奏較長，沒有說原盤剪短；英文維基列的曲長是 11:55 與 10:16，與簡介數字不同（維基未說明列的是哪一版）。建議店主在本機對照實際盤面再決定是否改。 | https://microgroove.jp/2006/04/meditation_toshiko_akiyoshi_quartet/ | 否 |
+| ar-d-017 | 100 Proof (Aged in Soul)《Somebody's Been Sleeping in My Bed》 | Holland-Dozier-Holland 1969 年離開 Motown、在底特律另起 Hot Wax | 搜尋結果摘要複述英文維基寫 Holland-Dozier-Holland 是 1968 年離開 Motown（Hot Wax 1969 年成立後簽下此團）；我只開頁讀到『1969 年成立 Hot Wax』，離開 Motown 的年份未逐頁核對，建議店主複核後再決定是否改成『1968 年離開 Motown、1969 年另起 Hot Wax』。 | https://en.wikipedia.org/wiki/100_Proof_(Aged_in_Soul) | 否 |
+| ar-d-017 | Al Wilson《Show and Tell》 | 標題曲銷量突破兩百萬張 | 英文維基寫單曲賣得遠超過一百萬張（well over one million）、1973 年 12 月獲 RIAA 金唱片；我開頁讀到的來源都沒有兩百萬這個數字，建議店主複核出處，沒有就改為『破百萬』。 | https://en.wikipedia.org/wiki/Al_Wilson_(singer) | 否 |
+| ar-d-017 | Baby Washington《That's How Heartaches Are Made》 | 聽得出夜總會歌手底子帶來的咬字 | 查到的傳記（維基、WBGO、popdose、waybackattack）都沒有提到夜總會歌手背景，她的出身是 Hearts 等女子團體與 Neptune、Sue 廠牌；此句查無來源，建議刪除或改寫。 | https://waybackattack.com/washingtonbaby.html | 否 |
+| ar-d-017 | Baby Washington《That's How Heartaches Are Made》 | 中段還插進爵士曲〈Doodlin'〉 | 本層未找到曲目表來源能核對這一點，建議店主對照實物曲目表確認。 | https://en.wikipedia.org/wiki/Baby_Washington | 否 |
+| ar-d-017 | Barbara Mason《Yes, I'm Ready》 | 公認是費城之聲的前史起點 | 讀到的來源（WAMC／NPR）只說 Arctic Records 是日後 Philadelphia International 的前身基礎、Gamble 與 Huff 在此開始合寫，並沒有「公認」這個說法；此句偏重，建議改成有出處的版本。 | https://www.wamc.org/2013-06-10/arctic-records-drafting-a-blueprint-for-the-philly-sound | 否 |
+| ar-d-017 | Bassekou Kouyaté & Ngoni Ba《Segu Blue》 | 2006 年在德國 Out Here Records 錄下首張領銜作 | 來源只證實專輯 2007 年 3 月 26 日經 Out Here Records 國際發行，錄音在馬利 Bamako 的 Studio Bogolan；「2006 年」與「德國」兩點查無來源，建議改成 2007 年發行、Bamako 錄音。 | https://worldmusiccentral.org/?p=2818 | 否 |
+| ar-d-017 | Bassekou Kouyaté & Ngoni Ba《Segu Blue》 | 並收有一首悼念 Ali Farka Touré 的器樂曲 | 本層讀到的來源（WMC、Hot Press、維基）只寫他參與 Ali Farka Touré 遺作《Savane》，沒有提到《Segu Blue》收有悼念曲，建議店主對照曲目表或樂評確認。 | https://www.hotpress.com/music/bassekou-kouyate-to-play-dublin-4525115 | 否 |
+| ar-d-018 | Black Heat《Black Heat》 | 七人編制裡鍵盤、吉他、貝斯、康加與木管各據一角 | 英文維基專輯頁列出的固定樂手是 Johnell Gray、Naamon Jones、Bradley Owens、Esco Cromer、Phil Guilbeau、King Raymond Green 六位，加上客席薩克斯風手 David「Fathead」Newman；「七人」可能把客席算進去，且小號手 Guilbeau 沒被提到，建議店主對照原盤內頁確認編制。 | https://en.wikipedia.org/wiki/Black_Heat_(album) | 否 |
+| ar-d-018 | Bloodstone《Natural High》 | 攻上 Hot 100 第 10 名、靈魂單曲榜第 10 名，把專輯推上靈魂專輯榜第 2 名 | 英文維基專輯條（搜尋摘要，未開頁）寫單曲靈魂榜第 10、流行榜第 4，與上線簡介和 Bloodstone 條（流行榜第 10）互相顛倒；Billboard 站被擋，無法在雲端核對。建議店主本機對照 Billboard 榜單紀錄再決定要不要改；此條屬待核，不是已證實錯誤。 | https://en.wikipedia.org/wiki/Natural_High_(Bloodstone_album) | 否 |
+| ar-d-018 | Carl Bean and Universal Love《All We Need Is Love》 | 1975 年他在洛杉磯創立 Unity Fellowship Church | NME（2021 年訃聞）與 QSpirit 兩處都寫 Unity Fellowship Church 創立於 1982 年（該年 Bean 受封為牧師）；1975 年是英文維基 Carl Bean 條的寫法，與來源不符。建議改成 1982 年。 | https://www.nme.com/news/music/i-was-born-this-way-singer-carl-bean-has-died-at-77-3041235 | 否 |
+| ar-d-019 | Doris Duke《I'm a Loser》 | 唱片打進 R&B 榜第 7 名，然後發行它的公司倒了 | R&B 榜第 7 名是單曲〈To the Other Woman (I'm the Other Woman)〉的成績，不是專輯；開頭的「唱片」容易被讀成專輯上榜，建議改寫成「單曲」。 | https://en.wikipedia.org/wiki/Doris_Duke_(soul_singer) | 否 |
+| ar-d-019 | Elaine Brown《Seize the Time - Black Panther Party》 | 起點是 1968 年黑豹黨參謀長 David Hilliard 委託 Elaine Brown 錄下她自己寫的歌 | 委託的時間來源不一致：Red Bull Music Academy（Pat Thomas，2016）與 Active Listening 都把它放在 1969 年 1 月 Bunchy Carter 與 John Huggins 遇害之後；維基與 Encyclopedia.com 則寫 1968 年。專輯也是 1969 年發行，建議簡介拿掉年份，改寫成「David Hilliard 聽過她演唱後，要她錄下自己寫的歌」。 | https://daily.redbullmusicacademy.com/2016/05/poetry-proto-rap-and-soul-the-sounds-of-the-black-power-revolution/ | 否 |
+| ar-d-019 | Experience Unlimited《Free Yourself》 | 「三個資料庫把團名與它的簡稱擺在不同的欄位上……credit 欄的 Bass 寫 Gregory "Sugar Bear" Eliot，anv 欄的姓氏卻多一個 t；演奏與人聲 credit 十三條，其中一條的 tracks 欄只寫 A3」 | 整段在講資料庫欄位與 credit 數量，沒有寫到這支華盛頓 go-go 樂團或這張 1977 年爵士放克專輯的聲音與位置；建議改寫：1977 年 Black Fire 廠牌、爵士放克取向、Sugar Bear 當時已是團長兼貝斯手、標題曲三人合寫、2019 年 Now-Again 與 Vinyl Me, Please 重發。 | https://www.nowagainrecords.com/?s=experience+unlimited | 否 |
+| ar-d-019 | Fantastic Negrito《The Last Days of Oakland》 | 「1999 年一場車禍讓他昏迷三週」 | 車禍年份兩源不一致：維基寫 1999，Interview 雜誌 2016 年專訪與其他報導寫 2000；建議簡介改成不寫年份，或標示約 1999 至 2000 年。 | https://www.interviewmagazine.com/music/fantastic-negrito | 否 |
+| ar-d-019 | Faze-O《Riding High》 | 「Faze-O 只留下這張 1977 年首作」 | 樂團在 She Records 共發了三張專輯：《Riding High》《Good Thang》（1978）與《Breakin' the Funk》（1979），Buckeye Beat 與維基皆載；建議改成「首作」，刪去「只留下」。 | https://www.buckeyebeat.com/fazeo.html | 否 |
+| ar-d-019 | GQ《Disco Nights》 | 全張獲 RIAA 白金認證 | 維基只寫〈Disco Nights (Rock-Freak)〉單曲在美國賣破百萬張，本層兩個來源都沒有專輯白金認證的記載；建議主線核對 RIAA 資料庫，查不到就改寫成單曲銷量或刪去。 | https://en.wikipedia.org/wiki/GQ_(band) | 否 |
+| ar-d-019 | Gwen Guthrie《Gwen Guthrie》 | 開場〈Peek-A-Boo〉由 Compass Point All Stars 操刀 | Jamaica Observer 與 encyclopedia.com 都只說 1982 年這張專輯由 Sly & Robbie 製作；Compass Point All Stars 與〈Peek-A-Boo〉的歸屬僅見於搜尋摘要（說〈Peek-A-Boo〉是〈Padlock〉的後續單曲），無法確認是否為這張專輯開場曲，待查曲目表 | https://jamaicaobserver.com/2013/02/14/gwen-guthries-reggae-moments | 否 |
+| ar-d-019 | Howard Tate《Get It While You Can》 | 1967 年 4 月在 Verve 發行《Get It While You Can》 | Inquirer 訃聞與 xpn 都寫這張專輯是 1966 年的 Verve 首張，與上線簡介的 1967 年 4 月不一致；可能是單曲與專輯年份混用，待用 Discogs 或 Verve 目錄核對發行日 | https://www.inquirer.com/philly/obituaries/20111207_Howard_Tate__72__talented_soul_singer.html | 否 |
+| ar-d-020 | James Cleveland and the Angelic Choir《Peace Be Still》 | Savoy 發行後銷量逾百萬張 | 銷量說法不一：維基專輯條目引 Village Voice 稱逾百萬張，Baptist News 訪問的作者說當年最高約 80 萬張。建議改為「被稱賣出百萬張以上」並指明出處，或拿掉數字。 | https://baptistnews.com/article/author-explains-the-history-of-peace-be-still-and-its-social-influence/ | 否 |
+| ar-d-020 | Jimmy Hughes《Steal Away》 | 〈Steal Away〉是 FAME Studios 在 Muscle Shoals 錄下的第一支單曲 | FAME 更早已有紀錄：1961 年 Arthur Alexander 的〈You Better Move On〉（在 Florence 的舊址錄成），Hughes 本人 1962 年也先錄過〈I'm Qualified〉（授權 Guyden 發行）。較準確的說法是：〈Steal Away〉是 Rick Hall 在 Avalon Avenue 新錄音室做出的第一支熱門單曲。 | https://en.wikipedia.org/wiki/FAME_Studios | 否 |
+| ar-d-020 | Jody Watley《Jody Watley》 | 專輯在美國賣出兩百萬張 | 維基專輯條目一處寫美國兩百萬張、全球逾四百萬張，但同條目的認證欄只列美國白金（100 萬）與加拿大金，兩百萬的數字沒有認證來源。建議改寫為「白金唱片」或標明出處。 | https://en.wikipedia.org/wiki/Jody_Watley_(album) | 否 |
+| ar-d-020 | Junior《Ji》 | 〈Mama Used to Say〉先在美國打開局面 | 維基《Ji》頁寫 1981 年單曲、1982 年英國榜第 7，未見先在美國打開局面的說法；建議本機核對發行順序後決定是否改寫 | https://en.wikipedia.org/wiki/Ji_(album) | 否 |
+| ar-d-020 | Lenine《Na Pressão》 | 本作入圍 2000 年首屆拉丁葛萊美最佳 MPB 專輯 | 補查未找到佐證：維基 Lenine 條目只列 2015 年《Carbono》入圍第 16 屆拉丁葛萊美最佳 MPB 專輯，第 1 屆拉丁葛萊美頁取不到；請本機核對官方提名名單 | https://en.wikipedia.org/wiki/Lenine_(musician) | 否 |
+| ar-d-020 | Los Kjarkas《Canto a la Mujer de Mi Pueblo》 | 樂團憑德國 GEMA 登記提告勝訴 | en 維基寫法院為法國、確認著作權屬於 Los Kjarkas，未提 GEMA；本層查不到 GEMA 說法的來源，待核 | https://en.wikipedia.org/wiki/Los_Kjarkas | 否 |
+| ar-d-020 | Major Harris《My Way》 | 1975 年由 Atlantic 發行的首張個人專輯 | en 維基歌手條目寫《My Way》為 1974 年專輯，與卡池標示的 1975 年不一致，單源待核 | https://en.wikipedia.org/wiki/Major_Harris_(singer) | 否 |
+| ar-d-021 | Mighty Clouds of Joy《Live!... At the Apollo》 | 團體 1959 年組於洛杉磯 | 成立年各來源不一致：維基寫 1959 年，encyclopedia.com 寫 1955 年（Ligon 高中時期），Christian Post 寫 1950 年代後期起。建議改成「1950 年代」或標註年份有出入。 | https://www.encyclopedia.com/education/news-wires-white-papers-and-books/mighty-clouds-joy | 否 |
+| ar-d-021 | Nino Nardini / Roger Roger《Jungle Obsession》 | 據說 Debussy 憑一時興起，替他取了 Roger 這個名字 | 命名由來各源不一：維基寫據說是 Debussy 取的，Discogs Roger Roger 藝人頁寫是父親 Edmond Roger 一時興起取的，Space Age Pop 寫雙名是父親的私人玩笑。簡介已用「據說」，建議改寫成較保守說法或刪掉這句。 | https://www.discogs.com/artist/44313-Roger-Roger | 否 |
+| ar-d-021 | Quazar《Quazar》 | 領隊在唱片做完之前過世，替他收尾的是同年離團的鼓手；Brailey 進來把專輯做完 | 來源不一致：維基兩條目寫 Brailey 協助完成，但 Rock and Roll Globe 引 Arista A&R 主管 Vernon Gibbs 稱 Goins 過世時專輯已經完成；建議刪掉『替他收尾』的因果寫法或改成『專輯由 Brailey 協助完成（說法不一）』。 | https://rockandrollglobe.com/funk/arista-records-and-the-p-funk-multiverse/ | 否 |
+| ar-d-021 | Quazar《Quazar》 | 他（Goins）與 Brailey 同在 1978 年離開 P-Funk | Goins 離團年份兩源（georgeclinton.com 官方傳記、維基 Glenn Goins）皆為 1977；1978 只見維基 Jerome Brailey 條目，且該條說的是 Brailey 的離團年。建議改成『Goins 1977 年離開 P-Funk』。 | https://georgeclinton.com/?p=2219 | 否 |
+| ar-d-021 | RAMP《Come Into Knowledge》 | RAMP 是 Roy Ayers Music Productions 的縮寫，1976 年由 Ayers 在辛辛那提籌組 | 樂團前身是辛辛那提的翻唱樂團 Saturday Night Special，由 Landy Shores 與 John Manuel 先成立；Ayers 是在 Cincinnati Gardens 聽到他們開場後帶去紐約錄音並建議改名 RAMP。維基『1976 年由 Ayers 創立』是簡化說法；建議改成『Ayers 發現辛辛那提的本地樂團並為其命名製作』（CityBeat 單源，搜尋摘要的 JazzRockSoul 亦同說法）。 | https://www.citybeat.com/?p=159284 | 否 |
+| ar-d-021 | Ray, Goodman & Brown《Ray, Goodman & Brown》 | 紐澤西甜靈魂老將 The Moments 於 1978 年改以三位成員姓氏 Ray, Goodman & Brown 重新出發 | The Moments 是 1960 年代在華盛頓特區成軍，紐澤西是 Stang／All Platinum 所在地與 Harry Ray 的家鄉；改名年份各來源 1978（維基）與 1979（PopMatters、Bear Family 的 Polydor 簽約年）不一致。建議把『紐澤西』改為『All Platinum／Stang 旗下』或刪地名，改名年份改寫成『1970 年代末』。 | https://www.kickmag.net/2016/02/14/throwback-momentsray-goodman-brown-sexy-mama/ | 否 |
+| ar-d-022 | Ripple《Ripple》 | 樂團後來搬到亞特蘭大重組、替 Parliament-Funkadelic 的巡演暖過場 | 維基僅說在 Mothership Connection 巡演中為 George Clinton 與 Parliament Funkadelic 暖場，並未說明是替「巡演」整體；措辭可接受，僅供店主參考。上線簡介「十人編制」：維基稱九位樂手，部落格稱核心六人，兩者皆非十人，需人工確認出處。 | https://en.wikipedia.org/wiki/Ripple_(band) | 否 |
+| ar-d-022 | Sam Dees《The Show Must Go On》 | 個人專輯一停就是十四年 | 維基導言稱 Dees 在 1970 年代、1980 年代與 1990 年代皆有發行專輯，與『1975 至 1989 年個人專輯中斷』的說法可能不合；本層未查到 1980 年代專輯的確切年份，請本機對 Discogs 核對後再決定是否改寫。 | https://en.wikipedia.org/wiki/Sam_Dees | 否 |
+| ar-d-022 | Sandra Phillips《Too Many People in One Bed》 | 這是她名下唯一一張專輯 | iforcolor.org 的個人簡介寫她曾簽 Epic、並完成過一張向 Mahalia Jackson 致敬的 CD；Ace 選輯頁也提到她後來為 Okeh 錄音。『唯一一張專輯』不成立，建議改為『她早年唯一的南方靈魂專輯』或刪除。 | https://iforcolor.org/sandra-reaves-phillips/ | 否 |
+| ar-d-022 | Sandra Phillips《Too Many People in One Bed》 | 1970 年由 Canyon Records 發行 | BroadwayWorld 與 PopMatters 都說 Canyon 倒閉，專輯當年只出貨少量、從未正式流通，2013 年才由 Alive Naturalsound 首度重發；『發行』一詞建議加註。 | https://www.broadwayworld.com/bwwmusic/article/New-LPS-from-WOLFMOON-SANDRA-PHILLIPS-Out-Today-20130930 | 否 |
+| ar-d-022 | Sharon Redd《Redd Hott》 | 〈Never Give You Up〉在英國單曲榜第 20 名 | 維基 Sharon Redd 條目只寫 1992 年與 DNA 重錄的〈Can You Handle It〉進英國前 20；〈Never Give You Up〉的英國名次本層未查到來源，建議本機對 Official Charts 核對。 | https://en.wikipedia.org/wiki/Sharon_Redd | 否 |
+| ar-d-022 | Sharon Redd《Redd Hott》 | 1982 年 10 月全張曲目輪番登上告示牌舞曲榜冠軍各一週 | 本層查到的是《Redd Hott》登上舞曲專輯榜首；『每首歌輪流登頂各一週』沒有找到來源，建議核對或改寫成『專輯登上舞曲專輯榜榜首』。 | https://jointzoftheday.substack.com/p/sharon-redd-october-19-1945-may-1 | 否 |
+| ar-d-022 | Skull Snaps《Skull Snaps》 | 收尾曲〈It's a New Day〉的無伴奏開場鼓拍在 1989 年被 Stezo 的〈It's My Turn〉率先取樣 | Dooley-O 與 Chris 在 1980 年代末已拿這段鼓做暫停鍵節拍（〈Watch My Moves〉，2002 年才由 Stones Throw 發行）；Stezo 是最早『發行』的取樣，建議改寫為『最早廣傳／最早發行』 | https://microchop.substack.com/p/511-songs-sampled-the-skull-snaps | 否 |
+| ar-d-022 | Spencer Wiggins《The Goldwax Years》 | 1964 年被 Goldwax 廠主 Quinton Claunch 發掘後只出過單曲、從未有正規專輯 | 維基記他 2003 年由 Tavette Records 發行福音專輯《Keys to the Kingdom》，1977 年日本 Vivid 也出過收他 Goldwax 錄音的彙編專輯；「從未有正規專輯」過於絕對，限定在 Goldwax 時期較準。 | https://en.wikipedia.org/wiki/Spencer_Wiggins | 否 |
+| ar-d-023 | The Chantels《We Are the Chantels》 | 2019 年入選搖滾名人堂單曲類 | The Chantels 至今未入選搖滾名人堂（2001、2009 年進最終名單未獲通過）；2019 年的榮譽是布朗克斯一個街角以團命名。 | https://amsterdamnews.com/news/2026/08/06/from-the-bronx-to-the-world-legendary-singer-arlene-smith-of-the-chantels-passes-at-84/ | 否 |
+| ar-d-023 | The Dells《There Is》 | 〈Stay in My Corner〉重錄成六分十四秒的慢板長篇 | VGHOF 寫單曲版為六分十秒；六分十四秒若是專輯版長度，簡介應註明版本，否則與單曲長度矛盾（小疑點，不確定）。 | https://vocalgroup.org/?p=709 | 否 |
+| ar-d-023 | The Highway QC's《Oh Lord I Pray》 | Sam Cooke 十四歲進團、1950 年離開 | 離團年與 Journal of Gospel Music 歷史文章吻合；但該文寫 Cooke 1947 年進團（當時約 16 歲），與『十四歲』（事實庫引 Guralnick）不合，進團年齡兩說並存，建議改寫成『少年時期進團』。 | https://journalofgospelmusic.com/quartet/rise-chicagos-highway-q-c-s-gospels-golden-era-1947-1964/ | 否 |
+| ar-d-023 | The Masqueraders《Everybody Wanna Live On》 | Hayes 一人兼製作、編曲、鍵盤與重混工程 | Soul Source 的團史文章寫這張專輯的管絃編曲出自 Lester Snell，與『編曲由 Hayes 一人包辦』不合；建議核對 Discogs 製作名單後再決定是否改成『製作與重混』。 | https://www.soul-source.co.uk/articles/soul-articles/hof-the-masqueraders-male-group-inductee-r3077/ | 否 |
+| ar-d-023 | The Mohawks《The Champ》 | 被超過八百首歌取樣或模仿 | Electronic Sound 引 WhoSampled 的統計是 663 次後續使用，Hawkshaw 訃聞只說數百首；上線簡介的『八百首』找不到來源支持，建議改成『數百首』。 | https://www.electronicsound.co.uk/?p=8909 | 否 |
+| ar-d-023 | The Pilgrim Travelers《Look Up!》 | 團 1936 年成軍於休士頓，1942 年才遷洛杉磯 | 遷居洛杉磯的年份兩源不一致：維基寫 1942，Crossrhythms 寫 1947；建議改為不寫遷居年或標明說法不一 | https://www.crossrhythms.co.uk/articles/music/The_Pilgrim_Travelers_The_pioneering_quartet_dubbed_gospels_first_showmen_/46379/p1 | 否 |
+| ar-d-023 | The Rance Allen Group《A Soulful Experience》 | 整張把搖滾與靈魂樂手法嫁接到黑人福音的做法，比 Andrae Crouch、The Winans 的跨界成功早了好些年 | 這句只有維基一句 prefigured 為據，Andrae Crouch 在 1960 年代末至 1970 年代初也已有跨界作品，「早了好些年」缺獨立來源，建議降級措辭或刪除 | https://en.wikipedia.org/wiki/The_Rance_Allen_Group | 否 |
+| ar-d-023 | The Sunset Travelers《On Jesus' Program》 | 1956 年他還在唸高中就進團 | 加入年份兩源不一致：維基與 Journal of Gospel Music 的一段寫 1956，同文另一段與經理 Blake 招人的敘述寫 1957 年初；建議改為「還在唸高中時」 | https://journalofgospelmusic.com/gospel/on-jesus-program-the-gospel-soul-of-o-v-wright/ | 否 |
+| ar-d-023 | The Three Degrees《The Three Degrees》 | 1965 年成軍、輾轉多家廠牌 | 維基與 Qobuz 小傳都寫成軍於 1963 年前後（維基單頁寫創始成員回憶「約 63 年、高中最後一年」）；1965 年是首張單曲〈Gee Baby (I'm Sorry)〉在 Swan Records 發行的年份，簡介把出片年當成軍年。 | https://www.qobuz.com/ca-en/interpreter/the-three-degrees/93162 | 否 |
+| ar-d-023 | The Trammps《Disco Inferno》 | 1977 年收入電影《Saturday Night Fever》原聲帶後重發，攻上 Hot 100 第 11 名 | 原聲帶是 1977 年，單曲重發與登上 Hot 100 第 11 名是 1978 年（維基寫 re-released in 1978，peaking at number 11）；簡介的語序容易讓人讀成 1977 年登上 Hot 100。 | https://en.wikipedia.org/wiki/The_Trammps | 否 |
+| ar-d-024 | Van Hunt《Van Hunt》 | 2005 年入圍葛萊美最佳都會／另類演唱 | Grammy.com 記這筆提名為第 48 屆（2006 年頒獎）Best Urban/Alternative Performance；維基寫 2005 年。簡介只說 2005 年易被讀成頒獎年，建議改寫「第 48 屆葛萊美」或「2006 年頒獎的葛萊美」（小疑點，依 Grammy.com）。 | https://grammy.com/artists/van-hunt/3084 | 否 |
+| ar-d-024 | Victor Uwaifo《Guitar Boy Superstar 1970-76》 | 1965 年以〈Joromi〉成為首位在非洲拿下金唱片的奈及利亞人 | Afropop 寫〈Joromi〉1966 年在 Phonogram 發行、1969 年前銷量達 10 萬而拿到金唱片；維基寫 1965 年發行，其得金唱片年份「1996」顯然是筆誤。「1965 年拿金唱片」沒有可靠來源，且「首位」是各處的說法（非洲第一張金唱片）；建議改成「〈Joromi〉被稱為非洲第一張金唱片」並拿掉年份。 | https://afropop.org/articles/uwaifo | 否 |
+| ar-d-024 | Victor Uwaifo《Guitar Boy Superstar 1970-76》 | 收錄他 Akwete、Shadow、Ekassa 等自創律動時期的錄音 | Akwete 發展於 1965 至 1968、Shadow 在 1969 年；Soundway 這套集中在 1970 年代初的 Ekassa 系列（KFJC 評論：以 Ekassa 為主）。「Akwete、Shadow」時期的錄音大多不在這套裡；曲數 19 首也因各處目錄而異（18 或 19）（小疑點）。 | https://spidey.kfjc.org/3043/uwaifo-sir-victor-guitar-boy-superstar-1970-76-soundway-records/ | 否 |
+| ar-d-024 | Vivian Green《A Love Story》 | 在 Jill Scott 之後接棒的費城女聲行列裡，這張是最常被點名的入口之一 | 查證過程找不到任何來源說她是 Jill Scott 之後接棒的費城女聲，或這張是最常被點名的入口；PopMatters 評論並明說不把 Scott 當直接風格比較。這句屬無出處的評價，建議刪除或改成有來源的「曾擔任 Jill Scott 巡迴和聲歌手」。 | https://www.popmatters.com/?p=625248 | 否 |
+| ar-d-024 | Wayne Davis《Wayne Davis》 | 掛名者自己有 Producer 一條，另一條 Producer 與 Executive-Producer 掛 Jimmy Gray | Strut 重發頁面寫此專輯由 Jimmy Watkins 與 Bias Studios 經理 Bob Dawson 製作，Jimmy Gray 是 Black Fire 廠牌主人；Discogs 的 credit 欄與廠牌說法不一致，簡介宜只說「Discogs credit 欄記載」或淡化製作人細節 | https://strut-records.co.uk/products/wayne-davis-wayne-davis | 否 |
+| ar-d-024 | William DeVaughn《Be Thankful for What You Got》 | 「diamond in the back, sunroof top」一句日後被 N.W.A、De La Soul、Outkast 反覆取樣 | 本位實際開頁讀到的來源只列出 N.W.A（〈Gangsta Gangsta〉）、De La Soul（〈Keepin' the Faith〉）、Ludacris（〈Diamonds in the Back〉）與 Ice Cube（〈Stand Tall〉）；OutKast 只在搜尋摘要提到的 Demon Music 列表裡出現，頁面開不了（429），沒有曲名。另外，N.W.A 取樣的是整首曲子的音樂，未見來源指明取樣的就是那一句，建議簡介淡化「一句被反覆取樣」的說法 | https://thevinylfactory.com/features/one-track-three-ways-william-devaughns-be-thankful-for-what-you-got/ | 否 |
+| ar-d-024 | Willie Mae Ford Smith《Going On With The Spirit》 | 她一輩子避開錄音室，只唱現場與電台 | 維基寫她 1950 年前後錄過三張單曲，1973 年錄第一張專輯、1975 年第二張、1983 年還有一張（stlmag 訪談也說第一張專輯在 1973 年）；較準確的說法是她長年婉拒商業錄音生涯，六十多歲才開始出專輯 | https://en.wikipedia.org/wiki/Willie_Mae_Ford_Smith | 否 |
+| ar-d-024 | Willie Mae Ford Smith《Going On With The Spirit》 | 直到 1982 年一部以她為主要人物的紀錄片問世，主流聽眾才認識她 | 維基寫 1972 年 Newport Jazz Festival 的演出就讓她開始被全國注意，隨後上 Radio City Music Hall；紀錄片只是把她推到更廣的觀眾，建議改成「1972 年起才被主流樂壇注意，紀錄片讓更多人認識她」 | https://en.wikipedia.org/wiki/Willie_Mae_Ford_Smith | 否 |
+| ar-d-024 | Albert Ammons & Meade Lux Lewis《The First Day》 | 十八軌全出自那天 | 維基 Albert Ammons 條目寫 1939 年 1 月 6 日當天錄了九首 Ammons 獨奏、八首 Lewis 獨奏與兩首二重奏，合計 19 首；簡介若指當天錄音總數，應核對 Blue Note 錄音表。 | https://en.wikipedia.org/wiki/Albert_Ammons | 否 |
+| ar-d-024 | Albert Ammons & Meade Lux Lewis《The First Day》 | 開場〈The Blues〉分成四段連續錄 | blues-sessions 的 Lewis 條目寫他 1939 年 1 月那場錄下〈The Blues〉共五段（及與 Ammons 的二重奏〈Nagasaki〉）；『四段』是否指 Ammons 那組待核對錄音表。 | https://www.blues-sessions.com/meadeluxlewis.php | 否 |
+| ar-d-024 | Albert Collins, Robert Cray & Johnny Copeland《Showdown!》 | Albert Collins 與他早年提攜過的 Robert Cray、Johnny Copeland 三代藍調吉他手 | Alligator 官方稿稱 Cray 是 Collins 的門生（protégé），但 Copeland 是 Collins 的好友與同輩的德州藍調人（Alligator 藝人頁），並非他提攜的後輩；『三代』與『早年提攜過 Copeland』不符。 | https://alligator.com/artists/Johnny-Copeland/ | 否 |
+| ar-d-024 | Albert Collins, Robert Cray & Johnny Copeland《Showdown!》 | 全球賣出超過 17.5 萬張 | Alligator 2024 年重發稿稱已賣出超過 31 萬張，銷量數字各處不一（17.5 萬／28.5 萬／31 萬），簡介的數字已過時，建議改成不寫確切銷量。 | https://alligator.com/news/998/ALLIGATOR-RECORDS-GRAMMY-WINNING-SHOWDOWN-LP-TO-RECEIVE-DELUXE-REISSUE-ON-NOVEMBER-29 | 否 |
+| ar-d-024 | Ana Popović《Can You Stand the Heat》 | 1998 年赴荷蘭修爵士吉他後轉為職業樂手 | Vintage Guitar 2013 年訪談：她去荷蘭念平面設計，樂團簽 Ruf 後因《Hush!》成功而放下學業；Donne in Musica 則寫進海牙音樂學院；「赴荷蘭修爵士吉他」沒有來源支持（訪談只說她後來才學爵士吉他，且是在樂團忙碌時）。建議改為「赴荷蘭求學後，樂團簽下 Ruf Records，轉為職業樂手」。 | https://www.vintageguitar.com/15965/ana-popovic | 否 |
+| ar-d-024 | Billy Boy Arnold《More Blues on the South Side》 | 1960 年代中期發行 | 維基與 bluesharmonica.com 訪談皆寫這張 Prestige 專輯是 1963 年（原名 More Blues from the South Side）；卡池年份 1965 也與之不同，應核對版本（可能是後來再版）。 | https://en.wikipedia.org/wiki/Billy_Boy_Arnold | 否 |
+| ar-d-024 | Blind Blake《Ragtime Guitar's Foremost Fingerpicker》 | Paramount 破產後行蹤成謎 | 2011 年 Alex van der Tuuk 等人的研究（Blues & Rhythm）找到死亡證明，顯示他留在密爾瓦基、1933 年 4 月住院，1934 年 12 月 1 日過世；簡介本身已寫 1934 年病逝密爾瓦基，「行蹤成謎」是過時說法，建議刪或改為「直到 2011 年才由死亡證明查出他留在密爾瓦基」。 | https://en.wikipedia.org/wiki/Blind_Blake | 否 |
+| ar-d-025 | Bobby Rush《Porcupine Meat》 | 當時他已八十三歲 | Bobby Rush 的出生年各來源不一致（1933／1935／1936），2017 年 2 月領獎時的年齡從 80 到 83 歲都有說法，上線簡介寫死 83 歲不穩；建議刪去年齡或改成『年過八旬』。 | https://64parishes.org/?p=59838 | 否 |
+| ar-d-025 | Cannon's Jug Stompers《The Complete Works: 1927-1930》 | 35 軌分四面 | 維基 Cannon's Jug Stompers 與 Gus Cannon 條目都寫 Cannon 1927 至 1930 年共錄 34 首；上線簡介的 35 軌可能是版本多收一軌，建議核對 Yazoo 1082/3 實際曲目表，查不到就改成不寫曲數。 | https://en.wikipedia.org/wiki/Cannon%27s_Jug_Stompers | 否 |
+| ar-d-025 | David "Honeyboy" Edwards《The World Don't Owe Me Nothing》 | 也是 Johnson 中毒身亡當晚的在場見證者 | Robert Johnson 的死因與當晚經過是 Edwards 本人的說法（維基稱其為流傳最廣的版本、earlyblues 稱 best-known version），並非定論；上線簡介寫成確定事實，建議改為「他說自己是 Johnson 過世那晚的在場者」並去掉「中毒」。 | https://en.wikipedia.org/wiki/David_%22Honeyboy%22_Edwards | 否 |
+| ar-d-025 | Eddie Boyd《7936 South Rhodes》 | 1970 年落腳赫爾辛基 | 各源不一：維基寫 1970，芬蘭藍調協會寫自 1971 年起長居赫爾辛基；建議改為「1970 年代初」。 | https://www.bluesnews.fi/eddieboyd/ | 否 |
+| ar-d-025 | Eddie Taylor《I Feel So Bad》 | 1948 年他搬到芝加哥 | 各源不一致：維基寫 1948，blues-sessions 寫約 1948 至 1949，MojoHand 寫 1949；建議改為「1940 年代末」。 | https://blues-sessions.com/eddietaylor.php | 否 |
+| ar-d-025 | Guitar Slim《Sufferin' Mind》 | 〈The Things That I Used to Do〉由年輕的 Ray Charles 製作 | 來源不一：維基歌曲條目寫 Charles 編曲並製作，toppermost 寫該場 Charles 受聘彈鋼琴、製作人為 Johnny Vincent。建議改寫為「Ray Charles 在同場彈鋼琴」，製作人一句拿掉或標明說法不一。 | https://www.toppermost.co.uk/guitar-slim/ | 否 |
+| ar-d-025 | Gus Cannon《Walk Right In》 | 1929 年 Cannon's Jug Stompers 錄的那首歌 | 錄音年份來源不一：維基寫 1929，waybackattack 寫 1930（Victor）；另有來源說 Victor 發行在 1930。建議改成「1929 或 1930 年前後」或不寫年。 | https://www.waybackattack.com/rooftopsingers.html | 否 |
+| ar-d-025 | Hank Ballard & the Midnighters《Sexy Ways: The Best of Hank Ballard & the Midnighters》 | 前段是遭 FCC 禁播的 Annie 系列 | 「FCC 禁播」只見維基 Midnighters 條目；Britannica 寫的是電台節目主管反對露骨歌詞。建議改為「部分電台拒播」。 | https://www.britannica.com/biography/Hank-Ballard | 否 |
+| ar-d-025 | Homesick James《Blues on the South Side》 | 他是 Elmore James 的表親 | 維基寫的是 Homesick 自稱年長的表親、曾買吉他並教 Elmore 滑管，並註明部分說法未獲證實；建議改成「自稱／據說是表親」。 | https://en.wikipedia.org/wiki/Homesick_James | 否 |
+| ar-d-025 | Homesick James《Blues on the South Side》 | 一路活到 2006 年、享壽 96 歲 | 訃聞稱享年 96，但他的出生年份沒有定論（本人說過 1905、1910、1914，工會紀錄 1924），『享壽 96』建議改成『訃聞稱享年 96 歲』或只寫 2006 年過世。 | https://earlyblues.org/?p=5609 | 否 |
+| ar-d-025 | Imarhan《Imarhan》 | 主唱 Iyad Moussa Ben Abderahmane(Sadam)是 Tinariwen 貝斯手 Eyadou Ag Leche 的姪子 | The Quietus 訪談明寫 Eyadou 是 Sadam 的 cousin、不是 uncle；Songlines 評論同寫 cousin。應改為『表親』。 | https://thequietus.com/?p=19620 | 否 |
+| ar-d-025 | Imarhan《Imarhan》 | 英文維基把 Imarhan 列為 Tinariwen 影響下成長的新一代圖阿雷格搖滾樂團 | 本層讀到的英文維基導言只寫『阿爾及利亞圖阿雷格 desert rock 五人樂團，2006 年在 Tamanrasset 成軍』，沒有提到 Tinariwen；這句說法建議改引 Songlines 或 The Quietus 的 Tinariwen 關聯，不要掛維基。 | https://en.wikipedia.org/wiki/Imarhan | 否 |
+| ar-d-025 | J.B. Lenoir《Alabama Blues》 | 製作人是德國人 Horst Lippmann | 維基（J. B. Lenoir 條）寫 1965 至 1966 年 Willie Dixon 錄下他與 Fred Below 的演奏、Lippmann 負責發行；Blues Foundation 入選頁寫 Dixon 製作這批錄音。Lippmann 較像發行與策劃方，製作人是否同時掛名需對 LP 內頁核實，建議改寫成「Willie Dixon 製作、Horst Lippmann 發行」或查內頁再定。 | https://www.blues.org/award-search/j-b-lenoir-never-achieved-the-le | 否 |
+| ar-d-025 | Jessie Mae Hemphill《Feelin' Good》 | 電吉他自彈自唱配鈴鼓的單人律動是其標誌 | 維基與 earlyblues 訃聞只說她 1993 年中風、無法再彈吉他之後才改打鈴鼓，沒有來源說她《Feelin' Good》時期自彈自唱同時配鈴鼓；建議查證或改寫。 | https://earlyblues.org/?p=5644 | 否 |
+| ar-d-025 | John Hammond《So Many Roads》 | 1965 年在 Vanguard 錄下 | 維基專輯條目寫 1964 年錄音（單一場三小時）、1965 年發行；建議改成「1965 年發行」或確認錄音年份。另一說法（Peter Stone Brown）稱 1965 年一天錄完，兩說不一致。 | https://en.wikipedia.org/wiki/So_Many_Roads_(John_P._Hammond_album) | 否 |
+| ar-d-025 | Johnny Shines《Standing at the Crossroads》 | 戰後落腳芝加哥 | 維基寫他 1941 年定居芝加哥，1946 年才首次錄音；「戰後」落腳與維基年份不合（encyclopedia.com 寫 1946 年為 Columbia 錄音、J.O.B. 在 1953 年）。 | https://en.wikipedia.org/wiki/Johnny_Shines | 否 |
+| ar-d-025 | Johnny Shines《Standing at the Crossroads》 | 1971 年在 Testament 發行 | audaud 評論寫錄音於 1970 年 11 月、編號 Testament T-2221（1970）；Apple Music 標 1971。來源不一致，建議查原盤或改寫成「1970 年錄音」。 | https://www.audaud.com/johnny-shines-standing-at-the-crossroads-testament-1970-pure-pleasure-vinyl/ | 否 |
+| ar-d-025 | Josh White《Josh at Midnight》 | 因民權立場在紅色恐慌年代遭封殺打壓 | encyclopedia.com 寫他「從未被正式封殺」，只是被《Red Channels》點名、爭議拖慢事業；維基寫被麥卡錫主義者騷擾。「封殺」一詞偏強，建議改成「被點名、事業受損」。 | https://www.encyclopedia.com/education/news-wires-white-papers-and-books/white-josh | 否 |
+| ar-d-026 | Kenny Wayne Shepherd《Ledbetter Heights》 | 在 Billboard 藍調榜停留二十週 | 維基與 Relix 都寫該專輯在 Billboard 藍調榜『第一名』待了 20 週；簡介寫成『停留二十週』語意偏弱，可改為『在藍調榜榜首待了二十週』。 | https://en.wikipedia.org/wiki/Ledbetter_Heights | 否 |
+| ar-d-026 | Lil' Ed & The Blues Imperials《Roughhousin'》 | Lil' Ed Williams 的滑棒吉他學自舅舅 J. B. Hutto | 英文維基、Earwig 與 Alligator 都只寫 uncle，沒有指明是母方的舅舅；『舅舅』屬過度具體，可改寫成『叔舅輩的 J. B. Hutto』或直接寫 uncle。 | https://earwigmusic.com/earwig-artists/lil-ed-williams/ | 否 |
+| ar-d-026 | Magic Slim & The Teardrops《Grand Slam》 | 1970 年起與弟弟 Nick 組成 The Teardrops | 年份有爭議，不宜寫成 1970 年『組成』。維基寫 1970 年是 Nick 加入既有的 The Teardrops；費城詢問報訃聞寫 1967 年組成；earlyblues 與 American Blues Scene 都把成軍放在 1960 年代。建議改成『1960 年代起與弟弟們組成 The Teardrops』或刪掉年份。 | https://www.inquirer.com/philly/obituaries/20130223_Remembering_Magic_Slim__the_epitome_of_Chicago_blues.html | 否 |
+| ar-d-026 | Memphis Jug Band《Memphis Jug Band》 | 這個團 1926 年起圍繞著 Will Shade 成形 | 成軍年份來源不一致：維基 1926 年；memphismusichalloffame 與 American Blues Scene 寫 1925 年左右；encyclopedia.com 寫 1926 至 1927 年。建議改成『1920 年代中期』。 | https://www.americanbluesscene.com/?p=19789 | 否 |
+| ar-d-026 | Memphis Jug Band《Memphis Jug Band》 | 卡祖笛當主奏 | 本層讀到的來源（維基、encyclopedia.com、American Blues Scene）都只列編制，沒有說卡祖笛是主奏；維基的前場順序是口琴、卡祖笛、小提琴、曼陀林。建議核對出處，或改成『卡祖笛與口琴領奏』。 | https://en.wikipedia.org/wiki/Memphis_Jug_Band | 否 |
+| ar-d-026 | Mississippi Sheiks《Stop and Listen》 | 核心成員 Lonnie Chatmon、Walter Vinson 與 Bo Carter 用小提琴配吉他 | 國會圖書館 Edward Komara 的解說寫 1930 年那場錄音是 Vinson（吉他）與 Lonnie Chatmon（小提琴）兩人，Bo Carter 同行與否只是討論者的推測；Bo Carter 另有成功的個人事業。建議寫成『核心是 Lonnie Chatmon 與 Walter Vinson，Bo Carter 與 Sam Chatmon 是 Lonnie 的兄弟』。 | https://www.loc.gov/static/programs/national-recording-preservation-board/documents/SittingOnTopOfTheWorld.pdf | 否 |
+| ar-d-026 | Mississippi Sheiks《Stop and Listen》 | 〈Sitting on Top of the World〉2008 年入葛萊美名人堂、2018 年進美國國家錄音登記簿 | 國會圖書館官方解說標頭寫『Added to the National Registry: 2017』，2018 年 3 月是公布日；維基寫成 2018 年。建議改成『2017 年度的國家錄音登記簿』或不寫年份。 | https://www.loc.gov/static/programs/national-recording-preservation-board/documents/SittingOnTopOfTheWorld.pdf | 否 |
+| ar-d-026 | Otha Turner & The Rising Star Fife & Drum Band《Everybody Hollerin' Goat》 | 90 歲錄成首張廣為流通的專輯 | 錄音橫跨 1992 至 1997 年（維基專輯條目），Turner 的出生年是 1907 或 1908（維基與 NEA 不一致），錄音期間約 84 至 90 歲；『90 歲』應是 1998 年發行時的年紀。建議改成『晚年錄成』或『近 90 歲』。 | https://en.wikipedia.org/wiki/Everybody_Hollerin%27_Goat | 否 |
+| ar-d-026 | Reverend Robert Wilkins《Memphis Gospel Singer》 | 1936 年因在演出場合目睹兇殺而棄藍調入教會，1950 年受任牧職 | 此說法只見於英文維基（1936 年、目睹兇殺、1950 年受任）；NPS 只說多年後一場 Hernando 派對演變成暴力，Cross Rhythms 說 1935 年妻子重病許願、無確切受任年份，culturecatch 說家鄉派對鬥毆。建議改成較寬的寫法（厭倦派對暴力後入教會當牧師），或去掉「目睹兇殺」「1936」「1950」三個具體值。 | https://www.nps.gov/locations/lowermsdeltaregion/rev-robert-timothy-wilkins.htm | 否 |
+| ar-d-026 | Robert Lockwood Jr.《Steady Rollin' Man》 | Lockwood 是唯一直接向 Robert Johnson 學過琴的吉他手 | 『唯一』只見於英文維基與一份參考資料，blues.org 與 UPI 等訃聞只說他向 Johnson 學琴、被稱為其繼子，沒有人把話說死；同輩的 Johnny Shines 也與 Johnson 同行。建議改成「少數直接向 Johnson 學過琴的人」或「常被稱為 Johnson 的傳人」。 | https://www.blues.org/award-search/though-he-traveled-side-by-side- | 否 |
+| ar-d-026 | Ruthie Foster《The Phenomenal Ruthie Foster》 | 後來婉拒 Atlantic 把她做成流行歌手的合約 | Blues Blast 訪談（2020）稱她拿到的是一份 wait-and-see 的開發合約，1993 年因母親病重離開紐約與合約；官網 bio 也寫她 1993 年為照顧母親離開音樂。『婉拒』的因果與維基的『對流行路線沒興趣』只是一說，建議改成『Atlantic 的開發約因母親病重而中止』。 | https://www.bluesblastmagazine.com/featured-interview-ruthie-foster-2/ | 否 |
+| ar-d-026 | Ruthie Foster《The Phenomenal Ruthie Foster》 | 她日後三度入圍葛萊美，2025 年首度獲獎 | 官網新聞稱《Live at the Paramount》是她『第 4 次』葛萊美提名，《Mileage》2025 年得獎之前提名已不只三次，『三度入圍』已過時；2025 年首度得獎（最佳當代藍調專輯、《Mileage》）屬實。 | https://www.ruthiefoster.com/ | 否 |
+| ar-d-026 | Ruthie Foster《The Phenomenal Ruthie Foster》 | 2007 年這批由 Papa Mali 製作的錄音 | 英文維基列《The Phenomenal Ruthie Foster》為 2008 年（Papa Mali 製作屬實）；卡池年份 2007。年份待核，本層未能找到第二來源。 | https://en.wikipedia.org/wiki/Ruthie_Foster | 否 |
+| ar-d-026 | Stevie Ray Vaughan and Double Trouble《In Step》 | 鍵盤手 Reese Wynans 首度列入正式編制 | 維基與德州州歷史協會 Handbook of Texas 都記 Wynans 1985 年的《Soul to Soul》錄音期間被請來、此後即為團員，到 1989 年的《In Step》已是第五年，「首度列入正式編制」不成立；若指的是封面署名方式，需另查唱片封套。 | https://www.tshaonline.org/handbook/entries/vaughan-stevie-ray | 否 |
+| ar-d-027 | Washington Phillips《The Key to the Kingdom》 | Michael Corcoran 於 2016 年翻出 1907 年的報導，證實他自稱那台自製琴為 manzarene | 找不到『2016 年翻出』的出處；Corcoran 個人網站與搜尋摘要只說 1907 年 11 月 Teague Chronicle 的報導存在，並且 manzarene 之名用在 2016 或 2017 年 Dust-to-Digital 專輯標題；TPR 報導還寫 Corcoran 2002 年就發表過關於 Phillips 的長篇。年份建議改查出處或刪去。 | https://www.michaelcorcoran.net/juneteenth-wash-phillips-son-of-slaves-makes-music-for-the-ages/ | 否 |
+| ar-d-027 | Absolution《Absolution》 | 同一年同樣尺寸的 7 吋，有的塞了六首唱八分鐘、有的塞了七首唱十一分半（以這張是 1989 年為前提） | Big Takeover 記這張 EP 於 1988 年 11 月 12 日在 Combined Effort Records 發行，No Echo 則說 7 吋是 1989 年；發行年兩說不一，「同一年」的比較需先確認這張的年份。 | https://bigtakeover.com/interviews/absolution-the-more-things-change | 否 |
+| ar-d-027 | Adnan Othman《Bershukor: A Retrospective of Hits by a Malaysian Pop Yeh Yeh Legend》 | Adnan Othman 來自登嘉樓 | Sublime Frequencies 的 Bandcamp 頁面全文沒有出生地，Forced Exposure、Soundohm 等零售頁也沒有，目前沒有任何開頁讀到的來源支持登嘉樓；建議確認出處，查不到可考慮改成不點明家鄉。 | https://sublime-frequencies.bandcamp.com/album/adnan-othman-bershukor-a-retrospective-of-malaysian-pop-yeh-yeh-legend | 否 |
+| ar-d-027 | Airbridge《Paradise Moves》 | 廠牌 Carve-Up Records 的目錄只有四個編號，這張是它唯一的 LP | Bedini 訪談說專輯是被姊夫賣給 Red Lightnin' Records，MusicBrainz 同樣把廠牌記 Red Lightnin'；維基與 Louder 記專輯 1983 年而非 1982。廠牌與年份有爭議，建議簡介改成較保守寫法或查證後再定。 | https://www.psychedelicbabymag.com/?p=33062 | 否 |
+| ar-d-027 | Alaska y los Pegamoides《Grandes éxitos》 | 1982 年 4 月 Hispavox 同月發了黑膠 S 60.722 與卡帶 C 60.722 | 西班牙文維基寫專輯 1982 年 5 月發行，MusicBrainz 為 4 月，月份不一致；建議簡介改為『1982 年』或確認月份後再寫。 | https://es.wikipedia.org/wiki/Alaska_y_los_Pegamoides | 否 |
+| ar-d-028 | Alcione《A Voz do Samba》 | 她九歲起吹小號與豎笛 | 英文維基與 encyclopedia.com 寫 13 歲左右才學豎笛與小號，葡文維基的「九歲」是首次在電台演唱；年齡說法不一，建議刪去年齡或改核對後的版本。 | https://en.wikipedia.org/wiki/Alcione_Nazareth | 否 |
+| ar-d-028 | Alcione《A Voz do Samba》 | Discoteca Básica 五百大第 293 名 | 本層未能開到 Discoteca Básica 名單頁，無法核對名次；若要保留請在本機核對來源。 | https://pt.wikipedia.org/wiki/Alcione_(cantora) | 否 |
+| ar-d-028 | Älgarnas Trädgård《Framtiden är ett svävande skepp, förankrat i forntiden》 | 後來拿到 Grammis 提名 | 只見於 Söderqvist 本人在訪談裡「被提名 Grammy」的回憶，搜尋瑞典 Grammis 名單查不到；建議在本機核對 Grammis 官方歷屆名單，查不到就刪。 | https://psychedelicbabymag.com/?p=67377 | 否 |
+| ar-d-028 | All Saved Freak Band《My Poor Generation》 | 三個團員就死在赴演出的路上 | 英文維基寫三人都在前往演出途中的車禍中喪生，Cross Rhythms 寫 Brett Hill 是 1971 年初新年夜禮拜後返家途中身亡、Tom Miller 與 Randy Markko 同年另一場車禍；「赴演出」一詞兩源不完全一致，建議改成「死於交通事故」。 | https://crossrhythms.co.uk/articles/music/All_Saved_Freak_Band__Jesus_Music_Pioneers/24845/p1/ | 否 |
+| ar-d-028 | Aphrodite《Aphrodite》 | 1999 年的同名首作由 V2 發行 | 英文維基寫 1999 年同名專輯屬 V2 Recordings，但 Shazam 簡介（AllMusic 類資料）寫 2002 年《Aftershock》才是他與 V2 發行協議下的第一張專輯，同名專輯是美國首作、收舊曲與新混音；兩源不一致，請店主在 Discogs 核對 1999 年版本的廠牌，不一致前建議簡介改寫成不點名廠牌。 | https://www.shazam.com/artist/-/6505582 | 否 |
+| ar-d-028 | Archers of Loaf《Icky Mettle》 | 在 Caleb Southern 的 Kraptone 錄音室七天內錄完混完 | 待核：Bandcamp 專文稱錄音約一個月、場地是 Cat's Cradle 俱樂部；Bachmann 在 Portland Mercury 說樂團凌晨 3:30 左右進 Cat's Cradle 錄音，Johnson 對 The Stranger 說記不得總共幾天。維基（七天、Kraptone）與上線簡介一致，但與兩篇訪談描述不合，建議店主決定是否把『七天內錄完混完』改成較保守的寫法。 | https://daily.bandcamp.com/features/archers-of-loaf-album-guide | 否 |
+| ar-d-028 | Ariesta Birawa Group《Ariesta Birawa Group, Vol. 1》 | 唱片是這支團唯一的一張 | 早期陣容（Mus Mulyadi、Soenata Tanjung）1965 年已用同一團名發行過 Djoko Tarub（Wasted Rockers 稱 EP 或 10 吋；CNN Indonesia 稱 Jaka Tarub 專輯），Wasted Rockers 把 Vol. 1 寫成首張全長專輯；建議改成『首張全長專輯』或不寫唯一。 | https://www.cnnindonesia.com/hiburan/20190411111224-234-385270/mus-mulyadi-sang-buaya-keroncong-indonesia | 否 |
+| ar-d-028 | Ariesta Birawa Group《Ariesta Birawa Group, Vol. 1》 | 官方那時正推 dangdut | 待核：PopMatters 只寫政府鼓勵本土傳統音樂、dangdut 在 1970 年代崛起（Rhoma Irama 的〈Begadang〉比這張晚兩年），沒有寫官方在 1973 年推 dangdut；建議改成較保守的寫法。 | https://popmatters.com/ariesta-birawa-group-vol-1-indonesia-2495753530.html | 否 |
+| ar-d-028 | Artful Dodger《It's All About the Stragglers》 | 2000 年 11 月由 FFRR 發行 | 待核：英文維基專輯條目寫發行方為 London Recordings（Sire Records 並列），單曲條目寫 Public Demand 與 Relentless Records；本層沒有取得 Discogs（403）所以無法確認 FFRR 是否為實際印在盤面的廠牌，建議店主對照盤面。 | https://en.wikipedia.org/wiki/It's_All_About_the_Stragglers | 否 |
+| ar-d-028 | Artful Dodger《It's All About the Stragglers》 | Craig David 唱的〈Re-Rewind〉與〈Movin' Too Fast〉新版都收在內 | 待核：〈Movin' Too Fast〉的主唱是 Romina Johnson，Craig David 只唱〈Re-Rewind〉（英文維基兩條目）。若簡介原意是『兩首都收在內』則句子容易被讀成 David 唱兩首，建議改寫。 | https://en.wikipedia.org/wiki/Movin'_Too_Fast | 否 |
+| ar-d-029 | ASIAN KUNG-FU GENERATION《ソルファ》 | 第二首〈リライト〉……成為樂團最大單曲 | 未找到支持『最大單曲』的來源；英文維基只記〈Rewrite〉2004 年 Oricon 單曲榜最高第 4 名、當年賣近 15 萬張，無法證明是樂團最大單曲，建議改成較保守說法（如『最廣為人知的單曲』仍需來源）或刪除。 | https://en.wikipedia.org/wiki/Rewrite_(song) | 否 |
+| ar-d-029 | Aunt Sally《Aunt Sally》 | Bikke 吉他兼主唱、中岡義雄貝斯、丸山隆打鼓 | The Vinyl Factory 的成員名單是 Phew、Mayu、Takashi Maruyama、Yasuko Mori、Yoshio Nakaoka，不含 Bikke；若 Bikke 與 Yasuko Mori 是同一人，名單可保留，否則需重核成員與樂器分工。 | https://www.thevinylfactory.com/news/japanese-post-punk-aunt-sallys-debut-album-reissued | 否 |
+| ar-d-029 | Azitis《Help》 | 沒有鼓組，推進力來自鍵盤與貝斯 | Discogs 只登錄 Steve Nelson 為 percussion（打擊樂），沒有說明有無鼓組；「沒有鼓組」是從 credit 推論，找不到來源直接證實，建議改成「打擊樂由 Steve Nelson 一人負責」或刪去推論。 | https://www.discogs.com/release/5033032-Azitis-Help | 否 |
+| ar-d-029 | Bananarians《Boner》 | 原盤 credit 上藤井義之掛人聲、吉他與鍵盤 | Discogs 的《Boner》credit 寫的是 Sansuke Fujii（人聲、吉他、鍵盤），Discogs 團體成員欄另有「藤井義之」，兩者在 Discogs 上是各自獨立的條目，沒有資料證明是同一人；簡介把 credit 直接寫成藤井義之，建議改寫成「藤井（Sansuke Fujii）」或查證後再用。 | https://www.discogs.com/master/1323163-Bananarians-Boner | 否 |
+| ar-d-029 | Batmobile《Hard Hammer Hits》 | 1986 年成為第一支登上倫敦 Klub Foot 的非英國樂隊 | 『第一支非英國樂隊』只有維基 Batmobile 條目單源，樂團官網傳記與維基 Klub Foot 條目都沒有這個說法，屬『第一』類高風險宣稱，建議退成『1986 年首度到倫敦 Klub Foot 演出』；原句不一定錯，但目前湊不到第二源。 | https://en.wikipedia.org/wiki/Klub_Foot | 否 |
+| ar-d-030 | Biglietto per l'Inferno《Biglietto per l'Inferno》 | 主唱 1994 年發願成了本篤會修士 | Il Giorno 記載 Canali 1994 年是退隱到 Minucciano 的隱修院，1999 年才成為本篤會修士；Rockit 記為 1990 年代末發永願。『1994 年發願』與兩源不符（Il Giorno 該頁的 1994 年與『38 歲』也互相矛盾，年份宜只寫『1990 年代末』）。 | https://www.ilgiorno.it/lecco/cronaca/morto-fra-claudio-canali-1.4111408 | 否 |
+| ar-d-030 | Bikini Kill / Huggy Bear《Yeah Yeah Yeah Yeah / Our Troubled Youth》 | 1992 年錄音；由 Kill Rock Stars 發行 | 英文維基三頁與 Trouser Press 皆寫此分享盤 1993 年發行（維基載 1993 年 3 月 8 日），且英國版廠牌是 Catcall、Kill Rock Stars 為美國版；『1992 年錄音』查不到來源。卡片年份 1992 也與發行年 1993 不符，宜由店主決定是否改年份。 | https://en.wikipedia.org/wiki/Our_Troubled_Youth | 否 |
+| ar-d-030 | Blues Creation《悪魔と11人の子供達》 | 同年 7 月在日本コロムビア推出第二作 | 英文維基《Demon & Eleven Children》條目與 Creation 條目均寫 1971 年 8 月（前者明載 8 月 25 日，由日本コロムビア旗下 Denon 發行，與《Carmen Maki/Blues Creation》同日）；日文維基未載月份。建議把「7 月」改為「8 月」。 | https://en.wikipedia.org/wiki/Demon_%26_Eleven_Children | 否 |
+| ar-d-030 | Bogshed《Brutal》 | John Peel 說，那是往水源下毒的音樂版本 | 維基只寫『2022 年被形容為』並引 Marsden 的文章，未寫是 Peel 所說；上線簡介與事實庫的 Guardian 摘要寫 Peel。Guardian 原文在雲端被擋，待在本機核對該句的說話者。 | https://en.wikipedia.org/wiki/Bogshed | 否 |
+| ar-d-030 | Brain Failure《Turn On the Distortion!》 | 日版是 2003 年 6 月 21 日由 Bad News Records 出的十四軌 | 中文維基寫首張專輯 2002 年由日本 Bad News 發行（限日本），搜尋所見的 Apple Music 簡介同寫 2002 年；上線簡介沿用 MusicBrainz 的 2003-06-21。年份待核：可能 MB 日期是日版再發或登錄晚於實際發行。 | https://zh.wikipedia.org/wiki/%E8%84%91%E6%B5%8A%E4%B9%90%E9%98%9F | 否 |
+| ar-d-030 | Brainticket《Cottonwoodhill》 | 唱片也在數個國家遭禁 | 本層讀到的可靠來源只有 Vandroogenbroeck 本人訪談說「據稱在美國被禁」，未找到「數個國家」的出處；建議改成「據稱在美國遭禁」或刪去。 | https://www.psychedelicbabymag.com/2019/04/brainticket-interview.html | 否 |
+| ar-d-030 | Breakdown《Blacklisted》 | 廠牌 Eyeball 登記在 New Jersey、1994 年起 | 英文維基 Eyeball Records 條目寫該廠牌 1995 年由 Alex Saavedra 與 Vincent Li 在紐約市（14 街與 A 大道的公寓）創立，後來才搬到 New Jersey 的 Kearny；MusicBrainz 則記 area 為 New Jersey、life-span 1994。成立地與年份兩源不一致，建議簡介刪去廠牌所在地與成立年。 | https://en.wikipedia.org/wiki/Eyeball_Records | 否 |
+| ar-d-030 | Brygada Kryzys《Brygada Kryzys》 | 成品後來一度被列入銷毀名單 | 只有波蘭維基專輯條目寫「據信一部分庫存被銷毀，也有人質疑」，本層讀到的 Trójka 文章與英文維基都沒有，其餘搜尋摘要也找不到出處；建議改寫成「據說」或刪去。 | https://pl.wikipedia.org/wiki/Brygada_Kryzys_(album) | 否 |
+| ar-d-030 | Buffalo《Volcanic Rock》 | 封面把女性的身體畫成一座正在來月經的火山，有連鎖唱片行乾脆拒絕進貨 | Tice 訪談把封面歸給攝影師 Nick Van der Lay（未提禁售）；Decibel 只寫對開封套的血腥圖像「反應不佳」，未提唱片行拒絕進貨。「畫成」與「連鎖唱片行拒絕進貨」本層沒找到出處，簡介說法待核。 | https://www.psychedelicbabymag.com/?p=2938 | 否 |
+| ar-d-030 | Bulldog Breed《Made in England》 | 後期的三名核心成員組成了下一支團，那就是 T2 | Discogs 的 T2 條目與 Louder 都只說 Bulldog Breed 的 Keith Cross 與 Bernard Jinks 兩人，與 Peter Dunton 會合組成 T2；Discogs T2 條目並寫 Dunton 原本在另一支團、並非這團的成員，不過 Discogs 的 Bulldog Breed 條目又把 Dunton 列為相關成員。「三名核心成員」寫法待核。 | https://www.discogs.com/artist/421988-T2-3 | 否 |
+| ar-d-031 | Burn《Do or Die》 | 第七軌的曲名，二十五年前是這支團另一張唱片的標題；1992 年那張同名的 EP 是另一個實體 | Last Great Sea 是 1992 年錄製的試聽帶，Revelation 約十年後（2002 年）才以 EP 發行，所以「1992 年的 EP」與「二十五年前的標題」都不準確；建議改成「1992 年錄成試聽帶、2002 年才發行的 Last Great Sea EP」 | https://thehundreds.com/blogs/content/burn-interview | 否 |
+| ar-d-031 | Carl Perkins《Introducing... Carl Perkins》 | 一九五六年在 Dootone 與 Leroy Vinnegar、Lawrence Marable 錄下的三重奏 | 英文維基專輯條目：1955 年於洛杉磯錄音、1956 年由 Dootone 發行；鼓手拼法為 Larance Marable。 | https://en.wikipedia.org/wiki/Introducing_Carl_Perkins | 否 |
+| ar-d-031 | Carl Perkins《Introducing... Carl Perkins》 | 後世把他列為 funky 派 hard bop 鋼琴的先行者 | 維基原文是 Tanner、Gerow、Megill 把他列為最好的 funky（hard bop）鋼琴手之一，並說他早逝使他未能留下影響；『先行者』是上線簡介的推演，來源不支持。 | https://en.wikipedia.org/wiki/Carl_Perkins_(pianist) | 否 |
+| ar-d-031 | Carroll Thompson《Hopelessly in Love》 | 倫敦出身、牙買加裔的 Carroll Thompson | 英文維基專輯條目與 Wikidata 的出生地為赫特福德郡 Letchworth（專輯條目稱她在當地最早的牙買加移民家庭之一長大）；說她倫敦出身沒有來源。 | https://en.wikipedia.org/wiki/Hopelessly_in_Love | 否 |
+| ar-d-031 | Carroll Thompson《Hopelessly in Love》 | 全球賣過百萬張 | 來源互相衝突：維基人物條目無出處地寫 over a million，維基專輯條目寫 1983 年約 25,000 至 30,000 張、最終逾 35,000 張，Oye 寫逾 50 萬張；沒有可靠來源支持『百萬』，建議刪除或改成不寫銷量。 | https://en.wikipedia.org/wiki/Hopelessly_in_Love | 否 |
+| ar-d-031 | Catapilla《Catapilla》 | Robert Calvert 一人吹中音、次中音與高音三種薩克斯風 | 英文維基專輯條目的人員表只列 Calvert 吹 alto（中音）與 tenor（次中音）薩克斯風，沒有 soprano（高音）；『三種』沒有來源支持。 | https://en.wikipedia.org/wiki/Catapilla_(album) | 否 |
+| ar-d-031 | Cervello《Melos》 | 樂團 1970 年成立於那不勒斯 | 成軍年份各源不一致：義大利文維基 1970，Rustici 本人受訪說 1971，另有來源寫 1972；建議改成『1970 年代初』或拿掉年份。 | https://backgroundmagazine.nl/Specials/InterviewCervello.html | 否 |
+| ar-d-031 | CIV《Set Your Goals》 | 碟出在 1995 年 8 月的美國 Lava | 英文維基《Set Your Goals》專輯條目寫 1995 年 10 月在 Lava Records 發行；請店主在本機對 Discogs 美國 Lava 92603-2 的發行日核實，確認前不要改。另上線簡介『全張合計 31 分 21 秒』，維基專輯條目寫總長 31:13，差 8 秒，可能是各軌秒數加總誤差，也請順便核對。 | https://en.wikipedia.org/wiki/Set_Your_Goals_(album) | 否 |
+| ar-d-032 | Company Caine《A Product of a Broken Reality》 | 進了 Kent Music Report 榜前四十名 | 維基寫前四十名，Bang a Gong 單曲頁（搜尋摘要）寫 1972 年 3 月 6 日入榜、最高第 49 名，與前四十名牴觸；Kent Music Report（David Kent《Australian Chart Book》）原始資料未取得。建議簡介改成「進了 Kent Music Report 專輯榜」不寫名次區間，或查到原始資料再定。 | https://bangagong.com.au/trixie-stonewall%ca%bcs-wayward-home-for-young-women-company-caine/ | 否 |
+| ar-d-032 | Confuse《Indignation》 | 十三年後由 Anarchy Centre 與樂團自營的 Confuse Records 聯名壓成黑膠與 CD | 搜尋摘要（NTS 引 Discogs）只見 1984 年 Violent Party Records 的卡帶與 1987 年的 Confuse Records 單曲，Sorry State 稱黑膠把整張卡帶與 Nuclear Addicts flexi 等合輯；未能證實「十三年後」「黑膠與 CD」「Anarchy Centre 聯名」。建議店主對 Discogs 的 Indignation 條目逐項核對。 | https://nts.live/artists/89568-confuse | 否 |
+| ar-d-032 | Craig David《Born to Do It》 | 兩人先寫完錄完才簽進 Wildstar | 維基記 Wildstar 在他十七歲左右聽到〈Walking Away〉就先給了發展約，聽到〈7 Days〉才把合約升級成專輯約；『先錄完才簽約』與順序不合，建議改寫成『發展約之後升級成專輯約』。 | https://en.wikipedia.org/wiki/Craig_David | 否 |
+| ar-d-032 | Craig David《Born to Do It》 | 全球約售出 750 萬張 | 銷量各處不一：encyclopedia.com 寫 500 萬至 700 萬張，Music Week 引唱片公司稱逾 1300 萬張（指涉不明）；單一數字無共識，建議改成不帶數字或註明各方說法。 | https://www.encyclopedia.com/education/news-wires-white-papers-and-books/david-craig | 否 |
+| ar-d-032 | Credo《Melnais kliedziens》 | 掛名的別名欄登錄的是利耶帕亞火柴廠與一間企業的合奏團名 | LSM 與拉脫維亞語維基都寫樂團 1979 年前的前身是木材加工廠 Baltija 的聲樂器樂團；『火柴廠』與此不符。若 MusicBrainz 別名欄確實寫的是火柴廠，是 MB 資料與史料不一致，建議本機對照 MB 後改寫成『某企業的合奏團名』或刪去工廠名。 | https://www.lsm.lv/raksts/kultura/izklaide/nedelas-nogale-izskanes-grupas-credo-45-jubilejas-koncerts.a318428/ | 否 |
+| ar-d-032 | Décima Víctima《Décima Víctima》 | 1982 年 12 月 Grabaciones Accidentales 的 GA-007 是這張碟唯一的一筆發行 | 這張首作後來有 Munster Records 的 LP 再版（Maximum Rocknroll 第 499 期評的就是這版），並收進 2010 年 Munster 的全集黑膠盒；「唯一的一筆發行」不成立，至多能說「原盤只發過這一版」 | https://www.maximumrocknroll.com/review/mrr-499/decima-victima-lp-reissue/ | 否 |
+| ar-d-033 | Dennis the Fox《Mother Trucker》 | 〈Piledriver〉2006 年被 DJ Shadow 取樣進〈Funky Skunk〉 | 英文維基《Funky Skunk》條目寫該混音專輯 2005 年夏末發行，並把 Dennis The Fox 的〈Piledriver〉列為取樣來源；《Funky Skunk》也是混音專輯而非單曲。上線簡介的『2006 年』若來自 Dennis The Fox 維基條目的 2006 年（維基預抓文字被截斷，未能核對），兩個條目互相矛盾，建議改為 2005 年或刪去年份，並把〈Funky Skunk〉標成混音專輯。 | https://en.wikipedia.org/wiki/Funky_Skunk | 否 |
+| ar-d-033 | Desmond Dekker & The Aces《007 Shanty Town》 | 是第一張進入英國前二十的牙買加製作唱片 | 本層開頁的維基、uDiscover 與 Roots Archives 只寫〈007 (Shanty Town)〉是英國前十五熱門（維基），沒有『第一張進入英國前二十的牙買加製作唱片』的說法；維基另寫 Millie Small 1964 年已以牙買加風格的歌曲在國際走紅，屬明顯反例。『第一』類宣稱建議刪去或改成『英國前十五的熱門』。 | https://en.wikipedia.org/wiki/Desmond_Dekker | 否 |
+| ar-d-033 | Diaframma《Siberia》 | 全碟詞曲都出自主唱一人 | Fiumani 是吉他手兼詞曲作者；《Siberia》時期的主唱是 Miro Sassolini（接替 Nicola Vannini），Fiumani 要到 1989 年的 Gennaio EP 前後才兼任主唱。改成「全碟詞曲都出自吉他手 Federico Fiumani」。 | https://www.rockit.it/articolo/siberia-diaframma | 否 |
+| ar-d-033 | Discus《1st》 | 2001 至 2007 年間他們登上舊金山與紐約的前衛音樂節 | 印尼維基只列 ProgNight（舊金山）、Knitting Factory（紐約，是演出場地不是音樂節）與 ProgDay（北卡羅來納），沒有給這三處的年份；有年份的只有 BajaProg（墨西哥，2001）、Progsol 與 FreakShow（2005）以及預定的 2007 年 Zappalane（德國）。2001 至 2007 與舊金山、紐約的對應查不到依據，建議改成較保守的寫法或查出各場年份 | https://id.wikipedia.org/wiki/Discus_(grup_musik) | 否 |
+| ar-d-033 | Dr. Z《Three Parts to My Soul》 | 詞曲、製作、人聲都是同一個人（Keith Keyes） | recordcollector.org 的商品頁與搜尋摘要引述的 Prog Archives 系文字都記製作人是 Patrick Campbell-Lyons（另一說是執行製作），與簡介「製作」歸 Keyes 不符；需對照唱片實際署名後再決定是否改成「詞曲與人聲」 | https://www.recordcollector.org/the-collection/dr-z-three-parts-to-my-soul-vertigo.html | 否 |
+| ar-d-033 | Drakkar《Drakkar 74》 | 1970 年夏天他重組樂團 | 重組年份兩源不一致（維基 1970，另有 1971 的說法），上線簡介單用 1970 且寫『夏天』，來源只有事實庫那一份英文維基摘要；建議改成不帶年份。 | https://en.wikipedia.org/wiki/Drakkar_(band) | 否 |
+| ar-d-033 | East《Játékok》 | 1983 年這批曲子以英語重錄成《Blue Paradise》 | Infostart（2014）把《Blue Paradise》寫成 1982 年的英語版，與上線簡介的 1983 不一致；1983 可能是日本 King Record 的發行年，不是錄製年。建議店主核對後改成不帶年份或改為 1982。 | https://infostart.hu/kultura/2014/07/12/obudai-nyar---ismet-east-koncert-a-progrock-rajongoinak-651865 | 否 |
+| ar-d-034 | Električni Orgazam《Električni orgazam》 | 那句評語出自記者 Chris Bohn，樂團因此談成 Rough Trade 的英國通路合約 | 英文維基只寫 Gojković 在倫敦把唱片寄給 NME、樂團簽 Rough Trade 做英國通路，並未載明評論先於合約；『因此』的因果為推斷，建議改成並列。 | https://en.wikipedia.org/wiki/Elektri%C4%8Dni_Orgazam | 否 |
+| ar-d-034 | Enrique Morente & Lagartija Nick《Omega》 | Granada 的 cante 名家 Enrique Morente 找上同城噪音搖滾團 Lagartija Nick | Público 的經過是 Jesús Arias 想錄 Lorca 詩作混龐克與佛朗明哥，1995 年 8 月先找 Raúl Alcover、再與 Morente 見面，Morente 把方向調整後 Lagartija Nick 才加入；『Morente 找上樂團』與此不符，建議改為『Morente 與 Lagartija Nick 合作』。 | https://www.publico.es/culturas/disco-rompio-flamenco.html | 否 |
+| ar-d-034 | Enrique Morente & Lagartija Nick《Omega》 | 2008 年重新發行並在 Primavera Sound 重演 | Público 該文寫這張專輯『再也沒有在現場演出過』，與簡介的 Primavera Sound 重演衝突；該文的刊出年份本層未能確定，建議店主在本機核對 2008 年重演是否屬實後再決定改不改。 | https://www.publico.es/culturas/disco-rompio-flamenco.html | 否 |
+| ar-d-035 | Fraction《Moon Blood》 | 僅壓製兩百張 | The Vinyl Guide 寫 200 張，midheaven 與 Norman Records 搜尋摘要寫『幾百張』，數字並不確定，建議改寫成『只壓了極少量』。 | https://midheaven.com/item/fraction/moon-blood | 否 |
+| ar-d-035 | Fraction《Moon Blood》 | 一群北好萊塢的藍領工人組成 Fraction | 來源只說團員有白天的正職、在北好萊塢排練，沒有說他們是藍領，也沒有說樂團組成於北好萊塢（Beach 說是透過洛杉磯各處朋友認識）。 | https://midheaven.com/item/fraction/moon-blood | 否 |
+| ar-d-035 | Fraction《Moon Blood》 | 專輯名取自《啟示錄》「滿月變紅像血」 | 查到的資料都沒有說明專輯名由來，搜尋結果也沒有證實與《啟示錄》的連結，只有樂評說宗教主題帶有末世與疑惑的氣氛；建議改為不下定論的寫法。 | https://thevinylguide.com/episodes/ep450-the-legend-of-fraction-moon-blood | 否 |
+| ar-d-035 | Fraction《Moon Blood》 | 十多年後才被挖掘出土；樂風介於 The Doors 的陰冷迷幻與 Black Sabbath 的沉重之間 | 來源說 1980 與 1990 年代就有收藏家在找，翻版不斷，正式重發則在 1999 年與 2010 年之後；沒有查到『十多年後被挖掘』的說法。比較對象的來源是 The Doors、The Stooges 與 MC5，沒有 Black Sabbath。 | https://thevinylguide.com/episodes/ep450-the-legend-of-fraction-moon-blood | 否 |
+| ar-d-035 | Fresh Blueberry Pancake《Heavy》 | 1970 年自資發行 | Psychedelic Baby 2023 專文稱 demo 是 1971 年錄的，搜尋摘要稱 MetalMusicArchives 曲目頁載明 1971 年 8 月 18 日向美國國會圖書館登記著作權；Discogs 與 NTS 寫 1970，來源不一致，建議店主本機核對 Discogs 條目後決定是否改年份（待核，非確定錯誤） | https://www.psychedelicbabymag.com/2023/02/fresh-blueberry-pancake-the-legendary-underground-heavy-psych-classic-gets-an-official-reissue.html | 否 |
+| ar-d-035 | Galliard《Strange Pleasure》 | 1968 年成軍、1971 年解散 | 成軍年有 1968（Birmingham Music Archive）與 1969（Esoteric 再發說明）兩說，1971 年解散只見 Discogs 單源；建議退成不寫年份，或標明來源不一致。 | https://old.birminghammusicarchive.com/tag/john-smith/ | 否 |
+| ar-d-036 | Gianna Nannini《Puzzle》 | 兩支單曲的錄影帶，都是電影導演 Michelangelo Antonioni 拍的。〈Fotoromanza〉與〈Ballami〉的影像都由他執導 | 來源只證實〈Fotoromanza〉的錄影帶由 Antonioni 執導（4 分鐘彩色，KVIFF 影展 2012 年 Antonioni 致敬單元列有此片）；〈Ballami〉只見於專輯曲目表，查不到它是單曲或有 Antonioni 執導的影片 | https://en.wikipedia.org/wiki/Puzzle_(Gianna_Nannini_album) | 否 |
+| ar-d-036 | Gianna Nannini《Puzzle》 | 是義大利最早由電影作者來拍音樂錄影帶的案例之一；不過在義大利，第二首真正走紅的單曲是〈Kolossal〉 | 「最早由電影作者拍 MV 的案例之一」與「第二首走紅的單曲是〈Kolossal〉」兩句都找不到來源；來源只把〈Kolossal〉列為專輯第一軌（3:58），沒有單曲或榜單資料 | https://en.wikipedia.org/wiki/Puzzle_(Gianna_Nannini_album) | 否 |
+| ar-d-036 | Giant Step《Giant on the Move!》 | 最後一軌用八分鐘唱空氣污染，印尼電台於是繞開了它 | Kamarmusik 只說樂團編曲複雜、歌難上排行榜，唯一的大力播放來自經紀人 Gandjar Suwargani 自營的 Radio Oz Bandung，並說環保議題在當時不討喜；沒有來源說電台因〈Air Pollution〉而拒播，「於是繞開了它」的因果句缺依據 | https://kamarmusik.id/spirit-tampil-beda-giant-step/ | 否 |
+| ar-d-036 | Grannie《Grannie》 | 1971 年進錄音室時多了 Janet Chandler 的長笛 | 存疑，不確定誰對：riffrelevant 與 recordcollector.org 兩頁都寫專輯 1970 年錄音、1971 年發行；另有來源（Discogs、psychedelicbabymag）寫 1971。名字多數來源寫 Jan Chandler，樂器則 riffrelevant 寫長笛、psychedelicbabymag 寫 Mellotron。建議簡介改成不帶錄音年份，樂器只寫其一或略去。 | https://www.riffrelevant.com/2020/06/07/oldschool-sunday-grannie/ | 否 |
+| ar-d-036 | Grow-Up《The Best Thing》 | 吉他手 John Bisset-Smith | LTM 傳記頁寫 Bisset-Smith 在 Grow Up 改彈貝斯，吉他手是 Roger Blackburn；Bisset-Smith 是在前一個團 Spherical Objects 彈吉他。建議簡介改成『成員 John Bisset-Smith』或『貝斯手與作曲 John Bisset-Smith』。 | https://www.ltmrecordings.com/grow_up.html | 否 |
+| ar-d-036 | Guruh Gipsy《Guruh Gipsy》 | Guruh Soekarnoputra 自資製作 | 印尼文維基與 Tirto 都寫錄音資金來自 Pontjo Sutowo（Gipsy 創團成員），並說另向贊助者籌款，不是 Guruh 自掏腰包；「自資」宜改為「籌資自製」。 | https://id.wikipedia.org/wiki/Guruh_Gipsy | 否 |
+| ar-d-036 | Guruh Gipsy《Guruh Gipsy》 | 只壓五千張，此後從未再版 | 英文維基寫 2006 年德國 Shadoks Music 未經授權重發黑膠後撤回；印尼報導則說「從未再發行」。「從未再版」若指正式再版成立，建議改寫為「從未正式再版」。 | https://en.wikipedia.org/wiki/Guruh_Gipsy | 否 |
+| ar-d-036 | Harry Roesli Gang《Philosophy Gang》 | 錄音在雅加達的 Musica Studio's，掛的卻是新加坡的 Lion Records | 2017 年《Jakarta Post》報導團員說錄音在萬隆，且重發主辦方找不到 Lion Records 與製作人 Robert Wong Junior，團員甚至認為廠牌可能是 Harry 自己編的。上線簡介把兩點寫成定論，建議改為「據唱片標示」或刪去；錄音地點兩說並存，需主線裁定。 | https://www.thejakartapost.com/life/2017/03/24/harry-roesli-returns | 否 |
+| ar-d-037 | Hi-STANDARD《MAKING THE ROAD》 | 國內外合計逾百萬張，日本唱片協會認定白金 | 各源口徑不一：日文維基與 Fat Wreck 寫逾 100 萬張，Oricon 專題寫 65.3 萬張，英文維基專輯條目寫逾 65 萬；『日本唱片協會認定白金』本層未讀到來源。建議改成不帶數字，或標明口徑。 | https://www.oricon.co.jp/special/49414/ | 否 |
+| ar-d-037 | Hi-STANDARD《MAKING THE ROAD》 | 難波章浩、橫山健、恆岡章的三人編制 | 鼓手本名為「恒岡章」（日文維基與報導的字形），上線簡介寫成「恆岡章」，專名字形不符。 | https://ja.wikipedia.org/wiki/Hi-STANDARD | 否 |
+| ar-d-037 | Hoola Bandoola Band《Vem kan man lita på?》 | 十個月賣掉 25000 張，最高到第 7 名 | 本層未在讀到的來源中找到這組銷量與名次，無法驗證；請店主回看原研究稿來源。 | https://sv.wikipedia.org/wiki/Hoola_Bandoola_Band | 否 |
+| ar-d-037 | Horrific Child《L'Étrange Mr Whinster》 | 1976 年由 Eurodisc 發行 | 法文維基、英文維基與 Red Bull Music Academy 都沒寫發行廠牌，Eurodisc 本層未能驗證；請店主對照原研究稿的 Discogs 版本表。 | https://en.wikipedia.org/wiki/Jean-Pierre_Massiera | 否 |
+| ar-d-037 | hush!《X》 | 團在 2015 年結束，一生只留下兩張錄音室專輯 | 中文維基正文、英文維基 Hush (singer)、Qobuz 均稱 2014 年解散（2014 年貝斯手與鼓手相繼離團）；2015 年 1 月的《Everyone's gonna miss you》是解散後的實況專輯。『2015 年結束』應改為 2014 年解散，或寫『2015 年初推出最後的實況專輯』。 | https://zh.wikipedia.org/zh-hant/Hush_(%E6%AD%8C%E6%89%8B) | 否 |
+| ar-d-037 | hush!《X》 | 兩年後由那家店發碟（《X》發行日 2012 年 10 月 20 日） | 中文維基專輯列表記《X》為 2012-12-01 發行、發行者 re:public studio，與 MusicBrainz 的 2012-10-20 不同，也沒有『海邊的卡夫卡』發行唱片的記載；『由那家店發碟』與日期兩處皆待核。 | https://zh.wikipedia.org/zh-hant/Hush! | 否 |
+| ar-d-037 | Igra Staklenih Perli《Igra Staklenih Perli》 | 他們長期在貝爾格勒學生文化中心演免費場 | 本層找不到樂團與貝爾格勒學生文化中心（SKC）的關聯；Psychedelic Baby 訪談只說『多數是免費場、人潮越來越多』，搜尋摘要提到的場地是貝爾格勒牙醫學院。待核。 | https://psychedelicbabymag.com/?p=2885 | 否 |
+| ar-d-037 | Igra Staklenih Perli《Igra Staklenih Perli》 | 〈Pečurka〉是寫給 Can 的致敬曲 | 事實庫稱此說法取自英文維基，本層讀到的 Danas 與 Psychedelic Baby 只提到團員愛聽 Can（以及 Tangerine Dream、Pink Floyd、Popol Vuh），沒有證實〈Pečurka〉是致敬曲。待核。 | https://psychedelicbabymag.com/?p=2885 | 否 |
+| ar-d-037 | Il Paese dei Balocchi《Il Paese dei Balocchi》 | 吉他手回憶這張唱片壓了 1800 張，用來試市場 | italianprog.com 原文是『Sandro Laudadio si ricorda che il nostro primo LP è stato stampato in 1800 copie per saggiare il mercato』，說這句話的是鼓手 Laudadio，不是吉他手 Fabiani；『吉他手回憶』應改為『鼓手回憶』。 | https://www.italianprog.com/it/a_paesedeibalocchi.htm | 否 |
+| ar-d-037 | Il Paese dei Balocchi《Il Paese dei Balocchi》 | 有幾段人聲，是借羅馬一座教堂的自然殘響錄下來的 | italianprog.com 證實部分合唱在羅馬 S. Euclide 教堂內利用殘響錄製（含〈Vanità dell'intuizione fantastica〉的人聲），與上線簡介一致；另補充教堂下方 Ortophonic 錄音室的管風琴用在末曲。簡介無誤，僅供補充。 | https://www.italianprog.com/it/a_paesedeibalocchi.htm | 是 |
+| ar-d-037 | Indiscreet Music《Dubious Collaberations》 | 年份落在 1971 到 1976——那是素材錄下的年份，碟本身是 1979 年的 | LTM 寫素材是 1971 至 1975 年的家庭即興；賣家頁曲目表則標到 1976 年（Manchester、Chester）。兩源對上限不一致，建議簡介改寫成『落在 1971 到 1976 年』時標明依據曲目表，或略去上限。簡介寫 A 面十段、B 面十四段與賣家頁一致（A1–A10、B1–B14）。 | https://ltmrecordings.com/auteur_labels_object_music_ltmcd2527.html | 否 |
+| ar-d-038 | Jambinai《Différance》 | 2012 年在 GMC Records 發行首作《차연》 | 2010 年已有自名 EP（Korea Herald 列為 2010 年 8 月），《차연》是首張錄音室專輯，「首作」宜改成「首張專輯」；GMC Records 這個發行廠牌本層沒查到可靠來源（只見 Progarchives 摘要把 GMC Records 掛在自名 EP 上），建議核對 | https://m.koreaherald.com/view.php?RURL=&ud=20160609000677 | 否 |
+| ar-d-038 | Jonathan Larson《Rent》 | 1996 年 1 月 25 日夜裡辭世，隔天正是首場公開預演 | 維基記他是 1 月 25 日凌晨約 0 點 30 分從製作會議返家後倒下，約 3 點被發現；首場公開預演是 25 日當天（Playbill 也寫他在預演開始前數小時過世）。簡介的「25 日夜裡」與「隔天預演」差了一天，應改為「首場預演當天凌晨」或「預演前數小時」。 | https://en.wikipedia.org/wiki/Jonathan_Larson | 否 |
+| ar-d-038 | Josefus《Dead Man》 | 他們最後一場演出是休士頓的一場汽車展 | 維基寫的是樂團當年最後一場演出在汽車展，但樂團之後 1978 年、1990 年先後重組並錄音，2004 年還有現場錄音發行，2011 年仍有演出；簡介沒有時序限定，會讓人以為樂團就此終結，應改為「樂團當年的最後一場演出」之類。 | https://en.wikipedia.org/wiki/Josefus | 否 |
+| ar-d-038 | Julieta Venegas《Sí》 | 2004 年 9 月 1 日的第 5 屆拉丁葛萊美，本輯獲最佳搖滾女歌手專輯獎 | 第 5 屆拉丁葛萊美（2004 年 9 月 1 日，洛杉磯 Shrine Auditorium）的類別是 Best Rock Solo Vocal Album（最佳搖滾個人演唱專輯），不分性別，其他入圍者還有 Charly García、Alejandra Guzmán 等男性；『女歌手』的說法有誤，應改為『個人演唱專輯』。 | https://en.wikipedia.org/wiki/5th_Annual_Latin_Grammy_Awards | 否 |
+| ar-d-038 | Junip《Fields》 | 先出過《Straight Lines》《Black Refuge》兩張 EP | 《Straight Lines》是 2000 年的 7 吋單曲（瑞典維基與 FMA 都寫 7 吋），只有《Black Refuge》（2006）是 EP | https://sv.wikipedia.org/wiki/Junip | 否 |
+| ar-d-038 | Junip《Fields》 | 早在 1998 年就以 Junip 名義活動 | 成軍年各源不一（Last.fm 1998、瑞典維基與 Wikidata 1999、FMA 1990 年代末），建議改「1990 年代末」 | https://freemusicarchive.org/music/Junip/bio | 否 |
+| ar-d-038 | Junipher Greene《Friendship》 | 換來挪威第一張雙專輯 | SNL 寫「挪威搖滾的第一張雙專輯」，Dagbladet 寫「第一張收錄自家創作的雙專輯」，建議加限定語（搖滾／原創曲目） | https://www.dagbladet.no/kultur/karet-til-norges-beste/74460167 | 否 |
+| ar-d-038 | Junoon《Azadi》 | 1998 年他們在 Channel V 音樂獎拿下最佳國際團體，同場演出的還有 Sting 與 The Prodigy | Daily Star 寫該獎頒於 1999 年 11 月的新德里典禮，同場演出者還有 Def Leppard；簡介的 1998 年疑有誤，需主線再核（頒獎年可查 Channel [V] Music Awards 歷屆） | https://archive.thedailystar.net/2006/10/05/d610051403119.htm | 否 |
+| ar-d-038 | Justin Hinds & The Dominoes《Jezebel》 | 1972年離開Duke Reid後與製作人Jack Ruby合作 | 維基與 NTS、Roots Archives 一致寫 1972 年離開 Reid，但 Perfect Sound Forever 寫他專為 Reid 錄音直到 1974 年 Reid 過世，各源不一，簡介年份可考慮拿掉 | https://www.furious.com/perfect/justinhinds.html | 否 |
+| ar-d-039 | Kalacakra《Crawling to Lhasa》 | 只過了一年樂團就結束 | Psychedelic Baby 訪談稱樂團只演過兩場，其中替 Moondog 開場是 1975 年，距 1972 年首發已三年；「只過一年就結束」與此不合，且「Martin 經營賣樂器與印度古董的店」「封面是白底黑色曼陀羅」本次均找不到出處，訪談說封面是一位美國藝術家 Dave 的手繪 | https://www.psychedelicbabymag.com/?p=8067 | 否 |
+| ar-d-039 | Kantata Takwa《Kantata Takwa》 | 買一卷卡帶就附一張門票 | Tirto 與 KapanLagi 都沒有提到卡帶附門票的做法，本次找不到出處；另外 6 月 23 日只有 Tirto 單源，KapanLagi 寫 1 月 23 日，Antara 與 GoodStats 寫 1991 年 | https://tirto.id/kantata-takwa-supergrup-indonesia-terbesar-sepanjang-masa-deLg | 否 |
+| ar-d-039 | Katarina II《Katarina II》 | 這批曲子原本在貝爾格勒錄過一次，器材條件不足、整批不能用，樂團才改到盧比安納重錄 | 塞爾維亞語維基只寫貝爾格勒開錄後遇到許多問題（多半與工作條件不佳有關），專輯改在斯洛維尼亞廠牌完成並發行；「整批不能用」「重錄」的說法比來源強，建議改為「在貝爾格勒開錄後因條件不佳，改到盧比安納完成」 | https://sr.wikipedia.org/wiki/Катарина_II_(албум) | 否 |
+| ar-d-039 | Kebnekajse《Kebnekaise II》 | 甘比亞打擊樂手 Hassan Bah | inrock 稱 Bah 來自幾內亞（並說《Ljus från Afrika》取材幾內亞歌曲），另有敘述稱他來自幾內亞比索，與簡介的甘比亞不一致；原盤 Discogs 頁只列名字與樂器，建議改寫成「打擊樂手 Hassan Bah」，不點國籍 | https://inrock.ru/english/kebnekajse_en | 否 |
+| ar-d-039 | Keenan Nasution《Di Batas Angan Angan》 | 那首歌由他自己作 | 英文維基記〈Nuansa Bening〉由 Keenan Nasution 與 Rudi Pekerti 共同寫成，簡介寫成他自己作；建議改為「他與 Rudi Pekerti 合寫」 | https://en.wikipedia.org/wiki/Keenan_Nasution | 否 |
+| ar-d-039 | Keenan Nasution《Di Batas Angan Angan》 | 在 Rolling Stone 的 150 大歌曲排第 27 名，專輯排第 44 名 | 歌曲第 27 名有搜尋摘要支持（Rolling Stone 印尼版，2009 年 12 月），但專輯第 44 名找不到任何出處，且歌曲榜與專輯榜是不同年份的兩份榜（專輯榜 2007 年 12 月、歌曲榜 2009 年 12 月）；請店主核對原榜 | https://en.wikipedia.org/wiki/Rolling_Stone_Indonesia%27s_150_Greatest_Indonesian_Albums_of_All_Time | 否 |
+| ar-d-039 | Kenneth Higney《Attic Demonstration》 | 當年印了 1000 份封套，卻只壓 500 張，剩下的封套等到 1985 年才裝上第二批 500 張 | 英文維基只寫「約壓了 1000 張，但只發行 500 張」，其他資料只說限量 500 張，沒有任何一處提到「封套 1000 份」與「1985 年第二批」；來源說法與簡介相反（維基是唱片多、發行少，簡介是封套多、唱片少），建議店主核對該句出處 | https://en.wikipedia.org/wiki/Kenneth_Higney | 否 |
+| ar-d-039 | Kenny Wayne Shepherd Band《Trouble Is...》 | 創下 Billboard 藍調榜在榜最久的紀錄 | 僅英文維基 Kenny Wayne Shepherd 條目單源（holds the record for the longest-running album on the Billboard Blues chart）；專輯條目沒寫，搜尋摘要的 Nashville Scene 只寫在榜 104 週、其中 30 週居 Blues Albums 第 1，找不到獨立來源稱為紀錄，建議改成較保守寫法或補上來源 | https://en.wikipedia.org/wiki/Kenny_Wayne_Shepherd | 否 |
+| ar-d-039 | Kim Carnes《Mistaken Identity》 | Val Garay 與鍵盤手 Bill Cuomo 用 Prophet-5 合成器重寫節奏骨架 | pophistorydig 轉述 Carnes 的說法只講 Cuomo 是她的合成器手、改了和弦與整體感覺；本層讀到的來源都沒有提到 Prophet-5 這個型號，也沒說他「重寫節奏骨架」，建議改成較保守寫法或補上有出處的型號 | https://pophistorydig.com/topics/2008/06/ | 否 |
+| ar-d-039 | Kitchens of Distinction《Strange Free World》 | Fitzgerald 是公開出櫃的同志、歌詞也常寫此事，樂團因此始終沒拿到同代 shoegaze 團的市場位置 | 這個因果是英文維基的單源說法（did not attain the commercial success… as Fitzgerald was openly gay），並非公認事實；Fitzgerald 本人反對被貼上「gay band」標籤。建議改成「維基這樣解釋」或「當時媒體傾向以此定位」，避免寫成確定的原因 | https://en.wikipedia.org/wiki/Kitchens_of_Distinction | 否 |
+| ar-d-039 | Klaus Mitffoch《Klaus Mitffoch》 | 唱片當年替樂團拿下獎項 | 英文維基只寫專輯「received several awards」，沒有年份也沒有獎名；波蘭文維基記載的獎是 1983 年 6 月在全國青年才藝賽（Ogólnopolski Turniej Młodych Talentów）與 Azyl P. 並列第二，獎品是 Tonpress 錄音室的錄音時段，那是樂團得獎、在專輯之前，不是專輯當年得獎，建議改寫或拿掉 | https://pl.wikipedia.org/wiki/Klaus_Mitffoch | 否 |
+| ar-d-039 | Klaus Renft Combo《Renft》 | 1975 年當局下令解散樂團，起因是 Gerulf Pannach 為第三張寫的歌詞 | de 維基寫第三張專輯的多首歌被退回（含談建築兵役與談逃離東德失敗的歌），DHM 另列不合規範的舞台形象；起因並非 Pannach 單人的歌詞。建議改成「因歌詞與舞台形象被禁」。 | https://de.wikipedia.org/wiki/Klaus_Renft_Combo | 否 |
+| ar-d-039 | Koes Bersaudara《To The So Called The Guilties》 | 坐完牢後他們錄下這張首作 | 樂團此前已有專輯（Rolling Stone Indonesia 榜單列有 1964 年《Koes Bersaudara》，garagehangover 寫首張專輯在 1961 或 1962 年）；這張是出獄後的第一張。建議改成「出獄後的第一張專輯」。 | https://en.wikipedia.org/wiki/Koes_Bersaudara | 否 |
+| ar-d-039 | Koes Bersaudara《To The So Called The Guilties》 | 五天後三兄弟被捕，未經審判關了三個月 | 各來源對被關人數不一：id 維基寫三人被捕、Nomo 自首，CNN Indonesia 與 garagehangover 寫四兄弟被關。建議只寫「兄弟」。 | https://www.cnnindonesia.com/hiburan/20160310080131-227-116442/koes-bersaudara-rela-masuk-bui-demi-indonesia | 否 |
+| ar-d-039 | Korni Grupa《Korni Grupa》 | 錄音時的主唱 Zlatko Pejaković 那年初才進來 | sr 維基寫 Pejaković 1971 至 1974 年擔任主唱，en 維基寫 1972 年初加入；兩個維基不一致。建議改成「錄音時的主唱 Zlatko Pejaković」，不寫加入時間。 | https://sr.wikipedia.org/wiki/%D0%9A%D0%BE%D1%80%D0%BD%D0%B8_%D0%B3%D1%80%D1%83%D0%BF%D0%B0 | 否 |
+| ar-d-039 | Korni Grupa《Korni Grupa》 | 樂團同年 6 月登上 Montreux Jazz Festival | 只見 en 維基單源；搜尋、n1info、Danas 與 sr 維基都沒提到蒙特勒。建議店主在本機另找第二來源，否則刪除。 | https://en.wikipedia.org/wiki/Korni_Grupa | 否 |
+| ar-d-039 | Krzysztof Klenczon《Krzysztof Klenczon i Trzy Korony》 | 單聲道 XL 0799 與立體聲 SXL 0779 並列 | 研究稿引 pl 維基專輯頁寫 XL/SXL 0779（單聲道與立體聲共用 0779 這個數字），簡介的 0799 疑為誤植；本層未再開 Discogs 驗證，建議店主在本機核對再改。 | https://pl.wikipedia.org/wiki/Krzysztof_Klenczon_i_Trzy_Korony | 否 |
+| ar-d-040 | Laughing Hyenas《You Can't Pray a Lie》 | 吉他手 Larissa Strickland 先前在 L7（引《Trouser Press》） | 她先前的樂團應為底特律的 L-Seven（Third Man 重發文與 Ann Arbor 地方報導都寫 L-Seven）；L7 是洛杉磯的另一支團，簡介若寫 L7 會讓讀者誤認。建議改為 L-Seven。Trouser Press 原文寫的確實是 L7，屬該條目本身的誤植。 | https://pulp.aadl.org/comment/140528 | 否 |
+| ar-d-040 | Leeway《Born to Expire》 | 1988 年的 12 吋編號 PRO-1257、同年的 CD 版 | 英文維基《Born to Expire》與 No Echo 的 Michael Gibbons 訪談都說 1987 年 11 月錄音、延到 1989 年（維基記 1 月 21 日）才發行；1988 年是 MusicBrainz 與 Apple Music 的記法。簡介若把 1988 當首發年可能需改為 1989，或改寫為「1987 年錄音」。卡池年份 1988 同理可能需主線裁定。 | https://en.wikipedia.org/wiki/Born_to_Expire | 否 |
+| ar-d-040 | Lombard《Śmierć dyskotece》 | 唱片還沒上市，波蘭廣播第三台就先收到〈Przeżyj to sam〉的禁播令 | 波蘭文維基與 Notes from Poland 都寫這首歌曾播出（波蘭文維基：第三台開播日播出、兩天後被審查者撤下），並非上市前就先收到禁播令；建議改成「播出後不久被審查者撤下」，或核對原始出處 | https://notesfrompoland.com/2023/06/27/veteran-rock-band-criticises-polish-opposition-for-its-using-anti-communist-anthem-at-rally/ | 否 |
+| ar-d-040 | LOUDNESS《Thunder in the East》 | 專輯在 Billboard 榜停留 23 週、最高第 74 名，是日本樂團首度打進美國百名以內 | 『日本樂團首度打進美國百名以內』是『第一』類宣稱，目前只有日文維基與 Billboard JAPAN 商品頁（促銷性質，原文是『日本人ロック・バンド初のビルボードTOP100への連続チャートイン』）支持，未見獨立第二源，也未排除其他日本團體早於 1985 年進榜的反例；建議改成不帶『首度』的寫法，或由店主本機再查證。『23 週』本層未查到來源。 | https://www.billboard-japan.com/goods/detail/504769 | 否 |
+| ar-d-040 | Måneskin《Teatro d'ira, Vol. I》 | 唱片出來之後，〈Zitti e buoni〉拿下當年 Sanremo 音樂節冠軍，樂團隨後代表義大利參加同年的 Eurovision 歌唱大賽並奪冠 | 先後順序疑有誤：義大利文維基記《Teatro d'ira: Vol. I》2021 年 3 月 19 日發行，Il Post 記樂團是 2021 年 3 月贏得 Sanremo；第 71 屆 Sanremo 的決賽日（本層憑印象為 3 月 6 日，未開頁驗證）早於專輯發行日，簡介『唱片出來之後』拿 Sanremo 冠軍恐倒果為因，建議店主核對 Sanremo 決賽日後改成『專輯出版的同一個月，〈Zitti e buoni〉拿下 Sanremo 冠軍』或拿掉先後。〈Zitti e buoni〉在 Sanremo 前已發行為單曲。 | https://www.ilpost.it/2021/05/23/i-maneskin-hanno-vinto-leurovision-song-contest/ | 否 |
+| ar-d-041 | Manowar《Kings of Metal》 | 創團吉他手 Ross the Boss 與鼓手 Scott Columbus 在團的最後一張 | 《Kings of Metal》確是 Ross the Boss 在團的最後一張；但 Columbus 離團後於 1996 年《Louder Than Hell》回歸並待到 2008 年，對他只有『第一段在團時期的最後一張』成立。建議改成只講 Ross the Boss，或註明 Columbus 後來回團。 | https://en.wikipedia.org/wiki/Kings_of_Metal | 否 |
+| ar-d-041 | MASS OF THE FERMENTING DREGS《祝おう》 | 前作是 2018 年的《No New World》，同樣是 FLAKES 編號 | 日文維基的專輯表在 2018 年之後還有《NAKED ALBUM》（2020 年）、《Awakening:Sleeping》（2022 年）與《LIVE IN JAPAN》（2024 年），『前作』的說法需改成『再起後第四張專輯』或另查最近一張；事實庫引用的專輯表停在 2020 年，是上線簡介當時漏看。 | https://ja.wikipedia.org/wiki/MASS_OF_THE_FERMENTING_DREGS | 否 |
+| ar-d-041 | Maximum Joy《Station M.X.J.Y.》 | Y Records 是 The Slits 的經理人 Disc O'Dell 開的 | Bandcamp 專文寫創辦人為 Dick O'Dell（The Pop Group 與 The Slits 的經理人）；Discogs 寫成 Disc O'Dell，疑為綽號或誤植，待店主核對 | https://daily.bandcamp.com/features/maximum-joy-feature | 否 |
+| ar-d-041 | Maxophone《Maxophone》 | 成員全部受過音樂院訓練 | 英文維基寫一半成員受過古典訓練、其餘有搖滾樂團經驗；Record Collector 寫三位創團成員受過古典訓練；與簡介的「全部」不一致，建議改成「成員多有古典訓練」或刪去 | https://en.wikipedia.org/wiki/Maxophone | 否 |
+| ar-d-041 | Metró《Metro》 | 1963 年第一屆 beat 音樂節上，樂團與 Illés、Omega 同台 | 查不到來源：匈牙利維基只寫 1967 年電影《Ezek a fiatalok》、Táncdalfesztivál 與 Ki mit tud?；樂團 1960 年才成立為 Zenith、1961 年才改名 Metro，1963 年的說法無依據，建議核對或刪除 | https://hu.wikipedia.org/wiki/Metro_%28egy%C3%BCttes%29 | 否 |
+| ar-d-041 | Michal Prokop & Framus Five《Město ER》 | 也被稱為第一張捷克 art rock 專輯 | 本層搜尋一次、開 Echo24 一頁，只見『完整地把 art rock 帶進捷克樂壇』的說法，沒有找到『第一張』的出處；建議改寫成 Echo24 的說法，或由主線確認出處。 | https://echo24.cz/a/SpQyD/do-sine-slavy-hudebnich-cen-andel-vstoupil-michal-prokop | 否 |
+| ar-d-041 | Michel Berger《Starmania》 | 唱片後來登上法國排行榜第 4 名，並拿下逾 100 萬張的鑽石認證 | 各來源不一：英文維基專輯條目寫第 4 名與鑽石認證；Chartmasters（搜尋摘要，未開頁）寫原版首度只到第 16 名；法文來源有只寫金唱片、有寫逾 220 萬張。建議核對 SNEP 或 InfoDisc 後再決定保留或刪掉。 | https://chartmasters.org/?p=739 | 否 |
+| ar-d-042 | Murple《Io sono Murple》 | 樂團 1973 年成立於羅馬 | 義大利文維基寫 1973 年，Record Collector 與 Vea Music 的商品說明寫 1971 年，兩說不一致、沒有第三源，建議簡介避開成軍年或改為不具年份的寫法 | https://www.recordcollector.org/the-collection/murple-io-sono-murple.html | 否 |
+| ar-d-042 | Music Emporium《Music Emporium》 | 剛被 Liberty 開除的 Jack Ames | 英文維基寫 Ames 被 Liberty 開除；Cosby 2015 年訪談只說 Ames 是 Liberty 的共同創辦人、剛離開該廠牌，沒有說被開除。『開除』只有維基單源，建議改成『剛離開 Liberty』 | https://www.psychedelicbabymag.com/2015/04/music-emporium-interview-with-willia.html | 否 |
+| ar-d-042 | Music Emporium《Music Emporium》 | 壓 300 張 | 張數只見英文維基單源，Cosby 訪談沒有提到；建議降成較不具體的說法（極少量自壓）或保留但視為單源 | https://en.wikipedia.org/wiki/Music_Emporium | 否 |
+| ar-d-042 | Mystic Siva《Mystic Siva》 | 四人編制含 Mark Heckert | Psychedelic Baby 與 Concreteweb 兩處都拼 Marc Heckert；名字拼法可能應為 Marc，低信心，建議店主核對專輯封底 | https://www.psychedelicbabymag.com/2014/02/mystic-siva-mystic-siva-19702014-review.html | 否 |
+| ar-d-043 | Odyssey《Odyssey》 | 前身是康乃狄克的家族組合 Lopez Sisters | 來源不一：維基與 everyuknumber1 說來自康乃狄克，barrypopik 說三姊妹生於美屬維京群島、紐約長大；建議店主改成不點出生地 | https://barrypopik.com/blog/native_new_yorker_1977 | 否 |
+| ar-d-043 | Paul Roland《Burnt Orchids》 | 1985 年的 SCOOP 2，Aftermath Records 發行，八軌，同一家 Aftermath 的 AFT 1 是 Robyn Hitchcock 的專輯 | Paul Roland 官方傳記寫他『回到 Armageddon Records 發行迷你專輯《Burnt Orchids》』；Discogs 記 Aftermath Records、SCOOP 2、LP。廠牌與是否為迷你專輯兩邊對不上（可能是 Armageddon 旗下或發行關係，未驗證），建議在本機核對原盤封套與 Discogs 條目後再決定是否改。 | https://www.paulroland.info/biography.html | 否 |
+| ar-d-044 | Pholas Dactylus《Concerto delle menti》 | 約 1972 年在米蘭一帶成軍 | 英文維基寫由 Bergamo 的樂手組成、前身 Spectre；italianprog 寫米蘭省。兩源互相矛盾，簡介宜改成較寬的「義大利北部」或不寫城市。 | https://en.wikipedia.org/wiki/Pholas_Dactylus_(band) | 否 |
+| ar-d-044 | Pholas Dactylus《Concerto delle menti》 | 器樂偏爵士，鍵盤與鋼琴兩人分工 | italianprog 只列兩位鍵盤手（Galbusera、Pancotti），未提鋼琴也未提爵士；英文維基也沒有爵士一說。查不到來源，待核。 | https://www.italianprog.com/it/a_pholasdactylus.htm | 否 |
+| ar-d-044 | Pholas Dactylus《Concerto delle menti》 | 歌詞晦澀，充滿對頹廢派藝術、宗教與垮掉派詩歌的援引 | 英文維基寫的是聖經、神話與科幻影響、象徵意味強；「頹廢派」「垮掉派」查不到來源，待核。 | https://en.wikipedia.org/wiki/Pholas_Dactylus_(band) | 否 |
+| ar-d-044 | Phương Tâm《Magical Nights: Saigon Surf, Twist & Soul (1964-1966)》 | 她是越南最早錄搖滾樂的歌手之一 | 僅 Sublime Frequencies 廠牌自述「one of the first singers to perform and record rock and roll」，PopMatters 沒有這句，查不到獨立第二源；屬「最早」類宣稱，宜改成「廠牌稱她是最早錄搖滾樂的越南歌手之一」或淡化。 | https://sublime-frequencies.bandcamp.com/album/magical-nights-saigon-surf-twist-soul-1964-1966 | 否 |
+| ar-d-044 | Prúdy《Zvoňte zvonky》 | 十二首裡 Marián Varga 作曲七首、Pavol Hammel 三首 | TASR 專題寫十二首中 Varga 八首、Hammel 三首、另一首為合寫，與簡介的七首不一致；需對照專輯內頁作曲人欄位確認 | https://www.teraz.sk/kultura/ceskoslovensko-100-rokov-100-hitov/357065-clanok.html | 否 |
+| ar-d-044 | Raphael《Raphael (1973)》 | 〈El fusil del poeta es una rosa〉出自秘魯創作歌手 Chabuca Granda 之手，收在這張專輯 | 查到這首是 Chabuca Granda 的詩，但在維基歌手頁、西班牙文維基的 Raphael 唱片目錄與搜尋結果裡，都找不到 Raphael 錄過這首、或這首收在 1973 年《Raphael》的來源；目錄只確認 1973 年有一張《Raphael》（Zzelesta，Hispavox／Parnaso），沒有曲目。建議店主對照唱片曲目再確認。 | https://es.wikipedia.org/wiki/Anexo:Discograf%C3%ADa_de_Raphael | 否 |
+| ar-d-044 | Raphael《Raphael (1973)》 | 是他同一年推出的兩張錄音室作品之一 | 西班牙文維基目錄列 1973 年有三張：《Le llaman Jesús》《From Here On...》（英語）與《Raphael》；若指西語兩張則不衝突，僅提示。 | https://es.wikipedia.org/wiki/Anexo:Discograf%C3%ADa_de_Raphael | 否 |
+| ar-d-044 | Raw Deal《Raw Deal》 | 三十年後這七首以樂團後來的名字重新上架，每一軌都標著 demo 版本，曲序逐位置與這捲相同 | 維基只寫 Killing Time《Brightside》的 Victory 再版收了四首 Raw Deal demo 曲（〈Wall of Hate〉〈Tell Tale〉〈New Release〉〈Only the Strong Survive〉），另有 2005 年 Dead Serious Records 的 Raw Deal demo EP；『三十年後』『七首逐位置相同』本層未查到來源，建議店主對照串流平台曲目與上架年份再確認。 | https://en.wikipedia.org/wiki/Killing_Time_(American_band) | 否 |
+| ar-d-044 | Raw Material《Time Is...》 | 三件式之外多了 Colin Catt 的鍵盤與 Michael Fletcher 的管樂 | Joynson 與 Arvanitis 的團員表與 Record Collector 都列出 Catt（鍵盤、人聲）、Fletcher（薩克斯風、長笛、人聲）、Dave Green（吉他）、Phil Gunn（貝斯）、Paul Young（打擊）與 Cliff Harewood（第二吉他）；『三件式之外加』的說法來自 Discogs 樂團介紹的概括，與團員表的實際編制不太相符，另 Fletcher 名字常寫成 Mike。 | https://www.spaceritual.net/alexgitlin/npp/rm.htm | 否 |
+| ar-d-044 | Ray Lynch《Deep Breakfast》 | 1994 年獲 RIAA 白金 | 維基 Ray Lynch 條目寫 1993 年 5 月 RIAA 白金；《Deep Breakfast》專輯條目（搜尋摘要）寫 1994 年；兩處不一致，本層未能查到 RIAA 資料庫。建議店主到 RIAA 認證資料庫核對，或改寫成不帶年份。 | https://en.wikipedia.org/wiki/Ray_Lynch | 否 |
+| ar-d-045 | Red Noise《Sarcelles-Lochères》 | 1971 年由 Futura Records 發行 | 英文維基、AllMusic（搜尋摘要）、Souffle Continu 重發頁都寫 1970，法文維基與卡池年份寫 1971；錄音日期是 1970 年 11 月 28 日，發行年份各源不一，建議店主決定是否保留 1971 或改寫成『1970 年底錄音』。 | https://en.wikipedia.org/wiki/Sarcelles_-_Loch%C3%A8res | 否 |
+| ar-d-045 | Red Noise《Sarcelles-Lochères》 | B 面一段 0:35 與 20:00 的〈Sarcelles c'est l'avenir〉 | Souffle Continu 重發頁寫該曲為 18 分鐘，與 20:00 不一致；未能開 Discogs 核對，僅供參考。 | https://bentcrayonrecords.com/product/red-noise---sarcelles-locheres-lp-souffle-continu | 否 |
+| ar-d-045 | Redbone《Wovoka》 | 〈We Were All Wounded at Wounded Knee〉在比利時、荷蘭奪冠，卻因題材敏感從美加版抽掉 | NPR 報導寫的是 CBS 拒絕在美國發行該曲，並未提到加拿大；搜尋結果另有說法稱它曾以 7 吋在美國短暫發行後被撤回。『美加版抽掉』的加拿大部分與撤回方式，本層找不到來源，建議改成『美國發行方不願發行』或保持模糊。 | https://www.kpbs.org/news/2024/04/16/50-years-ago-come-and-get-your-love-put-native-culture-on-the-bandstand | 否 |
+| ar-d-045 | Room《Pre-Flight》 | 六個人的樂團，唱片上另外掛了十三位弦樂與銅管樂手 | Progarchives 摘要與 rarevinyl 皆寫五人團（Jane Kevern、Steve Edge、Chris Williams、Roy Putt、Bob Jenkins）；成員訪談稱 Steve Edge 在發片前已離團；Ultimate Heep 列六人含 John Hutcheson，但稱他在發片後才加入。『六人』是否成立待主線依 Discogs 編制核對。 | https://www.psychedelicbabymag.com/?p=56479 | 否 |
+| ar-d-045 | Samantha Fish《Kill or Be Kind》 | 2011 年以《Runaway》拿下 Blues Music Award 最佳新人 | 《Runaway》2011 年發行，但獎是 2012 年第 33 屆 Blues Music Awards 的 Best New Artist Debut；簡介把獎項年份寫成 2011 年 | https://www.hypebot.com/tedeschi-trucks-tab-benoit-top-blues-musis-awards/ | 否 |
+| ar-d-045 | Sampaguita《Sampaguita》 | 藝名是打擊樂手隨口給的 | 維基只寫 Nick Boogie 取了這個藝名（coined），沒有「隨口」的說法；「後來被稱作菲律賓搖滾女王」的出處是維基首段無註腳句子，並非有出處的共識 | https://en.wikipedia.org/wiki/Sampaguita_(singer) | 否 |
+| ar-d-045 | Sampaguita《Sampaguita》 | 〈Bonggahan〉與〈Tao〉兩首同年也以七吋單曲發行 | 同年與否未能驗證：Philstar 把〈Bonggahan〉標為 1977，菲律賓圖書館目錄的 Blackgold 單曲無可靠年份 | https://www.philstar.com/entertainment/2016/07/28/1607259/30-iconic-filipino-songs/amp/ | 否 |
+| ar-d-046 | Šarlo Akrobata《Bistriji ili tuplji čovek biva kad...》 | 樂團把錄音買回來，同年 7 月改由 Jugoton 發行 | 英文維基專輯條目寫 PGP-RTB 把錄音『立刻賣給 Jugoton』，Vreme 專文寫廠牌把錄音交給 Jugoton；兩源都沒有樂團買回錄音的說法，建議改成『錄音轉由 Jugoton 發行』。 | https://en.wikipedia.org/wiki/Bistriji_ili_tuplji_%C4%8Dovek_biva_kad... | 否 |
+| ar-d-046 | Say Sue Me《Where We Were Together》 | 樂團隔年拿下한국대중음악상最佳搖滾專輯與最佳搖滾歌曲 | 2019 年第 16 屆獎項名單（twig24 轉載）與英文維基都寫樂團得的是『最佳摩登搖滾專輯』與『最佳摩登搖滾歌曲』（최우수 모던록），不是『最佳搖滾』（최우수 록）；後者同屆由 Life and Time 獲得。建議把『最佳搖滾』改成『最佳摩登搖滾』。 | https://twig24.com/news/entertainments/2019/02/27/20190227500001 | 否 |
+| ar-d-046 | Selfkill《公路白》 | 成為台灣第一支入圍金曲獎最佳樂團的後搖團 | 「第一支」只見於中文維基（該條目自標缺乏可靠來源）與無法開頁的搜尋摘要，找不到獨立來源，也沒查證是否有更早入圍的器樂或後搖團；入圍本身（2007 年第 18 屆最佳樂團獎入圍）有據。建議改成「入圍第 18 屆金曲獎最佳樂團獎」，或先確認「第一」 | https://zh.wikipedia.org/wiki/Selfkill | 否 |
+| ar-d-046 | Semiramis《Dedicato a Frazz》 | 書背白色、沒印團名，只寫著七吋單曲字首的 TRN 1004 | Strawberry Bricks（原版 Trident，對開封套）記目錄號為 TRI 1004（亦列 TRI.1004），Spaceritual 列 TR11004；「TRN」字首可能是 TRI 的筆誤，建議對照實體封面或 Discogs 再確認 | https://strawberrybricks.com/guide/releases/dedicato-frazz | 否 |
+| ar-d-046 | Semiramis《Dedicato a Frazz》 | 十五歲頂替原主唱進團的 Michele Zarrillo | 英文維基寫 Michele 進團時 16 歲（1972 年），義文維基寫 15 歲（Villa Pamphili 搖滾節）；兩種年齡說法並存，簡介若保留 15 歲，建議改為「才十幾歲」 | https://en.wikipedia.org/wiki/Semiramis_(band) | 否 |
+| ar-d-046 | Servant《Shallow Water》 | 《CCM Magazine》的樂評說他們的歌詞帶有社會抗議與批評 | 英文維基記這篇 CCM 樂評評的是 1981 年的《Rockin' Revival》，不是 1979 年的《Shallow Water》；簡介若放在《Shallow Water》的卡上，容易讓讀者誤以為評的是這張，建議註明或移除 | https://en.wikipedia.org/wiki/Servant_(band) | 否 |
+| ar-d-046 | Shape of the Rain《Riley, Riley, Wood and Waggett》 | 1964 年成軍於礦村 Eckington | 低嚴重度、待核：Discogs（事實庫來源）寫 Eckington（Sheffield 近郊礦村）；NTS 藝人頁與 Rough Trade 商品頁、搜尋摘要寫 Sheffield。兩說不一定矛盾（Eckington 在 Sheffield 附近），建議改成「Sheffield 一帶」或維持原句但別寫成 Sheffield 市內。 | https://nts.live/artists/109635-shape-of-the-rain | 否 |
+| ar-d-046 | Shark Move《Ghede Chokra's》 | 樂團 1970 年成軍於萬隆的 Pasar Baru | 年份來源分歧、待核：NTS（維基系）與事實庫舊來源寫 1970；NPR 寫 1972 成軍、1973 年到雅加達錄音；Now-Again 寫 1973 年才移往雅加達。卡池年份 1970 也隨之存疑。建議簡介改成不帶年份，或留待取得唱片本身（Shadoks 重發的內頁說明）的記載再定。 | https://www.wyso.org/2010-12-02/the-lo-fi-legacy-of-indonesia | 否 |
+| ar-d-046 | Shark Move《Ghede Chokra's》 | 唱片名在印地語裡的意思是偉大的錄音時段 | 語言待核：NPR 寫標題譯自梵文（Sanskrit），意為 Great Session；上線簡介寫印地語。意思一致，語言歸屬不同，建議改成不指明語言。 | https://www.wyso.org/2010-12-02/the-lo-fi-legacy-of-indonesia | 否 |
+| ar-d-046 | Shark Move《Ghede Chokra's》 | 2003 年德國的 Shadoks Music 做了黑膠再版 | 年份待核：NTS 藝人頁寫 2006 年重新處理母帶、2007 年由 Shadoks 重發；事實庫舊來源（已失效）與上線簡介寫 2003。另「整張七天錄完」「2017 年 Outer Battery 重製」本層沒有查到來源。 | https://nts.live/artists/50920-shark-move | 否 |
+| ar-d-046 | Sheer Terror《Just Can't Hate Enough》 | 1989 年德國壓的 12 吋 S.M.R. 054 | 年份待核：英文維基寫專輯錄於 1990 年，Starving Missile 首發在德國，1989 年只有 Blackout 合輯《Where the Wild Things Are》；與 MusicBrainz 的 first-release-date 1989 不一致。建議上線簡介若要保留「1989 年德國壓」，需再取得壓片本身的記載確認。 | https://en.wikipedia.org/wiki/Sheer_Terror | 否 |
+| ar-d-046 | Shin Joong Hyun《Beautiful Rivers and Mountains: The Psychedelic Rock Sound of South Korea's Shin Joong Hyun 1958-1974》 | 一九六四年組成韓國第一支搖滾樂隊 Add4 | 年份待核：英文維基寫 Add4 1962 年成立，Berklee 官網寫 1961 年；Light in the Attic 只寫 1964 年是開始錄音。建議改為不帶年份，或改成「1960 年代初」。 | https://en.wikipedia.org/wiki/Shin_Joong-hyun | 否 |
+| ar-d-046 | Shin Joong Hyun《Beautiful Rivers and Mountains: The Psychedelic Rock Sound of South Korea's Shin Joong Hyun 1958-1974》 | 一九五七年自美軍第八軍團樂隊出身 | 待核：Berklee 只說他 1957 年在美軍基地開始受到注意，Light in the Attic 說停戰後為駐韓美軍演出，GWANGJU News 說在龍山美軍基地俱樂部演出，三處都沒有「第八軍團樂隊」；建議改為「在駐韓美軍基地演奏」。 | https://college.berklee.edu/node/2364891 | 否 |
+| ar-d-046 | Shin Joong Hyun《Beautiful Rivers and Mountains: The Psychedelic Rock Sound of South Korea's Shin Joong Hyun 1958-1974》 | 末軌〈아름다운 강산〉出自신중현과 더 멘 | 待核：維基 Yup Juns 條目把〈Beautiful Rivers and Mountains〉列在 Shin Jung Hyun & Yup Juns 的專輯裡，沒提到 The Men；選輯曲目表的署名需對照唱片本身確認。另「一九七五年他因大麻案入獄」屬刑案細節，來源確有記載（GWANGJU News），但依音樂史脈絡可考慮改為「遭政權打壓、作品被禁」。 | https://en.wikipedia.org/wiki/Shin_Jung_Hyun_%26_Yup_Juns | 否 |
+| ar-d-046 | Shylock《Gialorgues》 | 樂團自資發行，廠牌名就叫 Gialorgues | 法文維基與 Soundohm 均記該專輯首發於 CBS（1977 年初），Strawberry Bricks 記 1976 年自資私壓後由 CBS 重發；上線簡介只寫自資版，未提 CBS 版，且發行情況來源互相矛盾，建議措辭保守並確認是否為 1976 私壓版。 | https://strawberrybricks.com/guide/releases/gialorgues | 否 |
+| ar-d-046 | Silica Gel《POWER ANDRE 99》 | 隔年獲한국대중음악상三冠 | 三冠（年度音樂人、最佳摩登搖滾專輯、最佳摩登搖滾歌曲）發生在 2024 年 2 月第 21 屆，得獎作品是 EP《Machine Boy》與單曲〈Tik Tak Tok〉，此時《POWER ANDRE 99》（2023 年 12 月 20 日發行）才剛發行；《POWER ANDRE 99》在 2025 年第 22 屆只入圍年度專輯、最佳摩登搖滾專輯與年度音樂人，三項均未得獎。簡介句子讀起來像是這張專輯得三冠，建議改寫或刪除。 | https://www.imaeil.com/page/view/2024030107124345235 | 否 |
+| ar-d-046 | Silica Gel《POWER ANDRE 99》 | 2013 年成軍於서울예술대학교 | 本位來源只確認維基記載成軍於安山（서울예술대학교 校區所在地）且為 2013 年，另一來源 JoongAng 寫 2015 年；學校一事未在任何本位開頁的來源看到，無法證實。 | https://en.wikipedia.org/wiki/Silica_Gel_(band) | 否 |
+| ar-d-046 | Sindelfingen《Odgipig》 | Kent 郡 Rochester 的樂團，1969 至 1974 年間只在本地演出，從未拿到唱片合約 | 本位開頁讀到的來源（Progarchy、Discogs 條目、唱片行頁）都沒有提到 Rochester、Kent、1969 至 1974 年或『從未拿到唱片合約』，無法證實，僅 Progarchy 稱他們是『四位英國人』；建議確認出處。 | https://progarchy.com/2024/02/24/the-best-prog-bands-youve-never-heard-of-part-thirty-seven-sindelfingen/ | 否 |
+| ar-d-046 | Sindelfingen《Odgipig》 | 團名取自德國城市 Sindelfingen | 本位來源皆未提到團名由來，無法證實。 | https://progarchy.com/2024/02/24/the-best-prog-bands-youve-never-heard-of-part-thirty-seven-sindelfingen/ | 否 |
+| ar-d-046 | Skid Row《Skid Row》 | Sebastian Bach 是 Bon Jovi 的父母在攝影師 Mark Weiss 的婚禮上聽他唱過之後引薦進來的 | 本位開頁的 Loudersound（Sabo 口述）寫的是朋友推薦、Sabo 寄 demo、Bach 從多倫多飛來試唱；維基寫樂團在婚禮上看到 Bach。兩者都沒提 Bon Jovi 的父母與 Mark Weiss，這句版本無法由本位來源證實，建議確認出處或刪除。 | https://www.loudersound.com/bands-artists/skid-row-debut-story-behind-album | 否 |
+| ar-d-047 | Soul Asylum《Made to Be Broken》 | 1994 年以〈Runaway Train〉拿下葛萊美最佳搖滾歌曲 | 葛萊美官網第 36 屆最佳搖滾歌曲的得獎人署名為詞曲作者 David Pirner，獎項屬詞曲作者而非樂團；簡介主詞是樂團，建議改成「Pirner 以〈Runaway Train〉拿下」或「〈Runaway Train〉替 Pirner 贏得」。 | https://www.grammy.com/awards/36th-annual-grammy-awards | 否 |
+| ar-d-047 | Soul Asylum《Made to Be Broken》 | 1993 年 1 月 20 日在總統就職典禮上演出 | 維基（引 Martin C. Strong）寫 1 月 20 日在柯林頓第一次就職典禮演出；Encyclopedia.com 寫 1993 年 1 月在 MTV Inaugural Ball（就職舞會）登台。場合說法不一，建議改成「柯林頓就職的慶祝活動」或另查當日節目表後定稿。 | https://www.encyclopedia.com/people/literature-and-arts/music-popular-and-jazz-biographies/dave-pirner | 否 |
+| ar-d-047 | Starship《Knee Deep in the Hoopla》 | 〈We Built This City〉…Rolling Stone 讀者票選二○一一年…皆列首位（上線簡介把 Blender 2004、Rolling Stone 2011、GQ 2016 並列為「最差歌曲」首位） | 維基〈We Built This City〉條目寫 Rolling Stone 2011 年是線上讀者票選『1980 年代最差歌曲』（worst song of the 1980s），不是歷來最差；Blender 2004 是『50 Worst Songs Ever』榜首；GQ 2016 年 8 月宣告它是歷來最差。三者範圍不同，簡介並列時應註明 Rolling Stone 是 1980 年代範圍。 | https://en.wikipedia.org/wiki/We_Built_This_City | 否 |
+| ar-d-048 | Stone Harbour《Emerges》 | 兩人都來自俄亥俄州 Canton，混音在 Youngstown | 復刻廠牌 Out-Sider 的 Bandcamp 頁與收藏家評介頁都把樂團放在 Youngstown，三個開頁讀到的來源（含 2019 年復刻評介）都沒有提 Canton，事實庫引的 psychedelicbabymag 頁面也沒有這句；混音地點同樣沒有來源。建議把 Canton 改為 Youngstown 或只寫「俄亥俄州」。 | https://stoneharbour.bandcamp.com/album/emerges | 否 |
+| ar-d-048 | Tamam Shud《Goolutionites and the Real People》 | 新成立的 Warner Bros. Records 發的第一張 LP，封面印 WS 200001 | 本次查證沒有任何來源證實這是新成立的 Warner Bros. Records 的第一張 LP（Discogs 原盤頁雲端取不到 403；Aztec 與維基只說 Evolution 配樂引起 Warner Bros. 注意、樂團因此簽約）。「第一張」且「新成立」屬首次類宣稱，建議店主本機核對 Discogs 與廠牌沿革；核對不了就改成「Warner Bros. 簽下的樂團，1970 年發行」。 | https://www.aztecrecords.com.au/products/avscd036 | 否 |
+| ar-d-048 | Tamikrest《Chatma》 | 該年拿下 Songlines 年度最佳專輯獎 | Glitterbeat 官方藝人頁引述的是 Songlines 2013 年的 Best Group Award（最佳樂團），並非 Best Album；維基與 Qobuz 寫 Best Album of the Year 疑為轉述。Songlines 官網雲端取不到 2013 年名單。建議上線簡介改成「獲 Songlines 2013 年獎項」，或本機到 Songlines 獎項檔案庫核對類別。 | https://glitterbeat.com/artists/tamikrest/ | 否 |
+| ar-d-048 | Tamikrest《Chatma》 | 第三張作品 2013 年 9 月由 Glitterbeat 發行 | 發行月份本次查證未能核實（維基、Glitterbeat、Qobuz 都只寫 2013 年）；建議本機核對廠牌頁的發行日。 | https://glitterbeat.com/product/chatma-by-tamikrest/ | 否 |
+| ar-d-049 | The Cambodian Space Project《2011: A Space Odyssey》 | 首作由香港 Metal Postcard 發行 | 查到的資料只提到樂團簽在澳洲獨立廠牌 FOUR FOUR；Metal Postcard 無佐證，請店主對 Discogs／MusicBrainz 核對 | https://en.wikipedia.org/wiki/Kak_Channthy | 否 |
+| ar-d-049 | The Caravans《The Best of the Caravans》 | 1947 年在芝加哥由 Robert Anderson 起家的女聲團體 | 多數來源（維基 Albertina Walker、East Village Magazine、CrossRhythms）說 Caravans 是 Albertina Walker 在 1951／1952 年與原屬 Robert Anderson 團體的成員在芝加哥組成；1947 年出自維基 The Caravans 條目導言，說法與 Walker 條目不一致。建議簡介改寫成「Albertina Walker 在芝加哥組成」或不寫年份 | https://www.crossrhythms.co.uk/articles/music/Albertina_Walker_The_gospel_matriarch_and_founder_of_The_Caravans/41824/p1/ | 否 |
+| ar-d-049 | The Diagram Brothers《Some Marvels of Modern Science》 | 姓 Diagram 的那幾個人，其實不是一家人。 | LTM Recordings 的樂團傳記（含 2007 年重聚訪談）寫創團四人中節奏組 Simon 與 Jason 是真的兄弟（本姓 Pitchers），維基則寫五位成員都不是兄弟；兩源不一致，簡介這句斷言過滿，建議改成「Diagram 是大家共用的姓」之類不涉及血緣的寫法。 | https://www.ltmrecordings.com/diagram_brothers.html | 否 |
+| ar-d-049 | The Electric Prunes《The Electric Prunes》 | 團內寫手 James Lowe 與 Mark Tulin 只分到〈Luvin'〉一首。 | 英文維基〈The Electric Prunes〉專輯段落寫團員自己寫的只有〈Train For Tomorrow〉與〈Luvin'〉兩首，與簡介的「一首」不一致；請對專輯版權欄核實後再決定是否改成「兩首」。 | https://en.wikipedia.org/wiki/The_Electric_Prunes | 否 |
+| ar-d-050 | The Icemen《Rest in Peace E.P.》 | 這個掛名名下就只有這一筆碟，而實體記著的存在期橫跨 1982 到 1992 年，它落在最後那兩年。 | 『存在期 1982 至 1992』只出自 MusicBrainz（last.fm 同）；維基記樂團 1992 年前後與主唱 DeMola 分手後，2008 年重新出動並在 Reaper Records 發行 7 吋，infobox 活躍期為 1982 至 2013。『最後兩年』的說法站不住，建議改寫成『名下唯一一張正式發行，1991 年由 Blackout! 出版』。 | https://en.wikipedia.org/wiki/The_Icemen | 否 |
+| ar-d-050 | The Plastic Cloud《The Plastic Cloud》 | 錄音師 Bill Bessey 在原始封套上沒有印出來 | canadiancds.com 寫 Jack Boswell 與 Bill Bessey 是這張唱片的製作人（produced），上線簡介稱 Bessey 為『錄音師』；職稱是否為 engineer 本層無法證實，建議主線在本機核對 Discogs 的 credits 後決定是否改『製作人』 | https://canadiancds.com/plastic-cloud-bio/ | 否 |
+| ar-d-052 | Titus Groan《Titus Groan》 | 1970 年底他出了一場嚴重意外，雙腿與骨盆骨折，樂團就此解散 | 此說只見 Discogs 單源；Spaceritual 記 1971 年 1 月樂團仍有 BBC Radio 1 播出、1971 年才失去動力，Record Collector 也寫 1971 年解散，與『1970 年底解散』衝突；『意外導致解散』也沒有第二個來源。建議改成不寫解散年份與原因，或標明單源。 | https://www.spaceritual.net/alexgitlin/npp/titus.htm | 否 |
+| ar-d-052 | Tom Jones《Along Came Jones》 | 1965 年 3 月 11 日，這首歌登上英國單曲榜冠軍 | uDiscover Music 寫 1965 年 3 月 13 日登上英國冠軍，維基只有年份；各榜單週期不同，確切日期未能在官方榜單網站核對。建議改成『1965 年 3 月』避開日期。 | https://udiscovermusic.com/stories/tom-jones-first-no-1 | 否 |
+| ar-d-052 | Träd, Gräs och Stenar《Träd, Gräs och Stenar》 | B 面轉向瑞典民謠，〈Sanningens Silverflod〉是其中一首 | Burning Ambulance（2023 年）評論稱 B 面四首原創中有失真的車庫龐克曲〈Tegenborgsvalsen〉，只有兩首是原聲民謠即興，未提〈Sanningens Silverflod〉；『轉向瑞典民謠』可能過度概括。單一評論來源，建議店主本機核對曲目後再決定是否改。 | https://burningambulance.substack.com/p/trad-gras-och-stenar | 否 |
+| ar-d-052 | Trúbrot《....Lifun》 | 7 月 29 日發行 | RÚV Rokkland 頁面寫《Lifun》發行日為 1971 年 6 月 29 日，與上線簡介的 7 月 29 日差一個月；兩源（Grapevine 只寫『夏天』）未能定論，請主線核對。 | https://ruv.is/utvarp/spila/rokkland/23842/6e27ks | 否 |
+| ar-d-052 | Trúbrot《....Lifun》 | 封套的四個角被切掉，成了八角形 | 冰島文與英文維基支持八角形，Grapevine、Space Ritual、NTS 寫六角形；來源分歧，請對實物或原盤確認。 | https://grapevine.is/?p=4193 | 否 |
+| ar-d-052 | TSA《TSA》 | 1981 年 7 月 12 日那天……也是 Marek Piekarczyk 第一次擔任主唱 | 英文維基寫 Piekarczyk 是在 Jarocin 認識樂團，一個月後才在 Sopot Pop Session 首次以主唱身分登台，與簡介『7 月 12 日第一次擔任主唱』的時間點可能不合；只見英文維基單源，需對 Jarocin／〈Trzy zapałki〉首唱場合核對。 | https://en.wikipedia.org/wiki/TSA_(band) | 否 |
+| ar-d-053 | Vast & Hazy《求救訊號》 | 發片時在 Legacy 連辦兩天千人場、票都售罄 | 簡介與事實庫都以 Blow 吹音樂專訪（2018-07-04）為出處，但本層開頁讀全文，並無任何 Legacy 或售罄的敘述；TVBS 與 envimedia 亦無。搜尋摘要只見『見證大團』活動上首次登上 Legacy 的說法（未開頁）。這句目前找不到出處，建議店主核對或刪除。 | https://blow.streetvoice.com/40511/ | 否 |
+| ar-d-053 | XIT《Plight of the Redman》 | 因公開支持美國印第安運動，唱片被禁播，聯邦調查局並施壓 Motown 撤掉宣傳預算。 | 禁播與 FBI 施壓只見英文維基單一來源（維基自身也標出處不足），Indian Country 訃聞與搜尋到的其他頁面都沒有提及；建議店主自行判斷是否保留或加註『據維基』。 | https://en.wikipedia.org/wiki/XIT_(band) | 否 |
+| ar-d-054 | Zabranjeno Pušenje《Das ist Walter》 | 樂團屬於 1983 年成立的新原始主義運動 | 英文維基與官方站只說樂團與新原始主義運動關係密切、運動領袖是 Elvis J. Kurtović，查無來源給出『1983 年成立』；此年份無法佐證，建議改為不帶年份或查到出處再保留。 | https://zabranjeno-pusenje.com/?p=7113 | 否 |
+| ar-d-054 | Zao《Z=7L》 | Magma 的鋼琴手和薩克斯風手在 1972 年 11 月一起走人 | 『1972 年 11 月』只見法文維基單源；英文維基與 Wikidata 記 Zao 成立於 1971 年，兩者不一致。簡介若保留，建議去掉『1972 年 11 月』的精確月份，或查到第二源再留。 | https://en.wikipedia.org/wiki/Zao_(French_band) | 否 |
+| ar-d-054 | Zeca Pagodinho《Deixa a Vida Me Levar》 | 一九八三年由教母 Beth Carvalho 引薦錄下第一首歌〈Camarão Que Dorme a Onda Leva〉 | 1983 年合唱〈Camarão…〉於 Beth Carvalho 專輯《Suor no Rosto》屬實，但 ebiografia 記他作品第一次被錄成唱片是 Fundo de Quintal 錄的〈Amargura〉；『第一首歌』的說法未見來源明講，建議改為『受邀在她的專輯裡合唱』。 | https://www.ebiografia.com/zeca_pagodinho/ | 否 |
+| ar-d-054 | Zed Bias《Sound of the Pirates》 | Dave Jones 以 Zed Bias 之名於 2000 年替 Locked On 混成的一張 | 本層來源（維基、Attack Magazine、Tru Thoughts、Earth Agency、mdmarchive）均未提到這張混音選輯或其廠牌，無法佐證，僅搜尋摘要稱〈Neighbourhood〉發行於 Locked On；建議對照 Discogs 或廠牌頁再確認。 | https://en.wikipedia.org/wiki/Zed_Bias | 否 |
+| ar-d-054 | Звуки Му《Простые вещи》 | 樂團 1987 年在莫斯科認識了 Brian Eno | Snob（2018）寫 Eno 是因這張專輯才知道 Mamonov 並把樂團帶往西方，與「1987 年在 Интурист 飯店認識」的說法有出入；ru 維基為單源，建議簡介只寫到「Eno 其後把樂團帶到西方」，待主線核。 | https://snob.ru/entry/163272/ | 否 |
+| ar-d-054 | Зоопарк《Уездный город N》 | 這是掛在 Зоопарк 名下的首張錄音室專輯 | 英文維基 Mike Naumenko 的 Zoopark 唱片表與 uznayvse 都列 Blues de Moscou（1981）更早；若該碟視為錄音室專輯則「首張」不成立，待主線核對 ru 維基 Blues de Moscou 條目的性質（家庭錄音或棚錄）。 | https://en.wikipedia.org/wiki/Mike_Naumenko | 否 |
+| ar-d-054 | Телевизор《Отечество иллюзий》 | 隔年的第五屆音樂節他們拿下第 2 名與「藝術完整性」特別獎 | 俄文維基寫 1987 年第五屆音樂節樂團獲評審特別獎、〈Дети уходят〉選為最佳曲目，未提第 2 名也未見「藝術完整性」字樣；fb.ru 的第二名指樂團成立首年（1984）。兩處對不上，建議改回只寫「獲評審特別獎」或另找獨立來源再確認（待核） | https://ru.wikipedia.org/wiki/%D0%A2%D0%B5%D0%BB%D0%B5%D0%B2%D0%B8%D0%B7%D0%BE%D1%80_(%D0%B3%D1%80%D1%83%D0%BF%D0%BF%D0%B0) | 否 |
+| ar-d-054 | Щурците《20-и Век》 | 樂團 1967 年在索菲亞成立，同年以〈Бяла тишина〉拿下金色奧菲斯音樂節首獎 | BTA 記載 1967 年金色奧菲斯首獎得主是歌手 Georgi Minchev，Щурците 是伴奏，獎項主詞應是 Minchev 而非樂團；另 BTA 的 Marichkov 條目把 Щурците 的成立寫成 1966，與維基和 BNT 的 1967 不一致 | https://www.bta.bg/bg/galleries/archive/29693 | 否 |
+| ar-d-054 | ဇော်ဝင်းထွဋ်《မာကျူရီည》 | 其後三張同樣沒有起色，要到 1989 年的一張精選輯才把他推上搖滾明星的位置 | 此句只依英文維基（該節無出處）；《時代》2002 年報導寫的是父親出資的前兩張專輯失敗、父親過世後的第三張專輯才大賣，兩者不符，建議保守改寫（待核） | https://time.com/archive/6645002/hard-rock/ | 否 |
+| ar-d-054 | 김추자《늦기전에》 | 一九七五年緊急措置九號下，她的歌全數被列為禁曲，本人也遭全面禁演 | 查到的來源只證實〈거짓말이야〉被列為禁曲（理由：助長不信），沒有『全數禁曲』的依據；她 1975 年被無限期停止活動的原因，來源寫的是『大麻風波』，不是緊急措施九號 | https://weekly.khan.co.kr/article/201607041627021 | 否 |
+| ar-d-054 | 김추자《늦기전에》 | 〈늦기 전에〉前半走 soul 的節奏與唱法，後半突然切進판소리的聲腔 | 這句與韓文維基一致，但維基與其他來源都沒有說明是『美軍基地學來的黑人音樂』，該句為簡介自己的詮釋，建議審稿時確認出處（待核） | https://ko.wikipedia.org/wiki/%EA%B9%80%EC%B6%94%EC%9E%90 | 否 |
+| ar-d-054 | 신중현과 엽전들《신중현과 엽전들 1집》 | 一九七五年十二月申重鉉因大麻案被聲請羈押，樂隊隨即解散 | 英文維基依 경향신문 1976 年 1 月 30 日報導，文化公報部 1976 年 1 月禁止 54 名藝人演出，樂團因此解散；『隨即解散』與時序略有出入。另『單張銷量破百萬』『百大名盤第七』只見英文維基單源（待核） | https://en.wikipedia.org/wiki/Shin_Jung_Hyun_%26_Yup_Juns | 否 |
+| ar-d-055 | サディスティック・ミカ・バンド《黒船》 | 前後耗掉 450 小時 | 日文維基〈サディスティック・ミカ・バンド〉寫《黒船》錄音約 600 小時；兩者不一致，建議在 KV 查證原始出處或改寫成不含數字 | https://ja.wikipedia.org/wiki/%E3%82%B5%E3%83%87%E3%82%A3%E3%82%B9%E3%83%86%E3%82%A3%E3%83%83%E3%82%AF%E3%83%BB%E3%83%9F%E3%82%AB%E3%83%BB%E3%83%90%E3%83%B3%E3%83%89 | 否 |
+| ar-d-055 | はちみつぱい《センチメンタル通り》 | 鈴木慶一1970年與あがた森魚組團起家 | 鈴木慶一自述はちみつぱい 是從あがた森魚 與斉藤哲夫 的伴奏班底長出來的，不是與あがた森魚 組團；成軍年他處寫 1971（Wikidata）或 1972（ototoy），沒有 1970 的出處。建議改成不寫年份，或寫「由鈴木慶一為中心組成」。 | https://realsound.jp/2023/12/post-1529314.html | 否 |
+| ar-d-055 | 何勇《垃圾场》 | 何勇至今唯一一張專輯 | 何勇已於 2026 年 9 月 1 日過世，『至今』已過時，可改成『他唯一一張完整的個人專輯』。 | https://global.hk01.com/众乐迷/60386973/中国摇滚狂人何勇逝世终年57岁-与窦唯张楚登红馆寸爆四大天王 | 對不到卡 |
+| ar-d-055 | 何勇《垃圾场》 | 〈非洲夢〉〈姑娘漂亮〉〈鐘鼓樓〉三首正是十二月十七日紅磡演唱會的曲目 | huxiu 報導寫何勇當晚演唱〈姑娘漂亮〉〈垃圾場〉〈鐘鼓樓〉，不含〈非洲夢〉；僅單源，建議店主核對後再改。 | https://m.huxiu.com/article/4888542.html | 對不到卡 |
+| ar-d-055 | 刺客《你家是個動物園》 | 創團元老袁興國（主唱）與袁興緯（鍵盤、貝斯）是不變的核心 | zh 維基把創團元老列為姚國強（主唱）與許世晃（吉他），袁興國與袁興緯列在現任成員、1997 年另有更換第二代成員的紀錄；Taiwan Review 1994 摘要則說團長找弟弟袁興國加入。『創團元老』與『不變的核心』兩處都沒有第二來源支持，建議改成『袁興國、袁興緯為現任核心』或刪去『創團元老』。 | https://zh.wikipedia.org/wiki/%E5%88%BA%E5%AE%A2%E6%A8%82%E5%9C%98 | 否 |
+| ar-d-056 | 地下嬰兒《覺醒》 | 1999 年出的十六軌 CD；末軌〈都一样〉1996 年先收在一張合輯上 | 發行年來源不一致：MusicBrainz 記 1999，gcores 與中文維基〈張亞東〉作品表記 1998 年（後者還記廠牌為滾石）；〈都一样〉1996 年收進《中國火 II》與 gcores 一致。建議查實體 CD 版權頁再決定是否改為『1998 或 1999』。 | https://www.gcores.com/articles/160417 | 否 |
+| ar-d-056 | 外道《外道》 | 由ミッキー・カーチス製作出道 | 日文維基稱米奇柯蒂斯製作早期作品，但 2015 年 Real Sound 加納秀人訪談中對『是否外道最初的製作』只回『なんか知らないけど』，未明確承認；建議店主視情況把『製作出道』改成較保守的寫法或查證專輯內頁製作人欄。 | https://realsound.jp/2015/01/post-2168.html | 否 |
+| ar-d-056 | 好客樂隊《愛吃飯》 | 隔年拿下第20屆金曲獎最佳客語流行音樂演唱專輯獎 | 第 20 屆（2009 年 6 月 27 日）該獎項名稱，中文維基第 20 屆金曲獎頁與國家文化記憶庫條目皆寫『最佳客語專輯獎』，沒有『流行音樂演唱』字樣；入圍最佳樂團與得獎事實本身無誤。 | https://tcmb.culture.tw/zh-tw/detail?indexCode=Culture_Object&id=507556 | 否 |
+| ar-d-056 | 想い出波止場《水中JOE》 | 1991 年這張是他們在 JOJO広重 的アルケミーレコード 發行的第二作 | 日文維基的作品列序是《大音楽》《ブラック・ハワイ》《水中JOE》，且後文稱第 7 張為《大阪・ラ》，數下來《水中JOE》為第 3 作；Last.fm 轉載稿又排成《水中JOE》（1991）早於《Black Hawaii》（1992）。序位與年份來源互相矛盾，建議本機用 Discogs 核對後再決定保留「第二作」或改成不寫序位。 | https://ja.wikipedia.org/wiki/%E6%83%B3%E3%81%84%E5%87%BA%E6%B3%A2%E6%AD%A2%E5%A0%B4 | 否 |
+| ar-d-056 | 指南針《選擇堅強》 | 1994 年由金碟出版，編號 JCD-4057 | 英文維基、川報與中文維基〈羅琦〉都把首張專輯《選擇堅強》記在 1993 年；MusicBrainz 的 1994 年是 CD 版本。簡介只寫「1994 年由金碟出版」本身不算錯，但若暗示首發年是 1994 年可能有落差，建議本機核對卡帶版年份後再決定措辭。 | https://en.wikipedia.org/wiki/Compass_(band) | 否 |
+| ar-d-056 | 瀬川洋《PIERROT》 | 他是ズー・ニー・ヴー的主唱，那個團在同行間以硬派著稱 | 日文維基 ズー・ニー・ヴー 條目的成員表（町田義人、上地健一、山本康生等）沒有瀬川洋；日文維基 ザ・ダイナマイツ 條目列瀬川洋為主唱兼吉他手，重發合輯說明也寫他 formerly of The Dynamites。建議改為『曾是ザ・ダイナマイツ的主唱』，硬派的說法屬ズー・ニー・ヴー，不能掛在他身上 | https://ja.wikipedia.org/wiki/%E3%82%B6%E3%83%BB%E3%83%80%E3%82%A4%E3%83%8A%E3%83%9E%E3%82%A4%E3%83%84 | 否 |
+| ar-d-056 | 猛虎巧克力《夜工廠》 | 鄭宜農發完個人首作《海王星》後在 2012 年組的團 | 中文維基『猛虎巧克力』條目寫 2012 年，但中文維基『鄭宜農』條目寫 2013 年組建，另有搜尋摘要稱 SXSW 2014 官方節目表寫 2013 年春天組成，年份有分歧；建議改成不寫成團年，或寫『2012 至 2013 年間』 | https://zh.wikipedia.org/wiki/%E9%84%AD%E5%AE%9C%E8%BE%B2 | 否 |
+| ar-d-056 | 瓢蟲《Ladybug》 | 1997 年自資出版、封面上沒有廠牌；水晶唱片的 EP《讓太空人跳舞》要到 1998 年才出 | 《台北時報》2001 年報導寫瓢蟲的兩張 CD 都在水晶唱片發行，與簡介『自資、無廠牌』的說法有出入；可能是記者籠統，也可能首作有水晶經銷。建議店主對 Discogs 或實體盤核一次 | https://www.taipeitimes.com/News/feat/archives/2001/08/24/99946 | 否 |
+| ar-d-056 | 瓢蟲《Ladybug》 | 台灣龐克團瓢蟲唯一的長篇作品 | 《台北時報》把樂風寫成後龐克、grrrl 樂團式搖滾，並提到第二張專輯是全器樂；『唯一的長篇作品』與『龐克』兩點都和該報導不完全吻合，建議核對後再決定是否保留 | https://www.taipeitimes.com/News/feat/archives/2001/08/24/99946 | 否 |
+| ar-d-056 | 痛仰樂隊《這是個問題》 | 樂隊的名字還是四個字：痛苦的信仰 | 「痛苦的信仰」是五個字（團名全稱「痛苦的信仰樂隊」），簡介寫成四個字有誤 | https://zh.wikipedia.org/wiki/%E7%97%9B%E4%BB%B0%E4%B9%90%E9%98%9F | 否 |
+| ar-d-057 | 趙一豪《把我自己掏出來》 | 1988 年錄音、1990 年發行 | 英文維基、中文維基與 Newtalk 都寫這張專輯 1989 年（底）由水晶唱片發行，1990 年才遭查扣；『1990 年發行』可能是查扣年或改名版年份，請店主核對初版發行年（錄音年 1988 沒查到來源）。 | https://newtalk.tw/news/view/2025-03-05/959309 | 否 |
+| ar-d-057 | 鈴木実貴子ズ《いばら》 | 本張是主流出道之後的第一張全長，編號 CRCP-20619 | Billboard JAPAN 商品頁與 PIA（2026 年）報導都標《いばら》為「メジャー2ndアルバム」，PIA 並稱《あばら》為「メジャー1stアルバム」（2025 年發行）。應改成『主流第二張全長專輯』。 | https://www.billboard-japan.com/d_news/detail/157400/2 | 否 |
+| ar-d-057 | 隨性樂團《良禽》 | 2012 年在貢寮拿下海洋獨立音樂大賞，隔年再拿評審團大獎 | 事實庫所引用的 unbiggie 頁面只寫 2012 年貢寮國際海洋音樂祭的最高榮譽『海洋音樂大賞』，沒有 2013 年評審團大獎；本層另外四次搜尋與 TVBS 報導也未能證實 2013 年的評審團大獎，且獎項正式名稱疑為『海洋大賞』而非『海洋獨立音樂大賞』。請店主核對海祭官方歷屆名單後決定是否改簡介。 | https://unbiggie.com/people/artist/2023/06/19/random/ | 否 |
+| ar-d-057 | A.L. Lloyd《Leviathan!》 | 並經由著作與錄音催生了 industrial folk 這一支 | 英文維基原句是 helped establish（協助確立）industrial folk 這個民謠分支，『催生』語氣較強；建議改成『協助確立』。 | https://en.wikipedia.org/wiki/A._L._Lloyd | 否 |
+| ar-d-057 | Adrian Crowley《Season of the Sparks》 | 2009 年 5 月由 Tin Angel 發行 | 英文維基專輯條與藝人條都寫 2009 年 4 月 24 日（Tin Angel）；nialler9 的 5 月 22 日是先行單曲的日期；Other Voices 又寫 11 月 9 日全球發行。月份來源互相打架，建議店主查廠牌目錄後再決定是否保留「5 月」。 | https://en.wikipedia.org/wiki/Season_of_the_Sparks | 否 |
+| ar-d-057 | Alan Lomax《Prison Songs, Volume 1: Murderous Home》 | 是理解藍調成形前夕的一手材料 | 這批錄音錄於 1947 至 1948 年，藍調早在 1900 至 1920 年代就已成形；ACE 官方頁形容內容是伐木與夯土工作歌、田野呼喊與少量藍調。「藍調成形前夕」年代對不上，建議改成「藍調源流的一手材料」或「勞動歌與田野呼喊的一手材料」。 | https://www.culturalequity.org/rounder-records/prison | 否 |
+| ar-d-057 | Albert Hash & The Whitetop Mountain Band《Albert Hash & The Whitetop Mountain Band》 | 十歲那年他自己動手做了第一把提琴。那是大蕭條最深的時候。 | Hash 1917 年 6 月生，十歲約在 1927 年，早於 1929 年的股災與大蕭條（谷底約 1932–33）。「十歲做第一把提琴」有維基與 Blue Ridge Heritage 兩源，但「大蕭條最深」與年齡對不上，建議刪掉這半句。 | https://en.wikipedia.org/wiki/Albert_Hash | 否 |
+| ar-d-057 | Altan《Island Angel》 | Altan 由 … Mairéad Ní Mhaonaigh 與丈夫 Frankie Kennedy 於 1987 年組成 | 成軍年各來源不一：altan.ie 記 1985 年 6 月 1 日首場音樂會，維基與 encyclopedia.com 以 1987 年專輯《Altan》為起點；建議改寫成「1987 年發行首張樂團專輯」或不寫成軍年。 | https://altan.ie/about/ | 否 |
+| ar-d-057 | Andy Irvine & Paul Brady《Andy Irvine / Paul Brady》 | 1976 年秋在 Rockfield Studios 錄音 … 年底由 Mulligan 發行 | Irvine 官網寫 1976 年 8 月錄音、1977 年 1 月發行；維基專輯條目則寫秋季錄音、1976 年 12 月發行。來源不一，建議把「年底發行」「秋季錄音」改成不點月份，或標註 1976 至 1977 年之交。 | https://www.andyirvine.com/bio.html | 否 |
+| ar-d-057 | Anton Karas《The Third Man》 | 導演在維也納的一間酒館聽見 Anton Karas 靠小費彈齊特琴，當場決定要這個音樂 | 初遇場景有三種說法：維基（引 Karas 1985 年訃聞）為 Grinzing 的 Heuriger；The Quietus 稱酒館說是迷思，實為劇組歡迎會上受邀演奏；「當場決定」兩者都沒有。建議改成中性寫法（Reed 1948 年在維也納籌拍時找上他）或刪去「當場決定」。 | https://thequietus.com/culture/film/the-third-man-anton-karas/ | 否 |
+| ar-d-057 | Asin《Asin》 | 第四軌〈Masdan Mo Ang Kapaligiran〉同年另以 7 吋單曲問世 | ourbrew 寫該曲是 1977 年的單曲（B 面〈Sayang Ka〉），早於 1978 年的專輯；seansmusichunt 則說單曲與專輯同在 1978 年。來源不一，建議把「同年」改成不點年份，或寫成「先於專輯以單曲發行」。 | https://www.ourbrew.ph/pendongs-redemption-songs/ | 否 |
+| ar-d-057 | Asin《Asin》 | 錄音時是三人編制 | ourbrew 稱 Aban 是創團四人之一，只是唱片公司以三人宣傳；維基則稱他 1983 年才加入。成員編制各來源不一，建議寫「以三人團名義發行」。 | https://www.ourbrew.ph/pendongs-redemption-songs/ | 否 |
+| ar-d-058 | Aster Aweke《Aster》 | 1981 年移居華盛頓特區 | 維基與 afromix 都寫 1981 年先到加州舊金山灣區，約兩年內才搬到華盛頓特區；簡介略過灣區一站，建議改為『1981 年赴美，兩年內落腳華盛頓特區』。 | https://www.afromix.org/html/musique/artistes/aster-aweke/bio.en.html | 否 |
+| ar-d-058 | Aziza Brahim《Abbar el Hamada》 | 父親留在阿尤恩並在她出生後過世 | 維基只寫『後來過世』，Afropop 寫父親在她出生前於衝突中過世，來源互相矛盾；建議改成『父親留在阿尤恩，兩人從未見過面』，不寫過世時點。 | https://afropop.org/articles/aziza-brahim-the-voice-of-western-sahara | 否 |
+| ar-d-058 | Banda do Casaco《Dos benefícios dum vendido no reino dos bonifácios》 | 樂團的成立年就是這張碟的發行年，兩個欄位都記 1974 | 來源不一致：RTP《Gramofone》與 RTP 訃聞寫 1973 成軍；英文與葡萄牙文維基、RTP《Gramofone》寫首張 1975；Retropolitano 寫 1973。『成立年等於發行年』這個敘述（出自 MusicBrainz 登錄）撐不住，建議刪掉或改成只說『1974 年 Philips 以 6330 013 發行』並確認 Discogs 原盤年份。 | https://www.rtp.pt/rtpmemoria/gramofone/banda-do-casaco-por-joao-carlos-callixto_34 | 否 |
+| ar-d-058 | Belchior《Alucinação》 | 銷量逾五十萬張 | 查不到來源：葡萄牙文維基只寫首月賣出三萬張；『逾五十萬』無法證實，建議刪除或改成有出處的版本。 | https://pt.wikipedia.org/wiki/Belchior | 否 |
+| ar-d-058 | Belchior《Alucinação》 | 長篇敘事歌詞當年被評論拿來與 Bob Dylan 對照；底盤在藍調、country 與 baião 之間 | 葡萄牙文維基未提 Dylan；風格列為 MPB、搖滾、藍調、folk rock、baião、鄉村。Dylan 對照這句沒找到來源，建議確認出處。 | https://pt.wikipedia.org/wiki/Belchior | 否 |
+| ar-d-058 | Bellowhead《Hedonism》 | 銷出約六萬張，被稱為史上最暢銷的獨立廠民謠專輯 | 只見英文維基《Hedonism》條目單源，且其註腳指向 BBC 對《Broadside》的樂評，並不支撐這句；找不到獨立銷量來源，建議刪掉或改成較保守的說法。 | https://en.wikipedia.org/wiki/Hedonism_(album) | 否 |
+| ar-d-058 | Bob Frank《Bob Frank》 | Jim Dickinson 說他是從沒有人聽過的最偉大詞曲作者 | 官方網站引 Dickinson 的原話為「The best songwriter you never heard」（最好），維基與事實庫轉述為「greatest」（最偉大）；措詞不一致，建議簡介改為較中性的「最好」或具名查原出處。 | https://bobfranksongs.com/news/ | 否 |
+| ar-d-058 | Brigada Víctor Jara《Eito fora》 | 1977 年那一筆發行的國別欄與廠牌欄都是空的，也沒有再版 | World Music Central 的唱片列表把《Eito Fora》1977 年版列為 Mundo Novo 廠牌，並另列一筆 1983 年（同廠牌）；RTP 也把首張稱為《Eito Fora – Cantares Regionais》(1977)。廠牌欄至少有第三方資料可填，「沒有再版」也有 1983 年一筆記錄可疑。 | https://worldmusiccentral.org/artist-profiles-brigada-victor-jara/ | 否 |
+| ar-d-058 | Brooks & Dunn《Brand New Man》 | 截至 2024 年累計獲 RIAA 認證 7 倍白金 | 維基 Brooks & Dunn 條目、Country Universe 與鄉村名人堂官網都只到 6 倍白金或逾 600 萬張；7 倍僅見於專輯自己的維基條目，建議查 RIAA 資料庫後再決定是否保留。 | https://en.wikipedia.org/wiki/Brooks_%26_Dunn | 否 |
+| ar-d-058 | Brooks & Dunn《Brand New Man》 | 1990 年，Arista 高層 Tim DuBois 認為兩人聲線互補，主動撮合簽下 | 維基首段與 American Songwriter 都寫 1988 年組成，名人堂官網寫 1990 年初午餐介紹；年份各說各話，建議簡介只寫「Tim DuBois 撮合」不寫年份，或改成名人堂版本。 | https://www.countrymusichalloffame.org/artist/brooks-dunn | 否 |
+| ar-d-059 | Conway Twitty《Hello Darlin'》 | 直到 1966 年他才正式轉入鄉村樂 | 維基、鄉村音樂名人堂與 Encyclopedia of Arkansas 都指向 1965 年開始錄鄉村歌／簽約；1966 與來源不符，建議改為 1965 年或改成含糊說法 | https://countrymusichalloffame.org/artist/conway-twitty/ | 否 |
+| ar-d-059 | Domenico Modugno《Sings Nel Blu Dipinto di Blu (Volare) And Other Italian Favorites》 | 那五週冠軍並不連續，卻讓它成為該榜史上第一支登頂的非美加英語系單曲 | 可查證的只有它是 Hot 100 創刊後的第二支冠軍單曲（Guinness、維基引 Billboard）；『第一支登頂的非美加英語系單曲』沒有可查來源，措辭也不清楚，建議刪去或改成『Hot 100 史上第二支冠軍單曲』。五週不連續見維基引 Billboard，單源。 | https://www.guinnessworldrecords.com/world-records/771542-biggest-selling-eurovision-song-contest-entry | 否 |
+| ar-d-059 | Dulcimer《And I Turned As I Had Turned As A Boy…》 | 1970 年的原盤總長 62 分 44 秒，…同一張碟另有 12 軌的版本：1971 年的 12 吋與後來的日本 CD 都只收 12 軌 | Psychedelic Baby 的團員訪談與 President Records 的團史都寫這張首作 1971 年（President：mid-1971）由 Nepentha 發行，沒有 1970 年的版本；簡介把 1970 年當原盤、1971 年當 12 軌版，與來源不符，建議核對 Discogs 版本年份後改寫，或刪去 1970 年的說法。 | https://president-records.co.uk/artist/dulcimer-2/ | 否 |
+| ar-d-059 | Egschiglen《Zazal》 | 《Zazal》2000 年錄於德國 Bocholt 的 Grenzland Studio，由 Heaven and Earth 發行（HE 10） | rambles.net 的樂評寫 Zazal 是 2002 年的 Felmay 版、錄於德國南部，alba Kultur／womex 頁面列 Heaven & Earth 發行年 2002；Bocholt 位在德國西北部，與『德國南部』不符。卡池年份 2000 與簡介的錄音地點、年份建議核對 Discogs 與 CD 版權頁後再決定是否改寫（可能是 2000 年原版與 2002 年再版並存）。 | https://rambles.net/egschiglen_zazal02.html | 否 |
+| ar-d-059 | Eleftheria Arvanitaki《Ta kormia kai ta machairia》 | Eleftheria Arvanitaki 1979 年從雅典的學生樂團起步 | 維基與《Ta Nea》（2020）寫 1980 年加入 Opisthodromiki Kompania，domnasamiou.gr 寫 1979；來源不一，建議改成「1980 年前後」或不寫年份。 | https://www.tanea.gr/2020/10/28/greece/eleytheria-arvanitaki-apo-tin-opisthodromiki-kompania-stis-megalyteres-skines-tou-kosmou/amp/ | 否 |
+| ar-d-059 | Emmanuelle Parrenin《Maison rose》 | 1970 年 7 月她參加過魁北克的採集 | 可開頁的來源（英文維基、Souffle Continu）只寫她曾走訪法國與包括加拿大在內的法語區採集，沒有 1970 年 7 月與魁北克的字樣；建議改寫成不帶日期，或補上出處。 | https://en.wikipedia.org/wiki/Emmanuelle_Parrenin | 否 |
+| ar-d-059 | Eric Andersen《Blue River》 | 唱片停留告示牌十一週、最高第 169 名；Joni Mitchell 在同名曲獻聲；於納許維爾錄音、David Bromberg 的 dobro 等編制 | 本層可開頁的可靠來源（維基、廠牌頁、校友刊物）都沒有這些細節；「第 169 名」「Norbert Putnam 製作」「Mitchell 在標題曲和聲」只見一個音樂部落格（不算可靠來源），十一週與納許維爾、Bromberg 等編制完全查不到。建議審稿時對照專輯 liner notes 或 Billboard 榜單查證。 | https://dereksmusicblog.com/2019/06/13/eric-andersen-still-one-of-musics-best-kept-secrets/ | 否 |
+| ar-d-059 | Esma Redžepova《Mon histoire》 | Esma Redžepova(1943–2016) | 出生年有 1943（維基、Wikidata、訃聞推算）與 1945／1946（NPR 2010 年報導寫 64 歲、法文簡介）兩說；逝世年 2016 無爭議。建議審稿決定是否保留起訖年份或只寫「2016 年過世」。 | https://www.nprillinois.org/2010-04-05/esma-redzepova-queen-of-the-gypsies | 否 |
+| ar-d-059 | Ewan MacColl & A.L. Lloyd《The English and Scottish Popular Ballads》 | Folkways 於 1964 年以 FG 3510 重發，封面標明由麥考爾獨唱 | FG 3510 確為 Folkways 版第 2 卷（1964），署名只有 MacColl、Moses Ash 錄音，這點與簡介相符；但可開頁來源都沒說它是 1956 年 Riverside 版（Lloyd 與 MacColl、Goldstein 製作）的重發，Folkways 三卷共 34 首，也和 Riverside 的 72 首編排不同。建議把「重發」改成中性說法，或補上出處。 | https://mainlynorfolk.info/ewan.maccoll/records/popularballads.html | 否 |
+| ar-d-059 | Ewan MacColl & A.L. Lloyd《The English and Scottish Popular Ballads》 | 是英倫民謠復興最直接的曲目來源 | 1956 年、72 首 Child ballads、四組各兩張 LP 與 Riverside 資料一致，但「最直接的曲目來源」是評價，本層沒找到出處，建議改寫或補出處。 | https://mainlynorfolk.info/lloyd/records/popularballads.html | 否 |
+| ar-d-059 | Faramarz Aslani《دلمشغولی‌ها》 | 這個掛名名下十三個條目裡，這一捲最早，第二早的跳到 1994 年，中間十七年是空的 | 那段空白只是 MusicBrainz 目錄的空白，不是 Aslani 的實況：維基與訃聞（thestopgap）都記他隔年（約 1978 年）又為 CBS 出了第二張《Hafez, a Memorandum》，只是 MusicBrainz 沒收。簡介用『空了十七年』會讓讀者以為他中間沒出片，建議改寫或刪去。 | https://en.wikipedia.org/wiki/Faramarz_Aslani | 否 |
+| ar-d-059 | Fausto《Madrugada dos Trapeiros》 | 1977 年這一筆是名下唯一的發行，廠牌欄與載體欄都是空白的 | 那是 MusicBrainz 這個條目的狀況，不是 Fausto 的實況：他 1970 至 2011 年間出了 12 張專輯（Time Out），《Madrugada dos Trapeiros》1977 年由 Orfeu 發行（Time Out）。簡介若被讀成『他只有這一張發行、廠牌不明』會誤導，建議改寫或刪去這兩句。 | https://www.timeout.pt/lisboa/pt/noticias/a-musica-portuguesa-esta-mais-pobre-morreu-fausto-bordalo-dias-070124 | 否 |
+| ar-d-060 | Gabby Pahinui《Gabby》 | 開場即把 1947 與 1972 兩個版本的〈Hiʻilawe〉並置 | 維基寫〈Hiʻilawe〉首次錄音是 1946 年（Bell Records），1947 年是〈Hula Medley〉；未能核對專輯曲目說明裡是否標 1947。建議用專輯原盤封套或 Discogs 曲目頁確認那個版本的年份。 | https://en.wikipedia.org/wiki/Gabby_Pahinui | 否 |
+| ar-d-060 | Gryphon《Gryphon》 | Richard Harvey 與 Brian Gulland 是皇家音樂學院的畢業生 | Louder Sound 專訪寫 Gulland 在皇家音樂學院第二年離校去找搖滾樂團；維基則寫兩人是皇家音樂學院畢業生。兩處衝突，上線簡介『畢業生』建議改為『在皇家音樂學院相識』。 | https://loudersound.com/features/gryphon-midnight-mushrumps-red-queen | 否 |
+| ar-d-060 | Gurrumul《Gurrumul》 | 2008 年 2 月推出首張個人作 | 英文維基專輯頁寫 2008 年 4 月發行（Skinnyfish Music）；上線簡介寫 2 月。單源，建議以 ARIA 或 Skinnyfish 官方資料核對月份。 | https://en.wikipedia.org/wiki/Gurrumul_(album) | 否 |
+| ar-d-060 | Gurrumul《Gurrumul》 | 十八歲加入 Yothu Yindi | 維基寫 1989 年加入（約 18 歲），ABC 訃聞寫『十幾歲中段』；年齡兩說不一，建議簡介改寫成『少年時加入』或查更多來源。 | https://www.abc.net.au/news/2017-07-26/dr-g-yunupingu:-world-famous-indigenous-musician-dies-aged-46/8743316 | 否 |
+| ar-d-060 | Harry Taussig《Fate Is Only Once》 | 他另外只留下一份錄音：Takoma 那張與 John Fahey、Robbie Basho 同碟的選輯。 | 這句在 1965 至 2006 年間成立，但 Taussig 2012 年起又錄了《Fate Is Only Twice》（2012）、《The Diamond of Lost Alphabets》（2014）、《Too Late to Die Young》（2016）等多張，寫「只留下」已過時，建議改成「當時另一份錄音」或刪掉。 | https://en.wikipedia.org/wiki/Harry_Taussig | 否 |
+| ar-d-060 | Homayun Sakhi《The Art of the Afghan Rubâb》 | 2002 年移居美國加州佛利蒙 | 維基寫 2002 年，Aga Khan 博物館的藝人介紹寫 2001 年定居佛利蒙，兩源不一致；建議簡介改寫成「移居美國後定居佛利蒙」，或另查第三源再定年份。 | https://agakhanmuseum.org/bio/homayoun-sakhi-2/ | 否 |
+| ar-d-060 | Israel Kamakawiwoʻole《Facing Future》 | 1993 年 11 月經 Big Boy Record Company 推出；德國另達五十萬張 | 維基寫 Facing Future 由 The Mountain Apple Company 於 1993 年發行，與簡介的 Big Boy Record Company 不同（可能是製作公司與發行公司之別）；德國五十萬張未查到佐證。建議店主在本機核對廠牌與德國認證後再決定是否保留。 | https://en.wikipedia.org/wiki/Israel_Kamakawiwo%CA%BBole | 否 |
+| ar-d-060 | Jerry Jeff Walker《¡Viva Terlingua!》 | 〈London Homesick Blues〉後來成了《Austin City Limits》片尾曲 | TSHA 與德州音樂史中心都寫它是節目主題曲（1977 至 2004 年），不是只有片尾；建議改「主題曲」。 | https://www.tshaonline.org/handbook/entries/walker-jerry-jeff | 否 |
+| ar-d-060 | Jerry Jeff Walker《¡Viva Terlingua!》 | 簡介使用半形逗號與半形分號貼著中文（例：1973 年 8 月,Jerry Jeff Walker 帶⋯、搖滾與 norteño、Tejano 口音;） | 標點格式：中文行文應用全形逗號與分號，本批 QA 會擋半形逗號貼中文。 | https://www.tshaonline.org/handbook/entries/walker-jerry-jeff | 否 |
+| ar-d-060 | Jesse Fuller《Jazz, Folk Songs, Spirituals & Blues》 | 簡介使用半形逗號、分號與括號貼著中文（例：62 歲那年(1958)為 Good Time Jazz 錄下這份專輯,曲目從⋯） | 標點格式：中文行文應用全形逗號與括號，本批 QA 會擋半形逗號貼中文。 | https://en.wikipedia.org/wiki/Jesse_Fuller | 否 |
+| ar-d-060 | Joe Val and The New England Bluegrass Boys《One Morning in May》 | 這張碟是 Rounder 的第一張藍草專輯，錄於 1971 年春天 | 維基、IBMA 與 MMOne 都把這張首作的年份寫成 1972 年；Bluegrass Hall of Fame 官網則寫錄於 1971 年春天。是「錄音 1971、發行 1972」還是來源有誤，沒有第二個原始來源可確認，請店主核對母帶或 Rounder 目錄。 | https://ibma.org/press-releases/special-halloffame-inductions/ | 否 |
+| ar-d-061 | Josephine Foster《Hazel Eyes, I Will Lead You》 | 2005 年這張個人第二作 | 維基只說她先有在家自錄的《There Are Eyes Above》（2000）、兒歌《Little Life》（2001）及與 The Supposed 合作的《All the Leaves Are Gone》（2004），之後才有包括本張在內的一連串個人專輯；另有簡介把本張稱為首張個人錄音室專輯。『第二作』無法證實，建議拿掉序數。 | https://en.wikipedia.org/wiki/Josephine_Foster | 否 |
+| ar-d-061 | Karine Polwart《Traces》 | 入圍 2013 年 BBC Folk Awards 年度專輯 | Cadogan Hall 與 Hudson 官方簡介只寫《Traces》入圍 BBC Radio 2 民謠獎年度專輯，未寫年份；2013 年這個年份本層沒查到來源 | https://hudsonrecords.co.uk/artist/karine-polwart-2 | 否 |
+| ar-d-061 | Karine Polwart《Traces》 | 她首張進榜英國前 75 的唱片 | 本層讀到的來源（維基、Cadogan Hall、Hudson 簡介）都沒提到《Traces》的英國榜名次，Hudson 只寫 2019 年《Scottish Songbook》進英國前 40；此說法本層無法證實 | https://hudsonrecords.co.uk/artist/karine-polwart-2 | 否 |
+| ar-d-061 | Kate & Anna McGarrigle《Kate & Anna McGarrigle》 | Anna 寫的〈Heart Like a Wheel〉先讓 Linda Ronstadt 拿去當 1974 年專輯標題曲，這裡是作者版本 | 維基專輯條目（引專輯內頁）寫這首歌 1972 年已由 McKendree Spring 錄過，Ronstadt 是 1974 年版；「先讓 Ronstadt 拿去」若指首度被錄則不精確，可改成「Ronstadt 的 1974 年版先成名」 | https://en.wikipedia.org/wiki/Kate_%26_Anna_McGarrigle_(album) | 否 |
+| ar-d-061 | Kayhan Kalhor《Scattering Stars Like Dust》 | Kalhor 生於克爾曼沙赫 | 出生地各來源不一致：維基與 Apple Music 簡介寫出身克爾曼沙赫省庫德家庭（Apple 補「在德黑蘭長大」），芝加哥大學簡介與 wikidata 寫生於德黑蘭；建議改寫成「出身克爾曼沙赫省的庫德家庭」 | https://classical.music.apple.com/us/artist/7180580 | 否 |
+| ar-d-061 | Kelly Joe Phelps《Roll Away the Stone》 | 曾登上 Billboard Top Blues Albums 榜第 10 名 | 本層只在英文維基專輯條目的搜尋摘要見到此名次，未讀到 Billboard 原始榜單或第二個來源；名次屬高風險事實，建議本機核對 Billboard 榜單後再留用 | https://en.wikipedia.org/wiki/Roll_Away_the_Stone_(album) | 否 |
+| ar-d-061 | Kembara《Kembara》 | 這支同年成軍的五人團 | 馬來語維基與 NST 都寫創團是 M. Nasir、A. Ali、S. Sahlan 三人（最初加入的 Abby、Eddie Ali 兄弟初期離開），1984 年後才到五人編制；「1981 年成軍的五人團」與來源不符 | https://ms.wikipedia.org/wiki/Kembara_(kumpulan_muzik) | 否 |
+| ar-d-061 | Kembara《Kembara》 | 在馬來西亞與新加坡由 Polygram 推出；是這支同年成軍的五人團的首作 | 樂團實為新加坡成軍（NST、馬來語維基），簡介前段沒交代這點，可補一句 | https://www.nst.com.my/amp/news/2015/09/32458/kembara-new-journey | 否 |
+| ar-d-061 | Kenny Knight《Crossroads》 | 包辦全部詞曲、人聲、節奏與主奏吉他、貝斯與鼓 | Paradise of Bachelors 官方頁、Stereogum 與 Westword 都記載表親 Sylvia 製作、Sandy Dodge 彈 pedal steel、另有長笛手與 Knight 自學的班鳩；他是否獨自包辦人聲與全部樂器，來源沒有證實 | https://paradiseofbachelors.com/kenny-knight | 否 |
+| ar-d-061 | Keola & Kapono Beamer《Honolulu City Lights》 | 兄長 Keola 1973 年寫出第一本滑鍵吉他教本 | 維基寫 1973 年出版 First Method for the Hawaiian Slack Key Guitar 並稱為該技法第一本教本，Encyclopedia.com 寫 1977 年教學書；兩源年份不一致，「第一本」亦只有維基 | https://encyclopedia.com/education/news-wires-white-papers-and-books/beamer-keola | 否 |
+| ar-d-061 | Keola & Kapono Beamer《Honolulu City Lights》 | 家系可上溯卡美哈梅哈王室 | 本層讀到的來源（維基、Encyclopedia.com）只寫「有夏威夷王室血統」，沒有指到卡美哈梅哈 | https://encyclopedia.com/education/news-wires-white-papers-and-books/beamer-keola | 否 |
+| ar-d-061 | Khánh Ly《Sơn Ca 7》 | Khánh Ly 1964 年在大叻結識鄭公山 | 首次見面地點各來源不一致：英文維基與 Eric Brightwell 寫 Bảo Lộc，VnExpress 與 RFA 寫大叻；建議簡介只寫「1964 年結識」 | https://vnexpress.net/thoi-xuan-sac-cua-khanh-ly-5048726.html | 否 |
+| ar-d-061 | Koerner, Ray & Glover《Blues, Rags & Hollers + Lots More Blues, Rags & Hollers》 | 於 1962 年組團 | 英文維基團條目寫 1962 年，但同站 Tony Glover 條目與 MPR 訃聞寫 Glover 1963 年才加入、三人組才成形；來源不一致，建議改成不寫年份或寫「1960 年代初」。 | https://www.mprnews.org/story/2019/05/30/minnesota-music-legend-tony-little-sun-glover-dies-at-79 | 否 |
+| ar-d-061 | Koerner, Ray & Glover《Blues, Rags & Hollers + Lots More Blues, Rags & Hollers》 | 1963 年由 Elektra 發行首作 | 英文維基專輯條目的搜尋摘要寫首作 1963 年先由 Audiophile 發行、後由 Elektra 重發；nodepression 摘要則說 Elektra 1963 年 11 月刪四首後發行。兩說有出入，僅見搜尋摘要未開專輯頁，建議主線核對。 | https://en.wikipedia.org/wiki/Blues,_Rags_and_Hollers | 否 |
+| ar-d-061 | Koncz Zsuzsa《Jelbeszéd》 | 匈牙利廣播電台大約只播她一半的曲子 | 三輪搜尋與開頁都找不到這句的出處（Infostart、匈牙利維基專輯條目、英文維基都沒有電台播放比例），查無佐證，建議主線確認來源或刪。 | https://infostart.hu/kultura/2016/03/07/koncz-zsuzsa-70-eves-803429 | 否 |
+| ar-d-061 | Koncz Zsuzsa《Jelbeszéd》 | 賣到五萬張時下令停售，庫存被熔掉 | 五萬張與庫存銷毀只有匈牙利維基專輯條目單源；一則未開頁的搜尋摘要寫停發時「已賣數萬張」。大方向（被停發、十年後重發）有兩源，數字與細節是單源，建議保留但留意。 | https://hu.wikipedia.org/wiki/Jelbesz%C3%A9d_%28album%29 | 否 |
+| ar-d-061 | Kongar-ol Ondar《Back Tuva Future》 | 1992 年拿下國際喉音比賽首獎 | 開頁讀到的來源（Alash Ensemble、World Music Central、英文維基）都只寫「贏得」國際喉音比賽／聯合國教科文組織贊助的國際喉音節，且寫成 1990 年代初或 1992 年、由他與 Tuva Ensemble 獲勝，沒有「首獎」。另有同姓的 Mongun-ool Ondar 於 1992 年拿下 International Throat Singing Competition 的 Grand Prix（搜尋摘要，指向 Chirgilchin 維基條目，未開頁），容易混淆。建議簡介改「1990 年代初贏得聯合國教科文組織贊助的國際喉音節」。 | https://www.alashensemble.com/Kongar-ool_Ondar.htm | 否 |
+| ar-d-061 | Kongar-ol Ondar《Back Tuva Future》 | 圖瓦共和國視為活國寶 | 只有英文維基單源（「living treasure」）；Boston Globe、Alash、World Music Central 三頁都沒有這句，另兩頁寫的是「圖瓦人民喉音歌手」稱號與俄羅斯榮譽。不算錯，但屬單源，建議留意。 | https://en.wikipedia.org/wiki/Kongar-ool_Ondar | 否 |
+| ar-d-061 | Kyle Creed《Liberty》 | 多年連續拿下維吉尼亞州 Galax 老時琴人大會的五弦琴組冠軍 | 只有英文維基單源（無年份）；Wilkes Heritage Museum 與 Blue Ridge Music Center 頁面都沒提他的 Galax 冠軍。屬獎項類單源，建議留意或具名為「據維基」。 | https://en.wikipedia.org/wiki/Kyle_Creed | 否 |
+| ar-d-061 | Lal & Mike Waterson《Bright Phoebus》 | Lal 與 Mike 姊弟 | Times 的 Lal 訃告寫 Lal 1943 年 2 月 15 日生；Guardian 的 Mike 訃聞寫 Mike 1941 年 1 月 16 日生。Mike 是哥哥，應為「兄妹」。 | https://mainlynorfolk.info/watersons/biography/mike-schofield.html | 否 |
+| ar-d-061 | Lal & Mike Waterson《Bright Phoebus》 | 2017 年 Domino 再版進英國榜第 21 名 | Official Charts 頁面：Official Albums Chart 最高第 59 名（1 週，2017-08-17）；第 21 名是 Official Albums Chart Update（2017-08-13）。The Arts Desk 另寫第 31 名。建議改成不寫名次，或寫「首週進榜」。 | https://www.officialcharts.com/albums/lal-mike-waterson-bright-phoebus/ | 否 |
+| ar-d-061 | Lal & Mike Waterson《Bright Phoebus》 | 隨即因版權訴訟下架 | 英文維基稱重發在宣布後不久因法律問題下架、法院判 Domino 侵權，但判決只引 2018 年 12 月 Celtic Music 的新聞稿，屬單方說法；The Arts Desk 完全沒提法律糾紛。建議簡介保持中性（如「後來因版權爭議停售」）。 | https://en.wikipedia.org/wiki/Bright_Phoebus | 否 |
+| ar-d-061 | Lead Belly《Where Did You Sleep Last Night: Lead Belly Legacy, Vol. 1》 | 取自 Huddie Ledbetter 為 Folkways 留下的錄音 | 這批錄音是 1941 至 1947 年在 Moses Asch 的紐約錄音室所錄，Asch 日後才創辦 Folkways（母帶現歸 Smithsonian Folkways 保存）；說「為 Folkways 留下」時間上有誤，建議改「Moses Asch 的錄音」或「Folkways 前身 Asch 的錄音」。 | https://search.alexanderstreet.com/view/work/bibliographic_entity%7Crecorded_cd%7C73361 | 否 |
+| ar-d-061 | Lindisfarne《Fog on the Tyne》 | 成為當年英國第八暢銷唱片 | 維基樂團條目導言寫 Fog on the Tyne 是 1972 年英國銷量最大的專輯（biggest selling UK album in 1972），搜尋摘要另見 Lindisfarne 粉絲網站同寫 top-selling album of 1972；與簡介的「第八暢銷」不一致。本層沒能開頁核對官方年度榜，只供主線依 Official Charts 年度榜核實。 | https://en.wikipedia.org/wiki/Lindisfarne_(band) | 否 |
+| ar-d-062 | Luke Combs《This One's for You》 | 自主發行的首張專輯被大廠簽走重發……2016 年由 Luke Combs 自主發行，2017 年 6 月 2 日經 Columbia Nashville 簽下重發 | 維基專輯條目只記 2017 年 6 月 2 日經 River House Artists 與 Columbia Nashville 發行，另列 2015 年的同名 EP，沒有 2016 年自主發行專輯的記載；Biography.com 記 2016 年 10 月簽 Columbia Nashville。「2016 自主發行的是專輯還是 EP」需對照後再決定是否改寫。 | https://en.wikipedia.org/wiki/This_One's_for_You_(Luke_Combs_album) | 否 |
+| ar-d-062 | Luke Combs《This One's for You》 | 〈Hurricane〉是 2012 年〈Cruise〉之後第一支在 Country Airplay 榜蟬聯兩週冠軍的出道單曲 | 維基專輯條目與 Biography.com 只寫〈Hurricane〉登上 Country Airplay 第 1 名（Biography.com 記 2017 年 5 月），未見「蟬聯兩週」與「繼〈Cruise〉之後首支」的說法；這一層沒找到可核對的來源，標為未核實。 | https://en.wikipedia.org/wiki/This_One's_for_You_(Luke_Combs_album) | 否 |
+| ar-d-062 | Manos Hadjidakis《Gioconda's Smile》 | 他1960年曾以〈Never on Sunday〉獲奧斯卡最佳原創歌曲，卻拒領獎座 | 頒獎典禮在 1961 年 4 月（獎勵 1960 年影片）。「拒領」一說只見維基；To Vima 2025 年專文寫他缺席典禮、獎座後來寄到，Chania Film Festival 頁面（搜尋摘要）又寫獎座未送達，三處不一致。建議改成「沒有出席頒獎典禮」較穩。 | https://www.tovima.com/culture/manos-hadjidakis-the-dreamer-who-changed-greek-music | 否 |
+| ar-d-062 | Manos Hadjidakis《Gioconda's Smile》 | 1965年在紐約錄下的管絃樂歌曲集，Quincy Jones任製作 | 專輯條目與簡介一致，但維基 Manos Hatzidakis 條目說 Quincy Jones 製作的是後來的美版重發，To Vima 則寫曲子在洛杉磯完成；來源不一致，低度提示，暫不必改。 | https://en.wikipedia.org/wiki/Gioconda's_Smile | 是 |
+| ar-d-062 | Margo Price《Midwest Farmer's Daughter》 | 她是該廠牌簽下的第一位鄉村藝人，這也是該廠發行的第一張鄉村專輯 | Spill Magazine 2016 年 3 月的報導稱她是 Jack White 的 Third Man Records 簽下的「第一位 Nashville 在地藝人」（first Nashville-based artist），搜尋摘要所見 Rolling Stone 與 Third Man 官方稿的措辭同；未見「第一位鄉村藝人」「第一張鄉村專輯」的說法。建議改成「第一位 Nashville 在地簽約藝人」或拿掉「第一」。 | https://spillmagazine.com/9320 | 否 |
+| ar-d-062 | Margo Price《Midwest Farmer's Daughter》 | 母帶投給約三十家唱片公司都遭拒絕 | 這一層查到的來源（維基、Spill、Farm Aid）都沒有「約三十家」或「全數遭拒」的說法，只有 Third Man 官方部落格（搜尋摘要，未開頁）提到她當掉婚戒、賣掉家用車；數字未核實。 | https://thirdmanrecords.com/blogs/news/margo-price-midwest-farmers-daughter-release-day | 否 |
+| ar-d-062 | Mark Fry《Dreaming With Alice》 | 這張碟是 1971 年夏天在羅馬花三天錄成的 | 「三天」只見維基（單源）；Fry 本人在 2016 年 Psychedelic Baby 訪談說是在蘇格蘭樂手的地下室公寓用兩台 4 軌 Revox 錄了一兩週。建議改成不寫天數，或改寫成「1971 年在羅馬錄成」。 | https://www.psychedelicbabymag.com/2016/10/mark-fry-interview-dreaming-with-alice.html | 否 |
+| ar-d-062 | Maria del Mar Bonet《Alenar》 | 這是名下第四張錄音室專輯 | 依 ca.wikipedia 與事實庫引的 MusicBrainz 目錄，1977 年本張之前的同名專輯（1969、1971、1974）加上 1976 年《Cançons de festa》已有 4 張錄音室專輯（1975《A l'Olympia》為現場），本張應是第 5 張；事實庫研究稿自己提出的另一說法（「三張自我同名之後的第二張有專屬盤名的錄音室專輯」）也等於第 5 張。建議改為不寫序數，或改成「第五張」前先核對 1969 與 1971 的同名專輯是否皆為錄音室全長專輯。 | https://ca.wikipedia.org/wiki/Maria_del_Mar_Bonet | 否 |
+| ar-d-062 | Meic Stevens《Outlander》 | 他 1967 年因精神狀況回到西威爾斯的故鄉 Solva 休養 | 年份來源不一：維基寫 1967 年，Record Collector 寫精神崩潰在 1966 年底、1967 年底才錄第一張威爾斯語 EP；建議簡介改成不寫年份。（低優先） | https://recordcollectormag.com/articles/the-welsh-bob-dylan | 否 |
+| ar-d-062 | Michael Hurley, The Unholy Modal Rounders, Jeffrey Frederick & The Clamtones《Have Moicy!》 | 《滾石》給滿分五星 | 英文維基《Have Moicy!》條目與 Hurley 條目都沒有《滾石》評分；條目列出的評價是 Christgau 的 A+（並選為 1976 年最愛專輯）與 AllMusic Mark Deming 的 masterpiece 評語。五星說法本層未能查到來源，建議主線核對或刪除。 | https://en.wikipedia.org/wiki/Have_Moicy! | 否 |
+| ar-d-062 | Modern Folk Üçlüsü《40 Yıl Sonra》 | 1974 年的唱片 | 土耳其維基與 biyografiler 兩處都寫《40 Yıl Sonra》1975 年發行（英文維基未列年份）；卡池與簡介標 1974，建議主線核對 Discogs 或封套年份再決定是否改。 | https://tr.wikipedia.org/wiki/Modern_Folk_%C3%9C%C3%A7l%C3%BCs%C3%BC | 否 |
+| ar-d-062 | Moving Hearts《The Storm》 | 底下是 Dónal Lunny 的 bouzouki、Eoghan O'Neill 的貝斯與雙鼓手的律動 | 維基專輯條的人員表是鼓手 Matt Kelleghan 加打擊樂手 Noel Eccles（外加吉他手 Greg Boland、Lunny 兼 synthesiser 與 bodhrán），並非兩位鼓手；「雙鼓手」說法偏簡化，建議改「鼓與打擊樂」。團員陣容以專輯條人員表為準。 | https://en.wikipedia.org/wiki/The_Storm_(Moving_Hearts_album) | 否 |
+| ar-d-062 | Mr. Fox《The Gipsy》 | 核心是 Bob Pegg 與 Carole Butler 夫婦 | 樂團成員在維基樂團條與 Bob Pegg 官網都寫作 Carole Pegg（Butler 為婚前姓，來自事實庫研究稿的維基轉述）；唱片與樂評通行寫法是 Carole Pegg，建議改「Carole Pegg」或「Bob 與 Carole Pegg 夫婦」。 | https://www.bobpegg.com/music-1 | 否 |
+| ar-d-062 | Nickel Creek《Nickel Creek》 | 2000 年三月由 Sugar Hill 推出這張重新定位的出道作 | 「出道作」不精確：英文維基列出樂團 2000 年前已有《Little Cowpoke》（1993）與《Here to There》（1997）兩張專輯，Tucson Weekly 稱本張為 major-label debut；建議改「Sugar Hill 的首張」或「大廠風格的出道作」。 | https://en.wikipedia.org/wiki/Nickel_Creek | 否 |
+| ar-d-063 | Ossian《Ossian》 | 1976 年於格拉斯哥成軍 | 維基與名人堂頁都只寫 1976 年成軍、蘇格蘭，沒有寫成軍地點；只知 Billy Jackson 是格拉斯哥人。『於格拉斯哥成軍』未得來源支持，建議改為『蘇格蘭樂團』或找到來源再留。 | https://en.wikipedia.org/wiki/Ossian_(band) | 否 |
+| ar-d-063 | Pablo Milanés《Yo Me Quedo》 | 西班牙 Movieplay 以《Acto de fe》為題發行，後續再版才改掛《Yo me quedo》 | Público 與 OnCuba（2022 報導）都寫 1982 年《Yo me quedo》在古巴發行並收〈Yolanda〉〈Amo esta isla〉；商家目錄另列 Movieplay 西班牙 1982 版《Acto de fe》。看起來《Yo me quedo》是古巴原題、西班牙版才改名，與簡介的先後相反；建議店主查 Discogs 後決定是否改寫。 | https://www.publico.es/culturas/cinco-obras-eternas-pablo-milanes-voz-oprimidos-apagara.html | 否 |
+| ar-d-063 | Paco Ibáñez《Paco Ibáñez en el Olympia (París)》 | 1970 年那套原盤的標題寫成《Paco Ibañez à l'Olympia》 | 西班牙語維基寫演唱會在 1969 年 12 月、雙專輯同年出版；MusicBrainz 的 Moshé-Naïm 原盤第一發行日為 1970。『1970 年原盤』可能指實際壓片年，兩者並不一定矛盾，但年份有出入，建議店主核 Discogs 後再決定是否保留年份。 | https://es.wikipedia.org/wiki/Paco_Ib%C3%A1%C3%B1ez | 否 |
+| ar-d-063 | Patricio Manns《Entre mar y cordillera》 | 全碟十一首的作者掛名都是他 | 英文維基寫整張專輯除第 8 軌〈Ya no canto tu nombre〉掛 Edmundo Vásquez 外，其餘皆掛 Manns；另有 Rolando Alarcón 參與〈Sirilla de la Candelaria〉的記載。建議店主核 Discogs 曲目作者後再決定是否改成『除一首外』。 | https://en.wikipedia.org/wiki/Patricio_Manns | 否 |
+| ar-d-063 | Perry Leopold《Experiment in Metaphysics》 | 1981 年他停下巡演，創辦了 PAN，那家公司 1983 年成為音樂產業第一個線上網路 | 只在 AllMusic 傳記改寫（NTS、Last.fm 轉載同一份文字）看到：『1981 年創辦 PAN，音樂產業第一個線上電腦網路（1983），1990 年成為最早獲准連上網際網路的非國防部公司之一』。三次搜尋沒找到任何獨立來源，屬『第一』類單源宣稱，建議簡介改成『據傳記稱』或刪去『第一個』。另『8 月的一個下午就送掉了』也沒找到來源，來源只說大部分在費城街角送出。 | https://nts.live/artists/56748-perry-leopold | 否 |
+| ar-d-063 | Peter Walker《Rainy Day Raga》 | 1967 年美國 Vanguard VSD-79238 | 來源對首發年不一致：英文維基與 Record Collector 評論寫 1966 年首張專輯，Soundohm 與 PopMatters 搜尋摘要寫 1967 年；建議對照 Discogs 原盤年份再決定上線簡介與卡池年份。 | https://recordcollectormag.com/reviews/album/rainy-day-raga | 否 |
+| ar-d-063 | Raimon《Per destruir aquell qui l'ha desert》 | 名下在 1976 年之前的錄音室專輯只有三張（本張是其中之一）；沒有再版也沒有 CD 版 | 此句只依 MusicBrainz 的 18 筆 release-group 推算，資料不全。加泰隆尼亞大百科列有 1966 年《Cançons de la roda del temps》，加上 1964、1970、1974 年，至少四張；「沒有再版與 CD 版」同樣只是 MusicBrainz 的登錄結果，建議改掉或刪除。 | https://www.enciclopedia.cat/gran-enciclopedia-catalana/ramon-pelegero-i-sanchis | 否 |
+| ar-d-063 | Richie Havens《Mixed Bag》 | 也是他初次登上告示牌 | 英文維基寫 Something Else Again（1968）才是他第一張登上 Billboard 榜的專輯，而且是它把 Mixed Bag 重新帶回榜上；簡介『初次登上告示牌』與此不符。僅英文維基單源，建議店主核對 Billboard 資料後再改。 | https://en.wikipedia.org/wiki/Richie_Havens | 否 |
+| ar-d-063 | Robert Plant & Alison Krauss《Raising Sand》 | 含年度專輯與年度單曲〈Please Read the Letter〉 | 葛萊美獎項是 Record of the Year，中文宜寫年度唱片；『年度單曲』易與 Song of the Year（年度歌曲）混淆。『五項提名全中』的提名數此輪沒有查到，維基只寫拿下五座。 | https://en.wikipedia.org/wiki/Alison_Krauss | 否 |
+| ar-d-063 | Roger Miller《The Return of Roger Miller》 | 寫下當屆單一藝人最多得獎紀錄，直到 1971 年才被 Paul Simon 以七座打破 | 此輪沒有找到來源證實『1971 年 Paul Simon 七座打破』；travelok 只寫這是當時最大的一次包辦、至今仍是鄉村歌手最高紀錄。建議核對葛萊美官方資料，不確定的部分可刪去。 | https://travelok.com/music-trail/artist/roger-miller | 否 |
+| ar-d-117 | John Wright《Mr. Soul》 | 七歲起在母親創辦的教會裡彈琴 | 維基寫「by the age of seven」是上限，Chicago Reader（2014）寫他三歲就彈琴；「七歲起」不夠準，建議改成「很小就在母親的教會彈琴」。 | https://chicagoreader.com/music/the-life-of-john-wright-the-chicago-jazz-pianist-they-call-south-side-soul/ | 否 |
+| ar-d-117 | Red Garland / Ron Carter / Philly Joe Jones《Crossings》 | 每首曲子輪流由一人當 leader、其餘兩人當 sidemen，主導權在鋼琴、貝斯與鼓之間不斷流轉 | 維基專輯條目、Discogs 與搜尋結果都沒有提到輪流當 leader 的做法，只見 Orrin Keepnews 製作與 Yanow 的評語；應查原版 LP 內頁（Keepnews 筆記）確認，查不到建議改成中性寫法。同時『三十年的老將』『難得老友相聚』也無出處，且 Garland 與 Jones 並非首次同台（見 notes）。 | https://en.wikipedia.org/wiki/Crossings_(Red_Garland_album) | 否 |
+| ar-d-117 | The Detroit Experiment《The Detroit Experiment》 | Carl Craig 掛執行製作 | PopMatters 與 Ropeadope 都寫 Carl Craig 與 Aaron Luis Levinson 共同製作（co-producer），不是『執行製作』；建議改成『與 Levinson 共同製作』。 | https://www.popmatters.com/detroitexperiment-st-2495886562.html | 否 |
+| ar-d-117 | Black Eyed Peas《Elephunk》 | 〈Where Is the Love?〉在十五個國家奪冠 | 英文維基首段寫 peaked atop music charts in 13 countries；數字待核，建議改 13 或去掉數字。 | https://en.wikipedia.org/wiki/Black_Eyed_Peas | 否 |
+| ar-d-121 | Carlos Niño & Friends《More Energy Fields, Current》 | 打擊樂手 Carlos Niño 從 2008 年起用「& Friends」這塊招牌合作 | 廠牌官方藝人介紹寫成立於 2011 年（解散多數其他團體之後），與 2008 年不一致；建議刪年份或改寫「約十年來」，待確認。 | https://www.intlanthem.com/artist-bios/carlos-nino | 否 |
+| ar-d-121 | Terri Lyne Carrington & Social Science《Waiting Game》 | 第二張碟換成四個樂章、長 42 分鐘的管弦組曲 | Shore Fire 新聞稿與 arts.gov 都說第二碟是一次錄成的即興組曲，由 Esperanza Spalding 與 Carrington、Parks、Stevens 演奏，未提管弦編制；「管弦」「四個樂章」「42 分鐘」需對 Motéma／Discogs 曲目表再核，不確定就改寫成「一次錄成的即興組曲」。 | https://shorefire.com/releases/entry/terri-lyne-carrington-and-social-science-double-album-waiting-game | 否 |
+| ar-d-121 | Jaimie Branch《Fly or Die Fly or Die Fly or Die ((world war))》 | 得年 39 歲，死因是意外藥物過量 | 上線簡介寫明死因。按店主規則，過世者預設只收年份與公開層級；且 Paste 與 International Anthem 的訃告都沒有公布死因，只維基單源寫明。建議簡介刪去死因，只留日期、地點與年齡。 | https://www.pastemagazine.com/music/jaimie-branch/dead-at-39 | 否 |
+| ar-d-121 | Ben LaMar Gay《Open Arms to Open Us》 | 是他在這間廠牌的第二號作品 | 「第二號作品」容易被讀成目錄號 2；Bandcamp 頁面載明是在 International Anthem 的第二張專輯，目錄號為 IARC 0051。建議改寫為「第二張專輯」。 | https://intlanthem.bandcamp.com/album/open-arms-to-open-us | 否 |
+| ar-d-121 | Damon Locks Black Monument Ensemble《Where Future Unfolds》 | 2018 年 11 月 15 日首演，場地是 Garfield Park 的溫室 | Walker 節目介紹寫團的首次演出是 2017 年的 Hyde Park Art Center；Garfield Park Conservatory 是 2018 年那場、專輯由那場錄成。「首演」恐指專輯曲目的首演或完整陣容的首次演出，建議改寫為「2018 年在 Garfield Park 溫室演出，十首直接收進唱片」，避免與團的首場演出混淆。11 月 15 日這個日期本層未查到來源。 | https://walkerart.org/magazine/program-notes-for-damon-lockss-black-monument-ensemble | 否 |
+| ar-d-122 | Nik Bärtsch's Ronin《Awase》 | ECM 的發行月份是 2018 年 5 月，Ronin 在這家廠牌累積到四張 | ECM 目錄另有 2012 年現場專輯《Ronin Live》，若計入則 Awase 是 ECM 第五張發行、第四張錄音室專輯；「四張」需限定為錄音室專輯。此條依據為搜尋結果列出的 ECM 目錄，未開頁核對。 | https://www.allaboutjazz.com/awase-nik-bartsch-ecm-records-review-by-mike-jurkovic.php | 否 |
+| ar-d-122 | Thomas de Pourquery & Supersonic《Play Sun Ra》 | Victoires du jazz 把年度器樂爵士專輯頒給了它 | Syos、Jazz à Vienne、Belgrade Jazz Festival 等多個來源都稱該獎是 2014 Victoires du jazz 的「年度專輯」（Album of the Year）；只有法文維基獎項欄寫「器樂爵士專輯」，同頁另一處寫年度專輯。建議改成「年度專輯」或查官方類別名後再定。 | https://syos.co/en/blogs/our-artists/thomas-de-pourquery | 否 |
+| ar-d-122 | Vincent Peirani《Living Being》 | 1998 年拿到手風琴獎才轉向爵士 | 法文維基寫 1996 年在巴黎 CNSMD 拿古典手風琴首獎，轉向爵士在 2000 年前後，與英文維基的 1998 年說法不一；店主可考慮改成不寫年份，例如『拿到古典手風琴獎項後轉向爵士』。屬待查而非確定錯誤。 | https://fr.wikipedia.org/wiki/Vincent_Peirani | 否 |
+| ar-d-123 | Samuel Yirga《Guzo》 | 同團的 Dubulah 替他製作這張個人首作 | Real World 藝人頁把《Hagere》稱為他的 debut solo release，與《Guzo》頁「首張個人專輯」並列；《Hagere》性質未查到，建議店主本機確認「首作」說法與製作人名，單源不足以斷言有誤。 | https://realworldrecords.com/artists/samuel-yirga/ | 否 |
+| ar-d-123 | Daymé Arocena《Nueva Era》 | Gilles Peterson 在倫敦一場發表會上讓她登台 | 本位開頁讀到的 World Music Central 與 NOW 皆未提到這段發掘經過，查無來源；若事實庫研究稿有出處則維持，沒有就建議刪去或改成可證實的說法（Brownswood 發行首作）。 | https://worldmusiccentral.org/artist-profiles-dayme-arocena/ | 否 |
+| ar-d-123 | Black String《Karma》 | 隔年獲韓國大眾音樂獎最佳爵士與跨界專輯 | ACT 與韓國文化院都只說樂團獲該獎，ACT 寫的是 Best Jazz and Crossover Performance（無年份），韓國文化院寫 2020 年 Album（註記為 2017 年演出）；搜尋摘要另見 2017 年（第 14 屆）得獎名單列 Mask Dance。得獎專輯與年份未能確認，主線請核對韓國大眾音樂獎官網歷屆名單後再決定是否保留『隔年』的說法。 | https://www.koreanculture.org/performing-arts/2022/09/09/black-string | 否 |
+| ar-d-123 | 나윤선《Same Girl》 | 2010 年 10 月登上法國爵士銷量第一，隔年獲金唱片認證 | 韓文維基的獎項列表把法國金唱片（Same Girl）列在 2012 年，與「隔年（2011）」可能差一年；本層未找到認證單位原始頁，僅供店主核對，不確定是上線簡介錯。 | https://ko.wikipedia.org/wiki/%EB%82%98%EC%9C%A4%EC%84%A0 | 否 |
+| ar-d-124 | Dub Syndicate《Stoned Immaculate》 | 他被視為 Sherwood 的導師型人物，1983 年 9 月 15 日遭搶劫槍殺 | 維基原文為在搶劫中遇害、『據稱與金錢糾紛有關』，案情無獨立來源，且慣例對已故者只留年份與公開層級；建議改為『1983 年 9 月 15 日遇害』，並把『被視為導師型人物』改成維基的 may be considered 語氣。 | https://en.wikipedia.org/wiki/Prince_Far_I | 否 |
+| ar-d-124 | Jah Wobble's Invaders of the Heart《Rising Above Bedlam》 | 那年入圍的共九張 | 英文維基 Mercury Prize 頁 1992 年列出九張入圍加上得主 Screamadelica 共十張；視『入圍』是否含得主，張數說法會不同，建議改成不寫張數或寫『十張入圍名單』。待店主定。 | https://en.wikipedia.org/wiki/Mercury_Prize | 否 |
+| ar-d-124 | Jah Wobble's Invaders of the Heart《Rising Above Bedlam》 | Natacha Atlas 唱另外三首 | 英文維基 Rising Above Bedlam 頁寫 Natacha Atlas 與 Justin Adams 也在盤上唱，Wobble 自己同樣開口；『另外三首都是 Atlas』無法在這一層核實，建議改成較籠統的寫法或再對 Discogs 曲目署名。 | https://en.wikipedia.org/wiki/Rising_Above_Bedlam | 否 |
+| ar-d-124 | Massive Attack v Mad Professor《No Protection》 | 1995 年 2 月 20 日英國版上市 | 英文維基寫發行日為 1995 年 2 月 17 日；可能是版本或地區差異，建議改查 Discogs／英國版目錄再定，或改寫成『1995 年 2 月』。 | https://en.wikipedia.org/wiki/No_Protection_(Massive_Attack_album) | 否 |
+| ar-d-124 | こだま和文《クワイエット・レゲエ》 | 1989 年離開 Mute Beat | RBMA 寫小玉和文 1989 年 11 月宣布離團、樂團 1990 年初解散；日文維基小玉條目寫 1990 年脫退。建議改寫成『1989 年底宣布離團』。 | https://daily.redbullmusicacademy.com/2014/10/mute-beat-feature | 否 |
+| ar-d-124 | こだま和文《クワイエット・レゲエ》 | 1989 年離開 Mute Beat | RBMA 寫小玉和文 1989 年 11 月宣布離團、樂團 1990 年初解散；日文維基寫 1990 年脫退；建議改寫成『1989 年底宣布離團』。 | https://daily.redbullmusicacademy.com/2014/10/mute-beat-feature | 否 |
+| ar-d-124 | Kanka《Dub Communication》 | 他 1977 年出生 | 法文維基正文寫 1977、資訊框寫 1976，自相矛盾，沒有獨立第二源能定案；建議簡介改成不寫出生年 | https://fr.wikipedia.org/wiki/Kanka_(musicien) | 否 |
+| ar-d-124 | Prince Fatty《Survival of the Fattest》 | Prince Fatty 這名字是 2005 年替 Stüssy 錄單曲時取的，用來向 King Tubby 致意 | 「向 King Tubby 致意」只見於維基；Pelanconi 在 United Reggae 訪談把名字說成學生時代的玩笑，在 Rhythm Passport 訪談說是樂手形容他的聲音很 fat；三處說法不一致，建議改成不下定論的寫法（名字隨替 Stüssy 錄的單曲而來） | https://unitedreggae.com/articles/n1104/100512/interview-prince-fatty | 否 |
+| ar-d-124 | Beth Orton《Trailer Park》 | Andrew Weatherall 負責三首的混音 | 維基專輯條目與 Orton 條目都把 Weatherall 列為整張專輯的製作人（與 Victor Van Vugt 並列，條目未分軌），沒有提『三首混音』；建議對 Discogs 分軌 credit 核對，確認是『製作』還是『三首混音』再保留 | https://en.wikipedia.org/wiki/Trailer_Park_(album) | 否 |
+| ar-d-124 | Jhelisa《Language Electric》 | 1987 年移居倫敦 | 1987 年只見維基條目單源；Spitfire 的訪談稿說她是 1990 年代搬到倫敦，Offbeat 訪談沒有給年份；來源不一致，建議拿掉年份或改寫成『後來搬到倫敦』 | https://composer.spitfireaudio.com/en/articles/jhelisa-on-releasing-7-keys-the-power-of-using-vocals-for-composing | 否 |
+| ar-d-125 | Money Mark《Mark's Keyboard Repair》 | 原是木工，替 Beastie Boys 修大門才結識他們 | Flood 2017 專訪中他自稱流傳的『灰姑娘版』故事並不全真，只確認自己確為木工；建議改成『原是木工，經 Mario Caldato Jr. 牽線認識 Beastie Boys』。 | https://floodmagazine.com/44207/keyboard-money-mark-is-still-havin-it/ | 否 |
+| ar-d-125 | Romare《Projections》 | 他搬到巴黎買了唱盤 | Ninja Tune 官網寫的是『買了唱盤、搬到巴黎，在那裡開始用二手唱片的取樣混音』，順序相反；建議改成『買了唱盤、搬到巴黎』。 | https://ninjatune.net/artist/romare | 否 |
+| ar-d-125 | FKJ《French Kiwi Juice》 | 生長在法國圖爾 | 維基專輯條目稱生於圖爾，但 HKFP 訪談稱他在巴黎長大；「生長在」可能需改成「生於」。 | https://hongkongfp.com/2024/04/13/fkj-music-interview-fkj-brings-his-unique-style-back-to-hong-kong/ | 否 |
+| ar-d-125 | FKJ《French Kiwi Juice》 | 也替電影院調過音響 | Homegrown 訪談只說他原本打算當電影院音響工程師、念聲音與混音，沒有說他實際做過電影院調音；此句可能言過其實。 | https://homegrown.co.in/homegrown-explore/hybrid-soul-hybrid-beats-in-conversation-with-fkj-prior-to-his-india-tour | 否 |
+| ar-d-125 | Lack of Afro《Press On》 | 他在這間廠牌的作品目錄就從這張算起 | 維基與事實庫都寫 Freestyle 先發行的是出道單曲〈Wait A Minute〉，《Press On》是他在這間廠牌的第一張專輯，不是第一件作品。 | https://en.wikipedia.org/wiki/Lack_of_Afro | 否 |
+| ar-d-125 | Maribou State《Portraits》 | Liam 爸媽家花園的盡頭，有一間小棚屋 | AU Review 訪談只說工作室是「其中一人花園裡的小棚屋」、背靠林地，沒有指明是 Liam 的、也沒有說是父母家；Berkhamsted 的說法只見維基。上線簡介的「爸媽家」「Liam」找不到出處，建議改成中性寫法或核對。 | https://www.theaureview.com/music/maribou-state-london-talk-about-their-new-lp-portraits-and-their-upcoming-australian-tour/ | 否 |
+| ar-d-126 | Nils Petter Molvær《Khmer》 | 這張《Khmer》是他個人掛名的首作 | SNL 列第一張掛名專輯為與 Robyn Schulkowsky 合作的《Hastening Westward》（1995）；英文維基卻稱《Khmer》為個人首作。來源不一致，建議改為不下『首作』定論（例如『個人名義的 ECM 專輯』或『奠定名聲的個人專輯』）。 | https://snl.no/Nils_Petter_Molv%C3%A6r | 否 |
+| ar-d-126 | Bent《Programmed to Love》 | 兩人也是 Sport 廠牌的老闆，首作的英國首版出在自家旗下 | 英文與德文維基只把 Sport 列為發行廠牌（與 Ministry of Sound 並列），沒有『Bent 是廠牌老闆』的說法；搜尋摘要的 Nail Tolliday 簡介稱 Sport 是 Ministry of Sound 旗下的專屬子廠牌。建議改成『Ministry of Sound 旗下的 Sport 廠牌』或查證後再定。 | https://en.wikipedia.org/wiki/Bent_(band) | 否 |
+| ar-d-126 | Lali Puna《Scary World Theory》 | The Notwist 的主唱與鼓手，後來都加入了她的樂團 | 維基只說 Markus Acher 是 The Notwist 與 Tied & Tickled Trio 的主唱兼吉他手，Christoph Brandner 是在 Tied & Tickled Trio 與 Acher 同團的鼓手；沒有他是 The Notwist 鼓手的說法。建議改成『The Notwist 的主唱，與他同在 Tied & Tickled Trio 的鼓手』。 | https://en.wikipedia.org/wiki/Lali_Puna | 否 |
+| ar-d-126 | Hocus Pocus《73 touches》 | 南特的爵士 hip-hop 團 Hocus Pocus，此時只剩 MC 兼製作 20Syl 與 DJ Greem | Universal Music France 官方頁與 Le Peuple du Rock 都寫 2001 年起已擴編成現場樂團（鍵盤、貝斯、吉他），法文維基也列 2000 至 2004 年起的現場樂手；若『只剩兩人』指的是 MC 與 DJ 的核心，寫法可以，若指整個團則不準，建議改成『核心是 20Syl 與 DJ Greem，另有現場樂手』。 | https://www.universalmusic.fr/artistes/30079849936 | 否 |
+| ar-d-126 | Gabin《Gabin》 | 羅馬雙人組 Gabin | 義大利文維基、英文維基與 Qobuz 都只寫『義大利』二人組，沒有任何已開頁的來源寫羅馬；『羅馬』僅見搜尋摘要（說 Clary 是羅馬的 chill room DJ），未核實，建議改成『義大利雙人組』或另找來源確認。 | https://it.wikipedia.org/wiki/Gabin_(gruppo_musicale) | 否 |
+| ar-d-126 | Imam Baildi《Imam Baildi》 | 另外自己寫了 3 首器樂曲 | 官網寫這 3 首原創器樂曲是以老希臘器樂錄音的取樣為底做出來的，並非全然從零自寫；建議改成『另有 3 首以老器樂錄音取樣做成的原創器樂曲』。 | https://www.imambaildi.com/?p=374 | 否 |
+| ar-d-126 | Chambao《Endorfinas en la mente》 | 11 首裡有 10 首出自他們自己，唯一的翻唱是 Camarón de la Isla 唱紅的〈Volando voy〉 | Amazon.es 的曲目列表出現第 15 首〈Instinto humano〉，表示某個版本不只 11 首（可能是再版或加料版，也可能是列表錯誤）；請對照 Discogs 406307 的原版曲目數，確認簡介說的是哪個版本。 | https://www.amazon.es/Endorfinas-En-Mente-Chambao/dp/B0000V8CCM | 否 |
+| ar-d-126 | Suba《São Paulo Confessions》 | 1990 年 3 月 15 日抵達聖保羅 | 維基（Suba (musician)）寫 3 月 15 日，musicabrasileira.org 的 Suba: Tributo 介紹寫 5 月 15 日，兩處日期不一致；建議改成只寫「1990 年抵達聖保羅」。 | https://musicabrasileira.org/suba-tributo/ | 否 |
+| ar-d-126 | Bajofondo Tango Club《Bajofondo Tango Club》 | 兩人在馬德里重逢，把計畫當成一座音樂實驗室 | 維基與世界音樂中心都沒有「在馬德里重逢」的說法，查不到來源；請店主對一次，查不到就拿掉這句。 | https://en.wikipedia.org/wiki/Bajofondo | 否 |
+| ar-d-127 | Da Lata《Songs From the Tin》 | 團員是 Chris Franck 與 Patrick Forge 這兩個倫敦人 | Franck 生於德國、六歲起住英國，說「倫敦人」過粗；Da Lata 本身是倫敦的團，可改寫成「倫敦的團」 | https://en.wikipedia.org/wiki/Chris_Franck | 否 |
+| ar-d-127 | Sleep Walker《The Voyage》 | 2000 年成軍的日本爵士團 Sleep Walker | 來源不一：MusicBrainz 記 2000 年成立，日文維基資訊欄寫 1998 年起活動；日文維基另記 2000 年的 12 吋單曲〈Ai-No-Kawa〉。成軍年沒有兩個一致來源，建議上線簡介改成「日本的爵士團」或不提成軍年 | https://ja.wikipedia.org/wiki/SLEEP_WALKER | 否 |
+| ar-d-127 | Yosi Horikawa《Vapor》 | Yosi Horikawa 在大阪長大，家裡和音樂不親 | 英文維基寫家人很少涉足音樂，但 Mixmag 訪談寫他父親聽爵士、古典與日本流行，兩源不一致，建議改成不談家人與音樂的關係 | https://mixmag.asia/feature/yosi-horikawa-travels-the-worlds-most-obscure-corners-to-source-unique-field-recordings | 否 |
+| ar-d-127 | Yosi Horikawa《Vapor》 | 出道作 16 首的聲音全由他自己錄製 | 《Vapor》是首張專輯，不是出道作；他的第一張作品是法國 Eklektik Records 的 EP《Touch》，2012 年另有 EP《Wandering》，建議改成『首張專輯』 | https://en.wikipedia.org/wiki/Yosi_Horikawa | 否 |
+| ar-d-127 | Mocca《My Diary》 | 《My Diary》的銷量將近 15 萬張 | 只有英文維基寫『估計約 15 萬張，是 2000 年代印尼最暢銷的獨立專輯』，屬單源估計值，找不到第二源；建議改成『據估計』或刪去數字 | https://en.wikipedia.org/wiki/Mocca_(band) | 否 |
+| ar-d-127 | Fridge《Happiness》 | Fridge 成團於 1995 年 | 維基與 Wikidata 為 1995 年，RA 2023 年重發評論寫 1996 年，兩說並存；年份是否保留請店主斟酌，改成『1990 年代中期』最穩。 | https://ra.co/reviews/35511 | 否 |
+| ar-d-127 | Houses《A Quiet Darkness》 | 德州的 Sonic Ranch Studios 包辦錄音與混音 | 維基寫錄音含加州 Desert Center 廢棄房屋、學校、小屋的田野錄音，Sonic Ranch 是『完成』專輯之處；『包辦錄音』可能說過頭，建議改為『在德州 Sonic Ranch 完成』或查 Discogs 製作名單再定 | https://en.wikipedia.org/wiki/Dexter_Tortoriello | 否 |
 
 ## B2　正文點名出處
 
 | 鍵 | 命中 |
 |---|---|
-| `desc2:1976／1976 這個星球` | discogs、musicbrainz |
-| `desc2:1976／late summer of 1976 不插電現場實況` | musicbrainz |
-| `desc2:1976／前王子` | musicbrainz |
-| `desc2:23 skidoo／seven songs` | allmusic |
-| `desc2:929／3` | musicbrainz |
-| `desc2:a band called doris／gypsy lady` | musicbrainz |
-| `desc2:a.r. kane／i` | allmusic |
-| `desc2:abba／waterloo` | musicbrainz |
-| `desc2:abc／the lexicon of love` | allmusic |
-| `desc2:abel ganz／gratuitous flash` | discogs |
-| `desc2:aesop rock／bazooka tooth` | allmusic |
-| `desc2:agape／victims of tradition` | discogs |
-| `desc2:ahmad jamal／ahmad's blues` | allmusic |
-| `desc2:air miami／me. me. me.` | discogs |
-| `desc2:airbridge／paradise moves` | 維基 |
-| `desc2:akio / okihide／scratches` | discogs |
-| `desc2:akira yamaoka／silent hill 2 original soundtracks` | musicbrainz |
-| `desc2:al campbell／diamonds` | musicbrainz |
-| `desc2:al green／al green is love` | allmusic |
-| `desc2:alain goraguer／la planète sauvage` | allmusic |
-| `desc2:alan braufman／valley of search` | musicbrainz、維基 |
-| `desc2:alban berg quartett／beethoven: the late string quartets` | 維基 |
-| `desc2:albert ayler／bells` | allmusic |
-| `desc2:alejandro jodorowsky／el topo` | discogs |
-| `desc2:alfred cortot／victor recordings of 1919-1926` | 維基 |
-| `desc2:ali farka touré & toumani diabaté／ali and toumani` | 維基 |
-| `desc2:alice donut／bucketfulls of sickness and horror in an otherwise meaningless life` | discogs |
-| `desc2:allen clapp and his orchestra／one hundred percent chance of rain` | 維基、discogs |
-| `desc2:allen toussaint／life, love and faith` | allmusic |
-| `desc2:alpha & omega／watch and pray` | mb |
-| `desc2:alpha stone／elasticated waveband` | discogs |
-| `desc2:amadeus quartet／haydn: string quartets op. 71, 74, 77 & 103` | 維基、discogs |
-| `desc2:amp／sirènes` | discogs、musicbrainz |
-| `desc2:andrei zueff／kitchen works` | discogs |
-| `desc2:andrew cox／arioch` | discogs |
-| `desc2:androids of mu／blood robots` | 維基 |
-| `desc2:angelo badalamenti／mulholland drive` | discogs |
-| `desc2:anthony braxton／for alto` | allmusic |
-| `desc2:antoine duhamel／pierrot le fou / week-end` | discogs |
-| `desc2:anton karas／the third man` | 維基 |
-| `desc2:arcadium／breathe awhile` | 維基 |
-| `desc2:armagideon／through the haze` | mb、discogs |
-| `desc2:art blakey／child's dance` | allmusic |
-| `desc2:arthur alexander／you better move on` | allmusic |
-| `desc2:arthur rubinstein／rubinstein plays liszt` | discogs |
-| `desc2:artur schnabel／schnabel plays the beethoven piano concertos` | musicbrainz、維基 |
-| `desc2:artur schnabel／the complete schubert recordings` | musicbrainz、discogs |
-| `desc2:arturo benedetti michelangeli／chopin: 10 mazurkas / ballade op. 23 / scherzo op. 31` | 維基 |
-| `desc2:arturo toscanini／respighi: pini di roma / fontane di roma / feste romane` | discogs、維基 |
-| `desc2:arturo toscanini／tchaikovsky: manfred symphony / romeo and juliet` | 維基、discogs |
-| `desc2:astral engineering／chronoglide` | discogs、musicbrainz |
-| `desc2:atahualpa yupanqui／basta ya` | discogs、維基 |
-| `desc2:audio active／happy happer` | mb |
-| `desc2:austin wintory／abzû` | 維基 |
-| `desc2:austin wintory／journey` | 維基 |
-| `desc2:auto-mod／requiem` | 維基 |
-| `desc2:avrocar／cinematography` | discogs |
-| `desc2:bananarians／boner` | discogs |
-| `desc2:barker／utility` | allmusic |
-| `desc2:barry harris／at the jazz workshop` | allmusic |
-| `desc2:barry harris／barry harris plays tadd dameron` | allmusic |
-| `desc2:barry harris／preminado` | allmusic |
-| `desc2:basic channel／bcd-2` | 維基 |
-| `desc2:basic channel／phylyps trak` | 維基 |
-| `desc2:beach house／teen dream` | allmusic |
-| `desc2:bernard parmegiani／chants magnétiques` | 維基 |
-| `desc2:bernard parmegiani／dedans dehors` | 維基 |
-| `desc2:betty everett／there'll come a time` | musicbrainz |
-| `desc2:big brother & the holding company／big brother & the holding company` | 維基 |
-| `desc2:big sleep／bluebell wood` | 維基 |
-| `desc2:bikini kill / huggy bear／yeah yeah yeah yeah / our troubled youth` | 維基 |
-| `desc2:black arthur blythe／bush baby` | 維基 |
-| `desc2:black roots／natural reaction` | mb、discogs |
-| `desc2:black sabbath／cross purposes` | allmusic |
-| `desc2:black sabbath／tyr` | allmusic |
-| `desc2:bladder flask／one day i was so sad that the corners of my mouth met & everybody thought i was whistling` | discogs |
-| `desc2:blind light／the absence of time` | discogs |
-| `desc2:bob carlin／fiddle tunes for clawhammer banjo` | discogs |
-| `desc2:bobby hutcherson／montara` | allmusic |
-| `desc2:bobby hutcherson／total eclipse` | allmusic |
-| `desc2:bobby timmons／in person` | allmusic |
-| `desc2:bobby timmons／soul time` | allmusic |
-| `desc2:bonobo／animal magic` | allmusic |
-| `desc2:booker ervin／that's it!` | allmusic |
-| `desc2:booker ervin／the blues book` | allmusic |
-| `desc2:booker ervin／the song book` | allmusic |
-| `desc2:booker t. & the mg’s／and now!` | allmusic |
-| `desc2:boyz ii men／nathan michael shawn wanya` | allmusic |
-| `desc2:bram stoker／heavy rock spectacular` | discogs |
-| `desc2:breakout／blues` | 維基 |
-| `desc2:brother jack mcduff／the honeydripper` | allmusic |
-| `desc2:bud powell／jazz giant` | mb |
-| `desc2:bud powell／the amazing bud powell, volume two` | mb |
-| `desc2:budapest string quartet／mozart: haydn quartets` | 維基、discogs |
-| `desc2:budapest string quartet／ravel: quartet in f major / debussy: quartet in g minor` | 維基 |
-| `desc2:buddy guy／damn right, i've got the blues` | allmusic |
-| `desc2:buddy rich／keep the customer satisfied` | 維基 |
-| `desc2:busch quartet／schubert: death and the maiden / string quartet d 887` | 維基、discogs |
-| `desc2:c418／minecraft - volume alpha` | 維基 |
-| `desc2:c418／minecraft - volume beta` | 維基 |
-| `desc2:cappablack／the state of the night` | discogs |
-| `desc2:captain funk／tatsuya oe presents an encounter with captain funk` | discogs、musicbrainz |
-| `desc2:carey bell／carey bell's blues harp` | allmusic |
-| `desc2:carmen mcrae／book of ballads` | allmusic |
-| `desc2:carole king／rhymes & reasons` | allmusic |
-| `desc2:catapilla／catapilla` | 維基 |
-| `desc2:cecil taylor／silent tongues` | allmusic |
-| `desc2:cecil taylor／unit structures` | allmusic |
-| `desc2:cedar walton／a night at boomers, vol. 1` | allmusic |
-| `desc2:celia cruz & johnny pacheco／tremendo caché` | discogs、維基 |
-| `desc2:celia cruz & ray barretto／ritmo en el corazón` | 維基、discogs |
-| `desc2:centry／thunder mountain - a dubwise selection` | discogs、mb |
-| `desc2:charalambides／union` | discogs |
-| `desc2:charles lloyd／dream weaver` | allmusic |
-| `desc2:charles mingus／mingus at the bohemia` | allmusic |
-| `desc2:charles sullivan／genesis` | 維基 |
-| `desc2:charlie mcalister／mississippi luau` | discogs |
-| `desc2:chavela vargas／la llorona` | 維基 |
-| `desc2:chicane／far from the maddening crowds` | allmusic |
-| `desc2:christone "kingfish" ingram／662` | allmusic |
-| `desc2:christopher larkin／hollow knight` | 維基 |
-| `desc2:christopher tin／calling all dawns: a song cycle` | 維基 |
-| `desc2:clear blue sky／clear blue sky` | 維基 |
-| `desc2:cleveland eaton／plenty good eaton` | 維基、discogs |
-| `desc2:clint mansell featuring kronos quartet／requiem for a dream: soundtrack from the motion picture` | allmusic |
-| `desc2:co-fusion／co-fu` | discogs |
-| `desc2:coil／love's secret domain` | allmusic |
-| `desc2:coil／time machines` | allmusic |
-| `desc2:coleman hawkins／at ease with coleman hawkins` | allmusic |
-| `desc2:con funk shun／candy` | allmusic |
-| `desc2:condition green／life of change` | discogs |
-| `desc2:control machete／mucho barato…` | 維基 |
-| `desc2:cortot / thibaud / casals／beethoven: archduke trio / schubert: piano trio d 898` | 維基 |
-| `desc2:count ossie & the rasta family／man from higher heights` | discogs、維基 |
-| `desc2:crayon／brick factory` | musicbrainz、discogs |
-| `desc2:creative arts ensemble／one step out` | discogs、mb |
-| `desc2:cressida／asylum` | 維基 |
-| `desc2:culture freeman meets the bush chemists／conqueror` | discogs、mb |
-| `desc2:culture／international herb` | mb |
-| `desc2:curly ray cline／why me, ralph?` | discogs |
-| `desc2:curren$y／pilot talk` | allmusic |
-| `desc2:curtis fuller／blues-ette` | allmusic |
-| `desc2:curtis mayfield／curtis/live!` | allmusic |
-| `desc2:dan curtin／deception` | discogs |
-| `desc2:danielle howle／about to burst` | discogs |
-| `desc2:datblygu／libertino` | musicbrainz |
-| `desc2:david lynch & alan r. splet／eraserhead` | musicbrainz、discogs |
-| `desc2:david wise／donkey kong country 2: diddy’s kong quest` | 維基 |
-| `desc2:davy graham／midnight man` | mb |
-| `desc2:death／scream bloody gore` | allmusic |
-| `desc2:deep purple／in rock` | allmusic |
-| `desc2:deerfield／nil desperandum` | discogs |
-| `desc2:deja-vu／baroque in the future` | 維基 |
-| `desc2:demon fuzz／afreaka!` | discogs |
-| `desc2:derrick may／mix-up, volume 5` | 維基 |
-| `desc2:desmond dekker／this is desmond dekker` | 維基 |
-| `desc2:deuter／d` | allmusic |
-| `desc2:dexter gordon／gettin' around` | allmusic |
-| `desc2:dick griffin／the eighth wonder` | 維基 |
-| `desc2:didjits／hey judester` | discogs |
-| `desc2:dietrich fischer-dieskau／schubert: lieder volume 1` | 維基 |
-| `desc2:disasterpeace／fez: original soundtrack` | 維基 |
-| `desc2:disco inferno／open doors / closed windows` | discogs、musicbrainz |
-| `desc2:dizzy gillespie／swing low, sweet cadillac` | allmusic |
-| `desc2:dj krush／kakusei` | allmusic |
-| `desc2:dock boggs／dock boggs: legendary singer and banjo player` | 維基 |
-| `desc2:don wilkerson／preach brother!` | allmusic |
-| `desc2:donald byrd／free form` | allmusic |
-| `desc2:donald byrd／street lady` | allmusic |
-| `desc2:donell jones／where i wanna be` | allmusic |
-| `desc2:donnie & joe emerson／dreamin' wild` | 維基 |
-| `desc2:donny hathaway／extension of a man` | allmusic |
-| `desc2:dr alimantado／sons of thunder` | 維基 |
-| `desc2:dr. z／three parts to my soul` | 維基 |
-| `desc2:dub ghecko／love to the power of each` | mb、discogs |
-| `desc2:duke ellington／ellington uptown` | allmusic |
-| `desc2:e.t. mensah & the tempos／king of highlife anthology` | 維基 |
-| `desc2:earth／earth 2: special low frequency version` | allmusic |
-| `desc2:east river pipe／shining hours in a can` | musicbrainz |
-| `desc2:ectogram／i can't believe it's not reggae!` | discogs |
-| `desc2:ed askew／ask the unicorn` | discogs、維基 |
-| `desc2:eggs／bruiser` | discogs |
-| `desc2:el hombre trajeado／skipafone` | musicbrainz、discogs |
-| `desc2:electroscope／homemade electroscope` | discogs、musicbrainz |
-| `desc2:elisabeth schwarzkopf & dietrich fischer-dieskau／mahler: des knaben wunderhorn` | 維基 |
-| `desc2:elisabeth schwarzkopf／lehár: die lustige witwe` | musicbrainz |
-| `desc2:elmer bernstein and orchestra／the man with the golden arm` | allmusic |
-| `desc2:elmo hope／homecoming!` | allmusic |
-| `desc2:elton dean's ninesense／oh! for the edge` | discogs |
-| `desc2:emerson string quartet／bartók: the 6 string quartets` | 維基 |
-| `desc2:enrico caruso／the caruso edition, volume i: 1902-1908` | 維基 |
-| `desc2:ep-4／lingua franca-1` | 維基 |
-| `desc2:eric benét／a day in the life` | allmusic |
-| `desc2:erich kleiber／r. strauss: der rosenkavalier (1954)` | 維基 |
-| `desc2:erkin koray／erkin koray` | discogs |
-| `desc2:ernie henry／presenting ernie henry` | allmusic |
-| `desc2:evan parker／monoceros` | allmusic |
-| `desc2:experience unlimited／free yourself` | 維基 |
-| `desc2:experimental audio research／pestrepeller` | discogs |
-| `desc2:fania all-stars／latin-soul-rock` | discogs |
-| `desc2:felt／the splendour of fear` | allmusic |
-| `desc2:fenton robinson／somebody loan me a dime` | allmusic |
-| `desc2:ffa coffi pawb／hei vidal!` | musicbrainz |
-| `desc2:fireworks／shatter the darkness` | 維基 |
-| `desc2:fleetwood mac／tusk` | allmusic |
-| `desc2:fletcher henderson／tidal wave` | 維基 |
-| `desc2:franco & le tpok jazz／20ème anniversaire 6 juin 1956 - 6 juin 1976, volume 2` | discogs |
-| `desc2:frankie knuckles presents satoshi tomiie／tears` | 維基 |
-| `desc2:frankie knuckles／a new reality` | allmusic |
-| `desc2:frankie knuckles／choice: a collection of classics` | allmusic |
-| `desc2:franklin bruno／a bedroom community` | discogs |
-| `desc2:fred jackson／hootin' 'n tootin'` | allmusic |
-| `desc2:freddie hubbard／ready for freddie` | allmusic |
-| `desc2:freeform／elastic speakers` | musicbrainz、discogs |
-| `desc2:fritz kreisler／the berlin hmv recordings, 1926-27` | 維基 |
-| `desc2:fritz wunderlich／salzburger liederabend` | discogs、維基 |
-| `desc2:fuchsia／fuchsia` | 維基 |
-| `desc2:gareth coker／ori and the blind forest (original soundtrack)` | 維基 |
-| `desc2:garmarna／guds spelemän` | allmusic |
-| `desc2:gary numan／the pleasure principle` | allmusic |
-| `desc2:gato barbieri／last tango in paris` | musicbrainz、discogs |
-| `desc2:gene russell／talk to my lady` | 維基 |
-| `desc2:geoff mann／chants would be a fine thing` | discogs |
-| `desc2:georges delerue／le mépris` | discogs |
-| `desc2:gil evans／gil evans & ten` | allmusic |
-| `desc2:gillian welch／revival` | allmusic |
-| `desc2:giovanni fusco／l'avventura` | musicbrainz、discogs |
-| `desc2:global communication／fabric 26` | 維基 |
-| `desc2:gordon lightfoot／sit down young stranger` | musicbrainz |
-| `desc2:graham central station／my radio sure sounds good to me` | allmusic |
-| `desc2:graham collier music／symphony of scorpions` | allmusic |
-| `desc2:graham collier／the day of the dead` | allmusic |
-| `desc2:grant kirkhope／banjo-kazooie` | 維基 |
-| `desc2:grenadine／goya` | discogs |
-| `desc2:grumiaux trio／beethoven: serenades op. 8 & op. 25` | discogs |
-| `desc2:hampton hawes／everybody likes hampton hawes` | allmusic |
-| `desc2:hampton hawes／four!` | allmusic |
-| `desc2:hank mobley／a caddy for daddy` | allmusic |
-| `desc2:hank williams／hank williams as "luke the drifter"` | mb、discogs |
-| `desc2:harold land／harold in the land of jazz` | allmusic |
-| `desc2:harold land／the peace-maker` | allmusic |
-| `desc2:harold vick／steppin' out!` | allmusic |
-| `desc2:harry beckett／joy unlimited` | 維基、discogs |
-| `desc2:harvey williams／california` | discogs |
-| `desc2:hat／tokyo - frankfurt - new york` | musicbrainz |
-| `desc2:hazard／north` | musicbrainz、discogs |
-| `desc2:haze／c'est la vie` | musicbrainz |
-| `desc2:helen merrill／helen merrill` | 維基 |
-| `desc2:helena hauff／discreet desires` | allmusic |
-| `desc2:helmet／meantime` | allmusic |
-| `desc2:hidehiko matsumoto／hot jazz` | 維基 |
-| `desc2:hideto sasaki, toshiyuki sekine quartet + 1／stop over` | discogs |
-| `desc2:hirofumi goto／geo rhythm` | discogs |
-| `desc2:hope of glory／second look` | discogs |
-| `desc2:horace parlan／headin' south` | allmusic |
-| `desc2:horace parlan／us three` | allmusic |
-| `desc2:horace silver／6 pieces of silver` | allmusic |
-| `desc2:horace tapscott with the pan-afrikan peoples arkestra／live at i.u.c.c.` | 維基 |
-| `desc2:howlin' wolf, muddy waters & bo diddley／the super super blues band` | allmusic |
-| `desc2:hughie izachaar／can't take the pressure` | discogs、mb |
-| `desc2:hüsker dü／new day rising` | allmusic |
-| `desc2:ike quebec／heavy soul` | allmusic |
-| `desc2:ike quebec／it might as well be spring` | allmusic |
-| `desc2:illés／illések és pofonok` | 維基 |
-| `desc2:imarhan／imarhan` | 維基 |
-| `desc2:imrat khan／ragas marva · sudda saranga` | discogs |
-| `desc2:incognito／tribes, vibes and scribes` | allmusic |
-| `desc2:indian summer／indian summer` | 維基 |
-| `desc2:innerzone orchestra／programmed` | allmusic |
-| `desc2:inoyama land／danzindan-pojidon` | discogs |
-| `desc2:inoyama land／music for myxomycetes` | 維基、discogs |
-| `desc2:irish coffee／irish coffee` | discogs |
-| `desc2:iron & wine／beast epic` | allmusic |
-| `desc2:ithaca／a game for all who know` | discogs |
-| `desc2:jackie mclean／a fickle sonance` | allmusic |
-| `desc2:jackie mclean／let freedom ring` | allmusic |
-| `desc2:jackie mclean／new soil` | allmusic |
-| `desc2:jack／pioneer soundtracks` | discogs |
-| `desc2:jacqueline du pré／dvořák: cello concerto / waldesruhe` | 維基、discogs |
-| `desc2:jacques thibaud & alfred cortot／franck: sonate / fauré: sonate no. 1 / debussy: sonate` | 維基 |
-| `desc2:jah free／breaking out` | mb |
-| `desc2:jaki byard／hi-fly` | allmusic |
-| `desc2:jam city／dream a garden` | 維基 |
-| `desc2:james brown／black caesar` | allmusic |
-| `desc2:james brown／hot` | allmusic |
-| `desc2:james brown／people` | allmusic |
-| `desc2:james brown／reality` | allmusic |
-| `desc2:james brown／sho is funky down here` | allmusic |
-| `desc2:james horner／titanic: music from the motion picture` | 維基 |
-| `desc2:james moody／last train from overbrook` | allmusic |
-| `desc2:jean adebambo／feelings` | 維基 |
-| `desc2:jeff mills／mix-up vol. 2: live mix at liquid room, tokyo` | allmusic |
-| `desc2:jerry butler／the ice man cometh` | allmusic |
-| `desc2:jesper kyd／assassin’s creed ii: the original game soundtrack` | 維基 |
-| `desc2:jim eanes／a statesman of bluegrass music` | discogs |
-| `desc2:jimmy arnold／strictly arnold` | musicbrainz |
-| `desc2:jimmy raney／a` | allmusic |
-| `desc2:jimmy riley／majority rule` | discogs |
-| `desc2:joan sutherland／operatic arias` | 維基 |
-| `desc2:joe bonamassa／the ballad of john henry` | allmusic |
-| `desc2:joe lee wilson & bond street／what would it be without you` | 維基 |
-| `desc2:joe williams／count basie swings, joe williams sings` | allmusic |
-| `desc2:joe／my name is joe` | allmusic |
-| `desc2:john coltrane／black pearls` | allmusic |
-| `desc2:john hammond／so many roads` | allmusic |
-| `desc2:john jenkins with kenny burrell／john jenkins with kenny burrell` | allmusic |
-| `desc2:john villemonte／people like you` | discogs |
-| `desc2:john zorn／naked city` | allmusic |
-| `desc2:johnny clarke／yard style` | 維基、discogs、musicbrainz |
-| `desc2:johnny griffin／the congregation` | allmusic |
-| `desc2:johnny hartman／songs from the heart` | allmusic |
-| `desc2:judas priest／painkiller` | allmusic |
-| `desc2:judy henske & jerry yester／farewell aldebaran` | discogs |
-| `desc2:junior murvin／bad man possee` | discogs |
-| `desc2:junior parker／like it is` | 維基 |
-| `desc2:justin hurwitz／la la land: original motion picture score` | 維基 |
-| `desc2:kagami／the broken sequencer` | discogs |
-| `desc2:karl richter／bach: johannes-passion` | 維基 |
-| `desc2:kathleen ferrier／mahler: das lied von der erde (1952)` | 維基 |
-| `desc2:kenny dorham／jazz contrasts` | allmusic |
-| `desc2:kenny dorham／matador` | allmusic |
-| `desc2:kenny drew／undercurrent` | allmusic |
-| `desc2:king general bucks up pon de bush chemists／money run tings` | mb、discogs |
-| `desc2:king oliver／the new york sessions (1929-1930)` | 維基 |
-| `desc2:kleeer／get ready` | allmusic |
-| `desc2:koerner, ray & glover／blues, rags & hollers + lots more blues, rags & hollers` | mb、release group |
-| `desc2:kraftwerk／radio-activity` | allmusic |
-| `desc2:lalo schifrin／black widow` | allmusic |
-| `desc2:lalo schifrin／enter the dragon` | allmusic |
-| `desc2:late!／pocketwatch` | 維基 |
-| `desc2:lee morgan／the gigolo` | allmusic |
-| `desc2:lee morgan／the procrastinator` | allmusic |
-| `desc2:lee morgan／the rumproller` | allmusic |
-| `desc2:lena raine／celeste: original soundtrack` | 維基 |
-| `desc2:leroy smart／impressions of leroy smart` | musicbrainz |
-| `desc2:lidj incorporated meets sound iration／dub liberation` | mb、discogs |
-| `desc2:light／turning` | discogs、musicbrainz |
-| `desc2:linda hill／lullaby for linda` | mb、discogs |
-| `desc2:longstone／surrounded by glass` | discogs、musicbrainz |
-| `desc2:lorelei／everyone must touch the stove` | discogs |
-| `desc2:lou donaldson／light-foot` | allmusic |
-| `desc2:lou rawls／all things in time` | allmusic |
-| `desc2:louis armstrong／louis armstrong plays w.c. handy` | allmusic |
-| `desc2:lucky thompson／lucky strikes` | allmusic |
-| `desc2:luther allison／love me mama` | allmusic |
-| `desc2:ma chérie for painting／una producion pop` | discogs、musicbrainz |
-| `desc2:maitreya kali／apache` | 維基 |
-| `desc2:mal waldron／impressions` | allmusic |
-| `desc2:mal waldron／mal/2` | allmusic |
-| `desc2:malicorne／le bestiaire` | 維基 |
-| `desc2:marcus king／el dorado` | allmusic |
-| `desc2:marden hill／cadaquéz` | discogs |
-| `desc2:marek grechuta／korowód` | 維基 |
-| `desc2:marian anderson／the lady from philadelphia` | 維基 |
-| `desc2:marine girls／beach party` | allmusic |
-| `desc2:marj snyder／let the son shine` | discogs |
-| `desc2:marlena shaw／who is this bitch, anyway?` | allmusic |
-| `desc2:marlon williams／make way for love` | allmusic |
-| `desc2:martin carthy／prince heathen` | musicbrainz |
-| `desc2:mary lou williams／zoning` | allmusic |
-| `desc2:masao nakajima quartet／kemo-sabe` | discogs |
-| `desc2:max brennan／alien to whom?` | discogs |
-| `desc2:max roach／deeds, not words` | allmusic |
-| `desc2:max roach／drums unlimited` | allmusic |
-| `desc2:max romeo／reconstruction` | 維基 |
-| `desc2:mccarthy／the enraged will inherit the earth` | 維基 |
-| `desc2:mccoy tyner／asante` | allmusic |
-| `desc2:mel tormé／mel tormé with the marty paich dek-tette` | allmusic |
-| `desc2:metabolist／hansten klork` | discogs |
-| `desc2:metrotone／the less you have, the more you are` | discogs |
-| `desc2:mfon／a day trip to chicago` | discogs、musicbrainz |
-| `desc2:michael hedges／aerial boundaries` | 維基 |
-| `desc2:michael nyman／drowning by numbers` | 維基 |
-| `desc2:michael nyman／the draughtsman's contract` | discogs、維基 |
-| `desc2:mick gordon／doom eternal (original game soundtrack)` | 維基 |
-| `desc2:mick gordon／doom: original game soundtrack` | 維基 |
-| `desc2:midas／beyond the clear air` | discogs |
-| `desc2:mighty baby／mighty baby` | 維基 |
-| `desc2:minxus／pabulum` | discogs |
-| `desc2:mission of burma／vs.` | allmusic |
-| `desc2:model 500／classics` | allmusic |
-| `desc2:montage／anthropologie` | discogs |
-| `desc2:moonshake／the sound your eyes can follow` | discogs |
-| `desc2:movietone／day and night` | musicbrainz |
-| `desc2:mr. bungle／disco volante` | allmusic |
-| `desc2:muddy waters／muddy waters sings big bill broonzy` | allmusic |
-| `desc2:multi-story／chimes` | discogs |
-| `desc2:multi-story／east west` | discogs |
-| `desc2:mushroom now!／traveller's light` | discogs |
-| `desc2:muslimgauze／buddhist on fire` | discogs |
-| `desc2:myrna summers／come to jesus now` | musicbrainz |
-| `desc2:mystic eyes／mysterious` | 維基 |
-| `desc2:naked city／torture garden` | allmusic |
-| `desc2:naná vasconcelos／saudades` | allmusic |
-| `desc2:napoleon brown & the southern sisters／yes, i know the man` | discogs |
-| `desc2:nathan milstein／paganiniana: violin recital` | discogs |
-| `desc2:necros／conquest for death` | 維基 |
-| `desc2:negasphere／castle in the air` | discogs |
-| `desc2:nerve net noise／this island earth` | discogs |
 | `desc2:neşet ertaş／gönül dağı` | mb |
 | `desc2:neşet ertaş／kendim ettim kendim buldum` | mb |
-| `desc2:nightmares on wax／carboot soul` | allmusic |
-| `desc2:nitty gritty dirt band／uncle charlie & his dog teddy` | 維基 |
-| `desc2:nothing painted blue／placeholders` | discogs |
-| `desc2:nujabes / fat jon／samurai champloo music record: departure` | mb |
-| `desc2:o.c.／word...life` | allmusic |
-| `desc2:okihide／a boy in picca season` | discogs |
-| `desc2:opus avantra／introspezione` | discogs |
-| `desc2:otis spann／otis spann's chicago blues` | allmusic |
-| `desc2:ozzy osbourne／blizzard of ozz` | allmusic |
-| `desc2:p. mobil／mobilizmo` | 維基 |
-| `desc2:pablo casals／dvořák: cello concerto / bruch: kol nidrei` | 維基 |
-| `desc2:pablo milanés／yo me quedo` | mb、release group |
-| `desc2:pacific 231／tropical songs gold` | musicbrainz |
-| `desc2:pageant／the pay for dreamer's sin` | discogs |
-| `desc2:palace brothers／days in the wake` | allmusic |
-| `desc2:palomatic／trill` | discogs、musicbrainz |
-| `desc2:pan afrikan peoples arkestra／flight 17` | 維基 |
-| `desc2:pan sonic／a` | allmusic |
-| `desc2:paul nagle／the soft room` | discogs |
-| `desc2:peaches & herb／2 hot!` | allmusic |
-| `desc2:peer raben／querelle - ein pakt mit dem teufel` | discogs |
-| `desc2:pete seeger／american favorite ballads, vol. 1` | discogs |
-| `desc2:petra／petra` | 維基 |
-| `desc2:phil woods／musique du bois` | allmusic |
-| `desc2:phineas newborn jr.／harlem blues` | allmusic |
-| `desc2:phineas newborn jr.／here is phineas` | allmusic |
-| `desc2:phineas newborn jr.／please send me someone to love` | allmusic |
-| `desc2:phuture／we are phuture` | 維基 |
-| `desc2:piano magic／low birth weight` | musicbrainz、discogs |
-| `desc2:pierre henry／le voyage` | 維基 |
-| `desc2:pierre henry／messe de liverpool` | 維基 |
-| `desc2:pixies／trompe le monde` | allmusic |
-| `desc2:plaid／double figure` | allmusic |
-| `desc2:plaid／rest proof clockwork` | allmusic |
-| `desc2:polvo／today's active lifestyles` | allmusic |
-| `desc2:prince far i／psalms for i` | 維基 |
-| `desc2:prolapse／backsaturday` | discogs |
-| `desc2:protos／one day a new horizon` | discogs |
-| `desc2:providence／and i'll recite an old myth from...` | discogs |
-| `desc2:quadra／sketch from a moment` | discogs |
-| `desc2:quartetto italiano／debussy: string quartet / ravel: string quartet` | 維基 |
-| `desc2:quartetto italiano／schubert: string quartet op. 161 d 887` | 維基、discogs |
-| `desc2:quasar／fire in the sky` | discogs |
-| `desc2:quincy jones／in the heat of the night` | allmusic |
-| `desc2:r. carlos nakai／canyon trilogy` | 維基 |
-| `desc2:rahsaan roland kirk／blacknuss` | allmusic |
-| `desc2:rahsaan roland kirk／bright moments` | allmusic |
-| `desc2:randy newman／good old boys` | allmusic |
-| `desc2:randy newman／sail away` | allmusic |
-| `desc2:randy weston／uhuru afrika` | allmusic |
-| `desc2:rashied ali & frank lowe／duo exchange` | 維基 |
-| `desc2:ravi shankar／portrait of genius` | musicbrainz |
-| `desc2:raw material／time is...` | discogs |
-| `desc2:ray bryant／alone with the blues` | allmusic |
-| `desc2:ray bryant／ray bryant trio` | allmusic |
-| `desc2:red garland／a garland of red` | allmusic |
-| `desc2:red garland／rojo` | allmusic |
-| `desc2:red summer／release` | musicbrainz、release-group、discogs |
-| `desc2:refrigerator／how you continue dreaming` | discogs |
-| `desc2:refused／songs to fan the flames of discontent` | 維基 |
-| `desc2:reload／a collection of short stories` | 維基 |
-| `desc2:rené & angela／street called desire` | allmusic |
-| `desc2:resurrection band／awaiting your reply` | 維基 |
-| `desc2:reverend gary davis／say no to the devil` | allmusic |
-| `desc2:revolutionary dub warriors／state of evolution` | discogs、mb |
-| `desc2:rheinallt h. rowlands／bukowski` | discogs |
-| `desc2:rhythim is rhythim／nude photo` | 維基 |
-| `desc2:rhythm & sound／rhythm & sound` | 維基 |
-| `desc2:rhythm & sound／see mi yah` | 維基 |
-| `desc2:richard "groove" holmes／soul message` | allmusic |
-| `desc2:richard o'brien／the rocky horror picture show` | 維基 |
-| `desc2:richie hawtin／de9: closer to the edit` | 維基 |
-| `desc2:richie hawtin／de9: decks, efx & 909` | allmusic |
-| `desc2:richie hawtin／de9: transitions` | 維基 |
-| `desc2:riow arai／circuit '72` | discogs |
-| `desc2:robert calvert／freq` | musicbrainz |
-| `desc2:robert calvert／hype` | discogs |
-| `desc2:robert finley／sharecropper's son` | allmusic |
-| `desc2:roberta flack／quiet fire` | allmusic |
-| `desc2:rotary connection／hey, love` | allmusic |
-| `desc2:roy haynes／we three` | allmusic |
-| `desc2:rudolph johnson／the second coming` | discogs |
-| `desc2:rufus featuring chaka khan／rufus featuring chaka khan` | musicbrainz |
-| `desc2:ry cooder／chicken skin music` | allmusic |
-| `desc2:saccharine trust／surviving you, always` | 維基、discogs |
-| `desc2:sadayasu fujii／prelude to a kiss` | discogs |
-| `desc2:sam dees／the show must go on` | 維基 |
-| `desc2:sam gopal／escalator` | 維基 |
-| `desc2:sam rivers／contours` | allmusic |
-| `desc2:sam rivers／streams` | allmusic |
-| `desc2:sarah jarosz／undercurrent` | allmusic |
-| `desc2:sarah vaughan／no count sarah` | allmusic |
-| `desc2:sarah vaughan／sarah vaughan at mister kelly's` | allmusic |
-| `desc2:scanner／mass observation` | musicbrainz、discogs |
-| `desc2:scream／this side up` | discogs |
-| `desc2:second hand／death may be your santa claus` | 維基 |
-| `desc2:sergiu celibidache／tchaikovsky: symphony no. 5` | musicbrainz、維基 |
-| `desc2:shankar／vision` | discogs、維基 |
-| `desc2:shankar／who's to know` | 維基、discogs |
-| `desc2:shudder to think／ten spot` | discogs |
-| `desc2:simon finn／pass the distance` | discogs |
-| `desc2:sippie wallace／women be wise` | 維基 |
-| `desc2:skara brae／skara brae` | 維基 |
-| `desc2:skyray／mind lagoons` | discogs、musicbrainz |
-| `desc2:slovenly／thinking of empire` | discogs |
-| `desc2:sly & the family stone／dance to the music` | allmusic |
-| `desc2:smokey robinson & the miracles／make it happen` | allmusic |
-| `desc2:socrates drank the conium／phos` | 維基 |
-| `desc2:sonny clark／my conception` | allmusic |
-| `desc2:sonny criss／portrait of sonny criss` | allmusic |
-| `desc2:sonny criss／this is criss!` | allmusic |
-| `desc2:soulside／hot bodi-gram` | 維基 |
-| `desc2:soundsmith／aquanaut` | discogs、musicbrainz |
-| `desc2:sphere／inside ourselves` | mb |
-| `desc2:spontaneous music ensemble／biosystem` | discogs |
-| `desc2:stan sulzmann／on loan with gratitude` | discogs |
-| `desc2:starless／silver wings` | discogs |
-| `desc2:steel mill／green eyed god` | discogs |
-| `desc2:steve beresford／the bath of surprise` | discogs |
-| `desc2:steve lacy & michael smith／sidelines` | 維基 |
-| `desc2:suicide／a way of life` | allmusic |
-| `desc2:susan tedeschi／hope and desire` | allmusic |
-| `desc2:suzukiski／kamakura` | discogs |
-| `desc2:suzukiski／waiting` | discogs |
-| `desc2:sven grünberg／hingus` | 維基 |
-| `desc2:swans／white light from the mouth of infinity` | allmusic |
-| `desc2:swa／your future if you have one` | discogs、維基 |
-| `desc2:sylvia tella／will you still want me` | 維基 |
-| `desc2:tabu ley rochereau／africa worldwide: 35th anniversary album` | discogs、維基 |
-| `desc2:tabu ley rochereau／muzina` | 維基 |
-| `desc2:tadd dameron／the magic touch` | allmusic |
-| `desc2:tagomago／flower instrumental` | musicbrainz |
-| `desc2:tagomago／prelude for afternoon` | discogs、musicbrainz |
-| `desc2:tamaru／夢の途中` | discogs、musicbrainz |
-| `desc2:teddy wilson／with billie in mind` | allmusic |
-| `desc2:telefon tel aviv／fahrenheit fair enough` | allmusic |
-| `desc2:temdendam suay／sounzer paranoun (sound tracks of some films)` | discogs |
-| `desc2:temple of bon matin／thunder feedback confusion` | discogs |
-| `desc2:terra rosa／honesty` | discogs |
-| `desc2:terry callier／i just can't help myself` | allmusic |
-| `desc2:th' faith healers／lido` | discogs |
-| `desc2:thad jones／the magnificent thad jones` | allmusic |
-| `desc2:the awakening／mirage` | discogs、mb、維基 |
-| `desc2:the b-52's／wild planet` | allmusic |
-| `desc2:the bats／daddy's highway` | allmusic |
-| `desc2:the bush chemists／light up your spliff` | mb、discogs |
-| `desc2:the bush chemists／strictly dubwise` | discogs、mb |
-| `desc2:the chemical brothers／exit planet dust` | allmusic |
-| `desc2:the chi-lites／a lonely man` | allmusic |
-| `desc2:the congos／congo ashanti` | 維基 |
-| `desc2:the deep freeze mice／teenage head in my refrigerator` | discogs |
-| `desc2:the dicks／these people` | 維基、allmusic |
-| `desc2:the disciples／infinite density of dub` | mb |
-| `desc2:the dust brothers／fight club: original motion picture score` | 維基 |
-| `desc2:the fabulous counts／jan jan` | discogs、維基 |
-| `desc2:the four tops／reach out` | allmusic |
-| `desc2:the freed unit／things are looking up` | discogs |
-| `desc2:the future sound of london／lifeforms` | allmusic |
-| `desc2:the hafler trio／negentropy` | musicbrainz、discogs |
-| `desc2:the impressions／check out your mind!` | allmusic |
-| `desc2:the intruders／save the children` | allmusic |
-| `desc2:the john betsch society／earth blossom` | discogs |
-| `desc2:the king of luxembourg／royal bastard` | discogs |
-| `desc2:the knife／the knife` | allmusic |
-| `desc2:the land of nod／translucent` | discogs |
-| `desc2:the legendary pink dots／brighter now` | discogs |
-| `desc2:the mighty diamonds／stand up to your judgment` | 維基 |
-| `desc2:the modern jazz quartet／lonely woman` | allmusic |
-| `desc2:the pooh sticks／orgasm` | discogs、allmusic |
-| `desc2:the raymond brake／piles of dirty winters` | discogs |
-| `desc2:the rootsman vs muslimgauze／city of djinn` | discogs、mb |
-| `desc2:the rootsman／in dub we trust` | discogs、mb |
-| `desc2:the running man／the running man` | discogs |
-| `desc2:the sensational williams brothers／mama prayed for me` | musicbrainz、discogs |
-| `desc2:the sweetest ache／jaguar` | discogs |
-| `desc2:the third eye foundation／ghost` | discogs |
-| `desc2:the upsetters／blackboard jungle dub` | 維基 |
-| `desc2:the verlaines／bird dog` | allmusic |
-| `desc2:the yummy fur／night club` | discogs |
-| `desc2:thelonious monk／brilliant corners` | allmusic |
-| `desc2:thelonious monk／it's monk's time` | allmusic |
-| `desc2:third quadrant／n = r* fp ne fl fi fc l` | discogs、musicbrainz |
-| `desc2:third quadrant／seeing yourself as you really are` | discogs、musicbrainz |
-| `desc2:third quadrant／voyage to pluto` | discogs |
-| `desc2:this heat／this heat` | allmusic |
-| `desc2:tim hardin／tim hardin 2` | allmusic |
-| `desc2:tinariwen／elwan` | allmusic |
-| `desc2:toby fox／deltarune chapter 1 ost` | 維基 |
-| `desc2:toby fox／undertale: soundtrack` | 維基 |
-| `desc2:tomatito／barrio negro` | 維基 |
-| `desc2:tommy flanagan／eclypso` | allmusic |
-| `desc2:tommy flanagan／jazz poet` | allmusic |
-| `desc2:tommy jarrell, kyle creed, audine lineberry and bobby patterson／june apple: old time fiddling & clawhammer banjo` | musicbrainz |
-| `desc2:tony scott／music for zen meditation` | 維基 |
-| `desc2:toshimaru nakamura／no-input mixing board` | 維基 |
-| `desc2:toumani diabaté／djelika` | discogs |
-| `desc2:tradition／captain ganja and the space patrol` | 維基 |
-| `desc2:trans am／futureworld` | allmusic |
-| `desc2:treatment／the world of treatment` | discogs |
-| `desc2:trembling blue stars／her handwriting` | discogs |
-| `desc2:tudor lodge／tudor lodge` | discogs |
-| `desc2:twisted science／blown` | discogs |
-| `desc2:tånk／upwards at 66°n` | discogs、musicbrainz |
-| `desc2:ura ura／.,. (ten-chong-ten)` | discogs、musicbrainz |
-| `desc2:urusei yatsura／we are urusei yatsura` | discogs |
-| `desc2:van cliburn／prokofiev: piano concerto no. 3 / macdowell: piano concerto no. 2` | 維基 |
-| `desc2:van cliburn／rachmaninoff: piano concerto no. 3` | discogs、維基 |
-| `desc2:various artists／forrest gump: the soundtrack` | 維基 |
-| `desc2:various artists／guardians of the galaxy: awesome mix, vol. 1: original motion picture soundtrack` | 維基 |
-| `desc2:various artists／midnight cowboy: original motion picture score` | 維基、discogs |
-| `desc2:various artists／o brother, where art thou? music from a film by joel coen & ethan coen` | 維基 |
-| `desc2:various artists／reservoir dogs: music from the original motion picture soundtrack` | 維基、discogs |
-| `desc2:various artists／the big lebowski: original motion picture soundtrack` | 維基 |
-| `desc2:various artists／wings of desire (der himmel über berlin)` | discogs、musicbrainz |
-| `desc2:various artists／woodstock: music from the original soundtrack and more` | 維基 |
-| `desc2:various artists／zabriskie point` | discogs |
-| `desc2:various artists／反中國併吞：anti china invasion live` | discogs、musicbrainz |
-| `desc2:various artists／藏金閣第壹卷：metal treasure attic 1` | discogs |
-| `desc2:various artists／赤聲搖滾第一集：scum` | musicbrainz |
-| `desc2:victor romero evans／première` | discogs、musicbrainz |
-| `desc2:village people／go west` | allmusic |
-| `desc2:volcano the bear／yak folks y'are` | discogs |
-| `desc2:von freeman／have no fear` | musicbrainz、discogs、維基 |
-| `desc2:voodoo queens／chocolate revenge` | discogs |
-| `desc2:wagon christ／throbbing pouch` | allmusic |
-| `desc2:walter bishop, jr.'s 4th cycle／keeper of my soul` | musicbrainz、discogs |
-| `desc2:web／ivory tower` | musicbrainz、discogs |
-| `desc2:wendy & bonnie／genesis` | 維基 |
-| `desc2:wilco／summerteeth` | allmusic |
-| `desc2:willi williams／natty with a cause` | mb |
-| `desc2:william bell／phases of reality` | musicbrainz |
-| `desc2:willie colón／asalto navideño` | allmusic |
-| `desc2:willie mitchell／solid soul` | musicbrainz |
-| `desc2:wimp factor 14／ankle deep` | discogs |
-| `desc2:winston edwards & blackbeard／at 10 downing street - dub conference` | 維基 |
-| `desc2:would-be-goods／the camera loves me` | 維基 |
-| `desc2:wynton kelly／kelly at midnite` | allmusic |
-| `desc2:wynton kelly／someday my prince will come` | allmusic |
-| `desc2:x-press 2／muzikizum` | allmusic |
-| `desc2:x／los angeles` | allmusic |
-| `desc2:y cyrff／llawenydd heb ddiwedd` | discogs |
-| `desc2:yabby you／beware dub` | 維基 |
-| `desc2:yagya／rigning` | 維基 |
-| `desc2:yeah yeah noh／cutting the heavenly lawn of greatness... last rites for the god of love` | 維基 |
-| `desc2:yellow swans／going places` | allmusic |
-| `desc2:yellowman／king yellowman` | 維基 |
-| `desc2:yes／fragile` | allmusic |
-| `desc2:yevgeny mravinsky／shostakovich: symphony no. 11 the year 1905` | discogs、維基 |
-| `desc2:yevgeny mravinsky／shostakovich: symphony no. 5` | 維基 |
-| `desc2:yoko ono／fly` | allmusic |
-| `desc2:yoshihiro sawasaki／perfumed garden` | discogs |
-| `desc2:yoshimi ueno bestrio／live in otsuchi` | discogs |
-| `desc2:yusef lateef／the blue yusef lateef` | allmusic |
-| `desc2:zbigniew preisner／la double vie de véronique` | 維基、discogs |
-| `desc2:zbigniew preisner／trois couleurs : rouge` | discogs |
-| `desc2:zdenek liska／marketa lazarová soundtrack` | discogs |
-| `desc2:zion train／great sporting moments in dub!` | mb、discogs |
-| `desc2:zion train／passage to indica` | mb、discogs |
-| `desc2:zomby／where were u in '92?` | allmusic |
-| `desc2:zoviet france／norsch` | discogs |
-| `desc2:αντώνης νταλγκάς／andonios dhiamandidhis 1928-1933` | 維基 |
-| `desc2:γιώργος μητσάκης／διπλοπενιές και αναμνήσεις` | discogs |
-| `desc2:александр галич／поэма о сталине` | 維基 |
-| `desc2:владимир высоцкий／баллады и песни` | 維基 |
-| `desc2:георгий гаранян／лабиринт: джазовые композиции` | 維基 |
-| `desc2:жанна бичевская／поет жанна бичевская` | 維基 |
-| `desc2:зоопарк／уездный город n` | 維基 |
-| `desc2:сергей курёхин／the ways of freedom` | 維基 |
-| `desc2:юлий ким／рыба-кит` | 維基 |
-| `desc2:ひがしのひとし／はじめてのシャンソン` | 維基 |
-| `desc2:ひがしのひとし／マクシム` | discogs |
-| `desc2:ほうむず／朝日に向かって` | discogs、musicbrainz |
-| `desc2:りんけんバンド／チェレン` | discogs |
-| `desc2:テルズ・シンフォニア／symphonia` | discogs |
-| `desc2:トメ北川／青春から` | discogs |
-| `desc2:下村陽子／kingdom hearts original soundtrack` | musicbrainz |
-| `desc2:下村陽子／live a live オリジナル・サウンドトラック` | musicbrainz |
-| `desc2:下村陽子／聖剣伝説 legend of mana オリジナル・サウンドトラック` | musicbrainz |
-| `desc2:中村達也／locus` | discogs |
-| `desc2:伊藤賢治 / 植松伸夫／romancing sa・ga original sound version` | musicbrainz、release-group |
-| `desc2:伍佰 & china blue／詩情搖滾` | musicbrainz |
-| `desc2:光田康典／chrono cross original soundtrack` | musicbrainz |
-| `desc2:光田康典／xenogears original soundtrack` | musicbrainz、維基 |
-| `desc2:光田康典／クロノ・トリガー オリジナル・サウンド・ヴァージョン` | musicbrainz、維基 |
-| `desc2:友部正人／にんじん` | discogs |
-| `desc2:友部正人／大阪へやって来た` | discogs |
-| `desc2:古代祐三／actraiser` | musicbrainz、維基 |
-| `desc2:古代祐三／bare knuckle` | musicbrainz |
-| `desc2:古川豪／羅針盤で星占いはできない` | discogs |
-| `desc2:吉川洋一郎／アクアクの夢` | 維基 |
-| `desc2:吉村弘／soundscape 1: surround` | 維基 |
-| `desc2:喜納昌吉&チャンプルーズ／earth spirit` | discogs、維基 |
-| `desc2:四分衛／世界` | musicbrainz |
-| `desc2:四分衛／愛曾經讓我們在一起` | musicbrainz |
-| `desc2:回聲樂團／處女空氣` | discogs |
-| `desc2:夢幻／sinfonia della luna` | discogs |
-| `desc2:大島ミチル／鋼の錬金術師 オリジナルサウンドトラック 1` | mb |
-| `desc2:大谷幸／新機動戦記ガンダムw operation 1` | mb |
-| `desc2:天野正道／ジャイアントロボ the animation -地球が静止する日- original sound track i` | 維基、mb |
-| `desc2:夾子電動大樂隊／不會說台語` | discogs |
-| `desc2:夾子電動大樂隊／地下人` | discogs |
-| `desc2:夾子電動大樂隊／情慾教室` | discogs |
-| `desc2:妮波寺／sorry` | discogs |
-| `desc2:安田南／some feeling` | 維基 |
-| `desc2:宮下富実夫／wave (sound of the universe)` | discogs |
-| `desc2:寺川秀保クァルテット／introducing hideyasu terakawa quartet live featuring hiroshi fujii` | discogs、musicbrainz、release-group |
-| `desc2:小栗均トリオ／みどりいろの渓流` | discogs |
-| `desc2:山根ミチル／悪魔城ドラキュラx〜月下の夜想曲〜 オリジナル・ゲーム・サントラ` | musicbrainz |
-| `desc2:岡部啓一／nier gestalt & replicant original soundtrack` | musicbrainz、維基 |
-| `desc2:岡部啓一／nier:automata original soundtrack` | musicbrainz |
-| `desc2:崎元仁 / 岩田匡治／final fantasy tactics original sound track` | 維基、musicbrainz |
-| `desc2:崎元仁／final fantasy xii original soundtrack` | musicbrainz |
-| `desc2:崎元仁／vagrantstory original soundtrack` | musicbrainz |
-| `desc2:川井憲次／innocence o.s.t.` | mb、維基 |
-| `desc2:川井憲次／patlabor 2 the movie` | mb |
-| `desc2:平沢進／berserk` | mb、維基 |
-| `desc2:平沢進／パプリカ オリジナルサウンドトラック` | 維基、mb |
-| `desc2:平沢進／千年女優` | mb、維基 |
-| `desc2:忍冬創／創ファーストアルバム 春秋坂` | discogs |
-| `desc2:新寶島康樂隊／第3輯` | discogs |
-| `desc2:新寶島康樂隊／第二輯` | discogs |
-| `desc2:早坂紗知 & stir up／free fight` | discogs |
-| `desc2:明田川荘之／アローン・イン・徳山` | discogs、musicbrainz |
-| `desc2:松前公高／space ranch` | discogs |
-| `desc2:柴田容子／とまり木` | 維基 |
-| `desc2:梶浦由記／fate/zero original soundtrack i` | mb |
-| `desc2:植松伸夫／final fantasy ix original soundtrack` | musicbrainz |
-| `desc2:植松伸夫／final fantasy vii: original soundtrack` | musicbrainz |
-| `desc2:植松伸夫／ファイナルファンタジー vi: オリジナル・サウンド・ヴァージョン` | musicbrainz |
-| `desc2:横山菁児／聖闘士星矢 音楽集` | mb |
-| `desc2:橙草／烏鴉` | musicbrainz |
-| `desc2:武満徹／film music by toru takemitsu - volume 1` | musicbrainz、discogs |
-| `desc2:永田一直／the world of electronic sound 4` | discogs |
-| `desc2:浜瀬元彦／♯notes of forestry` | 維基 |
-| `desc2:淺堤 shallow levée／沈默的鉅作` | musicbrainz |
-| `desc2:渡辺岳夫／機動戦士ガンダム オリジナル・サウンドトラック` | mb |
-| `desc2:滅火器／家和萬事興` | musicbrainz |
-| `desc2:潘麗麗／春雨` | discogs |
-| `desc2:潘麗麗／畫眉` | discogs |
-| `desc2:澤野弘之／mobile suit gundam unicorn original soundtrack` | mb、release-group、維基 |
-| `desc2:澤野弘之／tvアニメ「進撃の巨人」オリジナルサウンドトラック` | mb |
-| `desc2:瀬川洋／pierrot` | musicbrainz、release-group |
-| `desc2:熊寶貝樂團／年年` | musicbrainz |
-| `desc2:熊寶貝樂團／美麗混亂` | musicbrainz |
-| `desc2:玖壹壹／周法薷` | 維基 |
-| `desc2:玖壹壹／打鐵` | 維基 |
-| `desc2:玖壹壹／玖肆伍參` | 維基 |
-| `desc2:珂拉琪／deus ex machina` | 維基、musicbrainz |
-| `desc2:珂拉琪／memento·mori` | 維基 |
-| `desc2:生活向上委員会／生活向上委員会ニューヨーク支部` | discogs |
-| `desc2:田中公平／トップをねらえ! 音楽大図鑑` | mb |
-| `desc2:盛岡夕美子／余韻 (resonance)` | musicbrainz |
-| `desc2:目黒将司／「ペルソナ3」オリジナル・サウンドトラック` | musicbrainz |
-| `desc2:目黒将司／『ペルソナ5』オリジナル・サウンドトラック` | musicbrainz |
-| `desc2:神前暁／化物語 音楽全集 songs & soundtracks` | mb |
-| `desc2:羽田健太郎／the s.d.f. macross` | mb、維基 |
-| `desc2:羽田健太郎／「超時空要塞マクロス」愛・おぼえていますか` | mb、維基 |
-| `desc2:花生隊長／oh my god` | discogs |
-| `desc2:茄子蛋 eggplantegg／我們以後要結婚` | 維基 |
-| `desc2:茶木みやこ／レインボウ・チェイサー` | discogs |
-| `desc2:草莓救星／德古拉城市` | musicbrainz、discogs |
-| `desc2:菅谷昌弘／海の動物園` | 維基 |
-| `desc2:菅野邦彦／opa! brasil` | discogs |
-| `desc2:菊池俊輔／ドラゴンボール 音楽集` | mb、維基 |
-| `desc2:菊田裕樹／聖剣伝説2 original sound version` | musicbrainz、維基 |
-| `desc2:蕭福德／春秋大夢` | 維基 |
-| `desc2:薄荷葉／的士房間` | discogs |
-| `desc2:血肉果汁機 flesh juicer／深海童話` | musicbrainz |
-| `desc2:越智義朗／natural sonic` | 維基 |
-| `desc2:趙季平／farewell my concubine` | musicbrainz |
-| `desc2:農村武裝青年／予你的歌` | musicbrainz |
-| `desc2:近藤浩治／スーパーマリオ64 オリジナルサウンドトラック` | musicbrainz |
-| `desc2:近藤浩治／ゼルダの伝説 ムジュラの仮面 オリジナル・サウンドトラック` | musicbrainz |
-| `desc2:近藤浩治／ゼルダの伝説 時のオカリナ オリジナルサウンドトラック` | musicbrainz |
-| `desc2:零與聲音解放組織／哦！你宛若盛開的花朵的甜美屍體` | discogs |
-| `desc2:音羽信／わすれがたみ` | discogs |
-| `desc2:鷺巣詩郎／neon genesis evangelion ii` | 維基、mb |
-| `desc2:鷺巣詩郎／shiro sagisu music from evangelion:1.0 you are (not) alone` | mb |
-| `desc2:鷺巣詩郎／the end of evangelion` | mb |
-| `desc4:cicada／邊境消逝` | mb |
-| `desc4:外道／外道` | wikipedia |
-| `desc4:桑布伊／椏幹 yaangad` | mb |
-| `desc4:迷幻幼稚園／psychedelic kindergarten` | musicbrainz |
-| `desc4:野孩子／咒語` | musicbrainz |
-| `desc4:펄 시스터즈／님아` | 維基 |
+| `desc2:sleep walker／the voyage` | mb |

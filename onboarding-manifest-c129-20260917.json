@@ -33,14 +33,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 3,
-    "obscurity": 3,
-    "accessibility": 2,
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 3,
     "listeners": 7,
-    "source": "manual:regional-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "manual:regional-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：SF006開山緬甸選輯、常被推薦／L=7但2023有正式數位版→4／陌生音色拼貼；冷門度下限豁免：ADDENDUM 但書：確知有正式數位版"
    },
-   "rarity": "rare",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -102,14 +111,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 3,
-    "obscurity": 3,
+    "classic": 4,
+    "obscurity": 5,
     "accessibility": 2,
     "listeners": 54,
-    "source": "manual:regional-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "manual:regional-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：SF撣邦吉他流行名輯、常被推薦／L=54無串流→5／lo-fi車庫流行"
    },
-   "rarity": "rare",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -170,14 +188,24 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 4,
-    "obscurity": 3,
-    "accessibility": 2,
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 4,
     "listeners": 18,
-    "source": "manual:regional-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 5,
+     "accessibility": 4,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：SF緬甸系列第三輯、儀式卡帶錄音，該系列重要作／L=18無串流→5／神靈祭狂亂合奏回音",
+     "rarity": "legendary"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：Sublime Frequencies 系列卷，有數位版；經典度 4→3｜L=18"
    },
-   "rarity": "uncommon",
+   "rarity": "epic",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -233,14 +261,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 4,
-    "accessibility": 2,
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 4,
     "listeners": 8,
-    "source": "manual:regional-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:regional-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：SF電台拼貼，評價中等／L=8無串流→5／44段廣播片段概念拼貼"
    },
-   "rarity": "rare",
+   "rarity": "epic",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -299,12 +336,22 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 4,
-    "obscurity": 3,
-    "accessibility": 2,
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
     "listeners": 45,
-    "source": "manual:regional-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 5,
+     "accessibility": 3,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：SF緬甸78轉考古，評價好／L=45無串流→5／古典唱腔與陌生編制",
+     "rarity": "epic"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：Sublime Frequencies 78 轉考古選輯，原盤為商業 78；經典度 4→3｜L=45"
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -363,14 +410,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 3,
-    "obscurity": 4,
-    "accessibility": 2,
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 3,
     "listeners": null,
-    "source": "manual:regional-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:regional-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Smithsonian Folkways緬甸豎琴大師錄音，場景重要／L缺、國際廠串流→3／古典長篇"
    },
-   "rarity": "rare",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -430,13 +486,22 @@
    },
    "ratings": {
     "classic": 2,
-    "obscurity": 3,
-    "accessibility": 4,
+    "obscurity": 4,
+    "accessibility": 2,
     "listeners": 2,
-    "source": "manual:regional-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 3,
+     "accessibility": 4,
+     "source": "manual:regional-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：首張且維基明記未成功／L=2有串流→4／西洋搖滾翻唱"
    },
-   "rarity": "uncommon",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -455,7 +520,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/3e/af/b8/3eafb84f-0bce-8e98-7e20-1d2a00b771a9/mzaf_3632453751229967580.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ea/33/28/ea33280f-c186-b527-a280-bfa57a2be1c8/mzaf_13397239151760624615.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -496,14 +561,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 3,
-    "accessibility": 4,
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 2,
     "listeners": 8,
-    "source": "manual:regional-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 3,
+     "accessibility": 4,
+     "source": "manual:regional-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Lay Phyu個人中期作／L=8無串流→5／主流硬搖滾，原4偏高"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -559,14 +633,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 3,
-    "accessibility": 4,
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 2,
     "listeners": 3,
-    "source": "manual:regional-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 3,
+     "accessibility": 4,
+     "source": "manual:regional-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Lay Phyu個人中期作／L=3無串流→5／流行搖滾，原4偏高"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -622,14 +705,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 3,
-    "accessibility": 4,
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
     "listeners": 0,
-    "source": "manual:regional-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 3,
+     "accessibility": 4,
+     "source": "manual:regional-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：緬甸搖滾天團2001作品，非公認首選／L=0有串流→4／體育場流行搖滾，原4方向誤"
    },
-   "rarity": "uncommon",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -648,7 +740,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e3/72/3a/e3723aae-c409-aef2-ff33-cf181af7e8e3/mzaf_9572620219941793014.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f2/2a/47/f22a471f-0588-046c-d9f3-4157f0643c72/mzaf_17150646381740354404.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -689,14 +781,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 1,
-    "obscurity": 3,
-    "accessibility": 5,
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 1,
     "listeners": 2,
-    "source": "manual:regional-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 1,
+     "obscurity": 3,
+     "accessibility": 5,
+     "source": "manual:regional-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Htoo Ein Thin第二張、英維基點名，開創緬甸流行搖滾代表作／L=2→4／流行搖滾，原5方向誤"
    },
-   "rarity": "uncommon",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -757,14 +858,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 1,
-    "obscurity": 3,
-    "accessibility": 4,
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 1,
     "listeners": 0,
-    "source": "manual:regional-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 1,
+     "obscurity": 3,
+     "accessibility": 4,
+     "source": "manual:regional-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Sai Htee Saing與Wild Ones最早有紀錄專輯，歷史地位／L=0有串流→4／流行歌，原4方向誤"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -825,13 +935,22 @@
    },
    "ratings": {
     "classic": 2,
-    "obscurity": 3,
-    "accessibility": 2,
+    "obscurity": 4,
+    "accessibility": 1,
     "listeners": 0,
-    "source": "manual:regional-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "manual:regional-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：現場精選式演出，非首選／L=0有串流→4／緬甸流行"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -891,12 +1010,21 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 1,
-    "obscurity": 3,
+    "classic": 3,
+    "obscurity": 5,
     "accessibility": 1,
     "listeners": 0,
-    "source": "manual:regional-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 1,
+     "obscurity": 3,
+     "accessibility": 1,
+     "source": "manual:regional-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "common"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Hlwan Moe出道作、生涯起點有歷史意義／L=0無串流→5／流行歌"
    },
    "rarity": "common",
    "apexAssessment": {
@@ -954,12 +1082,21 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 3,
-    "accessibility": 2,
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
     "listeners": 207,
-    "source": "manual:regional-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "manual:regional-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：緬甸龐克名團作品，場景內有地位／L=207→4／粗糲龐克"
    },
    "rarity": "rare",
    "apexAssessment": {
@@ -980,7 +1117,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/1a/eb/a7/1aeba778-6ae3-eef1-b6b3-22076f5af33a/mzaf_5167583550310100728.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/ef/ef/6e/efef6e08-3427-a220-13f3-fc9030a556cc/mzaf_17069074190490437401.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -1022,11 +1159,20 @@
    },
    "ratings": {
     "classic": 4,
-    "obscurity": 3,
+    "obscurity": 4,
     "accessibility": 3,
     "listeners": 2,
-    "source": "manual:regional-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 3,
+     "accessibility": 3,
+     "source": "manual:regional-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Ocora寮南lam經典錄音，45分鐘全版／L=2有串流→4／單一長篇唱與khene"
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -1092,19 +1238,40 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 4,
-    "obscurity": 3,
-    "accessibility": 2,
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
     "listeners": 3,
-    "source": "manual:regional-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "manual:regional-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Brunet 1972民族誌LP，無正典依據／L=3無串流→5／khene獨奏即興"
    },
    "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "reason": "頂點重整（apex-rebalance-20261103，2026-11-03）：原流亡降為一般卡。同級內一藝人一張：Various Artists pearl 留《Bouquet of Steel》。三張中稽核強度最高（pearl2）；Sheffield 1980 地下合輯。註：VA 不是單一藝人，套用時可考慮豁免",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": true,
+     "tier": "pearl",
+     "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。L3有效，Galloway 民族田野LP，壓量無據、非收藏聖杯；5星",
+     "evidenceUrls": [
+      "https://www.last.fm/music/Various%20Artists/Laos%20-%20L'art%20Du%20Kh%C3%A8ne",
+      "https://musicbrainz.org/release-group/380493d0-45bc-4284-a710-fb71f2ba9f2f"
+     ],
+     "source": "manual:audit-20261102"
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:apex-rebalance-20261103"
    },
    "description": {
     "text": "三位演奏者三種尺寸的笙：長管低音、中管中音、短管高音。1972 年由法國的 Galloway 壓成黑膠，收八軌，屬該廠牌世界音樂系列的第 26 號；錄音由音樂學者 Jacques Brunet 在同一年完成。A 面四軌是長管與中管兩位的曲目，其中一軌二重奏、一軌即興；B 面四軌全交給吹短管高音的那位。最長一軌八分二十二秒，最短的正是那段二重奏，只有兩分十三秒。資料庫端以 Laos 為題的盤裡，這張建檔年代最早。",
@@ -1158,10 +1325,19 @@
    "ratings": {
     "classic": 4,
     "obscurity": 3,
-    "accessibility": 2,
+    "accessibility": 3,
     "listeners": 2385,
-    "source": "manual:regional-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "manual:regional-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Nimbus寮南lam代表錄音／L=2385、國際廠串流→3／khene長篇唱奏"
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -1182,7 +1358,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/3e/23/be/3e23be05-8044-0429-c8ed-34a26a259bfb/mzaf_1886035685642139373.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/78/3c/40/783c4012-0c2f-f6d6-fa0f-396b9ccc7e7a/mzaf_15277385452051455115.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -1224,11 +1400,20 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 3,
-    "accessibility": 2,
+    "obscurity": 4,
+    "accessibility": 3,
     "listeners": 990,
-    "source": "manual:regional-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "manual:regional-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Amiata世界音樂盤，評價中等／L=990有串流→4／khene與lam傳統曲"
    },
    "rarity": "rare",
    "apexAssessment": {
@@ -1249,7 +1434,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/cd/78/f2/cd78f2a6-fc96-1fc4-780a-4c69c62e833d/mzaf_17860429003677247006.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/8d/d7/2c/8dd72c75-6bc6-8829-17de-81313ee8121f/mzaf_718051174112127208.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -1290,14 +1475,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 3,
-    "obscurity": 3,
-    "accessibility": 2,
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 3,
     "listeners": 301,
-    "source": "manual:regional-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "manual:regional-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Arhoolie苗族音樂錄音，藝人唯一作品＝代表作／L=301→4／qeej長篇傳統唱奏"
    },
-   "rarity": "rare",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1315,7 +1509,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview113/v4/79/09/04/790904b2-884e-0f0d-3730-1922c070d70e/mzaf_299649028884256883.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview113/v4/7c/fd/2b/7cfd2b0d-252d-e118-69c8-567fc91133f3/mzaf_16637402579086459876.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -1361,13 +1555,22 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 4,
+    "obscurity": 5,
     "accessibility": 4,
     "listeners": 47,
-    "source": "manual:regional-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "manual:regional-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Sublime Frequencies田野錄音，場景中等／L=47無串流→5／粗糙田野、鑼與少數民族唱"
    },
-   "rarity": "uncommon",
+   "rarity": "epic",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1428,12 +1631,21 @@
    "ratings": {
     "classic": 4,
     "obscurity": 4,
-    "accessibility": 4,
+    "accessibility": 3,
     "listeners": 122,
-    "source": "manual:regional-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "manual:regional-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "epic"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：AIMP第81號宮廷樂、YTM評介，場景重要錄音／L=122有串流→4／宮廷合奏長篇，非噪音"
    },
-   "rarity": "epic",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1452,7 +1664,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/f5/d2/fa/f5d2fa88-25c6-154a-5254-8e3049f17242/mzaf_11994992327294445198.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/ae/e0/d1/aee0d1dc-becb-e1ae-8e95-702ddc725a94/mzaf_9812254177664958386.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -1493,13 +1705,22 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 3,
-    "accessibility": 2,
+    "obscurity": 5,
+    "accessibility": 1,
     "listeners": 1,
-    "source": "manual:regional-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "manual:regional-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Titiek Puspa 60年代末長篇，非代表作／L=1無串流→5／短小流行歌"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1553,12 +1774,21 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 3,
+    "classic": 4,
+    "obscurity": 4,
     "accessibility": 2,
     "listeners": 45,
-    "source": "manual:regional-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "manual:regional-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：印尼放克搖滾名團代表盤，Granadilla授權數位再發（有數位版）→4／放克搖滾含長篇；冷門度下限豁免：ADDENDUM 但書：確知有正式數位版"
    },
    "rarity": "rare",
    "apexAssessment": {
@@ -1615,19 +1845,40 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 3,
+    "classic": 3,
+    "obscurity": 5,
     "accessibility": 2,
     "listeners": 34,
-    "source": "manual:regional-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "manual:regional-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：AKA 70年代三部曲末張，次於Reflection／L=34無串流→5／放克硬搖滾"
    },
    "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "reason": "頂點重整（apex-rebalance-20261103，2026-11-03）：原流亡降為一般卡。同級內一藝人一張：AKA pearl 留《Do What You Like》。經典度 4（另一張 3）",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": true,
+     "tier": "pearl",
+     "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。地方小廠，壓量無據，2015 CD再發；不到傳說級稀有",
+     "evidenceUrls": [
+      "https://www.last.fm/music/AKA/Crazy%20Joe",
+      "https://musicbrainz.org/release-group/7fc685d9-6364-442e-a33e-d74ab8aa859e"
+     ],
+     "source": "manual:audit-20261102"
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:apex-rebalance-20261103"
    },
    "description": {
     "text": "1973 年雅加達的演出裡，主唱被吊起來、再放進一具棺材。在那之前他先跳上牆、再爬上屋瓦；特技配在哪一首歌上，來源只有一處說法。碟本身是 1972 年印尼 Indra 以 AKL-047 壓的 12 吋黑膠，編號緊接在前一張的 AKL - 029 之後，也是他們 1970 年代三張連續出版的最後一張。九軌裡兩個英文曲名、七個印尼文曲名，〈Crazy Joe〉開場、〈Bidadari〉收尾。",
@@ -1677,12 +1928,21 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 3,
-    "accessibility": 2,
+    "classic": 4,
+    "obscurity": 5,
+    "accessibility": 1,
     "listeners": 14,
-    "source": "manual:regional-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "manual:regional-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：The Mercy's首張含〈Kisah Seorang Pramuria〉，代表作／L=14無串流→5／抒情流行"
    },
    "rarity": "rare",
    "apexAssessment": {
@@ -1742,14 +2002,23 @@
     "note": "試聽探測釘定的 collectionId 1777356356（th）：Koes Plus — Volume 8"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 3,
-    "accessibility": 2,
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 1,
     "listeners": 85,
-    "source": "manual:regional-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "manual:regional-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：含Kolam Susu、Diana、Nusantara等名曲，代表作／L=85→4／流行搖滾"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1769,7 +2038,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/3e/4e/b7/3e4eb70a-e393-3dcb-c764-f138e364d59d/mzaf_8771265950768235784.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f8/2a/d6/f82ad6a6-1f05-5811-a567-36eac8940b3a/mzaf_10775826955842010130.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -1811,14 +2080,23 @@
     "note": "試聽探測釘定的 collectionId 1777379905（id）：Koes Plus — Volume 10"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 3,
-    "accessibility": 2,
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 1,
     "listeners": 18,
-    "source": "manual:regional-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "manual:regional-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Koes Plus中期系列穩定作，非名曲集中處／L=18有串流→4／甜美流行"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1837,7 +2115,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/89/c2/f9/89c2f9c4-b9ae-5006-c273-7800bf409492/mzaf_983832440774894911.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/32/d1/d3/32d1d3ec-3c13-850d-8bc6-115bf33b2e25/mzaf_14518186086436464746.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -1878,14 +2156,23 @@
     "discogsReleaseId": "11860310"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 3,
-    "accessibility": 2,
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 1,
     "listeners": 8,
-    "source": "manual:regional-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "manual:regional-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：巴布亞名團Black Brothers作品，非首選／L=8無串流→5／70年代流行歌"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1941,12 +2228,21 @@
    "ratings": {
     "classic": 4,
     "obscurity": 3,
-    "accessibility": 2,
+    "accessibility": 1,
     "listeners": 3782,
-    "source": "manual:regional-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "manual:regional-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Chrisye 1980年經典期作品，含Lagu Putih等名曲／L=3782→至少3／柔和流行"
    },
-   "rarity": "uncommon",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2005,14 +2301,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 3,
+    "classic": 3,
+    "obscurity": 4,
     "accessibility": 2,
     "listeners": 690,
-    "source": "manual:regional-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "manual:regional-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Chaseiro爵士流行團作品，次於首張／L=690→4／柔和爵士流行"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2031,7 +2336,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/0f/6d/e7/0f6de7da-9454-12b5-7869-c477f785c914/mzaf_2196133466861553615.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6a/fc/46/6afc460d-5afc-eaf1-550f-94ce02905ffa/mzaf_15390747458457958260.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -2071,12 +2376,21 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 3,
+    "classic": 4,
     "obscurity": 3,
     "accessibility": 2,
     "listeners": 5809,
-    "source": "manual:regional-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "manual:regional-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：含〈Galang Rambu Anarki〉，Iwan Fals早期代表作／印尼一線、圈外少知→3／民謠搖滾"
    },
    "rarity": "rare",
    "apexAssessment": {
@@ -2098,7 +2412,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/cc/91/f0/cc91f06f-4c5e-5d87-2f0f-d207e3a0fc9a/mzaf_10514730460520420734.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/fa/56/54/fa5654ff-0de3-b254-e25d-ff1820108ae1/mzaf_4298803835101623728.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -2139,12 +2453,21 @@
     "note": "試聽探測釘定的 collectionId 1550371580（th）：Slank — Kampungan"
    },
    "ratings": {
-    "classic": 3,
+    "classic": 4,
     "obscurity": 3,
     "accessibility": 2,
     "listeners": 10066,
-    "source": "manual:regional-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "manual:regional-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Slank第二張，含〈Terlalu Manis〉，代表作／印尼一線、圈外少知→3／藍調搖滾"
    },
    "rarity": "rare",
    "apexAssessment": {
@@ -2166,7 +2489,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/83/a4/7e/83a47e28-f075-17fc-4a01-2dcd997e454d/mzaf_14247209313063681461.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/5f/d8/b7/5fd8b761-e4a6-fe49-c835-a68015cb684d/mzaf_15116107485966153475.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -2206,14 +2529,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 3,
-    "accessibility": 4,
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 1,
     "listeners": 1,
-    "source": "manual:regional-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 3,
+     "accessibility": 4,
+     "source": "manual:regional-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Pumpuang早期盤，非代表作／L=1但2017正式數位版→4／luk thung流行，原4方向誤；冷門度下限豁免：ADDENDUM 但書：確知有正式數位版"
    },
-   "rarity": "uncommon",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2268,12 +2600,21 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 3,
+    "classic": 4,
+    "obscurity": 4,
     "accessibility": 2,
     "listeners": 15,
-    "source": "manual:regional-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "manual:regional-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：EM Records再發自製molam名盤／L=15但EM Bandcamp數位版→4／molam律動；冷門度下限豁免：ADDENDUM 但書：確知有正式數位版"
    },
    "rarity": "rare",
    "apexAssessment": {
@@ -2331,12 +2672,21 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 3,
+    "classic": 4,
+    "obscurity": 4,
     "accessibility": 2,
     "listeners": 120,
-    "source": "manual:regional-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "manual:regional-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Caravan第二張、生活之歌經典期代表作／L=120有串流→4／融rong ngeng提琴民謠搖滾"
    },
    "rarity": "rare",
    "apexAssessment": {
@@ -2398,12 +2748,21 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 3,
-    "obscurity": 3,
+    "classic": 4,
+    "obscurity": 4,
     "accessibility": 2,
     "listeners": 26,
-    "source": "manual:regional-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "manual:regional-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Caravan復出作，含〈เดือนเพ็ญ〉首錄與10分鐘團名曲，重要作／L=26→4／民謠搖滾"
    },
    "rarity": "rare",
    "apexAssessment": {
@@ -2424,7 +2783,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/5c/fc/17/5cfc17e0-07e1-915e-f3c4-93efe6ea480f/mzaf_2864392812394437427.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/0a/4f/f2/0a4ff240-5b1f-695d-a884-d7ab2f57e43e/mzaf_6924802434505577414.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -2465,13 +2824,22 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 3,
+    "obscurity": 4,
     "accessibility": 2,
     "listeners": 67,
-    "source": "manual:regional-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "manual:regional-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Caravan 1983復出第二張，非首選／L=67有串流→4／生活之歌民謠搖滾"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2490,7 +2858,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/29/3a/9b/293a9b8c-0620-02a0-5d6f-adced46830cd/mzaf_9351149952610726308.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f3/13/76/f3137678-ae41-3194-0797-312b82d8d783/mzaf_8523959962653459930.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -2530,12 +2898,22 @@
     "discogsReleaseId": "6603451"
    },
    "ratings": {
-    "classic": 2,
+    "classic": 4,
     "obscurity": 3,
     "accessibility": 2,
     "listeners": 10,
-    "source": "manual:regional-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：銷約40萬套、含〈ตายหยังเขียด〉，個人代表作／L=10無串流→5／雷鬼伊善民謠",
+     "rarity": "uncommon"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：GMM Grammy 大廠黑膠，非私壓；非拉丁字母掛名，listeners 疑拆名錯配，不套下限，照錨點給 3｜L=10"
    },
    "rarity": "rare",
    "apexAssessment": {
@@ -2597,13 +2975,22 @@
    },
    "ratings": {
     "classic": 4,
-    "obscurity": 3,
+    "obscurity": 4,
     "accessibility": 2,
     "listeners": 198,
-    "source": "manual:regional-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "manual:regional-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Subliminal泰國60年代go-go選輯重要作／L=198有串流→4／車庫流行"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2624,7 +3011,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/7f/f7/58/7ff758a1-6a2e-5831-fe1b-08c27ec03520/mzaf_4200431775773905827.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/e0/cb/8a/e0cb8ab8-5d98-8c06-95cb-0db13fcab0ca/mzaf_3465057902484013888.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -2670,13 +3057,22 @@
    },
    "ratings": {
     "classic": 4,
-    "obscurity": 3,
-    "accessibility": 4,
+    "obscurity": 5,
+    "accessibility": 2,
     "listeners": 428,
-    "source": "manual:regional-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 3,
+     "accessibility": 4,
+     "source": "manual:regional-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "epic"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：SF泰式Shadows吉他器樂名輯／L=428無串流→5／衝浪式器樂，原4方向誤"
    },
-   "rarity": "epic",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2745,7 +3141,7 @@
     "source": "manual:regional-rubric",
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2813,11 +3209,20 @@
    },
    "ratings": {
     "classic": 4,
-    "obscurity": 3,
+    "obscurity": 5,
     "accessibility": 2,
     "listeners": 32,
-    "source": "manual:regional-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "manual:regional-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：ZudRangMa泰放克根源選輯，場景重要／L=32無串流→5／律動luk thung"
    },
    "rarity": "uncommon",
    "apexAssessment": {

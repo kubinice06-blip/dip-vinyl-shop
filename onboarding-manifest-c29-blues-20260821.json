@@ -33,14 +33,23 @@
       "apexAssessment": {
         "eligible": true,
         "tier": "hall",
-        "reason": "常被稱為史上第一張藍調現場專輯，滾石五百大專輯第 348 名，對 1960 年代英美藍調復興影響有明文記載；池內同級的 B.B. King《Live at the Regal》目前為普卡，是否採納請店主定奪。",
+        "reason": "店主 2026-11-03 定案殿堂擴充（hall-expansion-20261103）：升為殿堂。",
         "evidenceUrls": [
-          "https://en.wikipedia.org/wiki/At_Newport_1960",
+          "https://www.last.fm/music/Muddy%20Waters/At%20Newport%201960",
           "https://musicbrainz.org/release-group/2c1288fa-19c4-34d3-97a7-ff2fe9c96b57"
-        ]
+        ],
+        "previous": {
+          "eligible": false,
+          "tier": null,
+          "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。RS500、1001 有收，但屬藍調類型正典，圈外以單曲知名，5 星",
+          "evidenceUrls": [],
+          "source": "manual:audit-20261102"
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:hall-expansion-20261103"
       },
       "description": {
-        "text": "1960 年 7 月 3 日 Newport 爵士音樂節的現場實況，常被稱為史上第一張藍調現場專輯。Muddy Waters 率領含 Otis Spann 與 James Cotton 的樂隊，從〈I Got My Brand on You〉一路唱到全場沸騰的〈Got My Mojo Working〉，還應觀眾要求再唱一遍；電氣化的 Chicago blues 第一次以完整專輯的形態被記錄在舞台上，對 1960 年代英美兩地的年輕藍調樂手影響深遠，滾石五百大專輯將其列於第 348 名。",
+        "text": "《At Newport 1960》是 Muddy Waters 1960 年 7 月在 Newport Jazz Festival 的現場錄音，是最早的現場藍調專輯之一，對英美新興的白人藍調場景影響很大，Rolling Stones、Led Zeppelin 都受這套電氣聲響影響。前一天音樂節觀眾失控，樂隊差點回家，主辦人 George Wein 說服他們留下。編制是芝加哥電藍調：兩把電吉他、James Cotton 的口琴、Otis Spann 的鋼琴，加上貝斯與鼓，一路唱到〈Got My Mojo Working〉，演出輕快、可舞。",
         "sourceUrls": [
           "https://en.wikipedia.org/wiki/At_Newport_1960",
           "https://musicbrainz.org/release-group/2c1288fa-19c4-34d3-97a7-ff2fe9c96b57"
@@ -48,7 +57,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/96/f1/12/96f11232-77ed-79c4-5ebe-740cd9969c34/mzaf_8236177675422304178.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b2/d0/a0/b2d0a045-e4fd-092f-8bc4-93f320400182/mzaf_9965267454603907102.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T04:12:00Z",
@@ -97,13 +106,21 @@
       },
       "rarity": "uncommon",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "俗稱 Beano 專輯，開創過載吉他音色的 blues-rock 原型，滾石五百大專輯第 195 名、All Time Top 1000 Albums 第 391 名；是否採納請店主定奪。",
-        "evidenceUrls": [
-          "https://en.wikipedia.org/wiki/Blues_Breakers_with_Eric_Clapton",
-          "https://musicbrainz.org/release-group/2b031a2e-9d80-3240-b065-9445fb37f00b"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。RS500、1001 有收，但圈外少知，藍調搖滾類型里程碑屬 5",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "俗稱 Beano 專輯，開創過載吉他音色的 blues-rock 原型，滾石五百大專輯第 195 名、All Time Top 1000 Albums 第 391 名；是否採納請店主定奪。",
+          "evidenceUrls": [
+            "https://en.wikipedia.org/wiki/Blues_Breakers_with_Eric_Clapton",
+            "https://musicbrainz.org/release-group/2b031a2e-9d80-3240-b065-9445fb37f00b"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "1966 年由 Mike Vernon 製作、Decca 發行，樂迷暱稱 Beano 專輯——封面上 Eric Clapton 低頭讀的正是那本漫畫。剛離開 The Yardbirds 的 Clapton 把 Les Paul 接上開到過載的 Marshall 音箱，錄下當時罕見的厚重吉他音色，倫敦街頭「Clapton is God」的塗鴉正出自這段時期。專輯把 Chicago blues 曲目翻成英式電吉他語彙，滾石五百大專輯列於第 195 名。",
@@ -114,7 +131,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/19/16/00/191600fc-bb33-81e2-f25e-8d845e2b54aa/mzaf_5868399048626856306.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/96/0b/c0/960bc0d7-d9b4-4375-533c-af371560595e/mzaf_14943536937353908092.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T04:12:00Z",
@@ -131,8 +148,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": false,
-        "apexPool": true
+        "seedCards": true,
+        "apexPool": false
       }
     },
     {
@@ -177,7 +194,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/f7/c5/c8/f7c5c88d-4152-73aa-23a3-c2428b2798fd/mzaf_17759961684790973106.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f8/fc/50/f8fc50e4-3133-7fcc-c133-ca19dcc3f8e0/mzaf_8891193643074932166.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T04:12:00Z",
@@ -219,11 +236,20 @@
       "ratings": {
         "classic": 5,
         "obscurity": 3,
-        "accessibility": 4,
+        "accessibility": 3,
         "listeners": null,
-        "source": "manual:blues-anchors",
-        "checkedAt": "2026-08-21T04:12:00Z",
-        "note": "遠端工作階段的網路政策擋下 worker /album-rating 與 last.fm（CONNECT 403），無法取得機器基準；三軸依 ALBUM_ONBOARDING 精神以樂史地位／撞見機率／入耳難度人工錨點評定，listeners 一律記 null。店主回本機後可重跑 /album-rating 覆核並補 listeners。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：藍調復興重要錄音；原聲 Delta blues 粗礪但非不協和，硬蕊4→3",
+        "previous": {
+          "classic": 5,
+          "obscurity": 3,
+          "accessibility": 4,
+          "source": "manual:blues-anchors",
+          "checkedAt": "2026-08-21T04:12:00Z",
+          "note": "遠端工作階段的網路政策擋下 worker /album-rating 與 last.fm（CONNECT 403），無法取得機器基準；三軸依 ALBUM_ONBOARDING 精神以樂史地位／撞見機率／入耳難度人工錨點評定，listeners 一律記 null。店主回本機後可重跑 /album-rating 覆核並補 listeners。",
+          "rarity": "legendary"
+        }
       },
       "rarity": "epic",
       "apexAssessment": {
@@ -241,7 +267,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/10/c0/a9/10c0a999-eca7-a8d0-3b46-f49323ed2cf7/mzaf_4345128489495118616.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d8/15/8a/d8158a0b-4e13-cce0-bedb-2d914d237e6f/mzaf_13734011198541922313.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T04:12:00Z",
@@ -288,15 +314,23 @@
         "checkedAt": "2026-08-21T04:12:00Z",
         "note": "遠端工作階段的網路政策擋下 worker /album-rating 與 last.fm（CONNECT 403），無法取得機器基準；三軸依 ALBUM_ONBOARDING 精神以樂史地位／撞見機率／入耳難度人工錨點評定，listeners 一律記 null。店主回本機後可重跑 /album-rating 覆核並補 listeners。"
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "soul-blues 範式的奠基專輯，滾石五百大專輯第 217 名，兩支單曲拿下 Billboard R&B 榜冠亞軍；是否採納請店主定奪。",
-        "evidenceUrls": [
-          "https://en.wikipedia.org/wiki/Two_Steps_from_the_Blues",
-          "https://musicbrainz.org/release-group/959bffeb-cdb8-3559-a0e7-2c88d278e7bf"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。1001 收錄，藍調靈魂類型經典屬 5",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "soul-blues 範式的奠基專輯，滾石五百大專輯第 217 名，兩支單曲拿下 Billboard R&B 榜冠亞軍；是否採納請店主定奪。",
+          "evidenceUrls": [
+            "https://en.wikipedia.org/wiki/Two_Steps_from_the_Blues",
+            "https://musicbrainz.org/release-group/959bffeb-cdb8-3559-a0e7-2c88d278e7bf"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "Duke 廠牌歌手 Bobby \"Blue\" Bland 的首張專輯，收錄 1956 至 1960 年間的錄音，由小號手 Joe Scott 統籌編曲。銅管與福音式的吶喊包住 Bland 絲絨般的嗓音，把藍調唱進 soul-blues 的抒情範式；單曲〈I Pity the Fool〉與〈Don't Cry No More〉分別拿下 Billboard R&B 榜冠軍與亞軍。專輯名列滾石五百大專輯第 217 名。",
@@ -307,7 +341,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/6c/05/3f/6c053f97-ed2a-30e6-f8bf-3885a1482e04/mzaf_17375557304280751405.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/20/1c/17/201c1702-3eba-77c5-b0e1-19c1c2fdf0d1/mzaf_10922387251136166902.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T04:12:00Z",
@@ -324,8 +358,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": false,
-        "apexPool": true
+        "seedCards": true,
+        "apexPool": false
       }
     },
     {
@@ -354,7 +388,7 @@
         "checkedAt": "2026-08-21T04:12:00Z",
         "note": "遠端工作階段的網路政策擋下 worker /album-rating 與 last.fm（CONNECT 403），無法取得機器基準；三軸依 ALBUM_ONBOARDING 精神以樂史地位／撞見機率／入耳難度人工錨點評定，listeners 一律記 null。店主回本機後可重跑 /album-rating 覆核並補 listeners。"
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -370,7 +404,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/30/e5/2f/30e52f35-821f-db2f-29f3-33d58060e1fe/mzaf_2057972182336466632.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/dd/f6/6d/ddf66d3d-3a86-d380-e6ac-ab0171a55ef8/mzaf_2075341880927759903.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T04:12:00Z",
@@ -417,7 +451,7 @@
         "checkedAt": "2026-08-21T04:12:00Z",
         "note": "遠端工作階段的網路政策擋下 worker /album-rating 與 last.fm（CONNECT 403），無法取得機器基準；三軸依 ALBUM_ONBOARDING 精神以樂史地位／撞見機率／入耳難度人工錨點評定，listeners 一律記 null。店主回本機後可重跑 /album-rating 覆核並補 listeners。"
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -480,7 +514,7 @@
         "checkedAt": "2026-08-21T04:12:00Z",
         "note": "遠端工作階段的網路政策擋下 worker /album-rating 與 last.fm（CONNECT 403），無法取得機器基準；三軸依 ALBUM_ONBOARDING 精神以樂史地位／撞見機率／入耳難度人工錨點評定，listeners 一律記 null。店主回本機後可重跑 /album-rating 覆核並補 listeners。"
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -496,7 +530,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/f4/03/ac/f403ac93-e8e0-ba45-5ea2-25f120a04cc6/mzaf_6905007442899497854.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a7/c3/18/a7c31853-a2cb-0c2e-9f8a-9fa060e8672b/mzaf_11805095760527519278.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T04:12:00Z",
@@ -606,7 +640,7 @@
         "checkedAt": "2026-08-21T04:12:00Z",
         "note": "遠端工作階段的網路政策擋下 worker /album-rating 與 last.fm（CONNECT 403），無法取得機器基準；三軸依 ALBUM_ONBOARDING 精神以樂史地位／撞見機率／入耳難度人工錨點評定，listeners 一律記 null。店主回本機後可重跑 /album-rating 覆核並補 listeners。"
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -622,7 +656,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b5/c0/dc/b5c0dcaa-eb70-53c7-49ca-ee9c7ae5f60c/mzaf_17465993118261513927.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9e/c9/7e/9ec97efc-1e97-521f-069a-6b3e50a6a59c/mzaf_11440288128649205582.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T04:12:00Z",
@@ -669,7 +703,7 @@
         "checkedAt": "2026-08-21T04:12:00Z",
         "note": "遠端工作階段的網路政策擋下 worker /album-rating 與 last.fm（CONNECT 403），無法取得機器基準；三軸依 ALBUM_ONBOARDING 精神以樂史地位／撞見機率／入耳難度人工錨點評定，listeners 一律記 null。店主回本機後可重跑 /album-rating 覆核並補 listeners。"
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -685,7 +719,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/6e/43/4d/6e434d72-338c-e26d-c0e3-3b65d7f267b7/mzaf_13527436973491058093.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6a/7e/8e/6a7e8eee-a6d4-d3e7-11fc-197cdd42bcec/mzaf_7396953328947751739.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T04:12:00Z",
@@ -732,7 +766,7 @@
         "checkedAt": "2026-08-21T04:12:00Z",
         "note": "遠端工作階段的網路政策擋下 worker /album-rating 與 last.fm（CONNECT 403），無法取得機器基準；三軸依 ALBUM_ONBOARDING 精神以樂史地位／撞見機率／入耳難度人工錨點評定，listeners 一律記 null。店主回本機後可重跑 /album-rating 覆核並補 listeners。"
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -748,7 +782,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/b2/18/99/b21899c7-fd92-9239-101d-66c19ca03764/mzaf_18050449084120540753.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/02/65/12/0265129b-ea93-b630-7916-bcd621f0e4e3/mzaf_9839811176524347093.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T04:12:00Z",
@@ -795,7 +829,7 @@
         "checkedAt": "2026-08-21T04:12:00Z",
         "note": "遠端工作階段的網路政策擋下 worker /album-rating 與 last.fm（CONNECT 403），無法取得機器基準；三軸依 ALBUM_ONBOARDING 精神以樂史地位／撞見機率／入耳難度人工錨點評定，listeners 一律記 null。店主回本機後可重跑 /album-rating 覆核並補 listeners。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -811,7 +845,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/1c/ea/ff/1ceaffbe-3866-d4d2-830c-77b7227417b3/mzaf_11707984549394694053.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e4/30/49/e430498e-5c55-a2dc-a017-0a0a06e98151/mzaf_3687288618601316077.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T04:12:00Z",
@@ -858,7 +892,7 @@
         "checkedAt": "2026-08-21T04:12:00Z",
         "note": "遠端工作階段的網路政策擋下 worker /album-rating 與 last.fm（CONNECT 403），無法取得機器基準；三軸依 ALBUM_ONBOARDING 精神以樂史地位／撞見機率／入耳難度人工錨點評定，listeners 一律記 null。店主回本機後可重跑 /album-rating 覆核並補 listeners。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -874,7 +908,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/30/e2/d5/30e2d51c-921b-5dfb-2797-2643b2074868/mzaf_17935849188201760219.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e0/b0/65/e0b06561-9a2e-fc19-742f-79bc91a95249/mzaf_1923540044449482148.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T04:12:00Z",
@@ -922,7 +956,7 @@
         "checkedAt": "2026-08-21T04:12:00Z",
         "note": "遠端工作階段的網路政策擋下 worker /album-rating 與 last.fm（CONNECT 403），無法取得機器基準；三軸依 ALBUM_ONBOARDING 精神以樂史地位／撞見機率／入耳難度人工錨點評定，listeners 一律記 null。店主回本機後可重跑 /album-rating 覆核並補 listeners。"
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -938,7 +972,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/3c/cc/06/3ccc066d-865e-8b13-d764-5970d4d53895/mzaf_4096022850166322918.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/98/59/64/985964f8-3437-4889-c24e-1a86eb58dbe8/mzaf_11349251888624351022.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T04:12:00Z",

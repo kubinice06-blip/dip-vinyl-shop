@@ -2198,3 +2198,297 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 補查 30 位：add 8、none 22；改寫 8 位，補回 Action Bronson 遭兩所大學撤出演出、Adia Victoria 拒絕 Americana 標籤、O'Neal 2015 年《Celebrity Big Brother》恐同辱罵風波、Stevenson 腦瘤手術、Alma Mahler 與 Gropius 的外遇、佛洛伊德會談與 1938 年流亡、Andy Gibb 古柯鹼成癮與心肌炎死因、Ari Lennox 公開要求解約並離開 Dreamville。
 - **更正**：Ametsub 遭音樂人 Cuushe 公開指控是在 2018 年（RA 與 The Playground 兩源開頁），先前 ar-u-019 段寫「2025 年」有誤；正文寫明是指控。判緩刑一條只有單源，不寫。
 - 主線審稿 9 處：Alma Mahler、Andy Gibb 年份超量；Alma Mahler、Ametsub、Ari Lennox 連續年份句；字數壓回 250。
+## ar-d-129（2026-10-22，薄細項策展線 ts1–ts11 補介紹：越南、柬埔寨、菲律賓、泰國、馬來西亞、新加坡搖滾）
+
+- 40 位上架（30 full、10 thin：Chillies、Thủy Triều Đỏ、Sàigòn Soul Revival、Raditori、Wolfgang、Parokya ni Edgar、The Jerks、Humpback Oak、Western Union Band、Wings (Malaysia)），0 位不寫。補洞 WebSearch 每位 ≤2 次。
+- 主線審稿修 5 位：Microwave「最好入耳」改「最易入耳」；Parokya ni Edgar 原稿只有英文維基一源，主線補 iHeart 樂團簡介（雅典耀高中、前身 Comic Relief 專唱惡搞翻唱）為第二源，刪團名由來（單源）、改寫成 139 字；Loso 刪「被視為泰國唱片業的紀錄」（維基單源、意思含糊）；Moderndog 末句四重轉述的讚詞壓成一句；Humpback Oak「從餘燼中組成的新樂團」改「樂團散夥後，Leslie Low 另組 The Observatory」。
+- 截止日後事實：Up Dharma Down〈Tadhana〉2026 年 2 月成為首首 Spotify 破 5 億次的菲律賓錄音，Philstar 2026-02-15 報導＋英文維基兩源，保留。
+- 保留：Silly Fools《Mint》卡帶逾百萬卷（MGR Online＋維基兩源；「起初銷量不如 Loso、後來翻身」是這團的故事核心，必要例外）；bodyslam 2010 拉加曼加拉體育場「當時泰國規模最大的演唱會」（The Standard＋維基）；The Quests〈Shanty〉首首登上新加坡榜首的本地樂團歌（維基＋NLB BiblioAsia）；IV of Spades〈Mundo〉Spotify Viral 50 第一（破圈核心）。
+- 不寫：Cambodian Space Project 主唱 Channthy Kak 2018 年辭世（只在 notes；主線派工特注誤寫成 2023，補洞層已更正）；Bức Tường 早期銷量與到場人數、Loso 逾百萬卷、Ngọt CD 銷量、Wolfgang 白金、各團單源的「第一支」（The Jerks、Microwave、Electrico、The Great Spy Experiment SXSW）。
+- 身分：Microwave（微波）、Slot Machine（賭博機）、Wolfgang（人名頁）維基預抓錯頁已作廢；Western Union Band 經 Reggie Verghese 條目確認是新加坡同名團。
+- 已上線專輯簡介待修（pubIssues）：Thủy Triều Đỏ 成軍年 1998／1999、The Great Spy Experiment 成軍年、Rusty Blade「Stadium Negara 場場爆滿」、The Jerks NU Rock 得獎專輯；Butterfingers「demo 被誤認為 Nirvana 未發行專輯」查無來源。
+
+## ar-d-130（2026-10-22，薄細項策展線 ts1–ts11 補介紹：馬來西亞、南亞、蒙古、印尼搖滾、剛果倫巴）
+
+- 39 位上架（31 full、8 thin：Exists、Slam、Strings、Fuzön、Avial、The Local Train、Nepathya、Efek Rumah Kaca），1 位不寫：Noori（事實全出自英文維基一源，第二源五次抓取全失敗，未達兩源；比照 ar-d-125 jinsang 的 skipped 先例）。
+- 主線審稿修 8 位：Hurd 刪《紐約時報》具名與拘留人數、到場人數細節，留「巡演最後一站被警方取消、聽眾遭驅散」；Bozi Boziana 刪 1999 Kora 獎（兩源同屬維基、年份對應不明）；Kanda Bongo Man 刪中央公園「約兩萬五千人」（單源數字），改寫成錄成現場專輯；Efek Rumah Kaca「媒體常稱」改「被稱為」；Exists 句構改正並壓到 156 字；The HU、Seringai、The SIGIT 補半形空格。
+- 截止日後事實：Warfaze 2026 年獲 Ekushey Padak，主線 WebSearch 核實（The Daily Star、TBS News、Dhaka Tribune：2 月 5 日公布、26 日頒發），保留。
+- 放寬額度：Zaïko Langa Langa 262 字（cavacha 由來＋Clan Langa Langa 支系是份量核心）、Sam Mangwana 265 字（安哥拉身世故事是主體），照留。
+- 保留：Sheila on 7〈Dan〉MTV Ampuh 連 29 週第一與「百萬張樂團」稱號（Pantau＋印尼文維基；份量核心）；1974 AD Rock Yatra 約 6 萬人（Himalayan Times＋Kathmandu Post）；Koffi Olomidé 入選《1001 Albums You Must Hear Before You Die》（writer-base 具名書目例外）；Tshala Muana 2022、Pépé Kallé 1998 只寫辭世年。主線派工特注把 Tshala Muana 誤寫成 2024，補洞層照來源更正為 2022。
+- 不寫：Koffi Olomidé 法律爭議、「首位 Bercy 售罄」；Vital Signs、Indus Creed、Haranga、Warfaze、Fuzön 單源「第一」；1974 AD「唯一填滿最大體育場」；Seringai Ricky Siahaan 2025 辭世（單源）；Junaid Jamshed 辭世。
+- 身分：Avial（菜餚）、Navicula（矽藻屬）維基預抓錯頁已作廢；1974 AD 確認是尼泊爾樂團。
+- 已上線專輯簡介待修（pubIssues）：Estranged〈Itu Kamu〉AJL 年份（2007→第 22 屆／2008）、Peter Cat 團名「借自村上春樹」過強、Hurd 呼和浩特日期與警力人數、Haranga 贊助商寫法、Warfaze Maqsud 身分、Dewa 19《Terbaik Terbaik》發行日、M'bilia Bel「結婚」應為訂婚、Nyboma「1972 年起在 Verckys 旗下」無出處。
+
+## ts1–ts11 補介紹（ar-d-129～130）小結
+
+- 80 位排入 2 批，79 位上架（61 full、18 thin）、1 位不寫；藝人介紹 6,098 → 6,177。審稿合計修 13 位。ar-d-131～134 留給下一個工作階段。
+
+## ar-d-205（2026-10-30，Spotify 補卡 sf05 補介紹：台灣華語流行、R&B、獨立樂團）
+
+- 20 位 → 17 位上架（7 full、10 thin），3 位不寫：頭部組成者（只有「台北四人器樂 stoner rock 團」一條單源，寫不出聲音）、吳書齊（三格全空，搜尋查無此人）、狗毛（只有幕後助理製作的冷資訊）。補洞 WebSearch 每位 ≤2 次。
+- 名冊：主名冊 `roster-20260929.json` 是單行 JSON，並行工作階段一起改必撞，改成 `artist-extract.mjs`／`artist-alias.mjs`／`scripts/build-artist-intros.mjs` 一併讀 `roster-sf*.json` 這類補充名冊（主名冊優先），不再把新藝人併進主名冊。
+- 主線審稿修 2 位：宝島材料行原稿只有 Blow 一源，主線補 vocus 報導（2023-10，主唱威廉、合成器／鍵盤 Dimi、台語、2020 年底成團）為第二源，正文不動；聲子蟲「toe 與 mouse on the keys 來台都由他們開場」只有樂團 Bandcamp 自述，改「據樂團自述」。
+- 保留：徐佳瑩「第一位拿下金曲獎的星光大道選手」（中文維基＋鏡週刊兩源）；潮州土狗「金音最佳嘻哈歌曲史上最年輕入圍」（補洞稿兩源）；YELLOW黃宣第 30 屆金曲最佳單曲製作人（與余佳倫）、第 12 屆金音最佳創作歌手；絕命青年第 34 屆金曲最佳演唱組合只寫入圍；Yo-Sea 照實寫成沖繩出身的日本歌手（卡池歸在台灣批，但身分是日本人）。
+- 不寫：王心凌代言費與熱搜數字；Karencici 金曲新人入圍（英文維基單源）；陳穎達金音得獎（只有募資頁單源）；YELLOW〈後現代獨白〉金音、典禮播錯影片；荒山茉莉「十大新團」；非／密閉空間成立年與成員本名。
+- 已上線專輯簡介待修（pubIssues）：吳書齊《鹿港》作曲名單與編制未能複核。
+
+## ar-d-207（2026-10-30，Spotify 補卡 sf07 補介紹：西洋 60–80 迷幻、prog、硬搖滾、krautrock、post-punk）
+
+- 32 位全上架（23 full、9 thin：Atomic Rooster、High Tide、Khan、Affinity、Nine Days' Wonder、Tully、Zaratustra、Martin & Garp、Slow Dancer），0 位不寫。補洞 WebSearch 每位 ≤2 次。
+- 主線審稿修 7 位：Atomic Rooster「沒有專職貝斯手、吉他手兼主唱」只對 John Du Cann 那一期成立（首張有貝斯手 Nick Graham），改寫成「最知名的一期是三人編制」並壓回 thin 159 字；Jade Warrior 的 Brian Eno 評語單源，改「據說」；Ikarus 刪「德國最早的前衛爵士搖滾專輯之一」（部落格級來源）；The Jazz Butcher 刪「北安普頓 1980 年代最有影響力的人物之一」（單源、意思含糊）；Martin & Garp 原稿只有廠牌零售頁一源，主線補樂團 Bandcamp 為第二源，且零售頁稱五人團，「二人組」改「以 Phil Martin 與 Lo van Gorp 為核心的計畫」；Tully 只有英文維基一源，主線補 Chapter Music 樂團頁（1968 年末成軍、雪梨《Hair》駐團、Carlos 的風琴與 Moog）為第二源；Mike Ratledge 補 Stereogum 訃聞為辭世第二源。
+- 截止日後事實：Mike Ratledge 2025-02-05 辭世、享年 81 歲，主線 WebSearch 核實（Stereogum、Ultimate Classic Rock、Canterbury Scene）。
+- 身分：Zaratustra 不是樂團，是 Jodorowsky 1970 年墨西哥城舞台劇的原聲（照劇作寫，演奏者 Las Damas Chinas 只寫「據電台節目介紹」）；維基預抓錯頁作廢：Black Widow（漫畫角色）、Ikarus（匈牙利巴士公司）、Affinity（軟體）、Tully（人名頁）、Martin & Garp（蘇格蘭作家）、Slow Dancer（Boz Scaggs 專輯）、Willie West（美式足球員）。
+- 保留：Paul Kossoff 1976 年航班上過世、得年 25（死因不寫）；Paul Davis〈I Go Crazy〉Hot 100 40 週為當時紀錄（份量核心）；The Sugarcubes《Life's Too Good》「第一張在全球造成影響的冰島專輯」；Eyeless in Gaza 的 Björk 具名評語；Cosmic Jokers「space rock 的首要範例」（維基首段）。
+- 不寫：Frijid Pink「第一個進 Top 10 的底特律團」、Atomic Rooster「Crane 是唯一不變的成員」、Tully「澳洲第一支現場用 Moog 的樂團」、Las Damas Chinas「墨西哥第一支自由爵士樂團」（序數單源）；Kossoff 雜誌百大名次；Bloodrock 解散年（兩源不一）；Sun City Girls 成軍年（三說）；Alma Cogan 癌別（兩說，只寫癌症）。
+- 已上線專輯簡介待修（pubIssues 7 條）：Frijid Pink 電台人士職稱、Gravy Train「在英國前衛圈很少見」與首作年、WCPAEB「Markley 是律師」、Cosmic Jokers「老闆是 Dierks」（應為 Kaiser）、Tully「第一支現場用 Moog」寫成定論。
+
+## ar-d-201（2026-10-30，Spotify 補卡 sf01＝店主收藏 38 張的藝人）
+
+- 名冊：`roster-sf01.json`、`roster-sf02.json` 60 位併入主名冊 `roster-20260929.json`（腳本冪等，略過已在的鍵；併入後 8,676 位）。
+- 30 位排入，29 位上架（11 full、18 thin），1 位不寫：烏賊紳士（來源只有 StreetVoice 與博客來商品頁，「聲音」只剩一句通路分類標籤，主體是成員與錄音室名單，未達 thin 門檻；比照 ar-d-125 jinsang、ar-d-130 Noori）。
+- 主線審稿修 4 位：
+  - 張震嶽：刪「縱貫線擔任鼓手巡演一年」（只有英文維基一源，WebSearch 查無佐證）；**截止日後事實**補 2026 年第 37 屆金曲獎以《跟著感覺走》獲最佳華語男歌手與最佳華語專輯（WebSearch：換日線、Marie Claire、TVBS 等多家，頒獎 2026-06-27）；作曲人獎曲名搜尋摘要不全，不寫。為壓字數刪唱詩班、兄弟本色兩句，238 字。
+  - 蕭亞軒：刪「2001 年世界音樂獎全球年度銷售最佳華語歌手」（WebSearch 只有 Marie Claire 一家與其轉載，單源獎項）。
+  - Juzzy Orange & GoodieK：刪成軍年 2009（Last.fm 用戶百科單源）。
+  - 宮沢明子：主線補第二源（一橋大學典藏《保險毎日新聞》專欄 PDF：鋼琴家、4 月 23 日辭世、Bach／Haydn／Mozart 錄音），正文不寫生卒年與比賽名次，照留。
+- 保留：人間椅子 278 字（拒換主唱、靠打工撐團是故事核心，放寬額度）；Bent Fabric〈Alley Cat〉Hot 100 第 7 名與葛萊美（已故，兩源）；Drive Like Jehu 主唱 Froberg 2023 年辭世（OPB＋維基）；Mangelsdorff「據說用香菸換來第一支長號」。
+- 不寫：RH Factor 的 DownBeat 名人堂（美國樂手規則）、Mangelsdorff 的 DownBeat／Melody Maker 票選與「第一張銅管獨奏專輯」、冠宇死因（只寫病逝）、Derya Yıldırım 出生年（1990／1993 兩說）、McLaughlin 2018 葛萊美與名人堂（單源）、İdil Biret 銷量與「第一位」。
+- 身分：Dome 維基預抓是建築條目，改用 Dome (band)；GRASS VALLEY（202）預抓是電視設備公司，作廢。
+
+## ar-d-202（2026-10-30，Spotify 補卡 sf02＝日本搖滾／獨立／流行／偶像／金屬）
+
+- 30 位排入，26 位上架（14 full、12 thin），4 位不寫：ないあがらせっと、ヨシンバ、ピューパ!!、THE 天国畑 JAPON（補洞三格皆 none，只剩發行資訊或一句維基，未達 thin 門檻）。
+- 主線審稿修 5 位：
+  - 中学生棺桶：刪「《矛先についたガム》是解散前最後一張、2022 年全新成員重啟」（成員異動、日文維基單源）；主線補 Last.fm 活動頁為第二源（punk 寄りの doom rock），106 字照留。
+  - 比屋定篤子：刪生年 1971（只有英日維基同家族）。
+  - DIR EN GREY：刪「柏林、巴黎專場未經宣傳即告售罄」（單源），改「開專場」。
+  - Thee Michelle Gun Elephant：刪「成軍成員只有チバ留到最後」（成員異動未見兩源）；後藤正文受影響改「據說」口氣（日文維基單源）。アベフトシ 2009、チバユウスケ 2023 只寫辭世年。
+  - GREENMACHiNE：「2018 年赴歐洲、隔年台灣」改「曾赴歐洲與台灣巡演」（年份日文維基單源）。
+- 保留：ジョー山中 272 字（混血、喪母、修車廠、拳擊出道的身世是主體，放寬額度）；Wink 1989 日本唱片大獎大賞與紅白、爆風スランプ〈Runner〉與紅白（份量核心，已核）；GRASS VALLEY 的 yukihiro 具名說法（Sony 官方頁）。
+- 不寫：OGRE YOU ASSHOLE 的 Johnny Marr 讚賞、Wink 與 Perfume 編舞之說（無出處）、姫神日本唱片大賞兩項（日文維基單源）、静香「唯一一張錄音室專輯」、NTsKi 榜單名次、各團 Oricon 名次與銷量。
+- きのこ帝国 QA「簡體字 国」為日文原字誤判，保留。
+- pubIssues：DIR EN GREY「芬蘭榜第一組非歐美藝人」、Wink「優勝者」應為入賞、COHOL「神奈川」應為東京據點、静香的吉他主奏是三浦マキ。
+
+## Spotify 補卡 sf01／sf02 補介紹（ar-d-201～202）小結
+
+- 60 位排入 2 批，55 位上架（25 full、30 thin）、5 位不寫；審稿合計修 9 位。截止日後事實：張震嶽 2026 第 37 屆金曲獎（WebSearch 核實）。
+
+## ar-d-209（2026-10-30，Spotify 補卡 sf09＝爵士：ECM、日韓爵士、世界爵士）
+
+- 32 位全上架（19 full、13 thin），0 位不寫。補洞 WebSearch 每位 ≤2 次（本工作階段兩批共用額度）。
+- 主線審稿修 8 位：
+  - 中村一義：刪「〈世界は変わる〉用於東京 2020 帕運開幕式」（日文維基單源，主線 WebSearch 查無佐證），改寫 2004 年名義統一為 100s。
+  - Graciela Susana：刪「2024 年過世」（只有英日維基同家族，WebSearch 也只見英文維基，查無日媒訃聞）；保留 2011 年返回阿根廷。
+  - Bill Bruford's Earthworks：原稿只有英文維基一源，主線補 Louder（Bruford 1985 年以 Simmons 電子鼓上電視介紹）為第二源，正文不動。
+  - Marc Johnson：「這段錄音（三重奏）為 Evans 贏得葛萊美」不精確——得獎的《We Will Meet Again》是五重奏錄音，改「他參與的《We Will Meet Again》」；刪一句自述壓回 246 字。
+  - Manu Katché：刪「錄過超過 200 張專輯」（英文維基單源數字）；〈Sledgehammer〉三次錄成改「據說」（單源）。
+  - Nils Landgren Funk Unit：刪「至少 500 張專輯」（瑞典維基單源）與 2019 年德國聯邦十字勳章（英、瑞維基同家族，非獨立）。
+  - Mark Guiliana：「新澤西」統一為台灣慣用「紐澤西」。
+- 截止日後事實：Hal Galper 2025 年辭世（英文維基＋DownBeat 訃聞 hal-galper-19382025，兩源），照寫年份；Flea 2026 年個人爵士專輯《Honora》（維基＋Blabbermouth）。
+- 保留：Tyreek McDole「Sarah Vaughan 大賽十二年來第二位奪冠的男歌手」（NJJS＋Paris-Move 兩源）；濱瀬元彦的菊地成孔評語（具名單源、低風險）；Flea 的名人堂主詞寫樂團。
+- 不寫：Bobo Stenson 生年（維基家族）、Daniel Ponce 生年（1952／1953 兩說）、Michel Sardaby 卒年（維基家族）、高木元輝生卒年（單源）、Graciela Susana 黃金 Gardel 獎與「百萬張」、Yttling Jazz 的 Grammis（得獎／提名兩說）、Dominique Fils-Aimé 第二座 Juno、Ceramic Dog「Ribot 第一支真正的搖滾團」、Assagai「Vertigo 唯一簽下的非洲樂團」。
+- 身分：Ceramic Dog 與 Marc Ribot 分寫；中村一義照實寫成日本創作歌手（卡池在爵士批）；swing slow 是細野晴臣與越美晴的二人團；Spiral Deluxe 是 Jeff Mills 的電子爵士四重奏。
+- pubIssues：Daniel Ponce《Arawe》簡介生日、Spiral Deluxe《The Love Pretender》「巴黎混音」查無來源。
+
+## ar-d-210（2026-10-30，Spotify 補卡 sf10＝電子、實驗、新古典鋼琴、house）
+
+- 33 位全上架（13 full、20 thin），0 位不寫。補洞 WebSearch 每位 ≤2 次。
+- 主線審稿修 4 位：
+  - Rich Ruth：原稿只有 Nashville Scene 一源，主線補 Bandcamp Daily《I Survived, It's Over》Album of the Day 為第二源，正文不動。
+  - Saint Abdullah：原稿只有 Bandcamp Daily 一源，主線補 PopMatters（《Mechanical Flirtations》評）與 Volume Sydney 2023 藝人頁；兩源皆寫「生於德黑蘭、在加拿大長大」，「生於伊朗、在西方長大」改得更具體。
+  - Barry Can't Swim：刪 2024 Coachella 與 Bonobo 背靠背、2025 All Points East 壓軸（英文維基單源、第二源未開頁），改寫 Mercury Prize 十二張候選之一（維基＋Sopitas 兩源）。
+  - Juana Molina：David Byrne 稱讚、替 Feist 開場只有 Hollywood Bowl 簡介一源，改「據說」口氣；上線簡介「Byrne 邀她開場」查無來源，不寫。
+- 保留：Monoton 列入 The Wire 1998「100 Records That Set the World on Fire」（兩源，非靠出處不可的定位）；Christoph De Babalon 的 Thom Yorke 評語與 2001 年 Amnesiac 巡演開場（維基＋Cafe OTO），評語以「據說」口氣；Joep Beving 串流八千萬次照「據廠牌說法」寫（素人自壓黑膠到 DG 簽約是故事核心，必要例外）；Mareux 的 TikTok 走紅與 2023 Coachella（維基＋訪談兩源，不寫數字）；Planningtorock 以 Rostron 自述談聲音與性別，正文不用代名詞。
+- 化名與合作：Against All Logic 寫 Nicolas Jaar 化名下的舞曲；Danger Mouse 兩個合作案各寫合作本身；Mark Linkous、Tom Relleen 只寫辭世年份，不寫死因；Clutchy Hopkins 全文「據稱／傳說」口氣、不揭身分。
+- 不寫：Peggy Gou「第一位在 Berghain 演出的韓國 DJ」（缺第二源，只留她 2016 年自述的志向）、Yaeji 的 BBC Sound of 2018 與 AIM 獎、Yung Bae 的 Arista 與 Billboard、Planningtorock「DFA 自 Black Dice 以來最實驗」、L'Acephale 成軍年（2002／2003）、French 79 成軍年（2013／2014）、Daniele Luppi 出生地（兩說）。
+- pubIssues：Danger Mouse & Daniele Luppi《Rome》錄音室（Forum／Ortophonic 兩說）、Yung Bae《Bae 5》Arista 與〈Bad Boy〉單源、Rich Ruth「2018 年退下來」與 Nashville Scene 的 2019 不符、「龍捲風」一句待核。
+
+## Spotify 補卡 sf09／sf10 補介紹（ar-d-209～210）小結
+
+- 65 位排入 2 批，65 位全上架（32 full、33 thin）、0 位不寫；審稿合計修 12 位。截止日後事實：Hal Galper 2025 辭世（兩源）、Flea 2026《Honora》。本工作階段主線 WebSearch 6 次。
+## ar-d-203（2026-10-30，Spotify 補卡 sf03 補介紹：日本地下、迷幻、即興、和樂器）
+
+- 20 位全上架（8 full、12 thin），0 位不寫。補洞 2 組（10＋10）、寫作 1 組。
+- 切批：cut 檔原為卡池原文大小寫，`artist-prompt.mjs` 對不上名冊（名冊名顯示 undefined），改用 progress.json 的小寫鍵重寫 cut 檔再萃取。
+- 主線審稿修 5 位：
+  - 陳信輝：寫作層判不過 thin 門檻（無聲音格），主線補 Light in the Attic《Eve》頁（Food Brain 出身、吉他偏藍調、比作 Led Zeppelin）後自寫 thin 145 字；「日本的 Jimi Hendrix」英文維基＋Last.fm 兩源；出生年地（1949 橫濱）只有 Discogs，不寫。
+  - 狩生健志：原稿只有 Tobira 零售頁，主線補 audiopile 商品頁（東京、OWKMJ、曲風）為第二源，正文不動；《Sekai》年份 2020／2021 兩說，不寫。
+  - Seiichi Yamamoto 山本精一：刪西浦真奈「隨 DMBQ 美國巡演車禍」死因細節，只寫 2005 年辭世（補英文維基 Mana Nishiura 頁）。
+  - 関藤繁生：刪「2013 年」（〈Chamber of Reflection〉所在的《Salad Days》是 2014 年，補洞稿年份有誤）。
+  - Sam Gendel & Shin Sasakubo：原稿幾乎只寫 Gendel，改寫末句交代合作盤的形狀（一人一面、互相客串，出自上線簡介）。
+- 身分：割礼維基預抓是醫學條目、バズ預抓是 Buzz Lightyear，皆作廢；バズ改用「バズ (バンド)」。
+- 保留：world's end girlfriend 生年 1975（兩源）；田畑満不寫「Boredoms 創始成員」，寫成「Boredoms 的開端」；三橋貴風卡內基 100 週年公演（演出事實，低風險）。
+- pubIssues：山本精一加入 Boredoms 年份（1986／1987）、田畑満「創始成員」。
+
+## ar-d-204（2026-10-30，Spotify 補卡 sf04 補介紹：日本電子、ambient、嘻哈、lo-fi、YMO 周邊）
+
+- 26 位 → 25 位上架（9 full、16 thin），1 位不寫：Chestnut Bakery（全部事實只有 Discogs 一源、身分未核、無聲音格）。
+- 主線審稿修 7 位：
+  - Yasushi Ide 井出靖：寫作層因無國籍事實未寫；主線補 ototoy 藝人頁＋honeyee 專訪（日本製作人、Grand Gallery 主理、1980 年代與ヤン富田同期、引領 ORIGINAL LOVE 與小沢健二出道）後自寫 thin 148 字。
+  - Hoshina Anniversary：補 hhv-mag 專訪為第二源，同時核實本名 Yoshinobu Hoshina 與「Watechno」，補洞層原登記的 pubIssue 撤銷。
+  - Magamura：補 ADSR Collective 為第二源（匈牙利二人組、先卡帶後黑膠）。
+  - 篠崎史子：刪 1970 以色列豎琴大賽第三名、朝日現代音樂賞、紫綬褒章（皆日文維基單源的名次／獎項），留首屆佐治敬三賞（兩源）。
+  - Sketch Show：重聚句改寫為 HASYMO → YMO，順口並壓回 thin。
+  - SHAKKAZOMBIE：「被視為」改「被稱為」（英文維基單源）。
+  - Emapea：補半形空格。
+- 身分：concrete concrete 預抓是建材、SOFT 預抓是紐約的 Soft (band)，皆作廢；AKA lisa 照來源寫成瑞典計畫、KUSO GVKI 是德國 beatmaker、Magamura 是匈牙利二人組、U.TA屋塔 是台北樂團、Emapea 是波蘭節拍製作人（卡池歸在日本批，身分照來源）。
+- 已故者只寫辭世年：ECD 2018（兩源）；OSUMI 只寫「辭世後」；沖山秀子不寫生卒年；高橋幸宏卒年單源未寫。
+- 不寫：〈GET YOURSELF ARRESTED〉銷量、ECD「日本語饒舌開拓者之一」（單源）、ヤン富田「第一位職業鋼鼓手」、dip 首作登獨立榜第 1 是專輯或迷你專輯（只寫首作）、U.TA屋塔 成立年（兩說）。
+- pubIssues：篠崎史子茱莉亞學歷、個展年份推算；YPY《Zurhyrethm》日期；kinoue64「2001 年起活動」單源；Magamura 載體先後。
+
+## Spotify 補卡 sf03／sf04 補介紹（ar-d-203～204）小結
+
+- 46 位排入 2 批，45 位上架（17 full、28 thin）、1 位不寫；審稿合計修 12 位（含主線補寫 2 位）。
+
+## ar-d-211（2026-10-30，Spotify 補卡 sf11＝冷門與身分待查的電子、lo-fi、小廠牌藝人）
+
+- 24 位 → 22 位上架（7 full、15 thin），2 位不寫：ERISTHEPLANET（聲音格 none，唯一來源是搜尋摘要，撐不起 thin 門檻）、Mindchatter（只有一篇訪談一源，聲音素材只有童年聽什麼）。補洞 WebSearch 每位 ≤3 次，合計 35 次。
+- 主線審稿修 3 位：The Offset: Spectacles「團員用加拿大帶回的器材」主詞改回吉他手 Vince Li、刪「現場不說話也不面向觀眾」壓回 249 字；Super Besse「讓白俄羅斯仍相信 cold wave 的聽眾重新注意」語病改寫；NoSo 去掉同句重複的名字（全篇不用他／她，照各媒體 they/them）。
+- 保留：The Offset: Spectacles「被列為 2010 年代初北京 DIY 卡帶復興的推手之一」（RADII 對 Rose Mansion Analog 的描述，Vice 另證廠牌創立，用「被列為」口氣）；Natural Magic 寫「Obama 就職夜的派對」不寫年份（補洞稿 2008 與就職 2009 年 1 月對不上）；Keith McIvor 只寫「過世」不寫年月；Dudu Tassa & the Kuwaitis 寫計畫本身，個人生平留給 ar-d-212；PUZZLEMAN「台灣手指鼓的代表人物」用「被稱為」；Sonia Calico「台北地下電子圈不可少的人物」（KEXP）用「被視為」。
+- 身分：維基預抓錯頁作廢：Moin（問候語）、Natural Magic（概念條目）、Space Raiders（零食）、Super Besse（滑雪場）。NUUAMM QA「簡體字 国」是團名「踊ってばかりの国」原字，保留。
+- 不寫：記號士 Blow「黑浪潮代表」引介語、鼓手離團年；ULTRA SUNN 與 Front 242 同台次數；特撮的離筋少年份；Offset 解散年（單源）。
+- 已上線專輯簡介待修（pubIssues）：記號士《第一個記號》應為 re: public records 發行（「海邊的卡夫卡」是專訪地點）；Skip Skip Ben Ben「起源台北」；Space Raiders「Fatboy Slim 經營的 Skint」；Super Besse 三人／二人編制。
+
+## ar-d-212（2026-10-30，Spotify 補卡 sf12＝嘻哈、R&B、靈魂、流行、以色列）
+
+- 30 位 → 28 位上架（13 full、15 thin），2 位不寫：Noblemen（只有成員名單與發行目錄，聲音格 none）、My Skin Against Your Skin 激膚（寫作層交了 146 字，但聲音只剩一篇 2012 演出評論的舞台描述，主體是陣容與一場演出的冷資訊，未達 thin 門檻，主線撤稿；比照 ar-d-201 烏賊紳士）。補洞 WebSearch 每位 ≤2 次。
+- 主線審稿修 2 位：Omar Apollo 刪「從此打開聽眾」（由單源串流數字推出的概括）；Dudu Tassa 刪「ACUM 年度作曲家獎」（獎項只有維基一源）、刪 Al-Kuwaiti 兄弟「1920 年代起」（單源，且與 ar-d-211 計畫稿的年代寫法不一，不寫年代）。
+- 截止日後事實：Olivia Dean 2026-02-01 第 68 屆葛萊美最佳新人、2026-02-28 全英音樂獎四項（年度藝人、年度專輯《The Art of Loving》、流行藝人、與 Sam Fender 的年度歌曲），主線 WebSearch 核實（uDiscover、Radio X、PRS for Music 等）。
+- 保留：Kris Kross〈Jump〉Hot 100 連八週冠軍（份量核心）、Chris Kelly 2013 只寫過世年；KMD Subroc 1993 只寫過世年；Fortisakharof「以色列搖滾王子」「Minimal Compact 最早在海外成功的以色列搖滾團體之一」（「被稱為／被認為」口氣）；JMSN 的 Usher 讚語（NME＋Complex）；Dinner Party 混音版入圍葛萊美最佳前衛 R&B 專輯。
+- 不寫：Destin Conrad、Saya Gray 的葛萊美／Polaris／Juno 入圍（單源）；Kris Kross「最年輕的商業成功嘻哈團」；Jason Derulo 銷量認證；Onry Ozzborn「棒球獎學金」「法明頓」；The UMC's、Way Out West 榜單名次；Olivia Dean「自 Dua Lipa 以來首位」。
+- 已上線專輯簡介待修（pubIssues）：Fortisakharof「第一次以共同名義發行」；J. Valentine 限量 CDr／客座；Kris Kross 發現年份；Lausse The Cat、Noblemen「首作」；Marian Hill「高中同學」；Michael Franti《Stay Human》年份（維基 2000）；Onry Ozzborn 棒球獎學金與法明頓；S.C.A.B. 主唱拼法 Camargo 與編制。
+
+## Spotify 補卡 sf11／sf12 補介紹（ar-d-211～212）小結
+
+- 54 位排入 2 批，50 位上架（20 full、30 thin）、4 位不寫；審稿合計修 5 位（另撤稿 1 位）。
+
+## ar-d-206（2026-10-30，Spotify 補卡 sf06＝華語其他、港、韓、泰）
+
+- 20 位 → 15 位上架（7 full、8 thin），5 位不寫：Everfor（無任何聲音事實，不能憑空寫 city pop）、dotzio（身分未核、國籍不明）、Championxiii（只有一句影響來源，寫不到 thin 門檻）、The Cheers Cheers（只有廠牌 Bandcamp 一源、身分查無他證，比照 ar-d-204 Chestnut Bakery）、張亞東（主線撤稿：facts 只有生平與替王菲、朴樹製作的履歷，沒有一句聲音特色，未達 thin 門檻；《Ya Tung》聲音主線 WebSearch 一次查無）。寫作 1 組 Opus（20 位一組，digest-2 空）。補洞 WebSearch 每位 ≤3。
+- 主線審稿修 4 位：劉以達首句補身分（香港吉他手與作曲人）、「結他」改「吉他」（台灣用語），壓回 250 字；亂彈阿翔金馬〈完美落地〉（自作詞曲）、2020 年第 55 屆金鐘綜藝節目主持人獎（與浩子、《台灣金頌》）與「三金」主線 WebSearch 以中央社、NOWnews 核實，去掉「據記載／被稱為」改為定論並補源；JUU4E 補 NME《Crazy World》樂評為第二源（加 dub reggae 一詞）；Glen Check 韓國大眾音樂獎連兩屆只有英韓維基同家族，加「據記載」。
+- 保留：강태환「被稱為韓國第一個自由爵士團體」（韓文維基單源，用被稱為口氣）；7FO「據報導」大阪出身（來源為訪談摘要）；Shaa Khan「八〇年代初德國最硬派現場樂團之一」放在「據說」句內；雞蛋蒸肉餅不寫「首個香港樂團」類宣稱。
+- 已上線專輯簡介待修（pubIssues）：Shaa Khan 成軍年代（簡介 1960 年代末、Bear Family 1970 年初）；dotzio 簡介「Hsuan Chang、中文寫詞」查無據。另：雞蛋蒸肉餅簡介「第一次出現香港樂隊」單源、Everfor 簡介「city pop」無源（補洞層提出，未列 pubIssues）。
+
+## ar-d-208（2026-10-30，Spotify 補卡 sf08＝西洋 90 年代至今獨立、alt、迷幻、shoegaze、民謠）
+
+- 40 位 → 39 位上架（19 full、20 thin），1 位不寫：Vinnum Sabbathi（只有 Doomed Nation 一篇訪談一源，主線 WebSearch 一次查無第二源；比照 ar-d-204 Chestnut Bakery）。補洞 WebSearch 每位 ≤2。
+- 維基預抓錯頁作廢：Beachy Head（海岬）、Sleepytime Trio（「Sleepytime」）、David Boring（Clowes 漫畫）；身分皆以卡池專輯核過。
+- 主線審稿修 11 位：22-Pistepirkko 首句補「芬蘭三人樂團」、刪重複的「評論圈最受敬重」；Blind Melon「新奧爾良」統一為「紐奧良」；Damon Albarn「被廣泛視為」→「被視為」（維基首段單源）、補主詞；Green Jelly「Keenan 與 Carey 早年待過、之後才組 Tool」時序不準，改「都曾參與」；Modey Lemon 刪「鼓手補上貝斯」（Moog 實由後加入的 Jason Kirker 負責，見 pubIssues），改「編制沒有貝斯」；The Voidz 數字前補空格；Tobin Sprout、Ben Watt、Mamie Minch、The Black Angels、Stone Sour 首句補國籍身分；Tobin Sprout 刪「lo-fi 搖滾的 AC/DC」（單源且理由說不通）；Ben Watt 刪「覺得被擠壓」、Hendra 改「部分歌曲寫給過世的同父異母姊姊」；Black Angels 刪 Levitation「美國最重要」單源評價；Mamie Minch 修琴段壓字回 243。Sleepytime Trio 主線 WebSearch 補 Lovitt 名冊與 Bats & Mice 維基為第二源（Richmond、三位成員另組 Bats & Mice）。
+- 保留：Jolie Holland 278 字（流浪、離開 Be Good Tanyas、自製 demo 被 Anti- 重發、Tom Waits 提名，是故事主體）；Helado Tropical 寫成 Helado Negro 與 Reyna Tropical 的合作（身分資訊，雖只在 notes）；Green Jelly〈Three Little Pigs〉美 17／英 5（兩源一致、成名核心）；Kissin' Dynamite 只寫 2024 德國專輯榜首；Tacoma Radar 2025 年重發（Numero 廠牌頁）；Psychic Ills 不寫 Tres Warren 死因；Blind Melon 不寫 Hoon 死因。
+- 不寫：Stone Sour 名次與銷量；SUUNS Polaris 長名單；Albarn 的 OBE／金氏紀錄；Pigs x7《衛報》榜單；Ben Watt 獎項；來源不一致的 Charlottes 貝斯手、SLIFT《ILION》序數、SUUNS 成軍年、Howlin' Fling 起始年、David Boring 成員與成軍年。
+- 已上線專輯簡介待修（pubIssues）：Blind Melon 封面蜜蜂女孩身分；Bonny Light Horseman 發行日（1/24 vs 維基 1/25）；Modey Lemon《Thunder + Lightning》編制與 Moog 歸屬；Vinnum Sabbathi《Gravity Works》成軍年；Sleepytime Trio《Plus 6000》成軍年；Ben Watt《Hendra》姊姊應為同父異母；СОЮЗ「首張全長」。
+
+## Spotify 補卡 sf06／sf08 補介紹（ar-d-206、ar-d-208）小結
+
+- 60 位排入 2 批，54 位上架（26 full、28 thin）、6 位不寫；審稿合計修 15 位（另撤稿 3 位：張亞東、The Cheers Cheers、Vinnum Sabbathi）。主線 WebSearch 6 次。
+
+## ar-d-241（2026-11-01，鐵幕爵士 eb1 補介紹：Kőrössy、羅馬尼亞 Electrecord 爵士、南斯拉夫、保加利亞）
+
+- 34 位 → 上架 31（18 full、13 thin），skipped 3：Bora Roković（f 欄只剩「1950 年代西行的爵士樂手之一」，無樂器無聲音）、Toranj 77（只有 Discogs 風格標籤，連國籍都沒有）、Septet Rousse（只剩唱片背面資訊）。補洞 WebSearch 每位 ≤2（Spassov & Moutafchiev 兩人鍵 3 次）。
+- 維基預抓：主線另以 scratchpad 版 `artist-wiki.mjs`（per-key 語言表 ro／hu／it／sr／hr／bg／fr／de）補抓當地語言維基，13／34 有頁；手刪錯頁 Birdland（紐約俱樂部）。英文預抓「Green White Green」是奈及利亞電影，補洞層排除。
+- 主線審稿修 5 位：
+  - Petar Ugrin：原稿只有 sl 維基一源（底稿是 Mazur 悼文，未能開頁），卻寫成 full 並帶 1944 生年。主線 WebSearch 只找到 en 維基 RTV Slovenia Big Band「音樂總監是 Petar Ugrin」（同維基家族），改 thin、刪生年與「1972」改「1970 年代初」、刪「最重要的斯洛維尼亞爵士樂手之一」（單源評價）、比賽一句改「據稱」。
+  - Lala Kovačev：首句以年份起、沒有身分，改「塞爾維亞爵士鼓手，1939 年生於 Kikinda」；刪「大致」「安靜」壓回 249 字。
+  - Mircea Tiberian：「該國第一個爵士與流行音樂系」兩維基同家族、序數宣稱，刪「該國第一個」。
+  - Cătălin Tîrcolea：「他的簡介稱」轉述句改「據稱」（Discogs 簡介單源）。
+- 保留：Körössy 的 Willis Conover 評語（具名、廣播人非樂評，單源低風險）；1969 移居美國亞特蘭大（ro 維基＋jazzma 訃文；PLAN 寫的 MPS 西德錄音是同年赴美前）。Harry Tavitian 的 Securitate 經過全以「據 Tavitian 自述」寫（RFE/RL 2010 訪談）。Jazz Focus 65 的 Leviev／Don Ellis〈Bulgarian Bulge〉以「據說」寫。Tiberian 2025 年 10 月辭世（Agerpres＋維基兩源）。
+- 不寫：Körössy「第一位融合民俗／引進自由爵士」、Tîrcolea／Tavernier「第一個把排簫帶進爵士」（只寫「較早…之一」）、Simić「塞爾維亞第一個大樂團」、Manusardi 蒙特勒「第一位」、Moutafchiev 卒年（bg 維基單源）、Ugrin 卒年與普列舍倫基金會獎（單源）、Jazz Focus 65 完整陣容（說法不一）、Stjepko Gut「Hampton 團唯一白人」（RTS 與 sr 維基不一，只寫「唯一歐洲人、兩位白人之一」）。
+- 跨鍵：Harry Tavitian 兩鍵（二重奏 Creativ／七重奏 Orient Express）、Lala Kovačev 兩鍵（人／1982 樂團）、B.P. Convention 與 Zagreb Jazz Quartet（同為 Boško Petrović）切入角度各異。
+- pubIssues 13 條（多為專輯年份 ±1、Parghel 曲數、Spassov「Jazz Line」團名、Nikolov 樂器、Zagreb Jazz Quartet「外國經紀人」查無來源）。
+
+## ar-d-242（2026-11-01，鐵幕爵士 eb2 補介紹：匈牙利、捷克斯洛伐克）
+
+- 29 位 → 上架 27（20 full、7 thin），skipped 2：Dimenzió（全部事實只有 BMC 一源、沒有任何聲音描述）、Gabriel Jonáš（只有一條 Discogs 身世，sk 維基 404）。補洞 WebSearch 每位 ≤2（實際多為 1）。
+- 維基預抓：當地語言補抓 hu／cs／sk，24／29 有頁；錯頁 Dimenzió（en「Dimension」、hu 數學詞條）、Karel Růžička（en 是 1909 年生的同名作曲家）作廢，照《Ozvěny》定為 1940–2016 的鋼琴家（父）。
+- 主線審稿修 4 位：
+  - Karel Růžička：原稿只有 cs 維基一源，主線補 Czech Radio PRSO 八十冥誕紀念文（1940 年 6 月生、Jazz Celula 與 SHQ、音樂院教作曲與鋼琴、主持 Frýdlant 夏季爵士工作坊、兒子是旅美薩克斯風手）為第二源，正文不動。
+  - Tomsits Jazz Group：「隨 Dizzy Gillespie 等老牌明星巡演」改「參加…的歐洲巡演」（英文維基稱開場團、BMC 稱同行，兩說取交集），補半形空格。
+  - Bergendy：「同名專輯被列為匈牙利史上最重要的專輯之一」主詞不明（前句是單曲〈Mindig ugyanúgy〉），改「樂團 1972 年的同名專輯」（HVG＋BBJ 兩源）；刪字壓回 250。
+  - Energit：末句「他被視為捷克藍調的代表人物」主詞改 Andršt；刪字壓回 250。
+- 保留：Eva Olmerová 269 字用放寬額度（入獄、被禁演、家變是人物故事主體）；「兩度入獄」「當局禁止她與 Prague Big Band 同台」不帶年份與場地（cs 維基細節＋ČT24 概述「入獄與禁令」）。Laco Déczi 1985 年離開捷克斯洛伐克（cs 維基、igsymposium、Prague PROMS 三源；1986 一說只見本人網站）。Rudolf Dašek 2013 年過世（維基＋wikidata，卒日兩說故不寫日）。Harcsa 的 Tower Records 榜首寫「據報導」。
+- 不寫：Szabados 工作坊栽培 Dresch／Grencsó（維基同家族）、MAKUZ「第一個專門演出他作品的編制」、Déczi 的 StB 線民爭議（sk 維基單源）與獎項（單源）、Gustav Brom「歐洲任期最長」與 DownBeat 名次（單源）、Bergendy《Hétfő》「匈牙利第一張雙專輯」、Fermáta／Grencsó 成軍年（說法不一）。
+- 跨鍵：György Szabados 與 & MAKUZ、Binder Quintet 與 Károly Binder、Jiří Stivín 兩個合作鍵切入角度各異。
+- pubIssues 3 條（MAKUZ「1980 年代初成立」無據、《Kontinentspiel》「Kalis」應為波蘭 Kalisz、Szakcsi Lakatos「創立 Rákfogó」應為加入）。
+
+## 鐵幕爵士 eb1／eb2 補介紹（ar-d-241～242）小結
+
+- 63 位排入 2 批，上架 58 位（38 full、20 thin）、skipped 5；審稿合計修 9 位。主線 WebSearch 2 次（Petar Ugrin、Karel Růžička 補第二源）。
+- 當地語言維基預抓用 scratchpad 版 `artist-wiki.mjs` 加 per-key 語言表；若之後東歐、非英語系批次常態化，值得把 `LANGMAP` 做進正式腳本。
+
+## ar-d-245（2026-11-01，鐵幕爵士＋MPS 策展線 eb5＝西德 MPS／SABA 60–70 年代、東歐樂手移民西方後的錄音）
+
+- 21 位排入，21 位全上架（16 full、5 thin：Wolfgang Dauner Quintet、Jean-Luc Ponty Experience、Dusko Goykovich、Elek Bacsik、Valery Ponomarev），skipped 0。補洞 3 組（10／10／1），搜尋合計 99 次；pubIssues 0。
+- 維基預抓錯頁作廢 1 條：`peter herbolzheimer rhythm combination & brass` 抓到「Brass」。查無預抓 4 條（Ponty Experience、Dave Pike Set、Monty Alexander / Ernest Ranglin、Dusko Goykovich），補洞自查。
+- 同人兩鍵：`wolfgang dauner` 寫人、`wolfgang dauner quintet` 寫五重奏編制與《The Oimels》，不重複生平。合作鍵一律寫參與者身分＋合作形狀。
+- 衝突處理：Clarke-Boland 成立年三說不一 → 不寫成立年；Koller 卒日 21／22 日 → 只寫生年；Hans Koller 獎起始年 1996／1997 兩說 → 不寫年份；Ponomarev 在信差年份 → 只寫「約四年」、生年單源不寫。
+- **主線審稿**（修 3 位）：
+  1. Hans Koller：「被稱為歐洲戰後爵士史上最具影響力」改為「MPS 稱他為…」（廠牌自述，主詞要寫出）；刪「奧地利聯邦總理府自 1997 年起」的年份；刪「晚年因後輩整理獨奏錄音而復出」（與 1995 年退出音樂的事實相牴，來源只說 Urbanek 延續其合奏實驗），改寫成後者。
+  2. Joachim Kühn：「被稱為 20 世紀最成功的爵士鋼琴手之一」改為「鋼琴廠 Bechstein 稱他為…」（商業夥伴自述）。
+  3. Elek Bacsik：結尾「他並不滿足」語意懸空，改寫為「心裡想的卻是爵士俱樂部」（來源：他自述想要俱樂部與音樂節）；修後壓回 thin 160 字內。
+- 其餘 18 位逐位核對補洞稿 facts，未改；穐吉敏子照東亞人名規則保留漢字。
+
+## ar-d-243（2026-11-01，鐵幕爵士 eb3 補介紹：波蘭 60–80 年代爵士）
+
+- 31 位排入，31 位全上架（23 full、8 thin：Trzaskowski Sextet、Polish Jazz Quartet、Novi Singers、Zabiegliński、Karolak／Urbaniak／Bartkowski 合作鍵、Krzysztof Sadowski、Grupa Organowa、Ścierański），skipped 0。補洞 4 組（10／10／10／1），搜尋合計 55 次（WebSearch 每位 ≤2，Wróblewski 3 次）。
+- 維基預抓：scratchpad 版 `artist-wiki.mjs` 加 `LANGMAP`（全批 pl）與 `TITLES`（手指定頁名）。錯頁作廢：Polish Jazz Quartet（en「Polish jazz」、pl 消歧義）、String Connection（en「Connection string」）。Sadowski pl 消歧義，補洞層認定 1936 年生的 Hammond 風琴手。預抓途中撞維基 API 限流，Sojka／Ewa Bem 等以手指定頁名重抓。
+- Polish Jazz Quartet 以 1965 年卡池專輯＋Discogs 認定為 Wróblewski 領軍的四重奏；貝斯手三種拼法，正文不寫名。
+- **主線審稿**（修 3 位）：
+  1. Andrzej Kurylewicz Quintet：刪末句「Kurylewicz 被視為波蘭爵士的先驅」（與本人鍵結尾重複；本人鍵保留）。
+  2. Wojciech Karolak：「隨父母經營區被帶到克拉科夫」漏字，照 facts 補「經 Pruszków 的營區」；Time Killers 主詞改為「（樂團）專輯據說被樂評票選為…」（維基同家族、單源）；刪「氣氛大師」壓回 247 字。
+  3. The Włodzimierz Nahorny Trio：1967 年維也納獎補「業餘」（notes：本人說常被與 1966 年世界現代爵士大賽混淆；上線簡介亦寫業餘爵士節）。
+- 裁定：《Jazz Forum》讀者票選名次（Bartkowski、Ścierański、Bliziński、Sojka、Ewa Bem）一律不寫——媒體名不進正文，波蘭也無 Swing Journal 那種店主特准例外；Warska 與 Ewa Bem 都有「波蘭爵士第一夫人」的稱號且各有出處，兩篇都保留。Bliziński「波蘭第一位世界級爵士吉他手」（只見維基家族）不寫；Sadowski 2019 年後的指控與起訴不寫；Urbaniak 1971 年蒙特勒獎（en 維基單源）不寫；Kosz 死因不寫。Sojka 2025 年 8 月卒於索波特（pl／en 維基＋報導兩源）、Wróblewski 2024 年 5 月卒（維基＋Polskie Radio）照寫。
+- 跨鍵：Kurylewicz（五重奏／本人）、Trzaskowski（五重奏帶音樂取向／六重奏寫 Curson 客座）、Namysłowski 兩個樂團鍵（本人已有介紹）、Karolak（本人／三人合作）、Sadowski（本人／風琴樂團）切入角度各異。Jerzy Milian Trio、Trzaskowski Quintet 因無本人鍵，帶簡短生平。
+- pubIssues：Ewa Bem 專輯年（1987／1986）、Warska《Somnambulicy》Piwnica 開設年、Zabiegliński「伊拉克三年」、《Na kosmodromie》Urbańska「是他的妻子」（1990 年代初才結婚）、Sojka《Blublula》「卡托維治」譯名等。
+
+## ar-d-244（2026-11-01，鐵幕爵士 eb4 補介紹：蘇聯 Melodiya 爵士＋東德 Amiga 爵士）
+
+- 31 位排入，31 位全上架（24 full、7 thin：Кузнецов／Громин、Tiit Paulus、Džässkvartett «Tallinn»、Джаз-хорал Киладзе、Rolf Kühn Quintett、Schönfeld & Katzenbeier、Modern Jazz Big Band 65），skipped 0。補洞 4 組（10／10／10／1），搜尋合計 50 次。
+- 維基預抓：scratchpad 版 `artist-wiki.mjs` 的 `LANGMAP`（ru／et／lt／az／hy／ka，德文名預設 de）與 `TITLES`（Бриль、Чекасин、Zentralquartett、Petrowsky、Klaus Lenz 手指定）。查無頁 7 位由補洞自查。
+- 推翻主線特注：Леонид Винцкевич 生於俄羅斯庫爾斯克（兩份維基），不是愛沙尼亞人；正文寫「俄羅斯鋼琴手」。Synopsis 確認為 Petrowsky／Bauer／Gumpert／Sommer；Conrad Bauer 與弟 Hannes 為不同人。Tatevik Oganesyan 各源拼法不一（Hovanesian／Hovhannisyan），以外號與樂團認定同一人。
+- **主線審稿**（修 2 位）：
+  1. Ulrich Gumpert：刪「被視為東德自由爵士最重要的樂團之一」（與 Synopsis 鍵重複）；「德國爵士獎（又稱 Albert-Mangelsdorff-Preis）」改寫獎名 Albert-Mangelsdorff-Preis，避免與 2021 年起的聯邦 Deutscher Jazzpreis 混淆；刪「九〇年代」壓回 249 字。
+  2. Modern Jazz Big Band 65：「領軍的現場大樂團」語意不清，改「領軍的大樂團，留下單聲道現場錄音」；精簡壓回 thin 160 字。
+- 裁定：Schulze 訃聞「比任何人都更形塑東德爵士」、Vyšniauskas「最深刻原創」、Studio 4「東德第一支定期演奏爵士的樂團」皆單源不寫；Sommer 國安線人爭議與各人單源獎項不寫；Kiladze 地位句寫「重發廠牌稱…」；ERR 稱 Paulus「傳奇」不用。Petrowsky 2023 年卒（en 維基＋Free Jazz Blog 訃文）照寫，不寫日。Klaus Lenz 在世與否未證，不寫已故／至今。
+- 跨鍵：Saarsalu（二重奏／四重奏／Tallinn 四重奏）、Oganesyan（本人／協奏曲合作）、Gumpert（本人／Workshop Band）、Schönfeld（本人／與 Katzenbeier）、Lenz（兩個大樂團＋MJBB 65）、Brüning（本人／與 Fischer／與 Petrowsky）、Petrowsky（Studio 4／與 Brüning）切入角度各異；Rolf Kühn Quintett 只寫《Solarius》編制。
+- pubIssues：《Джанго》《Утро Земли》《Севиль》年份、Schulze《Viertens》「低音薩克斯風」應為上低音、Studio 4 兩條無據、Synopsis「1984 年續演」措辭、Fischer《Kombination》「《Eolomea》第一部配樂」、Brüning＆Fischer 專輯年等。
+
+## 鐵幕爵士 eb3／eb4 補介紹（ar-d-243～244）小結
+
+- 62 位排入 2 批，上架 62 位、skipped 0；審稿合計修 5 位。補洞搜尋 105 次（WebSearch 每位 ≤2 的上限只有 3 位小幅超過）。主線 WebSearch 0 次。
+- 當地語言預抓再次證明有用（243 有頁 29／31、244 有頁 24／31）；`LANGMAP`／`TITLES` 兩個環境變數值得併進正式 `artist-wiki.mjs`。
+
+## ar-d-263／ar-d-264（2026-11-04，新頂點盤線・流亡 ax3 歐美私壓、ax4 亞非拉東歐早期電子）
+
+- 切批改在**上線前從卡單切**（`cut-ax.mjs`，scratchpad），研究稿交件就萃取，補洞與鉤子／寫作層並行；名冊 `roster-ax3.json`（25 位）、`roster-ax4.json`（18 位）。跳過已有介紹的 Joe Bonner、菊地雅章セクステット、강태환。
+- ar-d-264：上架 15、skipped 3（Blackbuster、Fanny's Group、Cool Knights：三格無事實或缺國籍，過不了 thin 門檻）。審稿改 8 處：刪「據說／據資料」5 處（Les Ambassadeurs、Blackfoot、Brigth Engelberts、Tokyo Kid Brothers×2）；Tokyo Kid Brothers 刪《紐約時報》好評（媒體名），Ed Sullivan Show 保留（Apple 上有 1970-10-25 該節目現場單曲可佐證）；Mike Nyoni 刪報紙票選獎項（媒體榜單）；Krzak 刪「歐洲數一數二的小提琴手」（單源評價）；Lutajuća Srca 英文引語「cult favourite」改中文敘述。Eloy 2025-11-19 去世取自補洞稿維基來源。
+- ar-d-263：上架 16、skipped 9（Sly Boots、Richard William Turner、Free Enterprize、David Lewis、Ghostdance、Drnwyn、McAllen、Stefan Gnys、Rin Eric：只有 Discogs 單源或缺國籍）。審稿改 1 處：Mtume 刪「被稱為史上被取樣最多的歌之一」（單源評價）。Bobby Few「被形容為」單源樂評照留（刪了過不了 thin 門檻，口氣已轉述）。
+- 私壓盤藝人 skipped 率高（263：9／25、264：3／18），之後流亡線的藝人介紹預期 thin 比例相近，不必硬補。
+
+## ar-d-265（2026-11-04，add-20261104 補介紹：張睿銓）
+
+- 1 位上架：張睿銓 Chang Jui-Chuan（full，254 字）。補洞 1 組（Sonnet）、寫作 1 組（Opus），qa gap／out 皆 0 處。
+- 主線審稿修 3 處：曲名〈Freedom Zen Dub（空禪迴）〉改〈Lennon's Freedom Zen Dub〉（中文維基與店主寫法；張鐵志用中文副題）；「據說沒去領獎」改「頒獎當天沒去領，人在凱道參加反國光石化抗議」——張鐵志單源之外，維基載遊行與第 1 屆金音獎同為 2010-11-13，日期互證；「緬甸人權」改「聲援西藏與緬甸」（〈空禪〉原為西藏而寫、收入《Free Burma》合輯）。JPF 補 2020 年。
+- 金音獎：第 1 屆、2010-11-13 頒獎（維基＋新頭殼 2010-10-14）。張鐵志寫「2011」為誤，店主寫 2010 正確。
+- 不寫：英語教學博士的學校與年份（維基單源，且與中央社任教時間不一致）、現職（兩篇中央社寫法不同）、「最活躍的抗議歌手之一」（單一評論家形容）、《創世記》「媒體年度十大」（未具名）。
+
+## ar-d-261（2026-11-04，新頂點盤線 ax1＝harsh noise／HNW／power electronics／工業／日本噪音）
+- 切 29 位（扣已有介紹 3 位）。補洞 3 組（g3 狀態值寫成 full／thin，主線依事實來源改回 bank／gap／none；http 改 https）、寫作 2 組。
+- **skipped 3**：Taint（sound 格空、主理人生死兩源矛盾）、Navicon Torture Technologies（origin 格空）、Macronympha（全部事實只有 en 維基單源）。
+- **主線審稿 10 處**：Hanatarash「愛搞大場面」→「愛製造大場面」、刪「據說他因此被判刑並賠償場地」；The Gerogerigegege 寫作層自擬的「山ノ内」→「山之内」（ja 維基：山之内純太郎），刪「網路一度謠傳山之内已過世，後來又傳出他想重新錄音」（傳聞）；Monde Bruits 刪「據記載，」；Vomir 刪「據說發行逾 300 項」；Werewolf Jerusalem 刪「據說獲得近乎神話的地位」；Harry Pussy、The Grey Wolves 刪「據說」；Controlled Bleeding 刪「據說樂團在 2020 年解散」；Brighter Death Now 刪「據說這份對廢鐵的癡迷把他帶向工業音樂」。
+- 補洞 pubIssues 回頭改上線簡介：Hair Police（「陰森地牢噪音」是 Fact 標題非廠牌自述）、Taint（刪矛盾死訊），見 `batch-progress/add-20261104-ax1/rulings.md` 51577–51578。
+
+## ar-d-262（2026-11-04，新頂點盤線 ax2＝極端現代音樂、聲音詩、激進即興、極端電子、反結構金屬）
+- 切 35 位（扣已有介紹 2 位）。補洞 4 組、寫作 2 組。
+- **skipped 3**：Martine Viard（無國籍、無生平，聲音格只有作品層）、Mitochondrion、Lasse Marhaug（事實各只有單一來源：en 維基／挪威百科 SNL）。
+- **主線審稿 9 處**：Chopin、Gnaw Their Tongues、Pan.Thy.Monium、Antediluvian 刪「據說／據稱／據載」引導；Sachiko M 刪「據說讓她一時成為國際即興圈的焦點」；Teitanblood 刪「據載 Darkthrone 曾把他們的標誌放上專輯封面致敬」（單源）；Karkowski 引語「只有在你害怕它的時候才會傷害你」改間接引述（禁語「你」），刪「據傳弄裂馬桶、喇叭起火」軼事；Keith Rowe「據評論影響了兩代」→「被認為影響了兩代」。
+- 補洞 pubIssues 回頭改上線簡介 3 張（Impetuous Ritual、Karkowski、Tsunoda），見 `batch-progress/add-20261104-ax2/rulings.md` 51677–51678。
+
+## ar-d-268（2026-11-04，新頂點盤線 ax6 第一波＝war metal、raw black metal、noisegrind、噪音搖滾、自由即興、聲音實驗）
+- 切 14 位（扣已有介紹 1 位：강태환）。補洞 4 組（ARTIST_GROUP=4）、寫作 2 組。skipped 0。
+- `peter kowald quintet` 寫 Peter Kowald 本人與 1972 五重奏（卡池 Peter Kowald 個人名義卡另無介紹，未併鍵）。
+- **主線審稿 3 處**：Peter Kowald Quintet 刪「據說只因為那是學校管弦樂團裡沒人想拉的樂器」（傳聞語氣）；Birchville Cat Motel 刪「據介紹，」；Mauricio Kagel 刪「據說」引導。其餘 11 位逐位審過未改字（Sete Star Sept 的 Keiji Haino／Fushitsusha 照東亞原文規則寫灰野敬二／不失者，確認）。
+- 補洞 pubIssues 0（卡池無既有簡介）。
+
+## ar-d-269（2026-11-04，新頂點盤線 ax6 第二波＝大提琴噪音即興、噪音黑金屬、極簡金屬）
+- 切 3 位（Okkyung Lee、Stalaggh、Orthrelm）。補洞 1 組、寫作 1 組。skipped 0。
+- **主線審稿 2 處**：Okkyung Lee 刪「據說」引導；Stalaggh 刪「VICE 稱它可能是史上最可怕的唱片之一」（媒體名不進正文，且單源封號）。Orthrelm 逐句審過未改字。

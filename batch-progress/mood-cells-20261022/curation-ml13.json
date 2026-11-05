@@ -1,0 +1,1759 @@
+{
+ "group": "ml13",
+ "factions": [
+  {
+   "id": "stoner-slow",
+   "zh": "慢速 stoner／desert 迷幻",
+   "count": 15,
+   "why": "慢拍 fuzz 與殘響包覆、旋律清楚、不以 riff 推進的沙漠慢盤"
+  },
+  {
+   "id": "warm-psych",
+   "zh": "暖色慢迷幻搖滾",
+   "count": 17,
+   "why": "Kikagaku 系與 psych-gaze、Floyd 系：濕殘響、厚霧、慢板、旋律清楚"
+  },
+  {
+   "id": "desert-instrumental",
+   "zh": "沙漠器樂慢盤",
+   "count": 4,
+   "why": "殘響吉他、鋼棒吉他的慢拍沙漠器樂，暖而漂浮"
+  },
+  {
+   "id": "desert-blues-slow",
+   "zh": "慢而厚的沙漠藍調",
+   "count": 8,
+   "why": "Tinariwen 一系與美籍合錄盤中慢而厚、不推進的那幾張（擴寫場景 ml26）"
+  },
+  {
+   "id": "brazil-wet",
+   "zh": "巴西／非洲濕而暖的盤",
+   "count": 3,
+   "why": "濕混音的巴西 prog-MPB 與奈及利亞 afro-psych 靈魂（擴寫場景 ml26）"
+  },
+  {
+   "id": "psych-pop-wet",
+   "zh": "濕而暖的 psych-pop（第二輪）",
+   "count": 14,
+   "why": "殘響霧厚、旋律清楚的慢板迷幻流行／搖滾，第二輪只收三軸明顯過門檻者"
+  }
+ ],
+ "albums": [
+  {
+   "artist": "Dead Meadow",
+   "album": "Dead Meadow",
+   "year": 2000,
+   "label": "Tolotta",
+   "country": "us",
+   "faction": "stoner-slow",
+   "genres": [
+    "rock"
+   ],
+   "why": "華盛頓特區慢速迷幻搖滾的起點，fuzz 與回音把人包住不推進，落恍惚。",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 1.3,
+    "z": 0.4,
+    "why": "慢速 fuzz 吉他與殘響人聲，厚低頻霧，無追趕感"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/1e1fad36-2709-365c-821a-0c062fd0298f",
+    "https://coverartarchive.org/release-group/1e1fad36-2709-365c-821a-0c062fd0298f/front"
+   ],
+   "mbRgMbid": "1e1fad36-2709-365c-821a-0c062fd0298f",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "z 貼邊：旋律偏暗，可能掉頹靡"
+  },
+  {
+   "artist": "Dead Meadow",
+   "album": "Howls from the Hills",
+   "year": 2001,
+   "label": "Tolotta",
+   "country": "us",
+   "faction": "stoner-slow",
+   "genres": [
+    "rock"
+   ],
+   "why": "慢板 stoner 迷幻的代表，重在殘響霧而非攻擊性。",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 1.4,
+    "z": 0.3,
+    "why": "拖長的 fuzz riff、濕殘響，半夢半醒的慢搖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/028b177a-033e-39c6-ae7f-bcb9d91e6d2e",
+    "https://coverartarchive.org/release-group/028b177a-033e-39c6-ae7f-bcb9d91e6d2e/front"
+   ],
+   "mbRgMbid": "028b177a-033e-39c6-ae7f-bcb9d91e6d2e",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "z 貼邊 0.3"
+  },
+  {
+   "artist": "Dead Meadow",
+   "album": "Shivering King and Others",
+   "year": 2003,
+   "label": "Matador",
+   "country": "us",
+   "faction": "stoner-slow",
+   "genres": [
+    "rock"
+   ],
+   "why": "Dead Meadow 最有旋律的一張，暖而慢的沙漠迷幻。",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.2,
+    "z": 0.5,
+    "why": "原聲吉他混 fuzz，旋律清楚，殘響厚、拍子懶"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/28375ca5-161d-391d-99cc-f05b459de3d0",
+    "https://coverartarchive.org/release-group/28375ca5-161d-391d-99cc-f05b459de3d0/front"
+   ],
+   "mbRgMbid": "28375ca5-161d-391d-99cc-f05b459de3d0",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Dead Meadow",
+   "album": "Feathers",
+   "year": 2005,
+   "label": "Matador",
+   "country": "us",
+   "faction": "stoner-slow",
+   "genres": [
+    "rock"
+   ],
+   "why": "最成熟的慢速迷幻搖滾，催眠感強，不兇。",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 1.1,
+    "z": 0.6,
+    "why": "長曲慢板，雙吉他殘響疊層，催眠暖糊"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/ab0a526d-f0cf-3a6c-9dbc-9ee9b2816053",
+    "https://coverartarchive.org/release-group/ab0a526d-f0cf-3a6c-9dbc-9ee9b2816053/front"
+   ],
+   "mbRgMbid": "ab0a526d-f0cf-3a6c-9dbc-9ee9b2816053",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Dead Meadow",
+   "album": "Old Growth",
+   "year": 2008,
+   "label": "Xemu",
+   "country": "us",
+   "faction": "stoner-slow",
+   "genres": [
+    "rock"
+   ],
+   "why": "Dead Meadow 後期較好入耳的一張，暖色 fuzz 民謠迷幻。",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.1,
+    "z": 0.6,
+    "why": "中慢板，旋律比早期清楚，吉他濕糊"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/eed4d13d-ba44-36c4-aa7f-9baf97a288cb",
+    "https://coverartarchive.org/release-group/eed4d13d-ba44-36c4-aa7f-9baf97a288cb/front"
+   ],
+   "mbRgMbid": "eed4d13d-ba44-36c4-aa7f-9baf97a288cb",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Dead Meadow",
+   "album": "Warble Womb",
+   "year": 2013,
+   "label": "Xemu",
+   "country": "us",
+   "faction": "stoner-slow",
+   "genres": [
+    "rock"
+   ],
+   "why": "晚期回歸慢速厚霧路線。",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.2,
+    "z": 0.5,
+    "why": "慢板 fuzz 與回音，鬆而厚"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/eefd71bf-720a-448c-8365-8cf7c25d811e",
+    "https://coverartarchive.org/release-group/eefd71bf-720a-448c-8365-8cf7c25d811e/front"
+   ],
+   "mbRgMbid": "eefd71bf-720a-448c-8365-8cf7c25d811e",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "唱片後段較硬，x 可能 2.8"
+  },
+  {
+   "artist": "Brant Bjork",
+   "album": "Jalamanta",
+   "year": 1999,
+   "label": "Mammoth",
+   "country": "us",
+   "faction": "stoner-slow",
+   "genres": [
+    "rock"
+   ],
+   "why": "前 Kyuss 鼓手的慢板沙漠 groove 盤，鬆而暖，不推進。",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 0.9,
+    "z": 0.7,
+    "why": "鬆垮的沙漠 groove，暖 fuzz 低音，旋律明確"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/b8d1f1ed-ca26-3acd-9d42-7e79f7351e27",
+    "https://coverartarchive.org/release-group/b8d1f1ed-ca26-3acd-9d42-7e79f7351e27/front"
+   ],
+   "mbRgMbid": "b8d1f1ed-ca26-3acd-9d42-7e79f7351e27",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "y 貼邊：混音偏乾"
+  },
+  {
+   "artist": "Brant Bjork",
+   "album": "Keep Your Cool",
+   "year": 2003,
+   "label": "Duna",
+   "country": "us",
+   "faction": "stoner-slow",
+   "genres": [
+    "rock"
+   ],
+   "why": "沙漠 groove 的懶洋洋一面，慢而暖。",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 1,
+    "z": 0.6,
+    "why": "慢 groove、fuzz 吉他、暖低頻"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/4453c6d5-9d73-303f-b2dd-3a1c504efd20",
+    "https://coverartarchive.org/release-group/4453c6d5-9d73-303f-b2dd-3a1c504efd20/front"
+   ],
+   "mbRgMbid": "4453c6d5-9d73-303f-b2dd-3a1c504efd20",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "部分曲目偏推進，x 可能 2.9"
+  },
+  {
+   "artist": "Brant Bjork",
+   "album": "Saved by Magic",
+   "year": 2005,
+   "label": "Duna",
+   "country": "us",
+   "faction": "stoner-slow",
+   "genres": [
+    "rock"
+   ],
+   "why": "Brant Bjork 最放鬆的一批歌，暖色慢 groove。",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 0.9,
+    "z": 0.7,
+    "why": "中慢板、暖 fuzz、鬆散人聲"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/06184e1a-4a6d-3fc3-b132-80908a8f6d5c",
+    "https://coverartarchive.org/release-group/06184e1a-4a6d-3fc3-b132-80908a8f6d5c/front"
+   ],
+   "mbRgMbid": "06184e1a-4a6d-3fc3-b132-80908a8f6d5c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "y 貼邊"
+  },
+  {
+   "artist": "Colour Haze",
+   "album": "Tempel",
+   "year": 2006,
+   "label": "Elektrohasch",
+   "country": "de",
+   "faction": "stoner-slow",
+   "genres": [
+    "rock"
+   ],
+   "why": "德國慢速迷幻搖滾代表，暖而厚、不兇。",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.1,
+    "z": 0.6,
+    "why": "慢速暖 fuzz，長段氣氛，旋律清楚"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/bbbfb206-8d48-3380-8762-6f452664671b",
+    "https://coverartarchive.org/release-group/bbbfb206-8d48-3380-8762-6f452664671b/front"
+   ],
+   "mbRgMbid": "bbbfb206-8d48-3380-8762-6f452664671b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "長 jam 段若旋律不明，z 可能降"
+  },
+  {
+   "artist": "Colour Haze",
+   "album": "She Said",
+   "year": 2012,
+   "label": "Elektrohasch",
+   "country": "de",
+   "faction": "stoner-slow",
+   "genres": [
+    "rock"
+   ],
+   "why": "Colour Haze 最暖的一張，旋律性強，慢而包覆。",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.1,
+    "z": 0.7,
+    "why": "溫暖 fuzz、Hammond 般的墊底、慢拍"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/16e8b800-1009-4b8b-af9e-ea98329d096d",
+    "https://coverartarchive.org/release-group/16e8b800-1009-4b8b-af9e-ea98329d096d/front"
+   ],
+   "mbRgMbid": "16e8b800-1009-4b8b-af9e-ea98329d096d",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Colour Haze",
+   "album": "All",
+   "year": 2008,
+   "label": "Elektrohasch",
+   "country": "de",
+   "faction": "stoner-slow",
+   "genres": [
+    "rock"
+   ],
+   "why": "旋律清楚的暖色沙漠迷幻，推進感低。",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 1,
+    "z": 0.6,
+    "why": "中慢板迷幻搖滾，暖 fuzz 與回音"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/2607adfa-c17e-3f28-bbcd-24798a257819",
+    "https://coverartarchive.org/release-group/2607adfa-c17e-3f28-bbcd-24798a257819/front"
+   ],
+   "mbRgMbid": "2607adfa-c17e-3f28-bbcd-24798a257819",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "部分曲目 x 偏高"
+  },
+  {
+   "artist": "Sungrazer",
+   "album": "Mirador",
+   "year": 2011,
+   "label": "Elektrohasch",
+   "country": "nl",
+   "faction": "stoner-slow",
+   "genres": [
+    "rock"
+   ],
+   "why": "荷蘭夢幻 stoner，慢、濕、暖，旋律好入耳。",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1.2,
+    "z": 0.6,
+    "why": "夢幻殘響人聲與慢 fuzz，漂浮"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/791a0418-a0e7-4ce3-8c93-64a29af36df1",
+    "https://coverartarchive.org/release-group/791a0418-a0e7-4ce3-8c93-64a29af36df1/front"
+   ],
+   "mbRgMbid": "791a0418-a0e7-4ce3-8c93-64a29af36df1",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Jonathan Wilson",
+   "album": "Gentle Spirit",
+   "year": 2011,
+   "label": "Bella Union",
+   "country": "us",
+   "faction": "warm-psych",
+   "genres": [
+    "rock"
+   ],
+   "why": "新 Laurel Canyon 迷幻民謠搖滾，暖、濕、慢。",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 0.9,
+    "z": 1,
+    "why": "Laurel Canyon 式濕混音，慢板，和聲溫暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/6bdd0a6f-5773-3673-99fa-fe4b7db60cab",
+    "https://coverartarchive.org/release-group/6bdd0a6f-5773-3673-99fa-fe4b7db60cab/front"
+   ],
+   "mbRgMbid": "6bdd0a6f-5773-3673-99fa-fe4b7db60cab",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "y 貼邊"
+  },
+  {
+   "artist": "Jonathan Wilson",
+   "album": "Fanfare",
+   "year": 2013,
+   "label": "Bella Union",
+   "country": "us",
+   "faction": "warm-psych",
+   "genres": [
+    "rock"
+   ],
+   "why": "編制豐厚的 70s 風迷幻搖滾，暖。",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 0.9,
+    "z": 0.9,
+    "why": "厚編制、迴響吉他與鍵盤，慢中板"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/9939b25b-7d86-4186-922c-0ee754a6e40f",
+    "https://coverartarchive.org/release-group/9939b25b-7d86-4186-922c-0ee754a6e40f/front"
+   ],
+   "mbRgMbid": "9939b25b-7d86-4186-922c-0ee754a6e40f",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "y 貼邊"
+  },
+  {
+   "artist": "Jonathan Wilson",
+   "album": "Rare Birds",
+   "year": 2018,
+   "label": "Bella Union",
+   "country": "us",
+   "faction": "warm-psych",
+   "genres": [
+    "rock"
+   ],
+   "why": "合成器迷幻化的晚期作，霧而暖。",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1,
+    "z": 0.8,
+    "why": "合成器墊與回音包覆，慢"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/34187173-fa0e-42ec-87cf-41dc0f0315e8",
+    "https://coverartarchive.org/release-group/34187173-fa0e-42ec-87cf-41dc0f0315e8/front"
+   ],
+   "mbRgMbid": "34187173-fa0e-42ec-87cf-41dc0f0315e8",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Witchcraft",
+   "album": "Firewood",
+   "year": 2005,
+   "label": "Rise Above",
+   "country": "se",
+   "faction": "stoner-slow",
+   "genres": [
+    "rock"
+   ],
+   "why": "瑞典復古民謠 doom，慢而暖，不兇。",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1,
+    "z": 0.6,
+    "why": "復古慢板，溫暖 fuzz 與鍵盤，旋律明確"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/52624537-e284-37a6-81ec-215c950d962d",
+    "https://coverartarchive.org/release-group/52624537-e284-37a6-81ec-215c950d962d/front"
+   ],
+   "mbRgMbid": "52624537-e284-37a6-81ec-215c950d962d",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "y 可能偏低（乾錄音）"
+  },
+  {
+   "artist": "Witchcraft",
+   "album": "Witchcraft",
+   "year": 2004,
+   "label": "Rise Above",
+   "country": "se",
+   "faction": "stoner-slow",
+   "genres": [
+    "rock"
+   ],
+   "why": "復古 doom 首作。",
+   "moodGuess": {
+    "x": 2.7,
+    "y": 1.2,
+    "z": 0.4,
+    "why": "70s 風 riff 慢推進，暖 fuzz"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/ed8ef03e-934d-32c7-9b86-adf7f6fd4006",
+    "https://coverartarchive.org/release-group/ed8ef03e-934d-32c7-9b86-adf7f6fd4006/front"
+   ],
+   "mbRgMbid": "ed8ef03e-934d-32c7-9b86-adf7f6fd4006",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "x 與 z 貼邊，riff 推進可能判躁"
+  },
+  {
+   "artist": "Yawning Man",
+   "album": "Rock Formations",
+   "year": 2005,
+   "label": "Alone",
+   "country": "us",
+   "faction": "desert-instrumental",
+   "genres": [
+    "rock"
+   ],
+   "why": "沙漠搖滾始祖的器樂慢盤，殘響包覆。",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 0.9,
+    "z": 0.4,
+    "why": "殘響吉他長音、沙漠沖浪式慢拍，漂浮"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/322bce85-aa9c-3987-a9cc-37cae3353ad8",
+    "https://coverartarchive.org/release-group/322bce85-aa9c-3987-a9cc-37cae3353ad8/front"
+   ],
+   "mbRgMbid": "322bce85-aa9c-3987-a9cc-37cae3353ad8",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "旋律不明可能判冷；y 貼邊"
+  },
+  {
+   "artist": "Kikagaku Moyo",
+   "album": "Forest of Lost Children",
+   "year": 2014,
+   "label": "Guruguru Brain",
+   "country": "jp",
+   "faction": "warm-psych",
+   "genres": [
+    "rock"
+   ],
+   "why": "Kikagaku Moyo 最慢最催眠的一張。",
+   "moodGuess": {
+    "x": 2,
+    "y": 1,
+    "z": 0.5,
+    "why": "西塔琴與慢速 fuzz、催眠感"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/6d626829-bd35-48c1-9637-09f9ea4f5180",
+    "https://coverartarchive.org/release-group/6d626829-bd35-48c1-9637-09f9ea4f5180/front"
+   ],
+   "mbRgMbid": "6d626829-bd35-48c1-9637-09f9ea4f5180",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "z 可能中性"
+  },
+  {
+   "artist": "Kikagaku Moyo",
+   "album": "Kumoyo Island",
+   "year": 2022,
+   "label": "Guruguru Brain",
+   "country": "jp",
+   "faction": "warm-psych",
+   "genres": [
+    "rock"
+   ],
+   "why": "解散前最溫潤的一張，旋律清楚。",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 0.9,
+    "z": 0.7,
+    "why": "溫柔、濕潤的民謠迷幻，慢"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/b9a6d3d3-e308-4d87-9b9b-6f33c655a41c",
+    "https://coverartarchive.org/release-group/b9a6d3d3-e308-4d87-9b9b-6f33c655a41c/front"
+   ],
+   "mbRgMbid": "b9a6d3d3-e308-4d87-9b9b-6f33c655a41c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "y 貼邊；池中同人 House/Masana 判 y 0.6"
+  },
+  {
+   "artist": "The Besnard Lakes",
+   "album": "The Besnard Lakes Are the Dark Horse",
+   "year": 2007,
+   "label": "Jagjaguwar",
+   "country": "ca",
+   "faction": "warm-psych",
+   "genres": [
+    "rock"
+   ],
+   "why": "加拿大 psych-gaze 代表，霧牆包覆，暖。",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.3,
+    "z": 0.5,
+    "why": "厚殘響吉他牆、高音和聲、慢中板"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/12c46ec9-eb6a-3a45-957b-4f2df1a2c42b",
+    "https://coverartarchive.org/release-group/12c46ec9-eb6a-3a45-957b-4f2df1a2c42b/front"
+   ],
+   "mbRgMbid": "12c46ec9-eb6a-3a45-957b-4f2df1a2c42b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "The Besnard Lakes",
+   "album": "The Besnard Lakes Are the Roaring Night",
+   "year": 2010,
+   "label": "Jagjaguwar",
+   "country": "ca",
+   "faction": "warm-psych",
+   "genres": [
+    "rock"
+   ],
+   "why": "更豐厚的牆，仍以包覆為主。",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 1.3,
+    "z": 0.5,
+    "why": "厚霧吉他與弦樂、中慢板"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/953e1348-daaa-4a78-a102-0f6af7293292",
+    "https://coverartarchive.org/release-group/953e1348-daaa-4a78-a102-0f6af7293292/front"
+   ],
+   "mbRgMbid": "953e1348-daaa-4a78-a102-0f6af7293292",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "x 貼邊"
+  },
+  {
+   "artist": "The Besnard Lakes",
+   "album": "Until in Excess, Imperceptible UFO",
+   "year": 2013,
+   "label": "Jagjaguwar",
+   "country": "ca",
+   "faction": "warm-psych",
+   "genres": [
+    "rock"
+   ],
+   "why": "夢幻厚霧，推進低。",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 1.2,
+    "z": 0.4,
+    "why": "漂浮合成器與吉他霧，慢"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/9a091a9b-fe9d-483c-928b-e78fb0e0489b",
+    "https://coverartarchive.org/release-group/9a091a9b-fe9d-483c-928b-e78fb0e0489b/front"
+   ],
+   "mbRgMbid": "9a091a9b-fe9d-483c-928b-e78fb0e0489b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "z 貼邊"
+  },
+  {
+   "artist": "The Besnard Lakes",
+   "album": "A Coliseum Complex Museum",
+   "year": 2016,
+   "label": "Jagjaguwar",
+   "country": "ca",
+   "faction": "warm-psych",
+   "genres": [
+    "rock"
+   ],
+   "why": "沉穩厚霧，暖中帶憂。",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.2,
+    "z": 0.4,
+    "why": "厚重殘響與和聲，慢板"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/c71f975a-d810-4700-b1ad-58ea63480ad8",
+    "https://coverartarchive.org/release-group/c71f975a-d810-4700-b1ad-58ea63480ad8/front"
+   ],
+   "mbRgMbid": "c71f975a-d810-4700-b1ad-58ea63480ad8",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "z 貼邊"
+  },
+  {
+   "artist": "The Besnard Lakes",
+   "album": "The Besnard Lakes Are the Last of the Great Thunderstorm Warnings",
+   "year": 2021,
+   "label": "Fat Possum",
+   "country": "ca",
+   "faction": "warm-psych",
+   "genres": [
+    "rock"
+   ],
+   "why": "晚期仍維持霧牆路線。",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.2,
+    "z": 0.5,
+    "why": "厚霧吉他、高音人聲，慢中板"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/ea58dbe7-7edb-44a9-9523-5652ff1d4dce",
+    "https://coverartarchive.org/release-group/ea58dbe7-7edb-44a9-9523-5652ff1d4dce/front"
+   ],
+   "mbRgMbid": "ea58dbe7-7edb-44a9-9523-5652ff1d4dce",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 首發年 2021，與記憶不符，已照 MB"
+  },
+  {
+   "artist": "Pink Floyd",
+   "album": "The Division Bell",
+   "year": 1994,
+   "label": "EMI",
+   "country": "gb",
+   "faction": "warm-psych",
+   "genres": [
+    "rock"
+   ],
+   "why": "後期 Floyd 最溫潤的一張，慢、濕、旋律清楚。",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 0.9,
+    "z": 0.7,
+    "why": "Gilmour 吉他長音、鍵盤墊與殘響，慢"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/90878b63-f639-3c8b-aefb-190bdf3d1790",
+    "https://coverartarchive.org/release-group/90878b63-f639-3c8b-aefb-190bdf3d1790/front"
+   ],
+   "mbRgMbid": "90878b63-f639-3c8b-aefb-190bdf3d1790",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "池中其他 Floyd 先驗 y 偏低（0.3–0.8）"
+  },
+  {
+   "artist": "David Gilmour",
+   "album": "On an Island",
+   "year": 2006,
+   "label": "EMI",
+   "country": "gb",
+   "faction": "warm-psych",
+   "genres": [
+    "rock"
+   ],
+   "why": "Gilmour 的暖色慢板獨唱盤，濕而包覆。",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 0.9,
+    "z": 0.9,
+    "why": "溫潤吉他、鋼琴與弦樂墊，慢板"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/ba6fabec-b71a-3eec-93e5-acf4db197f50",
+    "https://coverartarchive.org/release-group/ba6fabec-b71a-3eec-93e5-acf4db197f50/front"
+   ],
+   "mbRgMbid": "ba6fabec-b71a-3eec-93e5-acf4db197f50",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "y 貼邊"
+  },
+  {
+   "artist": "David Gilmour",
+   "album": "Rattle That Lock",
+   "year": 2015,
+   "label": "Columbia",
+   "country": "gb",
+   "faction": "warm-psych",
+   "genres": [
+    "rock"
+   ],
+   "why": "延續 Floyd 式暖色，推進低。",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 0.8,
+    "z": 0.7,
+    "why": "慢中板，吉他殘響與鍵盤墊"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/df89fe0d-439a-49b7-ba87-b38d6c652002",
+    "https://coverartarchive.org/release-group/df89fe0d-439a-49b7-ba87-b38d6c652002/front"
+   ],
+   "mbRgMbid": "df89fe0d-439a-49b7-ba87-b38d6c652002",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "y 邊緣 0.8、x 貼邊"
+  },
+  {
+   "artist": "Friends of Dean Martinez",
+   "album": "A Place in the Sun",
+   "year": 2000,
+   "label": "Sub Pop",
+   "country": "us",
+   "faction": "desert-instrumental",
+   "genres": [
+    "rock"
+   ],
+   "why": "沙漠慢板器樂的代表，溫熱殘響。",
+   "moodGuess": {
+    "x": 1.9,
+    "y": 0.9,
+    "z": 0.5,
+    "why": "鋼棒吉他殘響、慢拍沙漠器樂，旋律清楚"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/b148b84e-4e59-3425-be2c-a637ea954f72",
+    "https://coverartarchive.org/release-group/b148b84e-4e59-3425-be2c-a637ea954f72/front"
+   ],
+   "mbRgMbid": "b148b84e-4e59-3425-be2c-a637ea954f72",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "y 貼邊"
+  },
+  {
+   "artist": "Friends of Dean Martinez",
+   "album": "Retrograde",
+   "year": 1997,
+   "label": "Sub Pop",
+   "country": "us",
+   "faction": "desert-instrumental",
+   "genres": [
+    "rock"
+   ],
+   "why": "沙漠器樂早期代表。",
+   "moodGuess": {
+    "x": 2,
+    "y": 1,
+    "z": 0.4,
+    "why": "鋼棒吉他、懶拍、殘響厚"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/1e3aba9d-a055-3ae1-82a9-c92bf1ba899d",
+    "https://coverartarchive.org/release-group/1e3aba9d-a055-3ae1-82a9-c92bf1ba899d/front"
+   ],
+   "mbRgMbid": "1e3aba9d-a055-3ae1-82a9-c92bf1ba899d",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "z 貼邊"
+  },
+  {
+   "artist": "Friends of Dean Martinez",
+   "album": "Lost Horizon",
+   "year": 2005,
+   "label": "",
+   "country": "us",
+   "faction": "desert-instrumental",
+   "genres": [
+    "rock"
+   ],
+   "why": "同系列後期作。",
+   "moodGuess": {
+    "x": 1.9,
+    "y": 0.9,
+    "z": 0.5,
+    "why": "鋼棒吉他與迴響，慢"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/052e3cf8-107f-3004-aa35-357de147027b",
+    "https://coverartarchive.org/release-group/052e3cf8-107f-3004-aa35-357de147027b/front"
+   ],
+   "mbRgMbid": "052e3cf8-107f-3004-aa35-357de147027b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "y 貼邊"
+  },
+  {
+   "artist": "Dirtmusic",
+   "album": "BKO",
+   "year": 2010,
+   "label": "Glitterhouse",
+   "country": "us",
+   "faction": "desert-blues-slow",
+   "genres": [
+    "rock"
+   ],
+   "why": "美國獨立樂手與馬利音樂人合錄，慢而厚，不推進。",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.1,
+    "z": 0.5,
+    "why": "錄於巴馬科，慢速催眠 ngoni 與厚 fuzz 吉他"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/492fe43e-e8dc-4c93-bfda-b755c76c0268",
+    "https://coverartarchive.org/release-group/492fe43e-e8dc-4c93-bfda-b755c76c0268/front"
+   ],
+   "mbRgMbid": "492fe43e-e8dc-4c93-bfda-b755c76c0268",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Dirtmusic",
+   "album": "Troubles",
+   "year": 2013,
+   "label": "Glitterhouse",
+   "country": "us",
+   "faction": "desert-blues-slow",
+   "genres": [
+    "rock"
+   ],
+   "why": "BKO 之後更厚更沉的一張。",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.1,
+    "z": 0.4,
+    "why": "慢節奏沙漠搖滾，厚吉他與 ngoni"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/db3147ff-28f0-4325-923b-a4391c5fab43",
+    "https://coverartarchive.org/release-group/db3147ff-28f0-4325-923b-a4391c5fab43/front"
+   ],
+   "mbRgMbid": "db3147ff-28f0-4325-923b-a4391c5fab43",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "z 貼邊"
+  },
+  {
+   "artist": "Dirtmusic",
+   "album": "Lion City",
+   "year": 2014,
+   "label": "Glitterhouse",
+   "country": "us",
+   "faction": "desert-blues-slow",
+   "genres": [
+    "rock"
+   ],
+   "why": "三部曲之三，氛圍較緊。",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 1,
+    "z": 0.4,
+    "why": "中慢板，沙漠藍調吉他與厚低音"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/87dc9b37-fe73-4383-b2d2-73bd2d9aed12",
+    "https://coverartarchive.org/release-group/87dc9b37-fe73-4383-b2d2-73bd2d9aed12/front"
+   ],
+   "mbRgMbid": "87dc9b37-fe73-4383-b2d2-73bd2d9aed12",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "x、z 貼邊"
+  },
+  {
+   "artist": "Samba Touré",
+   "album": "Albala",
+   "year": 2013,
+   "label": "Glitterhouse",
+   "country": "ml",
+   "faction": "desert-blues-slow",
+   "genres": [
+    "rock"
+   ],
+   "why": "慢速 Songhai 藍調，溫熱厚實。",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 0.9,
+    "z": 0.6,
+    "why": "桑海藍調慢板，電吉他回音，催眠"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/de5db6f6-5d1d-4323-9a4e-a8f4b186de06",
+    "https://coverartarchive.org/release-group/de5db6f6-5d1d-4323-9a4e-a8f4b186de06/front"
+   ],
+   "mbRgMbid": "de5db6f6-5d1d-4323-9a4e-a8f4b186de06",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "y 貼邊；池中 Tinariwen 一系先驗 y 偏低"
+  },
+  {
+   "artist": "Samba Touré",
+   "album": "Gandadiko",
+   "year": 2015,
+   "label": "Glitterhouse",
+   "country": "ml",
+   "faction": "desert-blues-slow",
+   "genres": [
+    "rock"
+   ],
+   "why": "同路線，略有推進。",
+   "moodGuess": {
+    "x": 2.7,
+    "y": 0.9,
+    "z": 0.6,
+    "why": "慢中板，電吉他回音與搖擺拍"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/88a2eec4-dccf-4ce7-8e4f-f60ec78c8f20",
+    "https://coverartarchive.org/release-group/88a2eec4-dccf-4ce7-8e4f-f60ec78c8f20/front"
+   ],
+   "mbRgMbid": "88a2eec4-dccf-4ce7-8e4f-f60ec78c8f20",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "x、y 貼邊"
+  },
+  {
+   "artist": "Terakaft",
+   "album": "Akh Issudar",
+   "year": 2008,
+   "label": "",
+   "country": "ml",
+   "faction": "desert-blues-slow",
+   "genres": [
+    "rock"
+   ],
+   "why": "Tinariwen 同源，慢而厚。",
+   "moodGuess": {
+    "x": 2.7,
+    "y": 0.9,
+    "z": 0.5,
+    "why": "圖瓦雷克沙漠藍調，慢拍厚吉他"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/3a99b839-cbc4-3ffa-8cad-d7363494dd7e",
+    "https://coverartarchive.org/release-group/3a99b839-cbc4-3ffa-8cad-d7363494dd7e/front"
+   ],
+   "mbRgMbid": "3a99b839-cbc4-3ffa-8cad-d7363494dd7e",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "x、y 貼邊；池中 Tinariwen 判輕或躁"
+  },
+  {
+   "artist": "Terakaft",
+   "album": "Alone",
+   "year": 2015,
+   "label": "",
+   "country": "ml",
+   "faction": "desert-blues-slow",
+   "genres": [
+    "rock"
+   ],
+   "why": "慢速沙漠藍調。",
+   "moodGuess": {
+    "x": 2.7,
+    "y": 0.9,
+    "z": 0.4,
+    "why": "慢中板，厚吉他"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/22b8e037-e421-47fd-94d5-6640190b6f9d",
+    "https://coverartarchive.org/release-group/22b8e037-e421-47fd-94d5-6640190b6f9d/front"
+   ],
+   "mbRgMbid": "22b8e037-e421-47fd-94d5-6640190b6f9d",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "三軸都貼邊，優先汰換"
+  },
+  {
+   "artist": "Kel Assouf",
+   "album": "Black Tenere",
+   "year": 2019,
+   "label": "",
+   "country": "ne",
+   "faction": "desert-blues-slow",
+   "genres": [
+    "rock"
+   ],
+   "why": "偏重的沙漠 fuzz 藍調，慢。",
+   "moodGuess": {
+    "x": 2.7,
+    "y": 1.1,
+    "z": 0.3,
+    "why": "失真吉他、沉重慢拍的撒哈拉藍調"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/9cefec3b-a4f6-4f40-8131-4c0bc2498273",
+    "https://coverartarchive.org/release-group/9cefec3b-a4f6-4f40-8131-4c0bc2498273/front"
+   ],
+   "mbRgMbid": "9cefec3b-a4f6-4f40-8131-4c0bc2498273",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "x、z 貼邊，失真可能判躁"
+  },
+  {
+   "artist": "Som Imaginário",
+   "album": "Som Imaginário",
+   "year": 1970,
+   "label": "Odeon",
+   "country": "br",
+   "faction": "brazil-wet",
+   "genres": [
+    "rock"
+   ],
+   "why": "Clube da Esquina 前身樂團，暖而濕。",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 0.9,
+    "z": 0.8,
+    "why": "Milton 樂團的濕潤 prog-MPB，電鋼琴與厚混音，慢"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/3d3aaa68-9fb5-3ef9-9432-20904686e60c",
+    "https://coverartarchive.org/release-group/3d3aaa68-9fb5-3ef9-9432-20904686e60c/front"
+   ],
+   "mbRgMbid": "3d3aaa68-9fb5-3ef9-9432-20904686e60c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "y 貼邊；池中 MPB 先驗多判輕"
+  },
+  {
+   "artist": "Som Imaginário",
+   "album": "Matança do Porco",
+   "year": 1973,
+   "label": "Odeon",
+   "country": "br",
+   "faction": "brazil-wet",
+   "genres": [
+    "rock"
+   ],
+   "why": "第三張，更偏器樂與迷幻。",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 0.9,
+    "z": 0.6,
+    "why": "迷幻 prog-MPB，厚混音，中慢板"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/170a1d80-9610-3ea3-8efd-226e56b4355c",
+    "https://coverartarchive.org/release-group/170a1d80-9610-3ea3-8efd-226e56b4355c/front"
+   ],
+   "mbRgMbid": "170a1d80-9610-3ea3-8efd-226e56b4355c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "x、y 貼邊"
+  },
+  {
+   "artist": "Ofege",
+   "album": "Try and Love",
+   "year": 1973,
+   "label": "EMI",
+   "country": "ng",
+   "faction": "brazil-wet",
+   "genres": [
+    "rock"
+   ],
+   "why": "拉各斯青少年樂團的迷幻靈魂，煙霧般的暖混音。",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 0.9,
+    "z": 0.7,
+    "why": "奈及利亞 afro-psych 靈魂，混音厚，中慢板"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/6b382c04-6f22-3b24-810c-f6f397875ff9",
+    "https://coverartarchive.org/release-group/6b382c04-6f22-3b24-810c-f6f397875ff9/front"
+   ],
+   "mbRgMbid": "6b382c04-6f22-3b24-810c-f6f397875ff9",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "x、y 貼邊"
+  },
+  {
+   "artist": "Bo Hansson",
+   "album": "Sagan om ringen",
+   "year": 1970,
+   "label": "Silence",
+   "country": "se",
+   "faction": "warm-psych",
+   "genres": [
+    "rock"
+   ],
+   "why": "魔戒配器式的瑞典器樂迷幻，包覆暖。",
+   "moodGuess": {
+    "x": 2.1,
+    "y": 0.9,
+    "z": 0.5,
+    "why": "Hammond 與 Moog 長線條，慢、霧、旋律清楚"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/d26954d3-f012-32a5-a107-c904c028e487",
+    "https://coverartarchive.org/release-group/d26954d3-f012-32a5-a107-c904c028e487/front"
+   ],
+   "mbRgMbid": "d26954d3-f012-32a5-a107-c904c028e487",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "y 貼邊"
+  },
+  {
+   "artist": "The Brian Jonestown Massacre",
+   "album": "Their Satanic Majesties' Second Request",
+   "year": 1996,
+   "label": "Bomp!",
+   "country": "us",
+   "faction": "warm-psych",
+   "genres": [
+    "rock"
+   ],
+   "why": "60s 迷幻復古的霧牆。",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.3,
+    "z": 0.3,
+    "why": "西塔琴與霧狀 fuzz，慢中板"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/d379a94d-48a6-3925-8542-5fdf44a6aa29",
+    "https://coverartarchive.org/release-group/d379a94d-48a6-3925-8542-5fdf44a6aa29/front"
+   ],
+   "mbRgMbid": "d379a94d-48a6-3925-8542-5fdf44a6aa29",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "z 貼邊，可能判冷"
+  },
+  {
+   "artist": "Black Rebel Motorcycle Club",
+   "album": "Howl",
+   "year": 2005,
+   "label": "RCA",
+   "country": "us",
+   "faction": "warm-psych",
+   "genres": [
+    "rock"
+   ],
+   "why": "BRMC 的慢板暖色轉向。",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 0.9,
+    "z": 0.6,
+    "why": "福音藍調與民謠搖滾，木吉他加殘響，慢"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/a5343a48-2ea4-327e-add5-3bcf873b9658",
+    "https://coverartarchive.org/release-group/a5343a48-2ea4-327e-add5-3bcf873b9658/front"
+   ],
+   "mbRgMbid": "a5343a48-2ea4-327e-add5-3bcf873b9658",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "y 貼邊"
+  },
+  {
+   "artist": "Daniel Lanois",
+   "album": "Acadie",
+   "year": 1989,
+   "label": "Opal",
+   "country": "ca",
+   "faction": "warm-psych",
+   "genres": [
+    "rock"
+   ],
+   "why": "潮濕、溫熱、被殘響包住的沼澤氛圍。",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 1,
+    "z": 0.8,
+    "why": "路易斯安那式濕潤殘響、dobro 與鼓，慢"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/3ff0370a-e997-36ce-9741-d04bdb051c20",
+    "https://coverartarchive.org/release-group/3ff0370a-e997-36ce-9741-d04bdb051c20/front"
+   ],
+   "mbRgMbid": "3ff0370a-e997-36ce-9741-d04bdb051c20",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "非迷幻搖滾本線，可能與 ml24 重疊"
+  },
+  {
+   "artist": "Jim James",
+   "album": "Regions of Light and Sound of God",
+   "year": 2013,
+   "label": "Capitol",
+   "country": "us",
+   "faction": "psych-pop-wet",
+   "genres": [
+    "rock"
+   ],
+   "why": "MMJ 主唱的濕潤獨唱盤，殘響霧加旋律清楚，落恍惚。",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1,
+    "z": 0.7,
+    "why": "慢板、殘響厚的合成器與吉他，溫暖人聲"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/724043b8-2fe3-4062-a820-39345fa9e5d5",
+    "https://coverartarchive.org/release-group/724043b8-2fe3-4062-a820-39345fa9e5d5/front"
+   ],
+   "mbRgMbid": "724043b8-2fe3-4062-a820-39345fa9e5d5",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "y 剛好過線"
+  },
+  {
+   "artist": "Jim James",
+   "album": "Eternally Even",
+   "year": 2016,
+   "label": "ATO",
+   "country": "us",
+   "faction": "psych-pop-wet",
+   "genres": [
+    "rock"
+   ],
+   "why": "更偏靈魂與合成器的暖霧。",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1,
+    "z": 0.6,
+    "why": "合成器墊、慢 groove、濕混音"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/e8eedd72-4fc9-4327-bde8-a5053cacbeda",
+    "https://coverartarchive.org/release-group/e8eedd72-4fc9-4327-bde8-a5053cacbeda/front"
+   ],
+   "mbRgMbid": "e8eedd72-4fc9-4327-bde8-a5053cacbeda",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "x 在線上；池中無同人"
+  },
+  {
+   "artist": "The Beta Band",
+   "album": "The Beta Band",
+   "year": 1999,
+   "label": "Regal",
+   "country": "gb",
+   "faction": "psych-pop-wet",
+   "genres": [
+    "rock"
+   ],
+   "why": "蘇格蘭 psych-pop 的鬆弛暖霧。",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1,
+    "z": 0.6,
+    "why": "鬆散慢拍、採樣與暖吉他、糊混音"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/4e78704a-2ab1-3352-b7e0-3a3b355ca6b7",
+    "https://coverartarchive.org/release-group/4e78704a-2ab1-3352-b7e0-3a3b355ca6b7/front"
+   ],
+   "mbRgMbid": "4e78704a-2ab1-3352-b7e0-3a3b355ca6b7",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "池中無同人"
+  },
+  {
+   "artist": "The Beta Band",
+   "album": "Hot Shots II",
+   "year": 2001,
+   "label": "Regal",
+   "country": "gb",
+   "faction": "psych-pop-wet",
+   "genres": [
+    "rock"
+   ],
+   "why": "旋律更清楚的第二張。",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1,
+    "z": 0.5,
+    "why": "慢中板、層層合成器與吉他、暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/34c62e23-de6c-36ba-afa0-8d91086d22c2",
+    "https://coverartarchive.org/release-group/34c62e23-de6c-36ba-afa0-8d91086d22c2/front"
+   ],
+   "mbRgMbid": "34c62e23-de6c-36ba-afa0-8d91086d22c2",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "x、z 在線上"
+  },
+  {
+   "artist": "Lord Huron",
+   "album": "Strange Trails",
+   "year": 2015,
+   "label": "Whispering Pines",
+   "country": "us",
+   "faction": "psych-pop-wet",
+   "genres": [
+    "rock"
+   ],
+   "why": "殘響濕潤的西部氛圍民謠搖滾。",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1,
+    "z": 0.6,
+    "why": "迴響吉他、慢拍、和聲，西部式暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/7c4e9b88-1f66-4805-bf75-0300d2d3549d",
+    "https://coverartarchive.org/release-group/7c4e9b88-1f66-4805-bf75-0300d2d3549d/front"
+   ],
+   "mbRgMbid": "7c4e9b88-1f66-4805-bf75-0300d2d3549d",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "x 在線上；有原聲段"
+  },
+  {
+   "artist": "Lord Huron",
+   "album": "Long Lost",
+   "year": 2021,
+   "label": "Whispering Pines",
+   "country": "us",
+   "faction": "psych-pop-wet",
+   "genres": [
+    "rock"
+   ],
+   "why": "整張像舊收音機的慢板暖霧。",
+   "moodGuess": {
+    "x": 2,
+    "y": 1.1,
+    "z": 0.7,
+    "why": "極慢板、濕殘響、深沉人聲，老式暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/86832b46-99be-44fd-afcd-4b3ad327c0ec",
+    "https://coverartarchive.org/release-group/86832b46-99be-44fd-afcd-4b3ad327c0ec/front"
+   ],
+   "mbRgMbid": "86832b46-99be-44fd-afcd-4b3ad327c0ec",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "偏電台復古的低保真，y 可能略低"
+  },
+  {
+   "artist": "Spiritualized",
+   "album": "Sweet Heart Sweet Light",
+   "year": 2012,
+   "label": "Fat Possum",
+   "country": "gb",
+   "faction": "psych-pop-wet",
+   "genres": [
+    "rock"
+   ],
+   "why": "Spiritualized 中旋律最溫暖的一張。",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.1,
+    "z": 0.7,
+    "why": "弦樂、福音和聲與厚吉他霧，慢中板"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/9b5bf979-122c-4b5d-b73d-4c22ff193828",
+    "https://coverartarchive.org/release-group/9b5bf979-122c-4b5d-b73d-4c22ff193828/front"
+   ],
+   "mbRgMbid": "9b5bf979-122c-4b5d-b73d-4c22ff193828",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "池中 Pure Phase z −0.3"
+  },
+  {
+   "artist": "Spiritualized",
+   "album": "Everything Was Beautiful",
+   "year": 2022,
+   "label": "Fat Possum",
+   "country": "gb",
+   "faction": "psych-pop-wet",
+   "genres": [
+    "rock"
+   ],
+   "why": "晚期厚霧，溫暖。",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.2,
+    "z": 0.6,
+    "why": "厚弦樂與迴響吉他、慢"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/a80a3d7b-be5f-482f-b8ce-7c74bf4690da",
+    "https://coverartarchive.org/release-group/a80a3d7b-be5f-482f-b8ce-7c74bf4690da/front"
+   ],
+   "mbRgMbid": "a80a3d7b-be5f-482f-b8ce-7c74bf4690da",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "x 在線上"
+  },
+  {
+   "artist": "The Flaming Lips",
+   "album": "American Head",
+   "year": 2020,
+   "label": "Warner",
+   "country": "us",
+   "faction": "psych-pop-wet",
+   "genres": [
+    "rock"
+   ],
+   "why": "Flaming Lips 最暖最慢的晚期作。",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 1,
+    "z": 0.8,
+    "why": "慢板鋼琴、合成器墊與霧狀人聲，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/d2dc5bf8-080c-4438-9bc2-d9407243b9da",
+    "https://coverartarchive.org/release-group/d2dc5bf8-080c-4438-9bc2-d9407243b9da/front"
+   ],
+   "mbRgMbid": "d2dc5bf8-080c-4438-9bc2-d9407243b9da",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "池中 Flaming Lips 先驗 x 偏高（2.6–3.4）"
+  },
+  {
+   "artist": "The Flaming Lips",
+   "album": "Oczy Mlody",
+   "year": 2017,
+   "label": "Warner",
+   "country": "us",
+   "faction": "psych-pop-wet",
+   "genres": [
+    "rock"
+   ],
+   "why": "合成器霧的慢迷幻流行。",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1.1,
+    "z": 0.5,
+    "why": "慢拍、厚合成器、夢幻人聲"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/2650cc67-41d7-44c0-afaf-a63ecc254976",
+    "https://coverartarchive.org/release-group/2650cc67-41d7-44c0-afaf-a63ecc254976/front"
+   ],
+   "mbRgMbid": "2650cc67-41d7-44c0-afaf-a63ecc254976",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "z 在線上，部分曲偏冷"
+  },
+  {
+   "artist": "Mercury Rev",
+   "album": "See You on the Other Side",
+   "year": 1995,
+   "label": "Work",
+   "country": "us",
+   "faction": "psych-pop-wet",
+   "genres": [
+    "rock"
+   ],
+   "why": "走向《Deserter's Songs》前的暖霧過渡盤。",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.1,
+    "z": 0.5,
+    "why": "弦樂、迴響吉他與夢幻人聲，慢中板"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/ad4045ae-730f-3324-acc1-9627d3f73576",
+    "https://coverartarchive.org/release-group/ad4045ae-730f-3324-acc1-9627d3f73576/front"
+   ],
+   "mbRgMbid": "ad4045ae-730f-3324-acc1-9627d3f73576",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "池中同人 z 有 −0.2；x、z 在線上"
+  },
+  {
+   "artist": "Mercury Rev",
+   "album": "Snowflake Midnight",
+   "year": 2008,
+   "label": "Yep Roc",
+   "country": "us",
+   "faction": "psych-pop-wet",
+   "genres": [
+    "rock"
+   ],
+   "why": "電子化的 Mercury Rev，濕而暖。",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1,
+    "z": 0.5,
+    "why": "合成器與電子拍的暖霧，慢"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/f4a3d428-19ca-3027-96e9-2c6755593173",
+    "https://coverartarchive.org/release-group/f4a3d428-19ca-3027-96e9-2c6755593173/front"
+   ],
+   "mbRgMbid": "f4a3d428-19ca-3027-96e9-2c6755593173",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "電子成分可能偏冷"
+  },
+  {
+   "artist": "GUM",
+   "album": "Glamorous Damage",
+   "year": 2015,
+   "label": "Spinning Top",
+   "country": "au",
+   "faction": "psych-pop-wet",
+   "genres": [
+    "rock"
+   ],
+   "why": "澳洲同型 psych-pop，糊、暖、旋律清楚。",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.1,
+    "z": 0.8,
+    "why": "Tame Impala 成員的厚合成器與迴響，慢中板"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/8970e57a-7d77-4480-8436-9e8c30fc0de0",
+    "https://coverartarchive.org/release-group/8970e57a-7d77-4480-8436-9e8c30fc0de0/front"
+   ],
+   "mbRgMbid": "8970e57a-7d77-4480-8436-9e8c30fc0de0",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "池中 Tame Impala 先驗 x 2.7–3.4"
+  },
+  {
+   "artist": "GUM",
+   "album": "Delorean Highway",
+   "year": 2014,
+   "label": "Spinning Top",
+   "country": "au",
+   "faction": "psych-pop-wet",
+   "genres": [
+    "rock"
+   ],
+   "why": "同人早一年的作品，同樣的暖霧。",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1,
+    "z": 0.7,
+    "why": "迴響吉他與合成器墊、慢中板"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/e13192f3-c43d-426d-92b2-271f2b1db81c",
+    "https://coverartarchive.org/release-group/e13192f3-c43d-426d-92b2-271f2b1db81c/front"
+   ],
+   "mbRgMbid": "e13192f3-c43d-426d-92b2-271f2b1db81c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "x 在線上"
+  }
+ ],
+ "notes": [
+  "WebSearch 0 次；身分全用 MB API 查證，CAA front 皆回 200（Friends of Dean Martinez《Atardecer》封面 500 找不到來源，已剔除）。",
+  "池中 Tinariwen／Bombino／Tamikrest／Milton／Tim Maia／Caetano／Gil 等 MPB 與 desert blues 先驗 y 多 <0.8，同人一律不提；擴寫場景只收池中沒有的 Terakaft／Samba Touré／Kel Assouf／dirtmusic／Som Imaginário／Ofege。",
+  "池中已有 Kikagaku《House in the Tall Grass》《Masana Temples》（先驗 y 0.6）；仍提同人另兩張，標 uncertain。",
+  "主場景挖到 ~35、擴寫場景 ~12，合計 47，未湊滿 54：池中 krautrock／Canterbury／60s 迷幻已被收齊，新藝人少；Causa Sui、Myrrors、Papir、Siena Root、Dandy Warhols、Beachwood Sparks 判旋律不明或偏輕/偏躁不收。",
+  "年份依 MB first-release-date；Besnard Lakes《...Great Thunderstorm Warnings》MB 記 2021。label 不確定處留空。",
+  "第二輪：只提 14 張，未達 25。池中同人先驗不合（y<0.8 或 z<0.3）的一律不提：Dungen、Grandaddy、Midlake、Lô Borges、Arthur Verocai、Milton、Ghost、War on Drugs、Kevin Morby、Real Estate、Beach House 等；巴西／afro-soul 方向池中先驗 y 全為負，挖不到。Flaming Lips／Mercury Rev／Spiritualized 池中同人有幾張 z 或 x 不合，只提晚期或較暖的盤並標 uncertain。"
+ ]
+}

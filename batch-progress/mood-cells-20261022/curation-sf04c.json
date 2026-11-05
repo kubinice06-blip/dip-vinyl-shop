@@ -1,0 +1,56 @@
+{
+ "group": "sf04c",
+ "factions": [
+  {
+   "id": "tw-dream",
+   "zh": "台灣 dream pop／shoegaze／lo-fi R&B",
+   "count": 8,
+   "why": ""
+  }
+ ],
+ "albums": [
+  {
+   "artist": "U.TA屋塔",
+   "album": "緩飆公路 Highway Cruising",
+   "year": 2015,
+   "label": "Hove",
+   "country": "tw",
+   "faction": "tw-dream",
+   "genres": [
+    "rock",
+    "pop"
+   ],
+   "why": "台北 dream pop 樂團唯一全長，師承 Cocteau Twins、Mazzy Star；慢拍、殘響吉他與飄浮女聲",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 1.2,
+    "z": 0.4,
+    "why": "慢拍、殘響吉他霧與飄浮女聲，微暖"
+   },
+   "evidence": [
+    "https://www.discogs.com/release/33801504-UTA-屋塔-緩飆公路-Highway-Cruising",
+    "https://noiseartists.net/home/2017/12/18/taiwan-shoegaze-guide-part1"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "artist U.TA屋塔 (MB 4a52ee64-2b84-4f0b-a2ac-75491210f8c4) 無任何 release-group",
+     "releasegroup:\"Highway Cruising\" / \"緩飆公路\" 查無"
+    ],
+    "checkedAt": "2026-10-22",
+    "conclusion": "MB 有藝人條目但未收此專輯；Discogs release 33801504（Hove，8 曲 CD Album）為身分依據"
+   },
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/release/33801504-UTA-屋塔-緩飆公路-Highway-Cruising",
+    "https://noiseartists.net/home/2017/12/18/taiwan-shoegaze-guide-part1"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "原收在 ml4，研究層以聲音偏冷汰（不是身分問題），未上線；本線照收",
+   "spotifyName": "U.TA屋塔"
+  }
+ ],
+ "notes": [
+  "U.TA屋塔：sf04b 誤判已在池，實為 ml4 汰卡未上線，主線補收"
+ ]
+}

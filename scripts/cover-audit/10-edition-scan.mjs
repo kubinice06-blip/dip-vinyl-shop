@@ -22,7 +22,7 @@ import path from 'node:path';
 const ROOT = process.cwd();
 const OUT = path.join(ROOT, 'scripts', 'cover-audit', 'data');
 const CACHE = path.join(OUT, 'edition-scan.json');
-const UA = { 'User-Agent': 'dip-vinyl-cover-audit/1.0 (kubinice06@gmail.com)' };
+const UA = { 'User-Agent': 'dip-vinyl-cover-audit/1.0 (+https://dipvinyl.tw)' };
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 const argv = process.argv.slice(2);
 const li = argv.indexOf('--limit');

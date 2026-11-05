@@ -1,0 +1,1505 @@
+{
+ "group": "mc40",
+ "factions": [
+  {
+   "id": "solo",
+   "zh": "弦樂獨奏（小提琴／中提琴／大提琴／低音提琴）",
+   "count": 11,
+   "why": "主場景核心：錄音室無伴奏弦樂即興，乾、尖、無主題"
+  },
+  {
+   "id": "duo",
+   "zh": "弦樂二重奏",
+   "count": 24,
+   "why": "弦對弦或弦對其他單件樂器的錄音室二重奏，無節奏組或只有碎打擊"
+  },
+  {
+   "id": "small",
+   "zh": "弦樂領奏小編制（三、四人）",
+   "count": 10,
+   "why": "弦樂領奏、無重鼓的三、四人錄音室即興"
+  },
+  {
+   "id": "guitar",
+   "zh": "其他弦樂器：吉他獨奏",
+   "count": 3,
+   "why": "擴寫 (1)：Bailey 以外的原聲／預置吉他獨奏，乾尖型"
+  },
+  {
+   "id": "contemporary",
+   "zh": "當代無調弦樂獨奏作品",
+   "count": 3,
+   "why": "擴寫 (3)：Cage／Sciarrino 隨想等高把位點描型超技小提琴獨奏"
+  }
+ ],
+ "albums": [
+  {
+   "artist": "Joëlle Léandre",
+   "album": "Urban Bass",
+   "year": 1991,
+   "label": "Adda",
+   "country": "fr",
+   "faction": "solo",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Léandre 錄音室低音提琴＋人聲獨奏（Adda），歐陸自由即興低音提琴的代表；弓擦刮弦與喊聲緊繃尖利、無主題",
+   "moodGuess": {
+    "x": 3.5,
+    "y": -0.4,
+    "z": -1.6,
+    "why": "無鼓，弓擦高泛音與人聲喊叫，乾、無調"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/a453666b-1fe2-4001-be72-8ac797644008",
+    "https://coverartarchive.org/release-group/a453666b-1fe2-4001-be72-8ac797644008/front",
+    "https://www.discogs.com/release/1645476"
+   ],
+   "mbRgMbid": "a453666b-1fe2-4001-be72-8ac797644008",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Barry Guy",
+   "album": "Symmetries",
+   "year": 2002,
+   "label": "Maya Recordings",
+   "country": "gb",
+   "faction": "solo",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Guy 繼《Statements》後的第二張錄音室低音提琴獨奏，十七首短篇以泛音、敲弓、預置弦撐場，緊繃不給旋律",
+   "moodGuess": {
+    "x": 3.5,
+    "y": -0.3,
+    "z": -1.7,
+    "why": "無鼓，泛音與擊弓碎點，緊而乾，無旋律"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/86bfb3b9-bfc8-450f-b6ef-aa53a6fa7961",
+    "https://coverartarchive.org/release-group/86bfb3b9-bfc8-450f-b6ef-aa53a6fa7961/front",
+    "https://www.discogs.com/release/2317106"
+   ],
+   "mbRgMbid": "86bfb3b9-bfc8-450f-b6ef-aa53a6fa7961",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "同人《Statements》池中 x 3.3 剛過線；獨奏低音提琴 x 可能偏低"
+  },
+  {
+   "artist": "Carlos Zíngaro",
+   "album": "Solo",
+   "year": 1992,
+   "label": "In Situ",
+   "country": "pt",
+   "faction": "solo",
+   "genres": [
+    "jazz"
+   ],
+   "why": "葡萄牙小提琴手 Zíngaro 唯一的小提琴獨奏盤（In Situ），刮弦與高把位尖嘶的歐陸即興",
+   "moodGuess": {
+    "x": 3.5,
+    "y": -0.7,
+    "z": -1.7,
+    "why": "小提琴獨奏，修道院錄音略有殘響，尖細高頻、無調"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/e3a73e49-4338-41a7-a632-43ff5b925abf",
+    "https://www.discogs.com/release/624297"
+   ],
+   "mbRgMbid": "e3a73e49-4338-41a7-a632-43ff5b925abf",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "錄於修道院，殘響可能讓 x 略降"
+  },
+  {
+   "artist": "Peter Kowald",
+   "album": "Was da ist",
+   "year": 1995,
+   "label": "FMP",
+   "country": "de",
+   "faction": "solo",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Kowald 錄音室低音提琴獨奏（FMP），二十三段短即興，撥奏拍打與人聲喉音，緊、粗、碎",
+   "moodGuess": {
+    "x": 3.6,
+    "y": -0.2,
+    "z": -1.6,
+    "why": "無鼓，撥弦拍打與喉音短段，粗糙乾燥、無調"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/80861e92-f506-4172-b71e-87c2ebc736ad",
+    "https://coverartarchive.org/release-group/80861e92-f506-4172-b71e-87c2ebc736ad/front",
+    "https://www.discogs.com/release/1308550"
+   ],
+   "mbRgMbid": "80861e92-f506-4172-b71e-87c2ebc736ad",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Peter Kowald",
+   "album": "Open Secrets",
+   "year": 1988,
+   "label": "FMP",
+   "country": "de",
+   "faction": "solo",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Kowald 第二張 FMP 錄音室低音提琴獨奏，弓壓刮擦與人聲交錯，歐陸自由即興低音提琴經典",
+   "moodGuess": {
+    "x": 3.5,
+    "y": -0.2,
+    "z": -1.5,
+    "why": "無鼓，弓擦與撥奏交替、人聲穿插，乾、無主題"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/192b0cc1-90e2-45ec-b405-58a630952d24",
+    "https://coverartarchive.org/release-group/192b0cc1-90e2-45ec-b405-58a630952d24/front",
+    "https://www.discogs.com/release/2157710-Peter-Kowald-Open-Secrets"
+   ],
+   "mbRgMbid": "192b0cc1-90e2-45ec-b405-58a630952d24",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Abdul Wadud",
+   "album": "By Myself",
+   "year": 1977,
+   "label": "Bisharra",
+   "country": "us",
+   "faction": "solo",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Hemphill／Murray 御用大提琴手 Wadud 唯一的自發大提琴獨奏盤，撥奏與刮弓的 loft 期即興",
+   "moodGuess": {
+    "x": 3.4,
+    "y": -0.7,
+    "z": -1.2,
+    "why": "大提琴獨奏，撥奏急促、弓擦尖刮，乾，主題零散"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/e87449f5-d668-4e33-9ea8-94b2d84488e2",
+    "https://coverartarchive.org/release-group/e87449f5-d668-4e33-9ea8-94b2d84488e2/front",
+    "https://www.discogs.com/release/2493053"
+   ],
+   "mbRgMbid": "e87449f5-d668-4e33-9ea8-94b2d84488e2",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Discogs 標 Spiritual Jazz，部分段落可能有藍調輪廓（z）"
+  },
+  {
+   "artist": "Polly Bradfield",
+   "album": "Solo Violin Improvisations",
+   "year": 1979,
+   "label": "Parachute",
+   "country": "us",
+   "faction": "solo",
+   "genres": [
+    "jazz"
+   ],
+   "why": "紐約下城 Zorn 圈小提琴手 Bradfield 唯一的個人專輯（Parachute），錄音室小提琴獨奏，刮擦尖嘶",
+   "moodGuess": {
+    "x": 3.6,
+    "y": -1.3,
+    "z": -1.8,
+    "why": "小提琴獨奏，刮弦噪音、極高把位尖嘶，乾、無調"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/148684d3-8219-42bf-bac6-ef7ea1027759",
+    "https://coverartarchive.org/release-group/148684d3-8219-42bf-bac6-ef7ea1027759/front",
+    "https://www.discogs.com/release/1556166"
+   ],
+   "mbRgMbid": "148684d3-8219-42bf-bac6-ef7ea1027759",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Mark Dresser",
+   "album": "Invocation",
+   "year": 1995,
+   "label": "Knitting Factory Works",
+   "country": "us",
+   "faction": "solo",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Dresser 第一張低音提琴獨奏（Knitting Factory），擴展技法與拾音放大的泛音，緊繃尖細",
+   "moodGuess": {
+    "x": 3.5,
+    "y": -0.3,
+    "z": -1.6,
+    "why": "無鼓，泛音嘯叫與弓擦，乾，無主題"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/5af96e7d-cb89-4a31-878c-846d07a58257",
+    "https://coverartarchive.org/release-group/5af96e7d-cb89-4a31-878c-846d07a58257/front",
+    "https://www.discogs.com/release/1579203"
+   ],
+   "mbRgMbid": "5af96e7d-cb89-4a31-878c-846d07a58257",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Tom Cora",
+   "album": "Gumption in Limbo",
+   "year": 1991,
+   "label": "Sound Aspects",
+   "country": "us",
+   "faction": "solo",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Cora 錄音室大提琴獨奏（Sound Aspects），打弦、刮奏與急促撥弦，紐約下城即興大提琴代表",
+   "moodGuess": {
+    "x": 3.6,
+    "y": -0.8,
+    "z": -1.2,
+    "why": "大提琴獨奏，急促撥打與刮弓，乾，片段式動機"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/b3528dda-5e10-34b7-905b-c0b5183b2a35",
+    "https://www.discogs.com/release/855100"
+   ],
+   "mbRgMbid": "b3528dda-5e10-34b7-905b-c0b5183b2a35",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Cora 偶有民謠式 riff，z 可能偏中"
+  },
+  {
+   "artist": "Erik Friedlander",
+   "album": "Maldoror",
+   "year": 2003,
+   "label": "Brassland",
+   "country": "us",
+   "faction": "solo",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Friedlander 以 Lautréamont 詩為本的大提琴獨奏即興，刮弓與撥擊的陰森短篇",
+   "moodGuess": {
+    "x": 3.4,
+    "y": -0.5,
+    "z": -1.6,
+    "why": "大提琴獨奏，刮弓尖響與撥擊，陰、乾、無主題"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/9d227c5e-c4ca-3ebc-9069-45554f11b08a",
+    "https://coverartarchive.org/release-group/9d227c5e-c4ca-3ebc-9069-45554f11b08a/front",
+    "https://www.discogs.com/release/1376148",
+    "https://music.apple.com/us/album/maldoror/332667228"
+   ],
+   "mbRgMbid": "9d227c5e-c4ca-3ebc-9069-45554f11b08a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "有幾首較慢的陰沉段，x 可能偏低"
+  },
+  {
+   "artist": "Ernst Reijseger",
+   "album": "Taiming",
+   "year": 1981,
+   "label": "Hummeloord Records",
+   "country": "nl",
+   "faction": "solo",
+   "genres": [
+    "jazz"
+   ],
+   "why": "荷蘭大提琴手 Reijseger 首張個人盤（Hummeloord），大提琴獨奏自由即興，拍打撥刮的早期 ICP 圈作品",
+   "moodGuess": {
+    "x": 3.5,
+    "y": -0.9,
+    "z": -1.3,
+    "why": "大提琴獨奏，拍打撥刮、跳躍短段，乾，無主題"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/1344c2d6-ca08-475e-86cf-b4ade2cb57db",
+    "https://coverartarchive.org/release-group/1344c2d6-ca08-475e-86cf-b4ade2cb57db/front",
+    "https://www.discogs.com/release/2919171"
+   ],
+   "mbRgMbid": "1344c2d6-ca08-475e-86cf-b4ade2cb57db",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Fred Frith",
+   "album": "Guitar Solos",
+   "year": 1974,
+   "label": "Caroline",
+   "country": "gb",
+   "faction": "guitar",
+   "genres": [
+    "jazz",
+    "rock"
+   ],
+   "why": "Frith 錄音室無伴奏預置吉他即興（Caroline），英國即興吉他的里程碑，刮擦彈跳的尖細音色",
+   "moodGuess": {
+    "x": 3.4,
+    "y": -0.6,
+    "z": -1.6,
+    "why": "預置吉他獨奏，彈跳刮擦尖響，無鼓，乾，無旋律"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/7de01f1d-c2a7-3d13-ab21-5a45e30ca5c7",
+    "https://coverartarchive.org/release-group/7de01f1d-c2a7-3d13-ab21-5a45e30ca5c7/front",
+    "https://www.discogs.com/master/54796",
+    "https://music.apple.com/us/album/guitar-solos-1974-classic-re-mastered/51952775"
+   ],
+   "mbRgMbid": "7de01f1d-c2a7-3d13-ab21-5a45e30ca5c7",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "少數段落是持續嗡鳴（x）"
+  },
+  {
+   "artist": "Joe Morris",
+   "album": "Singularity",
+   "year": 2001,
+   "label": "AUM Fidelity",
+   "country": "us",
+   "faction": "guitar",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Morris 錄音室原聲吉他獨奏（AUM Fidelity），不斷句的單音線條急速盤旋，乾尖無主題",
+   "moodGuess": {
+    "x": 3.6,
+    "y": -1.4,
+    "z": -1.5,
+    "why": "原聲吉他獨奏，密集單音線條急轉，乾、尖、無主題"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/7aee9211-35dd-4950-a350-f2520914cb7e",
+    "https://www.discogs.com/release/4716405"
+   ],
+   "mbRgMbid": "7aee9211-35dd-4950-a350-f2520914cb7e",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "John Russell",
+   "album": "From Next To Last (Improvised Guitar Solos 2001-2)",
+   "year": 2002,
+   "label": "Emanem",
+   "country": "gb",
+   "faction": "guitar",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Bailey 一脈的英國原聲吉他手 Russell 的獨奏盤（Emanem），點彈刮弦的非慣用語法",
+   "moodGuess": {
+    "x": 3.5,
+    "y": -1.4,
+    "z": -1.8,
+    "why": "原聲吉他獨奏，點彈刮弦碎點，極乾、無調"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/9106be54-db73-4810-bbd1-7709eba190e4",
+    "https://www.discogs.com/release/2328712"
+   ],
+   "mbRgMbid": "9106be54-db73-4810-bbd1-7709eba190e4",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "第 6 軌錄於 Red Rose 演出，其餘 1–5 軌錄音室",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Irvine Arditti",
+   "album": "Cage: Freeman Etudes, Books One and Two",
+   "year": 1994,
+   "label": "Mode",
+   "country": "gb",
+   "faction": "contemporary",
+   "genres": [
+    "classical"
+   ],
+   "why": "Cage 為小提琴寫的極限技巧練習曲，Arditti 首錄全集上冊（Mode），點描無調、每音跳極高把位",
+   "moodGuess": {
+    "x": 3.6,
+    "y": -1.6,
+    "z": -1.8,
+    "why": "小提琴獨奏，極密點描、高把位跳音，乾尖無調"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/ad31e3d3-1f9a-3af0-b4ed-6d38cd60dfbf",
+    "https://music.apple.com/us/album/cage-freeman-%C3%A9tudes-books-1-2/1403531463"
+   ],
+   "mbRgMbid": "ad31e3d3-1f9a-3af0-b4ed-6d38cd60dfbf",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Freeman Etudes, Books One and Two",
+   "uncertain": ""
+  },
+  {
+   "artist": "Irvine Arditti",
+   "album": "Cage: Freeman Etudes, Books Three and Four",
+   "year": 1994,
+   "label": "Mode",
+   "country": "gb",
+   "faction": "contemporary",
+   "genres": [
+    "classical"
+   ],
+   "why": "Cage《Freeman Etudes》下冊，Arditti 完成首錄（Mode），同樣是極密的無調點描與超技",
+   "moodGuess": {
+    "x": 3.6,
+    "y": -1.6,
+    "z": -1.8,
+    "why": "小提琴獨奏，極密點描、高把位跳音，乾尖無調"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/aa44384a-72cb-3cc6-bbe3-9dea103af196",
+    "https://music.apple.com/us/album/cage-freeman-%C3%A9tudes-books-3-4/1403532923"
+   ],
+   "mbRgMbid": "aa44384a-72cb-3cc6-bbe3-9dea103af196",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Freeman Etudes, Books Three and Four",
+   "uncertain": ""
+  },
+  {
+   "artist": "Irvine Arditti",
+   "album": "Caprices",
+   "year": 2017,
+   "label": "æon",
+   "country": "gb",
+   "faction": "contemporary",
+   "genres": [
+    "classical"
+   ],
+   "why": "Arditti 錄 Sciarrino《六首隨想曲》、Carter、Nunes、Boulez 的小提琴獨奏（æon），泛音疾走的超技無調",
+   "moodGuess": {
+    "x": 3.7,
+    "y": -1.4,
+    "z": -1.6,
+    "why": "小提琴獨奏，泛音急奏與跳弓，尖細、無調、緊繃"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/b6dee6cb-88d4-408e-96b3-5cd57a88b154",
+    "https://coverartarchive.org/release-group/b6dee6cb-88d4-408e-96b3-5cd57a88b154/front",
+    "https://music.apple.com/us/album/caprices/1571806500"
+   ],
+   "mbRgMbid": "b6dee6cb-88d4-408e-96b3-5cd57a88b154",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Sciarrino, Carter, Nunes, Boulez; Irvine Arditti — Caprices",
+   "uncertain": "Sciarrino 隨想曲是泛音快奏型而非極弱型"
+  },
+  {
+   "artist": "Joëlle Léandre, Carlos Zingaro",
+   "album": "Ecritures",
+   "year": 1990,
+   "label": "In Situ",
+   "country": "fr",
+   "faction": "duo",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Léandre 與 Zíngaro 的低音提琴＋小提琴二重奏（巴黎錄音），十數首短即興，弦對弦的尖刮對話",
+   "moodGuess": {
+    "x": 3.7,
+    "y": -0.7,
+    "z": -1.7,
+    "why": "兩把弦樂，刮弦尖嘶對撞、急促短段，乾、無調"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/5bad8e38-8177-4992-b201-12f532e231f3",
+    "https://www.discogs.com/release/2595336",
+    "https://www.discogs.com/master/1332618"
+   ],
+   "mbRgMbid": "5bad8e38-8177-4992-b201-12f532e231f3",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Joe Morris + Mat Maneri",
+   "album": "Soul Search",
+   "year": 2000,
+   "label": "AUM Fidelity",
+   "country": "us",
+   "faction": "duo",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Morris 吉他與 Mat Maneri 中提琴的錄音室二重奏（AUM Fidelity），微分音線條與單音吉他纏繞",
+   "moodGuess": {
+    "x": 3.6,
+    "y": -1,
+    "z": -1.6,
+    "why": "吉他＋中提琴，兩條密線纏繞、微分音，乾、無主題"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/6458c13a-5c98-4bd8-90c1-1829e309ac6f",
+    "https://www.discogs.com/release/4401546"
+   ],
+   "mbRgMbid": "6458c13a-5c98-4bd8-90c1-1829e309ac6f",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "[Soul Search]",
+   "uncertain": ""
+  },
+  {
+   "artist": "Mat Maneri & Randy Peterson",
+   "album": "Light Trigger",
+   "year": 2000,
+   "label": "No More Records",
+   "country": "us",
+   "faction": "duo",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Maneri 小提琴與 Randy Peterson 鼓的二重奏（No More），無和聲樂器的微分音自由即興",
+   "moodGuess": {
+    "x": 3.6,
+    "y": -0.8,
+    "z": -1.5,
+    "why": "小提琴＋鼓，碎鼓推、小提琴尖刮，乾、無主題"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/34ca2540-0d08-4b5a-b52e-467817da8ab9",
+    "https://www.discogs.com/release/8119592"
+   ],
+   "mbRgMbid": "34ca2540-0d08-4b5a-b52e-467817da8ab9",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Steven Lantner / Mat Maneri",
+   "album": "Reaching",
+   "year": 2000,
+   "label": "Leo Lab",
+   "country": "us",
+   "faction": "duo",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Lantner 鋼琴與 Maneri 電小提琴的錄音室二重奏（Leo Lab），微分音小提琴對無調鋼琴",
+   "moodGuess": {
+    "x": 3.5,
+    "y": -0.8,
+    "z": -1.6,
+    "why": "鋼琴＋電小提琴，無調碎音對話，乾，旋律不明"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/35ae8e94-7758-4538-9762-f3e87bebdcfc",
+    "https://www.discogs.com/release/2631253"
+   ],
+   "mbRgMbid": "35ae8e94-7758-4538-9762-f3e87bebdcfc",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Paul Lytton & Philipp Wachsmann",
+   "album": "Some Other Season",
+   "year": 1999,
+   "label": "ECM",
+   "country": "gb",
+   "faction": "duo",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Wachsmann 小提琴＋電子與 Lytton 打擊＋電子的錄音室二重奏（ECM），細碎即時電子與刮弦",
+   "moodGuess": {
+    "x": 3.4,
+    "y": -0.2,
+    "z": -1.7,
+    "why": "小提琴＋打擊，即時電子細碎爆裂，尖、冷、無主題"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/9c05ade9-dcd9-3ab1-970f-65214b34b95c",
+    "https://www.discogs.com/release/55435"
+   ],
+   "mbRgMbid": "9c05ade9-dcd9-3ab1-970f-65214b34b95c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "現場電子可能把 y 推高；ECM 殘響"
+  },
+  {
+   "artist": "Philipp Wachsmann / Teppo Hauta-Aho",
+   "album": "August Steps",
+   "year": 2000,
+   "label": "Bead Records",
+   "country": "gb",
+   "faction": "duo",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Wachsmann 小提琴與芬蘭低音提琴手 Hauta-aho 的二重奏（Bead），弦對弦的歐陸即興",
+   "moodGuess": {
+    "x": 3.4,
+    "y": -0.5,
+    "z": -1.6,
+    "why": "小提琴＋低音提琴，刮擦與撥奏交錯，乾、無調"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/98809669-5fc6-4049-bef3-a4586d78e5e9",
+    "https://www.discogs.com/release/2832873"
+   ],
+   "mbRgMbid": "98809669-5fc6-4049-bef3-a4586d78e5e9",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Bead 特別版 CDr；聲音細節缺來源"
+  },
+  {
+   "artist": "Philipp Wachsmann, Roger Turner",
+   "album": "Alizarin",
+   "year": 2015,
+   "label": "Bead Records",
+   "country": "gb",
+   "faction": "duo",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Wachsmann 與 Roger Turner 的小提琴＋打擊二重奏（Bead），碎拍鼓與尖刮小提琴",
+   "moodGuess": {
+    "x": 3.7,
+    "y": -0.8,
+    "z": -1.7,
+    "why": "小提琴＋碎打擊，急促點描、尖刮，乾、無調"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/22788762-8f54-4148-8b30-280c25c6d146",
+    "https://www.discogs.com/release/6990420"
+   ],
+   "mbRgMbid": "22788762-8f54-4148-8b30-280c25c6d146",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "十軌中第 10 軌為 2011 Freedom of the City 現場，其餘錄音室",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Philipp Wachsmann, Paul Lytton",
+   "album": "Imagined Time",
+   "year": 2016,
+   "label": "Bead Records",
+   "country": "gb",
+   "faction": "duo",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Wachsmann 與老搭檔 Lytton 的小提琴＋打擊二重奏（Bead），英國即興第一代的乾尖對話",
+   "moodGuess": {
+    "x": 3.6,
+    "y": -0.6,
+    "z": -1.7,
+    "why": "小提琴＋打擊，細碎點描與刮弦，乾，無主題"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/2a13293b-58e1-4413-be9f-a31f23c370e6",
+    "https://www.discogs.com/release/9954875"
+   ],
+   "mbRgMbid": "2a13293b-58e1-4413-be9f-a31f23c370e6",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Agustí Fernández, Peter Kowald",
+   "album": "Sea of Lead",
+   "year": 2006,
+   "label": "Hopscotch Records",
+   "country": "es",
+   "faction": "duo",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Fernández 鋼琴與 Kowald 低音提琴的錄音室二重奏（Hopscotch），內部鋼琴與弓擦的歐陸即興",
+   "moodGuess": {
+    "x": 3.6,
+    "y": -0.6,
+    "z": -1.6,
+    "why": "鋼琴內部＋低音提琴，刮擦敲擊、無調，乾"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/2571f543-e90e-405a-ab7f-4e682cbca18f",
+    "https://coverartarchive.org/release-group/2571f543-e90e-405a-ab7f-4e682cbca18f/front",
+    "https://www.discogs.com/release/2738562-Agustí-Fernández-Peter-Kowald-Sea-Of-Lead"
+   ],
+   "mbRgMbid": "2571f543-e90e-405a-ab7f-4e682cbca18f",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Joe Morris, Barre Phillips",
+   "album": "Elm City Duets",
+   "year": 2008,
+   "label": "Clean Feed",
+   "country": "us",
+   "faction": "duo",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Morris 吉他與 Barre Phillips 低音提琴的錄音室二重奏（Clean Feed），單音線條對撥奏",
+   "moodGuess": {
+    "x": 3.5,
+    "y": -0.7,
+    "z": -1.5,
+    "why": "吉他＋低音提琴，急促單音與撥弦對話，乾、無主題"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/2e154155-201e-4f36-95be-2f4d706d3d55",
+    "https://coverartarchive.org/release-group/2e154155-201e-4f36-95be-2f4d706d3d55/front",
+    "https://www.discogs.com/release/2822757"
+   ],
+   "mbRgMbid": "2e154155-201e-4f36-95be-2f4d706d3d55",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Mark Dresser, Frances-Marie Uitti",
+   "album": "Sonomondo",
+   "year": 2000,
+   "label": "Cryptogramophone",
+   "country": "us",
+   "faction": "duo",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Dresser 低音提琴與 Uitti 雙弓大提琴的二重奏（Cryptogramophone），擴展技法的弦樂泛音對話",
+   "moodGuess": {
+    "x": 3.4,
+    "y": -0.6,
+    "z": -1.7,
+    "why": "低音提琴＋大提琴，泛音嘯叫與雙弓摩擦，冷、無調"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/5e832d9e-2225-48e6-b0d2-394c006bfe15",
+    "https://coverartarchive.org/release-group/5e832d9e-2225-48e6-b0d2-394c006bfe15/front",
+    "https://www.discogs.com/release/2669430"
+   ],
+   "mbRgMbid": "5e832d9e-2225-48e6-b0d2-394c006bfe15",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Uitti 雙弓長音段可能偏靜（x）"
+  },
+  {
+   "artist": "Mark Dresser / Denman Maroney",
+   "album": "Duologues",
+   "year": 2001,
+   "label": "Les Disques Victo",
+   "country": "us",
+   "faction": "duo",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Dresser 低音提琴與 Maroney「超鋼琴」的錄音室二重奏（Victo），預置鋼琴與擴展低音提琴",
+   "moodGuess": {
+    "x": 3.6,
+    "y": -0.6,
+    "z": -1.6,
+    "why": "低音提琴＋預置鋼琴，金屬敲擊與刮弦，乾、無調"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/5503c84d-2eac-4739-9d87-eb52ef2c77e2",
+    "https://coverartarchive.org/release-group/5503c84d-2eac-4739-9d87-eb52ef2c77e2/front",
+    "https://www.discogs.com/release/1701195"
+   ],
+   "mbRgMbid": "5503c84d-2eac-4739-9d87-eb52ef2c77e2",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Derek Bailey & Tristan Honsinger",
+   "album": "Duo",
+   "year": 1976,
+   "label": "Incus",
+   "country": "gb",
+   "faction": "duo",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Bailey 與 Honsinger 的吉他＋大提琴二重奏（原 Incus 1976），英國即興最尖刻的弦樂對話之一",
+   "moodGuess": {
+    "x": 3.8,
+    "y": -1.2,
+    "z": -1.7,
+    "why": "吉他＋大提琴，急躁刮奏與彈跳，極乾、無調"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/a151268e-af3e-4d52-9665-511a5daab67a",
+    "https://coverartarchive.org/release-group/a151268e-af3e-4d52-9665-511a5daab67a/front",
+    "https://www.discogs.com/release/11694254"
+   ],
+   "mbRgMbid": "a151268e-af3e-4d52-9665-511a5daab67a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "MB 本 RG 只有 2018 Honest Jon's 再版（標 Reissue）；原盤 Incus 1976，年份取原盤",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Tristan Honsinger & Olaf Rupp",
+   "album": "Stretto",
+   "year": 2011,
+   "label": "FMP",
+   "country": "us",
+   "faction": "duo",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Honsinger 大提琴與 Olaf Rupp 原聲吉他的錄音室二重奏（FMP 晚期），急躁弦樂對話",
+   "moodGuess": {
+    "x": 3.7,
+    "y": -1.1,
+    "z": -1.6,
+    "why": "大提琴＋吉他，急刮撥奏、密集碎點，乾、無主題"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/075db41c-9a42-4eac-bffe-f051cb729cbb",
+    "https://coverartarchive.org/release-group/075db41c-9a42-4eac-bffe-f051cb729cbb/front",
+    "https://www.discogs.com/release/2750367"
+   ],
+   "mbRgMbid": "075db41c-9a42-4eac-bffe-f051cb729cbb",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Abbey Rader & Billy Bang",
+   "album": "Echoes",
+   "year": 1999,
+   "label": "Abray Productions",
+   "country": "us",
+   "faction": "duo",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Billy Bang 與鼓手 Rader 的小提琴＋鼓錄音室二重奏，無和聲的自由即興",
+   "moodGuess": {
+    "x": 3.7,
+    "y": -0.4,
+    "z": -1,
+    "why": "小提琴＋鼓，鼓推、小提琴尖嘶，乾"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/47ffa022-701c-407b-ba0d-ee71c2256ffb",
+    "https://coverartarchive.org/release-group/47ffa022-701c-407b-ba0d-ee71c2256ffb/front",
+    "https://www.discogs.com/master/870222"
+   ],
+   "mbRgMbid": "47ffa022-701c-407b-ba0d-ee71c2256ffb",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Bang 同人池中 z −1.2；二重奏若有旋律主題恐判暖（z）"
+  },
+  {
+   "artist": "Fred Lonberg-Holm",
+   "album": "Site-Specific: Duets for Cello and Guitar",
+   "year": 2000,
+   "label": "Explain",
+   "country": "us",
+   "faction": "duo",
+   "genres": [
+    "jazz"
+   ],
+   "why": "芝加哥大提琴手 Lonberg-Holm 與多位吉他手的大提琴＋吉他二重奏集，刮擦噪音型即興",
+   "moodGuess": {
+    "x": 3.5,
+    "y": -0.8,
+    "z": -1.6,
+    "why": "大提琴＋吉他，刮擦噪點、急躁短段，乾、無調"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/aeea61a6-757b-327e-bda5-5ecddc7a2ac5",
+    "https://www.discogs.com/release/694237"
+   ],
+   "mbRgMbid": "aeea61a6-757b-327e-bda5-5ecddc7a2ac5",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Fred Lonberg-Holm and Nick Stephens",
+   "album": "Crackle: Six improvisations for Cello and Double Bass",
+   "year": 2014,
+   "label": "Loose Torque",
+   "country": "us",
+   "faction": "duo",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Lonberg-Holm 大提琴與 Nick Stephens 低音提琴的二重奏（Loose Torque），六段弦樂即興",
+   "moodGuess": {
+    "x": 3.5,
+    "y": -0.3,
+    "z": -1.6,
+    "why": "大提琴＋低音提琴，刮弓與撥奏，乾、無主題"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/48b846f5-e3c8-4b19-9d1b-e1e106de57a0",
+    "https://coverartarchive.org/release-group/48b846f5-e3c8-4b19-9d1b-e1e106de57a0/front",
+    "https://www.discogs.com/release/5752689"
+   ],
+   "mbRgMbid": "48b846f5-e3c8-4b19-9d1b-e1e106de57a0",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Loose Torque CDr；低音提琴弓壓可能推 y"
+  },
+  {
+   "artist": "David Stackenäs + Fred Lonberg-Holm",
+   "album": "Stackenäs + Lonberg-Holm",
+   "year": 2004,
+   "label": "Flying Aspidistra",
+   "country": "se",
+   "faction": "duo",
+   "genres": [
+    "jazz"
+   ],
+   "why": "瑞典吉他手 Stackenäs 與 Lonberg-Holm 大提琴的二重奏（Flying Aspidistra），直錄 DAT 的乾尖即興",
+   "moodGuess": {
+    "x": 3.4,
+    "y": -0.7,
+    "z": -1.7,
+    "why": "吉他＋大提琴，刮擦碎點，乾、無調"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/cacc0678-2886-4868-a975-9a3f124913a9",
+    "https://www.discogs.com/release/3727737"
+   ],
+   "mbRgMbid": "cacc0678-2886-4868-a975-9a3f124913a9",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "CDr；聲音細節缺來源"
+  },
+  {
+   "artist": "John Russell & Roger Turner",
+   "album": "The Second Sky",
+   "year": 2001,
+   "label": "Emanem",
+   "country": "gb",
+   "faction": "duo",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Russell 原聲吉他與 Roger Turner 打擊的錄音室二重奏（Emanem），點描碎拍的英國即興",
+   "moodGuess": {
+    "x": 3.7,
+    "y": -1,
+    "z": -1.7,
+    "why": "原聲吉他＋碎打擊，急促點描，極乾、無調"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/57008734-2098-4470-b184-d267df0eecc6",
+    "https://www.discogs.com/release/594343"
+   ],
+   "mbRgMbid": "57008734-2098-4470-b184-d267df0eecc6",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Dominic Duval & Jason Kao Hwang",
+   "album": "The Experiment",
+   "year": 2000,
+   "label": "Blue Jackel",
+   "country": "us",
+   "faction": "duo",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Duval 低音提琴與 Jason Kao Hwang 小提琴的錄音室二重奏，無疊錄的弦樂自由即興",
+   "moodGuess": {
+    "x": 3.6,
+    "y": -0.6,
+    "z": -1.4,
+    "why": "低音提琴＋小提琴，弓擦對刮、急促，乾、無主題"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/09b401dc-c761-3cb5-b273-a7d6a4817456",
+    "https://www.discogs.com/release/1122292"
+   ],
+   "mbRgMbid": "09b401dc-c761-3cb5-b273-a7d6a4817456",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Tatsuya Nakatani & Peter Kowald",
+   "album": "13 Definitions of Truth",
+   "year": 2003,
+   "label": "Quakebasket",
+   "country": "de",
+   "faction": "duo",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Kowald 晚期與 Nakatani 打擊的錄音室二重奏（Quakebasket），弓擦鑼片與低音提琴刮擦",
+   "moodGuess": {
+    "x": 3.4,
+    "y": -0.4,
+    "z": -1.8,
+    "why": "低音提琴＋弓擦金屬，尖嘯摩擦、無調，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/be11e416-a68f-3348-ae15-45d7f3fb4de1",
+    "https://www.discogs.com/release/1130360-Tatsuya-Nakatani-Peter-Kowald-13-Definitions-Of-Truth"
+   ],
+   "mbRgMbid": "be11e416-a68f-3348-ae15-45d7f3fb4de1",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "弓擦金屬長音段可能偏靜（x）"
+  },
+  {
+   "artist": "Lauren Newton & Joëlle Léandre",
+   "album": "18 Colors",
+   "year": 1997,
+   "label": "Leo Records",
+   "country": "us",
+   "faction": "duo",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Newton 擴展人聲與 Léandre 低音提琴＋人聲的十八段短二重奏（Leo），直錄 DAT 無疊錄",
+   "moodGuess": {
+    "x": 3.6,
+    "y": -0.8,
+    "z": -1.6,
+    "why": "人聲＋低音提琴，尖叫碎音與刮弦，乾、無調"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/ae012342-1e45-31a4-9a13-803e0332e45b",
+    "https://coverartarchive.org/release-group/ae012342-1e45-31a4-9a13-803e0332e45b/front",
+    "https://www.discogs.com/release/2455984"
+   ],
+   "mbRgMbid": "ae012342-1e45-31a4-9a13-803e0332e45b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Joëlle Léandre, Alexandra Grimal",
+   "album": "Désordre",
+   "year": 2019,
+   "label": "Montagne Noire",
+   "country": "fr",
+   "faction": "duo",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Léandre 與法國薩克斯風手 Grimal 的錄音室二重奏（Montagne Noire），十五段短即興",
+   "moodGuess": {
+    "x": 3.5,
+    "y": -0.6,
+    "z": -1.5,
+    "why": "低音提琴＋薩克斯風，尖嘯與刮弦短段，乾、無主題"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/df8fe94f-724c-4dd6-adde-c0d8a253e361",
+    "https://coverartarchive.org/release-group/df8fe94f-724c-4dd6-adde-c0d8a253e361/front",
+    "https://www.discogs.com/release/14306515",
+    "https://www.discogs.com/release/14306515-Joëlle-Léandre-Alexandra-Grimal-Désordre"
+   ],
+   "mbRgMbid": "df8fe94f-724c-4dd6-adde-c0d8a253e361",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Joëlle Léandre / Gianni Lenoci",
+   "album": "Sur Une Balançoire",
+   "year": 2004,
+   "label": "Ambiances Magnétiques",
+   "country": "fr",
+   "faction": "duo",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Léandre 與義大利鋼琴手 Lenoci 的錄音室二重奏（Ambiances Magnétiques），十多段短即興",
+   "moodGuess": {
+    "x": 3.5,
+    "y": -0.8,
+    "z": -1.4,
+    "why": "低音提琴＋鋼琴，碎音對話、無調，乾"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/ee344c7e-2f01-4bd1-8209-4316aca05cb5",
+    "https://www.discogs.com/release/2369598",
+    "https://www.discogs.com/release/2369598-Joëlle-Léandre-Gianni-Lenoci-Sur-Une-Balançoire"
+   ],
+   "mbRgMbid": "ee344c7e-2f01-4bd1-8209-4316aca05cb5",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Fred Frith / Joëlle Léandre / Jonathan Segel",
+   "album": "Tempted to Smile",
+   "year": 2003,
+   "label": "Spool",
+   "country": "gb",
+   "faction": "small",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Frith 吉他、Léandre 低音提琴、Segel 小提琴的全弦樂三重奏（Spool），錄音室自由即興",
+   "moodGuess": {
+    "x": 3.6,
+    "y": -0.2,
+    "z": -1.6,
+    "why": "三件弦樂，刮擦與吉他噪點交織，無鼓，乾、無調"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/b5da3cd7-88ed-45ca-b72f-a539f5d95888",
+    "https://coverartarchive.org/release-group/b5da3cd7-88ed-45ca-b72f-a539f5d95888/front",
+    "https://www.discogs.com/release/1809639"
+   ],
+   "mbRgMbid": "b5da3cd7-88ed-45ca-b72f-a539f5d95888",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Frith 若用電吉他效果器，y 可能偏高"
+  },
+  {
+   "artist": "Barry Guy / Howard Riley / Philipp Wachsmann",
+   "album": "Improvisations Are Forever Now (1977-9)",
+   "year": 1978,
+   "label": "Vinyl Records",
+   "country": "gb",
+   "faction": "small",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Guy、Riley、Wachsmann 的低音提琴＋鋼琴＋小提琴三重奏，1977 錄音室即興，無鼓的英國室內自由即興",
+   "moodGuess": {
+    "x": 3.6,
+    "y": -0.6,
+    "z": -1.6,
+    "why": "無鼓三重奏，小提琴尖刮、鋼琴無調碎音，乾"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/7d6da287-1d5b-3d81-bf9f-94649d00ede4",
+    "https://coverartarchive.org/release-group/7d6da287-1d5b-3d81-bf9f-94649d00ede4/front",
+    "https://www.discogs.com/master/479421"
+   ],
+   "mbRgMbid": "7d6da287-1d5b-3d81-bf9f-94649d00ede4",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Wachsmann, Taylor, Mattos, Brighton",
+   "album": "Strings",
+   "year": 2018,
+   "label": "FMR Records",
+   "country": "gb",
+   "faction": "small",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Wachsmann 小提琴、Mattos 大提琴、Brighton 吉他與 Taylor 的弦樂四重即興（FMR），錄音室",
+   "moodGuess": {
+    "x": 3.5,
+    "y": -0.6,
+    "z": -1.7,
+    "why": "弦樂為主四人，刮擦點描交織，乾、無調"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/baf235c7-e0e8-4d24-af34-503fa875cadf",
+    "https://www.discogs.com/master/1600775"
+   ],
+   "mbRgMbid": "baf235c7-e0e8-4d24-af34-503fa875cadf",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Perelman • Maneri • Feldman • Hwang",
+   "album": "Strings 1",
+   "year": 2018,
+   "label": "Leo Records",
+   "country": "br",
+   "faction": "small",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Perelman 薩克斯風與 Maneri、Feldman、Hwang 三把弦樂的錄音室即興（Leo），無節奏組",
+   "moodGuess": {
+    "x": 3.6,
+    "y": -0.6,
+    "z": -1.6,
+    "why": "薩克斯風＋三把弦樂，高音尖嘯纏繞，無鼓，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/413e83db-281d-4ff9-afb6-bf0e2cb9ccd3",
+    "https://coverartarchive.org/release-group/413e83db-281d-4ff9-afb6-bf0e2cb9ccd3/front",
+    "https://www.discogs.com/release/12797441"
+   ],
+   "mbRgMbid": "413e83db-281d-4ff9-afb6-bf0e2cb9ccd3",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "同人與 Maneri 二重奏池中 x 3.1"
+  },
+  {
+   "artist": "Perelman • Maneri • Roberts • Rothenberg",
+   "album": "Strings 2",
+   "year": 2018,
+   "label": "Leo Records",
+   "country": "br",
+   "faction": "small",
+   "genres": [
+    "jazz"
+   ],
+   "why": "《Strings》系列第二張：Perelman、Maneri 中提琴、Hank Roberts 大提琴與 Rothenberg 的錄音室即興（Leo）",
+   "moodGuess": {
+    "x": 3.6,
+    "y": -0.5,
+    "z": -1.6,
+    "why": "薩克斯風＋中提琴＋大提琴，尖線纏繞，無鼓，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/26384308-f92b-4450-97d3-198a2e56e183",
+    "https://coverartarchive.org/release-group/26384308-f92b-4450-97d3-198a2e56e183/front",
+    "https://www.discogs.com/release/12797559"
+   ],
+   "mbRgMbid": "26384308-f92b-4450-97d3-198a2e56e183",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "同上"
+  },
+  {
+   "artist": "The Mat Maneri Trio featuring Randy Peterson and Ed Schuller",
+   "album": "Fever Bed",
+   "year": 1996,
+   "label": "Leo Lab",
+   "country": "us",
+   "faction": "small",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Mat Maneri 首張個人盤（Leo Lab），小提琴＋貝斯＋鼓的微分音自由即興",
+   "moodGuess": {
+    "x": 3.4,
+    "y": -0.3,
+    "z": -1.5,
+    "why": "小提琴領奏三重奏，碎鼓、微分音尖線，乾、無主題"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/935916dd-8bbb-448c-a224-41fd31bf64b7",
+    "https://coverartarchive.org/release-group/935916dd-8bbb-448c-a224-41fd31bf64b7/front",
+    "https://www.discogs.com/release/2499814-Mat-Maneri-Trio-Fever-Bed"
+   ],
+   "mbRgMbid": "935916dd-8bbb-448c-a224-41fd31bf64b7",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Maneri 風格偏慢而幽，x 可能偏低；末兩曲借 Rollins／Mahler 題"
+  },
+  {
+   "artist": "Kevin Norton / Joëlle Léandre / Tomas Ulrich",
+   "album": "Ocean of Earth",
+   "year": 2003,
+   "label": "Barking Hoop",
+   "country": "us",
+   "faction": "small",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Norton 顫音琴＋打擊、Léandre 低音提琴、Tomas Ulrich 大提琴的錄音室三重奏（Barking Hoop）",
+   "moodGuess": {
+    "x": 3.4,
+    "y": -0.8,
+    "z": -1.5,
+    "why": "顫音琴＋兩把弦樂，金屬敲擊與刮弦，乾、無調"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/ead910d4-7d40-419f-a9cd-1504f1a56cc4",
+    "https://coverartarchive.org/release-group/ead910d4-7d40-419f-a9cd-1504f1a56cc4/front",
+    "https://www.discogs.com/release/2781089"
+   ],
+   "mbRgMbid": "ead910d4-7d40-419f-a9cd-1504f1a56cc4",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "顫音琴段可能偏柔（x）"
+  },
+  {
+   "artist": "Rodrigo Amado / Carlos Zíngaro / Ken Filiano",
+   "album": "The Space Between",
+   "year": 2003,
+   "label": "Clean Feed",
+   "country": "pt",
+   "faction": "small",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Amado 薩克斯風、Zíngaro 小提琴、Filiano 低音提琴的無鼓錄音室三重奏（Clean Feed）",
+   "moodGuess": {
+    "x": 3.7,
+    "y": -0.3,
+    "z": -1.5,
+    "why": "無鼓三重奏，小提琴尖刮與次中音嘶吼，乾"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/aed6172c-3215-4f79-ac9a-3253ab428b75",
+    "https://www.discogs.com/release/2139704"
+   ],
+   "mbRgMbid": "aed6172c-3215-4f79-ac9a-3253ab428b75",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Vinny Golia / Joëlle Léandre / Ken Filiano",
+   "album": "Haunting the Spirits Inside Them...",
+   "year": 1995,
+   "label": "Music & Arts",
+   "country": "us",
+   "faction": "small",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Golia 木管、Léandre 與 Filiano 兩把低音提琴的無鼓錄音室三重奏（Music & Arts）",
+   "moodGuess": {
+    "x": 3.6,
+    "y": -0.3,
+    "z": -1.5,
+    "why": "木管＋兩把低音提琴，尖嘯與刮弦，無鼓，乾"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/ad7555a3-2af2-489d-98f4-ad326008e434",
+    "https://www.discogs.com/release/3064465"
+   ],
+   "mbRgMbid": "ad7555a3-2af2-489d-98f4-ad326008e434",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "兩把低音提琴，y 可能偏高"
+  },
+  {
+   "artist": "Peter Kowald, Miya Masaoka, Gino Robair",
+   "album": "Illuminations (Several Views)",
+   "year": 2003,
+   "label": "Rastascan Records",
+   "country": "de",
+   "faction": "small",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Kowald 低音提琴、Miya Masaoka 箏與 Gino Robair 打擊的錄音室三重奏（Rastascan），二十多段短景",
+   "moodGuess": {
+    "x": 3.5,
+    "y": -0.5,
+    "z": -1.7,
+    "why": "低音提琴＋箏＋打擊，撥刮碎點，乾、無調"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/841151c1-6ab0-44f3-bfa2-8cffca3ef415",
+    "https://coverartarchive.org/release-group/841151c1-6ab0-44f3-bfa2-8cffca3ef415/front",
+    "https://www.discogs.com/release/2105014-Peter-Kowald-Miya-Masaoka-Gino-Robair-Illuminations-Several-Views"
+   ],
+   "mbRgMbid": "841151c1-6ab0-44f3-bfa2-8cffca3ef415",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  }
+ ],
+ "notes": [
+  "主場景挖到 46 張＋擴寫 6（吉他 3、當代 3）共 51，不足 54 照實交，不湊數。",
+  "擋下（未提）：現場盤 21 張（Discogs 記事載明：Léandre《No Comment》《Cordial Gratin》《Journey》《Kor》《Face It!》《Transatlantic Visions》、Kowald／Phillips《Random Generators》、Kowald／Altena、Bailey／Phillips《Figuring》、Wadud／Jenkins《Straight Ahead》、Jenkins《Solo》、Bang《Distinction Without a Difference》、Oxley／Wachsmann、Wachsmann《Chathuna》、Zíngaro《Spectrum》、Maneri《Out Right Now》、Hemphill／Wadud、Parker《Testimony》、Kaiser《Outside Pleasure》、LaDonna Smith《Eye of the Storm》、Phillips《Camouflage》）。",
+  "擋下（聲音）：雙低音提琴與教堂殘響（Guy／Phillips《Arcus》、Holland／Phillips、Phillips《Journal Violone》、Phillips／吉沢、Dresser／Helias）恐判重或判靜；Mat Maneri ECM 系（Trinity、Blessed）與《Fifty-One Sorrows》《Personal Myths》偏慢幽恐判靜；Feldman《Music for Violin Alone》同人池中 x 3.1–3.2 貼邊；Léandre《Contrebassiste》磁帶疊錄恐判重；Lonberg-Holm Valentine Trio 翻唱判暖；Jarman／Jenkins《Out of the Mist》冥想式；Revolutionary Ensemble《The People's Republic》mc3 已判靜；《Play 'em as They Fall》池中已在（今井和雄）。",
+  "WebSearch 0 次；身分全部 MB 釘住，現場判定靠 MB→Discogs 記事。CDr 正規編號作品 5 張（August Steps、Alizarin、Imagined Time 為 Bead 正規編號 CDr、Crackle 為 Loose Torque CDr、Stackenäs+LH 為 Flying Aspidistra CDr）。"
+ ]
+}

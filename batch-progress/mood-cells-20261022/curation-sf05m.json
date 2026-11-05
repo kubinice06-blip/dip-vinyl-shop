@@ -1,0 +1,179 @@
+{
+ "group": "sf05m",
+ "factions": [
+  {
+   "id": "tw-pop",
+   "zh": "台灣華語流行／R&B／嘻哈",
+   "count": 0,
+   "why": "主線補收（策展層誤判已在池或只有單曲）"
+  },
+  {
+   "id": "tw-indie",
+   "zh": "台灣獨立／另類",
+   "count": 0,
+   "why": ""
+  }
+ ],
+ "albums": [
+  {
+   "artist": "Layton Wu",
+   "album": "Blue Jeans",
+   "year": 2024,
+   "label": "Layton Wu",
+   "country": "tw",
+   "faction": "tw-indie",
+   "genres": [
+    "rock",
+    "pop"
+   ],
+   "why": "台灣創作者 Layton Wu（雷頓狗）首張正規專輯，11 首，此前只有單曲與 EP",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 0.0,
+    "z": 0.3,
+    "why": "lo-fi 臥室吉他流行，鬆散溫和"
+   },
+   "evidence": [
+    "https://music.apple.com/tw/album/blue-jeans/1749843398",
+    "https://musicbrainz.org/release-group/e74f5294-bfa5-49c0-a00d-1830563f85f4"
+   ],
+   "spotifyName": "Layton Wu",
+   "mbRgMbid": "e74f5294-bfa5-49c0-a00d-1830563f85f4",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "雷頓狗",
+   "uncertain": "Layton Wu 非吳卓源（Julia Wu）；PLAN 的等號有誤，主線改判"
+  },
+  {
+   "artist": "YELLOW黃宣",
+   "album": "浮世擊",
+   "year": 2020,
+   "label": "WRONGTYPE",
+   "country": "tw",
+   "faction": "tw-pop",
+   "genres": [
+    "soul",
+    "jazz"
+   ],
+   "why": "黃宣首張個人正規專輯，金曲獎多項入圍，爵士放克 R&B 融合",
+   "moodGuess": {
+    "x": 3.0,
+    "y": 0.3,
+    "z": 0.4,
+    "why": "爵士放克 R&B、變拍與復古收音機過場"
+   },
+   "evidence": [
+    "https://music.apple.com/tw/album/%E6%B5%AE%E4%B8%96%E6%93%8A/1534838105",
+    "https://musicbrainz.org/release-group/45f2bbe7-6c64-4758-b184-46a95c102262"
+   ],
+   "spotifyName": "YELLOW黃宣",
+   "mbRgMbid": "45f2bbe7-6c64-4758-b184-46a95c102262",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "KUNG 龔敬文",
+   "album": "甲洨斯丁",
+   "year": 2022,
+   "label": "TheDreamPursuer Studio",
+   "country": "tw",
+   "faction": "tw-pop",
+   "genres": [
+    "hiphop"
+   ],
+   "why": "龔敬文唯一正規專輯（14 首），台語饒舌",
+   "moodGuess": {
+    "x": 3.3,
+    "y": 0.3,
+    "z": 0.2,
+    "why": "台語饒舌、trap 鼓"
+   },
+   "evidence": [
+    "https://music.apple.com/tw/album/1635515472",
+    "https://music.apple.com/tw/artist/1423596323"
+   ],
+   "spotifyName": "KUNG 龔敬文",
+   "mbRgMbid": "",
+   "mbAbsenceProof": "MusicBrainz artist/release-group 查詢（2026-10-30，主線）無此藝人／專輯",
+   "manualEvidenceUrls": [
+    "https://music.apple.com/tw/album/1635515472",
+    "https://music.apple.com/tw/artist/1423596323"
+   ],
+   "releaseException": "",
+   "queryAlias": "龔敬文",
+   "uncertain": ""
+  },
+  {
+   "artist": "潮州土狗",
+   "album": "狗狗歷險記",
+   "year": 2022,
+   "label": "Chill Entertainment",
+   "country": "tw",
+   "faction": "tw-pop",
+   "genres": [
+    "hiphop"
+   ],
+   "why": "潮州土狗唯一正規專輯（8 首），台語詼諧饒舌",
+   "moodGuess": {
+    "x": 3.4,
+    "y": 0.2,
+    "z": 0.3,
+    "why": "詼諧台語饒舌、彈跳 beat"
+   },
+   "evidence": [
+    "https://music.apple.com/tw/album/1659589967",
+    "https://music.apple.com/tw/artist/1547663854"
+   ],
+   "spotifyName": "潮州土狗",
+   "mbRgMbid": "",
+   "mbAbsenceProof": "MusicBrainz artist/release-group 查詢（2026-10-30，主線）無此藝人／專輯",
+   "manualEvidenceUrls": [
+    "https://music.apple.com/tw/album/1659589967",
+    "https://music.apple.com/tw/artist/1547663854"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "諾頓街",
+   "album": "街拍",
+   "year": 2025,
+   "label": "Norton Street",
+   "country": "tw",
+   "faction": "tw-indie",
+   "genres": [
+    "pop",
+    "soul"
+   ],
+   "why": "諾頓街首張正規專輯（13 首），此前只有單曲",
+   "moodGuess": {
+    "x": 2.8,
+    "y": 0.1,
+    "z": 0.6,
+    "why": "城市流行與靈魂律動"
+   },
+   "evidence": [
+    "https://music.apple.com/tw/album/1819473884",
+    "https://music.apple.com/tw/artist/1561914967"
+   ],
+   "spotifyName": "Norton Street 諾頓街",
+   "mbRgMbid": "",
+   "mbAbsenceProof": "MusicBrainz artist/release-group 查詢（2026-10-30，主線）無此藝人／專輯",
+   "manualEvidenceUrls": [
+    "https://music.apple.com/tw/album/1819473884",
+    "https://music.apple.com/tw/artist/1561914967"
+   ],
+   "releaseException": "",
+   "queryAlias": "Norton Street",
+   "uncertain": ""
+  }
+ ],
+ "notes": [
+  "主線補收 5 張：Layton Wu（策展層誤認吳卓源）、YELLOW黃宣（ml20 研究層汰掉、池中無）、KUNG 龔敬文《甲洨斯丁》、潮州土狗《狗狗歷險記》、諾頓街《街拍》（策展層只見單曲，Apple 藝人目錄 lookup 查得正規專輯）"
+ ]
+}

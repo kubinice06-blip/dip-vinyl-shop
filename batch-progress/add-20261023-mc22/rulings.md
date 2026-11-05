@@ -1,0 +1,127 @@
+# add-20261023-mc22 裁定（情緒薄格策展線・冷冽：當代前衛爵士＋mc31 AACM／loft 剩餘）
+
+> 店主 2026-10-23「三個情緒薄格各補到約 2,000；收窄到大場景、3 個工作階段並行」，本工作階段負責 ml40、mc22。場景與條號 `batch-progress/mood-cells-20261022/SCENES.md`（mc22 列，可擴寫 mc31 剩餘），交接 `batch-progress/HANDOFF-mood-cells-line.md`。目標格：**冷冽＝躁（x≥3.0）＋輕（y<0.5）＋冷（z<0）**；策展邊距 x≥3.3、y≤+0.2、z≤−0.3。評分照 `score500/BRIEF.md` 10-23 體感標準（能量＝體感、色溫＝聲響溫度＋旋律清楚度）。
+> 策展：`curation-mc22.json`（54）→ 主線汰 9（`master-override-mc22.json`）→ `master-mc22.json`（MB 回查 45/45 釘住、人工 0；flag 2 見下）→ `pick.json`（45）→ `build-cards.mjs`。
+> 本批卡單：`desc-tools/batches/cards/add-20261023-mc22-cards.json`（45 張；研究 a–e 各 9）。身分：MB 釘住 45、§1 人工 0。
+> **預留：研究 a 12681–12690、b 12691–12700、c 12701–12710、d 12711–12720、e 12721–12730、鉤子 12731–12740、寫作 12741–12750、主線 12751–12760。**
+---
+
+## 主線策展（不佔條號）
+- 策展 54（Pi／M-Base 後裔 25、downtown／Screwgun–Intakt 圈 19、新一代擴展技法 8、mc31 剩餘 2），moodGuess 全過邊距（x 3.3–4.1、y −0.8～+0.1、z −1.5～−0.4）。
+- 池中同人三軸：Tim Berne《Mutant Variations》x 3.1 冷冽、Steve Lehman Octet《Mise en Abîme》冷冽、Halvorson 三張兩張冷冽一張放鬆、Sorey 兩張 x 3.0 冷冽、Iyer 兩張平靜一張冷冽、Threadgill 一張雀躍一張平靜、Kris Davis《Diatom Ribbons》y 0.6 暴躁、Taborn《Daylight Ghosts》平靜、Roscoe Mitchell 全冷冽。
+- **主線汰 9**：Kris Davis《Capricorn Climber》（x 3.3 貼邊，池中 Davis 判重）；Sylvie Courvoisier Trio《Double Windsor》、Courvoisier《Lonelyville》（x 3.3 貼邊、鋼琴三重奏／室內樂）；Liberty Ellman《Ophiuchus Butterfly》（x 3.3、z −0.5 雙貼邊）；Steve Coleman《Functional Arrhythmias》（近 funk 律動，z −0.4 恐回暖）；Zooid《This Brings Us To, Vol. I》（x 3.3，池中 Threadgill 一雀躍一平靜，Zooid 留兩張）；Laubrock Anti-House《Roulette of the Cradle》（x 3.3，同團留兩張）；Vijay Iyer《Panoptic Modes》（池中 Iyer 兩張判靜）；Matt Mitchell《A Pouting Grimace》（十餘人編制，y 恐判重）。
+- **MB flag**：Fieldwork《Simulated Progress》MB first-release 2016（數位重發），原盤 2005 Pi，卡單取 2005；Tom Rainey Trio《Hotel Grief》MB 無日期、疑似現場，研究層核對。Braxton《Dortmund (Quartet) 1976》MB 標 Live（1976 現場、1991 hat ART 首發），比照池中《Montreux/Berlin Concerts》收。
+
+## 研究 c 組（12701–12710）
+- 12701：Phalanx Ambassadors 卡單 curatorWhy 寫吉他是 Halvorson，實為 Miles Okazaki（Pi 官網）；facts 照官網，鐵琴改稱顫音琴與馬林巴。
+- 12702：Tragicomic moodGuess 存疑（中度）：樂評稱「更多靈魂與溫度、以旋律主題為中心」，且有 dub 版〈Comin' Up〉與鋼琴獨奏；列汰換候補。
+- 12703：Blood Sutra moodGuess 存疑（輕度，Chinen「eminently listenable」）；Vista Accumulation 存疑（輕度，96 分鐘長篇、有鋼琴與弓拉貝斯冥想段）；Tamarindo 存疑（輕度，哀歌式主題、安靜開頭）；Strong Place 存疑（輕度，Collins 稱比前作更沉思）。
+- 12704：Phalanx Ambassadors 含 fuzz 吉他、Mellotron、Prophet-6、雙打擊音軌，若評分聽出持續失真／重 groove 恐判重，備註。
+- 12705：Anti-House（2010）Kris Davis 客席曲目 MB 未標，facts 只寫「約一半」；Mannequins 查無獨立樂評，聲音條偏薄。年榜名次（NPR 2017 第 50）只留 notes。
+- 12706：Mannequins MB release 無廠牌欄，以 Bandcamp 標 Skirl Records 為準。Blood Sutra 2003 Artists House 為原版、2006 Pi PI901 為再版，卡單取原版。
+
+## 研究 a 組（12681–12690）
+- 12681：Fractured Fairy Tales 推翻卡單 moodGuess.why「無貝斯」——Mark Dresser 彈低音提琴（Discogs／Wikipedia 一致），實為六人編制含小號、小提琴、電子處理大提琴與 CZ-101 合成器；仍屬尖細乾聲部，僅低頻有支撐，輕度存疑。jazz.com 稱本盤為 Miniature 名義，與 Discogs／Wikipedia 不符，棄用。
+- 12682：Sanctified Dreams 年份：MB／卡單 1987 為錄音年（1987-10-13～15 Power Station），Discogs、AllMusic、Wikipedia 年表皆作 1988 年發行；建議卡片年份改 1988（可逆欄位）。曲名採 Discogs「Mag's Groove」。聲音事實僅有編制與曲長，AllMusic／AAJ 403 打不開，偏薄。
+- 12683：Big Satan 首作為 1996-02-08～10 巴黎 Instants Chavirés 現場錄音（Winter & Winter），Discogs 盤名無逗號；Ducret 失真程度無獨立來源，moodGuess 存疑（輕度，77 分鐘長曲）。
+- 12684：Souls Saved Hear 錄音日期 Discogs 內頁自相矛盾（2004-06 錄音 vs 2004-02 混音），facts 不寫錄音年；聲音描述僅 Wikipedia 引文，偏薄。
+- 12685：The Shell Game 錄音年份 Wikipedia（2000）與 Discogs（2001-01/02）不一，facts 不寫；Taborn 電子層是否有低頻厚墊未證實，存疑（輕度）。
+- 12686：Dialect Fluorescent moodGuess 存疑（中度，建議主線復核 z）：九首裡四首翻奏（Coltrane〈Moment's Notice〉、Pearson〈Jeannine〉、〈Pure Imagination〉、McLean〈Mr. E〉）主題可辨，Pi 文案稱「grooving」，Francis Davis 稱有 McLean 早期 Blue Note 味，判暖風險。
+- 12687：On Meaning Discogs 無頁，聲音事實全來自 Pi 官方文案；文案稱含 danceable、groove-based 素材，存疑（輕度，判重風險）。
+- 12688：Demian as Posthuman moodGuess 存疑（中度）：Ndegeocello 電貝斯三首提供穩定律動、電子編程有低頻、Pi 稱「ambient, non-soloistic」，y 與 x 恐偏高偏低，建議復核。日期衝突：Pi 稱五重奏曲錄於 summer 2005，Discogs 內頁 3 月 27 日，採 Discogs。
+- 12689：The People I Love 存疑（中度）：十首中四首他人曲（Autechre、Rosenwinkel、Watts、Kirkland），含三首極短插段與 Lehman／Taborn 二重奏、保留排練錄音與笑聲，判靜或判暖風險；建議復核。
+- 12690：本組九張身分全部與卡單相符（盤名、年份、廠牌），僅 Sanctified Dreams 發行年（12682）與 Fractured Fairy Tales 編制（12681）推翻策展層；QA 研究 a 組 9 張全 full、無標記。
+
+## 研究 b 組（12691–12700）
+- 12691：Dragon's Head 策展層寫鼓手 Fujiwara——錯，實為 Ches Smith（Fujiwara 是 Thumbscrew）；貝斯 Hébert 正確。錄音 2008-02-24/25 Firehouse 12。聲音一手描述少（吉他效果器無來源），sound 欄只依編制與廠方結構說明。
+- 12692：Fieldwork《Door》實為第三張（策展層寫第二張），2007-12-21 錄、2008-04-22 Pi PI26；MB 2008-01-23 與廠方日期不同，年份同為 2008。Pi 頁引 JazzTimes「effortlessly funky」，輕度提示律動感。《Simulated Progress》MB 2016 為數位重發，原盤 Pi PI16 2005-07-19，卡單 2005 維持；同樣有「funky」「Infogee Dub」嘻哈電子元素，moodGuess 輕度存疑。
+- 12693：Tom Rainey Trio《Hotel Grief》確認為現場錄音（2013-12-30 Cornelia Street Café，Intakt 2015-09-15）；策展層「全即興」「效果器」「尖嘯」無來源，改以三人共同作曲陳述。MB 未標 Live，比照 Braxton《Dortmund》處理。
+- 12694：《Combobulated》也是現場錄音（2017-09-15 Firehouse 12，David Torn 後製，Intakt 2019-02-08），策展層未提；status thin（樂評一手全 403）。
+- 12695：《Camino Cielo Echo》策展層寫「全即興」——錯，Bandcamp 曲目逐首署名作曲（Rainey 5、Halvorson 4、Laubrock 4）。
+- 12696：《Pool School》Discogs 顯示 12 首為三人署名作曲、3–7 分短曲，非長段即興；錄音日期衝突（維基導覽框 2009、Discogs 備註 2010-09-04），facts 不寫日期，只取發行年 2010。status thin。
+- 12697：Thumbscrew 局部有重段（Textura：〈Cheap Knock Off〉中段近重金屬、〈Nothing Doing〉偏重帶 funk）；全盤原聲低音＋乾淨吉他，moodGuess 大致成立，x 3.4 邊距窄屬實。
+- 12698：Oblique - I 編制含 Fender Rhodes／Wurlitzer 電鋼琴與電吉他，Pi 稱有「旋律性曲調」，曲長 3:40–12:03、全長約 77 分，非純快盤；moodGuess 存疑（電鋼琴音色與旋律性可能偏暖，開放式即興段可能偏靜）。
+- 12699：WebSearch 本組用 3 次，其餘走 WebFetch／MB／Discogs API／Bandcamp；AAJ、Squidco、Jazzwise 多為 403/503，Jazzwise 評分取自搜尋摘要。
+
+## 研究 d 組
+- 12711 Codebook：卡單 why 的鼓手 Damion Reid 錯，實為 Dan Weiss（Discogs／Pi）；其餘不推翻。moodGuess 輕度存疑（〈D (Dee-Dee)〉hard bop 搖擺、空間較前作多）。
+- 12712 Mother Tongue：MB 2004-06-15 疑為錄音日誤植，Pi 官方發行 2004-10-19；年份 2004 不變。語音轉寫旋律辨識度高，z −0.5 存疑偏暖，交主線評分裁。
+- 12713 Zooid《Tomorrow Sunny》：「第五張」序數查無來源不採；「木吉他」未證實。無明顯存疑。
+- 12714 Zooid《In for a Penny》：Pulitzer 2016 為得獎（Wikipedia；pulitzer.org 403）。五人編制（無 Takeishi）。《衛報》稱「welcomingly warm and melodious」，moodGuess 存疑偏暖；長樂章中大提琴等段可能偏緩，來源未證。
+- 12715 Peter Evans《Nature/Culture》：雙碟（錄音室＋I-Beam 現場）。〈Micro〉〈The Chamber〉〈Five〉近靜、慢，moodGuess 存疑（判靜風險中）。「獨奏第二張」查無來源不採。
+- 12716 Evans Quintet《Ghosts》：〈Ghost〉〈Stardust〉為平靜貼近標準曲旋律的短曲（約 8／58 分鐘），輕度存疑偏暖；主體混亂碎尖。
+- 12717 Evans Quintet《Destination: Void》：無存疑。Herbert 小說為單一樂評說法，僅掛名引述。
+- 12718 Wooley《Knknighgh》：推翻 curatorWhy「尖嘯與噪音技法」（無來源）；Böker 評「lyrical and intimate」「可以很安靜」，moodGuess 存疑偏靜（y 0.1 恐偏高）。
+- 12719 Webber《Clockwise》：curatorWhy 成立且更廣（Xenakis、Feldman、Varèse、Stockhausen、Babbitt、Cage）；無存疑。
+- 12720 預留未用。
+
+## 研究 e 組（12721–12730）
+- 12721 Webber《Shimmer Wince》：無存疑；Intakt 頁標 bass flute，Jazz Journal 寫 baritone flute，採 Intakt。純律加拗拍，局部有搖滾 backbeat（〈Wince〉）與長音開收尾，整體仍落冷冽。
+- 12722 Irabagon《Foxy》：moodGuess 存疑偏暖——Jazz Mann 明載標準曲引句（〈Bewitched, Bothered and Bewildered〉等）與 jump swing 段（〈Biloxi〉）、Free Jazz Blog 稱「bop 樂句與節奏」；同時全盤約 80 分鐘（評論 78–80 不一）持續全速，不靜不重。錄音日期查無，不寫。
+- 12723 Okazaki《Trickster》：moodGuess 存疑偏重——Pi 文案「grooves from beginning to end」、JazzTimes「superhard groove」「see-saw groove」，Tidd／Rickman 有 funk／R&B／hip hop 底子。吉他無失真證據，不寫音色。
+- 12724 Eskelin《One Great Day...》：盤名 MB 兩點、Discogs 三點，採 Discogs 三點；錄音 1996-09-30 Wuppertal Forum（Discogs 備註），發行 1997 hatOLOGY 502。無專屬樂評，聲音描述取自同團 2009 現場盤與後續樂評，已在 notes 標明；〈The Inflated Tear〉為 Roland Kirk 作曲，唯一非 Eskelin 自作，輕度存疑。
+- 12725 Finlayson《Moving Still》：moodGuess 存疑偏暖——PopMatters「most gorgeous, enticing, classic」「gentle chordal intro」「simple melody」「funky but also gentle」。錄音 2016-06-11 Brooklyn Recording（Discogs）。
+- 12726 Finlayson《3 Times Round》：moodGuess 存疑偏暖——Pi 文案「gorgeous harmonies and melodies」、Coleman「impressionistic」；Settles 音色「burry」。錄音 2018-03-05/06。這張是第三張領銜作，前兩張為 Sicilian Defense。Finlayson 與 Coleman 同團年數 Pi 寫 18、JazzTrail 寫 20，採 Pi。
+- 12727 Coleman Natal Eclipse《Morphogenesis》：策展層「無鼓」不精確，是無套鼓、部分曲目有 Neeraj Mehta 打擊。moodGuess 存疑偏靜／輕盈——Pi「more air and transparency」「chamber music」「long lines」，Shyu「ethereal and beautiful」。Pi 頁錯字（Kristen Lee、Moving Still 2015）不採。錄音 2016-09-23 至 25 Systems Two。
+- 12728 Roscoe Mitchell《Conversations I》：棚內錄音 2013-09-13/14 Wide Hive Berkeley，發行 2014-02-04；與 2LP 精選《Conversations》（Discogs 5797300）不同。moodGuess 輕度存疑偏靜（15 分〈Distant Radio Transmission〉、「Sparse」開場），同時有「all hell breaks loose」段。
+- 12729 Braxton《Dortmund (Quartet) 1976》：現場 1976-10-31 Jazz Life Dortmund（WDR 錄音），hat ART 1991 首發，2001／2019 再版改名《Quartet (Dortmund) 1976》；有歷史定位，不建議移除。樂器列表 Discogs 與 Wikipedia 不一致，facts 只寫概稱。Loewy／Jazzwise 評語僅有二手摘要，未入 facts；搜尋摘要有「進行曲式主題」「New Orleans swing」提示，輕度存疑偏暖，建議主線聽感核對。
+- 12730 本組 WebSearch 用 10 次（Webber 1、Irabagon 1、Okazaki 1、Eskelin 2、Finlayson 兩張 2、Coleman 1、Mitchell 1、Braxton 1，每張不超過 2 次，Eskelin 其一為補查）；Wikipedia 429 一次後加延遲；Bandcamp、AllMusic、Jazzwise、jazzmusicarchives 皆被擋（Cloudflare／403）。
+
+## 主線：研究後汰換（不佔條號）
+- 研究層聲音與 moodGuess 不符，直接汰 14（卡單、研究稿、`pick.json` 同步移除，45 → 31）：
+  - 判暖（翻奏／標準曲、旋律清楚、樂評 warm／melodious／gorgeous）：Steve Lehman Trio《Dialect Fluorescent》（九首四首翻奏、grooving）、Lehman Trio + Taborn《The People I Love》（四首他人曲、短插段）、Vijay Iyer《Tragicomic》（以旋律主題為中心、Bud Powell 曲）、Rudresh Mahanthappa《Mother Tongue》（語音轉寫旋律辨識度高）、Zooid《In for a Penny, In for a Pound》（welcomingly warm and melodious）、Jon Irabagon《Foxy》（標準曲引句、jump swing）、Jonathan Finlayson《Moving Still》（gorgeous、gentle）、《3 Times Round》（gorgeous harmonies and melodies）、Tyshawn Sorey《Oblique - I》（電鋼琴、旋律性曲調、開放段偏靜）。
+  - 判重（groove）：Lehman《Demian as Posthuman》（電貝斯穩定律動＋電子低頻）、Miles Okazaki《Trickster》（superhard groove、funk 底）。
+  - 判靜：Peter Evans《Nature/Culture》（獨奏氣流、長停頓、疊錄嗡鳴）、Nate Wooley《Knknighgh》（lyrical and intimate、巨響後靜默）、Steve Coleman's Natal Eclipse《Morphogenesis》（chamber music、ethereal）。
+- 留下但存疑、交評分裁定：Fieldwork 兩張（funky 評語，輕度）、Thumbscrew（局部近金屬，整體原聲低音＋乾淨吉他）、Lehman Quintet《On Meaning》、Big Satan 首作、Laubrock Anti-House 兩張、Malaby《Tamarindo》、Iyer《Blood Sutra》、Matt Mitchell《Vista Accumulation》《Phalanx Ambassadors》、Roscoe Mitchell《Conversations I》、Braxton《Dortmund》、Eskelin《One Great Day...》。
+- **年份更正**：Tim Berne《Sanctified Dreams》1987 → **1988**（1987-10 錄音、1988 Columbia 發行；研究 a 組，研究稿只寫錄音年，無須改）。
+- **現場盤**：Tom Rainey Trio《Hotel Grief》（2013-12-30 Cornelia Street Café）、《Combobulated》（2017-09-15 Firehouse 12）MB 未標 Live，研究 b 組確認為藝人正規全長發行，照 Braxton《Dortmund》與 mc31 自由爵士圈慣例收。
+- 研究推翻編制照研究稿：《Fractured Fairy Tales》有 Dresser 低音提琴（六人）、《Dragon's Head》鼓手 Ches Smith、《Phalanx Ambassadors》吉他 Okazaki、《Codebook》鼓手 Dan Weiss、《Door》為 Fieldwork 第三張。
+- qa-batch research：31 張 key 一致、全過。
+
+## 鉤子層（d、e；12736–12740）
+- **12736** 交件：`desc-tools/batches/hooks/add-20261023-mc22-hooks-d.json`（5）、`-hooks-e.json`（4），key 逐字照研究稿、順序不變。預算公式照第 1793-B 條：`Array.from(hook)+Array.from(note) − 主故事： − 所有 → − 正文只寫上列各項。 − 這條骨架全批只走本張。`（只扣四樣，第二句指派句照算）；九張皆 full、上限 230。逐筆（預算／hook 加權／hook 原始字元）：Codebook 209／24／24；Tomorrow Sunny 214／23／23；Ghosts 206／22／22；Destination: Void 227／22／22；Clockwise 217／20／23；Shimmer Wince 227／23／23；One Great Day... 220／22／22；Conversations I 228／20／20；Dortmund 228／24／27。初稿九張全超標（最高 Clockwise 388），一律整格捨去：Codebook 的曲長、錄混母日期、Doris Duke、Trieste 地名、Moutin／Weiss；Zooid 的錄音地、Ellman 製作、團名詞源、音程分配；Ghosts 的 SWR、〈Ghost〉原曲名；Destination 的〈Tresillo〉曲長、〈Twelve (For Evan Parker)〉、Herbert 小說（單一樂評）；Clockwise 的 McGill／移居紐約、Feldman／Stockhausen／Babbitt、〈Korē〉質地；Shimmer Wince 的團員名、錄音日與錄音室；Eskelin 的生年生地、Forum 場地、Kirk〈The Inflated Tear〉；Mitchell 的 Berkeley、〈Darse〉噪音高潮、與 Ayler 同在軍樂隊；Braxton 的 Jazz Life 屆次、Circle 淵源、開場組曲曲長。壓完回核：九張 hook 依賴格全在 g1／g2（Zooid 把朗讀軌前移到 g2、Destination 把音效師前移到 g2、Eskelin 把取樣器併進 g1；Eskelin hook 原寫「偏搖滾的鼓」，該格捨去後改成「手風琴、取樣器和鼓」）。
+- **12737** 骨架歸屬（9 張 9 條，只寫在擁有卡）：Codebook＝密碼學作曲（字句與節奏經密碼表轉譯）＋委託案；Tomorrow Sunny＝為視障聽眾錄的朗讀軌；Ghosts＝現場電子當第五位團員；Destination: Void＝以好萊塢音效設計師命名的長篇；Clockwise＝改寫 20 世紀打擊樂譜的駐村作品；Shimmer Wince＝古老調音系統（純律）進即興；One Great Day...＝無貝斯三重奏首作、盤名被十二年後的現場盤呼應；Conversations I＝兩天錄音拆成兩張先後發行；Dortmund＝電台錄音十五年後才出版。「現場盤」骨架留給 a、b 組（Big Satan、Rainey 兩張），Eskelin 只寫錄音地、Braxton 的主軸是延遲出版而非現場；Ghosts 的音樂節委託只放 g1 一格、委託軸歸 Codebook。
+- **12738** 「他／她」引入法與第二句句型（逐張配死）：Codebook hook 用身分「中音薩克斯風手」→第二句生年＋出生地＋族裔領句；Tomorrow Sunny hook 無人→「Threadgill 是⋯」判斷句；Ghosts hook 無人→身分前置「小號手 Peter Evans」；Destination hook 無人→廠牌關係「自創廠牌的小號手」；Clockwise hook「她」→生年出生地＋樂器領句；Shimmer Wince hook「她」→樂器＋獎項身分帶出名字；One Great Day... hook 只列樂器→組團年份領句；Conversations I hook 無人→「共同創辦人」身分領句；Dortmund hook 無人→獎項＋芝加哥南區出身領句。同藝人分軸：Evans——Ghosts＝編制與電子（首作）、Destination＝錄音地、曲名與學歷廠牌；Webber——Clockwise＝生平（溫哥華）＋駐村、Shimmer Wince＝樂器身分、古根漢獎、純律。跨卡人物：Jim Black 只在 Destination（Monk 比喻）與 Eskelin（團員名），Ghosts 不派；Hoffman 只在 Zooid（未具名，寫「大提琴」）；芝加哥 AACM 三人分面：Threadgill＝Experimental Band 原始成員、Mitchell＝Art Ensemble 共同創辦人、Braxton＝麥克阿瑟獎＋南區出身；從軍只留研究稿、兩張都不派。媒體名與榜單名次不進 note（樂評只以「樂評說」轉述；NPR／Village Voice 票選未派）。
+- **12739** 「日」後一字（`/[年月]\s*\d{1,2}\s*日(.)/`）：Codebook 日錄、One Great Day... 日在、Dortmund 日，；其餘六張只寫到月或年。hook 四型：斷言（Codebook、Clockwise、Shimmer Wince）／場景（Tomorrow Sunny、One Great Day...）／人物定調（Ghosts）／懸疑（Destination、Conversations I、Dortmund）。開頭前四字九張互異，並掃 `batches/output` 與 `batches/hooks` 既有 hook：初稿「唱片最後」「五重奏的」「四首長曲」「收尾那一」撞已上架開頭，改成「包裝上的」「第五位團」「只錄四首」。n-gram 自查（中文 4-gram，剝英數與指派樣板）：hook 對 hook 0（樂器名「中音薩克斯風」不算）；九張 hook＋note 跨張 0（初稿撞「在紐約州」「年由瑞士」「的三重奏」「與薩克斯」，逐一改字）；hook 與自家 note 無逐字重複（Destination「寫給⋯音效設計師」、Dortmund「電台錄下」已改字）。
+- **12740** 腳本：`node qa-batch.mjs hooks add-20261023-mc22` 只報 a、b、c 缺檔（另一位代理未交），d、e 無標記；`node chk-hook-crossgroup.mjs add-20261023-mc22`（d、e 兩組 9 張）✓ 全部通過，只報不擋的「沒有」兩筆（Eskelin「沒有貝斯」、Braxton「沒有鋼琴」）是內容、非校對痕跡。給寫作層：Eskelin 的聲音描述在研究稿是同團後期樂評，note 已不派；Conversations I 的 Kikanju Baku 身分不明，只寫名字與鼓手。`jp-proper-names.json` 未動。
+
+## 鉤子層（a、b、c；12731–12735）
+- **12731** 交件：`desc-tools/batches/hooks/add-20261023-mc22-hooks-a.json`（6）、`-hooks-b.json`（8）、`-hooks-c.json`（8），key 逐字照研究稿（主線汰換後）、順序不變。公式照第 1793-B 條：`Array.from(hook)+Array.from(note) − 主故事： − 所有 → − 正文只寫上列各項。 − 這條骨架全批只走本張。`（「第二句：⋯」指派句照算）。thin 2 張（Pool School、Combobulated）上限 170，其餘 full 230。逐筆（預算／hook 加權／hook 原始）：Fractured Fairy Tales 214／20／20；Sanctified Dreams 229／21／21；I Think They Liked It, Honey 225／22.5／24；Souls Saved Hear 230／17.5／19；The Shell Game 229／17／17；On Meaning 222／19／19；Door 214／14／14；Simulated Progress 227／19／19；Dragon's Head 229／20／20；Thumbscrew 226／20／20；Pool School 170／22／22（thin）；Camino Cielo Echo 214／13／13；Hotel Grief 225／21／21；Combobulated 165／23／23（thin）；Anti-House 220／21／21；Strong Place 215／18／18；Tamarindo 216／22／22；Fiction 201／22／22；Vista Accumulation 230／17／19；Phalanx Ambassadors 226／15.5／18；Mannequins 213／24／24；Blood Sutra 224／20／20。初稿 22 張全超標（200–345），整格捨去：Fractured 的 Feldman／Robertson 名、Sound On Sound、全長；Sanctified 的編制樂器清單；Big Satan 首作的總長與作曲分配；Souls 的 Blue Series／Shipp、最長曲；Shell 的 Thirsty Ear；On Meaning 的五人名單；Door 的〈Pivot Point〉與〈Rai〉；Simulated 的作曲分配細目、曲長；Dragon 的同名廠牌；Thumbscrew 的兩年籌備與〈Fluid Hills in Pink〉；Camino 的錄音室與全長；Hotel 的歐洲巡演與〈Proud Achievements in Botany〉；Combobulated 的發行年；Anti-House 的倫敦年份、Hébert、Kris Davis 客席；Strong 的錄音室與四人名單；Tamarindo 的 Parker／Waits 演奏描述與曲長；Fiction 的錄音室與排練；Vista 的 Feldman／Birtwistle；Phalanx 的〈Be Irreparable〉與錄音月；Mannequins 的錄音室與三位團員名；Blood 的「血」主題與 Pi 再版。壓完回核 hook 依賴格：Big Satan 首作「每首超過 8 分鐘」、Shell「低頻交給鍵盤和電子音」、Vista「八首」、Strong「前作只是客席」四處原已被砍或未寫，已補回 g1／g2；其餘 hook 依賴皆在 g1／g2。媒體名、媒體榜單名次、星等全數不進 hook／note，樂評內容只留可直述的聲音事實；內頁文字（Camino、Combobulated）與 Rainey、Mitchell 本人說法屬當事方，保留。逝世無涉。
+- **12732** 骨架歸屬（22 張 22 條，只寫在擁有卡）：Fractured＝原聲編制接上電子（合成器鼓手、電子處理大提琴）；Sanctified＝大廠合約的終點（唱片行店員簽約→第二張即解約）；Big Satan 首作＝巴黎近郊連錄三天的長曲現場；Souls＝隔七年再出、曲子縮短；Shell Game＝無貝斯、低頻交給鍵盤與電子（「沒有貝斯」骨架只走這張，Big Satan、Fieldwork、Rainey 三重奏的無貝斯只當編制細節）；On Meaning＝學院頻譜和聲進入爵士；Door＝新鼓手一進團就寫過半曲目；Simulated＝製作人與嘻哈／電子養分；Dragon's Head＝曲名數字記寫作順序（首張個人名義降為次項）；Thumbscrew＝代班促成三位作曲家共治的樂團；Pool School＝側翼三十年後首張領銜；Camino＝內頁文字逐一描繪三人（外人之口）；Hotel Grief＝年底咖啡館現場；Combobulated＝成軍十週年、有觀眾的錄音室音質；Anti-House＝移居紐約後組起主力團；Strong Place＝客席升正式團員；Tamarindo＝旋律延後現身（專輯名後成團名為末格）；Fiction＝暖身練習曲變成專輯；Vista＝雙 CD 長篇化；Phalanx＝七首統一 396 拍（「編碼音高」不寫，讓給 d 組 Codebook 的密碼學作曲）；Mannequins＝異國不能合法工作、改在搖滾金屬團打鼓；Blood Sutra＝新人鼓手的錄音首作。對 d／e 讓位：David Torn 只在 Shell Game 具名（Souls、Combobulated、Phalanx、Mannequins 的 Torn 一律不寫）；「首張」措辭分散：Dragon「第一張以自己名義」、Pool「第一張自己的專輯」、Fiction「首張個人專輯」、Mannequins「出道作」、Anti-House「首次在美國領銜錄音」。
+- **12733** 同人分軸與第二句句型（逐張配死）：Berne（5）——Fractured 樂器＋生年出生地＋師承（「吹中音薩克斯風，1954 年生於…」）；Sanctified 名字領句＋廠牌關係（Columbia 第二份錄音）；Big Satan 首作團名領句（「團名底下是…帶領的三人團」）＋Ducret 生於巴黎；Souls 成員延續句（「由…帶隊」）；Shell 作曲欄（寫了全部四首）。Rainey（7＋Anti-House 2）——Pool 名字＋生年出生地領句；Camino「這是…合作的第二張」判斷句；Hotel「樂手只有三人：」列舉；Combobulated「…同台」並列；Big Satan／Souls／Shell 只具名；Anti-House 親屬（「丈夫 Tom Rainey」，親屬只走這張）；Strong 只引他的話。Halvorson（7）——Dragon 生年出生地＋Braxton 課堂；Thumbscrew 只具名（與 Fujiwara 的六重奏淵源）；Rainey 四張與 Anti-House 只當成員。Laubrock——Anti-House 生年＋德國出生地＋樂器；Strong「Anti-House 是…的樂團」作曲欄。Fieldwork／Lehman／Iyer／Sorey——Door「由…組成」；Simulated「當時 Fieldwork 是三人：」；On Meaning 出身地＋學歷（「紐約市出身的…讀到作曲博士」）；Blood「領隊是鋼琴手 Vijay Iyer」。Sorey 的三種身分：Door 新鼓手寫曲、On Meaning 鼓獨奏舞台、Blood 錄音首作。Mitchell（3＋Mannequins）——Fiction「首張個人專輯」判斷句；Vista「鋼琴是…」樂器欄；Phalanx「鋼琴與鍵盤是…，同台有…」；Mannequins 只當團員。Gentile——Mannequins 成長地＋學歷；Phalanx 只具名。Malaby——出生地＋移居年。「日」後一字：Souls 上、Shell 發、On Meaning 推、Door 一、Simulated 進、Thumbscrew 那、Camino 完、Hotel 現、Anti-House 於、Vista 由、Blood 的；其餘 11 張只寫到月或年或「X、Y 日」雙日（不落尺）；連 d／e 的 3 個（錄／在／，）共 14 個全不撞。hook 四型：懸疑（Dragon、Tamarindo、Sanctified、Combobulated）／斷言（Souls、Shell、On Meaning、Simulated、Vista、Phalanx）／場景（Fractured、Big Satan 首作、Hotel、Fiction、Camino）／人物定調（Door、Thumbscrew、Pool、Anti-House、Strong、Mannequins、Blood）。hook 全部只帶身分不帶人名，第二句一律補「誰＋哪裡人或樂器」。開頭前四字 31 張互異；對歷批 hooks 另撞 4 處（「新來的鼓」nj4、「十首曲名」md2／c76／c180、「上一張的」c99、「七首曲子」c154／c61／c95），全部改寫後 0。
+- **12734** n-gram 自查（han() 4-gram，hook＋note 扣指派樣板，a–c 22 張對 a–e 31 張合掃）：hook 對 hook 0（d／e 內部 Codebook 對 One Great Day 只剩樂器「中音薩克斯風」）；hook 對全批 note 只剩樂器名；hook 與自家 note 無逐字重複句（6-gram 0）。note 對 note 定稿只剩樂器名（薩克斯風、次中音與高音）與剝掉 ASCII 後的拼接殘片（「年發行寫」「首年月日」「成年發行」「年月日的」，原文中間隔著英文名或指派樣板，正文不會成形）。途中拆掉：「手年生於」×3（Fractured／On Meaning／Dragon 第二句）、「紐約錄成」、「錄於紐約」、「的第二張」×4、「的三重奏」（對 e 組 Conversations hook）、「沒有貝斯」×4（Shell hook 改「不用貝斯」，Camino／Combobulated 拿掉）、「最短一首」、「各寫三首」、「克斯風彈」「斯風吉他」、「鋼琴中音」、「發行吉他」、「發行開場」（對 e 組 Shimmer Wince）、「在紐約州」（對 d 組 Destination: Void）、「年月日錄」「年月日在」（Fiction、Mannequins、Dragon 的雙日寫法對 Codebook「日錄」、One Great Day「日在」）、「首約分鐘」、「錄音發行」、「年月錄音」、「最長分秒」、「在布魯克林錄成」、「與微分音」。
+- **12735** 腳本：`node qa-batch.mjs hooks add-20261023-mc22` 全部通過 ✓（互指 0）；`node chk-hook-crossgroup.mjs add-20261023-mc22` 5 組 31 張 ✓ 全部通過（hook 加權 13–24、note 169–240）。一般否定句 a–c 0 筆（Big Satan 首作原有「沒有低音樂器」，改「每首都在 8 分鐘以上」後消失；掃描只列 e 組 2 筆）。事實修正：Sanctified 的發行年 1988 不在研究稿 facts，note 只寫 1987 年 10 月錄了三天（卡片年份由主線改 1988，正文不重提年份）；Mannequins「只能在重型樂團打鼓」改「就在」（facts 無「只能」）；Simulated 製作人改「之一是 Scotty Hard」（製作掛名 Fieldwork 與他）；Phalanx 吉他照研究稿 Okazaki，Dragon 鼓手照研究稿 Ches Smith、Door 為第三張。`jp-proper-names.json` 未動。輔助腳本在 scratchpad `hook-mc22-abc/`（mc22-abc-data.py 稿、mc22-abc-check.py 量預算／日後一字／開頭四字對歷批／4-gram，`--write` 產檔）。
+
+## 寫作層（writer-2）
+- **12746** 交件：`desc-tools/batches/output/add-20261023-mc22-out-2.json` 15 張（全 full，200–239）。逐張：Tamarindo 235、Fiction 225、Vista Accumulation 239、Phalanx Ambassadors 238、Mannequins 209、Blood Sutra 239、Codebook 228、Tomorrow Sunny 202、Ghosts 200、Destination: Void 233、Clockwise 226、Shimmer Wince 208、One Great Day... 214、Conversations I 221、Dortmund 238。初稿 4 張超標（Tamarindo 251、Vista 246、Phalanx 254、Blood 251），整格捨去（Tamarindo 的「旋律浮上時聲部已堆滿」收句、Phalanx 的強調副詞與「錄好的成品」主語、Blood 的「四重奏的」「同時」）；Clockwise 刪掉一句 note 外的自加描述（打擊樂骨架移到管弦），Dortmund 三位樂手改成名詞並列。
+- **12747** 第二句全照鉤子層 note 指派（Tamarindo 生地＋移居年、Fiction「這是⋯首張個人專輯」、Vista「鋼琴是⋯」、Phalanx「鋼琴與鍵盤是⋯，同台有⋯」、Mannequins 成長地＋學歷、Blood「領隊是鋼琴手」、Codebook「1971 年生於義大利⋯」、Zooid「Henry Threadgill 是⋯」、Ghosts「小號手 Peter Evans」、Destination「自創廠牌的小號手」、Clockwise 生年出生地＋樂器、Shimmer 樂器＋古根漢獎、Eskelin「1994 年」、Conversations 共同創辦人、Dortmund 麥克阿瑟獎＋南區）。hook 代稱具名：Fiction 鼓手→Ches Smith、Blood 鼓手→Tyshawn Sorey（第三句）、Mannequins 鼓手→Kate Gentile、Ghosts 第五位團員→Sam Pluta、Destination 兩位音效師→Rydstrom／Burtt、Zooid 末軌→〈Recording Information〉、Shimmer 調音法→純律。避免複述 hook：Fiction 不再寫「巡迴時配鼓」、Mannequins 不再寫「無法合法工作」、Shimmer 不再寫「放進即興」。「日」後一字照鉤子層：Vista 日由、Blood 日的、Codebook 日錄、One Great Day 日在、Dortmund 日，；其餘只寫到年月。
+- **12748** 跨兩檔合掃（han() 4-gram，out-1 定稿＋out-2）：本檔涉及的 3 張以上同構 0、2 張殘片 0（只剩樂器名「薩克斯風」「中音薩克斯風」「次中音薩」系列）。途中拆掉：「唱片在年由發行」×3（Tamarindo／Clockwise／Zooid 各換主語）、「奏年月日」×3（Blood／Codebook／Eskelin 日期前一字改成名／子／他）、「交給發行」、「才由發行」、「發行開場」、「約分鐘的」、「長約分鐘」、「進錄音室」、「寫下這批」、「的三重奏」（對 e 組 Conversations hook）；對 out-1 另拆「六人編制」「彈合成器」「是這是他」「在年推出」「出身的中音」「鼓手組成」「張年月日」「的樂團這」「吹次中音」「負責次中」「年由出版」「長短懸殊」。Eskelin 避開 a 組 Shell hook 的「不用貝斯」，改「編制裡沒有貝斯」。
+- **12749** 媒體與轉述：媒體名、媒體榜單名次、星等全不寫；Destination 的 Monk 比喻寫成被動「被拿來跟 Monk 相比」，不說是誰比的；「據說／據傳」grep 0。note 外事實 0（Tamarindo 不寫「葡萄牙」、Mannequins 不寫「紐約州」，照 note 只寫 Clean Feed／Buffalo）。
+- **12750** 腳本：`node qa-batch.mjs out add-20261023-mc22` 全部通過 ✓（out 合計 31 張與卡單相符）；`qa-check-research` 15 張標記 0；`fix-spacing` 待補 0。輔助腳本在 scratchpad `wr-mc22-2/`（mc22_2_data.py 稿、mc22-2-save.py 寫檔、mc22-2-scan.py 跨檔 4-gram／日後一字）。
+
+## 寫作層（writer-1）
+- **12741** 交件：`desc-tools/batches/output/add-20261023-mc22-out-1.json` 16 張（full 14：207–239；thin 2：Pool School 165、Combobulated 148）。逐張：Fractured Fairy Tales 235、Sanctified Dreams 239、I Think They Liked It, Honey 224、Souls Saved Hear 239、The Shell Game 233、On Meaning 219、Door 223、Simulated Progress 229、Dragon's Head 239、Thumbscrew 233、Pool School 165、Camino Cielo Echo 207、Hotel Grief 225、Combobulated 148、Anti-House 221、Strong Place 216。初稿只有 Souls Saved Hear 超標（247），整格捨去「距首作七年」（hook 已說）與「現場」修飾、日期句改主語；其餘皆在帶內。
+- **12742** 第二句全照鉤子層 note 指派：Fractured 名字＋樂器＋生年出生地＋師承（改成「Tim Berne 領銜，樂器是⋯；他 1954 年生於⋯」避開「吹中音薩」×3 與「手年生於」）；Sanctified 名字領句＋Columbia 第二份錄音（「以中音薩克斯風為本行」）；Big Satan 首作「團名底下是⋯」；Souls「Big Satan 的成員延續首作⋯由⋯帶隊」；Shell「三人裡吹中音薩克斯風的⋯寫了全部四首」；On Meaning「紐約市出身的⋯讀到作曲博士」；Door「Fieldwork 由⋯組成」（hook 的「鼓手」在此具名 Sorey）；Simulated「當時 Fieldwork 是三人：」；Dragon「吉他手⋯1980 年生於麻州」；Thumbscrew「這是爵士三重奏⋯同名首張」；Pool「Tom Rainey 1957 年在加州出生」；Camino「這是鼓手⋯合作的第二張」；Hotel「樂手只有三人：」；Combobulated「⋯一同登台」；Anti-House 樂器＋出身地＋生年（不用「年生於」句型，改「出身德國 Stadtlohn，生於 1970 年」）；Strong「Anti-House 是⋯的樂團」，hook 的「客席鋼琴手」在第三句具名 Kris Davis。避免複述 hook：Souls 不寫「距首作七年」、Big Satan 首作不寫「8 分鐘以上」、Combobulated 不再寫「十週年／觀眾／錄音室音質」、Anti-House 不再寫「主力團」改「團名從此跟著她」、Simulated 第三句只補當代古典與非洲南亞節奏。
+- **12743** 「日」後一字全照第 12733 條：Souls 上、Shell 發、On Meaning 推、Door 一、Simulated 進、Thumbscrew 那、Camino 完、Hotel 現、Anti-House 於；日期前一字逐張相異（於／器／選／張／奏／首／起／他／音）。Big Satan 首作「8 至 10 日」、Dragon「24、25 日」雙日不落尺，日期前改「落在」「就在」。發行句尾巴逐張換形：JMT「由⋯出版」、Winter & Winter「由⋯在 1997 年推出」、Thirsty Ear「上市，由⋯發行」、Pi 三張「選⋯推出」「出版，廠牌是 Pi」「才交給 Pi 發行」、Cuneiform「的發行方是」、Clean Feed「年由⋯出版」、Intakt 四張「隔年由」「把它發行成唱片」「月由⋯推出」（Anti-House 不寫發行）。
+- **12744** 自掃（han() 4-gram，out-1 定稿＋out-2 定稿合掃）：3 張以上只剩樂器名（薩克斯風／中音薩克／高音薩克／次中音薩／克斯風手）；2 張殘片只剩樂器名系列（吹中音薩、次中音與高音、與薩克斯、克斯風鼓、克斯風的）。途中拆掉：「於年月日」（On Meaning／Souls、Dragon／Souls 兩度）、「吹中音薩」×3、「編制捨去」、「是的時間」、「音地點是」「地點是的」、「在年推出」、「交給發行」、「場演出的」、「克斯風年」、「克斯風與」×3、「克斯風彈」、「的專輯年」（對 Pool hook）、「錄於年月」、「兩天年月」。否定句：Door「不輪流獨奏」改「取代輪流獨奏」、Thumbscrew「不靠音量」改「強度來自音量之外」、Pool「不帶貝斯」改「省掉貝斯」、Sanctified「不用鋼琴與吉他」改「捨去」。
+- **12745** 媒體與轉述：媒體名、媒體榜單名次、星等全不寫；Camino 的內頁評語寫「內頁形容」（掛名，非樂評）；Hotel 的廠方說法改直述「這一晚提煉了三人多場演出的精華」；Strong 的 Rainey 說法轉間接「形容每一首都自成一個宇宙」；「據」grep 0。note 外事實 0（Fractured〈Evolution of a Pearl〉不寫「最長」，只寫曲長）。腳本：`qa-batch out` 通過（out 合計 31 張與卡單相符）、`qa-check-research` 16 張標記 0、`fix-spacing` 待補 0。輔助腳本在 scratchpad `wr-mc22-1/`（mc22-1-drafts.py 稿兼寫檔、mc22-1-check.py 字數／禁詞／4-gram／日後一字）。
+
+## 主線審稿（2026-10-23，雲端主線，31 張逐張讀過、對回研究稿）
+- **12751** `desc2:Tim Berne|Sanctified Dreams`：「第一次用上較大的編制，捨去鋼琴與吉他。」→「第一次用上較大的編制。」（研究稿只有 jazz.com「第一張使用較大編制」，「捨去鋼琴與吉他」無來源；事實刪減，研究層無須同步）
+- **12752** `desc2:Peter Evans Quintet|Destination: Void`：刪「Jim Black 的鼓點落得遲卻精準，被拿來跟 Monk 相比。」（單篇樂評的比較評語；刪後 200 字仍在 full 帶）
+- 核過的事實：Big Satan「侵略性／幽默感」（維基樂團條目）、Shell Game「質地與支撐」（維基轉引）、Tamarindo 後以團名續錄（jazzword）、Codebook 曲名取自 Samuel Morse（Pi 頁）、Blood Sutra「極其有力、卻收得很緊」（Pi 文案）、Webber 2018 古根漢獎（維基）、Braxton 1994 麥克阿瑟獎（hook 層引研究稿）——成立，未改。
+- 其餘 29 張逐張審過，未改字。qa-batch out、qa-check-research（兩檔 0 標記）、fix-spacing 重跑全過。
+
+## 上線（不佔條號）
+- 上線 31：card_catalog 31/31、KV 31 鍵回讀逐字一致、試聽 27 ready（主線人工配對 1：Mitchell《Conversations I》；Berne《Fractured Fairy Tales》《Sanctified Dreams》、Big Satan《I Think They Liked It, Honey》、Gentile《Mannequins》Apple 查無）、seed +31、published gate 0 error。封面 CAA 23＋Apple 官方圖 8（CAA 404），縮圖表目視 31/31、live-check 31/31。上線前對 origin 所有 `claude/*` 分支 seed 與 10-22／10-23 卡單去重 0 撞。
+- 類型樹 31/31 落位；`genre-l3-artist-map.json` 的 `jazz/free/avant` 補 Fieldwork、Mary Halvorson Trio、Rudresh Mahanthappa、Tim Berne, Craig Taborn & Tom Rainey（藝人層無標籤）。
+
+## 情緒評分與落格率（2026-10-23，`batch-progress/mood-axes/score-mc22/`）
+- 照 10-23 體感標準評分（conf mid 23、low 8）。**上線 31；落冷冽 27/31＝87%**。
+- 出格 4 張全判重落暴躁：Big Satan《I Think They Liked It, Honey》《Souls Saved Hear》（Ducret 電吉他）、Berne／Taborn／Rainey《The Shell Game》（電子低頻）、Peter Evans Quintet《Destination: Void》（電子噪音、y 0.5）。**當代前衛爵士要收原聲、無電吉他／電子的小編制**；帶失真吉他或現場電子的照 mc1 教訓 y 估 +0.3 起跳。
+- 邊界：Tom Rainey Trio 三張 x 3.0–3.1 剛好過線（無貝斯三重奏、作曲短曲）。
+- 八格（併 main 後）：恍惚 1,242、冷冽 1,429、頹靡 1,404。
+- 產量：策展 54、主線汰 9、研究汰 14 → 31。研究汰換主因是翻奏／旋律清楚（判暖）、groove（判重）、獨奏留白（判靜）。
+
+## 本批新藝人（無介紹，未切；並行時子工作階段不切）
+Fieldwork、Mary Halvorson Trio（→ Mary Halvorson）、Thumbscrew、Tom Rainey Trio、Ingrid Laubrock Anti-House、Tony Malaby、Matt Mitchell、Kate Gentile、Rudresh Mahanthappa、Henry Threadgill Zooid（→ Henry Threadgill）、Peter Evans Quintet、Anna Webber、Ellery Eskelin with Andrea Parkins & Jim Black、Big Satan、Steve Lehman Quintet（→ Steve Lehman）、Tim Berne, Craig Taborn & Tom Rainey（合掛名）、Roscoe Mitchell with Craig Taborn and Kikanju Baku（→ Roscoe Mitchell）。（Tim Berne、Vijay Iyer、Anthony Braxton、Steve Lehman、Mary Halvorson、Henry Threadgill、Roscoe Mitchell 已有介紹。）

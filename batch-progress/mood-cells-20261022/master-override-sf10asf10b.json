@@ -1,0 +1,70 @@
+{
+ "drop": [
+  [
+   "Against All Logic",
+   "2017–2019"
+  ],
+  [
+   "Gibran Alcocer",
+   "Music for Silhouettes"
+  ],
+  [
+   "Clutchy Hopkins",
+   "Walking Backwards"
+  ],
+  [
+   "Federico Albanese",
+   "By the Deep Sea"
+  ],
+  [
+   "French 79",
+   "Joshua"
+  ],
+  [
+   "Grandbrothers",
+   "Open"
+  ],
+  [
+   "HVOB",
+   "Silk"
+  ],
+  [
+   "Joep Beving",
+   "Prehension"
+  ],
+  [
+   "L'Acéphale",
+   "Malefeasance"
+  ],
+  [
+   "Luke Abbott",
+   "Wysing Forest"
+  ]
+ ],
+ "fix": {
+  "Against All Logic|2012–2017": {
+   "releaseException": "MB 標 Compilation，但維基明寫為 Nicolas Jaar 第三張錄音室專輯、AAL 名義首張；ALBUM_ONBOARDING §5.6 重要合輯精選制收錄",
+   "evidence": [
+    "https://en.wikipedia.org/wiki/2012%E2%80%932017",
+    "https://musicbrainz.org/release-group/20f7f4bb-c9cb-424e-9106-cbd41a00e18f",
+    "https://coverartarchive.org/release-group/20f7f4bb-c9cb-424e-9106-cbd41a00e18f/front-250"
+   ]
+  },
+  "Rich Ruth|Water Still Flows": {
+   "album": "I Survived, It's Over",
+   "year": 2022,
+   "mbRgMbid": "03f776ca-3274-4133-b4db-0cefad1af332",
+   "why": "Nashville 吉他手 Michael Ruth 在 Third Man 的突破作，器樂靈性爵士／ambient 吉他",
+   "evidence": [
+    "https://musicbrainz.org/release-group/03f776ca-3274-4133-b4db-0cefad1af332",
+    "https://coverartarchive.org/release-group/03f776ca-3274-4133-b4db-0cefad1af332/front-250"
+   ]
+  },
+  "Kate NV|Для": {
+   "album": "для FOR"
+  },
+  "L'Acéphale|L'Acéphale": {
+   "artist": "L'Acephale"
+  }
+ }
+}

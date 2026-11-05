@@ -1,0 +1,999 @@
+{
+ "group": "ml48",
+ "factions": [
+  {
+   "id": "wackies",
+   "zh": "Wackies／Bullwackie 紐約慢盤",
+   "count": 14,
+   "why": "Bronx 的 Wackie's 班底：類比厚低音、濕殘響的人聲盤與 showcase"
+  },
+  {
+   "id": "black-ark-circle",
+   "zh": "Lee Perry／Black Ark 周邊",
+   "count": 7,
+   "why": "Perry 工程或 Black Ark 廠牌的歌手專輯"
+  },
+  {
+   "id": "jammy-niney-thompson",
+   "zh": "Jammy／Niney／Thompson／Radics 二線濕混音人聲盤",
+   "count": 10,
+   "why": "1979–83 類比期的歌手專輯，含 showcase"
+  }
+ ],
+ "albums": [
+  {
+   "artist": "Jezzreel",
+   "album": "Great Jah Jah",
+   "year": 1980,
+   "label": "Wackie's",
+   "country": "us",
+   "faction": "wackies",
+   "genres": [
+    "world",
+    "reggae"
+   ],
+   "why": "Bullwackie 在布朗克斯自家錄音室的 roots 人聲專輯，Wackie's 樂團的厚低音與濕殘響把慢拍包起來，溫而霧，落恍惚。",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 1.4,
+    "z": 0.7,
+    "why": "Wackie's 類比樂團慢拍、低音厚、殘響濕，人聲溫"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/8b9fb1fb-9a5c-4eeb-a055-b76207961f72",
+    "https://coverartarchive.org/release-group/8b9fb1fb-9a5c-4eeb-a055-b76207961f72/front",
+    "https://www.discogs.com/master/293326"
+   ],
+   "mbRgMbid": "8b9fb1fb-9a5c-4eeb-a055-b76207961f72",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Discogs 風格含 Dub，若人聲段少於預期可能偏冷；MB 與 Discogs 年份同為 1980。"
+  },
+  {
+   "artist": "Jezzreel",
+   "album": "Rockers Showcase Volume 2",
+   "year": 1982,
+   "label": "Wackie's",
+   "country": "us",
+   "faction": "wackies",
+   "genres": [
+    "world",
+    "reggae"
+   ],
+   "why": "Wackie's 的 showcase 系列，人聲曲與對應 dub 版交替，慢板與濕混音包覆，同廠牌 Wayne Jarrett／Junior Delahaye 那型盤池中已落恍惚。",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1.4,
+    "z": 0.7,
+    "why": "Showcase 形式人聲＋dub 版交替，Wackie's 類比厚低頻"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/8a3c5b29-a1be-48ee-a91f-c1fed099afee",
+    "https://coverartarchive.org/release-group/8a3c5b29-a1be-48ee-a91f-c1fed099afee/front"
+   ],
+   "mbRgMbid": "8a3c5b29-a1be-48ee-a91f-c1fed099afee",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Discogs 無 master，僅 release；dub 版比重待研究層確認。"
+  },
+  {
+   "artist": "Love Joys",
+   "album": "Lovers Rock Reggae Style",
+   "year": 1983,
+   "label": "Wackie's",
+   "country": "us",
+   "faction": "wackies",
+   "genres": [
+    "world",
+    "reggae"
+   ],
+   "why": "紐約 Wackie's 的女聲三重唱慢板 lovers rock，同組池中《Reggae Vibes》y 1.4 落恍惚；溫柔人聲壓在厚低音與殘響上。",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 1.3,
+    "z": 1,
+    "why": "女聲三人組，慢板 lovers rock，Wackie's 濕混音"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/cec6d8c0-aeaa-3685-9561-4516a862cb19",
+    "https://coverartarchive.org/release-group/cec6d8c0-aeaa-3685-9561-4516a862cb19/front",
+    "https://www.discogs.com/master/229319"
+   ],
+   "mbRgMbid": "cec6d8c0-aeaa-3685-9561-4516a862cb19",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB rg 首發日 2001（CD 重發）；原盤 1983 取 Discogs master 229319。"
+  },
+  {
+   "artist": "Wayne Jarrett",
+   "album": "Showcase Vol. 1",
+   "year": 1982,
+   "label": "Wackie's",
+   "country": "us",
+   "faction": "wackies",
+   "genres": [
+    "world",
+    "reggae"
+   ],
+   "why": "Wayne Jarrett 的 Wackie's showcase 首集，同人池中《Bubble Up》《Chip In》x 2.5–2.6、y 1.2–1.3 全落恍惚；人聲曲接 dub 版。",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.3,
+    "z": 0.7,
+    "why": "人聲＋dub 版，Wackie's 類比厚低頻"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/2e7d363e-1501-4efc-921f-9236eb370626",
+    "https://www.discogs.com/master/185118"
+   ],
+   "mbRgMbid": "2e7d363e-1501-4efc-921f-9236eb370626",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB rg 首發日 2004（重發）；原盤 1982 取 Discogs master 185118。CAA 無圖，封面走 Discogs。"
+  },
+  {
+   "artist": "Audley Rollens",
+   "album": "Showcase Prevail",
+   "year": 1982,
+   "label": "Wackie's",
+   "country": "us",
+   "faction": "wackies",
+   "genres": [
+    "world",
+    "reggae"
+   ],
+   "why": "Wackie's 旗下歌手 Audley Rollens 的 showcase 盤，人聲與 dub 版交替，樂團是同一批 Wackie's 類比班底，慢而濕。",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.3,
+    "z": 0.7,
+    "why": "Wackie's 人聲 showcase，慢拍低音厚"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/478db991-eea8-402b-bf0a-562ddab816e7",
+    "https://coverartarchive.org/release-group/478db991-eea8-402b-bf0a-562ddab816e7/front"
+   ],
+   "mbRgMbid": "478db991-eea8-402b-bf0a-562ddab816e7",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "池中無此人，聲音全憑廠牌班底推估；Discogs 無 master。"
+  },
+  {
+   "artist": "Audley Rollens",
+   "album": "Role Model",
+   "year": 1984,
+   "label": "Wackie's",
+   "country": "us",
+   "faction": "wackies",
+   "genres": [
+    "world",
+    "reggae"
+   ],
+   "why": "Wackie's 1984 年人聲專輯，延續 Bullwackie 的厚低音與濕混音路線，慢板為主。",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 1.1,
+    "z": 0.6,
+    "why": "Wackie's 慢板人聲，1984 年有可能加入鼓機"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/602dfd5a-c5dd-482f-b839-476e3f8b612f",
+    "https://coverartarchive.org/release-group/602dfd5a-c5dd-482f-b839-476e3f8b612f/front",
+    "https://www.discogs.com/release/1154271"
+   ],
+   "mbRgMbid": "602dfd5a-c5dd-482f-b839-476e3f8b612f",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "1984 年 Wackie's 開始混入電子鼓，評分可能偏輕；列為候補，研究層若查到 drum machine 就汰。"
+  },
+  {
+   "artist": "Jerry Harris",
+   "album": "I'm For You",
+   "year": 1982,
+   "label": "Wackie's",
+   "country": "us",
+   "faction": "wackies",
+   "genres": [
+    "world",
+    "reggae"
+   ],
+   "why": "Wackie's 1982 年的歌手專輯，Bullwackie 製作，同廠牌班底的慢拍低音與殘響。",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.2,
+    "z": 0.7,
+    "why": "Wackie's 慢板人聲，低音厚"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/753865",
+    "https://www.discogs.com/label/327417-Wackies-Studio"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "artist:\"Jerry Harris\" AND releasegroup:\"I'm For You\"",
+     "artist:\"Jerry Harris\" (album list 1972-1987 browse)"
+    ],
+    "checkedAt": "2026-10-23",
+    "conclusion": "MB 無此專輯條目，人工身分；以 Discogs 確認發行"
+   },
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/753865",
+    "https://www.discogs.com/label/327417-Wackies-Studio"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 只有 2015 年同名異人盤；人工身分。"
+  },
+  {
+   "artist": "Tyrone Evans",
+   "album": "For Lovers Only",
+   "year": 1983,
+   "label": "Wackie's",
+   "country": "us",
+   "faction": "wackies",
+   "genres": [
+    "world",
+    "reggae"
+   ],
+   "why": "Tyrone Evans 的 lovers 專輯，池中同人《Sings Bullwackie Style》x 2.3、y 1.5、z 0.9 落恍惚，這張是同一班底的慢情歌。",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.2,
+    "z": 0.9,
+    "why": "慢板情歌，Wackie's 濕混音；同人《Sings Bullwackie Style》y 1.5"
+   },
+   "evidence": [
+    "https://www.discogs.com/release/343348",
+    "https://www.discogs.com/label/327417-Wackies-Studio"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "artist:\"Tyrone Evans\" AND releasegroup:\"For Lovers Only\"",
+     "artist:\"Tyrone Evans\" (album list 1972-1987 browse)"
+    ],
+    "checkedAt": "2026-10-23",
+    "conclusion": "MB 無此專輯條目，人工身分；以 Discogs 確認發行"
+   },
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/release/343348",
+    "https://www.discogs.com/label/327417-Wackies-Studio"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "1983 年 Wackie's 有合成器 boogie 風險（ml38 汰 Annette Brissett 同廠牌同年）；MB 查無。"
+  },
+  {
+   "artist": "Leroy Smart",
+   "album": "Harder Than the Rest",
+   "year": 1980,
+   "label": "Tad's Record",
+   "country": "jm",
+   "faction": "wackies",
+   "genres": [
+    "world",
+    "reggae"
+   ],
+   "why": "Leroy Smart 在 Wackie's 灌的專輯（Discogs 列於 Wackies Studio 廠牌下），池中同人《Impressions》x 2.6、z 0.9。",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 1.1,
+    "z": 0.8,
+    "why": "Wackie's 班底伴奏，人聲溫"
+   },
+   "evidence": [
+    "https://www.discogs.com/release/4627881",
+    "https://www.discogs.com/label/327417-Wackies-Studio"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "artist:\"Leroy Smart\" AND releasegroup:\"Harder Than the Rest\"",
+     "artist:\"Leroy Smart\" (album list 1972-1987 browse)"
+    ],
+    "checkedAt": "2026-10-23",
+    "conclusion": "MB 無此專輯條目，人工身分；以 Discogs 確認發行"
+   },
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/release/4627881",
+    "https://www.discogs.com/label/327417-Wackies-Studio"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Discogs 標廠牌 Tad's Record 與 Wackies 兩說；池中同人 y 僅 0.5，質地是風險。人工身分。"
+  },
+  {
+   "artist": "The Chosen Brothers",
+   "album": "Sing and Shout",
+   "year": 1985,
+   "label": "Wackie's",
+   "country": "us",
+   "faction": "wackies",
+   "genres": [
+    "world",
+    "reggae"
+   ],
+   "why": "Wackie's 1985 年的 roots／lovers 合唱專輯，Sugar Minott 參與工程，溫熱人聲配厚低音。",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.1,
+    "z": 0.8,
+    "why": "Roots／lovers 人聲，Wackie's"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/a1e493ec-8aa9-4226-bae0-ce572eb6e60c",
+    "https://coverartarchive.org/release-group/a1e493ec-8aa9-4226-bae0-ce572eb6e60c/front",
+    "https://www.discogs.com/master/526640"
+   ],
+   "mbRgMbid": "a1e493ec-8aa9-4226-bae0-ce572eb6e60c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB rg 首發日 1998（重發），原盤 1985；1985 年有數位化風險。"
+  },
+  {
+   "artist": "Max Romeo",
+   "album": "I Love My Music",
+   "year": 1982,
+   "label": "Solid Groove",
+   "country": "jm",
+   "faction": "wackies",
+   "genres": [
+    "world",
+    "reggae"
+   ],
+   "why": "Max Romeo 與 Lloyd Barnes 合作的 1982 年專輯，Wackie's 班底的慢拍厚低音，嗓音沙而暖；池中同人《War ina Babylon》y 1.1。",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.1,
+    "z": 0.8,
+    "why": "Lloyd Barnes（Bullwackie）製作的人聲專輯"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/9a0db702-9dbd-4c0f-ade3-376889e6db5b",
+    "https://www.discogs.com/master/368211"
+   ],
+   "mbRgMbid": "9a0db702-9dbd-4c0f-ade3-376889e6db5b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "池中 Max Romeo《Reconstruction》y 0 判輕；CAA 無圖，封面走 Discogs。"
+  },
+  {
+   "artist": "Max Romeo",
+   "album": "Mek-Wi-Rock",
+   "year": 1983,
+   "label": "Woorell",
+   "country": "jm",
+   "faction": "wackies",
+   "genres": [
+    "world",
+    "reggae"
+   ],
+   "why": "Max Romeo 與 Lloyd Barnes 的第二張合作，Discogs 風格 Roots Reggae／Lovers Rock，同樣是 Wackie's 路線的慢拍。",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.1,
+    "z": 0.8,
+    "why": "Roots／lovers，Lloyd Barnes 製作"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/823540",
+    "https://www.discogs.com/label/327417-Wackies-Studio"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "artist:\"Max Romeo\" AND releasegroup:\"Mek-Wi-Rock\"",
+     "artist:\"Max Romeo\" (album list 1972-1987 browse)"
+    ],
+    "checkedAt": "2026-10-23",
+    "conclusion": "MB 無此專輯條目，人工身分；以 Discogs 確認發行"
+   },
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/823540",
+    "https://www.discogs.com/label/327417-Wackies-Studio"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 查無；人工身分。"
+  },
+  {
+   "artist": "Tony Tuff",
+   "album": "Hold Me Tight",
+   "year": 1984,
+   "label": "Woorell",
+   "country": "jm",
+   "faction": "wackies",
+   "genres": [
+    "world",
+    "reggae"
+   ],
+   "why": "Tony Tuff 在 Sugar Minott／Lloyd Barnes 圈子的專輯，池中同人《Presenting Mr. Tuff》x 2.5、y 1.0、z 1.0 落恍惚。",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 1,
+    "z": 0.9,
+    "why": "Sugar Minott 執行製作，lovers／roots"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/823602",
+    "https://www.discogs.com/label/327417-Wackies-Studio"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "artist:\"Tony Tuff\" AND releasegroup:\"Hold Me Tight\"",
+     "artist:\"Tony Tuff\" (album list 1972-1987 browse)"
+    ],
+    "checkedAt": "2026-10-23",
+    "conclusion": "MB 無此專輯條目，人工身分；以 Discogs 確認發行"
+   },
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/master/823602",
+    "https://www.discogs.com/label/327417-Wackies-Studio"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 查無；1984 年數位化風險。"
+  },
+  {
+   "artist": "Clive Field Marshall",
+   "album": "Poor House Rockers",
+   "year": 1981,
+   "label": "Wackie's",
+   "country": "us",
+   "faction": "wackies",
+   "genres": [
+    "world",
+    "reggae"
+   ],
+   "why": "Wackie's 的 toasting 專輯，節奏是同一班底的慢厚低音；DJ 唸唱偏慢。",
+   "moodGuess": {
+    "x": 2.7,
+    "y": 1.2,
+    "z": 0.5,
+    "why": "Toasting 在 Wackie's 厚低音節奏上"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/a4e3ae9c-7c10-45d6-99ef-9ad09ea16b4f",
+    "https://coverartarchive.org/release-group/a4e3ae9c-7c10-45d6-99ef-9ad09ea16b4f/front",
+    "https://www.discogs.com/master/229317"
+   ],
+   "mbRgMbid": "a4e3ae9c-7c10-45d6-99ef-9ad09ea16b4f",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "deejay 盤，x 與色溫是風險（池中 deejay 多 x≥2.9）；排序墊底。"
+  },
+  {
+   "artist": "I Kong",
+   "album": "The Way It Is",
+   "year": 1979,
+   "label": "Top Ranking",
+   "country": "jm",
+   "faction": "black-ark-circle",
+   "genres": [
+    "world",
+    "reggae"
+   ],
+   "why": "I Kong 唯一的 1979 年專輯，Discogs 製作名單含 Lee Perry、Geoffrey Chung 與 Sylvan Morris 的錄混，柔嗓配濕潤的 roots 節奏。",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1,
+    "z": 1,
+    "why": "柔和人聲，Black Ark 周邊錄製的 roots／lovers"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/73efe089-9c32-424a-9a7a-618ee65198d7",
+    "https://www.discogs.com/master/515784",
+    "https://www.discogs.com/master/317637"
+   ],
+   "mbRgMbid": "73efe089-9c32-424a-9a7a-618ee65198d7",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Discogs 兩個 master（515784／317637）同名同年；CAA 無圖。"
+  },
+  {
+   "artist": "The Cimarons",
+   "album": "On the Rock",
+   "year": 1976,
+   "label": "Vulcan",
+   "country": "gb",
+   "faction": "black-ark-circle",
+   "genres": [
+    "world",
+    "reggae"
+   ],
+   "why": "英國 Cimarons 的 1976 年專輯，Discogs 工程名單含 Lee Perry，樂團式 roots reggae 配厚低音，慢而暖。",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 1,
+    "z": 0.8,
+    "why": "英國樂團 roots，Perry 工程參與"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/e7af9fd8-e80c-4dc6-bee0-136668f96039",
+    "https://coverartarchive.org/release-group/e7af9fd8-e80c-4dc6-bee0-136668f96039/front",
+    "https://www.discogs.com/master/423654"
+   ],
+   "mbRgMbid": "e7af9fd8-e80c-4dc6-bee0-136668f96039",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "樂團編制、有幾首快歌的風險；Perry 實際參與程度不明。"
+  },
+  {
+   "artist": "The Slickers",
+   "album": "Breakthrough",
+   "year": 1979,
+   "label": "Tad's Record",
+   "country": "jm",
+   "faction": "black-ark-circle",
+   "genres": [
+    "world",
+    "reggae"
+   ],
+   "why": "The Slickers 的 1979 年專輯，Discogs 名單含 Lee Perry 與 Geoffrey Chung 的混音，合唱人聲配濕潤中速節奏。",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 1,
+    "z": 0.9,
+    "why": "Roots 合唱，Perry 與 Chung 混音"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/b9f454fe-0163-3a53-8009-101bb7536980",
+    "https://coverartarchive.org/release-group/b9f454fe-0163-3a53-8009-101bb7536980/front",
+    "https://www.discogs.com/master/252078"
+   ],
+   "mbRgMbid": "b9f454fe-0163-3a53-8009-101bb7536980",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Slickers〈Johnny Too Bad〉那型輕快曲目可能拉高 x。"
+  },
+  {
+   "artist": "The Melodians",
+   "album": "Pre-Meditation",
+   "year": 1978,
+   "label": "Sky Note",
+   "country": "jm",
+   "faction": "black-ark-circle",
+   "genres": [
+    "world",
+    "reggae"
+   ],
+   "why": "Melodians 1978 年重組專輯，Sonia Pottinger 製作，Perry 與 Errol Thompson 擔任工程，旋律優先的溫熱合唱。",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 0.9,
+    "z": 1,
+    "why": "合唱溫暖，Perry／Errol Thompson 錄混"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/66eedd1b-5a49-4828-b972-a3879cf9d094",
+    "https://coverartarchive.org/release-group/66eedd1b-5a49-4828-b972-a3879cf9d094/front",
+    "https://www.discogs.com/master/945929"
+   ],
+   "mbRgMbid": "66eedd1b-5a49-4828-b972-a3879cf9d094",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "池中 Melodians《Rivers of Babylon》1970 y −0.4 判輕；質地是主要風險。"
+  },
+  {
+   "artist": "Max Romeo",
+   "album": "Open the Iron Gate",
+   "year": 1978,
+   "label": "Island",
+   "country": "jm",
+   "faction": "black-ark-circle",
+   "genres": [
+    "world",
+    "reggae"
+   ],
+   "why": "Max Romeo 1978 年 Perry 周邊時期專輯，同期《War ina Babylon》池中 x 2.4、y 1.1 落恍惚。",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1,
+    "z": 0.8,
+    "why": "Perry 周邊的 Max Romeo 人聲，濕混音"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/570d564a-be54-46f6-8309-82d475253701",
+    "https://coverartarchive.org/release-group/570d564a-be54-46f6-8309-82d475253701/front"
+   ],
+   "mbRgMbid": "570d564a-be54-46f6-8309-82d475253701",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Discogs 搜到的是 Blood & Fire 1999 彙編，原盤 master 未確認；年份取 MB 1978。"
+  },
+  {
+   "artist": "Al Moodie",
+   "album": "Peace Love & Message",
+   "year": 1980,
+   "label": "Black Ark",
+   "country": "jm",
+   "faction": "black-ark-circle",
+   "genres": [
+    "world",
+    "reggae"
+   ],
+   "why": "Black Ark 廠牌 1980 年發行的 Al Moodie 專輯，Perry 晚期的濕混音人聲盤。",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.1,
+    "z": 0.8,
+    "why": "Black Ark 廠牌，Perry 製作的人聲專輯"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/d9299c75-1382-4890-ab00-5ac48adf3893",
+    "https://coverartarchive.org/release-group/d9299c75-1382-4890-ab00-5ac48adf3893/front"
+   ],
+   "mbRgMbid": "d9299c75-1382-4890-ab00-5ac48adf3893",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Perry 1980 年已搬離 Black Ark 舊聲，混音偏糊偏怪；Discogs 無 master；研究層需確認聲音。"
+  },
+  {
+   "artist": "Lion Zion",
+   "album": "Reggae in America",
+   "year": 1976,
+   "label": "Black Ark",
+   "country": "jm",
+   "faction": "black-ark-circle",
+   "genres": [
+    "world",
+    "reggae"
+   ],
+   "why": "Black Ark 廠牌 1976 年的 Lion Zion 專輯，Perry 周邊人聲盤；同期 Jah Lion《Colombia Colly》池中 y 1.5。",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.1,
+    "z": 0.8,
+    "why": "Black Ark 廠牌，Perry 周邊 roots 人聲"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/0b76ecd5-1d5e-45a5-9ae7-43687422028d",
+    "https://coverartarchive.org/release-group/0b76ecd5-1d5e-45a5-9ae7-43687422028d/front"
+   ],
+   "mbRgMbid": "0b76ecd5-1d5e-45a5-9ae7-43687422028d",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 首要類型欄為空，需確認為正規專輯；聲音全憑廠牌推估。"
+  },
+  {
+   "artist": "Sugar Minott",
+   "album": "Give the People",
+   "year": 1979,
+   "label": "Black Roots",
+   "country": "jm",
+   "faction": "jammy-niney-thompson",
+   "genres": [
+    "world",
+    "reggae"
+   ],
+   "why": "Sugar Minott 的 Black Roots 時期專輯，池中同人十張全落恍惚（y 0.6–1.1）。",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 1,
+    "z": 1,
+    "why": "Minott 人聲，Black Roots 類比節奏"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/8b2b765d-25fc-462f-8c02-f07c7e765339",
+    "https://coverartarchive.org/release-group/8b2b765d-25fc-462f-8c02-f07c7e765339/front"
+   ],
+   "mbRgMbid": "8b2b765d-25fc-462f-8c02-f07c7e765339",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "池中《Live Loving》y 0.1 判輕，Minott 早期盤質地有波動。"
+  },
+  {
+   "artist": "Noel Phillips",
+   "album": "Youth Man Vibrations",
+   "year": 1981,
+   "label": "Jammy's",
+   "country": "jm",
+   "faction": "jammy-niney-thompson",
+   "genres": [
+    "world",
+    "reggae"
+   ],
+   "why": "Prince Jammy 1981 年製作混音的人聲專輯，同年同人 Barry Brown、Michael Prophet 的 Jammy 盤池中 y 1.1–1.4 全落恍惚。",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.2,
+    "z": 0.7,
+    "why": "Prince Jammy 製作混音，類比濕混音人聲"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/0b240852-1641-4fa6-b042-4beebeea870b",
+    "https://coverartarchive.org/release-group/0b240852-1641-4fa6-b042-4beebeea870b/front",
+    "https://www.discogs.com/master/611166"
+   ],
+   "mbRgMbid": "0b240852-1641-4fa6-b042-4beebeea870b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "池中無此人。"
+  },
+  {
+   "artist": "The Meditations",
+   "album": "No More Friend",
+   "year": 1983,
+   "label": "Greensleeves",
+   "country": "jm",
+   "faction": "jammy-niney-thompson",
+   "genres": [
+    "world",
+    "reggae"
+   ],
+   "why": "Meditations 的 Linval Thompson 製作盤，Roots Radics 慢拍配和聲；同團《I Love Jah》池中 y 0.9。",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 1,
+    "z": 1,
+    "why": "三人和聲，Linval Thompson 製作、Roots Radics"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/256607aa-ced0-45d6-bc88-78692a7b367c",
+    "https://coverartarchive.org/release-group/256607aa-ced0-45d6-bc88-78692a7b367c/front",
+    "https://www.discogs.com/master/195327"
+   ],
+   "mbRgMbid": "256607aa-ced0-45d6-bc88-78692a7b367c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 無首發日（取 Discogs 1983）；同團其他盤 y 0.4–0.9，質地貼邊。"
+  },
+  {
+   "artist": "Barry Brown",
+   "album": "Barry",
+   "year": 1983,
+   "label": "Vista Sounds",
+   "country": "jm",
+   "faction": "jammy-niney-thompson",
+   "genres": [
+    "world",
+    "reggae"
+   ],
+   "why": "Barry Brown 1983 年 Niney 製作、Scientist 混音的專輯，同人池中三張 y 1.1–1.4 全落恍惚。",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.2,
+    "z": 0.8,
+    "why": "Niney 製作、Scientist 混音的人聲"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/c8abdbe6-43f4-46a1-b389-14b409ab63ee",
+    "https://coverartarchive.org/release-group/c8abdbe6-43f4-46a1-b389-14b409ab63ee/front",
+    "https://www.discogs.com/master/636090"
+   ],
+   "mbRgMbid": "c8abdbe6-43f4-46a1-b389-14b409ab63ee",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Barry Brown",
+   "album": "Stand Firm",
+   "year": 1982,
+   "label": "Jackpot",
+   "country": "jm",
+   "faction": "jammy-niney-thompson",
+   "genres": [
+    "world",
+    "reggae"
+   ],
+   "why": "Barry Brown 1982 年自製專輯，Scientist 混音，同人池中三張全落恍惚。",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.2,
+    "z": 0.8,
+    "why": "Scientist 混音，Roots Radics 慢拍"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/1b4a0fc2-b0b4-436f-9585-99ecef7be8fa",
+    "https://coverartarchive.org/release-group/1b4a0fc2-b0b4-436f-9585-99ecef7be8fa/front",
+    "https://www.discogs.com/master/536326"
+   ],
+   "mbRgMbid": "1b4a0fc2-b0b4-436f-9585-99ecef7be8fa",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Scientist 混音有冷硬 dub 的風險，但人聲曲為主。"
+  },
+  {
+   "artist": "Freddie McGregor",
+   "album": "Showcase",
+   "year": 1981,
+   "label": "Observer",
+   "country": "jm",
+   "faction": "jammy-niney-thompson",
+   "genres": [
+    "world",
+    "reggae"
+   ],
+   "why": "Freddie McGregor 在 Niney 旗下的 showcase 盤，人聲曲配 dub 版；池中同人《Big Ship》《Bobby Babylon》x 2.7–2.8、z 1.2–1.3。",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 1,
+    "z": 1,
+    "why": "Niney 製作 showcase，人聲＋dub 版"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/c87ff495-8102-34d2-bc44-7ffac03df038",
+    "https://coverartarchive.org/release-group/c87ff495-8102-34d2-bc44-7ffac03df038/front",
+    "https://www.discogs.com/master/371985"
+   ],
+   "mbRgMbid": "c87ff495-8102-34d2-bc44-7ffac03df038",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "池中同人 y 僅 0.6，質地靠 showcase 的 dub 版撐；貼邊風險。"
+  },
+  {
+   "artist": "Junior Delgado",
+   "album": "More She Love It - Showcase",
+   "year": 1981,
+   "label": "Yvonne's Special",
+   "country": "jm",
+   "faction": "jammy-niney-thompson",
+   "genres": [
+    "world",
+    "reggae"
+   ],
+   "why": "Junior Delgado 的 1981 showcase，Crucial Bunny 與 Maxie McKenzie 工程，人聲曲配 dub 版。",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.2,
+    "z": 0.5,
+    "why": "Showcase 人聲＋dub 版，Crucial Bunny 混音"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/991720e3-95d7-4904-ab1d-77f8c1307f24",
+    "https://coverartarchive.org/release-group/991720e3-95d7-4904-ab1d-77f8c1307f24/front"
+   ],
+   "mbRgMbid": "991720e3-95d7-4904-ab1d-77f8c1307f24",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Delgado 嗓音偏悲，z 可能低；Discogs 無 master。"
+  },
+  {
+   "artist": "Devon Russell",
+   "album": "Prison Life",
+   "year": 1983,
+   "label": "Tamoki Wambesi",
+   "country": "jm",
+   "faction": "jammy-niney-thompson",
+   "genres": [
+    "world",
+    "reggae"
+   ],
+   "why": "Tamoki Wambesi 廠牌 1983 年盤，Roy Cousins 製作，Roots Radics 式慢拍。",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 1,
+    "z": 0.8,
+    "why": "Roy Cousins 製作的 roots 人聲"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/051b64d5-3beb-456e-8967-fc0b5081879a",
+    "https://coverartarchive.org/release-group/051b64d5-3beb-456e-8967-fc0b5081879a/front",
+    "https://www.discogs.com/master/846017"
+   ],
+   "mbRgMbid": "051b64d5-3beb-456e-8967-fc0b5081879a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Discogs 工程名單含 Jeff Chandler；聲音未查證。"
+  },
+  {
+   "artist": "Winston Jarrett",
+   "album": "Wise Man",
+   "year": 1979,
+   "label": "Tamoki Wambesi",
+   "country": "jm",
+   "faction": "jammy-niney-thompson",
+   "genres": [
+    "world",
+    "reggae"
+   ],
+   "why": "Winston Jarrett 1979 年 Roy Cousins 製作、Scientist 混音的專輯，Discogs 風格 Roots Reggae／Rocksteady。",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 1,
+    "z": 0.8,
+    "why": "Roy Cousins 製作，Scientist 混音"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/87cba03a-3b6b-353d-8881-61d89e6d8c22",
+    "https://coverartarchive.org/release-group/87cba03a-3b6b-353d-8881-61d89e6d8c22/front",
+    "https://www.discogs.com/master/377684"
+   ],
+   "mbRgMbid": "87cba03a-3b6b-353d-8881-61d89e6d8c22",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Scientist 混音在池中判冷（器樂 dub），但本盤是人聲專輯。"
+  },
+  {
+   "artist": "Michael Prophet",
+   "album": "Jah Love",
+   "year": 1983,
+   "label": "Live & Learn",
+   "country": "jm",
+   "faction": "jammy-niney-thompson",
+   "genres": [
+    "world",
+    "reggae"
+   ],
+   "why": "Michael Prophet 1983 年 Junjo 製作盤，Roots Radics 慢拍；同人池中三張 y 1.1–1.3、x 2.5–2.8 全落恍惚。",
+   "moodGuess": {
+    "x": 2.7,
+    "y": 1.1,
+    "z": 0.7,
+    "why": "Junjo Lawes 製作，Roots Radics"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/2c02c7f4-f603-43c8-8d0a-8c35b87f0e79",
+    "https://www.discogs.com/master/195378"
+   ],
+   "mbRgMbid": "2c02c7f4-f603-43c8-8d0a-8c35b87f0e79",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "1983 年 Junjo 已近 dancehall 數位化邊緣；CAA 無圖，封面走 Discogs。"
+  }
+ ],
+ "notes": [
+  "只交 31 張（目標 54）：dub 第三波場景已被池與 dt1–dt5、ml1、ml9、ml38、ml40、ml41、ml45 吃光。大名（Dennis Brown、Culture、Heptones、Congos、Mighty Diamonds、Black Uhuru、Wailing Souls、Horace Andy、Sugar Minott 等）全在池，且 Joe Gibbs／Errol Thompson 系池中 y 多為 0.2–0.7（Culture 0.3、Dennis Brown Joe Gibbs 盤 0.2–0.7、Prince Jazzbo 沸騰），所以 Mighty Two 本線一張未收；Dennis Brown Niney 盤《Deep Down》、McGregor《Mr. McGregor》同理（池中同人 y 0.4–0.6）未收。",
+  "Wackies 14 張：池中 Tyrone Evans《Sings Bullwackie Style》、Wayne Jarrett、Love Joys、John Clarke、Milton Henry 全落恍惚（y 1.2–1.5），所以同班底歌手盤是本批最穩的；風險在 1984–85 年（Role Model、Sing and Shout、Hold Me Tight）可能混入電子鼓。Wackies Rhythm Force、Bullwackie's All Stars 等器樂 dub 一律不收（池中落頹靡）。Maxine Miller《Showcase》MB 登記為 EP 未收；Baba Leslie、Pancho Alphanso、Jerry Johnson、Michael Livingston、Paragons Return 查不到 Discogs master 或年份，未收。",
+  "Black Ark 7 張：Perry 本人與親近名單（Congos、Heptones、Junior Murvin、Max Romeo、Jah Lion、George Faith、Susan Cadogan、Junior Byles 等）早在池，剩下是 Perry 工程或廠牌掛名的二線盤，聲音證據弱（多為 Discogs 工程名單），Al Moodie、Lion Zion 尤其只憑廠牌推估，研究層優先查。Black Ark In Dub、Sensi Dub、Megaton Dub 等器樂 dub 不收。",
+  "Jammy／Niney／Thompson 10 張：Jammy 1985 sleng teng 之後數位期（Frankie Paul、Anthony Johnson 1985、Half Pint、Pinchers、Johnny Osbourne 1983 後的 Water Pumping／Musical Chopper）全不收；Prince Jammy《Strictly Dub》《Computerised Dub》是器樂 dub、不收。Niney 的 Dennis Brown／Heptones《Better Days》未收（池中同人 y 偏低）。",
+  "身分：MB 釘住 26 張；人工身分 5 張（Jerry Harris、Tyrone Evans、Leroy Smart、Max Romeo《Mek-Wi-Rock》、Tony Tuff《Hold Me Tight》），Discogs 為主證據。封面：26 張 MB 中 CAA 有圖者在 evidence 附 CAA 網址；Wayne Jarrett、Max Romeo《I Love My Music》、I Kong、Michael Prophet 無 CAA，走 Discogs 圖；人工身分 5 張全走 Discogs 圖——這些封面我沒有實際下載驗證（Discogs 圖片需授權），研究層或上線前要補驗。",
+  "Apple Music 試聽：Wackie's、Black Ark 周邊盤上架率低（見 ml38 試聽 16/26），本批沒有逐張查 iTunes，預期多數為「無試聽來源」狀態。",
+  "其他疑點：MB rg 首發日為重發年的三張（Love Joys 2001、Wayne Jarrett 2004、Chosen Brothers 1998）原盤年份取 Discogs master；Open the Iron Gate 沒有對上 Discogs 原盤 master。"
+ ]
+}

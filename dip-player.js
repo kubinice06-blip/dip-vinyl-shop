@@ -2,8 +2,10 @@
   const WORKER_URL = 'https://dip-vinyl-worker.kubinice06.workers.dev';
   const SPOTIFY_API = 'https://open.spotify.com/embed/iframe-api/v1';
   const YOUTUBE_API = 'https://www.youtube.com/iframe_api';
-  // 換內容就換 ?v：載入用 cache:'force-cache'，不換網址的話舊索引會一直被沿用。
-  const APPLE_AUDIO_MAP_URL = '/data/apple-audio-runtime-v1.json?v=2';
+  // 試聽索引每天跟著上架更新：載入用 cache:'no-cache'（每次帶 ETag 回伺服器確認，沒變只回 304）。
+  // 2026-10-25 以前是 force-cache＋手動換 ?v，忘了換版號，玩家手機就一直拿舊索引——
+  // 宇多田ヒカル《First Love》改掛名後店主手機查不到新鍵、試聽失效即為此。
+  const APPLE_AUDIO_MAP_URL = '/data/apple-audio-runtime-v1.json?v=5';
   const SPOTIFY_PLACEHOLDER = 'spotify:album:4aawyAB9vmqN3uQ7FjRGTy';
   const YOUTUBE_PLACEHOLDER = 'M7lc1UVf-VE';
   const IOS_DEVICE = /iPad|iPhone|iPod/.test(navigator.userAgent || '') ||
@@ -22,6 +24,12 @@
   let previewAudio = null, previewBufferSource = null, previewTimer = null, lastPreviewTrackId = '', previewPrimed = false, silentPreviewUrl = '';
   let keepAliveTimer = null;
   let previewArmedAt = 0, previewArmPromise = null;
+  // 使用者最近一次「親手」要出聲的時間（按播放鍵、按音樂開關、點播放列表）。
+  // 幾秒內若被系統中斷，視為音訊 session 交接的來回，不當成「使用者去聽串流」（見 revokeAutoplayByInterruption）。
+  let lastManualPlayAt = 0;
+  const MANUAL_PLAY_GRACE_MS = 4000;
+  // 真實試聽正由 <audio> 元素直接播放（Web Audio 起不來時的後備，見 playPreviewElement）
+  let previewElementActive = false;
   let currentPreviewData = null, lastFailCode = '';
   let appleAudioMap = null, appleAudioMapPromise = null;
   // 店主要求：整體音量固定 50%，開頭 1.5 秒淡入、結尾 1.5 秒淡出。
@@ -39,11 +47,11 @@
   //
   // 舊版做法是「每次造訪都要先按一次播放」（存 sessionStorage）。店主要求改成：
   // 沒在聽串流的人應該一進來就有聲音，聽串流的人則要能被偵測並自動閉嘴。
-  // 因此改成「裝置記憶 + 碰撞偵測」：
-  //   1. 裝置從未表態（null）→ 靜音，由頁面提示「點這裡開啟」。
-  //   2. 使用者點過開關（'on'）→ 之後每次造訪都直接自動播放，不必再按。
-  //   3. 偵測到聲音被別的 App 搶走 → 視為「使用者選擇串流」，自動改成 'off' 並記住。
-  // 「出聲前先問系統有沒有人在播」做不到，所以保證是「最多撞一次，撞過就學乖」。
+  // 因此改成「這次造訪的記憶 + 碰撞偵測」（2026-10-23 店主改成預設開啟）：
+  //   1. 每次造訪預設開（'on'），直接自動播放。
+  //   2. 使用者按掉開關 → 這次造訪都是關。
+  //   3. 偵測到聲音被別的 App 搶走 → 視為「使用者選擇串流」，這次造訪改成 'off'。
+  // 「出聲前先問系統有沒有人在播」做不到，所以保證是「每次造訪最多撞一次，撞過就學乖」。
   const AUTOPLAY_MEMORY_KEY = 'dip:autoplay';
   // 舊的每次造訪授權保留在程式裡，改由旗標斷路（要退回舊行為就把兩個旗標打開）。
   const AUTOPLAY_CONSENT_KEY = 'dip:autoplay-consent';
@@ -57,29 +65,41 @@
   // Spotify 嵌入是一台連著使用者帳號的播放器，會讓我們無意間停掉店主正在聽的串流。
   const EAGER_IFRAME_PLAYERS = false;
 
+  // 2026-10-23 店主：「預設開啟」＝每次來都是開的。開關（手動按掉、偵測到串流搶焦點）只記在
+  // 這次造訪（sessionStorage：同一個分頁／App 沒關掉前都有效），關掉分頁或 App 再來就回到開。
+  // 舊版記在 localStorage 的 'off' 會讓裝置永遠靜音（店主手機就是這樣），讀到就清掉。
+  try { localStorage.removeItem(AUTOPLAY_MEMORY_KEY); } catch (_) {}
   function readAutoplayMemory() {
     try {
-      const value = localStorage.getItem(AUTOPLAY_MEMORY_KEY);
+      const value = sessionStorage.getItem(AUTOPLAY_MEMORY_KEY);
       return value === 'on' || value === 'off' ? value : '';
     } catch (_) { return ''; }
   }
   function writeAutoplayMemory(value) {
-    try { localStorage.setItem(AUTOPLAY_MEMORY_KEY, value); } catch (_) {}
+    try { sessionStorage.setItem(AUTOPLAY_MEMORY_KEY, value); } catch (_) {}
   }
 
   let autoplayConsent = false;
   try { if (PERSIST_SESSION_CONSENT) autoplayConsent = sessionStorage.getItem(AUTOPLAY_CONSENT_KEY) === '1'; } catch (_) {}
   // 裝置記憶蓋過 session 授權：'on' 直接放行自動播放，'off' 一律安靜。
-  const initialMemory = readAutoplayMemory();
-  if (initialMemory) autoplayConsent = initialMemory === 'on';
+  // 2026-10-23 店主：預設開啟——沒表態過的裝置當成 'on'，按過關閉（或偵測到串流搶焦點）才記成 'off'。
+  const initialMemory = readAutoplayMemory() || 'on';
+  autoplayConsent = initialMemory === 'on';
+
+  // 開關關著（🔇）時玩家親手按播放：只放行「這一首」，不打開自動試聽（2026-11-03 店主回報：
+  // 「已經把網頁的聲音關閉，串流卻還是會停止」）。舊版手動播放直接把 autoplayConsent 設成 true，
+  // 喇叭卻還顯示 🔇——之後每次抽卡的 gpEnsurePlayer／warmAlbum 都照常武裝 keep-alive、resume
+  // AudioContext，串流每抽一張就被停一次。這張播完（stopped／error）通行證就收回，音訊圖一併關掉。
+  let manualPass = false;
+  function audioAllowed() { return autoplayConsent || manualPass; }
 
   let state = { status: 'idle', provider: null, artist: '', album: '', cover: '', consent: autoplayConsent };
   let mediaSessionActive = false;
   const revokeListeners = new Set();
 
   function hasAutoplayConsent() { return autoplayConsent; }
-  // 'on' | 'off' | 'unset'——頁面用它決定顯示開關圖示與是否要跳首次提示。
-  function autoplayPreference() { return readAutoplayMemory() || 'unset'; }
+  // 'on' | 'off'——頁面用它決定顯示開關圖示。沒表態過的裝置預設 'on'（2026-10-23 店主）。
+  function autoplayPreference() { return readAutoplayMemory() || 'on'; }
 
   // 刻意不發事件：授權是在手勢當下、緊接著要起播時給的。走 emit() 會順手跑一次
   // syncMediaSession，而此刻 status 還停在 stopped，會把剛武裝好的 keep-alive src
@@ -89,6 +109,7 @@
   // 不該順手把對戰／試煉的自動播放也打開（否則下次邊聽串流邊開對戰又會被搶）。
   // 要寫進裝置記憶的是音樂開關，走 setAutoplayPreference(true)。
   function grantAutoplayConsent() {
+    if (readAutoplayMemory() === 'off') { manualPass = true; return false; }
     if (autoplayConsent) return false;
     autoplayConsent = true;
     state = { ...state, consent: true };
@@ -101,6 +122,7 @@
     if (enabled) { writeAutoplayMemory('on'); return grantAutoplayConsent(); }
     writeAutoplayMemory('off');
     autoplayConsent = false;
+    manualPass = false;
     state = { ...state, consent: false };
     try { if (PERSIST_SESSION_CONSENT) sessionStorage.removeItem(AUTOPLAY_CONSENT_KEY); } catch (_) {}
     releaseAudio();
@@ -117,7 +139,26 @@
   // 自己被中斷（iOS：AudioContext 轉 interrupted；Android：播放中被系統 suspend），
   // 但偵測不到「我們蓋過別人」——後者只能靠每場開聲時的提示涵蓋。
   function revokeAutoplayByInterruption(reason) {
-    if (!autoplayConsent) return false;
+    if (!autoplayConsent) {
+      // 開關本來就關、只是手動放行這一首：被串流搶走就停，偏好不用動。
+      if (manualPass) {
+        // stop() 只停試聽，context 還在（iOS 是 'interrupted'），切回分頁時 WebKit 會自動恢復它、再把串流停掉。
+        releaseAudio();
+        if (Date.now() - lastManualPlayAt < MANUAL_PLAY_GRACE_MS) revokeListeners.forEach(listener => { try { listener({ reason, kept: true }); } catch (_) {} });
+      }
+      return false;
+    }
+    // 使用者幾秒前才親手按下播放／開關，這時被中斷多半是系統交接 audio session 的來回：
+    // 我們剛把對方的串流打斷、session 一鬆手對方收到「可續播」就自動接回、再把我們中斷。
+    // 這不是使用者改變心意。若照舊把裝置記憶寫成 off 並跳「偵測到你在聽其他音樂」，
+    // 使用者看到的就是「按了播放沒反應、開關還自己關掉」（2026-10-18 店主回報）。
+    // 寬限內只停這一次、偏好不動，提示改成請他再按一次播放。
+    if (Date.now() - lastManualPlayAt < MANUAL_PLAY_GRACE_MS) {
+      // 同上：寬限內也要連 context 一起關（2026-11-05 店主：「按串流連結去聽歌，換回網頁時串流就停了」）
+      releaseAudio();
+      revokeListeners.forEach(listener => { try { listener({ reason, kept: true }); } catch (_) {} });
+      return false;
+    }
     setAutoplayPreference(false);
     revokeListeners.forEach(listener => { try { listener({ reason }); } catch (_) {} });
     return true;
@@ -137,12 +178,44 @@
       }
     } catch (_) {}
     clearMediaSession();
-    try { if (audioCtx && audioCtx.state === 'running') audioCtx.suspend?.(); } catch (_) {}
+    closeAudioGraph();
+  }
+
+  // 關掉 AudioContext（不是 suspend）。2026-11-03：原本只在 state === 'running' 時 suspend，
+  // 但被串流搶走的 context 在 iOS 是 'interrupted'，於是根本沒被停；之後玩家切回這個分頁或解鎖手機，
+  // WebKit 結束中斷時會自動把它恢復運轉，重新要走音訊焦點——喇叭明明是 🔇，串流卻又被停。
+  // close 之後就沒有東西可以被「恢復」。下次要出聲時 ensurePreviewGraph 會在手勢內重建；
+  // 已解碼的 AudioBuffer 不綁 context，快取照用。
+  function closeAudioGraph() {
+    const ctx = audioCtx;
+    if (!ctx) return;
+    audioCtx = null;
+    previewGain = null;
+    previewLevel = 0;
+    previewRampEnd = 0;
+    try { const r = ctx.close?.(); if (r?.catch) r.catch(() => {}); } catch (_) {}
+  }
+
+  // 手動放行的那一首結束：收回通行證。開關仍是關的話，連靜音 keep-alive 與音訊圖都交還給系統。
+  function endManualPass() {
+    manualPass = false;
+    if (autoplayConsent) return;
+    clearTimeout(keepAliveTimer);
+    try {
+      if (previewAudio && !previewElementActive) {
+        previewAudio.loop = false;
+        if (!previewAudio.paused) previewAudio.pause();
+        previewAudio.removeAttribute('src');
+        previewAudio.load?.();
+      }
+    } catch (_) {}
+    closeAudioGraph();
   }
 
   function emit(next) {
     state = { ...state, ...next };
     syncMediaSession(state);
+    if (manualPass && (state.status === 'stopped' || state.status === 'error')) endManualPass();
     listeners.forEach(listener => { try { listener({ ...state }); } catch (_) {} });
   }
 
@@ -268,7 +341,11 @@
   const DEFAULT_TOGGLE_HINTS = {
     first: '♪ 點這裡開啟自動試聽',
     auto: '♪ 自動試聽中 · 點這裡可關閉',
-    revoked: '偵測到你在聽其他音樂 · 已暫停自動試聽'
+    revoked: '偵測到你在聽其他音樂 · 已暫停自動試聽',
+    // 開啟開關但當下沒有東西可播（armOnEnable:false 的頁面）
+    enabled: '♪ 自動試聽已開啟 · 抽到卡就會播放',
+    // 手動播放剛起就被別的音訊中斷（寬限內不寫 off，見 revokeAutoplayByInterruption）
+    interrupted: '♪ 試聽被其他音訊打斷 · 再按一次播放鍵'
   };
 
   function createToggle(container, options = {}) {
@@ -291,13 +368,19 @@
       const enable = autoplayPreference() !== 'on';
       setAutoplayPreference(enable);
       sync();
+      // 開啟時預設順手武裝音訊（這一下是授權手勢，iOS 只認同步手勢）。但「武裝」＝靜音
+      // keep-alive 開始播＝向系統要走音訊焦點＝停掉玩家正在聽的串流——而此刻根本沒有東西要出聲。
+      // 知道自己有沒有可播內容的頁面（抽卡結果頁）傳 armOnEnable:false，並在 onToggle 裡
+      // 直接起播（回傳 true）：真的要出聲才搶焦點，只是切開關不搶。
+      // 2026-10-18 店主回報：聽串流時切開開關，串流被停、按播放鍵又沒反應，病灶就在這裡。
+      if (enable && options.armOnEnable !== false) unlock();
+      if (enable) lastManualPlayAt = Date.now();
+      let started = false;
+      try { started = options.onToggle?.(enable) === true; } catch (_) {}
       if (enable) {
-        // 這一下就是使用者的授權手勢，順手把音訊武裝起來（iOS 只認同步手勢）。
-        unlock();
         autoHintShownThisVisit = true;
-        showHint(button, hints.auto);
+        showHint(button, (started || options.armOnEnable !== false) ? hints.auto : hints.enabled);
       }
-      try { options.onToggle?.(enable); } catch (_) {}
     });
     container.appendChild(button);
     sync();
@@ -310,7 +393,7 @@
         showHint(button, hints.auto);
       }
     });
-    const offRevoke = onAutoplayRevoked(() => { sync(); showHint(button, hints.revoked); });
+    const offRevoke = onAutoplayRevoked((info) => { sync(); showHint(button, info?.kept ? hints.interrupted : hints.revoked); });
     // 裝置從未表態：靜音，但要讓玩家知道有這個功能。整台裝置只提示一次。
     if (autoplayPreference() === 'unset') {
       let seen = false;
@@ -510,7 +593,7 @@
     // 只在有授權時才 resume。建立一個 suspended 的 context 不會驚動系統，但
     // **resume 會向系統要走音訊焦點**、停掉玩家正在聽的串流。抽卡時的 warmAlbum
     // 預先解碼就是走到這裡，於是「還沒開試聽、只是抽了一張牌」也會把 Spotify 停掉。
-    if (!autoplayConsent) return;
+    if (!audioAllowed()) return;
     if (audioCtx && audioCtx.state !== 'running') { try { audioCtx.resume?.()?.catch?.(() => {}); } catch (_) {} }
   }
 
@@ -534,10 +617,10 @@
   // 靜音 keep-alive 只是為了讓 iOS 在「下載＋解碼」的空窗期不要收掉 audio session。
   // 若武裝之後遲遲沒有真的試聽起播（使用者只是點了介面、最後沒播成），它會一直
   // 循環播放並持續佔著音訊焦點，Spotify 就一直被壓著。逾時就自己放手。
-  function armKeepAliveRelease() {
+  function armKeepAliveRelease(holdMs) {
     clearTimeout(keepAliveTimer);
     keepAliveTimer = setTimeout(() => {
-      if (previewBufferSource) return;
+      if (previewBufferSource || previewElementActive) return;
       try {
         if (previewAudio && !previewAudio.paused) {
           previewAudio.loop = false;
@@ -546,12 +629,33 @@
           previewAudio.load?.();
         }
       } catch (_) {}
-    }, 8000);
+    }, holdMs || 8000);
   }
+
+  // 2026-11-05 店主：「玩選歌遊戲按串流連結去聽歌，換回網頁時串流就停了」。
+  // 按串流按鈕＝明確要去聽串流。當下就把音訊整個交還（停試聽、靜音 keep-alive、關 AudioContext），
+  // 並把這次造訪的自動試聽關掉（同「偵測到串流」）。少了前者，正在播的試聽或剛按過播放的 context
+  // 會在切回分頁時被 WebKit 自動恢復；少了後者，切回來一碰轉輪、抽卡，自動試聽又搶走焦點。
+  // 要再聽試聽：按 🔊 或播放鍵（手勢內重建）。
+  const STREAM_LINK = 'a.streaming-btn[href], a[data-apple-artist], a[href*="open.spotify.com"], a[href*="music.apple.com"], a[href*="music.youtube.com"], a[href*="bandcamp.com"], a[href^="spotify:"], a[href^="music:"]';
+  function leaveForStream() {
+    const wasOn = autoplayConsent || readAutoplayMemory() !== 'off';
+    setAutoplayPreference(false);   // 內含 releaseAudio()
+    if (wasOn) revokeListeners.forEach(listener => { try { listener({ reason: 'stream-link' }); } catch (_) {} });
+  }
+  document.addEventListener('click', event => {
+    const link = event.target?.closest?.(STREAM_LINK);
+    if (!link || link.hasAttribute('disabled')) return;
+    try { leaveForStream(); } catch (_) {}
+  }, true);
 
   // 切到別的 App／別的分頁而我們沒在播 → 沒有理由再佔著音訊焦點。
   document.addEventListener('visibilitychange', () => {
-    if (document.visibilityState !== 'hidden' || previewBufferSource) return;
+    if (document.visibilityState !== 'hidden') return;
+    // 元素模式：iOS 會讓 <audio> 在背景續播（Web Audio 路徑切到背景會自己停），
+    // 試聽是前景的體驗，切出去就停（店主 2026-10-19：「跳出去音樂還在播放」）。
+    if (previewElementActive) { try { stop(); } catch (_) {} return; }
+    if (previewBufferSource) return;
     try {
       if (previewAudio && !previewAudio.paused) {
         previewAudio.loop = false;
@@ -560,11 +664,18 @@
         previewAudio.load?.();
       }
     } catch (_) {}
+    // 沒在播就連 AudioContext 一起關（2026-11-03）。留著不管的話，玩家切去聽串流再切回來時，
+    // iOS 結束「進背景」的中斷會自動恢復這個 context、重新要走音訊焦點，串流就被停掉。
+    // 下一次出聲一定經過手勢（播放鍵、抽卡、碰輪子），ensurePreviewGraph 會在那裡重建。
+    closeAudioGraph();
   });
+
+  // 離開頁面（返回店內挖寶、關分頁）一律停掉元素模式的試聽，別讓它活過頁面
+  window.addEventListener('pagehide', () => { if (previewElementActive) { try { stop(); } catch (_) {} } });
 
   function fadePreview(toValue, ms) {
     clearInterval(previewVolumeTimer);
-    if (previewGain && audioCtx) {
+    if (previewGain && audioCtx && !previewElementActive) {
       try {
         const now = audioCtx.currentTime;
         const gain = previewGain.gain;
@@ -634,13 +745,14 @@
     return Date.now() - lastGestureAt < 1000;
   }
 
-  function primePreviewFromGesture() {
+  function primePreviewFromGesture(holdMs) {
     if (!root) return false;
     try {
       const audio = ensurePreviewAudio();
       ensurePreviewGraph();
       // 武裝就開始倒數：8 秒內沒有真的試聽起播就放掉焦點，別一直壓著別人的串流。
-      armKeepAliveRelease();
+      // 一進頁就抽的流程（直接來一張）可傳 hold 拉長，蓋過載入卡池與封面的時間。
+      armKeepAliveRelease(holdMs);
       // 送出一個全靜音 sample，確保 iOS 真正解鎖 Web Audio 輸出，不只把
       // AudioContext 狀態標成 running。gain 此時固定為 0，不會產生聲音。
       if (audioCtx?.createBuffer && audioCtx?.createBufferSource && previewGain) {
@@ -722,10 +834,11 @@
   // 在這裡統一擋掉，往後新增呼叫點也不會再犯同一個錯。
   // grant=true 專給「使用者明確點了某張唱片要聽」（唱片櫃／搜尋頁）——那是本次造訪的
   // 授權，不寫裝置記憶，不會順手把對戰／試煉的自動播放也打開。
-  function unlock({ youtube = UNLOCK_YOUTUBE_DEFAULT, grant = false } = {}) {
+  function unlock({ youtube = UNLOCK_YOUTUBE_DEFAULT, grant = false, hold = 0 } = {}) {
     if (grant) grantAutoplayConsent();
-    if (!autoplayConsent) return false;
-    const previewReady = primePreviewFromGesture();
+    // 不帶 grant 的是自動路徑（抽卡、碰卡片），只認自動試聽開關；手動通行證只給帶 grant 的播放鍵。
+    if (!(grant ? audioAllowed() : autoplayConsent)) return false;
+    const previewReady = primePreviewFromGesture(hold);
     const youtubeReadyNow = youtube ? primeYoutubeFromGesture() : false;
     return previewReady || youtubeReadyNow;
   }
@@ -774,7 +887,7 @@
   function loadAppleAudioMap() {
     if (appleAudioMap) return Promise.resolve(appleAudioMap);
     if (!appleAudioMapPromise) {
-      appleAudioMapPromise = fetch(APPLE_AUDIO_MAP_URL, { cache:'force-cache' })
+      appleAudioMapPromise = fetch(APPLE_AUDIO_MAP_URL, { cache:'no-cache' })
         .then(response => response?.ok ? response.json() : null)
         .then(data => {
           appleAudioMap = data?.version === 1 && data?.entries && typeof data.entries === 'object' ? data : null;
@@ -960,6 +1073,84 @@
     } catch (_) { lastFailCode = 'S9:fetch'; return {}; }
   }
 
+  // 2026-11-05 店主：「試聽播出時都是播在該專輯最紅的歌」。Apple 30 秒片段的起點由 Apple 決定、改不了，
+  // 能決定的是播哪一首：靜態地圖已離線選好最紅那首（scripts/popular-preview.mjs，Deezer 單曲 rank
+  // ＋Apple Music 熱門星號）；即時查到的曲目清單在這裡用 Deezer rank 挑最紅那首（JSONP，限時），
+  // 查不到才退回第一首 ≥60 秒、不是 demo／live／remix 的正曲。原本的「隨機挑一首」已拿掉。
+  const PREVIEW_VARIANT = /\b(demo|live|remix|instrumental|karaoke|a ?cappella|acapella|alternate|outtake|rough|take \d|session|rehearsal|radio edit|mono)\b/i;
+  const PREVIEW_VARIANT_BRACKET = /[\(\[\{（【][^\)\]\}）】]*(?:remaster|version|mono|stereo|edit|mix|live|demo|feat|with|bonus|single|explicit|deluxe|from|19\d\d|20\d\d)[^\)\]\}）】]*[\)\]\}）】]/gi;
+  function previewTitleKey(title) {
+    return normalizePreviewText(String(title || '').replace(PREVIEW_VARIANT_BRACKET, ' ').replace(/\s[-–—]\s.*$/, ' '));
+  }
+  function previewTrackEligible(tracks) {
+    const variantAlbum = tracks.filter(t => PREVIEW_VARIANT.test(t.trackName || '')).length > tracks.length / 2; // 現場專輯整張都是 live
+    return t => (!Number(t.duration) || Number(t.duration) >= 60000) && (variantAlbum || !PREVIEW_VARIANT.test(t.trackName || ''));
+  }
+  function firstRealTrack(tracks) {
+    return tracks.find(previewTrackEligible(tracks)) || tracks[0] || null;
+  }
+
+  function fetchJsonp(requestUrl, ms) {
+    return new Promise(resolve => {
+      const callback = `dipJsonp${Date.now()}_${Math.random().toString(36).slice(2)}`;
+      const script = document.createElement('script');
+      let settled = false;
+      const finish = value => {
+        if (settled) return;
+        settled = true;
+        clearTimeout(timer);
+        try { delete window[callback]; } catch (_) { window[callback] = undefined; }
+        script.remove?.();
+        resolve(value && typeof value === 'object' ? value : null);
+      };
+      window[callback] = value => finish(value);
+      requestUrl.searchParams.set('output', 'jsonp');
+      requestUrl.searchParams.set('callback', callback);
+      script.src = requestUrl.toString();
+      script.async = true;
+      script.onerror = () => finish(null);
+      const timer = setTimeout(() => finish(null), ms);
+      document.head.appendChild(script);
+    });
+  }
+
+  async function markPopularTrack(data, artist, album) {
+    const tracks = Array.isArray(data?.tracks) ? data.tracks : [];
+    if (!tracks.length || data.popularRanked) return data;
+    // 先放保底（第一首正曲），Deezer 逾時或查不到時直接用它
+    if (!data.popularId) data.popularId = String(firstRealTrack(tracks)?.id || '');
+    if (tracks.length < 2) return data;
+    try {
+      const search = new URL('https://api.deezer.com/search/album');
+      search.searchParams.set('q', `${artist} ${album}`);
+      search.searchParams.set('limit', '10');
+      const found = await fetchJsonp(search, 1500);
+      const hit = (found?.data || []).find(x => previewArtistMatches(x?.artist?.name, artist) && previewAlbumMatches(x?.title, album));
+      if (!hit?.id) return data;
+      const list = new URL(`https://api.deezer.com/album/${encodeURIComponent(hit.id)}/tracks`);
+      list.searchParams.set('limit', '300');
+      // 藝人熱門榜：同一首歌在精選輯／單曲版的 rank 常高於這張專輯的版本，歌的熱度取所有版本最高
+      const top = hit.artist?.id ? new URL(`https://api.deezer.com/artist/${encodeURIComponent(hit.artist.id)}/top`) : null;
+      top?.searchParams.set('limit', '100');
+      const [albumRows, topRows] = await Promise.all([fetchJsonp(list, 1500), top ? fetchJsonp(top, 1500) : null]);
+      const rank = new Map();
+      for (const row of [...(albumRows?.data || []), ...(topRows?.data || [])]) {
+        const key = previewTitleKey(row?.title);
+        if (key) rank.set(key, Math.max(rank.get(key) || 0, Number(row?.rank || 0)));
+        const bare = normalizePreviewText(String(row?.title || '').replace(/[\(\[][^\)\]]*[\)\]]/g, ' '));
+        if (bare && bare !== key) rank.set(bare, Math.max(rank.get(bare) || 0, Number(row?.rank || 0)));
+      }
+      const rankOfTitle = title => Math.max(rank.get(previewTitleKey(title)) || 0,
+        rank.get(normalizePreviewText(String(title || '').replace(/[\(\[][^\)\]]*[\)\]]/g, ' '))) || 0);
+      const ok = previewTrackEligible(tracks);
+      const scored = tracks.map(t => ({ t, r: rankOfTitle(t.trackName) })).filter(x => x.r > 0);
+      const pool = scored.some(x => ok(x.t)) ? scored.filter(x => ok(x.t)) : scored;
+      pool.sort((a, b) => b.r - a.r);
+      if (pool[0]) { data.popularId = String(pool[0].t.id || pool[0].t.previewUrl); data.popularRanked = true; }
+    } catch (_) {}
+    return data;
+  }
+
   async function fetchItunesPreview(artist, album, { skipMap = false } = {}) {
     if (!skipMap) {
       const mapped = await mappedItunesPreview(artist, album);
@@ -970,7 +1161,11 @@
     const fallbacks = MOBILE_DEVICE ? [fetchItunesGateway, fetchItunesDirect] : [fetchItunesDirect, fetchItunesGateway];
     for (const fallback of fallbacks) {
       const data = await fallback(artist, album);
-      if (data?.tracks?.length) return data;
+      if (data?.tracks?.length) {
+        // 總共最多多等 2.5 秒；逾時就用保底那首（markPopularTrack 一開始就設好 popularId）
+        await withTimeout(markPopularTrack(data, artist, album), 2500).catch(() => {});
+        return data;
+      }
     }
     return {};
   }
@@ -1153,6 +1348,46 @@
     const source = previewBufferSource;
     previewBufferSource = null;
     disposePreviewBuffer(source);
+    if (previewElementActive) {
+      previewElementActive = false;
+      try { if (previewAudio) { previewAudio.onended = null; previewAudio.onpause = null; previewAudio.pause(); } } catch (_) {}
+    }
+  }
+
+  // Web Audio 起不來時的後備：用 <audio> 元素直接播試聽（2026-10-19）。
+  // iOS Safari 從 shop.html 點「直接來一張」過來的新文件沒有頁內手勢：WebKit 把點連結那一下的
+  // 授權給 HTMLMediaElement（靜音 keep-alive 播得起來），卻不給 AudioContext——resume() 永遠
+  // 掛著、state 停在 suspended、currentTime 一直是 0，source.start() 悄悄無聲而狀態照樣 playing
+  //（店主 2026-10-19 的 audiodebug 截圖）。這條路沒有淡入淡出（iOS 不理 volume），
+  // 但有聲音；一旦之後出現真正的手勢（再一張、播放鍵），ctx 跑起來就回到 Web Audio 路徑。
+  async function playPreviewElement(audio, url, token, durationSec) {
+    try {
+      clearTimeout(keepAliveTimer);
+      audio.loop = false;
+      audio.src = url;
+      audio.currentTime = 0;
+      try { audio.volume = BASE_GAIN; } catch (_) {}
+      const attempt = audio.play();
+      const ok = attempt?.then ? await withTimeout(attempt.then(() => true, () => false), 4000) : true;
+      if (!ok || token !== requestId) { try { audio.pause(); } catch (_) {} return false; }
+      previewElementActive = true;
+      const playMs = Math.min(30500, Math.max(1000, Number(durationSec || 30) * 1000));
+      const finish = () => {
+        if (token !== requestId || !previewElementActive) return;
+        stopPreviewBuffer();
+        emit({ status:'stopped', provider:null });
+      };
+      audio.onended = finish;
+      // 元素模式也要能被串流搶走時閉嘴（2026-10-23 店主：預設開啟後，玩家有在用串流就優先停網頁聲音）。
+      // 別的 App 拿走音訊焦點時，系統會把 <audio> 暫停；我們自己停（stopPreviewBuffer）會先把
+      // previewElementActive 清掉，切到背景的 visibilitychange 也是先 stop()，所以這裡只剩「被搶」這一種。
+      audio.onpause = () => {
+        if (token !== requestId || !previewElementActive || document.visibilityState !== 'visible') return;
+        revokeAutoplayByInterruption('element-paused');
+      };
+      previewTimer = setTimeout(finish, playMs + 500);
+      return true;
+    } catch (_) { return false; }
   }
 
   function decodePreviewBuffer(bytes) {
@@ -1213,8 +1448,8 @@
     const tracks = Array.isArray(data?.tracks) ? data.tracks.filter(track => track?.previewUrl) : [];
     if (!tracks.length || token !== requestId) return false;
     const forced = forcedTrackId ? tracks.find(track => String(track.id || track.previewUrl) === forcedTrackId) : null;
-    const choices = tracks.length > 1 ? tracks.filter(track => track.id !== lastPreviewTrackId) : tracks;
-    const track = forced || choices[Math.floor(Math.random() * choices.length)] || tracks[0];
+    const popular = !forced && data?.popularId ? tracks.find(track => String(track.id || track.previewUrl) === data.popularId) : null;
+    const track = forced || popular || firstRealTrack(tracks) || tracks[0];
     const audio = ensurePreviewAudio();
     if (!audio || !track) return false;
     try {
@@ -1233,6 +1468,23 @@
       // 「第一次點開沒聲音、關掉重開才正常」的成因：第二次 buffer 已在快取，幾乎同一個
       // tick 就 start，來不及被收掉。改成等真實試聽開始輸出、由它接手 session 之後才收。
       setProvider('itunes');
+      // 2026-10-19：下載解碼**之前**先確認 ctx 跑不跑得起來。沒有頁內手勢時（直接來一張第一抽）
+      // resume() 在 iOS 永遠不回，原本要先下載解碼、再等 1.5 秒逾時才改走元素，試聽晚了七秒才出聲
+      //（店主截圖 loading 5.8s → playing 13.0s）。手勢外只等 300ms，起不來就直接讓元素自己載自己播。
+      const elementResult = () => ({
+        trackName:track.trackName || '', storeUrl:track.storeUrl || '',
+        attribution:data?.source === 'pinned-file' ? (data.attribution || '店內試聽') : 'Apple Music 試聽',
+        trackId:String(track.id || track.previewUrl), tracks:data?.source === 'itunes-map' ? [] : previewTrackSummary(data)
+      });
+      if (audioCtx && audioCtx.state !== 'running') await withTimeout(Promise.resolve(audioCtx.resume?.()), inUserGesture() ? 1500 : 300);
+      if (token !== requestId) return false;
+      if (!audioCtx || audioCtx.state !== 'running') {
+        const okEl = await playPreviewElement(audio, track.previewUrl, token, 30);
+        if (!okEl) { lastFailCode = 'S12'; return false; }
+        currentPreviewData = data;
+        lastPreviewTrackId = track.id || track.previewUrl;
+        return elementResult();
+      }
       const decoded = await loadPreviewBuffer(track.previewUrl);
       if (token !== requestId) return false;
       if (!decoded || !audioCtx?.createBufferSource || !previewGain) {
@@ -1252,16 +1504,25 @@
         disposePreviewBuffer(source);
         return false;
       }
+      if (audioCtx.state !== 'running') {
+        // Web Audio 沒跑起來 → 改用 <audio> 元素直接播（見 playPreviewElement 的說明）
+        if (previewBufferSource === source) previewBufferSource = null;
+        disposePreviewBuffer(source);
+        const okEl = await playPreviewElement(audio, track.previewUrl, token, decoded.duration);
+        if (!okEl) { lastFailCode = 'S12'; return false; }
+        currentPreviewData = data;
+        lastPreviewTrackId = track.id || track.previewUrl;
+        return elementResult();
+      }
       setPreviewLevel(0);
       source.start(0);
       fadePreview(BASE_GAIN, FADE_MS);
-      // 真實試聽已經在輸出、session 由它接手 → 這時才收掉靜音 keep-alive。
-      // 失敗的分支一律不收：讓它繼續墊著，下一次重試才有 session 可用。
-      // 必須等這次手勢發出的 play() 落定再 pause，否則會把自己的 play() 打成
-      // AbortError（快取命中時 start 幾乎與武裝同一個 tick，必中）。
-      const releaseKeepAlive = () => { try { audio.loop = false; audio.pause?.(); } catch (_) {} };
-      if (previewArmPromise?.then) previewArmPromise.then(releaseKeepAlive, releaseKeepAlive);
-      else releaseKeepAlive();
+      // 2026-10-18 起**不再在起播後收掉靜音 keep-alive**，讓它陪著真實試聽播到 stop()／播完
+      // （播完走 emit(stopped) → clearMediaSession 會暫停並拆 src；stop() 的 finish 也會暫停）。
+      // 原本「起播即收」是在 gain 還在 0 附近淡入的那一刻把唯一的媒體元素暫停，iOS 在這個
+      // 空窗會把 audio session 鬆手；剛被我們打斷的串流收到「可續播」就自動接回，反過來把
+      // 我們中斷——使用者看到的是按了播放沒聲音、開關還被碰撞偵測關掉。keep-alive 本身無聲，
+      // 多播 30 秒沒有代價；失敗的分支本來就不收，行為一致。
       currentPreviewData = data;
       lastPreviewTrackId = track.id || track.previewUrl;
       const playMs = Math.max(FADE_MS, Math.min(30500, Number(decoded.duration || 30) * 1000));
@@ -1293,6 +1554,7 @@
   async function playTrack(trackId) {
     if (!currentPreviewData || !trackId || !root) return false;
     grantAutoplayConsent();  // 點播放列表的某一首＝使用者自己要出聲
+    lastManualPlayAt = Date.now();
     const token = ++requestId;
     lastFailCode = '';
     emit({ status:'loading', provider:'itunes', code:'' });
@@ -1373,7 +1635,7 @@
       return false;
     }
     // 使用者自己按的播放＝授權本次造訪的後續自動播放。
-    if (!auto) grantAutoplayConsent();
+    if (!auto) { grantAutoplayConsent(); lastManualPlayAt = Date.now(); }
     const token = ++requestId;
     lastFailCode = '';
     // cover 只餵給鎖定畫面的媒體卡片；沒帶就留空，Chrome 會退回無封面而不是抓網站 logo。
@@ -1502,15 +1764,25 @@
       gain: previewGain ? Number(previewGain.gain.value.toFixed(3)) : -1,
       keepAlive: previewAudio ? (previewAudio.paused ? 'paused' : 'playing') : 'none',
       primed: previewPrimed,
-      playing: !!previewBufferSource,
+      playing: !!previewBufferSource || previewElementActive,
+      elem: previewElementActive,
       gesture: inUserGesture(),
       code: lastFailCode || '',
       status: state.status,
     };
   }
 
+  // 全站共用的 AudioContext（2026-10-19）：抽卡音效原本自己再建一個 context。iOS 對「沒有頁內手勢、
+  // 只靠點連結帶過來的授權」的 context 很吝嗇，兩個 context 搶同一份授權，直接來一張第一抽就出現
+  // 「音效無聲、第二抽才有」。改成只建一個、越早建越好（進頁武裝時），音效接在同一個 context 上。
+  // 沒授權時這裡只建不 resume（ensurePreviewGraph 的規則），不會搶走別人的串流。
+  function audioContext() {
+    if (!audioCtx) ensurePreviewGraph();
+    return audioCtx;
+  }
+
   window.DipPlayer = {
-    mount, unlock, prefetch, appleAlbumUrl, upgradeAppleLinks, warmAlbum, playAlbum, playTrack, stop, onStateChange, debugState,
+    mount, unlock, prefetch, audioContext, appleAlbumUrl, upgradeAppleLinks, warmAlbum, playAlbum, playTrack, stop, onStateChange, debugState,
     hasAutoplayConsent, grantAutoplayConsent,
     autoplayPreference, setAutoplayPreference, onAutoplayRevoked, releaseAudio, showHint, createToggle
   };

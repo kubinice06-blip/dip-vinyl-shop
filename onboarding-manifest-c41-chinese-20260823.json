@@ -22,14 +22,23 @@
       },
       "ratings": {
         "classic": 5,
-        "obscurity": 3,
+        "obscurity": 2,
         "accessibility": 1,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-23T05:03:23Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；粵語流行工業化的起點唱片，旋律直白易入耳，但 1974 年港版原盤在一般玩家手上並不常見。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：港式廣東流行開山經典，許冠傑代表作",
+        "previous": {
+          "classic": 5,
+          "obscurity": 3,
+          "accessibility": 1,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-23T05:03:23Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；粵語流行工業化的起點唱片，旋律直白易入耳，但 1974 年港版原盤在一般玩家手上並不常見。",
+          "rarity": "rare"
+        }
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -46,7 +55,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/40/14/83/4014838d-92f6-cc9e-8d9e-d16ab9448f88/mzaf_11642740268333839530.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/81/10/2f/81102f65-346e-d774-8061-dd268eb53c6b/mzaf_13729963536766798631.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T05:03:23Z",
@@ -97,19 +106,27 @@
         "checkedAt": "2026-08-23T05:03:23Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；粵語流行史上被引用最密的一張，同名曲與〈浪子心聲〉均為大眾曲目，入耳門檻極低。"
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": true,
         "tier": "hall",
-        "reason": "當年最暢銷粵語唱片，1977 年香港金唱片頒獎典禮百週年紀念大獎、1978 年白金唱片；〈浪子心聲〉四十年間由鄧麗君、梅艷芳、Beyond 到周杰倫反覆翻唱，跨來源長期共識足列粵語流行核心。",
+        "reason": "店主 2026-11-03 定案殿堂擴充（hall-expansion-20261103）：升為殿堂。",
         "evidenceUrls": [
-          "https://zh.wikipedia.org/wiki/半斤八兩_(專輯)",
-          "https://zh.wikipedia.org/wiki/許冠傑",
+          "https://www.last.fm/music/%E8%A8%B1%E5%86%A0%E5%82%91/%E5%8D%8A%E6%96%A4%E5%85%AB%E5%85%A9",
           "https://musicbrainz.org/release-group/55b343d1-3290-35fb-a139-e699c0a32419"
-        ]
+        ],
+        "previous": {
+          "eligible": false,
+          "tier": null,
+          "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。粵語流行起點，該地區里程碑止於5",
+          "evidenceUrls": [],
+          "source": "manual:audit-20261102"
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:hall-expansion-20261103"
       },
       "description": {
-        "text": "許冠傑第三張粵語大碟，也是黎彼得首次與他合寫歌詞的一張。同名主題曲把打工仔的怨氣寫成順口溜，〈浪子心聲〉走另一端，日後由鄧麗君、梅艷芳、Beyond 到周杰倫反覆翻唱。〈打雀英雄傳〉改編自佳藝電視版《射鵰英雄傳》主題曲，〈鬼馬大家樂〉則把溫拿與陳秋霞的舊曲重填詞串成組曲。當年最暢銷粵語唱片，1977 年香港金唱片頒獎典禮獲百週年紀念大獎。",
+        "text": "《半斤八兩》是許冠傑 1976 年的第三張粵語專輯，同名主題曲用貼地的口語粵語寫打工仔付出多、回報少，連同〈浪子心聲〉是他的重要突破作；專輯在 1977 年香港金唱片頒獎典禮獲百週年紀念大獎，1978 年獲白金唱片。這是他與黎彼得首度合作的專輯，兩首主打都是許冠文、許冠傑同名電影的歌曲。12 首裡有 9 首由他自己譜曲；〈打雀英雄傳〉是電視劇《射鵰英雄傳》主題曲，〈有酒今朝醉〉改編 Stephen Foster 的〈Oh! Susanna〉，〈鬼馬大家樂〉把電影《大家樂》的四首歌串成惡搞組曲。〈浪子心聲〉後來被羅大佑、鄧麗君、張學友等人翻唱。",
         "sourceUrls": [
           "https://zh.wikipedia.org/wiki/半斤八兩_(專輯)",
           "https://musicbrainz.org/release-group/55b343d1-3290-35fb-a139-e699c0a32419",
@@ -118,7 +135,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/82/5b/d4/825bd4e2-632c-a06f-542c-7c1d0c60bef6/mzaf_4979459481968612292.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/db/0a/06/db0a06b0-d2fb-dfc2-6159-6d023c479b43/mzaf_6973010657719359522.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T05:03:23Z",
@@ -169,7 +186,7 @@
         "checkedAt": "2026-08-23T05:03:23Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；許氏粵語三部曲收官、首屆十大中文金曲入選作，地位明確但不及前兩張被引用之密。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -186,7 +203,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/11/74/ca/1174caec-374b-5c18-0df0-1db2bdb3b9d3/mzaf_4154778239713462490.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d6/c1/19/d6c11903-e873-69cb-1b3d-3bf173f61bba/mzaf_7991068756000297681.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T05:03:23Z",
@@ -237,7 +254,7 @@
         "checkedAt": "2026-08-23T05:03:23Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；羅文後期公認代表作、同名曲為粵語自白歌正典，編制正常不刺耳，但屬樂迷領域而非入門常客。"
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -253,7 +270,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/a7/1a/ff/a71aff4e-1b6d-d892-1d50-a75dc7193c69/mzaf_14164382810398831459.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d4/9f/23/d49f23ee-2bfd-9819-e01e-233fe7bc7c52/mzaf_3676592556929648441.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T05:03:23Z",
@@ -304,7 +321,7 @@
         "checkedAt": "2026-08-23T05:03:23Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；收該年十大中文金曲〈順流、逆流〉，徐小鳳康藝成音時期代表作，唱法收斂但不難入耳。"
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -320,7 +337,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/dd/24/b5/dd24b5df-aee3-218f-172f-de0267649450/mzaf_3166514733774644147.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/0a/bf/20/0abf20f4-7440-f364-c52c-7ec917f48ffb/mzaf_17179432955255578860.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T05:03:23Z",
@@ -363,15 +380,24 @@
         "note": "原 CAA release-group front 左上帶「HYBRID STEREO SACD」金色徽記，為 2017 SACD 再版美術。改用 Apple 台灣商店 724714566〈林子祥全集(八): 活色生香〉(1981, 12 軌) 的 artworkUrl100 換 1000x1000bf。已下載目視：1000×1000 正方，米黃底、毛皮帽與白色長毛裘衣的林子祥半身像，左下紅色直排「活色生香」、右下直排「林子祥」與紅底白字 EMI 廠標；無 SACD／復黑王徽記、無膠盒邊、無側標、無浮水印。"
       },
       "ratings": {
-        "classic": 4,
+        "classic": 3,
         "obscurity": 4,
-        "accessibility": 2,
+        "accessibility": 1,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-23T05:03:23Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；林子祥全盛期公認代表作之一，同名曲奪該年十大中文金曲歌手獎與作曲人獎；港外流通有限，屬深度愛好者領域。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：港樂八十年代主流專輯｜L=104",
+        "previous": {
+          "classic": 4,
+          "obscurity": 4,
+          "accessibility": 2,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-23T05:03:23Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；林子祥全盛期公認代表作之一，同名曲奪該年十大中文金曲歌手獎與作曲人獎；港外流通有限，屬深度愛好者領域。",
+          "rarity": "rare"
+        }
       },
-      "rarity": "uncommon",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -387,7 +413,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/8d/e1/45/8de145ee-e535-8e3a-18b1-dd8828854220/mzaf_476627907060638930.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e0/3f/a2/e03fa23a-96bc-bda1-d7d2-764fd6b6888b/mzaf_6140167143633481968.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T05:03:23Z",
@@ -438,7 +464,7 @@
         "checkedAt": "2026-08-23T05:03:23Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；愛情三部曲起點、84 年粵語情歌盛世的開端，旋律與編曲皆直白，但知名度略遜其後兩張。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -454,7 +480,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/0c/f7/0c/0cf70c87-14a1-c3e2-d30c-c650fd27bcd9/mzaf_8561891450208279619.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/9d/b9/9d/9db99d80-94f8-70eb-0cd1-cd9f362eef01/mzaf_15380782758659227651.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T05:03:23Z",
@@ -497,24 +523,41 @@
         "visuallyVerified": true
       },
       "ratings": {
-        "classic": 5,
+        "classic": 4,
         "obscurity": 2,
         "accessibility": 1,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-23T05:03:23Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；1984 年勁歌金曲頒獎禮近乎橫掃，2010 年華語金曲獎「30 年 30 碟」入選；大眾曲目配大牌歌手，入耳零門檻。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：譚詠麟代表作之一，但缺跨來源樂評正典共識；經典度 5→4",
+        "previous": {
+          "classic": 5,
+          "obscurity": 2,
+          "accessibility": 1,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-23T05:03:23Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；1984 年勁歌金曲頒獎禮近乎橫掃，2010 年華語金曲獎「30 年 30 碟」入選；大眾曲目配大牌歌手，入耳零門檻。",
+          "rarity": "rare"
+        }
       },
-      "rarity": "uncommon",
+      "rarity": "common",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "1984 年度十大中文金曲與十大勁歌金曲雙線得獎（含金曲金獎、最佳作曲、作詞、編曲、監製），1999 年寶麗金「20 世紀最強大碟 20 強」與 2010 年華語金曲獎「30 年 30 碟」皆入選，跨來源長期共識足列粵語流行核心。",
-        "evidenceUrls": [
-          "https://zh.wikipedia.org/wiki/愛的根源",
-          "https://zh.wikipedia.org/wiki/愛情陷阱",
-          "https://musicbrainz.org/release-group/d55bc359-149e-4235-af06-66fef514c499"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。港樂熱銷盤，非跨類型史上正典",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "1984 年度十大中文金曲與十大勁歌金曲雙線得獎（含金曲金獎、最佳作曲、作詞、編曲、監製），1999 年寶麗金「20 世紀最強大碟 20 強」與 2010 年華語金曲獎「30 年 30 碟」皆入選，跨來源長期共識足列粵語流行核心。",
+          "evidenceUrls": [
+            "https://zh.wikipedia.org/wiki/愛的根源",
+            "https://zh.wikipedia.org/wiki/愛情陷阱",
+            "https://musicbrainz.org/release-group/d55bc359-149e-4235-af06-66fef514c499"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "譚詠麟第八張粵語大碟，原創與改編各半。〈愛在深秋〉源自趙容弼的〈친구여〉，〈我愛雀斑〉取自 Gazebo 的〈I Like Chopin〉，〈酒紅色的心〉來自安全地帶，三首都經盧東尼與甲斐正人重編成偏厚的鍵盤與電鼓聲底。1984 年勁歌金曲頒獎禮上，同名曲與〈愛在深秋〉合計囊括金曲金獎、最佳作曲、作詞、編曲與唱片監製。封面由馮添枝以傻瓜相機在九龍飛鵝山拍成。",
@@ -525,7 +568,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c0/96/42/c0964296-5675-cc6c-ae1a-a55aab7604c8/mzaf_15869319287135522644.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/98/a8/f6/98a8f640-5050-3838-e1aa-2a2cbefb6d78/mzaf_8239869552201614724.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T05:03:23Z",
@@ -546,8 +589,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": false,
-        "apexPool": true
+        "seedCards": true,
+        "apexPool": false
       }
     },
     {
@@ -576,7 +619,7 @@
         "checkedAt": "2026-08-23T05:03:23Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；愛情三部曲收官、8 白金最暢銷唱片，同名快歌是華人地區傳唱度最高的粵語曲之一。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -592,7 +635,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/9a/9c/5c/9a9c5c6b-1ec5-5c13-0ef5-3feb7c5a078c/mzaf_7486972006862816291.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/51/26/bb/5126bb7b-3c89-bcb7-3746-655baf929e1f/mzaf_12210499946456320847.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T05:03:23Z",
@@ -643,7 +686,7 @@
         "checkedAt": "2026-08-23T05:03:23Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；張國榮走紅的起點、同名曲為其終身代表作，唱腔輕、編曲柔，入耳門檻極低。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -660,7 +703,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/b7/e5/45/b7e545ad-f946-d987-bed3-a8c2c11a36dd/mzaf_6199640026609119347.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b9/0a/64/b90a64ed-f4cd-4397-08f2-0d12b8530bef/mzaf_13325729218241135374.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T05:03:23Z",
@@ -707,19 +750,40 @@
         "obscurity": 2,
         "accessibility": 1,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-23T05:03:23Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；〈Monica〉定下他的勁歌熱舞路線並獲選 1999 年香港電台世紀金曲，全碟四白金，屬大眾曲目。"
+        "source": "manual:hall-expansion-20261103",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "店主 2026-11-03 定案殿堂擴充：殿堂最低門檻 classic=5，經典度由 4 調為 5（只動經典度）",
+        "previous": {
+          "classic": 4,
+          "obscurity": 2,
+          "accessibility": 1,
+          "listeners": null,
+          "source": "manual:audit-20261102",
+          "checkedAt": "2026-11-03T00:00:00Z",
+          "note": "全池稽核 audit-20261102（方案 C）：含〈Monica〉的成名作；粵語主流→2",
+          "rarity": "common"
+        }
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
-        "eligible": false,
-        "tier": null,
-        "reason": "〈Monica〉的世紀金曲地位無疑，但共識集中在單曲層次而非整碟，殿堂門檻暫未跨過，建議店主複核。",
-        "evidenceUrls": []
+        "eligible": true,
+        "tier": "hall",
+        "reason": "店主 2026-11-03 定案殿堂擴充（hall-expansion-20261103）：升為殿堂。",
+        "evidenceUrls": [
+          "https://www.last.fm/music/%E5%BC%B5%E5%9C%8B%E6%A6%AE/Leslie",
+          "https://musicbrainz.org/release-group/f5a1dfb2-c6f9-45fb-9706-f97c67d7cb27"
+        ],
+        "previous": {
+          "eligible": false,
+          "tier": null,
+          "reason": "〈Monica〉的世紀金曲地位無疑，但共識集中在單曲層次而非整碟，殿堂門檻暫未跨過，建議店主複核。",
+          "evidenceUrls": []
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:hall-expansion-20261103"
       },
       "description": {
-        "text": "張國榮第四張粵語大碟，黎小田監製，因〈Monica〉太紅而常被逕稱《Monica》。〈Monica〉改編自吉川晃司的同名單曲，黎彼得填詞，強拍節奏加上他自創的舞步，替他定下 1980 年代勁歌熱舞的路線，1999 年獲香港電台選為世紀金曲。碟內另有顧嘉煇作曲、黃霑填詞的《鹿鼎記》主題曲〈始終會行運〉，以及〈儂本多情〉、〈緣份〉等劇集電影歌。銷量突破四白金。",
+        "text": "《Leslie》是張國榮的第四張粵語錄音室專輯，1984 年由華星唱片發行，製作人黎小田，1985 年獲 IFPI 香港白金唱片。主打歌〈Monica〉入選第七屆香港電台十大中文金曲與第二屆十大勁歌金曲，1999 年入選香港電台世紀金曲；〈Monica〉被視為讓勁歌熱舞在香港成為潮流的歌。十二首分別由黎小田、顧嘉煇、奧金寶、趙文海與林敏怡編曲，至少五首改編自日本流行曲，例如〈Monica〉來自吉川晃司〈モニカ〉。其餘多是影視歌曲，包括黃霑填詞的《鹿鼎記》主題曲〈始終會行運〉，以及與梅艷芳合唱的電影主題曲〈緣份〉。",
         "sourceUrls": [
           "https://zh.wikipedia.org/wiki/Leslie_(1984年專輯)",
           "https://musicbrainz.org/release-group/f5a1dfb2-c6f9-45fb-9706-f97c67d7cb27",
@@ -728,7 +792,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/4c/21/7c/4c217c69-fa13-babb-8d5f-7f6a4f0043d5/mzaf_2115128779838981166.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/fb/e0/51/fbe05121-12e1-8670-1332-20564956792b/mzaf_16128383441010596227.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T05:03:23Z",
@@ -749,8 +813,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": true,
-        "apexPool": false
+        "seedCards": false,
+        "apexPool": true
       }
     },
     {
@@ -779,7 +843,7 @@
         "checkedAt": "2026-08-23T05:03:23Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；當年全港銷量最高唱片、〈無心睡眠〉橫掃 1987 年各大獎，但合成器密度較高，入耳略需適應。"
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -795,7 +859,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e5/b1/30/e5b130ce-52b3-1cb7-7168-6d671f4b910b/mzaf_9432205760562168326.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/eb/3f/93/eb3f93c4-8e5c-d379-368e-9f8a202ab374/mzaf_8816417497844919008.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T05:03:23Z",
@@ -846,7 +910,7 @@
         "checkedAt": "2026-08-23T05:03:23Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；同名曲同年拿下十大中文金曲與十大勁歌金曲，是梅艷芳藝術路線的起點；曲目多為改編、旋律直白，一般樂迷多從精選輯撞見而非原盤。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -862,7 +926,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/57/75/c5/5775c5db-e3a0-61c8-3644-befaf3f72a51/mzaf_6641718799699997855.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/86/7f/2e/867f2e56-d7fb-b003-45d3-c3ee47ea201b/mzaf_11412479305798034719.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T05:03:23Z",
@@ -907,24 +971,42 @@
       "ratings": {
         "classic": 5,
         "obscurity": 2,
-        "accessibility": 2,
+        "accessibility": 1,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-23T05:03:23Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；香港史上最高銷量唱片、確立「百變梅艷芳」形象，跨中英文來源長期認定為粵語流行史關鍵；曲目為主流舞曲改編，入耳不難。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：梅艷芳形象轉型代表作，粵語流行史必提；強度低",
+        "previous": {
+          "classic": 5,
+          "obscurity": 2,
+          "accessibility": 2,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-23T05:03:23Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；香港史上最高銷量唱片、確立「百變梅艷芳」形象，跨中英文來源長期認定為粵語流行史關鍵；曲目為主流舞曲改編，入耳不難。",
+          "rarity": "uncommon"
+        }
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": true,
         "tier": "hall",
-        "reason": "銷量逾四十萬張並長年被記為香港史上最高銷量專輯，同時定義了梅艷芳的舞台形象，中英文維基與香港電台十大中文金曲委員會編纂之收藏指南均予專章，屬粵語流行史核心。",
+        "reason": "店主 2026-11-03 定案殿堂擴充（hall-expansion-20261103）：升為殿堂。",
         "evidenceUrls": [
-          "https://en.wikipedia.org/wiki/Anita_Mui",
-          "https://zh.wikipedia.org/wiki/壞女孩"
-        ]
+          "https://www.last.fm/music/%E6%A2%85%E8%89%B7%E8%8A%B3/%E5%A3%9E%E5%A5%B3%E5%AD%A9",
+          "https://musicbrainz.org/release-group/0a54ad88-dcc4-4099-abc4-24c7bb529aba"
+        ],
+        "previous": {
+          "eligible": false,
+          "tier": null,
+          "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。粵語流行里程碑，該地區類型經典止於5",
+          "evidenceUrls": [],
+          "source": "manual:audit-20261102"
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:hall-expansion-20261103"
       },
       "description": {
-        "text": "一九八五年底由華星推出、黎小田監製，在香港賣出逾四十萬張，長年被記為當地史上最高銷量唱片。選曲近乎一份八十年代的翻唱清單：標題曲來自 Sheena Easton 的〈Strut〉，〈抱你十個世紀〉與〈點都要愛〉取自 Madonna，〈夢伴〉、〈魅力的散發〉來自近藤真彥，〈孤身走我路〉來自山口百惠。林振強與潘偉源的粵詞把這些舞曲改寫成敢認慾望的女聲，標題曲一九九五年在廣州演出時遭當局以內容不雅禁唱。",
+        "text": "《壞女孩》是梅艷芳的第五張粵語專輯，在香港累計賣出 72 萬張，創下當時的香港唱片銷量紀錄，標題曲拿下十大中文金曲。專輯由黎小田監製，八成以上是改編歌：〈壞女孩〉改自 Sheena Easton 的〈Strut〉，〈抱你十個世紀〉〈點都要愛〉改自 Madonna 的〈Crazy for You〉〈Into the Groove〉，〈夢伴〉〈魅力的散發〉改自近藤真彥，〈冰山大火〉〈孤身走我路〉改自山口百惠，〈不了情〉翻唱顧媚的同名歌，是少數不是舞曲的一首。標題曲性感的歌詞與形象引起衛道人士反彈，一度被禁。",
         "sourceUrls": [
           "https://zh.wikipedia.org/wiki/壞女孩",
           "https://en.wikipedia.org/wiki/Anita_Mui",
@@ -933,7 +1015,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/8c/93/5b/8c935bb0-0939-2723-931b-f9ad572ea011/mzaf_9826129811988508365.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/0d/9b/f3/0d9bf340-c3ae-9c55-2c0d-8448792bd373/mzaf_15880902929047345818.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T05:03:23Z",
@@ -984,7 +1066,7 @@
         "checkedAt": "2026-08-23T05:03:23Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；主打曲成為她最具辨識度的舞台曲目並登上首爾奧運開幕演出，同碟另收金像獎級電影主題曲〈胭脂扣〉；整體仍屬藝人代表作而非開創之作。"
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -1001,7 +1083,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/15/cb/7b/15cb7b88-e84c-c301-9dd3-b680a055eef6/mzaf_12855448004193282411.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/27/62/2c/27622cd5-395f-c51d-98ab-c8eaa71636ed/mzaf_10536303557938199077.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T05:03:23Z",
@@ -1052,7 +1134,7 @@
         "checkedAt": "2026-08-23T05:03:23Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；同名曲為陳百強自作曲的最高代表作、入選 1983 年度十大中文金曲並長年在華語圈傳唱；編曲用心但整體仍是藝人代表作層級。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -1068,7 +1150,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/ef/f3/41/eff34121-5b16-d836-7b83-4ca7c958ea17/mzaf_13906434597077621488.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/3f/e5/c2/3fe5c236-f1f8-2df0-a570-1e5ab72b9bed/mzaf_7051411483614087936.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T05:03:23Z",
@@ -1183,7 +1265,7 @@
         "checkedAt": "2026-08-23T05:03:23Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；收錄〈光輝歲月〉與〈俾面派對〉，兩首分別拿下當年十大勁歌金曲與十大中文金曲，是樂隊社會題材路線的代表；旋律主流、入耳不難。"
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -1199,7 +1281,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/a9/2b/08/a92b080b-33a8-e4b8-3b7f-50c4a4fbfc91/mzaf_12921422472317735622.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/c4/e8/83/c4e8839c-1e21-4c17-496c-8ce4000d1013/mzaf_12918250833159619953.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T05:03:23Z",
@@ -1254,14 +1336,23 @@
       "apexAssessment": {
         "eligible": true,
         "tier": "hall",
-        "reason": "獲華語金曲獎三十年評選列入「30 年 30 碟」，收錄的〈海闊天空〉三十年來持續被引為香港社會運動與紀念場合的代表曲，中英文來源長期一致視 Beyond 為最具影響力的粵語搖滾樂隊，此碟為其定論之作。",
+        "reason": "店主 2026-11-03 定案殿堂擴充（hall-expansion-20261103）：升為殿堂。",
         "evidenceUrls": [
-          "https://zh.wikipedia.org/wiki/樂與怒",
-          "https://en.wikipedia.org/wiki/Beyond_(band)"
-        ]
+          "https://www.last.fm/music/Beyond/%E6%A8%82%E8%88%87%E6%80%92",
+          "https://musicbrainz.org/release-group/4f019b75-7e4f-3428-a2a7-0091661b201e"
+        ],
+        "previous": {
+          "eligible": false,
+          "tier": null,
+          "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。港樂里程碑屬該地 5，非跨類型國際正典",
+          "evidenceUrls": [],
+          "source": "manual:audit-20261102"
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:hall-expansion-20261103"
       },
       "description": {
-        "text": "一九九三年五月十四日由華納推出，Beyond 第九張粵語大碟，也是黃家駒生前參與的最後一張。錄音在東京進行，經紀公司給了更大預算與創作自由，樂隊從富士山下的小屋搬進市區錄音室，編曲由四人與日籍音樂人梁邦彥共同擔綱，監製也掛在自己名下。〈海闊天空〉由黃家駒一手包辦詞曲，取得當年十大中文金曲與叱咤我最喜愛的本地創作歌曲大獎；同年六月他在東京錄影時墜台，六日後離世。",
+        "text": "《樂與怒》是 Beyond 1993 年的第九張粵語錄音室專輯，也是黃家駒生前最後一張，2010 年入選華語金曲獎「30 年 30 張專輯」；收錄的〈海闊天空〉拿下十大中文金曲與叱咤樂壇我最喜愛的本地創作歌曲。專輯在 1993 年 1 至 4 月錄成，製作與多數編曲由 Beyond 與梁邦彥共同擔任，樂隊在錄音與編曲上有更多自由。〈海闊天空〉原名〈鋼琴曲〉，以鋼琴前奏開場，全長 5 分 24 秒，比當時多數約三分鐘的流行曲長。同年 6 月黃家駒在日本電視節目錄影時跌落平台，六天後去世；這首歌後來成了第一首 YouTube 點閱破一億的粵語歌。",
         "sourceUrls": [
           "https://zh.wikipedia.org/wiki/樂與怒",
           "https://en.wikipedia.org/wiki/Beyond_(band)",
@@ -1270,7 +1361,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/da/7d/3a/da7d3ab5-f726-4850-2fe5-219058dfdf07/mzaf_8977256857966525604.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/32/43/15/32431500-f5f1-5296-3004-a197879a17fd/mzaf_16655016896821334266.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T05:03:23Z",
@@ -1313,15 +1404,24 @@
         "visuallyVerified": true
       },
       "ratings": {
-        "classic": 5,
+        "classic": 4,
         "obscurity": 3,
         "accessibility": 2,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-23T05:03:23Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；被記為香港最早的概念專輯之一，並獲《香港流行音樂專輯101》專章收錄，開創地位有跨來源依據；音樂本身仍是旋律清楚的電子流行。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：第二張專輯，藝人重要作；樂團巔峰公認在神經／意難平",
+        "previous": {
+          "classic": 5,
+          "obscurity": 3,
+          "accessibility": 2,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-23T05:03:23Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；被記為香港最早的概念專輯之一，並獲《香港流行音樂專輯101》專章收錄，開創地位有跨來源依據；音樂本身仍是旋律清楚的電子流行。",
+          "rarity": "uncommon"
+        }
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -1338,7 +1438,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/54/87/55/54875502-9e47-f4a1-bc9a-6077a4626048/mzaf_1468559120928951772.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/18/ca/96/18ca960f-2913-7f67-7863-a52e6eaff39c/mzaf_14661132873735578555.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T05:03:23Z",
@@ -1406,7 +1506,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/ae/df/4d/aedf4d17-670a-2d45-db5d-a047a3490685/mzaf_8026494706068497844.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/99/11/26/991126e2-0bb9-42f5-3bf8-fa2b1355a3d5/mzaf_18299453276242365806.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T05:03:23Z",
@@ -1457,7 +1557,7 @@
         "checkedAt": "2026-08-23T05:03:23Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；獲 IFPI 認證為 1989 年香港最高銷量大碟，〈千千闋歌〉為跨世代傳唱曲；旋律直白，是最容易入耳的粵語流行。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -1473,7 +1573,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/af/ac/c3/afacc3cc-67a7-513b-e68d-3b315ee1c4a8/mzaf_11075439881663036775.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b7/e6/ca/b7e6ca46-ce5b-c17e-e779-c27951fc7d70/mzaf_5497055181648338518.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T05:03:23Z",
@@ -1524,7 +1624,7 @@
         "checkedAt": "2026-08-23T05:03:23Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；同名曲一舉囊括該年勁歌金曲金曲金獎、叱咤至尊歌曲與十大中文金曲，是葉蒨文躋身一線的代表作；曲風抒情直白。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -1540,7 +1640,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/f7/ce/ac/f7ceacf4-925f-7e80-8045-ff4f20a499d9/mzaf_4218095408922020564.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/4b/a9/45/4ba94592-5801-b3dd-5b81-d0d39e5bd5ca/mzaf_14885645358792246716.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T05:03:23Z",
@@ -1591,7 +1691,7 @@
         "checkedAt": "2026-08-23T05:03:23Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；三部曲首章，把西方 dance-pop 與 R&B 的節奏骨架移植進粵語流行，〈講多錯多〉登上三台冠軍；聲響現代但旋律仍屬主流。"
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -1607,7 +1707,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/67/17/d4/6717d47d-ae87-834e-dbda-e67a7f3d896c/mzaf_814236641281649201.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/11/f0/a5/11f0a591-da60-2196-f2f0-58ba001a6dd8/mzaf_11620235826545397256.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T05:03:23Z",
@@ -1650,24 +1750,41 @@
         "visuallyVerified": true
       },
       "ratings": {
-        "classic": 5,
-        "obscurity": 3,
-        "accessibility": 3,
+        "classic": 4,
+        "obscurity": 2,
+        "accessibility": 2,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-23T05:03:23Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；獲明報周刊四十年四十經典、港媚60女聲專輯首位等跨來源長期共識；概念完整但編排前衛，非入門聽感。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：林憶蓮代表作公認是《Love, Sandy》；主流盤冷門度 3→2，硬蕊 3→2",
+        "previous": {
+          "classic": 5,
+          "obscurity": 3,
+          "accessibility": 3,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-23T05:03:23Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；獲明報周刊四十年四十經典、港媚60女聲專輯首位等跨來源長期共識；概念完整但編排前衛，非入門聽感。",
+          "rarity": "epic"
+        }
       },
-      "rarity": "epic",
+      "rarity": "rare",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "跨來源長期共識：明報周刊香港樂壇四十年四十經典唱片、香港樂評選港媚60流行女聲專輯第一位，並被列為九十年代十大唱片，公認為香港概念大碟的基準。",
-        "evidenceUrls": [
-          "https://zh.wikipedia.org/wiki/%E9%87%8E%E8%8A%B1_(%E6%9E%97%E6%86%B6%E8%93%AE%E5%B0%88%E8%BC%AF)",
-          "https://web.archive.org/web/20200919095314/http://www.hkmc2.com/flower60_1-10/",
-          "https://en.wikipedia.org/wiki/Wildflower_(Sandy_Lam_album)"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。港台流行佳作，非跨類型史上正典",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "跨來源長期共識：明報周刊香港樂壇四十年四十經典唱片、香港樂評選港媚60流行女聲專輯第一位，並被列為九十年代十大唱片，公認為香港概念大碟的基準。",
+          "evidenceUrls": [
+            "https://zh.wikipedia.org/wiki/%E9%87%8E%E8%8A%B1_(%E6%9E%97%E6%86%B6%E8%93%AE%E5%B0%88%E8%BC%AF)",
+            "https://web.archive.org/web/20200919095314/http://www.hkmc2.com/flower60_1-10/",
+            "https://en.wikipedia.org/wiki/Wildflower_(Sandy_Lam_album)"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "1991年林憶蓮與許願離開華納自組星工廠，發行仍掛華納，十首歌各對應一種花，串成一條完整的概念線。新加坡音樂人 Dick Lee 包辦大半作曲與編曲，把東方調式接上節奏藍調與都市節拍；〈再生戀〉把越劇唱腔、電子鼓與二胡疊在一起，〈夜來香〉重寫李香蘭的舊作。初版出貨不足五萬張，日後獲明報周刊選入香港樂壇四十年四十經典唱片。",
@@ -1679,7 +1796,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f3/52/cf/f352cfc8-0ee3-1600-1d7b-aa66775bba09/mzaf_9001369921536126314.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/56/33/4a/56334ad4-d350-a9a2-a177-4700756ab234/mzaf_13168815160980004232.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T05:03:23Z",
@@ -1700,8 +1817,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": false,
-        "apexPool": true
+        "seedCards": true,
+        "apexPool": false
       }
     },
     {
@@ -1730,7 +1847,7 @@
         "checkedAt": "2026-08-23T05:03:23Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；華星時期代表作，〈天下無雙〉帶來首座十大中文金曲與首個叱吒至尊唱片大獎；旋律路線直白好入口。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -1746,7 +1863,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/8e/87/24/8e8724ef-a30c-76a9-16ca-7477f271b6dd/mzaf_2586658453338413000.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/82/95/e5/8295e5dd-c8d4-164c-e633-705ed80d3b1d/mzaf_10165941270931453264.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T05:03:23Z",
@@ -1791,22 +1908,39 @@
       "ratings": {
         "classic": 5,
         "obscurity": 2,
-        "accessibility": 2,
+        "accessibility": 1,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-23T05:03:23Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；叱吒至尊唱片大獎、四台聯頒大碟獎、時代週刊年度亞洲五張、華語金曲獎30年30碟，跨來源地位明確；〈浮誇〉等曲傳唱度極高。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：香港 2000 年代最常被推舉的粵語專輯；強度低；主流盤，硬蕊 2→1",
+        "previous": {
+          "classic": 5,
+          "obscurity": 2,
+          "accessibility": 2,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-23T05:03:23Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；叱吒至尊唱片大獎、四台聯頒大碟獎、時代週刊年度亞洲五張、華語金曲獎30年30碟，跨來源地位明確；〈浮誇〉等曲傳唱度極高。",
+          "rarity": "uncommon"
+        }
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "時代週刊選為2005年最值得購買的五張亞洲唱片、華語金曲獎「30年30碟」入選，並同時拿下叱吒至尊唱片大獎與四台聯頒大碟獎，跨來源共識足列千禧年後粵語流行核心。",
-        "evidenceUrls": [
-          "https://zh.wikipedia.org/wiki/U87_(%E4%B8%93%E8%BE%91)",
-          "https://web.archive.org/web/20130111143019/http://www.time.com/time/magazine/article/0,9171,1101364,00.html",
-          "https://web.archive.org/web/20101222011719/http://www.chinesemusicawards.org/News/2010/1218/146.html"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。港樂名盤，單一地區流行經典止於5",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "時代週刊選為2005年最值得購買的五張亞洲唱片、華語金曲獎「30年30碟」入選，並同時拿下叱吒至尊唱片大獎與四台聯頒大碟獎，跨來源共識足列千禧年後粵語流行核心。",
+          "evidenceUrls": [
+            "https://zh.wikipedia.org/wiki/U87_(%E4%B8%93%E8%BE%91)",
+            "https://web.archive.org/web/20130111143019/http://www.time.com/time/magazine/article/0,9171,1101364,00.html",
+            "https://web.archive.org/web/20101222011719/http://www.chinesemusicawards.org/News/2010/1218/146.html"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "2005年轉投新藝寶後的首張粵語碟，名字取自他錄音室慣用的一支 Neumann U87 麥克風。梁榮駿統籌製作，C.Y. Kong、Eric Kwok、雷頌德分頭寫曲：〈爛〉與〈浮誇〉走外放嗆耳的路線，〈夕陽無限好〉則是 Eric Kwok 的懷舊粵語流行寫法。四首派台歌全在商台903拿下冠軍，專輯獲時代週刊列為當年最值得購買的五張亞洲唱片之一。",
@@ -1818,7 +1952,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/52/a0/74/52a07427-436f-0cbe-2ce3-e08304c9490e/mzaf_5382161579017776785.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/74/33/6f/74336fb6-4fb5-5018-c8f1-4b7cfcf53781/mzaf_6444813244565180853.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T05:03:23Z",
@@ -1839,8 +1973,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": false,
-        "apexPool": true
+        "seedCards": true,
+        "apexPool": false
       }
     },
     {
@@ -1862,12 +1996,21 @@
       },
       "ratings": {
         "classic": 5,
-        "obscurity": 2,
+        "obscurity": 1,
         "accessibility": 2,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-23T05:03:23Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；出道即獲第12屆金曲獎最佳流行音樂演唱專輯獎，公認為2000年代華語流行寫作範式的起點。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：周杰倫出道作、金曲最佳專輯；華語主流常客→冷門1",
+        "previous": {
+          "classic": 5,
+          "obscurity": 2,
+          "accessibility": 2,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-23T05:03:23Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；出道即獲第12屆金曲獎最佳流行音樂演唱專輯獎，公認為2000年代華語流行寫作範式的起點。",
+          "rarity": "uncommon"
+        }
       },
       "rarity": "uncommon",
       "apexAssessment": {
@@ -1885,7 +2028,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/3b/7f/12/3b7f12ed-2e6f-85f4-6491-833b57863954/mzaf_15827152652647650378.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/42/97/aa/4297aae0-c997-12df-7d10-a14685cffcc6/mzaf_7566330534609965171.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T05:03:23Z",
@@ -1940,15 +2083,23 @@
       "apexAssessment": {
         "eligible": true,
         "tier": "hall",
-        "reason": "第13屆金曲獎拿下最佳專輯、製作人、作曲、作詞、編曲五項，又入選華語金曲獎「30年30碟」，並為台灣2001年度銷量冠軍，跨來源長期共識足列華語流行史核心。",
+        "reason": "店主 2026-11-03 定案殿堂擴充（hall-expansion-20261103）：升為殿堂。",
         "evidenceUrls": [
-          "https://zh.wikipedia.org/wiki/%E8%8C%83%E7%89%B9%E8%A5%BF",
-          "https://en.wikipedia.org/wiki/Fantasy_(Jay_Chou_album)",
-          "https://web.archive.org/web/20101222011719/http://www.chinesemusicawards.org/News/2010/1218/146.html"
-        ]
+          "https://www.last.fm/music/%E5%91%A8%E6%9D%B0%E5%80%AB/%E8%8C%83%E7%89%B9%E8%A5%BF",
+          "https://musicbrainz.org/release-group/732b78cb-9f7d-383d-86cc-5cf7e43c9658"
+        ],
+        "previous": {
+          "eligible": false,
+          "tier": null,
+          "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。華語流行核心盤，屬該語區第一級（5），非跨類型國際正典",
+          "evidenceUrls": [],
+          "source": "manual:audit-20261102"
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:hall-expansion-20261103"
       },
       "description": {
-        "text": "2001年9月由台灣博德曼發行的第二張，周杰倫仍是全碟作曲兼製作人，編曲分給林邁可、洪敬堯與鍾興民。方文山的詞把場景寫得極具體，〈上海一九四三〉、〈威廉古堡〉、〈愛在西元前〉各撐起一個時空。隔年第13屆金曲獎，本作獲最佳流行音樂演唱專輯獎與最佳專輯製作人獎，周杰倫以〈愛在西元前〉得最佳作曲人、方文山以〈威廉古堡〉得最佳作詞人、鍾興民以〈雙截棍〉得最佳編曲人。",
+        "text": "《范特西》是周杰倫 2001 年的第二張專輯，在第 13 屆金曲獎拿下最佳流行音樂演唱專輯獎，周杰倫並得最佳專輯製作人與最佳作曲人，2001 年台灣銷量逾 46 萬張，為當年最暢銷專輯。他包辦全碟作曲並擔任製作人，詞多由方文山寫，編曲分給林邁可、洪敬堯與鍾興民，〈威廉古堡〉結尾的饒舌是他在最後一次錄音時臨場加上的。曲風一首一種：〈愛在西元前〉是流行 R&B，〈簡單愛〉用西班牙吉他撥弦，〈開不了口〉從古典前奏接進 R&B 節奏，〈威廉古堡〉是巴洛克弦樂配樂隊，〈雙截棍〉把電吉他、二胡和快速饒舌疊在一起。",
         "sourceUrls": [
           "https://zh.wikipedia.org/wiki/%E8%8C%83%E7%89%B9%E8%A5%BF",
           "https://musicbrainz.org/release-group/732b78cb-9f7d-383d-86cc-5cf7e43c9658",
@@ -1957,7 +2108,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/d1/93/62/d19362ca-9653-10c8-1f40-0362e97f2989/mzaf_8169118584404749930.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/99/c2/35/99c23519-691d-28bd-3263-54ee44ea4b1a/mzaf_16660115524814344678.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T05:03:23Z",
@@ -2008,7 +2159,7 @@
         "checkedAt": "2026-08-23T05:03:23Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；連發期主要作品，第14屆金曲獎僅獲提名未得獎，地位低於前後兩作但曲目辨識度高。"
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -2024,7 +2175,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview122/v4/d0/8d/f8/d08df838-24c6-746e-fde7-eff02832c94f/mzaf_10215574569283766826.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/5d/49/2d/5d492d71-e1df-f87c-a217-1f5a46793c50/mzaf_15710362005868192426.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T05:03:23Z",
@@ -2068,12 +2219,21 @@
       },
       "ratings": {
         "classic": 5,
-        "obscurity": 2,
+        "obscurity": 1,
         "accessibility": 2,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-23T05:03:23Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；第15屆金曲獎最佳流行音樂演唱專輯獎、IFPI香港年度最高銷量國語唱片，〈以父之名〉與〈晴天〉均為長銷曲目。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：金曲最佳專輯，周杰倫代表作之一；華語主流→1",
+        "previous": {
+          "classic": 5,
+          "obscurity": 2,
+          "accessibility": 2,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-23T05:03:23Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；第15屆金曲獎最佳流行音樂演唱專輯獎、IFPI香港年度最高銷量國語唱片，〈以父之名〉與〈晴天〉均為長銷曲目。",
+          "rarity": "uncommon"
+        }
       },
       "rarity": "uncommon",
       "apexAssessment": {
@@ -2091,7 +2251,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/99/f2/8c/99f28c96-cdba-c2dd-b120-dd67eaff252b/mzaf_17363371424903979351.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/20/d0/e7/20d0e7db-9c12-795a-d738-2fc3dde4ac9a/mzaf_10317517925583301645.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T05:03:23Z",
@@ -2142,7 +2302,7 @@
         "checkedAt": "2026-08-23T05:03:23Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；IFPI香港年度最高銷量國語唱片、國民級傳唱度，但第16屆金曲獎六項提名全數落空，樂史評價略低於同期作。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -2158,7 +2318,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/32/64/44/32644412-f26f-3be1-cb64-1cd2018d9a24/mzaf_2032207789664538430.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/99/4e/e2/994ee285-7c0d-73ab-85b7-8d3899a17242/mzaf_12441330510018253101.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T05:03:23Z",
@@ -2209,7 +2369,7 @@
         "checkedAt": "2026-08-23T05:03:23Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；全盛期主要作品，〈夜曲〉〈髮如雪〉為長銷曲目，鋼琴與弦樂編制完整，但未獲金曲獎年度專輯層級肯定。"
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -2225,7 +2385,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/cd/80/49/cd8049a8-f655-a320-fe39-399582e94ed4/mzaf_2752455179820135985.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/49/d9/63/49d96370-e197-5629-b8bb-bdd954c1b576/mzaf_217123187122990137.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T05:03:23Z",
@@ -2276,7 +2436,7 @@
         "checkedAt": "2026-08-23T05:03:23Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；2006年度華語銷量冠軍、IFPI香港最高銷量國語唱片，〈千里之外〉〈聽媽媽的話〉傳唱極廣，但金曲獎僅止提名。"
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -2292,7 +2452,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/33/1d/74/331d74c7-1e7a-6444-d535-af9632d81f4f/mzaf_10203669904681745749.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/51/d3/8b/51d38b84-cde4-1be0-9569-33eee639af73/mzaf_7426420804706733570.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T05:03:23Z",
@@ -2343,7 +2503,7 @@
         "checkedAt": "2026-08-23T05:03:23Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；第20屆金曲獎最佳國語男歌手、最佳年度歌曲〈稻香〉與最佳音樂錄影帶三項獲獎，為後期代表作但非開創性作品。"
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -2359,7 +2519,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview112/v4/89/c5/8b/89c58b6f-d26e-e16b-7f27-053ff0e4f1ca/mzaf_7709936337729543490.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/36/f0/9d/36f09d08-3429-5414-f032-b662717cdae5/mzaf_9863882357272643573.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T05:03:23Z",
@@ -2414,14 +2574,23 @@
       "apexAssessment": {
         "eligible": true,
         "tier": "hall",
-        "reason": "跨來源共識指其為華語流行導入節奏藍調製作範式的起點：金曲獎最佳唱片製作人、中華音樂人交流協會十大專輯，〈望春風〉更帶起台語老歌新唱風潮，足列華語流行史核心。",
+        "reason": "店主 2026-11-03 定案殿堂擴充（hall-expansion-20261103）：升為殿堂。",
         "evidenceUrls": [
-          "https://zh.wikipedia.org/wiki/%E9%99%B6%E5%96%86_(%E5%B0%88%E8%BC%AF)",
-          "https://en.wikipedia.org/wiki/David_Tao_(album)"
-        ]
+          "https://www.last.fm/music/%E9%99%B6%E5%96%86/%E9%99%B6%E5%96%86%E5%90%8C%E5%90%8D%E5%B0%88%E8%BC%AF",
+          "https://musicbrainz.org/release-group/0266bc3c-2456-44be-99d2-c779fce923ff"
+        ],
+        "previous": {
+          "eligible": false,
+          "tier": null,
+          "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。華語 R&B 開端，該國類型第一名盤級止於5",
+          "evidenceUrls": [],
+          "source": "manual:audit-20261102"
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:hall-expansion-20261103"
       },
       "description": {
-        "text": "1997年12月由俠客唱片發行的首張創作專輯，陶喆自己作曲編曲，與王治平、Jim Lee 共同製作，全碟用機場廣播與答錄機留言等短過場串接段落。〈飛機場的10:30〉、〈愛，很簡單〉、〈沙灘〉把美式節奏藍調的和聲寫法與轉音直接搬進國語歌；〈望春風〉改編鄧雨賢舊作，開了老歌新唱的路。隔年第9屆金曲獎五項提名，奪下最佳新人與最佳唱片製作人。",
+        "text": "《陶喆同名專輯》是陶喆 1997 年的首張個人專輯，在第 9 屆金曲獎獲五項提名，拿下最佳新人與最佳專輯製作人，他也是第一位同時得製作人獎的新人。專輯由獨立廠牌俠客唱片發行，多數歌在 1993 年就有 demo，全程在他洛杉磯的住家製作；他自己作曲、編曲，與王治平、Jim Lee 共同製作。聲音是華語流行加上明顯的西式 R&B，曲目之間用〈Airport Take Off〉〈Answering Machine〉等短過場串起；〈望春風〉把鄧雨賢的台語老歌改成全由他一人演唱的無伴奏 R&B。〈愛，很簡單〉後來被張學友、王力宏、梁靜茹翻唱。",
         "sourceUrls": [
           "https://zh.wikipedia.org/wiki/%E9%99%B6%E5%96%86_(%E5%B0%88%E8%BC%AF)",
           "https://musicbrainz.org/release-group/0266bc3c-2456-44be-99d2-c779fce923ff",
@@ -2430,7 +2599,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/ff/d8/fa/ffd8fae6-84d0-10b1-89b1-022cefb07901/mzaf_2785020437576550382.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/54/c6/1d/54c61d61-5435-fd28-f14d-0b34bc69a007/mzaf_3131231682859367750.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T05:03:23Z",
@@ -2473,24 +2642,41 @@
         "visuallyVerified": true
       },
       "ratings": {
-        "classic": 5,
-        "obscurity": 1,
+        "classic": 4,
+        "obscurity": 2,
         "accessibility": 1,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-23T05:03:23Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；《台灣流行音樂200最佳專輯》第47名、金曲獎最佳唱片製作人，旋律直白且傳唱度極高。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：第二張，華語R&B重要作；開山盤是首張《陶喆》",
+        "previous": {
+          "classic": 5,
+          "obscurity": 1,
+          "accessibility": 1,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-23T05:03:23Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；《台灣流行音樂200最佳專輯》第47名、金曲獎最佳唱片製作人，旋律直白且傳唱度極高。",
+          "rarity": "rare"
+        }
       },
-      "rarity": "uncommon",
+      "rarity": "common",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "名列台灣流行音樂200最佳專輯第47名，並獲中華音樂人交流協會年度十大專輯與金曲獎最佳唱片製作人，是華語節奏藍調書寫的長期共識核心。",
-        "evidenceUrls": [
-          "https://zh.wikipedia.org/wiki/%E5%8F%B0%E7%81%A3%E6%B5%81%E8%A1%8C%E9%9F%B3%E6%A8%82200%E6%9C%80%E4%BD%B3%E5%B0%88%E8%BC%AF",
-          "https://zh.wikipedia.org/wiki/I%27m%20OK",
-          "https://musicbrainz.org/release-group/923495e2-e110-3ee0-afee-7d3719fd26f5"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。第二張，華語R&B重要作；開山盤是首張《陶喆》",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "名列台灣流行音樂200最佳專輯第47名，並獲中華音樂人交流協會年度十大專輯與金曲獎最佳唱片製作人，是華語節奏藍調書寫的長期共識核心。",
+          "evidenceUrls": [
+            "https://zh.wikipedia.org/wiki/%E5%8F%B0%E7%81%A3%E6%B5%81%E8%A1%8C%E9%9F%B3%E6%A8%82200%E6%9C%80%E4%BD%B3%E5%B0%88%E8%BC%AF",
+            "https://zh.wikipedia.org/wiki/I%27m%20OK",
+            "https://musicbrainz.org/release-group/923495e2-e110-3ee0-afee-7d3719fd26f5"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "陶喆第二張創作專輯，詞、曲、編、製一手包辦，把美式節奏藍調的和聲堆疊與切分律動接進國語歌的旋律骨架。開場〈Doxology〉取自教會頌讚，末曲〈Amen〉找 Tension 合唱，中段把黎錦光一九四四年的〈夜來香〉改寫成 R&B，〈小鎮姑娘〉與〈普通朋友〉則成了後來被反覆翻唱的範本。他以此拿下第十一屆金曲獎最佳唱片製作人，專輯並名列《台灣流行音樂200最佳專輯》第四十七名。",
@@ -2522,8 +2708,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": false,
-        "apexPool": true
+        "seedCards": true,
+        "apexPool": false
       }
     },
     {
@@ -2544,24 +2730,41 @@
         "visuallyVerified": true
       },
       "ratings": {
-        "classic": 5,
+        "classic": 4,
         "obscurity": 2,
         "accessibility": 2,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-23T05:03:23Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；《台灣流行音樂200最佳專輯》第40名並獲協會年度十大專輯，搖滾化與社會題材略提高入耳門檻。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：藝人中後期代表作級；華語主流→2",
+        "previous": {
+          "classic": 5,
+          "obscurity": 2,
+          "accessibility": 2,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-23T05:03:23Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；《台灣流行音樂200最佳專輯》第40名並獲協會年度十大專輯，搖滾化與社會題材略提高入耳門檻。",
+          "rarity": "uncommon"
+        }
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "名列台灣流行音樂200最佳專輯第40名，另獲中華音樂人交流協會年度十大專輯與國際唱片業協會香港會年度十大銷量國語唱片，跨來源共識穩固。",
-        "evidenceUrls": [
-          "https://zh.wikipedia.org/wiki/%E5%8F%B0%E7%81%A3%E6%B5%81%E8%A1%8C%E9%9F%B3%E6%A8%82200%E6%9C%80%E4%BD%B3%E5%B0%88%E8%BC%AF",
-          "https://zh.wikipedia.org/wiki/%E9%BB%91%E8%89%B2%E6%9F%B3%E4%B8%81",
-          "https://musicbrainz.org/release-group/ada64ee0-8bd4-3f23-acc0-a3e937431bf0"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。藝人中後期代表作級；華語主流→2",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "名列台灣流行音樂200最佳專輯第40名，另獲中華音樂人交流協會年度十大專輯與國際唱片業協會香港會年度十大銷量國語唱片，跨來源共識穩固。",
+          "evidenceUrls": [
+            "https://zh.wikipedia.org/wiki/%E5%8F%B0%E7%81%A3%E6%B5%81%E8%A1%8C%E9%9F%B3%E6%A8%82200%E6%9C%80%E4%BD%B3%E5%B0%88%E8%BC%AF",
+            "https://zh.wikipedia.org/wiki/%E9%BB%91%E8%89%B2%E6%9F%B3%E4%B8%81",
+            "https://musicbrainz.org/release-group/ada64ee0-8bd4-3f23-acc0-a3e937431bf0"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "陶喆第三張創作專輯，吉他破音與電子噪點壓過前作的甜度，題材轉向千禧年後的失序。〈今天晚間新聞〉直接剪進新聞播報片段，〈Dear God〉是質問式的長篇搖滾，〈宮保雞丁〉找朱敬然饒舌，〈月亮代表誰的心〉則把翁清溪、孫儀的老歌拆開重寫，〈My Anata〉加了日語口白。2003 年獲中華音樂人交流協會年度十大專輯，並名列《台灣流行音樂200最佳專輯》第四十名。",
@@ -2573,7 +2776,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/d8/3d/83/d83d83fd-f687-c357-9a55-08da435a60ca/mzaf_8523897870598193790.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/12/c8/a5/12c8a5d7-4af8-0028-ebbc-a8554952330c/mzaf_15810752807673167380.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T05:03:23Z",
@@ -2594,8 +2797,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": false,
-        "apexPool": true
+        "seedCards": true,
+        "apexPool": false
       }
     },
     {
@@ -2624,7 +2827,7 @@
         "checkedAt": "2026-08-23T05:03:23Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；商業能見度極高的國語情歌代表期，但未進入台灣流行音樂正典名單，地位低於其創作評價最高的作品。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -2640,7 +2843,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/d6/e2/c0/d6e2c072-ce35-ba93-d069-c2f0feec3f55/mzaf_17040525657257394092.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/22/a4/ad/22a4ada5-28c2-b268-68e6-37749c342824/mzaf_9945423435927691624.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T05:03:23Z",
@@ -2691,7 +2894,7 @@
         "checkedAt": "2026-08-23T05:03:23Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；chinked-out 概念的首章、王力宏公認的創作轉折點，民族取樣使聽感略高於一般流行專輯。"
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -2708,7 +2911,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/07/7d/cd/077dcd90-25c1-f147-7667-363017a8a4df/mzaf_15747885869076763537.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ce/56/e0/ce56e06c-498b-b424-a7b6-079ebd0154c6/mzaf_9100749884298557907.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T05:03:23Z",
@@ -2759,7 +2962,7 @@
         "checkedAt": "2026-08-23T05:03:23Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；金曲獎最佳國語男演唱人得獎作、chinked-out 的代表章節，京劇腔口與崑曲素材略提高聽感門檻。"
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -2776,7 +2979,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/34/0d/c5/340dc55d-d9f4-e42f-6a88-5109f4de7aff/mzaf_15646874245166113901.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/1d/2b/d3/1d2bd340-2e7f-7eac-28d6-ef3badf5ea7f/mzaf_16313711200530441356.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T05:03:23Z",
@@ -2819,24 +3022,41 @@
         "visuallyVerified": true
       },
       "ratings": {
-        "classic": 5,
-        "obscurity": 1,
+        "classic": 4,
+        "obscurity": 2,
         "accessibility": 1,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-23T05:03:23Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；《台灣流行音樂200最佳專輯》第18名、金曲獎最佳新人與年度銷售總冠軍，旋律直白易入耳。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：出道強作但非華語流行史人人必提；經典度 5→4，殿堂不成立",
+        "previous": {
+          "classic": 5,
+          "obscurity": 1,
+          "accessibility": 1,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-23T05:03:23Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；《台灣流行音樂200最佳專輯》第18名、金曲獎最佳新人與年度銷售總冠軍，旋律直白易入耳。",
+          "rarity": "rare"
+        }
       },
-      "rarity": "uncommon",
+      "rarity": "common",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "名列台灣流行音樂200最佳專輯第18名，另有金曲獎最佳新人、最佳作曲人與 2000 年台灣年度銷售總冠軍，長期跨來源共識明確。",
-        "evidenceUrls": [
-          "https://zh.wikipedia.org/wiki/%E5%8F%B0%E7%81%A3%E6%B5%81%E8%A1%8C%E9%9F%B3%E6%A8%82200%E6%9C%80%E4%BD%B3%E5%B0%88%E8%BC%AF",
-          "https://zh.wikipedia.org/wiki/%E5%AD%AB%E7%87%95%E5%A7%BF%20%28%E5%B0%88%E8%BC%AF%29",
-          "https://musicbrainz.org/release-group/ef64b46f-ab2c-3805-b3ce-ff591705efb7"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。出道強作，華語流行類型級",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "名列台灣流行音樂200最佳專輯第18名，另有金曲獎最佳新人、最佳作曲人與 2000 年台灣年度銷售總冠軍，長期跨來源共識明確。",
+          "evidenceUrls": [
+            "https://zh.wikipedia.org/wiki/%E5%8F%B0%E7%81%A3%E6%B5%81%E8%A1%8C%E9%9F%B3%E6%A8%82200%E6%9C%80%E4%BD%B3%E5%B0%88%E8%BC%AF",
+            "https://zh.wikipedia.org/wiki/%E5%AD%AB%E7%87%95%E5%A7%BF%20%28%E5%B0%88%E8%BC%AF%29",
+            "https://musicbrainz.org/release-group/ef64b46f-ab2c-3805-b3ce-ff591705efb7"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "新加坡歌手孫燕姿的首張國語專輯，由李偲菘、李偉菘兄弟主導詞曲與製作，聲線乾、咬字直，和當時主流的甜嗓路線正好相反。原定首波主打是〈愛情證書〉，發片前不到一個月被華納老闆周建輝改成〈天黑黑〉，結果全台賣破三十三萬張、拿下 2000 年年度銷售總冠軍。她因此獲金曲獎最佳新人，李偲菘以〈天黑黑〉獲最佳作曲人，專輯名列《台灣流行音樂200最佳專輯》第十八名。",
@@ -2848,7 +3068,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/3f/f7/3d/3ff73d58-720b-3a62-1819-e133b7d24067/mzaf_16223566166904933726.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/17/0b/ac/170bac5d-4c3d-8235-f9e8-4a826d06c016/mzaf_9639364267720366441.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T05:03:23Z",
@@ -2869,8 +3089,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": false,
-        "apexPool": true
+        "seedCards": true,
+        "apexPool": false
       }
     },
     {
@@ -2899,7 +3119,7 @@
         "checkedAt": "2026-08-23T05:03:23Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；出道年二連發、2001 年全台銷售總冠軍，為其代表作之一但未入正典名單，旋律仍屬直白。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -2915,7 +3135,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/4f/78/de/4f78debe-1ef5-9327-ad35-dcba19accdef/mzaf_2193994217723322321.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9f/7f/b3/9f7fb3f8-602b-5b34-d5fa-0690b731b044/mzaf_11696553960136214494.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T05:03:23Z",
@@ -2966,7 +3186,7 @@
         "checkedAt": "2026-08-23T05:03:23Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；蔡依林轉型定調之作、金曲獎最佳流行音樂演唱專輯入圍並帶出最佳編曲人獎，曲目全為直白舞曲與抒情歌。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -3033,7 +3253,7 @@
         "checkedAt": "2026-08-23T05:03:23Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；金曲獎最佳國語專輯入圍、蔡依林憑此獲最佳國語女歌手且為 2006 年台灣年度銷售冠軍，曲目仍屬直白流行舞曲。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -3049,7 +3269,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/30/c6/a9/30c6a9dc-2284-6e40-75f2-2fa24fcd794a/mzaf_7272407356912969431.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ca/bc/b9/cabcb9e6-3d11-5b74-5698-420db485070c/mzaf_14212037994139512200.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T05:03:23Z",
@@ -3116,7 +3336,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/8a/ba/1f/8aba1fda-e2cc-8091-3b00-9084d6b866e8/mzaf_14462564578089187957.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/69/b3/1a/69b31ae4-d501-7a4e-fcbe-176b401f527b/mzaf_1773036438364483271.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T05:03:23Z",
@@ -3167,7 +3387,7 @@
         "checkedAt": "2026-08-23T05:03:23Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；S.H.E 最具辨識度的代表作、2003 年台灣年度銷量第三名並入圍金曲獎最佳重唱組合，曲目旋律直白。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -3183,7 +3403,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/00/7d/4d/007d4d5e-22d6-b6b6-6ff9-f57904c4ef4b/mzaf_9457566194984936470.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/79/74/b2/7974b240-d160-d09c-34cb-8eaaac7ac489/mzaf_18341187977018790057.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T05:03:23Z",
@@ -3234,7 +3454,7 @@
         "checkedAt": "2026-08-23T05:03:23Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；S.H.E 銷量與傳唱雙峰之一、入圍金曲獎最佳演唱組合，古典改編的同名曲極易入耳。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -3250,7 +3470,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/fc/88/e7/fc88e779-da07-f692-7e39-02ab2950aa41/mzaf_9742809150116480219.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/58/48/94/58489459-9aa2-84b0-b198-8f973f48034e/mzaf_12423410430624709656.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T05:03:23Z",
@@ -3301,7 +3521,7 @@
         "checkedAt": "2026-08-23T05:03:23Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；出道作拿下第十五屆金曲獎最佳演唱新人獎、全亞洲逾一百二十萬張，地位明確但非樂史開創之作；曲風是旋律直白的節奏藍調流行。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -3317,7 +3537,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/e5/57/98/e557983d-887a-52e2-a64a-f0b488b96fe2/mzaf_8377828643901327860.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/2d/a1/85/2da18508-5f00-8612-7fb1-80cb94ca588b/mzaf_15706924380939203384.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T05:03:23Z",
@@ -3368,7 +3588,7 @@
         "checkedAt": "2026-08-23T05:03:23Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；〈江南〉是林俊傑傳唱最廣的作品、專輯全亞洲逾一百八十萬張，屬該藝人公認代表作；入耳門檻低，一般玩家極常撞見。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -3384,7 +3604,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/cd/fe/56/cdfe5645-2f8a-9dc9-3465-85ca31df9141/mzaf_14962897460686586279.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/0d/0a/1f/0d0a1f64-1faa-01a3-6b82-3f71c7f1ad53/mzaf_6171234305789252058.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T05:03:23Z",
@@ -3435,7 +3655,7 @@
         "checkedAt": "2026-08-23T05:03:23Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；全球首張以假人頭麥克風錄製的流行專輯，第二十七屆金曲獎最佳國語男歌手與最佳作曲人，錄音手法上有可查證的首創地位。"
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -3451,7 +3671,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/56/3c/18/563c1814-a750-9589-630f-b9cdbd371f9d/mzaf_10513299699300579555.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/5f/49/b8/5f49b821-247b-af57-2bae-58c4886567b3/mzaf_12579894677612203670.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T05:03:23Z",
@@ -3502,7 +3722,7 @@
         "checkedAt": "2026-08-23T05:03:23Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；台灣流行音樂百佳專輯（1993-2005）第九十八名、第十五屆金曲獎最佳樂團獎，屬該團公認主要作品；旋律直白。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -3519,7 +3739,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/df/51/b6/df51b601-ceeb-a2d1-eefb-bc9d268f0cf9/mzaf_12135567632375191946.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e2/a6/7f/e2a67f07-9f22-90d6-f575-eeaf471f215d/mzaf_1943213537184020724.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T05:03:23Z",
@@ -3570,7 +3790,7 @@
         "checkedAt": "2026-08-23T05:03:23Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；第二十屆金曲獎最佳樂團獎，〈突然好想你〉〈你不是真正的快樂〉長成跨世代合唱曲，屬該團公認主要作品；入門者極常撞見。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -3586,7 +3806,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/f7/7b/c0/f77bc0ad-2cf2-755f-b8e2-40ff982844a4/mzaf_6341650422287672828.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/80/aa/a2/80aaa2ca-171a-b74b-72de-81fcc8cdec0f/mzaf_2062386005950218021.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T05:03:23Z",
@@ -3637,7 +3857,7 @@
         "checkedAt": "2026-08-23T05:03:23Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；第十九屆金曲獎最佳專輯製作人與最佳國語女歌手、中華音樂人交流協會年度十大專輯，屬創作女聲公認主要作品。"
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -3653,7 +3873,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/2d/e6/df/2de6dff8-1e2c-f86d-3463-bb892e380c1d/mzaf_16024978824030458389.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b0/c4/6c/b0c46c1e-4df4-7ed3-96d6-5150931ba238/mzaf_8333291403420670489.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T05:03:23Z",
@@ -3708,15 +3928,23 @@
       "apexAssessment": {
         "eligible": true,
         "tier": "hall",
-        "reason": "百佳榜第二名、與《之乎者也》並稱時代分水嶺，首度把靈魂樂唱法帶進國語歌壇，並拿下金馬獎與香港電影金像獎電影歌曲獎，跨來源長期共識足列華語樂史核心。",
+        "reason": "店主 2026-11-03 定案殿堂擴充（hall-expansion-20261103）：升為殿堂。",
         "evidenceUrls": [
-          "https://zh.wikipedia.org/wiki/%E5%8F%B0%E7%81%A3%E6%B5%81%E8%A1%8C%E9%9F%B3%E6%A8%82200%E6%9C%80%E4%BD%B3%E5%B0%88%E8%BC%AF",
-          "https://zh.wikipedia.org/wiki/%E8%98%87%E8%8A%AE",
-          "https://zh.wikipedia.org/wiki/%E6%90%AD%E9%8C%AF%E8%BB%8A"
-        ]
+          "https://www.last.fm/music/%E8%98%87%E8%8A%AE/%E8%98%87%E8%8A%AE%E5%B0%88%E8%BC%AF",
+          "https://musicbrainz.org/release-group/a3672742-6bcb-46f3-bf89-c838426588bb"
+        ],
+        "previous": {
+          "eligible": false,
+          "tier": null,
+          "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。台灣流行轉捩點，該國名盤級止於5",
+          "evidenceUrls": [],
+          "source": "manual:audit-20261102"
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:hall-expansion-20261103"
       },
       "description": {
-        "text": "一九八三年電影《搭錯車》的原聲大碟，也是蘇芮的出道唱片。三十一歲前她在西餐廳唱英文歌，經崔苔菁的電視節目被導演虞戡平相中，簽進新成立的飛碟。李壽全統籌音樂：〈一樣的月光〉由他作曲、吳念真與羅大佑填詞，〈是否〉出自羅大佑，〈請跟我來〉〈把握〉〈變〉由梁弘志包辦，〈酒干倘賣無〉是侯德健的手筆。她把靈魂樂的嘶啞唱法帶進國語歌，黑白四格封面確立「黑色旋風」形象，台灣百佳專輯排名第二。",
+        "text": "《蘇芮專輯》是電影《搭錯車》的原聲大碟、蘇芮的第一張專輯，被視為台灣流行音樂最重要的專輯之一，也和羅大佑《之乎者也》一起被看作校園民歌與現代流行樂的分界。1983 年由飛碟發行，李壽全監製，羅大佑、梁弘志、吳念真、陳志遠等三十歲上下的音樂人參與創作與製作。〈一樣的月光〉由李壽全作曲、吳念真與羅大佑作詞，分前後兩段，是有推進力、不照常規走的民謠搖滾；〈是否〉出自羅大佑。蘇芮的唱法帶著靈魂樂的質地與搖滾的爆發力，不走柔軟的懷舊路線。〈一樣的月光〉拿下金馬獎最佳電影插曲，在國語榜連續九週第一。",
         "sourceUrls": [
           "https://zh.wikipedia.org/wiki/%E6%90%AD%E9%8C%AF%E8%BB%8A",
           "https://zh.wikipedia.org/wiki/%E8%98%87%E8%8A%AE",
@@ -3777,7 +4005,7 @@
         "checkedAt": "2026-08-23T05:03:23Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；台灣流行音樂百佳專輯（1975-1993）第五十名，羅大佑滾石時期主要作品，但知名度不及《之乎者也》《未來的主人翁》，屬樂迷領域。"
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -3794,7 +4022,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/81/ac/52/81ac52b6-6a30-c4ae-4c99-77789482ad41/mzaf_2254448864176272260.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/88/cd/2f/88cd2f94-62fe-afc1-a55c-01d9e30c1277/mzaf_17932566589188999462.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T05:03:23Z",
@@ -3845,7 +4073,7 @@
         "checkedAt": "2026-08-23T05:03:23Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；台灣流行音樂百佳專輯（1975-1993）第四十二名，〈戀曲1990〉〈妳的樣子〉為大眾曲目，屬羅大佑公認主要作品。"
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -3862,7 +4090,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/63/4f/c3/634fc36c-7dd7-26f5-c0e6-2a68fefc4641/mzaf_8016878498326897628.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e6/7a/ec/e67aeccf-bb66-feac-1cb8-00a95c947dd2/mzaf_15961908981685985292.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T05:03:23Z",
@@ -3913,7 +4141,7 @@
         "checkedAt": "2026-08-23T05:03:23Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；台灣第一張銷量破百萬的華語專輯（IFPI 台灣認證一〇二萬張）並列台灣百佳專輯第二十二名，跨來源可查證的開創地位。"
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -3973,23 +4201,44 @@
         "visuallyVerified": true
       },
       "ratings": {
-        "classic": 4,
+        "classic": 5,
         "obscurity": 2,
         "accessibility": 2,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-23T05:03:23Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；第九屆金曲獎最佳流行音樂演唱唱片獎、台灣流行音樂百佳專輯（1993-2005）第四十一名，公認的張雨生創作代表作。"
+        "source": "manual:hall-expansion-20261103",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "店主 2026-11-03 定案殿堂擴充：殿堂最低門檻 classic=5，經典度由 4 調為 5（只動經典度）",
+        "previous": {
+          "classic": 4,
+          "obscurity": 2,
+          "accessibility": 2,
+          "listeners": null,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-23T05:03:23Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；第九屆金曲獎最佳流行音樂演唱唱片獎、台灣流行音樂百佳專輯（1993-2005）第四十一名，公認的張雨生創作代表作。",
+          "rarity": "rare"
+        }
       },
       "rarity": "uncommon",
       "apexAssessment": {
-        "eligible": false,
-        "tier": null,
-        "reason": "金曲最佳專輯加百佳第四十一名，地位穩固但未達史上核心的跨來源共識，維持一般卡。",
-        "evidenceUrls": []
+        "eligible": true,
+        "tier": "hall",
+        "reason": "店主 2026-11-03 定案殿堂擴充（hall-expansion-20261103）：升為殿堂。",
+        "evidenceUrls": [
+          "https://www.last.fm/music/%E5%BC%B5%E9%9B%A8%E7%94%9F/%E5%8F%A3%E6%98%AF%E5%BF%83%E9%9D%9E",
+          "https://musicbrainz.org/release-group/79b81dcf-f4ee-457c-8695-cc8af2dc43e3"
+        ],
+        "previous": {
+          "eligible": false,
+          "tier": null,
+          "reason": "金曲最佳專輯加百佳第四十一名，地位穩固但未達史上核心的跨來源共識，維持一般卡。",
+          "evidenceUrls": []
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:hall-expansion-20261103"
       },
       "description": {
-        "text": "張雨生生前發行的最後一張唱片，十一首詞曲全部自己寫、自己製作。樂手是固定班底：他與黃中岳的吉他、譚明輝的貝斯、姜永正的鼓，鍵盤與全碟編曲交給櫻井弘二，王俊傑混音。〈愛情…〉只有一分鐘，接著〈…的圖案〉續完，兩軌拆成一組；〈河〉長達六分鐘，〈在黃昏融化了世界的色彩以前〉這種長句標題也照樣入歌。封面出自義大利畫家 Paolo Rui。一九九八年拿下第九屆金曲獎最佳流行音樂演唱唱片獎，台灣百佳專輯第四十一名。",
+        "text": "《口是心非》是張雨生生前最後一張國語專輯，1997 年 10 月 16 日由豐華唱片發行，1998 年獲第九屆金曲獎最佳流行音樂演唱唱片獎，這是他一生唯一一座金曲獎。這張是他開始為張惠妹製作專輯之後，第一次出自己的唱片，十一首的詞曲、演唱與製作多由他自己包辦，全碟編曲交給從《卡拉OK．台北．我》起擔任他樂團鍵盤手的櫻井弘二。發行四天後他在淡水發生車禍，昏迷 24 天後於 11 月 12 日逝世，得獎時他已過世。同名曲〈口是心非〉後來被改編成合唱版本，是這張專輯最廣為人知的歌。",
         "sourceUrls": [
           "https://zh.wikipedia.org/wiki/%E5%8F%A3%E6%98%AF%E5%BF%83%E9%9D%9E",
           "https://zh.wikipedia.org/wiki/%E5%8F%B0%E7%81%A3%E6%B5%81%E8%A1%8C%E9%9F%B3%E6%A8%82200%E6%9C%80%E4%BD%B3%E5%B0%88%E8%BC%AF",
@@ -3998,7 +4247,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/81/08/0a/81080a6b-75fc-8a87-5cb2-a981978adc05/mzaf_13524584232585275686.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ec/8f/a3/ec8fa389-4865-303f-71cd-8d26643d080c/mzaf_3669605427904539385.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T05:03:23Z",
@@ -4019,8 +4268,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": true,
-        "apexPool": false
+        "seedCards": false,
+        "apexPool": true
       }
     },
     {
@@ -4050,7 +4299,7 @@
         "checkedAt": "2026-08-23T05:03:23Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；《台灣流行音樂百張最佳專輯》第七十三名，〈狼〉〈原來的我〉為齊秦公認代表作；歌曲在華語圈傳唱極廣但屬直白搖滾抒情，入耳無門檻。"
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -4067,7 +4316,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/fd/32/8a/fd328a4f-e5e5-474b-daaf-9048b24b31c9/mzaf_10084014689949982386.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ed/85/e1/ed85e123-7fcd-428c-f2db-42b85c06e34a/mzaf_11691245334378560909.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T05:03:23Z",
@@ -4118,7 +4367,7 @@
         "checkedAt": "2026-08-23T05:03:23Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；〈大約在冬季〉當選一九八八年度香港十大中文金曲並被大量翻唱，是齊秦傳唱最廣的一張；但專輯本身未進台灣百佳榜單，多數人是透過單曲或精選輯認識，旋律直白。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -4182,7 +4431,7 @@
         "checkedAt": "2026-08-23T05:03:23Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；《台灣流行音樂百張最佳專輯》第六十六名、同名曲一九八八年獲金馬獎最佳電影插曲，李宗盛在報端稱其為十年僅出四五首的世紀歌曲，跨來源地位明確；九首全為慢歌，入耳無難度。"
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -4199,7 +4448,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/8f/a9/80/8fa980b5-d3f9-3f25-9968-a6d2f64078bd/mzaf_7467949338809334982.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/84/59/6a/84596aab-986c-d025-2e40-ad2c131d0b9c/mzaf_5979947135983612270.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T05:03:23Z",
@@ -4250,7 +4499,7 @@
         "checkedAt": "2026-08-23T05:03:23Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；飛碟時期黃鶯鶯的代表作之一，同名曲為譚家明電影主題曲並在金嗓獎典禮首唱；但未進台灣百佳榜單，屬樂迷領域而非入門常客。"
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -4318,7 +4567,7 @@
         "checkedAt": "2026-08-23T05:03:23Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；銷量逾四十萬張、當年國內歌手專輯銷售冠軍，〈哭砂〉為熊美玲拿下第三屆金曲獎最佳作曲人獎並被數十位歌手翻唱；專輯本身未入百佳榜單，聽感為標準國語抒情。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -4335,7 +4584,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/79/93/67/79936735-2419-8c5a-0d89-7bfe434afac5/mzaf_689258792324823088.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/69/92/e4/6992e4a3-7982-bde8-d7c5-f2ceccfc7d75/mzaf_9418141303694649928.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T05:03:23Z",
@@ -4381,13 +4630,22 @@
       "ratings": {
         "classic": 5,
         "obscurity": 2,
-        "accessibility": 2,
+        "accessibility": 1,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-23T05:03:23Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；《台灣流行音樂百張最佳專輯》第三十二名，同名曲為公認的國民金曲，滾石一九八〇年代末平民搖滾路線的代表；編曲以樂團為主但旋律直白。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：趙傳成名代表作，主流抒情搖滾",
+        "previous": {
+          "classic": 5,
+          "obscurity": 2,
+          "accessibility": 2,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-23T05:03:23Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；《台灣流行音樂百張最佳專輯》第三十二名，同名曲為公認的國民金曲，滾石一九八〇年代末平民搖滾路線的代表；編曲以樂團為主但旋律直白。",
+          "rarity": "uncommon"
+        }
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -4404,7 +4662,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6d/75/68/6d7568a6-f2b2-8109-6369-2e52e84e586a/mzaf_15204528674765255866.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/71/42/97/71429779-e0b2-a2b4-7a42-ea24a53ea345/mzaf_17977151477482449926.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T05:03:23Z",
@@ -4449,13 +4707,22 @@
       "ratings": {
         "classic": 5,
         "obscurity": 2,
-        "accessibility": 2,
+        "accessibility": 1,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-23T05:03:23Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；《台灣流行音樂百張最佳專輯》第五十一名，同名曲拿下第十四屆十大中文金曲與一九九一年度勁歌金曲最受歡迎國語歌曲金獎，是粵語女聲跨進國語市場的關鍵文件；編曲為都會流行，聽感不難。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：林憶蓮台灣時期代表作，抒情流行",
+        "previous": {
+          "classic": 5,
+          "obscurity": 2,
+          "accessibility": 2,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-23T05:03:23Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；《台灣流行音樂百張最佳專輯》第五十一名，同名曲拿下第十四屆十大中文金曲與一九九一年度勁歌金曲最受歡迎國語歌曲金獎，是粵語女聲跨進國語市場的關鍵文件；編曲為都會流行，聽感不難。",
+          "rarity": "uncommon"
+        }
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -4472,7 +4739,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/e7/4e/a0/e74ea0b2-a36d-4f0f-e8a6-3b2be0289c23/mzaf_3847511093235594645.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/a0/e7/07/a0e70775-f1d4-4ceb-f16c-5a0e7b3b4416/mzaf_16566156228362721406.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T05:03:23Z",
@@ -4523,7 +4790,7 @@
         "checkedAt": "2026-08-23T05:03:23Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；她不分語言銷量最高的一張，並獲新加坡金曲獎最佳專輯與中華音樂人交流協會年度十大優良專輯；但未入台灣百佳榜單，整張刻意走保守抒情，入耳極易。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -4539,7 +4806,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/8b/02/24/8b0224f5-03a9-e339-eab4-ff6d89a53329/mzaf_9411208116260212987.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/21/78/b9/2178b982-56f5-84cf-1609-672ed066b879/mzaf_15587270743115863591.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T05:03:23Z",
@@ -4590,15 +4857,23 @@
         "checkedAt": "2026-08-23T05:03:23Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；台灣一百三十六萬張、全球逾四百萬張，長年為台灣男歌手銷量之最，《台灣流行音樂200最佳專輯》一九九三至二〇〇五年部分第十九名，跨中英文來源皆有紀錄；曲目為標準國語情歌，入門常客。"
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "銷量紀錄由 Billboard 報導與台灣 IFPI 數字雙重佐證，並在台灣流行音樂兩百張最佳專輯的一九九三年後部分名列第十九，是九〇年代國語情歌的公認正典入口，長期共識穩定。",
-        "evidenceUrls": [
-          "https://zh.wikipedia.org/wiki/吻別",
-          "https://zh.wikipedia.org/wiki/台灣流行音樂200最佳專輯"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。華語銷量神話，但屬單一地區流行經典，非跨類型國際正典，止於5",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "銷量紀錄由 Billboard 報導與台灣 IFPI 數字雙重佐證，並在台灣流行音樂兩百張最佳專輯的一九九三年後部分名列第十九，是九〇年代國語情歌的公認正典入口，長期共識穩定。",
+          "evidenceUrls": [
+            "https://zh.wikipedia.org/wiki/吻別",
+            "https://zh.wikipedia.org/wiki/台灣流行音樂200最佳專輯"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "一九九三年三月寶麗金發行，黃慶元與薛忠銘製作。全碟只有〈吻別〉〈情網〉〈相信她，關心她〉三首新作，其餘七首是他粵語舊曲的國語重填版——而那批粵語歌本身多半改編自日本流行曲：〈一路上有你〉來自片山圭司，〈每天愛你多一些〉來自桑田佳祐的〈真夏の果実〉，〈秋意濃〉則是玉置浩二的〈行かないで〉。台灣賣出一百三十六萬張，全球逾四百萬。",
@@ -4610,7 +4885,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/41/d5/18/41d518e2-7de0-df33-b427-ccb6f2016014/mzaf_12499050796679896281.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/12/db/ce/12dbce07-47bc-dc49-05d7-eab7e057af57/mzaf_3837636671161943771.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T05:03:23Z",
@@ -4631,8 +4906,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": false,
-        "apexPool": true
+        "seedCards": true,
+        "apexPool": false
       }
     },
     {
@@ -4661,18 +4936,27 @@
         "checkedAt": "2026-08-23T05:03:23Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；出道即賣出一百二十一萬張，《台灣流行音樂200最佳專輯》一九九三至二〇〇五年部分第十名、中華音樂人交流協會年度十大優良專輯，是原住民歌手進入國語主流的分水嶺；曲目為主流流行，入耳直白。"
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": true,
         "tier": "hall",
-        "reason": "評論端在兩百張最佳專輯的後段名單中列第十名，商業端為台灣史上最暢銷的十張之一，中英文維基與協會年度榜單長期並存，屬台灣流行音樂史核心文獻。",
+        "reason": "店主 2026-11-03 定案殿堂擴充（hall-expansion-20261103）：升為殿堂。",
         "evidenceUrls": [
-          "https://zh.wikipedia.org/wiki/姊妹_(專輯)",
-          "https://en.wikipedia.org/wiki/Sisters_(A-Mei_album)"
-        ]
+          "https://www.last.fm/music/%E5%BC%B5%E6%83%A0%E5%A6%B9/%E5%A7%8A%E5%A6%B9",
+          "https://musicbrainz.org/release-group/760141fb-985d-3b45-849e-7fabad2de396"
+        ],
+        "previous": {
+          "eligible": false,
+          "tier": null,
+          "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。華語流行出道名盤，該地區類型里程碑止於5",
+          "evidenceUrls": [],
+          "source": "manual:audit-20261102"
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:hall-expansion-20261103"
       },
       "description": {
-        "text": "一九九六年十二月豐華唱片發行的首張國語專輯，卑南族的張惠妹族名為 Kulilay Amit。張雨生擔任主要製作人，並寫下〈姊妹〉與〈水藍色眼淚〉的詞曲；首波之後的〈原來你什麼都不要〉由郭子作曲、鄔裕康填詞、李伯傑編曲，成為她最長銷的一首。台灣賣出一百二十一萬張，《台灣流行音樂200最佳專輯》一九九三至二〇〇五年部分列第十名。",
+        "text": "《姊妹》是張惠妹的首張國語專輯，1996 年 12 月由豐華發行，IFPI 台灣榜連續 9 週第一，台灣賣出 121 萬張，被視為台灣流行音樂最重要的專輯之一。它把當時國語歌壇少見的原住民風格帶進主流，舞曲搭配抒情歌的做法也成了她之後專輯的模板。豐華在酒吧發現她後找來張雨生，他寫下〈姊妹〉與〈水藍色眼淚〉的詞曲並製作這兩首，其餘分由于光彥、馬毓芬等人製作；〈姊妹〉錄音時，她的母親與家人也加入合唱。全碟在舞曲與慢板情歌之間切換，〈原來你什麼都不要〉由郭蘅祈作曲、鄔裕康填詞、李伯傑編曲。",
         "sourceUrls": [
           "https://zh.wikipedia.org/wiki/姊妹_(專輯)",
           "https://en.wikipedia.org/wiki/Sisters_(A-Mei_album)",
@@ -4723,23 +5007,40 @@
         "visuallyVerified": true
       },
       "ratings": {
-        "classic": 5,
-        "obscurity": 1,
+        "classic": 4,
+        "obscurity": 2,
         "accessibility": 1,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-23T05:03:23Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；台灣累計一百三十八萬張、至今仍是當地銷量最高的專輯，《台灣流行音樂200最佳專輯》第二十六名並入圍第九屆金曲獎；〈聽海〉為長銷國民曲目，入耳無門檻。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：阿妹殿堂取《姊妹》；本張為暢銷強作，經典度 5→4",
+        "previous": {
+          "classic": 5,
+          "obscurity": 1,
+          "accessibility": 1,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-23T05:03:23Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；台灣累計一百三十八萬張、至今仍是當地銷量最高的專輯，《台灣流行音樂200最佳專輯》第二十六名並入圍第九屆金曲獎；〈聽海〉為長銷國民曲目，入耳無門檻。",
+          "rarity": "rare"
+        }
       },
-      "rarity": "uncommon",
+      "rarity": "common",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "台灣有史以來銷量最高的專輯，同時進入兩百張最佳專輯名單第二十六位，中英文維基與金曲獎入圍紀錄互相佐證，長期共識足列國語流行史核心。",
-        "evidenceUrls": [
-          "https://en.wikipedia.org/wiki/Bad_Boy_(A-Mei_album)",
-          "https://zh.wikipedia.org/wiki/台灣流行音樂200最佳專輯"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。華語流行熱銷盤，非跨類型史上正典",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "台灣有史以來銷量最高的專輯，同時進入兩百張最佳專輯名單第二十六位，中英文維基與金曲獎入圍紀錄互相佐證，長期共識足列國語流行史核心。",
+          "evidenceUrls": [
+            "https://en.wikipedia.org/wiki/Bad_Boy_(A-Mei_album)",
+            "https://zh.wikipedia.org/wiki/台灣流行音樂200最佳專輯"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "一九九七年六月豐華唱片發行，台灣累計一百三十八萬張，至今仍是當地銷量最高的專輯。張雨生寫下並製作〈一想到你呀〉〈孤單Tequila〉與標題曲三首，編曲交給日本人櫻井弘二，整體節奏處理明顯往節奏藍調靠；〈聽海〉由涂惠源作曲、林秋離填詞，是她被翻唱最多的作品。專輯入圍第九屆金曲獎最佳流行音樂演唱專輯，《台灣流行音樂200最佳專輯》列第二十六名。",
@@ -4772,8 +5073,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": false,
-        "apexPool": true
+        "seedCards": true,
+        "apexPool": false
       }
     },
     {
@@ -4802,7 +5103,7 @@
         "checkedAt": "2026-08-23T05:03:23Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；《台灣流行音樂百張最佳專輯》第九十七名、十九歲出道即連冠十週的紀錄，具明確地位；但曲風承襲校園民歌、今日多靠精選輯流通，屬樂迷領域。"
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -4867,7 +5168,7 @@
         "checkedAt": "2026-08-23T05:03:23Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；全亞洲銷量逾四百萬張、IFPI 認定的當年全球華語唱片銷量冠軍，是周華健最廣為人知的一張；曲目為主流國語抒情，旋律直白，一般玩家極易撞見。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -4883,7 +5184,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/fb/c3/96/fbc39636-764d-2055-c16d-85f35dd9205c/mzaf_3242070107431562307.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/44/9a/2a/449a2a7e-9372-cc80-e4c0-ab7b86eba12a/mzaf_10799847911115878161.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T05:03:23Z",
@@ -4934,7 +5235,7 @@
         "checkedAt": "2026-08-23T05:03:23Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；張信哲加盟百代後的首張國語大碟，隔年為他拿下第七屆金曲獎最佳國語歌曲男演唱人，是其銷量與獎項的雙高點；編制為標準抒情製作，入耳無門檻。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -4950,7 +5251,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/d2/2d/f9/d22df9c4-d517-4a9e-adf5-af44e4eb60e7/mzaf_6150929691232864420.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c3/b3/13/c3b31330-7dc0-3f2e-6b42-376ca67c7048/mzaf_6828132498864280720.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T05:03:23Z",
@@ -5001,7 +5302,7 @@
         "checkedAt": "2026-08-23T05:03:23Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；收錄陳昇傳唱最廣的〈北京一夜〉，但專輯本身未進「台灣流行音樂200最佳專輯」（該榜收的是他的《擁擠的樂園》《風箏》等四張），屬需要循目錄才會撞見的深度作品。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -5017,7 +5318,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ff/69/ec/ff69ecf7-3157-c535-feff-f6e15c1fada1/mzaf_6687761174968467726.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/4f/fa/f5/4ffaf5bc-7115-95a6-be5a-db432bfef4fd/mzaf_12816346592446121912.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T05:03:23Z",
@@ -5062,24 +5363,42 @@
       "ratings": {
         "classic": 5,
         "obscurity": 1,
-        "accessibility": 1,
+        "accessibility": 2,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-23T05:03:23Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；「台灣流行音樂200最佳專輯」第二部分第十六名、第七屆金曲獎最佳演唱錄音專輯獎、金曲龍虎榜一九九五年度銷售第一，是王菲登上天后位置的關鍵作；曲目全為旋律直白的國語流行。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：王菲巔峰作，華語流行歷代榜前段常客；帶實驗色彩，硬蕊 1→2",
+        "previous": {
+          "classic": 5,
+          "obscurity": 1,
+          "accessibility": 1,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-23T05:03:23Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；「台灣流行音樂200最佳專輯」第二部分第十六名、第七屆金曲獎最佳演唱錄音專輯獎、金曲龍虎榜一九九五年度銷售第一，是王菲登上天后位置的關鍵作；曲目全為旋律直白的國語流行。",
+          "rarity": "rare"
+        }
       },
       "rarity": "uncommon",
       "apexAssessment": {
         "eligible": true,
         "tier": "hall",
-        "reason": "跨來源長期共識明確：中華音樂人交流協會「台灣流行音樂200最佳專輯」1993–2005 部分列第十六名，第七屆金曲獎最佳演唱錄音專輯獎得主，並為金曲龍虎榜當年度銷售冠軍，被唱片業界視為國語唱片市場的典範，屬華語流行史核心文獻。",
+        "reason": "店主 2026-11-03 定案殿堂擴充（hall-expansion-20261103）：升為殿堂。",
         "evidenceUrls": [
-          "https://zh.wikipedia.org/wiki/天空_(王靖雯專輯)",
-          "https://zh.wikipedia.org/wiki/台灣流行音樂200最佳專輯"
-        ]
+          "https://www.last.fm/music/%E7%8E%8B%E8%8F%B2/%E5%A4%A9%E7%A9%BA",
+          "https://musicbrainz.org/release-group/2a5a3e99-a8b0-321f-b789-78d780aede72"
+        ],
+        "previous": {
+          "eligible": false,
+          "tier": null,
+          "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。華語流行名盤，單一地區經典止於5",
+          "evidenceUrls": [],
+          "source": "manual:audit-20261102"
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:hall-expansion-20261103"
       },
       "description": {
-        "text": "一九九四年十一月十日以「王靖雯」之名發行，香港新藝寶、台灣福茂出品，楊明煌製作、屠穎編曲。十首歌名一律取兩字，除改編 The Cranberries〈Dreams〉的〈掙脫〉與竇唯編曲的〈誓言〉外全是台灣音樂人原創，擺脫了港星赴台把粵語舊歌重填國語詞的慣例。福茂當時代理 Decca，錄音講究，隔年拿下第七屆金曲獎最佳演唱錄音專輯獎，也在「台灣流行音樂200最佳專輯」列第十六名。",
+        "text": "《天空》是王菲的第二張國語專輯，〈天空〉〈棋子〉〈天使〉讓她知名度大增，是她成為天后的重要一步，也被唱片業界視為國語唱片的典範之作。1994 年由新藝寶與福茂發行，除兩首外全是台灣音樂人原創，不再沿用港星把粵語舊歌重填國語詞的做法。楊明煌製作並作曲〈天空〉〈棋子〉，〈天使〉是黃舒駿詞曲，編曲多出自屠穎；〈掙脫〉改編 The Cranberries 的〈Dreams〉，編成英式搖滾，〈誓言〉由竇唯編曲。歌名一律兩個字，另收一版 unplugged 的〈天空〉。專輯在第 7 屆金曲獎入圍年度專輯與最佳演唱錄音專輯。",
         "sourceUrls": [
           "https://zh.wikipedia.org/wiki/天空_(王靖雯專輯)",
           "https://en.wikipedia.org/wiki/Sky_(Faye_Wong_album)",
@@ -5088,7 +5407,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/5d/69/db/5d69db14-0248-6d5e-a4ad-982cd28f472b/mzaf_12213022199502607748.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/9b/98/cd/9b98cded-cd64-8965-02d5-7110eb375a82/mzaf_4287070833833000163.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T05:03:23Z",
@@ -5204,7 +5523,7 @@
         "checkedAt": "2026-08-23T05:03:23Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；英文維基載評論界視其為崔健的 magnum opus，二〇〇〇年《精品購物指南》列入「中國十大經典搖滾專輯」；八首多在七、八分鐘、爵士與放克即興比重高、含純器樂曲，傳唱度有限而編排晦澀。"
       },
-      "rarity": "epic",
+      "rarity": "legendary",
       "apexAssessment": {
         "eligible": true,
         "tier": "hall",
@@ -5224,7 +5543,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/71/36/6b/71366be6-99e7-71e4-e1d8-2bd4df64915a/mzaf_6522831236193797596.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/7e/37/60/7e3760db-2caf-87a9-5ffd-aaef8c85467b/mzaf_7744149939402491781.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T05:03:23Z",
@@ -5346,7 +5665,7 @@
         "checkedAt": "2026-08-23T05:03:23Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；竇唯主唱時期唯一的錄音室專輯，〈無地自容〉〈Don't Break My Heart〉是中國搖滾傳唱度最高的曲目之一；硬式搖滾骨架配直白旋律線，入耳不難，但「中國第一搖滾專輯」與百萬銷量之說在中文維基仍掛缺乏來源標記。"
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -5484,7 +5803,7 @@
         "checkedAt": "2026-08-23T05:03:23Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；竇唯轉向氛圍與電子語彙的起點，在其目錄中位置明確但知名度遠低於《黑夢》，多為深度愛好者才會追到；曲式鬆散、短過門串接，入耳難度中等。"
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -5501,7 +5820,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/db/3f/1d/db3f1d94-af4d-0ef6-21dd-bb9db5cb1a17/mzaf_11116268438950364076.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/3d/0e/de/3d0edea6-28b2-69af-1c0c-3dd52ccf9380/mzaf_9555032557814831977.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T05:03:23Z",
@@ -5552,7 +5871,7 @@
         "checkedAt": "2026-08-23T05:03:23Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；魔岩三傑之一，「台灣流行音樂200最佳專輯」第二部分第六十九名，是九〇年代中國搖滾詩性寫作的代表樣本；編制簡單、旋律清楚，入耳門檻低於竇唯與何勇同期作。"
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -5569,7 +5888,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/6f/a7/ad/6fa7ad4d-149f-f3fd-0980-ddd5f559b40e/mzaf_11957501353003291087.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ac/52/94/ac529472-7030-aae8-4e90-c864b36652f2/mzaf_18380031469193347947.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T05:03:23Z",
@@ -5637,7 +5956,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/98/22/32/982232a3-2217-fd01-3908-a4ab3dc5768f/mzaf_10209556235255779494.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d5/64/0e/d5640e58-a328-63e6-6690-fc09b39147dd/mzaf_7124561893295419627.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T05:03:23Z",
@@ -5694,7 +6013,7 @@
         "checkedAt": "2026-08-23T05:03:23Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；魔岩「中國火」品牌的建制合輯，張楚〈姊姊〉、唐朝〈飛翔鳥〉首度出版於此，樂史位置明確；1992 年滾石台版流通有限，一般玩家不易撞見，曲目多為旋律清楚的硬搖滾與抒情搖滾。"
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -5761,7 +6080,7 @@
         "checkedAt": "2026-08-23T05:03:23Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；世紀之交中國大陸民謠搖滾的代表首專，〈那些花兒〉〈白樺林〉被王菲、林憶蓮、吳青峰等反覆翻唱；華語圈知名度高但台灣多為樂迷領域，編曲與旋律直白好入耳。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -5777,7 +6096,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/e2/9f/14/e29f147b-1851-74b4-7695-481999ee0975/mzaf_3654373103244529790.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e0/13/98/e01398b2-bc02-a281-b51a-afd4d0731da9/mzaf_4019584854426934720.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T05:03:23Z",
@@ -5845,7 +6164,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/28/8f/d3/288fd39f-625f-c676-1e4d-40998fc51427/mzaf_10100207623498730716.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/4d/52/08/4d5208fe-a7dc-87d9-8df4-fd192a6deb7d/mzaf_6240500329097749391.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T05:03:23Z",
@@ -5912,7 +6231,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/82/23/b5/8223b559-09e9-5045-364c-bc10e4326399/mzaf_8947042097303601862.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/71/a0/49/71a0497a-1113-d162-e951-725a9e0e4a81/mzaf_12006978695052708574.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T05:03:23Z",
@@ -5963,7 +6282,7 @@
         "checkedAt": "2026-08-23T05:03:23Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；旺福出道作，前一年剛拿海洋音樂祭評審團大賞，是台灣獨立流行諧趣路線的起點但非其代表作；自資發行、流通量小，屬深度愛好者領域，曲子短小旋律直白。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -5979,7 +6298,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/1d/82/59/1d825941-01a0-7e5a-eb98-6c34148553ac/mzaf_15621809364860728136.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/bb/a6/f1/bba6f1fd-7628-ea79-4879-922f04bd6552/mzaf_464122205813837204.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T05:03:23Z",
@@ -6094,7 +6413,7 @@
         "checkedAt": "2026-08-23T05:03:23Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；金曲最佳新人獎作品、新世代唱作人指標首專，地位明確但尚非世代代表作；主流發行、串流可得而屬樂迷領域，旋律與口語化中文詞直白好入耳。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -6110,7 +6429,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ad/19/0d/ad190d0e-f8f1-2454-b7ec-fe295a9041e6/mzaf_2085733638795003078.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/fc/60/f3/fc60f309-2a5f-7d1a-ecf9-4fe1b8f564e4/mzaf_18198700910528741150.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T05:03:23Z",
@@ -6161,7 +6480,7 @@
         "checkedAt": "2026-08-23T05:03:23Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；韋瓦第計畫四張中最受推崇的一張，入圍第 21 屆金曲獎最佳樂團，是蘇打綠概念專輯路線的高點；主流大牌大量流通，編曲有實驗段落但整體仍在流行搖滾範圍。"
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -6177,7 +6496,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/82/54/5f/82545fdf-5eac-d0cf-e410-46767779cfcc/mzaf_5084617242769528307.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/af/e4/a2/afe4a248-b4cb-654b-bb28-01e62a72b83a/mzaf_16467932092276738014.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T05:03:23Z",
@@ -6228,7 +6547,7 @@
         "checkedAt": "2026-08-23T05:03:23Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；名列台灣流行音樂 200 最佳專輯第 93 名，並獲中華音樂人交流協會第六屆十大專輯，是陳綺貞魔岩時期的關鍵作；大牌長銷、串流普及，木吉他為主的編曲直白好入耳。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -6244,7 +6563,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/e1/d2/9f/e1d29f16-ff8d-eeb9-5faa-635efeaab92e/mzaf_16742408480349879147.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/34/5c/6f/345c6f7a-3fc7-c085-86b6-394c919995fc/mzaf_2568625725453958612.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T05:03:23Z",
@@ -6295,7 +6614,7 @@
         "checkedAt": "2026-08-23T05:03:23Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；張懸創作成熟期作品，憑此首度入圍第 21 屆金曲獎最佳國語女歌手，有明確地位但非其最常被提起的一張；主流發行而偏樂迷領域，編曲以樂團編制為主、入耳難度普通。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -6311,7 +6630,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/00/ed/32/00ed3293-cc1c-9b5d-8aea-8596cd23aad8/mzaf_1761274496359899429.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/09/a1/7f/09a17fe2-20ba-a8ec-6c53-09ae176bb3de/mzaf_9155462909043371125.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T05:03:23Z",
@@ -6378,7 +6697,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/c8/ab/92/c8ab9281-74ac-634a-ee14-5cc135dd952c/mzaf_2060480550031293804.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/01/54/1a/01541ac4-bb4b-5102-8409-a16d5c6c195d/mzaf_17019185974226931024.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T05:03:23Z",
@@ -6467,7 +6786,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/8f/20/ab/8f20ab06-e698-4a37-62a6-bf7bd9ea0e76/mzaf_15061447246085823697.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e0/74/64/e0746452-ce2a-0b52-a5ec-21b000ad7774/mzaf_3356952676889826230.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T05:03:23Z",
@@ -6518,7 +6837,7 @@
         "checkedAt": "2026-08-23T05:03:23Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；以卑南語專輯拿下第 28 屆金曲獎年度專輯獎，是原住民語音樂獲主流最高肯定的指標作；風潮發行、串流可得而屬樂迷領域，吟唱旋律清楚、入耳難度不高。"
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -6534,7 +6853,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/71/2b/aa/712baa79-2337-6266-8944-4ddde88f8a4d/mzaf_11087535468439185121.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6f/31/67/6f3167db-3760-a1ce-6bf1-addc0d3c3c3b/mzaf_17720652492854691566.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T05:03:23Z",
@@ -6578,13 +6897,22 @@
         "visuallyVerified": true
       },
       "ratings": {
-        "classic": 4,
-        "obscurity": 3,
+        "classic": 5,
+        "obscurity": 4,
         "accessibility": 2,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-23T05:03:23Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；金曲最佳原住民語專輯獎與最佳專輯製作人獎作品，排灣語流行化的關鍵一步，但傳播仍集中在台灣原民音樂圈；電子流行編制入耳不難。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：金曲獎最佳專輯，排灣族語電子｜L=40",
+        "previous": {
+          "classic": 4,
+          "obscurity": 3,
+          "accessibility": 2,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-23T05:03:23Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；金曲最佳原住民語專輯獎與最佳專輯製作人獎作品，排灣語流行化的關鍵一步，但傳播仍集中在台灣原民音樂圈；電子流行編制入耳不難。",
+          "rarity": "rare"
+        }
       },
       "rarity": "uncommon",
       "apexAssessment": {
@@ -6602,7 +6930,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c8/b1/e9/c8b1e918-eb54-3f70-0f57-8865476efd96/mzaf_11366330003126079809.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/72/fd/cf/72fdcfc6-0f9b-73b5-0cf1-574775834888/mzaf_3510213615660954281.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T05:03:23Z",
@@ -6656,14 +6984,22 @@
       },
       "rarity": "uncommon",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "2020 年第 31 屆金曲獎同時拿下年度專輯獎與年度歌曲獎，另獲第 11 屆金音創作獎最佳專輯、中華音樂人交流協會年度十大專輯、第 20 屆南方音樂盛典最佳世界音樂專輯與文藝復興音樂獎，跨機構長期共識足列台灣原住民語流行音樂史上核心。",
-        "evidenceUrls": [
-          "https://zh.wikipedia.org/wiki/Kinakaian_母親的舌頭",
-          "https://zh.wikipedia.org/wiki/年度專輯獎_(金曲獎)",
-          "https://musicbrainz.org/release-group/ce0b3b6e-7947-4512-83ce-352f2e1a6c62"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。金曲年度專輯，族語電子佳作，非跨類型史上正典",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "2020 年第 31 屆金曲獎同時拿下年度專輯獎與年度歌曲獎，另獲第 11 屆金音創作獎最佳專輯、中華音樂人交流協會年度十大專輯、第 20 屆南方音樂盛典最佳世界音樂專輯與文藝復興音樂獎，跨機構長期共識足列台灣原住民語流行音樂史上核心。",
+          "evidenceUrls": [
+            "https://zh.wikipedia.org/wiki/Kinakaian_母親的舌頭",
+            "https://zh.wikipedia.org/wiki/年度專輯獎_(金曲獎)",
+            "https://musicbrainz.org/release-group/ce0b3b6e-7947-4512-83ce-352f2e1a6c62"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "十一首排灣語歌的詞幾乎全由阿爆與母親王秋蘭（愛靜）合寫，黃少雍與阿爆共同製作，編曲大半交給 Dizparity。〈tjakudain 無奈〉把排灣古謠 tjakudain 疊上李英宏的唸唱，同名曲取古謠 sinacealjan 為底，〈minetjus 嚇一跳〉找 Oberka 加入，〈1-10〉用族語數數當骨架。2020 年第 31 屆金曲獎拿下年度專輯獎，〈Thank You 感謝〉再得年度歌曲獎，同年並獲金音創作獎最佳專輯。",
@@ -6675,7 +7011,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/50/72/d6/5072d6f0-5ecc-b2c8-4dc0-c58582c8486d/mzaf_2163052326378246109.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b2/88/f1/b288f119-67b2-5709-6a6c-0accb28eb7c6/mzaf_17131641363303834141.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T05:03:23Z",
@@ -6696,8 +7032,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": false,
-        "apexPool": true
+        "seedCards": true,
+        "apexPool": false
       }
     },
     {
@@ -6727,7 +7063,7 @@
         "checkedAt": "2026-08-23T05:03:23Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；一張首專同時拿下金曲最佳新人、最佳原住民語歌手與最佳原住民語專輯三獎，地位明確；但獨立發行、流通有限，多在原民與民謠愛好者之間流傳。"
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -6743,7 +7079,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/Music/v4/bf/56/6e/bf566e02-0098-d3d5-a4b3-886d7f431bc5/mzaf_5119044412292105907.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/Music/v4/4d/53/13/4d5313d1-27f1-e1a0-6c34-c7d82a1942e5/mzaf_6102285193267744278.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T05:03:23Z",
@@ -6789,13 +7125,22 @@
       "ratings": {
         "classic": 5,
         "obscurity": 3,
-        "accessibility": 3,
+        "accessibility": 2,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-23T05:03:23Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；第16屆金曲獎最佳客語專輯獎、最佳樂團獎與最佳作詞人獎三獎作品，是交工樂隊解散後客語新民謠的接續點，樂史地位跨來源可查；客語敘事密度高、月琴與無琴格貝斯的音色偏素，入耳要一點適應。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：林生祥／生祥樂隊代表作之一，客語民謠搖滾",
+        "previous": {
+          "classic": 5,
+          "obscurity": 3,
+          "accessibility": 3,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-23T05:03:23Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；第16屆金曲獎最佳客語專輯獎、最佳樂團獎與最佳作詞人獎三獎作品，是交工樂隊解散後客語新民謠的接續點，樂史地位跨來源可查；客語敘事密度高、月琴與無琴格貝斯的音色偏素，入耳要一點適應。",
+          "rarity": "epic"
+        }
       },
-      "rarity": "epic",
+      "rarity": "uncommon",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -6952,7 +7297,7 @@
         "checkedAt": "2026-08-23T05:03:23Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；第31屆金曲獎最佳客語專輯獎與最佳客語歌手獎雙料得主，另獲第11屆金音創作獎最佳民謠專輯獎與2019年度十大專輯，是新世代客語創作的定位之作；三件式民謠編制乾淨好入耳，客語歌詞是唯一門檻。"
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -6969,7 +7314,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/69/59/9a/69599a4f-3b7b-b74e-36f0-a5e12d8813d6/mzaf_11113466945042248199.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/00/bf/c3/00bfc345-d853-457b-57c8-a27d5ae47ebf/mzaf_10643023342182265486.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T05:03:23Z",
@@ -7011,24 +7356,41 @@
         "note": "原圖是手持實體紙盒的側拍（露出手指與背景反光、右下圓形貼紙，250×232）。改用 Apple 台灣商店 268994777〈Standing Alone Under the Flowers〉(Xie Yu-wei，即本盤 2007 數位版，13 軌＝原盤 10 軌＋3 首伴唱) 官方封面 1000x1000bf。已下載目視：1000×1000（bf 上下補黑邊，美術完整未裁），黑底平面掃圖，謝宇威黑白半身肖像手撐額頭，左下橘色書法「一儕〔í-sa〕・花樹下」與藍色橢圓印章式「謝宇威」（屬封面設計，非貼紙）；無手指、無背景反光、無紙盒邊、無外貼圓標。"
       },
       "ratings": {
-        "classic": 5,
+        "classic": 4,
         "obscurity": 4,
         "accessibility": 2,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-23T05:03:23Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；金曲最佳客語演唱人獎作品，並在《台灣流行音樂 200 最佳專輯》名列第 34、是榜上名次最高的客語專輯；然而客語唱片流通窄，實體難尋。"
+        "source": "manual:audit-20261102",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "全池稽核 audit-20261102（方案 C）：客語金曲獎作品，場景重要但非殿堂；經典度 5→4",
+        "previous": {
+          "classic": 5,
+          "obscurity": 4,
+          "accessibility": 2,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-23T05:03:23Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；金曲最佳客語演唱人獎作品，並在《台灣流行音樂 200 最佳專輯》名列第 34、是榜上名次最高的客語專輯；然而客語唱片流通窄，實體難尋。",
+          "rarity": "uncommon"
+        }
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
-        "eligible": true,
-        "tier": "hall",
-        "reason": "2004 年第 15 屆金曲獎最佳客語演唱人獎，並同時入圍最佳專輯製作人與最佳流行音樂演唱專輯；陶曉清、馬世芳、葉雲平主編的《台灣流行音樂 200 最佳專輯》將其列為第 34 名，高於交工樂隊《菊花夜行軍》與《我等就來唱山歌》，是該書榜上名次最高的客語作品，跨來源共識足列客語流行音樂核心。",
-        "evidenceUrls": [
-          "https://zh.wikipedia.org/wiki/謝宇威",
-          "https://zh.wikipedia.org/wiki/台灣流行音樂200最佳專輯",
-          "https://musicbrainz.org/release-group/c3165788-2643-3d1e-ac92-279b3b402610"
-        ]
+        "eligible": false,
+        "tier": null,
+        "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。客語流行佳作，區域類型作品，遠不到跨類型正典",
+        "evidenceUrls": [],
+        "previous": {
+          "eligible": true,
+          "tier": "hall",
+          "reason": "2004 年第 15 屆金曲獎最佳客語演唱人獎，並同時入圍最佳專輯製作人與最佳流行音樂演唱專輯；陶曉清、馬世芳、葉雲平主編的《台灣流行音樂 200 最佳專輯》將其列為第 34 名，高於交工樂隊《菊花夜行軍》與《我等就來唱山歌》，是該書榜上名次最高的客語作品，跨來源共識足列客語流行音樂核心。",
+          "evidenceUrls": [
+            "https://zh.wikipedia.org/wiki/謝宇威",
+            "https://zh.wikipedia.org/wiki/台灣流行音樂200最佳專輯",
+            "https://musicbrainz.org/release-group/c3165788-2643-3d1e-ac92-279b3b402610"
+          ]
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:audit-20261102"
       },
       "description": {
         "text": "謝宇威是畫家謝孝德之子，文化大學美術系出身，1992 年以客語創作〈問卜歌〉拿下大學城全國創作音樂大賽首獎、最佳作曲與最佳演唱三項，後任寶島客家電台音樂總監。2003 年威德文化發行的十曲客語專輯，〈月光光〉〈山歌〉自客庄舊調而來，〈十八姑娘〉客語版是他流傳最廣的一首。隔年為他贏得第 15 屆金曲獎最佳客語演唱人獎，另入圍最佳專輯製作人與最佳流行音樂演唱專輯。",
@@ -7040,7 +7402,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/Music/ef/0f/0c/mzm.oaiyakzw.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/Music/7c/4e/1c/mzm.jnkykckj.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T05:03:23Z",
@@ -7061,8 +7423,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": false,
-        "apexPool": true
+        "seedCards": true,
+        "apexPool": false
       }
     },
     {
@@ -7091,7 +7453,7 @@
         "checkedAt": "2026-08-23T05:03:23Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；馬來西亞創作雙人組進軍台灣的起點，光良與品冠日後各自成名使它有明確位置，但本身不是公認的關鍵唱片；旋律直白好入耳。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -7158,7 +7520,7 @@
         "checkedAt": "2026-08-23T05:03:23Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；同名曲是 2000 年代中期華語圈傳播最廣的歌之一，也是光良個人代表作；大眾曲目配大牌歌手，旋律直白。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -7174,7 +7536,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/c0/10/87/c0108736-b730-4a76-3a08-835bade1fa9b/mzaf_12100927985895755287.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/cd/6a/0d/cd6a0d51-bc88-01dc-f3ab-acc7e315f84b/mzaf_12382882328959368849.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T05:03:23Z",
@@ -7231,7 +7593,7 @@
         "checkedAt": "2026-08-23T05:03:23Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；當年台灣最暢銷唱片之一，也是巫啟賢生涯定位作，但形式是情歌回顧集而非原創專輯，樂史地位止於「有明確位置」；情歌旋律直白。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -7248,7 +7610,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/14/f1/11/14f111c0-faeb-bf26-6039-6d47d1f27239/mzaf_6459632223395462440.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d1/d0/38/d1d0385b-43c8-c30a-8e2b-85137cfc405d/mzaf_6732983836159429465.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-23T05:03:23Z",
@@ -7299,7 +7661,7 @@
         "checkedAt": "2026-08-23T05:03:23Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；《台灣流行音樂 200 最佳專輯》第 64 名、全亞洲百萬銷量，是梁靜茹的成名決定作；同名曲屬大眾曲目，入耳無門檻。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -7367,7 +7729,7 @@
         "checkedAt": "2026-08-23T05:03:23Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；全盛期代表作，〈寧夏〉是她流傳最廣的曲目之一並拿下年度金曲，作者群含五月天與陶喆；大眾曲目、旋律直白。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -7434,7 +7796,7 @@
         "checkedAt": "2026-08-23T05:03:23Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；新加坡沙啞聲線在千禧年華語市場的代表首作，入圍金曲最佳新人；有明確特色但非樂史關鍵唱片，曲目屬大眾曲目。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -7501,7 +7863,7 @@
         "checkedAt": "2026-08-23T05:03:23Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；《台灣流行音樂 200 最佳專輯》第 57 名，新加坡都會女聲的代表作，陳佳明詞曲製作一手包辦；歌本身直白好入耳，唱片流通已不算常見。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -7566,7 +7928,7 @@
         "checkedAt": "2026-08-23T05:03:23Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；陳潔儀進軍台灣的首張作品，主打歌搭八點檔而流行一時，有明確位置但非關鍵唱片；如今已屬要翻舊貨才會撞見的名字。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,

@@ -1,0 +1,391 @@
+{
+ "group": "sf06a",
+ "factions": [
+  {
+   "id": "hk-indie",
+   "zh": "香港獨立／搖滾",
+   "count": 2,
+   "why": ""
+  },
+  {
+   "id": "cn-rock",
+   "zh": "中國搖滾製作人",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "jp-aor",
+   "zh": "日本 AOR",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "tw-rock",
+   "zh": "台灣搖滾／流行",
+   "count": 2,
+   "why": ""
+  },
+  {
+   "id": "cn-indie",
+   "zh": "中國獨立／電子",
+   "count": 2,
+   "why": ""
+  },
+  {
+   "id": "tw-ambient",
+   "zh": "台灣氛圍／實驗",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "krautrock",
+   "zh": "德國 Krautrock",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "cn-hiphop",
+   "zh": "中國嘻哈／實驗電子",
+   "count": 1,
+   "why": ""
+  }
+ ],
+ "albums": [
+  {
+   "label": "",
+   "mbRgMbid": "d1ddb824-fb47-3cca-ac90-df9423b3aa5c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 標 Compilation；封面僅 Discogs master；池中有達明一派但劉以達另立，不算已有",
+   "artist": "劉以達",
+   "album": "麻木",
+   "year": 1996,
+   "country": "hk",
+   "faction": "hk-indie",
+   "genres": [
+    "rock",
+    "electronic"
+   ],
+   "why": "達明一派吉他手／作曲人的首張個人專輯，粵語搖滾與電子實驗的代表作。",
+   "moodGuess": {
+    "x": -0.3,
+    "y": -0.4,
+    "z": 0.4,
+    "why": "陰鬱電子與吉他、略帶迷幻"
+   },
+   "evidence": [
+    "https://www.discogs.com/master/3488311",
+    "https://musicbrainz.org/release-group/d1ddb824-fb47-3cca-ac90-df9423b3aa5c"
+   ],
+   "spotifyName": "劉以達"
+  },
+  {
+   "label": "GDJYB Independent",
+   "mbRgMbid": "03ca41f5-79b5-4f7e-a82c-0f9f315a1166",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 首發 2017-01-21，Wikipedia 為 2016-12-17，年份用 2016",
+   "artist": "雞蛋蒸肉餅",
+   "album": "23:59 Before Tomorrow",
+   "year": 2016,
+   "country": "hk",
+   "faction": "hk-indie",
+   "genres": [
+    "rock"
+   ],
+   "why": "香港全女子樂團首張正規專輯，獲 2017 香港樂評選年度樂團並入圍金曲獎最佳樂團。",
+   "moodGuess": {
+    "x": 0.2,
+    "y": 0.2,
+    "z": 0.5,
+    "why": "中性風搖滾、帶電子與舞曲脈衝"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/03ca41f5-79b5-4f7e-a82c-0f9f315a1166/front",
+    "https://music.apple.com/tw/album/23-59-before-tomorrow/1716818460"
+   ],
+   "spotifyName": "GDJYB 雞蛋蒸肉餅"
+  },
+  {
+   "label": "Wings Music",
+   "mbRgMbid": "b98782c5-185a-4163-807a-c7bacdce19da",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "张亚东",
+   "uncertain": "MB 首發日 1999-05-13，Wikipedia 與 Apple 為 1998；封面用 Apple（CAA 無）",
+   "artist": "張亞東",
+   "album": "Ya Tung",
+   "year": 1998,
+   "country": "cn",
+   "faction": "cn-rock",
+   "genres": [
+    "electronic",
+    "rock"
+   ],
+   "why": "王菲御用製作人的首張個人專輯，電子與實驗搖滾，其個人作品中最被提及者。",
+   "moodGuess": {
+    "x": 0,
+    "y": -0.2,
+    "z": 0.6,
+    "why": "電子節拍加迷幻吉他，疏離冷調"
+   },
+   "evidence": [
+    "https://music.apple.com/tw/album/ya-tung/53494409",
+    "https://www.allmusic.com/album/ya-tung-mw0000330036"
+   ],
+   "spotifyName": "Chang Ya Tung"
+  },
+  {
+   "label": "Moon Records",
+   "mbRgMbid": "fbf13ff8-ffcb-3d12-9e54-bd739b31686a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "AB's",
+   "uncertain": "MB 名為 AB’s；廠牌為 Moon Records 係據 AB'S-2 推定",
+   "artist": "AB'S",
+   "album": "AB'S",
+   "year": 1983,
+   "country": "jp",
+   "faction": "jp-aor",
+   "genres": [
+    "rock",
+    "pop"
+   ],
+   "why": "芳野藤丸、松下誠等組成的日本 AOR 樂團首張專輯，城市流行的代表。",
+   "moodGuess": {
+    "x": 0.5,
+    "y": -0.3,
+    "z": 0.3,
+    "why": "明亮 AOR、吉他與合成器"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/fbf13ff8-ffcb-3d12-9e54-bd739b31686a/front",
+    "https://music.apple.com/tw/album/abs-2-2023-remaster/1661080695"
+   ],
+   "spotifyName": "AB'S"
+  },
+  {
+   "label": "",
+   "mbRgMbid": "8b7ef6ac-f2ab-4865-b66c-6f0f2dcb0118",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "風格據推測，聲音未驗證",
+   "artist": "Everfor",
+   "album": "空中閣樓",
+   "year": 2021,
+   "country": "tw",
+   "faction": "tw-rock",
+   "genres": [
+    "pop",
+    "rock"
+   ],
+   "why": "台灣創作者蘇偉安 Everfor 的首張專輯，也是 MB 上唯一正規專輯。",
+   "moodGuess": {
+    "x": 0.3,
+    "y": 0.3,
+    "z": 0.4,
+    "why": "輕盈夢幻的流行搖滾"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/8b7ef6ac-f2ab-4865-b66c-6f0f2dcb0118/front",
+    "https://music.apple.com/tw/album/%E7%A9%BA%E4%B8%AD%E9%96%A3%E6%A8%93/1818394415"
+   ],
+   "spotifyName": "Everfor"
+  },
+  {
+   "label": "",
+   "mbRgMbid": "3f6e759d-f253-46ac-9668-55bdd7a23403",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "6 首長 EP，為目前唯一主要作品",
+   "queryAlias": "",
+   "uncertain": "無正規專輯，靠 releaseException 收；MB 標 EP",
+   "artist": "Kaishandao",
+   "album": "Homeland",
+   "year": 2021,
+   "country": "cn",
+   "faction": "cn-indie",
+   "genres": [
+    "electronic"
+   ],
+   "why": "成都製作人 Kristen Ng 的主要作品，6 首長 EP，也是 MB 上唯一一張。",
+   "moodGuess": {
+    "x": -0.2,
+    "y": 0.1,
+    "z": 0.7,
+    "why": "實驗電子，顆粒質感與氛圍"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/3f6e759d-f253-46ac-9668-55bdd7a23403/front",
+    "https://music.apple.com/tw/album/homeland/6786099119"
+   ],
+   "spotifyName": "Kaishandao"
+  },
+  {
+   "label": "相信音樂",
+   "mbRgMbid": "bff94efd-6eac-44b3-8ae6-755807037603",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "亂彈阿翔",
+   "uncertain": "Apple 版標題含「十年幕後創作精華」副題；MB 2011，維基 2012-02-03；MB 無封面，Apple 有。Luantan Ascent 由維基連結推定",
+   "artist": "乱彈阿翔",
+   "album": "把我換成你",
+   "year": 2011,
+   "country": "tw",
+   "faction": "tw-rock",
+   "genres": [
+    "pop",
+    "rock"
+   ],
+   "why": "以幕後創作人身分累積十年後的專輯，獲金曲獎最佳國語男歌手。",
+   "moodGuess": {
+    "x": 0,
+    "y": 0,
+    "z": 0.1,
+    "why": "溫厚民謠搖滾，抒情中帶沙啞"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/bff94efd-6eac-44b3-8ae6-755807037603",
+    "https://music.apple.com/tw/album/%E6%8A%8A%E6%88%91%E6%8F%9B%E6%88%90%E4%BD%A0-%E5%8D%81%E5%B9%B4%E5%B9%95%E5%BE%8C%E5%89%B5%E4%BD%9C%E7%B2%BE%E8%8F%AF-%E9%9B%BB%E5%BD%B1%E9%9B%BB%E8%A6%96%E4%B8%BB%E9%A1%8C%E6%AD%8C%E6%9B%B2%E5%B0%88%E8%BC%AF/1535762054"
+   ],
+   "spotifyName": "Luantan Ascent"
+  },
+  {
+   "label": "",
+   "mbRgMbid": "2784d2ca-82bc-4692-b7a6-605b0675e5a0",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Lujiachi",
+   "uncertain": "",
+   "artist": "盧家齊",
+   "album": "Circle = 圆",
+   "year": 2016,
+   "country": "tw",
+   "faction": "tw-ambient",
+   "genres": [
+    "electronic",
+    "world"
+   ],
+   "why": "台灣氛圍／drone／部落電子藝人 Lujiachi 的首張專輯，也是唯一正規長專。",
+   "moodGuess": {
+    "x": -0.3,
+    "y": -0.2,
+    "z": 0.8,
+    "why": "drone 與部落打擊，催眠氛圍"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/2784d2ca-82bc-4692-b7a6-605b0675e5a0/front",
+    "https://musicbrainz.org/release-group/2784d2ca-82bc-4692-b7a6-605b0675e5a0"
+   ],
+   "spotifyName": "Lujiachi"
+  },
+  {
+   "label": "",
+   "mbRgMbid": "21aa44c4-a39f-4049-b40c-183f31fd6669",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Apple 僅 5 首；Spotify 的 Shaa Khan 是否即此德國團未能由 Spotify 端驗證，靠名稱唯一性判定",
+   "artist": "Shaa Khan",
+   "album": "The World Will End on Friday",
+   "year": 1978,
+   "country": "de",
+   "faction": "krautrock",
+   "genres": [
+    "rock",
+    "electronic"
+   ],
+   "why": "1970 年代德國 Krautrock 樂團唯一的時期專輯，MB 上最具代表。",
+   "moodGuess": {
+    "x": 0.1,
+    "y": 0.1,
+    "z": 0.6,
+    "why": "太空搖滾，合成器與重複節奏"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/21aa44c4-a39f-4049-b40c-183f31fd6669/front",
+    "https://music.apple.com/us/album/the-world-will-end-on-friday/1047702627"
+   ],
+   "spotifyName": "Shaa Khan"
+  },
+  {
+   "label": "",
+   "mbRgMbid": "3cf3fb65-1622-4d67-ae1b-1247b88efbd2",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "代表性依據薄（只有 Last.fm 簡介），第二張為 2022 Analog Love",
+   "artist": "The Cheers Cheers",
+   "album": "Carinae",
+   "year": 2016,
+   "country": "cn",
+   "faction": "cn-indie",
+   "genres": [
+    "rock"
+   ],
+   "why": "紹興夢幻流行／shoegaze 樂團的首張專輯。",
+   "moodGuess": {
+    "x": 0.2,
+    "y": -0.1,
+    "z": 0.7,
+    "why": "柔霧吉他與夢幻合成器"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/3cf3fb65-1622-4d67-ae1b-1247b88efbd2/front",
+    "https://www.last.fm/music/The+Cheers+Cheers"
+   ],
+   "spotifyName": "The Cheers Cheers"
+  },
+  {
+   "label": "",
+   "mbRgMbid": "8c5e16fd-176f-4ab4-bb58-999b6de5975e",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 作 hip hop producer；北京身分由 Apple 單曲名推定",
+   "artist": "Fishdoll",
+   "album": "Noonsense",
+   "year": 2018,
+   "country": "cn",
+   "faction": "cn-hiphop",
+   "genres": [
+    "hiphop",
+    "electronic"
+   ],
+   "why": "北京製作人 Fishdoll 的首張專輯，中式 lo-fi 嘻哈節拍的代表。",
+   "moodGuess": {
+    "x": 0,
+    "y": -0.2,
+    "z": 0.5,
+    "why": "採樣 lo-fi 節拍，慵懶迷幻"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/8c5e16fd-176f-4ab4-bb58-999b6de5975e/front",
+    "https://music.apple.com/us/album/noonsense/1322048332"
+   ],
+   "spotifyName": "Fishdoll"
+  }
+ ],
+ "notes": [
+  "跳過：無（15 位在 seed_cards／artist-intros／aliases 均無同名；劉以達與達明一派池中已有但為不同署名，劉以達單飛專輯另收）",
+  "不收：Ni Jay（MB 與 iTunes 皆查無可靠身分，無法確認是誰）",
+  "不收：Popstar Benny（美國 DIY 饒舌，MB 釘得住但無評論共識的代表正規專輯，且多為自行發行小品）",
+  "不收：Tracey（Spotify 名無法定位：Tracey Thorn 池中已有 1 張；荷蘭製作人 Tracey 僅 Biostar 一張無共識，身分不確）",
+  "不收：WHYNOT（同名多個：WHY NOT 2022 美國流行、Track45 前身等，無法確認 Spotify 所指，亦無共識代表作）",
+  "註：Luantan Ascent＝乱彈阿翔（維基連結 luantanascent 推定）；Chang Ya Tung＝張亞東（Ya Tung 1998 Wings Music，MB 有 b98782c5 掛名张亚东）",
+  "註：Everfor＝MB 蘇偉安 d201b27d；Apple 另有 2018《無人島》，僅收空中閣樓"
+ ]
+}

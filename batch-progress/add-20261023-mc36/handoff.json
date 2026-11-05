@@ -1,0 +1,35 @@
+{
+ "batch": "add-20261023-mc36",
+ "cards": 20,
+ "written": {
+  "cardCatalog": 20,
+  "kvKeys": 20,
+  "seedRows": 20,
+  "previewReady": 12,
+  "previewUnavailable": 8
+ },
+ "review": {
+  "by": "cloud-main",
+  "cards": 20,
+  "changed": [
+   "desc2:John Zorn|The Classic Guide to Strategy - Volume Two",
+   "desc2:Derek Bailey, George Lewis & John Zorn|Yankees",
+   "desc2:Bob Ostertag|Say No More",
+   "desc2:Lithics|Mating Surfaces"
+  ]
+ },
+ "qa": {
+  "research": "pass",
+  "hooks": "pass",
+  "out": "pass",
+  "prepareGate": "0 error",
+  "publishedGate": "0 error"
+ },
+ "pendingLocal": {
+  "kv": "無",
+  "listeners": [],
+  "apexEvidence": [],
+  "genreTree": "已重建",
+  "albumOverrides": "無"
+ }
+}

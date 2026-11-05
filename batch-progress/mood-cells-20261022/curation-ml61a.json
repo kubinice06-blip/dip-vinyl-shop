@@ -1,0 +1,787 @@
+{
+ "group": "ml61a",
+ "factions": [
+  {
+   "id": "warm-idm",
+   "zh": "暖 IDM／braindance 慢盤",
+   "count": 12,
+   "why": ""
+  },
+  {
+   "id": "japan-warm-electronic",
+   "zh": "日本暖電子",
+   "count": 8,
+   "why": ""
+  },
+  {
+   "id": "warm-downtempo",
+   "zh": "暖 downtempo／IDM 錨點同人",
+   "count": 7,
+   "why": ""
+  }
+ ],
+ "albums": [
+  {
+   "artist": "Ulrich Schnauss",
+   "album": "No Further Ahead Than Tomorrow",
+   "year": 2020,
+   "label": "Scripted Realities",
+   "country": "de",
+   "faction": "warm-idm",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Schnauss 晚期電子 shoegaze 專輯，同人池中三張皆落恍惚；和弦暖、旋律清楚，合成器霧包覆。",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.2,
+    "z": 0.6,
+    "why": "慢中速鼓機，厚合成器牆與殘響吉他，旋律明亮溫暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/09bd1ccb-4183-43e7-8776-9bf1d690c6cd",
+    "https://coverartarchive.org/release-group/09bd1ccb-4183-43e7-8776-9bf1d690c6cd"
+   ],
+   "mbRgMbid": "09bd1ccb-4183-43e7-8776-9bf1d690c6cd",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Ulrich Schnauss & Jonas Munk",
+   "album": "Epic",
+   "year": 2010,
+   "label": "Pedigree Cuts",
+   "country": "de",
+   "faction": "warm-idm",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Schnauss 與 Munk 的合作專輯，電子 shoegaze 的厚霧與清楚和弦，同路線池中同人已落恍惚。",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 1.3,
+    "z": 0.5,
+    "why": "合成器與吉他殘響疊成暖霧，鼓機鬆，旋律明確"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/b1c69636-e197-431b-8a77-8c15f4b0b45b",
+    "https://coverartarchive.org/release-group/b1c69636-e197-431b-8a77-8c15f4b0b45b"
+   ],
+   "mbRgMbid": "b1c69636-e197-431b-8a77-8c15f4b0b45b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Ulrich Schnauss & Jonas Munk",
+   "album": "Eight Fragments of an Illusion",
+   "year": 2021,
+   "label": "Azure Vista Records",
+   "country": "de",
+   "faction": "warm-idm",
+   "genres": [
+    "electronic"
+   ],
+   "why": "兩人第二張合作，偏 ambient 的暖霧版本，無強拍而仍有厚層次，同路線池中同人落恍惚。",
+   "moodGuess": {
+    "x": 2,
+    "y": 1.2,
+    "z": 0.5,
+    "why": "幾乎無鼓，厚合成器墊與吉他殘響，和弦暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/93a06bb3-0422-43b4-8ebb-cb6256a3fa83",
+    "https://coverartarchive.org/release-group/93a06bb3-0422-43b4-8ebb-cb6256a3fa83"
+   ],
+   "mbRgMbid": "93a06bb3-0422-43b4-8ebb-cb6256a3fa83",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Ulrich Schnauss & Mark Peters",
+   "album": "Destiny Waiving",
+   "year": 2021,
+   "label": "Bureau B",
+   "country": "de",
+   "faction": "warm-idm",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Schnauss 與 Peters 的 ambient 合作，池中姊妹作《Underrated Silence》已落恍惚。",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 1.1,
+    "z": 0.5,
+    "why": "長音合成器墊與殘響吉他，節拍極淡，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/2ed773dc-57f3-4c87-b5a4-7475a51e6fc8",
+    "https://coverartarchive.org/release-group/2ed773dc-57f3-4c87-b5a4-7475a51e6fc8"
+   ],
+   "mbRgMbid": "2ed773dc-57f3-4c87-b5a4-7475a51e6fc8",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Bibio",
+   "album": "Hand Cranked",
+   "year": 2006,
+   "label": "Mush Records",
+   "country": "gb",
+   "faction": "warm-idm",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bibio 早期磁帶糊的 lo-fi 民謠電子，嗡嗡帶噪與取樣吉他，池中《Ambivalence Avenue》落恍惚。",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 1,
+    "z": 0.8,
+    "why": "lo-fi 磁帶飽和、塵粒取樣、鬆散節拍，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/662f6134-c6e9-3869-ad67-3bdee1bfeb1c",
+    "https://coverartarchive.org/release-group/662f6134-c6e9-3869-ad67-3bdee1bfeb1c"
+   ],
+   "mbRgMbid": "662f6134-c6e9-3869-ad67-3bdee1bfeb1c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "質地可能判輕（池中 Bibio 多半落放鬆）；Ambivalence Avenue 才 0.6"
+  },
+  {
+   "artist": "Bibio",
+   "album": "Phantom Brickworks",
+   "year": 2017,
+   "label": "Warp",
+   "country": "gb",
+   "faction": "warm-idm",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bibio 的磁帶 ambient 專輯，磁帶糊與環境取樣包覆感強，無鼓。",
+   "moodGuess": {
+    "x": 1.6,
+    "y": 0.9,
+    "z": 0.4,
+    "why": "無鼓，磁帶糊與環境取樣，暖而朦朧"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/9d64a0cd-fcb9-418f-94d9-e961a611d15c",
+    "https://coverartarchive.org/release-group/9d64a0cd-fcb9-418f-94d9-e961a611d15c"
+   ],
+   "mbRgMbid": "9d64a0cd-fcb9-418f-94d9-e961a611d15c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "y 與 z 邊距薄，可能判放鬆或平靜"
+  },
+  {
+   "artist": "Casino Versus Japan",
+   "album": "Night on Tape",
+   "year": 2010,
+   "label": "Attack 9",
+   "country": "us",
+   "faction": "warm-idm",
+   "genres": [
+    "electronic"
+   ],
+   "why": "CVJ 磁帶質地的暖 IDM／ambient 專輯，池中兩張同人皆落恍惚（但貼邊）。",
+   "moodGuess": {
+    "x": 2,
+    "y": 1,
+    "z": 0.5,
+    "why": "磁帶糊，鬆節拍，和弦暖，旋律簡單清楚"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/c9b13067-7301-4b81-8188-960c5554b242",
+    "https://coverartarchive.org/release-group/c9b13067-7301-4b81-8188-960c5554b242"
+   ],
+   "mbRgMbid": "c9b13067-7301-4b81-8188-960c5554b242",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "池中同人皆貼邊（y 0.8–1.0、z 0.4–0.6）"
+  },
+  {
+   "artist": "Casino Versus Japan",
+   "album": "Suicide by Sun",
+   "year": 2018,
+   "label": "[no label]",
+   "country": "us",
+   "faction": "warm-idm",
+   "genres": [
+    "electronic"
+   ],
+   "why": "CVJ 後期專輯，保留磁帶感與暖和弦的懷舊電子。",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1,
+    "z": 0.4,
+    "why": "慢拍，合成器霧加磁帶飽和，偏暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/dc5c9808-6de8-4010-8e2a-ab113c508f39",
+    "https://coverartarchive.org/release-group/dc5c9808-6de8-4010-8e2a-ab113c508f39"
+   ],
+   "mbRgMbid": "dc5c9808-6de8-4010-8e2a-ab113c508f39",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "z 邊距薄，可能落頹靡"
+  },
+  {
+   "artist": "Manual",
+   "album": "Until Tomorrow",
+   "year": 2001,
+   "label": "Morr Music",
+   "country": "dk",
+   "faction": "warm-idm",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Manual（Jonas Munk）早期電子 shoegaze 專輯，池中《Azure Vista》《Bajamar》《Drowned in Light》三張全落恍惚。",
+   "moodGuess": {
+    "x": 1.8,
+    "y": 1.2,
+    "z": 0.6,
+    "why": "吉他殘響與合成器厚霧，鼓機極鬆，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/476101ab-1f99-315a-89fa-91c526253802",
+    "https://coverartarchive.org/release-group/476101ab-1f99-315a-89fa-91c526253802"
+   ],
+   "mbRgMbid": "476101ab-1f99-315a-89fa-91c526253802",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Mark Van Hoen",
+   "album": "The Last Flowers From the Darkness",
+   "year": 1996,
+   "label": "Touch",
+   "country": "gb",
+   "faction": "warm-idm",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Seefeel／Locust 系的 Van Hoen 90 年代類比合成器 IDM 專輯，厚類比墊與霧狀質地。",
+   "moodGuess": {
+    "x": 2,
+    "y": 1.2,
+    "z": 0.4,
+    "why": "類比合成器厚墊，鬆節拍，朦朧偏暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/59f20ff6-b313-30a6-b120-07c84672c8c2",
+    "https://coverartarchive.org/release-group/59f20ff6-b313-30a6-b120-07c84672c8c2"
+   ],
+   "mbRgMbid": "59f20ff6-b313-30a6-b120-07c84672c8c2",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "同人池中無；標題與部分曲目偏暗，z 可能 <0.3"
+  },
+  {
+   "artist": "Solar Bears",
+   "album": "She Was Coloured In",
+   "year": 2010,
+   "label": "Planet Mu",
+   "country": "gb",
+   "faction": "warm-idm",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Boards of Canada 系的懷舊類比 IDM，Discogs 標 IDM／Downtempo；類比合成器糊與復古旋律。",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.1,
+    "z": 0.7,
+    "why": "類比合成器與磁帶感，中慢拍，旋律復古溫暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/0449d783-9ac0-4951-a1dc-e5314139f367",
+    "https://music.apple.com/us/album/she-was-coloured-in/708784602",
+    "https://www.discogs.com/master/290359"
+   ],
+   "mbRgMbid": "0449d783-9ac0-4951-a1dc-e5314139f367",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "池中無同人錨點"
+  },
+  {
+   "artist": "Maps",
+   "album": "Turning the Mind",
+   "year": 2009,
+   "label": "Mute",
+   "country": "gb",
+   "faction": "warm-idm",
+   "genres": [
+    "electronic"
+   ],
+   "why": "James Chapman 的電子 shoegaze 專輯，電子節拍加殘響人聲與吉他，暖霧型。",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 1.2,
+    "z": 0.5,
+    "why": "電子鼓機中慢，吉他殘響與合成器厚層，旋律清楚"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/516bf236-dd66-4fdd-88d7-2fda30e90c2e",
+    "https://coverartarchive.org/release-group/516bf236-dd66-4fdd-88d7-2fda30e90c2e"
+   ],
+   "mbRgMbid": "516bf236-dd66-4fdd-88d7-2fda30e90c2e",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "x 可能 >2.7；池中無同人錨點"
+  },
+  {
+   "artist": "aus",
+   "album": "Lang",
+   "year": 2006,
+   "label": "Preco Records",
+   "country": "jp",
+   "faction": "japan-warm-electronic",
+   "genres": [
+    "electronic"
+   ],
+   "why": "福園靖彦（aus）暖調 glitch／IDM，磁帶糊與顆粒化吉他、鋼琴，旋律溫柔。",
+   "moodGuess": {
+    "x": 1.8,
+    "y": 1,
+    "z": 0.6,
+    "why": "顆粒化吉他與磁帶糊，鬆節拍，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/4e9546dc-6154-35d6-bd9b-e06b4320a5ec",
+    "https://coverartarchive.org/release-group/4e9546dc-6154-35d6-bd9b-e06b4320a5ec"
+   ],
+   "mbRgMbid": "4e9546dc-6154-35d6-bd9b-e06b4320a5ec",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "池中無同人錨點；乾淨 glitch 質地可能判輕"
+  },
+  {
+   "artist": "aus",
+   "album": "Curveland",
+   "year": 2007,
+   "label": "Moteer",
+   "country": "jp",
+   "faction": "japan-warm-electronic",
+   "genres": [
+    "electronic"
+   ],
+   "why": "aus 的暖 IDM 專輯，折射般的吉他取樣與厚實節拍。",
+   "moodGuess": {
+    "x": 2.1,
+    "y": 1,
+    "z": 0.6,
+    "why": "慢拍，取樣吉他加磁帶糊，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/dc1a95ac-5e4c-3e85-908f-f685add50c8c",
+    "https://coverartarchive.org/release-group/dc1a95ac-5e4c-3e85-908f-f685add50c8c"
+   ],
+   "mbRgMbid": "dc1a95ac-5e4c-3e85-908f-f685add50c8c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "池中無同人錨點；y 可能判輕"
+  },
+  {
+   "artist": "aus",
+   "album": "After All",
+   "year": 2009,
+   "label": "FLAU",
+   "country": "jp",
+   "faction": "japan-warm-electronic",
+   "genres": [
+    "electronic"
+   ],
+   "why": "aus 偏 ambient 的暖電子專輯，磁帶飽和的長音與微弱節拍。",
+   "moodGuess": {
+    "x": 1.7,
+    "y": 1,
+    "z": 0.6,
+    "why": "近無鼓，磁帶糊長音，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/de518c37-a2f2-3fea-9608-96c5e62e5a64",
+    "https://coverartarchive.org/release-group/de518c37-a2f2-3fea-9608-96c5e62e5a64"
+   ],
+   "mbRgMbid": "de518c37-a2f2-3fea-9608-96c5e62e5a64",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "池中無同人錨點；y 可能判輕"
+  },
+  {
+   "artist": "aus",
+   "album": "Crowding",
+   "year": 2005,
+   "label": "U-Cover CDr Limited",
+   "country": "jp",
+   "faction": "japan-warm-electronic",
+   "genres": [
+    "electronic"
+   ],
+   "why": "aus 早期 IDM，glitch 與暖和弦疊成的朦朧質地。",
+   "moodGuess": {
+    "x": 2,
+    "y": 0.9,
+    "z": 0.5,
+    "why": "鬆節拍，glitch 顆粒與暖和弦"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/a06060c2-7965-3acc-80c0-cf6d0eace707",
+    "https://coverartarchive.org/release-group/a06060c2-7965-3acc-80c0-cf6d0eace707"
+   ],
+   "mbRgMbid": "a06060c2-7965-3acc-80c0-cf6d0eace707",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "池中無同人錨點；邊距薄"
+  },
+  {
+   "artist": "Tujiko Noriko",
+   "album": "Solo",
+   "year": 2007,
+   "label": "Editions Mego",
+   "country": "jp",
+   "faction": "japan-warm-electronic",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Tujiko Noriko 的耳語人聲 glitch pop，低密度、朦朧、親密。",
+   "moodGuess": {
+    "x": 1.8,
+    "y": 1,
+    "z": 0.4,
+    "why": "耳語人聲，低密度電子墊與微拍，朦朧偏暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/c521bbcd-72f4-317d-8eca-093c7b619730",
+    "https://coverartarchive.org/release-group/c521bbcd-72f4-317d-8eca-093c7b619730"
+   ],
+   "mbRgMbid": "c521bbcd-72f4-317d-8eca-093c7b619730",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "池中無同人；z 邊距薄、y 可能判輕"
+  },
+  {
+   "artist": "Tujiko Noriko",
+   "album": "Blurred in My Mirror",
+   "year": 2005,
+   "label": "Room40",
+   "country": "jp",
+   "faction": "japan-warm-electronic",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Tujiko 的 glitch 電子流行，模糊的合成器與人聲。",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 1,
+    "z": 0.4,
+    "why": "慢拍，模糊合成器與耳語人聲，偏暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/6c97b183-0792-33e6-8e73-4f0fdac289f7",
+    "https://coverartarchive.org/release-group/6c97b183-0792-33e6-8e73-4f0fdac289f7"
+   ],
+   "mbRgMbid": "6c97b183-0792-33e6-8e73-4f0fdac289f7",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "池中無同人；z 邊距薄"
+  },
+  {
+   "artist": "Shinichi Atobe",
+   "album": "World",
+   "year": 2016,
+   "label": "DDS",
+   "country": "jp",
+   "faction": "japan-warm-electronic",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Atobe 的 dub techno／deep house 暖盤，和弦溫暖、混響厚；非冷硬極簡。",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1,
+    "z": 0.4,
+    "why": "慢拍 dub 和弦，混響厚，偏暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/2178caf7-efb1-44fd-be8d-70287392cfcc",
+    "https://coverartarchive.org/release-group/2178caf7-efb1-44fd-be8d-70287392cfcc"
+   ],
+   "mbRgMbid": "2178caf7-efb1-44fd-be8d-70287392cfcc",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "dub techno 多判冷、四拍底鼓可能讓 x>2.7；池中無同人"
+  },
+  {
+   "artist": "Cuushe",
+   "album": "WAKEN",
+   "year": 2020,
+   "label": "FLAU",
+   "country": "jp",
+   "faction": "japan-warm-electronic",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Cuushe 回歸作，夢幻 ambient pop 與電子；池中前兩張皆落恍惚（但貼邊）。",
+   "moodGuess": {
+    "x": 2,
+    "y": 0.9,
+    "z": 0.4,
+    "why": "夢幻合成器霧加耳語人聲，慢拍，偏暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/b5b0f9fe-a574-49a7-8c36-b2ad638a7d71",
+    "https://coverartarchive.org/release-group/b5b0f9fe-a574-49a7-8c36-b2ad638a7d71"
+   ],
+   "mbRgMbid": "b5b0f9fe-a574-49a7-8c36-b2ad638a7d71",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "池中同人貼邊（y 0.8–1.0、z 0.2–0.3）"
+  },
+  {
+   "artist": "Fila Brazillia",
+   "album": "The Life and Times of Phoebus Brumal",
+   "year": 2004,
+   "label": "Twentythree",
+   "country": "gb",
+   "faction": "warm-downtempo",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Fila Brazillia 暖 downtempo／IDM，池中四張同人皆落恍惚。",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 0.9,
+    "z": 0.7,
+    "why": "鬆弛 funk 節拍加 dub 低頻，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/b6a0a962-e060-3d98-aaac-b1b8dbc10eff",
+    "https://coverartarchive.org/release-group/b6a0a962-e060-3d98-aaac-b1b8dbc10eff"
+   ],
+   "mbRgMbid": "b6a0a962-e060-3d98-aaac-b1b8dbc10eff",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "池中同人 y 多為 0.6–0.9，貼邊"
+  },
+  {
+   "artist": "Tosca",
+   "album": "Tia Pamelita",
+   "year": 1998,
+   "label": "Nois Records",
+   "country": "at",
+   "faction": "warm-downtempo",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Dorfmeister 的 Tosca 早期 dub downtempo，池中 Opera、Suzuki、J.A.C.、No Hassle 皆落恍惚。",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 0.9,
+    "z": 0.6,
+    "why": "dub 低頻、鬆拍、暖和弦"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/071094a7-a59d-4950-acd9-c43c696d09e3",
+    "https://coverartarchive.org/release-group/071094a7-a59d-4950-acd9-c43c696d09e3"
+   ],
+   "mbRgMbid": "071094a7-a59d-4950-acd9-c43c696d09e3",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "池中同人 y 0.8–1.0 貼邊"
+  },
+  {
+   "artist": "Tosca",
+   "album": "Outta Here",
+   "year": 2014,
+   "label": "!K7",
+   "country": "at",
+   "faction": "warm-downtempo",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Tosca 後期暖 downtempo／deep dub，延續池中同人路線。",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 0.9,
+    "z": 0.6,
+    "why": "慢拍，dub 低頻與暖和弦"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/35a932f7-8d3c-4167-acee-d031cefa3a2f",
+    "https://coverartarchive.org/release-group/35a932f7-8d3c-4167-acee-d031cefa3a2f"
+   ],
+   "mbRgMbid": "35a932f7-8d3c-4167-acee-d031cefa3a2f",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "池中同人 y 貼邊"
+  },
+  {
+   "artist": "Yppah",
+   "album": "You Are Beautiful at All Times",
+   "year": 2006,
+   "label": "Ninja Tune",
+   "country": "us",
+   "faction": "warm-downtempo",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Yppah 首作，hazy 的 instrumental 電子與 shoegaze 吉他，池中三張同人皆落恍惚。",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 1.1,
+    "z": 0.5,
+    "why": "鬆拍，糊濾波與殘響吉他，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/f0ff5f2c-b04d-3c06-9213-2221810f040c",
+    "https://coverartarchive.org/release-group/f0ff5f2c-b04d-3c06-9213-2221810f040c"
+   ],
+   "mbRgMbid": "f0ff5f2c-b04d-3c06-9213-2221810f040c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Yppah",
+   "album": "Tiny Pause",
+   "year": 2015,
+   "label": "Counter Records",
+   "country": "us",
+   "faction": "warm-downtempo",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Yppah 後期偏 ambient 的暖電子，池中同人落恍惚。",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 1,
+    "z": 0.5,
+    "why": "慢拍，霧狀合成器與吉他殘響，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/e0ae6067-0d21-42a7-8c27-815295e3bdd1",
+    "https://coverartarchive.org/release-group/e0ae6067-0d21-42a7-8c27-815295e3bdd1"
+   ],
+   "mbRgMbid": "e0ae6067-0d21-42a7-8c27-815295e3bdd1",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Black Moth Super Rainbow",
+   "album": "Cobra Juicy",
+   "year": 2012,
+   "label": "Rad Cult",
+   "country": "us",
+   "faction": "warm-downtempo",
+   "genres": [
+    "electronic"
+   ],
+   "why": "BMSR 的 vocoder 迷幻電子，類比合成器糊與復古暖音色，池中四張同人皆落恍惚。",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 1.2,
+    "z": 0.6,
+    "why": "vocoder 人聲、類比合成器霧、鬆拍，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/435c7052-31c3-4aa6-b502-2664a1a343ed",
+    "https://coverartarchive.org/release-group/435c7052-31c3-4aa6-b502-2664a1a343ed"
+   ],
+   "mbRgMbid": "435c7052-31c3-4aa6-b502-2664a1a343ed",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Black Moth Super Rainbow",
+   "album": "The Autumn Kaleidoscope Got Changed",
+   "year": 2009,
+   "label": "Rad Cult",
+   "country": "us",
+   "faction": "warm-downtempo",
+   "genres": [
+    "electronic"
+   ],
+   "why": "BMSR 的器樂版本（Eating Us 同期），類比合成器糊與暖音色，慢速。",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 1.2,
+    "z": 0.6,
+    "why": "類比合成器厚墊，鬆拍，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/3f2ff870-09ea-4f94-977b-e4a31667eb34",
+    "https://coverartarchive.org/release-group/3f2ff870-09ea-4f94-977b-e4a31667eb34"
+   ],
+   "mbRgMbid": "3f2ff870-09ea-4f94-977b-e4a31667eb34",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "是否為正規專輯需主線確認（MB 標 Album，2009）"
+  }
+ ],
+ "notes": [
+  "Tape（瑞典）Discogs 標 Acoustic／Folk／Post Rock，判輕，全數不提；Helios、Rei Harakami、Haruka Nakamura、Susumu Yokota、Serph、Takagi 池中同人或風格判輕，不提；Ametsub 池中判冷不提。",
+  "Ulrich Schnauss、Bibio、CVJ、Manual、Fila、Tosca、BMSR 的多張已被 ml2／ml11／ml24／ml34／ml40／ml56 提過，本組避開。",
+  "Mark Van Hoen《The Warmth Inside You》《Where Is the Truth》、Tape 多張因找不到封面或風格判輕而略。"
+ ]
+}

@@ -17,7 +17,7 @@ const rt = rd(D + 'ratings.json');
 const picks = rd(D + 'preview-picks.json');
 const overrides = fs.existsSync(D + 'overrides.json') ? rd(D + 'overrides.json') : {};
 const BANNED = /(融合多種元素|具有代表性|層次豐富|傑作|必聽|里程碑|獨樹一格)/;
-const rarityOf = (c, o, x) => { const s = c + x + (o >= 5 ? 1 : 0); return s >= 10 ? 'legendary' : s >= 8 ? 'epic' : s >= 6 ? 'uncommon' : s >= 4 ? 'rare' : 'common'; };
+const rarityOf = (c, o, x) => { const s = c + x + (o >= 5 ? 1 : 0); return s >= 9 ? 'legendary' : s >= 8 ? 'epic' : s >= 7 ? 'uncommon' : s >= 6 ? 'rare' : 'common'; };
 
 const albums = spec.map(s => {
   const id = inv.find(i => i.id.endsWith(s.n)).id;

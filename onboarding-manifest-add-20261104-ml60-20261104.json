@@ -1,0 +1,1015 @@
+{
+ "schemaVersion": 1,
+ "batch": "2026-10-20-ml60",
+ "batchNote": "薄細項策展線（add-20261104-ml60）",
+ "createdAt": "2026-11-04T23:15:42Z",
+ "albums": [
+  {
+   "artist": "Toro y Moi",
+   "album": "Underneath the Pine",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "7e76af5b-a815-498a-9d5c-455bdefb2a0b",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "chillwave／hypnagogic 電子（合成器、取樣、糊濾波）：chillwave 頭牌的第二張，從糊濾波轉向暖色複古 funk 與 baroque 鍵盤；速度偏慢、磁帶飽和，旋律清楚偏暖，與池中《Causers of This》同路｜⚠ x 與《Causers of This》同為貼 2.6 附近，若鼓更脆可能 2.9；y 邊距 0.1｜MB release-group 7e76af5b-a815-498a-9d5c-455bdefb2a0b：title「Underneath the Pine」、Album、first-release-date 2011-02-21、artist-credit「Toro y Moi」。證據：https://musicbrainz.org/release-group/7e76af5b-a815-498a-9d5c-455bdefb2a0b https://coverartarchive.org/release-group/7e76af5b-a815-498a-9d5c-455bdefb2a0b/front",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2011,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/7e76af5b-a815-498a-9d5c-455bdefb2a0b/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-04T23:15:42Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-04 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 2,
+    "accessibility": 2,
+    "listeners": 339151,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-04T23:15:42Z",
+    "note": "機器基線 3/2/3（Last.fm listeners 339151）；主線：硬蕊度依錨點：暖 downtempo／ambient pop／慢 house，主流易聽、有一點門檻（無失真、無嘶吼、音量柔和）"
+   },
+   "rarity": "common",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 2、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "Toro y Moi 把取樣全換成現場演奏的樂器。南卡羅來納州出身的 Chaz Bundick 生於 1986 年、讀的是平面設計，Toro y Moi 就是他。首作《Causers of This》靠取樣做成，被拿來和 chillwave 並比；他則說 chillwave 只是大家碰巧同在的一段時期。這次在家錄成、由他本人製作，起點卻正是當年找取樣時聽到的那些聲音，他點名的靈感有恐怖電影配樂與 space disco。Carpark 在 2011 年 2 月發行了它。",
+    "sourceUrls": [
+     "https://www.discogs.com/master/315561",
+     "https://en.wikipedia.org/wiki/Toro_y_Moi",
+     "https://en.wikipedia.org/wiki/Underneath_the_Pine",
+     "https://musicbrainz.org/release-group/7e76af5b-a815-498a-9d5c-455bdefb2a0b"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ec/2c/68/ec2c684f-faf7-dca7-73cf-8a1cd02263dc/mzaf_11017358204710952250.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-11-04T23:15:42Z",
+    "appleCollectionId": "1544883144",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1544883144「Toro y Moi《Underneath the Pine》」：曲目 11/11 對上 MB 原盤（Apple 共 11 軌），取第 1 軌〈Intro/Chi Chi〉。主線 2026-11-04 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Brothertiger",
+   "album": "Future Splendors",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "f51b1c64-52f3-4a20-9809-05512bbe741f",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "chillwave／hypnagogic 電子（合成器、取樣、糊濾波）：chillwave 第二波代表，80s 合成器琴音＋濕殘響人聲，慢板為主；暖而糊的包覆感｜⚠ 年份 MB 2013／Discogs master 2014，取 MB；x 可能到 2.8（有鼓機推進）｜MB release-group f51b1c64-52f3-4a20-9809-05512bbe741f：title「Future Splendors」、Album、first-release-date 2013-10-08、artist-credit「Brothertiger」。證據：https://musicbrainz.org/release-group/f51b1c64-52f3-4a20-9809-05512bbe741f https://coverartarchive.org/release-group/f51b1c64-52f3-4a20-9809-05512bbe741f/front https://www.discogs.com/master/1067482-Brothertiger-Future-Splendors",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2013,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/f51b1c64-52f3-4a20-9809-05512bbe741f/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-04T23:15:42Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-04 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 10226,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-04T23:15:42Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 10226）；主線：硬蕊度依錨點：暖 downtempo／ambient pop／慢 house，主流易聽、有一點門檻（無失真、無嘶吼、音量柔和）"
+   },
+   "rarity": "common",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "托利多的 John Jagos 說，這回主題更偏向未來。Brothertiger 是他的個人計畫，製作也一手包辦，早期作品被歸進 chillwave 一脈。2013 年，Mush Records 發行這第二張全長，10 首約 42 分鐘。廠牌說開場曲比他以往的作品都更偏合成器，旋律包在層層朦朧的質地裡。",
+    "sourceUrls": [
+     "https://www.popmatters.com/158629-brothertiger-golden-years-2495851400.html",
+     "https://mushrecords.com/release/258/3778",
+     "https://musicbrainz.org/release-group/f51b1c64-52f3-4a20-9809-05512bbe741f",
+     "https://thedelimag.com/?p=152844",
+     "https://www.discogs.com/master/1067482",
+     "https://joyofviolentmovement.com/tag/brothertiger-future-splendors/"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/60/22/f3/6022f3a3-10b6-4d69-2b31-c4105b19f517/mzaf_3644993204910857378.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-11-04T23:15:42Z",
+    "appleCollectionId": "1475550189",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1475550189「Brothertiger《Future Splendors》」：曲目 10/10 對上 MB 原盤（Apple 共 10 軌），取第 1 軌〈Up from Below〉。主線 2026-11-04 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Mark McGuire",
+   "album": "Along the Way",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "a5d295c8-de0e-4b2a-a2fe-c6631b3d6463",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "chillwave／hypnagogic 電子（合成器、取樣、糊濾波）：Emeralds 吉他手的獨奏代表，吉他迴圈＋合成器的暖色 hypnagogic ambient；池中同人《Living with Yourself》《Get Lost》已落恍惚｜⚠ genres 首位 electronic 需主線確認（偏吉他迴圈）｜MB release-group a5d295c8-de0e-4b2a-a2fe-c6631b3d6463：title「Along the Way」、Album、first-release-date 2013-06-13、artist-credit「Mark McGuire」。證據：https://musicbrainz.org/release-group/a5d295c8-de0e-4b2a-a2fe-c6631b3d6463 https://coverartarchive.org/release-group/a5d295c8-de0e-4b2a-a2fe-c6631b3d6463/front",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2014,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/a5d295c8-de0e-4b2a-a2fe-c6631b3d6463/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-04T23:15:42Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-04 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": 27642,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-04T23:15:42Z",
+    "note": "機器基線 3/3/3（Last.fm listeners 27642）；主線：硬蕊度依錨點：長篇器樂、單一音色或紋理為主，需要投入（無失真牆、無嘶吼）"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "Mark McGuire 離團那年，錄下一趟一個人的旅程。他 9 歲開始彈吉他，出身克里夫蘭，2005 年和朋友組了 Emeralds。2013 年 1 月他宣布退出，同年把它完成並搬到洛杉磯；他把它形容成一個人踏入世界、尋求宇宙與自我真知的旅程。電吉他、原聲吉他、曼陀林、桑圖爾與鼓機都派上用場，吉他一層層疊高，打擊稀疏。Dead Oceans 在 2014 年 2 月推出，67 分鐘分成四段，最長的〈The Instinct〉有 12 分鐘。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Mark_McGuire_(musician)",
+     "https://en.wikipedia.org/wiki/Along_the_Way_(Mark_McGuire_album)",
+     "https://hhv-mag.com/review/mark-mcguire-along-the-way-2/?lang=en",
+     "https://musicbrainz.org/release-group/a5d295c8-de0e-4b2a-a2fe-c6631b3d6463"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/2b/88/8a/2b888a19-95e9-eb63-a564-2f54e562f99a/mzaf_16158535243074345701.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-11-04T23:15:42Z",
+    "appleCollectionId": "775110903",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 775110903「Mark McGuire《Along the Way》」：曲目 13/13 對上 MB 原盤（Apple 共 15 軌），取第 1 軌〈Awakening〉。主線 2026-11-04 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "蜃気楼MIRAGE",
+   "album": "Songs for Lovers",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "0da86d34-1210-4006-b51f-fbddc7d65cb0",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "vaporwave 暖盤（慢放取樣、厚殘響、暖合成器墊）：vaporwave 慢放八〇年代情歌樣本，暖色柔焦與慢板，近 quiet-storm 的 chopped & slowed｜⚠ 凡 vaporwave 皆憑藝人曲風與曲名推斷，未聽；藝人名為 MB 登記名｜MB release-group 0da86d34-1210-4006-b51f-fbddc7d65cb0：title「Songs for Lovers」、Album、first-release-date 2016-08-13、artist-credit「蜃気楼MIRAGE & Waterfront Dining」。證據：https://musicbrainz.org/release-group/0da86d34-1210-4006-b51f-fbddc7d65cb0 https://coverartarchive.org/release-group/0da86d34-1210-4006-b51f-fbddc7d65cb0/front https://www.discogs.com/master/1692741-%E8%9C%83%E6%B0%97%E6%A5%BCMIRAGE-Waterfront-Dining-Songs-For-Lovers",
+    "queryAlias": "蜃気楼MIRAGE & Waterfront Dining"
+   },
+   "research": {
+    "suggestedYear": 2016,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/0da86d34-1210-4006-b51f-fbddc7d65cb0/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-04T23:15:42Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-04 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 134,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-04T23:15:42Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 134）；主線：硬蕊度依錨點：暖 downtempo／ambient pop／慢 house，主流易聽、有一點門檻（無失真、無嘶吼、音量柔和）"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 2；obscurity=5 但沒有遺珠級證據（listeners 134），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "前六首來自東京，後五首來自多倫多。兩位都做 vaporwave 裡的 plunderphonics 取樣拼貼：前半出自東京的蜃気楼MIRAGE，後半是多倫多的 Waterfront Dining。2016 年 8 月 13 日以數位形式發行，掛在 Elemental 95 廠牌下，11 首合起來約 25 分鐘。",
+    "sourceUrls": [
+     "https://waterfrontdining.bandcamp.com/album/songs-for-lovers",
+     "https://www.discogs.com/master/1692741",
+     "https://miragesync.bandcamp.com",
+     "https://www.discogs.com/artist/4407026",
+     "https://waterfrontdining.bandcamp.com/",
+     "https://musicbrainz.org/release-group/0da86d34-1210-4006-b51f-fbddc7d65cb0"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-04T23:15:42Z",
+    "note": "Apple jp／us 查無蜃気楼MIRAGE 與 waterfront dining 藝人頁；Bandcamp 自發行盤未上架"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Axel Boman",
+   "album": "Family Vacation",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "31b76d3c-f3f0-40c9-8ada-82c7f0c4623b",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "lo-fi house：Studio Barnhus 的暖調懶散 deep house；聲音落恍惚（靜＋重＋暖）｜策展無疑點｜MB release-group 31b76d3c-f3f0-40c9-8ada-82c7f0c4623b：title「Family Vacation」、Album、first-release-date 2013-11-11、artist-credit「Axel Boman」。證據：https://musicbrainz.org/release-group/31b76d3c-f3f0-40c9-8ada-82c7f0c4623b https://coverartarchive.org/release-group/31b76d3c-f3f0-40c9-8ada-82c7f0c4623b",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2013,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/31b76d3c-f3f0-40c9-8ada-82c7f0c4623b/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-04T23:15:42Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-04 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 64960,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-04T23:15:42Z",
+    "note": "機器基線 3/3/3（Last.fm listeners 64960）；主線：硬蕊度依錨點：暖 downtempo／ambient pop／慢 house，主流易聽、有一點門檻（無失真、無嘶吼、音量柔和）"
+   },
+   "rarity": "common",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "實體版附了一篇小說，寫到 Sam Cooke 遇害那夜。瑞典 house 製作人 Axel Boman 在 2010 年以 EP《Holy Love》走紅，首張專輯 2013 年 11 月 11 日由他參與創辦的 Studio Barnhus 發行。小說出自朋友 Erik Lavesson 之手，Boman 稱之為某種懸疑推理；曲名是後來才改的，用來拼出一條故事線。骨幹是一台被他叫作「錯誤機器」的可攜式合成器，老 funk、soul 與細碎人聲取樣疊在持續的打擊樂搖擺上。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/31b76d3c-f3f0-40c9-8ada-82c7f0c4623b",
+     "https://daily.redbullmusicacademy.com/2013/11/axel-boman-feature",
+     "https://musicbrainz.org/release/088849b9-0578-4926-98a2-e0e751ce6ca2",
+     "https://en.wikipedia.org/wiki/Axel_Boman"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/07/4c/a4/074ca4f1-d0e3-419e-2961-dc053a11e68e/mzaf_13439569876205498505.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-11-04T23:15:42Z",
+    "appleCollectionId": "1725125941",
+    "storefront": "SE",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple se 1725125941「Axel Boman《Family Vacation》」：曲目 13/13 對上 MB 原盤（Apple 共 13 軌），取第 1 軌〈Can't Find It〉。主線 2026-11-04 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Bjørn Torske",
+   "album": "Nedi Myra",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "634e167d-a11c-3f90-83ae-136e1aaf5728",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "慢 deep house：挪威慢速 deep house 名盤，暖而塵土味；聲音落恍惚（靜＋重＋暖）｜策展無疑點｜MB release-group 634e167d-a11c-3f90-83ae-136e1aaf5728：title「Nedi Myra」、Album、first-release-date 1998-06-22、artist-credit「Bjørn Torske」。證據：https://musicbrainz.org/release-group/634e167d-a11c-3f90-83ae-136e1aaf5728 https://coverartarchive.org/release-group/634e167d-a11c-3f90-83ae-136e1aaf5728",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1998,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/634e167d-a11c-3f90-83ae-136e1aaf5728/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-04T23:15:42Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-04 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 9566,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-04T23:15:42Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 9566）；主線：硬蕊度依錨點：暖 downtempo／ambient pop／慢 house，主流易聽、有一點門檻（無失真、無嘶吼、音量柔和）"
+   },
+   "rarity": "common",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "Tromsø 被稱作挪威的 techno 之都。1971 年生於 Tromsø 的 Bjørn Torske，後來搬到 Bergen。他的出道專輯在 1998 年由英國 Ferox Records 發行，共八首，製作掛他本人。這是九〇年代末實驗 house 的一張：〈Smoke Detector Song〉是緩慢冒泡的合成器曲，帶 trip-hop 與 dub 色彩，〈Ode To A Duck〉則有 bossa nova 味道。2002 年 Tellé 替它出了再版。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/14960",
+     "https://ra.co/reviews/16325",
+     "https://www.discogs.com/master/81893",
+     "https://musicbrainz.org/release-group/634e167d-a11c-3f90-83ae-136e1aaf5728"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/8e/18/49/8e18495f-df7c-0b2e-21dd-38a514569947/mzaf_1013217528972568320.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-11-04T23:15:42Z",
+    "appleCollectionId": "1499158419",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1499158419「Bjørn Torske《Nedi Myra》」：曲目 8/8 對上 MB 原盤（Apple 共 8 軌），取第 1 軌〈Expresso〉。主線 2026-11-04 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Bjørn Torske",
+   "album": "Feil knapp",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "e66005d8-9997-3802-9b5d-06438516dfdb",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "慢 deep house：Torske 慢速暖調 house，帶 ambient 質地；聲音落恍惚（靜＋重＋暖）｜策展無疑點｜MB release-group e66005d8-9997-3802-9b5d-06438516dfdb：title「Feil knapp」、Album、first-release-date 2007-06-04、artist-credit「Bjørn Torske」。證據：https://musicbrainz.org/release-group/e66005d8-9997-3802-9b5d-06438516dfdb https://coverartarchive.org/release-group/e66005d8-9997-3802-9b5d-06438516dfdb",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2007,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/e66005d8-9997-3802-9b5d-06438516dfdb/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-04T23:15:42Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-04 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 7956,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-04T23:15:42Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 7956）；主線：硬蕊度依錨點：暖 downtempo／ambient pop／慢 house，主流易聽、有一點門檻（無失真、無嘶吼、音量柔和）"
+   },
+   "rarity": "common",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "Bergen 錄好的音軌，送到柏林做母帶。前作《Trøbbel》是 2001 年的事，挪威 house 製作人 Bjørn Torske 隔了六年才交出這張。2007 年由 Smalltown Supersound 出版，接手母帶的是 Dubplates & Mastering 的 Helmut Erler，封面則是 Kim Hiorthøy 設計。廠牌形容它混合了溫暖帶憂鬱的 house、古怪的 avant-disco，以及黑暗厚重的迷幻 dub。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/1202613",
+     "https://smalltownsupersound.com/releases/bj%C3%B8rn-torske-feil-knapp",
+     "https://www.discogs.com/master/99193",
+     "https://musicbrainz.org/release-group/e66005d8-9997-3802-9b5d-06438516dfdb"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/cf/11/4d/cf114d74-e60f-125e-649c-bb515926ef7b/mzaf_11086824976927260332.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-11-04T23:15:42Z",
+    "appleCollectionId": "1540698374",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1540698374「Bjørn Torske《Feil Knapp》」：曲目 10/10 對上 MB 原盤（Apple 共 10 軌），取第 1 軌〈Hemmelig Orkester〉。主線 2026-11-04 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Bjørn Torske",
+   "album": "Kokning",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "4c2ff7fa-c99c-4ee0-91bc-6570b1322246",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "慢 deep house：Torske 後期，慢速 balearic 式暖 house；聲音落恍惚（靜＋重＋暖）｜策展無疑點｜MB release-group 4c2ff7fa-c99c-4ee0-91bc-6570b1322246：title「Kokning」、Album、first-release-date 2010-11-15、artist-credit「Bjørn Torske」。證據：https://musicbrainz.org/release-group/4c2ff7fa-c99c-4ee0-91bc-6570b1322246 https://coverartarchive.org/release-group/4c2ff7fa-c99c-4ee0-91bc-6570b1322246",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2010,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/4c2ff7fa-c99c-4ee0-91bc-6570b1322246/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-04T23:15:42Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-04 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 22950,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-04T23:15:42Z",
+    "note": "機器基線 3/3/3（Last.fm listeners 22950）；主線：硬蕊度依錨點：暖 downtempo／ambient pop／慢 house，主流易聽、有一點門檻（無失真、無嘶吼、音量柔和）"
+   },
+   "rarity": "common",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "新曲裝進隨身碟，藏在一條杏仁糖鱈魚裡。Joakim Haugland 是 Smalltown Supersound 的創辦人，當時正住院休養，挪威的電子音樂人 Bjørn Torske 就這樣把 15 首新曲送到他手上。Haugland 從中編出像被陽光曬透的明亮版本，較陰暗的曲子另外放進《Kok》EP。所有曲子都在車庫裡製作錄音，2010 年 11 月 15 日上市。音樂從輕柔的迷幻與 Balearic 節奏走進四拍的 house，最後以 Moondog disco 收尾。",
+    "sourceUrls": [
+     "https://bjorntorske.bandcamp.com/album/kokning",
+     "https://www.discogs.com/release/2584486",
+     "https://smalltownsupersound.com/releases/bj%C3%B8rn-torske-kokning",
+     "https://www.discogs.com/master/291518",
+     "https://musicbrainz.org/release-group/4c2ff7fa-c99c-4ee0-91bc-6570b1322246"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/c9/a7/08/c9a708a8-bed4-7b12-8f5e-1773da52f0e3/mzaf_4653798123272911164.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-11-04T23:15:42Z",
+    "appleCollectionId": "1540784181",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1540784181「Bjørn Torske《Kokning》」：曲目 9/9 對上 MB 原盤（Apple 共 9 軌），取第 1 軌〈Kokning〉。主線 2026-11-04 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Lawrence",
+   "album": "The Night Will Last Forever",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "6a9f38ad-014d-3c25-ba60-9748a2250c41",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "慢 deep house：Dial 的夜間慢板 deep house，柔軟而沉；聲音落恍惚（靜＋重＋暖）｜⚠ 與 Lawrence English 不同人，須人工確認身分｜MB release-group 6a9f38ad-014d-3c25-ba60-9748a2250c41：title「The Night Will Last Forever」、Album、first-release-date 2005-05-17、artist-credit「Lawrence」。證據：https://musicbrainz.org/release-group/6a9f38ad-014d-3c25-ba60-9748a2250c41 https://coverartarchive.org/release-group/6a9f38ad-014d-3c25-ba60-9748a2250c41",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2005,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/6a9f38ad-014d-3c25-ba60-9748a2250c41/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-04T23:15:42Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-04 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 45791,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-04T23:15:42Z",
+    "note": "機器基線 3/3/3（Last.fm listeners 45791）；主線：硬蕊度依錨點：暖 downtempo／ambient pop／慢 house，主流易聽、有一點門檻（無失真、無嘶吼、音量柔和）"
+   },
+   "rarity": "common",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "當過園丁的 Lawrence，把惆悵帶進極簡 techno。本名 Peter M. Kersten 的他，在 Hamburg 與人創辦了 Dial 廠牌，音樂既適合舞池，也適合在扶手椅上聆聽。2005 年 5 月 17 日同一天，Dial、Ladomat 2000 與 NovaMute 一起推出。十二首曲子之間，夾著一兩分鐘的 ambient 短曲。",
+    "sourceUrls": [
+     "https://api.discogs.com/artists/6644",
+     "https://musicbrainz.org/release-group/6a9f38ad-014d-3c25-ba60-9748a2250c41",
+     "https://www.discogs.com/release/455270",
+     "https://www.discogs.com/master/49072"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/05/4c/4a/054c4a99-2667-5a82-a9d9-f321473f77b7/mzaf_9184401297627289903.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-11-04T23:15:42Z",
+    "appleCollectionId": "184419232",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 184419232「Lawrence《The Night Will Last Forever》」：曲目 11/12 對上 MB 原盤（Apple 共 12 軌），取第 1 軌〈Lost Images〉。主線 2026-11-04 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Kuniyuki Takahashi",
+   "album": "Feather World",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "6583afef-efcf-4813-b466-bf00e0e2bf17",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "慢 deep house：北海道 deep house 的溫潤慢板；聲音落恍惚（靜＋重＋暖）｜⚠ 聽感憑印象｜MB release-group 6583afef-efcf-4813-b466-bf00e0e2bf17：title「Feather World」、Album、first-release-date 2012-11-21、artist-credit「Kuniyuki Takahashi」。證據：https://musicbrainz.org/release-group/6583afef-efcf-4813-b466-bf00e0e2bf17 https://coverartarchive.org/release-group/6583afef-efcf-4813-b466-bf00e0e2bf17",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2012,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/6583afef-efcf-4813-b466-bf00e0e2bf17/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-04T23:15:42Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-04 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 2,
+    "listeners": 2644,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-04T23:15:42Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 2644）；主線：硬蕊度依錨點：暖 downtempo／ambient pop／慢 house，主流易聽、有一點門檻（無失真、無嘶吼、音量柔和）"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 2；obscurity=5 但沒有遺珠級證據（listeners 2644），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "札幌的錄音工程師，把幾內亞歌聲請進 house。Kuniyuki Takahashi 長年把 deep house 與爵士這類有機風格接在一起。2012 年先在日本由 Mule Musiq 發行，獻唱的是 Sona Diabaté，客座還有挪威爵士鋼琴手 Bugge Wesseltoft，以及 Anne Clark 的口白。開場是鋼琴、弦樂與循環節奏堆成的慢速 ambient，中段走向 house 與爵士，最後落在帶民謠味的曲子上。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Kuniyuki_Takahashi",
+     "https://www.residentadvisor.net/news.aspx?id=18313",
+     "https://musicbrainz.org/release-group/6583afef-efcf-4813-b466-bf00e0e2bf17",
+     "https://kompakt.fm/releases/feather_world",
+     "https://www.discogs.com/master/944296"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/cd/70/85/cd7085b6-fd3c-50ed-10d4-a083cbedb5a2/mzaf_14977640875169572342.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-11-04T23:15:42Z",
+    "appleCollectionId": "864730328",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 864730328「Kuniyuki Takahashi《Feather World》」：曲目 10/10 對上 MB 原盤（Apple 共 10 軌），取第 1 軌〈Before Creation〉。主線 2026-11-04 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Spacetime Continuum",
+   "album": "Sea Biscuit",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "448f6704-7b63-39de-8659-974ba70ca6b7",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "暖 ambient techno：Jonah Sharp 的舊金山 ambient techno，海洋感暖 pad；聲音落恍惚（靜＋重＋暖）｜策展無疑點｜MB release-group 448f6704-7b63-39de-8659-974ba70ca6b7：title「Sea Biscuit」、Album、first-release-date 1994-09-23、artist-credit「Spacetime Continuum」。證據：https://musicbrainz.org/release-group/448f6704-7b63-39de-8659-974ba70ca6b7 https://coverartarchive.org/release-group/448f6704-7b63-39de-8659-974ba70ca6b7",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1994,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/448f6704-7b63-39de-8659-974ba70ca6b7/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-04T23:15:42Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-04 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": 33571,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-04T23:15:42Z",
+    "note": "機器基線 3/3/3（Last.fm listeners 33571）；主線：硬蕊度依錨點：長篇器樂、單一音色或紋理為主，需要投入（無失真牆、無嘶吼）"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "最短的一首也有 6 分半，七首共約 74 分鐘。Spacetime Continuum 背後是 Jonah Sharp，他生於愛丁堡，在倫敦當過爵士鼓手，之後移居舊金山。1994 年 9 月 23 日在美國由 Astralwerks 發行，屬於 ambient techno，最長的一首長達 13 分鐘。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Spacetime_Continuum",
+     "https://api.discogs.com/artists/372",
+     "https://musicbrainz.org/release-group/448f6704-7b63-39de-8659-974ba70ca6b7",
+     "https://www.discogs.com/release/41543",
+     "https://www.discogs.com/master/72766"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/1c/32/55/1c325572-40bf-86c2-ef71-3b6eb615ed2d/mzaf_472068258658918751.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-11-04T23:15:42Z",
+    "appleCollectionId": "714545329",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 714545329「Spacetime Continuum《Sea Biscuit》」：曲目 7/7 對上 MB 原盤（Apple 共 7 軌），取第 1 軌〈Pressure〉。主線 2026-11-04 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Spacetime Continuum",
+   "album": "Emit Ecaps",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "32ac1962-b365-3dd3-8d24-6183d001b5bd",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "暖 ambient techno：Spacetime Continuum 的 ambient techno 代表；聲音落恍惚（靜＋重＋暖）｜⚠ z 貼邊｜MB release-group 32ac1962-b365-3dd3-8d24-6183d001b5bd：title「Emit Ecaps」、Album、first-release-date 1996-01-31、artist-credit「Spacetime Continuum」。證據：https://musicbrainz.org/release-group/32ac1962-b365-3dd3-8d24-6183d001b5bd https://coverartarchive.org/release-group/32ac1962-b365-3dd3-8d24-6183d001b5bd",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1996,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/32ac1962-b365-3dd3-8d24-6183d001b5bd/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-04T23:15:42Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-04 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 17887,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-04T23:15:42Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 17887）；主線：硬蕊度依錨點：長篇器樂、單一音色或紋理為主，需要投入（無失真牆、無嘶吼）"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "專輯名倒過來讀，就是 space time。Reflective Records 是 Jonah Sharp 自家的廠牌，1996 年最早發行它的就是這裡，Spacetime Continuum 則是 Sharp 的名義。同一年 Reflective 又推出混音專輯《Remit Recaps》。十首曲子落在 ambient、IDM 與 techno 之間。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/2057",
+     "https://musicbrainz.org/release-group/32ac1962-b365-3dd3-8d24-6183d001b5bd",
+     "https://www.discogs.com/master/72770",
+     "https://en.wikipedia.org/wiki/Spacetime_Continuum",
+     "https://api.discogs.com/artists/372"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-04T23:15:42Z",
+    "note": "Apple jp／us 查無 Spacetime Continuum 藝人頁與本盤"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Sun Electric",
+   "album": "Kitchen",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "4e01390a-3f22-3b41-937a-dfdddff3c707",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "暖 ambient techno：Sun Electric 的暖調 ambient techno；聲音落恍惚（靜＋重＋暖）｜策展無疑點｜MB release-group 4e01390a-3f22-3b41-937a-dfdddff3c707：title「Kitchen」、Album、first-release-date 1993-11-13、artist-credit「Sun Electric」。證據：https://musicbrainz.org/release-group/4e01390a-3f22-3b41-937a-dfdddff3c707 https://coverartarchive.org/release-group/4e01390a-3f22-3b41-937a-dfdddff3c707",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1993,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/4e01390a-3f22-3b41-937a-dfdddff3c707/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-04T23:15:42Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-04 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": 29456,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-04T23:15:42Z",
+    "note": "機器基線 3/3/3（Last.fm listeners 29456）；主線：硬蕊度依錨點：長篇器樂、單一音色或紋理為主，需要投入（無失真牆、無嘶吼）"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "Wolfgang Tillmans 替柏林二人組掌鏡。Sun Electric 由 Tom Thiel 與 Max Loderbauer 組成。1993 年，R&S 發行了兩人的第一張專輯，封套除了 Tillmans 的照片，設計交給 The Designers Republic。音樂橫跨 techno、trance 與 ambient 三端。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Sun_Electric",
+     "https://musicbrainz.org/release-group/4e01390a-3f22-3b41-937a-dfdddff3c707",
+     "https://www.discogs.com/release/47127",
+     "https://www.discogs.com/master/23466"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/ca/cf/2b/cacf2b1d-4a92-5258-8763-615e21f59bba/mzaf_8490504165662358819.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-11-04T23:15:42Z",
+    "appleCollectionId": "1115727391",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1115727391「Sun Electric《Kitchen》」：曲目 12/12 對上 MB 原盤（Apple 共 12 軌），取第 1 軌〈U.F.O.〉。主線 2026-11-04 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Ott",
+   "album": "Skylon",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "d21c604f-13a0-3fc7-9965-1ed65fd919d0",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "ambient house：Ott 的 dub-psychill，厚低頻暖調（池中 Ott 三張皆恍惚）；聲音落恍惚（靜＋重＋暖）｜策展無疑點｜MB release-group d21c604f-13a0-3fc7-9965-1ed65fd919d0：title「Skylon」、Album、first-release-date 2008-01-25、artist-credit「Ott」。證據：https://musicbrainz.org/release-group/d21c604f-13a0-3fc7-9965-1ed65fd919d0 https://coverartarchive.org/release-group/d21c604f-13a0-3fc7-9965-1ed65fd919d0",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2008,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/d21c604f-13a0-3fc7-9965-1ed65fd919d0/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-04T23:15:42Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-04 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 2,
+    "accessibility": 2,
+    "listeners": 122455,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-04T23:15:42Z",
+    "note": "機器基線 3/2/3（Last.fm listeners 122455）；主線：硬蕊度依錨點：暖 downtempo／ambient pop／慢 house，主流易聽、有一點門檻（無失真、無嘶吼、音量柔和）"
+   },
+   "rarity": "common",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 2、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "封面指定要畫蘇聯時代的孩子與飛機。以迷幻 dub 與 psybient 聞名的 Ott，本名 Otteran Langrell，1968 年生於倫敦。2008 年 1 月 25 日，第二張專輯交由 Twisted Records 發行，製作由他自己擔任。封面請羅馬尼亞藝術家 Matei Apostolescu 操刀，Ott 要求畫面有機而樂觀。八首共 69 分 32 秒，客座帶來長笛、theremin 與 melodica，製作有機、帶著類比質地。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Ott_(record_producer)",
+     "https://www.discogs.com/release/1214503",
+     "https://en.wikipedia.org/wiki/Skylon_(album)",
+     "https://ottsonic.bandcamp.com/album/skylon",
+     "https://musicbrainz.org/release-group/d21c604f-13a0-3fc7-9965-1ed65fd919d0"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview112/v4/8f/19/de/8f19de15-8762-8102-0f15-2bf754acc15d/mzaf_6866299800662148324.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-11-04T23:15:42Z",
+    "appleCollectionId": "1629469265",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1629469265「Ott《Skylon》」：曲目 8/8 對上 MB 原盤（Apple 共 8 軌），取第 1 軌〈From Trunch To Stromness〉。主線 2026-11-04 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  }
+ ]
+}

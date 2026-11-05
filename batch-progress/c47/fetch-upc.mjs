@@ -7,7 +7,7 @@
 // 可續跑：已有 upc 的卡跳過。
 import fs from 'node:fs';
 const R = 'C:/Users/User/dip-vinyl-home/dip-vinyl-shop';
-const UA = { 'User-Agent': 'dip-vinyl-onboarding/1.0 (kubinice06@gmail.com)' };
+const UA = { 'User-Agent': 'dip-vinyl-onboarding/1.0 (+https://dipvinyl.tw)' };
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 async function mb(url, tries = 6) {
   for (let i = 0; i < tries; i++) {

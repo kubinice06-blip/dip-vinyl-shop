@@ -1,0 +1,354 @@
+{
+ "group": "sf05b",
+ "factions": [
+  {
+   "id": "tw-indie-pop",
+   "zh": "台灣獨立流行",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "tw-indie-rock",
+   "zh": "台灣獨立搖滾／後搖",
+   "count": 5,
+   "why": ""
+  },
+  {
+   "id": "tw-electronic",
+   "zh": "台灣電子",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "tw-jazz",
+   "zh": "台灣爵士",
+   "count": 3,
+   "why": ""
+  }
+ ],
+ "albums": [
+  {
+   "label": "獨立發行",
+   "country": "tw",
+   "mbRgMbid": "83c68d29-6468-4afb-a2da-76e503e5acae",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Running Youth",
+   "uncertain": "Apple 台灣站只見單曲，封面取自 CAA release",
+   "artist": "絕命青年",
+   "album": "來一場冒險",
+   "year": 2022,
+   "faction": "tw-indie-pop",
+   "genres": [
+    "rock",
+    "pop"
+   ],
+   "why": "台灣獨立流行搖滾團唯一正規專輯（7 首），單曲之外的完整作品",
+   "moodGuess": {
+    "x": 3.4,
+    "y": 0.1,
+    "z": 0.6,
+    "why": "明亮吉他流行搖滾，青春感、中快板"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/83c68d29-6468-4afb-a2da-76e503e5acae",
+    "https://coverartarchive.org/release/f910f1e6-0cf4-4062-a382-4283a7a38683/front"
+   ],
+   "spotifyName": "絕命青年"
+  },
+  {
+   "label": "Dark Horse Music",
+   "country": "tw",
+   "mbRgMbid": "65d102a2-bf86-40a2-a5dd-243aff42da11",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Bugs of Phonon",
+   "uncertain": "",
+   "artist": "聲子蟲",
+   "album": "真面目",
+   "year": 2022,
+   "faction": "tw-indie-rock",
+   "genres": [
+    "rock"
+   ],
+   "why": "台灣後搖滾／器樂搖滾代表團體，真面目為近年最受矚目的完整錄音室作",
+   "moodGuess": {
+    "x": 3.6,
+    "y": 0.9,
+    "z": -0.5,
+    "why": "厚吉他牆與推進節奏，氛圍偏冷偏重"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/65d102a2-bf86-40a2-a5dd-243aff42da11",
+    "https://music.apple.com/tw/album/1615377161"
+   ],
+   "spotifyName": "聲子蟲 Bugs of Phonon"
+  },
+  {
+   "label": "Dark Horse Music",
+   "country": "tw",
+   "mbRgMbid": "ec3d7b09-d055-460d-aa7d-65722c667888",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "MB 分類 Album，Apple 6 首（剛好 6 首）",
+   "queryAlias": "",
+   "uncertain": "6 首，介於短專輯與 EP；第二張是否算另一個高峰未有評論共識",
+   "artist": "聲子蟲",
+   "album": "午夜城",
+   "year": 2012,
+   "faction": "tw-indie-rock",
+   "genres": [
+    "rock"
+   ],
+   "why": "2012 年早期代表作，確立其城市夜景式器樂搖滾語彙",
+   "moodGuess": {
+    "x": 3.3,
+    "y": 0.7,
+    "z": -0.7,
+    "why": "夜色般的器樂搖滾，冷調鋪陳"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/ec3d7b09-d055-460d-aa7d-65722c667888",
+    "https://music.apple.com/tw/album/1616633684"
+   ],
+   "spotifyName": "聲子蟲 Bugs of Phonon"
+  },
+  {
+   "label": "Molly in Mountain",
+   "country": "tw",
+   "mbRgMbid": "",
+   "mbAbsenceProof": "MusicBrainz artist/release-group 查詢（2026-10-30）無此藝人／專輯",
+   "manualEvidenceUrls": [
+    "https://music.apple.com/tw/album/1551941512",
+    "https://www.discogs.com/release/32139711-Molly-In-Mountain-%E8%8D%92%E5%B1%B1%E8%8C%89%E8%8E%89-%E6%B0%B4%E6%B2%92%E4%B9%8B%E9%83%BD-A-Drowning-City"
+   ],
+   "releaseException": "",
+   "queryAlias": "Molly In Mountain",
+   "uncertain": "",
+   "evidence": [
+    "https://music.apple.com/tw/album/1551941512",
+    "https://www.discogs.com/release/32139711-Molly-In-Mountain-%E8%8D%92%E5%B1%B1%E8%8C%89%E8%8E%89-%E6%B0%B4%E6%B2%92%E4%B9%8B%E9%83%BD-A-Drowning-City"
+   ],
+   "artist": "荒山茉莉",
+   "album": "水沒之都",
+   "year": 2021,
+   "faction": "tw-indie-rock",
+   "genres": [
+    "rock"
+   ],
+   "why": "台灣夢幻搖滾團首張正規專輯（8 首），其餘為 EP／單曲",
+   "moodGuess": {
+    "x": 2.8,
+    "y": 0.3,
+    "z": -0.6,
+    "why": "迷濛吉他與空靈女聲，偏冷偏靜"
+   },
+   "spotifyName": "荒山茉莉 Molly in Mountain"
+  },
+  {
+   "label": "Dark Paradise Records",
+   "country": "tw",
+   "mbRgMbid": "",
+   "mbAbsenceProof": "MusicBrainz artist/release-group 查詢（2026-10-30）無此藝人／專輯",
+   "manualEvidenceUrls": [
+    "https://music.apple.com/tw/album/flow-gesture-and-spaces/1485642444",
+    "https://www.discogs.com/release/18118501-Non-Confined-Space-Minyen-Hsieh-%E9%84%AD%E5%90%84%E5%9D%87-Flow-Gesture-and-Spaces"
+   ],
+   "releaseException": "",
+   "queryAlias": "Non-Confined Space",
+   "uncertain": "",
+   "evidence": [
+    "https://music.apple.com/tw/album/flow-gesture-and-spaces/1485642444",
+    "https://www.discogs.com/release/18118501-Non-Confined-Space-Minyen-Hsieh-%E9%84%AD%E5%90%84%E5%9D%87-Flow-Gesture-and-Spaces"
+   ],
+   "artist": "非／密閉空間",
+   "album": "Flow, Gesture, and Spaces",
+   "year": 2019,
+   "faction": "tw-electronic",
+   "genres": [
+    "electronic"
+   ],
+   "why": "台灣電子／聲音藝術組合的首張專輯（10 首），Dark Paradise 發行",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 0.4,
+    "z": -0.8,
+    "why": "抽象電子質地，冷調空間感"
+   },
+   "spotifyName": "非／密閉空間"
+  },
+  {
+   "label": "Head Composer",
+   "country": "tw",
+   "mbRgMbid": "",
+   "mbAbsenceProof": "MusicBrainz artist/release-group 查詢（2026-10-30）無此藝人／專輯",
+   "manualEvidenceUrls": [
+    "https://music.apple.com/tw/album/1597610828",
+    "https://music.apple.com/tw/artist/%E9%A0%AD%E9%83%A8%E7%B5%84%E6%88%90%E8%80%85"
+   ],
+   "releaseException": "",
+   "queryAlias": "Head Composer",
+   "uncertain": "風格與評論共識僅憑 Apple 分類（另類音樂），無獨立評論佐證",
+   "evidence": [
+    "https://music.apple.com/tw/album/1597610828",
+    "https://music.apple.com/tw/artist/%E9%A0%AD%E9%83%A8%E7%B5%84%E6%88%90%E8%80%85"
+   ],
+   "artist": "頭部組成者",
+   "album": "刑天",
+   "year": 2018,
+   "faction": "tw-indie-rock",
+   "genres": [
+    "rock"
+   ],
+   "why": "台灣後搖滾團首張完整專輯（8 首），其餘為 EP／單曲",
+   "moodGuess": {
+    "x": 3.7,
+    "y": 1,
+    "z": -0.6,
+    "why": "厚重器樂搖滾，推進強、色調暗"
+   },
+   "spotifyName": "頭部組成者"
+  },
+  {
+   "label": "CROS MUSIC",
+   "country": "tw",
+   "mbRgMbid": "",
+   "mbAbsenceProof": "MusicBrainz artist/release-group 查詢（2026-10-30）無此藝人／專輯",
+   "manualEvidenceUrls": [
+    "https://music.apple.com/tw/album/%E9%B9%BF%E6%B8%AF/1732186894",
+    "https://www.discogs.com/release/29454466-%E5%90%B3%E6%9B%B8%E9%BD%8A-%E9%B9%BF%E6%B8%AF-Port-Deer"
+   ],
+   "releaseException": "",
+   "queryAlias": "吳書齊爵士樂團",
+   "uncertain": "Apple 署名「吳書齊爵士樂團」2007，Discogs 標 2015（重發）；代表作地位憑 Apple/Discogs 資料，無獨立評論",
+   "evidence": [
+    "https://music.apple.com/tw/album/%E9%B9%BF%E6%B8%AF/1732186894",
+    "https://www.discogs.com/release/29454466-%E5%90%B3%E6%9B%B8%E9%BD%8A-%E9%B9%BF%E6%B8%AF-Port-Deer"
+   ],
+   "artist": "吳書齊",
+   "album": "鹿港",
+   "year": 2007,
+   "faction": "tw-jazz",
+   "genres": [
+    "jazz"
+   ],
+   "why": "台灣爵士鋼琴家吳書齊以爵士樂團名義發行的代表錄音室作（10 首）",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 0,
+    "z": 0.5,
+    "why": "鋼琴爵士，溫暖的在地旋律，中慢板"
+   },
+   "spotifyName": "吳書齊"
+  },
+  {
+   "label": "狗毛",
+   "country": "tw",
+   "mbRgMbid": "",
+   "mbAbsenceProof": "MusicBrainz artist/release-group 查詢（2026-10-30）無此藝人／專輯",
+   "manualEvidenceUrls": [
+    "https://music.apple.com/tw/album/%E5%90%A0%E7%89%A9%E4%B9%8B%E6%AD%8C/1853535914",
+    "https://music.apple.com/tw/artist/%E7%8B%97%E6%AF%9B/339379234"
+   ],
+   "releaseException": "",
+   "queryAlias": "狗毛樂團",
+   "uncertain": "Apple 狗毛(339379234) 與狗毛樂團(1684646710) 分兩個藝人頁，是否同一團未證實；Apple 狗毛頁還混有 1994《衝動》",
+   "evidence": [
+    "https://music.apple.com/tw/album/%E5%90%A0%E7%89%A9%E4%B9%8B%E6%AD%8C/1853535914",
+    "https://music.apple.com/tw/artist/%E7%8B%97%E6%AF%9B/339379234"
+   ],
+   "artist": "狗毛",
+   "album": "吠物之歌",
+   "year": 2025,
+   "faction": "tw-indie-rock",
+   "genres": [
+    "rock"
+   ],
+   "why": "台灣搖滾團以「狗毛」名義的最新完整專輯（10 首）",
+   "moodGuess": {
+    "x": 3.5,
+    "y": 0.5,
+    "z": 0.3,
+    "why": "直白搖滾，中快板"
+   },
+   "spotifyName": "狗毛"
+  },
+  {
+   "label": "Ying-Da Chen",
+   "country": "tw",
+   "mbRgMbid": "",
+   "mbAbsenceProof": "MusicBrainz artist/release-group 查詢（2026-10-30）無此藝人／專輯",
+   "manualEvidenceUrls": [
+    "https://music.apple.com/tw/album/%E5%8B%95%E7%89%A9%E6%84%9F%E5%82%B7/1881508334",
+    "https://music.apple.com/tw/artist/%E9%99%B3%E7%A9%8E%E9%81%94"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "早期作品是否為『另一個高峰』無評論共識",
+   "evidence": [
+    "https://music.apple.com/tw/album/%E5%8B%95%E7%89%A9%E6%84%9F%E5%82%B7/1881508334",
+    "https://music.apple.com/tw/artist/%E9%99%B3%E7%A9%8E%E9%81%94"
+   ],
+   "artist": "陳穎達",
+   "album": "動物感傷",
+   "year": 2017,
+   "faction": "tw-jazz",
+   "genres": [
+    "jazz"
+   ],
+   "why": "台灣爵士鋼琴／作曲家陳穎達早期專輯（15 首）",
+   "moodGuess": {
+    "x": 2.3,
+    "y": -0.1,
+    "z": 0.3,
+    "why": "鋼琴爵士，輕巧抒情"
+   },
+   "spotifyName": "陳穎達"
+  },
+  {
+   "label": "Ying-Da Chen",
+   "country": "tw",
+   "mbRgMbid": "",
+   "mbAbsenceProof": "MusicBrainz artist/release-group 查詢（2026-10-30）無此藝人／專輯",
+   "manualEvidenceUrls": [
+    "https://music.apple.com/tw/album/%E4%BD%A0%E8%81%BD%E9%81%8Ebeige%E5%97%8E/1881507379",
+    "https://www.discogs.com/release/28006440-%E9%99%B3%E7%A9%8E%E9%81%94-%E4%BD%A0%E8%81%BD%E9%81%8E-Beige-%E5%97%8E-Do-You-Know-Beige"
+   ],
+   "releaseException": "",
+   "queryAlias": "你聽過 Beige 嗎",
+   "uncertain": "同上",
+   "evidence": [
+    "https://music.apple.com/tw/album/%E4%BD%A0%E8%81%BD%E9%81%8Ebeige%E5%97%8E/1881507379",
+    "https://www.discogs.com/release/28006440-%E9%99%B3%E7%A9%8E%E9%81%94-%E4%BD%A0%E8%81%BD%E9%81%8E-Beige-%E5%97%8E-Do-You-Know-Beige"
+   ],
+   "artist": "陳穎達",
+   "album": "你聽過Beige嗎",
+   "year": 2021,
+   "faction": "tw-jazz",
+   "genres": [
+    "jazz"
+   ],
+   "why": "陳穎達 2021 專輯（12 首），Discogs 有收錄，近年主力作",
+   "moodGuess": {
+    "x": 2.4,
+    "y": -0.2,
+    "z": 0.2,
+    "why": "當代爵士鋼琴，淡雅中性"
+   },
+   "spotifyName": "陳穎達"
+  }
+ ],
+ "notes": [
+  "範圍：sf05 後 13 位。13 位在池中皆無（seed_cards、artist-intros、其他 curation-sf*/mc* 均查無；『Molly in Mountain』僅誤中 Mountain）。",
+  "不收：潮州土狗（台灣饒舌，Apple 僅 4 支單曲，無專輯／長 EP）",
+  "不收：台北公案（台灣油漬搖滾團，Apple 僅單曲，MB／Discogs 無專輯）",
+  "不收：大師兄（同名多：政大黑音饒舌手、帶帶大師兄、動畫曲等，Apple 僅單曲，MB 該條目無專輯）",
+  "不收：不幻（Apple／MB／Discogs／WebSearch 皆查不到對應台灣藝人，無法確定身分）",
+  "不收：趙謬（台灣另類／電子創作者，Apple 僅單曲，無專輯／長 EP）",
+  "身分：絕命青年＝台灣獨立流行團（Apple 英文名 Running Youth，2021 成立）；聲子蟲＝台灣後搖團（2008）；荒山茉莉＝Molly in Mountain，台灣夢幻搖滾；非／密閉空間＝Non-Confined Space，台灣電子；頭部組成者＝Head Composer，台灣後搖；吳書齊＝台灣爵士鋼琴；陳穎達＝台灣爵士鋼琴。",
+  "聲子蟲 MB 另有《模樣國》2010（7f003ba4-fb65-40be-9b43-b482e3c763b7）未收（Apple 無）。",
+  "MB 釘住 3 張（絕命青年、聲子蟲×2），人工身分 7 張。WebSearch 用 3 次。"
+ ]
+}

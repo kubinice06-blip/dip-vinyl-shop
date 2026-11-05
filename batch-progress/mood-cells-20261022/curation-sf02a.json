@@ -1,0 +1,820 @@
+{
+ "group": "sf02a",
+ "factions": [
+  {
+   "id": "jp-indie",
+   "zh": "日本インディ",
+   "count": 7,
+   "why": ""
+  },
+  {
+   "id": "jp-metal",
+   "zh": "日本ヘヴィ",
+   "count": 2,
+   "why": ""
+  },
+  {
+   "id": "jp-rock",
+   "zh": "日本ロック",
+   "count": 5,
+   "why": ""
+  },
+  {
+   "id": "jp-pop",
+   "zh": "日本ポップ",
+   "count": 3,
+   "why": ""
+  },
+  {
+   "id": "jp-psych",
+   "zh": "日本サイケ",
+   "count": 2,
+   "why": ""
+  },
+  {
+   "id": "jp-shoegaze",
+   "zh": "日本シューゲイズ",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "jp-folk",
+   "zh": "日本フォーク",
+   "count": 2,
+   "why": ""
+  },
+  {
+   "id": "jp-electronic",
+   "zh": "日本エレクトロニカ",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "jp-idol",
+   "zh": "日本アイドル歌謡",
+   "count": 2,
+   "why": ""
+  }
+ ],
+ "albums": [
+  {
+   "artist": "betcover!!",
+   "album": "時間",
+   "year": 2021,
+   "label": "",
+   "country": "jp",
+   "faction": "jp-indie",
+   "genres": [
+    "rock",
+    "jazz"
+   ],
+   "why": "鬼才・柳瀬二郎の突破作；ジャズ、ポストパンク、歌謡が捻れて同居する、betcover!!最高評価の一枚",
+   "moodGuess": {
+    "x": 3.6,
+    "y": 0.3,
+    "z": -0.6,
+    "why": "歪んだ歌声、不穏なジャズロック"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/3daf345b-fda5-4713-a326-d419cfd79054",
+    "https://coverartarchive.org/release-group/3daf345b-fda5-4713-a326-d419cfd79054/front",
+    "https://music.apple.com/jp/album/%E6%99%82%E9%96%93/1579826439"
+   ],
+   "spotifyName": "betcover!!",
+   "mbRgMbid": "3daf345b-fda5-4713-a326-d419cfd79054",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "betcover!!",
+   "album": "卵",
+   "year": 2022,
+   "label": "",
+   "country": "jp",
+   "faction": "jp-indie",
+   "genres": [
+    "rock",
+    "jazz"
+   ],
+   "why": "『時間』に続く大編成寄りの完成形、批評でも高評価の第二の頂点",
+   "moodGuess": {
+    "x": 3.5,
+    "y": 0.4,
+    "z": -0.4,
+    "why": "不穏さ残るジャズ混じりのロック"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/c4d03a30-0293-4e59-91e5-9582e1d22813",
+    "https://coverartarchive.org/release-group/c4d03a30-0293-4e59-91e5-9582e1d22813/front",
+    "https://music.apple.com/jp/album/%E5%8D%B5/1658011542"
+   ],
+   "spotifyName": "betcover!!",
+   "mbRgMbid": "c4d03a30-0293-4e59-91e5-9582e1d22813",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "クラムボン",
+   "album": "imagination",
+   "year": 2003,
+   "label": "Columbia",
+   "country": "jp",
+   "faction": "jp-indie",
+   "genres": [
+    "pop",
+    "rock"
+   ],
+   "why": "原田郁子・ミト・伊藤大助の三人組が手応えを掴んだ代表作；ピアノとリズムの柔らかい解像感",
+   "moodGuess": {
+    "x": 2.8,
+    "y": -0.3,
+    "z": 0.8,
+    "why": "透明なピアノと軽い跳ね、温かい歌"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/5b61ccc7-74b0-3621-abee-55931402a688",
+    "https://coverartarchive.org/release-group/5b61ccc7-74b0-3621-abee-55931402a688/front",
+    "https://music.apple.com/jp/album/imagination/259941845"
+   ],
+   "spotifyName": "クラムボン",
+   "mbRgMbid": "5b61ccc7-74b0-3621-abee-55931402a688",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Clammbon",
+   "uncertain": ""
+  },
+  {
+   "artist": "DIR EN GREY",
+   "album": "UROBOROS",
+   "year": 2008,
+   "label": "Firewall Div.",
+   "country": "jp",
+   "faction": "jp-metal",
+   "genres": [
+    "metal",
+    "rock"
+   ],
+   "why": "国際的評価を決めた重量級作；ダークなプログレッシブ・ヘヴィネスと京の多彩な声",
+   "moodGuess": {
+    "x": 4.2,
+    "y": 1.4,
+    "z": -1.2,
+    "why": "重低域の壁と咆哮、陰鬱"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/f3a260b7-669f-3f0c-a8d6-21886fade241",
+    "https://coverartarchive.org/release-group/f3a260b7-669f-3f0c-a8d6-21886fade241/front",
+    "https://music.apple.com/jp/album/uroboros/293906382"
+   ],
+   "spotifyName": "DIR EN GREY",
+   "mbRgMbid": "f3a260b7-669f-3f0c-a8d6-21886fade241",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Dir en grey",
+   "uncertain": ""
+  },
+  {
+   "artist": "DIR EN GREY",
+   "album": "Withering to death.",
+   "year": 2005,
+   "label": "Firewall Div.",
+   "country": "jp",
+   "faction": "jp-metal",
+   "genres": [
+    "metal",
+    "rock"
+   ],
+   "why": "ニューメタルから叙情と凶暴を往復する転換期の傑作、バンド絶頂期の一枚",
+   "moodGuess": {
+    "x": 4.3,
+    "y": 1.3,
+    "z": -1.0,
+    "why": "攻撃的なリフと叙情、重い"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/610ecea8-5221-32b0-83d6-378a47202ec7",
+    "https://coverartarchive.org/release-group/610ecea8-5221-32b0-83d6-378a47202ec7/front"
+   ],
+   "spotifyName": "DIR EN GREY",
+   "mbRgMbid": "610ecea8-5221-32b0-83d6-378a47202ec7",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Dir en grey",
+   "uncertain": ""
+  },
+  {
+   "artist": "GRASS VALLEY",
+   "album": "LOGOS～行～",
+   "year": 1989,
+   "label": "",
+   "country": "jp",
+   "faction": "jp-rock",
+   "genres": [
+    "rock",
+    "pop"
+   ],
+   "why": "80年代後半の東京ニューウェーヴ系ロックバンド；代表的なアルバムとして2019年リマスター配信",
+   "moodGuess": {
+    "x": 3.3,
+    "y": 0.0,
+    "z": -0.2,
+    "why": "角のあるギターと耽美な歌"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/67bba02a-1bdb-4db3-8d56-438f18b98b5b",
+    "https://coverartarchive.org/release-group/67bba02a-1bdb-4db3-8d56-438f18b98b5b/front",
+    "https://music.apple.com/jp/album/logos-%E8%A1%8C-2019-remastered/1609000433"
+   ],
+   "spotifyName": "GRASS VALLEY",
+   "mbRgMbid": "67bba02a-1bdb-4db3-8d56-438f18b98b5b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Spotify の GRASS VALLEY が1980年代のこのバンドかどうか確定はできない（同名候補なし、2019リマスターが配信されている点から推定）"
+  },
+  {
+   "artist": "きのこ帝国",
+   "album": "フェイクワールドワンダーランド",
+   "year": 2014,
+   "label": "UK.PROJECT",
+   "country": "jp",
+   "faction": "jp-indie",
+   "genres": [
+    "rock"
+   ],
+   "why": "シューゲイズ的な轟音と佐藤千亜妃の湿った歌が、メジャー期を前に結晶した代表作",
+   "moodGuess": {
+    "x": 3.2,
+    "y": 1.0,
+    "z": -0.4,
+    "why": "轟音ギターの霧、湿った歌声"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/7610cf6d-5cb7-498d-9784-6c3201391725",
+    "https://coverartarchive.org/release-group/7610cf6d-5cb7-498d-9784-6c3201391725/front",
+    "https://music.apple.com/jp/album/%E3%83%95%E3%82%A7%E3%82%A4%E3%82%AF%E3%83%AF%E3%83%BC%E3%83%AB%E3%83%89%E3%83%AF%E3%83%B3%E3%83%80%E3%83%BC%E3%83%A9%E3%83%B3%E3%83%89/926192006"
+   ],
+   "spotifyName": "Kinokoteikoku",
+   "mbRgMbid": "7610cf6d-5cb7-498d-9784-6c3201391725",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Kinokoteikoku",
+   "uncertain": ""
+  },
+  {
+   "artist": "きのこ帝国",
+   "album": "愛のゆくえ",
+   "year": 2016,
+   "label": "EMI Records",
+   "country": "jp",
+   "faction": "jp-indie",
+   "genres": [
+    "rock"
+   ],
+   "why": "メジャー1作目、轟音と歌ものの均衡が最も取れたもう一つの高峰",
+   "moodGuess": {
+    "x": 3.0,
+    "y": 0.7,
+    "z": -0.1,
+    "why": "歪みと切ない歌メロ"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/63baae10-aed7-40e2-8bb4-977853384d7a",
+    "https://coverartarchive.org/release-group/63baae10-aed7-40e2-8bb4-977853384d7a/front",
+    "https://music.apple.com/jp/album/aino-yukue/1440658181"
+   ],
+   "spotifyName": "Kinokoteikoku",
+   "mbRgMbid": "63baae10-aed7-40e2-8bb4-977853384d7a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Kinokoteikoku",
+   "uncertain": ""
+  },
+  {
+   "artist": "KIRINJI",
+   "album": "3",
+   "year": 2000,
+   "label": "Warner Music Japan",
+   "country": "jp",
+   "faction": "jp-pop",
+   "genres": [
+    "pop",
+    "soul"
+   ],
+   "why": "堀込兄弟時代の名盤；洒脱なAOR／ソウルと文学的な歌詞で都市型ポップの基準になった",
+   "moodGuess": {
+    "x": 2.7,
+    "y": -0.2,
+    "z": 0.8,
+    "why": "滑らかなグルーヴ、温かい洒脱"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/9929a41f-7ed6-4f64-8ac0-46df5c20880a",
+    "https://coverartarchive.org/release-group/9929a41f-7ed6-4f64-8ac0-46df5c20880a/front",
+    "https://music.apple.com/jp/album/3/258411790"
+   ],
+   "spotifyName": "KIRINJI",
+   "mbRgMbid": "9929a41f-7ed6-4f64-8ac0-46df5c20880a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "キリンジ",
+   "uncertain": ""
+  },
+  {
+   "artist": "KIRINJI",
+   "album": "Fine",
+   "year": 2001,
+   "label": "Warner Music Japan",
+   "country": "jp",
+   "faction": "jp-pop",
+   "genres": [
+    "pop",
+    "soul"
+   ],
+   "why": "『3』に並ぶ堀込兄弟期の高峰、練り込まれたアレンジが光る第二作",
+   "moodGuess": {
+    "x": 2.8,
+    "y": -0.1,
+    "z": 0.7,
+    "why": "洗練されたバンドサウンド"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/d18aeb61-f850-4ac0-a977-09dab20df711",
+    "https://coverartarchive.org/release-group/d18aeb61-f850-4ac0-a977-09dab20df711/front",
+    "https://music.apple.com/jp/album/fine/258482600"
+   ],
+   "spotifyName": "KIRINJI",
+   "mbRgMbid": "d18aeb61-f850-4ac0-a977-09dab20df711",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "キリンジ",
+   "uncertain": ""
+  },
+  {
+   "artist": "OGRE YOU ASSHOLE",
+   "album": "homely",
+   "year": 2011,
+   "label": "Pony Canyon",
+   "country": "jp",
+   "faction": "jp-psych",
+   "genres": [
+    "rock"
+   ],
+   "why": "サイケ／クラウトを日本語で内面化した転機作；反復と余白の気配が代表作とされる",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 0.5,
+    "z": -0.6,
+    "why": "反復する低温のギター、浮遊"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/4f47c792-175b-4aed-a444-336cb7f3b236",
+    "https://coverartarchive.org/release-group/4f47c792-175b-4aed-a444-336cb7f3b236/front",
+    "https://music.apple.com/jp/album/homely/455914169"
+   ],
+   "spotifyName": "OGRE YOU ASSHOLE",
+   "mbRgMbid": "4f47c792-175b-4aed-a444-336cb7f3b236",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "オウガ・ユー・アスホール",
+   "uncertain": ""
+  },
+  {
+   "artist": "OGRE YOU ASSHOLE",
+   "album": "100年後",
+   "year": 2012,
+   "label": "Pony Canyon",
+   "country": "jp",
+   "faction": "jp-psych",
+   "genres": [
+    "rock"
+   ],
+   "why": "反復グルーヴとポップが最も均衡した第二の頂点、バンドの評価を固めた",
+   "moodGuess": {
+    "x": 2.9,
+    "y": 0.4,
+    "z": -0.4,
+    "why": "淡々とした反復、浮かぶ旋律"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/c38904ca-39fb-4efe-acad-e208a651af6f",
+    "https://coverartarchive.org/release-group/c38904ca-39fb-4efe-acad-e208a651af6f/front"
+   ],
+   "spotifyName": "OGRE YOU ASSHOLE",
+   "mbRgMbid": "c38904ca-39fb-4efe-acad-e208a651af6f",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "オウガ・ユー・アスホール",
+   "uncertain": ""
+  },
+  {
+   "artist": "THE BACK HORN",
+   "album": "人間プログラム",
+   "year": 2001,
+   "label": "Speedstar",
+   "country": "jp",
+   "faction": "jp-rock",
+   "genres": [
+    "rock"
+   ],
+   "why": "初期の情念と焦燥を剥き出しにした出世作、バンドの原点を示す",
+   "moodGuess": {
+    "x": 4.0,
+    "y": 0.6,
+    "z": -0.1,
+    "why": "疾走するバンド、切迫した歌"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/c62d1d2b-4ccd-3c4e-a6c2-22766ca76d83",
+    "https://coverartarchive.org/release-group/c62d1d2b-4ccd-3c4e-a6c2-22766ca76d83/front"
+   ],
+   "spotifyName": "THE BACK HORN",
+   "mbRgMbid": "c62d1d2b-4ccd-3c4e-a6c2-22766ca76d83",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "THE BACK HORN",
+   "album": "太陽の中の生活",
+   "year": 2006,
+   "label": "Speedstar",
+   "country": "jp",
+   "faction": "jp-rock",
+   "genres": [
+    "rock"
+   ],
+   "why": "成熟期の代表作、叙情とハードさが両立したアルバム",
+   "moodGuess": {
+    "x": 3.7,
+    "y": 0.6,
+    "z": 0.0,
+    "why": "力強いバンドと叙情の歌メロ"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/2858dfab-60e2-3991-ab40-197bb6f632d5",
+    "https://coverartarchive.org/release-group/2858dfab-60e2-3991-ab40-197bb6f632d5/front"
+   ],
+   "spotifyName": "THE BACK HORN",
+   "mbRgMbid": "2858dfab-60e2-3991-ab40-197bb6f632d5",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Thee Michelle Gun Elephant",
+   "album": "Chicken Zombies",
+   "year": 1997,
+   "label": "Triad",
+   "country": "jp",
+   "faction": "jp-rock",
+   "genres": [
+    "rock"
+   ],
+   "why": "ガレージ・ロックの日本的完成形、4枚目で初期の勢いが最高潮",
+   "moodGuess": {
+    "x": 4.5,
+    "y": 0.5,
+    "z": -0.4,
+    "why": "荒く疾走するガレージ、嗄れ声"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/5792071d-4809-48eb-aa8e-c0267326fda1",
+    "https://coverartarchive.org/release-group/5792071d-4809-48eb-aa8e-c0267326fda1/front"
+   ],
+   "spotifyName": "Thee Michelle Gun Elephant",
+   "mbRgMbid": "5792071d-4809-48eb-aa8e-c0267326fda1",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "ミッシェル・ガン・エレファント",
+   "uncertain": ""
+  },
+  {
+   "artist": "Thee Michelle Gun Elephant",
+   "album": "Casanova Snake",
+   "year": 2000,
+   "label": "Triad",
+   "country": "jp",
+   "faction": "jp-rock",
+   "genres": [
+    "rock"
+   ],
+   "why": "解散前の国民的ロックバンド期の決定版、重心の低いロックンロール",
+   "moodGuess": {
+    "x": 4.4,
+    "y": 0.7,
+    "z": -0.3,
+    "why": "重く突進するギター、猛烈"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/dae2fb08-a9ff-3bc1-8faa-e3d552da43e2",
+    "https://coverartarchive.org/release-group/dae2fb08-a9ff-3bc1-8faa-e3d552da43e2/front",
+    "https://music.apple.com/jp/album/casanova-snake-remastered/1826474591"
+   ],
+   "spotifyName": "Thee Michelle Gun Elephant",
+   "mbRgMbid": "dae2fb08-a9ff-3bc1-8faa-e3d552da43e2",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "ミッシェル・ガン・エレファント",
+   "uncertain": ""
+  },
+  {
+   "artist": "Yogee New Waves",
+   "album": "PARAISO",
+   "year": 2014,
+   "label": "CAFE BOHEMIA",
+   "country": "jp",
+   "faction": "jp-indie",
+   "genres": [
+    "pop",
+    "rock"
+   ],
+   "why": "シティポップ以降の新世代を代表する初作；軽やかな海辺の質感",
+   "moodGuess": {
+    "x": 3.0,
+    "y": -0.4,
+    "z": 0.9,
+    "why": "軽いギターと浮遊するメロディ"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/799ee082-ca68-491d-b4b3-961bfcc26b95",
+    "https://coverartarchive.org/release-group/799ee082-ca68-491d-b4b3-961bfcc26b95/front"
+   ],
+   "spotifyName": "Yogee New Waves",
+   "mbRgMbid": "799ee082-ca68-491d-b4b3-961bfcc26b95",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Yogee New Waves",
+   "album": "WAVES",
+   "year": 2017,
+   "label": "CAFE BOHEMIA",
+   "country": "jp",
+   "faction": "jp-indie",
+   "genres": [
+    "pop",
+    "rock"
+   ],
+   "why": "サウンドの幅が広がり評価を高めた第二作、バンドの代表作",
+   "moodGuess": {
+    "x": 3.2,
+    "y": -0.3,
+    "z": 0.8,
+    "why": "明るいギターポップとグルーヴ"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/a6ac1c59-d615-4b45-93fe-bbe6a2c4aef6",
+    "https://coverartarchive.org/release-group/a6ac1c59-d615-4b45-93fe-bbe6a2c4aef6/front"
+   ],
+   "spotifyName": "Yogee New Waves",
+   "mbRgMbid": "a6ac1c59-d615-4b45-93fe-bbe6a2c4aef6",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "yuragi",
+   "album": "Still Dreaming, Still Deafening",
+   "year": 2018,
+   "label": "",
+   "country": "jp",
+   "faction": "jp-shoegaze",
+   "genres": [
+    "rock"
+   ],
+   "why": "日本のシューゲイズ／ドリームポップ新世代、轟音の初フル作",
+   "moodGuess": {
+    "x": 3.0,
+    "y": 1.1,
+    "z": -0.3,
+    "why": "霞む轟音と淡い声"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/6b1a4176-0cab-4b9c-ba74-c3ae79a05f0c",
+    "https://coverartarchive.org/release-group/6b1a4176-0cab-4b9c-ba74-c3ae79a05f0c/front"
+   ],
+   "spotifyName": "yuragi",
+   "mbRgMbid": "6b1a4176-0cab-4b9c-ba74-c3ae79a05f0c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "揺らぎ",
+   "uncertain": "Spotify の yuragi が MB の『揺らぎ（シューゲイズ）』と同一かは盤名で推定（他の候補は歌手・ノイズ）"
+  },
+  {
+   "artist": "kiki vivi lily",
+   "album": "vivid",
+   "year": 2019,
+   "label": "",
+   "country": "jp",
+   "faction": "jp-pop",
+   "genres": [
+    "pop",
+    "electronic"
+   ],
+   "why": "代表作として挙がる初期フル作、浮遊するベッドルーム・ポップ",
+   "moodGuess": {
+    "x": 2.4,
+    "y": -0.5,
+    "z": 0.5,
+    "why": "軽く漂うポップ、柔らかい声"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/1b7cad29-0bf9-456f-814f-5b1522734ec6",
+    "https://coverartarchive.org/release-group/1b7cad29-0bf9-456f-814f-5b1522734ec6/front"
+   ],
+   "spotifyName": "kiki vivi lily",
+   "mbRgMbid": "1b7cad29-0bf9-456f-814f-5b1522734ec6",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "mei ehara",
+   "album": "Sway",
+   "year": 2017,
+   "label": "",
+   "country": "jp",
+   "faction": "jp-folk",
+   "genres": [
+    "folk",
+    "pop"
+   ],
+   "why": "江原めいの代表作、静かな弾き語りに小さな室内楽アレンジ",
+   "moodGuess": {
+    "x": 1.9,
+    "y": -0.7,
+    "z": 0.5,
+    "why": "小声と生楽器、静かで空気感"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/1bb88547-2fa1-475d-8320-f986e99b514e",
+    "https://coverartarchive.org/release-group/1bb88547-2fa1-475d-8320-f986e99b514e/front"
+   ],
+   "spotifyName": "mei ehara",
+   "mbRgMbid": "1bb88547-2fa1-475d-8320-f986e99b514e",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "江原めい",
+   "uncertain": ""
+  },
+  {
+   "artist": "mei ehara",
+   "album": "Ampersands",
+   "year": 2020,
+   "label": "",
+   "country": "jp",
+   "faction": "jp-folk",
+   "genres": [
+    "folk",
+    "pop"
+   ],
+   "why": "Swayに続く第二の頂点、細密なバンド・サウンドへ広がった",
+   "moodGuess": {
+    "x": 2.1,
+    "y": -0.6,
+    "z": 0.4,
+    "why": "控えめなバンド、淡い歌"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/722ec427-5818-492d-bec3-ec15b6915ad9",
+    "https://coverartarchive.org/release-group/722ec427-5818-492d-bec3-ec15b6915ad9/front"
+   ],
+   "spotifyName": "mei ehara",
+   "mbRgMbid": "722ec427-5818-492d-bec3-ec15b6915ad9",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "江原めい",
+   "uncertain": ""
+  },
+  {
+   "artist": "NTsKi",
+   "album": "Orca",
+   "year": 2021,
+   "label": "",
+   "country": "jp",
+   "faction": "jp-electronic",
+   "genres": [
+    "electronic",
+    "pop"
+   ],
+   "why": "NTsKi の初フルアルバム、日本的な旋律とビートの折衷",
+   "moodGuess": {
+    "x": 2.6,
+    "y": -0.2,
+    "z": -0.2,
+    "why": "細かいビートと淡いメロディ"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/86f67782-7f03-4c8f-b923-9e03c766007e",
+    "https://coverartarchive.org/release-group/86f67782-7f03-4c8f-b923-9e03c766007e/front"
+   ],
+   "spotifyName": "NTsKi",
+   "mbRgMbid": "86f67782-7f03-4c8f-b923-9e03c766007e",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Orca は MB で Album（トラック数未確認）"
+  },
+  {
+   "artist": "Wink",
+   "album": "Especially For You ～優しさにつつまれて～",
+   "year": 1989,
+   "label": "Polystar",
+   "country": "jp",
+   "faction": "jp-idol",
+   "genres": [
+    "pop"
+   ],
+   "why": "鈴木早智子・相田翔子のデュオ、ユーロビート歌謡の代表作",
+   "moodGuess": {
+    "x": 3.4,
+    "y": -0.5,
+    "z": 0.6,
+    "why": "明るいシンセ、無表情の歌"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/07f3dece-ab9b-3b8d-92d7-d6428225e4f9",
+    "https://coverartarchive.org/release-group/07f3dece-ab9b-3b8d-92d7-d6428225e4f9/front"
+   ],
+   "spotifyName": "Wink",
+   "mbRgMbid": "07f3dece-ab9b-3b8d-92d7-d6428225e4f9",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "ウィンク",
+   "uncertain": ""
+  },
+  {
+   "artist": "Wink",
+   "album": "Twin Memories",
+   "year": 1989,
+   "label": "Polystar",
+   "country": "jp",
+   "faction": "jp-idol",
+   "genres": [
+    "pop"
+   ],
+   "why": "同じ1989年、「淋しい熱帯魚」収録の絶頂期アルバム",
+   "moodGuess": {
+    "x": 3.5,
+    "y": -0.5,
+    "z": 0.5,
+    "why": "軽いユーロビート、冷めた歌"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/bfab70cd-a048-397b-8baa-577c41d840df",
+    "https://coverartarchive.org/release-group/bfab70cd-a048-397b-8baa-577c41d840df/front"
+   ],
+   "spotifyName": "Wink",
+   "mbRgMbid": "bfab70cd-a048-397b-8baa-577c41d840df",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "ウィンク",
+   "uncertain": ""
+  }
+ ],
+ "notes": [
+  "池照合：15 位都不在 seed_cards（子字串誤中 AMM／Allroy's Revenge／iri／Hole／Wink 系皆為他人，已人工排除），data/artist-intros 與 aliases 亦無",
+  "Wink：MB 為 Japanese pop duo（149b3826）；池中沒有同名",
+  "yuragi：Spotify 小寫 yuragi，MB 有 歌手／噪音／揺らぎ（シューゲイズ）三個同名，依盤名推定為後者",
+  "各盤封面為 CAA release-group front（皆 307 轉址存在）；homely 無 CAA 改 iTunes",
+  "kiki vivi lily：另有 Tasty(2021) 未收，只收一張",
+  "betcover!! 兩張：時間、卵；中学生(2019) 未收",
+  "label 欄部分為推定或留空，建卡時以 MB 為準"
+ ]
+}

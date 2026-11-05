@@ -1,0 +1,38 @@
+{
+ "batch": "add-20261030-sf08",
+ "cards": 59,
+ "written": {
+  "cardCatalog": 59,
+  "kvKeys": 59,
+  "seedRows": 59,
+  "previewReady": 57,
+  "previewUnavailable": 2
+ },
+ "review": {
+  "by": "cloud-main",
+  "cards": 59,
+  "changed": [
+   "desc2:MV & EE|Space Homestead"
+  ]
+ },
+ "qa": {
+  "research": "pass",
+  "hooks": "pass",
+  "out": "pass",
+  "prepareGate": "0 error",
+  "publishedGate": "0 error"
+ },
+ "pendingLocal": {
+  "kv": "無",
+  "listeners": [],
+  "apexEvidence": [],
+  "genreTree": "已重建",
+  "albumOverrides": "無"
+ },
+ "artistIntro": {
+  "roster": "batch-progress/artist-intro/roster-sf08.json",
+  "batch": "ar-d-208",
+  "artists": 40,
+  "state": "cut"
+ }
+}

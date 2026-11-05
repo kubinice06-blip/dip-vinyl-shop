@@ -21,21 +21,38 @@
    },
    "ratings": {
     "classic": 5,
-    "obscurity": 3,
+    "obscurity": 5,
     "accessibility": 3,
     "listeners": null,
-    "source": "manual:classical-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 3,
+     "accessibility": 3,
+     "source": "manual:classical-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "epic"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：發行即被譽為錄音史瑰寶，至今仍被 BBC Music 等列為《Fidelio》首選基準錄音｜L=86"
    },
-   "rarity": "epic",
+   "rarity": "legendary",
    "apexAssessment": {
-    "eligible": true,
-    "tier": "hall",
-    "reason": "具體收錄：EMI《Great Recordings of the Century》。已向 MusicBrainz 的 GROC 系列實體（096c110a）逐筆核對 150 筆成員，該系列收有 Klemperer／Philharmonia 的《Fidelio》；EMI 亦以 GROC 版號單獨發行（EMI Classics 5 67361 2 / 5 67364 2）。",
-    "evidenceUrls": [
-     "https://musicbrainz.org/series/096c110a-e0f4-4628-b3f4-46c7bbf8458b",
-     "https://www.amazon.com/Beethoven-Fidelio-Great-Recordings-Century/dp/B00004VVZB"
-    ]
+    "eligible": false,
+    "tier": null,
+    "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。《Fidelio》首選基準錄音＝該曲第一名盤（5 星），非跨類型正典",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": true,
+     "tier": "hall",
+     "reason": "具體收錄：EMI《Great Recordings of the Century》。已向 MusicBrainz 的 GROC 系列實體（096c110a）逐筆核對 150 筆成員，該系列收有 Klemperer／Philharmonia 的《Fidelio》；EMI 亦以 GROC 版號單獨發行（EMI Classics 5 67361 2 / 5 67364 2）。",
+     "evidenceUrls": [
+      "https://musicbrainz.org/series/096c110a-e0f4-4628-b3f4-46c7bbf8458b",
+      "https://www.amazon.com/Beethoven-Fidelio-Great-Recordings-Century/dp/B00004VVZB"
+     ]
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "柯芬園那一季，他連舞台調度都不肯交給別人。1961 年那次演出的隔年，Klemperer 在 2 月與 3 月進倫敦 Kingsway Hall，為 EMI 錄下他唯一一份錄音室《Fidelio》，由 Philharmonia 樂團與合唱團擔綱。Leonore 本是女高音角色，這一版改由次女高音 Christa Ludwig 唱；唱片問世時就被形容成錄音史的光榮之一，發行廠牌至今仍沿用這句話。Beethoven 一生只寫過這一齣歌劇。",
@@ -57,8 +74,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": false,
-    "apexPool": true
+    "seedCards": true,
+    "apexPool": false
    }
   },
   {
@@ -79,22 +96,39 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 5,
+    "classic": 4,
     "obscurity": 2,
     "accessibility": 2,
     "listeners": null,
-    "source": "manual:classical-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 2,
+     "accessibility": 2,
+     "source": "manual:classical-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：明星陣容名錄音，但評論褒貶並存（Richter 本人不滿），非該曲公認唯一首選；經典度 5→4、殿堂不成立"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
-    "eligible": true,
-    "tier": "hall",
-    "reason": "具體收錄：EMI《Great Recordings of the Century》。MB GROC 系列成員清單中列有「Beethoven: Triple Concerto / Brahms: Double Concerto」，即本 1969 錄音的 GROC 版（與 Szell／Cleveland 的布拉姆斯雙重協奏曲同碟發行）。",
-    "evidenceUrls": [
-     "https://musicbrainz.org/series/096c110a-e0f4-4628-b3f4-46c7bbf8458b",
-     "https://www.amazon.com/Beethoven-Triple-Concerto-Brahms-Double/dp/B00000I7VO"
-    ]
+    "eligible": false,
+    "tier": null,
+    "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。古典名錄音但評價兩極（Lebrecht 最差錄音名單），非跨類型正典",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": true,
+     "tier": "hall",
+     "reason": "具體收錄：EMI《Great Recordings of the Century》。MB GROC 系列成員清單中列有「Beethoven: Triple Concerto / Brahms: Double Concerto」，即本 1969 錄音的 GROC 版（與 Szell／Cleveland 的布拉姆斯雙重協奏曲同碟發行）。",
+     "evidenceUrls": [
+      "https://musicbrainz.org/series/096c110a-e0f4-4628-b3f4-46c7bbf8458b",
+      "https://www.amazon.com/Beethoven-Triple-Concerto-Brahms-Double/dp/B00000I7VO"
+     ]
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "錄完之後，鋼琴家公開否認了這份唱片。1969 年 9 月，Oistrakh、Rostropovich 與 Richter 三位獨奏在柏林集合，由 Karajan 指揮 Berlin Philharmonic 錄下這首三重協奏曲。Richter 與 Karajan 相處不睦，錄音一結束他便公開撇清，而發行廠牌的介紹裡也直言過程並不平靜。評價自此兩極，同一份錄音有人當經典，也有人列為敗筆。Beethoven 原是為學生魯道夫大公寫下這首曲子。",
@@ -114,8 +148,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": false,
-    "apexPool": true
+    "seedCards": true,
+    "apexPool": false
    }
   },
   {
@@ -136,14 +170,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 5,
+    "classic": 4,
     "obscurity": 3,
     "accessibility": 3,
     "listeners": null,
-    "source": "manual:classical-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 3,
+     "accessibility": 3,
+     "source": "manual:classical-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "epic"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：DG 1972 版權威錄音之一，但 F-D 正典版是與 Moore 的 EMI 系列"
    },
-   "rarity": "epic",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -225,7 +268,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/2f/98/f2/2f98f2ec-618d-7cf0-db3e-e9e4f2596b67/mzaf_11282648276976520894.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/c9/32/01/c932011c-9ff2-b3fe-72eb-b9f1b1220d06/mzaf_16014004448371005196.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -340,7 +383,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview124/v4/81/ea/11/81ea112a-f4d9-8fb8-3636-c1055600347f/mzaf_5523786845196804625.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview124/v4/0c/28/68/0c2868ce-3fb4-b7cf-2900-e7c4225c1b4f/mzaf_529291330957242927.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -436,7 +479,7 @@
     "source": "manual:classical-rubric",
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -454,7 +497,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview122/v4/3e/a5/70/3ea57085-09b7-9e0c-7a26-e449d68239d9/mzaf_17166652947424789210.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview112/v4/0a/17/24/0a172417-dfe9-ce50-4104-d3def36a4c6f/mzaf_961032707751940238.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -491,14 +534,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 5,
-    "obscurity": 4,
-    "accessibility": 4,
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 2,
     "listeners": null,
-    "source": "manual:classical-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "manual:classical-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "legendary"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：Ferrier 名錄音、旋律抒情；硬蕊 4→2、冷門 4→3（多次再版）"
    },
-   "rarity": "epic",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -547,21 +599,38 @@
    },
    "ratings": {
     "classic": 5,
-    "obscurity": 3,
-    "accessibility": 3,
+    "obscurity": 5,
+    "accessibility": 2,
     "listeners": null,
-    "source": "manual:classical-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 3,
+     "accessibility": 3,
+     "source": "manual:classical-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "epic"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：藝術歌曲錄音史公認《詩人之戀》首選版本之一，殿堂成立；藝術歌曲易入耳，硬蕊 2｜L=16"
    },
    "rarity": "epic",
    "apexAssessment": {
-    "eligible": true,
-    "tier": "hall",
-    "reason": "具體收錄：DG《The Originals》。MB 的 DG「The Originals」系列成員清單中列有「Schumann: Dichterliebe / Schubert, Beethoven: Lieder」，標題與本卡釘定的 RG 完全一致。",
-    "evidenceUrls": [
-     "https://musicbrainz.org/series/3eec5213-6e04-4982-8a54-4539ab469f11",
-     "https://www.prestomusic.com/classical/products/7930711--schumann-dichterliebe"
-    ]
+    "eligible": false,
+    "tier": null,
+    "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。藝術歌曲首選版本之一，屬類型內 5 星",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": true,
+     "tier": "hall",
+     "reason": "具體收錄：DG《The Originals》。MB 的 DG「The Originals」系列成員清單中列有「Schumann: Dichterliebe / Schubert, Beethoven: Lieder」，標題與本卡釘定的 RG 完全一致。",
+     "evidenceUrls": [
+      "https://musicbrainz.org/series/3eec5213-6e04-4982-8a54-4539ab469f11",
+      "https://www.prestomusic.com/classical/products/7930711--schumann-dichterliebe"
+     ]
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "一個結尾的高音，被說成這套歌曲錄音裡最震撼的聲音。指的是〈Ich grolle nicht〉收尾的那個高音 A。1965 年 10 月底到 11 月初，Wunderlich 與鋼琴家 Hubert Giesen 在慕尼黑為 DG 錄下 Schumann《Dichterliebe》全套十六首，Giesen 既是他的伴奏也是他的藝術導師，原盤 1966 年發行。兩人隔年 9 月 4 日開完最後一場獨唱會，同月 17 日他因意外辭世，得年 35 歲。",
@@ -582,8 +651,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": false,
-    "apexPool": true
+    "seedCards": true,
+    "apexPool": false
    }
   },
   {
@@ -606,20 +675,37 @@
    "ratings": {
     "classic": 5,
     "obscurity": 3,
-    "accessibility": 3,
+    "accessibility": 2,
     "listeners": null,
-    "source": "manual:classical-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 3,
+     "accessibility": 3,
+     "source": "manual:classical-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "epic"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：Chopin 圓舞曲參考錄音、Penguin Guide 級名盤；殿堂成立。旋律性高，硬蕊度改 2"
    },
-   "rarity": "epic",
+   "rarity": "uncommon",
    "apexAssessment": {
-    "eligible": true,
-    "tier": "hall",
-    "reason": "具體收錄：EMI《Great Recordings of the Century》。MB GROC 系列成員清單中列有「Waltzes nos. 1-14 / Barcarolle op. 60 / Nocturne op. 27 no. 2 / Mazurka op. 50 no. 3」，即本卡 RG 的 EMI 再版編成；李帕第基金會亦以 GROC 專頁列出。另有企鵝指南帶花評等。",
-    "evidenceUrls": [
-     "https://musicbrainz.org/series/096c110a-e0f4-4628-b3f4-46c7bbf8458b",
-     "https://www.dinulipatti.org/great-recordings-of-the-century-chopin-fr-a110"
-    ]
+    "eligible": false,
+    "tier": null,
+    "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。古典圈參考錄音，Penguin 級名盤，但非古典樂迷少知，屬類型 5 星",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": true,
+     "tier": "hall",
+     "reason": "具體收錄：EMI《Great Recordings of the Century》。MB GROC 系列成員清單中列有「Waltzes nos. 1-14 / Barcarolle op. 60 / Nocturne op. 27 no. 2 / Mazurka op. 50 no. 3」，即本卡 RG 的 EMI 再版編成；李帕第基金會亦以 GROC 專頁列出。另有企鵝指南帶花評等。",
+     "evidenceUrls": [
+      "https://musicbrainz.org/series/096c110a-e0f4-4628-b3f4-46c7bbf8458b",
+      "https://www.dinulipatti.org/great-recordings-of-the-century-chopin-fr-a110"
+     ]
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "製作人把整套器材搬進了日內瓦的廣播電台。1950 年 7 月，Walter Legge 把 EMI 的機器架進電台錄音室，7 月 2 日試音，接著連續九天工作，留下約兩小時演奏、重達 42 公斤的母帶。十四首 Chopin 圓舞曲在這裡完整錄成，曲序由 Lipatti 自己排定，不照作品編號；光是降 A 大調那一首就在四個不同日期重錄過。同年 12 月 2 日他在日內瓦辭世，得年 33 歲，原盤要到 1953 年才問世。",
@@ -643,8 +729,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": false,
-    "apexPool": true
+    "seedCards": true,
+    "apexPool": false
    }
   },
   {
@@ -669,14 +755,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 5,
+    "classic": 4,
     "obscurity": 2,
     "accessibility": 2,
     "listeners": null,
-    "source": "manual:classical-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 2,
+     "accessibility": 2,
+     "source": "manual:classical-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：1964 立體聲版受推崇，但不如夜曲版普遍列為必聽"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -727,21 +822,38 @@
    },
    "ratings": {
     "classic": 5,
-    "obscurity": 3,
+    "obscurity": 5,
     "accessibility": 3,
     "listeners": null,
-    "source": "manual:classical-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 3,
+     "accessibility": 3,
+     "source": "manual:classical-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "epic"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：DG 名演、DG Originals 再版，但 Liszt 奏鳴曲名盤眾多，非唯一人人必提；DG 正規流通冷門度 2｜L=2"
    },
-   "rarity": "epic",
+   "rarity": "legendary",
    "apexAssessment": {
-    "eligible": true,
-    "tier": "hall",
-    "reason": "正面依據：Gramophone「Top 15 Liszt recordings」專題收錄，評語為最高規格。已逐筆核對 MB 的 DG「The Originals」系列（252 筆），**本張不在其中**；Gramophone 名人堂亦無法線上確認收錄名單。真正可能收錄本張的是**企鵝指南帶花**與**《唱片藝術》名曲名盤**這兩份紙本名單，雲端連不到，依硬規則 1 不因此降級，evidence 標 pending-local，請本機以這兩份名單覆核。",
-    "evidenceUrls": [
-     "https://www.gramophone.co.uk/features/article/top-15-liszt-recordings",
-     "https://www.prestomusic.com/classical/products/7990554--liszt-sonata-in-b-minor"
-    ]
+    "eligible": false,
+    "tier": null,
+    "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。DG 名演、Gramophone 推薦，但古典單一名演非跨類型正典",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": true,
+     "tier": "hall",
+     "reason": "正面依據：Gramophone「Top 15 Liszt recordings」專題收錄，評語為最高規格。已逐筆核對 MB 的 DG「The Originals」系列（252 筆），**本張不在其中**；Gramophone 名人堂亦無法線上確認收錄名單。真正可能收錄本張的是**企鵝指南帶花**與**《唱片藝術》名曲名盤**這兩份紙本名單，雲端連不到，依硬規則 1 不因此降級，evidence 標 pending-local，請本機以這兩份名單覆核。",
+     "evidenceUrls": [
+      "https://www.gramophone.co.uk/features/article/top-15-liszt-recordings",
+      "https://www.prestomusic.com/classical/products/7990554--liszt-sonata-in-b-minor"
+     ]
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "剛滿三十歲那年夏天，她在慕尼黑錄下這首奏鳴曲。1971 年 6 月，Martha Argerich 在慕尼黑 Residenz 的大廳裡為 Deutsche Grammophon 錄下 Liszt 的 B 小調鋼琴奏鳴曲，同碟另收 Schumann 的第二號鋼琴奏鳴曲，原盤 1972 年發行。這首奏鳴曲把整部作品壓成不間斷的單一樂章，全長約三十分鐘；後世的評論說她把八度彈得像單音，那種技術少有人做得到。",
@@ -762,8 +874,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": false,
-    "apexPool": true
+    "seedCards": true,
+    "apexPool": false
    }
   },
   {
@@ -791,7 +903,7 @@
     "source": "manual:classical-rubric",
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -846,7 +958,7 @@
     "source": "manual:classical-rubric",
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -905,7 +1017,7 @@
     "source": "manual:classical-rubric",
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -923,7 +1035,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/da/18/9e/da189e61-9f28-c457-4e99-f3f30295e372/mzaf_986220318627773275.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/58/1c/58/581c58d6-b483-2da4-cd1f-4b1b0311c5f4/mzaf_13135717644731574863.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -963,7 +1075,7 @@
     "source": "manual:classical-rubric",
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1041,7 +1153,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/ef/81/44/ef814487-38d8-8980-aafa-4c883b5644fa/mzaf_2705053401513569054.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/c3/85/9b/c3859b2f-9732-7b63-6f49-afbafc95586f/mzaf_3454350026980017511.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -1075,21 +1187,38 @@
    },
    "ratings": {
     "classic": 5,
-    "obscurity": 3,
+    "obscurity": 4,
     "accessibility": 3,
     "listeners": null,
-    "source": "manual:classical-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 3,
+     "accessibility": 3,
+     "source": "manual:classical-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "epic"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：1999 Gramophone 年度唱片（權威榜首位級）、Grammy 提名；參考版本，殿堂成立｜L=1"
    },
    "rarity": "epic",
    "apexAssessment": {
-    "eligible": true,
-    "tier": "hall",
-    "reason": "具名獎項：Gramophone 1998 年度唱片大獎（Record of the Year，11/98），並獲 2000 年葛萊美最佳歌劇錄音提名。屬單一錄音層級可指名的最高規格認定。",
-    "evidenceUrls": [
-     "https://www.gramophone.co.uk/reviews/dvor%C3%A1k-rusalka-4",
-     "https://www.deccaclassics.com/en/catalogue/products/dvorak-rusalka-renee-flemingben-heppner-5621"
-    ]
+    "eligible": false,
+    "tier": null,
+    "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。Gramophone 年度唱片的參考版本，屬類型內頂尖，非跨類型正典",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": true,
+     "tier": "hall",
+     "reason": "具名獎項：Gramophone 1998 年度唱片大獎（Record of the Year，11/98），並獲 2000 年葛萊美最佳歌劇錄音提名。屬單一錄音層級可指名的最高規格認定。",
+     "evidenceUrls": [
+      "https://www.gramophone.co.uk/reviews/dvor%C3%A1k-rusalka-4",
+      "https://www.deccaclassics.com/en/catalogue/products/dvorak-rusalka-renee-flemingben-heppner-5621"
+     ]
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "在布拉格錄完的捷克語全劇，隔年拿下年度唱片。1998 年 4 月底到 5 月初，Charles Mackerras 在 Rudolfinum 指揮 Czech Philharmonic 錄下《Rusalka》全劇，主角是 Renée Fleming，Decca 同年以三片裝發行。1999 年的 Gramophone Awards 給了它年度唱片與歌劇類兩個獎，隔年再入圍葛萊美最佳歌劇錄音。他的捷克歌劇地位，原是替 Decca 錄楊納傑克歌劇系列建立起來的。",
@@ -1115,8 +1244,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": false,
-    "apexPool": true
+    "seedCards": true,
+    "apexPool": false
    }
   },
   {
@@ -1144,7 +1273,7 @@
     "source": "manual:classical-rubric",
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1194,14 +1323,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 5,
+    "classic": 4,
     "obscurity": 3,
     "accessibility": 3,
     "listeners": null,
-    "source": "manual:classical-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 3,
+     "accessibility": 3,
+     "source": "manual:classical-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "epic"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：Decca 全劇錄音、評價佳，非該劇唯一參考→4"
    },
-   "rarity": "epic",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1261,7 +1399,7 @@
     "source": "manual:classical-rubric",
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1310,20 +1448,37 @@
    "ratings": {
     "classic": 5,
     "obscurity": 3,
-    "accessibility": 3,
+    "accessibility": 2,
     "listeners": null,
-    "source": "manual:classical-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 3,
+     "accessibility": 3,
+     "source": "manual:classical-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "epic"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：經典參考錄音（EMI 世紀錄音），但該曲多版本並立，非古典錄音人人必提；安魂曲柔和硬蕊 2"
    },
-   "rarity": "epic",
+   "rarity": "uncommon",
    "apexAssessment": {
-    "eligible": true,
-    "tier": "hall",
-    "reason": "具體收錄：EMI Great Recordings of the Century 系列（CD 編號 5 66894 2，1998 年發行），屬 §0.7 明列的大廠傳奇再版系列。",
-    "evidenceUrls": [
-     "https://www.musicweb-international.com/classrev/2003/Jun03/FAURE_req_cluytens_groc.htm",
-     "https://www.amazon.de/Faure-Requiem-Great-Recordings-Century/dp/B00000GCA4"
-    ]
+    "eligible": false,
+    "tier": null,
+    "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。參考錄音之一，同曲多版並立，非跨類型正典",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": true,
+     "tier": "hall",
+     "reason": "具體收錄：EMI Great Recordings of the Century 系列（CD 編號 5 66894 2，1998 年發行），屬 §0.7 明列的大廠傳奇再版系列。",
+     "evidenceUrls": [
+      "https://www.musicweb-international.com/classrev/2003/Jun03/FAURE_req_cluytens_groc.htm",
+      "https://www.amazon.de/Faure-Requiem-Great-Recordings-Century/dp/B00000GCA4"
+     ]
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "拜魯特第一位法國指揮，七年後把安魂曲錄進了教堂。1955 年 André Cluytens 在該音樂節指揮《Tannhäuser》，是史上第一位在那裡登台的法國指揮；1962 年 2 月與 5 月，他在巴黎的 Église Saint-Roch 錄下佛瑞《安魂曲》，獨唱是 Victoria de los Ángeles 與 Fischer-Dieskau，樂團是巴黎音樂院的管弦樂團。他 1967 年 6 月過世，同年該團由法國政府決定解散。",
@@ -1343,8 +1498,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": false,
-    "apexPool": true
+    "seedCards": true,
+    "apexPool": false
    }
   },
   {
@@ -1491,7 +1646,7 @@
     "source": "manual:classical-rubric",
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1510,7 +1665,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/0c/47/45/0c4745d2-1ee7-6ce6-847e-da111ffc3626/mzaf_8283978344143379791.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/7b/46/03/7b460324-bd48-da66-cf27-093842ba964b/mzaf_18177510381532841252.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -1544,21 +1699,38 @@
    },
    "ratings": {
     "classic": 5,
-    "obscurity": 2,
+    "obscurity": 5,
     "accessibility": 2,
     "listeners": null,
-    "source": "manual:classical-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 2,
+     "accessibility": 2,
+     "source": "manual:classical-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：EMI 世紀偉大錄音系列、海頓協奏曲參考版，殿堂勉強成立（du Pré 正典首推 Elgar）｜L=1"
    },
-   "rarity": "uncommon",
+   "rarity": "epic",
    "apexAssessment": {
-    "eligible": true,
-    "tier": "hall",
-    "reason": "具體收錄：EMI Great Recordings of the Century 系列（1998 年 EMI Classics CD），屬 §0.7 明列的大廠傳奇再版系列。",
-    "evidenceUrls": [
-     "https://www.discogs.com/release/12070307-Haydn-Boccherini-Jacqueline-du-Pr%C3%A9-Daniel-Barenboim-Sir-John-Barbirolli-Cello-Concertos",
-     "https://www.highresaudio.com/en/album/view/e8bhrr/jacqueline-du-pre-daniel-barenboim-haydn-boccherini-cello-concertos-remastered"
-    ]
+    "eligible": false,
+    "tier": null,
+    "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。古典參考版屬類型內 5，du Pré 正典首推 Elgar",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": true,
+     "tier": "hall",
+     "reason": "具體收錄：EMI Great Recordings of the Century 系列（1998 年 EMI Classics CD），屬 §0.7 明列的大廠傳奇再版系列。",
+     "evidenceUrls": [
+      "https://www.discogs.com/release/12070307-Haydn-Boccherini-Jacqueline-du-Pr%C3%A9-Daniel-Barenboim-Sir-John-Barbirolli-Cello-Concertos",
+      "https://www.highresaudio.com/en/album/view/e8bhrr/jacqueline-du-pre-daniel-barenboim-haydn-boccherini-cello-concertos-remastered"
+     ]
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "Haydn 這首 C 大調協奏曲重見天日還不到六年，du Pré 就進了 Abbey Road。它長期被當成佚失之作，1961 年由音樂學家 Oldřich Pulkert 在布拉格國家博物館找到抄本。1967 年，du Pré 走進一號錄音室錄下它，由 Daniel Barenboim 指揮；樂團編制不大，她的弓壓與揉弦幅度明顯偏浪漫派。EMI 1998 年把它與另兩首協奏曲合成一張，收進 Great Recordings of the Century。",
@@ -1579,8 +1751,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": false,
-    "apexPool": true
+    "seedCards": true,
+    "apexPool": false
    }
   },
   {
@@ -1721,7 +1893,7 @@
     "source": "manual:classical-rubric",
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1779,7 +1951,7 @@
     "source": "manual:classical-rubric",
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2174,21 +2346,38 @@
    },
    "ratings": {
     "classic": 5,
-    "obscurity": 4,
-    "accessibility": 4,
+    "obscurity": 5,
+    "accessibility": 3,
     "listeners": null,
-    "source": "manual:classical-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "manual:classical-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "legendary"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：首錄、首演卡司，EMI Great Recordings of the Century；20 世紀調性歌劇硬蕊 3，冷門 4 偏高｜L=31"
    },
-   "rarity": "epic",
+   "rarity": "legendary",
    "apexAssessment": {
-    "eligible": true,
-    "tier": "hall",
-    "reason": "具體收錄：EMI Great Recordings of the Century 系列，屬 §0.7 明列的大廠傳奇再版系列；另有 Pristine Classical 的專業修復發行（PACO069）。",
-    "evidenceUrls": [
-     "https://www.warnerclassics.com/release/poulenc-dialogues-des-carmelites-1",
-     "https://www.pristineclassical.com/products/paco069"
-    ]
+    "eligible": false,
+    "tier": null,
+    "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。首錄首演卡司＝該作品基準錄音（5 星），非跨類型正典",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": true,
+     "tier": "hall",
+     "reason": "具體收錄：EMI Great Recordings of the Century 系列，屬 §0.7 明列的大廠傳奇再版系列；另有 Pristine Classical 的專業修復發行（PACO069）。",
+     "evidenceUrls": [
+      "https://www.warnerclassics.com/release/poulenc-dialogues-des-carmelites-1",
+      "https://www.pristineclassical.com/products/paco069"
+     ]
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "1957 年唱下法語首演的那批人，隔年原班走進錄音室。這部歌劇 1957 年 1 月先在米蘭以義大利文舉行世界首演，法語原版要到同年 6 月才在巴黎登台，Blanche 由 Denise Duval 唱，Régine Crespin 與 Rita Gorr 分飾另外兩位修女——Blanche 這個角色本來就是 Poulenc 為 Duval 寫的。1958 年，同一批人與 Pierre Dervaux 在巴黎留下這部歌劇的第一份錄音，單聲道，人聲擺在最前面、樂團退作背景。",
@@ -2209,8 +2398,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": false,
-    "apexPool": true
+    "seedCards": true,
+    "apexPool": false
    }
   },
   {
@@ -2232,11 +2421,20 @@
    },
    "ratings": {
     "classic": 5,
-    "obscurity": 4,
+    "obscurity": 3,
     "accessibility": 3,
     "listeners": null,
-    "source": "manual:classical-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 4,
+     "accessibility": 3,
+     "source": "manual:classical-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "epic"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：Gimell 古樂經典錄音，國際廠正規發行冷門度 3"
    },
    "rarity": "epic",
    "apexAssessment": {
@@ -2257,7 +2455,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/f8/d0/c1/f8d0c19f-01fb-f957-cb9c-7f8824c661e6/mzaf_18038675389108293007.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ea/a1/0f/eaa10f67-b001-8677-f72f-2b14c93741da/mzaf_7739988737139000506.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -2371,7 +2569,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/fc/24/f8/fc24f8ed-caae-26b2-9c4a-44005d531907/mzaf_1232507296418624555.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/b0/47/1d/b0471d8f-e355-a24e-b0ac-473d5d4f6784/mzaf_8667569021900407092.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -2411,7 +2609,7 @@
     "source": "manual:classical-rubric",
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
-   "rarity": "epic",
+   "rarity": "legendary",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2471,7 +2669,7 @@
     "source": "manual:classical-rubric",
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2527,7 +2725,7 @@
     "source": "manual:classical-rubric",
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
-   "rarity": "epic",
+   "rarity": "legendary",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2905,14 +3103,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 5,
+    "classic": 4,
     "obscurity": 3,
     "accessibility": 3,
     "listeners": null,
-    "source": "manual:classical-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 3,
+     "accessibility": 3,
+     "source": "manual:classical-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "epic"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：Callas／Di Stefano／Gobbi 名演之一，非該曲唯一首選；經典5→4"
    },
-   "rarity": "epic",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2930,7 +3137,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/f2/b2/b5/f2b2b5ff-7374-ec81-ddbc-65706cecad8d/mzaf_9174598255186110356.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/15/67/36/15673670-f79e-688c-1942-ddbc163f6eb0/mzaf_11304914530671243989.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -2963,14 +3170,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 5,
+    "classic": 4,
     "obscurity": 2,
     "accessibility": 2,
     "listeners": null,
-    "source": "manual:classical-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 2,
+     "accessibility": 2,
+     "source": "manual:classical-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：DG 名版《塞維亞》之一，常被推薦；非唯一首選"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -3017,14 +3233,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 5,
-    "obscurity": 4,
+    "classic": 4,
+    "obscurity": 3,
     "accessibility": 3,
     "listeners": null,
-    "source": "manual:classical-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 4,
+     "accessibility": 3,
+     "source": "manual:classical-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "epic"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：Callas 名角色之一，但此 EMI 錄音室版不及 1955 Bernstein 現場；經典5→4、冷門4→3"
    },
-   "rarity": "epic",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -3041,7 +3266,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/f7/44/f7/f744f772-bbb4-218a-e8b4-6ca23b7d3b8a/mzaf_11959186144771628665.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/1f/ab/b9/1fabb916-c0f5-f949-6724-9a5f36ffcf08/mzaf_12350489857821728092.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -3075,21 +3300,38 @@
    },
    "ratings": {
     "classic": 5,
-    "obscurity": 2,
+    "obscurity": 4,
     "accessibility": 2,
     "listeners": null,
-    "source": "manual:classical-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 2,
+     "accessibility": 2,
+     "source": "manual:classical-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：BBC Music 該劇最佳錄音第一、DG Originals 參考版，殿堂成立｜L=402"
    },
    "rarity": "uncommon",
    "apexAssessment": {
-    "eligible": true,
-    "tier": "hall",
-    "reason": "具體收錄可指名：**DG The Originals 傳奇再版系列**（Cavalleria rusticana＝DG 457 764-2、Pagliacci＝DG 449 727-2），符合 §3／README 硬規則第 1 條列舉的『大廠傳奇再版系列』依據。1965 年 9–10 月錄於米蘭史卡拉，Bergonzi／Cossotto／Taddei 卡司。",
-    "evidenceUrls": [
-     "https://www.deutschegrammophon.com/en/catalogue/products/mascagni-cavalleria-rusticana-karajan-1784",
-     "https://www.prestomusic.com/classical/products/7932465--mascagni-cavalleria-rusticana"
-    ]
+    "eligible": false,
+    "tier": null,
+    "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。該劇參考錄音屬古典類型內 5，非跨類型史上正典",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": true,
+     "tier": "hall",
+     "reason": "具體收錄可指名：**DG The Originals 傳奇再版系列**（Cavalleria rusticana＝DG 457 764-2、Pagliacci＝DG 449 727-2），符合 §3／README 硬規則第 1 條列舉的『大廠傳奇再版系列』依據。1965 年 9–10 月錄於米蘭史卡拉，Bergonzi／Cossotto／Taddei 卡司。",
+     "evidenceUrls": [
+      "https://www.deutschegrammophon.com/en/catalogue/products/mascagni-cavalleria-rusticana-karajan-1784",
+      "https://www.prestomusic.com/classical/products/7932465--mascagni-cavalleria-rusticana"
+     ]
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "一齣為作曲比賽趕工兩個月寫成，一齣寫完就吃上抄襲官司。Mascagni 為了趕上出版商 Casa Sonzogno 的比賽期限，兩個月內寫完《鄉間騎士》並從 73 件參賽作品中勝出，1890 年首演夜謝幕 40 次；Leoncavallo 的《丑角》則被作家 Catulle Mendès 控告抄襲，對方後來撤告。兩齣獨幕戲合成一晚節目的做法始於 1893 年的紐約大都會，1965 年 Karajan 帶史卡拉的樂團把它們錄成同一套。",
@@ -3103,7 +3345,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/df/b5/39/dfb539c5-3f7f-c1f1-c3df-21769e99df30/mzaf_6415195981370998996.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/48/a2/41/48a24147-d9e4-65f2-bb7c-e1db46d87b53/mzaf_5775130954896164532.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -3114,8 +3356,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": false,
-    "apexPool": true
+    "seedCards": true,
+    "apexPool": false
    }
   },
   {
@@ -3251,13 +3493,22 @@
    },
    "ratings": {
     "classic": 4,
-    "obscurity": 4,
-    "accessibility": 5,
+    "obscurity": 3,
+    "accessibility": 3,
     "listeners": null,
-    "source": "manual:classical-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 4,
+     "accessibility": 5,
+     "source": "manual:classical-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "legendary"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：Wagner 長篇歌劇，有調性→3；現值硬蕊 5 錯"
    },
-   "rarity": "epic",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -3332,7 +3583,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview124/v4/67/85/d6/6785d61a-616f-d205-e00b-da64aa039753/mzaf_8030314929582379751.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview124/v4/e3/30/57/e33057c6-1340-6a94-253c-c7f7eaa13a80/mzaf_12258432668930857837.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -3389,7 +3640,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/Music/3f/b7/0b/mzm.tdpbsfye.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/28/09/1f/28091f67-5a35-65fc-e2f0-fb838b53fcf2/mzaf_13832547377065566810.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -3423,21 +3674,38 @@
    },
    "ratings": {
     "classic": 5,
-    "obscurity": 4,
-    "accessibility": 5,
+    "obscurity": 3,
+    "accessibility": 3,
     "listeners": null,
-    "source": "manual:classical-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 4,
+     "accessibility": 5,
+     "source": "manual:classical-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "legendary"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：首份全曲錄音，歷代歌劇錄音榜常列參考版；硬蕊 5 是三軸錯，晚期浪漫歌劇內斂但非前衛，降 3"
    },
-   "rarity": "legendary",
+   "rarity": "epic",
    "apexAssessment": {
-    "eligible": true,
-    "tier": "hall",
-    "reason": "具體收錄可指名：**EMI Great Recordings of the Century**（1941 年 Désormière 版的價值即由 EMI 以 GROC 系列再版確立），符合 §3 列舉的大廠傳奇再版系列依據。此外它是《佩利亞與梅麗桑》的第一份完整錄音，戰時巴黎錄製，具不可替代的史料地位。",
-    "evidenceUrls": [
-     "https://hudson-housatonic-arts.org/2011/12/debussy-pelleas-1941-recording-desormieres/",
-     "https://www.pristineclassical.com/products/paco063"
-    ]
+    "eligible": false,
+    "tier": null,
+    "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。古典參考版錄音，類型內 5 星，非跨類型正典",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": true,
+     "tier": "hall",
+     "reason": "具體收錄可指名：**EMI Great Recordings of the Century**（1941 年 Désormière 版的價值即由 EMI 以 GROC 系列再版確立），符合 §3 列舉的大廠傳奇再版系列依據。此外它是《佩利亞與梅麗桑》的第一份完整錄音，戰時巴黎錄製，具不可替代的史料地位。",
+     "evidenceUrls": [
+      "https://hudson-housatonic-arts.org/2011/12/debussy-pelleas-1941-recording-desormieres/",
+      "https://www.pristineclassical.com/products/paco063"
+     ]
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "德軍佔領下的巴黎，二十張 78 轉錄下德布西唯一歌劇的第一份全曲。錄音分 1941 年 5 月、10 月與 11 月三段完成，地點是巴黎的 Salle du Conservatoire，隔年由 Pathé-Marconi 出版。飾唱 Mélisande 的 Irène Joachim 在戰時婉拒了納粹宣傳當局邀她赴柏林演出，並參與法國反抗運動、以自宅替成員傳遞訊息。78 轉母源頻寬窄、表面噪訊明顯，人聲卻位置極近，法語的咬字與音節重量聽得清楚。",
@@ -3461,8 +3729,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": false,
-    "apexPool": true
+    "seedCards": true,
+    "apexPool": false
    }
   },
   {
@@ -3484,11 +3752,20 @@
    },
    "ratings": {
     "classic": 5,
-    "obscurity": 4,
-    "accessibility": 4,
+    "obscurity": 3,
+    "accessibility": 3,
     "listeners": null,
-    "source": "manual:classical-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "manual:classical-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "legendary"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：本劇首份錄音室全曲，參考錄音；非領域人人必提"
    },
    "rarity": "epic",
    "apexAssessment": {
@@ -3625,7 +3902,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/49/ac/2f/49ac2fbd-760e-e510-ad0d-ca5f718aaac2/mzaf_17607788630579215217.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/62/cc/3c/62cc3cf9-f937-a5a2-a757-f4357783e353/mzaf_12392307284890822960.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -3665,7 +3942,7 @@
     "source": "manual:classical-rubric",
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -3729,13 +4006,21 @@
    },
    "rarity": "epic",
    "apexAssessment": {
-    "eligible": true,
-    "tier": "hall",
-    "reason": "同時滿足 §3 兩條具體依據：(1) **Mercury Living Presence** 傳奇再版系列本體（SR90226）；(2) **TAS 榜**（Absolute Sound 榜單）收錄，多筆黑膠市場資料均以『TAS List』標示，首版行情長期居高。屬 README 硬規則第 1 條明示的『發燒天碟正典』，與詮釋正典並列有效。",
-    "evidenceUrls": [
-     "https://www.popsike.com/MERCURY-SR-90226-THE-FIREBIRD-DORATI-TAS-LIST/192351595732.html",
-     "https://www.valueyourmusic.com/items/401093972491-mercury-living-presence-sr90226-stravinsky-firebird-dorati-tas-list"
-    ]
+    "eligible": false,
+    "tier": null,
+    "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。Mercury 發燒名錄，非跨類型正典",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": true,
+     "tier": "hall",
+     "reason": "同時滿足 §3 兩條具體依據：(1) **Mercury Living Presence** 傳奇再版系列本體（SR90226）；(2) **TAS 榜**（Absolute Sound 榜單）收錄，多筆黑膠市場資料均以『TAS List』標示，首版行情長期居高。屬 README 硬規則第 1 條明示的『發燒天碟正典』，與詮釋正典並列有效。",
+     "evidenceUrls": [
+      "https://www.popsike.com/MERCURY-SR-90226-THE-FIREBIRD-DORATI-TAS-LIST/192351595732.html",
+      "https://www.valueyourmusic.com/items/401093972491-mercury-living-presence-sr90226-stravinsky-firebird-dorati-tas-list"
+     ]
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "Doráti 的本行在芭蕾樂池，三支麥克風錄下他的 1910 年全本《火鳥》。1930 年代後期他任 Ballet Russe 的音樂總監，1940 年代前期轉到 Ballet Theatre，還替該團寫過兩齣舞劇配樂。1959 年 6 月，他與倫敦交響樂團在倫敦近郊的 Watford Town Hall 錄音，Mercury 以三支 Schoeps M201 麥克風收成三軌母帶，兩面共 22 段，1960 年以 SR90226 立體聲黑膠首發。",
@@ -3758,8 +4043,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": false,
-    "apexPool": true
+    "seedCards": true,
+    "apexPool": false
    }
   },
   {
@@ -3838,21 +4123,38 @@
    },
    "ratings": {
     "classic": 5,
-    "obscurity": 2,
+    "obscurity": 4,
     "accessibility": 3,
     "listeners": null,
-    "source": "manual:classical-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 2,
+     "accessibility": 3,
+     "source": "manual:classical-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "epic"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：RCA Living Stereo 參考錄音，Penguin 玫瑰級、歷代推薦必列，殿堂成立｜L=23"
    },
    "rarity": "epic",
    "apexAssessment": {
-    "eligible": true,
-    "tier": "hall",
-    "reason": "具體收錄：**RCA Living Stereo**。已逐筆核對 MusicBrainz 的 series 實體：Great Recordings of the Century (096c110a，150 筆)、DG The Originals (3eec5213，252 筆)、Decca Legends (1abe5c54，79 筆)、RCA Living Stereo (release series 5281b5ef，82 筆／release-group series 9eb05f3c，10 筆)。 Living Stereo 的 release-group series (9eb05f3c) 成員清單直接含本卡釘定的 RG 7b903784；同系列的 release 端另有三張同一 1955 年 Reiner 錄音的併盤（4c27a568、b28928e5、36bd301c）。另命中「發燒天碟正典」條款：Analogue Productions 200g 與 SACD 復刻目錄在售。",
-    "evidenceUrls": [
-     "https://musicbrainz.org/series/9eb05f3c-7fa5-494e-b8ee-c81ff17feba2",
-     "https://store.acousticsounds.com/d/91387/Fritz_Reiner-Bartok_Concerto_For_Orchestra-200_Gram_Vinyl_Record"
-    ]
+    "eligible": false,
+    "tier": null,
+    "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。古典參考錄音，綜合歷代榜不收，非跨類型正典",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": true,
+     "tier": "hall",
+     "reason": "具體收錄：**RCA Living Stereo**。已逐筆核對 MusicBrainz 的 series 實體：Great Recordings of the Century (096c110a，150 筆)、DG The Originals (3eec5213，252 筆)、Decca Legends (1abe5c54，79 筆)、RCA Living Stereo (release series 5281b5ef，82 筆／release-group series 9eb05f3c，10 筆)。 Living Stereo 的 release-group series (9eb05f3c) 成員清單直接含本卡釘定的 RG 7b903784；同系列的 release 端另有三張同一 1955 年 Reiner 錄音的併盤（4c27a568、b28928e5、36bd301c）。另命中「發燒天碟正典」條款：Analogue Productions 200g 與 SACD 復刻目錄在售。",
+     "evidenceUrls": [
+      "https://musicbrainz.org/series/9eb05f3c-7fa5-494e-b8ee-c81ff17feba2",
+      "https://store.acousticsounds.com/d/91387/Fritz_Reiner-Bartok_Concerto_For_Orchestra-200_Gram_Vinyl_Record"
+     ]
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "指揮台上的匈牙利人，年輕時在布達佩斯上過 Bartók 的課。兩人後來成了朋友。1955 年 10 月 13 日與 15 日，Fritz Reiner 首次帶芝加哥交響樂團演出這首曲子，當時的樂評形容那是他的勝利；一週後的 10 月 22 日，同一批人回到 Orchestra Hall 把它錄成唱片。自 1950 年代中期以 LP 問世起，這份演奏就被當成此曲其他錄音的比較基準。",
@@ -3878,8 +4180,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": false,
-    "apexPool": true
+    "seedCards": true,
+    "apexPool": false
    }
   },
   {
@@ -3900,14 +4202,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 5,
+    "classic": 4,
     "obscurity": 3,
-    "accessibility": 4,
+    "accessibility": 3,
     "listeners": null,
-    "source": "manual:classical-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 3,
+     "accessibility": 4,
+     "source": "manual:classical-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "legendary"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：作曲家自指名演，參考價值高；非人人必提"
    },
-   "rarity": "epic",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -4071,7 +4382,7 @@
     "source": "manual:classical-rubric",
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -4119,13 +4430,22 @@
    },
    "ratings": {
     "classic": 4,
-    "obscurity": 3,
+    "obscurity": 5,
     "accessibility": 3,
     "listeners": null,
-    "source": "manual:classical-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 3,
+     "accessibility": 3,
+     "source": "manual:classical-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：Living Stereo 名錄音，芝加哥首度合唱合作｜L=5"
    },
-   "rarity": "uncommon",
+   "rarity": "epic",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -4175,14 +4495,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 5,
+    "classic": 4,
     "obscurity": 3,
-    "accessibility": 4,
+    "accessibility": 3,
     "listeners": null,
-    "source": "manual:classical-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 3,
+     "accessibility": 4,
+     "source": "manual:classical-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "legendary"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：Karajan 首錄蕭十，評價高但 1981 版更常被推；晚浪漫調性 3"
    },
-   "rarity": "epic",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -4230,13 +4559,22 @@
    },
    "ratings": {
     "classic": 4,
-    "obscurity": 4,
-    "accessibility": 5,
+    "obscurity": 2,
+    "accessibility": 2,
     "listeners": null,
-    "source": "manual:classical-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 4,
+     "accessibility": 5,
+     "source": "manual:classical-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "legendary"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：晚期浪漫大型清唱劇→2；Decca 正規"
    },
-   "rarity": "epic",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -4283,11 +4621,20 @@
    },
    "ratings": {
     "classic": 5,
-    "obscurity": 4,
-    "accessibility": 5,
+    "obscurity": 3,
+    "accessibility": 4,
     "listeners": null,
-    "source": "manual:classical-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 4,
+     "accessibility": 5,
+     "source": "manual:classical-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "legendary"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：荀貝格鋼琴作品參照版；DG 但曲目小眾冷門 4→3；十二音無調 5→4"
    },
    "rarity": "legendary",
    "apexAssessment": {
@@ -4402,13 +4749,21 @@
    },
    "rarity": "uncommon",
    "apexAssessment": {
-    "eligible": true,
-    "tier": "hall",
-    "reason": "具體收錄：**EMI Great Recordings of the Century**。已逐筆核對 MusicBrainz 的 series 實體：Great Recordings of the Century (096c110a，150 筆)、DG The Originals (3eec5213，252 筆)、Decca Legends (1abe5c54，79 筆)、RCA Living Stereo (release series 5281b5ef，82 筆／release-group series 9eb05f3c，10 筆)。 GROC series (096c110a) 成員含 abced449（2000-02-07 XE）與 94853b56（2000-03-14 US），兩張都是本卡釘定 RG 917841c6 底下的 release，系列收錄與本卡身分完全對齊。",
-    "evidenceUrls": [
-     "https://musicbrainz.org/series/096c110a-e0f4-4628-b3f4-46c7bbf8458b",
-     "https://www.arkivmusic.com/classical/album.jsp?album_id=2936"
-    ]
+    "eligible": false,
+    "tier": null,
+    "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。鋼琴參考錄音，類型內傳奇，非跨類型正典",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": true,
+     "tier": "hall",
+     "reason": "具體收錄：**EMI Great Recordings of the Century**。已逐筆核對 MusicBrainz 的 series 實體：Great Recordings of the Century (096c110a，150 筆)、DG The Originals (3eec5213，252 筆)、Decca Legends (1abe5c54，79 筆)、RCA Living Stereo (release series 5281b5ef，82 筆／release-group series 9eb05f3c，10 筆)。 GROC series (096c110a) 成員含 abced449（2000-02-07 XE）與 94853b56（2000-03-14 US），兩張都是本卡釘定 RG 917841c6 底下的 release，系列收錄與本卡身分完全對齊。",
+     "evidenceUrls": [
+      "https://musicbrainz.org/series/096c110a-e0f4-4628-b3f4-46c7bbf8458b",
+      "https://www.arkivmusic.com/classical/album.jsp?album_id=2936"
+     ]
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "Ravel 這首 G 大調協奏曲的第一份立體聲錄音，在 Abbey Road 花了三天完成。日期是 1957 年 3 月 7 日、8 日與 10 日，Arturo Benedetti Michelangeli 獨奏、Ettore Gracis 指揮 Philharmonia Orchestra，製作人 Peter Andry、錄音師 Christopher Parker。首版 His Master's Voice ASD 255 於 1958 年 9 月在英國上市。",
@@ -4427,8 +4782,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": false,
-    "apexPool": true
+    "seedCards": true,
+    "apexPool": false
    }
   },
   {
@@ -4570,13 +4925,21 @@
    },
    "rarity": "uncommon",
    "apexAssessment": {
-    "eligible": true,
-    "tier": "hall",
-    "reason": "**pending-local**：已逐筆核對 MusicBrainz 的 series 實體：Great Recordings of the Century (096c110a，150 筆)、DG The Originals (3eec5213，252 筆)、Decca Legends (1abe5c54，79 筆)、RCA Living Stereo (release series 5281b5ef，82 筆／release-group series 9eb05f3c，10 筆)。 四份系列皆查無本錄音（1953 年 RCA 單聲道，不在 Living Stereo 範圍；EMI／Decca 兩系列不適用）。線上唯一查到的是 Gramophone 的『Classics reconsidered』專文重估——那是評論文章，不是 Gramophone 名人堂，依本次判準不足以單獨支撐。判定 eligible 的依據落在**企鵝三星帶花與《唱片藝術》名曲名盤**這兩份紙本名單（此曲題獻並由海飛茲首演、且是他唯一商業錄音，長期為該曲基準版），雲端無法核對，依 lock/README 硬規則第 1 條維持 eligible 並標 pending-local，請本機以紙本名單覆核後定案。",
-    "evidenceUrls": [
-     "https://www.gramophone.co.uk/content/features/classics-reconsidered-heifetzs-recording-of-korngolds-violin-concerto",
-     "https://www.laphil.com/musicdb/pieces/4517/violin-concerto"
-    ]
+    "eligible": false,
+    "tier": null,
+    "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。該曲首錄參考版屬古典類型內 5",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": true,
+     "tier": "hall",
+     "reason": "**pending-local**：已逐筆核對 MusicBrainz 的 series 實體：Great Recordings of the Century (096c110a，150 筆)、DG The Originals (3eec5213，252 筆)、Decca Legends (1abe5c54，79 筆)、RCA Living Stereo (release series 5281b5ef，82 筆／release-group series 9eb05f3c，10 筆)。 四份系列皆查無本錄音（1953 年 RCA 單聲道，不在 Living Stereo 範圍；EMI／Decca 兩系列不適用）。線上唯一查到的是 Gramophone 的『Classics reconsidered』專文重估——那是評論文章，不是 Gramophone 名人堂，依本次判準不足以單獨支撐。判定 eligible 的依據落在**企鵝三星帶花與《唱片藝術》名曲名盤**這兩份紙本名單（此曲題獻並由海飛茲首演、且是他唯一商業錄音，長期為該曲基準版），雲端無法核對，依 lock/README 硬規則第 1 條維持 eligible 並標 pending-local，請本機以紙本名單覆核後定案。",
+     "evidenceUrls": [
+      "https://www.gramophone.co.uk/content/features/classics-reconsidered-heifetzs-recording-of-korngolds-violin-concerto",
+      "https://www.laphil.com/musicdb/pieces/4517/violin-concerto"
+     ]
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "Korngold 說，這首協奏曲裡大量的抒情段落，設想的是 Caruso 的嗓子。他接著說，能由集 Caruso 與 Paganini 於一身的 Jascha Heifetz 來拉，他有多高興就不必說了。1953 年 1 月 10 日，Heifetz 在好萊塢 Republic Studios 的第九號攝影棚錄下這首曲子，Alfred Wallenstein 指揮洛杉磯愛樂。這是本曲的第一份錄音，往後很多年裡也是唯一的一份，原盤 RCA LM 1782 於 1954 年發行。",
@@ -4601,8 +4964,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": false,
-    "apexPool": true
+    "seedCards": true,
+    "apexPool": false
    }
   },
   {
@@ -4623,22 +4986,39 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 5,
-    "obscurity": 3,
+    "classic": 4,
+    "obscurity": 4,
     "accessibility": 2,
     "listeners": null,
-    "source": "manual:classical-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "manual:classical-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：Living Stereo 名錄音，但曲目屬次要曲庫、非該領域人人必提；經典度 4，殿堂不成立｜L=3"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
-    "eligible": true,
-    "tier": "hall",
-    "reason": "具體收錄：**RCA Living Stereo**。已逐筆核對 MusicBrainz 的 series 實體：Great Recordings of the Century (096c110a，150 筆)、DG The Originals (3eec5213，252 筆)、Decca Legends (1abe5c54，79 筆)、RCA Living Stereo (release series 5281b5ef，82 筆／release-group series 9eb05f3c，10 筆)。 Living Stereo release series 成員 6be30ef2（2006-02-07，RCA Red Seal 82876 71622 2）經 release 端覆核，其 release-group 正是本卡釘定的 a118884e，掛名 Heifetz／New Symphony Orchestra of London／Sargent——系列收錄與本卡身分完全對齊。另有 Analogue Productions 的 Living Stereo 復刻版位。",
-    "evidenceUrls": [
-     "https://musicbrainz.org/series/5281b5ef-b864-4cb9-b55b-18fb8bdff562",
-     "https://www.musicdirect.com/music/vinyl/bruch-scottish-fantasy-heifetz-sargent-new-symphony-orchestra-of-london-180g-vinyl-lp/"
-    ]
+    "eligible": false,
+    "tier": null,
+    "reason": "方案 C（audit-20261102，2026-11-03）：原殿堂未達該軸 7 星，降為一般卡。Living Stereo 名錄音，曲目屬次要曲庫",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": true,
+     "tier": "hall",
+     "reason": "具體收錄：**RCA Living Stereo**。已逐筆核對 MusicBrainz 的 series 實體：Great Recordings of the Century (096c110a，150 筆)、DG The Originals (3eec5213，252 筆)、Decca Legends (1abe5c54，79 筆)、RCA Living Stereo (release series 5281b5ef，82 筆／release-group series 9eb05f3c，10 筆)。 Living Stereo release series 成員 6be30ef2（2006-02-07，RCA Red Seal 82876 71622 2）經 release 端覆核，其 release-group 正是本卡釘定的 a118884e，掛名 Heifetz／New Symphony Orchestra of London／Sargent——系列收錄與本卡身分完全對齊。另有 Analogue Productions 的 Living Stereo 復刻版位。",
+     "evidenceUrls": [
+      "https://musicbrainz.org/series/5281b5ef-b864-4cb9-b55b-18fb8bdff562",
+      "https://www.musicdirect.com/music/vinyl/bruch-scottish-fantasy-heifetz-sargent-new-symphony-orchestra-of-london-180g-vinyl-lp/"
+     ]
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
     "text": "Bruch 把《蘇格蘭幻想曲》題獻給 Sarasate，首演卻是 Joachim 拉的。1881 年 2 月 22 日在利物浦的那一場由 Bruch 親自指揮，作曲家對演出並不滿意。Jascha Heifetz 一生錄過這首曲子兩次，這是 1961 年 5 月與 Sir Malcolm Sargent 在倫敦 Walthamstow Town Hall 錄的立體聲版；原始 LP 為 RCA Victor LSC-2603，另一面是 Vieuxtemps 第五號協奏曲。",
@@ -4654,7 +5034,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/0b/51/db/0b51db2b-8ba4-5de2-57f5-9122d9da39d7/mzaf_13813957340991199250.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/9c/06/b4/9c06b47f-0fcf-2380-bc1d-5c5b6e5c35b9/mzaf_1701830764447983066.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -4665,8 +5045,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": false,
-    "apexPool": true
+    "seedCards": true,
+    "apexPool": false
    }
   },
   {
@@ -4713,7 +5093,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/6c/ea/a7/6ceaa7f4-fca7-b4a9-75ee-901581ddaa05/mzaf_14195403994561871754.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/58/47/1d/58471d00-ed2b-1b0f-9be9-c55908f25a91/mzaf_16845059772652361180.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -4753,7 +5133,7 @@
     "source": "manual:classical-rubric",
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -4864,7 +5244,7 @@
     "source": "manual:classical-rubric",
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,

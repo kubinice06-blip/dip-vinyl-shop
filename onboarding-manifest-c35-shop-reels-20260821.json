@@ -30,7 +30,7 @@
         "checkedAt": "2026-08-21T18:56:23Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Peacefrog 深宅名家的重混企劃，remixer 名單分量足但本身非正典原作，屬深度舞曲樂迷領域，聽感溫和。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -46,7 +46,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/Music2/v4/0a/db/76/0adb76ec-48fc-62ce-95cb-87126bbf2bc5/mzaf_493060411053162471.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/85/23/7a/85237a98-a135-1f2c-9c18-fbcc6f59ed68/mzaf_7538359471571914980.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T18:56:23Z",
@@ -89,23 +89,44 @@
         "visuallyVerified": true
       },
       "ratings": {
-        "classic": 4,
+        "classic": 5,
         "obscurity": 3,
         "accessibility": 2,
         "listeners": null,
-        "source": "manual:genre-anchors",
-        "checkedAt": "2026-08-21T18:56:23Z",
-        "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；香港電子流行的公認代表作，同名曲拿下十大中文金曲獎項；華語樂迷熟知但非全球入門常客，編曲以合成器流行為主、旋律好入耳。"
+        "source": "manual:hall-expansion-20261103",
+        "checkedAt": "2026-11-03T00:00:00Z",
+        "note": "店主 2026-11-03 定案殿堂擴充：殿堂最低門檻 classic=5，經典度由 4 調為 5（只動經典度）",
+        "previous": {
+          "classic": 4,
+          "obscurity": 3,
+          "accessibility": 2,
+          "listeners": null,
+          "source": "manual:genre-anchors",
+          "checkedAt": "2026-08-21T18:56:23Z",
+          "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；香港電子流行的公認代表作，同名曲拿下十大中文金曲獎項；華語樂迷熟知但非全球入門常客，編曲以合成器流行為主、旋律好入耳。",
+          "rarity": "rare"
+        }
       },
       "rarity": "uncommon",
       "apexAssessment": {
-        "eligible": false,
-        "tier": null,
-        "reason": "地位集中於粵語流行圈，缺少跨語系長期共識的殿堂級佐證，故不列頂點。",
-        "evidenceUrls": []
+        "eligible": true,
+        "tier": "hall",
+        "reason": "店主 2026-11-03 定案殿堂擴充（hall-expansion-20261103）：升為殿堂。",
+        "evidenceUrls": [
+          "https://www.last.fm/music/%E9%81%94%E6%98%8E%E4%B8%80%E6%B4%BE/%E7%9F%B3%E9%A0%AD%E8%A8%98",
+          "https://musicbrainz.org/release-group/5e13875d-72e1-4ad4-9dd9-286033172995"
+        ],
+        "previous": {
+          "eligible": false,
+          "tier": null,
+          "reason": "地位集中於粵語流行圈，缺少跨語系長期共識的殿堂級佐證，故不列頂點。",
+          "evidenceUrls": []
+        },
+        "assessedAt": "2026-11-03T00:00:00Z",
+        "source": "manual:hall-expansion-20261103"
       },
       "description": {
-        "text": "達明一派由劉以達與黃耀明組成，1986 年以同名 EP 出道。1987 年 4 月 9 日發行的本作配合進念‧二十面體同名舞台劇而作，同名曲〈石頭記〉是該劇主題曲，詞取材自《紅樓夢》，並奪下第十一屆十大中文金曲最受歡迎演出中文歌曲獎。全碟由劉以達作曲編曲、陳少琪填詞，〈馬路天使〉〈傷逝〉〈後窗〉同樣傳唱；〈美好「新世界」〉寫的是當年新世界中心的消費風景。",
+        "text": "《石頭記》是達明一派的第二張錄音室專輯，1987 年 4 月 9 日由寶麗金發行，獲香港白金唱片認證，同名曲〈石頭記〉拿下第十一屆十大中文金曲最受歡迎演出中文歌曲獎。專輯在 1986 年 11 月到 1987 年 2 月錄製，製作人黃祖輝，配合進念‧二十面體的同名舞台劇而作，〈石頭記〉把《紅樓夢》的情節濃縮進歌詞。全碟由劉以達作曲編曲、黃耀明主唱，詞大多出自陳少琪。音樂是以合成器為主、旋律性強的流行樂，十首歌以純音樂〈離〉開場、〈棄〉收尾，中間的〈馬路天使〉〈傷逝〉〈後窗〉是最受歡迎的幾首，〈美好「新世界」〉寫的是新世界中心的消費心態。",
         "sourceUrls": [
           "https://zh.wikipedia.org/wiki/%E7%9F%B3%E9%A0%AD%E8%A8%98_(%E9%81%94%E6%98%8E%E4%B8%80%E6%B4%BE%E5%B0%88%E8%BC%AF)",
           "https://zh.wikipedia.org/wiki/%E9%81%94%E6%98%8E%E4%B8%80%E6%B4%BE",
@@ -132,8 +153,8 @@
         "cardCatalog": true,
         "descriptionKv": true,
         "albumOverride": true,
-        "seedCards": true,
-        "apexPool": false
+        "seedCards": false,
+        "apexPool": true
       }
     },
     {
@@ -231,7 +252,7 @@
         "checkedAt": "2026-08-21T18:56:23Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Blue Note soul-jazz 風琴線公認的主要作品，AllMusic 給 4.5 星並稱為其廠牌時期最強場次之一；爵士樂迷領域，律動直接好入耳。"
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -298,7 +319,7 @@
         "checkedAt": "2026-08-21T18:56:23Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；被視為 city pop 再評價浪潮的象徵作，也是歌手唯一留下的專輯；發行當時未進主流、如今屬深度收藏者領域，編曲乾淨好入耳。"
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -314,7 +335,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/2e/8c/28/2e8c28e5-8d2d-1b70-1468-85ccc29d8e58/mzaf_6919915438747026885.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/85/21/dc/8521dcbd-3f90-6150-7c65-4d445c0b031f/mzaf_1489591114926746723.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T18:56:23Z",
@@ -365,7 +386,7 @@
         "checkedAt": "2026-08-21T18:56:23Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Garland 本人地位高，但這張是 Prestige 晚期的深層目錄而非其頭部作品；三重奏演奏直白好入耳。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -381,7 +402,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/b9/77/09/b97709ce-900a-f88c-b169-92b1d60c40ae/mzaf_4992224061294509061.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/be/6e/86/be6e864d-6775-270d-b8d6-637f1bc51581/mzaf_9979555678554245954.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T18:56:23Z",
@@ -432,7 +453,7 @@
         "checkedAt": "2026-08-21T18:56:23Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Peterson 三重奏最暢銷、最廣為人知的一張，〈Hymn to Freedom〉更外溢成民權運動頌歌；曲目短小、旋律直白，是爵士入門常見盤。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -448,7 +469,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/9d/e6/62/9de6620b-457c-65b5-b6c8-9aac4a19706c/mzaf_8114527535822520731.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/fc/c2/73/fcc2739f-3275-4ecc-0be5-0dc73d624ac4/mzaf_264491709683626092.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T18:56:23Z",
@@ -499,7 +520,7 @@
         "checkedAt": "2026-08-21T18:56:23Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；全球賣破九百萬張、拿下兩座葛萊美，商業地位明確但樂評兩極；是任何人都會撞見的入門常客，製作直白好入耳。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -563,7 +584,7 @@
         "checkedAt": "2026-08-21T18:56:23Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；city pop／AOR 圈內公認的好盤與 Alfa Moon 時期代表之一，但在日本流行樂史上非頭部作品；屬深度愛好者領域，編曲乾淨好入耳。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -579,7 +600,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/4e/d5/69/4ed5691a-a727-c8d9-721a-b57387a9a6a8/mzaf_16224792878583850058.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/7f/cd/3d/7fcd3dd4-7b75-4453-bcda-e856d69eb312/mzaf_14120287849252893988.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T18:56:23Z",
@@ -631,7 +652,7 @@
         "checkedAt": "2026-08-21T18:56:23Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Burrell 與 Coltrane 唯一的雙掛名小編制錄音，New Jazz 目錄裡的公認主要作品；爵士樂迷領域，演奏搖擺直接。"
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -647,7 +668,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/af/6f/3e/af6f3ed3-8643-f3a4-770e-e6a356c97990/mzaf_4949043848550201917.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/39/4d/dc/394ddc2b-31e4-cf2a-7789-1dc90b2ceabf/mzaf_12247455822158879612.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T18:56:23Z",
@@ -699,7 +720,7 @@
         "checkedAt": "2026-08-21T18:56:23Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；城市系列企劃第二作，上過 Billboard 爵士榜第 17 名，陣容硬但屬 2000 年代跨界深層目錄；器樂即興與電子處理段落偏長。"
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -715,7 +736,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/12/07/0c/12070c22-7fbe-cd0d-d34a-ea03ab608e6b/mzaf_16612799866037078127.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/c3/2e/77/c32e7726-d02d-d03d-2cd4-3e8b81cf12e8/mzaf_9370738508621325716.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T18:56:23Z",
@@ -766,7 +787,7 @@
         "checkedAt": "2026-08-21T18:56:23Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；AllMusic 給 4 星並直指 Kuhn 長期被低估，MPS 目錄裡演奏與錄音俱佳但非公認頭部正典；三重奏抒情好入耳。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -782,7 +803,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/24/7a/ac/247aac0c-0019-924d-e841-725233e85c54/mzaf_4281225954985013398.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview20/v4/64/91/59/64915978-fde5-7d1e-7a47-39dd646285b4/mzaf_5285731925816962034.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T18:56:23Z",
@@ -834,7 +855,7 @@
         "checkedAt": "2026-08-21T18:56:23Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Haynes 早期少數以領銜名義留下的三重奏錄音，New Jazz 目錄中的公認主要作品；爵士樂迷領域，演奏直接好入耳。"
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -901,7 +922,7 @@
         "checkedAt": "2026-08-21T18:56:23Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；日本流行樂正典級的一九七〇年代錄音，〈やさしさに包まれたなら〉因《魔女宅急便》成為國民曲目；旋律直白、傳唱度高，一般聽眾也容易撞見。"
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -918,7 +939,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/d1/50/33/d150335e-b644-0d21-6931-61e81f1adbcd/mzaf_18270075970472637721.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/a0/8e/17/a08e1701-8fb4-5b09-564c-bb4556a521e2/mzaf_6949895495558317230.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T18:56:23Z",
@@ -969,7 +990,7 @@
         "checkedAt": "2026-08-21T18:56:23Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；日本地下フォーク公認的主要現場文獻與三上寛代表錄音，但流通長期僅靠 URC 原盤與少量再版，屬收藏家領域；嘶吼式唱腔與長篇曲目對一般聽眾相當難入耳。"
       },
-      "rarity": "epic",
+      "rarity": "legendary",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -1097,7 +1118,7 @@
         "checkedAt": "2026-08-21T18:56:23Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Limelight 期有明確歷史點的一張——三重奏最後一次留下 Ray Brown 的錄音，但不在 Peterson 最常被舉出的作品之列；標準曲為主，入耳直白。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -1161,7 +1182,7 @@
         "checkedAt": "2026-08-21T18:56:23Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Prestige 靈魂爵士路線的合格作品，Wright 本人在芝加哥以外知名度有限，屬深度愛好者才會翻到的名字；藍調底的鋼琴三重奏，入耳無門檻。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -1229,7 +1250,7 @@
         "checkedAt": "2026-08-21T18:56:23Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；大橋在日本本土是唱功掛帥的知名歌手，但這張一九八一年 Philips 盤本身主要靠 city pop 重估潮才被外界翻出，屬深度愛好者領域；編曲流暢，入耳無門檻。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -1245,7 +1266,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ba/37/40/ba37408b-1526-79c9-522c-17dc4e8858ee/mzaf_12558414002276025320.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a9/be/12/a9be12c0-72ac-8a72-dbef-e5d97388bc96/mzaf_1202357109782911939.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T18:56:23Z",
@@ -1296,7 +1317,7 @@
         "checkedAt": "2026-08-21T18:56:23Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；角松敏生製作的 Disco Side 使本作成為和製 city pop 最常被舉出的作品之一，屬樂迷領域；舞曲節拍與夏日抒情並置，旋律直白。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -1363,7 +1384,7 @@
         "checkedAt": "2026-08-21T18:56:23Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；八〇年代日本偶像史起點級的出道專輯，含〈青い珊瑚礁〉這種國民級曲目、Oricon LP 榜第二；大牌加大眾曲目，入耳全無門檻。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -1379,7 +1400,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview122/v4/9f/40/57/9f40570e-89ac-b3ca-b757-7161d2f66801/mzaf_8088833213652738192.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/0d/b1/f7/0db1f7d6-8f99-e25c-0875-0290cc2db47d/mzaf_9073106897273247553.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T18:56:23Z",
@@ -1430,7 +1451,7 @@
         "checkedAt": "2026-08-21T18:56:23Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；和製 boogie／electro-funk 的挖掘熱門盤，有明確特色與再發熱度，但藝人在日本本土從未真正大紅，屬深度愛好者領域；節拍明快，入耳無門檻。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -1446,7 +1467,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/6d/91/bc/6d91bcad-543d-fed6-7ef0-b7e7ad1e50d2/mzaf_1643406180802592228.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/29/bb/f6/29bbf67a-8aaa-3902-b381-0cf17dcbb576/mzaf_14621901742998989339.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T18:56:23Z",
@@ -1497,7 +1518,7 @@
         "checkedAt": "2026-08-21T18:56:23Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；美國雙白金、Billboard 200 第四名，六兄弟唯一同框之作，有明確歷史位置但樂評地位不及同期 Michael 個人作品；大牌加暢銷單曲，入耳直白。"
       },
-      "rarity": "rare",
+      "rarity": "common",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -1513,7 +1534,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview124/v4/fa/59/73/fa597346-4991-1e7b-86ea-e748472ddee9/mzaf_9473233964676089138.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ec/74/e3/ec74e3eb-6f8f-3368-0011-e67d22477499/mzaf_6019449020130194549.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T18:56:23Z",
@@ -1632,7 +1653,7 @@
         "checkedAt": "2026-08-21T18:56:23Z",
         "note": "遠端環境網路政策擋 worker /album-rating 與 last.fm，人工錨點評定；Prestige 全盛期的三重奏概念盤，Paul Chambers／Art Taylor 的固定班底，是 Garland 名下最常被舉出的作品之一；標準曲為主，入耳無門檻，屬爵士樂迷領域。"
       },
-      "rarity": "uncommon",
+      "rarity": "rare",
       "apexAssessment": {
         "eligible": false,
         "tier": null,
@@ -1649,7 +1670,7 @@
       },
       "preview": {
         "status": "ready",
-        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/73/49/c2/7349c264-acac-ac1a-b52c-112ca6df06d8/mzaf_7693110569919423162.plus.aac.p.m4a",
+        "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/22/76/cc/2276cc3e-0942-ff96-48e8-1adac349c97a/mzaf_5619636961290156123.plus.aac.p.m4a",
         "source": "apple",
         "httpStatus": 200,
         "checkedAt": "2026-08-21T18:56:23Z",

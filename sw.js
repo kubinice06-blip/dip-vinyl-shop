@@ -65,7 +65,8 @@ self.addEventListener('fetch', (event) => {
       fetch(req)
         .then((res) => {
           const copy = res.clone();
-          caches.open(CACHE).then((c) => c.put('/index.html', copy));
+          // /tune/ 是首頁的另一份（標題、分享預覽不同），各存各的，免得離線時首頁變成頻率光譜那份
+          caches.open(CACHE).then((c) => c.put(url.pathname.startsWith('/tune') ? '/tune/' : '/index.html', copy));
           return res;
         })
         .catch(() =>

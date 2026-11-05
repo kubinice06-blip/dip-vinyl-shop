@@ -1,0 +1,46 @@
+{
+ "batch": "add-20261104-ax3",
+ "cards": 26,
+ "written": {
+  "cardCatalog": 26,
+  "kvKeys": 26,
+  "seedRows": 26,
+  "previewReady": 0,
+  "previewUnavailable": 26
+ },
+ "review": {
+  "by": "cloud-main",
+  "cards": 26,
+  "changed": [
+   "desc2:Princess Flower and the Moon Rays|Dreaming the Magic of Your Maya",
+   "desc2:Inner Dialogue|Friend",
+   "desc2:Odean Pope|Almost Like Me"
+  ]
+ },
+ "qa": {
+  "research": "pass",
+  "hooks": "pass",
+  "out": "pass",
+  "prepareGate": "0 error",
+  "publishedGate": "0 error"
+ },
+ "apex": {
+  "pearl": 21,
+  "general": 5
+ },
+ "pendingLocal": {
+  "kv": "無",
+  "listeners": [],
+  "apexEvidence": [],
+  "genreTree": "已重建",
+  "albumOverrides": "album_overrides.tier 留給本機後台「依卡池同步頂點旗標」"
+ },
+ "artistIntro": {
+  "roster": "batch-progress/artist-intro/roster-ax3.json",
+  "batch": "ar-d-263",
+  "artists": 25,
+  "published": 16,
+  "skipped": 9,
+  "state": "published"
+ }
+}

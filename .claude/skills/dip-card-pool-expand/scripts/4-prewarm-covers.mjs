@@ -16,7 +16,7 @@ const cards = JSON.parse(fs.readFileSync(inPath, 'utf-8'));
 
 // 文件 id 必須與 admin.html 的 ovCardId() 完全一致，否則會另開一份孤兒文件
 const cardId = (a, b) => ((a || '') + '|' + (b || '')).toLowerCase().replace(/\//g, '-').trim();
-const rarityOf = (c, o, a) => { const s = c + a + (o >= 5 ? 1 : 0); return s >= 10 ? 'legendary' : s >= 8 ? 'epic' : s >= 6 ? 'uncommon' : s >= 4 ? 'rare' : 'common'; };
+const rarityOf = (c, o, a) => { const s = c + a + (o >= 5 ? 1 : 0); return s >= 9 ? 'legendary' : s >= 8 ? 'epic' : s >= 7 ? 'uncommon' : s >= 6 ? 'rare' : 'common'; };
 
 let ok = 0, fail = 0;
 for (const c of cards) {

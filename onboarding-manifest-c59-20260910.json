@@ -28,22 +28,43 @@
     "discogsReleaseId": "1566559"
    },
    "ratings": {
-    "classic": 3,
-    "obscurity": 4,
+    "classic": 4,
+    "obscurity": 5,
     "accessibility": 4,
     "listeners": 172,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Tyler 代表作、Nessa 名盤；L<1000 無串流→5；自由爵士"
    },
-   "rarity": "uncommon",
+   "rarity": "legendary",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。Nessa正規小廠，壓量非極小，非聖杯",
+    "evidenceUrls": [
+     "https://www.last.fm/music/Charles%20Tyler/Saga%20of%20the%20Outlaws",
+     "https://musicbrainz.org/release-group/b25fcb90-edd9-4cbe-bb37-0fcb17d2704d",
+     "https://www.discogs.com/release/1566559"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
-    "text": "兩把低音提琴，一把壓在左聲道、一把壓在右聲道。左邊是 John Ore、右邊是 Ronnie Boykins，上面是 Tyler 的中音薩克斯風與 Earl Cross 的小號。封面副標是「一則關於新舊西部的複音聲響故事」，封底另印「RIDE OF THE MARAUDERS」，全碟只分成 Chapter One 與 Chapter Two。1976 年 5 月錄於紐約 Studio Rivbea 的現場，1978 年由 Nessa Records 發行。",
+    "text": "《Saga of the Outlaws》是中音薩克斯風手 Charles Tyler 1976 年在紐約 Studio Rivbea 的現場錄音，1978 年由 Nessa 發行，被視為七〇年代紐約 loft 爵士的經典，絕版後才由 Nessa 重出 CD。編制是 Tyler、小號手 Earl Cross、鼓手 Steve Reid，以及分放左右聲道的兩把低音提琴。全曲分兩章，每人有一段寫好的聲部當錨點，其餘開放即興；兩把低音提琴拉出節奏張力與旋律對位，鼓在自由脈動與搖擺之間來回，小號音色暗而節制，中音薩克斯風帶民謠色彩。",
     "sourceUrls": [
      "https://www.discogs.com/release/1566559",
      "https://en.wikipedia.org/wiki/Saga_of_the_Outlaws",
@@ -61,8 +82,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -91,22 +112,43 @@
     "discogsReleaseId": "1253024"
    },
    "ratings": {
-    "classic": 3,
-    "obscurity": 4,
-    "accessibility": 2,
+    "classic": 4,
+    "obscurity": 5,
+    "accessibility": 3,
     "listeners": 210,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Freeman 早期代表作、未 CD 化；L<1000 無串流→5；靈性後咆勃"
    },
-   "rarity": "rare",
+   "rarity": "epic",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。India Navigation未CD化，但壓量非極小、非聖杯",
+    "evidenceUrls": [
+     "https://www.last.fm/music/Chico%20Freeman/Kings%20of%20Mali",
+     "https://musicbrainz.org/release-group/330dab85-8fbb-4ff3-82c7-3c2f0e482fde",
+     "https://www.discogs.com/release/1253024"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
-    "text": "封底印的是他自己整理的馬利帝國史料：Sundiata Keita 與 Mansa Kankan Musa。四首曲子都獻給古馬利王國，〈Kings of Mali〉與〈Look Up〉在其中。五人編制裡有三個人兼彈非洲拇指琴，另有 Jay Hoggard 的顫音琴與 Anthony Davis 的鋼琴。發行者是紐約的 India Navigation，廠牌由企業律師 Bob Cummins 創辦。速度中偏慢、留白多，比同期 loft 場景的錄音更接近作曲。",
+    "text": "《Kings of Mali》是薩克斯風手 Chico Freeman 1977 年錄下、1978 年由紐約獨立廠牌 India Navigation 發行的現場專輯，沒有出過 CD 重發。這家廠牌 1972 年由律師 Bob Cummins 創辦。Freeman 把自己整理的古馬利帝國史料印在封底，四首原創曲都獻給這個王國。編制是他的薩克斯風、長笛與 bailophone，Jay Hoggard 的顫音琴與 balafon，Anthony Davis 的鋼琴，加上低音提琴與鼓；Freeman 吹得很放，曲子走後咆勃與前衛爵士之間的路線。",
     "sourceUrls": [
      "https://www.discogs.com/release/1253024",
      "https://en.wikipedia.org/wiki/Kings_of_Mali",
@@ -123,8 +165,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   }
  ]

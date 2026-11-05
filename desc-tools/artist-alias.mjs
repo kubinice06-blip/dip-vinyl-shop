@@ -14,6 +14,10 @@ const ROOT = path.resolve('..')
 const RDIR = path.join(ROOT, 'batch-progress/artist-intro')
 const rosterFile = fs.readdirSync(RDIR).filter(f => /^roster-\d+\.json$/.test(f)).sort().pop()
 const byKey = new Map(JSON.parse(fs.readFileSync(path.join(RDIR, rosterFile), 'utf8')).entries.map(e => [e.key, e]))
+
+// 上架批另存的補充名冊（roster-sf05.json 這類非日期檔）一併讀；主名冊是單行 JSON，並行工作階段一起改必撞（2026-10-30）
+for (const f of fs.readdirSync(RDIR).filter(f => /^roster-.+\.json$/.test(f) && !/^roster-\d+\.json$/.test(f)))
+  for (const e of JSON.parse(fs.readFileSync(path.join(RDIR, f), 'utf8')).entries || []) if (!byKey.has(e.key)) byKey.set(e.key, e)
 const aliases = JSON.parse(fs.readFileSync('batches/artist/aliases.json', 'utf8'))
 
 const ODIR = 'batches/artist/output'

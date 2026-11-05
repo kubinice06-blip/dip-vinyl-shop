@@ -34,11 +34,27 @@
    },
    "ratings": {
     "classic": 4,
-    "obscurity": 4,
+    "obscurity": 3,
     "accessibility": 4,
     "listeners": 3499,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 3,
+     "accessibility": 3,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：NYHC 首張里程碑；L3499 下限3；極速原始硬蕊",
+     "rarity": "epic"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：NYHC 早期 EP，歷史意義大但公認里程碑是 Victim in Pain｜L=3499",
+    "previousAccessibility": {
+     "accessibility": 3,
+     "rarity": "uncommon",
+     "at": "2026-11-04"
+    },
+    "loudFloorNote": "硬蕊度音量下限（2026-11-04 店主定案）：紐約 hardcore 早期 EP，極速嘶吼"
    },
    "rarity": "epic",
    "apexAssessment": {
@@ -61,7 +77,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/ea/b4/41/eab4419a-5f06-891b-e936-cf27b9852a68/mzaf_11562472355481393769.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/31/47/0a/31470a14-db42-29b4-10dd-520613f64b50/mzaf_8319168364681436515.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -107,14 +123,29 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 4,
-    "accessibility": 2,
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 4,
     "listeners": 11876,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：NYHC 83 年經典 EP、樂團代表作；Victory 再發串流、L11876；極速硬蕊",
+    "previousAccessibility": {
+     "accessibility": 3,
+     "rarity": "uncommon",
+     "at": "2026-11-04"
+    },
+    "loudFloorNote": "硬蕊度音量下限（2026-11-04 店主定案）：早期紐約 hardcore，極速吶喊"
    },
-   "rarity": "rare",
+   "rarity": "epic",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -134,7 +165,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview114/v4/8f/3f/54/8f3f5422-0778-4f73-bff2-0600176bfb3b/mzaf_11455564690854484972.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview124/v4/7c/53/8e/7c538e8c-bdc6-7a1b-a301-ea67aa7874b2/mzaf_13804148964114299078.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -182,11 +213,20 @@
    },
    "ratings": {
     "classic": 4,
-    "obscurity": 4,
-    "accessibility": 2,
+    "obscurity": 3,
+    "accessibility": 3,
     "listeners": 19610,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：SOIA 首 EP，NYHC 經典；Revelation、L19610；硬蕊龐克"
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -209,7 +249,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/b7/a2/65/b7a26587-3c06-0ce3-bef7-5ed3bd2eff60/mzaf_16555194658207843091.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/14/73/be/1473be20-4858-94d9-4eae-e8963778c4c3/mzaf_10311258727782203210.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -255,14 +295,29 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 3,
-    "obscurity": 4,
+    "classic": 4,
+    "obscurity": 5,
     "accessibility": 4,
     "listeners": 45,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Revelation 目錄 1 號、NYHC 歷史盤；L45 無試聽→5；原始硬蕊",
+    "previousAccessibility": {
+     "accessibility": 3,
+     "rarity": "epic",
+     "at": "2026-11-04"
+    },
+    "loudFloorNote": "硬蕊度音量下限（2026-11-04 店主定案）：紐約 hardcore，快速吼唱"
    },
-   "rarity": "uncommon",
+   "rarity": "legendary",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -330,12 +385,21 @@
    "ratings": {
     "classic": 2,
     "obscurity": 4,
-    "accessibility": 2,
+    "accessibility": 3,
     "listeners": 83,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Killing Time 前身無廠牌卡帶；L83 有串流→4；NYHC"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -400,13 +464,28 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 4,
+    "obscurity": 5,
     "accessibility": 4,
     "listeners": 789,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：NYHC 邪典單發；L789 無試聽→5；硬蕊龐克",
+    "previousAccessibility": {
+     "accessibility": 3,
+     "rarity": "uncommon",
+     "at": "2026-11-04"
+    },
+    "loudFloorNote": "硬蕊度音量下限（2026-11-04 店主定案）：NYHC"
    },
-   "rarity": "uncommon",
+   "rarity": "epic",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -469,21 +548,47 @@
    },
    "ratings": {
     "classic": 2,
-    "obscurity": 4,
+    "obscurity": 5,
     "accessibility": 4,
     "listeners": 226,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：波士頓單發 7 吋；L226 無試聽→5；短促硬蕊龐克",
+    "previousAccessibility": {
+     "accessibility": 3,
+     "rarity": "rare",
+     "at": "2026-11-04"
+    },
+    "loudFloorNote": "硬蕊度音量下限（2026-11-04 店主定案）：NYHC"
    },
    "rarity": "uncommon",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。小廠／自發盤、聽眾<300，但壓量未見數百張以下的確據，也非收藏圈公認聖杯；只到 5",
+    "evidenceUrls": [
+     "https://www.last.fm/music/Krakdown/Krakdown",
+     "https://musicbrainz.org/release-group/8482e32a-5a41-39cf-b567-b0fea6c0c6d5"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
-    "text": "六軌合計八分五秒，開場的〈Freedom〉三十四秒。其餘五軌也沒有一首撐到兩分鐘，最長的〈We Need Change〉一分四十七秒。六個曲名排成一組遞進：自由、失望、被蒙住眼、生病的社會、我們需要改變、信任。廠牌欄寫的是 Common Cause，編號記為 NR-18183，名下就只有這一筆。",
+    "text": "《Krakdown》是紐約長島硬蕊團 Krakdown 1989 年由 Common Cause Records 發行的六曲 7 吋。在此之前這個團只有自製卡帶，1987 年那捲由 Don Fury 錄音；創團成員 Chris Notaro 後來改當 Crumbsuckers 主唱；2011 年才有 500 張的重壓版，加上兩首未曾發行的錄音室曲。A 面是〈Freedom〉〈Disappointment〉〈Blinded〉，B 面是〈Sick Society〉〈We Need Change〉〈Trust〉，路數偏硬蕊龐克。",
     "sourceUrls": [
      "https://musicbrainz.org/ws/2/release?release-group=8482e32a-5a41-39cf-b567-b0fea6c0c6d5&fmt=json&inc=media+labels+recordings&limit=100",
      "https://musicbrainz.org/ws/2/release-group?artist=f01e4074-65c0-4fec-b1ac-e202a7c90702&fmt=json&limit=100&offset=0",
@@ -502,8 +607,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -536,14 +641,29 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 4,
-    "accessibility": 2,
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 4,
     "listeners": 15601,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：NYHC youth crew 代表 7 吋；Blackout! 再發串流、L15601；硬蕊龐克",
+    "previousAccessibility": {
+     "accessibility": 3,
+     "rarity": "uncommon",
+     "at": "2026-11-04"
+    },
+    "loudFloorNote": "硬蕊度音量下限（2026-11-04 店主定案）：NYHC"
    },
-   "rarity": "rare",
+   "rarity": "epic",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -609,14 +729,29 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 5,
-    "obscurity": 4,
-    "accessibility": 2,
+    "classic": 4,
+    "obscurity": 5,
+    "accessibility": 4,
     "listeners": 822,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：L822 無試聽→5；NYHC 單發 7 吋代表；硬蕊龐克（cur 5 偏高）",
+    "previousAccessibility": {
+     "accessibility": 3,
+     "rarity": "epic",
+     "at": "2026-11-04"
+    },
+    "loudFloorNote": "硬蕊度音量下限（2026-11-04 店主定案）：紐約 hardcore 金屬化重型盤，嘶吼重拍"
    },
-   "rarity": "uncommon",
+   "rarity": "legendary",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -679,14 +814,29 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 3,
-    "obscurity": 4,
-    "accessibility": 2,
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 4,
     "listeners": 12774,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Madball 首 EP，NYHC 經典；原盤無試聽但 Century Media 合輯收錄、L12774；短促硬蕊",
+    "previousAccessibility": {
+     "accessibility": 3,
+     "rarity": "uncommon",
+     "at": "2026-11-04"
+    },
+    "loudFloorNote": "硬蕊度音量下限（2026-11-04 店主定案）：NYHC 快速吼唱"
    },
-   "rarity": "rare",
+   "rarity": "epic",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -750,12 +900,22 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 4,
-    "obscurity": 4,
+    "classic": 3,
+    "obscurity": 5,
     "accessibility": 4,
     "listeners": 208,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 3,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：L208 無試聽→5；Vermiform 7 吋；政治硬蕊龐克",
+     "rarity": "uncommon"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：Vermiform 小廠 7吋，但曲目收入 KRS 合輯有串流；hardcore 粗礪｜L=208"
    },
    "rarity": "epic",
    "apexAssessment": {
@@ -823,11 +983,20 @@
    },
    "ratings": {
     "classic": 4,
-    "obscurity": 4,
+    "obscurity": 3,
     "accessibility": 3,
     "listeners": 12034,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 4,
+     "accessibility": 3,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Walter Schreifels 後硬蕊首 EP，場景重要作；Revelation、L12034；後硬蕊"
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -898,14 +1067,29 @@
     "note": "試聽探測釘定的 collectionId 1686435375（us）：The Icemen — Rest in Peace - EP"
    },
    "ratings": {
-    "classic": 2,
+    "classic": 3,
     "obscurity": 4,
-    "accessibility": 2,
+    "accessibility": 4,
     "listeners": 113,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：NYHC 收藏家邪典；L113 有串流→4；中速硬蕊",
+    "previousAccessibility": {
+     "accessibility": 3,
+     "rarity": "rare",
+     "at": "2026-11-04"
+    },
+    "loudFloorNote": "硬蕊度音量下限（2026-11-04 店主定案）：紐約 hardcore／金屬 crossover"
    },
-   "rarity": "rare",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -927,7 +1111,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/d4/31/80/d43180bc-3f44-f4e7-db02-cc63b67505d8/mzaf_13462527113939157593.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/08/30/39/08303970-8ea8-2886-6f97-d42d9981c37b/mzaf_11696291609411685607.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -974,12 +1158,21 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 4,
-    "obscurity": 4,
+    "classic": 3,
+    "obscurity": 5,
     "accessibility": 4,
     "listeners": 19,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "epic"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Vermiform split，Neanderthal 屬 powerviolence 先驅；L19 無試聽→5；混沌急促"
    },
    "rarity": "epic",
    "apexAssessment": {
@@ -1044,14 +1237,29 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 3,
-    "obscurity": 4,
-    "accessibility": 2,
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 4,
     "listeners": 12534,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：NYHC 代表 EP；Wreck-Age 正規、L12534；beatdown 硬蕊",
+    "previousAccessibility": {
+     "accessibility": 3,
+     "rarity": "uncommon",
+     "at": "2026-11-04"
+    },
+    "loudFloorNote": "硬蕊度音量下限（2026-11-04 店主定案）：NYHC 重型 hardcore"
    },
-   "rarity": "rare",
+   "rarity": "epic",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1070,7 +1278,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/51/5f/c3/515fc3ec-9886-80e8-81dc-eb2b9d2c058d/mzaf_15464071506882482710.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/ed/00/f8/ed00f837-1530-8e3e-6fdc-1bad518ff3ab/mzaf_14866901838509627486.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -1116,12 +1324,27 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 3,
-    "obscurity": 4,
+    "classic": 2,
+    "obscurity": 5,
     "accessibility": 4,
     "listeners": 245,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：現場 7 吋；L245 無試聽→5；NYHC",
+    "previousAccessibility": {
+     "accessibility": 3,
+     "rarity": "rare",
+     "at": "2026-11-04"
+    },
+    "loudFloorNote": "硬蕊度音量下限（2026-11-04 店主定案）：紐約 hardcore 現場，快速吼唱"
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -1186,22 +1409,42 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 3,
-    "obscurity": 4,
+    "classic": 2,
+    "obscurity": 5,
     "accessibility": 3,
     "listeners": 161,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 3,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：無廠牌 demo；L161 無試聽→5；金屬核"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。L161有效，無廠牌demo卡帶，壓量無據、無聖杯名聲；5星",
+    "evidenceUrls": [
+     "https://www.last.fm/music/Vision%20of%20Disorder/Demo%20'93",
+     "https://musicbrainz.org/release-group/eab1d55a-3f34-4e55-82ae-1bca5aa33ebb"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
-    "text": "四軌合計十六分四十二秒，末尾的〈Society〉五分三十一秒。四首都超過三分鐘，開場的〈Formula for Failure〉4:34，中間排著〈7/13〉3:16 與〈Take Them Out〉3:21。廠牌欄被明確標成「沒有廠牌」，目錄編號欄是空的，包裝欄只寫了卡帶盒。開場那首兩年後又被錄過一次，收在同一掛名 1995 年那批錄音的數位版上，兩次的長度差八秒。",
+    "text": "《Demo '93》是紐約長島樂團 Vision of Disorder 1993 年自己發行的四曲卡帶，沒有廠牌、編號，也沒有再版紀錄。這是樂團第一捲 demo，三年後他們簽進 Roadrunner 旗下廠牌出首張專輯，1998 年的《Imprint》登上美國 Heatseekers 榜第 10 名；這捲有三首在 1995 年的 demo 重錄，1999 年的專輯也多是重錄 demo 時期的歌。成員是一位主唱、兩把吉他（其中一人兼貝斯）與鼓，樂團自己混音。四首都超過三分鐘，最長的〈Society〉5 分 31 秒，合計約 17 分鐘，路數偏硬蕊。",
     "sourceUrls": [
      "https://musicbrainz.org/ws/2/release?release-group=eab1d55a-3f34-4e55-82ae-1bca5aa33ebb&fmt=json&inc=media+labels+recordings&limit=100",
      "https://musicbrainz.org/ws/2/release-group?artist=618a18b1-dec3-4c4a-813b-988d9c065722&fmt=json&limit=100&offset=0",
@@ -1221,8 +1464,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -1257,21 +1500,47 @@
    },
    "ratings": {
     "classic": 2,
-    "obscurity": 4,
-    "accessibility": 2,
+    "obscurity": 5,
+    "accessibility": 4,
     "listeners": 53,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：無廠牌卡帶，曲目後收進 Final Beatdown；L53 無試聽→5；beatdown 硬蕊",
+    "previousAccessibility": {
+     "accessibility": 3,
+     "rarity": "rare",
+     "at": "2026-11-04"
+    },
+    "loudFloorNote": "硬蕊度音量下限（2026-11-04 店主定案）：紐約 hardcore，重拍吶喊"
    },
-   "rarity": "rare",
+   "rarity": "uncommon",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。無廠牌自發卡帶，壓量無據，非公認聖杯",
+    "evidenceUrls": [
+     "https://www.last.fm/music/Bulldoze/Cleaning%20Shit%20Up!!",
+     "https://musicbrainz.org/release-group/642337ab-cbd7-427c-a1d8-ae92370ba39c"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
-    "text": "後三軌每一首都超過四分鐘，末尾的〈Suffering〉五分零二秒。開場的〈The Truth〉2:30 是唯一低於四分鐘的一首，後面依序是〈Hypocrite〉4:54 與〈Herb〉4:11，四軌合計 16 分 37 秒。國別欄寫的不是任何一個國家而是無單一國別，廠牌欄與目錄編號欄整個是空的，能讀到的載體只有卡帶。三年後同一掛名那張十四軌的長篇，把這四首全部收了進去。",
+    "text": "《Cleaning Shit Up!!》是紐澤西 Irvington 樂團 Bulldoze 1993 年的四曲 demo，也是他們最早的錄音，只以 demo 流通，2012 年才收進專輯的重發版。Bulldoze 被視為 beatdown hardcore 的開創者之一，這個類型就以他們唯一的錄音室專輯得名。樂團 1992 年由 thrash metal 團轉型而成，走慢到中速的硬蕊，以 breakdown 與沉重的 groove 為主，帶重金屬與嘻哈影響；開場的〈The Truth〉與〈Hypocrite〉被列為樂團最關鍵的 groove riff。",
     "sourceUrls": [
      "https://musicbrainz.org/ws/2/release?release-group=642337ab-cbd7-427c-a1d8-ae92370ba39c&fmt=json&inc=media+labels+recordings&limit=100",
      "https://musicbrainz.org/ws/2/release?release-group=8785d829-5ea1-3118-9f6f-2f442ad40775&fmt=json&inc=media+labels+recordings&limit=100",
@@ -1291,8 +1560,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -1328,10 +1597,25 @@
    "ratings": {
     "classic": 2,
     "obscurity": 4,
-    "accessibility": 2,
+    "accessibility": 4,
     "listeners": 11687,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：法國小廠 7 吋、無試聽；L11687 疑為藝人層級，不給 5；beatdown 硬蕊",
+    "previousAccessibility": {
+     "accessibility": 3,
+     "rarity": "common",
+     "at": "2026-11-04"
+    },
+    "loudFloorNote": "硬蕊度音量下限（2026-11-04 店主定案）：紐約 hardcore，重拍吶喊"
    },
    "rarity": "rare",
    "apexAssessment": {
@@ -1399,10 +1683,19 @@
    "ratings": {
     "classic": 3,
     "obscurity": 4,
-    "accessibility": 2,
+    "accessibility": 3,
     "listeners": 3038,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：早期 EP；歐洲小廠 7 吋＋2014 數位、L3038→4；金屬核"
    },
    "rarity": "rare",
    "apexAssessment": {
@@ -1425,7 +1718,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/7d/5d/29/7d5d29a1-e770-0310-2eaf-f8e844594555/mzaf_16377456967421144750.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/Music4/v4/1d/81/af/1d81aff7-561b-3cd3-b43f-7918aff7901d/mzaf_5077718697398147336.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -1474,10 +1767,25 @@
     "obscurity": 4,
     "accessibility": 4,
     "listeners": 12,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：小廠 7 吋挑選 demo；L12 有串流→4；硬蕊龐克",
+    "previousAccessibility": {
+     "accessibility": 3,
+     "rarity": "common",
+     "at": "2026-11-04"
+    },
+    "loudFloorNote": "硬蕊度音量下限（2026-11-04 店主定案）：NYHC"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1544,14 +1852,29 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 4,
-    "accessibility": 2,
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 4,
     "listeners": 8971,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：NYHC 首張 EP，場景二線；Equal Vision 正規、L8971；中速 beatdown 硬蕊",
+    "previousAccessibility": {
+     "accessibility": 3,
+     "rarity": "rare",
+     "at": "2026-11-04"
+    },
+    "loudFloorNote": "硬蕊度音量下限（2026-11-04 店主定案）：紐約硬蕊，粗重節奏"
    },
-   "rarity": "rare",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1572,7 +1895,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/93/43/0c/93430c8e-f17f-fc03-adc0-d5828fc9b4ac/mzaf_240172072127363344.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/80/41/4d/80414dc4-bfc5-b17a-63a0-303911c56e86/mzaf_16297312323520535388.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -1618,14 +1941,29 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 4,
+    "classic": 3,
     "obscurity": 4,
     "accessibility": 4,
     "listeners": 2938,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "epic"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：NYHC 老團後期 EP，非代表作（代表是 87 demo）；Eyeball 小廠 CD 無串流、L2938；硬蕊龐克",
+    "previousAccessibility": {
+     "accessibility": 3,
+     "rarity": "rare",
+     "at": "2026-11-04"
+    },
+    "loudFloorNote": "硬蕊度音量下限（2026-11-04 店主定案）：紐約 hardcore，重拍吶喊"
    },
-   "rarity": "epic",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1690,12 +2028,27 @@
    "ratings": {
     "classic": 4,
     "obscurity": 4,
-    "accessibility": 2,
+    "accessibility": 4,
     "listeners": 60,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：youth crew 奠基首 EP；L60 有串流→4；極速硬蕊",
+    "previousAccessibility": {
+     "accessibility": 3,
+     "rarity": "uncommon",
+     "at": "2026-11-04"
+    },
+    "loudFloorNote": "硬蕊度音量下限（2026-11-04 店主定案）：youth crew hardcore，快速吼唱"
    },
-   "rarity": "uncommon",
+   "rarity": "epic",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1760,22 +2113,48 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 4,
-    "obscurity": 4,
-    "accessibility": 2,
+    "classic": 2,
+    "obscurity": 5,
+    "accessibility": 4,
     "listeners": 128,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：早期 demo 卡帶，歌後重錄；L128 無試聽→5；粗糙硬蕊（cur 經典 4 偏高）",
+    "previousAccessibility": {
+     "accessibility": 3,
+     "rarity": "rare",
+     "at": "2026-11-04"
+    },
+    "loudFloorNote": "硬蕊度音量下限（2026-11-04 店主定案）：紐約 youth crew hardcore，快速吼唱"
    },
    "rarity": "uncommon",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。無廠牌試聽帶，曲目多收入正式發行，1991 盜版流通；聖杯地位與壓量皆無據，只到 5",
+    "evidenceUrls": [
+     "https://www.last.fm/music/Gorilla%20Biscuits/demo%201987",
+     "https://musicbrainz.org/release-group/1c997f24-75ad-3b2b-bfaa-1891c79fa790"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
-    "text": "六軌裡的第四首直接拿團名當曲名。其餘五軌從〈No Reason Why〉起排，經過〈Better Than You〉〈Do It Yourself〉，收在〈Finish What You Started〉，實體欄位一軌長度都沒有記。廠牌欄填的是「沒有廠牌」，目錄編號欄記的是無。這是這個掛名目錄上最早的一筆錄音。",
+    "text": "《demo 1987》是紐約硬蕊樂團 Gorilla Biscuits 最早的錄音，一捲從未正式發行的 demo 卡帶。樂團用雜貨店最便宜的空白卡帶複製，沒有盒子，封面是剪貼影印，後來流通的只有盜版。Gorilla Biscuits 被視為 youth crew 最具開創性的團之一，1989 年的首張專輯是 Revelation 當時賣得最好的作品。這捲共六首，其中〈Better Than You〉在樂團出 EP 前就被收進 Revelation 的合輯；錄音粗糙、原始。",
     "sourceUrls": [
      "https://musicbrainz.org/ws/2/release-group/1c997f24-75ad-3b2b-bfaa-1891c79fa790?fmt=json&inc=artist-credits+releases+media",
      "https://musicbrainz.org/ws/2/release?release-group=1c997f24-75ad-3b2b-bfaa-1891c79fa790&fmt=json&inc=media+labels+recordings&limit=100",
@@ -1795,8 +2174,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -1826,13 +2205,28 @@
    },
    "ratings": {
     "classic": 4,
-    "obscurity": 3,
-    "accessibility": 2,
+    "obscurity": 2,
+    "accessibility": 4,
     "listeners": 90827,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：youth crew 經典首 7 吋；Revelation 長年流通、L90827；旋律輕快硬蕊",
+    "previousAccessibility": {
+     "accessibility": 2,
+     "rarity": "rare",
+     "at": "2026-11-04"
+    },
+    "loudFloorNote": "硬蕊度音量下限（2026-11-04 店主定案）：youth crew hardcore，整張快速"
    },
-   "rarity": "uncommon",
+   "rarity": "epic",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1898,11 +2292,26 @@
    },
    "ratings": {
     "classic": 4,
-    "obscurity": 4,
+    "obscurity": 3,
     "accessibility": 4,
     "listeners": 17776,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "epic"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：youth crew 代表 7 吋；Revelation 數位、L17776；硬蕊龐克",
+    "previousAccessibility": {
+     "accessibility": 3,
+     "rarity": "uncommon",
+     "at": "2026-11-04"
+    },
+    "loudFloorNote": "硬蕊度音量下限（2026-11-04 店主定案）：NYHC youth crew"
    },
    "rarity": "epic",
    "apexAssessment": {
@@ -1924,7 +2333,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/b2/11/43/b21143d2-413b-26bc-05d6-9480d7d0c70e/mzaf_16006832548951717070.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/fa/a7/ca/faa7caab-ce1f-3ae1-b7dd-b8b0ce8055f7/mzaf_6487132634236598714.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -1964,14 +2373,29 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 4,
-    "accessibility": 2,
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 4,
     "listeners": 8930,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：youth crew 單發代表作；Revelation 數位、L8930；硬蕊龐克",
+    "previousAccessibility": {
+     "accessibility": 3,
+     "rarity": "uncommon",
+     "at": "2026-11-04"
+    },
+    "loudFloorNote": "硬蕊度音量下限（2026-11-04 店主定案）：youth crew hardcore，快速吼唱"
    },
-   "rarity": "rare",
+   "rarity": "epic",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1990,7 +2414,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/f6/13/d8/f613d855-7da3-26a6-7472-922b06dbd9ea/mzaf_1277124060114250328.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/94/59/ea/9459ea23-d28f-f7fb-3117-d777ee6749a2/mzaf_13652475302032023966.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -2040,8 +2464,23 @@
     "obscurity": 4,
     "accessibility": 4,
     "listeners": 2844,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "epic"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：youth crew 代表 7 吋；原盤無試聽、L2844（曲目在合輯串流）→4；硬蕊龐克",
+    "previousAccessibility": {
+     "accessibility": 3,
+     "rarity": "uncommon",
+     "at": "2026-11-04"
+    },
+    "loudFloorNote": "硬蕊度音量下限（2026-11-04 店主定案）：youth crew hardcore"
    },
    "rarity": "epic",
    "apexAssessment": {
@@ -2108,14 +2547,29 @@
     "note": "試聽探測釘定的 collectionId 897067238（us）：Alone in a Crowd — Alone in a Crowd - EP"
    },
    "ratings": {
-    "classic": 2,
+    "classic": 3,
     "obscurity": 4,
-    "accessibility": 2,
+    "accessibility": 4,
     "listeners": 3,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：L3 有串流→4；NYHC 單發 7 吋；硬蕊龐克",
+    "previousAccessibility": {
+     "accessibility": 3,
+     "rarity": "rare",
+     "at": "2026-11-04"
+    },
+    "loudFloorNote": "硬蕊度音量下限（2026-11-04 店主定案）：紐約硬蕊分輯，快速嘶吼"
    },
-   "rarity": "rare",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2181,14 +2635,29 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
+    "classic": 4,
     "obscurity": 3,
     "accessibility": 4,
     "listeners": 41198,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 3,
+     "accessibility": 4,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Zack de la Rocha 前團唯一 EP，場景名盤；Revelation、L41198；激烈旋律硬蕊",
+    "previousAccessibility": {
+     "accessibility": 3,
+     "rarity": "uncommon",
+     "at": "2026-11-04"
+    },
+    "loudFloorNote": "硬蕊度音量下限（2026-11-04 店主定案）：NYHC 快速吼唱"
    },
-   "rarity": "uncommon",
+   "rarity": "epic",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2256,14 +2725,29 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 4,
+    "classic": 3,
     "obscurity": 4,
     "accessibility": 4,
     "listeners": 414,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "epic"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：三軌 EP 含 Zeppelin 翻唱，非代表作；L414 有串流→4；中速金屬硬蕊",
+    "previousAccessibility": {
+     "accessibility": 3,
+     "rarity": "rare",
+     "at": "2026-11-04"
+    },
+    "loudFloorNote": "硬蕊度音量下限（2026-11-04 店主定案）：NYHC hardcore"
    },
-   "rarity": "epic",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2329,14 +2813,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 4,
+    "classic": 3,
     "obscurity": 4,
     "accessibility": 4,
     "listeners": 2748,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "epic"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：早期 7 吋，非代表作；小廠原盤＋Relapse 數位、L2748→4；混沌金屬核"
    },
-   "rarity": "epic",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2356,7 +2849,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/de/d6/16/ded61668-5897-dbbb-f764-3dd128b387a3/mzaf_13436325307026931668.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/7a/79/08/7a7908e1-7493-06ea-7a9b-4e78916776eb/mzaf_15316353031224900060.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -2402,14 +2895,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 4,
-    "obscurity": 4,
+    "classic": 2,
+    "obscurity": 5,
     "accessibility": 3,
     "listeners": 108,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 4,
+     "accessibility": 3,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：無廠牌 demo 卡帶；L108 無試聽→5；硬蕊（cur 經典 4 偏高）"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2471,12 +2973,21 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 4,
-    "obscurity": 4,
-    "accessibility": 2,
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
     "listeners": 67,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：NJ 邪典 7 吋；L67 無試聽→5；金屬化硬蕊"
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -2540,11 +3051,26 @@
    },
    "ratings": {
     "classic": 2,
-    "obscurity": 4,
+    "obscurity": 5,
     "accessibility": 4,
     "listeners": 0,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：NJ 小廠 split；L0 無試聽→5；硬蕊龐克",
+    "previousAccessibility": {
+     "accessibility": 3,
+     "rarity": "rare",
+     "at": "2026-11-04"
+    },
+    "loudFloorNote": "硬蕊度音量下限（2026-11-04 店主定案）：紐澤西青年派硬蕊分輯"
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -2608,11 +3134,20 @@
    },
    "ratings": {
     "classic": 4,
-    "obscurity": 4,
-    "accessibility": 2,
+    "obscurity": 3,
+    "accessibility": 3,
     "listeners": 11687,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：vegan straight edge 金屬核奠基 EP；Victory 再發、L11687；金屬化硬蕊"
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -2676,14 +3211,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 3,
+    "classic": 4,
     "obscurity": 3,
-    "accessibility": 2,
+    "accessibility": 3,
     "listeners": 20080,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：金屬核代表 EP，同名曲為場景標誌；Victory、L20080；重型金屬核"
    },
-   "rarity": "rare",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2705,7 +3249,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview124/v4/ea/1d/6a/ea1d6a7f-d49a-42c6-bc98-068464fee292/mzaf_804833472711620976.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f1/f3/88/f1f3880e-1095-e80c-2dda-9395bc39752d/mzaf_17923993937771550955.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -2751,14 +3295,29 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 3,
+    "classic": 4,
     "obscurity": 3,
-    "accessibility": 2,
+    "accessibility": 4,
     "listeners": 28083,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：youth crew 全錄音合輯，樂團最常被推的入口；Revelation 流通、L28083；硬蕊龐克",
+    "previousAccessibility": {
+     "accessibility": 3,
+     "rarity": "uncommon",
+     "at": "2026-11-04"
+    },
+    "loudFloorNote": "硬蕊度音量下限（2026-11-04 店主定案）：youth crew hardcore"
    },
-   "rarity": "rare",
+   "rarity": "epic",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2780,7 +3339,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/27/07/e0/2707e0a3-c912-dd2d-30d5-4e615b2ed1bd/mzaf_4665859490119567102.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/71/00/f0/7100f023-405c-9512-8351-d718dd3381ec/mzaf_14712677879858003061.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -2825,12 +3384,27 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 4,
-    "obscurity": 4,
-    "accessibility": 2,
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 4,
     "listeners": 6596,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Victory 過渡 EP，非代表作；L6596；金屬化後硬蕊",
+    "previousAccessibility": {
+     "accessibility": 3,
+     "rarity": "rare",
+     "at": "2026-11-04"
+    },
+    "loudFloorNote": "硬蕊度音量下限（2026-11-04 店主定案）：hardcore，吼唱厚重"
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -2899,12 +3473,21 @@
    "ratings": {
     "classic": 2,
     "obscurity": 4,
-    "accessibility": 2,
+    "accessibility": 3,
     "listeners": 1218,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Lost and Found EP 無串流、L1218 下限3；金屬化 krishnacore"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2966,21 +3549,41 @@
    },
    "ratings": {
     "classic": 2,
-    "obscurity": 4,
-    "accessibility": 2,
+    "obscurity": 5,
+    "accessibility": 3,
     "listeners": 182,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：L182 無試聽→5；Krishnacore EP；硬蕊龐克"
    },
    "rarity": "rare",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。小廠單版 CD EP，無聖杯傳說或壓量紀錄；聽眾 182 但不到傳說級稀有",
+    "evidenceUrls": [
+     "https://www.last.fm/music/108/Serve%20And%20Defy",
+     "https://musicbrainz.org/release-group/f08eebd1-287b-4d05-b48a-e2f09f0086eb"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
-    "text": "盤名的 And 是大寫，同一張碟第一軌的 and 卻是小寫。四軌合計 13 分 34 秒，同名的開場 4:05 最長、〈Arctic〉2:49 最短，兩者差七十六秒，四首沒有一首短於兩分四十五秒。這張碟只有一筆發行，載體是 CD、壓片國是德國，廠牌欄寫 Lost and Found、編號記為 LF 254。",
+    "text": "《Serve And Defy》是紐約硬蕊樂團 108 在 1997 年的四曲 EP，只由德國 Lost and Found 出過 CD，沒有再版紀錄。這年之後樂團停擺，吉他手 Vic DiCara 到印度出家，2005 年才重組；108 被視為硬蕊史上遭到低估的一團。樂團 1991 年由 DiCara 組成，成員信奉黑天，音樂反映這份信仰，DiCara 的風格主要受 Rollins 影響。四首是同名曲與〈Arctic〉〈Killer of the Soul〉〈Mantra Six〉，各在 2 分 49 秒到 4 分 05 秒之間，合計約 13 分半。",
     "sourceUrls": [
      "https://musicbrainz.org/ws/2/release-group/f08eebd1-287b-4d05-b48a-e2f09f0086eb?fmt=json&inc=artist-credits+releases+media",
      "https://musicbrainz.org/ws/2/release?release-group=f08eebd1-287b-4d05-b48a-e2f09f0086eb&fmt=json&inc=media+labels+recordings&limit=100",
@@ -2999,8 +3602,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -3035,14 +3638,29 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 3,
+    "classic": 2,
     "obscurity": 4,
     "accessibility": 4,
     "listeners": 12,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：split EP；L12 有串流→4；金屬化後硬蕊",
+    "previousAccessibility": {
+     "accessibility": 3,
+     "rarity": "common",
+     "at": "2026-11-04"
+    },
+    "loudFloorNote": "硬蕊度音量下限（2026-11-04 店主定案）：金屬硬蕊與嘶吼後硬蕊分輯"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,

@@ -1,0 +1,579 @@
+{
+ "group": "sf10b",
+ "factions": [
+  {
+   "id": "darkwave-synth",
+   "zh": "darkwave-synth",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "uk-electronica",
+   "zh": "uk-electronica",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "vienna-minimal-synth",
+   "zh": "vienna-minimal-synth",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "swedish-doom",
+   "zh": "swedish-doom",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "kr-house",
+   "zh": "kr-house",
+   "count": 2,
+   "why": ""
+  },
+  {
+   "id": "downtempo-ambient",
+   "zh": "downtempo-ambient",
+   "count": 2,
+   "why": ""
+  },
+  {
+   "id": "art-pop",
+   "zh": "art-pop",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "nashville-instrumental",
+   "zh": "nashville-instrumental",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "experimental-dub",
+   "zh": "experimental-dub",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "dark-cinematic",
+   "zh": "dark-cinematic",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "uk-bass",
+   "zh": "uk-bass",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "experimental-duo",
+   "zh": "experimental-duo",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "experimental-lofi",
+   "zh": "experimental-lofi",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "future-funk",
+   "zh": "future-funk",
+   "count": 1,
+   "why": ""
+  }
+ ],
+ "albums": [
+  {
+   "artist": "Mareux",
+   "album": "Lovers From the Past",
+   "year": 2023,
+   "label": "Revolution Records",
+   "country": "us",
+   "faction": "darkwave-synth",
+   "genres": [
+    "electronic",
+    "pop"
+   ],
+   "why": "洛杉磯暗潮合成流行的首張正規專輯，收錄代表曲〈The Perfect Girl〉",
+   "moodGuess": {
+    "x": 3.2,
+    "y": 0.6,
+    "z": -0.5,
+    "why": "冷調合成器與低沉男聲的暗潮舞曲"
+   },
+   "evidence": [
+    "https://music.apple.com/us/album/lovers-from-the-past/1676355334",
+    "https://musicbrainz.org/release-group/6152c871-d4e4-43d6-bea3-c7df31a798fe"
+   ],
+   "spotifyName": "Mareux",
+   "mbRgMbid": "6152c871-d4e4-43d6-bea3-c7df31a798fe",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Minotaur Shock",
+   "album": "Maritime",
+   "year": 2005,
+   "label": "4AD",
+   "country": "gb",
+   "faction": "uk-electronica",
+   "genres": [
+    "electronic"
+   ],
+   "why": "David Edwards 在 4AD 的出道長片，英倫 IDM／電子民謠的代表作",
+   "moodGuess": {
+    "x": 2.4,
+    "y": -0.3,
+    "z": 0.8,
+    "why": "明亮鐘琴與柔和節拍的暖調電子"
+   },
+   "evidence": [
+    "https://music.apple.com/us/album/maritime/77344346",
+    "https://musicbrainz.org/release-group/779960d9-7b54-3c54-a387-686e47d818fd"
+   ],
+   "spotifyName": "Minotaur Shock",
+   "mbRgMbid": "779960d9-7b54-3c54-a387-686e47d818fd",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Monoton",
+   "album": "Monotonprodukt 07",
+   "year": 1982,
+   "label": "Monoton",
+   "country": "at",
+   "faction": "vienna-minimal-synth",
+   "genres": [
+    "electronic"
+   ],
+   "why": "維也納 Konrad Becker 的極簡合成器／工業代表作，後來重發成經典",
+   "moodGuess": {
+    "x": 3.3,
+    "y": 0.2,
+    "z": -1.3,
+    "why": "機械脈衝與冷硬合成器的極簡律動"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/9e779878-3ccc-4868-8939-49b90fa65363/front-250",
+    "https://musicbrainz.org/release-group/9e779878-3ccc-4868-8939-49b90fa65363",
+    "https://www.discogs.com/artist/18328-Monoton"
+   ],
+   "spotifyName": "Monoton",
+   "mbRgMbid": "9e779878-3ccc-4868-8939-49b90fa65363",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Orchestra of Constant Distress",
+   "album": "Concerns",
+   "year": 2021,
+   "label": "Riot Season",
+   "country": "se",
+   "faction": "swedish-doom",
+   "genres": [
+    "metal",
+    "rock"
+   ],
+   "why": "瑞典黑暗極簡金屬超級組合，Spectrum Culture 評論的最新代表作",
+   "moodGuess": {
+    "x": 3.6,
+    "y": 1.4,
+    "z": -1.4,
+    "why": "重複 riff 堆疊的厚重壓迫極簡金屬"
+   },
+   "evidence": [
+    "https://spectrumculture.com/2021/10/03/orchestra-of-constant-distress-concerns-review/",
+    "https://coverartarchive.org/release-group/d26da9f8-b780-4a15-add0-93211956ddee/front-250",
+    "https://musicbrainz.org/release-group/d26da9f8-b780-4a15-add0-93211956ddee"
+   ],
+   "spotifyName": "Orchestra of Constant Distress",
+   "mbRgMbid": "d26da9f8-b780-4a15-add0-93211956ddee",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Peggy Gou",
+   "album": "I Hear You",
+   "year": 2024,
+   "label": "XL Recordings",
+   "country": "kr",
+   "faction": "kr-house",
+   "genres": [
+    "electronic"
+   ],
+   "why": "首張正規錄音室專輯，把她的 house 招牌推到主流",
+   "moodGuess": {
+    "x": 3.7,
+    "y": -0.3,
+    "z": 0.7,
+    "why": "明亮四拍 house 與流行人聲"
+   },
+   "evidence": [
+    "https://music.apple.com/us/album/i-hear-you/1735512900",
+    "https://musicbrainz.org/release-group/cb7c65af-9ead-4b6c-bfac-87e8736d2cab"
+   ],
+   "spotifyName": "Peggy Gou",
+   "mbRgMbid": "cb7c65af-9ead-4b6c-bfac-87e8736d2cab",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Photay",
+   "album": "Onism",
+   "year": 2017,
+   "label": "Astro Nautico",
+   "country": "us",
+   "faction": "downtempo-ambient",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Evan Shornstein 的首張正式長片，採樣與合成器交織的招牌作",
+   "moodGuess": {
+    "x": 2.3,
+    "y": -0.2,
+    "z": 0.6,
+    "why": "暖調合成器與非洲式律動的輕盈氛圍"
+   },
+   "evidence": [
+    "https://music.apple.com/us/album/onism/1254524399",
+    "https://musicbrainz.org/release-group/8063670b-1bd7-4ef8-a239-b5c80548462d"
+   ],
+   "spotifyName": "Photay",
+   "mbRgMbid": "8063670b-1bd7-4ef8-a239-b5c80548462d",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Planningtorock",
+   "album": "W",
+   "year": 2011,
+   "label": "DFA Records",
+   "country": "gb",
+   "faction": "art-pop",
+   "genres": [
+    "electronic",
+    "pop"
+   ],
+   "why": "Janine Rostron 在 DFA 的代表作，酷兒前衛電子流行的里程碑",
+   "moodGuess": {
+    "x": 3.4,
+    "y": 0.3,
+    "z": -0.6,
+    "why": "變聲人聲與重脈衝的怪異電子流行"
+   },
+   "evidence": [
+    "https://music.apple.com/us/album/w/1547928995",
+    "https://musicbrainz.org/release-group/22030514-0952-4a11-909c-a4560e1e7dfd"
+   ],
+   "spotifyName": "Planningtorock",
+   "mbRgMbid": "22030514-0952-4a11-909c-a4560e1e7dfd",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Rich Ruth",
+   "album": "Water Still Flows",
+   "year": 2024,
+   "label": "Third Man Records",
+   "country": "us",
+   "faction": "nashville-instrumental",
+   "genres": [
+    "jazz",
+    "electronic"
+   ],
+   "why": "Nashville 吉他手 Michael Ruth 在 Third Man 的靈性爵士／氛圍代表作，All About Jazz 評論",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 0.6,
+    "z": 0.5,
+    "why": "溫厚吉他與合成器鋪成的靈性氛圍"
+   },
+   "evidence": [
+    "https://www.allaboutjazz.com/tag-water-still-flows",
+    "https://coverartarchive.org/release-group/6eb05f58-399b-45ee-ac6d-6f7084a99845/front-250",
+    "https://musicbrainz.org/release-group/6eb05f58-399b-45ee-ac6d-6f7084a99845"
+   ],
+   "spotifyName": "Rich Ruth",
+   "mbRgMbid": "6eb05f58-399b-45ee-ac6d-6f7084a99845",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Ruxpin",
+   "album": "Avalon",
+   "year": 2003,
+   "label": "Elektrolux",
+   "country": "is",
+   "faction": "downtempo-ambient",
+   "genres": [
+    "electronic"
+   ],
+   "why": "冰島 Ruxpin 的下行電子代表作，後於 2018 年重發",
+   "moodGuess": {
+    "x": 1.9,
+    "y": 0.4,
+    "z": 0.4,
+    "why": "柔和下拍與暖色合成器的夜間氛圍"
+   },
+   "evidence": [
+    "https://music.apple.com/us/album/avalon/75802602",
+    "https://coverartarchive.org/release-group/50e1c31f-f00c-396c-ab1f-c6ceafe026a2/front-250",
+    "https://musicbrainz.org/release-group/50e1c31f-f00c-396c-ab1f-c6ceafe026a2"
+   ],
+   "spotifyName": "Ruxpin",
+   "mbRgMbid": "50e1c31f-f00c-396c-ab1f-c6ceafe026a2",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Saint Abdullah",
+   "album": "Stars Have Eyes",
+   "year": 2018,
+   "label": "Purple Tape Pedigree",
+   "country": "us",
+   "faction": "experimental-dub",
+   "genres": [
+    "electronic",
+    "world"
+   ],
+   "why": "伊朗裔布魯克林兄弟檔，Bandcamp Daily 專題報導的成名作",
+   "moodGuess": {
+    "x": 2.8,
+    "y": 0.5,
+    "z": -1.2,
+    "why": "田野錄音與暗色 dub 交織的疏離音塊"
+   },
+   "evidence": [
+    "https://daily.bandcamp.com/features/saint-abdullah-interview",
+    "https://coverartarchive.org/release-group/3a7e6426-7b3f-4638-8caf-c57377539a1f/front-250",
+    "https://musicbrainz.org/release-group/3a7e6426-7b3f-4638-8caf-c57377539a1f"
+   ],
+   "spotifyName": "Saint Abdullah",
+   "mbRgMbid": "3a7e6426-7b3f-4638-8caf-c57377539a1f",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Shinjuku Thief",
+   "album": "Bloody Tourist",
+   "year": 1992,
+   "label": "Extreme",
+   "country": "au",
+   "faction": "dark-cinematic",
+   "genres": [
+    "electronic"
+   ],
+   "why": "David Thrussell 的 Shinjuku Thief 早期名作，維基有專條，暗黑電影取樣的代表",
+   "moodGuess": {
+    "x": 3.0,
+    "y": 0.7,
+    "z": -1.0,
+    "why": "電影取樣與暗色合成器織成的陰沉音景"
+   },
+   "evidence": [
+    "https://en.wikipedia.org/wiki/Bloody_Tourist",
+    "https://coverartarchive.org/release-group/f938281c-ce29-3da3-8fa8-0d800eca3e43/front-250",
+    "https://musicbrainz.org/release-group/f938281c-ce29-3da3-8fa8-0d800eca3e43"
+   ],
+   "spotifyName": "Shinjuku Thief",
+   "mbRgMbid": "f938281c-ce29-3da3-8fa8-0d800eca3e43",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Throwing Snow",
+   "album": "Mosaic",
+   "year": 2014,
+   "label": "Houndstooth",
+   "country": "gb",
+   "faction": "uk-bass",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Ross Tones 在 Houndstooth 的首張長片，英倫 bass 與 techno 的代表",
+   "moodGuess": {
+    "x": 3.4,
+    "y": 0.3,
+    "z": -0.3,
+    "why": "碎拍與低頻交織的暗潮電子"
+   },
+   "evidence": [
+    "https://music.apple.com/us/album/mosaic/1782119250",
+    "https://musicbrainz.org/release-group/96a8a9ec-5f4e-49fd-8c32-d6f5b094707f"
+   ],
+   "spotifyName": "Throwing Snow",
+   "mbRgMbid": "96a8a9ec-5f4e-49fd-8c32-d6f5b094707f",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Tomaga",
+   "album": "Intimate Immensity",
+   "year": 2021,
+   "label": "Hands in the Dark",
+   "country": "gb",
+   "faction": "experimental-duo",
+   "genres": [
+    "electronic",
+    "rock"
+   ],
+   "why": "Valentina Magaletti 與 Tom Relleen 的終章，The Quietus 專文評論",
+   "moodGuess": {
+    "x": 3.5,
+    "y": 0.3,
+    "z": -1.0,
+    "why": "鼓驅動的循環與類比電子噪響"
+   },
+   "evidence": [
+    "https://thequietus.com/?p=29760",
+    "https://coverartarchive.org/release-group/c0747270-d2c5-4e7e-b11f-e61154636ac9/front-250",
+    "https://musicbrainz.org/release-group/c0747270-d2c5-4e7e-b11f-e61154636ac9"
+   ],
+   "spotifyName": "Tomaga",
+   "mbRgMbid": "c0747270-d2c5-4e7e-b11f-e61154636ac9",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Vapour Theories",
+   "album": "Celestial Scuzz",
+   "year": 2021,
+   "label": "",
+   "country": "us",
+   "faction": "experimental-lofi",
+   "genres": [
+    "electronic",
+    "rock"
+   ],
+   "why": "Vapour Theories 唯一正規長片，低傳真迷幻電子",
+   "moodGuess": {
+    "x": 3.0,
+    "y": 0.4,
+    "z": -0.4,
+    "why": "毛躁低傳真合成器與迷幻節拍"
+   },
+   "evidence": [
+    "https://music.apple.com/us/album/celestial-scuzz/1668034776",
+    "https://musicbrainz.org/release-group/be208724-fe8a-4a16-98a2-c80de4fd57d5"
+   ],
+   "spotifyName": "Vapour Theories",
+   "mbRgMbid": "be208724-fe8a-4a16-98a2-c80de4fd57d5",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Yaeji",
+   "album": "With a Hammer",
+   "year": 2023,
+   "label": "XL Recordings",
+   "country": "us",
+   "faction": "kr-house",
+   "genres": [
+    "electronic",
+    "pop"
+   ],
+   "why": "Yaeji 首張正規錄音室專輯，韓英雙語 house 與流行的成熟之作",
+   "moodGuess": {
+    "x": 3.3,
+    "y": 0.1,
+    "z": 0.2,
+    "why": "低語人聲與中速 house 的暗亮並存"
+   },
+   "evidence": [
+    "https://music.apple.com/us/album/with-a-hammer/1654198968",
+    "https://musicbrainz.org/release-group/75cf3936-f661-4dc5-8796-d768949457b8"
+   ],
+   "spotifyName": "Yaeji",
+   "mbRgMbid": "75cf3936-f661-4dc5-8796-d768949457b8",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Yung Bae",
+   "album": "Bae 5",
+   "year": 2019,
+   "label": "",
+   "country": "us",
+   "faction": "future-funk",
+   "genres": [
+    "electronic",
+    "funk"
+   ],
+   "why": "Bandcamp Daily 專題報導，future funk 銷量與口碑最高的一張",
+   "moodGuess": {
+    "x": 3.6,
+    "y": -0.4,
+    "z": 1.2,
+    "why": "明亮 disco funk 取樣與輕快貝斯"
+   },
+   "evidence": [
+    "https://daily.bandcamp.com/2019/04/24/yung-bae-bae-5-feature",
+    "https://coverartarchive.org/release-group/de88e3a7-78cd-4e89-aaca-2ef0a5f8b00a/front-250",
+    "https://musicbrainz.org/release-group/de88e3a7-78cd-4e89-aaca-2ef0a5f8b00a"
+   ],
+   "spotifyName": "Yung Bae",
+   "mbRgMbid": "de88e3a7-78cd-4e89-aaca-2ef0a5f8b00a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  }
+ ],
+ "notes": [
+  "範圍：sf10 第18–33位共16位，皆不在池（Monoton≠池中 MONO；Throwing Snow≠Wings 誤中），全數各收1張",
+  "Monoton：維也納 Konrad Becker 項目，非日本 MONO；MB 釘 Monotonprodukt 07",
+  "Mareux/Yung Bae/Vapour Theories 無廠牌資料，label 留空；Mareux MB 有兩筆同名 RG，取 6152c871",
+  "Ruxpin：MB 標冰島，與 Spotify 對應的是 Elektrolux 下行電子 Ruxpin；Avalon 為2003首發（2018重發）",
+  "疑點：Saint Abdullah/Rich Ruth/Yung Bae/Shinjuku Thief 無評論共識，代表作為依評論量與可得證據推定"
+ ]
+}

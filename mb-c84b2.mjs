@@ -1,4 +1,4 @@
-const UA={'User-Agent':'dip-vinyl-shop/1.0 (kubinice06@gmail.com)'};
+const UA={'User-Agent':'dip-vinyl-shop/1.0 (+https://dipvinyl.tw)'};
 const sleep=ms=>new Promise(r=>setTimeout(r,ms));
 async function j(u){for(let i=0;i<5;i++){try{const r=await fetch(u,{headers:UA});if(r.ok)return await r.json();if(r.status===503||r.status===429){await sleep(2000);continue}return {__err:r.status}}catch(e){await sleep(1500)}}return {__err:'fail'}}
 const rgs=process.argv.slice(2);

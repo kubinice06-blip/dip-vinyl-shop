@@ -1,0 +1,100 @@
+# 評完剩餘卡時代理回報的卡池資料問題（2026-10-16，未處理）
+
+代理只憑聲音知識、未上網查證，以下都是**待查**清單，不是定案。系統性問題寫在最前面。
+
+## 系統性問題（要修規則或整批掃，不是逐卡改）
+
+- **古典子曲風時期錯標**：build-genre-tree 的 classifyClassical 靠作曲家欄＋年份推時期，作曲家欄空、年份 ≥1980 一律落 contemporary；中世紀、文藝復興、巴洛克、浪漫派大量錯落。
+- **古典卡年份常填作曲年、藝人欄填作曲家**（無演出者）。
+- **舊卡 hiphop 誤對**：老 R&B、jump blues、靈魂爵士、doo-wop、紐奧良放克被標 hiphop（07-23 同類問題沒掃乾淨）。
+- **主流流行歌手被歸 folk 或 soul**（Shawn Mendes、Dido、Ed Sheeran、Cher…）。
+- **嘻哈地區子曲風濫標**（east-coast／south 套到外地與外國藝人）；jazz/ecm、jazz/fusion、rock/classic 子曲風套得太寬。
+- **存檔盤年份填再版年**（Blue Note 遲發、配樂原聲、私壓重發）。
+- **同名串線**：mapgenre3 用掛名查 Last.fm，同名他人的標籤混進來（Steve Lacy、Solstice、Radar、Bad Company…）。
+
+## 逐份記錄
+
+- c03（古典）low 27。資料疑點：Beethoven《Piano Concerto no. 3》（1803、無演出者）疑與 Glenn Gould 同曲重複；Sirmen《String Quartets》年份 1769 是作曲年；古典子曲風時期錯標多張（Pinnock Nelson Mass、de los Ángeles 兩張、Ferrier Bach & Handel、Beecham Delius、Scholl Heroes、Bartoli Vivaldi、Anonymous 4、Reicha、Volodos）——古典子曲風靠作曲家欄＋年份推時期，作曲家欄空的就推錯。
+- c02（藍調＋古典早期）low 46。資料疑點：T-Bone Walker 兩張、Amos Milburn《Return of the Blues Boss》曲風含 hiphop（同 R&B 誤對）；古典 baroque 錯標多張（中世紀、文藝復興、浪漫派都進 baroque）；作曲家當藝人、年份填作曲年：Jacquet de La Guerre 1707、Francesca Caccini 1625；Washington Phillips 福音標 delta；Pink Anderson、Rev. Gary Davis、Sleepy John Estes 標 delta。
+- c04 low 32、c06 low 23。**系統性**：古典子曲風時期大量錯標（整份 contemporary／baroque／film），根因是 build-genre-tree 的 classifyClassical 靠作曲家欄＋年份推時期，作曲家欄空、年份 ≥1980 一律落 contemporary——要修規則，不是逐卡改。古典卡年份常填作曲年（Vivier 1980、Rautavaara 1972、Eastman 1974、Zemlinsky 1923、Chávez 1936、Martinů 1953、Hovhaness 1955、一柳慧 1961）。
+- 主曲風疑誤：Venetian Snares《My Love Is a Bulldozer》含 classical；坂本龍一《B-2 Unit》classical/film（實為電子）；Greenwood《Junun》《Jarak Qaribak》classical/film（world）；Dead Can Dance《Spleen and Ideal》、Jesper Kyd《Assassin's Creed II》、Ground Zero《Revolutionary Pekinese Opera》掛 classical。盤名：Levit 實為《Bach · Beethoven · Rzewski》；Hahn《6 Partitas》內容不符；Mompou《Música callada》掛作曲家（Henck ECM 錄音）。
+- c05 low 34、c01 low 17。主曲風含 hiphop 的藍調卡（同 R&B 誤對）：Eddie Boyd《7936 South Rhodes》、Hound Dog Taylor《Beware of the Dog!》、Howlin' Wolf《Live and Cookin'…》《The Back Door Wolf》、James Cotton《The James Cotton Blues Band》；Lazy Lester《Harp & Soul》標 world；Einaudi《Eden Roc》含 electronic。掛名分裂：Ma Shui-Long 馬水龍／Shui-Long Ma 馬水龍；Brownie McGhee & Sonny Terry／Sonny Terry & Brownie McGhee。藍調子曲風 delta 濫標（Lightnin' Hopkins、Mance Lipscomb、Lonnie Johnson、Memphis Slim）。
+- c09（電子 A 字頭）low 35。主曲風疑誤標 electronic：Giora Feidman《The Magic of the Klezmer》、Dead Combo《Vol. 1》、Mocca《My Diary》、Sean Paul《The Trinity》（reggae）、Shadow《Sweet Sweet Dreams》（calypso）、Andrew Bird《Echolocations: River》。2026 新盤 Sam Smith《Hazel Eyes》超出知識。
+- c07 low 15、c12 low 45（80 年代日本環境音樂冷門盤）。掛名分裂：Jiang Wenye 江文也／Wen-Yeh Chiang 江文也。內容重疊：Stockhausen《Kontakte》與《Gesang der Jünglinge / Kontakte》。盤名：Koussevitzky「Ravel: Pictures at an Exhibition」（Mussorgsky 曲）。Bad Company《Inside the Machine》是 DnB 團，與搖滾 Bad Company 同名須確認身分。Swans《Soundtracks for the Blind》主曲風 electronic；A Guy Called Gerald《Black Secret Technology》次曲風 pop。Tycho《Sunrise Projector / Past Is Prologue》原版與重製併一卡。
+- c10 low 38。盤名亂碼：Edward Ka-Spel《Aa?zhyd China Doll》（id 同）。主曲風疑誤：Biosphere《Shenzhou》含 rock、Craig Kupka《Crystals》含 folk、Kelela《Raven》hiphop、Cocteau Twins《Victorialand》主 electronic。
+- c08 low 37。可能重複：Byron Janis《Rachmaninoff: Piano Concerto no. 1》與《The Mercury Masters》（套盤）。Horowitz 兩張年份 1987 疑為再版年。A Man Called Adam《Duende》子曲風空。
+- c11 low 31。主曲風錯：Leo Smith《Divine Love》（ECM 1979）標 electronic，應 jazz。次曲風可疑：Monolake《Polygon_Cities》jazz、Plaid《Scintilli》folk、Oval《Voa》folk。2025–26 新盤：Loraine James、Shabaka Hutchings、Ólafur Arnalds《A Dawning》、NoW《Re-Imagineering…》。
+- c14 low 23。主曲風含 rock 錯：Jamie Principle《The Midnite Hour》、Katy B《On a Mission》、Moloko《Do You Like My Tight Sweater?》。2025–26 新盤：Floating Points《Mere Mortals》、Madeon《Victory》、Bassnectar、Mr. Fingers《Leev Ur Mynd》。
+- c15 low 47（日本 noise、早期工業；非常階段×6、Incapacitants×3 差距是推的）。主曲風疑錯標 electronic：Leroy Hutson《Unforgettable》（soul）、Britney Spears 兩張（pop）、Orgy《Candyass》（rock）、Pink Siifu《Negro》（hiphop）。盤名：Machine Girl「Machine Girl / Five Star Hotel」。
+- c13 low 34。主曲風疑錯：Jade《Jade to the Max》（soul）、Above & Beyond《Group Therapy》含 hiphop、Selena Gomez《Stars Dance》主 electronic、Tokyo No.1 Soul Set《Triple Barrel》。盤名：Alexander Robotnick「Ce n'est q'un début」少撇號（qu'un）；Groundation《Dub Wars》存疑。
+- c17（techno）low 44。主曲風錯：haruka nakamura《Grace》《MELODICA》標 electronic/techno（實為鋼琴原聲 ambient／folk）。非專輯形式：Reese《Just Want Another Chance》單曲、Blake Baxter《Dream Sequence》EP、Peverelist《Jarvik Mindstate》存疑。存疑盤名：Moodymann《ABCD》、Omar-S《007》、Carl Craig《Meditations》《Unity》。
+- c16 low 35。疑似重複：Soft Cell《*Happiness Not Included》與《*Happiness Now Completed》（擴充版）。Wire《The First Letter》發行名 Wir。主曲風疑錯：Shake Shakir《Frictionalism》含 rock、Whitehouse《Bird Seed》含 pop、Tate McRae《The One Day LP》含 folk、Little Mix《LM5》含 hiphop。Andy Stott《Merciless》疑 EP。
+- c18 low 62（老時代小提琴、藍草、70 年代日本／沖繩民謠）。主曲風錯：Bobby V.《Bobby Valentino》《Special Occasion》標 electronic/trance（R&B）、RAM《Aïbobo》標 electronic＋rock（海地 rasin）、Shackleton《Primal Forms》含 soul。
+- c19 low 47（台日民謠冷門、old-time 田野錄音）。主曲風錯：P!nk《TRUSTFALL》主 folk（pop）、Lee Hazlewood《Trouble Is a Lonesome Town》含 classical。
+- c21 low 39（泰、日、葡、菲民謠）。主曲風疑錯：Gracie Abrams《The Secret of Us》、Conan Gray《Superache》標 folk（pop）。2026 新盤：Kacey Musgraves《Middle of Nowhere》、Aldous Harding《Train on the Island》、Bill Callahan《My Days of 58》。
+- c22 low 43（私壓迷幻民謠）。Sam Lee《Old Wow》含 classical。（tw-folk 節點中文名是「東亞民謠」，日本民謠落此不算錯。）
+- c23 low 48（私壓、沖繩島唄）。主曲風疑錯 folk→pop：Dido《No Angel》、Shawn Mendes ×3、Lewis Capaldi、Gracie Abrams、Colbie Caillat（另 Sara Bareilles、Jason Mraz、John Mayer 可議）——**系統性：主流創作歌手流行被歸 folk**。疑似重複：Pierre Akendengué《Africa Obota》與《Nandipo / Afrika Obota》。身分待查：Lamb《Lamb III》1976、Norma Jean 兩張。
+- c20 low 42（藍草、old-time、英倫清唱、60–70 鄉村）。子曲風錯 folk/british：陳達兩張、Dave Van Ronk、Fuxan os Ventos、Garmarna（另含 classical）。The Dubliners《A Drop of the Hard Stuff》含 rock。
+- c24 low 62（台灣與亞洲饒舌、冷門世界民謠）。主曲風只填 hiphop 的錯卡：Dr. John《Desitively Bonnaroo》（funk/R&B）、Sonny Criss《Sonny's Dream》（jazz）——**系統性：舊卡 hiphop 誤對（R&B／老爵士）跨多份都有，要掃全池**。鳳飛飛三張掛 folk。掛名分裂：大支／大支 Dwagie（09-06 稽核已列）。
+- c25 low 35。嘻哈地區子曲風 east-coast 濫標（clipping.、Death Grips、Dilated Peoples、Earl Sweatshirt、JID、Danny Brown、Booba、E SENS、Backxwash）。掛名分裂：GZA／GZA/Genius。2026 新盤：A$AP Rocky《Don't Be Dumb》、Baby Keem《Ca$ino》。
+- c26 low 30。2025–26 新盤：JPEGMAFIA、Vince Staples《Cry Baby》、Mobb Deep《Infinite》。
+- c28 low 56（南方饒舌、九〇 R&B 非代表作）。hiphop/south 濫標（Chief Keef、A$AP Rocky、Doja Cat、Bladee、KOHH…）。Fivio Foreign《B.I.B.L.E.》含 rock；Ariana Grande《Positions》、Zayn《Mind of Mine》主 hiphop。掛名：Timbaland《Indecent Proposal》缺 & Magoo。
+- c29 low 55（南方二線、地下饒舌）。主曲風疑錯：Skrillex《Don't Get Too Close》主 hiphop（electronic）、Summer Walker《Over It》主 hiphop（R&B）。
+- c27 low 35。老 R&B 主 hiphop（James Booker、Ray Charles Modern Sounds Vol.2、Percy Mayfield×3、Garnet Mimms、Irma Thomas、Earl King×2、Peabo Bryson、E.U.）。J Balvin、Sean Paul、Shaggy、Halsey、Britney、Bieber 掛 hiphop/rnb。2026 新盤：Ariana Grande、Chris Brown、Bruno Mars。
+- c30 low 32。身分待查：Double X《白痴的謊言》1988 標 gangsta；99.99 兩張。主曲風錯：Al B. Sure!《Private Times…》主 jazz（R&B）、Adam F《Colours》主 jazz（DnB）、Bootsy Collins《Album of the Year #1 Funkateer》歸 hiphop/west-coast。
+- c31 low 59（冷門爵士，high 0）。主曲風錯：Digital Underground《The Body-Hat Syndrome》標 jazz/soul（嘻哈）、James Brown《People》主 jazz。
+- c32 low 62（冷門爵士，high 0）。疑似重複：Les Brown《Aurex Jazz Festival '83》與 Rosemary Clooney with Les Brown《Aurex Jazz Festival 83》。Rory Block《High Heeled Blues》標 jazz/soul（藍調）。
+- c33 low 39、c34 low 78（冷門日本爵士，high 0）。主曲風疑錯：Yves Montand《À l'Étoile》jazz（香頌）、佐藤博《Super Market》jazz、Troop《Troop》1988 jazz/soul（若為新傑克 R&B 團）、Paradise Bangkok Molam 主 jazz（world）。掛名分裂：Yoshimi Ueno Bestrio／上野好美。單曲：薩米與稲垣次郎《Woman, Robinson Crusoe / Rock Steady》。
+- c35 low 74（日本爵士私藏，high 0）。掛名錯字：「山屋清とコンテンポラリー・サウント・オーケストラ」サウント→サウンド。
+- c36 low 49。次曲風錯：Barry Harris《Preminado》《Plays Tadd Dameron》含 electronic、Cedar Walton《Cedar!》《Eastern Rebellion》含 world。年份是 Blue Note 遲發年：Art Blakey《Drums Around the Corner》1999、Hutcherson《The Kicker》1999（屬檔案出土盤，可接受）。
+- c37 low 45。掛名疑誤：Gerry Mulligan《Blues Roots》1968（實為 Dave Brubeck 掛名）。Duke Jordan《Flight to Japan》含 world。Erroll Garner《Overture to Dawn》vol.1–5 分不開。
+- c38 low 39。次曲風錯 classical：Harold Land 兩張、Johnny Hodges《Back to Back》（且掛名缺 Duke Ellington）。年份／盤名疑：Jackie McLean《The Jackie McLean Quintet》1977、McLean & Dexter Gordon《Montmartre Summit 1973》可能與 SteepleChase 兩張重疊。
+- c40 low 38。Miles Davis Blue Note 10 吋三張（Young Man with a Horn、Vol. 2、Vol. 3）與 12 吋《Volume 1》《Volume 2》曲目重疊，近似重複。
+- c39 low 50。掛名疑：Krzysztof Komeda《Litania》2016（可能是 Stańko ECM 1997）。年份為重發年：Komeda 三張配樂、Kenny Burrell《Blue Lights, Volume 2》1961（原 1958）。
+- c42 low 70（TBM 冷門）。主曲風錯：Wynton Marsalis《Trumpet Concertos》jazz（古典）、Anita Baker《Rapture》jazz（R&B）、4hero《Parallel Universe》jazz（DnB）。疑似重複：峰厚介《First》與峰厚介クインテット《Mine》（1970）。掛名分裂：Yasuhiro Kohno Trio + 1／河野康弘。
+- c41 low 48（bop，high 0）。掛名缺：《Multidirection》應為 Kenny Cox and the Contemporary Jazz Quintet。
+- c43 low 63（當代爵士、smooth jazz）。主曲風錯：Maze 三張主 jazz（soul/funk）、Kyoto Jazz Massive《Spirit of the Sun》含 rock。
+- c46 low 67（日本、東歐自由爵士，high 0）。同名串線：Steve Lacy 四張（Evidence、Lapis、Dreams、The Owl）含 soul（與 R&B 的 Steve Lacy 混）；菊地雅章《End for the Beginning》含 soul。掛名分裂：Sun Ra Arkestra／The Sun Ra Arkestra。石橋英子《Antigone》歸 jazz/free 可議。
+- c44 low 28。主曲風錯：23 Skidoo《Seven Songs》主 jazz（post-punk）、Theo Parrish《Parallel Dimensions》主 jazz（deep house）。jazz/ecm 子曲風濫標非 ECM 盤（Paul Motian Quintet 兩張、Shai Maestro、Thierry Lang、John Taylor、Bollani）。
+- c45 low 44（冷門自由爵士）。年份為再版年：Ronnie Boykins《The Will Come, Is Now》2002、Philip Cohran《On the Beach》2013。
+- c48 low 55（日本、印尼融合）。
+- c47 low 52。jazz/fusion 子曲風濫標（Donald Byrd 1957–68、Hancock《My Point of View》等）。BCUC《Emakhosini》主 hiphop。掛名分裂：Erik Truffaz／Erik Truffaz Quartet。Chick Corea《Circulus》或應掛 Circle。
+- c49 low 67（日本、蘇聯、Black Jazz 融合）。主曲風錯：Salif Keita《Soro》jazz＋folk（world）。
+- c50 low 85（日本 70–80 融合冷門，high 0）。鈴木茂兩張主 jazz（應 rock）、ニューハード三張含 soul。
+- c52 low 61（Jimmy Smith ×21 存檔盤）。Dean Martin《Houston》主 jazz（鄉村流行）；John Wright《Mr. Soul》、Big Joe Turner《In the Evening》含 rock。
+- c51 low 50（日本調式、Strata-East／Tribe／Black Jazz）。
+- c53 low 26、c54 low 53（人聲爵士）。主曲風錯：Mahalia Jackson 兩張主 jazz（gospel）、Etta James《Deep in the Night》、Angela Bofill《Angie》主 jazz（soul）。待查：Gregory Porter《Great Voices of Harlem》（疑合輯）、Dianne Reeves《New Morning》、Chaseiro 三張。
+- c55 low 49（華語老時代曲、台語、緬甸、東歐流行）。費玉清《長江水》含 rock。
+- c56 low 37（Sarah／él indie-pop、70 年代歌謠、2026 新盤 Olivia Rodrigo／Cavetown／Reol／AKMU）。Louis Philippe《Appointment with Venus》含 classical；Swing Out Sister 子曲風 jp-pop。
+- c60 low 38。主曲風錯：UFO《Sharks》含 hiphop、The Sensational Nightingales《The Best of…》主 rock（gospel）、2814《新しい日の誕生》主 rock（electronic）。
+- c57 low 43（越南 70 年代錄音帶、東南亞老盤、國語老歌；2026 新盤 Charli xcx、Madonna、Robyn）。身分待查：Sơn Ca《Băng Nhạc Sơn Ca 8》、TWICE《Enemy》2025。
+- c58 low 63、c59 low 35。主曲風錯標 rock：Donna Summer《Live and More》、Zeca Pagodinho《Deixa a Vida Me Levar》、Zed Bias《Sound of the Pirates》、Justin Hinds & The Dominoes《Jezebel》、The Ethiopians《Engine 54》；Michel Berger《Starmania》主 folk。年份：Buddy Holly《The "Chirping" Crickets》1962（原 1957，掛名 The Crickets）、Caedmon 1994（原約 1978）。盤名待查：Carl Perkins《Introducing... Carl Perkins》、Mach One 1984 兩張、이승윤《0집》2026。
+- c61 low 28。
+- c62 low 33。掛名疑：Deerhoof《Balter / Saunier》（應為 Balter & Greg Saunier）。疑似重複：Dashboard Confessional《Dusk and Summer (Now Is Then Is Now)》2019 與 2006 原版。
+- c63 low 21。主曲風錯標 rock：Everything but the Girl《Idlewild》、Lykke Li《so sad so sexy》、Kings of Convenience《Peace or Love》、Iron & Wine《Beast Epic》。盤名待查：Indiscreet Music《Dubious Collaberations》。
+- c64 low 16。
+- c65 low 20。掛名缺合作者：Wavves《No Life for Me》（+ Cloud Nothings）、Ty Segall《Joy》（+ White Fence）。
+- c66 low 61（印尼／日本地下前衛、龐克）。主曲風錯：ANARCHY《Rob the World》《The KING》主 rock（日本饒舌，應 hiphop）。
+- c67 low 76（80 年代日本交響前衛、東南亞搖滾、台灣獨立）。身分待查：Raphael《Raphael (1973)》、刺客《你家是個動物園》、木魚《幸福の条件》。
+- c68 low 12。Aphrodite《Aphrodite》主 rock（DnB）；Boris《Altar》缺 Sunn O))) 合作署名。
+- c70 low 17。同名身分待查：Solstice《Silent Dance》（英國新前衛 vs 金屬團）、Radar《Trofee》《Baltic Coast》（子曲風 doom 疑串線）。
+- c69 low 29。Heron《Heron》主 rock（應 folk）。
+- c71 low 65（私壓迷幻／前衛）。
+- c72 low 45。年份錯：Gila《Gila》1967（應 1971）。
+- c73 low 56（私印、各國前衛迷幻）。
+- c74 low 40。
+- c75 low 47。掛名缺：David Sylvian《Flux + Mutability》（+ Holger Czukay）。
+- c76 low 34。年份：Keiji Haino《Watashi Dake?》2017（原 1981，09-03 已列）。
+- c77 low 36、c79 low 48（台日龐克、no-wave）。
+- c78 low 42、c80 low 41（60–70 福音小眾）。主曲風錯標 soul（c80 那份 soul 主曲風看起來是 soul 段最前面那批 seed 曲風空、被批次預設）：Spice 1《Spice 1》、Cam'ron《Purple Haze》、Yiruma《From the Yellow Room》、Watchhouse、Jacques Dutronc、Ringo Starr《Ringo's Rotogravure》、Celine Dion《Falling into You》。
+- c81 low 37。主曲風 soul 疑錯：Barry Manilow《Even Now》、Ed Sheeran 三張、Charlie Puth《Nine Track Mind》（pop）。
+- c84 low 43。主曲風 soul 疑錯：Spinetta《Only Love Can Sustain》（rock）、Marc Jordan《Mannequin》、Little Dragon《New Me, Same Us》、Mahmoud Ahmed《Ere Mela Mela》（world）。掛名分裂：Lee Fields／Lee Fields & The Expressions。
+- c83 low 42（funk/soul 二三線，high 0）、c86 low 52（福音冷門）。主曲風 soul 疑錯：Gary Bartz NTU Troop《Harlem Bush Music - Taifa》（jazz）、Victor Uwaifo《Guitar Boy Superstar 1970-76》（world）。
+- c82 low 39。主曲風 soul 疑錯：Vitalic《Voyager》、Classixx《Hanging Gardens》（electronic）、Cher《Believe》（pop）。
+- c85 low 45。Doobie Brothers《Minute by Minute》主 soul（rock）。掛名分裂：The J.B.'s／The J.B.’s（09-06 已列）。
+- c87 low 39。Marcos Valle 兩張主 soul（MPB，world）。掛名：Steve Lacy (The Internet)《Apollo XXI》（括號是拆卡消歧義，屬既有作法）。
+- c92（20 張 reggae/dub）low 7。
+- c91 low 49（reggae/dub）。掛名分裂：Tappa Zukie／Tapper Zukie；Toots & The Maytals／Toots and the Maytals（09-06 已列）。
+- c89 low 52（泰國 luk thung／molam、沖繩、馬來印尼）。
+- c88 low 30。主曲風 world 疑錯：Timbaland《TIMBO PROGRESSION》（hiphop）、Liz Story《Solid Colors》（new age 鋼琴）。
+- KV 簡介含亂碼 U+FFFD：見 descs 10025（預覽已去除，KV 原文未改）

@@ -96,7 +96,7 @@ async function worker() {
         continue;
       }
 
-      // 3) 取原版的第一軌試聽網址。
+      // 3) 取原版的第一軌試聽網址（佔位；寫入後要再跑 scripts/popular-preview.mjs 改成最紅那首，2026-11-05 起）。
       // 同一個 collectionId 在不同商店的供應狀況不同——本店查無試聽時換另一間再試一次
       // （實測 2Pac《All Eyez on Me》、Kendrick《Mr. Morale》在 TW 無試聽、US 有）。
       let tracks = [], usedStore = country;

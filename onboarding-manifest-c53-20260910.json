@@ -30,13 +30,22 @@
    },
    "ratings": {
     "classic": 4,
-    "obscurity": 3,
-    "accessibility": 2,
+    "obscurity": 5,
+    "accessibility": 1,
     "listeners": 526,
-    "source": "manual:regional-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "manual:regional-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：代表時期同名長片／L526、無串流→5／男中音流行"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -92,12 +101,22 @@
    "ratings": {
     "classic": 2,
     "obscurity": 3,
-    "accessibility": 4,
+    "accessibility": 2,
     "listeners": 82,
-    "source": "manual:regional-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：音樂劇選段／L82、無串流→5／流行搖滾音樂劇，舊值偏高",
+     "rarity": "common"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：Melodiya 國營廠音樂劇選段，非私壓；非拉丁字母掛名，listeners 疑拆名錯配，不套下限，照錨點給 3｜L=82"
    },
-   "rarity": "uncommon",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -152,14 +171,24 @@
     "discogsReleaseId": "5329067"
    },
    "ratings": {
-    "classic": 2,
+    "classic": 3,
     "obscurity": 3,
     "accessibility": 2,
     "listeners": 4,
-    "source": "manual:regional-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：蘇聯原創曲大樂團盤／L4、無串流→5／大樂團",
+     "rarity": "rare"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：Melodiya 國營廠正規發行，非私壓；非拉丁字母掛名，listeners 疑拆名錯配，不套下限，照錨點給 3｜L=4"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -213,14 +242,24 @@
     "discogsReleaseId": "1929457"
    },
    "ratings": {
-    "classic": 2,
+    "classic": 4,
     "obscurity": 3,
     "accessibility": 4,
     "listeners": 12,
-    "source": "manual:regional-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 5,
+     "accessibility": 4,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Три О 首張，蘇聯前衛管樂三重奏／L12、無串流→5／無節奏組即興",
+     "rarity": "legendary"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：Melodiya 國營廠正規發行，非私壓；Letov 無節奏組管樂即興；非拉丁字母掛名，listeners 疑拆名錯配，不套下限，照錨點給 3｜L=12"
    },
-   "rarity": "uncommon",
+   "rarity": "epic",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -275,14 +314,23 @@
     "discogsReleaseId": "2986754"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 3,
+    "classic": 3,
+    "obscurity": 5,
     "accessibility": 3,
     "listeners": 0,
-    "source": "manual:regional-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 3,
+     "accessibility": 3,
+     "source": "manual:regional-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：愛沙尼亞鋼琴三重奏／L0、無串流→5／後 bop 含 Ornette 曲"
    },
-   "rarity": "rare",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,

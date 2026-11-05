@@ -55,7 +55,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/81/cf/d7/81cfd7d7-475e-69b9-d66d-9e25c015d996/mzaf_18434312222134995733.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/28/8a/5c/288a5c31-9dbc-8480-1728-0bf1b553f1c7/mzaf_17396794401616615260.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -96,21 +96,41 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 4,
-    "accessibility": 2,
+    "obscurity": 5,
+    "accessibility": 3,
     "listeners": 53,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Miller 獨奏貝斯盤；L53 無串流→5；低音提琴獨奏"
    },
-   "rarity": "rare",
+   "rarity": "uncommon",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。小廠／自發盤、聽眾<300，但壓量未見數百張以下的確據，也非收藏圈公認聖杯；只到 5",
+    "evidenceUrls": [
+     "https://www.last.fm/music/Harry%20Miller/Children%20at%20Play",
+     "https://musicbrainz.org/release-group/4f371628-5249-42aa-930f-655bb2d871fe"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
-    "text": "唱片 credit 上只有兩個人：一個演奏並寫下全部音樂，一個負責錄音。Ogun 的第二號目錄 OG 200：Harry Miller 掛低音提琴、長笛、打擊與音效，並包辦全部作曲編曲，Keith Beal 掛錄音、混音與剪接，兩人共同掛製作，內頁文字署名 Z. Pallo Jordan。五軌裡同名曲拆成兩軌分置兩面，第三段落擺在最後。他 1941 年生於開普敦，1983 年在荷蘭死於車禍，享年 42 歲；五首完整排在 Ogun 1999 年那套三 CD 的開頭。",
+    "text": "《Children at Play》是旅居倫敦的南非低音提琴手 Harry Miller 第一張以作曲者身分發表的作品，1974 年由他參與創辦的小廠 Ogun 發行；當時爵士低音提琴手出獨奏專輯非常少見，前例主要只有 Barre Phillips 1969 年的一張。Miller 多軌疊錄兩把、有時三把低音提琴，曲子事先編排好：〈H And H〉以牛鈴帶動放克式 jam，同名曲從輕快的撥奏轉為低沉的弓奏，〈Homeboy〉加上他吹的長笛，是南非的 kwela，最後以同名曲哀傷的主題重現收尾。收錄它的 1999 年三碟合集現已絕版。",
     "sourceUrls": [
      "https://www.discogs.com/release/403546-Harry-Miller-Children-At-Play",
      "https://en.wikipedia.org/wiki/Harry_Miller_(jazz_bassist)",
@@ -129,8 +149,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -160,13 +180,22 @@
    },
    "ratings": {
     "classic": 4,
-    "obscurity": 4,
+    "obscurity": 5,
     "accessibility": 4,
     "listeners": 17,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "epic"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Osborne 三重奏代表作；L17 無串流→5；自由爵士現場"
    },
-   "rarity": "epic",
+   "rarity": "legendary",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -221,14 +250,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 3,
-    "obscurity": 4,
+    "classic": 4,
+    "obscurity": 5,
     "accessibility": 4,
     "listeners": 85,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Ninesense 首作代表；L85 無串流→5；自由爵士現場"
    },
-   "rarity": "uncommon",
+   "rarity": "legendary",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -283,14 +321,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 4,
-    "accessibility": 3,
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 4,
     "listeners": 71,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 3,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Ninesense 第二張；L71 無串流→5；九人自由爵士"
    },
-   "rarity": "rare",
+   "rarity": "epic",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -354,7 +401,7 @@
     "source": "manual:depth-rubric",
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -413,21 +460,42 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 4,
-    "accessibility": 4,
+    "obscurity": 5,
+    "accessibility": 3,
     "listeners": 13,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 5,
+     "accessibility": 4,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Soft Heap 現場；L13 無串流→5；坎特伯里自由融合",
+     "rarity": "epic"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：Ogun 小廠 OG 527；Soft Heap 同名作有串流，本盤查無→1；坎特伯雷融合→硬3｜L=13"
    },
    "rarity": "uncommon",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。小廠／自發盤、聽眾<300，但壓量未見數百張以下的確據，也非收藏圈公認聖杯；只到 5",
+    "evidenceUrls": [
+     "https://www.last.fm/music/Hugh%20Hopper%20%2F%20Elton%20Dean%20%2F%20Alan%20Gowen%20%2F%20Dave%20Sheen/Rogue%20Element",
+     "https://musicbrainz.org/release-group/6397a784-0593-4883-9a6d-4c65b3cc78fd"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
-    "text": "換掉一個鼓手，團名就從 Soft Heap 變成 Soft Head。HEAP 是四位創團者名字的字首——Hugh、Elton、Alan、Pip，Soft 指向 Soft Machine；那趟春夏巡演 Pip Pyle 走不開，Dave Sheen 頂替。本盤錄在那趟途中，1978 年 5 月的法國 Bresse-sur-Grosne。四人掛電貝斯、薩克斯、電鋼琴與合成器、鼓；開場的〈Seven For Lee〉也是《Happy Daze》的 A2。",
+    "text": "《Rogue Element》是 Canterbury 圈短命組合 Soft Head 的現場錄音，1978 年由小廠 Ogun 發行。成員來自 Soft Machine 與 National Health：Hugh Hopper 彈電貝斯、Elton Dean 吹薩克斯風、Alan Gowen 彈鍵盤；巡演時鼓手 Pip Pyle 無法參加，由 Dave Sheen 代打，這張錄於 1978 年 5 月的法國巡演。音樂偏爵士與即興，Dean 在〈Sleeping House〉吹得特別猛烈；這場錄音被認為比有 Pip Pyle 的早期錄音更成功。",
     "sourceUrls": [
      "https://www.discogs.com/release/2383605-Hugh-Hopper-Elton-Dean-Alan-Gowen-Dave-Sheen-Rogue-Element",
      "https://en.wikipedia.org/wiki/Soft_Heap_(band)",
@@ -445,8 +513,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -474,22 +542,43 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 4,
-    "obscurity": 4,
-    "accessibility": 3,
+    "classic": 5,
+    "obscurity": 5,
+    "accessibility": 4,
     "listeners": 81,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 4,
+     "accessibility": 3,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Blue Notes 悼 Feza 之作、公認傑作；L81 無串流→5；四樂章長篇即興"
    },
-   "rarity": "uncommon",
+   "rarity": "legendary",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "頂點重整（apex-rebalance-20261103，2026-11-03）：升為流亡。Ogun 雙 LP 悼念即興，2008 CD 盒、Otoroku 已再發；名作但不稀",
+    "evidenceUrls": [
+     "https://www.last.fm/music/Blue+Notes/Blue+Notes+for+Mongezi",
+     "https://en.wikipedia.org/wiki/Blue_Notes_for_Mongezi",
+     "https://ogunrecording.co.uk/releases/the-blue-notes-blue-notes-for-mongezi"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:apex-rebalance-20261103"
    },
    "description": {
-    "text": "內頁上寫著：事前沒有討論，錄音時除了音樂沒有人說話。Blue Notes 是南非六重奏，作為混合種族的樂團特別容易受警方騷擾，1964 年離開南非，1965 年 4 月起留在英國，到 1960 年代末逐漸離散。小號手 Mongezi Feza 1975 年 12 月 14 日過世，年僅 30；其餘四人為了他的追思禮拜在倫敦重新聚首，12 月 23 日進一間排練室錄下這份音樂。四面各一個樂章，作曲掛 Blue Notes 全體，那兩句話是 Keith Beal 寫的。",
+    "text": "《Blue Notes for Mongezi》是南非流亡樂團 Blue Notes 為小號手 Mongezi Feza 錄的追思，1976 年由倫敦小廠 Ogun 發行，被視為樂團最全面也最真實的錄音。Feza 1975 年 12 月過世，九天後 Dudu Pukwana、Chris McGregor、Johnny Dyani 與 Louis Moholo 在倫敦重聚，事前沒有討論，錄音時除了音樂沒有人說話。四人以中音薩克斯風、鋼琴、貝斯與鼓演出四個長樂章，每個約 20 分鐘，在吟唱、groove、南非 kwela 節奏與自由爵士之間來回。",
     "sourceUrls": [
      "https://www.discogs.com/release/2173785-Blue-Notes-Blue-Notes-For-Mongezi",
      "https://en.wikipedia.org/wiki/Blue_Notes_for_Mongezi",
@@ -508,8 +597,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -538,13 +627,22 @@
    },
    "ratings": {
     "classic": 4,
-    "obscurity": 4,
+    "obscurity": 5,
     "accessibility": 3,
     "listeners": 260,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 4,
+     "accessibility": 3,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Moholo 八重奏代表作、Otoroku 再版；L260 無串流→5；南非律動+自由"
    },
-   "rarity": "uncommon",
+   "rarity": "epic",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -601,21 +699,41 @@
    },
    "ratings": {
     "classic": 4,
-    "obscurity": 4,
-    "accessibility": 2,
+    "obscurity": 5,
+    "accessibility": 3,
     "listeners": 57,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：McGregor 獨奏代表作；L57 無串流→5；鋼琴獨奏長段"
    },
-   "rarity": "uncommon",
+   "rarity": "epic",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。Ogun正規小廠，2012已CD復刻",
+    "evidenceUrls": [
+     "https://www.last.fm/music/Chris%20McGregor/In%20His%20Good%20Time",
+     "https://musicbrainz.org/release-group/a6f5ca15-b163-46ec-8f28-0f18c5804cea"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
-    "text": "盤名出自唱片上的題獻詞：獻給讓萬事在祂的時間裡成就的那一位。1977 年 11 月 18 日星期五，Chris McGregor 一個人在巴黎的 Palais des Glaces 彈完這場音樂會，唱片 1979 年出在 Ogun，編號 OG 521。八軌裡〈Umhome〉是傳統曲、由他自己編，〈The Bride〉出自 Dudu Pukwana。John Litweiler 說他是「裝飾者、編排者、變奏的發明者，即興只排第二」。他 1990 年在法國過世。",
+    "text": "《In His Good Time》是南非鋼琴手 Chris McGregor 的獨奏現場錄音，1979 年由小廠 Ogun 出 LP 後長年絕版，2012 年才首度出 CD，那一版被選為當年最佳重發之一。音樂會 1977 年 11 月 18 日在巴黎 Palais des Glaces 舉行，第一場約 54 分鐘幾乎不停。他彈得厚實滾動，旋律來自讚美詩、科薩（Xhosa）民謠與 kwela，大量用顫音與自由節奏段落，並混入城鎮式的反覆樂句；曲目有原創、他編曲的傳統曲〈Umhome〉與 Dudu Pukwana 的〈The Bride〉。",
     "sourceUrls": [
      "https://www.discogs.com/release/614924-Chris-McGregor-In-His-Good-Time",
      "https://ogunrecording.co.uk/releases/chris-mcgregor-in-his-good-time",
@@ -634,8 +752,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -664,21 +782,41 @@
    },
    "ratings": {
     "classic": 4,
-    "obscurity": 4,
+    "obscurity": 5,
     "accessibility": 4,
     "listeners": 77,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "epic"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Tippett 22 人 Ark 長篇代表作；L77 無串流→5；大編制自由即興"
    },
-   "rarity": "epic",
+   "rarity": "legendary",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "頂點重整（apex-rebalance-20261103，2026-11-03）：升為流亡。Ogun 雙 LP、22 人編制，1996 雙 CD 與數位再發；英國爵士名作多於稀有",
+    "evidenceUrls": [
+     "https://www.last.fm/music/Keith+Tippett%27s+Ark/Frames+%28Music+for+an+Imaginary+Film%29",
+     "https://ogunrecording.co.uk/releases/keith-tippetts-ark-frames-music-for-an-imaginary-film/"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:apex-rebalance-20261103"
    },
    "description": {
-    "text": "四面唱片一個曲名也沒有，只標 Side One 到 Side Four。音樂由 Ogun Publishing 委託創作，1978 年 5 月 21 日在倫敦 The Roundhouse 首演，接著三天進 Wessex Studios 錄音；Hazel Miller 在官網寫，廠牌也做演出。全曲由 Keith Tippett 作曲、編曲並指揮，Julie Tippetts 作詞，Ogun 官網稱這是 22 人編制的管弦樂團。唱片標籤還把酒杯與鳥哨掛在整個樂團名下。",
+    "text": "《Frames (Music for an Imaginary Film)》是 Keith Tippett 為 22 人樂團 Ark 寫的一首大型作品，橫跨雙 LP 四面，1978 年由小廠 Ogun 發行，1996 年才出 CD。1978 年 5 月它在倫敦 Roundhouse 首演，隨後三天錄音。編制有兩架鋼琴、薩克斯風與長笛、小號、長號、六把小提琴、兩把大提琴、兩把貝斯、鼓與打擊，加上 Maggie Nicols 與 Julie Tippetts 兩條人聲。音樂在寫定段落與自由即興之間移動，有讚歌式旋律、鋸齒狀的自由線條和脈動的極簡反覆。",
     "sourceUrls": [
      "https://www.discogs.com/release/495229-Keith-Tippetts-Ark-Frames-Music-For-An-Imaginary-Film",
      "https://ogunrecording.co.uk/releases/keith-tippetts-ark-frames",
@@ -697,8 +835,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -728,11 +866,21 @@
    },
    "ratings": {
     "classic": 4,
-    "obscurity": 4,
-    "accessibility": 3,
+    "obscurity": 5,
+    "accessibility": 2,
     "listeners": 258,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Pukwana 鎮區爵士代表與里程碑；L258 無串流→5；鎮區 jive 旋律親切",
+     "rarity": "epic"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：南非流亡爵士重要作；聽眾 258＋試聽無→冷門 5；Caroline 為 Virgin 子廠非極小廠，不給 pearl｜L=258"
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -789,12 +937,21 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 3,
+    "classic": 4,
     "obscurity": 4,
     "accessibility": 2,
     "listeners": 347,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Pukwana 中期強作；L347 有串流→4；南非律動"
    },
    "rarity": "rare",
    "apexAssessment": {
@@ -814,7 +971,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/48/52/a2/4852a2bc-9e5e-c5a1-224f-bb6a1597ab2a/mzaf_16667700351604238527.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/17/f6/b9/17f6b960-d170-5a10-a6fd-233af1f675ac/mzaf_882465656775497613.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -855,14 +1012,24 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 4,
-    "obscurity": 4,
-    "accessibility": 2,
+    "classic": 5,
+    "obscurity": 3,
+    "accessibility": 4,
     "listeners": 7822,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 3,
+     "accessibility": 3,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：BoB 首作、英南非爵士里程碑；L7.8k 有再版流通；大樂團 kwela 自由段落",
+     "rarity": "epic"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：南非流亡爵士／英國大樂團里程碑，Fledg'ling 再發；場景重要但非人人必提。含自由段落｜L=7822"
    },
-   "rarity": "uncommon",
+   "rarity": "legendary",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -925,12 +1092,21 @@
     "note": "試聽探測釘定的 collectionId 6796303036（gb）：Mike Osborne & Stan Tracey — Original"
    },
    "ratings": {
-    "classic": 4,
+    "classic": 3,
     "obscurity": 4,
-    "accessibility": 3,
+    "accessibility": 4,
     "listeners": 2,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 4,
+     "accessibility": 3,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Osborne/Tracey 二重奏現場；L2 有串流→4；自由即興長段"
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -952,7 +1128,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6a/d3/98/6ad3982e-e793-7d24-b8b9-6ce4a2b5fb80/mzaf_2496542054635443365.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/38/8a/32/388a32d9-fed9-b154-30bf-6f37849202b8/mzaf_9038503528894191322.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -992,12 +1168,21 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 3,
+    "classic": 4,
     "obscurity": 4,
     "accessibility": 2,
     "listeners": 1006,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Beckett jazz-funk 代表作；L1006 無串流、Cadillac 小廠→4；律動融合"
    },
    "rarity": "rare",
    "apexAssessment": {
@@ -1056,11 +1241,20 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 4,
-    "accessibility": 4,
+    "obscurity": 5,
+    "accessibility": 3,
     "listeners": 9,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Westbrook 爵士搖滾現場；L9 無串流→5；電化即興"
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -1121,11 +1315,20 @@
    },
    "ratings": {
     "classic": 4,
-    "obscurity": 4,
+    "obscurity": 3,
     "accessibility": 4,
     "listeners": 1438,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "epic"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Coxhill 首作、Peel 的 Dandelion 名盤；L1.4k；拼貼式無伴奏薩克斯"
    },
    "rarity": "epic",
    "apexAssessment": {
@@ -1147,7 +1350,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview122/v4/98/07/9b/98079bca-6dba-e614-a8ee-61e878cf5040/mzaf_1963019862595919320.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/15/05/0d/15050d01-9b80-f51c-d36f-a860cd9e15c2/mzaf_5743369530661542719.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -1188,14 +1391,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 3,
+    "classic": 4,
     "obscurity": 4,
-    "accessibility": 2,
+    "accessibility": 3,
     "listeners": 455,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Tippetts 個人代表作；L455 有串流→4；爵士民謠帶實驗人聲"
    },
-   "rarity": "rare",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1255,22 +1467,43 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 4,
-    "accessibility": 2,
+    "classic": 4,
+    "obscurity": 5,
+    "accessibility": 3,
     "listeners": 54,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：John Taylor 首張領銜、Turtle 稀品；L54 無串流→5；Surman 製作的現代爵士組曲"
    },
-   "rarity": "rare",
+   "rarity": "epic",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "頂點重整（apex-rebalance-20261103，2026-11-03）：升為流亡。Turtle 極小廠（全目錄僅三張），長年只有被禁的盜版，2016 盒裝與 2021 Eargong 才首度正式復刻；英國爵士收藏聖杯",
+    "evidenceUrls": [
+     "https://www.last.fm/music/John+Taylor/Pause%2C+and+Think+Again",
+     "https://archive.marlbank.net/themarlbankjazzblog/3047-very-rare-john-taylor-howard-riley-mike-osborne-turtle-albums-compiled-in-3-cd-set.html",
+     "https://forcedexposure.com/Catalog/taylor-john-pause-and-think-again-lp/EG.005LP.html"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:apex-rebalance-20261103"
    },
    "description": {
-    "text": "碟名被拆成兩首曲子，〈Pause〉排在〈And Think Again〉後面。A 面第一首是〈And Think Again〉，第三首才是〈Pause〉。1971 年出在 Turtle 的 TUR 302，製作人 John Surman 同時在碟上吹高音薩克斯風，另有 Kenny Wheeler 的小號與 Norma Winstone 的人聲，曲子全由 John Taylor 寫。Taylor 自學出身，1964 年到倫敦當公務員時進入當地的自由爵士圈。",
+    "text": "《Pause, and Think Again》是鋼琴手 John Taylor 的八重奏專輯，1971 年出在前後只發過三張唱片的小廠 Turtle Records，原版據報賣價超過 800 英鎊，1995 年起才陸續有 FMR、RPM 等重發；它被視為通往英國爵士黃金年代的失落環節。John Surman 製作並吹高音薩克斯風，另有 Kenny Wheeler 的小號、長號、中音薩克斯風、貝斯與鼓，Norma Winstone 只在一首裡唱。Wheeler 在〈And Think Again〉的獨奏尤其突出，結構在同廠三張裡最傳統、最易入耳。",
     "sourceUrls": [
      "https://www.discogs.com/release/464888-John-Taylor-2-Pause-And-Think-Again",
      "https://en.wikipedia.org/wiki/John_Taylor_(jazz)",
@@ -1288,8 +1521,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -1326,7 +1559,7 @@
     "source": "manual:depth-rubric",
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1346,7 +1579,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/88/e8/3e/88e83e83-cb2f-8f71-3c59-6e36c8835929/mzaf_11725033273348920741.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/c9/7d/72/c97d7280-4c5a-20d5-272a-f21d0f453526/mzaf_3376937704865400181.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -1395,7 +1628,7 @@
     "source": "manual:depth-rubric",
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1414,7 +1647,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/Music/25/2a/4d/mzm.zdszauto.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/Music/08/ef/a0/mzm.mbigpxit.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -1456,12 +1689,21 @@
     "note": "試聽探測釘定的 collectionId 132108701（gb）：Graham Collier — The Day of the Dead"
    },
    "ratings": {
-    "classic": 3,
+    "classic": 4,
     "obscurity": 4,
     "accessibility": 3,
     "listeners": 14,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 3,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Collier 雙 LP 代表大作；L14 有串流→4；朗誦長篇組曲"
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -1482,7 +1724,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/Music/6a/6b/0d/mzm.hsaufass.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/Music5/v4/1d/bc/99/1dbc99e0-70eb-1dda-298f-2015a12036a8/mzaf_6792455040353236217.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -1523,11 +1765,20 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 4,
+    "obscurity": 5,
     "accessibility": 3,
     "listeners": 13,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 3,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Sulzmann 現場組曲；L13 無串流→5；長篇現代爵士"
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -1584,14 +1835,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 4,
+    "classic": 2,
     "obscurity": 4,
     "accessibility": 5,
     "listeners": 92,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 4,
+     "accessibility": 5,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "legendary"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：自製樂器＋現場電子噪音即興；但AllMusic 1星、Penguin 1.5星，經典度下修為2；Otoroku再發→4｜L=92"
    },
-   "rarity": "epic",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1650,14 +1910,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 4,
+    "classic": 5,
     "obscurity": 4,
-    "accessibility": 4,
+    "accessibility": 5,
     "listeners": 3,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "epic"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：LJCO 首作、英國自由即興大樂團里程碑；L3 有串流→4；大編制自由即興"
    },
-   "rarity": "epic",
+   "rarity": "legendary",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1675,7 +1944,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d0/73/9a/d0739a3c-f2f4-7c98-f218-4cbcc3c04c83/mzaf_6590612555180295495.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/04/28/9f/04289f66-896a-2adc-cad3-7640412c4323/mzaf_8766776061201107124.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -1715,22 +1984,42 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 3,
-    "obscurity": 4,
-    "accessibility": 4,
+    "classic": 4,
+    "obscurity": 5,
+    "accessibility": 5,
     "listeners": 36,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：MIC 唯一錄音、即興先驅；L36 無串流→5；電子+自由即興"
    },
-   "rarity": "uncommon",
+   "rarity": "legendary",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。英國自由即興奠基錄音，點描無調屬5星前衛",
+    "evidenceUrls": [
+     "https://www.last.fm/music/The%20Music%20Improvisation%20Company/1968-1971",
+     "https://musicbrainz.org/release-group/74b63c9b-24e8-3bf9-a3c2-187862795af0"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
-    "text": "碟名寫 1968-1971，錄音其實只有 1969 與 1970 年的那兩天。A 面錄於 1969 年 7 月 4 日的倫敦、以單聲道收，B 面錄於 1970 年 6 月 18 日、是立體聲，唱片 1976 年才出在 Incus 的 INCUS 17。碟上是 Derek Bailey 的吉他與 Evan Parker 的加拾音自動豎琴，另有現場電子、風琴與打擊，六首全掛四人共同創作。2019 年 Honest Jon's 的復刻把碟名寫成《1969, 1970》。",
+    "text": "《1968-1971》收的是自由即興四重奏 The Music Improvisation Company 在 1969 與 1970 年錄下的音樂，比樂團唯一另一張專輯更早錄成，卻拖到 1976 年才由 Incus 發行，之後長年絕版；它被視為對即興音樂有興趣的人必備的一張。Derek Bailey 彈電吉他，Evan Parker 吹高音薩克斯風並彈加了拾音器的自動豎琴，Hugh Davies 操作電子裝置與風琴，Jamie Muir 打擊。音樂沒有固定拍子與調性，各種聲響以小音量、點狀的方式互相回應，四人盡可能自由地彼此對話。",
     "sourceUrls": [
      "https://www.discogs.com/release/1508481-The-Music-Improvisation-Company-1968-1971",
      "https://en.wikipedia.org/wiki/The_Music_Improvisation_Company_1968-1971",
@@ -1748,8 +2037,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -1777,14 +2066,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 4,
-    "obscurity": 4,
-    "accessibility": 4,
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 5,
     "listeners": 62,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "epic"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：SME 後期弦樂編制；L62 無串流→5；無調自由即興"
    },
-   "rarity": "epic",
+   "rarity": "legendary",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1841,13 +2139,22 @@
    },
    "ratings": {
     "classic": 4,
-    "obscurity": 4,
+    "obscurity": 5,
     "accessibility": 3,
     "listeners": 86,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 4,
+     "accessibility": 3,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Wheeler 首張大樂團代表作；L86 無串流→5；大樂團寫作帶自由段"
    },
-   "rarity": "uncommon",
+   "rarity": "epic",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1905,14 +2212,23 @@
     "note": "試聽探測釘定的 collectionId 298170113（jp）：Tony Oxley Quintet — The Baptised Traveller"
    },
    "ratings": {
-    "classic": 4,
+    "classic": 5,
     "obscurity": 4,
     "accessibility": 4,
     "listeners": 357,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "epic"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：英國自由爵士里程碑、Columbia 再版；L357 有串流→4；自由即興五重奏"
    },
-   "rarity": "epic",
+   "rarity": "legendary",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1931,7 +2247,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ff/87/c0/ff87c0e7-4a37-ca55-25af-1fa03845bbf8/mzaf_14681775511098376501.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6d/4e/84/6d4e84ce-576d-5185-8bcc-7ed2b94a5c7f/mzaf_5609524546153771134.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -1971,22 +2287,43 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 4,
+    "classic": 3,
+    "obscurity": 5,
     "accessibility": 4,
     "listeners": 40,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Cusack Bead 首作；L40 無串流→5；吉他即興+環境磁帶"
    },
-   "rarity": "uncommon",
+   "rarity": "epic",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "頂點重整（apex-rebalance-20261103，2026-11-03）：升為流亡。Cusack 自創 Bead 自營廠綠膠原盤，直到 2016 Blume 才首度再發",
+    "evidenceUrls": [
+     "https://www.last.fm/music/Peter+Cusack/After+Being+in+Holland+for+Two+Years",
+     "https://forcedexposure.com/Catalog/BLUME.003LP.html",
+     "https://www.fusetronsound.com/products/cusack-peter-after-being-in-holland-for-two-years"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:apex-rebalance-20261103"
    },
    "description": {
-    "text": "同一軌裡，吉他錄於 1977 年 3 月，環境聲錄於 1975 年 11 月。原盤注記把六軌的錄音年月逐一標了出來；1977 年由 Bead 以 BEAD 5 發行，曲名直接用荷蘭地名〈Maarsseveenseplassen〉與〈Recorded Near Tienhoven〉。Blume 的專頁記 Peter Cusack 1974 年創辦了 Bead，Café OTO 寫它後來演變成一個集體，多數 LP 由樂手自己出資。",
+    "text": "《After Being in Holland for Two Years》是 Peter Cusack 的吉他與環境聲獨奏專輯，1977 年由他自己創辦、樂手自費出版的即興廠牌 Bead Records 發行，之後四十一年沒有再發，2018 年才由多倫多的 Blume 重發限量 LP。唱片把吉他即興與荷蘭的環境聲錄音並排，幾首曲名直接用荷蘭地名，其中一軌把 1977 年 3 月的吉他疊在 1975 年 11 月錄的環境聲上；各段以拼貼方式接續，沒有因果順序，常突然切換。Cusack 後來成為田野錄音藝術家。",
     "sourceUrls": [
      "https://www.discogs.com/release/1046771-Peter-Cusack-After-Being-In-Holland-For-Two-Years",
      "https://editionsblume.bandcamp.com/album/after-being-in-holland-for-two-years",
@@ -2005,8 +2342,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -2034,14 +2371,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 4,
-    "accessibility": 2,
+    "classic": 4,
+    "obscurity": 5,
+    "accessibility": 4,
     "listeners": 523,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Amalgam 首作、NoBusiness 再版；L523 無串流→5；自由爵士三重奏"
    },
-   "rarity": "rare",
+   "rarity": "legendary",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2098,13 +2444,22 @@
    },
    "ratings": {
     "classic": 4,
-    "obscurity": 4,
+    "obscurity": 5,
     "accessibility": 4,
     "listeners": 0,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "epic"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Stevens/Watts/Guy 三重奏強作；L0 無串流→5；自由即興"
    },
-   "rarity": "epic",
+   "rarity": "legendary",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2158,12 +2513,21 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 3,
+    "classic": 4,
     "obscurity": 4,
     "accessibility": 2,
     "listeners": 5,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：主線改經典 3→4：Stobart 唯一領銜代表作；Stobart 領銜作；L5 有串流→4；主流現代爵士"
    },
    "rarity": "rare",
    "apexAssessment": {
@@ -2184,7 +2548,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/Music/a1/ec/de/mzm.jxllyxom.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/Music/d5/0c/f1/mzm.ddzminhq.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -2224,14 +2588,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 3,
+    "classic": 4,
     "obscurity": 4,
-    "accessibility": 2,
+    "accessibility": 3,
     "listeners": 101,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Skidmore 首作、Deram Nova 名盤；L101 有串流→4；後 bop 帶自由"
    },
-   "rarity": "rare",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2249,7 +2622,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview124/v4/42/fd/36/42fd3690-91e4-c963-b05d-fb568b44e534/mzaf_160700770081528833.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview124/v4/36/cc/cd/36cccd3b-35f8-6395-c839-5fe91f7b8a6b/mzaf_15528114226474526360.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -2289,12 +2662,21 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 3,
+    "classic": 4,
     "obscurity": 4,
     "accessibility": 2,
     "listeners": 273,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Lowther 唯一領銜盤、Deram 稀品；L273 有串流→4；英式爵士搖滾"
    },
    "rarity": "rare",
    "apexAssessment": {
@@ -2356,12 +2738,21 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 3,
-    "obscurity": 4,
+    "classic": 4,
+    "obscurity": 2,
     "accessibility": 2,
     "listeners": 6944,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Nucleus 第二張、英國爵士搖滾要盤 Vertigo 流通；L6.9k；融合易聽"
    },
    "rarity": "rare",
    "apexAssessment": {
@@ -2382,7 +2773,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/d1/b3/f4/d1b3f4a0-85c9-06d2-acf9-485adaee214c/mzaf_13820799316903577564.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/62/99/0f/62990fff-5fc5-cc36-0402-1be6ea37a7b2/mzaf_18062362328803317579.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",

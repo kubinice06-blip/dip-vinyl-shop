@@ -61,6 +61,11 @@ description: One-line entry point for adding album cards to dip vinyl — accept
   Firestore 舊文件刪除、KV key 搬移——`card_catalog`／`album_overrides` 的文件 id 是
   `(artist+'|'+album).toLowerCase().replace(/\//g,'-').trim()`，改字串就是改 id。
 - 人工覆核不可省：聽眾數異常（同名誤配）、AI 推估的冷門度、藝人名爆版、封面真偽反查。
+- **人工評分（深掘、非英語圈、主線修正）一律照 `ALBUM_ONBOARDING.md` §0.8.1 三軸錨點**：經典度以所屬場景為尺度、
+  藝人代表作至少 4；冷門度 worker 值必須依 §0.8 校正；硬蕊度＝入耳難度，5＝晦澀（2026-11-01 店主指正）。
+- **冷門度下限（硬規則）照 `ALBUM_ONBOARDING.md` §0.8.1「冷門度下限」表**：Last.fm listeners <1,000＋試聽 ready ≥4、
+  <1,000＋試聽非 ready＝5（確知有正式數位版給 4）、1,000–4,999 ≥3；聽眾數疑似錯配（盤名寫法不同、同系列知名卷次、
+  listeners＝0 漏抓）不套下限、照錨點判（2026-11-02 店主指正《Identification》）。
 
 ## Phase 3：簡介產線（desc-restyle 成品標準）
 
@@ -102,6 +107,8 @@ node fix-spacing.mjs batches/output/… [--write]
 - 頂點卡逐張評估（hall 經典共識／pearl listeners 有效且 <300／heresy 極端難入耳證據），
   三軸 5 或 legendary **不自動升格**。
 - 試聽：`/yt-music-link` 查找＋人工核對（只接受 Apple 直連、YT Music album playlist、完整專輯影片）。
+  **Apple ready 一律播最紅那首**：manifest 寫好後跑 `node scripts/popular-preview.mjs manifest <manifest.json>`
+  （換成同一 collectionId 內最紅的曲目，見 `ALBUM_ONBOARDING.md` §6），再 `--write-preview`。
   **`album_overrides` 規則是 `allow write: if isAdmin()`，Claude 用 REST 寫一律 403、繞不過也不該繞**
   ——固定產出一份 `album_overrides-repaste-<batch>.json`（`[{artist, album, previewUrl}]`，
   無來源者 `previewStatus: unavailable`／明確不試聽 `disabled`），批次結尾提醒店主到後台批次匯入框貼上。

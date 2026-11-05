@@ -1,0 +1,1611 @@
+{
+ "group": "md5",
+ "factions": [
+  {
+   "id": "cryo-chamber",
+   "zh": "Cryo Chamber 系（Simon Heath 廠牌的電影式 dark ambient）",
+   "count": 18,
+   "why": "2012 年後 dark ambient 最大的產地，sci-fi／廢墟敘事、無鼓厚 drone"
+  },
+  {
+   "id": "cold-meat",
+   "zh": "Cold Meat Industry 系（瑞典 90–00 年代 dark ambient／儀式）",
+   "count": 14,
+   "why": "dark ambient 的瑞典源頭廠，聖詠殘響、工業刮擦、儀式 drone"
+  },
+  {
+   "id": "cyclic-law",
+   "zh": "Cyclic Law 系（北歐荒原 dark ambient）",
+   "count": 6,
+   "why": "Cold Meat 之後接棒的北歐廠，洞穴與荒原 drone"
+  },
+  {
+   "id": "malignant",
+   "zh": "Malignant 系與美英 isolationist drone",
+   "count": 8,
+   "why": "美國 death ambient 廠與早期 isolationism，低頻 drone 牆最厚"
+  },
+  {
+   "id": "loki-antzen",
+   "zh": "Loki Foundation／Ant-Zen 系（德國宇宙儀式 drone）",
+   "count": 4,
+   "why": "德國宇宙儀式派，厚 drone 與金屬殘響；Ant-Zen 多為節奏噪音（判躁），只收其中再版的 Lustmord drone 盤"
+  },
+  {
+   "id": "glacial",
+   "zh": "Glacial Movements 系（冰原 isolationism）",
+   "count": 4,
+   "why": "專做極地／冰原 isolationism 的義大利廠，最靜最冷"
+  }
+ ],
+ "albums": [
+  {
+   "artist": "Atrium Carceri",
+   "album": "Seishinbyouin",
+   "year": 2004,
+   "label": "Cold Meat Industry",
+   "country": "se",
+   "faction": "cold-meat",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Simon Heath 在 Cold Meat 的第二張：精神病院主題的工業殘響與低頻 drone，無鼓、密閉、陰冷，正是瑞典 dark ambient 二線的代表。",
+   "moodGuess": {
+    "x": 1.4,
+    "y": 1.5,
+    "z": -1.7,
+    "why": "無鼓，病院殘響與低頻 drone，陰冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/47088b1d-170e-36fb-bc30-f13514a3a746",
+    "https://coverartarchive.org/release-group/47088b1d-170e-36fb-bc30-f13514a3a746/front",
+    "https://music.apple.com/us/album/seishinbyouin/1167123278"
+   ],
+   "mbRgMbid": "47088b1d-170e-36fb-bc30-f13514a3a746",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Atrium Carceri",
+   "album": "Kapnobatai",
+   "year": 2005,
+   "label": "Cold Meat Industry",
+   "country": "se",
+   "faction": "cold-meat",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Cold Meat 時期公認的高點：地下墓穴式的厚 drone、遠處人聲與金屬回音層層堆疊，無鼓、霧厚、冷到無人味。",
+   "moodGuess": {
+    "x": 1.4,
+    "y": 1.6,
+    "z": -1.6,
+    "why": "無鼓，厚 drone 與金屬回音，陰"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/b66083e8-3504-33dc-9aba-ff16fa4affae",
+    "https://coverartarchive.org/release-group/b66083e8-3504-33dc-9aba-ff16fa4affae/front",
+    "https://music.apple.com/us/album/kapnobatai/1175935117"
+   ],
+   "mbRgMbid": "b66083e8-3504-33dc-9aba-ff16fa4affae",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Atrium Carceri",
+   "album": "Ptahil",
+   "year": 2007,
+   "label": "Cold Meat Industry",
+   "country": "se",
+   "faction": "cold-meat",
+   "genres": [
+    "electronic"
+   ],
+   "why": "以曼達派諾斯替神話為題的 Cold Meat 盤：教堂殘響、低吟合唱取樣與深低頻鋪成儀式空間，慢、厚、冷。",
+   "moodGuess": {
+    "x": 1.4,
+    "y": 1.5,
+    "z": -1.5,
+    "why": "無鼓，教堂殘響與低頻，陰冷儀式"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/135f0c1b-2260-34d8-98b8-4810a47b3eac",
+    "https://coverartarchive.org/release-group/135f0c1b-2260-34d8-98b8-4810a47b3eac/front",
+    "https://music.apple.com/us/album/ptahil/1212620363"
+   ],
+   "mbRgMbid": "135f0c1b-2260-34d8-98b8-4810a47b3eac",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Atrium Carceri",
+   "album": "Phrenitis",
+   "year": 2009,
+   "label": "Cold Meat Industry",
+   "country": "se",
+   "faction": "cold-meat",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Cold Meat 末期作品，譫妄主題的工業殘響與暗色鋼琴碎片，霧濃、無鼓，延續 Atrium Carceri 的陰冷密室感。",
+   "moodGuess": {
+    "x": 1.4,
+    "y": 1.4,
+    "z": -1.6,
+    "why": "無鼓，工業殘響與暗鋼琴，陰"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/e010279e-c484-4afb-90ab-4c46a158791c",
+    "https://coverartarchive.org/release-group/e010279e-c484-4afb-90ab-4c46a158791c/front",
+    "https://music.apple.com/us/album/phrenitis/1212618581"
+   ],
+   "mbRgMbid": "e010279e-c484-4afb-90ab-4c46a158791c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Atrium Carceri",
+   "album": "Void",
+   "year": 2012,
+   "label": "Cryo Chamber",
+   "country": "se",
+   "faction": "cryo-chamber",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Cryo Chamber 創廠期的旗艦：廢墟般的低頻轟鳴與雜訊顆粒，奠定此廠「電影式 dark ambient」的聲音，無鼓而冷。",
+   "moodGuess": {
+    "x": 1.3,
+    "y": 1.6,
+    "z": -1.6,
+    "why": "無鼓，低頻轟鳴與顆粒雜訊，陰"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/7788219d-6826-453c-8ea5-ec3c69b582f3",
+    "https://coverartarchive.org/release-group/7788219d-6826-453c-8ea5-ec3c69b582f3/front",
+    "https://music.apple.com/us/album/void/1212618549"
+   ],
+   "mbRgMbid": "7788219d-6826-453c-8ea5-ec3c69b582f3",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Atrium Carceri",
+   "album": "The Untold",
+   "year": 2013,
+   "label": "Cryo Chamber",
+   "country": "se",
+   "faction": "cryo-chamber",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Cryo Chamber 時期的地下城敘事盤，深低頻 drone、滴水與遠方人聲，緩慢無鼓，冷而厚。",
+   "moodGuess": {
+    "x": 1.3,
+    "y": 1.5,
+    "z": -1.5,
+    "why": "無鼓，深 drone 與滴水殘響，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/8ed06d30-93d3-47e3-aba8-bd9a72301a13",
+    "https://coverartarchive.org/release-group/8ed06d30-93d3-47e3-aba8-bd9a72301a13/front",
+    "https://music.apple.com/us/album/the-untold/1314217721"
+   ],
+   "mbRgMbid": "8ed06d30-93d3-47e3-aba8-bd9a72301a13",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Sabled Sun",
+   "album": "2146",
+   "year": 2012,
+   "label": "Cryo Chamber",
+   "country": "se",
+   "faction": "cryo-chamber",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Simon Heath 的科幻冰封系列第二章：凍眠艙般的低頻嗡鳴與失真無線電，無鼓、空曠、金屬冷。",
+   "moodGuess": {
+    "x": 1.3,
+    "y": 1.4,
+    "z": -1.7,
+    "why": "無鼓，低頻嗡鳴與無線電雜訊，金屬冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/ac6b03ae-7a06-4d03-b0d4-2120627b3e23",
+    "https://coverartarchive.org/release-group/ac6b03ae-7a06-4d03-b0d4-2120627b3e23/front",
+    "https://music.apple.com/us/album/2146/1241730248"
+   ],
+   "mbRgMbid": "ac6b03ae-7a06-4d03-b0d4-2120627b3e23",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Sabled Sun",
+   "album": "2147",
+   "year": 2015,
+   "label": "Cryo Chamber",
+   "country": "se",
+   "faction": "cryo-chamber",
+   "genres": [
+    "electronic"
+   ],
+   "why": "2140 系列續章，荒廢太空站的厚 drone 與機械殘響，是 Cryo Chamber sci-fi dark ambient 的典型。",
+   "moodGuess": {
+    "x": 1.3,
+    "y": 1.4,
+    "z": -1.7,
+    "why": "無鼓，厚 drone 與機械殘響，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/a5ed02d1-3303-410a-ad42-753df99b811e",
+    "https://coverartarchive.org/release-group/a5ed02d1-3303-410a-ad42-753df99b811e/front",
+    "https://music.apple.com/us/album/2147/954684489"
+   ],
+   "mbRgMbid": "a5ed02d1-3303-410a-ad42-753df99b811e",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Alphaxone",
+   "album": "Absence of Motion",
+   "year": 2015,
+   "label": "Cryo Chamber",
+   "country": "ir",
+   "faction": "cryo-chamber",
+   "genres": [
+    "electronic"
+   ],
+   "why": "伊朗製作人 Alphaxone 的代表作：凍結般靜止的合成器墊與深低頻，無鼓、霧厚、空無一人。",
+   "moodGuess": {
+    "x": 1.2,
+    "y": 1.4,
+    "z": -1.6,
+    "why": "無鼓，靜止合成墊與深低頻，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/55b7b9e1-0cf4-403a-bf62-4cb68a30a5a5",
+    "https://coverartarchive.org/release-group/55b7b9e1-0cf4-403a-bf62-4cb68a30a5a5/front",
+    "https://music.apple.com/us/album/absence-of-motion/1019271263"
+   ],
+   "mbRgMbid": "55b7b9e1-0cf4-403a-bf62-4cb68a30a5a5",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Dronny Darko",
+   "album": "Outer Tehom",
+   "year": 2014,
+   "label": "Cryo Chamber",
+   "country": "ua",
+   "faction": "cryo-chamber",
+   "genres": [
+    "electronic"
+   ],
+   "why": "烏克蘭 Dronny Darko 早期的 Cryo Chamber 作：深淵式低頻與摩擦質地，被視為新一代 dark ambient 的入口盤。",
+   "moodGuess": {
+    "x": 1.2,
+    "y": 1.7,
+    "z": -1.7,
+    "why": "無鼓，深淵低頻與摩擦顆粒，陰"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/299097df-722d-4ca6-8567-fe44a3ea0fca",
+    "https://coverartarchive.org/release-group/299097df-722d-4ca6-8567-fe44a3ea0fca/front",
+    "https://music.apple.com/us/album/outer-tehom/930721824"
+   ],
+   "mbRgMbid": "299097df-722d-4ca6-8567-fe44a3ea0fca",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Dronny Darko",
+   "album": "Neuroplasticity",
+   "year": 2016,
+   "label": "Cryo Chamber",
+   "country": "ua",
+   "faction": "cryo-chamber",
+   "genres": [
+    "electronic"
+   ],
+   "why": "以腦神經為題的重質地 drone：密集低頻層與電流雜訊，無節拍、壓迫而冷。",
+   "moodGuess": {
+    "x": 1.3,
+    "y": 1.7,
+    "z": -1.6,
+    "why": "無鼓，密集低頻層與電流雜訊，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/693a430e-d85b-4036-8959-fbc6286c83a3",
+    "https://coverartarchive.org/release-group/693a430e-d85b-4036-8959-fbc6286c83a3/front",
+    "https://music.apple.com/us/album/neuroplasticity/1065209654"
+   ],
+   "mbRgMbid": "693a430e-d85b-4036-8959-fbc6286c83a3",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Ugasanie",
+   "album": "White Silence",
+   "year": 2013,
+   "label": "Cryo Chamber",
+   "country": "by",
+   "faction": "cryo-chamber",
+   "genres": [
+    "electronic"
+   ],
+   "why": "白俄羅斯 Ugasanie 的極地 dark ambient：風雪、冰裂與低頻 drone 浸在長殘響裡，無鼓，冷到骨。",
+   "moodGuess": {
+    "x": 1.2,
+    "y": 1.4,
+    "z": -1.8,
+    "why": "無鼓，風雪殘響與低頻，極寒"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/541778f6-9c05-465e-8280-5bf88581ad86",
+    "https://coverartarchive.org/release-group/541778f6-9c05-465e-8280-5bf88581ad86/front",
+    "https://music.apple.com/us/album/white-silence/929368158"
+   ],
+   "mbRgMbid": "541778f6-9c05-465e-8280-5bf88581ad86",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Ugasanie",
+   "album": "Eye of Tunguska",
+   "year": 2015,
+   "label": "Cryo Chamber",
+   "country": "by",
+   "faction": "cryo-chamber",
+   "genres": [
+    "electronic"
+   ],
+   "why": "以通古斯大爆炸為題的西伯利亞荒原盤，低頻轟鳴、田野錄音與 drone 疊成災後空曠，無鼓而陰。",
+   "moodGuess": {
+    "x": 1.2,
+    "y": 1.5,
+    "z": -1.7,
+    "why": "無鼓，低頻轟鳴與荒原錄音，陰冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/30972936-aff9-484e-9846-b3fb915088e3",
+    "https://coverartarchive.org/release-group/30972936-aff9-484e-9846-b3fb915088e3/front",
+    "https://music.apple.com/us/album/eye-of-tunguska/1023870856"
+   ],
+   "mbRgMbid": "30972936-aff9-484e-9846-b3fb915088e3",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Randal Collier-Ford",
+   "album": "The Architects",
+   "year": 2015,
+   "label": "Cryo Chamber",
+   "country": "us",
+   "faction": "cryo-chamber",
+   "genres": [
+    "electronic"
+   ],
+   "why": "美國 Randal Collier-Ford 的巨構主題盤，厚重的工業 drone 與金屬撞擊殘響，慢、壓迫、冷。",
+   "moodGuess": {
+    "x": 1.4,
+    "y": 1.6,
+    "z": -1.5,
+    "why": "鼓稀，工業 drone 與金屬殘響，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/3600d5a3-a4be-4921-abdf-d531760b43c9",
+    "https://coverartarchive.org/release-group/3600d5a3-a4be-4921-abdf-d531760b43c9/front",
+    "https://music.apple.com/us/album/the-architects/954959465"
+   ],
+   "mbRgMbid": "3600d5a3-a4be-4921-abdf-d531760b43c9",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Apocryphos, Kammarheit & Atrium Carceri",
+   "album": "Onyx",
+   "year": 2015,
+   "label": "Cryo Chamber",
+   "country": "us",
+   "faction": "cryo-chamber",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Cryo Chamber 三大名字的合作盤：石窟殘響、低頻 drone 與遙遠鐘聲，被當作廠牌聲音的總結。",
+   "moodGuess": {
+    "x": 1.2,
+    "y": 1.5,
+    "z": -1.6,
+    "why": "無鼓，石窟殘響與低頻 drone，陰"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/d427723a-91df-4038-8e41-19dda2e8adf4",
+    "https://coverartarchive.org/release-group/d427723a-91df-4038-8e41-19dda2e8adf4/front",
+    "https://music.apple.com/us/album/onyx/1024634048"
+   ],
+   "mbRgMbid": "d427723a-91df-4038-8e41-19dda2e8adf4",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Council of Nine",
+   "album": "Diagnosis",
+   "year": 2015,
+   "label": "Cryo Chamber",
+   "country": "us",
+   "faction": "cryo-chamber",
+   "genres": [
+    "electronic"
+   ],
+   "why": "以精神病診斷為題的 Cryo Chamber 盤：病房殘響、低頻與扭曲人聲取樣，無鼓、陰冷、幽閉。",
+   "moodGuess": {
+    "x": 1.3,
+    "y": 1.5,
+    "z": -1.6,
+    "why": "無鼓，病房殘響與扭曲人聲，陰"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/0dae9463-910e-4866-b9de-02c8825b1b09",
+    "https://coverartarchive.org/release-group/0dae9463-910e-4866-b9de-02c8825b1b09/front",
+    "https://music.apple.com/us/album/diagnosis/1050299953"
+   ],
+   "mbRgMbid": "0dae9463-910e-4866-b9de-02c8825b1b09",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Cryobiosis",
+   "album": "Within Ruins",
+   "year": 2013,
+   "label": "Cryo Chamber",
+   "country": "ro",
+   "faction": "cryo-chamber",
+   "genres": [
+    "electronic"
+   ],
+   "why": "羅馬尼亞 Cryobiosis 的廢墟主題首作，冷凍般的合成器 drone 與工業殘響，慢、霧、無人味。",
+   "moodGuess": {
+    "x": 1.3,
+    "y": 1.4,
+    "z": -1.6,
+    "why": "無鼓，冷合成 drone 與工業殘響"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/01b048ca-419c-46b9-b581-7b9cf2666a1d",
+    "https://coverartarchive.org/release-group/01b048ca-419c-46b9-b581-7b9cf2666a1d/front",
+    "https://music.apple.com/us/album/within-ruins/930724465"
+   ],
+   "mbRgMbid": "01b048ca-419c-46b9-b581-7b9cf2666a1d",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "God Body Disconnect",
+   "album": "Dredge Portals",
+   "year": 2016,
+   "label": "Cryo Chamber",
+   "country": "us",
+   "faction": "cryo-chamber",
+   "genres": [
+    "electronic"
+   ],
+   "why": "God Body Disconnect 首張 Cryo Chamber 作：混濁的深海式低頻與失真紋理，無鼓、黑、冷。",
+   "moodGuess": {
+    "x": 1.2,
+    "y": 1.7,
+    "z": -1.6,
+    "why": "無鼓，深海低頻與失真紋理，黑冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/f9565ac8-7b11-4c52-82d1-958d5095d985",
+    "https://coverartarchive.org/release-group/f9565ac8-7b11-4c52-82d1-958d5095d985/front",
+    "https://music.apple.com/us/album/dredge-portals/1057593251"
+   ],
+   "mbRgMbid": "f9565ac8-7b11-4c52-82d1-958d5095d985",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Neizvestija",
+   "album": "Majak",
+   "year": 2013,
+   "label": "Cryo Chamber",
+   "country": "se",
+   "faction": "cryo-chamber",
+   "genres": [
+    "electronic"
+   ],
+   "why": "以廢棄燈塔為題的冷戰 dark ambient，短波雜訊、霧笛與低頻 drone，無鼓，荒涼而冷。",
+   "moodGuess": {
+    "x": 1.2,
+    "y": 1.4,
+    "z": -1.7,
+    "why": "無鼓，短波雜訊與霧笛 drone，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/cf469d39-481a-4773-acbd-f05defa82844",
+    "https://coverartarchive.org/release-group/cf469d39-481a-4773-acbd-f05defa82844/front",
+    "https://music.apple.com/us/album/majak/1351412510"
+   ],
+   "mbRgMbid": "cf469d39-481a-4773-acbd-f05defa82844",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Dark Matter",
+   "album": "How Cold Is the Sun",
+   "year": 2013,
+   "label": "Cryo Chamber",
+   "country": "de",
+   "faction": "cryo-chamber",
+   "genres": [
+    "electronic"
+   ],
+   "why": "德國 Dark Matter 的太空寒寂盤，厚合成墊與深低頻緩慢推移，無節拍、虛空、冷。",
+   "moodGuess": {
+    "x": 1.2,
+    "y": 1.4,
+    "z": -1.7,
+    "why": "無鼓，厚合成墊與深低頻，虛空冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/636c5c54-7d0f-4542-915d-12619b5c1147",
+    "https://coverartarchive.org/release-group/636c5c54-7d0f-4542-915d-12619b5c1147/front",
+    "https://music.apple.com/us/album/how-cold-is-the-sun/1393843932"
+   ],
+   "mbRgMbid": "636c5c54-7d0f-4542-915d-12619b5c1147",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Northumbria",
+   "album": "Helluland",
+   "year": 2015,
+   "label": "Cryo Chamber",
+   "country": "ca",
+   "faction": "cryo-chamber",
+   "genres": [
+    "electronic"
+   ],
+   "why": "加拿大二人組以吉他與貝斯做成的北地 drone，厚重延音與殘響淹沒一切，無鼓、冷、遼闊。",
+   "moodGuess": {
+    "x": 1.3,
+    "y": 1.6,
+    "z": -1.4,
+    "why": "無鼓，吉他貝斯厚 drone，北地冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/cd7ff4ae-3f62-4adf-bfb6-a4e15b778914",
+    "https://coverartarchive.org/release-group/cd7ff4ae-3f62-4adf-bfb6-a4e15b778914/front",
+    "https://music.apple.com/us/album/helluland/969568108"
+   ],
+   "mbRgMbid": "cd7ff4ae-3f62-4adf-bfb6-a4e15b778914",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Aegri Somnia",
+   "album": "Monde obscure",
+   "year": 2015,
+   "label": "Cryo Chamber",
+   "country": "hr",
+   "faction": "cryo-chamber",
+   "genres": [
+    "electronic"
+   ],
+   "why": "克羅埃西亞 Aegri Somnia 的「幽暗世界」：低頻轟鳴、合唱取樣與廢墟殘響，無鼓、陰沉。",
+   "moodGuess": {
+    "x": 1.3,
+    "y": 1.5,
+    "z": -1.6,
+    "why": "無鼓，低頻轟鳴與合唱殘響，陰"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/53b21b4c-3659-4b4f-95f6-298611f2d512",
+    "https://coverartarchive.org/release-group/53b21b4c-3659-4b4f-95f6-298611f2d512/front",
+    "https://music.apple.com/us/album/monde-obscure/986182064"
+   ],
+   "mbRgMbid": "53b21b4c-3659-4b4f-95f6-298611f2d512",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Raison d'être",
+   "album": "Within the Depths of Silence and Phormations",
+   "year": 1995,
+   "label": "Cold Meat Industry",
+   "country": "se",
+   "faction": "cold-meat",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Peter Andersson 在 Cold Meat 的核心盤之一：修道院聖詠循環浸在長殘響與低頻 drone 裡，慢、厚、肅冷。",
+   "moodGuess": {
+    "x": 1.4,
+    "y": 1.4,
+    "z": -1.5,
+    "why": "鼓稀，聖詠循環與長殘響，肅冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/8cab7132-dcdc-3a7d-9fe0-e2b5c47380eb",
+    "https://coverartarchive.org/release-group/8cab7132-dcdc-3a7d-9fe0-e2b5c47380eb/front",
+    "https://music.apple.com/us/album/within-the-depths-of-silence-and/1834501030"
+   ],
+   "mbRgMbid": "8cab7132-dcdc-3a7d-9fe0-e2b5c47380eb",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "raison d’être",
+   "uncertain": ""
+  },
+  {
+   "artist": "Raison d'être",
+   "album": "Requiem for Abandoned Souls",
+   "year": 2003,
+   "label": "Cold Meat Industry",
+   "country": "se",
+   "faction": "cold-meat",
+   "genres": [
+    "electronic"
+   ],
+   "why": "被許多人視為 raison d'être 最黑的一張：工業金屬刮擦、鐘聲與厚 drone 的安魂曲，無鼓、陰冷。",
+   "moodGuess": {
+    "x": 1.3,
+    "y": 1.6,
+    "z": -1.7,
+    "why": "無鼓，金屬刮擦與厚 drone，陰"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/3fdb1d29-dc19-3579-81df-4c823f4ccf4b",
+    "https://coverartarchive.org/release-group/3fdb1d29-dc19-3579-81df-4c823f4ccf4b/front",
+    "https://music.apple.com/us/album/requiem-for-abandoned-souls/310124060"
+   ],
+   "mbRgMbid": "3fdb1d29-dc19-3579-81df-4c823f4ccf4b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "raison d’être",
+   "uncertain": ""
+  },
+  {
+   "artist": "Raison d'être",
+   "album": "The Empty Hollow Unfolds",
+   "year": 2000,
+   "label": "Cold Meat Industry",
+   "country": "se",
+   "faction": "cold-meat",
+   "genres": [
+    "electronic"
+   ],
+   "why": "轉向工業質地的 Cold Meat 盤，空洞殘響、金屬共鳴與低吟取樣，慢而沉，冷到無人味。",
+   "moodGuess": {
+    "x": 1.3,
+    "y": 1.5,
+    "z": -1.6,
+    "why": "無鼓，空洞殘響與金屬共鳴，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/88373af8-5707-3c55-9e37-f406bafd0903",
+    "https://coverartarchive.org/release-group/88373af8-5707-3c55-9e37-f406bafd0903/front",
+    "https://music.apple.com/us/album/the-empty-hollow-unfolds/260642805"
+   ],
+   "mbRgMbid": "88373af8-5707-3c55-9e37-f406bafd0903",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "raison d’être",
+   "uncertain": ""
+  },
+  {
+   "artist": "Raison d'être",
+   "album": "Metamorphyses",
+   "year": 2006,
+   "label": "Cold Meat Industry",
+   "country": "se",
+   "faction": "cold-meat",
+   "genres": [
+    "electronic"
+   ],
+   "why": "以煉金術變形為題的長篇盤，厚重 drone 與教堂殘響緩慢蛻變，是 Cold Meat 晚期的代表。",
+   "moodGuess": {
+    "x": 1.3,
+    "y": 1.5,
+    "z": -1.5,
+    "why": "無鼓，厚 drone 與教堂殘響，肅冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/2be9a358-2c30-3eb8-967a-786d29acca79",
+    "https://coverartarchive.org/release-group/2be9a358-2c30-3eb8-967a-786d29acca79/front",
+    "https://music.apple.com/us/album/metamorphyses/259550883"
+   ],
+   "mbRgMbid": "2be9a358-2c30-3eb8-967a-786d29acca79",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "raison d’être",
+   "uncertain": ""
+  },
+  {
+   "artist": "Desiderii Marginis",
+   "album": "Songs Over Ruins",
+   "year": 1997,
+   "label": "Cold Meat Industry",
+   "country": "se",
+   "faction": "cold-meat",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Johan Levin 的首作，廢墟與廢棄教堂的殘響 drone、遠方鐘聲與合唱，無鼓、陰鬱而冷。",
+   "moodGuess": {
+    "x": 1.3,
+    "y": 1.4,
+    "z": -1.6,
+    "why": "無鼓，廢墟殘響與鐘聲，陰冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/90e52262-1ad3-32f5-88ea-322e24147d7a",
+    "https://coverartarchive.org/release-group/90e52262-1ad3-32f5-88ea-322e24147d7a/front",
+    "https://music.apple.com/us/album/songs-over-ruins/1193721436"
+   ],
+   "mbRgMbid": "90e52262-1ad3-32f5-88ea-322e24147d7a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Desiderii Marginis",
+   "album": "That Which Is Tragic and Timeless",
+   "year": 2005,
+   "label": "Cold Meat Industry",
+   "country": "se",
+   "faction": "cold-meat",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Desiderii Marginis 回歸純 drone 的一張：悲劇主題的厚殘響墊與低頻，比《Deadbeat》靜、無工業拍。",
+   "moodGuess": {
+    "x": 1.3,
+    "y": 1.4,
+    "z": -1.5,
+    "why": "無鼓，厚殘響墊與低頻，陰"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/609addd8-d1a5-32ce-848a-b74f226a3f02",
+    "https://coverartarchive.org/release-group/609addd8-d1a5-32ce-848a-b74f226a3f02/front",
+    "https://music.apple.com/us/album/that-which-is-tragic-and-timeless/210888100"
+   ],
+   "mbRgMbid": "609addd8-d1a5-32ce-848a-b74f226a3f02",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Sephiroth",
+   "album": "Draconian Poetry",
+   "year": 2005,
+   "label": "Cold Meat Industry",
+   "country": "se",
+   "faction": "cold-meat",
+   "genres": [
+    "electronic"
+   ],
+   "why": "瑞典 Sephiroth 的儀式 dark ambient：低沉號角、遠鼓殘響與厚 drone，慢、黑、冷。",
+   "moodGuess": {
+    "x": 1.6,
+    "y": 1.5,
+    "z": -1.5,
+    "why": "遠鼓極稀，號角與厚 drone，黑冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/817de028-35e4-340a-b4dd-73795c7cc6b5",
+    "https://coverartarchive.org/release-group/817de028-35e4-340a-b4dd-73795c7cc6b5/front",
+    "https://music.apple.com/us/album/draconian-poetry/260724805"
+   ],
+   "mbRgMbid": "817de028-35e4-340a-b4dd-73795c7cc6b5",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "有稀疏儀式鼓（無攻擊性，照 10-22 規則仍靜），研究層請核對鼓的密度"
+  },
+  {
+   "artist": "Sephiroth",
+   "album": "Cathedron",
+   "year": 1999,
+   "label": "Cold Meat Industry",
+   "country": "se",
+   "faction": "cold-meat",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Sephiroth 首作，地下聖殿式的深低頻 drone 與合唱殘響，Cold Meat 90 年代末的典型聲音。",
+   "moodGuess": {
+    "x": 1.5,
+    "y": 1.5,
+    "z": -1.6,
+    "why": "鼓極稀，深 drone 與合唱殘響，陰"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/d1ccb149-ef2e-3ca5-977e-52e9687aafe7",
+    "https://coverartarchive.org/release-group/d1ccb149-ef2e-3ca5-977e-52e9687aafe7/front",
+    "https://music.apple.com/us/album/cathedron/1806123403"
+   ],
+   "mbRgMbid": "d1ccb149-ef2e-3ca5-977e-52e9687aafe7",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Aghast",
+   "album": "Hexerei im Zwielicht der Finsternis",
+   "year": 1995,
+   "label": "Cold Meat Industry",
+   "country": "no",
+   "faction": "cold-meat",
+   "genres": [
+    "electronic"
+   ],
+   "why": "挪威黑金屬圈女聲組合的唯一正規專輯：低傳真合成器、喃喃咒語與森林殘響，無鼓、陰森、冷。",
+   "moodGuess": {
+    "x": 1.3,
+    "y": 1.2,
+    "z": -1.8,
+    "why": "無鼓，低傳真合成霧與咒語，陰森"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/e0e788a1-95af-3382-8977-b26ac2efd277",
+    "https://coverartarchive.org/release-group/e0e788a1-95af-3382-8977-b26ac2efd277/front",
+    "https://music.apple.com/us/album/hexerei-im-zwielicht-der-finsternis/1493814219"
+   ],
+   "mbRgMbid": "e0e788a1-95af-3382-8977-b26ac2efd277",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Moljebka Pvlse",
+   "album": "Sadalmelik",
+   "year": 2002,
+   "label": "Cold Meat Industry",
+   "country": "se",
+   "faction": "cold-meat",
+   "genres": [
+    "electronic"
+   ],
+   "why": "瑞典 Moljebka Pvlse 的重質地 drone：低頻轟鳴與工業雜訊層層淹沒，無節拍、密實而冷。",
+   "moodGuess": {
+    "x": 1.4,
+    "y": 1.8,
+    "z": -1.5,
+    "why": "無鼓，低頻轟鳴與工業雜訊牆，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/25133df1-39d2-3cf0-bdc5-ebd2489fae38",
+    "https://coverartarchive.org/release-group/25133df1-39d2-3cf0-bdc5-ebd2489fae38/front"
+   ],
+   "mbRgMbid": "25133df1-39d2-3cf0-bdc5-ebd2489fae38",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "iTunes 查無，封面以 CAA 為準"
+  },
+  {
+   "artist": "Cities Last Broadcast",
+   "album": "The Cancelled Earth",
+   "year": 2009,
+   "label": "Cyclic Law",
+   "country": "se",
+   "faction": "cyclic-law",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Kammarheit 主腦 Pär Boström 的另一名義：城市廢墟的磁帶噪點、短波與低頻，霧厚、無鼓、冷。",
+   "moodGuess": {
+    "x": 1.3,
+    "y": 1.5,
+    "z": -1.6,
+    "why": "無鼓，磁帶噪點與短波低頻，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/c0561b4b-5ebb-4833-bb74-4137499dcc9d",
+    "https://coverartarchive.org/release-group/c0561b4b-5ebb-4833-bb74-4137499dcc9d/front",
+    "https://music.apple.com/us/album/the-cancelled-earth/327196721"
+   ],
+   "mbRgMbid": "c0561b4b-5ebb-4833-bb74-4137499dcc9d",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Apócrýphos",
+   "album": "The Prisoners Cinema",
+   "year": 2015,
+   "label": "Cyclic Law",
+   "country": "us",
+   "faction": "cyclic-law",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Apócrýphos 在 Cyclic Law 的首作：監獄電影院的幻覺殘響、低頻與遠方人聲，無鼓、陰冷。",
+   "moodGuess": {
+    "x": 1.3,
+    "y": 1.5,
+    "z": -1.6,
+    "why": "無鼓，幻覺殘響與低頻人聲，陰"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/d33897fc-b157-44b5-a340-722340956ced",
+    "https://coverartarchive.org/release-group/d33897fc-b157-44b5-a340-722340956ced/front",
+    "https://music.apple.com/us/album/the-prisoners-cinema/1135143356"
+   ],
+   "mbRgMbid": "d33897fc-b157-44b5-a340-722340956ced",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Kammarheit",
+   "album": "Asleep and Well Hidden",
+   "year": 2003,
+   "label": "Cyclic Law",
+   "country": "se",
+   "faction": "cyclic-law",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Kammarheit 在 Cyclic Law 的首張正式專輯，洞穴般的低頻 drone 與遠方迴聲，北歐 dark ambient 的經典。",
+   "moodGuess": {
+    "x": 1.2,
+    "y": 1.5,
+    "z": -1.6,
+    "why": "無鼓，洞穴低頻 drone 與迴聲"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/4ce37b0f-55fa-36d2-954a-8d90d837760a",
+    "https://coverartarchive.org/release-group/4ce37b0f-55fa-36d2-954a-8d90d837760a/front",
+    "https://music.apple.com/us/album/asleep-and-well-hidden/252392835"
+   ],
+   "mbRgMbid": "4ce37b0f-55fa-36d2-954a-8d90d837760a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Kammarheit",
+   "album": "The Nest",
+   "year": 2015,
+   "label": "Cyclic Law",
+   "country": "se",
+   "faction": "cyclic-law",
+   "genres": [
+    "electronic"
+   ],
+   "why": "隔十年的回歸作：巢穴主題的厚 drone、低頻與細碎殘響，比《The Starwheel》更黑更厚。",
+   "moodGuess": {
+    "x": 1.2,
+    "y": 1.5,
+    "z": -1.6,
+    "why": "無鼓，厚 drone 與細碎殘響，黑"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/3215a6f2-7ef6-4227-8301-6963f6529736",
+    "https://coverartarchive.org/release-group/3215a6f2-7ef6-4227-8301-6963f6529736/front",
+    "https://music.apple.com/us/album/the-nest/1136173792"
+   ],
+   "mbRgMbid": "3215a6f2-7ef6-4227-8301-6963f6529736",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Svartsinn",
+   "album": "Traces of Nothingness",
+   "year": 2005,
+   "label": "Cyclic Law",
+   "country": "no",
+   "faction": "cyclic-law",
+   "genres": [
+    "electronic"
+   ],
+   "why": "挪威 Svartsinn 的虛無主題盤，緩慢的低頻 drone 與暗色合成墊，無鼓、荒涼、北地冷。",
+   "moodGuess": {
+    "x": 1.2,
+    "y": 1.4,
+    "z": -1.7,
+    "why": "無鼓，低頻 drone 與暗合成墊"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/fc885188-47f9-3b0f-b21f-253810b75090",
+    "https://coverartarchive.org/release-group/fc885188-47f9-3b0f-b21f-253810b75090/front",
+    "https://music.apple.com/us/album/traces-of-nothingness/218203069"
+   ],
+   "mbRgMbid": "fc885188-47f9-3b0f-b21f-253810b75090",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Treha Sektori",
+   "album": "Endessiah",
+   "year": 2012,
+   "label": "Cyclic Law",
+   "country": "fr",
+   "faction": "cyclic-law",
+   "genres": [
+    "electronic"
+   ],
+   "why": "法國 Treha Sektori 的儀式 dark ambient：喉音低吟、厚 drone 與長殘響，慢而陰，冷硬。",
+   "moodGuess": {
+    "x": 1.4,
+    "y": 1.5,
+    "z": -1.6,
+    "why": "鼓極稀，喉音低吟與厚 drone，陰"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/fbe43171-5f1f-4aa6-91f2-c71429139ee9",
+    "https://coverartarchive.org/release-group/fbe43171-5f1f-4aa6-91f2-c71429139ee9/front",
+    "https://music.apple.com/us/album/endessiah/1139711488"
+   ],
+   "mbRgMbid": "fbe43171-5f1f-4aa6-91f2-c71429139ee9",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Yen Pox",
+   "album": "Blood Music",
+   "year": 1995,
+   "label": "Malignant Records",
+   "country": "us",
+   "faction": "malignant",
+   "genres": [
+    "electronic"
+   ],
+   "why": "美國 Yen Pox 首作、Malignant 早期招牌：深沉翻滾的低頻 drone 牆，無鼓、密不透風、黑冷。",
+   "moodGuess": {
+    "x": 1.2,
+    "y": 1.8,
+    "z": -1.7,
+    "why": "無鼓，翻滾低頻 drone 牆，黑冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/7e95ef34-1b64-337f-8fee-7617cb84518a",
+    "https://coverartarchive.org/release-group/7e95ef34-1b64-337f-8fee-7617cb84518a/front",
+    "https://music.apple.com/us/album/blood-music/381242390"
+   ],
+   "mbRgMbid": "7e95ef34-1b64-337f-8fee-7617cb84518a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Yen Pox",
+   "album": "New Dark Age",
+   "year": 2000,
+   "label": "Malignant Records",
+   "country": "us",
+   "faction": "malignant",
+   "genres": [
+    "electronic"
+   ],
+   "why": "被視為 isolationist／dark ambient 美系高峰的第二張：巨大的次低頻與轟鳴層，無拍、壓迫、陰冷。",
+   "moodGuess": {
+    "x": 1.2,
+    "y": 1.9,
+    "z": -1.7,
+    "why": "無鼓，次低頻轟鳴層，壓迫陰冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/8805c681-2f9e-3832-8bdf-b3cd903b6ce7",
+    "https://coverartarchive.org/release-group/8805c681-2f9e-3832-8bdf-b3cd903b6ce7/front",
+    "https://music.apple.com/us/album/new-dark-age/1861911015"
+   ],
+   "mbRgMbid": "8805c681-2f9e-3832-8bdf-b3cd903b6ce7",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Troum & Yen Pox",
+   "album": "Mnemonic Induction",
+   "year": 2002,
+   "label": "Malignant Records",
+   "country": "de",
+   "faction": "malignant",
+   "genres": [
+    "electronic"
+   ],
+   "why": "德國 Troum 與 Yen Pox 的合作：吉他處理成的厚 drone 與低頻共振，無鼓、霧厚、冷。",
+   "moodGuess": {
+    "x": 1.2,
+    "y": 1.7,
+    "z": -1.5,
+    "why": "無鼓，處理吉他厚 drone 與共振"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/a7c10bf7-6630-3eb2-bd8c-507f3c0e36a6",
+    "https://coverartarchive.org/release-group/a7c10bf7-6630-3eb2-bd8c-507f3c0e36a6/front"
+   ],
+   "mbRgMbid": "a7c10bf7-6630-3eb2-bd8c-507f3c0e36a6",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Yen Pox",
+   "album": "Between the Horizon and the Abyss",
+   "year": 2015,
+   "label": "Malignant Records",
+   "country": "us",
+   "faction": "malignant",
+   "genres": [
+    "electronic"
+   ],
+   "why": "睽違十五年的第三張，仍是厚實的低頻 drone 雲團與緩慢推移，無鼓、深黑、冷。",
+   "moodGuess": {
+    "x": 1.2,
+    "y": 1.8,
+    "z": -1.6,
+    "why": "無鼓，低頻 drone 雲團，深黑"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/b2670965-9648-48f5-a4e1-5c953b8b0995",
+    "https://coverartarchive.org/release-group/b2670965-9648-48f5-a4e1-5c953b8b0995/front",
+    "https://music.apple.com/us/album/between-the-horizon-and-the-abyss/992665103"
+   ],
+   "mbRgMbid": "b2670965-9648-48f5-a4e1-5c953b8b0995",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Hazard",
+   "album": "Lech",
+   "year": 1996,
+   "label": "Malignant Records",
+   "country": "se",
+   "faction": "malignant",
+   "genres": [
+    "electronic"
+   ],
+   "why": "瑞典 Hazard（BJ Nilsen 早期名義）的 Malignant 盤：工業低頻、金屬共鳴與田野錄音，無鼓、冷。",
+   "moodGuess": {
+    "x": 1.3,
+    "y": 1.6,
+    "z": -1.6,
+    "why": "無鼓，工業低頻與金屬共鳴，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/313de15a-31ae-304d-aebd-7d9002dd69e3",
+    "https://coverartarchive.org/release-group/313de15a-31ae-304d-aebd-7d9002dd69e3/front"
+   ],
+   "mbRgMbid": "313de15a-31ae-304d-aebd-7d9002dd69e3",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Hazard 即 BJ Nilsen 早期名義；md6 另有 BJ Nilsen 名義的盤，藝人名不同不撞"
+  },
+  {
+   "artist": "Hall of Mirrors",
+   "album": "Reflections on Black",
+   "year": 2007,
+   "label": "Silentes Minimal Editions",
+   "country": "it",
+   "faction": "malignant",
+   "genres": [
+    "electronic"
+   ],
+   "why": "義大利 Andrea Marutti 與 Giuseppe Verticchio 的合作，黑色主題的厚 drone 與殘響，無鼓、陰冷。",
+   "moodGuess": {
+    "x": 1.2,
+    "y": 1.5,
+    "z": -1.6,
+    "why": "無鼓，厚 drone 與長殘響，陰冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/4c9865e3-8e3c-4758-b84a-6d8027b9bc3c",
+    "https://coverartarchive.org/release-group/4c9865e3-8e3c-4758-b84a-6d8027b9bc3c/front"
+   ],
+   "mbRgMbid": "4c9865e3-8e3c-4758-b84a-6d8027b9bc3c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Leila Abdul-Rauf",
+   "album": "Insomnia",
+   "year": 2015,
+   "label": "Malignant Antibody",
+   "country": "us",
+   "faction": "malignant",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Vastum 樂手的個人 dark ambient：失眠主題的殘響小號、人聲與低頻墊，慢、霧、陰冷。",
+   "moodGuess": {
+    "x": 1.4,
+    "y": 1.1,
+    "z": -1.3,
+    "why": "無鼓，殘響小號與低頻墊，陰"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/b2cf9558-ec85-4176-9ccd-7edc533522df",
+    "https://coverartarchive.org/release-group/b2cf9558-ec85-4176-9ccd-7edc533522df/front",
+    "https://music.apple.com/us/album/insomnia/1372559225"
+   ],
+   "mbRgMbid": "b2cf9558-ec85-4176-9ccd-7edc533522df",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "小號與人聲較清楚，y 可能只到 +1.0 左右；若主線要汰換，優先汰這張"
+  },
+  {
+   "artist": "Lustmord",
+   "album": "Paradise Disowned",
+   "year": 1986,
+   "label": "Side Effects",
+   "country": "gb",
+   "faction": "malignant",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Lustmord 早期 Side Effects 盤：從工業噪音轉向洞穴 drone 的過渡，粗糙低頻與殘響，無鼓、陰冷。",
+   "moodGuess": {
+    "x": 1.4,
+    "y": 1.6,
+    "z": -1.7,
+    "why": "無鼓，粗糙低頻與洞穴殘響"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/f8a39d37-11b5-397c-9411-8c44c82156f2",
+    "https://coverartarchive.org/release-group/f8a39d37-11b5-397c-9411-8c44c82156f2/front",
+    "https://music.apple.com/us/album/paradise-disowned/385455870"
+   ],
+   "mbRgMbid": "f8a39d37-11b5-397c-9411-8c44c82156f2",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Lustmørd",
+   "uncertain": "MB 掛名 Lustmørd（早期寫法），卡上沿用池中 Lustmord"
+  },
+  {
+   "artist": "Lustmord",
+   "album": "Purifying Fire",
+   "year": 2000,
+   "label": "Soleilmoon Recordings",
+   "country": "gb",
+   "faction": "loki-antzen",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Lustmord 千禧年的地底火焰 drone 盤，後由 Ant-Zen 再版：次低頻與熔岩般的嗡鳴，無鼓、陰沉。",
+   "moodGuess": {
+    "x": 1.1,
+    "y": 1.7,
+    "z": -1.6,
+    "why": "無鼓，次低頻熔岩嗡鳴，陰沉"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/836ead59-3030-33ce-96bd-4a1358f4cebf",
+    "https://coverartarchive.org/release-group/836ead59-3030-33ce-96bd-4a1358f4cebf/front",
+    "https://music.apple.com/us/album/purifying-fire/408912955"
+   ],
+   "mbRgMbid": "836ead59-3030-33ce-96bd-4a1358f4cebf",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Inade",
+   "album": "The Crackling of the Anonymous",
+   "year": 2001,
+   "label": "Loki Foundation",
+   "country": "de",
+   "faction": "loki-antzen",
+   "genres": [
+    "electronic"
+   ],
+   "why": "德國 Inade 在 Loki Foundation 的代表作：宇宙儀式感的厚 drone、低吟與金屬殘響，無鼓、冷峻。",
+   "moodGuess": {
+    "x": 1.3,
+    "y": 1.6,
+    "z": -1.6,
+    "why": "無鼓，宇宙厚 drone 與金屬殘響"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/9816de81-9efc-39f7-8315-176d552eb875",
+    "https://coverartarchive.org/release-group/9816de81-9efc-39f7-8315-176d552eb875/front",
+    "https://music.apple.com/us/album/the-crackling-of-the-anonymous/1622537360"
+   ],
+   "mbRgMbid": "9816de81-9efc-39f7-8315-176d552eb875",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Inade",
+   "album": "Samadhi State",
+   "year": 2006,
+   "label": "Loki Foundation",
+   "country": "de",
+   "faction": "loki-antzen",
+   "genres": [
+    "electronic"
+   ],
+   "why": "三昧主題的長篇 drone 盤，深低頻與緩慢共振層層推移，Inade 最靜的一張，冷而厚。",
+   "moodGuess": {
+    "x": 1.1,
+    "y": 1.6,
+    "z": -1.5,
+    "why": "無鼓，深低頻與緩慢共振，冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/897f1d88-41f9-311a-8fb6-5c5b1b3751b4",
+    "https://coverartarchive.org/release-group/897f1d88-41f9-311a-8fb6-5c5b1b3751b4/front",
+    "https://music.apple.com/us/album/samadhi-state/1624180316"
+   ],
+   "mbRgMbid": "897f1d88-41f9-311a-8fb6-5c5b1b3751b4",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Herbst9",
+   "album": "Buried Under Time and Sand",
+   "year": 2005,
+   "label": "Loki Foundation",
+   "country": "de",
+   "faction": "loki-antzen",
+   "genres": [
+    "electronic"
+   ],
+   "why": "德國 Herbst9 的美索不達米亞主題盤：沙暴般的低頻、儀式低吟與殘響，慢、厚、陰。",
+   "moodGuess": {
+    "x": 1.6,
+    "y": 1.5,
+    "z": -1.4,
+    "why": "遠處儀式打擊極稀，沙暴低頻"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/5cc18fa7-8aa8-3967-a267-29279d232576",
+    "https://coverartarchive.org/release-group/5cc18fa7-8aa8-3967-a267-29279d232576/front"
+   ],
+   "mbRgMbid": "5cc18fa7-8aa8-3967-a267-29279d232576",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "部分曲目有儀式打擊，研究層請核對是否稀疏"
+  },
+  {
+   "artist": "Netherworld",
+   "album": "Mørketid",
+   "year": 2007,
+   "label": "Glacial Movements",
+   "country": "it",
+   "faction": "glacial",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Glacial Movements 主理人 Alessandro Tedeschi 的極夜主題盤：冰層 drone 與長殘響，無鼓、極寒。",
+   "moodGuess": {
+    "x": 1.1,
+    "y": 1.3,
+    "z": -1.8,
+    "why": "無鼓，冰層 drone 與長殘響，極寒"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/4f86f04b-bc2a-3676-b748-7544f4953661",
+    "https://coverartarchive.org/release-group/4f86f04b-bc2a-3676-b748-7544f4953661/front"
+   ],
+   "mbRgMbid": "4f86f04b-bc2a-3676-b748-7544f4953661",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Netherworld",
+   "album": "Alchemy of Ice",
+   "year": 2013,
+   "label": "Glacial Movements",
+   "country": "it",
+   "faction": "glacial",
+   "genres": [
+    "electronic"
+   ],
+   "why": "「冰的煉金術」：冰河錄音處理成的厚 drone 與低頻，Glacial Movements 孤絕主義的典型。",
+   "moodGuess": {
+    "x": 1.1,
+    "y": 1.3,
+    "z": -1.8,
+    "why": "無鼓，冰河錄音厚 drone，極寒"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/fddb9b93-1186-43f3-9e0e-2b66079ead54",
+    "https://coverartarchive.org/release-group/fddb9b93-1186-43f3-9e0e-2b66079ead54/front",
+    "https://music.apple.com/us/album/alchemy-of-ice/643070827"
+   ],
+   "mbRgMbid": "fddb9b93-1186-43f3-9e0e-2b66079ead54",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Lull",
+   "album": "Like a Slow River",
+   "year": 2008,
+   "label": "Glacial Movements",
+   "country": "gb",
+   "faction": "glacial",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Mick Harris（Scorn）的 Lull 在 Glacial Movements 的盤，全然靜止的低頻 drone，無鼓、深黑、冷。",
+   "moodGuess": {
+    "x": 1,
+    "y": 1.5,
+    "z": -1.7,
+    "why": "無鼓，靜止低頻 drone，深黑冷"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/80aa3044-236c-37ff-9778-680af3cc255f",
+    "https://coverartarchive.org/release-group/80aa3044-236c-37ff-9778-680af3cc255f/front",
+    "https://music.apple.com/us/album/like-a-slow-river/307393961"
+   ],
+   "mbRgMbid": "80aa3044-236c-37ff-9778-680af3cc255f",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Rapoon",
+   "album": "Time Frost",
+   "year": 2007,
+   "label": "Glacial Movements",
+   "country": "gb",
+   "faction": "glacial",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Robin Storey（Zoviet France）為 Glacial Movements 做的冰霜盤，循環 drone 與冷霧殘響，無鼓。",
+   "moodGuess": {
+    "x": 1.3,
+    "y": 1.3,
+    "z": -1.6,
+    "why": "無鼓，循環 drone 與冷霧殘響"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/a2d9d8cd-75b0-4f2b-81cc-86cc8e1b3919",
+    "https://coverartarchive.org/release-group/a2d9d8cd-75b0-4f2b-81cc-86cc8e1b3919/front",
+    "https://music.apple.com/us/album/time-frost/309888823"
+   ],
+   "mbRgMbid": "a2d9d8cd-75b0-4f2b-81cc-86cc8e1b3919",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  }
+ ],
+ "notes": [
+  "54 張全數 MB 釘住（primary-type Album、無 secondary type），封面皆 CAA（307 轉址）；無人工身分卡。",
+  "Ant-Zen 本廠大多是 rhythmic noise／power electronics（Synapscape、Hypnoskull、Converter、Imminent Starvation），有拍又兇判躁落亢奮，刻意不收；Ant-Zen 名額改由 Loki Foundation 的 Inade／Herbst9 與 Ant-Zen 再版的 Lustmord 補。",
+  "刻意排除：Atrium Carceri《Metropolis》（noir 段有 trip-hop 拍）、Archon Satani、Megaptera、Brighter Death Now、MZ.412、Steel Hook Prostheses、Theologian 等 death industrial／power electronics（攻擊性＋拍 → 躁）；Mortiis 早期 dungeon synth 與 Northaunt（md1《Barren Land》因質地偏輕被汰）判輕風險高不收；bvdub、Oöphoi 色溫偏暖不收。",
+  "raison d'être 池中已有 2 張，本批再提 4 張；Atrium Carceri 池中 1 張，再提 6 張＋1 張三人合作（同一藝人無張數上限）。",
+  "WebSearch 使用 0 次；身分、廠牌、年份、封面全走 MB API、CAA、iTunes Search API。",
+  "汰換建議順序（若主線要從 54 汰到 45）：Leila Abdul-Rauf《Insomnia》（y 貼近）、Sephiroth《Draconian Poetry》與 Herbst9（有稀疏儀式打擊）、Rapoon《Time Frost》與 Netherworld 兩張（y 1.3 偏薄側）、Atrium Carceri 第 6、7 張（池中同人過多時）。"
+ ]
+}

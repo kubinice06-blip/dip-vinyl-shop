@@ -36,13 +36,22 @@
    "ratings": {
     "classic": 4,
     "obscurity": 2,
-    "accessibility": 2,
+    "accessibility": 1,
     "listeners": 251648,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-12T12:43:03Z",
-    "note": "機器基線 4/2/2（廣度線冷門軸照 Last.fm listeners 251648）"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "note": "全池稽核 audit-20261102（方案 C）：電子 bossa 代表作、藝人生涯最成功，但無正典榜級共識｜L=251648",
+    "previous": {
+     "classic": 5,
+     "obscurity": 2,
+     "accessibility": 1,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：電子 bossa 里程碑，全球銷量逾百萬、2000 年代巴西電子必提；柔和人聲",
+     "rarity": "rare"
+    }
    },
-   "rarity": "uncommon",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -76,7 +85,7 @@
     "cardCatalog": false,
     "descriptionKv": false,
     "albumOverride": false,
-    "seedCards": false,
+    "seedCards": true,
     "apexPool": false
    }
   },
@@ -110,13 +119,22 @@
    "ratings": {
     "classic": 3,
     "obscurity": 3,
-    "accessibility": 2,
+    "accessibility": 1,
     "listeners": 27834,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-12T12:43:03Z",
-    "note": "機器基線 3/3/2（廣度線冷門軸照 Last.fm listeners 27834）"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Padilla 第二張，Souvenir 較有名；DRO/Maverick；Café del Mar chill",
+    "previous": {
+     "classic": 3,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-12T12:43:03Z",
+     "note": "機器基線 3/3/2（廣度線冷門軸照 Last.fm listeners 27834）",
+     "rarity": "rare"
+    }
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -183,13 +201,22 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-12 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 3,
+    "classic": 4,
     "obscurity": 2,
     "accessibility": 2,
     "listeners": 216116,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-12T12:43:03Z",
-    "note": "機器基線 3/2/2（廣度線冷門軸照 Last.fm listeners 216116）"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Bent 首張代表作；Ministry of Sound/EMI；取樣 downtempo",
+    "previous": {
+     "classic": 3,
+     "obscurity": 2,
+     "accessibility": 2,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-12T12:43:03Z",
+     "note": "機器基線 3/2/2（廣度線冷門軸照 Last.fm listeners 216116）",
+     "rarity": "rare"
+    }
    },
    "rarity": "rare",
    "apexAssessment": {
@@ -257,15 +284,24 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-12 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 2,
+    "classic": 3,
     "obscurity": 2,
     "accessibility": 2,
     "listeners": 196199,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-12T12:43:03Z",
-    "note": "機器基線 2/2/2（廣度線冷門軸照 Last.fm listeners 196199）"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Thunderball 第二張；ESL；lounge 電子",
+    "previous": {
+     "classic": 2,
+     "obscurity": 2,
+     "accessibility": 2,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-12T12:43:03Z",
+     "note": "機器基線 2/2/2（廣度線冷門軸照 Last.fm listeners 196199）",
+     "rarity": "rare"
+    }
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -334,15 +370,24 @@
     "visuallyVerified": true
    },
    "ratings": {
-    "classic": 3,
+    "classic": 4,
     "obscurity": 2,
-    "accessibility": 3,
+    "accessibility": 2,
     "listeners": 474573,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-12T12:43:03Z",
-    "note": "機器基線 3/2/3（廣度線冷門軸照 Last.fm listeners 474573）"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Tosca 代表作；G-Stone；器樂 dub downtempo，非難入耳",
+    "previous": {
+     "classic": 3,
+     "obscurity": 2,
+     "accessibility": 3,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-12T12:43:03Z",
+     "note": "機器基線 3/2/3（廣度線冷門軸照 Last.fm listeners 474573）",
+     "rarity": "uncommon"
+    }
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -409,13 +454,22 @@
    "ratings": {
     "classic": 3,
     "obscurity": 3,
-    "accessibility": 3,
+    "accessibility": 2,
     "listeners": 22173,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-12T12:43:03Z",
-    "note": "機器基線 3/3/3（廣度線冷門軸照 Last.fm listeners 22173）"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Tosca 第三張，代表作是 Suzuki；!K7；downtempo＋鋼琴小品",
+    "previous": {
+     "classic": 3,
+     "obscurity": 3,
+     "accessibility": 3,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-12T12:43:03Z",
+     "note": "機器基線 3/3/3（廣度線冷門軸照 Last.fm listeners 22173）",
+     "rarity": "uncommon"
+    }
    },
-   "rarity": "uncommon",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -490,7 +544,7 @@
     "checkedAt": "2026-10-12T12:43:03Z",
     "note": "機器基線 3/2/2（廣度線冷門軸照 Last.fm listeners 129365）"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -557,13 +611,22 @@
     "visuallyVerified": true
    },
    "ratings": {
-    "classic": 3,
-    "obscurity": 4,
+    "classic": 4,
+    "obscurity": 3,
     "accessibility": 2,
     "listeners": 5591,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-12T12:43:03Z",
-    "note": "機器基線 3/4/2（廣度線冷門軸照 Last.fm listeners 5591）"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Drumlesson 代表作，techno 經典爵士化；聽眾5.6千；易入耳",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-12T12:43:03Z",
+     "note": "機器基線 3/4/2（廣度線冷門軸照 Last.fm listeners 5591）",
+     "rarity": "rare"
+    }
    },
    "rarity": "rare",
    "apexAssessment": {
@@ -633,13 +696,22 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-12 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 3,
+    "classic": 4,
     "obscurity": 2,
     "accessibility": 2,
     "listeners": 114666,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-12T12:43:03Z",
-    "note": "機器基線 3/2/2（廣度線冷門軸照 Last.fm listeners 114666）"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Compost 名盤、Beanfield 代表作（含 Tides）；nu-jazz downbeat",
+    "previous": {
+     "classic": 3,
+     "obscurity": 2,
+     "accessibility": 2,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-12T12:43:03Z",
+     "note": "機器基線 3/2/2（廣度線冷門軸照 Last.fm listeners 114666）",
+     "rarity": "rare"
+    }
    },
    "rarity": "rare",
    "apexAssessment": {
@@ -707,15 +779,24 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-12 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 2,
+    "classic": 3,
     "obscurity": 2,
     "accessibility": 2,
     "listeners": 216651,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-12T12:43:03Z",
-    "note": "機器基線 2/2/2（廣度線冷門軸照 Last.fm listeners 216651）"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Mo' Horizons 首張，評價中等；Stereo Deluxe；拉丁 nu-jazz",
+    "previous": {
+     "classic": 2,
+     "obscurity": 2,
+     "accessibility": 2,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-12T12:43:03Z",
+     "note": "機器基線 2/2/2（廣度線冷門軸照 Last.fm listeners 216651）",
+     "rarity": "rare"
+    }
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -782,13 +863,22 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-12 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 3,
+    "classic": 4,
     "obscurity": 2,
     "accessibility": 2,
     "listeners": 153818,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-12T12:43:03Z",
-    "note": "機器基線 3/2/2（廣度線冷門軸照 Last.fm listeners 153818）"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Lali Puna 代表作；Morr Music；indietronica",
+    "previous": {
+     "classic": 3,
+     "obscurity": 2,
+     "accessibility": 2,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-12T12:43:03Z",
+     "note": "機器基線 3/2/2（廣度線冷門軸照 Last.fm listeners 153818）",
+     "rarity": "rare"
+    }
    },
    "rarity": "rare",
    "apexAssessment": {
@@ -856,15 +946,24 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-12 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 2,
+    "classic": 3,
     "obscurity": 2,
     "accessibility": 2,
     "listeners": 226981,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-12T12:43:03Z",
-    "note": "機器基線 2/2/2（廣度線冷門軸照 Last.fm listeners 226981）"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：dZihan & Kamien 首張，評價中上；Couch；爵士 trip hop",
+    "previous": {
+     "classic": 2,
+     "obscurity": 2,
+     "accessibility": 2,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-12T12:43:03Z",
+     "note": "機器基線 2/2/2（廣度線冷門軸照 Last.fm listeners 226981）",
+     "rarity": "rare"
+    }
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -929,13 +1028,22 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-12 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 3,
+    "classic": 4,
     "obscurity": 2,
     "accessibility": 2,
     "listeners": 164404,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-12T12:43:03Z",
-    "note": "機器基線 3/2/2（廣度線冷門軸照 Last.fm listeners 164404）"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Waldeck 代表作；Dope Noir；維也納 trip hop 人聲",
+    "previous": {
+     "classic": 3,
+     "obscurity": 2,
+     "accessibility": 2,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-12T12:43:03Z",
+     "note": "機器基線 3/2/2（廣度線冷門軸照 Last.fm listeners 164404）",
+     "rarity": "rare"
+    }
    },
    "rarity": "rare",
    "apexAssessment": {
@@ -1002,14 +1110,23 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 3,
+    "obscurity": 2,
     "accessibility": 2,
     "listeners": 69566,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-12T12:43:03Z",
-    "note": "機器基線 3/3/2（廣度線冷門軸照 Last.fm listeners 69566）"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Beady Belle 首張，Jazzland/Universal 流通；人聲 nu-jazz 易聽",
+    "previous": {
+     "classic": 3,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-12T12:43:03Z",
+     "note": "機器基線 3/3/2（廣度線冷門軸照 Last.fm listeners 69566）",
+     "rarity": "rare"
+    }
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1076,15 +1193,24 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-12 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 3,
-    "obscurity": 3,
-    "accessibility": 2,
+    "classic": 4,
+    "obscurity": 2,
+    "accessibility": 3,
     "listeners": 35046,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-12T12:43:03Z",
-    "note": "機器基線 3/3/2（廣度線冷門軸照 Last.fm listeners 35046）"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Molvær 僅次 Khmer 的代表作；ECM；暗色電子爵士需投入",
+    "previous": {
+     "classic": 3,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-12T12:43:03Z",
+     "note": "機器基線 3/3/2（廣度線冷門軸照 Last.fm listeners 35046）",
+     "rarity": "rare"
+    }
    },
-   "rarity": "rare",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1152,12 +1278,21 @@
    },
    "ratings": {
     "classic": 4,
-    "obscurity": 5,
-    "accessibility": 2,
+    "obscurity": 3,
+    "accessibility": 3,
     "listeners": 1303,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-12T12:43:03Z",
-    "note": "機器基線 4/5/2（廣度線冷門軸照 Last.fm listeners 1303）"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：New Conception of Jazz 系列要作；Jazzland/EmArcy 流通，聽眾1.3千下限3；長篇即興電子爵士",
+    "previous": {
+     "classic": 4,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-12T12:43:03Z",
+     "note": "機器基線 4/5/2（廣度線冷門軸照 Last.fm listeners 1303）",
+     "rarity": "uncommon"
+    }
    },
    "rarity": "uncommon",
    "apexAssessment": {
@@ -1221,15 +1356,24 @@
     "visuallyVerified": true
    },
    "ratings": {
-    "classic": 3,
+    "classic": 4,
     "obscurity": 2,
-    "accessibility": 2,
+    "accessibility": 1,
     "listeners": 303273,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-12T12:43:03Z",
-    "note": "機器基線 3/2/2（廣度線冷門軸照 Last.fm listeners 303273）"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Koop 最終作、與 Waltz for Koop 並列代表；!K7/Atlantic；搖擺人聲",
+    "previous": {
+     "classic": 3,
+     "obscurity": 2,
+     "accessibility": 2,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-12T12:43:03Z",
+     "note": "機器基線 3/2/2（廣度線冷門軸照 Last.fm listeners 303273）",
+     "rarity": "rare"
+    }
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1294,13 +1438,22 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-12 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 3,
+    "classic": 4,
     "obscurity": 2,
     "accessibility": 2,
     "listeners": 195019,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-12T12:43:03Z",
-    "note": "機器基線 3/2/2（廣度線冷門軸照 Last.fm listeners 195019）"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Erlend Øye 個人代表作；Source/Astralwerks；電子流行",
+    "previous": {
+     "classic": 3,
+     "obscurity": 2,
+     "accessibility": 2,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-12T12:43:03Z",
+     "note": "機器基線 3/2/2（廣度線冷門軸照 Last.fm listeners 195019）",
+     "rarity": "rare"
+    }
    },
    "rarity": "rare",
    "apexAssessment": {
@@ -1368,15 +1521,24 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-12 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 3,
+    "classic": 4,
     "obscurity": 2,
-    "accessibility": 2,
+    "accessibility": 1,
     "listeners": 453604,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-12T12:43:03Z",
-    "note": "機器基線 3/2/2（廣度線冷門軸照 Last.fm listeners 453604）"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Flunk 最受歡迎之作，聽眾45萬；柔和人聲電子流行",
+    "previous": {
+     "classic": 3,
+     "obscurity": 2,
+     "accessibility": 2,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-12T12:43:03Z",
+     "note": "機器基線 3/2/2（廣度線冷門軸照 Last.fm listeners 453604）",
+     "rarity": "rare"
+    }
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1442,13 +1604,22 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-12 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 3,
+    "classic": 4,
     "obscurity": 3,
     "accessibility": 2,
     "listeners": 71447,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-12T12:43:03Z",
-    "note": "機器基線 3/3/2（廣度線冷門軸照 Last.fm listeners 71447）"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Hocus Pocus 代表作；法國獨立廠；爵士嘻哈",
+    "previous": {
+     "classic": 3,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-12T12:43:03Z",
+     "note": "機器基線 3/3/2（廣度線冷門軸照 Last.fm listeners 71447）",
+     "rarity": "rare"
+    }
    },
    "rarity": "rare",
    "apexAssessment": {
@@ -1525,7 +1696,7 @@
     "checkedAt": "2026-10-12T12:43:03Z",
     "note": "機器基線 3/2/2（廣度線冷門軸照 Last.fm listeners 179752）"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1593,13 +1764,22 @@
    "ratings": {
     "classic": 3,
     "obscurity": 2,
-    "accessibility": 2,
+    "accessibility": 1,
     "listeners": 205500,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-12T12:43:03Z",
-    "note": "機器基線 3/2/2（廣度線冷門軸照 Last.fm listeners 205500）"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Nouvelle Vague 第二張，首張才是代表；bossa 翻唱柔和",
+    "previous": {
+     "classic": 3,
+     "obscurity": 2,
+     "accessibility": 2,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-12T12:43:03Z",
+     "note": "機器基線 3/2/2（廣度線冷門軸照 Last.fm listeners 205500）",
+     "rarity": "rare"
+    }
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1663,13 +1843,22 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-12 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 3,
-    "obscurity": 3,
+    "classic": 4,
+    "obscurity": 2,
     "accessibility": 2,
     "listeners": 95270,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-12T12:43:03Z",
-    "note": "機器基線 3/3/2（廣度線冷門軸照 Last.fm listeners 95270）"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Llorca 首張，法國叫好叫座；F Communications 國際流通；nu-jazz house",
+    "previous": {
+     "classic": 3,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-12T12:43:03Z",
+     "note": "機器基線 3/3/2（廣度線冷門軸照 Last.fm listeners 95270）",
+     "rarity": "rare"
+    }
    },
    "rarity": "rare",
    "apexAssessment": {
@@ -1744,7 +1933,7 @@
     "checkedAt": "2026-10-12T12:43:03Z",
     "note": "機器基線 3/2/2（廣度線冷門軸照 Last.fm listeners 246018）"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1819,7 +2008,7 @@
     "checkedAt": "2026-10-12T12:43:03Z",
     "note": "機器基線 3/2/2（廣度線冷門軸照 Last.fm listeners 291067）"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1880,13 +2069,22 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-12 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 3,
+    "classic": 4,
     "obscurity": 3,
     "accessibility": 2,
     "listeners": 50273,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-12T12:43:03Z",
-    "note": "機器基線 3/3/2（廣度線冷門軸照 Last.fm listeners 50273）"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Nicola Conte 代表作、Schema 招牌；義大利 nu-jazz",
+    "previous": {
+     "classic": 3,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-12T12:43:03Z",
+     "note": "機器基線 3/3/2（廣度線冷門軸照 Last.fm listeners 50273）",
+     "rarity": "rare"
+    }
    },
    "rarity": "rare",
    "apexAssessment": {
@@ -1955,13 +2153,22 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-12 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 3,
+    "classic": 4,
     "obscurity": 2,
     "accessibility": 2,
     "listeners": 182855,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-12T12:43:03Z",
-    "note": "機器基線 3/2/2（廣度線冷門軸照 Last.fm listeners 182855）"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Gabin 首張代表作（Doo Uap）；Virgin/Astralwerks；lounge 爵士",
+    "previous": {
+     "classic": 3,
+     "obscurity": 2,
+     "accessibility": 2,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-12T12:43:03Z",
+     "note": "機器基線 3/2/2（廣度線冷門軸照 Last.fm listeners 182855）",
+     "rarity": "rare"
+    }
    },
    "rarity": "rare",
    "apexAssessment": {
@@ -2033,7 +2240,7 @@
     "checkedAt": "2026-10-12T12:43:03Z",
     "note": "機器基線 3/4/2（廣度線冷門軸照 Last.fm listeners 4937）"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2094,15 +2301,24 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-12 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 4,
-    "accessibility": 4,
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 2,
     "listeners": 15336,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-12T12:43:03Z",
-    "note": "機器基線 2/4/4（廣度線冷門軸照 Last.fm listeners 15336）"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Imam Baildi 首張、希臘老歌重混代表；EMI Greece 圈外少知；易聽，舊值4方向錯",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-12T12:43:03Z",
+     "note": "機器基線 2/4/4（廣度線冷門軸照 Last.fm listeners 15336）",
+     "rarity": "uncommon"
+    }
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2169,15 +2385,24 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-12 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 2,
+    "classic": 3,
     "obscurity": 2,
     "accessibility": 2,
     "listeners": 105184,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-12T12:43:03Z",
-    "note": "機器基線 2/2/2（廣度線冷門軸照 Last.fm listeners 105184）"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Dining Rooms 第三張，穩定；Schema；downtempo",
+    "previous": {
+     "classic": 2,
+     "obscurity": 2,
+     "accessibility": 2,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-12T12:43:03Z",
+     "note": "機器基線 2/2/2（廣度線冷門軸照 Last.fm listeners 105184）",
+     "rarity": "rare"
+    }
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2247,13 +2472,22 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-12 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 3,
-    "obscurity": 3,
+    "classic": 4,
+    "obscurity": 2,
     "accessibility": 2,
     "listeners": 73628,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-12T12:43:03Z",
-    "note": "機器基線 3/3/2（廣度線冷門軸照 Last.fm listeners 73628）"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Chambao 首張、flamenco chill 代表；Sony 西班牙主流；易聽",
+    "previous": {
+     "classic": 3,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-12T12:43:03Z",
+     "note": "機器基線 3/3/2（廣度線冷門軸照 Last.fm listeners 73628）",
+     "rarity": "rare"
+    }
    },
    "rarity": "rare",
    "apexAssessment": {
@@ -2321,15 +2555,24 @@
     "visuallyVerified": true
    },
    "ratings": {
-    "classic": 3,
-    "obscurity": 4,
-    "accessibility": 2,
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 1,
     "listeners": 17275,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-12T12:43:03Z",
-    "note": "機器基線 3/4/2（廣度線冷門軸照 Last.fm listeners 17275）"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Barrott 本名首作、Balearic 復興代表；自家小廠；田園輕電子",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-12T12:43:03Z",
+     "note": "機器基線 3/4/2（廣度線冷門軸照 Last.fm listeners 17275）",
+     "rarity": "rare"
+    }
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2404,7 +2647,7 @@
     "checkedAt": "2026-10-12T12:43:03Z",
     "note": "機器基線 3/3/2（廣度線冷門軸照 Last.fm listeners 58046）"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2468,13 +2711,22 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-12 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 2,
+    "classic": 4,
     "obscurity": 3,
     "accessibility": 2,
     "listeners": 57819,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-12T12:43:03Z",
-    "note": "機器基線 2/3/2（廣度線冷門軸照 Last.fm listeners 57819）"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Quiet Village 唯一專輯、balearic 取樣 cult 名盤；!K7；易聽",
+    "previous": {
+     "classic": 2,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-12T12:43:03Z",
+     "note": "機器基線 2/3/2（廣度線冷門軸照 Last.fm listeners 57819）",
+     "rarity": "rare"
+    }
    },
    "rarity": "rare",
    "apexAssessment": {
@@ -2543,14 +2795,23 @@
    },
    "ratings": {
     "classic": 4,
-    "obscurity": 5,
-    "accessibility": 4,
+    "obscurity": 4,
+    "accessibility": 2,
     "listeners": 1115,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-12T12:43:03Z",
-    "note": "機器基線 4/5/4（廣度線冷門軸照 Last.fm listeners 1115）"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Ultramarine 兩大代表作之一；Blanco y Negro 絕版、串流找不到，聽眾1.1千；田園 techno",
+    "previous": {
+     "classic": 4,
+     "obscurity": 5,
+     "accessibility": 4,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-12T12:43:03Z",
+     "note": "機器基線 4/5/4（廣度線冷門軸照 Last.fm listeners 1115）",
+     "rarity": "epic"
+    }
    },
-   "rarity": "epic",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2611,14 +2872,23 @@
    },
    "ratings": {
     "classic": 4,
-    "obscurity": 4,
+    "obscurity": 3,
     "accessibility": 2,
     "listeners": 8523,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-12T12:43:03Z",
-    "note": "機器基線 4/4/2（廣度線冷門軸照 Last.fm listeners 8523）"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Suba 代表遺作、巴西電子要作；Crammed 子廠，聽眾8.5千；易聽",
+    "previous": {
+     "classic": 4,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-12T12:43:03Z",
+     "note": "機器基線 4/4/2（廣度線冷門軸照 Last.fm listeners 8523）",
+     "rarity": "uncommon"
+    }
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2683,13 +2953,22 @@
     "visuallyVerified": true
    },
    "ratings": {
-    "classic": 3,
+    "classic": 4,
     "obscurity": 2,
     "accessibility": 2,
     "listeners": 170051,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-12T12:43:03Z",
-    "note": "機器基線 3/2/2（廣度線冷門軸照 Last.fm listeners 170051）"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Aubele 首張代表作，ESL 名盤；探戈 dub 吉他",
+    "previous": {
+     "classic": 3,
+     "obscurity": 2,
+     "accessibility": 2,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-12T12:43:03Z",
+     "note": "機器基線 3/2/2（廣度線冷門軸照 Last.fm listeners 170051）",
+     "rarity": "rare"
+    }
    },
    "rarity": "rare",
    "apexAssessment": {
@@ -2758,13 +3037,22 @@
    "ratings": {
     "classic": 3,
     "obscurity": 2,
-    "accessibility": 2,
+    "accessibility": 1,
     "listeners": 109042,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-12T12:43:03Z",
-    "note": "機器基線 3/2/2（廣度線冷門軸照 Last.fm listeners 109042）"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Aubele 第二張，評價穩定；ESL；人聲拉丁歌曲柔和",
+    "previous": {
+     "classic": 3,
+     "obscurity": 2,
+     "accessibility": 2,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-12T12:43:03Z",
+     "note": "機器基線 3/2/2（廣度線冷門軸照 Last.fm listeners 109042）",
+     "rarity": "rare"
+    }
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2830,14 +3118,23 @@
    },
    "ratings": {
     "classic": 4,
-    "obscurity": 4,
+    "obscurity": 3,
     "accessibility": 2,
     "listeners": 8968,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-12T12:43:03Z",
-    "note": "機器基線 4/4/2（廣度線冷門軸照 Last.fm listeners 8968）"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：electrotango 開山之作，Santaolalla 計畫首張；Universal 發行；取樣探戈電子",
+    "previous": {
+     "classic": 4,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-12T12:43:03Z",
+     "note": "機器基線 4/4/2（廣度線冷門軸照 Last.fm listeners 8968）",
+     "rarity": "uncommon"
+    }
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2899,13 +3196,22 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-12 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 3,
+    "classic": 4,
     "obscurity": 3,
     "accessibility": 2,
     "listeners": 31923,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-12T12:43:03Z",
-    "note": "機器基線 3/3/2（廣度線冷門軸照 Last.fm listeners 31923）"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Zuco 103 首張代表作；Ziriguiboom；巴西電子",
+    "previous": {
+     "classic": 3,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-12T12:43:03Z",
+     "note": "機器基線 3/3/2（廣度線冷門軸照 Last.fm listeners 31923）",
+     "rarity": "rare"
+    }
    },
    "rarity": "rare",
    "apexAssessment": {
@@ -2973,13 +3279,22 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-12 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 3,
-    "obscurity": 4,
+    "classic": 4,
+    "obscurity": 3,
     "accessibility": 2,
     "listeners": 13670,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-12T12:43:03Z",
-    "note": "機器基線 3/4/2（廣度線冷門軸照 Last.fm listeners 13670）"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Bossacucanova 代表作、與 Menescal 合作；Crammed 子廠；電子 bossa",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-12T12:43:03Z",
+     "note": "機器基線 3/4/2（廣度線冷門軸照 Last.fm listeners 13670）",
+     "rarity": "rare"
+    }
    },
    "rarity": "rare",
    "apexAssessment": {
@@ -3053,7 +3368,7 @@
     "checkedAt": "2026-10-12T12:43:03Z",
     "note": "機器基線 3/3/2（廣度線冷門軸照 Last.fm listeners 54103）"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -3113,15 +3428,24 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-12 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 3,
+    "classic": 4,
     "obscurity": 2,
-    "accessibility": 4,
+    "accessibility": 2,
     "listeners": 150610,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-12T12:43:03Z",
-    "note": "機器基線 3/2/4（廣度線冷門軸照 Last.fm listeners 150610）"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Skalpel 代表作之一；Ninja Tune；波蘭爵士取樣 breaks，舊值4過高",
+    "previous": {
+     "classic": 3,
+     "obscurity": 2,
+     "accessibility": 4,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-12T12:43:03Z",
+     "note": "機器基線 3/2/4（廣度線冷門軸照 Last.fm listeners 150610）",
+     "rarity": "uncommon"
+    }
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -3186,13 +3510,22 @@
     "note": "CAA release-group front（HEAD 200）；主線 2026-10-12 縮圖表目視與盤名相符。"
    },
    "ratings": {
-    "classic": 3,
+    "classic": 4,
     "obscurity": 3,
     "accessibility": 2,
     "listeners": 53114,
-    "source": "worker /album-rating（obscurity:lastfm）",
-    "checkedAt": "2026-10-12T12:43:03Z",
-    "note": "機器基線 3/3/2（廣度線冷門軸照 Last.fm listeners 53114）"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Da Lata 首張代表作（Ponteio）；Palm Pictures；巴西 nu-jazz",
+    "previous": {
+     "classic": 3,
+     "obscurity": 3,
+     "accessibility": 2,
+     "source": "worker /album-rating（obscurity:lastfm）",
+     "checkedAt": "2026-10-12T12:43:03Z",
+     "note": "機器基線 3/3/2（廣度線冷門軸照 Last.fm listeners 53114）",
+     "rarity": "rare"
+    }
    },
    "rarity": "rare",
    "apexAssessment": {

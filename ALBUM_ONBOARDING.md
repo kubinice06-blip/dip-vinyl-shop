@@ -173,9 +173,90 @@
 - **pearl 門檻不變**：仍須 `obscurity=5` **且** listeners <300。錨點制可以把一張已有串流再發的
   私壓盤評成 4、把一張沒再發的評成 5，但 pearl 判的是「近乎無人聽過」這個絕對事實，
   再發進串流的碟不會是 pearl——這是設計，不是漏洞。
+  （2026-11-04 店主修正：有串流再發不自動否決流亡，見 §3 流亡段的楊祖珺案。）
 - 稀有度公式不變。
 - **已在池中的深掘型卡**（上述六張與同類）可依此重評；工具 `batch-progress/recalibrate-obscurity.mjs`
   會從本機的 KV 快取列出候選與兩套分級的對照，**不自動寫回**，逐張人工定案。
+
+#### 0.8.1 人工評分批的三軸錨點（2026-11-01 店主指正後補）
+
+**店主（2026-11-01）**：「Yancy Körössy 那張怎麼可能都只有三顆星？你的判斷標準是不是已經失準了」
+「後來補上的頻率缺口全部都要檢查」。
+
+**成因**（三軸重評線 `batch-progress/rerate-20261101/` 查證）：情緒薄格 2,345 張經典度 3 佔 86%、
+Spotify 補卡 81%、鐵幕爵士 88%（全池 42%）；情緒薄格冷門度 5 佔 43%。
+1. 本節原本只替**冷門度**定錨點，**經典度沒有錨點**——工作階段遇到非英語圈或深掘盤就整批填 3
+   （「該國爵士史代表盤，無國際正典地位 → 3」）。
+2. **冷門度直接沿用 worker `/album-rating` 的 Last.fm 絕對分級**，沒有照本節校正（2,025 張是 worker 值）。
+3. **硬蕊度方向搞反**（eb1）：當成「易聽度」打，自由爵士給 2、人聲與排簫給 4。
+
+已重評 2,957 張並套用（經典度分布 1/2/3/4/5＝1/77/1608/1204/67），標準全文在
+`batch-progress/rerate-20261101/RUBRIC.md`。**往後所有人工評分批（`manual:*-rubric`、主線人工修正）一律照下面三條**：
+
+**經典度 classic＝這張錄音在它所屬場景（國家、語言圈、類型、廠牌）裡的地位，不是全球正典。**
+非英語圈的里程碑可以拿 5，條件是有可查的依據。
+
+| 分 | 錨點 | 依據例 |
+|---|---|---|
+| **5** | 該場景公認的里程碑／必聽盤：場景史一定會講到；有權威榜單、正典書目，或大廠／考古廠的正式再版系列 | 1001 Albums、Penguin Guide 皇冠或四星、AllMusic 5 星或 AMG Pick、RYM 該類型前段；該國權威榜（如匈牙利 Szabados《Az esküvő》）；Jazzman／Numero／LITA／MPS 再版系列 |
+| **4** | 藝人公認的代表作，或場景裡的重要作品：評論共識是強作、常被推薦；重要獎項得獎或入圍 | 藝人生涯最受肯定的一兩張；場景回顧文章會列出的盤 |
+| **3** | 有明確地位或特色，但不是代表作，或場景內評價中等 | 藝人中期佳作；場景二線的穩定作品 |
+| **2** | 合格、非首選；評價平淡或混雜 | — |
+| **1** | 評價差，或只有歷史意義 | — |
+
+- **藝人自己的代表作至少 4**，除非評論共識明確認為那張平庸。
+- **不得以「沒有國際正典地位」為由給 3。** 因「是某藝人／某場景代表作」而入選的批，分布應偏 3–4、少數 5，
+  整批擠在 3 就是失準，要回頭查。
+- 5 分要寫得出依據；寫不出就給 4（R2 主線把 Lil Peep《HELLBOY》、Bohren《Sunset Mission》5→4 即此理）。
+
+**冷門度 obscurity：worker 值一律依本節（§0.8）錨點校正，不得直接沿用。**
+Last.fm listeners 只當報警。補充三條口徑（重評線定案）：
+- 國營唱片廠（Electrecord、Hungaroton、Supraphon、Muza、Melodiya、Amiga 等）在本國是主流通路，通常給 3；
+  MPS／ECM／Blue Note 這類國際廠正規發行通常 2–3。
+- 當代場景主力廠（Cryo Chamber、Cyclic Law、Miasmah、Touch、Room40、Kranky、Mego 等）首發即上串流＝3；
+  極小廠／私壓、首刷限量但已上串流＝4；有正式串流再發的考古盤最多 4。
+
+**冷門度下限（硬規則，2026-11-02 店主指正「但 Identification 很冷門吧？」後補）**：上面的「看原盤通路」
+會反過頭給低（國營廠盤當成本國主流＝3、MPS 當成正規發行＝2–3）。冷門度的尺度是**我們的玩家撞見這份錄音的機率**，
+不是它在原產國的流通量。錨點判完後，再用 Last.fm listeners 機械檢查一次，**只往上抬、不往下壓**：
+
+| 條件 | 冷門度 |
+|---|---|
+| listeners < 1,000，且 manifest `preview.status`＝`ready`（有串流） | **至少 4** |
+| listeners < 1,000，且 `preview.status` 不是 `ready`（串流上找不到） | **5** |
+| listeners 1,000–4,999 | 至少 3 |
+| listeners 缺值 | 照錨點判，不套下限 |
+
+- **但書（數位版）**：試聽不是 `ready`，但確知該盤有 Spotify／Bandcamp 等正式數位版，在 `why`／`note` 寫明，給 4 不給 5。
+- **例外（聽眾數疑似錯配）**：知名盤聽眾數極低，只因 Last.fm 上的盤名寫法不同、掛名拆散、同系列知名卷次
+  （例：Horace Silver《Doin' the Thing》、Freddie Hubbard《Night of the Cookers》Vol.1／2、
+  Ornette Coleman《Golden Circle》Vol.2、蕭亞軒《蕭亞軒》、陳奕迅《？》）、listeners＝0 是查詢漏抓（Azra、Riblja Čorba）
+  ——**不套下限，照錨點判**（知名國際盤通常 3、該語言圈主流 2）。判準：已依錨點判為 ≤2 的正規／主流盤，
+  下限卻要一口氣抬到 4–5，先當成錯配查。例外與理由寫進 `note`。
+- 套用實例與名單：`batch-progress/rerate-20261102/`（`RUBRIC-ADDENDUM.md`、`apply.mjs` 的 `MISMATCH`、`REPORT.md`）。
+  《Identification》L=113、試聽 ready → 冷門度 3→4。
+
+**硬蕊度 accessibility＝入耳難度，5＝晦澀前衛，1＝旋律親切。不是好聽度。**
+
+| 分 | 錨點 |
+|---|---|
+| **1** | 旋律直白、流行歌結構、柔和（Sade、Norah Jones） |
+| **2** | 主流易聽，有一點門檻 |
+| **3** | 需要投入：長篇、器樂即興、單一音色長時間 |
+| **4** | 不協和、自由即興、噪音成分、無調（Albert Ayler） |
+| **5** | 前衛、噪音、概念、極端（Cecil Taylor） |
+
+- dark ambient／drone 通常 3–4；dub、soul、R&B 慢歌通常 1–2；自由爵士 4–5；主流 bop 2–3。
+- **音量與躁度下限（2026-11-04 店主定案）**：硬蕊度＝入耳難度，**音量、失真、速度、嘶吼都算門檻**，不只看旋律。
+  起因：blink-182 原本 1，店主「聽了很躁、很吵，應該要更高」，改 3。下限只在**整張大部分如此**時套；
+  整張偏不插電、抒情或柔和的照舊評。只往上調到下限，已高於下限的不動。
+  - 失真吉他為主的龐克、流行龐克、車庫搖滾、傳統／另類金屬、音牆型 shoegaze、噪音搖滾 → **至少 3**（blink-182 是 3 的錨點）。
+  - hardcore、thrash、crust／d-beat、death、black、grind、powerviolence、sludge 這類極速／嘶吼／極重 → **至少 4**。
+  - noise、harsh noise、極端反結構 → 5（照舊）。
+  - 全池套用見 `batch-progress/rerate-20261104-loud/`。
+
+**交件前自檢**：整批三軸分布印出來看——經典度 3 超過七成、冷門度 5 超過三成（非私壓專題）、
+自由爵士／噪音的硬蕊度 ≤2 或 soul／dub ≥4，任一出現就是失準，回頭重評再上架。
 
 ### 1. 身分確認與去重先行
 
@@ -204,15 +285,21 @@
 - 候選很多時先跑 `/album-rating` 排序，只替短名單解封面與試聽。
 - 三軸一律使用同一套 `/album-rating` 基準；人工修正必須在 manifest 留下理由。
 - `accessibility` 是硬蕊／入耳難度，5 最晦澀，不是好聽度。
-- 稀有度公式：`classic + accessibility + (obscurity >= 5 ? 1 : 0)`；10 以上 legendary、8 以上 epic、6 以上 uncommon、4 以上 rare，其餘 common。
+- 稀有度公式：`classic + accessibility + (obscurity >= 5 ? 1 : 0)`；9 以上 legendary、8 epic、7 uncommon、6 rare、5 以下 common（2026-11-02 店主定案方案 A：原門檻 10/8/6/4 讓傳奇比頂點卡還少、低分卡太少，改成金字塔分布）。
 
 ### 3. 頂點卡資格評估
 
 每張都要判斷，但預設是一般卡；**三軸 5 分或 legendary 都不等於頂點卡**。
 
-- `hall` 殿堂：`classic=5` 只是最低門檻，還需跨來源的長期樂評共識，足以列入該領域史上核心作品。
-- `pearl` 流亡：必須 `obscurity=5`，且 Last.fm 累積 listeners 有效數值並低於目前門檻 300；「查無資料」不能當成 0。
-- `heresy` 異端：必須 `accessibility=5`，且有可信資料支持其極端前衛、噪音或結構性難入耳，不以個人喜好判定。
+**頂點＝該軸 7 星**（2026-11-02 店主：「不是五分就可以進 是要七分」）。頂點卡在前台和對戰裡那一軸是 7 星（王牌單軸 7），判定時要問「這一軸配不配得上 7 星」，也就是比 5 星錨點再高兩級。拿不準就判一般卡。各 tier 的 7 星錨點見 `batch-progress/audit-20261102/DISPATCH.md`。
+
+- `hall` 殿堂：`classic=5` 只是最低門檻。要到 7 星：跨類型的史上正典，幾乎所有綜合歷代榜都收，非該類型樂迷也知道（OK Computer、Kind of Blue 級）；只是「該國或該類型第一名盤」通常是 5。
+- `pearl` 流亡：必須 `obscurity=5`，且 Last.fm 累積 listeners 有效數值並低於目前門檻 300；「查無資料」不能當成 0。要到 7 星：壓量有據極小、從未正式再發或極小量重發，在收藏圈以聖杯著稱。
+  - **有串流再發不自動否決流亡**（2026-11-04 店主，楊祖珺案）：listeners 遠低於門檻、且原版流通受限（禁售、回收、絕版多年）者可收。
+- `heresy` 異端：必須 `accessibility=5`，且有可信資料支持其極端前衛、噪音或結構性難入耳，不以個人喜好判定。要到 7 星：被公認為史上最難入耳的錄音之一（harsh noise wall、Metal Machine Music、Merzbow 級）；一般的前衛自由爵士或噪音搖滾是 5。
+  - **2026-11-04 店主放寬（「稍微放寬」）**：要有可信來源**描述出具體、持續整張的高強度聽感**就收，例如全程無調、沒有固定節拍、集體即興密度極高、回授／失真音牆、尖叫式吹奏、超長篇不間斷、極端音量；**不再要求樂評下「極端／刺耳」的結論，描述到位即可**。證據仍要 ≥2 個不同網域、至少 1 個可信樂評／專書／有引註維基／廠牌說明（Discogs 風格標籤、RYM、純零售文案不算描述）。
+  - 仍不收：有清楚結構、聽得下去的前衛作品；spiritual／modal 爵士；一般碾核、技術死亡金屬；只有局部段落激烈的盤。
+  - 同一級一位藝人只收一張（跨級可以）；同一藝人在卡池有不同寫法的（例：`Les Rallizes Dénudés` 與 `裸のラリーズ`）算同一位。
 - 三種 tier 互斥。符合候選資格時，manifest 至少放兩個證據網址；實際寫入 `apex_pool.json` 前仍需本批任務明確採用頂點卡，否則可先作一般卡上架。
 
 ### 4. 封面
@@ -251,6 +338,7 @@
 
 ### 5. 固定簡介
 
+- **頂點卡（hall／heresy／pearl）改照 `desc-tools/prompts/apex-desc-base.md`（2026-11-04 店主定案）**：第一句講地位或「這是什麼」、具體寫怎麼做出來與聽起來怎樣、平實不修辭、評價詞要有具名出處（出處只記在研究稿，不寫進簡介）、200–280 字；研究層必須找樂評、訪談或專文。下面各條與該檔衝突時，頂點卡以該檔為準。
 - 每張先查資料再寫，至少兩個可追溯網址；優先廠牌／藝人官網、liner notes、MusicBrainz／Discogs，並以可靠樂評或資料庫交叉確認。
 - 繁體中文、80–280 字（2026-07-24 店主核定，經十張試寫實測）；交代藝人／背景、聲音做法與真正值得注意的曲目、合作者或地位。**280 是上限不是目標**：名盤查證充足自然寫得豐富，資料稀薄的卡寧可簡短也不要寫未查證的字句。
 - **敘事重心依專輯性質選擇（2026-08-22 店主核定）**：不必每張都以故事／軼事為主軸。若這張專輯的重點是**音樂性本身**（聲響設計、編曲、演奏、製作手法、曲式），就以音樂描述作為簡介主體，不必硬找背景故事湊敘事；反之故事性強的專輯照舊以脈絡為主。兩種寫法的查證與來源要求相同。超過 280 字仍允許，但必須經人工審核確認每句都有實質資訊、無冗贅字詞，並在 manifest 的 `description.lengthReviewed` 標記 `true`；未標記者驗證器照上限擋下。
@@ -318,6 +406,13 @@
 ### 6. 固定試聽
 
 - 優先 Apple 可直接播放的預覽音檔；其次 YouTube Music 官方 Album playlist；再其次經人工核對的完整專輯影片。
+- **試聽一律播該盤最紅的那首（2026-11-05 店主：「試聽播出時都是播在該專輯最紅的歌」）**：不再取第一軌。
+  manifest 的 Apple ready 條目寫好（`storefront`＋`appleCollectionId`）後、`--write-preview` 之前，跑
+  `node scripts/popular-preview.mjs manifest <manifest.json>`，它會在同一 collectionId、同一商店內換成最紅那首，
+  並寫 `preview.trackName`／`preview.popularity`（來源）。熱度：Deezer 單曲 rank（專輯曲目＋藝人熱門榜，同曲取所有版本最高）
+  為主；Deezer 對不到的退回 Apple Music 專輯頁熱門星號；都沒有才保留原曲（原曲是 60 秒以下前奏時換第一首 ≥90 秒的正曲）。
+  demo／live／remix 等變體與 60 秒以下短曲只在別無選擇時才選。Apple 30 秒片段的起點由 Apple 決定，前台改不了。
+  全卡池重掃見 `batch-progress/preview-popular-20261105/`。
 - 必須同時核對藝人、專輯、版本，並實際確認網址 HTTP 2xx／3xx。
 - **版本核對必須包含 Apple 的 `collectionExplicitness`（2026-08-23 增列）**：同一張碟在 Apple
   常有**同名、同曲數、曲序也一致**的雙胞胎條目，一筆 `explicit`、一筆 `cleaned`（消音淨化版），
@@ -389,7 +484,8 @@ node scripts/verify-album-onboarding.mjs <manifest.json> --published
    主線逐位審 → alias → issues → `scripts/build-artist-intros.mjs`。
 4. 素材不足 thin 門檻的照該線規則 `skipped`，不硬寫。藝人介紹線不改卡池與專輯簡介。
 
-7. 接著執行 `node scripts/build-genre-tree.mjs --write` 更新曲風樹與卡片歸屬
+7. 接著執行 `node scripts/build-genre-tree.mjs --write` 更新曲風樹與卡片歸屬；搖滾批次先跑 `node scripts/build-asia-country-map.mjs`，
+   把「待裁定」的亞洲藝人國別手寫進 `rock-asia-country-map.json`（日亞搖滾第三層靠它），再 `--write`；樹寫完再跑 `node scripts/build-draw-covers.mjs --pull --write` 更新抽卡動畫的分類封面池（`draw-covers/`）
    （`genre-tree.json`／`card-subgenres.json`，類型挑片 v2 的第二／三層靠它）。
    子類型由 Last.fm 標籤推導、不必人工填欄位；新卡若標籤還沒進 KV，
    會先靠「同藝人傳播」落位，之後重跑即可補上。

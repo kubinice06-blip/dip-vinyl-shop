@@ -1,0 +1,31 @@
+{
+ "batch": "add-20261022-md8",
+ "cards": 41,
+ "written": {
+  "cardCatalog": 41,
+  "kvKeys": 41,
+  "seedRows": 41,
+  "previewReady": 23,
+  "previewUnavailable": 18
+ },
+ "review": {
+  "by": "cloud-main",
+  "cards": 41,
+  "changed": []
+ },
+ "qa": {
+  "research": "pass",
+  "hooks": "pass",
+  "out": "pass",
+  "prepareGate": "0 error",
+  "publishedGate": "0 error"
+ },
+ "pendingLocal": {
+  "kv": "無",
+  "listeners": [],
+  "apexEvidence": [],
+  "genreTree": "已重建",
+  "albumOverrides": "無"
+ },
+ "note": "另寫過 Thomas Köner《Kaamos》《Aubrite》card_catalog 2 筆與 KV 2 鍵，發現 md6 也收後讓出，已用 md6 manifest 重推回 md6 版本（回讀一致）。"
+}

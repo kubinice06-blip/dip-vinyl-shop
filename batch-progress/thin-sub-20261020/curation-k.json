@@ -1,0 +1,519 @@
+{
+  "group": "k",
+  "factions": [
+    {
+      "id": "rock50s",
+      "zh": "50 年代搖滾原盤",
+      "count": 11,
+      "why": "Chuck Berry／Little Richard／Bo Diddley 已各 ≥2 張，避開；補池中 0–1 張的 rockabilly 與 rock 'n' roll 核心藝人當年原版 LP"
+    },
+    {
+      "id": "doowop",
+      "zh": "Doo-wop／50s R&B 原盤",
+      "count": 10,
+      "why": "Ruth Brown 已 2 張避開；補 Platters／Coasters 的首張原盤與池中 0 張的 Drifters、Clovers、Cadillacs、Five Satins、Del-Vikings、Penguins、Clyde McPhatter"
+    }
+  ],
+  "albums": [
+    {
+      "artist": "Buddy Holly",
+      "album": "Buddy Holly",
+      "year": 1958,
+      "label": "Coral",
+      "country": "us",
+      "faction": "rock50s",
+      "genres": [
+        "rock"
+      ],
+      "why": "Holly 個人名義首張 LP（Coral 1958），收〈Peggy Sue〉〈Everyday〉〈Rave On〉，奠定吉他-貝斯-鼓搖滾編制與創作型搖滾歌手的原型；當年原版 LP。",
+      "evidence": [
+        "https://musicbrainz.org/release-group/01522dff-0f0a-4540-a4d3-b9d22b0c12e5",
+        "https://www.discogs.com/master/252597-Buddy-Holly-Buddy-Holly",
+        "https://en.wikipedia.org/wiki/Buddy_Holly_(album)"
+      ],
+      "mbRgMbid": "01522dff-0f0a-4540-a4d3-b9d22b0c12e5",
+      "mbAbsenceProof": null,
+      "manualEvidenceUrls": [],
+      "releaseException": "",
+      "queryAlias": "",
+      "uncertain": ""
+    },
+    {
+      "artist": "Jerry Lee Lewis",
+      "album": "Jerry Lee Lewis",
+      "year": 1958,
+      "label": "Sun",
+      "country": "us",
+      "faction": "rock50s",
+      "genres": [
+        "rock"
+      ],
+      "why": "Sun 唱片 1958 年首張 LP，Lewis 狂暴鋼琴搖滾的錄音室原盤，Sun 時期唯一當年發行的正規專輯。",
+      "evidence": [
+        "https://musicbrainz.org/release-group/460f9e2e-1124-3f70-8164-35e7440ab524",
+        "https://www.discogs.com/master/345952-Jerry-Lee-Lewis-Jerry-Lee-Lewis",
+        "https://en.wikipedia.org/wiki/Jerry_Lee_Lewis_(album)"
+      ],
+      "mbRgMbid": "460f9e2e-1124-3f70-8164-35e7440ab524",
+      "mbAbsenceProof": null,
+      "manualEvidenceUrls": [],
+      "releaseException": "",
+      "queryAlias": "",
+      "uncertain": ""
+    },
+    {
+      "artist": "Gene Vincent and His Blue Caps",
+      "album": "Bluejean Bop!",
+      "year": 1956,
+      "label": "Capitol",
+      "country": "us",
+      "faction": "rock50s",
+      "genres": [
+        "rock"
+      ],
+      "why": "Gene Vincent 首張 LP（Capitol 1956），Cliff Gallup 的吉他讓它成為 rockabilly 吉他教科書。",
+      "evidence": [
+        "https://musicbrainz.org/release-group/acaf3a11-874a-348a-810d-9c792caf383d",
+        "https://www.discogs.com/master/284879-Gene-Vincent-His-Blue-Caps-Bluejean-Bop",
+        "https://en.wikipedia.org/wiki/Bluejean_Bop!"
+      ],
+      "mbRgMbid": "acaf3a11-874a-348a-810d-9c792caf383d",
+      "mbAbsenceProof": null,
+      "manualEvidenceUrls": [],
+      "releaseException": "",
+      "queryAlias": "Gene Vincent",
+      "uncertain": "兩張 Gene Vincent 掛名照 MB 各自寫法（and His Blue Caps／and the Blue Caps），建卡時可統一。"
+    },
+    {
+      "artist": "Gene Vincent and the Blue Caps",
+      "album": "Gene Vincent and the Blue Caps",
+      "year": 1957,
+      "label": "Capitol",
+      "country": "us",
+      "faction": "rock50s",
+      "genres": [
+        "rock"
+      ],
+      "why": "Blue Caps 第二張 LP（1957），全樂團名義、更狂野的 rockabilly 錄音，與首作並列 Vincent 的兩張核心原盤。",
+      "evidence": [
+        "https://musicbrainz.org/release-group/d1fe3d87-8a35-3f8b-a5d2-363540028bb0",
+        "https://www.discogs.com/master/346923-Gene-Vincent-And-The-Blue-Caps-Gene-Vincent-And-The-Blue-Caps"
+      ],
+      "mbRgMbid": "d1fe3d87-8a35-3f8b-a5d2-363540028bb0",
+      "mbAbsenceProof": null,
+      "manualEvidenceUrls": [],
+      "releaseException": "",
+      "queryAlias": "Gene Vincent",
+      "uncertain": ""
+    },
+    {
+      "artist": "Bill Haley and His Comets",
+      "album": "Rock Around the Clock",
+      "year": 1955,
+      "label": "Decca",
+      "country": "us",
+      "faction": "rock50s",
+      "genres": [
+        "rock"
+      ],
+      "why": "Decca DL 8225（1955-12 發行），彙整〈Rock Around the Clock〉〈Shake, Rattle and Roll〉等單曲的當年原版 LP，搖滾樂第一張暢銷專輯之一（MB 列 Compilation，但屬當年原版 LP，照 Album 收）。",
+      "evidence": [
+        "https://musicbrainz.org/release-group/9bf3d02a-f5eb-4141-81ff-80969b6d147d",
+        "https://www.discogs.com/master/344006-Bill-Haley-And-His-Comets-Rock-Around-The-Clock",
+        "https://en.wikipedia.org/wiki/Rock_Around_the_Clock_(album)"
+      ],
+      "mbRgMbid": "9bf3d02a-f5eb-4141-81ff-80969b6d147d",
+      "mbAbsenceProof": null,
+      "manualEvidenceUrls": [],
+      "releaseException": "",
+      "queryAlias": "Bill Haley & His Comets",
+      "uncertain": "MB 首發 1955-12-19（DL 8225），部分資料記 1956；採 1955。"
+    },
+    {
+      "artist": "Fats Domino",
+      "album": "Rock and Rollin' with Fats Domino",
+      "year": 1956,
+      "label": "Imperial",
+      "country": "us",
+      "faction": "rock50s",
+      "genres": [
+        "rock"
+      ],
+      "why": "Fats Domino 首張 12 吋 LP（Imperial 1956），收〈Ain't That a Shame〉，紐奧良 R&B 通往搖滾的關鍵原盤。",
+      "evidence": [
+        "https://musicbrainz.org/release-group/ddf22e64-127d-32b2-86bb-65bbc9bb34f7",
+        "https://www.discogs.com/master/288581-Fats-Domino-Rock-And-Rollin-With-Fats-Domino",
+        "https://en.wikipedia.org/wiki/Rock_and_Rollin'_with_Fats_Domino"
+      ],
+      "mbRgMbid": "ddf22e64-127d-32b2-86bb-65bbc9bb34f7",
+      "mbAbsenceProof": null,
+      "manualEvidenceUrls": [],
+      "releaseException": "",
+      "queryAlias": "",
+      "uncertain": ""
+    },
+    {
+      "artist": "Fats Domino",
+      "album": "This Is Fats Domino!",
+      "year": 1956,
+      "label": "Imperial",
+      "country": "us",
+      "faction": "rock50s",
+      "genres": [
+        "rock"
+      ],
+      "why": "1956 年第二張 LP，收〈Blueberry Hill〉〈Blue Monday〉，Fats 商業與音樂高峰的當年原盤。",
+      "evidence": [
+        "https://musicbrainz.org/release-group/a3d5e53b-9b31-3014-a9c7-b6bfacc7cad3",
+        "https://www.discogs.com/master/187471-Fats-Domino-This-Is-Fats-Domino",
+        "https://en.wikipedia.org/wiki/This_Is_Fats_Domino!"
+      ],
+      "mbRgMbid": "a3d5e53b-9b31-3014-a9c7-b6bfacc7cad3",
+      "mbAbsenceProof": null,
+      "manualEvidenceUrls": [],
+      "releaseException": "",
+      "queryAlias": "",
+      "uncertain": ""
+    },
+    {
+      "artist": "Wanda Jackson",
+      "album": "Rockin' with Wanda",
+      "year": 1960,
+      "label": "Capitol",
+      "country": "us",
+      "faction": "rock50s",
+      "genres": [
+        "rock"
+      ],
+      "why": "Capitol 1960 年 LP，彙整 1956–59 rockabilly 單曲（〈Fujiyama Mama〉〈Let's Have a Party〉），「rockabilly 女王」的代表原盤（當年原版 LP，MB 列 Compilation）。",
+      "evidence": [
+        "https://musicbrainz.org/release-group/7154e00f-59a7-3ab8-b06b-631e6c9409f2",
+        "https://www.discogs.com/master/298372-Wanda-Jackson-Rockin-With-Wanda",
+        "https://en.wikipedia.org/wiki/Rockin'_with_Wanda"
+      ],
+      "mbRgMbid": "7154e00f-59a7-3ab8-b06b-631e6c9409f2",
+      "mbAbsenceProof": null,
+      "manualEvidenceUrls": [],
+      "releaseException": "",
+      "queryAlias": "Rockin' with Wanda!",
+      "uncertain": ""
+    },
+    {
+      "artist": "The Everly Brothers",
+      "album": "The Everly Brothers",
+      "year": 1958,
+      "label": "Cadence",
+      "country": "us",
+      "faction": "rock50s",
+      "genres": [
+        "rock"
+      ],
+      "why": "兄弟檔首張 LP（Cadence 1958），收〈Bye Bye Love〉〈Wake Up Little Susie〉，其和聲直接影響 Beatles 與 Simon & Garfunkel。",
+      "evidence": [
+        "https://musicbrainz.org/release-group/bcf04fe7-b999-3105-9234-40804ebcf594",
+        "https://www.discogs.com/master/363648-The-Everly-Brothers-The-Everly-Brothers",
+        "https://en.wikipedia.org/wiki/The_Everly_Brothers_(album)"
+      ],
+      "mbRgMbid": "bcf04fe7-b999-3105-9234-40804ebcf594",
+      "mbAbsenceProof": null,
+      "manualEvidenceUrls": [],
+      "releaseException": "",
+      "queryAlias": "",
+      "uncertain": ""
+    },
+    {
+      "artist": "Johnny Burnette and the Rock 'n' Roll Trio",
+      "album": "Johnny Burnette and the Rock 'n' Roll Trio",
+      "year": 1956,
+      "label": "Coral",
+      "country": "us",
+      "faction": "rock50s",
+      "genres": [
+        "rock"
+      ],
+      "why": "Coral 1956 年唯一 LP，Paul Burlison 的失真吉他（〈Train Kept A-Rollin'〉）是 rockabilly 最野的錄音之一。",
+      "evidence": [
+        "https://musicbrainz.org/release-group/c962b63f-683d-3966-aac8-8c60d56f30c3",
+        "https://www.discogs.com/master/179051-Johnny-Burnette-And-The-Rock-N-Roll-Trio-Johnny-Burnette-And-The-Rock-N-Roll-Trio"
+      ],
+      "mbRgMbid": "c962b63f-683d-3966-aac8-8c60d56f30c3",
+      "mbAbsenceProof": null,
+      "manualEvidenceUrls": [],
+      "releaseException": "",
+      "queryAlias": "Rock 'n Roll Trio",
+      "uncertain": ""
+    },
+    {
+      "artist": "Carl Perkins",
+      "album": "Dance Album of Carl Perkins",
+      "year": 1957,
+      "label": "Sun",
+      "country": "us",
+      "faction": "rock50s",
+      "genres": [
+        "rock"
+      ],
+      "why": "Carl Perkins 首張 LP（Sun 1957），收〈Blue Suede Shoes〉〈Matchbox〉，rockabilly 正典原盤。",
+      "evidence": [
+        "https://musicbrainz.org/release-group/6e7405e6-b9ce-3350-a4c2-8fc1f1fc2a79",
+        "https://www.discogs.com/master/464784-Carl-Perkins-Dance-Album-Of-Carl-Perkins"
+      ],
+      "mbRgMbid": "6e7405e6-b9ce-3350-a4c2-8fc1f1fc2a79",
+      "mbAbsenceProof": null,
+      "manualEvidenceUrls": [],
+      "releaseException": "",
+      "queryAlias": "Dance Album of… Carl Perkins",
+      "uncertain": "池中已有「Carl Perkins／Introducing... Carl Perkins」實為同名爵士鋼琴手 Carl Perkins（Dootone DL-211，1956），與本張 rockabilly 的 Carl Perkins 不同人；藝人介紹與別名需分開處理。"
+    },
+    {
+      "artist": "The Platters",
+      "album": "The Platters",
+      "year": 1956,
+      "label": "Mercury",
+      "country": "us",
+      "faction": "doowop",
+      "genres": [
+        "soul",
+        "pop"
+      ],
+      "why": "Mercury 1956 首張 LP，收〈Only You〉〈The Great Pretender〉，doo-wop 抒情合唱的商業頂峰。",
+      "evidence": [
+        "https://musicbrainz.org/release-group/1287e2da-2ac0-47a2-b4c6-bb710b5072ad",
+        "https://www.discogs.com/master/284474-The-Platters-The-Platters"
+      ],
+      "mbRgMbid": "1287e2da-2ac0-47a2-b4c6-bb710b5072ad",
+      "mbAbsenceProof": null,
+      "manualEvidenceUrls": [],
+      "releaseException": "",
+      "queryAlias": "",
+      "uncertain": "MB 另有 1959 King 651 同名 LP（Federal 時期舊錄音），本張是 Mercury MG 20146（1956）。"
+    },
+    {
+      "artist": "The Drifters",
+      "album": "Rockin' & Driftin'",
+      "year": 1958,
+      "label": "Atlantic",
+      "country": "us",
+      "faction": "doowop",
+      "genres": [
+        "soul",
+        "pop"
+      ],
+      "why": "Atlantic 1958 年 LP，彙整 Clyde McPhatter 後的 Drifters 1955–58 錄音，當年原版 LP（〈Ruby Baby〉〈Fools Fall in Love〉）。",
+      "evidence": [
+        "https://musicbrainz.org/release-group/9005129e-c742-48b1-a2f3-4f386e3ee3eb",
+        "https://www.discogs.com/master/587288-The-Drifters-Rockin-Driftin"
+      ],
+      "mbRgMbid": "9005129e-c742-48b1-a2f3-4f386e3ee3eb",
+      "mbAbsenceProof": null,
+      "manualEvidenceUrls": [],
+      "releaseException": "",
+      "queryAlias": "",
+      "uncertain": ""
+    },
+    {
+      "artist": "The Coasters",
+      "album": "The Coasters",
+      "year": 1957,
+      "label": "Atco",
+      "country": "us",
+      "faction": "doowop",
+      "genres": [
+        "soul",
+        "pop"
+      ],
+      "why": "Atco 1957 首張 LP，Leiber & Stoller 製作的喜劇式 R&B（〈Searchin'〉〈Young Blood〉），doo-wop／R&B 敘事歌的原點。",
+      "evidence": [
+        "https://musicbrainz.org/release-group/412082e1-0d96-3878-bc78-a17e95fb8401",
+        "https://www.discogs.com/master/419966-The-Coasters-The-Coasters"
+      ],
+      "mbRgMbid": "412082e1-0d96-3878-bc78-a17e95fb8401",
+      "mbAbsenceProof": null,
+      "manualEvidenceUrls": [],
+      "releaseException": "",
+      "queryAlias": "",
+      "uncertain": ""
+    },
+    {
+      "artist": "Clyde McPhatter",
+      "album": "Love Ballads",
+      "year": 1958,
+      "label": "Atlantic",
+      "country": "us",
+      "faction": "doowop",
+      "genres": [
+        "soul",
+        "pop"
+      ],
+      "why": "Clyde McPhatter 個人 LP（Atlantic 1958），Dominoes／Drifters 主唱轉個人後的抒情 R&B 代表作。",
+      "evidence": [
+        "https://musicbrainz.org/release-group/899b8142-f628-4839-9fe8-a9b34fddfb70",
+        "https://www.discogs.com/master/985267-Clyde-McPhatter-Love-Ballads"
+      ],
+      "mbRgMbid": "899b8142-f628-4839-9fe8-a9b34fddfb70",
+      "mbAbsenceProof": null,
+      "manualEvidenceUrls": [],
+      "releaseException": "",
+      "queryAlias": "",
+      "uncertain": ""
+    },
+    {
+      "artist": "The Penguins",
+      "album": "The Cool, Cool Penguins",
+      "year": 1958,
+      "label": "Dooto",
+      "country": "us",
+      "faction": "doowop",
+      "genres": [
+        "soul",
+        "pop"
+      ],
+      "why": "〈Earth Angel〉的 Penguins 唯一當年專屬 LP（Dooto DTL-242，1958），洛杉磯 doo-wop 代表團體的原版長片。",
+      "evidence": [
+        "https://www.discogs.com/master/923710-The-Penguins-The-Cool-Cool-Penguins",
+        "https://www.discogs.com/release/7756803-The-Penguins-The-Cool-Cool-Penguins",
+        "https://bsnpubs.com/la/dootone/dootone.html"
+      ],
+      "mbRgMbid": "",
+      "mbAbsenceProof": {
+        "queries": [
+          "artist:\"The Penguins\" -> artist b64b1d21-b722-442e-a984-789e1050f95a，browse release-group 全類型",
+          "release-group?query=artist:\"Penguins\" AND releasegroup:\"Cool\""
+        ],
+        "checkedAt": "2026-10-22",
+        "conclusion": "有藝人（b64b1d21…），但其 release-group 只有單曲與 1986 後的合輯，無 The Cool, Cool Penguins；作品方向查詢 count=0"
+      },
+      "manualEvidenceUrls": [
+        "https://www.discogs.com/master/923710-The-Penguins-The-Cool-Cool-Penguins",
+        "https://www.discogs.com/release/7756803-The-Penguins-The-Cool-Cool-Penguins",
+        "https://bsnpubs.com/la/dootone/dootone.html"
+      ],
+      "releaseException": "",
+      "queryAlias": "The Cool Cool Penguins",
+      "uncertain": "首發年：Discogs master 與 BSN Pubs Dooto 目錄皆作 1958；Apple Music 簡介作 1957。採 1958。"
+    },
+    {
+      "artist": "The Five Satins",
+      "album": "The 5 Satins Sing",
+      "year": 1957,
+      "label": "Ember",
+      "country": "us",
+      "faction": "doowop",
+      "genres": [
+        "soul",
+        "pop"
+      ],
+      "why": "Ember 1957 首張 LP，收〈In the Still of the Night〉，東岸 doo-wop 的經典原盤。",
+      "evidence": [
+        "https://musicbrainz.org/release-group/fb6c5045-77a4-4c86-bd88-ab1fc96104fb",
+        "https://www.discogs.com/master/802132-The-Five-Satins-The-5-Satins-Sing"
+      ],
+      "mbRgMbid": "fb6c5045-77a4-4c86-bd88-ab1fc96104fb",
+      "mbAbsenceProof": null,
+      "manualEvidenceUrls": [],
+      "releaseException": "",
+      "queryAlias": "The Five Satins Sing",
+      "uncertain": ""
+    },
+    {
+      "artist": "The Del-Vikings",
+      "album": "Come Go with the Del Vikings",
+      "year": 1957,
+      "label": "Luniverse",
+      "country": "us",
+      "faction": "doowop",
+      "genres": [
+        "soul",
+        "pop"
+      ],
+      "why": "Luniverse 1957 LP，收〈Come Go with Me〉，第一批跨種族 doo-wop 團體的原版長片。",
+      "evidence": [
+        "https://musicbrainz.org/release-group/708b553d-3c99-3261-a125-030e69102067",
+        "https://www.discogs.com/master/826068-The-Del-Vikings-Come-Go-With-The-Del-Vikings"
+      ],
+      "mbRgMbid": "708b553d-3c99-3261-a125-030e69102067",
+      "mbAbsenceProof": null,
+      "manualEvidenceUrls": [],
+      "releaseException": "",
+      "queryAlias": "The Dell-Vikings",
+      "uncertain": "MB 掛名用 U+2010 連字號，已改 ASCII；專輯名 MB 寫作 Del Vikings（無連字號）照錄。"
+    },
+    {
+      "artist": "The Clovers",
+      "album": "The Clovers",
+      "year": 1956,
+      "label": "Atlantic",
+      "country": "us",
+      "faction": "doowop",
+      "genres": [
+        "soul",
+        "pop"
+      ],
+      "why": "Atlantic 1956 首張 LP，彙整 1951–55 Atlantic 錄音（〈Devil or Angel〉〈One Mint Julep〉〈Fool, Fool, Fool〉），50 年代 R&B 合唱的基石原盤。",
+      "evidence": [
+        "https://musicbrainz.org/release-group/621dd1f0-1365-39ec-9d7f-0c79fd1c0899",
+        "https://www.discogs.com/master/430965-The-Clovers-The-Clovers"
+      ],
+      "mbRgMbid": "621dd1f0-1365-39ec-9d7f-0c79fd1c0899",
+      "mbAbsenceProof": null,
+      "manualEvidenceUrls": [],
+      "releaseException": "",
+      "queryAlias": "",
+      "uncertain": ""
+    },
+    {
+      "artist": "The Cadillacs",
+      "album": "The Fabulous Cadillacs",
+      "year": 1957,
+      "label": "Jubilee",
+      "country": "us",
+      "faction": "doowop",
+      "genres": [
+        "soul",
+        "pop"
+      ],
+      "why": "Jubilee 1957 LP，收〈Speedoo〉，紐約街角 doo-wop 走向舞台表演的代表團體原盤。",
+      "evidence": [
+        "https://musicbrainz.org/release-group/dd2e431e-71f4-4085-8825-f94261794f8d",
+        "https://www.discogs.com/master/505510-The-Cadillacs-The-Fabulous-Cadillacs",
+        "https://en.wikipedia.org/wiki/The_Cadillacs"
+      ],
+      "mbRgMbid": "dd2e431e-71f4-4085-8825-f94261794f8d",
+      "mbAbsenceProof": null,
+      "manualEvidenceUrls": [],
+      "releaseException": "",
+      "queryAlias": "",
+      "uncertain": ""
+    },
+    {
+      "artist": "LaVern Baker",
+      "album": "LaVern Baker",
+      "year": 1957,
+      "label": "Atlantic",
+      "country": "us",
+      "faction": "doowop",
+      "genres": [
+        "soul",
+        "pop"
+      ],
+      "why": "Atlantic 8007（1957），收〈Tweedle Dee〉〈Jim Dandy〉，50 年代 Atlantic 女聲 R&B 的核心原盤。",
+      "evidence": [
+        "https://musicbrainz.org/release-group/23506cab-ae66-3422-8eb6-16cb6e598510",
+        "https://www.discogs.com/master/519934-La-Vern-Baker-La-Vern-Baker",
+        "https://en.wikipedia.org/wiki/LaVern_Baker"
+      ],
+      "mbRgMbid": "23506cab-ae66-3422-8eb6-16cb6e598510",
+      "mbAbsenceProof": null,
+      "manualEvidenceUrls": [],
+      "releaseException": "",
+      "queryAlias": "La Vern Baker",
+      "uncertain": "MB 發行群組標題作「Lavern Baker」、原盤封面「La Vern Baker」，後世重發改名《Rock & Roll》；照藝人正規拼法寫 LaVern Baker。1956 年 Atlantic 另有一張《LaVern》MB 未建檔，未選。"
+    }
+  ],
+  "notes": [
+    "去重指令 21 張全為 0；藝人池中張數均 ≤1（Carl Perkins 的 1 張是同名爵士鋼琴手）。",
+    "無一張需要 releaseException：全部是當年原版 LP；Rock Around the Clock、Rockin' with Wanda、Rockin' & Driftin' 雖為單曲彙整，但屬當年原版發行 LP。",
+    "Wikipedia 證據在查詢時遇 429 限流，多數改用 MB 發行群組＋Discogs master 兩個 https 證據。",
+    "WebSearch 用 1 次。"
+  ]
+}

@@ -1,0 +1,2081 @@
+{
+ "schemaVersion": 1,
+ "batch": "2026-10-20-ax3",
+ "batchNote": "薄細項策展線（add-20261104-ax3）",
+ "createdAt": "2026-11-04T07:22:35Z",
+ "albums": [
+  {
+   "artist": "Sly Boots",
+   "album": "Notes on a Journey",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "manual",
+    "rgMbid": "",
+    "upc": "",
+    "aliasesChecked": true,
+    "mbAbsenceProof": {
+     "queries": [
+      "artist:\"Sly Boots\" AND releasegroup:\"Notes on a Journey\" → count 0",
+      "releasegroup:\"Notes on a Journey\" → count 0",
+      "artist:\"Sly Boots\" → count 1"
+     ],
+     "checkedAt": "2026-11-04T07:17:47.981Z",
+     "conclusion": "artist:\"Sly Boots\" AND releasegroup:\"Notes on a Journey\" → count 0，前 0 筆無同藝人同盤名的 release-group；releasegroup:\"Notes on a Journey\" → count 0，前 0 筆無同藝人同盤名的 release-group；artist:\"Sly Boots\" → count 1，前 1 筆無同藝人同盤名的 release-group。身分以 Discogs master／release 為準。"
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/master/656009",
+     "https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Sly%20Boots&album=Notes%20on%20a%20Journey"
+    ],
+    "manualRuling": "雲端主線 2026-11-04 依 ALBUM_ONBOARDING §1 人工身分核可（店主 2026-09-02 裁定權下放；薄細項策展線 add-20261104-ax3）",
+    "coverSourceHint": "discogs",
+    "aliasReview": "美國民謠私壓：1969 年 Faithful Virtue 小廠發行的美國迷幻民謠，Discogs 單一版本、收藏圈冷門名盤；Apple 無此專輯。｜策展無疑點｜MB 查無（），走 §1 人工身分。證據：https://www.discogs.com/master/656009 https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Sly%20Boots&album=Notes%20on%20a%20Journey https://www.discogs.com/master/656009 https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Sly%20Boots&album=Notes%20on%20a%20Journey",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1969,
+    "yearNote": ""
+   },
+   "genres": [
+    "folk",
+    "psychedelic"
+   ],
+   "cover": {
+    "source": "discogs",
+    "discogsMasterId": "656009",
+    "discogsReleaseId": "5014043",
+    "url": "https://i.discogs.com/IYDnaj1yDCcudG8LxvrR2Mh3VIo9g10M2oNJKXL2WlU/rs:fit/g:sm/q:90/h:600/w:588/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTUwMTQw/NDMtMTYzMjEzMzg2/Ny02OTA3LmpwZWc.jpeg",
+    "note": "MB 查無；取 Discogs master 656009（「Notes On A Journey」1969）主圖；主線 2026-11-04 聯絡表目視與盤名相符、live-check 200。",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-04T07:22:35Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 17,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-04T07:22:35Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 17）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": true,
+    "tier": "pearl",
+    "evidenceUrls": [
+     "https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Sly%20Boots&album=Notes%20on%20a%20Journey",
+     "https://www.discogs.com/master/656009"
+    ],
+    "reason": "流亡採用：Last.fm listeners 17（有效值、1–299）、研究層核對同藝人同盤非錯配、私壓或獨立小廠且無整張正式串流再發（Apple 多店面查無；考古廠黑膠／CD 重發不算），冷門度 5。研究層判定：合格（listeners 17，證據 https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Sly%20Boots&album=Notes%20on%20a%20Journey ；Apple 無此盤，同名藝人 Sly Boots 2014 年專輯為另一組；Discogs 無任何數位再發 https://www.discogs.com/master/656009）。Last.fm 專輯頁在雲端環境回 600（Temporarily Unavailable）無法直接開，listeners 取自 worker。moodGuess 存疑：卡單預估輕柔，但有鼓與電貝斯、Acid Rock 標籤，實際可能較躁，聲音來源薄，需主線視聽。找不到樂評，status thin。（三軸 3/5/3、Last.fm listeners 17）",
+    "assessedAt": "2026-11-04T07:22:35Z",
+    "source": "主線 add-20261104-ax3 頂點採用"
+   },
+   "description": {
+    "text": "《Notes on a Journey》是 Michael Wendroff 與 David Greenberg 以 Sly Boots 之名，1969 年由紐約的 Faithful Virtue 出版的 LP，只有原版與宣傳版，沒有再版紀錄。兩人都唱歌、彈吉他並包辦詞曲，Tom Caccetta 彈貝斯，Bugs 打鼓，Eric Kihss 彈鍵盤。路數偏民謠搖滾與 acid rock。A 面的〈Notes On A Journey East〉長 4 分 45 秒，B 面的〈Notes On A Journey West〉只有 2 分 18 秒。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/5014043",
+     "https://www.discogs.com/master/656009",
+     "https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Sly%20Boots&album=Notes%20on%20a%20Journey",
+     "https://itunes.apple.com/search?entity=album&term=Sly%20Boots"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-04T07:22:35Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": false,
+    "apexPool": true
+   }
+  },
+  {
+   "artist": "Richard William Turner",
+   "album": "The Passenger",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "manual",
+    "rgMbid": "",
+    "upc": "",
+    "aliasesChecked": true,
+    "mbAbsenceProof": {
+     "queries": [
+      "artist:\"Richard William Turner\" AND releasegroup:\"The Passenger\" → count 0",
+      "releasegroup:\"The Passenger\" → count 38",
+      "artist:\"Richard William Turner\" → count 0"
+     ],
+     "checkedAt": "2026-11-04T07:17:47.981Z",
+     "conclusion": "artist:\"Richard William Turner\" AND releasegroup:\"The Passenger\" → count 0，前 0 筆無同藝人同盤名的 release-group；releasegroup:\"The Passenger\" → count 38，前 10 筆無同藝人同盤名的 release-group；artist:\"Richard William Turner\" → count 0，前 0 筆無同藝人同盤名的 release-group。身分以 Discogs master／release 為準。"
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/master/1674125",
+     "https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Richard%20William%20Turner&album=The%20Passenger"
+    ],
+    "manualRuling": "雲端主線 2026-11-04 依 ALBUM_ONBOARDING §1 人工身分核可（店主 2026-09-02 裁定權下放；薄細項策展線 add-20261104-ax3）",
+    "coverSourceHint": "discogs",
+    "aliasReview": "美國民謠私壓：1973 年好萊塢 Ascot Studios 自費私壓（Not On Label），迷幻民謠收藏圈冷門盤；Apple 無。｜策展無疑點｜MB 查無（），走 §1 人工身分。證據：https://www.discogs.com/master/1674125 https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Richard%20William%20Turner&album=The%20Passenger https://www.discogs.com/master/1674125 https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Richard%20William%20Turner&album=The%20Passenger",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1973,
+    "yearNote": ""
+   },
+   "genres": [
+    "folk",
+    "psychedelic"
+   ],
+   "cover": {
+    "source": "discogs",
+    "discogsMasterId": "1674125",
+    "discogsReleaseId": "14705352",
+    "url": "https://i.discogs.com/VjYcr84LOs3Qt3B_CAAPs5e9qAjSeo4UFpaeWxIDMiQ/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0NzA1/MzUyLTE1ODAwMDMy/NzMtNTM5Mi5qcGVn.jpeg",
+    "note": "MB 查無；取 Discogs master 1674125（「The Passenger 」1973）主圖；主線 2026-11-04 聯絡表目視與盤名相符、live-check 200。",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-04T07:22:35Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 1,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-04T07:22:35Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 1）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": true,
+    "tier": "pearl",
+    "evidenceUrls": [
+     "https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Richard%20William%20Turner&album=The%20Passenger",
+     "https://www.discogs.com/master/1674125"
+    ],
+    "reason": "流亡採用：Last.fm listeners 1（有效值、1–299）、研究層核對同藝人同盤非錯配、私壓或獨立小廠且無整張正式串流再發（Apple 多店面查無；考古廠黑膠／CD 重發不算），冷門度 5。研究層判定：合格（listeners 1，證據 https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Richard%20William%20Turner&album=The%20Passenger ；Discogs 僅兩個私壓版本、無再發 https://www.discogs.com/master/1674125；Apple／Deezer 查無）。Last.fm 專輯頁雲端回 600 無法直接開。此盤查無任何樂評或藝人生平，status thin；聲音只有 Discogs 風格標籤，鉤子層素材薄，建議主線視聽再定。moodGuess 無法驗證。（三軸 3/5/3、Last.fm listeners 1）",
+    "assessedAt": "2026-11-04T07:22:35Z",
+    "source": "主線 add-20261104-ax3 頂點採用"
+   },
+   "description": {
+    "text": "《The Passenger》是美國創作歌手 Richard William Turner 1973 年自費私壓的專輯，沒有掛任何廠牌，目前只查得到他名下這一張，沒有再版紀錄，在收藏圈想找的人遠多於手上有的人。錄音在好萊塢的 Ascot Studios 進行，唱片上沒有列出樂手或配器。十二首裡，同名曲〈The Passenger〉同時放在 A 面開頭與 B 面結尾，中間有〈Hard Rock Cafe〉〈49er〉〈Lisa〉〈Movin On〉〈A Childrens Song For Children Of All Ages〉等，路數偏迷幻民謠搖滾。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/14705352",
+     "https://www.discogs.com/master/1674125",
+     "https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Richard%20William%20Turner&album=The%20Passenger"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-04T07:22:35Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": false,
+    "apexPool": true
+   }
+  },
+  {
+   "artist": "Free Enterprize",
+   "album": "The Eye of the Beholder",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "manual",
+    "rgMbid": "",
+    "upc": "",
+    "aliasesChecked": true,
+    "mbAbsenceProof": {
+     "queries": [
+      "artist:\"Free Enterprize\" AND releasegroup:\"The Eye of the Beholder\" → count 0",
+      "releasegroup:\"The Eye of the Beholder\" → count 6",
+      "artist:\"Free Enterprize\" → count 0"
+     ],
+     "checkedAt": "2026-11-04T07:17:47.981Z",
+     "conclusion": "artist:\"Free Enterprize\" AND releasegroup:\"The Eye of the Beholder\" → count 0，前 0 筆無同藝人同盤名的 release-group；releasegroup:\"The Eye of the Beholder\" → count 6，前 6 筆無同藝人同盤名的 release-group；artist:\"Free Enterprize\" → count 0，前 0 筆無同藝人同盤名的 release-group。身分以 Discogs master／release 為準。"
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/master/1702214",
+     "https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Free%20Enterprize&album=The%20Eye%20of%20the%20Beholder"
+    ],
+    "manualRuling": "雲端主線 2026-11-04 依 ALBUM_ONBOARDING §1 人工身分核可（店主 2026-09-02 裁定權下放；薄細項策展線 add-20261104-ax3）",
+    "coverSourceHint": "discogs",
+    "aliasReview": "美國迷幻私壓：1980 年 Century Record Mfg. 壓製的自費私壓，迷幻民謠／軟搖，Discogs 無串流再發；Apple 無。｜⚠ 年份 1980，略晚於 60-70 年代黃金期｜MB 查無（），走 §1 人工身分。證據：https://www.discogs.com/master/1702214 https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Free%20Enterprize&album=The%20Eye%20of%20the%20Beholder https://www.discogs.com/master/1702214 https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Free%20Enterprize&album=The%20Eye%20of%20the%20Beholder",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1980,
+    "yearNote": ""
+   },
+   "genres": [
+    "psychedelic",
+    "folk"
+   ],
+   "cover": {
+    "source": "discogs",
+    "discogsMasterId": "1702214",
+    "discogsReleaseId": "10127911",
+    "url": "https://i.discogs.com/UAnU5xFXBdGPzi4iAsZHqj-9GcOw3QKEH2BGHeF2_l0/rs:fit/g:sm/q:90/h:600/w:594/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwMTI3/OTExLTE0OTIxMDgz/NjItMjQ1MC5qcGVn.jpeg",
+    "note": "MB 查無；取 Discogs master 1702214（「The Eye Of The Beholder」1980）主圖；主線 2026-11-04 聯絡表目視與盤名相符、live-check 200。",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-04T07:22:35Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 6,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-04T07:22:35Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 6）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": true,
+    "tier": "pearl",
+    "evidenceUrls": [
+     "https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Free%20Enterprize&album=The%20Eye%20of%20the%20Beholder",
+     "https://www.discogs.com/master/1702214"
+    ],
+    "reason": "流亡採用：Last.fm listeners 6（有效值、1–299）、研究層核對同藝人同盤非錯配、私壓或獨立小廠且無整張正式串流再發（Apple 多店面查無；考古廠黑膠／CD 重發不算），冷門度 5。研究層判定：合格（listeners 6，證據 https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Free%20Enterprize&album=The%20Eye%20of%20the%20Beholder ；Discogs 僅兩個私壓版本 https://www.discogs.com/master/1702214；Apple／Deezer 查無）。Last.fm 專輯頁雲端回 600。年份 1980 晚於黃金期，已為卡單既知風險。查無樂評與團員生平，status thin；moodGuess 無法驗證。（三軸 3/5/3、Last.fm listeners 6）",
+    "assessedAt": "2026-11-04T07:22:35Z",
+    "source": "主線 add-20261104-ax3 頂點採用"
+   },
+   "description": {
+    "text": "《The Eye of the Beholder》是 Free Enterprize 名下唯一的專輯，1980 年在美國以不掛廠牌、沒有目錄號的私壓 LP 發行，署名的表演者只有 John Peebles 與 Tony Frank 兩人。它沒有再版紀錄，只靠原版在二手市場零星流通，收藏圈想找的人多於手上有的人。全張 14 首，A 面 8 首、B 面 6 首。現存登錄資料沒有記下錄音地點、製作人或兩人的樂器分工，路數偏 acid rock 與民謠。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/10127911",
+     "https://www.discogs.com/master/1702214",
+     "https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Free%20Enterprize&album=The%20Eye%20of%20the%20Beholder",
+     "https://itunes.apple.com/search?entity=album&term=Free%20Enterprize"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-04T07:22:35Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": false,
+    "apexPool": true
+   }
+  },
+  {
+   "artist": "David Lewis",
+   "album": "Just Mollie and Me…",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "b723e802-fa5b-47d0-b472-d42323c7bd54",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "美國民謠私壓：1976 年 Tiger Lily 小廠民謠專輯，Roulette 壓製，日韓 CD 再發過但無串流；Apple 無。｜策展無疑點｜MB release-group b723e802-fa5b-47d0-b472-d42323c7bd54：title「Just Mollie and Me…」、Album、first-release-date 1976、artist-credit「David Lewis」。證據：https://www.discogs.com/master/1240783 https://musicbrainz.org/release-group/b723e802-fa5b-47d0-b472-d42323c7bd54 https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=David%20Lewis&album=Just%20Mollie%20and%20Me…",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1976,
+    "yearNote": ""
+   },
+   "genres": [
+    "folk"
+   ],
+   "cover": {
+    "source": "discogs",
+    "discogsMasterId": "1240783",
+    "discogsReleaseId": "10038393",
+    "url": "https://i.discogs.com/HZX0bOwPFtQu56zoT5dJouFaLaoP8nSNVgb3uIo9m5Y/rs:fit/g:sm/q:90/h:600/w:588/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwMDM4/MzkzLTE0OTA1NDI2/MTUtMTE4OS5qcGVn.jpeg",
+    "note": "CAA 無圖；取 Discogs master 1240783（「Just Mollie And Me... 」1976）主圖；主線 2026-11-04 聯絡表目視與盤名相符、live-check 200。",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-04T07:22:35Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 5,
+    "source": "worker /album-rating（盤名去掉省略號查）",
+    "checkedAt": "2026-11-04T07:22:35Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 0）；主線：盤名含「…」時 worker 回 0；去掉省略號得同藝人同盤 listeners 5（研究 a）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": true,
+    "tier": "pearl",
+    "evidenceUrls": [
+     "https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=David%20Lewis&album=Just%20Mollie%20and%20Me",
+     "https://musicbrainz.org/release-group/b723e802-fa5b-47d0-b472-d42323c7bd54"
+    ],
+    "reason": "流亡採用：Last.fm listeners 5（有效值、1–299）、研究層核對同藝人同盤非錯配、私壓或獨立小廠且無整張正式串流再發（Apple 多店面查無；考古廠黑膠／CD 重發不算），冷門度 5。研究層判定：合格（listeners 5，證據 https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=David%20Lewis&album=Just%20Mollie%20and%20Me ；MB 盤名含「…」時 worker 回 0 係 Last.fm 盤名寫法差異，去掉省略號後同一藝人同一盤得 5；Last.fm 專輯頁雲端回 600 無法直接核對，請主線有網時補核對頁面是否為同一張盤）。冷門度：Tiger Lily 小廠、Roulette 發行，非嚴格自費；2012/2013 年日韓 CD 再發，Apple/Deezer 查無，無正式串流。Discogs 主頁寫作 David Earl Lewis，Apple 上的 David Lewis 是另一位鄉村歌手，非同人。moodGuess 存疑：卡單預估輕柔暖調，但整（三軸 3/5/3、Last.fm listeners 5）",
+    "assessedAt": "2026-11-04T07:22:35Z",
+    "source": "主線 add-20261104-ax3 頂點採用"
+   },
+   "description": {
+    "text": "《Just Mollie and Me…》是美國歌手 David Lewis 1976 年在小廠 Tiger Lily 發行的專輯，Lewis 的生平至今幾乎查不到。它被收進迷幻私壓指南，2012、2013 年韓國與日本先後出了 CD 再版。九首都是 Lewis 的歌，他主唱、打鼓、彈木吉他，Mike Cochrane 彈主奏吉他、十二弦與貝斯。開場是帶 power pop 旋律的流行曲，有三首只有人聲與木吉他，錄得像 demo；〈You Push Too Hard〉是粗獷的搖滾，有大段吉他獨奏與觀眾聲，另有鄉村搖滾與用 talk box 吉他的曲子。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/10038393",
+     "https://www.discogs.com/master/1240783",
+     "https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=David%20Lewis&album=Just%20Mollie%20and%20Me",
+     "https://musicbrainz.org/release-group/b723e802-fa5b-47d0-b472-d42323c7bd54"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-04T07:22:35Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": false,
+    "apexPool": true
+   }
+  },
+  {
+   "artist": "Ghostdance",
+   "album": "Ghostdance",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "manual",
+    "rgMbid": "",
+    "upc": "",
+    "aliasesChecked": true,
+    "mbAbsenceProof": {
+     "queries": [
+      "artist:\"Ghostdance\" AND releasegroup:\"Ghostdance\" → count 0",
+      "releasegroup:\"Ghostdance\" → count 5",
+      "artist:\"Ghostdance\" → count 0"
+     ],
+     "checkedAt": "2026-11-04T07:17:47.981Z",
+     "conclusion": "artist:\"Ghostdance\" AND releasegroup:\"Ghostdance\" → count 0，前 0 筆無同藝人同盤名的 release-group；releasegroup:\"Ghostdance\" → count 5，前 5 筆無同藝人同盤名的 release-group；artist:\"Ghostdance\" → count 0，前 0 筆無同藝人同盤名的 release-group。身分以 Discogs master／release 為準。"
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/master/955953",
+     "https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Ghostdance&album=Ghostdance"
+    ],
+    "manualRuling": "雲端主線 2026-11-04 依 ALBUM_ONBOARDING §1 人工身分核可（店主 2026-09-02 裁定權下放；薄細項策展線 add-20261104-ax3）",
+    "coverSourceHint": "discogs",
+    "aliasReview": "美國民謠私壓：1980 年 Root River Records 私壓，Discogs 收錄的美國地下迷幻民謠，無串流；Apple 無。｜⚠ Discogs 另有 1989 比利時同名專輯 (master 1713275)，非此張｜MB 查無（），走 §1 人工身分。證據：https://www.discogs.com/master/955953 https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Ghostdance&album=Ghostdance https://www.discogs.com/master/955953 https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Ghostdance&album=Ghostdance",
+    "queryAlias": "",
+    "selfTitledVerified": true
+   },
+   "research": {
+    "suggestedYear": 1980,
+    "yearNote": ""
+   },
+   "genres": [
+    "folk",
+    "psychedelic"
+   ],
+   "cover": {
+    "source": "discogs",
+    "discogsMasterId": "955953",
+    "discogsReleaseId": "8092455",
+    "url": "https://i.discogs.com/_31DR8SwwQ1WDeLeXF3jBFJwSYaxYtsm1Q_x-_bLbN4/rs:fit/g:sm/q:90/h:600/w:595/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTgwOTI0/NTUtMTQ1NDk4NjYy/Mi0yNzIwLmpwZWc.jpeg",
+    "note": "MB 查無；取 Discogs master 955953（「Ghostdance」1980）主圖；主線 2026-11-04 聯絡表目視與盤名相符、live-check 200。",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-04T07:22:35Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 9,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-04T07:22:35Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 9）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": true,
+    "tier": "pearl",
+    "evidenceUrls": [
+     "https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Ghostdance&album=Ghostdance",
+     "https://www.discogs.com/master/955953"
+    ],
+    "reason": "流亡採用：Last.fm listeners 9（有效值、1–299）、研究層核對同藝人同盤非錯配、私壓或獨立小廠且無整張正式串流再發（Apple 多店面查無；考古廠黑膠／CD 重發不算），冷門度 5。研究層判定：合格（listeners 9，證據 https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Ghostdance&album=Ghostdance ；Discogs 僅 1980 原盤與 2007 非官方黑膠 https://www.discogs.com/master/955953 ；Apple 上的 Ghost Dance 是英國哥德搖滾團、Bill Miller《Ghostdance》是另一位藝人，皆非此組，已排除錯配）。Last.fm 頁面 301 轉址且內文無法開。卡單提示 1989 比利時同名專輯非此張，確認 Discogs master 955953 為 1980 美國版。成員名 gyp fox 小寫照 Discogs。moodGuess 存疑：預估空靈偏冷，實際有鼓有風琴合成器，需視聽。（三軸 3/5/3、Last.fm listeners 9）",
+    "assessedAt": "2026-11-04T07:22:35Z",
+    "source": "主線 add-20261104-ax3 頂點採用"
+   },
+   "description": {
+    "text": "《Ghostdance》是明尼蘇達州 Winona 的樂團 Ghostdance 唯一的專輯，1980 年在 Minneapolis 自行錄製、由 Root River 出版，樂團的其他資料幾乎查不到。Gyp Fox 與 James Dean Hall 各寫一半的 12 首。Hall 彈滑音吉他，Fox 愛用 fuzz 踏板。〈Like a Vision〉有滿是回授的吉他獨奏，〈Walkin' On Ice〉是兩把主奏吉他對奏；〈Lone Wolf〉有長笛與加勒比風律動，〈Eyes of March〉配雷鬼節奏，也有曼陀林、新浪潮與鄉村的曲子。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/8092455",
+     "https://www.discogs.com/master/955953",
+     "https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Ghostdance&album=Ghostdance"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-04T07:22:35Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": false,
+    "apexPool": true
+   }
+  },
+  {
+   "artist": "Drnwyn",
+   "album": "Gypsies in the Mist",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "ac2c37dc-4b56-4a11-9802-3b236983c1cb",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "美國民謠私壓：1978 年 Wilderland Recording Studios 自費私壓的奇幻迷幻民謠，Underground Masters、Wohn 重發過但無串流；Apple 無。｜策展無疑點｜MB release-group ac2c37dc-4b56-4a11-9802-3b236983c1cb：title「Gypsies in the Mist」、Album、first-release-date 1978、artist-credit「Drnwyn」。證據：https://www.discogs.com/master/526746 https://musicbrainz.org/release-group/ac2c37dc-4b56-4a11-9802-3b236983c1cb https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Drnwyn&album=Gypsies%20in%20the%20Mist",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1978,
+    "yearNote": ""
+   },
+   "genres": [
+    "folk",
+    "psychedelic"
+   ],
+   "cover": {
+    "source": "discogs",
+    "discogsMasterId": "526746",
+    "discogsReleaseId": "7150907",
+    "url": "https://i.discogs.com/RrkNkTpPvFpoh9pQVmZ0l70wDrk7HGqVKIfPPUlWEL0/rs:fit/g:sm/q:90/h:600/w:593/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTcxNTA5/MDctMTQzNDg3MjQy/Ni03ODc0LmpwZWc.jpeg",
+    "note": "CAA 無圖；取 Discogs master 526746（「Gypsies In The Mist」1978）主圖；主線 2026-11-04 聯絡表目視與盤名相符、live-check 200。",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-04T07:22:35Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 61,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-04T07:22:35Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 61）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": true,
+    "tier": "pearl",
+    "evidenceUrls": [
+     "https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Drnwyn&album=Gypsies%20in%20the%20Mist",
+     "https://www.discogs.com/master/526746",
+     "https://musicbrainz.org/release-group/ac2c37dc-4b56-4a11-9802-3b236983c1cb"
+    ],
+    "reason": "流亡採用：Last.fm listeners 61（有效值、1–299）、研究層核對同藝人同盤非錯配、私壓或獨立小廠且無整張正式串流再發（Apple 多店面查無；考古廠黑膠／CD 重發不算），冷門度 5。研究層判定：合格（listeners 61，證據 https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Drnwyn&album=Gypsies%20in%20the%20Mist ；Discogs 再發僅 2006 法國 CD、2007 韓國黑膠考古版 https://www.discogs.com/master/526746 ；Apple／Deezer 查無）。Last.fm 專輯頁雲端回 600。卡單說的 Wilderland Recording Studios 與自費私壓經 Discogs 核實；WebSearch 結果提到 Wohn/Underground Masters 商品頁，確認 Drnwyn 是美國二人組、唯一專輯、1978 私下發行（forcedexposure.com/Artists/DRNWYN.（三軸 3/5/3、Last.fm listeners 61）",
+    "assessedAt": "2026-11-04T07:22:35Z",
+    "source": "主線 add-20261104-ax3 頂點採用"
+   },
+   "description": {
+    "text": "《Gypsies in the Mist》是俄亥俄州 Salem 的 Drnwyn 在 1978 年自費壓製的唱片，原版約 800 張，在收藏圈被視為稀有，2007 年南韓 Wohn Records 出了黑膠再版。核心人物 David W. Hoag 是當地牧師，包辦九首歌的詞曲，主唱並彈木吉他、曼陀林與合成器，配上電吉他、鍵盤、節奏組與兩位女聲和聲。曲子在直接的搖滾與木吉他民謠之間切換，歌詞談社會與信仰；〈Places, Faces, Paces〉由大鍵琴帶動，〈The Madman and the Angel〉加了很重的 phasing 效果。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/7150907",
+     "https://www.discogs.com/master/526746",
+     "https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Drnwyn&album=Gypsies%20in%20the%20Mist",
+     "https://musicbrainz.org/release-group/ac2c37dc-4b56-4a11-9802-3b236983c1cb"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-04T07:22:35Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": false,
+    "apexPool": true
+   }
+  },
+  {
+   "artist": "McAllen",
+   "album": "McAllen",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "f4eda2d3-1330-48a5-9779-3ef8510a63b8",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "美國民謠私壓：1971 年 Lansing Sound Studios 錄製、Spirit 小廠私壓，Vivid Sound/Big Pink 日韓 CD 再發但無串流；Apple 無。｜⚠ MB 藝人名為 Bob McAllen｜MB release-group f4eda2d3-1330-48a5-9779-3ef8510a63b8：title「McAllen」、Album、first-release-date 1971、artist-credit「Bob McAllen」。證據：https://www.discogs.com/master/1292621 https://musicbrainz.org/release-group/f4eda2d3-1330-48a5-9779-3ef8510a63b8 https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=McAllen&album=McAllen",
+    "queryAlias": "Bob McAllen",
+    "selfTitledVerified": true
+   },
+   "research": {
+    "suggestedYear": 1971,
+    "yearNote": ""
+   },
+   "genres": [
+    "folk",
+    "psychedelic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/f4eda2d3-1330-48a5-9779-3ef8510a63b8/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-04T07:22:35Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-04 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 2,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-04T07:22:35Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 2）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": true,
+    "tier": "pearl",
+    "evidenceUrls": [
+     "https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Bob%20McAllen&album=McAllen",
+     "https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=McAllen&album=McAllen",
+     "https://www.discogs.com/master/1292621",
+     "https://musicbrainz.org/release-group/f4eda2d3-1330-48a5-9779-3ef8510a63b8"
+    ],
+    "reason": "流亡採用：Last.fm listeners 2（有效值、1–299）、研究層核對同藝人同盤非錯配、私壓或獨立小廠且無整張正式串流再發（Apple 多店面查無；考古廠黑膠／CD 重發不算），冷門度 5。研究層判定：合格（listeners 64（Bob McAllen 名義）；以 McAllen 名義查得 2，皆 1–299，證據 https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Bob%20McAllen&album=McAllen 、https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=McAllen&album=McAllen ；Discogs 再發僅 2014 日韓 CD https://www.discogs.com/master/1292621 ；Apple／Deezer 查無，Apple 搜尋 Bob McAllen 只回 Bob Allen 的無關專輯）。Last.fm 專輯頁雲端回 600。冷門度：Spirit 小廠（三軸 3/5/3、Last.fm listeners 2）",
+    "assessedAt": "2026-11-04T07:22:35Z",
+    "source": "主線 add-20261104-ax3 頂點採用"
+   },
+   "description": {
+    "text": "《McAllen》是 East Lansing 的自彈自唱歌手 Bob McAllen 1971 年自製、由 Spirit 發行的唱片，製作與封面繪畫都由他包辦；後來只有 2014 年日韓兩版 CD 再版。伴奏有貝斯、鼓與 flugelhorn，一曲由進過 Billboard Hot 100 的當地樂團 The Woolies 成員支援。十一首全由 McAllen 寫，以十二弦吉他和人聲為主；寫給貓的〈By Candlelight (Love Song To A Cat)〉襯著低混音的 flugelhorn，〈It Depends〉節奏較快、人聲加回音。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/6220300",
+     "https://www.discogs.com/master/1292621",
+     "https://musicbrainz.org/release-group/f4eda2d3-1330-48a5-9779-3ef8510a63b8"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-04T07:22:35Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": false,
+    "apexPool": true
+   }
+  },
+  {
+   "artist": "Jeremy Dormouse",
+   "album": "The Toad Recordings",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "4cb8833c-c959-453a-8eec-f048acb6c9af",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "美國民謠私壓：1967 年加拿大自費私壓的迷幻民謠，Discogs 標 Not On Label 自行發行、收藏圈冷門名盤；Apple 無。｜⚠ 加拿大｜MB release-group 4cb8833c-c959-453a-8eec-f048acb6c9af：title「The Toad Recordings」、Album、first-release-date 1967、artist-credit「Jeremy Dormouse」。證據：https://www.discogs.com/master/637776 https://musicbrainz.org/release-group/4cb8833c-c959-453a-8eec-f048acb6c9af https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Jeremy%20Dormouse&album=The%20Toad%20Recordings",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1967,
+    "yearNote": ""
+   },
+   "genres": [
+    "folk",
+    "psychedelic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/4cb8833c-c959-453a-8eec-f048acb6c9af/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-04T07:22:35Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-04 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 28,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-04T07:22:35Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 28）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": true,
+    "tier": "pearl",
+    "evidenceUrls": [
+     "https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Jeremy%20Dormouse&album=The%20Toad%20Recordings",
+     "https://www.discogs.com/master/637776",
+     "https://musicbrainz.org/release-group/4cb8833c-c959-453a-8eec-f048acb6c9af"
+    ],
+    "reason": "流亡採用：Last.fm listeners 28（有效值、1–299）、研究層核對同藝人同盤非錯配、私壓或獨立小廠且無整張正式串流再發（Apple 多店面查無；考古廠黑膠／CD 重發不算），冷門度 5。研究層判定：合格（listeners 28，證據 https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Jeremy%20Dormouse&album=The%20Toad%20Recordings ；Discogs 再發僅 2001 年 Hallucination CD 與 Void 黑膠，皆為考古廠 https://www.discogs.com/master/637776 ；Apple／Deezer 查無，Bandcamp 因雲端無法載入未能直接查，WebSearch 也未見數位版）。Last.fm 專輯頁雲端回 600。卡單 country 為 CA（加拿大，非美國），scene 標「美國」不符，建議主線改文案；年份 1967 為錄音年，標籤印 1968 年 6 月版權，部落格稱 1968 年出版，來源不一，fa（三軸 3/5/3、Last.fm listeners 28）",
+    "assessedAt": "2026-11-04T07:22:35Z",
+    "source": "主線 add-20261104-ax3 頂點採用"
+   },
+   "description": {
+    "text": "《The Toad Recordings》是加拿大安大略省的 Cris Cuddy 以 Jeremy Dormouse 為名，1967 年錄好、自費發行的限量 LP，封面絹印在拍賣買來的空白封套上。原版被視為極其稀有，2001 年 Void Records 出了黑膠再版，同年也有 CD 版。錄音一部分在客廳，一部分在 Trent University 的語言實驗室。十四首有 Cuddy 等人的原創，也有 Leonard Cohen〈Suzanne〉等翻唱；聲音以木吉他和人聲為主，男女和聲貫穿全張，間或加入口琴、電貝斯、主奏電吉他與少量打擊。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/6402246",
+     "https://bordeldorock.blogspot.com/2013/02/jeremy-dormouse-toad-recordings-1967.html",
+     "https://www.discogs.com/master/637776",
+     "https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Jeremy%20Dormouse&album=The%20Toad%20Recordings",
+     "https://musicbrainz.org/release-group/4cb8833c-c959-453a-8eec-f048acb6c9af"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-04T07:22:35Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": false,
+    "apexPool": true
+   }
+  },
+  {
+   "artist": "Stefan Gnys",
+   "album": "English Oaks and Evangeline",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "manual",
+    "rgMbid": "",
+    "upc": "",
+    "aliasesChecked": true,
+    "mbAbsenceProof": {
+     "queries": [
+      "artist:\"Stefan Gnys\" AND releasegroup:\"English Oaks and Evangeline\" → count 0",
+      "releasegroup:\"English Oaks and Evangeline\" → count 0",
+      "artist:\"Stefan Gnys\" → count 1"
+     ],
+     "checkedAt": "2026-11-04T07:17:47.981Z",
+     "conclusion": "artist:\"Stefan Gnys\" AND releasegroup:\"English Oaks and Evangeline\" → count 0，前 0 筆無同藝人同盤名的 release-group；releasegroup:\"English Oaks and Evangeline\" → count 0，前 0 筆無同藝人同盤名的 release-group；artist:\"Stefan Gnys\" → count 1，前 1 筆無同藝人同盤名的 release-group。身分以 Discogs master／release 為準。"
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/master/4057558",
+     "https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Stefan%20Gnys&album=English%20Oaks%20and%20Evangeline"
+    ],
+    "manualRuling": "雲端主線 2026-11-04 依 ALBUM_ONBOARDING §1 人工身分核可（店主 2026-09-02 裁定權下放；薄細項策展線 add-20261104-ax3）",
+    "coverSourceHint": "discogs",
+    "aliasReview": "美國民謠私壓：1969 年加拿大自費私壓民謠（Not On Label），Discogs 單一版本；Apple 無。｜⚠ MB 查無，走人工身分｜MB 查無（），走 §1 人工身分。證據：https://www.discogs.com/master/4057558 https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Stefan%20Gnys&album=English%20Oaks%20and%20Evangeline https://www.discogs.com/master/4057558 https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Stefan%20Gnys&album=English%20Oaks%20and%20Evangeline",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1969,
+    "yearNote": ""
+   },
+   "genres": [
+    "folk",
+    "psychedelic"
+   ],
+   "cover": {
+    "source": "discogs",
+    "discogsMasterId": "4057558",
+    "discogsReleaseId": "11301180",
+    "url": "https://i.discogs.com/Jdk3O-i0eLH0iLR-PZTph76ihagQxc6F4JjtQiTHx-w/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExMzAx/MTgwLTE1MTY0NDY1/NjctOTE4OC5qcGVn.jpeg",
+    "note": "MB 查無；取 Discogs master 4057558（「English Oaks And Evangeline」1969）主圖；主線 2026-11-04 聯絡表目視與盤名相符、live-check 200。",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-04T07:22:35Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 6,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-04T07:22:35Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 6）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 6），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "原版只有 12 張醋酸盤，1969 年自費做成。加拿大的 Stefan Gnys 在這批醋酸盤裡放了九首歌，有〈Machine〉，也有〈Evangeline〉，聲音介於迷幻與民謠之間。直到 2024 年，We Are Busy Bodies 才推出首次正式黑膠，並重新做了母帶處理。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/11301180",
+     "https://www.discogs.com/release/31634155",
+     "https://itunes.apple.com/search?entity=album&term=Stefan%20Gnys",
+     "https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Stefan%20Gnys&album=English%20Oaks%20and%20Evangeline",
+     "https://www.discogs.com/master/4057558"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-04T07:22:35Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Rin Eric",
+   "album": "The Soundtrack to the Movie in Your Mind",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "bbae0afb-1179-48b4-ae62-1b5c5c6f07e9",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "美國迷幻私壓：1972 年美國私壓（Not On Label），迷幻民謠收藏冷門盤；Apple 無。｜策展無疑點｜MB release-group bbae0afb-1179-48b4-ae62-1b5c5c6f07e9：title「The Soundtrack To The Movie In Your Mind」、Album、first-release-date 1972、artist-credit「Rin Eric」。證據：https://www.discogs.com/master/1220210 https://musicbrainz.org/release-group/bbae0afb-1179-48b4-ae62-1b5c5c6f07e9 https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Rin%20Eric&album=The%20Soundtrack%20to%20the%20Movie%20in%20Your%20Mind",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1972,
+    "yearNote": ""
+   },
+   "genres": [
+    "psychedelic",
+    "folk"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/bbae0afb-1179-48b4-ae62-1b5c5c6f07e9/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-04T07:22:35Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-04 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 4,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-04T07:22:35Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 4）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": true,
+    "tier": "pearl",
+    "evidenceUrls": [
+     "https://www.last.fm/music/Rin+Eric/The+Soundtrack+to+the+Movie+in+Your+Mind",
+     "https://www.discogs.com/release/5692507",
+     "https://musicbrainz.org/release-group/bbae0afb-1179-48b4-ae62-1b5c5c6f07e9"
+    ],
+    "reason": "流亡採用：Last.fm listeners 4（有效值、1–299）、研究層核對同藝人同盤非錯配、私壓或獨立小廠且無整張正式串流再發（Apple 多店面查無；考古廠黑膠／CD 重發不算），冷門度 5。研究層判定：合格（listeners 4，證據 https://www.last.fm/music/Rin+Eric/The+Soundtrack+to+the+Movie+in+Your+Mind ；Last.fm 頁與 worker 皆 4；同一人、同一盤；私壓約 51 張，無廠牌；Apple Music 查無此盤〔Rin Eric 的 2013 至 2017 年其他專輯在 Apple〕，iTunes search 無；僅有 2013 日本 Branco Label 黑膠重發 https://www.discogs.com/release/5692507 ；Spotify／Bandcamp 因工具限制未能開頁驗證，Bandcamp 回 403）。存疑：同名藝人 Rin Eric 在 2010 年代有大量自行上傳的數位專輯，主線可再確認 1972 年這位與 Apple 上那位是否同一人（Discog（三軸 3/5/3、Last.fm listeners 4）",
+    "assessedAt": "2026-11-04T07:22:35Z",
+    "source": "主線 add-20261104-ax3 頂點採用"
+   },
+   "description": {
+    "text": "《The Soundtrack to the Movie in Your Mind》是美國的 Rin Eric 1972 年自費發行的唱片，原版只做了約 51 張，封套用彩色筆手工上色，標籤手寫。開場曲〈Montona D'Anjo〉被視為 loner folk 最受追捧的曲子之一，2013 年日本 Branco Label 出了黑膠再版。他彈吉他、唱歌，也吹直笛和「有機卡祖笛」，另有邦哥鼓、砂紙摩擦聲與電貝斯。十五首大多是木吉他指彈配人聲，步調簡單，兩面超過 60 分鐘，最長的〈They Watched Him〉7 分 39 秒。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/6967016",
+     "https://www.discogs.com/master/1220210",
+     "https://www.discogs.com/release/5692507",
+     "https://www.discogs.com/artist/3496007",
+     "https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Rin%20Eric&album=The%20Soundtrack%20to%20the%20Movie%20in%20Your%20Mind",
+     "https://musicbrainz.org/release-group/bbae0afb-1179-48b4-ae62-1b5c5c6f07e9"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-04T07:22:35Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": false,
+    "apexPool": true
+   }
+  },
+  {
+   "artist": "Circulation",
+   "album": "Tank Tracks",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "manual",
+    "rgMbid": "",
+    "upc": "",
+    "aliasesChecked": true,
+    "mbAbsenceProof": {
+     "queries": [
+      "artist:\"Circulation\" AND releasegroup:\"Tank Tracks\" → count 0",
+      "releasegroup:\"Tank Tracks\" → count 2",
+      "artist:\"Circulation\" → count 86"
+     ],
+     "checkedAt": "2026-11-04T07:17:47.981Z",
+     "conclusion": "artist:\"Circulation\" AND releasegroup:\"Tank Tracks\" → count 0，前 0 筆無同藝人同盤名的 release-group；releasegroup:\"Tank Tracks\" → count 2，前 2 筆無同藝人同盤名的 release-group；artist:\"Circulation\" → count 86，前 25 筆無同藝人同盤名的 release-group。身分以 Discogs master／release 為準。"
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/master/1061597",
+     "https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Circulation&album=Tank%20Tracks"
+    ],
+    "manualRuling": "雲端主線 2026-11-04 依 ALBUM_ONBOARDING §1 人工身分核可（店主 2026-09-02 裁定權下放；薄細項策展線 add-20261104-ax3）",
+    "coverSourceHint": "discogs",
+    "aliasReview": "英國迷幻私壓：1969 年英國 Deroy（私壓／圖書館級小廠）發行的迷幻專輯，Discogs 單一版本；Apple 無。｜⚠ MB 查無；Deroy 屬私壓性質小廠｜MB 查無（），走 §1 人工身分。證據：https://www.discogs.com/master/1061597 https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Circulation&album=Tank%20Tracks https://www.discogs.com/master/1061597 https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Circulation&album=Tank%20Tracks",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1969,
+    "yearNote": ""
+   },
+   "genres": [
+    "psychedelic"
+   ],
+   "cover": {
+    "source": "discogs",
+    "discogsMasterId": "1061597",
+    "discogsReleaseId": "5613849",
+    "url": "https://i.discogs.com/b7dP2ahQX7B5afU23a6F-d38ZQTaiwiy9FifOnvicj0/rs:fit/g:sm/q:90/h:412/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTU2MTM4/NDktMTQ2NzQ4ODM2/MC03MTU5LmpwZWc.jpeg",
+    "note": "MB 查無；取 Discogs master 1061597（「Tank Tracks」1969）主圖；主線 2026-11-04 聯絡表目視與盤名相符、live-check 200。",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-04T07:22:35Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 23,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-04T07:22:35Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 23）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": true,
+    "tier": "pearl",
+    "evidenceUrls": [
+     "https://www.last.fm/music/Circulation/Tank+Tracks",
+     "https://www.discogs.com/master/1061597"
+    ],
+    "reason": "流亡採用：Last.fm listeners 23（有效值、1–299）、研究層核對同藝人同盤非錯配、私壓或獨立小廠且無整張正式串流再發（Apple 多店面查無；考古廠黑膠／CD 重發不算），冷門度 5。研究層判定：合格（listeners 23，證據 https://www.last.fm/music/Circulation/Tank+Tracks ；Last.fm 頁有此專輯、worker 亦 23；Circulation 為多團同名，但 Tank Tracks 盤名獨一，Discogs 曲目對得上；Deroy 屬小廠；重發只有 Shadoks 限量 LP／CD https://www.discogs.com/master/1061597 ；Apple iTunes search 無；Spotify／Bandcamp 未能直接驗證）。Deroy 廠牌沿革未查到可靠來源，只寫了卡單層級的描述。年份 1969 與 Discogs 一致；MB 查無，走 §1 人工。聲音描述來自陣容與曲目，缺少樂評來源，status 標 thin。（三軸 3/5/3、Last.fm listeners 23）",
+    "assessedAt": "2026-11-04T07:22:35Z",
+    "source": "主線 add-20261104-ax3 頂點採用"
+   },
+   "description": {
+    "text": "《Tank Tracks》是英格蘭 Petersfield 的 Bedales School 學生在 1960 年代末組成的樂團 Circulation 留下的唱片。樂團在校內有擁護者，校外幾乎沒人知道；原版交給 Carnforth 的 Deroy Sound Service 壓製，只壓 50 張，由家人與樂迷預購，2016 年德國 Shadoks Music 出了 CD 再版。再版收 14 首，有〈Gloria〉〈Baby Please Don't Go〉等翻唱，也有〈Way Out〉等原創。聲音以風琴和吉他為主，帶迷幻色彩，路數偏早期車庫搖滾。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/5613849",
+     "https://www.discogs.com/master/1061597",
+     "https://www.discogs.com/release/3328363",
+     "https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Circulation&album=Tank%20Tracks"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-04T07:22:35Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": false,
+    "apexPool": true
+   }
+  },
+  {
+   "artist": "Fairy Tale",
+   "album": "Once Upon a Time...",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "c8f3cf58-dc0c-417f-9e4e-b152a4a877f5",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "歐陸迷幻私壓：1969 年荷蘭 Blossom Records 小廠迷幻民謠，Discogs 單一版本；Apple 無。｜策展無疑點｜MB release-group c8f3cf58-dc0c-417f-9e4e-b152a4a877f5：title「Once Upon a Time...」、Album、first-release-date 1969、artist-credit「Fairy Tale」。證據：https://www.discogs.com/master/225632 https://musicbrainz.org/release-group/c8f3cf58-dc0c-417f-9e4e-b152a4a877f5 https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Fairy%20Tale&album=Once%20Upon%20a%20Time...",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1969,
+    "yearNote": ""
+   },
+   "genres": [
+    "psychedelic",
+    "folk"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/c8f3cf58-dc0c-417f-9e4e-b152a4a877f5/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-04T07:22:35Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-04 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 13,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-04T07:22:35Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 13）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": true,
+    "tier": "pearl",
+    "evidenceUrls": [
+     "https://www.last.fm/music/Fairy+Tale/Once+Upon+a+Time...",
+     "https://www.discogs.com/master/225632",
+     "https://musicbrainz.org/release-group/c8f3cf58-dc0c-417f-9e4e-b152a4a877f5"
+    ],
+    "reason": "流亡採用：Last.fm listeners 13（有效值、1–299）、研究層核對同藝人同盤非錯配、私壓或獨立小廠且無整張正式串流再發（Apple 多店面查無；考古廠黑膠／CD 重發不算），冷門度 5。研究層判定：合格（listeners 13，證據 https://www.last.fm/music/Fairy+Tale/Once+Upon+a+Time... ；Last.fm 頁與 worker 皆 13；Discogs 稱藝人為 Fairy-Tale，同為荷蘭團、同一盤；Blossom Records 為荷蘭小廠；重發僅 2014 Tone Arm CD 與一版非官方黑膠 https://www.discogs.com/master/225632 ；Apple iTunes search 無，Spotify／Bandcamp 未能驗證，Tone Arm CD 是否同時上串流未知，建議主線上線前再看 Spotify）。聲音來源僅限陣容與廠牌標籤，無樂評，標 thin。MB release-group 年份 1969 一致。（三軸 3/5/3、Last.fm listeners 13）",
+    "assessedAt": "2026-11-04T07:22:35Z",
+    "source": "主線 add-20261104-ax3 頂點採用"
+   },
+   "description": {
+    "text": "《Once Upon a Time...》是海牙樂團 Fairy Tale 唯一的專輯，1969 年由荷蘭的 Blossom Records 發行，樂團只活動到 1971 年。原版在歐洲收藏圈長年被視為最搶手的唱片之一，1980 年代已有盜版，正式再版只有 2014 年瑞典 Tone Arm 的 CD。主唱 Cees Hoogerheide 唱得強勢、近乎吼叫，底下是厚重的風琴與吉他。開場〈Yesterday's Tears〉由鋼琴重複樂句帶進吉他；翻唱 The Troggs 的〈From Home〉拉到將近 9 分鐘，中段有長段鼓獨奏，以嘶吼收尾。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/2138659",
+     "https://www.discogs.com/artist/992117",
+     "https://www.discogs.com/master/225632",
+     "https://www.discogs.com/release/6428177",
+     "https://www.discogs.com/release/1168733",
+     "https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Fairy%20Tale&album=Once%20Upon%20a%20Time...",
+     "https://musicbrainz.org/release-group/c8f3cf58-dc0c-417f-9e4e-b152a4a877f5"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-04T07:22:35Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": false,
+    "apexPool": true
+   }
+  },
+  {
+   "artist": "Ton Vlasman",
+   "album": "White Room With Disintegrating Walls",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "manual",
+    "rgMbid": "",
+    "upc": "",
+    "aliasesChecked": true,
+    "mbAbsenceProof": {
+     "queries": [
+      "artist:\"Ton Vlasman\" AND releasegroup:\"White Room With Disintegrating Walls\" → count 0",
+      "releasegroup:\"White Room With Disintegrating Walls\" → count 0",
+      "artist:\"Ton Vlasman\" → count 1"
+     ],
+     "checkedAt": "2026-11-04T07:17:47.981Z",
+     "conclusion": "artist:\"Ton Vlasman\" AND releasegroup:\"White Room With Disintegrating Walls\" → count 0，前 0 筆無同藝人同盤名的 release-group；releasegroup:\"White Room With Disintegrating Walls\" → count 0，前 0 筆無同藝人同盤名的 release-group；artist:\"Ton Vlasman\" → count 1，前 1 筆無同藝人同盤名的 release-group。身分以 Discogs master／release 為準。"
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/master/268315",
+     "https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Ton%20Vlasman&album=White%20Room%20With%20Disintegrating%20Walls"
+    ],
+    "manualRuling": "雲端主線 2026-11-04 依 ALBUM_ONBOARDING §1 人工身分核可（店主 2026-09-02 裁定權下放；薄細項策展線 add-20261104-ax3）",
+    "coverSourceHint": "discogs",
+    "aliasReview": "歐陸迷幻私壓：1970 年荷蘭 Flame Records 小廠迷幻專輯，Discogs 單一版本；Apple 無。｜⚠ MB 查無，走人工身分｜MB 查無（），走 §1 人工身分。證據：https://www.discogs.com/master/268315 https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Ton%20Vlasman&album=White%20Room%20With%20Disintegrating%20Walls https://www.discogs.com/master/268315 https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Ton%20Vlasman&album=White%20Room%20With%20Disintegrating%20Walls",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1970,
+    "yearNote": ""
+   },
+   "genres": [
+    "psychedelic"
+   ],
+   "cover": {
+    "source": "discogs",
+    "discogsMasterId": "268315",
+    "discogsReleaseId": "2288582",
+    "url": "https://i.discogs.com/1w_8WWTDp_W8TZ97aNM8Wt-HtrjwxwT7wOmzXnXgUgY/rs:fit/g:sm/q:90/h:587/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIyODg1/ODItMTYyMjIzNzA2/NS0xODk0LmpwZWc.jpeg",
+    "note": "MB 查無；取 Discogs master 268315（「White Room With Disintegrating Walls」1970）主圖；主線 2026-11-04 聯絡表目視與盤名相符、live-check 200。",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-04T07:22:35Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 47,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-04T07:22:35Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 47）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": true,
+    "tier": "pearl",
+    "evidenceUrls": [
+     "https://www.last.fm/music/Ton+Vlasman/White+Room+with+Disintegrating+Walls",
+     "https://www.discogs.com/master/268315"
+    ],
+    "reason": "流亡採用：Last.fm listeners 47（有效值、1–299）、研究層核對同藝人同盤非錯配、私壓或獨立小廠且無整張正式串流再發（Apple 多店面查無；考古廠黑膠／CD 重發不算），冷門度 5。研究層判定：合格（listeners 47，證據 https://www.last.fm/music/Ton+Vlasman/White+Room+with+Disintegrating+Walls ；Last.fm 頁確認、worker 亦 47；同一人同一盤；Flame Records 荷蘭小廠；重發為 Wah Wah 2009 限量 LP 與 2002 非官方 CD https://www.discogs.com/master/268315 ；Apple iTunes search 無；Spotify／Bandcamp 未能驗證，Wah Wah 這類考古廠有時會上 Bandcamp，建議上線前再看）。「第一張編號作品」依目錄號 Flp. 1 推得，廠牌沿革未另查，facts 已退成「目錄號 Flp. 1」的說法。moodGuess 偏暗，從曲名與編制看大致可信，但實際聲音沒有找到樂評佐證。（三軸 3/5/3、Last.fm listeners 47）",
+    "assessedAt": "2026-11-04T07:22:35Z",
+    "source": "主線 add-20261104-ax3 頂點採用"
+   },
+   "description": {
+    "text": "《White Room With Disintegrating Walls》是 Ton Vlasman 1970 年在荷蘭小廠 Flame 出的民謠專輯，之後近四十年只有德國的非官方版；2009 年西班牙 Wah Wah Records 才出了限量 500 張黑膠再版。Vlasman 唱歌、彈吉他，Frans Schoonen 彈風琴、吹長笛與口琴，另有手鼓，以原音為主，帶拉格色彩。八首裡〈Fight With A Circular Course〉將近 16 分鐘，另翻唱 The Velvet Underground 的〈Pale Blue Eyes〉。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/2288582",
+     "https://www.discogs.com/artist/1766975",
+     "https://www.discogs.com/master/268315",
+     "https://www.discogs.com/release/2205498",
+     "https://www.discogs.com/release/3830050",
+     "https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Ton%20Vlasman&album=White%20Room%20With%20Disintegrating%20Walls"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-04T07:22:35Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": false,
+    "apexPool": true
+   }
+  },
+  {
+   "artist": "Princess Flower and the Moon Rays",
+   "album": "Dreaming the Magic of Your Maya",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "2454d4de-0e3b-4ad5-b0eb-58668836b071",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "美國迷幻私壓：1968 年 Akashic Records 私壓的美國靈修迷幻專輯，2012 年才有再發（MB 另有合輯版）；Apple 無。｜策展無疑點｜MB release-group 2454d4de-0e3b-4ad5-b0eb-58668836b071：title「Dreaming the Magic of Your Maya」、Album、first-release-date 1968、artist-credit「Princess Flower and The Moon Rays」。證據：https://www.discogs.com/master/545299 https://musicbrainz.org/release-group/2454d4de-0e3b-4ad5-b0eb-58668836b071 https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Princess%20Flower%20and%20the%20Moon%20Rays&album=Dreaming%20the%20Magic%20of%20Your%20Maya",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1968,
+    "yearNote": ""
+   },
+   "genres": [
+    "psychedelic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/2454d4de-0e3b-4ad5-b0eb-58668836b071/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-04T07:22:35Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-04 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 25,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-04T07:22:35Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 25）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": true,
+    "tier": "pearl",
+    "evidenceUrls": [
+     "https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Princess%20Flower%20and%20the%20Moon%20Rays&album=Dreaming%20the%20Magic%20of%20Your%20Maya",
+     "https://www.discogs.com/master/545299",
+     "https://musicbrainz.org/release-group/2454d4de-0e3b-4ad5-b0eb-58668836b071"
+    ],
+    "reason": "流亡採用：Last.fm listeners 25（有效值、1–299）、研究層核對同藝人同盤非錯配、私壓或獨立小廠且無整張正式串流再發（Apple 多店面查無；考古廠黑膠／CD 重發不算），冷門度 5。研究層判定：合格（listeners 25，證據 worker https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Princess%20Flower%20and%20the%20Moon%20Rays&album=Dreaming%20the%20Magic%20of%20Your%20Maya ；Last.fm 專輯頁連續兩次回「Temporarily Unavailable」，未能親眼開頁，僅憑 worker `_listeners`＝25；私壓 100 張；重發僅 Wah Wah 2012 限量黑膠 https://www.discogs.com/master/545299 ；Apple iTunes search 無；Spotify／Bandcamp 未能驗證）。注意：重發版加了 1970 年未發行的 C、D（三軸 3/5/3、Last.fm listeners 25）",
+    "assessedAt": "2026-11-04T07:22:35Z",
+    "source": "主線 add-20261104-ax3 頂點採用"
+   },
+   "description": {
+    "text": "《Dreaming the Magic of Your Maya》是 Princess Flower and the Moon Rays 1968 年在美國 Akashic 發行的 LP，原版只發行 100 張。2012 年 Wah Wah Records 再版成雙 LP，加收 1970 年在紐約錄下的未發行曲。錄音在 1968 年春天於巴黎完成，Loren Standlee 吹長笛、彈豎琴兼唱，Ziska 吟唱，Daevid Allen 等人彈吉他，另有鼓與打擊。六首多半很長，壓軸〈Ancient Faces〉約 15 分半。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/3803065",
+     "https://en.wikipedia.org/wiki/Daevid_Allen",
+     "https://www.discogs.com/master/545299",
+     "https://www.discogs.com/release/4031544",
+     "https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Princess%20Flower%20and%20the%20Moon%20Rays&album=Dreaming%20the%20Magic%20of%20Your%20Maya",
+     "https://musicbrainz.org/release-group/2454d4de-0e3b-4ad5-b0eb-58668836b071"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-04T07:22:35Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": false,
+    "apexPool": true
+   }
+  },
+  {
+   "artist": "Inner Dialogue",
+   "album": "Friend",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "f00a5fbc-58f7-4d0c-9e9e-bc1ed718fa70",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "美國民謠私壓：1970 年 Ranwood 小廠發行的美國迷幻民謠，Discogs 單一版本；Apple 無。｜⚠ Ranwood 是中小型唱片公司，非純私壓｜MB release-group f00a5fbc-58f7-4d0c-9e9e-bc1ed718fa70：title「Friend」、Album、first-release-date 1970、artist-credit「Inner Dialogue」。證據：https://www.discogs.com/master/669911 https://musicbrainz.org/release-group/f00a5fbc-58f7-4d0c-9e9e-bc1ed718fa70 https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Inner%20Dialogue&album=Friend",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1970,
+    "yearNote": ""
+   },
+   "genres": [
+    "folk",
+    "psychedelic"
+   ],
+   "cover": {
+    "source": "discogs",
+    "discogsMasterId": "669911",
+    "discogsReleaseId": "5066435",
+    "url": "https://i.discogs.com/VHwSnTxg3keZS2qkIg_VEcIU-ZXUG6JTLeBIaElTQBQ/rs:fit/g:sm/q:90/h:591/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTUwNjY0/MzUtMTQ4NDc1OTky/OS01Mjg2LmpwZWc.jpeg",
+    "note": "CAA 無圖；取 Discogs master 669911（「Friend」1970）主圖；主線 2026-11-04 聯絡表目視與盤名相符、live-check 200。",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-04T07:22:35Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 38,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-04T07:22:35Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 38）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 38），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "Lawrence Welk 開的廠牌，收了一支加州樂團。Inner Dialogue 由 Kay Cole 與 Lynn Dolin 兩名女歌手領唱，後面有鍵盤、吉他、貝斯和鼓。Ranwood 由 Welk 與前 Dot Records 社長在 1968 年創辦，兩年後替他們推出《Friend》。十二首都是兩三分鐘的短曲。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/5066435",
+     "https://www.discogs.com/label/164499",
+     "https://www.discogs.com/artist/266417",
+     "https://www.discogs.com/master/669911",
+     "https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Inner%20Dialogue&album=Friend",
+     "https://musicbrainz.org/release-group/f00a5fbc-58f7-4d0c-9e9e-bc1ed718fa70"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-04T07:22:35Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Smack",
+   "album": "Smack",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "eff7399a-bfcf-4bc2-bd42-73dba025fb16",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "美國迷幻私壓：1968 年 Audio House 私壓的美國迷幻車庫專輯；Apple 無。｜策展無疑點｜MB release-group eff7399a-bfcf-4bc2-bd42-73dba025fb16：title「Smack」、Album、first-release-date 1968、artist-credit「Smack」。證據：https://www.discogs.com/master/461600 https://musicbrainz.org/release-group/eff7399a-bfcf-4bc2-bd42-73dba025fb16 https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Smack&album=Smack",
+    "queryAlias": "",
+    "selfTitledVerified": true
+   },
+   "research": {
+    "suggestedYear": 1968,
+    "yearNote": ""
+   },
+   "genres": [
+    "psychedelic"
+   ],
+   "cover": {
+    "source": "discogs",
+    "discogsMasterId": "461600",
+    "discogsReleaseId": "9918908",
+    "url": "https://i.discogs.com/jFQ6N_A5VhXOsf41-7vprnw5U68YenDDp1OVTtdl-zo/rs:fit/g:sm/q:90/h:284/w:283/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTk5MTg5/MDgtMTQ4ODU0ODU4/OS0xMjA5LmpwZWc.jpeg",
+    "note": "CAA 無圖；取 Discogs master 461600（「Smack」1968）主圖；主線 2026-11-04 聯絡表目視與盤名相符、live-check 200。",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-04T07:22:35Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 117,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-04T07:22:35Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 117）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": true,
+    "tier": "pearl",
+    "evidenceUrls": [
+     "https://www.last.fm/music/Smack/Smack",
+     "https://www.discogs.com/master/461600",
+     "https://musicbrainz.org/release-group/eff7399a-bfcf-4bc2-bd42-73dba025fb16"
+    ],
+    "reason": "流亡採用：Last.fm listeners 117（有效值、1–299）、研究層核對同藝人同盤非錯配、私壓或獨立小廠且無整張正式串流再發（Apple 多店面查無；考古廠黑膠／CD 重發不算），冷門度 5。研究層判定：合格（listeners 117，證據 https://www.last.fm/music/Smack/Smack ；Smack 是常見同名，已核對該頁曲目為 Purple Haze，與 Audio House 1968 專輯一致，非錯配；Audio House 私壓；重發為 Shadoks 2011 LP／2012 CD、1992 團員自壓 LP、2004 Resurrection CD https://www.discogs.com/master/461600 ；Apple iTunes search 無，AllMusic 條目的串流欄位內容未能看到，Spotify／Bandcamp 未能驗證——Shadoks 重發版是否上串流是最大風險，建議上線前人工搜一次 Spotify）。史實衝突：Discogs 版本註記約壓 150 張，Discogs 藝人簡介寫約 2000 張，寫作層請只用（三軸 3/5/3、Last.fm listeners 117）",
+    "assessedAt": "2026-11-04T07:22:35Z",
+    "source": "主線 add-20261104-ax3 頂點採用"
+   },
+   "description": {
+    "text": "《Smack》是堪薩斯州勞倫斯一支學生樂團 1968 年錄下的唱片，原版約只壓 150 張，封底空白。1992 年團員自行再版，2004 年 Resurrection、2011 年德國 Shadoks 又先後重新發行。四名團員都是堪薩斯大學暑期獎學金班的學生，1968 年夏天在當地 Audio House 錄音，器樂現場一次錄下，只有人聲事後疊上。九首全是翻唱，取自 Hendrix、Cream 與 Buffalo Springfield，如〈Purple Haze〉〈Swlabr〉，由很重的 fuzz 吉他帶頭，配貝斯、鼓與人聲。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/9918908",
+     "https://rockasteria.blogspot.com/2013/04/smack-smack-1968-us-fuzzed-heavy-psych.html",
+     "https://www.discogs.com/master/461600",
+     "https://www.discogs.com/artist/2554661",
+     "https://www.discogs.com/release/3271299",
+     "https://www.allmusic.com/album/smack-mw0000371864",
+     "https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Smack&album=Smack",
+     "https://musicbrainz.org/release-group/eff7399a-bfcf-4bc2-bd42-73dba025fb16"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-04T07:22:35Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": false,
+    "apexPool": true
+   }
+  },
+  {
+   "artist": "Ian A. Anderson",
+   "album": "A Vulture Is Not a Bird You Can Trust",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "manual",
+    "rgMbid": "",
+    "upc": "",
+    "aliasesChecked": true,
+    "mbAbsenceProof": {
+     "queries": [
+      "artist:\"Ian A. Anderson\" AND releasegroup:\"A Vulture Is Not a Bird You Can Trust\" → count 0",
+      "releasegroup:\"A Vulture Is Not a Bird You Can Trust\" → count 0",
+      "artist:\"Ian A. Anderson\" → count 2"
+     ],
+     "checkedAt": "2026-11-04T07:17:47.981Z",
+     "conclusion": "artist:\"Ian A. Anderson\" AND releasegroup:\"A Vulture Is Not a Bird You Can Trust\" → count 0，前 0 筆無同藝人同盤名的 release-group；releasegroup:\"A Vulture Is Not a Bird You Can Trust\" → count 0，前 0 筆無同藝人同盤名的 release-group；artist:\"Ian A. Anderson\" → count 2，前 2 筆無同藝人同盤名的 release-group。身分以 Discogs master／release 為準。"
+    },
+    "manualEvidenceUrls": [
+     "https://www.discogs.com/master/3011291",
+     "https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Ian%20A.%20Anderson&album=A%20Vulture%20Is%20Not%20a%20Bird%20You%20Can%20Trust"
+    ],
+    "manualRuling": "雲端主線 2026-11-04 依 ALBUM_ONBOARDING §1 人工身分核可（店主 2026-09-02 裁定權下放；薄細項策展線 add-20261104-ax3）",
+    "coverSourceHint": "discogs",
+    "aliasReview": "英國民謠私壓：1971 年布里斯托小廠 Village Thing 發行的英國民謠藍調，廠牌本身就是地下民謠指標；Apple 無。｜⚠ MB 查無，走人工身分｜MB 查無（），走 §1 人工身分。證據：https://www.discogs.com/master/3011291 https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Ian%20A.%20Anderson&album=A%20Vulture%20Is%20Not%20a%20Bird%20You%20Can%20Trust https://www.discogs.com/master/3011291 https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Ian%20A.%20Anderson&album=A%20Vulture%20Is%20Not%20a%20Bird%20You%20Can%20Trust",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1971,
+    "yearNote": ""
+   },
+   "genres": [
+    "folk"
+   ],
+   "cover": {
+    "source": "discogs",
+    "discogsMasterId": "3011291",
+    "discogsReleaseId": "2698049",
+    "url": "https://i.discogs.com/LqfoZXZkhR022lMc3hEnVYap-jzPPGFbnb6G5YmOQiw/rs:fit/g:sm/q:90/h:597/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI2OTgw/NDktMTU1NzY3NDg2/OS04MzgzLmpwZWc.jpeg",
+    "note": "MB 查無；取 Discogs master 3011291（「A Vulture Is Not A Bird You Can Trust」1971）主圖；主線 2026-11-04 聯絡表目視與盤名相符、live-check 200。",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-04T07:22:35Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 43,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-04T07:22:35Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 43）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": true,
+    "tier": "pearl",
+    "evidenceUrls": [
+     "https://www.last.fm/music/Ian+A.+Anderson/A+Vulture+Is+Not+a+Bird+You+Can+Trust",
+     "https://www.discogs.com/release/26344916",
+     "https://www.discogs.com/master/3011291"
+    ],
+    "reason": "流亡採用：Last.fm listeners 43（有效值、1–299）、研究層核對同藝人同盤非錯配、私壓或獨立小廠且無整張正式串流再發（Apple 多店面查無；考古廠黑膠／CD 重發不算），冷門度 5。研究層判定：合格但帶一項風險（listeners 43，證據 https://www.last.fm/music/Ian+A.+Anderson/A+Vulture+Is+Not+a+Bird+You+Can+Trust ；頁面實開，同一人同一盤；Village Thing 為 Bristol 一帶的小型地下民謠廠，Discogs 註記可見其地址；重發為 2023 Bonfire Records 黑膠 https://www.discogs.com/release/26344916 ；Apple iTunes search 無；Bonfire 是否同步上串流未能驗證，搜尋結果也沒找到 Bandcamp 頁，建議上線前人工搜 Spotify）。Anderson 的詳細身分與 Village Thing 廠牌沿革，我只引了 Discogs，沒有第二來源，寫作層宜保守。Pick Withers 由 Disc（三軸 3/5/3、Last.fm listeners 43）",
+    "assessedAt": "2026-11-04T07:22:35Z",
+    "source": "主線 add-20261104-ax3 頂點採用"
+   },
+   "description": {
+    "text": "這是英國民謠樂手 Ian A. Anderson 1971 年的專輯，發行在他合辦的小廠 The Village Thing。21 世紀這批唱片被歸入 psych folk 一脈，2021 年收進他的 4CD 盒裝，2023 年 Bonfire 單獨再版 LP。1971 年 9 月在威爾斯 Rockfield 錄音，Anderson 自任製作，彈六弦與十二弦吉他並主唱，Ian Hunt 彈原音主奏吉他，另有風琴、電貝斯、低音提琴、口琴與鼓。十首多在 2 到 5 分鐘，大多自寫，也翻唱 Bob Dylan 的〈One Too Many Mornings〉。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/2698049",
+     "https://www.discogs.com/artist/1691400",
+     "https://en.wikipedia.org/wiki/Pick_Withers",
+     "https://www.discogs.com/master/3011291",
+     "https://www.discogs.com/release/26344916",
+     "https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Ian%20A.%20Anderson&album=A%20Vulture%20Is%20Not%20a%20Bird%20You%20Can%20Trust"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-04T07:22:35Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": false,
+    "apexPool": true
+   }
+  },
+  {
+   "artist": "Probe",
+   "album": "Direction",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "337622d4-999b-32ab-9e18-95f89387bc28",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "美國迷幻私壓：1971 年 Eborp Ltd（Probe 倒寫，自家私壓廠）發行的美國迷幻專輯；Apple 無。｜策展無疑點｜MB release-group 337622d4-999b-32ab-9e18-95f89387bc28：title「Direction」、Album、first-release-date 1971、artist-credit「Probe」。證據：https://www.discogs.com/master/542205 https://musicbrainz.org/release-group/337622d4-999b-32ab-9e18-95f89387bc28 https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Probe&album=Direction",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1971,
+    "yearNote": ""
+   },
+   "genres": [
+    "psychedelic",
+    "folk"
+   ],
+   "cover": {
+    "source": "discogs",
+    "discogsMasterId": "542205",
+    "discogsReleaseId": "12675329",
+    "url": "https://i.discogs.com/d5X5ielrsRuabtcBonBWTBz0mbAIEM342Y8Fb9qCC9s/rs:fit/g:sm/q:90/h:374/w:373/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyNjc1/MzI5LTE2MzY3MjIw/ODMtMTQ0OS5qcGVn.jpeg",
+    "note": "CAA 無圖；取 Discogs master 542205（「Direction」1971）主圖；主線 2026-11-04 聯絡表目視與盤名相符、live-check 200。",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-04T07:22:35Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 166,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-04T07:22:35Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 166）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": true,
+    "tier": "pearl",
+    "evidenceUrls": [
+     "https://www.last.fm/music/Probe/Direction",
+     "https://www.discogs.com/master/542205",
+     "https://musicbrainz.org/release-group/337622d4-999b-32ab-9e18-95f89387bc28"
+    ],
+    "reason": "流亡採用：Last.fm listeners 166（有效值、1–299）、研究層核對同藝人同盤非錯配、私壓或獨立小廠且無整張正式串流再發（Apple 多店面查無；考古廠黑膠／CD 重發不算），冷門度 5。研究層判定：合格（listeners 166，證據 https://www.last.fm/music/Probe/Direction ；Last.fm 頁實開為 166、與 worker 一致，專輯名獨一、非 Probe 汽車或廠牌之類的錯配；Eborp 為團體自創私壓廠；重發為 Still Looking／SL Records 黑膠、Mind's Eye CD https://www.discogs.com/master/542205 ；Apple iTunes search 無；Spotify／Bandcamp 未能驗證，風險同 Smack）。listeners 166 在 1–299 內但偏高，是本組最接近上限的一張。年份矛盾：Veamusic 文案寫 1969，Discogs 與 MB 皆 1971，facts 採 1971。（三軸 3/5/3、Last.fm listeners 166）",
+    "assessedAt": "2026-11-04T07:22:35Z",
+    "source": "主線 add-20261104-ax3 頂點採用"
+   },
+   "description": {
+    "text": "《Direction》是伊利諾州 Rockford 樂團 Probe 唯一的專輯，1971 年由團員自己的廠牌出版，樂團 1972 年就解散。原版在收藏圈想找的人遠多於手上有的人，2009 年匈牙利 Still Looking 再版 LP，之後又有 CD 與 2024 年的 LP 再版。錄音在 Rockford 當地錄音室，製作欄只掛團名，母帶送到芝加哥處理。編制是雙吉他加風琴：Furland 貝斯，LaMarca 鼓，Nelson 吉他兼口琴與小提琴，Olson 吉他兼風琴，四人都唱。路數偏迷幻搖滾，吉他用了大量 wah-wah 與 phaser。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/12675329",
+     "https://www.discogs.com/artist/2452439",
+     "https://www.discogs.com/master/542205",
+     "https://www.veamusic.com/direction",
+     "https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Probe&album=Direction",
+     "https://musicbrainz.org/release-group/337622d4-999b-32ab-9e18-95f89387bc28"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-04T07:22:35Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": false,
+    "apexPool": true
+   }
+  },
+  {
+   "artist": "Ebony Rhythm Funk Campaign",
+   "album": "Ebony Rhythm Funk Campaign",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "da0852e3-91b0-4c11-98e0-f92614b246aa",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "靈魂／放克私壓：UNI 旗下 Band Aide 單張 LP，Mack Rice 與 Luther Ingram 圈的底特律放克，收藏圈熱門私壓級；Apple 無此專輯（僅有 1976 另一張與單曲）。｜⚠ Apple 有該團另一張專輯與單曲，同名首張無串流｜MB release-group da0852e3-91b0-4c11-98e0-f92614b246aa：title「Ebony Rhythm Funk Campaign」、Album、first-release-date 1973、artist-credit「Ebony Rhythm Funk Campaign」。證據：https://musicbrainz.org/release-group/da0852e3-91b0-4c11-98e0-f92614b246aa https://www.discogs.com/master/681444 https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Ebony%20Rhythm%20Funk%20Campaign&album=Ebony%20Rhythm%20Funk%20Campaign",
+    "queryAlias": "",
+    "selfTitledVerified": true
+   },
+   "research": {
+    "suggestedYear": 1973,
+    "yearNote": ""
+   },
+   "genres": [
+    "soul"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/da0852e3-91b0-4c11-98e0-f92614b246aa/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-04T07:22:35Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-04 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 68,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-04T07:22:35Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 68）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 68），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "替人伴奏的印第安納波利斯樂隊，搬到洛杉磯換了團名。前身是 Ebony Rhythm Band，1969 年前後起家，在家鄉替 The Vanguards 伴奏。落腳洛杉磯之後，主唱交給 Pamela Tanner，團名也接上 Funk Campaign 兩個字。首作由 UNI 在 1973 年推出，坐在製作人位置上的是 Jazz Crusaders 的長號手 Wayne Henderson。放克節奏組上疊了次中音薩克斯風與富魯格號，男女主唱輪流領唱。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/8320065",
+     "https://indianamusicpedia.com/encyclopedia/ebony-rhythm-funk-campaign/",
+     "https://www.discogs.com/master/681444/versions",
+     "https://itunes.apple.com/search?entity=album&term=Ebony+Rhythm+Funk+Campaign",
+     "https://www.discogs.com/master/681444",
+     "https://musicbrainz.org/release-group/da0852e3-91b0-4c11-98e0-f92614b246aa"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-04T07:22:35Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Heaven & Earth",
+   "album": "Heaven and Earth",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "7cfefd6c-9eb5-4626-bab7-1308abfcbdb7",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "靈魂／放克私壓：芝加哥 Chicago Recording Company 製作的 modern soul/boogie 小眾名盤，無串流。｜⚠ Mercury 發行，非嚴格私壓｜MB release-group 7cfefd6c-9eb5-4626-bab7-1308abfcbdb7：title「Heaven and Earth」、Album、first-release-date 1978-04-10、artist-credit「Heaven & Earth」。證據：https://musicbrainz.org/release-group/7cfefd6c-9eb5-4626-bab7-1308abfcbdb7 https://www.discogs.com/master/779599 https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Heaven%20%26%20Earth&album=Heaven%20%26%20Earth",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1978,
+    "yearNote": ""
+   },
+   "genres": [
+    "soul"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/7cfefd6c-9eb5-4626-bab7-1308abfcbdb7/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-04T07:22:35Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-04 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 10,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-04T07:22:35Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 10）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 10），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "Dukes 兄弟在芝加哥組的靈魂樂團，一張盤動用四位貝斯手。兄弟倆 1974 年組團時，用的還是 Soul Majestics 這個舊名。改名之後的作品由 Mercury 在 1978 年發行，錄音全在 Chicago Recording Company 完成。貝斯手名單以 Louis Satterfield 打頭，弦樂和合成器在底下鋪滿。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/2698168",
+     "https://jazzapedia.pages.dev/artists/heaven-and-earth",
+     "https://www.discogs.com/master/779599",
+     "https://www.discogs.com/master/779599/versions",
+     "https://musicbrainz.org/release-group/7cfefd6c-9eb5-4626-bab7-1308abfcbdb7"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-04T07:22:35Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Joe Bonner",
+   "album": "Angel Eyes",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "359170c5-af7c-4e0a-9bee-c440884158b9",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "地下爵士私壓：Muse 小廠 spiritual 鋼琴作，無串流。｜⚠ 非私壓，小廠｜MB release-group 359170c5-af7c-4e0a-9bee-c440884158b9：title「Angel Eyes」、Album、first-release-date 1976、artist-credit「Joe Bonner」。證據：https://musicbrainz.org/release-group/359170c5-af7c-4e0a-9bee-c440884158b9 https://www.discogs.com/master/350194 https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Joe%20Bonner&album=Angel%20Eyes",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1976,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "source": "discogs",
+    "discogsMasterId": "350194",
+    "discogsReleaseId": "873976",
+    "url": "https://i.discogs.com/55BxfqG_RCeBSLizYxBEqG7LD4qZs1pxgi2-6UtcNRg/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTg3Mzk3/Ni0xNTE1NDM1MjEy/LTIzNjMuanBlZw.jpeg",
+    "note": "CAA 無圖；取 Discogs master 350194（「Angel Eyes」1976）主圖；主線 2026-11-04 聯絡表目視與盤名相符、live-check 200。",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-04T07:22:35Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 70,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-04T07:22:35Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 70）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": true,
+    "tier": "pearl",
+    "evidenceUrls": [
+     "https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Joe%20Bonner&album=Angel%20Eyes",
+     "https://www.discogs.com/master/350194",
+     "https://itunes.apple.com/search?entity=album&term=Joe+Bonner",
+     "https://musicbrainz.org/release-group/359170c5-af7c-4e0a-9bee-c440884158b9"
+    ],
+    "reason": "流亡採用：Last.fm listeners 70（有效值、1–299）、研究層核對同藝人同盤非錯配、私壓或獨立小廠且無整張正式串流再發（Apple 多店面查無；考古廠黑膠／CD 重發不算），冷門度 5。研究層判定：合格（listeners 70，worker 回 _listeners 70，對不存在盤名回空，證據 https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Joe%20Bonner&album=Angel%20Eyes ；非錯配，MB／Discogs 同名同年同廠 https://www.discogs.com/master/350194 ；冷門度 5，Muse 小廠，Discogs 只有 1976 黑膠，Apple 無此專輯，證據 https://itunes.apple.com/search?entity=album&term=Joe+Bonner ；Spotify／Bandcamp 本環境無法開，未驗）。（三軸 3/5/3、Last.fm listeners 70）",
+    "assessedAt": "2026-11-04T07:22:35Z",
+    "source": "主線 add-20261104-ax3 頂點採用"
+   },
+   "description": {
+    "text": "《Angel Eyes》是鋼琴手 Joe Bonner 1976 年在 Muse 出版的專輯，只有當年的 LP，沒有再版紀錄。Bonner 曾在 Pharoah Sanders 的 Impulse! 專輯彈鋼琴，這張把小提琴手 Leroy Jenkins、薩克斯風手 Billy Harper 與歌手 Linda Sharrock 找進同一張唱片。六首以鋼琴為主，多首是獨奏或三重奏，〈Interlude〉是他吹竹笛的獨奏；完整樂隊只在兩首出現，鋼琴、次中音薩克斯風、小提琴、貝斯與鼓一起上，Sharrock 只唱 9 分多鐘的〈Celebration〉。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/873976",
+     "https://www.discogs.com/master/350194",
+     "https://en.wikipedia.org/wiki/Joe_Bonner",
+     "https://www.discogs.com/master/350194/versions",
+     "https://musicbrainz.org/release-group/359170c5-af7c-4e0a-9bee-c440884158b9"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-04T07:22:35Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": false,
+    "apexPool": true
+   }
+  },
+  {
+   "artist": "Prince Lasha Ensemble",
+   "album": "Insight",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "662bd358-f5fe-4fb2-a7ed-5c61b16a88ce",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "地下爵士私壓：1966 Prince Lasha/Sonny Simmons 西岸 spiritual jazz 稀有盤，無串流。｜⚠ Last.fm 以 Prince Lasha 藝人名查得 45，MB 另有 2009 重發同名條目｜MB release-group 662bd358-f5fe-4fb2-a7ed-5c61b16a88ce：title「Insight」、Album、first-release-date 1966、artist-credit「Prince Lasha Ensemble」。證據：https://musicbrainz.org/release-group/662bd358-f5fe-4fb2-a7ed-5c61b16a88ce https://www.discogs.com/master/227429 https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Prince%20Lasha%20Ensemble&album=Insight",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1966,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "source": "discogs",
+    "discogsMasterId": "227429",
+    "discogsReleaseId": "1350591",
+    "url": "https://i.discogs.com/88M3WRdTM72nsVtEF4AfUs71GvNc63TIpqDjcTIfkjY/rs:fit/g:sm/q:90/h:500/w:491/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzNTA1/OTEtMTMxNTYxMzA1/MS5qcGVn.jpeg",
+    "note": "CAA 無圖；取 Discogs master 227429（「Insight」1966）主圖；主線 2026-11-04 聯絡表目視與盤名相符、live-check 200。",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-04T07:22:35Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 68,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-04T07:22:35Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 68）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 68），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "德州出身的薩克斯風手客居倫敦，借英國班底錄了六首。Prince Lasha 本名 William B. Lawsha，1929 年出生，和 Ornette Coleman 出自 Fort Worth 的同一所高中。1966 年他住在倫敦，找來 Stan Tracey 等英國樂手進錄音室，CBS 負責發行，長笛與中音薩克斯風都由他吹。每首長 6 到 8 分鐘，路數落在冷爵士與硬咆勃之間。〈Impressions Of Eric Dolphy〉則向舊搭檔 Dolphy 致意。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/1350591",
+     "https://en.wikipedia.org/wiki/Prince_Lasha",
+     "https://www.discogs.com/master/227429",
+     "https://www.discogs.com/release/2149670",
+     "https://musicbrainz.org/release-group/662bd358-f5fe-4fb2-a7ed-5c61b16a88ce"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-04T07:22:35Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Odean Pope",
+   "album": "Almost Like Me",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "d50c3e06-9d9f-36c4-bf19-ea8d26dc3ab8",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "地下爵士私壓：費城薩克斯風 Odean Pope 的 Moers 歐洲小廠盤，無串流。｜⚠ MB 首發年 1982，非 1960s｜MB release-group d50c3e06-9d9f-36c4-bf19-ea8d26dc3ab8：title「Almost Like Me」、Album、first-release-date 1982、artist-credit「Odean Pope」。證據：https://musicbrainz.org/release-group/d50c3e06-9d9f-36c4-bf19-ea8d26dc3ab8 https://www.discogs.com/master/265517 https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Odean%20Pope&album=Almost%20Like%20Me",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1982,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "source": "discogs",
+    "discogsMasterId": "265517",
+    "discogsReleaseId": "1039172",
+    "url": "https://i.discogs.com/3OsgrZcd8sY4QwyABTJfZyi_xxvN9syLLUKRk2OIzOw/rs:fit/g:sm/q:90/h:593/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwMzkx/NzItMTE4ODI4MDc4/OC5qcGVn.jpeg",
+    "note": "CAA 無圖；取 Discogs master 265517（「Almost Like Me」1982）主圖；主線 2026-11-04 聯絡表目視與盤名相符、live-check 200。",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-04T07:22:35Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 99,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-04T07:22:35Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 99）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": true,
+    "tier": "pearl",
+    "evidenceUrls": [
+     "https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Odean%20Pope&album=Almost%20Like%20Me",
+     "https://www.discogs.com/master/265517",
+     "https://itunes.apple.com/search?entity=song&term=Odean+Pope+Almost+Like+Me",
+     "https://musicbrainz.org/release-group/d50c3e06-9d9f-36c4-bf19-ea8d26dc3ab8"
+    ],
+    "reason": "流亡採用：Last.fm listeners 99（有效值、1–299）、研究層核對同藝人同盤非錯配、私壓或獨立小廠且無整張正式串流再發（Apple 多店面查無；考古廠黑膠／CD 重發不算），冷門度 5。研究層判定：合格（listeners 99，worker 回 _listeners 99，對不存在盤名回空，證據 https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Odean%20Pope&album=Almost%20Like%20Me ；非錯配，MB／Discogs 同名同年同廠 https://www.discogs.com/master/265517 ；冷門度 5，Moers Music 為德國小廠，僅 1990 年 CD 再版，Apple 無此專輯，證據 https://itunes.apple.com/search?entity=song&term=Odean+Pope+Almost+Like+Me ；Spotify／Bandcamp 本環境無法開，未驗）。（三軸 3/5/3、Last.fm listeners 99）",
+    "assessedAt": "2026-11-04T07:22:35Z",
+    "source": "主線 add-20261104-ax3 頂點採用"
+   },
+   "description": {
+    "text": "《Almost Like Me》是費城次中音薩克斯風手 Odean Pope 1982 年在西德 Moers Music 出版的三重奏專輯，此後只在 1990 年出過 CD。Pope 17 歲接替 Coltrane 進 Jimmy Smith 樂隊，1979 年成為 Max Roach 四重奏成員，這張是他自己的三重奏，全部自己作曲。Gerald Veasley 彈電貝斯，Cornell Rochester 打鼓。電貝斯在混音裡很突出，位置接近電吉他，節奏組撐出放克律動，Pope 吹得厚重有力，路數介於放克與自由爵士。曲子多在 3 到 5 分鐘。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/1039172",
+     "https://en.wikipedia.org/wiki/Odean_Pope",
+     "https://www.discogs.com/master/265517",
+     "https://www.discogs.com/release/2221306",
+     "https://itunes.apple.com/search?entity=song&term=Odean+Pope+Almost+Like+Me",
+     "https://musicbrainz.org/release-group/d50c3e06-9d9f-36c4-bf19-ea8d26dc3ab8"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-04T07:22:35Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": false,
+    "apexPool": true
+   }
+  },
+  {
+   "artist": "Bobby Few",
+   "album": "More or Less Few",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "2f20779a-a3cc-4553-bfdd-80f25b17931d",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "地下爵士私壓：巴黎自由爵士圈鋼琴家的自營廠首作，無串流。｜策展無疑點｜MB release-group 2f20779a-a3cc-4553-bfdd-80f25b17931d：title「More or Less Few」、Album、first-release-date 1973、artist-credit「Bobby Few」。證據：https://musicbrainz.org/release-group/2f20779a-a3cc-4553-bfdd-80f25b17931d https://www.discogs.com/master/439888 https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Bobby%20Few&album=More%20or%20Less%20Few",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1973,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/2f20779a-a3cc-4553-bfdd-80f25b17931d/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-04T07:22:35Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-04 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 99,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-04T07:22:35Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 99）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": true,
+    "tier": "pearl",
+    "evidenceUrls": [
+     "https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Bobby%20Few&album=More%20or%20Less%20Few",
+     "https://www.discogs.com/master/439888",
+     "https://itunes.apple.com/search?entity=album&term=Bobby+Few",
+     "https://musicbrainz.org/release-group/2f20779a-a3cc-4553-bfdd-80f25b17931d"
+    ],
+    "reason": "流亡採用：Last.fm listeners 99（有效值、1–299）、研究層核對同藝人同盤非錯配、私壓或獨立小廠且無整張正式串流再發（Apple 多店面查無；考古廠黑膠／CD 重發不算），冷門度 5。研究層判定：合格（listeners 99，worker 回 _listeners 99，對不存在盤名回空，證據 https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Bobby%20Few&album=More%20or%20Less%20Few ；非錯配，MB／Discogs 同名同年同廠 https://www.discogs.com/master/439888 ；冷門度 5，Center of the World 為法國極小廠，Discogs 僅 1973 與約 1977 年黑膠，Apple 無此專輯，證據 https://itunes.apple.com/search?entity=album&term=Bobby+Few ；Spotify／Bandcamp 本環境無法開，未驗）。 【後世事件（三軸 3/5/3、Last.fm listeners 99）",
+    "assessedAt": "2026-11-04T07:22:35Z",
+    "source": "主線 add-20261104-ax3 頂點採用"
+   },
+   "description": {
+    "text": "《More or Less Few》是鋼琴手 Bobby Few 1973 年的三重奏專輯，出在自組團體 Center of the World 的自營廠牌：成員出錢壓片、在演出現場賣，沒寄宣傳盤，從未被 Downbeat 評過。Few 1969 年移居法國，這張 1973 年 11 月錄於巴黎，他彈鋼琴、吹 melodica 也開口唱，Alan Silva 拉貝斯，Muhammad Ali 打鼓。Few 的招牌是左手厚重的和弦，右手快速跑動後由左手收住；節奏組帶 swing 感，演奏走自由爵士。B 面整面是約 21 分鐘的一首長曲。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/1571455",
+     "https://www.discogs.com/master/439888",
+     "https://www.discogs.com/release/3630615",
+     "https://en.wikipedia.org/wiki/Bobby_Few",
+     "https://musicbrainz.org/release-group/2f20779a-a3cc-4553-bfdd-80f25b17931d"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-04T07:22:35Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": false,
+    "apexPool": true
+   }
+  },
+  {
+   "artist": "Mtume Umoja Ensemble",
+   "album": "Alkebu-Lan: Land of the Blacks",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "28b08ac4-3803-439d-9082-47f6229a1d2d",
+    "upc": "",
+    "aliasesChecked": true,
+    "exceptionReason": "現場例外：1971 年 8 月 29 日布魯克林 The East 文化中心的現場錄音原盤（MB RG 主類型 Album＋Live），Mtume 首次以本人名義掛名的作品本來就是這場演出（Ganelin 先例）",
+    "exceptionEvidenceUrls": [
+     "https://musicbrainz.org/release-group/28b08ac4-3803-439d-9082-47f6229a1d2d",
+     "https://www.discogs.com/master/451699",
+     "https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Mtume%20Umoja%20Ensemble&album=Alkebu-Lan%3A%20Land%20of%20the%20Blacks%20(Live%20at%20the%20East)"
+    ],
+    "aliasReview": "地下爵士私壓：Strata-East 現場 spiritual jazz 雙 LP，紐約 The East 文化中心，無串流。｜⚠ listeners 僅 2，需主線確認未錯配；現場盤｜MB release-group 28b08ac4-3803-439d-9082-47f6229a1d2d：title「Alkebu-Lan: Land of the Blacks」、Album＋Live、first-release-date 1972、artist-credit「Mtume Umoja Ensemble」。證據：https://musicbrainz.org/release-group/28b08ac4-3803-439d-9082-47f6229a1d2d https://www.discogs.com/master/451699 https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Mtume%20Umoja%20Ensemble&album=Alkebu-Lan%3A%20Land%20of%20the%20Blacks%20(Live%20at%20the%20East)",
+    "queryAlias": "Alkebu-Lan: Land of the Blacks (Live at the East)"
+   },
+   "research": {
+    "suggestedYear": 1972,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/28b08ac4-3803-439d-9082-47f6229a1d2d/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-04T07:22:35Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-04 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 174,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-04T07:22:35Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 174）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": true,
+    "tier": "pearl",
+    "evidenceUrls": [
+     "https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Mtume%20Umoja%20Ensemble&album=Alkebu-Lan%3A%20Land%20of%20the%20Blacks%20(Live%20at%20the%20East",
+     "https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Mtume%20Umoja%20Ensemble&album=Alkebu-Lan%3A%20Land%20of%20the%20Blacks",
+     "https://www.discogs.com/master/451699",
+     "https://itunes.apple.com/search?entity=album&term=Mtume+Umoja+Ensemble",
+     "https://musicbrainz.org/release-group/28b08ac4-3803-439d-9082-47f6229a1d2d"
+    ],
+    "reason": "流亡採用：Last.fm listeners 174（有效值、1–299）、研究層核對同藝人同盤非錯配、私壓或獨立小廠且無整張正式串流再發（Apple 多店面查無；考古廠黑膠／CD 重發不算），冷門度 5。研究層判定：合格（listeners 85〔含 (Live at the East) 後綴〕／174〔不含後綴〕，合計 259，皆在 1–299；證據 https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Mtume%20Umoja%20Ensemble&album=Alkebu-Lan%3A%20Land%20of%20the%20Blacks%20(Live%20at%20the%20East) 與 https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Mtume%20Umoja%20Ensemble&album=Alkebu-Lan%3A%20Land%20of%20the%20Blacks ；非錯配，MB／Discogs 同名同年同（三軸 3/5/3、Last.fm listeners 174）",
+    "assessedAt": "2026-11-04T07:22:35Z",
+    "source": "主線 add-20261104-ax3 頂點採用"
+   },
+   "description": {
+    "text": "這是康加鼓手 Mtume 第一次以領隊身分出的唱片，1972 年由樂手自營、預算很小的 Strata-East 出成雙 LP，正式版本只有這版與 1974 年日本版，原版在收藏圈價格很高。它被視為黑人民族主義音樂的重要記錄，台上有 Gary Bartz、Billy Hart 等人。1971 年 8 月在布魯克林的黑人社區文化中心 The East 現場錄下。開場是帶非洲精神與政治意味的獨白，之後在自由即興與有結構的段落之間來回，混合非洲音樂、大樂團爵士、bop 與靈魂樂；雙鼓手加康加打出沉重的打擊，有人聲吟唱與詩朗誦，全長近九十分鐘。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/1092929",
+     "https://en.wikipedia.org/wiki/James_Mtume",
+     "https://en.wikipedia.org/wiki/Strata-East_Records",
+     "https://www.discogs.com/master/451699",
+     "https://www.discogs.com/master/451699/versions",
+     "https://musicbrainz.org/release-group/28b08ac4-3803-439d-9082-47f6229a1d2d"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-04T07:22:35Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": false,
+    "apexPool": true
+   }
+  },
+  {
+   "artist": "Clifford Thornton & The Jazz Composer's Orchestra",
+   "album": "The Gardens of Harlem",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "72303fde-2f9f-427c-9a07-71333b784037",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "地下爵士私壓：JCOA 自營廠，Harlem 社區爵士大樂隊錄音，無串流。｜策展無疑點｜MB release-group 72303fde-2f9f-427c-9a07-71333b784037：title「The Gardens of Harlem」、Album、first-release-date 1975、artist-credit「Clifford Thornton, The Jazz Composer's Orchestra」。證據：https://musicbrainz.org/release-group/72303fde-2f9f-427c-9a07-71333b784037 https://www.discogs.com/master/200305 https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Clifford%20Thornton%20%26%20The%20Jazz%20Composer's%20Orchestra&album=The%20Gardens%20of%20Harlem",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1975,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/72303fde-2f9f-427c-9a07-71333b784037/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-04T07:22:35Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-04 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 83,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-04T07:22:35Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 83）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": true,
+    "tier": "pearl",
+    "evidenceUrls": [
+     "https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Clifford%20Thornton%20%26%20The%20Jazz%20Composer's%20Orchestra&album=The%20Gardens%20of%20Harlem",
+     "https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Clifford%20Thornton&album=The%20Gardens%20of%20Harlem",
+     "https://www.discogs.com/master/200305",
+     "https://itunes.apple.com/search?entity=album&term=Clifford+Thornton",
+     "https://musicbrainz.org/release-group/72303fde-2f9f-427c-9a07-71333b784037"
+    ],
+    "reason": "流亡採用：Last.fm listeners 83（有效值、1–299）、研究層核對同藝人同盤非錯配、私壓或獨立小廠且無整張正式串流再發（Apple 多店面查無；考古廠黑膠／CD 重發不算），冷門度 5。研究層判定：合格（listeners 83〔藝人 Clifford Thornton & The Jazz Composer's Orchestra〕／140〔藝人 Clifford Thornton〕，兩個 Last.fm 條目，合計 223，皆在 1–299；證據 https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Clifford%20Thornton%20%26%20The%20Jazz%20Composer's%20Orchestra&album=The%20Gardens%20of%20Harlem 與 https://dip-vinyl-worker.kubinice06.workers.dev/album-rating?artist=Clifford%20Thornton&album=The%20Gar（三軸 3/5/3、Last.fm listeners 83）",
+    "assessedAt": "2026-11-04T07:22:35Z",
+    "source": "主線 add-20261104-ax3 頂點採用"
+   },
+   "description": {
+    "text": "這是短號手 Clifford Thornton 與 Jazz Composer's Orchestra 的大樂團作品，1975 年由非營利廠牌 JCOA 出版，沒有再版紀錄，Thornton 的作品今天也不易找到。它被視為把第三世界音樂與美式爵士結合得很完整的嘗試。Thornton 1969 年起在 Wesleyan 大學任世界音樂相關職位，1974 年 4 月在紐約由約 25 人錄成。七位打擊樂手打古巴 bata 鼓、康加與迦納鼓鈴，加上 Dewey Redman 等人的薩克斯風，以及小號等銅管。八首融合古巴、迦納、阿爾及利亞音樂與藍調、福音。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/604664",
+     "https://www.discogs.com/master/200305",
+     "https://en.wikipedia.org/wiki/Clifford_Thornton",
+     "https://en.wikipedia.org/wiki/Jazz_Composer%27s_Orchestra",
+     "https://www.discogs.com/master/200305/versions",
+     "https://musicbrainz.org/release-group/72303fde-2f9f-427c-9a07-71333b784037"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-04T07:22:35Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": false,
+    "apexPool": true
+   }
+  }
+ ]
+}

@@ -1,0 +1,35 @@
+{
+ "batch": "ad-01",
+ "cards": 30,
+ "written": {
+  "kvKeys": 30,
+  "kvBefore": "kv-before-ad-01.json",
+  "manifest": 0
+ },
+ "review": {
+  "by": "cloud-main",
+  "cards": 30,
+  "changed": [
+   "johnny cash|at folsom prison",
+   "miles davis|kind of blue",
+   "lee morgan|the sidewinder",
+   "clifford brown & max roach|clifford brown & max roach",
+   "art blakey and the jazz messengers|moanin'",
+   "ornette coleman|the shape of jazz to come"
+  ]
+ },
+ "qa": {
+  "research": "pass",
+  "out": "pass（9 個具名出處誤報）",
+  "kvReadback": "30/30",
+  "front": "29/30（Kind of Blue 被 CURATED 蓋住）"
+ },
+ "pendingLocal": {
+  "workerCurated": [
+   "miles davis|kind of blue"
+  ],
+  "seedYear": [
+   "vince guaraldi trio|a charlie brown christmas：1978→1965"
+  ]
+ }
+}

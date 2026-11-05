@@ -1,0 +1,18 @@
+{
+ "batch": "add-20261104-ax8",
+ "cards": 10,
+ "nominated": 32,
+ "dropped": 22,
+ "written": { "cardCatalog": 11, "kvKeys": 11, "seedRows": 10, "seedEdited": 1, "previewReady": 1, "previewUnavailable": 9 },
+ "review": { "by": "cloud-main", "cards": 10, "changed": ["desc2:Vomir|Proanomie", "desc2:Luigi Russolo|Die Kunst der Geräusche", "desc2:Revenge|Triumph.Genocide.Antichrist", "desc4:グループ・音楽|ミュージック オブ グループ・音楽"] },
+ "qa": { "research": "pass（a／c／d／f；e 沿用 ax6）", "hooks": "不適用（頂點卡照 apex-desc-base）", "out": "pass（248–280 字）", "prepareGate": "0 error", "publishedGate": "0 error" },
+ "apex": { "heresy": 10, "general": 0, "demoted": ["Vomir|Claustration"], "heresyTotalAfter": 149 },
+ "artistIntros": { "ar-d-270": 8, "skipped": 0, "ar-d-271": "未用" },
+ "pendingLocal": {
+  "kv": "無",
+  "listeners": ["desc2:Pierre Schaeffer|5 études de bruits / Études aux objets"],
+  "apexEvidence": [],
+  "genreTree": "已重建",
+  "albumOverrides": "batch-progress/add-20261104-ax8/album-overrides-tier.json（後台依卡池同步頂點旗標：10 設、1 清）"
+ }
+}

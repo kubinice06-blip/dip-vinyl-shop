@@ -28,12 +28,21 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
+    "classic": 4,
     "obscurity": 4,
     "accessibility": 2,
     "listeners": 1880,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：神學院私錄迷幻名盤、收藏價高；L=1880→3，私壓有考古再發→4；民謠迷幻"
    },
    "rarity": "rare",
    "apexAssessment": {
@@ -55,7 +64,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview128/v4/e3/a9/73/e3a973d3-af65-cd38-ac70-c51dcdb7625d/mzaf_7610927031044091954.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview128/v4/45/7d/f2/457df253-c273-3a49-fdb4-49acfe728c43/mzaf_2061443062268762874.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -95,22 +104,42 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 1,
-    "obscurity": 4,
-    "accessibility": 2,
+    "classic": 4,
+    "obscurity": 5,
+    "accessibility": 3,
     "listeners": 131,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 1,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "common"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：樂團最受收藏圈推崇之作；無編號私壓，L=131 無串流→5；四軌一次錄成生猛迷幻"
    },
-   "rarity": "common",
+   "rarity": "epic",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。L131有效，教會私壓，xian psych 有收藏名聲但壓量無據；拿不準判none",
+    "evidenceUrls": [
+     "https://www.last.fm/music/Wilson%20McKinley/Spirit%20of%20Elijah",
+     "https://musicbrainz.org/release-group/ed39d4b1-6c9a-48ce-bc7c-aa993bc291de"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
-    "text": "晚上八點左右開錄，凌晨四點收工，彈錯的地方全部留著。Mike Messer 2011 年受訪時說，那是 Terry Sheets 帶一台 Teac 四軌機到樂團那間叫 House of David 的排練空間錄的，沒有一處 overdub。壓片廠還替其中一面加了很重的殘響，另一面卻留成乾的。原盤的廠牌欄是 Voice Of Elijah Inc.，唯一登錄的 credit 就是 Sheets 的錄音與工程；四個名字的陣容裡有三人掛主唱。",
+    "text": "《Spirit of Elijah》是華盛頓州 Spokane 的 Jesus rock 樂團 Wilson McKinley 由傳道團體自行發行的唱片，此後長年只有老唱片與盜版流通，2008 年才出 CD，近年 Lion Productions 再重製限量黑膠；它被視為當時悠閒西岸風格中最好的唱片之一。全張在樂團的排練小屋一晚錄完，用一台 Teac 四軌機直接彈唱，沒有 overdub，走調也沒修，壓片廠又只替其中一面加了很重的殘響。編制是兩把吉他、電貝斯與鼓，三人輪流主唱與和聲，走 Moby Grape 式的悠閒西岸迷幻。",
     "sourceUrls": [
      "https://www.psychedelicbabymag.com/2011/07/wilson-mckinley-interview-with-mike.html",
      "https://www.discogs.com/release/2988741-Wilson-McKinley-Spirit-Of-Elijah",
@@ -129,8 +158,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -158,22 +187,42 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 4,
-    "accessibility": 4,
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
     "listeners": 50,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：基督教重型迷幻私壓，次於首張 Gospel Rock；L=50 無串流→5；長段吉他 jam"
    },
    "rarity": "uncommon",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。原盤後有卡匣、1994 CD、2011與2015黑膠多次再發，不符從未再發",
+    "evidenceUrls": [
+     "https://www.last.fm/music/Agape/Victims%20of%20Tradition",
+     "https://musicbrainz.org/release-group/fb4dc169-6f2a-45a7-bda5-b9482391bad0"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
-    "text": "封底印的曲序把 B 面前兩首對調，唱片標籤上才是對的。1972 年 Renrut 的原盤 credit 有四個名字，比前一張多了 Jim Hess 的鍵盤，曲式跟著拉長——〈Wouldn't It Be A Drag?〉七分三十三秒，另有一段題為〈Jazz Jam Part 1〉的器樂，Discogs 的風格標記也從前一張的 acid rock 換成 prog rock。封面是他們在墓園裡演出的照片。隔年的四軌卡匣把那首長曲從中間剖成兩段，分放兩個程式。",
+    "text": "《Victims of Tradition》是加州樂團 Agape 的第二張專輯，1972 年自行發行。Agape 是最早的基督教搖滾團之一，當時教會多不接受大音量音樂，他們只在海灘、學校與公園演出，原版唱片非常少見，1990 年代才重發 CD。吉他手 Fred Caban 信教後為向同齡人傳福音組團，這張加入鍵盤手 Jim Hess，路線比前作更偏前衛。樂團的底子是 Cream 一路的藍調硬搖滾，演奏帶著車庫樂團的粗拙；這張曲子拉長，〈Wouldn't It Be A Drag?〉長七分半，還有一段器樂〈Jazz Jam Part 1〉。",
     "sourceUrls": [
      "https://www.discogs.com/release/4548589-Agape-Victims-Of-Tradition",
      "https://www.discogs.com/release/11822929-Agape-Victims-Of-Tradition",
@@ -192,8 +241,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -221,12 +270,21 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
+    "classic": 4,
     "obscurity": 4,
     "accessibility": 2,
     "listeners": 1250,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：樂團唯一專輯、基督教前衛迷幻收藏名盤；Elco 私壓、有考古再發串流→4；風琴前衛搖滾"
    },
    "rarity": "rare",
    "apexAssessment": {
@@ -249,7 +307,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/Music/v4/a2/da/b3/a2dab3e7-b787-1621-6c43-7296630f5f2d/mzaf_2644660209952634990.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/Music/23/a3/c1/mzm.sufexysi.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -289,14 +347,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 4,
+    "classic": 4,
+    "obscurity": 5,
     "accessibility": 2,
     "listeners": 333,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：樂團唯一作、Destiny 小廠客壓；L=333 無串流→5；Jesus 民謠搖滾"
    },
-   "rarity": "rare",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -353,22 +420,42 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 4,
-    "accessibility": 2,
+    "classic": 4,
+    "obscurity": 5,
+    "accessibility": 3,
     "listeners": 22,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：樂團唯一作、基督教硬搖滾私壓收藏名盤；L=22 無串流→5；fuzz 吉他硬搖滾"
    },
-   "rarity": "rare",
+   "rarity": "epic",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。私壓耶穌搖滾，壓量無據，Guerssen已再發",
+    "evidenceUrls": [
+     "https://www.last.fm/music/Earthen%20Vessel/Hard%20Rock%20%2F%20Everlasting%20Life",
+     "https://musicbrainz.org/release-group/fe95c3fb-671d-38af-a4d6-74a47e0e2cac"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
-    "text": "納許維爾的製作人，一直嫌他的吉他走音。David Caudill 2011 年受訪時說，錄音在納許維爾的 Monument Studios 進行，由人稱「Colonel」的 Dave Mathes 主持，整場十一到十二小時。樂團 1970 年秋天成立於密西根州東蘭辛一間拿撒勒人會的教會，最初叫 The Rare Ones。Ken Fitch 與 Sharon Keel 兩人同時掛主唱、鍵盤與打擊；碟上只有六軌，〈I've Been Walkin'〉八分五十七秒。",
+    "text": "《Hard Rock / Everlasting Life》是密西根州教會樂團 Earthen Vessel 的自費專輯，靠巡演教會、校園與音樂節流通，壓量團員也不清楚，1999 年才出 CD，2012 年 Guerssen 重發 LP。1971 年 11 月他們在納許維爾的 Monument 錄音室用 11 到 12 小時錄完。樂團帶著成排擴大機，音量大、失真多，吉他用 fuzz 與 wah，Sharon Keel 的主唱接近 Jefferson Airplane；〈Life Everlasting〉開頭的指彈吉他用特殊調弦，讓上下三條弦同音。",
     "sourceUrls": [
      "https://www.psychedelicbabymag.com/2011/10/earthen-vessel-interview.html",
      "https://www.discogs.com/release/4507434-Earthen-Vessel-Hard-Rock-Everlasting-Life",
@@ -387,8 +474,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -418,11 +505,20 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 4,
+    "obscurity": 5,
     "accessibility": 2,
     "listeners": 87,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：雙 LP demo 回顧輯，非代表作；L=87 無串流→5；粗糙 demo 夾訪談"
    },
    "rarity": "rare",
    "apexAssessment": {
@@ -482,12 +578,21 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 4,
-    "accessibility": 2,
+    "classic": 5,
+    "obscurity": 3,
+    "accessibility": 1,
     "listeners": 2099,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：列 CCM Magazine 史上最偉大 25 張；L=2099→至少 3；柔和和聲民謠搖滾"
    },
    "rarity": "rare",
    "apexAssessment": {
@@ -548,14 +653,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
+    "classic": 4,
     "obscurity": 4,
-    "accessibility": 2,
+    "accessibility": 1,
     "listeners": 72,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：藝人唯一已知專輯、Jesus 民謠私壓收藏盤；Walnut Creek 小廠，L=72 有串流→4；柔和女聲民謠"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -575,7 +689,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview128/v4/ea/ab/66/eaab66a1-7f77-6679-abc3-fae4b2d93caf/mzaf_8863545273827343483.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview118/v4/7f/f9/53/7ff953bb-469a-649a-18ec-72bdc58b5f28/mzaf_1613120030868389968.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -616,12 +730,21 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 3,
+    "classic": 4,
     "obscurity": 4,
     "accessibility": 2,
     "listeners": 221,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Keaggy 離開 Glass Harp 後首張個人代表作；L=221 有串流→4；吉他民謠搖滾"
    },
    "rarity": "rare",
    "apexAssessment": {
@@ -645,7 +768,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/bd/4e/4e/bd4e4e6f-390e-a842-7708-982874d025e6/mzaf_17145143606191049658.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/0a/ea/28/0aea28e1-5ded-313f-2eea-22c840c7e329/mzaf_11999926425793169831.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -688,12 +811,21 @@
     "note": "試聽探測釘定的 collectionId 1404136772（us）：All Saved Freak Band — My Poor Generation"
    },
    "ratings": {
-    "classic": 2,
+    "classic": 4,
     "obscurity": 4,
     "accessibility": 2,
     "listeners": 324,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Jesus 迷幻搖滾圈代表作；公社私壓、已有串流 L=324→4；民謠搖滾易聽"
    },
    "rarity": "rare",
    "apexAssessment": {
@@ -713,7 +845,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/68/53/37/68533754-f552-3fe7-d300-0675b09c8bb1/mzaf_6147911142535591815.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/6b/57/5f/6b575f9a-d81a-82d8-2fbe-89266e296638/mzaf_2807350804917341383.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -754,14 +886,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
+    "classic": 3,
     "obscurity": 4,
     "accessibility": 2,
     "listeners": 49,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Word 首位 CCM 藝人的中期作；Myrrh，L=49 有串流→4；民謠搖滾"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -780,7 +921,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9f/5e/9f/9f5e9f43-b168-3b3a-fb99-3c10067f6bcc/mzaf_4509380428311452781.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c7/c2/2b/c7c22ba8-6efe-b563-e727-435661947268/mzaf_16133590813237042350.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -820,14 +961,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
+    "classic": 3,
     "obscurity": 4,
-    "accessibility": 2,
+    "accessibility": 1,
     "listeners": 37,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Honeytree 第二張，次於同名首作；L=37 有串流→4；女高音民謠流行"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -845,7 +995,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview124/v4/e8/67/f8/e867f8e7-702f-64d1-20e5-180e85a162e1/mzaf_3530656347606476959.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview124/v4/d9/46/24/d94624ac-d6ab-fb0a-5b7a-c18565e6414d/mzaf_15113300668949528605.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -885,22 +1035,42 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 4,
-    "accessibility": 2,
+    "classic": 4,
+    "obscurity": 5,
+    "accessibility": 3,
     "listeners": 186,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：堪薩斯私壓約 500 張、樂團唯一作；L=186 無串流→5；兩軌 lo-fi、ARP 合成器迷幻"
    },
-   "rarity": "rare",
+   "rarity": "epic",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。約500張私壓，但已有2006、2007兩版CD等多次再發",
+    "evidenceUrls": [
+     "https://www.last.fm/music/Concrete%20Rubber%20Band/Risen%20Savior",
+     "https://musicbrainz.org/release-group/a1bb6193-9d22-44ec-ae40-8a60514504d9"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
-    "text": "一台兩軌 Akai、兩台 ARP 合成器，還有一台低音鍵接進貝斯音箱的電鋼琴。堪薩斯鄉間的三人團，Jan 與 Duncan Long 這對姊弟加上鼓手 Bobby Rhodes，組團時還是青少年。Duncan Long 說，他們是在一場音樂教育者的研討會上才知道有自費壓片這條路，這樣不必牽扯大廠也能保有創作控制權；唱片在當地壓了大約五百張，錢由團員自己出。九軌以六分十二秒的同名曲開場，機器底噪留在成品裡。樂團散了以後存貨分掉，他把自己那份大多送給學生。",
+    "text": "《Risen Savior》是堪薩斯鄉間三人團 Concrete Rubber Band 的私壓專輯，1974 年在當地壓了約 500 張，只在演出時賣，多數已遺失，2006 年才有官方授權 CD；它被視為同類唱片中獨一無二的一張。成員是組團時還是青少年的姊弟 Jan Long、Duncan Long 與鼓手 Bobby Rhodes，兩姊弟包辦人聲、電子琴、風琴、合成器與吉他。層層類比合成器、fuzz 與 wah-wah 吉他和姊弟和聲忽進忽出：〈Christian〉以巴哈式賦格開場，〈Wicked〉滿是合成器的冒泡聲、頻率振盪與短波靜電。",
     "sourceUrls": [
      "https://tenrecords.blogspot.com/2013/07/the-concrete-rubber-band-believers-from.html",
      "https://www.discogs.com/release/1092081-Concrete-Rubber-Band-Risen-Savior",
@@ -918,8 +1088,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -949,13 +1119,22 @@
    },
    "ratings": {
     "classic": 4,
-    "obscurity": 4,
+    "obscurity": 3,
     "accessibility": 2,
     "listeners": 2486,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Petra 首張、列 70 年代百大 CCM；Myrrh 流通 L=2486→3；鄉村搖滾吉他"
    },
-   "rarity": "uncommon",
+   "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -976,7 +1155,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/f2/76/33/f2763367-078e-e9a8-60a6-c0b8e5272dff/mzaf_2395870890842608507.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/d6/48/29/d64829a1-224f-ebbb-a930-8a170dd2197d/mzaf_16077408000666439060.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -1017,19 +1196,40 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
+    "classic": 3,
     "obscurity": 5,
     "accessibility": 2,
     "listeners": 3,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 5,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：樂團偷錄現場、非代表；Not On Label，L=3 無串流→5；鬆散 Jesus 搖滾"
    },
    "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
-    "reason": "已評估：obscurity=5、listeners=3，但本批未取得 §3 要求的跨來源長期共識證據（至少兩個證據網址），依 §3「可先作一般卡上架」先列一般卡，補證後再升。",
-    "evidenceUrls": []
+    "reason": "頂點重整（apex-rebalance-20261103，2026-11-03）：原流亡降為一般卡。同級內一藝人一張：Wilson McKinley pearl 留《Spirit of Elijah》。經典度 4，基督教迷幻圈公認的聖杯",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": true,
+     "tier": "pearl",
+     "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。L3有效，手工噴印私壓，但另有兩個後期壓片、樂團總銷約七萬；壓量無據；不到7",
+     "evidenceUrls": [
+      "https://www.last.fm/music/Wilson%20McKinley/On%20Stage",
+      "https://musicbrainz.org/release-group/d90b40f1-f6d2-42db-8e2f-37650213359e"
+     ],
+     "source": "manual:audit-20261102"
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:apex-rebalance-20261103"
    },
    "description": {
     "text": "樂團不知道那場演出有人在錄音，被告知要出成專輯時嚇壞了。那是一場佈道外展活動，地點在加拿大卑詩省溫哥華的 Pender Auditorium；Mike Messer 說台上是一支鬆散、練得不夠的樂團，另有人臨時加進來打康加。首版封套用回收的薄紙板、以手工模板噴印，廠牌欄寫 Not On Label、沒有目錄號，兩面交給俄亥俄州的 Rite Record Productions 客壓。唱片靠所謂的 Highway Missionaries 發傳單賣出去。",
@@ -1080,14 +1280,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 4,
-    "accessibility": 2,
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 1,
     "listeners": 1329,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：樂團唯一專輯、Maranatha 經典；L=1329→至少 3，正規廠流通→3；柔和民謠搖滾"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1106,7 +1315,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/51/0d/8f/510d8fb2-c60b-470b-0b7b-fcc10042075d/mzaf_10020962225020272767.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/4f/73/41/4f734147-040d-b1f2-8488-c19dab4a395c/mzaf_3058265462535035388.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -1146,14 +1355,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 4,
-    "accessibility": 2,
+    "classic": 4,
+    "obscurity": 5,
+    "accessibility": 3,
     "listeners": 453,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Trees Community 唯一 LP、迷幻民謠私壓聖杯；L=453 無串流→5；12 分鐘詩篇、西塔琴長吟"
    },
-   "rarity": "rare",
+   "rarity": "epic",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1211,14 +1429,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 4,
-    "accessibility": 2,
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 1,
     "listeners": 1161,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Love Song 主唱個人首張、Jesus music 經典；Good News 正規流通 L=1161→3；柔和民謠流行"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1236,7 +1463,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/68/2a/e0/682ae0a5-1cf9-d3a9-fa0f-20d9d0029596/mzaf_12990049128953361492.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/44/3a/2d/443a2d1f-e265-2082-a133-de22ec62a5fc/mzaf_2453963042532170037.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -1279,12 +1506,21 @@
     "note": "試聽探測釘定的 collectionId 716170525（us）：Gentle Faith — Gentle Faith"
    },
    "ratings": {
-    "classic": 2,
+    "classic": 4,
     "obscurity": 4,
     "accessibility": 2,
     "listeners": 643,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：樂團唯一專輯、Maranatha 民謠搖滾代表；L=643 有串流→下限 4；柔和民謠搖滾"
    },
    "rarity": "rare",
    "apexAssessment": {
@@ -1305,7 +1541,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview71/v4/d8/58/d7/d858d783-f19e-3fe9-5cd2-1017e5ad2f09/mzaf_2182198074399701126.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/8e/8a/67/8e8a67a7-290f-efab-7d42-7e8f8df9e11e/mzaf_3989159469023013116.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -1354,7 +1590,7 @@
     "source": "manual:depth-rubric",
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1373,7 +1609,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/52/6f/65/526f65fe-a246-507b-6843-09b401a1e302/mzaf_10917109218371467438.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/8c/f9/a6/8cf9a6bf-bb14-d968-5aff-bec964ed3e7e/mzaf_12185096918663203762.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -1415,13 +1651,23 @@
    },
    "ratings": {
     "classic": 4,
-    "obscurity": 4,
-    "accessibility": 2,
+    "obscurity": 3,
+    "accessibility": 1,
     "listeners": 5131,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 3,
+     "accessibility": 1,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Norman 三部曲收尾、CCM 史必提里程碑；L=5131 不套下限，圈外少知→3；流行搖滾",
+     "rarity": "rare"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：基督教搖滾重要作，但正典首位是 Only Visiting This Planet；經典 5→4｜L=5131"
    },
-   "rarity": "uncommon",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1439,7 +1685,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/7e/a7/89/7ea78974-9f58-57d5-4de8-1f5cf4063062/mzaf_13043564562876939132.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c5/26/79/c52679a1-4802-f911-d39a-d227d5090224/mzaf_14993920499593218868.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -1480,14 +1726,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 3,
+    "classic": 4,
     "obscurity": 4,
-    "accessibility": 2,
+    "accessibility": 1,
     "listeners": 259,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Keaggy 早期代表作之一，同名曲成聖詩標準；New Song 小廠，L=259 有串流→4；柔和民謠"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1505,7 +1760,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9d/3c/7a/9d3c7a19-1bc7-5133-a9e9-f70f41405fac/mzaf_12171561526844581683.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/5d/26/73/5d267390-c1c1-4fb5-0f49-1d53230bb87d/mzaf_2188836242070815578.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -1546,12 +1801,21 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 4,
-    "accessibility": 2,
+    "classic": 4,
+    "obscurity": 5,
+    "accessibility": 1,
     "listeners": 546,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Stonehill 經典之作、Solid Rock 名盤；L=546 試聽無→下限 5；民謠流行搖滾"
    },
    "rarity": "rare",
    "apexAssessment": {
@@ -1608,12 +1872,21 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 3,
+    "classic": 4,
     "obscurity": 4,
     "accessibility": 2,
     "listeners": 899,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Daniel Amos 早期代表作、CCM 鄉村搖滾名盤；L=899 有串流→4；鄉村搖滾加組曲"
    },
    "rarity": "rare",
    "apexAssessment": {
@@ -1633,7 +1906,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/4e/5e/3b/4e5e3b17-b1c4-f7ab-8d96-fdc1f879afc8/mzaf_10581684280804212437.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/b4/82/42/b48242ec-ec1b-d326-6a50-078b54e12aae/mzaf_11681561423469413300.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -1676,14 +1949,23 @@
     "note": "試聽探測釘定的 collectionId 716453216（us）：Sweet Comfort Band — Sweet Comfort"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 4,
-    "accessibility": 2,
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 1,
     "listeners": 1588,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：SCB 首張；Maranatha 流通 L=1588→3；柔和靈魂流行"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1701,7 +1983,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/36/11/ed/3611ed52-1d7e-df84-2cb6-7f931b05ed17/mzaf_14579513066846591508.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c4/4e/c9/c44ec974-ca82-8782-60a8-383e3cb63ef6/mzaf_4665012058647403923.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -1742,14 +2024,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
+    "classic": 3,
     "obscurity": 4,
-    "accessibility": 2,
+    "accessibility": 1,
     "listeners": 238,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Girard 第二張，次於首張；L=238 有串流→下限 4；軟搖滾流行"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1767,7 +2058,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/5e/35/9c/5e359c8c-7cd1-1110-c5e0-6373e34d46e2/mzaf_12583269869775838035.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/Music/46/9d/51/mzm.tllmeqwf.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -1808,13 +2099,22 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 4,
+    "obscurity": 3,
     "accessibility": 2,
     "listeners": 2342,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Petra 第二張，前期過渡作；Myrrh 正規流通 L=2342→3；硬搖滾帶南方吉他"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1873,19 +2173,40 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 4,
+    "classic": 3,
+    "obscurity": 5,
     "accessibility": 2,
     "listeners": 2,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：樂團第二張、Chrism 小廠；L=2 無串流→5；民謠搖滾"
    },
    "rarity": "rare",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "reason": "頂點重整（apex-rebalance-20261103，2026-11-03）：原流亡降為一般卡。同級內一藝人一張：Hope of Glory pearl 留《Under the Spout Where the Glory Comes Out》。兩張強度相同；取首張、場景名氣較高者",
+    "evidenceUrls": [],
+    "previous": {
+     "eligible": true,
+     "tier": "pearl",
+     "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。小廠／自發盤、聽眾<300，但壓量未見數百張以下的確據，也非收藏圈公認聖杯；只到 5",
+     "evidenceUrls": [
+      "https://www.last.fm/music/Hope%20of%20Glory/Second%20Look",
+      "https://musicbrainz.org/release-group/01988d62-f2e2-47ce-ba68-e91a6c365a6b"
+     ],
+     "source": "manual:audit-20261102"
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:apex-rebalance-20261103"
    },
    "description": {
     "text": "錄音室是一位管風琴家在 1950 年代開的，裡面裝著一部大型管風琴。Discogs 的廠牌條目記載，Glendale 的 Whitney Recording Studios 由 Lorin Whitney 創辦，是錄音室兼錄音帶複製廠；Barry White 早期的暢銷曲都錄在這裡，那部管風琴被 Billy Joel 彈進〈Captain Jack〉。本盤的錄音與重混都在此。發行者 Chrism 是堪薩斯州 Mission 的廠牌，隸屬 Tempo Records。",
@@ -1940,14 +2261,23 @@
     "note": "試聽探測釘定的 collectionId 291441332（us）：Sweet Comfort Band — Breakin' the Ice"
    },
    "ratings": {
-    "classic": 2,
+    "classic": 3,
     "obscurity": 4,
-    "accessibility": 2,
+    "accessibility": 1,
     "listeners": 700,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：SCB 第二張，代表作為 Hearts of Fire；L=700 有串流→4；靈魂流行搖滾"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -1966,7 +2296,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/01/d7/0e/01d70ef9-4a2f-340c-bba6-68fe472d27cf/mzaf_4996198989024558101.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/44/aa/22/44aa2280-994a-bb9e-d9d4-f7cf46b3f8f8/mzaf_5206444309678979236.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -2007,14 +2337,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 3,
-    "obscurity": 4,
-    "accessibility": 2,
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 3,
     "listeners": 1439,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Rez Band 首張、基督教硬搖滾/金屬開山作；L=1439→3；重型藍調硬搖滾"
    },
-   "rarity": "rare",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2032,7 +2371,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/cf/fb/81/cffb819c-8b90-a4b6-3330-5efb07e8d664/mzaf_1885377519069820873.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/7d/de/eb/7ddeebc7-7095-16f5-321c-4992f8628805/mzaf_12621508807546734815.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -2073,12 +2412,21 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 3,
+    "classic": 4,
     "obscurity": 4,
     "accessibility": 2,
     "listeners": 406,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 3,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Talbot 天主教禮儀音樂代表作；L=406 有串流→4；合唱管弦民謠，柔和"
    },
    "rarity": "rare",
    "apexAssessment": {
@@ -2098,7 +2446,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/e3/d1/2b/e3d12b94-75e1-6e52-d017-7a03b23253f5/mzaf_3076126943561961486.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/8d/36/56/8d3656f3-c9b4-3c0b-bda7-7eb957c4b3da/mzaf_13983228058737432689.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -2139,14 +2487,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
+    "classic": 3,
     "obscurity": 4,
-    "accessibility": 2,
+    "accessibility": 1,
     "listeners": 290,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Heard 早期作，代表作在 80 年代後；Solid Rock，L=290 有串流→4；原聲民謠"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2165,7 +2522,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/ca/29/90/ca29908c-261c-8b83-5f90-47be59dfcd0a/mzaf_4076830610774862184.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/Music7/v4/e6/6c/ad/e66cad74-0cd8-6afd-dca6-97547741db5d/mzaf_210634835870598934.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -2205,14 +2562,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
+    "classic": 3,
     "obscurity": 4,
     "accessibility": 2,
     "listeners": 240,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Servant 早期作，非代表；Tunesmith 加拿大盤，L=240 有串流→4；搖滾"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2231,7 +2597,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/aa/ed/c6/aaedc64f-3afc-a14e-5642-0f115ff1e670/mzaf_3500430706154000660.plus.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/44/61/40/4461402c-b7ad-242b-ffad-a1439ed4951a/mzaf_14534856840926860562.plus.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",
@@ -2279,7 +2645,7 @@
     "source": "manual:depth-rubric",
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2338,14 +2704,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
-    "obscurity": 4,
+    "classic": 4,
+    "obscurity": 5,
     "accessibility": 2,
     "listeners": 197,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Stonehill 公認代表作之一，Norman 製作；L=197 試聽無→下限 5；新浪潮味搖滾"
    },
-   "rarity": "rare",
+   "rarity": "uncommon",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2400,14 +2775,23 @@
     "checkedAt": "2026-08-31T00:00:00.000Z"
    },
    "ratings": {
-    "classic": 2,
+    "classic": 3,
     "obscurity": 4,
     "accessibility": 2,
     "listeners": 177,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 2,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "rare"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Clark 中期作，非代表；Seed 小廠，L=177 有串流→4；成人搖滾、長曲"
    },
-   "rarity": "rare",
+   "rarity": "common",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -2424,7 +2808,7 @@
    },
    "preview": {
     "status": "ready",
-    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/Music/cf/2c/05/mzm.pyldflyv.aac.p.m4a",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/Music/78/21/c6/mzm.inmlkowh.aac.p.m4a",
     "source": "apple",
     "httpStatus": 200,
     "checkedAt": "2026-08-31T00:00:00.000Z",

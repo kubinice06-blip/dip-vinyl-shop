@@ -28,12 +28,21 @@
     "discogsReleaseId": "2485097"
    },
    "ratings": {
-    "classic": 4,
-    "obscurity": 4,
+    "classic": 3,
+    "obscurity": 5,
     "accessibility": 4,
     "listeners": 2,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "epic"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Osborne 三重奏現場；L2 無串流→5；連續自由長段"
    },
    "rarity": "epic",
    "apexAssessment": {
@@ -93,21 +102,42 @@
    },
    "ratings": {
     "classic": 4,
-    "obscurity": 4,
-    "accessibility": 2,
+    "obscurity": 5,
+    "accessibility": 3,
     "listeners": 2,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 4,
+     "accessibility": 2,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "uncommon"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Tracey 自營 Steam 時期代表現場盤；L=2、無串流→下限 5；長篇後咆勃即興"
    },
-   "rarity": "uncommon",
+   "rarity": "epic",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。L2有效，但壓量無據、無收藏圈聖杯地位依據；屬5星冷門，不到7",
+    "evidenceUrls": [
+     "https://www.last.fm/music/Stan%20Tracey%20Quartet/Captain%20Adventure",
+     "https://musicbrainz.org/release-group/d9ed221d-260a-4f36-9a17-62f1bb685ed1",
+     "https://www.discogs.com/release/888330"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
-    "text": "廠牌收攤的理由據說很平常：零售通路要求庫存商品都得有條碼。Steam 1975 年成立，是 Stan Tracey 自己錄音的出口，妻子 Jackie Tracey 深度參與；他透過它重新發行了先前被大廠放到絕版的《Under Milk Wood》，廠牌到 1990 年代初停止營運。本盤是 Steam 的 SJ 102，錄於 1975 年 11 月 3 日倫敦 100 Club 的現場，1976 年發行；四軌從 7 分 55 秒到 15 分 43 秒。",
+    "text": "《Captain Adventure》是英國鋼琴家 Stan Tracey 的四重奏 1975 年在倫敦 100 Club 的現場錄音，1976 年由他自己的廠牌 Steam 發行；Steam 在 1990 年代初停業，後來才出擴充版 CD。這組四重奏被視為 Tracey 最好的陣容。編制是 Tracey 的鋼琴、Art Themen 的次中音與高音薩克斯風、低音提琴與鼓。Tracey 的鋼琴兼有打擊感、節奏感與旋律性；〈Doin' it for Art〉先以抒情慢板開場，再進入 Themen 的次中音獨奏，Tracey 只給樂手和弦，不給旋律。",
     "sourceUrls": [
      "https://www.discogs.com/release/888330-The-Stan-Tracey-Quartet-Captain-Adventure",
      "https://www.discogs.com/label/45651-STEAM",
@@ -126,8 +156,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   },
   {
@@ -157,13 +187,22 @@
    },
    "ratings": {
     "classic": 4,
-    "obscurity": 4,
+    "obscurity": 5,
     "accessibility": 4,
     "listeners": 0,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "epic"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：英國爵士兩代鋼琴二重奏要錄音；Steam/Emanem 小廠，無再發；L=0 試聽無→5；雙鋼琴自由即興"
    },
-   "rarity": "epic",
+   "rarity": "legendary",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -221,13 +260,22 @@
    },
    "ratings": {
     "classic": 4,
-    "obscurity": 4,
+    "obscurity": 5,
     "accessibility": 4,
     "listeners": 44,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:rerate-20261102",
+    "checkedAt": "2026-11-02T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 4,
+     "accessibility": 4,
+     "source": "manual:depth-rubric",
+     "checkedAt": "2026-08-31T00:00:00.000Z",
+     "rarity": "epic"
+    },
+    "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Riley 三重奏代表作；L44 無串流→5；自由鋼琴三重奏"
    },
-   "rarity": "epic",
+   "rarity": "legendary",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -283,14 +331,24 @@
     "discogsReleaseId": "1305252"
    },
    "ratings": {
-    "classic": 5,
-    "obscurity": 4,
-    "accessibility": 4,
+    "classic": 4,
+    "obscurity": 5,
+    "accessibility": 5,
     "listeners": 104,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 5,
+     "obscurity": 5,
+     "accessibility": 5,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Company 系列首作、Bailey 即興里程碑；L104 無串流→5；非慣用即興",
+     "rarity": "legendary"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：Incus 自由即興集體，Bailey 圈重要記錄；listeners 104 無串流→5。非殿堂（或可另列異端候選）｜L=104"
    },
-   "rarity": "epic",
+   "rarity": "legendary",
    "apexAssessment": {
     "eligible": false,
     "tier": null,
@@ -348,21 +406,43 @@
    },
    "ratings": {
     "classic": 3,
-    "obscurity": 4,
+    "obscurity": 5,
     "accessibility": 4,
     "listeners": 214,
-    "source": "manual:depth-rubric",
-    "checkedAt": "2026-08-31T00:00:00.000Z"
+    "source": "manual:audit-20261102",
+    "checkedAt": "2026-11-03T00:00:00Z",
+    "previous": {
+     "classic": 4,
+     "obscurity": 5,
+     "accessibility": 4,
+     "source": "manual:rerate-20261102",
+     "checkedAt": "2026-11-02T00:00:00Z",
+     "note": "三軸重評第二輪（RUBRIC＋ADDENDUM 2026-11-02）：Beresford 最常被提的個人盤；Piano 小廠、L=214 無串流→5；玩具樂器拼貼小品、封閉溝槽",
+     "rarity": "legendary"
+    },
+    "note": "全池稽核 audit-20261102（方案 C）：David Cunningham 的 Piano 小廠第 3 號、無串流再發；listeners 214｜L=214"
    },
-   "rarity": "uncommon",
+   "rarity": "epic",
    "apexAssessment": {
-    "eligible": false,
-    "tier": null,
-    "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
-    "evidenceUrls": []
+    "eligible": true,
+    "tier": "pearl",
+    "reason": "方案 C（audit-20261102，2026-11-03）：升為流亡（該軸 7 星）。L214有效，但壓量無據、無收藏圈聖杯地位依據；屬5星冷門，不到7",
+    "evidenceUrls": [
+     "https://www.last.fm/music/Steve%20Beresford/The%20Bath%20of%20Surprise",
+     "https://musicbrainz.org/release-group/eb6b3069-9d9a-3f23-a553-2c9ea345dc37",
+     "https://www.discogs.com/release/889723"
+    ],
+    "previous": {
+     "eligible": false,
+     "tier": null,
+     "reason": "已評估：三軸未觸及任何一種頂點卡的最低門檻，列為一般卡。",
+     "evidenceUrls": []
+    },
+    "assessedAt": "2026-11-03T00:00:00Z",
+    "source": "manual:audit-20261102"
    },
    "description": {
-    "text": "樂器表上列著洗澡水、指甲刷、音樂牙刷和一支會說話的電話。那份清單出自 1999 年日本 Amoebic 的 CD，前面還有鋼琴與玩具鋼琴、烏克麗麗。原盤是 1980 年英國 Piano 的 Piano 003，十四軌裡十三首由 Beresford 作曲，注記只寫：A 面結束在一道封閉溝槽裡。製作與錄音大半由 David Cunningham 負責；Discogs 的廠牌條目記 Piano 由他 1976 年創立，最初是為了發表自己的《Grey Scale》。",
+    "text": "《The Bath of Surprise》是英國即興樂手 Steve Beresford 1980 年的個人作，由 David Cunningham 主持的廠牌 Piano 發行，錄音由兩人一起完成。Beresford 1950 年生，待過 Alterations 與 Portsmouth Sinfonia。十四首曲子用的除了原聲吉他、鋼琴、玩具鋼琴、合成器、小號、鼓與電子裝置，還有玩具唱機、鴨鳴笛、洗澡水和氣球，日常物件和玩具跟樂器一樣拿來即興。",
     "sourceUrls": [
      "https://www.discogs.com/release/889723-Steve-Beresford-The-Bath-Of-Surprise",
      "https://www.discogs.com/label/18854-Piano",
@@ -380,8 +460,8 @@
     "cardCatalog": true,
     "descriptionKv": true,
     "albumOverride": true,
-    "seedCards": true,
-    "apexPool": false
+    "seedCards": false,
+    "apexPool": true
    }
   }
  ]
