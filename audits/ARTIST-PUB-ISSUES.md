@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1713 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1719 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -1717,3 +1717,9 @@
 | ar-u-028 | Liz Story | Solid Colors | 樂評提到的重點是她讓每首曲子保持結構完整的能力 | 『scrupulous sense of compositional unity』是 Stephen Holden 評她 1986 年 The Bottom Line 現場演出的話（維基 Liz Story 條目），不是對《Solid Colors》專輯的評語；建議改為『樂評人 Holden 在 1986 年的現場評論中稱讚…』或刪除。 | https://en.wikipedia.org/wiki/Liz_Story |
 | ar-u-029 | Love Live Life | 殺人十章 | 1972 年 CBS/Sony 推出 | Progarchives 搜尋摘要寫 1974 年（署名市原宏祐與 3L）；Discogs 403 未能核實，建議店主本機對 Discogs release 8037977 查發行年 | https://www.discogs.com/release/8037977 |
 | ar-u-029 | Men I Trust | Headroom | 主唱 Emmanuelle Proulx 要到 2016 年 3 月才加入 | PAN M 360 2022 訪談稱 Emma 2015 年加入、搜尋摘要另引成員『我 2015 年加入』；Bandcamp 寫 2016 年 3 月以全職身分加入，兩說可能指兼職與全職，無法定論，僅供店主留意 | https://panm360.com/en/interviews-panm360/osheaga-2022-men-i-trust-chats-influences-and-diy-indie-success/ |
+| ar-u-029 | Michael Angelo | Michael Angelo | 幾乎全用他自己錄（上線簡介未寫鼓手） | 訪談稱鼓手 Frank Gautieri 參與錄音，上線簡介若寫成他一人包辦需補此點；原句未在事實庫呈現，僅供留意 | https://www.psychedelicbabymag.com/2020/05/michael-angelo-interview.html |
+| ar-u-030 | Mike & Rich | Expert Knob Twiddlers | 雛形是 Richard 找三五好友到家裡喝酒、看足球…再帶到客廳放給大家投票 | 本次可開的頁面（Bandcamp Daily、Mixmag）只證實兩人在 James 住處喝醉錄製，未證實朋友投票與看足球的敘述；該說法來源待核（可能出自 Thump 口述史，本環境無法開啟）。 | https://daily.bandcamp.com/2016/08/08/review-mike-and-rich-expert-knob-twiddlers/ |
+| ar-u-030 | Mo' Horizons | Come Touch the Sun | 12 首都錄於漢諾威 | 本層未查到錄音地點的來源；維基與 Agogo 頁都沒寫，建議核對或刪除 | https://www.agogo-records.com/?p=3722 |
+| ar-u-030 | Molam Lao | Music from Southern Laos | 這張以樂團名義掛牌，在寮國盤裡是少見的形態 | 沒有找到來源支持『少見』；建議核對或刪除 | https://www.wyastone.co.uk/music-from-southern-laos.html |
+| ar-u-030 | Moriyama Takeo Percussion Ensemble | Full Load | 官方略歷記他 1945 年生於山梨県勝沼市 | 日文維基寫生於東京品川、在勝沼長大；與官網不一致，建議改寫成『在山梨縣勝沼長大』 | https://ja.wikipedia.org/wiki/森山威男 |
+| ar-u-030 | Murple | Io sono Murple | 十二軌連成一首組曲；1974 年由 BASF 的義大利發行線 Fare 出版 | Record Collector 商品頁稱專輯分兩面各一部分（Prog 圈站另說各六個樂章）、並稱初版只在德國發行；與上線簡介『義大利發行線 Fare』不一致，來源品質不足以定案，供店主參考。 | https://www.recordcollector.org/the-collection/murple-io-sono-murple.html |

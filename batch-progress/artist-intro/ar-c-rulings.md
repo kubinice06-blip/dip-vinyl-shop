@@ -2548,3 +2548,10 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 34 位全寫：17 full、17 thin。
 - 題材照寫：Sevdaliza 回應川普入境禁令與 Mahsa Amini 之死的抗議歌；Space Afrika 回應喬治·佛洛伊德之死與英國種族歧視；Dylan Carlson（Earth）海洛因成癮、戒治與服刑；Tricky 少年犯罪與偽鈔入獄；Chelsea Wolfe 的睡眠癱瘓；Lycia 的 VanPortfleet 與糖尿病搏鬥；Peter Rehberg 2021 年過世。
 - 主線審稿 0 處。King Krule 與 Archy Marshall 是同一人的兩張卡，內容分開寫、未互抄。
+
+## ar-u-029（2026-11-05，thin 升級：Logan Richardson～Michael Angelo）
+
+- 40 位中 11 位升 full 上線；29 位補洞後仍 thin、保留上線版（名單見 progress.json skipped）。
+- 題材照寫：Marta Kubišová 1970 年起被禁唱、遭偽造照片抹黑、簽署《七七憲章》、天鵝絨革命時在瓦茨拉夫廣場重新開唱；Major Harris 死於充血性心肺衰竭。
+- 主線審稿 6 處：Logic System「冨田勲」改台灣字形「冨田勳」；Marc Coppey 刪 Diapason d'Or（雜誌獎、兩源同稿，在世者留萊比錫巴赫大賽一處）；Marta Kubišová 壓回 250 字（3 處）；Mary See the Future「EP讓」補空格。
+- **上線 thin 稿改正 7 位**（補洞層 thinIssues 查出的錯，改原上線檔）：Makoto Matsushita「吉野藤丸」改「芳野藤丸」並改寫 AB'S 成因；Maulawi「簧管手」改「薩克斯風手」、刪無來源的「與 Muhal Richard Abrams 親近」「請樂手下台上課」，補 AACM 外圍與 DeJohnette 出道（兩源）；Maribou State 改 2011 年組成、刪摩洛哥與北京古箏；Masao Nakajima 改 9 歲接觸爵士、13 歲看 Peterson 現場；Mehrpouya 刪「轉行做裝潢」「電影配樂」；Manhattan Jazz Orchestra 刪無來源的編曲評語；Marconi Notaro 刪「拉格式段落」「浸透 fuzz」。
