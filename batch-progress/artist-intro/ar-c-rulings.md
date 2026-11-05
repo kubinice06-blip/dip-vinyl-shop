@@ -2621,3 +2621,10 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 39 位寫：14 full、25 thin；Hipnosis 三格全空，不寫（skipped）。
 - 題材照寫：Harold Budd 2020 年因新冠併發症辭世；Jóhann Jóhannsson 2018 年因心臟衰竭辭世；God Body Disconnect 的團名來自 Moallem 自述的一次精神病發作；Hallucinator 專輯獻給 1993 年遇刺的 Stephen Lawrence。
 - 主線審稿 2 處：Ian William Craig 第一句補「加拿大歌手與作曲家」；Gaudi + Nusrat「世界最偉大的 qawwali 歌手」軟化為「最具代表性的 qawwali 歌手之一」。
+
+## ar-d-509（2026-11-05，電子、電聲、dark ambient、synth-pop、實驗；多合作卡）
+
+- 39 位寫：22 full、17 thin；Kloob & Onasander 只有一條來源，「Landini 即 Onasander」也是推得，主線撤稿（skipped）。
+- 2025 年事實主線核實：Marie Davidson《City of Clowns》入圍 2025 年 Polaris 音樂獎短名單（CBC、Billboard Canada 兩源）。
+- 題材照寫：Kirlian Camera 1999 年遭德國媒體指控新法西斯傾向、樂團否認，抗議與演出取消延續到 2002 年；Lab Rat XL（James Stinson）2002 年心臟病併發症過世；Maryanne Amacher 2009 年摔傷後中風辭世；Luke Schneider 自述生活失控、恐慌發作（「自行戒斷」一句只有本人單源，刪）。
+- 主線審稿 16 處：單名卡超 250 字壓回——Kirlian Camera 265→241（刪團名由來、補「義大利樂團」）、Maryanne Amacher 279→245（刪父親職業與 Cage 暴風雨音效、補「美國作曲家」）；第一句補國籍或身分——Jonty Harrison、Karl Bartos、Kristof Hahn、Luke Schneider、Marie Davidson、Marcus Schmickler、Michael Brook、Mount Vernon Arts Lab（連帶刪細節壓字數）；Harrison 刪「該賽史上最重要的作品之一」。

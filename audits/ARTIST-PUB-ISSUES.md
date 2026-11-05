@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1766 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1772 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -1543,6 +1543,12 @@
 | ar-d-508 | Jim Williams | Possessor | 2021 年拿下 Gérardmer 影展最佳原創配樂 | 本層查的維基與訪談未見此獎；未能證實也未能否證，請本機核對 | https://en.wikipedia.org/wiki/Jim_Williams_(composer) |
 | ar-d-509 | Kloob & Onasander | Mundus Patet | 兩人在 Facebook 上結識，互相剪輯對方的音軌；合作的方式是交換一層層音軌 | Winter-Light 頁面寫『Landini 與 Kloob 一起製作並錄下所有曲目』，沒有提到 Facebook 結識或交換音軌，也未說是遠距；此說法來源待核（若無出處建議刪除） | https://winter-light.bandcamp.com/album/mundus-patet |
 | ar-d-509 | Kolhoosi 13 | Monuments of Power | 這套六首、總長約 43 分鐘的音景 | Side-Line 新專輯報導寫 eight tracks，與簡介的『六首』不符（Cryo Chamber 頁的曲目表可再核對；總長 43 分鐘未驗） | https://www.side-line.com/new-album-by-the-finnish-duo-kolhoosi-13-monuments-of-power-available-now-for-pre-order-at-cryo-chamber |
+| ar-d-509 | Martin Tétreault | La nuit où j'ai dit non | 1984 年他把一張吉他唱片剪開重排，從此走上自由即興 | 本次查證（FIMAV、維基、大友良英訪談）都找不到 1984 年剪吉他唱片的說法；FIMAV 只寫「1984 年起」唱片缺席是語言的母體，未說明是何事。建議本機核對該句來源。 | https://www.fimav.qc.ca/en/?p=5639 |
+| ar-d-509 | Michael Brook | Hybrid | 一個音可以無限延長，這把吉他由他發明 | Wikipedia 的 Infinite Guitar 條目註明 Jim O'Rourke 主張 Brook 是改良既有設計，且 1978 年 Roos 與 Holland 已有帶無限延音的改裝琴；「由他發明」建議改成「他做出的」或加限定。 | https://en.wikipedia.org/wiki/Infinite_Guitar |
+| ar-d-509 | Neizvestija | Majak | 1957 年，廠內的廢料儲槽爆炸，蘇聯否認了將近 30 年 | Cryo Chamber 專輯頁文案未提 1957 與否認年數；搜尋摘要有 1957 年 Kyshtym 事故，『否認將近 30 年』未見來源，需主線核對原先廠方文字 | https://cryochamber.bandcamp.com/album/majak |
+| ar-d-510 | Opening Performance Orchestra Plays Phill Niblock | Four Walls Full of Sound | 起點是 2017 年 Ostrava Days 的一場現場演出 | Ostrava Days 2019 官方節目表列〈Four Walls Full Of Sound〉為 2019 年 8 月 22 日 BrickHouse 的 60 分鐘演出，HISvoice 評論也寫 2019 年夏天；2017 一說只見於商店文案。建議簡介改為 2019 年 Ostrava Days 或刪除年份，需店主核對 Sub Rosa 的官方說明。 | https://www.newmusicostrava.cz/en/articles/2187-ostrava-days-2019.html |
+| ar-d-510 | Ta-ku | Dowhatyoulove | 《Songs to Break Up To》登上 ARIA 專輯榜第 18 名 | allaussiehiphop.com 搜尋摘要稱該專輯在 Australian Albums Chart 為第 40 名，與維基第 18 名衝突；未開頁驗證，待本機查 ARIA 榜。 | https://allaussiehiphop.com/2013/11/04/ta-ku-songs-to-break-up-to |
+| ar-d-510 | Purrple Cat | Bloom | Purrple Cat 是一個不露面的匿名 lo-fi hip hop 計畫（Tranquil Trails 簡介亦稱匿名） | 搜尋摘要稱本名公開（Emma Wilson，美國製作人兼視覺藝術家，來自 Last.fm／everybodywiki 轉述），與『匿名』不符；兩源皆未能開頁驗證，建議本機確認後再決定是否修改。 | https://en.everybodywiki.com/Purrple_Cat |
 | ar-d-929 | Erik Truffaz | Rollin' | 2000 年簽進這個廠牌 | 上線簡介沿用 Blue Note 官網簡介的 2000 年簽約說；但維基與已上線的《Out of a Dream》《The Dawn》《Bending New Corners》簡介顯示 1997–1999 年已在 Blue Note 發片，瑞士聯邦文化局新聞稿也記《Bending New Corners》為 1999 年 Blue Note 專輯，2000 年簽約的說法與之矛盾，建議改為不寫簽約年。 | https://musikzeitung.ch/en/?p=44583 |
 | ar-d-929 | Erik Truffaz | The Walk of the Giant Turtle | 前一張四重奏盤在法國賣到十萬張的金唱片 | 維基只寫《Bending New Corners》（1999）是法國 Silver Album；本張的前一張是《Mantis》（2001），並非《Bending New Corners》。需核對金唱片的專輯歸屬與認證層級。 | https://en.wikipedia.org/wiki/Erik_Truffaz |
 | ar-d-929 | Stanley Jordan | Magic Touch | 九軌裡有五軌只有一把電吉他 … 六軌只有他的電吉他 | 同一則簡介前後自相矛盾：五軌 vs 六軌；事實庫引 jazzdisco 為六軌純獨奏、其餘三軌各配一組節奏，應統一為六軌。 | https://en.wikipedia.org/wiki/Magic_Touch_(Stanley_Jordan_album) |
