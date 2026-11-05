@@ -1,5 +1,14 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-05｜dip-vinyl-shop｜藝人介紹十批上線（雲端，ar-d-131～138＋thin 升級 ar-u-029、030；介紹 9,384 → 9,650）
+
+- 先處理積壓：PR #80（第八～十二輪）三週未合、與 main 撞號（main 另有 ar-d-129～138），本分支舊 ar-d-129～140 改號 ar-d-929～940，合併 main 後依 2026-10-21 規則自行合併。
+- 結果：新卡藝人 ar-d-131～138 共 276 位，寫 266 位（181 full、85 thin），不寫 10 位（查無資料或沒有聲音句）；thin 升級 80 位中 19 位升 full；順帶改正上線 thin 稿 13 位（人名、樂器、得獎與否、無出處細節）。
+- 派工範本 `prompts/artist-dispatch.md` 移除「死因與案情細節預設避免」，改寫店主「題材沒有禁區」裁定。
+- 2026 年事實主線開頁核實：Melingo、Yanka Rupkina、Calbo 過世；Sek Loso 判刑與假釋；熊仔《PRO》金曲最佳華語專輯；Magnolian 入《Death Stranding 2》。
+- 主要檔案：`data/artist-intros/*`、`desc-tools/batches/artist/{cut,facts,research,output}/ar-{d-131～138,u-029,u-030}-*`、`desc-tools/batches/artist/progress.json`、`batch-progress/artist-intro/ar-c-rulings.md`（各批與收尾段）、`prompts/artist-dispatch.md`、`audits/ARTIST-PUB-ISSUES.md`。
+- 驗證：qa-artist gap／out 每批 0 處（只剩不寫或保留 thin 的缺位）；build-artist-intros 64 分片、9,650 位；分支不落後 main。
+
 ### 2026-11-05｜dip-vinyl-shop｜按串流連結去聽歌、切回網頁串流被停：點串流按鈕當下交還音訊＋關自動試聽
 
 - **店主 11-05**：「玩選歌遊戲按串流連結去聽歌，換回網頁時串流的音樂就停了。」

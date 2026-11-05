@@ -2561,11 +2561,11 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 40 位中 8 位升 full 上線；32 位補洞後仍 thin、保留上線版。
 - 題材照寫：Misty in Roots 成員在反國民陣線示威中遭警察擊傷、The Ruts〈Jah War〉、反種族主義與支持辛巴威獨立；Nite Jewel 批評 chillwave 史漏掉拉丁裔女性；Nérija 出身扭轉爵士女性比例的培訓計畫。
 - 主線審稿 2 處：森山威男條片假名「山下洋輔トリオ」改「山下洋輔三重奏」；Non Band 條「玉垣満」改「玉垣滿」並改順句子。
-- **上線 thin 稿改正 8 位**：Necros 刪「替 Misfits 最後一場開場」（不精確）；NORIKI 改為「1985 年擔任渡邊貞夫《My Dear Life》音樂總監」（原「被延攬為樂團音樂總監」說過頭）；Mystic Eyes 刪無出處的 King Tubby 院子舞會；Milton Marsh 蘇非詩朗誦改在標題曲中段；Modern Talking 刪「由錄音室合聲團製造」；Mid-Air Thief 補上「拿下最佳舞曲與電子專輯」（原只寫入圍）。
+- **上線 thin 稿改正 6 位**：Necros 刪「替 Misfits 最後一場開場」（不精確）；NORIKI 改為「1985 年擔任渡邊貞夫《My Dear Life》音樂總監」（原「被延攬為樂團音樂總監」說過頭）；Mystic Eyes 刪無出處的 King Tubby 院子舞會；Milton Marsh 蘇非詩朗誦改在標題曲中段；Modern Talking 刪「由錄音室合聲團製造」；Mid-Air Thief 補上「拿下最佳舞曲與電子專輯」（原只寫入圍）。
 
 ## 2026-11-05 十批收尾
 
-- 新藝人 ar-d-131～138（276 位排隊中）寫 266 位上線（160 full、106 thin），不寫 10 位（查無資料或沒有聲音句，過不了 thin 門檻）。
-- thin 升級 ar-u-029、030：80 位中 19 位升 full，61 位保留；順帶改正上線 thin 稿 15 位。
+- 新藝人 ar-d-131～138（276 位排隊中）寫 266 位上線（181 full、85 thin），不寫 10 位（查無資料或沒有聲音句，過不了 thin 門檻）。
+- thin 升級 ar-u-029、030：80 位中 19 位升 full，61 位保留；順帶改正上線 thin 稿 13 位。
 - 2026 年事實主線開頁核實：Melingo、Yanka Rupkina、Calbo 過世；Sek Loso 判刑與假釋；熊仔《PRO》金曲最佳華語專輯；Magnolian 入《Death Stranding 2》。
 - 名冊 `roster-20260929.json` 裡另有 182 位歷輪試過、資料不足而未寫的藝人，不再重派。
