@@ -1,5 +1,15 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-05｜dip-vinyl-shop＋dip-vinyl-worker｜spotify-replaced-20261105：被 MB 覆核清掉的 Spotify 連結補回 29 張
+
+- **店主 11-05**：Dudley Perkins《A Lil' Light》Spotify 按鈕灰，但 Spotify 有《Lil' Light》。成因：worker 覆核把模糊命中一律清空（`replacedSpotifyAlbum`），10-21 的連結修復又刻意跳過這類鍵。
+- **重查**：卡池內此類 64 鍵。MB url-rels 有登錄 20 張，oEmbed 核名收 19（不收 Sasha & Digweed→Redux 重混）；其餘逐張判，同一張只差寫法的 11 張用 Spotify 搜尋，收 10（不收 Ohbliv 2009／2021 版本不明）；33 張真的配錯或版本不明維持灰。
+- **寫入**：KV `cover6:*` 29 鍵補 `spotifyUrl`（`spotifyFix: replaced-recheck-20261105:*`），回讀 29/29；舊值 `before.json`。Spotify API 用 11 次。
+- **worker**：PR #4 已合併——覆核清空前先查 MB release-group url-rels，有 Spotify 就用。**待店主本機 `npx wrangler deploy`。**
+- **未處理**：10-21 留下 MB 也沒有的約 3,851 張仍灰，要第二個 Spotify app。
+- 主要檔案：`batch-progress/spotify-replaced-20261105/`（rulings、replaced、applied、before、工具）、`dip-vinyl-worker/src/index.js`。
+- **驗證**：worker `/spotify-search` 回出《A Lil' Light》→ `1AFgQGXopp8xdcMNTZZumR`。
+
 ### 2026-11-05｜dip-vinyl-shop｜prune-20261105：候選嚴格照「三軸皆 ≤3」，拿掉 247 張
 
 店主看名單發現不少卡冷門度 4–5，選「嚴格照第三條」。拿掉三軸任一 ≥4 的 247 張（801 補判 172、B 類 75；幾乎都是冷門度），`candidates-final.json` 與勾選頁剩 **1,278 張**（A 1,101、B 177、待定 575；雀躍 715、放鬆 563）。
