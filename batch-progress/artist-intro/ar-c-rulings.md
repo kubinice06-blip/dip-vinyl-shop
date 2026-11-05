@@ -2680,3 +2680,10 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 37 位寫：24 full、13 thin；不寫 3 位——pasteboard、Case、Bobby Oroza（研究稿都只有一條來源，比照 Kloob & Onasander）。
 - 題材照寫：Lowlife 主唱 Craig Lorentson 2010 年因肝腎問題過世；Gerald Levert 2006 年過世（死因各源不一，不寫）；Kem 早年毒癮、無家可歸後戒除；Jon Lucien 兩位女兒相繼喪生、古柯鹼成癮、2007 年過世；Love Unlimited 的 Diane Taylor 1985 年癌症過世；Raveena 家族經歷 1984 年反錫克教暴動。Will Downing 的病況只有單源，不寫。
 - 主線審稿 18 處：第一句補國籍或身分——DSPS、Jim James、Jonathan Wilson、Kadhja Bonet、Lowlife、Gerald Levert、Kem（連帶刪細節壓字數）；在世者不寫串流與銷量——DSPS 刪 YouTube 600 萬次、Kem 刪五個月約 1 萬張、Kenny Lattimore 刪「銷量回升」、Goapele 刪約 5000 張、Love Unlimited 刪金唱片／百萬銷量／專輯榜第 3 與「繼 Supremes 之後第一」；Mars & DNA「森郁恵」改台灣字形「森郁惠」。
+
+## ar-d-518（2026-11-05，soul、R&B、neo-soul、UK soul、華語與日本 R&B）
+
+- 39 位寫：23 full、16 thin；Keith Washington 沒有聲音或做法事實，不寫（skipped）。
+- 2025 年事實主線核實：方大同 2025 年 2 月 21 日病逝、享年 41 歲，經紀公司稱抗病五年（TVBS、星島兩源）；不寫死因推測。出生地照 facts 寫夏威夷（特注誤寫「香港出生」，以 facts 為準）。
+- 題材照寫：Celeste 父親肺癌過世；Aaron Hall 自幼口吃；Kali Uchis 曾被趕出家門住在車裡。Intro 的 Kenny Greene 死於愛滋併發症只有維基家族單源，刪死因、只留「32 歲過世」；SiR 的物質濫用、Angela Winbush 的卵巢癌、Greentea Peng 的成癮都只有單源，不寫。
+- 主線審稿 33 處：第一句補國籍或身分——Celeste、Charlotte Day Wilson、David Porter、Gabriel Garzón-Montano、Gabriels、Gloria Scott、Jessie Ware、Kan Sano、Kali Uchis、Matt Martians、Raheem DeVaughn、SiR、Steve Spacek、Syleena Johnson、Aaron Hall、Andra Day、Angela Winbush（連帶刪細節壓回 250 字）；在世者只留一項成績——David Porter 刪孟菲斯名人堂、Marsha Ambrosius 刪 10 次葛萊美提名、Alex Isley 刪「兩項」、Andra Day 只留金球獎；Gloria Scott「重發並進了榜」改「重發後走紅」。

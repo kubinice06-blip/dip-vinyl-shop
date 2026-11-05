@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1823 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1829 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -1600,6 +1600,12 @@
 | ar-d-518 | Thee Sacred Souls | Thee Sacred Souls | Roth 經朋友轉寄 demo 聽到，隨即請三人到 Riverside 錄音，斷斷續續錄了三年 | 維基與 San Diego Magazine 說樂團才演兩場，Roth 就邀去錄音、數日後進 Penrose Studios；Clash 說連結始於 Instagram。路徑有出入，建議店主複核 | https://sandiegomagazine.com/things-to-do/thee-sacred-souls-carve-out-a-groove/ |
 | ar-d-518 | Andra Day | Cheers to the Fall | 〈Rise Up〉是好友確診癌症後，她寫下的一段禱告 | 查詢中沒找到癌症說法的佐證；搜尋摘要只見她自述寫給自己要堅持的提醒。建議店主複核原始出處 | https://en.wikipedia.org/wiki/Andra_Day |
 | ar-d-518 | Conya Doss | Love Rain Down | 第三張《Love Rain Down》在 2006 年由 Conya Doss Songs 發行 | Cleveland Magazine（2006）寫這張在 Unique Beat（Kenny Darnell 的廠牌）發行；MusicBrainz 也列 Unique Beat Recordings。自家廠牌說法可能只對部分版本。 | https://clevelandmagazine.com/articles/she-can-only-be-her/ |
+| ar-d-518 | Ego Ella May | Honey for Wounds | 2020 年 6 月 26 日亮相的《Honey for Wounds》是她的首張正式專輯 | Afropop 寫她 2019 年已有首張完整專輯《So Far》，《Honey for Wounds》應為第二張完整專輯；請核對 Discogs 後決定是否改成「首張在 UpperRoom 的專輯」。 | https://afropop.org/articles/ego-ella-may-is-not-alone |
+| ar-d-518 | Fatima | Yellow Memories | Floating Points 製作其中四首 | RA 樂評寫 Floating Points 製作十二首中的五首，且 Theo Parrish 寫了開場〈Do Better〉。請核對 Discogs credit 後決定是否改成五首。 | https://ra.co/reviews/14925 |
+| ar-d-518 | Frank McComb | Love Stories | 2000 年，Marsalis 替他談成 Columbia 的合約 | iPluggers 與 AllMusic 衍生簡介寫 Columbia 簽約約在 1998 年，專輯 2000 年才發行；簡介把簽約擺在 2000 年可能有誤，請核對。 | https://ipluggers.com/frankmccomb |
+| ar-d-519 | KING | We Are KING | 它成了第一張入圍葛萊美最佳都會當代專輯的獨立發行作品 | 『第一張』找不到兩源，Grammy.com 與 WUNC 只說首張專輯入圍、獨立發行；建議改成『入圍…的獨立發行首張』或查證後保留 | https://www.wunc.org/arts-culture/2017-05-19/king-on-making-independent-music-and-working-with-prince |
+| ar-d-519 | N’Dambi | Little Lost Girls Blues | 首作就賣出約 5 萬張 | 維基載逾 7 萬張（全球），實體 SoundScan 逾 2 萬張；5 萬無出處 | https://en.wikipedia.org/wiki/N'Dambi |
+| ar-d-519 | Barry Brown | Far East | 原盤 1982 年掛 Channel One 廠牌發行 | 維基寫 Brown 1983 年在 Studio One 錄 Far East；Discogs 列 Channel One 1982。兩邊矛盾，建議本機查 Discogs 版本與 Studio One 版是否為不同盤 | https://en.wikipedia.org/wiki/Barry_Brown_(singer) |
 | ar-d-929 | Erik Truffaz | Rollin' | 2000 年簽進這個廠牌 | 上線簡介沿用 Blue Note 官網簡介的 2000 年簽約說；但維基與已上線的《Out of a Dream》《The Dawn》《Bending New Corners》簡介顯示 1997–1999 年已在 Blue Note 發片，瑞士聯邦文化局新聞稿也記《Bending New Corners》為 1999 年 Blue Note 專輯，2000 年簽約的說法與之矛盾，建議改為不寫簽約年。 | https://musikzeitung.ch/en/?p=44583 |
 | ar-d-929 | Erik Truffaz | The Walk of the Giant Turtle | 前一張四重奏盤在法國賣到十萬張的金唱片 | 維基只寫《Bending New Corners》（1999）是法國 Silver Album；本張的前一張是《Mantis》（2001），並非《Bending New Corners》。需核對金唱片的專輯歸屬與認證層級。 | https://en.wikipedia.org/wiki/Erik_Truffaz |
 | ar-d-929 | Stanley Jordan | Magic Touch | 九軌裡有五軌只有一把電吉他 … 六軌只有他的電吉他 | 同一則簡介前後自相矛盾：五軌 vs 六軌；事實庫引 jazzdisco 為六軌純獨奏、其餘三軌各配一組節奏，應統一為六軌。 | https://en.wikipedia.org/wiki/Magic_Touch_(Stanley_Jordan_album) |
