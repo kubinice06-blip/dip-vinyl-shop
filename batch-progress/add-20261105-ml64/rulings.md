@@ -46,3 +46,9 @@
 - **23035**（Jazz Gone Dub）：真樂手 jazz-dub（Sly Dunbar、Jah Wobble、Ernest Ranglin 等），Discogs 主類 Jazz／Reggae；無速度來源，moodGuess 存疑（鼓是否有 groove 推進）。
 - **23036**（Natura Sonora）：身分無誤；樂評提到 pulsing beats、Białowieża 大鼓聲，無 BPM，moodGuess 輕度存疑（x、z 恐偏高）；Wikipedia『El Búho』條目是秘魯報紙，未採用。
 - 媒體名與榜單名次未入 facts；MB UA 照規定、無 email；WebSearch 用 3 次。
+
+## 研究 e 組
+- **23041**（Loop Guru《The Fountains of Paradise》）：本盤是《Catalogue of Desires》前兩卷卡帶的 CD 選編（Discogs 備註與 Scaruffi 一致），非新錄專輯；有歷史脈絡（卡帶首次進 CD），保留。聲音來源（Ink 19 評、Scaruffi）一致為極簡氛圍、打擊樂為主、拋開舞曲節拍，類比 Scorn、DJ Krush，偏陰沉；**moodGuess 存疑 z（暖度）與 x（更低）**。卡單 label North South 與英國版一致，美國版為 Hypnotic，未推翻。Muddyman 2022 辭世屬無關後事，不入 facts。
+- **23042**（Loop Guru《Loop Bites Dog》）：1997-09-29 GB North South GURU 400CD，與 MB 一致。無專屬樂評，聲音僅單一來源（Scaruffi：Don Cherry／Terry Riley 式迷幻循環＋Peter Gabriel 式 techno-funk〈Karma Marga〉＋甘美朗〈Out Here〉）；**moodGuess 存疑 x（有鼓、密度高）與 z**。評分不入 facts。美國版廠牌 World Domination 只見電台榜單，未採用。
+- **23043**（Youth & Gaudi《Astronaut Alchemists》）：2018 無疑，月日各來源不一（Discogs／MB 11-16、Six Degrees 10-16、另一篇預告 10-12），facts 不寫月日。黑膠 LP 除 A5 外每首剪短，CD 約 57:56。EP《2063: A Dub Odyssey》Wikipedia 兩處寫 2016／2017，facts 不寫年。聲音為標準 dub（重低頻、鍵盤、大量殘響）＋科幻取樣；**moodGuess 存疑 x（dub 鼓推進）與 z（太空科幻偏冷）**。
+- 本組 WebSearch 用 5 次（與 ml65 a 組合計；剩 1 次未用）。研究稿 `desc-tools/batches/research/add-20261105-ml64-e.json`，QA 通過；推翻策展層 0 處。

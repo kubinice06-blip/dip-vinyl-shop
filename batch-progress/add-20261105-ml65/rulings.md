@@ -33,3 +33,9 @@
 - 23101　Vondelpark《Seabed》：身分一致（RS1306；US 2013-03-29、UK 2013-04-01）。輕刷慢鼓，確非四拍；moodGuess 存疑（z 憂鬱、indie 氣偏中性或輕）。curatorWhy「慢 R&B 拍」未獲來源，改「輕刷慢鼓」。
 - 23102　Tropics《Parodia Flare》：身分一致（ZIQ305）。RA 評論明寫切分鼓組、motorik 規整律動，鼓是核心——moodGuess 存疑，x 很可能超過 2.7，建議汰換或降級。所在地兩源衝突（南安普敦／洛杉磯）。
 - 23103　Ana Roxanne《Because of a Flower》：身分一致（krank230，2020-11-13）。無鼓為各源未提鼓的推論；殘響厚度缺直接證據，moodGuess 存疑（y、z）。Bandcamp 該網址抓回的是 2019《~~~》頁。
+
+## 研究 a 組
+- **23081**（Sun Glitters《Everything Could Be Fine》）：MB 2011-03-11 數位自發行、Bandcamp 標 3/14、LebensStrasse CD 同年 6 月，三者並列。聲音與預估吻合（中慢碎拍、暖低音、糊人聲），但標題曲被形容 menacing、整體 post-Burial；**moodGuess 輕度存疑 z、x**。BBC 評價偏冷，屬評價不入 facts。
+- **23082**（Sun Glitters《Scattered Into Light》）：Mush 美國版 2014-01-28，日本 AY（Anay）CD DQC-1205 於 01-08 先出且多附 4 首《Fading Days》EP 曲；卡單 label=Anay Records 對日本首發成立，facts 兩者並列。**moodGuess 存疑 x**：廠牌文案直言『glitchy R&B and deep tech-house』『equal nod to house and hip-hop』，有 tech-house 四拍落鼓的可能；z 亦因『sun-bleached』明亮取向存疑。建議主線聽過或汰換。
+- **23083**（Sun Glitters《It Will Be Forever》）：2017-05-26 自發行，11 首約 40 分鐘（Discogs 母帶列 13 首含 2 首數位加碼）。官方文案自稱『Tech Noir』『apprehensive, haunting tension』『heavy bass』，受《Drive》原聲帶啟發；**moodGuess 存疑 z（陰冷詭譎）**，Discogs 另標 Hip Hop，未查到 boom bap 證據。無專屬樂評，單一來源。
+- 本組 WebSearch 用 1 次（e 組另用 4 次，兩份合計 5／6）。研究稿 `desc-tools/batches/research/add-20261105-ml65-a.json`，QA 通過；推翻策展層 0 處。
