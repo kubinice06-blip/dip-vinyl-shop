@@ -56,3 +56,15 @@
 - 其他：Boogarins《Lá Vem a Morte》（合成器＋電子節拍、陰暗）、Gigi《Gold & Wax》（電子骨架、跳動 snare、x 恐 ≥3）、Tindersticks《Waiting for the Moon》（nocturnal／gloomy 判冷）、Daniel Lanois《For the Beauty of Wynona》（本人說比 Acadie 更重擊、失真鼓）、Jacco Gardner《Hypnophobia》（真鼓短歌 upbeat）、小林麻美（樂隊 synth-pop、判輕）。
 - 留下但聲音待評分驗證：Cowboy Junkies《Open》（有失真段，同人池中三張落恍惚）、Kurt Vile（製作較乾淨，同人落恍惚）、Drugdealer（有輕快曲，同人落恍惚）、Pale Saints、Flaming Lips《King's Mouth》、Invisible（兩首長曲佔七成、無失真）。
 - 張數不足：叫 ml63b 策展代理以「池中同人已落恍惚」硬條件補 12–15，補位另派研究。
+
+## 研究補位（supp）
+- 23127：補位 11 張（a：Hawley、Renmin Park、Soft Tissue；b：Slow Dancer、Wilderness；c：Black Eyed Man、Something Rain；d：End of Paths、Falling Down a Mountain；e：One Soul Now、Distractions）已 append 進各組研究檔，MB 釘住皆核對。Cowboy Junkies 三張 Nomad／同人盤確認為原創錄音室專輯（Renmin Park 第 1 集、Wilderness 第 4 集；第 2 集《Demons》才是 Vic Chesnutt 翻唱，不在本批）；Distractions 為原創專輯含三首翻唱，非翻唱集（策展 curatorRisk 的「翻唱專輯」不準確）。
+- 23128：moodGuess 存疑（判躁／輕）——Black Eyed Man（維基：往主流 country rock，每首換編制與拍速，含低音號、長號、班鳩琴）；Renmin Park（環境噪音循環＋採樣為地基、有鼓，非單純霧感）；Slow Dancer（chorus 吉他／電鋼琴查無來源，樂手與鼓有無不明，單人錄製，status thin）；Falling Down a Mountain（AllMusic「最歡快最樂觀」、Pitchfork 暖而朦朧，判輕風險）；Hawley（來源皆稱安靜極簡精瘦、demo 質地，無殘響厚墊或弦樂墊，判輕小風險，有兩首搖滾段）；One Soul Now（聲音事實只有錄音室與配器，status thin）。
+- 23129：存疑（判冷）——Distractions（鼓機與循環做底，樂評 dark and tense、glacially paced、sinister undertones，冷風險中偏高，無快拍）；At the End of Paths Taken（No Depression：junkyard clang、gloomy experimentalism；Exclaim：弦樂更憂鬱）；Soft Tissue（nocturnal、woozy，也有 soul 風味與含蓄放克律動，冷風險小）；The Something Rain（wearied、maudlin，同時有迫切感與爵士段）。未見快拍推進者：Wilderness（「冬天內省」、回到早期民謠，大致可留）。
+- 23130：事實推翻／校正——卡單 label：Something Rain 實際英國 Lucky Dog、歐洲 City Slang、僅北美 Constellation；Falling Down a Mountain 歐洲 4AD、僅美國 Constellation；Slow Dancer 原版為 Okely 自行在 Bandcamp 發行（ATO 是 2017 重發）。策展寫的 lap steel（End of Paths）、pedal steel（Wilderness 名單無）、Slow Dancer 電鋼琴查無來源，facts 一律不寫。Soft Tissue 發行日 MB 2024-09-13、維基樂團條目 9-10，年份一致；Soft Tissue 錄音地赫羅納僅 Spectrum Culture 一源。
+
+## 主線補位汰換（不佔條號；2026-11-05）
+補位 11 張研究後汰 5 → 補進 6，本批定案 17。
+- 汰：Tindersticks《Distractions》（鼓機循環、dark and tense 判冷）、《Falling Down a Mountain》（樂團 groove、標題曲輕快）、Richard Hawley《Hollow Meadows》（安靜極簡 demo 質地、無殘響／弦樂墊來源，判輕）、Slow Dancer《Surrender》（聲音無來源，thin）、Cowboy Junkies《Renmin Park》（街頭錄音拼接、較活潑）。
+- 留：Cowboy Junkies《Black Eyed Man》《At the End of Paths Taken》《One Soul Now》《The Wilderness》（池中同人三張全落恍惚）、Tindersticks《The Something Rain》《Soft Tissue》。
+- 卡單改：《The Something Rain》廠牌照英國原版 Lucky Dog。
