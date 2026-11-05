@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1788 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1800 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -1565,6 +1565,18 @@
 | ar-d-513 | Jimmy Lyons & Sunny Murray Trio | Jump Up | 替 Cecil Taylor 吹了二十六年／1960 年進入 Taylor 的樂團 | jazz.com 寫 1961 年 10 月在 Five Spot 加入，維基寫 1960 年，兩源不一；建議改「1960 年代初」，並避免「二十六年」的算法 | https://jazz.com/encyclopedia/lyons-jimmy |
 | ar-d-513 | John Russell & Roger Turner | The Second Sky | 兩人從 1970 年代中期起搭檔，第一次同上唱片是 1980 年與 Toshinori Kondo 的三重奏 | 維基與 Encyclopedia.com 的 Turner 條目都只說 1974 年後與 Russell 長期合作，沒有第一次同上唱片的年份與近藤三重奏的說法，本層查不到出處；若無來源建議改寫或刪除 | https://en.wikipedia.org/wiki/Roger_Turner_(musician) |
 | ar-d-513 | John Zorn & Sato Michihiro | Ganryu Island | 1985 年的發行商是 Yukon | 維基內文寫 Yukon 1984 年發行 LP、資訊框寫 1985，Tzadik 於 1998 年再發 CD 加五首；首發年各源不一，建議改成不寫年份或標「1984–85 年間」 | https://en.wikipedia.org/wiki/Ganryu_Island_(album) |
+| ar-d-514 | Mansur | Oscuras Flores | 三人組由 Jason Köhnen（貝斯）、El Demerdashi（烏德琴）與 Horváth（人聲）組成 | Köhnen 的樂器兩處樂評皆未指明為貝斯；Echoes and Dust 另列 duduk 手 Gadjo Dilo Vendigo 為成員（2020 EP 時期）。貝斯一說待查 | https://echoesanddust.com/2020/07/mansur-temple/ |
+| ar-d-514 | Marilyn Crispell / Doug James | And Your Ivory Voice Sings | 1985 年 3 月 7 日到 9 日在當地一間錄音室錄成七首 | 錄音年份來源不一：Wikipedia 專輯條目寫 1985 年 3 月、Tom Hull 目錄寫 1984-03-07/09、Jazz Music Archives 寫 1986 年 3 月 7–9 日；日期 3/7–9 三處一致，年份待定 | https://en.wikipedia.org/wiki/And_Your_Ivory_Voice_Sings |
+| ar-d-514 | Perelman • Maneri • Feldman • Hwang | Strings 1 | 改吹薩克斯風之前，Perelman 先學的是大提琴 | Audiophile Audition 引 Perelman 說第一件樂器是大提琴，但英文維基與 LPR 先列古典吉他（LPR 稱吉他神童），先後順序不一；建議改成『學過大提琴』較穩。 | https://lpr.com/?p=50017 |
+| ar-d-514 | Lewis | L'Amour | 版稅存進託管帳戶，等他現身 | 本層讀到的三個來源（維基、LARB、Music Times）皆未提及託管帳戶，找不到來源；而 Music Times 稱 2014 年他已被找到並支持重發。建議核對 Light in the Attic 發行聲明再決定去留。 | https://en.wikipedia.org/wiki/Lewis_(musician) |
+| ar-d-514 | Robin Guthrie | Pearldiving | Robin Guthrie 的樂團 Cocteau Twins 在 1998 年解散 | Cocteau Twins 維基寫 1997 年解散（錄第九張專輯時），Guthrie 本人維基寫 1998；兩頁不一致，建議改寫「1990 年代末解散」。 | https://en.wikipedia.org/wiki/Cocteau_Twins |
+| ar-d-515 | Aidan Baker | Ice Against My Skin | 2003 至 2007 年間，他的作品多半是限量 CD-R，總數超過一百張 | 本層未找到可驗證的出處（單源也沒有），建議店主核對；本組未能補到 | https://en.wikipedia.org/wiki/Aidan_Baker |
+| ar-d-515 | Polaris | Music | 2007 年起日本的 Polaris 樂團停擺 | ototoy 與日文維基都寫 2006 年（《空間》）之後兩人轉向個人活動，2012 年 9 月重啟；2007 年說法無出處 | https://ototoy.jp/feature/2015021800 |
+| ar-d-515 | Dolorian | Dolorian | 唱歌兼吉他的 Anti Haapapuro | Peaceville 官方頁與 Sister Ray 寫作 Antti Haapapuro；Encyclopaedia Metallum 與英文維基寫 Anti。拼法有出入，建議店主查核 | https://peaceville.com/when-all-the-laughter-has-gone-the-cult-1999-debut-album-of-hypnotic-darkness-from-finlands-dolorian-to-be-released-on-cd-for-the-first-time-in-25-years-and-receive-its-first-ever-vinyl-re/ |
+| ar-d-515 | 5uu's | Hunger's Teeth | ReR Megacorp 也在同一年發行 | 搜尋顯示 ReR USA 是 2003 年才成立的北美發行；Megacorp 屬 Recommended Records 英國端，本層未能確認，僅提示核對 | https://en.wikipedia.org/wiki/Dave_Kerman |
+| ar-d-515 | Dargaard | In Nomine Aeternitatis | 2000 年由 Draenor Productions 發行 | 維基（發行日 2000 年 6 月 3 日）、MetalBite 頁面資訊皆寫 Napalm Records；Rise and Fall 的 Brave Words 新聞稿（2004-03-26）也寫 Napalm Records。Draenor 或為 Napalm 子廠或事實庫的 Discogs 廠牌欄，待本機查 Discogs 核對；兩張簡介若統一寫 Draenor 可能需改為 Napalm Records（旗下 Draenor）。 | https://en.wikipedia.org/wiki/Dargaard |
+| ar-d-515 | Dargaard | Rise and Fall | 2004 年 3 月 22 日，Draenor Productions 讓它上市 | Brave Words 2004-03-26 新聞稿寫 Rise and Fall 為 Napalm Records 發行；廠牌名待核。 | https://bravewords.com/news/dargaard-on-the-rise/ |
+| ar-d-515 | Dark Sanctuary | De lumière et d'obscurité | 2000 年 11 月在 Wounded Love 的首作 | 依維基與 Side-Line，樂團 1999 年 11 月簽 Wounded Love，《Royaume Mélancolique》為 1998 年錄音、1999 年列入名單，若 Royaume 也由 Wounded Love 發行，則《De lumière》是他們在 Wounded Love 的第二張而非首作；待本機核對 Royaume 的發行廠牌。 | https://en.wikipedia.org/wiki/Dark_Sanctuary |
 | ar-d-929 | Erik Truffaz | Rollin' | 2000 年簽進這個廠牌 | 上線簡介沿用 Blue Note 官網簡介的 2000 年簽約說；但維基與已上線的《Out of a Dream》《The Dawn》《Bending New Corners》簡介顯示 1997–1999 年已在 Blue Note 發片，瑞士聯邦文化局新聞稿也記《Bending New Corners》為 1999 年 Blue Note 專輯，2000 年簽約的說法與之矛盾，建議改為不寫簽約年。 | https://musikzeitung.ch/en/?p=44583 |
 | ar-d-929 | Erik Truffaz | The Walk of the Giant Turtle | 前一張四重奏盤在法國賣到十萬張的金唱片 | 維基只寫《Bending New Corners》（1999）是法國 Silver Album；本張的前一張是《Mantis》（2001），並非《Bending New Corners》。需核對金唱片的專輯歸屬與認證層級。 | https://en.wikipedia.org/wiki/Erik_Truffaz |
 | ar-d-929 | Stanley Jordan | Magic Touch | 九軌裡有五軌只有一把電吉他 … 六軌只有他的電吉他 | 同一則簡介前後自相矛盾：五軌 vs 六軌；事實庫引 jazzdisco 為六軌純獨奏、其餘三軌各配一組節奏，應統一為六軌。 | https://en.wikipedia.org/wiki/Magic_Touch_(Stanley_Jordan_album) |

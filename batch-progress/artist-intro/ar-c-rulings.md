@@ -2654,3 +2654,10 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 補洞 QA 例外：Han Bennink / Misha Mengelberg / John Tchicai 三人卡搜尋 9 次超過上限 8，三人合計、照實記，不退件。
 - 題材照寫：Henry Grimes 1968 年前後賣掉受損的貝斯、淡出樂壇被誤列已故，2002 年被社工尋獲，2020 年因新冠併發症過世；Threadgill 隨陸軍赴越南、春節攻勢中受傷；Jimmy Lyons 1986 年肺癌過世；Karl Berger 2023 年手術併發症過世；John Russell 2021 年癌症過世；Barre Phillips 2024 年過世。
 - 主線審稿 6 處：Joe Morris「同代最傑出」改「同代重要的…之一」（兩源不獨立）；Georg Graewe 只留 SWR 爵士獎；Jacques Coursil 補「法國」；沖至的老師「渡辺貞夫」改台灣字形「渡邊貞夫」；Parker & Fernández 刪「加泰隆尼亞最早一批前衛音樂家」（序數宣稱、單源）；Threadgill 刪 NEA Jazz Master（在世者只留普立茲）。
+
+## ar-d-514（2026-11-05，前衛爵士、自由即興，加 synth-pop、dream pop、獨立流行）
+
+- 40 位全寫：29 full、11 thin。五張 Matthew Shipp 合作卡各寫搭檔；Matthew Shipp “String” Trio 是卡池裡另一個鍵（彎引號），改寫 Maneri 與 Parker，與已上線的 String Trio 不重複。
+- 2025 年事實主線核實：Sylvie Courvoisier 獲 2025 年瑞士音樂大獎（瑞士聯邦文化署、Intakt 兩源）；Crispell 2025 NEA Jazz Masters 沿用 ar-d-512 已核實。
+- 題材照寫：Misha Mengelberg 晚年失智、2017 年過世；Leroy Jenkins 2007 年肺癌過世；Les McCann 2023 年肺炎過世；Roy Montgomery 妻子過世後錄下《Temple IV》；k.d. lang 1992 年出櫃後遭美國鄉村電台禁播；Michael Seyer 寫父親罹癌。Lowell Davidson 死因「肺結核」只有單源，刪。
+- 主線審稿 24 處：單名卡超 250 壓回——Lewis 276→245、Lowell Davidson Trio 276→247；第一句補國籍或身分——Atwood-Ferguson、Mengelberg、New York Art Quartet、Paul Lytton、Peter Evans、Roy Montgomery、Robin Guthrie、Lowell Davidson、Les McCann（連帶刪細節壓字數）；在世者不寫榜單銷量——Lily Chou-Chou 刪「沒登上榜首」、Sean Nicholas Savage 刪 Solange 專輯的 Billboard 冠軍、Bonanza Banzai 刪金唱片；超級評語軟化或刪——Leroy Jenkins「首屈一指」、Les McCann「嘻哈取樣的源頭」、Crispell「最原創、最受邀約」。
