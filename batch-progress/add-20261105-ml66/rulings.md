@@ -46,3 +46,12 @@
 - 23364　Midori Hirano《OTONOMA》：卡單 label 空白，補 Thrill Jockey（THRILL 643，官方頁與 MB）；Bandcamp 的 Erased Tapes 僅 publishing。聲音大致符合，但〈Illuminance〉以節奏脈衝開場、序列器織體多，非無鼓；乾淨清亮處可能判輕。
 - 23365　maya ongaku《Nothing Space Music》：廠牌 Guruguru Brain 已核。日期 MB 2026-08-07、Bandcamp 2026-09-15，年份同為 2026。有鼓（底鼓、TR-8S、木質打擊）但速度悠閒，Juno-6／Rhodes／原聲樂器並重，暖；預估大致成立。
 - 23366　sachi's mirror《Talking in a Different Way》：卡單 label 空白，補 Constellation Tatsu（MB／Bandcamp）。moodGuess 部分存疑：弦樂為主、非 beat tape，但 Daily 以 Radiohead 式緊繃小品與 drone、無線電雜訊描述，偏陰而非暖，弦樂乾淨處判輕風險仍在；鼓只在第 2、4 首與〈Roulette〉。
+
+## 研究 a 組（條號 23321–23330）
+- 23321｜Rachika Nayar《Heaven Come Crashing》：moodGuess（無硬鼓、暖厚牆）與來源明顯不符——Bandcamp 說明列 supersaw、Amen break、90 年代 trance；Daily 稱 jungle、旋繞高音；The Fader 稱 breakbeat。建議主線汰換（研究層不動卡單）。
+- 23322｜Nailah Hunter《Lovegaze》：非整張無鼓。RA 寫〈Finding Mirrors〉有 trap 式彈跳節拍、〈000〉有電子質地，Daily 稱輕盈爵士律動；暖度大致可信，x 需主線聽過。
+- 23323｜Maria Somerville《All My People》：Daily 明寫含 lo-fi 鼓；首作序數 Wikipedia（2018《The Man Called Stone In My Shoe》為首作）與 2019 Daily（稱 debut）互相矛盾，facts 不寫序數；label 卡單空白，建議填 Self-released（Rush Hour 為發行通路）。
+- 23324｜Hammock《Silencia》：2019 年 11 月 Daily 實際網址為 the-best-new-ambient-on-bandcamp-november-2019，卡單 mbNote 的網址會 404；合唱團與管樂配置僅 Norman Records 單一來源。Bandcamp 與 shop 網址互相轉址無法抓取。
+- 23325｜Adam Wiltzie《Eleven Fugues for Sodium Pentothal》：『個人首作』與『第四張個人作品』兩說矛盾，facts 不寫序數；末兩首較暗（Skinny），暖度大致可信。
+- 23326｜Rachika Nayar《Our Hands Against the Dusk》：大致吻合；張力段有 glitch 與白熱和弦，冷度可能略高。
+- 23327｜WebSearch 本組用 4 次（Hammock、Nayar HCC、Wiltzie、Nailah 各 1），超出上限 1 次，第 4 次是因為 Hammock Bandcamp 頁面轉址迴圈而無法直接抓取。
