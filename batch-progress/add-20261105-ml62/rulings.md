@@ -97,3 +97,8 @@
 - **23068** 身分補字（可逆）：Let 'em In note 未給樂種，第二句補「靈魂樂手」（facts 有費城靈魂）；HOK「靈魂唱將」、I Am Love「唱靈魂情歌的」、Phyllis「靈魂女歌手」——為拆「靈魂歌手」×5 而換字，只剩 TOFY、Sentimental Fool 兩張用原詞。媒體名、媒體榜名次 0；樂評一律寫「樂評說／在樂評聽來／在樂評耳裡」。
 - **23069** 自掃（han() 4-gram，本檔＋out-1＋writer-1 hooks 合掃）：3 張以上 0；拆掉「靈魂歌手」×5、「專輯榜第／輯榜第名」×5（改「最高到第／榜上，它拿到／榜，排第」）、「專輯年月」×3（Love King 拿掉領頭「專輯」）、「樂評說它」「衝到第名」「的第五張」「電鋼琴樂評說」「樂評聽到」「在專輯榜」等 2 張殘片。剩 2 張：鋼棒吉他（樂器名）、靈魂歌手、在專輯榜（TOFY 對 Joy hook）、美國專輯榜（對 w1 Fade 榜名）。輔助腳本：scratchpad `ml62-w2/ml62w2-draft.py`、`ml62w2-scan.py`。
 - **23070** 內容判斷：TOFY 的 hook「照片」在第二句收成「封面用的就是那張照片」，不複述「站立」；HOK 只寫到月，note 沒給 1982 年份，正文只寫「車禍前」；Sentimental Fool 的 EP 盤名照 note 不寫；I Am Love 的 Ashby 生卒與 Pate 生平照 23058 不寫。
+
+## 主線審稿（2026-11-05，cloud-main）
+- 逐張審 22 張，抽核關鍵事實回研究稿：Still Corners 兩人地鐵相識、Hughes 在亞利桑那與德州長大、Sub Pop 2011 首作、《Slow Air》舊 BBC 麥克風；Night Moves 2011 Bandcamp 版→Domino 重發、Thom Monahan 重錄鼓；Candy Claws 柯林斯堡、三紀分曲、Jenn Morea 作詞；Beachwood Sparks 團名出自伯班克兩條街、《Once We Were Trees》J Mascis 客串、翻唱 Sade；Dean & Britta 2010 Double Feature 雙碟；Yo La Tengo《Fade》McEntire 製作、美國榜第 26；Mojave 3《Excuses》Mark Van Hoen 製作、《Out of Tune》B.J. Cole；Lilys 盤名對準 Velvet Crush；Teddy 1982-03-18 車禍、《This One's for You》1982-07 發行、《Joy》R&B 榜第 2；Billy Paul 1934 費城、改寫歌詞點名民權人物與雙胞胎姊妹 Pauline；Phyllis Hyman 第五張、Connors 中途退出；Lee Fields 1950 年生於 Wilson；《Sentimental Fool》Daptone、Gabriel Roth；Peabo Bryson 1951 南卡、《I Am Love》Dorothy Ashby；The-Dream 合寫〈Umbrella〉、《Love King》首週美國榜第 4。
+- 媒體名 0、「據」0、榜單只留官方榜。writer-2 在 Billy Paul 第二句依 facts 補「靈魂樂手」，照留。
+- 逐張審過，未改字。

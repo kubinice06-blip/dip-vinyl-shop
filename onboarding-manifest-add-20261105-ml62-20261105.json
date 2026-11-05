@@ -1,0 +1,1607 @@
+{
+ "schemaVersion": 1,
+ "batch": "2026-10-20-ml62",
+ "batchNote": "薄細項策展線（add-20261105-ml62）",
+ "createdAt": "2026-11-05T02:22:39Z",
+ "albums": [
+  {
+   "artist": "Still Corners",
+   "album": "Creatures of an Hour",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "9a4a2d72-e6bb-4a85-a99c-5c93f7b00f4b",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "2010s–20s 暖 dream pop／bedroom shoegaze：新世代暖 dream pop 代表首作；殘響霧包覆、慢拍、女聲柔，落恍惚｜⚠ z 貼 0.3，電影夜景感偏冷的風險｜MB release-group 9a4a2d72-e6bb-4a85-a99c-5c93f7b00f4b：title「Creatures of an Hour」、Album、first-release-date 2011-10-10、artist-credit「Still Corners」。證據：https://coverartarchive.org/release-group/9a4a2d72-e6bb-4a85-a99c-5c93f7b00f4b/front https://musicbrainz.org/release-group/9a4a2d72-e6bb-4a85-a99c-5c93f7b00f4b",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2011,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/9a4a2d72-e6bb-4a85-a99c-5c93f7b00f4b/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-05T02:22:39Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-05 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 123300,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-11-05T02:22:39Z",
+    "note": "機器基線 3/2/3（Last.fm listeners 123300）；主線：§0.8.1 錨點人工評分（恍惚非電子批：dream pop／soul／MPB／slowcore 硬蕊度 1–2，音牆與長篇器樂 3）"
+   },
+   "rarity": "common",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "兩人都搭錯了地鐵，在月台上認識。Still Corners 是倫敦的雙人團，製作人 Greg Hughes 在亞利桑那與德州長大。開口的是 Tessa Murray，她問 Hughes 是不是也搭錯了車；後來他邀她進錄音室錄 demo。Sub Pop 在 2011 年 10 月替他們出了首張專輯，曲子全由 Hughes 寫與製作，就在他的自家錄音室錄成。先行單曲〈Cuckoo〉只有單一鼓點、幽靈般的吉他與遠處的管風琴，托著 Murray 近乎耳語的女高音。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Creatures_of_an_Hour",
+     "https://en.wikipedia.org/wiki/Still_Corners",
+     "https://loveispop.com/?p=17361",
+     "https://megamart.subpop.com/products/still-corners_creatures-of-an-hour",
+     "https://beatsperminute.com/album-review-still-corners-creatures-of-an-hour/",
+     "https://www.irishtimes.com/culture/music/album-reviews/still-corners-1.614315",
+     "https://musicbrainz.org/release-group/9a4a2d72-e6bb-4a85-a99c-5c93f7b00f4b"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/bc/19/bd/bc19bd68-ccae-a892-f88b-c676ba0aa03e/mzaf_5382566745316662537.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-11-05T02:22:39Z",
+    "appleCollectionId": "1686046539",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1686046539「Still Corners《Creatures of an Hour》」：曲目 10/10 對上 MB 原盤（Apple 共 10 軌），取第 1 軌〈Cuckoo〉。主線 2026-11-05 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Still Corners",
+   "album": "Slow Air",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "f183e029-aca7-41a3-b605-a737c3336f25",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "2010s–20s 暖 dream pop／bedroom shoegaze：Still Corners 偏暖的慢盤；殘響厚、拍子懶｜⚠ y 0.8 貼邊｜MB release-group f183e029-aca7-41a3-b605-a737c3336f25：title「Slow Air」、Album、first-release-date 2018-08-17、artist-credit「Still Corners」。證據：https://coverartarchive.org/release-group/f183e029-aca7-41a3-b605-a737c3336f25/front https://musicbrainz.org/release-group/f183e029-aca7-41a3-b605-a737c3336f25",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2018,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/f183e029-aca7-41a3-b605-a737c3336f25/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-05T02:22:39Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-05 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 242751,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-11-05T02:22:39Z",
+    "note": "機器基線 3/2/3（Last.fm listeners 242751）；主線：§0.8.1 錨點人工評分（恍惚非電子批：dream pop／soul／MPB／slowcore 硬蕊度 1–2，音牆與長篇器樂 3）"
+   },
+   "rarity": "common",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "女聲錄進一支舊 BBC 麥克風，音色因此偏暗。主唱兼鍵盤 Tessa Murray、多樂器手兼製作人 Greg Hughes，是 Still Corners 的兩位核心。樂團自己的廠牌 Wrecking Light 在 2018 年推出這第四張專輯，歌在德州奧斯汀寫成並錄製。鼓也由 Hughes 親手打，先在 Ableton 敲出草稿，再錄成真鼓；有一段吉他接上壞掉的音箱，手感對了就留下。他說這回刻意不求光滑，把小錯誤留著換取人味。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Slow_Air",
+     "https://www.slugmag.com/music/national-music-reviews/still-corners-slow-air/",
+     "https://loveispop.com/?p=17361",
+     "https://www.loudandquiet.com/reviews/still-corners-slow-air/",
+     "https://musicbrainz.org/release-group/f183e029-aca7-41a3-b605-a737c3336f25"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/7e/49/bb/7e49bbaf-399c-143b-6239-54fa75a3aeda/mzaf_4974036113868973825.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-11-05T02:22:39Z",
+    "appleCollectionId": "1676315359",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1676315359「Still Corners《Slow Air》」：曲目 10/10 對上 MB 原盤（Apple 共 10 軌），取第 1 軌〈In the Middle of the Night〉。主線 2026-11-05 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Still Corners",
+   "album": "The Last Exit",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "cd47f4cf-5c7e-44ce-9544-0895ad629528",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "2010s–20s 暖 dream pop／bedroom shoegaze：Still Corners 近作，慢板殘響更滿、旋律明確，落恍惚｜策展無疑點｜MB release-group cd47f4cf-5c7e-44ce-9544-0895ad629528：title「The Last Exit」、Album、first-release-date 2021-01-22、artist-credit「Still Corners」。證據：https://coverartarchive.org/release-group/cd47f4cf-5c7e-44ce-9544-0895ad629528/front https://musicbrainz.org/release-group/cd47f4cf-5c7e-44ce-9544-0895ad629528",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2021,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/cd47f4cf-5c7e-44ce-9544-0895ad629528/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-05T02:22:39Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-05 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 119313,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-11-05T02:22:39Z",
+    "note": "機器基線 3/2/3（Last.fm listeners 119313）；主線：§0.8.1 錨點人工評分（恍惚非電子批：dream pop／soul／MPB／slowcore 硬蕊度 1–2，音牆與長篇器樂 3）"
+   },
+   "rarity": "common",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "他們在沙漠裡找到了某個東西，Hughes 這麼說。Still Corners 把這張自稱為 desert noir，歌曲全由 Greg Hughes 與 Tessa Murray 合寫。Hughes 口中的沙漠，是一片看不到盡頭的風景。這第五張在 2021 年 1 月面世，仍走 Wrecking Light，有一部分在新冠封城前就已錄好。評論裡提到柔和搖曳的打擊、閃爍的合成器與慵懶吉他，說這是他們氣氛最厚、也最安靜的一張。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/The_Last_Exit",
+     "https://diymag.com/2021/01/21/still-corners-the-last-exit-album-review",
+     "https://theplayground.co.uk/review-still-corners-explore-the-dreamlike-world-of-reflective-road-trips-in-the-last-exit/",
+     "https://music.mxdwn.com/2021/01/26/reviews/album-review-still-corners-the-last-exit/",
+     "https://criticalpopcorn.com/2021/01/22/still-corners-the-last-exit-album-review/",
+     "https://musicbrainz.org/release-group/cd47f4cf-5c7e-44ce-9544-0895ad629528"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/1a/61/54/1a6154e5-9c41-ed70-5561-e2f822b0b2e5/mzaf_1576671099889547291.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-11-05T02:22:39Z",
+    "appleCollectionId": "1674157838",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1674157838「Still Corners《The Last Exit》」：曲目 11/11 對上 MB 原盤（Apple 共 11 軌），取第 1 軌〈The Last Exit〉。主線 2026-11-05 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Night Moves",
+   "album": "Colored Emotions",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "498d0406-f8f5-4942-907e-ef48d8f5c4f9",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "2010s–20s 暖 dream pop／bedroom shoegaze：Night Moves 首作；70s 軟搖滾加 dream pop 殘響，暖、霧、慢｜⚠ x 2.5 偏近｜MB release-group 498d0406-f8f5-4942-907e-ef48d8f5c4f9：title「Colored Emotions」、Album、first-release-date 2012-10-16、artist-credit「Night Moves」。證據：https://coverartarchive.org/release-group/498d0406-f8f5-4942-907e-ef48d8f5c4f9/front https://musicbrainz.org/release-group/498d0406-f8f5-4942-907e-ef48d8f5c4f9",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2012,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/498d0406-f8f5-4942-907e-ef48d8f5c4f9/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-05T02:22:39Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-05 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 101934,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-11-05T02:22:39Z",
+    "note": "機器基線 3/2/3（Last.fm listeners 101934）；主線：§0.8.1 錨點人工評分（恍惚非電子批：dream pop／soul／MPB／slowcore 硬蕊度 1–2，音牆與長篇器樂 3）"
+   },
+   "rarity": "common",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "原本放上 Bandcamp 任人下載，一簽約就先撤下。明尼阿波里斯的三人團 Night Moves，主唱是 John Pelant。2011 年那一版靠〈Headlights〉在雙城傳開，同年 12 月他們簽給 Domino，撤掉下載是為了讓新廠牌重發。Thom Monahan 到洛杉磯替它加疊、重錄鼓，2012 年 10 月重發上市。沉沉的 tom 鼓代替了完整鼓組，Pelant 顫抖的假音與班鳩琴從霧裡穿出，底子是迷幻鄉村。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Night_Moves_(band)",
+     "https://pitchfork.com/reviews/albums/17230-colored-emotions/",
+     "https://musicbrainz.org/release-group/498d0406-f8f5-4942-907e-ef48d8f5c4f9",
+     "https://nightmoves.bandcamp.com/album/colored-emotions",
+     "https://www.popmatters.com/164333-night-moves-colored-emotions-2495806576.html"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/b1/9e/10/b19e109c-0cc2-70ea-6136-2cd62ebf6536/mzaf_6818100146798339194.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-11-05T02:22:39Z",
+    "appleCollectionId": "564040830",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 564040830「Night Moves《Colored Emotions》」：曲目 10/10 對上 MB 原盤（Apple 共 10 軌），取第 1 軌〈Headlights〉。主線 2026-11-05 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Candy Claws",
+   "album": "Ceres & Calypso in the Deep Time",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "5563d737-dba9-4930-ab05-3b0817816dd5",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "2010s–20s 暖 dream pop／bedroom shoegaze：概念性 dream pop 厚霧代表；殘響與合成器墊把人整個裹住，甜暖｜策展無疑點｜MB release-group 5563d737-dba9-4930-ab05-3b0817816dd5：title「Ceres & Calypso in the Deep Time」、Album、first-release-date 2013-06-25、artist-credit「Candy Claws」。證據：https://coverartarchive.org/release-group/5563d737-dba9-4930-ab05-3b0817816dd5/front https://musicbrainz.org/release-group/5563d737-dba9-4930-ab05-3b0817816dd5",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2013,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/5563d737-dba9-4930-ab05-3b0817816dd5/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-05T02:22:39Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-05 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 525257,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-11-05T02:22:39Z",
+    "note": "機器基線 3/1/3（Last.fm listeners 525257）；主線：§0.8.1 錨點人工評分（恍惚非電子批：dream pop／soul／MPB／slowcore 硬蕊度 1–2，音牆與長篇器樂 3）；Last.fm 525k 疑錯配（同名詞條），錨點：極小廠 Twosyllable、首發即上串流 → 4"
+   },
+   "rarity": "common",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "海豹般的生物和一個女孩，一起走過整個中生代。Candy Claws 2007 年在科羅拉多州柯林斯堡成軍，玩的是 shoegaze 與迷幻流行。Twosyllable Records 2013 年出版的第三張裡，那隻生物叫 Ceres，女孩叫 Calypso，12 首歌平分給三疊紀、侏儸紀與白堊紀。歌詞出自詩人 Jenn Morea，隱喻 Rachel Carson 與 Dorothy Freeman 的友誼。混音壓得很重，失真吉他底下是昏昏的低聲人聲。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Candy_Claws",
+     "https://musicbrainz.org/release-group/5563d737-dba9-4930-ab05-3b0817816dd5",
+     "https://en.wikipedia.org/wiki/Ceres_%26_Calypso_in_the_Deep_Time",
+     "https://diffuser.fm/candy-clawsceres-calypso-in-the-deep-time-album-review/",
+     "https://www.sputnikmusic.com/review/78152/Candy-Claws-Ceres-And-Calypso-In-The-Deep-Time"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d2/bb/0e/d2bb0e8b-80c4-d4ed-314b-20602dc99ec1/mzaf_3047395921430817014.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-11-05T02:22:39Z",
+    "appleCollectionId": "1198188125",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1198188125「Candy Claws《Ceres & Calypso in the Deep Time》」：曲目 12/12 對上 MB 原盤（Apple 共 12 軌），取第 1 軌〈Into the Deep Time (One Sun)〉。主線 2026-11-05 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Beachwood Sparks",
+   "album": "Beachwood Sparks",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "b216823b-d3d0-3073-95dc-b21a0de34cc8",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "厚殘響慢歌與 90s–00s 暖 dream pop／cosmic country 二線：Beachwood Sparks 首作；cosmic country 配殘響，陽光暖霧感｜⚠ y 0.9 偏近；有些曲偏乾｜MB release-group b216823b-d3d0-3073-95dc-b21a0de34cc8：title「Beachwood Sparks」、Album、first-release-date 2000-03-21、artist-credit「Beachwood Sparks」。證據：https://coverartarchive.org/release-group/b216823b-d3d0-3073-95dc-b21a0de34cc8/front https://musicbrainz.org/release-group/b216823b-d3d0-3073-95dc-b21a0de34cc8",
+    "queryAlias": "",
+    "selfTitledVerified": true
+   },
+   "research": {
+    "suggestedYear": 2000,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/b216823b-d3d0-3073-95dc-b21a0de34cc8/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-05T02:22:39Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-05 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 14127,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-11-05T02:22:39Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 14127）；主線：§0.8.1 錨點人工評分（恍惚非電子批：dream pop／soul／MPB／slowcore 硬蕊度 1–2，音牆與長篇器樂 3）；Sub Pop 首作，cosmic country 復興代表"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 4、obscurity 3、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "團名拼自伯班克兩條相鄰的平行街道。Brent Rademaker 與 Christopher Gunst 的團起家於洛杉磯，提議取名的是鼓手 Jimi Hey：他把 Rademaker 住的 Sparks Street 和與它平行的 Beachwood Drive 拼在一起。首作 2000 年經 Sub Pop 發行，他們崇拜的是 Gram Parsons。開場的〈Desert Skies〉有彈跳的貝斯與滑棒吉他，Gunst 唱得輕如耳語。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Beachwood_Sparks",
+     "https://musicbrainz.org/release-group/b216823b-d3d0-3073-95dc-b21a0de34cc8",
+     "https://trouserpress.com/reviews/beachwood-sparks/",
+     "https://pitchfork.com/reviews/albums/600-beachwood-sparks/",
+     "https://austinchronicle.com/music/2000-03-17/76386",
+     "https://www.rawkblog.com/2006/04/the-canon-examined-beachwood-sparks-beachwood-sparks/",
+     "https://en.wikipedia.org/wiki/Beachwood_Sparks_(album)"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/83/3b/4e/833b4ed5-9b5d-f246-9f02-791e500ebb8d/mzaf_9904936938101231811.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-11-05T02:22:39Z",
+    "appleCollectionId": "3270545",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 3270545「Beachwood Sparks《Beachwood Sparks》」：曲目 14/14 對上 MB 原盤（Apple 共 14 軌），取第 1 軌〈Desert Skies〉。主線 2026-11-05 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Beachwood Sparks",
+   "album": "Once We Were Trees",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "bc23db20-b423-35e8-9264-b7b3ffa5a220",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "厚殘響慢歌與 90s–00s 暖 dream pop／cosmic country 二線：Beachwood Sparks 第二張，更迷幻、更厚，暖和聲包覆｜策展無疑點｜MB release-group bc23db20-b423-35e8-9264-b7b3ffa5a220：title「Once We Were Trees」、Album、first-release-date 2001-10-15、artist-credit「Beachwood Sparks」。證據：https://coverartarchive.org/release-group/bc23db20-b423-35e8-9264-b7b3ffa5a220/front https://musicbrainz.org/release-group/bc23db20-b423-35e8-9264-b7b3ffa5a220",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2001,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/bc23db20-b423-35e8-9264-b7b3ffa5a220/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-05T02:22:39Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-05 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 50859,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-11-05T02:22:39Z",
+    "note": "機器基線 3/3/3（Last.fm listeners 50859）；主線：§0.8.1 錨點人工評分（恍惚非電子批：dream pop／soul／MPB／slowcore 硬蕊度 1–2，音牆與長篇器樂 3）；樂團公認代表作"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 4、obscurity 3、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "鼓點過了 flanger，聲像在左右聲道之間移動。Beachwood Sparks 第二張交給 Thom Monahan 製作，他照 60 年代的手法，回聲下得很重。唱片 2001 年秋在 Sub Pop 上架，J Mascis 在其中兩首彈吉他。許多歌從 honky-tonk 指彈與搖晃的鋼棒吉他開始，最後陷進管風琴持續音與和聲的迷霧。主打單曲翻唱了 Sade 的〈By Your Side〉。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/bc23db20-b423-35e8-9264-b7b3ffa5a220",
+     "https://ink19.com/2001/11/magazine/music-reviews/umvcss-beachwood-sparks",
+     "https://magnetmagazine.com/?p=18698",
+     "https://en.wikipedia.org/wiki/Beachwood_Sparks",
+     "https://lollipopmagazine.com/2002/02/beachwood-sparks-once-we-were-trees-review/",
+     "https://trouserpress.com/reviews/beachwood-sparks/"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/bf/54/88/bf54885f-a37e-ed37-aed7-434acccc4689/mzaf_12834866713060077218.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-11-05T02:22:39Z",
+    "appleCollectionId": "3271765",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 3271765「Beachwood Sparks《Once We Were Trees》」：曲目 15/15 對上 MB 原盤（Apple 共 15 軌），取第 1 軌〈Germination〉。主線 2026-11-05 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Dean & Britta",
+   "album": "13 Most Beautiful... Songs for Andy Warhol's Screen Tests",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "3b65e1e8-545b-4570-a10e-794d9b777de2",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "厚殘響慢歌與 90s–00s 暖 dream pop／cosmic country 二線：Galaxie 500／Luna 兩人的 Velvet 式夢幻慢盤；殘響包覆、拍子懶｜⚠ z 偏近，Warhol 的冷感可能判冷｜MB release-group 3b65e1e8-545b-4570-a10e-794d9b777de2：title「13 Most Beautiful: Songs for Andy Warhol’s Screen Tests」、Album、first-release-date 2009-04-07、artist-credit「Dean & Britta」。證據：https://coverartarchive.org/release-group/3b65e1e8-545b-4570-a10e-794d9b777de2/front https://musicbrainz.org/release-group/3b65e1e8-545b-4570-a10e-794d9b777de2",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2010,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/3b65e1e8-545b-4570-a10e-794d9b777de2/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-05T02:22:39Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-05 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 110,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-11-05T02:22:39Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 110）；主線：§0.8.1 錨點人工評分（恍惚非電子批：dream pop／soul／MPB／slowcore 硬蕊度 1–2，音牆與長篇器樂 3）"
+   },
+   "rarity": "common",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "13 部的數目，照的是 Warhol 的放映習慣。Dean Wareham 與妻子 Britta Phillips 受 Warhol 博物館等委託，替 Warhol 在 1960 年代拍的試鏡短片配樂；Wareham 出身 Galaxie 500。2010 年 Double Feature 出了雙碟 CD。Velvet Underground 的稀有曲〈Not a Young Man Anymore〉，配的是 Lou Reed 喝可口可樂的那部。底色是慵懶的吉他 jam。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Dean_%26_Britta",
+     "https://en.wikipedia.org/wiki/13_Most_Beautiful:_Songs_for_Andy_Warhol%27s_Screen_Tests",
+     "https://popmatters.com/128408-dean-britta-13-most-beautiful-songs-for-andy-warhols-screen-tests-2496166528.html",
+     "https://musicbrainz.org/release-group/3b65e1e8-545b-4570-a10e-794d9b777de2",
+     "https://www.avclub.com/dean-britta-13-most-beautiful-songs-for-andy-warhol-1798165496"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ef/af/d3/efafd369-8212-d893-9e1e-eccc55e20f3a/mzaf_17763092839867855953.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-11-05T02:22:39Z",
+    "appleCollectionId": "376675862",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 376675862「Dean & Britta《13 Most Beautiful: Songs For Andy Warhol's Screen Tests》」：曲目 13/13 對上 MB 原盤（Apple 共 21 軌），取第 1 軌〈Silver Factory Theme〉。主線 2026-11-05 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Mojave 3",
+   "album": "Excuses for Travellers",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "53e984af-b4dd-3830-acaa-46dab690bd3f",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "厚殘響慢歌與 90s–00s 暖 dream pop／cosmic country 二線：Slowdive 後身 Mojave 3 最暖的一張；鋼棒殘響，慢拍包覆｜⚠ y 0.8 貼邊，原聲居多可能落放鬆｜MB release-group 53e984af-b4dd-3830-acaa-46dab690bd3f：title「Excuses for Travellers」、Album、first-release-date 2000-05-15、artist-credit「Mojave 3」。證據：https://coverartarchive.org/release-group/53e984af-b4dd-3830-acaa-46dab690bd3f/front https://musicbrainz.org/release-group/53e984af-b4dd-3830-acaa-46dab690bd3f",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2000,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/53e984af-b4dd-3830-acaa-46dab690bd3f/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-05T02:22:39Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-05 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 248216,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-11-05T02:22:39Z",
+    "note": "機器基線 3/2/3（Last.fm listeners 248216）；主線：§0.8.1 錨點人工評分（恍惚非電子批：dream pop／soul／MPB／slowcore 硬蕊度 1–2，音牆與長篇器樂 3）；樂團評價最高的一張之一"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 4、obscurity 3、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "試錄三四次都沒成的歌，喝了很多酒之後一次錄成。Slowdive 解散後，Neil Halstead、Rachel Goswell 與 Ian McCutcheon 組成 Mojave 3。那首是〈Trying to Reach You〉，前一張專輯時就試過。第三張由 4AD 在 2000 年 5 月釋出，Halstead 說裡頭很多歌其實很舊。製作人 Mark Van Hoen 把鼓處理得偏乾，人聲、吉他與顫音琴則浸在殘響裡。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Excuses_for_Travellers",
+     "https://en.wikipedia.org/wiki/Mojave_3",
+     "https://criminallyunderratedrecords.blogspot.com/2022/06/mojave-3-excuses-for-travellers.html",
+     "https://musicbrainz.org/release-group/53e984af-b4dd-3830-acaa-46dab690bd3f",
+     "https://nowtoronto.com/music/mojave-3s-quiet-quest/"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/bc/05/3c/bc053c33-6d9f-9001-b3f4-24ee65213984/mzaf_14064232590923709596.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-11-05T02:22:39Z",
+    "appleCollectionId": "6773860628",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 6773860628「Mojave 3《Excuses for Travellers (2026 Remaster)》」：曲目 10/10 對上 MB 原盤（Apple 共 10 軌），取第 1 軌〈In Love with a View (2026 Remaster)〉。主線 2026-11-05 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Mojave 3",
+   "album": "Out of Tune",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "81ac9414-922c-30ca-87ed-f5591290eb86",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "厚殘響慢歌與 90s–00s 暖 dream pop／cosmic country 二線：Mojave 3 第二張；Slowdive 轉向 country，暖慢｜⚠ y 0.8 貼邊｜MB release-group 81ac9414-922c-30ca-87ed-f5591290eb86：title「Out of Tune」、Album、first-release-date 1998-10-05、artist-credit「Mojave 3」。證據：https://coverartarchive.org/release-group/81ac9414-922c-30ca-87ed-f5591290eb86/front https://musicbrainz.org/release-group/81ac9414-922c-30ca-87ed-f5591290eb86",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1998,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/81ac9414-922c-30ca-87ed-f5591290eb86/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-05T02:22:39Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-05 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 58555,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-11-05T02:22:39Z",
+    "note": "機器基線 3/3/3（Last.fm listeners 58555）；主線：§0.8.1 錨點人工評分（恍惚非電子批：dream pop／soul／MPB／slowcore 硬蕊度 1–2，音牆與長篇器樂 3）"
+   },
+   "rarity": "common",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "副歌一到，Farfisa 風琴和小號才亮起來。Mojave 3 的歌全由 Neil Halstead 寫，這回把美式鄉村與英倫民謠摻在一起，是 4AD 在 1998 年 10 月發行的第二張專輯。那一刻落在開場曲〈Who Do You Love〉，主歌只有稀疏的原聲吉他。錄音分在康瓦爾的 The Farm、倫敦的 Fortress 等三處，鋼棒吉他請來 B.J. Cole 客串；〈Caught Beneath Your Heel〉則以 Vox 風琴一路堆到福音式的高潮。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Out_of_Tune_(album)",
+     "https://criminallyunderratedrecords.blogspot.com/2021/10/mojave-3-out-of-tune.html",
+     "https://musicbrainz.org/release-group/81ac9414-922c-30ca-87ed-f5591290eb86"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/ec/36/37/ec3637ee-b6b0-07cd-cb56-8bd68673b4e7/mzaf_686014083376230072.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-11-05T02:22:39Z",
+    "appleCollectionId": "1025321741",
+    "storefront": "US",
+    "collectionExplicitness": "explicit",
+    "note": "Apple us 1025321741「Mojave 3《Out of Tune》」：藝人搜尋未命中；musicArtist→lookup 取得《Out of Tune》1998、9 軌（主線 2026-11-05 核對，非 2026 Remaster），取第 1 軌〈Who Do You Love〉。主線 2026-11-05 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Lilys",
+   "album": "In the Presence of Nothing",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "ef409370-ab42-30d2-81b1-1cb2b0637efc",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "厚殘響慢歌與 90s–00s 暖 dream pop／cosmic country 二線：Lilys 首作；shoegaze 厚牆加甜旋律，糊而不兇｜⚠ x 2.6、z 0.4 近邊｜MB release-group ef409370-ab42-30d2-81b1-1cb2b0637efc：title「In the Presence of Nothing」、Album、first-release-date 1992-09、artist-credit「Lilys」。證據：https://coverartarchive.org/release-group/ef409370-ab42-30d2-81b1-1cb2b0637efc/front https://musicbrainz.org/release-group/ef409370-ab42-30d2-81b1-1cb2b0637efc",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1992,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/ef409370-ab42-30d2-81b1-1cb2b0637efc/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-05T02:22:39Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-05 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": 91109,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-11-05T02:22:39Z",
+    "note": "機器基線 3/3/3（Last.fm listeners 91109）；主線：§0.8.1 錨點人工評分（恍惚非電子批：dream pop／soul／MPB／slowcore 硬蕊度 1–2，音牆與長篇器樂 3）；美式 shoegaze 邪典名盤；音牆型 shoegaze 硬蕊度下限 3"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 4、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "連盤名都拿來挖苦同圈的樂團。Kurt Heasley 是 Lilys 唯一的固定成員，這支華府樂團的首張盤名對準的是 Velvet Crush 1991 年的《In the Presence of Greatness》。唱片 1992 年由 Slumberland 與 spinART 合發；在樂評聽來，吉他效果像是從 My Bloody Valentine 的《Loveless》裡出來的。〈The Way Snowflakes Fall〉長達十二分鐘，是冰河般的器樂曲。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/ef409370-ab42-30d2-81b1-1cb2b0637efc",
+     "https://en.wikipedia.org/wiki/Lilys",
+     "https://en.wikipedia.org/wiki/In_the_Presence_of_Nothing",
+     "https://www.trouserpress.com/entry.php?a=lilys"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d1/db/da/d1dbda08-f737-2e2a-a03d-41581886cf6f/mzaf_18262081352908161573.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-11-05T02:22:39Z",
+    "appleCollectionId": "1832541036",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1832541036「Lilys《In the Presence of Nothing》」：曲目 8/9 對上 MB 原盤（Apple 共 12 軌），取第 1 軌〈There Is No Such Thing as Black Orchids〉。主線 2026-11-05 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Teddy Pendergrass",
+   "album": "This One's for You",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "5a481194-e77b-43a2-a629-27319ccd4372",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "70s–80s 厚弦樂慢板靈魂：Teddy Pendergrass 車禍前後的慢歌盤，厚低頻、弦樂與 quiet storm 氛圍。｜策展無疑點｜MB release-group 5a481194-e77b-43a2-a629-27319ccd4372：title「This One’s for You」、Album、first-release-date 1982-07-23、artist-credit「Teddy Pendergrass」。證據：https://musicbrainz.org/release-group/5a481194-e77b-43a2-a629-27319ccd4372 https://coverartarchive.org/release-group/5a481194-e77b-43a2-a629-27319ccd4372/front",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1982,
+    "yearNote": ""
+   },
+   "genres": [
+    "soul"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/5a481194-e77b-43a2-a629-27319ccd4372/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-05T02:22:39Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-05 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 1,
+    "listeners": 1542,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-11-05T02:22:39Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 1542）；主線：§0.8.1 錨點人工評分（恍惚非電子批：dream pop／soul／MPB／slowcore 硬蕊度 1–2，音牆與長篇器樂 3）；listeners 1,542 → 下限 3"
+   },
+   "rarity": "common",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 1，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "照片裡他昂首站著，唱片推出時人已癱瘓。1982 年 3 月 18 日在費城發生車禍時，靈魂歌手 Teddy Pendergrass 的這張錄音已大致完成，同年 7 月才由 Philadelphia International 推出，封面用的就是那張照片。錄音在費城的 Sigma Sound，伴奏是 MFSB。樂評說它是換上 80 年代外衣的費城之聲，標題曲只用鍵盤、木管與節奏組撐起。它在 R&B 專輯榜最高到第 6 名。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/5a481194-e77b-43a2-a629-27319ccd4372",
+     "https://dereksmusicblog.com/2012/12/14/teddy-pendergrass-this-ones-for-you/",
+     "https://en.wikipedia.org/wiki/Teddy_Pendergrass",
+     "https://www.discogs.com/master/199890-Teddy-Pendergrass-This-Ones-For-You",
+     "https://en.wikipedia.org/wiki/This_One%27s_for_You_(Teddy_Pendergrass_album)"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/51/57/a4/5157a423-7a80-7e98-96e8-2fa375f59834/mzaf_17146448789761620433.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-11-05T02:22:39Z",
+    "appleCollectionId": "316075594",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 316075594「Teddy Pendergrass《This One's for You》」：曲目 8/8 對上 MB 原盤（Apple 共 8 軌），取第 1 軌〈I Can't Win for Losing〉。主線 2026-11-05 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Teddy Pendergrass",
+   "album": "Heaven Only Knows",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "a81fea3d-2b01-4ae9-a259-1485e8b80e4d",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "70s–80s 厚弦樂慢板靈魂：Pendergrass 復出後的慢歌專輯，情歌密度高、混音厚。｜策展無疑點｜MB release-group a81fea3d-2b01-4ae9-a259-1485e8b80e4d：title「Heaven Only Knows」、Album、first-release-date 1983-10-27、artist-credit「Teddy Pendergrass」。證據：https://musicbrainz.org/release-group/a81fea3d-2b01-4ae9-a259-1485e8b80e4d https://coverartarchive.org/release-group/a81fea3d-2b01-4ae9-a259-1485e8b80e4d/front",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1983,
+    "yearNote": ""
+   },
+   "genres": [
+    "soul"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/a81fea3d-2b01-4ae9-a259-1485e8b80e4d/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-05T02:22:39Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-05 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 2,
+    "obscurity": 3,
+    "accessibility": 1,
+    "listeners": 2446,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-11-05T02:22:39Z",
+    "note": "機器基線 2/5/1（Last.fm listeners 2446）；主線：§0.8.1 錨點人工評分（恍惚非電子批：dream pop／soul／MPB／slowcore 硬蕊度 1–2，音牆與長篇器樂 3）；離開 PIR 前的庫存盤，評價平淡；listeners 2,446 → 下限 3"
+   },
+   "rarity": "common",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 2、obscurity 3、accessibility 1，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "人已改簽 Asylum，舊東家才推出這張。第七張、也是最後一張交給 Philadelphia International 的錄音室專輯，靈魂唱將 Teddy Pendergrass 放進的是車禍前錄好的素材，用來做完合約。錄音與混音都在 Sigma Sound，該廠在 1983 年 10 月把它發出。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/a81fea3d-2b01-4ae9-a259-1485e8b80e4d",
+     "https://en.wikipedia.org/wiki/Heaven_Only_Knows_(album)",
+     "https://en.wikipedia.org/wiki/Teddy_Pendergrass",
+     "https://www.discogs.com/release/2588977-Teddy-Pendergrass-Heaven-Only-Knows",
+     "https://www.discogs.com/master/165203-Teddy-Pendergrass-Heaven-Only-Knows"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/15/89/82/15898204-ed27-7890-48a1-a16000b2aa61/mzaf_4507894358309164756.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-11-05T02:22:39Z",
+    "appleCollectionId": "316068859",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 316068859「Teddy Pendergrass《Heaven Only Knows》」：曲目 8/8 對上 MB 原盤（Apple 共 8 軌），取第 1 軌〈Crazy About Your Love〉。主線 2026-11-05 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Billy Paul",
+   "album": "Let 'em In",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "939464f2-b6a0-3b52-a7c6-5a3ac90134ed",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "70s–80s 厚弦樂慢板靈魂：Billy Paul 在 Philly 弦樂牆上的慢中板盤，同人 When Love Is New 判重。｜⚠ 含較輕快曲，y 可能貼邊｜MB release-group 939464f2-b6a0-3b52-a7c6-5a3ac90134ed：title「Let 'em In」、Album、first-release-date 1976、artist-credit「Billy Paul」。證據：https://musicbrainz.org/release-group/939464f2-b6a0-3b52-a7c6-5a3ac90134ed https://coverartarchive.org/release-group/939464f2-b6a0-3b52-a7c6-5a3ac90134ed/front",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1976,
+    "yearNote": ""
+   },
+   "genres": [
+    "soul"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/939464f2-b6a0-3b52-a7c6-5a3ac90134ed/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-05T02:22:39Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-05 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 1,
+    "listeners": 18868,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-11-05T02:22:39Z",
+    "note": "機器基線 3/4/2（Last.fm listeners 18868）；主線：§0.8.1 錨點人工評分（恍惚非電子批：dream pop／soul／MPB／slowcore 硬蕊度 1–2，音牆與長篇器樂 3）"
+   },
+   "rarity": "common",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 1，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "McCartney 的夏日熱門曲，被他填進民權人物的名字。Billy Paul 本名 Paul Williams，是 1934 年生於費城的靈魂樂手。標題曲〈Let 'Em In〉當年夏天在美國爬上第 3 名，他改寫了歌詞，點名 Malcolm X、Martin Luther King Jr. 等已故民權領袖，也提到剛過世的雙胞胎姊妹，歌裡還穿插兩位領袖的演說片段。專輯在 1976 年底由 Philadelphia International 發行。",
+    "sourceUrls": [
+     "https://www.discogs.com/master/114893-Billy-Paul-Let-Em-In",
+     "https://www.discogs.com/release/1709773-Billy-Paul-Let-Em-In",
+     "https://en.wikipedia.org/wiki/Billy_Paul",
+     "https://musicbrainz.org/release-group/939464f2-b6a0-3b52-a7c6-5a3ac90134ed"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/98/28/b4/9828b481-9d18-374a-c1b5-af19e49f8616/mzaf_16733888349617471133.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-11-05T02:22:39Z",
+    "appleCollectionId": "278694996",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 278694996「Billy Paul《Let 'Em In》」：曲目 8/8 對上 MB 原盤（Apple 共 8 軌），取第 1 軌〈Let 'Em In〉。主線 2026-11-05 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Lee Fields & The Expressions",
+   "album": "It Rains Love",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "0f983fc0-b82a-44b9-a5e8-ac46be67d534",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "當代復興慢靈魂：Lee Fields 後期慢熱靈魂，Leon Michels 製作的厚弦樂與低頻。｜策展無疑點｜MB release-group 0f983fc0-b82a-44b9-a5e8-ac46be67d534：title「It Rains Love」、Album、first-release-date 2019-04-05、artist-credit「Lee Fields & the Expressions」。證據：https://musicbrainz.org/release-group/0f983fc0-b82a-44b9-a5e8-ac46be67d534 https://coverartarchive.org/release-group/0f983fc0-b82a-44b9-a5e8-ac46be67d534/front",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2019,
+    "yearNote": ""
+   },
+   "genres": [
+    "soul"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/0f983fc0-b82a-44b9-a5e8-ac46be67d534/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-05T02:22:39Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-05 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 1,
+    "listeners": 49057,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-11-05T02:22:39Z",
+    "note": "機器基線 3/3/3（Last.fm listeners 49057）；主線：§0.8.1 錨點人工評分（恍惚非電子批：dream pop／soul／MPB／slowcore 硬蕊度 1–2，音牆與長篇器樂 3）"
+   },
+   "rarity": "common",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 1，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "把嘻哈取樣的思路倒回去，做成一張靈魂專輯。Lee Fields 1950 年生於北卡羅來納州 Wilson，早年外號 Little JB，迪斯可年代一度轉去紐華克做房地產。製作人 Leon Michels 自述的做法是調整速度、過磁帶處理，做出粗礪又懷舊的質地。2019 年 4 月 5 日推出的這張由 Big Crown 發行，是 Fields 與 The Expressions 的第五度合作。樂評說混音近乎單聲道，銅管是整個編制的核心。",
+    "sourceUrls": [
+     "https://shorefire.com/releases/entry/lee-fields-celebrates-50-year-career-with-new-album-it-rains-love-out-april-5",
+     "https://daily.bandcamp.com/features/lee-fields-it-rains-love-interview",
+     "https://en.wikipedia.org/wiki/Lee_Fields",
+     "https://americansongwriter.com/lee-fields-the-expressions-it-rains-love/",
+     "https://musicbrainz.org/release-group/0f983fc0-b82a-44b9-a5e8-ac46be67d534"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/19/8f/c9/198fc926-b446-d4d7-253c-0a5f4f16eac1/mzaf_4001294418798284224.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-11-05T02:22:39Z",
+    "appleCollectionId": "1480059951",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1480059951「Lee Fields & The Expressions《It Rains Love (Instrumentals)》」：曲目 10/11 對上 MB 原盤（Apple 共 10 軌），取第 1 軌〈It Rains Love (Instrumental)〉。主線 2026-11-05 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Lee Fields",
+   "album": "Sentimental Fool",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "d41c74b0-e292-406a-85b8-6091ca866e2e",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "當代復興慢靈魂：Lee Fields 慢情歌取向的新作，弦樂墊與復古混音。｜⚠ MB 首發 2022，需主線確認年份｜MB release-group d41c74b0-e292-406a-85b8-6091ca866e2e：title「Sentimental Fool」、Album、first-release-date 2022-10-28、artist-credit「Lee Fields」。證據：https://musicbrainz.org/release-group/d41c74b0-e292-406a-85b8-6091ca866e2e https://coverartarchive.org/release-group/d41c74b0-e292-406a-85b8-6091ca866e2e/front",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2022,
+    "yearNote": ""
+   },
+   "genres": [
+    "soul"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/d41c74b0-e292-406a-85b8-6091ca866e2e/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-05T02:22:39Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-05 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 1,
+    "listeners": 19420,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-11-05T02:22:39Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 19420）；主線：§0.8.1 錨點人工評分（恍惚非電子批：dream pop／soul／MPB／slowcore 硬蕊度 1–2，音牆與長篇器樂 3）"
+   },
+   "rarity": "common",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 1，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "Daptone 早年發過他的單曲，全長卻遲到 2022 年。靈魂歌手 Lee Fields 這張由廠牌創辦人 Gabriel Roth 製作，那批單曲則是 2000 年代初的事。當年 1 月，廠牌先用一張限量 EP 帶回標題曲與四支舊單曲，10 月 28 日問世的本作在加州 Riverside 錄成，編制精簡，把空間留給人聲。〈Without a Heart〉裡有 Wurlitzer 電鋼琴。樂評說諧趣的快歌與超大尺寸的慢歌在這裡並陳。",
+    "sourceUrls": [
+     "https://www.jambase.com/article/lee-fields-sentimental-fool-new-album-single",
+     "https://nodepression.org/album-review-lee-fields-yearns-for-something-lasting-on-sentimental-fool/",
+     "https://en.wikipedia.org/wiki/Lee_Fields",
+     "https://musicbrainz.org/release-group/d41c74b0-e292-406a-85b8-6091ca866e2e"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/6a/ab/08/6aab0811-a37f-66bd-3e86-bc4e450ca7ff/mzaf_1331484796158702944.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-11-05T02:22:39Z",
+    "appleCollectionId": "1651925180",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1651925180「Lee Fields《Sentimental Fool》」：曲目 12/12 對上 MB 原盤（Apple 共 12 軌），取第 1 軌〈Forever〉。主線 2026-11-05 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Peabo Bryson",
+   "album": "I Am Love",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "7a046eb4-554b-4a99-a14b-a8c2e08a419c",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "70s–80s 厚弦樂慢板靈魂：Peabo Bryson 早期慢歌盤，弦樂編制與柔和低頻。｜⚠ y 貼邊｜MB release-group 7a046eb4-554b-4a99-a14b-a8c2e08a419c：title「I Am Love」、Album、first-release-date 1981、artist-credit「Peabo Bryson」。證據：https://musicbrainz.org/release-group/7a046eb4-554b-4a99-a14b-a8c2e08a419c https://coverartarchive.org/release-group/7a046eb4-554b-4a99-a14b-a8c2e08a419c/front",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1981,
+    "yearNote": ""
+   },
+   "genres": [
+    "soul"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/7a046eb4-554b-4a99-a14b-a8c2e08a419c/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-05T02:22:39Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-05 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 1,
+    "listeners": 610,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-11-05T02:22:39Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 610）；主線：§0.8.1 錨點人工評分（恍惚非電子批：dream pop／soul／MPB／slowcore 硬蕊度 1–2，音牆與長篇器樂 3）；listeners 610、試聽 ready → 下限 4"
+   },
+   "rarity": "common",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 1，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "弦樂後頭，爵士豎琴手 Dorothy Ashby 也在撥弦。唱靈魂情歌的 Peabo Bryson 這回與 Johnny Pate 共同製作，自己寫節奏組、銅管與和聲，還彈鋼琴，弦樂則交給 Pate 編寫。Capitol 在 1981 年發行，弦樂在洛杉磯的 Capitol Studios 錄下；出身底特律的 Ashby 也參與過《Songs in the Key of Life》。曲目裡，情歌與〈Move Your Body〉等中板曲並陳。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/1619868-Peabo-Bryson-I-Am-Love",
+     "https://en.wikipedia.org/wiki/Peabo_Bryson",
+     "https://en.wikipedia.org/wiki/Johnny_Pate",
+     "https://en.wikipedia.org/wiki/Dorothy_Ashby",
+     "https://www.discogs.com/master/759558-Peabo-Bryson-I-Am-Love",
+     "https://musicbrainz.org/release-group/7a046eb4-554b-4a99-a14b-a8c2e08a419c"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b8/31/93/b831939d-680f-bf97-1133-b4937923c301/mzaf_10119090725274268679.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-11-05T02:22:39Z",
+    "appleCollectionId": "1422817565",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1422817565「Peabo Bryson《I Am Love》」：曲目 9/9 對上 MB 原盤（Apple 共 9 軌），取第 1 軌〈I Am Love〉。主線 2026-11-05 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "The-Dream",
+   "album": "Love King",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "0967563d-4ef6-4124-aa38-92e313721843",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "合成器厚霧 R&B：The-Dream 較柔的一張，慢拍情歌與厚合成器墊。｜策展無疑點｜MB release-group 0967563d-4ef6-4124-aa38-92e313721843：title「Love King」、Album、first-release-date 2010-01-01、artist-credit「The‐Dream」。證據：https://musicbrainz.org/release-group/0967563d-4ef6-4124-aa38-92e313721843 https://coverartarchive.org/release-group/0967563d-4ef6-4124-aa38-92e313721843/front",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2010,
+    "yearNote": ""
+   },
+   "genres": [
+    "soul"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/0967563d-4ef6-4124-aa38-92e313721843/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-05T02:22:39Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-05 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 2,
+    "accessibility": 1,
+    "listeners": 44260,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-11-05T02:22:39Z",
+    "note": "機器基線 3/3/3（Last.fm listeners 44260）；主線：§0.8.1 錨點人工評分（恍惚非電子批：dream pop／soul／MPB／slowcore 硬蕊度 1–2，音牆與長篇器樂 3）；樂評公認其三部曲最佳之一"
+   },
+   "rarity": "common",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 4、obscurity 2、accessibility 1，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "合寫〈Umbrella〉的人，把自家三部曲收了尾。身兼 R&B 寫手與歌手的 The-Dream 本名 Terius Nash，2007 年以《Love/Hate》出道，和《Love vs. Money》與本作合稱三部曲。2010 年 6 月 29 日上市，掛 Def Jam 發行；他與搭檔 Tricky Stewart 一起製作，層層合成器堆成組曲式的編排；歌詞圍繞愛、性、金錢與不忠，客串只有 T.I. 一人。首週便空降美國專輯榜，排第 4 名。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Love_King",
+     "https://en.wikipedia.org/wiki/The-Dream",
+     "https://musicbrainz.org/release-group/0967563d-4ef6-4124-aa38-92e313721843"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/2b/11/20/2b112024-a25c-1b48-6ae9-90a6da6e04e8/mzaf_17151585933231853169.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-11-05T02:22:39Z",
+    "appleCollectionId": "1443122132",
+    "storefront": "US",
+    "collectionExplicitness": "explicit",
+    "note": "Apple us 1443122132「The-Dream《Love King》」：meta 最佳候選是 cleaned 版；改取同店 explicit 原版 1443122132（13 軌，主線 2026-11-05 核對），取第 1 軌〈Love King〉。主線 2026-11-05 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Yo La Tengo",
+   "album": "Fade",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "6d08ebb5-78ff-40d9-9ecb-37c8f06cf089",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "厚殘響慢歌與 90s–00s 暖 dream pop／cosmic country 二線：池中 I Can Hear／There's a Riot Going On 已落恍惚；Fade 同樣暖慢｜⚠ y 0.7 偏近，製作較乾淨可能落放鬆｜MB release-group 6d08ebb5-78ff-40d9-9ecb-37c8f06cf089：title「Fade」、Album、first-release-date 2013-01-14、artist-credit「Yo La Tengo」。證據：https://coverartarchive.org/release-group/6d08ebb5-78ff-40d9-9ecb-37c8f06cf089/front https://musicbrainz.org/release-group/6d08ebb5-78ff-40d9-9ecb-37c8f06cf089",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2013,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/6d08ebb5-78ff-40d9-9ecb-37c8f06cf089/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-05T02:22:39Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-05 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 2,
+    "accessibility": 2,
+    "listeners": 328494,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-11-05T02:22:39Z",
+    "note": "機器基線 3/2/3（Last.fm listeners 328494）；主線：§0.8.1 錨點人工評分（恍惚非電子批：dream pop／soul／MPB／slowcore 硬蕊度 1–2，音牆與長篇器樂 3）"
+   },
+   "rarity": "common",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 2、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "每一張都由同一人製作，從 1993 年到這張才換人。Yo La Tengo 是 Ira Kaplan、Georgia Hubley 與 James McNew 三人，這回改由 Tortoise 的 John McEntire 製作。被換下的是 Roger Moutenot，自《Painful》起他一路經手。2012 年夏天錄於芝加哥，2013 年 1 月 Matador 發片，首週在美國專輯榜衝上第 26 名，創下樂團最高。聲音比以前安靜，墊底的是暖吉他與弦樂。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Fade_(Yo_La_Tengo_album)",
+     "https://www.discogs.com/master/511321",
+     "https://www.npr.org/2013/02/04/171061349/yo-la-tengo-is-far-from-fading",
+     "https://flagpole.com/music/record-reviews/2013/01/15/yo-la-tengo-fade",
+     "https://musicbrainz.org/release-group/6d08ebb5-78ff-40d9-9ecb-37c8f06cf089"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f7/bf/80/f7bf800a-f5fb-5108-f1dc-a03c3d78a2fe/mzaf_5859208333872188486.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-11-05T02:22:39Z",
+    "appleCollectionId": "1589235983",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1589235983「Yo La Tengo《Fade (Deluxe Edition)》」：曲目 13/13 對上 MB 原盤（Apple 共 24 軌），取第 1 軌〈Ohm〉。主線 2026-11-05 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Phyllis Hyman",
+   "album": "Can't We Fall in Love Again?",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "d936988f-fda7-4589-87d8-31d8fd7ae5b7",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "70s–80s 厚弦樂慢板靈魂：Phyllis Hyman 的抒情慢歌盤，Thom Bell 製作，弦樂與厚人聲，池中同人 I Refuse to Be Lonely 落恍惚。｜⚠ 含少量中速曲，y 貼邊｜MB release-group d936988f-fda7-4589-87d8-31d8fd7ae5b7：title「Can’t We Fall in Love Again」、Album、first-release-date 1981-06-12、artist-credit「Phyllis Hyman」。證據：https://musicbrainz.org/release-group/d936988f-fda7-4589-87d8-31d8fd7ae5b7 https://coverartarchive.org/release-group/d936988f-fda7-4589-87d8-31d8fd7ae5b7/front",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1981,
+    "yearNote": ""
+   },
+   "genres": [
+    "soul"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/d936988f-fda7-4589-87d8-31d8fd7ae5b7/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-05T02:22:39Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-05 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 1,
+    "listeners": 19,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-11-05T02:22:39Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 19）；主線：§0.8.1 錨點人工評分（恍惚非電子批：dream pop／soul／MPB／slowcore 硬蕊度 1–2，音牆與長篇器樂 3）；listeners 19 為盤名標點錯配（Arista 正規熱門盤），照例外不套下限，錨點 3"
+   },
+   "rarity": "common",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 4、obscurity 3、accessibility 1，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "老搭檔 Norman Connors 做到一半，就抽身了。1981 年 6 月 12 日由 Arista 發行的這張，是靈魂女歌手兼詞曲作者 Phyllis Hyman 的第五張專輯，Connors 原本是主要製作人。他退出後，Chuck Jackson 接手混音、完成大部分曲目，同名主打歌也由他製作。Nathan East 彈貝斯、James Gadson 打鼓，和聲請來 The Jones Girls 與 James Ingram。R&B 專輯榜上，它拿到第 11 名。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Can't_We_Fall_in_Love_Again%3F",
+     "https://www.discogs.com/master/307973",
+     "https://www.sessiondays.com/2019/02/1981-phyllis-hyman-cant-we-fall-in-love-again",
+     "https://musicbrainz.org/release-group/d936988f-fda7-4589-87d8-31d8fd7ae5b7"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b9/6a/e7/b96ae7c6-790c-2606-92a8-a7e876050f3a/mzaf_13204697753015789053.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-11-05T02:22:39Z",
+    "appleCollectionId": "1121463972",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1121463972「Phyllis Hyman《Can't We Fall In Love Again (Expanded Edition)》」：曲目 8/8 對上 MB 原盤（Apple 共 13 軌），取第 1 軌〈You Sure Look Good to Me〉。主線 2026-11-05 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Teddy Pendergrass",
+   "album": "Joy",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "4c9213c5-8f05-3ce8-b5d6-ef290fe13fc1",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "70s–80s 厚弦樂慢板靈魂：Pendergrass 後期以慢歌與抒情為主的盤，池中 It's Time for Love／Love Language 同型落恍惚。｜⚠ 含 New Jack 式中速曲｜MB release-group 4c9213c5-8f05-3ce8-b5d6-ef290fe13fc1：title「Joy」、Album、first-release-date 1988-04-25、artist-credit「Teddy Pendergrass」。證據：https://musicbrainz.org/release-group/4c9213c5-8f05-3ce8-b5d6-ef290fe13fc1 https://coverartarchive.org/release-group/4c9213c5-8f05-3ce8-b5d6-ef290fe13fc1/front",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1988,
+    "yearNote": ""
+   },
+   "genres": [
+    "soul"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/4c9213c5-8f05-3ce8-b5d6-ef290fe13fc1/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-05T02:22:39Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-05 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 2,
+    "accessibility": 1,
+    "listeners": 10681,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-11-05T02:22:39Z",
+    "note": "機器基線 3/4/2（Last.fm listeners 10681）；主線：§0.8.1 錨點人工評分（恍惚非電子批：dream pop／soul／MPB／slowcore 硬蕊度 1–2，音牆與長篇器樂 3）；1988 復出代表作、葛萊美提名"
+   },
+   "rarity": "common",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 4、obscurity 2、accessibility 1，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "相隔九年，他在 R&B 專輯榜重新衝到第 2 名。R&B 歌手 Teddy Pendergrass 兼任執行製作，上回在該榜這麼高，是 1979 年的《Teddy》。1988 年 4 月 25 日交 Elektra 發行後，還入圍葛萊美 R&B 男歌手獎。製作有 Vincent Calloway 與 Miles Jaye，開場曲用 tom 鼓編程，〈This Is the Last Time〉則換成真人鼓與 Rhodes 電鋼琴。在樂評耳裡，他悶燒的唱法換成了流暢世故的聲音。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Joy_(Teddy_Pendergrass_album)",
+     "https://www.discogs.com/master/159292",
+     "https://musicbrainz.org/release-group/4c9213c5-8f05-3ce8-b5d6-ef290fe13fc1"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e9/ad/30/e9ad3039-bff2-31a5-d0cf-6535258e5602/mzaf_1726521115238850845.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-11-05T02:22:39Z",
+    "appleCollectionId": "298102730",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 298102730「Teddy Pendergrass《Joy》」：曲目 8/8 對上 MB 原盤（Apple 共 8 軌），取第 1 軌〈Joy〉。主線 2026-11-05 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Peabo Bryson",
+   "album": "Turn the Hands of Time",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "dd6a00db-f99e-4e28-bfdb-54c92acde3f5",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "70s–80s 厚弦樂慢板靈魂：Peabo 與 I Am Love 同期的抒情盤，同人 Crosswinds 落恍惚。｜⚠ y 貼邊｜MB release-group dd6a00db-f99e-4e28-bfdb-54c92acde3f5：title「Turn the Hands of Time」、Album、first-release-date 1981-02、artist-credit「Peabo Bryson」。證據：https://musicbrainz.org/release-group/dd6a00db-f99e-4e28-bfdb-54c92acde3f5 https://coverartarchive.org/release-group/dd6a00db-f99e-4e28-bfdb-54c92acde3f5/front",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1981,
+    "yearNote": ""
+   },
+   "genres": [
+    "soul"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/dd6a00db-f99e-4e28-bfdb-54c92acde3f5/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-05T02:22:39Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-05 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 1,
+    "listeners": 39,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-11-05T02:22:39Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 39）；主線：§0.8.1 錨點人工評分（恍惚非電子批：dream pop／soul／MPB／slowcore 硬蕊度 1–2，音牆與長篇器樂 3）；listeners 39 疑錯配；試聽查無，但 Capitol 正規盤有數位版的可能未確認 → 照但書給 4 不給 5"
+   },
+   "rarity": "common",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 1，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "先簽下他的，是寫作與製作的合約。他是 Peabo Bryson，1951 年生，南卡羅萊納州人，14 歲就替 Al Freeman and the Upsetters 唱和聲。後來在 Bang Records 錄音時，總經理聽見了他，那紙合約就從這裡來。1977 年他轉到 Capitol，本作 1981 年出版，打進全美專輯榜的第 82 名。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/dd6a00db-f99e-4e28-bfdb-54c92acde3f5",
+     "https://musicbrainz.org/release/57db60f8-ec7b-4bd9-8a25-4663bcd25c9e",
+     "https://en.wikipedia.org/wiki/Peabo_Bryson",
+     "https://soultracks.com/?p=81442",
+     "https://en.wikipedia.org/wiki/I_Am_Love_(album)"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-05T02:22:39Z",
+    "note": "Apple us／jp／br Peabo Bryson 藝人頁皆無《Turn the Hands of Time》"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  }
+ ]
+}
