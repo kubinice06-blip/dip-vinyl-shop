@@ -9,17 +9,17 @@
 - 主要檔案：`data/artist-intros/*`、`desc-tools/batches/artist/{cut,facts,research,output}/ar-{d-141,d-142,u-001～028}-*`、`desc-tools/batches/artist/progress.json`、`batch-progress/artist-intro/ar-c-rulings.md`（第十二輪各批、題材更正與收尾段）、`audits/ARTIST-PUB-ISSUES.md`。
 - 驗證：qa-artist gap／out 每批 0 處（只剩保留 thin 的缺位）；build-artist-intros 64 分片、8,634 位。
 
-### 2026-10-16｜dip-vinyl-shop｜藝人介紹第十一輪五批上線（雲端，ar-d-136～140；195 位；介紹 8,369 → 8,564）
+### 2026-10-16｜dip-vinyl-shop｜藝人介紹第十一輪五批上線（雲端，ar-d-936～940；195 位；介紹 8,369 → 8,564）
 
 - 結果：195 位上架（132 full、63 thin），不寫 5 位（單源或聲音句不足），審稿修 61 處。add-20261015-backfill 名冊的爵士段寫完，剩 74 位未切（爵士尾段 38、流行 15、搖滾 9、民謠 7、其他 5）。
-- 新形狀：片假名人名、團名、曲名一律改羅馬字或通行中文（ar-d-139 起）；src 不足 2 的卡不寫；媒體名進正文的獎項一律刪。2026 年死訊（Richie Beirach、Danny Simmons）以 WebSearch 兩源核實。
-- 主要檔案：`data/artist-intros/*`、`desc-tools/batches/artist/{cut,facts,research,output}/ar-d-136～140-*`、`desc-tools/batches/artist/progress.json`、`batch-progress/artist-intro/ar-c-rulings.md`（第十一輪各批與收尾段）、`audits/ARTIST-PUB-ISSUES.md`。
+- 新形狀：片假名人名、團名、曲名一律改羅馬字或通行中文（ar-d-939 起）；src 不足 2 的卡不寫；媒體名進正文的獎項一律刪。2026 年死訊（Richie Beirach、Danny Simmons）以 WebSearch 兩源核實。
+- 主要檔案：`data/artist-intros/*`、`desc-tools/batches/artist/{cut,facts,research,output}/ar-d-936～940-*`、`desc-tools/batches/artist/progress.json`、`batch-progress/artist-intro/ar-c-rulings.md`（第十一輪各批與收尾段）、`audits/ARTIST-PUB-ISSUES.md`。
 - 驗證：qa-artist gap／out 每批 0 處（只剩不寫名單的缺位）；build-artist-intros 64 分片、8,564 位。
 
-### 2026-10-15｜dip-vinyl-shop｜藝人介紹第十輪二十批上線（雲端，ar-d-104～116＋ar-d-129～135；765 位；介紹 7,602 → 8,369）
+### 2026-10-15｜dip-vinyl-shop｜藝人介紹第十輪二十批上線（雲端，ar-d-104～116＋ar-d-929～935；765 位；介紹 7,602 → 8,369）
 
 - 結果：765 位上架（650 full、115 thin），無不寫，審稿修 313 處。古典段寫完、原排隊名冊清空。
-- 名冊補登：`batch-progress/artist-intro/backfill-20261015.mjs` 以 seed_cards.json 對名冊與已上線介紹取差集，554 位補進名冊（tier D、`addedBy` add-20261015-backfill；爵士 518）；本輪切 ar-d-129～135 七批 280 位，剩 274 位留下一輪。
+- 名冊補登：`batch-progress/artist-intro/backfill-20261015.mjs` 以 seed_cards.json 對名冊與已上線介紹取差集，554 位補進名冊（tier D、`addedBy` add-20261015-backfill；爵士 518）；本輪切 ar-d-929～935 七批 280 位，剩 274 位留下一輪。
 - 產線：每批補洞 4 支（Sonnet）＋寫作 2 支（Opus），同時最多兩批在飛；主線逐位審稿。2025–26 年死訊以 WebSearch 兩源核實（青木望、George Young、Gino Paoli、Jack DeJohnette、Cassandra Wilson）。媒體名一律匿名（含《時代》雜誌）。
 - 主要檔案：`data/artist-intros/*`、`desc-tools/batches/artist/{cut,facts,research,output}/ar-d-104～116、129～135-*`、`desc-tools/batches/artist/progress.json`、`batch-progress/artist-intro/{ar-c-rulings.md,backfill-20261015.mjs,roster-20260929.json}`、`audits/ARTIST-PUB-ISSUES.md`。
 - 驗證：qa-artist gap／out 每批 0 處；build-artist-intros 64 分片、8,369 位。

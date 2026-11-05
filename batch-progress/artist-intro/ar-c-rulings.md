@@ -1562,7 +1562,7 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 
 - 店主 2026-10-15「新增二十批」。排隊中只剩 ar-d-104～116（13 批、485 位，全為古典段）；另 7 批從卡池「不在名冊」的藝人補切（2026-10-15 盤點：卡池 19,121 張的藝人中，不在名冊也沒有介紹的 554 位，爵士 518、流行 15、搖滾 9、民謠 7、其他 5）。補進名冊照 2026-10-13 先例（tier D、`addedBy` 標批名、shard null），本輪只切 7 批（約 280 位），其餘留下一輪。
 - PR #80 照 2026-10-14 店主指示退訂，不再盯 PR；接力期間的自我 check-in 照「接力任務」節保留。
-- 名冊補登：`batch-progress/artist-intro/backfill-20261015.mjs` 以 seed_cards.json 對名冊與已上線介紹取差集，554 位補進名冊（tier D、`addedBy` add-20261015-backfill、shard null；mainGenre 取卡片首類型的多數；collab 按 `&`／`and`／`with`／`feat.`／逗號／斜線判定，Spick & Span、Medeski Martin & Wood、Marty & Mystics、Paul Jackson, Jr. 手動改回 false）。排序照切批規則（爵士先、卡數多的先），切 ar-d-129～135 七批 280 位（Gonzalo Rubalcaba … John Kaizan Neptune / 直居隆雄），剩 274 位留下一輪。領隊與編制掛名（Stefano Di Battista vs Stefano Di Battista Quintet 等）照伍佰先例分開寫。
+- 名冊補登：`batch-progress/artist-intro/backfill-20261015.mjs` 以 seed_cards.json 對名冊與已上線介紹取差集，554 位補進名冊（tier D、`addedBy` add-20261015-backfill、shard null；mainGenre 取卡片首類型的多數；collab 按 `&`／`and`／`with`／`feat.`／逗號／斜線判定，Spick & Span、Medeski Martin & Wood、Marty & Mystics、Paul Jackson, Jr. 手動改回 false）。排序照切批規則（爵士先、卡數多的先），切 ar-d-929～935 七批 280 位（Gonzalo Rubalcaba … John Kaizan Neptune / 直居隆雄），剩 274 位留下一輪。領隊與編制掛名（Stefano Di Battista vs Stefano Di Battista Quintet 等）照伍佰先例分開寫。
 
 ## ar-d-104（2026-10-15）
 
@@ -1708,7 +1708,7 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
   - 保留：林尹燦影片觀看數補洞層列必要例外，主線裁定不寫（在世者串流類規則優先）；李雲迪 2021 年案件、Bashmet 政治立場、すぎやま政治發言、Theodorakis 反猶爭議一律未寫；Růžičková「被稱為第一位錄全套巴赫鍵盤作品」；Mengelberg 戰時合作、俞麗拿文革下放、周龍文革下鄉、Guller 躲藏、Růžičková 集中營、Theodorakis 軍政府禁樂各一句；在世者各一處。
 - 待本機：俞麗拿《梁祝》1993、李雲迪 2001、曾宇謙 2012、Guller 1956 卡池專輯對應未證實；Bashmet Schnittke 卡 1991 vs 1988；林尹燦 Rach 3 卡 2022 vs 2025 Decca 發行；Francescatti 卡 1949 搭檔年份未給；Dagar 上線簡介「修車廠與賣麵包 25 年」單源（pubIssues 1）；天野正道上線簡介 OVA 發售日待核；digest 把 Giant Robo 誤作《巨神 Gorg》、《排球女將》對應待查。
 
-## ar-d-129（2026-10-15）
+## ar-d-929（2026-10-15）
 
 - 40 位全上架（32 full、8 thin：山中千尋、深町純、MALTA、Manhattan Jazz Quintet、カリオカ、益田幹夫、Cæcilie Norby、Native Son），無不寫。名冊補登批（add-20261015-backfill）第一批，爵士為主。
 - 同名混卡已棄：MALTA（馬爾他）、Benny Green（英國薩克斯風手）、José James（同名薩克斯風手）。鈴木勲的 Blakey 說法疑混淆鈴木良雄，不寫。
@@ -1720,7 +1720,7 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
   - 保留：Blanchard「大都會首部黑人作曲家歌劇」（通行事實）；Ron Carter 金氏紀錄、Oosterhuis 荷蘭專輯榜冠軍（在世者核心一處、兩源）；Wilkins《Omega》題材；具名音樂人評語。
 - 待本機：Erik Truffaz 上線簡介 2 條（Blue Note 簽約年、金唱片歸屬）、Stanley Jordan 上線簡介五軌／六軌自相矛盾、鈴木勲上線簡介 Blakey 說法單源（pubIssues 共 4）。
 
-## ar-d-130（2026-10-15）
+## ar-d-930（2026-10-15）
 
 - 40 位全上架（32 full、8 thin：向井滋春、森園勝敏、Charles Pasi、Charlie Hunter Quartet、George Young、Gerald Clayton、Johnathan Blake、Jukka Perko），無不寫。名冊補登批第二批，爵士為主。
 - 同名混卡已棄：Out of the Blue（鹽湖城雕塑）、大野俊三（同名足球員）、George Young（英國政治人物，改查費城薩克斯風手 George Opalisky Jr.）。
@@ -1730,17 +1730,17 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
   - 保留：Geri Allen「Jazzpar 第一位女性得主」、McFerrin 父親「第一位登上大都會的非裔男歌手」（通行事實）、弘田三枝子「據報導首位登上新港」；具名評語。
 - 待本機：Out of the Blue 上線簡介「1985 年組起」誤（1984）；向井滋春上線簡介新宿ジャズ賞年份兩說；Joe Chambers 上線簡介 3 條（發行日、首作年、《Mirrors》年份）；Kevin Hays 上線簡介「首張領班盤」誤；Marlene 上線簡介來日年齡不一（pubIssues 共 7）。
 
-## ar-d-131（2026-10-15）
+## ar-d-931（2026-10-15）
 
 - 40 位全上架（33 full、7 thin：Pieces of a Dream、Prism、Steps、Wha-ha-ha、99.99、Bennie Wallace、Gianluca Petrella），無不寫。名冊補登批第三批，爵士為主。
-- 多名卡放寬：Charles Lloyd & The Marvels 276、George Russell & The Living Time Orchestra 279。Prism 寫樂團（森園勝敏個人卡在 ar-d-130）；Doky Brothers 以兄弟檔為主、不重複 Chris Minh Doky 個人卡。
+- 多名卡放寬：Charles Lloyd & The Marvels 276、George Russell & The Living Time Orchestra 279。Prism 寫樂團（森園勝敏個人卡在 ar-d-930）；Doky Brothers 以兄弟檔為主、不重複 Chris Minh Doky 個人卡。
 - 搜尋超額：Ben l'Oncle Soul（g3）超 3 次，查 Victoires 類別與白金第二源，比照盧律銘先例放行（偏多，記此）。
 - QA 處理：村岡實 facts「厚生年金会館」被判簡體，主線改正體「會館」。
 - 審稿修 9 處：Meshell 刪「維基百科稱」與父母過世遺物；Musica Nuda「病倒」改「無法上台」；Fresu Quintet、Paul Jackson Jr.、Domínguez（評審語）「最…」改「極…」；Trio Töykeät 刪「第一支在總統府演出」；村岡實「最早」改「早期」；Gare du Nord 刪荷蘭專輯榜 100 週；Russell「唯一原創的理論」改寫。
   - 保留：99.99 thin 以製作分工與吉他換名作做法句（勉強過門檻）；具名評語（James Taylor、Wynton Marsalis、Chucho Valdés、Grover Washington Jr.）；在世者各一處。
 - 待本機：Musica Nuda 上線簡介「第五張錄音室專輯」無源、Rick Margitza 上線簡介「Miles 聽完卡帶」無源（pubIssues 2）；Bob Dorough NEA 爵士大師 facts 記 2019、本人 2018 過世，年份待核。
 
-## ar-d-132（2026-10-15）
+## ar-d-932（2026-10-15）
 
 - 40 位全上架（27 full、13 thin：Mark Shim、Modern Jazz Playboys、Out Of/Into、Placebo (Belgium)、R+R=NOW、Ruben Hein、Superblue、The Benny Green Trio、The Players、U-Street All Stars、ゼロ戦、上田力、井上敬三），無不寫。名冊補登批第四批，樂團與合作掛名卡多、日本冷門樂團多，thin 比例偏高。
 - 多名卡放寬：Mal Waldron & Jackie McLean 252、Waldron 五人卡 279、Willie Nelson & Wynton Marsalis 265。已有個人卡者（Blanchard、Benny Green、Pullen、Adams、Fresu）在樂團卡只寫樂團與卡池那張。
@@ -1750,7 +1750,7 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
   - out-2 9 處：Barretto 兩處、Ron Miles「最…」改「極…」；Ron Miles 刪氣喘、Yaron Herman 刪膝傷；Superblue 刪「Hargrove 第一次錄音」；Blanchard E-Collective 刪 Eric Garner 臨終與槍枝暴力句（政治只留一句）；Nelson 刪甘迺迪中心（在世者一處）。
 - 待本機：Önder Focan 上線簡介「Blue Note 第一張土耳其專輯」有並存說法、Modern Jazz Playboys 上線簡介人數（15 vs 12）、Ralph Peterson 上線簡介加入 Blakey 年份、Ferrell 卡池日本首發名、Yaron Herman 上線簡介獎項名誤（pubIssues 5）。
 
-## ar-d-133（2026-10-15）
+## ar-d-933（2026-10-15）
 
 - 40 位全上架（31 full、9 thin：伊東たけし、喜多嶋修、山屋清、真梨邑ケイ、赤尾三千子、Alice Ricciardi、Aron Ottignon、ATLAS、Blue Note All-Stars），無不寫。名冊補登批第五批，日本音樂人與同一人多張掛名卡多。
 - 多名卡放寬 8 張（Sarpila & Pyysalo、Bebo 三重奏、Charlap & Rosnes、Charlap & Stewart、Evans／Jones／Mitchell、Lagrène 三重奏、Dorough & Frishberg、Hutcherson 三重奏，皆 ≤280）。同一人多卡（Charlap、Bill Evans sax、O'Farrill、村岡実、Belden）各以該編制與卡池那張為主。_BY.ALEXANDER 照 Alex da Kid 寫；ATLAS 為日本三鍵盤手錄音室團；'Hannibal' Marvin Peterson 即 Hannibal Lokumbe。
@@ -1758,19 +1758,19 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - Severi Pyysalo 已過世但兩源只寫月份、無年份，正文只寫「已過世」。
 - 審稿修 12 處：
   - out-1 5 處：大村憲司「長期信任」加「據說」、刪過世當晚流星群；山口真文刪宣傳單源「數一數二」；村岡実兩處「最早之一」改「早期」；菊池ひみこ刪鳥取市文化賞（在世者一處）。
-  - out-2 7 處：Kähärä 刪「第一位女性得主」；Sarpila & Pyysalo「最知名」改「極」；Bebo 刪妻兒留島；Charlap & Rosnes 刪 Rosnes 領養身世（比照 ar-d-129）與婚禮地點；Lagrène 三重奏丹麥百科「唯一」改寫；Dorough & Frishberg 刪「身後獲 NEA」（年份矛盾）。
+  - out-2 7 處：Kähärä 刪「第一位女性得主」；Sarpila & Pyysalo「最知名」改「極」；Bebo 刪妻兒留島；Charlap & Rosnes 刪 Rosnes 領養身世（比照 ar-d-929）與婚禮地點；Lagrène 三重奏丹麥百科「唯一」改寫；Dorough & Frishberg 刪「身後獲 NEA」（年份矛盾）。
 - 待本機：渡辺貞夫 with GJT 卡池《Bird of Paradise》渡辺是否參與；山口真文上線簡介 Leeward「極少見」無源、宮間利之上線簡介芸術祭主詞不清；Kähärä 上線簡介「第一張個人專輯」誤；Bill Stewart 上線簡介「第一張掛名碟」誤（pubIssues 4）；Bob Dorough NEA 年份。
 
-## ar-d-134（2026-10-15）
+## ar-d-934（2026-10-15）
 
 - 40 位全上架（27 full、13 thin：Bobby Lyle Trio、Booster、Brandon Woody、Brisa Roché、Buscemi & Bisceglia、Charlie Hunter / Leon Parker、China Moses、Chris Botti、Dave Koz、Emma Salokoski & UMO、Eric Darius、FATHERS、Floratone），無不寫。名冊補登批第六批。
 - 多名卡放寬：McFerrin & Corea、Lloyd／Moran／Sewell、Mingus Sextet with Dolphy、Mariano & 渡辺、Parker & Gillespie、Connor 三人、Hinze 三人、Grusin／GRP／渡辺、Bosso & Girotto，另 Charlie Hunter & Pound For Pound 258（四人編制樂團卡）。Charlie Hunter 四張卡、Fabrizio Bosso 兩張卡各以該編制為主。同名混卡已棄：Cecil Taylor Unit（同名專輯）、David Matthews（同名作家）。
 - 搜尋超額：Branford Marsalis Quartet（g1）超 2、Lloyd 三人卡與 Mingus Sextet（g2）各超 1、Connor 三人卡超 2、Hinze 三人卡超 1（g3），皆補第二源或多人身分，放行。
-- 審稿修 10 處：McFerrin & Corea、Cecil Taylor、Mingus、Parker & Gillespie「最…之一」改「極…」；Lloyd 三人卡刪《Forest Flower》百萬銷量；C.P.U「日本第一支自由爵士樂團」改「早期」；David Matthews「日本頭號爵士團」改寫；Don Byron and Existential Dred 刪童年氣喘（比照 ar-d-129）；FATHERS、Floratone 首句補國籍。
+- 審稿修 10 處：McFerrin & Corea、Cecil Taylor、Mingus、Parker & Gillespie「最…之一」改「極…」；Lloyd 三人卡刪《Forest Flower》百萬銷量；C.P.U「日本第一支自由爵士樂團」改「早期」；David Matthews「日本頭號爵士團」改寫；Don Byron and Existential Dred 刪童年氣喘（比照 ar-d-929）；FATHERS、Floratone 首句補國籍。
   - 保留：Bosso 1999 義大利 Top Jazz 票選最佳新人（權威票選、不寫刊名）；C.P.U 不寫富樫雅彦事故與傷殘；具名評語（Questlove、Blanchard、Corea、Miles Davis、錄音學院主席）。
 - 待本機：Booster 上線簡介 2 條、Brisa Roché 1 條、Cautious Clay 2 條、Mariano & Watanabe 盤名拼法、Eric Darius 榜名與名次 2 條、Chris Dave 簽約起源、富樫雅彥事故年份（pubIssues 約 10）；Branford《Belonging》2025、Lloyd《Figure in Blue》2025 新近事實已兩源。
 
-## ar-d-135（2026-10-15）
+## ar-d-935（2026-10-15）
 
 - 40 位全上架（32 full、8 thin：French Toast、Hang Raiji、High Five Quintet、Jackie Allen、James Hurt、Jazztronik、Joe Sample / Ray Brown / Shelly Manne、John Kaizan Neptune / 直居隆雄），無不寫。名冊補登批 add-20261015-backfill 最後一批。
 - 多名卡放寬：Sinatra / Norvo、兩張 Hubbard / Shaw、Paoli 六人、Edison 五人、Laws 八人、大西順子、Great Jazz Trio、Terrasson & Wilson、Baxter 四人、Lovano & Rubalcaba、Lovano & Osby、Lovano & Hank Jones。Joe Lovano 五張合作卡、Hubbard / Shaw 兩張、Neptune 兩張、Hank Jones 兩張（個人卡與 Lovano 二重奏）各以卡池那張為主，生平不重複。
@@ -1779,7 +1779,7 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
   - 保留：Lorber 2018 葛萊美（在世者核心成就一處）、Hindi Zahra Victoires de la Musique 一處；Gino Paoli 2026、Jack DeJohnette 2025、Cassandra Wilson 2026 過世已以 WebSearch 兩源核實；Cavassa 2021 Sarah Vaughan 大賽並列冠軍（兩源），2026《Diavola》細節不寫。
 - 待本機：George Howard、Hank Jones、John Kaizan Neptune 上線簡介各 1 條（pubIssues 3）。
 
-## 第十輪收尾（ar-d-104～116＋ar-d-129～135，2026-10-15）
+## 第十輪收尾（ar-d-104～116＋ar-d-929～935，2026-10-15）
 
 - 二十批全數上線：765 位（650 full、115 thin），無不寫，審稿修 313 處。介紹總數 7,602 → 8,369。
 - 範圍：古典段寫完（ar-d-104～116，排隊名冊清空）；名冊補登 554 位中切 7 批 280 位（爵士為主）上線，剩 274 位未切，留下一輪。
@@ -1790,11 +1790,11 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
   - 2025–26 年死訊與新近事實，主線 WebSearch 兩源核實：青木望、George Young、Gino Paoli、Jack DeJohnette、Cassandra Wilson、Roger Norrington；Immanuel Wilkins 2026 麥克阿瑟獎。
 - 待本機：KV 上線簡介修正見 `audits/ARTIST-PUB-ISSUES.md`（累計 1,368 條）；本輪各批「待本機」段的卡池年份與曲風存疑。
 
-## 第十一輪五批接力（ar-d-136～140，2026-10-16 起）
+## 第十一輪五批接力（ar-d-936～940，2026-10-16 起）
 
-- 店主 2026-10-16「再五批」。從 add-20261015-backfill 剩下的 274 位，照切批規則（爵士先、卡數多的先、同卡數依鍵排序）接續切 ar-d-136～140 五批 200 位（John Lewis & Hank Jones … 横内章次とクインテット・プラス・ラテン），全為爵士。剩 74 位（爵士 38、流行 15、搖滾 9、民謠 7、靈魂 3、電子 1、古典 1）留下一輪。
+- 店主 2026-10-16「再五批」。從 add-20261015-backfill 剩下的 274 位，照切批規則（爵士先、卡數多的先、同卡數依鍵排序）接續切 ar-d-936～940 五批 200 位（John Lewis & Hank Jones … 横内章次とクインテット・プラス・ラテン），全為爵士。剩 74 位（爵士 38、流行 15、搖滾 9、民謠 7、靈魂 3、電子 1、古典 1）留下一輪。
 
-## ar-d-136（2026-10-16）
+## ar-d-936（2026-10-16）
 
 - 40 位全上架（26 full、14 thin：Scofield & Metheny、Judi Silvano、Perko & Virtuosi di Kuhmo、Juliano Rossi、Kangaroo、Kenny Werner、L.A. Transit、Lew Tabackin、Logan Richardson、Love Live Life、Waldron & 日野皓正、Twi-Life、Marty & Mystics、Maya Delilah），無不寫。名冊補登批第八批。
 - 多名卡放寬：John Lewis & Hank Jones、Kendrick Scott 三人、Les Brown（兩位客席）、Waldron & 山下洋輔、Tyner 三張（Hutcherson、McLean、Henderson）、Mercereau / Johnson / Niño。Kenny Barron 兩張編制卡、Kenny Burrell 兩張合作卡、McCoy Tyner 三張合作卡、Mal Waldron 兩張合作卡各以卡池那張為主，生平不重複。
@@ -1803,16 +1803,16 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
   - 保留：José Luis Cortés 2022 年過世（補洞層已更正被誤算的 2026）；Kiefer 引 Blue Note 總裁 Don Was、Anderson .Paak《Ventura》葛萊美一處；Nancy Wilson 榜單與葛萊美（已故者）；Solal 維琪政權背景一句。
 - 待本機：Juliano Rossi 2、Kitty Hoff 2、Karl Denson、Kenny Barron Trio、Burrell & Washington、Kiefer、Minyo Crusaders 各 1（pubIssues 9）。
 
-## ar-d-137（2026-10-16）
+## ar-d-937（2026-10-16）
 
 - 38 位上架（27 full、11 thin：NORIKI、Paul Cornish、Ralph Peterson Fo'tet、Ravi Coltrane、Richard Pine & Company、Rodney Jones、Ron Carter / Ricky Dillard、Clooney with Les Brown、Sadistics、Scolohofo、Spick & Span），不寫 2 位：Sidevision（只有成員簡歷與發行資料，寫不出有來源的聲音句）、South Wind Section（全部事實出自同一 Discogs 頁，單源）。名冊補登批第九批。
 - 多名卡放寬：Rosnes & Danish Radio Big Band、Beirach & Liebman、Beirach with 富樫雅彦、Ron Carter & Danny Simmons。Ralph Peterson 三張、Ron Carter 三張、Stan Tracey 兩張、Sonia Rosa 兩張、Stefon Harris 兩張、Richie Beirach 兩張各以卡池那張為主，生平不重複。Beirach with 富樫雅彦的《Kahuna》查無可開來源，改寫兩人同月的現場盤《津波 Tidal Wave》，不寫富樫受傷經過。
 - 預抓維基誤配（Sarah McCoy 小說家、Spectrum 光譜詞條、Richard Pine 愛爾蘭評論家、Paul Cornish 橄欖球員）補洞層皆棄用。
-- 審稿修 5 處：Fresu「辨識度最高之一」、Cornish「最重要的影響之一」、Stan Tracey「最受推崇之一」改「極…」；Rita Reys 單卡 263 字刪 Avakian 評語；Sarah McCoy 刪父親與祖母過世並壓到 250 內。另補洞稿「九段会館」「稲葉国光」照 ar-d-131 先例改「會」「國」。
+- 審稿修 5 處：Fresu「辨識度最高之一」、Cornish「最重要的影響之一」、Stan Tracey「最受推崇之一」改「極…」；Rita Reys 單卡 263 字刪 Avakian 評語；Sarah McCoy 刪父親與祖母過世並壓到 250 內。另補洞稿「九段会館」「稲葉国光」照 ar-d-931 先例改「會」「國」。
   - 保留：Richie Beirach（2026-01）、Danny Simmons（2026-06）過世，主線 WebSearch 兩源核實（WRTI、DownBeat；Black Enterprise、Westwood Gallery）；Ron Carter 金氏紀錄錄音數量（必要例外、不用「最」）；Rita Reys 263→233 後的六座 Edison 獎（已故者）；Stan Tracey Octet 水星獎入圍（已故者）；Orphy Robinson MBE 一處。
 - 待本機：Sadistics、Scolohofo、Stefon Harris & Blackout 上線簡介各 1 條（pubIssues 3）。
 
-## ar-d-138（2026-10-16）
+## ar-d-938（2026-10-16）
 
 - 40 位全上架（23 full、17 thin：Harris & Terrasson、Lacy / 高橋悠治 / 小杉武久、Sugar Loaf Express、Sunburst、Tania Maria、Blue Note 7、Blue Note All Stars、Freedom Unity、Nels Cline 4、Nels Cline Singers、Northern Governors、Players / 鈴木宏昌、THE SPHÈRES、Dutronc & Les Esprits Manouches、Tranzam、Viktoria Tolstoy、Wind-Breakers），無不寫。名冊補登批第十批。
 - 多名卡放寬：Teddy Wilson / 北村英治、Super Quartet、Monk with Coltrane、Hagans & Belden、Hagans & Printup、Allen & Mills、Trijntje with Sinfonietta、Trio Focan、Wayne Shorter Quartet、Woody Herman / 北村英治。Nels Cline 兩張、Thomas Dutronc 兩張、Tim Hagans 兩張、北村英治兩張、Steve Lacy 三張各以卡池那張為主。The Pentagon 實為 Cedar Walton 名下錄音陣容、Sugar Loaf Express 只是該專輯陣容、Today's Latin Project 為一次性錄音名義，照實寫。
@@ -1821,7 +1821,7 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
   - 保留：Trio Focan 照補洞稿寫土耳其吉他手 Önder Focan 領軍（主線特注誤記為芬蘭，兩位客座才是芬蘭人，記為主線更正）；Bill Holman 2024、Ellis Marsalis 2020、Wayne Shorter 2023、Tony Allen 2020 過世（截止日前通行事實）；Charles Lloyd、Thierry Lang、Thomas Dutronc 在世者各一處。
 - 待本機：Harris & Terrasson 2、Monk with Coltrane 2、Lacy / 高橋 / 小杉、Freedom Unity、Thomas Dutronc、Allen & Mills 各 1（pubIssues 8）。
 
-## ar-d-139（2026-10-16）
+## ar-d-939（2026-10-16）
 
 - 39 位上架（32 full、7 thin：Henri 菅野、Sammy & 稲垣次郎、上田力 & The Power Station、佐藤允彦 & Medical Sugar Bank、兼崎順一、前田憲男・藤舎推峰、増尾元章），不寫 1 位：仲村裕美（只有出版紀錄，聲音句只剩曲目取向與 Discogs 風格標籤，照 Vex'd 先例不寫）。名冊補登批第十一批，日本爵士為主。
 - 多名卡放寬：Peacock / 佐藤 / 富樫、Steve Marcus + Soul Media、Stomu Yamashta & 佐藤、Mickey 吉野 & 渡辺香津美、井野信義 & Lester Bowie、佐藤 & Dauner、佐藤 & Peacock、佐藤 & Big Soul Media、佐藤 ft. Gomez & Gadd、前田憲男 & Tin Pan Alley、原信夫 / Elvin Jones / Frank Foster、古澤良治郎 & Lee Oskar。佐藤允彦六張、前田憲男三張、土取利行三張、Stomu Yamashta 兩張、井野信義兩張、北村英治兩張、古沢良治郎兩張各以合作者與卡池那張為主，生平不重複（兩張 Peacock 卡一張寫駐德與 Jarrett 三重奏、一張寫 Ayler 與 ECM）。
@@ -1831,21 +1831,21 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
   - 保留：Wynton Marsalis「第一位拿下普立茲音樂獎的爵士音樂人」屬通行事實（照 Van Cliburn 先例）；Julian Cope 評 Stomu Yamashta（具名音樂人）；三枝成彰文化功勞者、北村英治旭日小綬章（在世者各一處）；しばたはつみ Oricon 第 17 名（已故者）。
 - 待本機：Mickey 吉野、佐藤 & MSB、佐藤 & Peacock、佐藤 ft. Gomez & Gadd、北村 & Happy Cooking、土取利行 上線簡介各 1 條（pubIssues 6）。
 
-## ar-d-140（2026-10-16）
+## ar-d-940（2026-10-16）
 
-- 38 位上架（24 full、14 thin），不寫 2 位：村松健、横内章次とクインテット・プラス・ラテン（研究稿都只有 ja 維基一個來源，src 不足 2，照 ar-d-137 South Wind Section 先例）。名冊補登批第十二批，本輪最後一批，日本爵士為主。
+- 38 位上架（24 full、14 thin），不寫 2 位：村松健、横内章次とクインテット・プラス・ラテン（研究稿都只有 ja 維基一個來源，src 不足 2，照 ar-d-937 South Wind Section 先例）。名冊補登批第十二批，本輪最後一批，日本爵士為主。
 - 富樫雅彦八張合作卡（宮沢昭等四人、ニューハード、Wave、高橋悠治、高柳昌行、鈴木勲、Richie Beirach、加古隆）與山本邦山 / 富樫 / 山下，每張只用一句交代富樫身分、說法互不重複，重心放在合作者；兩組寫作代理跨組錯開事實（New Direction、手肘奏法、早稻田演出等只寫一次）。富樫的受傷、病況、死因一律未寫。
 - 搜尋超額：大村憲司 / 渡辺香津美 / Lee Ritenour 15 次（超 7，三人合查並為 1978 原盤找第二源）、山本剛 with Sam Jones, Billy Higgins 10 次（超 2，多出兩次為無內容頁）。放行，大村那筆記為例外、不作先例。補洞稿「稲葉国光」照先例改「國」。
-- 審稿修 11 處：鈴木勲、Ponta 村上秀一、松岡直也、松本英彦（兩處）「最…／第一人」改「極／首選／代表人物／早期」；加古隆刪「第一位在 ECM 出片的日本人」；山下洋輔トリオとブラス12 刪紫綬褒章（比照 ar-d-136）；峰純子刪模糊生年與單源刊物列名；村岡実 & 沢井忠夫刪宮城道雄急逝；高橋悠治「水牛楽団」改「樂團」。
-  - 保留：Richie Beirach 2026 年過世（ar-d-137 已兩源核實）；山本邦山 / 富樫 / 山下的 1969 學運背景一句；渡辺香津美引 Pat Metheny（具名音樂人）；奥慶一 JASRAC 賞、安藤正容 F-1 主題曲、Chris Hinze Montreux 獎（在世者各一處）。
+- 審稿修 11 處：鈴木勲、Ponta 村上秀一、松岡直也、松本英彦（兩處）「最…／第一人」改「極／首選／代表人物／早期」；加古隆刪「第一位在 ECM 出片的日本人」；山下洋輔トリオとブラス12 刪紫綬褒章（比照 ar-d-936）；峰純子刪模糊生年與單源刊物列名；村岡実 & 沢井忠夫刪宮城道雄急逝；高橋悠治「水牛楽団」改「樂團」。
+  - 保留：Richie Beirach 2026 年過世（ar-d-937 已兩源核實）；山本邦山 / 富樫 / 山下的 1969 學運背景一句；渡辺香津美引 Pat Metheny（具名音樂人）；奥慶一 JASRAC 賞、安藤正容 F-1 主題曲、Chris Hinze Montreux 獎（在世者各一處）。
 - 待本機：宮間利之 Canto 系列得獎年份、山屋清《Kyo》人間國寶說法、山本邦山《Kyorai》廠牌、峰純子 Hanna 爵位年份、Ponta 名字印刷因果，各 1 條（pubIssues 5）。
 
-## 第十一輪收尾（ar-d-136～140，2026-10-16）
+## 第十一輪收尾（ar-d-936～940，2026-10-16）
 
 - 五批全數上線：195 位（132 full、63 thin），不寫 5 位（Sidevision、South Wind Section、仲村裕美、村松健、横内章次とクインテット・プラス・ラテン），審稿修 61 處。介紹總數 8,369 → 8,564。
 - 範圍：add-20261015-backfill 名冊的爵士段寫完；剩 74 位（爵士 38 為卡數分組後的尾段、流行 15、搖滾 9、民謠 7、靈魂 3、電子 1、古典 1）未切。
 - 本輪新定的形狀：
-  - 片假名改寫（ar-d-139 起）：人名改羅馬字、團名改羅馬字或中文編制名、曲名與片名改通行中文或英文；漢字人名保留日文字形；簡體字形（国、会）照 ar-d-131 先例改繁體。早前保留片假名的批次不追改。
+  - 片假名改寫（ar-d-939 起）：人名改羅馬字、團名改羅馬字或中文編制名、曲名與片名改通行中文或英文；漢字人名保留日文字形；簡體字形（国、会）照 ar-d-931 先例改繁體。早前保留片假名的批次不追改。
   - 研究稿只有單一來源（src 不足 2）的卡不寫，full 稿也一樣（横内章次）。
   - 媒體名進正文的獎項（《Swing Journal》金唱片、讀者票選、Golden Hit Award）一律刪，與 Bosso 先例一致。
   - 同一人合作卡多（富樫雅彦九張、佐藤允彦七張）時，每張身分句換說法，生平只在一張寫，兩組寫作代理跨組錯開事實。
