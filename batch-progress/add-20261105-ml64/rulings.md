@@ -37,3 +37,12 @@
 - 23025：El Búho《Balance》x 存疑（cumbia 持續律動，可能 2.7–3.0）；Bandcamp／Kudos 12 首、Discogs 黑膠 11 首（少〈Ceiba〉）；廠方宣傳數字不入 facts。
 - 23026：Nicola Cruz《Prender el Alma》x 存疑最高風險：Discogs 標 House、樂評稱標題曲 surging beat 與 deep house 元素，同時整體悠哉、帶憂鬱，y、z 恐低於預估；出生法國之說僅見搜尋摘要，不採。
 - 全組：facts 去媒體名與評分，出處留 src／notes；WebSearch 用 5 次（Ishq、El Búho 各 1，其餘 3）。
+
+## 研究 d 組
+- **23031**（Any Silver Lining）：實為『1 首原創主打＋6 首他人混音＋Globular 版＋49 分鐘 DJ mix』的混音 EP，非原創專輯；Tenet Audio 等混音與 Bandcamp 標籤（house、techno）指向四拍舞曲，策展 moodGuess（慢 dub 低音）無一手來源，x 恐 > 2.7。研究層建議主線汰換／列移除候選，status thin。
+- **23032**（body.mind.soul）：18 軌（原創＋電子混音＋氛圍混音＋4 組 DJ mix）合集，含 Biotone『Ecstatic Trance Remix』、Hypno:Tek Mix；『dub 低頻』只有 Discogs 風格標籤。moodGuess 存疑（四拍混音並存）；建議情緒評分只看原創段與 Ambient 版，或改收 Tribal Shift 的 14 軌版（2020-05-20）。
+- **23033**（Let the Freak Flag Fly）：身分無誤（1997-04-15 Astralwerks）；breakbeat／dub 低頻無來源，AllMusic、Discogs 網頁 403，status thin，moodGuess 存疑（breakbeat 若屬實 x 恐 2.8）。
+- **23034**（Dub, Sweat & Tears）：身分無誤（2014-12-09 Six Degrees），為自家舊作 dub 重製、有十週年定位，保留；z 有掉到 0.3 的風險，無速度來源。
+- **23035**（Jazz Gone Dub）：真樂手 jazz-dub（Sly Dunbar、Jah Wobble、Ernest Ranglin 等），Discogs 主類 Jazz／Reggae；無速度來源，moodGuess 存疑（鼓是否有 groove 推進）。
+- **23036**（Natura Sonora）：身分無誤；樂評提到 pulsing beats、Białowieża 大鼓聲，無 BPM，moodGuess 輕度存疑（x、z 恐偏高）；Wikipedia『El Búho』條目是秘魯報紙，未採用。
+- 媒體名與榜單名次未入 facts；MB UA 照規定、無 email；WebSearch 用 3 次。
