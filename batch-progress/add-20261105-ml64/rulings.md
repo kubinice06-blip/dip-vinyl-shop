@@ -28,3 +28,12 @@
 - 23015：William Orbit《Strange Cargo 2》：輕爵士／放克成分，y、x 邊緣存疑；Bassomatic 條為同年背景可刪。
 - 23016：Adham Shaikh《Essence》無衝突，鼓比預估前，x 留意 2.5–2.7。
 - 全組：facts 去媒體名與評分（出處留在 notes）。
+
+## 研究 c 組
+- 23021：Ishq《Orchid》年份推翻策展層 2000：Discogs master 54268 與 Dakini 首版（DAK2109，日本，限量 1000）為 2001-12，Interchill 單碟為 2002；MB 2000 無佐證。首發廠牌實為 Dakini（Interchill 授權第一碟）。正文建議寫 2001。x 大致成立（開頭搖擺鼓、之後 chill、〈Bhakti〉有明確節拍），輕微提示。
+- 23022：alucidnation《Aural Architecture》moodGuess 存疑已寫 notes：鋼琴主導小調（y 恐低）、標籤 tech house／head-nodder／Dub（x 可能偏高），無曲目級鼓描述。
+- 23023：Sinepearl 國別補查為瑞典（Björn Ekegren，哥德堡附近）；中段有慢速帶切分的鼓與脈動低音、冷色和弦，z 存疑已寫 notes。樂評日期 2/11 與 Bandcamp／Discogs 2/10 不同，採 2/10。
+- 23024：alucidnation《Get Lost》thin：無第三方樂評，聲音僅標籤與簡介；Bandcamp 自述 GTA IV／iTunes／Julian Lennon 榜單為單一來源，不入 facts。策展層引用的「warm ambience – proper journey music」本頁找不到，未採用。x（tech house 標籤）存疑已寫 notes。
+- 23025：El Búho《Balance》x 存疑（cumbia 持續律動，可能 2.7–3.0）；Bandcamp／Kudos 12 首、Discogs 黑膠 11 首（少〈Ceiba〉）；廠方宣傳數字不入 facts。
+- 23026：Nicola Cruz《Prender el Alma》x 存疑最高風險：Discogs 標 House、樂評稱標題曲 surging beat 與 deep house 元素，同時整體悠哉、帶憂鬱，y、z 恐低於預估；出生法國之說僅見搜尋摘要，不採。
+- 全組：facts 去媒體名與評分，出處留 src／notes；WebSearch 用 5 次（Ishq、El Búho 各 1，其餘 3）。
