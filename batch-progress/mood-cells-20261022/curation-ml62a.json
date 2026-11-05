@@ -10,7 +10,7 @@
   {
    "id": "dreampop-90s",
    "zh": "厚殘響慢歌與 90s–00s 暖 dream pop／cosmic country 二線",
-   "count": 13,
+   "count": 16,
    "why": ""
   }
  ],
@@ -714,6 +714,90 @@
    "releaseException": "",
    "queryAlias": "",
    "uncertain": "y 0.8 貼邊"
+  },
+  {
+   "artist": "Sigur Rós",
+   "album": "Valtari",
+   "year": 2012,
+   "label": "XL",
+   "country": "is",
+   "faction": "dreampop-90s",
+   "genres": [
+    "rock"
+   ],
+   "why": "池中 Takk／Ágætis byrjun 已落恍惚；Valtari 是同人最慢最霧的一張",
+   "moodGuess": {
+    "x": 1.3,
+    "y": 0.9,
+    "z": 0.3,
+    "why": "極慢，無鼓，弦樂與吉他浸在長殘響，漂浮包覆"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/7c78acfc-3253-42b9-abdf-06085e99d71b/front",
+    "https://musicbrainz.org/release-group/7c78acfc-3253-42b9-abdf-06085e99d71b"
+   ],
+   "mbRgMbid": "7c78acfc-3253-42b9-abdf-06085e99d71b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "z 貼 0.3，部分聽感偏冷空曠"
+  },
+  {
+   "artist": "Yo La Tengo",
+   "album": "Fade",
+   "year": 2013,
+   "label": "Matador",
+   "country": "us",
+   "faction": "dreampop-90s",
+   "genres": [
+    "rock"
+   ],
+   "why": "池中 I Can Hear／There's a Riot Going On 已落恍惚；Fade 同樣暖慢",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 0.7,
+    "z": 0.6,
+    "why": "中慢拍，暖吉他與弦樂、柔和殘響，溫厚"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/6d08ebb5-78ff-40d9-9ecb-37c8f06cf089/front",
+    "https://musicbrainz.org/release-group/6d08ebb5-78ff-40d9-9ecb-37c8f06cf089"
+   ],
+   "mbRgMbid": "6d08ebb5-78ff-40d9-9ecb-37c8f06cf089",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "y 0.7 偏近，製作較乾淨可能落放鬆"
+  },
+  {
+   "artist": "Robin Guthrie & Harold Budd",
+   "album": "Another Flower",
+   "year": 2020,
+   "label": "Darla",
+   "country": "gb",
+   "faction": "dreampop-90s",
+   "genres": [
+    "rock"
+   ],
+   "why": "池中 After the Night Falls 已落恍惚；同組合的鋼琴＋吉他殘響霧",
+   "moodGuess": {
+    "x": 1.3,
+    "y": 0.7,
+    "z": 0.3,
+    "why": "極慢無鼓，Budd 鋼琴與 Guthrie 吉他殘響霧，暖"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/01e16a21-22b2-47d6-a14c-f693c4f98bfa/front",
+    "https://musicbrainz.org/release-group/01e16a21-22b2-47d6-a14c-f693c4f98bfa"
+   ],
+   "mbRgMbid": "01e16a21-22b2-47d6-a14c-f693c4f98bfa",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "偏 ambient，MB 年份 2020 可能為重發，需主線核對原盤年與 genres；y 0.7、z 0.3 貼邊"
   }
  ],
  "notes": [
@@ -721,6 +805,7 @@
   "主動放棄：Hatchie（x 約 3，判躁）、Sweet Trip（電子 shoegaze、x 偏高）、Eric's Trip、Tennis／Alvvays 慢盤（判輕或躁）、Memoryhouse《The Years》（MB 為 EP）、Whirr／Nothing／Bdrmm（冷）。",
   "Still Corners《The Last Exit》取 Album RG cd47f4cf（另有同名 Single 不取）。",
   "Lilys 年份取 MB 1992；地區部分 label 為記憶，供主線核對。",
-  "WebSearch 0 次。"
+  "WebSearch 0 次。",
+  "補提名（主線回饋後）只挖到 3 張：Valtari／Fade／Another Flower。Robin Guthrie 其他專輯多已在池或 ml2／ml44；Atlas Sound、Men I Trust《Equus Asinus》判冷或太乾淨未提。已汰八張仍留在檔內，由主線剔除。WebSearch 仍 0 次。"
  ]
 }
