@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1753 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1764 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -1530,6 +1530,17 @@
 | ar-d-506 | Bluetech | Sines and Singularities | 以西雅圖為基地的 Bluetech | psybient.org 訪談寫他在聖地牙哥（曾住夏威夷），搜尋亦無來源確認西雅圖為基地 | https://www.psybient.org/love/?p=12953 |
 | ar-d-506 | Body of Light | Let Me Go | 由 Ben Greenberg 擔任製作 | Vice 預告文未提製作人，搜尋亦未核到；另發行日各說不一（7/22、7/29、8/17） | https://www.vice.com/en/article/qkaazm/body-of-light-tremble-track-let-me-go-stream |
 | ar-d-506 | Brandt Brauer Frick | You Make Me Real | 2008 年在威斯巴登成軍 | 英文維基導言稱柏林樂團、2009 年起一起演出；搜尋摘要稱 Frick 是在柏林學作曲時遇到另兩人，成軍年與地點待再核 | https://en.wikipedia.org/wiki/Brandt_Brauer_Frick |
+| ar-d-507 | Christopher Young | Sinister: Original Motion Picture Soundtrack | 這次寫成他第一份全合成器作品 | 『第一份全合成器作品』是『第一』類宣稱，本層查不到來源證實，且訪談提到他早在其他片就做合成器模型與電子配樂（Pet Sematary 用電子方向）；建議店主複核或改寫 | https://www.popdisciple.com/interviews/christopher-young |
+| ar-d-507 | Damon Wild | Colortheory | 生於紐奧良、1991 年搬到紐約 | 搬到紐約的年份各源不一致（1990／1991／1980 年代末），上線簡介採 1991 單源；Synewave 創立年亦 1993／1994／1995 不一 | https://www.electronicbeats.net/damon-wild-synewave |
+| ar-d-507 | Dynamik Bass System | The Mighty Machine | Dynamik Bass System 背後只有 Thomas Werner 一人 | groovetrackers 藝人頁稱計畫後來是 Werner、S. Gezgin、DJ FRZ 組成的鬆散團體（1997 年 DJ Hell 聽到的是 Gezgin 放的試聽版）；『只有一人』最多只適用於這張專輯的掛名 | https://archive.groovetrackers.com/productions/artists/838 |
+| ar-d-508 | Gosub | Watchers From the Black Universe | 邁阿密的 Shad T. Scott 從 1990 年代初就以 Gosub 為名 | Say What 訪談：Gosub 名號構想於 1999 年、2000 年出現，1990 年代初創立的是 Isophlux 廠牌；Discogs 的『1990 年代初起活躍』指 Scott 本人而非 Gosub 名號。建議改成『從 1990 年代初就在邁阿密做 electro 與 techno，1999 年起以 Gosub 為名』。 | https://www.saywhatmag.com/interviews/gosub-universal-systems |
+| ar-d-508 | Hall of Mirrors | Reflections on Black | 被視為同類 drone 作品裡的小經典 | 此說只出自 Prog Archives 單一樂評人 Phillipe Blache 的『little classic』，不是共識評價，建議改為『有樂評稱它是「小經典」』或刪除。 | https://hall-of-mirrors.bandcamp.com/album/reflections-on-black |
+| ar-d-508 | Hall of Mirrors | Reflections on Black | 2005 到 2006 年間在米蘭錄成 | Bandcamp 寫錄於米蘭、羅馬與 Casaline（AQ），並非只在米蘭。 | https://hall-of-mirrors.bandcamp.com/album/reflections-on-black |
+| ar-d-508 | Hipnosis | Hipnosis | 義大利原版由 Memory Records 推出 | 本輪搜尋沒有任何來源提到 Memory Records；搜尋摘要稱 Cundari 是為 Memory Records 提議翻奏，兩說互補但都未開頁驗證，建議以 Discogs 核對 | https://en.wikipedia.org/wiki/Hipnosis_(Italian_band) |
+| ar-d-508 | Hoarfrost | Ground Zero | Hoarfrost 的主人是波蘭班濱的 Rafał Kopeć | 班濱一地本輪找不到來源（訪談與搜尋均未提）；Discogs 與廠牌頁可能有，建議核對 | https://www.thisisdarkness.com/2017/06/26/hoarfrost-interview/ |
+| ar-d-508 | Hotel Neon | Vanishing Forms | Hotel Neon 組於 2013 年 | Bandcamp 自述 2012，Discogs 為 2013，兩源不一致 | https://hotelneon.bandcamp.com/ |
+| ar-d-508 | Japanese Telecom | Virtual Geisha | 2001 年 11 月由 Gigolo 發行 | FACT 與 The Vinyl Factory 均寫 2002；網路來源不一致，需以 Discogs／廠牌目錄確認 | https://thevinylfactory.com/features/demystifying-gerald-donald-the-man-behind-drexciya-and-dopplereffekt |
+| ar-d-508 | Jim Williams | Possessor | 2021 年拿下 Gérardmer 影展最佳原創配樂 | 本層查的維基與訪談未見此獎；未能證實也未能否證，請本機核對 | https://en.wikipedia.org/wiki/Jim_Williams_(composer) |
 | ar-d-929 | Erik Truffaz | Rollin' | 2000 年簽進這個廠牌 | 上線簡介沿用 Blue Note 官網簡介的 2000 年簽約說；但維基與已上線的《Out of a Dream》《The Dawn》《Bending New Corners》簡介顯示 1997–1999 年已在 Blue Note 發片，瑞士聯邦文化局新聞稿也記《Bending New Corners》為 1999 年 Blue Note 專輯，2000 年簽約的說法與之矛盾，建議改為不寫簽約年。 | https://musikzeitung.ch/en/?p=44583 |
 | ar-d-929 | Erik Truffaz | The Walk of the Giant Turtle | 前一張四重奏盤在法國賣到十萬張的金唱片 | 維基只寫《Bending New Corners》（1999）是法國 Silver Album；本張的前一張是《Mantis》（2001），並非《Bending New Corners》。需核對金唱片的專輯歸屬與認證層級。 | https://en.wikipedia.org/wiki/Erik_Truffaz |
 | ar-d-929 | Stanley Jordan | Magic Touch | 九軌裡有五軌只有一把電吉他 … 六軌只有他的電吉他 | 同一則簡介前後自相矛盾：五軌 vs 六軌；事實庫引 jazzdisco 為六軌純獨奏、其餘三軌各配一組節奏，應統一為六軌。 | https://en.wikipedia.org/wiki/Magic_Touch_(Stanley_Jordan_album) |

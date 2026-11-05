@@ -2609,3 +2609,9 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 39 位寫：16 full、23 thin；Alteria Percepsyne 沒有任何聲音或做法事實，不寫（skipped）。
 - 合作卡：Apocryphos／Kammarheit／Atrium Carceri 兩張卡、Atrium Carceri 兩張合作卡各換角度寫，不重複同一段生平。
 - 主線審稿 6 處：Almamegretta 單名卡 263 字超標，刪「九〇年代義大利音樂革新的重要名字之一」並補「義大利」；Onyx 刪單一樂評的「立即經典」；Berlin 補「美國」、〈Take My Breath Away〉「登上冠軍、銷量最好」改「最廣為人知」（在世者不寫榜單銷量）；Ben Salisbury 刪艾美獎提名（只留 Ivor Novello）。
+
+## ar-d-507（2026-11-05，ambient、drone、dark ambient、techno、electro；多合作卡）
+
+- 39 位寫：20 full、19 thin；Djorvin Clain 沒有身世與本人聲音事實，不寫（skipped）。
+- 題材照寫：Celer 的 Danielle Baquet-Long 2009 年心臟衰竭驟逝；DJ Cheb i Sabbah 2013 年胃癌過世。
+- 主線審稿 21 處：第一句補國籍或身分——Dirty Beaches、DJ Cheb i Sabbah、DJ Spooky、Elsa Justel、Efdemin、Elektric Music、Christopher Young、Damon Wild、Daniel Menche、David García Díaz、DIN A Testbild、Dettinger（連帶刪細節壓回字數：Cheb i Sabbah「生前仍在做新專輯」、Justel「傑出藝術家」稱號、Efdemin 年紀與喇叭數、Young 試映沉默、Wild 唱片行郵購、Menche 的 Sunn O))) 客串）；Dronny Darko & protoU 刪「夫妻檔／妻子 Sasha」（妻子或妹妹兩源矛盾，特注已要求不寫）；CAPSULE「中田ヤスタカ」改 Yasutaka Nakata（片假名規則），刪 bossa nova 句壓字數。
