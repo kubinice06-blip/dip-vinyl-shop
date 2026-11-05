@@ -2516,3 +2516,9 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 40 位中寫 37 位：19 full、18 thin。不寫 3 位：Sói Đen、Final Stage（三格全空、查無報導）、Padres（沒有任何聲音描述，過不了 thin 門檻）。
 - 2025–26 主線開頁核實：Sek Loso 2017 年底朝天開槍被捕、2025 年 5 月最高法院判刑入獄、2026 年 6 月 24 日假釋並戴電子腳鐐（Nation Thailand、Malay Mail、Pattaya Mail），照寫；11 月演唱會預告不寫。
 - 主線審稿 6 處：Sek Loso 壓回 250 字（3 處刪次要細節）；Desktop Error「數一數二」、7UPPERCUTS「最知名之一」改保守；Jogja Hip Hop Foundation 寫作層自加的「生吞活剝」改「囫圇吞下」。
+
+## ar-d-134（2026-11-05，ts10／ts11 新卡藝人：新加坡、蒙古搖滾與獨立團）
+
+- 12 位全寫：7 full、5 thin（Marijannah、Aravt、A-Sound、mxrningstar、The Tourists (Mongolia)）。
+- 2025 年事實主線核實：Magnolian 的歌收進《Death Stranding 2: On the Beach》（官網、Mondo 原聲黑膠、VideoGamer 曲目表）；「〈Woods〉為遊戲新寫」官網只說出自新 LP，改寫。
+- 主線審稿 2 處：Magnolian 刪「唯一的獨唱表演者」（單源「唯一」）、〈Woods〉出處改寫。
