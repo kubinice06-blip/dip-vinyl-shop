@@ -57,3 +57,14 @@
 - 照研究推翻改卡單：Candy Claws 廠牌 Twosyllable Records；Lilys 廠牌 Slumberland；Teddy Pendergrass《Heaven Only Knows》廠牌 Philadelphia International；Lee Fields《Sentimental Fool》廠牌 Daptone；Dean & Britta《13 Most Beautiful...》年份 2010、廠牌 Double Feature（2009 是 Plexifilm DVD）。
 - 留下但聲音待評分驗證：Mojave 3《Out of Tune》（較首張輕快）、Candy Claws（壓縮重、x 中等）、Night Moves（tom 鼓＋班鳩琴迷幻鄉村）、Lee Fields 兩張（速度混合）、Billy Paul《Let 'em In》、Teddy《Heaven Only Knows》（thin）。
 - 張數不足：叫原策展代理以「池中同人已落恍惚＋整張慢歌」硬條件補提名（ml62a 6–10、ml62b 8–12），補位另派研究。
+
+## 研究補位（supp）
+- 23047｜補位 10 張（a 2、b 2、c 2、d 2、e 2）已 append 進 a–e 研究檔。身分全 pinned 對得上；推翻卡單 label 一處：Adriana Evans《Walking with the Night》卡單 Shanachie 查無佐證，MB／維基為 Expansion Records（建議改）；維基日期 2010-02-22 與 MB 2010-02-08 並陳，年份不變。Another Flower 的『MB 年份可能是重發』風險已查：2013 年錄、2020 年首發，年份無誤；部落格寫的 label 與日期有誤，採 Discogs Darla 與 MB 2020-12-04。Sigur Rós《Valtari》美版 XL、英版 Parlophone／Krúnk，卡單寫 XL 不推翻。
+- 23048｜moodGuess 存疑（聲音）：Billy Paul《Lately》（Linn／DMX／Simmons 電子鼓＋合成器、維基比作 Gap Band，判躁／輕風險中高，建議汰換或試聽）；Adriana Evans（samba／jazz 標籤、真人銅管木管，電鋼琴與低語人聲無來源，判躁／輕中高）；Ray, Goodman & Brown《Stay》（MB／Discogs 皆標 Funk、單曲式 3–4 分半，x 風險）；Robin Guthrie & Harold Budd《Another Flower》（純 ambient、無鼓、Ethereal，判輕風險高）；Peabo《All My Love》（Discogs／MB 標 synth-pop，製作偏亮，判輕中度）；Phyllis Hyman（Discogs 標 Disco，〈Tonight You and Me〉為夜店中速、〈Don't Tell Me, Tell Her〉帶拉丁味，x 風險小）；Teddy《Joy》（Calloway 製作的〈Joy〉〈Love Is the Power〉有 tom 鼓編程與銅管，整體 sleek，判輕中度）；Sigur Rós《Valtari》與 Yo La Tengo《Fade》大致吻合（Valtari 殘響空氣感重、z 冷；Fade 製作乾淨判輕風險中等）。
+- 23049｜聲音證據偏薄、status thin：Peabo《Turn the Hands of Time》（查無樂評，僅曲目／傳記；SoulTracks 說含 Bang 時期舊素材，單一來源且為搜尋摘要）、Another Flower、Stay、Adriana Evans、Billy Paul（皆無樂評原文，只有編制與風格標籤）。評論多來自搜尋摘要轉述（NPR／Christian Century／The Music／Flagpole），未取得全文，引述未逐字。Wikipedia API 被代理限流、BBC 不可抓、AllMusic 不可抓。
+- 23050｜Adriana Evans 製作人維基列 Dred Scott（共同製作 Rastine Calhoun III），搜尋結果卻稱他只署名合寫，未能交叉驗證，facts 標『維基列』。WebSearch 實用 5 次（Another Flower、Fade、Adriana Evans、Peabo、Phyllis Hyman 各一），超出上限 1 次，併此註明。
+
+## 主線補位汰換（不佔條號；2026-11-05）
+補位 10 張研究後汰 6 → 補進 4，本批定案 22。
+- 汰：Billy Paul《Lately》（Linn／DMX／Simmons 電子鼓、Gap Band 式）、Peabo Bryson《All My Love》（synth-pop、製作偏亮）、Ray, Goodman & Brown《Stay》（funk 標籤、單曲式短歌）、Adriana Evans《Walking with the Night》（samba／jazz 標籤、真人銅管）、Robin Guthrie & Harold Budd《Another Flower》（純 ambient 無鼓、判輕）、Sigur Rós《Valtari》（空氣感重、色溫偏冷）。
+- 留：Yo La Tengo《Fade》（同人兩張落恍惚，製作乾淨待評分）、Phyllis Hyman《Can't We Fall in Love Again?》、Teddy Pendergrass《Joy》、Peabo Bryson《Turn the Hands of Time》（thin）。
