@@ -2510,3 +2510,9 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 2026 年事實主線開頁核實：Daniel Melingo 6 月 30 日過世（阿根廷多家媒體：在家安寧照護、呼吸道疾病）；Yanka Rupkina 4 月中風後過世（BTA、BNR）。Asanee-Wasan 只寫宣布告別演出。
 - 題材照寫：Pugliese 1955 年因共產黨員身分入獄、琴上放紅康乃馨；Gabi Luncă 是 Ceaușescu 夫婦偏愛的歌手、後轉五旬節教會；Puceanu 晚年酗酒與車禍身亡；Soyol Erdene 由國家創辦以控制青年文化、成吉思汗頌歌引爭議；Tawan 在 1992 年 5 月民眾運動後的社會諷刺；Taitosmith 在示威集會免費演出；Sebestyén 的舞屋運動被當局視為危險。
 - 主線審稿 8 處：Gardel、Goyeneche、Salgán、Sosa、Brandwein 的「最…」改保守；Goyeneche 刪「第一位錄下」；Sebestyén 刪李斯特獎（在世者留一處：UNESCO 和平藝術家）；Hin Lek Fai 刪 Seesan 最佳新人（已留破百萬卷一處必要例外）。
+
+## ar-d-133（2026-11-05，ts8／ts9／ts10 新卡藝人：泰國、越南、新加坡、印尼搖滾、金屬、獨立團）
+
+- 40 位中寫 37 位：19 full、18 thin。不寫 3 位：Sói Đen、Final Stage（三格全空、查無報導）、Padres（沒有任何聲音描述，過不了 thin 門檻）。
+- 2025–26 主線開頁核實：Sek Loso 2017 年底朝天開槍被捕、2025 年 5 月最高法院判刑入獄、2026 年 6 月 24 日假釋並戴電子腳鐐（Nation Thailand、Malay Mail、Pattaya Mail），照寫；11 月演唱會預告不寫。
+- 主線審稿 6 處：Sek Loso 壓回 250 字（3 處刪次要細節）；Desktop Error「數一數二」、7UPPERCUTS「最知名之一」改保守；Jogja Hip Hop Foundation 寫作層自加的「生吞活剝」改「囫圇吞下」。
