@@ -98,3 +98,8 @@
 
 ## 藝人介紹（ALBUM_ONBOARDING §11）
 - 本批新藝人 12 位切 **ar-d-283**（名冊 `batch-progress/artist-intro/roster-md37-ar-d-283.json`；Basinski、Irisarri 已有介紹）：補洞 2 組（Sonnet，WebSearch 每位限 3 次）→ 寫作 1 組（Opus；full 4、thin 8）→ `qa-artist` 0 處 → 主線逐位審未改字 → 上線 12／12。
+
+## 評分與落格（2026-11-05，主線）（條號 23235–23236）
+- **23235**：Opus 1 支照 `score500/BRIEF.md`（10-23 體感標準）打 14 張（`batch-progress/mood-axes/score-md37/`），主線逐張看過未改值。x 1.3–2.8、y 0.4–1.8、z −2.0～−0.4；conf mid 2、low 12。`build-priors` → `build-scale v0`（錨點 104/104 同格）→ `build-card-moods`。類型樹 `warm-batch` 13/14 有標籤，`build-genre-tree --pull --write`、`build-draw-covers --pull --write` 重建。
+- **23236**：**落格率 13/14＝93%**。出格 1 張：Susan Geaney《Tape Melt》y 0.4 判輕落平靜（長笛群與磁帶走音，研究 d 已標「後段 busy chorus、收在單一高音」）。最貼邊：Marc Kate z −0.4、y 0.8；Kirkegaard x 2.8、y 0.8。
+- **來源結論（給後面決定要不要再派）**：Bandcamp Daily Best Ambient／Experimental 兩專欄約 200 期、提及約 2,500 張，冷暗重又不在池的只挖到 47 張，研究後剩 14；多數暖、明亮、有旋律，或是只有一段 Daily 評介、沒有第二來源的小廠卡帶。**產量低，不建議再單獨派**；若要再挖，只剩年度榜回溯與 Room40／Touch／Helen Scarsdale 等池中同人已落頹靡的廠牌近作。

@@ -80,3 +80,7 @@
 
 ## 藝人介紹（ALBUM_ONBOARDING §11）
 - 本批新藝人 5 位（含兩個合作組合鍵）切 **ar-d-284**（名冊 `batch-progress/artist-intro/roster-md38-ar-d-284.json`）：補洞 1 組 → 寫作 1 組（full 2、thin 3）→ `qa-artist` 0 處 → 主線逐位審改 2 處（KRM & KMRU 刪維基轉引的單源評價句；Orchestra「大衛林區」改拉丁原文 David Lynch）→ 上線 5／5。
+
+## 評分與落格（2026-11-05，主線）（條號 23314）
+- **23314**：與 md37 同一支 Opus 打 5 張（`batch-progress/mood-axes/score-md38/`），主線看過未改值。x 1.8–2.4、y 0.8–1.8、z −1.6～−0.5；conf mid 1、low 4。**落格率 5/5＝100%**。最貼邊：Mortiis《Keiser》y 0.9、z −0.5；Far Drifters y 0.8、z −0.6。
+- **來源結論**：Lists／Scene Report／Label Profile／AOTD 約 2,100 頁對頹靡場景產量極低（策展 26 → 上線 5）；dungeon synth 多明亮、dark jazz 頭牌已在池、hauntology 廠牌沒有專訪。**不建議再派。**
