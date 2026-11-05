@@ -34,3 +34,8 @@
 - 23241｜Mortwright／Mortwight：Daily 內文拼 Mortwright 為錯字，artist 欄照 MB 與 Bandcamp 的 Mortwight；Daily 稱廠牌「重發」卡帶、原版為作者 Bandcamp 自發，卡片年份取 2021；聲音無獨立樂評，只有廠牌主 Massak 的轉述與 Bandcamp 標籤，status thin；鼓未證實；Massak 明講有「gorgeous melodies」與苦甜收尾，moodGuess z 存疑。
 - 23242｜Mortiis《Keiser…》：推翻策展層兩處：Era II 說法錯（本盤屬 Era I）；原版廠牌是 Cold Meat Industry（CMI.37）而非 Malicious Records，建議卡單改。總長 52:35。Sputnik 提到合成「戰鼓」與明亮刺耳段落，另有搜尋摘要稱有旁白（原頁 403，不入 facts），moodGuess 偏冷程度存疑。
 - 23243｜Mortiis《Født til å herske》：卡單 label 寫 Dark Dungeon Music 錯，原版為 Malicious Records（MA003CD，1994），DDM 1995 年才成立、做重發；年份取 1994；總長約 53 分。唯一樂評（Metal Archives 讀者評）說氣氛 less depressing、旋律甜美平靜、有人聲（18 分後才進），暖度比預估高，建議主線優先考慮汰換本張。
+
+## 研究 c 組
+- 23261｜One Leg One Eye：Daily 專評在 scene report，Nyahh 廠牌專文只點名未評；全來源未提鼓，只證實長音 drone 為主，不寫「確定無鼓」。5 軌 46 分 17 秒。
+- 23262｜Jun Konagaya《Organ》：原版 2012 Eskimo CD、8 軌約 41 分 36 秒；Bandcamp 的 15 軌 79 分 54 秒是 2023 Urashima 重發含 Magnetic Tape 88–90 附錄，寫作層以原版 8 首為準。moodGuess 輕度存疑（旋律性與民謠感高、速度與「糊」無來源）。
+- 23263｜Chris Abrahams《Thrown》：9 軌約 49 分 6 秒、2005-03-05。推翻策展層「風琴長音」：鋼琴（含琴內）與 DX-7 同樣重要、曲短而各異、樂評多用 shimmering／glistenings。moodGuess 中度存疑（y、z 偏高偏冷）。第幾張個人專輯兩源衝突，facts 不寫序數。
