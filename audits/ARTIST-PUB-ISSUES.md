@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1672 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1682 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -1350,6 +1350,16 @@
 | ar-d-130 | Dewa 19 | Terbaik Terbaik | 1995 年 8 月 2 日面世 | Jakarta Post（2022 黑膠報導）與搜尋摘要所引維基都寫 1995 年 6 月 20 日發行；兩者不一致，需店主對 Aquarius 版或維基確認。 | https://www.thejakartapost.com/culture/2022/09/23/dewa-19-album-gets-vinyl-treatment-for-the-first-time |
 | ar-d-130 | M’bilia Bel | Boya Ye | 領唱的 M’bilia Bel 與他在 1980 年代中期結婚 | 維基 Mbilia Bel 頁寫 1984 年訂婚、約 1988 年關係結束，未明說結婚；事實庫引的 Tabu Ley 頁說結婚。低度存疑，建議改「相戀並育有一女」或再查 | https://en.wikipedia.org/wiki/Mbilia_Bel |
 | ar-d-130 | Nyboma | Doublé doublé | 1972 年起在 Verckys 旗下唱紅 | 維基 Nyboma 頁：1972 年他加入 Orchestre Bella Bella（後者簽 Verckys 的 Vévé 廠牌），1973 年共組 Lipua Lipua；未見「在 Verckys 旗下」直接說法，建議改為更保守的寫法或補證 | https://en.wikipedia.org/wiki/Nyboma |
+| ar-d-131 | Ali Mohammed Birra | Éthiopiques 28: Great Oromo Music | Oromo 語歌曲讓他多次入獄 | Capital Ethiopia 訃聞稱數度入獄，但 ollaa.org 與 Music In Africa 都說被捕的是樂團成員、本人躲過逮捕；來源不一致，建議改成『他的樂團因唱 Oromo 語被政權取締』或查更多後再定 | https://www.musicinafrica.net/node/6369 |
+| ar-d-131 | Girma Bèyènè & Akalé Wubé | Éthiopiques 30: Mistakes on Purpose | 流亡美國、沉默 25 年 | EBR（2017）稱他 1981 年隨 Walias Band 赴美巡演後留下、在洛杉磯轉行從商，停止演出約三十年；『流亡』與『25 年』都缺出處（部分搜尋摘要稱 25 年，EBR 自身也前後寫三十年與十年） | https://ethiopianbusinessreview.net/the-return-of-the-legend/ |
+| ar-d-131 | Girma Bèyènè & Akalé Wubé | Éthiopiques 30: Mistakes on Purpose | 2016 年系列主事者 Francis Falceto 建議法國五人團 Akalé Wubé 找他合作，巴黎的復出音樂會之後錄成本盤 | EBR 稱 Girma 2015 年起就與 Akalé Wubé 合作、2016 年巡演；World Music Central 稱是 Akalé Wubé 說服他重回舞台；『Falceto 建議』與年份對不上這兩份來源 | https://ethiopianbusinessreview.net/the-return-of-the-legend/ |
+| ar-d-131 | Mísia | Garras dos sentidos | 母親是加泰隆尼亞的夜總會舞者 | DN 訃聞寫祖母是加泰人、母親是佛朗明哥舞者，與簡介及英文維基的「加泰隆尼亞夜總會舞者」不一致，建議改成較保守的寫法或刪除。 | https://www.dn.pt/cultura/morreu-misia-a-fadista-que-inovou-o-fado |
+| ar-d-131 | Carminho | Fado | 遲至 22 歲才決定以音樂為業，又花 11 個月環遊世界 | Museu do Fado 與英文維基只寫『約一年出國、人道任務』，未見 22 歲與 11 個月的依據（可能出自 pt.wikipedia，未核）；建議核對。 | https://museudofado.pt/en/fado/persolanity/carminho-en |
+| ar-d-131 | António Zambujo | Guia | 16 歲那年他移居里斯本 | Museu do Fado 寫 16 歲是贏得法朵比賽，搬到里斯本在完成單簧管課程之後，年齡未明；pt.wikipedia 寫 16 歲搬家，兩源不一致，建議改成較保守寫法。 | https://www.museudofado.pt/en/fado/persolanity/antonio-zambujo-en |
+| ar-d-131 | António Zambujo | Guia | 被英國《Songlines》拿來和 João Gilberto、Chet Baker 相比 | 本層沒有找到可核對的原文（Museu do Fado、world music 的 Womex 介紹皆未提 João Gilberto），Museu 只寫 Songlines 把《Outro Sentido》與《Guia》列為 Top of the World 專輯。 | https://www.museudofado.pt/en/fado/persolanity/antonio-zambujo-en |
+| ar-d-131 | Enrique Morente | Despegando | 1977 年與 Pepe Habichuela 合作的《Homenaje a don Antonio Chacón》拿下第一屆國家獎 | 西班牙文維基寫該專輯獲『I Premio Nacional』（最佳民謠類唱片）在 1978 年，但專輯目錄列 1977 年發行；上線簡介把獲獎時間與發行年併成 1977，且『第一屆國家獎』的獎項名稱（Premio Nacional 的哪一類）寫得模糊，建議核對。單源。 | https://es.wikipedia.org/wiki/Enrique_Morente |
+| ar-d-132 | Mahala Rai Banda | Mahala Rai Banda | 銅管樂手則來自 Zece Prăjini 區 | World Music Central 與 Rebel Base（2008 年 Ionita 訪談）都說銅管樂手是來自摩爾達維亞鄉村的羅馬尼亞軍隊退伍樂手；Zece Prăjini 在摩爾達維亞，上線簡介若寫成布加勒斯特的區則有誤，建議改為『銅管樂手是來自摩爾達維亞鄉村的軍樂退伍者』 | https://www.rebelbase.be/interviews/detail/mahala-rai-banda---botanique-052008 |
+| ar-d-132 | Brave Old World | Beyond the Pale | 錄音在 1993 年 6 月於漢堡進行，德國 Pinorrekk 先行發行 | Klezmer Shack 的 Pinorrekk CD 5013 頁面標為 1992 年；英文維基專輯條目標 1994 年 Rounder。上線簡介的錄音月份與發行先後未能由本層兩源確認，建議本機查 Discogs 或 CD 內頁核對。 | https://www.klezmershack.com/bands/bow/pale/bow.pale.html |
 | ar-d-141 | 沢田駿吾とオールスターズ | Fool On The Hill | 組團在 1952 年 | Victor 商品頁說 1952 年組自己的爵士 combo，但英文維基寫 1954 年成立 Double Beats、日文維基的 Double Beats Five 照片也是 1954 年；兩說並存。建議簡介註明『廠牌商品頁稱』或略去年份。 | https://en.wikipedia.org/wiki/Shungo_Sawada |
 | ar-d-141 | 秋吉敏子トリオ & Flute Quartet | Tuttie Flutie | 抵達波士頓第一晚台上正是 Bud Powell，舊識招她上去頂了一段 | NEA 傳記只寫她到波士頓後聽過 Bud Powell Trio、後來與他們同台，沒有『第一晚』與『舊識招上台』；jazz.com 完全沒提。細節可能來自日文維基或自傳，但本層找不到可開頁的來源，建議對一次來源或降級成『到波士頓後曾與 Bud Powell 同台』。 | https://www.arts.gov/honors/jazz/toshiko-akiyoshi |
 | ar-d-142 | The Wood Brothers | Ways Not to Lose | 2001 年重新合到一起，2001 年 5 月 24 日北卡羅來納州那場演出 | 英文維基持此說，但 Folk Alley 寫兄弟在 2004 年的同台演出後決定一起做音樂；年份有來源衝突，待店主視需要查證或改寫成不含年份。 | https://folkalley.com/basic-folk-podcast-oliver-wood/ |

@@ -2492,3 +2492,14 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 ## ar-d-269（2026-11-04，新頂點盤線 ax6 第二波＝大提琴噪音即興、噪音黑金屬、極簡金屬）
 - 切 3 位（Okkyung Lee、Stalaggh、Orthrelm）。補洞 1 組、寫作 1 組。skipped 0。
 - **主線審稿 2 處**：Okkyung Lee 刪「據說」引導；Stalaggh 刪「VICE 稱它可能是史上最可怕的唱片之一」（媒體名不進正文，且單源封號）。Orthrelm 逐句審過未改字。
+
+## 2026-11-05 改號與合併 main
+
+- main 另有工作階段用了 ar-d-129～138（新卡藝人，內容不同）；本分支原 ar-d-129～140 改號為 ar-d-929～940，PR #80 合併 main 後由雲端自行合併（2026-10-21 起的規則）。
+- 派工範本 `prompts/artist-dispatch.md` 移除「死因與案情細節預設避免」，改寫為店主 2026-07-31「題材沒有禁區」；榜單、銷量、媒體名單的避免規則不變。
+
+## ar-d-131（2026-11-05，ts3／ts4 新卡藝人：非洲、法朵、佛朗明哥）
+
+- 40 位全寫：38 full、2 thin（Kassa Tessema、Krar Collective，評價面只有單源）。
+- 題材照寫：Ray Lema 拒寫歌頌蒙博托的歌劇、財產被沒收而離國；Ali Birra 歌中批評政府、流亡與國葬；Moses Molelekwa 與妻子雙雙身亡（死因三說不一，不寫死因）；Stella Chiweshe 在殖民政府禁 mbira 時地下演奏、腦癌過世；Diego el Cigala 2021 年因前伴侶家暴投訴被捕、判兩年多徒刑；Batsumi 領隊之父是被囚的泛非主義者大會主席；Mankunku 依《集團地區法》被迫遷。
+- 主線審稿 13 處：Ray Lema、Camané、Cristina Branco、Marceneiro、Fernando Maurício、Lucília do Carmo（2 處）、Noronha、Fernanda y Bernarda、Enrique Morente、Carmen Linares、José Mercé 的「最…之一／最好」改保守；Carminho 刪西班牙單曲榜冠軍（在世者不寫榜單）。
