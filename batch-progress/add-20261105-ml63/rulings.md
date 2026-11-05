@@ -40,3 +40,12 @@
 - 23106　moodGuess 存疑（Tindersticks）：評論用字 nocturnal、brooding、gloomy、depressing，且有混亂弦樂與銅管重音；z 恐為冷（落頹靡格），建議汰換候補。
 - 23107　Mojave 3：多篇描述原聲樂器與乾淨質地，y 判輕風險成立；但夢幻、柔緩、偏暖屬實，列為「可留」。
 - 23108　Gigi 的「第幾張 Palm 專輯」各來源算法不一，facts 與 hook 一律不寫序數。
+
+## 研究 a 組
+
+- 23081　Ronnie Von 年份：封面 ℗1968、標籤 ℗1969；MB／Discogs 1969，英維基與 Metrópoles 稱 1968。沿用卡單 1969，年份衝突寫進 notes。
+- 23082　moodGuess 存疑（Beto Guedes）：無來源提電鋼琴或弦樂墊；風格為 folk rock／choro／prog，含曼陀林與三首器樂曲，偏乾淨有空氣，判輕風險高。
+- 23083　moodGuess 存疑（14 Bis）：十一首約 2 分半到 3 分 40 秒的短歌，樂評歸為 new wave 式流行搖滾，有鼓有推進，判躁或輕風險高；僅同名收尾曲 7 分 07 秒可能有氛圍。建議汰換候補。
+- 23084　moodGuess 存疑（Toninho Horta）：「Orquestra Fantasma」疑為署名，無來源說有弦樂墊；班底是 Airto、Raul de Souza、Robertinho Silva，Discogs 標 Soul-Jazz，偏明亮融合，判輕風險高。發行年 1979／1980 衝突，沿用 MB 1980。
+- 23085　moodGuess 部分存疑（Taiguara）：管弦與鋼琴為主屬實，但第 6、8、11 軌為搖滾樂隊編制（有鼓），其餘無鼓；整體可留。
+- 23086　14 Bis 的 Progarchives 評語與 Toninho 的 Unicamp 校報條目僅見搜尋摘要，未能直接開頁，已在 notes 標明待複核。

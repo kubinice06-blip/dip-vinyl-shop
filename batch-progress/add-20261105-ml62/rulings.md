@@ -28,3 +28,11 @@
 - 23006｜Still Corners《Creatures of an Hour》：Greenwich 錄音室僅 Sub Pop 商品頁單源；z 0.3 貼邊屬實（樂評用 murky、eerie）。
 - 23007｜Still Corners《The Last Exit》：身分與預估吻合，暖調居多，無推翻。
 - 身分檢查七張皆 pinned 對得上（盤名、年份、廠牌）；未推翻策展層年份／廠牌。
+
+## 研究 b 組
+- 23011：Candy Claws 卡單 label「Hidden Agenda」查無佐證，MB／維基皆為 Twosyllable Records（黑膠 RED Distribution）→ 研究稿用 Twosyllable，建議卡單 label 改。
+- 23012：Trespassers William《Different Stars》卡單 label「Sound in Silence」查無佐證；實為自發（Sonik Wire）→ Bella Union（英 2003）→ Nettwerk（美 2004），三版曲目不同；建議卡單 label 改 Sonik Wire。
+- 23013：Dean & Britta 卡單 year 2009 取自 MB 的 Plexifilm DVD；音樂專輯（Double Feature 雙碟 CD）是 2010-07-27 → 建議改 2010。性質為委託配樂專輯（13 配樂＋8 混音），有定位，保留。
+- 23014：Night Moves 策展層「Rhodes」查無，實為迷幻鄉村＋tom 鼓＋班鳩琴＋Bolan 式假音；Domino 版為重製（加疊、重錄鼓）。moodGuess 描述存疑，三軸不明顯衝突。
+- 23015：Death and Vanilla 後半偏不祥（LB、Active Listener 皆稱 eerie／ominous），z 風險屬實；盤名卡單帶「...」，MB 無。Candy Claws 重壓縮、節奏有推進，x 風險中等。
+- 23016：Beachwood Sparks 兩張未推翻年份廠牌；首作〈Desert Skies〉彈跳，OWWT 暖霧相符。OWWT 發行日維基 10-09、MB 10-15，寫「2001 年秋」。
