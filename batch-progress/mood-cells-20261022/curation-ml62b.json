@@ -1,0 +1,765 @@
+{
+ "group": "ml62b",
+ "factions": [
+  {
+   "id": "strings-slow-70s80s",
+   "zh": "70s–80s 厚弦樂慢板靈魂",
+   "count": 15,
+   "why": "Barry White、Pendergrass、Manhattans、Billy Paul 等厚低頻＋弦樂墊的慢歌盤"
+  },
+  {
+   "id": "cinematic-psych",
+   "zh": "電影感／迷幻靈魂",
+   "count": 5,
+   "why": "Rotary Connection、Adrian Younge、Marvin Gaye 晚期、Curtis Harding：霧狀混響與弦樂"
+  },
+  {
+   "id": "revival-slow",
+   "zh": "當代復興慢靈魂",
+   "count": 4,
+   "why": "Lee Fields、Charles Bradley：Daptone／Big Crown 系厚實慢盤"
+  },
+  {
+   "id": "rnb-haze",
+   "zh": "合成器厚霧 R&B",
+   "count": 2,
+   "why": "The-Dream：慢拍、低頻重、旋律黏"
+  }
+ ],
+ "albums": [
+  {
+   "artist": "Barry White",
+   "album": "Just Another Way to Say I Love You",
+   "year": 1975,
+   "label": "20th Century",
+   "country": "us",
+   "faction": "strings-slow-70s80s",
+   "genres": [
+    "soul"
+   ],
+   "why": "Barry White 低音嗓配 Love Unlimited 弦樂牆的標準慢板範本之一，厚低頻加弦樂墊包住人。",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 0.9,
+    "z": 1.6,
+    "why": "慢拍、深低頻人聲、滿版弦樂與沙錘，暖而厚"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/425fd0df-d204-3a96-b611-eca4aaa15e3a",
+    "https://coverartarchive.org/release-group/425fd0df-d204-3a96-b611-eca4aaa15e3a/front"
+   ],
+   "mbRgMbid": "425fd0df-d204-3a96-b611-eca4aaa15e3a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "池中同人 Can't Get Enough 判 y0.3，這張偏邊緣"
+  },
+  {
+   "artist": "Barry White",
+   "album": "The Man",
+   "year": 1978,
+   "label": "20th Century",
+   "country": "us",
+   "faction": "strings-slow-70s80s",
+   "genres": [
+    "soul"
+   ],
+   "why": "70s 晚期 Barry White 厚弦樂＋合成器鋪底的慢歌盤，低頻與編制更滿。",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1,
+    "z": 1.5,
+    "why": "中慢板、厚弦樂與低音貝斯、人聲低沉，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/6ca43810-fd1d-38f0-bdd7-366d421449f9",
+    "https://coverartarchive.org/release-group/6ca43810-fd1d-38f0-bdd7-366d421449f9/front"
+   ],
+   "mbRgMbid": "6ca43810-fd1d-38f0-bdd7-366d421449f9",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Barry White",
+   "album": "I Love to Sing the Songs I Sing",
+   "year": 1979,
+   "label": "20th Century",
+   "country": "us",
+   "faction": "strings-slow-70s80s",
+   "genres": [
+    "soul"
+   ],
+   "why": "Barry White 晚期慢歌為主的盤，弦樂與低音人聲層層包覆。",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 0.9,
+    "z": 1.5,
+    "why": "慢歌為主，厚弦樂與低頻鋪滿，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/700ac8c4-1b96-3d80-92c1-c610b2bda533",
+    "https://coverartarchive.org/release-group/700ac8c4-1b96-3d80-92c1-c610b2bda533/front"
+   ],
+   "mbRgMbid": "700ac8c4-1b96-3d80-92c1-c610b2bda533",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Barry White",
+   "album": "Barry White's Sheet Music",
+   "year": 1980,
+   "label": "Unlimited Gold",
+   "country": "us",
+   "faction": "strings-slow-70s80s",
+   "genres": [
+    "soul"
+   ],
+   "why": "80 年代初 Barry White 在合成器與弦樂間找平衡的慢熱盤。",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 0.9,
+    "z": 1.3,
+    "why": "慢中板、合成器墊加弦樂、低沉人聲，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/541949ff-cda8-3b8b-bb58-6325b543eaa6",
+    "https://coverartarchive.org/release-group/541949ff-cda8-3b8b-bb58-6325b543eaa6/front"
+   ],
+   "mbRgMbid": "541949ff-cda8-3b8b-bb58-6325b543eaa6",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 正規名帶彎引號，餘為 ASCII"
+  },
+  {
+   "artist": "Teddy Pendergrass",
+   "album": "This One's for You",
+   "year": 1982,
+   "label": "Philadelphia International",
+   "country": "us",
+   "faction": "strings-slow-70s80s",
+   "genres": [
+    "soul"
+   ],
+   "why": "Teddy Pendergrass 車禍前後的慢歌盤，厚低頻、弦樂與 quiet storm 氛圍。",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 0.9,
+    "z": 1.4,
+    "why": "慢板、厚低音與合成器墊，嗓音低沉，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/5a481194-e77b-43a2-a629-27319ccd4372",
+    "https://coverartarchive.org/release-group/5a481194-e77b-43a2-a629-27319ccd4372/front"
+   ],
+   "mbRgMbid": "5a481194-e77b-43a2-a629-27319ccd4372",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Teddy Pendergrass",
+   "album": "Heaven Only Knows",
+   "year": 1983,
+   "label": "Asylum",
+   "country": "us",
+   "faction": "strings-slow-70s80s",
+   "genres": [
+    "soul"
+   ],
+   "why": "Pendergrass 復出後的慢歌專輯，情歌密度高、混音厚。",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 0.9,
+    "z": 1.4,
+    "why": "慢情歌連發，合成器與弦樂包覆，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/a81fea3d-2b01-4ae9-a259-1485e8b80e4d",
+    "https://coverartarchive.org/release-group/a81fea3d-2b01-4ae9-a259-1485e8b80e4d/front"
+   ],
+   "mbRgMbid": "a81fea3d-2b01-4ae9-a259-1485e8b80e4d",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Teddy Pendergrass",
+   "album": "Workin' It Back",
+   "year": 1985,
+   "label": "Asylum",
+   "country": "us",
+   "faction": "strings-slow-70s80s",
+   "genres": [
+    "soul"
+   ],
+   "why": "中晚期 Pendergrass 以 quiet storm 慢歌為核心，低頻黏稠。",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 0.8,
+    "z": 1.3,
+    "why": "中慢板、80s 合成器低音，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/66d172a1-5b8e-4a38-a69e-afcfd4f12385",
+    "https://coverartarchive.org/release-group/66d172a1-5b8e-4a38-a69e-afcfd4f12385/front"
+   ],
+   "mbRgMbid": "66d172a1-5b8e-4a38-a69e-afcfd4f12385",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "80s 製作偏亮，y 可能貼邊"
+  },
+  {
+   "artist": "The Manhattans",
+   "album": "Forever by Your Side",
+   "year": 1983,
+   "label": "Columbia",
+   "country": "us",
+   "faction": "strings-slow-70s80s",
+   "genres": [
+    "soul"
+   ],
+   "why": "Manhattans 80s 慢歌路線，Gerald Alston 主唱的 quiet storm 盤。",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 0.8,
+    "z": 1.3,
+    "why": "慢拍、柔滑合聲與合成器墊，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/97063147-0a0a-486a-a4a9-f4883131dfe0",
+    "https://coverartarchive.org/release-group/97063147-0a0a-486a-a4a9-f4883131dfe0/front"
+   ],
+   "mbRgMbid": "97063147-0a0a-486a-a4a9-f4883131dfe0",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "The Manhattans",
+   "album": "Too Hot to Stop It",
+   "year": 1985,
+   "label": "Columbia",
+   "country": "us",
+   "faction": "strings-slow-70s80s",
+   "genres": [
+    "soul"
+   ],
+   "why": "Manhattans 中期後的慢歌專輯，厚低頻與電鋼琴墊。",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 0.8,
+    "z": 1.3,
+    "why": "慢中板、電鋼琴與低音，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/a2aae300-5c19-4e11-9184-3d04150bbf54",
+    "https://coverartarchive.org/release-group/a2aae300-5c19-4e11-9184-3d04150bbf54/front"
+   ],
+   "mbRgMbid": "a2aae300-5c19-4e11-9184-3d04150bbf54",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "80s 製作偏亮"
+  },
+  {
+   "artist": "Billy Paul",
+   "album": "Let 'em In",
+   "year": 1976,
+   "label": "Philadelphia International",
+   "country": "us",
+   "faction": "strings-slow-70s80s",
+   "genres": [
+    "soul"
+   ],
+   "why": "Billy Paul 在 Philly 弦樂牆上的慢中板盤，同人 When Love Is New 判重。",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 0.8,
+    "z": 1.4,
+    "why": "中慢板、弦樂與厚貝斯、嗓音圓潤，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/939464f2-b6a0-3b52-a7c6-5a3ac90134ed",
+    "https://coverartarchive.org/release-group/939464f2-b6a0-3b52-a7c6-5a3ac90134ed/front"
+   ],
+   "mbRgMbid": "939464f2-b6a0-3b52-a7c6-5a3ac90134ed",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "含較輕快曲，y 可能貼邊"
+  },
+  {
+   "artist": "Billy Paul",
+   "album": "First Class",
+   "year": 1979,
+   "label": "Philadelphia International",
+   "country": "us",
+   "faction": "strings-slow-70s80s",
+   "genres": [
+    "soul"
+   ],
+   "why": "Billy Paul 70s 末慢歌取向的盤，弦樂與低頻厚。",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 0.8,
+    "z": 1.3,
+    "why": "中慢板、厚弦樂與低音，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/d7fb614a-b49e-4279-82a1-4c4bbce010a4",
+    "https://coverartarchive.org/release-group/d7fb614a-b49e-4279-82a1-4c4bbce010a4/front"
+   ],
+   "mbRgMbid": "d7fb614a-b49e-4279-82a1-4c4bbce010a4",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "y 可能貼邊"
+  },
+  {
+   "artist": "Marvin Gaye",
+   "album": "Dream of a Lifetime",
+   "year": 1985,
+   "label": "Columbia",
+   "country": "us",
+   "faction": "strings-slow-70s80s",
+   "genres": [
+    "soul"
+   ],
+   "why": "Marvin Gaye 身後整理的慢情歌專輯，延續 I Want You 的肉感低頻與合成器墊。",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 0.9,
+    "z": 1.2,
+    "why": "慢情歌、合成器低音與柔和混響，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/dc1fb531-35ce-3349-ba4f-72ffc8fd811e",
+    "https://coverartarchive.org/release-group/dc1fb531-35ce-3349-ba4f-72ffc8fd811e/front"
+   ],
+   "mbRgMbid": "dc1fb531-35ce-3349-ba4f-72ffc8fd811e",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "身後拼貼盤，製作年代混雜"
+  },
+  {
+   "artist": "Marvin Gaye",
+   "album": "In Our Lifetime",
+   "year": 1981,
+   "label": "Tamla",
+   "country": "us",
+   "faction": "cinematic-psych",
+   "genres": [
+    "soul"
+   ],
+   "why": "Marvin Gaye 最後的 Motown 盤，宗教與愛慾交織，混音糊而濃的電影感靈魂。",
+   "moodGuess": {
+    "x": 2.7,
+    "y": 1,
+    "z": 0.5,
+    "why": "中慢板、層疊合成器與人聲堆疊、霧狀混響"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/162983ce-ba26-3f25-b0a0-db73dfb8d60b",
+    "https://coverartarchive.org/release-group/162983ce-ba26-3f25-b0a0-db73dfb8d60b/front"
+   ],
+   "mbRgMbid": "162983ce-ba26-3f25-b0a0-db73dfb8d60b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "色溫可能偏中性，x 貼近 2.7"
+  },
+  {
+   "artist": "Rotary Connection",
+   "album": "Songs",
+   "year": 1969,
+   "label": "Cadet Concept",
+   "country": "us",
+   "faction": "cinematic-psych",
+   "genres": [
+    "soul"
+   ],
+   "why": "Charles Stepney 編曲的 Rotary Connection，迷幻回授、弦樂與 Minnie Riperton 高音的靈魂迷幻。",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 0.8,
+    "z": 0.7,
+    "why": "慢中板、迷幻回響與弦樂、人聲飄"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/6b59d558-8615-378c-ae26-9c5b3358ce4f",
+    "https://coverartarchive.org/release-group/6b59d558-8615-378c-ae26-9c5b3358ce4f/front"
+   ],
+   "mbRgMbid": "6b59d558-8615-378c-ae26-9c5b3358ce4f",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "池中同團自titled判 y0.3，貼邊風險高"
+  },
+  {
+   "artist": "Lee Fields & The Expressions",
+   "album": "Special Night",
+   "year": 2016,
+   "label": "Truth & Soul",
+   "country": "us",
+   "faction": "revival-slow",
+   "genres": [
+    "soul"
+   ],
+   "why": "Lee Fields 慢而沙啞的復古靈魂，Expressions 厚實鼓貝斯與管弦。",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 0.8,
+    "z": 0.8,
+    "why": "慢中板、乾厚鼓貝斯與銅管，沙啞人聲，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/a7d8b082-317d-4010-876d-de27eec5a539",
+    "https://coverartarchive.org/release-group/a7d8b082-317d-4010-876d-de27eec5a539/front"
+   ],
+   "mbRgMbid": "a7d8b082-317d-4010-876d-de27eec5a539",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "池中 Faithful Man 0.8 為先例，貼邊"
+  },
+  {
+   "artist": "Lee Fields & The Expressions",
+   "album": "It Rains Love",
+   "year": 2019,
+   "label": "Big Crown",
+   "country": "us",
+   "faction": "revival-slow",
+   "genres": [
+    "soul"
+   ],
+   "why": "Lee Fields 後期慢熱靈魂，Leon Michels 製作的厚弦樂與低頻。",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 0.8,
+    "z": 0.9,
+    "why": "慢板為主、弦樂與厚貝斯，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/0f983fc0-b82a-44b9-a5e8-ac46be67d534",
+    "https://coverartarchive.org/release-group/0f983fc0-b82a-44b9-a5e8-ac46be67d534/front"
+   ],
+   "mbRgMbid": "0f983fc0-b82a-44b9-a5e8-ac46be67d534",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Lee Fields",
+   "album": "Sentimental Fool",
+   "year": 2022,
+   "label": "Big Crown",
+   "country": "us",
+   "faction": "revival-slow",
+   "genres": [
+    "soul"
+   ],
+   "why": "Lee Fields 慢情歌取向的新作，弦樂墊與復古混音。",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 0.9,
+    "z": 1,
+    "why": "慢情歌、弦樂與包覆混響，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/d41c74b0-e292-406a-85b8-6091ca866e2e",
+    "https://coverartarchive.org/release-group/d41c74b0-e292-406a-85b8-6091ca866e2e/front"
+   ],
+   "mbRgMbid": "d41c74b0-e292-406a-85b8-6091ca866e2e",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 首發 2022，需主線確認年份"
+  },
+  {
+   "artist": "Charles Bradley",
+   "album": "Changes",
+   "year": 2016,
+   "label": "Dunham / Daptone",
+   "country": "us",
+   "faction": "revival-slow",
+   "genres": [
+    "soul"
+   ],
+   "why": "Charles Bradley 遺作式的慢靈魂，Black Sabbath 翻唱與厚實 Menahan 系編制。",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 0.9,
+    "z": 0.7,
+    "why": "慢板、厚管弦與低頻、嘶啞痛感人聲"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/f19e23dc-28d6-4ed6-a0e5-8d1fef337b2e",
+    "https://coverartarchive.org/release-group/f19e23dc-28d6-4ed6-a0e5-8d1fef337b2e/front"
+   ],
+   "mbRgMbid": "f19e23dc-28d6-4ed6-a0e5-8d1fef337b2e",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "池中同人 y 0.4–0.6，貼邊"
+  },
+  {
+   "artist": "Adrian Younge",
+   "album": "Something About April",
+   "year": 2011,
+   "label": "Wax Poetics",
+   "country": "us",
+   "faction": "cinematic-psych",
+   "genres": [
+    "soul"
+   ],
+   "why": "Adrian Younge 用老錄音機做的電影感靈魂，弦樂與 fuzz 吉他、霧狀混響。",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.2,
+    "z": 0.3,
+    "why": "中慢板、顆粒感弦樂與迷幻吉他、濃混響"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/8aa3ece0-790e-4014-948b-74c2bc806da9",
+    "https://coverartarchive.org/release-group/8aa3ece0-790e-4014-948b-74c2bc806da9/front"
+   ],
+   "mbRgMbid": "8aa3ece0-790e-4014-948b-74c2bc806da9",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "色溫可能偏中性甚至微冷"
+  },
+  {
+   "artist": "Adrian Younge",
+   "album": "Something About April II",
+   "year": 2016,
+   "label": "Linear Labs",
+   "country": "us",
+   "faction": "cinematic-psych",
+   "genres": [
+    "soul"
+   ],
+   "why": "續作，弦樂與長笛疊成電影配樂式的慢靈魂，磁帶糊質地。",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.2,
+    "z": 0.3,
+    "why": "慢中板、管弦與老式混音、磁帶糊"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/32a281d4-6dc1-4bc2-bcc9-94f3e5ac000a",
+    "https://coverartarchive.org/release-group/32a281d4-6dc1-4bc2-bcc9-94f3e5ac000a/front"
+   ],
+   "mbRgMbid": "32a281d4-6dc1-4bc2-bcc9-94f3e5ac000a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "色溫同上"
+  },
+  {
+   "artist": "Curtis Harding",
+   "album": "If Words Were Flowers",
+   "year": 2021,
+   "label": "Anti-",
+   "country": "us",
+   "faction": "cinematic-psych",
+   "genres": [
+    "soul"
+   ],
+   "why": "Curtis Harding 最柔軟的一張，厚低頻與迷幻混響包住的慢歌。",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 0.9,
+    "z": 0.8,
+    "why": "慢中板、厚貝斯與迷幻吉他、濕殘響"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/ad96e417-76ba-4a7c-baf4-8e46fd1e65fb",
+    "https://coverartarchive.org/release-group/ad96e417-76ba-4a7c-baf4-8e46fd1e65fb/front"
+   ],
+   "mbRgMbid": "ad96e417-76ba-4a7c-baf4-8e46fd1e65fb",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Peabo Bryson",
+   "album": "Straight from the Heart",
+   "year": 1984,
+   "label": "Elektra",
+   "country": "us",
+   "faction": "strings-slow-70s80s",
+   "genres": [
+    "soul"
+   ],
+   "why": "Peabo Bryson 80s quiet storm 代表盤，厚合成器墊與柔滑人聲。",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 0.8,
+    "z": 1.3,
+    "why": "慢情歌、合成器與弦樂墊，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/f9e48fb1-68b1-392e-b7eb-cc05d449820d",
+    "https://coverartarchive.org/release-group/f9e48fb1-68b1-392e-b7eb-cc05d449820d/front"
+   ],
+   "mbRgMbid": "f9e48fb1-68b1-392e-b7eb-cc05d449820d",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "池中 Crosswinds 0.7；80s 製作貼邊"
+  },
+  {
+   "artist": "Peabo Bryson",
+   "album": "I Am Love",
+   "year": 1981,
+   "label": "Capitol",
+   "country": "us",
+   "faction": "strings-slow-70s80s",
+   "genres": [
+    "soul"
+   ],
+   "why": "Peabo Bryson 早期慢歌盤，弦樂編制與柔和低頻。",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 0.8,
+    "z": 1.3,
+    "why": "中慢板、弦樂與電鋼琴，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/7a046eb4-554b-4a99-a14b-a8c2e08a419c",
+    "https://coverartarchive.org/release-group/7a046eb4-554b-4a99-a14b-a8c2e08a419c/front"
+   ],
+   "mbRgMbid": "7a046eb4-554b-4a99-a14b-a8c2e08a419c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "y 貼邊"
+  },
+  {
+   "artist": "Jeffrey Osborne",
+   "album": "Stay with Me Tonight",
+   "year": 1983,
+   "label": "A&M",
+   "country": "us",
+   "faction": "strings-slow-70s80s",
+   "genres": [
+    "soul"
+   ],
+   "why": "Jeffrey Osborne 80s 抒情靈魂，合成器墊與厚人聲和聲。",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 0.8,
+    "z": 1.3,
+    "why": "慢情歌、合成器墊與低音，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/b4cafce1-3f97-3347-8aac-27dd403ceea5",
+    "https://coverartarchive.org/release-group/b4cafce1-3f97-3347-8aac-27dd403ceea5/front"
+   ],
+   "mbRgMbid": "b4cafce1-3f97-3347-8aac-27dd403ceea5",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "80s 製作偏亮，y 貼邊"
+  },
+  {
+   "artist": "The-Dream",
+   "album": "Love vs. Money",
+   "year": 2009,
+   "label": "Radio Killa / Def Jam",
+   "country": "us",
+   "faction": "rnb-haze",
+   "genres": [
+    "soul"
+   ],
+   "why": "The-Dream 的合成器厚霧式 R&B，慢拍、低頻重、旋律黏人。",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.1,
+    "z": 0.6,
+    "why": "慢拍、厚合成器低頻與殘響、人聲疊層"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/0782dba6-6b38-4a5e-a4ef-8d86928c1e6f",
+    "https://coverartarchive.org/release-group/0782dba6-6b38-4a5e-a4ef-8d86928c1e6f/front"
+   ],
+   "mbRgMbid": "0782dba6-6b38-4a5e-a4ef-8d86928c1e6f",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "池中 Bryson Tiller 類冷；這張暖度需確認"
+  },
+  {
+   "artist": "The-Dream",
+   "album": "Love King",
+   "year": 2010,
+   "label": "Radio Killa / Def Jam",
+   "country": "us",
+   "faction": "rnb-haze",
+   "genres": [
+    "soul"
+   ],
+   "why": "The-Dream 較柔的一張，慢拍情歌與厚合成器墊。",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1,
+    "z": 0.8,
+    "why": "慢板、合成器厚墊與低頻、人聲疊層"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/0967563d-4ef6-4124-aa38-92e313721843",
+    "https://coverartarchive.org/release-group/0967563d-4ef6-4124-aa38-92e313721843/front"
+   ],
+   "mbRgMbid": "0967563d-4ef6-4124-aa38-92e313721843",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  }
+ ],
+ "notes": [
+  "池中經典 soul 多判輕（y<0.5）：Isaac Hayes、Donny Hathaway、Curtis Mayfield、Al Green、Bobby Womack、Terry Callier 等同人已在池且落放鬆，一律不提；本組只取池中缺盤、且同人／同型曾有 y≥0.8 先例者（Barry White、Pendergrass、Manhattans、Billy Paul、Lee Fields）。",
+  "Menahan Street Band《Make the Road by Walking》、El Michels Affair《Adult Themes》已在 curation-ml31；Dells 兩張（Standing Ovation、Mighty Mighty）MB 釘得住但 CAA 無封面，未提。",
+  "多張為邊緣貼 y 0.8（見各張 uncertain），主線評分後可能掉放鬆；80s 製作偏亮者風險最高。",
+  "全部 MB release-group 釘住，CAA front 皆 200；無人工身分。"
+ ]
+}
