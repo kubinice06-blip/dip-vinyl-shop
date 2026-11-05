@@ -16,3 +16,8 @@
   - 正規專輯資格或身分不穩：Aidan Baker & Ekin Fil《The Dark Well》（約 28 分鐘）、Fossil Aerosol Mining Project《Rusted Articles…(2020 Reconfiguration)》（重新編排版，原盤年份不明）、Amy Cutler《Sister Time》（24 軌拼貼，曲間差異大）。
   - 故事／聲音來源不足：Jim Haynes《Throttle and Calibration》（評介只寫創作背景）、Kiera Mulhern《De ossibus 20》（引文未核、y 1.0）、Andrew Anderson《Thresholds》（藝人國別不明，查無第二來源）。
 - **留給研究層確認**：Basinski《The Clocktower at the Beach (1979)》（池中同人一張判暖落恍惚，色溫）、KMRU《Natur》（y 邊緣）、Phauss《Audiodrome》（80 年代作品 2022 首發？年份以原盤首發為準）、Thaniel Ion Lee《Five Ghosts》（Bandcamp 2018、MB 2021，取 2018）、Kristen Pilon & Demdike Stare《To Cut & Shoot》（配樂、歌劇人聲張力）、Marc Kate《Deface》（取材 NSBM 素材而反轉；題材無禁區，照收）、Alex Zhang Hungtai《Dras》（無調張力）、Amulets、Sally Decker（x 2.2）、Jake Muir《Pareidolia》（失真密度）。
+
+## 研究 e 組
+- **23201**（Amby Downs《Ngunmal》）：人工身分核對 Bandcamp 專輯頁與 Room40 官網相符；兩首主曲約 50 分鐘（含節錄版約 63 分鐘），正規專輯。Room40 官網日期 2023-11-10、Bandcamp 11-11，取 2023。Daily 引文逐句核對屬實。moodGuess 輕微存疑（首曲重複喀喀聲，Daily 說包覆在 drone 裡，非鼓拍），不汰。
+- **23202**（Lori Goldston《Open Space》）：pinned，Bandcamp 十軌約 74 分半，Daily 引文屬實。moodGuess 輕微存疑：Bandcamp CD 介紹稱可「roar at full volume」也有失重寧靜段，x 2.1 恐偏低、可能貼 2.5–2.8；大提琴木質共鳴 z 可能略偏暖，評分時留意。
+- **23203**（Roland Kayn《Matego I-II》）：推翻策展層：curatorWhy 的「contemplative and chilling」是 Daily 講 Electronic Symphony I-III，不是 Matego；Matego 原句為 relies on distance and near-silence。curatorRisk 的「Electric Symphony」為筆誤。**moodGuess 明顯存疑**：近乎寂靜、短爆發，y 1.2 恐偏高，可能靜輕冷；建議評分後若 y 不足 0.5 就汰換。兩軌約 52 分半，正規專輯。
