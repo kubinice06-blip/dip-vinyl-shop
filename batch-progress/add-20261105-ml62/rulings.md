@@ -18,3 +18,13 @@
 - 23044｜Curtis Harding《If Words Were Flowers》：廠牌稱 tight grooves／punchy horns，樂評點出 propulsive drum beat，有快拍推進，躁軸風險高；建議汰換或降期待。
 - 23045｜Peabo Bryson《I Am Love》：身分無誤（Capitol 1981）；Johnny Pate 弦樂＋Dorothy Ashby 豎琴偏暖，但含 Move Your Body、Split Decision 等中板律動曲，y 貼邊疑慮屬實。
 - 23046｜The-Dream《Love vs. Money》：punchy drumbeats、electro 元素、Kanye West／Mariah Carey／Lil Jon 參與，躁與冷風險中高，建議優先汰換；《Love King》較穩（客串僅 T.I.），MB 首發日 2010-01-01 為佔位，實為 2010-06-29。
+
+## 研究 a 組
+- 23001｜Still Corners《Strange Pleasures》moodGuess 存疑：PopMatters 稱低調鼓機節奏、〈Beatcity〉近舞曲、〈Berlin Lovers〉Krautrock 式推進，LBoF 稱〈Fireflies〉有動態節拍；維基標 chillwave／synth-pop；冷暖並存。判躁或判輕風險，建議列汰換候選。
+- 23002｜Lightning Bug《A Color of the Sky》moodGuess 存疑（強）：Loud and Quiet 稱 bright and spacious、uplifting、oasis of calm；BPM 稱 sunny、吉他 upbeat、sticky rhythms、比前作少失真；非霧狀厚殘響，判輕（放鬆）風險高。建議汰換。
+- 23003｜Widowspeak《All Yours》moodGuess 存疑：樂評多次用 airy、slacker vibe、relaxed、chilled-out，〈Borrowed World〉最活潑；判輕落放鬆風險高於預估。日期：維基 8/28、廠牌與 MB 9/4，facts 採 9/4。
+- 23004｜Widowspeak《Plum》moodGuess 存疑：卡單寫「弦樂墊」但查無弦樂（鼓機＋真鼓＋鋼琴＋合成器）；後半轉冷、轉電子、不安；BPM 稱標題曲 too clean。錄音資訊（2019 冬、卡茲奇山）僅維基單一來源。
+- 23005｜Still Corners《Slow Air》：新聞稿「約三個月」與 Slug「約三週」不一致，facts 採三個月並標為新聞稿；主線可刪。
+- 23006｜Still Corners《Creatures of an Hour》：Greenwich 錄音室僅 Sub Pop 商品頁單源；z 0.3 貼邊屬實（樂評用 murky、eerie）。
+- 23007｜Still Corners《The Last Exit》：身分與預估吻合，暖調居多，無推翻。
+- 身分檢查七張皆 pinned 對得上（盤名、年份、廠牌）；未推翻策展層年份／廠牌。
