@@ -1,5 +1,12 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-05｜dip-vinyl-shop｜Apple Music：商品視窗與選歌紀錄的按鈕改成「有直連才能按」
+
+店主在 `apple-test.html` 回報六種寫法（台灣區、日本區）**全部能直接開專輯**，連結格式本身沒問題。查到 `index.html` 還有兩處 Apple 按鈕（店內商品視窗 `renderMusicSection`、選歌紀錄 `historyMusicLinks`）沒帶 `data-apple-strict`，索引沒收的專輯會留著 `music.apple.com/search?term=` 搜尋連結——手機上 App 接走後丟掉搜尋詞，只剩首頁。兩處改成 strict（查不到就灰色不能按，與卡片詳情一致），加 `.music-platform-btn[disabled]` 樣式。
+- 抽查：索引外區（US／JP）專輯在台灣商店的上架率各 37/40、34/40，少數外區連結在台灣帳號下可能開不到；卡池 22,824 張有直連 18,276 張（80%）。
+- 店主說打不開的是「抽到的專輯卡」那排按鈕（本來就是 strict），根因仍待店主給一張打不開的卡名再查。
+- 驗證：靜態改動，`data-apple-strict` 共 4 處。
+
 ### 2026-11-05｜dip-vinyl-shop｜Apple Music 按鈕第三次查：先放連結寫法測試頁
 
 店主：「點 Apple Music 後連到 App 但沒有打開專輯」（09-28、10-01 兩次修正後仍在）。雲端無法用 iOS 真機測，先上 `apple-test.html`（noindex）：同一張專輯排六種寫法（現行 `/<sf>/album/<slug>/<id>`、加 `?app=music`、`?ls=1&app=music`、`geo.music.apple.com`、`music://`、強制台灣區），台灣區與日本區各一組（索引裡 TW 8,155、US 7,633、JP 1,305 張，懷疑跨區連結在台灣帳號的 App 裡打不開）。待店主回報哪幾個能直接開專輯，再改 `dip-player.js` 的 `appleAlbumUrl()`。驗證：純靜態頁。
