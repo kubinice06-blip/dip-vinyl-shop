@@ -2492,3 +2492,80 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 ## ar-d-269（2026-11-04，新頂點盤線 ax6 第二波＝大提琴噪音即興、噪音黑金屬、極簡金屬）
 - 切 3 位（Okkyung Lee、Stalaggh、Orthrelm）。補洞 1 組、寫作 1 組。skipped 0。
 - **主線審稿 2 處**：Okkyung Lee 刪「據說」引導；Stalaggh 刪「VICE 稱它可能是史上最可怕的唱片之一」（媒體名不進正文，且單源封號）。Orthrelm 逐句審過未改字。
+
+## 2026-11-05 改號與合併 main
+
+- main 另有工作階段用了 ar-d-129～138（新卡藝人，內容不同）；本分支原 ar-d-129～140 改號為 ar-d-929～940，PR #80 合併 main 後由雲端自行合併（2026-10-21 起的規則）。
+- 派工範本 `prompts/artist-dispatch.md` 移除「死因與案情細節預設避免」，改寫為店主 2026-07-31「題材沒有禁區」；榜單、銷量、媒體名單的避免規則不變。
+
+## ar-d-131（2026-11-05，ts3／ts4 新卡藝人：非洲、法朵、佛朗明哥）
+
+- 40 位全寫：38 full、2 thin（Kassa Tessema、Krar Collective，評價面只有單源）。
+- 題材照寫：Ray Lema 拒寫歌頌蒙博托的歌劇、財產被沒收而離國；Ali Birra 歌中批評政府、流亡與國葬；Moses Molelekwa 與妻子雙雙身亡（死因三說不一，不寫死因）；Stella Chiweshe 在殖民政府禁 mbira 時地下演奏、腦癌過世；Diego el Cigala 2021 年因前伴侶家暴投訴被捕、判兩年多徒刑；Batsumi 領隊之父是被囚的泛非主義者大會主席；Mankunku 依《集團地區法》被迫遷。
+- 主線審稿 13 處：Ray Lema、Camané、Cristina Branco、Marceneiro、Fernando Maurício、Lucília do Carmo（2 處）、Noronha、Fernanda y Bernarda、Enrique Morente、Carmen Linares、José Mercé 的「最…之一／最好」改保守；Carminho 刪西班牙單曲榜冠軍（在世者不寫榜單）。
+
+## ar-d-132（2026-11-05，ts4／ts7／ts8 新卡藝人：探戈、巴爾幹、克萊茲莫、泰國與蒙古搖滾）
+
+- 40 位全寫：34 full、6 thin（Orquesta Típica Fernández Fierro、Mahala Rai Banda、Crub、Wolfpack、Smile Buffalo、Pru）。
+- 2026 年事實主線開頁核實：Daniel Melingo 6 月 30 日過世（阿根廷多家媒體：在家安寧照護、呼吸道疾病）；Yanka Rupkina 4 月中風後過世（BTA、BNR）。Asanee-Wasan 只寫宣布告別演出。
+- 題材照寫：Pugliese 1955 年因共產黨員身分入獄、琴上放紅康乃馨；Gabi Luncă 是 Ceaușescu 夫婦偏愛的歌手、後轉五旬節教會；Puceanu 晚年酗酒與車禍身亡；Soyol Erdene 由國家創辦以控制青年文化、成吉思汗頌歌引爭議；Tawan 在 1992 年 5 月民眾運動後的社會諷刺；Taitosmith 在示威集會免費演出；Sebestyén 的舞屋運動被當局視為危險。
+- 主線審稿 8 處：Gardel、Goyeneche、Salgán、Sosa、Brandwein 的「最…」改保守；Goyeneche 刪「第一位錄下」；Sebestyén 刪李斯特獎（在世者留一處：UNESCO 和平藝術家）；Hin Lek Fai 刪 Seesan 最佳新人（已留破百萬卷一處必要例外）。
+
+## ar-d-133（2026-11-05，ts8／ts9／ts10 新卡藝人：泰國、越南、新加坡、印尼搖滾、金屬、獨立團）
+
+- 40 位中寫 37 位：19 full、18 thin。不寫 3 位：Sói Đen、Final Stage（三格全空、查無報導）、Padres（沒有任何聲音描述，過不了 thin 門檻）。
+- 2025–26 主線開頁核實：Sek Loso 2017 年底朝天開槍被捕、2025 年 5 月最高法院判刑入獄、2026 年 6 月 24 日假釋並戴電子腳鐐（Nation Thailand、Malay Mail、Pattaya Mail），照寫；11 月演唱會預告不寫。
+- 主線審稿 6 處：Sek Loso 壓回 250 字（3 處刪次要細節）；Desktop Error「數一數二」、7UPPERCUTS「最知名之一」改保守；Jogja Hip Hop Foundation 寫作層自加的「生吞活剝」改「囫圇吞下」。
+
+## ar-d-134（2026-11-05，ts10／ts11 新卡藝人：新加坡、蒙古搖滾與獨立團）
+
+- 12 位全寫：7 full、5 thin（Marijannah、Aravt、A-Sound、mxrningstar、The Tourists (Mongolia)）。
+- 2025 年事實主線核實：Magnolian 的歌收進《Death Stranding 2: On the Beach》（官網、Mondo 原聲黑膠、VideoGamer 曲目表）；「〈Woods〉為遊戲新寫」官網只說出自新 LP，改寫。
+- 主線審稿 2 處：Magnolian 刪「唯一的獨唱表演者」（單源「唯一」）、〈Woods〉出處改寫。
+
+## ar-d-135（2026-11-05，ts5／ts6 新卡藝人：neofolk、psytrance、1950 年代 rockabilly／doo-wop、台灣與中港饒舌）
+
+- 40 位中寫 39 位：26 full、13 thin。不寫 Growling Mad Scientists（sound 查無，過不了 thin 門檻）。
+- 題材照寫：Death in June 的白人權力音樂指控與 Pearce 的否認、《Brown Book》因取樣納粹衝鋒隊歌曲在德國禁售；Sol Invictus 的 Wakeford 曾加入極右組織（組織名兩源不一，只寫「極右組織」）、2011 年遭抗議與聲明；Forseti 的 Ritter 心臟驟停；Hux Flux 溺水身亡；熊仔失眠與恐慌；LMF 的反送中歌曲。熊仔《PRO》第 34 屆金曲最佳華語專輯主線核實（公視、中時、NOWnews）。
+- 主線審稿 5 處：Clovers 刪「1950 年代最成功」（單源）；ØZI 刪「入圍六項」（在世者不寫獎項數）；Rome、Etnica「最…之一」改保守；Cosmosis 刪 NTS 媒體名。
+- 名冊名「谢帝」為簡體，正文用「謝帝」；名冊不改（QA 比對名冊）。
+
+## ar-d-136（2026-11-05，ts5 新卡藝人：香港、韓國、法國饒舌，紐奧良 bounce 與 SoundCloud rap）
+
+- 31 位中寫 25 位：23 full、2 thin（Jazzyfact、pH-1）。不寫 6 位：Deepflow、Changmo、Dok2、Khundi Panda、Lunatic、Partners-N-Crime——寫作層照 thin 交稿，但都沒有一句寫聲音或做法，過不了 thin 門檻（比照 ar-d-133 Padres），主線撤下。
+- 2026 年事實主線核實：Calbo（Ärsenik）1 月 4 日過世（AFP 轉載、法國文化部、Pure People），死因未公開。
+- 題材照寫：Rohff 持械入獄與 Ünkut 店施暴判刑；Diam's 躁鬱症、企圖輕生、改信伊斯蘭與頭巾風波、反對國民陣線；La Rumeur 的 Hamé 遭 Sarkozy 控告誹謗警察、八年後無罪；Damso 歌詞被批性別歧視、足協取消國家隊歌曲；Soulja Slim 多次被捕與遭槍殺；Turk 的聯邦與州判刑；$uicideboy$ 的輕生之約與藥物、憂鬱題材。
+- 主線審稿 8 處：넉살、The Quiett、$uicideboy$ 的「最…之一」改「極」；Ärsenik、Diam's 壓回 250 字；Diam's「自殺未遂」改「企圖輕生」、$uicideboy$「一起自殺」改「一起輕生」（用字規則）；廿四味刪「香港第一個」頒獎禮（單源「第一」）。另：特注誤把持械入獄寫在 Kery James 名下，寫作層照 digest 寫進 Rohff，正確。
+
+## ar-d-137（2026-11-05，md1／md2 新卡藝人：dark ambient、drone、dark jazz、slowcore）
+
+- 39 位全寫：17 full、22 thin。
+- 題材照寫：Giles Corey 源自 Dan Barrett 企圖輕生後的經歷；Midwife 為意外離世的室友 Colin Ward 而作的專輯；Planning for Burial 酗酒用藥的時期；The Caretaker 失智症構想在 TikTok 爆紅與「娛樂化失智症」的批評；Philip Jeck 2022 年病逝。
+- 主線審稿 4 處：The Caretaker 壓回 250 字（2 處）；Giles Corey「企圖自殺」改「企圖輕生」；Thomas Köner 刪 Prix Ars Electronica（在世者留一處：ZKM 的評價）。
+
+## ar-d-138（2026-11-05，md3／md4 新卡藝人：drone、darkwave、暗黑民謠、實驗 R&B、dub techno、台灣迷幻）
+
+- 34 位全寫：17 full、17 thin。
+- 題材照寫：Sevdaliza 回應川普入境禁令與 Mahsa Amini 之死的抗議歌；Space Afrika 回應喬治·佛洛伊德之死與英國種族歧視；Dylan Carlson（Earth）海洛因成癮、戒治與服刑；Tricky 少年犯罪與偽鈔入獄；Chelsea Wolfe 的睡眠癱瘓；Lycia 的 VanPortfleet 與糖尿病搏鬥；Peter Rehberg 2021 年過世。
+- 主線審稿 0 處。King Krule 與 Archy Marshall 是同一人的兩張卡，內容分開寫、未互抄。
+
+## ar-u-029（2026-11-05，thin 升級：Logan Richardson～Michael Angelo）
+
+- 40 位中 11 位升 full 上線；29 位補洞後仍 thin、保留上線版（名單見 progress.json skipped）。
+- 題材照寫：Marta Kubišová 1970 年起被禁唱、遭偽造照片抹黑、簽署《七七憲章》、天鵝絨革命時在瓦茨拉夫廣場重新開唱；Major Harris 死於充血性心肺衰竭。
+- 主線審稿 6 處：Logic System「冨田勲」改台灣字形「冨田勳」；Marc Coppey 刪 Diapason d'Or（雜誌獎、兩源同稿，在世者留萊比錫巴赫大賽一處）；Marta Kubišová 壓回 250 字（3 處）；Mary See the Future「EP讓」補空格。
+- **上線 thin 稿改正 7 位**（補洞層 thinIssues 查出的錯，改原上線檔）：Makoto Matsushita「吉野藤丸」改「芳野藤丸」並改寫 AB'S 成因；Maulawi「簧管手」改「薩克斯風手」、刪無來源的「與 Muhal Richard Abrams 親近」「請樂手下台上課」，補 AACM 外圍與 DeJohnette 出道（兩源）；Maribou State 改 2011 年組成、刪摩洛哥與北京古箏；Masao Nakajima 改 9 歲接觸爵士、13 歲看 Peterson 現場；Mehrpouya 刪「轉行做裝潢」「電影配樂」；Manhattan Jazz Orchestra 刪無來源的編曲評語；Marconi Notaro 刪「拉格式段落」「浸透 fuzz」。
+
+## ar-u-030（2026-11-05，thin 升級：Michael White～Nérija）
+
+- 40 位中 8 位升 full 上線；32 位補洞後仍 thin、保留上線版。
+- 題材照寫：Misty in Roots 成員在反國民陣線示威中遭警察擊傷、The Ruts〈Jah War〉、反種族主義與支持辛巴威獨立；Nite Jewel 批評 chillwave 史漏掉拉丁裔女性；Nérija 出身扭轉爵士女性比例的培訓計畫。
+- 主線審稿 2 處：森山威男條片假名「山下洋輔トリオ」改「山下洋輔三重奏」；Non Band 條「玉垣満」改「玉垣滿」並改順句子。
+- **上線 thin 稿改正 6 位**：Necros 刪「替 Misfits 最後一場開場」（不精確）；NORIKI 改為「1985 年擔任渡邊貞夫《My Dear Life》音樂總監」（原「被延攬為樂團音樂總監」說過頭）；Mystic Eyes 刪無出處的 King Tubby 院子舞會；Milton Marsh 蘇非詩朗誦改在標題曲中段；Modern Talking 刪「由錄音室合聲團製造」；Mid-Air Thief 補上「拿下最佳舞曲與電子專輯」（原只寫入圍）。
+
+## 2026-11-05 十批收尾
+
+- 新藝人 ar-d-131～138（276 位排隊中）寫 266 位上線（181 full、85 thin），不寫 10 位（查無資料或沒有聲音句，過不了 thin 門檻）。
+- thin 升級 ar-u-029、030：80 位中 19 位升 full，61 位保留；順帶改正上線 thin 稿 13 位。
+- 2026 年事實主線開頁核實：Melingo、Yanka Rupkina、Calbo 過世；Sek Loso 判刑與假釋；熊仔《PRO》金曲最佳華語專輯；Magnolian 入《Death Stranding 2》。
+- 名冊 `roster-20260929.json` 裡另有 182 位歷輪試過、資料不足而未寫的藝人，不再重派。
