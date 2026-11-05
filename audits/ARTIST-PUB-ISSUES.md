@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1726 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1730 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -1503,6 +1503,10 @@
 | ar-d-501 | Bernhard Wambach | Stockhausen: Klavierstücke vol. II | Wambach 曾隨 Gulda 學琴 | neos 傳記只寫 1973–77 年參加 Gulda 的課程（courses），並非確定的私人師承 | https://neos-music.com/en/bernhard-wambach/ |
 | ar-d-501 | Charles Wuorinen | Wuorinen: Scherzo / First String Quartet / Viola Variations / Second Piano Quintet | 32 歲就拿下 1970 年普立茲音樂獎 | 各來源年齡寫 31 或 32 歲不一（Violin Channel 31，AP 轉載 31 或 32）；以生日 1938-06-09 推算授獎時約 31 歲，建議改成『1970 年拿下普立茲音樂獎』 | https://theviolinchannel.com/sad-news-american-composer-charles-wuorinen-died-passed-away-obituary-81 |
 | ar-d-502 | Jason Graves | Dead Space: Original Videogame Soundtrack | 隔年它在 BAFTA 遊戲獎拿下 Original Score 一項 | 2009 年 BAFTA 遊戲獎《Dead Space》得 Original Score 與 Use of Audio 兩項，不是一項；另 GANG 獎 Audio of the Year | https://en.wikipedia.org/wiki/Music_of_the_Dead_Space_series |
+| ar-d-503 | Farmers Manual | fsck | 原版 CD 設了 99 個索引點，正式曲目之外藏進約四十段各 4 秒的噪音小段 | 英文維基《fsck》條目寫第 16 至 98 軌（約 83 段）各約 4 秒近靜音與靜電噪音，與『約四十段』不一致；單源，請店主對 Discogs 曲目表核對。 | https://en.wikipedia.org/wiki/Fsck_(album) |
+| ar-d-503 | Northaunt | The Ominous Silence | 一人管合成器與採樣，吉他全由另一人彈（Søraker） | This Is Darkness 稱 Søraker 是共同創辦的二人組成員，非僅吉他客座；上線簡介說法不衝突，僅提供脈絡，不必改。 | https://www.thisisdarkness.com/2017/10/08/northaunt-artist-spotlight/ |
+| ar-d-503 | Rheingold | Rheingold | 新德意志浪潮頭一首進西德前 20 的單曲 | 『頭一首』僅德文維基單源，Düsseldorf 地方報摘要稱『often considered』；建議簡介改為『一般認為』或維持，需店主斟酌。 | https://de.wikipedia.org/wiki/Rheingold_(Band) |
+| ar-d-503 | Rheingold | Distanz | 這個樂團從來沒有上台演出過 | de 維基提到 1984 年 BR 電視演出（一支電視節目，由 Rolf Meurer 彈鍵盤）；『從未上台』指現場演唱會，建議改『從未辦過現場演出』以免與電視演出衝突。 | https://de.wikipedia.org/wiki/Rheingold_(Band) |
 | ar-d-929 | Erik Truffaz | Rollin' | 2000 年簽進這個廠牌 | 上線簡介沿用 Blue Note 官網簡介的 2000 年簽約說；但維基與已上線的《Out of a Dream》《The Dawn》《Bending New Corners》簡介顯示 1997–1999 年已在 Blue Note 發片，瑞士聯邦文化局新聞稿也記《Bending New Corners》為 1999 年 Blue Note 專輯，2000 年簽約的說法與之矛盾，建議改為不寫簽約年。 | https://musikzeitung.ch/en/?p=44583 |
 | ar-d-929 | Erik Truffaz | The Walk of the Giant Turtle | 前一張四重奏盤在法國賣到十萬張的金唱片 | 維基只寫《Bending New Corners》（1999）是法國 Silver Album；本張的前一張是《Mantis》（2001），並非《Bending New Corners》。需核對金唱片的專輯歸屬與認證層級。 | https://en.wikipedia.org/wiki/Erik_Truffaz |
 | ar-d-929 | Stanley Jordan | Magic Touch | 九軌裡有五軌只有一把電吉他 … 六軌只有他的電吉他 | 同一則簡介前後自相矛盾：五軌 vs 六軌；事實庫引 jazzdisco 為六軌純獨奏、其餘三軌各配一組節奏，應統一為六軌。 | https://en.wikipedia.org/wiki/Magic_Touch_(Stanley_Jordan_album) |

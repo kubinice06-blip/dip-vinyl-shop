@@ -2579,3 +2579,9 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 40 位全寫：33 full、7 thin。
 - 題材照寫：Nancarrow 加入共產黨與國際縱隊、為躲避騷擾移居墨西哥；Zimmermann 長年憂鬱與眼疾、1970 年輕生；Chojnacka 退化性腦疾病；Wuorinen 跌倒引發硬腦膜下血腫過世；Aloys Kontarsky 中風；Helffer 投身抵抗運動。
 - 主線審稿 2 處：Miranda Cuckson「四度獲 Copland 補助」改「曾獲」（不寫次數）；Zimmermann「自盡」改「輕生」（用字規則）。
+
+## ar-d-502（2026-11-05，當代古典演奏團體、演奏家與作曲家）
+
+- 40 位全寫：26 full、14 thin。多名卡三張用放寬額度（Lustmord + Nicolas Horvath、Münchener Kammerorchester & Christoph Poppen、Nicolas Hodges & Rolf Hind）。
+- 題材照寫：Fjellström 2017 年猝逝（死因未公布）、遺作由他人完成；Hodges 2019 年確診帕金森氏症、帶病演出；Zukofsky 2017 年因淋巴瘤過世。
+- 主線審稿 6 處：Fjellström「該劇編劇與作曲家 Skodvin」改為點名編劇 David Kajganich 與 Skodvin（原句易讀成同一人），並刪廠牌形容與「留下 75 首」壓回 245 字；Kolbeinn Bjarnason「古典長笛音樂中無可比擬」改為發行廠牌說「少見」（軟化）；Jeffrey Swann 刪其餘大賽名次、Julie-Anne Derome 刪 Virginia Parker 獎（在世者只留一項成績）。
