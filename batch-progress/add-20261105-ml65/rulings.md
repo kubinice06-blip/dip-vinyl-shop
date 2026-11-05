@@ -46,3 +46,22 @@
 - 色溫／嘻哈：Sun Glitters《It Will Be Forever》（官方 Tech Noir、haunting tension）；Lapalux《Lustmore》（trap／hip-hop 底鼓、Discogs 含 Hip Hop，z 中性；店主要少嘻哈）。
 - 研究層措辭更正交寫作層：Vondelpark「慢 R&B 拍」→「輕刷慢鼓」；Tropics 已汰；John Beltran 出身密西根蘭辛（不寫 Detroit）；Khotin《Finds You Well》是 Ghostly 第一張全新專輯（Ghostly 先重發《Beautiful You》）。《Eternal Beams》Laraaji 與 Eno 合作只有單源，寫作不用。
 - 留下的貼邊卡：Seahawks 兩張與 Khotin《Finds You Well》y、Hiatus／Vondelpark／Ana Roxanne z、John Beltran x。
+
+## 鉤子層（a–e，條號 23131–23140；單一代理全包）
+- **23131** 交件：`desc-tools/batches/hooks/add-20261105-ml65-hooks-{a,b,c,d,e}.json`（1／2／2／2／2＝9 張，key 與順序照研究稿）。預算公式照第 1793-B 條：`Array.from(hook)+Array.from(note) − 主故事： − 所有 → − 正文只寫上列各項。 − 這條骨架全批只走本張。`。逐筆預算（hook 加權）：Sun Glitters 222（19）／Hiatus 170 thin 上限 170（14.5）／John Beltran 228（19）／Vondelpark 221（18）／Ana Roxanne 210（19）／Khotin《Beautiful You》230（21.5）／Khotin《Finds You Well》216（17）／Seahawks《Eyes of the Moon》228（16.5）／Seahawks《Eternal Beams》229（14.5）。hook 原始字元 16–26。
+- **23132** 壓預算整格捨去：Sun Glitters 三位客座歌手、8 首 27 分鐘、封面自繪；Hiatus 11 首、〈Returning〉；Beltran Billy Lopez 限定句、「旋律與空間不亞於鼓」；Ana Roxanne 開場口白、Moreschi 彈鋼琴、〈Venus〉長度、植物雌雄同體；Khotin《Beautiful You》生年、10 首 53 分鐘、〈Levi's Synth〉鳥鳴；《Finds You Well》曲數、Boards of Canada 影響；《Eyes of the Moon》Yoshirotten 封面、倫敦混音、吟唱。壓完回核：9 張 hook 依賴格全在 g1／g2（Hiatus 靠 g1 伊朗血統、Beltran 靠 g1 題詞、Eyes 靠 g2 Ocean Moon、Eternal 靠 g2 A 面連段）。
+- **23133** 骨架歸屬（9 張 9 條）：Sun Glitters＝變調人聲當旋律主體；Hiatus＝家族血統入樂；Beltran＝內頁題詞；Vondelpark＝從舞曲抽身；Ana Roxanne＝盤名來自個人身分經驗；《Beautiful You》＝自行發行後被廠牌重發；《Finds You Well》＝拿掉一件樂器（無底鼓）；《Eyes of the Moon》＝首次離開自家廠牌；《Eternal Beams》＝實地錄音串起單面組曲。
+- **23134** hook 四型：懸疑（Ana Roxanne、Beltran）／斷言（Vondelpark、Beautiful You、Finds You Well）／場景（Hiatus、Eternal Beams）／人物定調（Sun Glitters、Eyes of the Moon）。開頭前四字 9 張互異，也與 ml60／ml61 已上架 hook 開頭不同。
+- **23135** 同藝人分軸與「他／他們」引入法：Khotin《Beautiful You》帶生平（藝名、2014《Hello World》出道、艾德蒙頓），第二句「來自加拿大艾德蒙頓」領句，note 加「生平只寫在本張」；《Finds You Well》帶錄音與聲音細節（無底鼓、breakbeat、〈Processing〉〈Groove 32〉〈Outside In The Light〉），第二句以身分「加拿大電子音樂人 Khotin」領句。Seahawks《Eyes of the Moon》帶二人身分（Tye＝Lo Recordings 共同創辦人、Fowler＝視覺藝術家）與廠牌轉換、康瓦爾錄音，第二句名字直接領句；《Eternal Beams》帶聲音（雨雷實地錄音、海豚叫聲、Laraaji 的 B 面），第二句以年份領句。兩組皆不在 note 點名另一張盤名。
+- **23136** 第二句句型配表：Sun Glitters「用過 Sug(r)cane…」／Hiatus「Hiatus 是」／Beltran「生於密西根州蘭辛」／Vondelpark「核心 Lewis Rainsbury」／Ana Roxanne「在洛杉磯錄音」／Beautiful You「來自」／Finds You Well 身分／Eyes 名字並列／Eternal 年份。
+- **23137** 「日」後一字：Hiatus 日由、Ana Roxanne 日交、Beautiful You 日先、Eyes 日在；其餘五張只寫到年或月。
+- **23138** 主線研究汰換段照辦：Vondelpark 寫「輕刷慢鼓」；Beltran 出生地寫密西根州蘭辛，note 不出現 Detroit／底特律；《Finds You Well》寫「在這家廠牌的第一張全新專輯」；Laraaji 只寫「新世紀音樂人」，Eno 那條不用。媒體名與名次未進 note（Sun Glitters 的 Burial 比較、BBC 評語皆不指派）。Ana Roxanne 加「身分一事用平實口氣」。
+- **23139** n-gram 自查：hook 間中文 4-gram 0 條；hook 與自身 note 無逐字重複句（Ana Roxanne note 改「她 18 歲時得知」避開 hook 的「18 歲那年」）。
+- **23140** 腳本：`qa-batch.mjs hooks` 全部通過；`chk-hook-crossgroup.mjs` 5 組 9 張全部通過（只報不擋：Vondelpark「不是」為 Rainsbury 原話、Eternal Beams「沒有」為聲音描述，皆屬內容）。
+
+## 寫作層（writer-1，條號 23141–23150；單一代理全包 9 張）
+- **23141** 交件：`desc-tools/batches/output/add-20261105-ml65-out-1.json` 9 張（full 8：203–235；thin 1：Hiatus 177）。初稿零超標、零掉下限，無整格捨去。`qa-batch out` 全部通過、`qa-check-research` 標記 0、`fix-spacing` 待補 0；「據」字 grep 0。
+- **23142** 第二句領句全照鉤子層 23136 配表；日期領頭名詞＋動詞逐張不同（Sun Glitters「第一張專輯在…由他自己發行」／Hiatus「《Parklands》…日由」／Beltran「Peacefrog 在…推出」／Vondelpark「R&S Records…替他們出版」／Ana Roxanne「日交給 Kranky」／Beautiful You「日先以數位上架」／Finds You Well「Khotin…交出這張」／Eyes「這回…日在 Cascine 出版」／Eternal Beams 年月領句）。
+- **23143** 自掃 han() 4-gram：本批 9 張內 3 次以上 0 條；併 ml60／ml61 已上架 out 合掃，拆掉「首約分鐘」×3（Vondelpark、Ana Roxanne 改「收 N 首、長／合計約 N 分鐘」）、「的第一張」（Finds You Well 改「頭一張全新專輯」）、「般的合成」（Sun Glitters 改「幽靈似的」）；剩「的合成器」「電子音樂人」屬樂器／身分通名。
+- **23144** Beltran 內頁題詞依直接引語轉間接敘述規則改寫成「署名 Billy Lopez 的那段題詞寫道，他拚命尋找生命的顏色，帶回這一幅夢的拼貼」；出生地只寫密西根州蘭辛。Vondelpark 的 Rainsbury 原話同樣轉間接（「而不是 house 唱片」屬內容，保留）。
+- **23145** Eyes of the Moon「廠方稱它通往新世紀」寫成「廠牌把這股聲音形容為通往新世紀」（廠牌自述，非媒體）；Eternal Beams 的 Laraaji 只寫「新世紀音樂人」，Eno 不寫。媒體名、媒體名次全批 0 處。
