@@ -275,3 +275,5 @@
 | ml59 | 22361 | roots reggae 人聲慢盤第二波（Twinkle Brothers、The Gladiators、Johnny Clarke、Max Romeo、Ras Michael、Mighty Diamonds 慢盤） | ✅ 上線 13／落格 13（2026-10-24；策展 19（濕混音 credit 篩子，主場景點名六組池中同人判輕擋掉五組）、主線汰 1（無混音者署名）、研究汰 5（dancehall／DJ、自家工程＋合成器、美國重混、多場次拼貼、Pablo 小調偏冷）；主場景見底） |
 | ml60 | 22681 | 恍惚電子：chillwave／hypnagogic 電子盤、vaporwave／mallsoft 暖盤、lo-fi house／慢 deep house、暖 ambient techno 二線（條號跳過 22521–22680 留給並行的 md35／md36） | ✅ 上線 14／落格 12（場景見底，約剩 5–8） |
 | ml61 | 22761 | 恍惚電子：暖 IDM／braindance、日本／亞洲暖電子、warm dub techno、ambient pop 新世代 | ✅ 上線 20／落格 14（只收池中同人已落恍惚的藝人才穩） |
+| ml62 | 23001 | 恍惚非電子（2026-11-05，店主「頹靡跟恍惚還是太少」→ 放寬到電子以外，不收嘻哈／雷鬼／dub／電子）：暖 dream pop／shoegaze 新世代與二線（2010s–20s bedroom shoegaze、暖 dream pop 女聲、厚殘響慢歌；避開 ml2／ml44 已收）＋迷幻靈魂／電影感靈魂慢盤（厚弦樂墊 70s 慢板 soul、Philly／Chicago 以外二線）（條號跳過 22841–23000 留給並行的 ml64／ml65） | 進行中 |
+| ml63 | 23081 | 恍惚非電子：巴西／拉美厚編曲慢盤（Verocai 一路、Clube da Esquina 慢盤、MPB 弦樂厚墊）＋日本 AOR／city pop 慢板厚編曲＋迷幻軟搖滾／psych 慢盤（Khruangbin 一路、70s 厚殘響 soft psych）＋衣索比亞爵士／非洲慢板厚盤（非雷鬼） | 進行中 |
