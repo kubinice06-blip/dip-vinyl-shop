@@ -174,7 +174,7 @@ function artistTop(id) {
 }
 // 主路徑：search/album 找到同一張專輯 → album/{id}/tracks 取整張曲目的 rank（完整，不像 search/track 會漏曲）
 // 同名多版本（原版＋豪華版）最多取兩個版本，同曲取最高 rank。
-async function deezerFor(t) {
+export async function deezerFor(t) {
   const artists = [...new Set([t.artist, t.artistName].filter(Boolean))];
   const albums = [...new Set([t.album, t.collectionName].filter(Boolean))];
   const clean = b => String(b).replace(ALBUM_EDITION, ' ').replace(/\s+/g, ' ').trim();
@@ -326,7 +326,11 @@ export function choose(apple, deezerRows, stars, currentUrl) {
   // 主：Deezer rank
   if (deezerUsable(tracks, deezerRows)) {
     const idx = rankIndex(deezerRows);
-    const scored = tracks.map(t => ({ t, rank: rankOf(idx, t.name) })).filter(x => x.rank != null && x.rank > 0);
+    // 候選曲必須在 Deezer「這張專輯」的曲目裡；藝人熱門榜只拿來加權。否則 Apple collection 是套裝盒時
+    // 會選到盒內別張專輯的歌（Michael Jackson《Invincible》→〈Thriller〉、Bowie《Scary Monsters》→〈"Heroes"〉）。
+    const albumIdx = rankIndex(deezerRows.filter(r => !r.top));
+    const scored = tracks.filter(t => rankOf(albumIdx, t.name) != null)
+      .map(t => ({ t, rank: rankOf(idx, t.name) })).filter(x => x.rank != null && x.rank > 0);
     const pool = scored.filter(x => ok(x.t)).length ? scored.filter(x => ok(x.t)) : scored;
     pool.sort((a, b) => (b.rank - a.rank) || (a.t.disc - b.t.disc) || (a.t.n - b.t.n));
     if (pool[0]) {
@@ -334,8 +338,9 @@ export function choose(apple, deezerRows, stars, currentUrl) {
       return { track: pool[0].t, source: 'deezer-rank', rank: pool[0].rank, margin: second ? +(pool[0].rank / second).toFixed(3) : null, current };
     }
   }
-  // 備：Apple Music 熱門星號
-  if (stars?.length) {
+  // 備：Apple Music 熱門星號（套裝盒＝3 片以上、40 軌以上時不用：星號可能落在盒內別張專輯）
+  const boxLike = new Set(tracks.map(t => t.disc)).size >= 3 && tracks.length > 40;
+  if (stars?.length && !boxLike) {
     const starred = stars.filter(s => s.star);
     const hit = starred.map(s => tracks.find(t => t.disc === s.disc && t.n === s.n) || tracks.find(t => titleBare(t.name) === titleBare(s.title))).filter(Boolean);
     const okHit = hit.filter(ok);
@@ -347,6 +352,8 @@ export function choose(apple, deezerRows, stars, currentUrl) {
   }
   // 都沒有：保留原曲；原曲是短前奏就換第一首 ≥90 秒的
   if (current && current.ms >= 60000) return { track: current, source: 'keep-no-signal', current };
+  // 套裝盒又沒有熱度：第一首正曲多半屬於盒內別張專輯，原網址不動
+  if (boxLike) return { track: null, source: 'box-untouched', current };
   const firstReal = tracks.find(t => t.ms >= 90000 && !FLAG_VARIANT.test(t.name)) || tracks.find(t => t.ms >= 90000) || current || tracks[0];
   return { track: firstReal, source: current ? 'skip-intro' : 'first-real', current };
 }
@@ -361,14 +368,14 @@ async function cmdPick(outDir) {
     const a = apple.get(t.key);
     if (!a || !a.tracks?.length) { missingApple++; continue; }
     const r = choose(a, deezer.get(t.key)?.rows, amp.get(t.key)?.stars, t.previewUrl);
-    if (!r.track) continue;
     stats[r.source] = (stats[r.source] || 0) + 1;
+    if (!r.track) continue;
     const same = r.current && r.current.id === r.track.id;
     picks[t.key] = {
       artist: t.artist, album: t.album, store: a.store, collectionId: t.collectionId,
       trackId: r.track.id, trackName: r.track.name, trackNumber: r.track.n, disc: r.track.disc, url: r.track.url,
       source: r.source, rank: r.rank ?? null, margin: r.margin ?? null, appleTracks: a.tracks.length,
-      suspectBox: (() => { const dz = new Set((deezer.get(t.key)?.rows || []).filter(x => !x.top).map(x => titleCore(x.title))); return dz.size >= 4 && a.tracks.length > dz.size * 2.5 && new Set(a.tracks.map(x => x.disc)).size >= 3; })(),
+      suspectBox: (() => { const dz = new Set((deezer.get(t.key)?.rows || []).filter(x => !x.top).map(x => titleCore(x.title))); const discs = new Set(a.tracks.map(x => x.disc)).size; return discs >= 3 && (a.tracks.length > 40 || (dz.size >= 4 && a.tracks.length > dz.size * 2.5)); })(),
       oldTrack: r.current ? `${r.current.n}. ${r.current.name}` : '(舊網址已不在 lookup 結果)', changed: !same,
     };
     if (!same) changed.push(t.key);
@@ -387,13 +394,14 @@ async function cmdApply(outDir, dry) {
   const picks = readJson(path.join(outDir, 'picks.json'));
   const mapDoc = readJson(MAP_FILE);
   const now = new Date().toISOString();
-  const urlSwap = new Map(); // 舊 url → 新 url（給 manifest 用）
+  const perKey = new Map(); // key → {before, after}（給 manifest 用）
   let mapChanged = 0, refreshed = 0;
   for (const [key, p] of Object.entries(picks)) {
     const e = mapDoc.entries[key];
     if (!e || e.status !== 'matched') continue;
     const before = e.previewUrl;
-    if (before !== p.url) { urlSwap.set(before, p.url); if (p.changed) mapChanged++; else refreshed++; }
+    perKey.set(key, { before, after: p.url });
+    if (before !== p.url) { if (p.changed) mapChanged++; else refreshed++; }
     e.previewUrl = p.url;
     if (p.store && p.store !== String(e.storefront || '').toUpperCase()) e.storefront = p.store;
     e.previewTrackId = p.trackId;
@@ -401,17 +409,23 @@ async function cmdApply(outDir, dry) {
     e.previewPick = { source: p.source, ...(p.rank != null ? { rank: p.rank } : {}), at: now };
   }
   mapDoc.generatedAt = now;
-  // manifest：preview.url 等於舊網址的同步換新，published gate 才不會報「靜態地圖 previewUrl 與 manifest 不一致」
+  // manifest：逐卡比對，preview.url 等於該卡舊地圖網址的才換新（published gate 比對「靜態地圖 previewUrl 與 manifest」）
+  const src = fs.readFileSync(path.join(ROOT, 'dip-player.js'), 'utf8');
+  const norm = eval('(' + src.match(/function normalizePreviewText\(value\) \{[\s\S]*?\n  \}/)[0] + ')');
   const manifests = fs.readdirSync(ROOT).filter(f => /^onboarding-manifest-.*\.json$/.test(f));
   let manFiles = 0, manRows = 0;
   for (const f of manifests) {
     const file = path.join(ROOT, f);
-    let raw = fs.readFileSync(file, 'utf8'), hits = 0;
-    for (const m of new Set(raw.match(/https:\/\/audio-ssl\.itunes\.apple\.com\/[^"\s]+/g) || [])) {
-      const next = urlSwap.get(m);
-      if (next) { raw = raw.split(JSON.stringify(m)).join(JSON.stringify(next)); hits++; }
+    let raw = fs.readFileSync(file, 'utf8');
+    const doc = JSON.parse(raw);
+    const swaps = new Map();
+    for (const row of doc.albums || []) {
+      const k = `${norm(row.artist)}\u0000${norm(row.album)}`;
+      const sw = perKey.get(k);
+      if (sw && row.preview?.url === sw.before && sw.before !== sw.after) swaps.set(sw.before, sw.after);
     }
-    if (hits) { manFiles++; manRows += hits; if (!dry) fs.writeFileSync(file, raw); }
+    for (const [from, to] of swaps) raw = raw.split(JSON.stringify(from)).join(JSON.stringify(to));
+    if (swaps.size) { manFiles++; manRows += swaps.size; if (!dry) fs.writeFileSync(file, raw); }
   }
   if (!dry) fs.writeFileSync(MAP_FILE, JSON.stringify(mapDoc, null, 2) + '\n');
   console.log(JSON.stringify({ dry: !!dry, mapChanged, refreshedSameTrack: refreshed, manifestFiles: manFiles, manifestUrls: manRows }, null, 2));
