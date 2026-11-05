@@ -39,3 +39,14 @@
 - 23261｜One Leg One Eye：Daily 專評在 scene report，Nyahh 廠牌專文只點名未評；全來源未提鼓，只證實長音 drone 為主，不寫「確定無鼓」。5 軌 46 分 17 秒。
 - 23262｜Jun Konagaya《Organ》：原版 2012 Eskimo CD、8 軌約 41 分 36 秒；Bandcamp 的 15 軌 79 分 54 秒是 2023 Urashima 重發含 Magnetic Tape 88–90 附錄，寫作層以原版 8 首為準。moodGuess 輕度存疑（旋律性與民謠感高、速度與「糊」無來源）。
 - 23263｜Chris Abrahams《Thrown》：9 軌約 49 分 6 秒、2005-03-05。推翻策展層「風琴長音」：鋼琴（含琴內）與 DX-7 同樣重要、曲短而各異、樂評多用 shimmering／glistenings。moodGuess 中度存疑（y、z 偏高偏冷）。第幾張個人專輯兩源衝突，facts 不寫序數。
+
+## 主線研究後汰換（不佔條號；2026-11-05）
+- 照 md35／md37 先例：研究稿寫出**有鼓推進**、**明亮、甜、輕、閃爍**、**總長不足 30 分鐘**、**聲音只有單一來源**的汰。
+- **汰 9 張**（存 `dropped-cards.json`／`dropped-research.json`）：
+  - 正規專輯資格：Qasim Naqvi《FILM》（研究 d：總長 28:12，18 首配樂選 10 首；另有恆定節奏與明亮段落，廠牌實為自行發行）。
+  - 能量：The Bug《Tapping the Conversation》（研究 e：整張 Vadim dub-hop 鼓，x 估 2.6–2.8；池中 The Bug 兩張皆判躁）、True Widow《Circumambulation》（研究 b：鼓手推進、Bandcamp「darkest and poppiest」、樂評稱較快）、Lea Bertucci《Of Shadow and Substance》（研究 d：鈸滾動、急促弓法、恐慌式動盪，x 估 2.7–3.2）。
+  - 判輕／判暖：Chris Abrahams《Thrown》（研究 c：shimmering／twinkles、稀疏，非低頻牆）、Chris Watson《Weather Report》（研究 d：兩首是肯亞草原與蘇格蘭雨鹿，只〈Vatnajökull〉陰冷）、Mortiis《Født til å herske》（研究 a：唯一樂評稱 sweet and calming、angelic）、Jun Konagaya《Organ》（研究 c：Urashima 稱憂傷旋律、溫柔民謠，慢板與磁帶糊無來源；Daily 談的是 2023 重發）。
+  - 故事不足：Mortwight《This Body Is Not Mine》（研究 a：thin，只有廠牌主描述，另寫 gorgeous melodies）。
+- **研究層更正已改進卡單**：Mortiis《Keiser av en dimensjon ukjent》廠牌 → Cold Meat Industry（CMI.37），屬 Era I（策展的「era-II 起點」是錯的）。
+- 定案 **5 張**（不補位、不湊數）。留給評分驗收的邊距風險：Mortiis《Keiser》（合成戰鼓與明亮段落，z 估 −0.7）、Miles to Midnight（刷子鼓、旋律，z 可能略暖）、Far Drifters（Daily 寫 soft patter of drums、Budd 式鋼琴）、KRM & KMRU（人聲吟誦，z −0.6～−0.8）。
+- **來源結論**：Bandcamp Daily 的 Lists／Scene Report／Label Profile／AOTD 對頹靡場景產量極低（策展 26 → 上線 5）；dungeon synth 多旋律明亮、dark jazz 頭牌早已在池、hauntology 廠牌沒有專訪。
