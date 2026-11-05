@@ -1,0 +1,367 @@
+{
+ "group": "ml67b",
+ "factions": [
+  {
+   "id": "dream-pop-slowcore",
+   "zh": "暖 dream pop／shoegaze／slowcore 厚殘響",
+   "count": 8,
+   "why": "Bandcamp Daily 清單／AOTD／專文可考者"
+  },
+  {
+   "id": "psych-folk",
+   "zh": "psych folk／folkgaze 暖盤",
+   "count": 2,
+   "why": "Luluc、Napolin"
+  }
+ ],
+ "albums": [
+  {
+   "artist": "Acetone",
+   "album": "Acetone",
+   "year": 1997,
+   "label": "Vernon Yard",
+   "country": "us",
+   "faction": "dream-pop-slowcore",
+   "genres": [
+    "rock"
+   ],
+   "why": "BC Daily Acetone 專文＋加州 dream pop 清單；慢到蝸牛速的迷幻鄉村搖滾，吉他殘響包覆、低語人聲，暖",
+   "moodGuess": {
+    "x": 1.6,
+    "y": 1.1,
+    "z": 0.6,
+    "why": "無激烈鼓，蝸牛速、吉他殘響與低語人聲，暖"
+   },
+   "evidence": [
+    "https://daily.bandcamp.com/features/acetone-feature",
+    "https://coverartarchive.org/release-group/b08aa8e1-2a72-36dc-bacb-85235c1b2e93/front-250",
+    "https://musicbrainz.org/release-group/b08aa8e1-2a72-36dc-bacb-85235c1b2e93"
+   ],
+   "mbRgMbid": "b08aa8e1-2a72-36dc-bacb-85235c1b2e93",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "池中同人 york blvd.(1.7,0.6,0.4)、cindy(1.9,1.1,0.1) 已落格，同人錨點穩",
+   "storyUrls": [
+    "https://daily.bandcamp.com/features/acetone-feature",
+    "https://daily.bandcamp.com/lists/california-dream-pop-guide"
+   ],
+   "coverUrl": "",
+   "bandcampUrl": "https://acetone1992.bandcamp.com/album/1992-2001"
+  },
+  {
+   "artist": "Acetone",
+   "album": "If You Only Knew",
+   "year": 1996,
+   "label": "Vernon Yard",
+   "country": "us",
+   "faction": "dream-pop-slowcore",
+   "genres": [
+    "rock"
+   ],
+   "why": "BC Daily Acetone 專文＋加州 dream pop 清單；languid 迷幻鄉村，慢、暖、霧",
+   "moodGuess": {
+    "x": 1.7,
+    "y": 1.0,
+    "z": 0.5,
+    "why": "慢板、吉他殘響與風琴墊，人聲低語，暖"
+   },
+   "evidence": [
+    "https://daily.bandcamp.com/features/acetone-feature",
+    "https://coverartarchive.org/release-group/fdd0e679-f877-3fbc-b980-92e5915b226d/front-250",
+    "https://musicbrainz.org/release-group/fdd0e679-f877-3fbc-b980-92e5915b226d"
+   ],
+   "mbRgMbid": "fdd0e679-f877-3fbc-b980-92e5915b226d",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "同人錨點穩",
+   "storyUrls": [
+    "https://daily.bandcamp.com/features/acetone-feature",
+    "https://daily.bandcamp.com/lists/california-dream-pop-guide"
+   ],
+   "coverUrl": "",
+   "bandcampUrl": "https://acetone1992.bandcamp.com/album/1992-2001"
+  },
+  {
+   "artist": "Clinic Stars",
+   "album": "Only Hinting",
+   "year": 2024,
+   "label": "Kranky",
+   "country": "us",
+   "faction": "dream-pop-slowcore",
+   "genres": [
+    "rock"
+   ],
+   "why": "BC Daily Essential Releases 2024-09-20：slowcore 的速度與極簡鼓配 dream pop 質地",
+   "moodGuess": {
+    "x": 1.8,
+    "y": 0.9,
+    "z": 0.4,
+    "why": "慢、極簡鼓、霧狀吉他殘響；色溫待確認"
+   },
+   "evidence": [
+    "https://daily.bandcamp.com/essential-releases/essential-releases-september-20-2024",
+    "https://coverartarchive.org/release-group/f2a7ba11-9a05-4196-95c1-1d992a744403/front-250",
+    "https://musicbrainz.org/release-group/f2a7ba11-9a05-4196-95c1-1d992a744403"
+   ],
+   "mbRgMbid": "f2a7ba11-9a05-4196-95c1-1d992a744403",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "只在 Essential Releases 被點名，非 Album of the Day；色溫可能貼 0；Bandcamp 頁網址未確認",
+   "storyUrls": [
+    "https://daily.bandcamp.com/essential-releases/essential-releases-september-20-2024"
+   ],
+   "coverUrl": "",
+   "bandcampUrl": ""
+  },
+  {
+   "artist": "Luluc",
+   "album": "Sweet Thief",
+   "year": 2026,
+   "label": "",
+   "country": "au",
+   "faction": "psych-folk",
+   "genres": [
+    "folk"
+   ],
+   "why": "BC Daily Album of the Day 2026-07-21：「folkgaze」，hushed、pillowy and gauzy，厚層和聲與配器",
+   "moodGuess": {
+    "x": 2.0,
+    "y": 0.9,
+    "z": 0.7,
+    "why": "輕聲、和聲厚疊、柔霧質地、暖"
+   },
+   "evidence": [
+    "https://daily.bandcamp.com/album-of-the-day/luluc-sweet-thief-review",
+    "https://coverartarchive.org/release-group/8a10e8b3-6bbf-434f-869f-f0aa1b057ad2/front-250",
+    "https://musicbrainz.org/release-group/8a10e8b3-6bbf-434f-869f-f0aa1b057ad2"
+   ],
+   "mbRgMbid": "8a10e8b3-6bbf-434f-869f-f0aa1b057ad2",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "部分曲只剩尼龍弦吉他與人聲，可能判輕；22 軌短曲多，曲目總長待確認；genres 需確認 folk 為第一層大類",
+   "storyUrls": [
+    "https://daily.bandcamp.com/album-of-the-day/luluc-sweet-thief-review"
+   ],
+   "coverUrl": "",
+   "bandcampUrl": "https://luluc.bandcamp.com/album/sweet-thief"
+  },
+  {
+   "artist": "Julie Beth Napolin",
+   "album": "Only the Void Stands Between Us",
+   "year": 2024,
+   "label": "",
+   "country": "us",
+   "faction": "psych-folk",
+   "genres": [
+    "folk"
+   ],
+   "why": "BC Daily Album of the Day 2024-12-02：psych-folk 降神會，回音人聲、液態吉他，9 分半長曲",
+   "moodGuess": {
+    "x": 1.8,
+    "y": 0.9,
+    "z": 0.4,
+    "why": "慢、回音人聲、液態電吉他；旋律若不明會冷"
+   },
+   "evidence": [
+    "https://daily.bandcamp.com/album-of-the-day/julie-beth-napolin-only-the-void-stands-between-us-review",
+    "https://coverartarchive.org/release-group/b00ab7f7-3cfa-4bcc-80df-023597143cc9/front-250",
+    "https://musicbrainz.org/release-group/b00ab7f7-3cfa-4bcc-80df-023597143cc9"
+   ],
+   "mbRgMbid": "b00ab7f7-3cfa-4bcc-80df-023597143cc9",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "色溫風險：旋律不明靠氛圍撐可能判冷；是否 ≥28 分鐘待確認",
+   "storyUrls": [
+    "https://daily.bandcamp.com/album-of-the-day/julie-beth-napolin-only-the-void-stands-between-us-review"
+   ],
+   "coverUrl": "",
+   "bandcampUrl": "https://juliebethnapolin.bandcamp.com/album/only-the-void-stands-between-us"
+  },
+  {
+   "artist": "Living Hour",
+   "album": "Softer Faces",
+   "year": 2019,
+   "label": "Light Organ",
+   "country": "ca",
+   "faction": "dream-pop-slowcore",
+   "genres": [
+    "rock"
+   ],
+   "why": "BC Daily Album of the Day 2019-03-11：dream pop，吉他與鍵盤音色 sparkles and breathes with warmth",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 0.8,
+    "z": 0.5,
+    "why": "中慢板、雙吉他殘響與合唱，暖但偏亮"
+   },
+   "evidence": [
+    "https://daily.bandcamp.com/album-of-the-day/living-hour-softer-faces-review",
+    "https://coverartarchive.org/release-group/d85b3471-9472-46b5-babc-941e9b760e33/front-250",
+    "https://musicbrainz.org/release-group/d85b3471-9472-46b5-babc-941e9b760e33"
+   ],
+   "mbRgMbid": "d85b3471-9472-46b5-babc-941e9b760e33",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "質地偏 sparkle，可能判輕；Δ貼邊風險",
+   "storyUrls": [
+    "https://daily.bandcamp.com/album-of-the-day/living-hour-softer-faces-review"
+   ],
+   "coverUrl": "",
+   "bandcampUrl": "https://livinghourband.bandcamp.com/album/softer-faces"
+  },
+  {
+   "artist": "The New Year",
+   "album": "Snow",
+   "year": 2017,
+   "label": "Touch and Go",
+   "country": "us",
+   "faction": "dream-pop-slowcore",
+   "genres": [
+    "rock"
+   ],
+   "why": "BC Daily Album of the Day 2017-05-03：Bedhead 兄弟，slowcore 的後繼，霧狀吉他、層層編排",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 0.9,
+    "z": 0.1,
+    "why": "慢、霧吉他、多層編排；bereft 偏冷"
+   },
+   "evidence": [
+    "https://daily.bandcamp.com/album-of-the-day/the-new-year-snow-review",
+    "https://f4.bcbits.com/img/a0143462701_10.jpg",
+    "https://musicbrainz.org/release-group/696ef140-c042-41ea-a853-2b5c5097d467"
+   ],
+   "mbRgMbid": "696ef140-c042-41ea-a853-2b5c5097d467",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "色溫貼邊（評介用 bereft／anxious）；最可能判冷，請主線決定",
+   "storyUrls": [
+    "https://daily.bandcamp.com/album-of-the-day/the-new-year-snow-review"
+   ],
+   "coverUrl": "https://f4.bcbits.com/img/a0143462701_10.jpg",
+   "bandcampUrl": "https://thenewyear.bandcamp.com/album/snow"
+  },
+  {
+   "artist": "A.R. Kane",
+   "album": "Americana",
+   "year": 1992,
+   "label": "Luaka Bop",
+   "country": "gb",
+   "faction": "dream-pop-slowcore",
+   "genres": [
+    "rock"
+   ],
+   "why": "BC Daily 加州 dream pop 清單點名 A.R. Kane 為 dream pop 命名者；Americana 是其較暖、較慢的一張",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.0,
+    "z": 0.3,
+    "why": "慢拍、吉他殘響與人聲疊層；同人 69 偏冷"
+   },
+   "evidence": [
+    "https://daily.bandcamp.com/lists/california-dream-pop-guide",
+    "https://f4.bcbits.com/img/a1817136229_10.jpg",
+    "https://musicbrainz.org/release-group/4315ca21-904b-336d-bd08-fb581879f879"
+   ],
+   "mbRgMbid": "4315ca21-904b-336d-bd08-fb581879f879",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "story 僅清單內順帶提及；同人 69(2.3,1.4,-0.2)、i(2.9,0.6,0.4) 色溫不穩，貼邊",
+   "storyUrls": [
+    "https://daily.bandcamp.com/lists/california-dream-pop-guide"
+   ],
+   "coverUrl": "https://f4.bcbits.com/img/a1817136229_10.jpg",
+   "bandcampUrl": "https://a-r-kane.bandcamp.com/album/americana"
+  },
+  {
+   "artist": "Nabihah Iqbal",
+   "album": "Weighing of the Heart",
+   "year": 2017,
+   "label": "Ninja Tune",
+   "country": "gb",
+   "faction": "dream-pop-slowcore",
+   "genres": [
+    "rock"
+   ],
+   "why": "BC Daily Album of the Day 2017-12-21：meditative dream pop",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 0.8,
+    "z": 0.4,
+    "why": "中慢、合成器墊與吉他殘響；偏電子"
+   },
+   "evidence": [
+    "https://daily.bandcamp.com/album-of-the-day/nabihah-iqbal-weighing-of-the-heart-review",
+    "https://coverartarchive.org/release-group/8bf3c9f7-b69d-4473-b049-415ce8c37559/front-250",
+    "https://musicbrainz.org/release-group/8bf3c9f7-b69d-4473-b049-415ce8c37559"
+   ],
+   "mbRgMbid": "8bf3c9f7-b69d-4473-b049-415ce8c37559",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "有鼓機推進的段落，可能判輕；貼邊",
+   "storyUrls": [
+    "https://daily.bandcamp.com/album-of-the-day/nabihah-iqbal-weighing-of-the-heart-review"
+   ],
+   "coverUrl": "",
+   "bandcampUrl": "https://nabihahiqbal.bandcamp.com/album/weighing-of-the-heart"
+  },
+  {
+   "artist": "Knifeplay",
+   "album": "Animal Drowning",
+   "year": 2022,
+   "label": "",
+   "country": "us",
+   "faction": "dream-pop-slowcore",
+   "genres": [
+    "rock"
+   ],
+   "why": "BC Daily 稀有 shoegaze 清單：slowcore 與 Mazzy Star 搖擺，薩克斯＋回授",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 0.9,
+    "z": 0.3,
+    "why": "慢、回授與薩克斯、原聲吉他；色溫待確認"
+   },
+   "evidence": [
+    "https://daily.bandcamp.com/lists/rare-shoegaze-guide",
+    "https://coverartarchive.org/release-group/e5019178-49f6-4960-be8b-b3fcefeea7fe/front-250",
+    "https://musicbrainz.org/release-group/e5019178-49f6-4960-be8b-b3fcefeea7fe"
+   ],
+   "mbRgMbid": "e5019178-49f6-4960-be8b-b3fcefeea7fe",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "story 只是清單一段；色溫貼邊",
+   "storyUrls": [
+    "https://daily.bandcamp.com/lists/rare-shoegaze-guide"
+   ],
+   "coverUrl": "",
+   "bandcampUrl": "https://knifeplayforever.bandcamp.com/album/animal-drowning"
+  }
+ ],
+ "notes": [
+  "daily.bandcamp.com 的 best-rock／lists／tag 索引頁是前端渲染，curl 只拿到空殼；改用 6 次 WebSearch 找到單期網址再 curl 單期頁，故掃描面窄。",
+  "只交 10 張（目標 27）：多數 BC Daily 提到的 dream pop／shoegaze 已被 ml2／ml44／ml62 收（Beachy Head、Swallow Blow、Lilys、Opal、Marissa Nadler July、Atlas Sound Logos、Acetone Cindy／York Blvd.）；Slumberland 清單偏明亮 twee／punk；日本 acid folk 清單乾淨原聲判輕；Tanukichan、Helen《Linda's Head》、Peel Dream Magazine、Seablite、Hatchie 判輕或躁不提。Swallow《Blown》(2026) 是 collection 不收。",
+  "身分全走 MB 釘住（皆 Album 類型）；封面 8 張 CAA（307 轉址確認有圖）、2 張用 Bandcamp 圖（coverUrl）。Clinic Stars 的 Bandcamp 頁、Luluc／Napolin／Knifeplay 的廠牌未查，留空。",
+  "最穩的是 Acetone 兩張（同人已落格）；Luluc、Napolin 次之；The New Year、A.R. Kane、Living Hour、Nabihah Iqbal、Knifeplay 皆標貼邊，主線審稿可先汰。"
+ ]
+}

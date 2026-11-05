@@ -1,0 +1,504 @@
+{
+ "group": "ml67a",
+ "factions": [
+  {
+   "id": "soul-r&b",
+   "zh": "慢板靈魂／alt R&B 獨立盤",
+   "count": 7,
+   "why": "慢、暖、厚低頻或霧感的獨立 soul"
+  },
+  {
+   "id": "dreamy-electro-jazz",
+   "zh": "暖霧爵士",
+   "count": 6,
+   "why": "合成器墊／電子處理／迷幻和聲的暖爵士"
+  }
+ ],
+ "albums": [
+  {
+   "artist": "Eddie Chacon",
+   "album": "Sundown",
+   "year": 2023,
+   "label": "Stones Throw",
+   "country": "us",
+   "faction": "soul-r&b",
+   "genres": [
+    "soul"
+   ],
+   "why": "BC Daily Best Soul 2023-03；90s neo-soul 老將復出，John Carroll Kirby 製作的慢板厚墊，『unhurried』",
+   "moodGuess": {
+    "x": 1.8,
+    "y": 1.2,
+    "z": 1.2,
+    "why": "慢板，John Carroll Kirby 編曲，厚低音與合成墊，煙霧般暖"
+   },
+   "evidence": [
+    "https://daily.bandcamp.com/best-soul/the-best-soul-on-bandcamp-march-2023",
+    "https://eddiechaconofficial.bandcamp.com/album/sundown",
+    "https://musicbrainz.org/release-group/900a8202-d051-46fb-86f5-ba5aeca6ca18"
+   ],
+   "storyUrls": [
+    "https://daily.bandcamp.com/best-soul/the-best-soul-on-bandcamp-march-2023"
+   ],
+   "bandcampUrl": "https://eddiechaconofficial.bandcamp.com/album/sundown",
+   "coverUrl": "https://f4.bcbits.com/img/a3665886463_5.jpg",
+   "mbRgMbid": "900a8202-d051-46fb-86f5-ba5aeca6ca18",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Eddie Chacon",
+   "album": "Pleasure, Joy and Happiness",
+   "year": 2020,
+   "label": "Big Crown",
+   "country": "us",
+   "faction": "soul-r&b",
+   "genres": [
+    "soul"
+   ],
+   "why": "BC Daily Best Soul 2023-03 Sundown 專文提及其前作；同一路數的慢板暖盤",
+   "moodGuess": {
+    "x": 2.0,
+    "y": 1.0,
+    "z": 1.1,
+    "why": "慢速、模糊電子鼓與復古鍵盤，Chacon 低語式暖嗓"
+   },
+   "evidence": [
+    "https://daily.bandcamp.com/best-soul/the-best-soul-on-bandcamp-march-2023",
+    "https://eddiechaconofficial.bandcamp.com/album/pleasure-joy-and-happiness",
+    "https://musicbrainz.org/release-group/f1017cdf-e044-4bf8-a9d2-f25331bf6f03"
+   ],
+   "storyUrls": [
+    "https://daily.bandcamp.com/best-soul/the-best-soul-on-bandcamp-march-2023"
+   ],
+   "bandcampUrl": "https://eddiechaconofficial.bandcamp.com/album/pleasure-joy-and-happiness",
+   "coverUrl": "https://f4.bcbits.com/img/a1393043002_5.jpg",
+   "mbRgMbid": "f1017cdf-e044-4bf8-a9d2-f25331bf6f03",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "story 僅為 Sundown 專文內提及，故事強度較弱；封面 URL 另取 BC 頁"
+  },
+  {
+   "artist": "Lady Wray",
+   "album": "Piece of Me",
+   "year": 2022,
+   "label": "Big Crown",
+   "country": "us",
+   "faction": "soul-r&b",
+   "genres": [
+    "soul"
+   ],
+   "why": "BC Daily Best Soul 2022-01；Big Crown 復古慢搖靈魂，有機樂器厚低頻",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 0.9,
+    "z": 1.2,
+    "why": "Leon Michels 製作，70s 風有機樂器、厚鼓與暖喉嗓，中慢板"
+   },
+   "evidence": [
+    "https://daily.bandcamp.com/best-soul/the-best-soul-on-bandcamp-january-2022",
+    "https://ladywray.bandcamp.com/album/piece-of-me",
+    "https://musicbrainz.org/release-group/3425c215-aec9-4293-aabc-a58e68d8574d"
+   ],
+   "storyUrls": [
+    "https://daily.bandcamp.com/best-soul/the-best-soul-on-bandcamp-january-2022"
+   ],
+   "bandcampUrl": "https://ladywray.bandcamp.com/album/piece-of-me",
+   "coverUrl": "https://f4.bcbits.com/img/a0434438569_5.jpg",
+   "mbRgMbid": "3425c215-aec9-4293-aabc-a58e68d8574d",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "部分曲目偏中速，x 可能 2.7 附近"
+  },
+  {
+   "artist": "KAINA",
+   "album": "It Was a Home",
+   "year": 2022,
+   "label": "",
+   "country": "us",
+   "faction": "soul-r&b",
+   "genres": [
+    "soul"
+   ],
+   "why": "BC Daily Best Soul 2022-04：Chicago 夢幻靈魂，『as delicate as a sweet dream』",
+   "moodGuess": {
+    "x": 2.0,
+    "y": 0.9,
+    "z": 0.9,
+    "why": "慢速原聲＋鍵盤，夢幻柔聲，家的安心感"
+   },
+   "evidence": [
+    "https://daily.bandcamp.com/best-soul/the-best-soul-on-bandcamp-april-2022",
+    "https://kainamusic.bandcamp.com/album/it-was-a-home"
+   ],
+   "storyUrls": [
+    "https://daily.bandcamp.com/best-soul/the-best-soul-on-bandcamp-april-2022"
+   ],
+   "bandcampUrl": "https://kainamusic.bandcamp.com/album/it-was-a-home",
+   "coverUrl": "https://f4.bcbits.com/img/a0016934220_5.jpg",
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "artist:\"KAINA\" (藝人方向)",
+     "releasegroup:\"It Was a Home\" (作品方向)"
+    ],
+    "checkedAt": "2026-11-05",
+    "conclusion": "MB release-group 查無或查詢連線失敗，以 Bandcamp 專輯頁與 Bandcamp Daily 為人工身分"
+   },
+   "manualEvidenceUrls": [
+    "https://kainamusic.bandcamp.com/album/it-was-a-home",
+    "https://daily.bandcamp.com/best-soul/the-best-soul-on-bandcamp-april-2022"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "質地偏輕風險（原聲＋空氣感）；MB 查無，走人工身分"
+  },
+  {
+   "artist": "Moonchild",
+   "album": "Starfruit",
+   "year": 2022,
+   "label": "Tru Thoughts",
+   "country": "us",
+   "faction": "soul-r&b",
+   "genres": [
+    "soul"
+   ],
+   "why": "BC Daily Best Soul 2022-02：Moonchild『velvety soul』第五張",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 0.8,
+    "z": 1.0,
+    "why": "絲絨般 neo-soul，Rhodes、慢拍、客串人聲厚疊"
+   },
+   "evidence": [
+    "https://daily.bandcamp.com/best-soul/the-best-soul-on-bandcamp-february-2022",
+    "https://thisismoonchild.bandcamp.com/album/starfruit",
+    "https://musicbrainz.org/release-group/03926a4f-86d7-4149-a2b9-79c53ab341e4"
+   ],
+   "storyUrls": [
+    "https://daily.bandcamp.com/best-soul/the-best-soul-on-bandcamp-february-2022"
+   ],
+   "bandcampUrl": "https://thisismoonchild.bandcamp.com/album/starfruit",
+   "coverUrl": "https://f4.bcbits.com/img/a3873080235_5.jpg",
+   "mbRgMbid": "03926a4f-86d7-4149-a2b9-79c53ab341e4",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "14 軌 51 分，部分曲目較輕快、質地可能判輕"
+  },
+  {
+   "artist": "Cecily",
+   "album": "Songs of Love and Freedom",
+   "year": 2018,
+   "label": "self-released",
+   "country": "us",
+   "faction": "soul-r&b",
+   "genres": [
+    "soul"
+   ],
+   "why": "BC Daily Best Soul 2018-05：Deniece Williams／Minnie Riperton 譜系的溫暖女聲",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 0.9,
+    "z": 1.3,
+    "why": "70s 靈魂式 Rhodes 與弦樂，Minnie Riperton 式柔嗓，中慢板"
+   },
+   "evidence": [
+    "https://daily.bandcamp.com/best-soul/the-best-new-soul-on-bandcamp-may-2018",
+    "https://cecilymusic.bandcamp.com/album/songs-of-love-and-freedom"
+   ],
+   "storyUrls": [
+    "https://daily.bandcamp.com/best-soul/the-best-new-soul-on-bandcamp-may-2018"
+   ],
+   "bandcampUrl": "https://cecilymusic.bandcamp.com/album/songs-of-love-and-freedom",
+   "coverUrl": "https://f4.bcbits.com/img/a1141936377_5.jpg",
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "artist:\"Cecily\" (藝人方向)",
+     "releasegroup:\"Songs of Love and Freedom\" (作品方向)"
+    ],
+    "checkedAt": "2026-11-05",
+    "conclusion": "MB release-group 查無或查詢連線失敗，以 Bandcamp 專輯頁與 Bandcamp Daily 為人工身分"
+   },
+   "manualEvidenceUrls": [
+    "https://cecilymusic.bandcamp.com/album/songs-of-love-and-freedom",
+    "https://daily.bandcamp.com/best-soul/the-best-new-soul-on-bandcamp-may-2018"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "無池中錨點；質地可能判輕；MB 查無走人工身分"
+  },
+  {
+   "artist": "Jimetta Rose",
+   "album": "MettaSun",
+   "year": 2026,
+   "label": "",
+   "country": "us",
+   "faction": "soul-r&b",
+   "genres": [
+    "soul"
+   ],
+   "why": "BC Daily Best Jazz 2026-10：爵士、靈魂、福音與管弦融合",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.0,
+    "z": 1.0,
+    "why": "爵士／福音／管弦，Sun Ra 式靈性世界觀，慢而厚"
+   },
+   "evidence": [
+    "https://daily.bandcamp.com/best-jazz/the-best-jazz-on-bandcamp-october-2026",
+    "https://jimettarose.bandcamp.com/album/mettasun"
+   ],
+   "storyUrls": [
+    "https://daily.bandcamp.com/best-jazz/the-best-jazz-on-bandcamp-october-2026"
+   ],
+   "bandcampUrl": "https://jimettarose.bandcamp.com/album/mettasun",
+   "coverUrl": "https://f4.bcbits.com/img/a1803787050_5.jpg",
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "artist:\"Jimetta Rose\" (藝人方向)",
+     "releasegroup:\"MettaSun\" (作品方向)"
+    ],
+    "checkedAt": "2026-11-05",
+    "conclusion": "MB release-group 查無或查詢連線失敗，以 Bandcamp 專輯頁與 Bandcamp Daily 為人工身分"
+   },
+   "manualEvidenceUrls": [
+    "https://jimettarose.bandcamp.com/album/mettasun",
+    "https://daily.bandcamp.com/best-jazz/the-best-jazz-on-bandcamp-october-2026"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Bandcamp 標 hip hop；可能有說唱段；2026-10 新盤，MB 查無"
+  },
+  {
+   "artist": "Mark de Clive-Lowe",
+   "album": "Dreamweavers",
+   "year": 2020,
+   "label": "Soul Bank Music",
+   "country": "jp",
+   "faction": "dreamy-electro-jazz",
+   "genres": [
+    "jazz"
+   ],
+   "why": "BC Daily Best Jazz 2020-10：『rain patiently falling』，Rhodes＋合成器，旋律易入耳",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.0,
+    "z": 0.8,
+    "why": "Rhodes、合成器與鋼琴，雨絲般慢板，旋律清楚"
+   },
+   "evidence": [
+    "https://daily.bandcamp.com/best-jazz/the-best-jazz-on-bandcamp-october-2020",
+    "https://markdeclivelowe.bandcamp.com/album/dreamweavers"
+   ],
+   "storyUrls": [
+    "https://daily.bandcamp.com/best-jazz/the-best-jazz-on-bandcamp-october-2020"
+   ],
+   "bandcampUrl": "https://markdeclivelowe.bandcamp.com/album/dreamweavers",
+   "coverUrl": "https://f4.bcbits.com/img/a0482743528_5.jpg",
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "artist:\"Mark de Clive-Lowe\" (藝人方向)",
+     "releasegroup:\"Dreamweavers\" (作品方向)"
+    ],
+    "checkedAt": "2026-11-05",
+    "conclusion": "MB release-group 查無或查詢連線失敗，以 Bandcamp 專輯頁與 Bandcamp Daily 為人工身分"
+   },
+   "manualEvidenceUrls": [
+    "https://markdeclivelowe.bandcamp.com/album/dreamweavers",
+    "https://daily.bandcamp.com/best-jazz/the-best-jazz-on-bandcamp-october-2020"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "部分曲目有 groove；MB 連線失敗，走人工身分"
+  },
+  {
+   "artist": "Ishmael Ensemble",
+   "album": "Visions of Light",
+   "year": 2021,
+   "label": "",
+   "country": "gb",
+   "faction": "dreamy-electro-jazz",
+   "genres": [
+    "jazz"
+   ],
+   "why": "BC Daily Best Jazz 2021-08：post-jazz，迷幻電子、弦樂、靈魂",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1.0,
+    "z": 0.6,
+    "why": "Bristol post-jazz，木管、弦樂、迷幻電子，霧感與慢律動"
+   },
+   "evidence": [
+    "https://daily.bandcamp.com/best-jazz/the-best-jazz-on-bandcamp-august-2021",
+    "https://ishmaelensemble.bandcamp.com/album/visions-of-light",
+    "https://musicbrainz.org/release-group/df516a58-e2c0-4b51-9835-f1ddd416cb4b"
+   ],
+   "storyUrls": [
+    "https://daily.bandcamp.com/best-jazz/the-best-jazz-on-bandcamp-august-2021"
+   ],
+   "bandcampUrl": "https://ishmaelensemble.bandcamp.com/album/visions-of-light",
+   "coverUrl": "https://f4.bcbits.com/img/a1055844862_5.jpg",
+   "mbRgMbid": "df516a58-e2c0-4b51-9835-f1ddd416cb4b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "可能偏冷或偏輕；無池中錨點"
+  },
+  {
+   "artist": "Johanna Burnheart",
+   "album": "Burnheart",
+   "year": 2020,
+   "label": "",
+   "country": "gb",
+   "faction": "dreamy-electro-jazz",
+   "genres": [
+    "jazz"
+   ],
+   "why": "BC Daily Best Jazz 2020-10：『melodies thick as moonbeams… hazy』",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 1.2,
+    "z": 0.6,
+    "why": "小提琴＋電子＋Wurlitzer 的調式爵士，旋律如月光、朦朧"
+   },
+   "evidence": [
+    "https://daily.bandcamp.com/best-jazz/the-best-jazz-on-bandcamp-october-2020",
+    "https://johannaburnheart.bandcamp.com/album/burnheart",
+    "https://musicbrainz.org/release-group/8f94f3ca-933d-4a42-899e-213ccdd2b813"
+   ],
+   "storyUrls": [
+    "https://daily.bandcamp.com/best-jazz/the-best-jazz-on-bandcamp-october-2020"
+   ],
+   "bandcampUrl": "https://johannaburnheart.bandcamp.com/album/burnheart",
+   "coverUrl": "https://f4.bcbits.com/img/a1475243321_5.jpg",
+   "mbRgMbid": "8f94f3ca-933d-4a42-899e-213ccdd2b813",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "旋律是否夠清楚、z 可能貼邊"
+  },
+  {
+   "artist": "Josh Johnson",
+   "album": "Animative",
+   "year": 2026,
+   "label": "International Anthem",
+   "country": "us",
+   "faction": "dreamy-electro-jazz",
+   "genres": [
+    "jazz"
+   ],
+   "why": "BC Daily Best Jazz 2026-10（亦見 Album of the Day）；International Anthem 芝加哥",
+   "moodGuess": {
+    "x": 2.0,
+    "y": 1.0,
+    "z": 0.7,
+    "why": "薩克斯＋取樣＋循環與效果，有機又霧，慢板居多"
+   },
+   "evidence": [
+    "https://daily.bandcamp.com/best-jazz/the-best-jazz-on-bandcamp-october-2026",
+    "https://intlanthem.bandcamp.com/album/animative",
+    "https://musicbrainz.org/release-group/9e5273f2-fd16-4842-814b-a06fbbe92f3f"
+   ],
+   "storyUrls": [
+    "https://daily.bandcamp.com/best-jazz/the-best-jazz-on-bandcamp-october-2026"
+   ],
+   "bandcampUrl": "https://intlanthem.bandcamp.com/album/animative",
+   "coverUrl": "https://f4.bcbits.com/img/a1325830785_5.jpg",
+   "mbRgMbid": "9e5273f2-fd16-4842-814b-a06fbbe92f3f",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "池中同人 Openness Trio 判放鬆 (1.6,-0.7,0.6)，質地可能判輕；2026-10 新盤"
+  },
+  {
+   "artist": "Sitka Sun",
+   "album": "All the Way West",
+   "year": 2021,
+   "label": "",
+   "country": "us",
+   "faction": "dreamy-electro-jazz",
+   "genres": [
+    "jazz"
+   ],
+   "why": "BC Daily Best Jazz 2021-01：cosmic／spiritual jazz，『hazy harmonies』『warmth』",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 0.9,
+    "z": 1.0,
+    "why": "電吉他／pedal steel／鍵盤，迷幻靈性爵士，朦朧和聲"
+   },
+   "evidence": [
+    "https://daily.bandcamp.com/best-jazz/the-best-jazz-on-bandcamp-january-2021",
+    "https://sitkasun.bandcamp.com/album/all-the-way-west",
+    "https://musicbrainz.org/release-group/1c92085b-3c9f-4170-930f-a7c5d560ba84"
+   ],
+   "storyUrls": [
+    "https://daily.bandcamp.com/best-jazz/the-best-jazz-on-bandcamp-january-2021"
+   ],
+   "bandcampUrl": "https://sitkasun.bandcamp.com/album/all-the-way-west",
+   "coverUrl": "https://f4.bcbits.com/img/a3465037340_5.jpg",
+   "mbRgMbid": "1c92085b-3c9f-4170-930f-a7c5d560ba84",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "『groove-happy』可能偏快偏輕，x 貼 2.7；31.7 分 6 軌"
+  },
+  {
+   "artist": "Lara Rosseel",
+   "album": "Hert",
+   "year": 2022,
+   "label": "",
+   "country": "be",
+   "faction": "dreamy-electro-jazz",
+   "genres": [
+    "jazz"
+   ],
+   "why": "BC Daily Best Jazz 2022-03：『melodies warm and inviting… candlelight』",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 0.8,
+    "z": 0.8,
+    "why": "旋律溫暖如燭光，鋼琴與打擊樂，夜晚感"
+   },
+   "evidence": [
+    "https://daily.bandcamp.com/best-jazz/the-best-jazz-on-bandcamp-march-2022",
+    "https://rosseellara.bandcamp.com/album/hert",
+    "https://musicbrainz.org/release-group/fb11c85d-8bca-4074-a0c8-dfd3a45c6b34"
+   ],
+   "storyUrls": [
+    "https://daily.bandcamp.com/best-jazz/the-best-jazz-on-bandcamp-march-2022"
+   ],
+   "bandcampUrl": "https://rosseellara.bandcamp.com/album/hert",
+   "coverUrl": "https://f4.bcbits.com/img/a2012828001_5.jpg",
+   "mbRgMbid": "fb11c85d-8bca-4074-a0c8-dfd3a45c6b34",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "原聲傾向，質地可能判輕；Bandcamp 標 world"
+  }
+ ],
+ "notes": [
+  "掃 Bandcamp Daily Best Jazz／Best Soul 全部月期（2017–2026，151 期，1,492 張）＋ Album of the Day／Label Profile／Lists 索引；對池去重後 1,228 張 OK，再以評介文字與池中同人錨點篩，只剩約 13 張像恍惚。",
+  "Best Jazz 多為乾淨原聲小編制或自由即興（判輕／判冷），Best Soul 多為 EP、快拍或乾淨數位製作；池中已含 Nick Hakim、Kadhja Bonet、Nala Sinephro、Alabaster DePlume、Matthew Halsall、Cleo Sol 等主力。",
+  "未提：Nick Hakim《Small Things》27 分未達 28、Muriel Grossmann《Devotion》90 分長段、Chip Wickham（池中同人判放鬆）、Tom Skinner／Portico Quartet（池中同人判頹靡／平靜）、Frank McComb《Intimate Time》（疑合輯）。",
+  "未用 WebSearch；Bandcamp 日期為頁面發行日，Eddie Chacon《Pleasure, Joy and Happiness》story 僅來自 Sundown 專文內提及。",
+  "產量 13 張，低於目標 27；場景見底。"
+ ]
+}

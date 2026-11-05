@@ -1,5 +1,17 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-05｜dip-vinyl-shop｜情緒薄格恍惚 Bandcamp 線 ml66／ml67：24 張上線（落恍惚 10）＋藝人介紹 22 位
+
+- **店主 11-05**：「恍惚跟頹靡可以去 Bandcamp 爬梳」；不收嘻哈、雷鬼、dub；每張要有 Bandcamp Daily 專文／月度或年度榜（`CUR-DISPATCH-bandcamp.md`）。並行的 md37／md38 做頹靡。
+- **ml66**（`add-20261105-ml66`；Best Ambient 99 期＋Best Electronic 97 期與年度榜）：策展 47 → 主線汰 17 → 研究汰 14（breakbeat／techno／house 拍 9、陰冷 5）→ **上線 16、落恍惚 7（44%）**；出格判輕 6（Hinako Omori、Sofie Birch、Patricia Wolf、Nailah Hunter、maya ongaku、Midori Hirano）、判冷 3（Adam Wiltzie、Maria Somerville、Rachika Nayar，落頹靡）。
+- **ml67**（`add-20261105-ml67`；Best Jazz／Best Soul 151 期全掃＋Best Rock／Lists）：策展 23 → 主線汰 8 → 研究汰 7 → **上線 8、落恍惚 3（38%）**（Eddie Chacon 兩張、Acetone《If You Only Knew》）；KAINA、Cecily、Acetone 同名盤判輕，Napolin 判冷。
+- **Bandcamp 來源結論**：產率 13–15%，**兩場景都不建議再派**。暖而有旋律的 ambient 在評分尺下多判輕、厚的判冷；Best Electronic 九成舞池；暖爵士多乾淨原聲；`daily.bandcamp.com` 的 Best Rock／Lists 索引是前端渲染抓不到；dream pop 已被 ml2／ml44／ml62 收光。
+- **寫入（已即時生效）**：card_catalog 24、KV 24 鍵逐字回讀一致（stamp 20261105m66／m67）、試聽 24 ready（18 張換成最紅那首）、seed +24；prepare／published gate 皆 0 error；頂點 0。封面 CAA 22＋Bandcamp 2（Pedro Magina CAA 404、Cecily §1 人工身分）。審稿 ml66 未改字、ml67 改 3 處（Eddie Chacon 誤把詞曲獎 Ivor Novello 掛到演唱者、Johanna Burnheart「Guildhall 第一位」單源、Acetone 刪媒體名與年終榜）。
+- **藝人介紹**：ar-d-285（16 位，full 3／thin 13）、ar-d-286（6 位，full 3／thin 3）上線；審稿改 5 處（刪「據」轉述詞 2、無出處化名由來 1、Robotalco／Pedro Magina 補第二來源）。介紹 9,667 → 9,689。
+- **八格（合併 md37／md38 後）**：恍惚 1,671 → 1,681、頹靡 1,710 → 1,732（含 md37／md38）；錨點 104/104 同格。類型樹、抽卡封面、card-moods 重建。
+- **主要檔案**：`batch-progress/add-20261105-{ml66,ml67}/`、`batch-progress/mood-cells-20261022/{CUR-DISPATCH-bandcamp.md,dupchk.mjs,curation-ml66a,ml66b,ml67a,ml67b,master-*,cut-artist-intros-ml66.mjs}`、`SCENES.md`、`desc-tools/batches/{cards,research,hooks,input,output}/add-20261105-ml6[67]*`、`batch-progress/mood-axes/score-{ml66,ml67}/`、`batch-progress/artist-intro/{roster-ml66-ar-d-285,roster-ml67-ar-d-286,ar-d-rulings-ml66.md}`、`data/artist-intros/`、`seed_cards.json`、`data/mood/`、`genre-tree.json`、`card-subgenres.json`、`draw-covers/`。
+- **驗證**：`verify-album-onboarding --published` 兩批 0 error；`verify-wave-kv` 24／24 一致；`build-card-moods` 錨點 104/104；`qa-artist out` 兩批 0 處。
+
 ### 2026-11-05｜dip-vinyl-shop｜情緒薄格頹靡 Bandcamp 線 md37／md38：19 張上線（落頹靡 18）＋藝人介紹 17 位
 
 - **店主 11-05**：「恍惚跟頹靡可以去 Bandcamp 爬梳」。來源只用 Bandcamp Daily（daily.bandcamp.com 可 curl；discover 頁前端渲染抓不到），每張至少一篇 Daily 專文／榜單／廠牌專訪，「要有故事才收」。條號 md37 23161–23240、md38 23241–23320（避開並行 ml66／ml67）。
