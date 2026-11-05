@@ -2569,3 +2569,13 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - thin 升級 ar-u-029、030：80 位中 19 位升 full，61 位保留；順帶改正上線 thin 稿 13 位。
 - 2026 年事實主線開頁核實：Melingo、Yanka Rupkina、Calbo 過世；Sek Loso 判刑與假釋；熊仔《PRO》金曲最佳華語專輯；Magnolian 入《Death Stranding 2》。
 - 名冊 `roster-20260929.json` 裡另有 182 位歷輪試過、資料不足而未寫的藝人，不再重派。
+
+## 二十批接力：卡池缺介紹藝人補登（2026-11-05 起）
+
+- 卡池有 1,019 位藝人沒有介紹、不在任何名冊、也從沒排進批次（多是 10-13 §11 規則之前上架的卡，或其他線上架時漏補）。依卡數取前 800 位，補登補充名冊 `roster-fill-20261105.json`（addedBy fill-20261105），按主類型切 ar-d-501～520；批號避開 main 依序使用的 ar-d-2xx。腳本 `batch-progress/artist-intro/fill-20261105.mjs`。
+
+## ar-d-501（2026-11-05，當代古典演奏團體、演奏家與作曲家）
+
+- 40 位全寫：33 full、7 thin。
+- 題材照寫：Nancarrow 加入共產黨與國際縱隊、為躲避騷擾移居墨西哥；Zimmermann 長年憂鬱與眼疾、1970 年輕生；Chojnacka 退化性腦疾病；Wuorinen 跌倒引發硬腦膜下血腫過世；Aloys Kontarsky 中風；Helffer 投身抵抗運動。
+- 主線審稿 2 處：Miranda Cuckson「四度獲 Copland 補助」改「曾獲」（不寫次數）；Zimmermann「自盡」改「輕生」（用字規則）。

@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1721 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1726 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -1498,6 +1498,11 @@
 | ar-d-274 | Disorder | Under the Scalpel Blade | 早期單曲已因失真過重被 John Peel 批評 | 維基與 Allen 訪談都只說 Peel 把早期單曲比作 Triumph Bonneville 摩托車，未載「批評」。 | https://en.wikipedia.org/wiki/Disorder_(band) |
 | ar-d-280 | Tindersticks | Can Our Love... | Nottingham 是 Tindersticks 1992 年成軍的地方 | The List 專訪稱樂團成軍於 1991 年底，en 維基寫 1992 年，年份兩源不一致，建議簡介改寫成『在 Nottingham 成軍』不帶年份 | https://list.co.uk/news/30430/profile-stuart-staples-tindersticks |
 | ar-d-280 | Cowboy Junkies | The Trinity Session | 不疊錄也不剪輯 | en 維基專輯條目指〈Mining for Gold〉的無伴奏吟唱是日後在另一地點補錄，『全專輯一次錄成』不精確 | https://en.wikipedia.org/wiki/The_Trinity_Session |
+| ar-d-501 | Irvine Arditti | Cage: Freeman Etudes, Books One and Two | 作曲家寫到第 17 首就放棄，1980 年寫完第 17 首後擱筆；到了 1988 年 Arditti 已能飛快拉完前兩冊，Cage 才在 1990 年把 32 首寫齊 | Pritchett 的說法是 Cage 在中斷約九年後才重拾，1990 年初完成；『Arditti 促成』是解說作者的推論而非 Cage 的陳述，上線簡介寫成因果，建議降為並列敘述。另該文說 Cage 1980 年停筆於第 17 首，與簡介一致，但『證明了這些譜拉得出來』的措辭偏強。 | https://www.rosewhitemusic.com/cage/texts/freeman.html |
+| ar-d-501 | Benjamin Hudson & Garrick Ohlsson | Wuorinen: Works for Violin and Piano | Bridge 在 1988 年出版這張唱片 | NYPL 目錄寫 p1988（錄音版權年），AllMusic 與 Ohlsson 官網列發行日 1993-09-11；出版年疑為 1993，待查 Bridge 9008 實體 | https://garrickohlsson.com/discography/charles-wuorinen-works-for-violin-and-piano-1969-1983/ |
+| ar-d-501 | Bernhard Wambach | Stockhausen: Klavierstücke vol. II | Wambach 曾隨 Gulda 學琴 | neos 傳記只寫 1973–77 年參加 Gulda 的課程（courses），並非確定的私人師承 | https://neos-music.com/en/bernhard-wambach/ |
+| ar-d-501 | Charles Wuorinen | Wuorinen: Scherzo / First String Quartet / Viola Variations / Second Piano Quintet | 32 歲就拿下 1970 年普立茲音樂獎 | 各來源年齡寫 31 或 32 歲不一（Violin Channel 31，AP 轉載 31 或 32）；以生日 1938-06-09 推算授獎時約 31 歲，建議改成『1970 年拿下普立茲音樂獎』 | https://theviolinchannel.com/sad-news-american-composer-charles-wuorinen-died-passed-away-obituary-81 |
+| ar-d-502 | Jason Graves | Dead Space: Original Videogame Soundtrack | 隔年它在 BAFTA 遊戲獎拿下 Original Score 一項 | 2009 年 BAFTA 遊戲獎《Dead Space》得 Original Score 與 Use of Audio 兩項，不是一項；另 GANG 獎 Audio of the Year | https://en.wikipedia.org/wiki/Music_of_the_Dead_Space_series |
 | ar-d-929 | Erik Truffaz | Rollin' | 2000 年簽進這個廠牌 | 上線簡介沿用 Blue Note 官網簡介的 2000 年簽約說；但維基與已上線的《Out of a Dream》《The Dawn》《Bending New Corners》簡介顯示 1997–1999 年已在 Blue Note 發片，瑞士聯邦文化局新聞稿也記《Bending New Corners》為 1999 年 Blue Note 專輯，2000 年簽約的說法與之矛盾，建議改為不寫簽約年。 | https://musikzeitung.ch/en/?p=44583 |
 | ar-d-929 | Erik Truffaz | The Walk of the Giant Turtle | 前一張四重奏盤在法國賣到十萬張的金唱片 | 維基只寫《Bending New Corners》（1999）是法國 Silver Album；本張的前一張是《Mantis》（2001），並非《Bending New Corners》。需核對金唱片的專輯歸屬與認證層級。 | https://en.wikipedia.org/wiki/Erik_Truffaz |
 | ar-d-929 | Stanley Jordan | Magic Touch | 九軌裡有五軌只有一把電吉他 … 六軌只有他的電吉他 | 同一則簡介前後自相矛盾：五軌 vs 六軌；事實庫引 jazzdisco 為六軌純獨奏、其餘三軌各配一組節奏，應統一為六軌。 | https://en.wikipedia.org/wiki/Magic_Touch_(Stanley_Jordan_album) |
