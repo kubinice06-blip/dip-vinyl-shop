@@ -73,3 +73,4 @@
 
 ## 主線上線（條號 23151）
 - **23151**：上線 9 張：card_catalog 9／9、KV 9 鍵回讀逐字一致（stamp 20261105m65）、試聽 9 ready、seed +9、prepare／published gate 0 error（9 warning 皆 UPC）。封面 CAA 8＋Apple 1（John Beltran CAA 500）。寫入前對 origin/main seed 去重 0 撞。頂點 0（全批一般卡）。
+- 收尾：`build-seed-genres` 從 Last.fm 標籤把 Sun Glitters《Everything Could Be Fine》第 6 欄寫成 ["rock"]，主線改回 ["electronic"]（manifest／card_catalog 本就是 electronic）；`genre-l3-artist-map.json` 補 Sun Glitters → `electronic/downtempo/chillwave`；類型樹與抽卡封面重建。
