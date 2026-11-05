@@ -2683,7 +2683,7 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 
 ## ar-d-518（2026-11-05，soul、R&B、neo-soul、UK soul、華語與日本 R&B）
 
-- 39 位寫：23 full、16 thin；Keith Washington 沒有聲音或做法事實，不寫（skipped）。
+- 39 位寫：21 full、18 thin；Keith Washington 沒有聲音或做法事實，不寫（skipped）。
 - 2025 年事實主線核實：方大同 2025 年 2 月 21 日病逝、享年 41 歲，經紀公司稱抗病五年（TVBS、星島兩源）；不寫死因推測。出生地照 facts 寫夏威夷（特注誤寫「香港出生」，以 facts 為準）。
 - 題材照寫：Celeste 父親肺癌過世；Aaron Hall 自幼口吃；Kali Uchis 曾被趕出家門住在車裡。Intro 的 Kenny Greene 死於愛滋併發症只有維基家族單源，刪死因、只留「32 歲過世」；SiR 的物質濫用、Angela Winbush 的卵巢癌、Greentea Peng 的成癮都只有單源，不寫。
-- 主線審稿 33 處：第一句補國籍或身分——Celeste、Charlotte Day Wilson、David Porter、Gabriel Garzón-Montano、Gabriels、Gloria Scott、Jessie Ware、Kan Sano、Kali Uchis、Matt Martians、Raheem DeVaughn、SiR、Steve Spacek、Syleena Johnson、Aaron Hall、Andra Day、Angela Winbush（連帶刪細節壓回 250 字）；在世者只留一項成績——David Porter 刪孟菲斯名人堂、Marsha Ambrosius 刪 10 次葛萊美提名、Alex Isley 刪「兩項」、Andra Day 只留金球獎；Gloria Scott「重發並進了榜」改「重發後走紅」。
+- 主線審稿 32 處：第一句補國籍或身分——Celeste、Charlotte Day Wilson、David Porter、Gabriel Garzón-Montano、Gabriels、Gloria Scott、Jessie Ware、Kan Sano、Kali Uchis、Matt Martians、Raheem DeVaughn、SiR、Steve Spacek、Syleena Johnson、Aaron Hall、Andra Day、Angela Winbush（連帶刪細節壓回 250 字）；在世者只留一項成績——David Porter 刪孟菲斯名人堂、Marsha Ambrosius 刪 10 次葛萊美提名、Alex Isley 刪「兩項」、Andra Day 只留金球獎；Gloria Scott「重發並進了榜」改「重發後走紅」。
