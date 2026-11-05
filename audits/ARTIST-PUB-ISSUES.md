@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1063 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1065 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -1067,3 +1067,5 @@
 | ar-d-274 | Agoraphobic Nosebleed | Altered States of America | 第三張錄音室專輯 | 未查到第二源確認專輯序位；維基只列 Honky Reduction 1998、Frozen Corpse Stuffed with Dope 2002 之後。建議本機核對。 | https://en.wikipedia.org/wiki/Agoraphobic_Nosebleed |
 | ar-d-274 | Disorder | Under the Scalpel Blade | 樂團拒絕簽給 Riot City | 維基寫 Riot City 在收到 demo 後拒絕簽下樂團，方向相反。 | https://en.wikipedia.org/wiki/Disorder_(band) |
 | ar-d-274 | Disorder | Under the Scalpel Blade | 早期單曲已因失真過重被 John Peel 批評 | 維基與 Allen 訪談都只說 Peel 把早期單曲比作 Triumph Bonneville 摩托車，未載「批評」。 | https://en.wikipedia.org/wiki/Disorder_(band) |
+| ar-d-280 | Tindersticks | Can Our Love... | Nottingham 是 Tindersticks 1992 年成軍的地方 | The List 專訪稱樂團成軍於 1991 年底，en 維基寫 1992 年，年份兩源不一致，建議簡介改寫成『在 Nottingham 成軍』不帶年份 | https://list.co.uk/news/30430/profile-stuart-staples-tindersticks |
+| ar-d-280 | Cowboy Junkies | The Trinity Session | 不疊錄也不剪輯 | en 維基專輯條目指〈Mining for Gold〉的無伴奏吟唱是日後在另一地點補錄，『全專輯一次錄成』不精確 | https://en.wikipedia.org/wiki/The_Trinity_Session |

@@ -1,0 +1,350 @@
+{
+ "group": "ml65b",
+ "factions": [
+  {
+   "id": "asia-warm",
+   "zh": "日韓台暖電子 downtempo",
+   "count": 2,
+   "why": "日本暖電子池中多判輕（Calm、Yokota、Harakami、Takagi、Haruka Nakamura）或判冷（Ametsub、日本 dub）；韓國、台灣找不到 genres 首位 electronic 又靜重暖的正規專輯"
+  },
+  {
+   "id": "warm-dub-downtempo",
+   "zh": "暖器樂 trip-hop／dub downtempo（有池中錨點）",
+   "count": 9,
+   "why": "90s trip-hop 器樂二線池中多判冷（Earthling、Bowery Electric、Laika、Peace Orchestra、Sofa Surfers、Smith & Mighty）或躁輕（Coldcut、Mr. Scruff、Red Snapper、DJ Food）；改走池中同人全落恍惚的 dub／world downtempo 藝人未收盤"
+  }
+ ],
+ "albums": [
+  {
+   "artist": "Chari Chari",
+   "album": "In Time",
+   "year": 2002,
+   "label": "Toy's Factory",
+   "country": "jp",
+   "faction": "asia-warm",
+   "genres": [
+    "electronic"
+   ],
+   "why": "井上薰 Chari Chari 第二作，日本 Balearic／有機 downtempo 代表；以 club 格式承載民族 ambient／new age 質感，慢、暖、打擊與墊層包覆",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 0.9,
+    "z": 0.7,
+    "why": "中慢手鼓與鋪滿的合成器墊，民族旋律暖，包覆感"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/f07a9016-7aae-33dd-b235-5c1b244ab814",
+    "https://coverartarchive.org/release-group/f07a9016-7aae-33dd-b235-5c1b244ab814",
+    "https://www.discogs.com/master/222926",
+    "https://organicmusic.jp/en/collections/new-releases/products/kaoru-inoue-presents-chari-chari-in-time"
+   ],
+   "mbRgMbid": "f07a9016-7aae-33dd-b235-5c1b244ab814",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Kaoru Inoue presents Chari Chari",
+   "uncertain": "池中無同人錨點；Discogs 風格含 Deep House（四拍段 x 風險）；店家文案 ethnic ambient/new age on club music format，無直接低頻描述"
+  },
+  {
+   "artist": "Chari Chari",
+   "album": "We Hear the Last Decades Dreaming",
+   "year": 2020,
+   "label": "Seeds and Ground",
+   "country": "jp",
+   "faction": "asia-warm",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Chari Chari 睽違 18 年的新作，Discogs 標 Ambient／New Age／Deep House／Tribal；有機電子，慢、暖的民族打擊與長墊",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 0.8,
+    "z": 0.7,
+    "why": "稀疏部落打擊、長殘響墊，暖旋律；鼓少"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/d22b8ef9-51c5-40d7-9735-cf939a5ec089",
+    "https://coverartarchive.org/release-group/d22b8ef9-51c5-40d7-9735-cf939a5ec089",
+    "https://www.discogs.com/master/1814814",
+    "https://coolestsound.jp/Chari_Chari_We_hear_the_last_decades_dreaming/2020.07.22/013051/"
+   ],
+   "mbRgMbid": "d22b8ef9-51c5-40d7-9735-cf939a5ec089",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "y 風險：ambient／new age 段可能判輕（日本暖電子池中多判輕：Calm、Yokota、Harakami）；聲音描述僅 electronic music with an organic feel"
+  },
+  {
+   "artist": "Bjørn Torske",
+   "album": "Byen",
+   "year": 2018,
+   "label": "Smalltown Supersound",
+   "country": "no",
+   "faction": "warm-dub-downtempo",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Torske 第五張個人專輯，Treble 稱多取材 chillout／downbeat 而非 house／nu-disco；Exclaim! 稱 lazily swinging、dubby nods、his most idyllic",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 0.9,
+    "z": 0.7,
+    "why": "懶拍 dubby 低音、器樂、田園暖色"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/8ccaada9-18e3-486c-bf52-6e467cac57b2",
+    "https://coverartarchive.org/release-group/8ccaada9-18e3-486c-bf52-6e467cac57b2",
+    "https://www.discogs.com/master/1390986",
+    "https://exclaim.ca/music/article/bj_rn_torske-byen",
+    "https://en.wikipedia.org/wiki/Byen_(album)"
+   ],
+   "mbRgMbid": "8ccaada9-18e3-486c-bf52-6e467cac57b2",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "池中同人三張全落恍惚（x 2.6–2.8）；但 Discogs 只標 House，〈Gata〉〈Night Call〉偏 disco groove，x 可能 2.8"
+  },
+  {
+   "artist": "Kaya Project",
+   "album": "body.mind.soul",
+   "year": 2020,
+   "label": "self-released",
+   "country": "gb",
+   "faction": "warm-dub-downtempo",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Seb Taylor 的 Kaya Project 自發行 dub 盤；池中同人三張全落恍惚",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.0,
+    "z": 0.5,
+    "why": "慢 dub 低頻、回音、民族取樣，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/880c908a-96a2-45a7-a79f-87173cae65f8",
+    "https://coverartarchive.org/release-group/880c908a-96a2-45a7-a79f-87173cae65f8",
+    "https://www.discogs.com/master/1738418"
+   ],
+   "mbRgMbid": "880c908a-96a2-45a7-a79f-87173cae65f8",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "無樂評；聲音只到 Discogs 風格 Dub；池中同人 y 0.6–0.8、z 0.3–0.4 邊距薄"
+  },
+  {
+   "artist": "Kaya Project",
+   "album": "Any Silver Lining",
+   "year": 2021,
+   "label": "self-released",
+   "country": "gb",
+   "faction": "warm-dub-downtempo",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Kaya Project 2021 自發行，Discogs 標 Downtempo／Dub、Electronic＋World",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 0.9,
+    "z": 0.6,
+    "why": "慢 dub 低音、世界音樂旋律，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/0c3d32c1-1ed1-4d5e-ba9c-c20a118d631f",
+    "https://coverartarchive.org/release-group/0c3d32c1-1ed1-4d5e-ba9c-c20a118d631f",
+    "https://www.discogs.com/release/20778289"
+   ],
+   "mbRgMbid": "0c3d32c1-1ed1-4d5e-ba9c-c20a118d631f",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "無樂評；同人 y／z 邊距薄"
+  },
+  {
+   "artist": "Kaya Project",
+   "album": "Firedance",
+   "year": 2014,
+   "label": "Interchill Records",
+   "country": "gb",
+   "faction": "warm-dub-downtempo",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Kaya Project Interchill 時期第五張，Downtempo／Tribal",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 0.8,
+    "z": 0.5,
+    "why": "中慢部落打擊、dub 低頻、暖旋律"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/54c70efe-2f4b-4d3b-8f7c-86f84fee33ea",
+    "https://coverartarchive.org/release-group/54c70efe-2f4b-4d3b-8f7c-86f84fee33ea",
+    "https://www.discogs.com/master/691173"
+   ],
+   "mbRgMbid": "54c70efe-2f4b-4d3b-8f7c-86f84fee33ea",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "無樂評；Tribal 鼓可能推 x；《Walking Through》曾因 breaks 被汰"
+  },
+  {
+   "artist": "Kaya Project",
+   "album": "Souls Entwined",
+   "year": 2020,
+   "label": "self-released",
+   "country": "gb",
+   "faction": "warm-dub-downtempo",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Kaya Project 2020 自發行，Discogs 標 Ambient／Downtempo",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 0.8,
+    "z": 0.6,
+    "why": "慢拍、長墊與殘響，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/4d4193c6-5a86-4425-8b53-fc25e793475f",
+    "https://coverartarchive.org/release-group/4d4193c6-5a86-4425-8b53-fc25e793475f",
+    "https://www.discogs.com/master/1706700"
+   ],
+   "mbRgMbid": "4d4193c6-5a86-4425-8b53-fc25e793475f",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "無樂評；ambient 段 y 可能 <0.8；同人 Kaya 四張若主線只留兩張，此張優先汰"
+  },
+  {
+   "artist": "Loop Guru",
+   "album": "The Fountains of Paradise",
+   "year": 1999,
+   "label": "North South",
+   "country": "gb",
+   "faction": "warm-dub-downtempo",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Loop Guru 晚期 North South 盤，Tribal／Downtempo／Ambient；池中《Duniya》《Amrita》皆落恍惚",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 0.9,
+    "z": 0.6,
+    "why": "慢循環、民族人聲取樣、dub 低頻與殘響，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/ef2ec889-37f9-3b88-a6af-86144206c617",
+    "https://coverartarchive.org/release-group/ef2ec889-37f9-3b88-a6af-86144206c617",
+    "https://www.discogs.com/master/47620"
+   ],
+   "mbRgMbid": "ef2ec889-37f9-3b88-a6af-86144206c617",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "無樂評；同人 y 0.8 邊距薄；《The Third Chamber》曾被研究層標 ambient y 存疑"
+  },
+  {
+   "artist": "Loop Guru",
+   "album": "Loop Bites Dog",
+   "year": 1997,
+   "label": "North South",
+   "country": "gb",
+   "faction": "warm-dub-downtempo",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Loop Guru 1997 North South 盤，Tribal／Downtempo",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 0.9,
+    "z": 0.5,
+    "why": "中慢循環拍、民族取樣、低頻厚，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/64b5b86e-1109-3a00-b5c0-4eeda8a7faa2",
+    "https://coverartarchive.org/release-group/64b5b86e-1109-3a00-b5c0-4eeda8a7faa2",
+    "https://www.discogs.com/master/47619"
+   ],
+   "mbRgMbid": "64b5b86e-1109-3a00-b5c0-4eeda8a7faa2",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "無樂評；同人 x 2.6–2.7 邊距薄"
+  },
+  {
+   "artist": "Youth & Gaudi",
+   "album": "Astronaut Alchemists",
+   "year": 2018,
+   "label": "Liquid Sound Design",
+   "country": "gb",
+   "faction": "warm-dub-downtempo",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Killing Joke 貝斯手 Youth 與 Gaudi 合作，Discogs 標 Dub；池中 Gaudi 兩張皆落恍惚",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.2,
+    "z": 0.5,
+    "why": "慢 dub 拍、厚貝斯與長回音、迷幻暖色"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/c163629c-4023-4c86-9f7d-a267c749dfcd",
+    "https://coverartarchive.org/release-group/c163629c-4023-4c86-9f7d-a267c749dfcd",
+    "https://www.discogs.com/master/1454899"
+   ],
+   "mbRgMbid": "c163629c-4023-4c86-9f7d-a267c749dfcd",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "合作掛名，錨點只有 Gaudi（x 2.6–2.7）；無樂評；psy-dub 可能偏冷或偏推進"
+  },
+  {
+   "artist": "DJ Cheb i Sabbah",
+   "album": "Devotion",
+   "year": 2008,
+   "label": "Six Degrees Records",
+   "country": "us",
+   "faction": "warm-dub-downtempo",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Cheb i Sabbah Six Degrees 晚期盤，Discogs 標 Downtempo；池中《Shri Durga》落恍惚",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 0.8,
+    "z": 0.9,
+    "why": "慢拍、印度靈性人聲與 tabla、低頻墊，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/a85c425f-4a37-3e20-8daa-1afb8f974000",
+    "https://coverartarchive.org/release-group/a85c425f-4a37-3e20-8daa-1afb8f974000",
+    "https://www.discogs.com/master/371802"
+   ],
+   "mbRgMbid": "a85c425f-4a37-3e20-8daa-1afb8f974000",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "人聲為主非器樂；《Krishna Lila》在 ml15 因「重」存疑被汰，同型風險；MB 掛名 Cheb i Sabbah，池中藝人名 DJ Cheb i Sabbah"
+  }
+ ],
+ "notes": [
+  "只交 11 張（目標 25–28），照實交不湊數：本場景在 ml15／ml40／ml41／ml56／ml61 已挖過多輪，暖 trip-hop 器樂頭牌與二線剩餘盤多已提過被汰（Fila《Old Codes》《Power Clown》《Luck Be a Weirdo》、Tosca《Odeon》《Osam》《Going Going Going》、Quantic、Aim、Jon Kennedy、Purple Penguin、Heights of Abraham《Two Thousand and Six》、Ryukyu Underground、Gaudi《No Prisoners》《Earthbound》、Cheb i Sabbah《Krishna Lila》）。",
+  "池中同人三軸擋下不提：Haruka Nakamura、高木正勝、Rei Harakami、Susumu Yokota、CALM、Nobukazu Takemura（《Scope》判輕）、砂原良徳（判輕）；Ametsub、Sonia Calico（暴躁）、林強（多雀躍／平靜／頹靡）；DJ Cam（Substances 頹靡）、Smith & Mighty、Red Snapper、Coldcut、Mr. Scruff、DJ Food、Peace Orchestra、Sofa Surfers、Hidden Orchestra、Bowery Electric、Earthling、Laika、Mandalay（判冷或判躁）；Dzihan & Kamien、Blue States、Bent、Kid Loco《Kill Your Darlings》、Ultramarine、Lemon Jelly、Zero 7、Air、Groove Armada（判輕）；Alpha（y 0.4–0.6 貼邊）、Rockers Hi-Fi（z 0.3 貼邊）、Howie B（《Music for Babies》y0.6／z0.3 貼邊）。",
+  "考慮過沒提：Howie B《Down With the Dawn》（樂評稱憂鬱、dope-music，z 貼邊）、《Folk.》《Good Morning Scalene》（聲音把握不足）；Silent Poets（ml41 已判 z<0.5，For Nothing／Sun 無聲音證據）；Bjørn Torske《Trøbbel》（dub techno／deep house 四拍，ml61 先例判冷判躁）、Torske & Prins Thomas《Square One》（nu-disco，x 貼邊）；Rainstick Orchestra（Ninja Tune，屬 ml64）；Shpongle（池中一張沸騰）；Wax Tailor（z −0.1／0.1）；Bluetech（z 0.1）；Gaudi《In Between Times》（dubstep／breaks）、《Future Relic》（house／trance）、Namlook & Gaudi《Re:sonate》（FAX，屬 ml64）；Loop Guru《Moksha》（CAA 無圖）；Blockhead（派工判嘻哈）；Kenichiro Nishihara、DJ Soulscape、Neon Bunny、Daisuke Tanabe、Serph（嘻哈／四拍／乾淨判輕風險，聲音把握不足）。",
+  "身分：11 張全 MB 釘住（primary-type Album、無次類型）、CAA release-group 都有封面；去重指令 11 張全 0，別批 curation／pick／dropped 與 desc-tools 卡單皆未提過這 11 張。",
+  "九張 dub／world downtempo 只靠池中同人實測分數撐，多無樂評（只有 Byen 有 Exclaim!／Treble 可引）；這一型不是典型 trip-hop，主線可視恍惚缺口決定收幾張。Kaya 四張若要減量，汰序 Souls Entwined → Firedance。",
+  "WebSearch 用 4 次。"
+ ]
+}
