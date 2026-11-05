@@ -2532,7 +2532,7 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 
 ## ar-d-136（2026-11-05，ts5 新卡藝人：香港、韓國、法國饒舌，紐奧良 bounce 與 SoundCloud rap）
 
-- 31 位中寫 25 位：22 full、3 thin（Jazzyfact、pH-1 等）。不寫 6 位：Deepflow、Changmo、Dok2、Khundi Panda、Lunatic、Partners-N-Crime——寫作層照 thin 交稿，但都沒有一句寫聲音或做法，過不了 thin 門檻（比照 ar-d-133 Padres），主線撤下。
+- 31 位中寫 25 位：23 full、2 thin（Jazzyfact、pH-1）。不寫 6 位：Deepflow、Changmo、Dok2、Khundi Panda、Lunatic、Partners-N-Crime——寫作層照 thin 交稿，但都沒有一句寫聲音或做法，過不了 thin 門檻（比照 ar-d-133 Padres），主線撤下。
 - 2026 年事實主線核實：Calbo（Ärsenik）1 月 4 日過世（AFP 轉載、法國文化部、Pure People），死因未公開。
 - 題材照寫：Rohff 持械入獄與 Ünkut 店施暴判刑；Diam's 躁鬱症、企圖輕生、改信伊斯蘭與頭巾風波、反對國民陣線；La Rumeur 的 Hamé 遭 Sarkozy 控告誹謗警察、八年後無罪；Damso 歌詞被批性別歧視、足協取消國家隊歌曲；Soulja Slim 多次被捕與遭槍殺；Turk 的聯邦與州判刑；$uicideboy$ 的輕生之約與藥物、憂鬱題材。
 - 主線審稿 8 處：넉살、The Quiett、$uicideboy$ 的「最…之一」改「極」；Ärsenik、Diam's 壓回 250 字；Diam's「自殺未遂」改「企圖輕生」、$uicideboy$「一起自殺」改「一起輕生」（用字規則）；廿四味刪「香港第一個」頒獎禮（單源「第一」）。另：特注誤把持械入獄寫在 Kery James 名下，寫作層照 digest 寫進 Rohff，正確。
