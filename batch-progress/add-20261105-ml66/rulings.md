@@ -38,3 +38,11 @@
 - 23354　Kaitlyn Aurelia Smith《The Kid》：廠牌 RVNG Intl. 推翻，改 Western Vinyl（Pitchfork＋MB）；有節拍（stomp and bite），「無硬拍」存疑。
 - 23355　Carmen Villain《Only Love From Now On》：廠牌 Smalltown Supersound 核實；全器樂無低語人聲、意象偏冷，moodGuess 存疑。第幾張專輯兩源不一，不寫序數。
 - 23356　Kaela《Supraliminal》：補 Other Suns；有兩首明確有拍（Tender、Valley of the Moon 有真鼓），moodGuess 存疑；短曲多，乾淨判輕風險屬實。
+
+## 研究 e 組
+- 23361　Photay《Waking Hours》：卡單「廠牌待核」→ Mexican Summer（MEX263，MB 與 Bandcamp 一致）。moodGuess 存疑：打擊樂與律動全程在場（Daily twitchy percussion、BPM groovy beats、Latin disco 段），旋律與人聲清楚偏明亮流行，非靜重；落恍惚格風險高。
+- 23362　Sui Zhen《Losing, Linda》：廠牌推翻，Dream Damage → Cascine（MB 兩筆 release、Pitchfork、Bandcamp 皆為 Cascine）。moodGuess 存疑：鼓機與貝斯整張在場，Pitchfork 稱情緒在 ecstasy 與 unease 之間，暖度 z 不宜高。
+- 23363　Los Sara Fontan《Consuelo》：卡單 label 空白，補 Aloud Music／Gandula（MB）。moodGuess 嚴重存疑：整張以多節奏鼓與電子節拍推進，含 techno、drum and bass、glitch、Godspeed 式高潮（Backseat Mafia）；僅〈Creer Fuerte〉〈Salomé〉偏柔。建議主線汰換。
+- 23364　Midori Hirano《OTONOMA》：卡單 label 空白，補 Thrill Jockey（THRILL 643，官方頁與 MB）；Bandcamp 的 Erased Tapes 僅 publishing。聲音大致符合，但〈Illuminance〉以節奏脈衝開場、序列器織體多，非無鼓；乾淨清亮處可能判輕。
+- 23365　maya ongaku《Nothing Space Music》：廠牌 Guruguru Brain 已核。日期 MB 2026-08-07、Bandcamp 2026-09-15，年份同為 2026。有鼓（底鼓、TR-8S、木質打擊）但速度悠閒，Juno-6／Rhodes／原聲樂器並重，暖；預估大致成立。
+- 23366　sachi's mirror《Talking in a Different Way》：卡單 label 空白，補 Constellation Tatsu（MB／Bandcamp）。moodGuess 部分存疑：弦樂為主、非 beat tape，但 Daily 以 Radiohead 式緊繃小品與 drone、無線電雜訊描述，偏陰而非暖，弦樂乾淨處判輕風險仍在；鼓只在第 2、4 首與〈Roulette〉。
