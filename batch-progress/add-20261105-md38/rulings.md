@@ -24,3 +24,13 @@
 - 23251｜Far Drifters：Merchants of Air 原評論網域已轉址到無關博弈網站，棄用，不引用；鼓聲細節只有 Daily 一句「soft patter」，Last.fm 編制含 Drums Programming & FX（泛指樂團），標在 notes；本張 10 首約 57:47、無獨立廠牌（Bandcamp 自發行）。moodGuess 不推翻。
 - 23252｜Miles to Midnight：Daily 與 Bandcamp 兩處都寫有刷子鼓，總長 8 首約 41:57，合名 key 照卡單；moodGuess 不推翻（色溫可能略暖於 −0.8，仍在邊距內）。
 - 23253｜Circumambulation：有鼓、中慢板推進，Bandcamp 稱「darkest and poppiest」、The Sleeping Shaman 稱速度略快；moodGuess 存疑（x 2.5 偏高、z −0.8 可能偏冷），列為本組最邊緣的一張；NPR 好評僅 Daily 一源，facts 標為 Daily 說法。
+
+## 研究 d 組
+- 23271｜Chris Watson《Weather Report》：Touch 官方目錄頁日期 2003-04-02、MB 2003-06，年份同為 2003，facts 並列；3 首 54:02，正規專輯過。無鼓無節拍；Daily 廠牌專訪對聲音只一句「經典」，聲音證據取 Guardian／AllMusic／bigchill（touchradio 彙整頁）。moodGuess 存疑（z）：〈Ol-Olool-O〉獅吼與草原鳥獸、〈The Lapaich〉雨與鹿不一定冷，只有〈Vatnajökull〉明確陰冷。
+- 23272｜Qasim Naqvi《FILM》：總長 28:12（Bandcamp 自稱 29 分鐘）＜30 分，不合正規專輯門檻，建議汰換；卡單 label Western Vinyl 查無出處，Bandcamp／ICIYL 皆為自行發行（Erased Tapes Music 出版）；moodGuess 存疑：無鼓屬實，但 ICIYL 明講有恆定節奏與重複音型、〈Aligned〉歡快、〈Sputnik〉亮，80 年代配樂式旋律，x 可能偏高、z 不到 −1。
+- 23273｜Lea Bertucci《Of Shadow and Substance》：兩首 19:21＋21:17＝40:38，過；label 維持自行發行（Cibachrome Editions 無頁面明說掛本盤，不寫）；moodGuess 存疑（x）：後段鈸滾動、急促弓法、〈Vapours〉中段恐慌式動盪，x 2.5 可能偏低，實際約 2.7–3.2。
+
+## 研究 a 組
+- 23241｜Mortwright／Mortwight：Daily 內文拼 Mortwright 為錯字，artist 欄照 MB 與 Bandcamp 的 Mortwight；Daily 稱廠牌「重發」卡帶、原版為作者 Bandcamp 自發，卡片年份取 2021；聲音無獨立樂評，只有廠牌主 Massak 的轉述與 Bandcamp 標籤，status thin；鼓未證實；Massak 明講有「gorgeous melodies」與苦甜收尾，moodGuess z 存疑。
+- 23242｜Mortiis《Keiser…》：推翻策展層兩處：Era II 說法錯（本盤屬 Era I）；原版廠牌是 Cold Meat Industry（CMI.37）而非 Malicious Records，建議卡單改。總長 52:35。Sputnik 提到合成「戰鼓」與明亮刺耳段落，另有搜尋摘要稱有旁白（原頁 403，不入 facts），moodGuess 偏冷程度存疑。
+- 23243｜Mortiis《Født til å herske》：卡單 label 寫 Dark Dungeon Music 錯，原版為 Malicious Records（MA003CD，1994），DDM 1995 年才成立、做重發；年份取 1994；總長約 53 分。唯一樂評（Metal Archives 讀者評）說氣氛 less depressing、旋律甜美平靜、有人聲（18 分後才進），暖度比預估高，建議主線優先考慮汰換本張。
