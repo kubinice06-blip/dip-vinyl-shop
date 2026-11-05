@@ -1,5 +1,15 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-05｜dip-vinyl-shop｜prune-20261105：雀躍／放鬆移出候選名單 1,340 張（只產名單，未改卡池）
+
+- **店主 11-05**：「雀躍跟放鬆太多了，把一些很不重要的唱片移出卡池」；標準：不夠有名、沒有故事性、三軸沒有一個四星以上、過時的 70–80 流行靈魂樂。移出只是不再被抽到。
+- **範圍**：兩格 11,507 張扣頂點 238、店內庫存 188 → 11,081；判定範圍 3,260（A：三軸皆 ≤3 3,020 ∪ B：1970–89 soul 系經典 ≤3 641）。Last.fm listeners 經 worker `/album-rating` 補 3,182 張。
+- **判定**：10 片 Sonnet 子代理＋主線逐張審 1,357 筆初步候選、抽 90 筆保留；機械規則（聽眾 ≥40 萬改保留、15–40 萬 borderline、非 soul 的 B 改 borderline）＋個別改判 21 筆。
+- **結果**：候選 1,340（A 1,089／B 251），borderline 611、確定 729，solo 209。移出後預估：雀躍 6,287 → 5,888（只移確定）／5,526（連 borderline）；放鬆 5,220 → 4,890／4,641。
+- **待店主**：看 `candidates.json` 決定 borderline，之後另案實際移出（seed／card-moods／前台抽卡權重）。
+- **主要檔案**：`batch-progress/prune-20261105/`（`candidates.json`、`kept-near.json`、`REPORT.md`、`rulings.md`、`out/`、`shards/`、`listeners.json`、腳本）。
+- **驗證**：3,260 筆全有判定、無缺漏；未動 seed／Firestore／KV／card-moods。
+
 ### 2026-11-05｜dip-vinyl-shop｜Apple Music：商品視窗與選歌紀錄的按鈕改成「有直連才能按」
 
 店主在 `apple-test.html` 回報六種寫法（台灣區、日本區）**全部能直接開專輯**，連結格式本身沒問題。查到 `index.html` 還有兩處 Apple 按鈕（店內商品視窗 `renderMusicSection`、選歌紀錄 `historyMusicLinks`）沒帶 `data-apple-strict`，索引沒收的專輯會留著 `music.apple.com/search?term=` 搜尋連結——手機上 App 接走後丟掉搜尋詞，只剩首頁。兩處改成 strict（查不到就灰色不能按，與卡片詳情一致），加 `.music-platform-btn[disabled]` 樣式。
