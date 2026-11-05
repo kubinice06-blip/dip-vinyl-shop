@@ -1,0 +1,3128 @@
+[
+ {
+  "key": "tetrack",
+  "name": "Tetrack",
+  "tier": "D",
+  "cards": 2,
+  "mainGenre": "world",
+  "yearRange": [
+   1978,
+   1983
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Let's Get Started",
+    "year": 1978,
+    "genres": [
+     "world"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Trouble",
+    "year": 1983,
+    "genres": [
+     "world"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 20,
+   "researchRecords": 2,
+   "facts": 6,
+   "publishedDescs": 2,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "add-20261023-ml9-b",
+    "album": "Let's Get Started",
+    "facts": [
+     {
+      "f": "節奏組名單相當豪華：貝斯有 Robbie Shakespeare、Junior Dan 與 Michael Taylor，鼓手有 Leroy \"Horsemouth\" Wallace、Albert Malawi 與 Clevie Browne，吉他是 Dalton Brownie（主奏）與 Fazal Prendergast（節奏）。",
+      "src": "https://www.discogs.com/release/1672192-Tetrack-Lets-Get-Started"
+     },
+     {
+      "f": "Pablo 1970 年代創立 Rockers、Hot Stuff 與 Message 等廠牌；Pablo 以 melodica 聞名，他初次接觸這件樂器是在 Kingston College School 由一位女孩借給他。這張專輯 Discogs 登錄的廠牌是 Message。",
+      "src": "https://en.wikipedia.org/wiki/Augustus_Pablo"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "add-20261024-ml58-e",
+    "album": "Trouble",
+    "facts": [
+     {
+      "f": "Tetrack 是金斯敦 Mountain View 區的三人人聲組，70 年代初成軍，團名取自當地一個 sound system；Paul Mangaroo 為主唱，Carlton Hines 寫大部分歌，Dave Harvey 與 Hines 多半唱和聲。",
+      "src": "https://www.goingundergroundrecords.com/products/tetrack-trouble-vinyl-lp"
+     },
+     {
+      "f": "他們在 Lee Perry 的 Black Ark 留下早期錄音，並與 Augustus Pablo 合作，1978 年出了廣受好評的首張專輯《Let's Get Started》。",
+      "src": "https://www.goingundergroundrecords.com/products/tetrack-trouble-vinyl-lp"
+     },
+     {
+      "f": "Pablo 的 Rockers 廠牌資金不足、進度慢，1983 年團員轉往 Gussie Clarke 的 Music Works，成果就是《Trouble》。",
+      "src": "https://www.goingundergroundrecords.com/products/tetrack-trouble-vinyl-lp"
+     },
+     {
+      "f": "Gussie Clarke 1954 年生於金斯敦，70 年代靠 U-Roy、Big Youth、I-Roy 等 deejay 專輯成名，1988 年才成立自己的 Music Works 錄音室並轉向數位 dancehall。",
+      "src": "https://en.wikipedia.org/wiki/Gussie_Clarke"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Let's Get Started",
+    "manifest": "onboarding-manifest-add-20261023-ml9-20261023.json",
+    "desc": "三人和聲團的唱片，製作人親自彈起木琴。成員是 Carlton Hines、Dave Harvey 與 Paul Mangaroo。替他們掌舵的 Augustus Pablo 坐鎮金斯敦，以 Rockers Intl 製作了這張 1978 年的 roots 專輯，共十首。除了木琴，他還包辦 melodica、風琴和鋼琴。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/1672192-Tetrack-Lets-Get-Started",
+     "https://en.wikipedia.org/wiki/Augustus_Pablo",
+     "https://musicbrainz.org/release-group/8f6a3771-b4f4-3047-8bc3-e47432f71b11"
+    ]
+   },
+   {
+    "album": "Trouble",
+    "manifest": "onboarding-manifest-add-20261024-ml58-20261024.json",
+    "desc": "Pablo 的廠牌缺錢又慢，三人改投 Gussie Clarke。Tetrack 是三人和聲組，來自金斯敦 Mountain View 區；1978 年與 Augustus Pablo 錄下出道專輯。Pablo 經營的是 Rockers 廠牌；1983 年轉進 Gussie Clarke 的 Music Works 廠牌，交出本作。Sly Dunbar 打鼓，Robbie Shakespeare 彈貝斯。六首全是延長混音，長度在 6 分 53 秒與 8 分 20 秒之間。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/1730463",
+     "https://www.goingundergroundrecords.com/products/tetrack-trouble-vinyl-lp",
+     "https://en.wikipedia.org/wiki/Gussie_Clarke",
+     "https://www.forcedexposure.com/Catalog/RR.319LP.html",
+     "https://musicbrainz.org/release-group/627534b5-638b-44f8-8e28-4409e8dd8384"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "trinity roots",
+  "name": "Trinity Roots",
+  "tier": "D",
+  "cards": 2,
+  "mainGenre": "world",
+  "yearRange": [
+   2002,
+   2004
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "True",
+    "year": 2002,
+    "genres": [
+     "world",
+     "electronic"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Home, Land and Sea",
+    "year": 2004,
+    "genres": [
+     "world",
+     "electronic"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 20,
+   "researchRecords": 2,
+   "facts": 4,
+   "publishedDescs": 2,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "add-20261023-ml15-b",
+    "album": "True",
+    "facts": [
+     {
+      "f": "TrinityRoots 1998 年在威靈頓成軍：Warren Maxwell 與 Rio Hunuki-Hemopo 是剛從威靈頓音樂學院爵士科畢業的學生，再找來鼓手 Riki Gooch 組成三人團，第一場演出是同年八月的一場私人派對。",
+      "src": "https://www.audioculture.co.nz/people/trinityroots"
+     },
+     {
+      "f": "《True》是首張全長專輯，由樂團自己發行（自有廠牌 TrinityRoots），Discogs 版本註明錄於南霍克斯灣的 Oruawharo 與威靈頓的 The Surgery 錄音室，製作人署名 Warryn Maxwell、錄音工程 Brett Stanton。",
+      "src": "https://www.discogs.com/master/1347559-TrinityRoots-True"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "add-20261023-ml15-b",
+    "album": "Home, Land and Sea",
+    "facts": [
+     {
+      "f": "《Home, Land and Sea》是 TrinityRoots 的第二張全長專輯，2004 年 6 月由樂團自己發行（廠牌 TrinityRoots），在紐西蘭專輯榜最高第 6 名，達白金銷量。",
+      "src": "https://en.wikipedia.org/wiki/TrinityRoots"
+     },
+     {
+      "f": "樂團在 2005 年初的威靈頓市政廳一場為南亞海嘯賑災的完售演唱會後解散；該場演出在 2010 年以紀錄片素材合為現場專輯與 DVD《Music Is Choice》發行，同年樂團重組。",
+      "src": "https://en.wikipedia.org/wiki/TrinityRoots"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "True",
+    "manifest": "onboarding-manifest-add-20261023-ml15-20261023.json",
+    "desc": "幾乎沒打廣告，自己發行的首作照樣賣到白金。威靈頓音樂學院爵士科剛畢業的兩位學生，是 Trinity Roots 的起點，1998 年他們再找來鼓手 Riki Gooch。首張全長專輯《True》賣出約 1.5 萬張，錄音分在南霍克斯灣的 Oruawharo 與威靈頓的 The Surgery。三人編制的 roots reggae 留出大片空間，貝斯是低頻主角；〈Sense and Cents〉一首就長約 12 分半。",
+    "sourceUrls": [
+     "https://www.audioculture.co.nz/people/trinityroots",
+     "https://www.discogs.com/master/1347559-TrinityRoots-True",
+     "https://musicbrainz.org/release-group/8e92a02f-bd59-3980-b274-a26bc5ffba42",
+     "https://en.wikipedia.org/wiki/TrinityRoots"
+    ]
+   },
+   {
+    "album": "Home, Land and Sea",
+    "manifest": "onboarding-manifest-add-20261023-ml15-20261023.json",
+    "desc": "〈Egos〉重錄一次，拉長到 7 分 28 秒。彈吉他的 Maxwell、彈貝斯的 Hemopo 與打鼓的 Gooch 組成紐西蘭三人團 Trinity Roots，首作那版是 5 分 48 秒。第二張全長作品由 The Surgery 的 Lee Prebble 製作，2004 年 6 月自行推出，在國內榜單拿到第 6 名並達白金。〈The Dream〉近 9 分鐘，歌詞繞著家、土地與海。2005 年初一場海嘯賑災的完售演唱會後樂團解散，錄音室裡的最後成果就是這張。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/TrinityRoots",
+     "https://www.discogs.com/master/1535339-TrinityRoots-Home-Land-And-Sea",
+     "https://www.audioculture.co.nz/people/trinityroots",
+     "https://musicbrainz.org/release-group/cdc8c526-9537-3128-aa10-d1d083ae6fa9",
+     "https://en.wikipedia.org/wiki/Home,_Land_and_Sea"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "wackies rhythm force",
+  "name": "Wackies Rhythm Force",
+  "tier": "D",
+  "cards": 2,
+  "mainGenre": "world",
+  "yearRange": [
+   1980,
+   1982
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "African Roots Act 1",
+    "year": 1980,
+    "genres": [
+     "world"
+    ],
+    "composer": null
+   },
+   {
+    "album": "African Roots Act 2",
+    "year": 1982,
+    "genres": [
+     "world"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 19,
+   "researchRecords": 2,
+   "facts": 7,
+   "publishedDescs": 2,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "add-20261023-ml9-b",
+    "album": "African Roots Act 1",
+    "facts": [
+     {
+      "f": "《African Roots Act 1》是 Wackie's 廠牌 1980 年的黑膠版（目錄號 HA-LP-001），共 10 首：A 面〈Addis Ababa Dub〉〈Rock Ago Rock〉〈Undying Dub〉〈Freedom Dub〉〈Gem Rock Dub〉，B 面〈Wackies Rock Tune〉〈Mozambique Trial〉〈Always Dubbing〉〈Betrayer's Call (False Start)〉〈This Exit〉。",
+      "src": "https://www.discogs.com/release/4086059-Bullwackies-All-Stars-African-Roots-Act-1"
+     },
+     {
+      "f": "Discogs 備註指出這批錄音最早在 1977 年以 Five Arts 廠牌發行；1980 年的 Wackie's 版封底仍寫 Five Arts 版權（1979 年，應為 1977 年）。",
+      "src": "https://www.discogs.com/release/4086059-Bullwackies-All-Stars-African-Roots-Act-1"
+     },
+     {
+      "f": "Wikipedia 形容 Wackie's 的錄音有獨特的低傳真（lo-fi）質地；Wackies Rhythm Force 是該廠牌的班底樂團，Discogs 列出的成員包括 Tony Allen、Jerry Harris、Owen Stewart、Ras Menelik 等人。",
+      "src": "https://www.discogs.com/artist/237139-Wackies-Rhythm-Force"
+     },
+     {
+      "f": "Clive Hunt（1952 年生於牙買加 Linstead）是多樂器手與編曲者，1970 年代末移居紐約並與 Lloyd Barnes 的 Wackie's 合作，在該廠牌也發過 dub 專輯《Orthodox Dub》。",
+      "src": "https://en.wikipedia.org/wiki/Clive_Hunt"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "add-20261023-ml9-c",
+    "album": "African Roots Act 2",
+    "facts": [
+     {
+      "f": "Hardwax 的介紹寫這是十段完整做出來的 dub 版本，原曲由 Max Romeo、Barrington Spence、Junior Delahaye 等 Wackie's 相關歌手唱過；只有 Horace Andy 的〈Lonely Woman〉（出自《Dancehall Showcase》）還保有一點原曲痕跡。",
+      "src": "https://hardwax.com/37901/wackies/african-roots-act-2/"
+     },
+     {
+      "f": "Wackie's 由 Lloyd \"Bullwackie\" Barnes 於 1976 年在紐約布朗克斯成立；他出生在金斯敦 Trench Town，用在 Sam Ash 買來的設備起家，因為經費不足、靠自己想辦法的錄音技術形成了獨特的聲音。",
+      "src": "https://en.wikipedia.org/wiki/Wackie%27s"
+     },
+     {
+      "f": "德國的 Moritz von Oswald 與 Mark Ernestus（Basic Channel）長期以自家的 Wackies 系列重新發行這個廠牌的老錄音，包括 Wackie's 旗下樂隊的純 dub 專輯；MusicBrainz 收錄了 2002 年的德國再版。",
+      "src": "https://en.wikipedia.org/wiki/Wackie%27s"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "African Roots Act 1",
+    "manifest": "onboarding-manifest-add-20261023-ml9-20261023.json",
+    "desc": "布朗克斯這間錄音室，是美國最早做雷鬼的幾間之一。Lloyd \"Bullwackie\" Barnes 1976 年創立了 Wackie's，Wackies Rhythm Force 正是這裡的班底樂團。1980 年版收進十首 dub 與 roots，製作人之一 Clive Hunt 先前從牙買加移居紐約。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/4086059-Bullwackies-All-Stars-African-Roots-Act-1",
+     "https://en.wikipedia.org/wiki/Wackie%27s",
+     "https://www.discogs.com/artist/237139-Wackies-Rhythm-Force",
+     "https://gullbuy.com/buy/2003/4_1/wackiesamp.php",
+     "https://en.wikipedia.org/wiki/Clive_Hunt",
+     "https://musicbrainz.org/release-group/5906c468-4779-3291-9801-5c9f1ff4f58f",
+     "https://www.discogs.com/release/16116237-Bullwackies-All-Stars-African-Roots-Act-1"
+    ]
+   },
+   {
+    "album": "African Roots Act 2",
+    "manifest": "onboarding-manifest-add-20261023-ml9-20261023.json",
+    "desc": "標籤上那面黃色旗子，是一張張手工塗上的。出這張的 Wackies Rhythm Force 是紐約 Wackie's 的班底，1982 年把十首 dub 壓在原本要給另一張唱片的白標上。Junior Delahaye 一人彈鍵盤、打鼓、操作鼓機，最後也坐上混音台。貝斯交給 Leroy Sibbles，其中三首重做了 Heptones 當年在 Studio One 的 riddim。多年以後，Basic Channel 長期再發 Wackie's 的老錄音。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release/b63f4be6-453f-469f-8dd3-c8d18dec160b",
+     "https://www.discogs.com/release/3666424",
+     "https://hardwax.com/37901/wackies/african-roots-act-2/",
+     "https://en.wikipedia.org/wiki/Wackie%27s",
+     "https://musicbrainz.org/release-group/e9cfa7ad-cd2e-3519-a5b2-85c44d76dfe7"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "wayne jarrett",
+  "name": "Wayne Jarrett",
+  "tier": "D",
+  "cards": 2,
+  "mainGenre": "world",
+  "yearRange": [
+   1982,
+   1982
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Bubble Up",
+    "year": 1982,
+    "genres": [
+     "world"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Chip In",
+    "year": 1982,
+    "genres": [
+     "world"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 18,
+   "researchRecords": 2,
+   "facts": 7,
+   "publishedDescs": 2,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "add-20261022-ml1-b",
+    "album": "Bubble Up",
+    "facts": [
+     {
+      "f": "1982 年由紐約 Bronx 的 Wackie's 發行，原名《Showcase Vol. 1》（目錄號 WACK 191）；《Bubble Up》是後來英國版的改名，Discogs 登錄的英國版 Wackie's 191 發行於 1984 年，1990 年代以 WR 191 重發。",
+      "src": "https://www.discogs.com/master/185118"
+     },
+     {
+      "f": "Lloyd \"Bullwackie\" Barnes 生於 Kingston 的 Trench Town，1967 年移居紐約，1976 年創立 Wackie's，錄音室設在 Bronx 的 White Plains Road 4731 號，隔壁是 Wackie's House of Music 唱片行；他靠有限資金與自己的技術土法錄音，形成廠牌獨特的聲音，house band 叫 Wackie's Rhythm Force。",
+      "src": "https://en.wikipedia.org/wiki/Wackie%27s"
+     },
+     {
+      "f": "LargeUp 的 Wackie's 精選稿形容廠牌的聲音是 lo-fi 質地、詭異的和聲與落在拍子後面的 head-nod 律動，招牌是沉重滾動的貝斯與尖銳的風琴切分；dub 帶有 lo-fi 的殘響與回聲，彈簧殘響「絕對不是外掛」。",
+      "src": "https://www.largeup.com/2013/06/13/toppa-top-10-ten-essential-wackies-tunes/3/?amp=1"
+     },
+     {
+      "f": "Wayne Jarrett 1956 年生於 Kingston、在 Allman Town 長大，是兒時好友 Horace Andy 的同鄉；1973 年隨父母移居 Connecticut 的 Hartford，在紐約由 Lloyd Barnes 製作了第一支錄音〈African Woman〉。",
+      "src": "https://en.wikipedia.org/wiki/Wayne_Jarrett"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "add-20261023-ml38-e",
+    "album": "Chip In",
+    "facts": [
+     {
+      "f": "Roots Radics 1978 年由貝斯手 Errol \"Flabba\" Holt、吉他手 Eric \"Bingy Bunny\" Lamont 與鼓手 Lincoln \"Style\" Scott 組成，成為 1980 年代前半最主導牙買加錄音室的樂隊。",
+      "src": "https://en.wikipedia.org/wiki/Roots_Radics"
+     },
+     {
+      "f": "Junjo Lawes 生於 1940 年代末的 Kingston Waterhouse，自 1970 年代末起製作，旗下 Volcano 是知名的 sound system，作品由 Greensleeves 發行，固定使用 Roots Radics 當錄音室樂隊。",
+      "src": "https://en.wikipedia.org/wiki/Henry_%22Junjo%22_Lawes"
+     },
+     {
+      "f": "Wayne Jarrett 1956 年生於 Kingston，在 Allman Town 長大，是拉斯塔法里信徒，童年與歌手 Horace Andy 是朋友；1973 年隨父母搬到美國康乃狄克州 Hartford。",
+      "src": "https://en.wikipedia.org/wiki/Wayne_Jarrett"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Bubble Up",
+    "manifest": "onboarding-manifest-add-20261022-ml1-20261022.json",
+    "desc": "它的原名是《Showcase Vol. 1》。英國版才改叫 Bubble Up，歌手 Wayne Jarrett 從金斯敦搬到美國：1973 年隨父母移居康乃狄克州，第一支錄音由 Lloyd Barnes 經手，在紐約完成。紐約 Bronx 的 Wackie's 在 1982 年以原名發行，全盤只有六首，製作、編曲與混音都掛 Barnes。評論聽到〈Bubble Up〉疊在煙霧瀰漫、幾乎認不出的〈Rockfort Rock〉節奏上，帶著彈簧殘響與髒合成器。",
+    "sourceUrls": [
+     "https://www.discogs.com/master/185118",
+     "https://www.discogs.com/release/3666308",
+     "https://en.wikipedia.org/wiki/Wackie%27s",
+     "https://www.largeup.com/2013/06/13/toppa-top-10-ten-essential-wackies-tunes/3/?amp=1",
+     "https://en.wikipedia.org/wiki/Wayne_Jarrett",
+     "https://musicbrainz.org/release-group/bb983fe1-1f1a-356c-ab78-4858a61aea6a"
+    ]
+   },
+   {
+    "album": "Chip In",
+    "manifest": "onboarding-manifest-add-20261023-ml38-20261023.json",
+    "desc": "Roots Radics 打底，Scientist 混音。歌手 Wayne Jarrett 是 1956 年的京斯敦人，童年玩伴是 Horace Andy。1982 年，本作交由 Greensleeves 於英國出版，坐鎮製作的是 Junjo Lawes。這支 Radics 樂隊，主導了 1980 年代前半的牙買加錄音室。Scientist 原是 King Tubby 的助手，後來在 Channel One 用 16 軌混音台工作。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/986232",
+     "https://en.wikipedia.org/wiki/Roots_Radics",
+     "https://en.wikipedia.org/wiki/Scientist_(musician)",
+     "https://en.wikipedia.org/wiki/Henry_%22Junjo%22_Lawes",
+     "https://en.wikipedia.org/wiki/Wayne_Jarrett",
+     "https://musicbrainz.org/release-group/9bd1a143-50cc-38fb-aaa0-3d522678fe20"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "wayne wade",
+  "name": "Wayne Wade",
+  "tier": "D",
+  "cards": 2,
+  "mainGenre": "world",
+  "yearRange": [
+   1976,
+   1982
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Black Is Our Colour",
+    "year": 1976,
+    "genres": [
+     "world",
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Poor and Humble",
+    "year": 1982,
+    "genres": [
+     "world"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 26,
+   "researchRecords": 2,
+   "facts": 8,
+   "publishedDescs": 2,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "add-20261023-ml38-b",
+    "album": "Black Is Our Colour",
+    "facts": [
+     {
+      "f": "Discogs 把這張的 master 標為 1976 年，原版 LP 掛 Prophets 廠牌、牙買加出品，由 Gussie 出口、Record Hut 經銷；封面寫 Vivian Jackson 製作，標籤寫 V. Jackson 製作與編曲。",
+      "src": "https://www.discogs.com/release/4514693"
+     },
+     {
+      "f": "另有一版 1977 年的牙買加重壓版，掛 Vivian Jackson（Yabby You）廠牌，發行地址是京斯敦 Drumilie Avenue 18 號的 Prophet Record；MusicBrainz 的首發日期記為 1977 年。",
+      "src": "https://www.discogs.com/release/858370"
+     },
+     {
+      "f": "Wayne Wade 1959 年 3 月 19 日生於京斯敦，1972 到 1976 年就讀 Excelsior 高中；1970 年代中期起和 Yabby You 合作，1976 年的單曲〈Black Is Our Colour〉在牙買加立刻走紅。",
+      "src": "https://en.wikipedia.org/wiki/Wayne_Wade"
+     },
+     {
+      "f": "他的首張專輯就是這張《Black Is Our Colour》；之後他以翻唱 The Paragons 的〈Happy Go Lucky Girl〉與〈On The Beach〉再獲熱門，後續專輯有《Evil Woman》（1978）、《Dancing Time》與《Fire Fire》（1979）。",
+      "src": "https://en.wikipedia.org/wiki/Wayne_Wade"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "add-20261024-ml58-d",
+    "album": "Poor and Humble",
+    "facts": [
+     {
+      "f": "Wayne Wade 1959 年 3 月 19 日生於金斯敦，1972 至 1976 年就讀 Excelsior 高中，1970 年代中期與 Yabby You 合作，1976 年單曲〈Black Is Our Colour〉在牙買加大受歡迎並出了同名專輯。",
+      "src": "https://en.wikipedia.org/wiki/Wayne_Wade"
+     },
+     {
+      "f": "Linval Thompson 1954 年生於金斯敦，少年時在紐約皇后區待過，1970 年代在 Black Ark 與 Lee Perry 共事，1976 年出過首張專輯《Don't Cut Off Your Dreadlocks》，後來成為製作人，合作過 Dennis Brown、Wailing Souls、Barrington Levy 等人。",
+      "src": "https://en.wikipedia.org/wiki/Linval_Thompson"
+     },
+     {
+      "f": "維基稱 Linval Thompson 的製作成為 Scientist 部分 dub 專輯的底子；Scientist 在 1980 年代初替 Linval Thompson 與 Jah Thomas 做了相當多的混音工作。",
+      "src": "https://en.wikipedia.org/wiki/Scientist_(musician)"
+     },
+     {
+      "f": "Scientist 在 Channel One 取得 16 軌混音台，1980 年代初是 Junjo Lawes 偏愛的工程師，常替 Roots Radics 伴奏的專輯混音。",
+      "src": "https://en.wikipedia.org/wiki/Scientist_(musician)"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Black Is Our Colour",
+    "manifest": "onboarding-manifest-add-20261023-ml38-20261023.json",
+    "desc": "《Black Is Our Colour》是牙買加歌手 Wayne Wade 的首張專輯，1976 年由製作人 Yabby You 在自己的 Prophets 廠牌出版，製作與編曲都由他擔任。Wade 生於金斯敦，同名單曲在牙買加立即走紅。原版靠小型獨立管道在牙買加、紐約與倫敦流通，1977 年重壓過一次；後來再發廠重發 Yabby You 的作品，只收了 Wade 的〈Man Of The Living〉，整張專輯沒有再版紀錄。專輯共十首，另有〈Run Come Rally〉、〈Gang War〉、〈Poverty In Ghetto〉等。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/4514693",
+     "https://www.discogs.com/release/858370",
+     "https://www.discogs.com/master/549693",
+     "https://en.wikipedia.org/wiki/Wayne_Wade",
+     "https://sisterray.co.uk/products/the-yabby-you-sound-dubs-versions",
+     "https://en.wikipedia.org/wiki/Yabby_You",
+     "https://musicbrainz.org/release-group/7e335e52-231c-4df3-8f99-495908736d07"
+    ]
+   },
+   {
+    "album": "Poor and Humble",
+    "manifest": "onboarding-manifest-add-20261024-ml58-20261024.json",
+    "desc": "標題曲比專輯早一年，先以單曲面世。Wayne Wade 是 reggae 歌手，老家金斯敦，1959 年出生。他和製作人 Linval Thompson 在 1981 年錄了一批單曲，〈Poor and Humble〉就在其中。這批歌到 1982 年才集結成專輯，由美國 Jah Life 出版，Scientist 負責混音。",
+    "sourceUrls": [
+     "https://www.discogs.com/master/547170",
+     "https://www.discogs.com/release/1572851",
+     "https://en.wikipedia.org/wiki/Wayne_Wade",
+     "https://en.wikipedia.org/wiki/Linval_Thompson",
+     "https://en.wikipedia.org/wiki/Scientist_(musician)",
+     "https://musicbrainz.org/release-group/f5a29782-f11b-45aa-8789-d4f904362294"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "anthony johnson",
+  "name": "Anthony Johnson",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "world",
+  "yearRange": [
+   1983,
+   1983
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "I'm Ready",
+    "year": 1983,
+    "genres": [
+     "world"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 16,
+   "researchRecords": 1,
+   "facts": 4,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": false
+  },
+  "research": [
+   {
+    "batch": "add-20261024-ml58-e",
+    "album": "I'm Ready",
+    "facts": [
+     {
+      "f": "Anthony 'Gunshot' Johnson 1959 年 12 月 25 日生於金斯敦 Trenchtown，是牙買加 reggae 歌手。",
+      "src": "https://www.discogs.com/artist/70851"
+     },
+     {
+      "f": "Roots Radics 由貝斯手 Errol 'Flabba' Holt、吉他手 Eric 'Bingy Bunny' Lamont 與鼓手 Lincoln 'Style' Scott 共同創立，被認為主導 80 年代前半的牙買加錄音室與舞台聲音。",
+      "src": "https://en.wikipedia.org/wiki/Roots_Radics"
+     },
+     {
+      "f": "Roots Radics 1979 年起在 Channel One 替 Junjo Lawes 製作的 Barrington Levy 首批歌曲錄音，後來伴奏過 Gregory Isaacs 的《Night Nurse》（1982 年）與 Eek-A-Mouse 等人。",
+      "src": "https://en.wikipedia.org/wiki/Roots_Radics"
+     },
+     {
+      "f": "Channel One 位於金斯敦 Maxfield Avenue，1975 年起使用 16 軌錄音機，設有 API 混音台；80 年代 Sly 與 Robbie、Junjo Lawes 在此錄了許多製作。",
+      "src": "https://en.wikipedia.org/wiki/Channel_One_Studios"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "I'm Ready",
+    "manifest": "onboarding-manifest-add-20261024-ml58-20261024.json",
+    "desc": "《I'm Ready》是金斯敦歌手 Anthony Johnson 1983 年的專輯，原版由小廠 Rusty International 發行，持有的人不多。他前一年的單曲〈Gunshot〉在 Channel One 與 Roots Radics 錄成，一直是 sound system 愛放的歌。這張同樣在 Channel One 錄音，由 Roots Radics 伴奏，Bobby Ellis 吹小號，Peter Chemist 混音，路數偏 roots reggae。全盤只有六首，包括〈Dance Hall Style〉。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/1709575",
+     "https://www.discogs.com/artist/70851",
+     "https://en.wikipedia.org/wiki/Roots_Radics",
+     "https://en.wikipedia.org/wiki/Channel_One_Studios",
+     "https://musicbrainz.org/release-group/f7cc83c9-2e0e-3ca0-b87e-0d1e0d3d0b66"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "audley rollens",
+  "name": "Audley Rollens",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "world",
+  "yearRange": [
+   1982,
+   1982
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Showcase Prevail",
+    "year": 1982,
+    "genres": [
+     "world"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 19,
+   "researchRecords": 1,
+   "facts": 4,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "add-20261023-ml48-b",
+    "album": "Showcase Prevail",
+    "facts": [
+     {
+      "f": "《Showcase Prevail》是 Audley Rollens 1982 年在美國自家廠牌 Philadelphia Reggae Sounds 發行的首張個人專輯（編號 AW 71851），共八首，A 面有〈Won't Be The Same Always〉〈Be Wise〉〈Hypocrites〉〈Rasta Banner〉，B 面有〈Baby〉〈Runaway Girl〉〈Love You The Way You Are〉〈Goodie Goodie〉。",
+      "src": "https://www.discogs.com/release/3827686-Audley-Rollens-Showcase-Prevail"
+     },
+     {
+      "f": "Audley Rollens 在牙買加金斯敦長大，童年時與兄弟組成 Wisdom Brothers，表演腳踏車特技並在選秀節目中拿過全島冠軍；後來加入人聲團 Emotions，替製作人 Lloyd the Matador 錄過〈Hallelujah〉，單飛後的〈Repatriation〉也出自同一位製作人，七〇年代初移居美國，父母當時住在費城。",
+      "src": "https://www.reggae-vibes.com/articles/2019/11/repatriation-is-a-must-audley-rollen-interview/"
+     },
+     {
+      "f": "移居費城後他組了樂團 Rockstones 在東岸巡演，並創立自己的第一個廠牌 Philadelphia Reggae Sounds；樂團錄了〈Rasta Banner〉與〈Be Wise〉，團解散後他單飛，才到紐約補錄專輯其餘歌曲。",
+      "src": "https://www.reggae-vibes.com/articles/2019/11/repatriation-is-a-must-audley-rollen-interview/"
+     },
+     {
+      "f": "Wackie's 由 Lloyd \"Bullwackie\" Barnes 創辦，他生於牙買加 Trench Town，1967 年移居紐約，在 Bronx 的 White Plains Road 4731 號開錄音室，旁邊是 Wackie's House of Music 唱片行；他資金拮据，靠自己想辦法的錄音手法成就了辨識度極高的低傳真音色。",
+      "src": "https://en.wikipedia.org/wiki/Wackie%27s"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Showcase Prevail",
+    "manifest": "onboarding-manifest-add-20261023-ml48-20261023.json",
+    "desc": "《Showcase Prevail》是牙買加 reggae 歌手 Audley Rollens 1980 年代初以自家廠牌 Philadelphia Reggae Sounds 發行的專輯，只有美國原版、沒有再版紀錄，收藏圈想找的人遠多於手上有的人。Rollens 1960 年代與製作人 Keith Hudson 合作的〈Oh My Darling〉進過英國榜。這張在紐約的 Wackie's 錄音室錄成，Rollens 一個人製作、編曲、寫詞曲並主唱，也彈節奏吉他與木吉他。八首都是人聲歌，包括〈Be Wise〉與〈Rasta Banner〉。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/3827686-Audley-Rollens-Showcase-Prevail",
+     "https://musicbrainz.org/release-group/478db991-eea8-402b-bf0a-562ddab816e7",
+     "https://www.reggae-vibes.com/articles/2019/11/repatriation-is-a-must-audley-rollen-interview/",
+     "https://en.wikipedia.org/wiki/Wackie%27s",
+     "https://www.thetonearm.com/lloyd-barnes-wackies-studio-and-the-legacy-of-bronx-reggae/"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "blundetto",
+  "name": "Blundetto",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "world",
+  "yearRange": [
+   2015,
+   2015
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "World of Dub",
+    "year": 2015,
+    "genres": [
+     "world"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 8,
+   "researchRecords": 1,
+   "facts": 1,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": false,
+   "position": false
+  },
+  "research": [
+   {
+    "batch": "add-20261023-ml56-e",
+    "album": "World of Dub",
+    "facts": [
+     {
+      "f": "Blundetto 是法國製作人 Max Guiguet 的藝名，1977 年生於第戎，在 Radio Nova 工作約二十年、最後成為節目總監；他的 reggae、soul、funk 與電影配樂質地的專輯常邀不同客席樂手。",
+      "src": "https://www.heavenly-sweetness.com/artists/blundetto"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "World of Dub",
+    "manifest": "onboarding-manifest-add-20261023-ml56-20261023.json",
+    "desc": "限量 1000 張，裡面是九首 dub 版。在 Radio Nova 待了約二十年、做到節目總監的法國唱片製作人 Max Guiguet，藝名就叫 Blundetto。2015 年 11 月 27 日，Heavenly Sweetness 把它壓成黑膠。原版《World Of》同樣在 2015 年問世，是 funk、Kabyle 音樂、搖滾與 reggae 的拼貼。他和 Blackjoy 一起做 dub 處理，曲名也改成〈Work A Dub〉這類寫法。",
+    "sourceUrls": [
+     "https://www.heavenly-sweetness.com/artists/blundetto",
+     "https://www.discogs.com/release/7800926",
+     "https://www.discogs.com/release/10659119",
+     "https://musicbrainz.org/release-group/a6f5130c-dfd9-45f2-97b1-c9bce43d8488"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "carla morrison",
+  "name": "Carla Morrison",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "world",
+  "yearRange": [
+   2015,
+   2015
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Amor supremo",
+    "year": 2015,
+    "genres": [
+     "world",
+     "pop"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 12,
+   "researchRecords": 1,
+   "facts": 1,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "add-20261023-ml32-b",
+    "album": "Amor supremo",
+    "facts": [
+     {
+      "f": "Morrison 1986 年生於下加利福尼亞的 Tecate；2012 年首張專輯《Déjenme Llorar》在墨西哥拿到白金認證，並拿下第 13 屆拉丁 Grammy 最佳另類音樂專輯。",
+      "src": "https://en.wikipedia.org/wiki/Carla_Morrison"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Amor supremo",
+    "manifest": "onboarding-manifest-add-20261023-ml32-20261023.json",
+    "desc": "巡演近三年之後，她把原聲吉他擱到一旁。1986 年生於 Tecate 的 Carla Morrison 是墨西哥唱作歌手，首張《Déjenme Llorar》拿下拉丁 Grammy 最佳另類音樂專輯，那趟巡演跑的正是這張。收工後她躲進 Playas de Tijuana，改用合成器堆出氛圍，再加進管樂與電子點綴。《Amor supremo》2015 年 11 月 6 日以 Cosmica 廠牌推出，13 首全由她寫，平均每首近 5 分鐘。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/7700742-Carla-Morrison-Amor-Supremo",
+     "https://en.wikipedia.org/wiki/Carla_Morrison",
+     "https://zetatijuana.com/2016/05/carla-morrison-presume-su-amor-supremo/",
+     "https://en.wikipedia.org/wiki/Amor_Supremo",
+     "https://es.wikipedia.org/wiki/Amor_Supremo",
+     "https://musicbrainz.org/release-group/b17845c2-698c-4c4c-8d68-e0c26ef758cd"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "congo ashanti roy",
+  "name": "Congo Ashanti Roy",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "world",
+  "yearRange": [
+   1981,
+   1981
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Sign of the Star",
+    "year": 1981,
+    "genres": [
+     "world"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 12,
+   "researchRecords": 1,
+   "facts": 4,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "add-20261024-ml59-e",
+    "album": "Sign of the Star",
+    "facts": [
+     {
+      "f": "Congo Ashanti Roy 本名 Roydel Johnson，1943 年 4 月 12 日生於牙買加 Hanover 的 Kendal，16 歲搬到金斯敦，跟 Ernest Ranglin 學吉他，與 Lee \"Scratch\" Perry 是同窗。",
+      "src": "https://en.wikipedia.org/wiki/Roydel_Johnson"
+     },
+     {
+      "f": "他 1964 年加入美國和平工作團並在關達那摩灣工作約五年半，1966 年成為 Rastafari；1970 年代初在 Sons of Negus 與 The Righteous Brothers 彈吉他。",
+      "src": "https://en.wikipedia.org/wiki/Roydel_Johnson"
+     },
+     {
+      "f": "1977 年 Perry 邀他去 Black Ark 錄〈Row Fisherman Row〉，之後與 Cedric Myton 組成 The Congos，他的男高音搭 Myton 的假音；Congos 的《Heart of the Congos》（1977）被稱為 Perry 整個生涯最穩定出色的一張。",
+      "src": "https://en.wikipedia.org/wiki/The_Congos"
+     },
+     {
+      "f": "Watty Burnett 退團後 Johnson 跟著離開、展開個人生涯，用 Congo Ashanti Roy 之名先後與 Prince Far I、Adrian Sherwood 合作。",
+      "src": "https://en.wikipedia.org/wiki/Roydel_Johnson"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Sign of the Star",
+    "manifest": "onboarding-manifest-add-20261024-ml59-20261024.json",
+    "desc": "Congos 男高音單飛，Prince Far I 製作。牙買加的 Congo Ashanti Roy 早年跟 Ernest Ranglin 學吉他，1977 年與 Cedric Myton 組成人聲組 The Congos。離團之後，PRE 替他發行本作，時間是 1981 年；Channel One 是錄音的地方，Maxie McKenzie 混音。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Roydel_Johnson",
+     "https://en.wikipedia.org/wiki/The_Congos",
+     "https://www.discogs.com/release/1580550",
+     "https://killyourpetpuppy.co.uk/news/prince-far-i-pre-records-1980/",
+     "https://en.wikipedia.org/wiki/Prince_Far_I",
+     "https://musicbrainz.org/release-group/599ad169-7195-4fbc-bdf8-2976b693af69"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "cultural roots",
+  "name": "Cultural Roots",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "world",
+  "yearRange": [
+   1984,
+   1984
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Hell a Go Pop",
+    "year": 1984,
+    "genres": [
+     "world"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 8,
+   "researchRecords": 1,
+   "facts": 3,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "add-20261024-ml58-c",
+    "album": "Hell a Go Pop",
+    "facts": [
+     {
+      "f": "Junjo Lawes 來自金斯敦華特豪斯區，開辦 Volcano 廠牌與同名 sound system，固定使用 Roots Radics 當錄音室樂團，合作過 Barrington Levy、Yellowman、Don Carlos、Frankie Paul 等人。",
+      "src": "https://en.wikipedia.org/wiki/Junjo_Lawes"
+     },
+     {
+      "f": "Roots Radics 1979 年起替 Junjo 錄 Barrington Levy 的第一批單曲（掛名 Channel One Stars）；維基稱他們『主宰了 1980 年代前半的聲音』。",
+      "src": "https://en.wikipedia.org/wiki/Roots_Radics"
+     },
+     {
+      "f": "Channel One 1980 年代由 Sly and Robbie 與 Junjo Lawes 錄了許多製作；Joseph Hoo Kim 當年買了一台 API 混音台，錄音室設在西金斯敦麥斯菲爾德大道，1990 年代初關閉。",
+      "src": "https://en.wikipedia.org/wiki/Channel_One_Studios"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Hell a Go Pop",
+    "manifest": "onboarding-manifest-add-20261024-ml58-20261024.json",
+    "desc": "打底的是 Roots Radics，上面再加兩把管樂。Channel One 錄音室裡，Cultural Roots 的 roots reggae 從錄音一路做到混音，英國的 Greensleeves 在 1984 年將它出版。Junjo Lawes 坐鎮製作，也負責編曲；兩把管樂分別出自 Dean Fraser 與 Nambo Robinson。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/602308",
+     "https://en.wikipedia.org/wiki/Junjo_Lawes",
+     "https://en.wikipedia.org/wiki/Roots_Radics",
+     "https://en.wikipedia.org/wiki/Channel_One_Studios",
+     "https://en.wikipedia.org/wiki/Dancehall",
+     "https://www.discogs.com/master/278668",
+     "https://musicbrainz.org/release-group/13c67b39-05a8-328a-abf3-89f38e555fa7"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "david jahson",
+  "name": "David Jahson",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "world",
+  "yearRange": [
+   1978,
+   1978
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Natty Chase the Barber Away",
+    "year": 1978,
+    "genres": [
+     "world"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 9,
+   "researchRecords": 1,
+   "facts": 4,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": false,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "add-20261024-ml58-c",
+    "album": "Natty Chase the Barber Away",
+    "facts": [
+     {
+      "f": "1978 年 Top Ranking Sounds 發行的 12 吋 LP（美國版，無目錄號），共十二首：A 面〈Jah Rasta Fari〉〈Tafari Dub〉〈Stop Look & Listen〉〈Listen & Learn〉〈Jah Knows I Love You〉〈Love In Dub〉，B 面〈Jah Is Coming For His Earth〉〈Babylon Falling〉〈Clean Head Dread〉〈Shampoo Dub〉〈Never Get Jumpy〉〈Cool Running〉，其中三首曲名直接標 Dub。",
+      "src": "https://www.discogs.com/release/2546114"
+     },
+     {
+      "f": "David Jahson 本名 Everald Pickersgill，1954 年 11 月 4 日生於金斯敦；1970 年首度在 Coxsone Dodd 的 Studio One 錄音，但只做成 sound system 的 dub plate；1972 年為 Byron Lee 的 Dynamic 錄音室錄下〈Far I〉，唱片被誤印成 'David Janson' 與 'For I'，登上 JBC 單曲榜第 7 名。",
+      "src": "https://en.wikipedia.org/wiki/David_Jahson"
+     },
+     {
+      "f": "1975 年他錄下代表作〈Natty Chase the Barber〉，用的是 John Holt〈Ali Baba〉節奏的新版本，由包括好友 Sly Dunbar 在內的樂手在 Channel One 錄音室錄成，並在 King Tubby 的錄音室混音；單曲由 Tommy Cowan 的 Arab 廠牌發行，署名被誤印成 'David & Jahson'。",
+      "src": "https://en.wikipedia.org/wiki/David_Jahson"
+     },
+     {
+      "f": "專輯由 Lewis 兄弟的 Top Ranking 廠牌發行，Inner Circle 的成員為他伴奏；Jahson 曾以 The Black Spy 之名隨 Inner Circle 巡演《Everything Is Great》，負責打擊與和聲。",
+      "src": "https://en.wikipedia.org/wiki/David_Jahson"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Natty Chase the Barber Away",
+    "manifest": "onboarding-manifest-add-20261024-ml58-20261024.json",
+    "desc": "他唱趕走理髮師，別人回唱殺掉、埋掉理髮師。金斯敦是 David Jahson 的家鄉，他 1975 年錄下單曲〈Natty Chase the Barber〉。回應接連冒出來：Dr Alimantado 唱〈I Killed The Barber〉，Jah Stitch 接著唱〈Bury The Barber〉。1978 年，本作在 Top Ranking 問世，唱片上的註記寫明由 King Tubby 混音；其中三首曲名直接標上 Dub，例如〈Shampoo Dub〉。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/2546114",
+     "https://en.wikipedia.org/wiki/David_Jahson",
+     "https://en.wikipedia.org/wiki/Channel_One_Studios",
+     "https://musicbrainz.org/release-group/56c9cdff-fb00-4ce4-a4b2-7e34a5780650"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "delton screechie",
+  "name": "Delton Screechie",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "world",
+  "yearRange": [
+   1982,
+   1982
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Living In The Ghetto Showcase",
+    "year": 1982,
+    "genres": [
+     "world"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 16,
+   "researchRecords": 1,
+   "facts": 3,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "add-20261024-ml59-a",
+    "album": "Living In The Ghetto Showcase",
+    "facts": [
+     {
+      "f": "《Living In The Ghetto Showcase》1982 年由英國廠牌 Moa Anbessa 發行，目錄號 MALP 001，是該廠牌的 001 號；Discogs 標示風格為 Reggae 與 Dub。",
+      "src": "https://www.discogs.com/release/916334"
+     },
+     {
+      "f": "製作署名是 Moa Anbessa（廠牌），Cleave Johnson 掛共同製作人。",
+      "src": "https://www.discogs.com/release/916334"
+     },
+     {
+      "f": "Scientist（Hopeton Overton Brown）1960 年 4 月 18 日生於金斯敦，先當 King Tubby 的助手，1970 年代後期轉到 Channel One，Henry \"Junjo\" Lawes 是他的重要合作者，Roots Radics 是他最常合作的伴奏班底。",
+      "src": "https://en.wikipedia.org/wiki/Scientist_(musician)"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Living In The Ghetto Showcase",
+    "manifest": "onboarding-manifest-add-20261024-ml59-20261024.json",
+    "desc": "《Living In The Ghetto Showcase》是 reggae 歌手 Delton Screechie 1982 年在英國 dub 廠牌 Moa Anbessa 發行的專輯，也是這家廠的第一號唱片。原版之後沒有原樣再版，2009 年只重壓過標題曲的 7 吋單曲，2022 年法國 Papa Kojak 的 LP 是曲目不同的重編版。混音交給 Scientist 與 Sylvan Morris 兩人。全盤六首都是延長版，人聲唱完接 dub 段，節奏路數偏慢速的 rockers。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/916334",
+     "https://www.discogs.com/master/2746832",
+     "https://en.wikipedia.org/wiki/Scientist_(musician)",
+     "https://musicbrainz.org/release-group/716e03f6-dbfd-4f0c-a08b-fe9c9ffac313"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "devon russell",
+  "name": "Devon Russell",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "world",
+  "yearRange": [
+   1983,
+   1983
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Prison Life",
+    "year": 1983,
+    "genres": [
+     "world",
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 10,
+   "researchRecords": 1,
+   "facts": 4,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "add-20261023-ml48-e",
+    "album": "Prison Life",
+    "facts": [
+     {
+      "f": "Flabba Holt 與 Style Scott 都是 Roots Radics 的創團成員；該團 1978 年由 Holt、吉他手 Eric \"Bingy Bunny\" Lamont 與 Scott 組成，1980 年代初稱霸牙買加錄音室。",
+      "src": "https://en.wikipedia.org/wiki/Roots_Radics"
+     },
+     {
+      "f": "Roy Cousins 1949 年生於京斯敦，早年在郵局工作，1972 年創 Tamoki 廠牌、1974 年創 Wambesi，1977 年 6 月辭去郵局工作專心做音樂；他替 Prince Far I 製作了遇害前的最後一張專輯《Umkhonto We Sizwe》（1983），之後移居英國利物浦。",
+      "src": "https://en.wikipedia.org/wiki/Roy_Cousins"
+     },
+     {
+      "f": "Devon Russell 本名 Devon Barrant Russell，1948 年 8 月 6 日生，1960 年代與 Prince Lincoln Thompson、Cedric Myton 同屬 Tartans；1982 年的首張個人專輯《Roots Music》由 Coxsone Dodd 製作，《Prison Life》是他與 Roy Cousins 合作的第二張。",
+      "src": "https://en.wikipedia.org/wiki/Devon_Russell"
+     },
+     {
+      "f": "1983 年他受邀加入 The Congos 的歐洲巡演，之後定居英國。",
+      "src": "https://en.wikipedia.org/wiki/Devon_Russell"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Prison Life",
+    "manifest": "onboarding-manifest-add-20261023-ml48-20261023.json",
+    "desc": "口琴、長笛、合成器，全擠進一張 roots 盤。Tartans 是 Devon Russell 在 1960 年代待過的團，他唱 roots reggae。本作是他第二張個人專輯，由 Roy Cousins 製作，在 Aquarius 錄音。節奏組出自 Roots Radics 的創團班底：Flabba Holt 彈貝斯，Style Scott 打鼓；合成器交給 Michael Martin。發行年份是 1983 年，同年他隨 The Congos 赴歐巡演。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/2391994",
+     "https://en.wikipedia.org/wiki/Roots_Radics",
+     "https://en.wikipedia.org/wiki/Roy_Cousins",
+     "https://en.wikipedia.org/wiki/Devon_Russell",
+     "https://musicbrainz.org/release-group/051b64d5-3beb-456e-8967-fc0b5081879a"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "earl cunningham",
+  "name": "Earl Cunningham",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "world",
+  "yearRange": [
+   1983,
+   1983
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Earl Cunningham",
+    "year": 1983,
+    "genres": [
+     "world"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 11,
+   "researchRecords": 1,
+   "facts": 2,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": false,
+   "position": false
+  },
+  "research": [
+   {
+    "batch": "add-20261024-ml59-e",
+    "album": "Earl Cunningham",
+    "facts": [
+     {
+      "f": "Earl Cunningham 是牙買加雷鬼／dancehall 歌手，1959 年 10 月 22 日生於金斯敦東部。",
+      "src": "https://www.discogs.com/artist/444939"
+     },
+     {
+      "f": "Earl Morgan 是 Heptones 的創團三人之一（與 Leroy Sibbles、Barry Llewellyn），團體 1965 年在金斯敦成立，1966 年以〈Fattie Fattie〉在 Studio One 起步。",
+      "src": "https://en.wikipedia.org/wiki/The_Heptones"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Earl Cunningham",
+    "manifest": "onboarding-manifest-add-20261024-ml59-20261024.json",
+    "desc": "Heptones 的 Earl Morgan 替他製作。Earl Cunningham 唱的是雷鬼，1981 年和製作人 Jah Thomas 合作。Morgan 是該團創團三人之一。Vista Sounds 於 1983 年發行這張自題專輯，Roots Radics 伴奏；錄音在 Channel One，混音再加上 King Tubby's。",
+    "sourceUrls": [
+     "https://www.discogs.com/artist/444939",
+     "https://www.roots-archives.com/artist/591",
+     "https://www.discogs.com/release/3811948",
+     "https://en.wikipedia.org/wiki/The_Heptones",
+     "https://www.discogs.com/master/2522074",
+     "https://en.wikipedia.org/wiki/Channel_One_Studios",
+     "https://musicbrainz.org/release-group/f40b84b9-87de-4569-9bf4-ebedd1262d81"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "earl sixteen",
+  "name": "Earl Sixteen",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "world",
+  "yearRange": [
+   1981,
+   1981
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Reggae Sound",
+    "year": 1981,
+    "genres": [
+     "world"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 10,
+   "researchRecords": 1,
+   "facts": 4,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "add-20261024-ml58-b",
+    "album": "Reggae Sound",
+    "facts": [
+     {
+      "f": "1981 年英國 Dread At The Controls 廠牌發行的 LP，目錄號 DATCLP003，Mikey Dread 主理；Discogs 風格標 Roots Reggae，共十首，A 面五首、B 面五首。",
+      "src": "https://www.discogs.com/release/1843024"
+     },
+     {
+      "f": "Irie 雜誌：Earl 的聲音特色是裂開的假聲與慵懶放鬆的唱法，在紮實的 roots 節奏上最突出；他的〈Freedom〉常在 Mikey Dread 的深夜廣播節目播出。",
+      "src": "https://www.iriemag.com/magazine/2015/june-2015/earl-sixteen/"
+     },
+     {
+      "f": "Earl Sixteen 本名 Earl John Daley，1958 年 5 月 9 日生，受美國靈魂樂與 Dennis Brown 影響；1995 年起另在 Dreadzone 擔任主唱。",
+      "src": "https://en.wikipedia.org/wiki/Earl_Sixteen"
+     },
+     {
+      "f": "Mikey Dread 本名 Michael George Campbell（1954–2008），先在牙買加廣播公司（JBC）主持 Dread at the Controls 節目，King Tubby 鼓勵他開廠牌，首發單曲〈Love the Dread〉（1977）登上牙買加榜第 7；1980 年被 The Clash 邀去英國巡演並製作〈Bankrobber〉。",
+      "src": "https://en.wikipedia.org/wiki/Mikey_Dread"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Reggae Sound",
+    "manifest": "onboarding-manifest-add-20261024-ml58-20261024.json",
+    "desc": "帶子在牙買加錄好，又到倫敦重混一次。美國靈魂樂與 Dennis Brown 影響了 Earl Sixteen；他本名 Earl John Daley，1958 年出生，是一位雷鬼男歌手，唱起來是裂開的假聲，慵懶而放鬆。1981 年 Mikey Dread 的廠牌在英國替他出版，曲目全在 Channel One 錄成，六首拿到 King Tubby's、三首拿到 Aquarius 混音。帶子隨後轉往倫敦 Battery Studios 重混剪輯，母帶交由 CBS 處理。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/1843024",
+     "https://www.iriemag.com/magazine/2015/june-2015/earl-sixteen/",
+     "https://en.wikipedia.org/wiki/Earl_Sixteen",
+     "https://en.wikipedia.org/wiki/Mikey_Dread",
+     "https://en.wikipedia.org/wiki/Channel_One_Studios",
+     "https://musicbrainz.org/release-group/f577d154-a879-4250-9064-ef8db6de2751"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "flick wilson",
+  "name": "Flick Wilson",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "world",
+  "yearRange": [
+   1980,
+   1980
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "School Days",
+    "year": 1980,
+    "genres": [
+     "world"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 10,
+   "researchRecords": 1,
+   "facts": 2,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "add-20261024-ml58-d",
+    "album": "School Days",
+    "facts": [
+     {
+      "f": "Roots Radics 由貝斯手 Flabba Holt、吉他手 Bingy Bunny、鼓手 Style Scott 在 1978 年組成，1979 年替 Barrington Levy 的首批歌錄過節奏，維基稱它在 1980 年代前半主導了牙買加的聲音。",
+      "src": "https://en.wikipedia.org/wiki/Roots_Radics"
+     },
+     {
+      "f": "Scientist 離開 King Tubby's 後成為 Channel One 的首席工程師，Hoo Kim 兄弟給他一台 16 軌混音台，取代 Tubby's 的四軌設備；1980 年代初他是 Junjo Lawes 偏愛的工程師，替 Roots Radics 伴奏的多張專輯混音。",
+      "src": "https://en.wikipedia.org/wiki/Scientist_(musician)"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "School Days",
+    "manifest": "onboarding-manifest-add-20261024-ml58-20261024.json",
+    "desc": "兩個 Flick Wilson，這位本名 P. Allen。1980 年，美國 Jah Life 推出他的本作，拉斯塔勸世歌與情歌並陳。另一位同名者是 Ruddy Thomas 在 70 年代用的別名，身兼打擊樂手與工程師。錄音在 Channel One 進行，配唱和混音改在 King Tubby's，伴奏是 Roots Radics。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/737652",
+     "https://en.wikipedia.org/wiki/Roots_Radics",
+     "https://en.wikipedia.org/wiki/Scientist_(musician)",
+     "https://en.wikipedia.org/wiki/Channel_One_Studios",
+     "https://www.discogs.com/artist/601569",
+     "https://www.discogs.com/master/424609",
+     "https://musicbrainz.org/release-group/827dc8ce-4eda-4f4b-864d-45e103668409"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "freddie mckay",
+  "name": "Freddie McKay",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "world",
+  "yearRange": [
+   1983,
+   1983
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Tribal Inna Yard",
+    "year": 1983,
+    "genres": [
+     "world"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 10,
+   "researchRecords": 1,
+   "facts": 4,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "add-20261024-ml58-c",
+    "album": "Tribal Inna Yard",
+    "facts": [
+     {
+      "f": "這張專輯原版是 1983 年為製作人 Linval Thompson 錄的作品，由 Roots Radics 伴奏、Scientist 掛名工程師；卡單的 1985 年是英國 Move 廠牌（MVLP 6）授權自 Live and Learn Records 的 LP 版本。",
+      "src": "https://unitedreggae.com/articles/n1278/030913/freddie-mckay-tribal-inna-yard"
+     },
+     {
+      "f": "維基與 Discogs 的歌手介紹都把《Tribal Inna Yard》列為 1983 年作品；專輯在 2013 年有美國 Live & Learn Records（LL LP 036）與法國 Iroko Records（BB22）兩個黑膠重發，2014 年 Iroko 又出 CD（BBCD22）。",
+      "src": "https://www.discogs.com/master/532956"
+     },
+     {
+      "f": "Freddie McKay 1947 年生於聖凱薩琳教區，1967 年先替 Prince Buster 錄音，同年以〈Love Is A Treasure〉（Duke Reid 的 Treasure Isle）走紅，隨後在 Studio One 以〈Picture on the Wall〉等曲子錄下 1971 年首張專輯。",
+      "src": "https://en.wikipedia.org/wiki/Freddie_McKay"
+     },
+     {
+      "f": "他 1986 年因心臟病發過世，剛完成的最後一張專輯《I'm a Free Man》在 Joseph Hoo Kim 的 Channel One 錄成，伴奏有 Sly and Robbie、Bingy Bunny、Dean Fraser 與 Earl 'Chinna' Smith；他的兒子是以單弦吉他聞名的 Brushy One String。",
+      "src": "https://en.wikipedia.org/wiki/Freddie_McKay"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Tribal Inna Yard",
+    "manifest": "onboarding-manifest-add-20261024-ml58-20261024.json",
+    "desc": "成名十六年後，他的歌由 Roots Radics 伴奏。〈Love Is A Treasure〉替 Freddie McKay 打開名號，那是 Duke Reid 在 1967 年錄下的歌；這位牙買加歌手 1947 年生於聖凱薩琳教區。到了 1983 年，他替製作人 Linval Thompson 錄成本作，離那首成名曲正好十六年，Scientist 等人掛名工程師。製作清脆、細節很多，硬朗的器樂底下，McKay 的歌聲帶著一層朦朧。",
+    "sourceUrls": [
+     "https://unitedreggae.com/articles/n1278/030913/freddie-mckay-tribal-inna-yard",
+     "https://www.discogs.com/release/2815935",
+     "https://www.discogs.com/master/532956",
+     "https://en.wikipedia.org/wiki/Sleng_Teng",
+     "https://en.wikipedia.org/wiki/Scientist_(musician)",
+     "https://en.wikipedia.org/wiki/Freddie_McKay",
+     "https://musicbrainz.org/release-group/de7eff2b-1cef-4f68-8551-9f35aefd15b2"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "george faith",
+  "name": "George Faith",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "world",
+  "yearRange": [
+   1977,
+   1977
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "To Be a Lover",
+    "year": 1977,
+    "genres": [
+     "world"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 10,
+   "researchRecords": 1,
+   "facts": 2,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "add-20261022-ml1-a",
+    "album": "To Be a Lover",
+    "facts": [
+     {
+      "f": "George Faith 本名 Earl George Lawrence，1946 年生於金斯敦的 Rae Town，理髮師之子；Lee Perry 在他店面對面開唱片行，曾請他以 George Earl 之名翻唱 William Bell 的〈To Be a Lover〉。",
+      "src": "https://en.wikipedia.org/wiki/George_Faith"
+     },
+     {
+      "f": "Perry 與 Island 簽下發行合約後，第一張掛 George Faith 之名的唱片在 1977 年 7 月出現，〈To Be a Lover〉發行於 Island 的 Black Swan 廠牌；牙買加的 12 吋 disco 版混音長近十二分鐘。",
+      "src": "https://en.wikipedia.org/wiki/George_Faith"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "To Be a Lover",
+    "manifest": "onboarding-manifest-add-20261022-ml1-20261022.json",
+    "desc": "藝名是 Lee Perry 取的，說他信心十足。這位歌手本名 Earl George Lawrence，1946 年生於金斯敦。George Faith 的店面正對著 Perry 的唱片行，兩人在 Black Ark 花了約八個月，錄下八首翻唱，原曲是美國的靈魂與流行歌。那裡只有一張四軌混音台，加上 Echoplex 與 Space Echo；Perry 掛製作兼打擊樂，鼓交給 Sly Dunbar。唱片出版於 1970 年代後期，牙買加版另題為《Super Eight》。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/George_Faith",
+     "https://www.discogs.com/release/541957",
+     "https://en.wikipedia.org/wiki/Black_Ark",
+     "https://musicbrainz.org/release-group/2fb959ae-f7ae-387f-b68a-3a84c1a80a3a"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "horace andy & jah wobble",
+  "name": "Horace Andy & Jah Wobble",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "world",
+  "yearRange": [
+   2024,
+   2024
+  ],
+  "script": "latin",
+  "collab": true,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Timeless Roots",
+    "year": 2024,
+    "genres": [
+     "world"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 10,
+   "researchRecords": 1,
+   "facts": 4,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "add-20261023-ml45-d",
+    "album": "Timeless Roots",
+    "facts": [
+     {
+      "f": "鼓與打擊是 John T Wardle，二胡是 Charlie Wardle；廠牌文案說 Wobble 由他的兒子們與 Jon Klein 陪同錄製。",
+      "src": "https://cleorecs.com/blogs/news/jamaican-roots-reggae-master-and-massive-attack-collaborator-horace-andy-teams-up-with-former-pil-bassist-jah-wobble-for-a-brand-new-set-of-studio-recordings"
+     },
+     {
+      "f": "Discogs 風格標籤為 Roots Reggae 與 Dub；廠牌形容 Wobble 的製作把雷鬼、現代 dub 與世界音樂揉在一起。",
+      "src": "https://www.discogs.com/release/31929502"
+     },
+     {
+      "f": "Horace Andy 本名 Horace Keith Hinds，1951 年 2 月 19 日生於金斯敦，1970 年在 Studio One 由 Dodd 取了藝名，〈Skylarking〉登上牙買加榜首；1990 年起參與 Massive Attack 全部五張專輯。",
+      "src": "https://en.wikipedia.org/wiki/Horace_Andy"
+     },
+     {
+      "f": "Jah Wobble 本名 John Joseph Wardle，1958 年生於倫敦 Stepney，是 Public Image Ltd 的創團貝斯手，他的貝斯演奏深受 dub 影響，1979 年參與《Metal Box》。",
+      "src": "https://en.wikipedia.org/wiki/Jah_Wobble"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Timeless Roots",
+    "manifest": "onboarding-manifest-add-20261023-ml45-20261023.json",
+    "desc": "鼓與二胡，交給 Jah Wobble 的兒子們。牙買加歌手 Horace Andy 與 Public Image Ltd 創團貝斯手 Jah Wobble 聯名，2024 年由 Cleopatra 發行。Wobble 本名 Wardle，鼓手 John T Wardle 與二胡手 Charlie Wardle 都掛這個姓。Wobble 彈貝斯，與 Jon Klein 共同製作。曲目翻唱了〈Superstition〉等歌，評介形容深沉的貝斯讓 Andy 的聲音有空間飛升。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/31929502",
+     "https://cleorecs.com/blogs/news/jamaican-roots-reggae-master-and-massive-attack-collaborator-horace-andy-teams-up-with-former-pil-bassist-jah-wobble-for-a-brand-new-set-of-studio-recordings",
+     "https://stereogum.com/2282131/horace-andy-and-jah-wobble-share-reggae-covers-of-massive-attack-songs-a-horse-with-no-name-more/music",
+     "https://cn.juno.co.uk/labels/Cleopatra+Blues+US",
+     "https://en.wikipedia.org/wiki/Horace_Andy",
+     "https://en.wikipedia.org/wiki/Jah_Wobble",
+     "https://musicbrainz.org/release-group/8ff62bdd-8b4d-4144-95f6-f442c923d1f0"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "horace andy & mad professor",
+  "name": "Horace Andy & Mad Professor",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "world",
+  "yearRange": [
+   2004,
+   2004
+  ],
+  "script": "latin",
+  "collab": true,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "From the Roots",
+    "year": 2004,
+    "genres": [
+     "world"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 9,
+   "researchRecords": 1,
+   "facts": 2,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": false
+  },
+  "research": [
+   {
+    "batch": "add-20261023-ml41-c",
+    "album": "From the Roots",
+    "facts": [
+     {
+      "f": "Horace Andy 本名 Horace Keith Hinds，1951 年生於金斯敦，在 Studio One 得到藝名，1990 年起參與 Massive Attack 的所有五張錄音室專輯。",
+      "src": "https://en.wikipedia.org/wiki/Horace_Andy"
+     },
+     {
+      "f": "Mad Professor 1979 年在 Thornton Heath 客廳以四軌起家，1982 年遷到 Peckham 成立 Ariwa，早年即以 lovers rock 與 Dub Me Crazy 系列聞名。",
+      "src": "https://en.wikipedia.org/wiki/Mad_Professor"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "From the Roots",
+    "manifest": "onboarding-manifest-add-20261023-ml41-20261023.json",
+    "desc": "兩人第三度合作，這回比他平常的歌肅穆。Horace Andy 是來自牙買加的 reggae 歌手，Mad Professor 坐鎮倫敦 Ariwa 錄音室，兩人在 1992、1994 年已合作過兩張。RAS 在 2004 年推出這 14 首，混音交給 Mad Professor，樂手名單列有 Sly Dunbar 與 Robbie Shakespeare。評論把它聽成比 Horace Andy 一貫冒泡的風格更 rootsy、更肅穆，鋪著 dub 質感；他仍保留顫動的假音。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/1268510",
+     "https://popmatters.com/andyhorace-fromtheroots-2495828848.html",
+     "https://en.wikipedia.org/wiki/Horace_Andy",
+     "https://en.wikipedia.org/wiki/Mad_Professor",
+     "https://musicbrainz.org/release-group/450f8815-fbeb-3484-ad91-95af49c4101a"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "i kong",
+  "name": "I Kong",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "world",
+  "yearRange": [
+   1979,
+   1979
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "The Way It Is",
+    "year": 1979,
+    "genres": [
+     "world"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 10,
+   "researchRecords": 1,
+   "facts": 2,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": false,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "add-20261023-ml48-c",
+    "album": "The Way It Is",
+    "facts": [
+     {
+      "f": "I Kong 本名 Errol Kong，1947 年 4 月 18 日生，在京斯敦市區長大，是知名製作人 Leslie Kong 的姪子；60 年代初是 rocksteady 團體 The Jamaicans 的創團成員之一，後來曾在遊輪上當酒保兼歌手約兩年。",
+      "src": "https://www.discogs.com/artist/500055"
+     },
+     {
+      "f": "標題曲〈The Way It Is〉最初是 1972 年以 Ricky Storm 的名字，由 Tommy Cowan 在 Top Cat 廠牌發行的單曲，Cowan 找了 Inner Circle 的 Lewis 兄弟伴奏；1979 年 Top Ranking 專輯與單曲 B 面的版本是重新製作過的。",
+      "src": "https://unitedreggae.com/articles/n2133/091216/interview-i-kong-in-kingston-part-1"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "The Way It Is",
+    "manifest": "onboarding-manifest-add-20261023-ml48-20261023.json",
+    "desc": "十個吹管樂手，旁人都說他在浪費錢。製作人 Leslie Kong 的姪子 I Kong，本名 Errol Kong，早年參與創立 rocksteady 團體 The Jamaicans。Top Ranking 在 1979 年發行這張，錄音分在 Harry J 與 Black Ark 兩處，Lee Perry 列在工程名單上。他從小迷 Bobby Bland 唱片裡的銅管，要的是層疊的聲音，花的是執行製作 Mikey Lee 的錢。標題曲長達 7 分 51 秒。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/1211110",
+     "https://unitedreggae.com/articles/n2133/091216/interview-i-kong-in-kingston-part-1",
+     "https://www.discogs.com/artist/500055",
+     "https://www.discogs.com/master/515784",
+     "https://jamaicaobserver.com/news/i-kongs-second-coming",
+     "https://musicbrainz.org/release-group/73efe089-9c32-424a-9a7a-618ee65198d7"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "iration steppas",
+  "name": "Iration Steppas",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "world",
+  "yearRange": [
+   1996,
+   1996
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Original Dub D.A.T.",
+    "year": 1996,
+    "genres": [
+     "world",
+     "electronic"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 8,
+   "researchRecords": 1,
+   "facts": 3,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "add-20261023-md29-b",
+    "album": "Original Dub D.A.T.",
+    "facts": [
+     {
+      "f": "CD 版為自家廠牌 Iration Steppa，目錄號 ISCD 005，十五首、合計約 65 分鐘；Discogs 標示版權為 1996 年，第 11 至 15 首僅收在 CD。",
+      "src": "https://www.discogs.com/release/110564"
+     },
+     {
+      "f": "文案說二人受 rocksteady 與 roots 啟發，也深受 hip-hop、acid 與 house 影響；使用 Akai S950 取樣機等類比器材，通宵於類比混音台上同步混音，把最粗獷的版本直接錄上 D.A.T. 磁帶。",
+      "src": "https://www.musicmaniarecords.be/2500-iration-steppas/8048-original-dub-d.a.t.-2lp"
+     },
+     {
+      "f": "Iration Steppas 是利茲的音響系統團體，1990 年代初由 Mark Iration 創立，1993 年起由 Dennis Rootical 加入，被視為英國 steppers 派 dub 的代表。",
+      "src": "https://en.wikipedia.org/wiki/Iration_Steppas"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Original Dub D.A.T.",
+    "manifest": "onboarding-manifest-add-20261023-md29-20261023.json",
+    "desc": "徹夜同步混音，再把最粗獷的那一版錄進磁帶。利茲的音響系統團體 Iration Steppas 做 steppers dub，1996 年在自營廠牌推出第一張。兩位成員通宵守在類比混音台前同步混音，混好就直接錄上 D.A.T.，盤名由此而來。他們也吸收 hip-hop、acid 與 house，CD 版排了十五首，長達 65 分鐘。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/110564",
+     "https://www.musicmaniarecords.be/2500-iration-steppas/8048-original-dub-d.a.t.-2lp",
+     "https://musicbrainz.org/release-group/bf8fe48e-5d8e-349a-b6ac-0c118d1e3dad",
+     "https://en.wikipedia.org/wiki/Iration_Steppas"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "jacob miller",
+  "name": "Jacob Miller",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "world",
+  "yearRange": [
+   1976,
+   1976
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Tenement Yard",
+    "year": 1976,
+    "genres": [
+     "world"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 10,
+   "researchRecords": 1,
+   "facts": 4,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": false
+  },
+  "research": [
+   {
+    "batch": "add-20261023-ml9-b",
+    "album": "Tenement Yard",
+    "facts": [
+     {
+      "f": "Inner Circle 由 Lewis 兄弟於 1968 年在金斯敦組成；Jacob Miller 約 1974 年成為樂團固定主唱，同時繼續單飛，〈Tenement Yard〉單曲只掛他一人之名。",
+      "src": "https://en.wikipedia.org/wiki/Inner_Circle_(band)"
+     },
+     {
+      "f": "Jacob Miller 1952 年 5 月 4 日生於 Mandeville，13 歲在 Studio One 錄過三首歌；1972 年後為 Horace Swaby（Augustus Pablo）錄了多支單曲，其中〈Baby I Love You So〉搭配 King Tubby 的 dub 混音，成為他最持久的代表作。",
+      "src": "https://en.wikipedia.org/wiki/Jacob_Miller_(musician)"
+     },
+     {
+      "f": "Wikipedia 形容 Miller 的個人作品偏 rockers 風格，而 Inner Circle 樂團本身則嘗試流行、靈魂、放克與 disco；1970 年代他在牙買加的人氣僅次於 Bob Marley。",
+      "src": "https://en.wikipedia.org/wiki/Jacob_Miller_(musician)"
+     },
+     {
+      "f": "1978 年 4 月 22 日 One Love Peace Concert 他在金斯敦國家體育場為 Bob Marley and the Wailers 開主舞台；1980 年 3 月 23 日 Miller 在金斯敦 Hope Road 車禍辭世，得年 27 歲，樂團隨後解散。",
+      "src": "https://en.wikipedia.org/wiki/Jacob_Miller_(musician)"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Tenement Yard",
+    "manifest": "onboarding-manifest-add-20261023-ml9-20261023.json",
+    "desc": "Inner Circle 的主唱，也替自己出唱片。他叫 Jacob Miller，1952 年出生，故鄉牙買加 Mandeville，約莫 1974 年起站上這個樂團的麥克風前。Jam Sounds 於 1976 年發行的這張個人作，一口氣收了十二首 roots 歌曲。發行四年後，1980 年他在一場車禍中辭世。",
+    "sourceUrls": [
+     "https://www.discogs.com/master/360063-Jacob-Miller-Tenement-Yard",
+     "https://www.discogs.com/release/2218681-Jacob-Miller-Tenement-Yard",
+     "https://en.wikipedia.org/wiki/Inner_Circle_(band)",
+     "https://en.wikipedia.org/wiki/Jacob_Miller_(musician)",
+     "https://www.discogs.com/release/2870418-Jacob-Miller-Dread-Dread",
+     "https://musicbrainz.org/release-group/14c45ad4-ada0-3b8e-a824-4b0ec1fbd6c5"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "jah lion",
+  "name": "Jah Lion",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "world",
+  "yearRange": [
+   1976,
+   1976
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Colombia Colly",
+    "year": 1976,
+    "genres": [
+     "world"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 9,
+   "researchRecords": 1,
+   "facts": 1,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": false
+  },
+  "research": [
+   {
+    "batch": "add-20261022-ml1-d",
+    "album": "Colombia Colly",
+    "facts": [
+     {
+      "f": "Jah Lion 本名 Patrick Lloyd Francis，1947 年生，1999 年逝世，也被稱為 Jah Lloyd；他原本是 The Mediators 的歌手，為 Rupie Edwards 錄過單曲，後來轉成 deejay，並在 Lee Perry 手下改名 Jah Lion。",
+      "src": "https://en.wikipedia.org/wiki/Jah_Lion"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Colombia Colly",
+    "manifest": "onboarding-manifest-add-20261022-ml1-20261022.json",
+    "desc": "從樂團歌手轉行念唱，他走進了 Black Ark。也叫 Jah Lloyd 的 Jah Lion 來自牙買加，早先是 The Mediators 的歌手。Lee Perry 擔綱製作人，錄音就在 Perry 自家後院的 Black Ark，地處金斯敦。Island 在 1976 年把它推出。Perry 的 dub 手法曾被拿來和 Stockhausen 相比，被舉出的例子正是 Jah Lion。後來，〈Wisdom〉還進了電影《Countryman》的配樂。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/675955",
+     "https://en.wikipedia.org/wiki/Jah_Lion",
+     "https://en.wikipedia.org/wiki/Black_Ark",
+     "https://n.sashafrerejones.com/archive/lee-perry-scratching-the-surface/",
+     "https://musicbrainz.org/release-group/0d463ec8-3beb-3f7e-b788-7ba2fbd2a509"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "john clarke",
+  "name": "John Clarke",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "world",
+  "yearRange": [
+   1979,
+   1979
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Visions of John Clarke",
+    "year": 1979,
+    "genres": [
+     "world",
+     "folk"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 10,
+   "researchRecords": 1,
+   "facts": 2,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "add-20261023-ml38-d",
+    "album": "Visions of John Clarke",
+    "facts": [
+     {
+      "f": "Love Joys 與 Noel Delahaye 等人負責和聲，Bullwackie 本人也加入打擊樂。",
+      "src": "https://www.discogs.com/release/1086854"
+     },
+     {
+      "f": "Wackies 的 White Plains Road 時期（1970 年代後期到 1980 年代初）被認為是這個廠牌聲音最有個性的階段，早期作品帶有稀疏、陰森的 dub 質地。",
+      "src": "https://www.roots-archives.com/label/463"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Visions of John Clarke",
+    "manifest": "onboarding-manifest-add-20261023-ml38-20261023.json",
+    "desc": "封套上，Bullwackie 自稱他的後援會會長。從牙買加移居紐約的歌手 John Clarke，和 Johnny Clarke 是兩個人，前後約有六年跟著 Wackies 工作。本作在 1979 年面世，編得相當倉促，十首裡有九首由他親手寫成。錄音與混音由 Lloyd Barnes 和 Douglas Levy 包辦，Baba Leslie 的銅管在盤上格外突出。唱片引起 Coxsone Dodd 的興趣，他想取得發行權，布魯克林的 Makossa 卻搶先拿下完整授權。",
+    "sourceUrls": [
+     "https://www.discogs.com/master/583498",
+     "https://www.discogs.com/release/1086854",
+     "https://hardwax.com/50743/john-clarke/visions-of-john-clarke",
+     "https://www.roots-archives.com/label/463",
+     "https://musicbrainz.org/release-group/1de597fc-fb5b-3e0d-ad5e-bc4b8f440911"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "junior delahaye",
+  "name": "Junior Delahaye",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "world",
+  "yearRange": [
+   1982,
+   1982
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Showcase",
+    "year": 1982,
+    "genres": [
+     "world"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 8,
+   "researchRecords": 1,
+   "facts": 1,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "add-20261022-ml1-e",
+    "album": "Showcase",
+    "facts": [
+     {
+      "f": "維基稱 Wackie's 的出品有「a distinctive lo-fi sound」；廠牌有自家樂團 Wackie's Rhythm Force，也錄過 Noel Delahaye、Johnny Osbourne、Wayne Jarrett、Leroy Sibbles、Horace Andy。",
+      "src": "https://en.wikipedia.org/wiki/Wackie%27s"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Showcase",
+    "manifest": "onboarding-manifest-add-20261022-ml1-20261022.json",
+    "desc": "唱歌的人，也掛在工程師欄與貝斯名單上。Junior Delahaye 在紐約 Wackie's 的圈子唱 reggae，名字有時寫作 Noel Delahaye。Wackie's 是 Lloyd Barnes 在布朗克斯開的廠牌，經費不多，靠克難手法做出 lo-fi 的聲音。這張 1982 年發行，介於 dub 與 lovers rock 之間。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/15956834-Junior-Delahaye-Showcase",
+     "https://en.wikipedia.org/wiki/Wackie%27s",
+     "https://www.roots-archives.com/artist/170",
+     "https://musicbrainz.org/release-group/58eeba14-c0da-4567-9d81-332c41e0dea3"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "junior keatting",
+  "name": "Junior Keatting",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "world",
+  "yearRange": [
+   1980,
+   1980
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Weekend Lover",
+    "year": 1980,
+    "genres": [
+     "world"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 9,
+   "researchRecords": 1,
+   "facts": 3,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "add-20261024-ml58-c",
+    "album": "Weekend Lover",
+    "facts": [
+     {
+      "f": "Roots Radics 1978 年由貝斯手 Errol 'Flabba' Holt、吉他手 Eric 'Bingy Bunny' Lamont 與鼓手 Lincoln 'Style' Scott 組成，維基稱他們「主宰了 1980 年代前半的聲音」。",
+      "src": "https://en.wikipedia.org/wiki/Roots_Radics"
+     },
+     {
+      "f": "Scientist（Hopeton Brown）在 King Tubby 家當學徒，1970 年代中期開始混音，1970 年代末轉到 Channel One 當首席工程師，用的是 16 軌混音台，King Tubby 那邊只有四軌；Roots Radics 是他最常合作的樂團，他也替 Jah Thomas 做了很多工作。",
+      "src": "https://en.wikipedia.org/wiki/Scientist_(musician)"
+     },
+     {
+      "f": "Jah Thomas 生於 1955 年的金斯敦，1976 年他的單曲〈Midnight Rock〉登上牙買加榜首，之後創辦 Midnight Rock 廠牌，常與混音師 Scientist 和 Roots Radics 合作。",
+      "src": "https://en.wikipedia.org/wiki/Jah_Thomas"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Weekend Lover",
+    "manifest": "onboarding-manifest-add-20261024-ml58-20261024.json",
+    "desc": "紐約 Club Negril 是最早播放它的地方。1980 年，美國 Tad's Record 發行了 Junior Keatting 這張 roots reggae 專輯，這段來歷記在唱片的說明文字裡。Roots Radics 在 Channel One 錄下節奏音軌，人聲錄製和混音移到 King Tubby 的錄音室，混音由 Scientist 掛名。B 面收尾是〈Coming Of A Storm〉，接著它的 dub 版〈Dubbing Of A Storm〉。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/1685669",
+     "https://en.wikipedia.org/wiki/Roots_Radics",
+     "https://en.wikipedia.org/wiki/Scientist_(musician)",
+     "https://en.wikipedia.org/wiki/Jah_Thomas",
+     "https://www.discogs.com/master/531774",
+     "https://musicbrainz.org/release-group/c6b4ffca-5179-4b2e-9e35-f14c8d980fb3"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "junior ross & the spears",
+  "name": "Junior Ross & The Spears",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "world",
+  "yearRange": [
+   1976,
+   1976
+  ],
+  "script": "latin",
+  "collab": true,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Babylon Fall",
+    "year": 1976,
+    "genres": [
+     "world"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 9,
+   "researchRecords": 1,
+   "facts": 3,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "add-20261024-ml58-a",
+    "album": "Babylon Fall",
+    "facts": [
+     {
+      "f": "Junior Ross 1953 年 9 月 7 日生於金斯敦，1970 年代起替 DJ 兼製作人 Tapper Zukie 唱歌，《Babylon Fall》就是 Zukie 製作的。",
+      "src": "https://www.discogs.com/release/1616359"
+     },
+     {
+      "f": "Tapper Zukie 在 1976 年之後專注製作，自己的 Stars 廠牌出過 Junior Ross & The Spear、Prince Alla、Errol Dunkley、Ronnie Davis 和 Horace Andy。",
+      "src": "https://en.wikipedia.org/wiki/Tappa_Zukie"
+     },
+     {
+      "f": "2018 年 Kingston Sounds 發行擴充版，在原專輯之外加上〈Liberty〉〈Freedom Fe Natty〉〈African Border〉及五首 dub 版。",
+      "src": "https://www.roots-archives.com/album/592"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Babylon Fall",
+    "manifest": "onboarding-manifest-add-20261024-ml58-20261024.json",
+    "desc": "節奏在 Channel One，人聲在 Tubby's。1953 年，雷鬼歌手 Junior Ross 在金斯敦出生，後來替 DJ 兼製作人 Tapper Zukie 唱歌。他與 The Spears 合掛的本作就由 Zukie 製作，1970 年代中期問世，混音同樣在 Tubby's 完成。Scientist 掛錄音師，混音者是 King Jammy。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/1616359",
+     "https://en.wikipedia.org/wiki/Tappa_Zukie",
+     "https://en.wikipedia.org/wiki/Channel_One_Studios",
+     "https://en.wikipedia.org/wiki/King_Tubby",
+     "https://www.roots-archives.com/album/592",
+     "https://musicbrainz.org/release-group/9407acf7-a7b2-4189-a275-672ff3e8468b"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "larry marshall",
+  "name": "Larry Marshall",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "world",
+  "yearRange": [
+   1975,
+   1975
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "I Admire You",
+    "year": 1975,
+    "genres": [
+     "world"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 8,
+   "researchRecords": 1,
+   "facts": 4,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "add-20261024-ml59-a",
+    "album": "I Admire You",
+    "facts": [
+     {
+      "f": "Larry Marshall 1941 年 12 月 17 日生於牙買加聖安區的 Lawrence Hall，2017 年 8 月 24 日辭世；1962 年錄下第一首歌，1967 年進 Coxsone Dodd 的 Studio One 圈子，1968 年與 Alvin Leslie 搭檔錄下〈Nanny Goat〉等曲。",
+      "src": "https://www.discogs.com/artist/201531"
+     },
+     {
+      "f": "1973 年底他因版稅糾紛離開 Studio One；〈I Admire You〉與〈Can't You Understand〉先以單曲發在 Carl Patterson 的 Black and White 廠牌，兩首都有 King Tubby 的 dub 版。",
+      "src": "https://www.discogs.com/artist/201531"
+     },
+     {
+      "f": "後來因財務糾紛，他成立 Amanda 廠牌走向自製，完成《I Admire You》專輯，由他自己在牙買加少量發行，英國則在 1975 年由 Java 廠牌發行。",
+      "src": "https://www.discogs.com/artist/201531"
+     },
+     {
+      "f": "Discogs master 與牙買加版（廠牌 Marshall，目錄號 F.L.M A 166 / F.L.M B 167）皆標 1975 年，風格標 Roots Reggae。",
+      "src": "https://www.discogs.com/master/689948"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "I Admire You",
+    "manifest": "onboarding-manifest-add-20261024-ml59-20261024.json",
+    "desc": "和 Studio One 鬧翻後，他另起爐灶辦廠牌。牙買加聖安區 1941 年出生的歌手 Larry Marshall，1973 年底為了版稅糾紛離開 Studio One。新廠牌取名 Amanda，本作由他自己製作，英國版則交給 Java，1975 年發行。整張混音只掛 King Tubby 一人，和聲群裡有 The Righteous Flames。",
+    "sourceUrls": [
+     "https://www.discogs.com/artist/201531",
+     "https://www.discogs.com/master/689948",
+     "https://www.discogs.com/release/5709693",
+     "https://musicbrainz.org/release-group/6f8c03e5-8db4-46ca-bb3c-99cfd1fb5c61"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "likkle mai",
+  "name": "Likkle Mai",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "world",
+  "yearRange": [
+   2012,
+   2012
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Dub Is the Universe",
+    "year": 2012,
+    "genres": [
+     "world"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 9,
+   "researchRecords": 1,
+   "facts": 2,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "add-20261023-ml41-b",
+    "album": "Dub Is the Universe",
+    "facts": [
+     {
+      "f": "樂評把她定位為「roots reggae singer」，Tower 的歸類為雷鬼；Dry & Heavy 的聲音本來就以 1970 年代牙買加 dub 為底。",
+      "src": "https://en.wikipedia.org/wiki/Dry_%26_Heavy"
+     },
+     {
+      "f": "Likkle Mai 出身岩手縣宮古市，是岩手「希望鄉」文化大使；2005 年離開 Dry & Heavy 後自己經營 MK Starliner。",
+      "src": "https://artist.cdjournal.com/a/likkle-mai/162321"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Dub Is the Universe",
+    "manifest": "onboarding-manifest-add-20261023-ml41-20261023.json",
+    "desc": "地震過後，她替故鄉受創的漁業發起募款。出身岩手縣宮古市的 Likkle Mai，2005 年離開了樂團 Dry & Heavy。那筆募款取名「LOVE BOAT 募金」，她也在反核遊行上拿起麥克風。2012 年 7 月 4 日推出第四張個人專輯，她的憤怒被形容成包在寬大的愛裡，其中兩首由 Scientist 混音。",
+    "sourceUrls": [
+     "https://tower.jp/item/3103095",
+     "https://www.discogs.com/release/7733102-Likkle-Mai-Dub-Is-The-Universe",
+     "https://artist.cdjournal.com/a/likkle-mai/162321",
+     "https://en.wikipedia.org/wiki/Dry_%26_Heavy",
+     "https://www.discogs.com/artist/677447"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "mad professor & sandra cross",
+  "name": "Mad Professor & Sandra Cross",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "world",
+  "yearRange": [
+   2023,
+   2023
+  ],
+  "script": "latin",
+  "collab": true,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Dub Showcase featuring Sandra Cross",
+    "year": 2023,
+    "genres": [
+     "world"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 8,
+   "researchRecords": 1,
+   "facts": 2,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": false
+  },
+  "research": [
+   {
+    "batch": "add-20261023-ml38-d",
+    "album": "Dub Showcase featuring Sandra Cross",
+    "facts": [
+     {
+      "f": "Bandcamp 頁面標籤為 reggae、lovers rock、R&B、soul，介紹 Sandra Cross 是英國歌手，音樂圈資歷超過 40 年，被視為英國 lovers rock 時代的領軍人物之一。",
+      "src": "https://sandracross.bandcamp.com/album/sandra-dubshowcase"
+     },
+     {
+      "f": "Mad Professor 製作過 Sandra Cross 的 lovers rock，她的專輯《Country Life》是 1980 年代中期替 Ariwa 拉高銷量的幾張作品之一。",
+      "src": "https://en.wikipedia.org/wiki/Mad_Professor"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Dub Showcase featuring Sandra Cross",
+    "manifest": "onboarding-manifest-add-20261023-ml38-20261023.json",
+    "desc": "她的《Country Life》曾替 Ariwa 拉抬銷量。英國 lovers rock 歌手 Sandra Cross 入行已超過 40 年。那張專輯成於 1980 年代中期，由 Mad Professor 替她製作。2023 年的《Dub Showcase featuring Sandra Cross》共收七首，仍由他與 Joe Ariwa 操刀。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/28751932",
+     "https://sandracross.bandcamp.com/album/sandra-dubshowcase",
+     "https://en.wikipedia.org/wiki/Ariwa_Sounds",
+     "https://en.wikipedia.org/wiki/Mad_Professor",
+     "https://musicbrainz.org/release-group/27d9d48a-4e7d-4f35-921d-51b0f6965da3"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "mad professor & susan cadogan",
+  "name": "Mad Professor & Susan Cadogan",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "world",
+  "yearRange": [
+   2023,
+   2023
+  ],
+  "script": "latin",
+  "collab": true,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Dub Showcase featuring Susan Cadogan",
+    "year": 2023,
+    "genres": [
+     "world"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 9,
+   "researchRecords": 1,
+   "facts": 1,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": false
+  },
+  "research": [
+   {
+    "batch": "add-20261023-ml38-e",
+    "album": "Dub Showcase featuring Susan Cadogan",
+    "facts": [
+     {
+      "f": "〈Nice & Easy〉與〈Fever〉是 Susan Cadogan 1970 年代中期在 Lee \"Scratch\" Perry 製作下錄的單曲，當年都沒有進榜；她 2020 年的《Hurt So Good • Storybook Revisited》也收了這兩首。",
+      "src": "https://en.wikipedia.org/wiki/Susan_Cadogan"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Dub Showcase featuring Susan Cadogan",
+    "manifest": "onboarding-manifest-add-20261023-ml38-20261023.json",
+    "desc": "當中一首，2008 年就出過 Ariwa 單曲。1975 年，歌手 Susan Cadogan 翻唱〈Hurt So Good〉，於英國單曲榜爬上第 4 名。她從 1992 年起與 Mad Professor 合作，那首提早出成單曲的歌是〈You Turn Me On〉。到了 2023 年，本作問世，七首裡有三首超過 8 分鐘。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/28752115",
+     "https://musicbrainz.org/release-group/ba56245d-c0f6-485a-8b4a-3af99dff18a5",
+     "https://musicbrainz.org/release-group/d9db0242-8cab-48a5-8f1c-2c6efae71a0f",
+     "https://en.wikipedia.org/wiki/Susan_Cadogan",
+     "https://en.wikipedia.org/wiki/Mad_Professor"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "mad professor & the mad men band",
+  "name": "Mad Professor & The Mad Men Band",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "world",
+  "yearRange": [
+   2000,
+   2000
+  ],
+  "script": "latin",
+  "collab": true,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Dub You Crazy With Love (Part 2)",
+    "year": 2000,
+    "genres": [
+     "world"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 9,
+   "researchRecords": 1,
+   "facts": 4,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "add-20261023-ml41-b",
+    "album": "Dub You Crazy With Love (Part 2)",
+    "facts": [
+     {
+      "f": "2000 年由 Mad Professor 自己的廠牌 Ariwa 發行，編號 ARICD132，CD，共 18 首，是 Dub You Crazy With Love 系列的第二集；第一集 1997 年（ARICD124，16 首），第三集《Bitter Sweet Dub》2008 年。",
+      "src": "https://www.discogs.com/release/2574003"
+     },
+     {
+      "f": "Mad Professor 本名 Neil Fraser，1955 年生於圭亞那喬治城，13 歲移居倫敦；1979 年在薩頓希思（Thornton Heath）家中客廳以四軌設備創立 Ariwa，1982 年遷至佩卡姆，後遷南諾伍德。",
+      "src": "https://en.wikipedia.org/wiki/Mad_Professor"
+     },
+     {
+      "f": "Ariwa 除了 dub 也發行 lovers rock，旗下有 Sandra Cross、John McLean、Kofi 等人與 Deborahe Glasgow 的首張錄音；《Dub Me Crazy》系列 1982 至 1993 年共 12 集，John Peel 常在節目播放。",
+      "src": "https://en.wikipedia.org/wiki/Ariwa"
+     },
+     {
+      "f": "他自稱偏愛全類比器材，理由是「親手操作的感覺」與溫暖的音色，並說 dub 是「最適合做實驗的音樂」，靈感來自 King Tubby 與 Lee Perry，以及靈魂樂唱片裡的相位器與倒帶技巧。",
+      "src": "https://www.theransomnote.com/?p=21654"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Dub You Crazy With Love (Part 2)",
+    "manifest": "onboarding-manifest-add-20261023-ml41-20261023.json",
+    "desc": "每位自由鬥士，也需要一點時間去愛。這句話印在 Mad Professor 自營廠牌 Ariwa 於 2000 年發行的 CD 內頁，那是 Dub You Crazy With Love 系列的第二集。內頁接著說要彌合 dub 迷與 lovers 迷之間的鴻溝，請人倒杯 Remy，坐到愛人身旁。全盤 18 首多是情歌改成的 dub 版，例如〈Heartaches Dub〉。混音在 Ariwa 錄音室完成，用上 warbler 與 Phraser Sounds 效果。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/2574003",
+     "https://en.wikipedia.org/wiki/Mad_Professor",
+     "https://en.wikipedia.org/wiki/Ariwa",
+     "https://www.theransomnote.com/?p=21654",
+     "https://musicbrainz.org/release-group/c74f9766-66e6-4c1e-be66-d1b4b4276237"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "milton henry",
+  "name": "Milton Henry",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "world",
+  "yearRange": [
+   1985,
+   1985
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Who Do You Think I Am?",
+    "year": 1985,
+    "genres": [
+     "world"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 11,
+   "researchRecords": 1,
+   "facts": 4,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "add-20261023-ml32-d",
+    "album": "Who Do You Think I Am?",
+    "facts": [
+     {
+      "f": "1985 年在 Wackie's 廠牌發行的 12 吋 LP，目錄號 Wackie's LP-2450，A、B 面共九首，總長約 32 分鐘。",
+      "src": "https://www.discogs.com/release/837232"
+     },
+     {
+      "f": "Milton Henry 1950 年 1 月 19 日生於金斯敦的 Allman Town，2022 年 12 月 3 日辭世。",
+      "src": "https://www.discogs.com/artist/77084-Milton-Henry"
+     },
+     {
+      "f": "Barnes 出身金斯敦 Trench Town，1967 年移居紐約、做建築工；他向附近的 Sam Ash 樂器行添購設備自建錄音室，因為資金有限只得靠巧思解決，被認為造就了廠牌獨特的 lo-fi 聲音。",
+      "src": "https://en.wikipedia.org/wiki/Wackies"
+     },
+     {
+      "f": "Wackie's 的伴奏班底稱為 Wackie's Rhythm Force，廠牌也錄過 Horace Andy、Johnny Osbourne、Wayne Jarrett 等人；1980 年代大樓出售後廠牌遷到新澤西 Englewood。",
+      "src": "https://en.wikipedia.org/wiki/Wackies"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Who Do You Think I Am?",
+    "manifest": "onboarding-manifest-add-20261023-ml32-20261023.json",
+    "desc": "基礎軌分在牙買加與布朗克斯錄，疊錄全收回布朗克斯。Milton Henry 是金斯敦出身的 reggae 歌手，1976 年移居紐約。那些基礎軌由 Sly Dunbar 打鼓、Jackie Mittoo 彈鍵盤，布朗克斯那間錄音室叫 Wackies。到了 1985 年，唱片掛上 Wackie's 的廠牌發行。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/837232",
+     "https://www.discogs.com/artist/77084-Milton-Henry",
+     "https://en.wikipedia.org/wiki/Wackies",
+     "https://www.discogs.com/release/1004320",
+     "https://musicbrainz.org/release-group/65829413-0802-3f82-9358-9598b5d3d37c"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "mo’kalamity meets sly & robbie",
+  "name": "Mo’Kalamity meets Sly & Robbie",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "world",
+  "yearRange": [
+   2018,
+   2018
+  ],
+  "script": "latin",
+  "collab": true,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "One Love Vibration",
+    "year": 2018,
+    "genres": [
+     "world"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 10,
+   "researchRecords": 1,
+   "facts": 4,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "add-20261023-ml57-d",
+    "album": "One Love Vibration",
+    "facts": [
+     {
+      "f": "Mo'Kalamity 本名 Monica Tavares，生於維德角聖地亞哥島，5 歲隨家人搬到法國，在巴黎地區長大，小時候在教會合唱團唱歌。",
+      "src": "https://en.wikipedia.org/wiki/Mo'Kalamity"
+     },
+     {
+      "f": "藝名由名字 Mo' 加上取自美國西部傳奇人物 Calamity Jane 的 Kalamity 組成，用意是在男性主導的雷鬼圈裡帶入『鬥士精神』。",
+      "src": "https://en.wikipedia.org/wiki/Mo'Kalamity"
+     },
+     {
+      "f": "她 2000 年代初先在雷鬼歌手 King Malik 的樂團當和聲，2004 年組成自己的樂團 the Wizards；先前的專輯有 2007 年《Warrior of Lights》、2009 年《Deeper Revolution》、2013 年《Freedom of the Soul》。",
+      "src": "https://en.wikipedia.org/wiki/Mo'Kalamity"
+     },
+     {
+      "f": "她在 2013 年的 Garance 雷鬼音樂節認識 Sly & Robbie，當時她替 Black Uhuru 的一位和聲歌手代班；2017 年她主動聯絡兩人，對方同意錄音。",
+      "src": "https://pan-african-music.com/mokalamity-reine-africaine-du-reggae-roots-francais/"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "One Love Vibration",
+    "manifest": "onboarding-manifest-add-20261023-ml57-20261023.json",
+    "desc": "只打算錄兩首，到了金斯敦卻錄成一整張。生於維德角聖地亞哥島、5 歲移居法國的雷鬼女歌手 Mo’Kalamity，2017 年主動聯絡 Sly & Robbie，那趟也是她第一次去牙買加。Sly Dunbar 打鼓、Robbie Shakespeare 彈貝斯，錄音與混音一個月內完成。原定的兩首錄成三首，又即興多出〈Strength of a Woman〉。她說節奏組跟著她的聲音與速度走。專輯 2018 年 1 月 26 日推出。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Mo'Kalamity",
+     "https://pan-african-music.com/mokalamity-reine-africaine-du-reggae-roots-francais/",
+     "https://www.discogs.com/release/11750810",
+     "https://music.apple.com/us/album/one-love-vibration-feat-sly-robbie/1695917297",
+     "https://musicbrainz.org/release-group/cf373083-f2f5-49a7-8c6d-0815ab1c2f00"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "mwanamke mwafrika",
+  "name": "Mwanamke Mwafrika",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "world",
+  "yearRange": [
+   1982,
+   1982
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "African Woman Abroad",
+    "year": 1982,
+    "genres": [
+     "world"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 16,
+   "researchRecords": 1,
+   "facts": 2,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "add-20261024-ml58-d",
+    "album": "African Woman Abroad",
+    "facts": [
+     {
+      "f": "1982 年英國 African Woman 廠牌發行的 LP，目錄號 AWLP 101，八首歌，A、B 面各四首；Discogs 風格標 Roots Reggae 與 Dub。",
+      "src": "https://www.discogs.com/release/2942357"
+     },
+     {
+      "f": "1980 年代中期 Ariwa 的發行以 lovers rock 與 roots reggae、dub 為兩條主線，Sandra Cross、Johnny Clarke、Peter Culture、Pato Banton 都在其中。",
+      "src": "https://en.wikipedia.org/wiki/Mad_Professor"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "African Woman Abroad",
+    "manifest": "onboarding-manifest-add-20261024-ml58-20261024.json",
+    "desc": "《African Woman Abroad》是英國 roots reggae 樂團 Mwanamke Mwafrika 1982 年唯一的專輯，原版 LP 在收藏圈想找的人遠多於手上有的人，2020 年才由 Common Ground International 重新壓成黑膠。團名意為「非洲女人」，1981 年由七名女性組成，兩名主唱之一兼彈節奏吉他，另有鍵盤、貝斯與鼓，錄音時還請了外援的主奏吉他與薩克斯風，Mad Professor 擔任工程師。八首歌路數偏 roots reggae 與 dub。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/2942357",
+     "https://www.discogs.com/master/1507389",
+     "https://en.wikipedia.org/wiki/Mad_Professor",
+     "https://factmag.com/2015/03/18/the-essential-mad-professor"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "noel ellis",
+  "name": "Noel Ellis",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "world",
+  "yearRange": [
+   1983,
+   1983
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Noel Ellis",
+    "year": 1983,
+    "genres": [
+     "world"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 9,
+   "researchRecords": 1,
+   "facts": 3,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": false,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "add-20261024-ml58-a",
+    "album": "Noel Ellis",
+    "facts": [
+     {
+      "f": "Noel Ellis 是 rocksteady 巨星 Alton Ellis 的兒子之一，Alton Ellis 有二十多個孩子，Noel 與 Christopher 都成了雷鬼歌手。",
+      "src": "https://en.wikipedia.org/wiki/Alton_Ellis"
+     },
+     {
+      "f": "Light in the Attic 的重發文案說這張是 1979 年在多倫多由 Jerry Brown 錄製、為 Summer Records 而做，並形容為『dub-loved, heavy yet ethereal tracks』；這是廠牌自己的宣傳文字。",
+      "src": "https://forcedexposure.com/Catalog/ellis-noel-noel-ellis-lp/LITA.020LP.html"
+     },
+     {
+      "f": "廠牌文案稱〈Rocking Universally〉的版本是 The Clash 以〈Armagideon Time〉翻唱前的版本。",
+      "src": "https://forcedexposure.com/Catalog/ellis-noel-noel-ellis-lp/LITA.020LP.html"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Noel Ellis",
+    "manifest": "onboarding-manifest-add-20261024-ml58-20261024.json",
+    "desc": "錄在多倫多的六首歌，首首超過 6 分鐘。rocksteady 歌手 Alton Ellis 的兒子之一 Noel Ellis，1979 年由 Jerry Brown 在 Summer Sound Studio 替他錄成這張雷鬼自名作。Summer Records 等到 1983 年才首批壓片。混音掛 Jerry Brown、Bongo Gene 與 Willi Williams 三人，聲音偏愛 dub，厚重之中帶著空靈。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Alton_Ellis",
+     "https://www.discogs.com/release/3229801",
+     "https://forcedexposure.com/Catalog/ellis-noel-noel-ellis-lp/LITA.020LP.html",
+     "https://www.discogs.com/master/175484",
+     "https://musicbrainz.org/release-group/a884a14f-945b-42c5-86eb-200f2410577e"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "noel phillips",
+  "name": "Noel Phillips",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "world",
+  "yearRange": [
+   1981,
+   1981
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Youth Man Vibrations",
+    "year": 1981,
+    "genres": [
+     "world"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 11,
+   "researchRecords": 1,
+   "facts": 3,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "add-20261023-ml48-d",
+    "album": "Youth Man Vibrations",
+    "facts": [
+     {
+      "f": "鍵盤是 Ansel Collins 與 Winston Wright 兩位管風琴手加上 Gladstone Anderson 的鋼琴；打擊樂是 Noel \"Scully\" Simms 與 Uziah \"Sticky\" Thompson。",
+      "src": "https://www.discogs.com/release/1723568"
+     },
+     {
+      "f": "Prince Jammy 1976 年從加拿大回到牙買加，在 Waterhouse 岳家的房子裡架起錄音室；他先在 King Tubby 的團隊接替離開的 Philip Smart，1977 年起發行自己製作的作品，Black Uhuru 的首張專輯是其一。",
+      "src": "https://en.wikipedia.org/wiki/King_Jammy"
+     },
+     {
+      "f": "Echo Minott 的名號要到 1983 年的單曲〈Ten Miles〉才出現，1985 年〈Lazy Body〉才讓他成為國際知名的 dancehall 歌手；本盤是他用本名 Noel Phillips 錄的少年作。",
+      "src": "https://nts.live/artists/25131-noel-phillips"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Youth Man Vibrations",
+    "manifest": "onboarding-manifest-add-20261023-ml48-20261023.json",
+    "desc": "掛著本名的少年作，他當時 17 歲。Echo Minott 是這位歌手後來的藝名，Noel Phillips 生於 1963 年，金斯敦長大。Prince Jammy 一人包辦製作、編曲與混音，1981 年掛在 Jammy's Records 名下出版，十首清一色人聲。鼓由 Sly Dunbar 坐鎮，貝斯是 Robbie Shakespeare，另有兩位管風琴手。要到 1985 年，〈Lazy Body〉才讓他成為國際知名的 dancehall 歌手。",
+    "sourceUrls": [
+     "https://nts.live/artists/25131-noel-phillips",
+     "https://www.discogs.com/release/1723568",
+     "https://www.discogs.com/master/611166",
+     "https://en.wikipedia.org/wiki/King_Jammy",
+     "https://apocalypsevinyl.com/products/youth-man-vibrations-lp",
+     "https://www.vpreggae.com/youthman-vibrations-noel-phillips-lp/",
+     "https://musicbrainz.org/release-group/0b240852-1641-4fa6-b042-4beebeea870b"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "oki dub ainu band",
+  "name": "Oki Dub Ainu Band",
+  "tier": "D",
+  "cards": 1,
+  "mainGenre": "world",
+  "yearRange": [
+   2006,
+   2006
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Oki Dub Ainu Band",
+    "year": 2006,
+    "genres": [
+     "world",
+     "electronic"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 10,
+   "researchRecords": 1,
+   "facts": 4,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "add-20261022-ml4-d",
+    "album": "Oki Dub Ainu Band",
+    "facts": [
+     {
+      "f": "OKI 1957 年生於北海道、在神奈川長大，後來才得知自己有阿伊努血統；他在東京藝術大學讀工藝，自學演奏阿伊努族的撥弦樂器 tonkori（五弦琴）。",
+      "src": "https://ja.wikipedia.org/wiki/OKI_(ミュージシャン)"
+     },
+     {
+      "f": "樂團成員（Discogs 信用）：OKI 彈 tonkori、吉他並主唱，Futoshi Ikabe 彈 tonkori 並和聲，Hirohisa 彈貝斯與吉他，Takashi Numazawa 打鼓，Michiaki Tanaka 與 Norihiko Yamakita 兩位打擊樂手。",
+      "src": "https://api.discogs.com/releases/5609015"
+     },
+     {
+      "f": "OKI 的更早錄音包括 1990 年代的《Kamuy Kor Nupurpe》與 2004 年的《Dub Ainu》（英國樂評稱它是『全球融合音樂的開山之作』）；樂團自 2005 年起在世界各地的音樂祭演出。",
+      "src": "https://en.wikipedia.org/wiki/Oki_(musician)"
+     },
+     {
+      "f": "後來樂團的聲音常被樂評形容為『民謠搭 dub 貝斯，接近 Massive Attack 與 trip hop』，現場貝斯手 Takashi Nakajo 的低頻被稱為『雷鳴般的深沉律動』；這是後期陣容的描述，不是本張的原始錄音。",
+      "src": "https://brightonsource.co.uk/reviews/oki-live-at-the-lewes-con-club/"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Oki Dub Ainu Band",
+    "manifest": "onboarding-manifest-add-20261022-ml4-20261022.json",
+    "desc": "OKI 後來才得知自己有阿伊努血統。1957 年生於北海道、在神奈川長大的他，在東京藝大讀工藝時自學了阿伊努五弦琴 tonkori。他把阿伊努傳統歌曲接上 dub 與 reggae，2004 年就已有《Dub Ainu》。Chikar Studio 在 2006 年 12 月 3 日出版樂團同名專輯，9 首共約 49 分鐘，曲名多半是阿伊努語。編制是兩把 tonkori，加上貝斯、鼓與兩位打擊樂手。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/5609015",
+     "https://ja.wikipedia.org/wiki/OKI_(ミュージシャン)",
+     "https://musicbrainz.org/release-group/69cff270-58f6-4b5f-bfa6-b85120e2eb6e",
+     "https://en.wikipedia.org/wiki/Oki_(musician)",
+     "https://brightonsource.co.uk/reviews/oki-live-at-the-lewes-con-club/"
+    ]
+   }
+  ]
+ }
+]

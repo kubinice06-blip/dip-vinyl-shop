@@ -2569,3 +2569,142 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - thin 升級 ar-u-029、030：80 位中 19 位升 full，61 位保留；順帶改正上線 thin 稿 13 位。
 - 2026 年事實主線開頁核實：Melingo、Yanka Rupkina、Calbo 過世；Sek Loso 判刑與假釋；熊仔《PRO》金曲最佳華語專輯；Magnolian 入《Death Stranding 2》。
 - 名冊 `roster-20260929.json` 裡另有 182 位歷輪試過、資料不足而未寫的藝人，不再重派。
+
+## 二十批接力：卡池缺介紹藝人補登（2026-11-05 起）
+
+- 卡池有 1,019 位藝人沒有介紹、不在任何名冊、也從沒排進批次（多是 10-13 §11 規則之前上架的卡，或其他線上架時漏補）。依卡數取前 800 位，補登補充名冊 `roster-fill-20261105.json`（addedBy fill-20261105），按主類型切 ar-d-501～520；批號避開 main 依序使用的 ar-d-2xx。腳本 `batch-progress/artist-intro/fill-20261105.mjs`。
+
+## ar-d-501（2026-11-05，當代古典演奏團體、演奏家與作曲家）
+
+- 40 位全寫：33 full、7 thin。
+- 題材照寫：Nancarrow 加入共產黨與國際縱隊、為躲避騷擾移居墨西哥；Zimmermann 長年憂鬱與眼疾、1970 年輕生；Chojnacka 退化性腦疾病；Wuorinen 跌倒引發硬腦膜下血腫過世；Aloys Kontarsky 中風；Helffer 投身抵抗運動。
+- 主線審稿 2 處：Miranda Cuckson「四度獲 Copland 補助」改「曾獲」（不寫次數）；Zimmermann「自盡」改「輕生」（用字規則）。
+
+## ar-d-502（2026-11-05，當代古典演奏團體、演奏家與作曲家）
+
+- 40 位全寫：26 full、14 thin。多名卡三張用放寬額度（Lustmord + Nicolas Horvath、Münchener Kammerorchester & Christoph Poppen、Nicolas Hodges & Rolf Hind）。
+- 題材照寫：Fjellström 2017 年猝逝（死因未公布）、遺作由他人完成；Hodges 2019 年確診帕金森氏症、帶病演出；Zukofsky 2017 年因淋巴瘤過世。
+- 主線審稿 6 處：Fjellström「該劇編劇與作曲家 Skodvin」改為點名編劇 David Kajganich 與 Skodvin（原句易讀成同一人），並刪廠牌形容與「留下 75 首」壓回 245 字；Kolbeinn Bjarnason「古典長笛音樂中無可比擬」改為發行廠牌說「少見」（軟化）；Jeffrey Swann 刪其餘大賽名次、Julie-Anne Derome 刪 Virginia Parker 獎（在世者只留一項成績）。
+
+## ar-d-503（2026-11-05，電子、dark ambient、drone）
+
+- 39 位寫：14 full、25 thin；Peter Veale 只有一條單源事實、無國籍無聲音描述，不寫（skipped）。
+- 題材照寫：Phill Niblock 2024 年因心臟衰竭過世；Bodo Staiger（Rheingold）2019 年辭世；Council of Nine《Diagnosis》寫母親病逝；Hammock 外甥 2016 年死於腫瘤；Kevin Richard Martin 妻兒的健康危機。
+- 主線審稿 8 處：KaS Product 刪「電子龐克先驅」（法文維基單源）；Netherworld、Silicon Scally、Phill Niblock 第一句補國籍與身分（Niblock 連帶刪「電影工作者」重複與「製作上千場演出」壓回 245 字）；Rheingold「前一年以 70 歲辭世」改「2019 年底辭世，享年 70 歲」（原句時間指涉不清）；Peaking Lights 刪「賣出數千張」（在世者不寫銷量）。
+
+## ar-d-504（2026-11-05，電子、EBM／synth-pop、dark ambient、實驗電子）
+
+- 38 位寫：18 full、20 thin；Bcalm（只有事實庫一條單源、無國籍）與 Heights of Abraham（沒有聲音格）不寫（skipped）。
+- 主線審稿 13 處：第一句補國籍或身分——Supersilent、Xeno & Oaklander、青木孝允、And One、Chancha Vía Circuito、Christopher Willits、Elektro Guzzi（連帶刪青木《SILICOM》廠牌句、Chancha 地名、Willits 學琴細節、Xeno 的 DJ 選曲以壓回字數）；在世者只留一項成績——Supersilent 刪「最受推崇的即興樂團之一」、Jed Kurzel 刪 The Mess Hall 的澳洲音樂獎、Camouflage 刪美國舞曲榜登頂三週／Hot 100／德國金唱片，改寫「在美國俱樂部走紅，是他們最廣為人知的歌」。
+
+## ar-d-505（2026-11-05，電子、實驗電子、dark ambient、techno）
+
+- 39 位寫：15 full、24 thin；Proxyon 的聲音句借自 Laserdance，自己沒有聲音或做法事實，主線撤稿（skipped）。
+- 2025 年事實主線核實：Yasunao Tone 2025 年 5 月於紐約過世、享年 90 歲（RA、Mixmag 兩源）。
+- 主線審稿 18 處：第一句補國籍或身分——Robert Hampson、Recoil、Rockers Hi-Fi、Pan American、石野卓球、Thomas Brinkmann、Yasunao Tone（連帶刪細節壓字數）；在世者只留一項成績——Hampson 刪英國獨立榜榜首、Reznor & Ross 只留《The Social Network》奧斯卡（刪金球、《Soul》奧斯卡、葛萊美、艾美）；石野卓球 刪「世界最大」「號稱日本最大」，片假名ピエール瀧→皮耶瀧、電気グルーヴ→Denki Groove。
+- 已上線修正 2 處：ar-d-503 田中フミヤ 正文片假名改 Fumiya Tanaka，並刪「1990 年代前半」壓回 155 字（當時特注誤要求照寫片假名，與用字規則衝突，以規則為準）。
+
+## ar-d-506（2026-11-05，dark ambient、techno、電子與配樂；多合作卡）
+
+- 39 位寫：16 full、23 thin；Alteria Percepsyne 沒有任何聲音或做法事實，不寫（skipped）。
+- 合作卡：Apocryphos／Kammarheit／Atrium Carceri 兩張卡、Atrium Carceri 兩張合作卡各換角度寫，不重複同一段生平。
+- 主線審稿 6 處：Almamegretta 單名卡 263 字超標，刪「九〇年代義大利音樂革新的重要名字之一」並補「義大利」；Onyx 刪單一樂評的「立即經典」；Berlin 補「美國」、〈Take My Breath Away〉「登上冠軍、銷量最好」改「最廣為人知」（在世者不寫榜單銷量）；Ben Salisbury 刪艾美獎提名（只留 Ivor Novello）。
+
+## ar-d-507（2026-11-05，ambient、drone、dark ambient、techno、electro；多合作卡）
+
+- 39 位寫：20 full、19 thin；Djorvin Clain 沒有身世與本人聲音事實，不寫（skipped）。
+- 題材照寫：Celer 的 Danielle Baquet-Long 2009 年心臟衰竭驟逝；DJ Cheb i Sabbah 2013 年胃癌過世。
+- 主線審稿 22 處：第一句補國籍或身分——Dirty Beaches、DJ Cheb i Sabbah、DJ Spooky、Elsa Justel、Efdemin、Elektric Music、Christopher Young、Damon Wild、Daniel Menche、David García Díaz、DIN A Testbild、Dettinger（連帶刪細節壓回字數：Cheb i Sabbah「生前仍在做新專輯」、Justel「傑出藝術家」稱號、Efdemin 年紀與喇叭數、Young 試映沉默、Wild 唱片行郵購、Menche 的 Sunn O))) 客串）；Dronny Darko & protoU 刪「夫妻檔／妻子 Sasha」（妻子或妹妹兩源矛盾，特注已要求不寫）；CAPSULE「中田ヤスタカ」改 Yasutaka Nakata（片假名規則），刪 bossa nova 句壓字數。
+
+## ar-d-508（2026-11-05，電子、dark ambient、IDM、techno、配樂；多合作卡）
+
+- 39 位寫：14 full、25 thin；Hipnosis 三格全空，不寫（skipped）。
+- 題材照寫：Harold Budd 2020 年因新冠併發症辭世；Jóhann Jóhannsson 2018 年因心臟衰竭辭世；God Body Disconnect 的團名來自 Moallem 自述的一次精神病發作；Hallucinator 專輯獻給 1993 年遇刺的 Stephen Lawrence。
+- 主線審稿 2 處：Ian William Craig 第一句補「加拿大歌手與作曲家」；Gaudi + Nusrat「世界最偉大的 qawwali 歌手」軟化為「最具代表性的 qawwali 歌手之一」。
+
+## ar-d-509（2026-11-05，電子、電聲、dark ambient、synth-pop、實驗；多合作卡）
+
+- 39 位寫：22 full、17 thin；Kloob & Onasander 只有一條來源，「Landini 即 Onasander」也是推得，主線撤稿（skipped）。
+- 2025 年事實主線核實：Marie Davidson《City of Clowns》入圍 2025 年 Polaris 音樂獎短名單（CBC、Billboard Canada 兩源）。
+- 題材照寫：Kirlian Camera 1999 年遭德國媒體指控新法西斯傾向、樂團否認，抗議與演出取消延續到 2002 年；Lab Rat XL（James Stinson）2002 年心臟病併發症過世；Maryanne Amacher 2009 年摔傷後中風辭世；Luke Schneider 自述生活失控、恐慌發作（「自行戒斷」一句只有本人單源，刪）。
+- 主線審稿 16 處：單名卡超 250 字壓回——Kirlian Camera 265→241（刪團名由來、補「義大利樂團」）、Maryanne Amacher 279→245（刪父親職業與 Cage 暴風雨音效、補「美國作曲家」）；第一句補國籍或身分——Jonty Harrison、Karl Bartos、Kristof Hahn、Luke Schneider、Marie Davidson、Marcus Schmickler、Michael Brook、Mount Vernon Arts Lab（連帶刪細節壓字數）；Harrison 刪「該賽史上最重要的作品之一」。
+
+## ar-d-510（2026-11-05，電子、dark ambient、folk、嘻哈與 lo-fi beat）
+
+- 36 位寫：17 full、19 thin；不寫 4 位——Purrple Cat、less.people（沒有身世或聲音事實），NOGYMX、Kupla（研究稿只有一條來源，比照 ar-d-509 Kloob & Onasander 撤稿）。
+- 題材照寫：E.S.G. 因持有毒品入獄一年；Big Moe 2007 年心臟病發昏迷後過世；Prince Be（P.M. Dawn）2005 年中風、2016 年因糖尿病併發腎病過世；Mika Vainio（Ø）2017 年過世。
+- 主線審稿 8 處：在世者只留一項成績——Norbert Möslang 刪瑞士電影獎（留瑞士聯邦文化署的先驅評價）、蛋堡 金曲獎只寫最佳華語專輯、Ghostpoet「兩度入圍水星獎」改「首張即入圍」、P.M. Dawn 刪「又有兩首進前十」；E.S.G. 刪單一報紙的「最被低估」；Steve von Till、Fursaxa 第一句補國籍（連帶刪「不教音樂」）。
+
+## ar-d-511（2026-11-05，嘻哈、lo-fi beat、器樂 hip hop 與前衛／自由爵士）
+
+- 39 位寫：19 full、20 thin；Aviino 查不到國籍與身分、素材幾乎全來自 Chillhop 一家，不寫（skipped）。
+- 題材照寫：L'Orange 因膽脂瘤嚴重失聰、兩次耳部手術；Domo Genesis 清寒成長、弟弟有自閉症。
+- 主線審稿 9 處：媒體榜單不寫——Req 刪 Fact 史上 50 大 trip-hop 第 14 名、Babyfather 刪 TMT 與 RA 年度第一、Curren$y & Harry Fraud 刪 XXL Awards 年度 EP；Req「當地最受推崇的塗鴉作者之一」改「當地知名」；Black Kray 刪「Goth Money 開創 emo rap」（首創宣稱，兩源同屬維基家族）；Anna Webber 刪 BMI Charlie Parker 獎（在世者只留古根漢）；Ned Rothenberg「横山」改台灣字形「橫山」；Revolutionary Ensemble 補「美國」並壓回 250 字。
+
+## ar-d-512（2026-11-05，自由爵士、歐洲即興、前衛爵士；大量合作卡）
+
+- 40 位全寫：33 full、7 thin。合作卡裡同一人（Barry Guy、Evan Parker、Peter Kowald、Derek Bailey、John Zorn、Han Bennink）各張換角度寫，未重複同一段生平。
+- 2025 年事實主線核實：Howard Riley 2025 年 2 月過世（Jazz Journal、Free Jazz Collective 兩源）；Marilyn Crispell 獲選 2025 NEA Jazz Masters（NEA、BMI 兩源）。
+- 題材照寫：Joe Harriott 晚年失業、赤貧，癌症過世；Peter Kowald 2002 年演出後心臟病發猝逝；Derek Bailey 2005 年因運動神經元疾病過世；Connie Crothers 2016 年肺癌過世；Alan Tomlinson 2024 年 2 月辭世。
+- 主線審稿 10 處：Joe Harriott 單名卡 270 字超標壓回 244；Aki Takase 片假名「高瀬アキ」改羅馬字，「德語區最重要的爵士獎之一」軟化為「德國爵士獎」；Bob Ostertag、Connie Crothers、Denman Maroney 第一句補國籍與身分（連帶刪 Ostertag 的 CC 授權句、Crothers 的教學細節）。
+
+## ar-d-513（2026-11-05，自由爵士與歐洲即興；幾乎全是合作卡）
+
+- 40 位全寫：31 full、9 thin。Evan Parker 六張合作卡、Joëlle Léandre 四張、Ivo Perelman 三張、Carter／Bradford 三張各取不同一面寫，每張只用一兩句帶過共同成員。
+- 補洞 QA 例外：Han Bennink / Misha Mengelberg / John Tchicai 三人卡搜尋 9 次超過上限 8，三人合計、照實記，不退件。
+- 題材照寫：Henry Grimes 1968 年前後賣掉受損的貝斯、淡出樂壇被誤列已故，2002 年被社工尋獲，2020 年因新冠併發症過世；Threadgill 隨陸軍赴越南、春節攻勢中受傷；Jimmy Lyons 1986 年肺癌過世；Karl Berger 2023 年手術併發症過世；John Russell 2021 年癌症過世；Barre Phillips 2024 年過世。
+- 主線審稿 6 處：Joe Morris「同代最傑出」改「同代重要的…之一」（兩源不獨立）；Georg Graewe 只留 SWR 爵士獎；Jacques Coursil 補「法國」；沖至的老師「渡辺貞夫」改台灣字形「渡邊貞夫」；Parker & Fernández 刪「加泰隆尼亞最早一批前衛音樂家」（序數宣稱、單源）；Threadgill 刪 NEA Jazz Master（在世者只留普立茲）。
+
+## ar-d-514（2026-11-05，前衛爵士、自由即興，加 synth-pop、dream pop、獨立流行）
+
+- 40 位全寫：29 full、11 thin。五張 Matthew Shipp 合作卡各寫搭檔；Matthew Shipp “String” Trio 是卡池裡另一個鍵（彎引號），改寫 Maneri 與 Parker，與已上線的 String Trio 不重複。
+- 2025 年事實主線核實：Sylvie Courvoisier 獲 2025 年瑞士音樂大獎（瑞士聯邦文化署、Intakt 兩源）；Crispell 2025 NEA Jazz Masters 沿用 ar-d-512 已核實。
+- 題材照寫：Misha Mengelberg 晚年失智、2017 年過世；Leroy Jenkins 2007 年肺癌過世；Les McCann 2023 年肺炎過世；Roy Montgomery 妻子過世後錄下《Temple IV》；k.d. lang 1992 年出櫃後遭美國鄉村電台禁播；Michael Seyer 寫父親罹癌。Lowell Davidson 死因「肺結核」只有單源，刪。
+- 主線審稿 24 處：單名卡超 250 壓回——Lewis 276→245、Lowell Davidson Trio 276→247；第一句補國籍或身分——Atwood-Ferguson、Mengelberg、New York Art Quartet、Paul Lytton、Peter Evans、Roy Montgomery、Robin Guthrie、Lowell Davidson、Les McCann（連帶刪細節壓字數）；在世者不寫榜單銷量——Lily Chou-Chou 刪「沒登上榜首」、Sean Nicholas Savage 刪 Solange 專輯的 Billboard 冠軍、Bonanza Banzai 刪金唱片；超級評語軟化或刪——Leroy Jenkins「首屈一指」、Les McCann「嘻哈取樣的源頭」、Crispell「最原創、最受邀約」。
+
+## ar-d-515（2026-11-05，doom／drone metal、funeral doom、post-rock、slowcore、shoegaze、RIO）
+
+- 40 位全寫：11 full、29 thin。
+- 2025 年事實主線核實：lovesliescrushing 2025 年 5 月加入 The Numero Group、同年 10 月重發擴充版首作（維基、多家唱片行目錄）；「排定推出」改為已推出。
+- 題材照寫：Acetone 主唱 Richie Lee 2001 年輕生、樂團解散；Bell Witch 前鼓手 Adrian Guerra 2016 年過世；Dark Sanctuary 與 Bushido 的取樣官司（只寫法院程序與結果）。Drowse 的「解離性崩潰」只有維基單源，不寫。
+- 主線審稿 6 處：Aidan Baker「冨田勲」改台灣字形「富田勳」；Polaris「柏原譲」改「柏原讓」；Fear Falls Burning 刪 2024 年最終演出（只有搜尋摘要單源）；Corrupted「最重、最黑暗」「不可估量」改「被認為深深影響」；Esben and the Witch 刪 BBC Sound of 2011（媒體榜單）；lovesliescrushing 時態更正。
+
+## ar-d-516（2026-11-05，post-rock、slowcore、funeral doom、stoner、no wave、日本／巴西／台灣獨立搖滾）
+
+- 36 位寫：12 full、24 thin；不寫 4 位——Numbers（沒有聲音事實）、sToa（主線撤稿：唯一的「做法」句只是「歌詞據說帶哲學性」，過不了門檻）、Valet、Calla（研究稿只有一條來源）。
+- 題材照寫：SIANspheric 前身 Gleet 成員 Scott Kish 1994 年車禍身亡；Colosseum 主腦 Palomäki 2010 年過世；James Chance 2024 年過世；Aarktica 的 DeRosa 右耳失聰。Asva 成員親屬遇害、Dead Meadow 成員過世只有單源，不寫。
+- 主線審稿 15 處：第一句補國籍或身分——Richard Hawley、sugar plant、As Mercenárias、Brant Bjork、Chris Isaak、Daniel Lanois（連帶刪細節壓字數）；在世者只留一項成績——Hawley 刪奧利佛獎、Chris Isaak 刪英美單曲榜前十；As Mercenárias 刪《Bizz》年度專輯（媒體榜單）；sugar plant 平假名「庄山ちなつ」改羅馬字；cero「髙城」「荒内」改台灣字形「高城」「荒內」。
+
+## ar-d-517（2026-11-05，搖滾／soul 混編：drone、post-rock、no wave、R&B、neo-soul）
+
+- 37 位寫：24 full、13 thin；不寫 3 位——pasteboard、Case、Bobby Oroza（研究稿都只有一條來源，比照 Kloob & Onasander）。
+- 題材照寫：Lowlife 主唱 Craig Lorentson 2010 年因肝腎問題過世；Gerald Levert 2006 年過世（死因各源不一，不寫）；Kem 早年毒癮、無家可歸後戒除；Jon Lucien 兩位女兒相繼喪生、古柯鹼成癮、2007 年過世；Love Unlimited 的 Diane Taylor 1985 年癌症過世；Raveena 家族經歷 1984 年反錫克教暴動。Will Downing 的病況只有單源，不寫。
+- 主線審稿 18 處：第一句補國籍或身分——DSPS、Jim James、Jonathan Wilson、Kadhja Bonet、Lowlife、Gerald Levert、Kem（連帶刪細節壓字數）；在世者不寫串流與銷量——DSPS 刪 YouTube 600 萬次、Kem 刪五個月約 1 萬張、Kenny Lattimore 刪「銷量回升」、Goapele 刪約 5000 張、Love Unlimited 刪金唱片／百萬銷量／專輯榜第 3 與「繼 Supremes 之後第一」；Mars & DNA「森郁恵」改台灣字形「森郁惠」。
+
+## ar-d-518（2026-11-05，soul、R&B、neo-soul、UK soul、華語與日本 R&B）
+
+- 39 位寫：21 full、18 thin；Keith Washington 沒有聲音或做法事實，不寫（skipped）。
+- 2025 年事實主線核實：方大同 2025 年 2 月 21 日病逝、享年 41 歲，經紀公司稱抗病五年（TVBS、星島兩源）；不寫死因推測。出生地照 facts 寫夏威夷（特注誤寫「香港出生」，以 facts 為準）。
+- 題材照寫：Celeste 父親肺癌過世；Aaron Hall 自幼口吃；Kali Uchis 曾被趕出家門住在車裡。Intro 的 Kenny Greene 死於愛滋併發症只有維基家族單源，刪死因、只留「32 歲過世」；SiR 的物質濫用、Angela Winbush 的卵巢癌、Greentea Peng 的成癮都只有單源，不寫。
+- 主線審稿 32 處：第一句補國籍或身分——Celeste、Charlotte Day Wilson、David Porter、Gabriel Garzón-Montano、Gabriels、Gloria Scott、Jessie Ware、Kan Sano、Kali Uchis、Matt Martians、Raheem DeVaughn、SiR、Steve Spacek、Syleena Johnson、Aaron Hall、Andra Day、Angela Winbush（連帶刪細節壓回 250 字）；在世者只留一項成績——David Porter 刪孟菲斯名人堂、Marsha Ambrosius 刪 10 次葛萊美提名、Alex Isley 刪「兩項」、Andra Day 只留金球獎；Gloria Scott「重發並進了榜」改「重發後走紅」。
+
+## ar-d-519（2026-11-05，soul／R&B 與 roots reggae、dub、dancehall）
+
+- 37 位寫：24 full、13 thin；不寫 3 位——Keke Wyatt（沒有聲音事實）、Jezzreel（只有經銷商文案單源）、Don Carlos & Gold（主線撤稿：唯一的「做法」句只是 Gold 擔任合寫與和聲，過不了門檻；Don Carlos 本人已有介紹）。
+- 2025–26 年事實主線核實：Fat Freddy's Drop 創團成員 Chris Faiumu 2025 年 7 月意外辭世（RNZ、ODT 兩源）；Leon Thomas《Mutt》獲 2026 年葛萊美最佳 R&B 專輯（grammy.com、WERS 兩源）。
+- 題材照寫：Lacksley Castell 1983 年病逝、無墓碑，好友 Hugh Mundell 一個月前遇害；Junior Delgado 預言 Broadwater Farm 暴力的歌據傳遭禁、2005 年睡夢中過世；Peter Broggs 晚年中風癱瘓；Wesley Tinglin（The Viceroys）2018 年肺癌過世；Liniker 公開跨性別身分。
+- 主線審稿 16 處：在世者不寫榜單——Fat Freddy's Drop 刪紐西蘭專輯榜 111 週、Triston Palma 刪九首同時進前四十；第一句補國籍或身分——Triston Palma、Aisha、Don Carlos、Harry Mudie、Adrian Quesada、Junior Delgado、Little John（連帶刪細節壓回 250 字）；Junior Delgado 改寫句首避免連續兩句以年份開頭。
+
+## ar-d-520（2026-11-05，reggae：roots、dub、lovers rock、rocksteady；紐西蘭、墨西哥、法國、日本愛奴）
+
+- 34 位寫：22 full、12 thin；不寫 6 位——Wayne Wade、Audley Rollens、Delton Screechie、Earl Cunningham（沒有聲音或做法事實）、Flick Wilson、Junior Keatting（沒有身世、交代不了身分）。
+- Mad Professor 四張合作卡各寫搭檔，Mad Professor 本人只用一兩句帶過。
+- 題材照寫：Jacob Miller 1980 年車禍身亡；Larry Marshall 晚年阿茲海默症、2017 年過世；Devon Russell 1997 年腦瘤過世；Freddie McKay 1986 年心臟病過世；George Faith 2003 年癌症過世；Trinity Roots 解散時公司清算、欠稅；Carla Morrison 公開談焦慮與憂鬱。
+- 主線審稿 10 處：「金斯敦」全批統一為「京斯敦」（與前批一致）；在世者不寫榜單、銷量、獎項數——Tetrack 刪英國上榜、Trinity Roots 刪紐西蘭白金、Carla Morrison「三座拉丁葛萊美」改「拿過」、Susan Cadogan 刪英國前 5、Echo Minott 刪牙買加冠軍；Devon Russell 補「牙買加」；Oki 片假名「砂澤ビッキ」改 Bikki Sunazawa，刪成長地壓回 250 字。
+
+## 二十批收尾（2026-11-05）
+
+- ar-d-501～520 全數上架：寫 770 位、不寫 30 位（skipped，多為沒有聲音／身世事實或研究稿只有單源）；主線審稿合計 247 處，另修已上線 ar-d-503 田中フミヤ 2 處。
+- 與 main 合併時，main 同日另線（add-20261105-md38 等，ar-d-283～286）也寫了 Hammock、Kevin Richard Martin、Benoît Pioulard、Jacob Kirkegaard、Acetone 五位；建置依檔名排序，以本線 ar-d-5xx 版本為準（兩版都經主線審稿）。
+- 合併後介紹總數 10,454 位（本線前 9,650）。
+- 通則補充（本線累積）：研究稿只有一條來源的一律不寫；thin 的「做法」句若只剩角色分工或歌詞性質，撤稿；片假名與平假名人名一律改羅馬字，日文漢字轉台灣字形（冨→富、勲→勳、譲→讓、恵→惠、辺→邊、髙→高、内→內）；在世者的榜單名次、銷量、串流數、認證、獎項數一律不寫。

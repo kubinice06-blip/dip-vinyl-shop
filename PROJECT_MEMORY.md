@@ -1,5 +1,12 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-05｜dip-vinyl-shop｜藝人介紹二十批上線（雲端，卡池缺介紹藝人補登 ar-d-501～520；介紹 9,650 → 10,454）
+
+- **做了什麼**：卡池裡 1,019 位沒有介紹、也不在任何名冊的藝人，依卡數取前 800 位補登名冊 `batch-progress/artist-intro/roster-fill-20261105.json`（addedBy fill-20261105），按主類型切 ar-d-501～520（古典、電子、嘻哈、爵士、搖滾、soul、reggae／世界）。每批照 dip-artist-intro 跑完補洞 4 組、寫作 2 組、主線逐位審、上架。
+- **結果**：寫 770 位、不寫 30 位；主線審稿 247 處（另修已上線 1 位）。2025–26 年事實（Yasunao Tone、Howard Riley、方大同、Chris Faiumu 過世，Crispell NEA Jazz Masters、Courvoisier 瑞士音樂大獎、Marie Davidson Polaris 短名單、Leon Thomas 葛萊美、lovesliescrushing 加入 Numero）皆由主線以兩源核實。合併 main 後總數 10,454。
+- **主要檔案**：`batch-progress/artist-intro/fill-20261105.mjs`、`roster-fill-20261105.json`、`ar-c-rulings.md`（每批一段＋收尾段）；`desc-tools/batches/artist/{cut,facts,research,output}/ar-d-5xx-*`、`progress.json`；`data/artist-intros/`（manifest＋64 分片）；`audits/ARTIST-PUB-ISSUES.md`。
+- **驗證**：每批 `qa-artist.mjs gap`、`qa-artist.mjs out` 0 處（只剩刻意不寫的「缺 N 位」）；`scripts/build-artist-intros.mjs` 0 錯誤；與 main 合併後重建分片，main 另線同日寫的 5 位重複藝人以本線版本為準。
+
 ### 2026-11-05｜dip-vinyl-shop｜情緒薄格恍惚 Bandcamp 線 ml66／ml67：24 張上線（落恍惚 10）＋藝人介紹 22 位
 
 - **店主 11-05**：「恍惚跟頹靡可以去 Bandcamp 爬梳」；不收嘻哈、雷鬼、dub；每張要有 Bandcamp Daily 專文／月度或年度榜（`CUR-DISPATCH-bandcamp.md`）。並行的 md37／md38 做頹靡。
