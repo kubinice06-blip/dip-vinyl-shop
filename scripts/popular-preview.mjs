@@ -248,7 +248,7 @@ async function cmdAmp(outDir) {
     if (done.has(t.key)) return false;
     const a = apple.get(t.key); if (!a || !a.tracks?.length || a.tracks.length < 2) return false;
     const d = deezer.get(t.key);
-    return !d || !deezerUsable(a.tracks, d.rows);
+    return d && !deezerUsable(a.tracks, d.rows); // Deezer 還沒掃的先跳過（可分段續跑）
   });
   console.log(`amp: ${done.size} done, ${todo.length} todo`);
   let n = 0;
