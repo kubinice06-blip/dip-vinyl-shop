@@ -107,6 +107,8 @@
 | 81 | ml61 | 恍惚電子：暖 IDM／braindance 慢盤、日本／亞洲暖電子 ＋ warm dub techno、ambient pop／downtempo 新世代 2010s–20s（只收電子盤） | ✅ 上線 20／落格 14（2026-11-04；策展 46、主線汰 10、研究汰 16；無錨點 glitch／Kompakt／dub techno 判冷判輕） |
 | 82 | md35 | 頹靡電子：深暗 dubstep／post-dubstep 慢盤（Burial 以外：Kode9、Shackleton、Pinch、Vex'd、Kryptic Minds、Andy Stott、Demdike Stare、Raime）＋ hauntology（The Caretaker、Ghost Box 系、Leyland Kirby、Philip Jeck 冷盤）＋ witch house（Salem、oOoOO、Holy Other）（店主 11-04：多電子、少嘻哈雷鬼；只收 genres 首位 electronic） | ✅ 上線 26／落格 24（2026-11-04；策展 51、主線汰 6、研究汰 19：140 BPM 推進／明亮／零來源；出格 Ekoplekz、Black Rain 判躁；不再單獨派） |
 | 83 | md36 | 頹靡電子：illbient（DJ Spooky、Sub Dub、Byzar、WordSound 系）＋ 冷 ambient techno／Berlin 慢盤（Monolake、Vladislav Delay、Porter Ricks、Köner 節拍盤、Biosphere 冷盤）＋ 慢工業電子／post-industrial ambient（Pan Sonic 靜盤、Raster-Noton 慢盤）＋ 暗 downtempo 新世代（Forest Swords、Actress、Huerco S.、Tim Hecker）（只收電子盤） | ✅ 上線 19／落格 19（2026-11-04；策展 49、讓位 md35 4、主線汰 10、研究汰 16：脈動鼓／暖和絃／雷鬼根／零來源；冷 techno 主盤池中已滿，不再派） |
+| 86 | ml64 | 恍惚電子二線 A：ambient／chill-out 經典廠牌二線（Waveform、Apollo、Instinct Ambient、Fax 二線；Ultimate Chill／Café del Mar 以外的藝人正規專輯）＋ downbeat／nu-jazz 電子暖盤（St Germain、Jazzanova 慢盤、NoW 以外二線、Bonobo 早期以外的 Ninja Tune 慢盤）＋ organic house／慢 Balearic 新世代 2015–2025（店主 11-04：多電子；只收 genres 首位 electronic） | 派→mood-ml64-65 |
+| 87 | ml65 | 恍惚電子二線 B：ambient pop／electronica 女聲暖盤（Kidkanevil、Hiatus、Emancipator 一路，Schnauss 合作者以外）＋ 日本／韓國／台灣暖電子 downtempo 二線 ＋ hypnagogic／lo-fi 非嘻哈器樂電子 ＋ 暖 trip-hop 器樂二線（女聲已在 ml56；只收 genres 首位 electronic；條號跳過 22841–23000 留給並行的 ml62／ml63） | 派→mood-ml64-65 |
 
 **暫停**：mc13 math rock、mc21 post-punk revival、mc30 minimalism（旋律清楚＝暖）、mc9／mc10／mc20／mc25／mc26 系的 synth-pop／new wave／K-pop／synthwave 續集（2026-10-23 體感標準：旋律清楚往暖，落雀躍）、mc23 art pop、ml4 系東亞續集、ml14 spiritual jazz（體感標準判冷，不是恍惚）、ml22、ml27。**重開**（體感標準下會落冷冽）：mc4、mc14、mc22、mc28。
 
@@ -275,3 +277,5 @@
 | ml59 | 22361 | roots reggae 人聲慢盤第二波（Twinkle Brothers、The Gladiators、Johnny Clarke、Max Romeo、Ras Michael、Mighty Diamonds 慢盤） | ✅ 上線 13／落格 13（2026-10-24；策展 19（濕混音 credit 篩子，主場景點名六組池中同人判輕擋掉五組）、主線汰 1（無混音者署名）、研究汰 5（dancehall／DJ、自家工程＋合成器、美國重混、多場次拼貼、Pablo 小調偏冷）；主場景見底） |
 | ml60 | 22681 | 恍惚電子：chillwave／hypnagogic 電子盤、vaporwave／mallsoft 暖盤、lo-fi house／慢 deep house、暖 ambient techno 二線（條號跳過 22521–22680 留給並行的 md35／md36） | ✅ 上線 14／落格 12（場景見底，約剩 5–8） |
 | ml61 | 22761 | 恍惚電子：暖 IDM／braindance、日本／亞洲暖電子、warm dub techno、ambient pop 新世代 | ✅ 上線 20／落格 14（只收池中同人已落恍惚的藝人才穩） |
+| ml64 | 23001 | 恍惚電子二線 A：ambient／chill-out 經典廠牌二線（Waveform、Apollo、Instinct Ambient、Fax 二線）、downbeat／nu-jazz 電子暖盤、organic house／慢 Balearic 新世代（條號跳過 22841–23000 留給並行的 ml62／ml63） | |
+| ml65 | 23081 | 恍惚電子二線 B：ambient pop／electronica 女聲暖盤、日韓台暖電子 downtempo 二線、hypnagogic／lo-fi 非嘻哈器樂電子、暖 trip-hop 器樂二線 | |
