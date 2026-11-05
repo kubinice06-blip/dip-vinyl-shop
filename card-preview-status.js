@@ -3845,4 +3845,5 @@ window.DipPreviewStatus = Object.freeze({
   "spacetime continuum|emit ecaps": "unavailable",
   "ulrich schnauss & jonas munk|epic": "unavailable",
   "aus|curveland": "unavailable",
+  "taiguara|viagem": "unavailable",
 });
