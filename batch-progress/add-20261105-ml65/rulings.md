@@ -69,6 +69,7 @@
 ## 主線審稿（2026-11-05，cloud-main）
 - 逐張審 9 張，抽核關鍵事實回研究稿：Sun Glitters 盧森堡、Victor Ferreira、Sug(r)cane、2011-03 自發；Hiatus Cyrus Shahrad、英伊混血、Lucky Thunder 2013-05-13、〈Delam〉父親朗讀波斯詩；John Beltran 1969 生於蘭辛、Retroactive、內頁 Billy Lopez 題詞、Peacefrog PF049 1996；Vondelpark Lewis Rainsbury、R&S 2013、Mark Brydon 混音；Ana Roxanne 18 歲得知雙性人、蘭花象徵、Kranky 2020-11-13、7 首約 39 分鐘、巴赫〈C 大調前奏曲〉；Khotin 艾德蒙頓、《Hello World》2014、Khotin Industries 2018-07-03、Ghostly 隔年黑膠；Seahawks Jon Tye／Pete Fowler、Cascine 2019-03-15、康瓦爾 The Centre Of Sound；《Eternal Beams》A 面雨雷實地錄音、B 面 Laraaji——皆一致。
 - **改 1 處**：`desc2:Ana Roxanne|Because of a Flower`「樂器、人聲與錄音都由她自己來」→「人聲、多數樂器與錄音都由她自己來」。依據：研究稿 facts 另載〈Take the Thorn, Leave the Rose〉的鋼琴另有掛名（Alessandro Moreschi），原句「樂器都由她」過度概括。已同步 input 層 note；研究稿兩條並存不改。
+- **改 2 處（上線後回補，2026-11-05）**：`desc2:Hiatus|Parklands` hook「父親在〈Delam〉裡朗讀波斯詩。」→「一張回望父親故鄉的電子專輯。」。依據：MB release-group 0f8dc568 曲目表 11 首無〈Delam〉；補洞稿（ar-d-282）的訪談來源寫〈Delam〉是《All the Troubled Hearts》的收尾曲，研究稿把它掛到《Parklands》是誤植。已同步 hooks-b、input 層；manifest 重建後 card_catalog 9 筆重推、KV 9 鍵重寫（stamp 20261105m65b）逐字回讀一致。
 
 ## 主線上線（條號 23151）
 - **23151**：上線 9 張：card_catalog 9／9、KV 9 鍵回讀逐字一致（stamp 20261105m65）、試聽 9 ready、seed +9、prepare／published gate 0 error（9 warning 皆 UPC）。封面 CAA 8＋Apple 1（John Beltran CAA 500）。寫入前對 origin/main seed 去重 0 撞。頂點 0（全批一般卡）。
