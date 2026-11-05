@@ -36,3 +36,8 @@
 - 23014：Night Moves 策展層「Rhodes」查無，實為迷幻鄉村＋tom 鼓＋班鳩琴＋Bolan 式假音；Domino 版為重製（加疊、重錄鼓）。moodGuess 描述存疑，三軸不明顯衝突。
 - 23015：Death and Vanilla 後半偏不祥（LB、Active Listener 皆稱 eerie／ominous），z 風險屬實；盤名卡單帶「...」，MB 無。Candy Claws 重壓縮、節奏有推進，x 風險中等。
 - 23016：Beachwood Sparks 兩張未推翻年份廠牌；首作〈Desert Skies〉彈跳，OWWT 暖霧相符。OWWT 發行日維基 10-09、MB 10-15，寫「2001 年秋」。
+
+## 研究 c 組
+- 23021｜Lilys《In the Presence of Nothing》卡單 label 寫 Sympathy for the Record Industry，推翻：MB／Wikipedia／Trouser Press 皆為 Slumberland＋spinART（1992-09 US）。請主線改卡單 label。
+- 23022｜The American Analog Set《Know by Heart》卡單 label 寫 Emperor Norton，推翻：實為 Tiger Style Records（TS-018，2001-09-04）；Emperor Jones 是前廠牌。請主線改卡單。
+- 23023｜moodGuess 存疑（聲音）：Barry White 三張（《Just Another Way…》《The Man》《I Love to Sing…》）評論均指有 disco／放克／中速可跳舞曲，非整張慢歌；A.A.S.《Know by Heart》拿掉 Farfisa、短歌、乾淨「更活潑」→ 判輕風險；Mojave 3《Out of Tune》評論稱比首張「更輕快有精神」。Mojave 3《Excuses》與 Lilys 聲音大致符合。聲音證據多為單一部落客（Soulfinger），已在 notes 標明。
