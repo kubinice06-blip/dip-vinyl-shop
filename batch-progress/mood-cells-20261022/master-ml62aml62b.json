@@ -666,6 +666,117 @@
   }
  },
  {
+  "artist": "Sigur Rós",
+  "album": "Valtari",
+  "year": 2012,
+  "label": "XL",
+  "country": "is",
+  "faction": "dreampop-90s",
+  "genres": [
+   "rock"
+  ],
+  "why": "池中 Takk／Ágætis byrjun 已落恍惚；Valtari 是同人最慢最霧的一張",
+  "moodGuess": {
+   "x": 1.3,
+   "y": 0.9,
+   "z": 0.3,
+   "why": "極慢，無鼓，弦樂與吉他浸在長殘響，漂浮包覆"
+  },
+  "evidence": [
+   "https://coverartarchive.org/release-group/7c78acfc-3253-42b9-abdf-06085e99d71b/front",
+   "https://musicbrainz.org/release-group/7c78acfc-3253-42b9-abdf-06085e99d71b"
+  ],
+  "mbRgMbid": "7c78acfc-3253-42b9-abdf-06085e99d71b",
+  "mbAbsenceProof": null,
+  "manualEvidenceUrls": [],
+  "releaseException": "",
+  "queryAlias": "",
+  "uncertain": "z 貼 0.3，部分聽感偏冷空曠",
+  "group": "ml62a",
+  "factionZh": "厚殘響慢歌與 90s–00s 暖 dream pop／cosmic country 二線",
+  "mb": {
+   "title": "Valtari",
+   "type": "Album",
+   "sec": [],
+   "date": "2012-05-23",
+   "credit": "Sigur Rós"
+  }
+ },
+ {
+  "artist": "Yo La Tengo",
+  "album": "Fade",
+  "year": 2013,
+  "label": "Matador",
+  "country": "us",
+  "faction": "dreampop-90s",
+  "genres": [
+   "rock"
+  ],
+  "why": "池中 I Can Hear／There's a Riot Going On 已落恍惚；Fade 同樣暖慢",
+  "moodGuess": {
+   "x": 2.3,
+   "y": 0.7,
+   "z": 0.6,
+   "why": "中慢拍，暖吉他與弦樂、柔和殘響，溫厚"
+  },
+  "evidence": [
+   "https://coverartarchive.org/release-group/6d08ebb5-78ff-40d9-9ecb-37c8f06cf089/front",
+   "https://musicbrainz.org/release-group/6d08ebb5-78ff-40d9-9ecb-37c8f06cf089"
+  ],
+  "mbRgMbid": "6d08ebb5-78ff-40d9-9ecb-37c8f06cf089",
+  "mbAbsenceProof": null,
+  "manualEvidenceUrls": [],
+  "releaseException": "",
+  "queryAlias": "",
+  "uncertain": "y 0.7 偏近，製作較乾淨可能落放鬆",
+  "group": "ml62a",
+  "factionZh": "厚殘響慢歌與 90s–00s 暖 dream pop／cosmic country 二線",
+  "mb": {
+   "title": "Fade",
+   "type": "Album",
+   "sec": [],
+   "date": "2013-01-14",
+   "credit": "Yo La Tengo"
+  }
+ },
+ {
+  "artist": "Robin Guthrie & Harold Budd",
+  "album": "Another Flower",
+  "year": 2020,
+  "label": "Darla",
+  "country": "gb",
+  "faction": "dreampop-90s",
+  "genres": [
+   "rock"
+  ],
+  "why": "池中 After the Night Falls 已落恍惚；同組合的鋼琴＋吉他殘響霧",
+  "moodGuess": {
+   "x": 1.3,
+   "y": 0.7,
+   "z": 0.3,
+   "why": "極慢無鼓，Budd 鋼琴與 Guthrie 吉他殘響霧，暖"
+  },
+  "evidence": [
+   "https://coverartarchive.org/release-group/01e16a21-22b2-47d6-a14c-f693c4f98bfa/front",
+   "https://musicbrainz.org/release-group/01e16a21-22b2-47d6-a14c-f693c4f98bfa"
+  ],
+  "mbRgMbid": "01e16a21-22b2-47d6-a14c-f693c4f98bfa",
+  "mbAbsenceProof": null,
+  "manualEvidenceUrls": [],
+  "releaseException": "",
+  "queryAlias": "",
+  "uncertain": "偏 ambient，MB 年份 2020 可能為重發，需主線核對原盤年與 genres；y 0.7、z 0.3 貼邊",
+  "group": "ml62a",
+  "factionZh": "厚殘響慢歌與 90s–00s 暖 dream pop／cosmic country 二線",
+  "mb": {
+   "title": "Another Flower",
+   "type": "Album",
+   "sec": [],
+   "date": "2020-12-04",
+   "credit": "Robin Guthrie & Harold Budd"
+  }
+ },
+ {
   "artist": "Barry White",
   "album": "Just Another Way to Say I Love You",
   "year": 1975,
@@ -1292,6 +1403,265 @@
    "sec": [],
    "date": "2010-01-01",
    "credit": "The‐Dream"
+  }
+ },
+ {
+  "artist": "Phyllis Hyman",
+  "album": "Can't We Fall in Love Again?",
+  "year": 1981,
+  "label": "Arista",
+  "country": "us",
+  "faction": "strings-slow-70s80s",
+  "genres": [
+   "soul"
+  ],
+  "why": "Phyllis Hyman 的抒情慢歌盤，Thom Bell 製作，弦樂與厚人聲，池中同人 I Refuse to Be Lonely 落恍惚。",
+  "moodGuess": {
+   "x": 2.4,
+   "y": 0.8,
+   "z": 1.2,
+   "why": "慢情歌、弦樂與電鋼琴墊、低沉女聲，暖"
+  },
+  "evidence": [
+   "https://musicbrainz.org/release-group/d936988f-fda7-4589-87d8-31d8fd7ae5b7",
+   "https://coverartarchive.org/release-group/d936988f-fda7-4589-87d8-31d8fd7ae5b7/front"
+  ],
+  "mbRgMbid": "d936988f-fda7-4589-87d8-31d8fd7ae5b7",
+  "mbAbsenceProof": null,
+  "manualEvidenceUrls": [],
+  "releaseException": "",
+  "queryAlias": "",
+  "uncertain": "含少量中速曲，y 貼邊",
+  "group": "ml62b",
+  "factionZh": "70s–80s 厚弦樂慢板靈魂",
+  "mb": {
+   "title": "Can’t We Fall in Love Again",
+   "type": "Album",
+   "sec": [],
+   "date": "1981-06-12",
+   "credit": "Phyllis Hyman"
+  }
+ },
+ {
+  "artist": "Teddy Pendergrass",
+  "album": "Joy",
+  "year": 1988,
+  "label": "Elektra",
+  "country": "us",
+  "faction": "strings-slow-70s80s",
+  "genres": [
+   "soul"
+  ],
+  "why": "Pendergrass 後期以慢歌與抒情為主的盤，池中 It's Time for Love／Love Language 同型落恍惚。",
+  "moodGuess": {
+   "x": 2.6,
+   "y": 0.8,
+   "z": 1.3,
+   "why": "慢中板、80s 合成器低音與柔滑人聲，暖"
+  },
+  "evidence": [
+   "https://musicbrainz.org/release-group/4c9213c5-8f05-3ce8-b5d6-ef290fe13fc1",
+   "https://coverartarchive.org/release-group/4c9213c5-8f05-3ce8-b5d6-ef290fe13fc1/front"
+  ],
+  "mbRgMbid": "4c9213c5-8f05-3ce8-b5d6-ef290fe13fc1",
+  "mbAbsenceProof": null,
+  "manualEvidenceUrls": [],
+  "releaseException": "",
+  "queryAlias": "",
+  "uncertain": "含 New Jack 式中速曲",
+  "group": "ml62b",
+  "factionZh": "70s–80s 厚弦樂慢板靈魂",
+  "mb": {
+   "title": "Joy",
+   "type": "Album",
+   "sec": [],
+   "date": "1988-04-25",
+   "credit": "Teddy Pendergrass"
+  }
+ },
+ {
+  "artist": "Peabo Bryson",
+  "album": "Turn the Hands of Time",
+  "year": 1981,
+  "label": "Capitol",
+  "country": "us",
+  "faction": "strings-slow-70s80s",
+  "genres": [
+   "soul"
+  ],
+  "why": "Peabo 與 I Am Love 同期的抒情盤，同人 Crosswinds 落恍惚。",
+  "moodGuess": {
+   "x": 2.5,
+   "y": 0.8,
+   "z": 1.3,
+   "why": "慢情歌、弦樂與電鋼琴，暖"
+  },
+  "evidence": [
+   "https://musicbrainz.org/release-group/dd6a00db-f99e-4e28-bfdb-54c92acde3f5",
+   "https://coverartarchive.org/release-group/dd6a00db-f99e-4e28-bfdb-54c92acde3f5/front"
+  ],
+  "mbRgMbid": "dd6a00db-f99e-4e28-bfdb-54c92acde3f5",
+  "mbAbsenceProof": null,
+  "manualEvidenceUrls": [],
+  "releaseException": "",
+  "queryAlias": "",
+  "uncertain": "y 貼邊",
+  "group": "ml62b",
+  "factionZh": "70s–80s 厚弦樂慢板靈魂",
+  "mb": {
+   "title": "Turn the Hands of Time",
+   "type": "Album",
+   "sec": [],
+   "date": "1981-02",
+   "credit": "Peabo Bryson"
+  }
+ },
+ {
+  "artist": "Peabo Bryson",
+  "album": "All My Love",
+  "year": 1989,
+  "label": "Capitol",
+  "country": "us",
+  "faction": "strings-slow-70s80s",
+  "genres": [
+   "soul"
+  ],
+  "why": "Peabo 80s 末的抒情情歌盤，合成器墊厚。",
+  "moodGuess": {
+   "x": 2.5,
+   "y": 0.8,
+   "z": 1.3,
+   "why": "慢情歌、合成器墊與柔和混響，暖"
+  },
+  "evidence": [
+   "https://musicbrainz.org/release-group/47f748a7-2def-33de-82eb-3479598bf3f4",
+   "https://coverartarchive.org/release-group/47f748a7-2def-33de-82eb-3479598bf3f4/front"
+  ],
+  "mbRgMbid": "47f748a7-2def-33de-82eb-3479598bf3f4",
+  "mbAbsenceProof": null,
+  "manualEvidenceUrls": [],
+  "releaseException": "",
+  "queryAlias": "",
+  "uncertain": "80s 製作偏亮",
+  "group": "ml62b",
+  "factionZh": "70s–80s 厚弦樂慢板靈魂",
+  "mb": {
+   "title": "All My Love",
+   "type": "Album",
+   "sec": [],
+   "date": "1989",
+   "credit": "Peabo Bryson"
+  }
+ },
+ {
+  "artist": "Ray, Goodman & Brown",
+  "album": "Stay",
+  "year": 1981,
+  "label": "Polydor",
+  "country": "us",
+  "faction": "strings-slow-70s80s",
+  "genres": [
+   "soul"
+  ],
+  "why": "三人合唱團的慢歌取向盤，池中 II 落恍惚，合聲與電鋼琴包覆。",
+  "moodGuess": {
+   "x": 2.4,
+   "y": 0.8,
+   "z": 1.2,
+   "why": "慢拍合聲、電鋼琴與低音，暖"
+  },
+  "evidence": [
+   "https://musicbrainz.org/release-group/882254ca-c7ab-413c-9a19-a48435a65a8d",
+   "https://coverartarchive.org/release-group/882254ca-c7ab-413c-9a19-a48435a65a8d/front"
+  ],
+  "mbRgMbid": "882254ca-c7ab-413c-9a19-a48435a65a8d",
+  "mbAbsenceProof": null,
+  "manualEvidenceUrls": [],
+  "releaseException": "",
+  "queryAlias": "",
+  "uncertain": "含一兩首中速",
+  "group": "ml62b",
+  "factionZh": "70s–80s 厚弦樂慢板靈魂",
+  "mb": {
+   "title": "Stay",
+   "type": "Album",
+   "sec": [],
+   "date": "1981",
+   "credit": "Ray, Goodman & Brown"
+  }
+ },
+ {
+  "artist": "Adriana Evans",
+  "album": "Walking with the Night",
+  "year": 2010,
+  "label": "Shanachie",
+  "country": "us",
+  "faction": "rnb-haze",
+  "genres": [
+   "soul"
+  ],
+  "why": "Adriana Evans 的夜間慢拍新靈魂，同人池中首張落恍惚。",
+  "moodGuess": {
+   "x": 2.3,
+   "y": 0.8,
+   "z": 1,
+   "why": "慢拍、厚電鋼琴與貝斯、低語人聲"
+  },
+  "evidence": [
+   "https://musicbrainz.org/release-group/6025a155-d009-48b2-8af5-e1bdd2daec71",
+   "https://coverartarchive.org/release-group/6025a155-d009-48b2-8af5-e1bdd2daec71/front"
+  ],
+  "mbRgMbid": "6025a155-d009-48b2-8af5-e1bdd2daec71",
+  "mbAbsenceProof": null,
+  "manualEvidenceUrls": [],
+  "releaseException": "",
+  "queryAlias": "",
+  "uncertain": "y 貼邊",
+  "group": "ml62b",
+  "factionZh": "合成器厚霧 R&B",
+  "mb": {
+   "title": "Walking With the Night",
+   "type": "Album",
+   "sec": [],
+   "date": "2010-02-08",
+   "credit": "Adriana Evans"
+  }
+ },
+ {
+  "artist": "Billy Paul",
+  "album": "Lately",
+  "year": 1985,
+  "label": "Total Experience",
+  "country": "us",
+  "faction": "strings-slow-70s80s",
+  "genres": [
+   "soul"
+  ],
+  "why": "Billy Paul 80s 抒情盤，同人 When Love Is New 落恍惚。",
+  "moodGuess": {
+   "x": 2.5,
+   "y": 0.8,
+   "z": 1.2,
+   "why": "慢情歌、合成器墊，暖"
+  },
+  "evidence": [
+   "https://musicbrainz.org/release-group/a73599c5-9f2c-48be-a0b5-2a644517fd9b",
+   "https://coverartarchive.org/release-group/a73599c5-9f2c-48be-a0b5-2a644517fd9b/front"
+  ],
+  "mbRgMbid": "a73599c5-9f2c-48be-a0b5-2a644517fd9b",
+  "mbAbsenceProof": null,
+  "manualEvidenceUrls": [],
+  "releaseException": "",
+  "queryAlias": "",
+  "uncertain": "內容未能逐曲確認，風險高",
+  "group": "ml62b",
+  "factionZh": "70s–80s 厚弦樂慢板靈魂",
+  "mb": {
+   "title": "Lately",
+   "type": "Album",
+   "sec": [],
+   "date": "1985",
+   "credit": "Billy Paul"
   }
  }
 ]

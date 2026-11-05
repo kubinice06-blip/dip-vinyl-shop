@@ -4,7 +4,7 @@
   {
    "id": "strings-slow-70s80s",
    "zh": "70s–80s 厚弦樂慢板靈魂",
-   "count": 15,
+   "count": 22,
    "why": "Barry White、Pendergrass、Manhattans、Billy Paul 等厚低頻＋弦樂墊的慢歌盤"
   },
   {
@@ -22,7 +22,7 @@
   {
    "id": "rnb-haze",
    "zh": "合成器厚霧 R&B",
-   "count": 2,
+   "count": 3,
    "why": "The-Dream：慢拍、低頻重、旋律黏"
   }
  ],
@@ -754,12 +754,237 @@
    "releaseException": "",
    "queryAlias": "",
    "uncertain": ""
+  },
+  {
+   "artist": "Phyllis Hyman",
+   "album": "Can't We Fall in Love Again?",
+   "year": 1981,
+   "label": "Arista",
+   "country": "us",
+   "faction": "strings-slow-70s80s",
+   "genres": [
+    "soul"
+   ],
+   "why": "Phyllis Hyman 的抒情慢歌盤，Thom Bell 製作，弦樂與厚人聲，池中同人 I Refuse to Be Lonely 落恍惚。",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 0.8,
+    "z": 1.2,
+    "why": "慢情歌、弦樂與電鋼琴墊、低沉女聲，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/d936988f-fda7-4589-87d8-31d8fd7ae5b7",
+    "https://coverartarchive.org/release-group/d936988f-fda7-4589-87d8-31d8fd7ae5b7/front"
+   ],
+   "mbRgMbid": "d936988f-fda7-4589-87d8-31d8fd7ae5b7",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "含少量中速曲，y 貼邊"
+  },
+  {
+   "artist": "Teddy Pendergrass",
+   "album": "Joy",
+   "year": 1988,
+   "label": "Elektra",
+   "country": "us",
+   "faction": "strings-slow-70s80s",
+   "genres": [
+    "soul"
+   ],
+   "why": "Pendergrass 後期以慢歌與抒情為主的盤，池中 It's Time for Love／Love Language 同型落恍惚。",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 0.8,
+    "z": 1.3,
+    "why": "慢中板、80s 合成器低音與柔滑人聲，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/4c9213c5-8f05-3ce8-b5d6-ef290fe13fc1",
+    "https://coverartarchive.org/release-group/4c9213c5-8f05-3ce8-b5d6-ef290fe13fc1/front"
+   ],
+   "mbRgMbid": "4c9213c5-8f05-3ce8-b5d6-ef290fe13fc1",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "含 New Jack 式中速曲"
+  },
+  {
+   "artist": "Peabo Bryson",
+   "album": "Turn the Hands of Time",
+   "year": 1981,
+   "label": "Capitol",
+   "country": "us",
+   "faction": "strings-slow-70s80s",
+   "genres": [
+    "soul"
+   ],
+   "why": "Peabo 與 I Am Love 同期的抒情盤，同人 Crosswinds 落恍惚。",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 0.8,
+    "z": 1.3,
+    "why": "慢情歌、弦樂與電鋼琴，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/dd6a00db-f99e-4e28-bfdb-54c92acde3f5",
+    "https://coverartarchive.org/release-group/dd6a00db-f99e-4e28-bfdb-54c92acde3f5/front"
+   ],
+   "mbRgMbid": "dd6a00db-f99e-4e28-bfdb-54c92acde3f5",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "y 貼邊"
+  },
+  {
+   "artist": "Peabo Bryson",
+   "album": "All My Love",
+   "year": 1989,
+   "label": "Capitol",
+   "country": "us",
+   "faction": "strings-slow-70s80s",
+   "genres": [
+    "soul"
+   ],
+   "why": "Peabo 80s 末的抒情情歌盤，合成器墊厚。",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 0.8,
+    "z": 1.3,
+    "why": "慢情歌、合成器墊與柔和混響，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/47f748a7-2def-33de-82eb-3479598bf3f4",
+    "https://coverartarchive.org/release-group/47f748a7-2def-33de-82eb-3479598bf3f4/front"
+   ],
+   "mbRgMbid": "47f748a7-2def-33de-82eb-3479598bf3f4",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "80s 製作偏亮"
+  },
+  {
+   "artist": "Ray, Goodman & Brown",
+   "album": "Stay",
+   "year": 1981,
+   "label": "Polydor",
+   "country": "us",
+   "faction": "strings-slow-70s80s",
+   "genres": [
+    "soul"
+   ],
+   "why": "三人合唱團的慢歌取向盤，池中 II 落恍惚，合聲與電鋼琴包覆。",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 0.8,
+    "z": 1.2,
+    "why": "慢拍合聲、電鋼琴與低音，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/882254ca-c7ab-413c-9a19-a48435a65a8d",
+    "https://coverartarchive.org/release-group/882254ca-c7ab-413c-9a19-a48435a65a8d/front"
+   ],
+   "mbRgMbid": "882254ca-c7ab-413c-9a19-a48435a65a8d",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "含一兩首中速"
+  },
+  {
+   "artist": "Adriana Evans",
+   "album": "Walking with the Night",
+   "year": 2010,
+   "label": "Shanachie",
+   "country": "us",
+   "faction": "rnb-haze",
+   "genres": [
+    "soul"
+   ],
+   "why": "Adriana Evans 的夜間慢拍新靈魂，同人池中首張落恍惚。",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 0.8,
+    "z": 1,
+    "why": "慢拍、厚電鋼琴與貝斯、低語人聲"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/6025a155-d009-48b2-8af5-e1bdd2daec71",
+    "https://coverartarchive.org/release-group/6025a155-d009-48b2-8af5-e1bdd2daec71/front"
+   ],
+   "mbRgMbid": "6025a155-d009-48b2-8af5-e1bdd2daec71",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "y 貼邊"
+  },
+  {
+   "artist": "Jon Lucien",
+   "album": "Premonition",
+   "year": 1976,
+   "label": "Columbia",
+   "country": "us",
+   "faction": "strings-slow-70s80s",
+   "genres": [
+    "soul"
+   ],
+   "why": "Jon Lucien 低沉嗓音配厚弦樂的慢板盤，加勒比靈魂爵士氛圍。",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 0.8,
+    "z": 1.2,
+    "why": "慢板、弦樂與低沉男中音、暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/04c8bda8-a3f9-469f-b00c-39926cffed50",
+    "https://coverartarchive.org/release-group/04c8bda8-a3f9-469f-b00c-39926cffed50/front"
+   ],
+   "mbRgMbid": "04c8bda8-a3f9-469f-b00c-39926cffed50",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "池中同人 Rashida／Mind's Eye y 僅 0.3–0.4，風險高；genres 可能偏 jazz"
+  },
+  {
+   "artist": "Billy Paul",
+   "album": "Lately",
+   "year": 1985,
+   "label": "Total Experience",
+   "country": "us",
+   "faction": "strings-slow-70s80s",
+   "genres": [
+    "soul"
+   ],
+   "why": "Billy Paul 80s 抒情盤，同人 When Love Is New 落恍惚。",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 0.8,
+    "z": 1.2,
+    "why": "慢情歌、合成器墊，暖"
+   },
+   "evidence": [
+    "https://musicbrainz.org/release-group/a73599c5-9f2c-48be-a0b5-2a644517fd9b",
+    "https://coverartarchive.org/release-group/a73599c5-9f2c-48be-a0b5-2a644517fd9b/front"
+   ],
+   "mbRgMbid": "a73599c5-9f2c-48be-a0b5-2a644517fd9b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "內容未能逐曲確認，風險高"
   }
  ],
  "notes": [
   "池中經典 soul 多判輕（y<0.5）：Isaac Hayes、Donny Hathaway、Curtis Mayfield、Al Green、Bobby Womack、Terry Callier 等同人已在池且落放鬆，一律不提；本組只取池中缺盤、且同人／同型曾有 y≥0.8 先例者（Barry White、Pendergrass、Manhattans、Billy Paul、Lee Fields）。",
   "Menahan Street Band《Make the Road by Walking》、El Michels Affair《Adult Themes》已在 curation-ml31；Dells 兩張（Standing Ovation、Mighty Mighty）MB 釘得住但 CAA 無封面，未提。",
   "多張為邊緣貼 y 0.8（見各張 uncertain），主線評分後可能掉放鬆；80s 製作偏亮者風險最高。",
-  "全部 MB release-group 釘住，CAA front 皆 200；無人工身分。"
+  "全部 MB release-group 釘住，CAA front 皆 200；無人工身分。",
+  "補提名 8 張（主線回饋後）：Dells、Forever by Your Side 等被汰；補的皆池中同人有恍惚先例，CAA 皆 200；Manhattans《It Feels So Good》、Ray Goodman & Brown《Take It to the Limit》、N'Dambi《Pink Elephant》無 CAA 封面未提。"
  ]
 }
