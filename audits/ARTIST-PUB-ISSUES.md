@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1695 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1703 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -1373,6 +1373,14 @@
 | ar-d-135 | Sol Invictus | Trees in Winter | 他後來說，加入英國國民陣線大概是此生最糟的決定 | 說法來自維基（2007 年）；Camden New Journal 2011 年報導引述同句但寫 BNP，組織名稱來源不一致，建議簡介維持不指明年份與出處或確認原始訪談。 | https://www.camdennewjournal.co.uk/article/sol-invictus-deny-racism-claims-slimelight-gig |
 | ar-d-135 | Sonne Hagal | Helfahrt | 錄音、編曲與混音只署 Thorsten Nestroy 一人 | 維基稱成員選擇匿名且未列名；搜尋找不到此人與團的任何對應，需對 Discogs 發行頁或碟封確認。 | https://en.wikipedia.org/wiki/Sonne_Hagal |
 | ar-d-135 | Wanda Jackson | Rockin' with Wanda | 〈Fujiyama Mama〉在日本卻拿下第一名 | 本層開頁的 Encyclopedia.com 只說「在日本相當成功」，未見「第一名」；名次未能由兩源核實，建議店主本機核對或改寫為「在日本大受歡迎」。 | https://www.encyclopedia.com/education/news-wires-white-papers-and-books/jackson-wanda |
+| ar-d-135 | The Cadillacs | The Fabulous Cadillacs | 綽號 Speedoo 的主唱是 Earl Carroll，Esther Navarro 是經理人且建議樂團開始編舞 | Vocal Group Hall of Fame 把 Navarro 描述為 Shaw Artist Agency 的秘書兼詞曲作者；KFOR 稿只說她與 Patterson 一起替團改名，兩份來源與維基歌曲頁都沒有「經理人」「建議編舞」。Speedoo 綽號是歌前或歌後也未見兩源，待核。 | https://vocalgroup.org/inductees/the-cadillacs/ |
+| ar-d-135 | LMF | 大懶堂 | 1999 年在香港成軍的 LMF | 英文維基稱 1992／1993 年起、1998 年正式成軍，中文維基稱 1999 年以現陣容組成；『成軍年』各源不一，建議改為『90 年代末』或改寫為 1999 年推出首張 EP。 | https://en.wikipedia.org/wiki/Lazy_Mutha_Fucka |
+| ar-d-136 | Changmo | Boyhood | 2020 年的 Golden Disc Awards，這首單曲獲最佳 R&B／嘻哈 | 第 35 屆 Golden Disc Awards 於 2021 年 1 月 9 日舉行（2020 年度作品），簡介寫 2020 年易誤解；且 Soompi 名單只列 Changmo 未列曲名，曲名來自 en 維基 | https://www.soompi.com/article/1447833wpp/winners-of-the-35th-golden-disc-awards-day-1 |
+| ar-d-136 | The Quiett | Q Train | 1985 年生於安養 | ko 維基作安養，en 維基、wikidata 與 Complex 作光明，出生地來源不一致，簡介宜改寫成京畿道或刪出生地 | https://en.wikipedia.org/wiki/The_Quiett |
+| ar-d-136 | Lunatic | Mauvais œil | 出片後不久兩人散夥 | 英文維基列團體活躍至 2003 年、2003 年解散；專輯 2000 年 10 月出版，『不久』與三年有落差，建議改為『約 2003 年解散』 | https://en.wikipedia.org/wiki/Lunatic_(group) |
+| ar-d-136 | Ärsenik | Quelques gouttes suffisent… | 入圍 1999 年 Victoires de la musique 饒舌／groove 專輯類 | 法文維基 Ärsenik 條目未提及此入圍；文化部稱專輯 1999 年雙金，法文維基稱 2001 年 SNEP 雙金。建議上線前自法文維基 Victoires 1999 條目核對 | https://fr.wikipedia.org/wiki/Ärsenik |
+| ar-d-136 | Soulja Slim | Give It 2 'Em Raw | 1998 年 5 月 19 日 … 交出的首作 | 維基同頁記他 1994 年已由 Parkway Pumpin'／Hype Enough 發行個人首作《Soulja 'Fa' Lyfe》；《Give It 2 'Em Raw》只是 No Limit 的首作。上線簡介『首作』宜加『在 No Limit 的』。維基導言自己也稱它是 debut studio album，來源之間不一致，可不改。 | https://en.wikipedia.org/wiki/Soulja_Slim |
+| ar-d-136 | Lil Tracy | Anarchy | 也被看作 Lil Tracy 正式出道的專輯 | 他 2016 年起已與 Lil Peep 合出《Castles》，2017 年發過《Tracy's Manga》《XOXO》《Life of a Popstar》等個人作品，2018 年〈Like a Farmer〉已打開知名度；維基只稱 Anarchy 是 2019 年的個人專輯之一，並未稱出道作。『正式出道』建議改成『他的首張個人錄音室專輯』或刪除。 | https://en.wikipedia.org/wiki/Lil_Tracy |
 | ar-d-141 | 沢田駿吾とオールスターズ | Fool On The Hill | 組團在 1952 年 | Victor 商品頁說 1952 年組自己的爵士 combo，但英文維基寫 1954 年成立 Double Beats、日文維基的 Double Beats Five 照片也是 1954 年；兩說並存。建議簡介註明『廠牌商品頁稱』或略去年份。 | https://en.wikipedia.org/wiki/Shungo_Sawada |
 | ar-d-141 | 秋吉敏子トリオ & Flute Quartet | Tuttie Flutie | 抵達波士頓第一晚台上正是 Bud Powell，舊識招她上去頂了一段 | NEA 傳記只寫她到波士頓後聽過 Bud Powell Trio、後來與他們同台，沒有『第一晚』與『舊識招上台』；jazz.com 完全沒提。細節可能來自日文維基或自傳，但本層找不到可開頁的來源，建議對一次來源或降級成『到波士頓後曾與 Bud Powell 同台』。 | https://www.arts.gov/honors/jazz/toshiko-akiyoshi |
 | ar-d-142 | The Wood Brothers | Ways Not to Lose | 2001 年重新合到一起，2001 年 5 月 24 日北卡羅來納州那場演出 | 英文維基持此說，但 Folk Alley 寫兄弟在 2004 年的同台演出後決定一起做音樂；年份有來源衝突，待店主視需要查證或改寫成不含年份。 | https://folkalley.com/basic-folk-podcast-oliver-wood/ |

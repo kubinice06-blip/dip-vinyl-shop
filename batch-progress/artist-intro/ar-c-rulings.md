@@ -2522,3 +2522,10 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 12 位全寫：7 full、5 thin（Marijannah、Aravt、A-Sound、mxrningstar、The Tourists (Mongolia)）。
 - 2025 年事實主線核實：Magnolian 的歌收進《Death Stranding 2: On the Beach》（官網、Mondo 原聲黑膠、VideoGamer 曲目表）；「〈Woods〉為遊戲新寫」官網只說出自新 LP，改寫。
 - 主線審稿 2 處：Magnolian 刪「唯一的獨唱表演者」（單源「唯一」）、〈Woods〉出處改寫。
+
+## ar-d-135（2026-11-05，ts5／ts6 新卡藝人：neofolk、psytrance、1950 年代 rockabilly／doo-wop、台灣與中港饒舌）
+
+- 40 位中寫 39 位：26 full、13 thin。不寫 Growling Mad Scientists（sound 查無，過不了 thin 門檻）。
+- 題材照寫：Death in June 的白人權力音樂指控與 Pearce 的否認、《Brown Book》因取樣納粹衝鋒隊歌曲在德國禁售；Sol Invictus 的 Wakeford 曾加入極右組織（組織名兩源不一，只寫「極右組織」）、2011 年遭抗議與聲明；Forseti 的 Ritter 心臟驟停；Hux Flux 溺水身亡；熊仔失眠與恐慌；LMF 的反送中歌曲。熊仔《PRO》第 34 屆金曲最佳華語專輯主線核實（公視、中時、NOWnews）。
+- 主線審稿 5 處：Clovers 刪「1950 年代最成功」（單源）；ØZI 刪「入圍六項」（在世者不寫獎項數）；Rome、Etnica「最…之一」改保守；Cosmosis 刪 NTS 媒體名。
+- 名冊名「谢帝」為簡體，正文用「謝帝」；名冊不改（QA 比對名冊）。
