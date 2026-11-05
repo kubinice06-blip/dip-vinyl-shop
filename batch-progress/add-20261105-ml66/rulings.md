@@ -55,3 +55,11 @@
 - 23325｜Adam Wiltzie《Eleven Fugues for Sodium Pentothal》：『個人首作』與『第四張個人作品』兩說矛盾，facts 不寫序數；末兩首較暗（Skinny），暖度大致可信。
 - 23326｜Rachika Nayar《Our Hands Against the Dusk》：大致吻合；張力段有 glitch 與白熱和弦，冷度可能略高。
 - 23327｜WebSearch 本組用 4 次（Hammock、Nayar HCC、Wiltzie、Nailah 各 1），超出上限 1 次，第 4 次是因為 Hammock Bandcamp 頁面轉址迴圈而無法直接抓取。
+
+## 主線研究汰換（不佔條號；2026-11-05）
+研究層交件後照各組「moodGuess 存疑」汰 14 → 剩 16；被汰卡移到 `dropped-cards.json`／`dropped-research.json`。
+- 能量（有拍推進）：Rachika Nayar《Heaven Come Crashing》（supersaw、Amen break、jungle）、Los Sara Fontan《Consuelo》（多節奏鼓、techno／dnb）、Photay《Waking Hours》（twitchy percussion、Latin disco）、Sui Zhen《Losing, Linda》（鼓機貝斯全程）、Kaitlyn Aurelia Smith《The Kid》（house 影響重拍、Buchla 晶亮）、Kaela《Supraliminal》（dnb＋電子流行、短曲乾淨）、Rose Bonica《Tears for the Tea Maker》（industrial-edged fractured beats）、Steve Hauschildt《Nonlin》（glitch／IDM 節拍、techno 尾段、alienating）、Croatian Amor《A Part of You in Everything》（garage grooves、與 Burial 並列）。
+- 色溫判冷：patten《Glow》（Pitchfork：小調、恐怖片氣氛）、Madeleine Cocolas《Bodies》（水聲處理＋壓迫黑暗段落、旋律性低）、Carmen Villain《Only Love From Now On》（融雪／霜意象、旋律含蓄）、sachi's mirror《Talking in a Different Way》（緊繃小品、無線電雜訊）、Dream Crease《Blue Hour in the Living Room》（Daily：cool New Age）。
+- 照研究推翻改卡單：Jonny Nash 廠牌 Melody As Truth；Dylan Henner 國別 gb；Patricia Wolf 廠牌 Balmat；Robotalco 廠牌 100% Silk；Pedro Magina 廠牌 Holuzam；Midori Hirano 廠牌 Thrill Jockey；Maria Somerville 自行發行（Rush Hour 為通路）。Maria Somerville、Adam Wiltzie 序數兩說矛盾，寫作層不寫「首張／第 N 張」。
+- 留下但聲音待評分驗證：Nailah Hunter（〈Finding Mirrors〉trap 式節拍）、Maria Somerville（lo-fi 鼓、chilling 用字）、Sofie Birch（薩克斯尖鳴）、Benoît Pioulard（Daily 稱 cold atmosphere，池中同人 z 0.3）、Turn On The Sunlight（Carlos Niño 打擊）、Patricia Wolf（合成器＋場錄）、Robotalco、Pedro Magina（80s 律動段）、Midori Hirano（序列器脈衝）。
+- **不補位**：Bandcamp Best Electronic 九成舞池、Best Ambient 暖而有旋律的已收；策展層列的 4 張 MB 查無暖盤（Kenniff《Espera》等）只有單一 Daily 來源，照實上架 16 張。
