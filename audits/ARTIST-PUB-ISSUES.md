@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1719 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1721 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -1723,3 +1723,5 @@
 | ar-u-030 | Molam Lao | Music from Southern Laos | 這張以樂團名義掛牌，在寮國盤裡是少見的形態 | 沒有找到來源支持『少見』；建議核對或刪除 | https://www.wyastone.co.uk/music-from-southern-laos.html |
 | ar-u-030 | Moriyama Takeo Percussion Ensemble | Full Load | 官方略歷記他 1945 年生於山梨県勝沼市 | 日文維基寫生於東京品川、在勝沼長大；與官網不一致，建議改寫成『在山梨縣勝沼長大』 | https://ja.wikipedia.org/wiki/森山威男 |
 | ar-u-030 | Murple | Io sono Murple | 十二軌連成一首組曲；1974 年由 BASF 的義大利發行線 Fare 出版 | Record Collector 商品頁稱專輯分兩面各一部分（Prog 圈站另說各六個樂章）、並稱初版只在德國發行；與上線簡介『義大利發行線 Fare』不一致，來源品質不足以定案，供店主參考。 | https://www.recordcollector.org/the-collection/murple-io-sono-murple.html |
+| ar-u-030 | Nate Morgan | Journey Into Nigritia | Nate Morgan 國中就跟 Joe Sample 與 Hampton Hawes 學琴，一輩子只錄過三張領班唱片 | 內容與維基一致，無誤；但維基與 wikidata 出生年不一致（1953 vs 1964），簡介未寫出生年，故無需改動，僅供店主知悉。 | https://www.wikidata.org/wiki/Q15836324 |
+| ar-u-030 | Nouthong Phimvilayphone | Visions of the Orient: Music from Laos | 〈Lam Khan〉這個曲名出現兩次，第 11 軌那一版 7 分 38 秒最長 | Amiata 廠牌頁的曲目表寫第二次出現的是 Lam Khon（7:31），拼法與長度和簡介不同；需對照實體版或 Discogs 核實 | https://amiatarecords.com/nouthong-phimvilayphone |
