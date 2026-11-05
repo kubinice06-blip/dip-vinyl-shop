@@ -2591,3 +2591,8 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 39 位寫：14 full、25 thin；Peter Veale 只有一條單源事實、無國籍無聲音描述，不寫（skipped）。
 - 題材照寫：Phill Niblock 2024 年因心臟衰竭過世；Bodo Staiger（Rheingold）2019 年辭世；Council of Nine《Diagnosis》寫母親病逝；Hammock 外甥 2016 年死於腫瘤；Kevin Richard Martin 妻兒的健康危機。
 - 主線審稿 8 處：KaS Product 刪「電子龐克先驅」（法文維基單源）；Netherworld、Silicon Scally、Phill Niblock 第一句補國籍與身分（Niblock 連帶刪「電影工作者」重複與「製作上千場演出」壓回 245 字）；Rheingold「前一年以 70 歲辭世」改「2019 年底辭世，享年 70 歲」（原句時間指涉不清）；Peaking Lights 刪「賣出數千張」（在世者不寫銷量）。
+
+## ar-d-504（2026-11-05，電子、EBM／synth-pop、dark ambient、實驗電子）
+
+- 38 位寫：18 full、20 thin；Bcalm（只有事實庫一條單源、無國籍）與 Heights of Abraham（沒有聲音格）不寫（skipped）。
+- 主線審稿 13 處：第一句補國籍或身分——Supersilent、Xeno & Oaklander、青木孝允、And One、Chancha Vía Circuito、Christopher Willits、Elektro Guzzi（連帶刪青木《SILICOM》廠牌句、Chancha 地名、Willits 學琴細節、Xeno 的 DJ 選曲以壓回字數）；在世者只留一項成績——Supersilent 刪「最受推崇的即興樂團之一」、Jed Kurzel 刪 The Mess Hall 的澳洲音樂獎、Camouflage 刪美國舞曲榜登頂三週／Hot 100／德國金唱片，改寫「在美國俱樂部走紅，是他們最廣為人知的歌」。

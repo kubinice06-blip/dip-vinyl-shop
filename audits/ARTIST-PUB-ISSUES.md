@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1737 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1738 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -1514,6 +1514,7 @@
 | ar-d-504 | Gina X Performance | Nice Mover | 1978 年由 EMI Electrola 發行；同年夏天團隊在科隆錄下整張專輯 | 英文維基寫單曲〈No G.D.M.〉為 1978、首張專輯為 1979；上線簡介把專輯年份與錄音時間定在 1978，需對 Discogs/MusicBrainz 再核 | https://en.wikipedia.org/wiki/Gina_X_Performance |
 | ar-d-504 | Heights of Abraham | Humidity | 1992 年組成的樂團 | Discogs 僅 Discogs 單源，維基未載成軍年；建議改『90 年代初』或略去年份 | https://www.discogs.com/artist/9261-Heights-Of-Abraham |
 | ar-d-504 | Jónsi & Alex | Lost and Found | 與 Sigur Rós 主唱 Jónsi 組成 ambient 組合（伴侶）；上線簡介《Riceboy Sleeps》卡寫「伴侶 Alex Somers」 | 維基 Alex Somers 條目稱兩人 2019 年分手；另有訪談稱「又復合」，現況不明，建議用語改為中性（合作夥伴）或不提 | https://en.wikipedia.org/wiki/Alex_Somers |
+| ar-d-505 | Moskwa TV | Dynamics & Discipline | 以〈Generator 7/8〉寫核電廠事故、車諾比事後被當成預言；原本只想做純器樂；由 DJ Talla 2XLC 等三人創立 | 維基與資料站都沒有核電廠主題、車諾比預言或「原本只想做純器樂」的說法（只有零售商文案提過核電廠，未證實）；維基只寫 Talla 與 RaHen 創團。需回查上線簡介依據，無依據則拿掉或標明出處。 | https://en.wikipedia.org/wiki/Moskwa_TV |
 | ar-d-929 | Erik Truffaz | Rollin' | 2000 年簽進這個廠牌 | 上線簡介沿用 Blue Note 官網簡介的 2000 年簽約說；但維基與已上線的《Out of a Dream》《The Dawn》《Bending New Corners》簡介顯示 1997–1999 年已在 Blue Note 發片，瑞士聯邦文化局新聞稿也記《Bending New Corners》為 1999 年 Blue Note 專輯，2000 年簽約的說法與之矛盾，建議改為不寫簽約年。 | https://musikzeitung.ch/en/?p=44583 |
 | ar-d-929 | Erik Truffaz | The Walk of the Giant Turtle | 前一張四重奏盤在法國賣到十萬張的金唱片 | 維基只寫《Bending New Corners》（1999）是法國 Silver Album；本張的前一張是《Mantis》（2001），並非《Bending New Corners》。需核對金唱片的專輯歸屬與認證層級。 | https://en.wikipedia.org/wiki/Erik_Truffaz |
 | ar-d-929 | Stanley Jordan | Magic Touch | 九軌裡有五軌只有一把電吉他 … 六軌只有他的電吉他 | 同一則簡介前後自相矛盾：五軌 vs 六軌；事實庫引 jazzdisco 為六軌純獨奏、其餘三軌各配一組節奏，應統一為六軌。 | https://en.wikipedia.org/wiki/Magic_Touch_(Stanley_Jordan_album) |
