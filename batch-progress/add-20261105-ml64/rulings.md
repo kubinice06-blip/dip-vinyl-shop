@@ -52,3 +52,11 @@
 - **23042**（Loop Guru《Loop Bites Dog》）：1997-09-29 GB North South GURU 400CD，與 MB 一致。無專屬樂評，聲音僅單一來源（Scaruffi：Don Cherry／Terry Riley 式迷幻循環＋Peter Gabriel 式 techno-funk〈Karma Marga〉＋甘美朗〈Out Here〉）；**moodGuess 存疑 x（有鼓、密度高）與 z**。評分不入 facts。美國版廠牌 World Domination 只見電台榜單，未採用。
 - **23043**（Youth & Gaudi《Astronaut Alchemists》）：2018 無疑，月日各來源不一（Discogs／MB 11-16、Six Degrees 10-16、另一篇預告 10-12），facts 不寫月日。黑膠 LP 除 A5 外每首剪短，CD 約 57:56。EP《2063: A Dub Odyssey》Wikipedia 兩處寫 2016／2017，facts 不寫年。聲音為標準 dub（重低頻、鍵盤、大量殘響）＋科幻取樣；**moodGuess 存疑 x（dub 鼓推進）與 z（太空科幻偏冷）**。
 - 本組 WebSearch 用 5 次（與 ml65 a 組合計；剩 1 次未用）。研究稿 `desc-tools/batches/research/add-20261105-ml64-e.json`，QA 通過；推翻策展層 0 處。
+
+## 主線研究汰換（不佔條號；2026-11-05）
+研究層交件後照「moodGuess 存疑」汰 15 → 定案 12（研究 a 4、b 2、c 3、d 3、e 0）。被汰卡移到 `dropped-cards.json`／`dropped-research.json`。
+- 能量（有鼓推進／舞池）：Children of the Bong《Sirius Sounds》（breakbeat／electro／808，不是 ambient）、Nicola Cruz《Prender el Alma》（Discogs 標 House、標題曲 surging beat）、El Búho《Balance》（cumbia 持續律動；同人只留《Natura Sonora》）、Adham Shaikh《Fusion》（shuffle、tabla／djembe）、Loop Guru《Loop Bites Dog》（鼓持續推進、混音密集）、Tranquility Bass《Let the Freak Flag Fly》（breakbeat、聲音零來源）、alucidnation 兩張（標籤 tech house、《Aural Architecture》鋼琴小調判輕風險）。
+- 非原創專輯：Kaya Project《Any Silver Lining》（1 首主打＋他人混音＋49 分鐘 DJ mix）、《body.mind.soul》（18 軌含 trance 混音）；Loop Guru《The Fountains of Paradise》（卡帶《Catalogue of Desires》選編，且偏陰沉）。
+- 色溫／質地：Youth & Gaudi《Astronaut Alchemists》（dub 推進＋科幻冷）、Sounds From the Ground《Widerworld》（官方自述 darker、grittier）、William Orbit《Hello Waveforms》（人聲 synth-pop）、《Strange Cargo 2》（輕爵士放克，y 偏薄）。
+- 卡單更正（研究層推翻）：Ishq《Orchid》年份 2000→2001、label → Dakini（Discogs master 與 Dakini 首版 2001-12；Interchill 2002 為再發）；Sinepearl country → se。Adham Shaikh「Interchill 創辦人」查無來源不寫。
+- 留下的貼邊卡（評分時看）：Woob《Woob 1194》z（〈Strange Air〉詭譎）、Sinepearl z、Adham Shaikh《Journey to the Sun》y、Gaudi《Dub, Sweat & Tears》z。

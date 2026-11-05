@@ -39,3 +39,10 @@
 - **23082**（Sun Glitters《Scattered Into Light》）：Mush 美國版 2014-01-28，日本 AY（Anay）CD DQC-1205 於 01-08 先出且多附 4 首《Fading Days》EP 曲；卡單 label=Anay Records 對日本首發成立，facts 兩者並列。**moodGuess 存疑 x**：廠牌文案直言『glitchy R&B and deep tech-house』『equal nod to house and hip-hop』，有 tech-house 四拍落鼓的可能；z 亦因『sun-bleached』明亮取向存疑。建議主線聽過或汰換。
 - **23083**（Sun Glitters《It Will Be Forever》）：2017-05-26 自發行，11 首約 40 分鐘（Discogs 母帶列 13 首含 2 首數位加碼）。官方文案自稱『Tech Noir』『apprehensive, haunting tension』『heavy bass』，受《Drive》原聲帶啟發；**moodGuess 存疑 z（陰冷詭譎）**，Discogs 另標 Hip Hop，未查到 boom bap 證據。無專屬樂評，單一來源。
 - 本組 WebSearch 用 1 次（e 組另用 4 次，兩份合計 5／6）。研究稿 `desc-tools/batches/research/add-20261105-ml65-a.json`，QA 通過；推翻策展層 0 處。
+
+## 主線研究汰換（不佔條號；2026-11-05）
+研究層交件後照「moodGuess 存疑」汰 6 → 定案 9（研究 a 1、b 2、c 2、d 2、e 2）。
+- 能量（四拍／鼓組推進）：Tropics《Parodia Flare》（切分鼓組、motorik 規整律動）、Chari Chari《In Time》（Discogs／MB 標 Deep House、6–10 分鐘長曲）、Sun Glitters《Scattered Into Light》（廠牌自寫 deep tech-house）、Seahawks《Invisible Sunrise》（krautrock、cosmic disco 文案）。
+- 色溫／嘻哈：Sun Glitters《It Will Be Forever》（官方 Tech Noir、haunting tension）；Lapalux《Lustmore》（trap／hip-hop 底鼓、Discogs 含 Hip Hop，z 中性；店主要少嘻哈）。
+- 研究層措辭更正交寫作層：Vondelpark「慢 R&B 拍」→「輕刷慢鼓」；Tropics 已汰；John Beltran 出身密西根蘭辛（不寫 Detroit）；Khotin《Finds You Well》是 Ghostly 第一張全新專輯（Ghostly 先重發《Beautiful You》）。《Eternal Beams》Laraaji 與 Eno 合作只有單源，寫作不用。
+- 留下的貼邊卡：Seahawks 兩張與 Khotin《Finds You Well》y、Hiatus／Vondelpark／Ana Roxanne z、John Beltran x。
