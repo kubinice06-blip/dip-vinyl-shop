@@ -1,5 +1,9 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-05｜dip-vinyl-shop｜Apple Music 按鈕第三次查：先放連結寫法測試頁
+
+店主：「點 Apple Music 後連到 App 但沒有打開專輯」（09-28、10-01 兩次修正後仍在）。雲端無法用 iOS 真機測，先上 `apple-test.html`（noindex）：同一張專輯排六種寫法（現行 `/<sf>/album/<slug>/<id>`、加 `?app=music`、`?ls=1&app=music`、`geo.music.apple.com`、`music://`、強制台灣區），台灣區與日本區各一組（索引裡 TW 8,155、US 7,633、JP 1,305 張，懷疑跨區連結在台灣帳號的 App 裡打不開）。待店主回報哪幾個能直接開專輯，再改 `dip-player.js` 的 `appleAlbumUrl()`。驗證：純靜態頁。
+
 ### 2026-11-05｜dip-vinyl-shop｜preview-popular-20261105：試聽改播該專輯最紅那首（靜態地圖換 14,251 條、前台不再隨機）
 
 - **店主 11-05**：「試聽播出時都是播在該專輯最紅的歌或片段上」。改前靜態地圖幾乎全播第 1 軌（`previews[0]`），即時路徑隨機挑一首。Apple 30 秒片段起點由 Apple 決定，改不了；改的是播哪一首。
