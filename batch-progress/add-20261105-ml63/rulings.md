@@ -12,3 +12,8 @@
 - **主線汰 10**：Mojave 3《Puzzles Like You》（輕快 pop）；Spain《She Haunts My Dreams》（同人留一張、z 風險）；Beck《Morning Phase》（同型《Sea Change》判冷落平靜）；Chris Rea《On the Beach》（乾淨 AOR 判輕風險）；Milton Nascimento《Änïmä》《Geraes》、Lô Borges《A Via-Láctea》（同人池中全判輕）；The Heliocentrics《Out There》《A World of Masks》（x 2.8 貼邊、z 0.3）；Tamikrest《Toumastin》（同團判雀躍）。
 - 小林麻美盤名照 MB 改「CRYPTOGRAPH〜愛の暗号〜」（策展寫成「暗號」）。
 - 交研究層把關：巴西盤普遍 y 0.8 貼邊（Taiguara、Beto Guedes、14 Bis、Toninho Horta、Luiz Melodia、Tim Bernardes、Rodrigo Amarante、Ednardo），聲音若是乾淨原聲／明亮 samba 就汰；x 2.7 的 Zé Ramalho、Luiz Melodia、Ednardo、Boogarins、Invisible；小林麻美（city pop 池中全判輕）。
+
+## 研究 d 組
+- 23111：d 組 5 張 MB 釘住皆核對無誤；Tindersticks 用維基＋Lollipop／Record Rewind Play，Cowboy Junkies 用維基＋PopMatters，Spain 用維基＋Trouser Press，Vile、Drugdealer 以二手樂評為主（Pitchfork 抓不到、Raw Honey 維基 404）。
+- 23112：推翻策展層——Drugdealer 《Raw Honey》Ariel Pink 客串不成立（兩個來源都說他在前作），facts 不寫。
+- 23113：moodGuess 存疑——Cowboy Junkies《Open》（非全程極慢，有粗礪／失真與喧鬧段，音色偏暗）；Kurt Vile（Spin 稱製作更乾淨開闊，判輕風險）；Drugdealer（〈Lonely〉〈Lost in My Dream〉輕快有明快節拍，清脆錄音，判輕／判躁風險）。Spain、Tindersticks 無實質不符（z 偏邊風險如策展層）。
