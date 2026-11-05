@@ -1,0 +1,999 @@
+{
+ "group": "md37b",
+ "factions": [
+  {
+   "id": "drone",
+   "zh": "暗黑 drone／長音",
+   "count": 9,
+   "why": "drone 與低頻、鋼板／銅鑼／大提琴失真長音"
+  },
+  {
+   "id": "tape",
+   "zh": "磁帶衰變／loop",
+   "count": 6,
+   "why": "tape loop、磁帶融化、衰變音塵"
+  },
+  {
+   "id": "field",
+   "zh": "暗色 field recording／廢墟",
+   "count": 4,
+   "why": "廢墟、水下、冰雪、夜色的 field recording 拼貼"
+  },
+  {
+   "id": "mass",
+   "zh": "冷音塊／弦樂失真",
+   "count": 8,
+   "why": "大提琴、小提琴、合成器的厚殘響音塊"
+  }
+ ],
+ "albums": [
+  {
+   "artist": "Sara Zalek & Norman W. Long",
+   "album": "Steelworkers' Drone",
+   "year": 2020,
+   "label": "Reserve Matinee",
+   "country": "us",
+   "faction": "field",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp Daily 把它寫成在芝加哥廢棄鋼廠錄成的城市廢墟 drone；金屬片、合成器與荒廢現場聲，無鼓、陰冷，落頹靡。",
+   "moodGuess": {
+    "x": 1.6,
+    "y": 1.1,
+    "z": -1.0,
+    "why": "無鼓，金屬片共鳴與廢墟空間聲，冷而低沉"
+   },
+   "evidence": [
+    "https://daily.bandcamp.com/best-experimental/the-best-experimental-music-on-bandcamp-february-2020",
+    "https://reservematinee.bandcamp.com/album/steelworkers-drone",
+    "https://f4.bcbits.com/img/a4012007643_10.jpg"
+   ],
+   "bcdaily": "explore the resonant history of urban ruins on Steelworkers' Drone, a set of four pieces made primarily at two defunct steel mills",
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "artist:\"Sara Zalek & Norman W. Long\"",
+     "releasegroup:\"Steelworkers' Drone\""
+    ],
+    "checkedAt": "2026-11-05",
+    "conclusion": "MusicBrainz release-group 搜尋藝人＋專輯名皆無對應條目（Bandcamp-only 發行）"
+   },
+   "manualEvidenceUrls": [
+    "https://reservematinee.bandcamp.com/album/steelworkers-drone",
+    "https://daily.bandcamp.com/best-experimental/the-best-experimental-music-on-bandcamp-february-2020"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Susan Geaney",
+   "album": "Tape Melt",
+   "year": 2022,
+   "label": "Fort Evil Fruit",
+   "country": "ie",
+   "faction": "tape",
+   "genres": [
+    "classical"
+   ],
+   "why": "Bandcamp Daily 寫它從闇啞的 drone 長成合奏，模擬磁帶融化的失真；低音長笛、弦樂與卡帶機的糊感，落頹靡。",
+   "moodGuess": {
+    "x": 1.8,
+    "y": 1.0,
+    "z": -0.7,
+    "why": "低音長笛與卡帶機的磁帶糊與長音，無鼓"
+   },
+   "evidence": [
+    "https://daily.bandcamp.com/best-experimental/the-best-experimental-music-on-bandcamp-august-2022",
+    "https://fortevilfruit.bandcamp.com/album/tape-melt",
+    "https://f4.bcbits.com/img/a4246294172_10.jpg"
+   ],
+   "bcdaily": "evolves from a haunting drone into a busy chorus of musical voices",
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "artist:\"Susan Geaney\"",
+     "releasegroup:\"Tape Melt\""
+    ],
+    "checkedAt": "2026-11-05",
+    "conclusion": "MusicBrainz release-group 搜尋藝人＋專輯名皆無對應條目（Bandcamp-only 發行）"
+   },
+   "manualEvidenceUrls": [
+    "https://fortevilfruit.bandcamp.com/album/tape-melt",
+    "https://daily.bandcamp.com/best-experimental/the-best-experimental-music-on-bandcamp-august-2022"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "合奏後段密度上升，x 可能略高"
+  },
+  {
+   "artist": "Stuart Chalmers",
+   "album": "The Heart of Contemplation",
+   "year": 2020,
+   "label": "Stuart Chalmers",
+   "country": "gb",
+   "faction": "tape",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp Daily 寫它是現場聲與「decaying audio debris」的混合；磁帶嘶聲、swarmandal 與水聲，衰敗而陰。",
+   "moodGuess": {
+    "x": 1.5,
+    "y": 1.1,
+    "z": -0.6,
+    "why": "磁帶嘶聲融進金屬弦音，衰敗殘響，無鼓"
+   },
+   "evidence": [
+    "https://daily.bandcamp.com/best-experimental/the-best-experimental-music-on-bandcamp-july-2020",
+    "https://stuartchalmers.bandcamp.com/album/the-heart-of-contemplation",
+    "https://f4.bcbits.com/img/a0994891169_10.jpg"
+   ],
+   "bcdaily": "a surreal amalgam of live sounds and decaying audio debris",
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "artist:\"Stuart Chalmers\"",
+     "releasegroup:\"The Heart of Contemplation\""
+    ],
+    "checkedAt": "2026-11-05",
+    "conclusion": "MusicBrainz release-group 搜尋藝人＋專輯名皆無對應條目（Bandcamp-only 發行）"
+   },
+   "manualEvidenceUrls": [
+    "https://stuartchalmers.bandcamp.com/album/the-heart-of-contemplation",
+    "https://daily.bandcamp.com/best-experimental/the-best-experimental-music-on-bandcamp-july-2020"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "swarmandal 有東方弦樂色彩，z 可能偏中性"
+  },
+  {
+   "artist": "seah",
+   "album": "Conduits of the Hydrosphere",
+   "year": 2022,
+   "label": "Somnimage",
+   "country": "us",
+   "faction": "drone",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp Daily 寫它是十年水體錄音揉成的「heavy, cavernous atmospheres」；重而不壓迫的低頻密度，落頹靡。",
+   "moodGuess": {
+    "x": 1.4,
+    "y": 1.5,
+    "z": -0.8,
+    "why": "水體錄音拉成厚重洞窟式低頻，無鼓"
+   },
+   "evidence": [
+    "https://daily.bandcamp.com/best-experimental/the-best-experimental-music-on-bandcamp-june-2022",
+    "https://somnimage.bandcamp.com/album/conduits-of-the-hydrosphere",
+    "https://f4.bcbits.com/img/a3877974702_10.jpg"
+   ],
+   "bcdaily": "five tracks of heavy, cavernous atmospheres",
+   "mbRgMbid": "3abd499e-bc0b-4589-9228-1ba2f01b6a48",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Jacob Kirkegaard",
+   "album": "Snowblind",
+   "year": 2025,
+   "label": "Helen Scarsdale",
+   "country": "dk",
+   "faction": "field",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp Daily 寫它是「cold and hostile」的氣象 drone，取材 Andrée 北極氣球之旅；風雪、冰與陰森低鳴，池中 Kirkegaard 已落頹靡。",
+   "moodGuess": {
+    "x": 1.7,
+    "y": 1.0,
+    "z": -1.5,
+    "why": "風雪與冰的低鳴 drone，陰冷敵意，無鼓"
+   },
+   "evidence": [
+    "https://daily.bandcamp.com/best-experimental/the-best-experimental-music-on-bandcamp-january-2025",
+    "https://helenscarsdale.bandcamp.com/album/snowblind",
+    "https://f4.bcbits.com/img/a2599450358_10.jpg"
+   ],
+   "bcdaily": "dark, chilly meteorological developments … a cold and hostile album",
+   "mbRgMbid": "0411224d-de78-475e-a625-c9d11f707a9b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Alma Laprida",
+   "album": "Pitch Dark and Trembling",
+   "year": 2024,
+   "label": "Alma Laprida",
+   "country": "us",
+   "faction": "drone",
+   "genres": [
+    "classical"
+   ],
+   "why": "Bandcamp Daily 寫 tromba marina 加效果器造出「subterranean waves」；低頻潮湧像地底暗流，落頹靡。",
+   "moodGuess": {
+    "x": 1.5,
+    "y": 1.3,
+    "z": -0.9,
+    "why": "tromba marina 低頻潮湧，地底感，無鼓"
+   },
+   "evidence": [
+    "https://daily.bandcamp.com/best-experimental/the-best-experimental-music-on-bandcamp-october-2024",
+    "https://almalaprida.bandcamp.com/album/pitch-dark-and-trembling",
+    "https://f4.bcbits.com/img/a3273353785_10.jpg"
+   ],
+   "bcdaily": "creating subterranean waves that frequently crest and retreat in disorienting patterns",
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "artist:\"Alma Laprida\"",
+     "releasegroup:\"Pitch Dark and Trembling\""
+    ],
+    "checkedAt": "2026-11-05",
+    "conclusion": "MusicBrainz release-group 搜尋藝人＋專輯名皆無對應條目（Bandcamp-only 發行）"
+   },
+   "manualEvidenceUrls": [
+    "https://almalaprida.bandcamp.com/album/pitch-dark-and-trembling",
+    "https://daily.bandcamp.com/best-experimental/the-best-experimental-music-on-bandcamp-october-2024"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "曲目合計約 31 分鐘，貼近專輯下限"
+  },
+  {
+   "artist": "Fossil Aerosol Mining Project",
+   "album": "Rusted Articles 1874 from 1968 (2020 Reconfiguration)",
+   "year": 2023,
+   "label": "Fossil Aerosol Mining Project",
+   "country": "us",
+   "faction": "tape",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp Daily 寫這個伊利諾老團用 tape loop 與找來的聲音重做早期作品，呼應衰敗的工業世界；洞穴般的陰暗環境聲，落頹靡。",
+   "moodGuess": {
+    "x": 1.7,
+    "y": 1.2,
+    "z": -0.8,
+    "why": "磁帶循環與找到的聲音，洞穴般陰濕，無鼓"
+   },
+   "evidence": [
+    "https://daily.bandcamp.com/best-experimental/the-best-experimental-music-on-bandcamp-september-2023",
+    "https://fossilaerosol.bandcamp.com/album/rusted-articles-1874-from-1968-2020-reconfiguration",
+    "https://f4.bcbits.com/img/a2412291885_10.jpg"
+   ],
+   "bcdaily": "echoes of the decaying industrial world … haunting and often magical audio environment",
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "artist:\"Fossil Aerosol Mining Project\"",
+     "releasegroup:\"Rusted Articles 1874 from 1968 (2020 Reconfiguration)\""
+    ],
+    "checkedAt": "2026-11-05",
+    "conclusion": "MusicBrainz release-group 搜尋藝人＋專輯名皆無對應條目（Bandcamp-only 發行）"
+   },
+   "manualEvidenceUrls": [
+    "https://fossilaerosol.bandcamp.com/album/rusted-articles-1874-from-1968-2020-reconfiguration",
+    "https://daily.bandcamp.com/best-experimental/the-best-experimental-music-on-bandcamp-september-2023"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "盤名為重新編排版，原盤年份需人工確認（Discogs）"
+  },
+  {
+   "artist": "Selvedge",
+   "album": "Bloom in Rust",
+   "year": 2020,
+   "label": "Rusted Tone Recordings",
+   "country": "us",
+   "faction": "drone",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp Daily 寫它的合成器與取樣「shrouded in darkness」；厚音浪、靜電與鏽蝕質地，落頹靡。",
+   "moodGuess": {
+    "x": 2.1,
+    "y": 1.2,
+    "z": -1.0,
+    "why": "厚合成音浪與靜電，隱約摩斯式脈動，暗"
+   },
+   "evidence": [
+    "https://daily.bandcamp.com/best-experimental/the-best-experimental-music-on-bandcamp-november-2020",
+    "https://rustedtonerecordings.bandcamp.com/album/bloom-in-rust",
+    "https://f4.bcbits.com/img/a0591717353_10.jpg"
+   ],
+   "bcdaily": "synth sounds and samples are often shrouded in darkness",
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "artist:\"Selvedge\"",
+     "releasegroup:\"Bloom in Rust\""
+    ],
+    "checkedAt": "2026-11-05",
+    "conclusion": "MusicBrainz release-group 搜尋藝人＋專輯名皆無對應條目（Bandcamp-only 發行）"
+   },
+   "manualEvidenceUrls": [
+    "https://rustedtonerecordings.bandcamp.com/album/bloom-in-rust",
+    "https://daily.bandcamp.com/best-experimental/the-best-experimental-music-on-bandcamp-november-2020"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "含沙沙打擊音與摩斯式節奏，x 約 2.3 上下"
+  },
+  {
+   "artist": "Amby Downs",
+   "album": "Ngunmal",
+   "year": 2023,
+   "label": "Room40",
+   "country": "au",
+   "faction": "drone",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp Daily 寫其中「I Am Holding My Breath」是「cavernous … bass-heavy tremblings」；Room40 低頻 drone，落頹靡。",
+   "moodGuess": {
+    "x": 1.5,
+    "y": 1.4,
+    "z": -0.9,
+    "why": "洞窟般的低頻顫動與風聲 drone，無鼓"
+   },
+   "evidence": [
+    "https://daily.bandcamp.com/best-experimental/the-best-experimental-music-on-bandcamp-november-2023",
+    "https://room40.bandcamp.com/album/ngunmal",
+    "https://f4.bcbits.com/img/a2816650242_10.jpg"
+   ],
+   "bcdaily": "a cavernous stretch of bass-heavy tremblings … dark, bottomless echo",
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "artist:\"Amby Downs\"",
+     "releasegroup:\"Ngunmal\""
+    ],
+    "checkedAt": "2026-11-05",
+    "conclusion": "MusicBrainz release-group 搜尋藝人＋專輯名皆無對應條目（Bandcamp-only 發行）"
+   },
+   "manualEvidenceUrls": [
+    "https://room40.bandcamp.com/album/ngunmal",
+    "https://daily.bandcamp.com/best-experimental/the-best-experimental-music-on-bandcamp-november-2023"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "首曲有 clicks/clacks 節奏顆粒"
+  },
+  {
+   "artist": "Andrew Anderson",
+   "album": "Thresholds",
+   "year": 2026,
+   "label": "Andrew James Anderson",
+   "country": "",
+   "faction": "tape",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp Daily 寫它用「dead tape」「dying light」做成夢境式的 heavy atmosphere；drone 與靜電飄進飄出，落頹靡。",
+   "moodGuess": {
+    "x": 1.5,
+    "y": 1.2,
+    "z": -0.8,
+    "why": "死磁帶、風琴鈴聲與靜電的厚霧，無鼓"
+   },
+   "evidence": [
+    "https://daily.bandcamp.com/best-experimental/the-best-experimental-music-on-bandcamp-april-2026",
+    "https://andrewjamesanderson.bandcamp.com/album/thresholds",
+    "https://f4.bcbits.com/img/a2833703055_10.jpg"
+   ],
+   "bcdaily": "A heavy atmosphere surrounds every track … dreamscape music for the recesses of your memory",
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "artist:\"Andrew Anderson\"",
+     "releasegroup:\"Thresholds\""
+    ],
+    "checkedAt": "2026-11-05",
+    "conclusion": "MusicBrainz release-group 搜尋藝人＋專輯名皆無對應條目（Bandcamp-only 發行）"
+   },
+   "manualEvidenceUrls": [
+    "https://andrewjamesanderson.bandcamp.com/album/thresholds",
+    "https://daily.bandcamp.com/best-experimental/the-best-experimental-music-on-bandcamp-april-2026"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "藝人國別不明"
+  },
+  {
+   "artist": "Domenica Diavoleria",
+   "album": "Flicker Statue Eyes",
+   "year": 2026,
+   "label": "Eiderdown Records",
+   "country": "us",
+   "faction": "drone",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp Daily 寫它是《狼之一族》的重製配樂，「music for a pitch-black forest」；暗色迴響與地底節奏，落頹靡。",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.0,
+    "z": -0.8,
+    "why": "暗黑迴響配樂，地底低速節奏，哥德森林感"
+   },
+   "evidence": [
+    "https://daily.bandcamp.com/best-experimental/the-best-experimental-music-on-bandcamp-april-2026",
+    "https://eiderdownrecords.bandcamp.com/album/flicker-statue-eyes",
+    "https://f4.bcbits.com/img/a1821431516_10.jpg"
+   ],
+   "bcdaily": "Dark, echoey sounds mix with small melodic lines and subterranean rhythms",
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "artist:\"Domenica Diavoleria\"",
+     "releasegroup:\"Flicker Statue Eyes\""
+    ],
+    "checkedAt": "2026-11-05",
+    "conclusion": "MusicBrainz release-group 搜尋藝人＋專輯名皆無對應條目（Bandcamp-only 發行）"
+   },
+   "manualEvidenceUrls": [
+    "https://eiderdownrecords.bandcamp.com/album/flicker-statue-eyes",
+    "https://daily.bandcamp.com/best-experimental/the-best-experimental-music-on-bandcamp-april-2026"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "帶小旋律與低速節奏，x、z 需複核"
+  },
+  {
+   "artist": "Jane Deasy",
+   "album": "Mouth of the Sound",
+   "year": 2022,
+   "label": "Fort Evil Fruit",
+   "country": "ie",
+   "faction": "drone",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp Daily 說它比她純淨的前作多了一層厚包膜：「echoey and dense」，B 面低頻展成 21 分鐘的 drone 海，落頹靡。",
+   "moodGuess": {
+    "x": 1.2,
+    "y": 1.4,
+    "z": -0.5,
+    "why": "回聲厚密的長 drone，緩慢起伏的低頻，無鼓"
+   },
+   "evidence": [
+    "https://daily.bandcamp.com/best-experimental/the-best-experimental-music-on-bandcamp-february-2022",
+    "https://fortevilfruit.bandcamp.com/album/mouth-of-the-sound",
+    "https://f4.bcbits.com/img/a3121699728_10.jpg"
+   ],
+   "bcdaily": "puts her devout tones in a thicker aural envelope … undulating bass is just as heavy",
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "artist:\"Jane Deasy\"",
+     "releasegroup:\"Mouth of the Sound\""
+    ],
+    "checkedAt": "2026-11-05",
+    "conclusion": "MusicBrainz release-group 搜尋藝人＋專輯名皆無對應條目（Bandcamp-only 發行）"
+   },
+   "manualEvidenceUrls": [
+    "https://fortevilfruit.bandcamp.com/album/mouth-of-the-sound",
+    "https://daily.bandcamp.com/best-experimental/the-best-experimental-music-on-bandcamp-february-2022"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "z 可能偏中性（有虔誠聖樂感）"
+  },
+  {
+   "artist": "Serrater",
+   "album": "Serrater",
+   "year": 2020,
+   "label": "Already Dead Tapes and Records",
+   "country": "us",
+   "faction": "drone",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp Daily 寫它「dark and cacophonous」，低沉重音與「ground-shaking waves of industrial din」；暗色工業 drone，落頹靡。",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.7,
+    "z": -1.4,
+    "why": "低沉重音與工業轟鳴，焦油質地，無明確拍"
+   },
+   "evidence": [
+    "https://daily.bandcamp.com/best-experimental/the-best-experimental-music-on-bandcamp-january-2021",
+    "https://alreadydeadtapes.bandcamp.com/album/serrater",
+    "https://f4.bcbits.com/img/a4149425318_10.jpg"
+   ],
+   "bcdaily": "low, heavy tones … ground-shaking waves of industrial din",
+   "mbRgMbid": "cc427378-6116-4c74-80fd-f87eec01aa2e",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "工業噪響較兇，x 有跨 2.7 風險；曲目約 30 分鐘"
+  },
+  {
+   "artist": "Amy Cutler",
+   "album": "Sister Time",
+   "year": 2023,
+   "label": "Strategic Tape Reserve",
+   "country": "",
+   "faction": "tape",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp Daily 寫它把兒時混音帶融進「thick atmospheres」，回聲像從地下放出鬼魂；磁帶衰變拼貼，落頹靡。",
+   "moodGuess": {
+    "x": 1.6,
+    "y": 1.1,
+    "z": -0.6,
+    "why": "童年混音帶融化循環，厚回聲，幽靈感"
+   },
+   "evidence": [
+    "https://daily.bandcamp.com/best-experimental/the-best-experimental-music-on-bandcamp-june-2023",
+    "https://strategictapereserve.bandcamp.com/album/sister-time",
+    "https://f4.bcbits.com/img/a1901582673_10.jpg"
+   ],
+   "bcdaily": "echoing sounds that seem as if they could release ghosts from under the ground",
+   "mbRgMbid": "bb3b93f2-cd9f-4c3f-9836-a9446d45864b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "24 軌 69 分鐘，曲間差異大"
+  },
+  {
+   "artist": "Lori Goldston",
+   "album": "Open Space",
+   "year": 2025,
+   "label": "Relative Pitch Records",
+   "country": "us",
+   "faction": "mass",
+   "genres": [
+    "classical"
+   ],
+   "why": "Bandcamp Daily 寫她用大提琴、音箱與失真踏板一口氣錄成：「heavy and grinding」的長音；失真大提琴像吉他牆，但是往下沉，落頹靡。",
+   "moodGuess": {
+    "x": 2.1,
+    "y": 1.6,
+    "z": -1.0,
+    "why": "失真大提琴的重而磨的長音，無鼓，往下壓"
+   },
+   "evidence": [
+    "https://daily.bandcamp.com/best-experimental/the-best-experimental-music-on-bandcamp-august-2025",
+    "https://relativepitchrecords.bandcamp.com/album/open-space",
+    "https://f4.bcbits.com/img/a1544469679_10.jpg"
+   ],
+   "bcdaily": "made in a single uninterrupted sitting with a cello, an amp, and a distortion pedal … heavy and grinding",
+   "mbRgMbid": "a439473e-d772-4fb4-93e8-5f78ba175608",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "失真強，x 有跨 2.7 風險"
+  },
+  {
+   "artist": "Jim Haynes",
+   "album": "Throttle and Calibration",
+   "year": 2016,
+   "label": "Helen Scarsdale",
+   "country": "",
+   "faction": "field",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp Daily 的 Hi-Bias 卡帶專欄寫它在愛沙尼亞蘇聯時代廢棄農場群錄成的聲音；廢墟 field recording 的冷硬低鳴，落頹靡。",
+   "moodGuess": {
+    "x": 1.7,
+    "y": 1.0,
+    "z": -1.0,
+    "why": "廢棄農場的金屬與風聲錄音拼貼，無鼓，荒涼"
+   },
+   "evidence": [
+    "https://daily.bandcamp.com/best-experimental/hi-bias-notable-cassette-releases-on-bandcamp-december-2016",
+    "https://helenscarsdale.bandcamp.com/album/throttle-calibration",
+    "https://f4.bcbits.com/img/a1399752698_10.jpg"
+   ],
+   "bcdaily": "spent three months wandering through the ruins of Soviet-era agricultural complexes in Estonia",
+   "mbRgMbid": "0edfac57-96e5-4823-935f-39d641f910b5",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "該期評介偏重創作背景，聲音描述少"
+  },
+  {
+   "artist": "Roland Kayn",
+   "album": "Matego I-II",
+   "year": 2021,
+   "label": "Roland Kayn",
+   "country": "de",
+   "faction": "mass",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp Daily 寫 Kayn 遺產頁每張都夠格入榜，聲音「contemplative and chilling」；控制論電子長曲，池中 Kayn 已落頹靡。",
+   "moodGuess": {
+    "x": 1.6,
+    "y": 1.2,
+    "z": -1.6,
+    "why": "自治電子系統的長段電子嗡鳴，冰冷無人味，無鼓"
+   },
+   "evidence": [
+    "https://daily.bandcamp.com/best-experimental/the-best-experimental-music-on-bandcamp-january-2021",
+    "https://rolandkayn.bandcamp.com/album/matego-i-ii",
+    "https://f4.bcbits.com/img/a2065448451_10.jpg"
+   ],
+   "bcdaily": "remarkable dexterity at generating sounds that feel simultaneously contemplative and chilling",
+   "mbRgMbid": "97082862-8419-40ae-9a14-956406ff9188",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "該期評介主寫 Electric Symphony，Matego 連帶提及"
+  },
+  {
+   "artist": "Chantal Michelle",
+   "album": "All Things Might Spill",
+   "year": 2026,
+   "label": "Chantal Michelle",
+   "country": "",
+   "faction": "mass",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp Daily 寫它「dense and enveloping」，結尾曲「Thoughts Like Blocks of Ice」以重低音墊底；厚而冷的包覆感，落頹靡。",
+   "moodGuess": {
+    "x": 1.6,
+    "y": 1.4,
+    "z": -0.6,
+    "why": "重低音與密層合成器墊，冰塊般的包覆，無鼓"
+   },
+   "evidence": [
+    "https://daily.bandcamp.com/best-experimental/the-best-experimental-music-on-bandcamp-february-2026",
+    "https://chantalmichelle.bandcamp.com/album/all-things-might-spill",
+    "https://f4.bcbits.com/img/a1728814044_10.jpg"
+   ],
+   "bcdaily": "atmospheres are so dense and enveloping … starts with a heavy bass sound",
+   "mbRgMbid": "9ce6c43e-3b6e-43a2-9d45-41d20449ab95",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "結尾曲有上升的亮層，z 可能偏中性"
+  },
+  {
+   "artist": "Leslee Smucker",
+   "album": "Breathing Landscape",
+   "year": 2024,
+   "label": "Leslee Smucker",
+   "country": "us",
+   "faction": "mass",
+   "genres": [
+    "classical"
+   ],
+   "why": "Bandcamp Daily 寫她在空水塔裡錄的獨奏小提琴：「cavernous」的長殘響；回聲糊成一片，落頹靡。",
+   "moodGuess": {
+    "x": 1.5,
+    "y": 1.0,
+    "z": -0.5,
+    "why": "水塔長殘響裡的小提琴長音，空洞冷，無鼓"
+   },
+   "evidence": [
+    "https://daily.bandcamp.com/best-experimental/the-best-experimental-music-on-bandcamp-february-2024",
+    "https://lesleesmucker.bandcamp.com/album/breathing-landscape",
+    "https://f4.bcbits.com/img/a1942646318_10.jpg"
+   ],
+   "bcdaily": "The 10 solo violin pieces … feel cavernous, her sounds reflecting and expanding inside a massive closed space",
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "artist:\"Leslee Smucker\"",
+     "releasegroup:\"Breathing Landscape\""
+    ],
+    "checkedAt": "2026-11-05",
+    "conclusion": "MusicBrainz release-group 搜尋藝人＋專輯名皆無對應條目（Bandcamp-only 發行）"
+   },
+   "manualEvidenceUrls": [
+    "https://lesleesmucker.bandcamp.com/album/breathing-landscape",
+    "https://daily.bandcamp.com/best-experimental/the-best-experimental-music-on-bandcamp-february-2024"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "小提琴聲部較清楚，y 可能只有 0.8"
+  },
+  {
+   "artist": "Ipek Gorgun",
+   "album": "Earthbound",
+   "year": 2025,
+   "label": "Ipek Gorgun",
+   "country": "tr",
+   "faction": "drone",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp Daily 寫它「heavy and overwhelming」，Edgelord 的低頻「像怪物吞掉一座城」；厚重電子與低頻，落頹靡。",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.7,
+    "z": -0.9,
+    "why": "低頻壓場的厚重電子聲景，吞沒立體聲場，鼓點少"
+   },
+   "evidence": [
+    "https://daily.bandcamp.com/best-experimental/the-best-experimental-music-on-bandcamp-november-2025",
+    "https://ipekgorgunreleases.bandcamp.com/album/earthbound",
+    "https://f4.bcbits.com/img/a3894359034_10.jpg"
+   ],
+   "bcdaily": "Earthbound is often heavy and overwhelming … bass-y tones … feel like a monster swallowing a city",
+   "mbRgMbid": "ce651c77-d2f0-4f70-b498-cbd3437ad0f6",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "部分曲目有脈衝，x 有跨 2.7 風險"
+  },
+  {
+   "artist": "Bridget Hayden",
+   "album": "Incantations From Yin Valley",
+   "year": 2017,
+   "label": "Fort Evil Fruit",
+   "country": "gb",
+   "faction": "tape",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp Daily Hi-Bias 寫它「almost all echo and murk」，低隆聲與模糊殘響；磁帶糊感的人聲 drone，落頹靡。",
+   "moodGuess": {
+    "x": 1.4,
+    "y": 1.5,
+    "z": -0.7,
+    "why": "低隆聲與模糊殘響裡的人聲，磁帶糊，無鼓"
+   },
+   "evidence": [
+    "https://daily.bandcamp.com/best-experimental/hi-bias-july-2017",
+    "https://fortevilfruit.bandcamp.com/album/incantations-from-yin-valley",
+    "https://f4.bcbits.com/img/a4265362046_10.jpg"
+   ],
+   "bcdaily": "almost all echo and murk, filled with low rumbles, blurry reverberations, and unidentifiable sounds",
+   "mbRgMbid": "3c0b5fc7-8e71-4602-bba1-4ecd3090eb86",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "人聲有溫度，z 可能偏中性"
+  },
+  {
+   "artist": "Kiera Mulhern",
+   "album": "De ossibus 20",
+   "year": 2020,
+   "label": "Recital",
+   "country": "us",
+   "faction": "mass",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp Daily 寫它在喪母後完成，「solemn near-silence eventually births heavy tones」；沉重低音從靜默長出，落頹靡。",
+   "moodGuess": {
+    "x": 1.6,
+    "y": 1.0,
+    "z": -0.7,
+    "why": "模糊人聲與雜音，靜默後長出沉重低音，喪葬感"
+   },
+   "evidence": [
+    "https://daily.bandcamp.com/best-experimental/the-best-experimental-music-on-bandcamp-november-2020",
+    "https://recitalprogram.bandcamp.com/album/de-ossibus-20",
+    "https://f4.bcbits.com/img/a0100412142_10.jpg"
+   ],
+   "bcdaily": "a solemn near-silence eventually births heavy tones that feel gravely f[unereal]",
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "artist:\"Kiera Mulhern\"",
+     "releasegroup:\"De ossibus 20\""
+    ],
+    "checkedAt": "2026-11-05",
+    "conclusion": "MusicBrainz release-group 搜尋藝人＋專輯名皆無對應條目（Bandcamp-only 發行）"
+   },
+   "manualEvidenceUrls": [
+    "https://recitalprogram.bandcamp.com/album/de-ossibus-20",
+    "https://daily.bandcamp.com/best-experimental/the-best-experimental-music-on-bandcamp-november-2020"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "引文截斷於 gravely f…（疑為 funereal）；原文未核對全句"
+  },
+  {
+   "artist": "Vanessa Rossetto",
+   "album": "You & I Are Earth",
+   "year": 2019,
+   "label": "Tone Glow Records",
+   "country": "us",
+   "faction": "field",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp Daily 寫她用母親講二戰記憶開場，接著是一小時「dense, visceral」的聲音拼貼；暗色 field recording 具象音樂，落頹靡。",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.0,
+    "z": -1.3,
+    "why": "具象拼貼，母親口述的二戰回憶與緻密暗聲，無鼓"
+   },
+   "evidence": [
+    "https://daily.bandcamp.com/best-experimental/best-experimental-music-bandcamp-march-2019",
+    "https://toneglowrecords.bandcamp.com/album/you-i-are-earth",
+    "https://f4.bcbits.com/img/a3552173531_10.jpg"
+   ],
+   "bcdaily": "an hour of dense, visceral sounds that seem to both echo her mother's words",
+   "mbRgMbid": "11a43889-ee68-4b0c-a2e4-075d87a4fdfa",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "拼貼有突發聲響，x 可能到 2.7"
+  },
+  {
+   "artist": "Aidan Baker & Ekin Fil",
+   "album": "The Dark Well",
+   "year": 2020,
+   "label": "A Red Thread",
+   "country": "de",
+   "faction": "drone",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp Daily 寫兩位 drone 人合作，「dense enough to have gravitational pull」；暗黑 ambient 長音，池中 Aidan Baker 已落頹靡。",
+   "moodGuess": {
+    "x": 1.2,
+    "y": 1.3,
+    "z": -0.8,
+    "why": "厚密 drone 有引力般下沉，時而空靈，無鼓"
+   },
+   "evidence": [
+    "https://daily.bandcamp.com/best-experimental/the-best-experimental-music-on-bandcamp-september-2020",
+    "https://aredthread.bandcamp.com/album/the-dark-well",
+    "https://f4.bcbits.com/img/a2853250907_10.jpg"
+   ],
+   "bcdaily": "sometimes they feel airy and soothing, other times dense enough to have gravitational pull",
+   "mbRgMbid": "327bf848-0349-4c7e-bb85-d6ebe4183de7",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Bandcamp 曲目合計約 28 分鐘（不足 30，MB 列 Album）；Ekin Fil 一側偏夢幻"
+  },
+  {
+   "artist": "Dronestore Cowboys",
+   "album": "Dentists of Horses Dream of God to Study",
+   "year": 2020,
+   "label": "Dronestore Cowboys",
+   "country": "us",
+   "faction": "mass",
+   "genres": [
+    "rock"
+   ],
+   "why": "Bandcamp Daily 寫它是「ghostly, resonant tone poems」，像冰河般的吉他殘響；荒涼、緩慢，落頹靡。",
+   "moodGuess": {
+    "x": 1.7,
+    "y": 0.9,
+    "z": -0.4,
+    "why": "重殘響吉他慢線，荒原般，冰河感，無鼓"
+   },
+   "evidence": [
+    "https://daily.bandcamp.com/best-experimental/the-best-experimental-music-on-bandcamp-july-2020",
+    "https://dronestorecowboyss.bandcamp.com/album/dentists-of-horses-dream-of-god-to-study-2",
+    "https://f4.bcbits.com/img/a3604594510_10.jpg"
+   ],
+   "bcdaily": "ghostly, resonant tone poems … akin to the glacial parts of Loren Connors's oeuvre",
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "artist:\"Dronestore Cowboys\"",
+     "releasegroup:\"Dentists of Horses Dream of God to Study\""
+    ],
+    "checkedAt": "2026-11-05",
+    "conclusion": "MusicBrainz release-group 搜尋藝人＋專輯名皆無對應條目（Bandcamp-only 發行）"
+   },
+   "manualEvidenceUrls": [
+    "https://dronestorecowboyss.bandcamp.com/album/dentists-of-horses-dream-of-god-to-study-2",
+    "https://daily.bandcamp.com/best-experimental/the-best-experimental-music-on-bandcamp-july-2020"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "z 與 y 皆貼邊，建議低優先"
+  },
+  {
+   "artist": "Louise Bock",
+   "album": "Sketch for Winter VII - Abyss: For Cello",
+   "year": 2020,
+   "label": "Geographic North",
+   "country": "us",
+   "faction": "mass",
+   "genres": [
+    "classical"
+   ],
+   "why": "Bandcamp Daily 寫 Taralie Peterson 以大提琴一件樂器做成的「Sketch for Winter」系列一張；冬日深淵感的大提琴長音，落頹靡。",
+   "moodGuess": {
+    "x": 1.5,
+    "y": 0.9,
+    "z": -0.8,
+    "why": "大提琴長弓與電子延遲，冬日深淵感，無鼓"
+   },
+   "evidence": [
+    "https://daily.bandcamp.com/best-experimental/the-best-experimental-music-on-bandcamp-january-2020",
+    "https://louisebock.bandcamp.com/album/sketch-for-winter-vii-abyss-for-cello",
+    "https://f4.bcbits.com/img/a3775171821_10.jpg"
+   ],
+   "bcdaily": "focusing solely on a single instrument, the cello—and the results are as probing and mesmerizing as any of her previous work",
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "artist:\"Louise Bock\"",
+     "releasegroup:\"Sketch for Winter VII - Abyss: For Cello\""
+    ],
+    "checkedAt": "2026-11-05",
+    "conclusion": "MusicBrainz release-group 搜尋藝人＋專輯名皆無對應條目（Bandcamp-only 發行）"
+   },
+   "manualEvidenceUrls": [
+    "https://louisebock.bandcamp.com/album/sketch-for-winter-vii-abyss-for-cello",
+    "https://daily.bandcamp.com/best-experimental/the-best-experimental-music-on-bandcamp-january-2020"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "聽感依據偏少、純憑標題與器樂；曲目約 30 分鐘；建議低優先"
+  },
+  {
+   "artist": "Matt Christensen",
+   "album": "Guts",
+   "year": 2026,
+   "label": "Matt Christensen",
+   "country": "us",
+   "faction": "mass",
+   "genres": [
+    "rock"
+   ],
+   "why": "Bandcamp Daily 寫它是「gentle but unrestrained electric playing」，帶 Loren Connors、Dead Man 配樂的暗色氣氛；緩慢電吉他迴響，落頹靡。",
+   "moodGuess": {
+    "x": 1.8,
+    "y": 0.9,
+    "z": -0.6,
+    "why": "緩慢電吉他迴響，風與水聲，Dead Man 式暗色"
+   },
+   "evidence": [
+    "https://daily.bandcamp.com/best-experimental/the-best-experimental-music-on-bandcamp-april-2026",
+    "https://mattchristensensolo.bandcamp.com/album/guts",
+    "https://f4.bcbits.com/img/a3505168968_10.jpg"
+   ],
+   "bcdaily": "six tracks of gentle but unrestrained electric playing, with a dark aura that brings to mind Loren Connors",
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "artist:\"Matt Christensen\"",
+     "releasegroup:\"Guts\""
+    ],
+    "checkedAt": "2026-11-05",
+    "conclusion": "MusicBrainz release-group 搜尋藝人＋專輯名皆無對應條目（Bandcamp-only 發行）"
+   },
+   "manualEvidenceUrls": [
+    "https://mattchristensensolo.bandcamp.com/album/guts",
+    "https://daily.bandcamp.com/best-experimental/the-best-experimental-music-on-bandcamp-april-2026"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Bandcamp tag 含 dream pop／indie folk，z 可能偏中性；建議低優先"
+  }
+ ],
+ "notes": [
+  "來源：Bandcamp Daily Best Experimental（含 Hi-Bias 卡帶專欄舊期）2016–2026 全期共 77+24 期，以評介關鍵詞篩冷暗重那半，再逐張查 Bandcamp 頁（曲目長度、廠牌、封面）與 MB。",
+  "已剔除：Siavash Amini《Serus》（md32 已收）、C. Lavender《Convex Umbra》（MB 標 Live）、Svarte Greiner《Untitled Tour CDr》（MB 標 EP）、Afterwar（23 分鐘）、Clarice Jensen《Drone Studies》（27 分）、Norah Lorway《Future Void》（23 分）等不足 30 分或非正規專輯者。",
+  "Best Electronic 專欄多為有拍的舞曲／低音音樂，未取。",
+  "Best Experimental 多為小廠卡帶，知名度低，故事性靠 Bandcamp Daily 評介；若主線要求更高知名度，可優先留 Kirkegaard、Kayn、Baker、Goldston、Skodvin 系（池中同人已落頹靡）。",
+  "evidence 第三項為 Bandcamp 封面圖網址；人工身分者 manualEvidenceUrls 用 Bandcamp 專輯頁＋Daily 該期頁。",
+  "moodGuess 為依評介與藝人風格估計，並未逐張試聽。"
+ ]
+}
