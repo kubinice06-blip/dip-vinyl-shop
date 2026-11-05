@@ -154,6 +154,8 @@
 | md34 | 22281 | funeral doom／drone doom 慢盤第二波（Esoteric、Evoken、Mournful Congregation、Skepticism、Thergothon 系） | ✅ 上線 38／落格 38 |
 | md35 | 22521 | 頹靡電子：深暗 dubstep／post-dubstep 慢盤、hauntology、witch house（只收電子盤） | ✅ 上線 26／落格 24（2026-11-04；dubstep 二線多 140 BPM 推進，hauntology 陰冷那半全中；剩約 10–15 張，不再單獨派） |
 | md36 | 22601 | 頹靡電子：illbient、冷 ambient techno／Berlin 慢盤、慢工業電子／post-industrial ambient、暗 downtempo 新世代（只收電子盤） | ✅ 上線 19／落格 19（2026-11-04；illbient 多 hip-hop／reggae 根、冷 techno 池中已滿；見底不再派） |
+| md37 | 23161 | 頹靡 Bandcamp 線 A（2026-11-05，店主「恍惚跟頹靡可以去 Bandcamp 爬梳」）：Bandcamp Daily「Best Ambient」「Best Experimental」月度專欄與年度榜（2016–2026）裡冷、暗、重的那半——dark ambient、drone、tape loop、isolationist、暗色 field recording 拼貼、冷 modern classical 音塊（暖、明亮、有旋律的留給恍惚線）（條號避開並行的 ml66／ml67＝23321／23401） | ✅ 上線 14／落格 13（2026-11-05；策展兩組 47、主線汰 24（自我同名、貼邊、x 風險、單源）、研究汰 9；Tape Melt 判輕。**Bandcamp 來源產量與坑**：兩專欄約 200 期、提及約 2,500 張，冷暗重的少；小廠卡帶常只有一段 Daily 評介、沒第二來源，故事性不夠就汰；人工身分 6 張、Apple 查無 4 張。產量低，不建議再單獨派） |
+| md38 | 23241 | 頹靡 Bandcamp 線 B：Bandcamp Daily Lists／Scene Report／Label Profile／Album of the Day 裡的頹靡場景——dungeon synth、dark jazz／doom jazz、slowcore／sadcore 冷盤、dark folk／drone folk、暗色 post-rock 無鼓、hauntology 廠牌、暗 downtempo（非嘻哈） | ✅ 上線 5／落格 5（2026-11-05；策展兩組 26、主線汰 12、研究汰 9（有鼓 2、判輕判亮 4、<30 分 1、故事薄 2）；Daily 對這幾個場景幾乎沒有專文，hauntology 廠牌 0、dungeon synth 多明亮、dark jazz 頭牌已在池；**死池，不再派**） |
 
 ## 冷冽 mc（躁＋輕＋冷；門檻 x ≥ 3.3、y ≤ +0.2、z ≤ −0.3）
 

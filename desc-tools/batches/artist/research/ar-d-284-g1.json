@@ -1,0 +1,461 @@
+[
+ {
+  "key": "mortiis",
+  "name": "Mortiis",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Mortiis 是挪威創作者 Håvard Ellefsen 的個人計畫（名字取自 mortis 的拼錯，念法同 mortis）；他早年在黑金屬樂團 Emperor 彈貝斯，待了一年多就離團，轉而獨自做音樂。",
+      "src": "https://en.wikipedia.org/wiki/Mortiis",
+      "src2": "https://www.ambientlightblog.com/embracing-history-a-mortiis-interview/",
+      "from": "new"
+     },
+     {
+      "f": "Ellefsen 回憶，自己大約十八歲、坐下來面對一台鍵盤開始做的東西，後來才被人說成是早期的 dungeon synth；當時他完全不知道這個詞，自己只叫它 dark ambient 之類的名字。",
+      "src": "https://terrarelicta.com/publications/interviews/mortiis",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Mortiis 的 Era I（約 1994 至 2000 年前後的作品）全部只用合成器完成；他自稱這種聲音是「dark dungeon music」。",
+      "src": "https://en.wikipedia.org/wiki/Mortiis",
+      "src2": "https://terrarelicta.com/publications/interviews/mortiis",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "他在 1990 年代就把自己的聲音和形象綁在一起：戴義肢面具與尖耳，Era I 時面具遮住整張臉；他說自己不把這當成精靈、哥布林或中世紀角色，「我只是 Mortiis」。",
+      "src": "https://en.wikipedia.org/wiki/Mortiis",
+      "src2": "https://terrarelicta.com/publications/interviews/mortiis",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Bandcamp Daily 把 Mortiis 寫成「前 Emperor 貝斯手、戴義肢面具的 dungeon synth 先驅」；Terra Relicta 訪談開頭也說他離開 Emperor 後創出了 dungeon synth 這個類型。",
+      "src": "https://daily.bandcamp.com/label-profile/crypt-of-the-wizard-hackney-label-record-store",
+      "src2": "https://terrarelicta.com/publications/interviews/mortiis",
+      "from": "new"
+     },
+     {
+      "f": "Ellefsen 自己對「類型創始人」的說法很保留：說被這樣稱呼有點讓人腦袋打結，希望大家認為是他和其他一些人一起，否則是把功勞算得太多。",
+      "src": "https://www.ambientlightblog.com/embracing-history-a-mortiis-interview/",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "倫敦的唱片行 Crypt Of The Wizard 的店名借自 Mortiis 1996 年的合輯；開店後一週，店家信箱收到 Mortiis 本人寄來只寫「I like the name」的信，他後來還到店裡簽名。",
+      "src": "https://daily.bandcamp.com/label-profile/crypt-of-the-wizard-hackney-label-record-store",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "Mortiis 2020 年回頭做 Era I 風格，以《Spirit of Rebellion》重製他 1994 年的《Ånden som Gjorde Opprør》；起因是 2017 年 Cold Meat Industry 廠牌二十五週年受邀演出。",
+      "src": "https://en.wikipedia.org/wiki/Mortiis",
+      "src2": "https://terrarelicta.com/publications/interviews/mortiis",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他 2001 年的《The Smell of Rain》轉向 dark wave／electropop，他第一次親自擔任主唱；此前的作品事後被稱為 Era I，是這張專輯出版時才有的分法。",
+      "src": "https://en.wikipedia.org/wiki/Mortiis",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "Era III 的《The Grudge》轉成重型工業搖滾，維基稱它是他所有專輯裡留下最大印象的一張，部分長年樂迷也不領情。",
+      "src": "https://en.wikipedia.org/wiki/Mortiis",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "《Keiser av en dimensjon ukjent》1995 年由瑞典廠牌 Cold Meat Industry 發行；下一張 1996 年的合輯是《Crypt of the Wizard》。",
+    "src": "https://www.discogs.com/master/29852",
+    "src2": "https://en.wikipedia.org/wiki/Crypt_of_the_Wizard",
+    "from": "bank"
+   }
+  ],
+  "conflicts": [],
+  "searches": 5,
+  "failedFetches": [],
+  "status": "full",
+  "notes": "事實庫 4 條（Emperor 背景與 Era I 取自維基，1995 專輯取自 Discogs，Daily 店家專訪）全數沿用。WebSearch 1 次、WebFetch（curl）Terra Relicta、Ambient Light、維基 Mortiis raw、維基 Crypt of the Wizard 各 1 次。維基預抓 warn（頁面未提卡池專輯）：poolAlbums 為空，但事實庫專輯《Keiser av en dimensjon ukjent》（1995、Cold Meat Industry）與維基 Mortiis 年表與廠牌吻合，身分採 Mortiis（Håvard Ellefsen）。出生地不收：維基導言寫 Notodden Municipality，同頁內文與 Ambient Light 寫 Skien, Telemark，Wikidata 為 Notodden，三處不一致。Emperor 在團年份：維基寫 1991–1992，個人計畫 1993 年成立（單源，未收年份）；維基內文與 Ambient Light 皆寫「僅一年多」，facts 只寫「一年多」。「先驅／創出類型」屬評價用語：Daily 寫 progenitor、Terra Relicta 寫 created，本人謙稱；寫作層宜寫「被視為 dungeon synth 的先驅」，不寫「第一人」。"
+ },
+ {
+  "key": "the orchestra of mirrored reflections",
+  "name": "The Orchestra of Mirrored Reflections",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "The Orchestra of Mirrored Reflections 是烏克蘭第聶伯羅（Dnipro）的音樂計畫，由 Jol Tai 領軍；《Far Drifters》的錄音由 Jol Tai、Giallo、Amarillo 與 Kiro-sama 演奏錄製，另有三首邀請鋼琴與直立貝斯手客串。",
+      "src": "https://joltai.bandcamp.com/album/far-drifters",
+      "src2": "https://daily.bandcamp.com/scene-report/ukraine-vanguard-electronic-list",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "《Far Drifters》是這個計畫的第二張專輯，2016 年 1 月 1 日在 Bandcamp 發行；封面油畫與頁首版畫都出自畫家 Alina Salikhova。",
+      "src": "https://joltai.bandcamp.com/album/far-drifters",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "自述是「dark ambient、爵士與 down-tempo 的混合，帶一點神秘感」，聲音像一個遙遠而夢幻的地方。",
+      "src": "https://joltai.bandcamp.com/album/far-drifters",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "Bandcamp Daily 說《Far Drifters》很適合當大衛林區電影的配樂：輕輕敲落的鼓伴著忽隱忽現的脈動 drone，〈Le Noir Primavera〉的緩慢迴響新世紀鋼琴像 Harold Budd 走進樂團。",
+      "src": "https://daily.bandcamp.com/scene-report/ukraine-vanguard-electronic-list",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Bandcamp Daily 的烏克蘭前衛電子場景名單把這個團寫成 dark ambient 系爵士傳統的延續者：Bohren Und Der Club Of Gore 這類樂團是這種爵士的始祖，而他們正延續這個傳統。",
+      "src": "https://daily.bandcamp.com/scene-report/ukraine-vanguard-electronic-list",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [],
+  "conflicts": [],
+  "searches": 5,
+  "failedFetches": [
+   "https://www.merchantsofair.com/reviews/the-orchestra-of-mirrored-reflections-far-drifters（連線 502）",
+   "https://www.allaboutjazz.com（雲端必擋，未開）",
+   "https://musicbrainz.org/release/da0f297e-05f7-4760-a62b-61be00dd28c2（JavaScript 驗證頁，無內容）"
+  ],
+  "status": "thin",
+  "notes": "資料薄，查無維基與主流媒體專文。Daily 場景名單的 Dnipro 與 Bandcamp 頁一致；Faeton 部落格寫 Dnipropetrovsk（第聶伯羅舊名）亦同。形成地與成軍年不收：Songtradr 說樂團源自印度貝拿勒斯（Benares）、RYM 寫 2012 年 1 月 21 日成軍且成立地 Varanasi，只見商店簡介與使用者資料庫，itshourcomeatlast 部落格也只說「something about India, by way of Ukraine」；來源皆不可靠，不收。Merchants of Air（Serge Timmers）評論連線失敗未取得。WebSearch 1 次、WebFetch（curl）Daily 烏克蘭名單、Bandcamp 專輯頁、Faeton、itshourcomeatlast 各 1 次。卡池與事實庫無同名混卡，同名專輯只有《Far Drifters》。Jol Tai 的個人生平查無。"
+ },
+ {
+  "key": "atrium carceri, cities last broadcast, god body disconnect",
+  "name": "Atrium Carceri, Cities Last Broadcast, God Body Disconnect",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "三人都是 Cryo Chamber 廠牌的藝人：Atrium Carceri 是瑞典人 Simon Heath，他九零年代初在斯德哥爾摩開始做音樂，最初是替他和朋友的角色扮演遊戲 Kult 場次配樂，Atrium Carceri 就從這些配樂慢慢演變而來。",
+      "src": "https://daily.bandcamp.com/label-profile/cryo-chamber-dark-ambient-guide",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "Heath 2003 至 2012 年間以 Atrium Carceri 之名在瑞典廠牌 Cold Meat Industry 發行過幾張唱片，自承從未覺得自己真正屬於那間廠牌；2011 年他搬到美國西岸，定居奧勒岡州波特蘭，自己開了 Cryo Chamber。",
+      "src": "https://daily.bandcamp.com/label-profile/cryo-chamber-dark-ambient-guide",
+      "src2": "https://en.wikipedia.org/wiki/Atrium_Carceri",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "God Body Disconnect 是紐澤西的 Bruce Moallem，進 Cryo Chamber 之前在實驗死亡金屬團 Dripping 演出；Cities Last Broadcast 是瑞典人 Pär Boström，也以 Kammarheit 之名做音樂。",
+      "src": "https://daily.bandcamp.com/label-profile/cryo-chamber-dark-ambient-guide",
+      "src2": "https://avantmusicnews.com/label-overviews/cryo-chamber-overview/",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Atrium Carceri 通常被歸為 dark ambient、black ambient 與 ambient industrial，用合成器、音效、電影與動畫取樣與鋼琴，做慢節奏、苦澀旋律與複雜質地，主題圍繞荒涼、孤獨與環境崩壞。",
+      "src": "https://en.wikipedia.org/wiki/Atrium_Carceri",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "Cryo Chamber 的專輯講究概念：Heath 說概念不只是外圍的美術與文字，而是創作過程的一部分；許多發行帶有科幻、都市或後末日主題，聲音像電影配樂，混音空間開闊。",
+      "src": "https://daily.bandcamp.com/label-profile/cryo-chamber-dark-ambient-guide",
+      "src2": "https://avantmusicnews.com/label-overviews/cryo-chamber-overview/",
+      "from": "new"
+     },
+     {
+      "f": "《Miles to Midnight》在 dark ambient 的慣例裡算是變化球：爵士味、電影感的聲音，Heath 形容是「Bohren & Der Club Of Gore meets Twin Peaks」；Moallem 打輕柔的刷子鼓，Boström 玩壓低的磁帶循環，Heath 彈鋼琴，三人鋪出一個偵探調查舊旅館黑暗過往的黑色電影故事。",
+      "src": "https://daily.bandcamp.com/label-profile/cryo-chamber-dark-ambient-guide",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Heath 說他和 Kult 的作者們聊過，作者們有時寫稿時會聽 Atrium Carceri，「靈感的迴圈走了一整圈」；Kult 新版 2018 年在募資成功後重新上架。",
+      "src": "https://daily.bandcamp.com/label-profile/cryo-chamber-dark-ambient-guide",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "Daily 稱 Cryo Chamber 示範了小眾類型能長到多大；Heath 把廠牌形容成「一個集體工作坊，我們互相幫忙、合作」，廠牌長年辦跨藝人的合作專輯，包括向洛夫克拉夫特致敬的系列，Heath 說其中的《Hastur》大概是廠牌最受歡迎的一張。",
+      "src": "https://daily.bandcamp.com/label-profile/cryo-chamber-dark-ambient-guide",
+      "src2": "https://en.wikipedia.org/wiki/Atrium_Carceri",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Heath 與 Boström 在《Miles to Midnight》之前就合作過：Daily 的 Cryo Chamber 專文列出 Atrium Carceri & Cities Last Broadcast 的《Black Corner Den》是另一張代表作，靈感來自十九世紀末的鴉片館；Boström 和 Moallem 另有 Underwater Sleep Orchestra 的二人計畫。",
+      "src": "https://daily.bandcamp.com/label-profile/cryo-chamber-dark-ambient-guide",
+      "src2": "https://avantmusicnews.com/label-overviews/cryo-chamber-overview/",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "《Miles to Midnight》2018 年 1 月 9 日由 Cryo Chamber 發行，是廠牌三位藝人的合作專輯，也是 Heath 在 Daily 專文裡挑出的八張廠牌代表作之一。",
+    "src": "https://cryochamber.bandcamp.com/album/miles-to-midnight",
+    "src2": "https://daily.bandcamp.com/label-profile/cryo-chamber-dark-ambient-guide",
+    "from": "new"
+   }
+  ],
+  "conflicts": [],
+  "searches": 5,
+  "failedFetches": [],
+  "status": "thin",
+  "notes": "合作組合鍵，寫的是三人在 Cryo Chamber 底下的合作：Heath 彈鋼琴、Moallem 刷子鼓、Boström 磁帶循環、故事為黑色電影偵探與舊旅館（Daily）。寫作層請勿寫「第一次」「唯一」之類說法（未反查）。Cryo Chamber 創辦年不一致：Daily 寫「自 2012 年起」是廠牌老闆；維基寫 2011 年 Atrium Carceri 離開 Cold Meat Industry 並創立廠牌；facts 只寫 2011 年搬家與創辦，不寫創辦年份。Heath 離開 Cold Meat Industry 的年份：Daily 說 2003–2012 發片、2011 搬美國，維基說 2011 離開，兩處也不完全一致，facts 沿用 Daily 區間且不寫「離廠年」。legacy 薄：只有 Heath 自述與 Daily 判斷，無名人堂、後輩點名、獎項等外部共識，維基只說 Atrium Carceri「受樂評讚賞並有 cult 聽眾」，未收。Cities Last Broadcast 與 God Body Disconnect 的個人生平查無獨立專文，只有 Daily 與 Avant Music News 的一兩句。《Black Corner Den》是 Atrium Carceri 與 Cities Last Broadcast 的合作，Daily 原文把 Boström 與 Kammarheit 分開寫成「兩位瑞典人」，其中 Kammarheit 是 Boström 的另一名義，依 Avant 該站對 Boström 的標示。WebSearch 1 次、WebFetch（curl）Daily Cryo Chamber 專文、維基 Atrium Carceri、Avant Music News、Cryo Chamber Bandcamp 專輯頁各 1 次。"
+ },
+ {
+  "key": "one leg one eye",
+  "name": "One Leg One Eye",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "One Leg One Eye 是都柏林 Lankum 樂團成員 Ian Lynch 的個人計畫；他疫情前搬回都柏林北郊 Baldoyle 的父母家，封城把他困在那裡，被迫面對童年的種種，他說像塔羅牌裡塔被整個摧毀的那張牌。",
+      "src": "https://thequietus.com/interviews/ian-lynch-lankum-one-leg-one-eye-interview/",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "他為了排解情緒，帶著 shruti box 到兩處童年舊地獨自唱歌錄音：家附近曾是賽馬場的廢棄工地地下通道，以及他父親曾工作過、位在 Howth 的廢工廠；這些錄音後來成了第一張專輯的底。",
+      "src": "https://thequietus.com/interviews/ian-lynch-lankum-one-leg-one-eye-interview/",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "Nyahh Records 的 Willie Stewart 聽到他投稿 Department Of Energy 聖布麗姬日合輯《Lee Lines》的歌，邀他出一張完整的個人專輯；Lynch 考慮後答應。",
+      "src": "https://thequietus.com/interviews/ian-lynch-lankum-one-leg-one-eye-interview/",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Lynch 說專輯做著做著，聲音變得更接近黑金屬而不是民謠；Daily 說他在專輯裡徹底擁抱粗糙的黑金屬，也愛 Past Inside The Present、Lontano Series、Decaying Spheres 這類廠牌的陰沉氛圍作品，以 uilleann pipes、windbox 與 hurdy-gurdy 的嗡鳴把民謠的規矩拆掉。",
+      "src": "https://thequietus.com/interviews/ian-lynch-lankum-one-leg-one-eye-interview/",
+      "src2": "https://daily.bandcamp.com/scene-report/new-dark-folk-uk-ireland-scene-report",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "專輯名《...And Take The Black Worm With Me》來自 Lynch 一次冥想看到的巨大黑蟲：他起初以為那是要對抗的怪物，後來聽到的聲音說「你必須擁抱黑蟲，它是你的一部分」。",
+      "src": "https://thequietus.com/interviews/ian-lynch-lankum-one-leg-one-eye-interview/",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "none",
+    "facts": [
+     {
+      "f": "Daily 的英愛新黑暗民謠報告把這個計畫放進「民謠最黑暗的部分正滲進英愛最創新的聲音」的脈絡：當 Shovel Dance Collective 等人在翻挖歷史、以尖銳論調對抗壓迫者，Lynch 的 One Leg One Eye 則被形容為以宇宙級的洛夫克拉夫特式沖水，把富人的垃圾清乾淨。",
+      "src": "https://daily.bandcamp.com/scene-report/new-dark-folk-uk-ireland-scene-report",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "Lynch 說專輯做完後，他在 Lankum 的演出變得放鬆：此前他每場都壓力很大、一度考慮退出舞台；Lankum 2023 年的《False Lankum》隨後把他們推上更大的名聲，但他說 One Leg One Eye 才是他最想要的樂團經驗。",
+      "src": "https://thequietus.com/interviews/ian-lynch-lankum-one-leg-one-eye-interview/",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "《...And Take the Black Worm With Me》2022 年 10 月 27 日由愛爾蘭 Leitrim 郡 DIY 廠牌 Nyahh Records 發行；Nyahh 由音樂人兼 DJ Willie Stewart 創辦，旗下也有他與伴侶 Natalia Beylis、大提琴家 Eimear Reidy 的作品。",
+      "src": "https://daily.bandcamp.com/features/nyahh-records-label-profile",
+      "src2": "https://musicbrainz.org/release-group/19d2659f-e697-428d-b79d-7e85a8faf203",
+      "from": "bank"
+     },
+     {
+      "f": "Lynch 原本不打算讓這個計畫現場演出，說想做一張「怪人臥室專輯」、不想用上台的壓力污染它；後來被 Lankum 經理說服，接下柏林 CTM 音樂節的邀約，2024 年初首演，由 George Brennan 提供大量低頻。",
+      "src": "https://thequietus.com/interviews/ian-lynch-lankum-one-leg-one-eye-interview/",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "《...And Take the Black Worm With Me》2022 年 10 月 27 日由 Nyahh Records 發行，是 Lynch 的首張個人專輯。",
+    "src": "https://daily.bandcamp.com/features/nyahh-records-label-profile",
+    "src2": "https://musicbrainz.org/release-group/19d2659f-e697-428d-b79d-7e85a8faf203",
+    "from": "bank"
+   }
+  ],
+  "conflicts": [],
+  "searches": 5,
+  "failedFetches": [],
+  "status": "thin",
+  "notes": "整位只有 Quietus 訪談（2024 年 3 月，Patrick Clarke）一篇深度來源，其餘為 Daily 兩篇。Quietus 訪談單源，皆低風險（身世、養成、本人說法）。legacy 格查不到外部共識（無獎項、無後輩點名、維基無條目），所以標 none；Lankum 的 Mercury 提名與 False Lankum 的名次是 Lankum 的，不屬這個計畫，未收；寫作層不要把 Lankum 的榮譽寫成 One Leg One Eye 的。Quietus 用「Black Worm」不加逗號、Daily 與 Bandcamp 有 One Leg, One Eye 與 One Leg One Eye 兩種寫法，採名冊寫法。首演年：Quietus 說「年初」且文章發表於 2024 年 3 月，facts 寫 2024 年初；Lynch 該篇說明 Berlin CTM 為「今年年初」，無其他來源，寫作層可不寫年份。George Brennan 為電子音樂人（Quietus）。WebSearch 1 次、WebFetch（curl）Quietus、Daily 新黑暗民謠報告、Daily Nyahh 專文、khuh 部落格（Cold Spring 簡介，未用）各 1 次。無同名混卡。"
+ },
+ {
+  "key": "krm & kmru",
+  "name": "KRM & KMRU",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "KMRU 是 Joseph Kamaru，1997 年生於肯亞奈洛比，2020 年 10 月搬到柏林，進柏林藝術大學（Universität der Künste）念 Sound Studies and Sonic Arts 碩士。",
+      "src": "https://en.wikipedia.org/wiki/KMRU",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "Kamaru 小時候彈吉他、在合唱團唱歌，高中時在學校電腦上找到 FL Studio，第一次接觸電子音樂；他的外公同名，是知名的 benga 音樂人，2018 年外公過世後，他重新發行外公的一些專輯，想讓新的聽眾認識他。",
+      "src": "https://en.wikipedia.org/wiki/KMRU",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "KRM 是 Kevin Richard Martin 的新化名；他以 The Bug 之名多年來做出「咔嗒作響、帶點陰鬱」的電子樂，融合 dancehall、grime 與 dubstep，合作對象從 Inga Copeland、Liz Harris 到 Death Grips。",
+      "src": "https://daily.bandcamp.com/album-of-the-day/krm-kmru-disconnect-review",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Daily 把 Martin 的背景連到 Techno Animal：他與 Justin Broadrick 在 1990 年於倫敦組成這個二人組，混合 dub 製作與暗黑、重拍的 ambient，維基把它歸入 illbient、dub、post-industrial 與 dark ambient；Daily 說該二人組在 90 年代協助催生了 illbient。",
+      "src": "https://daily.bandcamp.com/album-of-the-day/krm-kmru-disconnect-review",
+      "src2": "https://en.wikipedia.org/wiki/Techno_Animal",
+      "from": "new"
+     },
+     {
+      "f": "《Disconnect》的聲音：Daily 說它「濕黏而不為所動」，KMRU 顆粒感的聲響與 Martin 偏 dub 的傾向無縫結合；KMRU 這次出人意料地開口，有柔聲唱、有扭曲的詩，是這張專輯的陰冷基調，也被拿來和 microhouse 比。",
+      "src": "https://daily.bandcamp.com/album-of-the-day/krm-kmru-disconnect-review",
+      "src2": "https://thequietus.com/news/kevin-richard-martin-kmru-album-disconnect/",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Pitchfork 2023 年稱 KMRU 是「當代電子音樂裡被廣泛參照的人物」（維基引述）；他 2022 年與 Big Thief 巡演，2023 年的《Dissolution Grip》從田野錄音轉向，獲 Loud and Quiet 與 Pitchfork 好評。",
+      "src": "https://en.wikipedia.org/wiki/KMRU",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "Daily 說近年 Jake Muir、Special Guest DJ、LXV 等年輕製作人讓 Techno Animal 當年催生的 illbient 回潮，《Disconnect》是 Martin 在這波復興中回到「煙霧般無定形」。",
+      "src": "https://daily.bandcamp.com/album-of-the-day/krm-kmru-disconnect-review",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "兩人先在 Instagram 認識：Martin 看了 2020 年的短片紀錄片《Under The Bridge》發現 KMRU，欣賞彼此的作品後，由 Martin 提議合作；Martin 說自己是「搜尋新音樂的徹底成癮者」。",
+      "src": "https://daily.bandcamp.com/album-of-the-day/krm-kmru-disconnect-review",
+      "src2": "https://thequietus.com/news/kevin-richard-martin-kmru-album-disconnect/",
+      "from": "new"
+     },
+     {
+      "f": "《Disconnect》共六首，2024 年 6 月 14 日由 Phantom Limb 發行，是兩人第一次在唱片上合作；Martin 說他被 KMRU 輕聲帶口音的說話聲吸引，因此提議他加入人聲，這是 KMRU 以往作品所沒有的。",
+      "src": "https://thequietus.com/news/kevin-richard-martin-kmru-album-disconnect/",
+      "src2": "https://daily.bandcamp.com/album-of-the-day/krm-kmru-disconnect-review",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "《Disconnect》2024 年 6 月 14 日由 Phantom Limb 發行，兩人第一次合作錄音；這也是 Martin 以 KRM 這個新名義發行的專輯。",
+    "src": "https://thequietus.com/news/kevin-richard-martin-kmru-album-disconnect/",
+    "src2": "https://daily.bandcamp.com/album-of-the-day/krm-kmru-disconnect-review",
+    "from": "new"
+   }
+  ],
+  "conflicts": [],
+  "searches": 5,
+  "failedFetches": [
+   "https://www.ninaprotocol.com/articles/this-idea-of-dub-as-a-philosophy-a-talk-with-kmru-and-kevin-richard-martin-the-bug（連線失敗）",
+   "https://www.phantom-limb.co.uk/portfolio-1/krm-&-kmru---disconnect（404）",
+   "https://sun-13.com/2024/06/14/krm-kmru-disconnect/（403）",
+   "https://thequietus.com/articles/38250-krm-kmru-disconnect-review（404）",
+   "https://krm-kmru.bandcamp.com/album/disconnect（404）"
+  ],
+  "status": "full",
+  "notes": "合作組合，寫的是兩人怎麼合作；成員個人生平各一句。身分：KRM 的 Kevin Richard Martin 即 The Bug／Techno Animal／God 的 Kevin Martin（主線特注）；維基預抓 KMRU 條目 warn（頁面未提卡池專輯《Disconnect》），但 Daily 與 Quietus 均寫 KMRU 為 Joseph Kamaru、奈洛比出身柏林，確認為同一人。「Techno Animal 協助催生 illbient」只有 Daily 明說，維基僅把 illbient 列為其類型標籤，兩源不完全獨立且維基未寫「催生」，寫作層寫「Daily 稱…」，不寫成定論。「第一次合作」依 Quietus 新聞稿說法，Daily 同；Kamaru 以外公同名、外公為政治活動者之說（搜尋摘要）未開頁核對，不收。Martin 個人生平（出生地、God 樂團年表等）本組未補，維基的 Kevin Martin 條目名稱已被消歧義頁佔用，未找到正確條目。Pitchfork 在雲端被擋，評語為維基轉述，單源，是具名說法。Quietus 新聞稿與 Martin 的聲明：Martin 說自己先是被 KMRU 的聲音手法吸引，再注意到他說話的聲調。WebSearch 1 次、WebFetch（curl）Daily、Quietus 新聞、維基 KMRU、維基 Techno Animal 各 1 次。"
+ }
+]

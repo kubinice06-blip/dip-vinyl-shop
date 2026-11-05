@@ -1,0 +1,11 @@
+import fs from 'node:fs'; import crypto from 'node:crypto';
+const SP=process.argv[2];const N=+process.argv[3]||600;
+const norm=s=>String(s||"").toLowerCase().replace(/[‐-―－]/g,"-").normalize("NFKC").replace(/[^\p{L}\p{N}]+/gu,"");
+const img=new Map();for(const f of fs.readdirSync(SP+'/bc/img'))for(const r of JSON.parse(fs.readFileSync(SP+'/bc/img/'+f,'utf8')))img.set(norm(r.artist)+'|'+norm(r.album),r.image);
+const rows=JSON.parse(fs.readFileSync(SP+'/bc/cand-ranked.json','utf8')).slice(0,N);
+const out=rows.map((r,i)=>({id:'b'+crypto.createHash('md5').update(r.key).digest('hex').slice(0,12),a:r.artist,b:r.album,y:r.released.slice(0,4),l:r.l,t:r.tags,n:r.tracks,m:r.minutes,loc:r.location,u:r.url,img:img.get(r.key)||''}));
+fs.writeFileSync(SP+'/bc/page-data.json',JSON.stringify(out));
+console.log(out.length,'with img',out.filter(r=>r.img).length);
+const covers={};let i=0;
+await Promise.all(Array.from({length:8},async()=>{while(i<out.length){const r=out[i++];if(!r.img)continue;try{const res=await fetch(r.img.replace('_9.jpg','_3.jpg'),{signal:AbortSignal.timeout(15000)});if(res.ok){covers[r.id]='data:image/jpeg;base64,'+Buffer.from(await res.arrayBuffer()).toString('base64')}}catch{}}}));
+fs.writeFileSync(SP+'/bc/bc-covers.json',JSON.stringify(covers));console.log('covers',Object.keys(covers).length,'bytes',fs.statSync(SP+'/bc/bc-covers.json').size);

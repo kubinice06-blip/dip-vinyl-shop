@@ -3847,4 +3847,8 @@ window.DipPreviewStatus = Object.freeze({
   "aus|curveland": "unavailable",
   "taiguara|viagem": "unavailable",
   "peabo bryson|turn the hands of time": "unavailable",
+  "kevin richard martin|blue loops": "unavailable",
+  "jake muir|pareidolia": "unavailable",
+  "susan geaney|tape melt": "unavailable",
+  "seah|conduits of the hydrosphere": "unavailable",
 });
