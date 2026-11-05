@@ -2603,3 +2603,9 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 2025 年事實主線核實：Yasunao Tone 2025 年 5 月於紐約過世、享年 90 歲（RA、Mixmag 兩源）。
 - 主線審稿 18 處：第一句補國籍或身分——Robert Hampson、Recoil、Rockers Hi-Fi、Pan American、石野卓球、Thomas Brinkmann、Yasunao Tone（連帶刪細節壓字數）；在世者只留一項成績——Hampson 刪英國獨立榜榜首、Reznor & Ross 只留《The Social Network》奧斯卡（刪金球、《Soul》奧斯卡、葛萊美、艾美）；石野卓球 刪「世界最大」「號稱日本最大」，片假名ピエール瀧→皮耶瀧、電気グルーヴ→Denki Groove。
 - 已上線修正 2 處：ar-d-503 田中フミヤ 正文片假名改 Fumiya Tanaka，並刪「1990 年代前半」壓回 155 字（當時特注誤要求照寫片假名，與用字規則衝突，以規則為準）。
+
+## ar-d-506（2026-11-05，dark ambient、techno、電子與配樂；多合作卡）
+
+- 39 位寫：16 full、23 thin；Alteria Percepsyne 沒有任何聲音或做法事實，不寫（skipped）。
+- 合作卡：Apocryphos／Kammarheit／Atrium Carceri 兩張卡、Atrium Carceri 兩張合作卡各換角度寫，不重複同一段生平。
+- 主線審稿 6 處：Almamegretta 單名卡 263 字超標，刪「九〇年代義大利音樂革新的重要名字之一」並補「義大利」；Onyx 刪單一樂評的「立即經典」；Berlin 補「美國」、〈Take My Breath Away〉「登上冠軍、銷量最好」改「最廣為人知」（在世者不寫榜單銷量）；Ben Salisbury 刪艾美獎提名（只留 Ivor Novello）。
