@@ -14,3 +14,10 @@
   - 能量（四拍／碎拍／techno 段）：Talaboman、Piu、Tudor Acid、Nourished By Time（new jack 拍）。
 - 交研究層把關：Rachika Nayar《Heaven Come Crashing》（x）、Kaitlyn Aurelia Smith（Buchla 晶亮、y）、Kaela／Midori Hirano／sachi's mirror／Los Sara Fontan（乾淨處判輕）、Photay（節拍推進）、Sui Zhen（z）、Carmen Villain（z）。
 - 池中同人錨點：只有 Hammock（四張 z 0–0.4）、Benoît Pioulard（1.3,1,0.3）；其餘 28 張無錨點——這是本批最大風險，落格率以評分為準。
+
+## 研究 b 組（條號 23331–23340）
+- 23331：Croatian Amor 以 Bandcamp Daily 與 XLR8R 為準，Daily 明說有 garage grooves 的節拍，moodGuess（無鼓、慢）存疑，x 恐偏高；留卡，交主線以評分決定。
+- 23332：Jonny Nash 卡單廠牌 PLANCHA 查無來源，Bandcamp 與 Daily 皆指 Melody As Truth；facts 只寫有來源的廠牌，建議主線改 label 欄。
+- 23333：Steve Hauschildt《Nonlin》四個來源都指有 beat／glitch／techno 段，色溫偏冷疏離；moodGuess（慢、暖）明顯不符，建議主線汰換或降級。country=ge 疑為第比利斯錄音地誤判，藝人為芝加哥人，建議改 us。
+- 23334：Benoît Pioulard 與 Dream Crease、Sofie Birch：色溫分歧處（Daily 說 cold／cool、廠方說 warm）一律寫成各來源原話並歸因，notes 標存疑，不替它裁決。Dream Crease 無來源提到節拍，判無鼓。
+- 23335：Dream Crease、Jonny Nash、Pioulard 的第二來源用 Daily＋藝人 Bandcamp 頁（兩個不同 https 頁面）；獨立樂評額度（WebSearch 3 次）已用於 Croatian Amor、Hauschildt、Birch。
