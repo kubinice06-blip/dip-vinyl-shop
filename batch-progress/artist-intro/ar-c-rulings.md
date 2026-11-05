@@ -2674,3 +2674,9 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 36 位寫：12 full、24 thin；不寫 4 位——Numbers（沒有聲音事實）、sToa（主線撤稿：唯一的「做法」句只是「歌詞據說帶哲學性」，過不了門檻）、Valet、Calla（研究稿只有一條來源）。
 - 題材照寫：SIANspheric 前身 Gleet 成員 Scott Kish 1994 年車禍身亡；Colosseum 主腦 Palomäki 2010 年過世；James Chance 2024 年過世；Aarktica 的 DeRosa 右耳失聰。Asva 成員親屬遇害、Dead Meadow 成員過世只有單源，不寫。
 - 主線審稿 15 處：第一句補國籍或身分——Richard Hawley、sugar plant、As Mercenárias、Brant Bjork、Chris Isaak、Daniel Lanois（連帶刪細節壓字數）；在世者只留一項成績——Hawley 刪奧利佛獎、Chris Isaak 刪英美單曲榜前十；As Mercenárias 刪《Bizz》年度專輯（媒體榜單）；sugar plant 平假名「庄山ちなつ」改羅馬字；cero「髙城」「荒内」改台灣字形「高城」「荒內」。
+
+## ar-d-517（2026-11-05，搖滾／soul 混編：drone、post-rock、no wave、R&B、neo-soul）
+
+- 37 位寫：24 full、13 thin；不寫 3 位——pasteboard、Case、Bobby Oroza（研究稿都只有一條來源，比照 Kloob & Onasander）。
+- 題材照寫：Lowlife 主唱 Craig Lorentson 2010 年因肝腎問題過世；Gerald Levert 2006 年過世（死因各源不一，不寫）；Kem 早年毒癮、無家可歸後戒除；Jon Lucien 兩位女兒相繼喪生、古柯鹼成癮、2007 年過世；Love Unlimited 的 Diane Taylor 1985 年癌症過世；Raveena 家族經歷 1984 年反錫克教暴動。Will Downing 的病況只有單源，不寫。
+- 主線審稿 18 處：第一句補國籍或身分——DSPS、Jim James、Jonathan Wilson、Kadhja Bonet、Lowlife、Gerald Levert、Kem（連帶刪細節壓字數）；在世者不寫串流與銷量——DSPS 刪 YouTube 600 萬次、Kem 刪五個月約 1 萬張、Kenny Lattimore 刪「銷量回升」、Goapele 刪約 5000 張、Love Unlimited 刪金唱片／百萬銷量／專輯榜第 3 與「繼 Supremes 之後第一」；Mars & DNA「森郁恵」改台灣字形「森郁惠」。

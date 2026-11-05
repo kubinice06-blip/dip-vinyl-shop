@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1812 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1823 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -1589,6 +1589,17 @@
 | ar-d-517 | Ommadon | V | 兩段長曲各約 45 分鐘 | The Sleeping Shaman 評論寫 V1 略多於 47 分鐘、V2 略少於 40 分鐘，兩段長度不同；『各約 45』不準（單源，可再核對 Bandcamp 曲長） | https://thesleepingshaman.com/reviews/o/ommadon-v-lp-dd-2014/ |
 | ar-d-517 | Kem | Kemistry | Kem 1967 年生於納許維爾 | 出生年來源不一致：維基寫 1967，wikidata 寫 1969，encyclopedia.com 寫 196?（本人不談年齡）。建議簡介改為不寫出生年 | https://www.encyclopedia.com/education/news-wires-white-papers-and-books/kem |
 | ar-d-517 | Kem | Kemistry | 2002 年自費推出之後，Motown 在 2003 年重新發行，16 個月後拿到金唱片 | 維基寫 Motown 2001 年 11 月簽約、2003 年 2 月 25 日重發；encyclopedia.com 寫 2003 年簽約。『16 個月後金唱片』未見獨立來源，需再核 | https://en.wikipedia.org/wiki/Kem_(singer) |
+| ar-d-517 | Chanté Moore | Precious | 19 歲那年她與 Warner Bros. 簽約，1991 年 2 月 Silas Records 憑 demo 簽下她 | encyclopedia.com 寫 1989 年（約 22 歲）El DeBarge 在洛杉磯看到她、經紀人代理後約一個月簽 MCA，與維基寫法不同，簽約對象與年份來源不一致，建議改寫較保守或再查 | https://www.encyclopedia.com/education/news-wires-white-papers-and-books/moore-chante-1970 |
+| ar-d-517 | Miki Howard | Miki Howard | 1979 到 1985 年她在 R&B 團體 Side Effect 裡唱 | encyclopedia.com 與另一則搜尋摘要寫她 1978 年加入、約 1982 年離團；維基寫 1979 至 1985 年，來源不一致，建議改寫成不帶年份或再查 Side Effect 團史 | https://encyclopedia.com/education/news-wires-white-papers-and-books/howard-miki |
+| ar-d-517 | Baby Rose | To Myself | 事實庫研究稿：2020 年 3 月由 Island 重新發行 | 維基寫 2020 年 9 月 Island 發行豪華版；兩者不一致，上線簡介未寫此事故不必改，僅供留意 | https://en.wikipedia.org/wiki/Baby_Rose |
+| ar-d-517 | Goapele | Even Closer | 《Even Closer》2002 年 9 月 10 日起由 Skyblaze 推出，是她第一張全國發行的作品 | 搜尋結果指 2002 年版本在全國發行時的經銷商（Hieroglyphics Imperium、Red/Sony 或 Columbia）說法不一，且 Columbia 是 2004 年才接手；『第一張全國發行』此宣稱本層未能證實也未能推翻，建議店主覆核 | https://www.encyclopedia.com/education/news-wires-white-papers-and-books/goapele |
+| ar-d-517 | Hoody | Sailing | 本名金賢貞 | 研究稿與維基未給漢字，兩種寫法無權威來源；韓文為 김현정，建議改寫 Kim Hyun-jung 或只寫韓文 | https://en.wikipedia.org/wiki/Hoody_(singer) |
+| ar-d-518 | Raheem DeVaughn | Love Behind the Melody | 首週在美國專輯總榜名列第 5，R&B 專輯榜則是冠軍 | 維基首段寫該專輯『peaked at number five』，未寫首週；encyclopedia.com 該頁可靠度低。建議店主查 Billboard 確認首週名次與是否為最高名次。 | https://en.wikipedia.org/wiki/Raheem_DeVaughn |
+| ar-d-518 | Steve Spacek | space Shift | 〈Dollar〉的節拍出自 J Dilla 之手 | soulculture 訪談是 Dilla 受託混音該曲；Stereogum 與 Realgroovy 搜尋摘要稱 Dilla 製作，說法不一。建議店主查 Discogs 製作人欄後再決定是否改成『經 J Dilla 混音／製作』。 | https://soulculture.com/?p=266 |
+| ar-d-518 | Syleena Johnson | Chapter 2: The Voice | 登頂四週 | Billboard 一篇報導稱 4 週是 Adult R&B airplay 榜；維基稱 Adult R&B Songs 榜 4 週非連續。榜名與週數兩說，建議店主以 Billboard 榜史確認。 | https://en.wikipedia.org/wiki/Guess_What_(song) |
+| ar-d-518 | Thee Sacred Souls | Thee Sacred Souls | Roth 經朋友轉寄 demo 聽到，隨即請三人到 Riverside 錄音，斷斷續續錄了三年 | 維基與 San Diego Magazine 說樂團才演兩場，Roth 就邀去錄音、數日後進 Penrose Studios；Clash 說連結始於 Instagram。路徑有出入，建議店主複核 | https://sandiegomagazine.com/things-to-do/thee-sacred-souls-carve-out-a-groove/ |
+| ar-d-518 | Andra Day | Cheers to the Fall | 〈Rise Up〉是好友確診癌症後，她寫下的一段禱告 | 查詢中沒找到癌症說法的佐證；搜尋摘要只見她自述寫給自己要堅持的提醒。建議店主複核原始出處 | https://en.wikipedia.org/wiki/Andra_Day |
+| ar-d-518 | Conya Doss | Love Rain Down | 第三張《Love Rain Down》在 2006 年由 Conya Doss Songs 發行 | Cleveland Magazine（2006）寫這張在 Unique Beat（Kenny Darnell 的廠牌）發行；MusicBrainz 也列 Unique Beat Recordings。自家廠牌說法可能只對部分版本。 | https://clevelandmagazine.com/articles/she-can-only-be-her/ |
 | ar-d-929 | Erik Truffaz | Rollin' | 2000 年簽進這個廠牌 | 上線簡介沿用 Blue Note 官網簡介的 2000 年簽約說；但維基與已上線的《Out of a Dream》《The Dawn》《Bending New Corners》簡介顯示 1997–1999 年已在 Blue Note 發片，瑞士聯邦文化局新聞稿也記《Bending New Corners》為 1999 年 Blue Note 專輯，2000 年簽約的說法與之矛盾，建議改為不寫簽約年。 | https://musikzeitung.ch/en/?p=44583 |
 | ar-d-929 | Erik Truffaz | The Walk of the Giant Turtle | 前一張四重奏盤在法國賣到十萬張的金唱片 | 維基只寫《Bending New Corners》（1999）是法國 Silver Album；本張的前一張是《Mantis》（2001），並非《Bending New Corners》。需核對金唱片的專輯歸屬與認證層級。 | https://en.wikipedia.org/wiki/Erik_Truffaz |
 | ar-d-929 | Stanley Jordan | Magic Touch | 九軌裡有五軌只有一把電吉他 … 六軌只有他的電吉他 | 同一則簡介前後自相矛盾：五軌 vs 六軌；事實庫引 jazzdisco 為六軌純獨奏、其餘三軌各配一組節奏，應統一為六軌。 | https://en.wikipedia.org/wiki/Magic_Touch_(Stanley_Jordan_album) |
