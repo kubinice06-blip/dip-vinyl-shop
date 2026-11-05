@@ -30,3 +30,11 @@
 - 23345：Madeleine Cocolas《Bodies》moodGuess 存疑：兩源都沒提弦樂，實為處理過的水聲、人聲與合成器墊，藝人自述有壓迫黑暗段落，z 可能偏低、旋律性低。
 - 23346：Turn On The Sunlight 有打擊樂（Carlos Niño 等）與 gyil、銅管，律動感比純 ambient 強，輕度存疑；Hinako Omori 無不符；Mendip／Wiltshire 兩源地名不一，facts 只寫「周遭鄉間」。
 - 23347：WebSearch 3 次用於 Henner、Cocolas、Turn On The Sunlight；後兩者查無獨立樂評，聲音描述靠藝人自述／廠牌文案／製作名單。
+
+## 研究 d 組
+- 23351　Robotalco《Callisto》：卡單 label self-released 推翻，改 100% Silk（Bandcamp label_name＋MB release）；沿革未核到，不寫。
+- 23352　Pedro Magina《Olímpia》：卡單 label 空白，補 Holuzam（MB／Progarchives／state51）；限量 150 與 Carpenters 歌詞說法單源，只放 notes。
+- 23353　Rose Bonica《Tears for the Tea Maker》：廠牌 self-released 推翻，改 Roses Are Red；moodGuess 嚴重存疑（Daily：industrial-edged fractured beats），建議主線降權或汰換。
+- 23354　Kaitlyn Aurelia Smith《The Kid》：廠牌 RVNG Intl. 推翻，改 Western Vinyl（Pitchfork＋MB）；有節拍（stomp and bite），「無硬拍」存疑。
+- 23355　Carmen Villain《Only Love From Now On》：廠牌 Smalltown Supersound 核實；全器樂無低語人聲、意象偏冷，moodGuess 存疑。第幾張專輯兩源不一，不寫序數。
+- 23356　Kaela《Supraliminal》：補 Other Suns；有兩首明確有拍（Tender、Valley of the Moon 有真鼓），moodGuess 存疑；短曲多，乾淨判輕風險屬實。
