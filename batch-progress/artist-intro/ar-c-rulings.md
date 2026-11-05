@@ -2694,3 +2694,10 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 2025–26 年事實主線核實：Fat Freddy's Drop 創團成員 Chris Faiumu 2025 年 7 月意外辭世（RNZ、ODT 兩源）；Leon Thomas《Mutt》獲 2026 年葛萊美最佳 R&B 專輯（grammy.com、WERS 兩源）。
 - 題材照寫：Lacksley Castell 1983 年病逝、無墓碑，好友 Hugh Mundell 一個月前遇害；Junior Delgado 預言 Broadwater Farm 暴力的歌據傳遭禁、2005 年睡夢中過世；Peter Broggs 晚年中風癱瘓；Wesley Tinglin（The Viceroys）2018 年肺癌過世；Liniker 公開跨性別身分。
 - 主線審稿 16 處：在世者不寫榜單——Fat Freddy's Drop 刪紐西蘭專輯榜 111 週、Triston Palma 刪九首同時進前四十；第一句補國籍或身分——Triston Palma、Aisha、Don Carlos、Harry Mudie、Adrian Quesada、Junior Delgado、Little John（連帶刪細節壓回 250 字）；Junior Delgado 改寫句首避免連續兩句以年份開頭。
+
+## ar-d-520（2026-11-05，reggae：roots、dub、lovers rock、rocksteady；紐西蘭、墨西哥、法國、日本愛奴）
+
+- 34 位寫：22 full、12 thin；不寫 6 位——Wayne Wade、Audley Rollens、Delton Screechie、Earl Cunningham（沒有聲音或做法事實）、Flick Wilson、Junior Keatting（沒有身世、交代不了身分）。
+- Mad Professor 四張合作卡各寫搭檔，Mad Professor 本人只用一兩句帶過。
+- 題材照寫：Jacob Miller 1980 年車禍身亡；Larry Marshall 晚年阿茲海默症、2017 年過世；Devon Russell 1997 年腦瘤過世；Freddie McKay 1986 年心臟病過世；George Faith 2003 年癌症過世；Trinity Roots 解散時公司清算、欠稅；Carla Morrison 公開談焦慮與憂鬱。
+- 主線審稿 10 處：「金斯敦」全批統一為「京斯敦」（與前批一致）；在世者不寫榜單、銷量、獎項數——Tetrack 刪英國上榜、Trinity Roots 刪紐西蘭白金、Carla Morrison「三座拉丁葛萊美」改「拿過」、Susan Cadogan 刪英國前 5、Echo Minott 刪牙買加冠軍；Devon Russell 補「牙買加」；Oki 片假名「砂澤ビッキ」改 Bikki Sunazawa，刪成長地壓回 250 字。
