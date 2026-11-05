@@ -2614,4 +2614,4 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 
 - 39 位寫：20 full、19 thin；Djorvin Clain 沒有身世與本人聲音事實，不寫（skipped）。
 - 題材照寫：Celer 的 Danielle Baquet-Long 2009 年心臟衰竭驟逝；DJ Cheb i Sabbah 2013 年胃癌過世。
-- 主線審稿 21 處：第一句補國籍或身分——Dirty Beaches、DJ Cheb i Sabbah、DJ Spooky、Elsa Justel、Efdemin、Elektric Music、Christopher Young、Damon Wild、Daniel Menche、David García Díaz、DIN A Testbild、Dettinger（連帶刪細節壓回字數：Cheb i Sabbah「生前仍在做新專輯」、Justel「傑出藝術家」稱號、Efdemin 年紀與喇叭數、Young 試映沉默、Wild 唱片行郵購、Menche 的 Sunn O))) 客串）；Dronny Darko & protoU 刪「夫妻檔／妻子 Sasha」（妻子或妹妹兩源矛盾，特注已要求不寫）；CAPSULE「中田ヤスタカ」改 Yasutaka Nakata（片假名規則），刪 bossa nova 句壓字數。
+- 主線審稿 22 處：第一句補國籍或身分——Dirty Beaches、DJ Cheb i Sabbah、DJ Spooky、Elsa Justel、Efdemin、Elektric Music、Christopher Young、Damon Wild、Daniel Menche、David García Díaz、DIN A Testbild、Dettinger（連帶刪細節壓回字數：Cheb i Sabbah「生前仍在做新專輯」、Justel「傑出藝術家」稱號、Efdemin 年紀與喇叭數、Young 試映沉默、Wild 唱片行郵購、Menche 的 Sunn O))) 客串）；Dronny Darko & protoU 刪「夫妻檔／妻子 Sasha」（妻子或妹妹兩源矛盾，特注已要求不寫）；CAPSULE「中田ヤスタカ」改 Yasutaka Nakata（片假名規則），刪 bossa nova 句壓字數。
