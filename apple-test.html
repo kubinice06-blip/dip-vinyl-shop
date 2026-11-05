@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Apple Music 連結測試 · dip</title>
+<style>
+  :root{--bg:#f6f4ef;--fg:#1d1b18;--muted:#6f6a62;--line:#ddd7cc;--accent:#c2410c}
+  @media (prefers-color-scheme:dark){:root{--bg:#151413;--fg:#ece7de;--muted:#a39d93;--line:#34302b;--accent:#fb923c}}
+  body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.6 system-ui,-apple-system,"PingFang TC",sans-serif}
+  main{max-width:640px;margin:0 auto;padding:20px 16px 48px}
+  h1{font-size:20px;margin:0 0 8px}
+  h2{font-size:15px;margin:28px 0 8px}
+  p{color:var(--muted);margin:0 0 12px}
+  ol{padding-left:22px;margin:0;display:flex;flex-direction:column;gap:10px}
+  a{display:inline-block;padding:10px 14px;border:1px solid var(--line);border-radius:8px;color:var(--fg);text-decoration:none;font-weight:600}
+  a:active{border-color:var(--accent);color:var(--accent)}
+  code{display:block;font-size:11px;color:var(--muted);word-break:break-all;margin-top:4px}
+</style>
+</head>
+<body>
+<main>
+  <h1>Apple Music 連結測試</h1>
+  <p>同一張專輯、六種連結寫法。請在手機上逐一點，記下哪幾個會<b>直接打開那張專輯</b>（不是只打開 App 首頁），把編號告訴 Claude。</p>
+
+  <h2>A 組：Pink Floyd《The Dark Side of the Moon》（台灣區）</h2>
+  <ol id="a"></ol>
+
+  <h2>B 組：015B《The Fourth Movement》（日本區）</h2>
+  <ol id="b"></ol>
+</main>
+<script>
+  function variants(sf, slug, id) {
+    var base = 'https://music.apple.com/' + sf + '/album/' + slug + '/' + id;
+    return [
+      ['現在網站用的', base],
+      ['加 ?app=music', base + '?app=music'],
+      ['加 ?ls=1&app=music', base + '?ls=1&app=music'],
+      ['geo 網域', 'https://geo.music.apple.com/' + sf + '/album/' + slug + '/' + id + '?app=music'],
+      ['music:// 開頭', 'music://music.apple.com/' + sf + '/album/' + slug + '/' + id],
+      ['換成台灣區', 'https://music.apple.com/tw/album/' + slug + '/' + id]
+    ];
+  }
+  function render(elId, sf, slug, id) {
+    var ol = document.getElementById(elId);
+    variants(sf, slug, id).forEach(function (v) {
+      var li = document.createElement('li');
+      var a = document.createElement('a');
+      a.href = v[1]; a.target = '_blank'; a.rel = 'noopener'; a.textContent = v[0];
+      var c = document.createElement('code'); c.textContent = v[1];
+      li.appendChild(a); li.appendChild(c); ol.appendChild(li);
+    });
+  }
+  render('a', 'tw', 'the-dark-side-of-the-moon', '1065973699');
+  render('b', 'jp', 'the-fourth-movement', '1562124561');
+</script>
+</body>
+</html>
