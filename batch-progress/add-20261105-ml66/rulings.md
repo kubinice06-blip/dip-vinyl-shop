@@ -21,3 +21,12 @@
 - 23333：Steve Hauschildt《Nonlin》四個來源都指有 beat／glitch／techno 段，色溫偏冷疏離；moodGuess（慢、暖）明顯不符，建議主線汰換或降級。country=ge 疑為第比利斯錄音地誤判，藝人為芝加哥人，建議改 us。
 - 23334：Benoît Pioulard 與 Dream Crease、Sofie Birch：色溫分歧處（Daily 說 cold／cool、廠方說 warm）一律寫成各來源原話並歸因，notes 標存疑，不替它裁決。Dream Crease 無來源提到節拍，判無鼓。
 - 23335：Dream Crease、Jonny Nash、Pioulard 的第二來源用 Daily＋藝人 Bandcamp 頁（兩個不同 https 頁面）；獨立樂評額度（WebSearch 3 次）已用於 Croatian Amor、Hauschildt、Birch。
+
+## 研究 c 組（條號 23341–23350）
+- 23341：Dylan Henner 卡單寫紐約／us，Bandcamp 廠牌文案與 BC Daily 皆稱英國人，建議 country 改 gb；其餘（Phantom Limb、2025）對。
+- 23342：patten《Glow》卡單廠牌 Warp 錯，Pitchfork／MB／Bandcamp 皆為自家廠牌 555-5555，建議 label 改 555-5555。
+- 23343：patten《Glow》moodGuess 嚴重存疑：Pitchfork 稱無鼓、情緒木然／悶、恐怖片氣氛、小調，色溫偏冷；Daily 的 Durutti 吉他說法只是片段。較可能落頹靡，建議主線以評分把關或汰換（curatorRisk 預警屬實）。
+- 23344：Patricia Wolf《See-Through》卡單 label 空，補 Balmat（BALMAT03D）；主體是合成器與場錄，非 Balearic 人聲／吉他 dream pop，人聲旋律性存疑；全專輯僅〈Pacific Coast Highway〉有鼓。
+- 23345：Madeleine Cocolas《Bodies》moodGuess 存疑：兩源都沒提弦樂，實為處理過的水聲、人聲與合成器墊，藝人自述有壓迫黑暗段落，z 可能偏低、旋律性低。
+- 23346：Turn On The Sunlight 有打擊樂（Carlos Niño 等）與 gyil、銅管，律動感比純 ambient 強，輕度存疑；Hinako Omori 無不符；Mendip／Wiltshire 兩源地名不一，facts 只寫「周遭鄉間」。
+- 23347：WebSearch 3 次用於 Henner、Cocolas、Turn On The Sunlight；後兩者查無獨立樂評，聲音描述靠藝人自述／廠牌文案／製作名單。
