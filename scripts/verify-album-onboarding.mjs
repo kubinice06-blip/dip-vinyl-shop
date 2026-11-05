@@ -402,10 +402,15 @@ if (!publishedMode && errors.length === 0) {
 if (publishedMode && errors.length === 0) {
   // 2026-08-30 卡池合併：一般卡與王牌同在 seed_cards.json，差別只在第 9 欄 tier。
   const pool = JSON.parse(fs.readFileSync(path.join(ROOT, 'seed_cards.json'), 'utf8'));
+  // 店主移出卡池的卡（data/pool-removed.json）不再要求在 seed 裡；鍵規則同 scripts/pool-keys.mjs
+  const removedFile = path.join(ROOT, 'data', 'pool-removed.json');
+  const poolNorm = s => String(s || '').toLowerCase().replace(/[‐-―－]/g, '-').normalize('NFKC').replace(/[^\p{L}\p{N}]+/gu, '');
+  const removedKeys = new Set(fs.existsSync(removedFile) ? JSON.parse(fs.readFileSync(removedFile, 'utf8')).entries.map(e => e.key) : []);
   for (const row of albums) {
     const label = `${row.artist} — ${row.album}`;
     const all = pool.filter(x => keyOf(x[0], x[1]) === keyOf(row.artist, row.album));
-    if (row.published.seedCards) {
+    const removedFromPool = removedKeys.has(poolNorm(row.artist) + '|' + poolNorm(row.album));
+    if (row.published.seedCards && !removedFromPool) {
       const seedMatches = all.filter(x => !x[8]);
       if (seedMatches.length !== 1) err(label, `卡池的一般卡應恰好 1 筆，目前 ${seedMatches.length}`);
       else {

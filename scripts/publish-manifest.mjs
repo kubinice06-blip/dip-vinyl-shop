@@ -130,11 +130,15 @@ if (renderSeed(seedRows) !== seedRaw) {
 
 const existing = new Set();
 for (const r of seedRows) existing.add(poolKeyOf(r[0], r[1]));
+// 店主移出卡池的卡（data/pool-removed.json，2026-11-05 起）：重跑舊批次的 --write-pool 不准把它們加回去
+const REMOVED_FILE = path.join(ROOT, 'data', 'pool-removed.json');
+const removedKeys = new Set(fs.existsSync(REMOVED_FILE) ? readJson(REMOVED_FILE).entries.map(e => e.key) : []);
 
 const MAP_GENRES = new Set(['jazz','rock','electronic','soul','hiphop','folk','classical','world','pop','blues']);
 const seedAdds = [], apexAdds = [], poolSkips = [];
 for (const a of albums) {
   if (existing.has(poolKeyOf(a.artist, a.album))) { poolSkips.push(`${a.artist} — ${a.album}`); continue; }
+  if (removedKeys.has(poolKeyOf(a.artist, a.album))) { poolSkips.push(`${a.artist} — ${a.album}（已移出卡池）`); continue; }
   const year = a.research?.suggestedYear ?? null;
   // 年份欄是空的就不准上架。2026-10-04 雲端交來的單張 manifest 沒帶 research.suggestedYear，
   // 何欣穗《完美小姐》因此以 year=null 進池（年代篩選抽不到它），事後才補。
