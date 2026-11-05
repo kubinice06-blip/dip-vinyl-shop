@@ -35,3 +35,26 @@
 - 23193　Susan Geaney《Tape Melt》：單曲一軌 35:05，Bandcamp 發行 2022-07-15，早於 2022-07-29 首演；取 7 月 15 日。後段密度上升、結尾高音，moodGuess 輕度存疑。
 - 23194　Jacob Kirkegaard《Snowblind》：11 軌 36:23；Andrée 事實取 Wikipedia；MB 重查時伺服器忙碌，盤名年份以 Bandcamp＋Wikipedia 交叉。
 - 23195　seah：無推翻；5 軌 48:36，MB 與 Bandcamp 同日 2022-05-15。
+
+## 研究 a 組
+- 23161　Marc Kate《Deface》：MB 與 Bandcamp 一致（Failing Forms FF05、2017-09-20、七軌 77:49）；卡單 label 欄寫藝人名，實際廠牌 Failing Forms。題材取 NSBM 素材但立場為哀悼與反制，facts 照來源寫；無鼓 drone，moodGuess 不存疑（z 可能略暖，專輯頁稱近新世紀音樂）。
+- 23162　Rafael Anton Irisarri《Sirimiri》：Bandcamp 專輯頁 2018-05-08，Umor Rex 實體首發 2018-03-16（MB），年份取 2018；卡單 label 欄為 Bandcamp 發布者，實際廠牌 Umor Rex，建議改。四軌 37:15，達標。moodGuess 存疑（z）：樂評稱冷冽夜行但收尾藏暖意，z −0.6 勿再加深。
+- 23163　Jordan Reyes《Everything Is Always》：人工身分核對無誤（2022-10-28、American Dreams、六軌 33:38，原創專輯）。moodGuess 明顯存疑（x、z）：實為 drone 加歌曲，有人聲吟唱、口語旁白、plodding 貝斯 riff、crashing 貝斯吉他，Daily 與 The Organ 都寫平靜甚至昂揚的一面，建議主線汰換或降信心。
+- 23164　Kevin Richard Martin《Blue Loops》：MB 與 Bandcamp 一致（2026-05-01、十四軌 52:20）。moodGuess 存疑（z）：專輯頁行銷文字說核心有 radiant warmth、捨棄陰鬱，與 Daily 的 bottomless dirges 方向相反，z 可能落 −0.8 左右；維基未載本盤。
+- 23165　Alex Zhang Hungtai《Dras》：人工身分核對無誤（2026-04-10、Shelter Press、九軌 35:23，原創專輯；錄音 2019、首發 2026）。moodGuess 輕度存疑（x）：無調金屬光澤與電流感，但節奏幾乎聽不見；卡單 country ca，Bandcamp 地點標紐約，主線定。
+
+## 研究 b 組
+- 23171　Phauss《Audiodrome》：推翻策展層年份與廠牌。原盤為 1987 年瑞典 Radium 226.05（RA 029）黑膠 LP（Discogs master 1987），Room40 2022-12-16 的數位與 CD 為 Reissue；建議 year 取 1987（原盤首發為準）。兩軌 58 分鐘，正規專輯。moodGuess 存疑（x、y）：主體是田野錄音剪貼，含收音機爆音、街頭樂手、飛機工業噪音，非持續低頻 drone。
+- 23172　William Basinski《The Clocktower at the Beach (1979)》：manualEvidenceUrls 的 …-beach-1 回 404，正確網址 …-beach-1979。LINE 稱 previously unreleased，Daily 稱 reissue，以官方為準，首發 2023-03-03；3 軌約 53.5 分鐘，正規專輯。moodGuess 大致吻合，z 邊緣、無直接色溫來源。
+- 23173　Jake Muir《Pareidolia》：MB 與 Bandcamp 一致（2026-06-05、enmossed、8 軌 41:42）。moodGuess 大致吻合；〈Oblivion〉有慢速儀式重拍、〈Each Uisge〉略亮，x、z 略樂觀，未見推翻證據，不汰。
+- 23174　Kristen Pilon & Demdike Stare《To Cut & Shoot》：身分無誤（DDS086，黑膠 2025-02、Bandcamp 2025-09-04，13 軌約 49 分鐘）。Daily 誤拼 Kriston；電影名 Discogs 與 Boomkat 說法不一，簡介避談。moodGuess 存疑（x）：Boomkat 明寫〈Belly Up〉夜店亂流、〈Twist〉bruk 節奏，Bandcamp 標籤含 techno，高風險。
+- 23175　Sally Decker《In the Tender Dream》：MB 與 Bandcamp 一致（2021-08-13、10 軌 42:56）。實體版為 NNA Tapes NNA137 卡帶，卡單 label 寫藝人名。moodGuess 存疑（x、z）：Bandcamp 與 Daily 同時寫有平靜、restful、念白與標題曲回授節奏，暖冷無直述，建議視為汰換候選。
+
+## 主線研究後汰換（不佔條號；2026-11-05）
+- 照 md35 先例：研究稿寫出**歌曲／人聲／節奏推進**、**明亮、平靜、近乎寂靜**、**聲音或故事只有單一來源**的汰；只是邊距薄的留給評分驗收。
+- **汰 9 張**（存 `dropped-cards.json`／`dropped-research.json`）：
+  - 能量：Jordan Reyes《Everything Is Always》（研究 a：drone＋歌曲，吟唱、口白、貝斯 riff，評介寫昂揚）、Kristen Pilon & Demdike Stare《To Cut & Shoot》（研究 b：Boomkat 寫〈Belly Up〉夜店亂流、〈Twist〉bruk 節奏）、Amulets《Not Around But Through》（研究 c：官方說明 post-hardcore／emo／metal、「explosive and cathartic」）。
+  - 判輕／判暖：Sally Decker《In the Tender Dream》（研究 b：restful、念白、回授節奏）、Sara Zalek & Norman W. Long《Steelworkers' Drone》（研究 c：戶外自然聲景、「excitement and calm」）、Selvedge《Bloom in Rust》（研究 d：Daily「clearer and brighter」「let light in」、摩斯式節奏）、Roland Kayn《Matego I-II》（研究 e：Daily「distance and near-silence」，策展引的「chilling」其實寫的是 Electronic Symphony）、Phauss《Audiodrome》（研究 b：田野錄音剪貼、收音機爆音與街頭樂手，不是持續低頻；原盤 1987 Radium 226.05）。
+  - 故事不足：Thaniel Ion Lee《Five Ghosts》（研究 c：Daily 以外查無任何樂評、訪談、廠牌說明，status thin）。
+- **研究層更正已改進卡單**：廠牌 Irisarri → Umor Rex、Marc Kate → Failing Forms、KMRU → Touch（TONE85）、Laprida → Outside Time；Basinski 證據網址 `…-beach-1` → `…-beach-1979`（LINE 官方寫 previously unreleased，首發 2023-03-03，簡介不寫重發）。Alex Zhang Hungtai 國別維持 ca（加拿大公民、成長於多倫多）。
+- 不補位：候補未經研究，照「挖不到就照實上架」不湊數。定案 **14 張**。留給評分驗收的邊距風險：KMRU《Natur》（Touch 說明提到 harsh noise 厚牆）、KRM《Blue Loops》（專輯頁寫 radiant warmth）、Basinski（色溫無直述）、Laprida（金屬震顫節奏）、Goldston（可 roar at full volume）、Geaney（後段 busy chorus）。
