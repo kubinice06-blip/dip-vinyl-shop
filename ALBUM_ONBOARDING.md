@@ -406,6 +406,13 @@ Last.fm listeners 只當報警。補充三條口徑（重評線定案）：
 ### 6. 固定試聽
 
 - 優先 Apple 可直接播放的預覽音檔；其次 YouTube Music 官方 Album playlist；再其次經人工核對的完整專輯影片。
+- **試聽一律播該盤最紅的那首（2026-11-05 店主：「試聽播出時都是播在該專輯最紅的歌」）**：不再取第一軌。
+  manifest 的 Apple ready 條目寫好（`storefront`＋`appleCollectionId`）後、`--write-preview` 之前，跑
+  `node scripts/popular-preview.mjs manifest <manifest.json>`，它會在同一 collectionId、同一商店內換成最紅那首，
+  並寫 `preview.trackName`／`preview.popularity`（來源）。熱度：Deezer 單曲 rank（專輯曲目＋藝人熱門榜，同曲取所有版本最高）
+  為主；Deezer 對不到的退回 Apple Music 專輯頁熱門星號；都沒有才保留原曲（原曲是 60 秒以下前奏時換第一首 ≥90 秒的正曲）。
+  demo／live／remix 等變體與 60 秒以下短曲只在別無選擇時才選。Apple 30 秒片段的起點由 Apple 決定，前台改不了。
+  全卡池重掃見 `batch-progress/preview-popular-20261105/`。
 - 必須同時核對藝人、專輯、版本，並實際確認網址 HTTP 2xx／3xx。
 - **版本核對必須包含 Apple 的 `collectionExplicitness`（2026-08-23 增列）**：同一張碟在 Apple
   常有**同名、同曲數、曲序也一致**的雙胞胎條目，一筆 `explicit`、一筆 `cleaned`（消音淨化版），

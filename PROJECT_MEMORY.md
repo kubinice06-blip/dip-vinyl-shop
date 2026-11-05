@@ -1,5 +1,17 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-05｜dip-vinyl-shop｜preview-popular-20261105：試聽改播該專輯最紅那首（靜態地圖換 14,251 條、前台不再隨機）
+
+- **店主 11-05**：「試聽播出時都是播在該專輯最紅的歌或片段上」。改前靜態地圖幾乎全播第 1 軌（`previews[0]`），即時路徑隨機挑一首。Apple 30 秒片段起點由 Apple 決定，改不了；改的是播哪一首。
+- **選曲**（`scripts/popular-preview.mjs`）：Deezer 單曲 rank（專輯曲目＋藝人熱門榜，同曲取所有版本最高，候選限本專輯曲目）為主；對不到退 Apple Music 熱門星號；都沒有保留原曲。變體版與 60 秒以下短曲最後才選。
+- **結果**：18,248 張有選曲（Deezer 14,394／Apple 星號 3,715／無訊號 139）；第 1 軌 9,604→5,463；地圖換新 14,251；manifest 331 檔 7,582 列同步。
+- **前台**：`dip-player.js` 即時路徑用 Deezer JSONP（限時 2.5 秒）挑最紅那首，否則第一首正曲；拿掉隨機。`?v=56`、runtime `?v=5`。
+- **上架流程**：`ALBUM_ONBOARDING.md` §6、dip-card-create 加「`popular-preview manifest`」步驟。
+- **發現**：靜態地圖 134 張指到套裝盒（MJ《Thriller》、Stones《Let It Bleed》等），選曲已擋住盒內別張，身分錯配留另案。
+- **留給本機**：`album_overrides-repaste-preview-popular-20261105.json`（64 張，後台批次匯入）。
+- **驗證**：新網址抽 120 HEAD 全 200；manifest↔runtime 不一致 56 與改前相同；published gate blink／ml60 0 error；Playwright 即時路徑《Night Moves》播〈Night Moves〉。
+- 主要檔案：`scripts/popular-preview.mjs`、`dip-player.js`、`data/apple-audio-map-v1.json`、`data/apple-audio-runtime-v1.json`、`onboarding-manifest-*.json`（331）、`batch-progress/preview-popular-20261105/`（REPORT、pick-summary、repaste-log、工具）、`ALBUM_ONBOARDING.md`。
+
 ### 2026-11-05｜dip-vinyl-shop｜情緒薄格恍惚非電子線 ml62／ml63：39 張上線（落恍惚 28）＋藝人介紹 16 位
 
 - **店主指示**：11-04「頹靡跟恍惚還是太少」→ 選「放寬到電子以外」，本工作階段不收嘻哈、雷鬼、dub、電子（並行的 ml64／ml65 做二線電子）。條號 ml62 23001–23080、ml63 23081–23160（跳過 22841–23000 留給 ml64／ml65）。

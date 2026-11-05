@@ -107,6 +107,8 @@ node fix-spacing.mjs batches/output/… [--write]
 - 頂點卡逐張評估（hall 經典共識／pearl listeners 有效且 <300／heresy 極端難入耳證據），
   三軸 5 或 legendary **不自動升格**。
 - 試聽：`/yt-music-link` 查找＋人工核對（只接受 Apple 直連、YT Music album playlist、完整專輯影片）。
+  **Apple ready 一律播最紅那首**：manifest 寫好後跑 `node scripts/popular-preview.mjs manifest <manifest.json>`
+  （換成同一 collectionId 內最紅的曲目，見 `ALBUM_ONBOARDING.md` §6），再 `--write-preview`。
   **`album_overrides` 規則是 `allow write: if isAdmin()`，Claude 用 REST 寫一律 403、繞不過也不該繞**
   ——固定產出一份 `album_overrides-repaste-<batch>.json`（`[{artist, album, previewUrl}]`，
   無來源者 `previewStatus: unavailable`／明確不試聽 `disabled`），批次結尾提醒店主到後台批次匯入框貼上。
