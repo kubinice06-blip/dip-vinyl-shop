@@ -74,3 +74,5 @@
 ## 主線上線（條號 23151）
 - **23151**：上線 9 張：card_catalog 9／9、KV 9 鍵回讀逐字一致（stamp 20261105m65）、試聽 9 ready、seed +9、prepare／published gate 0 error（9 warning 皆 UPC）。封面 CAA 8＋Apple 1（John Beltran CAA 500）。寫入前對 origin/main seed 去重 0 撞。頂點 0（全批一般卡）。
 - 收尾：`build-seed-genres` 從 Last.fm 標籤把 Sun Glitters《Everything Could Be Fine》第 6 欄寫成 ["rock"]，主線改回 ["electronic"]（manifest／card_catalog 本就是 electronic）；`genre-l3-artist-map.json` 補 Sun Glitters → `electronic/downtempo/chillwave`；類型樹與抽卡封面重建。
+- **23152**：情緒評分 `score-ml65/`：**落恍惚 6/9＝67%**；出格 Hiatus《Parklands》（弦樂鋼琴、y 0.2）、Seahawks 兩張（新世紀明亮、y 0.0／0.2）落放鬆——研究層已標 y 存疑。貼邊：Sun Glitters、Vondelpark z 0.1。
+- **23153**：**場景潛力**：日韓台暖電子 downtempo 池中同人多判輕或判冷、韓台 0；暖 trip-hop 器樂二線池中多判冷或判躁；ambient pop／electronica 暖盤無錨點者落格不穩（新世紀與 Balearic 判輕）。不再派。

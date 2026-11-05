@@ -83,3 +83,5 @@
 
 ## 主線上線（條號 23071）
 - **23071**：上線 12 張：card_catalog 12／12、KV 12 鍵回讀逐字一致（stamp 20261105m64）、試聽 12 ready、seed +12、prepare／published gate 0 error（12 warning 皆 UPC）。封面 CAA 12（縮圖表目視相符、/front live-check 200）。寫入前對 origin/main seed 去重 0 撞。頂點 0。
+- **23072**：情緒評分 `score-ml64/`：**落恍惚 8/12＝67%**；出格 Adham Shaikh《Journey to the Sun》（田野錄音＋淡墊，y 0.2 判輕落放鬆）、El Búho《Natura Sonora》（手鼓脈動、聲部分明，y 0.4 落放鬆）、Woob《Woob 1194》（電影對白取樣詭譎，z −0.2 落頹靡）、Sinepearl（和弦偏冷，z −0.4 落頹靡）——四張都是研究層已標的貼邊卡。貼邊：Sounds From the Ground《Binary》z 0.1。
+- **23073**：**場景潛力**：ambient／chill-out 經典廠牌二線只剩池中錨點穩的 Sounds From the Ground、Gaudi；Instinct Ambient／em:t 系判輕判冷；downbeat／nu-jazz 頭牌池中判雀躍、二線判輕或判冷，見底；organic house 新世代多四拍舞池、El Búho 判輕，不再派。
