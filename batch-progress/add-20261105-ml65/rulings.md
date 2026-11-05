@@ -65,3 +65,7 @@
 - **23143** 自掃 han() 4-gram：本批 9 張內 3 次以上 0 條；併 ml60／ml61 已上架 out 合掃，拆掉「首約分鐘」×3（Vondelpark、Ana Roxanne 改「收 N 首、長／合計約 N 分鐘」）、「的第一張」（Finds You Well 改「頭一張全新專輯」）、「般的合成」（Sun Glitters 改「幽靈似的」）；剩「的合成器」「電子音樂人」屬樂器／身分通名。
 - **23144** Beltran 內頁題詞依直接引語轉間接敘述規則改寫成「署名 Billy Lopez 的那段題詞寫道，他拚命尋找生命的顏色，帶回這一幅夢的拼貼」；出生地只寫密西根州蘭辛。Vondelpark 的 Rainsbury 原話同樣轉間接（「而不是 house 唱片」屬內容，保留）。
 - **23145** Eyes of the Moon「廠方稱它通往新世紀」寫成「廠牌把這股聲音形容為通往新世紀」（廠牌自述，非媒體）；Eternal Beams 的 Laraaji 只寫「新世紀音樂人」，Eno 不寫。媒體名、媒體名次全批 0 處。
+
+## 主線審稿（2026-11-05，cloud-main）
+- 逐張審 9 張，抽核關鍵事實回研究稿：Sun Glitters 盧森堡、Victor Ferreira、Sug(r)cane、2011-03 自發；Hiatus Cyrus Shahrad、英伊混血、Lucky Thunder 2013-05-13、〈Delam〉父親朗讀波斯詩；John Beltran 1969 生於蘭辛、Retroactive、內頁 Billy Lopez 題詞、Peacefrog PF049 1996；Vondelpark Lewis Rainsbury、R&S 2013、Mark Brydon 混音；Ana Roxanne 18 歲得知雙性人、蘭花象徵、Kranky 2020-11-13、7 首約 39 分鐘、巴赫〈C 大調前奏曲〉；Khotin 艾德蒙頓、《Hello World》2014、Khotin Industries 2018-07-03、Ghostly 隔年黑膠；Seahawks Jon Tye／Pete Fowler、Cascine 2019-03-15、康瓦爾 The Centre Of Sound；《Eternal Beams》A 面雨雷實地錄音、B 面 Laraaji——皆一致。
+- **改 1 處**：`desc2:Ana Roxanne|Because of a Flower`「樂器、人聲與錄音都由她自己來」→「人聲、多數樂器與錄音都由她自己來」。依據：研究稿 facts 另載〈Take the Thorn, Leave the Rose〉的鋼琴另有掛名（Alessandro Moreschi），原句「樂器都由她」過度概括。已同步 input 層 note；研究稿兩條並存不改。
