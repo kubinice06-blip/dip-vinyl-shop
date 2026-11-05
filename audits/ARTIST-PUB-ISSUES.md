@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1800 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1804 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -1577,6 +1577,10 @@
 | ar-d-515 | Dargaard | In Nomine Aeternitatis | 2000 年由 Draenor Productions 發行 | 維基（發行日 2000 年 6 月 3 日）、MetalBite 頁面資訊皆寫 Napalm Records；Rise and Fall 的 Brave Words 新聞稿（2004-03-26）也寫 Napalm Records。Draenor 或為 Napalm 子廠或事實庫的 Discogs 廠牌欄，待本機查 Discogs 核對；兩張簡介若統一寫 Draenor 可能需改為 Napalm Records（旗下 Draenor）。 | https://en.wikipedia.org/wiki/Dargaard |
 | ar-d-515 | Dargaard | Rise and Fall | 2004 年 3 月 22 日，Draenor Productions 讓它上市 | Brave Words 2004-03-26 新聞稿寫 Rise and Fall 為 Napalm Records 發行；廠牌名待核。 | https://bravewords.com/news/dargaard-on-the-rise/ |
 | ar-d-515 | Dark Sanctuary | De lumière et d'obscurité | 2000 年 11 月在 Wounded Love 的首作 | 依維基與 Side-Line，樂團 1999 年 11 月簽 Wounded Love，《Royaume Mélancolique》為 1998 年錄音、1999 年列入名單，若 Royaume 也由 Wounded Love 發行，則《De lumière》是他們在 Wounded Love 的第二張而非首作；待本機核對 Royaume 的發行廠牌。 | https://en.wikipedia.org/wiki/Dark_Sanctuary |
+| ar-d-515 | Mournful Congregation | The Monad of Creation | 本作被稱為樂團第一張 LP | 維基與 Teeth of the Divine 都把 2009 年的《The June Frost》列為第三張全長，表示 2005 年《Monad》是第二張全長（第一張是 1999 年《Tears from a Grieving Heart》）；若『LP』指黑膠版則另當別論，建議店主確認簡介出處。 | https://en.wikipedia.org/wiki/Mournful_Congregation |
+| ar-d-516 | Richard Hawley | Coles Corner | 登上英國專輯榜第 16 名、拿下金唱片 | 搜尋結果摘要有『No.37』之說，與簡介不一致；本層未能開頁確認，請店主對 Official Charts 核對 | https://en.wikipedia.org/wiki/Richard_Hawley |
+| ar-d-516 | sToa | Porta VIII | 梅特林克的一齣童話劇，被改編成整張唱片 | 搜尋摘要（非可靠源）提到 Porta VIII 的概念出自梅特林克童話，但本層未開頁驗證；而上線簡介同段另說四個曲名取自布萊克，兩者並存，請店主復核 | https://de.wikipedia.org/wiki/Stoa_(Band) |
+| ar-d-516 | Ahab | The Call of the Wretched Sea | 首作把整部小說改寫成概念專輯 | Droste 訪談稱『Nantucket Saga』三部曲（The Oath EP、The Call of the Wretched Sea、The Divinity of Oceans）也取材 Philbrick 與 Owen Chase 記述的 Essex 號捕鯨船事件，不只《白鯨記》；『整部小說』說法可能過滿。 | https://www.teethofthedivine.com/interviews/interview-with-ahab/ |
 | ar-d-929 | Erik Truffaz | Rollin' | 2000 年簽進這個廠牌 | 上線簡介沿用 Blue Note 官網簡介的 2000 年簽約說；但維基與已上線的《Out of a Dream》《The Dawn》《Bending New Corners》簡介顯示 1997–1999 年已在 Blue Note 發片，瑞士聯邦文化局新聞稿也記《Bending New Corners》為 1999 年 Blue Note 專輯，2000 年簽約的說法與之矛盾，建議改為不寫簽約年。 | https://musikzeitung.ch/en/?p=44583 |
 | ar-d-929 | Erik Truffaz | The Walk of the Giant Turtle | 前一張四重奏盤在法國賣到十萬張的金唱片 | 維基只寫《Bending New Corners》（1999）是法國 Silver Album；本張的前一張是《Mantis》（2001），並非《Bending New Corners》。需核對金唱片的專輯歸屬與認證層級。 | https://en.wikipedia.org/wiki/Erik_Truffaz |
 | ar-d-929 | Stanley Jordan | Magic Touch | 九軌裡有五軌只有一把電吉他 … 六軌只有他的電吉他 | 同一則簡介前後自相矛盾：五軌 vs 六軌；事實庫引 jazzdisco 為六軌純獨奏、其餘三軌各配一組節奏，應統一為六軌。 | https://en.wikipedia.org/wiki/Magic_Touch_(Stanley_Jordan_album) |

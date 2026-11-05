@@ -2661,3 +2661,10 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 2025 年事實主線核實：Sylvie Courvoisier 獲 2025 年瑞士音樂大獎（瑞士聯邦文化署、Intakt 兩源）；Crispell 2025 NEA Jazz Masters 沿用 ar-d-512 已核實。
 - 題材照寫：Misha Mengelberg 晚年失智、2017 年過世；Leroy Jenkins 2007 年肺癌過世；Les McCann 2023 年肺炎過世；Roy Montgomery 妻子過世後錄下《Temple IV》；k.d. lang 1992 年出櫃後遭美國鄉村電台禁播；Michael Seyer 寫父親罹癌。Lowell Davidson 死因「肺結核」只有單源，刪。
 - 主線審稿 24 處：單名卡超 250 壓回——Lewis 276→245、Lowell Davidson Trio 276→247；第一句補國籍或身分——Atwood-Ferguson、Mengelberg、New York Art Quartet、Paul Lytton、Peter Evans、Roy Montgomery、Robin Guthrie、Lowell Davidson、Les McCann（連帶刪細節壓字數）；在世者不寫榜單銷量——Lily Chou-Chou 刪「沒登上榜首」、Sean Nicholas Savage 刪 Solange 專輯的 Billboard 冠軍、Bonanza Banzai 刪金唱片；超級評語軟化或刪——Leroy Jenkins「首屈一指」、Les McCann「嘻哈取樣的源頭」、Crispell「最原創、最受邀約」。
+
+## ar-d-515（2026-11-05，doom／drone metal、funeral doom、post-rock、slowcore、shoegaze、RIO）
+
+- 40 位全寫：11 full、29 thin。
+- 2025 年事實主線核實：lovesliescrushing 2025 年 5 月加入 The Numero Group、同年 10 月重發擴充版首作（維基、多家唱片行目錄）；「排定推出」改為已推出。
+- 題材照寫：Acetone 主唱 Richie Lee 2001 年輕生、樂團解散；Bell Witch 前鼓手 Adrian Guerra 2016 年過世；Dark Sanctuary 與 Bushido 的取樣官司（只寫法院程序與結果）。Drowse 的「解離性崩潰」只有維基單源，不寫。
+- 主線審稿 6 處：Aidan Baker「冨田勲」改台灣字形「富田勳」；Polaris「柏原譲」改「柏原讓」；Fear Falls Burning 刪 2024 年最終演出（只有搜尋摘要單源）；Corrupted「最重、最黑暗」「不可估量」改「被認為深深影響」；Esben and the Witch 刪 BBC Sound of 2011（媒體榜單）；lovesliescrushing 時態更正。
