@@ -1,5 +1,13 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-05｜dip-vinyl-shop｜按串流連結去聽歌、切回網頁串流被停：點串流按鈕當下交還音訊＋關自動試聽
+
+- **店主 11-05**：「玩選歌遊戲按串流連結去聽歌，換回網頁時串流的音樂就停了。」
+- **病灶**：(1) 試聽正在播時切出去，`visibilitychange` 因 `previewBufferSource` 直接 return，靠 iOS 中斷事件善後；(2) 中斷落在「按播放後 4 秒寬限」或 manualPass 時只 `stop()`，AudioContext 沒關（iOS 'interrupted'），切回分頁 WebKit 自動恢復 → 搶走焦點；(3) 就算沒播，自動試聽偏好仍是開，切回來一碰轉輪／抽卡就自動試聽。
+- **改動**（`dip-player.js`）：document capture 監聽串流連結點擊（`.streaming-btn`、Apple／Spotify／YT Music／Bandcamp 網址）→ `setAutoplayPreference(false)`（含 `releaseAudio`：停試聽、keep-alive、關 context）並通知 revoke（頻率光譜喇叭同步關）；寬限與 manualPass 分支改 `releaseAudio()`。再聽試聽按 🔊 或播放鍵。`?v=57`（四頁）。
+- **驗證**：Playwright——播放中點 Spotify 鈕後 ctx none、pref off、revoke 1 次；之後 auto 播放不出聲；手動播放可重建並播放。**iOS 真機待店主實測。**
+- 主要檔案：`dip-player.js`、`index.html`、`battle.html`、`roguelike.html`、`shop-all.html`。
+
 ### 2026-11-05｜dip-vinyl-shop＋dip-vinyl-worker｜spotify-replaced-20261105：被 MB 覆核清掉的 Spotify 連結補回 29 張
 
 - **店主 11-05**：Dudley Perkins《A Lil' Light》Spotify 按鈕灰，但 Spotify 有《Lil' Light》。成因：worker 覆核把模糊命中一律清空（`replacedSpotifyAlbum`），10-21 的連結修復又刻意跳過這類鍵。
