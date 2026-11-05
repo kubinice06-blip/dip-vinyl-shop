@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1782 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1788 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -1559,6 +1559,12 @@
 | ar-d-511 | Mono:Massive & Philanthrope | Monothrope | 兩位奧地利製作人 | Philanthrope 的國籍來源不一：Stereofox 訪談稱奧地利人，Innsbruck 觀光局部落格（搜尋摘要，該頁 403 未開）與 Apple Music 稱他是來到因斯布魯克念書的德國人，Discogs 稱出身因斯布魯克；建議簡介改寫「兩位因斯布魯克的製作人」並不寫國籍。 | https://www.stereofox.com/interviews/interview-philanthrope |
 | ar-d-511 | Barry Guy | Symmetries | 1972 年為了演出自己的作品〈Ode〉成立 London Jazz Composers' Orchestra | encyclopedia.com 與 Maya 德文簡介作 1970 年成立，維基作 1972 年；成立年來源不一致，建議改成不帶年份或『1970 年代初』 | https://encyclopedia.com/arts/dictionaries-thesauruses-pictures-and-press-releases/guy-barry-john |
 | ar-d-512 | Ingrid Laubrock Anti-House | Ingrid Laubrock Anti-House | 2008 年她從倫敦遷往紐約 | 維基寫 2008 年，Cafe OTO 與 Ragdale 的簡歷寫 2009 年起住布魯克林，兩者可能是不同口徑（離開倫敦與定居布魯克林），建議簡介改寫成『約 2008、2009 年間』或不寫年份 | https://www.ragdale.org/residents/ingridlaubrock |
+| ar-d-512 | Eugene Chadbourne & John Zorn | School | 被視為 Zorn 最早的唱片 | 『最早』類宣稱本層未能以兩源證實；維基稱 Zorn 的 Parachute 遊戲曲為其早期錄音發行之一，但未明說《School》是第一張，建議降格為『Zorn 最早期的錄音之一』 | https://en.wikipedia.org/wiki/John_Zorn |
+| ar-d-513 | Free Music Quintet | Free Music One and Two | 樂團在自己的排練處連錄兩天 | Squid's Ear 稱錄音地點是團員 Erwin Somer 位於荷蘭 Welsum 的農舍（封面即該農舍），並非一般的排練處；單源，建議店主複核後再改 | https://squidco.com/r.cgi?p=30375 |
+| ar-d-513 | Han Bennink / Misha Mengelberg / John Tchicai | Instant Composers Pool | ICP 是 1967 年在阿姆斯特丹創立的音樂人自營廠牌 | ICP 1967 年起初是向政府爭取即興音樂補助的團體（WBGO），後才有自營廠牌功能，措辭可再斟酌；並無事實錯誤，僅提示。 | https://www.wbgo.org/music/2017-03-03/misha-mengelberg-influential-dutch-pianist-composer-behind-the-icp-orchestra-dies-at-81 |
+| ar-d-513 | Jimmy Lyons & Sunny Murray Trio | Jump Up | 替 Cecil Taylor 吹了二十六年／1960 年進入 Taylor 的樂團 | jazz.com 寫 1961 年 10 月在 Five Spot 加入，維基寫 1960 年，兩源不一；建議改「1960 年代初」，並避免「二十六年」的算法 | https://jazz.com/encyclopedia/lyons-jimmy |
+| ar-d-513 | John Russell & Roger Turner | The Second Sky | 兩人從 1970 年代中期起搭檔，第一次同上唱片是 1980 年與 Toshinori Kondo 的三重奏 | 維基與 Encyclopedia.com 的 Turner 條目都只說 1974 年後與 Russell 長期合作，沒有第一次同上唱片的年份與近藤三重奏的說法，本層查不到出處；若無來源建議改寫或刪除 | https://en.wikipedia.org/wiki/Roger_Turner_(musician) |
+| ar-d-513 | John Zorn & Sato Michihiro | Ganryu Island | 1985 年的發行商是 Yukon | 維基內文寫 Yukon 1984 年發行 LP、資訊框寫 1985，Tzadik 於 1998 年再發 CD 加五首；首發年各源不一，建議改成不寫年份或標「1984–85 年間」 | https://en.wikipedia.org/wiki/Ganryu_Island_(album) |
 | ar-d-929 | Erik Truffaz | Rollin' | 2000 年簽進這個廠牌 | 上線簡介沿用 Blue Note 官網簡介的 2000 年簽約說；但維基與已上線的《Out of a Dream》《The Dawn》《Bending New Corners》簡介顯示 1997–1999 年已在 Blue Note 發片，瑞士聯邦文化局新聞稿也記《Bending New Corners》為 1999 年 Blue Note 專輯，2000 年簽約的說法與之矛盾，建議改為不寫簽約年。 | https://musikzeitung.ch/en/?p=44583 |
 | ar-d-929 | Erik Truffaz | The Walk of the Giant Turtle | 前一張四重奏盤在法國賣到十萬張的金唱片 | 維基只寫《Bending New Corners》（1999）是法國 Silver Album；本張的前一張是《Mantis》（2001），並非《Bending New Corners》。需核對金唱片的專輯歸屬與認證層級。 | https://en.wikipedia.org/wiki/Erik_Truffaz |
 | ar-d-929 | Stanley Jordan | Magic Touch | 九軌裡有五軌只有一把電吉他 … 六軌只有他的電吉他 | 同一則簡介前後自相矛盾：五軌 vs 六軌；事實庫引 jazzdisco 為六軌純獨奏、其餘三軌各配一組節奏，應統一為六軌。 | https://en.wikipedia.org/wiki/Magic_Touch_(Stanley_Jordan_album) |

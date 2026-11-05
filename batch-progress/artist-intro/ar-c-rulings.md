@@ -2640,3 +2640,10 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 39 位寫：19 full、20 thin；Aviino 查不到國籍與身分、素材幾乎全來自 Chillhop 一家，不寫（skipped）。
 - 題材照寫：L'Orange 因膽脂瘤嚴重失聰、兩次耳部手術；Domo Genesis 清寒成長、弟弟有自閉症。
 - 主線審稿 9 處：媒體榜單不寫——Req 刪 Fact 史上 50 大 trip-hop 第 14 名、Babyfather 刪 TMT 與 RA 年度第一、Curren$y & Harry Fraud 刪 XXL Awards 年度 EP；Req「當地最受推崇的塗鴉作者之一」改「當地知名」；Black Kray 刪「Goth Money 開創 emo rap」（首創宣稱，兩源同屬維基家族）；Anna Webber 刪 BMI Charlie Parker 獎（在世者只留古根漢）；Ned Rothenberg「横山」改台灣字形「橫山」；Revolutionary Ensemble 補「美國」並壓回 250 字。
+
+## ar-d-512（2026-11-05，自由爵士、歐洲即興、前衛爵士；大量合作卡）
+
+- 40 位全寫：33 full、7 thin。合作卡裡同一人（Barry Guy、Evan Parker、Peter Kowald、Derek Bailey、John Zorn、Han Bennink）各張換角度寫，未重複同一段生平。
+- 2025 年事實主線核實：Howard Riley 2025 年 2 月過世（Jazz Journal、Free Jazz Collective 兩源）；Marilyn Crispell 獲選 2025 NEA Jazz Masters（NEA、BMI 兩源）。
+- 題材照寫：Joe Harriott 晚年失業、赤貧，癌症過世；Peter Kowald 2002 年演出後心臟病發猝逝；Derek Bailey 2005 年因運動神經元疾病過世；Connie Crothers 2016 年肺癌過世；Alan Tomlinson 2024 年 2 月辭世。
+- 主線審稿 10 處：Joe Harriott 單名卡 270 字超標壓回 244；Aki Takase 片假名「高瀬アキ」改羅馬字，「德語區最重要的爵士獎之一」軟化為「德國爵士獎」；Bob Ostertag、Connie Crothers、Denman Maroney 第一句補國籍與身分（連帶刪 Ostertag 的 CC 授權句、Crothers 的教學細節）。
