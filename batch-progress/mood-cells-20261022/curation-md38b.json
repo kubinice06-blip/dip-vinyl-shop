@@ -1,0 +1,410 @@
+{
+ "group": "md38b",
+ "factions": [
+  {
+   "id": "label-dark-ambient",
+   "zh": "廠牌專訪／AOTD 暗 ambient 與田野錄音",
+   "count": 4,
+   "why": ""
+  },
+  {
+   "id": "dark-post-rock",
+   "zh": "暗色無鼓／drone 器樂",
+   "count": 4,
+   "why": ""
+  },
+  {
+   "id": "dark-downtempo",
+   "zh": "暗 downtempo／illbient／dub",
+   "count": 4,
+   "why": ""
+  },
+  {
+   "id": "hauntology",
+   "zh": "hauntology（0 張：BCD 無專文）",
+   "count": 0,
+   "why": ""
+  }
+ ],
+ "albums": [
+  {
+   "artist": "Chris Abrahams",
+   "album": "Thrown",
+   "year": 2005,
+   "label": "Room40",
+   "country": "au",
+   "faction": "label-dark-ambient",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Room40 廠牌專訪點名的早期基石：Lawrence English 說它「嚇人」，風琴被壓成不安的長音；無鼓、低頻厚、陰冷，落頹靡。",
+   "moodGuess": {
+    "x": 1.8,
+    "y": 1.1,
+    "z": -1.0,
+    "why": "無鼓，風琴長音低暗不安，殘響厚，陰冷"
+   },
+   "evidence": [
+    "https://daily.bandcamp.com/label-profile/room40-label-profile",
+    "https://musicbrainz.org/release-group/196327c4-654b-380d-ba1a-c0733da847cd"
+   ],
+   "bcdaily": "English: 'I remember… being completely frightened… he finds a way to make the organ so unsettled but so compelling.'",
+   "mbRgMbid": "196327c4-654b-380d-ba1a-c0733da847cd",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Chris Watson",
+   "album": "Weather Report",
+   "year": 2003,
+   "label": "Touch",
+   "country": "gb",
+   "faction": "label-dark-ambient",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Touch 廠牌專訪稱它與《El Tren Fantasma》同為田野錄音經典；冰島風暴與地底轟鳴，無拍、低頻厚、陰冷。",
+   "moodGuess": {
+    "x": 1.6,
+    "y": 0.9,
+    "z": -0.8,
+    "why": "田野錄音，風暴與地底低頻轟鳴，無拍無旋律，陰冷"
+   },
+   "evidence": [
+    "https://daily.bandcamp.com/label-profile/touch-label-profile",
+    "https://musicbrainz.org/release-group/0a3ca035-9d45-3bb5-b98f-8cdc90795e44"
+   ],
+   "bcdaily": "His later Touch albums, including Weather Report and El Tren Fantasma, are classics in the genre.",
+   "mbRgMbid": "0a3ca035-9d45-3bb5-b98f-8cdc90795e44",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB secondary-type 為 Field recording（非 live／compilation）；Y 貼 0.9，主線可評估"
+  },
+  {
+   "artist": "Qasim Naqvi",
+   "album": "FILM",
+   "year": 2017,
+   "label": "Western Vinyl",
+   "country": "us",
+   "faction": "dark-post-rock",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp Daily Album of the Day：Dawn of Midi 鼓手完全不打鼓，低音長音與地下隧道般的暗色音場，無鼓、低頻厚、冷。",
+   "moodGuess": {
+    "x": 1.8,
+    "y": 1.3,
+    "z": -1.0,
+    "why": "無鼓類比合成器低音長音，隧道般暗沉，冷"
+   },
+   "evidence": [
+    "https://daily.bandcamp.com/album-of-the-day/qasim-naqvi-film-review",
+    "https://musicbrainz.org/release-group/8a8bbb18-c72d-4f11-a7bd-032951aca535",
+    "https://qasimnaqvi.bandcamp.com/album/film"
+   ],
+   "bcdaily": "explores expansive, underlit, tunnel-like soundscapes",
+   "mbRgMbid": "8a8bbb18-c72d-4f11-a7bd-032951aca535",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Lea Bertucci",
+   "album": "Of Shadow and Substance",
+   "year": 2023,
+   "label": "Lea Bertucci",
+   "country": "us",
+   "faction": "label-dark-ambient",
+   "genres": [
+    "electronic",
+    "classical"
+   ],
+   "why": "Album of the Day：以煉油廠爆炸與工業腐朽為題，弦樂長音如霧；不安但沉，落頹靡（弓弦後段有張力）。",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.0,
+    "z": -1.1,
+    "why": "弦樂長音霧與低頻，有鈸滾動但不推進，陰冷"
+   },
+   "evidence": [
+    "https://daily.bandcamp.com/album-of-the-day/lea-bertucci-of-shadow-and-substance-review",
+    "https://musicbrainz.org/release-group/b4fc5a38-cbc4-4827-8841-c450c664b319",
+    "https://leabertucci.bandcamp.com/album/of-shadow-and-substance"
+   ],
+   "bcdaily": "A disquieting, yet serene, reflection on industrial decay",
+   "mbRgMbid": "b4fc5a38-cbc4-4827-8841-c450c664b319",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "僅 4 軌（兩首長作，MB 年份 2023-12-01）；後段 'feverish fury' 弓弦有張力，X 可能 >2.7"
+  },
+  {
+   "artist": "KRM & KMRU",
+   "album": "Disconnect",
+   "year": 2024,
+   "label": "Phantom Limb",
+   "country": "gb",
+   "faction": "dark-downtempo",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Album of the Day：The Bug 化名 KRM 與 KMRU 合作，Techno Animal 式 illbient 回歸，泥濘、令人不安、無四拍推進，落頹靡。",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 1.3,
+    "z": -0.8,
+    "why": "dub 低頻與顆粒雜訊，慢、泥濘、不安，無四拍"
+   },
+   "evidence": [
+    "https://daily.bandcamp.com/album-of-the-day/krm-kmru-disconnect-review",
+    "https://phantomlimblabel.bandcamp.com/album/disconnect"
+   ],
+   "bcdaily": "The end result is enveloping and uneasy… sludgy and imperturbable",
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "artist:KRM AND releasegroup:Disconnect",
+     "artist:KMRU AND releasegroup:Disconnect"
+    ],
+    "checkedAt": "2026-11-05",
+    "conclusion": "MusicBrainz release-group search returned no matching Album for this artist/title; identity fixed by Bandcamp page and Bandcamp Daily review."
+   },
+   "manualEvidenceUrls": [
+    "https://phantomlimblabel.bandcamp.com/album/disconnect",
+    "https://daily.bandcamp.com/album-of-the-day/krm-kmru-disconnect-review"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Bandcamp 日期 2024-06-14；6 軌，需主線確認總長 ≥30 分；KMRU 人聲段是否偏暖"
+  },
+  {
+   "artist": "Tegh & Adel Poursamadi",
+   "album": "Ima",
+   "year": 2022,
+   "label": "Tegh",
+   "country": "ir",
+   "faction": "dark-post-rock",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Album of the Day：伊朗聲音藝術家與小提琴手的五首長曲，被拉扯刮擦的弦與金屬質地，評者稱「不安」「遊戲配樂般」，落頹靡。",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 1.0,
+    "z": -1.1,
+    "why": "被撕裂的小提琴與金屬打擊音，緩慢、詭異、冷"
+   },
+   "evidence": [
+    "https://daily.bandcamp.com/album-of-the-day/tegh-adel-poursamadi-ima-review",
+    "https://musicbrainz.org/release-group/daa04190-a371-4366-aa03-6e258581911d",
+    "https://tegh.bandcamp.com/album/ima"
+   ],
+   "bcdaily": "five lengthy, languorous tracks are tricky, stirring, even unsettling",
+   "mbRgMbid": "daa04190-a371-4366-aa03-6e258581911d",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "評介寫 'stalks… sniping and biting' 有張力，X 可能 >2.7；金屬打擊"
+  },
+  {
+   "artist": "Cruel Diagonals",
+   "album": "Disambiguation",
+   "year": 2017,
+   "label": "Drawing Room Records",
+   "country": "us",
+   "faction": "dark-post-rock",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Album of the Day 稱它「哥德 ambient」：氣音人聲與耳語 drone 的漂流，無推進；偶有節奏段，色溫偏冷。",
+   "moodGuess": {
+    "x": 2.0,
+    "y": 1.0,
+    "z": -0.5,
+    "why": "耳語 drone 與鐘聲電子，人聲漂浮，無鼓推進，冷霧"
+   },
+   "evidence": [
+    "https://daily.bandcamp.com/album-of-the-day/cruel-diagonals-disambiguation-review",
+    "https://musicbrainz.org/release-group/1ccb3e67-5a70-46dc-878b-82f8099fc3d9",
+    "https://crueldiagonals.bandcamp.com/album/disambiguation"
+   ],
+   "bcdaily": "the gothic ambient album of the summer… the predominant vibe here is drift",
+   "mbRgMbid": "1ccb3e67-5a70-46dc-878b-82f8099fc3d9",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "z -0.5 偏邊；人聲旋律 + 'Render Arcane' 有節奏段；MB 年份 2017-12，Bandcamp 2018-07"
+  },
+  {
+   "artist": "Planning for Burial",
+   "album": "Below the House",
+   "year": 2017,
+   "label": "The Flenser",
+   "country": "us",
+   "faction": "dark-post-rock",
+   "genres": [
+    "rock"
+   ],
+   "why": "Album of the Day 與 2017 專訪稱其「威士忌與悲傷」的 doomgaze：慢速吉他牆、delay 與合成器，陰鬱。",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.4,
+    "z": -0.7,
+    "why": "慢速 fuzz 吉他與 delay 厚霧，低吼人聲，鼓稀疏，陰"
+   },
+   "evidence": [
+    "https://daily.bandcamp.com/album-of-the-day/planning-for-burial-its-closeness-its-easy-review",
+    "https://musicbrainz.org/release-group/5bd34432-4375-4915-96d0-e950cdc7047b"
+   ],
+   "bcdaily": "Thom Wasluck… 'whiskey and sadness'… Below the House (BCD review of the follow-up recalls it)",
+   "mbRgMbid": "5bd34432-4375-4915-96d0-e950cdc7047b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "BCD 出處是後作《It's Closeness, It's Easy》評介回顧本張；有鼓有人聲，x 貼邊"
+  },
+  {
+   "artist": "The Bug",
+   "album": "Tapping the Conversation",
+   "year": 1997,
+   "label": "WordSound",
+   "country": "us",
+   "faction": "dark-downtempo",
+   "genres": [
+    "electronic"
+   ],
+   "why": "WordSound 廠牌專訪：Kevin Martin 以 Macro Dub Infection 脈絡做出的首張 The Bug；dub 低頻、焦油般 bass，慢、暗、冷。",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.5,
+    "z": -1.2,
+    "why": "dub／illbient 慢拍，焦油般低頻與顆粒，冷暗"
+   },
+   "evidence": [
+    "https://daily.bandcamp.com/label-profile/wordsound-label-dub-brooklyn",
+    "https://musicbrainz.org/release-group/96e1376f-86fb-3e36-9746-43fc96d7da24"
+   ],
+   "bcdaily": "That project, Tapping the Conversation, was the first album by The Bug, and was released in 1997.",
+   "mbRgMbid": "96e1376f-86fb-3e36-9746-43fc96d7da24",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "BCD 只一句帶過；有慢拍，需確認不落亢奮；同廠牌 illbient 線 md36 已掃過"
+  },
+  {
+   "artist": "Scarab",
+   "album": "Secrets of the Past and Future",
+   "year": 1996,
+   "label": "WordSound",
+   "country": "us",
+   "faction": "dark-downtempo",
+   "genres": [
+    "electronic"
+   ],
+   "why": "WordSound 廠牌專訪：波斯旋律、藏僧誦唱與手鼓包在「震顱的低頻」裡，暗黑 world-dub，慢、重。",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.4,
+    "z": -0.7,
+    "why": "慢手鼓、僧侶誦唱與厚重 bass 墊，冷暗"
+   },
+   "evidence": [
+    "https://daily.bandcamp.com/label-profile/wordsound-label-dub-brooklyn",
+    "https://musicbrainz.org/release-group/ff3ce060-116b-3fd3-962d-cfbc3e15f3b0"
+   ],
+   "bcdaily": "Persian melodies, chanting Gyuto monks, and hand percussion, enveloped in skull-vibrating bass",
+   "mbRgMbid": "ff3ce060-116b-3fd3-962d-cfbc3e15f3b0",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 條目無 primary-type（None），可能需走人工身分；旋律＋誦唱，z 偏邊"
+  },
+  {
+   "artist": "Spectre",
+   "album": "The Illness",
+   "year": 1995,
+   "label": "WordSound",
+   "country": "us",
+   "faction": "dark-downtempo",
+   "genres": [
+    "hiphop"
+   ],
+   "why": "WordSound 廠牌專訪：Fernando 的末日感器樂嘻哈，Herrmann 式弦樂刺音與偏頭痛般的合成低音；慢、暗、冷。",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.3,
+    "z": -1.3,
+    "why": "慢而沉的 beat，弦樂刺音與厚重合成低音，陰暗"
+   },
+   "evidence": [
+    "https://daily.bandcamp.com/label-profile/wordsound-label-dub-brooklyn",
+    "https://musicbrainz.org/release-group/50c9fec4-3748-3acf-a550-3a2f27fdddd8"
+   ],
+   "bcdaily": "an apocalyptic instrumental hip-hop album… music that'll make you look over your shoulder",
+   "mbRgMbid": "50c9fec4-3748-3acf-a550-3a2f27fdddd8",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "有 beat（嘻哈）但無攻擊性；字面是 instrumental hip-hop，若主線覺得該屬 hiphop 線可汰"
+  },
+  {
+   "artist": "Masma Dream World",
+   "album": "PLEASE COME TO ME",
+   "year": 2025,
+   "label": "Masma Dream World",
+   "country": "us",
+   "faction": "label-dark-ambient",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Album of the Day：「儀式感十足的暗黑 ambient」，以可塑的人聲做祈禱般的召喚；慢、暗，陰森神祕。",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1.0,
+    "z": -0.4,
+    "why": "暗黑 ambient 人聲吟唱與低頻墊，儀式感，慢"
+   },
+   "evidence": [
+    "https://daily.bandcamp.com/album-of-the-day/masma-dream-world-please-come-to-me-review",
+    "https://masmadreamworld.bandcamp.com/album/please-come-to-me"
+   ],
+   "bcdaily": "a richly immersive take on dark ambient that vibrates with mystical energy",
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "artist:\"Masma Dream World\"",
+     "releasegroup:\"PLEASE COME TO ME\""
+    ],
+    "checkedAt": "2026-11-05",
+    "conclusion": "MusicBrainz release-group search returned no matching Album for this artist/title; identity fixed by Bandcamp page and Bandcamp Daily review."
+   },
+   "manualEvidenceUrls": [
+    "https://masmadreamworld.bandcamp.com/album/please-come-to-me",
+    "https://daily.bandcamp.com/album-of-the-day/masma-dream-world-please-come-to-me-review"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Bandcamp tag 含 drums／African／world；z -0.4 偏邊；人聲旋律可能偏暖"
+  }
+ ],
+ "notes": [
+  "Bandcamp Daily 的 Label Profile／Album of the Day 對本場景（hauntology、暗 post-rock 無鼓、暗 downtempo）幾乎沒有專文：hauntology 廠牌（Clay Pipe、Castles in Space、Buried Treasure、Mordant Music）無 Label Profile，只有 Hidden Britain《Stone Tape》合輯（不收）；AOTD 多為 2020 後新作，鼓組／人聲／明亮者占多數。",
+  "已爬 Label Profile 約 230 篇、Album of the Day 約 390 篇、Best Electronic 97 期；Kranky／Constellation／Projekt／Black Truffle／Cryo Chamber 等相關廠牌專訪的亮點盤多半已被 md7／md3／md21／md33 收走或判暖／帶鼓。",
+  "刻意不收：Even the Horizon Knows Its Bounds（鋼琴、浮升）、Chthonic（MB 為 EP）、Instead of Rain I Bring a Hat（有鼓、人聲、管弦）、Nattdett（BCD 無聲音描述）、Cremation Lily（trap 鼓）、Apparitions《Volcanic Reality》（鼓組）、Daniel Wyche（BCD 稱烏托邦式、非暗）、Hammock／Stars of the Lid／Loscil（暖）。",
+  "照實交 12 張，未湊數到 27。"
+ ]
+}
