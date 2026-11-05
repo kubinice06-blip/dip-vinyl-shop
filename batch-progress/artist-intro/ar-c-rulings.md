@@ -2615,3 +2615,9 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 39 位寫：20 full、19 thin；Djorvin Clain 沒有身世與本人聲音事實，不寫（skipped）。
 - 題材照寫：Celer 的 Danielle Baquet-Long 2009 年心臟衰竭驟逝；DJ Cheb i Sabbah 2013 年胃癌過世。
 - 主線審稿 22 處：第一句補國籍或身分——Dirty Beaches、DJ Cheb i Sabbah、DJ Spooky、Elsa Justel、Efdemin、Elektric Music、Christopher Young、Damon Wild、Daniel Menche、David García Díaz、DIN A Testbild、Dettinger（連帶刪細節壓回字數：Cheb i Sabbah「生前仍在做新專輯」、Justel「傑出藝術家」稱號、Efdemin 年紀與喇叭數、Young 試映沉默、Wild 唱片行郵購、Menche 的 Sunn O))) 客串）；Dronny Darko & protoU 刪「夫妻檔／妻子 Sasha」（妻子或妹妹兩源矛盾，特注已要求不寫）；CAPSULE「中田ヤスタカ」改 Yasutaka Nakata（片假名規則），刪 bossa nova 句壓字數。
+
+## ar-d-508（2026-11-05，電子、dark ambient、IDM、techno、配樂；多合作卡）
+
+- 39 位寫：14 full、25 thin；Hipnosis 三格全空，不寫（skipped）。
+- 題材照寫：Harold Budd 2020 年因新冠併發症辭世；Jóhann Jóhannsson 2018 年因心臟衰竭辭世；God Body Disconnect 的團名來自 Moallem 自述的一次精神病發作；Hallucinator 專輯獻給 1993 年遇刺的 Stephen Lawrence。
+- 主線審稿 2 處：Ian William Craig 第一句補「加拿大歌手與作曲家」；Gaudi + Nusrat「世界最偉大的 qawwali 歌手」軟化為「最具代表性的 qawwali 歌手之一」。

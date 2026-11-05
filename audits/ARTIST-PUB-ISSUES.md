@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1764 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1766 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -1541,6 +1541,8 @@
 | ar-d-508 | Hotel Neon | Vanishing Forms | Hotel Neon 組於 2013 年 | Bandcamp 自述 2012，Discogs 為 2013，兩源不一致 | https://hotelneon.bandcamp.com/ |
 | ar-d-508 | Japanese Telecom | Virtual Geisha | 2001 年 11 月由 Gigolo 發行 | FACT 與 The Vinyl Factory 均寫 2002；網路來源不一致，需以 Discogs／廠牌目錄確認 | https://thevinylfactory.com/features/demystifying-gerald-donald-the-man-behind-drexciya-and-dopplereffekt |
 | ar-d-508 | Jim Williams | Possessor | 2021 年拿下 Gérardmer 影展最佳原創配樂 | 本層查的維基與訪談未見此獎；未能證實也未能否證，請本機核對 | https://en.wikipedia.org/wiki/Jim_Williams_(composer) |
+| ar-d-509 | Kloob & Onasander | Mundus Patet | 兩人在 Facebook 上結識，互相剪輯對方的音軌；合作的方式是交換一層層音軌 | Winter-Light 頁面寫『Landini 與 Kloob 一起製作並錄下所有曲目』，沒有提到 Facebook 結識或交換音軌，也未說是遠距；此說法來源待核（若無出處建議刪除） | https://winter-light.bandcamp.com/album/mundus-patet |
+| ar-d-509 | Kolhoosi 13 | Monuments of Power | 這套六首、總長約 43 分鐘的音景 | Side-Line 新專輯報導寫 eight tracks，與簡介的『六首』不符（Cryo Chamber 頁的曲目表可再核對；總長 43 分鐘未驗） | https://www.side-line.com/new-album-by-the-finnish-duo-kolhoosi-13-monuments-of-power-available-now-for-pre-order-at-cryo-chamber |
 | ar-d-929 | Erik Truffaz | Rollin' | 2000 年簽進這個廠牌 | 上線簡介沿用 Blue Note 官網簡介的 2000 年簽約說；但維基與已上線的《Out of a Dream》《The Dawn》《Bending New Corners》簡介顯示 1997–1999 年已在 Blue Note 發片，瑞士聯邦文化局新聞稿也記《Bending New Corners》為 1999 年 Blue Note 專輯，2000 年簽約的說法與之矛盾，建議改為不寫簽約年。 | https://musikzeitung.ch/en/?p=44583 |
 | ar-d-929 | Erik Truffaz | The Walk of the Giant Turtle | 前一張四重奏盤在法國賣到十萬張的金唱片 | 維基只寫《Bending New Corners》（1999）是法國 Silver Album；本張的前一張是《Mantis》（2001），並非《Bending New Corners》。需核對金唱片的專輯歸屬與認證層級。 | https://en.wikipedia.org/wiki/Erik_Truffaz |
 | ar-d-929 | Stanley Jordan | Magic Touch | 九軌裡有五軌只有一把電吉他 … 六軌只有他的電吉他 | 同一則簡介前後自相矛盾：五軌 vs 六軌；事實庫引 jazzdisco 為六軌純獨奏、其餘三軌各配一組節奏，應統一為六軌。 | https://en.wikipedia.org/wiki/Magic_Touch_(Stanley_Jordan_album) |
