@@ -2628,3 +2628,9 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 2025 年事實主線核實：Marie Davidson《City of Clowns》入圍 2025 年 Polaris 音樂獎短名單（CBC、Billboard Canada 兩源）。
 - 題材照寫：Kirlian Camera 1999 年遭德國媒體指控新法西斯傾向、樂團否認，抗議與演出取消延續到 2002 年；Lab Rat XL（James Stinson）2002 年心臟病併發症過世；Maryanne Amacher 2009 年摔傷後中風辭世；Luke Schneider 自述生活失控、恐慌發作（「自行戒斷」一句只有本人單源，刪）。
 - 主線審稿 16 處：單名卡超 250 字壓回——Kirlian Camera 265→241（刪團名由來、補「義大利樂團」）、Maryanne Amacher 279→245（刪父親職業與 Cage 暴風雨音效、補「美國作曲家」）；第一句補國籍或身分——Jonty Harrison、Karl Bartos、Kristof Hahn、Luke Schneider、Marie Davidson、Marcus Schmickler、Michael Brook、Mount Vernon Arts Lab（連帶刪細節壓字數）；Harrison 刪「該賽史上最重要的作品之一」。
+
+## ar-d-510（2026-11-05，電子、dark ambient、folk、嘻哈與 lo-fi beat）
+
+- 36 位寫：17 full、19 thin；不寫 4 位——Purrple Cat、less.people（沒有身世或聲音事實），NOGYMX、Kupla（研究稿只有一條來源，比照 ar-d-509 Kloob & Onasander 撤稿）。
+- 題材照寫：E.S.G. 因持有毒品入獄一年；Big Moe 2007 年心臟病發昏迷後過世；Prince Be（P.M. Dawn）2005 年中風、2016 年因糖尿病併發腎病過世；Mika Vainio（Ø）2017 年過世。
+- 主線審稿 8 處：在世者只留一項成績——Norbert Möslang 刪瑞士電影獎（留瑞士聯邦文化署的先驅評價）、蛋堡 金曲獎只寫最佳華語專輯、Ghostpoet「兩度入圍水星獎」改「首張即入圍」、P.M. Dawn 刪「又有兩首進前十」；E.S.G. 刪單一報紙的「最被低估」；Steve von Till、Fursaxa 第一句補國籍（連帶刪「不教音樂」）。
