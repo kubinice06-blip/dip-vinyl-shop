@@ -1,0 +1,726 @@
+{
+ "group": "ml62a",
+ "factions": [
+  {
+   "id": "bedroom-new",
+   "zh": "2010s–20s 暖 dream pop／bedroom shoegaze",
+   "count": 12,
+   "why": ""
+  },
+  {
+   "id": "dreampop-90s",
+   "zh": "厚殘響慢歌與 90s–00s 暖 dream pop／cosmic country 二線",
+   "count": 13,
+   "why": ""
+  }
+ ],
+ "albums": [
+  {
+   "artist": "Still Corners",
+   "album": "Creatures of an Hour",
+   "year": 2011,
+   "label": "Sub Pop",
+   "country": "gb",
+   "faction": "bedroom-new",
+   "genres": [
+    "rock"
+   ],
+   "why": "新世代暖 dream pop 代表首作；殘響霧包覆、慢拍、女聲柔，落恍惚",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 0.9,
+    "z": 0.3,
+    "why": "慢拍，吉他與合成器泡在長殘響，女聲柔，微暖的電影感"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/9a4a2d72-e6bb-4a85-a99c-5c93f7b00f4b/front",
+    "https://musicbrainz.org/release-group/9a4a2d72-e6bb-4a85-a99c-5c93f7b00f4b"
+   ],
+   "mbRgMbid": "9a4a2d72-e6bb-4a85-a99c-5c93f7b00f4b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "z 貼 0.3，電影夜景感偏冷的風險"
+  },
+  {
+   "artist": "Still Corners",
+   "album": "Strange Pleasures",
+   "year": 2013,
+   "label": "Sub Pop",
+   "country": "gb",
+   "faction": "bedroom-new",
+   "genres": [
+    "rock"
+   ],
+   "why": "Still Corners 第二張，旋律更清楚、殘響更厚，慢而暖",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 0.8,
+    "z": 0.3,
+    "why": "中慢拍，厚殘響吉他與合成器墊，旋律清楚帶暖"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/bd21202f-f69a-4e38-8e79-55fc4bb9c4a6/front",
+    "https://musicbrainz.org/release-group/bd21202f-f69a-4e38-8e79-55fc4bb9c4a6"
+   ],
+   "mbRgMbid": "bd21202f-f69a-4e38-8e79-55fc4bb9c4a6",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "y 0.8 貼邊"
+  },
+  {
+   "artist": "Still Corners",
+   "album": "Dead Blue",
+   "year": 2016,
+   "label": "Wrecking Light",
+   "country": "gb",
+   "faction": "bedroom-new",
+   "genres": [
+    "rock"
+   ],
+   "why": "Still Corners 公路夢幻盤；殘響包覆、旋律清楚",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 0.8,
+    "z": 0.3,
+    "why": "中慢拍，殘響吉他與合成器墊，旋律明確，有點公路感"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/1bffe6b8-28b6-4cb4-819d-8b2114a135ae/front",
+    "https://musicbrainz.org/release-group/1bffe6b8-28b6-4cb4-819d-8b2114a135ae"
+   ],
+   "mbRgMbid": "1bffe6b8-28b6-4cb4-819d-8b2114a135ae",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "x 2.5、y 0.8 都近邊"
+  },
+  {
+   "artist": "Still Corners",
+   "album": "Slow Air",
+   "year": 2018,
+   "label": "Wrecking Light",
+   "country": "gb",
+   "faction": "bedroom-new",
+   "genres": [
+    "rock"
+   ],
+   "why": "Still Corners 偏暖的慢盤；殘響厚、拍子懶",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 0.8,
+    "z": 0.5,
+    "why": "鬆拍，吉他殘響與合成器墊，人聲暖，西部夜色"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/f183e029-aca7-41a3-b605-a737c3336f25/front",
+    "https://musicbrainz.org/release-group/f183e029-aca7-41a3-b605-a737c3336f25"
+   ],
+   "mbRgMbid": "f183e029-aca7-41a3-b605-a737c3336f25",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "y 0.8 貼邊"
+  },
+  {
+   "artist": "Still Corners",
+   "album": "The Last Exit",
+   "year": 2021,
+   "label": "Wrecking Light",
+   "country": "gb",
+   "faction": "bedroom-new",
+   "genres": [
+    "rock"
+   ],
+   "why": "Still Corners 近作，慢板殘響更滿、旋律明確，落恍惚",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 0.9,
+    "z": 0.4,
+    "why": "慢拍，厚合成器墊與吉他殘響，旋律清楚"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/cd47f4cf-5c7e-44ce-9544-0895ad629528/front",
+    "https://musicbrainz.org/release-group/cd47f4cf-5c7e-44ce-9544-0895ad629528"
+   ],
+   "mbRgMbid": "cd47f4cf-5c7e-44ce-9544-0895ad629528",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Widowspeak",
+   "album": "All Yours",
+   "year": 2015,
+   "label": "Captured Tracks",
+   "country": "us",
+   "faction": "bedroom-new",
+   "genres": [
+    "rock"
+   ],
+   "why": "Widowspeak 暖的 Americana dream pop；殘響吉他加慵懶女聲，落恍惚",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 0.8,
+    "z": 0.5,
+    "why": "慢中拍，吉他 tremolo 與殘響，女聲溫暖慵懶"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/4a1dd415-e711-40c5-9dff-aed6c2759280/front",
+    "https://musicbrainz.org/release-group/4a1dd415-e711-40c5-9dff-aed6c2759280"
+   ],
+   "mbRgMbid": "4a1dd415-e711-40c5-9dff-aed6c2759280",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "y 0.8 貼邊；可能判輕落放鬆"
+  },
+  {
+   "artist": "Widowspeak",
+   "album": "Expect the Best",
+   "year": 2017,
+   "label": "Captured Tracks",
+   "country": "us",
+   "faction": "bedroom-new",
+   "genres": [
+    "rock"
+   ],
+   "why": "Widowspeak 第四張，製作更厚、更暖，慢歌為主",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 0.8,
+    "z": 0.5,
+    "why": "慢中拍，吉他殘響加合成器墊，女聲暖"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/dd3568e6-74b8-4825-8eee-20fb5dabe075/front",
+    "https://musicbrainz.org/release-group/dd3568e6-74b8-4825-8eee-20fb5dabe075"
+   ],
+   "mbRgMbid": "dd3568e6-74b8-4825-8eee-20fb5dabe075",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "y 0.8 貼邊"
+  },
+  {
+   "artist": "Widowspeak",
+   "album": "Plum",
+   "year": 2020,
+   "label": "Captured Tracks",
+   "country": "us",
+   "faction": "bedroom-new",
+   "genres": [
+    "rock"
+   ],
+   "why": "Widowspeak 最暖的一張，慢、柔、殘響包覆",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 0.8,
+    "z": 0.6,
+    "why": "慢拍，柔吉他與弦樂墊，暖女聲"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/4c8f6314-9a36-4b41-9f0b-7a09ce4b46ea/front",
+    "https://musicbrainz.org/release-group/4c8f6314-9a36-4b41-9f0b-7a09ce4b46ea"
+   ],
+   "mbRgMbid": "4c8f6314-9a36-4b41-9f0b-7a09ce4b46ea",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "y 0.8 貼邊，偏乾淨可能落放鬆"
+  },
+  {
+   "artist": "Lightning Bug",
+   "album": "A Color of the Sky",
+   "year": 2021,
+   "label": "Fat Possum",
+   "country": "us",
+   "faction": "bedroom-new",
+   "genres": [
+    "rock"
+   ],
+   "why": "Lightning Bug 暖 slowcore-shoegaze；霧一樣的殘響，擁抱感",
+   "moodGuess": {
+    "x": 1.9,
+    "y": 0.9,
+    "z": 0.5,
+    "why": "極慢，鬆軟吉他與厚殘響，女聲輕暖，鼓軟"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/6932bbc1-9f87-4748-8bae-f87955f360df/front",
+    "https://musicbrainz.org/release-group/6932bbc1-9f87-4748-8bae-f87955f360df"
+   ],
+   "mbRgMbid": "6932bbc1-9f87-4748-8bae-f87955f360df",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "y 0.9 偏近"
+  },
+  {
+   "artist": "Night Moves",
+   "album": "Colored Emotions",
+   "year": 2012,
+   "label": "Domino",
+   "country": "us",
+   "faction": "bedroom-new",
+   "genres": [
+    "rock"
+   ],
+   "why": "Night Moves 首作；70s 軟搖滾加 dream pop 殘響，暖、霧、慢",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 0.9,
+    "z": 0.6,
+    "why": "中慢拍，Rhodes 與厚殘響吉他，70s 暖調，朦朧"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/498d0406-f8f5-4942-907e-ef48d8f5c4f9/front",
+    "https://musicbrainz.org/release-group/498d0406-f8f5-4942-907e-ef48d8f5c4f9"
+   ],
+   "mbRgMbid": "498d0406-f8f5-4942-907e-ef48d8f5c4f9",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "x 2.5 偏近"
+  },
+  {
+   "artist": "Candy Claws",
+   "album": "Ceres & Calypso in the Deep Time",
+   "year": 2013,
+   "label": "Hidden Agenda",
+   "country": "us",
+   "faction": "bedroom-new",
+   "genres": [
+    "rock"
+   ],
+   "why": "概念性 dream pop 厚霧代表；殘響與合成器墊把人整個裹住，甜暖",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1.1,
+    "z": 0.6,
+    "why": "濃厚殘響與合成器泡泡，鬆拍，甜暖，概念專輯"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/5563d737-dba9-4930-ab05-3b0817816dd5/front",
+    "https://musicbrainz.org/release-group/5563d737-dba9-4930-ab05-3b0817816dd5"
+   ],
+   "mbRgMbid": "5563d737-dba9-4930-ab05-3b0817816dd5",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Death and Vanilla",
+   "album": "To Where the Wild Things Are...",
+   "year": 2015,
+   "label": "Fire",
+   "country": "se",
+   "faction": "bedroom-new",
+   "genres": [
+    "rock"
+   ],
+   "why": "瑞典 Mellotron dream pop；厚復古音色包覆，慢而暖",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 0.9,
+    "z": 0.4,
+    "why": "慢中拍，Mellotron 與合成器墊，女聲飄，復古暖調"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/ad3d6dd3-b71d-41f5-ab39-59f77227e182/front",
+    "https://musicbrainz.org/release-group/ad3d6dd3-b71d-41f5-ab39-59f77227e182"
+   ],
+   "mbRgMbid": "ad3d6dd3-b71d-41f5-ab39-59f77227e182",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "z 0.4；偏復古幽微，可能偏冷"
+  },
+  {
+   "artist": "Trespassers William",
+   "album": "Different Stars",
+   "year": 2002,
+   "label": "Sound in Silence",
+   "country": "us",
+   "faction": "dreampop-90s",
+   "genres": [
+    "rock"
+   ],
+   "why": "Trespassers William 代表作；慢殘響厚，女聲柔",
+   "moodGuess": {
+    "x": 1.9,
+    "y": 1,
+    "z": 0.3,
+    "why": "極慢，吉他殘響層層疊起，女聲輕柔，憂鬱但不冷"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/73ed2c7c-c47c-3c86-a563-515b236883b4/front",
+    "https://musicbrainz.org/release-group/73ed2c7c-c47c-3c86-a563-515b236883b4"
+   ],
+   "mbRgMbid": "73ed2c7c-c47c-3c86-a563-515b236883b4",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "z 貼 0.3，憂鬱偏冷會落頹靡"
+  },
+  {
+   "artist": "Trespassers William",
+   "album": "Having",
+   "year": 2006,
+   "label": "Sound in Silence",
+   "country": "us",
+   "faction": "dreampop-90s",
+   "genres": [
+    "rock"
+   ],
+   "why": "Trespassers William 第三張；比前作更暖更滿，慢板包覆",
+   "moodGuess": {
+    "x": 2,
+    "y": 1,
+    "z": 0.3,
+    "why": "慢拍，吉他與鍵盤殘響厚，女聲柔"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/c4f7ec67-9e32-3123-a524-6dc1b71a5d1b/front",
+    "https://musicbrainz.org/release-group/c4f7ec67-9e32-3123-a524-6dc1b71a5d1b"
+   ],
+   "mbRgMbid": "c4f7ec67-9e32-3123-a524-6dc1b71a5d1b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "z 貼 0.3"
+  },
+  {
+   "artist": "Beachwood Sparks",
+   "album": "Beachwood Sparks",
+   "year": 2000,
+   "label": "Sub Pop",
+   "country": "us",
+   "faction": "dreampop-90s",
+   "genres": [
+    "rock"
+   ],
+   "why": "Beachwood Sparks 首作；cosmic country 配殘響，陽光暖霧感",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 0.9,
+    "z": 0.8,
+    "why": "中慢拍，鋼棒吉他與殘響，country 加 shoegaze 的暖霧"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/b216823b-d3d0-3073-95dc-b21a0de34cc8/front",
+    "https://musicbrainz.org/release-group/b216823b-d3d0-3073-95dc-b21a0de34cc8"
+   ],
+   "mbRgMbid": "b216823b-d3d0-3073-95dc-b21a0de34cc8",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "y 0.9 偏近；有些曲偏乾"
+  },
+  {
+   "artist": "Beachwood Sparks",
+   "album": "Once We Were Trees",
+   "year": 2001,
+   "label": "Sub Pop",
+   "country": "us",
+   "faction": "dreampop-90s",
+   "genres": [
+    "rock"
+   ],
+   "why": "Beachwood Sparks 第二張，更迷幻、更厚，暖和聲包覆",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1,
+    "z": 0.8,
+    "why": "慢拍，鋼棒與合成器殘響，和聲包覆，暖"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/bc23db20-b423-35e8-9264-b7b3ffa5a220/front",
+    "https://musicbrainz.org/release-group/bc23db20-b423-35e8-9264-b7b3ffa5a220"
+   ],
+   "mbRgMbid": "bc23db20-b423-35e8-9264-b7b3ffa5a220",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Beachwood Sparks",
+   "album": "The Tarnished Gold",
+   "year": 2012,
+   "label": "Sub Pop",
+   "country": "us",
+   "faction": "dreampop-90s",
+   "genres": [
+    "rock"
+   ],
+   "why": "Beachwood Sparks 復出作；暖、慵懶、殘響",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 0.8,
+    "z": 0.8,
+    "why": "中慢拍，鋼棒、和聲與暖殘響，加州午後"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/4cb1c166-c98a-4a45-a82f-d8decfb42d69/front",
+    "https://musicbrainz.org/release-group/4cb1c166-c98a-4a45-a82f-d8decfb42d69"
+   ],
+   "mbRgMbid": "4cb1c166-c98a-4a45-a82f-d8decfb42d69",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "y 0.8 貼邊，偏乾淨可能落放鬆"
+  },
+  {
+   "artist": "Dean & Britta",
+   "album": "13 Most Beautiful... Songs for Andy Warhol's Screen Tests",
+   "year": 2009,
+   "label": "Double Feature",
+   "country": "us",
+   "faction": "dreampop-90s",
+   "genres": [
+    "rock"
+   ],
+   "why": "Galaxie 500／Luna 兩人的 Velvet 式夢幻慢盤；殘響包覆、拍子懶",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 0.9,
+    "z": 0.4,
+    "why": "慢拍，Galaxie 500 式吉他殘響與弦樂，微暖"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/3b65e1e8-545b-4570-a10e-794d9b777de2/front",
+    "https://musicbrainz.org/release-group/3b65e1e8-545b-4570-a10e-794d9b777de2"
+   ],
+   "mbRgMbid": "3b65e1e8-545b-4570-a10e-794d9b777de2",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "z 偏近，Warhol 的冷感可能判冷"
+  },
+  {
+   "artist": "Damon & Naomi",
+   "album": "The Earth Is Blue",
+   "year": 2005,
+   "label": "20/20/20",
+   "country": "us",
+   "faction": "dreampop-90s",
+   "genres": [
+    "rock"
+   ],
+   "why": "Galaxie 500 兩人的溫暖慢歌；殘響薄霧包覆",
+   "moodGuess": {
+    "x": 1.8,
+    "y": 0.8,
+    "z": 0.5,
+    "why": "極慢，原聲與電吉他、殘響，兩人聲部溫柔"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/0bb779ee-aad0-394e-8e3c-e392b3d515ac/front",
+    "https://musicbrainz.org/release-group/0bb779ee-aad0-394e-8e3c-e392b3d515ac"
+   ],
+   "mbRgMbid": "0bb779ee-aad0-394e-8e3c-e392b3d515ac",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "y 0.8 貼邊，偏原聲可能落放鬆"
+  },
+  {
+   "artist": "Damon & Naomi",
+   "album": "Damon & Naomi with Ghost",
+   "year": 2000,
+   "label": "20/20/20",
+   "country": "us",
+   "faction": "dreampop-90s",
+   "genres": [
+    "rock"
+   ],
+   "why": "與日本 Ghost 合作；迷幻吉他加殘響，慢而暖",
+   "moodGuess": {
+    "x": 2,
+    "y": 0.9,
+    "z": 0.4,
+    "why": "慢拍，迷幻吉他與殘響，人聲柔"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/e3faba16-66c3-3dbd-9337-2cc4d19de2fa/front",
+    "https://musicbrainz.org/release-group/e3faba16-66c3-3dbd-9337-2cc4d19de2fa"
+   ],
+   "mbRgMbid": "e3faba16-66c3-3dbd-9337-2cc4d19de2fa",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "z 0.4；迷幻偏飄，可能偏中性"
+  },
+  {
+   "artist": "Mojave 3",
+   "album": "Excuses for Travellers",
+   "year": 2000,
+   "label": "4AD",
+   "country": "gb",
+   "faction": "dreampop-90s",
+   "genres": [
+    "rock"
+   ],
+   "why": "Slowdive 後身 Mojave 3 最暖的一張；鋼棒殘響，慢拍包覆",
+   "moodGuess": {
+    "x": 1.9,
+    "y": 0.8,
+    "z": 0.8,
+    "why": "極慢，鋼棒吉他與殘響，Halstead 低語，暖"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/53e984af-b4dd-3830-acaa-46dab690bd3f/front",
+    "https://musicbrainz.org/release-group/53e984af-b4dd-3830-acaa-46dab690bd3f"
+   ],
+   "mbRgMbid": "53e984af-b4dd-3830-acaa-46dab690bd3f",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "y 0.8 貼邊，原聲居多可能落放鬆"
+  },
+  {
+   "artist": "Mojave 3",
+   "album": "Out of Tune",
+   "year": 1998,
+   "label": "4AD",
+   "country": "gb",
+   "faction": "dreampop-90s",
+   "genres": [
+    "rock"
+   ],
+   "why": "Mojave 3 第二張；Slowdive 轉向 country，暖慢",
+   "moodGuess": {
+    "x": 2,
+    "y": 0.8,
+    "z": 0.7,
+    "why": "慢拍，鋼棒與吉他殘響，低語人聲"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/81ac9414-922c-30ca-87ed-f5591290eb86/front",
+    "https://musicbrainz.org/release-group/81ac9414-922c-30ca-87ed-f5591290eb86"
+   ],
+   "mbRgMbid": "81ac9414-922c-30ca-87ed-f5591290eb86",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "y 0.8 貼邊"
+  },
+  {
+   "artist": "Lilys",
+   "album": "In the Presence of Nothing",
+   "year": 1992,
+   "label": "Sympathy for the Record Industry",
+   "country": "us",
+   "faction": "dreampop-90s",
+   "genres": [
+    "rock"
+   ],
+   "why": "Lilys 首作；shoegaze 厚牆加甜旋律，糊而不兇",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 1.5,
+    "z": 0.4,
+    "why": "中慢拍，厚吉他噪牆底下旋律甜，糊"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/ef409370-ab42-30d2-81b1-1cb2b0637efc/front",
+    "https://musicbrainz.org/release-group/ef409370-ab42-30d2-81b1-1cb2b0637efc"
+   ],
+   "mbRgMbid": "ef409370-ab42-30d2-81b1-1cb2b0637efc",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "x 2.6、z 0.4 近邊"
+  },
+  {
+   "artist": "The American Analog Set",
+   "album": "Know by Heart",
+   "year": 2001,
+   "label": "Emperor Norton",
+   "country": "us",
+   "faction": "dreampop-90s",
+   "genres": [
+    "rock"
+   ],
+   "why": "AAS 暖的催眠慢盤；風琴與振動琴包覆",
+   "moodGuess": {
+    "x": 2,
+    "y": 0.8,
+    "z": 0.5,
+    "why": "慢拍，Farfisa 與振動琴、鼓刷，暖而催眠"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/118d5895-ecee-3246-869f-28ae172fdf99/front",
+    "https://musicbrainz.org/release-group/118d5895-ecee-3246-869f-28ae172fdf99"
+   ],
+   "mbRgMbid": "118d5895-ecee-3246-869f-28ae172fdf99",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "y 0.8 貼邊；偏乾淨可能落放鬆"
+  },
+  {
+   "artist": "The American Analog Set",
+   "album": "Promise of Love",
+   "year": 2003,
+   "label": "Arena Rock",
+   "country": "us",
+   "faction": "dreampop-90s",
+   "genres": [
+    "rock"
+   ],
+   "why": "AAS 後期更暖更柔；慢、懶、包覆",
+   "moodGuess": {
+    "x": 1.9,
+    "y": 0.8,
+    "z": 0.6,
+    "why": "慢拍，風琴、吉他殘響，Kenny Sanderson 低語"
+   },
+   "evidence": [
+    "https://coverartarchive.org/release-group/e5e9f39c-289f-3c8a-b6b5-9a20f767a508/front",
+    "https://musicbrainz.org/release-group/e5e9f39c-289f-3c8a-b6b5-9a20f767a508"
+   ],
+   "mbRgMbid": "e5e9f39c-289f-3c8a-b6b5-9a20f767a508",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "y 0.8 貼邊"
+  }
+ ],
+ "notes": [
+  "池已大量收過 dream pop／shoegaze（ml2／ml11／ml44 等），2010s 暖 dream pop 能留的是 Still Corners／Widowspeak 一路；其餘轉向 90s–00s 的 cosmic country／Slowdive 後身／Galaxie 500 後身。",
+  "主動放棄：Hatchie（x 約 3，判躁）、Sweet Trip（電子 shoegaze、x 偏高）、Eric's Trip、Tennis／Alvvays 慢盤（判輕或躁）、Memoryhouse《The Years》（MB 為 EP）、Whirr／Nothing／Bdrmm（冷）。",
+  "Still Corners《The Last Exit》取 Album RG cd47f4cf（另有同名 Single 不取）。",
+  "Lilys 年份取 MB 1992；地區部分 label 為記憶，供主線核對。",
+  "WebSearch 0 次。"
+ ]
+}
