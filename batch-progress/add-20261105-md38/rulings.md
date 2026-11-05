@@ -15,3 +15,12 @@
   - 能量（x 2.5–2.6、鼓、打擊纏鬥）：Tegh & Adel Poursamadi《Ima》、Planning for Burial《Below the House》（有鼓有人聲；Daily 出處是後作評介回顧）。
   - 身分／線別：Scarab《Secrets of the Past and Future》（MB 條目無 primary-type）、Spectre《The Illness》（器樂嘻哈；店主 11-04「嘻哈太多」）。
 - **留給研究層確認**：True Widow《Circumambulation》（有鼓的 stoner slowcore，x 2.5）、Chris Watson《Weather Report》（MB secondary Field recording、y 0.9）、Lea Bertucci《Of Shadow and Substance》（4 軌、後段弓弦張力）、The Bug《Tapping the Conversation》（池中 The Bug 判躁落暴躁；本張 1997 illbient 配樂慢拍）、Jun Konagaya《Organ》（偏聖歌；年份取 MB 首發 2012，Daily 談 2023 重發）、KRM & KMRU《Disconnect》（總長是否 ≥30 分）、Far Drifters／Miles to Midnight（y 0.9，聲音只憑 Daily 描述）。
+
+## 研究 e 組
+- 23281：KRM & KMRU《Disconnect》——身分 §1 人工查實（Bandcamp＋Daily AOTD 一致，2024-06-14、Phantom Limb、六軌），總長 48:39 ≥30 分，正規專輯；Clash 明寫整張無鼓、冰河速度、murky，moodGuess 不推翻；KMRU 人聲偏暖僅輕微（Daily 稱 flickers of serenity 但更添不安），建議 z 收在 −0.6～−0.8。
+- 23282：The Bug《Tapping the Conversation》——MB／Discogs 對上（1997、WordSound WSCD018、13 首 67:08），正規專輯；Daily 對聲音只有「oppressive industrial funk」，聲音事實取自 Fact、Discogs、維基；moodGuess 存疑：整張有鼓（Vadim 的 dub-hop 節拍、鼓聲取樣），x 2.4 偏低，建議 2.6–2.8，主線可據此汰換。
+
+## 研究 b 組
+- 23251｜Far Drifters：Merchants of Air 原評論網域已轉址到無關博弈網站，棄用，不引用；鼓聲細節只有 Daily 一句「soft patter」，Last.fm 編制含 Drums Programming & FX（泛指樂團），標在 notes；本張 10 首約 57:47、無獨立廠牌（Bandcamp 自發行）。moodGuess 不推翻。
+- 23252｜Miles to Midnight：Daily 與 Bandcamp 兩處都寫有刷子鼓，總長 8 首約 41:57，合名 key 照卡單；moodGuess 不推翻（色溫可能略暖於 −0.8，仍在邊距內）。
+- 23253｜Circumambulation：有鼓、中慢板推進，Bandcamp 稱「darkest and poppiest」、The Sleeping Shaman 稱速度略快；moodGuess 存疑（x 2.5 偏高、z −0.8 可能偏冷），列為本組最邊緣的一張；NPR 好評僅 Daily 一源，facts 標為 Daily 說法。
