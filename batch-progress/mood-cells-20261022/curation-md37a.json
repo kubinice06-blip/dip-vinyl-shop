@@ -1,0 +1,713 @@
+{
+ "group": "md37a",
+ "factions": [
+  {
+   "id": "dark-ambient",
+   "zh": "暗黑 ambient",
+   "count": 5,
+   "why": ""
+  },
+  {
+   "id": "drone",
+   "zh": "drone",
+   "count": 10,
+   "why": ""
+  },
+  {
+   "id": "tape-loop",
+   "zh": "磁帶迴圈",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "field-collage",
+   "zh": "暗色田野錄音拼貼",
+   "count": 3,
+   "why": ""
+  },
+  {
+   "id": "dark-modern-classical",
+   "zh": "冷暗現代古典音塊",
+   "count": 1,
+   "why": ""
+  }
+ ],
+ "albums": [
+  {
+   "artist": "Hiemal",
+   "album": "Hiemal",
+   "year": 2017,
+   "label": "Hiemal",
+   "country": "fr",
+   "faction": "dark-ambient",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp Daily 稱它是法國 dark ambient 新團的「冷色音景」首作；風聲貫穿、冷調長音，無鼓。",
+   "moodGuess": {
+    "x": 1.4,
+    "y": 1.3,
+    "z": -1.3,
+    "why": "無鼓，寒風呼嘯貫穿全盤，冷色長音與低頻"
+   },
+   "evidence": [
+    "https://daily.bandcamp.com/best-ambient/best-new-ambient-november-2017",
+    "https://hiemalambient.bandcamp.com/album/hiemal"
+   ],
+   "bcdaily": "\"cold soundscapes with different atmospheres\"... howling wind continues throughout",
+   "mbRgMbid": "e36a6b83-a3e6-4dcd-be5e-dd4a083d795f",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Marc Kate",
+   "album": "Deface",
+   "year": 2017,
+   "label": "Marc Kate",
+   "country": "us",
+   "faction": "dark-ambient",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp Daily 寫它把極右黑金屬素材化為哀悼的 power ambient（77 分鐘）；厚霧殘響、無鼓、陰冷。",
+   "moodGuess": {
+    "x": 1.3,
+    "y": 1.4,
+    "z": -1.5,
+    "why": "把 NSBM 素材拖慢成哀悼式 drone，厚殘響、無鼓、陰"
+   },
+   "evidence": [
+    "https://daily.bandcamp.com/best-ambient/best-new-ambient-november-2017",
+    "https://failingforms.bandcamp.com/album/deface"
+   ],
+   "bcdaily": "\"incredibly bleak source material\"; \"it's dolorous—it mourns\"",
+   "mbRgMbid": "bde1db02-874c-401f-b755-c2ef3fbcea55",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "題材取自 NSBM 素材但作品立場是反轉與哀悼；若主線介意題材可汰。"
+  },
+  {
+   "artist": "Gray Acres",
+   "album": "Material Forces",
+   "year": 2019,
+   "label": "Whitelabrecs",
+   "country": "gb",
+   "faction": "drone",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp Daily 稱 \"bleak and lonely take on drone\"；無鼓長音、荒涼孤絕。",
+   "moodGuess": {
+    "x": 1.6,
+    "y": 1.0,
+    "z": -1.1,
+    "why": "現場錄音骨幹的 drone，風聲般的薄 pad 加高頻嘶聲，荒涼無鼓"
+   },
+   "evidence": [
+    "https://daily.bandcamp.com/best-ambient/the-best-new-ambient-music-on-bandcamp-october-2019",
+    "https://whitelabrecs.bandcamp.com/album/material-forces"
+   ],
+   "bcdaily": "\"a bleak and lonely take on drone\"",
+   "mbRgMbid": "537c5ae7-c24c-4120-8c04-66e36028af56",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "pad 偏薄，y 可能只有 0.8 上下。"
+  },
+  {
+   "artist": "Rafael Anton Irisarri",
+   "album": "Sirimiri",
+   "year": 2018,
+   "label": "Rafael Anton Irisarri",
+   "country": "us",
+   "faction": "drone",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp Daily 寫開場 Downfall 以哀傷旋律披在 gravelly 低頻上，像獨自長途火車上的沉思；池中 Irisarri 其他三張皆落頹靡。",
+   "moodGuess": {
+    "x": 1.5,
+    "y": 1.5,
+    "z": -0.6,
+    "why": "效果器吉他長音與粗礪低頻，哀傷但無鼓"
+   },
+   "evidence": [
+    "https://daily.bandcamp.com/best-ambient/best-new-ambient-june-2018",
+    "https://irisarri.bandcamp.com/album/sirimiri"
+   ],
+   "bcdaily": "\"deep, mournful emotions without words\"... \"gravelly frequencies\"",
+   "mbRgMbid": "033e7334-5715-43b7-9588-3f0080300692",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "有旋律線，z 估 -0.6 偏邊緣。"
+  },
+  {
+   "artist": "Jordan Reyes",
+   "album": "Everything Is Always",
+   "year": 2022,
+   "label": "American Dreams",
+   "country": "us",
+   "faction": "dark-ambient",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp Daily 稱它是 \"ambitious, challenging, dark ambient\"，主題是無望與無常、對死亡的執迷。",
+   "moodGuess": {
+    "x": 1.4,
+    "y": 1.3,
+    "z": -1.4,
+    "why": "無鼓暗黑 ambient，圍繞死亡與無望，厚而冷"
+   },
+   "evidence": [
+    "https://daily.bandcamp.com/best-ambient/the-best-ambient-on-bandcamp-november-2022",
+    "https://jordanreyes.bandcamp.com/album/everything-is-always"
+   ],
+   "bcdaily": "\"ambitious, challenging, dark ambient\"... \"lifelong fixation with death\"",
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "musicbrainz release-group artist:\"Jordan Reyes\"",
+     "musicbrainz release-group releasegroup:\"Everything Is Always\""
+    ],
+    "checkedAt": "2026-11-05",
+    "conclusion": "MB release-group 兩向查詢皆無對應 Album 條目，走人工身分。"
+   },
+   "manualEvidenceUrls": [
+    "https://jordanreyes.bandcamp.com/album/everything-is-always",
+    "https://daily.bandcamp.com/best-ambient/the-best-ambient-on-bandcamp-november-2022"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Kevin Richard Martin",
+   "album": "Blue Loops",
+   "year": 2026,
+   "label": "Kevin Richard Martin",
+   "country": "gb",
+   "faction": "drone",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp Daily 稱它「manipulated feedback dirges」，把人推進無底深淵；The Bug 主腦的暗黑 drone。",
+   "moodGuess": {
+    "x": 1.3,
+    "y": 1.6,
+    "z": -1.6,
+    "why": "手作回授輓歌，無時間標記、無底的深淵感，厚低頻"
+   },
+   "evidence": [
+    "https://daily.bandcamp.com/best-ambient/the-best-ambient-music-on-bandcamp-may-2026",
+    "https://kevinrichardmartin.bandcamp.com/album/blue-loops"
+   ],
+   "bcdaily": "\"plunges deeper into the abyss\"; \"manipulated feedback dirges\"",
+   "mbRgMbid": "a42b6b9c-4352-42a8-a0a4-741ff5efc0b0",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "2026 新盤，池中 KRM 三張皆頹靡。"
+  },
+  {
+   "artist": "Alex Zhang Hungtai",
+   "album": "Dras",
+   "year": 2026,
+   "label": "Shelter Press",
+   "country": "ca",
+   "faction": "drone",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp Daily 稱它荒涼，在蒙特婁聖若瑟聖堂錄成，是「露出獠牙的無調 drone」。",
+   "moodGuess": {
+    "x": 1.6,
+    "y": 1.4,
+    "z": -1.4,
+    "why": "大教堂錄音，無調 drone，空洞巨響殘響，荒涼"
+   },
+   "evidence": [
+    "https://daily.bandcamp.com/best-ambient/the-best-ambient-music-on-bandcamp-april-2026",
+    "https://alexzhanghungtai.bandcamp.com/album/dras"
+   ],
+   "bcdaily": "\"atonal drones that bare fangs\"; cavernous sonics",
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "musicbrainz release-group artist:\"Alex Zhang Hungtai\"",
+     "musicbrainz release-group releasegroup:\"Dras\""
+    ],
+    "checkedAt": "2026-11-05",
+    "conclusion": "MB release-group 兩向查詢皆無對應 Album 條目，走人工身分。"
+   },
+   "manualEvidenceUrls": [
+    "https://alexzhanghungtai.bandcamp.com/album/dras",
+    "https://daily.bandcamp.com/best-ambient/the-best-ambient-music-on-bandcamp-april-2026"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "無調、可能有張力感（x 邊緣）；35 分鐘，9 軌。"
+  },
+  {
+   "artist": "Phauss",
+   "album": "Audiodrome",
+   "year": 2022,
+   "label": "Room40",
+   "country": "se",
+   "faction": "drone",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp Daily 稱 Room40 出品常像凝視洞穴般的虛空，Audiodrome 是瑞典前衛傳奇的 musique concrète 與 drone 混合。",
+   "moodGuess": {
+    "x": 1.8,
+    "y": 1.4,
+    "z": -1.2,
+    "why": "兩段長篇具體音樂與 drone 混合，沙啞卡頓質地，空洞巨響"
+   },
+   "evidence": [
+    "https://daily.bandcamp.com/best-ambient/the-best-ambient-on-bandcamp-january-2023",
+    "https://room40.bandcamp.com/album/audiodrome"
+   ],
+   "bcdaily": "\"rattly Audiodrome\"; \"blurring the lines between musique concrète and drone\"",
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "musicbrainz release-group artist:\"Phauss\"",
+     "musicbrainz release-group releasegroup:\"Audiodrome\""
+    ],
+    "checkedAt": "2026-11-05",
+    "conclusion": "MB release-group 兩向查詢皆無對應 Album 條目，走人工身分。"
+   },
+   "manualEvidenceUrls": [
+    "https://room40.bandcamp.com/album/audiodrome",
+    "https://daily.bandcamp.com/best-ambient/the-best-ambient-on-bandcamp-january-2023"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "首發年份：Room40 數位 2022-12，內容為 80 年代前衛作品重發，年份需主線確認；rattly 質地可能略躁。"
+  },
+  {
+   "artist": "William Basinski",
+   "album": "The Clocktower at the Beach (1979)",
+   "year": 2023,
+   "label": "LINE",
+   "country": "us",
+   "faction": "tape-loop",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp Daily 把它列為 Basinski 洞穴般的代表作之一：1979 年舊錄音以磁帶迴圈重發（LINE）；Basinski 池中多張頹靡。",
+   "moodGuess": {
+    "x": 1.0,
+    "y": 1.0,
+    "z": -0.7,
+    "why": "磁帶迴圈，柔軟模糊、巨大空洞，無鼓"
+   },
+   "evidence": [
+    "https://daily.bandcamp.com/best-ambient/the-best-ambient-on-bandcamp-march-2023",
+    "https://lineimprint.bandcamp.com/album/the-clocktower-at-the-beach-1"
+   ],
+   "bcdaily": "\"many cavernous masterpieces\"; \"built around soft tape loops\"",
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "musicbrainz release-group artist:\"William Basinski\"",
+     "musicbrainz release-group releasegroup:\"The Clocktower at the Beach (1979)\""
+    ],
+    "checkedAt": "2026-11-05",
+    "conclusion": "MB release-group 兩向查詢皆無對應 Album 條目，走人工身分。"
+   },
+   "manualEvidenceUrls": [
+    "https://lineimprint.bandcamp.com/album/the-clocktower-at-the-beach-1",
+    "https://daily.bandcamp.com/best-ambient/the-best-ambient-on-bandcamp-march-2023"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "色溫估 -0.7 偏邊緣（Basinski 常偏中性）。"
+  },
+  {
+   "artist": "Jake Muir",
+   "album": "Pareidolia",
+   "year": 2026,
+   "label": "enmossed",
+   "country": "us",
+   "faction": "dark-ambient",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp Daily 寫它把極端失真片段縫合並注入 doom，比前作 Campana Sonans 更陰暗。",
+   "moodGuess": {
+    "x": 1.9,
+    "y": 1.6,
+    "z": -1.2,
+    "why": "極端失真片段縫成，滲入 doom，厚而陰"
+   },
+   "evidence": [
+    "https://daily.bandcamp.com/best-ambient/the-best-ambient-music-on-bandcamp-june-2026",
+    "https://enmossed.bandcamp.com/album/pareidolia"
+   ],
+   "bcdaily": "\"snippets of extreme distortion\"; \"injected with doom\"; \"bleaker assertion\"",
+   "mbRgMbid": "5c9a743e-5471-4b22-a1fe-e5506e202feb",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "失真密度高，x 可能逼近 2.7；若判躁請汰。"
+  },
+  {
+   "artist": "Kristen Pilon & Demdike Stare",
+   "album": "To Cut & Shoot",
+   "year": 2025,
+   "label": "DDS",
+   "country": "gb",
+   "faction": "dark-ambient",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp Daily 稱 Demdike Stare 是「金屬顆粒的供應者」，此盤「clammy and sinister」，把歌劇電影片段扭成歪斜形狀。",
+   "moodGuess": {
+    "x": 1.9,
+    "y": 1.3,
+    "z": -1.4,
+    "why": "歌劇電影片段被扭曲，金屬質地、潮濕陰森，無明確拍"
+   },
+   "evidence": [
+    "https://daily.bandcamp.com/best-ambient/the-best-ambient-music-on-bandcamp-september-2025",
+    "https://dds-label.bandcamp.com/album/to-cut-shoot"
+   ],
+   "bcdaily": "\"purveyors of metallic grit\"; \"clammy and sinister\"",
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "musicbrainz release-group artist:\"Kristen Pilon & Demdike Stare\"",
+     "musicbrainz release-group releasegroup:\"To Cut & Shoot\""
+    ],
+    "checkedAt": "2026-11-05",
+    "conclusion": "MB release-group 兩向查詢皆無對應 Album 條目，走人工身分。"
+   },
+   "manualEvidenceUrls": [
+    "https://dds-label.bandcamp.com/album/to-cut-shoot",
+    "https://daily.bandcamp.com/best-ambient/the-best-ambient-music-on-bandcamp-september-2025"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "配樂性質，可能有律動段；13 軌 49 分鐘；歌劇人聲可能讓張力偏躁。"
+  },
+  {
+   "artist": "Sally Decker",
+   "album": "In the Tender Dream",
+   "year": 2021,
+   "label": "Sally Decker",
+   "country": "us",
+   "faction": "drone",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp Daily 稱她擅長從深淵榨出美感，這張用貼麥失真人聲與回授嗡鳴造景（Multa Nox 本名首作）。",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 1.4,
+    "z": -0.9,
+    "why": "失真人聲錄音與嗡鳴回授，厚而粗，偏暗"
+   },
+   "evidence": [
+    "https://daily.bandcamp.com/best-ambient/the-best-ambient-music-on-bandcamp-august-2021",
+    "https://sallydecker.bandcamp.com/album/in-the-tender-dream"
+   ],
+   "bcdaily": "\"a knack for wringing beauty out of the abyss\"; distorted vocal recordings, buzzing feedback",
+   "mbRgMbid": "9d7d424a-79b5-4c7b-bdfc-a8cfe9622172",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "回授有節奏感段（標題曲）；x 估 2.2、z -0.9 皆偏邊緣。"
+  },
+  {
+   "artist": "KMRU",
+   "album": "Natur",
+   "year": 2024,
+   "label": "KMRU",
+   "country": "ke",
+   "faction": "field-collage",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp Daily 年度榜寫它：顆粒嗡鳴與零碎田野錄音，從尖銳喀噠沉入無底虛空。",
+   "moodGuess": {
+    "x": 1.5,
+    "y": 1.1,
+    "z": -0.8,
+    "why": "顆粒嗡鳴夾田野錄音，從尖銳喀噠沉到無底虛空"
+   },
+   "evidence": [
+    "https://daily.bandcamp.com/best-of-2024/the-best-ambient-music-of-2024",
+    "https://kmru.bandcamp.com/album/natur"
+   ],
+   "bcdaily": "\"A grainy hum... shifts from a sharp rattle to a fathomless void\"",
+   "mbRgMbid": "c083b8c6-9cb7-44f0-9a56-99064c6e346b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "出處是年度榜（best-of-2024）；整體可能偏輕、偏空，y 邊緣。"
+  },
+  {
+   "artist": "andarctica",
+   "album": "buried with the bells",
+   "year": 2019,
+   "label": "Rusted Tone Recordings",
+   "country": "nl",
+   "faction": "drone",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp Daily 寫四軌皆以拉長鐘聲與 pad 打底，開場是荒涼的 drone 與不和諧鐘聲，極簡而浩大。",
+   "moodGuess": {
+    "x": 1.4,
+    "y": 0.9,
+    "z": -0.8,
+    "why": "拉長鐘聲疊在 pad 底上，荒涼 drone，無鼓"
+   },
+   "evidence": [
+    "https://daily.bandcamp.com/best-ambient/the-best-new-ambient-on-bandcamp-september-2019",
+    "https://rustedtonerecordings.bandcamp.com/album/buried-with-the-bells"
+   ],
+   "bcdaily": "\"a desolate, droning landscape interspersed with discordant bells\"",
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "musicbrainz release-group artist:\"andarctica\"",
+     "musicbrainz release-group releasegroup:\"buried with the bells\""
+    ],
+    "checkedAt": "2026-11-05",
+    "conclusion": "MB release-group 兩向查詢皆無對應 Album 條目，走人工身分。"
+   },
+   "manualEvidenceUrls": [
+    "https://rustedtonerecordings.bandcamp.com/album/buried-with-the-bells",
+    "https://daily.bandcamp.com/best-ambient/the-best-new-ambient-on-bandcamp-september-2019"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "y 邊緣（0.9）、色溫邊緣；極簡可能判輕。"
+  },
+  {
+   "artist": "jason calhoun",
+   "album": "small circle",
+   "year": 2023,
+   "label": "Dear Life Records",
+   "country": "us",
+   "faction": "drone",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp Daily 稱它像壞掉的收音機：鋸齒白噪音對撞厚 pad，成一團扭曲、霧霾般的不安。",
+   "moodGuess": {
+    "x": 1.6,
+    "y": 1.5,
+    "z": -0.9,
+    "why": "鋸齒白噪音對抗厚 pad，像壞掉的收音機，煙霧般"
+   },
+   "evidence": [
+    "https://daily.bandcamp.com/best-ambient/the-best-ambient-music-on-bandcamp-october-2023",
+    "https://napsounds.bandcamp.com/album/small-circle"
+   ],
+   "bcdaily": "\"serrated white noise\"; \"twisted, smoggy haze\"; \"disorienting\"",
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "musicbrainz release-group artist:\"jason calhoun\"",
+     "musicbrainz release-group releasegroup:\"small circle\""
+    ],
+    "checkedAt": "2026-11-05",
+    "conclusion": "MB release-group 兩向查詢皆無對應 Album 條目，走人工身分。"
+   },
+   "manualEvidenceUrls": [
+    "https://napsounds.bandcamp.com/album/small-circle",
+    "https://daily.bandcamp.com/best-ambient/the-best-ambient-music-on-bandcamp-october-2023"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "pad 帶 lush，色溫估 -0.9 偏邊緣。"
+  },
+  {
+   "artist": "Thaniel Ion Lee",
+   "album": "Five Ghosts",
+   "year": 2018,
+   "label": "humanhood recordings",
+   "country": "us",
+   "faction": "field-collage",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp Daily 稱這張把常見的環境田野錄音變得更陰森：風、雷、drone 與顫弦層疊（五軌 54 分鐘）。",
+   "moodGuess": {
+    "x": 1.5,
+    "y": 1.2,
+    "z": -1.2,
+    "why": "雷雨、輪胎濺水的田野錄音底下 drone 與搖晃弦，陰森"
+   },
+   "evidence": [
+    "https://daily.bandcamp.com/best-ambient/best-new-ambient-may-2018",
+    "https://humanhoodrecordings.bandcamp.com/album/five-ghosts"
+   ],
+   "bcdaily": "\"eerie, unsettling\"; field recordings \"sound much spookier\"",
+   "mbRgMbid": "010bb78a-6877-44d7-889b-d197a6f17fa3",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 首發 2021（重發），Bandcamp 原發 2018-04；年份取 2018。"
+  },
+  {
+   "artist": "purity olympics",
+   "album": "strange earnest noise music",
+   "year": 2025,
+   "label": "purity olympics",
+   "country": "us",
+   "faction": "drone",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp Daily 稱它「barren」，低音量像筆電風扇，放大後是「frigid and penetrating」的強度。",
+   "moodGuess": {
+    "x": 1.5,
+    "y": 0.9,
+    "z": -1.4,
+    "why": "低音量時像筆電風扇嗡鳴，放大後冰冷穿透，無鼓"
+   },
+   "evidence": [
+    "https://daily.bandcamp.com/best-ambient/the-best-ambient-music-on-bandcamp-august-2025",
+    "https://purityolympics.bandcamp.com/album/strange-earnest-noise-music"
+   ],
+   "bcdaily": "\"barren\"; \"intensity that is frigid and penetrating\"",
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "musicbrainz release-group artist:\"purity olympics\"",
+     "musicbrainz release-group releasegroup:\"strange earnest noise music\""
+    ],
+    "checkedAt": "2026-11-05",
+    "conclusion": "MB release-group 兩向查詢皆無對應 Album 條目，走人工身分。"
+   },
+   "manualEvidenceUrls": [
+    "https://purityolympics.bandcamp.com/album/strange-earnest-noise-music",
+    "https://daily.bandcamp.com/best-ambient/the-best-ambient-music-on-bandcamp-august-2025"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "偏乾偏薄，y 可能不到 0.8（判輕）；穿透高頻也可能讓神經緊繃（判躁）。風險高。"
+  },
+  {
+   "artist": "Amulets",
+   "album": "Not Around But Through",
+   "year": 2025,
+   "label": "Amulets",
+   "country": "us",
+   "faction": "drone",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp Daily 稱 Amulets 介於 ambient 與搖滾間，「brooding intensity boiled into a challenging mist」，鋼鐵般的陰鬱。",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 1.3,
+    "z": -1.1,
+    "why": "ambient 與搖滾灰區，陰鬱鋼鐵般的霧，慢"
+   },
+   "evidence": [
+    "https://daily.bandcamp.com/best-ambient/the-best-ambient-music-on-bandcamp-march-2025",
+    "https://amulets.bandcamp.com/album/not-around-but-through"
+   ],
+   "bcdaily": "\"brooding intensity boiled into a challenging mist\"; \"steely gloom\"",
+   "mbRgMbid": "4495cb99-279b-4bcb-ad13-0df8d49459aa",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "有人聲客演（Midwife）與可能的鼓；x 估 2.2 屬邊緣。"
+  },
+  {
+   "artist": "Civilistjävel!",
+   "album": "Brödföda",
+   "year": 2024,
+   "label": "Civilistjävel!",
+   "country": "se",
+   "faction": "dark-modern-classical",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp Daily 稱它「ghostly and imposing」，人聲與弦從回聲泥沼和無調金屬敲擊中爬出，絕不朝光明走。",
+   "moodGuess": {
+    "x": 2.0,
+    "y": 1.2,
+    "z": -1.3,
+    "why": "回聲泥沼裡爬出人聲與弦，無調敲擊，陰鬱壓迫"
+   },
+   "evidence": [
+    "https://daily.bandcamp.com/best-ambient/the-best-ambient-music-on-bandcamp-august-2024-2",
+    "https://civilistjavel.bandcamp.com/album/br-df-da"
+   ],
+   "bcdaily": "\"voices and strings crawl from a bog of echoes and atonal clanks\"; \"ghostly and imposing\"",
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "musicbrainz release-group artist:\"Civilistjävel!\"",
+     "musicbrainz release-group releasegroup:\"Brödföda\""
+    ],
+    "checkedAt": "2026-11-05",
+    "conclusion": "MB release-group 兩向查詢皆無對應 Album 條目，走人工身分。"
+   },
+   "manualEvidenceUrls": [
+    "https://civilistjavel.bandcamp.com/album/br-df-da",
+    "https://daily.bandcamp.com/best-ambient/the-best-ambient-music-on-bandcamp-august-2024-2"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "tags 含 dub techno／techno，可能有律動段；74 分鐘 12 軌。"
+  },
+  {
+   "artist": "Li Yilei",
+   "album": "Nonage",
+   "year": 2024,
+   "label": "Li Yilei",
+   "country": "gb",
+   "faction": "field-collage",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp Daily 稱這張「more eerie than warm」，以墨色 pad、自製樂器與田野錄音談青春到成年。",
+   "moodGuess": {
+    "x": 2.0,
+    "y": 1.0,
+    "z": -0.7,
+    "why": "墨色 pad 與自製樂器、田野錄音，詭異多於溫暖"
+   },
+   "evidence": [
+    "https://daily.bandcamp.com/best-ambient/the-best-ambient-music-on-bandcamp-march-2024",
+    "https://liyilei.bandcamp.com/album/nonage"
+   ],
+   "bcdaily": "\"more eerie than warm\"; \"inky pads\"",
+   "mbRgMbid": "ef434d2a-4c4f-4943-beb1-bd42ac042f1e",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "色溫與 y 皆估邊緣（-0.7／1.0）；12 軌 46 分鐘。"
+  }
+ ],
+ "notes": [
+  "Bandcamp Daily Best Ambient 月度專欄 99 期＋2017–2025 年度榜共約 1,400 張專文提及專輯，掃描後冷暗重者極少：專欄絕大多數寫暖、明亮、有旋律。僅提 20 張，未湊 27。",
+  "已在池中者（略）：Irisarri《Solastalgia》、Basinski《On Time Out of Time》、Hecker《Konoyo》、Black to Comm《Seven Horses》、Dead Melodies《Primal Destination》（md29）。",
+  "落平靜／恍惚或判躁而未提：Serus（旋律清楚）、Flood Dream（張力）、AI-15 Bamboo Music（agitated）、Saapato（psychedelic 非暗）、Adamwiltzie、Eluvium Virga II、Forest Swords《Bolted》（有節奏）、Lost Sounds（30 分鐘、有拍）。Beggars of Sahara 專輯頁抓不到。",
+  "全部封面來源＝Bandcamp 專輯頁（evidence 第二項）；MB 釘住的 mbid 都是 primary-type Album、無 secondary。"
+ ]
+}
