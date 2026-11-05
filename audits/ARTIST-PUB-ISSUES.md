@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1703 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1711 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -1381,6 +1381,14 @@
 | ar-d-136 | Ärsenik | Quelques gouttes suffisent… | 入圍 1999 年 Victoires de la musique 饒舌／groove 專輯類 | 法文維基 Ärsenik 條目未提及此入圍；文化部稱專輯 1999 年雙金，法文維基稱 2001 年 SNEP 雙金。建議上線前自法文維基 Victoires 1999 條目核對 | https://fr.wikipedia.org/wiki/Ärsenik |
 | ar-d-136 | Soulja Slim | Give It 2 'Em Raw | 1998 年 5 月 19 日 … 交出的首作 | 維基同頁記他 1994 年已由 Parkway Pumpin'／Hype Enough 發行個人首作《Soulja 'Fa' Lyfe》；《Give It 2 'Em Raw》只是 No Limit 的首作。上線簡介『首作』宜加『在 No Limit 的』。維基導言自己也稱它是 debut studio album，來源之間不一致，可不改。 | https://en.wikipedia.org/wiki/Soulja_Slim |
 | ar-d-136 | Lil Tracy | Anarchy | 也被看作 Lil Tracy 正式出道的專輯 | 他 2016 年起已與 Lil Peep 合出《Castles》，2017 年發過《Tracy's Manga》《XOXO》《Life of a Popstar》等個人作品，2018 年〈Like a Farmer〉已打開知名度；維基只稱 Anarchy 是 2019 年的個人專輯之一，並未稱出道作。『正式出道』建議改成『他的首張個人錄音室專輯』或刪除。 | https://en.wikipedia.org/wiki/Lil_Tracy |
+| ar-d-137 | Alessandro Cortini | Sonno | 成品 2014 年 7 月 14 日裝進 Hospital Productions 的雙黑膠 | Resident Advisor 與 Juno 的 2014 年報導寫預定 6 月 23 日發行，零售頁（Soundohm、iMusic）寫 7 月 29 日；7 月 14 日本層找不到來源，建議複核 | https://ja.ra.co/news.aspx?id=25102 |
+| ar-d-137 | The Mount Fuji Doomjazz Corporation | Succubus | 2009 年 1 月 15 日在鹿特丹演出、同年 6 月在 Ad Noiseam 上架 | Denovali 官方頁把《Succubus》列在其 Mount Fuji 目錄，未見 Ad Noiseam 發行紀錄，廠牌待複核 | https://www.denovali.com/mountfuji/ |
+| ar-d-137 | Early Day Miners | Placer Found | 到了 2020 年 Secretly Canadian 重新推出時，評論才把它和中西部獨立搖滾在 21 世紀的新方向連在一起；『被稱為中西部獨立搖滾轉向的催化劑』 | 查閱 PopMatters 2020 評論全文，只談『當年被忽略、值得重新評價』，未見把它和中西部獨立搖滾新方向或『催化劑』連結；該說法在本層查到的來源中找不到，疑為過度詮釋，建議改寫或確認出處 | https://www.popmatters.com/early-day-miners-placer-found-2645573832.html |
+| ar-d-138 | Lycia | A Day in the Stark Corner | Peter Steele 說它『美到令人心碎』 | 維基與 Vice 都記 Steele 的評語是 Lycia『我這輩子聽過最令人沮喪的東西』；『美到令人心碎』找不到可驗證出處，且上線簡介對這句與專輯的關係交代不清。 | https://www.vice.com/en/article/lycia-interview-2015/ |
+| ar-d-138 | Chelsea Wolfe | Pain Is Beauty | Lars Stalfors 製作並錄音 | 維基 Pain Is Beauty 條目記製作為 Wolfe 與 Ben Chisholm，工程與混音為 Wolfe、Chisholm 與 Chris Common；未列 Lars Stalfors（Stalfors 或為《Apokalypsis》／《Abyss》相關，須另核）。 | https://en.wikipedia.org/wiki/Pain_Is_Beauty |
+| ar-d-138 | Nearly God | Nearly God | 1996 年由 Island 旗下的 Durban Poison 出版 | uDiscover 稱 Durban Poison 是 Tricky 自己的廠牌（Island 發行），維基與 MusicBrainz 則寫 Island 旗下分支；『Island 旗下』並非錯誤但來源說法不一，建議改『Durban Poison 廠牌（經 Island）』 | https://www.udiscovermusic.com/stories/tricky-pre-millennium-tension-feature/ |
+| ar-d-138 | Rod Modell | Incense & Black Light | 出身底特律的 Rod Modell | 維基與 inn8 都寫他來自密西根 Port Huron，在底特律念藝術學校並活動；『出身底特律』建議改『來自 Port Huron、在底特律發跡』（維基 infobox 的 born Detroit 與 'from Port Huron' 並存，故為措辭疑慮） | https://inn8.net/feature-in-focus-deepchord-rod-modell/ |
+| ar-d-138 | Lee Gamble | Diversions 1994–1996 | 他出身學院電腦音樂 | Quietus 訪談中他說自己沒有正式音樂訓練、不是學院出身，並批評伯明罕學院電聲圈；『出身學院』與本人說法相反，建議改為『自學的電腦音樂與前衛路線』 | https://thequietus.com/?p=10868 |
 | ar-d-141 | 沢田駿吾とオールスターズ | Fool On The Hill | 組團在 1952 年 | Victor 商品頁說 1952 年組自己的爵士 combo，但英文維基寫 1954 年成立 Double Beats、日文維基的 Double Beats Five 照片也是 1954 年；兩說並存。建議簡介註明『廠牌商品頁稱』或略去年份。 | https://en.wikipedia.org/wiki/Shungo_Sawada |
 | ar-d-141 | 秋吉敏子トリオ & Flute Quartet | Tuttie Flutie | 抵達波士頓第一晚台上正是 Bud Powell，舊識招她上去頂了一段 | NEA 傳記只寫她到波士頓後聽過 Bud Powell Trio、後來與他們同台，沒有『第一晚』與『舊識招上台』；jazz.com 完全沒提。細節可能來自日文維基或自傳，但本層找不到可開頁的來源，建議對一次來源或降級成『到波士頓後曾與 Bud Powell 同台』。 | https://www.arts.gov/honors/jazz/toshiko-akiyoshi |
 | ar-d-142 | The Wood Brothers | Ways Not to Lose | 2001 年重新合到一起，2001 年 5 月 24 日北卡羅來納州那場演出 | 英文維基持此說，但 Folk Alley 寫兄弟在 2004 年的同台演出後決定一起做音樂；年份有來源衝突，待店主視需要查證或改寫成不含年份。 | https://folkalley.com/basic-folk-podcast-oliver-wood/ |

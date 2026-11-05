@@ -2536,3 +2536,9 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 2026 年事實主線核實：Calbo（Ärsenik）1 月 4 日過世（AFP 轉載、法國文化部、Pure People），死因未公開。
 - 題材照寫：Rohff 持械入獄與 Ünkut 店施暴判刑；Diam's 躁鬱症、企圖輕生、改信伊斯蘭與頭巾風波、反對國民陣線；La Rumeur 的 Hamé 遭 Sarkozy 控告誹謗警察、八年後無罪；Damso 歌詞被批性別歧視、足協取消國家隊歌曲；Soulja Slim 多次被捕與遭槍殺；Turk 的聯邦與州判刑；$uicideboy$ 的輕生之約與藥物、憂鬱題材。
 - 主線審稿 8 處：넉살、The Quiett、$uicideboy$ 的「最…之一」改「極」；Ärsenik、Diam's 壓回 250 字；Diam's「自殺未遂」改「企圖輕生」、$uicideboy$「一起自殺」改「一起輕生」（用字規則）；廿四味刪「香港第一個」頒獎禮（單源「第一」）。另：特注誤把持械入獄寫在 Kery James 名下，寫作層照 digest 寫進 Rohff，正確。
+
+## ar-d-137（2026-11-05，md1／md2 新卡藝人：dark ambient、drone、dark jazz、slowcore）
+
+- 39 位全寫：17 full、22 thin。
+- 題材照寫：Giles Corey 源自 Dan Barrett 企圖輕生後的經歷；Midwife 為意外離世的室友 Colin Ward 而作的專輯；Planning for Burial 酗酒用藥的時期；The Caretaker 失智症構想在 TikTok 爆紅與「娛樂化失智症」的批評；Philip Jeck 2022 年病逝。
+- 主線審稿 4 處：The Caretaker 壓回 250 字（2 處）；Giles Corey「企圖自殺」改「企圖輕生」；Thomas Köner 刪 Prix Ars Electronica（在世者留一處：ZKM 的評價）。
