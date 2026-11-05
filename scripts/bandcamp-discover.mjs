@@ -7,7 +7,7 @@
 //   --slice  top＝暢銷（預設，最接近「有名」）；new＝新發行；rec＝編輯推薦
 //   --pages  每頁 60 張，預設 3 頁
 //   --min-tracks／--min-minutes  粗篩正規專輯（預設 6 首、28 分鐘）；EP、單曲、edit 會被擋掉
-// 輸出：每張 {artist, album, url, released, tracks, minutes, location}；只收 item_type a（專輯）。
+// 輸出：每張 {artist, album, url, released, tracks, minutes, location, image}（image＝封面縮圖網址）；只收 item_type a（專輯）。
 // 注意：這只是提名池。上架前照 ALBUM_ONBOARDING 查身分、故事性（Bandcamp Daily 專文、樂評）與去重（scripts/pool-keys.mjs、data/pool-removed.json）。
 import fs from 'node:fs';
 
@@ -32,7 +32,7 @@ for (let p = 0; p < pages && cursor; p++) {
     if (x.item_type !== 'a') continue;
     const minutes = Math.round((x.duration || 0) / 60);
     if ((x.track_count || 0) < minTracks || minutes < minMin) continue;
-    rows.push({ artist: x.album_artist || x.band_name, album: x.title, url: (x.item_url || '').replace(/\?from=.*$/, ''), released: (x.release_date || '').slice(0, 10), tracks: x.track_count, minutes, location: x.band_location || '' });
+    rows.push({ artist: x.album_artist || x.band_name, album: x.title, url: (x.item_url || '').replace(/\?from=.*$/, ''), released: (x.release_date || '').slice(0, 10), tracks: x.track_count, minutes, location: x.band_location || '', image: x.primary_image?.image_id ? `https://f4.bcbits.com/img/a${x.primary_image.image_id}_9.jpg` : '' });
   }
   cursor = j.cursor;
   await sleep(1500);
