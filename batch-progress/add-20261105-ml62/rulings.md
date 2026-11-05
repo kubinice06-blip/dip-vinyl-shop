@@ -41,3 +41,19 @@
 - 23021｜Lilys《In the Presence of Nothing》卡單 label 寫 Sympathy for the Record Industry，推翻：MB／Wikipedia／Trouser Press 皆為 Slumberland＋spinART（1992-09 US）。請主線改卡單 label。
 - 23022｜The American Analog Set《Know by Heart》卡單 label 寫 Emperor Norton，推翻：實為 Tiger Style Records（TS-018，2001-09-04）；Emperor Jones 是前廠牌。請主線改卡單。
 - 23023｜moodGuess 存疑（聲音）：Barry White 三張（《Just Another Way…》《The Man》《I Love to Sing…》）評論均指有 disco／放克／中速可跳舞曲，非整張慢歌；A.A.S.《Know by Heart》拿掉 Farfisa、短歌、乾淨「更活潑」→ 判輕風險；Mojave 3《Out of Tune》評論稱比首張「更輕快有精神」。Mojave 3《Excuses》與 Lilys 聲音大致符合。聲音證據多為單一部落客（Soulfinger），已在 notes 標明。
+
+## 研究 d 組
+- 23031：Teddy Pendergrass《Heaven Only Knows》卡單 label「Asylum」有誤，MB／Discogs 皆為 Philadelphia International（Asylum 是離開 PI 後的新約，首張為 1984《Love Language》）→ 研究稿用 PI，建議卡單 label 改。
+- 23032：Lee Fields & The Expressions《Special Night》卡單 label「Truth & Soul」有誤，實為 Big Crown Records（BC021）；年份採 MB／Discogs 2016-11-04（維基藝人頁寫 2017，不採）→ 建議卡單 label 改 Big Crown。
+- 23033：moodGuess 存疑（交主線汰換或試聽）：Manhattans《Forever by Your Side》（Discogs credits 多首 Linn 鼓機＋Moog，判輕風險中高）；Billy Paul《First Class》（兩支單曲皆有 12 吋 disco 版，開場即 disco，x／y 風險明顯）；Barry White《Sheet Music》（disco boogie、拉丁放克 groove、2 分半卡利普索，x 風險）；Lee Fields《Special Night》（James Brown 式放克〈Make the World〉，x 風險中）；Teddy《Heaven Only Knows》（無聲音專論，拍速不明）。
+- 23034：Teddy 兩張車禍時序：錄音大多在 1982-03 車禍前，發行在車禍後（傳記頁：兩張都含車禍前素材），屬與作品直接綁定事件，facts 已標時序。Billy Paul《Let 'em In》WVON 剪輯事件同屬後世流傳，已標。
+- 23035：Heaven Only Knows、First Class 聲音面查無專論（AllMusic 403、無樂評），標 thin，鼓機／合成器／拍速不寫。其餘五張 full。無選輯、無重複卡、無未發行卡，皆原創專輯。
+
+## 主線研究汰換（不佔條號；2026-11-05）
+研究層交件後照各組「moodGuess 存疑」汰 17 → 剩 18；被汰卡移到 `dropped-cards.json`／`dropped-research.json`。
+- 質地判輕（airy／bright／clean）：Lightning Bug《A Color of the Sky》、Widowspeak《All Yours》《Plum》、The American Analog Set《Know by Heart》。
+- 能量（鼓機推進、disco／放克中速、propulsive）：Still Corners《Strange Pleasures》、Barry White《Just Another Way to Say I Love You》《The Man》《I Love to Sing the Songs I Sing》《Barry White's Sheet Music》、The Manhattans《Forever by Your Side》（Linn 鼓機）、Billy Paul《First Class》、Lee Fields《Special Night》、Curtis Harding《If Words Were Flowers》、The-Dream《Love vs. Money》（客串與 punchy 鼓）。
+- 色溫判冷（eerie／dark／heavy）：Death and Vanilla、Trespassers William《Different Stars》、Adrian Younge《Something About April》。
+- 照研究推翻改卡單：Candy Claws 廠牌 Twosyllable Records；Lilys 廠牌 Slumberland；Teddy Pendergrass《Heaven Only Knows》廠牌 Philadelphia International；Lee Fields《Sentimental Fool》廠牌 Daptone；Dean & Britta《13 Most Beautiful...》年份 2010、廠牌 Double Feature（2009 是 Plexifilm DVD）。
+- 留下但聲音待評分驗證：Mojave 3《Out of Tune》（較首張輕快）、Candy Claws（壓縮重、x 中等）、Night Moves（tom 鼓＋班鳩琴迷幻鄉村）、Lee Fields 兩張（速度混合）、Billy Paul《Let 'em In》、Teddy《Heaven Only Knows》（thin）。
+- 張數不足：叫原策展代理以「池中同人已落恍惚＋整張慢歌」硬條件補提名（ml62a 6–10、ml62b 8–12），補位另派研究。

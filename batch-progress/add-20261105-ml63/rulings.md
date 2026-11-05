@@ -49,3 +49,10 @@
 - 23084　moodGuess 存疑（Toninho Horta）：「Orquestra Fantasma」疑為署名，無來源說有弦樂墊；班底是 Airto、Raul de Souza、Robertinho Silva，Discogs 標 Soul-Jazz，偏明亮融合，判輕風險高。發行年 1979／1980 衝突，沿用 MB 1980。
 - 23085　moodGuess 部分存疑（Taiguara）：管弦與鋼琴為主屬實，但第 6、8、11 軌為搖滾樂隊編制（有鼓），其餘無鼓；整體可留。
 - 23086　14 Bis 的 Progarchives 評語與 Toninho 的 Unicamp 校報條目僅見搜尋摘要，未能直接開頁，已在 notes 標明待複核。
+
+## 主線研究汰換（不佔條號；2026-11-05）
+研究層交件後汰 14 → 剩 11；被汰卡移到 `dropped-cards.json`／`dropped-research.json`。
+- 巴西 MPB（有鼓推進的短歌、frevo／baião／samba-rock，或乾淨原聲有空氣）：Beto Guedes、14 Bis、Toninho Horta & Orquestra Fantasma、Luiz Melodia、Tim Bernardes、Rodrigo Amarante、Zé Ramalho、Ednardo。Clube da Esquina 線與池中同人一致判輕，確認死池。
+- 其他：Boogarins《Lá Vem a Morte》（合成器＋電子節拍、陰暗）、Gigi《Gold & Wax》（電子骨架、跳動 snare、x 恐 ≥3）、Tindersticks《Waiting for the Moon》（nocturnal／gloomy 判冷）、Daniel Lanois《For the Beauty of Wynona》（本人說比 Acadie 更重擊、失真鼓）、Jacco Gardner《Hypnophobia》（真鼓短歌 upbeat）、小林麻美（樂隊 synth-pop、判輕）。
+- 留下但聲音待評分驗證：Cowboy Junkies《Open》（有失真段，同人池中三張落恍惚）、Kurt Vile（製作較乾淨，同人落恍惚）、Drugdealer（有輕快曲，同人落恍惚）、Pale Saints、Flaming Lips《King's Mouth》、Invisible（兩首長曲佔七成、無失真）。
+- 張數不足：叫 ml63b 策展代理以「池中同人已落恍惚」硬條件補 12–15，補位另派研究。
