@@ -102,3 +102,8 @@
 - 逐張審 22 張，抽核關鍵事實回研究稿：Still Corners 兩人地鐵相識、Hughes 在亞利桑那與德州長大、Sub Pop 2011 首作、《Slow Air》舊 BBC 麥克風；Night Moves 2011 Bandcamp 版→Domino 重發、Thom Monahan 重錄鼓；Candy Claws 柯林斯堡、三紀分曲、Jenn Morea 作詞；Beachwood Sparks 團名出自伯班克兩條街、《Once We Were Trees》J Mascis 客串、翻唱 Sade；Dean & Britta 2010 Double Feature 雙碟；Yo La Tengo《Fade》McEntire 製作、美國榜第 26；Mojave 3《Excuses》Mark Van Hoen 製作、《Out of Tune》B.J. Cole；Lilys 盤名對準 Velvet Crush；Teddy 1982-03-18 車禍、《This One's for You》1982-07 發行、《Joy》R&B 榜第 2；Billy Paul 1934 費城、改寫歌詞點名民權人物與雙胞胎姊妹 Pauline；Phyllis Hyman 第五張、Connors 中途退出；Lee Fields 1950 年生於 Wilson；《Sentimental Fool》Daptone、Gabriel Roth；Peabo Bryson 1951 南卡、《I Am Love》Dorothy Ashby；The-Dream 合寫〈Umbrella〉、《Love King》首週美國榜第 4。
 - 媒體名 0、「據」0、榜單只留官方榜。writer-2 在 Billy Paul 第二句依 facts 補「靈魂樂手」，照留。
 - 逐張審過，未改字。
+
+## 主線上線（條號 23071–23073）
+- **23071**：上線 22 張：card_catalog 22／22、KV 22 鍵回讀逐字一致（stamp 20261105m62）、試聽 21 ready／1 unavailable（Peabo Bryson《Turn the Hands of Time》Apple 查無）、seed +22、prepare／published gate 0 error。封面 CAA 22（縮圖表目視相符）。三軸 §0.8.1 錨點人工評分（經典度 3 佔 14/22、4 佔 7）。頂點 0。藝人介紹 ar-d-279（8 位）同 PR 上線。
+- **23072**：情緒評分 `score-ml62/`：**落恍惚 19/22＝86%**。出格：Mojave 3《Excuses for Travellers》判輕落放鬆、Still Corners《Creatures of an Hour》z −0.2 落頹靡、Billy Paul《Let 'em In》x 3.0 落雀躍。
+- **23073**：**場景潛力**：慢板 soul 二線產量靠池中同人已落恍惚的藝人（Teddy、Peabo、Lee Fields、Phyllis Hyman），70s 中期 disco 期與 80s 數位製作一查就判躁或判輕；dream pop 新世代多 airy／bright／鼓機推進，二線只剩 Still Corners、Beachwood Sparks、Mojave 3 一路。兩場景都見底，不再派。

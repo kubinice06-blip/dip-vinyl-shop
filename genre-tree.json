@@ -1,11 +1,11 @@
 {
- "產出日期": "2026-11-04",
+ "產出日期": "2026-11-05",
  "minNode": 20,
  "genres": [
   {
    "id": "rock",
    "zh": "搖滾",
-   "count": 5477,
+   "count": 5505,
    "children": [
     {
      "id": "jrock-asia",
@@ -102,7 +102,7 @@
     {
      "id": "punk-wave",
      "zh": "龐克新浪潮",
-     "count": 1045,
+     "count": 1048,
      "children": [
       {
        "id": "punk",
@@ -117,7 +117,7 @@
       {
        "id": "new-wave",
        "zh": "新浪潮",
-       "count": 244
+       "count": 246
       },
       {
        "id": "hardcore",
@@ -132,7 +132,7 @@
       {
        "id": "goth",
        "zh": "哥德暗潮",
-       "count": 94
+       "count": 96
       },
       {
        "id": "pop-punk",
@@ -154,22 +154,22 @@
     {
      "id": "indie-alt",
      "zh": "獨立另類",
-     "count": 1035,
+     "count": 1040,
      "children": [
       {
        "id": "indie-rock",
        "zh": "獨立搖滾",
-       "count": 516
+       "count": 520
       },
       {
        "id": "alt-rock",
        "zh": "另類搖滾與油漬",
-       "count": 483
+       "count": 484
       },
       {
        "id": "indie-pop",
        "zh": "獨立流行",
-       "count": 289
+       "count": 293
       },
       {
        "id": "art-exp",
@@ -179,7 +179,7 @@
       {
        "id": "folk-side",
        "zh": "民謠與創作歌手",
-       "count": 153
+       "count": 155
       },
       {
        "id": "emo",
@@ -187,13 +187,13 @@
        "count": 98
       },
       {
-       "id": "britpop",
-       "zh": "Britpop",
-       "count": 85
-      },
-      {
        "id": "neo-psych",
        "zh": "新迷幻",
+       "count": 86
+      },
+      {
+       "id": "britpop",
+       "zh": "Britpop",
        "count": 85
       },
       {
@@ -248,17 +248,17 @@
     {
      "id": "psych-prog",
      "zh": "迷幻前衛",
-     "count": 752,
+     "count": 760,
      "children": [
       {
        "id": "prog",
        "zh": "前衛搖滾",
-       "count": 378
+       "count": 380
       },
       {
        "id": "psych",
        "zh": "迷幻搖滾",
-       "count": 325
+       "count": 329
       },
       {
        "id": "art-rock",
@@ -285,7 +285,7 @@
     {
      "id": "classic",
      "zh": "老搖滾",
-     "count": 616,
+     "count": 621,
      "children": [
       {
        "id": "50s",
@@ -310,34 +310,34 @@
       {
        "id": "later",
        "zh": "90 年代之後",
-       "count": 75
+       "count": 76
       }
      ]
     },
     {
      "id": "dream-post",
      "zh": "音牆後搖",
-     "count": 394,
+     "count": 401,
      "children": [
       {
        "id": "post-rock",
        "zh": "後搖滾",
-       "count": 189
+       "count": 190
       },
       {
        "id": "shoegaze",
        "zh": "瞪鞋",
-       "count": 170
+       "count": 176
       },
       {
        "id": "dream-pop",
        "zh": "夢幻流行",
-       "count": 146
+       "count": 155
       },
       {
        "id": "slowcore",
        "zh": "慢核",
-       "count": 60
+       "count": 63
       }
      ]
     },
@@ -1004,32 +1004,32 @@
   {
    "id": "soul",
    "zh": "靈魂放克",
-   "count": 1837,
+   "count": 1847,
    "children": [
     {
      "id": "classic-rnb",
      "zh": "經典 R&B / Doo-wop",
-     "count": 982,
+     "count": 993,
      "children": [
       {
        "id": "funk",
        "zh": "偏 Funk",
-       "count": 457
+       "count": 462
       },
       {
        "id": "neo-contemporary",
        "zh": "Neo-Soul / 當代",
-       "count": 162
+       "count": 166
+      },
+      {
+       "id": "smooth",
+       "zh": "Smooth / Philly / Quiet Storm",
+       "count": 133
       },
       {
        "id": "motown",
        "zh": "Motown / Northern",
        "count": 130
-      },
-      {
-       "id": "smooth",
-       "zh": "Smooth / Philly / Quiet Storm",
-       "count": 127
       },
       {
        "id": "southern",
@@ -1056,12 +1056,12 @@
     {
      "id": "funk",
      "zh": "Funk / P-Funk",
-     "count": 935,
+     "count": 939,
      "children": [
       {
        "id": "soul-side",
        "zh": "偏靈魂樂",
-       "count": 269
+       "count": 271
       },
       {
        "id": "disco-funk",
@@ -1086,14 +1086,14 @@
       {
        "id": "afro-funk",
        "zh": "Afro-Funk / Deep Funk",
-       "count": 28
+       "count": 29
       }
      ]
     },
     {
      "id": "disco",
      "zh": "Disco / Boogie",
-     "count": 274,
+     "count": 275,
      "children": []
     },
     {
@@ -1111,7 +1111,7 @@
     {
      "id": "philly",
      "zh": "Philly / Quiet Storm",
-     "count": 178,
+     "count": 183,
      "children": []
     },
     {
@@ -1898,7 +1898,7 @@
   {
    "id": "world",
    "zh": "世界",
-   "count": 1180,
+   "count": 1181,
    "children": [
     {
      "id": "reggae",
@@ -1935,7 +1935,7 @@
     {
      "id": "latin",
      "zh": "拉丁 / 古巴",
-     "count": 199,
+     "count": 200,
      "children": [
       {
        "id": "salsa",
@@ -2055,7 +2055,7 @@
     {
      "id": "brazil",
      "zh": "巴西 / Bossa",
-     "count": 23,
+     "count": 24,
      "children": []
     }
    ]

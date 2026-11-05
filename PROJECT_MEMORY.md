@@ -1,5 +1,14 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-05｜dip-vinyl-shop｜情緒薄格恍惚非電子線 ml62／ml63：39 張上線（落恍惚 28）＋藝人介紹 16 位
+
+- **店主指示**：11-04「頹靡跟恍惚還是太少」→ 選「放寬到電子以外」，本工作階段不收嘻哈、雷鬼、dub、電子（並行的 ml64／ml65 做二線電子）。條號 ml62 23001–23080、ml63 23081–23160（跳過 22841–23000 留給 ml64／ml65）。
+- **ml62**（`add-20261105-ml62`；暖 dream pop／shoegaze 新世代＋迷幻／電影感慢板 soul）：策展兩輪 54 → 主線汰 16 → 研究汰 23（airy／bright、鼓機推進、disco／放克中速、陰冷）→ **上線 22、落恍惚 19（86%）**。出格：Mojave 3《Excuses》判輕、Still Corners《Creatures of an Hour》判冷、Billy Paul《Let 'em In》x 3.0。
+- **ml63**（`add-20261105-ml63`；巴西厚編曲＋city pop 慢板＋軟迷幻＋非洲慢盤）：策展兩輪 51 → 跨批讓 ml62 4、主線汰 11 → 研究汰 19 → **上線 17、落恍惚 9（53%）**。巴西 MPB 八張研究一查全是有鼓短歌或乾淨原聲；出格 Cowboy Junkies 後期五張（判輕 3、判冷 2）、Taiguara、Invisible 判輕、Spain 判冷。**巴西 MPB、city pop、衣索比亞爵士、Cowboy Junkies 後期是死池。**
+- **寫入（已即時生效）**：card_catalog 39、KV 39 鍵（逐字回讀一致，stamp 20261105m62／m63）、試聽 37 ready／2 unavailable、seed +39；prepare／published gate 皆 0 error；主線審稿 39 張未改字。三軸 §0.8.1 錨點人工評分。子曲風樹、抽卡封面、card-moods 重建（八格：恍惚 1,629→1,657）。
+- **藝人介紹**：ar-d-279（ml62，8 位）、ar-d-280（ml63，8 位）照 dip-artist-intro 跑完上線；審稿改 11 處（刪「據說／據傳」與單源評價）。補洞層回報搜尋結果夾帶提示注入（要求寫食譜），已忽略。
+- **主要檔案**：`batch-progress/add-20261105-{ml62,ml63}/`、`batch-progress/mood-cells-20261022/{curation-ml62a,ml62b,ml63a,ml63b,master-*,cut-artist-intros-ml62.mjs}`、`SCENES.md`、`desc-tools/batches/{cards,research,hooks,input,output}/add-20261105-ml6*`、`batch-progress/mood-axes/score-{ml62,ml63}/`、`batch-progress/artist-intro/roster-ml6[23]-*.json`、`data/artist-intros/`、`seed_cards.json`、`data/mood/`、`genre-tree.json`、`card-subgenres.json`、`draw-covers/`。
+- **驗證**：`verify-album-onboarding --published` 兩批 0 error；`verify-wave-kv` 39／39 一致；`build-card-moods` 錨點 104/104 同格；`qa-artist out` 兩批 0 處。
 ### 2026-11-04｜dip-vinyl-shop｜情緒薄格恍惚電子線 ml60／ml61：恍惚電子盤 34 張上線（落恍惚 26）＋藝人介紹 19 位
 
 - **店主指示**：「卡池分配頹靡跟恍惚還是太少了，多一點電子類的，嘻哈跟雷鬼太多了。」本線只收 genres 首位 electronic 的恍惚盤（靜＋重＋暖）。
