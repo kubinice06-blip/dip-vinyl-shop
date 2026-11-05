@@ -1,0 +1,1186 @@
+[
+ {
+  "key": "my morning jacket",
+  "name": "My Morning Jacket",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "My Morning Jacket 在肯塔基州路易斯維爾成軍，核心是主唱兼吉他手 Jim James（本名 James Edward Olliges Jr.，生於路易斯維爾）。",
+      "src": "https://en.wikipedia.org/wiki/My_Morning_Jacket",
+      "src2": "https://consequence.net/2013/02/cover-story-jim-james/3/",
+      "from": "bank"
+     },
+     {
+      "f": "Jim James 與表親 Johnny Quaid 在 Quaid 祖父母的車庫裡開始這個樂團，原因是兩人沒有別處可以練團；祖父母是早期最忠實的支持者，會到場看演出。",
+      "src": "https://consequence.net/2013/02/cover-story-jim-james/3/",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "貝斯手 Tom Blankenship 與鼓手 Patrick Hallahan 是 James 在路易斯維爾求學時期的朋友，後來陸續加入樂團；英文維基稱 Hallahan 是 James 的童年摯友。",
+      "src": "https://consequence.net/2013/02/cover-story-jim-james/3/",
+      "src2": "https://en.wikipedia.org/wiki/My_Morning_Jacket",
+      "from": "new"
+     },
+     {
+      "f": "James 說母親對音樂很開放、鼓勵他實驗，他把和母親一起看的《The Muppet Show》當成自己第一次體會音樂深處的地方。",
+      "src": "https://consequence.net/2013/02/cover-story-jim-james/3/",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "聲音混合 indie rock、迷幻搖滾與南方搖滾、jam band、alt-country 的成分。",
+      "src": "https://en.wikipedia.org/wiki/My_Morning_Jacket",
+      "src2": "https://en.wikipedia.org/wiki/It_Still_Moves",
+      "from": "bank"
+     },
+     {
+      "f": "James 的人聲壓在洞穴般的厚重殘響裡，是樂團早期專輯的招牌；樂團流傳他為《At Dawn》（2001）在一座空穀倉裡錄人聲，借用自然回音。",
+      "src": "https://en.wikipedia.org/wiki/My_Morning_Jacket",
+      "src2": "https://stereogum.com/2143104/my-morning-jacket-at-dawn/reviews/the-anniversary",
+      "from": "new"
+     },
+     {
+      "f": "2004 年 Relix 的專文聽出他的歌聲孤寂幽暗，快歌帶著重殘響與狂亂的吉他，近似 Neil Young 與 Crazy Horse，現場的份量足以和重金屬場子相比。",
+      "src": "https://jambands.com/?p=123920",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "2005 年的《Z》刻意脫離 James 一貫的重殘響人聲，嘗試 dub、reggae 與迷幻搖滾。",
+      "src": "https://en.wikipedia.org/wiki/My_Morning_Jacket",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "My Morning Jacket 以現場演出累積聲勢，Bonnaroo 音樂節是他們成名路上的重要舞台。",
+      "src": "https://en.wikipedia.org/wiki/My_Morning_Jacket",
+      "src2": "https://consequence.net/2023/06/my-morning-jacket-bonnaroo-2004-jim-james-what-podcast/",
+      "from": "bank"
+     },
+     {
+      "f": "2008 年 6 月他們在 Bonnaroo 的 Which Stage 演出近 4 小時、超過 35 首歌，遠超原定的三小時時段；SPIN 當時的現場報導稱這場演出印證了他們是美國最強的現場樂團之一。",
+      "src": "https://www.spinmagazine.com/2008/06/bonnaroo-reviewed-my-morning-jacket/",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "《Z》（2005）是樂團的評論突破作，Rolling Stone 的 David Fricke 在評論裡寫道：美國離擁有自己的 Radiohead 又近了一步，而且那不是 Wilco。",
+      "src": "https://en.wikipedia.org/wiki/My_Morning_Jacket",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [],
+  "conflicts": [],
+  "pubIssues": [],
+  "searches": 7,
+  "failedFetches": 0,
+  "status": "full",
+  "notes": "thin→full 升級批。poolAlbums 五張（Z、It Still Moves、My Morning Jacket、Evil Urges、The Waterfall）皆為路易斯維爾這團，無同名混卡；事實庫 published 為空。沿用原補洞稿 ar-a-011-g4 的三條事實（origin 第 1、sound 第 1、legacy 第 1，標 from=bank，src／src2 照抄）；原 notes 的避免項不收（團名由來、成員異動年份、葛萊美入圍類別、穀倉錄音細節除外見下）。\n本次補查 7 次：WebSearch（影響與殘響）、Stereogum《At Dawn》20 週年文、WebSearch（誰點名受 MMJ 影響，無結果）、Relix 2004 專文（jambands.com 轉載）、Consequence 2013 Jim James 封面故事第 3 頁、WebSearch（Bonnaroo 2008）、SPIN 2008 Bonnaroo 現場報導。\n原本為何 thin：legacy 只有一條、sound 只有曲風標籤。本次補到：origin 的車庫起點與學校友人（Consequence 2013 單源＋維基）、sound 的殘響招牌與《Z》的轉向（Stereogum＋維基；Relix 單源）、legacy 的 2008 Bonnaroo 與 Fricke 對《Z》的評語。\n⚠ 寫作層注意：(1) 穀倉錄音：維基直接寫 James 在 grain silo 錄人聲；Stereogum 把它歸為樂團「oft-mythologized」的起源傳說，故 f 寫成『樂團流傳…』，寫作層請用『據傳』語氣，不要寫成確定事實。(2) 「近 4 小時、35 首」出自 SPIN 現場報導（單源，Rolling Stone 同樣報導約四小時但頁面收費未開），寫作層若引用請寫『近四小時』。(3) Fricke 那句是單一樂評人的具名評語，標 single，寫作層用『Rolling Stone 的 David Fricke 曾寫』的口氣，勿寫成共識。(4) Stereogum 稱 MMJ『one of the great rock bands of our time』屬單一作者的形容詞，不收。\n仍缺：後輩點名受 MMJ 影響的具名說法（兩次搜尋皆無）、名人堂或國家級榮譽。legacy 以『現場名聲』為主軸，寫作層不要寫『影響無數後輩』。\n單源未收（沿用原稿）：團名來自撿到印有 MMJ 的外套、1998 年成軍（維基與 wikidata 同源家族，不獨立）、《It Still Moves》與成員異動年份、葛萊美入圍類別。\nthinIssues：現行 thin 正文無事實錯誤。"
+ },
+ {
+  "key": "ólafur arnalds",
+  "name": "Ólafur Arnalds",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Ólafur Arnalds 1986 年生於冰島的 Mosfellsbær。",
+      "src": "https://en.wikipedia.org/wiki/%C3%93lafur_Arnalds",
+      "src2": "https://www.erasedtapes.com/artists/olafur-arnalds",
+      "from": "bank"
+     },
+     {
+      "f": "他少年時是硬核與金屬樂團的鼓手，樂團包括 Fighting Shit。",
+      "src": "https://en.wikipedia.org/wiki/%C3%93lafur_Arnalds",
+      "src2": "https://www.soundonsound.com/people/olafur-arnalds",
+      "from": "bank"
+     },
+     {
+      "f": "他的祖母從小讓他聽 Chopin；他少年時更熱中龐克與打鼓，後來才愛上古典音樂。",
+      "src": "https://en.wikipedia.org/wiki/%C3%93lafur_Arnalds",
+      "src2": "https://www.alternativeclassical.co.uk/interviews/olafur-arnalds",
+      "from": "new"
+     },
+     {
+      "f": "2004 年他在冰島巡演時擔任德國金屬樂團 Heaven Shall Burn 的暖場鼓手，把自己在家做的 demo 遞給樂團；幾個月後樂團請他為專輯《Antigone》寫鋼琴與弦樂的開場曲和兩段結尾，這是他寫的第一批古典風格作品，之後有廠牌來電問他願不願意錄整張這類作品。",
+      "src": "https://en.wikipedia.org/wiki/%C3%93lafur_Arnalds",
+      "src2": "https://en.wikipedia.org/wiki/Antigone_(Heaven_Shall_Burn_album)",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "他 2007 年加入獨立廠牌 Erased Tapes，首張專輯《Eulogy for Evolution》同年由該廠牌發行。",
+      "src": "https://www.erasedtapes.com/artists/olafur-arnalds",
+      "src2": "https://en.wikipedia.org/wiki/Eulogy_for_Evolution",
+      "from": "bank"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他把弦樂與鋼琴同電子的循環（loops）與節拍混在一起，聲音落在氛圍電子與氛圍流行之間，維基說他的作品涵蓋電影配樂、古典、實驗、電子與氛圍音樂。",
+      "src": "https://en.wikipedia.org/wiki/%C3%93lafur_Arnalds",
+      "src2": "https://www.erasedtapes.com/artists/olafur-arnalds",
+      "from": "bank"
+     },
+     {
+      "f": "他不認為自己屬於古典傳統，說自己用古典樂器當媒介，音樂和電子先驅的共通處比和 Mozart 更多；他也點名冰島的 Jóhann Jóhannsson、Anna Þorvaldsdóttir、Daníel Bjarnason 與 Hildur Guðnadóttir，認為古典音樂在冰島來得晚，作曲家因此比較敢打破慣例。",
+      "src": "https://www.alternativeclassical.co.uk/interviews/olafur-arnalds",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "2013 年的《For Now I Am Winter》在鋼琴與弦樂之外加入劈啪作響的電子節拍；他替影視寫配樂時，目標是讓音樂脫離畫面也能獨立成立。",
+      "src": "https://www.clashmusic.com/?p=252180",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "2018 年的《re:member》用他與 Halldór Eldjárn 花約兩年開發的 Stratus 系統：兩台由中央鋼琴觸發、半生成式的自動演奏鋼琴；標題曲從獨奏鋼琴一路疊上弦樂、Stratus 與電子鼓點。",
+      "src": "https://acloserlisten.com/2018/08/13/olafur-arnalds-remember/",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他為 ITV 電視劇《Broadchurch》寫的配樂，獲 2014 年英國影藝學院電視工藝獎（BAFTA TV Craft）原創音樂獎（得獎）。",
+      "src": "https://www.erasedtapes.com/artists/olafur-arnalds",
+      "src2": "https://en.wikipedia.org/wiki/2014_British_Academy_Television_Craft_Awards",
+      "from": "bank"
+     },
+     {
+      "f": "他 2022 年首度入圍葛萊美獎兩項：〈Loom〉（feat. Bonobo）入圍最佳舞曲／電子錄音，〈The Bottom Line〉（與 Josin）入圍最佳編曲（樂器與人聲）；兩項都是入圍，未得獎。",
+      "src": "https://en.wikipedia.org/wiki/%C3%93lafur_Arnalds",
+      "src2": "https://www.mercurykx.com/two-grammy-nominations-for-olafur-arnalds/",
+      "from": "bank"
+     },
+     {
+      "f": "2020 年他以 Apple TV+ 影集《Defending Jacob》的片頭主題曲入圍第 72 屆黃金時段艾美獎的傑出原創片頭主題音樂（入圍，未得獎）。",
+      "src": "https://en.wikipedia.org/wiki/%C3%93lafur_Arnalds",
+      "src2": "https://grapevine.is/?p=10029539",
+      "from": "new"
+     },
+     {
+      "f": "他與德國鍵盤手 Nils Frahm 長期往來：2012 年合出 EP《Stare》，2017 年《Eulogy for Evolution》的重發版由他修訂混音、Nils Frahm 重新母帶。",
+      "src": "https://www.clashmusic.com/?p=252180",
+      "src2": "https://www.irishtimes.com/culture/music/%C3%B3lafur-arnalds-eulogy-for-evolution-2017-icelandic-composer-goes-back-in-time-1.3193260",
+      "from": "new"
+     },
+     {
+      "f": "愛爾蘭時報 2017 年的樂評把《Eulogy for Evolution》放在 Jóhann Jóhannsson 與 Max Richter 一路的新古典作品之間，並說它把 Arvo Pärt 接上 Sigur Rós；另有媒體把他的音樂稱為 new classical、indie classical 或 post-classical。",
+      "src": "https://www.irishtimes.com/culture/music/%C3%B3lafur-arnalds-eulogy-for-evolution-2017-icelandic-composer-goes-back-in-time-1.3193260",
+      "src2": "https://www.alternativeclassical.co.uk/interviews/olafur-arnalds",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [
+   {
+    "f": "2007 年首張專輯《Eulogy for Evolution》由 Erased Tapes 發行。",
+    "src": "https://en.wikipedia.org/wiki/Eulogy_for_Evolution",
+    "src2": "https://www.erasedtapes.com/artists/olafur-arnalds",
+    "from": "bank"
+   },
+   {
+    "f": "2014 年以《Broadchurch》配樂獲英國影藝學院電視工藝獎原創音樂獎。",
+    "src": "https://www.erasedtapes.com/artists/olafur-arnalds",
+    "src2": "https://en.wikipedia.org/wiki/2014_British_Academy_Television_Craft_Awards",
+    "from": "bank"
+   },
+   {
+    "f": "2022 年兩項葛萊美獎入圍（未得獎）。",
+    "src": "https://en.wikipedia.org/wiki/%C3%93lafur_Arnalds",
+    "src2": "https://www.mercurykx.com/two-grammy-nominations-for-olafur-arnalds/",
+    "from": "bank"
+   }
+  ],
+  "conflicts": [
+   "沿用原補洞稿 ar-a-020-g3 的衝突裁定：《Eulogy for Evolution》發行日兩源不一致，只寫 2007 年；早期樂團名單只寫三源共同的 Fighting Shit；Emmy 入圍不寫成『獲得』。",
+   "Heaven Shall Burn 一事：維基 Arnalds 條目引他自己的 Facebook 貼文，說樂團請他寫的是『intro and outros』；Antigone 專輯條目把他列在一首開場與兩首結尾（共三首）的作曲、鋼琴與製作。兩處一致，採『開場一首、結尾兩段』；搜尋摘要另有『fuller piano-and-string pieces』的說法，來源未開頁，不採。"
+  ],
+  "pubIssues": [],
+  "searches": 9,
+  "failedFetches": 1,
+  "status": "full",
+  "notes": "thin→full 升級批。poolAlbums 五張以上皆為冰島作曲家 Ólafur Arnalds；與冰島 Eyþór Arnalds 是不同人，未混入。沿用原補洞稿 ar-a-020-g3 的 origin 3 條、sound 1 條、legacy 2 條與三條里程碑（標 from=bank，src／src2 照抄）。\n本次補查 9 次（超過上限 1 次）：WebSearch（Heaven Shall Burn／Erased Tapes）、愛爾蘭時報《Eulogy for Evolution》2017 樂評、WebSearch（新古典先驅）、Alternative Classical 2019 訪談、Clash 2015 訪談、維基《Antigone》（Heaven Shall Burn 專輯）、WebSearch（Stratus 與艾美提名）、Grapevine 2020 艾美入圍報導、A Closer Listen《re:member》樂評。多出的那次是 Irish Times 樂評：內容只是單張專輯評論，但帶來『放在 Jóhannsson／Richter 一路』與 Frahm 母帶兩條。失敗 1 次：CMU 檔案頁 403。\n原本為何 thin：legacy 只有獎項與入圍、origin 沒有轉折故事、sound 只有曲風標籤。本次補到：origin 的祖母與 Chopin、Heaven Shall Burn 轉折；sound 的『不屬於古典傳統』自述、電子節拍與 Stratus 手法；legacy 的艾美入圍、與 Frahm 的往來、評論把他放進新古典的位置。\n⚠ 寫作層注意：(1) Heaven Shall Burn 轉折兩源皆為維基家族（Arnalds 條目與 Antigone 專輯條目，非獨立），且 Arnalds 條目的說法本身引自他自己的 Facebook；AllMusic 摘要有同一故事但頁面 403，故標 single，寫作層用『他自己的說法是』語氣。(2) 『小時候祖母讓他聽 Chopin』兩源（維基、Alternative Classical）一致。(3) legacy 沒有『後輩點名』或名人堂類共識，只有獎項／入圍與評論定位；『愛爾蘭時報』那條是單一樂評，寫作層勿寫成共識，也不要寫『新古典代表人物』這類無出處的地位。\n避免項依規不收：Spotify 月聽眾數（Alternative Classical 寫 300 萬以上，在世者串流數字）、Kiasmos 成立年（單源）、《Island Songs》（單源）、Chopin Project（Clash 與 Alternative Classical 皆提到但屬作品列舉，不收）。\nthinIssues：現行 thin 正文無事實錯誤。",
+  "overCapOk": true
+ },
+ {
+  "key": "parquet courts",
+  "name": "Parquet Courts",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Andrew Savage 與 Austin Brown 在德州讀大學時認識，之後搬到紐約布魯克林組成 Parquet Courts。",
+      "src": "https://en.wikipedia.org/wiki/Parquet_Courts",
+      "src2": "https://stereogum.com/2196509/parquet-courts-light-up-gold-turns-10/reviews/the-anniversary",
+      "from": "bank"
+     },
+     {
+      "f": "樂團在布魯克林成軍：Savage 搬到紐約後不久，把 Brown、貝斯手 Sean Yeaton 與弟弟 Max Savage（鼓）湊成團。",
+      "src": "https://www.stereogum.com/2110026/parquet-courts-10th-anniversary/interviews/qa/",
+      "src2": "https://en.wikipedia.org/wiki/Parquet_Courts",
+      "from": "bank"
+     },
+     {
+      "f": "Savage 與 Brown 是在德州 Denton 的北德州大學認識的，起點是校內一個叫 Knights of the Round Turntable 的社團，成員帶唱片來一起聽；Savage 在那之前做過 Teenage Cool Kids 與 Fergus & Geronimo。",
+      "src": "https://en.wikipedia.org/wiki/Parquet_Courts",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "Savage 說樂團的根在達拉斯的硬核場景，他在那裡學會自己訂場、自己發行唱片，所以即使樂團走紅，他仍覺得自己是局外人。",
+      "src": "https://spinmagazine.com/featured/parquet-courts-2014-band-of-the-year-interview/",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "聲音落在 post-punk、art punk 與 garage punk 之間，以纏繞的吉他 riff 與機智的短句見稱。",
+      "src": "https://stereogum.com/2196509/parquet-courts-light-up-gold-turns-10/reviews/the-anniversary",
+      "src2": "https://en.wikipedia.org/wiki/Parquet_Courts",
+      "from": "bank"
+     },
+     {
+      "f": "Time Out 2016 年談《Human Performance》，說它把焦慮的 post-punk 配上情感更脆弱的民謠歌手氣質；Austin Brown 在訪談裡說影響包括 Talking Heads、The Velvet Underground、Sonic Youth 與 Bob Dylan，並說同樣的音樂在紐約「更說得通」。",
+      "src": "https://timeout.com/newyork/music/parquet-courts-new-album-adds-to-the-nyc-rock-roll-canon",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "SPIN 稱他們「吵、聰明、不妥協」；2014 年他們在半年內連發《Sunbathing Animal》與《Content Nausea》兩張專輯，後者主要由 Savage 與 Brown 兩人在小臥室自己寫、自己錄。",
+      "src": "https://spinmagazine.com/featured/parquet-courts-2014-band-of-the-year-interview/",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "《Light Up Gold》（2012）出版後獲評論界廣泛好評，Stereogum 十週年回顧把它視為樂團的突破作。",
+      "src": "https://en.wikipedia.org/wiki/Parquet_Courts",
+      "src2": "https://stereogum.com/2196509/parquet-courts-light-up-gold-turns-10/reviews/the-anniversary",
+      "from": "new"
+     },
+     {
+      "f": "SPIN 在 2014 年 12 月把年度樂團（Band of the Year）封面報導給了 Parquet Courts，理由是他們同年在半年內連發兩張專輯，SPIN 稱他們是最有生命力的搖滾樂團之一。",
+      "src": "https://spinmagazine.com/featured/parquet-courts-2014-band-of-the-year-interview/",
+      "src2": "https://wnyc.org/story/gigstock-day-one-parquet-courts/",
+      "from": "new"
+     },
+     {
+      "f": "Time Out New York 2016 年的報導標題把《Human Performance》說成替紐約搖滾典故再添一筆，並說樂團五年間從自錄卡帶走到「獨立搖滾半明星」。",
+      "src": "https://timeout.com/newyork/music/parquet-courts-new-album-adds-to-the-nyc-rock-roll-canon",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [],
+  "conflicts": [
+   "沿用原補洞稿 ar-a-011-g4 的衝突：維基寫樂團 2010 至 2022 年活動後『進入休止』，但卡池有 2021 年《Sympathy for Life》，不寫休止年份。Consequence 2015 評論寫『originally from Austin』與維基、Stereogum 的德州大學（Denton）不符，不採。",
+   "原稿 legacy 的 NME 9/10、Pitchfork 8.0、《衛報》5 星等評論分數屬樂評分數，本次不再收；改用 SPIN 年度樂團與 Stereogum 的突破作定位。"
+  ],
+  "pubIssues": [],
+  "searches": 10,
+  "failedFetches": 0,
+  "status": "full",
+  "notes": "thin→full 升級批。poolAlbums 五張（Content Nausea、Sympathy for Life、MILANO、Light Up Gold、Human Performance）皆為布魯克林這團，無同名混卡；事實庫 published 兩張（Light Up Gold、Human Performance）與本次讀到的事實無衝突。沿用原補洞稿 origin 2 條、sound 1 條（標 from=bank）。\n本次補查 10 次（超過上限 2 次）：WebSearch×5（影響／Light Up Gold 定位、Fontaines D.C.、年度榜單、後輩點名、Denton 起源）、Time Out NY 2016、SPIN 2014 年度樂團文、維基 Parquet Courts、WebSearch（SPIN 年度樂團）、WNYC。多出的兩次：第 9 次搜尋與第 10 次 WNYC，只為替『SPIN 年度樂團』湊第二源（獎項屬高風險），這條 legacy 因此成立。\n原本為何 thin：legacy 只有評論分數、sound 只有曲風標籤。本次補到：origin 的 Denton／達拉斯硬核根源；sound 的 Brown 具名影響（Talking Heads、VU、Sonic Youth、Dylan）；legacy 的 SPIN 2014 年度樂團。\n⚠ 寫作層注意：(1) 找不到任何『後輩點名受 Parquet Courts 影響』的來源（搜尋 Fontaines D.C. 與一般後輩皆無）；legacy 只有媒體肯定與年度樂團，不要寫『影響後輩』。搜尋摘要稱 Parquet Courts 與 Protomartyr 影響 Fontaines D.C. 等（AllMusic）未開頁，不收。(2) SPIN 年度樂團：SPIN 文章標題與 WNYC 內文都寫 SPIN 把年度樂團給他們，WNYC 內文未寫年份，年份來自 SPIN 標題與網址（2014 年 12 月 11 日）。(3) Time Out、SPIN 為單一媒體報導，標 single。\n單源未收：2018《Wide Awake!》獲澳洲 Double J 年度專輯、Savage 以《Human Performance》封面設計入圍葛萊美（兩條皆維基單源，獎項屬高風險）；首場演出 2010 年 12 月 17 日；Metacritic 分數；《Sunbathing Animal》英國榜名次（避免）。\nthinIssues：現行 thin 正文無事實錯誤。",
+  "overCapOk": true
+ },
+ {
+  "key": "perfume genius",
+  "name": "Perfume Genius",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Mike Hadreas 1981 年生於愛荷華州 Des Moines，六、七歲時搬到西雅圖郊區，有希臘血統。",
+      "src": "https://en.wikipedia.org/wiki/Perfume_Genius",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "他是學校裡唯一公開的同志學生，高中最後一年輟學；後來搬到紐約 Williamsburg，在東村一家俱樂部當門衛，2005 年回到西雅圖開始錄音。",
+      "src": "https://en.wikipedia.org/wiki/Perfume_Genius",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "他六、七歲開始彈鋼琴，是自己想學；成長過程聽父母愛聽的 Leonard Cohen，要到 2010 年首張專輯《Learning》前後，二十多歲時才開始寫完整的歌，起初沒想過能做很久。",
+      "src": "https://glreview.org/article/mike-hadreas-is-perfume-genius/",
+      "src2": "https://stereogum.com/2083793/perfume-genius-interview-set-my-heart-on-fire-immediately-michael-stipe-the-national/interviews",
+      "from": "new"
+     },
+     {
+      "f": "2008 年他開了 MySpace 頁面，用 Perfume Genius 之名貼歌給朋友聽；藝名取自 2006 年電影《Perfume: The Story of a Murderer》裡的天才調香師。",
+      "src": "https://en.wikipedia.org/wiki/Perfume_Genius",
+      "src2": "https://glreview.org/article/mike-hadreas-is-perfume-genius/",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "早期是鋼琴抒情曲，《Too Bright》起走向更實驗、更帶合成器質感的編排；《No Shape》的製作豐厚，混合有機與人造音色。",
+      "src": "https://stereogum.com/2281233/perfume-genius-too-bright-turns-10/reviews/the-anniversary",
+      "src2": "https://consequence.net/2017/05/album-review-perfume-genius-no-shape/",
+      "from": "bank"
+     },
+     {
+      "f": "《Too Bright》（2014）由 Portishead 的 Adrian Utley 共同製作。",
+      "src": "https://glreview.org/article/mike-hadreas-is-perfume-genius/",
+      "src2": "https://stereogum.com/2281233/perfume-genius-too-bright-turns-10/reviews/the-anniversary",
+      "from": "new"
+     },
+     {
+      "f": "Hadreas 說自己想擺脫「被鎖在鋼琴和弦後面」的狀態，所以開始在失真與噪音上尖叫、即興、寫歌；他也說《Too Bright》裡把同志題材寫得更直接，是出於一種責任感。",
+      "src": "https://glreview.org/article/mike-hadreas-is-perfume-genius/",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "他寫歌先獨自做出粗略 demo，再和樂手在錄音室裡擴寫；他常在好聽的素材底下加一點令人不安的東西，免得歌太甜，並說這樣歌反而更立體。",
+      "src": "https://stereogum.com/2083793/perfume-genius-interview-set-my-heart-on-fire-immediately-michael-stipe-the-national/interviews",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "他點名 Leonard Cohen、Liz Phair、Fiona Apple 與 PJ Harvey 為自己的影響；2020 年的訪談裡又說 R.E.M. 的 Michael Stipe 是他的主要影響，Stipe 的音樂曾為他生活的一段時期配樂。",
+      "src": "https://glreview.org/article/mike-hadreas-is-perfume-genius/",
+      "src2": "https://stereogum.com/2083793/perfume-genius-interview-set-my-heart-on-fire-immediately-michael-stipe-the-national/interviews",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "作品以酷兒身分與身體經驗為題，Consequence 稱他是「a vital queer voice」。",
+      "src": "https://consequence.net/2017/05/album-review-perfume-genius-no-shape/",
+      "src2": "https://stereogum.com/2281233/perfume-genius-too-bright-turns-10/reviews/the-anniversary",
+      "from": "bank"
+     },
+     {
+      "f": "The National 在 2014 年翻唱過他的〈Learning〉；Michael Stipe 2014 年 12 月在紐約 Webster Hall 替 Patti Smith 暖場的臨時獨唱場裡翻唱他的〈Hood〉，Stereogum 稱那是當晚最耐人尋味的一首翻唱。",
+      "src": "https://www.stereogum.com/1726789/michael-stipe-played-a-surprise-solo-set-covered-perfume-genius-last-night/mp3s/",
+      "src2": "https://stereogum.com/2083793/perfume-genius-interview-set-my-heart-on-fire-immediately-michael-stipe-the-national/interviews",
+      "from": "new"
+     },
+     {
+      "f": "以客座身分參與 Yeah Yeah Yeahs〈Spitting Off the Edge of the World〉，入圍第 65 屆葛萊美最佳另類音樂表演（入圍，未得獎）。",
+      "src": "https://www.grammy.com/artists/perfume-genius/",
+      "src2": "https://en.wikipedia.org/wiki/Perfume_Genius",
+      "from": "bank"
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [],
+  "conflicts": [
+   "出生地：英文維基正文與兩份搜尋摘要寫生於愛荷華州 Des Moines、六七歲搬到西雅圖郊區；wikidata 欄位寫 Seattle；另有一份簡介說童年在 Washington 州 Everett。f 採維基正文，只寫郊區不寫城市。",
+   "沿用原補洞稿 ar-a-011-g4：原稿『2008 年起以 Perfume Genius 名義做音樂』一條已併入 origin 第 4 條（補了 MySpace 與藝名由來）；Yeah Yeah Yeahs 該曲的入圍主體是 Yeah Yeah Yeahs，Hadreas 為客座署名，f 已標『客座』。"
+  ],
+  "pubIssues": [],
+  "searches": 6,
+  "failedFetches": 0,
+  "status": "full",
+  "notes": "thin→full 升級批。poolAlbums 五張（Set My Heart on Fire Immediately、Too Bright、No Shape、Ugly Season、Glory）皆為西雅圖這位 Mike Hadreas，無同名混卡。沿用原補洞稿 ar-a-011-g4 的 sound 1 條、legacy 2 條（標 from=bank，src／src2 照抄）。\n本次補查 6 次：WebSearch（影響與 Too Bright）、Gay & Lesbian Review 訪談、WebSearch（Seattle 與 Learning）、Stereogum 2020 訪談（Set My Heart on Fire Immediately）、WebSearch（The National 與 Stipe 翻唱）、Stereogum 2014 年 Stipe 暖場報導。\n原本為何 thin：origin 只有一句『西雅圖出身』、legacy 的酷兒身分只有評論形容。本次補到：origin 的出生地與成長、學琴與開始寫歌、MySpace 與藝名；sound 的製作人、自述手法與具名影響；legacy 的 The National 與 Stipe 翻唱。\n⚠ 寫作層注意：(1) 『因身分被霸凌、遭攻擊』維基有寫，但屬暴力與受害細節，f 只留『唯一公開的同志學生、高中輟學』，寫作層請克制，不寫攻擊經過。(2) Stipe 翻唱兩源皆 Stereogum（不同篇，非獨立）。(3) 與 Alan Wyffels 的長期合作與 2025 年結婚（維基單源）屬感情私事，不收。(4) 2026 年第 68 屆葛萊美《Glory》封面設計入圍屬包裝獎且署名者含他人，不進 legacy。\nthinIssues：現行 thin 正文寫『出身西雅圖』不夠精確——維基寫他生於愛荷華州 Des Moines、六七歲搬到西雅圖郊區，建議改『在西雅圖一帶長大』。『客座參與 Yeah Yeah Yeahs 的一首歌讓他入圍葛萊美最佳另類音樂表演』與兩源一致。"
+ },
+ {
+  "key": "porcupine tree",
+  "name": "Porcupine Tree",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Porcupine Tree 1987 年在英格蘭赫特福德郡的 Hemel Hempstead 由 Steven Wilson 創立，起初是他與兒時朋友 Malcolm Stocks 的惡作劇式計畫：兩人替一支根本不存在的 1970 年代搖滾樂團編了一整套假身世，再由 Wilson 把這個構想做成真正的音樂。",
+      "src": "https://en.wikipedia.org/wiki/Porcupine_Tree",
+      "src2": "https://en.wikipedia.org/wiki/Steven_Wilson",
+      "from": "bank"
+     },
+     {
+      "f": "Porcupine Tree 最初是 Wilson 在臥室裡的錄音室計畫，他年輕時用自製的錄音機做實驗音樂，成品就以這個名字發行；後來才長成完整的樂團。",
+      "src": "https://stevenwilsonhq.com/biography/",
+      "src2": "https://www.loudersound.com/features/every-porcupine-tree-album-ranked-from-worst-to-best",
+      "from": "bank"
+     },
+     {
+      "f": "Wilson 小時候，父親收到的聖誕禮物是 Pink Floyd 的《The Dark Side of the Moon》，母親收到的是 Donna Summer 的《Love to Love You Baby》，兩張他都聽得很熟，後來影響了他的寫歌。",
+      "src": "https://en.wikipedia.org/wiki/Porcupine_Tree",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "他自錄的兩卷卡帶《Tarquin's Seaweed Farm》與《The Nostalgia Factory》由新廠牌 Delerium 透過 Freakbeat 的郵購少量販售，Porcupine Tree 在英國迷幻地下圈成了神祕的新名字；Delerium 隨後邀 Wilson 簽約，1992 年把兩卷卡帶的精選發成雙黑膠《On the Sunday of Life》。",
+      "src": "https://en.wikipedia.org/wiki/Porcupine_Tree",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "早期的 Porcupine Tree 帶有迷幻搖滾、太空搖滾與實驗搖滾的色彩，後來走向與 Pink Floyd 相近的前衛搖滾路線；Wilson 自己的官方簡介也把他們的音樂描述為在氛圍電子與寬廣的 Floyd 式搖滾之間擺盪。",
+      "src": "https://en.wikipedia.org/wiki/Porcupine_Tree",
+      "src2": "https://stevenwilsonhq.com/biography/",
+      "from": "bank"
+     },
+     {
+      "f": "2002 年的《In Absentia》是樂團的突破作，把現代金屬的元素加進原本的聲音裡，當時 Wilson 正與 Opeth 主唱 Mikael Åkerfeldt 建立起交情。",
+      "src": "https://www.loudersound.com/features/every-porcupine-tree-album-ranked-from-worst-to-best",
+      "src2": "https://stevenwilsonhq.com/biography/",
+      "from": "bank"
+     },
+     {
+      "f": "Wilson 2002 年底受訪時說，寫《In Absentia》時最大的影響就是 Meshuggah 與 Opeth，並且在專輯內頁向兩團致謝；他說金屬地下場景讓他看到，當代音樂人是拿金屬當載具在做前衛音樂。",
+      "src": "https://blabbermouth.net/news/porcupine-tree-cite-meshuggah-and-opeth-as-main-inspiration-for-new-cd",
+      "src2": "https://en.wikipedia.org/wiki/Porcupine_Tree",
+      "from": "new"
+     },
+     {
+      "f": "Wilson 說自己在 2000 年代重新發現了 Gojira、Sunn O)))、Neurosis、Meshuggah 等極端金屬樂團，讓他重拾對金屬的信心；他也點名 Can、Neu!、Tangerine Dream、Squarepusher 與 Aphex Twin 等電子與 krautrock 的聲音。",
+      "src": "https://en.wikipedia.org/wiki/Porcupine_Tree",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "2003 年《基督教科學箴言報》形容他們的風格難以歸類：有 Metallica 式的 riff、班卓琴驅動的鄉村舞曲、空靈的質地與 Nick Drake 式的憂鬱，人聲和聲則受 Brian Wilson 啟發；早期作品是 Pink Floyd 一路的吉他加上氛圍質地與舞曲節拍。",
+      "src": "https://www.csmonitor.com/2003/0718/p17s01-almp.html",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "《Classic Rock》與 PopMatters 等媒體曾把 Porcupine Tree 稱為「你沒聽過的最重要樂團」，形容他們口碑受樂迷與同行肯定、卻始終在主流之外。",
+      "src": "https://en.wikipedia.org/wiki/Porcupine_Tree",
+      "src2": "https://www.soundwavemusicmedia.net/stories-1/all-stories/2977267_artist-report-porcupine-tree",
+      "from": "new"
+     },
+     {
+      "f": "2003 年他們簽進大廠 Lava（Atlantic 旗下）；《基督教科學箴言報》寫該廠看中的是他們靠口耳相傳累積約十年的歌迷基礎，Wilson 則說樂團不做商業流行單曲，看重的是整張專輯的聆聽。",
+      "src": "https://www.csmonitor.com/2003/0718/p17s01-almp.html",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "Wilson 與瑞典前衛死亡金屬樂團 Opeth 往來緊密，先後為他們製作了三張連續的專輯（其中 Deliverance 是共同製作），這段合作也反過來影響他自己的寫作。",
+      "src": "https://en.wikipedia.org/wiki/Porcupine_Tree",
+      "src2": "https://blabbermouth.net/news/porcupine-tree-cite-meshuggah-and-opeth-as-main-inspiration-for-new-cd",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "樂團在 2009 年巡迴《The Incident》之後進入停擺，2010 到 2021 年間約 12 年沒有活動。",
+      "src": "https://en.wikipedia.org/wiki/Porcupine_Tree",
+      "src2": "https://en.wikipedia.org/wiki/Steven_Wilson",
+      "from": "bank"
+     },
+     {
+      "f": "2021 年 11 月 1 日宣布重組，2022 年 6 月 24 日發行新專輯《Closure/Continuation》。",
+      "src": "https://en.wikipedia.org/wiki/Porcupine_Tree",
+      "src2": "https://en.wikipedia.org/wiki/Steven_Wilson",
+      "from": "bank"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "2002 年的《In Absentia》把金屬元素帶進樂團聲音，成為他們的突破作。",
+    "src": "https://www.loudersound.com/features/every-porcupine-tree-album-ranked-from-worst-to-best",
+    "src2": "https://stevenwilsonhq.com/biography/",
+    "from": "bank"
+   },
+   {
+    "f": "2022 年 6 月 24 日發行《Closure/Continuation》，是停擺十多年後重組的第一張新專輯。",
+    "src": "https://en.wikipedia.org/wiki/Porcupine_Tree",
+    "src2": "https://en.wikipedia.org/wiki/Steven_Wilson",
+    "from": "bank"
+   }
+  ],
+  "conflicts": [
+   "沿用原補洞稿 ar-a-012-g1：Steven Wilson 維基寫 Porcupine Tree 入圍葛萊美的年份與類別和《Fear of a Blank Planet》條目不一致，facts 不收葛萊美；SWHQ 與 Louder 對 Wilson 開始做實驗音樂時的年齡不一致，facts 不寫年齡。",
+   "『Wilson 為 Opeth 製作三張連續專輯』：維基 Porcupine Tree 條目寫三張；Blabbermouth 只寫他共同製作了 Deliverance；搜尋摘要（Louder／維基 Deliverance 條目，未開頁）寫《Blackwater Park》由他製作、《Deliverance》與《Damnation》共同製作。f 取『三張連續、其中 Deliverance 是共同製作』，不逐張列名。"
+  ],
+  "pubIssues": [],
+  "searches": 7,
+  "failedFetches": 0,
+  "status": "full",
+  "notes": "thin→full 升級批。poolAlbums 五張（In Absentia、Fear of a Blank Planet、Up the Downstair、Signify、Deadwing）皆屬這支英國樂團，無同名混卡；事實庫為空。沿用原補洞稿 ar-a-012-g1 的 origin 2 條、sound 2 條、era 2 條與兩條里程碑（標 from=bank，src／src2 照抄）；原稿 legacy 那條『你沒聽過的最重要樂團』的 src2 是粉絲站 rock-atlas（弱二源），本次換成 Soundwave Music Media 2026 專文，兩者都只是轉述維基同一句，仍屬非獨立，原始的 Classic Rock／PopMatters 出處本次搜尋找不到原文，寫作層請寫『被稱為』，不要寫成共識。\n本次補查 7 次：WebSearch（影響 In Absentia）、Blabbermouth 2002、WebSearch（影響後輩）、Soundwave 專文、CS Monitor 2003、WebSearch（PopMatters 原句，無原文）、WebSearch（Åkerfeldt 與 Opeth 製作）。\n原本為何 thin：legacy 只有一條弱二源、sound 只有曲風與一個轉折。本次補到：origin 的童年唱片與卡帶地下起步；sound 的 Wilson 自述影響與 CS Monitor 的風格描述；legacy 的大廠簽約背景（口碑累積）與 Opeth 合作。\n⚠ 寫作層注意：legacy 仍無『後輩具名點名』、名人堂或國家級榮譽。Soundwave 稱樂團影響了 Opeth 與 The Pineapple Thief（單源、音樂媒體專欄），本次不收；Opeth 與 Wilson 是雙向影響，不要寫成 Porcupine Tree 單方面影響 Opeth。Wilson 2000 年代重拾金屬信心那句（維基單源）是 Wilson 自述，用『他說』口氣。\n單源未收：Metal Hammer 稱他們是史上最偉大的前衛金屬團之一、Neil Peart／Adrian Belew／Mike Portnoy 的推崇、各專輯榜單名次、《Closure/Continuation》英國榜第 2 名（在世者榜單名次，避免）、Classic Rock 年度專輯與葛萊美提名（獎項年份與類別原稿已判不收）、Gavin Harrison 的 Modern Drummer 獎。\nthinIssues：現行 thin 正文無事實錯誤（『停擺約 12 年』『臥室錄音計畫』皆兩源）。"
+ },
+ {
+  "key": "rei harakami",
+  "name": "Rei Harakami",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "レイ・ハラカミ（Rei Harakami）本名原神玲，1970 年 12 月 10 日生於廣島，畢業於京都的藝術短期大學，之後以京都為據點活動。",
+      "src": "https://en.wikipedia.org/wiki/Rei_Harakami",
+      "src2": "https://ja.wikipedia.org/wiki/レイ・ハラカミ",
+      "from": "bank"
+     },
+     {
+      "f": "原神玲 2011 年 7 月 27 日因腦出血過世，享年 40 歲。",
+      "src": "https://en.wikipedia.org/wiki/Rei_Harakami",
+      "src2": "https://ja.wikipedia.org/wiki/レイ・ハラカミ",
+      "from": "bank"
+     },
+     {
+      "f": "1996 年他在 Sublime Records 以替石井健（Ken Ishii）做的混音出道。",
+      "src": "https://ja.wikipedia.org/wiki/レイ・ハラカミ",
+      "src2": "https://en.wikipedia.org/wiki/Rei_Harakami",
+      "from": "bank"
+     },
+     {
+      "f": "1998 年他發表首張專輯《unrest》，當時日本電子音樂正從為舞池而做轉向適合在家聆聽的專輯；他自己受到早期 techno 與 Ken Ishii 的作品影響。",
+      "src": "https://daily.redbullmusicacademy.com/2016/06/rei-harakami-guide",
+      "src2": "https://kyodonewsprwire.jp/release/202104163784",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "聲音帶著透明感與浮遊感，旋律抒情；雖屬 techno 與 electronica，卻有溫度。",
+      "src": "https://ja.wikipedia.org/wiki/レイ・ハラカミ",
+      "src2": "https://www.kyoto-np.co.jp/articles/thekyoto/676520",
+      "from": "bank"
+     },
+     {
+      "f": "他成名之後仍沿用出道前買的便宜舊機材，主力之一是 Roland SC-88Pro。",
+      "src": "https://ja.wikipedia.org/wiki/レイ・ハラカミ",
+      "src2": "https://www.kyoto-np.co.jp/articles/thekyoto/676520",
+      "from": "bank"
+     },
+     {
+      "f": "他的招牌手法是深的延遲與殘響、極端的左右聲像與平滑的音高滑動；節奏從 techno 出發，後來愈來愈自由，後期作品甚至沒有拍子。",
+      "src": "https://daily.redbullmusicacademy.com/2016/06/rei-harakami-guide",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "日文維基寫他讓兩台 SC-88Pro 同步疊奏，大量用立體聲延遲把聲音左右甩開，不做母帶處理，只把 SC-88Pro 的聲音收進多軌錄音機；《red curb》（2001）則是以 SC-88Pro 為唯一音源、幾乎不加效果、用低取樣率做成。",
+      "src": "https://ja.wikipedia.org/wiki/レイ・ハラカミ",
+      "src2": "https://daily.redbullmusicacademy.com/2016/06/rei-harakami-guide",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他與矢野顕子合組 yanokami（2007 年出道）；日文維基寫矢野顕子認可他音樂的特異性，獨斷把他封為「世界遺產」。",
+      "src": "https://ja.wikipedia.org/wiki/レイ・ハラカミ",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "他替 UA、くるり、GREAT3、イルリメ等人做過製作或混音，並為電影《天然コケッコー》做配樂。",
+      "src": "https://ja.wikipedia.org/wiki/レイ・ハラカミ",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "Red Bull Music Academy 2016 年的導覽稱 2005 年的《lust》是公認的代表作，也是他最後一張個人專輯，收了他第一次在個人作品裡開口唱的細野晴臣翻唱；該文把他列為日本電子音樂的大人物之一，並說許多後來的音樂人受他啟發。",
+      "src": "https://daily.redbullmusicacademy.com/2016/06/rei-harakami-guide",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "逝世十年之際（2021 年），京都辦了回顧談話活動，登壇的高谷史郎與山本精一生前都與他有交情；主辦單位介紹他是在海外也受到高度評價的創作者，並預定出版《ユリイカ》特集號與《unrest》雙黑膠重發。",
+      "src": "https://kyodonewsprwire.jp/release/202104163784",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "2007 年他與矢野顕子組成 yanokami 並出道。",
+      "src": "https://ja.wikipedia.org/wiki/レイ・ハラカミ",
+      "src2": "https://en.wikipedia.org/wiki/Rei_Harakami",
+      "from": "bank"
+     }
+    ]
+   }
+  },
+  "milestones": [],
+  "conflicts": [
+   "沿用原補洞稿 ar-a-017-g3：維基寫 Sublime Records『簽約』是 1996 年，日文維基寫 1996 年以 Ken Ishii 混音出道；採兩處一致的 1996 年出道。搜尋摘要另有『1997 年以單曲 rei harakami ep 出道』一說（本次 makebelievemelodies 訃聞也寫 1997 年自名 EP），與日文維基的 1996 年混音出道不同，f 只寫 1996 年出道與 1998 年首張專輯。",
+   "Red Bull Music Academy 導覽標題寫 (1971–2011)，英文維基與日文維基皆為 1970 年 12 月 10 日生；採 1970。"
+  ],
+  "pubIssues": [],
+  "searches": 8,
+  "failedFetches": 2,
+  "status": "full",
+  "notes": "⚠ 日本音樂人，人名照原文：レイ・ハラカミ／原神玲（本卡藝人欄是 Rei Harakami）。『矢野顕子』『石井健』『顕』是日文新字體專名，QA 若誤判成簡體請保留原字。\nthin→full 升級批。poolAlbums 五張（Unrest、lust、opa*q、わすれもの、Red Curb）皆為京都這位電子音樂家，無同名混卡；事實庫為空。沿用原補洞稿 ar-a-017-g3 的 origin 3 條、sound 2 條、era 1 條（標 from=bank，src／src2 照抄）。\n本次補查 8 次：WebSearch（影響與 SC-88Pro）、Red Bull Music Academy 導覽、WebSearch（追悼，找不到音樂人具名追悼）、日文維基（再讀評價與製作手法段）、Make Believe Melodies 訃聞、WebSearch（天然コケッコー，無毎日映畫コンクール獎項紀錄）、WebSearch（後進影響，無具名）、THE KYOTO 沒後 10 年新聞稿。失敗 2 次：allabout.co.jp 兩頁 403。\n原本為何 thin：legacy 沒有兩源共識。本次 legacy 仍沒有『後輩具名點名』或權威票選；補到的是矢野顕子的認可、合作與製作對象、Red Bull 導覽對《lust》與整體地位的評價、沒後 10 年的回顧企劃。性質屬低風險具名說法與單一權威導覽，皆標 single。\n⚠ 寫作層注意：(1) 『世界遺產』是矢野顕子的玩笑式認證，日文維基的逸話，另有 allabout 2010 訪談頁導言（搜尋摘要）也出現同句，但頁面 403 未能開頁，故標 single，請用『據說』口氣。(2) Red Bull 那條的『許多後輩受他啟發』是該文作者的總括，沒有具名後輩；寫作層不要列後輩名字。(3) 『ユリイカ特集號』『雙黑膠重發』在新聞稿裡是預定事項（2021 年 4 月稿），f 已寫『預定』，寫作層勿寫成已發生。(4) 2007 年每日電影大賞音樂獎（英文維基單源）本次搜尋無第二源，仍不收。\n單源未收（沿用原稿）：被爆 2 世與震災後在 KBS 京都廣播的發言（搜尋摘要未開頁）、Number Girl 混音、2011 年生前排定的音樂祭演出。\nthinIssues：現行 thin 正文『本名原神玲，1970 年生於廣島』『1996 年以替石井健做的混音出道』『2011 年因腦出血過世，享年 40 歲』皆兩源一致，無錯誤。"
+ },
+ {
+  "key": "rick ross",
+  "name": "Rick Ross",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Rick Ross 本名 William Leonard Roberts II，1976 年 1 月 28 日生於密西西比州，在佛羅里達州 Miami 北邊、較貧窮的 Carol City 長大。",
+      "src": "https://en.wikipedia.org/wiki/Rick_Ross",
+      "src2": "https://www.biography.com/musicians/rick-ross",
+      "from": "bank"
+     },
+     {
+      "f": "他高中畢業後靠美式足球獎學金進了歷史上的黑人大學 Albany State University。",
+      "src": "https://en.wikipedia.org/wiki/Rick_Ross",
+      "src2": "https://www.biography.com/musicians/rick-ross",
+      "from": "bank"
+     },
+     {
+      "f": "Rick Ross 這個名字取自洛杉磯的毒梟「Freeway」Rick Ross，兩人並無關係。",
+      "src": "https://en.wikipedia.org/wiki/Rick_Ross",
+      "src2": "https://www.biography.com/musicians/rick-ross",
+      "from": "bank"
+     },
+     {
+      "f": "他說自己很認真研究 Jay-Z 與 Birdman 的事業路徑，早期評論就注意到他靠自己經營事業的取向。",
+      "src": "https://en.wikipedia.org/wiki/Rick_Ross",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他的音樂以致富與奢華生活為主軸，嗓音低沉厚重，被歸為以 Miami 為根據地的奢華饒舌。",
+      "src": "https://en.wikipedia.org/wiki/Rick_Ross",
+      "src2": "https://www.udiscovermusic.com/artist/rick-ross/",
+      "from": "bank"
+     },
+     {
+      "f": "他的嗓音渾厚粗啞、低頻很重，歌詞以鮮明的畫面描寫毒品買賣、貪腐警察與槍戰，主軸是從底層爬到頂端的致富故事，音樂落在南方嘻哈與 gangsta rap 之間。",
+      "src": "https://en.wikipedia.org/wiki/Rick_Ross",
+      "src2": "https://www.xxlmag.com/rick-ross-drops-port-of-miami-album/",
+      "from": "new"
+     },
+     {
+      "f": "首張《Port of Miami》（2006）的製作由 Cool & Dre、Akon、DJ Khaled 與 The Runners 等人提供。",
+      "src": "https://www.xxlmag.com/rick-ross-drops-port-of-miami-album/",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "Houston Press 2010 年評《Teflon Don》，說製作比前作更宏大：〈Maybach Music III〉裡 J.U.S.T.I.C.E. League 給了他一整團管弦樂，樂評人比作電影配樂的戲劇時刻；他的 rap 也比以前乾淨、更有強度。",
+      "src": "https://www.houstonpress.com/music/teflon-don-6586596/",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "2008 年他曾任矯正官的過往被揭露，與歌詞裡的街頭形象形成落差，成為公開爭議；他事後仍成為更大的明星。",
+      "src": "https://en.wikipedia.org/wiki/Rick_Ross",
+      "src2": "https://www.udiscovermusic.com/artist/rick-ross/",
+      "from": "bank"
+     },
+     {
+      "f": "50 Cent 公開質疑他的真實性，指一名前矯正官不該用毒販的視角建立形象。",
+      "src": "https://en.wikipedia.org/wiki/Rick_Ross",
+      "src2": "https://www.udiscovermusic.com/artist/rick-ross/",
+      "from": "new"
+     },
+     {
+      "f": "Houston Press 2010 年寫道，被揭穿曾是矯正官並沒有傷到他，他在饒舌樂評圈反而成了被看好的逆勢者。",
+      "src": "https://www.houstonpress.com/music/teflon-don-6586596/",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "他創辦廠牌 Maybach Music Group，簽下 Meek Mill 與 Wale 等人。",
+      "src": "https://en.wikipedia.org/wiki/Rick_Ross",
+      "src2": "https://www.udiscovermusic.com/artist/rick-ross/",
+      "from": "bank"
+     },
+     {
+      "f": "Maybach Music Group 旗下除了 Wale 與 Meek Mill，還有 French Montana 等人，並以《Self Made》系列合輯推出廠牌陣容。",
+      "src": "https://en.wikipedia.org/wiki/Rick_Ross",
+      "src2": "https://www.biography.com/musicians/rick-ross",
+      "from": "new"
+     },
+     {
+      "f": "XXL 2017 年回顧《Port of Miami》時，引用當年的初評說它是年度最佳之一、「掀開了他家鄉城市的面紗」，並稱它讓 Ross 成為 305 區碼的新王。",
+      "src": "https://www.xxlmag.com/rick-ross-drops-port-of-miami-album/",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [],
+  "conflicts": [
+   "沿用原補洞稿 ar-a-019-g3：維基寫 Maybach Music Group 創立於 2008 年，biography.com 與 uDiscover 指向 2009 年前後，兩源不一致，facts 不寫年份；維基寫出生地 Clarksdale，biography.com 寫 Coahoma County，facts 只寫密西西比州。",
+   "MTV 排名：維基寫 MTV 2008 年把他列入『Hottest MCs in the Game』並在 2011 年名列第一；原稿 notes 寫 2011 年；排名屬高風險且屬媒體榜單，本次一律不收。"
+  ],
+  "pubIssues": [],
+  "searches": 7,
+  "failedFetches": 2,
+  "status": "full",
+  "notes": "thin→full 升級批。同名檢查：卡池五張（Port of Miami、Trilla、Deeper Than Rap、Teflon Don、God Forgives, I Don't）全是 Miami 的 Rick Ross，無混卡；藝名取自另一位同名毒梟 Rick Ross（『Freeway』），兩人是不同的人，origin 已寫明。沿用原補洞稿 ar-a-019-g3 的 origin 3 條、sound 1 條、legacy 2 條（標 from=bank，src／src2 照抄）。\n本次補查 7 次：WebSearch（MMG 與 Miami 影響）、WebSearch（Port of Miami 與 Cool & Dre）、維基 Rick Ross（再讀風格與評價段，頁面超過 10 萬字只讀前段）、XXL《Port of Miami》回顧、WebSearch（Teflon Don 製作）、WebSearch（Def Jam 簽約）、Houston Press《Teflon Don》樂評。失敗 2 次：MTV 文章（只回首頁）、Miami New Times（403）。\n原本為何 thin：sound 只有『低沉嗓音、奢華』、legacy 只有爭議與廠牌。本次補到：sound 的嗓音與題材、製作人與管弦樂化的 Maybach Music 系列；legacy 的 50 Cent 質疑、樂評對爭議後的看法、MMG 陣容、《Port of Miami》的在地意義。\n⚠ 寫作層注意：legacy 仍沒有『後輩具名點名』或權威共識；不要寫『影響後輩』。『Miami 重新回到全國聚光燈』（uDiscover）與『305 新王』（XXL）屬單一媒體說法，XXL 那條 f 已寫成引述。Houston Press 兩條為單一樂評，用『Houston Press 當年寫』的口氣。\n依規不收：累計銷量與榜首張數、提名數（含葛萊美九次提名）、〈Hustlin'〉認證、MTV 與 The Source 年度稱號、Def Jam／Jay-Z 競標簽約（維基單源且屬簽約履歷）、前矯正官任期與法律事實、50 Cent 之外的恩怨。\nthinIssues：現行 thin 正文無事實錯誤。"
+ },
+ {
+  "key": "robert wyatt",
+  "name": "Robert Wyatt",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Robert Wyatt 1945 年 1 月 28 日生於英國布里斯托，在肯特一帶長大；母親 Honor Wyatt 是 BBC 電台記者，父親 George Ellidge 是工業心理學家。",
+      "src": "https://en.wikipedia.org/wiki/Robert_Wyatt",
+      "src2": "https://www.newstatesman.com/culture/2014/11/rock-bottom-and-back-rough-edged-career-robert-wyatt",
+      "from": "bank"
+     },
+     {
+      "f": "他少年時在肯特的 Lydden 跟一位美國爵士鼓手學鼓，也在那時認識 Daevid Allen；後來加入 Wilde Flowers，先打鼓、再當主唱。",
+      "src": "https://en.wikipedia.org/wiki/Robert_Wyatt",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "他的父親愛爵士，把 Fats Waller、Duke Ellington 與 Count Basie 傳給他；Wyatt 自己點名的影響還有 Motown、Stevie Wonder、Sly and the Family Stone 與 Britten 編的民謠。",
+      "src": "https://disco-robertwyatt.com/images/Robert/interviews/Guardian_2014_october/index.htm",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "1966 年他成為 Soft Machine 的鼓手兼共同主唱之一，與 Kevin Ayers 分唱，這支樂團屬於坎特伯里場景；1971 年他離團，另組 Matching Mole。",
+      "src": "https://en.wikipedia.org/wiki/Robert_Wyatt",
+      "src2": "https://www.newstatesman.com/culture/2014/11/rock-bottom-and-back-rough-edged-career-robert-wyatt",
+      "from": "bank"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "《The End of an Ear》是 Wyatt 的首張個人專輯，1970 年 8 月錄音，當時他正從 Soft Machine 休息；整張以自由爵士與實驗音樂為主，沒有歌詞，只有他的人聲實驗。",
+      "src": "https://en.wikipedia.org/wiki/The_End_of_an_Ear",
+      "from": "bank"
+     },
+     {
+      "f": "1975 年的《Ruth Is Stranger Than Richard》與詞曲全部自己寫的《Rock Bottom》不同，是他對朋友音樂的改編與編曲，再由他自己填上歌詞，朋友包括 Phil Manzanera、Fred Frith 與 Brian Hopper。",
+      "src": "https://en.wikipedia.org/wiki/Ruth_Is_Stranger_Than_Richard",
+      "from": "bank"
+     },
+     {
+      "f": "他早期的作品把人聲與多樂器的才能同錄音帶效果結合；墜樓後他仍以爵士式的打法打鼓與打擊樂、不用腳，晚期作品愈來愈偏向詮釋、合作與政治性。",
+      "src": "https://en.wikipedia.org/wiki/Robert_Wyatt",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "uDiscover 2026 年的專文形容他的嗓音與歌詞都不走尋常路、旋律曲折，並引述他的說法：流行音樂是「工業時代的民謠」。",
+      "src": "https://www.udiscovermusic.com/stories/robert-wyatt-tribute/",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1974 年他翻唱 Monkees 的〈I'm a Believer〉，登上英國單曲榜第 29 名，並坐著輪椅上了英國電視節目《Top of the Pops》。",
+      "src": "https://en.wikipedia.org/wiki/Robert_Wyatt",
+      "src2": "https://www.udiscovermusic.com/stories/robert-wyatt-tribute/",
+      "from": "bank"
+     },
+     {
+      "f": "節目製作人曾要他改坐藤椅，理由是輪椅「不適合闔家觀賞」，Wyatt 堅持留在輪椅上唱完。",
+      "src": "https://en.wikipedia.org/wiki/Robert_Wyatt",
+      "src2": "https://disco-robertwyatt.com/images/Robert/interviews/Guardian_2014_october/index.htm",
+      "from": "new"
+     },
+     {
+      "f": "〈Shipbuilding〉是 Clive Langer 寫的曲、Elvis Costello 為 1982 年福克蘭戰爭寫的詞，最初就是為 Wyatt 而寫；Wyatt 的版本 1982 年 8 月由 Rough Trade 發行，1983 年 4 月重發後登上英國單曲榜第 35 名，是 Rough Trade 第一支打進前 40 的單曲。",
+      "src": "https://en.wikipedia.org/wiki/Shipbuilding_(song)",
+      "src2": "https://www.newstatesman.com/culture/2014/11/rock-bottom-and-back-rough-edged-career-robert-wyatt",
+      "from": "bank"
+     },
+     {
+      "f": "《Cuckooland》（2003）入圍水星音樂獎（入圍，未得獎）。",
+      "src": "https://en.wikipedia.org/wiki/Robert_Wyatt",
+      "src2": "https://www.kent.ac.uk/news/culture/8786/robert-wyatt-in-conversation",
+      "from": "new"
+     },
+     {
+      "f": "他和 Björk、Paul Weller、Hot Chip、Brian Eno 都合作過；Eno 的《Ambient 1》裡有一首與他共同寫的鋼琴曲。",
+      "src": "https://disco-robertwyatt.com/images/Robert/interviews/Guardian_2014_october/index.htm",
+      "src2": "https://www.udiscovermusic.com/stories/robert-wyatt-tribute/",
+      "from": "new"
+     },
+     {
+      "f": "Tears for Fears 的 Roland Orzabal 寫了〈I Believe〉並獻給 Wyatt；Blood Orange 的 Dev Hynes 說《Old Rottenhat》影響了他的〈Take Your Time〉；電影《Winged Migration》的作曲家 Bruno Coulais 說 Wyatt 在他年輕時是很大的影響。",
+      "src": "https://en.wikipedia.org/wiki/Robert_Wyatt",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1973 年 6 月，Wyatt 在倫敦的一場派對上從四樓窗戶墜落，腰部以下癱瘓，此後坐輪椅生活，不再打搖滾鼓。",
+      "src": "https://en.wikipedia.org/wiki/Robert_Wyatt",
+      "src2": "https://www.newstatesman.com/culture/2014/11/rock-bottom-and-back-rough-edged-career-robert-wyatt",
+      "from": "bank"
+     },
+     {
+      "f": "《Rock Bottom》1974 年 7 月 26 日由 Virgin 發行，製作人是 Pink Floyd 的鼓手 Nick Mason；多數曲子在墜樓前的 1973 年初於威尼斯寫成，養傷期間繼續完成。",
+      "src": "https://en.wikipedia.org/wiki/Rock_Bottom_(album)",
+      "src2": "https://en.wikipedia.org/wiki/Robert_Wyatt",
+      "from": "bank"
+     },
+     {
+      "f": "《Ruth Is Stranger Than Richard》之後，不計 1982 年集結舊單曲的《Nothing Can Stop Us》，Wyatt 要到 1985 年的《Old Rottenhat》才再出個人錄音室專輯。",
+      "src": "https://en.wikipedia.org/wiki/Ruth_Is_Stranger_Than_Richard",
+      "from": "bank"
+     },
+     {
+      "f": "1997 年的《Shleep》讓他回到 1970 年代那種找其他音樂人一起錄的做法，之後的作品也沿著這條路走。",
+      "src": "https://en.wikipedia.org/wiki/Shleep",
+      "from": "bank"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "1973 年 6 月墜樓致癱瘓，之後由鼓手轉往以人聲與鍵盤為中心的創作。",
+    "src": "https://en.wikipedia.org/wiki/Robert_Wyatt",
+    "src2": "https://www.newstatesman.com/culture/2014/11/rock-bottom-and-back-rough-edged-career-robert-wyatt",
+    "from": "bank"
+   },
+   {
+    "f": "1974 年 7 月發行《Rock Bottom》，由 Nick Mason 製作。",
+    "src": "https://en.wikipedia.org/wiki/Rock_Bottom_(album)",
+    "src2": "https://www.udiscovermusic.com/stories/robert-wyatt-tribute/",
+    "from": "bank"
+   },
+   {
+    "f": "1983 年 4 月〈Shipbuilding〉重發後登上英國單曲榜第 35 名。",
+    "src": "https://en.wikipedia.org/wiki/Shipbuilding_(song)",
+    "src2": "https://en.wikipedia.org/wiki/Robert_Wyatt",
+    "from": "bank"
+   }
+  ],
+  "conflicts": [
+   "沿用原補洞稿 ar-a-012-g1：新政治家寫《Rock Bottom》是癱瘓之後完成；維基寫曲子多數在墜樓前的 1973 年初於威尼斯寫成、養傷期間重新編排，並說 Wyatt 否認專輯內容是墜樓的直接結果，採『多數曲子墜樓前寫成、養傷期間繼續完成』。『墜樓後改打無腳踏的爵士鼓』（維基）與『改以鋼琴為主』（搜尋摘要）說法不一，本次 sound 只採維基『不用腳、爵士式打法』。上線簡介與維基在 The End of an Ear、Ruth、Shleep 三篇的相關事實一致，無衝突。",
+   "水星獎年份：Kent 大學頁面寫《Cuckooland》為『2004 年的專輯』入圍水星獎；維基寫專輯 2003 年發行並入圍；另有義大利新聞（rockol，403 未能開頁）搜尋摘要列為 2004 年水星獎十二位入圍者之一。f 只寫專輯年份 2003 與『入圍』，不寫頒獎年。",
+   "專輯墜樓場景：Guardian 轉載稿說他 29 歲時於派對上從四樓窗戶墜落，與維基、新政治家的『1973 年 6 月』一致；轉載稿另有飲酒細節，依規不收。"
+  ],
+  "pubIssues": [],
+  "searches": 6,
+  "failedFetches": 1,
+  "status": "full",
+  "notes": "thin→full 升級批。poolAlbums 五張（Rock Bottom、Old Rottenhat、The End of an Ear、Ruth Is Stranger Than Richard、Shleep）皆屬這位英國歌手，無同名混卡。沿用原補洞稿 ar-a-012-g1 的 origin 2 條、sound 2 條、legacy 2 條、era 4 條與三條里程碑（標 from=bank，src／src2 照抄）。\n本次補查 6 次：WebSearch（影響與 Canterbury）、Guardian 2014 訪談轉載（disco-robertwyatt.com，Guardian 本站雲端被擋）、維基 Robert Wyatt（再讀影響、榮譽、Top of the Pops 段）、WebSearch（Cuckooland 水星獎）、uDiscover 2026 專文、Kent 大學頁面。失敗 1 次：rockol 403。\n原本為何 thin：legacy 只有兩條故事性事實、沒有共識評價。本次補到：origin 的爵士家庭與 Wilde Flowers；sound 的錄音帶效果與墜樓後的打法、他自己對流行音樂的說法；legacy 的 Top of the Pops 輪椅爭執（兩源）、水星獎入圍（兩源）、與 Björk／Eno 等合作（兩源）、Orzabal 與 Dev Hynes 的具名說法。\n⚠ 寫作層注意：(1) 維基家族來源在本位仍多（Robert Wyatt、Rock Bottom、Shipbuilding、Ruth、Shleep、End of an Ear 皆同站不同條目，非獨立）；Guardian 訪談是轉載站，非 Guardian 本站頁面。(2) Orzabal／Hynes／Coulais 那條是維基單源的具名說法，標 single，用『據維基』口氣不宜；請寫成『Roland Orzabal 為他寫了〈I Believe〉』等事實陳述，勿寫『影響無數樂手』。(3) 1974 年單曲榜第 29 名、1983 年第 35 名為原稿沿用的核心事實（Rough Trade 第一支前 40 單曲），在世者榜單名次屬必要例外。\n依規不收：1973 年 11 月 Pink Floyd 義演、加入英國共產黨與〈Venceremos〉（政治事件至多一句，寫作層多半不寫）、2014 年宣布退休與 2023 年診斷（維基單源且屬健康私事）、Festive Fifty 名次、Pitchfork／NME 榜單名次、Thom Yorke 讚語（Obscure Sound 轉述）、墜樓的飲酒細節。\nthinIssues：現行 thin 正文無事實錯誤（『四樓窗戶』『腰部以下癱瘓』『隔年上 Top of the Pops』『Shipbuilding 原本就是為他而寫』皆兩源）。"
+ },
+ {
+  "key": "siouxsie and the banshees",
+  "name": "Siouxsie and the Banshees",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Siouxsie and the Banshees 1976 年在倫敦由主唱 Siouxsie Sioux 與貝斯手 Steven Severin 創立；兩人從 1976 年 2 月起追隨當時還沒簽約的 Sex Pistols，屬於被稱為「Bromley Contingent」的那群死忠樂迷。",
+      "src": "https://en.wikipedia.org/wiki/Siouxsie_and_the_Banshees",
+      "src2": "https://en.wikipedia.org/wiki/Siouxsie_Sioux",
+      "from": "bank"
+     },
+     {
+      "f": "樂團 1976 年 9 月 20 日在倫敦 100 Club 的龐克音樂節首演，臨時找來 Marco Pirroni 彈吉他、Sid Vicious 打鼓，現場即興了約 20 分鐘的〈The Lord's Prayer〉。",
+      "src": "https://en.wikipedia.org/wiki/Siouxsie_and_the_Banshees",
+      "src2": "https://faroutmagazine.co.uk/siouxsie-sioux-the-banshees-debut-1976-100-club-recording/",
+      "from": "bank"
+     },
+     {
+      "f": "Siouxsie 本名 Susan Janet Ballion，1957 年生於倫敦 Southwark，在肯特郡 Chislehurst 的郊區長大，後來說郊區讓她心生強烈的厭惡。",
+      "src": "https://en.wikipedia.org/wiki/Siouxsie_Sioux",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "她在龐克成形前就以戀物與束縛風格的服裝在倫敦夜店圈出名，這些造型後來成為龐克時尚的一部分；她招牌的貓眼妝、深紅唇、尖刺黑髮與全黑穿搭，也深深影響後來的哥德時尚。",
+      "src": "https://en.wikipedia.org/wiki/Siouxsie_Sioux",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他們從龐克出發，被視為後龐克先驅，以不諧和的聲響與大膽的節奏、聲響實驗見稱；首張專輯《The Scream》（1978）的聲音影響了後龐克、噪音搖滾與另類搖滾。",
+      "src": "https://en.wikipedia.org/wiki/Siouxsie_and_the_Banshees",
+      "src2": "https://en.wikipedia.org/wiki/The_Scream_(album)",
+      "from": "bank"
+     },
+     {
+      "f": "早期的聲音是鋸齒狀、不協和的吉他（首任吉他手 John McKay 的彈法不按牌理、參差尖銳），鼓手 Kenny Morris 以 tom 鼓為主、節奏簡約帶 motorik 式的重複，貝斯手 Steven Severin 以貝斯帶動節奏。",
+      "src": "https://en.wikipedia.org/wiki/Siouxsie_and_the_Banshees",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "樂團從粗糙原始的 art-punk 走向更時髦成熟的聲音：前 Magazine 吉他手 John McGeoch 為《Kaleidoscope》（1980）帶來更細緻、更有旋律性的吉他，Budgie 1979 年起成為固定鼓手；McGeoch 的吉他被視為聰明且不循常規，Johnny Marr 也公開讚賞。",
+      "src": "https://www.udiscovermusic.com/?p=2559917",
+      "src2": "https://en.wikipedia.org/wiki/Siouxsie_and_the_Banshees",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Joy Division 的 Peter Hook 稱 Banshees 是「我們的重大影響之一」，並說首張專輯是他最愛的唱片之一；Stephen Morris 形容他們的聲音帶著預感，「從過去的黑暗裡勾勒未來」。",
+      "src": "https://en.wikipedia.org/wiki/Siouxsie_and_the_Banshees",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "The Cure 的 Robert Smith 說 Siouxsie and the Banshees 與 Wire 是他最欣賞的兩個團，他 1979 年也曾短暫替 Banshees 代班彈吉他；Morrissey 與 The Smiths 被視為承襲其影響者，Morrissey 也稱讚他們是優秀的團。",
+      "src": "https://www.udiscovermusic.com/?p=2559917",
+      "src2": "https://en.wikipedia.org/wiki/Siouxsie_and_the_Banshees",
+      "from": "new"
+     },
+     {
+      "f": "Radiohead 的 Thom Yorke 說 1985 年看 Siouxsie 現場，啟發他敢站在舞台中央；Garbage 的 Shirley Manson 說自己是聽《The Scream》與《Kaleidoscope》學會唱歌；Jeff Buckley 說自己的歌聲裡有不少她的影響；Sonic Youth 的 Thurston Moore 說〈Hong Kong Garden〉替他打開了全新的世界。",
+      "src": "https://en.wikipedia.org/wiki/Siouxsie_and_the_Banshees",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "他們的影響被連到 post-punk、new wave、synth pop、gothic rock、alternative、shoegaze 與 trip hop；Massive Attack、LCD Soundsystem 與 Tricky 等人翻唱或取樣過他們的歌，U2、Depeche Mode、PJ Harvey 與 The Jesus and Mary Chain 的 Jim Reid 也被列為受影響者。",
+      "src": "https://en.wikipedia.org/wiki/Siouxsie_and_the_Banshees",
+      "src2": "https://en.wikipedia.org/wiki/Siouxsie_Sioux",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [
+   {
+    "f": "1976 年 9 月 20 日在倫敦 100 Club 首演，這是樂團的第一場演出。",
+    "src": "https://en.wikipedia.org/wiki/Siouxsie_and_the_Banshees",
+    "src2": "https://faroutmagazine.co.uk/siouxsie-sioux-the-banshees-debut-1976-100-club-recording/",
+    "from": "bank"
+   }
+  ],
+  "conflicts": [
+   "udiscover 頁面把核心成員拼成『Marco Perroni、John McKay、Kenny Morris』，並寫 Siouxsie 本名 Susan Dallion，與維基的 Marco Pirroni、Susan Janet Ballion 不符；人名拼寫採維基與 Far Out，udiscover 只用來支持 McGeoch、Budgie、Robert Smith 與 Smiths 的敘述。",
+   "udiscover 寫 Robert Smith 1979 年『短暫代班吉他』，維基也寫 Smith 曾替 Banshees 彈吉他；年份只採 udiscover 一處，維基未核對，f 因此只寫『1979 年也曾短暫代班』並標兩源。"
+  ],
+  "pubIssues": [],
+  "searches": 4,
+  "failedFetches": 0,
+  "status": "full",
+  "notes": "thin→full 升級批。poolAlbums 五張（The Scream、Juju、A Kiss in the Dreamhouse、Through the Looking Glass、The Rapture）皆屬這支英國樂團，無同名混卡；事實庫為空。沿用原補洞稿 ar-a-012-g1 的 origin 2 條、sound 1 條與一條里程碑（標 from=bank，src／src2 照抄）；原稿 legacy 那條（Joy Division、U2、The Cure、The Jesus and Mary Chain 點名受影響，兩源皆維基）本次改寫成具名說法四條。\n本次補查 4 次：WebSearch（名人堂與影響）、udiscover 專文、WebSearch（Q Awards 與 Ivor Novello，只見鏡像站，不收）、維基 Siouxsie and the Banshees 條目（再讀 Legacy 與 Sound 段，頁面超過 10 萬字只讀前段）。\n原本為何 thin：legacy 只有一條維基家族的籠統敘述。本次補到：具名後輩的說法（Peter Hook、Robert Smith、Thom Yorke、Shirley Manson、Jeff Buckley、Thurston Moore）、Smiths 與 Smith 的第二源（udiscover）、聲音的組成（McKay、Morris、Severin、McGeoch、Budgie）。\n⚠ 寫作層注意：(1) 後輩說法來自維基 Legacy 段（其內容本身引自各人訪談），多半標 single；只有 Robert Smith 與 The Smiths 有 udiscover 第二源。寫作層請用『Peter Hook 說』『Shirley Manson 說』的具名口氣，勿概括成『無數樂團受其影響』。(2) 搖滾名人堂：搜尋只見粉絲論壇與雜牌資料站，未見官方入圍紀錄，不收。(3) Siouxsie 個人榮譽（Q Awards 2011 傑出貢獻獎、Ivor Novello 2012 Inspiration Award、2005 年 Mojo 頒獎）授予 Siouxsie 個人而非樂團，且只有維基與鏡像站，不收進樂團的 legacy。\n依規不收：Siouxsie 童年遭性侵與父親酒精相關過世（私人創傷與死因）、Sid Vicious 之外的龐克圈事件、各專輯榜單名次與 Metacritic 類評分、〈Peek-a-Boo〉在美國現代搖滾榜『第一首』的說法（榜單『第一』類宣稱，只見維基單源）、1996 年解散的細節。\nthinIssues：現行 thin 正文無事實錯誤（『1976 年在龐克音樂節登台，Sid Vicious 打鼓，即興約 20 分鐘〈The Lord's Prayer〉』兩源一致；『Joy Division 與 The Cure 都點名受其影響』有具名說法支持）。"
+ },
+ {
+  "key": "st. vincent",
+  "name": "St. Vincent",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "St. Vincent（本名 Annie Clark）生於美國奧克拉荷馬州的 Tulsa，童年多半在德州 Dallas 一帶度過。",
+      "src": "https://en.wikipedia.org/wiki/St._Vincent_(musician)",
+      "src2": "https://www.smithsonianmag.com/innovation/the-totally-original-sound-of-st-vincent-180947634/",
+      "from": "bank"
+     },
+     {
+      "f": "她 12 歲開始正式學吉他，後來進了波士頓的 Berklee 音樂學院，但中途退學。",
+      "src": "https://en.wikipedia.org/wiki/St._Vincent_(musician)",
+      "src2": "https://www.smithsonianmag.com/innovation/the-totally-original-sound-of-st-vincent-180947634/",
+      "from": "bank"
+     },
+     {
+      "f": "她十幾歲時曾替阿姨與姨丈的爵士吉他人聲二人組 Tuck & Patti 當巡演助手；2004 年加入 Glenn Branca 的百把吉他樂團，在皇后區演出；她後來談學校經驗時說，學校能教的都是可以量化的東西，學完之後還得把一切忘掉，才能真正開始做音樂。",
+      "src": "https://en.wikipedia.org/wiki/St._Vincent_(musician)",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "離開 Berklee 後，她先當 The Polyphonic Spree 的樂手，之後又加入 Sufjan Stevens 的巡演樂團，同時發展自己的作品，再以 St. Vincent 為名單飛。",
+      "src": "https://en.wikipedia.org/wiki/St._Vincent_(musician)",
+      "src2": "https://www.smithsonianmag.com/innovation/the-totally-original-sound-of-st-vincent-180947634/",
+      "from": "bank"
+     },
+     {
+      "f": "藝名 St. Vincent 取自詩人 Dylan Thomas 過世的那家醫院。",
+      "src": "https://en.wikipedia.org/wiki/St._Vincent_(musician)",
+      "src2": "https://www.smithsonianmag.com/innovation/the-totally-original-sound-of-st-vincent-180947634/",
+      "from": "bank"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "St. Vincent 刻意把柔順與尖銳的元素放在一起，她說：「把柔順與尖銳的東西放在一起，對我很自然。」她的吉他兼有旋律感與大量的失真，作品橫跨藝術搖滾、獨立搖滾、室內流行與實驗風格。",
+      "src": "https://en.wikipedia.org/wiki/St._Vincent_(musician)",
+      "src2": "https://www.smithsonianmag.com/innovation/the-totally-original-sound-of-st-vincent-180947634/",
+      "from": "bank"
+     },
+     {
+      "f": "她點名 David Bowie、Kate Bush、Jimi Hendrix 與 Robert Fripp 為影響；2007 年首張《Marry Me》出版時，評論拿她比 Kate Bush 與 David Bowie，稱讚其編制與編曲。",
+      "src": "https://en.wikipedia.org/wiki/St._Vincent_(musician)",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "Ernie Ball Music Man 為她推出簽名吉他，由她自己構想並設計，目標是舒適、輕、線條乾淨與音色有彈性，採三個 mini humbucker；她說自己身為吉他手的全部經驗都投進了這把琴。",
+      "src": "https://www.premierguitar.com/ernie-ball-music-man-announces-new-st-vincent-signature-guitar",
+      "src2": "https://en.wikipedia.org/wiki/St._Vincent_(musician)",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "St. Vincent 三度拿下葛萊美最佳另類音樂專輯：2015 年（《St. Vincent》）、2022 年（《Daddy's Home》）與 2025 年（第 67 屆，《All Born Screaming》）；金氏世界紀錄把「女性獨唱者在此類別得獎最多」記在她名下，共 3 座。",
+      "src": "https://www.guinnessworldrecords.com/world-records/697484-most-grammy-awards-won-for-best-alternative-music-album-female",
+      "src2": "https://en.wikipedia.org/wiki/St._Vincent_(musician)",
+      "from": "new"
+     },
+     {
+      "f": "她的簽名吉他有 Jack White（2018 年巡演）、Tom Morello 與 J Mascis 等人使用。",
+      "src": "https://en.wikipedia.org/wiki/St._Vincent_(musician)",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "她 2012 年與 Talking Heads 的 David Byrne 合作《Love This Giant》，製作了 Sleater-Kinney 的《The Center Won't Hold》（2019），並與 Taylor Swift 合寫〈Cruel Summer〉。",
+      "src": "https://en.wikipedia.org/wiki/St._Vincent_(musician)",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [
+   {
+    "f": "2025 年以《All Born Screaming》第三度獲葛萊美最佳另類音樂專輯（得獎）。",
+    "src": "https://www.guinnessworldrecords.com/world-records/697484-most-grammy-awards-won-for-best-alternative-music-album-female",
+    "src2": "https://en.wikipedia.org/wiki/St._Vincent_(musician)",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "沿用原補洞稿 ar-a-012-g1：維基寫她第一把吉他是 5 歲的紅色塑膠玩具吉他、12 歲起上課；Smithsonian 寫父母在她 12 歲時買吉他並出錢上課，只寫『12 歲開始正式學』。離開 Berklee 的原因維基與 Smithsonian 說法不同，本次只採維基引她自己的話，不寫原因。2025 年葛萊美總數：維基寫三座（含最佳搖滾歌曲、最佳另類音樂表演），Yahoo 只列兩座；本次 legacy 只寫兩源一致的最佳另類音樂專輯（Guinness 與維基）。",
+   "簽名琴發表時間：英文維基寫 2016 年 3 月宣布，Ernie Ball 新聞稿（Premier Guitar 轉載）寫 2015 年 8 月 27 日宣布、2016 年出貨；f 不寫日期。"
+  ],
+  "pubIssues": [],
+  "searches": 6,
+  "failedFetches": 1,
+  "status": "full",
+  "notes": "thin→full 升級批。poolAlbums 五張（St. Vincent、Strange Mercy、Love This Giant、All Born Screaming、MASSEDUCTION）皆屬同一位美國音樂人，無同名混卡；事實庫為空。沿用原補洞稿 ar-a-012-g1 的 origin 4 條（第 4 條併入 Branca 一句）、sound 1 條（標 from=bank，src／src2 照抄）；原稿 legacy 的『2025 年葛萊美』一條改寫成三度得獎，里程碑同步。\n本次補查 6 次：WebSearch（吉他手法）、WebSearch（葛萊美三度）、維基 St. Vincent（頁面超過 17 萬字只讀前段）、WebSearch（簽名琴）、金氏世界紀錄頁、Premier Guitar 簽名琴新聞稿。失敗 1 次：MusicRadar 文章（只回導覽列）。\n原本為何 thin：legacy 只有一條葛萊美、sound 只有一句自述。本次補到：origin 的 Tuck & Patti、Branca 吉他樂團與 Berklee 自述；sound 的點名影響與簽名琴設計；legacy 的三度得獎（金氏紀錄）、簽名琴使用者、合作與製作。\n⚠ 寫作層注意：(1) 後輩影響：維基沒有寫她影響其他音樂人，最接近的證據是簽名琴使用者名單（單源）；寫作層不要寫『影響一代吉他手』。(2) 葛萊美總數：維基寫生涯六座，本次只收兩源一致的三座最佳另類音樂專輯。(3) 『合寫 Cruel Summer』『製作 Sleater-Kinney』『Love This Giant』皆維基單源的合作事實，標 single。\n依規不收：Rolling Stone 2023 年 250 大吉他手第 26 名、2014 年同名專輯被 Guardian／EW／NME 等列為年度專輯榜首及 Time／Rolling Stone 名次（皆維基單源的雜誌榜單名次）、Slant 年度專輯、各專輯評分；父母離異與家人細節、23andMe 血統測試、宗教成長背景（私人細節，與音樂關係薄）。\nthinIssues：現行 thin 正文無事實錯誤；『12 歲學吉他』與兩源一致。"
+ }
+]

@@ -1,0 +1,495 @@
+[
+ {
+  "key": "supergrass",
+  "name": "Supergrass",
+  "status": "none",
+  "facts": [],
+  "suggest": "",
+  "notes": "無與音樂相關的政治、刑案、病況等題材；補洞稿也未記此類事（Hawkins 追思演唱會不寫死因）。"
+ },
+ {
+  "key": "the decemberists",
+  "name": "The Decemberists",
+  "status": "none",
+  "facts": [],
+  "suggest": "",
+  "notes": "無對應題材（團名取自十二月黨人起義屬歷史題材，正文已寫）。"
+ },
+ {
+  "key": "the knife",
+  "name": "The Knife",
+  "status": "add",
+  "facts": [
+   {
+    "f": "2013 年《Shaking the Habitual》是The Knife 最直白的政治專輯：取材女性主義與酷兒理論、批判新自由主義與核心家庭，Olof 說歌受 1970 年代抗議歌曲啟發，樂團也表示「我們做的事是政治的，這一點不該被誤解」。",
+    "src": "https://en.wikipedia.org/wiki/Shaking_the_Habitual",
+    "src2": "https://exclaim.ca/music/article/knife-shaking_habitual",
+    "type": "politics"
+   }
+  ],
+  "suggest": "在提到拒領 Grammis 之後，用一句帶到《Shaking the Habitual》是他們把女性主義與反資本主義直接寫進專輯的作品，語氣平實。",
+  "notes": "Grammis 拒領抗議已在現行正文；補洞稿 conflicts 指出獎項類別不一，不寫類別。src2 為搜尋結果摘要所見（Exclaim! 評論），WebFetch 未另開。"
+ },
+ {
+  "key": "the strokes",
+  "name": "The Strokes",
+  "status": "add",
+  "facts": [
+   {
+    "f": "2001 年 911 事件後，《Is This It》美國 CD 版抽掉批評紐約警察的〈New York City Cops〉，換成〈When It Started〉，發行日也從 9 月底延到 10 月 9 日；唱片公司公關稱原因是樂團看到紐約警察在事件中的表現。黑膠版仍保留原曲目。",
+    "src": "https://en.wikipedia.org/wiki/Is_This_It",
+    "src2": "https://www.insidehook.com/?p=1052771",
+    "type": "controversy"
+   },
+   {
+    "f": "2020 年 2 月，樂團在新罕布夏州為桑德斯（Bernie Sanders）的初選前造勢活動演出，Julian Casablancas 公開表態支持他；當晚以〈New York City Cops〉作結。",
+    "src": "https://thefader.com/2020/01/29/the-strokes-bernie-sanders-rally",
+    "src2": "https://au.rollingstone.com/music/music-news/strokes-bernie-sanders-new-hampshire-primary-7295",
+    "type": "politics"
+   }
+  ],
+  "suggest": "首張專輯一句寫 911 後美國版換曲，再用一句帶 2020 年為桑德斯造勢，皆平實敘述不評價。",
+  "notes": "〈New York City Cops〉歌詞批評警察、換曲是審查式自我調整，屬招牌事實。src2 為搜尋結果所見，未逐頁開。"
+ },
+ {
+  "key": "tv on the radio",
+  "name": "TV on the Radio",
+  "status": "add",
+  "facts": [
+   {
+    "f": "貝斯手 Gerard Smith 在完成《Nine Types of Light》後確診肺癌，2011 年 4 月 20 日過世，樂團取消了數場巡演。",
+    "src": "https://www.npr.org/sections/therecord/2011/04/20/135578544/gerard-smith-member-of-tv-on-the-radio-has-died",
+    "src2": "https://www.spinmagazine.com/2011/04/tvotrs-gerard-smith-dies-cancer/",
+    "type": "death"
+   }
+  ],
+  "suggest": "在寫《Nine Types of Light》前後帶一句：專輯完成後貝斯手 Smith 病逝，語氣克制，只寫年份與病名。",
+  "notes": "年齡兩源不一（36 或 34），不寫年齡；入團年份 Magnet 與維基不一，不寫入團年。"
+ },
+ {
+  "key": "weezer",
+  "name": "Weezer",
+  "status": "add",
+  "facts": [
+   {
+    "f": "Rivers Cuomo 天生一腿較短，1995 年接受延長腿骨的手術，術後長期拄拐杖、服止痛藥；他同年秋天進哈佛讀書，《Pinkerton》多數歌曲寫於這段時期。",
+    "src": "https://en.wikipedia.org/wiki/Pinkerton_(album)",
+    "src2": "https://www.weezerpedia.com/wiki/Harvard",
+    "type": "health"
+   }
+  ],
+  "suggest": "在帶出《Pinkerton》的段落，用一句寫 Cuomo 手術後養傷、住進哈佛，那些歌就是在這段身體不適與孤立中寫成，解釋它為何黑暗。",
+  "notes": "手術左右腿與月份各源不一（維基 4 月右腿；PopMatters 3 月左腿），只寫 1995 年與「一腿較短」。Rolling Stone 提到後來的禁慾誓言，與 Pinkerton 無直接來源連結，不收。"
+ },
+ {
+  "key": "wings",
+  "name": "Wings",
+  "status": "add",
+  "facts": [
+   {
+    "f": "1980 年 1 月，Paul McCartney 隨 Wings 赴日巡演，在東京成田機場因持有約 219 公克大麻被捕，關押約九至十天後獲釋遞解出境，日本巡演取消；Wings 沒有再合作演出，1981 年解散。",
+    "src": "https://www.beatlesbible.com/1980/01/16/paul-mccartney-arrested-marijuana-possession-tokyo-japan/",
+    "src2": "https://ultimateclassicrock.com/paul-mccartney-tokyo-bust/",
+    "type": "legal"
+   },
+   {
+    "f": "1972 年 Wings 在北愛爾蘭「血腥星期日」事件後迅速錄下首支單曲〈Give Ireland Back to the Irish〉，BBC 與其他廣播業者拒播，單曲仍登上英國榜第 16 名。",
+    "src": "https://en.wikipedia.org/wiki/Give_Ireland_Back_to_the_Irish",
+    "src2": "https://beatlesbible.com/people/paul-mccartney/songs/give-ireland-back-to-the-irish/2",
+    "type": "politics"
+   },
+   {
+    "f": "Linda McCartney 是 Wings 創團成員，1995 年確診乳癌，1998 年 4 月 17 日過世。",
+    "src": "https://www.biography.com/musician/linda-mccartney",
+    "src2": "https://thecanadianencyclopedia.ca/en/article/linda-mccartney-obituary",
+    "type": "death"
+   }
+  ],
+  "suggest": "在 Wings 活動期收尾處提一句 1980 年東京被捕使日本巡演取消、樂團就此無以為繼；〈Give Ireland…〉可放在單曲或風格段，一句即可；Linda 逝世只寫年份。",
+  "notes": "拘留天數兩說（九天／十天）寫「約九至十天」或不寫天數；解散年 1981 沿用現行正文（活動 1971 至 1981）。BBC 禁播理由無第一手來源，只寫「拒播」。拉哥斯搶案（《Band on the Run》錄音前）為另一可選的刑案類題材，補洞稿已有雙源，現行正文未寫。"
+ },
+ {
+  "key": "xtc",
+  "name": "XTC",
+  "status": "add",
+  "facts": [
+   {
+    "f": "Andy Partridge 自少年時期長期服用 Valium，1982 年停藥引發嚴重戒斷反應，加上巡演壓力，在巴黎演出途中崩潰離台；歐洲巡演取消，美國巡演也在聖地牙哥一場後中止，XTC 此後不再巡演。",
+    "src": "https://diffuser.fm/andy-partridge-nervous-breakdown/",
+    "src2": "https://en.wikipedia.org/wiki/Andy_Partridge",
+    "type": "addiction"
+   },
+   {
+    "f": "1986 年《Skylarking》起初沒有收進〈Dear God〉，這首質疑上帝的歌後來在美國大學電台走紅，Geffen 重壓專輯補進此曲；1987 年單曲發行後，佛羅里達一家電台因播放遭炸彈威脅，樂團也收到大量仇恨信。",
+    "src": "https://en.wikipedia.org/wiki/Dear_God_(XTC_song)",
+    "src2": "https://www.udiscovermusic.com/stories/xtc-skylarking-album-andy-partridge-interview/",
+    "type": "controversy"
+   }
+  ],
+  "suggest": "現行正文寫舞台恐懼之處，補上「此前長期服用鎮靜藥、停藥後戒斷」一句；Skylarking 段可帶〈Dear God〉因宗教題材在美國引發抗議，一句平實帶過。",
+  "notes": "Partridge 開始服藥的年齡兩源不一，不寫年齡；停藥經過（妻子丟掉藥或自行停藥）各說不一，只寫「停藥」。〈Dear God〉未收原因 Partridge 與 Rundgren 說法衝突，不寫誰要求撤下。炸彈威脅 Panama City 一事主要為維基單頁，uDiscover 只說「炸彈／縱火威脅」，建議寫「美國有電台因播放收到威脅」。"
+ },
+ {
+  "key": "yeah yeah yeahs",
+  "name": "Yeah Yeah Yeahs",
+  "status": "none",
+  "facts": [],
+  "suggest": "",
+  "notes": "無對應題材；補洞稿也無。"
+ },
+ {
+  "key": "yo la tengo",
+  "name": "Yo La Tengo",
+  "status": "none",
+  "facts": [],
+  "suggest": "",
+  "notes": "夫妻組團已在正文（合作身分），無其他政治、病況、官司類題材。"
+ },
+ {
+  "key": "傷心欲絕",
+  "name": "傷心欲絕",
+  "status": "add",
+  "facts": [
+   {
+    "f": "吉他手劉暐於 2023 年 6 月 10 日傍晚逝世，享年 38 歲，消息由親友在他的臉書發出；家屬未公開死因。",
+    "src": "https://www.chinatimes.com/realtimenews/20230612003869-260404",
+    "src2": "https://star.ettoday.net/news/2518480",
+    "type": "death"
+   }
+  ],
+  "suggest": "現行正文已寫 2023 年逝世，維持一句、只寫年份與「劉暐」，不寫死因與當時的細節。",
+  "notes": "搜尋摘要曾有「因病辭世」「團員健康問題」兩種說法，皆非家屬正式說明，不寫死因。HK01 標題與一篇個人文章（vocus）提到劉暐酗酒，後者為個人評論、前者未逐頁核，不收為成癮事實。兩源（中時、ETtoday）同出自親友臉書聲明，視為同源，但日期一致。"
+ },
+ {
+  "key": "濁水溪公社",
+  "name": "濁水溪公社",
+  "status": "add",
+  "facts": [
+   {
+    "f": "濁水溪公社的歌詞以台語為主，早期作品呼應 1990 年代初的街頭抗議運動，關心環境議題與反威權，樂團也公開支持台灣獨立；團名 LTK 是「濁水溪」的台語拼法，帶有本土意識。",
+    "src": "https://en.wikipedia.org/wiki/LTK_Commune",
+    "src2": "https://www.taipeitimes.com/News/feat/archives/2016/01/29/2003638302",
+    "type": "politics"
+   }
+  ],
+  "suggest": "在介紹台語歌詞處補一句：他們的政治立場鮮明，早期歌曲取材環境與反威權，並公開支持台灣獨立；不展開社運細節。",
+  "notes": "太陽花、反核、國光石化等具體參與只在搜尋摘要（非逐頁證實），維基頁亦未提，不收。Taipei Times 2016 為搜尋摘要所見（稱創團者開啟了政治意識的反對路線），未逐頁開。「看到黑影就開槍」等歌曲內容不必提。性與粗話歌詞的爭議（維基單源）可略。依 ar-u-011 先例（農村武裝青年）政治背景一句為上限。"
+ },
+ {
+  "key": "秋吉敏子トリオ",
+  "name": "秋吉敏子トリオ",
+  "status": "add",
+  "facts": [
+   {
+    "f": "秋吉敏子 1959 年與薩克斯風手 Charlie Mariano 結婚，兩人合組 Toshiko-Mariano Quartet，1967 年離婚；之後與薩克斯風、長笛手 Lew Tabackin 結為夫妻，移居洛杉磯並組成大樂團。",
+    "src": "https://en.wikipedia.org/wiki/Toshiko_Akiyoshi",
+    "src2": "https://www.encyclopedia.com/people/literature-and-arts/music-popular-and-jazz-biographies/toshiko-akiyoshi",
+    "type": "private"
+   }
+  ],
+  "suggest": "這是領軍者而非三重奏本身的事，若正文要寫就用一句：她與 Tabackin 是生活與樂團夥伴，並簡述兩次婚姻與樂團的關係；也可略過。",
+  "notes": "與 Tabackin 結識／結婚年份兩源不一（1967 相識／1969 結婚），不寫年份。出身地（遼陽／大連）與生日兩源不一，只寫「生於滿洲」。戰後美國的種族歧視經歷只有她自述片段，沒有可核的第二源，不收。題材與三重奏編制關聯弱，屬低優先。"
+ },
+ {
+  "key": "竇唯",
+  "name": "竇唯",
+  "status": "add",
+  "facts": [
+   {
+    "f": "2006 年 5 月，竇唯因不滿《新京報》記者卓伟關於他的報導，闖入報社砸毀辦公設備，並點燃停在報社門口的員工汽車後自行報案；他認為報導是不實消息，報社則堅持報導屬實。",
+    "src": "https://en.wikipedia.org/wiki/Dou_Wei",
+    "src2": "https://m.jiemian.com/article/1259355.html",
+    "type": "legal"
+   },
+   {
+    "f": "此案經法院審理，竇唯被認定有罪但免予刑事處罰，終審於 2008 年維持原判；他在法庭上稱「虛假的新聞報道禍國殃民」。",
+    "src": "https://www.chinanews.com.cn/yl/ytcf/news/2008/03-12/1189678.shtml",
+    "src2": "https://www.chinatimes.com/realtimenews/20220908002137-260404",
+    "type": "legal"
+   },
+   {
+    "f": "竇唯 1996 年與王菲結婚、1997 年育有一女，1999 年離婚；2002 年與攝影師高原結婚，2004 年離婚。",
+    "src": "https://en.wikipedia.org/wiki/Dou_Wei",
+    "src2": "https://www.chinatimes.com/realtimenews/20220908002137-260404",
+    "type": "private"
+   }
+  ],
+  "suggest": "在其音樂轉向內斂、避談媒體的段落帶一句：2006 年因對報導不滿燒了報社員工的車，被法院判免予刑事處罰，此後不再受訪；婚姻可只寫「與王菲婚姻（1996–1999）」。",
+  "notes": "燒的是報社員工停在門口的車，不是自己的車。一審日期只見搜尋摘要（2007 年 11 月宣武區法院），終審 2008 年 3 月維持原判（中新社），不寫具體日期。第二、三條的 src 取自補洞稿既有引用（中新社 2008 年報導、中國時報 2022 年報導），本次未重開頁。婚姻三條在 en 維基單頁較全，建議保守。"
+ },
+ {
+  "key": "311",
+  "name": "311",
+  "status": "add",
+  "facts": [
+   {
+    "f": "團名 311 取自奧馬哈警方「公然猥褻」的代碼；據說起因是一位團員的朋友（有說法指吉他手 Jim Watson）因裸泳被捕開了罰單，樂團把這個數字拿來當團名，後來也沒改。",
+    "src": "https://en.wikipedia.org/wiki/311_(band)",
+    "src2": "https://americansongwriter.com/behind-the-meaning-of-the-band-name-311-hint-were-going-streaking/",
+    "type": "legal"
+   }
+  ],
+  "suggest": "團名由來一句帶過：取自奧馬哈警方公然猥褻的代碼，語氣輕鬆，不點名被捕者。",
+  "notes": "被捕者身分與地點兩說（朋友／Watson；公共泳池／池塘）不一，不指名。官方 FAQ 說名字抽象、不定義樂團。屬團名典故，低優先；311 另無政治、病況或成癮類題材。"
+ },
+ {
+  "key": "actress",
+  "name": "Actress",
+  "status": "add",
+  "facts": [
+   {
+    "f": "Darren Cunningham（Actress）少年時是職業足球隊的青訓球員，後因傷中斷足球生涯；英國職業足球員協會（PFA）為這類球員提供的補助，讓他得以到倫敦念錄音藝術，他據說把這筆錢拿去買了合成器。",
+    "src": "https://en.wikipedia.org/wiki/Actress_(musician)",
+    "src2": "https://hollandfestival.nl/en/actress-alias-darren-cunningham",
+    "type": "health"
+   }
+  ],
+  "suggest": "出身段用一句寫他原是足球青訓球員、因傷轉向音樂；語氣平實，不寫傷勢細節。",
+  "notes": "球隊維基寫 West Bromwich Albion，補洞稿原寫 Wolverhampton（出生地），寫球隊名前須核；建議只寫「職業足球青訓」。把學費拿去買合成器一事維基稱 reportedly，寫作層避免寫成定論。"
+ },
+ {
+  "key": "agnostic front",
+  "name": "Agnostic Front",
+  "status": "add",
+  "facts": [
+   {
+    "f": "主唱 Roger Miret 1964 年生於古巴哈瓦那，家人為逃離卡斯楚政權離開古巴，1968 年左右抵美，先後落腳紐約與紐澤西。",
+    "src": "https://en.wikipedia.org/wiki/Roger_Miret",
+    "src2": "https://kerrang.com/agnostic-front-leader-roger-miret-writes-about-poverty-prison-and-violence-in-autobiography",
+    "type": "politics"
+   },
+   {
+    "f": "Miret 年輕時因貧困與無家可歸涉入毒品買賣，1980 年代末因毒品案入獄近兩年；他在自傳《My Riot》與訪談中說，是入獄後才開始看清自己的生活。",
+    "src": "https://en.wikipedia.org/wiki/Roger_Miret",
+    "src2": "https://kerrang.com/agnostic-fronts-roger-miret-i-didnt-see-the-light-until-i-went-to-prison-i-didnt-see-a-lot-of-lights-until-then-i-was-living-like-nothing-mattered",
+    "type": "legal"
+   },
+   {
+    "f": "Miret 2021 年確診癌症，接受手術並住院多時，歌迷發起募款支付醫療費；同年 9 月樂團宣布癌細胞已清除、完全緩解，2025 年他受訪時說自己狀況很好、每半年追蹤一次。",
+    "src": "https://loudwire.com/agnostic-front-roger-remission-cancer-gofundme/",
+    "src2": "https://blabbermouth.net/news/agnostic-fronts-roger-miret-is-feeling-great-more-than-four-years-after-being-diagnosed-with-cancer",
+    "type": "health"
+   }
+  ],
+  "suggest": "首段加一句：主唱 Miret 生於古巴、童年隨家人逃離古巴到美國，成長於貧困，曾因毒品案入獄；病況可放最後一句，寫 2021 年確診、手術後緩解。",
+  "notes": "入獄年份各源不一（維基 1989 年被捕、近兩年、1990 年案件撤銷；Kerrang 摘要為 1987 年判決、22 個月），不寫年份，只寫「1980 年代末」。補洞稿原「避免項」中的 skinhead 指控與 1986 年 Donahue 爭議本次未查到來源，未收。2025 年訪談為 Blabbermouth 標題所示（開頁未做，標題與摘要一致），寫作層可略 2025 只寫「後來已緩解」。"
+ },
+ {
+  "key": "amon tobin",
+  "name": "Amon Tobin",
+  "status": "none",
+  "facts": [],
+  "suggest": "",
+  "notes": "無對應題材。"
+ },
+ {
+  "key": "andy stott",
+  "name": "Andy Stott",
+  "status": "none",
+  "facts": [],
+  "suggest": "",
+  "notes": "無對應題材。"
+ },
+ {
+  "key": "black uhuru",
+  "name": "Black Uhuru",
+  "status": "add",
+  "facts": [
+   {
+    "f": "三人陣容的女聲 Puma Jones（Sandra Jones）1978 年入團，因健康因素約在 1986 至 1987 年間離團，1990 年死於癌症。",
+    "src": "https://en.wikipedia.org/wiki/Black_Uhuru",
+    "src2": "https://www.encyclopedia.com/education/news-wires-white-papers-and-books/black-uhuru",
+    "type": "death"
+   },
+   {
+    "f": "團名中的 Uhuru 是斯瓦希里語的「自由」，樂團最早於 1972 年以 Uhuru 為名成立。",
+    "src": "https://en.wikipedia.org/wiki/Black_Uhuru",
+    "src2": "https://www.encyclopedia.com/education/news-wires-white-papers-and-books/black-uhuru",
+    "type": "politics"
+   }
+  ],
+  "suggest": "在提到《Anthem》的陣容時帶一句 Jones 後因病離團、1990 年逝世（只寫病名與年份）；團名由來可在開頭一句帶過。",
+  "notes": "Jones 離團年份各源 1986 或 1987 不一，只寫「1980 年代後期」。第二條只確證團名語意與 1972 年，拉斯塔法里等信仰色彩未在兩頁證實，不寫。"
+ },
+ {
+  "key": "blockhead",
+  "name": "Blockhead",
+  "status": "none",
+  "facts": [],
+  "suggest": "",
+  "notes": "無對應題材。"
+ },
+ {
+  "key": "boney m.",
+  "name": "Boney M.",
+  "status": "add",
+  "facts": [
+   {
+    "f": "1978 年 Boney M. 受邀到蘇聯演出，是首批在蘇聯登台的西方流行團體之一，在莫斯科紅場演出。",
+    "src": "https://www.foxnews.com/world/boney-m-singer-bobby-farrell-dies-on-tour",
+    "src2": "https://en.wikipedia.org/wiki/Boney_M.",
+    "type": "politics"
+   },
+   {
+    "f": "團體由製作人 Frank Farian 一手組成，錄音室裡的男聲多由 Farian 本人演唱，舞台上的 Bobby Farrell 以舞蹈和表演為主，沒有在唱片中演唱。",
+    "src": "https://en.wikipedia.org/wiki/Boney_M.",
+    "src2": "https://www.foxnews.com/world/boney-m-singer-bobby-farrell-dies-on-tour",
+    "type": "controversy"
+   },
+   {
+    "f": "Bobby Farrell 2010 年 12 月 30 日於俄羅斯聖彼得堡巡演期間在旅館房間過世，享年 61 歲，俄方調查結果為心臟疾病。",
+    "src": "https://en.wikipedia.org/wiki/Boney_M.",
+    "src2": "https://www.foxnews.com/world/russian-says-boney-m-singer-died-of-heart-disease",
+    "type": "death"
+   }
+  ],
+  "suggest": "正文可用一句帶出 1978 年訪蘇的成就；Farian 主導錄音與 Farrell 不唱的事實放在製作段，不用「假唱」字眼；Farrell 逝世只寫年份與地點。",
+  "notes": "維基稱 1978 年莫斯科演唱會上〈Rasputin〉被蘇聯當局禁止演出（單源，未收）。維基與 Fox 對 Farrell 死因：維基寫心臟衰竭，Fox 頁稱死因未明、後續另篇稱心臟病；寫作層只寫「心臟疾病」或不寫死因。Fox 頁未提「假唱」，Farrell 是否在現場假唱兩源說法不一，故不寫。Marcia Barrett 1990 年代初罹癌（維基單源）未收。"
+ },
+ {
+  "key": "busdriver",
+  "name": "Busdriver",
+  "status": "none",
+  "facts": [],
+  "suggest": "",
+  "notes": "無對應題材。"
+ },
+ {
+  "key": "butcher brown",
+  "name": "Butcher Brown",
+  "status": "none",
+  "facts": [],
+  "suggest": "",
+  "notes": "無對應題材。"
+ },
+ {
+  "key": "david murray octet",
+  "name": "David Murray Octet",
+  "status": "none",
+  "facts": [],
+  "suggest": "",
+  "notes": "無對應題材。"
+ },
+ {
+  "key": "david sylvian",
+  "name": "David Sylvian",
+  "status": "add",
+  "facts": [
+   {
+    "f": "Japan 1982 年底解散前，Sylvian 與貝斯手 Mick Karn 兩個強勢個性的衝突愈演愈烈，其中牽涉到 Karn 的女友、攝影師 Yuka Fujii 與 Sylvian 的關係；最後一場演出在 1982 年 12 月 16 日名古屋。",
+    "src": "https://en.wikipedia.org/wiki/David_Sylvian",
+    "src2": "https://movingtheriver.com/tag/richardbarbieri/",
+    "type": "private"
+   },
+   {
+    "f": "Sylvian 1992 年與歌手 Ingrid Chavez 結婚，育有兩個女兒，2003 年離婚。",
+    "src": "https://en.wikipedia.org/wiki/David_Sylvian",
+    "src2": "https://www.davidsylvian.com/other_writings/david_sylvian_biography.html",
+    "type": "private"
+   },
+   {
+    "f": "Mick Karn 2011 年 1 月 4 日因癌症在倫敦的家中過世，享年 52 歲。",
+    "src": "https://en.wikipedia.org/wiki/Mick_Karn",
+    "src2": "https://prsformusic.com/m-magazine/news/mick-karn",
+    "type": "death"
+   }
+  ],
+  "suggest": "Japan 時期一句帶到解散與他和 Karn 的決裂（寫成兩人個性與感情關係的衝突，不評斷誰對誰錯）；Karn 逝世與婚姻皆低優先，正文空間有限時只留 Japan 解散。",
+  "notes": "Fujii 是否「離開 Karn 轉向 Sylvian」只有單源且說法不一，寫作層建議用「牽涉到與 Karn 前女友的關係」。婚姻結束年份：維基與 davidsylvian.com 說法略有出入（維基 2003；官網『13 年婚姻』推 2005），不寫離婚年份。Sylvian 維基頁寫他曾有數年臨床憂鬱（單源，未收）。src2 為搜尋結果摘要所見，davidsylvian.com 與 prsformusic 未逐頁開。"
+ },
+ {
+  "key": "dead can dance",
+  "name": "Dead Can Dance",
+  "status": "none",
+  "facts": [],
+  "suggest": "",
+  "notes": "無對應題材。"
+ },
+ {
+  "key": "dead kennedys",
+  "name": "Dead Kennedys",
+  "status": "add",
+  "facts": [
+   {
+    "f": "1986 年，主唱 Jello Biafra 因專輯《Frankenchrist》附贈的 H.R. Giger 畫作海報，被洛杉磯檢方以「向未成年人散布有害內容」起訴；案件指控的是海報而非音樂或歌詞，陪審團最後以 7 比 5 偏向無罪而僵局，檢方撤案；樂團在官司的訴訟費壓力下於 1986 年解散。",
+    "src": "https://en.wikipedia.org/wiki/Jello_Biafra",
+    "src2": "https://www.decibelmagazine.com/?p=46574",
+    "type": "legal"
+   },
+   {
+    "f": "1979 年 Biafra 以「There's always room for Jello」為口號參選舊金山市長，十位候選人中名列第四、得票約 6,500 張，主張包括禁止汽車進入市區、讓空屋可合法占居、警察由轄區居民選出；此後市議會通過禁止候選人使用「搞笑名字」。",
+    "src": "https://en.wikipedia.org/wiki/Jello_Biafra",
+    "src2": "https://www.fundinguniverse.com/company-histories/alternative-tentacles-records-history/",
+    "type": "politics"
+   },
+   {
+    "f": "1998 年前團員起訴 Biafra 與他的廠牌 Alternative Tentacles 短付版稅；2000 年 5 月舊金山陪審團判原告勝訴，約 22 萬美元賠償，2003 年上訴維持金額。",
+    "src": "https://www.mtv.com/news/a8aqih/jello-biafra-ordered-to-pay-ex-dead-kennedys-bandmates-200000",
+    "src2": "https://blabbermouth.net/news/jello-biafra-gets-shot-down-by-dead-kennedys",
+    "type": "legal"
+   }
+  ],
+  "suggest": "主軸用 Frankenchrist 官司（海報、陪審僵局、樂團因此解散）；市長選舉一句帶出政治性格；版稅官司是後話，正文只在空間夠時一句。",
+  "notes": "審判時間：維基 Dead Kennedys 條寫 1987 年 8 月陪審僵局，維基 Biafra 條與 Decibel 寫 1986 年；起訴 1986 年 6 月兩處一致，結果寫「陪審團僵局」不寫判決年份。得票 3.79%（6,591 票）；Funding Universe 稱不到 3%。賠償金額各報導 20 至 22 萬不一，寫「約 20 萬美元」較穩。1979 市長選舉第二源為搜尋摘要所見；src2 皆未逐頁開。"
+ },
+ {
+  "key": "deathspell omega",
+  "name": "Deathspell Omega",
+  "status": "none",
+  "facts": [],
+  "suggest": "",
+  "notes": "樂團匿名，政治立場僅有自述，補洞稿僅單源；不收。"
+ },
+ {
+  "key": "deca joins",
+  "name": "deca joins",
+  "status": "none",
+  "facts": [],
+  "suggest": "",
+  "notes": "無對應題材。"
+ },
+ {
+  "key": "denzel curry",
+  "name": "Denzel Curry",
+  "status": "add",
+  "facts": [
+   {
+    "f": "2014 年 2 月 27 日，Denzel Curry 的兄長 Treon Johnson 在佛羅里達州 Hialeah 遭警方使用電擊槍與胡椒噴霧制伏後死亡；家屬認為屬警察暴力。Curry 後來在紀錄片《Knotty Head》與多次訪談中談到這件事與自己的憂鬱。",
+    "src": "https://www.miaminewtimes.com/music/denzel-curry-on-tasering-death-of-his-brother-treon-johnson-in-hialeah-police-incident-6464586/",
+    "src2": "https://www.xxlmag.com/denzel-curry-knotty-head-documentary/",
+    "type": "death"
+   }
+  ],
+  "suggest": "在成長背景或作品題材處用一句：2014 年兄長在警方執法過程中死亡，成為他談憂鬱與創傷的主題；語氣克制，不寫案情細節。",
+  "notes": "補洞稿原記為『兄長 2014 年過世涉及警方執法』，本次確認兄長名 Treon Johnson。憂鬱的成因 Curry 自列多項（兄長、母親離家、女友離開），不歸為單一原因。2022 年 Musicians For Palestine 簽署為維基單源，不收。"
+ },
+ {
+  "key": "disclosure",
+  "name": "Disclosure",
+  "status": "none",
+  "facts": [],
+  "suggest": "",
+  "notes": "無對應題材。"
+ },
+ {
+  "key": "dmx",
+  "name": "DMX",
+  "status": "add",
+  "facts": [
+   {
+    "f": "DMX（Earl Simmons）自述 14 歲起染上古柯鹼，成癮長期困擾他，2019 年取消巡演入勒戒所；因逃稅被判一年徒刑入獄。",
+    "src": "https://www.nbcconnecticut.com/entertainment/entertainment-news/rapper-dmx-dead-at-50-after-heart-attack-family-confirms/",
+    "src2": "https://www.cbsnews.com/losangeles/news/rapper-dmx-dies-age-50-heart-attack/",
+    "type": "addiction"
+   },
+   {
+    "f": "2021 年 4 月 2 日他心臟病發送醫，4 月 9 日家人宣布過世，享年 50 歲；紐約州威徹斯特郡法醫辦公室後來認定是古柯鹼引發的心臟病發。",
+    "src": "https://www.cbsnews.com/losangeles/news/rapper-dmx-dies-age-50-heart-attack/",
+    "src2": "https://thegrio.com/2021/07/09/dmx-cause-of-death-confirmed",
+    "type": "death"
+   }
+  ],
+  "suggest": "成癮是 DMX 招牌身分之一：用一句寫他的音樂與信仰、掙扎並陳（自述、入獄、勒戒）；逝世只寫 2021 年與享年，死因可平實帶一句或略去。",
+  "notes": "逃稅判刑年份：搜尋摘要只說「數年前」，未證實 2018，建議寫「因逃稅入獄一年」不寫年份。死因第二源 thegrio 為搜尋摘要所見，未逐頁開；Digital Music News 曾報芬太尼與酒精等混用，後續醫檢報告未提，不收。2026 年街道命名依規則不寫。成癮『14 歲』出自 NBC 單頁，CBS 頁僅說『青少年時期起』，寫作層用『少年時期』。"
+ }
+]

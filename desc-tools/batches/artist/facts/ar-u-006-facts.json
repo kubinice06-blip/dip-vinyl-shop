@@ -1,0 +1,4058 @@
+[
+ {
+  "key": "regina spektor",
+  "name": "Regina Spektor",
+  "tier": "B",
+  "cards": 4,
+  "mainGenre": "rock",
+  "yearRange": [
+   2002,
+   2022
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Begin to Hope",
+    "year": 2006,
+    "genres": [
+     "rock",
+     "folk"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Home, before and after",
+    "year": 2022,
+    "genres": [
+     "pop",
+     "folk"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Songs",
+    "year": 2002,
+    "genres": [
+     "folk",
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Soviet Kitsch",
+    "year": 2003,
+    "genres": [
+     "rock",
+     "folk"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 4
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "richard \"groove\" holmes",
+  "name": "Richard \"Groove\" Holmes",
+  "tier": "B",
+  "cards": 4,
+  "mainGenre": "jazz",
+  "yearRange": [
+   1961,
+   1971
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Soul Message",
+    "year": 1965,
+    "genres": [
+     "jazz",
+     "soul"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Groove",
+    "year": 1961,
+    "genres": [
+     "soul",
+     "jazz"
+    ],
+    "composer": null
+   },
+   {
+    "album": "After Hours",
+    "year": 1962,
+    "genres": [
+     "jazz",
+     "soul"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Comin' On Home",
+    "year": 1971,
+    "genres": [
+     "jazz",
+     "soul"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 11,
+   "researchRecords": 2,
+   "facts": 2,
+   "publishedDescs": 4,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c139-a",
+    "album": "After Hours",
+    "facts": [
+     {
+      "f": "release-group b163ab7b 的欄位：title「After Hours」、artist-credit「Richard “Groove” Holmes」（Person 726cfe69）、first-release-date 1962、primary-type Album、secondary-types 空、**轄下只有 2 筆**。**原盤 900299db 是 1962 US Pacific Jazz PJ-59、12 吋 8 軌**（無月日）。MB 記的 8 軌與逐軌長度：〈Hallelujah, I Love Her So〉2:30、〈After Hours〉5:25、〈Groove's Bag〉6:45、〈Sweatin'〉3:35／〈Groove Bird〉5:32、〈Minor Surgery〉4:13、〈Jenne〉4:55、〈Do It My Way〉2:54。另一筆是 1996 US CD《After Hours》（Blue Note CDP 7243 8 37986 2 9，**13 軌**，把原盤八軌打散重排並加入〈This Here〉〈It Might As Well Be Spring〉〈Moose The Mooche〉〈Later〉〈Secret Love〉〈Denise〉等軌）。",
+      "src": "https://musicbrainz.org/ws/2/release?release-group=b163ab7b-0e49-4ba0-9049-693007fbbd1a&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c143-a",
+    "album": "Comin' On Home",
+    "facts": [
+     {
+      "f": "**MB 的 catno 串錯廠牌（第 664 條第 1 點）已覆核成立**：Discogs `database/search?catno=BST 84372` 回 8 筆，**全部是本盤**（1971 美國原壓群、1972、1975 各有）；**PR 7514 則是 Prestige 的號**。真正的目錄號是 **BST 84372**。",
+      "src": "https://api.discogs.com/database/search?catno=BST%2084372"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "After Hours",
+    "manifest": "onboarding-manifest-c139-20260917.json",
+    "desc": "八軌分成兩批錄，吉他手從 Gene Edwards 換成了 Joe Pass。兩批都錄於好萊塢的 Pacific Jazz 錄音室，三軌來自 1961 年、五軌 1962 年，鼓也從 Leroy Henderson 換成 Lawrence Marable。八軌裡四首是他自作，標題曲出自 Avery Parrish，製作是 Richard Bock。該廠 1966 年的廣告把他的作品連目錄號列出，本盤排在《Somethin' Special》之後，1962 年發行。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=b163ab7b-0e49-4ba0-9049-693007fbbd1a&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://api.discogs.com/database/search?catno=PJ-59",
+     "https://www.worldradiohistory.com/Archive-All-Music/Cash-Box/60s/1966/CB-1966-08-27.pdf",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/60s/1962/Billboard%201962-11-03.pdf",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/60s/1962/Billboard%201962-07-21.pdf",
+     "https://itunes.apple.com/search?term=Groove%20Holmes%20After%20Hours&entity=album&country=gb&limit=10",
+     "https://musicbrainz.org/release-group/b163ab7b-0e49-4ba0-9049-693007fbbd1a"
+    ]
+   },
+   {
+    "album": "Comin' On Home",
+    "manifest": "onboarding-manifest-c143-20260917.json",
+    "desc": "樂評開始用製作人認廠牌，Billboard 稱它是 George Butler 的製作。1971 年 5 月 19 日錄於紐約 A&R Studios，七軌兩種編制：〈Theme from Love Story〉的電貝斯是 Chuck Rainey，其餘六軌換成 Jerry Jemmott，還多了 Weldon Irvine 的電鋼琴。曲目有〈Mr. Clean〉與〈Wave〉。那句話出自同年 11 月 13 日的評介欄，1971 年 Blue Note BST 84372。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=7f973c83-4d76-3a69-81d6-8f9fa2be9af3&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://api.discogs.com/database/search?catno=BST%2084372",
+     "https://www.jazzdisco.org/blue-note-records/catalog-4300-series/",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/70s/1971/Billboard%201971-11-13.pdf",
+     "https://musicbrainz.org/release-group/7f973c83-4d76-3a69-81d6-8f9fa2be9af3"
+    ]
+   },
+   {
+    "album": "Soul Message",
+    "manifest": "onboarding-manifest-c34-jazz-20260821.json",
+    "desc": "1965 年 8 月 3 日錄音，Prestige 發行（PR 7435）。Richard「Groove」Holmes 以 Hammond 風琴左手踏出低音線，搭配 Gene Edwards 的吉他與 Jimmie Smith 的鼓，是 soul jazz 三件式編制的典型做法。盤中收錄他最廣為流傳的〈Misty〉完整版（約六分鐘），另有 Clifford Brown 的〈Daahoud〉與 Horace Silver 的〈Song for My Father〉。AllMusic 給四顆半星，說他證明了音樂可以既有價值又賣得動。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Soul_Message",
+     "https://en.wikipedia.org/wiki/Richard_%22Groove%22_Holmes",
+     "https://musicbrainz.org/release-group/3ddb1904-c66c-3831-ada4-8588c95764e2"
+    ]
+   },
+   {
+    "album": "Groove",
+    "manifest": "onboarding-manifest-c37-jazz-20260823.json",
+    "desc": "風琴手 Richard \"Groove\" Holmes 1961 年在 Pacific Jazz 的出道盤，原始全題冠上「Les McCann Presents」，鋼琴手 Les McCann 親自站台，並請來搖擺時代次中音大將 Ben Webster 與長號手 Tricky Lofton 助陣。Holmes 以腳鍵盤走出飽滿低音線，Webster 氣音濃厚的老派樂句與年輕節奏組的律動對接，藍調與敘事曲各佔一半，出道即定下他日後 soul jazz 路線的底盤。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Groove_(Richard_%22Groove%22_Holmes_album)",
+     "https://musicbrainz.org/release-group/842bcac1-00fb-37ba-a2aa-b5dfeaf1ff1e"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "rob zombie",
+  "name": "Rob Zombie",
+  "tier": "B",
+  "cards": 4,
+  "mainGenre": "rock",
+  "yearRange": [
+   1998,
+   2026
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Hellbilly Deluxe",
+    "year": 1998,
+    "genres": [
+     "rock",
+     "electronic"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Venomous Rat Regeneration Vendor",
+    "year": 2013,
+    "genres": [
+     "rock",
+     "electronic"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Educated Horses",
+    "year": 2006,
+    "genres": [
+     "rock",
+     "electronic"
+    ],
+    "composer": null
+   },
+   {
+    "album": "The Great Satan",
+    "year": 2026,
+    "genres": [
+     "rock",
+     "electronic"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 4
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "ronnie laws",
+  "name": "Ronnie Laws",
+  "tier": "B",
+  "cards": 4,
+  "mainGenre": "jazz",
+  "yearRange": [
+   1975,
+   1980
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Pressure Sensitive",
+    "year": 1975,
+    "genres": [
+     "jazz",
+     "soul"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Friends and Strangers",
+    "year": 1977,
+    "genres": [
+     "jazz",
+     "soul"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Fever",
+    "year": 1976,
+    "genres": [
+     "jazz",
+     "soul"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Every Generation",
+    "year": 1980,
+    "genres": [
+     "jazz",
+     "soul"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Tribute to the Legendary Eddie Harris",
+    "year": 1997,
+    "genres": [
+     "jazz",
+     "soul"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Portrait of the Isley Brothers: Harvest for the World",
+    "year": 1998,
+    "genres": [
+     "jazz",
+     "soul"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 28,
+   "researchRecords": 4,
+   "facts": 10,
+   "publishedDescs": 5,
+   "albumsWithoutMaterial": 1
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c144-b",
+    "album": "Fever",
+    "facts": [
+     {
+      "f": "⚠ **本層推翻第 791 條對本張的舉例**。第 791 條寫「《Fever》同時進 Soul LPs 與主榜、**爵士榜沒進**」——**這是錯的，本張的爵士榜名次是本組最高的**：Billboard 的 Best Selling Jazz LPs **1976-06-12 p42 新進第 22 名 → 06-26 p105 第 5 名 → 07-10 p50 第 4 名 → 08-14 p27 第 6 名 → 09-11 p32 第 3 名**（在榜十四週以上）。三榜的完整形狀是：**爵士榜最高第 3**、**Soul LPs 最高第 13**（Billboard 1976-07-17 p41；維基引 Billboard 的歷史榜單同樣寫 No. 13）、**Top LP's & Tape 最高約第 46**（1976-07-17 p62 → 07-31 p66 第 50 → 08-14 p158 第 49 → 08-28 p80 第 66）。→ **第 791 條「1977 年起主戰場是 R&B 榜、查榜一律 Soul 先」的查法本身仍然對，但它拿《Fever》當「爵士榜沒進」的實例是誤記，後層引用時要改掉。**",
+      "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/70s/1976/Billboard%201976-09-11.pdf"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c145-b",
+    "album": "Every Generation",
+    "facts": [
+     {
+      "f": "release-group 87fc70fd：title「Every Generation」、artist-credit `Ronnie Laws`（e26aa662 Person）、first-release-date **1980**、primary-type Album、secondary-types 空。release 端點回**四筆**：3b7ace7f＝1980 GB Official 12 吋黑膠 8 軌、**United Artists／UAG 30289**；98fabc7b＝1980 US 12 吋黑膠 8 軌、**United Artists／LT-1001**；844468bb＝2005 GB CD、a9236a59＝2005-06-21 US CD（**這兩張才是 Blue Note 的號**）。→ **原盤的廠牌是 United Artists，Blue Note 版是 2005 年的 CD**（第 849 條）。軌長全填：A1〈Young Child〉4 分 39 秒／A2〈Never Get Back to Houston〉3 分 3／A3〈Every Generation〉5 分 50／A4〈Tomorrow〉3 分 45／B1〈OTBA Law〉4 分 42／B2〈Love's Victory〉4 分 26／B3〈Thoughts & Memories〉4 分 21／B4〈As One〉4 分 9，合計約 34 分 55 秒。",
+      "src": "https://musicbrainz.org/ws/2/release?release-group=87fc70fd-b8ab-4983-afed-990d3f112823&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+     },
+     {
+      "f": "**榜位——三榜齊上，而且是本組成績最好的一張**（第 791／853 條的查榜順序）：**Billboard Soul LPs** 1980-02-16 進榜、**1980-03-22 升到第 6 名**（最高），到 1980-04-26 仍在榜；**Billboard 爵士榜** 1980-02-23 第 39 名起跳，**1980-03-08 第 1 名、03-22 第 2 名、03-29 第 3 名、04-12 第 5 名**，在榜到四月底；**主榜 Top LPs & Tape** 同期在榜（最高約 #73，1980-04-19）。**Billboard 1980-04-05 p43 的新片目錄頁另印「LAWS, RONNIE Every Generation LP United Artists LT 1001」。** ⚠ **這是本組二十一張裡唯一一張登上爵士榜冠軍的碟。**",
+      "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/80s/1980/BB-1980-03-08.pdf"
+     },
+     {
+      "f": "**⚠ 第 843 條的現場：`LT-1001` 這個號在 Discogs 反查回 48 筆，絕大多數與 Blue Note 無關**——La Jit《Do Me Like》（La Trebor）、Vibe Tribe Soundsystem（德國 7 吋）、Bowmar Records 的教學唱片、Licha Torres 的墨西哥盤、Papa-San 的牙買加 7 吋、愛爾蘭的 The Morinos……**`LT-` 前綴是 Liberty／United 集團 1980 年起的共用號段，也被別家廠牌各自用過，光看目錄號判不出廠牌。** 反查裡真正是本盤的只有七筆（美國黑膠三筆、8 軌帶一筆、卡帶一筆、加拿大一筆、菲律賓一筆），**全部標 1980、全部掛 United Artists Records**。",
+      "src": "https://api.discogs.com/database/search?catno=LT-1001&per_page=100"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c154-b",
+    "album": "Tribute to the Legendary Eddie Harris",
+    "facts": [
+     {
+      "f": "⚠ **紙本把發行日釘到天，比策展層記的「early April release」更準一格。** **Billboard 1997-04-12 p30 的 Jazz/Blue Notes 專欄（接前頁）逐字**：「…**To The Legendary Eddie Harris' is due from Blue Note Tuesday (8)**. **It includes Harris beauts such as 'Freedom Jazz Dance' and 'Cold Duck Time'**」——**1997-04-08（週二）是街頭日**。⚠ **這一期是 1997 年五十一期裡唯一檔名用 `BB-` 前綴的一期**（其餘五十期是 `Billboard-`），**抓檔時要注意**（本段已知的檔名不規則，見 `SOURCES-billboard-cashbox.md`）。**第二則紙本**：**Billboard 1997-06-28 p32 的國際欄逐字「Ronnie Laws will also probably be touring in September, in support of a new album to follow the early April release of 'Tribute To The Legendary Eddie Harris.'」**（同期 p33 的 Blue Note 全版廣告也列名，OCR 逐字「RONNIE LAWS … TRIBUTE TO EDDIE HAiF1S #55330」，**目錄號 55330 正確、盤名被 OCR 吃掉**）。",
+      "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1997/BB-1997-04-12.pdf"
+     },
+     {
+      "f": "**致敬對象的死訊（本卡的時間軸前提，本層自查）**：**Billboard 1996-11-23 p14 的訃聞「Jazz World Mourns Horn Virtuoso Harris」（BY JIM MACNIE）逐字**：「In a club in Rome, on the evening of **Nov. 6**, saxophonist **James Moody** called for a moment of silence, then launched into the standard **'Freedom Jazz Dance.' The tune's composer is Eddie Harris**, a virtuoso horn player. **Harris had died of heart failure the night before in a Los Angeles hospital**」——**Eddie Harris 卒於 1996-11-05，洛杉磯，心衰竭**。**Laws 這張是身後五個月出的致敬盤**，**不是 Harris 本人的舊錄音選輯**（與 c-153 b 第 1231 條退掉的 Jimmy McGriff《Tribute to Basie》形狀相反——那張的母體是 1966 年 Solid State 的舊錄音）。⚠ **Harris 本人在池中零列**（實掃 27684 列），**但池中有 Eddie Harris Quartet《Freedom Jazz Dance》1994 一張**——**盤名等於本張第 2 軌的軌名（第 1181／1192 條第六種盲區本卡唯一一處命中）**，**逐軌比對後是同名不同錄音（第 1049 條），零內容重疊。**",
+      "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1996/BB-1996-11-23.pdf"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c155-a",
+    "album": "Portrait of the Isley Brothers: Harvest for the World",
+    "facts": [
+     {
+      "f": "release-group `27003419-916d-4a68-8c6f-3bdc69c082ed`：title「Portrait of the Isley Brothers: Harvest for the World」、artist-credit「Ronnie Laws」（`e26aa662` Person）、**first-release-date `1998-03-24`**、primary-type Album、secondary-types 空，genres／tags `jazz`＋`soul jazz`。**轄下三筆 release**：`9dccba2c`（**`1998-03-24` US Official CD 8 軌**，Blue Note／`CDP 7243 8 57875 2 2`，bc 724385787522）、`0d381d59`（1998 XE CD 8 軌，`7243 8 57875 2 2`，同 bc）、`dfa0c3cb`（**2004-12-01 XW Digital Media 8 軌**，`Angel Records`，bc 724385787553）。**八軌**：Prelude to Harvest (152s)／Let Me Down Easy (374)／At Your Best You Are Love (351)／Who Loves You Better (303)／Harvest for the World (214)／People of Today (315)／You Still Feel the Need (292)／So You Wanna Stay Down (267)。",
+      "src": "https://musicbrainz.org/ws/2/release?release-group=27003419-916d-4a68-8c6f-3bdc69c082ed&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+     },
+     {
+      "f": "⚠⚠ **系列名在 Discogs 的廠牌欄裡，MB 完全看不到。** **Discogs 美版 14140232 的 labels 陣列逐字包含 `The Blue Note Cover Series`**（與 `Blue Note / CDP 7243 8 57875 2 2` 並列），**歐版 9153010、三筆俱樂部版（11830376／1344198／18296818）與美版宣傳盤 37039821 也都掛同一個系列名。** **→ 這是 c-154 a 第 1267 條立的那條線的第五張（前四張是《Natty Dread》《Deja Vu》《What’s Going On》與同批 b 組的《There’s a Riot Goin’ On》）；MB 的 `secondary-types` 是空的，列舉檔的 `reissueSeries` 也是 `[]`，系列歸屬只有 Discogs 的廠牌欄看得到。**",
+      "src": "https://api.discogs.com/releases/14140232"
+     },
+     {
+      "f": "⚠⚠ **編制欄是「查不到」而不是「逐軌變動」——本層覆核策展層第 1329 條末段那一格，成立而且更嚴重。** **Discogs 美版 14140232 的 credits 欄逐字只有四筆，全是非演奏職務**：`F. Byron Clark — Engineer, Mixed By`、`Darren Mora — Engineer [Assistant]`、`Melvin Sheppard — Engineer [Assistant]`、**`Ron McMaster — Mastered By`**。**一個樂手名字都沒有，連 Ronnie Laws 自己的薩克斯風都沒掛。** **MB 的三筆 release 也沒有任何 relations。** **→ 寫作層不得自行補伴奏名單**（與 c-154 b 的 Lena Horne《Being Myself》同形）。",
+      "src": "https://api.discogs.com/releases/14140232"
+     },
+     {
+      "f": "⚠⚠ **盤面的 ℗© 年印錯了一個位數，寫作層絕對不能引。** **Discogs 美版 14140232 的 notes 欄整段只有一行，逐字是「℗ © **1988** Capitol Records, Inc.」**——**比實際早十年。** **同一筆條目的 `year` 欄仍是 1998**，**另三筆 Discogs 條目（歐版 9153010、兩筆俱樂部版）也都是 1998**，**MB 的美版 release 是 `1998-03-24`。** **→ 那不是第 550 條的「年份欄抄盤面 ℗」，是盤面（或 Discogs 的 notes 轉錄）本身打錯一個位數。策展層已經標出這一點，本層覆核成立。**",
+      "src": "https://api.discogs.com/releases/14140232"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Fever",
+    "manifest": "onboarding-manifest-c144-20260917.json",
+    "desc": "製作交給 Crusaders 的長號手，出來的是一張同時上三張榜的碟。1975 年底起錄於洛杉磯 Total Experience，1976 年 5 月上市，Wayne Henderson 製作。Laws 吹次中音與高音薩克斯風，配 Hepburn 兄弟的電鋼琴；1976 年 1 月那場整組換人，Bobby Lyle 接手。標題曲翻自 Little Willie John。Billboard 爵士榜第 3 名、在榜十四週以上，Soul 榜第 13。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=14e572bb-13f9-437a-bda4-ebd8af34f3bf&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://www.jazzdisco.org/blue-note-records/catalog-bn-la-series/",
+     "https://api.discogs.com/releases/744169",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/70s/1976/Billboard%201976-05-29.pdf",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/70s/1976/Billboard%201976-09-11.pdf",
+     "https://en.wikipedia.org/wiki/Fever_(Ronnie_Laws_album)",
+     "https://musicbrainz.org/release-group/14e572bb-13f9-437a-bda4-ebd8af34f3bf"
+    ]
+   },
+   {
+    "album": "Every Generation",
+    "manifest": "onboarding-manifest-c145-20260917.json",
+    "desc": "內頁光是列出借將的出處就寫了七行。這是同期新作，1980 年 2 月由 United Artists 以 LT-1001 上市。借將陣容是重點：Earth, Wind & Fire 的 Larry Dunn、Crusaders 的 Joe Sample、Patrice Rushen 與 Bobby Lyle，加上他哥哥 Hubert Laws。同名曲五分五十秒最長，也是拆出來的單曲。Laws 自己製作。1980 年 3 月它坐上 Billboard 爵士榜第一名。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=87fc70fd-b8ab-4983-afed-990d3f112823&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://api.discogs.com/releases/1343581",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/80s/1980/BB-1980-01-26.pdf",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/80s/1980/BB-1980-03-08.pdf",
+     "https://api.discogs.com/database/search?catno=LT-1001&per_page=100",
+     "https://itunes.apple.com/lookup?id=715543106&entity=song&country=us&limit=200",
+     "https://musicbrainz.org/release-group/87fc70fd-b8ab-4983-afed-990d3f112823"
+    ]
+   },
+   {
+    "album": "Tribute to the Legendary Eddie Harris",
+    "manifest": "onboarding-manifest-c154-20261004.json",
+    "desc": "致敬對象走後五個月，這張碟就在四月八日上了架。Eddie Harris 1996 年 11 月 5 日過世，本張排 1997 年 4 月 8 日。錄於洛杉磯 Capitol 與 Mad Hatter 兩間棚，日期沒印。十三人掛名、零軌號，只有 Laws 全在：鼓、貝斯、小號各兩位並列，Patrice Rushen 只掛鋼琴獨奏，另有 Andrea Coleman 人聲。八軌裡七首是 Harris 的曲，〈Compared to What〉出自 Gene McDaniels。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=0a0fc3a7-e174-35fe-92bf-ca32a220241e&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://api.discogs.com/releases/5430957",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1997/BB-1997-04-12.pdf",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1996/BB-1996-11-23.pdf",
+     "https://itunes.apple.com/lookup?id=723947788&entity=song&limit=200&country=us",
+     "https://coverartarchive.org/release-group/0a0fc3a7-e174-35fe-92bf-ca32a220241e",
+     "https://musicbrainz.org/release-group/0a0fc3a7-e174-35fe-92bf-ca32a220241e"
+    ]
+   },
+   {
+    "album": "Portrait of the Isley Brothers: Harvest for the World",
+    "manifest": "onboarding-manifest-c155-20261004.json",
+    "desc": "盤面只列了四個名字，全是工程與母帶，沒有一個是樂手。1998 年 3 月 24 日上街，屬 The Blue Note Cover Series，整張翻 The Isley Brothers 1976 年的同名盤。錄音與混音都在洛杉磯 Mad Hatter Studios，母帶 Ron McMaster 在 Capitol Studios 做。連 Laws 自己的薩克斯風都沒掛。八軌以 152 秒的〈Prelude to Harvest〉開場，是這系列的第五張。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=27003419-916d-4a68-8c6f-3bdc69c082ed&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://api.discogs.com/releases/14140232",
+     "https://itunes.apple.com/lookup?upc=724385787522&country=us&entity=song&limit=200",
+     "https://itunes.apple.com/lookup?id=724774277&country=us&entity=song&limit=200",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1999/BB-1999-12-11.pdf",
+     "https://musicbrainz.org/release-group/27003419-916d-4a68-8c6f-3bdc69c082ed"
+    ]
+   },
+   {
+    "album": "Friends and Strangers",
+    "manifest": "onboarding-manifest-c39-funk-20260823.json",
+    "desc": "休士頓出身的薩克斯風手 Ronnie Laws 是長笛手 Hubert Laws 的弟弟，1972 年曾待過 Earth, Wind & Fire，一年半後轉個人名義，1975 年以《Pressure Sensitive》在 Blue Note 出道。1977 年的第三張作品由 Blue Note／United Artists 發行，原盤編號 BN-LA730-H，是他唯一取得 RIAA 金唱片認證的錄音。八首曲子以電鋼琴和聲鋪底，貝斯反覆固定短句，他的次中音音色偏乾偏亮；標題曲走中速 jazz-funk 律動，長年是電台與 DJ 的取材對象。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Ronnie_Laws",
+     "https://musicbrainz.org/release-group/93110aa5-7bf1-3234-aac8-7b835ad8564c"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "run the jewels",
+  "name": "Run the Jewels",
+  "tier": "B",
+  "cards": 4,
+  "mainGenre": "hiphop",
+  "yearRange": [
+   2013,
+   2020
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Run the Jewels 2",
+    "year": 2014,
+    "genres": [
+     "hiphop"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Run the Jewels 3",
+    "year": 2016,
+    "genres": [
+     "hiphop"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Run the Jewels",
+    "year": 2013,
+    "genres": [
+     "hiphop"
+    ],
+    "composer": null
+   },
+   {
+    "album": "RTJ4",
+    "year": 2020,
+    "genres": [
+     "hiphop"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 4
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "ryan adams",
+  "name": "Ryan Adams",
+  "tier": "B",
+  "cards": 4,
+  "mainGenre": "rock",
+  "yearRange": [
+   2000,
+   2015
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Heartbreaker",
+    "year": 2000,
+    "genres": [
+     "folk"
+    ],
+    "composer": null
+   },
+   {
+    "album": "1989",
+    "year": 2015,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Ryan Adams",
+    "year": 2014,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Easy Tiger",
+    "year": 2007,
+    "genres": [
+     "rock",
+     "folk"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 4
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "schoolboy q",
+  "name": "ScHoolboy Q",
+  "tier": "B",
+  "cards": 4,
+  "mainGenre": "hiphop",
+  "yearRange": [
+   2011,
+   2024
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Blank Face LP",
+    "year": 2016,
+    "genres": [
+     "hiphop",
+     "jazz"
+    ],
+    "composer": null
+   },
+   {
+    "album": "BLUE LIPS",
+    "year": 2024,
+    "genres": [
+     "hiphop",
+     "jazz"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Habits & Contradictions",
+    "year": 2012,
+    "genres": [
+     "hiphop"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Setbacks",
+    "year": 2011,
+    "genres": [
+     "hiphop"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 4
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "seefeel",
+  "name": "Seefeel",
+  "tier": "B",
+  "cards": 4,
+  "mainGenre": "electronic",
+  "yearRange": [
+   1993,
+   2026
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Quique",
+    "year": 1993,
+    "genres": [
+     "electronic",
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Succour",
+    "year": 1995,
+    "genres": [
+     "electronic",
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Sol.Hz",
+    "year": 2026,
+    "genres": [
+     "electronic",
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "(Ch-Vox)",
+    "year": 1996,
+    "genres": [
+     "electronic",
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 4
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "shackleton",
+  "name": "Shackleton",
+  "tier": "B",
+  "cards": 4,
+  "mainGenre": "electronic",
+  "yearRange": [
+   2009,
+   2020
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Music for the Quiet Hour / The Drawbar Organ EPs",
+    "year": 2012,
+    "genres": [
+     "electronic"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Three EPs",
+    "year": 2009,
+    "genres": [
+     "electronic"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Music for the Quiet Hour",
+    "year": 2012,
+    "genres": [
+     "electronic"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Primal Forms",
+    "year": 2020,
+    "genres": [
+     "electronic",
+     "soul"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 4
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "shawn mendes",
+  "name": "Shawn Mendes",
+  "tier": "B",
+  "cards": 4,
+  "mainGenre": "folk",
+  "yearRange": [
+   2015,
+   2020
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Illuminate",
+    "year": 2016,
+    "genres": [
+     "folk",
+     "pop"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Wonder",
+    "year": 2020,
+    "genres": [
+     "folk",
+     "pop"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Shawn Mendes",
+    "year": 2018,
+    "genres": [
+     "pop"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Handwritten",
+    "year": 2015,
+    "genres": [
+     "folk",
+     "pop"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 4
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "shirley scott",
+  "name": "Shirley Scott",
+  "tier": "B",
+  "cards": 4,
+  "mainGenre": "jazz",
+  "yearRange": [
+   1958,
+   1974
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Great Scott!",
+    "year": 1958,
+    "genres": [
+     "jazz",
+     "soul"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Soul Shoutin'",
+    "year": 1964,
+    "genres": [
+     "jazz",
+     "soul"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Queen of the Organ",
+    "year": 1965,
+    "genres": [
+     "jazz",
+     "soul"
+    ],
+    "composer": null
+   },
+   {
+    "album": "One for Me",
+    "year": 1974,
+    "genres": [
+     "jazz",
+     "soul"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 11,
+   "researchRecords": 1,
+   "facts": 4,
+   "publishedDescs": 4,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c86-b",
+    "album": "One for Me",
+    "facts": [
+     {
+      "f": "MB 轄下唯一那筆 1974 US release（2de279ee）：status Official、title《One for Me》、artist-credit「Shirley Scott」、廠牌欄 Strata-East、編號欄 SES-7430、一張 12\" Vinyl、track-count 5、barcode 欄 null、date 欄只有年。逐軌軌號與曲長：1〈What Makes Harold Sing?〉8:53、2〈Keep on Movin' On〉9:52、3〈Do You Know a Good Thing When You See One?〉8:51、4〈Big George〉5:22、5〈Don't Look Back〉8:56。**MB 這個 release-group 底下只有這一筆——Discogs 上 2020 年那四筆英國與數位再發 MB 都沒有收**（第 136 條）。",
+      "src": "https://musicbrainz.org/release/2de279ee-c7e1-4af2-93ab-8dab2810b5d0"
+     },
+     {
+      "f": "Discogs 原盤條目 1739899 的欄位：title《One For Me》、year 與 released 欄皆 1974、國別 US、格式欄 Vinyl ×1［LP, Album］、廠牌欄 Strata-East、編號欄 SES-7430、genre 欄 Jazz、style 欄 Post Bop。公司欄六條：Published By「Shibit Music」與「Matron Music」、Copyright (c) 與 Phonographic Copyright (p) 皆「Strata-East Records, Inc.」、Recorded At「Blue Rock Studio」、Mastered At「Generation Sound Studios」。**identifiers 欄是空的**（沒有 Matrix / Runout、沒有 Rights Society）——第 136 條：這是 Discogs 這份條目上沒有，不是唱片上沒刻。",
+      "src": "https://www.discogs.com/release/1739899"
+     },
+     {
+      "f": "同一條目的 credit 欄逐條：**Organ「Shirley Scott」**；**Tenor Saxophone「Harold Vick」**；Drums「Billy Higgins」；Cowbell「Jimmy Hopps」(A2)；Engineer [Recording]「David Horowitz」與「Eddie Korvin」；Mastered By「Dave Crawford (2)」；Coordinator [Production]「MsManagement」；Design [Cover]「Gene Massimo」；Photography By「Irene Kubota」；**Other [Inspiration]「Charles Butler」**（Discogs 把「Inspiration」也編成一個 credit 角色）。**原盤 credit 欄沒有貝斯手**——編制是管風琴、次中音薩克斯風與鼓三人，外加一軌的牛鈴。",
+      "src": "https://www.discogs.com/release/1739899"
+     },
+     {
+      "f": "Discogs 2020 年那筆英國黑膠 15428882 的欄位：released 欄 2020-05-22、廠牌欄 Arc Records (13) ARC003、格式欄 Vinyl ×1［LP, Album, Reissue］、genre 欄 Jazz、style 欄 Bop、Fusion、Jazz-Funk（**與原盤條目的 Post Bop 不同——兩份條目各自填各自的**）。公司欄比原盤多三條：Lacquer Cut At「Metropolis Mastering」、Mastered At「Metropolis Mastering」、版權欄改記 Arc Records (13)。credit 欄新增四條：**Liner Notes 與 Reissue Producer 皆「Maxine Gordon」**、Design [Reissue]「Mark James (11)」、Lacquer Cut By 與 Mastered By 皆「Stuart Hawkes」；**Photography By [Cover And Harold Vik And Billy Higgins]「Francis Wolff」**（原文拼字如此）；另把掛名者的樂器欄寫成「Organ, Mellotron」、製作人欄寫成「Producer: Shirley Scott」、Harold Vick 的樂器欄寫成「Tenor Saxophone, Alto Saxophone」。曲目表 5 個曲位、曲名曲序與原盤逐軌相同。",
+      "src": "https://www.discogs.com/release/15428882"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Great Scott!",
+    "manifest": "onboarding-manifest-c37-jazz-20260823.json",
+    "desc": "風琴手 Shirley Scott 1958 年為 Prestige 錄製的首張個人專輯，確立她往後以 Hammond 風琴領銜三重奏的路線；日後 Impulse! 現場盤更直接以「風琴女王」為題，稱號即由此路線累積而來。留意市面另有 1964 年 Impulse!《Great Scott!!》與 1991 年 Muse 同名盤，三者極易互相錯配。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Great_Scott!_(1958_Shirley_Scott_album)",
+     "https://en.wikipedia.org/wiki/Queen_of_the_Organ",
+     "https://musicbrainz.org/release-group/8bfc5ef1-31dd-49de-a54f-5c26091de541"
+    ]
+   },
+   {
+    "album": "Soul Shoutin'",
+    "manifest": "onboarding-manifest-c37-jazz-20260823.json",
+    "desc": "Shirley Scott 與當時的丈夫、次中音薩克斯風手 Stanley Turrentine 1963 年錄下的共演盤，1964 年以編號 PRLP 7312 由 Prestige 發行。Turrentine 厚實帶喉音的音色與 Scott 點到即止的風琴句互為問答，標題曲和〈Gravy Waltz〉、〈Deep Down Soul〉都踩在藍調根基的 soul-jazz 上。1995 年起本作與《The Soul Is Willing》併為同一張 CD 流通，數位平台的曲序因此常混入另一張的曲目。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Soul_Shoutin%27",
+     "https://musicbrainz.org/release-group/2b7fbfa1-8b8a-3e02-a0d9-195c50db5876"
+    ]
+   },
+   {
+    "album": "Queen of the Organ",
+    "manifest": "onboarding-manifest-c37-jazz-20260823.json",
+    "desc": "1964 年 12 月 5 日在紐澤西紐華克的 The Front Room 俱樂部錄音、1965 年由 Impulse! 發行的現場盤，Bob Thiele 製作、Rudy Van Gelder 收音。Shirley Scott 與 Stanley Turrentine、貝斯手 Bob Cranshaw、鼓手 Otis Finch 的四人組，〈Rapid Shave〉等曲在俱樂部氣氛裡越燒越快；她的右手線條乾淨、不倚重音牆，與 Turrentine 的粗顆粒音色成對比。專輯名直接把「風琴女王」的稱號印上封面。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Queen_of_the_Organ",
+     "https://musicbrainz.org/release-group/b7ded519-52b7-33d0-bf67-600baa1049aa"
+    ]
+   },
+   {
+    "album": "One for Me",
+    "manifest": "onboarding-manifest-c86-20260910.json",
+    "desc": "Inspiration 在 credit 欄上也是一個角色，欄位裡寫著 Charles Butler。同一份 credit 欄的編制只有三個人：管風琴、Harold Vick 的次中音薩克斯風與鼓，B3 那一軌的掛名者改彈美樂特朗。五軌的 Written-By 欄是三比二，三軌掛她、兩軌掛 Vick，註記欄兩家出版商的分軌與這個比例對得上。2020 年那筆英國再發的 Liner Notes 與 Reissue Producer 都掛 Maxine Gordon。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/5a98ee8a-6f20-4527-93e8-71650e815164",
+     "https://musicbrainz.org/release/2de279ee-c7e1-4af2-93ab-8dab2810b5d0",
+     "https://www.discogs.com/release/1739899",
+     "https://www.discogs.com/master/1751130",
+     "https://www.discogs.com/release/15428882",
+     "https://itunes.apple.com/lookup?id=1561234506&entity=song&country=us",
+     "https://en.wikipedia.org/wiki/Shirley_Scott",
+     "https://www.discogs.com/release/1263277"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "slum village",
+  "name": "Slum Village",
+  "tier": "B",
+  "cards": 4,
+  "mainGenre": "hiphop",
+  "yearRange": [
+   1997,
+   2004
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Fantastic, Vol. 2",
+    "year": 2000,
+    "genres": [
+     "hiphop"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Fan-Tas-Tic, Volume 1",
+    "year": 1997,
+    "genres": [
+     "hiphop",
+     "jazz"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Trinity (Past, Present and Future)",
+    "year": 2002,
+    "genres": [
+     "hiphop",
+     "soul"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Detroit Deli (A Taste of Detroit)",
+    "year": 2004,
+    "genres": [
+     "hiphop"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 4
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "soft cell",
+  "name": "Soft Cell",
+  "tier": "B",
+  "cards": 4,
+  "mainGenre": "electronic",
+  "yearRange": [
+   1981,
+   2023
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Non-Stop Erotic Cabaret",
+    "year": 1981,
+    "genres": [
+     "electronic",
+     "pop"
+    ],
+    "composer": null
+   },
+   {
+    "album": "*Happiness Now Completed",
+    "year": 2023,
+    "genres": [
+     "electronic",
+     "pop"
+    ],
+    "composer": null
+   },
+   {
+    "album": "*Happiness Not Included",
+    "year": 2022,
+    "genres": [
+     "electronic",
+     "pop"
+    ],
+    "composer": null
+   },
+   {
+    "album": "This Last Night in Sodom",
+    "year": 1984,
+    "genres": [
+     "electronic",
+     "pop"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 4
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "sonny criss",
+  "name": "Sonny Criss",
+  "tier": "B",
+  "cards": 4,
+  "mainGenre": "jazz",
+  "yearRange": [
+   1966,
+   1968
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "This Is Criss!",
+    "year": 1966,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Portrait of Sonny Criss",
+    "year": 1967,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Up, Up and Away",
+    "year": 1967,
+    "genres": [
+     "jazz",
+     "soul"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Sonny's Dream (Birth of the New Cool)",
+    "year": 1968,
+    "genres": [
+     "hiphop"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Saturday Morning",
+    "year": 1975,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 15,
+   "researchRecords": 1,
+   "facts": 4,
+   "publishedDescs": 5,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "add-20261005-shop-a",
+    "album": "Saturday Morning",
+    "facts": [
+     {
+      "f": "B 面的〈My Heart Stood Still〉是 Barry Harris 的三重奏演出，Sonny Criss 沒有參與這一首。",
+      "src": "https://www.discogs.com/release/5766906"
+     },
+     {
+      "f": "Xanadu Records 是 Don Schlitten 在 1975 年創立的爵士廠牌，1970 年代與 1980 年代最活躍，1990 年代停止錄音。",
+      "src": "https://en.wikipedia.org/wiki/Xanadu_Records"
+     },
+     {
+      "f": "2016 年 Elemental Music 以 Xanadu Master Edition 重發 CD，目錄號 906086，附 16 頁小冊，並加入同場次但未收進原 LP 的〈Confusion〉。",
+      "src": "https://www.discogs.com/release/8452612"
+     },
+     {
+      "f": "Sonny Criss 生於田納西州孟菲斯、15 歲搬到洛杉磯，曾在 Howard McGhee 的樂團演出，團裡也有他的偶像 Charlie Parker。",
+      "src": "https://en.wikipedia.org/wiki/Sonny_Criss"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Saturday Morning",
+    "manifest": "onboarding-manifest-add-20261005-shop-20261007.json",
+    "desc": "Sonny Criss 是洛杉磯的中音薩克斯風手，這張 1975 年的唱片，是他隔了六年才重新以自己名義錄下的作品，音色明亮、帶點藍調味。1969 年唱片公司 Prestige 因為銷量平平和他解約，他的酗酒問題跟著惡化。後來鋼琴手 Horace Tapscott 拉了他一把，兩人一起到社運人士 Mary Henry 替洛杉磯市中心孩子辦的課程幫忙，他為孩子演奏、講黑人音樂家的故事，還考取證照當上戒酒輔導員。1975 年 3 月，他終於在好萊塢重回錄音室。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/5766906",
+     "https://www.discogs.com/release/8452612",
+     "https://en.wikipedia.org/wiki/Xanadu_Records",
+     "https://en.wikipedia.org/wiki/Sonny_Criss",
+     "https://www.discogs.com/release/5814760",
+     "https://musicbrainz.org/release-group/03724074-b916-38b7-aa6a-af9b9b6e8f9f"
+    ]
+   },
+   {
+    "album": "This Is Criss!",
+    "manifest": "onboarding-manifest-c34-jazz-20260821.json",
+    "desc": "中音薩克斯風手 Sonny Criss 於一九六六年十月二十一日錄下這張 Prestige 作品（PR 7511），製作人 Don Schlitten。他的音色亮而直、樂句承 Charlie Parker 一脈卻更外放，〈Black Coffee〉與〈When Sunny Gets Blue〉的慢板最能聽出抒情面，〈Greasy〉則轉入藍調。班底為鋼琴 Walter Davis Jr.、貝斯 Paul Chambers、鼓手 Alan Dawson。AllMusic 的 Stephen Cook 稱他是「西岸爵士最被忽略的巨人之一」。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/This_Is_Criss!",
+     "https://musicbrainz.org/release-group/aa09ea90-a57f-36e7-ab17-35b7cd3c50f5"
+    ]
+   },
+   {
+    "album": "Portrait of Sonny Criss",
+    "manifest": "onboarding-manifest-c37-jazz-20260823.json",
+    "desc": "洛杉磯中音薩克斯手 Sonny Criss 1967 年為 Prestige 錄製的四重奏，Walter Davis Jr. 鋼琴、Paul Chambers 貝斯、Alan Dawson 鼓。bebop 出身的 Criss 樂句快而滿、抖音濃重，快板如 Denzil Best 的〈Wee〉展示他近乎滿溢的流暢度，〈God Bless the Child〉與 Chaplin 的〈Smile〉則把同一副歌唱性的音色放慢到抒情曲裡。開場〈A Million or More Times〉出自 Davis 之手，AllMusic 四星並稱之為出色的一場演出。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Portrait_of_Sonny_Criss",
+     "https://musicbrainz.org/release-group/3b461642-1a14-33fa-ad5f-c69f75475aa9"
+    ]
+   },
+   {
+    "album": "Up, Up and Away",
+    "manifest": "onboarding-manifest-c37-jazz-20260823.json",
+    "desc": "1967 年的 Prestige 時期作品，把 Jimmy Webb 的同名流行曲、Bobby Hebb 的〈Sunny〉與 Charlie Parker 的〈Scrapple from the Apple〉放進同一張唱片，是 Criss 這批錄音「流行曲搭硬底子 bop」路線的典型。合作陣容罕見：吉他手 Tal Farlow 與鋼琴手 Cedar Walton 同場，Bob Cranshaw 與 Lenny McBrowne 打底。Scott Yanow 認為成果比曲目表看起來更值得一聽。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Up,_Up_and_Away_(Sonny_Criss_album)",
+     "https://musicbrainz.org/release-group/255ac498-c4d7-3a8c-a6bb-822c9f8f1b45"
+    ]
+   },
+   {
+    "album": "Sonny's Dream (Birth of the New Cool)",
+    "manifest": "onboarding-manifest-c37-jazz-20260823.json",
+    "desc": "掛名 The Sonny Criss Orchestra 的 1968 年 Prestige 作品，六首曲目全部由洛杉磯社群樂界的 Horace Tapscott 作曲、編曲並指揮，九人編制含 Conte Candoli、Teddy Edwards、Tommy Flanagan 與低音號。Tapscott 的寫作聲部厚、色調沉，〈The Black Apostles〉等曲把西岸大編制帶往更鄭重黑暗的方向，Criss 的中音在其上依然流利歌唱。《Penguin Guide to Jazz》將本作列入核心收藏推薦名單。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Sonny's_Dream_(Birth_of_the_New_Cool)",
+     "https://musicbrainz.org/release-group/9d85a714-7915-321d-8124-a21c9fb0865f"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "stars of the lid",
+  "name": "Stars of the Lid",
+  "tier": "B",
+  "cards": 4,
+  "mainGenre": "classical",
+  "yearRange": [
+   1996,
+   2007
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "The Tired Sounds of Stars of the Lid",
+    "year": 2001,
+    "genres": [
+     "classical",
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "And Their Refinement of the Decline",
+    "year": 2007,
+    "genres": [
+     "classical",
+     "electronic"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Avec Laudenum",
+    "year": 1999,
+    "genres": [
+     "electronic",
+     "classical"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Gravitational Pull vs. the Desire for an Aquatic Life",
+    "year": 1996,
+    "genres": [
+     "electronic"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 4
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "stereophonics",
+  "name": "Stereophonics",
+  "tier": "B",
+  "cards": 4,
+  "mainGenre": "rock",
+  "yearRange": [
+   1997,
+   2017
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Performance and Cocktails",
+    "year": 1999,
+    "genres": [
+     "rock",
+     "pop"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Scream Above the Sounds",
+    "year": 2017,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Language. Sex. Violence. Other?",
+    "year": 2005,
+    "genres": [
+     "rock",
+     "pop"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Word Gets Around",
+    "year": 1997,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 4
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "telefon tel aviv",
+  "name": "Telefon Tel Aviv",
+  "tier": "B",
+  "cards": 4,
+  "mainGenre": "electronic",
+  "yearRange": [
+   2001,
+   2019
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Map of What Is Effortless",
+    "year": 2004,
+    "genres": [
+     "electronic"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Fahrenheit Fair Enough",
+    "year": 2001,
+    "genres": [
+     "electronic"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Immolate Yourself",
+    "year": 2009,
+    "genres": [
+     "electronic",
+     "pop"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Dreams Are Not Enough",
+    "year": 2019,
+    "genres": [
+     "electronic"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 4
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "the 1975",
+  "name": "The 1975",
+  "tier": "B",
+  "cards": 4,
+  "mainGenre": "pop",
+  "yearRange": [
+   2013,
+   2022
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "A Brief Inquiry into Online Relationships",
+    "year": 2018,
+    "genres": [
+     "pop",
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "The 1975",
+    "year": 2013,
+    "genres": [
+     "rock",
+     "pop"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Being Funny in a Foreign Language",
+    "year": 2022,
+    "genres": [
+     "rock",
+     "pop"
+    ],
+    "composer": null
+   },
+   {
+    "album": "I like it when you sleep, for you are so beautiful yet so unaware of it",
+    "year": 2016,
+    "genres": [
+     "pop",
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 4
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "the brooklyn allstars",
+  "name": "The Brooklyn Allstars",
+  "tier": "B",
+  "cards": 4,
+  "mainGenre": "soul",
+  "yearRange": [
+   1967,
+   1977
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Jesus Loves Me",
+    "year": 1967,
+    "genres": [
+     "soul"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Sing Unto The Lord",
+    "year": 1968,
+    "genres": [
+     "soul"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Lead Me, Guide Me",
+    "year": 1971,
+    "genres": [
+     "soul"
+    ],
+    "composer": null
+   },
+   {
+    "album": "There Ain't No Water In Hell",
+    "year": 1977,
+    "genres": [
+     "soul"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 21,
+   "researchRecords": 4,
+   "facts": 12,
+   "publishedDescs": 4,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c114-a",
+    "album": "Jesus Loves Me",
+    "facts": [
+     {
+      "f": "原盤條目：Nashboro、編號 LP 7043、美國 1967 年、12 吋黑膠、Album，附註記初版為綠底標籤。**十段**（不是本廠牌 1960 年代前期慣見的十二段），全部附長度——A1〈How Long Has It Been〉4:23、A2〈Walk In Jerusalem〉2:43、A3〈Time Waits For No One〉3:54、A4〈Once A Day〉4:06、A5〈I Looked Down The Line〉2:15、B1〈Trying To Get Home〉2:45、B2〈Jesus Loves Me〉4:17、B3〈Let Jesus Fix It〉2:58、B4〈I Need The Lord〉3:01、B5〈Motherless Child〉3:25。",
+      "src": "https://api.discogs.com/releases/6610957"
+     },
+     {
+      "f": "廠牌專輯目錄記為「LP-7043 - Jesus Loves Me - Brooklyn Allstars [1967]」，十首曲名與原盤條目相同、排序不同。同一份目錄裡本團掛名共八行（7043／7064／7073／7079／7092／7114／7131／27183），本片是第一張。",
+      "src": "https://www.bsnpubs.com/christian/nashboro.html"
+     },
+     {
+      "f": "十段的編制配上 4:23 與 4:17 這種長度，是 Nashboro 目錄從十二段短曲轉向十段長曲的分界：本批 1966 年以前的九張全部十一到十二段，1967 年起收的十一張裡有九張是九到十一段。",
+      "src": "https://api.discogs.com/releases/8049232"
+     },
+     {
+      "f": "§1 資格覆核（裁定 204 適用）：連寫查詢 The Brooklyn Allstars → score 100 命中 6e5c703f（disambiguation 記「gospel group」）。**同一團改成分寫 The Brooklyn All Stars，score 100 回的是日本搖滾團サザンオールスターズ（24d9e513），本團掉到 89；帶連字號的 Brooklyn All-Stars 也一樣、本團掉到 83。** 三種寫法都跑過。該實體名下分頁只回四筆——《Ten Commandments》《The New Sound of the Brooklyn Allstars》《I've Got My Ticket》《He Touched Me》，四筆全是他們 1970 年代在另一家廠牌的碟，本片不在其中。",
+      "src": "https://musicbrainz.org/ws/2/release-group?artist=6e5c703f-91c6-4580-805a-9438fc8ef027&fmt=json&limit=100&offset=0"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c114-b",
+    "album": "Sing Unto The Lord",
+    "facts": [
+     {
+      "f": "廠牌專輯目錄記為「LP-7073 - Sing Unto the Lord - Brooklyn Allstars [?]」——**年份欄是空的問號**。十首曲名與原盤條目相同，但把 B3 寫成〈Too Close To Heaven〉（原盤盤面只寫 Too Close）。",
+      "src": "https://www.bsnpubs.com/christian/nashboro.html"
+     },
+     {
+      "f": "錄音地 Woodland Studios 在東 Nashville 的 Woodland Street 1011 號，1967 年由 Glenn Snoddy 主持設計、建在一棟 1920 年代的電影院裡，同一棟樓也是 Nashboro 唱片公司與 Excellorec 出版公司的辦公室；1968 年換上二十四輸入十六匯流排的新混音台。",
+      "src": "https://en.wikipedia.org/wiki/Woodland_Sound_Studios"
+     },
+     {
+      "f": "§1 資格覆核（裁定 204 適用）：連寫、分寫、帶連字號三種寫法都跑過，分寫與連字號兩種的 score 100 都回日本搖滾團サザンオールスターズ。正確實體 6e5c703f 名下分頁只回四筆，全是他們 1970 年代在另一家廠牌的碟，本片不在其中。",
+      "src": "https://musicbrainz.org/ws/2/release-group?artist=6e5c703f-91c6-4580-805a-9438fc8ef027&fmt=json&limit=100&offset=0"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c114-b",
+    "album": "Lead Me, Guide Me",
+    "facts": [
+     {
+      "f": "廠牌專輯目錄記為「LP-7092 - Lead Me, Guide Me - Brooklyn Allstars [?]」——**年份欄是空的問號，曲目欄只列了三首就寫 others**（〈Blessed Be the Name〉〈Lead Me, Guide Me〉〈I Want to Rest〉）。目錄的〈Blessed Be the Name〉與原盤盤面的〈Blessed By The Name〉、目錄的〈I Want to Rest〉與盤面的〈I Want To Rrest〉都有出入。",
+      "src": "https://www.bsnpubs.com/christian/nashboro.html"
+     },
+     {
+      "f": "同一份廠牌目錄裡本團掛名共八行（7043／7064／7073／7079／7092／7114／7131／27183）。**本片之後還有 LP-7114《Too Close To Heaven》與 LP-7131 兩行**，另有 1977 年的 LP-27183《Our Greatest Hits》。",
+      "src": "https://www.bsnpubs.com/christian/nashboro.html"
+     },
+     {
+      "f": "§1 資格覆核（裁定 204 適用）：三種掛名寫法都跑過，分寫與帶連字號的 score 100 都回日本搖滾團サザンオールスターズ。實體 6e5c703f 名下分頁只回四筆，全是他們在另一家廠牌的碟，本片不在其中。",
+      "src": "https://musicbrainz.org/ws/2/release-group?artist=6e5c703f-91c6-4580-805a-9438fc8ef027&fmt=json&limit=100&offset=0"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c114-b",
+    "album": "There Ain't No Water In Hell",
+    "facts": [
+     {
+      "f": "廠牌專輯目錄記為「GR-5022 - There Ain't No Water In Hell - Brooklyn Allstars [1977]」——**年份不帶問號，但曲目欄是空的**（整行只有編號、盤名、掛名與年份）。同一份目錄記 Gospel Roots 是 T.K. Productions 的福音子廠、**1976 至 1979 年間營運**，與 The Dixie Hummingbirds 主唱 Ira Tucker 關係密切、他製作了該廠許多發行；標籤是藍底黑字、上緣寫 GOSPEL Roots、下緣繞一圈寫「DISTRIBUTED BY T.K. PRODUCTIONS, INC. 495 S.E. 10th COURT, HIALEAH, FLORIDA 33010」。",
+      "src": "https://www.bsnpubs.com/florida/gospelroots/gospelroots.html"
+     },
+     {
+      "f": "§1 資格覆核（裁定 204 適用）：三種掛名寫法都跑過，分寫與帶連字號的 score 100 都回日本搖滾團サザンオールスターズ。實體 6e5c703f 名下分頁只回四筆，全是他們在另一家廠牌的碟，本片不在其中。",
+      "src": "https://musicbrainz.org/ws/2/release-group?artist=6e5c703f-91c6-4580-805a-9438fc8ef027&fmt=json&limit=100&offset=0"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Jesus Loves Me",
+    "manifest": "onboarding-manifest-c114-20260910.json",
+    "desc": "十段，開場那首唱了 4 分 23 秒。逐段落在 2 分 15 秒到 4 分 23 秒之間、全片約三十四分，A4〈Once A Day〉4 分 6 秒與 B2 同名曲 4 分 17 秒也都超過四分鐘。同廠 1966 年以前的碟多是十一到十二段的短曲，從這張起段數少了、單段長了。廠牌目錄裡這團掛名共八行，這張排第一。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/6610957",
+     "https://www.bsnpubs.com/christian/nashboro.html",
+     "https://api.discogs.com/releases/8049232",
+     "https://musicbrainz.org/ws/2/release-group?artist=6e5c703f-91c6-4580-805a-9438fc8ef027&fmt=json&limit=100&offset=0",
+     "https://www.discogs.com/release/6610957"
+    ]
+   },
+   {
+    "album": "Sing Unto The Lord",
+    "manifest": "onboarding-manifest-c114-20260910.json",
+    "desc": "B3 唱了 5 分 27 秒，曲子是 Alex Bradford 的。那首〈Too Close〉的源頭是他 1954 年灌下的〈Too Close To Heaven〉，賣過一百萬張。十段裡有五段留下長度，除了 B3 之外的四段都落在 2 分 20 秒到 3 分 1 秒之間，結構上是九段常規加一段長曲。逐曲的作者也分得很清楚：五首掛 Thomas Spann、一首掛 Rev. James Cleveland、一首掛 Hardie Clifton，另兩首標為傳統曲。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/7319780",
+     "https://en.wikipedia.org/wiki/Alex_Bradford",
+     "https://www.bsnpubs.com/christian/nashboro.html",
+     "https://en.wikipedia.org/wiki/Woodland_Sound_Studios",
+     "https://musicbrainz.org/ws/2/release-group?artist=6e5c703f-91c6-4580-805a-9438fc8ef027&fmt=json&limit=100&offset=0",
+     "https://www.discogs.com/release/7319780"
+    ]
+   },
+   {
+    "album": "Lead Me, Guide Me",
+    "manifest": "onboarding-manifest-c114-20260910.json",
+    "desc": "A3 唱的是 Curtis Mayfield 那首〈People Get Ready〉。這張十段、沒有留下逐軌長度，B5 的曲名乾脆就是三個人名〈Cooke, Davis And Martin〉，唱了什麼同樣沒有記錄。製作只掛了 Shannon Williams 一個名字，樂手、工程與錄音室一概空白，比同團 1968 年那張逐曲列出作者的碟薄了許多。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/5853168",
+     "https://www.bsnpubs.com/christian/nashboro.html",
+     "https://musicbrainz.org/ws/2/release-group?artist=6e5c703f-91c6-4580-805a-9438fc8ef027&fmt=json&limit=100&offset=0",
+     "https://www.discogs.com/release/5853168"
+    ]
+   },
+   {
+    "album": "There Ain't No Water In Hell",
+    "manifest": "onboarding-manifest-c114-20260910.json",
+    "desc": "詞曲、編曲、製作，全掛同一個名字。Thomas Spann 一手包下十首的詞曲，連整張的編曲與製作也是他；九年前同一支團的那張碟，他還只是十首裡寫了五首的寫手之一。十段逐段落在 2 分 6 秒到 4 分 48 秒之間、整張約三十四分，B3〈Room At The Cross〉4 分 48 秒是最長的一段，A5 另標了領唱 Hardie Clifton。壓軸放的是南北戰爭時期的〈Battle Hymn Of The Republic〉，為什麼選它沒有留下說法。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/8268331",
+     "https://api.discogs.com/releases/7319780",
+     "https://www.bsnpubs.com/florida/gospelroots/gospelroots.html",
+     "https://musicbrainz.org/ws/2/release-group?artist=6e5c703f-91c6-4580-805a-9438fc8ef027&fmt=json&limit=100&offset=0",
+     "https://www.discogs.com/release/8268331"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "the future sound of london",
+  "name": "The Future Sound of London",
+  "tier": "B",
+  "cards": 4,
+  "mainGenre": "electronic",
+  "yearRange": [
+   1991,
+   1996
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Accelerator",
+    "year": 1991,
+    "genres": [
+     "electronic"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Lifeforms",
+    "year": 1994,
+    "genres": [
+     "electronic"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Dead Cities",
+    "year": 1996,
+    "genres": [
+     "electronic"
+    ],
+    "composer": null
+   },
+   {
+    "album": "ISDN",
+    "year": 1994,
+    "genres": [
+     "electronic"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 4,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": true
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "Accelerator",
+    "manifest": "onboarding-manifest-c40-electronic-20260823.json",
+    "desc": "Brian Dougans 與 Garry Cobain 的首張專輯，由 Jumpin' & Pumpin' 發行（CD TOT2），收錄〈Papua New Guinea〉。做法還帶著英國 rave 的直接：斷續的 breakbeat、合成器短句反覆與人聲取樣層層疊上，Melody Maker 把它排進當年度最佳專輯第 21 名，〈Papua New Guinea〉也進了同一份年度單曲榜。封面出自 Buggy G. Riphead，是他與這組人長期合作的開端。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Accelerator_(The_Future_Sound_of_London_album)",
+     "https://musicbrainz.org/release-group/0de44224-5b8e-3b77-9cf3-ffc3b051cd6d"
+    ]
+   },
+   {
+    "album": "Lifeforms",
+    "manifest": "onboarding-manifest-c40-electronic-20260823.json",
+    "desc": "1994 年由 Virgin 發行的第二張專輯，英國舞曲專輯榜冠軍、綜合榜第六名，並獲英國唱片業協會銀唱片認證。雙碟長度把節拍拆得極散，取樣、環境音與合成器紋理彼此覆蓋成連續聲景。客席同樣講究：Robert Fripp 在〈Flak〉貢獻吉他質地，Toni Halliday 為〈Cerebral〉唱人聲層，Talvin Singh 在〈Life Form Ends〉打塔布拉。AllMusic 稱其為九〇年代最好的實驗 techno 之一。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Lifeforms_(The_Future_Sound_of_London_album)",
+     "https://musicbrainz.org/release-group/06e12b5c-2888-3fc7-87ad-ed68c262e41b"
+    ]
+   },
+   {
+    "album": "Dead Cities",
+    "manifest": "onboarding-manifest-c40-electronic-20260823.json",
+    "desc": "1996 年 10 月由 Virgin 發行的第三張專輯，英國舞曲專輯榜第二名、綜合榜第 26 名。聲音比前作更冷更硬：〈Herd Killing〉與〈We Have Explosive〉建在 Run-DMC《Tougher Than Leather》的取樣上，〈My Kingdom〉疊了 Vangelis 為《銀翼殺手》寫的〈Rachael's Song〉與 Morricone 的排笛樂句。極簡主義作曲家 Max Richter 自此加入，與他們共寫〈Max〉。封面由團體與 Buggy G. Riphead 合力做成。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Dead_Cities_(album)",
+     "https://musicbrainz.org/release-group/4184c659-8cba-3890-90a2-248d1709b265"
+    ]
+   },
+   {
+    "album": "ISDN",
+    "manifest": "onboarding-manifest-c40-electronic-20260823.json",
+    "desc": "素材來自 Brian Dougans 與 Garry Cobain 透過 ISDN 線路向世界各地電台傳送的多場現場演出，再剪接成冊。1994 年 12 月先出限量一萬張的黑封版，隨即登上英國舞曲專輯榜冠軍，1995 年 6 月再發白封版，兩版曲目不同。內容比前作躁動，把 trip hop、acid jazz 與中東音階接進來，並大量取用《異形》《紐約大逃亡》等片的對白；〈Dirty Shadows〉的吉他取自 Robert Fripp 同台的 Radio 1 演出。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/ISDN_(album)",
+     "https://musicbrainz.org/release-group/acec2833-af97-3f09-9f22-35ebf97f1761"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "the streets",
+  "name": "The Streets",
+  "tier": "B",
+  "cards": 4,
+  "mainGenre": "hiphop",
+  "yearRange": [
+   2002,
+   2023
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Original Pirate Material",
+    "year": 2002,
+    "genres": [
+     "hiphop"
+    ],
+    "composer": null
+   },
+   {
+    "album": "A Grand Don't Come for Free",
+    "year": 2004,
+    "genres": [
+     "hiphop"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Computers and Blues",
+    "year": 2011,
+    "genres": [
+     "hiphop"
+    ],
+    "composer": null
+   },
+   {
+    "album": "The Darker the Shadow the Brighter the Light",
+    "year": 2023,
+    "genres": [
+     "hiphop"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 4
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "the supreme angels",
+  "name": "The Supreme Angels",
+  "tier": "B",
+  "cards": 4,
+  "mainGenre": "soul",
+  "yearRange": [
+   1966,
+   1974
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Drinking Of The Wine",
+    "year": 1966,
+    "genres": [
+     "soul"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Just Like Him",
+    "year": 1968,
+    "genres": [
+     "soul"
+    ],
+    "composer": null
+   },
+   {
+    "album": "By And By",
+    "year": 1971,
+    "genres": [
+     "soul"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Shame On You",
+    "year": 1974,
+    "genres": [
+     "soul"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 23,
+   "researchRecords": 4,
+   "facts": 8,
+   "publishedDescs": 4,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": false,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c114-a",
+    "album": "Drinking Of The Wine",
+    "facts": [
+     {
+      "f": "廠牌專輯目錄記為「LP-7030 - Drinking Of The Wine - Supreme Angels [1966]」，十二首曲目與原盤條目相同，把 A3 寫成〈God Specialises〉。同一份目錄裡本團掛名共十四行：前四行（7030／7052／7072／7091）掛 Supreme Angels 或 The Supreme Angels，**從 LP-7110《Supreme》起改掛 Slim & The Supreme Angels**，一路到 1982 年的 NA-7255。",
+      "src": "https://www.bsnpubs.com/christian/nashboro.html"
+     },
+     {
+      "f": "本團的起源地在兩份來源之間有出入：傳記來源記 The Supreme Angels 1953 年成立於威斯康辛州 Milwaukee，由幾位年輕牧師（Rev. Herman Pryor、Rev. Floyd Taylor、Brother Earl Woods）發起；密西西比州 Walnut Grove 出身的 Howard「Slim」Hunt 1953 年遷居 Milwaukee，1956 年以吉他手身分加入，牧師們陸續離團去牧會後由他接任主唱，團名日後才改成 Slim & the Supreme Angels。",
+      "src": "https://en.wikipedia.org/wiki/Slim_%26_the_Supreme_Angels"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c114-b",
+    "album": "Just Like Him",
+    "facts": [
+     {
+      "f": "廠牌專輯目錄記為「LP-7052 - Just Like Him - Supreme Angels [1968?]」，十首曲名與原盤條目相同但有三處寫法出入：目錄寫〈Wind Regulator〉（原盤寫 Mind Regulator）、〈You've Got To Move〉（原盤寫 You've Got To More）、〈He'll Understand (And Say Well Done)〉（原盤只寫 He'll Understand）。",
+      "src": "https://www.bsnpubs.com/christian/nashboro.html"
+     },
+     {
+      "f": "A1〈He'll Understand〉這首本團三年後又錄了一次：1971 年的 Nashboro 7091《By And By》B5 就是〈He'll Understand (And Say Well Done)〉2:50。同一首在同一家廠牌相隔三年錄兩遍。",
+      "src": "https://api.discogs.com/releases/10123945"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c114-b",
+    "album": "By And By",
+    "facts": [
+     {
+      "f": "廠牌專輯目錄記為「LP-7091 - By and By - The Supreme Angels [?]」——**年份欄是空的問號，曲目欄只列了兩首就寫 others**（〈You Ought to Love Him〉〈The Assassination〉）。",
+      "src": "https://www.bsnpubs.com/christian/nashboro.html"
+     },
+     {
+      "f": "傳記記 Howard「Slim」Hunt 是密西西比州 Walnut Grove 出身、1953 年遷居威斯康辛州 Milwaukee，1956 年以吉他手身分加入 The Supreme Angels；牧師團員陸續離團去牧會後由他接任主唱，團名日後才改成 Slim & the Supreme Angels。本片的詞曲掛名 H. Hunt 就是他。",
+      "src": "https://en.wikipedia.org/wiki/Slim_%26_the_Supreme_Angels"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c114-b",
+    "album": "Shame On You",
+    "facts": [
+     {
+      "f": "廠牌專輯目錄記為「LP-7141 - Shame On You - **Slim & The Supreme Angels** [1974?]」——**掛名與原盤條目不同**（目錄掛 Slim &，原盤盤面掛 The Supreme Angels），年份帶問號，曲目欄只列了五首就寫 Others。",
+      "src": "https://www.bsnpubs.com/christian/nashboro.html"
+     },
+     {
+      "f": "A1 與 B3 的詞曲人 H. Hunt 是 Howard「Slim」Hunt：傳記記他 1956 年以吉他手身分加入 The Supreme Angels，牧師團員陸續離團去牧會後由他接任主唱，團名日後才改成 Slim & the Supreme Angels。他寫的曲子在本團 1971 年的 Nashboro 7091 上也掛過名。",
+      "src": "https://en.wikipedia.org/wiki/Slim_%26_the_Supreme_Angels"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Drinking Of The Wine",
+    "manifest": "onboarding-manifest-c114-20260910.json",
+    "desc": "B3 那首出自 Dorothy Love Coates 的筆下。〈You Can't Hurry God〉是她的代表作之一，而同批另一張碟就是她本人的。全片十二段，逐段 2 分 7 秒到 3 分 8 秒、約三十一分，B4〈Near The Cross〉與 B5〈Will The Circle Be Unbroken?〉都是老曲。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/8049232",
+     "https://www.bsnpubs.com/christian/nashboro.html",
+     "https://en.wikipedia.org/wiki/Dorothy_Love_Coates",
+     "https://en.wikipedia.org/wiki/Slim_%26_the_Supreme_Angels",
+     "https://musicbrainz.org/ws/2/release-group?artist=a86f98fc-3f55-4a01-b5cf-9a6614a4daed&fmt=json&limit=100&offset=0",
+     "https://musicbrainz.org/ws/2/release-group?artist=476a2000-531f-4950-b563-3bad374f29bb&fmt=json&limit=100&offset=0",
+     "https://www.discogs.com/release/8049232"
+    ]
+   },
+   {
+    "album": "Just Like Him",
+    "manifest": "onboarding-manifest-c114-20260910.json",
+    "desc": "十首裡有兩首，三年後又錄了一遍。A1〈He'll Understand〉與 A3〈Why (The Storm Of Life)〉都在他們 1971 年那張同廠盤上再出現了一次。這張十段、逐段落在 2 分 1 秒到 3 分 18 秒之間、整張約二十七分，比兩年前那張十二段的碟整整短一截；末段〈Blessed Quietness〉2 分 1 秒是最短的一段。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/10827021",
+     "https://www.bsnpubs.com/christian/nashboro.html",
+     "https://api.discogs.com/releases/10123945",
+     "https://musicbrainz.org/ws/2/release-group?artist=a86f98fc-3f55-4a01-b5cf-9a6614a4daed&fmt=json&limit=100&offset=0",
+     "https://www.discogs.com/release/10827021"
+    ]
+   },
+   {
+    "album": "By And By",
+    "manifest": "onboarding-manifest-c114-20260910.json",
+    "desc": "A4 那首兩分四十秒的曲子，名字就叫〈The Assassination〉。它唱了什麼沒有留下記錄，能確認的只有曲名、長度與它排在 A 面的位置。十段逐段落在 2 分 1 秒到 4 分 42 秒之間、整張約二十八分，開場的同名曲 4 分 42 秒幾乎是第二長段的一倍半，其餘九段全部收在 3 分 4 秒以內。詞曲掛的是團內的 H. Hunt。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/10123945",
+     "https://www.bsnpubs.com/christian/nashboro.html",
+     "https://en.wikipedia.org/wiki/Slim_%26_the_Supreme_Angels",
+     "https://musicbrainz.org/ws/2/release-group?artist=476a2000-531f-4950-b563-3bad374f29bb&fmt=json&limit=100&offset=0",
+     "https://www.discogs.com/release/10123945"
+    ]
+   },
+   {
+    "album": "Shame On You",
+    "manifest": "onboarding-manifest-c114-20260910.json",
+    "desc": "封套上貼著一張紙，寫著經銷由 MCA。這是一張宣傳片，白色標籤與那張貼紙就是它的記號，一家福音廠牌的碟就這樣接上了大廠的經銷網。十段逐段落在 1 分 52 秒到 4 分 45 秒之間、整張約三十二分，A 面五段裡有四段超過 3 分 45 秒，B 面則整面收短。A1 與 B3 的詞曲掛團內的 H. Hunt，A2 掛的是 T. Dorsey。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/14329792",
+     "https://en.wikipedia.org/wiki/Willie_Mae_Ford_Smith",
+     "https://www.bsnpubs.com/christian/nashboro.html",
+     "https://en.wikipedia.org/wiki/Slim_%26_the_Supreme_Angels",
+     "https://musicbrainz.org/ws/2/release-group?artist=a86f98fc-3f55-4a01-b5cf-9a6614a4daed&fmt=json&limit=100&offset=0",
+     "https://www.discogs.com/release/14329792",
+     "https://music.apple.com/us/album/1443663637"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "the time",
+  "name": "The Time",
+  "tier": "B",
+  "cards": 4,
+  "mainGenre": "soul",
+  "yearRange": [
+   1981,
+   1990
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Ice Cream Castle",
+    "year": 1984,
+    "genres": [
+     "soul",
+     "jazz"
+    ],
+    "composer": null
+   },
+   {
+    "album": "What Time Is It?",
+    "year": 1982,
+    "genres": [
+     "soul",
+     "electronic"
+    ],
+    "composer": null
+   },
+   {
+    "album": "The Time",
+    "year": 1981,
+    "genres": [
+     "soul",
+     "pop"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Pandemonium",
+    "year": 1990,
+    "genres": [
+     "soul",
+     "hiphop"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 4
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "tlc",
+  "name": "TLC",
+  "tier": "B",
+  "cards": 4,
+  "mainGenre": "hiphop",
+  "yearRange": [
+   1992,
+   2017
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "CrazySexyCool",
+    "year": 1994,
+    "genres": [
+     "hiphop",
+     "soul"
+    ],
+    "composer": null
+   },
+   {
+    "album": "TLC",
+    "year": 2017,
+    "genres": [
+     "hiphop",
+     "pop"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Ooooooohhh…On the TLC Tip",
+    "year": 1992,
+    "genres": [
+     "hiphop",
+     "soul"
+    ],
+    "composer": null
+   },
+   {
+    "album": "FanMail",
+    "year": 1999,
+    "genres": [
+     "hiphop",
+     "soul"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 4
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "travis scott",
+  "name": "Travis Scott",
+  "tier": "B",
+  "cards": 4,
+  "mainGenre": "hiphop",
+  "yearRange": [
+   2015,
+   2023
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Rodeo",
+    "year": 2015,
+    "genres": [
+     "hiphop",
+     "pop"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Astroworld",
+    "year": 2018,
+    "genres": [
+     "hiphop"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Birds in the Trap Sing McKnight",
+    "year": 2016,
+    "genres": [
+     "hiphop",
+     "pop"
+    ],
+    "composer": null
+   },
+   {
+    "album": "UTOPIA",
+    "year": 2023,
+    "genres": [
+     "hiphop"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 4
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "tycho",
+  "name": "Tycho",
+  "tier": "B",
+  "cards": 4,
+  "mainGenre": "electronic",
+  "yearRange": [
+   2004,
+   2024
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Dive",
+    "year": 2011,
+    "genres": [
+     "electronic"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Infinite Health",
+    "year": 2024,
+    "genres": [
+     "electronic"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Awake",
+    "year": 2014,
+    "genres": [
+     "electronic"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Sunrise Projector / Past Is Prologue",
+    "year": 2004,
+    "genres": [
+     "electronic"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 4
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "type o negative",
+  "name": "Type O Negative",
+  "tier": "B",
+  "cards": 4,
+  "mainGenre": "rock",
+  "yearRange": [
+   1991,
+   2007
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Bloody Kisses",
+    "year": 1993,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "October Rust",
+    "year": 1996,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Slow, Deep and Hard",
+    "year": 1991,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Dead Again",
+    "year": 2007,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 4
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "underoath",
+  "name": "Underoath",
+  "tier": "B",
+  "cards": 4,
+  "mainGenre": "rock",
+  "yearRange": [
+   1999,
+   2008
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "They're Only Chasing Safety",
+    "year": 2004,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Act of Depression",
+    "year": 1999,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Cries of the Past",
+    "year": 2000,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Lost in the Sound of Separation",
+    "year": 2008,
+    "genres": [
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 4
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "waxahatchee",
+  "name": "Waxahatchee",
+  "tier": "B",
+  "cards": 4,
+  "mainGenre": "folk",
+  "yearRange": [
+   2012,
+   2024
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Saint Cloud",
+    "year": 2020,
+    "genres": [
+     "folk",
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "American Weekend",
+    "year": 2012,
+    "genres": [
+     "rock",
+     "folk"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Ivy Tripp",
+    "year": 2015,
+    "genres": [
+     "rock",
+     "folk"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Tigers Blood",
+    "year": 2024,
+    "genres": [
+     "folk",
+     "rock"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 6,
+   "researchRecords": 1,
+   "facts": 2,
+   "publishedDescs": 1,
+   "albumsWithoutMaterial": 3
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c111-a",
+    "album": "Tigers Blood",
+    "facts": [
+     {
+      "f": "MusicBrainz release-group f9aa9b53 的欄位：title「Tigers Blood」、artist-credit「Waxahatchee」（藝人 MBID 42321e24）、first-release-date 2024-03-22、primary-type Album、secondary-types 空。轄下 3 個 release 全部 Official、全部 2024-03-22：XW 的 Digital Media **13 軌**（廠牌 Anti‐ 與 Epitaph 並列）、XW 的 Digital Media **12 軌**（Anti‐ 7860-1）、XE 的 CD **12 軌**（Anti‐ 7860-2）。**實體與數位標準版是 12 軌，13 軌那一筆是串流版。**",
+      "src": "https://musicbrainz.org/ws/2/release-group/f9aa9b53-2c89-4901-926e-e992f1e4d8c0?fmt=json&inc=artist-credits+releases"
+     },
+     {
+      "f": "英文維基〈Tigers Blood〉的 infobox 與 Personnel 節：錄音 2022–2023 年於德州的 Sonic Ranch，製作掛 Brad Cook（Personnel 節另把 production 逐軌記在 Phil Cook 名下），廠牌 Anti-，標準版總長 44:26。班底：Katie Crutchfield（木吉他、主唱）、MJ Lenderman（第 1–12 軌全碟電吉他，另有第 2–5、12 軌的和聲）、Phil Cook（Dobro、風琴、鋼琴、班鳩、口琴、馬林巴、手風琴）、Brad Cook（貝斯、Prophet-6）、Spencer Tweedy（鼓與打擊）；另有 Nick Bockrath 的踏板鋼棒（第 6 軌）。錄音與混音 Gerardo「Jerry」Ordonez，母帶 Emily Lazar，攝影 Molly Matalon，設計 Mike Krol。",
+      "src": "https://en.wikipedia.org/wiki/Tigers_Blood"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Tigers Blood",
+    "manifest": "onboarding-manifest-c111-20260910.json",
+    "desc": "兩人在〈Right Back to It〉上的和聲，是整張定調的那一刻。〈365〉是在德州 Sonic Ranch 早期錄音時就做出來的，Crutchfield 與製作人 Brad Cook 之後才把 MJ Lenderman 找進來，那段和聲才成了整張碟定形的轉折點。Lenderman 最後在原盤十二軌的每一首上都彈了電吉他。錄音在 2022 至 2023 年間完成，班底另有 Phil Cook 與打鼓的 Spencer Tweedy；十二軌收在同名曲，沒有長曲。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/f9aa9b53-2c89-4901-926e-e992f1e4d8c0?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=f9aa9b53-2c89-4901-926e-e992f1e4d8c0&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://itunes.apple.com/lookup?id=1772253426&country=us&entity=song&limit=200",
+     "https://en.wikipedia.org/wiki/Tigers_Blood",
+     "https://musicbrainz.org/ws/2/release-group?artist=42321e24-42b6-4f08-b0d9-8325ee887a20&fmt=json&limit=100&offset=0",
+     "https://musicbrainz.org/release-group/f9aa9b53-2c89-4901-926e-e992f1e4d8c0"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "world saxophone quartet",
+  "name": "World Saxophone Quartet",
+  "tier": "B",
+  "cards": 4,
+  "mainGenre": "jazz",
+  "yearRange": [
+   1981,
+   1993
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Revue",
+    "year": 1982,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Moving Right Along",
+    "year": 1993,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   },
+   {
+    "album": "W.S.Q.",
+    "year": 1981,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Live at Brooklyn Academy of Music",
+    "year": 1986,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 4
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "young thug",
+  "name": "Young Thug",
+  "tier": "B",
+  "cards": 4,
+  "mainGenre": "hiphop",
+  "yearRange": [
+   2015,
+   2021
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Barter 6",
+    "year": 2015,
+    "genres": [
+     "hiphop",
+     "pop"
+    ],
+    "composer": null
+   },
+   {
+    "album": "JEFFERY",
+    "year": 2016,
+    "genres": [
+     "hiphop",
+     "pop"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Punk",
+    "year": 2021,
+    "genres": [
+     "hiphop",
+     "folk"
+    ],
+    "composer": null
+   },
+   {
+    "album": "So Much Fun",
+    "year": 2019,
+    "genres": [
+     "hiphop",
+     "pop"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 4
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "zero 7",
+  "name": "Zero 7",
+  "tier": "B",
+  "cards": 4,
+  "mainGenre": "electronic",
+  "yearRange": [
+   2001,
+   2009
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Simple Things",
+    "year": 2001,
+    "genres": [
+     "electronic"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Yeah Ghost",
+    "year": 2009,
+    "genres": [
+     "electronic"
+    ],
+    "composer": null
+   },
+   {
+    "album": "When It Falls",
+    "year": 2004,
+    "genres": [
+     "electronic"
+    ],
+    "composer": null
+   },
+   {
+    "album": "The Garden",
+    "year": 2006,
+    "genres": [
+     "electronic",
+     "pop"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 0,
+   "albumsWithoutMaterial": 4
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": false,
+   "position": false
+  },
+  "research": [],
+  "published": []
+ },
+ {
+  "key": "ネーネーズ",
+  "name": "ネーネーズ",
+  "tier": "B",
+  "cards": 4,
+  "mainGenre": "world",
+  "yearRange": [
+   1992,
+   1995
+  ],
+  "script": "ja",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "あしび",
+    "year": 1993,
+    "genres": [
+     "world",
+     "pop"
+    ],
+    "composer": null
+   },
+   {
+    "album": "コザ dabasa",
+    "year": 1994,
+    "genres": [
+     "world",
+     "pop"
+    ],
+    "composer": null
+   },
+   {
+    "album": "なーらび",
+    "year": 1995,
+    "genres": [
+     "world",
+     "pop"
+    ],
+    "composer": null
+   },
+   {
+    "album": "YUNTA",
+    "year": 1992,
+    "genres": [
+     "world",
+     "folk"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 36,
+   "researchRecords": 3,
+   "facts": 9,
+   "publishedDescs": 4,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c113-a",
+    "album": "YUNTA",
+    "facts": [
+     {
+      "f": "ネーネーズ是 1990 年由知名定男製作、結成的沖繩音樂團體，團名取自ウチナーヤマトグチ裡「姊姊」的意思，英文寫作 Nēnēs。**1991 年她們以獨立盤《IKAWU》引起注目，隔年 1992 年從 Ki/oon Sony Records 正式出道**。第一期團員是古謝美佐子（1995 年退團）、吉田康子、宮里奈美子、比屋根幸乃，1996 年加入當眞江里子；1997 年轉投アンティノスレコード，1999 年 11 月 15 日在沖縄コンベンションセンター的公演之後第一期停止活動。",
+      "src": "https://ja.wikipedia.org/wiki/%E3%83%8D%E3%83%BC%E3%83%8D%E3%83%BC%E3%82%BA"
+     },
+     {
+      "f": "§1 資格覆核：原文寫法查到藝人實體 4d648881-7064-4f93-acc0-224d93ecb9cd（附註寫著 Okinawan folk music group），名下分頁八筆作品——《あしび》1993、《コザ dabasa》1994、《なーらび》1995、《コザ〜ネーネーズ・ベスト・コレクション》1996、《明けもどろ ～うない～》1997、《Akemodoro Unai》1998、《オキナワ 〜メモリアル・ネーネーズ〜》2000、《Golden ☆ Best》2004，**本盤不在其中，她們在 MB 上的建檔是從 1993 年才開始的**。⚠ 改以羅馬字 Nenes 查，score 100 回的是荷蘭的同名 trance 製作人（dbb80fbc，NL，名下 1 筆 2007 年單曲），沖繩這一團排在 score 92；兩個實體都分頁查過，本盤都不在其中。",
+      "src": "https://musicbrainz.org/ws/2/release-group?artist=4d648881-7064-4f93-acc0-224d93ecb9cd&fmt=json&limit=100&offset=0"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c76-a",
+    "album": "あしび",
+    "facts": [
+     {
+      "f": "本張在 1994 年由 Columbia 以 COL 476824 2 在歐洲發行，盤名作《Ashibi》，Discogs 的歐洲盤條目說明欄除了照抄日本盤的錄音行程外多一行「Made In Austria」，廠牌欄同時列 Columbia 與 Ki/oon。",
+      "src": "https://www.discogs.com/release/19895572"
+     },
+     {
+      "f": "日文維基的ネーネーズ條目寫：團體 1990 年結成，1991 年 4 月 10 日以獨立廠牌ディスクアカバナー的 APCD-1001 發行專輯《IKAWU/イカウー》引起話題，1992 年 9 月 21 日以 KSC2-16《ユンタ》從 Ki/oon Sony Records 做大廠出道；同一份唱片列表把《あしび》記在 1993 年 9 月 9 日、KSC2-48。",
+      "src": "https://ja.wikipedia.org/wiki/%E3%83%8D%E3%83%BC%E3%83%8D%E3%83%BC%E3%82%BA"
+     },
+     {
+      "f": "同一份條目的成員表寫第一期的四個人是古謝美佐子、吉田康子、宮里奈美子、比屋根幸乃（當眞江里子 1996 年才加入，古謝美佐子 1995 年退出）；「ネーネー」在ウチナーヤマトグチ裡是「姐姐」的意思，英文寫法是 Nēnēs。",
+      "src": "https://ja.wikipedia.org/wiki/%E3%83%8D%E3%83%BC%E3%83%8D%E3%83%BC%E3%82%BA"
+     },
+     {
+      "f": "日文維基的知名定男條目記：他 1978 年以融合西洋音樂與沖繩民謡的專輯《赤花》做本土出道，收錄曲〈バイバイ沖縄〉大賣，但因為超出既有民謡的框架而毀譽參半；1990 年他讓古謝美佐子、吉田康子、宮里奈美子、比屋根幸乃四個人組成第一代ネーネーズ。",
+      "src": "https://ja.wikipedia.org/wiki/%E7%9F%A5%E5%90%8D%E5%AE%9A%E7%94%B7"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c76-a",
+    "album": "なーらび",
+    "facts": [
+     {
+      "f": "日文維基的知名定男條目記：他 1945 年 4 月 21 日生於現在的福岡縣北九州市、在大阪長大，父親是沖繩民謡的大家知名定繁，**師父是人稱「誠小（セイグヮー）」的三線名手登川誠仁**；六歲就在歌劇《でぃぐぬ花》裡經歷了第一次唱片錄音。",
+      "src": "https://ja.wikipedia.org/wiki/%E7%9F%A5%E5%90%8D%E5%AE%9A%E7%94%B7"
+     },
+     {
+      "f": "同一份條目記：1956 年他與父親一起偷渡回父親的故鄉沖繩，在業餘歌唱大會拿了第二名，被擔任評審的登川誠仁看中收為內弟子，隨即以〈惣慶漢那〉出道，被說成「天才少年出現了」。",
+      "src": "https://ja.wikipedia.org/wiki/%E7%9F%A5%E5%90%8D%E5%AE%9A%E7%94%B7"
+     },
+     {
+      "f": "日文維基的登川誠仁條目記：他 1932 年 11 月 18 日生於兵庫縣尼崎市、在沖繩長大，2013 年 3 月 19 日過世；是琉球民謡登川流宗家、琉球古典音樂湛水流名譽師範，綽號「誠小」來自他矮小的身形；他擅長快彈、以前也彈過電吉他，而且**用彈片而不是撥子彈三線，因此有「沖繩的吉米・罕醉克斯」這個別名**。",
+      "src": "https://ja.wikipedia.org/wiki/%E7%99%BB%E5%B7%9D%E8%AA%A0%E4%BB%81"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "YUNTA",
+    "manifest": "onboarding-manifest-c113-20260910.json",
+    "desc": "〈国頭サバクイ〉排在前面，第九軌唱的是牙買加的搬運工歌謡。那首是〈DAY-O! (バナナボート)〉3 分 59 秒，第十軌〈CHICKEN 海ヤカラー〉同樣把英文與沖繩語接在一起；另一邊則是〈舟むちユンタ〉〈汗水節〜県道節〉〈ウサガンナ〉這些傳統曲目。第八軌〈泊阿嘉伝説〉9 分 14 秒是全碟最長的一軌，第一軌〈ユンタ〉2 分 31 秒與第十一軌的 Reprise 把中間十首圈了起來。這是她們從在地盤轉進全國通路的出道作，也是知名定男替她們製作的第二張。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/12377604",
+     "https://itunes.apple.com/lookup?id=1536980259&country=jp&entity=song&limit=200",
+     "https://ja.wikipedia.org/wiki/%E3%83%8D%E3%83%BC%E3%83%8D%E3%83%BC%E3%82%BA",
+     "https://musicbrainz.org/ws/2/release-group?artist=4d648881-7064-4f93-acc0-224d93ecb9cd&fmt=json&limit=100&offset=0",
+     "https://www.discogs.com/release/12377604",
+     "https://music.apple.com/jp/album/1536980259"
+    ]
+   },
+   {
+    "album": "あしび",
+    "manifest": "onboarding-manifest-c76-20260904.json",
+    "desc": "1994 年這張碟在歐洲又出了一次，盤名作《Ashibi》。Columbia 的那筆條目上多一行「Made In Austria」。錄音從 1993 年 4 月 27 日開始分在三間錄音室，credit 上有一欄叫「Brazilian Production」，打擊樂手帶進 atabaque 與 cuica。十首裡有七首的詞曲掛製作人知名定男；第八軌〈ノーウーマン　ノークライ〉的作詞作曲掛 Vincent Ford，知名定男另掛一欄「沖縄詞」，主唱掛古謝美佐子。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/ac81dd80-c6f1-3b49-90ee-8ca67ccb5ab9",
+     "https://www.discogs.com/release/12377641",
+     "https://www.discogs.com/release/19895572",
+     "https://ja.wikipedia.org/wiki/%E3%83%8D%E3%83%BC%E3%83%8D%E3%83%BC%E3%82%BA",
+     "https://ja.wikipedia.org/wiki/%E7%9F%A5%E5%90%8D%E5%AE%9A%E7%94%B7",
+     "https://music.apple.com/jp/album/%E3%81%82%E3%81%97%E3%81%B3/1536980004"
+    ]
+   },
+   {
+    "album": "コザ dabasa",
+    "manifest": "onboarding-manifest-c76-20260904.json",
+    "desc": "客席名單上有 Ry Cooder，他在第一軌彈吉他。第十一軌改掛電吉他與滑管吉他；David Lindley 在四軌上掛名，木吉他、滑管吉他、曼陀林與布祖基琴都有，Jim Keltner 打兩軌鼓，David Hidalgo 在第八軌拉手風琴。錄音在 1994 年 3 月，三間錄音室有一間叫 Sunset Sound。第九軌〈片便り〉把四段獨唱逐段標出來，一人一段。最長的〈黄金の花〉8 分 29 秒，同年 8 月 21 日另出成單曲；一個電視新聞節目拿它當片尾曲。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/af7f85e0-d1f2-3a4b-ad75-6e1b38edb6c5",
+     "https://www.discogs.com/release/12377672",
+     "https://ja.wikipedia.org/wiki/%E3%83%8D%E3%83%BC%E3%83%8D%E3%83%BC%E3%82%BA",
+     "https://www.discogs.com/master/1678509"
+    ]
+   },
+   {
+    "album": "なーらび",
+    "manifest": "onboarding-manifest-c76-20260904.json",
+    "desc": "第十三首上多了一個名字：製作人自己的師父。〈谷茶バヤシ〉的 credit 上，登川誠仁掛人聲與三線。知名定男 1945 年生於北九州、在大阪長大，六歲就在一齣歌劇裡經歷了第一次唱片錄音；1956 年回到沖繩後，他在業餘歌唱大會被擔任評審的登川誠仁看中，收為內弟子隨即出道。登川誠仁的綽號「誠小」來自矮小的身形，他彈三線用彈片不用撥子，因此有「沖繩的吉米・罕醉克斯」這個別名。十四首從 46 秒的序曲排到 6 分 37 秒，四位主唱各拿到一首自己的獨唱。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/744a63a0-e9ad-4ace-9b82-f628454a5929",
+     "https://www.discogs.com/release/3281796",
+     "https://ja.wikipedia.org/wiki/%E7%9F%A5%E5%90%8D%E5%AE%9A%E7%94%B7",
+     "https://ja.wikipedia.org/wiki/%E7%99%BB%E5%B7%9D%E8%AA%A0%E4%BB%81",
+     "https://www.discogs.com/master/1682186"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "杏里",
+  "name": "杏里",
+  "tier": "B",
+  "cards": 4,
+  "mainGenre": "pop",
+  "yearRange": [
+   1982,
+   1985
+  ],
+  "script": "zh",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Heaven Beach",
+    "year": 1982,
+    "genres": [
+     "rock",
+     "pop"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Coool",
+    "year": 1984,
+    "genres": [
+     "pop",
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Wave",
+    "year": 1985,
+    "genres": [
+     "pop",
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Bi・Ki・Ni",
+    "year": 1983,
+    "genres": [
+     "pop"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 0,
+   "researchRecords": 0,
+   "facts": 0,
+   "publishedDescs": 4,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": true,
+   "position": true
+  },
+  "research": [],
+  "published": [
+   {
+    "album": "Heaven Beach",
+    "manifest": "onboarding-manifest-c34-japan-20260821.json",
+    "desc": "杏里第四張錄音室專輯，1982年11月由フォーライフ・レコード發行，全碟編曲由瀨尾一三擔綱，角松敏生、ブレッド&バター、小林武史、神田広美等人提供詞曲。輕快的 city pop 取代了前作《哀しみの孔雀》的歐陸風味。A面第二首〈Last Summer Whisper〉在 city pop 復興潮中被海外樂迷大量傳唱；發行當時銷量有限，卡帶與黑膠都曾被炒到高價，2023年才與角松三部曲一同推出復刻黑膠。",
+    "sourceUrls": [
+     "https://ja.wikipedia.org/wiki/Heaven_Beach",
+     "https://musicbrainz.org/release-group/842b0451-267e-42fd-9d5c-ee16b8480840"
+    ]
+   },
+   {
+    "album": "Coool",
+    "manifest": "onboarding-manifest-c34-japan-20260821.json",
+    "desc": "1984年6月由フォーライフ・レコード發行的第七張原創專輯，角松敏生製作的「角松三部曲」收尾之作。錄音在洛杉磯進行，Nathan East、Paul Jackson Jr.、Ernie Watts、Jerry Hey、Paulinho Da Costa 等當地樂手參與，1984年初版母帶由 Bernie Grundman 處理，聲響帶著西岸的開闊感。開場〈BRING ME TO THE DANCENIGHT〉與〈GONE WITH THE SADNESS〉之間不斷句，單曲〈気ままにREFLECTION〉則以不同編曲的版本收錄。",
+    "sourceUrls": [
+     "https://ja.wikipedia.org/wiki/COOOL",
+     "https://musicbrainz.org/release-group/a3a83531-9c3a-40a2-b3cb-995219304ccb"
+    ]
+   },
+   {
+    "album": "Wave",
+    "manifest": "onboarding-manifest-c34-japan-20260821.json",
+    "desc": "1985年6月發行的第八張原創專輯，是杏里事務所獨立後的首作。長年供曲與製作的角松敏生、小林武史在此階段最後一次參與，自出道曲〈オリビアを聴きながら〉以來負責部分編曲的瀨尾一三也在本作告一段落。大量使用合成器、以編程為主體，難波弘之、青木智仁、松原正樹、松武秀樹等人演奏；先行單曲〈16（sixteen）BEAT〉收在後半，〈OVERSEA CALL〉曾用作東京電視台節目片尾曲。",
+    "sourceUrls": [
+     "https://ja.wikipedia.org/wiki/WAVE_(%E6%9D%8F%E9%87%8C%E3%81%AE%E3%82%A2%E3%83%AB%E3%83%90%E3%83%A0)",
+     "https://musicbrainz.org/release-group/c328d61f-864b-47d9-a3e9-d61ab3703a66"
+    ]
+   },
+   {
+    "album": "Bi・Ki・Ni",
+    "manifest": "onboarding-manifest-c35-shop-reels-20260821.json",
+    "desc": "杏里一九八三年六月五日在 For Life Records 發行的第五張原創專輯，距前作《Heaven Beach》七個月。黑膠與卡帶把十首歌切成兩半：第一至五曲標為 Disco Side，由角松敏生一手包辦作曲與音效製作；第六至十曲的 Sea Side 則是杏里與當時巡演樂團成員小林武史共同創作，小林與佐藤準編曲。〈Lady Sunshine〉與〈September Walkin'〉同日切出單曲，〈Good Bye Boogie Dance〉〈Surf City〉延續她夏日海邊的路線。",
+    "sourceUrls": [
+     "https://ja.wikipedia.org/wiki/Bi・Ki・Ni",
+     "https://musicbrainz.org/release-group/65c08cc7-0fe4-4d7d-91f8-3dcb2a6d38bc"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "林俊傑",
+  "name": "林俊傑",
+  "tier": "B",
+  "cards": 4,
+  "mainGenre": "pop",
+  "yearRange": [
+   2003,
+   2015
+  ],
+  "script": "zh",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "樂行者",
+    "year": 2003,
+    "genres": [
+     "pop"
+    ],
+    "composer": null
+   },
+   {
+    "album": "第二天堂",
+    "year": 2004,
+    "genres": [
+     "pop"
+    ],
+    "composer": null
+   },
+   {
+    "album": "和自己對話",
+    "year": 2015,
+    "genres": [
+     "pop"
+    ],
+    "composer": null
+   },
+   {
+    "album": "學不會",
+    "year": 2011,
+    "genres": [
+     "pop"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 10,
+   "researchRecords": 1,
+   "facts": 1,
+   "publishedDescs": 4,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c49b-e",
+    "album": "學不會",
+    "facts": [
+     {
+      "f": "第六軌〈靈魂的共鳴〉由吳易緯作詞，邀鋼琴家郎朗客串，部分素材取自 Sergei Rachmaninoff 的《帕格尼尼主題狂想曲》。",
+      "src": "https://zh.wikipedia.org/zh-tw/%E5%AD%B8%E4%B8%8D%E6%9C%83"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "樂行者",
+    "manifest": "onboarding-manifest-c41-chinese-20260823.json",
+    "desc": "新加坡海蝶唱片「非常歌手訓練班」出身的林俊傑，二〇〇三年以此作出道，十一首曲子全由他作曲，詞多由好友張思爾執筆，許環良監製。開場〈就是我〉交給 Cass Woo 編曲，以帶電子感的前奏定調；〈會讀書〉由 Kenn C 編曲，寫的是升學壓力；〈不懂〉則是他先前寫給張惠妹〈記得〉的原始版本。唱片碰上 SARS 期間發行，全亞洲仍賣出逾一百二十萬張，隔年替他拿下第十五屆金曲獎最佳演唱新人獎。",
+    "sourceUrls": [
+     "https://zh.wikipedia.org/wiki/%E6%A8%82%E8%A1%8C%E8%80%85",
+     "https://musicbrainz.org/release-group/2dfbbd0f-b058-375f-b0eb-4324cb97147b"
+    ]
+   },
+   {
+    "album": "第二天堂",
+    "manifest": "onboarding-manifest-c41-chinese-20260823.json",
+    "desc": "林俊傑第二張作品，作曲一手包辦，林秋離主筆歌詞，許環良製作。〈江南〉在節奏藍調的骨架上放進洞簫與古箏，成為他傳唱最廣的一首，入圍第十六屆金曲獎最佳作曲人；〈子彈列車〉由方文山填詞，嘻哈節奏裡加進非洲 udu 鼓；同名曲揉入他當時代言的線上遊戲元素，中段轉成電影配樂式的管弦編寫。這首歌因歌詞被中國大陸禁播，首發版遂改名《江南》並抽掉該軌，全亞洲銷量逾一百八十萬張。",
+    "sourceUrls": [
+     "https://zh.wikipedia.org/wiki/%E7%AC%AC%E4%BA%8C%E5%A4%A9%E5%A0%82",
+     "https://musicbrainz.org/release-group/5d098f9b-9f0c-3ca0-89aa-dfdecf551a4d"
+    ]
+   },
+   {
+    "album": "和自己對話",
+    "manifest": "onboarding-manifest-c41-chinese-20260823.json",
+    "desc": "全球第一張以假人頭麥克風（人頭錄音）製作的華語流行唱片。林俊傑把那顆人頭取名 Meta Enigma，帶著它離開錄音室：〈序曲：調音〉、〈不為誰而作的歌〉與〈關鍵詞〉錄於新加坡濱海藝術中心，近四十人弦樂編制同步演奏，麥克風擺在觀眾席；〈只要有你的地方〉晚安版錄在睡前的臥房，〈彈唱〉錄在清晨刷牙洗臉聲裡，後段一路錄到 livehouse、車內與海邊營火。第二十七屆金曲獎為他拿下最佳國語男歌手與最佳作曲人。",
+    "sourceUrls": [
+     "https://zh.wikipedia.org/wiki/%E5%92%8C%E8%87%AA%E5%B7%B1%E5%B0%8D%E8%A9%B1",
+     "https://musicbrainz.org/release-group/76e4c992-f974-4183-8244-34a83b6b70dd"
+    ]
+   },
+   {
+    "album": "學不會",
+    "manifest": "onboarding-manifest-c49-20260831.json",
+    "desc": "換了東家的第一張，開場留給一首 54 秒的純音樂。〈獨奏(Prologue)〉由林俊傑自己作曲編曲，接在後面的十二首作曲也全出自他本人，作詞則分派給姚若龍、方文山、林夕、吳青峰等人；第六軌〈靈魂的共鳴〉請來郎朗客串，素材取自 Sergei Rachmaninoff 的《帕格尼尼主題狂想曲》。專輯 2011 年 12 月 31 日由華納音樂（台灣）發行，是他的第九張錄音室專輯，發行後空降十八個榜的冠軍，另有 2012 年 3 月 9 日的黑膠限定版。",
+    "sourceUrls": [
+     "https://zh.wikipedia.org/zh-tw/%E5%AD%B8%E4%B8%8D%E6%9C%83",
+     "https://www.warnermusic.com.tw/products/%E5%AD%B8%E4%B8%8D%E6%9C%83lost-n-found-one-one%E6%83%85%E4%BA%BA%E7%AF%80%E9%99%90%E5%AE%9A%E7%89%88cddvd",
+     "https://musicbrainz.org/release-group/db16e474-6a4c-4999-b72f-eb87f8c994a8"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "菊地雅章",
+  "name": "菊地雅章",
+  "tier": "B",
+  "cards": 4,
+  "mainGenre": "jazz",
+  "yearRange": [
+   1973,
+   1981
+  ],
+  "script": "zh",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Susto",
+    "year": 1981,
+    "genres": [
+     "jazz",
+     "soul"
+    ],
+    "composer": null
+   },
+   {
+    "album": "End for the Beginning",
+    "year": 1973,
+    "genres": [
+     "jazz",
+     "soul"
+    ],
+    "composer": null
+   },
+   {
+    "album": "East Wind",
+    "year": 1974,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Wishes/Kochi",
+    "year": 1976,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   },
+   {
+    "album": "But Not For Me",
+    "year": 1978,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   },
+   {
+    "album": "One-Way Traveller",
+    "year": 1982,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 34,
+   "researchRecords": 4,
+   "facts": 11,
+   "publishedDescs": 6,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c132-a",
+    "album": "East Wind",
+    "facts": [
+     {
+      "f": "East Wind 是 1974 年在東京成立的日本爵士廠牌，目錄用 7000 系與 8000 系兩種編號；廠牌條目把 菊地雅章《East Wind》（EW 7001／8001，1974 年錄音）列在目錄最前面，名下其他藝人包括 Dollar Brand、Cedar Walton、Art Farmer、Andrew Hill 與 The Great Jazz Trio。",
+      "src": "https://en.wikipedia.org/wiki/East_Wind_Records"
+     },
+     {
+      "f": "菊地雅章 1939 年生於東京、2015 年歿於紐約，1968 年赴 Berklee，1972–1980 年與 Gil Evans 共事；1978 年與 Miles Davis 錄過一場未發表的 session。",
+      "src": "https://ja.wikipedia.org/wiki/%E8%8F%8A%E5%9C%B0%E9%9B%85%E7%AB%A0"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c132-a",
+    "album": "Wishes/Kochi",
+    "facts": [
+     {
+      "f": "菊地雅章 1939 年生於東京、2015 年歿於紐約；日文維基把這張記成 1976 年作品，並列出 日野皓正、Al Foster、Steve Grossman、Dave Liebman 的參加。",
+      "src": "https://ja.wikipedia.org/wiki/%E8%8F%8A%E5%9C%B0%E9%9B%85%E7%AB%A0"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c177-a",
+    "album": "But Not For Me",
+    "facts": [
+     {
+      "f": "解說（Liner Notes）逐字掛 Kiyoshi Koyama，也就是児山紀芳（1936年2月12日生於堺、2019年2月3日歿）——他在1962到1979年與1990到1993年兩度擔任《スイングジャーナル》的總編輯。",
+      "src": "https://www.discogs.com/artist/548364"
+     },
+     {
+      "f": "打塔布拉鼓的 Badal Roy（1939年10月16日－2022年1月18日）本名 Amarendra Roy Chowdhury，生於英屬印度東孟加拉的 Comilla（後來的東巴基斯坦、今孟加拉）。",
+      "src": "https://en.wikipedia.org/wiki/Badal_Roy"
+     },
+     {
+      "f": "打鼓的 Al Foster（1943年1月18日－2025年5月28日）整個1970年代都在 Miles Davis 的團裡打融合爵士，而且是 Davis 1975到1980年退隱期間少數仍與他保持聯繫的人之一——本盤錄的正是那段退隱期。",
+      "src": "https://en.wikipedia.org/wiki/Al_Foster"
+     },
+     {
+      "f": "菊地雅章（1939年10月19日－2015年7月6日）綽號「プーさん」，東京藝術大學附屬音樂高中作曲科畢業，1958年以自己的鋼琴三重奏職業出道；1968年隨 Sonny Rollins 的日本巡演同行，同年赴柏克萊音樂大學。",
+      "src": "https://ja.wikipedia.org/wiki/%E8%8F%8A%E5%9C%B0%E9%9B%85%E7%AB%A0"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c188-a",
+    "album": "One-Way Traveller",
+    "facts": [
+     {
+      "f": "A 面整面只有一首〈Alacalder〉20:36：兩位鼓手 Richie Morales 與 Victor Jones、貝斯 Hassan Jenkins、四把吉他（Billy Paterson、Butch Campbell、James Mason、Ronald Drayton）、兩位打擊（Airto Moreira、Aiyb Dieng），加上 Sam Morrison 的電子吹管 Wind Driver。",
+      "src": "https://www.discogs.com/release/3774318"
+     },
+     {
+      "f": "B 面三首：〈Sum Dun Fun〉5:58 由 Steve Grossman 改吹次中音獨奏，〈Madjap Express〉11:20 由 菊地雅章 以 Clavinet 獨奏、Alyrio Lima 加入打擊，末軌〈Sky Talk〉2:50 只剩兩個人——他的鍵盤與 Sam Morrison 的電子吹管。",
+      "src": "https://www.discogs.com/release/3774318"
+     },
+     {
+      "f": "吹薩克斯風的 Steve Grossman 1951 年生於紐約 Brooklyn，從 fusion 起步、以 hard bop 聞名，跟 Miles Davis 與 Elvin Jones 都錄過音。",
+      "src": "https://www.discogs.com/artist/256167"
+     },
+     {
+      "f": "吉他手之一的 James Mason 同時掛「協同製作」，他在 1970 年代末是 Roy Ayers Ubiquity 的成員，1977 年在紐約的小廠 Chiaroscuro 出過個人首作《Rhythm of Life》。",
+      "src": "https://www.discogs.com/artist/33456"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "East Wind",
+    "manifest": "onboarding-manifest-c132-20260917.json",
+    "desc": "廠牌叫 East Wind，1974 年開張的第一回作品，盤名也叫《East Wind》。這家廠牌 1974 年在東京成立，目錄的最前面擺的就是這張碟、品番 EW-7001。錄音在同年 7 月 3 日，四重奏由他的鋼琴、日野皓正的小號，加上 Juni Booth 的貝斯與 Eric Gravatt 的鼓組成。整張只有兩首、一面一首：同名曲 19:59，另一面的〈Green Dance〉24:54，曲子長到讓四個人各自走完一整段獨奏。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=d5c93a08-6a86-43dd-b7ad-a79ce9796bf9&fmt=json&inc=media+labels+artist-credits",
+     "https://www.universal-music.co.jp/masabumi-kikuchi/products/uccj-9131/",
+     "https://en.wikipedia.org/wiki/East_Wind_Records",
+     "https://musicbrainz.org/ws/2/release/351b8339-9624-4fd1-b7d1-dc928e352aa0?fmt=json&inc=recordings+artist-rels",
+     "https://ja.wikipedia.org/wiki/%E8%8F%8A%E5%9C%B0%E9%9B%85%E7%AB%A0",
+     "https://musicbrainz.org/release-group/d5c93a08-6a86-43dd-b7ad-a79ce9796bf9"
+    ]
+   },
+   {
+    "album": "Wishes/Kochi",
+    "manifest": "onboarding-manifest-c132-20260917.json",
+    "desc": "樂團叫東風，只存在這一張唱片，原盤盤名只有《Wishes》兩個字。1976 年發行時，唱片掛的是這支一次性企劃團的名字，而不是他個人。這是他在 East Wind 的第二張，班底整個換成紐約的人：他的鋼琴、Rhodes 與合成器之外，配上小號、兩支薩克斯風與長笛、電吉他、電貝斯、鼓與康加鼓，Dave Liebman 吹高音薩克斯風，Al Foster 打鼓。六首裡三首超過十一分鐘，收尾的〈Alone〉只有 2:43。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=1e2d9cd2-5dc8-4607-a527-93a052fe4c7a&fmt=json&inc=media+labels+artist-credits",
+     "https://sessiondays.com/2023/02/17/1976-kochi-wishes/",
+     "https://musicbrainz.org/ws/2/release/6b8d00fc-08d8-44ca-b186-47e4a8803d22?fmt=json&inc=recordings+artist-rels",
+     "https://ja.wikipedia.org/wiki/%E8%8F%8A%E5%9C%B0%E9%9B%85%E7%AB%A0",
+     "https://music.apple.com/jp/album/wishes/1468445908",
+     "https://musicbrainz.org/release-group/1e2d9cd2-5dc8-4607-a527-93a052fe4c7a"
+    ]
+   },
+   {
+    "album": "But Not For Me",
+    "manifest": "onboarding-manifest-c177-20261004.json",
+    "desc": "六首曲裡四首新作出自鋼琴手，另兩首的作曲欄掛著貝斯手。鋼琴手是菊地雅章，貝斯手是 Gary Peacock，掛他的那兩首是〈Pumu : #1〉與〈Pumu : #2〉。唱片在紐約的 Generation Sound Studios 錄成，1978 年掛 VIJ-6016 上市。Peacock、Al Foster 與他自己的掛名後面都再加一行 Percussion，Alyrio Lima 的樂器欄更列了七行。解說逐字掛児山紀芳，他兩度擔任《スイングジャーナル》的總編輯。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/3774353",
+     "https://www.discogs.com/artist/548364",
+     "https://en.wikipedia.org/wiki/Badal_Roy",
+     "https://en.wikipedia.org/wiki/Al_Foster",
+     "https://ja.wikipedia.org/wiki/%E8%8F%8A%E5%9C%B0%E9%9B%85%E7%AB%A0",
+     "https://en.wikipedia.org/wiki/Gary_Peacock",
+     "https://www.jvcmusic.co.jp/-/Discography/-/VICJ-77044.html",
+     "https://miqqe.jp/item/njs-843/",
+     "https://musicbrainz.org/release-group/e4fbb764-3d5b-44f7-8751-fcccb28e2fc1"
+    ]
+   },
+   {
+    "album": "One-Way Traveller",
+    "manifest": "onboarding-manifest-c188-20261004.json",
+    "desc": "二十分半的一軌裡，鼓手有兩位，吉他有四把。曲名是〈Alacalder〉，獨佔 A 面，長 20 分 36 秒，鼓由 Richie Morales 與 Victor Jones 分打。1982 年出版，唱片號 25AH 1402，四首都是 菊地雅章 的作曲，在紐約與東京兩地錄成。它與前一年那張出自同一批錄音，拆成兩張 LP，先出的那一張收另外四首。〈Alacalder〉的獨奏依序給 Steve Grossman 的高音薩克斯風、日野皓正 的短號與作曲者自己的合成器。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/3774318",
+     "https://en.wikipedia.org/wiki/Susto_%28album%29",
+     "https://www.discogs.com/artist/256167",
+     "https://www.discogs.com/artist/33456",
+     "https://www.discogs.com/artist/1588219",
+     "https://www.discogs.com/master/483119",
+     "https://musicbrainz.org/release-group/cff64faf-de31-42f2-8ac9-5e5d2ada46f0"
+    ]
+   },
+   {
+    "album": "Susto",
+    "manifest": "onboarding-manifest-c34-jazz-20260821.json",
+    "desc": "菊地雅章 1980 年 11 月在紐約自宅 Sound Ideas Studios 錄成，同批工作也做出《One-Way Traveller》，1981 年由 CBS/Sony 發行。四首長曲走 Miles Davis 中期電化 funk 的路數：日野皓正吹短號與玻利維亞笛，Dave Liebman 與 Steve Grossman 兩把薩克斯風，四位電吉他手加上兩組鼓與打擊堆出綿密的複節奏。終曲〈New Native〉近十五分鐘。唱片題獻名單包括 Ellington、Gil Evans、Ligeti、Stockhausen 與武滿徹。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Susto_(album)",
+     "https://musicbrainz.org/release-group/4f3ecd1c-c0aa-4d09-bf19-e2a49bf7210f"
+    ]
+   },
+   {
+    "album": "End for the Beginning",
+    "manifest": "onboarding-manifest-c35-shop-reels-20260821.json",
+    "desc": "綽號「プーさん」的菊地雅章一九三九年生於東京，藝大附屬高中作曲科畢業後於一九五八年起以自組鋼琴三重奏出道，一九六八年隨 Sonny Rollins 日本巡演並赴 Berklee 進修。一九七〇年的《POO-SUN》讓他成為日本最早實踐 Miles Davis 電氣化路數的樂手之一，之後與 Gil Evans、Elvin Jones 頻繁合作。一九七三年這張掛 Masabumi Kikuchi Quintet 名義、由日本 Philips 發行（FX-8527），共五曲，其中〈Gin-Kai〉重讀他與山本邦山一九七〇年《銀界》的同名曲。",
+    "sourceUrls": [
+     "https://ja.wikipedia.org/wiki/菊地雅章",
+     "https://en.wikipedia.org/wiki/Masabumi_Kikuchi",
+     "https://musicbrainz.org/release-group/041fd338-0b5f-4cf8-848f-459f44e39ed0"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "藤圭子",
+  "name": "藤圭子",
+  "tier": "B",
+  "cards": 4,
+  "mainGenre": "pop",
+  "yearRange": [
+   1970,
+   1971
+  ],
+  "script": "zh",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "新宿の女",
+    "year": 1970,
+    "genres": [
+     "pop",
+     "soul"
+    ],
+    "composer": null
+   },
+   {
+    "album": "女のブルース",
+    "year": 1970,
+    "genres": [
+     "pop",
+     "blues"
+    ],
+    "composer": null
+   },
+   {
+    "album": "歌いつがれて25年 藤 圭子 演歌を歌う",
+    "year": 1970,
+    "genres": [
+     "pop"
+    ],
+    "composer": null
+   },
+   {
+    "album": "さいはての女",
+    "year": 1971,
+    "genres": [
+     "pop"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 18,
+   "researchRecords": 3,
+   "facts": 4,
+   "publishedDescs": 4,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c103-b",
+    "album": "女のブルース",
+    "facts": [
+     {
+      "f": "日文維基〈女のブルース (アルバム)〉：1970 年 7 月 5 日發行，廠牌 RCA／日本ビクター，**全曲作詞石坂まさを**；逐軌的作曲與編曲條目都列了出來——〈女のブルース〉作曲猪俣公章／編曲成田征英、〈女の流れ唄〉曽根幸明、〈涙のブルース〉猪俣公章／原田良一、〈東京夜曲〉池田孝、〈命預けます〉石坂まさを／曽根幸明、〈あなた任せのブルース〉森川登／池田孝、〈盛り場数え唄〉中村泰士／原田良一、〈夜の花〉彩木雅夫／池田孝、〈女泣かせ〉城美好／原田良一、〈女の真心〉小谷充／池田孝。條目並記 2013 年 4 月發行復刻版 CD。",
+      "src": "https://ja.wikipedia.org/wiki/%E5%A5%B3%E3%81%AE%E3%83%96%E3%83%AB%E3%83%BC%E3%82%B9_(%E3%82%A2%E3%83%AB%E3%83%90%E3%83%A0)"
+     },
+     {
+      "f": "日文維基〈女のブルース〉（單曲條目）：同名單曲是她的**第 2 張單曲**，1970 年 2 月 5 日發行，作詞石坂まさを、作曲猪俣公章、編曲成田征英，長 3 分 55 秒，B 面〈あなた任せのブルース〉。條目引猪俣公章的說法：他要求石坂まさを「寫成四行詩、上半用同一句統一」，結果第一段四行的上半都是「女ですもの」、第二段都是「あなたひとりに」，只有下半的詞在變——看似極簡的結構其實講究，與出道作《新宿の女》的沉重陰暗相比，這首在淡然裡帶著哀愁。**單曲的 A／B 兩面就是本盤的 A1 與 A6。**",
+      "src": "https://ja.wikipedia.org/wiki/%E5%A5%B3%E3%81%AE%E3%83%96%E3%83%AB%E3%83%BC%E3%82%B9"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c103-b",
+    "album": "歌いつがれて25年 藤 圭子 演歌を歌う",
+    "facts": [
+     {
+      "f": "**⚠ 這是一張現場錄音盤。** 日文維基〈歌いつがれて25年 藤圭子演歌を歌う〉的 infobox 把 Type 標為「**ライブ・アルバム**」，Recorded 欄寫「**1970 年 10 月 23 日 澀谷公會堂**」，1970 年 12 月 5 日發行、廠牌 RCA、規格品番 JRS-9039/40，是她的**第 3 張、兩片裝**專輯。內文：收錄的是當日「デビュー1周年記念リサイタル」，**這是藤圭子的第一張現場錄音專輯**；「持ち歌は2曲のみ、それ以外は戦後歌謡史を1人で歌い継いでいくといった構成」。條目並記當天她身體不適、貧血到快站不穩，仍唱滿兩小時；同在後台的ちあきなおみ 含淚說「她的骨氣讓我服氣，那反而讓人難受」（引自《明星》1971 年 1 月號）。",
+      "src": "https://ja.wikipedia.org/wiki/%E6%AD%8C%E3%81%84%E3%81%A4%E3%81%8C%E3%82%8C%E3%81%A625%E5%B9%B4%20%E8%97%A4%E5%9C%AD%E5%AD%90%E6%BC%94%E6%AD%8C%E3%82%92%E6%AD%8C%E3%81%86"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c103-b",
+    "album": "さいはての女",
+    "facts": [
+     {
+      "f": "日文維基〈さいはての女 (アルバム)〉：類型標「**スタジオ・アルバム**」，1971 年 3 月 5 日發行，發行元 RCA、規格品番 JRS-7117，**錄音 1970–1971 年**，長 44 分（LP）。內文明寫「**全曲オリジナル作品**」，並逐一交代收錄的單曲曲目：〈女は恋に生きてゆく〉（1970 年 10 月 25 日 JRT-1117）、〈さいはての女〉與 B 面〈東京花ものがたり〉（1971 年 2 月 5 日 JRT-1137）、後來被 cut 成單曲的〈恋仁義〉與 B 面〈涙ひとしずく〉（1971 年 5 月 5 日 JRT-1167）、〈みちのく小唄〉（1971 年 6 月 5 日 JRT-5）。前作《歌いつがれて25年 藤圭子演歌を歌う》（1970）、次作《圭子の人生劇場》（1971）。",
+      "src": "https://ja.wikipedia.org/wiki/%E3%81%95%E3%81%84%E3%81%AF%E3%81%A6%E3%81%AE%E5%A5%B3_(%E3%82%A2%E3%83%AB%E3%83%90%E3%83%A0)"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "女のブルース",
+    "manifest": "onboarding-manifest-c103-20260910.json",
+    "desc": "作曲的人要求：寫成四行詩，上半四行全用同一句。第一段四行的上半都是「女ですもの」，第二段都是「あなたひとりに」，只有下半在變，看似極簡的結構其實講究。這張 1970 年的第二張專輯裡，十二軌的詞出自同一人之手，曲名帶「女」的佔六軌，題材集中在夜的街——〈ネオン街の女〉〈盛り場数え唄〉〈夜の花〉。她十九歲那把沙啞而低的聲線一路壓在底部，2013 年復刻版的逐軌長度落在 2:48 到 4:06。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/3a23a76b-2b0b-4b6e-9fb3-1ddc40e208d3?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=3a23a76b-2b0b-4b6e-9fb3-1ddc40e208d3&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://ja.wikipedia.org/wiki/%E5%A5%B3%E3%81%AE%E3%83%96%E3%83%AB%E3%83%BC%E3%82%B9_(%E3%82%A2%E3%83%AB%E3%83%90%E3%83%A0)",
+     "https://ja.wikipedia.org/wiki/%E5%A5%B3%E3%81%AE%E3%83%96%E3%83%AB%E3%83%BC%E3%82%B9",
+     "https://musicbrainz.org/ws/2/release-group?artist=3d5ebe93-dfa1-434f-807f-ddab40247c4b&fmt=json&limit=100&offset=0",
+     "https://itunes.apple.com/search?term=%E8%97%A4%E5%9C%AD%E5%AD%90%20%E5%A5%B3%E3%81%AE%E3%83%96%E3%83%AB%E3%83%BC%E3%82%B9&country=jp&entity=album&limit=25",
+     "https://musicbrainz.org/release-group/3a23a76b-2b0b-4b6e-9fb3-1ddc40e208d3"
+    ]
+   },
+   {
+    "album": "歌いつがれて25年 藤 圭子 演歌を歌う",
+    "manifest": "onboarding-manifest-c103-20260910.json",
+    "desc": "二十軌只有兩首是她自己的歌，其餘一個人唱完戰後歌謡史。錄的是 1970 年 10 月 23 日澀谷公會堂那場出道一周年演唱會的實況，兩片裝、每片十軌。曲單從 1945 年的〈リンゴの唄〉一路排到 1969 年的〈長崎は今日も雨だった〉，屬於她自己的那兩首是〈圭子の夢はよるひらく〉與〈命預けます〉。當天她身體不適、貧血到快站不穩，仍唱滿了兩小時。同年 12 月由 RCA 發行，編號 JRS-9039 與 JRS-9040。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/22b19ae8-8656-4f27-b847-10b539d6d17a?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=22b19ae8-8656-4f27-b847-10b539d6d17a&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://ja.wikipedia.org/wiki/%E6%AD%8C%E3%81%84%E3%81%A4%E3%81%8C%E3%82%8C%E3%81%A625%E5%B9%B4%20%E8%97%A4%E5%9C%AD%E5%AD%90%E6%BC%94%E6%AD%8C%E3%82%92%E6%AD%8C%E3%81%86",
+     "https://ja.wikipedia.org/wiki/%E8%97%A4%E5%9C%AD%E5%AD%90",
+     "https://itunes.apple.com/search?term=%E6%AD%8C%E3%81%84%E3%81%A4%E3%81%8C%E3%82%8C%E3%81%A625%E5%B9%B4&country=jp&entity=album&limit=25",
+     "https://musicbrainz.org/release-group/22b19ae8-8656-4f27-b847-10b539d6d17a"
+    ]
+   },
+   {
+    "album": "さいはての女",
+    "manifest": "onboarding-manifest-c103-20260910.json",
+    "desc": "翻唱盤成群的那幾年，這十二軌全是為她新寫的。〈女は恋に生きてゆく〉〈さいはての女〉〈恋仁義〉〈みちのく小唄〉四首在這張盤的前後被剪成單曲發行。題材沿著女與地名走——〈大阪女のブルース〉〈長崎の女〉〈旭川の女〉。十二軌約四十四分，錄音跨 1970 到 1971 年，她的低音在慢速的三拍與四拍上拖長。1971 年由 RCA 發行，編號 JRS-7117；詞多由石坂まさを執筆，曲分給彩木雅夫、猪俣公章與鈴木淳，編曲以池田孝為主。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release-group/e303b244-4e1c-4ebc-860a-50fb95001543?fmt=json&inc=artist-credits+releases",
+     "https://musicbrainz.org/ws/2/release?release-group=e303b244-4e1c-4ebc-860a-50fb95001543&fmt=json&inc=media+labels+recordings&limit=100",
+     "https://ja.wikipedia.org/wiki/%E3%81%95%E3%81%84%E3%81%AF%E3%81%A6%E3%81%AE%E5%A5%B3_(%E3%82%A2%E3%83%AB%E3%83%90%E3%83%A0)",
+     "https://ja.wikipedia.org/wiki/%E8%97%A4%E5%9C%AD%E5%AD%90",
+     "https://itunes.apple.com/search?term=%E8%97%A4%E5%9C%AD%E5%AD%90%20%E3%81%95%E3%81%84%E3%81%AF%E3%81%A6%E3%81%AE%E5%A5%B3&country=jp&entity=album&limit=25",
+     "https://musicbrainz.org/release-group/e303b244-4e1c-4ebc-860a-50fb95001543"
+    ]
+   },
+   {
+    "album": "新宿の女",
+    "manifest": "onboarding-manifest-c34-japan-20260821.json",
+    "desc": "1970年3月RCA發行的首張專輯，正式題名為《新宿の女／“演歌の星”藤圭子のすべて》。オリコン專輯榜連續二十週第一，接續的《女のブルース》再連十七週，合計三十七週。除石坂まさを所寫的同名出道曲外，多為〈星の流れに〉〈カスバの女〉〈夢は夜ひらく〉等戰後歌謡翻唱，沙啞低音把當年評論所謂的「怨歌」唱成實體。",
+    "sourceUrls": [
+     "https://ja.wikipedia.org/wiki/%E8%97%A4%E5%9C%AD%E5%AD%90",
+     "https://musicbrainz.org/release-group/aa5a953c-7c23-46c6-9995-e1019c6951dd"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "謝雷",
+  "name": "謝雷",
+  "tier": "B",
+  "cards": 4,
+  "mainGenre": "pop",
+  "yearRange": [
+   1968,
+   1970
+  ],
+  "script": "zh",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "新娘與我",
+    "year": 1968,
+    "genres": [
+     "pop",
+     "world"
+    ],
+    "composer": null
+   },
+   {
+    "album": "往日的舊夢",
+    "year": 1968,
+    "genres": [
+     "pop",
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "歡唱",
+    "year": 1968,
+    "genres": [
+     "pop",
+     "rock"
+    ],
+    "composer": null
+   },
+   {
+    "album": "梨山痴情花",
+    "year": 1970,
+    "genres": [
+     "pop",
+     "world"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 17,
+   "researchRecords": 4,
+   "facts": 4,
+   "publishedDescs": 4,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c115-b",
+    "album": "新娘與我",
+    "facts": [
+     {
+      "f": "藝人條目：本名謝茂雄，1940 年 2 月 2 日生於台北市大稻埕。1964 年參加警察廣播電台的「交通安全歌曲演唱比賽」得亞軍（冠軍是張琪），之後兩人都與警廣簽約、每天在《空中歌廳》現場演唱，月薪兩百元；後來被引薦上台視的《群星會》，某次節目出現三分鐘空檔，主持人臨時要張琪與謝雷合唱〈月下對口〉，兩人因此走紅。**同年由作曲家林福裕引薦、林一手包辦詞曲與編曲，他的第一張個人專輯《謝雷之歌》在環球唱片問世，主打歌〈多少柔情多少淚〉翻唱自 Elvis Presley 的〈Summer Kisses, Winter Tears〉，酬勞八百元。**",
+      "src": "https://zh.wikipedia.org/wiki/%E8%AC%9D%E9%9B%B7_%28%E6%AD%8C%E6%89%8B%29"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c115-b",
+    "album": "往日的舊夢",
+    "facts": [
+     {
+      "f": "藝人條目：本名謝茂雄，1940 年 2 月 2 日生於台北市大稻埕。1964 年在警察廣播電台的歌唱比賽拿亞軍後與警廣簽約，之後與張琪在台視《群星會》臨時合唱〈月下對口〉而走紅；同年由林福裕引薦出了第一張個人專輯。1967 年海山唱片老闆鄭鎮坤以一萬五千元把他挖過去。**1968 年他演出台語電影《負心的人》，同名歌曲隨電影推出，當時的隨片登台制度讓他每一場都得唱歌**——〈負心的人〉正是本片 B 面第三軌，也是全片最長的一首。",
+      "src": "https://zh.wikipedia.org/wiki/%E8%AC%9D%E9%9B%B7_%28%E6%AD%8C%E6%89%8B%29"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c115-b",
+    "album": "歡唱",
+    "facts": [
+     {
+      "f": "藝人條目：本名謝茂雄，1940 年 2 月 2 日生於台北市大稻埕。1964 年在警察廣播電台的歌唱比賽拿亞軍後與警廣簽約，在《空中歌廳》每日現場演唱、月薪兩百元；後被引薦上台視《群星會》，最初只是大牌歌手唱完後的墊檔角色，直到某次節目空了三分鐘、臨時與張琪合唱〈月下對口〉才走紅。1965 年環球唱片轉型後他與環球結束合作，1967 年被海山唱片老闆鄭鎮坤挖走。",
+      "src": "https://zh.wikipedia.org/wiki/%E8%AC%9D%E9%9B%B7_%28%E6%AD%8C%E6%89%8B%29"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c115-b",
+    "album": "梨山痴情花",
+    "facts": [
+     {
+      "f": "藝人條目：本名謝茂雄，1940 年 2 月 2 日生於台北市大稻埕。1967 年被海山唱片老闆鄭鎮坤挖走，錄下改編自台語歌〈悲戀的酒杯〉、由慎芝重填國語詞的〈苦酒滿杯〉，該曲在戒嚴時期被警備總部以歌詞暗示「苦酒滿杯」為由查禁，唱片公司改換封面名字繼續賣。1968 年他演出台語電影《負心的人》。**1972 年起他把工作重心放到海外作秀；1974 年到菲律賓某夜總會時因對方拒絕放人而被檢舉，遭菲律賓遣返，台灣政府也禁止他出境兩年**，之後他轉往歌廳與秀場，鮮少在電視上露臉。",
+      "src": "https://zh.wikipedia.org/wiki/%E8%AC%9D%E9%9B%B7_%28%E6%AD%8C%E6%89%8B%29"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "新娘與我",
+    "manifest": "onboarding-manifest-c115-20260910.json",
+    "desc": "伴奏班底掛的是一支叫 The Telstar Combo 的樂隊。他在警察廣播電台的歌唱比賽拿亞軍後與電台簽約，後來上了電視的《群星會》，某次節目空了三分鐘，主持人臨時要他與張琪合唱〈月下對口〉，兩人因此走紅。十二軌是那個年代台北歌廳男聲的標準組合：〈藍色的憂鬱〉〈玫瑰夢〉這一路的抒情曲，配上〈關達拉美娜〉〈熱情的太陽〉兩首拉丁曲目的國語版。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/6001080",
+     "https://itunes.apple.com/lookup?id=1476232860&country=tw&entity=song&limit=200",
+     "https://zh.wikipedia.org/wiki/%E8%AC%9D%E9%9B%B7_%28%E6%AD%8C%E6%89%8B%29",
+     "https://musicbrainz.org/ws/2/release-group?artist=ad74b929-3d93-46b4-8d9a-a320fbb89a63&fmt=json&limit=100&offset=0",
+     "https://www.discogs.com/release/6001080",
+     "https://music.apple.com/tw/album/1476232860"
+    ]
+   },
+   {
+    "album": "往日的舊夢",
+    "manifest": "onboarding-manifest-c115-20260910.json",
+    "desc": "B 面第三軌〈負心的人〉4 分 19 秒，同名的台語電影他自己演。同名歌曲隨那部電影推出，當時有隨片登台的制度，每一場他都得唱。十二軌約 36 分鐘，A 面同名曲 2 分 57 秒開場，〈苔痕〉〈深深的戀情〉一路走抒情；B 面〈流浪之歌〉2 分 23 秒是全片最短，第三軌那 4 分 19 秒則是最長也最重的一首。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/6000794",
+     "https://itunes.apple.com/lookup?id=1740242272&country=tw&entity=song&limit=200",
+     "https://zh.wikipedia.org/wiki/%E8%AC%9D%E9%9B%B7_%28%E6%AD%8C%E6%89%8B%29",
+     "https://musicbrainz.org/ws/2/release-group?artist=ad74b929-3d93-46b4-8d9a-a320fbb89a63&fmt=json&limit=100&offset=0",
+     "https://www.discogs.com/release/6000794",
+     "https://music.apple.com/tw/album/1740242272"
+    ]
+   },
+   {
+    "album": "歡唱",
+    "manifest": "onboarding-manifest-c115-20260910.json",
+    "desc": "碟名取的是全片最短的一首：〈歡唱〉只有 1 分 58 秒。十一軌約 32 分鐘，是他同一系列四張裡最短的一張。A 面〈過去的春夢〉〈碧闌村的姑娘〉開場，第三軌的同名曲收得最快；B 面〈故鄉在何方〉〈深深的懷念〉〈夢去了〉三首連著走思鄉，第四軌〈浪子之歌〉4 分 17 秒是全片最長。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/6000265",
+     "https://itunes.apple.com/lookup?id=1734178303&country=tw&entity=song&limit=200",
+     "https://zh.wikipedia.org/wiki/%E8%AC%9D%E9%9B%B7_%28%E6%AD%8C%E6%89%8B%29",
+     "https://musicbrainz.org/ws/2/release-group?artist=ad74b929-3d93-46b4-8d9a-a320fbb89a63&fmt=json&limit=100&offset=0",
+     "https://www.discogs.com/release/6000265",
+     "https://music.apple.com/tw/album/1734178303"
+    ]
+   },
+   {
+    "album": "梨山痴情花",
+    "manifest": "onboarding-manifest-c115-20260910.json",
+    "desc": "翻到 B 面第一軌才是〈梨山痴情花〉，2 分 49 秒。十軌約 31 分鐘、兩面各五首，A 面〈情人再見〉2 分 42 秒開場，之後逐首拉長到三分半；B 面首軌是同名曲，接著〈再來一個〉3 分 42 秒是全片最長，末三軌收得比 A 面短，最短的〈情人夢〉只有 2 分 19 秒。1972 年起他把重心移到海外作秀，1974 年在菲律賓被檢舉遣返，台灣也禁止他出境兩年，之後他轉往歌廳與秀場，鮮少再上電視。",
+    "sourceUrls": [
+     "https://api.discogs.com/releases/6003928",
+     "https://itunes.apple.com/lookup?id=1715637662&country=tw&entity=song&limit=200",
+     "https://zh.wikipedia.org/wiki/%E8%AC%9D%E9%9B%B7_%28%E6%AD%8C%E6%89%8B%29",
+     "https://musicbrainz.org/ws/2/release-group?artist=ad74b929-3d93-46b4-8d9a-a320fbb89a63&fmt=json&limit=100&offset=0",
+     "https://www.discogs.com/release/6003928",
+     "https://music.apple.com/tw/album/1715637662"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "鷺巣詩郎",
+  "name": "鷺巣詩郎",
+  "tier": "B",
+  "cards": 4,
+  "mainGenre": "classical",
+  "yearRange": [
+   1995,
+   2007
+  ],
+  "script": "zh",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "NEON GENESIS EVANGELION",
+    "year": 1995,
+    "genres": [
+     "pop",
+     "jazz"
+    ],
+    "composer": null
+   },
+   {
+    "album": "NEON GENESIS EVANGELION II",
+    "year": 1996,
+    "genres": [
+     "classical",
+     "jazz"
+    ],
+    "composer": null
+   },
+   {
+    "album": "THE END OF EVANGELION",
+    "year": 1997,
+    "genres": [
+     "classical"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Shiro SAGISU Music from EVANGELION:1.0 YOU ARE (NOT) ALONE",
+    "year": 2007,
+    "genres": [
+     "classical"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 20,
+   "researchRecords": 1,
+   "facts": 1,
+   "publishedDescs": 4,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": false,
+   "era": true,
+   "position": false
+  },
+  "research": [
+   {
+    "batch": "c102-b",
+    "album": "NEON GENESIS EVANGELION II",
+    "facts": [
+     {
+      "f": "鷺巣詩郎 Apple 藝人頁 artistId 76121793 的目錄筆數：jp 116、us 84、gb 64、tw 60、hk 60、de 64（**都遠低於 limit=200 的截斷值**）。jp／tw／hk 三個店面的目錄與 search 端點都**沒有** 1990 年代那三張 TV 版原聲盤的任何一張，只有 2020-10-07 的《NEON GENESIS EVANGELION SOUNDTRACK 25th ANNIVERSARY BOX》（1638088437，Various Artists，120 軌）與它的分片 DISC1（1638053056，24 軌）／DISC4（1638033853，18 軌）／DISC5（1638034199，16 軌）。",
+      "src": "https://itunes.apple.com/lookup?id=76121793&entity=album&limit=200&country=jp"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "NEON GENESIS EVANGELION II",
+    "manifest": "onboarding-manifest-c102-20260910.json",
+    "desc": "二十五軌的唱片上架時，電視版還有四十天才播完。日文維基記那套動畫全 26 話，1996 年 3 月 27 日播畢。MB 的 STARCHILD KICA-290 記鷺巣詩郎這張二十五軌，曲序自〈予感〉起，中段是〈ANGEL ATTACK II〉〈MAGMADIVER〉這一列標題全大寫的戰鬥曲，第 17 軌〈THANATOS〉與第 18 軌〈Rei III〉是碟上最長的兩首。尾端第 20 至 22 與第 24、25 軌，是五種版本的〈FLY ME TO THE MOON〉。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/c1b5e3f5-f2cc-3764-8098-992821c6df3b",
+     "https://musicbrainz.org/ws/2/release?release-group=c1b5e3f5-f2cc-3764-8098-992821c6df3b&fmt=json&inc=media+labels&limit=100",
+     "https://musicbrainz.org/release/73dec9a9-a8ed-475e-b691-5a53b3476669",
+     "https://itunes.apple.com/lookup?id=1656737341&country=us&entity=song&limit=200",
+     "https://itunes.apple.com/lookup?id=76121793&entity=album&limit=200&country=us",
+     "https://itunes.apple.com/lookup?id=76121793&entity=album&limit=200&country=jp",
+     "https://ja.wikipedia.org/wiki/%E6%96%B0%E4%B8%96%E7%B4%80%E3%82%A8%E3%83%B4%E3%82%A1%E3%83%B3%E3%82%B2%E3%83%AA%E3%82%AA%E3%83%B3"
+    ]
+   },
+   {
+    "album": "THE END OF EVANGELION",
+    "manifest": "onboarding-manifest-c102-20260910.json",
+    "desc": "十四軌的曲目表上，有兩軌的作曲者是巴赫。MB 的 STARCHILD KICA-370 記單片十四軌，第 6 軌是管弦組曲第三號的〈Air〉，第 12 軌是〈Jesus bleibet meine Freude〉，兩首與鷺巣詩郎自己的曲子同列，第 8 軌就是〈THANATOS –IF I CAN’T BE YOURS–〉。碟上最長的是第 11 軌〈Komm, süsser Tod〉的 M-10 導演剪輯版，七分四十六秒；末軌〈夢のスキマ〉一分二十六秒最短。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/03587dbb-a647-34d5-a326-9661fd626197",
+     "https://musicbrainz.org/ws/2/release?release-group=03587dbb-a647-34d5-a326-9661fd626197&fmt=json&inc=media+labels&limit=100",
+     "https://musicbrainz.org/release/bf277278-5567-335d-88a2-09e9860d8813",
+     "https://itunes.apple.com/lookup?id=258925326&country=jp&entity=song&limit=200",
+     "https://itunes.apple.com/lookup?id=1605640852&country=jp&entity=song&limit=200",
+     "https://itunes.apple.com/lookup?id=1671675665&country=us&entity=song&limit=200",
+     "https://ja.wikipedia.org/wiki/%E6%96%B0%E4%B8%96%E7%B4%80%E3%82%A8%E3%83%B4%E3%82%A1%E3%83%B3%E3%82%B2%E3%83%AA%E3%82%AA%E3%83%B3%E5%8A%87%E5%A0%B4%E7%89%88_Air/%E3%81%BE%E3%81%94%E3%81%93%E3%82%8D%E3%82%92%E3%80%81%E5%90%9B%E3%81%AB"
+    ]
+   },
+   {
+    "album": "Shiro SAGISU Music from EVANGELION:1.0 YOU ARE (NOT) ALONE",
+    "manifest": "onboarding-manifest-c102-20260910.json",
+    "desc": "第二十四、二十五軌收的是兩首標明 Demo 的錄音。MB 的 STARCHILD KICA-887 記鷺巣詩郎這張單片 26 軌，那兩軌是 EM17_Demo 17 與 EM21_Demo 21——每一軌的標題後面都保留著製作編號，EM01 一路排到 EM21，另有 EMA01、Guit_C。曲名以法文與英文混排：〈Les Bêtes〉〈Danse des Lucioles〉。第 20 軌〈Bataille Décisive (EM20)〉四分四十五秒，碟上最長。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/71086160-3b53-3a3e-a2a6-b0132812376f",
+     "https://musicbrainz.org/ws/2/release?release-group=71086160-3b53-3a3e-a2a6-b0132812376f&fmt=json&inc=media+labels&limit=100",
+     "https://musicbrainz.org/release/9489cfc6-7dcb-47de-a0e0-773a74f16033",
+     "https://itunes.apple.com/lookup?id=263727634&country=jp&entity=song&limit=200",
+     "https://itunes.apple.com/lookup?id=1522561884&country=us&entity=song&limit=200",
+     "https://ja.wikipedia.org/wiki/%E3%83%B1%E3%83%B4%E3%82%A1%E3%83%B3%E3%82%B2%E3%83%AA%E3%83%B2%E3%83%B3%E6%96%B0%E5%8A%87%E5%A0%B4%E7%89%88:%E5%BA%8F"
+    ]
+   },
+   {
+    "album": "NEON GENESIS EVANGELION",
+    "manifest": "onboarding-manifest-c46-soundtrack-cross-20260828.json",
+    "desc": "鷺巣詩郎為《新世紀福音戰士》電視版寫的音樂，1995 年 12 月 6 日由 King Records 的 Starchild 發行，Oricon 最高第十二名、在榜二十二週。他刻意採七〇年代的製作方式、避開合成器，讓小編制室內樂團擔綱：銅管在戰鬥段落領奏，大提琴與鋼琴留給人物段落。開場曲〈殘酷な天使のテーゼ〉由高橋洋子演唱，盤中收的是庵野秀明改過副歌、補回吉他間奏的 Director's Edit 版；片尾曲〈Fly Me to the Moon〉以 acid bossa、jungle 等不同編曲在盤中反覆出現。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Neon_Genesis_Evangelion_(soundtrack)",
+     "https://musicbrainz.org/release-group/4b608935-0ed2-3ff3-9618-3dd07055d814"
+    ]
+   }
+  ]
+ },
+ {
+  "key": "cæcilie norby",
+  "name": "Cæcilie Norby",
+  "tier": "D",
+  "cards": 4,
+  "mainGenre": "jazz",
+  "yearRange": [
+   1995,
+   2002
+  ],
+  "script": "latin",
+  "collab": false,
+  "classicalPerformer": false,
+  "poolAlbums": [
+   {
+    "album": "Cæcilie Norby",
+    "year": 1995,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   },
+   {
+    "album": "My Corner of the Sky",
+    "year": 1996,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   },
+   {
+    "album": "Queen of Bad Excuses",
+    "year": 1999,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   },
+   {
+    "album": "First Conversation",
+    "year": 2002,
+    "genres": [
+     "jazz"
+    ],
+    "composer": null
+   }
+  ],
+  "stats": {
+   "lean": true,
+   "publishedOnly": false,
+   "factsBeforeLean": 28,
+   "researchRecords": 4,
+   "facts": 11,
+   "publishedDescs": 4,
+   "albumsWithoutMaterial": 0
+  },
+  "slotsHint": {
+   "identity": true,
+   "era": true,
+   "position": true
+  },
+  "research": [
+   {
+    "batch": "c153-a",
+    "album": "Cæcilie Norby",
+    "facts": [
+     {
+      "f": "release-group 707f5cfa 覆核：title「Cæcilie Norby」、artist-credit「Cæcilie Norby」（75b54a14 Person／DK／「Danish jazz and rock singer」／1964-09-09）、first-release-date **1995-11-01**、primary-type Album、secondary-types 空。轄下有 **XE 1995**（15122298，`EMI 8322222`，barcode 724383222223）與 **GB 1995-11-01**（b9ad6f2f）等；**美版 `CDP 7243 8 32222 2 3` 是後到的**。**同名專輯，`selfTitled` 成立。**",
+      "src": "https://musicbrainz.org/ws/2/release?release-group=707f5cfa-ed68-3fae-a207-91728d6d49a7&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c153-b",
+    "album": "My Corner of the Sky",
+    "facts": [
+     {
+      "f": "release-group 879bb34f 的欄位：title「My Corner of the Sky」、artist-credit「Cæcilie Norby」（**75b54a14 Person／DK**）、first-release-date **1996**、primary-type Album、secondary-types 空。**轄下三筆 release**：**1c9776f2（1996 US Official CD 12 軌，Blue Note `CDP 7243 8 53422 2 6`，barcode 724385342226）**、**a7610ef4（1996 DK Official CD 12 軌，Blue Note `8534222`，同 barcode）**、⚠ **39e64592（無日期、無國別、媒體欄 `?`、**13 軌**，barcode null）**。**十二軌**：〈The Look of Love〉182s〈The Right to Love〉180s〈Set Them Free〉268s〈Suppertime〉229s〈African Fairytale〉346s〈Life on Mars〉220s〈Spinning Wheel〉308s〈What Do You See in Her〉191s〈Just One of Those Things〉237s〈Snow〉324s〈A Song for You〉234s〈Calling You〉325s。",
+      "src": "https://musicbrainz.org/ws/2/release?release-group=879bb34f-c40f-37ee-8bcb-b6a4d42f33a4&fmt=json&inc=media+labels+recordings+artist-credits&limit=100"
+     },
+     {
+      "f": "⚠ **十二軌全部是翻唱，沒有一首是 Norby 獨力作曲的原創曲——來源橫跨爵士、搖滾、靈魂與電影。** 歐版 2568098 逐軌歸屬：〈The Look of Love〉**Burt Bacharach／Hal David**、〈The Right to Love〉**Lalo Schifrin／Gene Lees**、〈Set Them Free〉**Sting**、〈Suppertime〉**Irving Berlin**、〈African Fairytale〉**音樂 Wayne Shorter、詞 Cæcilie Norby**、〈Life on Mars〉**David Bowie**、〈Spinning Wheel〉**David Clayton-Thomas**（Blood, Sweat & Tears）、〈What Do You See in Her〉**Hal David／Frank Weldon**、〈Just One of Those Things〉**Cole Porter**、〈Snow〉**音樂 Frans Bak、詞 Cæcilie Norby**、〈A Song for You〉**Leon Russell**、〈Calling You〉**Bob Telson**（《巴格達咖啡館》）。**Norby 只在兩軌（5、10）掛作詞。**",
+      "src": "https://api.discogs.com/releases/2568098"
+     },
+     {
+      "f": "**紙本**：**Billboard 1996-07-27 p37 的 Blue Note 整版廣告**在當年新片名單上逐字印 **`CAECILIE NORBY`**（同一則名單還有本組的 Charlie Hunter／Paul Jackson Jr／Javon Jackson／Greg Osby／Marcus Printup／Sonny Fortune）。⚠ **必須擋掉的誤讀**：**Billboard 1996-01-20 p47 的 Global Music Pulse 丹麥專題**逐字寫「…release an album in her own right on EMI's prestigious Blue Note label, Caecilie Norby is reaching international ears…」「The album **\"Caecilie Norby,\"** which was produced by and features Vietnamese/Danish pianist **Niels Lan Doky**, was recorded in Copenhagen and New York.」「A classically trained singer, the **32-year-old** Norby has been a strong presence on the music scene here since the mid-'80s. She made her name as the vocalist and co-composer in jazz-rock group **Frontline**」——⚠ **那篇講的是 1995 年的同名首作（c-153 a 的卡），不是本張**（第 1234 條已立過這條警語，本層逐字覆核後確認）。**不過末兩句（古典聲樂訓練、Frontline 出身）是講藝人生平，本卡的正文可以引用。**⚠ **Billboard 1996 兩張爵士榜查 `53422`／`Norby` 皆零命中——未進榜；Cash Box 1996 零命中。**",
+      "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1996/BB-1996-01-20.pdf"
+     },
+     {
+      "f": "**店面**：Apple `dk`／`de` **696523909**（`Cæcilie Norby — My Corner of the Sky`，**12 軌**，逐軌時長 182/180/268/229/346/220/308/191/237/324/234/325 秒，**與 MB 美版 1c9776f2 逐秒完全相同**，全部有 preview，`releaseDate` `1996-06-28`，copyright 欄逐字 `℗ 1996 The copyright in this sound recording is owned by Parlophone Music Denmark A/S`）。⚠ **Apple 的 `primaryGenreName` 是 `Pop` 不是 `Jazz`**——**店面分類，不是分類事實，不影響第 1239 條判的 `['jazz']`。**⚠ **美國店面查無**（`us` 市場 `search` 0 筆）——**本張只在歐洲市場上架。** **本層抽核軌數與逐軌時長全中、無錯碟，串流採信 696523909。**",
+      "src": "https://itunes.apple.com/lookup?id=696523909&entity=song&limit=200&country=dk"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c155-b",
+    "album": "Queen of Bad Excuses",
+    "facts": [
+     {
+      "f": "**整張 credits 欄（Discogs 2568006）逐字只有製作與工程**：`Cæcilie Norby — Vocals`（兼 `Producer, Arranged By, Programmed By`）、`Lars Danielsson (3) — Bass`（兼 `Producer, Arranged By, Programmed By`）、`Nick Foss — Executive-Producer`、`Malcolm Pollack — Mixed By`、`Hans Nielsen — Recorded By`（三位助理）、`Åke Linton — Engineer [Additional]`、`Håkan Glänte — Programmed By [Soundprogramming]`。 ⚠ **Lars Danielsson 在逐軌欄裡還掛了大量其他樂器**：**`Guitar, Cello, Strings, Drums`（1）／`Cello, Strings`（2）／`Guitar`（3）／`Fender Rhodes, Keyboards, Drums`（4）／`Guitar, Cello, Keyboards`（5）／`Guitar, Grand Piano, Keyboards`（6）／`Grand Piano, Cello, Strings`（7、12.1）／`Keyboards`（9）／`Fender Rhodes, Keyboards`（11）**——**他不只是貝斯手，整張的弦樂與鍵盤有一半是他。** **→ 策展層的「兩人」是只讀 release 層 credits 的結果；逐軌層有十二個人。**",
+      "src": "https://api.discogs.com/releases/2568006"
+     },
+     {
+      "f": "⚠ **日版多兩軌、晚五週。** **Discogs 7893089（JP，Blue Note／`TOCJ-66067`，`released` 欄逐字 `1999-10-20`，15 軌）的 notes 逐字「**Tracks 13 and 14 are bonus tracks for Japan.**」**，credits 只有日文解說者（`カニリカ — Liner Notes`、`Atsuko Kido — Liner Notes [Lyrics Translation]`），companies `EMI-Medley — Phonographic Copyright (p)／Copyright (c)`。 **另有同號的日版宣傳盤 31907605（1999）。** ⚠ **MB 的 `f526c319` 登成 `1999-09-13` JP 卻抄歐版的 catno 與 barcode**——**那是國別填錯的重複建檔，而 RG 的 frd 就是抄它**（第 1364(7) 條，策展層已標，本層覆核成立）。 **Discogs 上所有版本都是 CD，沒有黑膠（通則 1）。**",
+      "src": "https://api.discogs.com/releases/7893089"
+     },
+     {
+      "f": "⚠⚠ **同期紙本：丹麥榜逐字有本張，而且策展層擋下的那個誤讀本層覆核成立。** **Billboard 1999-09-25 第 73 頁的 HITS OF THE WORLD 丹麥榜欄逐字「CAECILIE NORBY QUEEN OF BAD EXCUSES **EMI MEDLEY**」**——**廠牌欄是 EMI Medley（與 Discogs companies 欄的 `EMI-Medley — Phonographic Copyright (p)` 完全對上）。** **另 1999-09-11 p69–70 的 Danish Wave ’99 紐約場次表。** ⚠⚠ **誤讀擋下一處**（第 1360(2) 條，本層覆核成立）：**Billboard 1999-03-13 p137 的 `Norby` 是經紀人 Norby Walters（Walters Records），不是她。** **→ 查 `norby` 一定要用全名 `caecilie norby` 或帶廠牌欄。**",
+      "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1999/BB-1999-09-25.pdf"
+     }
+    ],
+    "notes": ""
+   },
+   {
+    "batch": "c158-a",
+    "album": "First Conversation",
+    "facts": [
+     {
+      "f": "Billboard 2002-10-05 那一期第 61 頁逐字報導：「Danish vocalist Caecelie Norby's First Conversation (EMI/Blue Note) landed in the No. 2 slot on the Official Danish Hitlist following its release at the start of this month.」同一段引 Norby 自己的說法，這套曲目是從她與瑞典籍丈夫兼貝斯手 Lars Danielsson、丹麥鋼琴家 Carsten Dahl 的現場演出長出來的，再加上挪威小號手 Per Jørgensen 與鼓手 Jon Christensen，整組人拿「北歐極簡」當出發點。",
+      "src": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/00s/2002/BB-2002-10-05.pdf"
+     },
+     {
+      "f": "十二軌以丹麥廣播娛樂管弦樂團（DR RadioUnderholdningsOrkestret）為底：Lars Danielsson 編寫並配器其中九軌（1–5、7–11），Per Ekdahl 編第 6 與第 12 軌，Carsten Dahl 編第 9 軌〈Midnight Sun〉；指揮有三位，David Firman、Frans Rasmussen 與 Paul Bateman。",
+      "src": "https://api.discogs.com/releases/11642529"
+     },
+     {
+      "f": "Norby 是先唱搖滾才轉爵士的：1982 年起是 Street Beat 的創團成員，接著待過爵士搖滾團 Frontline，1985 到 1993 年與 Nina Forsberg 在搖滾團 One-Two；1995 年她簽進 Blue Note，首張同名專輯由 Niels Lan Doky 共同製作。",
+      "src": "https://en.wikipedia.org/wiki/C%C3%A6cilie_Norby"
+     }
+    ],
+    "notes": ""
+   }
+  ],
+  "published": [
+   {
+    "album": "Cæcilie Norby",
+    "manifest": "onboarding-manifest-c153-20261004.json",
+    "desc": "她的來路是爵士搖滾團 Frontline 與搖滾團 One Two 的主唱。1994 年 9 月 17、19 日在哥本哈根 Focus Recording 錄底，10 月 2 日在紐約補錄。Lennart Ginman 的低音提琴與 Billy Hart 的鼓是底，鋼琴由 Niels Lan Doky 等三人分軌；客座每人只上一到兩軌，Randy Brecker 的小號只上兩軌。末軌只剩人聲、鋼琴與高音薩克斯。1995 年由 EMI-Medley 在丹麥發行。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=707f5cfa-ed68-3fae-a207-91728d6d49a7&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://api.discogs.com/releases/1593740",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1996/BB-1996-01-20.pdf",
+     "https://itunes.apple.com/lookup?id=695534278&entity=song&limit=60&country=dk",
+     "https://musicbrainz.org/release-group/707f5cfa-ed68-3fae-a207-91728d6d49a7"
+    ]
+   },
+   {
+    "album": "My Corner of the Sky",
+    "manifest": "onboarding-manifest-c153-20261004.json",
+    "desc": "鋼琴三位、貝斯兩位、鼓三位，十二軌逐軌輪替。吹奏客座三位各只上一軌：Michael Brecker 的次中音在〈Snow〉、Randy Brecker 的粗管短號在〈Life on Mars〉、Scott Robinson 的長笛在開場。十二首全是翻唱，橫跨 Bacharach、Cole Porter、David Bowie 與 Sting，她只在兩軌掛作詞。錄音在哥本哈根與紐約兩地，Niels Lan Doky 與她共同製作。1996 年在丹麥首發。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=879bb34f-c40f-37ee-8bcb-b6a4d42f33a4&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://api.discogs.com/releases/6195317",
+     "https://api.discogs.com/releases/2568098",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1996/BB-1996-01-20.pdf",
+     "https://api.discogs.com/database/search?catno=8534222&type=release",
+     "https://itunes.apple.com/lookup?id=696523909&entity=song&limit=200&country=dk",
+     "https://musicbrainz.org/release-group/879bb34f-c40f-37ee-8bcb-b6a4d42f33a4"
+    ]
+   },
+   {
+    "album": "Queen of Bad Excuses",
+    "manifest": "onboarding-manifest-c155-20261004.json",
+    "desc": "逐軌欄裡藏著 John Scofield 七軌、Billy Hart 三軌。1999 年的丹麥與歐洲發行，Norby 與 Lars Danielsson 共同製作與編曲。整張 credits 只有製作與工程，十二名樂手全在逐軌欄，另有兩位鼓手、兩位鋼琴手與三支管樂輪替。Danielsson 不只彈貝斯，還掛吉他、大提琴、弦樂、鍵盤與鼓。第 12 軌正曲之後空了 45 秒，藏著〈Naked in the Dark〉，歌詞印在托盤底下。同年 9 月的丹麥榜上有它。",
+    "sourceUrls": [
+     "https://musicbrainz.org/ws/2/release?release-group=cea6cf89-cf0f-3107-b7d2-8fc754010b88&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://api.discogs.com/releases/2568006",
+     "https://api.discogs.com/releases/7893089",
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/90s/1999/BB-1999-09-25.pdf",
+     "https://itunes.apple.com/lookup?id=697484911&country=gb&entity=song&limit=200",
+     "https://musicbrainz.org/release-group/cea6cf89-cf0f-3107-b7d2-8fc754010b88"
+    ]
+   },
+   {
+    "album": "First Conversation",
+    "manifest": "onboarding-manifest-c158-20261004.json",
+    "desc": "丹麥官方榜第 2 名是一張爵士唱片，第 1 名是 Coldplay。這套曲目長自她與丈夫、貝斯手 Lars Danielsson 和鋼琴家 Carsten Dahl 的現場演出，再加上挪威小號手 Per Jørgensen 與鼓手 Jon Christensen，出發點是北歐極簡。十二軌以丹麥廣播娛樂管弦樂團為底，錄音師之一是 Jan Erik Kongshaug，奧斯陸 Rainbow Studio 與 ECM 那套聲音的塑造者，曲目收在她自己寫的〈Kyrie〉。",
+    "sourceUrls": [
+     "https://www.worldradiohistory.com/Archive-All-Music/Billboard/00s/2002/BB-2002-10-05.pdf",
+     "https://api.discogs.com/releases/11642529",
+     "https://musicbrainz.org/ws/2/release?release-group=6edf5025-e5b0-3395-a0f8-95ac16ab9568&fmt=json&inc=media+labels+recordings+artist-credits&limit=100",
+     "https://en.wikipedia.org/wiki/C%C3%A6cilie_Norby",
+     "https://musicbrainz.org/release-group/6edf5025-e5b0-3395-a0f8-95ac16ab9568"
+    ]
+   }
+  ]
+ }
+]

@@ -1,0 +1,763 @@
+[
+  {
+    "key": "maya delilah",
+    "name": "Maya Delilah",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "她是 2000 年 5 月 5 日生的英國歌手、詞曲作者兼吉他手，在倫敦北區的 Islington 出生長大。",
+            "src": "https://en.wikipedia.org/wiki/Maya_Delilah",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "她先學過鋼琴但提不起勁，約 8 歲改彈吉他，靠聽音自學；她自己說彈吉他和彈鋼琴的感受差別極大，也因閱讀障礙覺得傳統樂理不適合自己。",
+            "src": "https://www.sofarsounds.com/blog/articles/maya-delilah-interview",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "她少年時在爵士青年社團演奏、在倫敦街頭賣藝，15 歲時入圍倫敦市長主辦的 Gigs Big Busk 街頭音樂比賽決賽；2016 年進入 Croydon 的 BRIT School（出過 Adele、Amy Winehouse、FKA twigs）。",
+            "src": "https://en.wikipedia.org/wiki/Maya_Delilah",
+            "src2": "https://www.bluenote.com/maya-delilah-announces-debut-album-the-long-way-round/",
+            "from": "new",
+            "note": "src2 僅證實 BRIT School 與校友；Gigs Big Busk 與爵士青年社團只見維基，寫作層若用請標單源"
+          },
+          {
+            "f": "2020 年封城中斷了她的樂手接案，她改做直播與 TikTok，盤腿坐在地板、床或桌上彈唱的素樸短片累積出一批忠實聽眾。",
+            "src": "https://www.bluenote.com/maya-delilah-announces-debut-album-the-long-way-round/",
+            "src2": "https://en.wikipedia.org/wiki/Maya_Delilah",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "她的風格被形容為爵士、靈魂與流行的「獨特融合」；她列出 Anderson .Paak、Tyler, The Creator、John Mayer 與 Derek Trucks 為音樂影響。",
+            "src": "https://en.wikipedia.org/wiki/Maya_Delilah",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "Sofar Sounds 的訪談把她的曲風描述為柔和的 R&B 流行配上俐落的吉他演奏，單曲〈Pretty Face〉是帶 R&B 色彩、疊了和聲的失戀歌。",
+            "src": "https://www.sofarsounds.com/blog/articles/maya-delilah-interview",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "她解釋《The Long Way Round》盤名：自己太容易被不同曲風、人與地方影響，很難把音樂塞進一個一致的樣子，花了很久才明白一張探索這麼多影響的作品是好事。",
+            "src": "https://www.bluenote.com/maya-delilah-announces-debut-album-the-long-way-round/",
+            "single": true,
+            "from": "bank"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "她被 Blue Note 稱為 2025 年 Spotify「Artist To Watch」，並入選 Fender Next「Class of 2024」。",
+            "src": "https://www.bluenote.com/maya-delilah-announces-debut-album-the-long-way-round/",
+            "src2": "https://en.wikipedia.org/wiki/Maya_Delilah",
+            "from": "new",
+            "note": "非獨立：維基引自同一批宣傳資料；Spotify 名單為商業平台推薦，非權威榮譽"
+          },
+          {
+            "f": "兩張自發行 EP（2020《Oh Boy》、2021《It's Not Me, It's You》）累積超過 5000 萬次串流，並在倫敦 Jazz Cafe 首場headline 演出完售；2022 年起在 Blue Note／Capitol 發片。",
+            "src": "https://www.bluenote.com/maya-delilah-announces-debut-album-the-long-way-round/",
+            "src2": "https://en.wikipedia.org/wiki/Maya_Delilah",
+            "from": "new",
+            "note": "在世者串流數字，屬『避免』類；僅在需要說明她如何被 Blue Note 看上時用，非必要例外；Jazz Cafe 完售僅維基，src2（Blue Note）證實串流數與 EP"
+          }
+        ]
+      },
+      "era": {
+        "status": "none",
+        "facts": []
+      }
+    },
+    "milestones": [
+      {
+        "f": "2022 年起在 Blue Note／Capitol 發片，2025 年 3 月 28 日推出首張完整專輯《The Long Way Round》。",
+        "src": "https://www.bluenote.com/maya-delilah-announces-debut-album-the-long-way-round/",
+        "src2": "https://en.wikipedia.org/wiki/Maya_Delilah",
+        "from": "new"
+      }
+    ],
+    "conflicts": [
+      "沿用舊稿身分判定：poolAlbums 為 2025 年《The Long Way Round》，與倫敦歌手 Maya Delilah 吻合，無同名混卡。"
+    ],
+    "thinIssues": "無（8 歲彈吉他、BRIT School、封城短片、爵士與靈魂流行融合皆有來源；thinIntro 的『幽默處理失戀』未在本層讀到的頁面證實，僅見 Sofar 稱 Pretty Face 為失戀歌）",
+    "pubIssues": [],
+    "searches": 5,
+    "failedFetches": 0,
+    "status": "thin",
+    "notes": "origin 身世來自維基與 Sofar 訪談（低風險單源）。legacy 仍缺：維基稱首張專輯登日本 Billboard 海外榜第 2、Fuji Rock 演出、替 Vulfpeck 暖場 5 萬人，但搜尋找不到 Billboard Japan 榜單頁或 Fuji Rock 現場報導，僅維基單源，故只放 notes 不入 facts（且屬在世者排行榜名次）；沒有後輩點名或機構榮譽。Real Sound（realsound.jp/2025/07/post-2095525.html）只把她列為 Fuji Rock 25 前注目，未開頁。2026 年 1 月 9 日豪華版發行見 Blue Note 新聞稿，未開頁核實。"
+  },
+  {
+    "key": "mbongwana star",
+    "name": "Mbongwana Star",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "樂團來自剛果民主共和國首都金夏沙，共七人；兩位創團成員 Coco Ngambali（亦拼 Ngabali）與 Theo Nzonza 原本是 Staff Benda Bilili 的創團成員。",
+            "src": "https://en.wikipedia.org/wiki/Mbongwana_Star",
+            "src2": "https://old.afropop.org/articles/from-kinshasa",
+            "from": "new"
+          },
+          {
+            "f": "團名 Mbongwana 在林加拉語意為「改變」；Coco 與 Theo 離開 Staff Benda Bilili 後找經理人 Michel Winter 另起新計畫，他不想兩團風格相近同時巡演，所以追求全然不同的聲音。",
+            "src": "https://thequietus.com/?p=18175",
+            "src2": "https://www.irishtimes.com/culture/music/mbongwana-star-from-kinshasa-album-review-1.2221024",
+            "from": "new",
+            "note": "團名意義兩源；離團經過為 Winter 單人說法（低風險）；Irish Times 稱兩人出自 Staff Benda Bilili 解散"
+          },
+          {
+            "f": "Staff Benda Bilili 的核心是四位小兒麻痺的街頭樂手，騎自製三輪輪椅巡演，用空溶劑罐當打擊、改裝拇指鋼琴與土法擴音。",
+            "src": "https://thequietus.com/?p=17854",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "首張專輯《From Kinshasa》（World Circuit，2015）由製作人 Liam Farrell（Doctor L）操刀，他先前製作過 Tony Allen 的《Black Voices》；他把 soukous 的吉他壓到後景，加上深沉的電子脈動。",
+            "src": "https://thequietus.com/?p=17854",
+            "src2": "https://old.afropop.org/articles/from-kinshasa",
+            "from": "new"
+          },
+          {
+            "f": "錄音時 Doctor L 把音量推進紅線、旁邊同時開三台電視；他說金夏沙從不安靜，當地人習慣聽飽和的聲音，他覺得失真讓錄音有能量。",
+            "src": "https://thequietus.com/?p=18175",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "《Malukayi》邀來 Konono Nº1，其擴音電拇指鋼琴（likembe）與樂團混亂的聲響嚙合；整體被描述為用廢料拼出的「垃圾場式」聲音，帶朋克的稜角。",
+            "src": "https://thequietus.com/?p=18175",
+            "src2": "https://www.irishtimes.com/culture/music/mbongwana-star-from-kinshasa-album-review-1.2221024",
+            "from": "new",
+            "note": "Irish Times 稱 Konono No 1 加入失真拇指鋼琴、受金夏沙回收再利用文化影響"
+          },
+          {
+            "f": "樂評把它與 Franco 和 Le Grand Kallé 的經典倫巴／soukous 對照，認為它是離開那條傳統的實驗路線，同時保留 2-3 的律動。",
+            "src": "https://old.afropop.org/articles/from-kinshasa",
+            "src2": "https://theworld.org/stories/2015/06/11/mbongwana-star",
+            "from": "new",
+            "note": "Afropop 與 The World 為不同媒體；The World 稱保留 mambo 的 2-3 節奏"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "《Quietus》稱《From Kinshasa》大概是金夏沙快速演變的新類型中最耐聽的一張；Afropop 評者說樂團「無畏地為剛果音樂開闢新地」。",
+            "src": "https://thequietus.com/?p=17854",
+            "src2": "https://old.afropop.org/articles/from-kinshasa",
+            "from": "new",
+            "note": "皆為單一樂評人意見，不是共識；寫作層請具名為『某評論』或略去"
+          },
+          {
+            "f": "樂團在金夏沙被視為 Staff Benda Bilili 之後該城新一代電子化剛果音樂的代表；Quietus 稱其為金夏沙「最熱門的現役團體」。",
+            "src": "https://thequietus.com/?p=17854",
+            "single": true,
+            "from": "new",
+            "note": "單一評論形容詞，勉強入 facts，寫作層謹慎"
+          }
+        ]
+      },
+      "era": {
+        "status": "none",
+        "facts": []
+      }
+    },
+    "milestones": [],
+    "conflicts": [
+      "沿用舊稿；舊稿 thinIntro 寫『七人樂團』『團名意為改變』均與來源一致。"
+    ],
+    "thinIssues": "無事實錯誤（thinIntro 的『金夏沙』『七人』『兩位創團成員』『改變』『電子化拇指鋼琴』『全部推到紅線』皆有來源）",
+    "pubIssues": [],
+    "searches": 7,
+    "failedFetches": 2,
+    "status": "thin",
+    "notes": "legacy 仍缺：維基稱《From Kinshasa》Metacritic 『universal acclaim』，但 Metacritic 頁回 403 未能開頁，Guardian 五星、Drowned in Sound 10/10 只見搜尋摘要，皆未入 facts；沒有後輩點名或機構榮譽。failedFetches：legacy.prod.metacritic.com（403）、african.business（403）。維基與 wikidata 屬同一來源家族。"
+  },
+  {
+    "key": "mehrpouya",
+    "name": "Mehrpouya",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Mehrpouya（Abbass Mehrpouya）在德黑蘭開過畫廊，是一位彈西塔琴並兼奏多種樂器、嗓音圓滑的伊朗樂手。",
+            "src": "https://popmatters.com/170188-abbass-mehrpouya-soul-raga-2495765877.html",
+            "single": true,
+            "from": "new",
+            "note": "popmatters 稱 ran a gallery in Tehran，也提到卒於 1993；生卒年他處有 1992/1993 之爭，不收"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "《Soul Raga》收他 1968–76 年間的幾張 45 轉單曲與唯一一張 LP；曲風摻進波斯、印度、拉丁美洲等影響，有用銅管模仿象叫的放克即興，也有恰恰恰段落。",
+            "src": "https://popmatters.com/170188-abbass-mehrpouya-soul-raga-2495765877.html",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "PopMatters 評者把他的做法連到寶萊塢那種把歌推到過度邊緣而生出真誠的手法，並說他的外國音樂印象主要來自歐洲系影響。",
+            "src": "https://popmatters.com/170188-abbass-mehrpouya-soul-raga-2495765877.html",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "none",
+        "facts": []
+      },
+      "era": {
+        "status": "none",
+        "facts": []
+      }
+    },
+    "milestones": [],
+    "conflicts": [
+      "沿用舊稿身分判定（Soul Raga 2013）。舊稿『據說是德黑蘭人』：維基資料與數個商品／部落格頁稱德黑蘭出生，但未讀到可靠單一正式來源，仍保留『據說』；『伊朗電影配樂』『轉行做裝潢』本層未找到任何來源，不收。"
+    ],
+    "thinIssues": "可疑：thinIntro 寫『據說伊朗革命後轉行做裝潢』與『替伊朗電影作配樂』本層搜尋到的來源（PopMatters 稱他經營畫廊）皆未證實，建議寫作層刪除裝潢說法；『santur 與風琴』亦未證實",
+    "pubIssues": [],
+    "searches": 5,
+    "failedFetches": 4,
+    "status": "thin",
+    "notes": "身分：卡池《Soul Raga》2013 與 Pharaway Sounds 合輯，確為這位伊朗西塔琴手。生卒年有 1927–1992／1993 之爭，且師承說法衝突（Ananda Sharma／Vilayat Khan／Ravi Shankar 皆有人寫），不收。legacy 缺：無維基英文條目，找不到後輩點名、機構榮譽或可靠共識評價；僅商品頁稱『伊朗頂尖西塔琴手之一』，不收。failedFetches：guerssen.com、forcedexposure artist 頁（空頁）、thepersianmag（被導向垃圾站，不採）、fa.wikipedia 為消歧義頁。Radiodiffusion 部落格稱 1973 單曲 Katanga（Ahang Rooz）與 Mehrpouya Sitar 專輯，只是目錄資料。"
+  },
+  {
+    "key": "meitei",
+    "name": "Meitei",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Meitei（冥丁）是以廣島為據點的日本電子音樂人，本名據報導為 Daisuke Fujita；他說自己原本是接案作曲，覺得那種音樂缺少個人情感，便搬到沒有熟人的京都重新開始，花四年探索那座城市，在那裡感受到「失落的日本情調」，成為他概念的起點。",
+            "src": "https://www.15questions.net/interview/fifteen-questions-interview-meitei/page-2/",
+            "single": true,
+            "from": "new",
+            "note": "本名只見 El Paso Inc. 報導單源（該文稱廣島出生、京都為據點，與 15Questions 稱現居廣島不一致），本名與居住地寫作層不寫"
+          },
+          {
+            "f": "他現居廣島一帶，常開車到偏遠山區與陌生地方，感受京都那份情調的源頭並試著收進音樂；他批評日本許多音樂變成「東京的音樂」。",
+            "src": "https://www.15questions.net/interview/fifteen-questions-interview-meitei/page-2/",
+            "single": true,
+            "from": "new",
+            "note": "『東京的音樂』說法出自搜尋摘要（Tokion 訪談），Tokion 頁未開，不寫"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "他自述音樂不用樂器，而是從自己長年累積的大型音源庫中挑出取樣、改位元率等加工，做法更像聲音設計；靈感取自宮崎駿與村上春樹的敘事與靜謐風景，並研究古寺青苔的色澤來找音色。",
+            "src": "https://www.15questions.net/interview/fifteen-questions-interview-meitei/page-2/",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "他的作品混合傳統日本音樂的片段、田野錄音、電子剪貼與現成聲響，營造出既古舊又超時空的日本；處女作《Kwaidan》（2018）以日本怪談為題，《Komachi》（2019）以平安歌人小野小町為名，色調比前作柔和。",
+            "src": "https://www.elpasoinc.com/lifestyle/local_features/groove-grotto-meitei-creates-haunting-soundscapes-of-old-japan/article_bb2a5734-39a4-447c-b659-9dc1b6d813cb.html",
+            "src2": "https://www.theransomnote.com/?p=28755",
+            "from": "new",
+            "note": "Ransom Note 證實 Komachi 2019 為其首張黑膠、2018 年以卡帶與數位發行過作品、概念為『失落的日本情調』；非完全獨立描述同一句，已分拆"
+          },
+          {
+            "f": "《Komachi》獻給剛以 99 歲過世的祖母，他視她為最後一批直接懂得傳統日本氛圍的人之一，並說想「喚醒仍沉睡在黑暗中的日本之魂」。",
+            "src": "https://www.theransomnote.com/?p=28755",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "他的 Kofū 三部曲（《Kofū》《Kofū II》《Kofū III》）延續『失落的日本情調』，Kofū 一詞指甲斐古都並有「古風」之意；最新作《Agate》（2026）提出名為 Shinpu 的概念。",
+            "src": "https://www.elpasoinc.com/lifestyle/local_features/groove-grotto-meitei-creates-haunting-soundscapes-of-old-japan/article_bb2a5734-39a4-447c-b659-9dc1b6d813cb.html",
+            "single": true,
+            "from": "new",
+            "note": "2026 年作品僅單源，寫作層不寫《Agate》"
+          }
+        ]
+      },
+      "era": {
+        "status": "none",
+        "facts": []
+      }
+    },
+    "milestones": [],
+    "conflicts": [
+      "沿用舊稿身分判定（Komachi 2019）。舊稿『慣用變調人聲取樣、和樂器與蟲鳴』本層未讀到；本層訪談稱不用樂器、以音源庫取樣加工，寫作層以本層為準。居住地：15Questions 稱現居廣島、El Paso Inc. 稱京都據點，facts 只寫現居廣島一帶（本人訪談）。"
+    ],
+    "thinIssues": "可疑：thinIntro『變調的人聲取樣、和樂器與蟲鳴片段』本層未找到來源；『處女作《怪談》』Kwaidan 為 2018 作品屬實",
+    "pubIssues": [],
+    "searches": 6,
+    "failedFetches": 0,
+    "status": "thin",
+    "notes": "legacy 缺：零售頁稱 Kwaidan 入選 Pitchfork 2018 年最佳實驗專輯、The Wire 有短評，但 Pitchfork 被擋、Wire 全文沒找到，只見商品頁，故不入 facts；沒有後輩點名或機構榮譽。Tokion 訪談（tokion.jp/?p=88115）未開頁。"
+  },
+  {
+    "key": "mel & tim",
+    "name": "Mel & Tim",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Mel Hardin 與 Tim McPherson 是來自密西西比州 Holly Springs 的表兄弟，到芝加哥後被 Gene Chandler 發現；Hardin 的母親 Yolanda（曾是歌手，也是 McPherson 的姨媽）簽下他們進她的 Bamboo Records，家族成員協助寫歌與宣傳。",
+            "src": "https://en.wikipedia.org/wiki/Mel_and_Tim",
+            "src2": "https://dereksmusicblog.com/2011/11/14/mel-and-tim-mel-and-tim/",
+            "from": "new",
+            "note": "Derek 部落格僅證實表兄弟與 Chandler 簽約；Holly Springs 與 Yolanda 只見維基。Bamboo 在 45cat 標示 St. Louis。『早年唱福音』舊稿說法未找到來源，不收"
+          },
+          {
+            "f": "兩人1969年成團活動到1974年；McPherson 於 1986 年 7 月 4 日過世。",
+            "src": "https://en.wikipedia.org/wiki/Mel_and_Tim",
+            "single": true,
+            "from": "new",
+            "note": "逝世年為高風險，單源，不入寫作；維基另載 Hardin 卒於 2026-08-18，與一舊維基鏡像寫的 1990 年衝突，兩者皆不收"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "他們的作品以弦樂、號角、和聲與管風琴鋪成靈魂樂，帶福音、放克與早期迪斯可的味道；〈Starting All Over Again〉是 Phillip Mitchell 的歌，原本為 Sam & Dave 而寫。",
+            "src": "https://dereksmusicblog.com/2011/11/14/mel-and-tim-mel-and-tim/",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "1972 年第二張專輯在 Muscle Shoals 錄音，Phillip Mitchell 寫或合寫十首中的八首。",
+            "src": "https://dereksmusicblog.com/2011/11/14/mel-and-tim-mel-and-tim/",
+            "src2": "https://en.wikipedia.org/wiki/Mel_and_Tim",
+            "from": "new",
+            "note": "維基稱製作人 Phillip Mitchell，Derek 部落格稱 Barry Beckett 與 Roger Hawkins 製作，製作人不一致，不收"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "〈Backfield in Motion〉在1969年登上 Billboard R&B 榜第 3、流行榜第 10，賣破百萬並獲金唱片；Gene Chandler 是該曲共同製作人。",
+            "src": "https://en.wikipedia.org/wiki/Mel_and_Tim",
+            "src2": "https://www.45cat.com/artist/mel-and-tim",
+            "from": "new",
+            "note": "45cat 搜尋摘要僅證實 Chandler 製作與 Bamboo 發行；百萬銷量 BlackPast 說超過兩百萬，數字不一致，寫作層不寫銷量。本人已過世，榜單名次可用"
+          },
+          {
+            "f": "〈Starting All Over Again〉1972 年登 Billboard 流行榜第 19、R&B 榜第 4，在榜 20 週，成為第二支金唱片；1990 年 Hall & Oates 在《Change of Season》專輯翻唱此曲。",
+            "src": "https://en.wikipedia.org/wiki/Mel_and_Tim",
+            "src2": "https://dereksmusicblog.com/2011/11/14/mel-and-tim-mel-and-tim/",
+            "from": "new",
+            "note": "Hall & Oates 翻唱只見維基"
+          },
+          {
+            "f": "1973 年兩人在 Wattstax 慈善演唱會演出。",
+            "src": "https://en.wikipedia.org/wiki/Mel_and_Tim",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "none",
+        "facts": []
+      }
+    },
+    "milestones": [],
+    "conflicts": [
+      "上線簡介寫〈Starting All Over Again〉登流行榜第19、R&B 第4、在榜五個月，與維基『在榜20週』『R&B top 5』及 Derek 部落格 #4 一致，無衝突。",
+      "Bamboo 後來財務出問題、兩人無法錄音的說法只見 Derek 部落格，不收。"
+    ],
+    "thinIssues": "可疑：thinIntro『早年唱福音』本層未找到來源（Derek 部落格只說曲風帶福音味）；『招牌是輕快靈魂樂配號角與機靈歌詞』部分可證；〈Starting All Over Again〉由 Hall & Oates 1990 翻唱屬實",
+    "pubIssues": [],
+    "searches": 6,
+    "failedFetches": 3,
+    "status": "thin",
+    "notes": "legacy 缺：沒有後輩點名、名人堂或機構榮譽，無法補到有出處的共識評價。維基稱 Melvin Hardin 卒於 2026-08-18（2025–2026 事件），搜尋找不到新聞或訃聞第二源，只放 notes 不入 facts。failedFetches：blackpast.org（403）、45cat（403）、bluesandsoul（DNS 失敗）。BlackPast 與 AllMusic 因擋而未讀。"
+  },
+  {
+    "key": "men i trust",
+    "name": "Men I Trust",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Men I Trust 是 2014 年於蒙特婁成軍的加拿大獨立樂團，由高中好友 Jessy Caron 與 Dragos Chiriac 創立，兩人在拉瓦爾大學音樂系重逢；他們高中時就為了好玩做嘻哈與舞曲小品。",
+            "src": "https://en.wikipedia.org/wiki/Men_I_Trust",
+            "src2": "https://panm360.com/en/interviews-panm360/osheaga-2022-men-i-trust-chats-influences-and-diy-indie-success/",
+            "from": "bank",
+            "note": "成軍地有蒙特婁與魁北克市兩說，維基與 PAN M 360 皆寫蒙特婁；Proulx 加入年有 2015（PAN M 360、成員自述）與 2016（Bandcamp）之爭，不寫年份，只寫『後來加入』"
+          },
+          {
+            "f": "團名取自想要正面的名字：『Men』指人類，『Trust』因為已被別人用了所以改接。",
+            "src": "https://panm360.com/en/interviews-panm360/osheaga-2022-men-i-trust-chats-influences-and-diy-indie-success/",
+            "single": true,
+            "from": "new",
+            "note": "搜尋摘要寫『Trust 已被用掉』，PAN M 360 頁面原句語意較含糊；寫作層略去較安全"
+          },
+          {
+            "f": "Caron 修過爵士吉他，Chiriac 有古典鋼琴背景；兩人早年主要做電子化、較精緻的聲音。",
+            "src": "https://officemagazine.net/node/2609",
+            "src2": "https://panm360.com/en/interviews-panm360/osheaga-2022-men-i-trust-chats-influences-and-diy-indie-success/",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "他們的創作多半遠距進行：Chiriac 錄好專案傳給 Proulx，Proulx 再在上面唱；成員說避免在現場一起寫歌，靠共享資料夾傳檔。",
+            "src": "https://officemagazine.net/node/2609",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "早期專輯偏電子、較工整，後來越來越有機，近期單曲更以吉他為主；樂團把爵士與放克當作關鍵影響，並曾被比作 Röyksopp 與 Belle & Sebastian。",
+            "src": "https://officemagazine.net/node/2609",
+            "src2": "https://panm360.com/en/interviews-panm360/osheaga-2022-men-i-trust-chats-influences-and-diy-indie-success/",
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "樂團堅持沒有廠牌與公關，巡演、媒體與發行都自己處理；Proulx 說握有全部版稅，讓成員約 2018 年得以辭去日常工作專心做團。",
+            "src": "https://panm360.com/en/interviews-panm360/osheaga-2022-men-i-trust-chats-influences-and-diy-indie-success/",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "樂團入圍 2024 年 JUNO 獎的年度突破團體（Breakthrough Group of the Year）。",
+            "src": "https://junoawards.ca/?p=65276",
+            "single": true,
+            "from": "new",
+            "note": "JUNO 官網標為『2024 AWARD NOMINEE』，僅入圍；結果未查到，寫作層必須寫『入圍』"
+          }
+        ]
+      },
+      "era": {
+        "status": "none",
+        "facts": []
+      }
+    },
+    "milestones": [],
+    "conflicts": [
+      "沿用舊稿身分（Oncle Jazz 2019、Headroom 2015）。Headroom 上線簡介說 Proulx 2016年3月加入，與 PAN M 360 引述成員『2015 年加入』不一致；Bandcamp 與簡介一致寫 2016，本層不下定論，建議 pubIssues 備查。",
+      "舊稿 thinIntro『三人團』『魁北克』：成軍於蒙特婁，Wikipedia 另有魁北克市一說，facts 只寫蒙特婁。"
+    ],
+    "thinIssues": "可疑：thinIntro『樂團自述是 dream pop 與 indie 的混合、含 R&B 爵士放克』與維基一致；『Oncle Jazz 走 lounge-funk、貝斯帶 slap』本層未驗證",
+    "pubIssues": [
+      {
+        "album": "Headroom",
+        "claim": "主唱 Emmanuelle Proulx 要到 2016 年 3 月才加入",
+        "problem": "PAN M 360 2022 訪談稱 Emma 2015 年加入、搜尋摘要另引成員『我 2015 年加入』；Bandcamp 寫 2016 年 3 月以全職身分加入，兩說可能指兼職與全職，無法定論，僅供店主留意",
+        "src": "https://panm360.com/en/interviews-panm360/osheaga-2022-men-i-trust-chats-influences-and-diy-indie-success/"
+      }
+    ],
+    "searches": 6,
+    "failedFetches": 0,
+    "status": "thin",
+    "notes": "legacy 缺：未找到後輩點名或權威榮譽；JUNO 僅入圍。Billboard 2019 訪談、Camp Flog Gnaw 受邀（Tyler, the Creator 音樂節）只見搜尋摘要，不收。月聽眾數字等低品質頁面不收。"
+  },
+  {
+    "key": "metgumbnerbone",
+    "name": "Metgumbnerbone",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Metgumbnerbone 是英國的即興實驗團體；《Ligeliahorn》1983 年夏天錄於 Newcastle upon Tyne 的 Elswick，一處泰恩河岸荒廢的後工業場址「Ruins of Industry」，全程現場即興，場地對聲音的塑造不亞於樂手與樂器；署名演出者為 John Mylotte、Mike Watson、Philip Rupenus 與 Richard Rupenus。",
+            "src": "https://tape-mag.com/Ligeliahorn+Metgumbnerbone+RELEASES-1-1-24344-8.html",
+            "single": true,
+            "from": "new",
+            "note": "來源為郵購商品頁（含 Discogs 式 credit），非可靠來源標準；與上線簡介（Newcastle 泰恩河岸、四位團員、John Mylotte 創團）一致，可作旁證"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Noisextra 稱這張是後工業音樂的經典、整個計畫神祕而自成一個想像世界，錄音在廢棄工業場址與磨坊進行。",
+            "src": "https://noisextra.com/tag/mike-watson",
+            "single": true,
+            "from": "new",
+            "note": "部落格／播客頁，非主流媒體；寫作層僅可轉述為『有人稱』"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "none",
+        "facts": []
+      },
+      "era": {
+        "status": "none",
+        "facts": []
+      }
+    },
+    "milestones": [],
+    "conflicts": [
+      "沿用舊稿 A-Mission 廠牌事實（REV 13:18 取自〈啟示錄〉13:18）。上線簡介說錄於『荒廢多年的後工業場址』，與商品頁一致。舊稿 thinIntro 的『ritual-industrial』未在本層讀到的頁面再現，不重複。"
+    ],
+    "thinIssues": "可疑：thinIntro『錄音在工業廢墟與廢棄磨坊裡進行』與 Noisextra 一致；『儀式工業（ritual-industrial）』本層未找到出處",
+    "pubIssues": [],
+    "searches": 5,
+    "failedFetches": 0,
+    "status": "thin",
+    "notes": "身分單一，唯一專輯即卡池專輯。網路上幾乎沒有可靠媒體資料：兩次直接搜尋名稱只找到商品頁與播客部落格。origin 缺：創團者 John Mylotte 的生平、其他作品；legacy 完全缺：無後輩點名、機構榮譽、媒體共識，上線簡介稱收藏圈搶手、2002 年後多次重發，本層未能證實。維持 thin。"
+  },
+  {
+    "key": "metrotone",
+    "name": "Metrotone",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Metrotone 由來自布里斯托的 John Brenton 與愛丁堡的 Anthony Harding 組成，兩人隔著距離創作，互相郵寄錄好的聲音，再在對方的想法上加工。",
+            "src": "https://www.nme.com/reviews/quickspace/79",
+            "single": true,
+            "from": "new",
+            "note": "NME 評論頁（單一評論稿）；與上線簡介『錄音在 Edinburgh 與 Bristol』吻合"
+          },
+          {
+            "f": "Earworm 是 1990 年代中期英國最早一批「臥室廠牌」之一，由 Dom Martin 經營，目錄跨度從 Stars of the Lid、E.A.R 的長篇 ambient／drone 到 Elephant 6 一系的短篇 psych-pop。",
+            "src": "https://www.discogs.com/label/3260",
+            "single": true,
+            "from": "bank"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "NME 評者形容首張專輯悶熱內省，含未完成的歌、drone 質地、嗡嗡噪音與走音吉他的任性演奏；最有力的一首用的是孩子在快速車流旁玩耍的錄音。",
+            "src": "https://www.nme.com/reviews/quickspace/79",
+            "single": true,
+            "from": "new",
+            "note": "NME 對此張評價偏負面（稱其為最懶的 post-rock、全長約三十分鐘），寫作層若引用須具名『NME 評者』並不誤寫成褒詞"
+          },
+          {
+            "f": "他們早期在 Wurlitzer Jukebox 與 Bad Jazz 發的單曲，從 Jesus and Mary Chain 式叮噹作響的吉他流行，逐漸滑向噪音實驗。",
+            "src": "https://www.nme.com/reviews/quickspace/79",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "none",
+        "facts": []
+      },
+      "era": {
+        "status": "none",
+        "facts": []
+      }
+    },
+    "milestones": [],
+    "conflicts": [
+      "沿用舊稿；上線簡介（Mastered By Phillip L. Holmes、錄音 1997/4–1998/1）與事實庫一致，本層未重驗。舊稿 thinIntro 的『post-rock』標籤出自 NME 評論，無衝突。"
+    ],
+    "thinIssues": "無事實錯誤；提醒 thinIntro『聲音被形容為帶悶熱內省感的模糊 drone』的出處 NME 整體為負評，該評論稱專輯為最懶的 post-rock",
+    "pubIssues": [],
+    "searches": 3,
+    "failedFetches": 0,
+    "status": "thin",
+    "notes": "身世缺：成員生平與成軍年，找不到。legacy 缺：無任何後輩點名、榮譽或共識評價；唯一的外部評論是單篇 NME 負評。第二次搜尋 Metrotone 成員名只得無關結果。維持 thin。"
+  },
+  {
+    "key": "mgła",
+    "name": "Mgła",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Mgła（波蘭語「霧」）2000 年成軍於克拉科夫，起初是 M.（Mikołaj Żentara）與鼓手 Daren 兩人的錄音室計畫，兩人也都在 Kriegsmaschine；Daren 2006 年離團後由 Darkside（Maciej Kowalski）接手，成為現行雙人編制。",
+            "src": "https://en.wikipedia.org/wiki/Mg%C5%82a",
+            "src2": "https://culture.pl/en/artist/mgla",
+            "from": "new",
+            "note": "culture.pl 頁因 403 未開，僅見搜尋摘要稱 Darkside 之前由 Daren 打鼓；成員異動年份只有維基一源，寫作層不寫『2006』"
+          },
+          {
+            "f": "2008 年與 Northern Heritage Records 簽三張專輯約，首張《Groza》同年發行；2015 年 M. 與 Darkside 創辦自己的廠牌 No Solace。",
+            "src": "https://en.wikipedia.org/wiki/Mg%C5%82a",
+            "single": true,
+            "from": "new",
+            "note": "簽約屬履歷，寫作層可略"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "M. 與 Darkside 自述兩人包辦作曲、歌詞、錄音、混音與設計，創作時近乎隔絕、不找外界意見；歌詞在音樂寫完並錄好之後才寫，用英文寫，求順口自然的朗讀感。",
+            "src": "https://www.nocleansinging.com/?p=105641",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "他們說歌詞與音樂同等重要，作品重點是真實的情緒而非敘事，是在表達自己平常少示人的黑暗面；對他們而言，黑金屬的定義在於情緒的「火花」，而非題材或風格。",
+            "src": "https://www.nocleansinging.com/?p=105641",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "他們稱《Exercises in Futility》是自己最凝練、最連貫、聲音最自然的作品，也比前作更陰暗荒涼；M. 的旋律與和聲取向，相對於他們另一計畫 Kriegsmaschine 那種只做錄音室、更暗更重節奏的路線。",
+            "src": "https://www.nocleansinging.com/?p=105641",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "《Exercises in Futility》出版後備受好評，訪問者稱有人把它選為年度專輯，樂團自述對反應感到意外。",
+            "src": "https://www.nocleansinging.com/?p=105641",
+            "single": true,
+            "from": "new",
+            "note": "訪問者語氣，不是權威票選；寫作層寫成『獲得高度評價』即可"
+          },
+          {
+            "f": "2012 年開始現場演出，2014 年出席美國 Maryland Deathfest；2022 年在 30 國演出約 80 場，同年 12 月宣布暫停現場演出專心錄音。",
+            "src": "https://en.wikipedia.org/wiki/Mg%C5%82a",
+            "src2": "https://www.nocleansinging.com/?p=105641",
+            "from": "new",
+            "note": "No Clean Singing 只證實 2014 Maryland Deathfest 與已有現場；2022 年數字只見維基，在世者場次，寫作層不寫"
+          }
+        ]
+      },
+      "era": {
+        "status": "none",
+        "facts": []
+      }
+    },
+    "milestones": [],
+    "conflicts": [
+      "沿用舊稿：2000 年成軍、克拉科夫、團名為『霧』、M. 與 Darkside 雙人編制，本層維基與搜尋摘要一致。舊稿『M. 包辦人聲、吉他與錄音室貝斯』維基同。"
+    ],
+    "thinIssues": "無事實錯誤",
+    "pubIssues": [],
+    "searches": 6,
+    "failedFetches": 3,
+    "status": "thin",
+    "notes": "legacy 缺：沒有開頁讀到的後輩點名、獎項或榜單；搜尋摘要稱 Onet.pl 說 Mgła 是『世界上最好的黑金屬樂團之一』、Metal Academy 稱 Exercises 超越前作成為波蘭黑金屬頂尖範例，但 Onet 頁未找到、Metal Academy 頁無法載入，皆未入 facts。爭議：維基載 2019 年 4 月德國反法西斯團體針對 Northern Heritage 廠牌發起行動，Mgła 取消慕尼黑與柏林場次，並稱為誹謗（smear campaign）；只有維基單源，未入 facts，需兩源才可寫。failedFetches：culture.pl（403）、loudersound（空頁）、metal.academy（瀏覽器版本）。"
+  },
+  {
+    "key": "michael angelo",
+    "name": "Michael Angelo",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "他本名 Michael Angelo Nigro，1954 年生於堪薩斯州 Topeka，在密蘇里州堪薩斯市長大；Tornadoes 的〈Telstar〉讓他迷上音樂，約十歲打鼓、自覺不行，十一歲得到阿姨送的原音吉他後自學。",
+            "src": "https://www.psychedelicbabymag.com/2020/05/michael-angelo-interview.html",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "他七年級時的第一個真正樂團 The Norwegian Wood 在青少年舞會演出；影響包括 Beatles、Rascals、Hendrix 與貝多芬。",
+            "src": "https://www.psychedelicbabymag.com/2020/05/michael-angelo-interview.html",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "他在堪薩斯市位於地下洞穴的錄音室 Liberty 當樂手，趁空檔錄下自己的同名專輯；Liberty 因另一個案子重大虧損，專輯未混音，後由 Big K Records 混音並在旗下 Guinn 發行，原始只壓約 500 張，鼓手 Frank Gautieri 參與，其他部分他自己錄。",
+            "src": "https://www.psychedelicbabymag.com/2020/05/michael-angelo-interview.html",
+            "single": true,
+            "from": "bank",
+            "note": "與上線簡介一致；Liberty 錄音室名稱訪談稱 Liberty Records、事實庫稱 Liberty Recording，以後者為準"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "他本人說自己遺憾錄音品質不夠好；專輯封面照片由當時的妻子 Sonna 用便宜相機拍。",
+            "src": "https://www.psychedelicbabymag.com/2020/05/michael-angelo-interview.html",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "第二張《A Sorcerer's Dream》約 1976 年錄於 Big K，很晚才由 Void Records 發行並加入他 1990 年代樂團 Synifus 的錄音；他至今仍每年演出數十場，寫過約一千首歌，多數只留成 demo。",
+            "src": "https://www.psychedelicbabymag.com/2020/05/michael-angelo-interview.html",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "他說自己沒想到首張專輯後來會有今天的地位：「I had no idea that it would become what it is.」；專輯後來由 Anthology Recordings 正式復刻，另有 Lion Productions 的 2CD 版收錄後續的 Guinn 專輯《Sorcerer's Dream》與《Nuts》。",
+            "src": "https://www.psychedelicbabymag.com/2020/05/michael-angelo-interview.html",
+            "src2": "https://mexicansummer.com/?p=8149",
+            "from": "new",
+            "note": "Mexican Summer 公告頁（Anthology Recordings 復刻）搜尋摘要可見，未開頁（404 或鏡像網址）；Lion Productions 只見搜尋摘要，不收"
+          }
+        ]
+      },
+      "era": {
+        "status": "none",
+        "facts": []
+      }
+    },
+    "milestones": [],
+    "conflicts": [
+      "採上線簡介：錄音室 Liberty Recording、Tascam 八軌、Big K 完成混音，與 2020 訪談一致。年份：1977 年 Guinn 發行（搜尋摘要）與 Nigro 自述『1978 年完成卻未發行』說法不一致，facts 不寫錄音年份。"
+    ],
+    "thinIssues": "可疑：thinIntro『趁空檔錄下專輯、八軌機花了數月、幾乎包辦所有樂器與人聲』與訪談大致一致（鼓手 Frank Gautieri 參與，非全包）；『六〇年代晚期的 psych-pop 與 soft rock』為風格歸類，錄於 1970 年代中期，本層未找到出處",
+    "pubIssues": [
+      {
+        "album": "Michael Angelo",
+        "claim": "幾乎全用他自己錄（上線簡介未寫鼓手）",
+        "problem": "訪談稱鼓手 Frank Gautieri 參與錄音，上線簡介若寫成他一人包辦需補此點；原句未在事實庫呈現，僅供留意",
+        "src": "https://www.psychedelicbabymag.com/2020/05/michael-angelo-interview.html"
+      }
+    ],
+    "searches": 4,
+    "failedFetches": 2,
+    "status": "thin",
+    "notes": "legacy 仍缺：沒有後輩點名或權威機構榮譽，也沒有可靠樂評的共識評價（搜尋到 Vinyl District、部落格評論，未開頁）。failedFetches：mexicansummer 公告頁（404）、forcedexposure 藝人頁（空頁）。維持 thin。"
+  }
+]

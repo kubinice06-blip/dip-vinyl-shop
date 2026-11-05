@@ -1,0 +1,1151 @@
+[
+ {
+  "key": "abbhama",
+  "name": "Abbhama",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Abbhama 是由雅加達藝術學院（IKJ）校園圈子的人組成的前衛搖滾團，核心是主唱兼鋼琴的 Iwan Madjid。",
+      "src": "https://id.wikipedia.org/wiki/Abbhama",
+      "single": true,
+      "from": "bank"
+     },
+     {
+      "f": "1978 年，樂團先以伴奏樂團的身分，在雅加達 Taman Ismail Marzuki（TIM）的一場演唱會上正式登台。",
+      "src": "https://id.wikipedia.org/wiki/Abbhama",
+      "single": true,
+      "from": "bank"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "音樂屬於前衛搖滾；編制除了主唱兼鋼琴的 Iwan Madjid，還有吉他（Cok B）、鍵盤（Oni）、長笛（Dharma）、雙簧管（Hendro）、貝斯兼鍵盤（Darwin B Rachman）與鼓（Robin Mangunsong）。",
+      "src": "https://id.wikipedia.org/wiki/Abbhama",
+      "single": true,
+      "from": "bank"
+     },
+     {
+      "f": "專輯《Alam Raya》的大部分歌曲由 Iwan Madjid 寫。",
+      "src": "https://id.wikipedia.org/wiki/Abbhama",
+      "single": true,
+      "from": "bank"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "none",
+    "facts": []
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "《Alam Raya》是樂團唯一的一張專輯，發完之後成員各奔前程，樂團解散；Iwan Madjid 與 Darwin B Rachman 後來繼續做音樂，另組樂團 Wow!。",
+      "src": "https://id.wikipedia.org/wiki/Abbhama",
+      "single": true,
+      "from": "bank"
+     }
+    ]
+   }
+  },
+  "milestones": [],
+  "conflicts": [
+   "印尼文維基寫專輯由 Tala & Co. 在 1979 年發行（演唱會後一年），Progarchives 與卡池寫 1978；上線簡介沒寫專輯年份，facts 不寫發行年。",
+   "事實庫寫 1977 年成軍，印尼文維基同樣寫 1977，但只有單一來源，成軍年移進 notes，facts 不寫。"
+  ],
+  "pubIssues": [],
+  "searches": 6,
+  "failedFetches": 3,
+  "status": "thin",
+  "notes": "本次 thin→full 升級補查 6 次（WebSearch 6 次；Progarchives album/review 頁 403 兩次、Boo Boo Records 429 一次，不計入）。結論：仍無法升級，維持 thin，寫作層跳過、保留原上線版。缺的是 legacy 與 sound：(1) 唯一能讀的一手頁面只有印尼文維基；Progarchives（雲端 403/驗證畫面）、Wayback（連線被重設）都開不了，搜尋摘要裡的 Progarchives 樂評（「symphonic prog with pop leanings」「歌詞全用印尼語、帶在地色彩」「在印尼本國也幾乎無人知曉」「評分約 3.5／5」）是摘要、未開頁，且為網友樂評，不收。(2) Boo Boo Records 零售頁（搜尋摘要）稱專輯由 Strawberry Rain 重發、長年在東南亞受重視、入選 Rolling Stone Indonesia 前 100、聲音近 Genesis／Yes／ELP／Guruh Gipsy／Triumvirat；我本輪實際開頁（curl 取回 580KB）已查不到 Abbhama 條目，且是零售文案，不收。(3) 重發廠牌各說各話：印尼文維基與 Progarchives 摘要寫 Majemuk Records 2014 年 CD／LP，Boo Boo 摘要寫 Strawberry Rain，Sound Shelter 摘要列 Strawberry Rain 目錄有 Abbhama；未開頁，facts 不寫重發廠牌與年份。(4) Rolling Stone Indonesia 2007 年「150 張最佳印尼專輯」的名次仍只有印尼文維基單源（寫第 70），Boo Boo 寫 top 100，兩者不一致，不收。(5) 搜尋摘要提到 Iwan Madjid 與 Darwin B Rachman 後來組 Wow!（1983 年《Produk Hijau》，同時有 Fariz RM），來源是部落格摘要，只作 notes，未收進 facts。thinIssues：原上線 thin 正文「據說由雅加達藝術學院校園圈子的人組成」「核心是…Iwan Madjid」與印尼文維基一致，未發現事實錯誤；pubIssues 沿用原稿的空陣列，但請本機核對 Discogs：原專輯簡介「2014 年才第一次壓成黑膠」與 Progarchives 摘要（2014 CD、2019 美國 LP）可能不符。"
+ },
+ {
+  "key": "academy of st martin in the fields chamber ensemble",
+  "name": "Academy of St Martin in the Fields Chamber Ensemble",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "這是 Academy of St Martin in the Fields 的室內樂編組，1967 年由母團的首席樂手成立，配置從弦樂五重奏到八重奏都有。",
+      "src": "https://en.wikipedia.org/wiki/Academy_of_St_Martin_in_the_Fields",
+      "from": "bank"
+     },
+     {
+      "f": "成立目的是讓習慣一起演奏的固定樂手來演大型室內樂（五重奏到八重奏），而不是四重奏加上臨時客座。",
+      "src": "https://www.friendsofmusic.org/academy-of-st-martin",
+      "from": "bank"
+     },
+     {
+      "f": "這個室內樂編組於 1967 年由母團的首席樂手創立，用意是演出大型室內樂作品，由平常就一起演奏的樂手組成（to perform the larger chamber works with players who customarily work together）。",
+      "src": "https://news.uga.edu/?p=25652",
+      "from": "bank"
+     },
+     {
+      "f": "母團以倫敦 St Martin-in-the-Fields 教堂命名，首場音樂會 1959 年 11 月 13 日在該教堂舉行。",
+      "src": "https://en.wikipedia.org/wiki/Academy_of_St_Martin_in_the_Fields",
+      "from": "bank"
+     },
+     {
+      "f": "ASMF 官方歷史頁寫道，這個室內樂編組 1967 年成軍當天的首場演出就是 Mendelssohn 弦樂八重奏 Op. 20，團是為了演這首而組成的；八位樂手平常就習慣一起演奏，不是兩個四重奏臨時拼成。",
+      "src": "https://www.asmf.org/about-us/our-history/",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "成軍初期，這個編組常在母團音樂會的下半場獨自登台，其他團員先下場；母團首席們固定一起演奏室內樂，也讓整個樂團保持室內樂式的合奏作風。",
+      "src": "https://www.asmf.org/about-us/our-history/",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "編制彈性，依曲目編成五重奏、六重奏或八重奏，由母團的弦樂與管樂首席組成，現在能從管樂三重奏演到弦樂八重奏。",
+      "src": "https://losalamosconcert.org/2025/05/29/academy-of-st-martin-in-the-fields-chamber-ensemble/",
+      "from": "bank"
+     },
+     {
+      "f": "成員取自母團的弦樂與管樂首席，依曲目編成五重奏、六重奏或八重奏；Mendelssohn 八重奏是他們的招牌曲目，ASMF 官方稱這首是團員與聽眾的共同愛曲。",
+      "src": "https://www.asmf.org/about-us/our-history/",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "Chicago Classical Review 評 2019 年芝加哥大學的演出，稱這組樂手的合奏有 coherence and unity，Mendelssohn 八重奏聽來 remarkably fresh and spirited，既有力又不鋸弦、樂句成形，詼諧曲帶玩興；評論者尤其記得他們在 Beamish 組曲裡 remarkably taut 的停停走走，並稱首席 Tomo Keller 的琴聲 gleaming tone and subtle leadership。",
+      "src": "https://chicagoclassicalreview.com/2019/10/academy-chamber-ensemble-triumphs-in-uchicago-presents-opener/",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Iona Brown 領奏、Timothy Brown 吹圓號的這個編組，1970 年代末在 Philips 錄下的舒伯特八重奏（D. 803），獲 1979 年 Académie Charles Cros 的 Grand Prix du Disque；其他團員有 Roy Gillard、Stephen Shingles、Denis Vigay、Thomas Martin、Antony Pay 與 Martin Gatt。",
+      "src": "https://www.asmf.org/about-us/our-history/",
+      "src2": "https://en.wikipedia.org/wiki/Octet_(Schubert)",
+      "from": "new"
+     },
+     {
+      "f": "這個編組之後又在 1987 年由 Shingles、Vigay 與 Timothy Brown 再錄一次舒伯特八重奏。",
+      "src": "https://www.asmf.org/about-us/our-history/",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1967 年成立後持續以多種編制演出；友人音樂會頁面記錄它在 2022 年 10 月仍以 Mendelssohn 弦樂八重奏 Op. 20 為主打曲目巡演。",
+      "src": "https://www.friendsofmusic.org/academy-of-st-martin",
+      "from": "bank"
+     },
+     {
+      "f": "先後與 Philips Classics、Hyperion、Chandos 簽錄音合約，發行逾三十張專輯。",
+      "src": "https://losalamosconcert.org/2025/05/29/academy-of-st-martin-in-the-fields-chamber-ensemble/",
+      "from": "bank"
+     },
+     {
+      "f": "固定巡演歐洲、北美等地；UGA 的介紹寫它固定巡迴法國、德國、西班牙、南北美洲、澳洲、紐西蘭與台灣。",
+      "src": "https://news.uga.edu/?p=25652",
+      "from": "bank"
+     }
+    ]
+   }
+  },
+  "milestones": [],
+  "conflicts": [
+   "【推翻前稿】前稿（ar-trial-v3）推翻了上線專輯簡介『這個合奏團當初成立，就是為了演這首八重奏』；本輪實際開到 ASMF 官方歷史頁（asmf.org/about-us/our-history/，curl 取得全文），第 6 項『The Academy Chamber Ensemble』原句寫：『The Chamber Ensemble was, in fact, formed specifically in order to play the Mendelssohn Octet』，且 Mendelssohn Op. 20 是 1967 年成軍當天首場演出的曲目。上線簡介該句有官方來源支持，不是錯誤，不必改。facts 採官方說法（單源，官方自述）。",
+   "上線簡介寫母團『1958 年由 Neville Marriner 創立』：ASMF 官方歷史頁與 Chicago Classical Review 寫 1958 年成立，英文維基與 UGA 另寫 1959 年（首場專業音樂會 1959 年 11 月 13 日）；官方頁兩者並存（成立 1958、首場 1959），故不衝突；facts 仍只帶首場日期，不帶成立年。",
+   "上線簡介寫母團『不設指揮、由第一小提琴席位帶領』：ASMF 官方頁寫 Marriner 從第一小提琴首席帶領、不用指揮；英文維基記 Marriner 到 1970 年才改站指揮台；本層不寫此點，寫作層不得把『不設指揮』用在 1978 年錄音的時點。",
+   "舒伯特八重奏的獎項名稱：ASMF 官方頁寫 Grand Prix de l'Academie Charles Cros 1979；英文維基 Octet (Schubert) 與 Timothy Brown 條目只寫『won a Grand Prix du Disque』無年份；Grand Prix du Disque 正是法國 Académie Charles Cros 頒的獎，兩者指同一獎項，facts 採官方的完整寫法（獎項年份只有官方頁一處明寫，故標單源註記）。"
+  ],
+  "searches": 8,
+  "status": "full",
+  "notes": "本次 thin→full 升級補查 8 次（WebSearch 3 次、WebFetch 5 次：Timothy Brown 維基、Eloquence 廠牌頁、Chicago Classical Review、Octet (Schubert) 維基、ASMF 官方歷史頁；ASMF 頁用 curl 重取原文核對措辭，視同同一次開頁）。重大更正：前稿推翻的上線簡介『成立就是為了演八重奏』經官方頁證實成立，conflicts 第一條已翻案。legacy 只有一個獎項（兩源，但維基只寫 Grand Prix du Disque 無年份、官方頁寫 Charles Cros 1979，寫作層宜寫成「1979 年獲 Académie Charles Cros 大獎」），份量不大，建議短寫。獎項主詞：得獎的是 Iona Brown 領奏的八重奏錄音，不是母團或個別樂手。未收：(1) Eloquence 廠牌頁稱 1967 年 6 月 13 日在 Kingsway Hall 錄的 Mendelssohn 八重奏（Decca，Marriner 領奏、母團樂手）入選《Penguin Guide to the 1000 Finest Classical Recordings》，Penguin 評 fresh and buoyant、AMG 稱 legendary——頁面是廠牌文案、錄音者是否即此編組頁面沒講清，且該頁自相矛盾（Penguin 引文寫 1968），不收。(2) ASMF 官方頁轉引 Guardian 的 Tom Service 稱 1979 年錄音是『My favourite recording of the Octet, and the first I ever heard』，所指「above」的錄音版本不明，只作單源轉引，不收。(3) Dallas Morning News 讚語為官網轉引，不收。(4) Gramophone 對 Chandos 新錄音（CHAN8790，團員幾乎全換）的評語偏負面，且是後期錄音，不收。(5) 逾三十張專輯、與 Philips／Hyperion／Chandos 簽約為演出方團介，沿用前稿單源。thinIssues：原上線 thin 正文無事實錯誤。",
+  "failedFetches": 0,
+  "pubIssues": []
+ },
+ {
+  "key": "action bronson",
+  "name": "Action Bronson",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Action Bronson 本名 Ariyan Arslani，是美國饒舌歌手，生長於紐約皇后區（生於 Flushing），父親是阿爾巴尼亞移民、信伊斯蘭，母親是美國猶太人，他在父親的伊斯蘭傳統下長大。",
+      "src": "https://en.wikipedia.org/wiki/Action_Bronson",
+      "src2": "https://slate.com/culture/2015/03/action-bronsons-mr-wonderful-can-the-queens-rapper-bring-his-inimitable-style-to-his-major-label-debut.html",
+      "from": "bank"
+     },
+     {
+      "f": "在走上饒舌之前，他是廚師，曾在父親位於 Forest Hills 的地中海餐廳工作，也主持過線上烹飪節目《Action in the Kitchen》；腿部受傷結束廚房生涯後，他才專心做饒舌。",
+      "src": "https://en.wikipedia.org/wiki/Action_Bronson",
+      "src2": "https://slate.com/culture/2015/03/action-bronsons-mr-wonderful-can-the-queens-rapper-bring-his-inimitable-style-to-his-major-label-debut.html",
+      "from": "bank"
+     },
+     {
+      "f": "他 2011 年自行發行首張專輯《Dr. Lecter》，之後四年持續發 mixtape 與客串，2015 年才推出大廠首張專輯。",
+      "src": "https://slate.com/culture/2015/03/action-bronsons-mr-wonderful-can-the-queens-rapper-bring-his-inimitable-style-to-his-major-label-debut.html",
+      "src2": "https://en.wikipedia.org/wiki/Action_Bronson",
+      "from": "bank"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他的詞常寫食物，也頻繁提到運動員與球隊，包括紐約的體育、職業摔角手、健美選手、花式滑冰與運動賭盤。",
+      "src": "https://en.wikipedia.org/wiki/Action_Bronson",
+      "single": true,
+      "from": "bank"
+     },
+     {
+      "f": "他出道初期因聲線神似 Wu-Tang Clan 的 Ghostface Killah 受到注意；Slate 的評論指出相像主要在音色，Bronson 的流速更從容、留有空間，節奏感近 Kool G Rap，不規則的韻腳則近 Kool Keith。他自己說最想比擬的是 Kool G Rap。",
+      "src": "https://slate.com/culture/2015/03/action-bronsons-mr-wonderful-can-the-queens-rapper-bring-his-inimitable-style-to-his-major-label-debut.html",
+      "src2": "https://en.wikipedia.org/wiki/Action_Bronson",
+      "from": "bank"
+     },
+     {
+      "f": "他點名的影響包括 Kool G Rap、Nas、Cam'ron、Mobb Deep、UGK 與 Wu-Tang Clan，也有 Michael Jackson、Carlos Santana、Queen 與阿爾巴尼亞婚禮歌手。",
+      "src": "https://en.wikipedia.org/wiki/Action_Bronson",
+      "single": true,
+      "from": "bank"
+     },
+     {
+      "f": "Paste 的專輯評論說，Noah \"40\" Shebib 做的〈Actin Crazy〉節拍「配得上 Bronson 的節奏感」；他的鼻音與誇張的人物感是這張專輯能撐住的原因，食物與運動的指涉被評為討喜。評論者同時認為專輯製作雖多手、他卻沒能重現 mixtape 裡人聲與節拍的那種默契。",
+      "src": "https://pastemagazine.com/music/action-bronson-mr-wonderful-review",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他的名氣越出音樂圈：主持過談話節目《The Untitled Action Bronson Show》，並主持旅遊美食節目《Fuck, That's Delicious》，名廚如 Mario Batali、Daniel Boulud 等人都上過他的節目。",
+      "src": "https://en.wikipedia.org/wiki/Action_Bronson",
+      "single": true,
+      "from": "bank"
+     },
+     {
+      "f": "Slate 的 Jack Hamilton 形容他是一位怪人：在英國養老院裡饒舌、主持烹飪節目、做線上教學、辦 MMA 式的舞台秀；同時稱他是技巧純熟的饒舌歌手。",
+      "src": "https://slate.com/culture/2015/03/action-bronsons-mr-wonderful-can-the-queens-rapper-bring-his-inimitable-style-to-his-major-label-debut.html",
+      "single": true,
+      "from": "bank"
+     },
+     {
+      "f": "《Fuck, That's Delicious》2014 年以 Vice Munchies 旗下的網路節目起步，是他早期網路烹飪節目《Action in the Kitchen》的精神續作；2016 年登上 Viceland 播出四季，第 5 季（2021 年）改在他自己的 YouTube 頻道、自費製作。節目跟著他到各地吃街頭小吃到高級餐廳，Meyhem Lauren、The Alchemist 與 Big Body Bes 是常客，Mario Batali、Daniel Boulud 等名廚也來過。",
+      "src": "https://en.wikipedia.org/wiki/Fuck,_That%27s_Delicious",
+      "src2": "https://www.complex.com/music/a/backwoodsaltar/action-bronson-season-5-premiere-fuck-thats-delicious",
+      "from": "new"
+     },
+     {
+      "f": "Ghostface Killah 自己承認，曾把 Bronson 的饒舌誤聽成自己的。",
+      "src": "https://en.wikipedia.org/wiki/Action_Bronson",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "2015 年 3 月《Mr. Wonderful》是他的大廠首張專輯，Slate 的評論認為製作過於雜燴、不如他早期 mixtape 一貫。",
+      "src": "https://slate.com/culture/2015/03/action-bronsons-mr-wonderful-can-the-queens-rapper-bring-his-inimitable-style-to-his-major-label-debut.html",
+      "src2": "https://en.wikipedia.org/wiki/Action_Bronson",
+      "from": "bank"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "2011 年自行發行首張專輯《Dr. Lecter》。",
+    "src": "https://en.wikipedia.org/wiki/Action_Bronson",
+    "src2": "https://slate.com/culture/2015/03/action-bronsons-mr-wonderful-can-the-queens-rapper-bring-his-inimitable-style-to-his-major-label-debut.html",
+    "from": "bank"
+   },
+   {
+    "f": "2015 年 3 月發行大廠首張專輯《Mr. Wonderful》。",
+    "src": "https://en.wikipedia.org/wiki/Action_Bronson",
+    "src2": "https://slate.com/culture/2015/03/action-bronsons-mr-wonderful-can-the-queens-rapper-bring-his-inimitable-style-to-his-major-label-debut.html",
+    "from": "bank"
+   }
+  ],
+  "conflicts": [],
+  "pubIssues": [],
+  "searches": 7,
+  "failedFetches": 1,
+  "status": "full",
+  "notes": "本次 thin→full 升級補查 7 次（WebSearch 4 次、WebFetch 3 次：Paste 評論、FTD 維基、Complex 第 5 季報導；一次帶 allowed_domains 的搜尋被擋 400，不計入）。身分沿用原稿，不變。legacy 補到的是跨界現象（嘻哈進入美食電視並成為長壽節目）而非後輩點名或榜單共識；這一點正是 Bronson 份量的核心，兩源（維基 FTD 條目＋Complex）支撐；Ghostface 承認認錯聲是具名說法、單源（維基預抓，引文出自 2011 HipHopDX 訪談段落），可略。找不到後輩點名他為影響的有出處報導；搜尋出現的 SEO 站（net worth 類）一律不收。未收：Viceland 「Howard Stern of TV food」「Viceland hallmark star」是搜尋摘要的二手形容，未開頁；Jewish Virtual Library 稱曾任 Mets 主廚、讀 Art Institute 烹飪課程，只有該站與垃圾站，不收；Tablet 專文為評論散文，不收；《Mr. Wonderful》Billboard 200 第 7 名與 Metacritic 77（在世者榜單）避免。節目首集上線時間與 Viceland 首播日各處不一致（維基 2016 年 3 月 3 日、搜尋摘要寫 2 月 29 日），facts 只寫「2016 年」。thinIssues：原上線 thin 正文「據說常寫食物與運動」「流速更從容、留有空間，節奏感近 Kool G Rap」依 Slate 為評論者看法（Slate 說近 Kool G Rap 是 Bronson 自己最想比擬的對象之一），正文把它寫成事實，建議寫作層改為「Slate 評論者的聽法」。"
+ },
+ {
+  "key": "adia victoria",
+  "name": "Adia Victoria",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Adia Victoria 是美國的創作歌手與詩人，生於南卡羅來納州 Spartanburg，在黑人 Seventh-day Adventist 的家庭長大，現居納許維爾。",
+      "src": "https://en.wikipedia.org/wiki/Adia_Victoria",
+      "src2": "https://wnxp.org/when-life-closed-in-adia-victoria-brought-to-life-the-south-of-her-imagination/",
+      "from": "bank"
+     },
+     {
+      "f": "她念到六年級才從教會學校轉進公立學校，覺得格格不入；父母離婚後，她用寫詩和短篇小說來應對。",
+      "src": "https://en.wikipedia.org/wiki/Adia_Victoria",
+      "single": true,
+      "from": "bank"
+     },
+     {
+      "f": "家人離開教會後，她才接觸到 Kurt Cobain、Miles Davis、Fiona Apple 這些原本沒聽過的音樂。",
+      "src": "https://en.wikipedia.org/wiki/Adia_Victoria",
+      "single": true,
+      "from": "bank"
+     },
+     {
+      "f": "21 歲生日時朋友送她一把吉他，她從那時開始碰藍調；2010 年遷到納許維爾。",
+      "src": "https://en.wikipedia.org/wiki/Adia_Victoria",
+      "single": true,
+      "from": "bank"
+     },
+     {
+      "f": "她是六個手足之一，父親是千里達人。",
+      "src": "https://en.wikipedia.org/wiki/Adia_Victoria",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "她把自己的音樂稱為 gothic blues，帶有搖滾、藍調、龐克與鄉村的元素。",
+      "src": "https://en.wikipedia.org/wiki/Adia_Victoria",
+      "single": true,
+      "from": "bank"
+     },
+     {
+      "f": "《A Southern Gothic》在 2020 年疫情期間於她和未婚夫 Mason Hickman 的家庭錄音室打底，她用拍打身體和搖乾豆子製造節奏，Hickman 學著彈中提琴和班鳩琴；她想保留粗糙的骨架，請 T Bone Burnett 協助混音。",
+      "src": "https://wnxp.org/when-life-closed-in-adia-victoria-brought-to-life-the-south-of-her-imagination/",
+      "single": true,
+      "from": "bank"
+     },
+     {
+      "f": "她把 Southern Gothic 這個文學標籤改寫成黑人南方女性的經驗，而不是慣常聯想的白人式恐懼。",
+      "src": "https://www.audiofemme.com/playing-nashville-adia-victoria-a-southern-gothic/",
+      "single": true,
+      "from": "bank"
+     },
+     {
+      "f": "創作期間她在 Amazon 倉庫上班，一次辛苦的輪班催生了〈Carolina Bound〉，寫對家鄉的思念。",
+      "src": "https://www.audiofemme.com/playing-nashville-adia-victoria-a-southern-gothic/",
+      "single": true,
+      "from": "bank"
+     },
+     {
+      "f": "她二十出頭拿起吉他後才碰藍調，欣賞 Bessie Smith 與 Ma Rainey 這些早期唱性解放與女性自主的女歌手；她說藍調是「建立社群、被看見、替沒被聽見的人發聲」。WGLT 稱她是帶有龐克、福音與哥德成分的藍調女人（blues woman）。",
+      "src": "https://www.wglt.org/post/adia-victoria-blazing-trail-grandmother-could-only-dream",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "《A Southern Gothic》疫情期間她與 Mason Hickman 在家各彈多種樂器錄 demo，不少軌幾乎原樣留在專輯，她想靠這份粗糙與克制，呼應 Alan Lomax 田野錄音裡資源匱乏下做音樂的黑人藝術家；T Bone Burnett 參與製作，Kyshona、Margo Price、Jason Isbell、Stone Jack Jones 與 The National 的 Matt Berninger 都在專輯裡出現。",
+      "src": "https://www.nashvillescene.com/music/features/adia-victoria-reclaims-the-south-on-i-a-southern-gothic-i/article_b455767c-14d3-11ec-9938-a3ad752b9ff0.html",
+      "src2": "https://www.nashvillescene.com/music/nashvillecream/allison-russell-adia-victoria-among-nominees-for-2022-americana-honors-and-awards/article_9919a366-d566-11ec-ac16-2bd810f125d5.html",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "《A Southern Gothic》入圍 2022 年 Americana Music Association 的年度專輯（Album of the Year），她本人同時入圍年度新人（Emerging Act of the Year）；兩項皆為入圍，未得獎。",
+      "src": "https://www.thecurrent.org/feature/2022/05/16/americana-honors-and-awards-nominees-announced-2022",
+      "src2": "https://www.nashvillescene.com/music/nashvillecream/allison-russell-adia-victoria-among-nominees-for-2022-americana-honors-and-awards/article_9919a366-d566-11ec-ac16-2bd810f125d5.html",
+      "from": "new"
+     },
+     {
+      "f": "Nashville Scene 寫她在《A Southern Gothic》裡把向來與白人藝術家連結的 Southern Gothic 奪回，從黑人南方人的處境談這個類型；她說自己在書店的南方文學書架只看到 Faulkner、Welty 與 O'Connor，沒有黑人作者，便想「還有什麼比黑人南方人的經驗更哥德」。",
+      "src": "https://www.nashvillescene.com/music/features/adia-victoria-reclaims-the-south-on-i-a-southern-gothic-i/article_b455767c-14d3-11ec-9938-a3ad752b9ff0.html",
+      "src2": "https://www.audiofemme.com/playing-nashville-adia-victoria-a-southern-gothic/",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [],
+  "conflicts": [
+   "遷居納許維爾的動機：英文維基寫她想在那裡匿名生活，WNXP 寫是為了離家人近；兩源不一致，facts 只寫遷居年份，不寫動機。",
+   "T Bone Burnett 的角色：Nashville Scene 專文寫她與他『共同製作』，同報的入圍名單寫『由 Mason Hickman 與 Adia Victoria 製作、T Bone Burnett 擔任執行製作』，WNXP（前稿）寫他協助混音；各說不一，facts 只寫『參與製作』，不寫確切職稱。"
+  ],
+  "pubIssues": [],
+  "searches": 8,
+  "failedFetches": 2,
+  "status": "full",
+  "notes": "本次 thin→full 升級補查 8 次（WebSearch 3 次、WebFetch 5 次：WGLT 專訪、The Current 入圍名單、Nashville Scene 入圍報導、Nashville Scene 專文（429 後改用 curl 取全文）、維基 2022 Americana 典禮頁；Nashville Scene 專文第一次 429 與另一次 429 不計入）。身分沿用原稿，不變。legacy 補到的是 2022 年 Americana 兩項入圍（The Current 與 Nashville Scene 兩源，同時以維基 2022 典禮頁核對：Emerging Act 得主 Sierra Ferrell、年度專輯得主 Allison Russell《Outside Child》，典禮 2022 年 9 月 14 日在 Ryman 禮堂；她兩項都只是入圍，寫作層務必寫入圍、勿寫得獎）與 Southern Gothic 重寫的觀點。獎項名稱：The Current 與 Nashville Scene 寫 Emerging Act of the Year，英文維基人物頁寫 Emerging Artist，採前者。法國巴黎寫作、Amazon 倉庫工作（前稿已收）等維持不變。未收：Loud and Quiet（6/10）、Holler、Firenote 等評論僅見搜尋摘要未開頁；Reckon 稱專輯「重奪被白人視角主導的類型」亦僅摘要；WGLT 的祖母「hidden figures」（G.E. 太空計畫）家族故事與音樂關係不大，不收；Silences（2019）、Beyond the Bloodhounds（2016）細節未查。她對 Americana 標籤的態度（英文維基：先否認，後來態度軟化）留在維基單源，不收。在世者：榜單與銷量一律不收。thinIssues：原上線 thin 正文「21 歲生日收到吉他後碰起藍調」與維基一致；「據說家人離開教會後她才聽到 Kurt Cobain 與 Miles Davis」維基原文為家人離開教會「讓她得以探索」這些原本沒接觸的音樂，Miles Davis 與 Cobain 為維基所舉例，無錯。"
+ },
+ {
+  "key": "adnan othman",
+  "name": "Adnan Othman",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Adnan Othman 是馬來西亞歌手兼作曲家，1964 到 1970 年的 Pop Yeh Yeh 時期（用馬來語唱的搖滾樂）在馬來西亞與新加坡走紅。",
+      "src": "https://sublime-frequencies.bandcamp.com/album/adnan-othman-bershukor-a-retrospective-of-malaysian-pop-yeh-yeh-legend",
+      "src2": "https://rvamag.com/music/local-djs-passion-for-60s-malaysian-music-turns-into-new-pop-yeh-yeh-tribute-compilation.html",
+      "from": "bank"
+     },
+     {
+      "f": "1960 年代初，他受邀到新加坡，與當時很紅的伴奏團 The Rhythm Boys 錄下第一批唱片。",
+      "src": "https://sublime-frequencies.bandcamp.com/album/adnan-othman-bershukor-a-retrospective-of-malaysian-pop-yeh-yeh-legend",
+      "single": true,
+      "from": "bank"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他的歌聲有力、粗礪而帶著情緒，替他伴奏的樂團有 The Rhythm Boys、The Wanderers、The Flamingoes 與 The Falcons。",
+      "src": "https://sublime-frequencies.bandcamp.com/album/adnan-othman-bershukor-a-retrospective-of-malaysian-pop-yeh-yeh-legend",
+      "single": true,
+      "from": "bank"
+     },
+     {
+      "f": "1970 年代許多同輩轉向迪斯可時，他仍守著搖滾樂的根，作品帶著迷幻搖滾的成分。",
+      "src": "https://sublime-frequencies.bandcamp.com/album/adnan-othman-bershukor-a-retrospective-of-malaysian-pop-yeh-yeh-legend",
+      "single": true,
+      "from": "bank"
+     },
+     {
+      "f": "Pop Yeh Yeh 是馬來西亞與新加坡的樂種，根源是英倫入侵，Cliff Richard and the Shadows 是區域最主要的影響，本地樂團常翻唱；歌詞用馬來語寫日常生活，有時談到伊斯蘭，多數錄於 1960 年代後期。",
+      "src": "https://rvamag.com/music/local-djs-passion-for-60s-malaysian-music-turns-into-new-pop-yeh-yeh-tribute-compilation.html",
+      "single": true,
+      "from": "bank"
+     },
+     {
+      "f": "Pop Yeh Yeh 場景隨新加坡與馬來西亞的快速現代化而起，Cliff Richard and the Shadows 的演出催生了一批五人吉他團；多數樂手只領固定酬勞、白天另有教書或水電之類的工作，1970 年前後被寶萊塢電影歌曲、印尼 dangdut 與迪斯可取代。",
+      "src": "https://popmatters.com/172416-various-pop-yeh-yeh-2495749414.html",
+      "src2": "https://rvamag.com/music/local-djs-passion-for-60s-malaysian-music-turns-into-new-pop-yeh-yeh-tribute-compilation.html",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Sublime Frequencies 的 Carl Hamm 第一次到馬來西亞與新加坡時由他接待，說他總是很謙遜，那一個半星期裡「just made it happen」——幫忙牽線、開車接送、請吃飯；Hamm 也說他在唱片封面上有種 cavalier 的氣質。",
+      "src": "https://rvamag.com/music/local-djs-passion-for-60s-malaysian-music-turns-into-new-pop-yeh-yeh-tribute-compilation.html",
+      "single": true,
+      "from": "bank"
+     },
+     {
+      "f": "他協助 Sublime Frequencies 完成 2013 年的區域合輯《Pop Yeh Yeh: Psychedelic Rock from Singapore and Malaysia 1964-1970》（SF079）。",
+      "src": "https://sublime-frequencies.bandcamp.com/album/adnan-othman-bershukor-a-retrospective-of-malaysian-pop-yeh-yeh-legend",
+      "single": true,
+      "from": "bank"
+     },
+     {
+      "f": "《Bershukor》由 Carl Hamm 編選，收 26 首、取自他的八張個人 EP；黑膠內頁的解說是 Hamm 與他的問答，Hamm 說做這張是想當成一句「謝謝」，幫他把音樂和故事傳出去。",
+      "src": "https://rvamag.com/music/local-djs-passion-for-60s-malaysian-music-turns-into-new-pop-yeh-yeh-tribute-compilation.html",
+      "src2": "https://sublime-frequencies.bandcamp.com/album/adnan-othman-bershukor-a-retrospective-of-malaysian-pop-yeh-yeh-legend",
+      "from": "bank"
+     },
+     {
+      "f": "Sublime Frequencies 稱他的歌從 1960 年代起就吸引了東南亞各地的樂迷，近年對這一帶搖滾樂的重新關注，讓他在世界各地有了新的聽眾。",
+      "src": "https://sublime-frequencies.bandcamp.com/album/adnan-othman-bershukor-a-retrospective-of-malaysian-pop-yeh-yeh-legend",
+      "single": true,
+      "from": "bank"
+     },
+     {
+      "f": "2013 年 Style Weekly 報導 Carl Hamm 編《Pop Yeh Yeh》第一輯的過程：他到馬來西亞與新加坡訪問當年樂手時，最先見到的人之一就是 Adnan Othman，並打算接著推單一藝人的回顧輯，可能就從他開始；《Bershukor》後來正是這樣誕生。",
+      "src": "https://www.styleweekly.com/?p=39913",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [],
+  "conflicts": [
+   "出生地：事實庫與上線簡介寫他來自登嘉樓（Terengganu），事實庫引的 Bandcamp 頁面這次開頁讀到的全文沒有出生地，Forced Exposure、Soundohm 等零售頁也沒有；找不到任何來源支持，facts 不收登嘉樓。",
+   "《Bershukor》的出版時間：Forced Exposure 與搜尋摘要寫 CD（SF098CD）2019 年 10 月 25 日發行，Bandcamp 頁面寫 2022 年 1 月 14 日；RVA Magazine 2016 年 3 月的報導已把雙 LP 說成剛做好。卡池與上線簡介用 2016，各處不一致，facts 不寫發行年。"
+  ],
+  "pubIssues": [
+   {
+    "album": "Bershukor: A Retrospective of Hits by a Malaysian Pop Yeh Yeh Legend",
+    "claim": "Adnan Othman 來自登嘉樓",
+    "problem": "Sublime Frequencies 的 Bandcamp 頁面全文沒有出生地，Forced Exposure、Soundohm 等零售頁也沒有，目前沒有任何開頁讀到的來源支持登嘉樓；建議確認出處，查不到可考慮改成不點明家鄉。",
+    "src": "https://sublime-frequencies.bandcamp.com/album/adnan-othman-bershukor-a-retrospective-of-malaysian-pop-yeh-yeh-legend"
+   }
+  ],
+  "searches": 8,
+  "failedFetches": 2,
+  "status": "thin",
+  "notes": "本次 thin→full 升級補查 8 次（WebSearch 5 次、WebFetch 3 次：英文維基 Pop yeh-yeh、PopMatters 對 Pop Yeh Yeh Vol.1 的評論、Style Weekly 2013 報導；Forced Exposure、Boing Boing 先前已知 403／空白，本輪未再開）。結論：維持 thin，寫作層跳過、保留原上線版。缺的是 Adnan Othman 本人的獨立來源：搜尋 Wire／Bandcamp Daily／Red Bull Music／Bernama／Berita Harian／馬來文都只得到 Sublime Frequencies 自家文案與零售頁；英文維基 Pop yeh-yeh 與 PopMatters 的 Vol.1 評論都沒有提到他。新補到的兩條只是場景背景與「Hamm 先找他」，不是對他的評價；sound 仍只有 Sublime Frequencies 文案（有力、粗礪、有情緒的歌聲；1970 年代仍守搖滾根）一源。出生地登嘉樓（Terengganu）仍無來源，pubIssues 沿用前稿（請本機改 KV 不點明家鄉）。thinIssues：原上線 thin 正文「1970 年代同輩轉向迪斯可時，他仍守著搖滾的根」是 Sublime Frequencies 文案；PopMatters 另說 1970 年前後整個場景被寶萊塢歌曲、dangdut 與迪斯可取代，正文可保留「據說」口吻。PopMatters 對 Vol.1 的評分與「psychedelic 副題誤導」屬樂評人意見，不收。"
+ },
+ {
+  "key": "air miami",
+  "name": "Air Miami",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Air Miami 是來自華盛頓特區的美國獨立搖滾團，由兩位 Unrest 前成員 Mark Robinson 與 Bridget Cross 組成。",
+      "src": "https://en.wikipedia.org/wiki/Air_Miami_(band)",
+      "src2": "https://trouserpress.com/reviews/unrest/",
+      "from": "bank"
+     },
+     {
+      "f": "Robinson 自己經營 Teenbeat 廠牌，Unrest 早期的錄音帶與單曲都由它發行；Air Miami 最早的 1994 年錄音帶也出在 TeenBeat。",
+      "src": "https://trouserpress.com/reviews/unrest/",
+      "single": true,
+      "from": "bank"
+     },
+     {
+      "f": "首張專輯《Me. Me. Me.》（1995）由 Teenbeat 與英國 4AD 共同發行。",
+      "src": "https://trouserpress.com/reviews/unrest/",
+      "src2": "https://www.discogs.com/release/632361",
+      "from": "bank"
+     },
+     {
+      "f": "《Me. Me. Me.》錄音時的鼓手是 Gabriel Stout，Robinson 與 Cross 輪流主唱。",
+      "src": "https://en.wikipedia.org/wiki/Me._Me._Me.",
+      "src2": "https://trouserpress.com/reviews/unrest/",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Trouser Press 說這支新三人團「沒有偏離 Unrest 開出的路」：帶泡泡糖餘味的短歌與可以跟著喊的副歌（如〈World Cup Fever〉），配上受 Fire Engines 影響的清脆吉他和新浪潮氣質。",
+      "src": "https://trouserpress.com/reviews/unrest/",
+      "single": true,
+      "from": "bank"
+     },
+     {
+      "f": "與 Unrest 時期相比，Cross 在這張唱片裡唱得更多，兩人還有 Sonny & Cher 式的男女對唱。",
+      "src": "https://trouserpress.com/reviews/unrest/",
+      "single": true,
+      "from": "bank"
+     },
+     {
+      "f": "單曲〈Airplane Rider〉七吋與歌曲〈World Cup Fever〉都獲得大學廣播電台相當多的播放。",
+      "src": "https://en.wikipedia.org/wiki/Air_Miami_(band)",
+      "single": true,
+      "from": "bank"
+     },
+     {
+      "f": "專輯共 13 首短歌；《Washington Post》的評論稱 Robinson 與 Cross 輪流主唱，把泡泡糖式的旋律（如〈Neely〉）放進短歌裡。",
+      "src": "https://en.wikipedia.org/wiki/Me._Me._Me.",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "《Me. Me. Me.》於 2023 年由 4AD 與 Teenbeat 重發成加長版雙黑膠，補進同次錄音的全部十六首，其中三首原本未收入專輯。",
+      "src": "https://www.discogs.com/release/27783660",
+      "single": true,
+      "from": "bank"
+     },
+     {
+      "f": "《Time Out》2015 年「90 年代最佳專輯封面 40 選」把《Me. Me. Me.》的封面排在第 35 名。",
+      "src": "https://www.timeout.com/newyork/music/best-albums-of-2017",
+      "src2": "https://en.wikipedia.org/wiki/Me._Me._Me.",
+      "from": "new"
+     },
+     {
+      "f": "4AD 旗下的 Maria Somerville 在 2021 年 4AD 合輯《Bills & Aches & Blues》翻唱了專輯曲〈Seabird〉。",
+      "src": "https://en.wikipedia.org/wiki/Me._Me._Me.",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "《Me. Me. Me.》於 1995 年 5 月錄音與混音，用兩吋二十四軌類比磁帶。",
+      "src": "https://www.discogs.com/release/632361",
+      "single": true,
+      "from": "bank"
+     },
+     {
+      "f": "1995 年 5 月在邁阿密北邊的 Criteria Studios 錄兩週，製作人是 Guy Fixsen；Robinson 說 Fixsen 是完美主義者，要他們一遍遍重做到對為止。",
+      "src": "https://en.wikipedia.org/wiki/Me._Me._Me.",
+      "src2": "https://waitingroomrecords.com/products/air-miami-me-me-me-preorder-out-7-28",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [],
+  "conflicts": [
+   "成員：維基說先由 Robinson、Cross 加鼓手 Mike Fellows 與貝斯手 Lauren Feldsher 成四人團；Trouser Press 與搜尋到的 Miami New Times 摘要說專輯時期是 Robinson、Cross 與鼓手 Gabriel Stout。成員異動屬高風險，facts 只寫 Robinson 與 Cross 兩位兩源一致者，不寫其他成員。",
+   "成員：前稿只留 Robinson 與 Cross 兩位；本輪英文維基《Me. Me. Me.》條目與 Trouser Press 一致寫專輯時期鼓手為 Gabriel Stout，故補入 origin；Air Miami 樂團條目（Fellows／Feldsher 四人團）的說法仍與之不合，facts 不寫。"
+  ],
+  "pubIssues": [],
+  "searches": 7,
+  "failedFetches": 2,
+  "status": "full",
+  "notes": "本次 thin→full 升級補查 7 次（WebSearch 4 次、WebFetch 3 次：英文維基《Me. Me. Me.》、Time Out 榜單頁、Waiting Room Records 店頁（429 後以 curl 取全文）；4ad.com 轉址、Michigan Daily 1995 評論 403，不計入）。身分沿用原稿，不變。legacy 補到兩條：Time Out 榜單名次（媒體榜單、屬封面設計而非音樂，依特注「榜單名次避免」但這是少數可查的外界評價，兩源，列必要例外；寫作層可輕寫）與 Maria Somerville 翻唱（維基單源、低風險）。仍沒有後輩點名或權威共識；維基彙整的 1995 年評論（Spin 8/10、AllMusic 4.5/5、《Washington Post》、《Austin Chronicle》等）都是個別評論，只取《Washington Post》一句描述，評分不收。Waiting Room 店頁稱專輯「cult status」、並稱 Lush 當時在隔壁錄音室錄《Lovelife》，屬零售文案，未收。Miami New Times（搜尋摘要）稱活動以邁阿密北部錄音為主，未開頁。因 legacy 份量不大，建議寫作層寫成短版，重點放在 Unrest 淵源、4AD／Teenbeat 合作與聲音。thinIssues：原上線 thin 正文「首張專輯由英國 4AD 與 Robinson 自營的廠牌共同發行」「帶泡泡糖餘味的短歌」皆與來源一致；樂團本身只有這張專輯，正文若寫「首張」應改為「唯一專輯」（維基：only studio album）。"
+ },
+ {
+  "key": "al campbell",
+  "name": "Al Campbell",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Alphonso「Al」Campbell 1954 年 8 月 31 日生於牙買加金斯敦。",
+      "src": "https://en.wikipedia.org/wiki/Al_Campbell",
+      "src2": "https://riddimsworld.com/artist/al-campbell",
+      "from": "bank"
+     },
+     {
+      "f": "他的父親是牧師，他從教會開始唱歌，替教會唱歌募款。",
+      "src": "https://en.wikipedia.org/wiki/Al_Campbell",
+      "src2": "https://unitedreggae.com/articles/n657/060211/al-campbell-tony-roots-and-christine-miller-in-london",
+      "single": true,
+      "from": "bank"
+     },
+     {
+      "f": "他少年時與同學組了人聲團 The Thrillers，1960 年代末為 Studio One 錄音；他與後來的製作人 Prince Jammy（Lloyd James）是同學。",
+      "src": "https://en.wikipedia.org/wiki/Al_Campbell",
+      "src2": "https://greensleevesrecords.co.uk/artist/al-campbell/",
+      "from": "bank"
+     },
+     {
+      "f": "離開 The Thrillers 之後，他加入 Prince Lincoln Thompson 的 Royal Rasses，再走上獨唱。",
+      "src": "https://en.wikipedia.org/wiki/Al_Campbell",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1970 年代他是受歡迎的 roots reggae 歌手，替 Phil Pratt、Bunny Lee、Joe Gibbs 等製作人錄音，也進過 Lee Perry 的 Black Ark 錄音室。",
+      "src": "https://en.wikipedia.org/wiki/Al_Campbell",
+      "src2": "https://greensleevesrecords.co.uk/artist/al-campbell/",
+      "from": "bank"
+     },
+     {
+      "f": "1970 年代末到 1980 年代他順利轉進早期 dancehall 與 lovers rock，常與製作人 Linval Thompson 合作。",
+      "src": "https://en.wikipedia.org/wiki/Al_Campbell",
+      "src2": "https://greensleevesrecords.co.uk/artist/al-campbell/",
+      "from": "bank"
+     },
+     {
+      "f": "他在 Studio One 時期兼做編曲，替 Dennis Brown〈If I Follow My Heart〉、Larry Marshall〈It Makes Me Feel〉等錄音疊和聲。",
+      "src": "https://greensleevesrecords.co.uk/artist/al-campbell/",
+      "single": true,
+      "from": "bank"
+     },
+     {
+      "f": "1980 年的〈Late Night Blues〉成為 blues party 的常備曲目。",
+      "src": "https://en.wikipedia.org/wiki/Al_Campbell",
+      "src2": "https://unitedreggae.com/articles/n657/060211/al-campbell-tony-roots-and-christine-miller-in-london",
+      "single": true,
+      "from": "bank"
+     },
+     {
+      "f": "1983 年的〈Last Dance〉由 Henry \"Junjo\" Lawes 製作，Roots Radics 伴奏、在 Channel One 錄音；NiceUp 的評論者稱它與眾不同之處，是 Roots Radics 厚實的鼓與貝斯節奏。",
+      "src": "https://niceup.org.nz/al-campbell-last-dance/",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "〈Gee Baby〉是他的代表作，1970 年代中期在牙買加與英國都是熱門單曲。",
+      "src": "https://en.wikipedia.org/wiki/Al_Campbell",
+      "src2": "https://riddimsworld.com/artist/al-campbell",
+      "from": "bank"
+     },
+     {
+      "f": "1997 年他與 Cornell Campbell、Jimmy Riley 重組 The Uniques，1999 年發行同名專輯。",
+      "src": "https://en.wikipedia.org/wiki/Al_Campbell",
+      "src2": "https://riddimsworld.com/artist/al-campbell",
+      "from": "bank"
+     },
+     {
+      "f": "United Reggae 2013 年的訪談中，訪問者提到有人稱〈Gee Baby〉是第一首 lovers rock；Campbell 自己的說法是，這首歌讓英國人開始談論 lovers rock。",
+      "src": "https://unitedreggae.com/articles/n1358/051313/interview-al-campbell",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1980 年代初他與 Stur-Gav sound system 一起演出。",
+      "src": "https://en.wikipedia.org/wiki/Al_Campbell",
+      "src2": "https://www.roots-archives.com/artist/187",
+      "single": true,
+      "from": "bank"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "〈Gee Baby〉1970 年代中期在牙買加與英國都走紅。",
+    "src": "https://en.wikipedia.org/wiki/Al_Campbell",
+    "src2": "https://riddimsworld.com/artist/al-campbell",
+    "from": "bank"
+   }
+  ],
+  "conflicts": [
+   "Greensleeves 說他先組 The Three Lads（與 Ernest Wilson、Freddie McGregor）再進 The Thrillers，英文維基說 The Thrillers 在先、之後才短暫與 McGregor、Wilson 合作；兩說次序不同，facts 只寫 The Thrillers 錄過 Studio One，不寫次序。",
+   "Pauze Radio 說他由 Coxsone Dodd 發掘，Greensleeves 說由 Phil Pratt 帶進錄音；前者為不具名的泛用簡介，不採用，不寫誰發掘。",
+   "團名與起步：United Reggae 訪談中他自述先與朋友組了 Linkers 和聲團，1968 年向 Coxsone Dodd 試唱後轉為獨唱（訪談前言仍寫 Thrillers）；英文維基與 Greensleeves 寫 The Thrillers；facts 沿用 The Thrillers，不寫 Linkers 與試唱年份。",
+   "〈Gee Baby〉是『第一首 lovers rock』：United Reggae 訪問者轉述『some people call that』，他的 Bandcamp 自介（搜尋摘要）也如此稱呼，但英文維基 Lovers rock 條目把該類型的起源放在 1970 年代倫敦與 Lover's Rock 廠牌，沒有提到他；『第一』類宣稱兩源不足，facts 只寫訪談中的說法並標明出處，不寫成事實。"
+  ],
+  "searches": 5,
+  "failedFetches": 0,
+  "status": "full",
+  "pubIssues": [],
+  "notes": "本次 thin→full 升級補查 5 次（WebSearch 2 次、WebFetch 3 次：United Reggae 2013 訪談、NiceUp〈Last Dance〉評論、英文維基 Lovers rock）。身分沿用原稿，不變（Kingston 牙買加歌手，非 UB40 的 Ali Campbell）。補到的是 sound 的具體製作（Last Dance 與 Junjo Lawes／Roots Radics）與 legacy 的 lovers rock 關聯；legacy 仍沒有後輩點名或機構榮譽，屬偏弱的一格，寫作層寫「代表作加時代轉型」即可，不要寫成地位定論。未收：(1) 他在訪談中自稱 Linval Thompson 時期多數錄音是他自己製作、並促成 Roots Radics 成軍——自述、無他源；(2) Jackie Mittoo 稱他「more original than them」、他自認被低估——自述；(3) 搜尋摘要的 AllMusic「oft-overlooked」、Reggae Museum 與 Pauzeradio 重述維基內容、Bandcamp 自介「mentor to some of Jamaica's most talented」——摘要未開頁或屬自述；(4) 訪談中 14 首英國冠軍的說法（United Reggae）無法核實，不收；(5) 出生地 Three Miles（NiceUp）只此一處，維基寫 Kingston，不寫 Three Miles。在世者：榜單、銷量一律不收。生日 1954 年 8 月 31 日維基、NiceUp、riddimsworld 三處相同但同源，寫作層只寫「1954 年生」。thinIssues：原上線 thin 正文無事實錯誤；「少年時已隨人聲團替 Studio One 錄音」為 1960 年代末，訪談自述 1968 年。"
+ },
+ {
+  "key": "alan licht",
+  "name": "Alan Licht",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Alan Licht 是美國吉他手、作曲家兼作家，1968 年生於紐澤西，在 Vassar 學院主修電影。",
+      "src": "https://en.wikipedia.org/wiki/Alan_Licht",
+      "src2": "https://www.kunstradio.at/BIOS/lichtbio.html",
+      "single": true,
+      "from": "bank"
+     },
+     {
+      "f": "他最早的音樂影響是 Bee Gees 與 Wings 這類主流搖滾；他說想彈吉他是因為看到 Wings Over America 專輯內頁那幅演唱會畫，覺得「好刺激……想成為其中一份子」。",
+      "src": "https://en.wikipedia.org/wiki/Alan_Licht",
+      "single": true,
+      "from": "bank"
+     },
+     {
+      "f": "上學後他迷上 Mission of Burma、Hüsker Dü、Sonic Youth 等龐克與無浪潮樂團；吉他老師送他 Steve Reich 的《Music for 18 Musicians》，他的路線因此定向極簡主義。",
+      "src": "https://en.wikipedia.org/wiki/Alan_Licht",
+      "single": true,
+      "from": "bank"
+     },
+     {
+      "f": "他在 Vassar 時期組了 Love Child，1989 年 10 月在紐約首演、1990 年 2 月登上 CBGB，由 Homestead 唱片簽下；他說自己深受 Rhys Chatham 的〈Guitar Trio〉與 Derek Bailey 影響，也讀 Forced Exposure 這類實驗取向的樂迷誌。",
+      "src": "https://toneglow.substack.com/p/tone-glow-066-alan-licht",
+      "src2": "https://trouserpress.com/reviews/love-child/",
+      "from": "bank"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他的音樂結合流行、噪音、自由爵士與極簡主義，從磁帶循環、噪音吉他（有時用預置吉他）到純粹的流行歌都有。",
+      "src": "https://en.wikipedia.org/wiki/Alan_Licht",
+      "single": true,
+      "from": "bank"
+     },
+     {
+      "f": "獨奏吉他時他混用調弦、延伸技法與 drone 觀念；從 Chatham 那裡學到在指板不同位置製造不同泛音，也常在現場翻唱他人的歌。",
+      "src": "https://toneglow.substack.com/p/tone-glow-066-alan-licht",
+      "single": true,
+      "from": "bank"
+     },
+     {
+      "f": "1994 年 Siltbreeze 發行的《Sink the Aging Process》被 Discogs 歸入極簡、前衛與噪音風格。",
+      "src": "https://www.discogs.com/release/571284",
+      "single": true,
+      "from": "bank"
+     },
+     {
+      "f": "The Absolute Sound 評他的《Havens》：電吉他與原音吉他並用，風格是「催眠式的 drone 與推進式的極簡」，動機緩緩展開再自然消退，質地一層層堆起來。",
+      "src": "https://www.theabsolutesound.com/articles/alan-licht-havens/",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他長期橫跨演奏、寫作與策展：2000 至 2007 年替紐約實驗音樂場館 Tonic 排節目，2007 年出版《Sound Art: Beyond Music, Between Categories》（Rizzoli），另有訪談集《Common Tones》（2021）。",
+      "src": "https://toneglow.substack.com/p/tone-glow-066-alan-licht",
+      "src2": "https://www.kunstradio.at/BIOS/lichtbio.html",
+      "from": "bank"
+     },
+     {
+      "f": "他與 Jim O'Rourke、Rudolph Grey、Loren Mazzacane Connors 等前衛音樂家合作；2007 年 7 月 7 日在布魯克林的 Boredoms 77 Boadrum 演出中擔任第 42 位鼓手。",
+      "src": "https://en.wikipedia.org/wiki/Alan_Licht",
+      "src2": "https://www.kunstradio.at/BIOS/lichtbio.html",
+      "from": "bank"
+     },
+     {
+      "f": "Thurston Moore 製作並發行他的樂團 Blue Humans 的唱片，有時也同台演出。",
+      "src": "https://toneglow.substack.com/p/tone-glow-066-alan-licht",
+      "single": true,
+      "from": "bank"
+     },
+     {
+      "f": "他替 The Wire、Artforum、BOMB 等刊物寫稿；《Common Tones》的出版社 Les presses du réel 稱他是「go-to writer for profiles of adventurous artists across genres」，並說書中連向來難訪的 Lou Reed 也「suitably impressed」。",
+      "src": "https://www.lespressesdureel.com/EN/ouvrage.php?id=8687",
+      "src2": "https://talkhouse.com/alan-licht-and-john-colpitts-talk-the-art-of-the-interview",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "樂手 John Colpitts 在 Talkhouse 稱 Licht「steeped in the history of experimental music in all forms」，說《Common Tones》是對某一路紐約實驗音樂與藝術有興趣的創作者的 essential book，並稱他經手過的 Tonic 是「bastion of experimental music in the Lower East Side」。",
+      "src": "https://talkhouse.com/alan-licht-and-john-colpitts-talk-the-art-of-the-interview",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Love Child 的 Trouser Press 條目寫他原是後來才加入的吉他手兼歌手與鼓手，鼓手位由 Brendan O'Malley 接手後，他才專心彈吉他。",
+      "src": "https://trouserpress.com/reviews/love-child/",
+      "single": true,
+      "from": "bank"
+     }
+    ]
+   }
+  },
+  "milestones": [],
+  "conflicts": [
+   "《Common Tones》收錄的年份：前稿（Tone Glow／kunstradio）寫 1995 至 2020 年，出版社 Les presses du réel 的書目頁寫副題為 Selected interviews with artists and musicians 2000–2020，2021 年 7 月出版、592 頁；兩說不一，facts 只寫書名與 2021 年，不寫收錄年份。"
+  ],
+  "pubIssues": [],
+  "searches": 5,
+  "failedFetches": 1,
+  "status": "full",
+  "notes": "本次 thin→full 升級補查 5 次（WebSearch 2 次、WebFetch 3 次：Talkhouse 專文、Les presses du réel 書目頁、The Absolute Sound 對《Havens》的評論；minimalismore.es 403，不計入）。身分沿用原稿，不變。沿用前稿：出生年 1968 同源，高風險，寫作層寫『1960 年代末』即可。legacy 補到的是寫作／策展面向的行內評價（出版社文案＋樂手 Colpitts 的具名說法，屬低風險單源），沒有後輩點名他的吉他；這也是他份量的真相——他是『橫跨演奏、寫作、策展』的圈內人。未收：(1)『Sound Art 是第一本完整概述』——Talkhouse 與搜尋摘要都這麼說，但有反例可能（Brandon LaBelle《Background Noise》2006、Douglas Kahn《Noise, Water, Meat》1999 等更早的聲音藝術專書），依『第一』類規則不收；(2) 1999 年起固定為 The Wire 撰稿（搜尋摘要）、2019 年增訂版《Sound Art Revisited》（Bloomsbury）——摘要未開頁；(3) Scaruffi 對《Sink the Aging Process》給 6／10，只是個人評分；(4)《Havens》為近年新作（The Absolute Sound，約 2025 年），只作 sound 的旁證，寫作層不必寫。thinIssues：原上線 thin 正文「獨奏時混用調弦、延伸技法與 drone」與 Tone Glow 一致，無錯。"
+ },
+ {
+  "key": "alexander o'neal",
+  "name": "Alexander O'Neal",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Alexander O'Neal 是美國 R&B 歌手，1953 年生於密西西比州 Natchez，在當地讀完高中後進 Alcorn State University。",
+      "src": "https://en.wikipedia.org/wiki/Alexander_O'Neal",
+      "single": true,
+      "from": "bank"
+     },
+     {
+      "f": "他 1970 年代搬到明尼阿波利斯，在 Mystics、Wynd Chymes 等樂團演唱，後來成為 Flyte Tyme 的主唱，團裡有 Monte Moir、Jimmy Jam 與 Terry Lewis。",
+      "src": "https://en.wikipedia.org/wiki/Alexander_O'Neal",
+      "src2": "https://www.thecurrent.org/feature/2018/01/alexander-oneal-releases-ten-early-minneapolis-recordings-and-they-really-cook/",
+      "from": "bank"
+     },
+     {
+      "f": "1980 至 1981 年間，Flyte Tyme 的成員與 Prince、Morris Day 談組 The Time，O'Neal 最後被換下，主唱由 Morris Day 接任。",
+      "src": "https://en.wikipedia.org/wiki/Alexander_O'Neal",
+      "src2": "https://www.thecurrent.org/feature/2018/01/alexander-oneal-releases-ten-early-minneapolis-recordings-and-they-really-cook/",
+      "from": "bank"
+     },
+     {
+      "f": "被換下後，他組了 R&B 樂團 Alexander，在芝加哥獨立廠牌 Erect 發過單曲；1984 年簽進 Clarence Avant 的 Tabu，與 Jimmy Jam、Terry Lewis 合作，1985 年推出首張同名專輯。",
+      "src": "https://en.wikipedia.org/wiki/Alexander_O'Neal",
+      "src2": "https://www.thecurrent.org/feature/2018/01/alexander-oneal-releases-ten-early-minneapolis-recordings-and-they-really-cook/",
+      "from": "bank"
+     },
+     {
+      "f": "他自述抵達 Twin Cities 時給自己十年期限做音樂，做不成就去學開卡車；到明尼阿波利斯後，Jimmy Jam 與 Terry Lewis 邀他加入 Flyte Tyme，之後和 Prince 組成 The Time。他說自己被 Prince 開除，Jam 與 Lewis 後來也被 Prince 開除，但 Prince 最早告訴他們「不只紐約、洛杉磯、芝加哥，明尼阿波利斯也能做出來」。",
+      "src": "https://www.musicradar.com/news/alexander-o-neal-prince-jam-and-lewis",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "MusicRadar 寫，Jam 與 Lewis 被 Prince 逐出後自立門戶當製作人與詞曲人，需要一位歌手簽首張專輯合約時找上了 O'Neal；他自己說，第一首熱門曲出現時他快三十歲，這份閱歷讓他撐過後來的起落。",
+      "src": "https://www.musicradar.com/news/alexander-o-neal-prince-jam-and-lewis",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "與 Jimmy Jam、Terry Lewis 的合作讓他成為 Minneapolis sound 的代表歌手之一。",
+      "src": "https://www.thecurrent.org/feature/2018/01/alexander-oneal-releases-ten-early-minneapolis-recordings-and-they-really-cook/",
+      "single": true,
+      "from": "bank"
+     },
+     {
+      "f": "AllMusic 形容他的嗓音粗礪，質地和音域接近 Otis Redding。",
+      "src": "https://en.wikipedia.org/wiki/Alexander_O'Neal",
+      "single": true,
+      "from": "bank"
+     },
+     {
+      "f": "《Hearsay》以他家中的一場派對為框架，Jam 與 Lewis 用電腦化音色做出被評為 techno-funk 的質感。",
+      "src": "https://en.wikipedia.org/wiki/Hearsay_(album)",
+      "single": true,
+      "from": "bank"
+     },
+     {
+      "f": "Terry Lewis 說：「如果有一位男歌手是我能選來學著唱的，Alex 就是我的人選」（If there was a male vocalist I could choose to sing like, Alex would be my guy）。",
+      "src": "https://www.classicpopmag.com/features/jam-lewis-interview/",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "Terry Lewis 說他快歌、慢歌都能唱，「能 croon、能 swoon……什麼都行」，又說他有風格與優雅；Jimmy Jam 說 O'Neal 是他們最愛的歌手之一，寫歌與製作都很過癮，《Hearsay》裡歌曲之間串場的對白，讓整張專輯像一部電影。",
+      "src": "https://www.songwriteruniverse.com/jimmy-jam-terry-lewis-interview-2021/",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他在英國的主流成績比在美國更大。",
+      "src": "https://en.wikipedia.org/wiki/Alexander_O'Neal",
+      "single": true,
+      "from": "bank",
+      "src2": "https://www.classicpopmag.com/features/jam-lewis-interview/"
+     },
+     {
+      "f": "Terry Lewis 認為 O'Neal 常被排除在許多討論之外，只因他沒出現在對的場合、也不太經營人脈；他說在 Luther Vandross 當道的年代，除了英國之外，肯定多半歸 Vandross。",
+      "src": "https://www.classicpopmag.com/features/jam-lewis-interview/",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "Popdose 把他放進老派靈魂吼唱的傳統，稱〈Fake〉與〈Criticize〉成了舞池經典，至今他在英國仍有穩定的支持者。",
+      "src": "https://popdose.com/?p=91119",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [],
+  "conflicts": [
+   "被換下原因：英文維基寫 Prince 認為他『太黑』，The Current 寫是與 Prince 等人的財務歧見；兩源不一致，facts 只寫『被換下、由 Morris Day 接任』，不寫原因。",
+   "被換下原因再添一說：Terry Lewis（Classic Pop）說 O'Neal『個性太大，跟 Prince 注定處不來』，他自己（MusicRadar）說被開除但不懷怨；與英文維基『太黑』、The Current『財務歧見』並列四種說法，facts 仍只寫被換下、不寫原因。"
+  ],
+  "pubIssues": [],
+  "searches": 8,
+  "failedFetches": 4,
+  "status": "full",
+  "notes": "本次 thin→full 升級補查 8 次（WebSearch 4 次、WebFetch 4 次：Popdose、MusicRadar（頁面被截斷，改用 curl 取全文）、Classic Pop 的 Jam & Lewis 訪談、Songwriter's Universe 的 Jam & Lewis 訪談；搜尋 2 次落空（First Avenue 星星兩源仍查不到，維基單源不收）；MusicRadar 首次抓取只取得被截斷的頁面、KGW 與 Rock's Backpages 未開，失敗請求共 4 次不計入）。身分沿用原稿，不變。這一輪補到的最大價值是 Terry Lewis 與 Jimmy Jam 的具名說法（Lewis 兩處訪談）與 O'Neal 自己的 MusicRadar 專訪，足以支撐 sound 與 legacy 兩格。在世者：英國單曲與專輯成績、認證倍數（維基稱 Hearsay 在英國 3 倍白金）一律不收；Popdose 的 platinum 說法也不收。未收：Popdose 稱他是 Teddy Pendergrass 的『worthy successor』——評論者形容詞；Rock's Backpages 轉述 1991 年 Rolling Stone 稱他是 adult-soul champ——摘要、未開頁；他的古柯鹼成癮與後期生活（MusicRadar、Popdose 都提）依在世者避免項不收；First Avenue 外牆星星（維基單源）仍不收。『Hearsay 以家中派對為框架』的說法沿用前稿維基單源。thinIssues：原上線 thin 正文『據說…粗礪的嗓音質地近於 Otis Redding』來自 AllMusic 經維基轉引，MusicRadar 內他自述早年覺得自己的聲音『太鼻音』，正文可保留『據說』。"
+ },
+ {
+  "key": "alfred panou & art ensemble of chicago",
+  "name": "Alfred Panou & Art Ensemble of Chicago",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Alfred Panou 是貝南與多哥混血出身的演員與詩人，演過政治劇場，1967 年出現在 Jean-Luc Godard 的電影《Week-end》。",
+      "src": "https://oye-records.com/releases/alfred-panou-the-art-ensemble-of-chicago-je-suis-un-sauvage",
+      "single": true,
+      "from": "bank"
+     },
+     {
+      "f": "在 Saravah 廠牌創辦人兼製作人 Pierre Barouh 的推動下，Panou 把兩篇談黑人權力的文字錄成唱片，請 Art Ensemble of Chicago 伴奏。",
+      "src": "https://oye-records.com/releases/alfred-panou-the-art-ensemble-of-chicago-je-suis-un-sauvage",
+      "single": true,
+      "from": "bank"
+     },
+     {
+      "f": "Art Ensemble of Chicago 起於 1966 年 Roscoe Mitchell 在芝加哥組成的小型「art ensembles」，是從 AACM（Association for the Advancement of Creative Musicians）圈子裡長出來的前衛爵士團體。",
+      "src": "https://www.britannica.com/topic/Art-Ensemble-of-Chicago",
+      "src2": "https://en.wikipedia.org/wiki/Art_Ensemble_of_Chicago",
+      "from": "bank"
+     },
+     {
+      "f": "團員是 Roscoe Mitchell（木管）、Malachi Favors（貝斯）、Lester Bowie（小號）、Joseph Jarman（木管），Don Moye（打擊）在 1969 至 1971 年間加入。",
+      "src": "https://www.britannica.com/topic/Art-Ensemble-of-Chicago",
+      "single": true,
+      "from": "bank"
+     },
+     {
+      "f": "樂評也把 Panou 稱為「法國與非洲背景的演員」，出現在 Godard 的演員群裡。",
+      "src": "https://monolithcocktail.com/2022/07/page/2/",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "Art Ensemble 1966 年由 Roscoe Mitchell 組成六重奏起家，同年 8 月錄下《Sound》；1969 年 5 月成員改為平等合夥、去掉 Mitchell 的名字，巴黎的演出商把他們掛成「The Art Ensemble, of Chicago」，團名就此定下。",
+      "src": "https://daily.bandcamp.com/features/art-ensemble-of-chicago-feature",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "這張 1969 年的錄音是 Saravah 發行的 7 吋單曲：Panou 以法語朗讀兩篇文字〈Je suis un sauvage〉與〈Le moral nécessaire〉，Art Ensemble of Chicago 以多樂器即興伴奏。",
+      "src": "https://oye-records.com/releases/alfred-panou-the-art-ensemble-of-chicago-je-suis-un-sauvage",
+      "src2": "https://musicbrainz.org/release-group/0b3f3044-43c0-4486-b3d5-4945a6c2db79",
+      "from": "bank"
+     },
+     {
+      "f": "Art Ensemble of Chicago 的樂手各自兼奏大量樂器與「小樂器」：鈴、腳踏車喇叭、派對用的吵鬧玩具、風鈴與各種打擊，演出時穿戲服、畫臉彩，聽覺與視覺並重。",
+      "src": "https://en.wikipedia.org/wiki/Art_Ensemble_of_Chicago",
+      "src2": "https://www.britannica.com/topic/Art-Ensemble-of-Chicago",
+      "from": "bank"
+     },
+     {
+      "f": "他們稱自己的音樂為「Great Black Music」，在自由爵士的主流之外自成一路，即興時自由改變速度、力度與質地。",
+      "src": "https://www.britannica.com/topic/Art-Ensemble-of-Chicago",
+      "single": true,
+      "from": "bank"
+     },
+     {
+      "f": "WEWANTSOUNDS 2022 年的合輯《Pierre Barouh And The Saravah Sound》收了這首〈Je suis un sauvage〉；樂評形容 Panou 是「從酒館滾進來」，進錄音室時 Art Ensemble 正好因前一場錄音已架好設備，便在銅管與西非式搖擺節奏的伴奏下，聽來像一場叢林節拍的激烈即席朗誦。",
+      "src": "https://monolithcocktail.com/2022/07/page/2/",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "同一篇樂評說，Art Ensemble 在 Saravah 錄音室待得夠久，幾乎成了非正式的駐店樂團，替好幾位藝人做前衛式的伴奏。",
+      "src": "https://monolithcocktail.com/2022/07/page/2/",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Art Ensemble of Chicago 的國際聲名始於 1969 至 1971 年在歐洲的密集錄音與巡演；1969 年在歐洲演出時，用上了五百件樂器。",
+      "src": "https://www.britannica.com/topic/Art-Ensemble-of-Chicago",
+      "src2": "https://en.wikipedia.org/wiki/Art_Ensemble_of_Chicago",
+      "from": "bank"
+     },
+     {
+      "f": "Britannica 稱他們的作品影響了音色、流動節奏、結構與自由爵士抒情性的探索。",
+      "src": "https://www.britannica.com/topic/Art-Ensemble-of-Chicago",
+      "single": true,
+      "from": "bank"
+     },
+     {
+      "f": "樂團 2017 年以一系列音樂會慶祝成軍五十週年，並在 2019 年發行回顧雙專輯《We Are on the Edge》。",
+      "src": "https://www.britannica.com/topic/Art-Ensemble-of-Chicago",
+      "single": true,
+      "from": "bank"
+     },
+     {
+      "f": "Art Ensemble 約 1969 年起移居巴黎，租農舍排練、在歐洲兩年左右大量錄音；1971 年底帶著國際聲名回到美國，成為 AACM 的旗艦樂團。",
+      "src": "https://daily.bandcamp.com/features/art-ensemble-of-chicago-feature",
+      "src2": "https://www.britannica.com/topic/Art-Ensemble-of-Chicago",
+      "from": "new"
+     },
+     {
+      "f": "Wadada Leo Smith 稱樂團 1966 年的《Sound》是 20 世紀最重要的音樂作品之一；大提琴手 Tomeka Reid 說，世界各地不少音樂人與樂團受過他們影響；Mitchell 說樂團能撐下來，是因為它是一個集體。",
+      "src": "https://daily.bandcamp.com/features/art-ensemble-of-chicago-feature",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1969 年 10 月，這張 7 吋單曲以 Alfred Panou 與 Art Ensemble of Chicago 共同掛名，由 Saravah 在法國發行。",
+      "src": "https://musicbrainz.org/release-group/0b3f3044-43c0-4486-b3d5-4945a6c2db79",
+      "src2": "https://oye-records.com/releases/alfred-panou-the-art-ensemble-of-chicago-je-suis-un-sauvage",
+      "from": "bank"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "1966 年 Roscoe Mitchell 在芝加哥組成 Art Ensemble 的前身。",
+    "src": "https://www.britannica.com/topic/Art-Ensemble-of-Chicago",
+    "src2": "https://www.wikidata.org/wiki/Q705530",
+    "from": "bank"
+   },
+   {
+    "f": "1969 年 Panou 與 Art Ensemble of Chicago 在 Saravah 出版 7 吋單曲。",
+    "src": "https://musicbrainz.org/release-group/0b3f3044-43c0-4486-b3d5-4945a6c2db79",
+    "src2": "https://oye-records.com/releases/alfred-panou-the-art-ensemble-of-chicago-je-suis-un-sauvage",
+    "from": "bank"
+   }
+  ],
+  "conflicts": [
+   "移居巴黎的年份：Bandcamp Daily（Michael J. West，2019）寫 1969 年赴法，維基 Art Ensemble 條目寫 1968 年秋在 Evanston 告別演出後赴巴黎；Britannica 記國際聲名始於 1969 至 1971 年歐洲巡演。三處不一，facts 寫『約 1969 年起』；Don Moye 加入年份維基寫 1970，Britannica 寫 1969 至 1971 年間，facts 不寫確切年。"
+  ],
+  "searches": 7,
+  "failedFetches": 3,
+  "status": "full",
+  "pubIssues": [],
+  "notes": "本次 thin→full 升級補查 7 次（WebSearch 4 次、WebFetch 3 次：Monolith Cocktail 對 Saravah 合輯的樂評、英文維基 Art Ensemble of Chicago、Bandcamp Daily 2019 專文；英文維基 Week End 演員表未列 Panou、法文維基 404、IMDb 403，不計入，共 3 次）。身分沿用原稿，不變。⚠ 寫作層注意：Panou 的獨立來源仍極少。Godard《Week-end》出演只有廠牌文案（Oye）單源，英文維基演員表沒列他，Monolith Cocktail 只說他『notably in Godard's ensemble』，故正文要保留『據說』或寫成『出現在 Godard 的電影班底裡』；貝南與多哥混血、政治劇場經歷同為廠牌文案單源（前稿）。legacy 與 sound 的實質內容主要在 Art Ensemble 一方（Bandcamp Daily、Britannica、維基），不是 Panou；寫作層寫成『Panou 是誰（含出處限制）＋這個團是誰＋這張 7 吋單曲兩邊各做什麼』。未收：Souffle Continu 2019 年首度重發 2000 張（零售文案）、『早於 1971 年 Last Poets』（零售單源）、Les Stances à Sophie（1970 年）被 Cinematic Orchestra 等翻唱（搜尋摘要，且是另一張專輯）、15 張專輯（Bandcamp Daily 單源數字）、『非正式駐店樂團』外的其他 Monolith 評語。thinIssues：原上線 thin 正文『據說是貝南與多哥混血，演過政治劇場，也在 Godard 的電影《Week-end》裡露面』來源為廠牌文案單源，口吻已有『據說』，維持即可；『1969 年』錄音：MusicBrainz 首發 1969 年 10 月。"
+ }
+]
