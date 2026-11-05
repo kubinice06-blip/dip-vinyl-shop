@@ -142,7 +142,8 @@
     if (!autoplayConsent) {
       // 開關本來就關、只是手動放行這一首：被串流搶走就停，偏好不用動。
       if (manualPass) {
-        try { stop(); } catch (_) {}
+        // stop() 只停試聽，context 還在（iOS 是 'interrupted'），切回分頁時 WebKit 會自動恢復它、再把串流停掉。
+        releaseAudio();
         if (Date.now() - lastManualPlayAt < MANUAL_PLAY_GRACE_MS) revokeListeners.forEach(listener => { try { listener({ reason, kept: true }); } catch (_) {} });
       }
       return false;
@@ -153,7 +154,8 @@
     // 使用者看到的就是「按了播放沒反應、開關還自己關掉」（2026-10-18 店主回報）。
     // 寬限內只停這一次、偏好不動，提示改成請他再按一次播放。
     if (Date.now() - lastManualPlayAt < MANUAL_PLAY_GRACE_MS) {
-      try { stop(); } catch (_) {}
+      // 同上：寬限內也要連 context 一起關（2026-11-05 店主：「按串流連結去聽歌，換回網頁時串流就停了」）
+      releaseAudio();
       revokeListeners.forEach(listener => { try { listener({ reason, kept: true }); } catch (_) {} });
       return false;
     }
@@ -629,6 +631,23 @@
       } catch (_) {}
     }, holdMs || 8000);
   }
+
+  // 2026-11-05 店主：「玩選歌遊戲按串流連結去聽歌，換回網頁時串流就停了」。
+  // 按串流按鈕＝明確要去聽串流。當下就把音訊整個交還（停試聽、靜音 keep-alive、關 AudioContext），
+  // 並把這次造訪的自動試聽關掉（同「偵測到串流」）。少了前者，正在播的試聽或剛按過播放的 context
+  // 會在切回分頁時被 WebKit 自動恢復；少了後者，切回來一碰轉輪、抽卡，自動試聽又搶走焦點。
+  // 要再聽試聽：按 🔊 或播放鍵（手勢內重建）。
+  const STREAM_LINK = 'a.streaming-btn[href], a[data-apple-artist], a[href*="open.spotify.com"], a[href*="music.apple.com"], a[href*="music.youtube.com"], a[href*="bandcamp.com"], a[href^="spotify:"], a[href^="music:"]';
+  function leaveForStream() {
+    const wasOn = autoplayConsent || readAutoplayMemory() !== 'off';
+    setAutoplayPreference(false);   // 內含 releaseAudio()
+    if (wasOn) revokeListeners.forEach(listener => { try { listener({ reason: 'stream-link' }); } catch (_) {} });
+  }
+  document.addEventListener('click', event => {
+    const link = event.target?.closest?.(STREAM_LINK);
+    if (!link || link.hasAttribute('disabled')) return;
+    try { leaveForStream(); } catch (_) {}
+  }, true);
 
   // 切到別的 App／別的分頁而我們沒在播 → 沒有理由再佔著音訊焦點。
   document.addEventListener('visibilitychange', () => {
