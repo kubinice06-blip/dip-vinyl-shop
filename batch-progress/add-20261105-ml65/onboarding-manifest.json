@@ -1,0 +1,676 @@
+{
+ "schemaVersion": 1,
+ "batch": "2026-10-20-ml65",
+ "batchNote": "薄細項策展線（add-20261105-ml65）",
+ "createdAt": "2026-11-05T02:11:42Z",
+ "albums": [
+  {
+   "artist": "Sun Glitters",
+   "album": "Everything Could Be Fine",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "8e473459-fd88-42ac-8d3f-75b904c22283",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "暖 electronica／ambient pop：盧森堡 Victor Ferreira 首作，chillwave 後的暖 electronica 代表：溫暖低音旋律＋變調人聲，軟焦夢遊感，暖慢包覆落恍惚｜⚠ Bandcamp 文字稱 warm bass、soft-focus club sleepwalker；x 看碎拍密度，部分曲 dense beatwork｜MB release-group 8e473459-fd88-42ac-8d3f-75b904c22283：title「Everything Could Be Fine」、Album、first-release-date 2011-03-11、artist-credit「Sun Glitters」。證據：https://musicbrainz.org/release-group/8e473459-fd88-42ac-8d3f-75b904c22283 https://coverartarchive.org/release-group/8e473459-fd88-42ac-8d3f-75b904c22283 https://sunglitters.bandcamp.com/album/everything-could-be-fine https://www.discogs.com/master/340617",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2011,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic",
+    "downtempo"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/8e473459-fd88-42ac-8d3f-75b904c22283/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-05T02:11:42Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-05 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 34245,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-05T02:11:42Z",
+    "note": "機器基線 3/3/3（Last.fm listeners 34245）；主線：§0.8.1 人工錨點：經典度 3（場景二線穩定作品，非藝人首要代表作）；冷門度 3（當代場景主力廠或正規廠發行即上串流，listeners 2–7 萬）；硬蕊度 2（暖 electronica／ambient pop，主流易聽、有一點門檻，無失真無嘶吼）"
+   },
+   "rarity": "common",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "盧森堡製作人把變調人聲埋進合成器雲裡。用過 Sug(r)cane 這個名字的 Victor Ferreira，改以 Sun Glitters 為錄音名義，第一張專輯在 2011 年 3 月由他自己發行。旋律的主體是變調的人聲取樣與幽靈似的合成合唱，碎拍時而稠密、時而放鬆，底下托著溫暖的貝斯線，落在 downtempo 與 wonky beats 之間。〈Too Much to Lose〉裡，人聲在厚重的合成器雲層中忽隱忽現。",
+    "sourceUrls": [
+     "https://sunglitters.bandcamp.com/album/everything-could-be-fine",
+     "https://musicbrainz.org/release-group/8e473459-fd88-42ac-8d3f-75b904c22283",
+     "https://www.discogs.com/release/3213720",
+     "https://www.bbc.co.uk/music/reviews/5g5c"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/6c/85/4f/6c854f64-076f-9057-44ca-c672f1b52be6/mzaf_15943899172809169713.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-11-05T02:11:42Z",
+    "appleCollectionId": "1191808724",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1191808724「Sun Glitters《Everything Could Be Fine》」：曲目 8/8 對上 MB 原盤（Apple 共 8 軌），取第 1 軌〈Beside Me〉。主線 2026-11-05 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Hiatus",
+   "album": "Parklands",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "0f8dc568-ae71-4020-b231-c50b45741a43",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "暖 electronica／ambient pop：伊朗裔英國製作人 Cyrus Shahrad 的電影感 electronica，Discogs 標 Downtempo＋Ambient：弦樂取樣與緩拍、霧狀墊底，暖慢落恍惚｜⚠ 無專屬樂評；Hiatus 常被形容 melancholic，z 可能落中性；同人《Ghost Notes》標 Drum n Bass 故不提｜MB release-group 0f8dc568-ae71-4020-b231-c50b45741a43：title「Parklands」、Album、first-release-date 2013-05-13、artist-credit「Hiatus」。證據：https://musicbrainz.org/release-group/0f8dc568-ae71-4020-b231-c50b45741a43 https://coverartarchive.org/release-group/0f8dc568-ae71-4020-b231-c50b45741a43 https://www.discogs.com/master/601973 https://hiatusmusic.bandcamp.com/",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2013,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic",
+    "downtempo"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/0f8dc568-ae71-4020-b231-c50b45741a43/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-05T02:11:42Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-05 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 2,
+    "accessibility": 2,
+    "listeners": 130627,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-05T02:11:42Z",
+    "note": "機器基線 3/2/3（Last.fm listeners 130627）；主線：§0.8.1 人工錨點：經典度 3（場景二線穩定作品，非藝人首要代表作）；冷門度 2（Lo Recordings 正規發行、listeners 13 萬）；硬蕊度 2（暖 electronica／ambient pop，主流易聽、有一點門檻，無失真無嘶吼）"
+   },
+   "rarity": "common",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 2、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "一張回望父親故鄉的電子專輯。Hiatus 是倫敦電子音樂人 Cyrus Shahrad 的化名，他的母親是英國人、父親是伊朗人，他用音樂探索自己的伊朗血統，以及父親記憶中革命前的伊朗。《Parklands》2013 年 5 月 13 日由 Lucky Thunder 發行，弦樂、鋼琴與細緻的電子華爾滋交織，曲名〈Iran Air〉連著旅程與返鄉。",
+    "sourceUrls": [
+     "https://api.discogs.com/artists/2187860",
+     "https://scenepointblank.com/features/interviews/hiatus",
+     "https://hiatusmusic.bandcamp.com/album/parklands",
+     "https://www.godisinthetvzine.co.uk/2012/12/19/hiatus-music-free-download/",
+     "https://www.discogs.com/master/601973",
+     "https://musicbrainz.org/release-group/0f8dc568-ae71-4020-b231-c50b45741a43"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/55/e5/4d/55e54d96-d875-b617-d684-c310268462e6/mzaf_14278394997825185912.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-11-05T02:11:42Z",
+    "appleCollectionId": "966952541",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 966952541「Hiatus《Parklands》」：曲目 11/11 對上 MB 原盤（Apple 共 11 軌），取第 1 軌〈We Can Be Ghosts Now〉。主線 2026-11-05 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "John Beltran",
+   "album": "Ten Days of Blue",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "e6549403-ec5c-3acc-8c0a-40a599d5c244",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "暖 electronica／ambient pop：底特律 John Beltran 的暖 ambient techno 經典（Peacefrog）：長合成墊、柔拍、溫潤旋律，Detroit 系最暖的一張｜⚠ ml61 教訓：ambient techno 無錨點易判輕／判冷；Beltran 以暖著稱但部分曲有四拍，x、y 皆需研究層確認｜MB release-group e6549403-ec5c-3acc-8c0a-40a599d5c244：title「Ten Days of Blue」、Album、first-release-date 1996、artist-credit「John Beltran」。證據：https://musicbrainz.org/release-group/e6549403-ec5c-3acc-8c0a-40a599d5c244 https://coverartarchive.org/release-group/e6549403-ec5c-3acc-8c0a-40a599d5c244 https://www.discogs.com/master/26665 https://www.allmusic.com/album/mw0000230829",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1996,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "cover": {
+    "source": "apple-verified-collection",
+    "url": "https://is1-ssl.mzstatic.com/image/thumb/Music/0f/71/17/mzi.akmrning.tif/600x600bb.jpg",
+    "appleCollectionId": "260240898",
+    "note": "CAA release-group front-250 回 500（2026-11-05 實測）；取 Apple us 260240898《Ten Days of Blue》1996 官方封面（曲目 7/9 對上 MB 原盤；HTTP 200 image/jpeg）；主線 2026-11-05 目視與盤名相符（紅花藍底、盤名字樣）。",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-05T02:11:42Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 23418,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-05T02:11:42Z",
+    "note": "機器基線 3/3/3（Last.fm listeners 23418）；主線：§0.8.1 人工錨點：經典度 4（Beltran 代表作、Peacefrog 1996，ambient techno 回顧常列）；冷門度 3（當代場景主力廠或正規廠發行即上串流，listeners 2–7 萬）；硬蕊度 2（暖 electronica／ambient pop，主流易聽、有一點門檻，無失真無嘶吼）"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 4、obscurity 3、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "內頁一句題詞，把整張說成一幅夢的拼貼。John Beltran 1969 年生於密西根州蘭辛，早期在 Carl Craig 的 Retroactive 廠牌發片；署名 Billy Lopez 的那段題詞寫道，他拚命尋找生命的顏色，帶回這一幅夢的拼貼。英國廠牌 Peacefrog 在 1996 年推出，目錄號 PF049，9 首約 59 分鐘，其中 8 首超過 6 分鐘。曲風屬於 ambient techno，長長的合成墊上浮著輕盈、帶新世紀色彩的旋律。",
+    "sourceUrls": [
+     "https://api.discogs.com/artists/5881",
+     "https://ra.co/news/42358",
+     "https://www.allmusic.com/album/mw0000230829",
+     "https://www.discogs.com/release/35278",
+     "https://musicbrainz.org/release-group/e6549403-ec5c-3acc-8c0a-40a599d5c244",
+     "https://de.ra.co/news/42370",
+     "https://www.discogs.com/master/26665"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/a7/a5/cf/a7a5cfe8-795b-bb95-69c1-cfed20c3256d/mzaf_17395309099011509637.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-11-05T02:11:42Z",
+    "appleCollectionId": "260240898",
+    "storefront": "US",
+    "collectionExplicitness": "cleaned",
+    "note": "Apple us 260240898「John Beltran《Ten Days of Blue》」：曲目 7/9 對上 MB 原盤（Apple 共 9 軌），取第 1 軌〈Flex〉。主線 2026-11-05 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Vondelpark",
+   "album": "Seabed",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "0442cd7d-070c-409d-b93a-5553d00b0ab0",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "暖 electronica／ambient pop：倫敦三人組在 R&S 的首張：慢 R&B 拍、磁帶般糊的吉他與濾波人聲，bedroom 電子靈魂的霧暖｜⚠ 樂團帶吉他，genres 可能有人主張 rock；z 有憂鬱成分可能偏中性｜MB release-group 0442cd7d-070c-409d-b93a-5553d00b0ab0：title「Seabed」、Album、first-release-date 2013-03-29、artist-credit「Vondelpark」。證據：https://musicbrainz.org/release-group/0442cd7d-070c-409d-b93a-5553d00b0ab0 https://coverartarchive.org/release-group/0442cd7d-070c-409d-b93a-5553d00b0ab0 https://www.discogs.com/master/540594 https://www.bbc.co.uk/music/reviews/p6b6",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2013,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic",
+    "soul"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/0442cd7d-070c-409d-b93a-5553d00b0ab0/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-05T02:11:42Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-05 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 57566,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-05T02:11:42Z",
+    "note": "機器基線 3/3/3（Last.fm listeners 57566）；主線：§0.8.1 人工錨點：經典度 4（Vondelpark 首張、R&S 發行，藝人代表作）；冷門度 3（當代場景主力廠或正規廠發行即上串流，listeners 2–7 萬）；硬蕊度 2（暖 electronica／ambient pop，主流易聽、有一點門檻，無失真無嘶吼）"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 4、obscurity 3、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "倫敦三人團把舞曲的成分幾乎全拿掉了。核心 Lewis Rainsbury 一人包辦人聲、製作、貝斯、吉他與鍵盤，Vondelpark 早期的作品還帶著 UK garage 的痕跡，這回他想做的是一張真正的唱片，而不是 house 唱片。R&S Records 2013 年替他們出版首張專輯，收 10 首、長約 44 分鐘，混音交給 Mark Brydon。輕刷的慢鼓、液態般的吉他與厚實的風琴，襯著經電子處理的嗓音，整體慢、霧、漂浮。",
+    "sourceUrls": [
+     "https://stereophile.com/content/vondelpark-california-analog-dream",
+     "https://musicbrainz.org/release-group/0442cd7d-070c-409d-b93a-5553d00b0ab0",
+     "https://ra.co/reviews/12715",
+     "https://www.discogs.com/release/4441099",
+     "https://beatsperminute.com/album-review-vondelpark-seabed/"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview112/v4/d1/d7/69/d1d76930-2e35-ebcb-f752-61a3b6570fe6/mzaf_2374364348158228369.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-11-05T02:11:42Z",
+    "appleCollectionId": "1631543795",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1631543795「Vondelpark《Seabed》」：曲目 10/10 對上 MB 原盤（Apple 共 10 軌），取第 1 軌〈Quest〉。主線 2026-11-05 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Ana Roxanne",
+   "album": "Because of a Flower",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "105a18cf-b7b8-4d5c-b16e-ab14e22e1169",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "hypnagogic／lo-fi 暖 ambient 器樂電子：Leaving Records 出身的 Ana Roxanne 在 Kranky 的首張全長：無鼓，長殘響人聲與合成墊，新世紀式暖霧，催眠下沉｜⚠ 樂評常提 melancholy／intersex 身分題材，z 可能偏中性；ambient 人聲盤（Barwick）池中判輕，y 需確認殘響夠厚｜MB release-group 105a18cf-b7b8-4d5c-b16e-ab14e22e1169：title「Because of a Flower」、Album、first-release-date 2020-11-13、artist-credit「Ana Roxanne」。證據：https://musicbrainz.org/release-group/105a18cf-b7b8-4d5c-b16e-ab14e22e1169 https://coverartarchive.org/release-group/105a18cf-b7b8-4d5c-b16e-ab14e22e1169 https://www.discogs.com/master/1839586 https://anaroxanne.bandcamp.com/album/because-of-a-flower",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2020,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/105a18cf-b7b8-4d5c-b16e-ab14e22e1169/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-05T02:11:42Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-05 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": 74924,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-05T02:11:42Z",
+    "note": "機器基線 3/3/3（Last.fm listeners 74924）；主線：§0.8.1 人工錨點：經典度 4（Ana Roxanne 首張正式專輯、Kranky，藝人代表作）；冷門度 3（當代場景主力廠或正規廠發行即上串流，listeners 2–7 萬）；硬蕊度 3（無拍 ambient、長音殘響，需要投入）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 4、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "盤名裡那朵花，連著她 18 歲那年的發現。Ana Roxanne 在洛杉磯錄音，做的是新世紀與 ambient 交界的音樂；她 18 歲時得知自己是雙性人，蘭花後來成了她所屬社群的象徵。2020 年 11 月 13 日交給 Kranky 發行，是她的首張全長專輯，收錄 7 首、合計約 39 分鐘，人聲、多數樂器與錄音都由她自己來。〈Take the Thorn, Leave the Rose〉的鋼琴旋律，取自巴赫的〈C 大調前奏曲〉。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Because_of_a_Flower_(album)",
+     "https://www.discogs.com/master/1839586",
+     "https://beatsperminute.com/album-review-ana-roxanne-because-of-a-flower/",
+     "https://freq.org.uk/?p=24101",
+     "https://www.discogs.com/release/16209284",
+     "https://anaroxanne.bandcamp.com/album/because-of-a-flower",
+     "https://musicbrainz.org/release-group/105a18cf-b7b8-4d5c-b16e-ab14e22e1169"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d3/20/82/d3208226-90c4-8afe-6a7f-f4e0a5ffbcdc/mzaf_14097530826373326160.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-11-05T02:11:42Z",
+    "appleCollectionId": "1530605436",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1530605436「Ana Roxanne《Because of a Flower》」：曲目 6/7 對上 MB 原盤（Apple 共 7 軌），取第 1 軌〈Untitled〉。主線 2026-11-05 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Khotin",
+   "album": "Beautiful You",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "2ae8620b-8c7a-45d4-b1a1-5f3da447494c",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "hypnagogic／lo-fi 暖 ambient 器樂電子：Edmonton 製作人 Khotin 的 lo-fi ambient 成名作（BPM 稱他自本作起建立名聲）：磁帶嘶聲、柔 ambient 墊、零星軟拍，懷舊暖｜⚠ 無專屬樂評；y 貼 0.9，lo-fi 若偏乾淨可能判輕｜MB release-group 2ae8620b-8c7a-45d4-b1a1-5f3da447494c：title「Beautiful You」、Album、first-release-date 2018-07-03、artist-credit「Khotin」。證據：https://musicbrainz.org/release-group/2ae8620b-8c7a-45d4-b1a1-5f3da447494c https://coverartarchive.org/release-group/2ae8620b-8c7a-45d4-b1a1-5f3da447494c https://www.discogs.com/master/1388251 https://en.wikipedia.org/wiki/Khotin_(musician)",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2018,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/2ae8620b-8c7a-45d4-b1a1-5f3da447494c/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-05T02:11:42Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-05 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 64989,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-05T02:11:42Z",
+    "note": "機器基線 3/3/3（Last.fm listeners 64989）；主線：§0.8.1 人工錨點：經典度 4（Khotin 成名作（Ghostly 重發），藝人代表作）；冷門度 3（當代場景主力廠或正規廠發行即上串流，listeners 2–7 萬）；硬蕊度 2（暖 electronica／ambient pop，主流易聽、有一點門檻，無失真無嘶吼）"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 4、obscurity 3、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "自己放上網的專輯，隔年被 Ghostly 壓成黑膠。來自加拿大艾德蒙頓的 Dylan Khotin-Foote 以 Khotin 為藝名，2014 年用《Hello World》出道。《Beautiful You》2018 年 7 月 3 日先以數位上架，掛的是自家的 Khotin Industries，一年後才由 Ghostly International 重發成黑膠。音色溫暖、帶著褪色感，〈Water Soaked In Forever〉以手鼓般的輕敲撐起脈動。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Khotin_(musician)",
+     "https://www.discogs.com/master/1388251",
+     "https://thequietus.com/?p=26320",
+     "https://bleep.com/release/104778-khotin-beautiful-you",
+     "https://chaindlk.com/reviews/10886",
+     "https://musicbrainz.org/release-group/2ae8620b-8c7a-45d4-b1a1-5f3da447494c"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/52/fd/86/52fd8608-eafb-008f-408e-0542fb3cef98/mzaf_18399827548201494346.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-11-05T02:11:42Z",
+    "appleCollectionId": "1451235592",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1451235592「Khotin《Beautiful You》」：曲目 10/10 對上 MB 原盤（Apple 共 10 軌），取第 1 軌〈Welcome〉。主線 2026-11-05 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Khotin",
+   "album": "Finds You Well",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "d922f2f8-e96a-4f2e-8343-95c2b0102183",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "hypnagogic／lo-fi 暖 ambient 器樂電子：Khotin 在 Ghostly 的首張，Ghostly 暖盤：ambient＋downtempo，柔墊與輕拍、懷舊暖霧｜⚠ BPM 2023 評同人後作稱 searching nostalgia；本作無抓到原文樂評｜MB release-group d922f2f8-e96a-4f2e-8343-95c2b0102183：title「Finds You Well」、Album、first-release-date 2020-09-25、artist-credit「Khotin」。證據：https://musicbrainz.org/release-group/d922f2f8-e96a-4f2e-8343-95c2b0102183 https://coverartarchive.org/release-group/d922f2f8-e96a-4f2e-8343-95c2b0102183 https://www.discogs.com/master/1810726 https://ghostly.com/releases/finds-you-well",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2020,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/d922f2f8-e96a-4f2e-8343-95c2b0102183/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-05T02:11:42Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-05 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 40526,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-05T02:11:42Z",
+    "note": "機器基線 3/3/3（Last.fm listeners 40526）；主線：§0.8.1 人工錨點：經典度 3（場景二線穩定作品，非藝人首要代表作）；冷門度 3（當代場景主力廠或正規廠發行即上串流，listeners 2–7 萬）；硬蕊度 2（暖 electronica／ambient pop，主流易聽、有一點門檻，無失真無嘶吼）"
+   },
+   "rarity": "common",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "整張拿掉底鼓，節拍歪斜得有點思鄉。加拿大電子音樂人 Khotin 2020 年交出這張，是他在 Ghostly International 頭一張全新專輯。節奏改由 breakbeat 擔綱，聽來略微不穩。開場的〈Processing〉是搖晃的管風琴式合成器，〈Groove 32〉帶著手鼓、滑順的 yacht-rock 式貝斯與陽光感，〈Outside In The Light〉則夾進像語音留言的取樣。",
+    "sourceUrls": [
+     "https://www.discogs.com/master/1810726",
+     "https://www.vinylchapters.com/khotin-finds-you-well-album-review",
+     "https://bleep.com/release/198910-khotin-finds-you-well",
+     "https://musicbrainz.org/release-group/d922f2f8-e96a-4f2e-8343-95c2b0102183"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/50/2d/71/502d7130-ae93-ea0d-5ebf-ea93a7fb7fa9/mzaf_17605642002159721339.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-11-05T02:11:42Z",
+    "appleCollectionId": "1523572060",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1523572060「Khotin《Finds You Well》」：曲目 10/10 對上 MB 原盤（Apple 共 10 軌），取第 1 軌〈Processing〉。主線 2026-11-05 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Seahawks",
+   "album": "Eyes of the Moon",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "13caac4c-e997-4c52-b35b-82129a746359",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "hypnagogic／lo-fi 暖 ambient 器樂電子：Seahawks 在 Cascine 的專輯：Vehlinggo 評 warm, glistening synths、hazy dreamlike textures、engaging downtempo rhythms｜⚠ MB 另有重複 rg a04d73d4（無 CAA），取 13caac4c｜MB release-group 13caac4c-e997-4c52-b35b-82129a746359：title「Eyes of the Moon」、Album、first-release-date 2019-03-15、artist-credit「Seahawks」。證據：https://musicbrainz.org/release-group/13caac4c-e997-4c52-b35b-82129a746359 https://coverartarchive.org/release-group/13caac4c-e997-4c52-b35b-82129a746359 https://vehlinggo.com/2019/03/15/seahawks-eyes-moon-review/ https://cascine.us/releases/831/eyes-of-the-moon",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2019,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/13caac4c-e997-4c52-b35b-82129a746359/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-05T02:11:42Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-05 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 21542,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-05T02:11:42Z",
+    "note": "機器基線 3/3/3（Last.fm listeners 21542）；主線：§0.8.1 人工錨點：經典度 3（場景二線穩定作品，非藝人首要代表作）；冷門度 3（當代場景主力廠或正規廠發行即上串流，listeners 2–7 萬）；硬蕊度 2（暖 electronica／ambient pop，主流易聽、有一點門檻，無失真無嘶吼）"
+   },
+   "rarity": "common",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "Seahawks 頭一回離開自家廠牌出片。Jon Tye 與 Pete Fowler 這對英國二人組，一位是 Lo Recordings 的共同創辦人，一位是視覺藝術家；先前的唱片都出在自家的 Ocean Moon，這回 2019 年 3 月 15 日在 Cascine 出版。錄音地點是康瓦爾的 The Centre Of Sound。djembe 手鼓貫穿全盤，疊上 flanger 琶音、薩克斯風與吉他，廠牌把這股聲音形容為通往新世紀。",
+    "sourceUrls": [
+     "https://cascine.us/releases/831/eyes-of-the-moon",
+     "https://vehlinggo.com/2019/03/15/seahawks-eyes-moon-review/",
+     "https://musicbrainz.org/release-group/13caac4c-e997-4c52-b35b-82129a746359"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/d0/c7/56/d0c756ee-604f-a305-9f39-a7f709ed825f/mzaf_3056364520087818771.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-11-05T02:11:42Z",
+    "appleCollectionId": "1591284721",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1591284721「Seahawks《Eyes of the Moon》」：曲目 10/10 對上 MB 原盤（Apple 共 10 軌），取第 1 軌〈Emergence〉。主線 2026-11-05 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Seahawks",
+   "album": "Eternal Beams",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "ce6b9fe7-e325-4102-a95e-5c679f4ec0d7",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "hypnagogic／lo-fi 暖 ambient 器樂電子：Seahawks 近無拍的新世紀氛圍盤（Ocean Moon），合成墊與殘響長段，暖慢｜⚠ MB 有兩個 rg（1c9fe9f2 無 CAA），取 ce6b9fe7；新世紀合成墊若乾淨可能判輕（y 0.9 偏貼）｜MB release-group ce6b9fe7-e325-4102-a95e-5c679f4ec0d7：title「Eternal Beams」、Album、first-release-date 2018-06-15、artist-credit「Seahawks」。證據：https://musicbrainz.org/release-group/ce6b9fe7-e325-4102-a95e-5c679f4ec0d7 https://coverartarchive.org/release-group/ce6b9fe7-e325-4102-a95e-5c679f4ec0d7 https://bleep.com/release/102959-seahawks-eternal-beams?lang=en_GB https://soundshelter.net/vinyl/seahawks-eternal-beams",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2018,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic",
+    "ambient"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/ce6b9fe7-e325-4102-a95e-5c679f4ec0d7/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-05T02:11:42Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-05 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 677,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-05T02:11:42Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 677）；主線：§0.8.1 人工錨點：經典度 3（場景二線穩定作品，非藝人首要代表作）；冷門度 4（listeners 677、有串流 → §0.8.1 下限至少 4）；硬蕊度 2（暖 electronica／ambient pop，主流易聽、有一點門檻，無失真無嘶吼）"
+   },
+   "rarity": "common",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "雨聲與雷聲把 A 面縫成一整段。2018 年 6 月，英國二人組 Seahawks 在自己的 Ocean Moon 推出這張新世紀氛圍專輯。A 面從〈Sweet Rain〉到〈Eternal Beams〉四首相連，由暴風雨的實地錄音串起，底下墊著水晶般的合成器。整張幾乎沒有拍子，新世紀鋼琴、薩克斯風與海豚叫聲反覆出現。B 面請來新世紀音樂人 Laraaji，〈Rest in Peace〉以處理過的 zither 與喉音吟唱收尾。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/ce6b9fe7-e325-4102-a95e-5c679f4ec0d7",
+     "https://vehlinggo.com/2018/06/20/seahawks-eternal-beams-review/",
+     "https://the-sun-lounge.com/tagged/eternal%20beams",
+     "https://vehlinggo.com/2019/03/15/seahawks-eyes-moon-review/"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/b1/eb/69/b1eb690e-02a5-d6fe-9722-8850315c15bc/mzaf_15672655557034344014.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-11-05T02:11:42Z",
+    "appleCollectionId": "1370375364",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1370375364「Seahawks《Eternal Beams》」：曲目 6/8 對上 MB 原盤（Apple 共 9 軌），取第 1 軌〈Sweet Rain〉。主線 2026-11-05 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  }
+ ]
+}

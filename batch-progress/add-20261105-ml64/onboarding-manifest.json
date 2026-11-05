@@ -1,0 +1,883 @@
+{
+ "schemaVersion": 1,
+ "batch": "2026-10-20-ml64",
+ "batchNote": "薄細項策展線（add-20261105-ml64）",
+ "createdAt": "2026-11-05T02:13:26Z",
+ "albums": [
+  {
+   "artist": "Sounds From the Ground",
+   "album": "The Maze",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "3f43f92d-4407-421b-94c1-fde437d71ad2",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "ambient／chill-out 經典廠牌二線（Waveform、Instinct Ambient、Planet Dog、em:t、Interchill、Big Chill、Apollo 周邊）：Waveform 招牌 ambient dub 雙人組的第七張；池中同人五張全落恍惚，dub 低音與暖墊一脈相承｜策展無疑點｜MB release-group 3f43f92d-4407-421b-94c1-fde437d71ad2：title「The Maze」、Album、first-release-date 2010-10-12、artist-credit「Sounds From the Ground」。證據：https://coverartarchive.org/release-group/3f43f92d-4407-421b-94c1-fde437d71ad2 https://www.discogs.com/release/2502929 https://www.soundsfromtheground.com/Discography-Listen/The-Maze/",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2010,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/3f43f92d-4407-421b-94c1-fde437d71ad2/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-05T02:13:26Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-05 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 2223,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-05T02:13:26Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 2223）；主線：§0.8.1 人工錨點：經典度 3（場景二線穩定作品，非藝人首要代表作）；冷門度 4（小廠首發即上串流／收藏圈領域）；硬蕊度 2（暖 downtempo／chill-out，主流易聽、有一點門檻，無失真無嘶吼）"
+   },
+   "rarity": "common",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "在亞利桑那起家的廠牌，替倫敦雙人組出了第六張。做 ambient dub 的 Sounds From the Ground 長年與 Waveform 合作，對方 1993 年在 Sedona 成立，起初重發英國 Beyond 的唱片。Waveform 在 2010 年 10 月把《The Maze》做成 CD 發行，十首長 61 分 40 秒，〈A Thousand Colours〉一曲就占 8 分 12 秒。2020 年，兩人經自家 Upstream 讓它首度上了串流。",
+    "sourceUrls": [
+     "https://www.soundsfromtheground.com/Biography/",
+     "https://www.discogs.com/release/2502929",
+     "https://waveformrecords.com/maze.html",
+     "https://www.discogs.com/label/2402-Waveform-Records",
+     "https://soundsfromtheground1.bandcamp.com/album/the-maze",
+     "https://soundsfromtheground1.bandcamp.com/album/tribes",
+     "https://musicbrainz.org/release-group/3f43f92d-4407-421b-94c1-fde437d71ad2"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/5d/31/e3/5d31e3a8-cd9a-5bc6-fb03-f72c84546e48/mzaf_3862139073731690806.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-11-05T02:13:26Z",
+    "appleCollectionId": "1547912782",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1547912782「Sounds from the Ground《The Maze》」：曲目 10/10 對上 MB 原盤（Apple 共 10 軌），取第 1 軌〈Gap in the Clouds〉。主線 2026-11-05 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Sounds From the Ground",
+   "album": "Tribes",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "a4f0baf9-3d48-4bf6-a99d-f2011c84ecfe",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "ambient／chill-out 經典廠牌二線（Waveform、Instinct Ambient、Planet Dog、em:t、Interchill、Big Chill、Apollo 周邊）：SftG 自家 Upstream 盤，Discogs 標 Dub／Downtempo／Ambient；官網自述暖、深、低音厚的 ambient dub｜策展無疑點｜MB release-group a4f0baf9-3d48-4bf6-a99d-f2011c84ecfe：title「Tribes」、Album、first-release-date 2013-09-27、artist-credit「Sounds From the Ground」。證據：https://coverartarchive.org/release-group/a4f0baf9-3d48-4bf6-a99d-f2011c84ecfe https://www.discogs.com/release/4947699 https://www.soundsfromtheground.com/Discography-Listen/Tribes/",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2013,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/a4f0baf9-3d48-4bf6-a99d-f2011c84ecfe/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-05T02:13:26Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-05 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 3984,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-05T02:13:26Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 3984）；主線：§0.8.1 人工錨點：經典度 3（場景二線穩定作品，非藝人首要代表作）；冷門度 4（小廠首發即上串流／收藏圈領域）；硬蕊度 2（暖 downtempo／chill-out，主流易聽、有一點門檻，無失真無嘶吼）"
+   },
+   "rarity": "common",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "為了一張舊曲選輯重啟的廠牌，接著端出這十首。被視為 ambient dub 先驅的 Sounds From the Ground，那張選輯是收早期未發表曲目的《Thru The Ages》，廠牌用的則是自家 Upstream。2013 年推出的《Tribes》編號 UP012-CD，全是 downtempo，緊接 2012 年的《Widerworld》。兩人給它的定位是更帶都會氣、更有靈魂感的電子樂。dub 的味道出自循環與迴聲的錄音手法，低音線存在感巨大。",
+    "sourceUrls": [
+     "https://www.soundsfromtheground.com/Biography/",
+     "https://www.discogs.com/release/4947699",
+     "https://soundsfromtheground1.bandcamp.com/album/tribes",
+     "https://musicbrainz.org/release-group/a4f0baf9-3d48-4bf6-a99d-f2011c84ecfe"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/aa/de/51/aade5191-4cff-6bd1-3f6d-17f7cd0a1752/mzaf_13299062260619666837.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-11-05T02:13:26Z",
+    "appleCollectionId": "668737563",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 668737563「Sounds from the Ground《Tribes》」：曲目 10/10 對上 MB 原盤（Apple 共 10 軌），取第 1 軌〈Infrared〉。主線 2026-11-05 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Sounds From the Ground",
+   "album": "Native Soul",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "6c1520a1-6bd8-4f3a-96db-efd02575a598",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "ambient／chill-out 經典廠牌二線（Waveform、Instinct Ambient、Planet Dog、em:t、Interchill、Big Chill、Apollo 周邊）：SftG 2017 正規盤，十首 5–8 分鐘長曲，Discogs 標 Downtempo／Dub｜策展無疑點｜MB release-group 6c1520a1-6bd8-4f3a-96db-efd02575a598：title「Native Soul」、Album、first-release-date 2017-09-25、artist-credit「Sounds From the Ground」。證據：https://coverartarchive.org/release-group/6c1520a1-6bd8-4f3a-96db-efd02575a598 https://www.discogs.com/release/10933688 https://www.soundsfromtheground.com/Discography-Listen/Native-Soul/",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2017,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/6c1520a1-6bd8-4f3a-96db-efd02575a598/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-05T02:13:26Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-05 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 1178,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-05T02:13:26Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 1178）；主線：§0.8.1 人工錨點：經典度 3（場景二線穩定作品，非藝人首要代表作）；冷門度 4（小廠首發即上串流／收藏圈領域）；硬蕊度 2（暖 downtempo／chill-out，主流易聽、有一點門檻，無失真無嘶吼）"
+   },
+   "rarity": "common",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "秋天開錄、隔年春天收工，十首一點一點鍛造成形。1994 年初在 Brixton 後巷錄音室認識的 Nick Woolfson 與 Elliot Jones，2014 年先以黑膠《Alchemy》慶祝 20 週年，用類比合成器與鼓機找回初識那年的精神。新作的錄音期則落在 2016 到 2017 年間。2017 年 9 月，兩人把成品交給 Upstream，單曲從 5 分 12 秒延伸至 7 分 46 秒，收尾的〈Fin〉最長，曲風標記為 downtempo 與 dub。",
+    "sourceUrls": [
+     "https://www.soundsfromtheground.com/Biography/",
+     "https://www.discogs.com/release/10933688",
+     "https://soundsfromtheground1.bandcamp.com/album/native-soul",
+     "https://soundsfromtheground1.bandcamp.com/album/tribes",
+     "https://musicbrainz.org/release-group/6c1520a1-6bd8-4f3a-96db-efd02575a598"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/ec/b9/6d/ecb96d56-c770-675e-f662-e10f9b59b322/mzaf_912752591567352075.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-11-05T02:13:26Z",
+    "appleCollectionId": "1247741997",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1247741997「Sounds from the Ground《Native Soul》」：曲目 10/10 對上 MB 原盤（Apple 共 10 軌），取第 1 軌〈Cyclone〉。主線 2026-11-05 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Sounds From the Ground",
+   "album": "Binary",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "9f099ba7-ab6b-4ad2-acd8-2b583bec1719",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "ambient／chill-out 經典廠牌二線（Waveform、Instinct Ambient、Planet Dog、em:t、Interchill、Big Chill、Apollo 周邊）：SftG 25 週年正規盤，九首 6–8 分鐘器樂長曲；廠牌自述 rich、bass-heavy downtempo instrumentals｜⚠ Discogs 另標 IDM／Leftfield，z 可能 0.3–0.5｜MB release-group 9f099ba7-ab6b-4ad2-acd8-2b583bec1719：title「Binary」、Album、first-release-date 2019-03-25、artist-credit「Sounds From the Ground」。證據：https://coverartarchive.org/release-group/9f099ba7-ab6b-4ad2-acd8-2b583bec1719 https://www.discogs.com/master/1531031 https://soundsfromtheground1.bandcamp.com/album/binary",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2019,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/9f099ba7-ab6b-4ad2-acd8-2b583bec1719/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-05T02:13:26Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-05 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 4560,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-05T02:13:26Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 4560）；主線：§0.8.1 人工錨點：經典度 3（場景二線穩定作品，非藝人首要代表作）；冷門度 4（小廠首發即上串流／收藏圈領域）；硬蕊度 2（暖 downtempo／chill-out，主流易聽、有一點門檻，無失真無嘶吼）"
+   },
+   "rarity": "common",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "成軍 25 週年，Taz 又被請回來唱一首。Nick Woolfson 與 Elliot Jones 這對倫敦搭檔做的是低音很重、動態很大的器樂。2019 年 3 月經 Upstream 推出的九首，各長約 5 分 45 秒到 8 分鐘，以最長的〈Anniesland〉收尾。Taz 唱的是〈Missing You〉，2004 年的 Waveform 專輯《Luminal》就有這位歌手參與。整張在倫敦的 Starlight Rooms 錄成。",
+    "sourceUrls": [
+     "https://www.soundsfromtheground.com/Biography/",
+     "https://www.discogs.com/master/1531031",
+     "https://soundsfromtheground1.bandcamp.com/album/binary",
+     "https://waveformrecords.com/maze.html",
+     "https://soundsfromtheground1.bandcamp.com/album/tribes",
+     "https://musicbrainz.org/release-group/9f099ba7-ab6b-4ad2-acd8-2b583bec1719"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/6b/ab/75/6bab7525-4fba-2c57-ddb2-07919ee37918/mzaf_16807722256553203586.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-11-05T02:13:26Z",
+    "appleCollectionId": "1446116734",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1446116734「Sounds from the Ground《Binary》」：曲目 9/9 對上 MB 原盤（Apple 共 9 軌），取第 1 軌〈Blaze Mountain〉。主線 2026-11-05 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Adham Shaikh",
+   "album": "Journey to the Sun",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "cda42a73-540a-3b53-b539-680a51ca5fa0",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "ambient／chill-out 經典廠牌二線（Waveform、Instinct Ambient、Planet Dog、em:t、Interchill、Big Chill、Apollo 周邊）：Instinct Ambient 系列第 6 號、Interchill 創辦人的經典 ambient 盤，長曲＋竹笛與廟鐘｜⚠ y 可能因田野錄音偏輕（0.6–0.9），研究層請查有無低頻墊｜MB release-group cda42a73-540a-3b53-b539-680a51ca5fa0：title「Journey to the Sun」、Album、first-release-date 1995-06-28、artist-credit「Adham Shaikh」。證據：https://coverartarchive.org/release-group/cda42a73-540a-3b53-b539-680a51ca5fa0 https://www.discogs.com/release/44495 https://www.discogs.com/master/49436",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1995,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/cda42a73-540a-3b53-b539-680a51ca5fa0/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-05T02:13:26Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-05 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": 21548,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-05T02:13:26Z",
+    "note": "機器基線 3/3/3（Last.fm listeners 21548）；主線：§0.8.1 人工錨點：經典度 4（Instinct Ambient 首作、北美 ambient／world fusion 早期代表作之一（藝人代表作））；冷門度 3（有一定流通的正規發行，listeners 2 萬以上）；硬蕊度 3（長篇無拍 ambient、田野錄音／取樣，需要投入）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 4、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "他從印度帶回來的，是一捲捲 DAT 錄音。住在加拿大卑詩省 Nelson 附近的作曲家 Adham Shaikh，把旅途中收下的田野聲音一層層疊成寬廣的聲景。1995 年，這批聲景列入美國 Instinct 的 Instinct Ambient 系列，全盤 13 首，光是〈Liquid Evolution〉便長達 16 分 38 秒。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Adham_Shaikh",
+     "https://musicbrainz.org/release-group/cda42a73-540a-3b53-b539-680a51ca5fa0",
+     "https://www.discogs.com/release/44495",
+     "https://de.ra.co/news/7950"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/87/fa/9c/87fa9c41-db7d-2e25-ea2d-07eb6424c61d/mzaf_15640369283341602155.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-11-05T02:13:26Z",
+    "appleCollectionId": "36146737",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 36146737「Adham Shaikh《Journey to the Sun》」：曲目 13/13 對上 MB 原盤（Apple 共 13 軌），取第 1 軌〈Guru Sambhu Dada〉。主線 2026-11-05 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Adham Shaikh",
+   "album": "Essence",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "b38bab7c-02a5-3c9d-ae81-c3ccc7bcf85f",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "ambient／chill-out 經典廠牌二線（Waveform、Instinct Ambient、Planet Dog、em:t、Interchill、Big Chill、Apollo 周邊）：Adham Shaikh 2002 長曲 ambient dub 盤（〈Sabadub〉〈Orcadrift〉），dubwise 低音＋bansuri｜策展無疑點｜MB release-group b38bab7c-02a5-3c9d-ae81-c3ccc7bcf85f：title「Essence」、Album、first-release-date 2002、artist-credit「Adham Shaikh」。證據：https://coverartarchive.org/release-group/b38bab7c-02a5-3c9d-ae81-c3ccc7bcf85f https://www.discogs.com/release/238793 https://en.wikipedia.org/wiki/Adham_Shaikh",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2002,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/b38bab7c-02a5-3c9d-ae81-c3ccc7bcf85f/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-05T02:13:26Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-05 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 5373,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-05T02:13:26Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 5373）；主線：§0.8.1 人工錨點：經典度 3（場景二線穩定作品，非藝人首要代表作）；冷門度 4（小廠首發即上串流／收藏圈領域）；硬蕊度 2（暖 downtempo／chill-out，主流易聽、有一點門檻，無失真無嘶吼）"
+   },
+   "rarity": "common",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "竹笛 bansuri 壓在 dub 低音上，七首長曲慢慢晃。進修過電子聲響作曲的加拿大製作人 Adham Shaikh 自己作曲、製作，負責合成器和鼓程式；低音由 Sean Hill 以 dubwise 手法彈奏，鼓交給 Stu Hart。吹 bansuri 的 Catherine Potter 是 Hariprasad Chaurasia 的弟子。2002 年由加拿大廠牌 Sonicturtle 發行，長度約 67 分鐘。〈Sabadhi〉一名源於寮語的祝福。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/238793",
+     "https://en.wikipedia.org/wiki/Adham_Shaikh",
+     "https://whiteswanrecords.com/products/basswalla",
+     "https://starsend.org/Essence.html",
+     "https://exclaim.ca/music/article/adham_shaikh-essence",
+     "https://musicbrainz.org/release-group/b38bab7c-02a5-3c9d-ae81-c3ccc7bcf85f"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/f4/03/53/f4035357-df02-be77-a1fd-867efadde390/mzaf_13904662998263619972.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-11-05T02:13:26Z",
+    "appleCollectionId": "41766892",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 41766892「Adham Shaikh《Essence》」：曲目 7/7 對上 MB 原盤（Apple 共 7 軌），取第 1 軌〈Somptin' Hapnin' (Water In Me)〉。主線 2026-11-05 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Woob",
+   "album": "Woob 1194",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "eb19fc4b-5bdf-3c3c-a389-81e26b0397ca",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "ambient／chill-out 經典廠牌二線（Waveform、Instinct Ambient、Planet Dog、em:t、Interchill、Big Chill、Apollo 周邊）：em:t 廠牌 ambient dub 經典，32 分鐘〈On Earth〉長篇，維基有條目｜⚠ 電影取樣與 abstract 段落，z 可能貼 0.2–0.4；首發廠牌 em:t（MB 只有美國 Instinct 1994-09 版）｜MB release-group eb19fc4b-5bdf-3c3c-a389-81e26b0397ca：title「Woob 1194」、Album、first-release-date 1994-09-06、artist-credit「Woob」。證據：https://coverartarchive.org/release-group/eb19fc4b-5bdf-3c3c-a389-81e26b0397ca https://en.wikipedia.org/wiki/Woob_1194 https://www.discogs.com/master/59039",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1994,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/eb19fc4b-5bdf-3c3c-a389-81e26b0397ca/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-05T02:13:26Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-05 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 4072,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-05T02:13:26Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 4072）；主線：§0.8.1 人工錨點：經典度 4（em:t 時期 ambient 經典之一、藝人代表作；長篇氛圍＋電影取樣）；冷門度 4（小廠首發即上串流／收藏圈領域）；硬蕊度 3（長篇無拍 ambient、田野錄音／取樣，需要投入）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 4、obscurity 4、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "那隻封面企鵝，是曲子錄完、取好名字才送來的。Woob 是英國的 Paul Frankland 發表音樂的名義，這張 ambient dub 首作花了約兩個月錄成。1994 年 8 月在 em:t 出版，六首加起來約 73 分鐘。長達 32 分的〈On Earth〉混進電視對白與鳥鳴，反覆的撥弦旋律改編自聖桑。收尾的〈Emperor〉以深沉低音墊著帝企鵝叫聲，跟那張圖恰好吻合，Frankland 認為純屬巧合。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Woob_1194",
+     "https://www.discogs.com/master/59039",
+     "https://musicbrainz.org/release-group/eb19fc4b-5bdf-3c3c-a389-81e26b0397ca"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/7d/83/d4/7d83d402-4632-5bbb-d518-0da7de929a40/mzaf_1677542706274063392.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-11-05T02:13:26Z",
+    "appleCollectionId": "340957820",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 340957820「Woob《Woob 1194》」：曲目 6/6 對上 MB 原盤（Apple 共 6 軌），取第 1 軌〈On Earth〉。主線 2026-11-05 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Ishq",
+   "album": "Orchid",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "3a284aea-7b90-3b40-ba55-95d4ece5ccdd",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "ambient／chill-out 經典廠牌二線（Waveform、Instinct Ambient、Planet Dog、em:t、Interchill、Big Chill、Apollo 周邊）：Matt Hillier 的 psychill 經典首作，Trancentral 稱 warm meditative ambient、像漂過植物園｜⚠ 年份 MB 2000（自發）／Interchill 版 2002；Ishq 系無池中錨點｜MB release-group 3a284aea-7b90-3b40-ba55-95d4ece5ccdd：title「Orchid」、Album、first-release-date 2000、artist-credit「Ishq」。證據：https://coverartarchive.org/release-group/3a284aea-7b90-3b40-ba55-95d4ece5ccdd https://www.discogs.com/release/116907 https://sonicimmersion.org/ishq-orchid https://trancentral.tv/?p=14593",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2001,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/3a284aea-7b90-3b40-ba55-95d4ece5ccdd/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-05T02:13:26Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-05 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 38906,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-05T02:13:26Z",
+    "note": "機器基線 3/3/3（Last.fm listeners 38906）；主線：§0.8.1 人工錨點：經典度 4（Ishq 代表作、chill-out 圈常被推薦（藝人代表作））；冷門度 3（有一定流通的正規發行，listeners 2 萬以上）；硬蕊度 2（暖 downtempo／chill-out，主流易聽、有一點門檻，無失真無嘶吼）"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 4、obscurity 3、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "首版只壓 1000 套，副標叫 Sonic Incense。英國音樂人 Matt Hillier 的 ambient chill-out 計畫 Ishq，2001 年 12 月由日本 Dakini 推出這套限量雙 CD，另有 Hisano Ito 設計的線香單獨販售。第一張 CD 授權自 Interchill，那家廠牌隔年出了單碟版。曲子 1999 至 2001 年錄於康瓦爾，七首不間斷，開頭是帶搖擺感的鼓點，倒數第二首〈Bhakti〉讓節奏重新浮現。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/66873",
+     "https://www.discogs.com/release/116907",
+     "https://sonicimmersion.org/ishq-orchid",
+     "https://trancentral.tv/?p=14593",
+     "https://starsend.org/Orchid.html",
+     "https://musicbrainz.org/release-group/3a284aea-7b90-3b40-ba55-95d4ece5ccdd"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview112/v4/2a/da/46/2ada46d9-12ea-a592-2002-d3d39c54f26d/mzaf_8313296417728631021.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-11-05T02:13:26Z",
+    "appleCollectionId": "1622163737",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1622163737「Ishq《Orchid》」：曲目 8/8 對上 MB 原盤（Apple 共 8 軌），取第 1 軌〈Skyblue〉。主線 2026-11-05 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Sinepearl",
+   "album": "Cycles Within Cycles Within",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "262fccc4-e5ee-4043-8b51-d40eddaa5371",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "ambient／chill-out 經典廠牌二線（Waveform、Instinct Ambient、Planet Dog、em:t、Interchill、Big Chill、Apollo 周邊）：Interchill 2014 長曲 ambient／downtempo 盤，廠牌自述 lush landscapes of sound and melody、帶人進入療癒空間｜⚠ 無池中錨點；療癒取向可能判輕（y 0.5–0.9）；國別未查｜MB release-group 262fccc4-e5ee-4043-8b51-d40eddaa5371：title「Cycles Within Cycles Within」、Album、first-release-date 2014-02-10、artist-credit「Sinepearl」。證據：https://coverartarchive.org/release-group/262fccc4-e5ee-4043-8b51-d40eddaa5371 https://www.discogs.com/release/5399268 https://sinepearl.bandcamp.com/album/cycles-within-cycles-within",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2014,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/262fccc4-e5ee-4043-8b51-d40eddaa5371/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-05T02:13:26Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-05 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 1108,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-05T02:13:26Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 1108）；主線：§0.8.1 人工錨點：經典度 3（場景二線穩定作品，非藝人首要代表作）；冷門度 4（小廠首發即上串流／收藏圈領域）；硬蕊度 2（暖 downtempo／chill-out，主流易聽、有一點門檻，無失真無嘶吼）"
+   },
+   "rarity": "common",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "本業是針灸師的瑞典人，在哥德堡近郊錄下自然聲。Björn Ekegren 以 Sinepearl 發表作品，2014 年 2 月由 Interchill 發行的這張已是第三張。八首合計約 76 分鐘，其中〈The Great Wobble〉長 14 分 28 秒，居全盤之冠。音色以自然為根，裡頭收了幾段他親自到野外錄下的聲音；到了中段，鼓聲慢吞吞地晃過，帶著不規則的切分。同年夏天，他受邀到葡萄牙的 Boom Festival 演出。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/5399268",
+     "https://sinepearl.bandcamp.com/album/cycles-within-cycles-within",
+     "https://starsend.org/CyclesWithinCyclesWithin.html",
+     "https://musicbrainz.org/release-group/262fccc4-e5ee-4043-8b51-d40eddaa5371"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview124/v4/6b/83/8e/6b838ea8-f21f-e852-97a3-d2a72c29092f/mzaf_4763505461917967141.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-11-05T02:13:26Z",
+    "appleCollectionId": "1557821701",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1557821701「Sinepearl《Cycles Within Cycles Within》」：曲目 7/8 對上 MB 原盤（Apple 共 8 軌），取第 1 軌〈The Great Wobble〉。主線 2026-11-05 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "El Búho",
+   "album": "Natura Sonora",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "e5d7bdb9-d297-4443-bbbb-c97083e5c766",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "organic／慢 Balearic 新世代 2015–2025（Wonderwheel、ZZK 一路的慢速有機電子）：El Búho 以冰裂、紅樹林水下等田野錄音為骨架、疊合成器與鼓的自然頌｜⚠ 速度無來源；同人《Camino de flores》自述 dancefloor、《Ramas》更 rhythmic，故只提這張與《Balance》｜MB release-group e5d7bdb9-d297-4443-bbbb-c97083e5c766：title「Natura Sonora」、Album、first-release-date 2021-11-05、artist-credit「El Búho」。證據：https://coverartarchive.org/release-group/e5d7bdb9-d297-4443-bbbb-c97083e5c766 https://elbuho.bandcamp.com/album/natura-sonora https://musicbrainz.org/release-group/e5d7bdb9-d297-4443-bbbb-c97083e5c766",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2021,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/e5d7bdb9-d297-4443-bbbb-c97083e5c766/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-05T02:13:26Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-05 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 2054,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-05T02:13:26Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 2054）；主線：§0.8.1 人工錨點：經典度 3（場景二線穩定作品，非藝人首要代表作）；冷門度 4（小廠首發即上串流／收藏圈領域）；硬蕊度 2（暖 downtempo／chill-out，主流易聽、有一點門檻，無失真無嘶吼）"
+   },
+   "rarity": "common",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "封城時關在 40 平方公尺的公寓，他改用音樂去旅行。El Búho 是英國製作人 Robin Perkins 的藝名，第一波新冠封城那陣子，他住在巴黎近郊，窗外只有灰色街景。他挑了九個沒去過的地方，像是 Socotra 島、阿爾泰與 Białowieża，把當地的現場錄音放進 Ableton 當骨架，再接上合成器或鼓組試出旋律。2021 年 11 月，專輯由他經營的 Shika Shika 發行，全盤約 41 分鐘，開場曲近乎氛圍音樂。",
+    "sourceUrls": [
+     "https://elbuho.bandcamp.com/album/natura-sonora",
+     "https://soundsandcolours.com/subjects/music/el-buho-natura-sonora-62904/",
+     "https://rhythmpassport.com/?p=121417",
+     "https://musicbrainz.org/release-group/e5d7bdb9-d297-4443-bbbb-c97083e5c766"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview122/v4/6f/c2/f4/6fc2f42d-a916-c2c5-967a-e782a00c35ac/mzaf_2800495331012715326.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-11-05T02:13:26Z",
+    "appleCollectionId": "1626420387",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1626420387「El Búho《Natura Sonora》」：曲目 9/9 對上 MB 原盤（Apple 共 9 軌），取第 1 軌〈Sierra Nevada De Santa Marta〉。主線 2026-11-05 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Gaudi",
+   "album": "Jazz Gone Dub",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "2619315a-1fc7-4310-a627-898dca70bce8",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "爵士 dub／downbeat dub 化：倫敦 downbeat 製作人 Gaudi 把爵士即興放進 dub：銅管、薩克斯、Ranglin 吉他浮在 Jah Wobble、Sly & Robbie 的低音與 delay／reverb 上，慢、厚、旋律清楚，正是 nu-jazz 電子暖盤的 dub 化那一路。｜⚠ 2025-12 新盤；Discogs 主類 Jazz/Reggae，本線依池中 Gaudi 慣例填 electronic 首位｜MB release-group 2619315a-1fc7-4310-a627-898dca70bce8：title「Jazz Gone Dub」、Album、first-release-date 2025-12-05、artist-credit「Gaudi」。證據：https://gaudimusic.bandcamp.com/album/jazz-gone-dub https://www.discogs.com/release/35743192 https://www.dancingvinyl.com/release/1774902711/gaudi-jazz-gone-dub https://coverartarchive.org/release-group/2619315a-1fc7-4310-a627-898dca70bce8",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2025,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic",
+    "world"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/2619315a-1fc7-4310-a627-898dca70bce8/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-05T02:13:26Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-05 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 1233,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-05T02:13:26Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 1233）；主線：§0.8.1 人工錨點：經典度 3（場景二線穩定作品，非藝人首要代表作）；冷門度 4（小廠首發即上串流／收藏圈領域）；硬蕊度 2（暖 downtempo／chill-out，主流易聽、有一點門檻，無失真無嘶吼）"
+   },
+   "rarity": "common",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "醞釀四年，爵士和弦被放到 dub 的低音與回音上。本名 Daniele Gaudi Cenacchi 的 Gaudi 自己彈鋼琴、Hammond 與桑圖爾琴，把爵士即興和 dub 厚重的律動擺在一起。〈Susceptible〉由牙買加吉他手 Ernest Ranglin 與 Robbie Shakespeare、Sly Dunbar 合奏。2025 年 12 月，這九首在 Dubmission 面世，全在倫敦製作，延遲與殘響帶出夢幻的質感。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/35743192",
+     "https://en.wikipedia.org/wiki/Gaudi_(musician)",
+     "https://gaudimusic.bandcamp.com/album/jazz-gone-dub",
+     "https://musicbrainz.org/release-group/2619315a-1fc7-4310-a627-898dca70bce8"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ae/d6/bc/aed6bc05-93bf-d0bf-e8cf-f37e496561a8/mzaf_16897395786920411735.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-11-05T02:13:26Z",
+    "appleCollectionId": "1852837734",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1852837734「Gaudi《Jazz Gone Dub》」：曲目 9/9 對上 MB 原盤（Apple 共 9 軌），取第 1 軌〈Cool Jazztice〉。主線 2026-11-05 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Gaudi",
+   "album": "Dub, Sweat & Tears",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "4cf984ec-b188-4929-84a0-bdd8fe339e21",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "爵士 dub／downbeat dub 化：池中已落恍惚的《Bass, Sweat & Tears》十週年 dub 版：全用類比磁帶 echo、彈簧殘響、真空管壓縮重混，Bandcamp 樂評稱 smoky、貝斯催眠，比原版更慢更霧。｜⚠ 原版池中 z 0.4，dub 版旋律更淡，z 有掉到 0.3 附近的風險；MB 標 Album 無 Remix，但實為自家舊作 dub 重製（同 ml56 Dub Colossus《Dub Me Tender》先例）｜MB release-group 4cf984ec-b188-4929-84a0-bdd8fe339e21：title「Dub, Sweat & Tears」、Album、first-release-date 2014-12-09、artist-credit「Gaudi」。證據：https://gaudimusic.bandcamp.com/album/gaudi-dub-sweat-tears https://www.discogs.com/release/6489676 https://musicbrainz.org/release-group/4cf984ec-b188-4929-84a0-bdd8fe339e21 https://coverartarchive.org/release-group/4cf984ec-b188-4929-84a0-bdd8fe339e21",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2014,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic",
+    "world"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/4cf984ec-b188-4929-84a0-bdd8fe339e21/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-05T02:13:26Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-05 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 1120,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-05T02:13:26Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 1120）；主線：§0.8.1 人工錨點：經典度 3（場景二線穩定作品，非藝人首要代表作）；冷門度 4（小廠首發即上串流／收藏圈領域）；硬蕊度 2（暖 downtempo／chill-out，主流易聽、有一點門檻，無失真無嘶吼）"
+   },
+   "rarity": "common",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "滿十年那年，他把自己的舊作整張丟回磁帶回音裡。早年用過 Dub Alchemist 等別名的 Gaudi，也把特雷門琴融進 dub；那張原作是 Interchill 在 2004 年發行的《Bass, Sweat & Tears》。重混時他只用類比器材，除了磁帶回音，還有彈簧殘響與真空管壓縮器，把細碎的打擊樂、嗶聲與貝斯線那股催眠感挖了出來。2014 年 12 月交 Six Degrees 發行，全長 45 分半的十首，曲名都添了 dub。",
+    "sourceUrls": [
+     "https://gaudimusic.bandcamp.com/album/gaudi-dub-sweat-tears",
+     "https://www.discogs.com/release/6489676",
+     "https://en.wikipedia.org/wiki/Gaudi_(musician)",
+     "https://musicbrainz.org/release-group/4cf984ec-b188-4929-84a0-bdd8fe339e21"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/17/00/32/170032fe-f5ec-6fec-6296-60178ad3d092/mzaf_13585762324341285432.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-11-05T02:13:26Z",
+    "appleCollectionId": "1209300836",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1209300836「Gaudi《Dub, Sweat & Tears》」：曲目 10/10 對上 MB 原盤（Apple 共 10 軌），取第 1 軌〈Sufani in Dub〉。主線 2026-11-05 lookup 核對、試聽檔 HTTP 206。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  }
+ ]
+}

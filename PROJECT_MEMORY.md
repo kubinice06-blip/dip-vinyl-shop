@@ -1,5 +1,18 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-05｜dip-vinyl-shop｜情緒薄格恍惚電子二線 ml64／ml65：恍惚電子盤 21 張上線（落恍惚 14）＋藝人介紹 14 位
+
+- **店主 11-04**：「頹靡跟恍惚還是太少了，多一點電子類的，嘻哈跟雷鬼太多了。」本線挖二線電子（只收 genres 首位 electronic）；並行的 ml62／ml63 做非電子暖盤。
+- **ml64**（`add-20261105-ml64`；ambient／chill-out 經典廠牌二線、downbeat／nu-jazz、organic／world downtempo）：策展 24＋ml65 轉入 5 → 主線汰 2 → 研究汰 15（四拍／breakbeat、Kaya Project 混音集、偏冷）→ **上線 12、落恍惚 8（67%）**。出格：Adham Shaikh《Journey to the Sun》、El Búho 判輕；Woob《Woob 1194》、Sinepearl 判冷。
+- **ml65**（`add-20261105-ml65`；ambient pop／electronica 暖盤、hypnagogic 器樂電子、日韓台暖電子、暖 trip-hop 器樂）：策展 30 → 主線汰 10（Blackmill DnB／dubstep、kidkanevil 嘻哈、同人勻量、貼邊）＋轉 ml64 5 → 研究汰 6 → **上線 9、落恍惚 6（67%）**。出格：Hiatus、Seahawks 兩張判輕。
+- **場景結論**：兩場景都見底。downbeat／nu-jazz 頭牌池中判雀躍、二線判輕或判冷；organic house 新世代多四拍；日韓台暖電子 0（同人多判輕判冷）；無池中錨點的新世紀／Balearic 判輕。恍惚電子二線再挖的效益很低。
+- **審稿改 3 處**：Gaudi《Dub, Sweat & Tears》刪「廠牌最暢銷」（廠方自述）；Ana Roxanne「樂器全由她」→「多數樂器」；**Hiatus《Parklands》上線後回補**——〈Delam〉不在本盤曲目（MB 11 首），是《All the Troubled Hearts》收尾曲，hook 改寫，KV／card_catalog 重寫回讀一致。
+- **寫入（已即時生效）**：card_catalog 21、KV 21 鍵（stamp 20261105m64、20261105m65b）逐字回讀一致、試聽 21 ready、seed +21；prepare／published gate 皆 0 error；頂點 0。封面 CAA 20＋Apple 1（John Beltran CAA 500）。`build-seed-genres` 把 Sun Glitters 寫成 rock，主線改回 electronic；`genre-l3-artist-map.json` 補 Sun Glitters → chillwave。子曲風樹、抽卡封面、card-moods 重建。
+- **藝人介紹**：ar-d-281（ml64，7 位）、ar-d-282（ml65，7 位）照 dip-artist-intro 跑完上線；Hiatus 只有單一來源，主線以 Discogs API 補第二源。
+- **條號**：ml64 23001–23080、ml65 23081–23160（跳過 22841–23000 留給並行的 ml62／ml63）。SCENES.md 加第 86、87 列並標結果。
+- **主要檔案**：`batch-progress/add-20261105-{ml64,ml65}/`、`batch-progress/mood-cells-20261022/{curation-ml64a,ml64b,ml65a,ml65b,master-ml64ml65,cut-artist-intros-ml64.mjs}`、`SCENES.md`、`desc-tools/batches/{cards,research,hooks,input,output}/add-20261105-ml6*`、`batch-progress/mood-axes/score-{ml64,ml65}/`、`batch-progress/artist-intro/roster-ml6[45]-*.json`、`data/artist-intros/`、`seed_cards.json`、`data/mood/`、`genre-tree.json`、`card-subgenres.json`、`draw-covers/`。
+- **驗證**：`verify-album-onboarding --published` 兩批 0 error；`verify-wave-kv` 21／21 一致；`build-card-moods` 錨點 104/104 同格；`qa-artist out` 兩批 0 處。
+
 ### 2026-11-04｜dip-vinyl-shop｜情緒薄格恍惚電子線 ml60／ml61：恍惚電子盤 34 張上線（落恍惚 26）＋藝人介紹 19 位
 
 - **店主指示**：「卡池分配頹靡跟恍惚還是太少了，多一點電子類的，嘻哈跟雷鬼太多了。」本線只收 genres 首位 electronic 的恍惚盤（靜＋重＋暖）。
