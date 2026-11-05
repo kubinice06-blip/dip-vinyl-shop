@@ -64,3 +64,8 @@
   2. Johanna Burnheart：「2013 年成為倫敦 Guildhall 第一位爵士小提琴本科生」→「2013 年進倫敦 Guildhall 主修爵士小提琴」。依據：「第一位」只有藝人自述單一來源（ar-d-286 補洞稿標單源不收）。
   3. Acetone《If You Only Knew》：刪「那句形容出自 Edmonton Journal，該報後來把它列為 1996 年最佳專輯之一」（正文不寫媒體名與年終榜；237→191）。
 - 改後 `qa-batch out`、`qa-check-research` 0 標記。
+
+## 主線上線（條號 23451–23453）
+- **23451**：上線 8 張：card_catalog 8／8、KV 8 鍵回讀逐字一致（stamp 20261105m67）、試聽 8 ready（6 張換成最紅那首）、seed +8、prepare／published gate 0 error。封面 CAA 7＋Bandcamp 1（Cecily，§1 人工身分）。頂點 0。藝人介紹 ar-d-286（6 位）同 PR 上線。
+- **23452**：情緒評分 `score-ml67/`：**落恍惚 3/8＝38%**（Eddie Chacon 兩張、Acetone《If You Only Knew》）。出格：KAINA、Cecily、Acetone 同名盤判輕落放鬆；Johanna Burnheart 判輕冷落平靜；Julie Beth Napolin 判冷落頹靡。
+- **23453**：**Bandcamp 來源結論**：Best Jazz／Best Soul 151 期全掃，暖爵士多是乾淨原聲小編制（判輕）或即興（判冷），soul 多 EP／快拍；Best Rock／Lists 索引頁前端渲染抓不到，dream pop／shoegaze 已被 ml2／ml44／ml62 收光。產率約 13%，**不建議再派**。

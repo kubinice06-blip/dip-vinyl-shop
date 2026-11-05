@@ -84,3 +84,8 @@
 - 逐張審 16 張，抽核關鍵事實回研究稿：Hammock 第十張、2019-11-15、Byrd「沉默的前奏」；Wiltzie 夢見聽者會死、sodium pentothal 為巴比妥類藥物、Oxdonk 住處＋布達佩斯 Magyar Radio Studio 22；Nailah Hunter 牧師之女、CalArts 豎琴課、借來的凱爾特豎琴、Cicely Goulder；Maria Somerville Connemara、叔叔 Michael Somerville 唯一錄音取樣、Rush Hour 通路；Rachika Nayar NNA Tapes 2021-03-05；Jonny Nash Melody As Truth、前作《Point Of Entry》2023；Sofie Birch interCourse 2022-05-27（長笛與豎琴未寫成本人演奏）；Pioulard 本名 Thomas Meluch、緬因小屋、parlor guitar；Turn On The Sunlight Cavana Lee 為 Jeanne Lee 之女、Laraaji、SK Kakraba；Hinako Omori 森林浴、Real World Studios；Dylan Henner Phantom Limb 2025-10-17；Patricia Wolf Balmat、9128 Live、〈Pacific Coast Highway〉唯一有鼓；Robotalco 本名 Sebastiano Urciuoli、Club Silencio、2016–2018；Pedro Magina 沉寂五年、一人包辦、Holuzam CD；Midori Hirano Oto＋Ma、Thrill Jockey 2026-02-20、川內倫子展；maya ongaku Nothing Space Studio、Juno-6。
 - 媒體名 0、「據」0、序數矛盾的兩張（Somerville、Wiltzie）未寫序數。
 - 逐張審過，未改字。
+
+## 主線上線（條號 23391–23393）
+- **23391**：上線 16 張：card_catalog 16／16、KV 16 鍵回讀逐字一致（stamp 20261105m66）、試聽 16 ready（12 張換成 Deezer 最紅那首）、seed +16、prepare／published gate 0 error。封面 CAA 15＋Bandcamp 1（Pedro Magina，CAA 404）；縮圖表目視相符。三軸 §0.8.1 錨點人工評分（經典度 3 佔 12、4 佔 4）。頂點 0。藝人介紹 ar-d-285（16 位）同 PR 上線。
+- **23392**：情緒評分 `score-ml66/`：**落恍惚 7/16＝44%**（恍惚 7、放鬆 6、頹靡 3）。出格：Hinako Omori、Sofie Birch、Patricia Wolf、Nailah Hunter、maya ongaku、Midori Hirano 判輕落放鬆（原聲／合成器乾淨、無霧牆）；Adam Wiltzie、Maria Somerville、Rachika Nayar 判冷落頹靡（頹靡也是薄格，不算浪費）。
+- **23393**：**Bandcamp 來源結論**：Best Ambient／Best Electronic 共約 200 期，暖而有旋律的 ambient 在評分尺下多判輕（乾淨、空氣感），厚的又多判冷；Best Electronic 九成是舞池。策展 47 → 研究後 16 → 落恍惚 7，產率約 15%，**不建議再派同場景**。
