@@ -17,3 +17,8 @@
 - 23111：d 組 5 張 MB 釘住皆核對無誤；Tindersticks 用維基＋Lollipop／Record Rewind Play，Cowboy Junkies 用維基＋PopMatters，Spain 用維基＋Trouser Press，Vile、Drugdealer 以二手樂評為主（Pitchfork 抓不到、Raw Honey 維基 404）。
 - 23112：推翻策展層——Drugdealer 《Raw Honey》Ariel Pink 客串不成立（兩個來源都說他在前作），facts 不寫。
 - 23113：moodGuess 存疑——Cowboy Junkies《Open》（非全程極慢，有粗礪／失真與喧鬧段，音色偏暗）；Kurt Vile（Spin 稱製作更乾淨開闊，判輕風險）；Drugdealer（〈Lonely〉〈Lost in My Dream〉輕快有明快節拍，清脆錄音，判輕／判躁風險）。Spain、Tindersticks 無實質不符（z 偏邊風險如策展層）。
+
+## 研究 e 組
+- 23121：e 組 5 張皆核對 MB 釘住；Lanois 用 Sound on Sound 1994 訪談＋Discogs，Pale Saints 用 Arts Desk＋Microgenre，Flaming Lips 用 NME＋Line of Best Fit（Guardian 抓取被擋），Jacco Gardner 用 Modern Drummer＋Magnet＋Polyvinyl（維基無條目），小林麻美以 Discogs 逐曲署名＋日文維基人物條目。
+- 23122：推翻策展層——小林麻美廠牌 Moon Records 不成立，Discogs 與 MB 皆為 CBS/Sony（28AH 1760）；卡單 label 建議改。
+- 23123：moodGuess 存疑——Lanois《Wynona》（本人訪談明講「比 Acadie 更重擊」、樂團現場、失真鼓＋fuzz 貝斯＋回授，判躁，建議汰）；Jacco Gardner《Hypnophobia》（9／10 首在 4 分鐘內、真鼓全程、主打 catchy upbeat，判躁／雀躍）；小林麻美（九首有真人樂隊、synth-pop／歐陸翻唱，判輕風險高）；Pale Saints（〈Hunted〉〈Ordeal〉快節奏與噪音爆發，判躁風險中等）；Flaming Lips《King's Mouth》（樂評皆無弦樂、有電子節拍與可跳舞段，判躁／雀躍風險中等）。
