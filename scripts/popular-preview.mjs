@@ -391,7 +391,7 @@ async function cmdPick(outDir) {
 
 // ---------- 5. 寫回 ----------
 async function cmdApply(outDir, dry) {
-  const picks = readJson(path.join(outDir, 'picks.json'));
+  const picks = readJson(fs.existsSync(path.join(outDir, 'picks.json')) ? path.join(outDir, 'picks.json') : path.join(outDir, '..', 'picks.json'));
   const mapDoc = readJson(MAP_FILE);
   const now = new Date().toISOString();
   const perKey = new Map(); // key → {before, after}（給 manifest 用）
@@ -406,7 +406,7 @@ async function cmdApply(outDir, dry) {
     if (p.store && p.store !== String(e.storefront || '').toUpperCase()) e.storefront = p.store;
     e.previewTrackId = p.trackId;
     e.previewTrackName = p.trackName;
-    e.previewPick = { source: p.source, ...(p.rank != null ? { rank: p.rank } : {}), at: now };
+    e.previewPick = p.rank != null ? `${p.source}:${p.rank}` : p.source; // 例：deezer-rank:640568（日期見 PROJECT_MEMORY 2026-11-05）
   }
   mapDoc.generatedAt = now;
   // manifest：逐卡比對，preview.url 等於該卡舊地圖網址的才換新（published gate 比對「靜態地圖 previewUrl 與 manifest」）
@@ -418,16 +418,28 @@ async function cmdApply(outDir, dry) {
     const file = path.join(ROOT, f);
     let raw = fs.readFileSync(file, 'utf8');
     const doc = JSON.parse(raw);
-    const swaps = new Map();
+    // 依文件順序列出每一列 preview.url 該變成什麼；同一網址被多張卡共用時（例：Swanee Quintet 兩張）逐次替換，
+    // 不能整檔一次換。網址只出現在 preview.url；出現次數與列數對不上就整檔跳過、記下來。
+    const plan = new Map(); // url → [新值或 null（不換）, …]，依出現順序
     for (const row of doc.albums || []) {
-      const k = `${norm(row.artist)}\u0000${norm(row.album)}`;
-      const sw = perKey.get(k);
-      if (sw && row.preview?.url === sw.before && sw.before !== sw.after) swaps.set(sw.before, sw.after);
+      const url = row.preview?.url;
+      if (!url) continue;
+      const sw = perKey.get(`${norm(row.artist)}\u0000${norm(row.album)}`);
+      if (!plan.has(url)) plan.set(url, []);
+      plan.get(url).push(sw && sw.before === url && sw.before !== sw.after ? sw.after : null);
     }
-    for (const [from, to] of swaps) raw = raw.split(JSON.stringify(from)).join(JSON.stringify(to));
-    if (swaps.size) { manFiles++; manRows += swaps.size; if (!dry) fs.writeFileSync(file, raw); }
+    let hits = 0, skipped = false;
+    for (const [url, seq] of plan) {
+      if (!seq.some(Boolean)) continue;
+      const needle = JSON.stringify(url);
+      const parts = raw.split(needle);
+      if (parts.length - 1 !== seq.length) { skipped = true; console.warn(`skip ${f}: ${url} 出現 ${parts.length - 1} 次、列 ${seq.length}`); continue; }
+      raw = parts.reduce((acc, part, i) => i === 0 ? part : acc + JSON.stringify(seq[i - 1] || url) + part, '');
+      hits += seq.filter(Boolean).length;
+    }
+    if (hits) { manFiles++; manRows += hits; if (!dry) fs.writeFileSync(file, raw); }
   }
-  if (!dry) fs.writeFileSync(MAP_FILE, JSON.stringify(mapDoc, null, 2) + '\n');
+  if (!dry) fs.writeFileSync(MAP_FILE, JSON.stringify(mapDoc, null, 1) + '\n'); // 原檔是 1 格縮排
   console.log(JSON.stringify({ dry: !!dry, mapChanged, refreshedSameTrack: refreshed, manifestFiles: manFiles, manifestUrls: manRows }, null, 2));
 }
 
