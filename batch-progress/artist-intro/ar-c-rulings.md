@@ -2585,3 +2585,9 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 40 位全寫：26 full、14 thin。多名卡三張用放寬額度（Lustmord + Nicolas Horvath、Münchener Kammerorchester & Christoph Poppen、Nicolas Hodges & Rolf Hind）。
 - 題材照寫：Fjellström 2017 年猝逝（死因未公布）、遺作由他人完成；Hodges 2019 年確診帕金森氏症、帶病演出；Zukofsky 2017 年因淋巴瘤過世。
 - 主線審稿 6 處：Fjellström「該劇編劇與作曲家 Skodvin」改為點名編劇 David Kajganich 與 Skodvin（原句易讀成同一人），並刪廠牌形容與「留下 75 首」壓回 245 字；Kolbeinn Bjarnason「古典長笛音樂中無可比擬」改為發行廠牌說「少見」（軟化）；Jeffrey Swann 刪其餘大賽名次、Julie-Anne Derome 刪 Virginia Parker 獎（在世者只留一項成績）。
+
+## ar-d-503（2026-11-05，電子、dark ambient、drone）
+
+- 39 位寫：14 full、25 thin；Peter Veale 只有一條單源事實、無國籍無聲音描述，不寫（skipped）。
+- 題材照寫：Phill Niblock 2024 年因心臟衰竭過世；Bodo Staiger（Rheingold）2019 年辭世；Council of Nine《Diagnosis》寫母親病逝；Hammock 外甥 2016 年死於腫瘤；Kevin Richard Martin 妻兒的健康危機。
+- 主線審稿 9 處：KaS Product 刪「電子龐克先驅」（法文維基單源）；Netherworld、Silicon Scally、Phill Niblock 第一句補國籍與身分（Niblock 連帶刪「電影工作者」重複與「製作上千場演出」壓回 245 字）；Rheingold「前一年以 70 歲辭世」改「2019 年底辭世，享年 70 歲」（原句時間指涉不清）；Peaking Lights 刪「賣出數千張」（在世者不寫銷量）。
