@@ -75,3 +75,11 @@
 - **23062** 第二句領句全照鉤子層 note 指派（23053 表）。hook 代稱具名：Maze 具名 Waveform、Tribes 具名《Thru The Ages》與 Upstream、Native Soul 把季節具名成 2016–2017、Journey 具名作曲家、Woob 收尾以〈Emperor〉帝企鵝叫聲對上封面、DST 具名原作《Bass, Sweat & Tears》與 Interchill（「最暢銷」只留在 hook，正文不複述）。Woob 指派句「英國音樂人 Paul Frankland」與 Orchid 撞 `英國音樂人`，Orchid 照指派原句，Woob 改「英國的 Paul Frankland 發表音樂的名義」。
 - **23063** 只寫 note：note 沒列的 facts 一律不寫（Maze 的「亞利桑那」不在正文重寫、只寫 Sedona；Orchid 寫「康瓦爾」不加國名；Essence 不給 Chaurasia 加頭銜）。廠方／官方的說法直接寫成陳述句或「兩人給它的定位」，正文 0 處「據／官方／廠方」；媒體名與榜單名次 0。Dub, Sweat & Tears 的 iTunes 名次不寫。Woob「他說是巧合」改間接敘述「Frankland 認為純屬巧合」。
 - **23064** 自掃 han() 4-gram：本檔跨張 0 條（途中拆「倫敦雙人組」「發行十首」「首長分秒」「分秒到分」「成軍週年」「的田野聲」「分鐘上下」「由發行的」）。另對 ml65-out-1、ml60、ml61、md35、md36 合掃，3 張以上命中本檔的通用殘片（`這家廠牌`、`年月發行`、`是自家的`、`曲名取自`、`分鐘左右`、`這個名字`、`最長的有`、`長約分鐘`、`田野錄音`、`分鐘上下`、`的貝斯線`）已全數改掉；剩 `音樂人的`（Orchid 指派原句）與 `合成器與`（器材名）。
+
+## 主線審稿（2026-11-05，cloud-main）
+- 逐張審 12 張，抽核關鍵事實回研究稿：Waveform 1993 Sedona 起家、與 Beyond 關聯、《The Maze》Waveform 第六張、2020 經 Upstream 上串流；《Tribes》UP012-CD、選輯《Thru The Ages》；Woolfson／Jones 1994 Brixton 結識、《Alchemy》20 週年黑膠；《Binary》Taz〈Missing You〉、Starlight Rooms；Adham Shaikh Nelson、DAT 田野錄音、Instinct Ambient 1995、Queen's University 電聲作曲、Catherine Potter 師承 Chaurasia；Woob Paul Frankland、em:t 1994-08、〈On Earth〉32 分、聖桑旋律；Ishq Dakini DAK2109 限量 1000 套、Interchill 授權、Hisano Ito 線香；Sinepearl Björn Ekegren、哥德堡、針灸師、Boom Festival 2014；El Búho Robin Perkins、巴黎近郊 40 平方公尺、Shika Shika 2021-11；Gaudi《Jazz Gone Dub》Ranglin／Sly & Robbie、Dubmission 2025-12；《Dub, Sweat & Tears》類比器材重混、Six Degrees 2014-12——皆一致。
+- **改 1 處**：`desc2:Gaudi|Dub, Sweat & Tears` hook「滿十年那年，他把廠牌最暢銷的那張丟回磁帶回音裡。」→「滿十年那年，他把自己的舊作整張丟回磁帶回音裡。」。依據：「Interchill 最暢銷」只有廠方自述（研究 d 組 facts 寫明「廠方稱」），正文去掉此斷言。已同步 hooks-d、input 層。
+- 註：藝人介紹補洞（ar-d-281）查得 El Búho 本名 Robin Perkins；主線派補洞時特注寫的「Robert Mason」是主線筆誤，補洞與寫作層都未採，正文以 Robin Perkins 為準。
+
+## 主線上線（條號 23071）
+- **23071**：上線 12 張：card_catalog 12／12、KV 12 鍵回讀逐字一致（stamp 20261105m64）、試聽 12 ready、seed +12、prepare／published gate 0 error（12 warning 皆 UPC）。封面 CAA 12（縮圖表目視相符、/front live-check 200）。寫入前對 origin/main seed 去重 0 撞。頂點 0。
