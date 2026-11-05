@@ -105,3 +105,8 @@
 - 逐張審 17 張，抽核關鍵事實回研究稿：Taiguara 1945 生於蒙特維多、EMI-Odeon 在巴西最暢銷、《Viagem》第六張、Som Imaginário 在第 6／8／11 軌；Ronnie Von 趁總裁出國錄製、「王子」外號出自《小王子》扮相；Invisible 1976 年底遭羅薩里奧當局查禁、1975 年 9 月發行、5 首、開場組曲近 16 分鐘；Mojave 3 第四張、Halstead《Sleeping on Roads》；Tindersticks《Curtains》第三張、〈Let's Pretend〉用 Love《Forever Changes》時期未用伴奏帶、英國榜第 37；《Soft Tissue》第十四張、City Slang；Cowboy Junkies《At the End of Paths Taken》第十張、John A. Timmins 朗讀第 10 首；《Open》離開 Geffen 後第三張；Spain 首作、Josh Haden、〈Spiritual〉由 Johnny Cash 翻唱；Kurt Vile 第六張、Billboard 200 第 40；Drugdealer《Raw Honey》Mac DeMarco 錄音、Weyes Blood 在〈Honey〉；Flaming Lips 第 15 張、Mick Jones 旁白。
 - 媒體名 0、「據」0、榜單只留官方榜（Billboard 200、英國專輯榜）。
 - 逐張審過，未改字。
+
+## 主線上線（條號 23151–23153）
+- **23151**：上線 17 張：card_catalog 17／17、KV 17 鍵回讀逐字一致（stamp 20261105m63）、試聽 16 ready／1 unavailable（Taiguara《Viagem》Apple br 專輯頁無曲目）、seed +17、prepare／published gate 0 error。封面 CAA 17（縮圖表目視相符）。三軸 §0.8.1 錨點人工評分（經典度 3 佔 10/17、4 佔 6）。頂點 0。
+- **23152**：情緒評分 `score-ml63/`：**落恍惚 9/17＝53%**。出格：放鬆 5（Taiguara、Invisible 質地 0.4 判輕；Cowboy Junkies《Black Eyed Man》《One Soul Now》《The Wilderness》y −0.3～0.4）、頹靡 3（Cowboy Junkies《Open》《At the End of Paths Taken》、Spain 色溫 −0.3～−0.6）。
+- **23153**：**場景潛力**：巴西 MPB／Clube da Esquina、日本 city pop、衣索比亞爵士三條是死池（池中同人全判輕，研究層一查多是有鼓短歌或乾淨原聲）；Cowboy Junkies 只有《Trinity Session》型的霧狀早期盤落恍惚，後期根源搖滾判輕、失真暗盤判冷；能穩落的是 Tindersticks 弦樂／靈魂味盤、Mojave 3、Kurt Vile、Drugdealer、Pale Saints、Flaming Lips 合成器霧盤。**不再派**。
