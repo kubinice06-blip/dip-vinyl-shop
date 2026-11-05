@@ -92,3 +92,9 @@
   - `Susan Geaney|Tape Melt`：「這首單曲一軌的曲子」→「這首只有一軌的曲子」（同上，且語句不通）。
 - **23232** 媒體名、榜單名次、「據說／據傳」、資料平台名全批 0；`qa-batch out`、`qa-check-research`、`fix-spacing` 0 處。
 - **23233** 寫作層自報兩個小判斷照准：Irisarri 第二句「無鼓的 drone」取自 sound 欄（研究 a 有 Noise Not Music 樂評支撐）；KRM「碾壓式的電子樂」是 note 原詞縮短。
+
+## 上線（2026-11-05，主線）（條號 23234）
+- **23234**：上線 14 張：card_catalog 14／14、KV 14 鍵回讀逐字一致（stamp 20261105md37）、試聽 10 ready／4 unavailable（`popular-preview manifest` 換成最紅那首 5 張）、seed +14、published gate 0 error（warning 皆 UPC 盡力而為與人工身分提示）。寫入前對 origin/main seed 與並行 ml66／ml67 卡單去重 0 撞。
+
+## 藝人介紹（ALBUM_ONBOARDING §11）
+- 本批新藝人 12 位切 **ar-d-283**（名冊 `batch-progress/artist-intro/roster-md37-ar-d-283.json`；Basinski、Irisarri 已有介紹）：補洞 2 組（Sonnet，WebSearch 每位限 3 次）→ 寫作 1 組（Opus；full 4、thin 8）→ `qa-artist` 0 處 → 主線逐位審未改字 → 上線 12／12。

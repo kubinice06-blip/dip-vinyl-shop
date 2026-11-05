@@ -74,3 +74,9 @@
 ## 主線審稿（23311–23312；2026-11-05）
 - **23311** 逐張審 5 張（全文印出，逐句對研究稿 a、b、c、e：Mortiis Emperor 貝斯手、1993 起、CMI 第三張、兩首 52:35、戰鼓與低頻持續音；Far Drifters 第聶伯羅、Jol Tai、2016-01-01、獻給 Lynch、〈Heat〉敖德薩現場合作；Miles to Midnight 三人分工、2018-01-09、八首 41:57、偵探與旅館；One Leg One Eye Lankum 創始成員、父親童年工作的廢倉庫、2022-10-27 Nyahh；KRM & KMRU Instagram 結識、Martin 提議人聲、Clash「沒有節拍」、六首 48:39、2024-06-14 Phantom Limb），皆有出處。**逐張審過，未改字。**
 - **23312** 媒體名、榜單名次、「據說／據傳」、資料平台名全批 0；`qa-batch out`、`qa-check-research`、`fix-spacing` 0 處。
+
+## 上線（2026-11-05，主線）（條號 23313）
+- **23313**：上線 5 張：card_catalog 5／5、KV 5 鍵回讀逐字一致（stamp 20261105md38）、試聽 5 ready（最紅那首換 5 張）、seed +5、published gate 0 error。
+
+## 藝人介紹（ALBUM_ONBOARDING §11）
+- 本批新藝人 5 位（含兩個合作組合鍵）切 **ar-d-284**（名冊 `batch-progress/artist-intro/roster-md38-ar-d-284.json`）：補洞 1 組 → 寫作 1 組（full 2、thin 3）→ `qa-artist` 0 處 → 主線逐位審改 2 處（KRM & KMRU 刪維基轉引的單源評價句；Orchestra「大衛林區」改拉丁原文 David Lynch）→ 上線 5／5。
