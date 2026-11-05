@@ -1,0 +1,472 @@
+{
+ "group": "md38a",
+ "factions": [
+  {
+   "id": "dungeon-synth",
+   "zh": "Dungeon synth（陰冷厚殘響派）",
+   "count": 5,
+   "why": ""
+  },
+  {
+   "id": "dark-jazz",
+   "zh": "Dark jazz／doom jazz",
+   "count": 2,
+   "why": ""
+  },
+  {
+   "id": "slowcore",
+   "zh": "Slowcore／doomgaze 冷盤",
+   "count": 2,
+   "why": ""
+  },
+  {
+   "id": "dark-folk",
+   "zh": "Dark folk／drone folk",
+   "count": 5,
+   "why": ""
+  }
+ ],
+ "albums": [
+  {
+   "artist": "Mortwight",
+   "album": "This Body Is Not Mine",
+   "year": 2021,
+   "label": "Mortwight (Realm & Ritual 重發)",
+   "country": "us",
+   "faction": "dungeon-synth",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Realm & Ritual 廠牌專訪點名的暗黑 ambient／dungeon synth 代表盤；無鼓，洞穴般的合成器層壓在身上，陰冷。",
+   "moodGuess": {
+    "x": 1.6,
+    "y": 1.2,
+    "z": -1.2,
+    "why": "無鼓，洞穴般厚殘響合成器墊，磁帶糊，陰冷無人味"
+   },
+   "evidence": [
+    "https://daily.bandcamp.com/label-profile/realm-ritual-label-profile",
+    "https://mortwight.bandcamp.com/album/this-body-is-not-mine",
+    "https://coverartarchive.org/release-group/2302ae62-63e4-4f38-9a0f-09f277c11657/front-250",
+    "https://musicbrainz.org/release-group/2302ae62-63e4-4f38-9a0f-09f277c11657"
+   ],
+   "mbRgMbid": "2302ae62-63e4-4f38-9a0f-09f277c11657",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "",
+   "bcdaily": "“cavernous slices of phantasmagoric melancholia that weigh down on the listener in a way that evokes ghostly possession”（廠主引述）"
+  },
+  {
+   "artist": "Wooded Memory",
+   "album": "My Secret Horror",
+   "year": 2020,
+   "label": "Wooded Memory (Realm & Ritual)",
+   "country": "us",
+   "faction": "dungeon-synth",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Realm & Ritual 廠牌專訪推的 dungeon synth／dark ambient 專輯；暗林般的合成器長音，有淡淡旋律但整體陰。",
+   "moodGuess": {
+    "x": 1.8,
+    "y": 0.9,
+    "z": -0.5,
+    "why": "無鼓合成器長音與殘響，暗林氛圍，旋律淡"
+   },
+   "evidence": [
+    "https://daily.bandcamp.com/label-profile/realm-ritual-label-profile",
+    "https://woodedmemory.bandcamp.com/album/my-secret-horror",
+    "https://coverartarchive.org/release-group/b54af191-0ca1-438f-a7bc-9602aee7ffd4/front-250",
+    "https://musicbrainz.org/release-group/b54af191-0ca1-438f-a7bc-9602aee7ffd4"
+   ],
+   "mbRgMbid": "b54af191-0ca1-438f-a7bc-9602aee7ffd4",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "z -0.5 偏邊緣；Daily 寫 wistful／hope，旋律可能偏暖，主線可先汰",
+   "bcdaily": "“wistful and longing compositions that still retain a sense of hope in a world that forbids it”（廠主引述）"
+  },
+  {
+   "artist": "Mortiis",
+   "album": "Keiser av en dimensjon ukjent",
+   "year": 1995,
+   "label": "Malicious Records",
+   "country": "no",
+   "faction": "dungeon-synth",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp Daily 把 Mortiis 寫成 dungeon synth 的「dark dungeon」風格開創者；此盤是 era-II 起點，磁帶味合成器、陰森低頻。",
+   "moodGuess": {
+    "x": 1.9,
+    "y": 1.2,
+    "z": -1.2,
+    "why": "無鼓，粗糙合成器弦樂與低頻墊，磁帶糊，陰森"
+   },
+   "evidence": [
+    "https://daily.bandcamp.com/label-profile/crypt-of-the-wizard-hackney-label-record-store",
+    "https://daily.bandcamp.com/lists/fantasy-synth-album-guide",
+    "https://coverartarchive.org/release-group/ed7c3ef5-09f3-3659-838b-869efca287d1/front-250",
+    "https://musicbrainz.org/release-group/ed7c3ef5-09f3-3659-838b-869efca287d1"
+   ],
+   "mbRgMbid": "ed7c3ef5-09f3-3659-838b-869efca287d1",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Daily 僅在專文／榜單中以先驅身分提及，沒有專評此盤；故事性靠 Mortiis 的開創者地位",
+   "bcdaily": "“the “dark dungeon” style established by Mortiis”（Fantasy Synth 榜；Crypt of the Wizard 專文稱其為 dungeon synth 先驅）"
+  },
+  {
+   "artist": "Mortiis",
+   "album": "Født til å herske",
+   "year": 1994,
+   "label": "Dark Dungeon Music",
+   "country": "no",
+   "faction": "dungeon-synth",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Mortiis 的 dungeon synth 起點（era-I），Daily 稱其為 dungeon synth 先驅；粗糙合成器、洞穴殘響，陰冷。",
+   "moodGuess": {
+    "x": 1.8,
+    "y": 1.1,
+    "z": -1.0,
+    "why": "無鼓，簡陋合成器長音與殘響，低保真，陰冷"
+   },
+   "evidence": [
+    "https://daily.bandcamp.com/label-profile/crypt-of-the-wizard-hackney-label-record-store",
+    "https://daily.bandcamp.com/lists/fantasy-synth-album-guide",
+    "https://coverartarchive.org/release-group/1539458e-126e-3ff6-b284-600e528225bb/front-250",
+    "https://musicbrainz.org/release-group/1539458e-126e-3ff6-b284-600e528225bb"
+   ],
+   "mbRgMbid": "1539458e-126e-3ff6-b284-600e528225bb",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "同上，Daily 僅先驅提及",
+   "bcdaily": "“the name was borrowed from a compilation by Mortiis… progenitor of dungeon synth”（Crypt of the Wizard 專文）"
+  },
+  {
+   "artist": "Mortiis",
+   "album": "The Stargate",
+   "year": 1999,
+   "label": "Earache Records",
+   "country": "no",
+   "faction": "dungeon-synth",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Mortiis era-II 暗黑 ambient 代表作，Daily 以其為 dark dungeon 風格的基準；厚合成器墊與陰冷氛圍。",
+   "moodGuess": {
+    "x": 2.0,
+    "y": 1.0,
+    "z": -0.8,
+    "why": "無鼓，厚合成器墊與環境音，陰冷偏電影感"
+   },
+   "evidence": [
+    "https://daily.bandcamp.com/label-profile/crypt-of-the-wizard-hackney-label-record-store",
+    "https://daily.bandcamp.com/lists/fantasy-synth-album-guide",
+    "https://coverartarchive.org/release-group/00a671c4-d672-3128-afbe-cc9bfde4f85e/front-250",
+    "https://musicbrainz.org/release-group/00a671c4-d672-3128-afbe-cc9bfde4f85e"
+   ],
+   "mbRgMbid": "00a671c4-d672-3128-afbe-cc9bfde4f85e",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "z／y 為記憶估計，旋律性較前兩張強；Daily 僅先驅提及",
+   "bcdaily": "“the “dark dungeon” style established by Mortiis”（Fantasy Synth 榜）"
+  },
+  {
+   "artist": "The Orchestra of Mirrored Reflections",
+   "album": "Far Drifters",
+   "year": 2016,
+   "label": "The Orchestra of Mirrored Reflections (Joltai)",
+   "country": "ua",
+   "faction": "dark-jazz",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Bandcamp Daily 烏克蘭前衛電子榜點名承襲 Bohren 的 dark jazz；刷子鼓輕拍加脈動長音，像 Lynch 電影配樂。",
+   "moodGuess": {
+    "x": 1.8,
+    "y": 0.9,
+    "z": -1.3,
+    "why": "刷子輕鼓＋明暗起伏的長音 drone，Bohren 式，陰冷"
+   },
+   "evidence": [
+    "https://daily.bandcamp.com/scene-report/ukraine-vanguard-electronic-list",
+    "https://joltai.bandcamp.com/album/far-drifters",
+    "https://coverartarchive.org/release-group/e2b417fa-41c1-472d-bac6-4d7a2bbc2d5c/front-250",
+    "https://musicbrainz.org/release-group/e2b417fa-41c1-472d-bac6-4d7a2bbc2d5c"
+   ],
+   "mbRgMbid": "e2b417fa-41c1-472d-bac6-4d7a2bbc2d5c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "「pulsating drones」字眼；實際是否有脈動感需主線聽過",
+   "bcdaily": "“Far Drifters would work well as a David Lynch film soundtrack, with the soft patter of the drums an unnerving accompaniment to pulsating drones”"
+  },
+  {
+   "artist": "Atrium Carceri, Cities Last Broadcast, God Body Disconnect",
+   "album": "Miles to Midnight",
+   "year": 2018,
+   "label": "Cryo Chamber",
+   "country": "se",
+   "faction": "dark-jazz",
+   "genres": [
+    "jazz"
+   ],
+   "why": "Bandcamp Daily 的 Cryo Chamber 廠牌專文稱它「Bohren & Der Club of Gore meets Twin Peaks」；刷子鼓、暗黑 ambient 與夜色爵士。",
+   "moodGuess": {
+    "x": 2.0,
+    "y": 0.9,
+    "z": -0.8,
+    "why": "刷子鼓與低音，暗黑 ambient 墊，夜色 noir 爵士"
+   },
+   "evidence": [
+    "https://daily.bandcamp.com/label-profile/cryo-chamber-dark-ambient-guide",
+    "https://cryochamber.bandcamp.com/album/miles-to-midnight",
+    "https://coverartarchive.org/release-group/c71b0e31-4a9a-4431-b327-85ef1a58cb03/front-250",
+    "https://musicbrainz.org/release-group/c71b0e31-4a9a-4431-b327-85ef1a58cb03"
+   ],
+   "mbRgMbid": "c71b0e31-4a9a-4431-b327-85ef1a58cb03",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "三人合作名（藝人欄為合名）；md28 系列 Cryo Chamber 已提過 Atrium Carceri 他盤，去重 0 但需主線確認合名鍵",
+   "bcdaily": "“cinematic, jazzy sound—“Bohren & Der Club Of Gore meets Twin Peaks,” as Heath puts it”"
+  },
+  {
+   "artist": "True Widow",
+   "album": "Circumambulation",
+   "year": 2013,
+   "label": "Relapse Records",
+   "country": "us",
+   "faction": "slowcore",
+   "genres": [
+    "rock"
+   ],
+   "why": "Bandcamp Daily 「doomgaze」榜稱其為該場景最大成功；slowcore／stonegaze，慢鼓、低吟、厚失真糊，陰冷。",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.4,
+    "z": -0.8,
+    "why": "慢速鼓、厚失真與殘響糊、低吟，催眠陰沉"
+   },
+   "evidence": [
+    "https://daily.bandcamp.com/lists/doomgaze-list",
+    "https://truewidow.bandcamp.com/album/circumambulation",
+    "https://coverartarchive.org/release-group/d1feee48-231f-49cd-9a56-b6fa4d01942a/front-250",
+    "https://musicbrainz.org/release-group/d1feee48-231f-49cd-9a56-b6fa4d01942a"
+   ],
+   "mbRgMbid": "d1feee48-231f-49cd-9a56-b6fa4d01942a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "有鼓且部分曲目有推進，x 2.5 貼近邊緣",
+   "bcdaily": "“could pass for Sonic Youth shredding in a decaying cathedral”；稱為 doomgaze 的 biggest success story"
+  },
+  {
+   "artist": "Jesu",
+   "album": "Everyday I Get Closer to the Light From Which I Came",
+   "year": 2013,
+   "label": "Avalanche Recordings",
+   "country": "gb",
+   "faction": "slowcore",
+   "genres": [
+    "rock"
+   ],
+   "why": "Bandcamp Daily 〈Slowcore: A Brief Timeline〉把 Jesu 寫成 slowcore 傳統的「frigid lushness」；此盤是後期霧狀吉他牆與冷合成器。",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.5,
+    "z": -0.4,
+    "why": "慢板、厚吉他牆與合成器霧，殘響糊"
+   },
+   "evidence": [
+    "https://daily.bandcamp.com/lists/slowcore-a-brief-timeline",
+    "https://daily.bandcamp.com/lists/doomgaze-list",
+    "https://coverartarchive.org/release-group/7174266a-d96c-4812-8618-53e9508456a8/front-250",
+    "https://musicbrainz.org/release-group/7174266a-d96c-4812-8618-53e9508456a8"
+   ],
+   "mbRgMbid": "7174266a-d96c-4812-8618-53e9508456a8",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Daily 未專評此盤；此盤旋律偏亮，z -0.4 貼邊，池中 Jesu《Conqueror》z -0.4、self-titled -0.9",
+   "bcdaily": "“a frigid lushness… narcotized vocoder swells, glacial chord changes, walls of melodic guitars”（談 Jesu 整體）"
+  },
+  {
+   "artist": "One Leg One Eye",
+   "album": "...And Take the Black Worm With Me",
+   "year": 2022,
+   "label": "Nyahh Records",
+   "country": "ie",
+   "faction": "dark-folk",
+   "genres": [
+    "folk"
+   ],
+   "why": "Bandcamp Daily 新黑暗民謠報告與 Nyahh 廠牌專文都點名；管風笛、風箱、hurdy-gurdy 的儀式 drone，無鼓，陰沉。",
+   "moodGuess": {
+    "x": 1.4,
+    "y": 1.4,
+    "z": -1.3,
+    "why": "無鼓，uilleann pipes／hurdy-gurdy 長 drone 與 lo-fi 噪，儀式感陰沉"
+   },
+   "evidence": [
+    "https://daily.bandcamp.com/scene-report/new-dark-folk-uk-ireland-scene-report",
+    "https://daily.bandcamp.com/features/nyahh-records-label-profile",
+    "https://onelegoneeye.bandcamp.com/album/and-take-the-black-worm-with-me",
+    "https://coverartarchive.org/release-group/19d2659f-e697-428d-b79d-7e85a8faf203/front-250",
+    "https://musicbrainz.org/release-group/19d2659f-e697-428d-b79d-7e85a8faf203"
+   ],
+   "mbRgMbid": "19d2659f-e697-428d-b79d-7e85a8faf203",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "歌曲有人聲民謠旋律；genres 用 folk（請主線確認類型樹第一層有 folk）",
+   "bcdaily": "“throbbing mantle of ritualistic drones”；“a stark melancholy born of modern-day disaffection”"
+  },
+  {
+   "artist": "Tristwch y Fenywod",
+   "album": "Tristwch Y Fenywod",
+   "year": 2024,
+   "label": "Night School",
+   "country": "gb",
+   "faction": "dark-folk",
+   "genres": [
+    "folk"
+   ],
+   "why": "Bandcamp Daily 當代迷幻榜寫它「dwells in the darkness」，另有專訪；葬禮步調、dirge drone 與鐘聲，儀式感。",
+   "moodGuess": {
+    "x": 1.8,
+    "y": 1.2,
+    "z": -1.4,
+    "why": "葬禮般慢速、dirge drone、鐘聲與軍鼓，儀式感陰暗"
+   },
+   "evidence": [
+    "https://daily.bandcamp.com/lists/contemporary-psychedelic-album-guide",
+    "https://daily.bandcamp.com/features/tristwch-y-fenywod-self-titled-interview",
+    "https://coverartarchive.org/release-group/3e20ff15-3ff4-4d7b-a85f-22649f7c7595/front-250",
+    "https://musicbrainz.org/release-group/3e20ff15-3ff4-4d7b-a85f-22649f7c7595"
+   ],
+   "mbRgMbid": "3e20ff15-3ff4-4d7b-a85f-22649f7c7595",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "有 martial percussion；團員明確反對 neofolk 右翼，政治安全",
+   "bcdaily": "“Each of the eight tracks marches to a steady, funereal pace, with dirge-like drones, clanging chimes, and martial percussion”"
+  },
+  {
+   "artist": "Burd Ellen",
+   "album": "A Tarot of the Green Wood",
+   "year": 2022,
+   "label": "Burd Ellen",
+   "country": "gb",
+   "faction": "dark-folk",
+   "genres": [
+    "folk"
+   ],
+   "why": "Bandcamp Daily 新黑暗民謠報告收錄；傳統民謠被 drone 與多層人聲吟唱包裹，風琴長音，儀式感。",
+   "moodGuess": {
+    "x": 1.6,
+    "y": 0.9,
+    "z": -0.5,
+    "why": "無鼓，風琴 drone、鐘與多層人聲吟唱，幽靈般"
+   },
+   "evidence": [
+    "https://daily.bandcamp.com/scene-report/new-dark-folk-uk-ireland-scene-report",
+    "https://burdellen.bandcamp.com/album/a-tarot-of-the-green-wood",
+    "https://coverartarchive.org/release-group/32356411-ce53-40b6-8ff2-6bef019571f2/front-250",
+    "https://musicbrainz.org/release-group/32356411-ce53-40b6-8ff2-6bef019571f2"
+   ],
+   "mbRgMbid": "32356411-ce53-40b6-8ff2-6bef019571f2",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "旋律為傳統民謠，z -0.5、y 0.9 偏邊緣；主線可先汰",
+   "bcdaily": "“enigmatic takes on traditional tunes, swaddled in transcendent drone and multi-layered vocal incantations”"
+  },
+  {
+   "artist": "Ulvesang",
+   "album": "Ulvesang",
+   "year": 2015,
+   "label": "Ulvesang (Realm & Ritual 黑膠)",
+   "country": "us",
+   "faction": "dark-folk",
+   "genres": [
+    "folk"
+   ],
+   "why": "Realm & Ritual 廠牌專訪點名的 dark folk 黑膠首張；原聲吉他加 ambient 與黑金屬陰影，反法西斯立場明確。",
+   "moodGuess": {
+    "x": 2.0,
+    "y": 0.8,
+    "z": -0.6,
+    "why": "慢板原聲吉他與 ambient 殘響，暗林氛圍"
+   },
+   "evidence": [
+    "https://daily.bandcamp.com/label-profile/realm-ritual-label-profile",
+    "https://ulvesang.bandcamp.com/album/ulvesang",
+    "https://coverartarchive.org/release-group/e703e771-2435-46ef-a0a4-993c171d0e8f/front-250",
+    "https://musicbrainz.org/release-group/e703e771-2435-46ef-a0a4-993c171d0e8f"
+   ],
+   "mbRgMbid": "e703e771-2435-46ef-a0a4-993c171d0e8f",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Daily 只一句帶過；原聲吉他可能判輕，y 0.8 貼邊；主線可先汰",
+   "bcdaily": "“Ulvesang’s dark folk debut”（Realm & Ritual 專文僅此一句）"
+  },
+  {
+   "artist": "Jun Konagaya",
+   "album": "Organ",
+   "year": 2012,
+   "label": "Eskimo Records (Urashima 2023 重發)",
+   "country": "jp",
+   "faction": "dark-folk",
+   "genres": [
+    "folk"
+   ],
+   "why": "Bandcamp Daily Urashima 廠牌專文稱它「story-suite of gorgeous sadness」；人聲、管風琴、磁帶與打擊，像結了冰的聖歌。",
+   "moodGuess": {
+    "x": 1.7,
+    "y": 0.9,
+    "z": -0.7,
+    "why": "慢板管風琴與人聲、磁帶糊，結冰般的聖歌感"
+   },
+   "evidence": [
+    "https://daily.bandcamp.com/lists/urashima-label-profile",
+    "https://urashima.bandcamp.com/album/organ",
+    "https://coverartarchive.org/release-group/94856208-e37f-4589-9c3f-896c9803392d/front-250",
+    "https://musicbrainz.org/release-group/94856208-e37f-4589-9c3f-896c9803392d"
+   ],
+   "mbRgMbid": "94856208-e37f-4589-9c3f-896c9803392d",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "年份取 MB 首發 2012（Daily 談 2023 重發）；偏民謠／聖歌，風格非標準 dark folk",
+   "bcdaily": "“story-suite of gorgeous sadness… as though Konagaya is channeling sacred song from a curious dimension where the world has frozen over”"
+  }
+ ],
+ "notes": [
+  "Bandcamp Daily 對這四個場景的專文很少：沒有專門的 dungeon synth／dark jazz 榜；Fantasy Synth 榜多為明亮「fantasy synth」（Flickers from the Fen、Arthuros 等判暖不收）。",
+  "只交 14 張（目標 27）：dark jazz 場景（Bohren、Kilimanjaro、Dale Cooper）早已在 md2／md9 收完；slowcore 經典（Low、Galaxie 500、Codeine、Red House Painters、Duster、Slint）池中已有；Nadja、Angelic Process、Planning for Burial《Desideratum》已在 md33／md2。",
+  "已刪除候選：Fuzznaut《Form Is Emptiness》（MB 為 EP）、Worm《Necropalace》（funeral doom 嘶吼）、Jim Kirkwood《Where Shadows Lie》（Berlin School、2 軌）、Flooding（noise rock）、Planning for Burial 其餘盤（有推進鼓、x 貼邊）、Lankum《False Lankum》（旋律清楚往暖）、Brìghde Chaimbeul（笛聲偏亮）、Coil《MTPITD Vol 1》（池中已有）。",
+  "2026-11-05 WebSearch 用 4 次（兩次索引確認、兩次補找 slowcore／dark folk 專文，後者找到 〈Slowcore: A Brief Timeline〉）。"
+ ]
+}
