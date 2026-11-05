@@ -281,3 +281,5 @@
 | ml63 | 23081 | 恍惚非電子：巴西／拉美厚編曲慢盤（Verocai 一路、Clube da Esquina 慢盤、MPB 弦樂厚墊）＋日本 AOR／city pop 慢板厚編曲＋迷幻軟搖滾／psych 慢盤（Khruangbin 一路、70s 厚殘響 soft psych）＋衣索比亞爵士／非洲慢板厚盤（非雷鬼） | ✅ 上線 17／落格 9（2026-11-05；策展兩輪 51、跨批讓 ml62 4、主線汰 11、研究汰 19；巴西 MPB／city pop／衣索比亞爵士池中全判輕、研究一查多是有鼓短歌，產量靠 Tindersticks／Cowboy Junkies 補提名，Cowboy Junkies 後期判輕或判冷；死池，不再派） |
 | ml64 | 23001 | 恍惚電子二線 A：ambient／chill-out 經典廠牌二線（Waveform、Apollo、Instinct Ambient、Fax 二線）、downbeat／nu-jazz 電子暖盤、organic house／慢 Balearic 新世代（條號跳過 22841–23000 留給並行的 ml62／ml63） | ✅ 上線 12／落格 8（場景見底） |
 | ml65 | 23081 | 恍惚電子二線 B：ambient pop／electronica 女聲暖盤、日韓台暖電子 downtempo 二線、hypnagogic／lo-fi 非嘻哈器樂電子、暖 trip-hop 器樂二線 | ✅ 上線 9／落格 6（場景見底） |
+| ml66 | 23321 | 恍惚 Bandcamp 爬梳 A（2026-11-05，店主「恍惚跟頹靡可以去 Bandcamp 爬梳」；不收嘻哈／雷鬼／dub）：Bandcamp Daily「Best Ambient」「Best Electronic」月度專欄與年度榜（2016–2026）裡暖、厚、慢的那半——暖 ambient 厚墊、磁帶溫暖 drone、ambient pop、暖 downtempo／electronica、new age 復興厚而暖的（條號避開並行的 md37／md38＝23161／23241） | |
+| ml67 | 23401 | 恍惚 Bandcamp 爬梳 B：Bandcamp Daily「Best Jazz」「Best Soul」「Best Rock」、Lists／Album of the Day 裡的恍惚場景——spiritual jazz 慢盤與當代暖爵士、slow neo-soul／alt R&B 獨立盤、暖 dream pop／shoegaze／slowcore 厚殘響盤、psych folk 暖盤 | |
