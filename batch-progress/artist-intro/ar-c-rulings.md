@@ -2590,4 +2590,4 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 
 - 39 位寫：14 full、25 thin；Peter Veale 只有一條單源事實、無國籍無聲音描述，不寫（skipped）。
 - 題材照寫：Phill Niblock 2024 年因心臟衰竭過世；Bodo Staiger（Rheingold）2019 年辭世；Council of Nine《Diagnosis》寫母親病逝；Hammock 外甥 2016 年死於腫瘤；Kevin Richard Martin 妻兒的健康危機。
-- 主線審稿 9 處：KaS Product 刪「電子龐克先驅」（法文維基單源）；Netherworld、Silicon Scally、Phill Niblock 第一句補國籍與身分（Niblock 連帶刪「電影工作者」重複與「製作上千場演出」壓回 245 字）；Rheingold「前一年以 70 歲辭世」改「2019 年底辭世，享年 70 歲」（原句時間指涉不清）；Peaking Lights 刪「賣出數千張」（在世者不寫銷量）。
+- 主線審稿 8 處：KaS Product 刪「電子龐克先驅」（法文維基單源）；Netherworld、Silicon Scally、Phill Niblock 第一句補國籍與身分（Niblock 連帶刪「電影工作者」重複與「製作上千場演出」壓回 245 字）；Rheingold「前一年以 70 歲辭世」改「2019 年底辭世，享年 70 歲」（原句時間指涉不清）；Peaking Lights 刪「賣出數千張」（在世者不寫銷量）。
