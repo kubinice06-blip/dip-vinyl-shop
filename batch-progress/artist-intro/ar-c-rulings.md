@@ -2634,3 +2634,9 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 36 位寫：17 full、19 thin；不寫 4 位——Purrple Cat、less.people（沒有身世或聲音事實），NOGYMX、Kupla（研究稿只有一條來源，比照 ar-d-509 Kloob & Onasander 撤稿）。
 - 題材照寫：E.S.G. 因持有毒品入獄一年；Big Moe 2007 年心臟病發昏迷後過世；Prince Be（P.M. Dawn）2005 年中風、2016 年因糖尿病併發腎病過世；Mika Vainio（Ø）2017 年過世。
 - 主線審稿 8 處：在世者只留一項成績——Norbert Möslang 刪瑞士電影獎（留瑞士聯邦文化署的先驅評價）、蛋堡 金曲獎只寫最佳華語專輯、Ghostpoet「兩度入圍水星獎」改「首張即入圍」、P.M. Dawn 刪「又有兩首進前十」；E.S.G. 刪單一報紙的「最被低估」；Steve von Till、Fursaxa 第一句補國籍（連帶刪「不教音樂」）。
+
+## ar-d-511（2026-11-05，嘻哈、lo-fi beat、器樂 hip hop 與前衛／自由爵士）
+
+- 39 位寫：19 full、20 thin；Aviino 查不到國籍與身分、素材幾乎全來自 Chillhop 一家，不寫（skipped）。
+- 題材照寫：L'Orange 因膽脂瘤嚴重失聰、兩次耳部手術；Domo Genesis 清寒成長、弟弟有自閉症。
+- 主線審稿 10 處：媒體榜單不寫——Req 刪 Fact 史上 50 大 trip-hop 第 14 名、Babyfather 刪 TMT 與 RA 年度第一、Curren$y & Harry Fraud 刪 XXL Awards 年度 EP；Req「當地最受推崇的塗鴉作者之一」改「當地知名」；Black Kray 刪「Goth Money 開創 emo rap」（首創宣稱，兩源同屬維基家族）；Anna Webber 刪 BMI Charlie Parker 獎（在世者只留古根漢）；Ned Rothenberg「横山」改台灣字形「橫山」；Revolutionary Ensemble 補「美國」並壓回 250 字。
