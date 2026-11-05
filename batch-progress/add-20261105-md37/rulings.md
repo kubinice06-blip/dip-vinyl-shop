@@ -21,3 +21,17 @@
 - **23201**（Amby Downs《Ngunmal》）：人工身分核對 Bandcamp 專輯頁與 Room40 官網相符；兩首主曲約 50 分鐘（含節錄版約 63 分鐘），正規專輯。Room40 官網日期 2023-11-10、Bandcamp 11-11，取 2023。Daily 引文逐句核對屬實。moodGuess 輕微存疑（首曲重複喀喀聲，Daily 說包覆在 drone 裡，非鼓拍），不汰。
 - **23202**（Lori Goldston《Open Space》）：pinned，Bandcamp 十軌約 74 分半，Daily 引文屬實。moodGuess 輕微存疑：Bandcamp CD 介紹稱可「roar at full volume」也有失重寧靜段，x 2.1 恐偏低、可能貼 2.5–2.8；大提琴木質共鳴 z 可能略偏暖，評分時留意。
 - **23203**（Roland Kayn《Matego I-II》）：推翻策展層：curatorWhy 的「contemplative and chilling」是 Daily 講 Electronic Symphony I-III，不是 Matego；Matego 原句為 relies on distance and near-silence。curatorRisk 的「Electric Symphony」為筆誤。**moodGuess 明顯存疑**：近乎寂靜、短爆發，y 1.2 恐偏高，可能靜輕冷；建議評分後若 y 不足 0.5 就汰換。兩軌約 52 分半，正規專輯。
+
+## 研究 c 組
+- 23181：KMRU《Natur》廠牌實為 Touch（TONE85），非卡單的「KMRU」，建議改 label；Bandcamp 數位版附 8:33 節錄，Touch CD 為單曲 52:38；moodGuess 存疑（harsh noise 厚牆，可能偏躁）。
+- 23182：jason calhoun《small circle》身分核對無誤（2023-09-29、六首 53:40、Dear Life Records 取自 Daily 與藝人說明），無推翻。
+- 23183：Thaniel Ion Lee《Five Ghosts》年份取 Bandcamp 原發 2018-04-07（MB 2021 為再登）；單一來源（Daily），status thin。
+- 23184：Amulets《Not Around But Through》moodGuess 存疑：官方說明含 post-hardcore／emo／metal、「explosive and cathartic」，x 恐超出邊距，建議汰換。
+- 23185：Sara Zalek & Norman W. Long《Steelworkers' Drone》身分核對無誤（2020-02-11、RM032、四軌 57:35）；內容為聲音漫步與現場即興，Daily 稱「excitement and calm」，moodGuess 存疑（z 與 y），建議汰換。
+
+## 研究 d 組
+- 23191　Alma Laprida《Pitch Dark and Trembling》：Bandcamp 頁面發行者欄為 Alma Laprida，但說明末寫「Released by Outside Time, Washington, DC」；實際廠牌應為 Outside Time，建議上架 label 改。全長 30:38，貼 30 分鐘門檻，仍屬正規專輯（現場錄音）。
+- 23192　Selvedge《BLOOM IN RUST》：發行日 2020-10-26（Rusted Tone 與藝人 Bandcamp 皆同）；SoundCloud 2022-09-30 為上傳日，年份取 2020。moodGuess 存疑（Daily「brighter through repetition／let light in」、摩斯式節奏、沙沙打擊），本組最貼邊。
+- 23193　Susan Geaney《Tape Melt》：單曲一軌 35:05，Bandcamp 發行 2022-07-15，早於 2022-07-29 首演；取 7 月 15 日。後段密度上升、結尾高音，moodGuess 輕度存疑。
+- 23194　Jacob Kirkegaard《Snowblind》：11 軌 36:23；Andrée 事實取 Wikipedia；MB 重查時伺服器忙碌，盤名年份以 Bandcamp＋Wikipedia 交叉。
+- 23195　seah：無推翻；5 軌 48:36，MB 與 Bandcamp 同日 2022-05-15。
