@@ -1,0 +1,1476 @@
+{
+ "group": "ml75",
+ "source": "batch-progress/bandcamp-dt-20261105/pick-ml75.json",
+ "factions": [
+  {
+   "id": "psy",
+   "zh": "psybient／psydub",
+   "count": 4,
+   "why": ""
+  },
+  {
+   "id": "chill",
+   "zh": "downtempo／trip-hop",
+   "count": 13,
+   "why": ""
+  },
+  {
+   "id": "beats",
+   "zh": "lo-fi／器樂嘻哈 beat",
+   "count": 10,
+   "why": ""
+  },
+  {
+   "id": "soul",
+   "zh": "alt R&B／neo-soul",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "dream",
+   "zh": "dream pop／bedroom pop",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "ambient",
+   "zh": "ambient",
+   "count": 3,
+   "why": ""
+  },
+  {
+   "id": "vocal",
+   "zh": "人聲 downtempo",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "dreampop",
+   "zh": "dream pop 電子",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "jazz",
+   "zh": "電子爵士",
+   "count": 1,
+   "why": ""
+  }
+ ],
+ "albums": [
+  {
+   "artist": "Delerium",
+   "album": "Nuages Du Monde",
+   "year": 2006,
+   "label": "",
+   "country": "ca",
+   "faction": "vocal",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp 有鼓名單（第三輪，研究判有鼓）：Last.fm 收聽 89785 人；標籤 Alternative、ambient、chillout、downtempo、electronica、female vocals",
+   "moodGuess": {
+    "x": 1.8,
+    "y": 0.8,
+    "z": 0,
+    "why": "人聲殘響、環境墊、慢"
+   },
+   "evidence": [
+    "https://delerium-official.bandcamp.com/album/nuages-du-monde",
+    "https://musicbrainz.org/release-group/9f5aaaad-dcee-3352-ae2e-1f65584bfb24"
+   ],
+   "mbRgMbid": "9f5aaaad-dcee-3352-ae2e-1f65584bfb24",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（把握 high）；當初汰因「ml71：有拍推進 9：electronic／pop，主打曲登美國舞曲榜（研究 a））」——照「有鼓不等於躁」重判：研究層須寫清楚鼓是哪一種（慢拖無力／攻擊性／舞池推進）",
+   "bandcamp": {
+    "url": "https://delerium-official.bandcamp.com/album/nuages-du-monde",
+    "img": "https://f4.bcbits.com/img/a3868638845_10.jpg",
+    "date": "03 Oct 2006 00:00:00 GMT",
+    "tracks": 11,
+    "minutes": 58,
+    "listeners": 89785,
+    "location": "Vancouver, British Columbia"
+   },
+   "priorBatch": "add-20261106-ml71",
+   "priorDrop": "ml71：有拍推進 9：electronic／pop，主打曲登美國舞曲榜（研究 a））",
+   "source": "研究判有鼓"
+  },
+  {
+   "artist": "Acopia",
+   "album": "Chances",
+   "year": 2022,
+   "label": "Companion",
+   "faction": "dream",
+   "genres": [
+    "rock"
+   ],
+   "why": "Bandcamp 有鼓名單（第三輪，標籤篩掉）：Last.fm 收聽 74992 人；標籤 Electronic、ambient、downtempo、dream pop、electronica、ethereal",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 0.9,
+    "z": 0.2,
+    "why": "shoegaze霧、慢拍、人聲"
+   },
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（把握 mid）；當初汰因「標籤：dream pop、pop」——照「有鼓不等於躁」重判：研究層須寫清楚鼓是哪一種（慢拖無力／攻擊性／舞池推進）",
+   "source": "標籤篩掉",
+   "priorDrop": "標籤：dream pop、pop",
+   "bandcamp": {
+    "url": "https://acopia.bandcamp.com/album/chances",
+    "img": "https://f4.bcbits.com/img/a438607377_5.jpg",
+    "date": "",
+    "tracks": 8,
+    "minutes": 34,
+    "listeners": 74992,
+    "location": "Melbourne, Australia",
+    "publisher": ""
+   },
+   "country": "",
+   "evidence": [
+    "https://acopia.bandcamp.com/album/chances",
+    "https://musicbrainz.org/release-group/e5e58d31-5190-465d-b6b2-d8ce7c712291"
+   ],
+   "mbRgMbid": "e5e58d31-5190-465d-b6b2-d8ce7c712291",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": []
+  },
+  {
+   "artist": "Lucky Daye",
+   "album": "Algorithm",
+   "year": 2024,
+   "label": "Keep Cool/RCA",
+   "faction": "soul",
+   "genres": [
+    "soul"
+   ],
+   "why": "Bandcamp 有鼓名單（第三輪，標籤篩掉）：Last.fm 收聽 67659 人；標籤 Hip Hop、Hip-Hop/Rap、Neo-Soul、Psychedelic Soul、R&B、Spoken Word",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 0.5,
+    "z": 1.2,
+    "why": "靈魂厚低頻、暖人聲"
+   },
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（把握 low）；當初汰因「標籤：Hip Hop、Hip-Hop/Rap、Neo-Soul、Psychedelic Soul、R&B」——照「有鼓不等於躁」重判：研究層須寫清楚鼓是哪一種（慢拖無力／攻擊性／舞池推進）",
+   "source": "標籤篩掉",
+   "priorDrop": "標籤：Hip Hop、Hip-Hop/Rap、Neo-Soul、Psychedelic Soul、R&B",
+   "bandcamp": {
+    "url": "https://luckydayemusic.bandcamp.com/album/algorithm",
+    "img": "https://f4.bcbits.com/img/a3986667773_5.jpg",
+    "date": "",
+    "tracks": 14,
+    "minutes": 60,
+    "listeners": 67659,
+    "location": "California",
+    "publisher": ""
+   },
+   "country": "",
+   "evidence": [
+    "https://luckydayemusic.bandcamp.com/album/algorithm",
+    "https://musicbrainz.org/release-group/d2cedb76-40e4-4b86-af36-1e3d4ee14819"
+   ],
+   "mbRgMbid": "d2cedb76-40e4-4b86-af36-1e3d4ee14819",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": []
+  },
+  {
+   "artist": "Teen Daze",
+   "album": "Themes for Dying Earth",
+   "year": 2017,
+   "label": "Flora",
+   "faction": "chill",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp 有鼓名單（第三輪，標籤篩掉）：Last.fm 收聽 53396 人；標籤 Electronic、Vancouver、ambient、ambient pop、balearic、downtempo",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 0.5,
+    "z": 0.4,
+    "why": "氛圍合成器霧、柔鼓、微暖"
+   },
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（把握 mid）；當初汰因「標籤：ambient pop、synth pop」——照「有鼓不等於躁」重判：研究層須寫清楚鼓是哪一種（慢拖無力／攻擊性／舞池推進）",
+   "source": "標籤篩掉",
+   "priorDrop": "標籤：ambient pop、synth pop",
+   "bandcamp": {
+    "url": "https://teendaze.bandcamp.com/album/themes-for-dying-earth",
+    "img": "https://f4.bcbits.com/img/a3611170787_5.jpg",
+    "date": "",
+    "tracks": 11,
+    "minutes": 46,
+    "listeners": 53396,
+    "location": "Vancouver, British Columbia",
+    "publisher": ""
+   },
+   "country": "",
+   "evidence": [
+    "https://teendaze.bandcamp.com/album/themes-for-dying-earth",
+    "https://musicbrainz.org/release-group/7846f9c3-4fb6-4243-ae17-c4267949519a"
+   ],
+   "mbRgMbid": "7846f9c3-4fb6-4243-ae17-c4267949519a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": []
+  },
+  {
+   "artist": "Vanessa Daou",
+   "album": "Make You Love",
+   "year": 2000,
+   "label": "EQ8R Music Group",
+   "faction": "chill",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp 有鼓名單（第三輪，標籤篩掉）：Last.fm 收聽 44239 人；標籤 Electronic、Spoken Word、chilled jazz pop、dance、dream pop、folk",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 0.5,
+    "z": 0.3,
+    "why": "慵懶電子鼓、女聲耳語、微暖都會夜"
+   },
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（把握 low）；當初汰因「標籤：chilled jazz pop、dance、dream pop」——照「有鼓不等於躁」重判：研究層須寫清楚鼓是哪一種（慢拖無力／攻擊性／舞池推進）",
+   "source": "標籤篩掉",
+   "priorDrop": "標籤：chilled jazz pop、dance、dream pop",
+   "bandcamp": {
+    "url": "https://daourecords.bandcamp.com/album/make-you-love",
+    "img": "https://f4.bcbits.com/img/a2711446678_5.jpg",
+    "date": "",
+    "tracks": 12,
+    "minutes": 46,
+    "listeners": 44239,
+    "location": "Las Vegas, Nevada",
+    "publisher": ""
+   },
+   "country": "",
+   "evidence": [
+    "https://daourecords.bandcamp.com/album/make-you-love",
+    "https://musicbrainz.org/release-group/f906ea98-5533-3ca4-a393-3a5cf9f8a9bf"
+   ],
+   "mbRgMbid": "f906ea98-5533-3ca4-a393-3a5cf9f8a9bf",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": []
+  },
+  {
+   "artist": "Alpha",
+   "album": "The Sky Is Mine",
+   "year": 2007,
+   "label": "Don't Touch Recordings",
+   "country": "gb",
+   "faction": "ambient",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp 有鼓名單（第三輪，研究判有鼓）：Last.fm 收聽 30343 人；標籤 Easylistening、Electronic、ambient、chill out、downtempo、soundscapes electronica ",
+   "moodGuess": {
+    "x": 1.6,
+    "y": 0.7,
+    "z": 0.1,
+    "why": "環境音景、暖合成墊"
+   },
+   "evidence": [
+    "https://alphaheaven.bandcamp.com/album/the-sky-is-mine",
+    "https://musicbrainz.org/release-group/1d9c3a38-7e6f-35df-bf91-a5856b2dca80"
+   ],
+   "mbRgMbid": "1d9c3a38-7e6f-35df-bf91-a5856b2dca80",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "The Sky is Mine",
+   "uncertain": "moodGuess 為卡單粗估（把握 mid）；當初汰因「ml73：有拍推進：歌曲式 trip-hop、女聲主導，z 貼邊（研究 a）」——照「有鼓不等於躁」重判：研究層須寫清楚鼓是哪一種（慢拖無力／攻擊性／舞池推進）",
+   "bandcamp": {
+    "url": "https://alphaheaven.bandcamp.com/album/the-sky-is-mine",
+    "img": "https://f4.bcbits.com/img/a1898450109_5.jpg",
+    "date": "01 Jan 2007 00:00:00 GMT",
+    "tracks": 12,
+    "minutes": 63,
+    "listeners": 30343,
+    "location": "Bristol, UK",
+    "publisher": "Alpha"
+   },
+   "priorBatch": "add-20261106-ml73",
+   "priorDrop": "ml73：有拍推進：歌曲式 trip-hop、女聲主導，z 貼邊（研究 a）",
+   "source": "研究判有鼓"
+  },
+  {
+   "artist": "Helios",
+   "album": "Domicile",
+   "year": 2020,
+   "label": "Ghostly International",
+   "country": "",
+   "faction": "chill",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp 有鼓名單（第三輪，研究判有鼓）：Last.fm 收聽 20053 人；標籤 Ambient、chill、downtempo、electronic、idm. experimental、indie",
+   "moodGuess": {
+    "x": 1.9,
+    "y": 0.8,
+    "z": 0.2,
+    "why": "柔和氛圍電子，磁帶糊感，鬆拍"
+   },
+   "evidence": [
+    "https://heliosmusic.bandcamp.com/album/domicile",
+    "https://musicbrainz.org/release-group/dcded70b-8c77-4bc5-8d0e-3440b70a64cf"
+   ],
+   "mbRgMbid": "dcded70b-8c77-4bc5-8d0e-3440b70a64cf",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（把握 mid）；當初汰因「ml73：判輕：文案直述平靜合成器質地、無鼓，y 約 0.2–0.5；」——照「有鼓不等於躁」重判：研究層須寫清楚鼓是哪一種（慢拖無力／攻擊性／舞池推進）",
+   "bandcamp": {
+    "url": "https://heliosmusic.bandcamp.com/album/domicile",
+    "img": "https://f4.bcbits.com/img/a2401233163_5.jpg",
+    "date": "11 Dec 2020 00:00:00 GMT",
+    "tracks": 9,
+    "minutes": 50,
+    "listeners": 20053,
+    "location": "",
+    "publisher": "Keith Kenniff + Hollie Kenniff"
+   },
+   "priorBatch": "add-20261106-ml73",
+   "priorDrop": "ml73：判輕：文案直述平靜合成器質地、無鼓，y 約 0.2–0.5；",
+   "source": "研究判有鼓"
+  },
+  {
+   "artist": "Robot Koch",
+   "album": "Songs for Trees and Cyborgs",
+   "year": 2010,
+   "label": "Project: Mooncircle",
+   "faction": "beats",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp 有鼓名單（第三輪，標籤篩掉）：Last.fm 收聽 17610 人；標籤 1000 Names、Boxcutter、Doshy、Downtempo、Electronic、Folk",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 0.6,
+    "z": 0.5,
+    "why": "電子民謠，木質採樣與碎拍"
+   },
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（把握 mid）；當初汰因「標籤：Hip Hop、Techno」——照「有鼓不等於躁」重判：研究層須寫清楚鼓是哪一種（慢拖無力／攻擊性／舞池推進）",
+   "source": "標籤篩掉",
+   "priorDrop": "標籤：Hip Hop、Techno",
+   "bandcamp": {
+    "url": "https://projectmooncircle.bandcamp.com/album/songs-for-trees-and-cyborgs",
+    "img": "https://f4.bcbits.com/img/a1886946532_5.jpg",
+    "date": "",
+    "tracks": 15,
+    "minutes": 51,
+    "listeners": 17610,
+    "location": "Berlin, Germany",
+    "publisher": ""
+   },
+   "country": "",
+   "evidence": [
+    "https://projectmooncircle.bandcamp.com/album/songs-for-trees-and-cyborgs",
+    "https://musicbrainz.org/release-group/18a6a426-5621-4cf8-905a-511965881d00"
+   ],
+   "mbRgMbid": "18a6a426-5621-4cf8-905a-511965881d00",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": []
+  },
+  {
+   "artist": "Hibernation",
+   "album": "Some Things Never Change",
+   "year": 2008,
+   "label": "",
+   "country": "gb",
+   "faction": "ambient",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp 有鼓名單（第三輪，研究判有鼓）：Last.fm 收聽 15902 人；標籤 Ambient、Electronic、Glitch、World、ambient、chill",
+   "moodGuess": {
+    "x": 1.4,
+    "y": 0.5,
+    "z": 0.3,
+    "why": "長篇氛圍墊，緩慢"
+   },
+   "evidence": [
+    "https://sebtaylor.bandcamp.com/album/some-things-never-change",
+    "https://musicbrainz.org/release-group/4c8ee476-fb54-3f1c-a431-566d5cecb285"
+   ],
+   "mbRgMbid": "4c8ee476-fb54-3f1c-a431-566d5cecb285",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（把握 mid）；當初汰因「ml71：有拍推進 9：新聞稿 syncopated grooves、breaks、glitch（研究 b））」——照「有鼓不等於躁」重判：研究層須寫清楚鼓是哪一種（慢拖無力／攻擊性／舞池推進）",
+   "bandcamp": {
+    "url": "https://sebtaylor.bandcamp.com/album/some-things-never-change",
+    "img": "https://f4.bcbits.com/img/a1642207547_10.jpg",
+    "date": "27 Oct 2015 00:00:00 GMT",
+    "tracks": 15,
+    "minutes": 147,
+    "listeners": 15902,
+    "location": "Brighton, UK"
+   },
+   "priorBatch": "add-20261106-ml71",
+   "priorDrop": "ml71：有拍推進 9：新聞稿 syncopated grooves、breaks、glitch（研究 b））",
+   "source": "研究判有鼓"
+  },
+  {
+   "artist": "edapollo",
+   "album": "Blue Spring",
+   "year": 2021,
+   "label": "Opine Records",
+   "faction": "chill",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp 有鼓名單（第三輪，標籤篩掉）：Last.fm 收聽 13219 人；標籤 Electronic、House、ambient、chill、chill wave、downtempo",
+   "moodGuess": {
+    "x": 2.1,
+    "y": 0.5,
+    "z": 0.6,
+    "why": "chillwave氛圍house，輕暖"
+   },
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（把握 mid）；當初汰因「標籤：House、house、pop」——照「有鼓不等於躁」重判：研究層須寫清楚鼓是哪一種（慢拖無力／攻擊性／舞池推進）",
+   "source": "標籤篩掉",
+   "priorDrop": "標籤：House、house、pop",
+   "bandcamp": {
+    "url": "https://edapollo.bandcamp.com/album/blue-spring",
+    "img": "https://f4.bcbits.com/img/a302477888_5.jpg",
+    "date": "",
+    "tracks": 9,
+    "minutes": 33,
+    "listeners": 13219,
+    "location": "Los Angeles, California",
+    "publisher": ""
+   },
+   "country": "",
+   "evidence": [
+    "https://edapollo.bandcamp.com/album/blue-spring",
+    "https://musicbrainz.org/release-group/9ba29ad9-49cd-4655-9ae2-4984b2fe7293"
+   ],
+   "mbRgMbid": "9ba29ad9-49cd-4655-9ae2-4984b2fe7293",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": []
+  },
+  {
+   "artist": "Erik Jackson",
+   "album": "Night Street",
+   "year": 2017,
+   "label": "Nuages Records",
+   "faction": "beats",
+   "genres": [
+    "hiphop"
+   ],
+   "why": "Bandcamp 有鼓名單（第三輪，標籤篩掉）：Last.fm 收聽 12242 人；標籤 Hip Hop、Hip-Hop/Rap、Jazz Fusion、Trip Hop、dnb、downtempo",
+   "moodGuess": {
+    "x": 2.7,
+    "y": 0.7,
+    "z": 0.4,
+    "why": "trip hop爵士融合，夜感"
+   },
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（把握 low）；當初汰因「標籤：Hip Hop、Hip-Hop/Rap、hiphop、jazzy drum & bass」——照「有鼓不等於躁」重判：研究層須寫清楚鼓是哪一種（慢拖無力／攻擊性／舞池推進）",
+   "source": "標籤篩掉",
+   "priorDrop": "標籤：Hip Hop、Hip-Hop/Rap、hiphop、jazzy drum & bass",
+   "bandcamp": {
+    "url": "https://erikjackson.bandcamp.com/album/night-street",
+    "img": "https://f4.bcbits.com/img/a2368947295_5.jpg",
+    "date": "",
+    "tracks": 12,
+    "minutes": 43,
+    "listeners": 12242,
+    "location": "New Smyrna Beach, Florida",
+    "publisher": ""
+   },
+   "country": "",
+   "evidence": [
+    "https://erikjackson.bandcamp.com/album/night-street",
+    "https://musicbrainz.org/release-group/89cc9abf-9fe5-498e-9ab0-986305fbc645"
+   ],
+   "mbRgMbid": "89cc9abf-9fe5-498e-9ab0-986305fbc645",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": []
+  },
+  {
+   "artist": "Catching Flies",
+   "album": "Beats & Pieces II",
+   "year": 2026,
+   "label": "Indigo Soul",
+   "faction": "chill",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp 有鼓名單（第三輪，標籤篩掉）：Last.fm 收聽 10548 人；標籤 Electronic、downtempo、electronic、electronica、melodic house、trip hop",
+   "moodGuess": {
+    "x": 2.7,
+    "y": 0.5,
+    "z": 0.2,
+    "why": "trip hop house，柔拍"
+   },
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（把握 low）；當初汰因「標籤：melodic house」——照「有鼓不等於躁」重判：研究層須寫清楚鼓是哪一種（慢拖無力／攻擊性／舞池推進）",
+   "source": "標籤篩掉",
+   "priorDrop": "標籤：melodic house",
+   "bandcamp": {
+    "url": "https://catchingflies.bandcamp.com/album/beats-pieces-ii",
+    "img": "https://f4.bcbits.com/img/a4158251186_5.jpg",
+    "date": "",
+    "tracks": 12,
+    "minutes": 48,
+    "listeners": 10548,
+    "location": "UK",
+    "publisher": ""
+   },
+   "country": "",
+   "evidence": [
+    "https://catchingflies.bandcamp.com/album/beats-pieces-ii",
+    "https://musicbrainz.org/release-group/9116d2f8-e886-4d05-be0e-e19c76915f53"
+   ],
+   "mbRgMbid": "9116d2f8-e886-4d05-be0e-e19c76915f53",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": []
+  },
+  {
+   "artist": "Free the Robots",
+   "album": "Kaduwa",
+   "year": 2022,
+   "label": "",
+   "faction": "beats",
+   "genres": [
+    "hiphop"
+   ],
+   "why": "Bandcamp 有鼓名單（第三輪，標籤篩掉）：Last.fm 收聽 8095 人；標籤 Electronic、Hip hop、downtempo、electronica、hip hop、jazz",
+   "moodGuess": {
+    "x": 2.8,
+    "y": 0.7,
+    "z": 0.5,
+    "why": "爵士嘻哈迷幻，暖"
+   },
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（把握 low）；當初汰因「標籤：Hip hop、hip hop」——照「有鼓不等於躁」重判：研究層須寫清楚鼓是哪一種（慢拖無力／攻擊性／舞池推進）",
+   "source": "標籤篩掉",
+   "priorDrop": "標籤：Hip hop、hip hop",
+   "bandcamp": {
+    "url": "https://freetherobots.bandcamp.com/album/kaduwa-2",
+    "img": "https://f4.bcbits.com/img/a1281098341_5.jpg",
+    "date": "",
+    "tracks": 16,
+    "minutes": 48,
+    "listeners": 8095,
+    "location": "Los Angeles, California",
+    "publisher": ""
+   },
+   "country": "",
+   "evidence": [
+    "https://freetherobots.bandcamp.com/album/kaduwa-2",
+    "https://musicbrainz.org/release-group/571801bc-eca7-408d-8dc4-5b7426d1e33e"
+   ],
+   "mbRgMbid": "571801bc-eca7-408d-8dc4-5b7426d1e33e",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": []
+  },
+  {
+   "artist": "Eat Static",
+   "album": "Back to Earth",
+   "year": 2008,
+   "label": "Interchill Records",
+   "faction": "psy",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp 有鼓名單（第三輪，標籤篩掉）：Last.fm 收聽 7551 人；標籤 Back To Earth、Electronic、ambient、downtempo、dub、eat static",
+   "moodGuess": {
+    "x": 2.9,
+    "y": 1.3,
+    "z": 0.2,
+    "why": "Eat Static 迷幻 dub，低頻厚"
+   },
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（把握 high）；當初汰因「標籤：dub、goa trance、goatrance、psy trance、trance」——照「有鼓不等於躁」重判：研究層須寫清楚鼓是哪一種（慢拖無力／攻擊性／舞池推進）",
+   "source": "標籤篩掉",
+   "priorDrop": "標籤：dub、goa trance、goatrance、psy trance、trance",
+   "bandcamp": {
+    "url": "https://eat-static.bandcamp.com/album/back-to-earth",
+    "img": "https://f4.bcbits.com/img/a1495114585_5.jpg",
+    "date": "",
+    "tracks": 11,
+    "minutes": 73,
+    "listeners": 7551,
+    "location": "UK",
+    "publisher": ""
+   },
+   "country": "",
+   "evidence": [
+    "https://eat-static.bandcamp.com/album/back-to-earth",
+    "https://musicbrainz.org/release-group/90d412ca-11f1-3c3b-84bf-e08efd39aec3"
+   ],
+   "mbRgMbid": "90d412ca-11f1-3c3b-84bf-e08efd39aec3",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": []
+  },
+  {
+   "artist": "Computerjockeys",
+   "album": "Plankton",
+   "year": 2001,
+   "label": "Island",
+   "faction": "chill",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp 有鼓名單（第三輪，標籤篩掉）：Last.fm 收聽 7000 人；標籤 Electronic、ambient、atmospheric、downtempo、dream pop、electronic",
+   "moodGuess": {
+    "x": 2,
+    "y": 0.8,
+    "z": 0.2,
+    "why": "dream pop 氛圍，霧"
+   },
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（把握 low）；當初汰因「標籤：dream pop」——照「有鼓不等於躁」重判：研究層須寫清楚鼓是哪一種（慢拖無力／攻擊性／舞池推進）",
+   "source": "標籤篩掉",
+   "priorDrop": "標籤：dream pop",
+   "bandcamp": {
+    "url": "https://guitarsunkissed.bandcamp.com/album/plankton",
+    "img": "https://f4.bcbits.com/img/a1561534305_5.jpg",
+    "date": "",
+    "tracks": 16,
+    "minutes": 72,
+    "listeners": 7000,
+    "location": "Germany",
+    "publisher": ""
+   },
+   "country": "",
+   "evidence": [
+    "https://guitarsunkissed.bandcamp.com/album/plankton",
+    "https://musicbrainz.org/release-group/179be71a-e75f-3c42-924e-b7009785e399"
+   ],
+   "mbRgMbid": "179be71a-e75f-3c42-924e-b7009785e399",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": []
+  },
+  {
+   "artist": "Ash Walker",
+   "album": "Astronaut",
+   "year": 2023,
+   "label": "Night Time Stories",
+   "faction": "chill",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp 有鼓名單（第三輪，標籤篩掉）：Last.fm 收聽 6145 人；標籤 Alternative、Jazz、Soul、alternative、downtempo、dub",
+   "moodGuess": {
+    "x": 2.7,
+    "y": 0.7,
+    "z": 0.4,
+    "why": "爵士dub funk，暖"
+   },
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（把握 mid）；當初汰因「標籤：Soul、dub、funk」——照「有鼓不等於躁」重判：研究層須寫清楚鼓是哪一種（慢拖無力／攻擊性／舞池推進）",
+   "source": "標籤篩掉",
+   "priorDrop": "標籤：Soul、dub、funk",
+   "bandcamp": {
+    "url": "https://ashwalker.bandcamp.com/album/astronaut",
+    "img": "https://f4.bcbits.com/img/a3188537441_5.jpg",
+    "date": "",
+    "tracks": 10,
+    "minutes": 38,
+    "listeners": 6145,
+    "location": "London, UK",
+    "publisher": ""
+   },
+   "country": "",
+   "evidence": [
+    "https://ashwalker.bandcamp.com/album/astronaut",
+    "https://musicbrainz.org/release-group/17276592-9a6b-47e6-b5ee-fa331013a604"
+   ],
+   "mbRgMbid": "17276592-9a6b-47e6-b5ee-fa331013a604",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": []
+  },
+  {
+   "artist": "saib.",
+   "album": "Sailing",
+   "year": 2018,
+   "label": "Cold Busted",
+   "faction": "beats",
+   "genres": [
+    "hiphop"
+   ],
+   "why": "Bandcamp 有鼓名單（第三輪，標籤篩掉）：Last.fm 收聽 5795 人；標籤 Hip Hop、Hip-Hop/Rap、Instrumental Hip-Hop、beats、boom bap、cocktail hour",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 0.7,
+    "z": 0.8,
+    "why": "boom bap輕拍、取樣暖"
+   },
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（把握 mid）；當初汰因「標籤：Hip Hop、Hip-Hop/Rap、Instrumental Hip-Hop」——照「有鼓不等於躁」重判：研究層須寫清楚鼓是哪一種（慢拖無力／攻擊性／舞池推進）",
+   "source": "標籤篩掉",
+   "priorDrop": "標籤：Hip Hop、Hip-Hop/Rap、Instrumental Hip-Hop",
+   "bandcamp": {
+    "url": "https://saibeats.bandcamp.com/album/sailing",
+    "img": "https://f4.bcbits.com/img/a4234515907_5.jpg",
+    "date": "",
+    "tracks": 12,
+    "minutes": 39,
+    "listeners": 5795,
+    "location": "Casablanca, Morocco",
+    "publisher": ""
+   },
+   "country": "",
+   "evidence": [
+    "https://saibeats.bandcamp.com/album/sailing",
+    "https://musicbrainz.org/release-group/e0250118-de1b-412b-a995-c47da3822dfe"
+   ],
+   "mbRgMbid": "e0250118-de1b-412b-a995-c47da3822dfe",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": []
+  },
+  {
+   "artist": "Hector Plimmer",
+   "album": "Infinity Mirrors",
+   "year": 2025,
+   "label": "Power in Comfort",
+   "faction": "chill",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp 有鼓名單（第三輪，標籤篩掉）：Last.fm 收聽 5359 人；標籤 Electronic、Neo-Soul、RnB、ambient、dance、downtempo",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 0.7,
+    "z": 0.8,
+    "why": "neo-soul電子，鬆拍暖霧"
+   },
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（把握 mid）；當初汰因「標籤：Neo-Soul、dance」——照「有鼓不等於躁」重判：研究層須寫清楚鼓是哪一種（慢拖無力／攻擊性／舞池推進）",
+   "source": "標籤篩掉",
+   "priorDrop": "標籤：Neo-Soul、dance",
+   "bandcamp": {
+    "url": "https://hector-plimmer.bandcamp.com/album/infinity-mirrors",
+    "img": "https://f4.bcbits.com/img/a1334336762_5.jpg",
+    "date": "",
+    "tracks": 11,
+    "minutes": 37,
+    "listeners": 5359,
+    "location": "London, UK",
+    "publisher": ""
+   },
+   "country": "",
+   "evidence": [
+    "https://hector-plimmer.bandcamp.com/album/infinity-mirrors",
+    "https://musicbrainz.org/release-group/bccb3123-3e3c-4341-9e88-04e30890a0b2"
+   ],
+   "mbRgMbid": "bccb3123-3e3c-4341-9e88-04e30890a0b2",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": []
+  },
+  {
+   "artist": "Błoto",
+   "album": "Erozje",
+   "year": 2020,
+   "label": "Astigmatic Records",
+   "faction": "beats",
+   "genres": [
+    "hiphop"
+   ],
+   "why": "Bandcamp 有鼓名單（第三輪，標籤篩掉）：Last.fm 收聽 4977 人；標籤 Broken Beat、Brokenbeat、Experimental、Instrumental Hip-Hop、Jazz、Poland",
+   "moodGuess": {
+    "x": 2.8,
+    "y": 0.7,
+    "z": 0.2,
+    "why": "爵士斷拍beats、粗糙"
+   },
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（把握 low）；當初汰因「標籤：Instrumental Hip-Hop、experimental hip-hop」——照「有鼓不等於躁」重判：研究層須寫清楚鼓是哪一種（慢拖無力／攻擊性／舞池推進）",
+   "source": "標籤篩掉",
+   "priorDrop": "標籤：Instrumental Hip-Hop、experimental hip-hop",
+   "bandcamp": {
+    "url": "https://bloto.bandcamp.com/album/erozje",
+    "img": "https://f4.bcbits.com/img/a3925891161_5.jpg",
+    "date": "",
+    "tracks": 10,
+    "minutes": 43,
+    "listeners": 4977,
+    "location": "Poland",
+    "publisher": ""
+   },
+   "country": "",
+   "evidence": [
+    "https://bloto.bandcamp.com/album/erozje",
+    "https://musicbrainz.org/release-group/35d6cf8e-d716-4934-abab-40033409b229"
+   ],
+   "mbRgMbid": "35d6cf8e-d716-4934-abab-40033409b229",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": []
+  },
+  {
+   "artist": "Culprate",
+   "album": "Colours",
+   "year": 2011,
+   "label": "Gradient Audio",
+   "faction": "chill",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp 有鼓名單（第三輪，標籤篩掉）：Last.fm 收聽 4133 人；標籤 Culprate、Dubstep、Electronic、Electronica、Experimental、IDM",
+   "moodGuess": {
+    "x": 2.8,
+    "y": 0.9,
+    "z": 0.3,
+    "why": "trip-hop碎拍，低頻厚"
+   },
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（把握 mid）；當初汰因「標籤：Dubstep」——照「有鼓不等於躁」重判：研究層須寫清楚鼓是哪一種（慢拖無力／攻擊性／舞池推進）",
+   "source": "標籤篩掉",
+   "priorDrop": "標籤：Dubstep",
+   "bandcamp": {
+    "url": "https://culprate.bandcamp.com/album/colours",
+    "img": "https://f4.bcbits.com/img/a1838841594_5.jpg",
+    "date": "",
+    "tracks": 9,
+    "minutes": 60,
+    "listeners": 4133,
+    "location": "Bristol, UK",
+    "publisher": ""
+   },
+   "country": "",
+   "evidence": [
+    "https://culprate.bandcamp.com/album/colours",
+    "https://musicbrainz.org/release-group/33b386fe-3339-4253-b0b2-114374826cc0"
+   ],
+   "mbRgMbid": "33b386fe-3339-4253-b0b2-114374826cc0",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": []
+  },
+  {
+   "artist": "Argaman",
+   "album": "My Little Forest",
+   "year": 2009,
+   "label": "Nebulosa Records",
+   "country": "se",
+   "faction": "ambient",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp 有鼓名單（第三輪，研究判有鼓）：Last.fm 收聽 3723 人；標籤 Electronic、Psydub、ambient、chillout、limited edition vinyl、psybient",
+   "moodGuess": {
+    "x": 2,
+    "y": 1,
+    "z": 0.2,
+    "why": "psydub慢拍、迷幻低頻"
+   },
+   "evidence": [
+    "https://nebulosarecords.bandcamp.com/album/my-little-forest",
+    "https://musicbrainz.org/release-group/e3ac12d8-a0e6-4e69-955f-b0214c0239ae"
+   ],
+   "mbRgMbid": "e3ac12d8-a0e6-4e69-955f-b0214c0239ae",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（把握 mid）；當初汰因「ml72：有拍推進＋判輕 7：多數曲重心在中高頻、psychill 持續律動（研究 b））」——照「有鼓不等於躁」重判：研究層須寫清楚鼓是哪一種（慢拖無力／攻擊性／舞池推進）",
+   "bandcamp": {
+    "url": "https://nebulosarecords.bandcamp.com/album/my-little-forest",
+    "img": "https://f4.bcbits.com/img/a3405448060_10.jpg",
+    "date": "07 Mar 2025 00:00:00 GMT",
+    "tracks": 10,
+    "minutes": 74,
+    "listeners": 3723,
+    "location": "Sweden"
+   },
+   "priorBatch": "add-20261106-ml72",
+   "priorDrop": "ml72：有拍推進＋判輕 7：多數曲重心在中高頻、psychill 持續律動（研究 b））",
+   "source": "研究判有鼓"
+  },
+  {
+   "artist": "Desert Dwellers",
+   "album": "Breath",
+   "year": 2019,
+   "label": "Black Swan Sounds",
+   "faction": "chill",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp 有鼓名單（第三輪，標籤篩掉）：Last.fm 收聽 3326 人；標籤 Electronic、House、World、ambient、beats、chill",
+   "moodGuess": {
+    "x": 2,
+    "y": 0.7,
+    "z": 0.5,
+    "why": "冥想氛圍加鬆拍，暖"
+   },
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（把握 low）；當初汰因「標籤：House」——照「有鼓不等於躁」重判：研究層須寫清楚鼓是哪一種（慢拖無力／攻擊性／舞池推進）",
+   "source": "標籤篩掉",
+   "priorDrop": "標籤：House",
+   "bandcamp": {
+    "url": "https://desertdwellersmusic.bandcamp.com/album/breath",
+    "img": "https://f4.bcbits.com/img/a2502030371_5.jpg",
+    "date": "",
+    "tracks": 10,
+    "minutes": 77,
+    "listeners": 3326,
+    "location": "Boulder, Colorado",
+    "publisher": ""
+   },
+   "country": "",
+   "evidence": [
+    "https://desertdwellersmusic.bandcamp.com/album/breath",
+    "https://musicbrainz.org/release-group/2e26d30f-b583-45c9-8750-2f9d6fdfb575"
+   ],
+   "mbRgMbid": "2e26d30f-b583-45c9-8750-2f9d6fdfb575",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": []
+  },
+  {
+   "artist": "Pan Amsterdam",
+   "album": "Confines",
+   "year": 2025,
+   "label": "Heavenly Recordings",
+   "faction": "beats",
+   "genres": [
+    "hiphop"
+   ],
+   "why": "Bandcamp 有鼓名單（第三輪，標籤篩掉）：Last.fm 收聽 3110 人；標籤 Hip-Hop/Rap、hip hop、jazz、nu jazz、nu soul、rap",
+   "moodGuess": {
+    "x": 2.8,
+    "y": 0.5,
+    "z": 0.6,
+    "why": "nu soul嘻哈、鼓點"
+   },
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（把握 low）；當初汰因「標籤：Hip-Hop/Rap、hip hop、nu soul、rap」——照「有鼓不等於躁」重判：研究層須寫清楚鼓是哪一種（慢拖無力／攻擊性／舞池推進）",
+   "source": "標籤篩掉",
+   "priorDrop": "標籤：Hip-Hop/Rap、hip hop、nu soul、rap",
+   "bandcamp": {
+    "url": "https://panamsterdam.bandcamp.com/album/confines",
+    "img": "https://f4.bcbits.com/img/a1176794445_5.jpg",
+    "date": "",
+    "tracks": 12,
+    "minutes": 44,
+    "listeners": 3110,
+    "location": "New York, New York",
+    "publisher": ""
+   },
+   "country": "",
+   "evidence": [
+    "https://panamsterdam.bandcamp.com/album/confines",
+    "https://musicbrainz.org/release-group/b5813322-3dd2-40c6-a25c-49b64b99420f"
+   ],
+   "mbRgMbid": "b5813322-3dd2-40c6-a25c-49b64b99420f",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": []
+  },
+  {
+   "artist": "David Starfire",
+   "album": "Karuna",
+   "year": 2016,
+   "label": "",
+   "faction": "beats",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp 有鼓名單（第三輪，標籤篩掉）：Last.fm 收聽 2386 人；標籤 Electronic、Hip Hop、House、chillout、downtempo、dubstep",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 0.7,
+    "z": 0.7,
+    "why": "chillout house、軟拍、暖"
+   },
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（把握 mid）；當初汰因「標籤：Hip Hop、House、dubstep」——照「有鼓不等於躁」重判：研究層須寫清楚鼓是哪一種（慢拖無力／攻擊性／舞池推進）",
+   "source": "標籤篩掉",
+   "priorDrop": "標籤：Hip Hop、House、dubstep",
+   "bandcamp": {
+    "url": "https://davidstarfiremusic.bandcamp.com/album/karuna",
+    "img": "https://f4.bcbits.com/img/a1430017819_5.jpg",
+    "date": "",
+    "tracks": 10,
+    "minutes": 41,
+    "listeners": 2386,
+    "location": "Los Angeles, California",
+    "publisher": ""
+   },
+   "country": "",
+   "evidence": [
+    "https://davidstarfiremusic.bandcamp.com/album/karuna",
+    "https://musicbrainz.org/release-group/20ef13aa-61a1-493d-b553-701d210b3ec5"
+   ],
+   "mbRgMbid": "20ef13aa-61a1-493d-b553-701d210b3ec5",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": []
+  },
+  {
+   "artist": "parkbreezy",
+   "album": "Better Days",
+   "year": 2025,
+   "label": "",
+   "faction": "beats",
+   "genres": [
+    "hiphop"
+   ],
+   "why": "Bandcamp 有鼓名單（第三輪，標籤篩掉）：Last.fm 收聽 2261 人；標籤 Hip-Hop/Rap、bass music、downtempo、electronic music、hip hop、jazz",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 0.6,
+    "z": 0.7,
+    "why": "爵士取樣bass beat，暖"
+   },
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（把握 low）；當初汰因「標籤：Hip-Hop/Rap、bass music、hip hop」——照「有鼓不等於躁」重判：研究層須寫清楚鼓是哪一種（慢拖無力／攻擊性／舞池推進）",
+   "source": "標籤篩掉",
+   "priorDrop": "標籤：Hip-Hop/Rap、bass music、hip hop",
+   "bandcamp": {
+    "url": "https://parkbreezy.bandcamp.com/album/better-days-2",
+    "img": "https://f4.bcbits.com/img/a2941441369_5.jpg",
+    "date": "",
+    "tracks": 11,
+    "minutes": 33,
+    "listeners": 2261,
+    "location": "Denver, Colorado",
+    "publisher": ""
+   },
+   "country": "",
+   "evidence": [
+    "https://parkbreezy.bandcamp.com/album/better-days-2",
+    "https://musicbrainz.org/release-group/c0ac00fd-25fc-415e-813d-1f1a3e95413a"
+   ],
+   "mbRgMbid": "c0ac00fd-25fc-415e-813d-1f1a3e95413a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": []
+  },
+  {
+   "artist": "Lee Scott",
+   "album": "Butter Fly",
+   "year": 2015,
+   "label": "High Focus Records",
+   "faction": "beats",
+   "genres": [
+    "hiphop"
+   ],
+   "why": "Bandcamp 有鼓名單（第三輪，標籤篩掉）：Last.fm 收聽 2121 人；標籤 Butter、Dirty Dike、Fly、Hip-Hop/Rap、Money、Uk Hip Hop",
+   "moodGuess": {
+    "x": 2.8,
+    "y": 1,
+    "z": 0,
+    "why": "UK hip-hop取樣、鼓糊、說唱"
+   },
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（把握 low）；當初汰因「標籤：Hip-Hop/Rap、Uk Hip Hop、alternative hip-hop rap r&b、hip hop、rap」——照「有鼓不等於躁」重判：研究層須寫清楚鼓是哪一種（慢拖無力／攻擊性／舞池推進）",
+   "source": "標籤篩掉",
+   "priorDrop": "標籤：Hip-Hop/Rap、Uk Hip Hop、alternative hip-hop rap r&b、hip hop、rap",
+   "bandcamp": {
+    "url": "https://leescott.bandcamp.com/album/butter-fly",
+    "img": "https://f4.bcbits.com/img/a2789522047_5.jpg",
+    "date": "",
+    "tracks": 12,
+    "minutes": 50,
+    "listeners": 2121,
+    "location": "Runcorn, UK",
+    "publisher": ""
+   },
+   "country": "",
+   "evidence": [
+    "https://leescott.bandcamp.com/album/butter-fly",
+    "https://musicbrainz.org/release-group/21a2cf4e-a319-4e12-bb6a-500d1c6f7dbe"
+   ],
+   "mbRgMbid": "21a2cf4e-a319-4e12-bb6a-500d1c6f7dbe",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": []
+  },
+  {
+   "artist": "Zoungla",
+   "album": "Entwine",
+   "year": 2013,
+   "label": "Maia Brasil Records/Omnitropic/Melodic Revolution Records",
+   "country": "ca",
+   "faction": "psy",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp 有鼓名單（第三輪，研究判有鼓）：Last.fm 收聽 2019 人；標籤 Electronic、Progressive Rock、ambient、ambient-electronic、electronic、psybient",
+   "moodGuess": {
+    "x": 1.9,
+    "y": 0.8,
+    "z": 0.1,
+    "why": "psybient氛圍、慢拍、迷幻霧"
+   },
+   "evidence": [
+    "https://zoungla.bandcamp.com/album/entwine-2",
+    "https://musicbrainz.org/release-group/50cee8f9-24fe-435b-8979-c1637eecc08f"
+   ],
+   "mbRgMbid": "50cee8f9-24fe-435b-8979-c1637eecc08f",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（把握 mid）；當初汰因「ml73：有拍＋判冷：文案 groovy、spooky（研究 d）」——照「有鼓不等於躁」重判：研究層須寫清楚鼓是哪一種（慢拖無力／攻擊性／舞池推進）",
+   "bandcamp": {
+    "url": "https://zoungla.bandcamp.com/album/entwine-2",
+    "img": "https://f4.bcbits.com/img/a0393900767_5.jpg",
+    "date": "19 Mar 2013 00:00:00 GMT",
+    "tracks": 9,
+    "minutes": 71,
+    "listeners": 2019,
+    "location": "Montreal, Québec",
+    "publisher": "Zoungla"
+   },
+   "priorBatch": "add-20261106-ml73",
+   "priorDrop": "ml73：有拍＋判冷：文案 groovy、spooky（研究 d）",
+   "source": "研究判有鼓"
+  },
+  {
+   "artist": "Astronaut Ape",
+   "album": "Deep",
+   "year": 2019,
+   "label": "Microcosmos Records",
+   "faction": "psy",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp 有鼓名單（第三輪，標籤篩掉）：Last.fm 收聽 1801 人；標籤 Chillout、Electronic、Progressive Trance、Psybient、Psychill、Spacewave",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 0.9,
+    "z": 0.2,
+    "why": "迷幻慢拍、合成器層、殘響"
+   },
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（把握 low）；當初汰因「標籤：Progressive Trance」——照「有鼓不等於躁」重判：研究層須寫清楚鼓是哪一種（慢拖無力／攻擊性／舞池推進）",
+   "source": "標籤篩掉",
+   "priorDrop": "標籤：Progressive Trance",
+   "bandcamp": {
+    "url": "https://astronautape.bandcamp.com/album/deep",
+    "img": "https://f4.bcbits.com/img/a2321831833_5.jpg",
+    "date": "",
+    "tracks": 7,
+    "minutes": 60,
+    "listeners": 1801,
+    "location": "",
+    "publisher": ""
+   },
+   "country": "",
+   "evidence": [
+    "https://astronautape.bandcamp.com/album/deep",
+    "https://musicbrainz.org/release-group/2c8e430a-9ff6-4228-8a0c-6d1ed7156d4d"
+   ],
+   "mbRgMbid": "2c8e430a-9ff6-4228-8a0c-6d1ed7156d4d",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": []
+  },
+  {
+   "artist": "Hidden Rivers",
+   "album": "Golden Age of Dereliction",
+   "year": 2021,
+   "label": "Serein",
+   "faction": "chill",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp 有鼓名單（第三輪，標籤篩掉）：Last.fm 收聽 1690 人；標籤 90s、Electronic、ambient、breaks、chill、downtempo",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 0.5,
+    "z": 0.2,
+    "why": "90年代斷拍、氛圍"
+   },
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（把握 low）；當初汰因「標籤：breaks、techno」——照「有鼓不等於躁」重判：研究層須寫清楚鼓是哪一種（慢拖無力／攻擊性／舞池推進）",
+   "source": "標籤篩掉",
+   "priorDrop": "標籤：breaks、techno",
+   "bandcamp": {
+    "url": "https://hiddenrivers.bandcamp.com/album/golden-age-of-dereliction",
+    "img": "https://f4.bcbits.com/img/a1555617721_5.jpg",
+    "date": "",
+    "tracks": 8,
+    "minutes": 38,
+    "listeners": 1690,
+    "location": "Wales, UK",
+    "publisher": ""
+   },
+   "country": "",
+   "evidence": [
+    "https://hiddenrivers.bandcamp.com/album/golden-age-of-dereliction",
+    "https://musicbrainz.org/release-group/85970ac5-76e8-485e-9f0f-49c6daa4b3a7"
+   ],
+   "mbRgMbid": "85970ac5-76e8-485e-9f0f-49c6daa4b3a7",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": []
+  },
+  {
+   "artist": "Badlands",
+   "album": "Call to Love",
+   "year": 2022,
+   "label": "self-released",
+   "country": "se",
+   "faction": "dreampop",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp 有鼓名單（第三輪，研究判有鼓）：Last.fm 收聽 1618 人；標籤 Alternative、ambient、analog、atmospheric、beats、dreampop",
+   "moodGuess": {
+    "x": 1.8,
+    "y": 0.9,
+    "z": 0.3,
+    "why": "夢幻流行霧、類比合成器"
+   },
+   "evidence": [
+    "https://badlandssounds.bandcamp.com/album/call-to-love",
+    "https://musicbrainz.org/release-group/0f9e6e06-c854-4a2f-ae3d-f45dd8495542"
+   ],
+   "mbRgMbid": "0f9e6e06-c854-4a2f-ae3d-f45dd8495542",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（把握 low）；當初汰因「ml68：能量（四拍／club 拍／uptempo）：作者自述 90 年代 rave、〈Doubts〉club／techno 拍，評論比 Portishead／Massive Attack，z 也偏冷）。」——照「有鼓不等於躁」重判：研究層須寫清楚鼓是哪一種（慢拖無力／攻擊性／舞池推進）",
+   "bandcampUrl": "https://badlandssounds.bandcamp.com/album/call-to-love",
+   "coverUrl": "https://f4.bcbits.com/img/a3742824872_10.jpg",
+   "listeners": 1618,
+   "minutes": 31,
+   "tracks": 8,
+   "priorBatch": "add-20261106-ml68",
+   "priorDrop": "ml68：能量（四拍／club 拍／uptempo）：作者自述 90 年代 rave、〈Doubts〉club／techno 拍，評論比 Portishead／Massive Attack，z 也偏冷）。",
+   "source": "研究判有鼓",
+   "bandcamp": {
+    "url": "https://badlandssounds.bandcamp.com/album/call-to-love",
+    "img": "https://f4.bcbits.com/img/a3742824872_5.jpg",
+    "date": "",
+    "tracks": 8,
+    "minutes": 31,
+    "listeners": 1618,
+    "location": "Sweden",
+    "publisher": ""
+   }
+  },
+  {
+   "artist": "Breezewax",
+   "album": "Native Sun",
+   "year": 2012,
+   "label": "Cult Classic Records",
+   "faction": "beats",
+   "genres": [
+    "hiphop"
+   ],
+   "why": "Bandcamp 有鼓名單（第三輪，標籤篩掉）：Last.fm 收聽 1324 人；標籤 Electronic、Instrumental Hip-Hop、chillhop、chillout、downtempo、hip hop",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 0.6,
+    "z": 1.2,
+    "why": "chillhop取樣鼓、爵士鋼琴、暖"
+   },
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（把握 mid）；當初汰因「標籤：Instrumental Hip-Hop、hip hop」——照「有鼓不等於躁」重判：研究層須寫清楚鼓是哪一種（慢拖無力／攻擊性／舞池推進）",
+   "source": "標籤篩掉",
+   "priorDrop": "標籤：Instrumental Hip-Hop、hip hop",
+   "bandcamp": {
+    "url": "https://breezewax.bandcamp.com/album/native-sun",
+    "img": "https://f4.bcbits.com/img/a1220547741_5.jpg",
+    "date": "",
+    "tracks": 12,
+    "minutes": 46,
+    "listeners": 1324,
+    "location": "Manchester, UK",
+    "publisher": ""
+   },
+   "country": "",
+   "evidence": [
+    "https://breezewax.bandcamp.com/album/native-sun",
+    "https://musicbrainz.org/release-group/478dc6b3-5c22-46a8-a864-d507b6b1bb54"
+   ],
+   "mbRgMbid": "478dc6b3-5c22-46a8-a864-d507b6b1bb54",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": []
+  },
+  {
+   "artist": "Sephira",
+   "album": "Monkey Tales",
+   "year": 2014,
+   "label": "BMSS Records",
+   "faction": "psy",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp 有鼓名單（第三輪，標籤篩掉）：Last.fm 收聽 1159 人；標籤 Chillout、Downtempo、Electronic、Psybient、Trance.、ambient",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 0.7,
+    "z": 0.1,
+    "why": "迷幻downtempo、合成器霧、中性"
+   },
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（把握 low）；當初汰因「標籤：Trance.、psytrance、trance」——照「有鼓不等於躁」重判：研究層須寫清楚鼓是哪一種（慢拖無力／攻擊性／舞池推進）",
+   "source": "標籤篩掉",
+   "priorDrop": "標籤：Trance.、psytrance、trance",
+   "bandcamp": {
+    "url": "https://sephirauk.bandcamp.com/album/monkey-tales",
+    "img": "https://f4.bcbits.com/img/a1944961547_5.jpg",
+    "date": "",
+    "tracks": 6,
+    "minutes": 52,
+    "listeners": 1159,
+    "location": "UK",
+    "publisher": ""
+   },
+   "country": "",
+   "evidence": [
+    "https://sephirauk.bandcamp.com/album/monkey-tales",
+    "https://musicbrainz.org/release-group/b5709100-7b1a-4b34-a83e-94fa52a993f9"
+   ],
+   "mbRgMbid": "b5709100-7b1a-4b34-a83e-94fa52a993f9",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": []
+  },
+  {
+   "artist": "Mindex",
+   "album": "Fluidity",
+   "year": 2025,
+   "label": "Time Resonance Music",
+   "faction": "chill",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp 有鼓名單（第三輪，標籤篩掉）：Last.fm 收聽 1043 人；標籤 Electronic、bass music、beats、downtempo、nu-jazz、Austin",
+   "moodGuess": {
+    "x": 2.8,
+    "y": 0.5,
+    "z": 0.4,
+    "why": "bass音樂、爵士和弦、中速"
+   },
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（把握 low）；當初汰因「標籤：bass music」——照「有鼓不等於躁」重判：研究層須寫清楚鼓是哪一種（慢拖無力／攻擊性／舞池推進）",
+   "source": "標籤篩掉",
+   "priorDrop": "標籤：bass music",
+   "bandcamp": {
+    "url": "https://mindex.bandcamp.com/album/fluidity",
+    "img": "https://f4.bcbits.com/img/a1313541020_5.jpg",
+    "date": "",
+    "tracks": 10,
+    "minutes": 37,
+    "listeners": 1043,
+    "location": "Austin, Texas",
+    "publisher": ""
+   },
+   "country": "",
+   "evidence": [
+    "https://mindex.bandcamp.com/album/fluidity",
+    "https://musicbrainz.org/release-group/96f53c72-bdf6-4efb-b3b1-b46417654af7"
+   ],
+   "mbRgMbid": "96f53c72-bdf6-4efb-b3b1-b46417654af7",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": []
+  },
+  {
+   "artist": "Space Ghost",
+   "album": "Back From Reality",
+   "year": 2026,
+   "label": "Peace World",
+   "faction": "chill",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp 有鼓名單（第三輪，標籤篩掉）：Last.fm 收聽 813 人；標籤 Electronic、ambient、bgm、downtempo、house、vgm",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 0.7,
+    "z": 0.4,
+    "why": "VGM氛圍浩室，鬆暖"
+   },
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（把握 low）；當初汰因「標籤：house」——照「有鼓不等於躁」重判：研究層須寫清楚鼓是哪一種（慢拖無力／攻擊性／舞池推進）",
+   "source": "標籤篩掉",
+   "priorDrop": "標籤：house",
+   "bandcamp": {
+    "url": "https://space-ghost.bandcamp.com/album/back-from-reality",
+    "img": "https://f4.bcbits.com/img/a502766341_5.jpg",
+    "date": "",
+    "tracks": 11,
+    "minutes": 42,
+    "listeners": 813,
+    "location": "Oakland, California",
+    "publisher": ""
+   },
+   "country": "",
+   "evidence": [
+    "https://space-ghost.bandcamp.com/album/back-from-reality",
+    "https://musicbrainz.org/release-group/9a2ebf5f-2155-472a-889d-8d77dec41fd0"
+   ],
+   "mbRgMbid": "9a2ebf5f-2155-472a-889d-8d77dec41fd0",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": []
+  },
+  {
+   "artist": "Eivind Aarset",
+   "album": "Électronique noire",
+   "year": 1998,
+   "label": "",
+   "country": "no",
+   "faction": "jazz",
+   "genres": [
+    "jazz",
+    "electronic"
+   ],
+   "why": "Bandcamp 有鼓名單（第三輪，研究判有鼓）：Last.fm 收聽 — 人；標籤 ",
+   "moodGuess": {
+    "x": 1.9,
+    "y": 0.7,
+    "z": -1,
+    "why": "電吉他氛圍，Jazzland 冷暗"
+   },
+   "evidence": [
+    "https://eivindaarset.bandcamp.com/album/electronique-noire",
+    "https://musicbrainz.org/release-group/f1110bbf-dfbe-3c66-a341-f03d8f095f6e"
+   ],
+   "mbRgMbid": "f1110bbf-dfbe-3c66-a341-f03d8f095f6e",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Electronique Noire",
+   "uncertain": "moodGuess 為卡單粗估（把握 low）；當初汰因「md42：有拍推進：9 首 7 首真鼓＋貝斯，「強勁陰鬱的電子律動」（研究 c）」——照「有鼓不等於躁」重判：研究層須寫清楚鼓是哪一種（慢拖無力／攻擊性／舞池推進）",
+   "bandcamp": {
+    "url": "https://eivindaarset.bandcamp.com/album/electronique-noire",
+    "img": "https://f4.bcbits.com/img/a3595661263_5.jpg",
+    "date": "26 Oct 2017 00:00:00 GMT",
+    "tracks": 9,
+    "minutes": 60,
+    "listeners": 9121,
+    "location": "Oslo, Norway",
+    "publisher": "Eivind Aarset"
+   },
+   "priorBatch": "add-20261106-md42",
+   "priorDrop": "md42：有拍推進：9 首 7 首真鼓＋貝斯，「強勁陰鬱的電子律動」（研究 c）",
+   "source": "研究判有鼓"
+  }
+ ],
+ "notes": [
+  "卡單即策展結果（第三輪有鼓名單），主線初篩汰除見 batch-progress/add-20261106-ml75/rulings.md"
+ ]
+}
