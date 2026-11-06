@@ -52,3 +52,12 @@
 - 24773：鼓種判斷——Robot Koch 斷拍 wonky 切碎鼓（非四拍；存疑判躁／判冷）、Moods 全現場樂團真鼓靈魂爵士律動（存疑判輕）、Ash Walker 慢拖 dub／hip hop 取樣鼓（含 Laville 人聲 5 首，非純器樂）、Stone beat tape 型脈動（存疑判輕）、Evil Needle beat tape 短曲（判輕）、Entheogenic 與 Perpetual Loop 判不出。均無舞池推進或攻擊型的證據，無一建議汰。Perpetual Loop 標籤含 dance、melodic house、mid tempo，主線若要把關可試聽確認是否四拍底鼓。
 - 24774：日期／廠牌歧異——Entheogenic MB 2006-03-23、Bandcamp 2006-05-23（卡單 2006 不變）；Robot Koch Bandcamp 掛 Project Mooncircle、The Skinny 列 Robots Don't Sleep，發行日 12 月 7 日 vs MB 2009-11-13（年份不變）。
 - 24775：WebSearch 用 3 次（Perpetual Loop、Entheogenic、Robot Koch）；Perpetual Loop 與 Entheogenic 查無樂評，Robot Koch 得 The Skinny 與 XLR8R 評論。Evil Needle 的 Cold Busted 店面與 Bandcamp 仍讀不到。
+
+## 研究 a 組（24761–24770；2026-11-06）
+- 24761：本組 7 張皆非「沿用前次研究稿」卡（`dropped-research.json` 不存在、也無需要），全部新查；來源為 Bandcamp、MB、Wikipedia 與 3 次 WebSearch 找到的樂評（Morcheeba、Ochre、Tusks 各 1 次）。
+- 24762：鼓的種類判定——Morcheeba《Blackest Blue》慢拖無力型（單曲〈Sulphur Soul〉有硬拍、〈The Edge of the World〉中速 disco 感，整張非舞池推進）；Joomanji《Manj》真人鼓＋取樣、偏鬆拍（推斷、無 BPM）；Ochre《Lemodie》、Brock Berrigan、neat beats、The Architect 判不出（無樂評提鼓），一律不因有鼓或標籤 techno 而汰。
+- 24763：Tusks《Avalanche》標「moodGuess 存疑：攻擊型傾向」（Complex：thundering、grungey、loud and in your face；樂評：副歌與〈Avalanche〉有壓過一切的猛擊鼓點）。非舞池推進，照 10-23 標準交評分決定落格，不在研究層汰。
+- 24764：Ochre《Lemodie》卡單寫 63 分 11 首，Bandcamp 曲目頁與 ld+json 為 10 首、逐曲加總 57 分 13 秒，facts 以 10 首 57 分為準。
+- 24765：Morcheeba 年份：MB 首發 2021-03-14（歐洲數位）與其他來源 5 月 14 日不同，facts 取 5 月 14 日（PopMatters、Bandcamp、Wikipedia），寫作層只寫 2021 年。PopMatters 人名誤植（Bob Barr、Dark Garwood）以 Wikipedia 為準。
+- 24766：Joomanji 卡單 curatorWhy 寫「器樂嘻哈」不精確：17 首中 12 首有人聲，僅最後 5 首是器樂版；facts 照實寫。
+- 24767：thin 三張（Brock Berrigan、neat beats、The Architect）：只有 Bandcamp＋MB 來源、無樂評，誠實標 thin；The Architect 與 L'Entourloop 的關係僅 Bandcamp 標籤，未查證不寫。
