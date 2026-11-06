@@ -1,5 +1,34 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-06｜dip-vinyl-shop｜頻率光譜面板第二版上線（PR #413，v69）＋第一版備份
+
+- **店主 11-06**：「上線，原本的要備份好。」
+- **備份**：上線前的 main（`785ff3c61`，面板第一版：`dip-tune.js` v66、舊 `tune/panel-all.png`／`wheel-spans.json`／`btn-v.png`）推成分支 **`backup/tune-panel-v1`**（tag 推不上去，被代理擋）。要還原：從該分支取回 `dip-tune.js`、`index.html` 的版本號、`tune/panel-all.png`、`tune/wheel-spans.json`，並把版本號加一以蓋過快取。
+- **上線內容**：見下方三筆面板第二版條目（篩選滾筒、黑膠／骰子鍵、轉輪縮半、圖片網址帶版本）。
+
+### 2026-11-06｜dip-vinyl-shop｜頻率光譜面板試作：就這張改黑膠圖示、骰子跑位修正、面板圖片網址帶版本（v69，預覽分支）
+
+- **店主 11-06 實機截圖**：「骰子跑位了」「我想要就這張也有一個圖示可以代表」。
+- **骰子跑位的原因**：不是版面算錯，是快取——`sw.js` 對圖片走 stale-while-revalidate（先回舊快取），加上正式站圖片 `max-age=14400`；換了 `key-rand.png` 內容卻沒換網址，手機第一次載入拿到舊的 168×160 骰子鍵，被壓進新的短鍵。**修法**：`dip-tune.js` 新增 `AV`，所有 `tune/*.png`、`wheel-spans.json`、`tile-*.png` 網址帶 `?v=${AV}`；**以後換任何 tune/ 圖都要把 AV 加一**（面板 v2 上正式站時這條同樣保護 `panel-all.png`）。
+- **圖示**：就這張鍵畫 13×13 格黑膠（黑盤、溝紋、左上反光、紅標籤、軸孔，`panel.py` 手點陣列 `VINYL`），隨機鍵骰子置中；兩顆鍵回到上下等高（168×160），都不疊字，`aria-label`／`title` 保留文字。
+- **驗證**：iPhone 13／iPhone SE／桌機三種寬度，圖片網址都帶 `?v=69`、圖示置中、隨機照常換卡、無頁面錯誤。
+- **主要檔案**：`dip-tune.js`、`index.html`（v69）、`scripts/tune-panel-v2/panel.py`、`tune/{panel-all,key-draw,key-rand}.png`。
+
+### 2026-11-06｜dip-vinyl-shop｜頻率光譜面板第二版試作修正：就這張改長鍵直排、隨機只留骰子（v68，預覽分支）
+
+- **店主 11-06**：「就這張溢出按鈕了，找個適合的替換方案；隨機只需要留骰子。」
+- **做法**：右欄兩顆鍵改成上長下短（`panel.py` 的 `KEY_H_DRAW 226`／`KEY_H_RAND 94`，中間暗縫跟著移）；就這張字改一字一行直排（3.4cqw，跟原本直鍵同一路），隨機鍵拿掉文字、骰子置中，`aria-label` 保留。
+- **驗證**：iPhone 13／iPhone SE／桌機三種寬度量字框都在鍵面內（iPhone 13 上下各留 8–9px）；隨機鍵照常換卡；無頁面錯誤；`panel-all.png` 只動右欄暗縫那一塊。
+- **主要檔案**：`dip-tune.js`、`index.html`（v68）、`scripts/tune-panel-v2/panel.py`、`tune/{panel-all,key-draw,key-rand}.png`。
+
+### 2026-11-06｜dip-vinyl-shop｜頻率光譜面板第二版試作（預覽分支，未上線）：篩選滾筒、就這張／隨機兩顆、轉輪與頻率滾筒縮半
+
+- **店主 11-06**：中間滾筒、下面轉輪各縮一半，挪出空間放「類別／等級／分級」篩選；就這張拆成「就這張」「隨機」兩顆；全部在面板上操作、不開視窗，可用滑動輪軸切換；完全用像素呈現。先做試作版給店主試用，**店主點頭前不合併**。
+- **版面**：三案（直譯／重排／混合）評審後採 D2 版面＋D1 轉輪。`scripts/tune-panel-v2/wheels_half.py`（半高輪子）＋`panel.py`（整塊面板與零件）產生 `tune/panel-all.png`、`tune/wheel-spans.json`（半高，帶 `ref: 536`）與 7 個零件圖（`key-draw/key-rand/key-all`、`led-on/off`、`drum-shade-145/225`）。
+- **程式（`dip-tune.js` v67）**：篩選滾筒上下拖（字 1:1 跟手、每格喀一聲＋輕震、放手才套用）、點上半＝上一個／下半＝下一個、滾輪、方向鍵，選項頭尾相接；液晶顯示符合張數（0 張變紅、隨機與就這張停用、星圖提示換篩選）；「全部 RESET」三條件歸零；隨機鍵在符合的卡裡均勻抽、最近 200 張不重複。轉輪點擊範圍放大到整欄，明暗改成一格一階；頻率滾筒與輪子拿掉 CSS 漸層、光暈、陰影。滾筒字條改用小數列高（原本整數列高累積誤差，心情格滾筒偏上 4px）。★ 改用像素星。
+- **驗證**：Playwright（iPhone 13）拖曳／點擊／滾輪／隨機／全部／0 張狀態皆正確（全部 21,982 → 爵士 5,699 → 爵士＋殿堂 60 → ＋總分 12+ 1）；RADIO 自動換台照常；橫放版面正常；無頁面錯誤。
+- **主要檔案**：`dip-tune.js`、`index.html`（v67）、`tune/panel-all.png`、`tune/wheel-spans.json`、`tune/{key-*,led-*,drum-shade-*}.png`、`scripts/tune-panel-v2/`。分支 `claude/tune-panel-v2`。
+
 ### 2026-11-06｜dip-vinyl-shop｜情緒薄格 Bandcamp「有鼓」名單 ml74／ml75：60 張上線（落恍惚 47）＋藝人介紹 15 位
 
 - **店主 11-06**：「有些要死不活的音樂也會有鼓推進」「全都上架吧」→ 有鼓名單 473 張切十批、五個工作階段並行；本工作階段做 ml74（`pick-ml74.json` 48，條號 24361）與 ml75（`pick-ml75.json` 48，條號 24441）。卡單即策展，只汰身分問題、同人超量與「舞池推進／鼓＋攻擊性」，判輕判冷不汰。前兩輪研究過的 17 張沿用原批研究稿（e 組只補不足）。
