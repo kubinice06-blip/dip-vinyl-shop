@@ -14,3 +14,15 @@
   - Antimatter src 補 MB 藝人頁（7389b838，Liverpool、1998 起），滿兩源。
   - 照准：Era〈Enae Volare Mezzo〉作為 Fedor Emelianenko 入場曲（英文維基）；Scandinavian Star 渡輪 159 人（維基）；Black Boboi 隔年上 FUJI ROCK（不寫月份）。
 - `qa-artist out`：只剩刻意不寫的 5 位缺位。
+
+## ar-d-815（md44）
+- 補洞 2 組（各 10），`qa-artist gap` 0 處；WebSearch 合計 11 次。
+- 寫作 1 組：寫 19、不寫 1（Ness：無國籍與身分）。
+- **主線審稿（逐位，改 6 處、撤 1 位）**：
+  - Gi Gi「據廠牌介紹，Gi Gi 是德州的顫音琴演奏者」→「美國德州奧斯汀的顫音琴演奏者 Gi Gi，」（刪轉述詞、補國籍開頭）；src 補 MB 藝人頁（dbeb80f0，ambient producer、Austin），滿兩源。
+  - Urbs src 補 MB 藝人頁（ef65b3a7，Austria），滿兩源。
+  - Chris Imler 開頭補「德國」；src 補 MB 藝人頁（7946d8fd，Germany）。
+  - Public Memory src 補 Bandcamp《Elegiac Beat》頁（類比合成器、電子鼓混有機打擊，與正文聲音句相符）。
+  - **撤 Brael & Tokyo Bloodworm**：全文只有 Bandcamp 廠牌文案一源（美國、分居各州、郵寄合作），補不到第二源，改 skipped。
+  - 照准：No-Man「被視為最具野心、也賣得最好」（英文維基 Flowermouth 條）；Monophona 兩篇樂評；AgonyOST 第三源為 namu wiki（只用於曲風歸類）。
+- `qa-artist out`：只剩刻意不寫的 Ness、Brael & Tokyo Bloodworm 缺位。
