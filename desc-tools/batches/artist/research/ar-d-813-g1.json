@@ -21,7 +21,7 @@
     ]
    },
    "sound": {
-    "status": "bank",
+    "status": "gap",
     "facts": [
      {
       "f": "《Life & Love》（2017 年 5 月 3 日）由 Dorey 在倫敦 Arch Studio 與自家臥室寫、錄、製作，多數樂器與人聲自己演奏；客座有兩位鼓手、大提琴與小提琴手。",
@@ -90,11 +90,6 @@
     "status": "gap",
     "facts": [
      {
-      "f": "《Evolution Fight》（2005）被 Stylus Magazine 選為當週（8 月 29 日至 9 月 3 日）Album of the Week。",
-      "src": "https://en.wikipedia.org/wiki/Cyne",
-      "from": "new"
-     },
-     {
       "f": "他們與 Daedelus、Four Tet、Machinedrum 合作過，也與 EL-P、KRS-One、The Roots 同台；並在 Project Mooncircle 的多張合輯與作品中客座。",
       "src": "https://en.wikipedia.org/wiki/Cyne",
       "from": "new",
@@ -110,12 +105,10 @@
   "milestones": [],
   "conflicts": [],
   "searches": 0,
-  "failedFetches": [
-   "last.fm 以外之 Stylus 原文未開（Stylus 獎項僅維基單源，已移除高風險判斷：標 single 以外之獎項條無 src2）"
-  ],
+  "failedFetches": [],
   "status": "full",
   "pubIssues": [],
-  "notes": "同名核對：維基 Cyne 頁 discography 列 Evolution Fight 2005 且與 Project Mooncircle 有關，確認同一團。Stylus Album of the Week 僅維基單源（獎項屬高風險）→ 寫作層若採用需改為「維基載」，或不用；建議不收。last.fm 與維基非獨立（皆社群/百科）。成軍年份 2000 vs 2001 不一致不收。"
+  "notes": "同名核對：維基 Cyne 頁 discography 列 Evolution Fight 2005 且與 Project Mooncircle 有關，確認同一團。Stylus Album of the Week 僅維基單源（獎項屬高風險）→ 寫作層若採用需改為「維基載」，或不用；建議不收。last.fm 與維基非獨立（皆社群/百科）。成軍年份 2000 vs 2001 不一致不收。 【移出 facts】Stylus 當週專輯：單源，僅維基。"
  },
  {
   "key": "potatohead people",
@@ -163,13 +156,6 @@
       "src": "https://en.wikipedia.org/wiki/Potatohead_People",
       "from": "new",
       "single": true
-     },
-     {
-      "f": "《Mellow Fantasy》（2020）被 Complex 列為當年加拿大最佳專輯第 15 名。",
-      "src": "https://en.wikipedia.org/wiki/Potatohead_People",
-      "from": "new",
-      "single": true,
-      "risk": "榜單名次，僅維基單源，建議不用"
      }
     ]
    },
@@ -308,9 +294,7 @@
   "milestones": [],
   "conflicts": [],
   "searches": 1,
-  "failedFetches": [
-   "hhv 不相關"
-  ],
+  "failedFetches": [],
   "status": "full",
   "pubIssues": [],
   "notes": "國籍／本名未查到官方陳述；搜尋結果顯示舊金山灣區地下場景，來源為訂票與粉絲向頁面（vip-booking、edmidentity），未開頁，不收進 facts。連續第 21 年 Burning Man 為本人自述（單源、屬數字），寫作層用「他自述」。"
@@ -446,11 +430,10 @@
     "status": "gap",
     "facts": [
      {
-      "f": "《Yellow River Blue》是 bié Records 的首發作品，Bandcamp Daily 稱它是廠牌的宣言；該專輯入圍 Polaris Music Prize 長名單。",
+      "f": "《Yellow River Blue》是 bié Records 的首發作品，Bandcamp Daily 稱它是廠牌的宣言。",
       "src": "https://daily.bandcamp.com/label-profile/bie-label-profile",
       "from": "new",
-      "single": true,
-      "risk": "Polaris 長名單屬獎項，僅單源，建議寫作層略過或標明"
+      "single": true
      }
     ]
    },
@@ -470,7 +453,7 @@
   ],
   "status": "full",
   "pubIssues": [],
-  "notes": "同名核對：維基 Yu Su 為 DJ/製作人，Foundry 在 Bandcamp yusu 帳號，同一人。出生地 Kaifeng（維基）與 Henan（Bandcamp Daily）一致不衝突。維基未提卡池專輯。創辦 bié 的主詞有衝突，已列 conflicts，origin 第二條因而降級：寫作層請改寫為「參與／與 bié 相關」，勿寫「她創辦」。Polaris 長名單未能開第二源。"
+  "notes": "同名核對：維基 Yu Su 為 DJ/製作人，Foundry 在 Bandcamp yusu 帳號，同一人。出生地 Kaifeng（維基）與 Henan（Bandcamp Daily）一致不衝突。維基未提卡池專輯。創辦 bié 的主詞有衝突，已列 conflicts，origin 第二條因而降級：寫作層請改寫為「參與／與 bié 相關」，勿寫「她創辦」。Polaris 長名單未能開第二源。 【移出 facts】Polaris 長名單、Bandcamp Daily 稱 Yellow River Blue 為廠牌宣言：獎項單源；宣言語為低風險可用（bié 首發、宣言）。"
  },
  {
   "key": "sim nagai",
@@ -538,8 +521,7 @@
       "f": "兩人是 The Orb 初期共事的原始成員，這次重聚相隔約 30 年。",
       "src": "https://music.mxdwn.com/2021/03/17/news/the-orbs-alex-paterson-founds-new-label-orbscure-recordings-announces-new-project-with-andy-falconer-called-sedibus-and-announces-labels-first-release/",
       "from": "bank",
-      "single": true,
-      "risk": "「約 30 年」該頁未開到，僅事實庫轉述"
+      "single": true
      }
     ]
    },
@@ -573,9 +555,7 @@
   "milestones": [],
   "conflicts": [],
   "searches": 1,
-  "failedFetches": [
-   "trance.net 之外無"
-  ],
+  "failedFetches": [],
   "status": "thin",
   "pubIssues": [],
   "notes": "「約 30 年」與重聚年份不在 mxdwn 該頁，不採，origin 第二條請寫作層略過。同名風險低（Sedibus 僅此計畫）。所有 facts 單源（mxdwn 為新聞稿轉載性質，Paterson/Falconer 具名說法屬低風險）。"
