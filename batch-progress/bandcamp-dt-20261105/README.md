@@ -11,3 +11,9 @@
 
 店主同意先粗估再上架。600 張抓 Bandcamp 專輯頁 keywords（566 張有），4 支 Sonnet 照 `score500/BRIEF.md` 估三軸（不上網、多數把握低），寫回 `top600.json`（`c` 預估格、`xyz`、`w` 聲音、`cf` 把握、`sure` 離邊界遠）。
 結果：恍惚 218（穩 44）、頹靡 85（穩 45）、放鬆 145、暴躁 55、雀躍 43、沸騰 33、平靜 12、冷冽 9。勾選頁加「預估落格」篩選。
+
+## 擴充到 1,901 張（2026-11-06）
+
+店主：「應該可以挖超過 600 張吧？」downtempo 翻 160 頁（5,365）＋ trip-hop／chillout／psybient／lounge／nu-jazz 各 25 頁，去重後新增 5,361 張；Last.fm 收聽 ≥1,000（扣 remixed／redux／dub 版）1,301 張，同法粗估落格（9 支 Sonnet），與前 600 合併 → `candidates-1901.json`。
+預估：恍惚 614（穩 148）、頹靡 287（穩 141）、放鬆 456、雀躍 184、暴躁 174、沸騰 95、平靜 55、冷冽 36。勾選頁同一個 artifact（v3）。
+另：Bandcamp discover API 2026-11-06 改回駝峰欄位，`bandcamp-discover.mjs` 已兩種都收。
