@@ -17,3 +17,9 @@
 店主：「應該可以挖超過 600 張吧？」downtempo 翻 160 頁（5,365）＋ trip-hop／chillout／psybient／lounge／nu-jazz 各 25 頁，去重後新增 5,361 張；Last.fm 收聽 ≥1,000（扣 remixed／redux／dub 版）1,301 張，同法粗估落格（9 支 Sonnet），與前 600 合併 → `candidates-1901.json`。
 預估：恍惚 614（穩 148）、頹靡 287（穩 141）、放鬆 456、雀躍 184、暴躁 174、沸騰 95、平靜 55、冷冽 36。勾選頁同一個 artifact（v3）。
 另：Bandcamp discover API 2026-11-06 改回駝峰欄位，`bandcamp-discover.mjs` 已兩種都收。
+
+## 上架第一輪：離邊界遠的 289 張（2026-11-06）
+
+店主：「先做最遠的」。預估落格離邊界遠（恍惚 x≤2.7、y≥0.8、z≥0.3；頹靡 x≤2.7、y≥0.8、z≤−0.3）的 289 張，店主勾「不要」0 張。依收聽人數輪流分配成六批：
+恍惚 `pick-ml68.json` 50、`pick-ml69.json` 49、`pick-ml70.json` 49；頹靡 `pick-md39.json` 47、`pick-md40.json` 47、`pick-md41.json` 47。
+條號：ml68 23481、ml69 23561、ml70 23641、md39 23721、md40 23801、md41 23881。藝人介紹批號 ar-d-521～526。三個子工作階段各兩批。
