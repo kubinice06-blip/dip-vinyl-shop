@@ -61,3 +61,10 @@
 - 24765：Morcheeba 年份：MB 首發 2021-03-14（歐洲數位）與其他來源 5 月 14 日不同，facts 取 5 月 14 日（PopMatters、Bandcamp、Wikipedia），寫作層只寫 2021 年。PopMatters 人名誤植（Bob Barr、Dark Garwood）以 Wikipedia 為準。
 - 24766：Joomanji 卡單 curatorWhy 寫「器樂嘻哈」不精確：17 首中 12 首有人聲，僅最後 5 首是器樂版；facts 照實寫。
 - 24767：thin 三張（Brock Berrigan、neat beats、The Architect）：只有 Bandcamp＋MB 來源、無樂評，誠實標 thin；The Architect 與 L'Entourloop 的關係僅 Bandcamp 標籤，未查證不寫。
+
+## 主線研究汰換（不佔條號；2026-11-06）
+研究層 a–e 交件（31 張）。照「有鼓不等於躁」只汰攻擊型與舞池推進型，判輕、判冷、判不出的一律留給評分 → 汰 2、剩 29；被汰卡移到 `dropped-cards.json`／`dropped-research.json`（`drop-research-ml78.mjs`），不補人。
+- 舞池推進 1：OSS《Enter the Kettle》（研究 d：Mixmag／ReGen 稱 industrial techno、MB 標 techno、官網 dubwise steppers）
+- 攻擊型 1：Tusks《Avalanche》（研究 a：Complex 評 thundering、grungey、loud and in your face，副歌與標題曲猛擊鼓點加吉他牆）
+- 留下（鼓的種類寫在研究稿，交評分）：Robot Koch（斷拍 wonky，存疑判躁判冷）、Błoto（真人鼓即興加 break，文案往 house／juke 靠，判不出）、Nanosphere（〈Void〉95 BPM breaks，中速碎拍、非四拍）、Morcheeba（慢拖，僅一首中速 disco 感）、Perpetual Loop（標籤 melodic house 但無四拍證據）、Moods（現場樂團真鼓，判輕）、Stone／Evil Needle（beat tape 鼓，判輕）、Rocket Empire（約 96 BPM，判輕）、Cephas Azariah（多半無鼓，標題曲堆疊推進）、Orpheus（研究推翻卡單「neo-soul 人聲」：整張器樂）、Joomanji（17 首中 12 首有人聲）。
+- 研究層更正卡單：Ochre《Lemodie》實為 10 首約 57 分；label 欄補 Cosmicleaf（Zero Cult）、Funkypseli Cave（El Jazzy Chavo）、Astigmatic（Błoto）、Polychora（Electronic Visions）、Om Records（Rocket Empire）；The Deadbeats 年份照 MB 1999。
