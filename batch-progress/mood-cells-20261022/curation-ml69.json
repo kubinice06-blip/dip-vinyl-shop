@@ -1,0 +1,1056 @@
+{
+ "group": "ml69",
+ "factions": [
+  {
+   "id": "dreampop",
+   "zh": "dream pop／bedroom 夢幻流行",
+   "count": 4,
+   "why": ""
+  },
+  {
+   "id": "lofi-beat",
+   "zh": "lo-fi 嘻哈／beat tape",
+   "count": 13,
+   "why": ""
+  },
+  {
+   "id": "psy-dub",
+   "zh": "psybient／psy-dub／暖 downtempo",
+   "count": 4,
+   "why": ""
+  },
+  {
+   "id": "nu-soul",
+   "zh": "neo-soul／爵士電子",
+   "count": 3,
+   "why": ""
+  },
+  {
+   "id": "chillwave-vapor",
+   "zh": "chillwave／vaporwave／barber beats",
+   "count": 6,
+   "why": ""
+  }
+ ],
+ "albums": [
+  {
+   "artist": "Acopia",
+   "album": "Acopia",
+   "year": 2023,
+   "label": "self-released",
+   "country": "au",
+   "faction": "dreampop",
+   "genres": [
+    "electronic",
+    "rock"
+   ],
+   "why": "Bandcamp downtempo 候選（Last.fm 收聽 126,679，38 分 10 首；標籤 Electronic／ambient／downtempo／dream pop／electronica／pop）",
+   "moodGuess": {
+    "x": 2.1,
+    "y": 0.8,
+    "z": 0.4,
+    "why": "夢幻合成器、慢鼓、殘響（協調端粗估，把握 mid）"
+   },
+   "evidence": [
+    "https://acopia.bandcamp.com/album/acopia",
+    "https://musicbrainz.org/release-group/aedfac84-b334-4627-bdad-2d439cbf3368"
+   ],
+   "mbRgMbid": "aedfac84-b334-4627-bdad-2d439cbf3368",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "自我同名（MB 釘住）",
+   "bandcampUrl": "https://acopia.bandcamp.com/album/acopia",
+   "coverUrl": "https://f4.bcbits.com/img/a1483170150_10.jpg",
+   "listeners": 126679,
+   "minutes": 38,
+   "tracks": 10
+  },
+  {
+   "artist": "Yndling",
+   "album": "Time Time Time (I'm in the Palm of Your Hand)",
+   "year": 2025,
+   "label": "Spirit Goth Records",
+   "country": "no",
+   "faction": "dreampop",
+   "genres": [
+    "rock"
+   ],
+   "why": "Bandcamp downtempo 候選（Last.fm 收聽 89,395，39 分 10 首；標籤 Alternative／alternative／alternative pop／bedroom pop／dream pop／indie）",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 0.8,
+    "z": 0.4,
+    "why": "夢幻流行霧、慢鼓、柔（協調端粗估，把握 low）"
+   },
+   "evidence": [
+    "https://yndling.bandcamp.com/album/time-time-time-im-in-the-palm-of-your-hand",
+    "https://musicbrainz.org/release-group/e99c91fb-3e27-4ffb-8f20-eb38b13d5b08"
+   ],
+   "mbRgMbid": "e99c91fb-3e27-4ffb-8f20-eb38b13d5b08",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 同名有 2025-10 單曲，取 Album",
+   "bandcampUrl": "https://yndling.bandcamp.com/album/time-time-time-im-in-the-palm-of-your-hand",
+   "coverUrl": "https://f4.bcbits.com/img/a2911295205_10.jpg",
+   "listeners": 89395,
+   "minutes": 39,
+   "tracks": 10
+  },
+  {
+   "artist": "Dirty Art Club",
+   "album": "Gardens",
+   "year": 2020,
+   "label": "self-released",
+   "country": "us",
+   "faction": "lofi-beat",
+   "genres": [
+    "hiphop",
+    "electronic"
+   ],
+   "why": "Bandcamp downtempo 候選（Last.fm 收聽 61,857，48 分 27 首；標籤 Hip-Hop/Rap／beat-tape／downtempo／instrumental／instrumental hip-hop／lofi）",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 0.9,
+    "z": 0.4,
+    "why": "lofi beat tape、糊（協調端粗估，把握 low）"
+   },
+   "evidence": [
+    "https://dirtyartclub.bandcamp.com/album/gardens",
+    "https://musicbrainz.org/release-group/948dddcd-5dc4-40e0-b99e-1f89ec3c8aec"
+   ],
+   "mbRgMbid": "948dddcd-5dc4-40e0-b99e-1f89ec3c8aec",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "27 首短 beat，同人另一張《Basement Seance》主線已汰（降神會主題，判冷風險）",
+   "bandcampUrl": "https://dirtyartclub.bandcamp.com/album/gardens",
+   "coverUrl": "https://f4.bcbits.com/img/a1012799102_10.jpg",
+   "listeners": 61857,
+   "minutes": 48,
+   "tracks": 27
+  },
+  {
+   "artist": "Bluetech",
+   "album": "Love Songs To The Source",
+   "year": 2010,
+   "label": "self-released",
+   "country": "us",
+   "faction": "psy-dub",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp downtempo 候選（Last.fm 收聽 24,757，77 分 14 首；標籤 Electronic／ambient／chill／downtempo／dub／idm）",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1,
+    "z": 0.4,
+    "why": "dub環境電子、重低頻、暖（協調端粗估，把握 mid）"
+   },
+   "evidence": [
+    "https://bluetech.bandcamp.com/album/love-songs-to-the-source",
+    "https://musicbrainz.org/release-group/e630bb09-8e38-47ca-ab27-ae1119f8cf5a"
+   ],
+   "mbRgMbid": "e630bb09-8e38-47ca-ab27-ae1119f8cf5a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "池中同人《Sines and Singularities》z 0.1，色溫要查",
+   "bandcampUrl": "https://bluetech.bandcamp.com/album/love-songs-to-the-source",
+   "coverUrl": "https://f4.bcbits.com/img/a0421307374_10.jpg",
+   "listeners": 24757,
+   "minutes": 77,
+   "tracks": 14
+  },
+  {
+   "artist": "fLako",
+   "album": "The Mesektet",
+   "year": 2011,
+   "label": "Project: Mooncircle",
+   "country": "gb",
+   "faction": "lofi-beat",
+   "genres": [
+    "hiphop",
+    "electronic"
+   ],
+   "why": "Bandcamp downtempo 候選（Last.fm 收聽 21,037，59 分 36 首；標籤 Downtempo／Electronic／Folk／Hip Hop／Project Mooncircle／Techno）",
+   "moodGuess": {
+    "x": 2.7,
+    "y": 0.8,
+    "z": 0.3,
+    "why": "fLako碎鼓、迷幻取樣、暖（協調端粗估，把握 mid）"
+   },
+   "evidence": [
+    "https://projectmooncircle.bandcamp.com/album/the-mesektet",
+    "https://musicbrainz.org/release-group/7a11ca96-52d5-49e6-ab57-d5dd862d2ee2"
+   ],
+   "mbRgMbid": "7a11ca96-52d5-49e6-ab57-d5dd862d2ee2",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "36 首碎拍；2013 年擴充版《Mesektet Extnd》主線已汰",
+   "bandcampUrl": "https://projectmooncircle.bandcamp.com/album/the-mesektet",
+   "coverUrl": "https://f4.bcbits.com/img/a1957248557_10.jpg",
+   "listeners": 21037,
+   "minutes": 59,
+   "tracks": 36
+  },
+  {
+   "artist": "CASSOWARY",
+   "album": "Cassowary",
+   "year": 2020,
+   "label": "self-released",
+   "country": "us",
+   "faction": "nu-soul",
+   "genres": [
+    "soul",
+    "electronic"
+   ],
+   "why": "Bandcamp downtempo 候選（Last.fm 收聽 18,964，38 分 11 首；標籤 Contemporary R&B／G-Funk／Neo-Soul／R&B/Soul／electronica／nu-jazz）",
+   "moodGuess": {
+    "x": 2.7,
+    "y": 0.9,
+    "z": 0.7,
+    "why": "G-funk新靈魂，厚低頻慢拍（協調端粗估，把握 mid）"
+   },
+   "evidence": [
+    "https://cassowary.bandcamp.com/album/cassowary",
+    "https://musicbrainz.org/release-group/7b33f99e-0d6f-4027-9293-267aa424920f"
+   ],
+   "mbRgMbid": "7b33f99e-0d6f-4027-9293-267aa424920f",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "自我同名；G-funk／neo-soul 拍可能偏快（x）",
+   "bandcampUrl": "https://cassowary.bandcamp.com/album/cassowary",
+   "coverUrl": "https://f4.bcbits.com/img/a3060131135_10.jpg",
+   "listeners": 18964,
+   "minutes": 38,
+   "tracks": 11
+  },
+  {
+   "artist": "Monster Rally",
+   "album": "Botanica Dream",
+   "year": 2022,
+   "label": "self-released",
+   "country": "us",
+   "faction": "lofi-beat",
+   "genres": [
+    "hiphop",
+    "electronic"
+   ],
+   "why": "Bandcamp downtempo 候選（Last.fm 收聽 17,416，44 分 16 首；標籤 Exotica／Hip Hop／Hip-Hop/Rap／Instrumental Hip-Hop／Psychedelic／Surf）",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 0.8,
+    "z": 0.8,
+    "why": "夢幻取樣嘻哈，暖霧（協調端粗估，把握 mid）"
+   },
+   "evidence": [
+    "https://monsterrally.bandcamp.com/album/botanica-dream",
+    "https://musicbrainz.org/release-group/b545e8fe-ef8b-49a7-bccc-b1fea3fe0450"
+   ],
+   "mbRgMbid": "b545e8fe-ef8b-49a7-bccc-b1fea3fe0450",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "exotica 取樣明亮可能判輕（y）",
+   "bandcampUrl": "https://monsterrally.bandcamp.com/album/botanica-dream",
+   "coverUrl": "https://f4.bcbits.com/img/a3885421946_10.jpg",
+   "listeners": 17416,
+   "minutes": 44,
+   "tracks": 16
+  },
+  {
+   "artist": "L'Orange",
+   "album": "The Mad Writer",
+   "year": 2012,
+   "label": "Jazz Spot Records",
+   "country": "us",
+   "faction": "lofi-beat",
+   "genres": [
+    "hiphop"
+   ],
+   "why": "Bandcamp downtempo 候選（Last.fm 收聽 15,338，35 分 13 首；標籤 ）",
+   "moodGuess": {
+    "x": 2.7,
+    "y": 1.2,
+    "z": 0.4,
+    "why": "取樣hip-hop，dusty，暗暖（協調端粗估，把握 high）"
+   },
+   "evidence": [
+    "https://lorangeproductions.com/album/the-mad-writer-2",
+    "https://musicbrainz.org/release-group/6a5cd4e1-6186-4ffb-b255-c44b1a20f3f6"
+   ],
+   "mbRgMbid": "6a5cd4e1-6186-4ffb-b255-c44b1a20f3f6",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "",
+   "bandcampUrl": "https://lorangeproductions.com/album/the-mad-writer-2",
+   "coverUrl": "",
+   "listeners": 15338,
+   "minutes": 35,
+   "tracks": 13
+  },
+  {
+   "artist": "Manatee Commune",
+   "album": "Manatee Commune",
+   "year": 2016,
+   "label": "self-released",
+   "country": "us",
+   "faction": "chillwave-vapor",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp downtempo 候選（Last.fm 收聽 13,946，42 分 13 首；標籤 Ambient／Bedroom／Dreampop／Electronic／beats／chillwave）",
+   "moodGuess": {
+    "x": 2.1,
+    "y": 1,
+    "z": 0.5,
+    "why": "chillwave dream pop，磁帶糊（協調端粗估，把握 mid）"
+   },
+   "evidence": [
+    "https://manateecommune.bandcamp.com/album/manatee-commune",
+    "https://musicbrainz.org/release-group/3428f010-be54-442c-9a1c-e32b44248e3f"
+   ],
+   "mbRgMbid": "3428f010-be54-442c-9a1c-e32b44248e3f",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "自我同名；標籤含 dance（x）",
+   "bandcampUrl": "https://manateecommune.bandcamp.com/album/manatee-commune",
+   "coverUrl": "https://f4.bcbits.com/img/a0005568377_10.jpg",
+   "listeners": 13946,
+   "minutes": 42,
+   "tracks": 13
+  },
+  {
+   "artist": "Eagle Eyed Tiger",
+   "album": "Feathers",
+   "year": 2022,
+   "label": "self-released",
+   "country": "us",
+   "faction": "chillwave-vapor",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp downtempo 候選（Last.fm 收聽 10,006，33 分 9 首；標籤 Electronic／bedroom pop／chillwave／electronica／lofi／lofi pop）",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 0.9,
+    "z": 0.7,
+    "why": "chillwave 糊濾波，lofi 暖（協調端粗估，把握 low）"
+   },
+   "evidence": [
+    "https://eagleeyedtiger.bandcamp.com/album/feathers-2",
+    "https://musicbrainz.org/release-group/c66bda26-f89d-49de-99f5-963a4407e372"
+   ],
+   "mbRgMbid": "c66bda26-f89d-49de-99f5-963a4407e372",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "",
+   "bandcampUrl": "https://eagleeyedtiger.bandcamp.com/album/feathers-2",
+   "coverUrl": "https://f4.bcbits.com/img/a0522208720_10.jpg",
+   "listeners": 10006,
+   "minutes": 33,
+   "tracks": 9
+  },
+  {
+   "artist": "Asta Hiroki",
+   "album": "Entropy",
+   "year": 2021,
+   "label": "self-released",
+   "country": "fr",
+   "faction": "nu-soul",
+   "genres": [
+    "electronic",
+    "soul"
+   ],
+   "why": "Bandcamp downtempo 候選（Last.fm 收聽 9,806，37 分 10 首；標籤 Asta Hiroki／Dontmesswithjuan／Electronic／Hip Hop／Lalin St. Juste／Muhsinah）",
+   "moodGuess": {
+    "x": 2.7,
+    "y": 0.8,
+    "z": 0.3,
+    "why": "beat嘻哈電子，糊（協調端粗估，把握 low）"
+   },
+   "evidence": [
+    "https://astahiroki.bandcamp.com/album/entropy",
+    "https://musicbrainz.org/release-group/514e7b27-2b3b-41be-a7cf-ceffadb2e7b1"
+   ],
+   "mbRgMbid": "514e7b27-2b3b-41be-a7cf-ceffadb2e7b1",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "人聲客串、爵士電子：可能乾淨（y）",
+   "bandcampUrl": "https://astahiroki.bandcamp.com/album/entropy",
+   "coverUrl": "https://f4.bcbits.com/img/a1234381872_10.jpg",
+   "listeners": 9806,
+   "minutes": 37,
+   "tracks": 10
+  },
+  {
+   "artist": "MindSpring Memories",
+   "album": "% 2 0",
+   "year": 2015,
+   "label": "self-released",
+   "country": "us",
+   "faction": "chillwave-vapor",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp downtempo 候選（Last.fm 收聽 9,203，36 分 6 首；標籤 80s／90s／Ambient／adult contemporary／downtempo／dream punk）",
+   "moodGuess": {
+    "x": 1.7,
+    "y": 1,
+    "z": 0.3,
+    "why": "80s 夢幻氛圍，磁帶糊（協調端粗估，把握 low）"
+   },
+   "evidence": [
+    "https://mindspringmemories.bandcamp.com/album/2-0",
+    "https://musicbrainz.org/release-group/d81eee07-82c1-4029-9802-6f5da77d8c62"
+   ],
+   "mbRgMbid": "d81eee07-82c1-4029-9802-6f5da77d8c62",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "vaporwave 取樣 smooth jazz／soft rock",
+   "bandcampUrl": "https://mindspringmemories.bandcamp.com/album/2-0",
+   "coverUrl": "https://f4.bcbits.com/img/a3000668919_10.jpg",
+   "listeners": 9203,
+   "minutes": 36,
+   "tracks": 6
+  },
+  {
+   "artist": "Purrple Cat",
+   "album": "Sea of Stars",
+   "year": 2022,
+   "label": "self-released",
+   "country": "us",
+   "faction": "lofi-beat",
+   "genres": [
+    "hiphop",
+    "electronic"
+   ],
+   "why": "Bandcamp downtempo 候選（Last.fm 收聽 8,702，30 分 10 首；標籤 Hip-Hop/Rap／Lo-Fi Hip-Hop／LoFi Hip Hop／ambient／beats／chillout）",
+   "moodGuess": {
+    "x": 1.8,
+    "y": 0.8,
+    "z": 0.5,
+    "why": "lofi 嘻哈，磁帶糊，暖（協調端粗估，把握 low）"
+   },
+   "evidence": [
+    "https://purrplecat.bandcamp.com/album/sea-of-stars",
+    "https://musicbrainz.org/release-group/1ce2e8d5-c56f-4f2b-9c1d-091e243aa0e2"
+   ],
+   "mbRgMbid": "1ce2e8d5-c56f-4f2b-9c1d-091e243aa0e2",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "池中同人已 8 張，本線只取這一張",
+   "bandcampUrl": "https://purrplecat.bandcamp.com/album/sea-of-stars",
+   "coverUrl": "https://f4.bcbits.com/img/a1134160904_10.jpg",
+   "listeners": 8702,
+   "minutes": 30,
+   "tracks": 10
+  },
+  {
+   "artist": "Sweeps",
+   "album": "単にRetroFuture",
+   "year": 2023,
+   "label": "self-released",
+   "country": "us",
+   "faction": "lofi-beat",
+   "genres": [
+    "hiphop",
+    "electronic"
+   ],
+   "why": "Bandcamp downtempo 候選（Last.fm 收聽 7,964，31 分 15 首；標籤 Hip-Hop/Rap／beat-tape／beats／boom-bap／chillhop／chillout）",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 0.8,
+    "z": 0.7,
+    "why": "boom-bap beat tape，暖（協調端粗估，把握 mid）"
+   },
+   "evidence": [
+    "https://sweepsbeats.bandcamp.com/album/retrofuture",
+    "https://musicbrainz.org/release-group/4560a23d-6308-45e9-a70b-2e623e221c49"
+   ],
+   "mbRgMbid": "4560a23d-6308-45e9-a70b-2e623e221c49",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "",
+   "bandcampUrl": "https://sweepsbeats.bandcamp.com/album/retrofuture",
+   "coverUrl": "https://f4.bcbits.com/img/a0363459443_10.jpg",
+   "listeners": 7964,
+   "minutes": 31,
+   "tracks": 15
+  },
+  {
+   "artist": "Jazz Playaz",
+   "album": "Visions of a SIC World",
+   "year": 2023,
+   "label": "PLANET SIC",
+   "country": "us",
+   "faction": "lofi-beat",
+   "genres": [
+    "hiphop",
+    "jazz"
+   ],
+   "why": "Bandcamp downtempo 候選（Last.fm 收聽 7,133，35 分 14 首；標籤 Hip-Hop/Rap／Jazz Hop／Smooth Jazz／alternative hip-hop／independent／instrumental hip-hop）",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 0.8,
+    "z": 0.4,
+    "why": "jazz hop 取樣，暖糊（協調端粗估，把握 low）"
+   },
+   "evidence": [
+    "https://sicrecords.bandcamp.com/album/visions-of-a-sic-world",
+    "https://musicbrainz.org/release-group/17af6d5f-34b8-43c5-a2b6-6bc057f17285"
+   ],
+   "mbRgMbid": "17af6d5f-34b8-43c5-a2b6-6bc057f17285",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "smooth jazz 取樣可能判輕（y）",
+   "bandcampUrl": "https://sicrecords.bandcamp.com/album/visions-of-a-sic-world",
+   "coverUrl": "https://f4.bcbits.com/img/a4087936632_10.jpg",
+   "listeners": 7133,
+   "minutes": 35,
+   "tracks": 14
+  },
+  {
+   "artist": "Guitoud",
+   "album": "Conscious Rasta",
+   "year": 2010,
+   "label": "Fresh Poulp Records",
+   "country": "fr",
+   "faction": "psy-dub",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp downtempo 候選（Last.fm 收聽 6,617，54 分 11 首；標籤 Ambient／downtempo／dub／trip hop／Paris）",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1,
+    "z": 0.3,
+    "why": "慢dub拍、低頻厚、巴黎夜氛（協調端粗估，把握 low）"
+   },
+   "evidence": [
+    "https://guitoud.bandcamp.com/album/conscious-rasta",
+    "https://musicbrainz.org/release-group/c94c47cc-bf13-4d38-95f8-bc59e7052819"
+   ],
+   "mbRgMbid": "c94c47cc-bf13-4d38-95f8-bc59e7052819",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "dub 拍",
+   "bandcampUrl": "https://guitoud.bandcamp.com/album/conscious-rasta",
+   "coverUrl": "https://f4.bcbits.com/img/a3563790414_10.jpg",
+   "listeners": 6617,
+   "minutes": 54,
+   "tracks": 11
+  },
+  {
+   "artist": "Lapgan",
+   "album": "History",
+   "year": 2023,
+   "label": "self-released",
+   "country": "us",
+   "faction": "lofi-beat",
+   "genres": [
+    "hiphop",
+    "electronic"
+   ],
+   "why": "Bandcamp downtempo 候選（Last.fm 收聽 5,930，34 分 19 首；標籤 Electronic／Hip-Hop/Rap／Instrumental Hip-Hop／World／beat tape／beats）",
+   "moodGuess": {
+    "x": 2.7,
+    "y": 0.8,
+    "z": 0.5,
+    "why": "beat tape、取樣糊、慢boom bap（協調端粗估，把握 low）"
+   },
+   "evidence": [
+    "https://lapgan.bandcamp.com/album/history",
+    "https://musicbrainz.org/release-group/720eccd3-c59c-4869-93b4-01b41365b51b"
+   ],
+   "mbRgMbid": "720eccd3-c59c-4869-93b4-01b41365b51b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "",
+   "bandcampUrl": "https://lapgan.bandcamp.com/album/history",
+   "coverUrl": "https://f4.bcbits.com/img/a4009868745_10.jpg",
+   "listeners": 5930,
+   "minutes": 34,
+   "tracks": 19
+  },
+  {
+   "artist": "El Jazzy Chavo",
+   "album": "Today the sun falls in the east",
+   "year": 2017,
+   "label": "self-released",
+   "country": "gr",
+   "faction": "lofi-beat",
+   "genres": [
+    "hiphop",
+    "electronic"
+   ],
+   "why": "Bandcamp downtempo 候選（Last.fm 收聽 5,900，38 分 14 首；標籤 Hip-Hop/Rap／Instrumental Hip-Hop／abstact／beat tape／boom bap／downtempo）",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1,
+    "z": 0.8,
+    "why": "拍帶取樣，鬆鼓溫暖糊（協調端粗估，把握 low）"
+   },
+   "evidence": [
+    "https://jazzychavo.bandcamp.com/album/today-the-sun-falls-in-the-east",
+    "https://musicbrainz.org/release-group/17a986eb-5015-44f5-a3d9-2efc2f7242ad"
+   ],
+   "mbRgMbid": "17a986eb-5015-44f5-a3d9-2efc2f7242ad",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "同人《Redirections》是選輯，主線已汰",
+   "bandcampUrl": "https://jazzychavo.bandcamp.com/album/today-the-sun-falls-in-the-east",
+   "coverUrl": "https://f4.bcbits.com/img/a0691508846_10.jpg",
+   "listeners": 5900,
+   "minutes": 38,
+   "tracks": 14
+  },
+  {
+   "artist": "Kalpataru Tree",
+   "album": "Scattered Fragments of the Eternal Dream",
+   "year": 2007,
+   "label": "self-released",
+   "country": "us",
+   "faction": "psy-dub",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp downtempo 候選（Last.fm 收聽 5,213，68 分 8 首；標籤 Ambient／Chill out／Etheric／Organic／psy dub／psybient）",
+   "moodGuess": {
+    "x": 1.7,
+    "y": 0.8,
+    "z": 0.3,
+    "why": "psy dub氛圍、殘響長（協調端粗估，把握 mid）"
+   },
+   "evidence": [
+    "https://kalpatarutree.bandcamp.com/album/scattered-fragments-of-the-eternal-dream",
+    "https://musicbrainz.org/release-group/640b872e-c4ee-3fca-a469-40c61cc15721"
+   ],
+   "mbRgMbid": "640b872e-c4ee-3fca-a469-40c61cc15721",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Bandcamp 2006-10-31、MB 2007-01-01，年份照 MB",
+   "bandcampUrl": "https://kalpatarutree.bandcamp.com/album/scattered-fragments-of-the-eternal-dream",
+   "coverUrl": "https://f4.bcbits.com/img/a0305295694_10.jpg",
+   "listeners": 5213,
+   "minutes": 68,
+   "tracks": 8
+  },
+  {
+   "artist": "Koi.",
+   "album": "Maelstrom",
+   "year": 2012,
+   "label": "self-released",
+   "country": "us",
+   "faction": "chillwave-vapor",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp downtempo 候選（Last.fm 收聽 4,908，35 分 10 首；標籤 Electronic／Experimental／ambient／chillwave／downtempo／dreampop）",
+   "moodGuess": {
+    "x": 2,
+    "y": 1.1,
+    "z": 0.5,
+    "why": "chillwave糊濾波，夢幻（協調端粗估，把握 low）"
+   },
+   "evidence": [
+    "https://collectivelanguage.bandcamp.com/album/maelstrom",
+    "https://musicbrainz.org/release-group/7d752eb5-fbc6-429b-9d18-f93bc41716ca"
+   ],
+   "mbRgMbid": "7d752eb5-fbc6-429b-9d18-f93bc41716ca",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "",
+   "bandcampUrl": "https://collectivelanguage.bandcamp.com/album/maelstrom",
+   "coverUrl": "https://f4.bcbits.com/img/a0587225247_10.jpg",
+   "listeners": 4908,
+   "minutes": 35,
+   "tracks": 10
+  },
+  {
+   "artist": "Emapea",
+   "album": "Bees, Trees and Flowers",
+   "year": 2021,
+   "label": "self-released",
+   "country": "pl",
+   "faction": "lofi-beat",
+   "genres": [
+    "hiphop"
+   ],
+   "why": "Bandcamp downtempo 候選（Last.fm 收聽 4,103，45 分 16 首；標籤 Hip Hop／Hip-Hop／Hip-Hop/Rap／Instrumental Hip-Hop／Rap／beat tape）",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 0.8,
+    "z": 0.8,
+    "why": "beat tape取樣，鬆暖糊（協調端粗估，把握 low）"
+   },
+   "evidence": [
+    "https://emapea.bandcamp.com/album/bees-trees-and-flowers-2",
+    "https://musicbrainz.org/release-group/1cc4a4b5-d6ed-417b-951f-4d5b9c218a05"
+   ],
+   "mbRgMbid": "1cc4a4b5-d6ed-417b-951f-4d5b9c218a05",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "自述重鼓深低音（x）",
+   "bandcampUrl": "https://emapea.bandcamp.com/album/bees-trees-and-flowers-2",
+   "coverUrl": "https://f4.bcbits.com/img/a0227877989_10.jpg",
+   "listeners": 4103,
+   "minutes": 45,
+   "tracks": 16
+  },
+  {
+   "artist": "Hysterical Love Project",
+   "album": "Endless Bliss Weekender",
+   "year": 2021,
+   "label": "self-released",
+   "country": "au",
+   "faction": "dreampop",
+   "genres": [
+    "electronic",
+    "rock"
+   ],
+   "why": "Bandcamp downtempo 候選（Last.fm 收聽 3,492，33 分 11 首；標籤 Electronic／HLP／downtempo／shoegaze／summer／Melbourne）",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 1.1,
+    "z": 0.6,
+    "why": "shoegaze夏日霧，鬆拍（協調端粗估，把握 low）"
+   },
+   "evidence": [
+    "https://hystericalloveproject.bandcamp.com/album/endless-bliss-weekender",
+    "https://musicbrainz.org/release-group/171d772e-c9c7-4aee-89a2-67e50e3c22fb"
+   ],
+   "mbRgMbid": "171d772e-c9c7-4aee-89a2-67e50e3c22fb",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "",
+   "bandcampUrl": "https://hystericalloveproject.bandcamp.com/album/endless-bliss-weekender",
+   "coverUrl": "https://f4.bcbits.com/img/a1691516567_10.jpg",
+   "listeners": 3492,
+   "minutes": 33,
+   "tracks": 11
+  },
+  {
+   "artist": "Lipphead",
+   "album": "The Long Way",
+   "year": 2026,
+   "label": "Blockhead",
+   "country": "us",
+   "faction": "lofi-beat",
+   "genres": [
+    "hiphop",
+    "electronic"
+   ],
+   "why": "Bandcamp downtempo 候選（Last.fm 收聽 2,674，47 分 13 首；標籤 Hip-Hop/Rap／Instrumental Hip-Hop／beats／downtempo／electronic／samples）",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 0.9,
+    "z": 0.5,
+    "why": "取樣hip-hop鼓、dusty、暖調採樣（協調端粗估，把握 mid）"
+   },
+   "evidence": [
+    "https://blockheadnyc.bandcamp.com/album/the-long-way",
+    "https://musicbrainz.org/release-group/b74b3d2a-79cc-451c-8e22-6c9d8e2d627f"
+   ],
+   "mbRgMbid": "b74b3d2a-79cc-451c-8e22-6c9d8e2d627f",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Blockhead＋Eliot Lipp 雙人組",
+   "bandcampUrl": "https://blockheadnyc.bandcamp.com/album/the-long-way",
+   "coverUrl": "https://f4.bcbits.com/img/a3423581821_10.jpg",
+   "listeners": 2674,
+   "minutes": 47,
+   "tracks": 13
+  },
+  {
+   "artist": "Liléa Narrative",
+   "album": "Nouvelle chair",
+   "year": 2007,
+   "label": "self-released",
+   "country": "fr",
+   "faction": "lofi-beat",
+   "genres": [
+    "electronic",
+    "hiphop"
+   ],
+   "why": "Bandcamp downtempo 候選（Last.fm 收聽 2,539，57 分 12 首；標籤 Electronic／beat tape／beats／downtempo／electro／hiphop）",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 0.9,
+    "z": 0.4,
+    "why": "beat tape、dusty取樣、慢鼓（協調端粗估，把握 low）"
+   },
+   "evidence": [
+    "https://lileanarrative.bandcamp.com/album/nouvelle-chair",
+    "https://musicbrainz.org/release-group/6376d165-076d-401c-9760-3b7e5acdbd6f"
+   ],
+   "mbRgMbid": "6376d165-076d-401c-9760-3b7e5acdbd6f",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Lilea Narrative；Nouvelle Chair",
+   "uncertain": "MB 正規名 Liléa Narrative《Nouvelle chair》2007-06-19；標籤 electro（x）",
+   "bandcampUrl": "https://lileanarrative.bandcamp.com/album/nouvelle-chair",
+   "coverUrl": "https://f4.bcbits.com/img/a0470800744_10.jpg",
+   "listeners": 2539,
+   "minutes": 57,
+   "tracks": 12
+  },
+  {
+   "artist": "Stream☾atcher",
+   "album": "Buffywave",
+   "year": 2020,
+   "label": "Aloe City Wrld",
+   "country": "ro",
+   "faction": "chillwave-vapor",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp downtempo 候選（Last.fm 收聽 2,210，36 分 12 首；標籤 Barber Beats／Experimental／Vaporwave／downtempo／future funk／lo-fi hiphop）",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 0.9,
+    "z": 0.3,
+    "why": "vaporwave濾波糊、慢拍、懷舊（協調端粗估，把握 low）"
+   },
+   "evidence": [
+    "https://aloecitywrld.bandcamp.com/album/buffywave",
+    "https://musicbrainz.org/release-group/a89f465b-32e3-4555-9ca0-e696c8ad5c1e"
+   ],
+   "mbRgMbid": "a89f465b-32e3-4555-9ca0-e696c8ad5c1e",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "標籤含 future funk（x）",
+   "bandcampUrl": "https://aloecitywrld.bandcamp.com/album/buffywave",
+   "coverUrl": "https://f4.bcbits.com/img/a3743737894_10.jpg",
+   "listeners": 2210,
+   "minutes": 36,
+   "tracks": 12
+  },
+  {
+   "artist": "monde ufo",
+   "album": "Vandalized Statue To Be Replaced With Shrine",
+   "year": 2023,
+   "label": "Quindi Records",
+   "country": "us",
+   "faction": "dreampop",
+   "genres": [
+    "rock"
+   ],
+   "why": "Bandcamp downtempo 候選（Last.fm 收聽 1,755，33 分 10 首；標籤 Alternative／ambient／dream pop／folk／jazz／lo-fi）",
+   "moodGuess": {
+    "x": 1.8,
+    "y": 0.9,
+    "z": 0.3,
+    "why": "低傳真夢幻、磁帶糊（協調端粗估，把握 low）"
+   },
+   "evidence": [
+    "https://mondeufo.bandcamp.com/album/vandalized-statue-to-be-replaced-with-shrine",
+    "https://musicbrainz.org/release-group/b6ddf77a-2e8a-4911-8616-fabec74d3552"
+   ],
+   "mbRgMbid": "b6ddf77a-2e8a-4911-8616-fabec74d3552",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "dream pop 小品＋punk exotica，可能乾淨（y）",
+   "bandcampUrl": "https://mondeufo.bandcamp.com/album/vandalized-statue-to-be-replaced-with-shrine",
+   "coverUrl": "https://f4.bcbits.com/img/a0877240789_10.jpg",
+   "listeners": 1755,
+   "minutes": 33,
+   "tracks": 10
+  },
+  {
+   "artist": "My Sister's Fugazi Shirt",
+   "album": "God's In His Heaven, All's Right With The World",
+   "year": 2020,
+   "label": "self-released",
+   "country": "us",
+   "faction": "lofi-beat",
+   "genres": [
+    "hiphop",
+    "electronic"
+   ],
+   "why": "Bandcamp downtempo 候選（Last.fm 收聽 1,374，42 分 13 首；標籤 Electronic／LoFi Hip Hop／anime／beat tape／chill／chillhop）",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 1,
+    "z": 1,
+    "why": "lo-fi取樣、磁帶糊、懶散鼓、暖（協調端粗估，把握 mid）"
+   },
+   "evidence": [
+    "https://mysistersfugazishirt.bandcamp.com/album/gods-in-his-heaven-alls-right-with-the-world",
+    "https://musicbrainz.org/release-group/bac4957b-1d22-412b-aeeb-fe94e35ae323"
+   ],
+   "mbRgMbid": "bac4957b-1d22-412b-aeeb-fe94e35ae323",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "",
+   "bandcampUrl": "https://mysistersfugazishirt.bandcamp.com/album/gods-in-his-heaven-alls-right-with-the-world",
+   "coverUrl": "https://f4.bcbits.com/img/a2129058004_10.jpg",
+   "listeners": 1374,
+   "minutes": 42,
+   "tracks": 13
+  },
+  {
+   "artist": "Photon",
+   "album": "Escapism",
+   "year": 2025,
+   "label": "self-released",
+   "country": "us",
+   "faction": "chillwave-vapor",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp downtempo 候選（Last.fm 收聽 1,250，37 分 10 首；標籤 Electronic／ambient／chillsynth／chillwave／downtempo／dreamwave）",
+   "moodGuess": {
+    "x": 2,
+    "y": 0.8,
+    "z": 0.3,
+    "why": "chillwave糊濾波、合成器霧（協調端粗估，把握 low）"
+   },
+   "evidence": [
+    "https://photon2.bandcamp.com/album/escapism",
+    "https://musicbrainz.org/release-group/4800e92c-1aaf-42f1-b97d-2cf2f5fcdf46"
+   ],
+   "mbRgMbid": "4800e92c-1aaf-42f1-b97d-2cf2f5fcdf46",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "",
+   "bandcampUrl": "https://photon2.bandcamp.com/album/escapism",
+   "coverUrl": "https://f4.bcbits.com/img/a3120731929_10.jpg",
+   "listeners": 1250,
+   "minutes": 37,
+   "tracks": 10
+  },
+  {
+   "artist": "Teal",
+   "album": "Original Watercolour",
+   "year": 2025,
+   "label": "Spiritual World",
+   "country": "ca",
+   "faction": "nu-soul",
+   "genres": [
+    "electronic",
+    "soul"
+   ],
+   "why": "Bandcamp downtempo 候選（Last.fm 收聽 1,131，28 分 6 首；標籤 Dub／Electronic／Experimental／Street Soul／dance／dub）",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 0.9,
+    "z": 0.7,
+    "why": "dub回聲、街頭靈魂、濕潤低頻（協調端粗估，把握 low）"
+   },
+   "evidence": [
+    "https://spiritualworld.bandcamp.com/album/original-watercolour",
+    "https://www.discogs.com/release/33698556-Teal-Original-Watercolour"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "https://musicbrainz.org/ws/2/release-group?query=artist:\"Teal\"",
+     "https://musicbrainz.org/ws/2/release-group?query=releasegroup:\"Original Watercolour\""
+    ],
+    "checkedAt": "2026-11-06",
+    "conclusion": "MB 查無此盤；Discogs release 33698556（Spiritual World SW010，2025，LP 45 RPM）"
+   },
+   "manualEvidenceUrls": [
+    "https://spiritualworld.bandcamp.com/album/original-watercolour",
+    "https://www.discogs.com/release/33698556-Teal-Original-Watercolour"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "MB 查無，§1 人工身分（Bandcamp＋Discogs SW010 LP）；28 分 6 首貼長度下限",
+   "bandcampUrl": "https://spiritualworld.bandcamp.com/album/original-watercolour",
+   "coverUrl": "https://f4.bcbits.com/img/a0575759305_10.jpg",
+   "listeners": 1131,
+   "minutes": 28,
+   "tracks": 6
+  },
+  {
+   "artist": "bvdub",
+   "album": "Days of Gold",
+   "year": 2023,
+   "label": "quiet details",
+   "country": "us",
+   "faction": "psy-dub",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp downtempo 候選（Last.fm 收聽 1,021，78 分 6 首；標籤 Ambient／bvdub／chill-out／downtempo／drone／electronic）",
+   "moodGuess": {
+    "x": 1.5,
+    "y": 1.2,
+    "z": 0.3,
+    "why": "dub techno式殘響、層層合成器、包覆（協調端粗估，把握 mid）"
+   },
+   "evidence": [
+    "https://quietdetails.bandcamp.com/album/days-of-gold",
+    "https://musicbrainz.org/release-group/a355759d-630a-4118-80bd-16ad06c6a04d"
+   ],
+   "mbRgMbid": "a355759d-630a-4118-80bd-16ad06c6a04d",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "純 ambient：旋律不明可能判冷（z）",
+   "bandcampUrl": "https://quietdetails.bandcamp.com/album/days-of-gold",
+   "coverUrl": "https://f4.bcbits.com/img/a2925803766_10.jpg",
+   "listeners": 1021,
+   "minutes": 78,
+   "tracks": 6
+  }
+ ],
+ "notes": [
+  "主線依 batch-progress/bandcamp-dt-20261105/pick-ml69.json 自組（2026-11-06），汰換見 add-20261106-ml69/rulings.md"
+ ]
+}
