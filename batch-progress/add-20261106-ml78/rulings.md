@@ -40,3 +40,12 @@
 - 24701：c 組 8 張無「前次研究稿」可沿用（dropped-research.json 只有 ml73 Charlie North，非本組），全部新查。WebSearch 3 次用完（Akal Dub、Marley Carroll、Sweatson Klank，皆無樂評命中），其餘靠 Bandcamp ld+json、MB、iTunes lookup、維基 Polyenso／Tom Bailey。
 - 24702：鼓的種類一律採保守寫法：有廠方或樂評文字的才下型別（International Observer＝dub 慢拖無力；Sweatson Klank＝鬆拍為主、僅尾曲〈Ubiquitous〉為舞池曲，整張不歸舞池推進）；其餘（Gas Lab、Akal Dub、pheel.、John Dunder、Marley Carroll、Polyenso）沒有速度證據，寫「判不出」，不建議汰。判輕參考：Polyenso、Marley Carroll、Sweatson Klank。
 - 24703：年份以 MB first-release-date 為準，Bandcamp 頁面日期不同者寫入 notes（Akal Dub 2014 對 Bandcamp 2019；International Observer 2007-08-27 對 2007-01-09；pheel. 2023-10-31 對 2023-10-24）。Akal Dub 曲數 Bandcamp 8 首、Apple 6 首，卡面以 Bandcamp 為準。
+
+## 研究 b 組（24691–24700）
+- 24691：Kalya Scintilla 沿用 ml72 研究稿（key 照本批卡單），facts 已 10 條不補，只在 notes 補鼓型：約 90–100 BPM 中慢速 world bass 持續推進，非舞池四拍、非攻擊，本輪規則下不汰。
+- 24692：鼓型一律以文字來源為準，Apple 30 秒試聽的粗略自相關 BPM 只寫在 notes 並標「粗估，非引用來源」；高估值（129／136）多為倍頻誤判，不當證據。
+- 24693：Saafi Brothers《Liquid Beach》年份 Bandcamp 顯示 2002、MB 2003-03-11、Apple 2003；照主線規則用 MB 的 2003。廠牌查無明確（Apple ℗ 為藝人自己的 le mar production），不寫廠牌。
+- 24694：YOUTH 83《Progress Way》Bandcamp／MB 2023-01-03，Apple 2022-08-19；取 2023，status thin（無樂評、無人物故事；WebSearch 無結果）。
+- 24695：ATTLAS《Lavender God》標籤 edm／progressive（MB 流派 progressive house）是前次汰除原因，但文字來源只見『沉思、從容步調』，判不出舞池推進，notes 標判輕、判亮、建議主線不汰；後三首長曲（Sinner Complicated、Hotel、More Than That）未能確認。
+- 24696：Fieh 廠牌（疑 Jansen Records）頁面已過期無法核實，不入 facts；Bandcamp 簡介中 D'Angelo 比較句語意不明，不入 facts。
+- 24697：DJ Mayonnaise 廠牌僅 Apple ℗ 單一來源，facts 掛名但 notes 提醒寫作層不要當第一手說法；與 Anticon 的關係只有標籤，不寫。
