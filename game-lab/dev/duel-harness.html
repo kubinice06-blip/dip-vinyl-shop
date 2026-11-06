@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="zh-Hant"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>對決測試台（game-lab dev）</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../duel.css">
+<style>
+  html,body{margin:0;height:100%;background:#fff;overflow-x:hidden;}
+  #app{max-width:430px;margin:0 auto;height:100vh;height:100svh;position:relative;overflow:hidden;}
+  .hx-ov{position:fixed;inset:0;background:rgba(0,0,0,.55);display:flex;align-items:center;justify-content:center;z-index:2147483000;font-family:'Space Mono','Noto Sans TC',monospace;}
+  .hx-box{background:#fff;border:2px solid #111;padding:14px;max-width:340px;width:calc(100% - 32px);font-size:13px;line-height:1.5;}
+  .hx-box button{font-family:inherit;font-size:13px;font-weight:700;border:1px solid #111;background:#111;color:#fff;min-height:44px;padding:0 14px;margin:8px 8px 0 0;cursor:pointer;}
+  .hx-box button.s{background:#fff;color:#111;}
+  .hx-box img{width:160px;height:160px;object-fit:cover;display:block;margin:0 auto 8px;border:1px solid #111;}
+</style>
+</head><body><div id="app"></div>
+<script src="../../dip-character.js?v=2"></script>
+<script src="../../dip-player.js?v=57"></script>
+<script src="../cards.js"></script>
+<script src="../content.js"></script>
+<script src="../engine.js"></script>
+<script src="../fx.js"></script>
+<script src="../duel.js"></script>
+<script>
+(function(){
+'use strict';
+// 測試台專用：roguelike.html L1378–1426 的 SPR（改名 H_SPR，包在 IIFE 裡，不撞 dip-character.js 的全域）
+const H_SPR = {
+  // 對手（依場次深度 0~7 階：小白→之神）
+  e0: sprRows([   // 音樂小白：耳機
+    '.....gggggg.....','.....kkkkkk.....','....kkkkkkkk....','...gksssssskg...','...gssksskssg...','....ssssssss....','.....ssssss.....',
+  ],'w','b'),
+  e1: sprRows([   // 文青同好：毛帽＋圍巾
+    '................','.....nnnnnn.....','....nnnnnnnn....','....nssssssn....','....ssksskss....','....ssssssss....','.....ssssss.....',
+  ],'e','k',{7:'....rrrrrrrr....'}),
+  e2: sprRows([   // 社團學長：棒球帽
+    '................','.....bbbbbb.....','....bbbbbbbbbb..','....kssssssk....','....ssksskss....','....ssssssss....','.....ssssss.....',
+  ],'w','k'),
+  e3: sprRows([   // 資深樂評：貝雷帽＋眼鏡
+    '................','......pppp......','....pppppppp....','....kssssssk....','....ekkeekke....','....ssssssss....','.....ssssss.....',
+  ],'e','k'),
+  e4: sprRows([   // 二手店老闆：光頭鬍子＋圍裙
+    '................','................','.....ssssss.....','....ssssssss....','....ssksskss....','....sdssssds....','.....dddddd.....',
+  ],'w','d',{8:'...wggggggggw...',9:'...sggggggggs...',10:'...sggggggggs...',11:'....gggggggg....'}),
+  e5: sprRows([   // 地下廠牌主理人：長髮全黑
+    '................','.....kkkkkk.....','....kkkkkkkk....','...kksssssskk...','...kksksskskk...','...kssssssssk...','.....ssssss.....',
+  ],'k','k'),
+  e6: sprRows([   // 品味行家：紳士帽
+    '................','.....oooooo.....','.....oooooo.....','...oooooooooo...','....ssksskss....','....ssssssss....','.....ssssss.....',
+  ],'p','k'),
+  e7: sprRows([   // 品味之神：皇冠＋長袍
+    '....y.y..y.y....','....yyyyyyyy....','....kkkkkkkk....','....kssssssk....','....ssksskss....','....ssssssss....','.....ssssss.....',
+  ],'p','p'),
+  boss: sprRows([ // 傳說藏家：高禮帽＋單片眼鏡＋西裝領帶
+    '.....kkkkkk.....','.....kkkkkk.....','.....kkkkkk.....','...kkkkkkkkkk...','....ssssssss....','....sskssyys....','.....ssssss.....',
+  ],'k','k',{7:'....kkwrrwkk....',8:'...kkkwrrwkkk...'}),
+  // 我方三流派（key 對齊 CLASSES）
+  guard: sprRows([   // 守舊派：整齊西裝頭＋藍毛衣
+    '................','.....kkkkkk.....','....kkkkkkkk....','....kssssssk....','....ssksskss....','....ssssssss....','.....ssssss.....',
+  ],'b','k'),
+  digger: sprRows([  // 挖掘派：反戴帽＋綠帽 T
+    '................','.....nnnnnn.....','..nnnnnnnnnn....','....kssssssk....','....ssksskss....','....ssssssss....','.....ssssss.....',
+  ],'n','d'),
+  heretic: sprRows([ // 異端派：刺蝟頭＋紅外套
+    '....k.k..k.k....','....kkkkkkkk....','....kkkkkkkk....','....kssssssk....','....ssksskss....','....ssssssss....','.....ssssss.....',
+  ],'r','k'),
+};
+// 碎裂唱片（死亡結算用：黑膠裂一道白縫）
+H_SPR.brokenrec = [
+  '............','...kk.kkk...','..kkk.kkkk..','.kkkk.kkkkk.','.kkkkg.kkkk.','.kkkg..gkkk.','.kkkg..gkkk.','.kkkk.gkkkk.','.kkkk.kkkkk.','..kkk.kkkk..','...kkkkkk...','............',
+];
+// 唱片行老闆（開場序章／捏角色／推薦三張盤的那位；與 depth 8～9 的「二手店老闆」對手不是同一人）：
+// 灰髮＋眼鏡＋鬍子、白上衣、綠圍裙
+H_SPR.owner = sprRows([
+  '................','.....dddddd.....','....dddddddd....','....dssssssd....','....ekkeekke....','....sdssssds....','.....dddddd.....',
+],'w','d',{8:'...wnnnnnnnnw...',9:'...snnnnnnnns...',10:'...snnnnnnnns...',11:'....nnnnnnnn....'});
+
+const Q = new URLSearchParams(location.search);
+const E = window.DipLabEngine, C = window.DipLabContent, F = window.DipLabFx;
+const seen = {};
+const log = [];
+window.__h = { log, seen, remount: () => start(++seedN) };
+let seedN = +(Q.get('seed') || 7);
+function sprite(key, px){
+  try {
+    if (key && typeof key === 'object') return pixArtHTML(avatarRows(key), px);
+    const rows = H_SPR[key] || H_SPR.guard;
+    return pixArtHTML(rows, px);
+  } catch(e){ return ''; }
+}
+function modal(html, btns){
+  const ov = document.createElement('div'); ov.className='hx-ov';
+  ov.innerHTML = '<div class="hx-box">'+html+'<div class="bt"></div></div>';
+  (btns||[{t:'關閉'}]).forEach(b => { const x=document.createElement('button'); x.textContent=b.t; if(b.s) x.className='s'; x.onclick=()=>{ ov.remove(); b.f && b.f(); }; ov.querySelector('.bt').appendChild(x); });
+  document.body.appendChild(ov); return ov;
+}
+const esc = s => String(s==null?'':s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const hooks = {
+  sprite,
+  hint(id){ if (Q.get('hints')==='0') return false; if (seen[id]) return false; seen[id]=true; log.push('hint '+id); return true; },
+  info(card){ log.push('info '+card.id); modal(`<img src="${esc(card.localCover ? new URL(card.localCover, new URL('../', location.href)).href : card.coverUrl)}" alt=""><b>${esc(card.artist)}</b><br>《${esc(card.album)}》 ${card.year||''}<br>經${card.c} 冷${card.o} 硬${card.h}<br>${esc(card.pitch||'')}`,
+    [{t:'▶ 試聽', f:()=>F.music.play(card)}, {t:'關閉', s:1}]); },
+  pause(){ log.push('pause'); modal('⏸ 暫停（測試台）', [{t:'繼續'}, {t:'重開一場', s:1, f:()=>start(++seedN)}]); },
+  help(){ log.push('help'); modal(esc(C.help)); },
+  settings(){ return { selfRead: Q.get('selfread')==='1', fastAnim: Q.get('fastanim')==='1' }; },
+  onEvent(ev){ log.push('ev '+ev.t); },
+  player: { name:'測試員', avatar: (C.avatarsFallback||[])[0] },
+  artBase: new URL('../../art/', location.href).href,
+};
+function build(seed){
+  const enemyId = Q.get('enemy') || 'copycat';
+  const aceTier = Q.get('ace') || 'hall';
+  const eDef0 = C.enemies[enemyId];
+  const relics = (Q.get('relics')||'').split(',').filter(Boolean);
+  const prologue = enemyId === 'man' || Q.get('prologue')==='1';
+  const deckIds = (Q.get('deck') ? Q.get('deck').split(',') : [...C.gifts[aceTier], ...C.junk]);
+  const pDef = { hp: prologue ? E.CFG.prologueHp : +(Q.get('hp')||E.CFG.playerHp), maxHp: prologue ? E.CFG.prologueHp : E.CFG.playerHp, deck: deckIds.map(id=>C.cards[id]).filter(Boolean),
+    ace: C.cards[C.aces[aceTier]], ear: aceTier, relics, startQi: +(Q.get('qi')||0), reviveOnce: relics.includes('testpress') };
+  const eDef = Object.assign({}, eDef0, { deck: eDef0.deck.map(id=>C.cards[id]).filter(Boolean) });
+  const others = ['hall','pearl','heresy'].filter(t=>t!==aceTier);
+  const enemyAce = eDef0.boss ? C.cards[C.aces[others[seed % 2]]] : null;
+  const ultAttr = E.resolveUltAttr(eDef0.ultAttr, aceTier);
+  const req = Q.has('req') ? (Q.get('req')||null) : (!prologue && eDef0.requests && eDef0.requests.length ? eDef0.requests[seed % eDef0.requests.length] : null);
+  const res = E.startDuel(pDef, eDef, { seed: seed >>> 0 || 1, ultAttr, request: req, prologue, habitKnown: Q.get('known')==='1', enemyAce });
+  const d = res.duel;
+  // 測試用狀態覆寫（只在測試台）
+  if (Q.has('eqi') || Q.has('ehp') || Q.has('phase')) {
+    if (Q.has('ehp')) d.e.hp = +Q.get('ehp');
+    if (Q.has('eqi')) d.e.qi = +Q.get('eqi');
+    d.hand = 0; d.e.deck.push(d.e.record); d.e.record = null;
+    const evs = []; E.beginHand(d, evs); res.events = evs;
+  }
+  if (Q.has('pqi')) d.p.qi = +Q.get('pqi');
+  if (Q.has('php')) d.p.hp = +Q.get('php');
+  return res;
+}
+function start(seed){
+  let res = build(seed);
+  // 測試台：?want=feint|true|copy|... 重抽種子直到第一手抽中那種格（截圖用）
+  const want = Q.get('want');
+  for (let k = 0; want && k < 400; k++) {
+    const d = res.duel; if (d.intent && !d.intent.ult && (want === 'hidden' ? d.e.disc[d.intent.cellIdx] === 'hidden' : E.realGlyph(d, d.intent.cellIdx) === want)) break;
+    res = build(seed = ++seedN);
+  }
+  window.__h.duel = res.duel;
+  DipLabDuel.mount(document.getElementById('app'), { duel: res.duel, events: res.events, run: null, content: C, hooks,
+    onSave(d){ window.__h.saved = (window.__h.saved||0)+1; },
+    onEnd(r){ log.push('end '+r.over); window.__h.ended = r.over;
+      if (Q.get('noend')==='1') return;
+      setTimeout(()=>modal(r.over==='win'?'你贏了（測試台）':'你輸了（測試台）', [{t:'再一場', f:()=>start(++seedN)}]), 600); } });
+}
+F.init();
+if (Q.get('sound')==='1') {
+  modal('對決測試台：要開聲音嗎？', [{t:'推門（有聲音）', f:()=>{ F.unlockFromGesture(true); start(seedN); }}, {t:'🔇 安靜', s:1, f:()=>{ F.unlockFromGesture(false); start(seedN); }}]);
+} else start(seedN);
+})();
+</script>
+</body></html>
