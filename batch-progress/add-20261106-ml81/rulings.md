@@ -104,3 +104,10 @@
   - `Project Lazarus|Ждите Нас Звезды!`：刪「聽眾留言裡提到，曲中穿插著蘇聯太空人的通訊語音」（樂迷留言不算來源）；143 字（thin）。
   - `ASURA|Life²`：「里昂 psychill 計畫」→「法國 psychill 計畫」（md43 審稿先例：里昂是 Ultimae 廠牌所在地，不是 ASURA）；223 字。
 - **24992** 抽核：Klaada 本名與 16 歲起做迷幻樂、Sephira 本名 Matthew Crick、Huerta 洛杉磯出生，皆出自該專輯 Bandcamp 頁本人 credits／自述，照留；JOE BEATS 照卡池掛名大寫，照留。媒體名、「據說」全批 0。
+
+## 上線（2026-11-06，主線）（條號 24993）
+- **24993**：上線 38 張：card_catalog 38／38、KV 38 鍵回讀逐字一致（stamp 20261106ml81）、試聽 31 ready（25 張換成最紅那首）／7 unavailable（Apple 查無或曲目對不上）、seed +38、prepare／published gate 0 error（warning 皆 UPC 盡力而為與 §1 人工身分提示）。封面 CAA 34＋Bandcamp 4（CAA 404／§1 人工身分），主線縮圖表逐張目視相符。三軸機器基線（經典 ≤4），冷門度下限逐張核過無違反；頂點 0。§1 人工身分：ALBA（Bandcamp＋Apple collectionId）。寫入前對 origin 全部 `claude/*` 分支 seed 去重 0（並行 ml74–79、md44–45 尚未合併）。藝人介紹 ar-d-814 上線 17（撤寫 1、不寫 10），同 PR 上線（`batch-progress/artist-intro/ar-d-rulings-ml80.md`）。
+
+## 評分與落格（2026-11-06，主線）（條號 24994）
+- **24994**：Opus 1 支照 `score500/BRIEF.md`（10-23 體感標準＋「有鼓不等於躁」）打 38 張（`batch-progress/mood-axes/score-ml81/`，聲音依據讀研究稿，不讀 moodGuess），主線看過未改值。`build-priors` → `build-scale v0`（錨點 104/104）→ `build-card-moods`。
+- **落恍惚 24/38（63%）**。出格：頹靡 7（Pejzaż cold-wave、Quok、RYKARD、Klaada、CIRCULAR、JOE BEATS z −0.1、Pandrezz 判冷）、放鬆 4（C Y G N、Sim Nagai、MONKYMAN、Sweatson Klank 判輕）、沸騰 3（Gnarls Barkley、Slowly Rolling Camera、Ancient Astronauts x 3.0–3.1）。

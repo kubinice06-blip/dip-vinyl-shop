@@ -105,3 +105,10 @@
   - `DHAMIKA|Energy Flow`、`DHAMIKA|Endless Horizons`：刪本名 Sven Lundgren（ar-d-813 補洞層：本名單源未驗證）；EH 補「這位瑞典 psychill 製作人…DHAMIKA 名義」回到 192 字。
   - `Asta Hiroki|Entropy`：「他偏好真人演奏」→「Asta Hiroki 偏好真人演奏」（性別無來源，不用代名詞）；203 字。
 - **24912** 媒體名、榜單名次、「據說／據傳」全批 0；Moderator 的 Morricone 依寫作層照 note 寫「莫利克奈」，照留。
+
+## 上線（2026-11-06，主線）（條號 24913）
+- **24913**：上線 36 張：card_catalog 36／36、KV 36 鍵回讀逐字一致（stamp 20261106ml80）、試聽 28 ready（23 張換成最紅那首）／8 unavailable（Apple 查無或曲目對不上）、seed +36、prepare／published gate 0 error（warning 皆 UPC 盡力而為與 §1 人工身分提示）。封面 CAA 29＋Bandcamp 7（CAA 404／§1 人工身分），主線縮圖表逐張目視相符。三軸機器基線（經典 ≤4），冷門度下限逐張核過無違反；頂點 0。§1 人工身分：Andi Otto、Dj Drez、RUMTUM（Bandcamp＋Apple collectionId）。寫入前對 origin 全部 `claude/*` 分支 seed 去重 0（並行 ml74–79、md44–45 尚未合併）。藝人介紹 ar-d-813 上線 16（撤寫 7、不寫 4），同 PR 上線（`batch-progress/artist-intro/ar-d-rulings-ml80.md`）。
+
+## 評分與落格（2026-11-06，主線）（條號 24914）
+- **24914**：Opus 1 支照 `score500/BRIEF.md`（10-23 體感標準＋「有鼓不等於躁」）打 36 張（`batch-progress/mood-axes/score-ml80/`，聲音依據讀研究稿，不讀 moodGuess），主線看過未改值。`build-priors` → `build-scale v0`（錨點 104/104）→ `build-card-moods`。
+- **落恍惚 33/36（92%）**。出格：Lee Scott（z −0.3，髒糊 beat 古怪陰鬱）、Eivør（z −0.1，暗色交響電子）落頹靡；EAT STATIC（x 3.0，模組合成器 psy 律動）落暴躁。
