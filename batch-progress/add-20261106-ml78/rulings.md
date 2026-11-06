@@ -49,3 +49,18 @@
 - 24695：ATTLAS《Lavender God》標籤 edm／progressive（MB 流派 progressive house）是前次汰除原因，但文字來源只見『沉思、從容步調』，判不出舞池推進，notes 標判輕、判亮、建議主線不汰；後三首長曲（Sinner Complicated、Hotel、More Than That）未能確認。
 - 24696：Fieh 廠牌（疑 Jansen Records）頁面已過期無法核實，不入 facts；Bandcamp 簡介中 D'Angelo 比較句語意不明，不入 facts。
 - 24697：DJ Mayonnaise 廠牌僅 Apple ℗ 單一來源，facts 掛名但 notes 提醒寫作層不要當第一手說法；與 Anticon 的關係只有標籤，不寫。
+
+## 研究 a 組（24681–24690；2026-11-06）
+- 24681：8 張全部以「鼓的種類」寫聲音條；BPM 為 Apple 30 秒試聽自寫自相關粗估（倍速誤判已折半），只寫範圍，不當定論。
+- 24682：Nym 沿用 ml71 研究稿（補 2 條）；前次「建議汰」依舊版規則，本輪改判慢到中速鼓機拍、不汰。
+- 24683：crushed《extra life》：Bandcamp 稱 2023 出道 EP（原版 6 首約 26 分），卡單 8 首 33 分是 2024 Ghostly 黑膠版（含 2 首混音）；MB 登錄 Album。研究層不汰，列為主線決定項（類型與卡面曲數）。
+- 24684：Romare《Love Songs: Part Two》、AES Dana《Pollen》、Entheogenic《Spontaneous Illumination》鼓種類寫「判不出」（Romare 約三分之一曲接近 110–120 BPM；AES Dana 簡介稱 deep tech／progressive trance；Entheogenic 長曲估計分散），不寫建議汰。
+- 24685：Arms and Sleepers 卡單 18 首／61 分是串流版，Bandcamp 官方頁 17 首（缺〈Can You〉）；廠牌不明（版權為樂團自己），卡面建議不寫廠牌。
+- 24686：moodGuess 存疑（判輕或判重，僅供評分）：Blockhead、Romare、Glasper、Nym 判輕；Arms and Sleepers、AES Dana 判重偏暗。無一張確定為舞池推進或攻擊型。
+
+## 主線研究汰換（不佔條號；2026-11-06）
+研究層 a–e 交件（38 張）。照「有鼓不等於躁」只汰攻擊型、舞池推進型與身分問題；判輕、判冷、判不出的一律留給評分 → 汰 2、剩 36；被汰卡移到 `dropped-cards.json`／`dropped-research.json`，不補人。
+- 身分 1：crushed《extra life》（研究 a：Bandcamp 自稱 2023 年出道 EP，原版 6 首約 26 分；卡單 8 首 33 分是 2024 年 Ghostly 黑膠擴充版，多兩首他人混音；MB 雖登 Album，照 Bandcamp 本人說法視為 EP）
+- 舞池推進 1：AES DANA《Pollen》（研究 a：Ultimae 簡介自稱 deep tech／progressive trance，試聽有兩首約 130–139 BPM）
+- 留下（判不出或慢拖／中速，交評分）：Romare（house／disco 中速律動，約三分之一曲近 110–120 BPM，四拍底鼓是否持續判不出——照「判不出的留」）、Entheogenic（長曲速度分散）、Saafi Brothers（dubwise chugging beat 中速）、Marley Carroll（一首被形容 dancey、標 House，未證實舞池推進）、Lord Of The Isles（breaks、慢速 4x4 與 ambient 並存）、Kalpataru Tree（中速 dub 骨幹）、Kalya Scintilla（約 90–100 BPM 持續推進、非四拍）、fat jon（後半 hip-hop 式 breakbeat）、Blockhead／Glasper／Arms and Sleepers／Nym／DJ Mayonnaise／DJ Phixion（boom bap／半速嘻哈拍，慢拖到中速）。
+- 研究層更正卡單：Hibernation《Organic Technology》134 分含約 68 分半連續混音，專輯本體 13 首約 65 分；Caspro《OFFLINE》實為 8 首約 31 分；Arms and Sleepers Bandcamp 官方 17 首；cehryl 廠牌 Pilot Study Records（Apple ℗）。
