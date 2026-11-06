@@ -11,13 +11,13 @@
 - MB release-group 搜尋＋Bandcamp 頁 ld+json（盤名、日期、曲目、文案）逐張回查；年份照 MB first-release-date。
 - **主線汰 8**：
   - Purrple Cat《Distant Worlds II》：同人超量（池中已 10 張）
-  - Dj CUTMAN《WiiU Grooves》：MB Album＋Mixtape/Street
+  - Dj CUTMAN《WiiU Grooves》：MB Album＋Mixtape/Street；遊戲主題免費使用 beat 集
   - Nomadic《Wandering Mind》：MB 標 EP（18c88bd4）
   - Lipphead《In The Nude》：舞池推進：ml70 研究稿 driving electro funk、90–110 BPM、脈動最強（第 2 種）
   - Robot Koch《Cosmic Waves》：MB 標 EP、Bandcamp 文案自稱 EP（10 吋）
-  - The Orb《Buddhist Hipsters》：舞池推進＋同人超量：ml70 研究稿 reggae skank、cosmic D&B、紐約 deep house 舞池段（第 2 種）
+  - The Orb《Buddhist Hipsters》：舞池推進＋同人超量：ml70 研究稿 reggae skank、cosmic D&B、紐約 deep house 舞池段（第 2 種）；池中已 8 張
   - Chillhop Music《Chillhop Timezones Nigeria》：廠牌合輯（22 首多位製作人）
-  - Jogging House《Bones》：批內同人第三張（本批留《Sender》《Softie》
+  - Jogging House《Bones》：批內同人第三張（本批留《Sender》《Softie》；池中另 1 張、並行批另 5 張）
 - Ancient Astronauts《We Are To Answer》：MB Album 2009-06-08（ESL Music 原發），Bandcamp 2016 為重發，年份 2009。soft siren《4AM》：MB 有 2023 同名單曲與 2026-10-23 Album，釘 Album。
 - downstairs J《basement, etc...》：MB RG 沒標 primary type（7 首 39 分、廠牌文案稱 debut album），比照 ml70 AndyFellaz／ml71 Somatoast 先例視同 Album。GENDEMA《Where It Hurts Less》MB 2025-05-16，Bandcamp 2026 為重發頁。
 - §1 人工：ALBA《SACRAMENTARIUM》（Bandcamp＋Apple 1547530170＋Discogs master 1983100）。
