@@ -1,5 +1,15 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-06｜dip-vinyl-shop｜情緒薄格恍惚 Bandcamp 第三輪「有鼓」名單 ml80／ml81：74 張上線（落恍惚 57）＋藝人介紹 33 位
+
+- **店主 11-06「有些要死不活的音樂也會有鼓推進」「全都上架吧」**：前兩輪因有拍推進汰掉／標籤先篩掉的 473 張切十批、五個工作階段並行；本工作階段做 ml80（`pick-ml80.json` 47）與 ml81（`pick-ml81.json` 47），條號 24841／24921。卡單即策展，只汰鼓＋攻擊性與舞池推進（四拍、house／techno／breakbeat、明顯中快速），判輕判冷不汰、交評分落格。研究判有鼓的 9 張沿用前輪研究稿只補鼓型。
+- **ml80**（`add-20261106-ml80`）：主線汰 10（舞池推進 5、同人超量 3、直播即興集、片段集）→ 研究汰 1（Sephira 120–140 BPM）→ **上線 36、落恍惚 33（92%）**；出格 Lee Scott、Eivør 落頹靡，EAT STATIC 落暴躁。
+- **ml81**（`add-20261106-ml81`）：主線汰 8（舞池推進 2、EP 2、同人超量 2、合輯、mixtape）→ 研究汰 1（Romare house）→ **上線 38、落恍惚 24（63%）**；出格頹靡 7、放鬆 4、沸騰 3。
+- **寫入（已即時生效）**：card_catalog 74、KV 74 鍵逐字回讀一致（stamp 20261106ml80／ml81）、試聽 59 ready（48 張換成最紅那首）／15 unavailable、seed +74；prepare／published gate 皆 0 error；頂點 0。封面 CAA 63＋Bandcamp 11。§1 人工身分 4（Andi Otto、Dj Drez、RUMTUM、ALBA）。審稿改 12 張（單源句、本名單源、性別代名詞、樂評轉述、ASURA 里昂實為廠牌地）。
+- **藝人介紹**：ar-d-813 上線 16（撤寫 7：單源 6、Random Rab 單一訪談無國籍）、ar-d-814 上線 17（撤寫 RYKARD；Gnarls Barkley 刪「兩人都出身亞特蘭大」不實句）；介紹總數 10,795（合併 main 的 ar-d-815／816 後）。
+- **八格**（合併 md44／md45 後重建）：恍惚 1,821、頹靡 1,854；錨點 104/104。類型樹、抽卡封面、card-moods 重建。
+- **主要檔案**：`batch-progress/add-20261106-{ml80,ml81}/`、`onboarding-manifest-add-20261106-ml8[01]-20261106.json`、`batch-progress/mood-cells-20261022/{curation-ml80,curation-ml81,master-ml80,master-ml81,cut-artist-intros-ml80.mjs,SCENES.md}`、`batch-progress/bandcamp-dt-20261105/RES-ADDENDUM-r3.md`、`desc-tools/batches/{cards,research,hooks,input,output}/add-20261106-ml8[01]*`、`batch-progress/mood-axes/score-{ml80,ml81}/`、`batch-progress/artist-intro/{roster-ml80-ar-d-813,roster-ml81-ar-d-814,ar-d-rulings-ml80.md}`、`data/artist-intros/`、`seed_cards.json`、`data/mood/`、`genre-tree.json`、`card-subgenres.json`、`draw-covers/`、試聽地圖。
+- **驗證**：`verify-album-onboarding --published` 兩批 0 error；`verify-wave-kv` 36／36、38／38；`build-card-moods` 錨點 104/104；`qa-artist out` 兩批只剩刻意不寫的缺位。
 ### 2026-11-06｜dip-vinyl-shop｜情緒薄格頹靡 Bandcamp「有鼓」名單第三輪 md44／md45：55 張上線（落頹靡 37）＋藝人介紹 31 位
 
 - **店主 11-06「有些要死不活的音樂也會有鼓推進」「全都上架吧」**：前兩輪因有拍被汰或被標籤篩掉的 473 張切十批、五個工作階段並行；本工作階段做 md44（`pick-md44.json` 48，條號 25001）與 md45（`pick-md45.json` 47，條號 25081）。卡單即策展；**只汰攻擊性鼓、舞池推進、資格與同人超量，判暖判輕不汰**。前兩輪研究過的 18 張沿用 `dropped-research.json`，只補鼓型。
