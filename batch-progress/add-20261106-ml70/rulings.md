@@ -43,3 +43,20 @@
 - 23642：moodGuess 強烈存疑建議汰換——crushed《no scope》（breakbeat／drum'n'bass／big beat，壓縮響亮）、Lipphead《In the Nude》（driving electro funk，玩鬧律動）。
 - 23643：存疑但可留——Degiheugi《Bagatelle》（陽光取樣、ragga／饒舌客座，偏亮偏動，建議降級）、Eivør《Enn》（重暖成立、靜偏弱）、Brock Berrigan／Sweeps／Mounika.（boom-bap 有鼓持續推進，暗暖厚符合，靜偏弱）。Desert Dwellers 大致成立。
 - 23644：Brock Berrigan、Sweeps 僅 Bandcamp 單頁，status thin。MB 抓取多次連線被重置，身分以卡單 mbNote 已核對的 rgMbid 為準。
+
+## 研究 d 組（8 張；條號區間 23671–23680）
+- 23671：聲音證據法——Bandcamp 官方說明加 Bandcamp 試聽片段（mp3-128）每張 3 首的粗略頻譜／自相關分析（150Hz 以下占比、4kHz 以上占比、質心、拍點 BPM），結果只寫 notes，不進 facts。UA 一律 `dip-vinyl-shop/1.0 (+https://dipvinyl.tw)`。
+- 23672：AndyFellaz《BeatBop Street》moodGuess 強烈存疑建議汰換——廠牌文案 funky swing／acid jazz／cosmic salsa／Latin montunos，打擊樂是主角、拍子推進、高頻較亮，偏躁輕而非恍惚。
+- 23673：Chasms《Glimpse of Heaven》、Chewing《Pacific Ocean Blue》z 存疑——樂評與自述偏冷暗（goth gloom、darker and ambient），非暖；x、y 成立可留。Horizon Fire（synthwave 偏冷）、Purrple Cat（y 厚度）、Oblique Occasions（z）亦列存疑，詳各卡 notes。最符合恍惚格：Macroblank《Tales of the Cypher》（低頻占比全批最高）、Krusseldorf《Cloud Songs》。
+- 23674：年份——Chewing 取 MB 首發 2018（黑膠 Turntable Kitchen；Bandcamp 數位版 2020-02-24 是同 RG 另一 release）；Macroblank 依主線取 2021（MB 2021-12-12，Bandcamp 2022-01-07）；AndyFellaz Bandcamp 03-24 對 MB 04-17，皆 2017。Chewing 是對 Dennis Wilson 原作的整張翻唱，寫作層須寫清楚。
+- 23675：廠牌可補——Chasms＝Felte、AndyFellaz＝Cold Busted（MB release）；Krusseldorf／Purrple Cat／Horizon Fire 自行發行維持空白或自發；Oblique Occasions 另有 Aloe City Wrld 2023-11-02 release，首發自行發行。
+- 23676：status——Oblique Occasions、Horizon Fire、Purrple Cat、Macroblank 為 thin（Bandcamp 無說明或署名，WebSearch 僅用 3 次：Chasms 有效、Oblique Occasions 無結果、Chewing 有效）。Cold Busted 維基頁 404 未採。未推翻策展層的盤名／年份／掛名。
+
+## 主線研究汰換（不佔條號；2026-11-06）
+研究層交件後照各組「moodGuess 存疑」汰 20 → 剩 16；被汰卡移到 `dropped-cards.json`／`dropped-research.json`。不補位（卡單即策展結果）。
+- 能量（拍子推進、舞池）11：crushed《no scope》（breakbeat／dnb／big beat、壓縮重）、Lipphead《In the Nude》（driving electro funk）、Degiheugi《Bagatelle》（陽光取樣、ragga 客座、偏亮偏動）、Eivør《Enn》（真鼓、交響編制、低吼人聲）、The Orb《Prism》（drum & bass、硬科技舞曲）、The Orb《Buddhist Hipsters》（reggae skank、dnb、deep house 段）、Banco de Gaia《Apollo》（relentless rhythm、dancefloor rousing）、Fieh《III》（八人放克編制、輕快）、AndyFellaz《BeatBop Street》（funky swing、Latin montunos）、Shinji《In Colour》（取樣鼓 break＋放克貝斯）、The Bilinda Butchers《Night and Blur》（house／dnb 節奏主軸）。
+- 判輕 6：City Girl（乾淨 Strat／P-bass、明亮 lo-fi）、Dj CUTMAN《Free to Stream》（chiptune、2.5 分鐘短曲、零樂評）、Hello Meteor 兩張（ambient／new age focus、冬天意象、無重的證據）、Horizon Fire《Earthlight》（retrowave、質心偏高）、Daily Bread《On The Daily》（glitch／藍調電子／Moog 獨奏雜燴，不是慢糊）。
+- 判冷 2：Chasms《Glimpse of Heaven》（goth gloom、post-punk）、Chewing《Pacific Ocean Blue》（整張翻唱 Dennis Wilson、自述 darker）。
+- 混音混入 1：Bluetech《Rainforest Reverberation》（13 軌含 4 首他人混音、edm／psychill）。
+- 留下但聲音待評分驗證：Brock Berrigan、Sweeps、Blockhead、HashFinger（boom-bap 鼓骨架，ml16 jazz-rap 先例落恍惚）、Mounika.（鼓機明確）、Martin Brugger（「(upbeat) Downbeat」）、Purrple Cat（短 beat tape，池中同人 8 張皆落恍惚）、Kuba（dub 鼓貝斯，x 貼邊）、Oblique Occasions（資料極薄）。
+- 照研究補卡單 label：HashFinger＝Headcount Records、Martin Brugger＝Squama、Dr. Dundiff＝Cold Busted、Kuba＝Liquid Sound Design。

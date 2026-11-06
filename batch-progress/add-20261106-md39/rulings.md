@@ -49,3 +49,19 @@
 - 23731：b 組八張只有 MB 與 Bandcamp 頁（官方簡介、標籤、曲長）當聲音來源；WebSearch 3 次全回無關結果（Puma 搜到運動品牌、Halou 搜到 The Drums、Shinjuku Thief 搜到電影），改用維基 WebFetch 補人與團史。聲音層查無樂評者 status 標 thin（Lauge、Public Memory、Puma Blue、Emptyself、Halou）。
 - 23732：moodGuess 存疑（notes 已標）：Public Memory《Elegiac Beat》（有節拍、彈跳、爵士放克、3–5 分鐘有人聲短曲）、All India Radio《The Generator of All Infinity》（失真吉他加真鼓電子鼓的太空搖滾）、All India Radio《A Low High》（downtempo 拍加 pedal steel／小號／顫音吉他，偏暖）、Halou《Brutalism for Lovers》（有鼓手的有人聲歌曲）、Emptyself（acoustic 標籤、冷暖不明）、Lauge（重度不明，標 sleep／chillout）、Puma Blue（有 trip hop／gothic r&b 標籤，鼓與人聲不明）。大致成立：Shinjuku Thief《The Witch Hammer》（暗色管弦音景，唯官方稱有暴力爆發）。
 - 23733：未推翻年份、廠牌、盤名；Shinjuku Thief 以 MB 1993 澳洲首發為準（Bandcamp 是 Projekt 版）；Lauge 發行方為 Valley View Records（Bandcamp 頁掛 Lauge & Baba Gnohm）。
+
+## 研究 c 組（條號 23741–23750）
+- 23741 身分：8 張 MB pinned 皆對得上盤名、年份；Master Margherita《Border 50》廠牌為 Ultimae（卡單已有）；其餘 Bandcamp 自發行、MB 無廠牌。無推翻策展層年份／廠牌。
+- 23742 聲音事實來源：Bandcamp 串流音檔（mp3-128）自測頻譜與節拍（150 Hz 以下能量佔比、節拍規律度、動態），搭配 RA、Sputnik、廠方文案。自測節拍規律度＞0.5 視為「拍子明確」。
+- 23743 moodGuess 存疑（建議汰換／邊界）：Earthen Sea《Mirage》（每分鐘 120 出頭的 dub techno 大鼓，六首中四首推進，與 Galcher Lustwerk 先例同形）；Arms and Sleepers《Of Utopias and Catastrophes》（四張 EP 合集＋28 分鐘評述＋被取消 demo，鼓機推進、響度大、較亮；前 8 首自測）；Snakes of Russia（真鼓錄製、industrial 衝擊式短曲，人聲未能確認）。
+- 23744 輕微存疑：Moth Equals《Sick Puppy》（dubstep、寶萊塢取樣、冷暖不一）；How to Disappear Completely《Seraphim III》（自述溫柔搖籃曲、DX7／CS-80、磁帶，z 偏中性至暖，音量極低）；il:lo《Myriad》（有穩定鼓機但不推進，冷暖只能證實「暗」）。
+- 23745 吻合：Master Margherita《Border 50》（次低頻極厚、鬆慢脈動，最貼近頹靡）；Markus Guentner《Empire》（無鼓持續音、動態大，冷暖偏中性略冷）。
+
+## 主線研究汰換（不佔條號；2026-11-06）
+研究層交件後照各組「moodGuess 存疑」汰 18 → 剩 20；被汰卡移到 `dropped-cards.json`／`dropped-research.json`。不補位（卡單即策展結果）。
+- 能量（拍子推進、舞池）9：Lusine ICL《Iron City》（dance floor rhythms、Detroit techno）、ETNOBOTANIKA《Fruwający Przestępca》（俱樂部 techno 鼓點）、Public Memory《Elegiac Beat》（彈跳步伐、krautwave）、Halou《Brutalism for Lovers》（鼓手編制的 3–4 分鐘歌曲）、Earthen Sea《Mirage》（117–123 BPM dub techno 大鼓，與已汰 Galcher Lustwerk 同形）、Snakes of Russia（錄音室真鼓的 industrial 短曲）、Ness《Planet D》（deep／hypnotic techno 脈動）、Toki Fuko《Human Design》（RA：底鼓強勁、結巴節拍）、Echo Season《Periphery》（自述 energetic beats）。
+- 判暖或判輕 7：Headache（柔和搖擺鼓點、Air 式吉他）、Puma Blue《Croak Dream》（punchier、breakbeat、R&B 底色暖）、All India Radio《A Low High》（pedal steel、Morricone 式暖音色、有拍）、Earthen Sea《Recollection》（Rhodes、「類比的親密感與暖意」）、Faex Optim《Look Around You》（pastoral electronica、BoC 系、偏亮）、Kayla Painter《Tectonic Particles》（luminous、tender）、Johnny Hollow《Dirty Hands》（哥德室內樂戲劇感、只有自述來源）。
+- 躁／重金屬 1：All India Radio《The Generator of All Infinity》（回歸失真吉他太空搖滾、prog metal 標籤）。
+- 資格 1：Arms and Sleepers《Of Utopias and Catastrophes》（四張 EP＋評述＋demo 的合集，且鼓機推進、偏亮）。
+- 留下但聲音待評分驗證：Sneaker Pimps《Splinter》（blistering rock 段）、8mm（搖滾吉他段）、Just Mustard（噪音密度）、Moderator、Cujo（約 80–89 BPM 的 trip-hop 慢拍；md9 冷 trip-hop 先例落頹靡）、How to Disappear Completely（團方自述溫柔搖籃曲，z 貼邊）、Emptyself（acoustic 標籤，可能偏暖）、S1gns of L1fe／One Arc Degree（零聲音來源）、il:lo（只證暗不證冷）。
+- 照研究補卡單 label：Phelios 清空（「Martin Stürtzer」是藝人本名）。
