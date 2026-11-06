@@ -96,3 +96,14 @@
 - **23863** 日期句偏離鉤子層「日」後一字表四處（可逆）：合掃 md30–md41、ml60–ml67、shop 已上架 out，`年月日由`（15 張）、`年月日發`／`月日發行`（6–7）、`年月日上`／`月日上市`（7–10）、`年月日登`（3）都已是大族，改成 Headache「PLZ Make It Ruins 推出它，時值…日」、Just Mustard「…日，Partisan Records 讓它上架」、Autumn「上市日期為…日」（與 writer-2 All India Radio 共 `為年月日` 2 張，未達 3）、mars kumari「…日它登上 Bandcamp」；Stürtzer「列」、Rún「隨」照表。只寫年／月的 5 張逐張錯開：moby「年由…與…發行」、Halou「年經…推出」、Jogging House「年，由他策展的那家廠牌以數位版推出」、Edge「年交出」、worriedaboutsatan「年月的」。
 - **23864** hook 不複述：Autumn 第二句補「那個挪威對照出自樂評之口」收尾 hook 的比喻；Halou「那把吉他屬於 Robin Guthrie」替 hook 代稱具名，不重講三首；Jogging House 不重寫「一次錄上盤帶」，改「錄好的帶子原樣保留」（note「事後不剪接」照否定句禁令改正面寫）；Headache「不唱旋律」同理改「以說話的語調讀出」；Stürtzer 不重寫冬天與八首，只補年份與 58 分鐘；Edge 不重寫標題語義，只寫創作者自述的起因。
 - **23865** 自掃（han() 中文 4-gram）：本兩檔 11 張內部 2 張以上 0 條；三檔 20 張合掃只剩 `為年月日` 2 張；對 md30–md41、ml60–ml67、shop 已上架 out 合掃，3 張以上只剩 `原聲吉他`（樂器）、`國專輯榜`（英國專輯榜，榜名）、`執行製作`（hook 原文、職稱）。途中拆掉的 3 張以上殘片：`作並混音` `倫敦製作` `製作人的` `張錄音室` `錄音室專` `正式專輯` `西班牙的` `是愛爾蘭` `樂評聽見` `樂評形容` `四張專輯` `張專輯年` `年由發行` `的唱片是` `這個名字` `靈感來自` `數位形式` `現場演奏` `發行了它` `給自己的` `廠牌把它` `一人包辦` `獨力完成` `加起來約` `計約分鐘` `電子音樂` `全盤只有` `由她自己` `製作人在` `音年月日` `錄音地點` `的錄音室` `首約分鐘` `首共分鐘` `分鐘上下` `只剩一人` `年月推出` `年月面世` `是年月日` `在年月日` `作品年月` `張年月日`，一律整詞改寫。對 writer-2 卡單 hook 與 note 0 撞（僅 `製作混音` 見於 Blackbird note）。
+
+## 主線審稿（23871–23872；2026-11-06）
+- **23871** 逐張審 20 張（out-1／2／3 全文印出，逐句對研究稿 a–c）。改 4 張 4 處（`desc-override.json`），只刪不穩事實或統一譯名：
+  - `Just Mustard|Heart Under`：刪「2015 年成軍」——成軍年三說（維基內文 2015、維基分類與 wikidata 2016、樂評推算約 2016；藝人介紹補洞 ar-d-525 g1 查得），不寫年份。
+  - `Martin Stürtzer|Illumination Cycle`：「烏珀塔爾」→「伍珀塔爾」（與藝人介紹、Phelios 統一；hooks-c、input 同步）。
+  - `mars kumari|I Thought I Lost You`：「替他那個底特律集團 Bruiser Brigade」→「替底特律的 Bruiser Brigade」（Bruiser Brigade 歸屬 Danny Brown 一說在研究稿為單源；Danny Brown 掛執行製作有 Bandcamp credits 直述，保留）。
+  - `worriedaboutsatan|Crystalline`：刪「2019 年 6 月 Tom Ragsdale 離團，只留下 Gavin Miller」——只有維基單源（補洞 ar-d-525 g2 亦標單源放 notes），改為「《Crystalline》由 Gavin Miller 操作電腦與吉他」。
+  - 照准：moby 照卡池掛名小寫；2814「被封為 vaporwave 第一張經典」出自研究 b 樂評、正文不寫媒體名；Halou 借用 Robin Guthrie 三首有兩源。
+- **23872** `qa-batch out` 20 張全部通過；「據」、媒體名、資料平台名 0。
+- 三軸：`ratings-override.json` 20 張全依 §0.8.1 人工錨點（經典 3／4＝12／8、冷門 2／3／4＝2／9／9、硬蕊 2／3／4＝3／15／2）。頂點 0。
+- 試聽：Apple 自動配對 14 ready；Headache、Space Afrika、Lauge《Echoes》、Phelios、mars kumari、Rún 六張 us／gb／jp 以藝人＋盤名查 iTunes 皆無條目 → unavailable。封面 CAA 20／20，縮圖表目視相符。

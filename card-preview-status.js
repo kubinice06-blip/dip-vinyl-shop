@@ -3853,4 +3853,10 @@ window.DipPreviewStatus = Object.freeze({
   "seah|conduits of the hydrosphere": "unavailable",
   "cashforgold|manic pixie nightmare": "unavailable",
   "moth equals|the fall and rise": "unavailable",
+  "headache|the head hurts but the heart knows the truth": "unavailable",
+  "space afrika|quiet storm": "unavailable",
+  "lauge|echoes": "unavailable",
+  "phelios|astral unity": "unavailable",
+  "mars kumari|i thought i lost you": "unavailable",
+  "rún|rún": "unavailable",
 });
