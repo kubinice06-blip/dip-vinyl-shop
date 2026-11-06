@@ -108,3 +108,6 @@
 
 ## 上線（2026-11-06，主線）（條號 24832）
 - **24832**：上線 29 張：card_catalog 29／29、KV 29 鍵回讀逐字一致（stamp 20261106ml79）、試聽 27 ready（21 張換成最紅那首）／2 unavailable（neat beats、Lindsheaven：Apple 查無；Electronic Visions §1 卡以 Apple 1767306233 指定）、seed +29、prepare／published gate 0 error（warning 皆 UPC 盡力而為與 §1 提示）。封面 CAA 27＋Bandcamp 2（Electronic Visions §1、Professor Creepshow CAA 404），主線縮圖表目視相符。三軸機器基線（經典 3；冷門度合 §0.8.1 下限），頂點 0。寫入前對 origin 全部 `claude/*` 分支與 main 的 seed 去重 0。
+
+## 評分與落格（2026-11-06，主線）
+- **24833**：Opus 1 支打 29 張（`score-ml79/`），主線看過未改值；`warm-batch` 28/29 有標籤。**落恍惚 20/29（69%）**；出格放鬆 4（Cephas Azariah、Rocket Empire、Moods、Graham Kartna）、頹靡 3（Sync24、Robot Koch、Rosa Brunello）、暴躁 2（Nanosphere x 3.0、Błoto x 3.3）。

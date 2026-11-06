@@ -98,3 +98,6 @@
 
 ## 上線（2026-11-06，主線）（條號 24752）
 - **24752**：上線 36 張：card_catalog 36／36、KV 36 鍵回讀逐字一致（stamp 20261106ml78）、試聽 31 ready（29 張換成最紅那首；§1 卡 5 張與 Akal Dub 以 `preview-override.json` 指定 Apple collection）／5 unavailable（Glasper《Black Radio III》、Arms and Sleepers、Lord Of The Isles、Fieh、DJ Phixion：Apple 搜不到本盤）、seed +36、prepare／published gate 0 error（warning 皆 UPC 盡力而為與 §1 提示）。封面 CAA 27＋Bandcamp 8（§1 4、CAA 404 4）＋Apple 1（Charlie North §1，Bandcamp 自訂網域轉址迴圈；`apple-verified-collection` 274545227），主線縮圖表目視相符。三軸機器基線（經典 3；冷門度合 §0.8.1 下限：DJ Phixion 925 人＋試聽無＝5、Caspro 742 人＋ready＝5），頂點 0。寫入前對 origin 全部 `claude/*` 分支與 main 的 seed 去重 0。
+
+## 評分與落格（2026-11-06，主線）
+- **24753**：Opus 1 支照 BRIEF（10-23 體感標準＋「有鼓不等於躁」）打 36 張（`batch-progress/mood-axes/score-ml78/`，聲音依據讀研究稿），主線看過未改值。`warm-batch` 36/36 有標籤；`build-priors` → `build-scale v0`（錨點 104/104）→ `build-card-moods`、`build-genre-tree --pull --write`、`build-draw-covers --pull --write` 重建。**落恍惚 26/36（72%）**；出格頹靡 5（Kaisaku、Lord Of The Isles z −0.1、Somatoast、Arms and Sleepers、DJ Mayonnaise）、放鬆 4（ATTLAS、Charlie North、Marley Carroll、cehryl）、雀躍 1（Fieh x 3.1）。
