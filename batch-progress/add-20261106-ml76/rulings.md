@@ -21,3 +21,14 @@
   - Blockhead《Mortality Is Lit!》：同人超量：池中已 5 張、並行 ml78／80 另 3 張；本工作階段只收《Funeral Balloons》
   - Sweeps《waves of reflection》：同人超量：池中已 3 張；本工作階段只收《Life and Light》
   - Halina Rice《UNREALITY》：舞池推進：藝人自述「混合舞曲類型、讓人想動」，樂評寫解構俱樂部節奏（ml73 研究稿）
+
+## 研究 e 組
+- 24561：e 組 6 張依「有鼓不等於躁」判鼓型，沒有任何一張判攻擊性或舞池，**無建議汰**。Sweeps 慢拖（僅標籤）、Tryphème 慢拖、Dday One／Shinji／Nightflyer／Smigonaut 鼓型不明（無來源證實舞池）。
+- 24562：Dday One 廠牌改採 The Content Label（LCNT1040，soundshelter；維基另列 Needlework UK），推翻前稿「廠牌未確證」；facts 補到 10 條。
+- 24563：Smigonaut《Epitome》有 breakbeat／house／midtempo bass 影響與 drum & bass 簡介，但作者自述起點 downtempo、「不是音響系統唱片」，判不出來就留；列為風險，卡單 x 2.2 建議上調到 2.8。
+- 24564：Shinji 貼 x 2.7 邊（預估 2.8），Nightflyer 預估 x 2.8、y 0.6，Sweeps y 0.6 偏輕，皆照實寫預估不汰。
+
+## 研究 d 組
+- 24551：d 組 8 張皆無「攻擊性或舞池」的本張證據，全數不建議汰；鼓型無直接來源者統一標「不明」。AndyFellaz 沿用 ml70 稿，只補鼓型行。
+- 24552：Govinda《Resonance》僅 6 首約 25 分鐘，篇幅近 EP，MB 登記 Album，維持主線裁定。
+- 24553：Saffron Bloom 鼓型判慢拖（low slung stripped back breaks、trip hop），但 z 恐偏冷；Tek 9、Erik Jackson、Tusks 的 y 恐偏輕，GUMI 的 x／z 貼邊，已在各自 notes 標 moodGuess 存疑。
