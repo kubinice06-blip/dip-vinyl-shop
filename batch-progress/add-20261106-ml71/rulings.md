@@ -66,3 +66,15 @@
 - 23968：Nym《Warm Blooded Lizard》moodGuess 存疑（強）：標籤與簡介明說 instrumental hip-hop／beats，1 到 5 分鐘短曲、鼓機節拍，x 2.8 也超出邊距，建議汰。Bandcamp 原頁 303 轉址循環，facts 取自 Wayback 存檔的 ld+json，src 寫原站網址，status thin。
 - 23969：Wikipedia API 被 429 限流，改用 WebFetch 取維基摘要；Delerium／CBL／Ultimae 條目為摘要轉述，facts 僅寫摘要明確出現的內容。
 - 23970：（預留未用）
+
+## 研究 b 組
+- 23971：Nym《Convex》moodGuess 存疑（中強）：試聽多數曲目有持續的半速取樣鼓組（器樂 hip-hop／trip-hop），僅〈Sleep〉〈Come Back〉無鼓；低頻厚（lo150 0.56–0.79）、高頻收，重暖成立但『靜』弱。同人 a 組《Warm Blooded Lizard》已建議汰，同型。藝人生平查不到（官網與 nymself.bandcamp.com 互相重導抓不到），status thin。
+- 23972：Monde UFO《7171》moodGuess 存疑：約半數曲目低頻薄（lo150 0.04–0.19）、中頻 lo-fi 爵士，『重』不穩；鼓只在 4 首。Bandcamp 頁將 Vallée 拼成 Jaques，facts 用 Jacques。
+- 23973：Telenights《Lucky Tiger》無存疑：低頻極厚（lo150 0.57–0.91）、無高頻，惟有穩定鼓機且響度高，『靜』交評分層。生平查不到，thin。
+- 23974：Hibernation《Some Things Never Change》moodGuess 存疑：新聞稿與頻譜顯示 syncopated grooves／breaks／glitch，非無鼓氛圍墊。curatorRisk 的 147 分鐘已查清（14 首 75:41＋71:29 連續混音，非雙碟）；年份 MB 2008 對 Bandcamp 2015 重發，卡單無誤。
+- 23975：Stone《Dream Curtain Eternally Gentle》moodGuess 存疑：樂迷與頻譜皆指向 beat tape 型鼓組脈動（9 首中 6 首以上），4kHz 以上略多，『靜』『重』皆不全；建議汰。生平查不到，thin。
+- 23976：Yaima《Antidote》無存疑：吉他、handpan、kora、豎琴加 cajon，低頻厚、暖、有人味；脈動偏緩不是舞池拍。mixed by Bluetech 屬 Bandcamp 自述。
+- 23977：Funki Porcini《Conservative Apocalypse》moodGuess 存疑（偏冷）：MB／Bandcamp 皆標 dark ambient，作者自述為日常場景加氣氛的政治警示專輯，聽感恐陰冷疏離；14 首有 4 首低頻薄而輕。Wikipedia 對 Braddell 生日自相矛盾，facts 不寫。
+- 23978：desert sand feels warm at night《バビロンの空中庭園 下》無存疑但『重』不穩：Bandcamp 串流 45 秒片段頻譜，無高頻、悶暖，lo150 0.07–0.83 不一；原發日期取 MB 2019-03-25，Bandcamp 現頁為 2026 Hushtones 黑膠重發。「上」卷頁找不到，不寫上下卷關係。thin。
+- 23979：頻譜方法：Apple 30 秒試聽片段（desert sand 改用 Bandcamp 串流）做 150Hz 以下／4kHz 以上能量占比，BPM 自相關估計不穩，facts 只寫能量占比與「有鼓／無鼓」。WebSearch 用 1 次（Nym）；Wikipedia 用 WebFetch（curl 被擋）。
+- 23980：（預留未用）
