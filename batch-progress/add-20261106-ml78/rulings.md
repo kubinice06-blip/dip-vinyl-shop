@@ -20,3 +20,18 @@
 - 年份照 MB first-release-date：AES DANA《Pollen》2012（卡單 2017 為重發）、Saafi Brothers《Liquid Beach》2003、DJ Mayonnaise《Still Alive》2007。Kuba 照池中與 MB 寫法（卡單 KUBA）。
 - §1 人工身分 5：Marley Carroll《Sings》（Apple 1824096798）、Sweatson Klank《Super Natural Delights》（Apple 1459382627）、Charlie North《The Spaces In Between》（Apple 274545227）、cehryl《You Win Some, You Lose A Lot》（Apple 1853436940）、Kaisaku《Aishū》（Apple 1455008021）；各附 Bandcamp 頁。
 - **沿用前次研究稿**（`batch-progress/add-20261106-<批>/dropped-research.json`）：Nym（ml71）、Kalya Scintilla（ml72）、Charlie North（ml73）、Somatoast（ml71）——研究層只補不足、把鼓的種類寫清楚，不整張重查。
+
+## 研究 d 組（24711–24720）
+- 24711：Charlie North《The Spaces In Between》、Somatoast《Goop》沿用前次研究稿（ml73／ml71），各補 0 條；前次的「建議汰」「有拍推進」改寫成本輪判斷（Somatoast 判慢拖偏顛簸型，Charlie North 鼓種判不出），均不汰。
+- 24712：鼓種判定一律以文字證據為準；Bandcamp 標籤（drum & bass、house、techno、trance）單獨不足以判舞池推進。Solid Doctor（廠方 subtle beats）判慢拖輕拍；Kalpataru Tree（簡介 mid-tempo grooves）判中速律動、dub 骨幹；fat jon 前半慢拖 boom bap、後半廠牌稱 energizing breakbeats（hip-hop 式，非舞池）；Hello Meteor、ASURA、Zen Baboon 判不出。無一建議汰。
+- 24713：moodGuess 存疑（僅供評分參考，不汰）：fat jon 後半判躁／判輕；Hello Meteor 判輕；Charlie North 判輕；Zen Baboon（techno 標籤）、ASURA（trance 標籤）可能偏躁；Somatoast glitch 偏冷偏輕。
+- 24714：ASURA《Renaissance》Bandcamp 日期 2023-09-23，MB 與音樂節頁皆 2023-07-07，卡面年份照 MB 2023。Solid Doctor 原版 1996，Bandcamp 2015 為 Déclassé 重發，年份照 MB 1996。
+- 24715：Zen Baboon、Hello Meteor 無第三方資料，status thin；Hello Meteor 曲長加總 42 分，卡單 curatorWhy 寫 45 分，以 Bandcamp 加總為準。
+
+## 研究 e 組（2026-11-06）
+- 24721：e 組六張無一在「沿用前次研究稿」名單（curatorRisk 的前次理由只是標籤篩掉），全部新查；以 Bandcamp 頁、Apple lookup、MB 為主，WebSearch 用 3 次（Hibernation、DJ Phixion、Kaisaku），只有 Hibernation 前作與 Kaisaku 藝人介紹有可用內容。
+- 24722：六張都找不到本盤的獨立樂評或廠牌文案提到鼓；鼓的種類一律寫「判不出」並註明標籤推判屬未聽證，不因此建議汰；沒有任何一張有舞池推進或攻擊型的證據。DJ Phixion 為鼓手出身、boom bap，推判慢拖型。
+- 24723：Hibernation《Organic Technology》134 分已核對：含第 14 個檔案 68 分半的連續混音，13 首專輯曲目約 65 分鐘；卡面以 13 首約 65 分為準，不寫 14 首／134 分。
+- 24724：Caspro《OFFLINE》Bandcamp 與 Apple 均 8 首約 31 分（卡單 9 首 36 分不符），卡面以 8 首為準。
+- 24725：cehryl 廠牌依 Apple ℗ 為 Pilot Study Records（卡單 label 空白）；Project Lazarus 的 Apple 版（2020、℗ Boris Segal）是後出串流版，年份維持 2019。
+- 24726：moodGuess 存疑：cehryl 判輕；Kaisaku 的「無鼓」預估無依據（future garage 可能有碎拍）、偏冷暗；Hibernation、Project Lazarus、Caspro 的 y 判輕；DJ Phixion x 2.9 在慢拖上限。主線這輪不因判輕汰。五張 thin、Hibernation full（僅因來源多，仍無獨立樂評）。
