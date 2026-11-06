@@ -46,3 +46,9 @@
 - 24853｜標「moodGuess 存疑（舞池推進，局部）」：Moderator（〈Tamboo〉dance floor、〈Haunted Lover〉big breakbeat）、Yu Su（標籤 house／techno，〈Foundry〉acid 重踏）；皆僅局部，整張不判舞池。
 - 24854｜標「存疑（判輕／判冷）」：Rhi（R&B 人聲前置）、Sim Nagai（熱帶明亮）、Daily Bread（科幻 electro 合成器可能偏冷）。主線本輪不因此汰卡。
 - 24855｜Entheogenic 聲音層僅有標籤與曲長，無評論；評分層宜自行試聽。Sedibus 卡單「6 首」含 2 首 Edit。
+
+## 研究 d 組（24871–24880）
+- 24871：Sephira《The Master Work》鼓型＝混合。Ektoplazm 逐曲 BPM 76–140，中段四首 120–140；notes 標「moodGuess 存疑（舞池推進）」。年份照 MB 2018（Bandcamp 6/23、Ektoplazm 12/26 皆 2018）。label 不採單源的 1070768 Records。
+- 24872：Trials-X 卡單 Bandcamp 頁是 2024 重發，原版 1995 Boom Media；MB 1995-03-10 與 pl.wikipedia 1995-04-10 差一個月，年份不受影響。鼓型未證（house／disco 僅廠牌標籤），不標存疑；非鼓出格寫判躁。
+- 24873：Globular／Funki Porcini／krusseldorf 鼓型未證，不標存疑（標籤指向慢拍但無 BPM 證據）。krusseldorf 的 MB 藝人 disambiguation（Progressive psytrance、1977）與 Bandcamp 自述不合，以 Bandcamp 為準。
+- 24874：Lee Scott 鼓型未證；非鼓出格寫判躁（全盤饒舌人聲）。六張皆 status thin（聲音層缺樂評，WebSearch 用 3 次）。
