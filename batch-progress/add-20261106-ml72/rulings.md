@@ -109,3 +109,8 @@
 - **24103** 自掃（han() 4-gram，本檔＋ml71 out-1 合掃）：3 張以上 0 條。途中拆掉「在年月日」×3（PLOD 改「Funki Porcini，2009 年…」）、「最長的有分秒」（對 ml71《Lucky Tiger》）、「的第三張」（Hinkstep×CIRCULAR，CIRCULAR 改「已出到第三張」）、「張專輯年」、「一人包辦」（對 ml71《Portal》，Krusseldorf 改「獨自寫作」）、「合計約分鐘」「起來約分鐘」「首約分鐘」「長約分鐘」「分鐘左右」等時長尾巴。剩 2 張殘片 4 條：「與合成器」（樂器）、「國作曲家」（note 指派領句）、「長約分鐘」、「在年月日」（Clara note 指派領句），皆對 ml71，未改。
 - **24104** 來源平台：Clara note 的「Apple Music 版少了第 10 首」照 writer-base「正文不點名來源平台」改寫成「串流版只有 9 首」，事實不變。PLOD／Hinkstep 的「自己的 Bandcamp」是發行管道（note 指派），照寫。Hinkstep 的「簡介把聽者帶進…」照派工禁「簡介」引導詞，改成直述「整張是實驗 downtempo，寫給家人，也寫給對自然的愛」。CIRCULAR 的「最有攻擊性」直述、不帶媒體名。
 - **24105** 代名詞：Josh Leake 性別無來源，正文 0 個他／她，用「Leake」。CIRCULAR 用「兩人」。其餘「他」皆承 hook，第二句即具名。woob note 的「到 2009 年他都沒發新作」改正面句「之後一路沉寂到 2009 年」。CIRCULAR hook 已帶開場曲長 13 分半，正文只具名〈Lunokhod〉、不重寫 13 分 33 秒。
+
+## 主線審稿（24111–24112；2026-11-06）
+- **24111** 逐張審 9 張（全文印出，逐句對研究稿 a–d；抽核 Solar Fields《Mirror's Edge》配樂與 droneform／Studio Jupiter、Edamame 的 BBC《Planet Earth》自述與 Loci Records、Funki Porcini「bits and bobbies」、Hinkstep 的 Jonas Tegenfeldt 與 Alice Spacedoll（Bandcamp credits）、Krusseldorf 出道作與 2016 重製、CIRCULAR 第三張 Ultimae 與 Lunokhod、Josh Leake 串流版缺第 10 首、woob 1999–2009 沉寂與重構《Woob 4495》兩首，皆有出處）。改 1 張（`desc-override.json`），研究／hooks／input 不需同步：
+  - `CIRCULAR|Moon Pool`：「是整張最有攻擊性的一首 drum'n'bass。」→「曲風是 ambient drum'n'bass。」（「最有攻擊性」是單篇樂評的評價；改用廠方簡介的曲風描述）。
+- **24112** 收卡判斷：Funki Porcini《PLOD》自稱「a series of bits and bobbies」、woob《Repurpose》重構舊曲加新長曲，兩張 MB 皆 Album、皆藝人本人新錄或重構，非他人選輯或混音集，照收。媒體名、榜單名次、「據說／官方／簡介」全批 0。

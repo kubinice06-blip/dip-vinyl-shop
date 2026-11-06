@@ -3868,4 +3868,5 @@ window.DipPreviewStatus = Object.freeze({
   "desert sand feels warm at night|バビロンの空中庭園 下": "unavailable",
   "desert sand feels warm at night|バビロンの空中庭園 上": "unavailable",
   "lindsheaven virtual plaza|nordwrong": "unavailable",
+  "woob|repurpose": "unavailable",
 });
