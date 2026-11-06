@@ -61,3 +61,10 @@
 - 24955：label 補：Pandrezz 自發、Zero Cult→Cosmicleaf Records、Sweatson Klank→Friends Of Friends、GENDEMA→No Problema Tapes、Huerta→R&R（Leizure 子廠牌）、Birdsnake→Bathtub Music、Abakus→Modus Recordings、Jogging House 自發（聯合出版 Elektron Music Machines）。
 - 24956：Abakus Bandcamp 頁已加 5 首 bonus（2026-09），卡單以正式 12 首為準。
 - 24957：WebSearch 用 3 次（GENDEMA、Abakus、Birdsnake），皆無獨立樂評；其餘 5 張聲音事實僅來自 Bandcamp 文案／標籤，status 多為 thin，不湊數。
+
+## 主線研究汰換（不佔條號；2026-11-06）
+研究層交件後照本輪判準汰 1 → 剩 38；被汰卡移到 `dropped-cards.json`／`dropped-research.json`。不補位。
+- 舞池推進 1：Romare《Home》（研究 a：先行 12 吋廠牌自稱最直接的舞池作品、RA 稱 cinematic house、Loud and Quiet 指〈Sunshine〉〈Heaven〉為舞池高點，標籤 House／techno）。
+- 局部舞池段、留下交評分：Sweatson Klank《Super Stuff》（三首 90 年代 house uptempo，約 15 分）、Birdsnake《Biofilter》（〈Hydrostatic Pressure〉等至少兩首四拍）、Session Victim（標籤 house／disco，文案自稱反快節奏）、Khotin（慢速 house／techno 段，樂評 padded、heavy-eyed）、Klaada、Abakus、Sephira《Imagination In Motion》（舞池標籤無速度證據）。
+- 非鼓出格照規則不汰：Gnarls Barkley、ASURA、ALBA、Sim Nagai、Scott Campbell（判輕）；CIRCULAR、Pejzaż、Quok、RYKARD（判冷）；Slowly Rolling Camera（判躁判亮）。
+- RYKARD 只有 5 條 facts（研究 a 刪掉兩條未證地名），thin。

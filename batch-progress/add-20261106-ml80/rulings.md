@@ -52,3 +52,17 @@
 - 24872：Trials-X 卡單 Bandcamp 頁是 2024 重發，原版 1995 Boom Media；MB 1995-03-10 與 pl.wikipedia 1995-04-10 差一個月，年份不受影響。鼓型未證（house／disco 僅廠牌標籤），不標存疑；非鼓出格寫判躁。
 - 24873：Globular／Funki Porcini／krusseldorf 鼓型未證，不標存疑（標籤指向慢拍但無 BPM 證據）。krusseldorf 的 MB 藝人 disambiguation（Progressive psytrance、1977）與 Bandcamp 自述不合，以 Bandcamp 為準。
 - 24874：Lee Scott 鼓型未證；非鼓出格寫判躁（全盤饒舌人聲）。六張皆 status thin（聲音層缺樂評，WebSearch 用 3 次）。
+
+## 研究 a 組（24841–24850）
+- 24841：a 組八張鼓型：Skinshape（真人鼓、放克／trip hop 中慢）、Emapea（boom bap 約 70–90 bpm）、Potatohead People 兩張（boom bap 約 70–96 bpm）、Random Rab（鼓機 breaks 約 86–103 bpm、低頻極厚）、40 Winks（切片嘻哈約 60–80 bpm）皆判「慢／中慢、非舞池、無攻擊性」，不標存疑。bpm 為 iTunes 30 秒試聽的自相關粗估（有倍速誤差，每張只聽三段），只進 sound 與 facts 的「粗估」句，不當硬數字。
+- 24842：CYNE《Evolution Fight》鼓型未證、status thin：Bandcamp 無文案無 credits，Apple 查不到；Bandcamp 標籤（Hip Hop、Techno、Folk、Berlin）與 40 Winks 頁完全相同，判為 Project Mooncircle 廠牌層級標籤，不採信。不標存疑。
+- 24843：Entheogenic 鼓型未證（試聽脈衝估值 117–161 bpm 有倍速誤判；3D Vision 為 psytrance 廠牌，但專輯為 psybient 長曲），不標存疑；notes 記「moodGuess 存疑（判輕）」（〈Level One〉低頻薄）。卡單 country gb 不準（成員奧地利／英國出身、長居法國），發行日 MB 2002-04-24、Bandcamp 2002-06-23、訪談「early 2002」三說，寫作層只寫 2002 年。
+- 24844：40 Winks 國別疑為比利時（HHV Mag／EDM Junkies 搜尋摘要；HHV 頁 WebFetch 逾時，未進 facts），卡單 country de 疑似指廠牌所在，交主線決定是否改。Random Rab 發行日 MB／Apple 2011-12-09、Bandcamp 2012-01-12，兩說並存。WebSearch 共用 3 次（Random Rab、Entheogenic、40 Winks）。
+
+## 主線研究汰換（不佔條號；2026-11-06）
+研究層交件後照本輪判準（只汰鼓＋攻擊性、舞池推進）汰 1 → 剩 36；被汰卡移到 `dropped-cards.json`／`dropped-research.json`。不補位。
+- 舞池推進 1：Sephira《The Master Work》（研究 d：Ektoplazm 逐曲 BPM，九首中四首 120–140、歸類 Deep Trance／Progressive）。
+- 局部有舞池段但整張以慢拍為主、留下交評分：Moderator《Midnight Madness》（〈Tamboo〉〈Haunted Lover〉big breakbeat）、Yu Su《Foundry》（dub 為主、〈Foundry〉acid 重踏）、DHAMIKA《Endless Horizons》（四拍只有單一樂迷留言）、Random Rab《Visurreal》（breaks 86–103 bpm、無四拍）。
+- 攻擊性存疑但局部、留下：Eivør《Enn》（喉音、低吼段落）。
+- 非鼓出格（判輕／判冷／判躁）照規則不汰：Rhi、Sim Nagai、Asta Hiroki、RUMTUM、Entheogenic（判輕）；Daily Bread、Rituals of Mine、krusseldorf（判冷）；Trials-X、Lee Scott（饒舌人聲判躁）。
+- 照研究補卡單：Entheogenic、40 Winks 國別清空（成員出身與居地分歧／比利時說單源），寫作層不寫國別。EAT STATIC 研究 c 末條「4/4 以外拍號」為搜尋摘要轉述，主線刪去該半句。
