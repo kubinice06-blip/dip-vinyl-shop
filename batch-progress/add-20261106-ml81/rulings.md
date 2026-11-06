@@ -38,3 +38,17 @@
 - 24923：RYKARD 標籤 dark／eerie／moody，notes 記 moodGuess 存疑（判冷）；Bandcamp 無簡介，facts 僅 5 條、status thin，不湊數。Yaima 廠牌未證（Jumpsuit Records 僅標籤）。
 - 24924：Ancient Astronauts 年份 2009、廠牌 ESL Music（Bandcamp 2016 為 Switchstance 重發）；Tor 廠牌 Loci Records、DEGIHEUGI Endless Smile Records、Car Culture NAFF、Romare Ninja Tune、RYKARD Hunya Munya Records；soft siren 無廠牌（Nest Records 僅母帶註記）。未推翻策展層年份與盤名。
 - 24925：WebSearch 用 3 次（Romare、Ancient Astronauts、Tor），Exclaim 全文與 Wikipedia 部分頁讀不到，AA 樂評引用為搜尋摘要層級。
+
+## 研究 c 組
+- 24941：8 張身分皆與 MB RG／Bandcamp 一致，無推翻；年份 Project Lazarus Bandcamp 6/1 vs MB 6/5，同為 2020。
+- 24942：鼓型判定——downstairs J 慢、拖、悶鈍 trip-hop／dub 拍（不存疑）；El Jazzy Chavo boom bap beat tape（標籤推定，不存疑）；Session Victim 取樣 drum break 點頭律動、標籤含 house／disco 但文案反快節奏，速度未證，記「moodGuess 存疑（舞池推進，弱）」供評分層留意；Sephira、Quok、MONKYMAN、Project Lazarus、Slowly Rolling Camera 鼓型細節未證，不標存疑。
+- 24943：非鼓型出格僅記 notes——Quok（判冷）、Slowly Rolling Camera（判躁／判亮，Power Jazz、史詩）、MONKYMAN（判重，heavy grooves）。
+- 24944：El Jazzy Chavo、Sephira、Project Lazarus 無獨立樂評，status thin（WebSearch 3 次用於 Slowly Rolling Camera、Project Lazarus、downstairs J）。
+- 24945：MONKYMAN 的 label「Laut & Luise」僅取自 Bandcamp 版權行；Project Lazarus 數位版掛自己頁、黑膠 VILL4IN CCCP-002。
+
+## 研究 b 組
+- 24931：8 張全 full。鼓型：Khotin 慢到中慢軟化 breakbeat／dub house 鼓（局部〈Computer Break〉house 鼓、〈Techno Creep〉慢 techno，RA 稱 padded，未到舞池，不標存疑）；Joe Beats 硬而悶 boom bap，中慢，不標存疑；其餘 6 張鼓型未證（Bandcamp 只有標籤或作者自述，無逐曲速度），不標存疑。
+- 24932：moodGuess 存疑（判輕）：Gnarls Barkley《Atlanta》——放克／福音／R&B 製作偏亮偏有勁，含〈Cyberbully (Yayo)〉硬轉折，可能落出恍惚格；聲音證據為搜尋摘要與維基，無逐曲樂評。moodGuess 存疑（判冷）：Pejzaż《List II》——廠方明講 cold-wave 合成器、東歐冬夜，可能落冷格。
+- 24933：年份與身分：8 張 MB 年份與 Bandcamp 頁無實質衝突（CYGN 9/21 對 9/29、Joe Beats 2002 對 Bandcamp 2003-01-28，皆以 MB 年為準）。label：Khotin＝Ghostly International、Gnarls＝10K Projects／Atlantic、CYGN＝Radio Juicy、Pejzaż＝The Very Polish Cut Outs、Crookram＝Bankrupt Recordings／Budabeats；AJE、CharlestheFirst、Joe Beats 無外部廠牌（Persona Free Music 為製作名義，未證廠牌）。
+- 24934：facts 取捨：CharlestheFirst、CYGN 僅 7 條 facts——Bandcamp 以外無獨立來源（樂評皆缺），已補至 8 條；CYGN「5000 萬串流」為廠方單源，Crookram〈Badalamenti〉致意與 AJE Cafe D 性質未證，一律不寫。
+- 24935：WebSearch 用 2 次（Gnarls Barkley 樂評、Khotin 樂評）；其餘用 Bandcamp ld+json、RA 與維基頁直讀。MusicBrainz API 本次回空，沿用卡單 mbNote 的 MB 核對。
