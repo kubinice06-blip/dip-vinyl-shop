@@ -391,5 +391,53 @@
   "queryAlias": "",
   "republic": "",
   "cover": null
+ },
+ {
+  "key": "desc2:Teal|Original Watercolour",
+  "artist": "Teal",
+  "album": "Original Watercolour",
+  "year": 2025,
+  "genre": "electronic",
+  "genres": [
+   "electronic",
+   "soul"
+  ],
+  "label": "Spiritual World",
+  "country": "ca",
+  "moodGuess": {
+   "x": 2.3,
+   "y": 0.9,
+   "z": 0.7,
+   "why": "dub回聲、街頭靈魂、濕潤低頻（協調端粗估，把握 low）"
+  },
+  "rgMbid": "",
+  "identitySource": "manual",
+  "mbAbsenceProof": {
+   "queries": [
+    "https://musicbrainz.org/ws/2/release-group?query=artist:\"Teal\"",
+    "https://musicbrainz.org/ws/2/release-group?query=releasegroup:\"Original Watercolour\""
+   ],
+   "checkedAt": "2026-11-06",
+   "conclusion": "MB 查無此盤；Discogs release 33698556（Spiritual World SW010，2025，LP 45 RPM）"
+  },
+  "manualEvidenceUrls": [
+   "https://spiritualworld.bandcamp.com/album/original-watercolour",
+   "https://www.discogs.com/release/33698556-Teal-Original-Watercolour"
+  ],
+  "curatorWhy": "neo-soul／爵士電子：Bandcamp downtempo 候選（Last.fm 收聽 1,131，28 分 6 首；標籤 Dub／Electronic／Experimental／Street Soul／dance／dub）",
+  "curatorRisk": "⚠ MB 查無，§1 人工身分（Bandcamp＋Discogs SW010 LP）；28 分 6 首貼長度下限",
+  "mbNote": "MB 查無（MB 查無此盤；Discogs release 33698556（Spiritual World SW010，2025，LP 45 RPM）），走 §1 人工身分。證據：https://spiritualworld.bandcamp.com/album/original-watercolour https://www.discogs.com/release/33698556-Teal-Original-Watercolour https://spiritualworld.bandcamp.com/album/original-watercolour https://www.discogs.com/release/33698556-Teal-Original-Watercolour",
+  "releaseType": "Album",
+  "exceptionReason": "",
+  "exceptionEvidenceUrls": [],
+  "genreException": "",
+  "selfTitled": false,
+  "apex": null,
+  "group": "c",
+  "lineType": "廣度",
+  "scene": "薄細項策展線（neo-soul／爵士電子）",
+  "queryAlias": "",
+  "republic": "",
+  "cover": null
  }
 ]

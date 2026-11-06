@@ -1,0 +1,935 @@
+{
+ "schemaVersion": 1,
+ "batch": "2026-10-20-ml68",
+ "batchNote": "薄細項策展線（add-20261106-ml68）",
+ "createdAt": "2026-11-06T03:30:00Z",
+ "albums": [
+  {
+   "artist": "The Saxophones",
+   "album": "Songs of the Saxophones",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "9c7c15b7-4db3-4784-bb10-22dd0a3dc500",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "dream pop／bedroom 夢幻流行：Bandcamp downtempo 候選（Last.fm 收聽 39,151，31 分 10 首；標籤 Alternative／aloha／chill／exotica／folk／lounge）｜⚠ 乾淨稀疏的 exotica slowcore 可能判輕（y）｜MB release-group 9c7c15b7-4db3-4784-bb10-22dd0a3dc500：title「Songs of The Saxophones」、Album、first-release-date 2018-06-01、artist-credit「The Saxophones」。證據：https://thesaxophonesus.bandcamp.com/album/songs-of-the-saxophones https://musicbrainz.org/release-group/9c7c15b7-4db3-4784-bb10-22dd0a3dc500",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2018,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/9c7c15b7-4db3-4784-bb10-22dd0a3dc500/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-06T03:30:00Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-06 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 3,
+    "accessibility": 2,
+    "listeners": 39151,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-11-06T03:30:00Z",
+    "note": "機器基線 3/3/3（Last.fm listeners 39151）；主線：§0.8.1 錨點人工評分（Bandcamp downtempo 候選批：自發行／小廠首發即上串流冷門 4、正規廠且 Last.fm 收聽 >20,000 給 3（L=39151）；經典 4＝同人收聽最高、場景內公認的代表作；硬蕊 2＝主流易聽、有拍有旋律）"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 4、obscurity 3、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "雨天的清晨，他在灣區一艘船的艙裡彈木吉他寫歌。寫歌的是 The Saxophones 的主唱 Alexi Erenkov；樂團的首張專輯 2018 年 6 月 1 日由 Full Time Hobby 推出。他念爵士出身，卻對爵士的走向感到失望，於是改學吉他與唱歌。那個冬天他就住在舊金山灣區的船上，歌陸續寫成，之後到波特蘭花 10 天錄完。打鼓的是他的妻子 Alison Alderdice：他要原始的鼓聲，巡演時也不想跟她分開。木管與合成器都刻意收著，只輕輕點綴。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/9c7c15b7-4db3-4784-bb10-22dd0a3dc500",
+     "https://thesaxophonesus.bandcamp.com/album/songs-of-the-saxophones"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/0e/e6/03/0ee6037d-aa45-b548-d075-8c3fd2e85bd9/mzaf_16552053566800241698.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-06T03:30:02.379Z",
+    "appleCollectionId": "1777885136",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1777885136「The Saxophones《Songs of the Saxophones》」：曲目 10/10 對上 MB 原盤（Apple 共 10 軌），取第 1 軌〈Time is Like a River〉。主線 2026-11-06 lookup 核對、試聽檔 HTTP 206。",
+    "trackName": "Mysteries Revealed",
+    "popularity": "deezer-rank"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Sweeps",
+   "album": "departure",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "60e92112-477c-45ff-bad4-f5285c0cf77b",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "lo-fi 嘻哈／beat tape：Bandcamp downtempo 候選（Last.fm 收聽 16,729，34 分 13 首；標籤 Hip-Hop/Rap／beat-tape／beats／boom-bap／calm／chill）｜策展無疑點｜MB release-group 60e92112-477c-45ff-bad4-f5285c0cf77b：title「departure」、Album、first-release-date 2018-03-02、artist-credit「Sweeps」。證據：https://sweepsbeats.bandcamp.com/album/departure https://musicbrainz.org/release-group/60e92112-477c-45ff-bad4-f5285c0cf77b",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2018,
+    "yearNote": ""
+   },
+   "genres": [
+    "hiphop",
+    "electronic"
+   ],
+   "cover": {
+    "source": "bandcamp",
+    "url": "https://f4.bcbits.com/img/a0772337620_10.jpg",
+    "note": "CAA release-group front 404（meta 實測）；取 Bandcamp 專輯頁 og:image（HTTP 200 image/jpeg）；主線 2026-11-06 目視與盤名相符。",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-06T03:30:00Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 16729,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-11-06T03:30:00Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 16729）；主線：§0.8.1 錨點人工評分（Bandcamp downtempo 候選批：自發行／小廠首發即上串流冷門 4、正規廠且 Last.fm 收聽 >20,000 給 3（L=16729）；經典 4＝同人收聽最高、場景內公認的代表作；硬蕊 2＝主流易聽、有拍有旋律）"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 4、obscurity 4、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "兩個爵士老曲名，藏在這卷 beat tape 裡。Sweeps 自稱做的是「來自過去、現在與未來的 Lo-fi／嘻哈」，這卷作品 2018 年由 Hue.Hue 發行。一首是〈autumn leaves〉，另一首是 Miles Davis 寫的〈nardis〉。全卷 12 首共 31 分鐘，多半不到 3 分鐘，標籤掛的是 boom-bap 與 calm。",
+    "sourceUrls": [
+     "https://sweepsbeats.bandcamp.com/album/departure",
+     "https://musicbrainz.org/release-group/60e92112-477c-45ff-bad4-f5285c0cf77b"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/57/48/d0/5748d0cf-a02f-a13e-77f6-32e0bdc4ab3c/mzaf_15733211840043690424.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-06T03:30:03.942Z",
+    "appleCollectionId": "1802288709",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1802288709「Sweeps《departure》」：曲目 12/12 對上 MB 原盤（Apple 共 12 軌），取第 1 軌〈departure〉。主線 2026-11-06 lookup 核對、試聽檔 HTTP 206。",
+    "trackName": "sweet spot",
+    "popularity": "deezer-rank"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Forhill",
+   "album": "Fragments",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "88fe0ee1-a6b0-4e73-b264-a422b405a7e2",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "chillwave／vaporwave／barber beats：Bandcamp downtempo 候選（Last.fm 收聽 14,903，36 分 10 首；標籤 Electronic／chillsynth／chillwave／downtempo／instrumental／synthwave）｜⚠ chillsynth／synthwave 可能有鼓機推進、明亮（x、y）｜MB release-group 88fe0ee1-a6b0-4e73-b264-a422b405a7e2：title「Fragments」、Album、first-release-date 2023-07-14、artist-credit「Forhill」。證據：https://forhill.bandcamp.com/album/fragments https://musicbrainz.org/release-group/88fe0ee1-a6b0-4e73-b264-a422b405a7e2",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2023,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/88fe0ee1-a6b0-4e73-b264-a422b405a7e2/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-06T03:30:00Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-06 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 14903,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-11-06T03:30:00Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 14903）；主線：§0.8.1 錨點人工評分（Bandcamp downtempo 候選批：自發行／小廠首發即上串流冷門 4、正規廠且 Last.fm 收聽 >20,000 給 3（L=14903）；經典 4＝同人收聽最高、場景內公認的代表作；硬蕊 2＝主流易聽、有拍有旋律）"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 4、obscurity 4、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "他公開過做法：切掉和弦的低頻，只留上頭的泛音。這位做 chillsynth 的多樂器製作人叫 Forhill，《Fragments》2023 年 7 月 14 日透過 Stratford Ct. 發行。2020 年他在 Reverb Machine 撰文，說自己慣用軟體合成器 Diva 彈低音和弦，再以 EQ 削去低中頻。",
+    "sourceUrls": [
+     "https://forhill.bandcamp.com/album/fragments",
+     "https://musicbrainz.org/release-group/88fe0ee1-a6b0-4e73-b264-a422b405a7e2",
+     "https://reverbmachine.com/blog/lo-fi-retrowave-synths-with-forhill/",
+     "https://forhill.bandcamp.com/album/figments"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/6c/54/41/6c544130-7eff-652e-8c4a-89f807e3305d/mzaf_6237913383051204217.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-11-06T03:30:00Z",
+    "appleCollectionId": "1700387441",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1700387441「Forhill《Fragments》」：曲目 10/10 對上 MB 原盤（Apple 共 10 軌），取第 1 軌〈Supernal〉。主線 2026-11-06 lookup 核對、試聽檔 HTTP 206。",
+    "trackName": "Supernal",
+    "popularity": "deezer-rank"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Juj",
+   "album": "Walnut",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "85063b9b-5233-4721-9be6-4ec7dca49a9a",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "lo-fi 嘻哈／beat tape：Bandcamp downtempo 候選（Last.fm 收聽 11,077，42 分 15 首；標籤 Hip Hop／Rap／beats／instrumentals／jazzy／lo-fi）｜策展無疑點｜MB release-group 85063b9b-5233-4721-9be6-4ec7dca49a9a：title「Walnut」、Album、first-release-date 2013-02-08、artist-credit「Juj」。證據：https://huhwhatwhere.bandcamp.com/album/walnut https://musicbrainz.org/release-group/85063b9b-5233-4721-9be6-4ec7dca49a9a",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2013,
+    "yearNote": ""
+   },
+   "genres": [
+    "hiphop",
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/85063b9b-5233-4721-9be6-4ec7dca49a9a/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-06T03:30:00Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-06 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 11077,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-11-06T03:30:00Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 11077）；主線：§0.8.1 錨點人工評分（Bandcamp downtempo 候選批：自發行／小廠首發即上串流冷門 4、正規廠且 Last.fm 收聽 >20,000 給 3（L=11077）；經典 4＝同人收聽最高、場景內公認的代表作；硬蕊 2＝主流易聽、有拍有旋律）"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 4、obscurity 4、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "廠牌說這位 beatsmith 投的是一記蝴蝶球。Juj 本名 Julian Burg，人在洛杉磯，《Walnut》2013 年 2 月 8 日經 HW&W Recordings 發行。他的曲子堆滿效果與錯拍，乍聽像一團混亂，要聽慣了才懂得欣賞。這是他第三張正式發行，15 首裡最短的〈Inside〉只有 20 秒。",
+    "sourceUrls": [
+     "https://huhwhatwhere.bandcamp.com/album/walnut",
+     "https://musicbrainz.org/release-group/85063b9b-5233-4721-9be6-4ec7dca49a9a"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/79/c2/b1/79c2b11f-33bd-aa33-655c-fa7121a184c1/mzaf_8525904774931871978.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-11-06T03:30:00Z",
+    "appleCollectionId": "965797138",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 965797138「Juj《Walnut》」：曲目 15/15 對上 MB 原盤（Apple 共 15 軌），取第 1 軌〈Juggalo Gigolos〉。主線 2026-11-06 lookup 核對、試聽檔 HTTP 206。",
+    "trackName": "Juggalo Gigolos",
+    "popularity": "deezer-rank"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "City Girl",
+   "album": "Asleep in Soft Ether",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "947c156c-74f5-4cb5-bfd6-26c545039ac9",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "chillwave／vaporwave／barber beats：Bandcamp downtempo 候選（Last.fm 收聽 8,811，35 分 13 首；標籤 Alternative／Electronic／Hip Hop／ambient／beat／beats）｜策展無疑點｜MB release-group 947c156c-74f5-4cb5-bfd6-26c545039ac9：title「Asleep in Soft Ether」、Album、first-release-date 2024-12-06、artist-credit「City Girl」。證據：https://city-girl.bandcamp.com/album/asleep-in-soft-ether https://musicbrainz.org/release-group/947c156c-74f5-4cb5-bfd6-26c545039ac9",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2024,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic",
+    "hiphop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/947c156c-74f5-4cb5-bfd6-26c545039ac9/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-06T03:30:00Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-06 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 8811,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-11-06T03:30:00Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 8811）；主線：§0.8.1 錨點人工評分（Bandcamp downtempo 候選批：自發行／小廠首發即上串流冷門 4、正規廠且 Last.fm 收聽 >20,000 給 3（L=8811；試聽非 ready 但確知 Bandcamp 有正式數位版，給 4 不給 5）；經典 3＝場景二線穩定作品；硬蕊 2＝主流易聽、有拍有旋律）"
+   },
+   "rarity": "common",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "介紹欄是一篇長詩，寫夢、孤單與失落。City Girl 一手寫作、製作並編曲，做的是 lo-fi chillwave；《Asleep in Soft Ether》2024 年 12 月 6 日以自家廠牌推出。詩裡也叫人不要害怕。ry、ivri、tiffi、chevy 四位歌手分別在多首曲子裡獻聲，歌詞也是各自寫的。",
+    "sourceUrls": [
+     "https://city-girl.bandcamp.com/album/asleep-in-soft-ether",
+     "https://musicbrainz.org/release-group/947c156c-74f5-4cb5-bfd6-26c545039ac9"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/81/9b/cc/819bcc50-513f-79f0-a28f-7a43a021b209/mzaf_11120989365723791045.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-06T03:30:08.115Z",
+    "appleCollectionId": "1778710410",
+    "storefront": "US",
+    "collectionExplicitness": "explicit",
+    "note": "Apple us 1778710410「City Girl《Asleep in Soft Ether》」：meta 自動搜尋無結果；主線 2026-11-06 走 Apple 藝人目錄 lookup，us 1778710410《Asleep in Soft Ether》City Girl 2024-12-06、13 首，與 MB／Bandcamp 相符，取第 1 軌〈Asleep in Soft Ether〉。主線 2026-11-06 lookup 核對、試聽檔 HTTP 206。",
+    "trackName": "I'm Still Holding On",
+    "popularity": "deezer-rank"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Hello Meteor",
+   "album": "The Department of Marine Sciences",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "2cab17b6-8422-449e-aa67-48fb2841e46c",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "chillwave／vaporwave／barber beats：Bandcamp downtempo 候選（Last.fm 收聽 6,620，43 分 15 首；標籤 90s／Electronic／IDM／ambient／chillwave／cozywave）｜⚠ 同人六張只取兩張｜MB release-group 2cab17b6-8422-449e-aa67-48fb2841e46c：title「The Department of Marine Sciences」、Album、first-release-date 2022-04-19、artist-credit「Hello Meteor」。證據：https://hellometeor.bandcamp.com/album/the-department-of-marine-sciences https://musicbrainz.org/release-group/2cab17b6-8422-449e-aa67-48fb2841e46c",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2022,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/2cab17b6-8422-449e-aa67-48fb2841e46c/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-06T03:30:00Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-06 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 6620,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-11-06T03:30:00Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 6620）；主線：§0.8.1 錨點人工評分（Bandcamp downtempo 候選批：自發行／小廠首發即上串流冷門 4、正規廠且 Last.fm 收聽 >20,000 給 3（L=6620）；經典 4＝同人收聽最高、場景內公認的代表作；硬蕊 2＝主流易聽、有拍有旋律）"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 4、obscurity 4、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "一間虛構的海洋研究機構，由 15 個曲名拼成。Hello Meteor 來自西雅圖，這套全器樂作品 2022 年 4 月 19 日在 Evergreen Prefecture 發行。導覽從倉庫〈Oceanography Storage〉開始，一路往下走到海床前哨站〈Seabed Outpost Enigmatica〉。",
+    "sourceUrls": [
+     "https://hellometeor.bandcamp.com/album/the-department-of-marine-sciences",
+     "https://musicbrainz.org/release-group/2cab17b6-8422-449e-aa67-48fb2841e46c",
+     "https://hellometeor.bandcamp.com/music"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/13/1b/5d/131b5d72-7d40-299a-db68-be49c85b6fe8/mzaf_6620148393391640217.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-06T03:30:09.863Z",
+    "appleCollectionId": "1618787810",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1618787810「Hello Meteor《The Department of Marine Sciences》」：曲目 15/15 對上 MB 原盤（Apple 共 15 軌），取第 1 軌〈The Department of Marine Sciences〉。主線 2026-11-06 lookup 核對、試聽檔 HTTP 206。",
+    "trackName": "Map and Locations Service Terminals",
+    "popularity": "deezer-rank"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Kalpataru Tree",
+   "album": "All Things Passing",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "b22dce45-34ea-418f-b9bd-6a0d28974849",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "psybient／psy-dub／暖 downtempo：Bandcamp downtempo 候選（Last.fm 收聽 6,471，54 分 7 首；標籤 Ambient／Chill out／Etheric／Organic／ambient／electronica）｜⚠ 純氛圍、旋律不明可能判冷（z）｜MB release-group b22dce45-34ea-418f-b9bd-6a0d28974849：title「All Things Passing」、Album、first-release-date 2010-06-20、artist-credit「Kalpataru Tree」。證據：https://kalpatarutree.bandcamp.com/album/all-things-passing https://musicbrainz.org/release-group/b22dce45-34ea-418f-b9bd-6a0d28974849",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2010,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "source": "bandcamp",
+    "url": "https://f4.bcbits.com/img/a0973093258_10.jpg",
+    "note": "CAA 404；封面印 ALL THINGS PASSING／Kalpataru Tree；取 Bandcamp 專輯頁 og:image（HTTP 200 image/jpeg）；主線 2026-11-06 目視與盤名相符。",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-06T03:30:00Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 6471,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-11-06T03:30:00Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 6471）；主線：§0.8.1 錨點人工評分（Bandcamp downtempo 候選批：自發行／小廠首發即上串流冷門 4、正規廠且 Last.fm 收聽 >20,000 給 3（L=6471）；經典 3＝場景二線穩定作品；硬蕊 3＝長篇單一音色／迴圈取樣）"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "藝人頁說，這些聲音是為了療癒而雕塑的。Kalpataru Tree 由奧勒岡州的 Curtis Humphrey 一人寫奏，做 psy-dub，《All Things Passing》2010 年 6 月 20 日放上 Bandcamp。他自述要在 dub 的骨幹上展開空靈之境。兩首人聲短曲由 Drea Drury 演唱、Rebecca Peak 吟唱。",
+    "sourceUrls": [
+     "https://kalpatarutree.bandcamp.com/album/all-things-passing",
+     "https://kalpatarutree.bandcamp.com/music",
+     "https://musicbrainz.org/release-group/b22dce45-34ea-418f-b9bd-6a0d28974849"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview122/v4/6c/62/25/6c622505-b59c-a33a-b4d7-617d8572b0cd/mzaf_493963352356708695.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-11-06T03:30:00Z",
+    "appleCollectionId": "1731818426",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1731818426「Kalpataru Tree《All Things Passing》」：曲目 7/7 對上 MB 原盤（Apple 共 7 軌），取第 1 軌〈All Things Passing〉。主線 2026-11-06 lookup 核對、試聽檔 HTTP 206。",
+    "trackName": "All Things Passing",
+    "popularity": "deezer-rank"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Hello Meteor",
+   "album": "The End of All Known Land",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "41cf2566-3df4-4fd8-85ce-4b5b938cca8f",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "chillwave／vaporwave／barber beats：Bandcamp downtempo 候選（Last.fm 收聽 5,401，44 分 14 首；標籤 90s／Electronic／ambient／chillout／chillwave／cozywave）｜⚠ 同人六張只取兩張｜MB release-group 41cf2566-3df4-4fd8-85ce-4b5b938cca8f：title「The End of All Known Land」、Album、first-release-date 2021-10-19、artist-credit「Hello Meteor」。證據：https://hellometeor.bandcamp.com/album/the-end-of-all-known-land https://musicbrainz.org/release-group/41cf2566-3df4-4fd8-85ce-4b5b938cca8f",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2021,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/41cf2566-3df4-4fd8-85ce-4b5b938cca8f/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-06T03:30:00Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-06 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 5401,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-11-06T03:30:00Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 5401）；主線：§0.8.1 錨點人工評分（Bandcamp downtempo 候選批：自發行／小廠首發即上串流冷門 4、正規廠且 Last.fm 收聽 >20,000 給 3（L=5401）；經典 3＝場景二線穩定作品；硬蕊 2＝主流易聽、有拍有旋律）"
+   },
+   "rarity": "common",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "黃昏時分，跑者在懸崖盡頭把信號燈碰在一起。這張是 Hello Meteor 的 Jaladri 系列之一，14 首全器樂，2021 年 10 月 19 日推出。Jaladri 是文案虛構的一顆小行星，標題指的是 Reitoru 島西岸一處只望得見海的懸崖岬。每年有一場馬拉松在黃昏抵達那裡，那一刻叫燈火時刻。",
+    "sourceUrls": [
+     "https://hellometeor.bandcamp.com/album/the-end-of-all-known-land",
+     "https://musicbrainz.org/release-group/41cf2566-3df4-4fd8-85ce-4b5b938cca8f",
+     "https://www.hellometeor.com/album-archive/jaladri/the-end-of-all-known-land",
+     "https://www.discogs.com/master/3693375-Hello-Meteor-The-End-Of-All-Known-Land"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/00/2f/0c/002f0ccf-b011-d1c8-7e8f-60127d5b8ff6/mzaf_18107029123671517733.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-06T03:30:12.370Z",
+    "appleCollectionId": "1589615369",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1589615369「Hello Meteor《The End of All Known Land》」：曲目 14/14 對上 MB 原盤（Apple 共 14 軌），取第 1 軌〈The First Iteration〉。主線 2026-11-06 lookup 核對、試聽檔 HTTP 206。",
+    "trackName": "South Shore Rain",
+    "popularity": "deezer-rank"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Lovespirals",
+   "album": "Future Past",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "2510d7ac-aab1-48a9-93de-34c8c77e0fda",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "dream pop／bedroom 夢幻流行：Bandcamp downtempo 候選（Last.fm 收聽 2,614，54 分 14 首；標籤 Electric Guitar／Electronic／downtempo／dream pop／electronica／female vocals）｜⚠ 電子拍＋女聲 dream pop，拍子可能推進（x）｜MB release-group 2510d7ac-aab1-48a9-93de-34c8c77e0fda：title「Future Past」、Album、first-release-date 2010-01-01、artist-credit「Lovespirals」。證據：https://lovespirals.bandcamp.com/album/future-past https://musicbrainz.org/release-group/2510d7ac-aab1-48a9-93de-34c8c77e0fda",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2010,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic",
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/2510d7ac-aab1-48a9-93de-34c8c77e0fda/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-06T03:30:00Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-06 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 2614,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-11-06T03:30:00Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 2614）；主線：§0.8.1 錨點人工評分（Bandcamp downtempo 候選批：自發行／小廠首發即上串流冷門 4、正規廠且 Last.fm 收聽 >20,000 給 3（L=2614）；經典 3＝場景二線穩定作品；硬蕊 2＝主流易聽、有拍有旋律）"
+   },
+   "rarity": "common",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "上一張走 dream pop，這一回兩人轉身回到電子。Lovespirals 由洛杉磯的 Ryan Lum 與 Anji Bee 組成，《Future Past》是兩人 2010 年的自主發行，正式曲目 11 首。前作名叫《Long Way From Home》；這次的聲音貼近早期 Air 與 Zero 7，走苦甜的電子流行。兩人在自家的 Chillcuts Studio 錄了一年半。樂器由 Lum 一手包下，吉他、貝斯、鍵盤與鼓都是他彈的；Bee 寫詞，也編排人聲。",
+    "sourceUrls": [
+     "https://lovespirals.bandcamp.com/album/future-past",
+     "https://musicbrainz.org/release-group/2510d7ac-aab1-48a9-93de-34c8c77e0fda"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/99/d9/b2/99d9b258-aeeb-d90c-d0c0-552c3648d155/mzaf_10827805132609621393.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-06T03:30:13.863Z",
+    "appleCollectionId": "346986173",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 346986173「Lovespirals《Future Past》」：曲目 11/11 對上 MB 原盤（Apple 共 11 軌），取第 1 軌〈Home〉。主線 2026-11-06 lookup 核對、試聽檔 HTTP 206。",
+    "trackName": "Meanwhile, Irreplaceable Time Flees",
+    "popularity": "deezer-rank"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "t e l e p a t h テレパシー能力者",
+   "album": "夢の国",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "85e2ce51-1e5e-4c19-bc79-6e6dab8f8d48",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "chillwave／vaporwave／barber beats：Bandcamp downtempo 候選（Last.fm 收聽 1,738，57 分 12 首；標籤 Ambient／Downtempo／Funk／Vaporwave／slushwave／Chile）｜⚠ slushwave 慢放取樣：旋律不明可能判冷（z）；MB 首發 2014，Bandcamp 頁是 2015 年 NO PROBLEMA TAPES 卡帶再發｜MB release-group 85e2ce51-1e5e-4c19-bc79-6e6dab8f8d48：title「夢の国」、Album、first-release-date 2014-03-18、artist-credit「t e l e p a t h テレパシー能力者」。證據：https://noproblematapes.bandcamp.com/album/- https://musicbrainz.org/release-group/85e2ce51-1e5e-4c19-bc79-6e6dab8f8d48",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2014,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/85e2ce51-1e5e-4c19-bc79-6e6dab8f8d48/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-06T03:30:00Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-06 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 1738,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-11-06T03:30:00Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 1738）；主線：§0.8.1 錨點人工評分（Bandcamp downtempo 候選批：自發行／小廠首發即上串流冷門 4、正規廠且 Last.fm 收聽 >20,000 給 3（L=1738；試聽非 ready 但確知 Bandcamp 有正式數位版，給 4 不給 5）；經典 4＝同人收聽最高、場景內公認的代表作；硬蕊 3＝長篇單一音色／迴圈取樣）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 4、obscurity 4、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "人稱 slushwave 開創者的他，把日本流行歌浸進殘響。t e l e p a t h テレパシー能力者 是俄亥俄州阿克倫的 vaporwave 音樂人，《夢の国》2014 年 3 月 18 日先數位發行。他慣用持續的殘響、phaser 與循環取樣。樂評形容這張是面目全非的流行抒情歌改造。",
+    "sourceUrls": [
+     "https://noproblematapes.bandcamp.com/album/-",
+     "https://en.wikipedia.org/wiki/T_e_l_e_p_a_t_h_テレパシー能力者",
+     "https://musicbrainz.org/release-group/85e2ce51-1e5e-4c19-bc79-6e6dab8f8d48"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-06T03:30:00Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Lindsheaven Virtual Plaza",
+   "album": "超越愛",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "3e085bbb-ee36-48a4-9e0e-769354b6c10f",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "chillwave／vaporwave／barber beats：Bandcamp downtempo 候選（Last.fm 收聽 1,516，62 分 10 首；標籤 Electronic／ambient／chillout／chillwave／downtempo／electronic）｜⚠ 標籤含 future funk：可能有四拍推進（x）｜MB release-group 3e085bbb-ee36-48a4-9e0e-769354b6c10f：title「超越愛」、Album、first-release-date 2015-11-06、artist-credit「Lindsheaven Virtual Plaza」。證據：https://lindsheavenvirtualplaza.bandcamp.com/album/- https://musicbrainz.org/release-group/3e085bbb-ee36-48a4-9e0e-769354b6c10f",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2015,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/3e085bbb-ee36-48a4-9e0e-769354b6c10f/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-06T03:30:00Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-06 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 1516,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-11-06T03:30:00Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 1516）；主線：§0.8.1 錨點人工評分（Bandcamp downtempo 候選批：自發行／小廠首發即上串流冷門 4、正規廠且 Last.fm 收聽 >20,000 給 3（L=1516；試聽非 ready 但確知 Bandcamp 有正式數位版，給 4 不給 5）；經典 3＝場景二線穩定作品；硬蕊 3＝長篇單一音色／迴圈取樣）"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "這是「再見」嗎？說明欄就這麼一個問句。Lindsheaven Virtual Plaza 在巴西里約熱內盧做 vaporwave，《超越愛》2015 年 11 月 6 日發布。曲名全是日文，像〈燈台〉〈日の出〉。全張 10 首約 62 分鐘，〈このエンドレスシー〉長達 10 分 48 秒；有聽眾形容那像海灘上的陽光。",
+    "sourceUrls": [
+     "https://lindsheavenvirtualplaza.bandcamp.com/album/-",
+     "https://musicbrainz.org/release-group/3e085bbb-ee36-48a4-9e0e-769354b6c10f"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-06T03:30:00Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "OSCOB",
+   "album": "praise the sun god",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "76ab1138-7e6a-4393-bd2b-be5eaf05d55f",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "chillwave／vaporwave／barber beats：Bandcamp downtempo 候選（Last.fm 收聽 1,394，108 分 13 首；標籤 Electronic／barber beats／chill／downtempo／lounge／vaporwave）｜⚠ 108 分鐘 barber beats 迴圈｜MB release-group 76ab1138-7e6a-4393-bd2b-be5eaf05d55f：title「praise the sun god」、Album、first-release-date 2022-05-23、artist-credit「OSCOB」。證據：https://oscob.bandcamp.com/album/praise-the-sun-god https://musicbrainz.org/release-group/76ab1138-7e6a-4393-bd2b-be5eaf05d55f",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2022,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/76ab1138-7e6a-4393-bd2b-be5eaf05d55f/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-06T03:30:00Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-06 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 1394,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-11-06T03:30:00Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 1394）；主線：§0.8.1 錨點人工評分（Bandcamp downtempo 候選批：自發行／小廠首發即上串流冷門 4、正規廠且 Last.fm 收聽 >20,000 給 3（L=1394；試聽非 ready 但確知 Bandcamp 有正式數位版，給 4 不給 5）；經典 3＝場景二線穩定作品；硬蕊 3＝長篇單一音色／迴圈取樣）"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "有聽眾說，它像一箱被太陽曬變形的 lounge 黑膠。做這張的 OSCOB 標在德國，2022 年 5 月 23 日上架。那則留言寫在卡帶廠牌 Gorgeous Lights 的頁面上。專輯取名《praise the sun god》，曲名裡有〈天照〉，也有〈sol invictus〉。13 首總長 108 分鐘。",
+    "sourceUrls": [
+     "https://oscob.bandcamp.com/album/praise-the-sun-god",
+     "https://gorgeouslights.bandcamp.com/album/praise-the-sun-god",
+     "https://musicbrainz.org/release-group/76ab1138-7e6a-4393-bd2b-be5eaf05d55f"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-06T03:30:00Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "slowerpace 音楽",
+   "album": "The Great Escape",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "c90739d5-bceb-46d5-b16b-671107889854",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "chillwave／vaporwave／barber beats：Bandcamp downtempo 候選（Last.fm 收聽 760，46 分 9 首；標籤 Electronic／barber beats／barberbeats／downtempo／film music／lounge）｜策展無疑點｜MB release-group c90739d5-bceb-46d5-b16b-671107889854：title「The Great Escape」、Album、first-release-date 2023-06-27、artist-credit「slowerpace 音楽」。證據：https://slowerpace.bandcamp.com/album/the-great-escape https://musicbrainz.org/release-group/c90739d5-bceb-46d5-b16b-671107889854",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2023,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/c90739d5-bceb-46d5-b16b-671107889854/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-06T03:30:00Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-06 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 760,
+    "source": "manual:regional-rubric",
+    "checkedAt": "2026-11-06T03:30:00Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 760）；主線：§0.8.1 錨點人工評分（Bandcamp downtempo 候選批：自發行／小廠首發即上串流冷門 4、正規廠且 Last.fm 收聽 >20,000 給 3（L=760）；經典 3＝場景二線穩定作品；硬蕊 3＝長篇單一音色／迴圈取樣）"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "八個被取樣者，名字全列進了 credits 欄。slowerpace 音楽 自稱是 vaporwave 實驗室裡的巴西男孩，《The Great Escape》2023 年 6 月 27 日自己發行。Spy From Cairo 等人都是素材來源，自介也說幾乎一切都是掠奪來的。曲名一路從〈dusty prison〉逃到〈the great escape〉。",
+    "sourceUrls": [
+     "https://slowerpace.bandcamp.com/album/the-great-escape",
+     "https://musicbrainz.org/release-group/c90739d5-bceb-46d5-b16b-671107889854"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/61/d0/80/61d080d1-3c41-e70c-6fc7-ad07ae78bc44/mzaf_18076506439256913098.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-06T03:30:15.362Z",
+    "appleCollectionId": "6800845240",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 6800845240「slowerpace 音楽 & Windows XP《The Great Escape》」：曲目 9/9 對上 MB 原盤（Apple 共 9 軌），取第 1 軌〈far from home (intro)〉。主線 2026-11-06 lookup 核對、試聽檔 HTTP 206。",
+    "trackName": "fetishisms",
+    "popularity": "deezer-rank"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  }
+ ]
+}
