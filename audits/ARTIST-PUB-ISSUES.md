@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1875 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1882 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -1650,8 +1650,15 @@
 | ar-d-804 | 吉田アミ | Tiger Thrush | 出版前一個月她與 Sachiko M 的二人組 Cosmos 才在 Ars Electronica 獲獎 | 得獎的是雙 CD 合輯《Astro Twin + Cosmos》（Astro Twin 為吉田與ユタカワサキ，Cosmos 為吉田與 Sachiko M），不是只有 Cosmos；『前一個月』的時序本層未查到頒獎月份，建議改成『同年獲獎』或查證後再寫 | https://www.ftarri.com/festival/2019/weektwo/yoshida-e.html |
 | ar-d-805 | Sun Araw & M. Geddes Gengras meet The Congos | Icon Give Thank | 十天裡，他們吃住都在 The Congos 的總部 | FADER 寫 2011 年 1 月、約一週；Line of Best Fit 寫約十天，來源不一致，建議把「十天」改成「約一至兩週」或略去天數 | https://www.thefader.com/2012/03/13/happy-songs-cameron-stallones-m-geddes-gengras-and-the-congos |
 | ar-d-805 | Timber Timbre | Hot Dreams | 來自加拿大的 Timber Timbre 由歌手 Taylor Kirk 領唱 | 歷史描述沒有錯，但主唱 Taylor Kirk 已於 2026 年 4 月 14 日離世，現在式敘述可考慮改成過去式或加註；店主自行決定。 | https://exclaim.ca/music/article/r-i-p-taylor-kirk-of-timber-timbre |
+| ar-d-805 | Ut | Conviction | 1985 年由樂團自家的 Out Records 推出 | 英文維基標 1986 年，MusicBrainz 與卡單為 1985 年，來源不一致，未能裁定，供店主於本機核對（Discogs 或黑膠標籤）。 | https://en.wikipedia.org/wiki/Conviction_(Ut_album) |
+| ar-d-805 | Wall of Voodoo | Dark Continent | 樂團第一張專輯 1981 年 8 月 18 日推出 | 樂團 1980 年已有同名四首歌 EP（後來擴編重發為《The Index Masters》），《Dark Continent》是第一張全長專輯；『第一張專輯』宜加『全長』。 | https://trouserpress.com/entry.php?a=wall_of_voodoo |
 | ar-d-805 | Widowspeak | Almanac | 專輯同一年就發行了（接在 2012 年夏末錄完之後） | Spin 2013-01 專訪稱《Almanac》為 2013 年 1 月發行；錄音 2012、發行 2013。卡池 year 也是 2012 | https://www.spinmagazine.com/2013/01/widowspeak-interview-almanac-new-album/ |
 | ar-d-805 | 森は生きている（Mori wa Ikiteiru） | グッド・ナイト | 森は生きている是 2012 年春天在東京成立的五人樂團 | OTOTOY 2013 專訪與介紹頁都寫六人組；人數待與 P-VINE 官方介紹核對，疑為六人 | https://ototoy.jp/feature/20130511 |
+| ar-d-806 | Stick Figure | Set in Stone | Scott Woodruff 2005 年創立的美國雷鬼／dub 樂團計畫 | 維基寫 2005，Jamaica Observer（2022-09-25）寫 2006 年組成，兩源不一致，尚無第三源。 | https://jamaicaobserver.com/2022/09/25/sticking-with-the-script |
+| ar-d-806 | Susan Cadogan | Hurt So Good | 打進英國單曲榜第 4 名／法院判定 Trojan 擁有英國權利 | 與維基及 Jamaica Observer 一致；無錯誤。附帶：Observer 稱 Perry 版本經 Trojan 發行、維基稱最早由 Perry 的 Perries 與英國 DIP International 發行，兩源說法不同，簡介未寫此節故無須改 | https://en.wikipedia.org/wiki/Susan_Cadogan |
+| ar-d-806 | The Aggrovators | Kaya Dub | 樂團名取自製作人 1960 年代末開的唱片行 Agro Sounds | 維基支持此說，但 Wax Poetics 訪談中 Lee 本人說名字來自 Eddy Grant 的口頭禪；建議改為「據說／一說」或兩說並陳 | https://magazine.waxpoetics.com/connections/the-island/article/bunny-lee-the-godfather/ |
+| ar-d-806 | Tony Tuff | Presenting Mr. Tuff | 金斯敦出身 | 本批特注統一寫京斯敦；另上線簡介「由兩位舊團友合力製作」未在本層查證 | https://en.wikipedia.org/wiki/Tony_Tuff |
+| ar-d-806 | Tyrone Evans | Sings Bullwackie Style | 這套 roots 聲音被視為影響了 Rhythm & Sound 與 Massive Attack | 本層沒找到來源，建議確認出處，查無則刪 | https://sites.google.com/view/smallaxereggae/tyrone-don-evans |
 | ar-d-929 | Erik Truffaz | Rollin' | 2000 年簽進這個廠牌 | 上線簡介沿用 Blue Note 官網簡介的 2000 年簽約說；但維基與已上線的《Out of a Dream》《The Dawn》《Bending New Corners》簡介顯示 1997–1999 年已在 Blue Note 發片，瑞士聯邦文化局新聞稿也記《Bending New Corners》為 1999 年 Blue Note 專輯，2000 年簽約的說法與之矛盾，建議改為不寫簽約年。 | https://musikzeitung.ch/en/?p=44583 |
 | ar-d-929 | Erik Truffaz | The Walk of the Giant Turtle | 前一張四重奏盤在法國賣到十萬張的金唱片 | 維基只寫《Bending New Corners》（1999）是法國 Silver Album；本張的前一張是《Mantis》（2001），並非《Bending New Corners》。需核對金唱片的專輯歸屬與認證層級。 | https://en.wikipedia.org/wiki/Erik_Truffaz |
 | ar-d-929 | Stanley Jordan | Magic Touch | 九軌裡有五軌只有一把電吉他 … 六軌只有他的電吉他 | 同一則簡介前後自相矛盾：五軌 vs 六軌；事實庫引 jazzdisco 為六軌純獨奏、其餘三軌各配一組節奏，應統一為六軌。 | https://en.wikipedia.org/wiki/Magic_Touch_(Stanley_Jordan_album) |

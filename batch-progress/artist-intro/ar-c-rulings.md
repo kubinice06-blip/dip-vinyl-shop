@@ -2737,3 +2737,10 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 38 位寫：28 full、10 thin；不寫 2 位——The Ric Colbeck Quartet（只有 Discogs 編制資料，身世與地位都空）、Tim Berne, Craig Taborn & Tom Rainey（唯一的聲音句是 David Torn 談 Taborn 個人，不是三重奏的聲音，比照「做法句只剩個人側寫」撤稿）。
 - 題材照寫：Sonny Simmons 早年流落舊金山街頭、2021 年 4 月過世；Giuseppi Logan 藥物濫用與精神疾病後消失數十年、2020 年 4 月過世（死因與新冠肺炎有關）；Tom Cora 1998 年死於黑色素瘤；Tony Oxley 2023 年、Tristan Honsinger 2023 年、Urs Voerkel 1999 年、Wolfgang Fuchs 2016 年過世（Voerkel 卒年研究稿以德文維基與 MusicBrainz 雙源核對）。
 - 主線審稿 45 處：第一句補國籍或身分（Mitchell 四卡、Braxton、Mahanthappa、Simmons、Logan、Lehman、Courvoisier、Tom Cora 兩卡、Honsinger、Voerkel、Zeena Parkins、Polyrock、Q and Not U、Bennink、Battaglia、Oxley、Guthrie、Raymonde、Sonic Boom、Art Ensemble）；在世者不列榮譽——Mitchell 刪 NEA 爵士大師（兩卡）、Zeena Parkins 刪與 Björk 巡演一句；最高級評語軟化——Purrkur Pillnikk 刪「那個年代最受歡迎也最有影響力」；單人卡壓回 250 字（Simmons、Logan 刪 Bill Dixon 引語等）；Roscoe Mitchell 跨卡重複的「稀疏而不協和」句只留 Sextet 一處；多人卡 Taborn/Baku、Beresford/Bennink 壓回 280 字內。
+
+## ar-d-805（2026-11-06，shoegaze／dream pop、drone／funeral doom、post-rock、no wave、prog；日韓台獨立搖滾；neo-soul、R&B）
+
+- 39 位寫：22 full、17 thin；不寫 1 位——声音玩具（研究稿只有 thepaper.cn 一條來源）。
+- 截止日後事實主線核實：Timber Timbre 主唱 Taylor Kirk 2026 年 4 月 14 日驟逝、得年 44、死因未公開（Billboard Canada、Consequence、Stereogum 等多源，皆引同一份代表聲明），正文一句帶過；The Beta Band 2025 年重組巡演未另行核實，刪除。
+- 題材照寫：Trees of Eternity 的 Aleah Stanbridge 2016 年 4 月因癌症過世、得年 39（派工特注誤拼 Starbridge，研究稿已更正）；Tom Brock 2002 年過世；YEBBA 母親過世後她以〈My Mind〉紀念。
+- 主線審稿 39 處：第一句補國籍或身分（O’Malley、Suburban Lawns、Sun Araw、The Antlers、The Telescopes、Timber Timbre、Sound of Ceres、The Fur.「台灣」、Nisennenmondai 與 Mori wa Ikiteiru「日本」、Sa-Ra、Society of Soul、The Internet、Thee Sinseers「美國」、Spacek「英國」、Tank、Tom Brock、Yazmin Lacey、YEBBA、Yuna 補名字與身分）；在世者不寫獎項、串流——Timber Timbre 刪 Polaris 長短名單、Yuna 刪 Myspace 百萬播放、YEBBA 刪 Sam Smith 合寫（只留一項）、Yazmin Lacey 刪 Ezra Collective 一句；單源與過度評語——Tom Brock「最偉大 soul 歌手之一」（個人部落格）、YEBBA 的 Zane Lowe「最有力」、Thergothon「第一張真正的 funeral doom」、The Fur. SXSW（單源）、Tank「長年維持聲量」刪除；柴田聡子→柴田聰子；多處刪句壓回 250 字。
