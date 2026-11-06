@@ -39,3 +39,10 @@
 - 24523：Wax Tailor、Moonchild 鼓型無直接描述，以風格標籤判讀慢拖；Blockhead Bandcamp 文案有 upbeat／chase-scene 段，x 預估上調到 2.9，貼邊風險中，不汰。
 - 24524：Wax Tailor 發行日三說（MB 法國 2012-09-10、Bandcamp 09-14、維基北美 09-18），採 MB。Shpongle 沿用稿去掉原本「偏輕建議汰」，依本輪規則判輕不汰。
 - 24525：WebSearch 用 3 次（Smidley、Long Arm、Blockhead）；Bandcamp 直連被擋，改 WebFetch。
+
+## 研究 b 組
+- 24531：b 組 8 張鼓型：慢拖 5（Degiheugi、The New Law、Frenic、Flox、Inspired Flight）、不明 2（A Positive Life、Neutron 9000）、舞池 1（Dan le Sac）。建議汰 1：Dan le Sac《Space Between the Words》（BBC 樂評轉載寫 jump-up 派對電子、house 翻唱、嘉年華彈跳；可逆，若主線認為憂鬱人聲曲佔比夠高可留）。
+- 24532：前一輪沿用稿只有 Degiheugi（只補鼓型行）；其餘 7 張在 dropped-research 與研究目錄均找不到，全數新查，來源為 Bandcamp ld+json、MB、Rush Hour、BBC 樂評轉載。
+- 24533：Inspired Flight、Flox 僅有標籤與曲目表，無樂評，status 標 thin；Flox 鼓型以後續樂評對 Flox 風格的描述加標籤判讀。Neutron 9000 與 A Positive Life 鼓型無來源，判不出來留給評分。
+- 24534：年份：A Positive Life MB 1994、Bandcamp 美版 1995、Rush Hour 稱原作 1993；Flox MB 2009、Bandcamp 頁面 2013；Neutron 9000 重發 2021 含兩首後加混音。卡片照卡單（MB）年份。
+- 24535：WebSearch 用 3 次（Flox、Neutron 9000、A Positive Life）；維基 API 被限流，Dan le Sac 條目未取得。

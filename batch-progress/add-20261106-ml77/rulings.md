@@ -51,3 +51,19 @@
 - 24623：x 貼邊提醒（≤2.7 門檻）：Astronaut Ape 2.8、Jean du Voyage 2.8、Błoto 2.8；Zero Cult 卡單 1.8 我改估 2.2。
 - 24624：Jean du Voyage、Evil Needle、Astronaut Ape、Zero Cult 查不到樂評，facts 只用 Bandcamp 頁面與廠牌文案，status 標 thin；WebSearch 用了 3 次（GILA、Błoto、Random Rab）。
 - 24625：Free Jazz Blog 把 Błoto《Grzybnia》標 2025 年、團員名單與 Bandcamp 署名不同；採 Bandcamp／MB（2024-10-11，Cancer G 打鼓）。
+
+## 研究 e 組
+
+- **24641**：Romare《Oblivion》鼓型判「不明（混合）」不建議汰。依據：零售商導讀點名 4/4 脈動（Machines）、acid house（Change）、boom-bap（Take Us），但同時有 trip-hop 慢搖籃曲與爵士酒吧式滑步，主體不是舞池；動能偏中、質地偏輕，評分多半落隔壁格而非恍惚。無獨立樂評。
+- **24642**：Degiheugi《Endless Smile 2》鼓型「不明」（boom bap／MPC，無速度來源），不汰。卡單 label 空白合理（自家 Endless Smile Records）。
+- **24643**：Ochre《Oversail》鼓型「不明」（IDM 骨架式鼓機；techno 僅標籤），不汰；評分時留意是否有四拍曲。
+- **24644**：Banco de Gaia《Trauma》鼓型「舞池（部分）」，**建議汰**。依據：德語樂評稱整體振奮甚至帶怒氣、不是沉思，〈War〉明確舞池；標籤含 dance、balearic、worldbeat；卡單 x 2.4 偏低。可逆：主線若認為氛圍曲佔多數可留，廠牌補 Disco Gecko Recordings。
+- **24645**：High Tides《Paradise Daze》鼓型無來源，不汰，status thin（僅 Bandcamp 標籤）。
+- **24646**：LAL《Find Safety》§1 人工身分核對通過：Bandcamp／Apple 2016-04-29，Discogs master 1123849（2016，Coax OAX011，LP），盤名、年份 2016、廠牌 Coax 皆未推翻；僅 Discogs 第 3 軌曲名 Were 與 Bandcamp Where 不同，以 Bandcamp 為準。鼓型無來源，不汰；Deep House 標籤有舞池風險留評分判。
+
+## 主線研究汰換（不佔條號；2026-11-06）
+研究層交件後汰 3 → 剩 31；被汰卡移到 `dropped-cards.json`／`dropped-research.json`。不補位。判輕、判冷、鼓型不明的照本輪原則一律留給評分。
+- GILA《Energy Demonstration》：鼓＋攻擊性：樂評「razor-sharp percussion、destructive art-trap」「bags of killer drums」，自述 hard-edged bangers（研究 c）
+- Banco de Gaia《Trauma》：舞池推進：德語樂評稱整體振奮帶怒氣、〈War〉明言適合舞池，標籤 dance／balearic，x 估 3.2（研究 e）
+- Invisible Allies《Hyperdimensional Animals》：remix 過半：Discogs 10 首後 5 首是別人的重混（比照本批 Quanta《Elements》主線汰）（研究 d）
+- 留下但貼邊交評分層：Romare《Oblivion》（零售導讀點名 4/4、acid house 各一曲，主體 trip-hop／boom-bap）、BALTHVS《Cause & Effect》（文案列 deep house／disco，無逐曲）、Astronaut Ape、Błoto（真鼓＋TR-8）、LAL（Deep House 標籤）、Glen Porter（衝浪搖滾能量，非攻擊性非四拍）、Era（流行搖滾式持續鼓貝斯）、Potatohead People（Dilla 式鬆拍，個別 house 段）。
