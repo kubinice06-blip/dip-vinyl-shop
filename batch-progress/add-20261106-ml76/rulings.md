@@ -90,3 +90,9 @@
 - **24583** 不複述 hook：Blockhead 的「受訪時說改用 Ableton…」、Kill Emil 的「主題設在尋常人物的人生高低」兩格與 hook 同義，正文只交代「這個念頭他在一次訪談裡提過」／略去，改把 hook 代稱具名。Neutron 9000 第三句具名 Tiga 收 hook 懸念；Inspired Flight、A Positive Life、Smidley 第二句具名 hook 的「一位成員／他」。
 - **24584** 媒體名與榜：note 無媒體名進正文（樂評一律「樂評／評論／有樂評」）；Wax Tailor「法國專輯榜第 8 名」、Moonchild「美國新人專輯榜第 6 名」屬官方銷售榜，照 note 寫。「介紹寫／官方稱／作品說明」一律改成直述（Degiheugi、The New Law、Eguana、Long Arm）；A Positive Life 保留「唱片公司形容」（note 指派、屬廠牌自述）。Frenic「放上 Bandcamp」是發行管道、照 note 寫，ml70／72 有先例。
 - **24585** 跨批 4-gram 自掃（out-1＋out-2＋ml77 out-1／out-2，han() 剝英數標點）：3 張以上只剩樂種詞「器樂嘻哈」×4（Long Arm、Blockhead、Degiheugi、Frenic 的 note 皆指派此詞）。途中拆掉：由與組成、的製作人、的第四張、專輯年月／輯年月日、首加起來／加起來約、製作人在、的第一張、這個名字、分鐘上下、分鐘左右、首約分鐘、長約分鐘、張錄音室／錄音室專、作年月日、的年月日、自行發行、合計約分、張專輯年、唱片年月。out-2 交件後若再改，請主線收件時再合掃一次。輔助腳本：scratchpad `wr-ml76-1/ml76w1-measure.py`。
+
+## 主線審稿（24591；2026-11-06）
+- **24591** 逐張審 35 張（全文印出，逐句對研究稿 a–e；抽核 Wax Tailor 法國專輯榜第 8 名（維基，官方銷售榜照留）、Moonchild Heatseekers 第 6 名（維基，同）、A Positive Life 全白房間錄音與本名（Waveform Bandcamp 文案）、Jogging House 限量 5 張黑膠（Discogs release 31734974）、Saafi Brothers 成員（官網＋Discogs））。改 2 張（`desc-override.json`），研究稿同步標註：
+  - `Smidley|Smidley`：整段重寫。原 hook「計畫的名字，取自他兒時養的一隻黑色拉不拉多」出自研究稿引 Stereogum，主線重抓該頁全文查無 dog／labrador／named after，藝人介紹補洞層（ar-d-809 g1）也回報出處頁沒有這句——**單源且無法覆核，整句刪**；改以演奏名單（Bandcamp credits）開頭：「主唱的個人計畫，連薩克斯風都找齊了一支樂隊。」其餘句照研究稿（235 字）。
+  - `Flox|The Words`：「被視為 nu reggae 的代表」→「做的是 nu reggae」（單篇樂評、且評的是後來的《Square》，評價句刪、留樂種）。
+- 媒體名、媒體年終榜、「據說／據傳」全批 0。
