@@ -26,3 +26,16 @@
   - 36《Threewave》：30 軌 104 分鐘，Threewave 系列合編，非單張專輯
   - Era《Era 2》：Era 是 Gregorian 合唱＋搖滾鼓與舞曲拍的史詩 new age 流行，旋律明確（判暖判躁），不合頹靡
   - MIKTEK《Hereafter》：同人超量：Miktek 本線只收《Elsewhere》
+
+## 研究 e 組
+- 24241：Nadia Struiwigh《Lenticular》moodGuess 存疑（高）。RA 樂評：溫暖輕盈、旋律為核心、有鼓的 techno（末曲硬派 techno），方向偏暖偏輕偏躁，不合頹靡，建議汰換。status thin（Bandcamp 頁被擋，曲長未取得）。
+- 24242：State Azure《Stellar Descent》聲音未能實聽；長篇太空氛圍、同作者長篇描述為冷而憂、無鼓；〈Heliopulse〉等曲名與 downtempo 標籤暗示可能有柔和脈動，存疑（中低）。105 分、16 軌與卡單一致。藝人本名單一來源未寫入。status thin。
+- 24243：Strange Attractor《Everything Is Closer》為合輯（兩張 LP《Rorschach》2004＋《Rorschach II》2005 合編，Bandcamp 說明為證），年份 2006 是合編年。moodGuess 存疑（高）：broken beat／New Jazz、有人聲與 Rhodes／單簧管，偏躁偏暖爵士，頹靡把握低。主線請裁定去留。
+
+## 研究 d 組
+- 24231：ASKII《Isverden: Spirits》身分 MB cdd8976f＋Bandcamp 吻合；32:21 的 Full Audio 長曲與分曲重複。聲音無音檔、只憑標籤與簡介，判靜、無鼓；moodGuess 存疑：z 恐不足 −0.3（冷是意象，音色偏電影式溫順）。
+- 24232：Phaeleh《Dark Sky》曲子錄於 2015–2019、2025 才發；Bandcamp 不標廠牌，Undertow 來自維基。聽眾比對 Bukem／Tycho，有節拍與清楚旋律；moodGuess 存疑：z 偏暖、x 可能 >2.7（方向＝恍惚或中間格）。
+- 24233：James Murray《Weeds》無鼓生成式氛圍，Igloo 評論稱帶暖意、happy-sad；Bandcamp 日期 09-11 與 MB 09-27 不同，寫作只寫 2024 年 9 月。moodGuess 存疑：z 偏中性略暖、y 或偏低（方向＝靜但落恍惚／中間）。
+- 24234：Ascendant《Particle Horizon》SYN10，十首 73:40 全在 6–8.6 分；modular／dark ambient 冷色，大致符合 moodGuess；唯一疑慮是 Berlin School 式音序脈動可能推高 x，無音檔未能驗證。
+- 24235：Zane Alexander《Midrealm》證據薄（status thin）；acoustic＋synth＋trip-hop／dreampunk，是否有拍子不明；moodGuess 存疑：x 可能到 2.6–3、z 或不夠冷，建議主線優先考慮汰換。
+- 推翻策展層 0 處。
