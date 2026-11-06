@@ -28,11 +28,14 @@ for (let p = 0; p < pages && cursor; p++) {
   });
   const j = await r.json();
   if (!j.results) { console.error('API 回應異常：', JSON.stringify(j).slice(0, 200)); break; }
-  for (const x of j.results) {
+  // 2026-11-06 起 API 改回駝峰欄位（itemType、trackCount…），兩種寫法都收
+  const camel = k => k.replace(/_([a-z])/g, (_, c) => c.toUpperCase());
+  for (const raw of j.results) {
+    const x = new Proxy(raw, { get: (o, k) => (typeof k === 'string' && o[k] === undefined) ? o[camel(k)] : o[k] });
     if (x.item_type !== 'a') continue;
     const minutes = Math.round((x.duration || 0) / 60);
     if ((x.track_count || 0) < minTracks || minutes < minMin) continue;
-    rows.push({ artist: x.album_artist || x.band_name, album: x.title, url: (x.item_url || '').replace(/\?from=.*$/, ''), released: (x.release_date || '').slice(0, 10), tracks: x.track_count, minutes, location: x.band_location || '', image: x.primary_image?.image_id ? `https://f4.bcbits.com/img/a${x.primary_image.image_id}_9.jpg` : '' });
+    rows.push({ artist: x.album_artist || x.band_name, album: x.title, url: (x.item_url || '').replace(/\?from=.*$/, ''), released: (x.release_date || '').slice(0, 10), tracks: x.track_count, minutes, location: x.band_location || '', image: (x.primary_image?.image_id ?? x.primary_image?.imageId) ? `https://f4.bcbits.com/img/a${x.primary_image.image_id ?? x.primary_image.imageId}_9.jpg` : '' });
   }
   cursor = j.cursor;
   await sleep(1500);
