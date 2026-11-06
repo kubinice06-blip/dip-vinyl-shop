@@ -30,3 +30,30 @@
 - 23829 Burning Pyre《Imago》：moodVerdict borderline（pristine、melodic stabs、skittering percussion 判輕；enveloping subs／dub 支持重）。Bandcamp 與 Rubadub 同稿，單源 thin。
 - 23830 Disparition《Palm in Mirror》：moodVerdict drop（官網直述 storm of driving beats、shimmering textures）。moodGuess 推翻。full（藝人官網為自家稿）。
 - 彙總：drop 4（Bed、Granicha、Lucent、Palm in Mirror）、borderline 5、keep 1（mars kumari）。WebSearch 用 3 次（Disparition 無評、Bed 取得 AllMusic／Uncut 摘要但頁面 403、Burning Pyre／il:lo 無結果）。
+
+## 研究 b 組（23811–23820；2026-11-06）
+- 23811 Blackbird《Lonely Bird》：moodVerdict borderline（僅標籤 future garage／dubstep／trip hop，無聲音文字，x 有 2-step 風險）。單源 thin。原發 2018 自行發行，Doki Doki Beats 為 2026 重發廠牌；Discogs 稱法國製作人，與卡單 country us 矛盾，建議不寫國籍。
+- 23812 Now Always Fades《Coalesce》：moodVerdict drop（廠方文案 bright、uplifting、warm、breakbeat，判暖且有拍）。moodGuess 推翻。單源 thin。
+- 23813 2814《Rain Temple》：moodVerdict keep（drone、遙遠人聲、A.V. Club 比擬 This Mortal Coil／Andy Stott）。full。country 英美，非單純 gb。
+- 23814 All India Radio《The Unified Field》：moodVerdict borderline（殘響 tremolo 吉他、Duster／Lynch 方向對；〈Catch The Breeze〉有人聲、z 風險）。full。數位版自行發行，實體 Spectra SPECTRA019，label 欄主線裁。
+- 23815 Disparition《Transmutations》：moodVerdict borderline（IDM／downtempo 標籤、無聲音文字）。thin。label 欄是自行發行。
+- 23816 Space Afrika《Quiet Storm》：moodVerdict borderline（人聲客串、弦樂、爵士打擊，與前作 industrial-noir 不同）。full（Clash＋Wikipedia 同源）。**label 應更正為 Dais Records（DAIS232）**。
+- 23817 Lauge《Echoes》：moodVerdict borderline（無鼓 drone，但自然題材 ambient 恐判輕、無冷暖依據）。單源 thin。label 欄疑為帳號名拼接，真廠牌疑 Baba Gnohm，待證。
+- 23818 Pye Corner Audio《Lake Deep Memory》：moodVerdict borderline（無鼓、磁帶嘶聲、彈簧殘響，靜重成立；樂評稱平和、旋律導向、有光，z 風險）。full。
+- 23819 conelrad《Sure is the Risk Made》：moodVerdict borderline（僅標籤）。單源 thin；Wikipedia 僅證曲名與史事同名，不可寫成專輯主題。建議主線考慮汰換。
+- 23820 Phelios《Astral Unity》：moodVerdict keep（暗黑 ambient，Discogs 樂評 hypnotic、ritualistic percussion、ominous）。full。Bandcamp 頁為含 5 首 bonus 的 12 首自行重發，原版 CD 7 首。
+- One Arc Degree《The Glow Beneath》（共用 23820 區間尾，另記）：moodVerdict borderline（dub techno 標籤、x 風險）。thin。**country 應為希臘二人組，非 us**（us 是 Synphaera 廠牌所在）。
+- 彙總：keep 2、drop 1、borderline 8。WebSearch 用 3 次（Pye Corner Audio 取得評論、One Arc Degree 與 Disparition 無專輯評）。Wikipedia、Discogs API、Clash、A.V. Club、Complex Distractions 以 curl 直抓。
+
+## 研究 a 組（23801–23810；2026-11-06）
+- 23801 Headache《The Head Hurts…》：moodVerdict borderline（只有標籤與兩句 Bandcamp 文案，鼓拍無來源）。label 推翻：Headache→PLZ Make It Ruins（MB PLZ051）。Headache 為 Vegyn 別名（維基 Vegyn 條）；AI 人聲說單源，寫作層慎用。thin。
+- 23802 moby《Destroyed》：moodVerdict borderline（Moby 自述「凌晨兩點空城」利靜冷；但有旋律人聲曲、Spin 稱中速）。Mute 保留（MB 有登記）。full。
+- 23803 Just Mustard《Heart Under》：moodVerdict borderline（noise rock、工業吉他、無副歌利重冷；有鼓與 scything guitars，x 風險）。full。
+- 23804 Aydio《Nonentity》：moodVerdict drop（Kraak 頁：長笛、小提琴、trippy melodies、laid back；hip-hop／dub／爵士）。label 推翻→Kraak Records（KRK028）。moodGuess 推翻。thin。
+- 23805 Halou《Halou》：moodVerdict borderline（Guthrie 吉他霧利重；歌曲式旋律、人聲，z 未必冷）。label 推翻→Vertebrae Music Productions（MB 數位版＋維基）。full。
+- 23806 MANES《Slow Motion Death Sequence》：moodVerdict borderline（Metal Trenches：暗沉 subdued；廠牌 hook-ridden pop、PopMatters busier）。full。
+- 23807 Between Interval《Autumn Continent》：moodVerdict keep（三篇獨立樂評：冷風 drone、旋律缺席）。label 推翻→Spotted Peccary（SPM-1602）。真名 Jönsson／Strand 兩說並存，寫作層不寫。full。
+- 23808 gridlock《formless》：moodVerdict borderline（磨碾節奏、metalized noise vs. 文案 lush melodies、analog warmth）。full。
+- 23809 Subheim《No Land Called Home》：moodVerdict borderline（深沉黑暗、低音線居中；現場鼓、penetrating rhythms、人聲歌曲）。label 推翻→Ad Noiseam（adn133）。full。
+- 23810 Jogging House《Weight》與 Between Interval《The Edge Of A Fairytale》：Weight borderline（盤帶 lo-fi 利重；「melancholy and hope」；label 推翻→Seil Records；單源 thin）。Edge 為 keep（Lustmord 對照、dark ambient、近乎可怕；label 推翻→Spotted Peccary SPM-1604；full）。
+- 彙總：keep 2（Autumn Continent、Edge）、drop 1（Aydio）、borderline 8。label 推翻 7 張（Headache、Aydio、Halou、兩張 Between Interval、Subheim、Jogging House）。WebSearch 用 3 次（Headache 無結果、Manes、Subheim）；其餘用維基／廠牌頁／Kraak 頁。
