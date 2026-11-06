@@ -90,3 +90,18 @@
 
 ## 主線封面目視後汰換（不佔條號；2026-11-06）
 - 縮圖表（CAA front-250，18 張全 HTTP 200）逐張對盤名：**Cinephile《Ten》封面印「2000-2010 A Ten Year Retrospective」**——是十年回顧精選，MB 雖標 Album 無 secondary，實為合輯，不收（ALBUM_ONBOARDING §1 只收正規專輯）。研究稿 b 組已寫但無文案、單源，汰掉不補位；寫作 out-2、hooks-b、input 的該張一併移除。其餘 17 張封面與盤名相符。定案 **17 張**。
+
+## 寫作層（writer-1、writer-3）（23941–23945）
+- **23941** 交件：`desc-tools/batches/output/add-20261106-md41-out-1.json` 6 張、`-out-3.json` 5 張，key 逐字同序。逐張（Array.from）：Halou 174、Hong Kong Express 237（full）、CASHFORGOLD 175、Sync24 180、Lauge 177、ASKII 168；Glass Infinites 172、Amanita Ocreata 172、Cymatics 170、Pale Light 177、Extradimension 226（full）。thin 168–180、full 226–237。初稿拉丁專名低估：HKE 259、Sync24 212、Lauge 209、Glass 196、Amanita 187 超帶，一律整格捨去（HKE 的「早期做的音樂…那一路」長句與「開場的」、Sync24 的「兩個畫面都來自曲名」、Lauge 第二個海洋曲名、Glass 的「那陣子」與盤名、Amanita 兩處自加的修辭「宇宙初開」「退回鋼琴後面」——後兩者 note 未列，順手刪除）。`qa-batch out`（兩檔 0 標記；out-2 的 Cinephile key 警告屬已汰卡）、`qa-check-research`（兩檔 0）、`fix-spacing`（兩檔待補 0）通過；「據」、平台名、「也就是」grep 0。
+- **23942** 派工衝突一處：鉤子層 23939 配給 Amanita 的第二句句型「作曲與混音都掛…也就是」與 `WRITER-DISPATCH.md`／writer-base「禁『也就是』式注解」相牴。保留「都掛」、改成「他就是蒙特婁的 HEXSYSTEM」，引入法仍是掛名欄，不與 b 組「…是蒙特婁的…」同形。
+- **23943** 第二句句型照 23934／23939 配表：Halou「這對夫妻是」、HKE「是…的別名」、CASHFORGOLD 首發（見 23944）、Sync24「…；他也是…的一半」、Lauge「以…為名」、ASKII「從…起轉做」、Glass「他是…創立」、Amanita「都掛」、Cymatics「背後是」、Pale Light「以…為題」、Extradimension「自…起合作」。hook 不複述：Sync24 不再講「深海／兔子」而是具名兩首曲名收懸念；Pale Light 的問句以「作者說…預期中的聽法」＋多出 30 多分鐘收尾；Glass 不重講感冒，只補右鼻孔與巡演時點；Cymatics 不重講鳳凰。
+- **23944** 日期句偏離鉤子層「日」後一字表（可逆；照表寫的形狀與 11 月既有 out 撞 3 張以上）：Halou「日交」→「日那天，Nettwerk 接手…的發行」；CASHFORGOLD「在年月日首」→「首發要追溯到」；Sync24「日由」→「日入列」；Lauge「日推」→「日亮相的」（「日面」與 out-2 CHANTSSSS 撞）；ASKII「日上」→「日公開」；Cymatics「日編」照表；Pale Light「日先」→「的首發，由 State Azure 自己經手」；Extradimension「日經」→「挑了…讓它上市」；HKE 改「同一年的 7 月 12 日從那裡問世」；Glass「日釋」照表。
+- **23945** 自掃（han() 中文 4-gram，對象：out-1／out-3 互掃＋out-2＋全部 md41 hooks＋`add-202611*` 全部既有 out）：兩檔互撞 0；對 out-2 0；3 張以上只剩樂器名串（鋼琴與合成器、小提琴、鼓與電吉他）與地名「亞利桑那」。途中整詞拆掉：第二張專輯、交給發行、在年月日、年月日推／上／由／經／先／他／出、是年月日、首約分鐘、長約分鐘、共約分鐘、早期作品、共同創辦人、由他一人、寫作與製作、到製作都、個人名義、自行發行、最長一首、一張沒有、做的是電子、開的廠牌、發行了它、電子樂團、這批錄音。
+
+## 主線審稿（23951–23952；2026-11-06）
+- **23951** 逐張審 17 張（out-1／2／3 全文印出，逐句對研究稿 a–c）。改 1 張 2 處（`desc-override.json`；hooks-a 與 input 同步）：
+  - `Halou|Wiser`：hook「把 shoegaze 的霧接上碎拍」→「接上電子與弦樂」、正文「新團的聲音被歸為 trip hop 與 breakbeat」→「常被歸入 trip hop」。依據：研究 a 另一條（Today 訪談）團員說他們不用 breakbeat，維基的 breakbeat 標籤與本人說法衝突，取本人說法。
+  - 照准：Sync24 寫 Daniel Segerstad（Bandcamp credits 直述；藝人介紹因本名三說不寫，兩線各依各自來源）；Lauge《Latitudes》寫 Henrik Laugesen（credits「全部由 Henrik Laugesen 寫作與製作」）；HEXSYSTEM《Amanita Ocreata》寫作層把鉤子層的「也就是」改掉（23942），照准。
+- **23952** `qa-batch out` 17 張全部通過；「據」、媒體名、資料平台名 0。
+- 三軸：`ratings-override.json` 17 張全依 §0.8.1 人工錨點（經典 3／4＝11／6、冷門 2／3／4＝2／2／13、硬蕊 2／3／4＝2／13／2）；藝人最多人聽的代表作給經典 4。頂點 0（無殿堂／遺珠／異端證據）。
+- 試聽：Apple 自動配對 15 ready；CASHFORGOLD、Moth Equals（Cinephile 已汰）us／gb／jp 查無 → unavailable。封面 CAA 17／17。
