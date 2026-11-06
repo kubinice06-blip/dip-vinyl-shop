@@ -61,3 +61,13 @@
 - 24058：聲音證據用 Apple 30 秒試聽粗略頻譜（150Hz 以下占比、4kHz 以上占比、節奏自相關），僅作旁證；速度估計不穩（常有倍頻誤判），不寫進 facts。
 - 24059：Wikipedia 直連被代理擋，人物背景改用 Bandcamp 藝人頁與 MB；未用 WebSearch。
 - 24060：全組年份／廠牌／盤名均與 MB 一致；僅 Argaman country 一處推翻。
+
+## 研究 d 組（24071–24080）
+- 24071：Gabriel Le Mar《Gab's Gift》：moodGuess 存疑（強）——Discogs 附註 BPM 第 2–10 首 120→150，是 trance／dub 舞池推進。建議汰。年份 2000 照 MB。
+- 24072：Tim Love Lee《Confessions Of A Selector》：moodGuess 存疑（強）——Discogs 風格 Breaks／Big Beat／Breakbeat，持續拍子推進。建議汰。
+- 24073：Shwamp《Circus》：moodGuess 存疑——簡介自述 playful、brighter vibes，Discogs 風格 Dub／Glitch，判輕有拍。發行日 Bandcamp／MB 2020-11-06、Discogs 2020-06-11，年份 2020 無差。
+- 24074：another fine day《Salvage》：moodGuess 存疑（輕）——Billboard／Jazz Times 評語「lighter-than-air」，卡林巴與手風琴音色明亮；靜暖成立。label 補 Six Degrees Records。
+- 24075：Dreamstate Logic《Era2》：moodGuess 存疑（冷）——space ambient 宇宙感疏離，同人錨點（Carbon Based Lifeforms）判冷；缺針對本張樂評，thin。年份 2015 照 MB（Bandcamp／Discogs 2020 為自發行版）。
+- 24076：woob《Repurpose》：存疑（弱，可能偏冷）——Em:t 時期抽象 ambient dub，暖度未證實，thin。廠牌 Discogs 為 Bigamoebasounds（非 Em:t）。
+- 24077：Josh Leake《Clara》（§1 人工）：盤名 Clara、日期 2019-03-14 兩邊相符；差異＝Bandcamp 10 首、Apple 9 首，缺第 10 首〈Don't Wake Me Up〉（4:49）。以 Bandcamp 為準。聲音自稱 uplifting ambient，無鼓，成立度最高，但無第三方樂評，thin。
+- 24078：Wikipedia 直連被代理擋，woob 人物背景改用 WebFetch 的 Wikipedia 摘要；WebSearch 用 3 次（Era2、Salvage、woob），僅 woob 有用。
