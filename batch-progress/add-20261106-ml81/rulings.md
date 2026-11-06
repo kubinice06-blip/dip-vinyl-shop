@@ -31,3 +31,10 @@
 - 24963：Klaada 標籤有 breaks／psydub／psytrance 但無速度或舞池字眼，依規則記鼓型未證、不標存疑，notes 提示評分層聽音落格。
 - 24964：Sim Nagai《Up North》判中慢 boom-bap、非舞池，不標鼓存疑；notes 記判輕。ALBA 真人鼓加民族打擊、速度未證，notes 記判輕／偏亮。
 - 24965：WebSearch 3 次（Klaada、Jogging House、Sim Nagai）皆無有用結果，聲音證據以 Bandcamp ld+json 為主；e 組無獨立樂評，多張 status thin。
+
+## 研究 a 組
+- 24921：Romare《Home》標 moodGuess 存疑（舞池推進）：Bandcamp 文案稱先行 12 吋為最直接舞池作品、RA 稱 house，Loud and Quiet 指〈Sunshine〉〈Heaven〉為舞池高點，標籤 House／techno；BPM 未載。交主線決定汰換與否。
+- 24922：Ancient Astronauts、Tor、DEGIHEUGI、RYKARD、Yaima 鼓型未證（皆無 BPM），不標存疑；DEGIHEUGI 在 notes 提示桑巴／Afrobeat 取樣可能偏輕快。soft siren（trip-hop 式慢拍、真鼓）與 Car Culture（downtempo、wall of sound 指疊層）判慢到中慢，仍算靜。
+- 24923：RYKARD 標籤 dark／eerie／moody，notes 記 moodGuess 存疑（判冷）；Bandcamp 無簡介，facts 僅 5 條、status thin，不湊數。Yaima 廠牌未證（Jumpsuit Records 僅標籤）。
+- 24924：Ancient Astronauts 年份 2009、廠牌 ESL Music（Bandcamp 2016 為 Switchstance 重發）；Tor 廠牌 Loci Records、DEGIHEUGI Endless Smile Records、Car Culture NAFF、Romare Ninja Tune、RYKARD Hunya Munya Records；soft siren 無廠牌（Nest Records 僅母帶註記）。未推翻策展層年份與盤名。
+- 24925：WebSearch 用 3 次（Romare、Ancient Astronauts、Tor），Exclaim 全文與 Wikipedia 部分頁讀不到，AA 樂評引用為搜尋摘要層級。
