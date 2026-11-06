@@ -25,3 +25,9 @@
   - Billy Valentine《Billy Valentine & The Universal Truth》：翻唱專輯：全盤翻唱 Gil Scott-Heron、Marvin Gaye、Curtis Mayfield 等人的歌
   - My Neighbour Is《Moon's Reflection On A Quiet Lake》：舞池推進：Cold Busted 文案直述 funky dance floor nuggets、punchy rolling rhythms
   - Banco de Gaia《30 Times Around the Sun》：合輯：三十年回顧選集（MB Album＋Compilation，30 首 211 分）
+
+## 研究 b 組
+- 24611：b 組 7 張鼓型判定——慢拖：The New Law《The Fifty Year Storm》（trip-hop／hip-hop breakbeat、電影感）、Pan Amsterdam《HA Chu》（爵士取樣 hip-hop，中慢速）；不明：Star Parks（樂團鼓＋拍手，偏輕）、Move 78、Long Arm、Random Rab、Dr. Toast（鼓型無這張的來源）。**無任何一張有攻擊性或舞池證據，無建議汰**；Random Rab（標籤 edm／dance）與 Dr. Toast（藝人層 thumping breaks 基底）舞池風險中等，標在 notes。
+- 24612：Dr. Toast 沿用 ml72 研究稿不重查，只補鼓型行；原稿『建議主線汰』改為不達門檻（只有藝人層描述，無這張鼓型證據）。
+- 24613：Pan Amsterdam 廠牌名（Def Pressé）只有 Bandcamp 文案暗示，facts 不寫確切廠牌；Norman Records 評論頁 403，內容引自搜尋摘要，單一來源。
+- 24614：Star Parks、The New Law、Random Rab、Long Arm、Pan Amsterdam 的 label 卡單為空或未驗證，facts 不寫廠牌。

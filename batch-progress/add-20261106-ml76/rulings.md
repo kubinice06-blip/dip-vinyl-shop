@@ -32,3 +32,10 @@
 - 24551：d 組 8 張皆無「攻擊性或舞池」的本張證據，全數不建議汰；鼓型無直接來源者統一標「不明」。AndyFellaz 沿用 ml70 稿，只補鼓型行。
 - 24552：Govinda《Resonance》僅 6 首約 25 分鐘，篇幅近 EP，MB 登記 Album，維持主線裁定。
 - 24553：Saffron Bloom 鼓型判慢拖（low slung stripped back breaks、trip hop），但 z 恐偏冷；Tek 9、Erik Jackson、Tusks 的 y 恐偏輕，GUMI 的 x／z 貼邊，已在各自 notes 標 moodGuess 存疑。
+
+## 研究 a 組
+- 24521：a 組 8 張鼓型：慢拖 4（Long Arm、Wax Tailor、Moonchild、Blockhead）、不明 1（Shpongle，沿用稿只補鼓型行，有真鼓手但無來源說慢拍或舞池，不汰）、舞池 2、攻擊性 1。
+- 24522：建議汰 3：Little Dragon《Machine Dreams》（舞池，信心中：維基稱轉向適合現場的 uptempo 舞曲，無 BPM，主線可覆核）、Abakus《Departure》（舞池：樂評 progressive house／trance／Daft Punk 式，標籤 club／house／techno）、Smidley《Smidley》（攻擊性，信心中：搖滾編制整套鼓，樂評 bombastic／grungy／as heavy as Foxing，樂評句取自搜尋摘要）。
+- 24523：Wax Tailor、Moonchild 鼓型無直接描述，以風格標籤判讀慢拖；Blockhead Bandcamp 文案有 upbeat／chase-scene 段，x 預估上調到 2.9，貼邊風險中，不汰。
+- 24524：Wax Tailor 發行日三說（MB 法國 2012-09-10、Bandcamp 09-14、維基北美 09-18），採 MB。Shpongle 沿用稿去掉原本「偏輕建議汰」，依本輪規則判輕不汰。
+- 24525：WebSearch 用 3 次（Smidley、Long Arm、Blockhead）；Bandcamp 直連被擋，改 WebFetch。
