@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1863 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1868 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -1640,6 +1640,11 @@
 | ar-d-802 | Trans-X | Living on Video | 美國版 1986 年由 ATCO／Mirage 發行 | 維基〈Living on Video〉頁寫該曲 1983 年 5 月 3 日由 Polydor 與 Atco 發單曲，美國 Hot 100 第 61 名是 1985 年重混再發之後；上線簡介寫美國版 1986 年，與單曲年份有出入，建議對專輯版 Discogs 確認再改。 | https://en.wikipedia.org/wiki/Living_on_Video |
 | ar-d-802 | Ugasanie & Xerxes The Dark | Abysmal | 伊朗作曲家 Govahi 以 Xerxes The Dark 為名 | 訪談頁以 Morego Dimmer 稱呼，未見 Govahi 這個名字；本名來源僅 Discogs 簡介，單源，建議確認或保守處理。 | https://thedungeonindeepspace.com/2019/11/02/eyre-transmissions-ii-interview-with-legendary-dark-ambient-artist-xerxes-the-dark/ |
 | ar-d-802 | UnderViewer | Wonders & Monsters | 1980 至 1981 年間的錄音 | 官方簡介稱二人 1978 年起合作，錄音年份各源不一（Spill 提 1978/1979/1981）；簡介的 1980–1981 範圍無出處，建議保守改寫。 | https://www.underviewer.com/bio/ |
+| ar-d-803 | Yair Elazar Glotman | Northern Gulfs | 以本作交出第一張個人專輯；2014 年 4 月發行 | 發行日各源有 2014-03-31（廠牌店）與 04-01（維基／MusicBrainz）之別，『4 月』僅一說成立；另 Glotman 本人稱此作為進入電聲的入口，簡介沒問題，僅提醒日期。 | https://glacialmovements.kudosrecords.co.uk/release/gm021/yair-elazar-glotman-northern-gulfs |
+| ar-d-803 | Philanthrope & Devaloop | Cloudfiles | Devaloop 來自薩爾茨堡 | Discogs 藝人頁寫薩爾茨堡，但 2019 年 Falter 報導把 Devaloop 描述為維也納 Floridsdorf 的二人組成員（與 Tudas），出身地未定，建議改寫為奧地利製作人或標明來源不一致 | https://www.falter.at/zeitung/20190612/frischer-wind-fuer-den-heimischen-hip-hop |
+| ar-d-803 | Pink Siifu & Fly Anakin | FlySiifu's | 製作人逾十位、各做一首 | Powmag 訪談稱約 10 至 13 位製作人參與 22 首曲子，「各做一首」不成立（Madlib 只做一首〈Time Up〉屬實），建議改為「製作人逾十位」 | https://www.powmag.net/p/fly-anakin-pink-siifu-flysiifus-interview |
+| ar-d-803 | Psalm Trees & Moose Dawa | Dreams From the Shore | 一位是英國製作人 | Psalm//Trees 出身地有兩說：Discogs 寫英國南部，Stereofox 寫南非出生、荷蘭定居；建議上線簡介改為不指明國籍或標明來源不一致 | https://stereofox.com/psalm-trees-neighbourhood |
+| ar-d-803 | Wicca Phase Springs Eternal | Suffer On | 這是他第一次以吉他與鍵盤當每首歌的核心來寫 | DIY 訪談只說這是第一張完全自己寫的 Wicca Phase 專輯、以木吉他歌配 808，沒提到鍵盤；『第一次以吉他與鍵盤為核心』查無來源支持，建議改為『第一張完全自己寫、以木吉他為底』，並核對『第二張專輯』一說 | https://diymag.com/interview/wicca-phase-springs-eternal-suffer-on-interview |
 | ar-d-929 | Erik Truffaz | Rollin' | 2000 年簽進這個廠牌 | 上線簡介沿用 Blue Note 官網簡介的 2000 年簽約說；但維基與已上線的《Out of a Dream》《The Dawn》《Bending New Corners》簡介顯示 1997–1999 年已在 Blue Note 發片，瑞士聯邦文化局新聞稿也記《Bending New Corners》為 1999 年 Blue Note 專輯，2000 年簽約的說法與之矛盾，建議改為不寫簽約年。 | https://musikzeitung.ch/en/?p=44583 |
 | ar-d-929 | Erik Truffaz | The Walk of the Giant Turtle | 前一張四重奏盤在法國賣到十萬張的金唱片 | 維基只寫《Bending New Corners》（1999）是法國 Silver Album；本張的前一張是《Mantis》（2001），並非《Bending New Corners》。需核對金唱片的專輯歸屬與認證層級。 | https://en.wikipedia.org/wiki/Erik_Truffaz |
 | ar-d-929 | Stanley Jordan | Magic Touch | 九軌裡有五軌只有一把電吉他 … 六軌只有他的電吉他 | 同一則簡介前後自相矛盾：五軌 vs 六軌；事實庫引 jazzdisco 為六軌純獨奏、其餘三軌各配一組節奏，應統一為六軌。 | https://en.wikipedia.org/wiki/Magic_Touch_(Stanley_Jordan_album) |

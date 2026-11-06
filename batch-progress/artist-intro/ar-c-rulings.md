@@ -2719,3 +2719,9 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 37 位寫：20 full、17 thin；不寫 3 位——The Ars Combinatoria String Quartet（沒有聲音事實，評語是評 Carlson 本人）、Todd Seelye（沒有身世）、Rose Kallal（研究稿只有一條來源，比照前例撤稿）。
 - 題材照寫：Robert Miller 50 歲因癌症過世；Richard Skelton 妻子 Louise 2004 年過世；Robert Görl 孤兒院長大、車禍後轉信佛教；protoU 的 Sasha Cats 在戰爭開始後帶兒子離開烏克蘭；Harold Budd 2020 年過世。
 - 主線審稿 9 處：高橋悠治 的「高橋アキ」改 Aki Takahashi、「水牛楽団」改「水牛樂團」，並壓回 250 字；Sephiroth 刪 2025 年重發的單源評語；Robert Görl、Rational Youth、Plastics 第一句補國籍；Rational Youth 刪約 2 萬張與「最暢銷獨立專輯」（在世者不寫銷量）；Plastics 刪一句壓字數。
+
+## ar-d-802（2026-11-06，electronic：dark ambient、EBM、synth-pop、glitch、techno、日本電子）
+
+- 37 位寫：19 full、18 thin；不寫 3 位——Shulman（沒有聲音事實）、Stuzha、Tdel（研究稿只有一條來源，比照前例撤稿）。
+- 題材照寫：Snowy Red 的 Micky Mike 辭世（只有部落格 RIP，無日期與死因，正文只寫「後來辭世」）；TESTPATTERN 的比留間雅夫 2011 年過世；Tobe Hooper 2017 年過世。
+- 主線審稿 23 處：第一句補國籍或身分——SND「英國」、SOFT BALLET 改寫成「日本電子樂團」開頭、Sweatson Klank「製作人」、Trans-X「加拿大」、UnderViewer「比利時」、The Orb 卡補「英國」與 Pink Floyd；在世者不寫榜單、銷量、獎項——Trans-X 刪五國榜位、Stian Westerhus 刪 Spellemannprisen、Trevor Wishart 刪 Giga-Hertz 大獎（Golden Nica 綁在 CDP 這項核心成就上保留）、TESTPATTERN 刪 2025 年重發售罄與二手價、The Hacker 刪「走紅全球」；單源最高級評語刪除——Taphephobia「最受推崇的北歐 ambient 音樂人」、Treha Sektori「同世代最有才華」、The Weathermen「電子音樂的經典」、The Neon Judgement「幾乎與這個類型同義」、SOFT BALLET 降一句；Troum & Yen Pox 補 Yen Pox「美國」以免誤為不來梅；Lehn & Schmickler、Ugasanie & Xerxes、Hooper & Bell 刪句壓回 250 字內。
