@@ -445,6 +445,8 @@
     if (!e) return null;
     if (Array.isArray(e)) return e;
     if (!e.getBoundingClientRect || !e.isConnected) return null;
+    const cs = getComputedStyle(e);
+    if (cs.display === 'none' || cs.visibility === 'hidden' || +cs.opacity < 0.1) return null;   // 收起來的泡泡不算
     const r = e.getBoundingClientRect();
     return r.width && r.height ? [r.left, r.top, r.right, r.bottom] : null;
   }
@@ -464,7 +466,7 @@
     layer().appendChild(d);
     const dur = opt.ms || 600, rise = opt.rise || 34;
     const vw = window.innerWidth || 390, vh = window.innerHeight || 700;
-    const fw = (d.offsetWidth || 120) * 1.1, fh = (d.offsetHeight || 20) * 1.1;   // 彈出時放大 1.15：多留一點
+    const fw = (d.offsetWidth || 120) * 1.2, fh = (d.offsetHeight || 20) * 1.2;   // 彈出時放大 1.15：多留一點
     const half = Math.ceil(fw / 2) + 4;
     const clampX = x => Math.max(half, Math.min(vw - half, x));
     const clampY = y => Math.max(fh + rise + 2, Math.min(vh - 2, y));
@@ -475,14 +477,17 @@
     liveFloats.forEach(f => { if (f.until > now && f.el.isConnected) others.push(f.box); else liveFloats.delete(f); });
     const avoid = (opt.avoid || []).map(boxOf).filter(Boolean);
     const score = b => others.reduce((t, o) => t + overlap(b, o) * 4, 0) + avoid.reduce((t, o) => t + overlap(b, o), 0);
-    const step = fh + 4, dirs = opt.prefer === 'down' ? [1, -1] : [-1, 1];
-    const cands = [[x0, y0]];
-    for (let k = 1; k <= 4; k++) dirs.forEach(dir => cands.push([x0, clampY(y0 + dir * k * step)]));
-    [-1, 1].forEach(dir => cands.push([clampX(x0 + dir * fw * 0.6), y0]));
+    // 候選位置：上下各 5 格 × 左右 0／半個字寬／一個字寬；離原位越近越先試（opt.prefer 'down' 時往下的先試）
+    const step = fh + 4, down = opt.prefer === 'down' ? 1 : -1, cands = [];
+    for (let k = -5; k <= 5; k++) for (const j of [0, -0.5, 0.5, -1, 1]) {
+      const x = clampX(x0 + j * fw), y = clampY(y0 + k * step);
+      cands.push({ x, y, cost: Math.abs(k) * 2 + Math.abs(j) * 3 + (k && Math.sign(k) !== down ? 1 : 0) });
+    }
+    cands.sort((p, q) => p.cost - q.cost);
     let best = null;
     for (const c of cands) {
-      const sc = score(foot(c[0], c[1]));
-      if (!best || sc < best.sc) best = { x: c[0], y: c[1], sc };
+      const sc = score(foot(c.x, c.y));
+      if (!best || sc < best.sc) best = { x: c.x, y: c.y, sc };
       if (sc === 0) break;
     }
     d.style.left = Math.round(best.x) + 'px'; d.style.top = Math.round(best.y) + 'px';

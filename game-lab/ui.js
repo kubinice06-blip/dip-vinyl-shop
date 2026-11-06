@@ -2068,8 +2068,24 @@
   }
 
   // ======================================================================= boot
+  // 唱盤字（真晃跟報盯？經冷硬）：載 Noto Sans TC 粗體只含這幾個字的子集，取名 DipGlyph，只給唱盤字用（其他字不受影響）。
+  // 手機／電腦的中文字型沒有粗體時是假粗體，12–15px 的「晃」會糊成「旯」。載不到就退回系統字。
+  function loadGlyphFont() {
+    try {
+      if (!W.FontFace || !D.fonts || !W.fetch) return;
+      fetch('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@700&text=' + encodeURIComponent('真晃跟報盯？經冷硬'))
+        .then(function (r) { return r.ok ? r.text() : ''; })
+        .then(function (css) {
+          var m = /src:\s*url\(([^)]+)\)/.exec(css || ''); if (!m) return;
+          var ff = new FontFace('DipGlyph', 'url(' + m[1] + ')', { weight: '700' });
+          return ff.load().then(function (f) { D.fonts.add(f); });
+        })
+        .catch(function () {});
+    } catch (_) {}
+  }
   function boot() {
     if (UI.booted) return; UI.booted = true;
+    loadGlyphFont();
     E = W.DipLabEngine; C = W.DipLabContent;
     if (!E || !C || !app()) { if (app()) app().innerHTML = '<div class="lb-boot">載入失敗，請重新整理。</div>'; return; }
     save = loadSave();

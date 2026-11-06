@@ -600,11 +600,12 @@
       const h = '<div class="dl-hl"></div><div class="dl-inr"></div><div class="dl-hole"></div>';
       // 字與色塊不放在會轉的唱盤裡：轉過的圖層裡的字會被旋轉兩次再取樣，1x 螢幕上「晃」會糊成「旯」。
       // 停著的時候一律是整數 px 的平移、不旋轉不縮放；轉盤的那 0.5 秒才整層跟著轉（spinTo／resetDisc）。
+      // 字在半徑 39、色塊在 22：兩個方塊不重疊（以前 35／22 會讓色塊蓋住「晃」的右下角，看起來像「旯」）。
       let g = '';
       sl.forEach((s, i) => {
         const a = i * 60 + 30;
         const al = s.glyph === 'hidden' ? '？：還沒看過的習慣' : `${GL[s.glyph]}：${glyphWhy(s.glyph, v)}${s.attr ? '（' + ZH[s.attr] + '）' : ''}`;
-        g += `<div class="dl-sl gl${s.glyph === 'hidden' ? ' hid' : ''}" data-i="${i}" data-a="${a}" data-r="35" style="transform:${slXY(a + rot, 35)}" aria-label="${esc(al)}"><div class="in"><span class="g key">${GL[s.glyph] || "？"}</span></div></div>`;
+        g += `<div class="dl-sl gl${s.glyph === 'hidden' ? ' hid' : ''}" data-i="${i}" data-a="${a}" data-r="39" style="transform:${slXY(a + rot, 39)}" aria-label="${esc(al)}"><div class="in"><span class="g key">${GL[s.glyph] || "？"}</span></div></div>`;
         if (showDot && s.attr) g += `<div class="dl-sl d ${s.attr}" data-i="${i}" data-a="${a}" data-r="22" style="transform:${slXY(a + rot, 22)}"><div class="in">${ZH1[s.attr]}</div></div>`;
       });
       els.lbl.innerHTML = h;
@@ -944,13 +945,13 @@
       f.floatText(a, '−' + amount, sub, (target === 'e' ? 'toE' : 'toP') + (amount >= 6 || big ? ' big' : ''), { dy, dx, avoid: [els.bf, els.ename] });
     }
     // 飄字不能壓的標籤（fx.floatText 會挪開；同時飄的字彼此也會錯開）
-    const KEEP_CLEAR = () => [els.ban, els.php, els.ult, els.ehp, els.nm];
+    const KEEP_CLEAR = () => [els.ban, els.php, els.ult, els.ehp, els.nm, els.chain];
     function floatSmall(anchor, text, cls, o) { const f = Fx(); if (f) f.floatText(anchor, text, null, 'small ' + (cls || ''), Object.assign({ ms: 520, rise: 20, avoid: KEEP_CLEAR() }, o || {})); }
     // 「你」這邊的小字（＋聲望、＋氣勢、你氣勢 −1）：壓在你自己的聲望／氣勢列上，不飄到橫幅上
     function floatMine(anchor, text, cls) {
       const f = Fx(); if (!f) return;
       const r = anchor.getBoundingClientRect();
-      f.floatText(anchor, text, null, 'small ' + (cls || ''), { ms: 620, rise: 8, dy: Math.round(r.height - 4), dx: 44, avoid: KEEP_CLEAR() });
+      f.floatText(anchor, text, null, 'small ' + (cls || ''), { ms: 620, rise: 8, dy: Math.round(r.height - 4), dx: 44, avoid: KEEP_CLEAR().concat([els.phpn, els.pqn, els.vu]) });
     }
     // 「他」這邊的小字：放在舞台上他身邊，不蓋住名牌那一列
     function floatHis(text, cls) {
@@ -958,7 +959,7 @@
       const a = actor('f');
       if (a && a.getBoundingClientRect().width) {
         const r = a.getBoundingClientRect(), sr = els.stageWrap.getBoundingClientRect();
-        f.floatText(a, text, null, 'small ' + (cls || ''), { ms: 620, rise: 14, dy: Math.round(Math.min(r.height * 0.7, sr.bottom - r.top - 10)), dx: Math.round(r.width * 0.5 + 40), avoid: [els.bf, els.ename, els.ban] });
+        f.floatText(a, text, null, 'small ' + (cls || ''), { ms: 620, rise: 14, dy: Math.round(Math.min(r.height * 0.7, sr.bottom - r.top - 10)), dx: Math.round(r.width * 0.5 + 40), avoid: [els.bf, els.ehp, els.ehpn, els.nm, els.phase, els.ban] });
       } else floatSmall(els.segs, text, cls);
     }
 
