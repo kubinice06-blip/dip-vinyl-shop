@@ -1,5 +1,14 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-06｜dip-vinyl-shop｜情緒薄格頹靡 Bandcamp downtempo 候選第二輪 md43：11 張上線（落頹靡 10）＋藝人介紹 8 位
+
+- **店主 11-06「繼續」**：第一輪剩下靠近邊界的 612 張先過濾成 232 張、切 ml71–73／md42–43，三個工作階段並行；本工作階段只做 md43（卡單 `pick-md43.json` 38 張，條號 24281）。
+- **md43**（`add-20261106-md43`）：主線初篩汰 19（remix 過半、demo 集、重發加長、未發表曲集、文案直述有拍推進 6、判暖 3、池中同人判輕判暖 3、同人超量 3）→ 研究 2 組汰 8（有拍或嘻哈根 4、判暖判輕 4）→ **上線 11、落頹靡 10（91%）**；出格 Soapkills《Bater》判暖落恍惚。
+- **結論**：近邊界卡單上線率 29%（第一輪 39%）；Ultimae 系 psybient、Loraine James 這類標 downtempo 的盤文案多寫 beats／warm／luminous。整條線兩輪卡單頹靡 218、恍惚 303，第一輪上線 104，第二輪本批 11（其餘見 md42、ml71–73）。
+- **寫入（已即時生效）**：card_catalog 11、KV 11 鍵逐字回讀一致（stamp 20261106md43）、試聽 10 ready／1 unavailable（最紅那首換 9 張）、seed +11；prepare／published gate 皆 0 error；頂點 0；封面 CAA 11／11。三軸依 §0.8.1 人工錨點（經典 3／4＝9／2，逐人查過 Last.fm 專輯排序）。審稿改 3 張（Soapkills 單源「中東最早」、Hungry Lucy 城市三說改寫州、ASURA 的里昂其實是廠牌所在地）。
+- **藝人介紹**：ar-d-531 寫 8／不寫 1（WMD 無國籍來源）；合併 main 後 ASURA 讓給先上線的 ar-d-527，本批實際上線 7 位；審稿改 2 處（Soapkills 單源後輩影響句、Rabit 本人說法改歸因）。
+- **主要檔案**：`batch-progress/add-20261106-md43/`、`onboarding-manifest-add-20261106-md43-20261106.json`、`batch-progress/mood-cells-20261022/{curation-md43,master-md43,cut-artist-intros-md43.mjs,SCENES.md}`、`desc-tools/batches/{cards,research,hooks,input,output}/add-20261106-md43*`、`batch-progress/mood-axes/score-md43/`、`batch-progress/artist-intro/{roster-md43-ar-d-531,ar-d-rulings-md43.md}`、`data/artist-intros/`、`seed_cards.json`、`data/mood/`、`genre-tree.json`、`card-subgenres.json`、`draw-covers/`、試聽地圖。
+- **驗證**：`verify-album-onboarding --published` 0 error；`verify-wave-kv` 11／11；`build-card-moods` 錨點 104/104；`qa-artist out` 只剩不寫的 WMD 缺位。
 ### 2026-11-06｜dip-vinyl-shop｜情緒薄格恍惚 Bandcamp downtempo 候選第二輪 ml71／ml72：25 張上線（落恍惚 18）＋藝人介紹 8 位
 
 - **店主 11-06「繼續」**：第一輪 289 張上線 104 後，剩下靠近邊界的 612 張先濾掉舞池／嘻哈／dub／soul／pop 標籤 → 232 張分五批、三個工作階段並行；本工作階段做 ml71（`pick-ml71.json` 52）與 ml72（`pick-ml72.json` 52），條號 23961／24041。卡單即策展，主線組 curation → master → 卡單，不補人。
