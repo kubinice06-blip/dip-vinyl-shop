@@ -46,3 +46,19 @@
 - 24533：Inspired Flight、Flox 僅有標籤與曲目表，無樂評，status 標 thin；Flox 鼓型以後續樂評對 Flox 風格的描述加標籤判讀。Neutron 9000 與 A Positive Life 鼓型無來源，判不出來留給評分。
 - 24534：年份：A Positive Life MB 1994、Bandcamp 美版 1995、Rush Hour 稱原作 1993；Flox MB 2009、Bandcamp 頁面 2013；Neutron 9000 重發 2021 含兩首後加混音。卡片照卡單（MB）年份。
 - 24535：WebSearch 用 3 次（Flox、Neutron 9000、A Positive Life）；維基 API 被限流，Dan le Sac 條目未取得。
+
+## 研究 c 組
+- 24541：c 組 8 張鼓型：無鼓 1（Eguana）、慢拖 6（Kill Emil、Suduaya、Mo Kolours、Jogging House、Globular、Travelling Day 把握低）、不明偏慢拖 1（Saafi Brothers）。攻擊性 0、舞池 0，**建議汰 0**。全部無前一輪沿用稿，全數新查。
+- 24542：Bandcamp 對 curl 回 Client Challenge，改用 WebFetch 取頁；速度證據兩種：Globular 有 Ektoplazm 逐曲 BPM（58 到 100）；其餘用 iTunes 30 秒預覽自測（librosa，onset 脈衝與低頻自相關，倍速誤判多，只當佐證寫在 notes／sound，不進 facts）。
+- 24543：Suduaya、Saafi Brothers 鼓型把握中低：Discogs 風格含 Progressive Trance、Bandcamp 標 psytrance／psyprogressive，自測落 70 到 103 BPM（非 130 以上舞池速度）故判慢拖／不明偏慢拖；依「判不出來的留」不汰，建議評分層看音訊。Saafi 部分曲目（〈Free Senses〉〈The Witness〉）自測原始值 144 到 161，可能是較快的 trance 拍。
+- 24544：Eguana、Travelling Day 無樂評、僅 Bandcamp／MB／Discogs，status thin。Travelling Day 無任何敘述來源，鼓型以 Discogs Trip Hop 與試聽判讀。
+- 24545：年份與身分：Suduaya 照 MB 2013（Bandcamp 頁面是 2021 再發版，8 首含 3 首混音：Zero Cult、Green Beats、Cabeiri，不推翻）；Saafi MB 2000-06、Bandcamp 2000-05-15。卡單 label 空白者實為：Kill Emil＝beatquick、Suduaya＝Altar Records、Mo Kolours＝One-Handed Music、Travelling Day＝Avocados Records、Jogging House＝Seil Records、Saafi＝Blue Room Released。
+- 24546：moodGuess 存疑（以 y／z 為主）：Kill Emil y 偏貼邊（取樣偏亮，可能判輕）、Mo Kolours y≈0.5（20 首短曲偏輕）、Travelling Day x 2.8 且偏亮、Eguana／Jogging House／Globular z 可能判冷。皆照實寫預估，不汰。WebSearch 用 3 次（Suduaya、Saafi、Globular），僅 Globular 補到 Ektoplazm 線索。
+
+## 主線研究汰換（不佔條號；2026-11-06）
+研究層交件後汰 3 → 剩 35；被汰卡移到 `dropped-cards.json`／`dropped-research.json`。不補位。判輕、判冷、鼓型不明的照本輪原則一律留給評分。
+- Little Dragon《Machine Dreams》：舞池推進：維基寫這張轉向適合現場的 uptempo 舞曲；池中同人兩張評分 x 3.0／3.1（研究 a）
+- Abakus《Departure》：舞池推進：樂評點名 progressive house、trance 與 Daft Punk 式歌曲（研究 a）
+- Dan le Sac《Space Between the Words》：舞池推進：BBC 樂評寫 jump-up 派對電子、old-school house 翻唱、嘉年華式彈跳（研究 b）
+- **Smidley《Smidley》不汰**：研究 a 判「攻擊性」只憑搜尋摘要一句「bombastic、grungy、heavy」，未讀全文；本輪攻擊性要失真牆、嘶吼、音壓貼臉才算，單一摘要不夠，照「判不出來的留」交評分。
+- 留下但貼邊交評分層：Shpongle（真人鼓手、明亮）、Blockhead（chase-scene 段）、Degiheugi《Bagatelle》（約 90 BPM boom-bap、偏亮）、Suduaya／Saafi Brothers（psytrance 標籤，自測 70–103 BPM）、GUMI、Smigonaut（自述 downtempo 起點、非音響系統唱片）。
