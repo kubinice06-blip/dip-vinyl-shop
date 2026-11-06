@@ -30,3 +30,16 @@
 - **23654**：L'Orange《Old Soul》Bandcamp 頁轉址循環讀不到，曲目與 2011 原廠牌缺（keyTracks 空）；Mello Music Group 是後來簽的，勿當原廠牌。
 - **23655**：Banco de Gaia《Apollo》廠牌 Disco Gecko Recordings 依維基（單一來源）；Orb 的 Wikipedia 時長 77:45 與 Bandcamp 加總 77:37 差 8 秒，寫約 77 分鐘。
 - **23656**：卡單 label 欄皆空；Bandcamp 顯示 Bilinda Butchers、Blockhead、City Girl、The Orb（Cooking Vinyl 依維基）為自行發行／標示，HashFinger 為 Headcount Records HC042，Brugger 為 Squama。
+
+## 研究 e 組
+- **23681**：Hello Meteor《Cordial Bizarre》找不到任何樂評，status thin；聲音只有 Bandcamp 標籤與頻譜粗估（低頻厚、高頻少、起伏大），有無鼓與冷暖未能確認，簡介寫冬天意象與卡單暖 z 相反。moodGuess 存疑，需實聽。
+- **23682**：Shinji《In Colour》moodGuess 存疑：取樣鼓 break＋放克貝斯的 beat tape，有拍子推進，x 不宜 ≤2.7；建議主線汰換或備取。
+- **23683**：Bluetech《Spacehop Chronicles 2》大致符合恍惚：慢半拍 downtempo、多首近無鼓、厚合成器低頻、悲傷冥想主題；暖度邊界偏弱。
+- **23684**：Kuba《Relative to the Sun》dub 雷鬼鼓與貝斯在走（非氛圍）、低頻厚殘響多、音色暖；x 在邊界，需實聽確認。MB 10 首，Bandcamp 11 首（多一條專輯預告），廠牌以版權行 Liquid Sound Design 為準。
+- **23685**：四張的節奏／頻譜判斷來自 128kbps 串流的自動量測，非人耳；速度估計有倍半誤差，只寫在 notes，不進 facts。
+
+## 研究 a 組
+- 23641：聲音證據法——Bandcamp 官方說明加 Apple 30 秒試聽片段粗略頻譜（150Hz 以下占比、4kHz 以上占比、響度、動態、自相關估速）寫在各卡 notes，不進 facts（非可引來源）；僅作輔助判斷，非實聽。
+- 23642：moodGuess 強烈存疑建議汰換——crushed《no scope》（breakbeat／drum'n'bass／big beat，壓縮響亮）、Lipphead《In the Nude》（driving electro funk，玩鬧律動）。
+- 23643：存疑但可留——Degiheugi《Bagatelle》（陽光取樣、ragga／饒舌客座，偏亮偏動，建議降級）、Eivør《Enn》（重暖成立、靜偏弱）、Brock Berrigan／Sweeps／Mounika.（boom-bap 有鼓持續推進，暗暖厚符合，靜偏弱）。Desert Dwellers 大致成立。
+- 23644：Brock Berrigan、Sweeps 僅 Bandcamp 單頁，status thin。MB 抓取多次連線被重置，身分以卡單 mbNote 已核對的 rgMbid 為準。
