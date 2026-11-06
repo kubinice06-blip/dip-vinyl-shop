@@ -1,5 +1,13 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-06｜dip-vinyl-shop｜頻率光譜：從專輯卡回星圖不重播，接著播完（v70）
+
+- **店主 11-06**：「從專輯卡退回上一頁時，不要重播音樂，繼續播完。」
+- **原因**：「回去轉頻率」鍵先 `gpStopPreview()` 停掉結果頁的試聽，`DipTune.start()` 再 `armPreview()` 從頭播同一張。
+- **修法**：`dip-tune.js` 記住送去結果頁的那張（`backFrom`）；新增 `keepsPlaying()`／`resumeAfterResult()`：回來的是同一張且播放器還在播它 → 不停、不重播，星圖直接接手（`playing`／`audibleCard`／`watchPlayer`），播完照常交給 RADIO 換下一張；已播完或被停掉 → 保持安靜（RADIO 開著就換下一張）；不同張照舊 `armPreview()`。`index.html` 的 `data-tune-back` 先問 `keepsPlaying()`，是就只清 `gpPreviewStarted`、不停播放器。
+- **驗證**：Playwright（iPhone 13，12 秒假試聽）：本機新版 就這張→結果頁→回去，播放器事件 0 筆（沒停、沒重載）；正式站舊版同流程出現 stopped→loading→playing（重播）。RADIO 開著時回來接著播完，播完 3.5 秒換下一張。無頁面錯誤。
+- **主要檔案**：`dip-tune.js`、`index.html`（v70）。
+
 ### 2026-11-06｜dip-vinyl-shop｜頻率光譜面板第二版上線（PR #413，v69）＋第一版備份
 
 - **店主 11-06**：「上線，原本的要備份好。」

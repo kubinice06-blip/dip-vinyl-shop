@@ -1072,7 +1072,7 @@
 <script src="dip-player.js?v=57"></script>
 <script src="dip-draw-anim.js?v=5"></script>
 <script src="dip-genre-tree.js?v=5"></script>
-<script src="dip-tune.js?v=69"></script>
+<script src="dip-tune.js?v=70"></script>
 <script src="dip-artist-intro.js?v=2"></script>
 <script type="module">
   import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
@@ -5959,7 +5959,7 @@ ${seenList}
   let _tuneSeq = 0, _tuneWarp = null;
   document.getElementById('tuneModal').addEventListener('click', (e) => {
     if (e.target.closest('[data-tune-again]')) { gpStopPreview(); DipTune.pickAgain(); }
-    else if (e.target.closest('[data-tune-back]')) { gpStopPreview(); tuneShowApp(true); DipTune.start(); }
+    else if (e.target.closest('[data-tune-back]')) { if (DipTune.keepsPlaying?.()) gpPreviewStarted = false; else gpStopPreview(); tuneShowApp(true); DipTune.start(); }   // 同一張還在播：交回星圖接著播完，不停不重播（2026-11-06 店主）
     else if (e.target.closest('#tuneContent [data-gp-action="preview"]')) gpPlayPreview();
     else if (e.target.closest('#tuneContent [data-gp-action="share"]')) shareGpResult();
   });

@@ -1372,13 +1372,30 @@ html.tune-inapp-lock body{padding-top:120px}
   function emit(c) {
     if (!c) return;
     if (c.egg) { global.open(c.card.link, '_blank', 'noopener'); return; }   // 彩蛋不進結果頁，就這張直接開政策島（2026-10-28 店主）
-    state.seen.push(c.i); if (state.seen.length > 200) state.seen.shift();
+    state.seen.push(c.i); if (state.seen.length > 200) state.seen.shift(); backFrom = c;
     // 星圖上正在試聽的就是這張：不停，交給結果頁接著播（2026-10-25 店主：按就這張後試聽不要從頭開始）
     const continuing = playing === c;
     if (continuing) { clearTimeout(idleTimer); playing = null; setNowPlaying(false); } else stopPreview();
     sfxStop();
     const t = target();
     cfg.onResult?.({ card: c.card, cell: c.cell, cellName: NAMES[c.cell], coords: { x: c.x, y: c.y, z: c.z }, target: t, targetCell: cellOf(t.x, t.y, t.z), targetCellName: NAMES[cellOf(t.x, t.y, t.z)], continuing });
+  }
+  // 從結果頁回到星圖（2026-11-06 店主：「從專輯卡退回上一頁時不要重播音樂，繼續播完」）：
+  // 回來的是同一張就不重播——結果頁那段試聽還在播就接手播完（播完照常交給 RADIO 換下一張），已經播完或被停掉就保持安靜
+  let backFrom = null;
+  function playerState() { let v = null; try { const off = cfg.player?.onStateChange?.(st => { v = st; }); off?.(); } catch (_) {} return v; }
+  function liveFor(c) { const st = playerState(); return st && c && st.artist === c.card.artist && st.album === c.card.album && (st.status === 'playing' || st.status === 'loading') ? st : null; }
+  // 給站上的「回星圖」鍵問：要不要讓結果頁的試聽繼續（是就別停）
+  function keepsPlaying() { return !!(previewCard && backFrom === previewCard && !previewCard.egg && liveFor(previewCard)); }
+  function resumeAfterResult() {
+    const c = previewCard, back = backFrom; backFrom = null;
+    if (!c) return;
+    if (back !== c || c.egg) { armPreview(); return; }
+    clearTimeout(idleTimer);
+    idleTimer = setTimeout(() => { if (previewCard === c) { settleCover(c); showHolo(c); } }, 700);
+    const st = liveFor(c);
+    if (st) { playing = c; watchPlayer(); if (st.status === 'playing') { audibleCard = c; setNowPlaying(true); } else setNowPlaying(false, '找試聽中'); }
+    else if (state.radio) radioNext(RADIO_GAP_MS);
   }
   function pickAgain() { const c = weightedPick(); if (c) { previewCard = c; light(c); emit(c); } }
 
@@ -1589,9 +1606,9 @@ html.tune-inapp-lock body{padding-top:120px}
     // 建不起來時把原因寫在畫面上（2026-10-24 店主：加到主畫面的 App 點進來一片空白，現場看不到錯誤）
     if (!state.built) { try { await build(); } catch (e) { console.error('[tune]', e); const host = cfg.host?.(), msg = host?.querySelector('#tuneMsg'), text = '頻率光譜載入失敗：' + (e?.message || e);
       if (msg) { msg.hidden = false; msg.textContent = text; } else if (host) host.innerHTML = `<p style="margin:0;padding:24px;min-height:50vh;background:#0b0c10;color:#e9e2c8">${esc(text)}</p>`; } }
-    else { setAudioUI(); el.draw.disabled = false; hideHolo(); if (previewCard) armPreview(); }   // 從結果頁回來：全像板重新開機（放大時藏起來了）
+    else { setAudioUI(); el.draw.disabled = !previewCard; hideHolo(); resumeAfterResult(); }   // 從結果頁回來：全像板重新開機（放大時藏起來了）；同一張不重播
   }
-  function stop() { clearTimeout(radioT); state.visible = false; cancelTravel(); stopPreview(); sfxStop(); releaseSfx(); hideHolo(); inappLock(false); }
+  function stop() { clearTimeout(radioT); backFrom = null; state.visible = false; cancelTravel(); stopPreview(); sfxStop(); releaseSfx(); hideHolo(); inappLock(false); }
 
-  global.DipTune = { configure, start, stop, pickAgain, setAudio, litScreenPos, boatScreenPos, warpStart, CELL_COLOR, setFilter, randomPick, FILTER_OPTS, get filter() { return { ...FILT, matched: passN }; }, get state() { return state; } };
+  global.DipTune = { configure, start, stop, pickAgain, keepsPlaying, setAudio, litScreenPos, boatScreenPos, warpStart, CELL_COLOR, setFilter, randomPick, FILTER_OPTS, get filter() { return { ...FILT, matched: passN }; }, get state() { return state; } };
 })(window);
