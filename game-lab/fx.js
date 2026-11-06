@@ -475,7 +475,7 @@
     const now = performance.now();
     const others = [];
     liveFloats.forEach(f => { if (f.until > now && f.el.isConnected) others.push(f.box); else liveFloats.delete(f); });
-    const avoid = (opt.avoid || []).map(boxOf).filter(Boolean);
+    const avoid = (opt.avoid || []).map(boxOf).filter(Boolean).map(b => [b[0] - 4, b[1] - 4, b[2] + 4, b[3] + 4]);   // 留 4px：畫面震的時候也不擦到
     const score = b => others.reduce((t, o) => t + overlap(b, o) * 4, 0) + avoid.reduce((t, o) => t + overlap(b, o), 0);
     // 候選位置：上下各 5 格 × 左右 0／半個字寬／一個字寬；離原位越近越先試（opt.prefer 'down' 時往下的先試）
     const step = fh + 4, down = opt.prefer === 'down' ? 1 : -1, cands = [];

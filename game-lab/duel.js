@@ -945,7 +945,7 @@
       f.floatText(a, '−' + amount, sub, (target === 'e' ? 'toE' : 'toP') + (amount >= 6 || big ? ' big' : ''), { dy, dx, avoid: [els.bf, els.ename] });
     }
     // 飄字不能壓的標籤（fx.floatText 會挪開；同時飄的字彼此也會錯開）
-    const KEEP_CLEAR = () => [els.ban, els.php, els.ult, els.ehp, els.nm, els.chain];
+    const KEEP_CLEAR = () => [els.ban, els.hist, els.php, els.ult, els.ehp, els.nm, els.chain];
     function floatSmall(anchor, text, cls, o) { const f = Fx(); if (f) f.floatText(anchor, text, null, 'small ' + (cls || ''), Object.assign({ ms: 520, rise: 20, avoid: KEEP_CLEAR() }, o || {})); }
     // 「你」這邊的小字（＋聲望、＋氣勢、你氣勢 −1）：壓在你自己的聲望／氣勢列上，不飄到橫幅上
     function floatMine(anchor, text, cls) {
@@ -1264,7 +1264,7 @@
           case 'attrFx': {
             const isP = ev.who === 'p';
             // 小字晚 250 ms、壓在各自的列上，不跟傷害數字同時擠在一起；聲望已滿就不飄「＋聲望」
-            const mine = (txt, cls) => () => floatMine(cls === 'qi' ? els.pqn : els.phpn, txt, cls);
+            const mine = (txt, cls) => () => floatMine(cls === 'qi' || /氣勢/.test(txt) ? els.pqn : els.phpn, txt, cls);   // 氣勢的增減貼在氣勢列
             const his = (txt, cls) => () => floatHis(txt, cls);
             if (ev.hp) {
               const cap = isP ? before.p.maxHp : before.e.maxHp, from = hp[ev.who], gain = Math.max(0, Math.min(cap, from + ev.hp) - from);
