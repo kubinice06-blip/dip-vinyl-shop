@@ -3878,4 +3878,6 @@ window.DipPreviewStatus = Object.freeze({
   "lord of the isles|subtle thoughts": "unavailable",
   "fieh|in the sun in the rain": "unavailable",
   "dj phixion|intermetropolitan": "unavailable",
+  "brael & tokyo bloodworm|living language": "unavailable",
+  "pontiac streator|triz": "unavailable",
 });
