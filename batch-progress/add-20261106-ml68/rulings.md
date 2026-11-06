@@ -52,3 +52,13 @@
 - **23515** 第二句句型配表（13 種互異）：的是（Saxophones）／自稱做的是（Sweeps）／叫（Forhill）／本名（Juj）／一手（City Girl）／來自（Department）／由…一人寫奏（Kalpataru）／系列之一（End）／由…組成（Lovespirals）／是（telepath）／在…做（Lindsheaven）／標在（OSCOB）／自稱…男孩（slowerpace）。「他」只用於 Saxophones、Forhill、Juj、telepath、slowerpace（研究稿皆以他指稱）；City Girl、Hello Meteor 不用代名詞。
 - **23516** hook 四型：懸疑（Sweeps、City Girl、Lindsheaven——問句在 note 收成「曲名與聽眾描述」作答）／斷言（Department、Kalpataru、Lovespirals、slowerpace）／場景（Saxophones、End、OSCOB）／人物定調（Forhill、Juj、telepath）。日期「日」後一字：由、透、經、以、在、放、推、先、發、上、自（11 張各一）；Sweeps、Lovespirals 只到年。分數 0、榜位 0。City Girl 原 hook 引詩句含「你」被 chk 判禁語，改為不引原句。
 - **23517** 自查：hook 開頭前四字 13 張互異，對全 hooks 目錄亦互異（原稿「15 首曲」「一位聽眾」「cred」「說明欄只」撞他批，已改）。本批 hook 之間中文 4-gram 0；hook 對他張 note 0；hook 對自己 note 0（Lovespirals「回到電子」已改）；對他批 hook 殘片已改（「他的音樂」×3、「爵士標準」×2、「一句這是」×2、「的名字就」×5、「者的名字」×6），剩「木吉他寫」「日本流行」「這麼一個」各 ×1。腳本：`node qa-batch.mjs hooks add-20261106-ml68` 全部通過 ✓；`node chk-hook-crossgroup.mjs add-20261106-ml68` 全部通過 ✓（2 組 13 張，hook 加權 18–24.5，note 142–226）。輔助腳本：scratchpad `ml68h/ml68h-draft.mjs`、`ml68h-scan.mjs`。
+
+## 寫作層（writer-1）（23521–23530）
+- **23521** 交件：`desc-tools/batches/output/add-20261106-ml68-out-1.json` 13 張（全批只此一檔）。full 2：Saxophones 234、Lovespirals 236；thin 11：147–179（Sweeps 178、Forhill 162、Juj 158、City Girl 158、Department 160、Kalpataru 178、End 154、telepath 147、Lindsheaven 159、OSCOB 158、slowerpace 179）。`qa-batch out` 全部通過 ✓、`qa-check-research` 標記 0、`fix-spacing` 待補 0；「據／也就是／這張專輯」grep 0。初稿 Kalpataru 189 超 thin 上限，整格捨去「交給客座：一首…一首…」改併句；Forhill 刪去與「慣用」重複的「這是他一貫的手法」；slowerpace 180 貼邊略縮。
+- **23522** telepath：note 指定「樂評人 Caceres 形容」，writer-base「樂評人姓名不進正文」優先，正文寫「樂評形容這張是面目全非的流行抒情歌改造」，不具名。可逆。
+- **23523** 第二句全照鉤子層 23515 配表領句；日期「日」後一字全照 23516（由、透、經、以、在、放、推、先、發、上、自）。slowerpace 由「自行發行」改「自己發行」、Lovespirals 由「自行發行」改「自主發行」，拆掉與 ml67《All My People》合計 3 張的「自行發行」。Lindsheaven 聽眾句改「有聽眾形容那像」，避開與 OSCOB hook「有聽眾說，它像」撞的「聽眾說它像」。
+- **23524** 自掃 han() 4-gram：本檔內跨張 0；對 `add-20261105-ml6[67]-out-*.json` 合掃，3 張以上 0；剩 2 張殘片（「年月日透」「年月日經」「年月日以」「年月日推」「年月日上」「年月日自」等日期樣板各 ×2、「首張專輯年」「輕輕點綴」「在洛杉磯」「多首曲子」「的音樂人」「洛杉磯的」「作品年月」）皆跨批 ×2，未達門檻，保留。輔助腳本：scratchpad `ml68w/ml68w1-draft.py`、`ml68w1-scan.py`。
+
+## 主線審稿（2026-11-06，cloud-main）
+- 逐張審 13 張，抽核回研究稿：The Saxophones 廠牌 Full Time Hobby（MB 兩版本皆是）、Juj 本名 Julian Burg 與「第三張正式發行」（Bandcamp 簡介）、telepath 俄亥俄州阿克倫（維基）、Forhill Reverb Machine 撰文與 Stratford Ct.、Sweeps Hue.Hue、Lovespirals 11 首正式曲目與 Chillcuts Studio。
+- **逐張審過，未改字。**
