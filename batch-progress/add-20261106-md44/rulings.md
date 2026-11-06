@@ -42,3 +42,23 @@
 - 25018 Gi Gi《Lamella Pressed》：慢中速 dub／UK stepping＋LA beat，〈Palm Slick〉breaksy；非舞池；不建議汰。與池中 Gigi 為不同人，維持分開。
 - 25019 Ugress、Odd Nosdam：Ugress trip-hop 下行拍、self-released；Odd Nosdam sampler 嘻哈鼓＋氛圍（Anticon 共同創辦人）、self-released；皆不建議汰，無推翻。
 - 25020 本支 WebSearch 用 3 次（Imler 評論、I Awake、Urbs），其餘靠 Bandcamp ld+json、MB、Discogs API、WebFetch；多張只有廠牌／Bandcamp 文案，status 多為 thin（Brael、Urbs 為 ok）。
+
+## 研究 a 組
+- 25001 Halou《Sans Soucie》：建議汰：資格。維基稱「非專輯曲目合輯」，Bandcamp 含 Original Demo、Edit、同曲多版；MB 標 Album 無次要類型，兩邊矛盾，主線再裁。另推翻 rulings 初篩「1999 首張」：首張是 1998《We Only Love You》（Bedazzled）。
+- 25002 Martina Topley-Bird《Some Place Simple》：15 首中 11 首為前作重錄、4 首新曲（維基）；MB Album、Honest Jon's 正式發行，判可留，不建議汰。聲音實為烏克麗麗＋人聲＋輕打擊，非 trip-hop 電子拍，moodGuess「冷 trip-hop」存疑。label 更正 Honest Jon's。
+- 25003 No-Man《Flowermouth》：原盤 1994 One Little Indian（label 更正）；2024 為黑膠重發。確定有鼓者僅第 1、9 曲（Chris Maitland），其餘鼓型不明，不建議汰。
+- 25004 Arms and Sleepers《Swim Team》：moodGuess 存疑——廠牌文案直述 upbeat rhythms、focus on beats，x 2.5 可能偏高；器樂嘻哈節拍非四拍，不建議汰。label Fake Chapter。
+- 25005 Khotin《New Tab》：作者自標 some beats later on、emotional ambient；house／techno 標籤無四拍證據，不建議汰。label 自行發行（MB 無廠牌；2018 加拿大版 Pacific Rhythm）。
+- 25006 AgonyOST《The Final Nail in the Coffin》：標籤 UKG、warehouse rave、lofi house，但無 BPM／四拍來源，曲名自嘲 No Rave；證據不足不建議汰，鼓型不明。self-released。
+- 25007 Wax Tailor《The Shadow of Their Suns》：取樣式 hip hop／trip hop 鼓（boom bap 傾向），速度無來源；不建議汰；饒舌曲可能拉高 x。label Lab'Oratoire。
+- 25008 Puma Blue《Holy Waters》（Blue Flowers Music）、Ochre《Beyond the Outer Loop》（Aura Materia；IDM／techno 標籤無四拍證據，鼓型不明）、Zenzile《Totem》（Small Axe 2002；dub 反拍樂隊）、So Below《Afterthought》（self-released）：皆不建議汰。
+- 25009 鼓型來源薄：Ochre、Khotin、AgonyOST、So Below、Halou 的 BPM 與四拍與否皆無一手來源，status 標 thin，交評分時以 Bandcamp 標籤與文案為準。
+- 25010 本支 WebSearch 3 次（AgonyOST、Khotin、Ochre）皆無有用評論；其餘靠 Bandcamp ld+json、MB API、維基（en／fr）與 WebFetch。Discogs、Pitchfork 不可達。
+
+## 主線研究後汰換（不佔條號；2026-11-06）
+- 判準照檔頭：只汰攻擊性鼓、舞池推進、資格；判暖判輕不汰。
+- **汰 1 張**（存 `dropped-cards.json`／`dropped-research.json`）：Halou《Sans Soucie》（研究 a：維基稱是非專輯曲目集，Bandcamp 版含 Original Demo 與 Edit；首張其實是 1998《We Only Love You》，主線初篩寫「1999 首張」有誤，更正）。MB 標 Album 與維基矛盾，以內容（demo／edit／非專輯曲）為準，照合輯先例汰。
+- **留下的邊界卡**（交評分）：Chris Imler（研究 b 建議汰，證據只有 Libération「dance dans les pieds」與 NTS 把他與 Kraftwerk／DAF／NEU! 並列，皆文案轉述、無 BPM——判不出來的留）、AgonyOST（UKG／warehouse rave 標籤，無四拍來源）、Symbolico、Dillard、I Awake、Ness（鼓型不明）、Earthen Sea（約 120 BPM dub techno 大鼓，照「慢 dub techno 仍算靜」）、Arms and Sleepers（廠牌文案 upbeat rhythms）、Wax Tailor（客座饒舌）。
+- Martina Topley-Bird《Some Place Simple》：15 首中 11 首是前作重錄、4 首新曲，烏克麗麗＋人聲＋輕打擊；MB 標 Album、Honest Jon's 正式發行，留。
+- **label 更正已改進卡單**：Puma Blue → Blue Flowers Music、No-Man → One Little Indian、Martina Topley-Bird → Honest Jon's、Ochre → Aura Materia、Arms and Sleepers → Fake Chapter、Zenzile → Small Axe、Wax Tailor → Lab'Oratoire、Urbs → Compost Records、Transparent Man → S!X Music；Khotin、AgonyOST、So Below、Symbolico、Ugress、Dillard、Odd Nosdam 為自行發行。
+- 不補位。定案 **29 張**（a 10、b 10、c 9）。
