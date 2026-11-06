@@ -15,6 +15,38 @@
 - **驗證**：Playwright（iPhone 13）拖曳／點擊／滾輪／隨機／全部／0 張狀態皆正確（全部 21,982 → 爵士 5,699 → 爵士＋殿堂 60 → ＋總分 12+ 1）；RADIO 自動換台照常；橫放版面正常；無頁面錯誤。
 - **主要檔案**：`dip-tune.js`、`index.html`（v67）、`tune/panel-all.png`、`tune/wheel-spans.json`、`tune/{key-*,led-*,drum-shade-*}.png`、`scripts/tune-panel-v2/`。分支 `claude/tune-panel-v2`。
 
+### 2026-11-06｜dip-vinyl-shop｜情緒薄格 Bandcamp「有鼓」名單 ml74／ml75：60 張上線（落恍惚 47）＋藝人介紹 15 位
+
+- **店主 11-06**：「有些要死不活的音樂也會有鼓推進」「全都上架吧」→ 有鼓名單 473 張切十批、五個工作階段並行；本工作階段做 ml74（`pick-ml74.json` 48，條號 24361）與 ml75（`pick-ml75.json` 48，條號 24441）。卡單即策展，只汰身分問題、同人超量與「舞池推進／鼓＋攻擊性」，判輕判冷不汰。前兩輪研究過的 17 張沿用原批研究稿（e 組只補不足）。
+- **ml74**：主線汰 17（同人超量 7、合輯／EP／remix 6、舞池或中快速推進 4）→ 研究汰 1（Sumiruna 約 140 BPM）→ 寫作後汰 1（Entheogenic 六首他人混音）→ **上線 29、落恍惚 26（90%）**；出格 Emancipator、Revolution Void 判輕，MantisMash 落沸騰。
+- **ml75**：主線汰 13（同人超量 6、合輯／EP 5、舞池推進 2）→ 研究汰 4（Delerium、edapollo、Catching Flies、Sephira 舞池／四拍）→ **上線 31、落恍惚 21（68%）**；出格頹靡 5、放鬆 3、暴躁 1、沸騰 1，主因判冷判輕而非鼓。
+- **寫入（已即時生效）**：card_catalog 60、KV 60 鍵逐字回讀一致（stamp 20261106ml74／ml75）、試聽 50 ready／10 unavailable（Badlands 只有混音版不拿來充當）、seed +60；prepare／published gate 皆 0 error；頂點 0。封面 CAA 54＋Bandcamp 6。三軸覆寫 2（Lucky Daye 經典 3、Eivind Aarset 經典 4）。審稿改 6 張（Eat Static「最後一張」錯誤說法、Computerjockeys 起步年兩說、parkbreezy 所在地單源等）。
+- **藝人介紹**：ar-d-807／808 寫 12／14，審稿改 16 處（「據說」轉述、單源評語、紐約時報單報讚語）、不寫 Liléa Narrative 等單源者；合併 main 後讓給並行批已上線的 11 位 → 實際上線 15 位。
+- **主要檔案**：`batch-progress/add-20261106-{ml74,ml75}/`、`onboarding-manifest-add-20261106-ml7[45]-20261106.json`、`batch-progress/mood-cells-20261022/{curation-ml74,curation-ml75,master-ml74,master-ml75,cut-artist-intros-ml74.mjs,SCENES.md}`、`desc-tools/batches/{cards,research,hooks,input,output}/add-20261106-ml7[45]*`、`batch-progress/mood-axes/score-{ml74,ml75}/`、`batch-progress/artist-intro/{roster-ml74-ar-d-807,roster-ml75-ar-d-808,ar-d-rulings-ml74.md}`、`data/artist-intros/`、`seed_cards.json`、`data/mood/`、`genre-tree.json`、`card-subgenres.json`、`draw-covers/`、試聽地圖。
+- **驗證**：`verify-album-onboarding --published` 兩批 0 error；`verify-wave-kv` 29／29、31／31；`build-card-moods` 錨點 104/104。
+
+### 2026-11-06｜dip-vinyl-shop｜情緒薄格恍惚 Bandcamp「有鼓」名單第三輪 ml78／ml79：65 張上線（落恍惚 46）＋藝人介紹 26 位
+
+- **店主 11-06「有些要死不活的音樂也會有鼓推進」「全都上架吧」**：前兩輪因有拍推進被汰或被標籤篩掉的 473 張切十批、五個工作階段並行；本工作階段做 ml78（`pick-ml78.json` 47）與 ml79（`pick-ml79.json` 47），條號 24681／24761。卡單即策展（`curation-from-pick-ml78.mjs` → master → 卡單），**不因有鼓汰**，只汰身分、去重、同人超量，以及研究稿寫明的舞池推進或攻擊型；判輕判冷不汰。前次研究稿 8 張沿用（研究層只補鼓的種類）。
+- **ml78**（`add-20261106-ml78`）：主線汰 9（廠牌合輯／卡帶合集／精選、補遺集、同人超量 4、Parra for Cuva 舞池）→ 研究汰 2（crushed 出道 EP、AES DANA 自稱 progressive trance）→ **上線 36、落恍惚 26（72%）**；出格頹靡 5、放鬆 4、雀躍 1。
+- **ml79**（`add-20261106-ml79`）：主線汰 16（Chillhop 廠牌合輯 4、精選、EP 2、Remix、自我同名、同人超量 3、前次研究稿舞池／中快速 4）→ 研究汰 2（OSS industrial techno、Tusks 音壓貼臉）→ **上線 29、落恍惚 20（69%）**；出格放鬆 4、頹靡 3、暴躁 2。
+- **結論**：「有鼓」名單上線率 69%（94 → 65），遠高於前兩輪的 18–39%；boom bap／半速嘻哈拍、中速 dub、psybient 長曲多數仍評為靜，落恍惚約七成。出格主因是判輕（乾淨鋼琴、indie）與判冷，不是鼓。
+- **寫入（已即時生效）**：card_catalog 65、KV 65 鍵逐字回讀一致（stamp 20261106ml78／ml79）、試聽 58 ready（50 張換成最紅那首）／7 unavailable（Apple 查無）、seed +65；prepare／published gate 皆 0 error；頂點 0。封面 CAA 54＋Bandcamp 10＋Apple 1。§1 人工身分 6（各附 Bandcamp＋Apple collectionId）。審稿改 8 張（Entheogenic 德國榜首只有維基單源整段拿掉、Zero Cult 海法改以色列、刪「樂評說／留言稱」轉述與地方週報年度榜）。
+- **藝人介紹**：ar-d-811 寫 18／不寫 8、ar-d-812 寫 15／不寫 8（單源、身分核不到、無聲音事實）；審稿改 8 處（「據／據說」轉述 5、Robot Koch 補第一句身分、fat jon 單源評價與《混沌武士》原聲張數）。合併 main 後 7 位與並行批 ar-d-809／810／813／814／815 重複（Ochre、Entheogenic、Project Lazarus、Saafi Brothers、Robot Koch、Błoto、Evil Needle），讓給已上線版本 → 實上線 26 位（ar-d-811 16、ar-d-812 10），介紹 10,839 → 10,865。
+- **八格**（合併 md44／45、ml76／77、ml80／81 後重建）：恍惚 1,914、頹靡 1,870；錨點 104/104。類型樹、抽卡封面、card-moods 重建。
+- **主要檔案**：`batch-progress/add-20261106-{ml78,ml79}/`、`onboarding-manifest-add-20261106-ml7[89]-20261106.json`、`batch-progress/mood-cells-20261022/{curation-ml78,curation-ml79,master-ml78,master-ml79,master-override-ml7[89],curation-from-pick-ml78.mjs,drop-research-ml78.mjs,cut-artist-intros-ml78.mjs,RES-NOTE-drums.md,SCENES.md}`、`desc-tools/batches/{cards,research,hooks,input,output}/add-20261106-ml7[89]*`、`batch-progress/mood-axes/score-{ml78,ml79}/`、`batch-progress/artist-intro/{roster-ml78-ar-d-811,roster-ml79-ar-d-812,ar-d-rulings-ml78.md}`、`data/artist-intros/`、`seed_cards.json`、`data/mood/`、`genre-tree.json`、`card-subgenres.json`、`draw-covers/`、試聽地圖。
+- **驗證**：`verify-album-onboarding --published` 兩批 0 error；`verify-wave-kv` 36／36、29／29；`build-card-moods` 錨點 104/104；`qa-artist out` 兩批只剩刻意不寫的缺位。
+### 2026-11-06｜dip-vinyl-shop｜情緒薄格 Bandcamp「有鼓」名單 ml76／ml77：66 張上線（落恍惚 47）＋藝人介紹 44 位
+
+- **店主 11-06**：「有些要死不活的音樂也會有鼓推進」「全都上架吧」→ 前兩輪因有拍推進被汰／被舞池標籤先篩掉的 473 張切十批、五個工作階段並行；本工作階段做 ml76（`pick-ml76.json` 47，條號 24521）、ml77（`pick-ml77.json` 47，條號 24601）。只汰「鼓＋攻擊性」與「舞池推進」，**判輕判冷不汰**（落其他格照實計）；前輪研究稿 11 張直接沿用、只補鼓型。
+- **ml76**：主線汰 9（合輯、EP、同人超量、house／dnb 與舞曲自述）→ 研究汰 3（Little Dragon、Abakus、Dan le Sac 舞池）→ **上線 35、落恍惚 27（77%）**；其他格沸騰 2、頹靡 3、放鬆 3。
+- **ml77**：主線汰 13（Chillhop 季度合輯、重混輯、翻唱輯、Kompakt 四拍、同人超量）→ 研究汰 3（GILA 攻擊性、Banco de Gaia 舞池、Invisible Allies remix 過半）→ **上線 31、落恍惚 20（65%）**；其他格沸騰 4（皆 x 3.0 貼線）、頹靡 5、雀躍 1、平靜 1。
+- **結論**：有鼓名單 66 張只有 6 張判躁，慢拖鼓照「有鼓不等於躁」確實多留在靜；出格主因是判冷（頹靡 8）與判輕（放鬆／雀躍 4），不是鼓。
+- **寫入（已即時生效）**：card_catalog 66、KV 66 鍵逐字回讀一致（stamp 20261106ml76／ml77）、試聽 65 ready／1 unavailable（Govinda，Apple 查無；最紅那首換 56 張）、seed +66；prepare／published gate 皆 0 error；頂點 0。封面 CAA 59、Bandcamp 5、Apple 官方 2（CAA 404）。§1 人工身分 2（Smigonaut、LAL）。審稿改 3 張（Smidley 單源命名軼事出處頁查無、Flox 單源評價、Blackfish 時序倒置）。
+- **藝人介紹**：ar-d-809 寫 28（不寫 Travelling Day、Erik Jackson）、ar-d-810 寫 21（不寫 Dr. Toast）；審稿改 8 處（刪單源評價／獎項、截止日後未核實的 Foxing 休團、Govinda「EP」誤稱）。合併 main 後 Degiheugi、Potatohead People、Zero Cult、Ochre、Era 讓給並行批已上線版本 → 最終 ar-d-809 27、ar-d-810 17 位；介紹總數 10,839。八格（合併 main 後重建）恍惚 1,868、頹靡 1,862，錨點 104/104。
+- **主要檔案**：`batch-progress/add-20261106-{ml76,ml77}/`、`onboarding-manifest-add-20261106-ml7[67]-20261106.json`、`batch-progress/mood-cells-20261022/{curation-ml76,curation-ml77,master-ml76,master-ml77,cut-artist-intros-ml76.mjs,SCENES.md}`、`desc-tools/batches/{cards,research,hooks,input,output}/add-20261106-ml7[67]*`、`batch-progress/mood-axes/score-{ml76,ml77}/`、`batch-progress/artist-intro/{roster-ml76-ar-d-809,roster-ml77-ar-d-810,ar-d-rulings-ml76.md}`、`data/artist-intros/`、`seed_cards.json`、`data/mood/`、`genre-tree.json`、`card-subgenres.json`、`draw-covers/`、試聽地圖。
+- **驗證**：`verify-album-onboarding --published` 兩批 0 error；`verify-wave-kv` 35／35、31／31；`build-card-moods` 錨點 104/104；`qa-artist out` 兩批只剩刻意不寫的缺位。
+
 ### 2026-11-06｜dip-vinyl-shop｜情緒薄格恍惚 Bandcamp 第三輪「有鼓」名單 ml80／ml81：74 張上線（落恍惚 57）＋藝人介紹 33 位
 
 - **店主 11-06「有些要死不活的音樂也會有鼓推進」「全都上架吧」**：前兩輪因有拍推進汰掉／標籤先篩掉的 473 張切十批、五個工作階段並行；本工作階段做 ml80（`pick-ml80.json` 47）與 ml81（`pick-ml81.json` 47），條號 24841／24921。卡單即策展，只汰鼓＋攻擊性與舞池推進（四拍、house／techno／breakbeat、明顯中快速），判輕判冷不汰、交評分落格。研究判有鼓的 9 張沿用前輪研究稿只補鼓型。
@@ -127,7 +159,7 @@
 - **主要檔案**：`batch-progress/add-20261105-{ml66,ml67}/`、`batch-progress/mood-cells-20261022/{CUR-DISPATCH-bandcamp.md,dupchk.mjs,curation-ml66a,ml66b,ml67a,ml67b,master-*,cut-artist-intros-ml66.mjs}`、`SCENES.md`、`desc-tools/batches/{cards,research,hooks,input,output}/add-20261105-ml6[67]*`、`batch-progress/mood-axes/score-{ml66,ml67}/`、`batch-progress/artist-intro/{roster-ml66-ar-d-285,roster-ml67-ar-d-286,ar-d-rulings-ml66.md}`、`data/artist-intros/`、`seed_cards.json`、`data/mood/`、`genre-tree.json`、`card-subgenres.json`、`draw-covers/`。
 - **驗證**：`verify-album-onboarding --published` 兩批 0 error；`verify-wave-kv` 24／24 一致；`build-card-moods` 錨點 104/104；`qa-artist out` 兩批 0 處。
 
-### 2026-11-05｜dip-vinyl-shop｜情緒薄格頹靡 Bandcamp 線 md37／md38：19 張上線（落頹靡 18）＋藝人介紹 17 位
+### 2026-11-05｜dip-vinyl-shop｜情緒薄格頹靡 Bandcamp 線 md37／md38：19 張上線（落頹靡 18）＋藝人介紹 15 位
 
 - **店主 11-05**：「恍惚跟頹靡可以去 Bandcamp 爬梳」。來源只用 Bandcamp Daily（daily.bandcamp.com 可 curl；discover 頁前端渲染抓不到），每張至少一篇 Daily 專文／榜單／廠牌專訪，「要有故事才收」。條號 md37 23161–23240、md38 23241–23320（避開並行 ml66／ml67）。
 - **md37**（`add-20261105-md37`；Best Ambient／Best Experimental 冷暗重那半）：策展 47 → 主線汰 24（自我同名 2、貼邊 12、x 風險 4、資格或身分 3、單源 3）→ 研究汰 9（歌曲／人聲／節奏、明亮平靜、近乎寂靜、單源）→ **上線 14、落頹靡 13（93%）**；出格 Susan Geaney《Tape Melt》判輕。
