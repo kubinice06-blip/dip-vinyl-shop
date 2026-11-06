@@ -51,3 +51,13 @@
 - 25098：El Jazzy Chavo《Aspects of Dystopia》boom bap 取樣鼓，文案「hard knocking drums」為嘻哈慣用語，非攻擊性鼓牆；label Funkypseli Cave 確認；不汰。
 - 25099：Tripswitch《Memento Mori》label 查無第三方，寫 self-released；文案主軸 downtempo jazzbeat／電影感，moodGuess「deep house 四拍」存疑，不汰。
 - 25100：9 張身分皆與 Bandcamp ld+json、MB 一致，年份無推翻；WebSearch 用 3 次（Guentner、Plant43、lb honne 各 1；Filmmaker 另用 1 次，共 4，超 1 次，下次需補扣）。
+
+## 主線研究後汰換（不佔條號；2026-11-06）
+- 判準照檔頭：只汰攻擊性鼓、舞池推進、資格；判暖判輕不汰。
+- **汰 2 張**（存 `dropped-cards.json`／`dropped-research.json`）：
+  - 資格：Andy Leech《The Path So Far》（研究 a：Bandcamp 聽眾稱 best-of／collection、涵蓋 2016 年起作品，曲目含 Single Mix 與 Bonus Track、部分曲目另有單曲發行；盤名本身就是回顧。證據非作者自述，但三項同向，照合輯先例汰）。
+  - 舞池推進：lb honne《present future / here there》（研究 b：廠方資料整張 112–131 BPM、deep house 傾向，屬 house 中快速四拍）。
+- **留下的邊界卡**（交評分）：Bergsonist（〈La Rave〉、uptempo 標籤，無 BPM 證據）、H.U.V.A. Network（樂迷稱 psytrance vibe，無四拍證據）、Tara Lily（只〈Double Time〉一首 drum and bass）、Filmmaker、DIM（鼓型不明）、Plant43（文案 post-club 極簡切分打擊）、worriedaboutsatan（V-drum，比前作少拍）、Scandinavian Star（部分曲目四拍、文案稱低語）。
+- **label 更正已改進卡單**：Sneaker Pimps → UNFALL、Cemento Atlantico → Bronson Recordings、Jogging House → Seil Records、Markus Guentner → A Strangely Isolated Place（單源，寫作層不寫廠牌名）。年份：Scann-Tec 2010、All India Radio 2009 維持。
+- 研究 b 組 WebSearch 用 4 次（超出單支上限 1 次），計入工作階段額度。
+- 不補位。定案 **26 張**（a 9、b 8、c 9）。
