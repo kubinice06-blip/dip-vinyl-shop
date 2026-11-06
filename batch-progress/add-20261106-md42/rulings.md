@@ -54,3 +54,9 @@
 - 24224：Locust《Spectral+》2026-09-11、TODO Records；curatorRisk 的「舊作《Spectral》擴充」查無，+ 是正式盤名。moodGuess 存疑（強）：歌曲取向、客座人聲、backbeat 與心跳脈動、shoegaze 流行（方向：偏躁、偏暖），建議汰換。
 - 24225：Cell《Onwards System》Ultimae inre107，身分 OK；克制慢拍＋深沉底鼓＋冷色墊層，大致符合 moodGuess；y 存疑：樂評強調「酥脆、清晰」質地而非霧與低頻淹沒（方向：偏輕、可能 y<0.8）。
 - 推翻策展層 0 處（Locust 的「舊作擴充」疑點查無，為澄清非推翻）；卡單 label 空的 Locust 可補 TODO Records。
+
+## 研究 a 組（5 張：Funki Porcini《Fast Asleep》、Melanie De Biasio《Lilies》、Christ.《Blue Shift Emissions》、AES Dana《Perimeters》、Hysterical Love Project《Lashes》）
+- **24201**：全 5 張 MB 釘住，身分、年份、廠牌皆未推翻。Funki Porcini 年份兩源皆 2002（MB 7/29、Bandcamp 10/07），寫年不寫日。
+- **24202**：AES Dana《Perimeters》curatorRisk 的 153 分鐘已查明＝11 首單曲約 79 分＋一條 74 分 08 秒〈Perimeters (Full Mix)〉；寫作層寫「11 首約 79 分（另附連續混音）」，不寫全長 153 分。
+- **24203**：moodGuess 存疑五張都記在 notes：AES Dana x 偏低（trance／prog-psy 脈動，偏躁）；Christ. x 偏低且 z 可能偏暖（破碎節拍、BoC 系旋律）；Hysterical Love Project z 偏暖（dream pop 殘響，易落恍惚）；Funki Porcini y／z 在邊界（B3 放克小品偏輕偏暖）；Melanie De Biasio y 靠邊（偏輕）。
+- **24204**：Christ.《Blue Shift Emissions》與 Hysterical Love Project《Lashes》標 thin（缺專業樂評，聲音描述來自廠牌與買家留言，facts 已標「非專業樂評」）；寫作層勿猜團員背景。

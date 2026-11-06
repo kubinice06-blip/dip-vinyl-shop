@@ -50,3 +50,13 @@
 - 24135 Hinkstep《A Generation Lost in Space》：無聲音描述，太空音景＋朗讀詩，z 可能偏冷，moodGuess 存疑（偏冷）；年份 2016 照 MB，2023 為 Nebulosa 實體版。
 - 24136 Koan《When the Silence Is…》：MB／Bandcamp 的 2013 版是 18 首含大量混音、157 分鐘的擴充版，原專輯疑為 2009 年《When the Silence Is Speaking》（PsyNews、Sputnik 標 2009，Apple 標 2010），原始首發年未證實；MB 另掛 progressive trance，x 可能偏躁。建議主線考慮汰換。
 - 24137 Evil Needle《Cirrostratus》：15 首平均 2.5 分鐘的 beat tape，曲名暗示鼓點與律動；Cold Busted 網址互相轉址、WebFetch 讀不到；判較像放鬆或雀躍邊緣，建議汰換。
+
+## 研究 c 組
+- 24141 Lab's Cloud《Connecting on a Deeper Level》：Bandcamp 文案直述標題曲 driving mid-tempo beat、Mental Vortex 偏舞池、Natural Potential 有 Shpongle 式律動，出身 psytrance；moodGuess 存疑（x 偏躁，約 3.0，出恍惚邊距）。status full（10 條）。
+- 24142 Photon《Image of Imagination》：無樂評、只有標籤（chillsynth／dreamwave／downtempo）與一句文案，聲音靠推論（靜、暖可能，重不明）；策展層的「Ultimae 系」Bandcamp 頁無此事，不寫。身分 §1 走 photon2 子網域，發行者 Photon。thin（8 條）。
+- 24143 AK《Branches》：自訂網域與 bandcamp.com 互轉址，頁面讀不到（曲目、廠牌皆缺）；唯一聲音來源是單曲樂評「spacious and aerial、Boards of Canada」，moodGuess 存疑（y 偏輕）。Lana Del Rey 事件單一來源不寫。thin（6 條）。
+- 24144 MindSpring Memories《The Binary Ocean》：136 分是 Bandcamp 九首正規總和（兩首各約 50 分），非加碟；slushwave 糊濾波屬標籤推論，無樂評；與 moodGuess 相符，不推翻。thin（8 條）。
+- 24145 Dreamstate Logic《Era3.I》：七首各約 9.5 分、標 space ambient／psybient；無樂評；moodGuess 存疑（z 偏冷，太空意象；若有穩定拍子 x 也可能偏高）。MB 2020-01-07、Bandcamp 01-11 差四天，寫 2020 年 1 月。thin（8 條）。
+- 24146 PALLADIAN《Indaco》：標籤 melancholic／hypnotic，曲短（3–5 分）有兩位客座，傾向歌式 downtempo；moodGuess 存疑（z 偏冷、x 可能 2.3–2.8）。thin（9 條）。
+- 24147 Dr. Toast《The Wave Function》：自訂網域轉址迴圈讀不到；聲音資訊完全未取得，卡單 label「False Profit Records」查無佐證不寫；moodGuess 存疑（無從判），建議汰換。thin（4 條）。
+- 24148 本組 WebSearch 用 3 次（AK、Dr. Toast、Dreamstate Logic），皆無整張專輯樂評；Photon、PALLADIAN、MindSpring 未搜。
