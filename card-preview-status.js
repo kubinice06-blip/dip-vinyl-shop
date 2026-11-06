@@ -3873,4 +3873,9 @@ window.DipPreviewStatus = Object.freeze({
   "ambientium|fractal philosophy": "unavailable",
   "neat beats|cosmic surgery": "unavailable",
   "lindsheaven virtual plaza|ntsc memories": "unavailable",
+  "robert glasper|black radio iii": "unavailable",
+  "arms and sleepers|life is everywhere": "unavailable",
+  "lord of the isles|subtle thoughts": "unavailable",
+  "fieh|in the sun in the rain": "unavailable",
+  "dj phixion|intermetropolitan": "unavailable",
 });
