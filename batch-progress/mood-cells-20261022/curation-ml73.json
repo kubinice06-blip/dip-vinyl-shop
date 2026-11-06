@@ -1,0 +1,1402 @@
+{
+ "group": "ml73",
+ "source": "batch-progress/bandcamp-dt-20261105/pick-ml73.json",
+ "factions": [
+  {
+   "id": "psy",
+   "zh": "psybient／psydub 暖墊",
+   "count": 7,
+   "why": ""
+  },
+  {
+   "id": "ambient",
+   "zh": "Ultimae 系電影感 ambient／太空 ambient",
+   "count": 9,
+   "why": ""
+  },
+  {
+   "id": "beats",
+   "zh": "lo-fi／nu-jazz beat tape",
+   "count": 4,
+   "why": ""
+  },
+  {
+   "id": "vapor",
+   "zh": "vaporwave／slushwave 糊濾波",
+   "count": 3,
+   "why": ""
+  },
+  {
+   "id": "chill",
+   "zh": "downtempo／trip-hop 慢拍",
+   "count": 10,
+   "why": ""
+  },
+  {
+   "id": "drone",
+   "zh": "暖 drone／氛圍 tape",
+   "count": 2,
+   "why": ""
+  }
+ ],
+ "albums": [
+  {
+   "artist": "Carbon Based Lifeforms",
+   "album": "Hydroponic Garden",
+   "year": 2003,
+   "label": "Ultimae Records",
+   "country": "se",
+   "faction": "ambient",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp downtempo 第二輪卡單：Last.fm 收聽 198609 人；標籤 downtempo、chillout、ambient",
+   "moodGuess": {
+    "x": 1.4,
+    "y": 0.6,
+    "z": 0,
+    "why": "環境氛圍合成墊、幾乎無鼓"
+   },
+   "evidence": [
+    "https://carbonbasedlifeforms.bandcamp.com/album/hydroponic-garden",
+    "https://musicbrainz.org/release-group/aa5fdacc-8746-3133-9649-122e87d9ded4"
+   ],
+   "mbRgMbid": "aa5fdacc-8746-3133-9649-122e87d9ded4",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（只看 Bandcamp 標籤，把握 mid），研究層須再判聲音",
+   "bandcamp": {
+    "url": "https://carbonbasedlifeforms.bandcamp.com/album/hydroponic-garden",
+    "img": "https://f4.bcbits.com/img/a0675913677_5.jpg",
+    "date": "25 Jun 2003 00:00:00 GMT",
+    "tracks": 11,
+    "minutes": 82,
+    "listeners": 198609,
+    "location": "Sweden",
+    "publisher": "Carbon Based Lifeforms"
+   }
+  },
+  {
+   "artist": "Delerium",
+   "album": "Karma",
+   "year": 1997,
+   "label": "Nettwerk",
+   "country": "ca",
+   "faction": "chill",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp downtempo 第二輪卡單：Last.fm 收聽 139124 人；標籤 downtempo、chillout、electronica",
+   "moodGuess": {
+    "x": 2,
+    "y": 0.8,
+    "z": 0,
+    "why": "人聲合成墊、殘響大、慢拍"
+   },
+   "evidence": [
+    "https://delerium-official.bandcamp.com/album/karma",
+    "https://musicbrainz.org/release-group/8dec8546-f723-3dd2-a63c-7ec9f539d236"
+   ],
+   "mbRgMbid": "8dec8546-f723-3dd2-a63c-7ec9f539d236",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（只看 Bandcamp 標籤，把握 high），研究層須再判聲音",
+   "bandcamp": {
+    "url": "https://delerium-official.bandcamp.com/album/karma",
+    "img": "https://f4.bcbits.com/img/a1147283768_5.jpg",
+    "date": "22 Apr 1997 00:00:00 GMT",
+    "tracks": 11,
+    "minutes": 74,
+    "listeners": 139124,
+    "location": "Vancouver, British Columbia",
+    "publisher": "Delerium"
+   }
+  },
+  {
+   "artist": "Emancipator",
+   "album": "Baralku",
+   "year": 2017,
+   "label": "Loci Records",
+   "country": "us",
+   "faction": "chill",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp downtempo 第二輪卡單：Last.fm 收聽 92930 人；標籤 downtempo、trip-hop",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 0.5,
+    "z": 0.5,
+    "why": "trip-hop鼓、暖合成與吉他"
+   },
+   "evidence": [
+    "https://emancipator.bandcamp.com/album/baralku",
+    "https://musicbrainz.org/release-group/60967cb8-5572-42f7-b09b-fb838bc1f272"
+   ],
+   "mbRgMbid": "60967cb8-5572-42f7-b09b-fb838bc1f272",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "emancipator",
+   "uncertain": "moodGuess 為卡單粗估（只看 Bandcamp 標籤，把握 high），研究層須再判聲音",
+   "bandcamp": {
+    "url": "https://emancipator.bandcamp.com/album/baralku",
+    "img": "https://f4.bcbits.com/img/a1058682039_5.jpg",
+    "date": "17 Nov 2017 00:00:00 GMT",
+    "tracks": 14,
+    "minutes": 61,
+    "listeners": 92930,
+    "location": "Portland",
+    "publisher": "emancipator"
+   }
+  },
+  {
+   "artist": "AES Dana",
+   "album": "Leylines",
+   "year": 2009,
+   "label": "Ultimae Records",
+   "country": "fr",
+   "faction": "ambient",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp downtempo 第二輪卡單：Last.fm 收聽 45213 人；標籤 downtempo",
+   "moodGuess": {
+    "x": 1.8,
+    "y": 0.6,
+    "z": 0,
+    "why": "電影感環境、細緻墊"
+   },
+   "evidence": [
+    "https://ultimae.bandcamp.com/album/leylines",
+    "https://musicbrainz.org/release-group/8bd2f92b-d131-3129-8635-067b93eab1e6"
+   ],
+   "mbRgMbid": "8bd2f92b-d131-3129-8635-067b93eab1e6",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "AES DANA",
+   "uncertain": "moodGuess 為卡單粗估（只看 Bandcamp 標籤，把握 mid），研究層須再判聲音；年份照 MB 首發 2009（Bandcamp 2015 為再發／上架日）",
+   "bandcamp": {
+    "url": "https://ultimae.bandcamp.com/album/leylines",
+    "img": "https://f4.bcbits.com/img/a0153265268_5.jpg",
+    "date": "03 Jun 2015 00:00:00 GMT",
+    "tracks": 10,
+    "minutes": 80,
+    "listeners": 45213,
+    "location": "Lyon, France",
+    "publisher": "Ultimae"
+   }
+  },
+  {
+   "artist": "Edamame",
+   "album": "Bask",
+   "year": 2017,
+   "label": "Gravitas Recordings",
+   "country": "us",
+   "faction": "beats",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp downtempo 第二輪卡單：Last.fm 收聽 31231 人；標籤 downtempo",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 0.8,
+    "z": 0.2,
+    "why": "lo-fi bass、自然採樣"
+   },
+   "evidence": [
+    "https://music.gravitasrecordings.com/album/bask",
+    "https://musicbrainz.org/release-group/d659d8ee-96e5-4a26-8108-9d045ef4fde0"
+   ],
+   "mbRgMbid": "d659d8ee-96e5-4a26-8108-9d045ef4fde0",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（只看 Bandcamp 標籤，把握 low），研究層須再判聲音",
+   "bandcamp": {
+    "url": "https://music.gravitasrecordings.com/album/bask",
+    "img": "",
+    "date": "",
+    "tracks": 14,
+    "minutes": 48,
+    "listeners": 31231,
+    "location": "Austin, Texas",
+    "publisher": ""
+   }
+  },
+  {
+   "artist": "Alpha",
+   "album": "The Sky Is Mine",
+   "year": 2007,
+   "label": "Don't Touch Recordings",
+   "country": "gb",
+   "faction": "ambient",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp downtempo 第二輪卡單：Last.fm 收聽 30343 人；標籤 downtempo、ambient",
+   "moodGuess": {
+    "x": 1.6,
+    "y": 0.7,
+    "z": 0.1,
+    "why": "環境音景、暖合成墊"
+   },
+   "evidence": [
+    "https://alphaheaven.bandcamp.com/album/the-sky-is-mine",
+    "https://musicbrainz.org/release-group/1d9c3a38-7e6f-35df-bf91-a5856b2dca80"
+   ],
+   "mbRgMbid": "1d9c3a38-7e6f-35df-bf91-a5856b2dca80",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "The Sky is Mine",
+   "uncertain": "moodGuess 為卡單粗估（只看 Bandcamp 標籤，把握 mid），研究層須再判聲音",
+   "bandcamp": {
+    "url": "https://alphaheaven.bandcamp.com/album/the-sky-is-mine",
+    "img": "https://f4.bcbits.com/img/a1898450109_5.jpg",
+    "date": "01 Jan 2007 00:00:00 GMT",
+    "tracks": 12,
+    "minutes": 63,
+    "listeners": 30343,
+    "location": "Bristol, UK",
+    "publisher": "Alpha"
+   }
+  },
+  {
+   "artist": "Nym",
+   "album": "Lilac Chaser",
+   "year": 2017,
+   "label": "",
+   "country": "us",
+   "faction": "chill",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp downtempo 第二輪卡單：Last.fm 收聽 23278 人；標籤 downtempo、trip-hop",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 0.5,
+    "z": 0.2,
+    "why": "抽象電子、柔拍"
+   },
+   "evidence": [
+    "https://music.ratsofnym.com/album/lilac-chaser",
+    "https://musicbrainz.org/release-group/fa022575-ad54-43b4-96c3-a0945c49e597"
+   ],
+   "mbRgMbid": "fa022575-ad54-43b4-96c3-a0945c49e597",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（只看 Bandcamp 標籤，把握 low），研究層須再判聲音",
+   "bandcamp": {
+    "url": "https://music.ratsofnym.com/album/lilac-chaser",
+    "img": "",
+    "date": "",
+    "tracks": 11,
+    "minutes": 43,
+    "listeners": 23278,
+    "location": "Durham, North Carolina",
+    "publisher": ""
+   }
+  },
+  {
+   "artist": "Swim Surreal",
+   "album": "In the Half Light",
+   "year": 2024,
+   "label": "Make Records",
+   "country": "gb",
+   "faction": "chill",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp downtempo 第二輪卡單：Last.fm 收聽 22148 人；標籤 downtempo",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 0.8,
+    "z": 0,
+    "why": "indietronica trip-hop、霧"
+   },
+   "evidence": [
+    "https://zero7.bandcamp.com/album/in-the-half-light",
+    "https://musicbrainz.org/release-group/38c5bbaa-a4c3-461b-9155-a4f8e49ab5b0"
+   ],
+   "mbRgMbid": "38c5bbaa-a4c3-461b-9155-a4f8e49ab5b0",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "In The Half Light",
+   "uncertain": "moodGuess 為卡單粗估（只看 Bandcamp 標籤，把握 low），研究層須再判聲音",
+   "bandcamp": {
+    "url": "https://zero7.bandcamp.com/album/in-the-half-light",
+    "img": "https://f4.bcbits.com/img/a2469556052_5.jpg",
+    "date": "21 Jun 2024 00:00:00 GMT",
+    "tracks": 9,
+    "minutes": 40,
+    "listeners": 22148,
+    "location": "London, UK",
+    "publisher": "Zero 7"
+   }
+  },
+  {
+   "artist": "Helios",
+   "album": "Domicile",
+   "year": 2020,
+   "label": "Ghostly International",
+   "country": "",
+   "faction": "chill",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp downtempo 第二輪卡單：Last.fm 收聽 20053 人；標籤 downtempo",
+   "moodGuess": {
+    "x": 1.9,
+    "y": 0.8,
+    "z": 0.2,
+    "why": "柔和氛圍電子，磁帶糊感，鬆拍"
+   },
+   "evidence": [
+    "https://heliosmusic.bandcamp.com/album/domicile",
+    "https://musicbrainz.org/release-group/dcded70b-8c77-4bc5-8d0e-3440b70a64cf"
+   ],
+   "mbRgMbid": "dcded70b-8c77-4bc5-8d0e-3440b70a64cf",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（只看 Bandcamp 標籤，把握 mid），研究層須再判聲音",
+   "bandcamp": {
+    "url": "https://heliosmusic.bandcamp.com/album/domicile",
+    "img": "https://f4.bcbits.com/img/a2401233163_5.jpg",
+    "date": "11 Dec 2020 00:00:00 GMT",
+    "tracks": 9,
+    "minutes": 50,
+    "listeners": 20053,
+    "location": "",
+    "publisher": "Keith Kenniff + Hollie Kenniff"
+   }
+  },
+  {
+   "artist": "Saafi Brothers",
+   "album": "Mystic Cigarettes",
+   "year": 1997,
+   "label": "Blue Room Released",
+   "country": "de",
+   "faction": "psy",
+   "genres": [
+    "electronic",
+    "world"
+   ],
+   "why": "Bandcamp downtempo 第二輪卡單：Last.fm 收聽 17932 人；標籤 chillout、psybient",
+   "moodGuess": {
+    "x": 1.8,
+    "y": 0.6,
+    "z": 0.5,
+    "why": "psydub慢拍，迷幻殘響，溫"
+   },
+   "evidence": [
+    "https://saafibrothers.bandcamp.com/album/mystic-cigarettes",
+    "https://musicbrainz.org/release-group/3ea6d1f5-9591-3d06-ae1a-62fecd50ee6a"
+   ],
+   "mbRgMbid": "3ea6d1f5-9591-3d06-ae1a-62fecd50ee6a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（只看 Bandcamp 標籤，把握 mid），研究層須再判聲音",
+   "bandcamp": {
+    "url": "https://saafibrothers.bandcamp.com/album/mystic-cigarettes",
+    "img": "https://f4.bcbits.com/img/a2061936901_5.jpg",
+    "date": "11 Jan 1997 00:00:00 GMT",
+    "tracks": 7,
+    "minutes": 73,
+    "listeners": 17932,
+    "location": "Frankfurt, Germany",
+    "publisher": "Saafi Brothers"
+   }
+  },
+  {
+   "artist": "Circular",
+   "album": "Substans",
+   "year": 2009,
+   "label": "Ultimae Records",
+   "country": "fr",
+   "faction": "psy",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp downtempo 第二輪卡單：Last.fm 收聽 16191 人；標籤 psybient",
+   "moodGuess": {
+    "x": 1.8,
+    "y": 0.6,
+    "z": 0,
+    "why": "電影氛圍電子，細膩層次"
+   },
+   "evidence": [
+    "https://ultimae.bandcamp.com/album/substans",
+    "https://musicbrainz.org/release-group/4d5b9450-3426-35bb-8449-619379e78309"
+   ],
+   "mbRgMbid": "4d5b9450-3426-35bb-8449-619379e78309",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "CIRCULAR",
+   "uncertain": "moodGuess 為卡單粗估（只看 Bandcamp 標籤，把握 low），研究層須再判聲音",
+   "bandcamp": {
+    "url": "https://ultimae.bandcamp.com/album/substans",
+    "img": "https://f4.bcbits.com/img/a2215879421_5.jpg",
+    "date": "29 Apr 2009 00:00:00 GMT",
+    "tracks": 13,
+    "minutes": 59,
+    "listeners": 16191,
+    "location": "Lyon, France",
+    "publisher": "Ultimae"
+   }
+  },
+  {
+   "artist": "Hinkstep",
+   "album": "A Generation Lost in Space",
+   "year": 2016,
+   "label": "Nebulosa Records",
+   "country": "se",
+   "faction": "psy",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp downtempo 第二輪卡單：Last.fm 收聽 14136 人；標籤 psybient",
+   "moodGuess": {
+    "x": 2,
+    "y": 0.9,
+    "z": 0.1,
+    "why": "psydub氛圍，殘響厚，慢"
+   },
+   "evidence": [
+    "https://nebulosarecords.bandcamp.com/album/a-generation-lost-in-space",
+    "https://musicbrainz.org/release-group/eba97d10-8112-464a-b1b4-01937885e1c3"
+   ],
+   "mbRgMbid": "eba97d10-8112-464a-b1b4-01937885e1c3",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "A Generation Lost In Space",
+   "uncertain": "moodGuess 為卡單粗估（只看 Bandcamp 標籤，把握 low），研究層須再判聲音；年份照 MB 首發 2016（Bandcamp 2023 為再發／上架日）",
+   "bandcamp": {
+    "url": "https://nebulosarecords.bandcamp.com/album/a-generation-lost-in-space",
+    "img": "https://f4.bcbits.com/img/a4208065803_5.jpg",
+    "date": "03 Feb 2023 00:00:00 GMT",
+    "tracks": 8,
+    "minutes": 68,
+    "listeners": 14136,
+    "location": "Sweden",
+    "publisher": "Nebulosa Records"
+   }
+  },
+  {
+   "artist": "Koan",
+   "album": "When the Silence Is…",
+   "year": 2013,
+   "label": "Blue Tunes Records",
+   "country": "de",
+   "faction": "psy",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp downtempo 第二輪卡單：Last.fm 收聽 12285 人；標籤 chillout、psybient",
+   "moodGuess": {
+    "x": 1.9,
+    "y": 0.7,
+    "z": 0.3,
+    "why": "psybient慢拍，迷幻層厚"
+   },
+   "evidence": [
+    "https://bluetunesrecords.bandcamp.com/album/when-the-silence-is",
+    "https://musicbrainz.org/release-group/bc677c1e-7bfa-41f1-8053-4d838f895e92"
+   ],
+   "mbRgMbid": "bc677c1e-7bfa-41f1-8053-4d838f895e92",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "When The Silence Is...",
+   "uncertain": "moodGuess 為卡單粗估（只看 Bandcamp 標籤，把握 mid），研究層須再判聲音；長度 158 分（Bandcamp 版可能含加碟或連續混音），以 MB 正規版為準",
+   "bandcamp": {
+    "url": "https://bluetunesrecords.bandcamp.com/album/when-the-silence-is",
+    "img": "https://f4.bcbits.com/img/a0581742767_5.jpg",
+    "date": "10 May 2013 00:00:00 GMT",
+    "tracks": 18,
+    "minutes": 158,
+    "listeners": 12285,
+    "location": "Germany",
+    "publisher": "Blue Tunes Records"
+   }
+  },
+  {
+   "artist": "Evil Needle",
+   "album": "Cirrostratus",
+   "year": 2012,
+   "label": "Cold Busted",
+   "country": "us",
+   "faction": "beats",
+   "genres": [
+    "hiphop",
+    "electronic"
+   ],
+   "why": "Bandcamp downtempo 第二輪卡單：Last.fm 收聽 9932 人；標籤 lounge、nu-jazz",
+   "moodGuess": {
+    "x": 1.7,
+    "y": 0.6,
+    "z": 0,
+    "why": "輕氛圍電子"
+   },
+   "evidence": [
+    "https://shop.coldbusted.org/album/cirrostratus",
+    "https://musicbrainz.org/release-group/15a88e55-4a58-4418-8ab7-7c9ec7f15739"
+   ],
+   "mbRgMbid": "15a88e55-4a58-4418-8ab7-7c9ec7f15739",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（只看 Bandcamp 標籤，把握 low），研究層須再判聲音",
+   "bandcamp": {
+    "url": "https://shop.coldbusted.org/album/cirrostratus",
+    "img": "",
+    "date": "",
+    "tracks": 15,
+    "minutes": 38,
+    "listeners": 9932,
+    "location": "Portland, Oregon",
+    "publisher": ""
+   }
+  },
+  {
+   "artist": "Lab's Cloud",
+   "album": "Connecting on a Deeper Level",
+   "year": 2017,
+   "label": "Altar Records",
+   "country": "es",
+   "faction": "chill",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp downtempo 第二輪卡單：Last.fm 收聽 7856 人；標籤 downtempo",
+   "moodGuess": {
+    "x": 1.9,
+    "y": 0.5,
+    "z": 0.1,
+    "why": "進步氛圍，慢拍層疊"
+   },
+   "evidence": [
+    "https://labscloud.bandcamp.com/album/connecting-on-a-deeper-level",
+    "https://musicbrainz.org/release-group/67976771-2e52-4651-81b7-7661cbe8d958"
+   ],
+   "mbRgMbid": "67976771-2e52-4651-81b7-7661cbe8d958",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "LAB'S CLOUD",
+   "uncertain": "moodGuess 為卡單粗估（只看 Bandcamp 標籤，把握 low），研究層須再判聲音",
+   "bandcamp": {
+    "url": "https://labscloud.bandcamp.com/album/connecting-on-a-deeper-level",
+    "img": "https://f4.bcbits.com/img/a0736911126_5.jpg",
+    "date": "30 Jun 2017 00:00:00 GMT",
+    "tracks": 8,
+    "minutes": 75,
+    "listeners": 7856,
+    "location": "Madrid, Spain",
+    "publisher": "LAB'S CLOUD"
+   }
+  },
+  {
+   "artist": "Photon",
+   "album": "Image of Imagination",
+   "year": 2021,
+   "label": "",
+   "country": "us",
+   "faction": "ambient",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp downtempo 第二輪卡單：Last.fm 收聽 7158 人；標籤 downtempo",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 0.6,
+    "z": 0.5,
+    "why": "chillwave 夢幻合成，暖"
+   },
+   "evidence": [
+    "https://photon2.bandcamp.com/album/image-of-imagination",
+    "https://music.apple.com/us/album/image-of-imagination/1573411551"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "https://musicbrainz.org/ws/2/release-group?query=artist:\"Photon\" AND releasegroup:\"Image of Imagination\"",
+     "https://musicbrainz.org/ws/2/release-group?query=artist:\"Photon\" AND release:\"Image of Imagination\""
+    ],
+    "checkedAt": "2026-11-06",
+    "conclusion": "MB 無此 release-group；Bandcamp 與 Apple Music 皆為 2021-06 的 10 軌專輯"
+   },
+   "manualEvidenceUrls": [
+    "https://photon.bandcamp.com/album/image-of-imagination",
+    "https://music.apple.com/us/album/image-of-imagination/1573411551"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（只看 Bandcamp 標籤，把握 low），研究層須再判聲音",
+   "bandcamp": {
+    "url": "https://photon2.bandcamp.com/album/image-of-imagination",
+    "img": "https://f4.bcbits.com/img/a0104266672_5.jpg",
+    "date": "15 Jun 2021 00:00:00 GMT",
+    "tracks": 10,
+    "minutes": 45,
+    "listeners": 7158,
+    "location": "Pennsylvania",
+    "publisher": "Photon"
+   }
+  },
+  {
+   "artist": "AK",
+   "album": "Branches",
+   "year": 2018,
+   "label": "",
+   "country": "de",
+   "faction": "chill",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp downtempo 第二輪卡單：Last.fm 收聽 5910 人；標籤 electronica",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 0.5,
+    "z": 0,
+    "why": "無資訊，憑下行拍電子推估"
+   },
+   "evidence": [
+    "https://music.aljoshakonstanty.com/album/branches",
+    "https://musicbrainz.org/release-group/711f2d38-0390-4928-b98d-9fa3e179fb55"
+   ],
+   "mbRgMbid": "711f2d38-0390-4928-b98d-9fa3e179fb55",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（只看 Bandcamp 標籤，把握 low），研究層須再判聲音",
+   "bandcamp": {
+    "url": "https://music.aljoshakonstanty.com/album/branches",
+    "img": "",
+    "date": "",
+    "tracks": 10,
+    "minutes": 38,
+    "listeners": 5910,
+    "location": "Dresden, Germany",
+    "publisher": ""
+   }
+  },
+  {
+   "artist": "MindSpring Memories",
+   "album": "The Binary Ocean",
+   "year": 2017,
+   "label": "No Problema Tapes",
+   "country": "cl",
+   "faction": "vapor",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp downtempo 第二輪卡單：Last.fm 收聽 5321 人；標籤 downtempo",
+   "moodGuess": {
+    "x": 1.6,
+    "y": 1.2,
+    "z": 0.1,
+    "why": "slushwave降速取樣、糊濾波、長殘響"
+   },
+   "evidence": [
+    "https://noproblematapes.bandcamp.com/album/the-binary-ocean",
+    "https://musicbrainz.org/release-group/f2cdd523-628d-4633-a315-46dbd4e5e800"
+   ],
+   "mbRgMbid": "f2cdd523-628d-4633-a315-46dbd4e5e800",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（只看 Bandcamp 標籤，把握 low），研究層須再判聲音；長度 136 分（Bandcamp 版可能含加碟或連續混音），以 MB 正規版為準",
+   "bandcamp": {
+    "url": "https://noproblematapes.bandcamp.com/album/the-binary-ocean",
+    "img": "https://f4.bcbits.com/img/a1320441534_5.jpg",
+    "date": "11 Aug 2017 00:00:00 GMT",
+    "tracks": 9,
+    "minutes": 136,
+    "listeners": 5321,
+    "location": "Chile",
+    "publisher": "NO PROBLEMA TAPES"
+   }
+  },
+  {
+   "artist": "Dreamstate Logic",
+   "album": "Era3.I",
+   "year": 2020,
+   "label": "",
+   "country": "us",
+   "faction": "psy",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp downtempo 第二輪卡單：Last.fm 收聽 4596 人；標籤 downtempo、psybient",
+   "moodGuess": {
+    "x": 1.5,
+    "y": 0.7,
+    "z": 0,
+    "why": "太空氛圍、慢合成器、無鼓"
+   },
+   "evidence": [
+    "https://dreamstatelogic.bandcamp.com/album/era3-i",
+    "https://musicbrainz.org/release-group/c0e4cff3-1635-49d5-9f6d-5f0a0d870ce8"
+   ],
+   "mbRgMbid": "c0e4cff3-1635-49d5-9f6d-5f0a0d870ce8",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（只看 Bandcamp 標籤，把握 low），研究層須再判聲音",
+   "bandcamp": {
+    "url": "https://dreamstatelogic.bandcamp.com/album/era3-i",
+    "img": "https://f4.bcbits.com/img/a1731775397_5.jpg",
+    "date": "11 Jan 2020 00:00:00 GMT",
+    "tracks": 7,
+    "minutes": 67,
+    "listeners": 4596,
+    "location": "Seattle, Washington",
+    "publisher": "Dreamstate Logic"
+   }
+  },
+  {
+   "artist": "PALLADIAN",
+   "album": "Indaco",
+   "year": 2025,
+   "label": "Loci Records",
+   "country": "es",
+   "faction": "chill",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp downtempo 第二輪卡單：Last.fm 收聽 4166 人；標籤 downtempo",
+   "moodGuess": {
+    "x": 2,
+    "y": 0.6,
+    "z": 0.1,
+    "why": "節制拍子、氛圍電子、中性"
+   },
+   "evidence": [
+    "https://palladianmusic.bandcamp.com/album/indaco",
+    "https://musicbrainz.org/release-group/05a32740-d212-46e4-b622-a35a019e5151"
+   ],
+   "mbRgMbid": "05a32740-d212-46e4-b622-a35a019e5151",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（只看 Bandcamp 標籤，把握 low），研究層須再判聲音",
+   "bandcamp": {
+    "url": "https://palladianmusic.bandcamp.com/album/indaco",
+    "img": "https://f4.bcbits.com/img/a2296984143_5.jpg",
+    "date": "16 May 2025 00:00:00 GMT",
+    "tracks": 9,
+    "minutes": 37,
+    "listeners": 4166,
+    "location": "Barcelona, Spain",
+    "publisher": "PALLADIAN"
+   }
+  },
+  {
+   "artist": "Dr. Toast",
+   "album": "The Wave Function",
+   "year": 2008,
+   "label": "False Profit Records",
+   "country": "us",
+   "faction": "ambient",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp downtempo 第二輪卡單：Last.fm 收聽 3913 人；標籤 downtempo",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 0.6,
+    "z": 0.1,
+    "why": "無資訊，電子氛圍推估"
+   },
+   "evidence": [
+    "https://music.drtoast.com/album/the-wave-function",
+    "https://musicbrainz.org/release-group/6c230c94-6cc6-354a-8e3f-2f0c08291734"
+   ],
+   "mbRgMbid": "6c230c94-6cc6-354a-8e3f-2f0c08291734",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（只看 Bandcamp 標籤，把握 low），研究層須再判聲音",
+   "bandcamp": {
+    "url": "https://music.drtoast.com/album/the-wave-function",
+    "img": "",
+    "date": "",
+    "tracks": 11,
+    "minutes": 67,
+    "listeners": 3913,
+    "location": "San Francisco, California",
+    "publisher": ""
+   }
+  },
+  {
+   "artist": "Krusseldorf",
+   "album": "From Soil to Space",
+   "year": 2011,
+   "label": "Aleph Zero Records",
+   "country": "se",
+   "faction": "psy",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp downtempo 第二輪卡單：Last.fm 收聽 3374 人；標籤 downtempo、psybient",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 1.2,
+    "z": 0.2,
+    "why": "psydub、重低頻、慢"
+   },
+   "evidence": [
+    "https://krusseldorf.bandcamp.com/album/from-soil-to-space",
+    "https://musicbrainz.org/release-group/eedc27a7-fc80-4d76-9ffe-2c4de31f5d78"
+   ],
+   "mbRgMbid": "eedc27a7-fc80-4d76-9ffe-2c4de31f5d78",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（只看 Bandcamp 標籤，把握 mid），研究層須再判聲音；年份照 MB 首發 2011（Bandcamp 2018 為再發／上架日）",
+   "bandcamp": {
+    "url": "https://krusseldorf.bandcamp.com/album/from-soil-to-space",
+    "img": "https://f4.bcbits.com/img/a0269696645_5.jpg",
+    "date": "14 Jun 2018 00:00:00 GMT",
+    "tracks": 13,
+    "minutes": 71,
+    "listeners": 3374,
+    "location": "Stockholm, Sweden",
+    "publisher": "krusseldorf"
+   }
+  },
+  {
+   "artist": "Lapa",
+   "album": "Meeting of the Waters",
+   "year": 2015,
+   "label": "Loci Records",
+   "country": "us",
+   "faction": "chill",
+   "genres": [
+    "electronic",
+    "world"
+   ],
+   "why": "Bandcamp downtempo 第二輪卡單：Last.fm 收聽 3123 人；標籤 trip-hop",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 0.6,
+    "z": 0.4,
+    "why": "電子氛圍世界感，無資訊"
+   },
+   "evidence": [
+    "https://lapa.bandcamp.com/album/meeting-of-the-waters",
+    "https://musicbrainz.org/release-group/781db624-8f0e-42e4-8c2b-d2fab28ff4f3"
+   ],
+   "mbRgMbid": "781db624-8f0e-42e4-8c2b-d2fab28ff4f3",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "Meeting Of The Waters",
+   "uncertain": "moodGuess 為卡單粗估（只看 Bandcamp 標籤，把握 low），研究層須再判聲音",
+   "bandcamp": {
+    "url": "https://lapa.bandcamp.com/album/meeting-of-the-waters",
+    "img": "https://f4.bcbits.com/img/a0949603409_5.jpg",
+    "date": "09 Sep 2015 00:00:00 GMT",
+    "tracks": 10,
+    "minutes": 57,
+    "listeners": 3123,
+    "location": "Portland, Oregon",
+    "publisher": "Lapa"
+   }
+  },
+  {
+   "artist": "monde ufo",
+   "album": "Flamingo Tower",
+   "year": 2025,
+   "label": "Fire Records",
+   "country": "us",
+   "faction": "beats",
+   "genres": [
+    "rock",
+    "jazz"
+   ],
+   "why": "Bandcamp downtempo 第二輪卡單：Last.fm 收聽 2950 人；標籤 lounge",
+   "moodGuess": {
+    "x": 2,
+    "y": 0.5,
+    "z": 0.3,
+    "why": "lofi民謠爵士、柔"
+   },
+   "evidence": [
+    "https://mondeufo.bandcamp.com/album/flamingo-tower",
+    "https://musicbrainz.org/release-group/9d22d11b-96cd-4379-809b-f8a88953c9cf"
+   ],
+   "mbRgMbid": "9d22d11b-96cd-4379-809b-f8a88953c9cf",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（只看 Bandcamp 標籤，把握 low），研究層須再判聲音",
+   "bandcamp": {
+    "url": "https://mondeufo.bandcamp.com/album/flamingo-tower",
+    "img": "https://f4.bcbits.com/img/a1894485795_5.jpg",
+    "date": "07 Mar 2025 00:00:00 GMT",
+    "tracks": 11,
+    "minutes": 38,
+    "listeners": 2950,
+    "location": "Los Angeles, California",
+    "publisher": "monde ufo"
+   }
+  },
+  {
+   "artist": "Fennec",
+   "album": "Free Us of This Feeling",
+   "year": 2020,
+   "label": "",
+   "country": "us",
+   "faction": "ambient",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp downtempo 第二輪卡單：Last.fm 收聽 2421 人；標籤 downtempo",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 0.8,
+    "z": 0.2,
+    "why": "無資訊，依氛圍電子推估"
+   },
+   "evidence": [
+    "https://fennecsound.com/album/free-us-of-this-feeling",
+    "https://musicbrainz.org/release-group/65848d5b-27e4-4b92-8b2e-bd63b90a2948"
+   ],
+   "mbRgMbid": "65848d5b-27e4-4b92-8b2e-bd63b90a2948",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "free us of this feeling",
+   "uncertain": "moodGuess 為卡單粗估（只看 Bandcamp 標籤，把握 low），研究層須再判聲音",
+   "bandcamp": {
+    "url": "https://fennecsound.com/album/free-us-of-this-feeling",
+    "img": "",
+    "date": "",
+    "tracks": 11,
+    "minutes": 55,
+    "listeners": 2421,
+    "location": "Austin, Texas",
+    "publisher": ""
+   }
+  },
+  {
+   "artist": "Charlie North",
+   "album": "The Spaces In Between",
+   "year": 2008,
+   "label": "",
+   "country": "gb",
+   "faction": "beats",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp downtempo 第二輪卡單：Last.fm 收聽 2227 人；標籤 lounge",
+   "moodGuess": {
+    "x": 2,
+    "y": 0.5,
+    "z": 0.2,
+    "why": "無資訊，依氛圍推估"
+   },
+   "evidence": [
+    "https://charlienorth.com/album/the-spaces-in-between",
+    "https://www.discogs.com/release/2087113-Charlie-North-The-Spaces-In-Between"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "https://musicbrainz.org/ws/2/release-group?query=artist:\"Charlie North\" AND releasegroup:\"The Spaces In Between\"",
+     "https://musicbrainz.org/ws/2/artist?query=Charlie North"
+    ],
+    "checkedAt": "2026-11-06",
+    "conclusion": "MB 無此 release-group；Discogs release 2087113 為 2008 年英國自發 CDr 專輯（Downtempo／Ambient）"
+   },
+   "manualEvidenceUrls": [
+    "https://www.discogs.com/release/2087113-Charlie-North-The-Spaces-In-Between",
+    "https://charlienorth.com/album/the-spaces-in-between"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（只看 Bandcamp 標籤，把握 low），研究層須再判聲音",
+   "bandcamp": {
+    "url": "https://charlienorth.com/album/the-spaces-in-between",
+    "img": "",
+    "date": "",
+    "tracks": 8,
+    "minutes": 53,
+    "listeners": 2227,
+    "location": "UK",
+    "publisher": ""
+   }
+  },
+  {
+   "artist": "Macroblank",
+   "album": "絶望に負けた",
+   "year": 2020,
+   "label": "Aloe City Records",
+   "country": "ro",
+   "faction": "vapor",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp downtempo 第二輪卡單：Last.fm 收聽 2095 人；標籤 downtempo",
+   "moodGuess": {
+    "x": 2.1,
+    "y": 1,
+    "z": 0,
+    "why": "vaporwave濾波糊、慢拍、失真感"
+   },
+   "evidence": [
+    "https://aloecitywrld.bandcamp.com/album/--35",
+    "https://musicbrainz.org/release-group/6237c06c-52c2-4977-a5e8-54486eefb18d"
+   ],
+   "mbRgMbid": "6237c06c-52c2-4977-a5e8-54486eefb18d",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（只看 Bandcamp 標籤，把握 mid），研究層須再判聲音",
+   "bandcamp": {
+    "url": "https://aloecitywrld.bandcamp.com/album/--35",
+    "img": "https://f4.bcbits.com/img/a3840181308_5.jpg",
+    "date": "17 Sep 2020 00:00:00 GMT",
+    "tracks": 12,
+    "minutes": 69,
+    "listeners": 2095,
+    "location": "Bucharest, Romania",
+    "publisher": "Aloe City Wrld"
+   }
+  },
+  {
+   "artist": "Zoungla",
+   "album": "Entwine",
+   "year": 2013,
+   "label": "Maia Brasil Records/Omnitropic/Melodic Revolution Records",
+   "country": "ca",
+   "faction": "psy",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp downtempo 第二輪卡單：Last.fm 收聽 2019 人；標籤 psybient",
+   "moodGuess": {
+    "x": 1.9,
+    "y": 0.8,
+    "z": 0.1,
+    "why": "psybient氛圍、慢拍、迷幻霧"
+   },
+   "evidence": [
+    "https://zoungla.bandcamp.com/album/entwine-2",
+    "https://musicbrainz.org/release-group/50cee8f9-24fe-435b-8979-c1637eecc08f"
+   ],
+   "mbRgMbid": "50cee8f9-24fe-435b-8979-c1637eecc08f",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（只看 Bandcamp 標籤，把握 mid），研究層須再判聲音",
+   "bandcamp": {
+    "url": "https://zoungla.bandcamp.com/album/entwine-2",
+    "img": "https://f4.bcbits.com/img/a0393900767_5.jpg",
+    "date": "19 Mar 2013 00:00:00 GMT",
+    "tracks": 9,
+    "minutes": 71,
+    "listeners": 2019,
+    "location": "Montreal, Québec",
+    "publisher": "Zoungla"
+   }
+  },
+  {
+   "artist": "VANITAS命死",
+   "album": "心の泉",
+   "year": 2022,
+   "label": "",
+   "country": "be",
+   "faction": "vapor",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp downtempo 第二輪卡單：Last.fm 收聽 1860 人；標籤 chillout",
+   "moodGuess": {
+    "x": 1.8,
+    "y": 0.9,
+    "z": 0,
+    "why": "拼貼取樣、霧化濾波"
+   },
+   "evidence": [
+    "https://vanitas567.bandcamp.com/album/-",
+    "https://musicbrainz.org/release-group/c89b27cb-aec7-4f6a-87ca-59f989792267"
+   ],
+   "mbRgMbid": "c89b27cb-aec7-4f6a-87ca-59f989792267",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（只看 Bandcamp 標籤，把握 low），研究層須再判聲音",
+   "bandcamp": {
+    "url": "https://vanitas567.bandcamp.com/album/-",
+    "img": "https://f4.bcbits.com/img/a0575796309_5.jpg",
+    "date": "24 Jun 2022 00:00:00 GMT",
+    "tracks": 9,
+    "minutes": 72,
+    "listeners": 1860,
+    "location": "Belgium",
+    "publisher": "VANITAS命死"
+   }
+  },
+  {
+   "artist": "Veryan",
+   "album": "One Universal Breath",
+   "year": 2024,
+   "label": "quiet details",
+   "country": "gb",
+   "faction": "drone",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp downtempo 第二輪卡單：Last.fm 收聽 1716 人；標籤 downtempo",
+   "moodGuess": {
+    "x": 1.2,
+    "y": 0.7,
+    "z": 0,
+    "why": "田野錄音、drone、無鼓"
+   },
+   "evidence": [
+    "https://quietdetails.bandcamp.com/album/one-universal-breath",
+    "https://musicbrainz.org/release-group/028e0416-1cd7-4af0-821f-f2b49ac359fd"
+   ],
+   "mbRgMbid": "028e0416-1cd7-4af0-821f-f2b49ac359fd",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（只看 Bandcamp 標籤，把握 low），研究層須再判聲音",
+   "bandcamp": {
+    "url": "https://quietdetails.bandcamp.com/album/one-universal-breath",
+    "img": "https://f4.bcbits.com/img/a1074540020_5.jpg",
+    "date": "21 Aug 2024 00:00:00 GMT",
+    "tracks": 12,
+    "minutes": 66,
+    "listeners": 1716,
+    "location": "UK",
+    "publisher": "quiet details"
+   }
+  },
+  {
+   "artist": "Dday One",
+   "album": "Manu Propria",
+   "year": 2022,
+   "label": "",
+   "country": "us",
+   "faction": "ambient",
+   "genres": [
+    "hiphop",
+    "electronic"
+   ],
+   "why": "Bandcamp downtempo 第二輪卡單：Last.fm 收聽 1319 人；標籤 downtempo、downtempo",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 0.5,
+    "z": 0,
+    "why": "無資訊、依標籤估中速電子"
+   },
+   "evidence": [
+    "https://music.ddayone.com/album/manu-propria",
+    "https://musicbrainz.org/release-group/89ba093e-fbee-4406-81c0-3eedfe02983d"
+   ],
+   "mbRgMbid": "89ba093e-fbee-4406-81c0-3eedfe02983d",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（只看 Bandcamp 標籤，把握 low），研究層須再判聲音；MB release-group 未標 primary type（唯一 release 為 10 軌數位、約 30 分鐘），視同 Album",
+   "bandcamp": {
+    "url": "https://music.ddayone.com/album/manu-propria",
+    "img": "",
+    "date": "",
+    "tracks": 10,
+    "minutes": 30,
+    "listeners": 1319,
+    "location": "Los Angeles, California",
+    "publisher": ""
+   }
+  },
+  {
+   "artist": "Donovan Hikaru",
+   "album": "Selected Moods",
+   "year": 2019,
+   "label": "Adhesive Sounds",
+   "country": "ca",
+   "faction": "ambient",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp downtempo 第二輪卡單：Last.fm 收聽 1223 人；標籤 downtempo、ambient、electronica",
+   "moodGuess": {
+    "x": 1.7,
+    "y": 0.5,
+    "z": 0.3,
+    "why": "氛圍電影配樂，輕柔"
+   },
+   "evidence": [
+    "https://adhesivesounds.bandcamp.com/album/selected-moods",
+    "https://musicbrainz.org/release-group/7cc083bb-2cdd-4b73-be3d-f042e7eca88e"
+   ],
+   "mbRgMbid": "7cc083bb-2cdd-4b73-be3d-f042e7eca88e",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（只看 Bandcamp 標籤，把握 low），研究層須再判聲音",
+   "bandcamp": {
+    "url": "https://adhesivesounds.bandcamp.com/album/selected-moods",
+    "img": "https://f4.bcbits.com/img/a1299986642_5.jpg",
+    "date": "09 Oct 2019 00:00:00 GMT",
+    "tracks": 10,
+    "minutes": 34,
+    "listeners": 1223,
+    "location": "Toronto, Ontario",
+    "publisher": "Adhesive Sounds"
+   }
+  },
+  {
+   "artist": "Tryphème",
+   "album": "Slowride",
+   "year": 2025,
+   "label": "",
+   "country": "fr",
+   "faction": "chill",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp downtempo 第二輪卡單：Last.fm 收聽 1141 人；標籤 downtempo、trip-hop、ambient、electronica",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 0.9,
+    "z": 0,
+    "why": "氛圍低頻搖滾拍，糊"
+   },
+   "evidence": [
+    "https://trypheme.bandcamp.com/album/slowride-6",
+    "https://musicbrainz.org/release-group/0209ba1d-c97b-4d30-85c1-a6e6c0cdcd0f"
+   ],
+   "mbRgMbid": "0209ba1d-c97b-4d30-85c1-a6e6c0cdcd0f",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（只看 Bandcamp 標籤，把握 low），研究層須再判聲音",
+   "bandcamp": {
+    "url": "https://trypheme.bandcamp.com/album/slowride-6",
+    "img": "https://f4.bcbits.com/img/a2934172607_5.jpg",
+    "date": "16 May 2025 00:00:00 GMT",
+    "tracks": 12,
+    "minutes": 48,
+    "listeners": 1141,
+    "location": "France",
+    "publisher": "Tryphème"
+   }
+  },
+  {
+   "artist": "Halina Rice",
+   "album": "UNREALITY",
+   "year": 2025,
+   "label": "",
+   "country": "gb",
+   "faction": "ambient",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp downtempo 第二輪卡單：Last.fm 收聽 945 人；標籤 downtempo、ambient",
+   "moodGuess": {
+    "x": 1.9,
+    "y": 0.6,
+    "z": 0.1,
+    "why": "氛圍電子，柔"
+   },
+   "evidence": [
+    "https://halinarice.bandcamp.com/album/unreality",
+    "https://musicbrainz.org/release-group/cae51b89-d10c-4e95-a4d8-bae3f89c41fa"
+   ],
+   "mbRgMbid": "cae51b89-d10c-4e95-a4d8-bae3f89c41fa",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（只看 Bandcamp 標籤，把握 low），研究層須再判聲音",
+   "bandcamp": {
+    "url": "https://halinarice.bandcamp.com/album/unreality",
+    "img": "https://f4.bcbits.com/img/a4226303172_5.jpg",
+    "date": "15 Oct 2025 00:00:00 GMT",
+    "tracks": 10,
+    "minutes": 36,
+    "listeners": 945,
+    "location": "London, UK",
+    "publisher": "Halina Rice"
+   }
+  },
+  {
+   "artist": "Ian Hawgood",
+   "album": "Well, Here We Are",
+   "year": 2025,
+   "label": "quiet details",
+   "country": "gb",
+   "faction": "drone",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp downtempo 第二輪卡單：Last.fm 收聽 772 人；標籤 downtempo",
+   "moodGuess": {
+    "x": 1.4,
+    "y": 0.6,
+    "z": 0.1,
+    "why": "氛圍drone，電聲柔"
+   },
+   "evidence": [
+    "https://quietdetails.bandcamp.com/album/well-here-we-are",
+    "https://musicbrainz.org/release-group/3738348b-c75f-4e98-a3dc-7505b091308d"
+   ],
+   "mbRgMbid": "3738348b-c75f-4e98-a3dc-7505b091308d",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "ian hawgood；well, here we are",
+   "uncertain": "moodGuess 為卡單粗估（只看 Bandcamp 標籤，把握 low），研究層須再判聲音",
+   "bandcamp": {
+    "url": "https://quietdetails.bandcamp.com/album/well-here-we-are",
+    "img": "https://f4.bcbits.com/img/a1224932432_5.jpg",
+    "date": "23 Apr 2025 00:00:00 GMT",
+    "tracks": 13,
+    "minutes": 53,
+    "listeners": 772,
+    "location": "UK",
+    "publisher": "quiet details"
+   }
+  }
+ ],
+ "notes": [
+  "卡單即策展結果（第二輪），主線初篩汰除見 batch-progress/add-20261106-ml73/rulings.md"
+ ]
+}
