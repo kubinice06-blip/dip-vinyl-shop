@@ -1,0 +1,1049 @@
+{
+ "group": "md41",
+ "source": "batch-progress/bandcamp-dt-20261105/pick-md41.json（卡單即策展；主線初篩）",
+ "factions": [
+  {
+   "id": "dark-triphop",
+   "zh": "暗 trip-hop／downtempo",
+   "count": 5,
+   "why": ""
+  },
+  {
+   "id": "dreampunk",
+   "zh": "dreampunk／賽博龐克 ambient",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "space-dark-ambient",
+   "zh": "太空／暗黑 ambient",
+   "count": 10,
+   "why": ""
+  },
+  {
+   "id": "witch-house",
+   "zh": "witch house",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "dark-electronica",
+   "zh": "暗色 electronica／post-rock 電子",
+   "count": 8,
+   "why": ""
+  },
+  {
+   "id": "dark-fantasy-ambient",
+   "zh": "暗黑奇幻 ambient",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "dark-slowcore",
+   "zh": "暗色 slowcore／post-rock",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "dub-techno-dark",
+   "zh": "冷 dub techno",
+   "count": 1,
+   "why": ""
+  },
+  {
+   "id": "dark-idm",
+   "zh": "暗色 IDM",
+   "count": 1,
+   "why": ""
+  }
+ ],
+ "albums": [
+  {
+   "artist": "Halou",
+   "album": "Wiser",
+   "year": 2001,
+   "label": "Halou",
+   "country": "us",
+   "faction": "dark-triphop",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp downtempo 標籤候選（Last.fm 聽眾 122746）；粗估聲音：electrogaze霧、冷女聲、慢鼓",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 0.9,
+    "z": -0.4,
+    "why": "electrogaze霧、冷女聲、慢鼓"
+   },
+   "evidence": [
+    "https://halou.bandcamp.com/album/wiser",
+    "https://musicbrainz.org/release-group/021068d0-59e4-34d3-b343-a6c840423bf6"
+   ],
+   "coverUrl": "https://f4.bcbits.com/img/a1403757087_5.jpg",
+   "bandcampUrl": "https://halou.bandcamp.com/album/wiser",
+   "bandcampTags": "Electronic,dreampop,electrogaze,electronic,post-punk,trip hop,San Francisco",
+   "bcMinutes": 54,
+   "bcTracks": 11,
+   "bcDate": "23 Oct 2001 00:00:00 GMT",
+   "mbRgMbid": "021068d0-59e4-34d3-b343-a6c840423bf6",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Hong Kong Express",
+   "album": "2047",
+   "year": 2014,
+   "label": "Dream Catalogue",
+   "country": "gb",
+   "faction": "dreampunk",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp downtempo 標籤候選（Last.fm 聽眾 112776）；粗估聲音：賽博龐克氛圍、暗霧、冷",
+   "moodGuess": {
+    "x": 1.9,
+    "y": 0.8,
+    "z": -0.9,
+    "why": "賽博龐克氛圍、暗霧、冷"
+   },
+   "evidence": [
+    "https://dreamcatalogue.bandcamp.com/album/2047",
+    "https://musicbrainz.org/release-group/5fd52692-208f-455e-8fab-b35b54cfafe3"
+   ],
+   "coverUrl": "https://f4.bcbits.com/img/a0428669754_5.jpg",
+   "bandcampUrl": "https://dreamcatalogue.bandcamp.com/album/2047",
+   "bandcampTags": "Electronic,ambient,china,cyberpunk,downtempo,dreampunk,experimental,future,hk,hong kong,London",
+   "bcMinutes": 30,
+   "bcTracks": 11,
+   "bcDate": "12 Jul 2014 00:00:00 GMT",
+   "mbRgMbid": "5fd52692-208f-455e-8fab-b35b54cfafe3",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "剛好 30 分鐘"
+  },
+  {
+   "artist": "Lund Quartet",
+   "album": "Lund Quartet",
+   "year": 2011,
+   "label": "Lund Quartet",
+   "country": "gb",
+   "faction": "dark-triphop",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp downtempo 標籤候選（Last.fm 聽眾 40387）；粗估聲音：Bristol trip-hop刮碟、爵士低頻",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 0.8,
+    "z": -0.6,
+    "why": "Bristol trip-hop刮碟、爵士低頻"
+   },
+   "evidence": [
+    "https://lundquartet.bandcamp.com/album/lund-quartet",
+    "https://musicbrainz.org/release-group/740b9940-0ea8-4901-bb19-e6bd1ad3b2f1"
+   ],
+   "coverUrl": "https://f4.bcbits.com/img/a3497437834_5.jpg",
+   "bandcampUrl": "https://lundquartet.bandcamp.com/album/lund-quartet",
+   "bandcampTags": "Jazz,bristol,experimental,leftfield,trip-hop,turntablism,Bristol",
+   "bcMinutes": 41,
+   "bcTracks": 7,
+   "bcDate": "01 Sep 2013 00:00:00 GMT",
+   "mbRgMbid": "740b9940-0ea8-4901-bb19-e6bd1ad3b2f1",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Bristol 刮碟爵士 trip-hop；MB 2011-12-17 早於 Bandcamp 2013，年份取 2011；x、z 待查"
+  },
+  {
+   "artist": "Sync24",
+   "album": "Comfortable Void",
+   "year": 2012,
+   "label": "Leftfield Records",
+   "country": "se",
+   "faction": "space-dark-ambient",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp downtempo 標籤候選（Last.fm 聽眾 35761）；粗估聲音：drone acid、慢脈衝、厚合成",
+   "moodGuess": {
+    "x": 1.8,
+    "y": 0.9,
+    "z": -0.4,
+    "why": "drone acid、慢脈衝、厚合成"
+   },
+   "evidence": [
+    "https://sync24.bandcamp.com/album/comfortable-void",
+    "https://musicbrainz.org/release-group/f546e61b-0f0e-428b-9e64-cf848ae9f330"
+   ],
+   "coverUrl": "https://f4.bcbits.com/img/a2096031075_5.jpg",
+   "bandcampUrl": "https://sync24.bandcamp.com/album/comfortable-void",
+   "bandcampTags": "Ambient,acid,drone,morningtrance,psybient,Sweden",
+   "bcMinutes": 82,
+   "bcTracks": 10,
+   "bcDate": "16 Jun 2016 00:00:00 GMT",
+   "mbRgMbid": "f546e61b-0f0e-428b-9e64-cf848ae9f330",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "acid psybient，303 脈動，x 待查；MB 首發 2012（Bandcamp 2016 為上架日）"
+  },
+  {
+   "artist": "CASHFORGOLD",
+   "album": "manic pixie nightmare",
+   "year": 2021,
+   "label": "CASHFORGOLD",
+   "country": "us",
+   "faction": "witch-house",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp downtempo 標籤候選（Last.fm 聽眾 26560）；粗估聲音：witch house、暗調慢鼓、哥德",
+   "moodGuess": {
+    "x": 2.7,
+    "y": 0.9,
+    "z": -0.9,
+    "why": "witch house、暗調慢鼓、哥德"
+   },
+   "evidence": [
+    "https://cashforgoldmusic.bandcamp.com/album/manic-pixie-nightmare",
+    "https://musicbrainz.org/release-group/e0826921-d8c0-4c97-b2ca-88ad7ba0a910"
+   ],
+   "coverUrl": "https://f4.bcbits.com/img/a1924897882_5.jpg",
+   "bandcampUrl": "https://cashforgoldmusic.bandcamp.com/album/manic-pixie-nightmare",
+   "bandcampTags": "Electronic,chill,downtempo,pop,witch house,Los Angeles",
+   "bcMinutes": 47,
+   "bcTracks": 13,
+   "bcDate": "11 Feb 2022 00:00:00 GMT",
+   "mbRgMbid": "e0826921-d8c0-4c97-b2ca-88ad7ba0a910",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "witch house 暗流行，x 待查；MB 2021-11-19 早於 Bandcamp 2022"
+  },
+  {
+   "artist": "Lulu Rouge",
+   "album": "The Song Is In The Drum",
+   "year": 2013,
+   "label": "Lulu Rouge",
+   "country": "dk",
+   "faction": "dark-electronica",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp downtempo 標籤候選（Last.fm 聽眾 18100）；粗估聲音：黑暗電影氛圍，鼓聲厚，陰沉",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1,
+    "z": -0.7,
+    "why": "黑暗電影氛圍，鼓聲厚，陰沉"
+   },
+   "evidence": [
+    "https://lulurouge.bandcamp.com/album/the-song-is-in-the-drum",
+    "https://musicbrainz.org/release-group/7be767f3-8d1b-423c-a01b-a1d7483e431c"
+   ],
+   "coverUrl": "https://f4.bcbits.com/img/a3083168090_5.jpg",
+   "bandcampUrl": "https://lulurouge.bandcamp.com/album/the-song-is-in-the-drum",
+   "bandcampTags": "Electronic,cinematic soundscape,dark ambient,downtempo,electronica,Copenhagen",
+   "bcMinutes": 67,
+   "bcTracks": 13,
+   "bcDate": "05 Apr 2013 00:00:00 GMT",
+   "mbRgMbid": "7be767f3-8d1b-423c-a01b-a1d7483e431c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "鼓聲厚，x 待查"
+  },
+  {
+   "artist": "Sync24",
+   "album": "Omnious",
+   "year": 2018,
+   "label": "Leftfield Records",
+   "country": "se",
+   "faction": "space-dark-ambient",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp downtempo 標籤候選（Last.fm 聽眾 10970）；粗估聲音：酸性 drone 墊，無鼓，低頻緩",
+   "moodGuess": {
+    "x": 1.6,
+    "y": 1,
+    "z": -0.3,
+    "why": "酸性 drone 墊，無鼓，低頻緩"
+   },
+   "evidence": [
+    "https://sync24.bandcamp.com/album/omnious",
+    "https://musicbrainz.org/release-group/f41e849f-a45b-49d1-95be-eaef9aa14589"
+   ],
+   "coverUrl": "https://f4.bcbits.com/img/a1816423010_5.jpg",
+   "bandcampUrl": "https://sync24.bandcamp.com/album/omnious",
+   "bandcampTags": "Ambient,acid,carbon based lifeforms,chillout,drone,morningtrance,psybient,sync24,Sweden",
+   "bcMinutes": 47,
+   "bcTracks": 8,
+   "bcDate": "24 Sep 2018 00:00:00 GMT",
+   "mbRgMbid": "f41e849f-a45b-49d1-95be-eaef9aa14589",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Lauge",
+   "album": "Latitudes",
+   "year": 2020,
+   "label": "Lauge & Baba Gnohm",
+   "country": "dk",
+   "faction": "space-dark-ambient",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp downtempo 標籤候選（Last.fm 聽眾 8676）；粗估聲音：dark ambient drone，低頻暗",
+   "moodGuess": {
+    "x": 1.3,
+    "y": 1.2,
+    "z": -1,
+    "why": "dark ambient drone，低頻暗"
+   },
+   "evidence": [
+    "https://laugebabagnohm.bandcamp.com/album/latitudes",
+    "https://musicbrainz.org/release-group/68b90557-22fc-48b1-bef7-03c3ce77259b"
+   ],
+   "coverUrl": "https://f4.bcbits.com/img/a1263888376_5.jpg",
+   "bandcampUrl": "https://laugebabagnohm.bandcamp.com/album/latitudes",
+   "bandcampTags": "Ambient,Chillout,Downtempo,Electronica,ambient,ambient electronic,dark ambient,drone,drone ambient,electronica,live,noise,tapeloop,Copenhagen",
+   "bcMinutes": 85,
+   "bcTracks": 18,
+   "bcDate": "15 Mar 2020 00:00:00 GMT",
+   "mbRgMbid": "68b90557-22fc-48b1-bef7-03c3ce77259b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "ASKII",
+   "album": "Obscura",
+   "year": 2018,
+   "label": "ASKII",
+   "country": "de",
+   "faction": "dark-fantasy-ambient",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp downtempo 標籤候選（Last.fm 聽眾 7245）；粗估聲音：dark ambient 電影，低頻暗",
+   "moodGuess": {
+    "x": 1.3,
+    "y": 0.8,
+    "z": -0.8,
+    "why": "dark ambient 電影，低頻暗"
+   },
+   "evidence": [
+    "https://askii.bandcamp.com/album/obscura",
+    "https://musicbrainz.org/release-group/429810cf-fd34-4ab7-b76b-f6fc60d1cb83"
+   ],
+   "coverUrl": "https://f4.bcbits.com/img/a1864091536_5.jpg",
+   "bandcampUrl": "https://askii.bandcamp.com/album/obscura",
+   "bandcampTags": "DnD,Soundtrack,ambient,chillout,cinematic,dark ambient,dungeon,dungeon music,fantasy music,orchestral,Dresden",
+   "bcMinutes": 128,
+   "bcTracks": 18,
+   "bcDate": "09 Sep 2018 00:00:00 GMT",
+   "mbRgMbid": "429810cf-fd34-4ab7-b76b-f6fc60d1cb83",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "奇幻地城配樂 ambient，管弦旋律，z 待查"
+  },
+  {
+   "artist": "worriedaboutsatan",
+   "album": "Blank Tape",
+   "year": 2016,
+   "label": "worriedaboutsatan",
+   "country": "gb",
+   "faction": "dark-electronica",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp downtempo 標籤候選（Last.fm 聽眾 5354）；粗估聲音：後搖氛圍、殘響吉他、陰",
+   "moodGuess": {
+    "x": 2.1,
+    "y": 0.8,
+    "z": -0.5,
+    "why": "後搖氛圍、殘響吉他、陰"
+   },
+   "evidence": [
+    "https://worriedaboutsatan.bandcamp.com/album/blank-tape",
+    "https://musicbrainz.org/release-group/a77d83f9-e983-4755-9594-7e5c3ecfd955"
+   ],
+   "coverUrl": "https://f4.bcbits.com/img/a4236237587_5.jpg",
+   "bandcampUrl": "https://worriedaboutsatan.bandcamp.com/album/blank-tape",
+   "bandcampTags": "Alternative,Electronic,ambient,anathema,downtempo,electronica,post rock,prog,prog rock,Bradford",
+   "bcMinutes": 54,
+   "bcTracks": 10,
+   "bcDate": "25 Nov 2016 00:00:00 GMT",
+   "mbRgMbid": "a77d83f9-e983-4755-9594-7e5c3ecfd955",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "post-rock 電子，有鼓，x 待查"
+  },
+  {
+   "artist": "Good Weather For An Airstrike",
+   "album": "Kenopsia",
+   "year": 2021,
+   "label": "Good Weather For An Airstrike",
+   "country": "gb",
+   "faction": "dark-electronica",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp downtempo 標籤候選（Last.fm 聽眾 4806）；粗估聲音：drone現代古典、殘響大、無鼓",
+   "moodGuess": {
+    "x": 1.3,
+    "y": 0.8,
+    "z": -0.4,
+    "why": "drone現代古典、殘響大、無鼓"
+   },
+   "evidence": [
+    "https://goodweatherforanairstrike.bandcamp.com/album/kenopsia",
+    "https://musicbrainz.org/release-group/43e8a63b-0e0d-494d-bc4d-dfbcd13c85f3"
+   ],
+   "coverUrl": "https://f4.bcbits.com/img/a1070013563_5.jpg",
+   "bandcampUrl": "https://goodweatherforanairstrike.bandcamp.com/album/kenopsia",
+   "bandcampTags": "Ambient,chill,chillout,drone,modern classical,post-rock,soundscapes,Winchester",
+   "bcMinutes": 29,
+   "bcTracks": 9,
+   "bcDate": "20 Aug 2021 00:00:00 GMT",
+   "mbRgMbid": "43e8a63b-0e0d-494d-bc4d-dfbcd13c85f3",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "29 分鐘，現代古典 drone；y 待查"
+  },
+  {
+   "artist": "Ascendant",
+   "album": "Meridian",
+   "year": 2016,
+   "label": "Synphaera",
+   "country": "us",
+   "faction": "space-dark-ambient",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp downtempo 標籤候選（Last.fm 聽眾 4321）；粗估聲音：柏林學派合成器、暗沉長音、冷",
+   "moodGuess": {
+    "x": 1.6,
+    "y": 0.8,
+    "z": -0.8,
+    "why": "柏林學派合成器、暗沉長音、冷"
+   },
+   "evidence": [
+    "https://synphaera.bandcamp.com/album/meridian",
+    "https://musicbrainz.org/release-group/704f138f-459d-4a91-b96e-d074554d19df"
+   ],
+   "coverUrl": "https://f4.bcbits.com/img/a2942898759_5.jpg",
+   "bandcampUrl": "https://synphaera.bandcamp.com/album/meridian",
+   "bandcampTags": "Ambient,Berlin School,dark ambient,electronic,electronica,psybient,space music,Los Angeles",
+   "bcMinutes": 87,
+   "bcTracks": 10,
+   "bcDate": "28 Jun 2016 00:00:00 GMT",
+   "mbRgMbid": "704f138f-459d-4a91-b96e-d074554d19df",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "Cinephile",
+   "album": "Ten",
+   "year": 2010,
+   "label": "Cinephile",
+   "country": "gb",
+   "faction": "dark-triphop",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp downtempo 標籤候選（Last.fm 聽眾 3708）；粗估聲音：電影感trip-hop，陰",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1,
+    "z": -0.5,
+    "why": "電影感trip-hop，陰"
+   },
+   "evidence": [
+    "https://cinephile.bandcamp.com/album/ten",
+    "https://musicbrainz.org/release-group/ba1b8312-7736-4c06-bdf8-562cf390a39e"
+   ],
+   "coverUrl": "https://f4.bcbits.com/img/a2382671661_5.jpg",
+   "bandcampUrl": "https://cinephile.bandcamp.com/album/ten",
+   "bandcampTags": "Alternative,alternative,cinematic,downtempo,electronic,trip hop,Glasgow",
+   "bcMinutes": 51,
+   "bcTracks": 10,
+   "bcDate": "10 Oct 2010 00:00:00 GMT",
+   "mbRgMbid": "ba1b8312-7736-4c06-bdf8-562cf390a39e",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "故事來源可能薄"
+  },
+  {
+   "artist": "State Azure",
+   "album": "Phantoms",
+   "year": 2016,
+   "label": "State Azure",
+   "country": "gb",
+   "faction": "dark-electronica",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp downtempo 標籤候選（Last.fm 聽眾 2766）；粗估聲音：英式氛圍電子，偏冷",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 0.8,
+    "z": -0.3,
+    "why": "英式氛圍電子，偏冷"
+   },
+   "evidence": [
+    "https://stateazure.bandcamp.com/album/phantoms",
+    "https://musicbrainz.org/release-group/0ed8cb69-1dcc-4845-8080-fc05ccb3fd17"
+   ],
+   "coverUrl": "https://f4.bcbits.com/img/a2033759938_5.jpg",
+   "bandcampUrl": "https://stateazure.bandcamp.com/album/phantoms",
+   "bandcampTags": "Electronic,ambient,downtempo,electronica,instrumental,United Kingdom",
+   "bcMinutes": 59,
+   "bcTracks": 11,
+   "bcDate": "09 Oct 2016 00:00:00 GMT",
+   "mbRgMbid": "0ed8cb69-1dcc-4845-8080-fc05ccb3fd17",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "故事來源可能薄"
+  },
+  {
+   "artist": "PINHDAR",
+   "album": "A Sparkle On The Dark Water",
+   "year": 2024,
+   "label": "PINHDAR",
+   "country": "it",
+   "faction": "dark-triphop",
+   "genres": [
+    "rock"
+   ],
+   "why": "Bandcamp downtempo 標籤候選（Last.fm 聽眾 2694）；粗估聲音：dark wave夢幻殘響、慢拍、陰暗女聲",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1,
+    "z": -0.8,
+    "why": "dark wave夢幻殘響、慢拍、陰暗女聲"
+   },
+   "evidence": [
+    "https://pinhdar.bandcamp.com/album/a-sparkle-on-the-dark-water",
+    "https://musicbrainz.org/release-group/cd3e0520-278c-46fa-9fd0-bc5a1eaac134"
+   ],
+   "coverUrl": "https://f4.bcbits.com/img/a1600536430_5.jpg",
+   "bandcampUrl": "https://pinhdar.bandcamp.com/album/a-sparkle-on-the-dark-water",
+   "bandcampTags": "Alternative,Dark Wave,Electronic,art rock,dream pop,prog,trip hop,Milan",
+   "bcMinutes": 48,
+   "bcTracks": 10,
+   "bcDate": "22 Mar 2024 00:00:00 GMT",
+   "mbRgMbid": "cd3e0520-278c-46fa-9fd0-bc5a1eaac134",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "dark wave／dream pop 人聲，z 待查"
+  },
+  {
+   "artist": "HEXSYSTEM",
+   "album": "Spiritual Paralysis",
+   "year": 2024,
+   "label": "HEXSYSTEM",
+   "country": "ca",
+   "faction": "dark-electronica",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp downtempo 標籤候選（Last.fm 聽眾 2548）；粗估聲音：暗黑氛圍電聲，陰森",
+   "moodGuess": {
+    "x": 1.6,
+    "y": 1.3,
+    "z": -1.5,
+    "why": "暗黑氛圍電聲，陰森"
+   },
+   "evidence": [
+    "https://hexsystem.bandcamp.com/album/spiritual-paralysis",
+    "https://musicbrainz.org/release-group/d814d55e-35ba-4623-b2e0-fe94adb809a0"
+   ],
+   "coverUrl": "https://f4.bcbits.com/img/a2147709670_5.jpg",
+   "bandcampUrl": "https://hexsystem.bandcamp.com/album/spiritual-paralysis",
+   "bandcampTags": "Electronic,classical,dark ambient,downtempo,electroacoustic,electronic,instrumental,Montreal",
+   "bcMinutes": 40,
+   "bcTracks": 8,
+   "bcDate": "25 Jan 2024 00:00:00 GMT",
+   "mbRgMbid": "d814d55e-35ba-4623-b2e0-fe94adb809a0",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "有鋼琴、弦樂、鼓，y、x 待查"
+  },
+  {
+   "artist": "Moth Equals",
+   "album": "The Fall and Rise",
+   "year": 2011,
+   "label": "Moth Equals",
+   "country": "gb",
+   "faction": "dark-triphop",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp downtempo 標籤候選（Last.fm 聽眾 2209）；粗估聲音：dubstep／trip hop低頻厚、暗",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 1.4,
+    "z": -0.6,
+    "why": "dubstep／trip hop低頻厚、暗"
+   },
+   "evidence": [
+    "https://mothequals.bandcamp.com/album/the-fall-and-rise",
+    "https://musicbrainz.org/release-group/61f4bda0-1f35-458f-8587-318c88644b98"
+   ],
+   "coverUrl": "https://f4.bcbits.com/img/a0887188801_5.jpg",
+   "bandcampUrl": "https://mothequals.bandcamp.com/album/the-fall-and-rise",
+   "bandcampTags": "2011,Dubstep,Electronic,Trip Hop,ambient,downtempo,electronic,electronica,fall and rise,independent,moth equals,new,unsigned,United Kingdom",
+   "bcMinutes": 56,
+   "bcTracks": 10,
+   "bcDate": "15 Mar 2011 00:00:00 GMT",
+   "mbRgMbid": "61f4bda0-1f35-458f-8587-318c88644b98",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "dubstep 低頻與拍，x 待查"
+  },
+  {
+   "artist": "LANDROID",
+   "album": "Imperial Dunes",
+   "year": 2019,
+   "label": "LANDROID",
+   "country": "us",
+   "faction": "dark-slowcore",
+   "genres": [
+    "rock"
+   ],
+   "why": "Bandcamp downtempo 標籤候選（Last.fm 聽眾 1559）；粗估聲音：沙漠暗黑氛圍、低沉合成器",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 1,
+    "z": -0.7,
+    "why": "沙漠暗黑氛圍、低沉合成器"
+   },
+   "evidence": [
+    "https://landroid.bandcamp.com/album/imperial-dunes",
+    "https://musicbrainz.org/release-group/96de6553-50a3-40a4-99ac-627874d6db0f"
+   ],
+   "coverUrl": "https://f4.bcbits.com/img/a1076961906_5.jpg",
+   "bandcampUrl": "https://landroid.bandcamp.com/album/imperial-dunes",
+   "bandcampTags": "Alternative,Electronic,dark ambient,darkwave,desert noir,desert rock,dream pop,indie,noir,shoegaze,shoegazer,trip hop,Landers",
+   "bcMinutes": 40,
+   "bcTracks": 9,
+   "bcDate": "13 Sep 2019 00:00:00 GMT",
+   "mbRgMbid": "96de6553-50a3-40a4-99ac-627874d6db0f",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "desert noir shoegaze，有鼓，x 待查"
+  },
+  {
+   "artist": "CHANTSSSS",
+   "album": "Shyness",
+   "year": 2024,
+   "label": "co:clear",
+   "country": "it",
+   "faction": "dub-techno-dark",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp downtempo 標籤候選（Last.fm 聽眾 1445）；粗估聲音：dub techno，濕殘響冷低頻",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.3,
+    "z": -0.8,
+    "why": "dub techno，濕殘響冷低頻"
+   },
+   "evidence": [
+    "https://coclear.bandcamp.com/album/shyness",
+    "https://musicbrainz.org/release-group/b1540d4b-df49-4f2e-a45d-99ee1cd937e6"
+   ],
+   "coverUrl": "https://f4.bcbits.com/img/a0412496532_5.jpg",
+   "bandcampUrl": "https://coclear.bandcamp.com/album/shyness",
+   "bandcampTags": "Electronic,ambient,bass,downtempo,dub-techno,electronica,trip-hop,Glasgow",
+   "bcMinutes": 31,
+   "bcTracks": 10,
+   "bcDate": "06 Sep 2024 00:00:00 GMT",
+   "mbRgMbid": "b1540d4b-df49-4f2e-a45d-99ee1cd937e6",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "文案 pulsing low end rhythms，x 待查"
+  },
+  {
+   "artist": "Merrin Karras",
+   "album": "Apex",
+   "year": 2016,
+   "label": "Merrin Karras",
+   "country": "ie",
+   "faction": "space-dark-ambient",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp downtempo 標籤候選（Last.fm 聽眾 1305）；粗估聲音：無拍氛圍、厚重合成長音",
+   "moodGuess": {
+    "x": 1.2,
+    "y": 0.8,
+    "z": -0.6,
+    "why": "無拍氛圍、厚重合成長音"
+   },
+   "evidence": [
+    "https://merrinkarras.bandcamp.com/album/apex",
+    "https://musicbrainz.org/release-group/fb7fcc6c-370c-45f8-bbba-a944803ccf85"
+   ],
+   "coverUrl": "https://f4.bcbits.com/img/a3338065644_5.jpg",
+   "bandcampUrl": "https://merrinkarras.bandcamp.com/album/apex",
+   "bandcampTags": "Ambient,Chymera,Ireland,ambient,atmospheric,beatless,berlin school,electronic,merrin karras,new age,synthesizer,Berlin",
+   "bcMinutes": 54,
+   "bcTracks": 8,
+   "bcDate": "29 Jul 2016 00:00:00 GMT",
+   "mbRgMbid": "fb7fcc6c-370c-45f8-bbba-a944803ccf85",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Chymera 的無拍化名；new age 標籤，z 待查"
+  },
+  {
+   "artist": "Muslimgauze",
+   "album": "Satyajit Eye",
+   "year": 1993,
+   "label": "Staalplaat",
+   "country": "gb",
+   "faction": "dark-electronica",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp downtempo 標籤候選（Last.fm 聽眾 1249）；粗估聲音：塔布拉循環、drone、暗沉陰冷",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.2,
+    "z": -1.3,
+    "why": "塔布拉循環、drone、暗沉陰冷"
+   },
+   "evidence": [
+    "https://muslimgauze.bandcamp.com/album/satyajit-eye",
+    "https://musicbrainz.org/release-group/964ff2da-5b57-39ae-a0f1-be9d8e4f1811"
+   ],
+   "coverUrl": "https://f4.bcbits.com/img/a2867924404_5.jpg",
+   "bandcampUrl": "https://muslimgauze.bandcamp.com/album/satyajit-eye",
+   "bandcampTags": "Downtempo,Experimental,ambient,drone,embient,experimental electronic,industrial,tribal,Berlin",
+   "bcMinutes": 39,
+   "bcTracks": 9,
+   "bcDate": "25 May 2020 00:00:00 GMT",
+   "mbRgMbid": "964ff2da-5b57-39ae-a0f1-be9d8e4f1811",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Muslimgauze DAT-only 版本 1993，2020 Bandcamp 數位首發；塔布拉循環，x 待查；池中同人三張落頹靡"
+  },
+  {
+   "artist": "worriedaboutsatan",
+   "album": "Glass Infinites",
+   "year": 2022,
+   "label": "worriedaboutsatan",
+   "country": "gb",
+   "faction": "dark-electronica",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp downtempo 標籤候選（Last.fm 聽眾 1166）；粗估聲音：模組合成器、殘響厚、微冷",
+   "moodGuess": {
+    "x": 2,
+    "y": 0.8,
+    "z": -0.3,
+    "why": "模組合成器、殘響厚、微冷"
+   },
+   "evidence": [
+    "https://worriedaboutsatan.bandcamp.com/album/glass-infinites",
+    "https://musicbrainz.org/release-group/e9c5a796-f43a-4621-b48e-543f52e39e81"
+   ],
+   "coverUrl": "https://f4.bcbits.com/img/a0854173444_5.jpg",
+   "bandcampUrl": "https://worriedaboutsatan.bandcamp.com/album/glass-infinites",
+   "bandcampTags": "Alternative,Electronic,ambient,downtempo,electronica,modular synth,post rock,synth,synthesiser,Bradford",
+   "bcMinutes": 40,
+   "bcTracks": 11,
+   "bcDate": "08 Jul 2022 00:00:00 GMT",
+   "mbRgMbid": "e9c5a796-f43a-4621-b48e-543f52e39e81",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "HEXSYSTEM",
+   "album": "Amanita Ocreata",
+   "year": 2023,
+   "label": "HEXSYSTEM",
+   "country": "ca",
+   "faction": "dark-electronica",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp downtempo 標籤候選（Last.fm 聽眾 1121）；粗估聲音：暗黑ambient加鋼琴，陰冷",
+   "moodGuess": {
+    "x": 1.6,
+    "y": 1.2,
+    "z": -1.4,
+    "why": "暗黑ambient加鋼琴，陰冷"
+   },
+   "evidence": [
+    "https://hexsystem.bandcamp.com/album/amanita-ocreata",
+    "https://musicbrainz.org/release-group/1410dc25-68d6-45d2-a19e-171bc571c2d4"
+   ],
+   "coverUrl": "https://f4.bcbits.com/img/a0393739720_5.jpg",
+   "bandcampUrl": "https://hexsystem.bandcamp.com/album/amanita-ocreata",
+   "bandcampTags": "Electronic,dark ambient,downtempo,electronic,instrumental,piano,post-rock,synth,violin,Montreal",
+   "bcMinutes": 42,
+   "bcTracks": 12,
+   "bcDate": "17 Feb 2023 00:00:00 GMT",
+   "mbRgMbid": "1410dc25-68d6-45d2-a19e-171bc571c2d4",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "鋼琴為主，y 待查"
+  },
+  {
+   "artist": "S1gns Of L1fe",
+   "album": "The Age of Cymatics",
+   "year": 2021,
+   "label": "Synphaera",
+   "country": "us",
+   "faction": "space-dark-ambient",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp downtempo 標籤候選（Last.fm 聽眾 1040）；粗估聲音：太空暗黑氛圍、低頻長音、冷",
+   "moodGuess": {
+    "x": 1.5,
+    "y": 0.8,
+    "z": -0.6,
+    "why": "太空暗黑氛圍、低頻長音、冷"
+   },
+   "evidence": [
+    "https://synphaera.bandcamp.com/album/the-age-of-cymatics",
+    "https://musicbrainz.org/release-group/65c1decf-5a3e-42ff-b239-1ceeb41e12dc"
+   ],
+   "coverUrl": "https://f4.bcbits.com/img/a0588004264_5.jpg",
+   "bandcampUrl": "https://synphaera.bandcamp.com/album/the-age-of-cymatics",
+   "bandcampTags": "Ambient,dark ambient,electronic,electronica,psybient,space music,Los Angeles",
+   "bcMinutes": 63,
+   "bcTracks": 8,
+   "bcDate": "26 Jan 2021 00:00:00 GMT",
+   "mbRgMbid": "65c1decf-5a3e-42ff-b239-1ceeb41e12dc",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": ""
+  },
+  {
+   "artist": "defrag",
+   "album": "drown",
+   "year": 2014,
+   "label": "Hymen Records",
+   "country": "us",
+   "faction": "dark-idm",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp downtempo 標籤候選（Last.fm 聽眾 1024）；粗估聲音：碎拍噪點、氛圍底、陰暗",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 1.1,
+    "z": -0.9,
+    "why": "碎拍噪點、氛圍底、陰暗"
+   },
+   "evidence": [
+    "https://hymen-records.bandcamp.com/album/drown",
+    "https://musicbrainz.org/release-group/85426e8a-5e4f-4baf-8415-a2ff19f63c8d"
+   ],
+   "coverUrl": "https://f4.bcbits.com/img/a0035039838_5.jpg",
+   "bandcampUrl": "https://hymen-records.bandcamp.com/album/drown",
+   "bandcampTags": "Electronic,abstract,ambient,breakcore,defrag,downtempo,dubstep,glitch,hymen records,idm,¥824,Lappersdorf",
+   "bcMinutes": 43,
+   "bcTracks": 12,
+   "bcDate": "22 Apr 2014 00:00:00 GMT",
+   "mbRgMbid": "85426e8a-5e4f-4baf-8415-a2ff19f63c8d",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "glitch／breakcore 標籤，x 待查"
+  },
+  {
+   "artist": "State Azure",
+   "album": "Pale Light of a Hollow Moon",
+   "year": 2022,
+   "label": "State Azure",
+   "country": "gb",
+   "faction": "space-dark-ambient",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp downtempo 標籤候選（Last.fm 聽眾 1020）；粗估聲音：賽博朋克氛圍、長音、暗",
+   "moodGuess": {
+    "x": 1.3,
+    "y": 0.8,
+    "z": -0.5,
+    "why": "賽博朋克氛圍、長音、暗"
+   },
+   "evidence": [
+    "https://stateazure.bandcamp.com/album/pale-light-of-a-hollow-moon",
+    "https://musicbrainz.org/release-group/8f824bc3-5aa4-46ae-998a-cdb649345e4f"
+   ],
+   "coverUrl": "https://f4.bcbits.com/img/a2293534699_5.jpg",
+   "bandcampUrl": "https://stateazure.bandcamp.com/album/pale-light-of-a-hollow-moon",
+   "bandcampTags": "Electronic,ambient,blade runner,cyberpunk,downtempo,electronica,United Kingdom",
+   "bcMinutes": 206,
+   "bcTracks": 11,
+   "bcDate": "04 Nov 2022 11:10:35 GMT",
+   "mbRgMbid": "8f824bc3-5aa4-46ae-998a-cdb649345e4f",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "206 分含 1 小時 50 分連續混音版"
+  },
+  {
+   "artist": "Leandro Fresco & Rafael Anton Irisarri",
+   "album": "La Equidistancia",
+   "year": 2017,
+   "label": "Leandro Fresco & Rafael Anton Irisarri",
+   "country": "ar",
+   "faction": "space-dark-ambient",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp downtempo 標籤候選（Last.fm 聽眾 928）；粗估聲音：Irisarri drone，厚殘響低頻",
+   "moodGuess": {
+    "x": 1,
+    "y": 1.6,
+    "z": -0.5,
+    "why": "Irisarri drone，厚殘響低頻"
+   },
+   "evidence": [
+    "https://leandrofrescorafaelantonirisarri.bandcamp.com/album/la-equidistancia",
+    "https://musicbrainz.org/release-group/78414003-136e-44d2-ab5c-d198e93b7ee7"
+   ],
+   "coverUrl": "https://f4.bcbits.com/img/a0557990406_5.jpg",
+   "bandcampUrl": "https://leandrofrescorafaelantonirisarri.bandcamp.com/album/la-equidistancia",
+   "bandcampTags": "Ambient,Leandro Fresco,Rafael Anton Irisarri,chillout,drone,the sight below,Argentina",
+   "bcMinutes": 41,
+   "bcTracks": 6,
+   "bcDate": "10 Apr 2017 00:00:00 GMT",
+   "mbRgMbid": "78414003-136e-44d2-ab5c-d198e93b7ee7",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Fresco 的暖色旋律，z 待查；廠牌待研究層查"
+  },
+  {
+   "artist": "Appleblim",
+   "album": "Liminal Tides",
+   "year": 2026,
+   "label": "quiet details",
+   "country": "gb",
+   "faction": "space-dark-ambient",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp downtempo 標籤候選（Last.fm 聽眾 862）；粗估聲音：drone field recording，靜",
+   "moodGuess": {
+    "x": 1.5,
+    "y": 0.8,
+    "z": -0.3,
+    "why": "drone field recording，靜"
+   },
+   "evidence": [
+    "https://quietdetails.bandcamp.com/album/liminal-tides",
+    "https://musicbrainz.org/release-group/07bcb425-a237-4059-b9c6-7b2747ab86ea"
+   ],
+   "coverUrl": "https://f4.bcbits.com/img/a2842325684_5.jpg",
+   "bandcampUrl": "https://quietdetails.bandcamp.com/album/liminal-tides",
+   "bandcampTags": "Ambient,chill-out,downtempo,drone,electronic,field recordings,United Kingdom",
+   "bcMinutes": 46,
+   "bcTracks": 6,
+   "bcDate": "18 Mar 2026 00:00:00 GMT",
+   "mbRgMbid": "07bcb425-a237-4059-b9c6-7b2747ab86ea",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "field recording drone，z、y 待查"
+  },
+  {
+   "artist": "Sphäre Sechs",
+   "album": "Extradimension",
+   "year": 2023,
+   "label": "Martin Stürtzer",
+   "country": "de",
+   "faction": "space-dark-ambient",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp downtempo 標籤候選（Last.fm 聽眾 732）；粗估聲音：dark ambient drone，低頻陰",
+   "moodGuess": {
+    "x": 1.3,
+    "y": 1.5,
+    "z": -1.3,
+    "why": "dark ambient drone，低頻陰"
+   },
+   "evidence": [
+    "https://phelios.bandcamp.com/album/extradimension",
+    "https://musicbrainz.org/release-group/effc5c00-ba0a-4562-8ba6-e4a6aed485e4"
+   ],
+   "coverUrl": "https://f4.bcbits.com/img/a1008408351_5.jpg",
+   "bandcampUrl": "https://phelios.bandcamp.com/album/extradimension",
+   "bandcampTags": "Ambient,Dark Ambient,Electronic,dark ambient,downtempo,drone,dub-techno,space ambient,Wuppertal",
+   "bcMinutes": 46,
+   "bcTracks": 6,
+   "bcDate": "03 Jan 2023 15:54:01 GMT",
+   "mbRgMbid": "effc5c00-ba0a-4562-8ba6-e4a6aed485e4",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "Sphäre Sechs＝Martin Stürtzer＋Christian Stritzel"
+  }
+ ],
+ "notes": []
+}
