@@ -35,3 +35,8 @@
 - 24724：Caspro《OFFLINE》Bandcamp 與 Apple 均 8 首約 31 分（卡單 9 首 36 分不符），卡面以 8 首為準。
 - 24725：cehryl 廠牌依 Apple ℗ 為 Pilot Study Records（卡單 label 空白）；Project Lazarus 的 Apple 版（2020、℗ Boris Segal）是後出串流版，年份維持 2019。
 - 24726：moodGuess 存疑：cehryl 判輕；Kaisaku 的「無鼓」預估無依據（future garage 可能有碎拍）、偏冷暗；Hibernation、Project Lazarus、Caspro 的 y 判輕；DJ Phixion x 2.9 在慢拖上限。主線這輪不因判輕汰。五張 thin、Hibernation full（僅因來源多，仍無獨立樂評）。
+
+## 研究 c 組（2026-11-06；條號 24701–24703）
+- 24701：c 組 8 張無「前次研究稿」可沿用（dropped-research.json 只有 ml73 Charlie North，非本組），全部新查。WebSearch 3 次用完（Akal Dub、Marley Carroll、Sweatson Klank，皆無樂評命中），其餘靠 Bandcamp ld+json、MB、iTunes lookup、維基 Polyenso／Tom Bailey。
+- 24702：鼓的種類一律採保守寫法：有廠方或樂評文字的才下型別（International Observer＝dub 慢拖無力；Sweatson Klank＝鬆拍為主、僅尾曲〈Ubiquitous〉為舞池曲，整張不歸舞池推進）；其餘（Gas Lab、Akal Dub、pheel.、John Dunder、Marley Carroll、Polyenso）沒有速度證據，寫「判不出」，不建議汰。判輕參考：Polyenso、Marley Carroll、Sweatson Klank。
+- 24703：年份以 MB first-release-date 為準，Bandcamp 頁面日期不同者寫入 notes（Akal Dub 2014 對 Bandcamp 2019；International Observer 2007-08-27 對 2007-01-09；pheel. 2023-10-31 對 2023-10-24）。Akal Dub 曲數 Bandcamp 8 首、Apple 6 首，卡面以 Bandcamp 為準。
