@@ -23,3 +23,23 @@
 - 23482 Brock Berrigan《Utah》Bandcamp 曲長加總 27 分 52 秒，略低於 28 分，視為正規專輯（有 12 吋黑膠、MB Album）。
 - 23483 moodGuess 存疑：Desert Dwellers（藝人自述含 tribal techno、psytrance、dubstep，x 低估）、Potatohead People（自述含 uptempo bumps、house／future boogie）。輕度存疑：Sweeps、Forhill、Juj、City Girl、Brock Berrigan（皆只有標籤，鼓與速度查無）。
 - 23484 Sweeps Bandcamp 列 12 首 31 分，卡單 13 首 34 分應為 Last.fm 含另一版本。
+
+## 研究 b 組（23491–23500）
+- 23491 Fennec《Let Your Heart Break》身分：fennecsound.com 與 fennecsound.bandcamp.com 互相 301／303 無限轉址，頁面開不了；以 MB RG 90c35020（2014-02-11）、Apple iTunes lookup（15 首、約 43.5 分、℗ Lovegiraffe Records）、維基「Fennec (DJ)」交叉。Fennec 是德州奧斯汀的取樣 house 製作人，這張是 2014 年自行發行起點。聲音無第一手資料：RYM 搜尋摘要為 downtempo／chillwave／minimal techno，Sputnik 清單歸 techno／house／IDM → moodGuess 存疑（x 恐 >2.2，四拍底鼓風險未排除），建議主線列高風險汰換候選。
+- 23492 Lovespirals《Future Past》Bandcamp 12 首（含 Rain Demo 加碼）、正式 11 首、約 48 分，卡單「14 首、54 分」與頁面不符；寫作層寫 11 首。MB 發行項廠牌 Chillcuts（CHL0901），自家廠牌，卡單 self-released 可沿用。〈Feel So Good〉自稱最放克、〈Love〉為氛圍 drum & bass 概念，其餘偏 lazy beats：moodGuess 存疑（x 2.4 非全曲慢拍）。
+- 23493 Blueprint《Chamber Music II》MB 與 Bandcamp（printmatic 帳號，標題 Chamber Music 2）一致，用 II。文案說原作 dark/moody beats＋怪異人聲取樣，未提 boom bap；有 Illogic 與 The Orphanage 人聲客串，非純器樂。moodGuess 存疑（卡單「boom bap、暖糊」無來源，z 可能偏冷）。
+- 23494 telepath《夢の国》年份採 MB 首發 2014（維基同），Bandcamp 2015-01-23 是智利 NO PROBLEMA TAPES 卡帶再發（NOP-022）。維基：Luke Laurila（阿克倫、俄亥俄），持續殘響／phaser、強低頻、J-pop 循環取樣，slushwave 開創者；單一來源，生年人名不重用。聲音偏靜重暖，z 冷風險（旋律難辨）仍在。
+- 23495 Badlands《Call to Love》身分三方一致（MB、Bandcamp、維基）；序數矛盾（Irish Times 第二張、FLOOD 第三張），寫作層不寫序數。作者自述聽 90 年代 rave（warehouse dub／techno）取「harsh, big, crushed sounds」，〈Doubts〉用 club／techno 拍；評論又拿 Portishead／Massive Attack 比。moodGuess 存疑：x 恐 >1.8、z 可能偏冷（卡單「夢幻流行霧」只是評論的一面）。
+- 23496 Lindsheaven Virtual Plaza《超越愛》身分一致（MB 2015-11-06；2020 Vaporwave Tapes Brasil 卡帶再發）；10 首、62 分，長曲。聲音僅標籤（vaporwave／mallsoft／future funk／lo-fi／trip-hop）與三則聽眾留言（溫暖、陽光、電影感）。moodGuess 存疑：future funk 四拍風險未排除，需聽。
+- 23497 OSCOB《praise the sun god》13 首、108 分，雙黑膠長度、MB Album；MB 另把 2024 Genom「理髪店 Beat Version」併進同 RG。聲音僅標籤與聽眾描述（barber beats、lounge／exotica 黑膠被曬變形、Adrian Sherwood 式）。moodGuess 存疑：無鼓型資料，Sherwood 暗示 dub 低頻，冷暖未定。
+- 23498 slowerpace 音楽《The Great Escape》credits 欄列的是被取樣來源的製作人（Spy From Cairo、Prem Joshua、Tantra Tribe 等八位），非演奏者；作者自介「almost everything is plundered」。是 plunderphonics 式專輯、非合輯非 remix 盤，原創性邊緣，MB Album，建議知悉後仍可收。無鼓型資料：moodGuess 存疑。
+- 23499 Hello Meteor《The End of All Known Land》14 首、約 44 分；MB 無廠牌，版權行 Evergreen Prefecture。Bandcamp 文案年代敘述自相矛盾（先寫首次登月再寫 1894），屬虛構設定，勿當史實。聲音只有標籤與聽眾留言（霧、鐘聲、厚空氣感，兩首「groovy」），無鼓型、速度資料，thin。
+- 23500 b 組整體：9 張中除 Lovespirals、Badlands 外聲音資料偏薄（status thin），是這批小眾自發行的共通限制；Bandcamp bcbits 音檔被 proxy 擋（403），無法自行試聽，建議主線對 Fennec、Badlands、Lindsheaven、Blueprint 抽聽。WebSearch 用 2 次（Fennec、Hello Meteor）；Badlands 1 次共 3 次。
+
+## 主線研究汰換（不佔條號；2026-11-06）
+研究層交件後汰 6 → 剩 13；被汰卡移到 `dropped-cards.json`／`dropped-research.json`。
+- 能量（四拍／club 拍／uptempo）：Desert Dwellers《The Great Mystery》（藝人自述含 tribal techno、psytrance、dubstep）、Potatohead People《Mellow Fantasy》（文案自述 uptempo bumps、house／future boogie、饒舌與 R&B 客座）、Fennec《Let Your Heart Break》（RYM 標 minimal techno、Sputnik 歸 house／IDM，Bandcamp 頁打不開，聲音無第一手來源）、Badlands《Call to Love》（作者自述 90 年代 rave、〈Doubts〉club／techno 拍，評論比 Portishead／Massive Attack，z 也偏冷）。
+- 長度：Brock Berrigan《Utah》全長 27 分 52 秒，不到 28 分（照 ml67 Luluc 先例）。
+- 色溫：Blueprint《Chamber Music II》（文案說原作是 dark, moody beats，另有饒舌客串）。
+- 照研究改卡單廠牌：Sweeps《departure》Hue.Hue、Forhill《Fragments》Stratford Ct.。
+- **不補位**：照實上架 13 張。

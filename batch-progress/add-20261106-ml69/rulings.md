@@ -38,3 +38,15 @@
 - 23582：廠牌推翻——Lipphead 實為 Def Pressé（DFPR33LP，非 Blockhead）；Liléa Narrative 實為 Under Cover（UC 416，非 self-released）；Emapea 黑膠為 Beat Catz 001，數位版維持 self-released。
 - 23583：moodGuess 存疑——Emapea（重鼓深低音、funk 鼓，x 偏低）、Lipphead（upbeat electronic funk）、Hysterical Love Project（無聲音來源、Discogs 另標 Industrial）、Liléa Narrative（長篇電子 cut-up）、Stream☾atcher（future funk 四拍）、Photon（僅標籤）、bvdub（無鼓長篇，動態可至壓倒性）。
 - 23584：thin 五張（HLP、Liléa、Stream☾atcher、Photon 與 Teal 以外）：Bandcamp 無說明且無樂評，WebSearch 3 次用盡。Stream☾atcher 所在地 Bandcamp 布加勒斯特、MB 標籤 austin，未定案，寫作層不寫所在地。
+
+## 主線研究汰換（不佔條號；2026-11-06）
+研究層交件後汰 11 → 剩 19；被汰卡移到 `dropped-cards.json`／`dropped-research.json`。
+- 能量（舞池／funk／electro／四拍）：Manatee Commune（文案「伸進舞池」、LED 鼓墊 break）、CASSOWARY（G-funk／nu-jazz 律動，暖無來源）、Asta Hiroki《Entropy》（活鼓、肌肉感低音、乾淨）、Jazz Playaz《Visions of a SIC World》（bold rhythmic beats、smooth jazz 偏亮）、Lapgan《History》（thumping frenzy、80 年代活力曲；簡介多在講前作）、Emapea《Bees, Trees and Flowers》（自述重鼓深低音、funk 鼓）、Lipphead《The Long Way》（廠牌文案 upbeat electronic funk、Discogs Electro）、Liléa Narrative《Nouvelle chair》（electro cut-up）、Stream☾atcher《Buffywave》（future funk 標籤、所在地矛盾）。
+- 聲音無來源且有反向標籤：Hysterical Love Project《Endless Bliss Weekender》（Discogs 另標 Industrial，查無任何聲音描述）。
+- 性質近合輯：fLako《The Mesektet》（廠牌文案自述是 2008 年前未發行或只數位流通的作品集成，36 首含 6 首 bonus）。
+- 照研究改卡單廠牌：L'Orange《The Mad Writer》Jakarta Records（JAKARTA046）、Bluetech Interchill Records、Monster Rally Golden Robot Records、Eagle Eyed Tiger Stratford Ct.。
+- 留下但聲音待評分驗證：Eagle Eyed Tiger、Photon（synthwave 標籤，z）、bvdub（無鼓長篇，y／z）、Dirty Art Club（曲名夜晚意象，z）、L'Orange（noir，z；池中同人《The Orchid Days》z 0.4）、Monster Rally（y）。
+- **不補位**：照實上架 19 張。
+
+## 鉤子層（a、b）（條號 23591–23595）
+- **23591**（先行配表，給 c 組讀）骨架歸屬 a、b 14 張 14 條：Acopia＝外請名家混一首＋兩首真人鼓（credits 面）；Yndling＝盤名就是一句話（奧斯陸、Spirit Goth）；Dirty Art Club＝27 首短曲的 beat tape（曲數與曲長）；Bluetech＝同一張裡暖 dub 與冷殘響並存（客座銅管）；Monster Rally＝身體與想像的夢境概念＋再生彩膠第二次壓製（載體面歸本張）；L'Orange＝一台 MPC 取 1950 年前電影對白做黑色電影嘻哈；Eagle Eyed Tiger＝找不到歸屬的單曲長成一張專輯；MindSpring Memories＝曲名改用馬拉雅拉姆文的 vaporwave 取樣；Purrple Cat＝讀書放鬆用途標籤的鋼琴 lofi（星空曲名只當一項，不當骨架）；Sweeps＝虛構星球 Helios Prime 的傳輸設定（Qrates 黑膠不指派）；Guitoud＝dub 成對版本的曲目；El Jazzy Chavo＝簡介自列配方（黃黑膠、舊唱盤、取樣機、咖啡）；Kalpataru Tree＝無名新人悄悄混進圈內播放清單；Koi.＝古怪曲名配夢幻器樂（collectivelanguage 帳號）。**c 組請避開**：簡介極簡、載體限量（Monster Rally 已占彩膠；Photon 黑膠 100 份請改走別面）、星空／宇宙曲名（Purrple Cat 一項、Sweeps 設定）、「日」後一字已用：經（Yndling）、壓（L'Orange）、交（Bluetech）、上（MindSpring）。Stratford Ct. 廠名 a 組只在 Eagle Eyed Tiger 寫廠名一次。
