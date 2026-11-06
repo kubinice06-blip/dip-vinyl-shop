@@ -2731,3 +2731,9 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 36 位寫：19 full、17 thin；不寫 4 位——Suff Daddy、SwuM.（研究稿只有一個來源網址）、sleepy fish（兩條來源都是 Stereofox 同一媒體，算一條來源，比照前例撤稿）、Wun Two & Boora（沒有聲音或做法事實，Boora 身分未核實）。
 - 題材照寫：The Nonce 的 Yusef Muhammad 2000 年在洛杉磯過世、得年 28、死因未明（原稿「陳屍高速公路旁」改為克制寫法）；Yoshi Wada 2021 年辭世；Tom Cora 1998 年死於黑色素瘤；Peter Kowald 2002 年在紐約因心臟病過世；Michel Pilz 2023 年、Teppo Hauta-Aho 2021 年、Rolf Kühn 2022 年辭世；Zero Kama 的 Dewitt 改名 Zoe，全文不用人稱代名詞。
 - 主線審稿 34 處：第一句補國籍或身分——Units、The Low Anthem、Wicca Phase、The Nonce「美國」，Talib Kweli、Q-Tip 改以「美國饒舌歌手」開頭，Tsutchie「日本 DJ 兼製作人」、Wen「英國製作人」、Phil Minton「英國即興人聲樂手」、Wachsmann 兩卡「英國」、Yoshi Wada「日本音樂人」、Zero Kama「奧地利」、Glotman 改以「低音提琴手兼作曲家」開頭、Favre「鼓手」、Kühn 卡補「德國兄弟檔」；單源或過度的最高級評語軟化——Madlib「最具影響力的現代製作人之一」刪除、Wachsmann「最好的小提琴手之一」改「重要小提琴手」、Hauta-Aho「最搶手」改「搶手」；Q-Tip 刪 2024 年入選搖滾名人堂（在世者不列榮譽，名人堂評語保留）；Vestigial 刪 2025 年再版的年份；渡辺→渡邊；Yoshi Wada、Phil Minton、Wen、Wicca Phase、The Low Anthem 刪句壓回 250 字。
+
+## ar-d-804（2026-11-06，自由爵士／前衛爵士、歐洲即興合作卡；獨立搖滾、dream pop、後龐克）
+
+- 38 位寫：28 full、10 thin；不寫 2 位——The Ric Colbeck Quartet（只有 Discogs 編制資料，身世與地位都空）、Tim Berne, Craig Taborn & Tom Rainey（唯一的聲音句是 David Torn 談 Taborn 個人，不是三重奏的聲音，比照「做法句只剩個人側寫」撤稿）。
+- 題材照寫：Sonny Simmons 早年流落舊金山街頭、2021 年 4 月過世；Giuseppi Logan 藥物濫用與精神疾病後消失數十年、2020 年 4 月過世（死因與新冠肺炎有關）；Tom Cora 1998 年死於黑色素瘤；Tony Oxley 2023 年、Tristan Honsinger 2023 年、Urs Voerkel 1999 年、Wolfgang Fuchs 2016 年過世（Voerkel 卒年研究稿以德文維基與 MusicBrainz 雙源核對）。
+- 主線審稿 45 處：第一句補國籍或身分（Mitchell 四卡、Braxton、Mahanthappa、Simmons、Logan、Lehman、Courvoisier、Tom Cora 兩卡、Honsinger、Voerkel、Zeena Parkins、Polyrock、Q and Not U、Bennink、Battaglia、Oxley、Guthrie、Raymonde、Sonic Boom、Art Ensemble）；在世者不列榮譽——Mitchell 刪 NEA 爵士大師（兩卡）、Zeena Parkins 刪與 Björk 巡演一句；最高級評語軟化——Purrkur Pillnikk 刪「那個年代最受歡迎也最有影響力」；單人卡壓回 250 字（Simmons、Logan 刪 Bill Dixon 引語等）；Roscoe Mitchell 跨卡重複的「稀疏而不協和」句只留 Sextet 一處；多人卡 Taborn/Baku、Beresford/Bennink 壓回 280 字內。
