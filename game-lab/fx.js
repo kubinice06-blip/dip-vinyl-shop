@@ -477,18 +477,21 @@
     liveFloats.forEach(f => { if (f.until > now && f.el.isConnected) others.push(f.box); else liveFloats.delete(f); });
     const avoid = (opt.avoid || []).map(boxOf).filter(Boolean).map(b => [b[0] - 4, b[1] - 4, b[2] + 4, b[3] + 4]);   // 留 4px：畫面震的時候也不擦到
     const score = b => others.reduce((t, o) => t + overlap(b, o) * 4, 0) + avoid.reduce((t, o) => t + overlap(b, o), 0);
-    // 候選位置：上下各 5 格 × 左右 0／半個字寬／一個字寬；離原位越近越先試（opt.prefer 'down' 時往下的先試）
+    // 候選位置：上下各 3 格 × 左右 0／半個字寬／一個字寬；離原位越近越先試（opt.prefer 'down' 時往下的先試）
+    // 挪動也有代價（pen＝每一單位挪動抵多少重疊面積）：寧可輕微壓到標籤，也不要飄離它描述的東西太遠；
+    // 字壓字的權重是 4 倍，所以兩個飄字撞在一起時還是會挪開。
     const step = fh + 4, down = opt.prefer === 'down' ? 1 : -1, cands = [];
-    for (let k = -5; k <= 5; k++) for (const j of [0, -0.5, 0.5, -1, 1]) {
+    const pen = 0.12 * fw * fh;
+    for (let k = -3; k <= 3; k++) for (const j of [0, -0.5, 0.5, -1, 1]) {
       const x = clampX(x0 + j * fw), y = clampY(y0 + k * step);
       cands.push({ x, y, cost: Math.abs(k) * 2 + Math.abs(j) * 3 + (k && Math.sign(k) !== down ? 1 : 0) });
     }
     cands.sort((p, q) => p.cost - q.cost);
     let best = null;
     for (const c of cands) {
-      const sc = score(foot(c.x, c.y));
-      if (!best || sc < best.sc) best = { x: c.x, y: c.y, sc };
-      if (sc === 0) break;
+      const sc = score(foot(c.x, c.y)), tot = sc + c.cost * pen;
+      if (!best || tot < best.tot) best = { x: c.x, y: c.y, sc, tot };
+      if (sc === 0) break;   // 依挪動成本排序：第一個完全不壓的位置就是最佳
     }
     d.style.left = Math.round(best.x) + 'px'; d.style.top = Math.round(best.y) + 'px';
     const rec = { el: d, box: foot(best.x, best.y), until: now + (dur + 300) / sp() };

@@ -942,10 +942,16 @@
           dx = Math.min(0, Math.round(br.left - 8 - (ar.left + ar.width / 2 + 30)));   // 泡泡在他右邊：數字往左讓
         }
       }
-      f.floatText(a, '−' + amount, sub, (target === 'e' ? 'toE' : 'toP') + (amount >= 6 || big ? ' big' : ''), { dy, dx, avoid: [els.bf, els.ename] });
+      f.floatText(a, '−' + amount, sub, (target === 'e' ? 'toE' : 'toP') + (amount >= 6 || big ? ' big' : ''), { dy, dx, avoid: [bubZone(), els.ename] });
     }
     // 飄字不能壓的標籤（fx.floatText 會挪開；同時飄的字彼此也會錯開）
     const KEEP_CLEAR = () => [els.ban, els.hist, els.php, els.ult, els.ehp, els.nm, els.chain];
+    // 他的泡泡：下一句（例如粗框的「殺氣騰騰」）會比現在這句高，往上長；先把上方留一段給它
+    const bubZone = () => {
+      const b = els.bf; if (!b || !b.classList.contains('on')) return null;
+      const r = b.getBoundingClientRect();
+      return r.width ? [r.left - 6, r.top - 34, r.right + 6, r.bottom + 2] : null;
+    };
     function floatSmall(anchor, text, cls, o) { const f = Fx(); if (f) f.floatText(anchor, text, null, 'small ' + (cls || ''), Object.assign({ ms: 520, rise: 20, avoid: KEEP_CLEAR() }, o || {})); }
     // 「你」這邊的小字（＋聲望、＋氣勢、你氣勢 −1）：壓在你自己的聲望／氣勢列上，不飄到橫幅上
     function floatMine(anchor, text, cls) {
@@ -959,7 +965,7 @@
       const a = actor('f');
       if (a && a.getBoundingClientRect().width) {
         const r = a.getBoundingClientRect(), sr = els.stageWrap.getBoundingClientRect();
-        f.floatText(a, text, null, 'small ' + (cls || ''), { ms: 620, rise: 14, dy: Math.round(Math.min(r.height * 0.7, sr.bottom - r.top - 10)), dx: Math.round(r.width * 0.5 + 40), avoid: [els.bf, els.ehp, els.ehpn, els.nm, els.phase, els.ban] });
+        f.floatText(a, text, null, 'small ' + (cls || ''), { ms: 620, rise: 14, dy: Math.round(Math.min(r.height * 0.7, sr.bottom - r.top - 10)), dx: Math.round(r.width * 0.5 + 40), avoid: [bubZone(), els.ehp, els.ehpn, els.nm, els.phase, els.ban] });
       } else floatSmall(els.segs, text, cls);
     }
 
