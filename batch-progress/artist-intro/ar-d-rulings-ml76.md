@@ -18,3 +18,6 @@
 - 改 `anthony naples`：刪「兩人被形容為紐約舞曲圈的代表人物。」（評價句）。
 - 改 `pan amsterdam`：「說他的作品「一點一點」把自己擊倒」→「聽到他的作品後深受吸引」（原句是英文引語的生硬改寫，語意不清）。
 - Zero Cult 國籍照補洞稿寫以色列（Discogs、MB）；卡單 country gr 是廠牌所在地，manifest 不改（只影響地區標示，可逆）。
+
+## 合併 main（2026-11-06）
+- 並行工作階段先上線了同一批藝人：Degiheugi（ar-d-814）、Potatohead People（ar-d-813）、Zero Cult（ar-d-814）、Ochre（ar-d-815）、Era（ar-d-816）。照先例讓給已上線版本，從 ar-d-809／810 的 output 與 progress keys 移除。**最終上線 ar-d-809 27 位、ar-d-810 17 位，共 44 位。**

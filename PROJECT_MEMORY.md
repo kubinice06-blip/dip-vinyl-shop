@@ -1,15 +1,37 @@
 # dip vinyl 專案備忘錄
 
-### 2026-11-06｜dip-vinyl-shop｜情緒薄格 Bandcamp「有鼓」名單 ml76／ml77：66 張上線（落恍惚 47）＋藝人介紹 49 位
+### 2026-11-06｜dip-vinyl-shop｜情緒薄格 Bandcamp「有鼓」名單 ml76／ml77：66 張上線（落恍惚 47）＋藝人介紹 44 位
 
 - **店主 11-06**：「有些要死不活的音樂也會有鼓推進」「全都上架吧」→ 前兩輪因有拍推進被汰／被舞池標籤先篩掉的 473 張切十批、五個工作階段並行；本工作階段做 ml76（`pick-ml76.json` 47，條號 24521）、ml77（`pick-ml77.json` 47，條號 24601）。只汰「鼓＋攻擊性」與「舞池推進」，**判輕判冷不汰**（落其他格照實計）；前輪研究稿 11 張直接沿用、只補鼓型。
 - **ml76**：主線汰 9（合輯、EP、同人超量、house／dnb 與舞曲自述）→ 研究汰 3（Little Dragon、Abakus、Dan le Sac 舞池）→ **上線 35、落恍惚 27（77%）**；其他格沸騰 2、頹靡 3、放鬆 3。
 - **ml77**：主線汰 13（Chillhop 季度合輯、重混輯、翻唱輯、Kompakt 四拍、同人超量）→ 研究汰 3（GILA 攻擊性、Banco de Gaia 舞池、Invisible Allies remix 過半）→ **上線 31、落恍惚 20（65%）**；其他格沸騰 4（皆 x 3.0 貼線）、頹靡 5、雀躍 1、平靜 1。
 - **結論**：有鼓名單 66 張只有 6 張判躁，慢拖鼓照「有鼓不等於躁」確實多留在靜；出格主因是判冷（頹靡 8）與判輕（放鬆／雀躍 4），不是鼓。
 - **寫入（已即時生效）**：card_catalog 66、KV 66 鍵逐字回讀一致（stamp 20261106ml76／ml77）、試聽 65 ready／1 unavailable（Govinda，Apple 查無；最紅那首換 56 張）、seed +66；prepare／published gate 皆 0 error；頂點 0。封面 CAA 59、Bandcamp 5、Apple 官方 2（CAA 404）。§1 人工身分 2（Smigonaut、LAL）。審稿改 3 張（Smidley 單源命名軼事出處頁查無、Flox 單源評價、Blackfish 時序倒置）。
-- **藝人介紹**：ar-d-809 寫 28（不寫 Travelling Day、Erik Jackson）、ar-d-810 寫 21（不寫 Dr. Toast）；審稿改 8 處（刪單源評價／獎項、截止日後未核實的 Foxing 休團、Govinda「EP」誤稱）。介紹總數 10,780（合併 main 前）。
+- **藝人介紹**：ar-d-809 寫 28（不寫 Travelling Day、Erik Jackson）、ar-d-810 寫 21（不寫 Dr. Toast）；審稿改 8 處（刪單源評價／獎項、截止日後未核實的 Foxing 休團、Govinda「EP」誤稱）。合併 main 後 Degiheugi、Potatohead People、Zero Cult、Ochre、Era 讓給並行批已上線版本 → 最終 ar-d-809 27、ar-d-810 17 位；介紹總數 10,839。八格（合併 main 後重建）恍惚 1,868、頹靡 1,862，錨點 104/104。
 - **主要檔案**：`batch-progress/add-20261106-{ml76,ml77}/`、`onboarding-manifest-add-20261106-ml7[67]-20261106.json`、`batch-progress/mood-cells-20261022/{curation-ml76,curation-ml77,master-ml76,master-ml77,cut-artist-intros-ml76.mjs,SCENES.md}`、`desc-tools/batches/{cards,research,hooks,input,output}/add-20261106-ml7[67]*`、`batch-progress/mood-axes/score-{ml76,ml77}/`、`batch-progress/artist-intro/{roster-ml76-ar-d-809,roster-ml77-ar-d-810,ar-d-rulings-ml76.md}`、`data/artist-intros/`、`seed_cards.json`、`data/mood/`、`genre-tree.json`、`card-subgenres.json`、`draw-covers/`、試聽地圖。
 - **驗證**：`verify-album-onboarding --published` 兩批 0 error；`verify-wave-kv` 35／35、31／31；`build-card-moods` 錨點 104/104；`qa-artist out` 兩批只剩刻意不寫的缺位。
+
+### 2026-11-06｜dip-vinyl-shop｜情緒薄格恍惚 Bandcamp 第三輪「有鼓」名單 ml80／ml81：74 張上線（落恍惚 57）＋藝人介紹 33 位
+
+- **店主 11-06「有些要死不活的音樂也會有鼓推進」「全都上架吧」**：前兩輪因有拍推進汰掉／標籤先篩掉的 473 張切十批、五個工作階段並行；本工作階段做 ml80（`pick-ml80.json` 47）與 ml81（`pick-ml81.json` 47），條號 24841／24921。卡單即策展，只汰鼓＋攻擊性與舞池推進（四拍、house／techno／breakbeat、明顯中快速），判輕判冷不汰、交評分落格。研究判有鼓的 9 張沿用前輪研究稿只補鼓型。
+- **ml80**（`add-20261106-ml80`）：主線汰 10（舞池推進 5、同人超量 3、直播即興集、片段集）→ 研究汰 1（Sephira 120–140 BPM）→ **上線 36、落恍惚 33（92%）**；出格 Lee Scott、Eivør 落頹靡，EAT STATIC 落暴躁。
+- **ml81**（`add-20261106-ml81`）：主線汰 8（舞池推進 2、EP 2、同人超量 2、合輯、mixtape）→ 研究汰 1（Romare house）→ **上線 38、落恍惚 24（63%）**；出格頹靡 7、放鬆 4、沸騰 3。
+- **寫入（已即時生效）**：card_catalog 74、KV 74 鍵逐字回讀一致（stamp 20261106ml80／ml81）、試聽 59 ready（48 張換成最紅那首）／15 unavailable、seed +74；prepare／published gate 皆 0 error；頂點 0。封面 CAA 63＋Bandcamp 11。§1 人工身分 4（Andi Otto、Dj Drez、RUMTUM、ALBA）。審稿改 12 張（單源句、本名單源、性別代名詞、樂評轉述、ASURA 里昂實為廠牌地）。
+- **藝人介紹**：ar-d-813 上線 16（撤寫 7：單源 6、Random Rab 單一訪談無國籍）、ar-d-814 上線 17（撤寫 RYKARD；Gnarls Barkley 刪「兩人都出身亞特蘭大」不實句）；介紹總數 10,795（合併 main 的 ar-d-815／816 後）。
+- **八格**（合併 md44／md45 後重建）：恍惚 1,821、頹靡 1,854；錨點 104/104。類型樹、抽卡封面、card-moods 重建。
+- **主要檔案**：`batch-progress/add-20261106-{ml80,ml81}/`、`onboarding-manifest-add-20261106-ml8[01]-20261106.json`、`batch-progress/mood-cells-20261022/{curation-ml80,curation-ml81,master-ml80,master-ml81,cut-artist-intros-ml80.mjs,SCENES.md}`、`batch-progress/bandcamp-dt-20261105/RES-ADDENDUM-r3.md`、`desc-tools/batches/{cards,research,hooks,input,output}/add-20261106-ml8[01]*`、`batch-progress/mood-axes/score-{ml80,ml81}/`、`batch-progress/artist-intro/{roster-ml80-ar-d-813,roster-ml81-ar-d-814,ar-d-rulings-ml80.md}`、`data/artist-intros/`、`seed_cards.json`、`data/mood/`、`genre-tree.json`、`card-subgenres.json`、`draw-covers/`、試聽地圖。
+- **驗證**：`verify-album-onboarding --published` 兩批 0 error；`verify-wave-kv` 36／36、38／38；`build-card-moods` 錨點 104/104；`qa-artist out` 兩批只剩刻意不寫的缺位。
+### 2026-11-06｜dip-vinyl-shop｜情緒薄格頹靡 Bandcamp「有鼓」名單第三輪 md44／md45：55 張上線（落頹靡 37）＋藝人介紹 31 位
+
+- **店主 11-06「有些要死不活的音樂也會有鼓推進」「全都上架吧」**：前兩輪因有拍被汰或被標籤篩掉的 473 張切十批、五個工作階段並行；本工作階段做 md44（`pick-md44.json` 48，條號 25001）與 md45（`pick-md45.json` 47，條號 25081）。卡單即策展；**只汰攻擊性鼓、舞池推進、資格與同人超量，判暖判輕不汰**。前兩輪研究過的 18 張沿用 `dropped-research.json`，只補鼓型。
+- **md44**（`add-20261106-md44`）：主線初篩汰 18（自我同名／合輯／版本集／EP 8、文案直述舞池 5、同人 5）→ 研究汰 1（Halou《Sans Soucie》非專輯曲目集）→ **上線 29、落頹靡 18（62%）**；出格恍惚 7、平靜 2、放鬆 1、冷冽 1（Chris Imler）。
+- **md45**（`add-20261106-md45`）：主線初篩汰 19（EP／合輯／精選／擴充重發／原聲／remix 9、舞池 6、同人 4）→ 研究汰 2（Andy Leech 回顧精選、lb honne deep house）→ **上線 26、落頹靡 19（73%）**；出格恍惚 4、平靜 2、放鬆 1。
+- **結論**：有鼓名單上線率 58%（95 → 55），三輪最高；55 張只有 1 張 x 過 3——「有鼓不等於躁」成立，出格主因是色溫（有鼓的 downtempo 旋律多、偏暖）。三輪合計上線 212（第一輪 104、第二輪 53、本工作階段 55；ml74–81 另計）。
+- **寫入（已即時生效）**：card_catalog 55、KV 55 鍵逐字回讀一致（stamp 20261106md44／md45）、試聽 53 ready／2 unavailable（Brael & Tokyo Bloodworm、Pontiac Streator，Apple 查無；最紅那首換 38 張）、seed +55；prepare／published gate 皆 0 error；頂點 0。封面 CAA 50＋Bandcamp 5（§1 人工身分 1、CAA 404 3、CAA 500 1）。三軸依 §0.8.1 人工錨點（經典 3／4＝40／15，用 Bandcamp 候選檔比同人聽眾排序）。審稿 md44 改 4 處（單源榜名次 2、粉絲維基國籍、單源生年）、md45 改 1 處（single take 誤譯「單軌」），皆同步研究／鉤子／輸入三層。
+- **藝人介紹**：ar-d-815 寫 18／不寫 2（Ness、Brael & Tokyo Bloodworm 單源）、ar-d-816 寫 13／不寫 5（缺國籍或聲音素材）；審稿各改 6 處（刪「據」轉述詞、補 MB 第二來源、Gi Gi 補國籍開頭）。介紹總數 10,762（本分支）。
+- **八格**（本分支）：頹靡 1,845、恍惚 1,764；錨點 104/104。類型樹、抽卡封面、card-moods 重建。
+- **主要檔案**：`batch-progress/add-20261106-{md44,md45}/`、`onboarding-manifest-add-20261106-md4[45]-20261106.json`、`batch-progress/mood-cells-20261022/{curation-md44,curation-md45,master-md44,master-md45,RES-DISPATCH-r3.md,cut-artist-intros-md44.mjs,SCENES.md}`、`desc-tools/batches/{cards,research,hooks,input,output}/add-20261106-md4[45]*`、`batch-progress/mood-axes/score-{md44,md45}/`、`batch-progress/artist-intro/{roster-md44-ar-d-815,roster-md45-ar-d-816,ar-d-rulings-md44.md}`、`data/artist-intros/`、`seed_cards.json`、`data/mood/`、`genre-tree.json`、`card-subgenres.json`、`draw-covers/`、試聽地圖。
+- **驗證**：`verify-album-onboarding --published` 兩批 0 error；`verify-wave-kv` 29／29、26／26；`build-card-moods` 錨點 104/104；`qa-artist out` 兩批只剩刻意不寫的缺位。
 
 ### 2026-11-06｜dip-vinyl-shop｜藝人介紹剩餘補登六批 ar-d-801～806：寫 201 位（總數 10,731）
 
