@@ -18,3 +18,10 @@
 - 自我同名 3 張（Acopia、CASSOWARY、Manatee Commune）MB 釘住、`selfTitledVerified`，照 ml67 Acetone 先例收。
 - 名稱照 MB：Lilea Narrative《Nouvelle Chair》→ Liléa Narrative《Nouvelle chair》（6376d165…，2007-06-19）。Kalpataru Tree《Scattered Fragments of the Eternal Dream》Bandcamp 2006-10-31、MB 2007-01-01，年份照 MB 2007。Yndling 同名另有 2025-10 單曲，取 Album（e99c91fb…）。
 - 進研究但待把關（`curatorRisk`）：Bluetech（池中同人 z 0.1）、CASSOWARY（G-funk 拍，x）、Monster Rally（exotica 明亮，y）、Manatee Commune（dance 標籤）、Asta Hiroki（人聲客串、乾淨）、Jazz Playaz（smooth jazz，y）、Emapea（重鼓）、Liléa Narrative（electro）、Stream☾atcher（future funk 標籤）、monde ufo（乾淨小品）、Teal（28 分 6 首）、bvdub（純 ambient，z）。
+
+## 研究 b 組（條號 23571–23580）
+- 23571：Lapgan《History》Bandcamp 簡介前半（imagined history、Nishant Mittal、取樣寶萊塢／Lollywood／坦米爾）實為前作《Duniya Kya Hai》的描述，facts 已改為標明前作，History 專屬事實只取 Veena Sounds、曲目、封面。卡單 label 為 self-released，簡介稱發行於 Veena Sounds（MB 未列廠牌），交主線定。
+- 23572：Bandcamp 小眾自發行（MindSpring、Purrple Cat、Sweeps、Jazz Playaz、Guitoud、El Jazzy Chavo、Koi.）查無評論，聲音 facts 僅標籤與曲長，一律 status thin 並在 notes 標明屬推斷。
+- 23573：moodGuess 存疑：Asta Hiroki（活鼓、肌肉感低音、精緻乾淨）、Jazz Playaz（smooth jazz、自述 bold rhythmic beats）、Lapgan（thumping frenzy、短曲快切）、Purrple Cat（piano／relax／study，偏輕）、Sweeps（輕，證據缺）。
+- 23574：最貼近靜重暖者 Kalpataru Tree（8 首 6–9 分半、psy-dub）、Guitoud（dub）。年份 Kalpataru 照 MB 2007。
+- 23575：10 張皆為正規全長專輯（MB Album，無次類型），無合輯／EP。

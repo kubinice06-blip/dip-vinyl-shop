@@ -17,3 +17,9 @@
 - 進研究但待把關（`curatorRisk`）：The Saxophones（乾淨 exotica slowcore，y）、Forhill（chillsynth 鼓機，x）、Brock Berrigan（28 分、boom bap）、Desert Dwellers《The Great Mystery》（部落鼓，x）、Kalpataru Tree（純氛圍，z）、Fennec（Bandcamp 自有網域抓不到，聲音無資訊）、Lovespirals（電子拍）、telepath（slushwave 旋律不明，z）、Lindsheaven Virtual Plaza（future funk 標籤，x）。
 - 名稱照 MB：BLUEPRINT《Chamber Music 2》→ Blueprint《Chamber Music II》（a56b1ccc…）。telepath《夢の国》MB 首發 2014-03-18（Bandcamp 頁為 2015 年 NO PROBLEMA TAPES 卡帶再發），年份 2014。
 - 本線不再套 Bandcamp Daily「要有專文」門檻（協調端已用 Last.fm 收聽 ≥1,000 篩過，店主勾選頁未勾除）；嘻哈 beat tape 照 ml42／ml47 先例收（lo-fi hip-hop 兩批落格 100%）。
+
+## 研究 a 組（23481–23490）
+- 23481 廠牌：Desert Dwellers《The Great Mystery》卡單 self-released，MB 為 Black Swan Sounds（2015-03-20）與 Desert Trax（2015-04-13）；採 Black Swan Sounds。Sweeps 卡單 self、MB Hue.Hue，Forhill 卡單 self、MB 與 AOTY 為 Stratford Ct.，facts 採 MB。
+- 23482 Brock Berrigan《Utah》Bandcamp 曲長加總 27 分 52 秒，略低於 28 分，視為正規專輯（有 12 吋黑膠、MB Album）。
+- 23483 moodGuess 存疑：Desert Dwellers（藝人自述含 tribal techno、psytrance、dubstep，x 低估）、Potatohead People（自述含 uptempo bumps、house／future boogie）。輕度存疑：Sweeps、Forhill、Juj、City Girl、Brock Berrigan（皆只有標籤，鼓與速度查無）。
+- 23484 Sweeps Bandcamp 列 12 首 31 分，卡單 13 首 34 分應為 Last.fm 含另一版本。
