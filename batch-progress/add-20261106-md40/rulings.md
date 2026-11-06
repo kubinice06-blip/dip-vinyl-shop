@@ -17,3 +17,16 @@
 - 自我同名：Halou《Halou》（MB rgMbid 釘住，2008 年 Halou 第四張專輯，身分以 rgMbid 為證）。
 - 同人多張：Disparition 3、Between Interval 2、2814 1（池中另 1）、All India Radio 1；同人不設上限。
 
+
+## 研究 c 組（23821–23830；2026-11-06）
+- 23821 Martin Stürtzer《Illumination Cycle》：moodVerdict borderline（Berlin School 音序脈動 x 風險）。單源（只有 Bandcamp＋Synphaera 廠牌官網），status thin。身分無誤。
+- 23822 mars kumari《I Thought I Lost You》：moodVerdict keep（文案 mournful／tenebrous／power electronics）。單源 thin。建議 label 改 Bruiser Brigade（卡單寫藝人名）；年份 2023 維持。
+- 23823 Bed《Spacebox》：moodVerdict drop（DeBaser 樂評：鼓刷、低音大提琴、幾乎全原聲，判輕、y 不足）。建議 label 改 Ici d'ailleurs（IDA022）；年份 MB 2002／Bandcamp 2003-03-11 有落差，維持 2002、寫作層勿寫具體日。單源（用戶樂評）thin。
+- 23824 Black Boboi《Sepia》：moodVerdict borderline（trip-hop＋techno 拍、旋律起伏、合唱人聲）。Tokyo ON＋Bandcamp，full。
+- 23825 Rún《Rún》：moodVerdict borderline（y 重、z 冷證據強；〈Terror Moon〉雷鳴打擊 x 風險）。Rocket Recordings 廠牌頁＋Bandcamp，full（無獨立樂評）。
+- 23826 Disparition《Granicha》：moodVerdict drop（雙專輯、techno／工業／爵士／流行雜陳，Brainwashed 稱 crisp and vibrant）。moodGuess 推翻。full。
+- 23827 worriedaboutsatan《Crystalline》：moodVerdict borderline（專輯層級無聲音文字，樂團史顯示 glitch／techno 根基）。單源 thin。
+- 23828 il:lo《Lucent》：moodVerdict drop（文案 tension and hope、invigorating、light emerges）。單源 thin。
+- 23829 Burning Pyre《Imago》：moodVerdict borderline（pristine、melodic stabs、skittering percussion 判輕；enveloping subs／dub 支持重）。Bandcamp 與 Rubadub 同稿，單源 thin。
+- 23830 Disparition《Palm in Mirror》：moodVerdict drop（官網直述 storm of driving beats、shimmering textures）。moodGuess 推翻。full（藝人官網為自家稿）。
+- 彙總：drop 4（Bed、Granicha、Lucent、Palm in Mirror）、borderline 5、keep 1（mars kumari）。WebSearch 用 3 次（Disparition 無評、Bed 取得 AllMusic／Uncut 摘要但頁面 403、Burning Pyre／il:lo 無結果）。
