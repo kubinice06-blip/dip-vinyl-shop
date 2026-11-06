@@ -19,3 +19,15 @@
 - 年份以原盤首發為準：Peter Bjärgö《A Wave of Bitterness》2009（Bandcamp 版是 2019 重新母帶）、Webinar™ 2021（MB 首發 2021-07-03，卡單寫 2024）、Soapkills《Bater》2000（Bandcamp 2000-09，MB 只記 2001；研究層核實）。
 - 保留 19 張的邊距風險逐張寫在卡單 `curatorRisk`（研究層逐條查）。
 
+
+## 研究 b 組（24291–24300）
+- 24291　Rom Di Prisco《Cryptidalia》：Bandcamp 自訂網域 303／301 互指迴圈，curl 與 WebFetch 皆抓不到一手文案。改用 Discogs（自行發行、風格 Dark Ambient／Trip Hop／Progressive Trance）、Wikipedia（作者本行 breakbeat／big beat／goa／psytrance）、Sputnik 聽眾評論（techno／house／EBM）。moodGuess 存疑，建議汰；label 填自行發行。
+- 24292　ambientium《Fractal Philosophy》：Kahvi Collective kahvi265（2009-02-16）；Bandcamp 發行者為本人。psychill／psybient，聽眾稱 psychedelic downtempo，無鼓直述。輕度存疑，status thin，列備汰、不建議直接汰。
+- 24293　Peter Bjärgö《A Wave of Bitterness》：原盤 Kalinkaland Records 2009-08-28（MB、Discogs、Spirit of Metal 一致）；Cyclic Law 公告寫「from 2010」與其餘衝突，採 2009。Bandcamp 版為 2019 重新母帶、Cyclic Law 重發。label 填 Kalinkaland Records。聲音無衝突，保留。
+- 24294　Monophona《The Spy》：2012-11-24 自行發行（Discogs 廠牌欄 music:LX）。Maxazine 直述有鼓手與打擊、製作人為 drum 'n' bass 背景，原聲吉他加人聲，樂評說勝過「陽光系 chillout」。判輕、判暖、有鼓三疑，moodGuess 存疑，建議汰。
+- 24295　Rabit《Stranger in a Strange Land》：label 填 Halcyon Veil（Rabit 自營，HALC044 卡帶 2026-05-01；數位 2026-03-26）。Bandcamp 帳號名 gangstalkers 非廠牌。無樂評，Discogs 風格 Screw／Trip Hop，有無拍子推進無直接證據，不汰、待聽。
+- 24296　WMD《We Never Seem To Have Enough Time》：自行發行（Michael Erickson，波特蘭），帳號名 wmdchiptune 非廠牌。lofi／melancholy；聽眾留言一則陰天灰、一則光在隧道盡頭，冷暖兩端並存。無樂評，輕度存疑，不建議汰。
+- 24297　boerd《Panacea》：Bandcamp 無文案、無演出名單、無樂評，WebSearch 額度已用於他張；只有標籤與曲目，facts 8 條、thin。聲音無法驗證，不建議汰。
+- 24298　Andrew Tasselmyer《Yesteryear》：Seil Records（Seil 026）。來源直述鋼琴經磁帶處理改造、無鼓、quiet／melancholic／textured。標籤含 acoustic／piano／neoclassical，輕度存疑，不建議汰。短評（The Lifted Index、Lost Tribe Sound）為 Bandcamp 頁轉載，未查到原文。
+- 24299　Pontiac Streator《Triz》：Motion Ward MW008。Discogs 黑膠逐曲標 BPM 80–120，是拍子導向的 downtempo，與卡單「抽象 ambient」牴觸，另有客座（Mister Water Wet、Ulla）。moodGuess 存疑，建議汰。
+- 24300　本組統計：建議汰 3（Rom Di Prisco、Monophona、Pontiac Streator）；備汰 1（ambientium）；推翻策展層年份／廠牌 0 處，補廠牌 4 處（Bjärgö、Rabit、Tasselmyer、Pontiac）。WebSearch 用 3 次（Rom、Bjärgö、Monophona）。
