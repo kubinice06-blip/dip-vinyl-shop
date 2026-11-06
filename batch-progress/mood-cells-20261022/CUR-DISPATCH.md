@@ -12,7 +12,11 @@
 
 ## 頹靡 md（靜＋重＋冷）
 
-評分規則在 `batch-progress/mood-axes/score500/BRIEF.md`（先把 X／Y／Z 三節含 2026-10-22 的兩條新規則讀完）。要落頹靡，三軸都得過：
+評分規則在 `batch-progress/mood-axes/score500/BRIEF.md`（先把 X／Y／Z 三節含 2026-10-22 的兩條新規則讀完）。
+
+**有鼓不等於躁（2026-11-06 店主：「鼓推進有時候其實也沒關係」「有些要死不活的音樂也會有鼓推進」）**：適用頹靡與恍惚兩線，策展與研究層都照這條。慢、拖、無力、要死不活的鼓（slowcore、sadcore、慢 trip-hop、dub、cloud rap、拖拍的 downtempo）照 BRIEF X 軸 10-22 標準仍是靜（有拍沒攻擊性＝2–2.9），**不准只因「有鼓／有拍推進」就汰**。只有兩種才汰：(1) 鼓＋攻擊性（失真牆、嘶吼、音壓貼臉）；(2) 舞池推進——四拍底鼓、house／techno／breakbeat 的跳舞律動、明顯中快速、讓人想動。研究稿寫「有拍推進」時要寫清楚是哪一種；判不出來的留，交給評分。Bandcamp 線 ml68–73、md39–43 因「有拍推進」汰掉的 93 張，多數是第一種誤判（名單 `batch-progress/bandcamp-dt-20261105/beat-candidates.json`）。
+
+要落頹靡，三軸都得過：
 
 1. **能量要靜（x ≤ 2.7）＝被往下拉、被包住、被催眠**（2026-10-23 體感標準）。很大聲但把人往下壓的是靜：Sunn O)))、Earth 2、Boris《Altar》、Khanate、Low《Double Negative》、Scott Walker《The Drift》都在頹靡；慢的 doom 若是壓人下沉也可收，但嘶吼暴烈、讓人繃緊的落亢奮，不收。**安靜但讓神經緊繃的是躁**（Feldman《Rothko Chapel》、Ligeti、Penderecki、恐怖配樂的驚嚇段多的盤）→ 冷冽或亢奮，不收。
 2. **質地要重（y ≥ +0.8）**：低頻厚、失真、殘響長、糊。2026-10-22 新規則：**包覆感也算重**——殘響霧、厚合成器墊、磁帶糊，沒有失真也行。乾淨、有空氣、聲部分明的（純淨極簡古典、乾木吉他 sadcore、ECM 式北歐爵士）會判輕而落**平靜**，不收。
