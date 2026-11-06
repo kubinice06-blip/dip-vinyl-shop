@@ -3865,4 +3865,5 @@ window.DipPreviewStatus = Object.freeze({
   "rún|rún": "unavailable",
   "macroblank|tales of the cypher": "unavailable",
   "moth equals|sick puppy": "unavailable",
+  "ambientium|fractal philosophy": "unavailable",
 });

@@ -1,0 +1,806 @@
+{
+ "schemaVersion": 1,
+ "batch": "2026-10-20-md43",
+ "batchNote": "薄細項策展線（add-20261106-md43）",
+ "createdAt": "2026-11-06T04:41:08Z",
+ "albums": [
+  {
+   "artist": "Between Interval",
+   "album": "Legacy",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "1fe4f6f7-c54e-4d17-b717-5d066138ba84",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "太空／深空 ambient：Bandcamp downtempo 標籤候選第二輪（Last.fm 聽眾 17416）；粗估聲音：暗氛圍，深聽，陰冷長音｜⚠ 文案提合成器序列、琶音與 dub techno 元素，留意有拍推進｜MB release-group 1fe4f6f7-c54e-4d17-b717-5d066138ba84：title「Legacy」、Album、first-release-date 2017-04-07、artist-credit「Between Interval」。證據：https://betweeninterval.bandcamp.com/album/legacy https://musicbrainz.org/release-group/1fe4f6f7-c54e-4d17-b717-5d066138ba84",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2017,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/1fe4f6f7-c54e-4d17-b717-5d066138ba84/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-06T04:41:08Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-06 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": 17416,
+    "source": "manual:depth-rubric（§0.8.1）",
+    "checkedAt": "2026-11-06T04:41:08Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 17416）；主線：同人《Autumn Continent》等更多人聽，本張非代表作＝經典 3；Spotted Peccary 首發即上串流＝冷門 3；space ambient 長篇＝硬蕊 3（機器 3/4/3）"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "往更遠處探索的欲望，被他看成人類的遺產。瑞典音樂人 Stefan Strand 掛著 Between Interval 這個名號，《Legacy》已排到第五號，標題取自這個想法。更細的意思他選擇留白，讓聽者替音樂自己編出故事與畫面。聲音從 Berlin school 與太空音樂出發，摻進 dub techno，合成器序列與琶音推著音景前進，次諧波的低頻脈動穿過其間。Spotted Peccary 接手發行，2017 年 4 月 7 日現身，10 首走完 51 分鐘出頭。",
+    "sourceUrls": [
+     "https://betweeninterval.bandcamp.com/album/legacy",
+     "https://musicbrainz.org/release-group/1fe4f6f7-c54e-4d17-b717-5d066138ba84"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/aa/78/66/aa7866d2-de9a-0167-ab45-884d7c5a0545/mzaf_1659925573037193234.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-06T04:43:42.599Z",
+    "appleCollectionId": "1214445309",
+    "storefront": "SE",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple se 1214445309「Between Interval《Legacy》」：曲目 10/10 對上 MB 原盤（Apple 共 11 軌），取第 1 軌〈The Tunnel〉。主線 2026-11-06 lookup 核對、試聽檔 HTTP 206。",
+    "trackName": "Septimal Laws",
+    "popularity": "deezer-rank"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "ASURA",
+   "album": "Radio Universe",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "6e0a6d62-c231-44f4-aa63-5d643e0bf991",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "太空／深空 ambient：Bandcamp downtempo 標籤候選第二輪（Last.fm 聽眾 16166）；粗估聲音：長篇氛圍，宇宙感，慢鋪｜⚠ 文案：深低音 drone＋合成器墊，但也有招牌 downtempo 曲，留意有拍｜MB release-group 6e0a6d62-c231-44f4-aa63-5d643e0bf991：title「Radio Universe」、Album、first-release-date 2014-10-21、artist-credit「Asura」。證據：https://ultimae.bandcamp.com/album/radio-universe https://musicbrainz.org/release-group/6e0a6d62-c231-44f4-aa63-5d643e0bf991",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2014,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/6e0a6d62-c231-44f4-aa63-5d643e0bf991/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-06T04:41:08Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-06 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": 16166,
+    "source": "manual:depth-rubric（§0.8.1）",
+    "checkedAt": "2026-11-06T04:41:08Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 16166）；主線：Ultimae 第四張，同人《Life²》更多人聽＝經典 3；Ultimae 當代主力廠＝冷門 3；space music 長篇＝硬蕊 3（機器 3/4/3）"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "這趟銀河之旅，從一首將近十分鐘的序曲出發。法國作曲家 Charles Farewell 替自己取名 ASURA，開場的〈Overture〉足足 9 分 55 秒。Ultimae 介紹這張時，說它重探七〇年代的太空音樂：低音 drone 上疊多層合成器墊，像 Jarre、Schulze 與 Vangelis 的現代回聲，和他出名的 downtempo 恰成對比。2014 年 10 月 21 日當天上架的 10 首，構成他在該廠牌第四張作品。",
+    "sourceUrls": [
+     "https://ultimae.bandcamp.com/album/radio-universe",
+     "https://musicbrainz.org/release-group/6e0a6d62-c231-44f4-aa63-5d643e0bf991"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e3/76/fc/e376fc8b-7420-935b-b731-3d8d60ac60b5/mzaf_935597630847325691.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-06T04:43:44.381Z",
+    "appleCollectionId": "927523294",
+    "storefront": "FR",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple fr 927523294「Asura《Radio Universe》」：曲目 10/11 對上 MB 原盤（Apple 共 10 軌），取第 1 軌〈Overture〉。主線 2026-11-06 lookup 核對、試聽檔 HTTP 206。",
+    "trackName": "Lonely Star",
+    "popularity": "deezer-rank"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "All India Radio",
+   "album": "Afterworld",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "362a9c2b-71b5-49c3-abb8-0b572f7bf30b",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "暗色 ambient rock／post-rock 電子：Bandcamp downtempo 標籤候選第二輪（Last.fm 聽眾 15910）；粗估聲音：暗氛圍後搖，殘響吉他，冷｜⚠ 多位客座人聲（含 Devin Townsend）；同人池中《The Unified Field》落頹靡｜MB release-group 362a9c2b-71b5-49c3-abb8-0b572f7bf30b：title「Afterworld」、Album、first-release-date 2021-04-30、artist-credit「All India Radio」。證據：https://allindiaradio.bandcamp.com/album/afterworld https://musicbrainz.org/release-group/362a9c2b-71b5-49c3-abb8-0b572f7bf30b",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2021,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/362a9c2b-71b5-49c3-abb8-0b572f7bf30b/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-06T04:41:08Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-06 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 15910,
+    "source": "manual:depth-rubric（§0.8.1）",
+    "checkedAt": "2026-11-06T04:41:08Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 15910）；主線：同人《The Unified Field》等更多人聽＝經典 3；自行發行＝冷門 4；ambient rock 客座人聲＝硬蕊 2（機器 3/4/3）"
+   },
+   "rarity": "common",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "封城時，他想讓這個電子專案放慢、深呼吸。All India Radio 是 Martin Kennedy 1997 年在塔斯馬尼亞創立的專案，唯一固定成員是他。《Afterworld》就在那段日子裡寫成、錄成，他要它比上一張更有深度。〈Sula Guin〉長 9 分 21 秒、全張數它最長，Devin Townsend 也參與其中；客座人聲 Yin 則翻唱了一首 Pink Floyd。2021 年 4 月 30 日終於面世，10 首正曲大多 3、4 分鐘長。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/All_India_Radio_(band)",
+     "https://allindiaradio.bandcamp.com/album/afterworld",
+     "https://musicbrainz.org/release-group/362a9c2b-71b5-49c3-abb8-0b572f7bf30b"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview124/v4/e2/ce/2f/e2ce2f23-dd3a-29e5-2e5c-32bd8ef89e0c/mzaf_508893467339278958.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-06T04:43:46.075Z",
+    "appleCollectionId": "1559911353",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1559911353「All India Radio《Afterworld》」：曲目 15/20 對上 MB 原盤（Apple 共 10 軌），取第 1 軌〈Don't Turn Around (feat. Yin)〉。主線 2026-11-06 lookup 核對、試聽檔 HTTP 206。",
+    "trackName": "Set the Controls For the Heart of the Sun (feat. Yin)",
+    "popularity": "deezer-rank"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Hungry Lucy",
+   "album": "Apparitions",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "69789bf5-68ea-3c03-a24c-c7cebaf266d8",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "darkwave／ethereal：Bandcamp downtempo 標籤候選第二輪（Last.fm 聽眾 10737）；粗估聲音：darkwave 慢拍，女聲，微冷｜⚠ 女聲 darkwave／trip-hop，留意旋律清楚判暖；Bandcamp 頁抓不到｜MB release-group 69789bf5-68ea-3c03-a24c-c7cebaf266d8：title「Apparitions」、Album、first-release-date 2000-08-01、artist-credit「Hungry Lucy」。證據：https://hungrylucy.com/album/apparitions https://musicbrainz.org/release-group/69789bf5-68ea-3c03-a24c-c7cebaf266d8",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2000,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/69789bf5-68ea-3c03-a24c-c7cebaf266d8/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-06T04:41:08Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-06 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 10737,
+    "source": "manual:depth-rubric（§0.8.1）",
+    "checkedAt": "2026-11-06T04:41:08Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 10737）；主線：首張；Last.fm 同人第三多人聽＝經典 3；Fishtank Soundworks 小廠＝冷門 4；女聲 darkwave／trip-hop＝硬蕊 2（機器 3/4/3）"
+   },
+   "rarity": "common",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "替 Depeche Mode 致敬盤做曲，他找來一位主唱。Warren Harrison 編程製作、Christa Belle 唱歌寫詞，兩人 1998 年在俄亥俄州組成 Hungry Lucy，被找來的主唱正是 Belle。出道作《Apparitions》2000 年問市，以電子為主，走 gothic 與 trip-hop 的路子，再添上鋼琴與長笛。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Hungry_Lucy",
+     "https://musicbrainz.org/release-group/69789bf5-68ea-3c03-a24c-c7cebaf266d8",
+     "https://musicbrainz.org/release/ef96acde-e195-4e2c-be84-7b56ee309d96",
+     "https://www.classicistranieri.com/pl/articles/a/p/p/Apparitions.html",
+     "https://secure.swapacd.com/Hungry-Lucy-Apparitions/cd/749698"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/14/e1/ed/14e1edda-cd52-eacb-dd84-268f2e883be8/mzaf_12832339333235396001.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-06T04:43:47.598Z",
+    "appleCollectionId": "1856959739",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1856959739「Hungry Lucy《Apparitions》」：曲目 14/14 對上 MB 原盤（Apple 共 14 軌），取第 1 軌〈Alfred〉。主線 2026-11-06 lookup 核對、試聽檔 HTTP 206。",
+    "trackName": "Bound in Blood (Insomnia Mix)",
+    "popularity": "deezer-rank"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Soapkills",
+   "album": "Bater",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "a6daa208-c430-370f-b9c7-b04e9387bba9",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "暗 trip-hop／downtempo：Bandcamp downtempo 標籤候選第二輪（Last.fm 聽眾 4670）；粗估聲音：貝魯特電子、鼓輕、人聲冷｜⚠ MB 只記 2001、Bandcamp 記 2000-09；阿拉伯語人聲旋律、MC-303 鼓機，留意判暖與有拍｜MB release-group a6daa208-c430-370f-b9c7-b04e9387bba9：title「Bater」、Album、first-release-date 2001、artist-credit「Soapkills」。證據：https://soapkills.bandcamp.com/album/bater https://musicbrainz.org/release-group/a6daa208-c430-370f-b9c7-b04e9387bba9",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2001,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/a6daa208-c430-370f-b9c7-b04e9387bba9/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-06T04:41:08Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-06 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 4670,
+    "source": "manual:depth-rubric（§0.8.1）",
+    "checkedAt": "2026-11-06T04:41:08Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 4670）；主線：中東最早的獨立樂團之一的首張＝場景重要作品，經典 4；自行發行＝冷門 4；trip-hop 人聲＝硬蕊 2（機器 3/4/3）"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 4、obscurity 4、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "搖滾團散夥後，他買來一台 MC-303 頂替樂手。Soapkills 是貝魯特的 Yasmine Hamdan 與 Zeid Hamdan，兩人同姓但非親戚。散掉的是 Zeid 的搖滾團 Lombrix，從此靠那台 Groovebox 撐場。音樂走 Massive Attack、Portishead 式的 trip hop，Yasmine 用當代唱法詮釋阿拉伯老歌。團名指向內戰後的重建。三張自主發行的專輯裡，《Bater》排頭一張，2001 年推出。",
+    "sourceUrls": [
+     "https://soapkills.bandcamp.com/album/bater",
+     "https://musicbrainz.org/release-group/a6daa208-c430-370f-b9c7-b04e9387bba9",
+     "https://en.wikipedia.org/wiki/Soapkills"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/cc/10/9f/cc109fa5-9a0d-1ff9-4da8-20cd897761c6/mzaf_9114796306278149736.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-06T04:43:49.311Z",
+    "appleCollectionId": "988808982",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 988808982「Soapkills《Bater》」：曲目 8/11 對上 MB 原盤（Apple 共 10 軌），取第 1 軌〈Leh Zaalen〉。主線 2026-11-06 lookup 核對、試聽檔 HTTP 206。",
+    "trackName": "Coit Me",
+    "popularity": "deezer-rank"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "ambientium",
+   "album": "Fractal Philosophy",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "ad807298-69f5-45cb-8494-0e6fdeb56b87",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "太空／深空 ambient：Bandcamp downtempo 標籤候選第二輪（Last.fm 聽眾 3696）；粗估聲音：IDM氛圍、psybient柔鼓｜⚠ psychill／psybient 標籤，留意判暖判輕｜MB release-group ad807298-69f5-45cb-8494-0e6fdeb56b87：title「Fractal Philosophy」、Album、first-release-date 2009-02-16、artist-credit「Ambientium」。證據：https://ambientium.bandcamp.com/album/fractal-philosophy https://musicbrainz.org/release-group/ad807298-69f5-45cb-8494-0e6fdeb56b87",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2009,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/ad807298-69f5-45cb-8494-0e6fdeb56b87/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-06T04:41:08Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-06 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 4,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 3696,
+    "source": "manual:depth-rubric（§0.8.1）",
+    "checkedAt": "2026-11-06T04:41:08Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 3696）；主線：Last.fm 同人最多人聽的一張＝經典 4；Kahvi 網路廠牌＝冷門 4；psybient 長篇＝硬蕊 3（機器 3/4/3）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 4、obscurity 4、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "所有形體彼此相似，形體之外是無盡的靜。捷克的 ambientium 替這張寫的說明就只有這一句，標籤則是 IDM 與 psybient 兩種。2009 年 2 月 13 日，《Fractal Philosophy》率先登上 Bandcamp，9 首加總 61 分鐘，〈Star Birthday〉獨佔 10 分鐘。聽眾稱它是一張迷幻的 downtempo。",
+    "sourceUrls": [
+     "https://ambientium.bandcamp.com/album/fractal-philosophy",
+     "https://www.discogs.com/release/1664798",
+     "https://www.discogs.com/release/2161405",
+     "https://musicbrainz.org/release-group/ad807298-69f5-45cb-8494-0e6fdeb56b87"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-06T04:41:08Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Peter Bjärgö",
+   "album": "A Wave of Bitterness",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "ebdea058-50c7-4aad-8adc-383e2e26feb9",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "dark ambient／drone：Bandcamp downtempo 標籤候選第二輪（Last.fm 聽眾 3256）；粗估聲音：暗黑氛圍、弦樂長音、陰冷｜⚠ Bandcamp 版是 2019 重新母帶；原盤 2009｜MB release-group ebdea058-50c7-4aad-8adc-383e2e26feb9：title「A Wave of Bitterness」、Album、first-release-date 2009-08-28、artist-credit「Peter Bjärgö」。證據：https://peterbjargo.bandcamp.com/album/a-wave-of-bitterness-2 https://musicbrainz.org/release-group/ebdea058-50c7-4aad-8adc-383e2e26feb9",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2009,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/ebdea058-50c7-4aad-8adc-383e2e26feb9/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-06T04:41:08Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-06 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 3256,
+    "source": "manual:depth-rubric（§0.8.1）",
+    "checkedAt": "2026-11-06T04:41:08Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 3256）；主線：Last.fm 同人第二多人聽、非首選＝經典 3；Kalinkaland 小廠＝冷門 4；dark ambient＝硬蕊 3（機器 3/4/3）"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "放下 Arcana 與 Sophia，他頭一回單獨掛名。瑞典的 Peter Bjärgö 身兼這兩個計畫，個人作品的序號從《A Wave of Bitterness》開始。原盤由德國廠牌 Kalinkaland 壓成 CD，出廠日 2009 年 8 月 28 日，九首曲子、36 分鐘。聲音是暗色氛圍接上現代古典，延續 Arcana 近作的民族打擊與吉他編排。2019 年 9 月輪到 Cyclic Law 重發，公告裡說它定下了他往後單飛作品的樣板；那一回他也親手重做了母帶。",
+    "sourceUrls": [
+     "https://chaindlk.com/news/cyclic-law-peter-bjargo-new-album-and-re-issues/",
+     "https://musicbrainz.org/release-group/ebdea058-50c7-4aad-8adc-383e2e26feb9",
+     "https://www.discogs.com/search/?q=Bj%C3%A4rg%C3%B6+A+Wave+of+Bitterness&type=release",
+     "https://www.spirit-of-metal.com/cn/discography/Peter_Bjargo/1",
+     "https://peterbjargo.bandcamp.com/album/a-wave-of-bitterness-2"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d1/70/46/d170467f-f1f2-53d2-1070-5107f5c8861a/mzaf_356639884252205369.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-06T04:43:50.785Z",
+    "appleCollectionId": "1803966265",
+    "storefront": "SE",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple se 1803966265「Peter Bjärgö《A Wave of Bitterness》」：曲目 9/9 對上 MB 原盤（Apple 共 9 軌），取第 1 軌〈Ianua〉。主線 2026-11-06 lookup 核對、試聽檔 HTTP 206。",
+    "trackName": "Imprisonment of the Mind",
+    "popularity": "deezer-rank"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Rabit",
+   "album": "Stranger in a Strange Land",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "807955a0-ded4-4845-b801-50ff3184b565",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "dark ambient／drone：Bandcamp downtempo 標籤候選第二輪（Last.fm 聽眾 2054）；粗估聲音：磁帶工業顆粒，暗沉｜⚠ 磁帶音樂短曲集，32 分；留意有拍｜MB release-group 807955a0-ded4-4845-b801-50ff3184b565：title「Stranger in a Strange Land」、Album、first-release-date 2026-03-26、artist-credit「Rabit」。證據：https://gangstalkers.bandcamp.com/album/stranger-in-a-strange-land https://musicbrainz.org/release-group/807955a0-ded4-4845-b801-50ff3184b565",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2026,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/807955a0-ded4-4845-b801-50ff3184b565/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-06T04:41:08Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-06 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 2054,
+    "source": "manual:depth-rubric（§0.8.1）",
+    "checkedAt": "2026-11-06T04:41:08Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 2054）；主線：2026 新作，同人代表作是《Communion》＝經典 3；Halcyon Veil 自營小廠、L 2,054＝冷門 4；磁帶音樂短曲＝硬蕊 3（機器 3/5/3）"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "休士頓、倫敦、拿坡里，三座城拼出十一首短曲。Rabit 是休士頓的 Eric C. Burton，早年做實驗 grime。《Stranger in a Strange Land》在這三地寫成並混音，每首大都只有 1 到 3 分鐘長。2026 年 3 月 26 日，專輯放上 Bandcamp，風格歸進 screw、trip hop 與 tape music。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Rabit_(musician)",
+     "https://gangstalkers.bandcamp.com/album/stranger-in-a-strange-land",
+     "https://www.discogs.com/release/37283886",
+     "https://musicbrainz.org/release-group/807955a0-ded4-4845-b801-50ff3184b565"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/4f/83/f0/4f83f073-da00-57fc-731b-3d9bb7f1375f/mzaf_3904229392763756418.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-06T04:43:52.427Z",
+    "appleCollectionId": "1876536715",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1876536715「Rabit《Stranger in a Strange Land》」：曲目 11/11 對上 MB 原盤（Apple 共 11 軌），取第 1 軌〈stranger〉。主線 2026-11-06 lookup 核對、試聽檔 HTTP 206。",
+    "trackName": "ghost (feat. Lord Pusswhip)",
+    "popularity": "deezer-rank"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "WMD",
+   "album": "We Never Seem To Have Enough Time",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "b30a537c-6a53-4a16-8112-e39ba36e1dc7",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "暗色 IDM／ambient electronica：Bandcamp downtempo 標籤候選第二輪（Last.fm 聽眾 1422）；粗估聲音：氛圍電子、淡拍｜⚠ lofi／melancholy 標籤，36 分｜MB release-group b30a537c-6a53-4a16-8112-e39ba36e1dc7：title「We Never Seem to Have Enough Time」、Album、first-release-date 2026-02-25、artist-credit「WMD」。證據：https://wmdchiptune.bandcamp.com/album/we-never-seem-to-have-enough-time https://musicbrainz.org/release-group/b30a537c-6a53-4a16-8112-e39ba36e1dc7",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2026,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/b30a537c-6a53-4a16-8112-e39ba36e1dc7/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-06T04:41:08Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-06 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 1422,
+    "source": "manual:depth-rubric（§0.8.1）",
+    "checkedAt": "2026-11-06T04:41:08Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 1422）；主線：同人其他盤 Last.fm 收聽高一個量級＝經典 3；自行發行、L 1,422＝冷門 4；lo-fi ambient electronic＝硬蕊 3（機器 3/5/3）"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "副標是一句反問：一切若都不同，他又會是誰？WMD 是 Michael Erickson 在波特蘭的個人電子計畫。他說前幾年心理健康的掙扎很深，一度什麼都寫不出來；直到修好與自己的關係，才想起當初為何做音樂，這張就是重新找回來的成果。2026 年 2 月 25 日公開，標籤掛著 lofi 與 melancholy。",
+    "sourceUrls": [
+     "https://wmdchiptune.bandcamp.com/album/we-never-seem-to-have-enough-time",
+     "https://musicbrainz.org/release-group/b30a537c-6a53-4a16-8112-e39ba36e1dc7"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/19/4d/61/194d6119-7855-a837-1db2-0cbbae3594e3/mzaf_12366794956143769019.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-11-06T04:41:08Z",
+    "appleCollectionId": "1878208476",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1878208476「WMD《We Never Seem To Have Enough Time》」：曲目 11/11 對上 MB 原盤（Apple 共 11 軌），取第 1 軌〈Found〉。主線 2026-11-06 lookup 核對、試聽檔 HTTP 206。",
+    "trackName": "Found",
+    "popularity": "deezer-rank"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "boerd",
+   "album": "Panacea",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "3cd6c239-eae5-4bb9-a088-43d1c9855ed6",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "暗 trip-hop／downtempo：Bandcamp downtempo 標籤候選第二輪（Last.fm 聽眾 1257）；粗估聲音：trip-hop慢拍、氛圍墊、微冷｜⚠ trip-hop 慢拍，35 分；無文案｜MB release-group 3cd6c239-eae5-4bb9-a088-43d1c9855ed6：title「Panacea」、Album、first-release-date 2015-04-30、artist-credit「boerd」。證據：https://boerd.bandcamp.com/album/panacea https://musicbrainz.org/release-group/3cd6c239-eae5-4bb9-a088-43d1c9855ed6",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2015,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/3cd6c239-eae5-4bb9-a088-43d1c9855ed6/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-06T04:41:08Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-06 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 2,
+    "listeners": 1257,
+    "source": "manual:depth-rubric（§0.8.1）",
+    "checkedAt": "2026-11-06T04:41:08Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 1257）；主線：同人其他盤收聽高一個量級＝經典 3；自行發行、L 1,257＝冷門 4；trip-hop 慢拍＝硬蕊 2（機器 3/5/3）"
+   },
+   "rarity": "common",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 2，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "七首曲子，從〈It's Okay〉一路走到〈Dust〉。boerd 是 Bård Ericson 的藝名，這位製作人住在斯德哥爾摩。2015 年 4 月 30 日，《Panacea》掛上 Bandcamp，附上 trip hop、downtempo、ambient 與 chill 四個標籤。篇幅最大的是〈Close〉，長 6 分 45 秒。",
+    "sourceUrls": [
+     "https://boerd.bandcamp.com/album/panacea",
+     "https://musicbrainz.org/release-group/3cd6c239-eae5-4bb9-a088-43d1c9855ed6"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview122/v4/17/23/84/1723845f-78b8-8aea-ae6f-faba62050944/mzaf_16361907850914912468.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-06T04:43:55.769Z",
+    "appleCollectionId": "1653975493",
+    "storefront": "SE",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple se 1653975493「boerd《Panacea》」：曲目 7/7 對上 MB 原盤（Apple 共 7 軌），取第 1 軌〈It's Okay〉。主線 2026-11-06 lookup 核對、試聽檔 HTTP 206。",
+    "trackName": "Close",
+    "popularity": "deezer-rank"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Andrew Tasselmyer",
+   "album": "Yesteryear",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "bb7f55df-ff9d-4265-88ee-5ea7a194abf7",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "dark ambient／drone：Bandcamp downtempo 標籤候選第二輪（Last.fm 聽眾 1236）；粗估聲音：drone殘響、原聲採樣、霧狀｜⚠ 鋼琴、弦樂、取樣器與手持錄音機，留意判輕｜MB release-group bb7f55df-ff9d-4265-88ee-5ea7a194abf7：title「Yesteryear」、Album、first-release-date 2021-03-23、artist-credit「Andrew Tasselmyer」。證據：https://andrewtasselmyer.bandcamp.com/album/yesteryear https://musicbrainz.org/release-group/bb7f55df-ff9d-4265-88ee-5ea7a194abf7",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2021,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/bb7f55df-ff9d-4265-88ee-5ea7a194abf7/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-06T04:41:08Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-06 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 1236,
+    "source": "manual:depth-rubric（§0.8.1）",
+    "checkedAt": "2026-11-06T04:41:08Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 1236）；主線：非同人最多人聽的一張＝經典 3；Seil Records 小廠、L 1,236＝冷門 4；磁帶處理鋼琴 drone＝硬蕊 3（機器 3/5/3）"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "鋼琴、弦樂與多種取樣器，記下失去的事物與人。巴爾的摩出身、現居費城的 Andrew Tasselmyer，用取樣器、合成器加上現場採集的聲音做氛圍音樂，作品像日記，寫的是記憶與地方。《Yesteryear》錄法多半是即興，盡量少疊錄；鋼琴經過磁帶處理與取樣，在樂評聽來被改造成全新的東西。Seil Records 把編號 Seil 026 留給它，2021 年 3 月 23 日釋出，共 8 首，同名曲收在末尾，一首就 9 分 21 秒。Taylor Deupree 負責母帶。",
+    "sourceUrls": [
+     "https://andrewtasselmyer.bandcamp.com/album/yesteryear",
+     "https://www.discogs.com/release/20400607",
+     "https://musicbrainz.org/release-group/bb7f55df-ff9d-4265-88ee-5ea7a194abf7"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview114/v4/1f/32/3e/1f323e01-8d60-10dc-98fa-f5a1ea0c21dd/mzaf_1261053278007924477.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-06T04:43:57.474Z",
+    "appleCollectionId": "1557861851",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1557861851「Andrew Tasselmyer《Yesteryear》」：曲目 8/8 對上 MB 原盤（Apple 共 8 軌），取第 1 軌〈Leaves In the Wind〉。主線 2026-11-06 lookup 核對、試聽檔 HTTP 206。",
+    "trackName": "Make Your Peace",
+    "popularity": "deezer-rank"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  }
+ ]
+}

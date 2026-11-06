@@ -67,3 +67,24 @@
 - **24318** 自查：11 個 hook 互掃中文 4-gram 0 撞；hook 對本批他張 note 0 撞；hook 與自己 note 0 共用 4-gram（All India Radio「封城期間」已把 hook 改成「封城時」）。對 `desc-tools/batches/hooks/add-202611*` 全部既有 hooks（hook＋note）掃出 3 處，hook 全改歸零：「為了一張」（ml64 Sounds From the Ground）→ Hungry Lucy 改「替…致敬盤做曲」；「封城期間」（ml64 El Búho）→ 改「封城時」；「手持錄音機」（ml61 Solar Bears）→ 改「多種取樣器」。開頭前四字全批互異，也不與既有 add-202611* hooks 開頭相同。hook 無「這張專輯」開頭、無你我、無分數星等、句末皆全形標點。
 - **24319** 腳本：`node qa-batch.mjs hooks add-20261106-md43` 全部通過；`node chk-hook-crossgroup.mjs add-20261106-md43` 全部通過（2 組 11 張；hook 加權 19–22、note 164–237）。
 - **24320** 給寫作層：WMD 的心理健康段照 note「語氣克制」，正文以作者自述口吻轉寫、不加渲染；hook 的反問由 g2 收尾。boerd 與 ambientium 是本批最薄的兩張（boerd 只有標籤與曲序），依預算寫短即可。
+
+## 寫作層（writer-1、writer-2）（24321–24330）
+- **24321** 交件：`desc-tools/batches/output/add-20261106-md43-out-1.json` 5 張、`-out-2.json` 6 張，key 逐字同序。逐張（Array.from）：Between Interval 237、ASURA 227、All India Radio 231、Hungry Lucy 177（thin）、Soapkills 240；ambientium 178（thin）、Peter Bjärgö 239、Rabit 179（thin）、WMD 157（thin）、boerd 171（thin）、Andrew Tasselmyer 239。full 227–240、thin 157–179。初稿超帶 5 張（Between Interval 242、ASURA 249、Soapkills 253、Hungry Lucy 182、Rabit 187），一律整格捨去或縮子句：ASURA 改寫廠牌介紹句與日期句、Soapkills 縮 Groovebox 句與「那樣的」、Rabit 捨「全長約 32 分鐘」、Hungry Lucy 縮主唱句、Between Interval 捨「做太空音樂」與「從底下」。無掉下限。
+- **24322** 腳本：`qa-batch out`（11 張與卡單相符、thin 全 ≤180、全部通過）、`qa-check-research` 兩檔標記 0、`fix-spacing` 兩檔待補 0。「據」「也就是」、資料平台名（Discogs／MusicBrainz／維基）、媒體名（Igloo、Chain D.L.K.、Wired、Pitchfork、Time、The Lifted Index、Lost Tribe Sound）grep 0；媒體榜單名次未寫。
+- **24323** 禁用事實照辦：Hungry Lucy 不寫〈Blue Dress〉翻唱與 Alfa Matrix 重發；Bjärgö 不寫「本名」，只寫 2009 原盤＋2019 重發標時序；Soapkills 寫 2001、不寫廠牌；All India Radio、WMD、boerd 不寫廠牌；Tasselmyer 寫「多種取樣器」（hook）、不寫手持錄音機；ASURA／Bjärgö 的聲音與樣板定位分別以「Ultimae 介紹這張時」「公告裡說」帶出（hook 層 24313 指定之口，非轉述引導詞「據」）；Tasselmyer 只寫「在樂評聽來」不具名。note 未列的 facts（封面畫家、曲長清單、黑膠、卡帶、後續作品、澳洲／新冠字樣）一律不寫。
+- **24324** 第二句句型全照 24316：掛著…這個名號／…替自己取名…／…創立的專案，唯一固定成員是他／A 編程製作、B 唱歌寫詞／同姓但非親戚／捷克的…替這張寫的／身兼這兩個計畫／早年做…／…在…的個人電子計畫／…的藝名／…出身、現居…的。hook 代稱具名：Hungry Lucy 第二句收「被找來的主唱正是 Belle」；Soapkills「散掉的是 Zeid 的搖滾團 Lombrix」；WMD 反問由心理健康低谷與找回創作收尾（語氣克制、作者自述轉寫）；ASURA 序曲具名〈Overture〉9 分 55 秒。
+- **24325** 「日」後一字偏離 24317 配表（可逆；照表的形狀對 `add-202611*` 既有 out 撞 3 張以上：年月日交 9、年月日以 7、年月日問 5、年月日先 5、年月日經 8、年月日放 4、年月日發 5、年月日上 8、年月日推 8）。定稿「日」後一字：Between Interval 現、ASURA 當、All India Radio 終、ambientium 率、Bjärgö 九、Rabit 專、WMD 公、boerd 掛、Tasselmyer 釋；Hungry Lucy、Soapkills 只寫到年。日期前一字也錄下：Between Interval 行、ASURA 比、All India Radio 首、ambientium 種、Bjärgö 日（出廠日）、Rabit 長、WMD 果、boerd 摩、Tasselmyer 它（原「發行日」與 Bjärgö 撞「日年月日」後改）。
+- **24326** 自掃（han() 中文 4-gram；對象：out-1／out-2 互掃＋`desc-tools/batches/output/add-202611*` 全部既有 out）：兩檔互撞只剩樂種「太空音樂」（Between Interval／ASURA 各一，2 張）；3 張以上只剩地名（斯德哥爾摩、巴爾的摩、「在波特蘭」＝WMD 第二句指定句型＋地名）與 hook 原文（boerd「七首曲子」「一路走到」、Tasselmyer「鋼琴弦樂與」，寫作層不改 hook）。途中整詞拆掉：首約分鐘（×3 本批）、的第一張（Soapkills／Bjärgö）、多半只有（AIR／Rabit）、首合計分、是年月日、年月日它、日年月日、第五張專輯、的第四張、國作曲家、的作曲家、開場的長分秒、重新詮釋、首張專輯、在年發行、自行發行／自己發行、樂團之一、個人專輯、分鐘上下、分鐘左右、交由發行、時間是年、最長的有、其中最長、最後一首、長達分秒、製作人的（跨句黏合）、樂評形容、母帶交給、合成器和。
+- **24327** 可逆小判斷：Soapkills「自行發行」寫成「自主發行」（避 4-gram，意義同）；Bjärgö「第一張個人專輯」寫成「個人作品的序號從《…》開始」、「往後個人作品」寫成「往後單飛作品」；All India Radio「電子樂專案」寫成「專案」（hook 已有「電子專案」）；ASURA「法國作曲家…人在里昂」併為「這位作曲家住在法國里昂」。主線審稿可再看。
+
+## 主線審稿（24331–24332；2026-11-06）
+- **24331** 逐張審 11 張（out-1／out-2 全文印出，逐句對研究稿 a、b 與藝人補洞稿 ar-d-531）。改 3 張 3 處（直接改 out 檔；研究稿與 writer 輸入同步，hooks 未涉及）：
+  - `Soapkills|Bater`：刪「屬於中東最早一批獨立樂團」。依據：只有 Soapkills 自己的 Bandcamp 簡介一源，屬自我評價；藝人介紹線同句也已不收。
+  - `Hungry Lucy|Apparitions`：「在辛辛那提組成」→「在俄亥俄州組成」。依據：ar-d-531 補洞查到城市三說（維基未寫城市、校園報 Hamilton、Musicaldiscoveries 說兩人在辛辛那提認識），只寫州。
+  - `ASURA|Radio Universe`：「這位作曲家住在法國里昂」→「法國作曲家」。依據：Bandcamp 地點標籤 Lyon 掛在 Ultimae 帳號下，是廠牌所在地；ar-d-531 補洞也查不到 Farewell 本人住哪。
+  - 照准：Between Interval 寫 Stefan Strand（Bandcamp 簡介）；All India Radio 1997 塔斯馬尼亞（維基＋MB）；Rabit 三城寫成（Boomkat 文案，正文未掛媒體名，寫成專輯事實）；Peter Bjärgö「定下往後單飛樣板」寫成 Cyclic Law 公告的說法；寫作層日期「日」後一字偏離鉤子表（24327 自述，可逆，照准）。
+- **24332** `qa-batch out` 11 張全部通過；「據」、媒體名、資料平台名 0。三軸 `ratings-override.json` 11 張全依 §0.8.1 人工錨點：經典 3／4＝9／2（Last.fm 逐人查過專輯排序，9 張都不是該藝人最多人聽的那張或是新作，不是失準）、冷門 3／4＝2／9、硬蕊 2／3＝4／7。頂點 0（無殿堂／遺珠／異端證據）。試聽 Apple 自動配對 10 ready；ambientium us／jp 查無 → unavailable。封面 CAA 11／11，縮圖表目視與盤名相符。
+
+## 上線與評分（主線，2026-11-06）（條號 24333–24334）
+- **24333** 上線 11 張：寫入前對 origin 所有 `claude/*` 分支的 seed 與卡單去重 0 撞；card_catalog 11／11、KV 11 鍵回讀逐字一致（stamp 20261106md43）、試聽 10 ready／1 unavailable（最紅那首換 9 張）、seed +11、published gate 0 error。藝人介紹 ar-d-531 寫 8／不寫 1（WMD）。
+- **24334** Opus 1 支打 11 張（`batch-progress/mood-axes/score-md43/`），主線看過未改值。**落格 10／11＝91%**；出格 Soapkills《Bater》z +0.3 判暖落恍惚（阿拉伯語女聲旋律清楚，研究層已標弱汰）。貼邊：Hungry Lucy、Andrew Tasselmyer、WMD z −0.2，ambientium z −0.3。
