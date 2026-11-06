@@ -112,3 +112,7 @@
   - `parkbreezy|Better Days`：刪「人在丹佛的」——所在地 Denver 與 Montclair 兩說（ar-d-808 g2），只有 Bandcamp 地區欄。
   - `Hidden Rivers|Golden Age of Dereliction`：「九零年代」→「九〇年代」。
 - 其餘逐張審過未改字。媒體名、「據說」0。
+
+## 上線、評分與落格（2026-11-06，主線）
+- 上線：card_catalog、KV（stamp 20261106ml75）逐字回讀一致、seed、prepare／published gate 0 error（warning 皆 UPC 盡力而為與 §1 人工身分）；頂點 0。合併 origin/main（ml76–81、md44–45 已上線）後重跑 build-seed-genres、靜態試聽、apple runtime、藝人介紹分片、build-priors → build-scale v0 → build-card-moods、genre-tree／draw-covers，published gate 仍 0 error。
+- 評分：Opus 1 支照 BRIEF（10-23 體感標準＋「有鼓不等於躁」）打分（`batch-progress/mood-axes/score-ml75/`），主線看過未改值。落格結果見 SCENES.md ml75 列。

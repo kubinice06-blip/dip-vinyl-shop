@@ -94,3 +94,7 @@
   - **寫作後汰 1**：Entheogenic《Dialogue of the Speakers》——研究 a 明載九軌只有三首原曲、六首是 OTT／Vibrasphere／Youth 等人的混音，寫作層也把它寫成「混音集」；屬混音專輯，不是正規專輯，照 §1 汰（移入 `dropped-cards.json`）。Entheogenic 同步從 ar-d-807 名冊、cut 與 progress 拿掉，讓並行的 ml78–80 去寫。**剩 29**。
   - 改 1 處（`desc-override.json`，只動標點）：Jazz Playaz「YungGrunge 與 Mackjunt. 每人各主署」→「…Mackjunt.，每人各主署」（藝人名本身帶句點，原句讀成斷句）。
   - 其餘逐張審過未改字。媒體名限 hook 指派的 Billboard（Emancipator，研究稿有出處）；「據說／據傳」0。
+
+## 上線、評分與落格（2026-11-06，主線）
+- 上線：card_catalog、KV（stamp 20261106ml74）逐字回讀一致、seed、prepare／published gate 0 error（warning 皆 UPC 盡力而為與 §1 人工身分）；頂點 0。合併 origin/main（ml76–81、md44–45 已上線）後重跑 build-seed-genres、靜態試聽、apple runtime、藝人介紹分片、build-priors → build-scale v0 → build-card-moods、genre-tree／draw-covers，published gate 仍 0 error。
+- 評分：Opus 1 支照 BRIEF（10-23 體感標準＋「有鼓不等於躁」）打分（`batch-progress/mood-axes/score-ml74/`），主線看過未改值。落格結果見 SCENES.md ml74 列。
