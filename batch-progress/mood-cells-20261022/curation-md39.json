@@ -1,0 +1,1459 @@
+{
+ "group": "md39",
+ "source": "batch-progress/bandcamp-dt-20261105/pick-md39.json",
+ "factions": [
+  {
+   "id": "triphop",
+   "zh": "暗色 trip-hop／downtempo",
+   "count": 11,
+   "why": ""
+  },
+  {
+   "id": "gaze",
+   "zh": "暗色 shoegaze／dream soul",
+   "count": 5,
+   "why": ""
+  },
+  {
+   "id": "idm",
+   "zh": "冷 IDM downtempo",
+   "count": 2,
+   "why": ""
+  },
+  {
+   "id": "dubtechno",
+   "zh": "dub techno／暗霧 downtempo",
+   "count": 7,
+   "why": ""
+  },
+  {
+   "id": "darkambient",
+   "zh": "dark ambient／drone",
+   "count": 13,
+   "why": ""
+  }
+ ],
+ "albums": [
+  {
+   "artist": "Sneaker Pimps",
+   "album": "Splinter",
+   "year": 1999,
+   "label": "",
+   "country": "gb",
+   "faction": "triphop",
+   "genres": [
+    "electronic",
+    "rock"
+   ],
+   "why": "Bandcamp downtempo 標籤 Last.fm 收聽 306466 人；標籤 Electronic、Pop、alternative、dream pop、experimental electronic、indie pop",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 0.8,
+    "z": -0.8,
+    "why": "冷電子流行、合成器霧、慢鼓"
+   },
+   "evidence": [
+    "https://sneakerpimps.bandcamp.com/album/splinter",
+    "https://musicbrainz.org/release-group/35b74187-71cf-329c-bd43-07b1bff8d5ef"
+   ],
+   "mbRgMbid": "35b74187-71cf-329c-bd43-07b1bff8d5ef",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（只看 Bandcamp 標籤，把握 mid），研究層須再判聲音",
+   "bandcamp": {
+    "url": "https://sneakerpimps.bandcamp.com/album/splinter",
+    "img": "https://f4.bcbits.com/img/a0624300700_5.jpg",
+    "date": "14 May 2021 11:39:56 GMT",
+    "tracks": 12,
+    "minutes": 56,
+    "listeners": 306466,
+    "location": "Los Angeles, California"
+   }
+  },
+  {
+   "artist": "8mm",
+   "album": "Songs to Love and Die By",
+   "year": 2006,
+   "label": "",
+   "country": "us",
+   "faction": "triphop",
+   "genres": [
+    "rock",
+    "electronic"
+   ],
+   "why": "Bandcamp downtempo 標籤 Last.fm 收聽 119676 人；標籤 Alternative、alternative pop、cinematic、dark wave、indie pop、trip hop",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 0.8,
+    "z": -0.7,
+    "why": "暗黑電影感、慢鼓、陰"
+   },
+   "evidence": [
+    "https://8mmofficial.bandcamp.com/album/songs-to-love-and-die-by-3",
+    "https://musicbrainz.org/release-group/1adae0aa-863f-3469-9b0a-b444465cc8f7"
+   ],
+   "mbRgMbid": "1adae0aa-863f-3469-9b0a-b444465cc8f7",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（只看 Bandcamp 標籤，把握 mid），研究層須再判聲音",
+   "bandcamp": {
+    "url": "https://8mmofficial.bandcamp.com/album/songs-to-love-and-die-by-3",
+    "img": "https://f4.bcbits.com/img/a1750201931_5.jpg",
+    "date": "16 Nov 2006 00:00:00 GMT",
+    "tracks": 10,
+    "minutes": 40,
+    "listeners": 119676,
+    "location": "Los Angeles, California"
+   }
+  },
+  {
+   "artist": "Just Mustard",
+   "album": "Wednesday",
+   "year": 2018,
+   "label": "",
+   "country": "ie",
+   "faction": "gaze",
+   "genres": [
+    "rock"
+   ],
+   "why": "Bandcamp downtempo 標籤 Last.fm 收聽 76020 人；標籤 Alternative、Irish、lo-fi、noise、post-punk、post-rock",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 1.6,
+    "z": -1,
+    "why": "低沉噪音shoegaze、暗霧、冷"
+   },
+   "evidence": [
+    "https://justmustard.bandcamp.com/album/wednesday",
+    "https://musicbrainz.org/release-group/fc39990a-c399-4b48-9288-7b13f7aca304"
+   ],
+   "mbRgMbid": "fc39990a-c399-4b48-9288-7b13f7aca304",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（只看 Bandcamp 標籤，把握 mid），研究層須再判聲音",
+   "bandcamp": {
+    "url": "https://justmustard.bandcamp.com/album/wednesday",
+    "img": "https://f4.bcbits.com/img/a1332849754_5.jpg",
+    "date": "02 May 2018 00:00:00 GMT",
+    "tracks": 8,
+    "minutes": 36,
+    "listeners": 76020,
+    "location": "Dundalk, Ireland"
+   }
+  },
+  {
+   "artist": "Johnny Hollow",
+   "album": "Dirty Hands",
+   "year": 2007,
+   "label": "",
+   "country": "ca",
+   "faction": "triphop",
+   "genres": [
+    "rock",
+    "electronic"
+   ],
+   "why": "Bandcamp downtempo 標籤 Last.fm 收聽 51649 人；標籤 Alternative、ambient、darkwave、goth、steampunk、trip hop",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 0.8,
+    "z": -0.6,
+    "why": "暗黑馬戲、慢鼓、陰"
+   },
+   "evidence": [
+    "https://johnnyhollow.bandcamp.com/album/dirty-hands",
+    "https://musicbrainz.org/release-group/2af1b6e4-3aec-32f4-9d11-22ad3e277814"
+   ],
+   "mbRgMbid": "2af1b6e4-3aec-32f4-9d11-22ad3e277814",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（只看 Bandcamp 標籤，把握 mid），研究層須再判聲音",
+   "bandcamp": {
+    "url": "https://johnnyhollow.bandcamp.com/album/dirty-hands",
+    "img": "https://f4.bcbits.com/img/a0644722032_5.jpg",
+    "date": "01 Jan 2007 00:00:00 GMT",
+    "tracks": 13,
+    "minutes": 50,
+    "listeners": 51649,
+    "location": "Toronto, Ontario"
+   }
+  },
+  {
+   "artist": "Headache",
+   "album": "Thank You for Almost Everything",
+   "year": 2025,
+   "label": "",
+   "country": "gb",
+   "faction": "triphop",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp downtempo 標籤 Last.fm 收聽 44242 人；標籤 Alternative、Electronic、ambient、spoken word、trip-hop、London",
+   "moodGuess": {
+    "x": 2,
+    "y": 0.8,
+    "z": -0.5,
+    "why": "低語念白、暗調慢鼓"
+   },
+   "evidence": [
+    "https://headacheworld.bandcamp.com/album/thank-you-for-almost-everything",
+    "https://musicbrainz.org/release-group/38d25d21-d8d7-401b-a832-4467a0735675"
+   ],
+   "mbRgMbid": "38d25d21-d8d7-401b-a832-4467a0735675",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（只看 Bandcamp 標籤，把握 low），研究層須再判聲音",
+   "bandcamp": {
+    "url": "https://headacheworld.bandcamp.com/album/thank-you-for-almost-everything",
+    "img": "https://f4.bcbits.com/img/a0981179603_5.jpg",
+    "date": "17 Oct 2025 00:00:00 GMT",
+    "tracks": 9,
+    "minutes": 37,
+    "listeners": 44242,
+    "location": "London, UK"
+   }
+  },
+  {
+   "artist": "Puma Blue",
+   "album": "Croak Dream",
+   "year": 2026,
+   "label": "",
+   "country": "gb",
+   "faction": "gaze",
+   "genres": [
+    "soul",
+    "electronic"
+   ],
+   "why": "Bandcamp downtempo 標籤 Last.fm 收聽 35598 人；標籤 Alternative、breakbeat、darkwave、dream soul、ethereal rock、gothicr&b",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 1.1,
+    "z": -0.7,
+    "why": "dream soul、暗調殘響、顫音吉他"
+   },
+   "evidence": [
+    "https://pumabluemusic.bandcamp.com/album/croak-dream",
+    "https://musicbrainz.org/release-group/8fdec749-cb7e-4107-83b8-fc42373fbef0"
+   ],
+   "mbRgMbid": "8fdec749-cb7e-4107-83b8-fc42373fbef0",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（只看 Bandcamp 標籤，把握 mid），研究層須再判聲音",
+   "bandcamp": {
+    "url": "https://pumabluemusic.bandcamp.com/album/croak-dream",
+    "img": "https://f4.bcbits.com/img/a4049582810_5.jpg",
+    "date": "06 Feb 2026 00:00:00 GMT",
+    "tracks": 11,
+    "minutes": 40,
+    "listeners": 35598,
+    "location": "London, UK"
+   }
+  },
+  {
+   "artist": "Lusine ICL",
+   "album": "Iron City",
+   "year": 2002,
+   "label": "hymen records",
+   "country": "us",
+   "faction": "idm",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp downtempo 標籤 Last.fm 收聽 21648 人；標籤 Electronic、ambient、breakcore、downtempo、dubstep、hymen records",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 0.8,
+    "z": -0.7,
+    "why": "IDM碎拍加合成器霧，冷電子感"
+   },
+   "evidence": [
+    "https://hymen-records.bandcamp.com/album/iron-city",
+    "https://musicbrainz.org/release-group/0d42fb4a-39fd-3193-8a0d-07dd1b126824"
+   ],
+   "mbRgMbid": "0d42fb4a-39fd-3193-8a0d-07dd1b126824",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（只看 Bandcamp 標籤，把握 mid），研究層須再判聲音",
+   "bandcamp": {
+    "url": "https://hymen-records.bandcamp.com/album/iron-city",
+    "img": "https://f4.bcbits.com/img/a3039361325_5.jpg",
+    "date": "14 May 2002 00:00:00 GMT",
+    "tracks": 11,
+    "minutes": 72,
+    "listeners": 21648,
+    "location": "Lappersdorf, Germany"
+   }
+  },
+  {
+   "artist": "ETNOBOTANIKA",
+   "album": "Fruwający Przestępca",
+   "year": 2020,
+   "label": "Superkasety Records",
+   "country": "pl",
+   "faction": "dubtechno",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp downtempo 標籤 Last.fm 收聽 13747 人；標籤 Electronic、House、dub techno、hauntological、hauntological vaporwave、hauntology",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.3,
+    "z": -0.4,
+    "why": "dub techno，霧濛，迷幻"
+   },
+   "evidence": [
+    "https://superkasety.bandcamp.com/album/fruwaj-cy-przest-pca",
+    "https://musicbrainz.org/release-group/1f2dabef-8ac9-4a6f-93b3-e13ccfc783af"
+   ],
+   "mbRgMbid": "1f2dabef-8ac9-4a6f-93b3-e13ccfc783af",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（只看 Bandcamp 標籤，把握 low），研究層須再判聲音",
+   "bandcamp": {
+    "url": "https://superkasety.bandcamp.com/album/fruwaj-cy-przest-pca",
+    "img": "https://f4.bcbits.com/img/a3398200721_5.jpg",
+    "date": "05 Oct 2020 00:00:00 GMT",
+    "tracks": 15,
+    "minutes": 59,
+    "listeners": 13747,
+    "location": "Wrocław, Poland"
+   }
+  },
+  {
+   "artist": "Lauge",
+   "album": "Nothingness",
+   "year": 2020,
+   "label": "Lauge & Baba Gnohm",
+   "country": "dk",
+   "faction": "darkambient",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp downtempo 標籤 Last.fm 收聽 10945 人；標籤 Ambient、Chillout、Downtempo、Drone、DroneAmbient、Electronica",
+   "moodGuess": {
+    "x": 1.2,
+    "y": 1.4,
+    "z": -1,
+    "why": "drone 低頻長音，無拍，暗"
+   },
+   "evidence": [
+    "https://laugebabagnohm.bandcamp.com/album/nothingness",
+    "https://musicbrainz.org/release-group/97db23d2-b028-45f8-88c6-f2fe9a113f60"
+   ],
+   "mbRgMbid": "97db23d2-b028-45f8-88c6-f2fe9a113f60",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（只看 Bandcamp 標籤，把握 mid），研究層須再判聲音",
+   "bandcamp": {
+    "url": "https://laugebabagnohm.bandcamp.com/album/nothingness",
+    "img": "https://f4.bcbits.com/img/a4189792043_5.jpg",
+    "date": "11 Dec 2020 00:00:00 GMT",
+    "tracks": 9,
+    "minutes": 61,
+    "listeners": 10945,
+    "location": "Copenhagen, Denmark"
+   }
+  },
+  {
+   "artist": "Public Memory",
+   "album": "Elegiac Beat",
+   "year": 2023,
+   "label": "",
+   "country": "us",
+   "faction": "triphop",
+   "genres": [
+    "electronic",
+    "rock"
+   ],
+   "why": "Bandcamp downtempo 標籤 Last.fm 收聽 8959 人；標籤 Electronic、goth、krautwave、trip-hop、United States",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 0.9,
+    "z": -1,
+    "why": "krautwave trip-hop，暗，冷"
+   },
+   "evidence": [
+    "https://publicmemory.bandcamp.com/album/elegiac-beat",
+    "https://musicbrainz.org/release-group/22403f45-39c9-4283-baca-36f63ccd10c4"
+   ],
+   "mbRgMbid": "22403f45-39c9-4283-baca-36f63ccd10c4",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（只看 Bandcamp 標籤，把握 low），研究層須再判聲音",
+   "bandcamp": {
+    "url": "https://publicmemory.bandcamp.com/album/elegiac-beat",
+    "img": "https://f4.bcbits.com/img/a0478739223_5.jpg",
+    "date": "01 Sep 2023 00:00:00 GMT",
+    "tracks": 10,
+    "minutes": 42,
+    "listeners": 8959,
+    "location": ""
+   }
+  },
+  {
+   "artist": "All India Radio",
+   "album": "The Generator of All Infinity",
+   "year": 2022,
+   "label": "",
+   "country": "au",
+   "faction": "gaze",
+   "genres": [
+    "rock",
+    "electronic"
+   ],
+   "why": "Bandcamp downtempo 標籤 Last.fm 收聽 7085 人；標籤 Electronic、Progressive Rock、ambient rock、dark ambient、downtempo、experimental",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 1,
+    "z": -0.6,
+    "why": "ambient rock 暗黑，殘響吉他"
+   },
+   "evidence": [
+    "https://allindiaradio.bandcamp.com/album/the-generator-of-all-infinity",
+    "https://musicbrainz.org/release-group/da9239e1-af9f-42f1-9db3-9a0dc8af50ce"
+   ],
+   "mbRgMbid": "da9239e1-af9f-42f1-9db3-9a0dc8af50ce",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（只看 Bandcamp 標籤，把握 mid），研究層須再判聲音",
+   "bandcamp": {
+    "url": "https://allindiaradio.bandcamp.com/album/the-generator-of-all-infinity",
+    "img": "https://f4.bcbits.com/img/a2672074567_5.jpg",
+    "date": "16 Sep 2022 00:00:00 GMT",
+    "tracks": 17,
+    "minutes": 44,
+    "listeners": 7085,
+    "location": "Hobart, Australia"
+   }
+  },
+  {
+   "artist": "All India Radio",
+   "album": "A Low High",
+   "year": 2009,
+   "label": "",
+   "country": "au",
+   "faction": "gaze",
+   "genres": [
+    "rock",
+    "electronic"
+   ],
+   "why": "Bandcamp downtempo 標籤 Last.fm 收聽 6369 人；標籤 Electronic、ambient rock、atmospheric、dark ambient、down-tempo、downtempo",
+   "moodGuess": {
+    "x": 2,
+    "y": 0.8,
+    "z": -0.4,
+    "why": "暗氛圍搖滾、慢拍、冷色"
+   },
+   "evidence": [
+    "https://allindiaradio.bandcamp.com/album/a-low-high",
+    "https://musicbrainz.org/release-group/b23f9606-deb9-4961-bc4f-d763422dfbb2"
+   ],
+   "mbRgMbid": "b23f9606-deb9-4961-bc4f-d763422dfbb2",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（只看 Bandcamp 標籤，把握 mid），研究層須再判聲音",
+   "bandcamp": {
+    "url": "https://allindiaradio.bandcamp.com/album/a-low-high",
+    "img": "https://f4.bcbits.com/img/a2323280474_5.jpg",
+    "date": "14 Jan 2010 00:00:00 GMT",
+    "tracks": 13,
+    "minutes": 47,
+    "listeners": 6369,
+    "location": "Hobart, Australia"
+   }
+  },
+  {
+   "artist": "Shinjuku Thief",
+   "album": "The Witch Hammer",
+   "year": 1993,
+   "label": "Projekt Records",
+   "country": "au",
+   "faction": "darkambient",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp downtempo 標籤 Last.fm 收聽 5943 人；標籤 Ambient、Australia. illbient、Grand Guignol、drone、electronic、gothic",
+   "moodGuess": {
+    "x": 1.5,
+    "y": 1.5,
+    "z": -1.6,
+    "why": "illbient黑暗drone、陰森低頻"
+   },
+   "evidence": [
+    "https://projektrecords.bandcamp.com/album/the-witch-hammer",
+    "https://musicbrainz.org/release-group/74ac6b41-d818-360d-a0c3-7a276999c2be"
+   ],
+   "mbRgMbid": "74ac6b41-d818-360d-a0c3-7a276999c2be",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（只看 Bandcamp 標籤，把握 mid），研究層須再判聲音",
+   "bandcamp": {
+    "url": "https://projektrecords.bandcamp.com/album/the-witch-hammer",
+    "img": "https://f4.bcbits.com/img/a0935319190_5.jpg",
+    "date": "06 Jul 1993 00:00:00 GMT",
+    "tracks": 14,
+    "minutes": 58,
+    "listeners": 5943,
+    "location": "Portland, Oregon"
+   }
+  },
+  {
+   "artist": "Puma Blue",
+   "album": "extchamber",
+   "year": 2025,
+   "label": "",
+   "country": "gb",
+   "faction": "gaze",
+   "genres": [
+    "soul",
+    "electronic"
+   ],
+   "why": "Bandcamp downtempo 標籤 Last.fm 收聽 5811 人；標籤 Alternative、ambient、avant-garde、dream soul、drone、ethereal rock",
+   "moodGuess": {
+    "x": 1.6,
+    "y": 1.2,
+    "z": -0.5,
+    "why": "夢幻靈魂drone、殘響霧"
+   },
+   "evidence": [
+    "https://pumabluemusic.bandcamp.com/album/extchamber",
+    "https://musicbrainz.org/release-group/e3ffb210-61e0-4a4d-a049-8bf37a57a3be"
+   ],
+   "mbRgMbid": "e3ffb210-61e0-4a4d-a049-8bf37a57a3be",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（只看 Bandcamp 標籤，把握 low），研究層須再判聲音",
+   "bandcamp": {
+    "url": "https://pumabluemusic.bandcamp.com/album/extchamber",
+    "img": "https://f4.bcbits.com/img/a0440636041_5.jpg",
+    "date": "09 May 2025 00:00:00 GMT",
+    "tracks": 9,
+    "minutes": 33,
+    "listeners": 5811,
+    "location": "London, UK"
+   }
+  },
+  {
+   "artist": "Emptyself",
+   "album": "Nothing Follows, Nothing Stays",
+   "year": 2011,
+   "label": "",
+   "country": "us",
+   "faction": "darkambient",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp downtempo 標籤 Last.fm 收聽 4213 人；標籤 Experimental、acoustic、downtempo、electronic、post industrial、psychedelic",
+   "moodGuess": {
+    "x": 2,
+    "y": 1.4,
+    "z": -0.9,
+    "why": "後工業迷幻，噪質殘響"
+   },
+   "evidence": [
+    "https://emptyself.bandcamp.com/album/nothing-follows-nothing-stays",
+    "https://musicbrainz.org/release-group/6fb2e8c3-5198-4787-a15e-c0ebdff5921f"
+   ],
+   "mbRgMbid": "6fb2e8c3-5198-4787-a15e-c0ebdff5921f",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（只看 Bandcamp 標籤，把握 low），研究層須再判聲音",
+   "bandcamp": {
+    "url": "https://emptyself.bandcamp.com/album/nothing-follows-nothing-stays",
+    "img": "https://f4.bcbits.com/img/a1891112060_5.jpg",
+    "date": "11 Nov 2011 00:00:00 GMT",
+    "tracks": 11,
+    "minutes": 56,
+    "listeners": 4213,
+    "location": "New Orleans, Louisiana"
+   }
+  },
+  {
+   "artist": "Halou",
+   "album": "Brutalism for Lovers",
+   "year": 2019,
+   "label": "",
+   "country": "us",
+   "faction": "triphop",
+   "genres": [
+    "electronic",
+    "rock"
+   ],
+   "why": "Bandcamp downtempo 標籤 Last.fm 收聽 4052 人；標籤 Electronic、dreampop、electrogaze、electronic、post-punk、trip hop",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.2,
+    "z": -0.7,
+    "why": "electrogaze、trip hop鼓、冷霧"
+   },
+   "evidence": [
+    "https://halou.bandcamp.com/album/brutalism-for-lovers",
+    "https://musicbrainz.org/release-group/872ad3a7-22f6-4d4f-85ab-3b6475d83911"
+   ],
+   "mbRgMbid": "872ad3a7-22f6-4d4f-85ab-3b6475d83911",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（只看 Bandcamp 標籤，把握 mid），研究層須再判聲音",
+   "bandcamp": {
+    "url": "https://halou.bandcamp.com/album/brutalism-for-lovers",
+    "img": "https://f4.bcbits.com/img/a3043883160_5.jpg",
+    "date": "23 Aug 2019 00:00:00 GMT",
+    "tracks": 8,
+    "minutes": 31,
+    "listeners": 4052,
+    "location": "San Francisco, California"
+   }
+  },
+  {
+   "artist": "il:lo",
+   "album": "Myriad",
+   "year": 2023,
+   "label": "",
+   "country": "fr",
+   "faction": "triphop",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp downtempo 標籤 Last.fm 收聽 3435 人；標籤 Electronic、downtempo、trip hop、trip-hop、triphop、Paris",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1,
+    "z": -0.4,
+    "why": "trip-hop慢拍，低頻濕冷"
+   },
+   "evidence": [
+    "https://il-lo.bandcamp.com/album/myriad",
+    "https://musicbrainz.org/release-group/1b35ba9f-bffb-4563-90cb-182c1aefecef"
+   ],
+   "mbRgMbid": "1b35ba9f-bffb-4563-90cb-182c1aefecef",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（只看 Bandcamp 標籤，把握 low），研究層須再判聲音",
+   "bandcamp": {
+    "url": "https://il-lo.bandcamp.com/album/myriad",
+    "img": "https://f4.bcbits.com/img/a3041584076_5.jpg",
+    "date": "16 Jun 2023 00:00:00 GMT",
+    "tracks": 7,
+    "minutes": 36,
+    "listeners": 3435,
+    "location": "Paris, France"
+   }
+  },
+  {
+   "artist": "Moth Equals",
+   "album": "Sick Puppy",
+   "year": 2014,
+   "label": "",
+   "country": "gb",
+   "faction": "triphop",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp downtempo 標籤 Last.fm 收聽 2738 人；標籤 Ambient、British、Chillwave、Dubstep、Electronic、Experimental",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1,
+    "z": -0.4,
+    "why": "英式trip-hop，陰霧"
+   },
+   "evidence": [
+    "https://mothequals.bandcamp.com/album/sick-puppy",
+    "https://musicbrainz.org/release-group/bf573fb7-8e60-433f-b8a4-83eda3b6aee4"
+   ],
+   "mbRgMbid": "bf573fb7-8e60-433f-b8a4-83eda3b6aee4",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（只看 Bandcamp 標籤，把握 low），研究層須再判聲音",
+   "bandcamp": {
+    "url": "https://mothequals.bandcamp.com/album/sick-puppy",
+    "img": "https://f4.bcbits.com/img/a4226873397_5.jpg",
+    "date": "31 Mar 2014 00:00:00 GMT",
+    "tracks": 14,
+    "minutes": 76,
+    "listeners": 2738,
+    "location": "UK"
+   }
+  },
+  {
+   "artist": "Earthen Sea",
+   "album": "Mirage",
+   "year": 2014,
+   "label": "",
+   "country": "us",
+   "faction": "dubtechno",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp downtempo 標籤 Last.fm 收聽 2515 人；標籤 Ambient、greyscale、psychedelic、techno、trip hop、New York",
+   "moodGuess": {
+    "x": 1.6,
+    "y": 1.2,
+    "z": -0.8,
+    "why": "Earthen Sea暗色氛圍techno、濾波糊、冷"
+   },
+   "evidence": [
+    "https://earthensea.bandcamp.com/album/mirage",
+    "https://musicbrainz.org/release-group/e1d36c9c-246f-45bf-b046-c88d7b71277f"
+   ],
+   "mbRgMbid": "e1d36c9c-246f-45bf-b046-c88d7b71277f",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（只看 Bandcamp 標籤，把握 mid），研究層須再判聲音",
+   "bandcamp": {
+    "url": "https://earthensea.bandcamp.com/album/mirage",
+    "img": "https://f4.bcbits.com/img/a0365609197_5.jpg",
+    "date": "10 Feb 2014 00:00:00 GMT",
+    "tracks": 6,
+    "minutes": 50,
+    "listeners": 2515,
+    "location": "New York"
+   }
+  },
+  {
+   "artist": "Snakes of Russia",
+   "album": "Swallowed Whole Through the Mouth of Eternity",
+   "year": 2025,
+   "label": "",
+   "country": "us",
+   "faction": "darkambient",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp downtempo 標籤 Last.fm 收聽 2272 人；標籤 Electronic、beats、cinematic、dark ambient、darkbeats、darkwave",
+   "moodGuess": {
+    "x": 1.8,
+    "y": 1.5,
+    "z": -1.4,
+    "why": "dark ambient、沉重低頻、慢鼓、陰冷"
+   },
+   "evidence": [
+    "https://snakesofrussia.bandcamp.com/album/swallowed-whole-through-the-mouth-of-eternity",
+    "https://musicbrainz.org/release-group/37a15f56-7620-49c4-8a29-607b5524528d"
+   ],
+   "mbRgMbid": "37a15f56-7620-49c4-8a29-607b5524528d",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（只看 Bandcamp 標籤，把握 mid），研究層須再判聲音",
+   "bandcamp": {
+    "url": "https://snakesofrussia.bandcamp.com/album/swallowed-whole-through-the-mouth-of-eternity",
+    "img": "https://f4.bcbits.com/img/a3710327921_5.jpg",
+    "date": "21 Nov 2025 00:00:00 GMT",
+    "tracks": 10,
+    "minutes": 37,
+    "listeners": 2272,
+    "location": "Los Angeles, California"
+   }
+  },
+  {
+   "artist": "How to Disappear Completely",
+   "album": "Seraphim III",
+   "year": 2025,
+   "label": "",
+   "country": "pl",
+   "faction": "darkambient",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp downtempo 標籤 Last.fm 收聽 1914 人；標籤 Ambient、chillout、drone、electronic、ethereal、experimental",
+   "moodGuess": {
+    "x": 1.2,
+    "y": 1.3,
+    "z": -0.6,
+    "why": "無鼓、drone霧、殘響長"
+   },
+   "evidence": [
+    "https://htdc.bandcamp.com/album/seraphim-iii",
+    "https://musicbrainz.org/release-group/9c06a797-ca55-443b-b076-6853f2c4b285"
+   ],
+   "mbRgMbid": "9c06a797-ca55-443b-b076-6853f2c4b285",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（只看 Bandcamp 標籤，把握 low），研究層須再判聲音",
+   "bandcamp": {
+    "url": "https://htdc.bandcamp.com/album/seraphim-iii",
+    "img": "https://f4.bcbits.com/img/a3844191058_5.jpg",
+    "date": "17 Apr 2025 00:00:00 GMT",
+    "tracks": 9,
+    "minutes": 85,
+    "listeners": 1914,
+    "location": "Poland"
+   }
+  },
+  {
+   "artist": "Markus Guentner",
+   "album": "Empire",
+   "year": 2018,
+   "label": "",
+   "country": "de",
+   "faction": "darkambient",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp downtempo 標籤 Last.fm 收聽 1770 人；標籤 Ambient、Drone、Electronica、Markus Guentner、Modern classic、Pop Ambient",
+   "moodGuess": {
+    "x": 1.6,
+    "y": 0.9,
+    "z": -0.3,
+    "why": "極簡電子、drone低頻"
+   },
+   "evidence": [
+    "https://markusguentner.bandcamp.com/album/empire-2",
+    "https://musicbrainz.org/release-group/6041ae72-23cb-4cd9-bb00-c83df799484a"
+   ],
+   "mbRgMbid": "6041ae72-23cb-4cd9-bb00-c83df799484a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（只看 Bandcamp 標籤，把握 mid），研究層須再判聲音",
+   "bandcamp": {
+    "url": "https://markusguentner.bandcamp.com/album/empire-2",
+    "img": "https://f4.bcbits.com/img/a3113872856_5.jpg",
+    "date": "11 Jun 2018 00:00:00 GMT",
+    "tracks": 7,
+    "minutes": 61,
+    "listeners": 1770,
+    "location": "Regensburg, Germany"
+   }
+  },
+  {
+   "artist": "Master Margherita",
+   "album": "Border 50",
+   "year": 2018,
+   "label": "Ultimae",
+   "country": "fr",
+   "faction": "dubtechno",
+   "genres": [
+    "electronic",
+    "jazz"
+   ],
+   "why": "Bandcamp downtempo 標籤 Last.fm 收聽 1692 人；標籤 Bill Laswell、Biosphere、Electronic、ambient、cinematic、doom jazz",
+   "moodGuess": {
+    "x": 1.8,
+    "y": 1.3,
+    "z": -0.8,
+    "why": "doom爵士、dub低頻、陰沉"
+   },
+   "evidence": [
+    "https://ultimae.bandcamp.com/album/border-50",
+    "https://musicbrainz.org/release-group/e53a889c-01cb-401a-963e-38faa564723c"
+   ],
+   "mbRgMbid": "e53a889c-01cb-401a-963e-38faa564723c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（只看 Bandcamp 標籤，把握 mid），研究層須再判聲音",
+   "bandcamp": {
+    "url": "https://ultimae.bandcamp.com/album/border-50",
+    "img": "https://f4.bcbits.com/img/a3548783953_5.jpg",
+    "date": "12 Dec 2018 00:00:00 GMT",
+    "tracks": 10,
+    "minutes": 77,
+    "listeners": 1692,
+    "location": "Lyon, France"
+   }
+  },
+  {
+   "artist": "Arms and Sleepers",
+   "album": "Of Utopias and Catastrophes",
+   "year": 2025,
+   "label": "",
+   "country": "us",
+   "faction": "triphop",
+   "genres": [
+    "electronic",
+    "rock"
+   ],
+   "why": "Bandcamp downtempo 標籤 Last.fm 收聽 1657 人；標籤 Electronic、Imola、alien、ambient、arms and sleepers、downtempo",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 1.1,
+    "z": -0.6,
+    "why": "電影感氛圍電子，殘響厚冷"
+   },
+   "evidence": [
+    "https://wearearmsandsleepers.bandcamp.com/album/of-utopias-and-catastrophes",
+    "https://musicbrainz.org/release-group/a01334c5-8d6f-4f06-9d7e-cbdf86761325"
+   ],
+   "mbRgMbid": "a01334c5-8d6f-4f06-9d7e-cbdf86761325",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（只看 Bandcamp 標籤，把握 mid），研究層須再判聲音",
+   "bandcamp": {
+    "url": "https://wearearmsandsleepers.bandcamp.com/album/of-utopias-and-catastrophes",
+    "img": "https://f4.bcbits.com/img/a2323190188_5.jpg",
+    "date": "15 Aug 2025 00:00:00 GMT",
+    "tracks": 17,
+    "minutes": 70,
+    "listeners": 1657,
+    "location": ""
+   }
+  },
+  {
+   "artist": "Ness",
+   "album": "Planet D",
+   "year": 2025,
+   "label": "The Gods Planet",
+   "country": "it",
+   "faction": "dubtechno",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp downtempo 標籤 Last.fm 收聽 1521 人；標籤 Electronic、ambient-techno、deep techno、downtempo、dub techno、dubtechno",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.2,
+    "z": -0.7,
+    "why": "dub techno，深低頻殘響冷"
+   },
+   "evidence": [
+    "https://thegodsplanet.bandcamp.com/album/planet-d",
+    "https://musicbrainz.org/release-group/27ecf874-4b7d-45ce-9807-1c39121ae5b4"
+   ],
+   "mbRgMbid": "27ecf874-4b7d-45ce-9807-1c39121ae5b4",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（只看 Bandcamp 標籤，把握 mid），研究層須再判聲音",
+   "bandcamp": {
+    "url": "https://thegodsplanet.bandcamp.com/album/planet-d",
+    "img": "https://f4.bcbits.com/img/a0992612682_5.jpg",
+    "date": "16 Apr 2025 00:00:00 GMT",
+    "tracks": 7,
+    "minutes": 55,
+    "listeners": 1521,
+    "location": "Italy"
+   }
+  },
+  {
+   "artist": "Earthen Sea",
+   "album": "Recollection",
+   "year": 2024,
+   "label": "",
+   "country": "us",
+   "faction": "dubtechno",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp downtempo 標籤 Last.fm 收聽 1487 人；標籤 Ambient、greyscale、psychedelic、techno、trip hop、New York",
+   "moodGuess": {
+    "x": 2,
+    "y": 1.4,
+    "z": -0.6,
+    "why": "磁帶糊、緩慢節拍、暗霧"
+   },
+   "evidence": [
+    "https://earthensea.bandcamp.com/album/recollection",
+    "https://musicbrainz.org/release-group/cec82ddb-fc61-4740-8bae-8352a013f244"
+   ],
+   "mbRgMbid": "cec82ddb-fc61-4740-8bae-8352a013f244",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（只看 Bandcamp 標籤，把握 mid），研究層須再判聲音",
+   "bandcamp": {
+    "url": "https://earthensea.bandcamp.com/album/recollection",
+    "img": "https://f4.bcbits.com/img/a3561547418_5.jpg",
+    "date": "15 Nov 2024 00:00:00 GMT",
+    "tracks": 9,
+    "minutes": 37,
+    "listeners": 1487,
+    "location": "New York"
+   }
+  },
+  {
+   "artist": "Phelios",
+   "album": "Spirits of Rhea",
+   "year": 2020,
+   "label": "Martin Stürtzer",
+   "country": "de",
+   "faction": "darkambient",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp downtempo 標籤 Last.fm 收聽 1445 人；標籤 Ambient、Dark Ambient、Electronic、ambient、dark ambient、downtempo",
+   "moodGuess": {
+    "x": 1.3,
+    "y": 1.3,
+    "z": -1,
+    "why": "暗黑氛圍、低頻、殘響"
+   },
+   "evidence": [
+    "https://phelios.bandcamp.com/album/spirits-of-rhea",
+    "https://musicbrainz.org/release-group/136e13f8-6c50-4843-91eb-84c903448c7d"
+   ],
+   "mbRgMbid": "136e13f8-6c50-4843-91eb-84c903448c7d",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（只看 Bandcamp 標籤，把握 mid），研究層須再判聲音",
+   "bandcamp": {
+    "url": "https://phelios.bandcamp.com/album/spirits-of-rhea",
+    "img": "https://f4.bcbits.com/img/a1200614958_5.jpg",
+    "date": "07 Aug 2020 00:00:00 GMT",
+    "tracks": 8,
+    "minutes": 68,
+    "listeners": 1445,
+    "location": "Wuppertal, Germany"
+   }
+  },
+  {
+   "artist": "One Arc Degree",
+   "album": "Cosmos in Flux",
+   "year": 2017,
+   "label": "Synphaera",
+   "country": "gr",
+   "faction": "darkambient",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp downtempo 標籤 Last.fm 收聽 1299 人；標籤 Ambient、Greece、IDM、dark ambient、electronic、electronica",
+   "moodGuess": {
+    "x": 1.6,
+    "y": 1,
+    "z": -0.9,
+    "why": "暗黑氛圍、IDM微粒、低頻暗湧、冷"
+   },
+   "evidence": [
+    "https://synphaera.bandcamp.com/album/cosmos-in-flux",
+    "https://musicbrainz.org/release-group/156d113f-f8ab-4f54-8854-352ced5e90fc"
+   ],
+   "mbRgMbid": "156d113f-f8ab-4f54-8854-352ced5e90fc",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（只看 Bandcamp 標籤，把握 low），研究層須再判聲音",
+   "bandcamp": {
+    "url": "https://synphaera.bandcamp.com/album/cosmos-in-flux",
+    "img": "https://f4.bcbits.com/img/a4034611073_5.jpg",
+    "date": "16 May 2017 00:00:00 GMT",
+    "tracks": 8,
+    "minutes": 58,
+    "listeners": 1299,
+    "location": "Los Angeles, California"
+   }
+  },
+  {
+   "artist": "S1gns of L1fe",
+   "album": "Pathways to Ascension",
+   "year": 2017,
+   "label": "Synphaera",
+   "country": "us",
+   "faction": "darkambient",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp downtempo 標籤 Last.fm 收聽 1237 人；標籤 Ambient、dark ambient、electronic、electronica、psybient、space music",
+   "moodGuess": {
+    "x": 1.5,
+    "y": 0.8,
+    "z": -0.7,
+    "why": "暗黑氛圍墊、太空殘響、無鼓、冷"
+   },
+   "evidence": [
+    "https://synphaera.bandcamp.com/album/pathways-to-ascension",
+    "https://musicbrainz.org/release-group/8e6bc9bc-5d80-4f02-9e7f-706f7d63a8b3"
+   ],
+   "mbRgMbid": "8e6bc9bc-5d80-4f02-9e7f-706f7d63a8b3",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（只看 Bandcamp 標籤，把握 low），研究層須再判聲音",
+   "bandcamp": {
+    "url": "https://synphaera.bandcamp.com/album/pathways-to-ascension",
+    "img": "https://f4.bcbits.com/img/a3341749863_5.jpg",
+    "date": "24 Jan 2017 00:00:00 GMT",
+    "tracks": 9,
+    "minutes": 72,
+    "listeners": 1237,
+    "location": "Los Angeles, California"
+   }
+  },
+  {
+   "artist": "Toki Fuko",
+   "album": "Human Design",
+   "year": 2021,
+   "label": "Lowless",
+   "country": "fr",
+   "faction": "dubtechno",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp downtempo 標籤 Last.fm 收聽 1181 人；標籤 Electronic、ambient、atmospheric、deep techno、downtempo、drone",
+   "moodGuess": {
+    "x": 1.9,
+    "y": 1.1,
+    "z": -0.7,
+    "why": "深techno加drone，暗沉"
+   },
+   "evidence": [
+    "https://lowless.bandcamp.com/album/human-design",
+    "https://musicbrainz.org/release-group/f50b08a2-a82b-44ba-a1ef-baa4a6ef2270"
+   ],
+   "mbRgMbid": "f50b08a2-a82b-44ba-a1ef-baa4a6ef2270",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（只看 Bandcamp 標籤，把握 low），研究層須再判聲音",
+   "bandcamp": {
+    "url": "https://lowless.bandcamp.com/album/human-design",
+    "img": "https://f4.bcbits.com/img/a0903178627_5.jpg",
+    "date": "29 Mar 2021 00:00:00 GMT",
+    "tracks": 8,
+    "minutes": 75,
+    "listeners": 1181,
+    "location": "Paris, France"
+   }
+  },
+  {
+   "artist": "Echo Season",
+   "album": "Periphery",
+   "year": 2018,
+   "label": "Synphaera",
+   "country": "us",
+   "faction": "darkambient",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp downtempo 標籤 Last.fm 收聽 1148 人；標籤 Ambient、cinematic、dark ambient、electronic、electronica、minimal",
+   "moodGuess": {
+    "x": 1.3,
+    "y": 1,
+    "z": -1.1,
+    "why": "暗黑氛圍、低頻drone、陰冷"
+   },
+   "evidence": [
+    "https://synphaera.bandcamp.com/album/periphery",
+    "https://musicbrainz.org/release-group/2a19ba42-8dac-42d3-a8f3-f74005644c34"
+   ],
+   "mbRgMbid": "2a19ba42-8dac-42d3-a8f3-f74005644c34",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（只看 Bandcamp 標籤，把握 low），研究層須再判聲音",
+   "bandcamp": {
+    "url": "https://synphaera.bandcamp.com/album/periphery",
+    "img": "https://f4.bcbits.com/img/a0885939707_5.jpg",
+    "date": "29 May 2018 00:00:00 GMT",
+    "tracks": 10,
+    "minutes": 78,
+    "listeners": 1148,
+    "location": "Los Angeles, California"
+   }
+  },
+  {
+   "artist": "Merrin Karras",
+   "album": "Northwest Passage",
+   "year": 2020,
+   "label": "",
+   "country": "de",
+   "faction": "darkambient",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp downtempo 標籤 Last.fm 收聽 1115 人；標籤 Ambient、Berlin、ambient、berlin、berlin school、electronic",
+   "moodGuess": {
+    "x": 1.2,
+    "y": 0.8,
+    "z": -0.5,
+    "why": "柏林學派長音、無拍、暗"
+   },
+   "evidence": [
+    "https://merrinkarras.bandcamp.com/album/northwest-passage",
+    "https://musicbrainz.org/release-group/c19e19dd-2469-48cc-9c24-7a5ca2dd5a76"
+   ],
+   "mbRgMbid": "c19e19dd-2469-48cc-9c24-7a5ca2dd5a76",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（只看 Bandcamp 標籤，把握 low），研究層須再判聲音",
+   "bandcamp": {
+    "url": "https://merrinkarras.bandcamp.com/album/northwest-passage",
+    "img": "https://f4.bcbits.com/img/a0877960348_5.jpg",
+    "date": "23 Mar 2020 00:00:00 GMT",
+    "tracks": 9,
+    "minutes": 129,
+    "listeners": 1115,
+    "location": "Berlin, Germany"
+   }
+  },
+  {
+   "artist": "Moderator",
+   "album": "Silent Cinema",
+   "year": 2026,
+   "label": "",
+   "country": "gr",
+   "faction": "triphop",
+   "genres": [
+    "hiphop",
+    "electronic"
+   ],
+   "why": "Bandcamp downtempo 標籤 Last.fm 收聽 1052 人；標籤 Hip Hop、Hip-Hop/Rap、Instrumental Hip-Hop、Soundtrack、cinematic、downtempo",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 0.9,
+    "z": -0.4,
+    "why": "trip hop電影感，暗沉鼓"
+   },
+   "evidence": [
+    "https://moderator.bandcamp.com/album/silent-cinema",
+    "https://musicbrainz.org/release-group/bbc250ce-b793-40c8-947a-2d74021cba48"
+   ],
+   "mbRgMbid": "bbc250ce-b793-40c8-947a-2d74021cba48",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（只看 Bandcamp 標籤，把握 mid），研究層須再判聲音",
+   "bandcamp": {
+    "url": "https://moderator.bandcamp.com/album/silent-cinema",
+    "img": "https://f4.bcbits.com/img/a3324491787_5.jpg",
+    "date": "03 Apr 2026 00:00:00 GMT",
+    "tracks": 13,
+    "minutes": 40,
+    "listeners": 1052,
+    "location": "Αθήνα, Greece"
+   }
+  },
+  {
+   "artist": "Faex Optim",
+   "album": "Look Around You",
+   "year": 2017,
+   "label": "",
+   "country": "gb",
+   "faction": "idm",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp downtempo 標籤 Last.fm 收聽 1037 人；標籤 Downtempo、Electronic、IDM、electronica、post-rock、trip hop",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 0.9,
+    "z": -0.3,
+    "why": "IDM後搖trip hop，濕冷"
+   },
+   "evidence": [
+    "https://faexoptim.bandcamp.com/album/look-around-you",
+    "https://musicbrainz.org/release-group/b8ea109e-1368-4c12-b189-34dce0a60105"
+   ],
+   "mbRgMbid": "b8ea109e-1368-4c12-b189-34dce0a60105",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（只看 Bandcamp 標籤，把握 mid），研究層須再判聲音",
+   "bandcamp": {
+    "url": "https://faexoptim.bandcamp.com/album/look-around-you",
+    "img": "https://f4.bcbits.com/img/a3276039430_5.jpg",
+    "date": "26 Oct 2017 00:00:00 GMT",
+    "tracks": 16,
+    "minutes": 63,
+    "listeners": 1037,
+    "location": "Edinburgh, UK"
+   }
+  },
+  {
+   "artist": "Cujo",
+   "album": "Paranova",
+   "year": 2026,
+   "label": "",
+   "country": "us",
+   "faction": "triphop",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp downtempo 標籤 Last.fm 收聽 1024 人；標籤 Electronic、trip hop、triphop、Los Angeles",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 0.9,
+    "z": -0.3,
+    "why": "trip-hop拍、取樣、暗色"
+   },
+   "evidence": [
+    "https://cujobeats.bandcamp.com/album/paranova",
+    "https://musicbrainz.org/release-group/3dbceab1-ec52-44a5-85ea-aa1e6f11a01a"
+   ],
+   "mbRgMbid": "3dbceab1-ec52-44a5-85ea-aa1e6f11a01a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（只看 Bandcamp 標籤，把握 mid），研究層須再判聲音",
+   "bandcamp": {
+    "url": "https://cujobeats.bandcamp.com/album/paranova",
+    "img": "https://f4.bcbits.com/img/a2217886055_5.jpg",
+    "date": "02 Oct 2026 00:00:00 GMT",
+    "tracks": 12,
+    "minutes": 40,
+    "listeners": 1024,
+    "location": "Los Angeles, California"
+   }
+  },
+  {
+   "artist": "Conna Haraway",
+   "album": "Lusidiq",
+   "year": 2023,
+   "label": "Theory Therapy",
+   "country": "au",
+   "faction": "darkambient",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp downtempo 標籤 Last.fm 收聽 1015 人；標籤 Glasgow、ambient、downtempo、illbient、Sydney",
+   "moodGuess": {
+    "x": 2,
+    "y": 1,
+    "z": -0.8,
+    "why": "illbient低頻、錄音室髒、陰"
+   },
+   "evidence": [
+    "https://theorytherapy.bandcamp.com/album/lusidiq",
+    "https://musicbrainz.org/release-group/4b70c15f-5419-4d63-94b8-e579f76cf30f"
+   ],
+   "mbRgMbid": "4b70c15f-5419-4d63-94b8-e579f76cf30f",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（只看 Bandcamp 標籤，把握 low），研究層須再判聲音",
+   "bandcamp": {
+    "url": "https://theorytherapy.bandcamp.com/album/lusidiq",
+    "img": "https://f4.bcbits.com/img/a3672723806_5.jpg",
+    "date": "29 Sep 2023 00:00:00 GMT",
+    "tracks": 8,
+    "minutes": 41,
+    "listeners": 1015,
+    "location": "Sydney, Australia"
+   }
+  },
+  {
+   "artist": "Warmth",
+   "album": "The Black Sand",
+   "year": 2024,
+   "label": "ARCHIVES",
+   "country": "es",
+   "faction": "dubtechno",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp downtempo 標籤 Last.fm 收聽 914 人；標籤 Ambient、IDM、ambient、chillout、downtempo、drone ambient",
+   "moodGuess": {
+    "x": 1.3,
+    "y": 1.3,
+    "z": -0.3,
+    "why": "drone氛圍，低頻暗"
+   },
+   "evidence": [
+    "https://archivesdubmusic.bandcamp.com/album/the-black-sand",
+    "https://musicbrainz.org/release-group/2b009414-e736-49a1-8add-1e92f94cadbb"
+   ],
+   "mbRgMbid": "2b009414-e736-49a1-8add-1e92f94cadbb",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（只看 Bandcamp 標籤，把握 low），研究層須再判聲音",
+   "bandcamp": {
+    "url": "https://archivesdubmusic.bandcamp.com/album/the-black-sand",
+    "img": "https://f4.bcbits.com/img/a1995973100_5.jpg",
+    "date": "28 Mar 2024 00:00:00 GMT",
+    "tracks": 11,
+    "minutes": 41,
+    "listeners": 914,
+    "location": "Spain"
+   }
+  },
+  {
+   "artist": "Kayla Painter",
+   "album": "Tectonic Particles",
+   "year": 2026,
+   "label": "quiet details",
+   "country": "gb",
+   "faction": "darkambient",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp downtempo 標籤 Last.fm 收聽 814 人；標籤 Ambient、Bristol、chill-out、downtempo、drone、electronic",
+   "moodGuess": {
+    "x": 1.4,
+    "y": 0.8,
+    "z": -0.3,
+    "why": "drone實驗，field recording靜"
+   },
+   "evidence": [
+    "https://quietdetails.bandcamp.com/album/tectonic-particles",
+    "https://musicbrainz.org/release-group/82b457ed-22ef-4110-a946-eec1e1a793b0"
+   ],
+   "mbRgMbid": "82b457ed-22ef-4110-a946-eec1e1a793b0",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（只看 Bandcamp 標籤，把握 low），研究層須再判聲音",
+   "bandcamp": {
+    "url": "https://quietdetails.bandcamp.com/album/tectonic-particles",
+    "img": "https://f4.bcbits.com/img/a2063689130_5.jpg",
+    "date": "14 Jan 2026 00:00:00 GMT",
+    "tracks": 8,
+    "minutes": 36,
+    "listeners": 814,
+    "location": "UK"
+   }
+  }
+ ],
+ "notes": [
+  "卡單即策展結果（店主 2026-11-06），主線組 master；主線汰：Steve Hauschildt|Nonlin；Galcher Lustwerk|Information (Redacted)；Johnny Hollow|Johnny Hollow；Peter Bjärgö|The Architecture of Melancholy；Dregs|Dregs；SALOME|terminal；All India Radio|Echo Other (Expanded Edition)；no-man|love and endings；i Häxa|i Häxa"
+ ]
+}
