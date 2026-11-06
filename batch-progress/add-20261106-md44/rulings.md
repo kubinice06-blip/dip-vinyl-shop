@@ -76,3 +76,31 @@
 - **25038** 「日」後一字（尺 `/[年月]\s*\d{1,2}\s*日(.)/`）：Christ. 終、AES DANA 先、Public Memory 全、Now Always Fades 掛、Locust 首、Monophona 以、Ness 落、Disparition 釋；Earthen Sea 只寫到月。與 a（由／推／經／自／放／問／發）、b（交／上／面／出／公／成／在／獨／登／透）全不撞；初稿的 經／自／交／問 撞 a、b 後改掉。
 - **25039** 第二句句型（避開 a、b 與 md43 用過的「…的藝名」「是…的 A 與 B」「…是…的 X，自稱」「掛著…這個名號」等）：Christ.「藝名帶句點，本人來自…」；AES DANA「三種身分都屬於…」；Public Memory「…的每一環都是…」；Now Always Fades「撐起…的是…」；Locust「…的化名之一，他…生於…」；Earthen Sea「在…彈過貝斯的…，…是他用了多年的化名」；Monophona「國名＋三人分工」；Ness「標籤掛在…之間」（無國籍來源，以樂種補身分）；Disparition「樂器分工清單＋是他的個人名義」（避開池中《Transmutations》的「立足洛城的名義」、池中 AES DANA《Memory Shell》的「Ultimae 創辦人、法國作曲家」）。全批 c 組無同人兩張，不配「他／她」表；9 張 hook 皆不帶藝名，一律由 note g1 具名補身分（哪裡人或樂種）。
 - **25040** 自查：c 組 hook 互掃與 hook 對本批 a、b 的 hook／note 中文 4-gram 0 撞；hook 與自己 note 0 共用 4-gram（AES DANA「修道院改建的音樂廳」、Now Always Fades「標題曲的」已改）；對 `hooks/add-202611*` 既有檔掃出的跨批殘片已改掉「的音樂廳」「進錄音室」「爵士放克」「合成器底下」「的製作人」「年代初就」「的貝斯線」，剩「類比合成器」「合成器」一類樂器名。hook 事實回核：Christ. 撤名是 Warp 2002 重發應他要求；Locust〈Soul Sky〉用 90 年代初就有的合成器；Earthen Sea 120 出頭與大鼓淡出出自 RA（〈Velvet Grey〉，放 g2）；Disparition 饒舌／女高音出自官網引用 Brainwashed（放 g2）。腳本：`qa-batch hooks` 全部通過；`chk-hook-crossgroup` 3 組 29 張全部通過（只報不擋：Earthen Sea「〈Venus〉整首沒有節拍」屬內容）。
+
+## 寫作層（writer-2）（25046–25050）
+- **25046** 交件：`desc-tools/batches/output/add-20261106-md44-out-2.json` 14 張，key 與順序照輸入。逐張字數：Brael 195、Urbs 215（ok 按 full）；AES DANA 232、Locust 229、Earthen Sea 225、Monophona 239、Disparition 200（full）；Dillard 150、Chris Imler 144、Transparent Man 152、Christ. 168、Public Memory 160、Now Always Fades 175、Ness 155（thin）。初稿只有 Christ. 超出 thin 帶（198），整格捨去盤名《Blue Shift Emissions》並把「撤下了他的名字」「底下墊著層層疊起」收短為 168；其餘一稿落帶。
+- **25047** 第二句全照鉤子層配表（25033／25039）；「日」後一字全照 25034／25038（成／在／獨／登／透／終／先／全／掛／首／以／落／釋；Earthen Sea 只寫到月）。日期前一字（第三欄）逐張互異：力／半／感／寫／鼓／輯／動／曲／的／他／張／鐘／然。Dillard 原擬「整張」領日期，與 Monophona「首張」撞「張年月日」，改為句號後直接以日期領句。
+- **25048** 代稱具名：Chris Imler 的 hook 已說 Peaches 與柏林，第二句改成具名＋「靈魂是 Kraut、雙腳在跳舞」，第三句只補 Golden Showers，不再重提 Peaches／柏林；Transparent Man 第三句寫「傀儡指的是…的人」收 hook 懸念，不重述「壓抑情緒」；Monophona 以「2010 年 Chook 與 Claudine 相遇」點明 hook 的「他」是 Chook；AES DANA 的駐村句不重提「牆內回聲」，只寫氛圍融進作品；Urbs 收尾補「Geheimland 的意思是祕密之地」回應 hook。
+- **25049** 來源不進正文：Brael 的 Norman Records 評語寫成陳述句（打擊精簡、樂器漂浮）；Disparition 的 Brainwashed 寫成「被樂評形容成」；Chris Imler 的 Libération 照鉤子層配表寫「媒體說」；Dillard 照配表保留「Dillard 的簡介說」（藝人自述，非轉述引導詞；主線審稿可再看）。Earthen Sea「〈Venus〉則整首沒有節拍」是 note 指定的聲音內容，照寫（鉤子層 25040 已標只報不擋）。
+- **25050** 自掃：本檔 14 張＋兩檔輸入的 hook／note（扣骨架語）＋writer-1 已交的 5 張，han() 中文 4-gram 跨張 0 撞。途中拆掉「首約分鐘」（與 writer-1 note 共 10 張）、「收首約分」、「共首約分」、「長約分鐘」、「張年月日」、「在與之間」（Public Memory 改「橫跨…兩邊」、Ness 改「三者之間」）、「首各長到分鐘」「在到分鐘」（Locust 改「每首」、Earthen Sea 改「介於」），各張曲數／時長句法改成互異。腳本：`qa-batch out` 本檔 14 張 144–239、thin 全 ≤180（只報 writer-1 未交齊的張數不符）；`qa-check-research` 標記 0；`fix-spacing` 待補 0。
+
+## 寫作層（writer-1）（25041–25045）
+- **25041** 交件：`desc-tools/batches/output/add-20261106-md44-out-1.json` 15 張（full 6：180–225；thin 9：139–176）。逐張：Puma Blue 203、No-Man 216、Martina 206、Ochre 149、Arms 214、Khotin 176、Zenzile 180、AgonyOST 175、Wax Tailor 225、So Below 158、I Awake 161、Symbolico 149、Ugress 139、Gi Gi 168、Odd Nosdam 164。初稿 0 張出界，無整格捨去；note 各項全寫進正文，sound／facts 未入 note 的一律不寫。
+- **25042** 第二句句型全照鉤子層 25033 配表；「日」後一字全照 25034（由／推／經／自／放／問／發／交／上／面／出／公；No-Man、Martina、Zenzile 只寫到年或月）。跨批避開照 25033：Puma Blue 寫「以 Puma Blue 之名在倫敦發表作品」（不寫南倫敦、不寫「為藝名的倫敦音樂人」）；Khotin 以「Edmonton 製作人＋本名」領句，不寫「加拿大電子音樂人」；Odd Nosdam 只寫本名、生年、地下嘻哈；Martina 只寫水星獎入圍。
+- **25043** hook 代稱具名：No-Man 第二句補全名 Robert Fripp 並帶出 Steve Jansen；Martina 不重述「11 首」，改寫 15 首裡另 4 首新寫；Arms 不重述「重心／節拍」，改寫 Ramic 說的精簡與換合成器音色；Ochre 具名 DSI Evolver、Virus TI2；Khotin 補標籤原文 some beats later on；Zenzile 具名兩位常態歌手；AgonyOST 以「全盤最短 2 分 21 秒」收 hook；So Below 具名〈What We Like〉與 GrimesAI；I Awake 具名打鼓的 Lundberg；Symbolico 點明 hook 是專輯文案；Gi Gi 以廠牌介紹具名「德州顫音琴手」；Odd Nosdam 以〈BOM〉收「三個大寫字母」。性別未知的 AgonyOST、Gi Gi、Symbolico 正文不用代名詞（Gi Gi 用「這位樂手」）。
+- **25044** No-Man「隨即離開這家廠牌」屬作品綁定的後續事件，正文以「專輯推出之後」標時序；Epic/Sony 照鉤子層捨去不寫。AgonyOST「放上 Bandcamp」是 note 指定的發行處，照寫（非資料來源點名）。
+- **25045** 自掃：本檔 15 張＋writer-2 已交 14 張，han() 中文 4-gram 跨張 0 撞。途中拆掉「首約分鐘」×3（Arms／I Awake／Symbolico，各改「約莫」「播放時間約」「曲子約」）、「首張專輯在」「專輯在年」（I Awake／Ugress）、「的錄音室」（Martina 改「那間錄音室」、Wax Tailor 改「錄音室作品裡排第六」）、「電子音樂」（AgonyOST 改「電子樂創作者」）、日期前一字黏合「人年月日」「了年月日」「與年月日」「的年月日」「張年月日」「寫年月日」，以及與 writer-2 撞的「長約分鐘」「首加起來約」「分鐘左右」「分鐘上下」「混在一起」。跨歷批只剩「錄音室專輯」「第二張專輯」「年月日由」這類通用串（指派句型帶出）。腳本：`qa-batch out` 兩檔 29 張全部通過（out-1 139–225、thin 全 ≤180）；`qa-check-research` 標記 0；`fix-spacing` 待補 0。
+
+## 主線審稿（25051；2026-11-06）
+- **25051** 逐張審 29 張（out-1／out-2 全文印出，對研究稿 a、b、c 與 ar-d-815 補洞稿）。改 4 張 4 處，皆為單源或來源不可靠的事實，**已同步**研究稿、hooks、writer 輸入三層：
+  - `Ugress|Boulevard of Broken Dystopias`：刪「首張《Resound》在 2002 年拿下挪威榜第 2 名」→「2000 年起以這個名字活動」。依據：榜名次只有英文維基與其鏡像（ar-d-815 補洞同樣判單源不採）。
+  - `AgonyOST|The Final Nail in the Coffin`：「背後是一位美國的電子樂創作者」→「背後是單獨一位電子樂創作者」。依據：國籍只出自韓文粉絲維基（namu），研究稿自己也標「僅供參考」。
+  - `Locust|Spectral+`：「他 1966 年生於倫敦」→「他是英國人」。依據：生年只有英文維基一源（ar-d-815 補洞判單源）。
+  - `Wax Tailor|The Shadow of Their Suns`：刪「法國專輯榜最高第 14 名」。依據：只有維基一源，且本線慣例榜單名次不進正文。
+  - 照准：So Below 的 Maddie North 與 Bradley Hale（Bandcamp 專輯 credits 一手）；Odd Nosdam 1976 年生（維基＋研究稿）；Dillard「簡介說」是藝人自述非轉述詞；Earthen Sea「〈Venus〉整首沒有節拍」（note 指定的聲音事實）；AgonyOST「放上 Bandcamp」是發行處。
+  - `qa-batch hooks／out`、`chk-hook-crossgroup` 全部通過；`qa-check-research` 兩檔標記 0、`fix-spacing` 0；「據」、平台名 0。
+
+## 三軸、試聽、封面（主線，不佔條號）
+- 三軸 `ratings-override.json` 29 張全依 §0.8.1 人工錨點：經典 3／4＝23／6、冷門 2／3／4＝1／12／16、硬蕊 2／3／4＝14／13／2。經典 3 佔 79%（自檢線七成）：已用 Bandcamp 候選檔（1,901 張含同人多張）逐人比對聽眾排序，本張是同人聽眾最多或唯一 LP 的升 4（Puma Blue、Khotin、AgonyOST、Transparent Man、Christ.、No-Man）；其餘多是同人非代表作（Ochre 第四、Arms and Sleepers 第四、Public Memory 第四、AES DANA 第四、Odd Nosdam、Wax Tailor）或單一張無代表作依據，維持 3。
+- 試聽：Apple 28 ready／1 unavailable（Brael & Tokyo Bloodworm，Apple 查無；Bandcamp 有數位版）。Wax Tailor 在 Apple 只有《Extended with Instrumentals》27 軌版（前 13 首即原盤），照收並記 note。
+- 封面：CAA 26＋Bandcamp 3（Brael §1 人工身分、Urbs 與 Earthen Sea CAA 404），縮圖表目視全數與盤名相符（Earthen Sea 封面印 Lovers Rock no.4 2014）。頂點 0。

@@ -95,3 +95,8 @@
   - `Jogging House|Kiosk`：「整張單軌一次直錄到四分之一吋磁帶上」→「每首都一次錄成、直錄到四分之一吋磁帶上」。依據：Bandcamp 文案「Recorded in single takes straight to 1/4" tape」，single take 是一次錄成，不是單軌。**已同步**研究稿 b、hooks-b、writer-1 輸入三層（「單軌」0 處）。
   - 照准：Zane Alexander「約 38 分鐘」（研究 a 逐曲加總 12 首；卡單 46 分含 Bandcamp 加曲，不改）；Sneaker Pimps「隔了快二十年才交出第四張」（2002《Bloodsport》→2021）；Scann-Tec 2018 Ultimae Studios 重修母帶（Bandcamp 文案）；Pontiac Streator 逐曲 BPM 改寫成「黑膠版的登錄資料」不點平台；All India Radio「Rave 雜誌」改「樂評形容」（writer-2 自改）。
   - 「據」、平台名（Discogs／MusicBrainz／維基）grep 0；`qa-batch out` 26 張通過、`qa-check-research` 兩檔標記 0、`fix-spacing` 待補 0、`qa-batch hooks` 通過。
+
+## 三軸、試聽、封面（主線，不佔條號）
+- 三軸 26 張依 §0.8.1：經典 3／4＝17／9（同人聽眾最多或唯一 LP 升 4：Era、H.U.V.A. Network、Forhill、Tara Lily、Zane Alexander、Leif、Bergsonist、Scandinavian Star、1000 Eyes）、冷門 2／3／4＝1／11／14、硬蕊 1／2／3／4＝1／12／12／1。
+- 試聽：Apple 25 ready／1 unavailable（Pontiac Streator，Apple 查無；Bandcamp 有數位版，冷門度依但書給 4）。
+- 封面：CAA 24＋Bandcamp 2（Cemento Atlantico CAA 404、El Jazzy Chavo CAA 當天回 500），縮圖表目視全數相符。頂點 0。
