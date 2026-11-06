@@ -25,3 +25,10 @@
 - 年份照 MB：The Deadbeats《Lounging》1999（卡單 2000）；OSS《Enter the Kettle》MB 正名「Enter the Kettle. (Classified as a Weapon)」（OSS＝Alex Paterson 與 Fil Le Gonidec），盤名照 Bandcamp／Apple，MB 正名進 queryAlias。
 - §1 人工身分 1：Electronic Visions《Forest Language》（Apple 1767306233，2024-10-11、9 首、Polychora Records；2025 年 B-Sides EP 不是本盤）＋Bandcamp 頁。
 - **沿用前次研究稿**：Stone（ml71）、Evil Needle（ml73）、Rocket Empire（ml72）、Cephas Azariah（ml72）——研究層只補不足、把鼓的種類寫清楚。前次研究稿的「建議汰」不再成立（判輕、beat tape 鼓、96 BPM 慢拍都不是汰的理由），落哪格交給評分。
+
+## 研究 e 組（24801–24810）
+- 24801：Orpheus《VISIONS》身分＝Jarrod Lawson 別名，MB／Bandcamp（帳號 jlawson）一致，自行發行、無廠牌；卡單 moodGuess「neo-soul人聲」不符，整張是器樂（只有文案提人聲質地），facts 不寫人聲。
+- 24802：Orpheus 鼓的種類判慢拖／輕盈型（編程鼓＋〈Follow Me〉真人刷子鼓；〈Gamma Soirée〉略有律動），非舞池、非攻擊；BPM 無來源，判不出，不寫。聲音條來自單一樂評，已註明。
+- 24803：Goodge《Echoes Of Yesterday》身分無誤（MB bf7ee506、Cold Busted、2023-05-26、12 首）；鼓為混合型：中慢拍嘻哈／放克鼓與手鼓，一首 uptempo、一首明講放慢，無四拍底鼓，不汰；notes 記 moodGuess x 2.8 可能偏高（放克律動偏動），交評分。
+- 24804：Cephas Azariah 沿用 ml72 研究稿（補 0 條）；前次「建議汰」不成立，改寫 sound 與 notes 把鼓的種類寫清楚（無鼓／輕鼓為主，標題曲後段為堆疊式推進、非舞池），moodGuess 判輕存疑但不汰。
+- 24805：WebSearch 用 2 次（Orpheus、Goodge 各 1）；Wikipedia 無 Jarrod Lawson 條目，改用 MB 與 Bandcamp。
