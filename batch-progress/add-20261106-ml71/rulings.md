@@ -34,3 +34,13 @@
 - 24003：glaciære《pool water blue》moodGuess 存疑判輕（Sunvox 小品 library music，29 分鐘十首，夏日泳池意象）。
 - 24004：woob《Have Landed》moodGuess 存疑（四個年代拼貼、含 Max & Harvey 舊作，非統一靜重暖）。
 - 24005：Lindsheaven《Nordwrong》保留；mallsoft 霧感合理，但溫度不確定，無第三方樂評。年份 2013 無誤。
+
+## 研究 d 組
+- 23991：Joris Voorn《Melatonin》：Bandcamp 只給 ambient／downtempo 與睡眠主題，無低頻、殘響的聲音證據；判傾向輕／中性，moodGuess 存疑，status partial。
+- 23992：'t Geruis《Terre, Poussière》：廠牌文案支持厚（saturation、gaseous clouds）、靜、孤獨但不冷，moodGuess 大致成立，不汰；藝人為比利時人、廠牌在英國，country gb 是廠牌地。
+- 23993：Atomic Skunk《Portal》：吉他、人聲取樣、田野錄音，節拍是氛圍底下的細節而非舞池推進，成立不汰；Organic Robot Records 見版權行，label 留空。
+- 23994：Somatoast《Goop》：MB 無 primary type，7 首 32 分 27 秒（含他人混音一首），Gravitas 自稱 second album，視同 Album；IDM／glitch／dubstep 標籤與顛簸拍，moodGuess 存疑，建議汰。
+- 23995：LAB'S CLOUD《Underwater Galaxy》：Bandcamp 列出每首 BPM 95–115，說明稱 uplifting synth lines 與 soulful grooves，持續律動且偏輕，moodGuess 存疑，建議汰。
+- 23996：Neuroq《Catharsis》：Bandcamp 兩個網域互相轉址迴圈無法開啟，聲音無來源，status thin；x 2.8 已越邊距，moodGuess 存疑，建議汰。
+- 23997：Entheogenic《Meltwater Pulse 1B》：簡介僅一句、無聲音描述，status thin，moodGuess 無支持，存疑。
+- 23998：Astropilot《Solar Walk III. Unseen Chapters》：內容為另版、氛圍混音、新作，第 9 軌為整張 56 分鐘連續混音，近補遺性質；太空 cinematic 傾向冷，存疑，主線可比照 CBL《ALT》汰。
