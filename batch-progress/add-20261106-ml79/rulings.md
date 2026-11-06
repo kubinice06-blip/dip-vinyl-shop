@@ -38,3 +38,17 @@
 - 24782：Rocket Empire《Caves》沿用 ml72 研究稿（key 照本批卡單），補 0 條；前次「建議汰」改為中慢拍（約 96 BPM）、判輕，不汰。
 - 24783：The Deadbeats《Lounging》年份採 MB 1999（Bandcamp 2000、Discogs 黑膠 2000、Apple 1999-09-27）；寫作層寫 1999 年、不寫月日。
 - 24784：WebSearch 用 3 次（Błoto、Graham Kartna、Zero Cult），皆無專文樂評；聲音面主要靠廠牌文案與 Discogs 曲風，故多數標「判不出」而非硬猜。
+
+## 研究 d 組
+- 24791：d 組 7 張（Professor Creepshow、OSS、Sync24、Nanosphere、Odd Nosdam、Lindsheaven Virtual Plaza、Rosa Brunello）全部 thin；本組無沿用前次研究稿的卡，皆新查。WebSearch 用 3 次（OSS、Nanosphere、Sync24），其餘走 Bandcamp ld+json、MB、Beatport、電子雜誌訪談；維基 API 被限流，Odd Nosdam 取 WebFetch 摘要。
+- 24792：OSS《Enter the Kettle》鼓的種類標「moodGuess 存疑：舞池推進型（偏）」——Mixmag、ReGen 直稱 industrial techno，MB 標籤 techno，官網稱 dubwise steppers；但無 BPM，不敢斷言，研究層不寫汰，交主線依 11-06 標準裁量。
+- 24793：Nanosphere《Floating Realms》判中速碎拍型（Beatport〈Void〉95 BPM，僅一首為證），不是四拍底鼓，不判舞池推進；Bandcamp 日期 2019-05-15 與 MB／Beatport 2019-07-05 不同，年份同為 2019。
+- 24794：Professor Creepshow、Sync24、Lindsheaven、Rosa Brunello、Odd Nosdam 鼓的種類皆「判不出」（Odd Nosdam 偏無鼓／鼓很少，Rosa 為真人即興鼓），都不寫汰；Lindsheaven 留言有悼念語氣，無可靠來源證實身故，facts 不寫。
+- 24795：Sync24 姓氏 Bandcamp／訪談為 Vadestrid、MB 消歧義與 Qobuz 為 Segerstad，facts 採 Vadestrid；2020 訪談是談前作《Acidious》，不當作《Hope》的速度證據。
+
+## 研究 b 組（24771–24780）
+- 24771：b 組 7 張（Robot Koch、Moods、Entheogenic、Stone、Evil Needle、Ash Walker、Perpetual Loop），輸出 `desc-tools/batches/research/add-20261106-ml79-b.json`；facts 9–11 條、均附 https；full 3（Robot Koch、Moods、Ash Walker）、thin 4。
+- 24772：Stone 沿用 ml71 研究稿（補 0 條，只改寫鼓那條與 sound）、Evil Needle 沿用 ml73 研究稿（補 3 條：EarMilk 風格與柏林出身、Apple 版權、鼓種）；key 照本批卡單，前次「建議汰」不再成立。
+- 24773：鼓種判斷——Robot Koch 斷拍 wonky 切碎鼓（非四拍；存疑判躁／判冷）、Moods 全現場樂團真鼓靈魂爵士律動（存疑判輕）、Ash Walker 慢拖 dub／hip hop 取樣鼓（含 Laville 人聲 5 首，非純器樂）、Stone beat tape 型脈動（存疑判輕）、Evil Needle beat tape 短曲（判輕）、Entheogenic 與 Perpetual Loop 判不出。均無舞池推進或攻擊型的證據，無一建議汰。Perpetual Loop 標籤含 dance、melodic house、mid tempo，主線若要把關可試聽確認是否四拍底鼓。
+- 24774：日期／廠牌歧異——Entheogenic MB 2006-03-23、Bandcamp 2006-05-23（卡單 2006 不變）；Robot Koch Bandcamp 掛 Project Mooncircle、The Skinny 列 Robots Don't Sleep，發行日 12 月 7 日 vs MB 2009-11-13（年份不變）。
+- 24775：WebSearch 用 3 次（Perpetual Loop、Entheogenic、Robot Koch）；Perpetual Loop 與 Entheogenic 查無樂評，Robot Koch 得 The Skinny 與 XLR8R 評論。Evil Needle 的 Cold Busted 店面與 Bandcamp 仍讀不到。
