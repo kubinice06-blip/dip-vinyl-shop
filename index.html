@@ -1072,7 +1072,7 @@
 <script src="dip-player.js?v=57"></script>
 <script src="dip-draw-anim.js?v=5"></script>
 <script src="dip-genre-tree.js?v=5"></script>
-<script src="dip-tune.js?v=66"></script>
+<script src="dip-tune.js?v=69"></script>
 <script src="dip-artist-intro.js?v=2"></script>
 <script type="module">
   import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
@@ -4939,7 +4939,7 @@ ${seenList}
           const [artist, album, classic, obscurity, accessibility, genres, year, , tier] = row;
           const g = Array.isArray(genres) ? genres : [];
           // 有 tier 的不進一般卡池——漏了這道濾網，Abbey Road 會被當普卡抽出來
-          if (tier && apex[tier]) { apex[tier].push([artist, album, g, year]); continue; }
+          if (tier && apex[tier]) { apex[tier].push([artist, album, g, year, classic, obscurity, accessibility]); continue; }   // 後三欄給頻率光譜的星等篩選用
           cards.push({ artist, album, classic, obscurity, accessibility, genres: g, year: year || 0 });
         }
         if (!cards.length) throw new Error('卡池載入失敗，請重試');
@@ -4985,8 +4985,8 @@ ${seenList}
         _shopInv = inv;
         const cards = full.cards.filter(c => inv.has(shopKeyOf(c.artist, c.album)));
         for (const [tier, rows] of Object.entries(full.apex)) {
-          for (const [artist, album, genres, year] of rows) {
-            if (inv.has(shopKeyOf(artist, album))) cards.push({ artist, album, genres, year: year || 0, tier });
+          for (const [artist, album, genres, year, classic, obscurity, accessibility] of rows) {
+            if (inv.has(shopKeyOf(artist, album))) cards.push({ artist, album, genres, year: year || 0, tier, classic, obscurity, accessibility });
           }
         }
         if (!cards.length) throw new Error('店內清單載入失敗，請重試');
@@ -5890,6 +5890,8 @@ ${seenList}
     audioPref: () => window.DipPlayer?.autoplayPreference?.() !== 'off',
     setAudioPref: (on) => { window.DipPlayer?.setAutoplayPreference?.(on); _autoplayToggle?.sync?.(); if (on) gpEnsurePlayer({ grant: true, hold: 30000 }); },
     resolveCover: async (card) => (await resolveCardAssets(card.artist, card.album)).coverUrl || '',
+    // 頻率光譜的「分級」篩選：與唱片櫃同一套（人工指定 > 神作名單 > 經典＋硬蕊＋冷門加成）；頂點旗標 dip-tune 自己看 tier
+    tierOf: (card) => rarityOverrideOf(card)?.tier || neoclassicOf(card)?.tier || rarityFromRatings({ classic: card.classic, accessibility: card.accessibility, obscurity: card.obscurity })?.tier || 'common',
     // 搜尋清單用：先只讀 card_catalog 的封面（一次讀取），沒有才走完整查找（含 Spotify）
     listCover: async (card) => { try { const s = await getDoc(doc(db, 'card_catalog', cardIdOf(card.artist, card.album))); const u = s.exists() && s.data().coverUrl; if (u) return u; } catch (e) {} return (await resolveCardAssets(card.artist, card.album)).coverUrl || ''; },
     onBack: () => setActiveTab(SHOP_MODE ? 'shop' : 'find'),
