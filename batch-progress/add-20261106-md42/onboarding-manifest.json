@@ -1,0 +1,596 @@
+{
+ "schemaVersion": 1,
+ "batch": "2026-10-20-md42",
+ "batchNote": "薄細項策展線（add-20261106-md42）",
+ "createdAt": "2026-11-06T04:37:32Z",
+ "albums": [
+  {
+   "artist": "Funki Porcini",
+   "album": "Fast Asleep",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "9e7a0f2c-b345-3c44-8627-f35214fe01e5",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "暗煙 nu-jazz／電吉他氛圍：Bandcamp downtempo 第二輪卡單：Last.fm 收聽 273104 人；標籤 downtempo、nu-jazz｜⚠ moodGuess 為卡單粗估（只看 Bandcamp 標籤，把握 mid），研究層須再判聲音｜MB release-group 9e7a0f2c-b345-3c44-8627-f35214fe01e5：title「Fast Asleep」、Album、first-release-date 2002-07-29、artist-credit「Funki Porcini」。證據：https://funkiporcini.bandcamp.com/album/fast-asleep https://musicbrainz.org/release-group/9e7a0f2c-b345-3c44-8627-f35214fe01e5",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2002,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic",
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/9e7a0f2c-b345-3c44-8627-f35214fe01e5/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-06T04:37:32Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-06 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 2,
+    "accessibility": 3,
+    "listeners": 273104,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-06T04:37:32Z",
+    "note": "機器基線 3/2/3（Last.fm listeners 273104）"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 2、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "鼓刷、悶音小號與 Hammond 風琴，在冬日裡昏昏欲睡。Ninja Tune 在 2002 年發行《Fast Asleep》，作者 Funki Porcini 是倫敦人，14 首共約 61 分鐘。直立貝斯撐住底部，吉他持續音浮在上層，開場冷而暗，樂評聽成一段帶睏意的冬日漂流。曲間不時插進科幻 B 級片式的取樣對白。到了中段，〈16 Megatons〉與〈Weow〉換成 B3 風琴帶動的放克小品，整張在昏沉與帶笑兩頭擺盪。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Funki_Porcini",
+     "https://musicbrainz.org/release-group/9e7a0f2c-b345-3c44-8627-f35214fe01e5",
+     "https://funkiporcini.bandcamp.com/album/fast-asleep",
+     "https://www.popmatters.com/funkyporcini-fast-2495907695.html",
+     "https://www.brainwashed.com/index.php?option=com_content&view=article&id=23642%3Afunki-porcini-qfast-asleepq&catid=101&Itemid=855",
+     "https://exclaim.ca/music/article/funki_porcini-fast_asleep"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/0b/13/13/0b1313ea-2c24-61b0-4ce9-925186531fd3/mzaf_329750004432277791.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-06T04:37:56.950Z",
+    "appleCollectionId": "416337729",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 416337729「Funki Porcini《Fast Asleep》」：曲目 20/22 對上 MB 原盤（Apple 共 14 軌），取第 1 軌〈What Are You Looking At?〉。主線 2026-11-06 lookup 核對、試聽檔 HTTP 206。",
+    "trackName": "The Great Drive By",
+    "popularity": "deezer-rank"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Melanie De Biasio",
+   "album": "Lilies",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "816555f5-3ddc-49b8-9f6f-1a1329a9261c",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "暗煙 nu-jazz／電吉他氛圍：Bandcamp downtempo 第二輪卡單：Last.fm 收聽 69233 人；標籤 chillout｜⚠ moodGuess 為卡單粗估（只看 Bandcamp 標籤，把握 mid），研究層須再判聲音｜MB release-group 816555f5-3ddc-49b8-9f6f-1a1329a9261c：title「Lilies」、Album、first-release-date 2017-10-06、artist-credit「Melanie De Biasio」。證據：https://melaniedebiasio.bandcamp.com/album/lilies https://musicbrainz.org/release-group/816555f5-3ddc-49b8-9f6f-1a1329a9261c",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2017,
+    "yearNote": ""
+   },
+   "genres": [
+    "jazz",
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/816555f5-3ddc-49b8-9f6f-1a1329a9261c/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-06T04:37:32Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-06 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": 69233,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-06T04:37:32Z",
+    "note": "機器基線 3/3/3（Last.fm listeners 69233）"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "一支約 100 歐元的麥克風，能撐起一整張專輯嗎？這是比利時音樂人 Melanie De Biasio 的第三張錄音室專輯，收 9 首、長 38 分鐘多，2017 年 10 月 6 日由 PIAS 旗下的 Le Label 發行。她退回一個洞穴般的房間，手邊只留 Pro-Tools、一台電腦和一支 Shure SM-58。房裡沒有光、沒有暖氣，她卻覺得自由。鼓手多半只敲鈸與刷過的小鼓，節奏交給貝斯去扛，鋼琴大多彈單音。最後，所有曲子都在那支麥克風前錄完。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Lilies_(Melanie_De_Biasio_album)",
+     "https://melaniedebiasio.bandcamp.com/album/lilies",
+     "https://exclaim.ca/music/article/melanie_de_biasio-lilies",
+     "https://theafterword.co.uk/melanie-de-biasio-lilies/",
+     "https://musicbrainz.org/release-group/816555f5-3ddc-49b8-9f6f-1a1329a9261c"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/6c/83/15/6c8315e2-a0f7-4740-0d86-56f3c551ea12/mzaf_11780312907040350243.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-11-06T04:37:32Z",
+    "appleCollectionId": "1249393112",
+    "storefront": "BE",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple be 1249393112「Melanie De Biasio《Lilies》」：曲目 9/9 對上 MB 原盤（Apple 共 9 軌），取第 1 軌〈Your Freedom Is the End of Me〉。主線 2026-11-06 lookup 核對、試聽檔 HTTP 206。",
+    "trackName": "Your Freedom Is the End of Me",
+    "popularity": "deezer-rank"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Miktek",
+   "album": "Elsewhere",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "0da5580a-c3d9-4e96-a842-7341e26ddaec",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "Ultimae／Synphaera 系冷 ambient：Bandcamp downtempo 第二輪卡單：Last.fm 收聽 15948 人；標籤 downtempo、psybient｜⚠ moodGuess 為卡單粗估（只看 Bandcamp 標籤，把握 low），研究層須再判聲音；長度 148 分（Bandcamp 版可能含加碟或連續混音），以 MB 正規版為準｜MB release-group 0da5580a-c3d9-4e96-a842-7341e26ddaec：title「Elsewhere」、Album、first-release-date 2013-05-30、artist-credit「Miktek」。證據：https://ultimae.bandcamp.com/album/elsewhere https://musicbrainz.org/release-group/0da5580a-c3d9-4e96-a842-7341e26ddaec",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2013,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/0da5580a-c3d9-4e96-a842-7341e26ddaec/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-06T04:37:32Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-06 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 15948,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-06T04:37:32Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 15948）"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "根在 cold wave 的希臘人，把節奏放得很慢。寫它的是希臘米蒂利尼的 Mihalis Aikaterinis，Miktek 是他用的名字，另一條根扎在 gothic 裡。《Elsewhere》2013 年 5 月 30 日問世，是他在 Ultimae 的第一張完整專輯。12 首多半落在 5 到 7 分鐘，深沉的低頻托著細瘦的旋律，節奏做得精緻卻收斂。第 10 首〈Magnificient Desolation〉的編曲有 Aes Dana 參與。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/0da5580a-c3d9-4e96-a842-7341e26ddaec",
+     "https://ultimae.bandcamp.com/album/elsewhere"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/25/ba/03/25ba0396-ede5-9192-0afa-1902fb6adabe/mzaf_3614951640990405787.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-06T04:38:00.083Z",
+    "appleCollectionId": "641794763",
+    "storefront": "FR",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple fr 641794763「MikTek《Elsewhere》」：曲目 12/12 對上 MB 原盤（Apple 共 12 軌），取第 1 軌〈False Dawn〉。主線 2026-11-06 lookup 核對、試聽檔 HTTP 206。",
+    "trackName": "Ominous Ride (album edit)",
+    "popularity": "deezer-rank"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Ascendant",
+   "album": "Æthereal Code",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "3d4004a2-de2d-4b57-a106-9169d7b5f147",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "Ultimae／Synphaera 系冷 ambient：Bandcamp downtempo 第二輪卡單：Last.fm 收聽 12521 人；標籤 psybient｜⚠ moodGuess 為卡單粗估（只看 Bandcamp 標籤，把握 mid），研究層須再判聲音｜MB release-group 3d4004a2-de2d-4b57-a106-9169d7b5f147：title「Æthereal Code」、Album、first-release-date 2015-07-21、artist-credit「Ascendant」。證據：https://synphaera.bandcamp.com/album/thereal-code https://musicbrainz.org/release-group/3d4004a2-de2d-4b57-a106-9169d7b5f147",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2015,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/3d4004a2-de2d-4b57-a106-9169d7b5f147/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-06T04:37:32Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-06 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 12521,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-06T04:37:32Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 12521）"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "Ascendant 自己開了廠牌，SYN01 留給了自己。那家廠牌叫 Synphaera，是 2015 年在洛杉磯成立的獨立電子氛圍廠牌。《Æthereal Code》目錄號 SYN01，2015 年 7 月 21 日在 Bandcamp 上線，八首加總 55 分鐘左右，從寫作到製作全由他們包辦。它也是 Source Trilogy 系列的第二張，接續第一張《Source Transmission》往下走。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/3d4004a2-de2d-4b57-a106-9169d7b5f147",
+     "https://synphaera.bandcamp.com/album/thereal-code",
+     "https://synphaera.bandcamp.com/album/particle-horizon"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/8c/2b/05/8c2b0510-2cd2-8a7e-590b-354d3672a6dd/mzaf_8764138479944737890.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-11-06T04:37:32Z",
+    "appleCollectionId": "1018037580",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1018037580「Ascendant《Æthereal Code》」：曲目 8/8 對上 MB 原盤（Apple 共 8 軌），取第 1 軌〈Remains〉。主線 2026-11-06 lookup 核對、試聽檔 HTTP 206。",
+    "trackName": "Remains",
+    "popularity": "deezer-rank"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Cell",
+   "album": "Onwards System",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "c08736e7-a7e8-47c8-8b12-2c02af2e332e",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "Ultimae／Synphaera 系冷 ambient：Bandcamp downtempo 第二輪卡單：Last.fm 收聽 4271 人；標籤 downtempo、psybient｜⚠ moodGuess 為卡單粗估（只看 Bandcamp 標籤，把握 low），研究層須再判聲音｜MB release-group c08736e7-a7e8-47c8-8b12-2c02af2e332e：title「Onwards System」、Album、first-release-date 2022-04-07、artist-credit「Cell」。證據：https://ultimae.bandcamp.com/album/onwards-system https://musicbrainz.org/release-group/c08736e7-a7e8-47c8-8b12-2c02af2e332e",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2022,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/c08736e7-a7e8-47c8-8b12-2c02af2e332e/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-06T04:37:32Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-06 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 4271,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-06T04:37:32Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 4271）"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "隔了十三年，Cell 才又交出個人專輯。Alexandre Scheffer 用 Cell 這個名字在里昂的 Ultimae 待了多年，上一張個人專輯是 2009 年的《Hanging Masses》。這回 2022 年 4 月 7 日數位首發，10 首多在 6 至 7 分鐘。節拍收得很克制，深沉的底鼓墊在空間感底下，表面質地酥脆，邊緣會劈啪作響。旋律稀疏，有時不協和；樂評把〈Auxin〉形容成帶著氣凝膠般的冰冷。",
+    "sourceUrls": [
+     "https://tartinedecontrebasse.com/2022/04/27/cell-onwards-system-impesanteur/",
+     "https://ultimae.bandcamp.com/album/onwards-system",
+     "https://musicbrainz.org/release-group/c08736e7-a7e8-47c8-8b12-2c02af2e332e"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/7f/d0/a9/7fd0a9f0-f0e5-f36f-c8d1-eb6fbe0f1213/mzaf_10268069023345315291.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-06T04:38:03.023Z",
+    "appleCollectionId": "1807126395",
+    "storefront": "FR",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple fr 1807126395「Cell《Onwards System》」：曲目 10/10 對上 MB 原盤（Apple 共 10 軌），取第 1 軌〈Linear White〉。主線 2026-11-06 lookup 核對、試聽檔 HTTP 206。",
+    "trackName": "Walker Paper",
+    "popularity": "deezer-rank"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "ASKII",
+   "album": "Isverden: Spirits",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "cdd8976f-83ce-4716-b8ec-5595458329cf",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "drone／暗 ambient：Bandcamp downtempo 第二輪卡單：Last.fm 收聽 3293 人；標籤 chillout｜⚠ moodGuess 為卡單粗估（只看 Bandcamp 標籤，把握 mid），研究層須再判聲音｜MB release-group cdd8976f-83ce-4716-b8ec-5595458329cf：title「Isverden: Spirits」、Album、first-release-date 2023-06-16、artist-credit「ASKII」。證據：https://askii.bandcamp.com/album/isverden-spirits https://musicbrainz.org/release-group/cdd8976f-83ce-4716-b8ec-5595458329cf",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2023,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/cdd8976f-83ce-4716-b8ec-5595458329cf/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-06T04:37:32Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-06 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 3293,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-06T04:37:32Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 3293）"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "冰封山谷的夜，一條 32 分鐘全長，外加八段分曲。電子音樂出身的 ASKII 住在德勒斯登，寫的是氛圍與管弦配樂。冰封山谷的世界叫 Isverden，這一集是它的續作，2023 年 6 月 16 日登上 Bandcamp。全長版是〈Isverden: Spirits (Full Audio)〉，精確長度 32 分 21 秒；八首分曲短則 2 分 37 秒，長可到 6 分 34 秒。長音墊、管弦的提示與 ambient drone 一起鋪成凜冬的星夜。",
+    "sourceUrls": [
+     "https://askii.bandcamp.com/album/isverden-spirits",
+     "https://musicbrainz.org/release-group/cdd8976f-83ce-4716-b8ec-5595458329cf"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/ed/b3/fc/edb3fc93-4c5e-45b2-c038-36e28433d4b2/mzaf_6387103668275339195.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-06T04:38:05.150Z",
+    "appleCollectionId": "1690849767",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1690849767「Askii《Isverden: Spirits》」：曲目 8/8 對上 MB 原盤（Apple 共 8 軌），取第 1 軌〈Stars Above〉。主線 2026-11-06 lookup 核對、試聽檔 HTTP 206。",
+    "trackName": "Journey",
+    "popularity": "deezer-rank"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Ascendant",
+   "album": "Particle Horizon",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "e682cbae-9286-4038-9b73-c7fe1a6078db",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "drone／暗 ambient：Bandcamp downtempo 第二輪卡單：Last.fm 收聽 1463 人；標籤 psybient｜⚠ moodGuess 為卡單粗估（只看 Bandcamp 標籤，把握 low），研究層須再判聲音｜MB release-group e682cbae-9286-4038-9b73-c7fe1a6078db：title「Particle Horizon」、Album、first-release-date 2017-11-07、artist-credit「Ascendant」。證據：https://synphaera.bandcamp.com/album/particle-horizon https://musicbrainz.org/release-group/e682cbae-9286-4038-9b73-c7fe1a6078db",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2017,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/e682cbae-9286-4038-9b73-c7fe1a6078db/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-06T04:37:32Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-06 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 1463,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-06T04:37:32Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 1463）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 1463），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "wavetable 與模組合成器，鋪成十首長長的太空。母帶工程師 Don Tyler 是 Ascendant 兩人之一，收尾也是他在 IO Mastering 做的。盤上印的目錄號 SYN10，2017 年 11 月 7 日推到聽眾面前。調色盤除了 wavetable 與模組合成器，還有少量數位外掛，標籤列著 eurorack 與 Berlin School。10 首長達 73 分 40 秒，最短 5 分 58 秒、最長 8 分 36 秒。",
+    "sourceUrls": [
+     "https://synphaera.bandcamp.com/album/particle-horizon",
+     "https://musicbrainz.org/release-group/e682cbae-9286-4038-9b73-c7fe1a6078db"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/96/3c/99/963c99c6-cdd8-5849-95c1-be08eb034ac8/mzaf_9370099049327935423.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-11-06T04:37:32Z",
+    "appleCollectionId": "1315447403",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1315447403「Ascendant《Particle Horizon》」：曲目 10/10 對上 MB 原盤（Apple 共 10 軌），取第 1 軌〈Luminescence〉。主線 2026-11-06 lookup 核對、試聽檔 HTTP 206。",
+    "trackName": "Luminescence",
+    "popularity": "deezer-rank"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "State Azure",
+   "album": "Stellar Descent",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "b53f6559-38b5-4af2-99d8-a27ed667028f",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "Ultimae／Synphaera 系冷 ambient：Bandcamp downtempo 第二輪卡單：Last.fm 收聽 1126 人；標籤 downtempo｜⚠ moodGuess 為卡單粗估（只看 Bandcamp 標籤，把握 low），研究層須再判聲音；長度 106 分（Bandcamp 版可能含加碟或連續混音），以 MB 正規版為準｜MB release-group b53f6559-38b5-4af2-99d8-a27ed667028f：title「Stellar Descent」、Album、first-release-date 2023-07-07、artist-credit「State Azure」。證據：https://stateazure.bandcamp.com/album/stellar-descent https://musicbrainz.org/release-group/b53f6559-38b5-4af2-99d8-a27ed667028f",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2023,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/b53f6559-38b5-4af2-99d8-a27ed667028f/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-06T04:37:32Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-06 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 1126,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-06T04:37:32Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 1126）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 1126），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "英國南岸的氛圍計畫，把 105 分鐘全放成 CC 授權。Bandcamp 上的發行已超過 90 個，這個計畫專攻長篇氛圍。《Stellar Descent》2023 年 7 月 7 日自家推出，16 首以 CC 署名 4.0 釋出，註明出處就能使用。曲名如〈Stellar Drift〉〈Heliopulse〉，題材偏天文與物理。",
+    "sourceUrls": [
+     "https://stateazure.bandcamp.com/album/stellar-descent",
+     "https://musicbrainz.org/release-group/b53f6559-38b5-4af2-99d8-a27ed667028f",
+     "https://opus.ing/reviews/church-of-the-last-epoch-state-azure-2023"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/95/8d/80/958d801f-5c66-4cd8-4164-5b9a113b5f18/mzaf_613435316013981779.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-06T04:38:08.269Z",
+    "appleCollectionId": "1697038490",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1697038490「State Azure《Stellar Descent》」：曲目 16/16 對上 MB 原盤（Apple 共 16 軌），取第 1 軌〈Stellar Drift〉。主線 2026-11-06 lookup 核對、試聽檔 HTTP 206。",
+    "trackName": "The Tesseract",
+    "popularity": "deezer-rank"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  }
+ ]
+}
