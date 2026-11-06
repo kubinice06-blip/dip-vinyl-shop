@@ -32,3 +32,9 @@
 - 24803：Goodge《Echoes Of Yesterday》身分無誤（MB bf7ee506、Cold Busted、2023-05-26、12 首）；鼓為混合型：中慢拍嘻哈／放克鼓與手鼓，一首 uptempo、一首明講放慢，無四拍底鼓，不汰；notes 記 moodGuess x 2.8 可能偏高（放克律動偏動），交評分。
 - 24804：Cephas Azariah 沿用 ml72 研究稿（補 0 條）；前次「建議汰」不成立，改寫 sound 與 notes 把鼓的種類寫清楚（無鼓／輕鼓為主，標題曲後段為堆疊式推進、非舞池），moodGuess 判輕存疑但不汰。
 - 24805：WebSearch 用 2 次（Orpheus、Goodge 各 1）；Wikipedia 無 Jarrod Lawson 條目，改用 MB 與 Bandcamp。
+
+## 研究 c 組
+- 24781：c 組 7 張（Zero Cult、El Jazzy Chavo、The Deadbeats、Błoto、Electronic Visions、Graham Kartna、Rocket Empire）逐張把鼓的種類寫進 notes。無一判為確定的舞池推進或攻擊型；Błoto 官方文案說往 house／juke 靠、又自稱 brutal hip-hop grooves，標「moodGuess 存疑：局部可能偏舞池／偏躁，整體判不出」，不建議汰。其餘皆判不出精確 BPM、傾向慢拖。
+- 24782：Rocket Empire《Caves》沿用 ml72 研究稿（key 照本批卡單），補 0 條；前次「建議汰」改為中慢拍（約 96 BPM）、判輕，不汰。
+- 24783：The Deadbeats《Lounging》年份採 MB 1999（Bandcamp 2000、Discogs 黑膠 2000、Apple 1999-09-27）；寫作層寫 1999 年、不寫月日。
+- 24784：WebSearch 用 3 次（Błoto、Graham Kartna、Zero Cult），皆無專文樂評；聲音面主要靠廠牌文案與 Discogs 曲風，故多數標「判不出」而非硬猜。
