@@ -60,3 +60,43 @@
 - 24146 PALLADIAN《Indaco》：標籤 melancholic／hypnotic，曲短（3–5 分）有兩位客座，傾向歌式 downtempo；moodGuess 存疑（z 偏冷、x 可能 2.3–2.8）。thin（9 條）。
 - 24147 Dr. Toast《The Wave Function》：自訂網域轉址迴圈讀不到；聲音資訊完全未取得，卡單 label「False Profit Records」查無佐證不寫；moodGuess 存疑（無從判），建議汰換。thin（4 條）。
 - 24148 本組 WebSearch 用 3 次（AK、Dr. Toast、Dreamstate Logic），皆無整張專輯樂評；Photon、PALLADIAN、MindSpring 未搜。
+
+## 研究 d 組
+- 24151 Krusseldorf《From Soil to Space》：Igloo 樂評證實低速到中速、厚次低頻、dub、鋼琴旋律；首發 2011-10（Aleph Zero）屬實，Bandcamp 2018 為重發。moodGuess 存疑：x 偏邊界（〈The Cell〉急促次低頻擊點、〈Soe Doe〉中速繁複打擊，約 2.6–2.9），y、z 貼邊（部分曲目轉陰）。邊緣卡，full（10 條）。
+- 24152 Lapa《Meeting of the Waters》：作者為 Ilya Goldberg，首張專輯，Loci Records；文案取 trip-hop 與 groove house，有鼓組與打擊領頭。moodGuess 存疑：x 偏躁（約 2.8–3.2）、y 貼邊（弦樂顫音琴偏輕）。聲音證據單源（作者文案＋聽眾評論），full（9 條）。
+- 24153 monde ufo《Flamingo Tower》：MB 正規寫法 Monde UFO；Fire Records FIRE777，2025-03-07。森巴搖擺、陰鬱氛圍、旋律不明確的前衛取向。moodGuess 存疑：z 偏冷（−0.5 至 0.3）、x 可能 2.3–3.0；高風險，建議優先考慮汰換。full（9 條）。
+- 24154 Fennec《Free Us of This Feeling》：⚠ 推翻策展層：卡單說 Ultimae 系 ambient，實為取樣 house 製作人（Magnetic Magazine「strong grooves、dancefloor」）。moodGuess 存疑：x 應 ≥ 3.0（方向：躁），不會落恍惚，強烈建議汰換。Bandcamp 自訂網域迴圈讀不到。full（9 條）。
+- 24155 Charlie North《The Spaces In Between》：身分走 §1 人工；Wayback 取得 Bandcamp ld+json，確認 2008 年自發第二張、8 首、約 53 分、生成式音樂程式創作。聲音只有作者文案與 Digital Chill 一句引文。moodGuess 存疑：y 0.5 可能偏輕（空氣感氛圍，−0.3 至 0.6），若偏輕則落放鬆。full（9 條）。
+- 24156 Macroblank《絶望に負けた》：MB 首發 2020-06-23、Bandcamp 官方頁 2020-09-17（Aloe City Wrld，NU-ACR060）；頁面無文案，僅標籤與留言，聲音（速度、鼓型）查無來源。moodGuess 存疑：x 可能偏躁（barber beats 含節拍成分，未能查證）。thin（8 條）。
+- 24157 Zoungla《Entwine》：Costa Damoulianos（蒙特婁）首張專輯；只有作者文案可用，無樂評。moodGuess 存疑：x 約 2.3–3.0（文案寫 groovy）、z 偏冷（spooky／dark to bright）。thin（8 條）。
+- 24158 本組 WebSearch 用 3 次（Krusseldorf、Lapa、Fennec）；Charlie North 透過 Wayback 讀得 Bandcamp，Fennec／Lapa 的聲音證據各僅一至兩個來源。
+
+## 主線研究汰換（不佔條號；2026-11-06）
+研究層交件後照各組「moodGuess 存疑」汰 26 → 剩 9；被汰卡移到 `dropped-cards.json`／`dropped-research.json`。**不補位**（卡單即策展結果）。分類：有拍推進 10、判冷 7、無聲音來源 3、判輕 5、身分／版本 1（一張多項時歸第一項）。
+- Emancipator《Baralku》：有拍推進＋判輕：真鼓打擊、貝斯律動，小提琴長笛亮（研究 a）
+- Alpha《The Sky Is Mine》：有拍推進：歌曲式 trip-hop、女聲主導，z 貼邊（研究 a）
+- Nym《Lilac Chaser》：有拍推進：藝人自述 beat-driven，資料 thin（研究 a）
+- AES Dana《Leylines》：判冷：自述 luminous darkness、cinematic，z 恐 <0.3（研究 a）
+- Edamame《Bask》：雙軸貼邊＋thin：x 2.4–2.8、y 0.5–0.9（研究 a）
+- Halina Rice《UNREALITY》：有拍推進：藝人自述與樂評皆指舞曲節拍驅動（研究 e）
+- Dday One《Manu Propria》：資料極薄＋beat tape 鼓拍 x 恐 >2.7，聲音無來源（研究 e）
+- Donovan Hikaru《Selected Moods》：判輕：vaporwave／lounge 乾淨質感、3 分鐘短曲，無厚霧證據（研究 e）
+- Tryphème《Slowride》：有拍推進：trip-hop loop 鼓拍＋bass 吉他 riff，x 恐 2.8–3.0（研究 e）
+- Swim Surreal《In the Half Light》：判輕：Zero 7 製作的人聲歌曲，y 約 0–0.4（研究 b）
+- Helios《Domicile》：判輕：文案直述平靜合成器質地、無鼓，y 約 0.2–0.5；池中同人亦判輕（研究 b）
+- Saafi Brothers《Mystic Cigarettes》：有拍推進：文案直述 bopping drums、bassy beats（研究 b）
+- Circular《Substans》：判冷＋有拍：uplifting grooves、industrial clunks，z 恐 <0（研究 b）
+- Hinkstep《A Generation Lost in Space》：判冷＋無聲音來源：太空音景加朗讀詩（研究 b）
+- Koan《When the Silence Is…》：版本存疑＋判躁：2013 版 18 首 157 分含大量混音，MB 掛 progressive trance（研究 b）
+- Evil Needle《Cirrostratus》：有拍推進：15 首 2.5 分鐘 beat tape，曲名 Disco Inferno 等（研究 b）
+- Lab's Cloud《Connecting on a Deeper Level》：有拍推進：文案直述 driving mid-tempo beat、舞池段、psytrance 出身（研究 c）
+- AK《Branches》：判輕：唯一來源稱 spacious and aerial，頁面讀不到（研究 c）
+- Dreamstate Logic《Era3.I》：判冷：space ambient／psybient 太空意象（研究 c）
+- PALLADIAN《Indaco》：判冷＋x 貼邊：melancholic／hypnotic 歌式 downtempo（研究 c）
+- Dr. Toast《The Wave Function》：聲音無任何來源（頁面轉址迴圈），廠牌無佐證（研究 c）
+- Fennec《Free Us of This Feeling》：有拍推進：實為取樣 house 製作人，樂評 strong grooves、舞池面向（研究 d 推翻卡單）
+- monde ufo《Flamingo Tower》：判冷＋x 貼邊：森巴搖擺、陰鬱、旋律不明確（研究 d）
+- Lapa《Meeting of the Waters》：有拍推進＋判輕：trip-hop／groove house、鼓組打擊領頭，弦樂顫音琴偏輕（研究 d）
+- Zoungla《Entwine》：有拍＋判冷：文案 groovy、spooky（研究 d）
+- Charlie North《The Spaces In Between》：判輕：y 估 −0.3–0.6，無鼓也無厚度證據（研究 d）
+- 留下（9）：Carbon Based Lifeforms《Hydroponic Garden》、Delerium《Karma》、Photon《Image of Imagination》、MindSpring Memories《The Binary Ocean》、Krusseldorf《From Soil to Space》、Macroblank《絶望に負けた》、VANITAS命死《心の泉》、Veryan《One Universal Breath》、Ian Hawgood《Well, Here We Are》。其中聲音仍貼邊、交評分層判的：Carbon Based Lifeforms（z 約 0.3）、Krusseldorf（x 2.6–2.9）、Macroblank（無鼓型資料）、VANITAS命死（z 未決）、Ian Hawgood（y 略低）、Veryan（x 貼 2.7）。

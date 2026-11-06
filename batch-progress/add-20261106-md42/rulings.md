@@ -60,3 +60,22 @@
 - **24202**：AES Dana《Perimeters》curatorRisk 的 153 分鐘已查明＝11 首單曲約 79 分＋一條 74 分 08 秒〈Perimeters (Full Mix)〉；寫作層寫「11 首約 79 分（另附連續混音）」，不寫全長 153 分。
 - **24203**：moodGuess 存疑五張都記在 notes：AES Dana x 偏低（trance／prog-psy 脈動，偏躁）；Christ. x 偏低且 z 可能偏暖（破碎節拍、BoC 系旋律）；Hysterical Love Project z 偏暖（dream pop 殘響，易落恍惚）；Funki Porcini y／z 在邊界（B3 放克小品偏輕偏暖）；Melanie De Biasio y 靠邊（偏輕）。
 - **24204**：Christ.《Blue Shift Emissions》與 Hysterical Love Project《Lashes》標 thin（缺專業樂評，聲音描述來自廠牌與買家留言，facts 已標「非專業樂評」）；寫作層勿猜團員背景。
+
+## 主線研究汰換（不佔條號；2026-11-06）
+研究層交件後照各組「moodGuess 存疑」汰 15 → 剩 8；被汰卡移到 `dropped-cards.json`／`dropped-research.json`。**不補位**（卡單即策展結果）。分類：有拍推進 7、身分／版本 1、判暖 4、無聲音來源 2、判輕 1（一張多項時歸第一項）。
+- Nadia Struiwigh《Lenticular》：有拍推進＋判暖判輕：RA 樂評溫暖輕盈、旋律核心、有鼓 techno（末曲硬派 techno）
+- Strange Attractor《Everything Is Closer》：合輯（《Rorschach》2004＋《Rorschach II》2005 合編）＋broken beat／人聲／Rhodes 偏躁偏暖
+- Phaeleh《Dark Sky》：判暖＋有拍：鬆拍、旋律清楚，聽眾比對 L.T.J. Bukem／Tycho（研究 d）
+- James Murray《Weeds》：判暖：Igloo 評論稱帶暖意、happy-sad，z 中性略暖（研究 d）
+- Zane Alexander《Midrealm》：資料最薄＋x 2.6–3、z 不夠冷（trip-hop 標籤，拍子不明）（研究 d）
+- Antimatter《The Judas Table》：有拍推進＋判暖：完整鼓組暗色搖滾、金屬式吉他段（研究 b）
+- 1000 Eyes《Duality》：資料極薄＋有鼓判輕：15 首短曲、trip hop／hip-hop 標籤，廠牌無法證實（研究 b）
+- Connect.Ohm《9980》：z 貼邊偏暖：含蓄 downtempo＋drone，冷暖中性略暖（研究 b）
+- Eivind Aarset《Électronique noire》：有拍推進：9 首 7 首真鼓＋貝斯，「強勁陰鬱的電子律動」（研究 c）
+- Hong Kong Express《This》：判暖：vaporwave／dream music，聽眾稱天堂、平靜（研究 c）
+- Scandinavian Star《SOLAS》：有拍推進＋判暖：部分曲目四拍底鼓、踉蹌節奏，心碎優雅（研究 c）
+- Locust《Spectral+》：有拍推進＋判暖：歌曲取向、客座人聲含 rap、backbeat、shoegaze 流行（研究 c）
+- AES Dana《Perimeters》：有拍推進：兩家評論稱 trance／prog-psy 明快脈動，x 2.6–3.2（研究 a）
+- Christ.《Blue Shift Emissions》：有拍推進＋判暖：破碎節拍、「帶刺的鼓」，BoC 系旋律偏暖（研究 a）
+- Hysterical Love Project《Lashes》：判暖：Rubadub 稱 spaced out dream pop／hazy reverb（研究 a）
+- 留下（8）：Funki Porcini《Fast Asleep》、Melanie De Biasio《Lilies》、Miktek《Elsewhere》、Ascendant《Æthereal Code》、Cell《Onwards System》、ASKII《Isverden: Spirits》、Ascendant《Particle Horizon》、State Azure《Stellar Descent》。其中聲音仍貼邊、交評分層判的：Melanie De Biasio（y 靠邊）、Funki Porcini（y／z 邊界）、Cell（y 可能偏輕）、ASKII（z）、Ascendant 兩張（Berlin School 音序可能推 x、z 中性）、State Azure（thin）。
