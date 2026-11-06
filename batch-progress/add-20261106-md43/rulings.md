@@ -31,3 +31,27 @@
 - 24298　Andrew Tasselmyer《Yesteryear》：Seil Records（Seil 026）。來源直述鋼琴經磁帶處理改造、無鼓、quiet／melancholic／textured。標籤含 acoustic／piano／neoclassical，輕度存疑，不建議汰。短評（The Lifted Index、Lost Tribe Sound）為 Bandcamp 頁轉載，未查到原文。
 - 24299　Pontiac Streator《Triz》：Motion Ward MW008。Discogs 黑膠逐曲標 BPM 80–120，是拍子導向的 downtempo，與卡單「抽象 ambient」牴觸，另有客座（Mister Water Wet、Ulla）。moodGuess 存疑，建議汰。
 - 24300　本組統計：建議汰 3（Rom Di Prisco、Monophona、Pontiac Streator）；備汰 1（ambientium）；推翻策展層年份／廠牌 0 處，補廠牌 4 處（Bjärgö、Rabit、Tasselmyer、Pontiac）。WebSearch 用 3 次（Rom、Bjärgö、Monophona）。
+
+
+## 研究 a 組（24281–24290）
+- 24281　Webinar™《w w w . d e e p d i v e . c o m》：Bandcamp 自訂網域轉址迴圈、web.archive.org 被擋，抓不到文案；僅 MB 標籤（vaporwave、frutiger aero、late night lo-fi、faux-utopian）與曲名（Aqua、Euphoria、Underwater Disco）。年份採 2021（MB 首發 2021-07-03；卡單 2024 是 MB 另筆 2024-08-13 重發登記；Apple 頁標 2021-01-17 與 ℗2023 不採）。label Dream Corp.（MB）。thin；判亮判輕可能高，建議汰（弱）。
+- 24282　Whatever The Weather（Loraine James）：Ghostly International，2022-04-08。文案直述「airy, transportive」「sunshower of soft hums」「warm delay」，也有〈17°C〉propulsive、〈0°C〉steely beats，但整體放棄打擊樂結構。判輕，建議汰。
+- 24283　Solar Fields《Ourdom》：Droneform Records（Birgersson 自營），2018-03-29。無作者文案，僅標籤 downtempo、聽眾留言「gets groovin'」、曲名偏光；證據弱但方向偏有律動，建議汰（弱）。卡單「159 分」實為 13 首正曲加 79 分鐘連播混音。
+- 24284　Between Interval《Legacy》：Spotted Peccary（MB），2017-04-07。文案直述合成器序列、琶音、次諧波低頻脈動、dub techno 元素，Igloo 評 propulsive；標籤含 chill／meditation。有脈衝推進，建議汰。
+- 24285　ASURA《Radio Universe》：Ultimae inre057，2014-10-21。文案直述深低音 drone 與合成器墊，但「contrasted by the classic downtempo tracks」即專輯內有拍曲目；曲名偏明亮。混合型，建議汰（弱）。
+- 24286　All India Radio《Afterworld》：自行發行（CD 為 Spectra，單源維基）；作者自述放慢、dark ambient／post-rock 標籤；無直述推翻，保留。Bandcamp 的兩條 20 分鐘黑膠母帶檔不是額外專輯曲。
+- 24287　Hungry Lucy《Apparitions》：Fishtank Soundworks，2000-08-01（MB）。Bandcamp 轉址迴圈；零售文案「gothic/trip-hop、電子為主、加入鋼琴吉他長笛」。CD 14 首含 4 條混音版。聲音幾乎無直述，thin；Blue Dress 翻唱與 Alfa Matrix 重發為單源（波蘭語維基鏡像），寫作層勿用。
+- 24288　Nym《Countermagic》：Melting Records（雅典，專攻 downtempo／trip-hop／instrumental hip-hop），2020-01-06；Nym 為美國達勒姆（MB 單源）。Bandcamp 轉址迴圈、廠牌頁 404、WebSearch 無果。風格偏有鼓的 beat 音樂，與卡單「無資訊／靜」無支持，建議汰（弱）。thin。
+- 24289　Soapkills《Bater》：自行發行。年份定 2001（MB、維基、Bandcamp 簡介三源一致；Bandcamp 日期欄 2000-09-01 為離群值），建議卡單改 2001。簡介直述 Roland MC-303 鼓機為底、trip hop，判有拍；阿拉伯語人聲可能偏暖，建議汰（弱）。
+- 24290　simvlacrvm《sequences》：echo cult（MB），2026-05-29。無文案、無樂評；MB 藝人附註為 jungle／breakcore，與卡單「靜」相反，建議汰（弱）。thin。
+- 本組統計：建議汰 8（強證據：Whatever The Weather、Between Interval；弱證據：Webinar™、Solar Fields、ASURA、Nym、Soapkills、simvlacrvm）；保留 2（All India Radio、Hungry Lucy，無反證）。推翻策展層：年份 2 處（Webinar™ 卡單 2024→2021、Soapkills 2000→2001），label 補 7 處。WebSearch 用 3 次（Hungry Lucy、Webinar™、Nym）。
+
+## 主線研究後汰換（不佔條號；2026-11-06）
+- 判準照 md41 先例：研究稿以來源直述**有拍推進／舞曲感**、**判輕判亮**、**判暖**的汰；只有「聲音僅標籤、邊距未知」的留給評分驗收。另加一條：研究層查到的**藝人本行**（MB 附註、作品風格）與頹靡相反，也算直述。
+- **汰 8 張**（存 `dropped-cards.json`／`dropped-research.json`）：
+  - 能量：Rom Di Prisco《Cryptidalia》（研究 b：作者本行 breakbeat／big beat／goa trance，聽眾評 techno／house／EBM 混合）、Pontiac Streator《Triz》（研究 b：Discogs 黑膠逐曲 BPM 80–120，拍子導向）、simvlacrvm《sequences》（研究 a：MB 藝人附註 jungle／breakcore）、Nym《Countermagic》（研究 a：廠牌風格 trip-hop／instrumental hip-hop；店主 11-04「嘻哈太多」，並行恍惚卡單另有四張 Nym）。
+  - 判暖判輕：Whatever The Weather（研究 a：Ghostly 文案「airy, transportive」「warm delay」，另有 propulsive 曲）、Monophona《The Spy》（研究 b：樂評直述有鼓手，旋律勝過「陽光系 chillout」，原聲吉他＋人聲）、Webinar™（研究 a：MB 標籤 frutiger aero／faux-utopian，明亮的企業烏托邦美學）、Solar Fields《Ourdom》（研究 a：聽眾「gets groovin'」，曲名 Into The Sun、The Daylight Carrier；並行恍惚卡單另有三張 Solar Fields）。
+- **留下但研究層標弱汰的 3 張**（可逆，留給評分驗收）：Between Interval《Legacy》（文案有序列與琶音、Igloo 評 propulsive；但池中同人兩張 x 1.4–1.5、y 1.2–1.5、z −1.3～−1.6 穩落頹靡，以錨點為準）、ASURA《Radio Universe》（主體是 drone 與合成器墊，「classic downtempo tracks」只是對比段）、Soapkills《Bater》（MC-303 鼓機 trip-hop，阿拉伯語人聲；Portishead 型 80 BPM 冷 trip-hop 是第一輪穩的那型）。ambientium（psychill 標籤、無直述）、boerd（只有標籤）同理留下。
+- **研究層更正已改進卡單**：Soapkills 年份 2000 → 2001（MB、維基、Bandcamp 簡介三源一致）；label：Between Interval → Spotted Peccary、Hungry Lucy → Fishtank Soundworks、ambientium → Kahvi Collective、Peter Bjärgö → Kalinkaland Records（2009 原盤；2019 Cyclic Law 重發重新母帶）、Rabit → Halcyon Veil、Andrew Tasselmyer → Seil Records；All India Radio、Soapkills、WMD、boerd → self-released。
+- 寫作層不用：Hungry Lucy〈Blue Dress〉翻唱與 2001 Alfa Matrix 重發（單一鏡像站來源）。
+- 不補位。定案 **11 張**（a 5、b 6）。
