@@ -225,8 +225,11 @@
 .tune-key:active,.tune-key.is-pressed{transform:translateY(.385cqw)}
 .tune-key[disabled]{opacity:.55;cursor:default}
 .tune-key:focus-visible{outline:2px solid #ffd166;outline-offset:1px}
-.tune-draw{left:79.903%;top:12.597%;width:11.683%;height:11.323%;background-image:url(tune/key-draw.png);font-size:2.92cqw;letter-spacing:.08em}
-.tune-rand{left:79.903%;top:24.699%;width:11.683%;height:11.323%;background-image:url(tune/key-rand.png);font-size:2.6cqw;letter-spacing:.08em;place-items:end center;padding-bottom:1.1cqw}
+/* 就這張：長鍵、字直排（2026-11-06 店主：橫排三個字溢出按鈕）；一字一行，不靠 writing-mode */
+.tune-draw{left:79.903%;top:12.597%;width:11.683%;height:15.994%;background-image:url(tune/key-draw.png);font-size:3.4cqw;line-height:1.12;align-content:center;place-items:center;padding-bottom:.3cqw}
+.tune-draw span{display:block}
+/* 隨機：只留骰子（畫在鍵上），短鍵 */
+.tune-rand{left:79.903%;top:29.37%;width:11.683%;height:6.653%;background-image:url(tune/key-rand.png)}
 .tune-drum{position:absolute;overflow:hidden;background:transparent;top:24.204%;width:7.789%;height:10.262%}
 #tuneDx{left:14.951%}#tuneDy{left:23.992%}#tuneDz{left:33.032%}#tuneDcell{left:42.072%;width:18.776%}
 .tune-drum .strip{transition:transform .5s cubic-bezier(.25,.9,.3,1.08)}
@@ -334,8 +337,8 @@ html.tune-inapp-lock body{padding-top:120px}
     <i class="abs tune-lever" id="tuneLever" data-pos="up"></i>
     <button class="abs tune-sw" id="tuneMode" type="button" aria-label="SCAN 手動轉台／RADIO 電台：試聽播完自動換下一張" aria-pressed="false"></button>
     <i class="abs tune-led top on" id="tuneLedTop"></i><i class="abs tune-led bot" id="tuneLedBot"></i>
-    <button class="abs tune-key tune-draw" id="tuneDraw" type="button" disabled>就這張</button>
-    <button class="abs tune-key tune-rand" id="tuneRand" type="button" aria-label="隨機選一張" title="在符合篩選的卡裡隨機選一張">隨機</button>
+    <button class="abs tune-key tune-draw" id="tuneDraw" type="button" aria-label="就這張" disabled><span>就</span><span>這</span><span>張</span></button>
+    <button class="abs tune-key tune-rand" id="tuneRand" type="button" aria-label="隨機選一張" title="隨機選一張（只抽符合篩選的卡）"></button>
     <span class="abs tune-fplate" data-k="genre">類別<small>GENRE</small></span>
     <span class="abs tune-fplate" data-k="grade">等級<small>RATING</small></span>
     <span class="abs tune-fplate" data-k="tier">分級<small>TIER</small></span>

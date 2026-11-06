@@ -323,14 +323,17 @@ vgroove(fq_x_end, y_fq, y_fq_end)
 # 名牌「調頻 / DATA TUNING」照舊掛在分隔槽上
 out.paste(FQ.crop((828, 14, 1310, 110)), (fq_x(828), 14 - TITLE_Y0 + y_fq))
 
-# ── 右欄：就這張＋隨機（原本一顆 168×358 直鍵 → 上下兩顆 168×160）────────
-KEY_W, KEY_H, KEY_GAP = 168, 160, 11
+# ── 右欄：就這張＋隨機（原本一顆 168×358 直鍵 → 上長下短兩顆）────────
+# 2026-11-06 店主：「就這張溢出按鈕了」「隨機只需要留骰子」——隨機鍵只放骰子、縮成短鍵，
+# 讓出來的高度給就這張，字改直排（跟原本的直鍵一樣），三個字放得下又夠大
+KEY_W, KEY_GAP = 168, 11
+KEY_H_DRAW, KEY_H_RAND = 226, 94
 kx0 = fq_x_end + GROOVE + ((INNER_X1 - fq_x_end - GROOVE) - KEY_W) // 2
 ky_a = y_fq + 16
-ky_b = ky_a + KEY_H + KEY_GAP
-recess(kx0, ky_a, kx0 + KEY_W, ky_b + KEY_H)
-d.rectangle((kx0 - 3, ky_a + KEY_H + 3, kx0 + KEY_W + 2, ky_b - 4), fill=(0, 2, 7))   # 兩顆之間一條暗縫
-R_KEYS = dict(draw=(kx0, ky_a, kx0 + KEY_W, ky_a + KEY_H), rand=(kx0, ky_b, kx0 + KEY_W, ky_b + KEY_H))
+ky_b = ky_a + KEY_H_DRAW + KEY_GAP
+recess(kx0, ky_a, kx0 + KEY_W, ky_b + KEY_H_RAND)
+d.rectangle((kx0 - 3, ky_a + KEY_H_DRAW + 3, kx0 + KEY_W + 2, ky_b - 4), fill=(0, 2, 7))   # 兩顆之間一條暗縫
+R_KEYS = dict(draw=(kx0, ky_a, kx0 + KEY_W, ky_a + KEY_H_DRAW), rand=(kx0, ky_b, kx0 + KEY_W, ky_b + KEY_H_RAND))
 
 
 def short_key(src, h):                          # 直鍵剪短：上半截＋下半截，中段抽掉
@@ -351,12 +354,12 @@ def copper_lut():                               # 銅色：照能量輪銅帶（
     return lut
 
 
-key_draw = short_key(BTN, KEY_H)
-kr = np.asarray(short_key(BTN, KEY_H)).astype(float)
+key_draw = short_key(BTN, KEY_H_DRAW)
+kr = np.asarray(short_key(BTN, KEY_H_RAND)).astype(float)
 lum = np.clip(kr @ np.array([.299, .587, .114]), 0, 255).astype(int)
 key_rand = Image.fromarray(np.clip(copper_lut()[lum], 0, 255).astype('uint8'))
 # 骰子（9×9 格，三點）畫在隨機鍵上
-gk = Grid((KEY_W - 9 * P) / 2, 20, key_rand)
+gk = Grid((KEY_W - 9 * P) / 2, (KEY_H_RAND - 9 * P) / 2 - 2, key_rand)   # 置中（略往上，鍵的下緣比較厚）
 DIE_HI = tuple(int(v) for v in copper_lut()[230])
 for a in range(9):
     for b in range(9):
@@ -659,9 +662,8 @@ put_l(mock, text_img('RADIO', 2, DIM), R_SW['lab_bot'][0], (R_SW['led_bot'][1] +
 hl = (255, 236, 170, 140)
 mock.paste(key_draw, R_KEYS['draw'][:2]); mock.paste(key_rand, R_KEYS['rand'][:2])
 rk = R_KEYS['draw']
-put(mock, text_img('就這張', 3, INK, (2, 2, hl)), (rk[0] + rk[2]) / 2, (rk[1] + rk[3]) / 2)
-rk = R_KEYS['rand']
-put(mock, text_img('隨機', 3, INK, (2, 2, hl)), (rk[0] + rk[2]) / 2, rk[1] + 20 + 9 * P + 14 + 24)
+for i, ch in enumerate('就這張'):                 # 直排
+    put(mock, text_img(ch, 3, INK, (2, 2, hl)), (rk[0] + rk[2]) / 2, (rk[1] + rk[3]) / 2 + (i - 1) * 54)
 # 篩選滾筒
 FL_ITEMS = {
     'genre': [('搖滾', DIM), ('爵士', AMBER), ('電子', DIM)],
