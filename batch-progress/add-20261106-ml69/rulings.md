@@ -32,3 +32,9 @@
 - 23563：廠牌與 MB 不符另有 Bluetech（Interchill）、Manatee Commune（Bastard Jazz BJCD14）、CASSOWARY（Fat Possum）、Monster Rally（Golden Robot）、Eagle Eyed Tiger（Stratford Ct.）；卡單 self-released 皆待主線改。
 - 23564：fLako《The Mesektet》廠牌文案自述為 2008 年前未發行／數位曲集成（36 首含 6 首 bonus）；MB 仍為 Album 有目錄號 PMC077，保留，是否視同合輯由主線定。
 - 23565：moodGuess 存疑：Manatee Commune（文案寫舞池、LED 鼓墊 break、夏日國歌，x 低估）、Monster Rally（exotica 明亮）、CASSOWARY（G-funk 律動）、Eagle Eyed Tiger（synthwave／retrowave）、Dirty Art Club（曲名藥物夜間意象）、L'Orange（noir 偏暗）、Bluetech（暖 dub 與殘響陰影並存）。
+
+## 研究 c 組（23581–23590）
+- 23581：Teal《Original Watercolour》§1 核對通過（Bandcamp＋Discogs 33698556：盤名、2025-05-02、Spiritual World SW010、LP 45 RPM、6 首 27 分 42 秒）。廠牌與零售商稱 debut LP、Discogs 格式 LP，可收；屬貼長度下限的 mini-album，寫作層寫「6 首不到半小時的 LP」，不寫「第二張全長」。
+- 23582：廠牌推翻——Lipphead 實為 Def Pressé（DFPR33LP，非 Blockhead）；Liléa Narrative 實為 Under Cover（UC 416，非 self-released）；Emapea 黑膠為 Beat Catz 001，數位版維持 self-released。
+- 23583：moodGuess 存疑——Emapea（重鼓深低音、funk 鼓，x 偏低）、Lipphead（upbeat electronic funk）、Hysterical Love Project（無聲音來源、Discogs 另標 Industrial）、Liléa Narrative（長篇電子 cut-up）、Stream☾atcher（future funk 四拍）、Photon（僅標籤）、bvdub（無鼓長篇，動態可至壓倒性）。
+- 23584：thin 五張（HLP、Liléa、Stream☾atcher、Photon 與 Teal 以外）：Bandcamp 無說明且無樂評，WebSearch 3 次用盡。Stream☾atcher 所在地 Bandcamp 布加勒斯特、MB 標籤 austin，未定案，寫作層不寫所在地。
