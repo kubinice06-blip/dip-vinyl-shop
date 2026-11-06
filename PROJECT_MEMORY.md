@@ -6,9 +6,20 @@
 - **md43**（`add-20261106-md43`）：主線初篩汰 19（remix 過半、demo 集、重發加長、未發表曲集、文案直述有拍推進 6、判暖 3、池中同人判輕判暖 3、同人超量 3）→ 研究 2 組汰 8（有拍或嘻哈根 4、判暖判輕 4）→ **上線 11、落頹靡 10（91%）**；出格 Soapkills《Bater》判暖落恍惚。
 - **結論**：近邊界卡單上線率 29%（第一輪 39%）；Ultimae 系 psybient、Loraine James 這類標 downtempo 的盤文案多寫 beats／warm／luminous。整條線兩輪卡單頹靡 218、恍惚 303，第一輪上線 104，第二輪本批 11（其餘見 md42、ml71–73）。
 - **寫入（已即時生效）**：card_catalog 11、KV 11 鍵逐字回讀一致（stamp 20261106md43）、試聽 10 ready／1 unavailable（最紅那首換 9 張）、seed +11；prepare／published gate 皆 0 error；頂點 0；封面 CAA 11／11。三軸依 §0.8.1 人工錨點（經典 3／4＝9／2，逐人查過 Last.fm 專輯排序）。審稿改 3 張（Soapkills 單源「中東最早」、Hungry Lucy 城市三說改寫州、ASURA 的里昂其實是廠牌所在地）。
-- **藝人介紹**：ar-d-531 寫 8／不寫 1（WMD 無國籍來源）；審稿改 2 處（Soapkills 單源後輩影響句、Rabit 本人說法改歸因）。
+- **藝人介紹**：ar-d-531 寫 8／不寫 1（WMD 無國籍來源）；合併 main 後 ASURA 讓給先上線的 ar-d-527，本批實際上線 7 位；審稿改 2 處（Soapkills 單源後輩影響句、Rabit 本人說法改歸因）。
 - **主要檔案**：`batch-progress/add-20261106-md43/`、`onboarding-manifest-add-20261106-md43-20261106.json`、`batch-progress/mood-cells-20261022/{curation-md43,master-md43,cut-artist-intros-md43.mjs,SCENES.md}`、`desc-tools/batches/{cards,research,hooks,input,output}/add-20261106-md43*`、`batch-progress/mood-axes/score-md43/`、`batch-progress/artist-intro/{roster-md43-ar-d-531,ar-d-rulings-md43.md}`、`data/artist-intros/`、`seed_cards.json`、`data/mood/`、`genre-tree.json`、`card-subgenres.json`、`draw-covers/`、試聽地圖。
 - **驗證**：`verify-album-onboarding --published` 0 error；`verify-wave-kv` 11／11；`build-card-moods` 錨點 104/104；`qa-artist out` 只剩不寫的 WMD 缺位。
+### 2026-11-06｜dip-vinyl-shop｜情緒薄格恍惚 Bandcamp downtempo 候選第二輪 ml71／ml72：25 張上線（落恍惚 18）＋藝人介紹 8 位
+
+- **店主 11-06「繼續」**：第一輪 289 張上線 104 後，剩下靠近邊界的 612 張先濾掉舞池／嘻哈／dub／soul／pop 標籤 → 232 張分五批、三個工作階段並行；本工作階段做 ml71（`pick-ml71.json` 52）與 ml72（`pick-ml72.json` 52），條號 23961／24041。卡單即策展，主線組 curation → master → 卡單，不補人。
+- **ml71**（`add-20261106-ml71`）：主線汰 15（合輯／混音集／翻唱 6、同人錨點 2、同人超量 2、先例 2、EP、原聲、特別版重發各 1）→ 研究汰 21（有拍推進 12、判輕 3、無來源 3、判冷 2、判躁 1）→ **上線 16、落恍惚 12（75%）**；出格 Delerium、AES DANA、Science Of Sleeping 判冷落頹靡，Monde UFO 判輕。
+- **ml72**（`add-20261106-ml72`）：主線汰 20（同人錨點判輕判冷判躁 10、同人超量 5、先例 4、慈善盤 1）→ 研究汰 23（有拍推進 16）→ **上線 9、落恍惚 6（67%）**；出格 CIRCULAR 落平靜、Josh Leake 落放鬆、woob 落頹靡。
+- **來源結論**：第二輪卡單 104 → 上線 25（24%）。**池中同人錨點是主線初篩最有用的篩子**（Bonobo、The Album Leaf、Helios 判輕，State Azure、Carbon Based Lifeforms 判冷，Mr. Scruff 判躁）；研究層汰掉的多是 psybient／psychill 的持續律動與 Ultimae 系太空 ambient 的冷。Bandcamp downtempo 這個來源已挖乾，不建議再派第三輪。
+- **寫入（已即時生效）**：card_catalog 25、KV 27 鍵逐字回讀一致（stamp 20261106ml71／ml72）、試聽 21 ready（20 張換成最紅那首）／4 unavailable（Apple 查無）、seed +25；prepare／published gate 皆 0 error；頂點 0。封面 CAA 18＋Bandcamp 7（CAA 404 2、§1 人工身分 2、CAA 當天 500／斷線 3）。§1 人工身分 2（Science Of Sleeping、Josh Leake，各附 Bandcamp＋Apple collectionId）。審稿改 5 張（Delerium 被動轉述評價、Lauge 樂評轉述、Science Of Sleeping「首張」不穩、Deadbeat 奥田祐斎日文字、CIRCULAR 單篇樂評評價）。
+- **藝人介紹**：ar-d-527 寫 7、不寫 3（Telenights 無身世；Yaima、Lauge & Baba Gnohm 國籍單源）；ar-d-528 寫 2、不寫 3（Edamame、Josh Leake 出身單源，Hinkstep 素材不足）；審稿改 3 處（刪單源評價句）。合併 main 後 Delerium 與並行批重複、讓給已上線版本 → 最終上線 8 位。
+- **八格**（合併 ml73／md42 後重建）：恍惚 1,752、頹靡 1,798；錨點 104/104。類型樹、抽卡封面、card-moods 重建。
+- **主要檔案**：`batch-progress/add-20261106-{ml71,ml72}/`、`onboarding-manifest-add-20261106-ml7[12]-20261106.json`、`batch-progress/mood-cells-20261022/{curation-ml71,curation-ml72,master-ml71,master-ml72,cut-artist-intros-ml71.mjs,SCENES.md}`、`desc-tools/batches/{cards,research,hooks,input,output}/add-20261106-ml7[12]*`、`batch-progress/mood-axes/score-{ml71,ml72}/`、`batch-progress/artist-intro/{roster-ml71-ar-d-527,roster-ml72-ar-d-528,ar-d-rulings-ml71.md}`、`data/artist-intros/`、`seed_cards.json`、`data/mood/`、`genre-tree.json`、`card-subgenres.json`、`draw-covers/`、試聽地圖。
+- **驗證**：`verify-album-onboarding --published` 兩批 0 error；`verify-wave-kv` 18／18、9／9；`build-card-moods` 錨點 104/104；`qa-artist out` 兩批只剩刻意不寫的缺位。
 ### 2026-11-06｜dip-vinyl-shop｜情緒薄格 Bandcamp downtempo 候選第二輪 ml73／md42：17 張上線（落格 16）＋藝人介紹 6 位
 
 - **店主 11-06「繼續」**：第二輪 232 張（靠近邊界、已濾舞池節拍標籤）分五批三個工作階段並行；本工作階段做 ml73（恍惚，卡單 51，條號 24121）與 md42（頹靡，卡單 39，條號 24201）。卡單即策展，主線組 `curation-ml73／md42.json` → master → 卡單；同藝人跨並行卡單與池中一起勻（本線每位最多一張、兩批合計不過兩張）。
