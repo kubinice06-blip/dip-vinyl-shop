@@ -3851,4 +3851,6 @@ window.DipPreviewStatus = Object.freeze({
   "jake muir|pareidolia": "unavailable",
   "susan geaney|tape melt": "unavailable",
   "seah|conduits of the hydrosphere": "unavailable",
+  "macroblank|tales of the cypher": "unavailable",
+  "moth equals|sick puppy": "unavailable",
 });

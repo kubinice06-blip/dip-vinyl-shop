@@ -69,3 +69,29 @@
 - **23695** 第二句句型配表（16 種）＝「他／她」引入法配表（本批無同藝人跨卡）：Desert Dwellers＝組成者＋樂種「…組成的 yoga dub 二人組」；Brock＝名字＋「住在紐約，做器樂 beat」；Mounika.＝地名＋身分＋名「法國圖爾的製作人」；Sweeps＝樂種領句「做 boom-bap beat tape 的 Sweeps，據點在洛杉磯」；Blockhead＝本名領句＋製作關係（Aesop Rock）；HashFinger＝「來自英格蘭的布拉福」；L'Orange＝「在北卡羅來納州做嘻哈，本名…」；Brugger＝「是慕尼黑製作人，也是 Squama 共同創辦人」；Dundiff＝廠牌之口「Cold Busted 在…替…發行」；Poldoore＝序數「這是…的第五張錄音室專輯」；Krusseldorf＝生年與出生地；Oblique＝「這個計畫做的是…」；Purrple Cat＝日期領句（避開池中 8 張舊卡已用的匿名／玩笑話／國別／作品量／標籤／命名習慣／標語／封面自製）；Macroblank＝器物（封面自己設計）；Bluetech＝「Evan Bartholomew 用 Bluetech 這個名字做 downtempo」（避開 ml50 舊卡的西雅圖基地）；Kuba＝「出身英國劍橋，本名…」。
 - **23696** 日期「日」後一字逐張配死（尺 `/[年月]\s*\d{1,2}\s*日(.)/`）：Mounika. 日發、Sweeps 日以、L'Orange 日全、Brugger 日推、Dundiff 日替、Poldoore 日上、Krusseldorf 日自、Oblique 日首、Purrple Cat 日，、Bluetech 日交、Kuba 日在；Desert Dwellers、Blockhead、HashFinger 只到月，Brock 只到年，Macroblank 只到年（研究稿：MB 與 Bandcamp 差三週，避開月日）。分數 0、榜位 0、媒體名 0。
 - **23697** 自查：hook 開頭前四字 16 張互異，對全 hooks 目錄亦互異（初稿「簡介只有」撞 sf06、「巴爾的摩」撞 ml2，已改）。本批 hook 之間中文 4-gram 0；hook 對全批 note 0；hook 對自己 note 6 字以上逐字只剩人名 Youth。對他批 hook 的高頻殘片已改字：「的錄音室」×37、「進同一張」×6、「只有一句」×9、「的小廠牌」×3、「了最後一」×2、「類比器材」×2；剩「巴爾的摩」×2（地名）。note 間 3 張以上 4-gram 0。Oblique hook 引句原有半形句點，改全形。腳本：`node qa-batch.mjs hooks add-20261106-ml70` 全部通過 ✓；`node chk-hook-crossgroup.mjs add-20261106-ml70` 全部通過 ✓（5 組 16 張，hook 加權 19–25，note 151–234）。輔助腳本：scratchpad `hook-ml70/ml70h-draft.mjs`、`ml70h-measure.mjs`。
+
+## 寫作層（writer-1）（23701–23710）
+- **23701** 交件：`desc-tools/batches/output/add-20261106-ml70-out-1.json` 16 張（full 8：193–238；thin 8：152–179）。逐張：Desert Dwellers 238、Brock Berrigan 152、Mounika. 218、Sweeps 173、Blockhead 179、HashFinger 154、L'Orange 170、Martin Brugger 238、Dr. Dundiff 233、Poldoore 193、Krusseldorf 212、Oblique Occasions 165、Purrple Cat 172、Macroblank 168、Bluetech 238、Kuba 238。`qa-batch out` 全部通過、`qa-check-research` 0、`fix-spacing` 待補 0。
+- **23702** 初稿 3 張超標（Brugger 250、Kuba 248、Blockhead 182），整格／整子句捨去：Brugger 拿掉「他們聽完」與「始終」、合成器前的「一台」；Kuba 第二句的代稱具名改成「Rizwan 與 Muazzam Khan 是…」直接領句，砍「出現在」「被形容為」；Blockhead 砍「那段日子」「一張」。另 Mounika. 的「一份播放清單」被 qa 的不具名清單樣式誤標，改「排得像播放清單」。
+- **23703** 第二句領句全照鉤子層 23695 指派；「日」後一字全照 23696（發／以／全／推／替／上／自／首／，／交／在）。日期前一字逐張相異；Mounika. 與 Brugger 原本都是「…人，年月日」撞 `人年月日`，Brugger 改以盤名領句、日期前一字為「他」。Dundiff 照指派保留「在年月日」，本檔唯一一處。
+- **23704** 自掃 han() 中文 4-gram（剝《》〈〉、含 hook）：初稿 7 條 2 張殘片（`人年月日`、`首約分鐘`、`的紀錄也`、`紀錄也是`、`專輯年月`、`帶點憂鬱`、`與靈魂樂`），全部整個名詞或句構拆掉，定稿跨張 0 條（含 2 張）。
+- **23705** 轉述引導詞：note 的「官方稱／簡介說／說明形容／廠方說」一律改成陳述句或「整張是…」，正文 0 處「官方／簡介／說明／據說／據傳／據信」；Sweeps note 的「據信」改寫成「整張的設定只有一句」。媒體名與榜單名次 0。Dundiff 的 Massive Attack《Blue Lines》是聲音比較、非媒體，照 note 寫。Mounika. hook 已說「自己寫、自己錄」，第二句只補免取樣與混音，不複述作曲錄音。
+
+## 主線審稿（23711–23712；2026-11-06）
+- **23711** 逐張審 16 張（全文印出，逐句對研究稿 a–e；抽核 Desert Dwellers「Yogi Tunes 系列最後一輯」與 Shiva Rea、Mounika. 首張免取樣、Brugger 空白原聲帶構想與 Prophet 08、Dundiff Bandcamp 簡介的 Blue Lines 比喻、Poldoore 第五張、Krusseldorf 1977 年生、Macroblank 11 首日文曲名、Purrple Cat 最長 3 分 24 秒、Bluetech 萊卡與集資、Kuba 的 Rizwan-Muazzam 與 Gaudi 客座，皆有出處）。改 3 張 4 處（`desc-override.json`），研究／hooks／input 不需同步（只動措辭）：
+  - `Kuba|Relative to the Sun`：「努斯拉特．法特赫．阿里．汗」→「Nusrat Fateh Ali Khan」（音樂人一律拉丁原文）；為守 240 字刪「則」「帶」、把「Kuba 出身英國劍橋，本名 Laurence Harvey，」改成「本名 Laurence Harvey 的劍橋人 Kuba，」、刪「製作人」三字。
+  - `Bluetech|Spacehop Chronicles 2`：「這一回他被人類的傲慢打動」→「這一回 Bartholomew 說自己被人類的傲慢觸動」（原句的「他」緊接萊卡，會被讀成狗；研究稿原文是藝人自述）；為守 240 字刪「口氣克制」「40 分鐘上下，專輯版」。
+  - `Macroblank|Tales of the Cypher`：「他做 vaporwave」→「這個名號做 vaporwave」（性別無來源）。
+- **23712** 媒體名、榜單名次、「據說／據傳」全批 0；Dundiff 的 Massive Attack 比喻出自 Bandcamp 簡介（研究 c），照留。
+
+## 主線試聽／封面／三軸（不佔條號；2026-11-06）
+- 試聽：自動配對＋override 1（Dr. Dundiff us 條目是 Instrumentals 版，改 jp 1520620145 原版） → ready 15／unavailable 1（Macroblank，Apple 查無）；`popular-preview manifest` 換成最紅那首 12 張。
+- 封面：CAA release-group front；HashFinger CAA 404，改 Bandcamp og:image 1200px（`covers.json`）。全批 HTTP 200，主線縮圖表目視與盤名相符。
+- 三軸：機器基線（worker /album-rating，Last.fm listeners），經典度一律 3（場景二線、無代表作共識），冷門度照 §0.8.1 下限表無需上調。頂點 0（無殿堂共識、listeners 皆 ≥814 非遺珠、無異端證據）。
+
+## 上線（2026-11-06，主線）（條號 23713）
+- **23713**：上線 16 張：card_catalog 16／16、KV 16 鍵回讀逐字一致（stamp 20261106ml70）、seed +16、prepare／published gate 0 error（warning 皆 UPC 盡力而為）。寫入前 `git fetch` 確認 origin/main 無新提交；藝人介紹 ar-d-523（寫 8、不寫 5） 同 PR 上線（`batch-progress/artist-intro/ar-d-rulings-ml70.md`）。
+
+## 評分與落格（2026-11-06，主線）（條號 23714）
+- **23714**：Opus 1 支照 `score500/BRIEF.md`（10-23 體感標準）打 16 張（`batch-progress/mood-axes/score-ml70/`，聲音依據讀研究稿，不讀 moodGuess），主線看過未改值。`build-priors` → `build-scale v0`（錨點 104/104）→ `build-card-moods`；`warm-batch` 16/16 有標籤，`build-genre-tree --pull --write`、`build-draw-covers --pull --write` 重建。
+- **落格率 15/16**。出格：Martin Brugger《Music for Video Stores》y 0.4 判輕落放鬆（唱盤＋Prophet 08 的空氣感，研究 b 已標「可能偏輕」）。
