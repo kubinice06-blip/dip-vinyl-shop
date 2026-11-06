@@ -72,13 +72,13 @@
     // 頂級牌（殿堂／遺珠／異端）在卡池裡另放在 pool.apex，一般抽卡不碰；頻率選歌要全部都在星圖上
     // （2026-10-23 店主：A Love Supreme 不見了——917 張頂級牌從頻率選歌上線起就沒進來）
     const rows = [...pool.cards], seenId = new Set();
-    for (const t of ['hall', 'pearl', 'heresy']) for (const [artist, album, genres, year] of (pool.apex?.[t] || [])) rows.push({ artist, album, genres: genres || [], year: year || 0, tier: t });
+    for (const t of ['hall', 'pearl', 'heresy']) for (const [artist, album, genres, year, classic, obscurity, accessibility] of (pool.apex?.[t] || [])) rows.push({ artist, album, genres: genres || [], year: year || 0, tier: t, classic, obscurity, accessibility });
     for (const c of rows) {
       const h = fnv(idOf(c.artist, c.album)); if (seenId.has(h)) continue; seenId.add(h);
       const m = byHash.get(h);
       if (!m) continue;
       const i = CARDS.length;
-      CARDS.push({ i, card: c, x: m[0], y: m[1], z: m[2], conf: m[3], cell: cellOf(m[0], m[1], m[2]),
+      CARDS.push({ i, card: c, x: m[0], y: m[1], z: m[2], conf: m[3], cell: cellOf(m[0], m[1], m[2]), tier: tierOfCard(c),
         px: pSpread('x', m[0], hashU(i, 7919, 997)), py: pSpread('y', m[1], hashU(i, 104729, 991)), pz: pSpread('z', m[2], hashU(i, 1299709, 983)) });
     }
     N = CARDS.length;
@@ -87,6 +87,7 @@
     // 2026-11-27 00:00（台北）起自動下架（店主）：不再放進 CARDS，搜尋也找不到
     if (Date.now() < EGG.until) { CELL_COLOR.egg = EGG.color; NAMES = Object.assign({}, NAMES, { egg: '洋流' });
     CARDS.push(Object.assign({ i: N, card: EGG.card, conf: 3, cell: 'egg', egg: true }, EGG.pos)); }
+    computePass();
   }
 
   const EGG = {
@@ -366,11 +367,13 @@ html.tune-inapp-lock body{padding-top:120px}
   const jit = (c, k) => { const h = mix(fnv(c.i + ':' + k)); return (((h & 1023) + ((h >>> 10) & 1023)) / 2046 - .5) * .15; };
   const toG = (axis, v) => axis === 'x' ? (v - 3) / 2 : axis === 'y' ? -v / 2 : v / 2;
   const S3 = c => { if (!c.g) c.g = [toG('x', c.x) + jit(c, 'x'), toG('y', c.y) + jit(c, 'y'), toG('z', c.z) + jit(c, 'z')].map(v => Math.max(-1.04, Math.min(1.04, v))); return c.g; };
+  // 一般星星 0.45 亮；篩選掉的壓到 0.06、縮小，只留一層微光看得出整體分布
+  function dimStar(i) { const out = !passes(i), k = out ? 0.06 : 0.45 * (CARDS[i].conf === 0 ? 0.7 : 1);
+    col[i * 3] = base[i * 3] * k; col[i * 3 + 1] = base[i * 3 + 1] * k; col[i * 3 + 2] = base[i * 3 + 2] * k; sizeAttr[i] = out ? 2.2 : 3.2; }
+  function recolor() { if (!THREE_OK) return; for (let i = 0; i < CARDS.length; i++) if (i !== litIdx) dimStar(i); geo.attributes.color.needsUpdate = true; geo.attributes.psize.needsUpdate = true; }
   function light(c) {
     if (!THREE_OK) return;
-    const dimK = 0.45;
-    const dim = i => { const k = dimK * (CARDS[i].conf === 0 ? 0.7 : 1); col[i * 3] = base[i * 3] * k; col[i * 3 + 1] = base[i * 3 + 1] * k; col[i * 3 + 2] = base[i * 3 + 2] * k; sizeAttr[i] = 3.2; };
-    if (litIdx < 0) { for (let i = 0; i < CARDS.length; i++) dim(i); } else dim(litIdx);
+    if (litIdx < 0) { for (let i = 0; i < CARDS.length; i++) dimStar(i); } else dimStar(litIdx);
     litIdx = c.i; col[c.i * 3] = base[c.i * 3]; col[c.i * 3 + 1] = base[c.i * 3 + 1]; col[c.i * 3 + 2] = base[c.i * 3 + 2]; sizeAttr[c.i] = 16;
     geo.attributes.color.needsUpdate = true; geo.attributes.psize.needsUpdate = true;
     const [mx, my, mz] = S3(c); marker.position.set(mx, my, mz); marker.scale.set(.34, .34, 1); marker.material.color.set(CELL_COLOR[c.cell]);
@@ -568,7 +571,7 @@ html.tune-inapp-lock body{padding-top:120px}
   function updateScene() {
     const p = state.p, t = target(); readout(t);
     if (THREE_OK) { PX.position.x = toG('x', rawOf('x', p.x)); PY.position.y = toG('y', rawOf('y', p.y)); PZ.position.z = toG('z', rawOf('z', p.z)); }   // 定位線跟著原始分數走（掃過密集的中段會走得比較慢）
-    if (!previewCard) scan(nearest());
+    if (!previewCard) { const n = nearest(); if (n) scan(n); }
     const cell = cellOf(t.x, t.y, t.z);
     roll(el.dx, t.x >= T.x ? 1 : 0); roll(el.dy, t.y >= T.y ? 1 : 0); roll(el.dz, t.z >= T.z ? 1 : 0); roll(el.dcell, ORDER.indexOf(cell));
     el.draw.disabled = false;
@@ -615,13 +618,14 @@ html.tune-inapp-lock body{padding-top:120px}
   // 百分位空間的最近點常常落在門檻另一側；這格一張都沒有才放寬到全部
   function targetCell() { const t = target(); return cellOf(t.x, t.y, t.z); }
   function nearest() { const p = state.p, tc = targetCell(); let best = -1, bd = Infinity, any = 0, ad = Infinity;
-    for (let i = 0; i < N; i++) { const c = CARDS[i]; const d = (c.px - p.x) ** 2 + (c.py - p.y) ** 2 + (c.pz - p.z) ** 2; if (d < ad) { ad = d; any = i; } if (c.cell === tc && d < bd) { bd = d; best = i; } }
+    for (let i = 0; i < N; i++) { if (!passes(i)) continue; const c = CARDS[i]; const d = (c.px - p.x) ** 2 + (c.py - p.y) ** 2 + (c.pz - p.z) ** 2; if (d < ad) { ad = d; any = i; } if (c.cell === tc && d < bd) { bd = d; best = i; } }
+    if (ad === Infinity) return null;   // 篩選後一張都不剩
     return CARDS[best >= 0 ? best : any]; }
   function sweep(axis, v0, v1) {
     if (v0 === v1) return; lastTurn = performance.now(); stopPreview(); armPreview(); hideHolo(); sfxTurn(axis, v0, v1);
     const o = axis === 'x' ? ['py', 'pz'] : axis === 'y' ? ['px', 'pz'] : ['px', 'py']; const key = 'p' + axis;
     const R = SWEEP_R; const a = Math.min(v0, v1), b = Math.max(v0, v1), r2 = R * R; const p = { px: state.p.x, py: state.p.y, pz: state.p.z }; const hit = [];
-    for (let i = 0; i < N; i++) { const c = CARDS[i]; const v = c[key]; if (v1 > v0) { if (v <= a || v > b) continue; } else { if (v < a || v >= b) continue; }
+    for (let i = 0; i < N; i++) { if (!passes(i)) continue; const c = CARDS[i]; const v = c[key]; if (v1 > v0) { if (v <= a || v > b) continue; } else { if (v < a || v >= b) continue; }
       const d = (c[o[0]] - p[o[0]]) ** 2 + (c[o[1]] - p[o[1]]) ** 2; if (d <= r2) hit.push(c); }
     hit.sort((u, w) => v1 > v0 ? u[key] - w[key] : w[key] - u[key]);
     for (const c of hit) queue.push(c); while (queue.length > 14) queue.shift();
@@ -1236,12 +1240,70 @@ html.tune-inapp-lock body{padding-top:120px}
   // ── 抽卡：同頻率再來一張（高斯加權隨機，看過 200 張內不重複；稀有度由呼叫端的結果頁處理） ──
   function weightedPick() {
     const t = target(); const [sx, sy, sz] = SIGMA; const seen = new Set(state.seen); const ws = new Float64Array(N); let g = 0, n = 0;
-    const tc = cellOf(t.x, t.y, t.z); const only = CARDS.some((c, i) => c.cell === tc && !seen.has(i));   // 這格還有沒看過的才限定這格
-    for (let i = 0; i < N; i++) { const c = CARDS[i]; if (seen.has(i) || (only && c.cell !== tc)) continue; const d2 = ((c.x - t.x) / sx) ** 2 + ((c.y - t.y) / sy) ** 2 + ((c.z - t.z) / sz) ** 2; ws[i] = Math.exp(-d2 / 2); g += ws[i]; n++; }
+    const tc = cellOf(t.x, t.y, t.z); const only = CARDS.some((c, i) => i < N && passes(i) && c.cell === tc && !seen.has(i));   // 這格還有沒看過的才限定這格
+    for (let i = 0; i < N; i++) { const c = CARDS[i]; if (!passes(i) || seen.has(i) || (only && c.cell !== tc)) continue; const d2 = ((c.x - t.x) / sx) ** 2 + ((c.y - t.y) / sy) ** 2 + ((c.z - t.z) / sz) ** 2; ws[i] = Math.exp(-d2 / 2); g += ws[i]; n++; }
     const fl = n ? FLOOR * g / n / (1 - FLOOR) : 0; let sum = 0;
-    for (let i = 0; i < N; i++) { if (seen.has(i) || (only && CARDS[i].cell !== tc)) continue; ws[i] += fl; sum += ws[i]; }
+    for (let i = 0; i < N; i++) { if (!passes(i) || seen.has(i) || (only && CARDS[i].cell !== tc)) continue; ws[i] += fl; sum += ws[i]; }
     if (sum <= 0) return null; let u = Math.random() * sum; for (let i = 0; i < N; i++) { u -= ws[i]; if (u <= 0) return CARDS[i]; } return CARDS[N - 1];
   }
+  // ── 篩選（2026-11-06 店主：類別、等級＝星等、分級＝殿堂／傳奇／普通那種）──────────────────
+  // 三個條件同時成立才算符合；不符合的星星壓暗，掃描、最近一張、同頻率再抽、RADIO、隨機都只落在符合的卡。
+  // 搜尋不受篩選限制（明確指名的就照找）。分級的算法與唱片櫃一致：頂點旗標 > 人工指定 > 神作名單 > 經典＋硬蕊＋（冷門 5 加 1）。
+  const FILTER_OPTS = {
+    genre: [['all', '全部'], ['rock', '搖滾'], ['jazz', '爵士'], ['electronic', '電子'], ['pop', '流行'], ['soul', '靈魂'], ['folk', '民謠'], ['hiphop', '嘻哈'], ['world', '世界'], ['classical', '古典'], ['blues', '藍調']],
+    grade: [['all', '全部'], ['c4', '經典4★+'], ['c5', '經典5★'], ['o4', '冷門4★+'], ['o5', '冷門5★'], ['h4', '硬蕊4★+'], ['h5', '硬蕊5★'], ['s10', '總分10+'], ['s12', '總分12+']],
+    tier: [['all', '全部'], ['hall', '殿堂'], ['pearl', '流亡'], ['heresy', '異端'], ['legendary', '傳奇'], ['epic', '史詩'], ['uncommon', '獨特'], ['rare', '稀有'], ['common', '普通']],
+  };
+  const FILT = { genre: 0, grade: 0, tier: 0 };
+  let PASS = null, passN = 0;
+  function tierOfCard(c) {
+    if (c.tier) return c.tier;
+    try { const t = cfg.tierOf?.(c); if (t) return t; } catch (_) {}
+    const sc = (+c.classic || 0) + (+c.accessibility || 0) + ((+c.obscurity || 0) >= 5 ? 1 : 0);
+    return sc >= 9 ? 'legendary' : sc >= 8 ? 'epic' : sc >= 7 ? 'uncommon' : sc >= 6 ? 'rare' : 'common';
+  }
+  function gradeOk(card, k) {
+    if (k === 'all') return true;
+    const cl = +card.classic || 0, ob = +card.obscurity || 0, hd = +card.accessibility || 0;
+    if (!cl && !ob && !hd) return false;
+    switch (k) { case 'c4': return cl >= 4; case 'c5': return cl >= 5; case 'o4': return ob >= 4; case 'o5': return ob >= 5;
+      case 'h4': return hd >= 4; case 'h5': return hd >= 5; case 's10': return cl + ob + hd >= 10; case 's12': return cl + ob + hd >= 12; }
+    return true;
+  }
+  function filterActive() { return FILT.genre || FILT.grade || FILT.tier; }
+  function computePass() {
+    const g = FILTER_OPTS.genre[FILT.genre][0], gr = FILTER_OPTS.grade[FILT.grade][0], t = FILTER_OPTS.tier[FILT.tier][0];
+    if (!filterActive()) { PASS = null; passN = N; return; }
+    PASS = new Uint8Array(CARDS.length); passN = 0;
+    for (let i = 0; i < N; i++) { const c = CARDS[i], card = c.card;
+      if (g !== 'all' && !(card.genres || []).includes(g)) continue;
+      if (t !== 'all' && c.tier !== t) continue;
+      if (!gradeOk(card, gr)) continue;
+      PASS[i] = 1; passN++; }
+    if (CARDS.length > N) PASS[N] = 1;   // 彩蛋不受篩選（本來就只有搜尋得到）
+  }
+  const passes = i => !PASS || PASS[i] === 1;
+  // 切換篩選：重算、重新上色；目前這張不符合就轉到最近一張符合的（輪子跟著轉過去）
+  function setFilter(kind, idx) {
+    const opts = FILTER_OPTS[kind]; if (!opts) return;
+    idx = ((idx % opts.length) + opts.length) % opts.length; if (FILT[kind] === idx) return;
+    FILT[kind] = idx; computePass(); recolor(); syncFilterUI?.();
+    if (previewCard && !previewCard.egg && !passes(previewCard.i)) {
+      cancelTravel(); stopPreview(); hideHolo(); clearQueue(); previewCard = null;
+      const n = nearest(); if (n) travelTo(n, true); else { setNowPlaying(false, '沒有符合的卡'); }
+    }
+  }
+  // 隨機選一張（2026-11-06 店主：就這張旁邊多一顆「隨機」）：在符合篩選的卡裡均勻抽，最近 200 張不重複，轉過去停在它上面
+  const randSeen = [];
+  function randomPick() {
+    const skip = new Set(randSeen); const ids = [];
+    for (let i = 0; i < N; i++) if (passes(i) && !skip.has(i) && (!previewCard || previewCard.i !== i)) ids.push(i);
+    if (!ids.length) { for (let i = 0; i < N; i++) if (passes(i)) ids.push(i); randSeen.length = 0; }
+    if (!ids.length) return null;
+    const c = CARDS[ids[Math.floor(Math.random() * ids.length)]]; randSeen.push(c.i); if (randSeen.length > 200) randSeen.shift();
+    travelTo(c); return c;
+  }
+  let syncFilterUI = null;
   function emit(c) {
     if (!c) return;
     if (c.egg) { global.open(c.card.link, '_blank', 'noopener'); return; }   // 彩蛋不進結果頁，就這張直接開政策島（2026-10-28 店主）
@@ -1304,7 +1366,7 @@ html.tune-inapp-lock body{padding-top:120px}
       if (!state.holo) hideHolo(); else if (previewCard && performance.now() - lastTurn > 700) showHolo(previewCard); };
     el.mode.onclick = () => { state.radio = !state.radio; setModeUI(true); sfxClick(); radioToggled(); };
     el.now.onclick = () => { if (previewCard) emit(previewCard); };
-    el.draw.onclick = () => { if (!previewCard) return; if (!previewCard.egg && previewCard.cell !== targetCell()) scan(nearest()); emit(previewCard); };
+    el.draw.onclick = () => { if (!previewCard) return; if (!previewCard.egg && previewCard.cell !== targetCell()) { const n = nearest(); if (n) scan(n); } emit(previewCard); };
     setAudioUI(); setModeUI(); setHoloUI();
     let data;
     // 星圖程式庫（three.js，CDN）跟卡池資料一起等，但最多等 8 秒：等不到就只用面板。
@@ -1413,5 +1475,5 @@ html.tune-inapp-lock body{padding-top:120px}
   }
   function stop() { clearTimeout(radioT); state.visible = false; cancelTravel(); stopPreview(); sfxStop(); releaseSfx(); hideHolo(); inappLock(false); }
 
-  global.DipTune = { configure, start, stop, pickAgain, setAudio, litScreenPos, boatScreenPos, warpStart, CELL_COLOR, get state() { return state; } };
+  global.DipTune = { configure, start, stop, pickAgain, setAudio, litScreenPos, boatScreenPos, warpStart, CELL_COLOR, setFilter, randomPick, FILTER_OPTS, get filter() { return { ...FILT, matched: passN }; }, get state() { return state; } };
 })(window);
