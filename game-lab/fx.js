@@ -481,7 +481,7 @@
     // 挪動也有代價（pen＝每一單位挪動抵多少重疊面積）：寧可輕微壓到標籤，也不要飄離它描述的東西太遠；
     // 字壓字的權重是 4 倍，所以兩個飄字撞在一起時還是會挪開。
     const step = fh + 4, down = opt.prefer === 'down' ? 1 : -1, cands = [];
-    const pen = 0.12 * fw * fh;
+    const pen = 0.06 * fw * fh;
     for (let k = -3; k <= 3; k++) for (const j of [0, -0.5, 0.5, -1, 1]) {
       const x = clampX(x0 + j * fw), y = clampY(y0 + k * step);
       cands.push({ x, y, cost: Math.abs(k) * 2 + Math.abs(j) * 3 + (k && Math.sign(k) !== down ? 1 : 0) });
