@@ -1,0 +1,69 @@
+{
+ "n": 29,
+ "reviewed": 0,
+ "errors": [],
+ "conf": {
+  "mid": 12,
+  "low": 17
+ },
+ "cells": {
+  "放鬆": 1,
+  "平靜": 2,
+  "恍惚": 7,
+  "頹靡": 18,
+  "雀躍": 0,
+  "冷冽": 1,
+  "沸騰": 0,
+  "暴躁": 0
+ },
+ "spread": {
+  "x": {
+   "mean": 2.44,
+   "sd": 0.34,
+   "min": 1.7,
+   "max": 3.3
+  },
+  "y": {
+   "mean": 0.9,
+   "sd": 0.46,
+   "min": -0.6,
+   "max": 1.7
+  },
+  "z": {
+   "mean": -0.35,
+   "sd": 0.43,
+   "min": -1,
+   "max": 0.5
+  }
+ },
+ "anchorSpread": {
+  "x": {
+   "mean": 3.14,
+   "sd": 1.1
+  },
+  "y": {
+   "mean": 0.54,
+   "sd": 1.17
+  },
+  "z": {
+   "mean": 0.19,
+   "sd": 1.12
+  }
+ },
+ "corrWithOldAxes": {
+  "x~classic": -0.17,
+  "x~obscurity": 0.04,
+  "x~accessibility": 0.09,
+  "y~classic": -0.02,
+  "y~obscurity": 0.12,
+  "y~accessibility": 0.19,
+  "z~classic": -0.03,
+  "z~obscurity": -0.13,
+  "z~accessibility": -0.43
+ },
+ "axisCorr": {
+  "x~y": 0.11,
+  "x~z": -0.31,
+  "y~z": -0.27
+ }
+}

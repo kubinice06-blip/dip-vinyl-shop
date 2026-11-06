@@ -3871,6 +3871,8 @@ window.DipPreviewStatus = Object.freeze({
   "lindsheaven virtual plaza|nordwrong": "unavailable",
   "woob|repurpose": "unavailable",
   "ambientium|fractal philosophy": "unavailable",
+  "brael & tokyo bloodworm|living language": "unavailable",
+  "pontiac streator|triz": "unavailable",
   "cyne|evolution fight": "unavailable",
   "elaquent|worst case scenario": "unavailable",
   "rituals of mine|hype nostalgia": "unavailable",
