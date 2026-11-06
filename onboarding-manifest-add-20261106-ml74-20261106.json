@@ -1,0 +1,2150 @@
+{
+ "schemaVersion": 1,
+ "batch": "2026-10-20-ml74",
+ "batchNote": "薄細項策展線（add-20261106-ml74）",
+ "createdAt": "2026-11-06T12:09:36Z",
+ "albums": [
+  {
+   "artist": "Little People",
+   "album": "We Are But Hunks of Wood",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "15f83d9c-a122-4e36-8677-c3e5f16d9bac",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "lo-fi／器樂嘻哈 beat：Bandcamp 有鼓名單（第三輪，標籤篩掉）：Last.fm 收聽 67950 人；標籤 Electronic、Instrumental Hip-Hop、downtempo、electronic、London｜⚠ moodGuess 為卡單粗估（把握 low）；當初汰因「標籤：Instrumental Hip-Hop」——照「有鼓不等於躁」重判：研究層須寫清楚鼓是哪一種（慢拖無力／攻擊性／舞池推進）｜MB release-group 15f83d9c-a122-4e36-8677-c3e5f16d9bac：title「We Are But Hunks of Wood」、Album、first-release-date 2012-10-09、artist-credit「Little People」。證據：https://littlepeople.bandcamp.com/album/we-are-but-hunks-of-wood https://musicbrainz.org/release-group/15f83d9c-a122-4e36-8677-c3e5f16d9bac",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2012,
+    "yearNote": ""
+   },
+   "genres": [
+    "hiphop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/15f83d9c-a122-4e36-8677-c3e5f16d9bac/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-06T12:09:36Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-06 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": 67950,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-06T12:09:36Z",
+    "note": "機器基線 3/3/3（Last.fm listeners 67950）"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "十一首曲子裡，只有〈Wonderland〉留給人聲。以倫敦為基地的器樂嘻哈製作人 Little People，請來 January Thompson 唱這首，她的唱腔被拿來和 Portishead 的冷調相比。開場的〈Marzipan Children〉鼓點克制，旁邊是放克吉他與太空感合成器；到了後半，〈Electrickery〉等曲的打擊加重，節奏也略為加快。2012 年 10 月 9 日排上 Youth & Progress Records 的發行表。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/15f83d9c-a122-4e36-8677-c3e5f16d9bac",
+     "https://magneticmag.com/2012/10/music-review-little-people-we-are-but-hunks-of-wood-via-youth-progress-recordings-plus-free-download/",
+     "https://littlepeople.bandcamp.com/album/we-are-but-hunks-of-wood",
+     "https://music.apple.com/us/album/we-are-but-hunks-of-wood/1434239396",
+     "https://earmilk.com/2012/10/09/little-people-we-are-but-hunks-of-wood-album/",
+     "https://rateyourmusic.com/release/album/little-people/we-are-but-hunks-of-wood/"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/09/93/e3/0993e33b-14f9-8d03-c151-15b62b4e714e/mzaf_8460206690294729294.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-06T12:09:43.041Z",
+    "appleCollectionId": "1434239396",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1434239396「Little People《We Are but Hunks of Wood》」：曲目 11/11 對上 MB 原盤（Apple 共 11 軌），取第 1 軌〈Marzipan Children〉。主線 2026-11-06 lookup 核對、試聽檔 HTTP 206。",
+    "trackName": "Aldgate Patterns",
+    "popularity": "deezer-rank"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "40 Winks",
+   "album": "It's the Trip",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "09b12d2e-d550-48cb-a815-b7db376ea4ad",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "lo-fi／器樂嘻哈 beat：Bandcamp 有鼓名單（第三輪，標籤篩掉）：Last.fm 收聽 44538 人；標籤 40 Winks、Downtempo、Electronic、Folk、Hip Hop、It's The Trip｜⚠ moodGuess 為卡單粗估（把握 low）；當初汰因「標籤：Hip Hop、Techno」——照「有鼓不等於躁」重判：研究層須寫清楚鼓是哪一種（慢拖無力／攻擊性／舞池推進）｜MB release-group 09b12d2e-d550-48cb-a815-b7db376ea4ad：title「It's the Trip」、Album、first-release-date 2011-04-15、artist-credit「40 Winks」。證據：https://projectmooncircle.bandcamp.com/album/its-the-trip https://musicbrainz.org/release-group/09b12d2e-d550-48cb-a815-b7db376ea4ad",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2011,
+    "yearNote": ""
+   },
+   "genres": [
+    "hiphop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/09b12d2e-d550-48cb-a815-b7db376ea4ad/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-06T12:09:36Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-06 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": 44538,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-06T12:09:36Z",
+    "note": "機器基線 3/3/3（Last.fm listeners 44538）"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "一趟去哪裡都行的公路旅行，被切成 18 軌。2002 年出道的器樂嘻哈計畫 40 Winks，這回由廠方文案替專輯寫下旅程的設定。走到收尾的〈Not The Destination〉，曲長約 7 分 44 秒，是整趟路上拉得最久的一站。2011 年 4 月 15 日，柏林的 Project: Mooncircle 把它做成雙 LP 發行。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/09b12d2e-d550-48cb-a815-b7db376ea4ad",
+     "https://projectmooncircle.bandcamp.com/album/its-the-trip",
+     "https://projectmooncircle.com/releases/40-winks-its-the-trip/"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/50/2b/45/502b457f-7d75-c5cd-cb2e-8632bb67252e/mzaf_17659148743448624115.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-06T12:09:44.887Z",
+    "appleCollectionId": "1675638411",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1675638411「40 Winks《It's the Trip》」：曲目 18/18 對上 MB 原盤（Apple 共 18 軌），取第 1 軌〈Entrée〉。主線 2026-11-06 lookup 核對、試聽檔 HTTP 206。",
+    "trackName": "Subtle Piece",
+    "popularity": "deezer-rank"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Yndling",
+   "album": "Mood Booster",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "48a9ba12-8b89-4321-8b8a-8a50cf8a0274",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "dream pop／bedroom pop：Bandcamp 有鼓名單（第三輪，標籤篩掉）：Last.fm 收聽 34366 人；標籤 Alternative、alternative、alternative pop、bedroom pop、dream pop、indie｜⚠ moodGuess 為卡單粗估（把握 low）；當初汰因「標籤：alternative pop、bedroom pop、dream pop、lofi pop」——照「有鼓不等於躁」重判：研究層須寫清楚鼓是哪一種（慢拖無力／攻擊性／舞池推進）｜MB release-group 48a9ba12-8b89-4321-8b8a-8a50cf8a0274：title「Mood Booster」、Album、first-release-date 2024-08-02、artist-credit「Yndling」。證據：https://yndling.bandcamp.com/album/mood-booster https://musicbrainz.org/release-group/48a9ba12-8b89-4321-8b8a-8a50cf8a0274",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2024,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/48a9ba12-8b89-4321-8b8a-8a50cf8a0274/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-06T12:09:36Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-06 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": 34366,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-06T12:09:36Z",
+    "note": "機器基線 3/3/3（Last.fm listeners 34366）"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "專輯叫 Mood Booster，她卻說自己的歌不太快樂。由 Silje Espevik 一手主導的挪威 dream pop 計畫 Yndling，在訪談裡這樣形容自己的作品。標題曲寫的是關係裡的過度依賴：壓下自己的需求，只為了討好對方。她習慣先獨自把詞曲寫好，再找製作人加入。2024 年，Spirit Goth Records 替她出版了這張。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/48a9ba12-8b89-4321-8b8a-8a50cf8a0274",
+     "https://musicbrainz.org/ws/2/artist/?query=artist:yndling&fmt=json",
+     "https://www.glamglare.com/music/qa-with-yndling/",
+     "https://spiritgoth.com/products/sg72-yndling-mood-booster",
+     "https://yndling.bandcamp.com/album/mood-booster",
+     "https://www.albumoftheyear.org/album/928029-yndling-mood-booster.php"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/8c/70/cc/8c70cce1-311f-1212-da8b-11573f18f6fd/mzaf_13595427068011550811.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-06T12:09:46.532Z",
+    "appleCollectionId": "1751720664",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1751720664「Yndling《Mood Booster》」：曲目 12/12 對上 MB 原盤（Apple 共 12 軌），取第 1 軌〈At Ease〉。主線 2026-11-06 lookup 核對、試聽檔 HTTP 206。",
+    "trackName": "Never as Easy (feat. Petite Amie)",
+    "popularity": "deezer-rank"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Kognitif",
+   "album": "Monometric",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "9b530d5b-91f9-43ef-bbd8-c76fa6d5d459",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "lo-fi／器樂嘻哈 beat：Bandcamp 有鼓名單（第三輪，標籤篩掉）：Last.fm 收聽 20515 人；標籤 Experimental、Hip Hop、abstract hip-hop、beats、downtempo、instrumental｜⚠ moodGuess 為卡單粗估（把握 low）；當初汰因「標籤：Hip Hop、abstract hip-hop」——照「有鼓不等於躁」重判：研究層須寫清楚鼓是哪一種（慢拖無力／攻擊性／舞池推進）｜MB release-group 9b530d5b-91f9-43ef-bbd8-c76fa6d5d459：title「Monometric」、Album、first-release-date 2014-01-27、artist-credit「Kognitif」。證據：https://kognitif.bandcamp.com/album/monometric https://musicbrainz.org/release-group/9b530d5b-91f9-43ef-bbd8-c76fa6d5d459",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2014,
+    "yearNote": ""
+   },
+   "genres": [
+    "hiphop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/9b530d5b-91f9-43ef-bbd8-c76fa6d5d459/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-06T12:09:36Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-06 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": 20515,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-06T12:09:36Z",
+    "note": "機器基線 3/3/3（Last.fm listeners 20515）"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "可以拿去當影片背景，條件是署名、不商用、不改動。法國的 Kognitif 一人製作這張 trip hop，這份使用宣告是作者親手寫下的，整張也開放免費下載。Jeanette Robertson 以女聲獻唱兩首，吉他手 Jeremie Guerra 也在兩首裡出手。2014 年 1 月 27 日僅以數位形式由作者自行推出。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/9b530d5b-91f9-43ef-bbd8-c76fa6d5d459",
+     "https://kognitif.bandcamp.com/album/monometric"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview118/v4/e6/c9/9f/e6c99f7c-42a1-bdec-6279-af0c6e33224b/mzaf_2819461865417010373.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-06T12:09:48.167Z",
+    "appleCollectionId": "805011116",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 805011116「Kognitif《Monometric》」：曲目 14/14 對上 MB 原盤（Apple 共 14 軌），取第 1 軌〈In da Mood〉。主線 2026-11-06 lookup 核對、試聽檔 HTTP 206。",
+    "trackName": "So Let's Begin (feat. Jeanette Robertson)",
+    "popularity": "deezer-rank"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Odd Nosdam",
+   "album": "Sisters",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "57bd250e-44a2-440a-acfa-255c1a73c881",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "lo-fi／器樂嘻哈 beat：Bandcamp 有鼓名單（第三輪，標籤篩掉）：Last.fm 收聽 13432 人；標籤 Electronic、Instrumental Hip-Hop、ambient、beats、downtempo、shoegaze｜⚠ moodGuess 為卡單粗估（把握 mid）；當初汰因「標籤：Instrumental Hip-Hop」——照「有鼓不等於躁」重判：研究層須寫清楚鼓是哪一種（慢拖無力／攻擊性／舞池推進）｜MB release-group 57bd250e-44a2-440a-acfa-255c1a73c881：title「Sisters」、Album、first-release-date 2016-02-26、artist-credit「Odd Nosdam」。證據：https://nosdam.bandcamp.com/album/sisters https://musicbrainz.org/release-group/57bd250e-44a2-440a-acfa-255c1a73c881",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2016,
+    "yearNote": ""
+   },
+   "genres": [
+    "hiphop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/57bd250e-44a2-440a-acfa-255c1a73c881/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-06T12:09:36Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-06 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 13432,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-06T12:09:36Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 13432）"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "等 Boards of Canada 混音，一等就是兩年。本名 David Madson 的器樂嘻哈製作人 Odd Nosdam，把它交給 Leaving Records，是他在該廠牌的第二份作品；最初提給廠牌的，只是一張六首的 EP。製作期從 2011 年拉到 2015 年，工作地點是柏克萊的 Burnco。鼓與小鼓守在約 90 BPM，上頭蓋著失真的持續和弦，再裹上一層又一層殘響。2016 年 2 月 26 日才終於上架。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/57bd250e-44a2-440a-acfa-255c1a73c881",
+     "https://en.wikipedia.org/wiki/Odd_Nosdam",
+     "https://www.hhv-mag.com/review/odd-nosdam-sisters-2/?lang=en",
+     "https://www.cyclicdefrost.com/2017/03/odd-nosdam-the-fear-of-diving-into-the-darkness-of-self-interview-by-paranoid/",
+     "https://www.cyclicdefrost.com/2016/03/odd-nosdam-sisters-leaving-stones-throw/",
+     "https://www.allmusic.com/album/sisters-mw0002914268",
+     "https://nosdam.bandcamp.com/album/sisters"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/30/d8/b6/30d8b684-22a9-5d1a-4a6f-6eeb06f4d0f1/mzaf_4504054334403945470.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-06T12:09:51.120Z",
+    "appleCollectionId": "6804683571",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 6804683571「Odd Nosdam《Sisters》」：曲目 9/9 對上 MB 原盤（Apple 共 9 軌），取第 1 軌〈Bow They Will ! ! !〉。主線 2026-11-06 lookup 核對、試聽檔 HTTP 206。",
+    "trackName": "Sisters",
+    "popularity": "deezer-rank"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Suduaya",
+   "album": "Venus",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "e0b789e6-63dc-4f3d-a2ee-1ca7c1abdf8e",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "psybient／psydub：Bandcamp 有鼓名單（第三輪，標籤篩掉）：Last.fm 收聽 10682 人；標籤 Electronic、ambient、chillout、electro、psyprogressive、psytrance｜⚠ moodGuess 為卡單粗估（把握 low）；當初汰因「標籤：electro、psytrance」——照「有鼓不等於躁」重判：研究層須寫清楚鼓是哪一種（慢拖無力／攻擊性／舞池推進）｜MB release-group e0b789e6-63dc-4f3d-a2ee-1ca7c1abdf8e：title「Venus」、Album、first-release-date 2016-12-15、artist-credit「Suduaya」。證據：https://suduaya.bandcamp.com/album/venus https://musicbrainz.org/release-group/e0b789e6-63dc-4f3d-a2ee-1ca7c1abdf8e",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2016,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/e0b789e6-63dc-4f3d-a2ee-1ca7c1abdf8e/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-06T12:09:36Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-06 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 10682,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-06T12:09:36Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 10682）"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "母帶交給廠牌主人 Dj Zen，在加拿大的錄音室處理。做 psytrance 與 downtempo 的法國吉他手 Suduaya，送去的是 Altar Records Studios，而 Altar 正是 Dj Zen 在蒙特婁經營的 psybient 廠牌。他與這家公司的關係始於 2011 年，那年以《Dreaming Sun》入列。《Venus》收十首，長度落在 6 分 47 秒與 8 分 40 秒之間，首首都鋪得很開，2016 年 12 月 15 日開賣。",
+    "sourceUrls": [
+     "https://suduaya.bandcamp.com/album/venus",
+     "https://www.discogs.com/master/1123041",
+     "https://last.fm/music/Suduaya/+wiki",
+     "https://musicbrainz.org/release-group/e0b789e6-63dc-4f3d-a2ee-1ca7c1abdf8e"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/64/80/e6/6480e682-566a-2c21-284e-03519b25ba1a/mzaf_411495227742002301.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-06T12:09:52.556Z",
+    "appleCollectionId": "1557531522",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1557531522「Suduaya《Venus》」：曲目 10/10 對上 MB 原盤（Apple 共 10 軌），取第 1 軌〈Universalis (Suduaya Remix)〉。主線 2026-11-06 lookup 核對、試聽檔 HTTP 206。",
+    "trackName": "Nomad",
+    "popularity": "deezer-rank"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Fallgrapp",
+   "album": "Rieka",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "bc334db3-9435-4944-9c45-a22a4e293223",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "downtempo／trip-hop：Bandcamp 有鼓名單（第三輪，標籤篩掉）：Last.fm 收聽 9503 人；標籤 Electronic、beats、downtempo、electronica、indie、leftfield｜⚠ moodGuess 為卡單粗估（把握 low）；當初汰因「標籤：pop」——照「有鼓不等於躁」重判：研究層須寫清楚鼓是哪一種（慢拖無力／攻擊性／舞池推進）｜MB release-group bc334db3-9435-4944-9c45-a22a4e293223：title「Rieka」、Album、first-release-date 2014-03-09、artist-credit「Fallgrapp」。證據：https://gergaz.bandcamp.com/album/rieka https://musicbrainz.org/release-group/bc334db3-9435-4944-9c45-a22a4e293223",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2014,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/bc334db3-9435-4944-9c45-a22a4e293223/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-06T12:09:36Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-06 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 9503,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-06T12:09:36Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 9503）"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "Rieka 是斯洛伐克語的河，整張也用斯洛伐克語唱。斯洛伐克製作人 Jureš 在自家錄音室完成它，Fallgrapp 是他的個人計畫。人聲交給兩位女歌手，Nora Ibsenová 唱五首，Agáta Siemaszko 唱三首；另有三位小提琴手與打擊樂手 Róbert Rehák 參與。樂評的描述是，Jureš 把弦樂疊在細緻的節拍上，鋪成一張柔軟、帶電影感的底。發行日由 Gergaz 訂下 2014 年 3 月 9 日。",
+    "sourceUrls": [
+     "https://gergaz.bandcamp.com/album/rieka",
+     "https://musicbrainz.org/release-group/bc334db3-9435-4944-9c45-a22a4e293223"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f2/db/7f/f2db7f40-30e5-0b42-17b9-aa52249b424e/mzaf_12376440824619704145.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-06T12:09:54.049Z",
+    "appleCollectionId": "1854748743",
+    "storefront": "JP",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple jp 1854748743「Fallgrapp《Rieka》」：曲目 11/11 對上 MB 原盤（Apple 共 11 軌），取第 1 軌〈Nádych〉。主線 2026-11-06 lookup 核對、試聽檔 HTTP 206。",
+    "trackName": "I.N.A",
+    "popularity": "deezer-rank"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Glenn Astro",
+   "album": "Homespun",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "manual",
+    "rgMbid": "",
+    "upc": "",
+    "aliasesChecked": true,
+    "mbAbsenceProof": {
+     "queries": [
+      "https://musicbrainz.org/ws/2/release-group?query=artist:\"Glenn Astro\" AND releasegroup:\"Homespun\"",
+      "https://musicbrainz.org/ws/2/release?query=release:\"Homespun\""
+     ],
+     "checkedAt": "2026-11-06",
+     "conclusion": "MB 無此 release-group；Discogs master 1947244 為 2020 年 Tartelet Records 的 LP 專輯（TARTALB014），Apple Music 亦列為專輯"
+    },
+    "manualEvidenceUrls": [
+     "https://glennastro.bandcamp.com/album/homespun",
+     "https://www.discogs.com/master/1947244-Glenn-Astro-Homespun",
+     "https://music.apple.com/us/album/homespun/1529216633"
+    ],
+    "manualRuling": "雲端主線 2026-11-06 依 ALBUM_ONBOARDING §1 人工身分核可（店主 2026-09-02 裁定權下放；薄細項策展線 add-20261106-ml74）",
+    "coverSourceHint": "bandcamp",
+    "aliasReview": "lo-fi／器樂嘻哈 beat：Bandcamp 有鼓名單（第三輪，標籤篩掉）：Last.fm 收聽 8325 人；標籤 Electronic、Glenn Astro、Soul、dance、downtempo、electro｜⚠ moodGuess 為卡單粗估（把握 mid）；當初汰因「標籤：Soul、dance、electro、hip-hop、jungle」——照「有鼓不等於躁」重判：研究層須寫清楚鼓是哪一種（慢拖無力／攻擊性／舞池推進）｜MB 查無（MB 無此 release-group；Discogs master 1947244 為 2020 年 Tartelet Records 的 LP 專輯（TARTALB014），Apple Music 亦列為專輯），走 §1 人工身分。證據：https://glennastro.bandcamp.com/album/homespun https://www.discogs.com/master/1947244-Glenn-Astro-Homespun https://music.apple.com/us/album/homespun/1529216633 https://glennastro.bandcamp.com/album/homespun https://www.discogs.com/master/1947244-Glenn-Astro-Homespun https://music.apple.com/us/album/homespun/1529216633",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2020,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://f4.bcbits.com/img/a3097335006_10.jpg",
+    "source": "bandcamp",
+    "note": "§1 人工身分（MB 查無），無 CAA；Bandcamp https://glennastro.bandcamp.com/album/homespun og:image（1200px），主線 2026-11-06 縮圖表目視與藝人、盤名相符。",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-06T12:09:36Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 8325,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-06T12:09:36Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 8325）"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "三個月做不完，他就去賣手工組裝的原子筆。以厚實節拍與毛茸茸質地聞名的柏林製作人 Glenn Astro 給自己定下這道期限，做不完就退回去把音樂當興趣。結果整張不到三個月便完成，排在 2015 年首作《Throwback》之後，算是他第二張長篇作品。這次他刻意放下取樣與復古音色，求的是當下與直覺。〈The Yancey〉向 J Dilla 致意，Ajnascent 的靈魂嗓音則出現在三首裡。發行方是 Tartelet Records，時間在 2020 年 10 月。",
+    "sourceUrls": [
+     "https://glennastro.bandcamp.com/album/homespun",
+     "https://www.discogs.com/master/1947244-Glenn-Astro-Homespun",
+     "https://oye-records.com/releases/glenn-astro-homespun",
+     "https://music.apple.com/us/album/homespun/1529216633"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-06T12:09:36Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：Glenn Astro《Homespun》0/0）。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "DJ Frane",
+   "album": "Journey to the Planet of Birds",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "c10ab523-3e6a-3b02-89ca-380496b32ffa",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "lo-fi／器樂嘻哈 beat：Bandcamp 有鼓名單（第三輪，標籤篩掉）：Last.fm 收聽 7553 人；標籤 Electronic、beats、blaze、chillout、concept、downtempo｜⚠ moodGuess 為卡單粗估（把握 low）；當初汰因「標籤：instrumental hip hop」——照「有鼓不等於躁」重判：研究層須寫清楚鼓是哪一種（慢拖無力／攻擊性／舞池推進）｜MB release-group c10ab523-3e6a-3b02-89ca-380496b32ffa：title「Journey to the Planet of Birds」、Album、first-release-date 2008-04-22、artist-credit「DJ Frane」。證據：https://djfrane.bandcamp.com/album/journey-to-the-planet-of-birds https://musicbrainz.org/release-group/c10ab523-3e6a-3b02-89ca-380496b32ffa",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2008,
+    "yearNote": ""
+   },
+   "genres": [
+    "hiphop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/c10ab523-3e6a-3b02-89ca-380496b32ffa/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-06T12:09:36Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-06 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 7553,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-06T12:09:36Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 7553）"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "抽大麻時聽的節拍，這是系列第三輯。DJ Frane 把這批加州出品、介於器樂嘻哈與 trip hop 之間的節拍，副題定為 beats to blaze to volume 3。曲名往太空與鳥群飛去，像〈Nectar For Isis〉〈Birdwatchers〉。十七首前後串成 65 分鐘，2008 年 4 月發行。",
+    "sourceUrls": [
+     "https://djfrane.bandcamp.com/album/journey-to-the-planet-of-birds",
+     "https://musicbrainz.org/release-group/c10ab523-3e6a-3b02-89ca-380496b32ffa",
+     "https://musicbrainz.org/artist/f4ab90e8-48ab-48ca-88bf-b3c42e72d6cc"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/ef/11/6f/ef116f8f-6c6e-2ff2-fc22-7451c808a1f3/mzaf_10439397617629613012.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-06T12:09:55.675Z",
+    "appleCollectionId": "279556602",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 279556602「DJ Frane《Journey to the Planet of Birds》」：曲目 17/17 對上 MB 原盤（Apple 共 17 軌），取第 1 軌〈The Day the Listeners Came〉。主線 2026-11-06 lookup 核對、試聽檔 HTTP 206。",
+    "trackName": "Birdwatchers",
+    "popularity": "deezer-rank"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Tara Putra",
+   "album": "Obvious Dubious",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "fede8dd4-77b6-46dd-881e-f7aa3cb0d91f",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "psybient／psydub：Bandcamp 有鼓名單（第三輪，標籤篩掉）：Last.fm 收聽 4988 人；標籤 Dub、Electronic、Psybient、Psydub、downtempo、Germany｜⚠ moodGuess 為卡單粗估（把握 low）；當初汰因「標籤：Dub」——照「有鼓不等於躁」重判：研究層須寫清楚鼓是哪一種（慢拖無力／攻擊性／舞池推進）｜MB release-group fede8dd4-77b6-46dd-881e-f7aa3cb0d91f：title「Obvious Dubious」、Album、first-release-date 2019-11-13、artist-credit「Tara Putra」。證據：https://taraputra.bandcamp.com/album/obvious-dubious https://musicbrainz.org/release-group/fede8dd4-77b6-46dd-881e-f7aa3cb0d91f",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2019,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://f4.bcbits.com/img/a673112124_10.jpg",
+    "source": "bandcamp",
+    "note": "CAA release-group 無 front（404）；Bandcamp https://taraputra.bandcamp.com/album/obvious-dubious og:image（1200px），主線 2026-11-06 縮圖表目視與藝人、盤名相符。",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-06T12:09:36Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 4988,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-06T12:09:36Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 4988）"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "小駱駝、小丑運算與綠色作物，全被做成了 dub。在德國做 psytrance 的 Tara Putra，幕後只有 Marcus Straczkowski 一人，三首曲名是〈Tiny Camels Dub〉〈Clown Computing Dub〉〈Green Crops Dub〉。它接在前兩張 dub 專輯之後，是一份 dubwise 的續篇，用深沉、迷幻而悠閒的 dub 語言寫成。十一首、近 63 分鐘的長度，2019 年 11 月 13 日送出，出版者是他本人。",
+    "sourceUrls": [
+     "https://taraputra.bandcamp.com/album/obvious-dubious",
+     "https://www.discogs.com/master/2040448-Tara-Putra-Obvious-Dubious",
+     "https://musicbrainz.org/artist/d50db75b-8173-4eb0-9cd3-de1c8a8f8128",
+     "https://musicbrainz.org/release-group/fede8dd4-77b6-46dd-881e-f7aa3cb0d91f"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/f2/64/40/f264408e-e996-03dc-2cd5-df307620130e/mzaf_6111040406027367388.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-06T12:09:57.131Z",
+    "appleCollectionId": "1484606494",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1484606494「Tara Putra《Obvious Dubious》」：曲目 10/11 對上 MB 原盤（Apple 共 11 軌），取第 1 軌〈Cowboys & Smoking Giants〉。主線 2026-11-06 lookup 核對、試聽檔 HTTP 206。",
+    "trackName": "Big Red Switch",
+    "popularity": "deezer-rank"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Kareem Ali",
+   "album": "Sound in Motion",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "b524cd8f-d14f-4e88-9b3c-6e31a6ba23d0",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "downtempo／trip-hop：Bandcamp 有鼓名單（第三輪，標籤篩掉）：Last.fm 收聽 3330 人；標籤 Electronic、House、Jazz Fusion、downtempo、electronica、ethereal｜⚠ moodGuess 為卡單粗估（把握 low）；當初汰因「標籤：House」——照「有鼓不等於躁」重判：研究層須寫清楚鼓是哪一種（慢拖無力／攻擊性／舞池推進）｜MB release-group b524cd8f-d14f-4e88-9b3c-6e31a6ba23d0：title「Sound in Motion」、Album、first-release-date 2023-08-30、artist-credit「Kareem Ali」。證據：https://kareemali19.bandcamp.com/album/sound-in-motion https://musicbrainz.org/release-group/b524cd8f-d14f-4e88-9b3c-6e31a6ba23d0",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2023,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/b524cd8f-d14f-4e88-9b3c-6e31a6ba23d0/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-06T12:09:36Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-06 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 3330,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-06T12:09:36Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 3330）"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "最短一首 1 分 7 秒，壓軸那首拉到 7 分 4 秒。身兼 DJ 的電子製作人 Kareem Ali，替前者取名〈Word To Roy〉，後者叫〈Crescendo〉，九首的總時間約 32 分鐘。作曲、演奏、編曲、混音到母帶，全部攬在他自己身上。曲風標籤寫的是 house、jazz fusion 與 downtempo。2023 年 8 月上線。",
+    "sourceUrls": [
+     "https://kareemali19.bandcamp.com/album/sound-in-motion",
+     "https://musicbrainz.org/artist/30e46d35-274b-41e3-8559-75b21e69c042",
+     "https://xlr8r.com/news/kareem-ali-shares-new-album-of-lush-funk-driven-house/",
+     "https://www.rollingstone.com/music/music-features/kareem-ali-interview-1047277/",
+     "https://www.ujam.com/blog/artist-spotlight-kareem-ali/",
+     "https://musicbrainz.org/release-group/b524cd8f-d14f-4e88-9b3c-6e31a6ba23d0"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/5f/85/95/5f8595f8-83e4-4204-b14d-9aebf8587236/mzaf_9807334120907922550.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-06T12:09:58.737Z",
+    "appleCollectionId": "1704988832",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1704988832「Kareem Ali《Sound In Motion》」：曲目 9/9 對上 MB 原盤（Apple 共 9 軌），取第 1 軌〈Kenny Lee〉。主線 2026-11-06 lookup 核對、試聽檔 HTTP 206。",
+    "trackName": "Word To Roy",
+    "popularity": "deezer-rank"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Maple",
+   "album": "Pull",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "d138d25f-1a59-4135-847b-35064bbeb4a6",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "downtempo／trip-hop：Bandcamp 有鼓名單（第三輪，標籤篩掉）：Last.fm 收聽 2490 人；標籤 222、Electronic、ambient、breakbeat、downtempo、lofi｜⚠ moodGuess 為卡單粗估（把握 low）；當初汰因「標籤：breakbeat」——照「有鼓不等於躁」重判：研究層須寫清楚鼓是哪一種（慢拖無力／攻擊性／舞池推進）｜MB release-group d138d25f-1a59-4135-847b-35064bbeb4a6：title「Pull」、Album、first-release-date 2025-09-02、artist-credit「Maple」。證據：https://unluckywind.bandcamp.com/album/pull https://musicbrainz.org/release-group/d138d25f-1a59-4135-847b-35064bbeb4a6",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2025,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/d138d25f-1a59-4135-847b-35064bbeb4a6/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-06T12:09:36Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-06 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 2490,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-06T12:09:36Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 2490）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 2490），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "地板下的老鼠，在秋天說出新的情緒。unlucky wind 旗下做 lofi 斷拍的 Maple，帶著不同的步調回到廠牌自稱的「222」圈子，這兩句話都寫在廠牌替專輯撰寫的說明裡。全盤最短的〈fixing the recipe〉僅 35 秒。實體版是 25 張銀面 CDr。2025 年 9 月 2 日列進廠牌目錄。",
+    "sourceUrls": [
+     "https://unluckywind.bandcamp.com/album/pull",
+     "https://www.discogs.com/release/35080871-Maple-Pull",
+     "https://musicbrainz.org/release-group/d138d25f-1a59-4135-847b-35064bbeb4a6"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-06T12:09:36Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：Late Checkout Maple《Receipt Pulls - Single》0/16）。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Noya Rao",
+   "album": "Icaros",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "a38c9d82-ae15-4dd4-9ab3-9e833002bf97",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "alt R&B／neo-soul：Bandcamp 有鼓名單（第三輪，標籤篩掉）：Last.fm 收聽 2125 人；標籤 Electronic、Neo-Soul、R&B、Soul、ambient electronic、downtempo｜⚠ moodGuess 為卡單粗估（把握 low）；當初汰因「標籤：Neo-Soul、R&B、Soul、soul」——照「有鼓不等於躁」重判：研究層須寫清楚鼓是哪一種（慢拖無力／攻擊性／舞池推進）｜MB release-group a38c9d82-ae15-4dd4-9ab3-9e833002bf97：title「Icaros」、Album、first-release-date 2017-11-24、artist-credit「Noya Rao」。證據：https://noyarao.bandcamp.com/album/icaros-2 https://musicbrainz.org/release-group/a38c9d82-ae15-4dd4-9ab3-9e833002bf97",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2017,
+    "yearNote": ""
+   },
+   "genres": [
+    "soul"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/a38c9d82-ae15-4dd4-9ab3-9e833002bf97/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-06T12:09:36Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-06 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 2125,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-06T12:09:36Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 2125）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 2125），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "樂評唯一的遺憾，是十首裡沒有一首純器樂。由 Olivia Bhattacharjee 主唱的里茲電子靈魂四重奏 Noya Rao，在那篇評論裡大致獲得讚許，只被建議穿插幾段器樂間奏。鍵盤 Tom Henry、貝斯 Jim Wiltshire、鼓手 Matt Davies 與她同台，樂團自稱做的是浸滿合成器的電子靈魂。首作 2017 年 11 月 24 日於 Gondwana Records 發行，那是爵士樂手 Matthew Halsall 2008 年在曼徹斯特創立的廠牌。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/11195580-Noya-Rao-Icaros",
+     "https://soundsoftheuniverse.com/product/icaros",
+     "https://noyarao.bandcamp.com/album/icaros-2",
+     "https://www.discogs.com/master/1309731-Noya-Rao-Icaros",
+     "https://www.allaboutjazz.com/icaros-noya-rao-gondwana-records-review-by-rokas-kucinskas",
+     "https://musicbrainz.org/release-group/a38c9d82-ae15-4dd4-9ab3-9e833002bf97",
+     "https://bleep.com/release/129448-noya-rao-owls"
+    ],
+    "note": "薄細項策展線卡牌版：研究（partial）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/af/14/e1/af14e1eb-80d6-5c6a-e0c4-e4a270ccf903/mzaf_7240079707510307049.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-06T12:10:00.297Z",
+    "appleCollectionId": "1578456749",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1578456749「Noya Rao《Icaros》」：曲目 10/10 對上 MB 原盤（Apple 共 11 軌），取第 1 軌〈Azimuth〉。主線 2026-11-06 lookup 核對、試聽檔 HTTP 206。",
+    "trackName": "Golden Claw",
+    "popularity": "deezer-rank"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Lavarr the Starr",
+   "album": "Illusions Ago",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "9c055af6-51e8-40ca-bed5-96b046e9494d",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "alt R&B／neo-soul：Bandcamp 有鼓名單（第三輪，標籤篩掉）：Last.fm 收聽 2024 人；標籤 R&B/Soul、afro-futurism、alternative r&b beats、jazz hip hop、nu-jazz、Lagos｜⚠ moodGuess 為卡單粗估（把握 mid）；當初汰因「標籤：R&B/Soul、alternative r&b beats、jazz hip hop」——照「有鼓不等於躁」重判：研究層須寫清楚鼓是哪一種（慢拖無力／攻擊性／舞池推進）｜MB release-group 9c055af6-51e8-40ca-bed5-96b046e9494d：title「Illusions Ago」、Album、first-release-date 2023-04-12、artist-credit「Lavarr the Starr」。證據：https://lavarrthestar.bandcamp.com/album/illusions-ago https://musicbrainz.org/release-group/9c055af6-51e8-40ca-bed5-96b046e9494d",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2023,
+    "yearNote": ""
+   },
+   "genres": [
+    "soul"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/9c055af6-51e8-40ca-bed5-96b046e9494d/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-06T12:09:36Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-06 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 2024,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-06T12:09:36Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 2024）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 2024），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "Shabazz Palaces 的主腦，替他發行了出道作。唱 alt R&B 與爵士嘻哈的 Lavarr the Starr，2019 年結識了主持這個團體的 Ishmael Butler。到了 2020 年，他簽進 Butler 旗下的 Glass Cane Records，出道作就此有了歸宿。錄音時找來貝斯手 Evan Flory-Barnes 在內的一群樂手。2023 年 4 月 12 日正式推出。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/9c055af6-51e8-40ca-bed5-96b046e9494d",
+     "https://lavarrthestar.bandcamp.com/album/illusions-ago",
+     "https://www.discogs.com/release/26903780-Lavarr-The-Starr-Illusions-Ago",
+     "https://www.last.fm/music/Lavarr+the+Starr/+wiki"
+    ],
+    "note": "薄細項策展線卡牌版：研究（partial）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-06T12:09:36Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Revolution Void",
+   "album": "The Politics of Desire",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "3e42587f-7423-36bf-b041-881059a51610",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "downtempo／trip-hop：Bandcamp 有鼓名單（第三輪，標籤篩掉）：Last.fm 收聽 1697 人；標籤 Electronic、ambient、breakbeat、downtempo、nu-jazz、Santa Fe｜⚠ moodGuess 為卡單粗估（把握 low）；當初汰因「標籤：breakbeat」——照「有鼓不等於躁」重判：研究層須寫清楚鼓是哪一種（慢拖無力／攻擊性／舞池推進）｜MB release-group 3e42587f-7423-36bf-b041-881059a51610：title「The Politics of Desire」、Album、first-release-date 2008-09-25、artist-credit「Revolution Void」。證據：https://revolutionvoid.bandcamp.com/album/the-politics-of-desire https://musicbrainz.org/release-group/3e42587f-7423-36bf-b041-881059a51610",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2008,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/3e42587f-7423-36bf-b041-881059a51610/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-06T12:09:36Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-06 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 1697,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-06T12:09:36Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 1697）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 1697），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "12 歲起步的計畫，由 big beat 慢慢長成電子爵士。聖塔菲的 Jonah Dempcy 從 1996 年起以 Revolution Void 為名，早年做的是受 Chemical Brothers 影響的 big beat。2004 年的《Increase the Dosage》之後，他被當成電子爵士看待，還替這條路取名 electronic breakbeat jazz。《The Politics of Desire》2008 年問世，是他本人放出來的自發行盤。",
+    "sourceUrls": [
+     "https://revolutionvoid.bandcamp.com/music",
+     "https://www.last.fm/music/Revolution+Void/+wiki",
+     "https://musicbrainz.org/release-group/3e42587f-7423-36bf-b041-881059a51610",
+     "https://revolutionvoid.bandcamp.com/album/the-politics-of-desire",
+     "https://audiomack.com/revolution-void/album/the-politics-of-desire"
+    ],
+    "note": "薄細項策展線卡牌版：研究（partial）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/75/09/81/750981b3-78fd-4a2c-3426-9f840b8fe270/mzaf_708874689452631869.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-06T12:10:01.844Z",
+    "appleCollectionId": "459092862",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 459092862「Revolution Void《The Politics of Desire》」：曲目 14/14 對上 MB 原盤（Apple 共 14 軌），取第 1 軌〈Line of Flight〉。主線 2026-11-06 lookup 核對、試聽檔 HTTP 206。",
+    "trackName": "The Narrative Changes",
+    "popularity": "deezer-rank"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "My Sister's Fugazi Shirt",
+   "album": "Man Fears the Darkness, and So He Scrapes Away at the Edges of It With Fire",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "ea33d0c4-1c5e-4511-beff-759a69cdb305",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "lo-fi／器樂嘻哈 beat：Bandcamp 有鼓名單（第三輪，標籤篩掉）：Last.fm 收聽 1442 人；標籤 Electronic、LoFi Hip Hop、anime、beat tape、chill、chillhop｜⚠ moodGuess 為卡單粗估（把握 low）；當初汰因「標籤：LoFi Hip Hop、hip hop instrumentals」——照「有鼓不等於躁」重判：研究層須寫清楚鼓是哪一種（慢拖無力／攻擊性／舞池推進）｜MB release-group ea33d0c4-1c5e-4511-beff-759a69cdb305：title「Man Fears the Darkness, and So He Scrapes Away at the Edges of It With Fire」、Album、first-release-date 2021-06-04、artist-credit「My Sister’s Fugazi Shirt」。證據：https://mysistersfugazishirt.bandcamp.com/album/man-fears-the-darkness-and-so-he-scrapes-away-at-the-edges-of-it-with-fire https://musicbrainz.org/release-group/ea33d0c4-1c5e-4511-beff-759a69cdb305",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2021,
+    "yearNote": ""
+   },
+   "genres": [
+    "hiphop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/ea33d0c4-1c5e-4511-beff-759a69cdb305/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-06T12:09:36Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-06 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 1442,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-06T12:09:36Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 1442）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 1442），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "碇真嗣深夜盯著天花板時，聽的就是這些 beat。費城的 lofi beat 計畫 My Sister's Fugazi Shirt 把它寫成前作的續作，作者形容這批曲子憂鬱、性感又悲傷，把《新世紀福音戰士》濃縮成一卷。14 首的長度都在 2 分 18 秒與 4 分 29 秒之間，曲名從動畫裡借，像〈Asuka 3.0〉〈Rei II〉。2021 年 6 月 4 日在 Bandcamp 上架，由作者親手推出。",
+    "sourceUrls": [
+     "https://www.discogs.com/release/21134812-My-Sisters-Fugazi-Shirt-Man-Fears-The-Darkness-And-So-He-Scrapes-Away-At-The-Edges-Of-It-With-Fire",
+     "https://mysistersfugazishirt.bandcamp.com/album/man-fears-the-darkness-and-so-he-scrapes-away-at-the-edges-of-it-with-fire",
+     "https://musicbrainz.org/release-group/ea33d0c4-1c5e-4511-beff-759a69cdb305"
+    ],
+    "note": "薄細項策展線卡牌版：研究（partial）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/4b/ee/a6/4beea687-b786-9b59-8006-e7017598586f/mzaf_542007843527351925.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-06T12:10:03.370Z",
+    "appleCollectionId": "1568239472",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1568239472「My Sister's Fugazi Shirt《Man Fears the Darkness, And So He Scrapes Away at the Edges of It With Fire》」：曲目 13/14 對上 MB 原盤（Apple 共 14 軌），取第 1 軌〈ONE MORE FINAL: I need you〉。主線 2026-11-06 lookup 核對、試聽檔 HTTP 206。",
+    "trackName": "Of the Shape of Hearts and Humans",
+    "popularity": "deezer-rank"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "MantisMash",
+   "album": "Time Seeds",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "manual",
+    "rgMbid": "",
+    "upc": "",
+    "aliasesChecked": true,
+    "mbAbsenceProof": {
+     "queries": [
+      "https://musicbrainz.org/ws/2/release-group?query=artist:\"MantisMash\" AND releasegroup:\"Time Seeds\"",
+      "https://musicbrainz.org/ws/2/release?query=release:\"Time Seeds\""
+     ],
+     "checkedAt": "2026-11-06",
+     "conclusion": "MB、Discogs 皆無此作；Bandcamp 與 Apple Music 皆為 2020 年 9 首約 61 分的專輯"
+    },
+    "manualEvidenceUrls": [
+     "https://merkabamusic1.bandcamp.com/album/time-seeds",
+     "https://music.apple.com/us/album/time-seeds/1538306207"
+    ],
+    "manualRuling": "雲端主線 2026-11-06 依 ALBUM_ONBOARDING §1 人工身分核可（店主 2026-09-02 裁定權下放；薄細項策展線 add-20261106-ml74）",
+    "coverSourceHint": "bandcamp",
+    "aliasReview": "psybient／psydub：Bandcamp 有鼓名單（第三輪，標籤篩掉）：Last.fm 收聽 1257 人；標籤 Electronic、PsyBass、Psydub、ambient、chillout、downtempo｜⚠ moodGuess 為卡單粗估（把握 low）；當初汰因「標籤：dubstep、psybreaks」——照「有鼓不等於躁」重判：研究層須寫清楚鼓是哪一種（慢拖無力／攻擊性／舞池推進）｜MB 查無（MB、Discogs 皆無此作；Bandcamp 與 Apple Music 皆為 2020 年 9 首約 61 分的專輯），走 §1 人工身分。證據：https://merkabamusic1.bandcamp.com/album/time-seeds https://music.apple.com/us/album/time-seeds/1538306207 https://merkabamusic1.bandcamp.com/album/time-seeds https://music.apple.com/us/album/time-seeds/1538306207",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2020,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://f4.bcbits.com/img/a3087153698_10.jpg",
+    "source": "bandcamp",
+    "note": "§1 人工身分（MB 查無），無 CAA；Bandcamp https://merkabamusic1.bandcamp.com/album/time-seeds og:image（1200px），主線 2026-11-06 縮圖表目視與藝人、盤名相符。",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-06T12:09:36Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 1257,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-06T12:09:36Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 1257）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 1257），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "陽光下的 Goa，是這九首要把人帶去的地方。MantisMash 是 Bandcamp 標在澳洲的 psydub 製作人，第四張全長專輯則挑 2020 年 10 月 29 日重回 Merkaba Music 發表。整張寫於他在一處全球電子文化發源地扎根的那一年。九首排滿約 61 分鐘。",
+    "sourceUrls": [
+     "https://merkabamusic1.bandcamp.com/album/time-seeds",
+     "https://www.discogs.com/release/18859117",
+     "https://merkabamusic1.bandcamp.com/music",
+     "https://music.apple.com/us/album/time-seeds/1538306207"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-06T12:09:36Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：MantisMash《Time Seeds》0/0）。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Kalpataru Tree",
+   "album": "Luminosophy",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "09c5e7e3-ceb4-4547-a361-a45dfd48a74c",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "psybient／psydub：Bandcamp 有鼓名單（第三輪，標籤篩掉）：Last.fm 收聽 1162 人；標籤 Ambient、Chill out、Etheric、Organic、psy dub、psybient｜⚠ moodGuess 為卡單粗估（把握 low）；當初汰因「標籤：psy dub」——照「有鼓不等於躁」重判：研究層須寫清楚鼓是哪一種（慢拖無力／攻擊性／舞池推進）｜MB release-group 09c5e7e3-ceb4-4547-a361-a45dfd48a74c：title「Luminosophy」、Album、first-release-date 2012-03-30、artist-credit「Kalpataru Tree」。證據：https://kalpatarutree.bandcamp.com/album/luminosophy-2 https://musicbrainz.org/release-group/09c5e7e3-ceb4-4547-a361-a45dfd48a74c",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2012,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/09c5e7e3-ceb4-4547-a361-a45dfd48a74c/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-06T12:09:36Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-06 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 1162,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-06T12:09:36Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 1162）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 1162），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "美洲原住民長笛，在最後一首吹進這份 dub 祈禱。署名創作的 Curtis Humphrey 以 Kalpataru Tree 之名做 psybient，第 10 首〈Red Moon〉的那段長笛，則由 Natalia Newman 吹奏。十首從 5 分 44 秒拉到 12 分 8 秒，每一首都放得很長。2012 年以自發行的方式獨力推出。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/09c5e7e3-ceb4-4547-a361-a45dfd48a74c",
+     "https://www.discogs.com/release/3639696",
+     "https://kalpatarutree.bandcamp.com/album/luminosophy-2",
+     "https://kalpatarutree.bandcamp.com/music"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview122/v4/98/35/78/98357864-ff0a-5b0f-8e3d-ecc595136ccd/mzaf_649945211094216894.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-06T12:10:04.906Z",
+    "appleCollectionId": "1732128491",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1732128491「Kalpataru Tree《Luminosophy》」：曲目 10/10 對上 MB 原盤（Apple 共 10 軌），取第 1 軌〈Art Official Nature〉。主線 2026-11-06 lookup 核對、試聽檔 HTTP 206。",
+    "trackName": "Naked Soul Dub",
+    "popularity": "deezer-rank"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Skinshape",
+   "album": "Chapman's Pool",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "7753db61-4a1d-4a42-af08-b6c32f40348b",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "psybient／psydub：Bandcamp 有鼓名單（第三輪，標籤篩掉）：Last.fm 收聽 1051 人；標籤 Alternative、british、funk、psychedelic rock、trip hop、London｜⚠ moodGuess 為卡單粗估（把握 mid）；當初汰因「標籤：funk」——照「有鼓不等於躁」重判：研究層須寫清楚鼓是哪一種（慢拖無力／攻擊性／舞池推進）｜MB release-group 7753db61-4a1d-4a42-af08-b6c32f40348b：title「Chapman's Pool」、Album、first-release-date 2026-10-30、artist-credit「Skinshape」。證據：https://skinshape.bandcamp.com/album/chapmans-pool https://musicbrainz.org/release-group/7753db61-4a1d-4a42-af08-b6c32f40348b",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2026,
+    "yearNote": ""
+   },
+   "genres": [
+    "rock"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/7753db61-4a1d-4a42-af08-b6c32f40348b/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-06T12:09:36Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-06 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 1051,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-06T12:09:36Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 1051）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 1051），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "多塞特一處海灣的浪聲，被錄進以它命名的專輯。來自英格蘭 Swanage 的 Will Dorey 掛 Skinshape 之名做迷幻放克，Chapman's Pool 這處海灣就在他童年住處旁邊。專輯他在倫敦幾乎獨力錄完，只有鼓請 Tom Blunt 與 Dan Hale 來打。2026 年 10 月 30 日交 Lewis Recordings 出版。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/7753db61-4a1d-4a42-af08-b6c32f40348b",
+     "https://skinshape.bandcamp.com/album/chapmans-pool",
+     "https://joyofviolentmovement.com/new-audio-skinshape-returns-with-summery-take-it-as-it-is/",
+     "https://www.stickyblacktarmac.com/products/skinshape-chapmans-pool"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/4f/60/1b/4f601b04-984c-dfdf-28b7-c57943814a27/mzaf_14019197140694733233.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-11-06T12:09:36Z",
+    "appleCollectionId": "6789621034",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 6789621034「Skinshape《Chapman's Pool》」：曲目 11/11 對上 MB 原盤（Apple 共 11 軌），取第 1 軌〈The Blade of a Knife〉。主線 2026-11-06 lookup 核對、試聽檔 HTTP 206。",
+    "trackName": "The Blade of a Knife",
+    "popularity": "deezer-rank"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Govinda",
+   "album": "Burning Rings of Helios",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "bf410488-8c7f-428f-aa48-557b060b77a5",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "psybient／psydub：Bandcamp 有鼓名單（第三輪，標籤篩掉）：Last.fm 收聽 830 人；標籤 Electronic、chill out、downtempo、electronica、gypsy、trip hop｜⚠ moodGuess 為卡單粗估（把握 low）；當初汰因「標籤：」——照「有鼓不等於躁」重判：研究層須寫清楚鼓是哪一種（慢拖無力／攻擊性／舞池推進）｜MB release-group bf410488-8c7f-428f-aa48-557b060b77a5：title「Burning Rings of Helios」、Album、first-release-date 2019-06-20、artist-credit「Govinda」。證據：https://govinda.bandcamp.com/album/burning-rings-of-helios-2 https://musicbrainz.org/release-group/bf410488-8c7f-428f-aa48-557b060b77a5",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2019,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/bf410488-8c7f-428f-aa48-557b060b77a5/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-06T12:09:36Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-06 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 830,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-06T12:09:36Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 830）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 830），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "吉普賽小提琴領路，靈感取自馬戲藝術。Govinda 背後是德州奧斯汀製作人 Shane Madden；七首是他迄今最喜歡製作的一批。到了〈Smokey Memories〉，前景換成弱音小號，吹出慵懶的藍調。2019 年 6 月 20 日經 Gravitas Recordings 上市。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/bf410488-8c7f-428f-aa48-557b060b77a5",
+     "https://govinda.bandcamp.com/album/burning-rings-of-helios-2",
+     "https://govinda.bandcamp.com/music",
+     "https://www.austinchronicle.com/music/record-reviews-11702832/"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/a1/f4/e7/a1f4e7e8-8a0a-58ba-57a8-c99a0e718b5a/mzaf_6002983400763368554.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-06T12:10:07.892Z",
+    "appleCollectionId": "1466073340",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1466073340「Govinda《Burning Rings of Helios》」：曲目 7/7 對上 MB 原盤（Apple 共 7 軌），取第 1 軌〈CObra STyle〉。主線 2026-11-06 lookup 核對、試聽檔 HTTP 206。",
+    "trackName": "Nebulous Space",
+    "popularity": "deezer-rank"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Carbon Based Lifeforms",
+   "album": "Interloper",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "5812b287-ca1a-4ffe-a02f-08f8cc67d052",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "ambient：Bandcamp 有鼓名單（第三輪，研究判有鼓）：Last.fm 收聽 128180 人；標籤 Ambient、chillout、downtempo、electronic、psybient、Sweden｜⚠ moodGuess 為卡單粗估（把握 high）；當初汰因「ml71：有拍推進＋同人錨點判冷 1：先做無鼓版再加鼓、整張持續拍子；」——照「有鼓不等於躁」重判：研究層須寫清楚鼓是哪一種（慢拖無力／攻擊性／舞池推進）｜MB release-group 5812b287-ca1a-4ffe-a02f-08f8cc67d052：title「Interloper」、Album、first-release-date 2010-05-03、artist-credit「Carbon Based Lifeforms」。證據：https://carbonbasedlifeforms.bandcamp.com/album/interloper https://musicbrainz.org/release-group/5812b287-ca1a-4ffe-a02f-08f8cc67d052",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2010,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/5812b287-ca1a-4ffe-a02f-08f8cc67d052/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-06T12:09:36Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-06 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 2,
+    "accessibility": 3,
+    "listeners": 128180,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-06T12:09:36Z",
+    "note": "機器基線 3/2/3（Last.fm listeners 128180）"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 2、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "做完一張無鼓專輯，兩人卻把它擱下了。瑞典 ambient 二人組 Carbon Based Lifeforms 早在 2002 年就在 MP3.com 被法國 Ultimae 相中；2009 年那張成品，他們自己越聽越沒把握。和 Ultimae 商量過後，兩人替它補上鼓，加了鼓的這一版，就是 2010 年 5 月上市的《Interloper》。原本的無鼓版又等到 2011 年，才換上《Twentythree》這個盤名發行。回頭看，樂團認為這是他們長大的一張。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Carbon_Based_Lifeforms",
+     "https://musicbrainz.org/release-group/5812b287-ca1a-4ffe-a02f-08f8cc67d052",
+     "https://en.wikipedia.org/wiki/Interloper_(album)",
+     "https://carbonbasedlifeforms.bandcamp.com/album/interloper"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/36/5c/43/365c43a4-5fad-b441-4757-a66baedfe9b8/mzaf_14645737905770541238.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-06T12:10:09.491Z",
+    "appleCollectionId": "1490804887",
+    "storefront": "SE",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple se 1490804887「Carbon Based Lifeforms《Interloper》」：曲目 9/10 對上 MB 原盤（Apple 共 10 軌），取第 1 軌〈Interloper〉。主線 2026-11-06 lookup 核對、試聽檔 HTTP 206。",
+    "trackName": "Supersede",
+    "popularity": "deezer-rank"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Emancipator",
+   "album": "Baralku",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "60967cb8-5572-42f7-b09b-fb838bc1f272",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "downtempo／trip-hop：Bandcamp 有鼓名單（第三輪，研究判有鼓）：Last.fm 收聽 92930 人；標籤 Electronic、Organic、Trip-Hop、downtempo、Portland｜⚠ moodGuess 為卡單粗估（把握 high）；當初汰因「ml73：有拍推進＋判輕：真鼓打擊、貝斯律動，小提琴長笛亮（研究 a）」——照「有鼓不等於躁」重判：研究層須寫清楚鼓是哪一種（慢拖無力／攻擊性／舞池推進）｜MB release-group 60967cb8-5572-42f7-b09b-fb838bc1f272：title「Baralku」、Album、first-release-date 2017-11-17、artist-credit「Emancipator」。證據：https://emancipator.bandcamp.com/album/baralku https://musicbrainz.org/release-group/60967cb8-5572-42f7-b09b-fb838bc1f272",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2017,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/60967cb8-5572-42f7-b09b-fb838bc1f272/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-06T12:09:36Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-06 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": 92930,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-06T12:09:36Z",
+    "note": "機器基線 3/3/3（Last.fm listeners 92930）"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "澳洲有些部落相信，死者住在一座靈性之島上。現居奧勒岡波特蘭、做 downtempo 的 Emancipator，拿那座島的名字 Baralku 替第五張專輯命名。2017 年 11 月，它交由他自創的 Loci Records 推出，14 首合計一小時左右。客席拉小提琴的是 Thacher Schmid 與 Ilya Goldberg，長笛則交給 Gina Sobel。Billboard 報導這張新作時，標題給它的形容詞是 earthy，取的是大地質感。",
+    "sourceUrls": [
+     "https://en.wikipedia.org/wiki/Emancipator_(musician)",
+     "https://emancipator.bandcamp.com/album/baralku",
+     "https://musicbrainz.org/release-group/60967cb8-5572-42f7-b09b-fb838bc1f272"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/0b/ff/e5/0bffe5c7-5df9-db00-aa48-6d178cb8bc72/mzaf_14003732666193268106.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-06T12:10:11.325Z",
+    "appleCollectionId": "1659088930",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1659088930「Emancipator《Baralku》」：曲目 14/14 對上 MB 原盤（Apple 共 14 軌），取第 1 軌〈Baralku〉。主線 2026-11-06 lookup 核對、試聽檔 HTTP 206。",
+    "trackName": "Time For Space",
+    "popularity": "deezer-rank"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Nym",
+   "album": "Convex",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "0fa7827f-907a-4747-b63e-13a19ea100b8",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "trip-hop 慢拍：Bandcamp 有鼓名單（第三輪，研究判有鼓）：Last.fm 收聽 31063 人；標籤 downtempo、trip-hop、ambient｜⚠ moodGuess 為卡單粗估（把握 low）；當初汰因「ml71：有拍推進 9：多數曲有持續半速取樣鼓組，只有兩首無鼓（研究 b））」——照「有鼓不等於躁」重判：研究層須寫清楚鼓是哪一種（慢拖無力／攻擊性／舞池推進）｜MB release-group 0fa7827f-907a-4747-b63e-13a19ea100b8：title「Convex」、Album、first-release-date 2015-10-27、artist-credit「Nym」。證據：https://music.ratsofnym.com/album/convex-2 https://musicbrainz.org/release-group/0fa7827f-907a-4747-b63e-13a19ea100b8",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2015,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://f4.bcbits.com/img/a3665701751_10.jpg",
+    "source": "bandcamp",
+    "note": "CAA release-group front 當天 500；Bandcamp music.ratsofnym.com/album/convex-2（官方搜尋 API 回傳 art_id 3665701751，1200px），主線 2026-11-06 縮圖表目視與藝人、盤名相符。",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-06T12:09:36Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 3,
+    "accessibility": 3,
+    "listeners": 31063,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-06T12:09:36Z",
+    "note": "機器基線 3/3/3（Last.fm listeners 31063）"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 3、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "取樣鼓組走著半速，低頻厚、高頻收得很緊。這些器樂 trip-hop 出自 Bandcamp 標為美國的 Nym，多數曲目的鼓點穩穩踩著 hip-hop 律動，到〈Come Back〉幾乎只剩鋪底。〈Wavey Blue〉與 Spherelet 合寫。2015 年 10 月 27 日自主上架，收十首。",
+    "sourceUrls": [
+     "https://nymself.bandcamp.com/album/convex-2",
+     "https://musicbrainz.org/release-group/0fa7827f-907a-4747-b63e-13a19ea100b8",
+     "https://music.apple.com/us/album/1537443598"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/37/2c/fa/372cfae3-ba14-8c83-2470-a33a05a779f2/mzaf_17959038165966575926.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-06T12:10:12.896Z",
+    "appleCollectionId": "1537443598",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1537443598「Nym《Convex》」：曲目 10/10 對上 MB 原盤（Apple 共 10 軌），取第 1 軌〈We Were Never There〉。主線 2026-11-06 lookup 核對、試聽檔 HTTP 206。",
+    "trackName": "Come Back",
+    "popularity": "deezer-rank"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Saafi Brothers",
+   "album": "Mystic Cigarettes",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "3ea6d1f5-9591-3d06-ae1a-62fecd50ee6a",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "psybient／psydub：Bandcamp 有鼓名單（第三輪，研究判有鼓）：Last.fm 收聽 17932 人；標籤 Electronic、Psydub、ambient electronic、chillout、psybient、psychill｜⚠ moodGuess 為卡單粗估（把握 mid）；當初汰因「ml73：有拍推進：文案直述 bopping drums、bassy beats（研究 b）」——照「有鼓不等於躁」重判：研究層須寫清楚鼓是哪一種（慢拖無力／攻擊性／舞池推進）｜MB release-group 3ea6d1f5-9591-3d06-ae1a-62fecd50ee6a：title「Mystic Cigarettes」、Album、first-release-date 1997-11、artist-credit「Saafi Brothers」。證據：https://saafibrothers.bandcamp.com/album/mystic-cigarettes https://musicbrainz.org/release-group/3ea6d1f5-9591-3d06-ae1a-62fecd50ee6a",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 1997,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic",
+    "world"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/3ea6d1f5-9591-3d06-ae1a-62fecd50ee6a/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-06T12:09:36Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-06 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 17932,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-06T12:09:36Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 17932）"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "封面印成一包菸，裡頭裝著七首長篇 dub。三位法蘭克福製作人 Gabriel Le Mar、Groovetitan 與 Michael Kohlbecker 組成 Saafi Brothers，這張是三人出道之作，英國 Blue Room Released 在 1997 年 11 月替他們發行，一張放完約需 73 分鐘。他們做的是煙霧般、看透世事的環境 dub。開場的〈Sweet Sirenes〉從輕輕彈跳的鼓聲起步，一路加快，推向把人整個包住的高潮。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/3ea6d1f5-9591-3d06-ae1a-62fecd50ee6a",
+     "https://saafibrothers.bandcamp.com/album/mystic-cigarettes"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/54/8f/93/548f9359-197c-02d7-642b-44ef5c7596e8/mzaf_7739560791340030019.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-06T12:10:14.861Z",
+    "appleCollectionId": "279131194",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 279131194「Saafi Brothers《Mystic Cigarettes》」：曲目 7/7 對上 MB 原盤（Apple 共 7 軌），取第 1 軌〈Sweet Sirenes〉。主線 2026-11-06 lookup 核對、試聽檔 HTTP 206。",
+    "trackName": "2046",
+    "popularity": "deezer-rank"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Jazz Playaz",
+   "album": "Visions of a SIC World",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "17af6d5f-34b8-43c5-a2b6-6bc057f17285",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "lo-fi beat tape：Bandcamp 有鼓名單（第三輪，研究判有鼓）：Last.fm 收聽 7133 人；標籤 Hip-Hop/Rap、Jazz Hop、Smooth Jazz、alternative hip-hop、independent、instrumental hip-hop｜⚠ moodGuess 為卡單粗估（把握 low）；當初汰因「ml69：能量（舞池／funk／electro／四拍）：bold rhythmic beats、smooth jazz 偏亮）」——照「有鼓不等於躁」重判：研究層須寫清楚鼓是哪一種（慢拖無力／攻擊性／舞池推進）｜MB release-group 17af6d5f-34b8-43c5-a2b6-6bc057f17285：title「Visions of a SIC World」、Album、first-release-date 2023-01-23、artist-credit「JAZZ PLAYAZ」。證據：https://sicrecords.bandcamp.com/album/visions-of-a-sic-world https://musicbrainz.org/release-group/17af6d5f-34b8-43c5-a2b6-6bc057f17285",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2023,
+    "yearNote": ""
+   },
+   "genres": [
+    "hiphop",
+    "jazz"
+   ],
+   "cover": {
+    "url": "https://f4.bcbits.com/img/a4087936632_10.jpg",
+    "source": "bandcamp",
+    "note": "CAA release-group 無 front（404）；Bandcamp https://sicrecords.bandcamp.com/album/visions-of-a-sic-world og:image（1200px），主線 2026-11-06 縮圖表目視與藝人、盤名相符。",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-06T12:09:36Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 7133,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-06T12:09:36Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 7133）"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "四個製作人輪流主署，拼成一卷 vaporwave 爵士。Bandcamp 簡介把 Jazz Playaz 寫成 PLANET SIC 的四人團：Tommy Martini、Professor Creepshow、YungGrunge 與 Mackjunt.，每人各主署 3 首。全盤 14 首，最長也只到 3 分 03 秒，2023 年 1 月上架。",
+    "sourceUrls": [
+     "https://musicbrainz.org/release-group/17af6d5f-34b8-43c5-a2b6-6bc057f17285",
+     "https://sicrecords.bandcamp.com/album/visions-of-a-sic-world",
+     "https://soundcloud.com/professorcreepshow/sets/picture-us-ballin"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/74/25/91/742591a1-098f-7b64-76b9-ea7663881c5d/mzaf_3233109103490773803.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-11-06T12:09:36Z",
+    "appleCollectionId": "6815106973",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 6815106973「Jazz Playaz《Visions of a Sic World》」：曲目 14/16 對上 MB 原盤（Apple 共 14 軌），取第 1 軌〈Visions of a SIC World (feat. Tommy Martini)〉。主線 2026-11-06 lookup 核對、試聽檔 HTTP 206。",
+    "trackName": "Visions of a SIC World (feat. Tommy Martini)",
+    "popularity": "deezer-rank"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Lapa",
+   "album": "Meeting of the Waters",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "781db624-8f0e-42e4-8c2b-d2fab28ff4f3",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "downtempo／trip-hop：Bandcamp 有鼓名單（第三輪，研究判有鼓）：Last.fm 收聽 3123 人；標籤 Electronic、Portland｜⚠ moodGuess 為卡單粗估（把握 low）；當初汰因「ml73：有拍推進＋判輕：trip-hop／groove house、鼓組打擊領頭，弦樂顫音琴偏輕（研究 d）」——照「有鼓不等於躁」重判：研究層須寫清楚鼓是哪一種（慢拖無力／攻擊性／舞池推進）｜MB release-group 781db624-8f0e-42e4-8c2b-d2fab28ff4f3：title「Meeting of the Waters」、Album、first-release-date 2015-09-09、artist-credit「Lapa」。證據：https://lapa.bandcamp.com/album/meeting-of-the-waters https://musicbrainz.org/release-group/781db624-8f0e-42e4-8c2b-d2fab28ff4f3",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2015,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic",
+    "world"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/781db624-8f0e-42e4-8c2b-d2fab28ff4f3/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-06T12:09:36Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-06 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 4,
+    "accessibility": 3,
+    "listeners": 3123,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-06T12:09:36Z",
+    "note": "機器基線 3/4/3（Last.fm listeners 3123）"
+   },
+   "rarity": "rare",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 4、accessibility 3，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "受過古典小提琴訓練的他，讓琴聲與貝斯一起領路。Lapa 是波特蘭製作人 Ilya Goldberg 掛的名義，他生於俄羅斯；2015 年 9 月 9 日釋出的《Meeting of the Waters》為他的處女作，由 Loci Records 發行。他取材 trip-hop 與帶 groove 的 house，寫曲、混音、製作與封面全出自他一人。錄音請來幾位現場樂手：鼓組是 Cedar Miller，古箏交給 Random Rab。",
+    "sourceUrls": [
+     "https://lapa.bandcamp.com/album/meeting-of-the-waters",
+     "https://liveforlivemusic.com/features/listen-stunning-mix-artists-emancipators-loci-records-label/",
+     "https://musicbrainz.org/release-group/781db624-8f0e-42e4-8c2b-d2fab28ff4f3"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/93/5b/af/935baf37-b210-9303-9531-f87bf457360a/mzaf_2885807346937749606.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-06T12:10:17.511Z",
+    "appleCollectionId": "1034963724",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 1034963724「Lapa《Meeting of the Waters》」：曲目 9/10 對上 MB 原盤（Apple 共 10 軌），取第 1 軌〈Waves〉。主線 2026-11-06 lookup 核對、試聽檔 HTTP 206。",
+    "trackName": "Oneno",
+    "popularity": "deezer-rank"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Master Minded",
+   "album": "Elements",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "59c434dd-88c6-49f9-afde-c2e559eff0b9",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "ambient：Bandcamp 有鼓名單（第三輪，研究判有鼓）：Last.fm 收聽 2396 人；標籤 Electronic、Experimental、Psybient、Psychedelic、Storytelling、Visionary｜⚠ moodGuess 為卡單粗估（把握 low）；當初汰因「ml72：無來源＋有拍風險 1：資訊極薄、psybient 加迪吉里杜管儀式律動（研究 c））」——照「有鼓不等於躁」重判：研究層須寫清楚鼓是哪一種（慢拖無力／攻擊性／舞池推進）｜MB release-group 59c434dd-88c6-49f9-afde-c2e559eff0b9：title「Elements」、Album、first-release-date 2015-04-16、artist-credit「Master Minded」。證據：https://masterminded.bandcamp.com/album/elements https://musicbrainz.org/release-group/59c434dd-88c6-49f9-afde-c2e559eff0b9",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2015,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://f4.bcbits.com/img/a3748438846_10.jpg",
+    "source": "bandcamp",
+    "note": "CAA release-group 無 front（404）；Bandcamp https://masterminded.bandcamp.com/album/elements og:image（1200px），主線 2026-11-06 縮圖表目視與藝人、盤名相符。",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-06T12:09:36Z",
+    "visuallyVerified": true
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 2396,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-06T12:09:36Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 2396）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 2396），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "以四元素為骨架，水與火各兩首、土只有一首。以色列的 Master Minded 是一個從 2000 年代初就在做電子樂的計畫，這九首裡 Air 也分到兩首。迪吉里杜管由 Gabi Aborigiman 擔綱。2015 年 4 月 16 日首度問世，經 Merkaba Music 推出，聽完一輪約 42 分鐘。",
+    "sourceUrls": [
+     "https://masterminded.bandcamp.com/album/elements",
+     "https://musicbrainz.org/release-group/59c434dd-88c6-49f9-afde-c2e559eff0b9"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/e4/db/40/e4db404b-7bc8-f512-3449-c162860e2406/mzaf_5653096510498166509.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-06T12:10:18.969Z",
+    "appleCollectionId": "990503875",
+    "storefront": "US",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple us 990503875「Master Minded《Elements》」：曲目 8/9 對上 MB 原盤（Apple 共 9 軌），取第 1 軌〈The Sacred Spot (feat. Tye B)〉。主線 2026-11-06 lookup 核對、試聽檔 HTTP 206。",
+    "trackName": "Air - Breathing life",
+    "popularity": "deezer-rank"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Shwamp",
+   "album": "Circus",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "9027a35c-2947-43df-a64a-f64cabab06d1",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "ambient：Bandcamp 有鼓名單（第三輪，研究判有鼓）：Last.fm 收聽 1330 人；標籤 Electronic、Taitung｜⚠ moodGuess 為卡單粗估（把握 low）；當初汰因「ml72：有拍推進＋判輕 7：自述 playful、brighter vibes，dub／glitch 節拍（研究 d））」——照「有鼓不等於躁」重判：研究層須寫清楚鼓是哪一種（慢拖無力／攻擊性／舞池推進）｜MB release-group 9027a35c-2947-43df-a64a-f64cabab06d1：title「Circus」、Album、first-release-date 2020-11-06、artist-credit「Shwamp」。證據：https://shwamp.bandcamp.com/album/circus https://musicbrainz.org/release-group/9027a35c-2947-43df-a64a-f64cabab06d1",
+    "queryAlias": ""
+   },
+   "research": {
+    "suggestedYear": 2020,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/9027a35c-2947-43df-a64a-f64cabab06d1/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-06T12:09:36Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-06 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 1330,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-06T12:09:36Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 1330）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 1330），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "生在波爾多、住在台東，這位法國人交出第三張。主理人 Louis 拿 Shwamp 當名號，做 downtempo 與 dub，曲目裡的〈East Rift Babble〉指向花東縱谷一帶。這一張把重心放在旋律與完整的曲內旅程，挑了更溫暖、更深沉冷靜的聲音。招牌的黏稠機械感音色還在，氣氛很俏皮；處在困難的時期，他覺得明亮一點的氛圍正合適。2020 年 11 月 6 日面市，Mindspring Music 發行，收 10 首，約一小時。",
+    "sourceUrls": [
+     "https://shwamp.bandcamp.com/album/circus",
+     "https://shwamp.bandcamp.com/music",
+     "https://www.discogs.com/release/37473603",
+     "https://musicbrainz.org/release-group/9027a35c-2947-43df-a64a-f64cabab06d1"
+    ],
+    "note": "薄細項策展線卡牌版：研究（full）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "ready",
+    "url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/5e/75/87/5e758768-8086-a341-2532-28150ff01983/mzaf_6630636687032817130.plus.aac.p.m4a",
+    "source": "apple",
+    "httpStatus": 206,
+    "checkedAt": "2026-11-06T12:09:36Z",
+    "appleCollectionId": "1539793716",
+    "storefront": "TW",
+    "collectionExplicitness": "notExplicit",
+    "note": "Apple tw 1539793716「Shwamp《Circus》」：曲目 10/10 對上 MB 原盤（Apple 共 10 軌），取第 1 軌〈Surrender〉。主線 2026-11-06 lookup 核對、試聽檔 HTTP 206。",
+    "trackName": "Surrender",
+    "popularity": "deezer-rank"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  },
+  {
+   "artist": "Liléa Narrative",
+   "album": "Nouvelle chair",
+   "identity": {
+    "releaseType": "Album",
+    "identitySource": "pinned",
+    "rgMbid": "6376d165-076d-401c-9760-3b7e5acdbd6f",
+    "upc": "",
+    "aliasesChecked": true,
+    "aliasReview": "lo-fi beat tape：Bandcamp 有鼓名單（第三輪，研究判有鼓）：Last.fm 收聽 — 人；標籤 ｜⚠ moodGuess 為卡單粗估（把握 low）；當初汰因「ml69：能量（舞池／funk／electro／四拍）：electro cut-up）」——照「有鼓不等於躁」重判：研究層須寫清楚鼓是哪一種（慢拖無力／攻擊性／舞池推進）｜MB release-group 6376d165-076d-401c-9760-3b7e5acdbd6f：title「Nouvelle chair」、Album、first-release-date 2007-06-19、artist-credit「Liléa Narrative」。證據：https://lileanarrative.bandcamp.com/album/nouvelle-chair https://musicbrainz.org/release-group/6376d165-076d-401c-9760-3b7e5acdbd6f",
+    "queryAlias": "Lilea Narrative"
+   },
+   "research": {
+    "suggestedYear": 2007,
+    "yearNote": ""
+   },
+   "genres": [
+    "electronic",
+    "hiphop"
+   ],
+   "cover": {
+    "url": "https://coverartarchive.org/release-group/6376d165-076d-401c-9760-3b7e5acdbd6f/front",
+    "source": "caa",
+    "httpStatus": 200,
+    "checkedAt": "2026-11-06T12:09:36Z",
+    "visuallyVerified": true,
+    "note": "CAA release-group front（HEAD 200）；主線 2026-11-06 縮圖表目視與盤名相符。"
+   },
+   "ratings": {
+    "classic": 3,
+    "obscurity": 5,
+    "accessibility": 3,
+    "listeners": 2539,
+    "source": "worker /album-rating（obscurity:lastfm）",
+    "checkedAt": "2026-11-06T12:09:36Z",
+    "note": "機器基線 3/5/3（Last.fm listeners 2539）"
+   },
+   "rarity": "uncommon",
+   "apexAssessment": {
+    "eligible": false,
+    "tier": null,
+    "evidenceUrls": [],
+    "reason": "已評估：classic 3、obscurity 5、accessibility 3；obscurity=5 但沒有遺珠級證據（listeners 2539），不列 pearl，未觸及殿堂／遺珠／異端任一門檻，列為一般卡。"
+   },
+   "description": {
+    "text": "限量黑膠的封套上，直接夾著一張 CD。Liléa Narrative 是法國的 electro hip hop 藝人，2007 年登上 Rennes 的 Transmusicales，《Nouvelle chair》同年由 Under Cover 發行，出 CD 與黑膠。12 首全取法文曲名，只有兩首掛客座人聲，其餘是器樂，風格被歸進 cut-up／DJ。",
+    "sourceUrls": [
+     "https://lileanarrative.bandcamp.com/album/nouvelle-chair",
+     "https://www.discogs.com/release/1994651",
+     "https://www.discogs.com/release/1048498",
+     "https://musicbrainz.org/release-group/6376d165-076d-401c-9760-3b7e5acdbd6f",
+     "https://www.last.fm/music/Lil%C3%A9a+Narrative/+wiki"
+    ],
+    "note": "薄細項策展線卡牌版：研究（thin）→ 鉤子 → 寫作 → 主線審稿。"
+   },
+   "preview": {
+    "status": "unavailable",
+    "source": "none",
+    "checkedAt": "2026-11-06T12:09:36Z",
+    "note": "Apple jp／us 以藝人＋盤名搜尋，無曲目對得上 MB 原盤的條目（最佳候選：無）。"
+   },
+   "published": {
+    "cardCatalog": true,
+    "descriptionKv": true,
+    "albumOverride": true,
+    "seedCards": true,
+    "apexPool": false
+   }
+  }
+ ]
+}

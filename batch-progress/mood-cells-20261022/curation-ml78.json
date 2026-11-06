@@ -1,0 +1,1764 @@
+{
+ "group": "ml78",
+ "source": "batch-progress/bandcamp-dt-20261105/pick-ml78.json",
+ "factions": [
+  {
+   "id": "beats",
+   "zh": "器樂嘻哈／lo-fi beat（有鼓）",
+   "count": 16,
+   "why": ""
+  },
+  {
+   "id": "soul",
+   "zh": "neo-soul／nu-jazz 慢拍",
+   "count": 2,
+   "why": ""
+  },
+  {
+   "id": "synth",
+   "zh": "chillsynth／chillwave 霧聲",
+   "count": 6,
+   "why": ""
+  },
+  {
+   "id": "psy",
+   "zh": "psybient／psydub 慢律動",
+   "count": 8,
+   "why": ""
+  },
+  {
+   "id": "dub",
+   "zh": "暖 dub／dub downtempo",
+   "count": 4,
+   "why": ""
+  },
+  {
+   "id": "vocal",
+   "zh": "人聲 downtempo／dream pop",
+   "count": 2,
+   "why": ""
+  },
+  {
+   "id": "dt",
+   "zh": "downtempo／trip-hop 慢拍",
+   "count": 9,
+   "why": ""
+  }
+ ],
+ "albums": [
+  {
+   "artist": "Blockhead",
+   "album": "Downtown Science",
+   "year": 2005,
+   "label": "",
+   "country": "",
+   "faction": "beats",
+   "genres": [
+    "hiphop",
+    "electronic"
+   ],
+   "why": "Bandcamp 有鼓名單第三輪（標籤篩掉；前次：標籤：Hip-Hop/Rap、Instrumental Hip-Hop），Last.fm 收聽 195696 人；54 分 12 首；Bandcamp 標籤 Hip-Hop/Rap、Instrumental Hip-Hop、beats、downtempo、electronic、samples、New York",
+   "moodGuess": {
+    "x": 2.8,
+    "y": 1,
+    "z": 0.4,
+    "why": "取樣boom-bap、低頻厚、dusty"
+   },
+   "evidence": [
+    "https://blockheadnyc.bandcamp.com/album/downtown-science",
+    "https://musicbrainz.org/release-group/d4cffcc1-81f6-3ca5-a48c-708ecb3d31f3"
+   ],
+   "mbRgMbid": "d4cffcc1-81f6-3ca5-a48c-708ecb3d31f3",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（只看 Bandcamp 標籤）；有鼓名單：研究層要寫清楚鼓是哪一種（慢拖無力／舞池推進／攻擊性）；前次理由：標籤：Hip-Hop/Rap、Instrumental Hip-Hop",
+   "location": "New York, New York",
+   "bandcampUrl": "https://blockheadnyc.bandcamp.com/album/downtown-science",
+   "minutes": 54,
+   "tracks": 12,
+   "listeners": 195696,
+   "source": "標籤篩掉",
+   "priorDrop": "標籤：Hip-Hop/Rap、Instrumental Hip-Hop"
+  },
+  {
+   "artist": "Romare",
+   "album": "Love Songs: Part Two",
+   "year": 2016,
+   "label": "",
+   "country": "",
+   "faction": "dt",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp 有鼓名單第三輪（標籤篩掉；前次：標籤：House、techno），Last.fm 收聽 116260 人；59 分 10 首；Bandcamp 標籤 Alternative、Electronic、House、downtempo、elecronica、folk、techno、United Kingdom",
+   "moodGuess": {
+    "x": 2.8,
+    "y": 0.7,
+    "z": 0.6,
+    "why": "取樣house節拍、暖"
+   },
+   "evidence": [
+    "https://romaremusic.bandcamp.com/album/love-songs-part-two",
+    "https://musicbrainz.org/release-group/9cc83b35-cf3c-4365-b8be-c2e602335c45"
+   ],
+   "mbRgMbid": "9cc83b35-cf3c-4365-b8be-c2e602335c45",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（只看 Bandcamp 標籤）；有鼓名單：研究層要寫清楚鼓是哪一種（慢拖無力／舞池推進／攻擊性）；前次理由：標籤：House、techno",
+   "location": "England, UK",
+   "bandcampUrl": "https://romaremusic.bandcamp.com/album/love-songs-part-two",
+   "minutes": 59,
+   "tracks": 10,
+   "listeners": 116260,
+   "source": "標籤篩掉",
+   "priorDrop": "標籤：House、techno"
+  },
+  {
+   "artist": "Chillhop Music",
+   "album": "Chillhop Essentials Summer 2019",
+   "year": 2019,
+   "label": "",
+   "country": "",
+   "faction": "beats",
+   "genres": [
+    "hiphop",
+    "electronic"
+   ],
+   "why": "Bandcamp 有鼓名單第三輪（標籤篩掉；前次：標籤：Hip Hop、Hip-Hop/Rap），Last.fm 收聽 81138 人；65 分 24 首；Bandcamp 標籤 Hip Hop、Hip-Hop/Rap、Jazz Fusion、chill、chillhop、trip hop、Rotterdam",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 0.5,
+    "z": 0.9,
+    "why": "chillhop取樣鬆拍、暖"
+   },
+   "evidence": [
+    "https://chillhop.bandcamp.com/album/chillhop-essentials-summer-2019",
+    "https://musicbrainz.org/release-group/1349bdc9-bd87-4de6-bfe6-7ada4aa7ab34"
+   ],
+   "mbRgMbid": "1349bdc9-bd87-4de6-bfe6-7ada4aa7ab34",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（只看 Bandcamp 標籤）；有鼓名單：研究層要寫清楚鼓是哪一種（慢拖無力／舞池推進／攻擊性）；前次理由：標籤：Hip Hop、Hip-Hop/Rap",
+   "location": "Rotterdam, Netherlands",
+   "bandcampUrl": "https://chillhop.bandcamp.com/album/chillhop-essentials-summer-2019",
+   "minutes": 65,
+   "tracks": 24,
+   "listeners": 81138,
+   "source": "標籤篩掉",
+   "priorDrop": "標籤：Hip Hop、Hip-Hop/Rap"
+  },
+  {
+   "artist": "Entheogenic",
+   "album": "Spontaneous Illumination",
+   "year": 2003,
+   "label": "",
+   "country": "",
+   "faction": "psy",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp 有鼓名單第三輪（標籤篩掉；前次：標籤：trance），Last.fm 收聽 69376 人；72 分 7 首；Bandcamp 標籤 Electronic、chill out、downtempo、experiemental、psybient、psychedelic、psychill、trance、United Kingdom",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 0.9,
+    "z": 0,
+    "why": "迷幻環境電子、慢拍、霧濛"
+   },
+   "evidence": [
+    "https://entheogenic-usr.bandcamp.com/album/spontaneous-illumination",
+    "https://musicbrainz.org/release-group/e6776a62-4ab9-3075-8c08-63562205b3a1"
+   ],
+   "mbRgMbid": "e6776a62-4ab9-3075-8c08-63562205b3a1",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（只看 Bandcamp 標籤）；有鼓名單：研究層要寫清楚鼓是哪一種（慢拖無力／舞池推進／攻擊性）；前次理由：標籤：trance",
+   "location": "UK",
+   "bandcampUrl": "https://entheogenic-usr.bandcamp.com/album/spontaneous-illumination",
+   "minutes": 72,
+   "tracks": 7,
+   "listeners": 69376,
+   "source": "標籤篩掉",
+   "priorDrop": "標籤：trance"
+  },
+  {
+   "artist": "Robert Glasper",
+   "album": "Black Radio III",
+   "year": 2022,
+   "label": "",
+   "country": "",
+   "faction": "beats",
+   "genres": [
+    "hiphop",
+    "electronic"
+   ],
+   "why": "Bandcamp 有鼓名單第三輪（標籤篩掉；前次：標籤：hip hop、neo-soul、r&b），Last.fm 收聽 60717 人；67 分 13 首；Bandcamp 標籤 Jazz、hip hop、neo-soul、nu-jazz、r&b、Houston",
+   "moodGuess": {
+    "x": 2.7,
+    "y": 0.5,
+    "z": 0.9,
+    "why": "neo-soul爵士饒舌、厚低頻、暖"
+   },
+   "evidence": [
+    "https://robertglasper.bandcamp.com/album/black-radio-iii",
+    "https://musicbrainz.org/release-group/63051304-797a-4620-a047-9d7144bf44fa"
+   ],
+   "mbRgMbid": "63051304-797a-4620-a047-9d7144bf44fa",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（只看 Bandcamp 標籤）；有鼓名單：研究層要寫清楚鼓是哪一種（慢拖無力／舞池推進／攻擊性）；前次理由：標籤：hip hop、neo-soul、r&b",
+   "location": "Houston, Texas",
+   "bandcampUrl": "https://robertglasper.bandcamp.com/album/black-radio-iii",
+   "minutes": 67,
+   "tracks": 13,
+   "listeners": 60717,
+   "source": "標籤篩掉",
+   "priorDrop": "標籤：hip hop、neo-soul、r&b"
+  },
+  {
+   "artist": "crushed",
+   "album": "extra life",
+   "year": 2023,
+   "label": "",
+   "country": "",
+   "faction": "vocal",
+   "genres": [
+    "rock",
+    "electronic"
+   ],
+   "why": "Bandcamp 有鼓名單第三輪（標籤篩掉；前次：標籤：dream pop、pop），Last.fm 收聽 49110 人；33 分 8 首；Bandcamp 標籤 Alternative、dream pop、pop、shoegaze、trip hop、Los Angeles",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 0.9,
+    "z": 0.2,
+    "why": "夢流行霧、柔牆、慢"
+   },
+   "evidence": [
+    "https://crushedworldwide.bandcamp.com/album/extra-life",
+    "https://musicbrainz.org/release-group/53c51b0d-bc54-4f4e-9b47-b49fbf68340b"
+   ],
+   "mbRgMbid": "53c51b0d-bc54-4f4e-9b47-b49fbf68340b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（只看 Bandcamp 標籤）；有鼓名單：研究層要寫清楚鼓是哪一種（慢拖無力／舞池推進／攻擊性）；前次理由：標籤：dream pop、pop",
+   "location": "Los Angeles, California",
+   "bandcampUrl": "https://crushedworldwide.bandcamp.com/album/extra-life",
+   "minutes": 33,
+   "tracks": 8,
+   "listeners": 49110,
+   "source": "標籤篩掉",
+   "priorDrop": "標籤：dream pop、pop"
+  },
+  {
+   "artist": "Nym",
+   "album": "Warm Blooded Lizard",
+   "year": 2011,
+   "label": "",
+   "country": "",
+   "faction": "dt",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp 有鼓名單第三輪（研究判有鼓；前次：ml71：有拍推進 9：器樂嘻哈 beats 短曲，卡單 x 2.8 已越邊距（研究 a））），Last.fm 收聽 41085 人；49 分 15 首；Bandcamp 標籤 downtempo、trip-hop",
+   "moodGuess": {
+    "x": 2.8,
+    "y": 0.5,
+    "z": 0.2,
+    "why": "爵士trip-hop、鼓鬆"
+   },
+   "evidence": [
+    "https://music.ratsofnym.com/album/warm-blooded-lizard",
+    "https://musicbrainz.org/release-group/27998ead-de1e-47cd-999a-797fb3797bed"
+   ],
+   "mbRgMbid": "27998ead-de1e-47cd-999a-797fb3797bed",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（只看 Bandcamp 標籤）；有鼓名單：研究層要寫清楚鼓是哪一種（慢拖無力／舞池推進／攻擊性）；前次理由：ml71：有拍推進 9：器樂嘻哈 beats 短曲，卡單 x 2.8 已越邊距（研究 a））",
+   "location": "Durham, North Carolina",
+   "bandcampUrl": "https://music.ratsofnym.com/album/warm-blooded-lizard",
+   "minutes": 49,
+   "tracks": 15,
+   "listeners": 41085,
+   "source": "研究判有鼓",
+   "priorDrop": "ml71：有拍推進 9：器樂嘻哈 beats 短曲，卡單 x 2.8 已越邊距（研究 a））"
+  },
+  {
+   "artist": "Arms and Sleepers",
+   "album": "LIFE IS EVERYWHERE",
+   "year": 2017,
+   "label": "",
+   "country": "",
+   "faction": "beats",
+   "genres": [
+    "hiphop",
+    "electronic"
+   ],
+   "why": "Bandcamp 有鼓名單第三輪（標籤篩掉；前次：標籤：Electronic Hip Hop），Last.fm 收聽 32163 人；61 分 18 首；Bandcamp 標籤 Electronic、Electronic Hip Hop、ambient、chill、downtempo、electronica、relax、sample-based、study、trip hop",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 0.8,
+    "z": 0,
+    "why": "後搖式電子、層疊吉他、鼓緩"
+   },
+   "evidence": [
+    "https://wearearmsandsleepers.bandcamp.com/album/life-is-everywhere",
+    "https://musicbrainz.org/release-group/7e67d4ca-aaa1-4954-b651-24c53cec695f"
+   ],
+   "mbRgMbid": "7e67d4ca-aaa1-4954-b651-24c53cec695f",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（只看 Bandcamp 標籤）；有鼓名單：研究層要寫清楚鼓是哪一種（慢拖無力／舞池推進／攻擊性）；前次理由：標籤：Electronic Hip Hop",
+   "location": "",
+   "bandcampUrl": "https://wearearmsandsleepers.bandcamp.com/album/life-is-everywhere",
+   "minutes": 61,
+   "tracks": 18,
+   "listeners": 32163,
+   "source": "標籤篩掉",
+   "priorDrop": "標籤：Electronic Hip Hop"
+  },
+  {
+   "artist": "Parra for Cuva",
+   "album": "Mimose",
+   "year": 2024,
+   "label": "",
+   "country": "",
+   "faction": "dt",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp 有鼓名單第三輪（研究判有鼓；前次：ml72：有拍推進 7：groovy basslines、trance-inducing shakers、house 本行、人聲歌曲（研究 a））），Last.fm 收聽 26328 人；51 分 12 首；Bandcamp 標籤 Electronic、chill、downtempo、Berlin",
+   "moodGuess": {
+    "x": 2,
+    "y": 0.5,
+    "z": 0.3,
+    "why": "柔和downtempo"
+   },
+   "evidence": [
+    "https://parraforcuva.bandcamp.com/album/mimose",
+    "https://musicbrainz.org/release-group/67f27e08-3449-4974-9db6-60554638af49"
+   ],
+   "mbRgMbid": "67f27e08-3449-4974-9db6-60554638af49",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（只看 Bandcamp 標籤）；有鼓名單：研究層要寫清楚鼓是哪一種（慢拖無力／舞池推進／攻擊性）；前次理由：ml72：有拍推進 7：groovy basslines、trance-inducing shakers、house 本行、人聲歌曲（研究 a））",
+   "location": "Berlin, Germany",
+   "bandcampUrl": "https://parraforcuva.bandcamp.com/album/mimose",
+   "minutes": 51,
+   "tracks": 12,
+   "listeners": 26328,
+   "source": "研究判有鼓",
+   "priorDrop": "ml72：有拍推進 7：groovy basslines、trance-inducing shakers、house 本行、人聲歌曲（研究 a））"
+  },
+  {
+   "artist": "AES DANA",
+   "album": "Pollen",
+   "year": 2012,
+   "label": "",
+   "country": "",
+   "faction": "psy",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp 有鼓名單第三輪（標籤篩掉；前次：標籤：techno），Last.fm 收聽 22324 人；78 分 10 首；Bandcamp 標籤 Electronic、aes dana、aesdana、ambient、cinematic、downtempo、idm、psybient、techno、ultimae",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 0.6,
+    "z": 0,
+    "why": "環境電影感、柔"
+   },
+   "evidence": [
+    "https://ultimae.bandcamp.com/album/pollen",
+    "https://musicbrainz.org/release-group/86231966-a338-45a9-9ef6-4be8793dbf57"
+   ],
+   "mbRgMbid": "86231966-a338-45a9-9ef6-4be8793dbf57",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（只看 Bandcamp 標籤）；有鼓名單：研究層要寫清楚鼓是哪一種（慢拖無力／舞池推進／攻擊性）；前次理由：標籤：techno",
+   "location": "Lyon, France",
+   "bandcampUrl": "https://ultimae.bandcamp.com/album/pollen",
+   "minutes": 78,
+   "tracks": 10,
+   "listeners": 22324,
+   "source": "標籤篩掉",
+   "priorDrop": "標籤：techno"
+  },
+  {
+   "artist": "Lord Of The Isles",
+   "album": "Subtle Thoughts",
+   "year": 2022,
+   "label": "",
+   "country": "",
+   "faction": "dt",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp 有鼓名單第三輪（標籤篩掉；前次：標籤：deep house、techno），Last.fm 收聽 19259 人；46 分 12 首；Bandcamp 標籤 Electronic、Experimental、Scotland、ambient、balearic、deep house、downtempo、electronica、experimental、leftfield",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 0.6,
+    "z": 0.5,
+    "why": "balearic deep house，暖霧"
+   },
+   "evidence": [
+    "https://lordoftheisles.bandcamp.com/album/subtle-thoughts",
+    "https://musicbrainz.org/release-group/fd571d4e-9614-4f85-8ead-5b5a653ed588"
+   ],
+   "mbRgMbid": "fd571d4e-9614-4f85-8ead-5b5a653ed588",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（只看 Bandcamp 標籤）；有鼓名單：研究層要寫清楚鼓是哪一種（慢拖無力／舞池推進／攻擊性）；前次理由：標籤：deep house、techno",
+   "location": "Scotland, UK",
+   "bandcampUrl": "https://lordoftheisles.bandcamp.com/album/subtle-thoughts",
+   "minutes": 46,
+   "tracks": 12,
+   "listeners": 19259,
+   "source": "標籤篩掉",
+   "priorDrop": "標籤：deep house、techno"
+  },
+  {
+   "artist": "YOUTH 83",
+   "album": "Progress Way",
+   "year": 2023,
+   "label": "",
+   "country": "",
+   "faction": "synth",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp 有鼓名單第三輪（標籤篩掉；前次：標籤：synthwave），Last.fm 收聽 17001 人；47 分 12 首；Bandcamp 標籤 Electronic、chillsynth、chillwave、new vapor、nostalgia、synthwave、trip hop、vaporwave、United Kingdom",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 0.7,
+    "z": 0.5,
+    "why": "chillsynth，合成器墊，夢幻"
+   },
+   "evidence": [
+    "https://youth83.bandcamp.com/album/progress-way",
+    "https://musicbrainz.org/release-group/a4c43935-c5b3-4ccb-bb1d-1be8a8deccc6"
+   ],
+   "mbRgMbid": "a4c43935-c5b3-4ccb-bb1d-1be8a8deccc6",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（只看 Bandcamp 標籤）；有鼓名單：研究層要寫清楚鼓是哪一種（慢拖無力／舞池推進／攻擊性）；前次理由：標籤：synthwave",
+   "location": "UK",
+   "bandcampUrl": "https://youth83.bandcamp.com/album/progress-way",
+   "minutes": 47,
+   "tracks": 12,
+   "listeners": 17001,
+   "source": "標籤篩掉",
+   "priorDrop": "標籤：synthwave"
+  },
+  {
+   "artist": "Saafi Brothers",
+   "album": "Liquid Beach",
+   "year": 2003,
+   "label": "",
+   "country": "",
+   "faction": "psy",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp 有鼓名單第三輪（標籤篩掉；前次：標籤：morning trance、psychedelic dub），Last.fm 收聽 14949 人；73 分 10 首；Bandcamp 標籤 Electronic、Psydub、ambient electronic、chillout、deep album、morning trance、psybient、psychedelic ambient、psychedelic chill、psychedelic dub",
+   "moodGuess": {
+    "x": 1.8,
+    "y": 0.6,
+    "z": 0.5,
+    "why": "psydub慢拍，海灘迷幻，溫"
+   },
+   "evidence": [
+    "https://saafibrothers.bandcamp.com/album/liquid-beach",
+    "https://musicbrainz.org/release-group/48f0228d-2ae3-3221-82dc-7077db8bb968"
+   ],
+   "mbRgMbid": "48f0228d-2ae3-3221-82dc-7077db8bb968",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（只看 Bandcamp 標籤）；有鼓名單：研究層要寫清楚鼓是哪一種（慢拖無力／舞池推進／攻擊性）；前次理由：標籤：morning trance、psychedelic dub",
+   "location": "Frankfurt, Germany",
+   "bandcampUrl": "https://saafibrothers.bandcamp.com/album/liquid-beach",
+   "minutes": 73,
+   "tracks": 10,
+   "listeners": 14949,
+   "source": "標籤篩掉",
+   "priorDrop": "標籤：morning trance、psychedelic dub"
+  },
+  {
+   "artist": "Dj Mayonnaise",
+   "album": "Still Alive",
+   "year": 2007,
+   "label": "",
+   "country": "",
+   "faction": "beats",
+   "genres": [
+    "hiphop",
+    "electronic"
+   ],
+   "why": "Bandcamp 有鼓名單第三輪（標籤篩掉；前次：標籤：Hip-Hop/Rap、Instrumental Hip-Hop、Underground hip-hop、hip-hop instrumentals），Last.fm 收聽 12835 人；42 分 11 首；Bandcamp 標籤 Hip-Hop/Rap、Instrumental Hip-Hop、Turntablism、Underground hip-hop、anticon、downtempo、hip-hop instrumentals、Portland",
+   "moodGuess": {
+    "x": 2.7,
+    "y": 1.1,
+    "z": 0,
+    "why": "anticon轉盤，髒取樣，暗"
+   },
+   "evidence": [
+    "https://djmayonnaise.bandcamp.com/album/still-alive",
+    "https://musicbrainz.org/release-group/0c8345c5-4f25-4218-a6db-90267c693088"
+   ],
+   "mbRgMbid": "0c8345c5-4f25-4218-a6db-90267c693088",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（只看 Bandcamp 標籤）；有鼓名單：研究層要寫清楚鼓是哪一種（慢拖無力／舞池推進／攻擊性）；前次理由：標籤：Hip-Hop/Rap、Instrumental Hip-Hop、Underground hip-hop、hip-hop instrumentals",
+   "location": "Portland, Maine",
+   "bandcampUrl": "https://djmayonnaise.bandcamp.com/album/still-alive",
+   "minutes": 42,
+   "tracks": 11,
+   "listeners": 12835,
+   "source": "標籤篩掉",
+   "priorDrop": "標籤：Hip-Hop/Rap、Instrumental Hip-Hop、Underground hip-hop、hip-hop instrumentals"
+  },
+  {
+   "artist": "Fieh",
+   "album": "In the Sun in the Rain",
+   "year": 2022,
+   "label": "",
+   "country": "",
+   "faction": "soul",
+   "genres": [
+    "soul",
+    "electronic"
+   ],
+   "why": "Bandcamp 有鼓名單第三輪（標籤篩掉；前次：標籤：R&B/Soul、contemporary r&b、funk、neo-soul、r&b），Last.fm 收聽 11545 人；48 分 12 首；Bandcamp 標籤 R&B/Soul、contemporary r&b、funk、neo-soul、nu-jazz、r&b、Oslo",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 0.6,
+    "z": 0.7,
+    "why": "neo-soul，柔鼓人聲暖"
+   },
+   "evidence": [
+    "https://fieh.bandcamp.com/album/in-the-sun-in-the-rain",
+    "https://musicbrainz.org/release-group/1b2738fb-8df3-4dde-b9c8-a98d2fa004a1"
+   ],
+   "mbRgMbid": "1b2738fb-8df3-4dde-b9c8-a98d2fa004a1",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（只看 Bandcamp 標籤）；有鼓名單：研究層要寫清楚鼓是哪一種（慢拖無力／舞池推進／攻擊性）；前次理由：標籤：R&B/Soul、contemporary r&b、funk、neo-soul、r&b",
+   "location": "Oslo, Norway",
+   "bandcampUrl": "https://fieh.bandcamp.com/album/in-the-sun-in-the-rain",
+   "minutes": 48,
+   "tracks": 12,
+   "listeners": 11545,
+   "source": "標籤篩掉",
+   "priorDrop": "標籤：R&B/Soul、contemporary r&b、funk、neo-soul、r&b"
+  },
+  {
+   "artist": "Kuba",
+   "album": "Animalia",
+   "year": 2018,
+   "label": "",
+   "country": "",
+   "faction": "psy",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp 有鼓名單第三輪（標籤篩掉；前次：標籤：dub、reggae、trance），Last.fm 收聽 10195 人；65 分 12 首；Bandcamp 標籤 Electronic、ambient、chillout、downtempo、dub、electronica、global fusion、psybient、psychedelic、psychill",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 0.7,
+    "z": 0.3,
+    "why": "dub氛圍民族，厚"
+   },
+   "evidence": [
+    "https://kuba1.bandcamp.com/album/animalia",
+    "https://musicbrainz.org/release-group/dd5efe9b-d99f-4845-a007-0842bf0ff80e"
+   ],
+   "mbRgMbid": "dd5efe9b-d99f-4845-a007-0842bf0ff80e",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（只看 Bandcamp 標籤）；有鼓名單：研究層要寫清楚鼓是哪一種（慢拖無力／舞池推進／攻擊性）；前次理由：標籤：dub、reggae、trance",
+   "location": "Cambridge, UK",
+   "bandcampUrl": "https://kuba1.bandcamp.com/album/animalia",
+   "minutes": 65,
+   "tracks": 12,
+   "listeners": 10195,
+   "source": "標籤篩掉",
+   "priorDrop": "標籤：dub、reggae、trance"
+  },
+  {
+   "artist": "A.L.I.S.O.N",
+   "album": "Tapes #3-1",
+   "year": 2019,
+   "label": "",
+   "country": "",
+   "faction": "synth",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp 有鼓名單第三輪（標籤篩掉；前次：標籤：synthwave），Last.fm 收聽 8853 人；115 分 32 首；Bandcamp 標籤 Electronic、ambient、chillsynth、downtempo、electronica、lo-fi、retrowave、synth、synthwave、Bordeaux",
+   "moodGuess": {
+    "x": 1.9,
+    "y": 0.9,
+    "z": 0.1,
+    "why": "retrowave磁帶糊，慢"
+   },
+   "evidence": [
+    "https://alisonsynths.bandcamp.com/album/tapes-3-1",
+    "https://musicbrainz.org/release-group/d10ac37e-3f30-407a-ba21-d86b0790af9a"
+   ],
+   "mbRgMbid": "d10ac37e-3f30-407a-ba21-d86b0790af9a",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（只看 Bandcamp 標籤）；有鼓名單：研究層要寫清楚鼓是哪一種（慢拖無力／舞池推進／攻擊性）；前次理由：標籤：synthwave",
+   "location": "Bordeaux, France",
+   "bandcampUrl": "https://alisonsynths.bandcamp.com/album/tapes-3-1",
+   "minutes": 115,
+   "tracks": 32,
+   "listeners": 8853,
+   "source": "標籤篩掉",
+   "priorDrop": "標籤：synthwave"
+  },
+  {
+   "artist": "Kalya Scintilla",
+   "album": "Open Ancient Eyes",
+   "year": 2014,
+   "label": "",
+   "country": "",
+   "faction": "beats",
+   "genres": [
+    "hiphop",
+    "electronic"
+   ],
+   "why": "Bandcamp 有鼓名單第三輪（研究判有鼓；前次：ml72：有拍推進 7：world／tribal bass 拍子持續推進（研究 b））），Last.fm 收聽 7856 人；180 分 16 首；Bandcamp 標籤 Bass、Electronic、Electronica、Glitch、Organic、beats、chillout、glitch hop、global bass、tribal bass",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 0.5,
+    "z": 0.4,
+    "why": "有機 glitch 世界拍，暖"
+   },
+   "evidence": [
+    "https://kalyascintilla.bandcamp.com/album/open-ancient-eyes",
+    "https://musicbrainz.org/release-group/cb77b1f0-59cc-486d-85d8-1895daf46496"
+   ],
+   "mbRgMbid": "cb77b1f0-59cc-486d-85d8-1895daf46496",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（只看 Bandcamp 標籤）；有鼓名單：研究層要寫清楚鼓是哪一種（慢拖無力／舞池推進／攻擊性）；前次理由：ml72：有拍推進 7：world／tribal bass 拍子持續推進（研究 b））",
+   "location": "Australia",
+   "bandcampUrl": "https://kalyascintilla.bandcamp.com/album/open-ancient-eyes",
+   "minutes": 180,
+   "tracks": 16,
+   "listeners": 7856,
+   "source": "研究判有鼓",
+   "priorDrop": "ml72：有拍推進 7：world／tribal bass 拍子持續推進（研究 b））"
+  },
+  {
+   "artist": "ATTLAS",
+   "album": "Lavender God",
+   "year": 2020,
+   "label": "",
+   "country": "",
+   "faction": "dt",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp 有鼓名單第三輪（標籤篩掉；前次：標籤：edm），Last.fm 收聽 7375 人；48 分 10 首；Bandcamp 標籤 Electronic、chill、downtempo、edm、electronica、progressive、Toronto",
+   "moodGuess": {
+    "x": 2.9,
+    "y": 0.5,
+    "z": 0.3,
+    "why": "進步電子，輕拍"
+   },
+   "evidence": [
+    "https://officialattlas.bandcamp.com/album/lavender-god",
+    "https://musicbrainz.org/release-group/59b48f43-1d7a-4353-aef9-404972e65345"
+   ],
+   "mbRgMbid": "59b48f43-1d7a-4353-aef9-404972e65345",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（只看 Bandcamp 標籤）；有鼓名單：研究層要寫清楚鼓是哪一種（慢拖無力／舞池推進／攻擊性）；前次理由：標籤：edm",
+   "location": "Toronto, Ontario",
+   "bandcampUrl": "https://officialattlas.bandcamp.com/album/lavender-god",
+   "minutes": 48,
+   "tracks": 10,
+   "listeners": 7375,
+   "source": "標籤篩掉",
+   "priorDrop": "標籤：edm"
+  },
+  {
+   "artist": "Gas Lab",
+   "album": "Vision",
+   "year": 2023,
+   "label": "",
+   "country": "",
+   "faction": "beats",
+   "genres": [
+    "hiphop",
+    "electronic"
+   ],
+   "why": "Bandcamp 有鼓名單第三輪（標籤篩掉；前次：標籤：Hip Hop、Hip-Hop/Rap、jazzy hip hop、soul hip hop），Last.fm 收聽 6887 人；30 分 13 首；Bandcamp 標籤 Hip Hop、Hip-Hop/Rap、Instrumentals、beats、jazz、jazzy beats、jazzy hip hop、lofi、lounge、soul hip hop",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 0.5,
+    "z": 0.7,
+    "why": "jazzy lofi beat，暖"
+   },
+   "evidence": [
+    "https://gas-lab.bandcamp.com/album/vision",
+    "https://musicbrainz.org/release-group/6073ffd8-ce93-4862-95ea-82691c0cb966"
+   ],
+   "mbRgMbid": "6073ffd8-ce93-4862-95ea-82691c0cb966",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（只看 Bandcamp 標籤）；有鼓名單：研究層要寫清楚鼓是哪一種（慢拖無力／舞池推進／攻擊性）；前次理由：標籤：Hip Hop、Hip-Hop/Rap、jazzy hip hop、soul hip hop",
+   "location": "Belén De Escobar, Argentina",
+   "bandcampUrl": "https://gas-lab.bandcamp.com/album/vision",
+   "minutes": 30,
+   "tracks": 13,
+   "listeners": 6887,
+   "source": "標籤篩掉",
+   "priorDrop": "標籤：Hip Hop、Hip-Hop/Rap、jazzy hip hop、soul hip hop"
+  },
+  {
+   "artist": "Polyenso",
+   "album": "Year of the Dog",
+   "year": 2019,
+   "label": "",
+   "country": "",
+   "faction": "vocal",
+   "genres": [
+    "rock",
+    "electronic"
+   ],
+   "why": "Bandcamp 有鼓名單第三輪（標籤篩掉；前次：標籤：indie pop），Last.fm 收聽 6292 人；38 分 8 首；Bandcamp 標籤 Alternative、downtempo、experimental electronic、indie pop、indie rock、progressive、St. Petersburg",
+   "moodGuess": {
+    "x": 2.9,
+    "y": 0.5,
+    "z": 0,
+    "why": "電子indie、合成器層、中速"
+   },
+   "evidence": [
+    "https://polyenso.bandcamp.com/album/year-of-the-dog-2",
+    "https://musicbrainz.org/release-group/da6def99-1de1-474e-a89c-f5da98434c8b"
+   ],
+   "mbRgMbid": "da6def99-1de1-474e-a89c-f5da98434c8b",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（只看 Bandcamp 標籤）；有鼓名單：研究層要寫清楚鼓是哪一種（慢拖無力／舞池推進／攻擊性）；前次理由：標籤：indie pop",
+   "location": "St. Petersburg, Florida",
+   "bandcampUrl": "https://polyenso.bandcamp.com/album/year-of-the-dog-2",
+   "minutes": 38,
+   "tracks": 8,
+   "listeners": 6292,
+   "source": "標籤篩掉",
+   "priorDrop": "標籤：indie pop"
+  },
+  {
+   "artist": "Entheogenic",
+   "album": "Enthymesis",
+   "year": 2014,
+   "label": "",
+   "country": "",
+   "faction": "psy",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp 有鼓名單第三輪（標籤篩掉；前次：標籤：trance），Last.fm 收聽 6043 人；78 分 8 首；Bandcamp 標籤 Electronic、chill out、downtempo、experiemental、psybient、psychedelic、psychill、trance、United Kingdom",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 0.9,
+    "z": 0.1,
+    "why": "psybient、層疊合成器、慢拍"
+   },
+   "evidence": [
+    "https://entheogenic-usr.bandcamp.com/album/enthymesis",
+    "https://musicbrainz.org/release-group/63fcc5c0-e947-4ad6-9bde-da906518b1e5"
+   ],
+   "mbRgMbid": "63fcc5c0-e947-4ad6-9bde-da906518b1e5",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（只看 Bandcamp 標籤）；有鼓名單：研究層要寫清楚鼓是哪一種（慢拖無力／舞池推進／攻擊性）；前次理由：標籤：trance",
+   "location": "UK",
+   "bandcampUrl": "https://entheogenic-usr.bandcamp.com/album/enthymesis",
+   "minutes": 78,
+   "tracks": 8,
+   "listeners": 6043,
+   "source": "標籤篩掉",
+   "priorDrop": "標籤：trance"
+  },
+  {
+   "artist": "Blockhead",
+   "album": "Luminous Rubble",
+   "year": 2024,
+   "label": "",
+   "country": "",
+   "faction": "beats",
+   "genres": [
+    "hiphop",
+    "electronic"
+   ],
+   "why": "Bandcamp 有鼓名單第三輪（標籤篩掉；前次：標籤：Hip Hop、Hip-Hop/Rap、Instrumental Hip-Hop、intrumental hip-hop），Last.fm 收聽 5636 人；31 分 10 首；Bandcamp 標籤 Hip Hop、Hip-Hop/Rap、Instrumental Hip-Hop、KPM、Kpm Records、beats、chill、downtempo、electronic、intrumental hip-hop",
+   "moodGuess": {
+    "x": 2.9,
+    "y": 0.6,
+    "z": 0.7,
+    "why": "取樣beats、懷舊音色、鼓厚"
+   },
+   "evidence": [
+    "https://blockheadnyc.bandcamp.com/album/luminous-rubble-2",
+    "https://musicbrainz.org/release-group/565259ba-9538-4f53-809b-707e768689df"
+   ],
+   "mbRgMbid": "565259ba-9538-4f53-809b-707e768689df",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（只看 Bandcamp 標籤）；有鼓名單：研究層要寫清楚鼓是哪一種（慢拖無力／舞池推進／攻擊性）；前次理由：標籤：Hip Hop、Hip-Hop/Rap、Instrumental Hip-Hop、intrumental hip-hop",
+   "location": "New York, New York",
+   "bandcampUrl": "https://blockheadnyc.bandcamp.com/album/luminous-rubble-2",
+   "minutes": 31,
+   "tracks": 10,
+   "listeners": 5636,
+   "source": "標籤篩掉",
+   "priorDrop": "標籤：Hip Hop、Hip-Hop/Rap、Instrumental Hip-Hop、intrumental hip-hop"
+  },
+  {
+   "artist": "Purrple Cat",
+   "album": "Night Train",
+   "year": 2023,
+   "label": "",
+   "country": "",
+   "faction": "beats",
+   "genres": [
+    "hiphop",
+    "electronic"
+   ],
+   "why": "Bandcamp 有鼓名單第三輪（標籤篩掉；前次：標籤：Hip-Hop/Rap、Lo-Fi Hip-Hop、LoFi Hip Hop、hip hop），Last.fm 收聽 5254 人；32 分 11 首；Bandcamp 標籤 Hip-Hop/Rap、Lo-Fi Hip-Hop、LoFi Hip Hop、ambient、beats、chillout、hip hop、jazzhop、lo-fi、lofi",
+   "moodGuess": {
+    "x": 1.9,
+    "y": 0.6,
+    "z": 0.6,
+    "why": "lofi鼓、磁帶糊、溫"
+   },
+   "evidence": [
+    "https://purrplecat.bandcamp.com/album/night-train",
+    "https://musicbrainz.org/release-group/14a89452-771f-4ca0-aa27-ca169555e14d"
+   ],
+   "mbRgMbid": "14a89452-771f-4ca0-aa27-ca169555e14d",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（只看 Bandcamp 標籤）；有鼓名單：研究層要寫清楚鼓是哪一種（慢拖無力／舞池推進／攻擊性）；前次理由：標籤：Hip-Hop/Rap、Lo-Fi Hip-Hop、LoFi Hip Hop、hip hop",
+   "location": "",
+   "bandcampUrl": "https://purrplecat.bandcamp.com/album/night-train",
+   "minutes": 32,
+   "tracks": 11,
+   "listeners": 5254,
+   "source": "標籤篩掉",
+   "priorDrop": "標籤：Hip-Hop/Rap、Lo-Fi Hip-Hop、LoFi Hip Hop、hip hop"
+  },
+  {
+   "artist": "Akal Dub",
+   "album": "Life and the Void",
+   "year": 2014,
+   "label": "",
+   "country": "",
+   "faction": "dub",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp 有鼓名單第三輪（標籤篩掉；前次：標籤：dub），Last.fm 收聽 4631 人；53 分 8 首；Bandcamp 標籤 Electronic、IDM、World、downtempo、dub、electronic、world、yoga、Oregon",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 1.2,
+    "z": 0,
+    "why": "dub IDM、低頻、回聲"
+   },
+   "evidence": [
+    "https://akaldub.bandcamp.com/album/life-and-the-void",
+    "https://musicbrainz.org/release-group/c20af499-8da3-427f-b12d-e7f706f74bb3"
+   ],
+   "mbRgMbid": "c20af499-8da3-427f-b12d-e7f706f74bb3",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（只看 Bandcamp 標籤）；有鼓名單：研究層要寫清楚鼓是哪一種（慢拖無力／舞池推進／攻擊性）；前次理由：標籤：dub",
+   "location": "Oregon",
+   "bandcampUrl": "https://akaldub.bandcamp.com/album/life-and-the-void",
+   "minutes": 53,
+   "tracks": 8,
+   "listeners": 4631,
+   "source": "標籤篩掉",
+   "priorDrop": "標籤：dub"
+  },
+  {
+   "artist": "International Observer",
+   "album": "Heard",
+   "year": 2007,
+   "label": "",
+   "country": "",
+   "faction": "dub",
+   "genres": [
+    "world",
+    "electronic"
+   ],
+   "why": "Bandcamp 有鼓名單第三輪（標籤篩掉；前次：標籤：Dub Reggae Electronic Roots、digital dub、dub、reggae），Last.fm 收聽 4314 人；72 分 13 首；Bandcamp 標籤 Dub Reggae Electronic Roots、Electronic、digital dub、downtempo、dub、reggae、London",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 1.4,
+    "z": 0,
+    "why": "數位dub、低頻厚、殘響長"
+   },
+   "evidence": [
+    "https://internationalobserver.bandcamp.com/album/heard",
+    "https://musicbrainz.org/release-group/fedf1620-0151-419a-9f18-cfd410681439"
+   ],
+   "mbRgMbid": "fedf1620-0151-419a-9f18-cfd410681439",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（只看 Bandcamp 標籤）；有鼓名單：研究層要寫清楚鼓是哪一種（慢拖無力／舞池推進／攻擊性）；前次理由：標籤：Dub Reggae Electronic Roots、digital dub、dub、reggae",
+   "location": "London",
+   "bandcampUrl": "https://internationalobserver.bandcamp.com/album/heard",
+   "minutes": 72,
+   "tracks": 13,
+   "listeners": 4314,
+   "source": "標籤篩掉",
+   "priorDrop": "標籤：Dub Reggae Electronic Roots、digital dub、dub、reggae"
+  },
+  {
+   "artist": "Marley Carroll",
+   "album": "Sings",
+   "year": 2013,
+   "label": "",
+   "country": "",
+   "faction": "dt",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp 有鼓名單第三輪（標籤篩掉；前次：標籤：House），Last.fm 收聽 4009 人；48 分 12 首；Bandcamp 標籤 Downtempo、Electronic、House、Asheville",
+   "moodGuess": {
+    "x": 2.8,
+    "y": 0.6,
+    "z": 0.4,
+    "why": "house拍、人聲、輕電子"
+   },
+   "evidence": [
+    "https://marleycarroll.bandcamp.com/album/sings"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "artist:\"Marley Carroll\"（MB 藝人頁 release-group 瀏覽）",
+     "releasegroup:\"Sings\""
+    ],
+    "checkedAt": "2026-11-06",
+    "conclusion": "Apple《Sings》2013-12-03、12 首、℗ 2013 Melanaster Records；MB 藝人頁只有 Flight Patterns 等，無此盤"
+   },
+   "manualEvidenceUrls": [
+    "https://marleycarroll.bandcamp.com/album/sings",
+    "https://music.apple.com/album/1824096798"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（只看 Bandcamp 標籤）；有鼓名單：研究層要寫清楚鼓是哪一種（慢拖無力／舞池推進／攻擊性）；前次理由：標籤：House",
+   "location": "Asheville, North Carolina",
+   "bandcampUrl": "https://marleycarroll.bandcamp.com/album/sings",
+   "minutes": 48,
+   "tracks": 12,
+   "listeners": 4009,
+   "source": "標籤篩掉",
+   "priorDrop": "標籤：House"
+  },
+  {
+   "artist": "John Dunder",
+   "album": "Runner Two",
+   "year": 2025,
+   "label": "",
+   "country": "",
+   "faction": "synth",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp 有鼓名單第三輪（標籤篩掉；前次：標籤：synthwave），Last.fm 收聽 3500 人；29 分 8 首；Bandcamp 標籤 Electronic、chillsynth、chillwave、downtempo、synthwave、Stockholm",
+   "moodGuess": {
+    "x": 2.7,
+    "y": 0.6,
+    "z": 0.3,
+    "why": "chillsynth合成器、霧感"
+   },
+   "evidence": [
+    "https://johndunder.bandcamp.com/album/runner-two",
+    "https://musicbrainz.org/release-group/7d06fcd8-f0c1-45c9-a18c-b5ebe40a93fc"
+   ],
+   "mbRgMbid": "7d06fcd8-f0c1-45c9-a18c-b5ebe40a93fc",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（只看 Bandcamp 標籤）；有鼓名單：研究層要寫清楚鼓是哪一種（慢拖無力／舞池推進／攻擊性）；前次理由：標籤：synthwave",
+   "location": "Stockholm, Sweden",
+   "bandcampUrl": "https://johndunder.bandcamp.com/album/runner-two",
+   "minutes": 29,
+   "tracks": 8,
+   "listeners": 3500,
+   "source": "標籤篩掉",
+   "priorDrop": "標籤：synthwave"
+  },
+  {
+   "artist": "Sweatson Klank",
+   "album": "Super Natural Delights",
+   "year": 2019,
+   "label": "",
+   "country": "",
+   "faction": "beats",
+   "genres": [
+    "hiphop",
+    "electronic"
+   ],
+   "why": "Bandcamp 有鼓名單第三輪（標籤篩掉；前次：標籤：Hip Hop、funk、hip hop、r&b hip hop soul），Last.fm 收聽 3247 人；44 分 12 首；Bandcamp 標籤 Electronic、Hip Hop、beatstrumental、downtempo、funk、hip hop、instrumental beats、r&b hip hop soul、Los Angeles",
+   "moodGuess": {
+    "x": 2.8,
+    "y": 0.8,
+    "z": 0.8,
+    "why": "funk beatstrumental、暖"
+   },
+   "evidence": [
+    "https://sweatsonklank.bandcamp.com/album/super-natural-delights"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "artist:\"Sweatson Klank\"（MB 藝人頁 release-group 瀏覽）",
+     "releasegroup:\"Super Natural Delights\""
+    ],
+    "checkedAt": "2026-11-06",
+    "conclusion": "Apple《Super Natural Delights》2019-06-07、12 首、℗ 2019 Friends Of Friends；MB 藝人頁無此盤"
+   },
+   "manualEvidenceUrls": [
+    "https://sweatsonklank.bandcamp.com/album/super-natural-delights",
+    "https://music.apple.com/album/1459382627"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（只看 Bandcamp 標籤）；有鼓名單：研究層要寫清楚鼓是哪一種（慢拖無力／舞池推進／攻擊性）；前次理由：標籤：Hip Hop、funk、hip hop、r&b hip hop soul",
+   "location": "Los Angeles, California",
+   "bandcampUrl": "https://sweatsonklank.bandcamp.com/album/super-natural-delights",
+   "minutes": 44,
+   "tracks": 12,
+   "listeners": 3247,
+   "source": "標籤篩掉",
+   "priorDrop": "標籤：Hip Hop、funk、hip hop、r&b hip hop soul"
+  },
+  {
+   "artist": "pheel.",
+   "album": "echo chamber.",
+   "year": 2023,
+   "label": "",
+   "country": "",
+   "faction": "beats",
+   "genres": [
+    "hiphop",
+    "electronic"
+   ],
+   "why": "Bandcamp 有鼓名單第三輪（標籤篩掉；前次：標籤：Hip-Hop Instrumental、bass music），Last.fm 收聽 3067 人；34 分 9 首；Bandcamp 標籤 Downtempo、Electronic、Glitch Hop、Hip-Hop Instrumental、Trip Hop、bass music、Denver",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 0.7,
+    "z": 0.5,
+    "why": "glitch hop回聲，鬆暖"
+   },
+   "evidence": [
+    "https://pheel518.bandcamp.com/album/echo-chamber-2",
+    "https://musicbrainz.org/release-group/552c0266-82c0-4cbe-8755-27c3604f6f76"
+   ],
+   "mbRgMbid": "552c0266-82c0-4cbe-8755-27c3604f6f76",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（只看 Bandcamp 標籤）；有鼓名單：研究層要寫清楚鼓是哪一種（慢拖無力／舞池推進／攻擊性）；前次理由：標籤：Hip-Hop Instrumental、bass music",
+   "location": "Denver, Colorado",
+   "bandcampUrl": "https://pheel518.bandcamp.com/album/echo-chamber-2",
+   "minutes": 34,
+   "tracks": 9,
+   "listeners": 3067,
+   "source": "標籤篩掉",
+   "priorDrop": "標籤：Hip-Hop Instrumental、bass music"
+  },
+  {
+   "artist": "Hello Meteor",
+   "album": "Dark Secondaries",
+   "year": 2019,
+   "label": "",
+   "country": "",
+   "faction": "synth",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp 有鼓名單第三輪（標籤篩掉；前次：標籤：Synthwave），Last.fm 收聽 2768 人；45 分 13 首；Bandcamp 標籤 80s、90s、Ambient、Chillwave、Cozywave、Downtempo、Dreamwave、Electronic、New Age、Synthwave",
+   "moodGuess": {
+    "x": 1.6,
+    "y": 1,
+    "z": 0.2,
+    "why": "chillwave霧狀合成器墊、慢拍、磁帶糊"
+   },
+   "evidence": [
+    "https://hellometeor.bandcamp.com/album/dark-secondaries",
+    "https://musicbrainz.org/release-group/928a14c9-f81b-46c5-925c-876687f939ed"
+   ],
+   "mbRgMbid": "928a14c9-f81b-46c5-925c-876687f939ed",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（只看 Bandcamp 標籤）；有鼓名單：研究層要寫清楚鼓是哪一種（慢拖無力／舞池推進／攻擊性）；前次理由：標籤：Synthwave",
+   "location": "Seattle, Washington",
+   "bandcampUrl": "https://hellometeor.bandcamp.com/album/dark-secondaries",
+   "minutes": 45,
+   "tracks": 13,
+   "listeners": 2768,
+   "source": "標籤篩掉",
+   "priorDrop": "標籤：Synthwave"
+  },
+  {
+   "artist": "fat jon",
+   "album": "Obscurity Continuum",
+   "year": 2024,
+   "label": "",
+   "country": "",
+   "faction": "beats",
+   "genres": [
+    "hiphop",
+    "electronic"
+   ],
+   "why": "Bandcamp 有鼓名單第三輪（標籤篩掉；前次：標籤：Hip Hop、Hip-Hop/Rap、ample soul physican、instrumental hip hop、instrumental hip-hop），Last.fm 收聽 2590 人；38 分 12 首；Bandcamp 標籤 Hip Hop、Hip-Hop/Rap、ample soul physican、boombap、experimental、five dees、instrumental hip hop、instrumental hip-hop、lofi、maurice galactica",
+   "moodGuess": {
+    "x": 2.8,
+    "y": 1.1,
+    "z": 0.8,
+    "why": "boom bap實驗、取樣暖糊、慢鼓"
+   },
+   "evidence": [
+    "https://sichtexot.bandcamp.com/album/obscurity-continuum",
+    "https://musicbrainz.org/release-group/bf8e2da4-3f8c-44f0-af74-212ec0493f95"
+   ],
+   "mbRgMbid": "bf8e2da4-3f8c-44f0-af74-212ec0493f95",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（只看 Bandcamp 標籤）；有鼓名單：研究層要寫清楚鼓是哪一種（慢拖無力／舞池推進／攻擊性）；前次理由：標籤：Hip Hop、Hip-Hop/Rap、ample soul physican、instrumental hip hop、instrumental hip-hop",
+   "location": "Germany",
+   "bandcampUrl": "https://sichtexot.bandcamp.com/album/obscurity-continuum",
+   "minutes": 38,
+   "tracks": 12,
+   "listeners": 2590,
+   "source": "標籤篩掉",
+   "priorDrop": "標籤：Hip Hop、Hip-Hop/Rap、ample soul physican、instrumental hip hop、instrumental hip-hop"
+  },
+  {
+   "artist": "DJ Food",
+   "album": "Kaleidoscope Companion",
+   "year": 2021,
+   "label": "",
+   "country": "",
+   "faction": "dub",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp 有鼓名單第三輪（標籤篩掉；前次：標籤：dub、techno and variations），Last.fm 收聽 2464 人；128 分 14 首；Bandcamp 標籤 Electronic、dub、electronica、techno and variations、trip hop、London",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 1.1,
+    "z": 0,
+    "why": "DJ Food trip hop、dub低頻、取樣糊"
+   },
+   "evidence": [
+    "https://djfood.bandcamp.com/album/kaleidoscope-companion",
+    "https://musicbrainz.org/release-group/2647b223-55d2-4e8e-be2c-a9bc8143c8fd"
+   ],
+   "mbRgMbid": "2647b223-55d2-4e8e-be2c-a9bc8143c8fd",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（只看 Bandcamp 標籤）；有鼓名單：研究層要寫清楚鼓是哪一種（慢拖無力／舞池推進／攻擊性）；前次理由：標籤：dub、techno and variations",
+   "location": "London, UK",
+   "bandcampUrl": "https://djfood.bandcamp.com/album/kaleidoscope-companion",
+   "minutes": 128,
+   "tracks": 14,
+   "listeners": 2464,
+   "source": "標籤篩掉",
+   "priorDrop": "標籤：dub、techno and variations"
+  },
+  {
+   "artist": "The Solid Doctor",
+   "album": "Beats Means Highs",
+   "year": 1996,
+   "label": "",
+   "country": "",
+   "faction": "beats",
+   "genres": [
+    "hiphop",
+    "electronic"
+   ],
+   "why": "Bandcamp 有鼓名單第三輪（標籤篩掉；前次：標籤：Drum & Bass、hip hop、house），Last.fm 收聽 2312 人；70 分 10 首；Bandcamp 標籤 Drum & Bass、Electronic、IDM、ambient、chillout、hip hop、house、jazz、latin、trip hop",
+   "moodGuess": {
+    "x": 2.8,
+    "y": 0.5,
+    "z": 0.3,
+    "why": "DnB與hip-hop拍，氛圍"
+   },
+   "evidence": [
+    "https://soliddoctor.bandcamp.com/album/beats-means-highs",
+    "https://musicbrainz.org/release-group/d6661326-81ca-3a4b-8c94-450d618a5371"
+   ],
+   "mbRgMbid": "d6661326-81ca-3a4b-8c94-450d618a5371",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（只看 Bandcamp 標籤）；有鼓名單：研究層要寫清楚鼓是哪一種（慢拖無力／舞池推進／攻擊性）；前次理由：標籤：Drum & Bass、hip hop、house",
+   "location": "Hull, UK",
+   "bandcampUrl": "https://soliddoctor.bandcamp.com/album/beats-means-highs",
+   "minutes": 70,
+   "tracks": 10,
+   "listeners": 2312,
+   "source": "標籤篩掉",
+   "priorDrop": "標籤：Drum & Bass、hip hop、house"
+  },
+  {
+   "artist": "Charlie North",
+   "album": "The Spaces In Between",
+   "year": 2008,
+   "label": "",
+   "country": "",
+   "faction": "dt",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp 有鼓名單第三輪（研究判有鼓；前次：ml73：判輕：y 估 −0.3–0.6，無鼓也無厚度證據（研究 d）），Last.fm 收聽 2227 人；53 分 8 首；Bandcamp 標籤 lounge",
+   "moodGuess": {
+    "x": 2,
+    "y": 0.5,
+    "z": 0.2,
+    "why": "無資訊，依氛圍推估"
+   },
+   "evidence": [
+    "https://charlienorth.com/album/the-spaces-in-between"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "artist:\"Charlie North\"（MB 藝人頁 release-group 瀏覽）",
+     "releasegroup:\"The Spaces In Between\""
+    ],
+    "checkedAt": "2026-11-06",
+    "conclusion": "Apple《The Spaces In Between》2008-02-08、8 首；MB 藝人頁無 release-group；ml73 研究已以 Bandcamp ld+json 核對"
+   },
+   "manualEvidenceUrls": [
+    "https://charlienorth.com/album/the-spaces-in-between",
+    "https://music.apple.com/album/274545227"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（只看 Bandcamp 標籤）；有鼓名單：研究層要寫清楚鼓是哪一種（慢拖無力／舞池推進／攻擊性）；前次理由：ml73：判輕：y 估 −0.3–0.6，無鼓也無厚度證據（研究 d）",
+   "location": "UK",
+   "bandcampUrl": "https://charlienorth.com/album/the-spaces-in-between",
+   "minutes": 53,
+   "tracks": 8,
+   "listeners": 2227,
+   "source": "研究判有鼓",
+   "priorDrop": "ml73：判輕：y 估 −0.3–0.6，無鼓也無厚度證據（研究 d）"
+  },
+  {
+   "artist": "Kalpataru Tree",
+   "album": "Preverberations from the Infinite Future",
+   "year": 2010,
+   "label": "",
+   "country": "",
+   "faction": "psy",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp 有鼓名單第三輪（標籤篩掉；前次：標籤：psy dub），Last.fm 收聽 2064 人；74 分 9 首；Bandcamp 標籤 Ambient、Chill out、Etheric、Organic、psy dub、psybient、Ashland",
+   "moodGuess": {
+    "x": 1.6,
+    "y": 0.8,
+    "z": 0.2,
+    "why": "psybient氛圍、慢拍、迷幻霧"
+   },
+   "evidence": [
+    "https://kalpatarutree.bandcamp.com/album/preverberations-from-the-infinite-future",
+    "https://musicbrainz.org/release-group/2a454ee2-bb62-461b-ac6c-38e126ad05a3"
+   ],
+   "mbRgMbid": "2a454ee2-bb62-461b-ac6c-38e126ad05a3",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（只看 Bandcamp 標籤）；有鼓名單：研究層要寫清楚鼓是哪一種（慢拖無力／舞池推進／攻擊性）；前次理由：標籤：psy dub",
+   "location": "Ashland, Oregon",
+   "bandcampUrl": "https://kalpatarutree.bandcamp.com/album/preverberations-from-the-infinite-future",
+   "minutes": 74,
+   "tracks": 9,
+   "listeners": 2064,
+   "source": "標籤篩掉",
+   "priorDrop": "標籤：psy dub"
+  },
+  {
+   "artist": "ASURA",
+   "album": "Renaissance",
+   "year": 2023,
+   "label": "",
+   "country": "",
+   "faction": "psy",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp 有鼓名單第三輪（標籤篩掉；前次：標籤：trance），Last.fm 收聽 1952 人；71 分 9 首；Bandcamp 標籤 Asura、Electronic、Renaissance、downtempo、progressive chillout、psychedelic chill、psychill、trance、France",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 0.5,
+    "z": 0.4,
+    "why": "迷幻chill，合成器漸層"
+   },
+   "evidence": [
+    "https://asura-altar.bandcamp.com/album/renaissance",
+    "https://musicbrainz.org/release-group/5fadca8d-cbf5-41fe-805f-b5d9bfb8173c"
+   ],
+   "mbRgMbid": "5fadca8d-cbf5-41fe-805f-b5d9bfb8173c",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（只看 Bandcamp 標籤）；有鼓名單：研究層要寫清楚鼓是哪一種（慢拖無力／舞池推進／攻擊性）；前次理由：標籤：trance",
+   "location": "France",
+   "bandcampUrl": "https://asura-altar.bandcamp.com/album/renaissance",
+   "minutes": 71,
+   "tracks": 9,
+   "listeners": 1952,
+   "source": "標籤篩掉",
+   "priorDrop": "標籤：trance"
+  },
+  {
+   "artist": "Somatoast",
+   "album": "Goop",
+   "year": 2016,
+   "label": "",
+   "country": "",
+   "faction": "dt",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp 有鼓名單第三輪（研究判有鼓；前次：ml71：有拍推進 9：IDM／glitch／dubstep，stuttering 切分拍（研究 d））），Last.fm 收聽 1774 人；32 分 7 首；Bandcamp 標籤 downtempo",
+   "moodGuess": {
+    "x": 2.6,
+    "y": 0.5,
+    "z": 0.2,
+    "why": "低傳真節拍、糊"
+   },
+   "evidence": [
+    "https://music.gravitasrecordings.com/album/goop",
+    "https://musicbrainz.org/release-group/32751367-ecb8-4b71-8b81-3e13876da321"
+   ],
+   "mbRgMbid": "32751367-ecb8-4b71-8b81-3e13876da321",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（只看 Bandcamp 標籤）；有鼓名單：研究層要寫清楚鼓是哪一種（慢拖無力／舞池推進／攻擊性）；前次理由：ml71：有拍推進 9：IDM／glitch／dubstep，stuttering 切分拍（研究 d））",
+   "location": "Austin, Texas",
+   "bandcampUrl": "https://music.gravitasrecordings.com/album/goop",
+   "minutes": 32,
+   "tracks": 7,
+   "listeners": 1774,
+   "source": "研究判有鼓",
+   "priorDrop": "ml71：有拍推進 9：IDM／glitch／dubstep，stuttering 切分拍（研究 d））"
+  },
+  {
+   "artist": "Entheogenic",
+   "album": "Animism",
+   "year": 2020,
+   "label": "",
+   "country": "",
+   "faction": "psy",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp 有鼓名單第三輪（標籤篩掉；前次：標籤：trance），Last.fm 收聽 1671 人；62 分 8 首；Bandcamp 標籤 Electronic、chill out、downtempo、psybient、psychedelic、psychill、trance、United Kingdom",
+   "moodGuess": {
+    "x": 2,
+    "y": 0.8,
+    "z": 0.2,
+    "why": "迷幻慢拍、合成器層"
+   },
+   "evidence": [
+    "https://entheogenic-usr.bandcamp.com/album/animism",
+    "https://musicbrainz.org/release-group/81a0a6fa-a10e-4c61-ae59-2f3f33086b22"
+   ],
+   "mbRgMbid": "81a0a6fa-a10e-4c61-ae59-2f3f33086b22",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（只看 Bandcamp 標籤）；有鼓名單：研究層要寫清楚鼓是哪一種（慢拖無力／舞池推進／攻擊性）；前次理由：標籤：trance",
+   "location": "UK",
+   "bandcampUrl": "https://entheogenic-usr.bandcamp.com/album/animism",
+   "minutes": 62,
+   "tracks": 8,
+   "listeners": 1671,
+   "source": "標籤篩掉",
+   "priorDrop": "標籤：trance"
+  },
+  {
+   "artist": "Zen Baboon",
+   "album": "Hidden Frogs",
+   "year": 2020,
+   "label": "",
+   "country": "",
+   "faction": "beats",
+   "genres": [
+    "hiphop",
+    "electronic"
+   ],
+   "why": "Bandcamp 有鼓名單第三輪（標籤篩掉；前次：標籤：Lo-Fi Hip-Hop、techno），Last.fm 收聽 1575 人；34 分 6 首；Bandcamp 標籤 Downtempo、Electronic、Lo-Fi Hip-Hop、ambient、electronic、lo-fi、techno、Portugal",
+   "moodGuess": {
+    "x": 2,
+    "y": 0.7,
+    "z": 0.6,
+    "why": "低傳真節拍、環境質地"
+   },
+   "evidence": [
+    "https://zenbaboon.bandcamp.com/album/hidden-frogs",
+    "https://musicbrainz.org/release-group/57eb1975-43d8-47b7-a8dd-70d34276a569"
+   ],
+   "mbRgMbid": "57eb1975-43d8-47b7-a8dd-70d34276a569",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（只看 Bandcamp 標籤）；有鼓名單：研究層要寫清楚鼓是哪一種（慢拖無力／舞池推進／攻擊性）；前次理由：標籤：Lo-Fi Hip-Hop、techno",
+   "location": "Portugal",
+   "bandcampUrl": "https://zenbaboon.bandcamp.com/album/hidden-frogs",
+   "minutes": 34,
+   "tracks": 6,
+   "listeners": 1575,
+   "source": "標籤篩掉",
+   "priorDrop": "標籤：Lo-Fi Hip-Hop、techno"
+  },
+  {
+   "artist": "cehryl",
+   "album": "You Win Some, You Lose A Lot",
+   "year": 2025,
+   "label": "",
+   "country": "",
+   "faction": "soul",
+   "genres": [
+    "soul",
+    "electronic"
+   ],
+   "why": "Bandcamp 有鼓名單第三輪（標籤篩掉；前次：標籤：R&B、indie pop、soul），Last.fm 收聽 1400 人；51 分 24 首；Bandcamp 標籤 Alternative、IDM、R&B、ambient、downtempo、electronic、electronica、indie pop、singer-songwriter、soul",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 0.6,
+    "z": 0,
+    "why": "IDM氛圍、R&B人聲、細碎"
+   },
+   "evidence": [
+    "https://cehryl.bandcamp.com/album/you-win-some-you-lose-a-lot"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "artist:\"cehryl\"（MB 藝人頁 release-group 瀏覽）",
+     "releasegroup:\"You Win Some, You Lose A Lot\""
+    ],
+    "checkedAt": "2026-11-06",
+    "conclusion": "Apple 2025-11-07、24 首、℗ 2025 Pilot Study Records；MB 藝人頁（US）無此盤"
+   },
+   "manualEvidenceUrls": [
+    "https://cehryl.bandcamp.com/album/you-win-some-you-lose-a-lot",
+    "https://music.apple.com/album/1853436940"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（只看 Bandcamp 標籤）；有鼓名單：研究層要寫清楚鼓是哪一種（慢拖無力／舞池推進／攻擊性）；前次理由：標籤：R&B、indie pop、soul",
+   "location": "Hong Kong",
+   "bandcampUrl": "https://cehryl.bandcamp.com/album/you-win-some-you-lose-a-lot",
+   "minutes": 51,
+   "tracks": 24,
+   "listeners": 1400,
+   "source": "標籤篩掉",
+   "priorDrop": "標籤：R&B、indie pop、soul"
+  },
+  {
+   "artist": "Kaisaku",
+   "album": "Aishū",
+   "year": 2019,
+   "label": "",
+   "country": "",
+   "faction": "dt",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp 有鼓名單第三輪（標籤篩掉；前次：標籤：future garage），Last.fm 收聽 1285 人；47 分 10 首；Bandcamp 標籤 Ambient、atmospheric、chill、downtempo、dreamy、drone、electronica、future garage、orchestral、soundscape",
+   "moodGuess": {
+    "x": 1.4,
+    "y": 0.9,
+    "z": 0,
+    "why": "氛圍drone、殘響厚、無鼓"
+   },
+   "evidence": [
+    "https://kaisaku.bandcamp.com/album/aish"
+   ],
+   "mbRgMbid": "",
+   "mbAbsenceProof": {
+    "queries": [
+     "artist:\"Kaisaku\"（MB 藝人頁 release-group 瀏覽）",
+     "releasegroup:\"Aishū\""
+    ],
+    "checkedAt": "2026-11-06",
+    "conclusion": "Apple《Aishū》2019-03-16、10 首、℗ 2019 Kaisaku；MB 藝人頁無 release-group"
+   },
+   "manualEvidenceUrls": [
+    "https://kaisaku.bandcamp.com/album/aish",
+    "https://music.apple.com/album/1455008021"
+   ],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（只看 Bandcamp 標籤）；有鼓名單：研究層要寫清楚鼓是哪一種（慢拖無力／舞池推進／攻擊性）；前次理由：標籤：future garage",
+   "location": "Ontario",
+   "bandcampUrl": "https://kaisaku.bandcamp.com/album/aish",
+   "minutes": 47,
+   "tracks": 10,
+   "listeners": 1285,
+   "source": "標籤篩掉",
+   "priorDrop": "標籤：future garage"
+  },
+  {
+   "artist": "Hibernation",
+   "album": "Organic Technology",
+   "year": 2020,
+   "label": "",
+   "country": "",
+   "faction": "beats",
+   "genres": [
+    "hiphop",
+    "electronic"
+   ],
+   "why": "Bandcamp 有鼓名單第三輪（標籤篩掉；前次：標籤：techno），Last.fm 收聽 1223 人；134 分 14 首；Bandcamp 標籤 Electronic、IDM、World、ambient、bass、beats、chill、downtempo、electronica、glitch",
+   "moodGuess": {
+    "x": 2.4,
+    "y": 0.7,
+    "z": 0.3,
+    "why": "IDM氛圍beats，鬆拍"
+   },
+   "evidence": [
+    "https://sebtaylor.bandcamp.com/album/organic-technology",
+    "https://musicbrainz.org/release-group/d8031fce-21ff-48f4-9129-b7242e8e6656"
+   ],
+   "mbRgMbid": "d8031fce-21ff-48f4-9129-b7242e8e6656",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（只看 Bandcamp 標籤）；有鼓名單：研究層要寫清楚鼓是哪一種（慢拖無力／舞池推進／攻擊性）；前次理由：標籤：techno",
+   "location": "Brighton, UK",
+   "bandcampUrl": "https://sebtaylor.bandcamp.com/album/organic-technology",
+   "minutes": 134,
+   "tracks": 14,
+   "listeners": 1223,
+   "source": "標籤篩掉",
+   "priorDrop": "標籤：techno"
+  },
+  {
+   "artist": "Project Lazarus",
+   "album": "К солнцу, к звездам",
+   "year": 2019,
+   "label": "",
+   "country": "",
+   "faction": "synth",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp 有鼓名單第三輪（標籤篩掉；前次：標籤：synthwave），Last.fm 收聽 1088 人；40 分 10 首；Bandcamp 標籤 Electronic、USSR、chillwave、downtempo、electronic、lofi、russian、sovietwave、synthwave、vaporwave",
+   "moodGuess": {
+    "x": 2.2,
+    "y": 0.9,
+    "z": 0.2,
+    "why": "chillwave糊濾波、復古合成器、微暖"
+   },
+   "evidence": [
+    "https://projectlazarus.bandcamp.com/album/--18",
+    "https://musicbrainz.org/release-group/436e7c63-e18a-4bd9-86aa-5107a4524689"
+   ],
+   "mbRgMbid": "436e7c63-e18a-4bd9-86aa-5107a4524689",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（只看 Bandcamp 標籤）；有鼓名單：研究層要寫清楚鼓是哪一種（慢拖無力／舞池推進／攻擊性）；前次理由：標籤：synthwave",
+   "location": "",
+   "bandcampUrl": "https://projectlazarus.bandcamp.com/album/--18",
+   "minutes": 40,
+   "tracks": 10,
+   "listeners": 1088,
+   "source": "標籤篩掉",
+   "priorDrop": "標籤：synthwave"
+  },
+  {
+   "artist": "Thievery Corporation",
+   "album": "It Takes a Thief.",
+   "year": 1999,
+   "label": "",
+   "country": "",
+   "faction": "dub",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp 有鼓名單第三輪（標籤篩掉；前次：標籤：Dub），Last.fm 收聽 1009 人；69 分 16 首；Bandcamp 標籤 Bossa Nova、Chill、Dub、Electronic、Electronica、Trip Hop、downtempo、lounge、lounge music、trip hop",
+   "moodGuess": {
+    "x": 2.3,
+    "y": 0.5,
+    "z": 0.4,
+    "why": "bossa trip hop，輕暖"
+   },
+   "evidence": [
+    "https://thieverycorporation.bandcamp.com/album/it-takes-a-thief",
+    "https://musicbrainz.org/release-group/cdbab5fc-a68c-35ec-84eb-0ee2981af15f"
+   ],
+   "mbRgMbid": "cdbab5fc-a68c-35ec-84eb-0ee2981af15f",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（只看 Bandcamp 標籤）；有鼓名單：研究層要寫清楚鼓是哪一種（慢拖無力／舞池推進／攻擊性）；前次理由：標籤：Dub",
+   "location": "Washington, D.C.",
+   "bandcampUrl": "https://thieverycorporation.bandcamp.com/album/it-takes-a-thief",
+   "minutes": 69,
+   "tracks": 16,
+   "listeners": 1009,
+   "source": "標籤篩掉",
+   "priorDrop": "標籤：Dub"
+  },
+  {
+   "artist": "DJ Phixion",
+   "album": "Intermetropolitan",
+   "year": 2014,
+   "label": "",
+   "country": "",
+   "faction": "beats",
+   "genres": [
+    "hiphop",
+    "electronic"
+   ],
+   "why": "Bandcamp 有鼓名單第三輪（標籤篩掉；前次：標籤：Bay Area Hip Hop、Instrumental Hip-Hop、abstract hip-hop、jazz-funk、old school hip hop），Last.fm 收聽 925 人；59 分 15 首；Bandcamp 標籤 Bay Area Hip Hop、California、Electronic、Instrumental Hip-Hop、San Jose、Turntablism、abstract hip-hop、boom bap、downtempo、instrumental",
+   "moodGuess": {
+    "x": 2.9,
+    "y": 1,
+    "z": 0.4,
+    "why": "boom bap器樂，髒鼓暖"
+   },
+   "evidence": [
+    "https://djphixion.bandcamp.com/album/intermetropolitan",
+    "https://musicbrainz.org/release-group/d11c317b-acfe-48ba-b697-9968a8f6d305"
+   ],
+   "mbRgMbid": "d11c317b-acfe-48ba-b697-9968a8f6d305",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（只看 Bandcamp 標籤）；有鼓名單：研究層要寫清楚鼓是哪一種（慢拖無力／舞池推進／攻擊性）；前次理由：標籤：Bay Area Hip Hop、Instrumental Hip-Hop、abstract hip-hop、jazz-funk、old school hip hop",
+   "location": "Luxembourg",
+   "bandcampUrl": "https://djphixion.bandcamp.com/album/intermetropolitan",
+   "minutes": 59,
+   "tracks": 15,
+   "listeners": 925,
+   "source": "標籤篩掉",
+   "priorDrop": "標籤：Bay Area Hip Hop、Instrumental Hip-Hop、abstract hip-hop、jazz-funk、old school hip hop"
+  },
+  {
+   "artist": "Caspro",
+   "album": "OFFLINE",
+   "year": 2022,
+   "label": "",
+   "country": "",
+   "faction": "synth",
+   "genres": [
+    "electronic"
+   ],
+   "why": "Bandcamp 有鼓名單第三輪（標籤篩掉；前次：標籤：synthwave），Last.fm 收聽 742 人；36 分 9 首；Bandcamp 標籤 Electronic、ambient、chill-out、chillsynth、chillwave、downtempo、dreamwave、electronic、futuresynth、instrumental",
+   "moodGuess": {
+    "x": 2.5,
+    "y": 0.7,
+    "z": 0.5,
+    "why": "chillsynth chillwave，暖霧"
+   },
+   "evidence": [
+    "https://caspromusic.bandcamp.com/album/offline",
+    "https://musicbrainz.org/release-group/ff8bbcfd-bc5f-4394-a27d-d3c8400b36b2"
+   ],
+   "mbRgMbid": "ff8bbcfd-bc5f-4394-a27d-d3c8400b36b2",
+   "mbAbsenceProof": null,
+   "manualEvidenceUrls": [],
+   "releaseException": "",
+   "queryAlias": "",
+   "uncertain": "moodGuess 為卡單粗估（只看 Bandcamp 標籤）；有鼓名單：研究層要寫清楚鼓是哪一種（慢拖無力／舞池推進／攻擊性）；前次理由：標籤：synthwave",
+   "location": "",
+   "bandcampUrl": "https://caspromusic.bandcamp.com/album/offline",
+   "minutes": 36,
+   "tracks": 9,
+   "listeners": 742,
+   "source": "標籤篩掉",
+   "priorDrop": "標籤：synthwave"
+  }
+ ],
+ "notes": [
+  "卡單即策展結果（店主 2026-11-06「全都上架吧」）；主線汰換見 master-override 與 rulings"
+ ]
+}

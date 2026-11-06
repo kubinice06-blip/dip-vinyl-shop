@@ -72,13 +72,13 @@
     // 頂級牌（殿堂／遺珠／異端）在卡池裡另放在 pool.apex，一般抽卡不碰；頻率選歌要全部都在星圖上
     // （2026-10-23 店主：A Love Supreme 不見了——917 張頂級牌從頻率選歌上線起就沒進來）
     const rows = [...pool.cards], seenId = new Set();
-    for (const t of ['hall', 'pearl', 'heresy']) for (const [artist, album, genres, year] of (pool.apex?.[t] || [])) rows.push({ artist, album, genres: genres || [], year: year || 0, tier: t });
+    for (const t of ['hall', 'pearl', 'heresy']) for (const [artist, album, genres, year, classic, obscurity, accessibility] of (pool.apex?.[t] || [])) rows.push({ artist, album, genres: genres || [], year: year || 0, tier: t, classic, obscurity, accessibility });
     for (const c of rows) {
       const h = fnv(idOf(c.artist, c.album)); if (seenId.has(h)) continue; seenId.add(h);
       const m = byHash.get(h);
       if (!m) continue;
       const i = CARDS.length;
-      CARDS.push({ i, card: c, x: m[0], y: m[1], z: m[2], conf: m[3], cell: cellOf(m[0], m[1], m[2]),
+      CARDS.push({ i, card: c, x: m[0], y: m[1], z: m[2], conf: m[3], cell: cellOf(m[0], m[1], m[2]), tier: tierOfCard(c),
         px: pSpread('x', m[0], hashU(i, 7919, 997)), py: pSpread('y', m[1], hashU(i, 104729, 991)), pz: pSpread('z', m[2], hashU(i, 1299709, 983)) });
     }
     N = CARDS.length;
@@ -87,6 +87,7 @@
     // 2026-11-27 00:00（台北）起自動下架（店主）：不再放進 CARDS，搜尋也找不到
     if (Date.now() < EGG.until) { CELL_COLOR.egg = EGG.color; NAMES = Object.assign({}, NAMES, { egg: '洋流' });
     CARDS.push(Object.assign({ i: N, card: EGG.card, conf: 3, cell: 'egg', egg: true }, EGG.pos)); }
+    computePass();
   }
 
   const EGG = {
@@ -99,6 +100,8 @@
   };
 
   // ── 畫面 ──────────────────────────────────────────────────────────
+  // 面板圖片與輪廓表網址帶版本：正式站圖片快取 4 小時，換圖不換網址的話手機會拿舊圖套新版面（2026-11-06 店主實機：骰子跑位）。換任何 tune/ 圖就把這個數字加一
+  const AV = 69;
   const CSS = `
 .tune-app{--pix:'DotGothic16','Space Mono',monospace;position:relative;display:grid;grid-template-columns:1fr;grid-template-rows:minmax(200px,1fr) auto;width:100%;max-width:720px;margin:0 auto;height:var(--tvh,100dvh);padding:env(safe-area-inset-top,0px) env(safe-area-inset-right,0px) env(safe-area-inset-bottom,0px) env(safe-area-inset-left,0px);background:#0b0c10;color:#e9e2c8;font-family:var(--pix);font-size:11px;letter-spacing:.04em;overflow:hidden}
 /* 主畫面 App（standalone）：iOS 在狀態列下緣多一條毛玻璃，蓋住讀數與正在播放卡；只有這個模式再往下讓一截，瀏覽器不受影響 */
@@ -212,36 +215,71 @@
 /* 主機是一整塊像素面板（2026-10-23 店主：「下面的面板整合起來變成一個像素面板」，拿掉最下面的抽屜讓星圖長大）：
    tune/panel-all.png 由 scripts/build-tune-panel.py 從原稿拼成，下列活件位置都是那支腳本印出來的百分比。
    整台高 ≈ 0.98 倍寬，依視窗高度反推寬度，一定塞進一個畫面 */
-.tune-console{position:relative;width:min(100%,600px,calc((var(--tvh,100dvh) - 340px) / 0.99));aspect-ratio:1438/1413;background:url(tune/panel-all.png) 0 0/100% 100% no-repeat;image-rendering:pixelated;container-type:inline-size;user-select:none}
+.tune-console{position:relative;width:min(100%,600px,calc((var(--tvh,100dvh) - 340px) / 0.99));aspect-ratio:1438/1413;background:url(tune/panel-all.png?v=${AV}) 0 0/100% 100% no-repeat;image-rendering:pixelated;container-type:inline-size;user-select:none}
 @media (orientation:landscape) and (max-height:600px) and (min-width:560px){.tune-console{width:min(100%,calc((var(--tvh,100dvh) - 24px) / 0.99))}}
 /* 手機直放：面板放大塞滿寬度（2026-10-23 店主：左右空位太多），星圖讓出高度。
    高度一律用 --tvh（JS 記下的視窗高，打字時鍵盤彈出不更新）：不然 100dvh 跟著鍵盤縮、直式被判成橫式，整台版面會跳成左右並排 */
 @media (max-width:520px){.tune-console{width:min(100%,calc((var(--tvh,100dvh) - 220px) / 0.99))}.tune-panel{padding:6px 6px 0}}
 .tune-console .abs{position:absolute}
-.tune-draw{left:79.903%;top:16.631%;width:11.683%;height:25.336%;background:url(tune/btn-v.png) center/100% 100% no-repeat;image-rendering:pixelated;border:0;padding:0;cursor:pointer;writing-mode:vertical-rl;text-orientation:upright;font-family:var(--pix);font-size:5cqw;letter-spacing:.3em;color:#2a1e07;text-shadow:.15cqw .15cqw 0 rgba(255,236,170,.55);display:grid;place-items:center}
-.tune-draw:active,.tune-draw.is-pressed{transform:translateY(.4cqw);filter:brightness(1.08)}
-.tune-draw[disabled]{opacity:.55;cursor:default}
-.tune-drumwin{left:14.117%;top:23.425%;width:47.636%;height:21.939%;background:#0d0f0d;display:flex;gap:1.4cqw;padding:1.6cqw 1.7cqw;align-items:stretch}
-.tune-drum{position:relative;flex:1 1 0;overflow:hidden;background:linear-gradient(180deg,#000 0,#2b2f2a 30%,#3a3f38 50%,#2b2f2a 70%,#000 100%);box-shadow:inset 0 0 0 .3cqw #000}
-.tune-drum.wide{flex:2.3 1 0}
+/* 2026-11-06 面板第二版（店主：中間滾筒、下面轉輪各縮一半，挪出位置放類別／等級／分級篩選；就這張拆成「就這張」「隨機」兩顆）。
+   全部是畫在 tune/panel-all.png 上的像素零件（scripts/tune-panel-v2/ 產生），HTML 只疊字與點擊範圍，不用 CSS 畫漸層、陰影、光暈 */
+.tune-key{background:transparent center/100% 100% no-repeat;image-rendering:pixelated;border:0;padding:0;cursor:pointer;font-family:var(--pix);color:#2a1e07;display:grid;place-items:center}
+.tune-key:active,.tune-key.is-pressed{transform:translateY(.385cqw)}
+.tune-key[disabled]{opacity:.55;cursor:default}
+.tune-key:focus-visible{outline:2px solid #ffd166;outline-offset:1px}
+/* 兩顆鍵只有像素圖示、不疊字（2026-11-06 店主：「就這張」字溢出、「隨機只需要留骰子」「就這張也要有一個圖示」）：就這張＝黑膠、隨機＝骰子 */
+.tune-draw{left:79.903%;top:12.597%;width:11.683%;height:11.323%;background-image:url(tune/key-draw.png?v=${AV})}
+.tune-rand{left:79.903%;top:24.699%;width:11.683%;height:11.323%;background-image:url(tune/key-rand.png?v=${AV})}
+.tune-drum{position:absolute;overflow:hidden;background:transparent;top:24.204%;width:7.789%;height:10.262%}
+#tuneDx{left:14.951%}#tuneDy{left:23.992%}#tuneDz{left:33.032%}#tuneDcell{left:42.072%;width:18.776%}
 .tune-drum .strip{transition:transform .5s cubic-bezier(.25,.9,.3,1.08)}
-.tune-drum span{display:block;height:6cqw;line-height:6cqw;text-align:center;font-family:var(--pix);font-size:4.2cqw;color:var(--w,#e9e2c8);text-shadow:0 0 1cqw var(--w,#e9e2c8)}
+.tune-drum span{display:block;height:6.259cqw;line-height:6.259cqw;text-align:center;font-family:var(--pix);font-size:4.2cqw;color:var(--w,#e9e2c8);white-space:nowrap}
 .tune-drum.wide span{font-size:3.5cqw;letter-spacing:.2em;padding-left:.2em}
-.tune-drum::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.85) 0,rgba(0,0,0,.35) 30%,transparent 40%,transparent 60%,rgba(0,0,0,.35) 70%,rgba(0,0,0,.85) 100%);pointer-events:none}
-.tune-sw{left:66.968%;top:25.195%;width:7.58%;height:19.462%;background:transparent;border:0;cursor:pointer;padding:0}
-.tune-swlab{left:63.282%;width:15.021%;text-align:center;font-family:var(--pix);font-size:2.5cqw;letter-spacing:.1em;color:#8d9478;pointer-events:none}
-.tune-swlab.top{top:20.524%}.tune-swlab.bot{top:44.2%}
-.tune-swlab.on{color:#ffd34d;text-shadow:0 0 .8cqw #ffd34d}
-.tune-led{left:69.611%;width:1.808%;height:1.132%;background:#2b2a1f;pointer-events:none}
-.tune-led.top{top:25.973%}.tune-led.bot{top:42.675%}
-.tune-led.on{background:#ffd34d;box-shadow:0 0 .8cqw #ffd34d}
+.tune-drum::after{content:"";position:absolute;inset:0;background:url(tune/drum-shade-145.png?v=${AV}) 0 0/100% 100% no-repeat;image-rendering:pixelated;pointer-events:none}
+.tune-sw{left:64.047%;top:17.268%;width:14.117%;height:18.754%;background:transparent;border:0;cursor:pointer;padding:0}
+.tune-sw:focus-visible{outline:2px solid #ffd166;outline-offset:-2px}
+.tune-swlab{left:71.975%;width:6.189%;height:2.548%;display:flex;align-items:center;font-family:var(--pix);font-size:2.2cqw;color:#8d9478;pointer-events:none;white-space:nowrap}
+.tune-swlab.top{top:17.268%}.tune-swlab.bot{top:33.475%}
+.tune-swlab.on{color:#ffd34d}
+.tune-led{left:69.611%;width:1.808%;height:1.132%;background:url(tune/led-off.png?v=${AV}) 0 0/100% 100% no-repeat;image-rendering:pixelated;pointer-events:none}
+.tune-led.top{top:17.976%}.tune-led.bot{top:34.183%}
+.tune-led.on{background-image:url(tune/led-on.png?v=${AV})}
 /* SCAN／RADIO 撥桿：原稿槽位上疊三格（上｜中｜下），撥的時候走一格中間 */
-.tune-lever{left:68.498%;top:30.078%;width:4.103%;height:9.696%;background:url(tune/switch.png) 0 0/300% 100% no-repeat;image-rendering:pixelated;pointer-events:none}
+.tune-lever{left:68.498%;top:21.798%;width:4.103%;height:9.696%;background:url(tune/switch.png?v=${AV}) 0 0/300% 100% no-repeat;image-rendering:pixelated;pointer-events:none}
 .tune-lever[data-pos="mid"]{background-position:50% 0}.tune-lever[data-pos="down"]{background-position:100% 0}
-.tune-wheel{background:transparent;cursor:ns-resize;touch-action:none;overflow:hidden;top:55.485%;height:37.933%}
+/* 篩選滾筒：上下拖、點上半／下半、滾輪、方向鍵切換，選項繞一圈；不開任何視窗 */
+.tune-fplate{top:38.783%;height:4.317%;display:flex;align-items:center;justify-content:center;gap:.5em;font-family:var(--pix);font-size:2.2cqw;color:#2a1e07;white-space:nowrap;pointer-events:none}
+.tune-fplate small{font-size:.9em;letter-spacing:.06em}
+.tune-fplate[data-k="genre"]{left:12.517%;width:14.395%}.tune-fplate[data-k="grade"]{left:28.303%;width:19.333%}.tune-fplate[data-k="tier"]{left:49.096%;width:14.326%}
+.tune-fled{top:44.232%;width:2.364%;height:1.557%;background:url(tune/led-off.png?v=${AV}) 0 0/100% 100% no-repeat;image-rendering:pixelated;pointer-events:none}
+.tune-fled.on{background-image:url(tune/led-on.png?v=${AV})}
+.tune-fled[data-k="genre"]{left:18.498%}.tune-fled[data-k="grade"]{left:36.787%}.tune-fled[data-k="tier"]{left:55.076%}
+.tune-flt{top:38.783%;height:26.61%;cursor:ns-resize;touch-action:none;outline:0}
+.tune-flt[data-k="genre"]{left:12.378%;width:14.673%}.tune-flt[data-k="grade"]{left:28.164%;width:19.611%}.tune-flt[data-k="tier"]{left:48.957%;width:14.604%}
+.tune-flt:focus-visible .fdrum{outline:2px solid #ffd166;outline-offset:-2px}
+.tune-flt .fdrum{position:absolute;left:0;right:0;top:29.8%;height:59.84%;overflow:hidden;pointer-events:none}
+.tune-flt .fdrum::after{content:"";position:absolute;inset:0;background:url(tune/drum-shade-225.png?v=${AV}) 0 0/100% 100% no-repeat;image-rendering:pixelated}
+.tune-flt .strip{will-change:transform}
+.tune-flt .strip.anim{transition:transform .22s cubic-bezier(.25,.9,.3,1.08)}
+.tune-flt span{display:block;height:5.563cqw;line-height:5.563cqw;text-align:center;font-family:var(--pix);font-size:3.27cqw;color:#8d9478;white-space:nowrap}
+.tune-flt svg.st{display:inline-block;width:.78em;height:.78em;margin:0 .04em;vertical-align:-.04em}
+.tune-flt span .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+.tune-flt span.sel{color:#ffd34d}.tune-flt span.sel.all{color:#e9e2c8}
+.tune-lcd{left:68.15%;top:39.207%;width:21.558%;height:10.899%;font-family:var(--pix);color:#ffd34d;pointer-events:none}
+.tune-lcd small{position:absolute;left:5%;top:6%;font-size:2.2cqw;color:#8d7a3c;letter-spacing:.06em;white-space:nowrap}
+.tune-lcd b{position:absolute;right:6%;bottom:9%;font-weight:400;font-size:4.4cqw;white-space:nowrap}
+.tune-lcd b em{font-style:normal;font-size:.8em;margin-left:.2em}
+.tune-lcd.zero b{color:#ff7a6b}
+.tune-all{left:67.803%;top:51.734%;width:22.323%;height:13.659%;background-image:url(tune/key-all.png?v=${AV});color:#8d9478;font-size:3.6cqw;line-height:1.15;text-align:center;padding-top:.6cqw}
+.tune-all small{display:block;font-size:2.2cqw;letter-spacing:.08em}
+.tune-all.on{color:#e9e2c8}
+/* 轉輪：畫面縮成一半高，點擊範圍放大到整欄（含名牌與刻度），手指好抓 */
+.tune-wheel{background:transparent;overflow:hidden;top:74.452%;height:18.967%;pointer-events:none}
 .tune-wheel canvas{display:block;width:100%;height:100%;image-rendering:pixelated}
 .tune-wheel[data-axis="x"]{left:15.577%;width:12.656%}.tune-wheel[data-axis="y"]{left:44.784%;width:12.239%}.tune-wheel[data-axis="z"]{left:73.713%;width:12.239%}
-.tune-wheel:focus-visible{outline:2px solid #ffd166;outline-offset:-2px}
+.tune-wcol{top:73.319%;height:20.807%;cursor:ns-resize;touch-action:none;background:transparent}
+.tune-wcol[data-axis="x"]{left:7.789%;width:27.538%}.tune-wcol[data-axis="y"]{left:36.231%;width:27.747%}.tune-wcol[data-axis="z"]{left:64.882%;width:27.33%}
+.tune-wcol:focus-visible{outline:2px solid #ffd166;outline-offset:-2px}
 /* 搜尋列：名牌、液晶、黃銅鍵畫在面板上，文字、輸入框、按鍵疊 HTML */
 .tune-search-plate{left:8.971%;top:4.388%;width:16.481%;height:5.025%;display:flex;align-items:center;justify-content:center;gap:.35em;font-family:'Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif;font-weight:700;font-size:2.1cqw;letter-spacing:.04em;color:#2a1e07;white-space:nowrap;pointer-events:none}
 .tune-search-plate small{font-family:system-ui,sans-serif;font-weight:500;font-size:.82em;letter-spacing:.06em}
@@ -291,20 +329,31 @@ html.tune-inapp-lock body{padding-top:120px}
     <span class="abs tune-search-plate">搜尋<small>/ SEARCH</small></span>
     <input class="abs tune-search-in" id="tuneSearch" type="search" enterkeyhint="search" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" placeholder="藝人或專輯" aria-label="搜尋專輯" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="tuneSugg">
     <button class="abs tune-search-go" id="tuneSearchGo" type="button" aria-label="搜尋"></button>
-    <div class="abs tune-drumwin">
-      <div class="tune-drum" id="tuneDx" style="--w:${AX.x}"><div class="strip"><span>靜</span><span>躁</span></div></div>
-      <div class="tune-drum" id="tuneDy" style="--w:${AX.y}"><div class="strip"><span>輕</span><span>重</span></div></div>
-      <div class="tune-drum" id="tuneDz"><div class="strip"><span style="color:${AX.cold};text-shadow:0 0 1cqw ${AX.cold}">冷</span><span style="color:${AX.z};text-shadow:0 0 1cqw ${AX.z}">暖</span></div></div>
-      <div class="tune-drum wide" id="tuneDcell"><div class="strip" id="tuneCellStrip"></div></div>
-    </div>
+    <div class="tune-drum" id="tuneDx" style="--w:${AX.x}"><div class="strip"><span>靜</span><span>躁</span></div></div>
+    <div class="tune-drum" id="tuneDy" style="--w:${AX.y}"><div class="strip"><span>輕</span><span>重</span></div></div>
+    <div class="tune-drum" id="tuneDz"><div class="strip"><span style="color:${AX.cold}">冷</span><span style="color:${AX.z}">暖</span></div></div>
+    <div class="tune-drum wide" id="tuneDcell"><div class="strip" id="tuneCellStrip"></div></div>
     <span class="abs tune-swlab top on" id="tuneSwTop">SCAN</span><span class="abs tune-swlab bot" id="tuneSwBot">RADIO</span>
     <i class="abs tune-lever" id="tuneLever" data-pos="up"></i>
     <button class="abs tune-sw" id="tuneMode" type="button" aria-label="SCAN 手動轉台／RADIO 電台：試聽播完自動換下一張" aria-pressed="false"></button>
     <i class="abs tune-led top on" id="tuneLedTop"></i><i class="abs tune-led bot" id="tuneLedBot"></i>
-    <button class="abs tune-draw" id="tuneDraw" type="button" disabled>就這張</button>
-    <div class="abs tune-wheel" data-axis="x" role="slider" tabindex="0" aria-label="能量" aria-valuemin="0" aria-valuemax="100" aria-valuenow="25"><canvas></canvas></div>
-    <div class="abs tune-wheel" data-axis="y" role="slider" tabindex="0" aria-label="質地" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"><canvas></canvas></div>
-    <div class="abs tune-wheel" data-axis="z" role="slider" tabindex="0" aria-label="色溫" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"><canvas></canvas></div>
+    <button class="abs tune-key tune-draw" id="tuneDraw" type="button" aria-label="就這張" title="就這張" disabled></button>
+    <button class="abs tune-key tune-rand" id="tuneRand" type="button" aria-label="隨機選一張" title="隨機選一張（只抽符合篩選的卡）"></button>
+    <span class="abs tune-fplate" data-k="genre">類別<small>GENRE</small></span>
+    <span class="abs tune-fplate" data-k="grade">等級<small>RATING</small></span>
+    <span class="abs tune-fplate" data-k="tier">分級<small>TIER</small></span>
+    <i class="abs tune-fled" data-k="genre"></i><i class="abs tune-fled" data-k="grade"></i><i class="abs tune-fled" data-k="tier"></i>
+    <div class="abs tune-flt" data-k="genre" role="spinbutton" tabindex="0" aria-label="類別篩選"><div class="fdrum"><div class="strip"></div></div></div>
+    <div class="abs tune-flt" data-k="grade" role="spinbutton" tabindex="0" aria-label="等級篩選"><div class="fdrum"><div class="strip"></div></div></div>
+    <div class="abs tune-flt" data-k="tier" role="spinbutton" tabindex="0" aria-label="分級篩選"><div class="fdrum"><div class="strip"></div></div></div>
+    <div class="abs tune-lcd" id="tuneLcd" aria-live="polite"><small>符合 MATCH</small><b><span id="tuneMatch">----</span><em>張</em></b></div>
+    <button class="abs tune-key tune-all" id="tuneAll" type="button" aria-label="篩選全部重設">全部<small>RESET</small></button>
+    <div class="abs tune-wheel" data-axis="x"><canvas></canvas></div>
+    <div class="abs tune-wheel" data-axis="y"><canvas></canvas></div>
+    <div class="abs tune-wheel" data-axis="z"><canvas></canvas></div>
+    <div class="abs tune-wcol" data-axis="x" role="slider" tabindex="0" aria-label="能量" aria-valuemin="0" aria-valuemax="100" aria-valuenow="25"></div>
+    <div class="abs tune-wcol" data-axis="y" role="slider" tabindex="0" aria-label="質地" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"></div>
+    <div class="abs tune-wcol" data-axis="z" role="slider" tabindex="0" aria-label="色溫" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"></div>
   </div></div>
 </div>`;
   }
@@ -366,15 +415,19 @@ html.tune-inapp-lock body{padding-top:120px}
   const jit = (c, k) => { const h = mix(fnv(c.i + ':' + k)); return (((h & 1023) + ((h >>> 10) & 1023)) / 2046 - .5) * .15; };
   const toG = (axis, v) => axis === 'x' ? (v - 3) / 2 : axis === 'y' ? -v / 2 : v / 2;
   const S3 = c => { if (!c.g) c.g = [toG('x', c.x) + jit(c, 'x'), toG('y', c.y) + jit(c, 'y'), toG('z', c.z) + jit(c, 'z')].map(v => Math.max(-1.04, Math.min(1.04, v))); return c.g; };
+  // 一般星星 0.45 亮；篩選掉的壓到 0.06、縮小，只留一層微光看得出整體分布
+  function dimStar(i) { const out = !passes(i), k = out ? 0.06 : 0.45 * (CARDS[i].conf === 0 ? 0.7 : 1);
+    col[i * 3] = base[i * 3] * k; col[i * 3 + 1] = base[i * 3 + 1] * k; col[i * 3 + 2] = base[i * 3 + 2] * k; sizeAttr[i] = out ? 2.2 : 3.2; }
+  function recolor() { if (!THREE_OK) return; for (let i = 0; i < CARDS.length; i++) if (i !== litIdx) dimStar(i); geo.attributes.color.needsUpdate = true; geo.attributes.psize.needsUpdate = true; }
   function light(c) {
     if (!THREE_OK) return;
-    const dimK = 0.45;
-    const dim = i => { const k = dimK * (CARDS[i].conf === 0 ? 0.7 : 1); col[i * 3] = base[i * 3] * k; col[i * 3 + 1] = base[i * 3 + 1] * k; col[i * 3 + 2] = base[i * 3 + 2] * k; sizeAttr[i] = 3.2; };
-    if (litIdx < 0) { for (let i = 0; i < CARDS.length; i++) dim(i); } else dim(litIdx);
+    if (litIdx < 0) { for (let i = 0; i < CARDS.length; i++) dimStar(i); } else dimStar(litIdx);
     litIdx = c.i; col[c.i * 3] = base[c.i * 3]; col[c.i * 3 + 1] = base[c.i * 3 + 1]; col[c.i * 3 + 2] = base[c.i * 3 + 2]; sizeAttr[c.i] = 16;
     geo.attributes.color.needsUpdate = true; geo.attributes.psize.needsUpdate = true;
     const [mx, my, mz] = S3(c); marker.position.set(mx, my, mz); marker.scale.set(.34, .34, 1); marker.material.color.set(CELL_COLOR[c.cell]);
   }
+  // 篩選後一張都不剩：熄掉正在亮的那顆
+  function unlight() { if (!THREE_OK || litIdx < 0) return; const i = litIdx; litIdx = -1; dimStar(i); marker.scale.set(0, 0, 1); geo.attributes.color.needsUpdate = true; geo.attributes.psize.needsUpdate = true; }
 
   // 命中那顆星在頁面上的座標（給「就這張」特效當起點）；星圖沒畫或沒命中就回 null
   function litScreenPos() {
@@ -562,48 +615,56 @@ html.tune-inapp-lock body{padding-top:120px}
   }
 
   // ── 滾筒與讀數 ──────────────────────────────────────────────────────
-  function roll(d, idx) { const st = d.querySelector('.strip'); const n = st.dataset.n | 0; const h = st.firstElementChild.offsetHeight || 1; const mid = (d.clientHeight - h) / 2; st.style.transform = `translateY(${mid - (idx + n) * h}px)`; }
+  // 用小數高度：字條一長，整數高度的誤差會一格一格累積，字就偏離中線
+  function roll(d, idx) { const st = d.querySelector('.strip'); const n = st.dataset.n | 0; const h = st.firstElementChild.getBoundingClientRect().height || 1; const mid = (d.getBoundingClientRect().height - h) / 2; st.style.transform = `translateY(${mid - (idx + n) * h}px)`; }
   const fmt = v => (v < 0 ? '−' : '') + Math.abs(v).toFixed(2);
   function readout(t) { const j = performance.now() - lastTurn < 160; const bs = el.readout.querySelectorAll('b'); const vals = [t.x, t.y, t.z]; bs.forEach((b, i) => { b.textContent = fmt(j ? vals[i] + (Math.random() - .5) * 0.04 : vals[i]); }); if (j) requestAnimationFrame(() => readout(target())); }
   function updateScene() {
     const p = state.p, t = target(); readout(t);
     if (THREE_OK) { PX.position.x = toG('x', rawOf('x', p.x)); PY.position.y = toG('y', rawOf('y', p.y)); PZ.position.z = toG('z', rawOf('z', p.z)); }   // 定位線跟著原始分數走（掃過密集的中段會走得比較慢）
-    if (!previewCard) scan(nearest());
+    if (!previewCard) { const n = nearest(); if (n) scan(n); }
     const cell = cellOf(t.x, t.y, t.z);
     roll(el.dx, t.x >= T.x ? 1 : 0); roll(el.dy, t.y >= T.y ? 1 : 0); roll(el.dz, t.z >= T.z ? 1 : 0); roll(el.dcell, ORDER.indexOf(cell));
-    el.draw.disabled = false;
+    el.draw.disabled = !previewCard;
   }
   function scheduleUpdate() { if (raf) return; raf = requestAnimationFrame(() => { raf = 0; updateScene(); }); }
 
   // ── 輪子：拿像素稿裡的銅帶當貼圖，每一列照圓柱投影取樣，轉動就是稿子本身的滾花在捲 ──
   let SPANS = null; const TILES = {};
-  function wheel(node) {
+  // 2026-11-06 面板第二版：輪子畫面縮成半高（wheel-spans.json 帶 ref＝原稿高 536，貼圖比例不變），
+  // 點擊範圍改成整欄的 hit（含名牌與刻度）；明暗照原稿一格（1438/260 px）一階，不做連續漸層
+  const ART = 1438 / 260;
+  function wheel(node, hit) {
+    hit = hit || node;
     const axis = node.dataset.axis, cv = node.querySelector('canvas'), g = cv.getContext('2d'); const tile = TILES[axis]; let W = 0, H = 0, D = 1, shade = null;
     function size() { const r = node.getBoundingClientRect(); D = Math.min(2, global.devicePixelRatio || 1); W = Math.max(8, Math.round(r.width * D)); H = Math.max(8, Math.round(r.height * D)); cv.width = W; cv.height = H; shade = null; draw(); }
     function draw() {
       const sp = SPANS && SPANS[axis]; g.clearRect(0, 0, W, H); if (!sp || !tile || !tile.complete || !tile.naturalWidth) return; const v = state.p[axis];
       const sx = W / sp.w, sy = H / sp.h; const y0 = sp.y0 * sy, y1 = sp.y1 * sy, cy = (y0 + y1) / 2, R = (y1 - y0) / 2;
-      const th = tile.naturalHeight; const scale = sy * (sp.h / 536); const off = (v * 4.2 + state.spin[axis]) * scale;
+      const th = tile.naturalHeight; const scale = sy * ((sp.ref || sp.h) / 536); const off = (v * 4.2 + state.spin[axis]) * scale;
       g.imageSmoothingEnabled = false;
       for (let y = Math.ceil(y0); y < Math.floor(y1); y++) { const k = (cy - y) / R; if (k <= -1 || k >= 1) continue;
         const row = sp.rows[Math.min(sp.rows.length - 1, Math.max(0, Math.floor(y / sy) - sp.y0))]; if (!row) continue;
         const u = R * Math.asin(k); let t = ((u + off) / scale) % th; if (t < 0) t += th;
         g.drawImage(tile, 0, Math.floor(t), tile.naturalWidth, 1, row[0] * sx, y, (row[1] - row[0]) * sx, 1); }
-      if (!shade) { shade = document.createElement('canvas'); shade.width = W; shade.height = H; const sg = shade.getContext('2d');
-        for (let y = Math.ceil(y0); y < Math.floor(y1); y++) { const k = (cy - y) / R; if (k <= -1 || k >= 1) continue; const row = sp.rows[Math.min(sp.rows.length - 1, Math.max(0, Math.floor(y / sy) - sp.y0))]; if (!row) continue;
-          const c = Math.sqrt(1 - k * k); const dark = Math.min(.85, Math.pow(1 - c, 1.2) * 0.95); sg.fillStyle = `rgba(0,0,0,${dark})`; sg.fillRect(row[0] * sx, y, (row[1] - row[0]) * sx, 1);
-          if (c > 0.92) { sg.fillStyle = `rgba(255,240,200,${(c - 0.92) * 1.2})`; sg.fillRect(row[0] * sx, y, (row[1] - row[0]) * sx, 1); } } }
+      if (!shade) { shade = document.createElement('canvas'); shade.width = W; shade.height = H; const sg = shade.getContext('2d'); const cell = ART * sy;
+        for (let y = Math.ceil(y0); y < Math.floor(y1); y++) { const row = sp.rows[Math.min(sp.rows.length - 1, Math.max(0, Math.floor(y / sy) - sp.y0))]; if (!row) continue;
+          const yc = y0 + (Math.floor((y - y0) / cell) + 0.5) * cell; const k = Math.max(-0.999, Math.min(0.999, (cy - yc) / R));   // 這一格中心的高度
+          const c = Math.sqrt(1 - k * k); const dark = Math.round(Math.min(.85, Math.pow(1 - c, 1.2) * 0.95) * 10) / 10;
+          if (dark > 0) { sg.fillStyle = `rgba(0,0,0,${dark})`; sg.fillRect(row[0] * sx, y, (row[1] - row[0]) * sx, 1); }
+          const hl = c > 0.92 ? Math.round((c - 0.92) * 1.2 / 0.05) * 0.05 : 0;
+          if (hl > 0) { sg.fillStyle = `rgba(255,240,200,${hl})`; sg.fillRect(row[0] * sx, y, (row[1] - row[0]) * sx, 1); } } }
       g.drawImage(shade, 0, 0);
     }
     if (tile) tile.addEventListener('load', draw);
     let drag = null;
-    const sync = () => { node.setAttribute('aria-valuenow', Math.round(state.p[axis])); draw(); };
+    const sync = () => { hit.setAttribute('aria-valuenow', Math.round(state.p[axis])); draw(); };
     const setV = nv => { const v0 = state.p[axis]; state.p[axis] = Math.max(0, Math.min(100, nv)); sync(); sweep(axis, v0, state.p[axis]); scheduleUpdate(); };
-    node.addEventListener('pointerdown', e => { cancelTravel(); drag = { y: e.clientY, v: state.p[axis], ly: e.clientY, acc: 0 }; node.setPointerCapture(e.pointerId); e.preventDefault(); ensureAudio(); cfg.onGesture?.(state.audioOn); });
-    node.addEventListener('pointermove', e => { if (drag) setV(drag.v + (e.clientY - drag.y) * 0.2); });
-    const end = () => { if (drag) drag.v = state.p[axis]; drag = null; cfg.onGesture?.(state.audioOn); }; node.addEventListener('pointerup', end); node.addEventListener('pointercancel', () => { drag = null; });
-    node.addEventListener('wheel', e => { e.preventDefault(); ensureAudio(); cancelTravel(); setV(state.p[axis] - Math.sign(e.deltaY)); }, { passive: false });
-    node.addEventListener('keydown', e => { const up = e.key === 'ArrowUp' || e.key === 'ArrowRight', dn = e.key === 'ArrowDown' || e.key === 'ArrowLeft'; if (!up && !dn) return; e.preventDefault(); cancelTravel();
+    hit.addEventListener('pointerdown', e => { cancelTravel(); drag = { y: e.clientY, v: state.p[axis], ly: e.clientY, acc: 0 }; hit.setPointerCapture(e.pointerId); e.preventDefault(); ensureAudio(); cfg.onGesture?.(state.audioOn); });
+    hit.addEventListener('pointermove', e => { if (drag) setV(drag.v + (e.clientY - drag.y) * 0.2); });
+    const end = () => { if (drag) drag.v = state.p[axis]; drag = null; cfg.onGesture?.(state.audioOn); }; hit.addEventListener('pointerup', end); hit.addEventListener('pointercancel', () => { drag = null; });
+    hit.addEventListener('wheel', e => { e.preventDefault(); ensureAudio(); cancelTravel(); setV(state.p[axis] - Math.sign(e.deltaY)); }, { passive: false });
+    hit.addEventListener('keydown', e => { const up = e.key === 'ArrowUp' || e.key === 'ArrowRight', dn = e.key === 'ArrowDown' || e.key === 'ArrowLeft'; if (!up && !dn) return; e.preventDefault(); cancelTravel();
       setV(state.p[axis] + (up ? 1 : -1) * (e.shiftKey ? 10 : 1)); });
     new ResizeObserver(size).observe(node); size();
     return { draw: sync, set: setV };
@@ -615,13 +676,14 @@ html.tune-inapp-lock body{padding-top:120px}
   // 百分位空間的最近點常常落在門檻另一側；這格一張都沒有才放寬到全部
   function targetCell() { const t = target(); return cellOf(t.x, t.y, t.z); }
   function nearest() { const p = state.p, tc = targetCell(); let best = -1, bd = Infinity, any = 0, ad = Infinity;
-    for (let i = 0; i < N; i++) { const c = CARDS[i]; const d = (c.px - p.x) ** 2 + (c.py - p.y) ** 2 + (c.pz - p.z) ** 2; if (d < ad) { ad = d; any = i; } if (c.cell === tc && d < bd) { bd = d; best = i; } }
+    for (let i = 0; i < N; i++) { if (!passes(i)) continue; const c = CARDS[i]; const d = (c.px - p.x) ** 2 + (c.py - p.y) ** 2 + (c.pz - p.z) ** 2; if (d < ad) { ad = d; any = i; } if (c.cell === tc && d < bd) { bd = d; best = i; } }
+    if (ad === Infinity) return null;   // 篩選後一張都不剩
     return CARDS[best >= 0 ? best : any]; }
   function sweep(axis, v0, v1) {
     if (v0 === v1) return; lastTurn = performance.now(); stopPreview(); armPreview(); hideHolo(); sfxTurn(axis, v0, v1);
     const o = axis === 'x' ? ['py', 'pz'] : axis === 'y' ? ['px', 'pz'] : ['px', 'py']; const key = 'p' + axis;
     const R = SWEEP_R; const a = Math.min(v0, v1), b = Math.max(v0, v1), r2 = R * R; const p = { px: state.p.x, py: state.p.y, pz: state.p.z }; const hit = [];
-    for (let i = 0; i < N; i++) { const c = CARDS[i]; const v = c[key]; if (v1 > v0) { if (v <= a || v > b) continue; } else { if (v < a || v >= b) continue; }
+    for (let i = 0; i < N; i++) { if (!passes(i)) continue; const c = CARDS[i]; const v = c[key]; if (v1 > v0) { if (v <= a || v > b) continue; } else { if (v < a || v >= b) continue; }
       const d = (c[o[0]] - p[o[0]]) ** 2 + (c[o[1]] - p[o[1]]) ** 2; if (d <= r2) hit.push(c); }
     hit.sort((u, w) => v1 > v0 ? u[key] - w[key] : w[key] - u[key]);
     for (const c of hit) queue.push(c); while (queue.length > 14) queue.shift();
@@ -1232,20 +1294,85 @@ html.tune-inapp-lock body{padding-top:120px}
   function sfxStop() { if (!AC) return; const t = AC.currentTime; noiseGain.gain.setTargetAtTime(0, t, 0.08); whistleGain.gain.setTargetAtTime(0, t, 0.06); }
   function sfxTick() { if (!state.audioOn || !AC || AC.state !== 'running') return; const t = AC.currentTime; const o = AC.createOscillator(), g = AC.createGain(); o.type = 'square'; o.frequency.value = 1400; g.gain.setValueAtTime(0.0001, t); g.gain.exponentialRampToValueAtTime(0.018, t + 0.002); g.gain.exponentialRampToValueAtTime(0.0001, t + 0.025); o.connect(g).connect(AC.destination); o.start(t); o.stop(t + 0.03); }
   function sfxClick() { if (!state.audioOn) return; ensureAudio(); if (!AC) return; const t = AC.currentTime; const o = AC.createOscillator(), g = AC.createGain(); o.type = 'square'; o.frequency.value = 180; g.gain.setValueAtTime(0.0001, t); g.gain.exponentialRampToValueAtTime(0.03, t + 0.004); g.gain.exponentialRampToValueAtTime(0.0001, t + 0.05); o.connect(g).connect(AC.destination); o.start(t); o.stop(t + 0.06); }
+  function sfxTick() { if (!state.audioOn) return; ensureAudio(); if (!AC || AC.state !== 'running') return; const t = AC.currentTime; const o = AC.createOscillator(), g = AC.createGain(); o.type = 'square'; o.frequency.value = 1100; g.gain.setValueAtTime(0.0001, t); g.gain.exponentialRampToValueAtTime(0.018, t + 0.002); g.gain.exponentialRampToValueAtTime(0.0001, t + 0.025); o.connect(g).connect(AC.destination); o.start(t); o.stop(t + 0.03); }
 
   // ── 抽卡：同頻率再來一張（高斯加權隨機，看過 200 張內不重複；稀有度由呼叫端的結果頁處理） ──
   function weightedPick() {
     const t = target(); const [sx, sy, sz] = SIGMA; const seen = new Set(state.seen); const ws = new Float64Array(N); let g = 0, n = 0;
-    const tc = cellOf(t.x, t.y, t.z); const only = CARDS.some((c, i) => c.cell === tc && !seen.has(i));   // 這格還有沒看過的才限定這格
-    for (let i = 0; i < N; i++) { const c = CARDS[i]; if (seen.has(i) || (only && c.cell !== tc)) continue; const d2 = ((c.x - t.x) / sx) ** 2 + ((c.y - t.y) / sy) ** 2 + ((c.z - t.z) / sz) ** 2; ws[i] = Math.exp(-d2 / 2); g += ws[i]; n++; }
+    const tc = cellOf(t.x, t.y, t.z); const only = CARDS.some((c, i) => i < N && passes(i) && c.cell === tc && !seen.has(i));   // 這格還有沒看過的才限定這格
+    for (let i = 0; i < N; i++) { const c = CARDS[i]; if (!passes(i) || seen.has(i) || (only && c.cell !== tc)) continue; const d2 = ((c.x - t.x) / sx) ** 2 + ((c.y - t.y) / sy) ** 2 + ((c.z - t.z) / sz) ** 2; ws[i] = Math.exp(-d2 / 2); g += ws[i]; n++; }
     const fl = n ? FLOOR * g / n / (1 - FLOOR) : 0; let sum = 0;
-    for (let i = 0; i < N; i++) { if (seen.has(i) || (only && CARDS[i].cell !== tc)) continue; ws[i] += fl; sum += ws[i]; }
+    for (let i = 0; i < N; i++) { if (!passes(i) || seen.has(i) || (only && CARDS[i].cell !== tc)) continue; ws[i] += fl; sum += ws[i]; }
     if (sum <= 0) return null; let u = Math.random() * sum; for (let i = 0; i < N; i++) { u -= ws[i]; if (u <= 0) return CARDS[i]; } return CARDS[N - 1];
   }
+  // ── 篩選（2026-11-06 店主：類別、等級＝星等、分級＝殿堂／傳奇／普通那種）──────────────────
+  // 三個條件同時成立才算符合；不符合的星星壓暗，掃描、最近一張、同頻率再抽、RADIO、隨機都只落在符合的卡。
+  // 搜尋不受篩選限制（明確指名的就照找）。分級的算法與唱片櫃一致：頂點旗標 > 人工指定 > 神作名單 > 經典＋硬蕊＋（冷門 5 加 1）。
+  const FILTER_OPTS = {
+    genre: [['all', '全部'], ['rock', '搖滾'], ['jazz', '爵士'], ['electronic', '電子'], ['pop', '流行'], ['soul', '靈魂'], ['folk', '民謠'], ['hiphop', '嘻哈'], ['world', '世界'], ['classical', '古典'], ['blues', '藍調']],
+    grade: [['all', '全部'], ['c4', '經典4★+'], ['c5', '經典5★'], ['o4', '冷門4★+'], ['o5', '冷門5★'], ['h4', '硬蕊4★+'], ['h5', '硬蕊5★'], ['s10', '總分10+'], ['s12', '總分12+']],
+    tier: [['all', '全部'], ['hall', '殿堂'], ['pearl', '流亡'], ['heresy', '異端'], ['legendary', '傳奇'], ['epic', '史詩'], ['uncommon', '獨特'], ['rare', '稀有'], ['common', '普通']],
+  };
+  const FILT = { genre: 0, grade: 0, tier: 0 };
+  let PASS = null, passN = 0;
+  function tierOfCard(c) {
+    if (c.tier) return c.tier;
+    try { const t = cfg.tierOf?.(c); if (t) return t; } catch (_) {}
+    const sc = (+c.classic || 0) + (+c.accessibility || 0) + ((+c.obscurity || 0) >= 5 ? 1 : 0);
+    return sc >= 9 ? 'legendary' : sc >= 8 ? 'epic' : sc >= 7 ? 'uncommon' : sc >= 6 ? 'rare' : 'common';
+  }
+  function gradeOk(card, k) {
+    if (k === 'all') return true;
+    const cl = +card.classic || 0, ob = +card.obscurity || 0, hd = +card.accessibility || 0;
+    if (!cl && !ob && !hd) return false;
+    switch (k) { case 'c4': return cl >= 4; case 'c5': return cl >= 5; case 'o4': return ob >= 4; case 'o5': return ob >= 5;
+      case 'h4': return hd >= 4; case 'h5': return hd >= 5; case 's10': return cl + ob + hd >= 10; case 's12': return cl + ob + hd >= 12; }
+    return true;
+  }
+  function filterActive() { return FILT.genre || FILT.grade || FILT.tier; }
+  function computePass() {
+    const g = FILTER_OPTS.genre[FILT.genre][0], gr = FILTER_OPTS.grade[FILT.grade][0], t = FILTER_OPTS.tier[FILT.tier][0];
+    if (!filterActive()) { PASS = null; passN = N; return; }
+    PASS = new Uint8Array(CARDS.length); passN = 0;
+    for (let i = 0; i < N; i++) { const c = CARDS[i], card = c.card;
+      if (g !== 'all' && !(card.genres || []).includes(g)) continue;
+      if (t !== 'all' && c.tier !== t) continue;
+      if (!gradeOk(card, gr)) continue;
+      PASS[i] = 1; passN++; }
+    if (CARDS.length > N) PASS[N] = 1;   // 彩蛋不受篩選（本來就只有搜尋得到）
+  }
+  const passes = i => !PASS || PASS[i] === 1;
+  // 切換篩選：重算、重新上色；目前這張不符合就轉到最近一張符合的（輪子跟著轉過去）
+  function setFilter(kind, idx) {
+    const opts = FILTER_OPTS[kind]; if (!opts) return;
+    idx = ((idx % opts.length) + opts.length) % opts.length; if (FILT[kind] === idx) { syncFilterUI?.(); return; }
+    FILT[kind] = idx; filterChanged();
+  }
+  // 「全部」鍵：三個條件一起歸零
+  function resetFilters() { if (!filterActive()) { syncFilterUI?.(); return; } FILT.genre = FILT.grade = FILT.tier = 0; filterChanged(); }
+  function filterChanged() {
+    computePass(); recolor(); syncFilterUI?.();
+    if (!state.built) return;
+    if (previewCard && (previewCard.egg || passes(previewCard.i))) return;
+    cancelTravel(); stopPreview(); hideHolo(); clearQueue(); previewCard = null;
+    const n = nearest(); if (n) { el.hint.textContent = modeHint(); travelTo(n, true); }
+    else { unlight(); setNowPlaying(false); el.now.hidden = true; el.draw.disabled = true; el.hint.textContent = '沒有符合的卡：換個篩選，或按「全部」'; }
+  }
+  // 隨機選一張（2026-11-06 店主：就這張旁邊多一顆「隨機」）：在符合篩選的卡裡均勻抽，最近 200 張不重複，轉過去停在它上面
+  const randSeen = [];
+  function randomPick() {
+    const skip = new Set(randSeen); const ids = [];
+    for (let i = 0; i < N; i++) if (passes(i) && !skip.has(i) && (!previewCard || previewCard.i !== i)) ids.push(i);
+    if (!ids.length) { for (let i = 0; i < N; i++) if (passes(i)) ids.push(i); randSeen.length = 0; }
+    if (!ids.length) return null;
+    const c = CARDS[ids[Math.floor(Math.random() * ids.length)]]; randSeen.push(c.i); if (randSeen.length > 200) randSeen.shift();
+    travelTo(c); return c;
+  }
+  let syncFilterUI = null;
   function emit(c) {
     if (!c) return;
     if (c.egg) { global.open(c.card.link, '_blank', 'noopener'); return; }   // 彩蛋不進結果頁，就這張直接開政策島（2026-10-28 店主）
-    state.seen.push(c.i); if (state.seen.length > 200) state.seen.shift();
+    state.seen.push(c.i); if (state.seen.length > 200) state.seen.shift(); backFrom = c;
     // 星圖上正在試聽的就是這張：不停，交給結果頁接著播（2026-10-25 店主：按就這張後試聽不要從頭開始）
     const continuing = playing === c;
     if (continuing) { clearTimeout(idleTimer); playing = null; setNowPlaying(false); } else stopPreview();
@@ -1253,15 +1380,83 @@ html.tune-inapp-lock body{padding-top:120px}
     const t = target();
     cfg.onResult?.({ card: c.card, cell: c.cell, cellName: NAMES[c.cell], coords: { x: c.x, y: c.y, z: c.z }, target: t, targetCell: cellOf(t.x, t.y, t.z), targetCellName: NAMES[cellOf(t.x, t.y, t.z)], continuing });
   }
+  // 從結果頁回到星圖（2026-11-06 店主：「從專輯卡退回上一頁時不要重播音樂，繼續播完」）：
+  // 回來的是同一張就不重播——結果頁那段試聽還在播就接手播完（播完照常交給 RADIO 換下一張），已經播完或被停掉就保持安靜
+  let backFrom = null;
+  function playerState() { let v = null; try { const off = cfg.player?.onStateChange?.(st => { v = st; }); off?.(); } catch (_) {} return v; }
+  function liveFor(c) { const st = playerState(); return st && c && st.artist === c.card.artist && st.album === c.card.album && (st.status === 'playing' || st.status === 'loading') ? st : null; }
+  // 給站上的「回星圖」鍵問：要不要讓結果頁的試聽繼續（是就別停）
+  function keepsPlaying() { return !!(previewCard && backFrom === previewCard && !previewCard.egg && liveFor(previewCard)); }
+  function resumeAfterResult() {
+    const c = previewCard, back = backFrom; backFrom = null;
+    if (!c) return;
+    if (back !== c || c.egg) { armPreview(); return; }
+    clearTimeout(idleTimer);
+    idleTimer = setTimeout(() => { if (previewCard === c) { settleCover(c); showHolo(c); } }, 700);
+    const st = liveFor(c);
+    if (st) { playing = c; watchPlayer(); if (st.status === 'playing') { audibleCard = c; setNowPlaying(true); } else setNowPlaying(false, '找試聽中'); }
+    else if (state.radio) radioNext(RADIO_GAP_MS);
+  }
   function pickAgain() { const c = weightedPick(); if (c) { previewCard = c; light(c); emit(c); } }
+
+  // ── 篩選滾筒（2026-11-06 面板第二版）──────────────────────────────────
+  // 上下拖：字跟著手指 1:1 走、每過一格喀一聲＋輕震；放手停在最近一格才真的套用（只重算一次）。
+  // 點滾筒上半＝上一個、下半＝下一個；滑鼠滾輪、方向鍵也行；選項頭尾相接。全部在面板上操作，不開任何視窗。
+  // 字條放三份一樣的選項，位置 P 可以是小數；跨過頭尾時悄悄平移整整一份（畫面完全一樣），轉起來永遠是最短方向
+  // 星號用像素圖（DotGothic16 沒有 ★，備用字型的星又小又糊）
+  const STAR = '<svg class="st" viewBox="0 0 7 7" shape-rendering="crispEdges" aria-hidden="true"><path fill="currentColor" d="M3 0h1v2H3zM0 2h7v1H0zM1 3h5v1H1zM2 4h3v1H2zM1 5h2v1H1zM4 5h2v1H4zM0 6h2v1H0zM5 6h2v1H5z"/></svg><span class="sr">星</span>';
+  function wireFilters(host) {
+    const drums = {};
+    host.querySelectorAll('.tune-flt').forEach(hit => {
+      const k = hit.dataset.k, opts = FILTER_OPTS[k], n = opts.length, strip = hit.querySelector('.strip'), win = hit.querySelector('.fdrum');
+      const one = opts.map(o => `<span>${esc(o[1]).replace(/★/g, STAR)}</span>`).join(''); strip.innerHTML = one + one + one;
+      const spans = [...strip.children], wrap = i => ((i % n) + n) % n, rowH = () => spans[0].getBoundingClientRect().height || 1;
+      hit.setAttribute('aria-valuemin', '0'); hit.setAttribute('aria-valuemax', String(n - 1));
+      let P = 0, drag = null, wheelT = 0;
+      const at = (pos, anim) => {
+        P = pos; strip.classList.toggle('anim', !!anim); const h = rowH();
+        strip.style.transform = `translateY(${(win.getBoundingClientRect().height - h) / 2 - (pos + n) * h}px)`;
+        const c = Math.round(pos) + n, all = wrap(Math.round(pos)) === 0; spans.forEach((sp, j) => { const on = j === c; sp.classList.toggle('sel', on); sp.classList.toggle('all', on && all); });
+      };
+      const settle = () => { const r = Math.round(P), w = wrap(r); strip.classList.remove('anim'); if (w !== r) at(w + (P - r), false); };
+      strip.addEventListener('transitionend', settle);
+      const show = (idx, anim) => { const r = Math.round(P); let d = idx - wrap(r); if (d > n / 2) d -= n; else if (d < -n / 2) d += n; at(r + d, anim && d !== 0 || anim && P !== r); if (!anim) settle();
+        hit.setAttribute('aria-valuenow', String(idx)); hit.setAttribute('aria-valuetext', opts[idx][1]); };
+      const tick = () => { sfxTick(); try { global.navigator.vibrate?.(6); } catch (_) {} };
+      hit.addEventListener('pointerdown', e => { settle(); drag = { y0: e.clientY, base: P, last: wrap(Math.round(P)), moved: false }; try { hit.setPointerCapture(e.pointerId); } catch (_) {} e.preventDefault(); });
+      hit.addEventListener('pointermove', e => { if (!drag) return; const dy = e.clientY - drag.y0; if (!drag.moved && Math.abs(dy) < 6) return; drag.moved = true;
+        let pos = drag.base - dy / rowH(); while (pos < -0.5) { drag.base += n; pos += n; } while (pos >= n - 0.5) { drag.base -= n; pos -= n; }
+        at(pos, false); const w = wrap(Math.round(pos)); if (w !== drag.last) { drag.last = w; tick(); } });
+      hit.addEventListener('pointerup', e => { if (!drag) return; const d = drag; drag = null;
+        if (d.moved) { setFilter(k, wrap(Math.round(P))); return; }
+        const r = hit.getBoundingClientRect(); tick(); setFilter(k, FILT[k] + ((e.clientY - r.top) / r.height < 0.598 ? -1 : 1)); });
+      hit.addEventListener('pointercancel', () => { if (!drag) return; drag = null; show(FILT[k], true); });
+      hit.addEventListener('wheel', e => { e.preventDefault(); const now = performance.now(); if (!e.deltaY || now - wheelT < 120) return; wheelT = now; tick(); setFilter(k, FILT[k] + Math.sign(e.deltaY)); }, { passive: false });
+      hit.addEventListener('keydown', e => { let to = null;
+        if (e.key === 'ArrowDown' || e.key === 'ArrowRight' || e.key === 'PageDown') to = FILT[k] + 1; else if (e.key === 'ArrowUp' || e.key === 'ArrowLeft' || e.key === 'PageUp') to = FILT[k] - 1;
+        else if (e.key === 'Home') to = 0; else if (e.key === 'End') to = n - 1; if (to === null) return; e.preventDefault(); tick(); setFilter(k, to); });
+      drums[k] = { show };
+      show(FILT[k], false);
+    });
+    syncFilterUI = (anim = true) => {
+      for (const k in drums) drums[k].show(FILT[k], anim);
+      host.querySelectorAll('.tune-fled').forEach(l => l.classList.toggle('on', FILT[l.dataset.k] > 0));
+      el.match.textContent = N ? passN.toLocaleString('en-US') : '----'; el.lcd.classList.toggle('zero', !!N && passN === 0);
+      el.rand.disabled = !N || passN === 0; el.all.classList.toggle('on', !!filterActive());
+    };
+    el.rand.onclick = () => { if (!N) return; sfxClick(); randomPick(); };
+    el.all.onclick = () => { sfxClick(); resetFilters(); };
+    syncFilterUI(false);
+  }
 
   // ── 進出 ──────────────────────────────────────────────────────────
   let leverT = 0;
+  const modeHint = () => passN === 0 && N ? '沒有符合的卡：換個篩選，或按「全部」' : state.radio ? 'RADIO：試聽播完自動轉到下一張　轉輪隨時換台' : 'SCAN：轉輪連續掃過　拖曳旋轉　滾輪縮放';
   function setModeUI(animate) {
     const f = state.radio, pos = f ? 'down' : 'up';
     el.ledTop.classList.toggle('on', !f); el.ledBot.classList.toggle('on', f); el.swTop.classList.toggle('on', !f); el.swBot.classList.toggle('on', f); el.mode.setAttribute('aria-pressed', String(f));
     clearTimeout(leverT); if (animate) { el.lever.dataset.pos = 'mid'; leverT = setTimeout(() => { el.lever.dataset.pos = pos; }, 70); } else el.lever.dataset.pos = pos;
-    el.hint.textContent = f ? 'RADIO：試聽播完自動轉到下一張　轉輪隨時換台' : 'SCAN：轉輪連續掃過　拖曳旋轉　滾輪縮放';
+    el.hint.textContent = modeHint();
   }
   function setAudioUI() { el.spk.setAttribute('aria-pressed', String(state.audioOn)); }
   // on：開或關；fromSpk：是不是喇叭鈕按出來的（要回寫站上的開關、這一下手勢可以武裝音訊）
@@ -1292,7 +1487,7 @@ html.tune-inapp-lock body{padding-top:120px}
     host.innerHTML = html();
     el = { stage: host.querySelector('#tuneStage'), gl: host.querySelector('#tuneGl'), readout: host.querySelector('#tuneReadout'), spk: host.querySelector('#tuneSpk'), back: host.querySelector('#tuneBack'), now: host.querySelector('#tuneNow'), msg: host.querySelector('#tuneMsg'),
       dx: host.querySelector('#tuneDx'), dy: host.querySelector('#tuneDy'), dz: host.querySelector('#tuneDz'), dcell: host.querySelector('#tuneDcell'), cellStrip: host.querySelector('#tuneCellStrip'),
-      mode: host.querySelector('#tuneMode'), lever: host.querySelector('#tuneLever'), hint: host.querySelector('#tuneHint'), search: host.querySelector('#tuneSearch'), searchGo: host.querySelector('#tuneSearchGo'), sugg: host.querySelector('#tuneSugg'), swTop: host.querySelector('#tuneSwTop'), swBot: host.querySelector('#tuneSwBot'), ledTop: host.querySelector('#tuneLedTop'), ledBot: host.querySelector('#tuneLedBot'), draw: host.querySelector('#tuneDraw'), console: host.querySelector('#tuneConsole'), holo: host.querySelector('#tuneHolo'), fx: host.querySelector('#tuneHoloFx'), holoBtn: host.querySelector('#tuneHoloBtn') };
+      rand: host.querySelector('#tuneRand'), all: host.querySelector('#tuneAll'), lcd: host.querySelector('#tuneLcd'), match: host.querySelector('#tuneMatch'), mode: host.querySelector('#tuneMode'), lever: host.querySelector('#tuneLever'), hint: host.querySelector('#tuneHint'), search: host.querySelector('#tuneSearch'), searchGo: host.querySelector('#tuneSearchGo'), sugg: host.querySelector('#tuneSugg'), swTop: host.querySelector('#tuneSwTop'), swBot: host.querySelector('#tuneSwBot'), ledTop: host.querySelector('#tuneLedTop'), ledBot: host.querySelector('#tuneLedBot'), draw: host.querySelector('#tuneDraw'), console: host.querySelector('#tuneConsole'), holo: host.querySelector('#tuneHolo'), fx: host.querySelector('#tuneHoloFx'), holoBtn: host.querySelector('#tuneHoloBtn') };
     trackViewport(host);
     wireHoloDrag(); wireBoatClick();
     el.back.onclick = () => cfg.onBack?.();
@@ -1304,8 +1499,9 @@ html.tune-inapp-lock body{padding-top:120px}
       if (!state.holo) hideHolo(); else if (previewCard && performance.now() - lastTurn > 700) showHolo(previewCard); };
     el.mode.onclick = () => { state.radio = !state.radio; setModeUI(true); sfxClick(); radioToggled(); };
     el.now.onclick = () => { if (previewCard) emit(previewCard); };
-    el.draw.onclick = () => { if (!previewCard) return; if (!previewCard.egg && previewCard.cell !== targetCell()) scan(nearest()); emit(previewCard); };
+    el.draw.onclick = () => { if (!previewCard) return; if (!previewCard.egg && previewCard.cell !== targetCell()) { const n = nearest(); if (n) scan(n); } emit(previewCard); };
     setAudioUI(); setModeUI(); setHoloUI();
+    wireFilters(host);
     let data;
     // 星圖程式庫（three.js，CDN）跟卡池資料一起等，但最多等 8 秒：等不到就只用面板。
     // 2026-10-24 店主錄影：加到主畫面的 App 點進來一片白——舊寫法在呼叫端先 await three 才開始畫面板，CDN 卡住就永遠白著
@@ -1313,17 +1509,18 @@ html.tune-inapp-lock body{padding-top:120px}
     try { [data] = await Promise.all([loadData(), three]); } catch (e) { el.msg.textContent = e.message || '載入失敗'; return; }
     buildCards(data);
     if (!N) { el.msg.textContent = '卡池裡沒有座標'; return; }
+    syncFilterUI(false);
     // 開場位置：三軸各在中段（百分位 30–70）隨機（2026-10-26 店主：每次進來都停在同一張）
     for (const k of ['x', 'y', 'z']) state.p[k] = 30 + Math.random() * 40;
     el.msg.hidden = true;
     // 滾筒：每個前後各接一圈
-    { const items = ORDER.map(k => `<span style="color:${CELL_COLOR[k]};text-shadow:0 0 1cqw ${CELL_COLOR[k]}">${NAMES[k]}</span>`); el.cellStrip.dataset.n = items.length; el.cellStrip.innerHTML = items.join('') + items.join('') + items.join(''); }
+    { const items = ORDER.map(k => `<span style="color:${CELL_COLOR[k]}">${NAMES[k]}</span>`); el.cellStrip.dataset.n = items.length; el.cellStrip.innerHTML = items.join('') + items.join('') + items.join(''); }
     host.querySelectorAll('.tune-drum .strip').forEach(st => { if (st.id === 'tuneCellStrip') return; const items = [...st.children].map(e => e.outerHTML); st.dataset.n = items.length; st.innerHTML = items.join('') + items.join('') + items.join(''); });
     // 輪子素材
-    try { SPANS = await fetch('tune/wheel-spans.json').then(r => r.json()); } catch (_) { SPANS = null; }
-    for (const k of ['x', 'y', 'z']) { const im = new Image(); im.src = `tune/tile-${k}.png`; TILES[k] = im; }
+    try { SPANS = await fetch(`tune/wheel-spans.json?v=${AV}`).then(r => r.json()); } catch (_) { SPANS = null; }
+    for (const k of ['x', 'y', 'z']) { const im = new Image(); im.src = `tune/tile-${k}.png?v=${AV}`; TILES[k] = im; }
     try { buildScene(); } catch (e) { console.warn('[tune] 星圖建不起來，只用面板', e); THREE_OK = false; }
-    host.querySelectorAll('.tune-wheel').forEach(n => { WHEELS[n.dataset.axis] = wheel(n); });
+    host.querySelectorAll('.tune-wheel').forEach(n => { WHEELS[n.dataset.axis] = wheel(n, host.querySelector(`.tune-wcol[data-axis="${n.dataset.axis}"]`)); });
     wireSearch();
     new ResizeObserver(() => scheduleUpdate()).observe(el.console);
     buildAudio();
@@ -1409,9 +1606,9 @@ html.tune-inapp-lock body{padding-top:120px}
     // 建不起來時把原因寫在畫面上（2026-10-24 店主：加到主畫面的 App 點進來一片空白，現場看不到錯誤）
     if (!state.built) { try { await build(); } catch (e) { console.error('[tune]', e); const host = cfg.host?.(), msg = host?.querySelector('#tuneMsg'), text = '頻率光譜載入失敗：' + (e?.message || e);
       if (msg) { msg.hidden = false; msg.textContent = text; } else if (host) host.innerHTML = `<p style="margin:0;padding:24px;min-height:50vh;background:#0b0c10;color:#e9e2c8">${esc(text)}</p>`; } }
-    else { setAudioUI(); el.draw.disabled = false; hideHolo(); if (previewCard) armPreview(); }   // 從結果頁回來：全像板重新開機（放大時藏起來了）
+    else { setAudioUI(); el.draw.disabled = !previewCard; hideHolo(); resumeAfterResult(); }   // 從結果頁回來：全像板重新開機（放大時藏起來了）；同一張不重播
   }
-  function stop() { clearTimeout(radioT); state.visible = false; cancelTravel(); stopPreview(); sfxStop(); releaseSfx(); hideHolo(); inappLock(false); }
+  function stop() { clearTimeout(radioT); backFrom = null; state.visible = false; cancelTravel(); stopPreview(); sfxStop(); releaseSfx(); hideHolo(); inappLock(false); }
 
-  global.DipTune = { configure, start, stop, pickAgain, setAudio, litScreenPos, boatScreenPos, warpStart, CELL_COLOR, get state() { return state; } };
+  global.DipTune = { configure, start, stop, pickAgain, keepsPlaying, setAudio, litScreenPos, boatScreenPos, warpStart, CELL_COLOR, setFilter, randomPick, FILTER_OPTS, get filter() { return { ...FILT, matched: passN }; }, get state() { return state; } };
 })(window);

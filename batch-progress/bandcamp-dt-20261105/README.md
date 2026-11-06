@@ -34,3 +34,9 @@
 
 第二輪（ml71–73、md42–43，卡單 232）：上線 53、落目標格 44，PR #403／#404／#405。整條 Bandcamp 線（md37／38、ml66／67、兩輪卡單）上線 200、落恍惚／頹靡 164。
 店主：「鼓推進有時候其實也沒關係，給我看那些名單」→ `beat-candidates.json` 473 張＝研究層判有拍推進而汰的 93 張（各批 `dropped-research.json`＋rulings 理由）＋第二輪前標籤篩掉的 380 張；勾選頁 artifact `https://claude.ai/artifact/VkquPFK8sauuHedAogkcC9`（db `want`＝要）。
+
+## 第三輪：有鼓名單 473 張全部上架（2026-11-06）
+
+店主：「有些要死不活的音樂也會有鼓推進」→ CUR-DISPATCH 加「有鼓不等於躁」（PR #407）；「全都上架吧」。
+卡單依預估格切十批：恍惚 `pick-ml74.json`～`pick-ml81.json`（各約 47），頹靡 `pick-md44.json`、`pick-md45.json`（各約 48）。每列 `source`＝研究判有鼓／標籤篩掉，`priorDrop`＝當初汰的理由；研究判有鼓的 93 張在原批 `batch-progress/add-20261106-<批>/dropped-research.json` 已有研究稿，可直接沿用（`priorDrop` 開頭是原批號）。
+條號：ml74 24361、ml75 24441、ml76 24521、ml77 24601、ml78 24681、ml79 24761、ml80 24841、ml81 24921、md44 25001、md45 25081。藝人介紹 ar-d-807～816。

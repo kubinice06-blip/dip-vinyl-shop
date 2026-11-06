@@ -1,0 +1,387 @@
+[
+  {
+    "key": "zero cult",
+    "name": "Zero Cult",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Zero Cult 是以色列電子音樂計畫，MusicBrainz 註明為來自以色列的 Emil Ilyayev 的電子音樂計畫。",
+            "src": "https://musicbrainz.org/ws/2/artist/?query=artist:%22Zero%20Cult%22&fmt=json",
+            "from": "new",
+            "single": true
+          },
+          {
+            "f": "Zero Cult 的 Bandcamp 主頁標示以色列，曲風涵蓋 progressive trance、ambient、breaks、chillout、downtempo 與 psychedelic。",
+            "src": "https://zerocult.bandcamp.com/",
+            "from": "new",
+            "single": true
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Bandcamp 標籤為 ambient、ambient dub、chill out、electronica、IDM、psybient、psychill、trance、trip hop；2020 年《Usual Unusual》由 Cosmicleaf Records 發行，廠牌文案稱他保留招牌形式、在「更不尋常的合成」上更進一步。",
+            "src": "https://cosmicleaf.bandcamp.com/album/usual-unusual",
+            "from": "new",
+            "single": true
+          }
+        ]
+      },
+      "legacy": {
+        "status": "none",
+        "facts": []
+      },
+      "era": {
+        "status": "none",
+        "facts": []
+      }
+    },
+    "milestones": [],
+    "conflicts": [],
+    "pubIssues": [],
+    "searches": 1,
+    "failedFetches": [
+      "http://zerocult.net 503",
+      "last.fm wiki 頁面載入失敗"
+    ],
+    "status": "thin",
+    "notes": "同名混卡檢查：poolAlbums 為空，以 Bandcamp 帳號 zerocult 與 Cosmicleaf 發行頁確認為同一人。WebSearch 摘要稱 Emil Ilyayev 生於 1975 年蘇聯、2003 年起 Zero Cult、2006 年《Art of Harmony》（Cosmicleaf）、並經營 Cosmicleaf；該摘要來源為 psybient 相關頁，各源起始年有 2002／2003 之歧，且未實際開頁，單源不收。Bandcamp 的 Cosmicleaf 頁連到 cosmicleaf.gr、標 Greece，國籍與廠牌所在地不同，勿混。legacy 查無有出處共識。"
+  },
+  {
+    "key": "gendema",
+    "name": "GENDEMA",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "GENDEMA 的《Where It Hurts Less》由智利廠牌 No Problema Tapes 於 2026 年 5 月 15 日發行（NOP-456），授權 CC BY 4.0，音樂與設計皆為 GENDEMA。",
+            "src": "https://noproblematapes.bandcamp.com/album/where-it-hurts-less",
+            "from": "new",
+            "single": true
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Bandcamp 標籤為 ambient、chillwave、downtempo、drum and bass、electronic、experimental、IDM、instrumental。",
+            "src": "https://noproblematapes.bandcamp.com/album/where-it-hurts-less",
+            "from": "new",
+            "single": true
+          }
+        ]
+      },
+      "legacy": {
+        "status": "none",
+        "facts": []
+      },
+      "era": {
+        "status": "none",
+        "facts": []
+      }
+    },
+    "milestones": [],
+    "conflicts": [],
+    "pubIssues": [],
+    "searches": 0,
+    "failedFetches": [],
+    "status": "thin",
+    "notes": "國籍與所在地查不到：頁面標 Chile（廠牌）也標 argentina／buenos aires（標籤），無法確認，不收進 facts。無生平資料。legacy 未查。"
+  },
+  {
+    "key": "huerta",
+    "name": "Huerta",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Huerta 自述為「L.A. Born, Berlin-Based DJ & Producer」，是 Leizure／R&R 廠牌負責人。",
+            "src": "https://huertamusic.bandcamp.com/",
+            "from": "new",
+            "single": true
+          }
+        ]
+      },
+      "sound": {
+        "status": "none",
+        "facts": []
+      },
+      "legacy": {
+        "status": "none",
+        "facts": []
+      },
+      "era": {
+        "status": "none",
+        "facts": []
+      }
+    },
+    "milestones": [],
+    "conflicts": [],
+    "pubIssues": [],
+    "searches": 0,
+    "failedFetches": [],
+    "status": "thin",
+    "notes": "同名短名風險：poolAlbums 為空，僅以 Bandcamp 帳號 huertamusic 與《TV Slang》確認；名下列有 Amaso、Apache Line、Instant Driver 等，未能分辨是否皆為同一人。曾發行廠牌（Slow Life、Small Hours、Voyage 等）為履歷，不收。"
+  },
+  {
+    "key": "birdsnake",
+    "name": "Birdsnake",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Birdsnake 是墨爾本（Naarm）的四人團，成員在音樂學校認識，課後即興成為常態而成團。",
+            "src": "https://birdsnake.bandcamp.com/album/biofilter",
+            "from": "new",
+            "single": true
+          },
+          {
+            "f": "FBi Radio 同樣稱其為 Naarm 的四人團；豎琴手 Genevieve Fry 是專輯合作者而非確認成員。",
+            "src": "https://www.fbi.radio/articles/independent-artist-of-the-week/birdsnake",
+            "from": "new",
+            "single": true
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "自述為「psychedelic infused downtempo electronica」，揉合 acid jazz、drone 質感與 dub 節奏，《Biofilter》主題偏水感。",
+            "src": "https://birdsnake.bandcamp.com/album/biofilter",
+            "from": "new",
+            "single": true
+          },
+          {
+            "f": "FBi Radio 形容《Biofilter》是以 dub 與拉長的合成器為底、有機與數位樂器並用、建議依序聽完的專輯。",
+            "src": "https://www.fbi.radio/articles/independent-artist-of-the-week/birdsnake",
+            "from": "new",
+            "single": true
+          }
+        ]
+      },
+      "legacy": {
+        "status": "none",
+        "facts": []
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "《Biofilter》2025 年 11 月 14 日經 Bathtub Music 發行，為該團首張專輯，有黑膠版。",
+            "src": "https://birdsnake.bandcamp.com/album/biofilter",
+            "from": "new",
+            "src2": "https://www.fbi.radio/articles/independent-artist-of-the-week/birdsnake"
+          }
+        ]
+      }
+    },
+    "milestones": [],
+    "conflicts": [],
+    "pubIssues": [],
+    "searches": 1,
+    "failedFetches": [
+      "MusicBrainz 搜尋 503"
+    ],
+    "status": "thin",
+    "notes": "人數有歧：2SER 列表稱五人團，Bandcamp 與 FBi 稱四人，成員姓名查不到，不寫人數以外的成員。首張專輯一說有 Bandcamp 與 FBi 兩源。legacy 查無。"
+  },
+  {
+    "key": "abakus",
+    "name": "Abakus",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Abakus 是英國製作人兼作曲家 Russ Davies 的化名，他另以 Cinnamon Chasers 與 Aiiso 發行。",
+            "src": "https://abakusmusic.com",
+            "from": "new",
+            "single": true
+          },
+          {
+            "f": "MusicBrainz 將 Abakus 註為來自英國倫敦的電子製作人；Bandcamp 稱計畫以倫敦為據點。",
+            "src": "https://abakus.bandcamp.com/",
+            "from": "new",
+            "single": true
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "官網稱 Abakus 是「psychedelic downtempo and electronica」化名，融合有機與合成聲響，旋律質地加深沉律動，涵蓋放鬆的 downtempo 與更有勁的 progressive 節拍。",
+            "src": "https://abakusmusic.com",
+            "from": "new",
+            "single": true
+          }
+        ]
+      },
+      "legacy": {
+        "status": "none",
+        "facts": []
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "首張專輯《That Much Closer to the Sun》2004 年問世；Bandcamp 簡介列出後續《We Share the Same Dreams》《Prisms》《Silent Geometry》《Departure》《Dreamscapes》。",
+            "src": "https://abakus.bandcamp.com/",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [],
+    "conflicts": [],
+    "pubIssues": [],
+    "searches": 1,
+    "failedFetches": [],
+    "status": "thin",
+    "notes": "出道年單源（Bandcamp 寫 2004；WebSearch 摘要稱 2003 年起用此化名），兩源不一致，facts 的 era 條僅寫「首張專輯 2004 年」且為 Bandcamp 單源，寫作層宜只用保守說法。Anjunadeep Explorations 發行《Clouds EP》《Your Love Is So Wrong EP》有廠牌商品頁（anjunadeep.com/products/483834-clouds-ep）但年份未讀到，為履歷不收。Cinnamon Chasers 屬同一人另一化名，勿與 Abakus 卡混寫。legacy 查無。"
+  },
+  {
+    "key": "alba",
+    "name": "ALBA",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "ALBA 是來自俄羅斯的四人計畫：Nadezhda Prokopenko（人聲）、Maria Kamysheva（鼓與打擊）、Anastasia Zelenina（音樂、編曲、人聲、daf、krez）、Albert Sultanov（音樂、編曲、吉他、長笛、電子、人聲）；團名意為「內在的日出」。",
+            "src": "https://electrikdream.bandcamp.com/album/sacramentarium",
+            "from": "new",
+            "single": true
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "自稱「nature-psychedelic」風格，混合人聲、現場樂器與電子聲響，涵蓋 psybient、downtempo、chill-out、ethnic 與 world music；樂器含西塔琴、hang、長笛、吉他、薩克斯風、daf、手風琴與迪吉里杜管。",
+            "src": "https://electrikdream.bandcamp.com/album/sacramentarium",
+            "from": "new",
+            "single": true
+          }
+        ]
+      },
+      "legacy": {
+        "status": "none",
+        "facts": []
+      },
+      "era": {
+        "status": "none",
+        "facts": []
+      }
+    },
+    "milestones": [],
+    "conflicts": [],
+    "pubIssues": [],
+    "searches": 0,
+    "failedFetches": [],
+    "status": "thin",
+    "notes": "同名風險：英文維基 Alba 為蘇格蘭地名，與本團無關，不收；以 Electrik Dream 發行頁確認。《Sacramentarium》頁面日期為 2021 年 1 月 1 日。城市查不到。Electrik Dream 為法國集體，與團體國籍無涉。"
+  },
+  {
+    "key": "klaada",
+    "name": "Klaada",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Klaada 來自克羅埃西亞札格雷布；MusicBrainz 註為札格雷布的 psychedelic music artist（個人）。",
+            "src": "https://klaada.bandcamp.com/",
+            "from": "new",
+            "single": true
+          },
+          {
+            "f": "Viberate 同樣稱其為札格雷布電子音樂人。",
+            "src": "https://www.viberate.com/artist/klaada/",
+            "from": "new",
+            "single": true
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Bandcamp 簡介稱其創作重心是「持續探索與不斷重新定義自己」，聲音雜揉且隨每張發行改變；《Antipodes Of The Self-Conscious Mind》頁面標籤含 downtempo、psybient、psychedelic、psydub、psytrance、world fusion。",
+            "src": "https://klaada.bandcamp.com/album/antipodes-of-the-self-conscious-mind",
+            "from": "new",
+            "single": true
+          }
+        ]
+      },
+      "legacy": {
+        "status": "none",
+        "facts": []
+      },
+      "era": {
+        "status": "none",
+        "facts": []
+      }
+    },
+    "milestones": [],
+    "conflicts": [],
+    "pubIssues": [],
+    "searches": 1,
+    "failedFetches": [],
+    "status": "thin",
+    "notes": "本名 Pavle Kladarin 與音樂學院就讀等僅見廠牌／Bandcamp 單頁，WebSearch 未能佐證且稱找不到相關連結，依特注不收進 facts。Mindspring Music 為德州達拉斯廠牌，與 Klaada 的關係僅見其專輯頁。legacy 查無。"
+  },
+  {
+    "key": "scott campbell",
+    "name": "Scott Campbell",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Scott Campbell 的《Quiet Rituals》2021 年在美國紐奧良錄製與混音，2022 年 2 月 22 日由 Seil Records 發行；Bandcamp 地點標紐奧良。",
+            "src": "https://scott-campbell.bandcamp.com/album/quiet-rituals",
+            "from": "new",
+            "single": true
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "《Quiet Rituals》靈感來自日常看似平凡的工作與習慣；標籤為 ambient、electronic、downtempo、instrumental、lofi、synthwave。",
+            "src": "https://scott-campbell.bandcamp.com/album/quiet-rituals",
+            "from": "new",
+            "single": true
+          }
+        ]
+      },
+      "legacy": {
+        "status": "none",
+        "facts": []
+      },
+      "era": {
+        "status": "none",
+        "facts": []
+      }
+    },
+    "milestones": [],
+    "conflicts": [],
+    "pubIssues": [],
+    "searches": 0,
+    "failedFetches": [],
+    "status": "thin",
+    "notes": "⚠ 同名風險極高：英文維基 Scott Campbell／Campbell Scott 為演員（1961 年生，與本人無關，一條不收）；另有同名刺青藝術家等。僅以 Bandcamp 帳號 scott-campbell 與 Seil Records 發行頁確認，未能與其他同名者分辨；全為單源，建議寫作層保守。"
+  }
+]
