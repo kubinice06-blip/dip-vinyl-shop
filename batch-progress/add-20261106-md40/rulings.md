@@ -57,3 +57,14 @@
 - 23809 Subheim《No Land Called Home》：moodVerdict borderline（深沉黑暗、低音線居中；現場鼓、penetrating rhythms、人聲歌曲）。label 推翻→Ad Noiseam（adn133）。full。
 - 23810 Jogging House《Weight》與 Between Interval《The Edge Of A Fairytale》：Weight borderline（盤帶 lo-fi 利重；「melancholy and hope」；label 推翻→Seil Records；單源 thin）。Edge 為 keep（Lustmord 對照、dark ambient、近乎可怕；label 推翻→Spotted Peccary SPM-1604；full）。
 - 彙總：keep 2（Autumn Continent、Edge）、drop 1（Aydio）、borderline 8。label 推翻 7 張（Headache、Aydio、Halou、兩張 Between Interval、Subheim、Jogging House）。WebSearch 用 3 次（Headache 無結果、Manes、Subheim）；其餘用維基／廠牌頁／Kraak 頁。
+
+## 主線研究後汰換（不佔條號；2026-11-06）
+- 判準同 md41：研究稿以來源直述**有拍推進**、**判輕**、**判暖／旋律明確**的汰；聲音只有標籤、邊距未知的留給評分驗收。單源 thin 一般不汰，但**連聲音文字都沒有、只剩標籤**的單源卡汰（寫不出有內容的簡介）。
+- **汰 12 張**（存 `dropped-cards.json`／`dropped-research.json`）：
+  - 能量：Subheim《No Land Called Home》（研究 a：現場鼓、部落節奏）、gridlock《formless》（研究 a：磨碾節奏，文案另寫類比溫暖）、Black Boboi《Sepia》（研究 c：techno 拍、起伏旋律與合唱）、Disparition《Palm in Mirror》（研究 c：官網「a storm of driving beats」）、Disparition《Granicha》（研究 c：官網寫 techno、工業、爵士、流行雜陳的 112 分雙專輯）、Burning Pyre《Imago》（研究 c：pristine、melodic stabs、skittering percussion）。
+  - 判輕：Bed《Spacebox》（研究 c：鼓刷、低音大提琴、幾乎全原聲）、Aydio《Nonentity》（研究 a：長笛、小提琴、爵士節拍）。
+  - 判暖：Now Always Fades《Coalesce》（研究 b：廠方文案 bright、uplifting、warm，breakbeat 與 MPC 鼓）、il:lo《Lucent》（研究 c：tension and hope、invigorating、light emerges）、MANES《Slow Motion Death Sequence》（研究 a：廠牌文案 hook-ridden pop、旋律明確；金屬底的 x 也有風險）。
+  - 故事與聲音皆無來源：conelrad《Sure is the Risk Made》（研究 b：只有標籤）。
+- **研究層更正已改進卡單**：label——Headache → PLZ Make It Ruins、Halou《Halou》→ Vertebrae Music Productions、Between Interval 兩張 → Spotted Peccary、Jogging House → Seil Records、Space Afrika → Dais Records、mars kumari → Bruiser Brigade Records；Blackbird（2018 原發自行發行，Doki Doki Beats 為 2026 重發）、Disparition、All India Radio（數位版）→ self-released。country——One Arc Degree us → gr（希臘二人組；us 是 Synphaera 所在地）、Blackbird 清空（Discogs 稱法國製作人，與 Bandcamp 地點矛盾，不寫國籍）。
+- 寫作層注意：Headache「人聲是 AI」單源，不寫；Between Interval 真名兩說，不寫真名；Phelios Bandcamp 版是含 5 首 bonus 的自行重發，以 Malignant 原版 7 首為準。
+- 不補位。定案 **20 張**。留給評分驗收的邊距風險：moby《Destroyed》（techno 拍幾首）、Just Mustard（有鼓噪音 shoegaze）、Space Afrika（人聲客串、弦樂、打擊）、Pye Corner Audio（樂評稱平和、有光）、Blackbird（2-step）、Martin Stürtzer（音序器脈動）、All India Radio（人聲）、Lauge《Echoes》（自然題材判輕）。
