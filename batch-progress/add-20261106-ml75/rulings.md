@@ -96,3 +96,19 @@
 - **24508** 4-gram 自掃（han()，本檔 15 張 × writer-1 hook＋out-1 現檔 × `add-20261106-ml6*／ml7*／md*` 已交 out）：剩 3 張以上 1 條 `一人包辦`＝Argaman hook 原文對 md40／ml71 舊卡，寫作層改不動；2 張殘片 `布里斯托`（地名）、`這個名義`（Badlands hook 原文對 writer-1 Free the Robots 正文，若主線收件合掃仍在，改的應是 out-1 那一側）。writer-1 交件中途動過檔，主線收件請兩檔合掃一次。
 - **24509** 來源平台與轉述：正文不出現 Apple／Discogs／MusicBrainz／維基；Bandcamp 只在 parkbreezy 當發行通路（note 指派「貼上 Bandcamp」）。「簡介說／文案說／新聞稿說」一律改陳述句或當事人自述（Roberts 說、Mindex 說、Zoungla 自述）；Hidden Rivers「柔焦的舞曲」寫成被動「被稱作」。研究稿「鼓型」行、moodGuess 未進正文；Mindex 不寫廠牌、開場曲不指名；Space Ghost 的 Peace World 創立年（搜尋摘要）未寫；Badlands 不寫序數與馬爾默。
 - **24510** Aarset 第二句後的「他」改具名 Aarset（緊接 Molvær 之後易誤指）；Helios、Astronaut Ape、parkbreezy 的 hook 已給曲數，正文不再重報曲數，只寫片長。
+
+## 寫作層（writer-1）（24501–24505）
+- **24501** 交件：`desc-tools/batches/output/add-20261106-ml75-out-1.json` 16 張（full 14：206–239；thin 2：Acopia 167、Computerjockeys 179）。初稿 4 張超標（Lucky 245、Koch 257、Free the Robots 241、Culprate 251），整格捨去：Koch 拿掉「這回的長篇叫《…》」改由日期句帶盤名、FtR 拿掉 Siargao 括注、Culprate 縮短兩個曲名的引入句；Computerjockeys 合掃改寫後衝到 185，收掉「一人」「輪流獻唱」等字回到 179。`qa-batch out`、`qa-check-research`、`fix-spacing` 皆 0。
+- **24502** 跨批 4-gram 自掃（本檔＋`output/add-20261106-ml6*`、`-ml7*`、`-md*` 已交 202 張，含 ml74、ml75-out-2）：第一輪 ≥3 張 40 條，幾乎全是日期樣板（`年月日推`×6、`年月日由`×6、`年月日首`×7、`首約分鐘`×7、`是年月日`×6、`在年月日`×5、`月日問世`、`月日面世`、`月日上架`、`月日透過`、`張專輯年`）——鉤子層 24495 配的「日」後一字只對 hook 掃過，對前批正文撞成一片，故不照 24495 的字，逐張改成「日」前後字都罕見的寫法（Lucky 日聯手、Teen 日，Flora、Koch 已屆、Erik 日這天、FtR 日開放、saib. 日正式、Plimmer 日端出、Culprate 日出爐、Błoto 年才在、Eat Static 出版年份是、Computerjockeys 出版的時間是）；片長一律避開「首約分鐘」（歷時約／約需／約有／約略／接近）。定稿 ≥3 張只剩 `薩克斯風`（樂器）與 `這個計畫`（Desert Dwellers hook 原文，寫作層不改）。另把同檔 2 張的殘片拆掉（`一張專輯`、`作與編曲`、`專輯廠牌`、`年月日這`、`被形容成`）；與 writer-2 的 `這個名義`（Badlands）由我這邊讓（FtR 改「想到要叫自己 Free the Robots」）。
+- **24503** 第二句句型照鉤子層 24494 指派，為避同構微調 6 張：Acopia「首張專輯」→「頭一張作品」、Lucky「第三張錄音室專輯」→「錄音室裡的第三作」、Teen「替 Teen Daze 這個名號做到」→「用 Teen Daze 掛名，做到了」（`這個名號` 跨批 3 張）、Erik「的製作人」→「的節拍製作人」、Pan「身兼…的 Leron Thomas」→「Leron Thomas 身兼…」（`製作人的` 跨批 3 張）、Culprate「以布里斯托為據點的」→「以布里斯托為根據地」（`為據點的` 跨批 3 張）。Koch 的 John Peel 句不寫 2003 年（note 未列）。
+- **24504** 來源平台與轉述詞：Desert Dwellers 的指派句「Bandcamp 把 X 標在 Boulder」改寫成「Desert Dwellers 掛的地點是科羅拉多州 Boulder」（平台名不進正文）；saib. 的「Cold Busted 的簡介說」改成「廠牌 Cold Busted 形容」（不寫「簡介」），Martin Denny 一句寫被動「被說成」；Koch「廠牌說 2010 年他異常忙碌」改直述；Desert「文案說」改直述。Vanessa Daou 同名曲那句是研究稿標明的 WebSearch 摘要（Slant 原頁 403），照派工降語氣寫成被動「被形容成」、不具名、不加引號。研究稿「鼓型」行、moodGuess、Plimmer 的 D&B／deep house 段落、Dusty Groove 摘要、Clash 星等皆未進正文。
+- **24505** 時序與克制：Lucky 葛萊美放在發行句之後（「到了第 67 屆」）；Culprate 2019 眾籌續作句放末尾並帶年份；Pan Amsterdam 父親只寫「整張獻給已故的父親」一句；Eat Static「最後一張」照 note 寫在第二句，不寫 Joie Hinton 離團（避 Alpha 骨架）。Błoto 錄音日期句前一字為「演」（上一句「正在巡演」），與 hook「三場演出」不重述，改寫「事情發生在 2018 年夏天」。
+
+## 主線審稿（24511；2026-11-06）
+- **24511** 逐張審 31 張（全文印出，逐句對研究稿 a–e）。改 5 張（`desc-override.json`；研究／hooks／input 不需同步，只動措辭或刪句）：
+  - `Eat Static|Back to Earth`：「《Back to Earth》也成了這個團的最後一張」刪改為「是 Joie Hinton 離團後，由 Merv Pepler 一人完成的 Eat Static 專輯」——「最後一張」只出自 Electronic Music Critic 單一樂評，且 Eat Static 之後仍有新作（並行 ml80 卡單就有《Last Ship to Paradise》），屬過期或錯誤說法。
+  - `Robot Koch|Songs for Trees and Cyborgs`：「Project: Mooncircle 發行《…》已屆 2010 年 10 月 1 日」語病，改「《…》在 2010 年 10 月 1 日由 Project: Mooncircle 發行」。
+  - `Computerjockeys|Plankton`：刪「1994 年起一起做音樂」——起步年 Bandcamp 寫 1994、德文維基寫 1997（藝人補洞 ar-d-808 g1 衝突紀錄），不寫。
+  - `parkbreezy|Better Days`：刪「人在丹佛的」——所在地 Denver 與 Montclair 兩說（ar-d-808 g2），只有 Bandcamp 地區欄。
+  - `Hidden Rivers|Golden Age of Dereliction`：「九零年代」→「九〇年代」。
+- 其餘逐張審過未改字。媒體名、「據說」0。

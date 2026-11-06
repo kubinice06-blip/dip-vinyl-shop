@@ -81,3 +81,16 @@
 - **24428** 否定句清掉：Revolution Void「沒掛廠牌」、Kalpataru「不經廠牌」、MSFS「沒找廠牌」改寫成正面「自發行」；Jazz Playaz「沒有一首超過」改「最長也只到」。note 裡的「簡介說／Bandcamp 說明稱／作者自述」一律改成直述或「作者形容」，不留轉述引導詞；Jazz Playaz 第二句「Bandcamp 簡介把…寫成」與 MantisMash／Nym 的「Bandcamp 標在…」照鉤子層 24419 指派保留（外人之口／國別引入）。Liléa「Discogs 風格標 Cut-up／DJ」改「風格被歸進 cut-up／DJ」，平台名不進正文。
 - **24429** 避免複述 hook：Kalpataru 不再寫「dub 的祈禱」、Govinda 不再寫吉普賽小提琴／馬戲、Lapa 不再寫「貝斯與小提琴為主軸」、Saafi 不再寫「7 首」、Master Minded 只補 hook 沒說的 Air 兩首、MantisMash 刪「往 Goa 陽光去」一格（thin 143 仍在帶內）。Emancipator 與 Lapa 共用 Ilya Goldberg（同一人：前者客席小提琴、後者本人名義），照兩張 note 各自寫，未互指。
 - **24430** 研究稿標「搜尋摘要、未讀全文」者全未入正文（MantisMash 的 Natan Lenski／以色列、Nym 的 Durham NC）；researchNotes「鼓型」行不進正文。
+
+## 寫作層（writer-1）
+- **24421** 交件：`desc-tools/batches/output/add-20261106-ml74-out-1.json` 15 張，key／順序同輸入。字數：thin 7 張 158–180（Entheogenic 180、40 Winks 170、Yndling 174、Kognitif 161、DJ Frane 160、Kareem Ali 176、Maple 158）；full／partial 8 張 204–240（Little People 230、Odd Nosdam 215、Suduaya 234、Fallgrapp 215、Glenn Astro 235、Tara Putra 235、Noya Rao 240、Lavarr 204）。初稿超標 3 張（Entheogenic 186、Tara Putra 245、Noya Rao 247），整格捨去：Tara Putra 曲名引入子句、Noya Rao「撐起她身後的聲音」與「這張」、Entheogenic 作品序列措辭。Lavarr 初稿一句「半唱半念的人聲」取自 sound 欄、不在 note，已刪。`qa-batch out`、`qa-check-research`（標記 0）、`fix-spacing`（待補 0）全過。
+- **24422** 跨批 4-gram 自掃（han()，對 ml74-out-2、writer-2 全部 hook、`add-20261106-ml6*`／`-ml7*`（含 ml75-out-1／-2）／`-md*` 已交 out）：3 次以上只剩「器樂嘻哈」（樂種名，Little People／40 Winks／Odd Nosdam 三處為 note 指派的第二句領句）與「曼徹斯特」（地名）。途中拆掉：這個計畫×6、的第三張×5、專輯在年×4、的合成器×4、年月日推×6、年月日上×5、年月日由×6、年月日以×4、年月日問×4、年月日掛／透／發、長約分鐘×7、加總分鐘、一人包辦×4、標籤掛著、正式發行、自己經營、樂評形容、這些曲子、全長專輯、是他自己等。
+- **24423** 日期「日」後一字偏離鉤子層 24414 配表（可逆）：鉤子層只排除本批 hook，**跨批 out 的日期尾巴已大量撞形**（年月日推 6、由 6、上 5、問 4、以 4），照表寫必成 3 次以上同構。改為全語料 ≤1 次的字：Little People 日推→日排、Kognitif 日以→日僅、Odd Nosdam 日上→日才、Suduaya 日問→日開、Fallgrapp 日由→改以「發行日由 Gergaz 訂下＋日期」收句（日期在句末）。其餘照表：40 Winks 日，、Maple 日登→日列（同理，年月日登 3）、Noya Rao 日於、Lavarr 日正、Tara Putra 日發→日送（年月日發 5）。建議往後鉤子層配表時連前幾批 out 的「日」後一字一起排除。
+- **24424** 第二句領句照 note 指派，微調三處（可逆）：Entheogenic「這個 psybient 計畫」→「這支 psybient 雙人計畫」（han 後「這個計畫」跨批 6 次）；Little People「以倫敦為據點的」→「以倫敦為基地的」（「為據點的」跨批 3 次）；Fallgrapp「在自己的錄音室」→「在自家錄音室」（「的錄音室」與 hook 合計 4 次）。Odd Nosdam 接「Leaving Records 的第二張」寫成「在該廠牌的第二份作品」（「的第二張」跨批 3 次）。
+- **24425** 單源／搜尋摘要降語氣：Odd Nosdam 延宕（研究稿註明只讀到訪談搜尋摘要）只留 hook，正文不重述、不加原因細節，只寫「最初提給廠牌的只是一張六首的 EP」與「才終於上架」；Noya Rao 的樂評段落同屬搜尋摘要，hook 不能改，正文降為「大致獲得讚許，只被建議穿插幾段器樂間奏」，不具名評者與媒體。Entheogenic Emagic 相識（維基單源）平實寫「1999 年起一同做音樂」，不寫國籍與德國榜。Little People 的 Laurent Clerc、Yndling 的 Glamglare 與 Adrian Sandberg 不入正文。研究稿 notes「鼓型」行全未入正文。
+
+## 主線審稿（24431；2026-11-06）
+- **24431** 逐張審 30 張（全文印出，逐句對研究稿 a–e；抽核 Entheogenic 曲目構成、Revolution Void 起步年與地點、Odd Nosdam 延宕兩年（Cyclic Defrost 訪談）、Jazz Playaz 四人署名、Lapa 出身（本人 Bandcamp 自述））。
+  - **寫作後汰 1**：Entheogenic《Dialogue of the Speakers》——研究 a 明載九軌只有三首原曲、六首是 OTT／Vibrasphere／Youth 等人的混音，寫作層也把它寫成「混音集」；屬混音專輯，不是正規專輯，照 §1 汰（移入 `dropped-cards.json`）。Entheogenic 同步從 ar-d-807 名冊、cut 與 progress 拿掉，讓並行的 ml78–80 去寫。**剩 29**。
+  - 改 1 處（`desc-override.json`，只動標點）：Jazz Playaz「YungGrunge 與 Mackjunt. 每人各主署」→「…Mackjunt.，每人各主署」（藝人名本身帶句點，原句讀成斷句）。
+  - 其餘逐張審過未改字。媒體名限 hook 指派的 Billboard（Emancipator，研究稿有出處）；「據說／據傳」0。
