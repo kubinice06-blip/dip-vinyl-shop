@@ -21,3 +21,12 @@
 - 23661：c 組以 Bandcamp 專輯頁（ld+json 簡介、credits、曲目長度）＋MB release-group＋可得樂評交叉；WebSearch 用 3 次（Hello Meteor、Bluetech、Daily Bread）。MB 與 Wikipedia 連線偶發被重置，MB 只取到 4 張的 release 資訊，廠牌欄一律查無，不寫。
 - 23662：moodGuess 存疑強（建議汰換）：Fieh《III》（官方稱放克、輕快、更硬）、The Orb《Prism》（樂評明指 drum & bass、硬科技、銳舞）。存疑輕（傾向判輕或把握低）：Bluetech（有節拍的 psychill，曲名 Funk／Mambo）、Dj CUTMAN（短曲、chiptune／遊戲音樂標籤）、Hello Meteor（ambient／new age，無鼓證據）、Daily Bread（曲風跨度大）。貼目標格：Poldoore《Soft Focus》（暖、塵封、磁帶延遲）、Dr. Dundiff《The Distance》（暖鬆，但鼓清脆）。
 - 23663：未推翻年份、盤名、身分；Bluetech Bandcamp 6/15 與 MB 6/4 差異，年份不變。
+
+## 研究 b 組（23651–23660）
+
+- **23651**：Bandcamp 簡介是本組聲音事實的主要來源（MB 與維基對聲音幾乎沒寫）；WebSearch 3 次用盡（L'Orange、Bilinda Butchers、HashFinger），只找到訪談與店家文案，無樂評。聲音欄誠實標明「簡介自述」，鼓力度、低頻厚度、冷暖大多未驗證，8 張中 5 張 status thin。
+- **23652**：Bilinda Butchers《Night and Blur》moodGuess 存疑（簡介直言 house／drum and bass／trip hop，拍子是主軸）。The Orb《Buddhist Hipsters》強存疑（reggae skank、D&B、hip hop、deep house，只有末兩首靜）。Banco de Gaia《Apollo》強存疑（relentless rhythm、舞池，低頻厚、暖成立）。City Girl 強存疑（乾淨吉他、貝斯、鍵盤，偏輕）。Blockhead、HashFinger 中度存疑（beat tape／boom-bap，鼓是骨架）。Martin Brugger 弱存疑（偏輕盈）。L'Orange 大致可信。
+- **23653**：Blockhead《Quar and Peace》Wikipedia 列 compilation，MB／Bandcamp 皆為專輯，維持專輯（Bandcamp 簡介稱 beats 專輯）；發行日 Bandcamp 7-17、MB 7-19，年份 2020 無誤。
+- **23654**：L'Orange《Old Soul》Bandcamp 頁轉址循環讀不到，曲目與 2011 原廠牌缺（keyTracks 空）；Mello Music Group 是後來簽的，勿當原廠牌。
+- **23655**：Banco de Gaia《Apollo》廠牌 Disco Gecko Recordings 依維基（單一來源）；Orb 的 Wikipedia 時長 77:45 與 Bandcamp 加總 77:37 差 8 秒，寫約 77 分鐘。
+- **23656**：卡單 label 欄皆空；Bandcamp 顯示 Bilinda Butchers、Blockhead、City Girl、The Orb（Cooking Vinyl 依維基）為自行發行／標示，HashFinger 為 Headcount Records HC042，Brugger 為 Squama。
