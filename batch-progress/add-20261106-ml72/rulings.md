@@ -48,3 +48,16 @@
 - 24066：Master Minded《Elements》資訊極薄（status thin）；psybient、人聲＋迪吉里杜管、儀式感，聲音無法佐證，moodGuess 輕度存疑。
 - 24067：Glen Porter《Mr. Vampire & The Deadly Walkers》Discogs 簡介：迷幻＋衝浪搖滾能量、吉他、breaks、西部風，有吉他貝斯人聲；moodGuess 強烈存疑，建議汰。label 補 Content (L)abel（CNT 1032），藝人本名 Ryan Stephenson（1983–2018，Discogs 簡介）。Bandcamp 專輯頁載入失敗，改用 MB／Discogs。
 - 24068：全組無推翻年份／廠牌／盤名處；身分均與 MB 一致。
+
+## 研究 b 組
+
+- 24051：Funki Porcini《PLOD》：Bandcamp 官方只有「A series of bits and bobbies」一句，人物資料僅 MB 生日與倫敦；status thin。低頻厚、高頻近無，但〈Carbide〉等有 breakbeat，moodGuess 輕度存疑，保留待主線定。
+- 24052：Kalya Scintilla《Open Ancient Eyes》：moodGuess 存疑——world／tribal bass 律動持續推進（試聽自相關 0.5–0.7），暖重成立、靜不成立。Bandcamp 多一軌 77 分鐘連續混音，卡面時長以 15 首為準。
+- 24053：Spoonbill《CANOPY》：moodGuess 存疑（把握中高）——官方自稱 eminently danceable downbeat、cheeky，銅管與切分律動，偏輕快外向，建議汰。
+- 24054：Colourform《Visions of surya》：moodGuess 存疑（重度不足）——試聽響度極低、150Hz 以下占比多 <0.3，空靈而非包覆；人物資料只有署名，status thin。
+- 24055：Hinkstep《My Forest Queen》：成立。65–85 BPM 鬆鼓、低頻厚、吉他與女聲旋律；11 首含兩首器樂版，原創 9 首。
+- 24056：Krusseldorf《Smokers Lounge》：成立（重度確認）。13 首中 10 首 150Hz 以下占八成以上、60–85 BPM。MB 藝人說明 psytrance 與發行地 DK 不採用。
+- 24057：Argaman《My Little Forest》：moodGuess 存疑——低頻僅 2 首厚、多數頻譜重心 500Hz 以上，〈LSDing Camping〉等有持續 psychill 律動。推翻卡單 country：se → il（MB 發行地 IL、藝人頁以色列；se 僅是 Nebulosa 廠牌所在地）。年份照 MB 2009，Bandcamp 2025 為重發。
+- 24058：聲音證據用 Apple 30 秒試聽粗略頻譜（150Hz 以下占比、4kHz 以上占比、節奏自相關），僅作旁證；速度估計不穩（常有倍頻誤判），不寫進 facts。
+- 24059：Wikipedia 直連被代理擋，人物背景改用 Bandcamp 藝人頁與 MB；未用 WebSearch。
+- 24060：全組年份／廠牌／盤名均與 MB 一致；僅 Argaman country 一處推翻。
