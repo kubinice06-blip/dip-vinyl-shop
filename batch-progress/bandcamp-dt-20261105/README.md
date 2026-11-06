@@ -29,3 +29,8 @@
 第一輪（ml68–70、md39–41，卡單 289）：上線 104、落目標格 92（恍惚 42、頹靡 50），PR #399／#400／#401。汰掉的主因：合輯／EP／同人超量、標 downtempo 卻有舞池／四拍／breakbeat 推進。
 店主：「繼續」。剩下靠近邊界的 612 張先照第一輪教訓過濾：Bandcamp 標籤含 house／techno／breakbeat／funk／electro／disco／club／dance／trance／dubstep／drum／jungle／garage／synthwave／hip-hop／rap／reggae／dub／soul／r&b／pop 的拿掉（378），<30 分的拿掉（2）→ 232 張。
 第二輪卡單：恍惚 `pick-ml71.json` 52、`pick-ml72.json` 52、`pick-ml73.json` 51；頹靡 `pick-md42.json` 39、`pick-md43.json` 38。條號 ml71 23961、ml72 24041、ml73 24121、md42 24201、md43 24281；藝人介紹 ar-d-527～531。
+
+## 第二輪結果與「有鼓」名單（2026-11-06）
+
+第二輪（ml71–73、md42–43，卡單 232）：上線 53、落目標格 44，PR #403／#404／#405。整條 Bandcamp 線（md37／38、ml66／67、兩輪卡單）上線 200、落恍惚／頹靡 164。
+店主：「鼓推進有時候其實也沒關係，給我看那些名單」→ `beat-candidates.json` 473 張＝研究層判有拍推進而汰的 93 張（各批 `dropped-research.json`＋rulings 理由）＋第二輪前標籤篩掉的 380 張；勾選頁 artifact `https://claude.ai/artifact/VkquPFK8sauuHedAogkcC9`（db `want`＝要）。
