@@ -44,3 +44,13 @@
 - 23996：Neuroq《Catharsis》：Bandcamp 兩個網域互相轉址迴圈無法開啟，聲音無來源，status thin；x 2.8 已越邊距，moodGuess 存疑，建議汰。
 - 23997：Entheogenic《Meltwater Pulse 1B》：簡介僅一句、無聲音描述，status thin，moodGuess 無支持，存疑。
 - 23998：Astropilot《Solar Walk III. Unseen Chapters》：內容為另版、氛圍混音、新作，第 9 軌為整張 56 分鐘連續混音，近補遺性質；太空 cinematic 傾向冷，存疑，主線可比照 CBL《ALT》汰。
+
+## 研究 c 組
+- 23981：Science Of Sleeping《Sleep Cinema》§1 核對：Bandcamp 與 Apple 1756950809 盤名、2022-07-29、九曲吻合，debut；Apple 版權 Valley View Records，Bandcamp 自發，label 不寫。聲音證據只有藝人自述，thin。
+- 23982：Elaquent《Believing》moodGuess 存疑：評論稱鼓點錯落的嘻哈／電子 beat 專輯，有持續 beat；EARMILK 全文逾時，聲音取自搜尋摘要，不寫廠牌。
+- 23983：Tryphème《Online Dating》moodGuess 存疑：Now Then 評論明言細密鼓聲是地基、有舞池曲、acid、放克，Light Light Light 明亮樂觀，判輕躁。卡單證據網址轉址無法開，改用 MB／Now Then。
+- 23984：Shwamp《Emergence Unfolding》moodGuess 存疑：廠牌文案寫 addictive percussion、groove、psydub，有律動推進；低頻厚、合成器暖屬實。日期 Bandcamp 2017-09-30、MB 2017-10-13，採 MB。
+- 23985：boerd《Dwaal》moodGuess 存疑：無任何聲音描述，只有 trip hop 標籤（預設有鼓）；Dwaal 詞義無來源，不寫。
+- 23986：Spunkshine《HUGE Humans》moodGuess 存疑：標籤 grooving weirdness、IDM、theatrical、unsettling，MB 標 big beat，偏躁怪。
+- 23987：Lauge & Baba Gnohm《Langbortistan》：Bandcamp 2011-10-15、MB 2011-11-11，採 MB；Altar Records 為 CD-R 初版，label 留空。聲音僅 Sonic Immersion 單一評論（旋律豐盈、放鬆、部分曲有低音律動），不標存疑但 y 0.5 偏低。
+- 23988：desert sand feels warm at night《バビロンの空中庭園 上》：Bandcamp 為 2026 Hushtones 黑膠重發頁，年份採 MB 2019；聲音僅標籤（slushwave、hypnagogic），thin，未發現反證。
