@@ -16,3 +16,8 @@
   - 先例已汰：SwuM.《スモーク》（ml42 研究：trap 化、開大聲衝擊）、sleepy fish《Like the Sky, or Something Else》（ml42 研究：melancholic and energized、上揚節拍）。
 - AndyFellaz《BeatBop Street》MB release-group 沒標 primary type（唯一 release 為 14 軌 CD、45 分鐘），視同 Album 釘 rgMbid。
 - 同藝人：The Orb 兩張（池中已 8 張）、Bluetech 兩張、Hello Meteor 兩張；其餘一人一張。
+
+## 研究 c 組（8 張；條號區間 23661–23670）
+- 23661：c 組以 Bandcamp 專輯頁（ld+json 簡介、credits、曲目長度）＋MB release-group＋可得樂評交叉；WebSearch 用 3 次（Hello Meteor、Bluetech、Daily Bread）。MB 與 Wikipedia 連線偶發被重置，MB 只取到 4 張的 release 資訊，廠牌欄一律查無，不寫。
+- 23662：moodGuess 存疑強（建議汰換）：Fieh《III》（官方稱放克、輕快、更硬）、The Orb《Prism》（樂評明指 drum & bass、硬科技、銳舞）。存疑輕（傾向判輕或把握低）：Bluetech（有節拍的 psychill，曲名 Funk／Mambo）、Dj CUTMAN（短曲、chiptune／遊戲音樂標籤）、Hello Meteor（ambient／new age，無鼓證據）、Daily Bread（曲風跨度大）。貼目標格：Poldoore《Soft Focus》（暖、塵封、磁帶延遲）、Dr. Dundiff《The Distance》（暖鬆，但鼓清脆）。
+- 23663：未推翻年份、盤名、身分；Bluetech Bandcamp 6/15 與 MB 6/4 差異，年份不變。

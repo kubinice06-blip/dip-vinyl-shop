@@ -33,3 +33,19 @@
 - 23765｜Warmth《The Black Sand》：低頻重、有低調 dub techno 脈動，大致吻合；facts 偏薄標 thin。
 - 23766｜聲音量測為我對 Bandcamp 試聽串流（mp3-128，各取 3 軌前 60–90 秒）做的頻譜與節拍自相關估計，非第三方來源，列在 facts 時 src 指向該專輯頁。
 - 23767｜WebSearch 用 3 次（Moderator、Faex Optim、Warmth），皆無針對本張的獨立樂評。
+
+## 研究 a 組
+- 23721｜Sneaker Pimps《Splinter》：有鼓機與搖滾段落推進（AllMusic「blistering rock」），冷重成立、靜存疑；年份 1999 照 MB 原盤，Bandcamp 2021 為重發。
+- 23722｜8mm《Songs to Love and Die By》：Portishead 式慢拍但有搖滾吉他段、歌曲導向，moodGuess 存疑；廠牌 Curb Appeal 僅 Wikipedia 單源；Bandcamp 發行日 2006-11-16 與 MB 2006-09-26 不一致，年份仍 2006。
+- 23723｜Just Mustard《Wednesday》：評論稱緩慢陰鬱、噪音與殘響厚，大致吻合目標格。
+- 23724｜Johnny Hollow《Dirty Hands》：官方自述哥德室內樂、管弦＋戲劇性，冷與靜存疑；僅廠牌自述，thin。
+- 23725｜Headache《Thank You for Almost Everything》：柔和搖擺鼓、Air 式電子吉他，判輕暖有拍，建議汰換；AI 語音說法單源。
+- 23726｜Puma Blue《Croak Dream》：Wikipedia 稱 punchier、標籤有 breakbeat，有拍子推進、R&B 底色偏暖，存疑；池中已有 1 張同藝人。
+- 23727｜Lusine ICL《Iron City》：廠牌文案寫 dance floor rhythms／detroit techno，有拍子推進，建議汰換或降級。
+- 23728｜ETNOBOTANIKA《Fruwający Przestępca》：嘻哈／techno 鼓點取樣拼貼、懷舊偏暖，存疑；全為廠牌文案，thin。
+- 23729｜本組未做音檔量測，聲音事實僅來自 Bandcamp 頁面、MB、Wikipedia 與少數評論；WebSearch 用 3 次（Headache、Just Mustard、8mm）。
+
+## 研究 b 組
+- 23731：b 組八張只有 MB 與 Bandcamp 頁（官方簡介、標籤、曲長）當聲音來源；WebSearch 3 次全回無關結果（Puma 搜到運動品牌、Halou 搜到 The Drums、Shinjuku Thief 搜到電影），改用維基 WebFetch 補人與團史。聲音層查無樂評者 status 標 thin（Lauge、Public Memory、Puma Blue、Emptyself、Halou）。
+- 23732：moodGuess 存疑（notes 已標）：Public Memory《Elegiac Beat》（有節拍、彈跳、爵士放克、3–5 分鐘有人聲短曲）、All India Radio《The Generator of All Infinity》（失真吉他加真鼓電子鼓的太空搖滾）、All India Radio《A Low High》（downtempo 拍加 pedal steel／小號／顫音吉他，偏暖）、Halou《Brutalism for Lovers》（有鼓手的有人聲歌曲）、Emptyself（acoustic 標籤、冷暖不明）、Lauge（重度不明，標 sleep／chillout）、Puma Blue（有 trip hop／gothic r&b 標籤，鼓與人聲不明）。大致成立：Shinjuku Thief《The Witch Hammer》（暗色管弦音景，唯官方稱有暴力爆發）。
+- 23733：未推翻年份、廠牌、盤名；Shinjuku Thief 以 MB 1993 澳洲首發為準（Bandcamp 是 Projekt 版）；Lauge 發行方為 Valley View Records（Bandcamp 頁掛 Lauge & Baba Gnohm）。
