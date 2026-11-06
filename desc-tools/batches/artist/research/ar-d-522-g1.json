@@ -1,0 +1,553 @@
+[
+  {
+    "key": "acopia",
+    "name": "Acopia",
+    "slots": {
+      "origin": {
+        "status": "bank",
+        "facts": [
+          {
+            "f": "Acopia 是來自澳洲墨爾本的三人計畫，成員為 Kate Durman、Lachlan McGeehan 與 Morgan Wright。",
+            "src": "https://acopia.bandcamp.com/album/acopia",
+            "src2": "https://musicbrainz.org/artist/e4513864-b6e8-431e-8b82-bfdb22714444",
+            "single": true,
+            "from": "bank"
+          }
+        ]
+      },
+      "sound": {
+        "status": "bank",
+        "facts": [
+          {
+            "f": "Bandcamp 標籤為 electronic、ambient、downtempo、dream pop、electronica、pop、trip hop；歌曲全由三人自己寫作與製作，其中兩首的鼓是請錄音室鼓手 Lachlan McGeehan 打的真人鼓。",
+            "src": "https://acopia.bandcamp.com/album/acopia",
+            "single": true,
+            "from": "bank"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "none",
+        "facts": []
+      },
+      "era": {
+        "status": "none",
+        "facts": []
+      }
+    },
+    "milestones": [],
+    "conflicts": [],
+    "pubIssues": [],
+    "searches": 1,
+    "failedFetches": 1,
+    "status": "thin",
+    "notes": "poolAlbums 為空，身分依研究稿 MB RG aedfac84 與 MB 藝人頁（Group、墨爾本）確認。Bandcamp 藝人首頁 403。查無訪談與評論，legacy 查不到；MB 無成軍年。"
+  },
+  {
+    "key": "yndling",
+    "name": "Yndling",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Yndling 的據點在挪威奧斯陸；Bandcamp 簡介只有一句「謝謝你聽我的音樂，有機會來看我們巡迴」。",
+            "src": "https://yndling.bandcamp.com/music",
+            "single": true,
+            "from": "new",
+            "src2": "https://musicbrainz.org/artist/126b0d48-fe25-4052-946c-cf150f1b50c6"
+          },
+          {
+            "f": "2025 年 11 月 6 日由 Spirit Goth Records 發行《Time Time Time (I'm in the Palm of Your Hand)》。",
+            "src": "https://yndling.bandcamp.com/album/time-time-time-im-in-the-palm-of-your-hand",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Bandcamp 標籤包含 dream pop、bedroom pop、lofi pop、shoegaze、trip hop、alternative pop；MusicBrainz 藝人頁的註解寫「來自挪威的 dream pop 計畫」。",
+            "src": "https://yndling.bandcamp.com/album/time-time-time-im-in-the-palm-of-your-hand",
+            "single": true,
+            "from": "new",
+            "src2": "https://musicbrainz.org/artist/126b0d48-fe25-4052-946c-cf150f1b50c6"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "none",
+        "facts": []
+      },
+      "era": {
+        "status": "none",
+        "facts": []
+      }
+    },
+    "milestones": [],
+    "conflicts": [],
+    "pubIssues": [],
+    "searches": 3,
+    "failedFetches": 1,
+    "status": "thin",
+    "notes": "專輯發行日為 2025-11-06（今日前後），無任何樂評、訪談；Bandcamp 簡介用「我們」但 MB 為 Person 類型，成員組成不明，不寫人數。MB 同名 Person 100 分，與 Bandcamp 地點（Norway）一致。legacy 查不到。"
+  },
+  {
+    "key": "dirty art club",
+    "name": "Dirty Art Club",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Dirty Art Club 的據點在美國北卡羅來納州夏洛特；《Gardens》由 Paxico Records 發行（PX065），Bandcamp 簡介只有一個字「Beats」。",
+            "src": "https://dirtyartclub.bandcamp.com/album/gardens",
+            "single": true,
+            "from": "new",
+            "src2": "https://musicbrainz.org/artist/384b44f4-dee4-4cfc-a4f6-749d178951af"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "《Gardens》27 首、全長約 48 分鐘，多數只有 1 到 2 分鐘，Bandcamp 標籤為 beat-tape、downtempo、instrumental hip-hop、lofi、underground hip-hop，結構是一份 beat tape。",
+            "src": "https://dirtyartclub.bandcamp.com/album/gardens",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "none",
+        "facts": []
+      },
+      "era": {
+        "status": "none",
+        "facts": []
+      }
+    },
+    "milestones": [],
+    "conflicts": [],
+    "pubIssues": [],
+    "searches": 2,
+    "failedFetches": 1,
+    "status": "thin",
+    "notes": "MB 藝人頁（Group、North Carolina）與研究稿地點一致。Bandcamp 首頁 403。專輯頁說明僅「RIP Judy」「thank you emily」，不推測所指。查無評論與訪談，legacy 查不到。"
+  },
+  {
+    "key": "monster rally",
+    "name": "Monster Rally",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Monster Rally 是 Ted Feighan 的獨立計畫，他也做拼貼視覺藝術並自己設計專輯封面；名稱取自 Charles Addams 一本畫有 Addams Family 角色的書。",
+            "src": "https://postgenre.org/monster-rally-interview/",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "Feighan 22 歲開始做 Monster Rally，2020 年是第 10 年；他說剛起步時讀了很多 Brian Wilson 21 歲就寫出好音樂的事，也說自己一度想當「熱帶版 Madlib」，至今仍熱愛 Beach Boys 與 Madlib。",
+            "src": "https://postgenre.org/monster-rally-interview/",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "Gold Robot 的專輯介紹稱 Feighan 是從俄亥俄搬到洛杉磯後推出第三張全長《Return to Paradise》（2013 年 10 月 29 日）；他在 PostGenre 訪談則說，自己後來搬到克里夫蘭，過去住洛杉磯時常去 Amoeba Records 的世界音樂與 easy listening 特價區挖唱片。",
+            "src": "https://gold-robot.com/project/grr033-monster-rally---return-to-paradise-12/",
+            "single": true,
+            "from": "new",
+            "src2": "https://postgenre.org/monster-rally-interview/"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "他的聲音用取樣把數十年前的錄音拼成一個難以定位年代與地點的整體；PostGenre 說「exotica」或「instrumental hip hop」都只對一部分，他自己把音樂視為一趟聽眾從未去過的假期的配樂。",
+            "src": "https://postgenre.org/monster-rally-interview/",
+            "single": true,
+            "from": "new",
+            "src2": "https://gold-robot.com/project/grr033-monster-rally---return-to-paradise-12/"
+          },
+          {
+            "f": "他的器材很簡單：兩台取樣機加幾件打擊樂器，做法以剪貼蒐集來的素材為主，常常連原始取樣出處都記不清；〈In the Valleys〉取樣了 Don Ho 的錄音。",
+            "src": "https://postgenre.org/monster-rally-interview/",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "New Commute 形容《Botanica Dream》（2022）延續他的招牌：波里尼西亞鋼棒吉他段落、豐潤的 exotica 爵士組合與海灘現場收音。",
+            "src": "https://www.newcommute.net/feed/2022/7/19/monster-rally-botanica-dream",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "廠牌官網轉載的《Return to Paradise》評語中，SPIN 寫道：若 Martin Denny 與 Madlib 有個親生孩子，聽起來大概就像 Monster Rally；Passion of the Weiss 稱他的主要特質是保存取樣素材本身的美。",
+            "src": "https://gold-robot.com/project/grr033-monster-rally---return-to-paradise-12/",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "Feighan 在 2020 年說，做了十年之後聽眾每年都比前一年多，「有時候這個週期就是會這麼久」。",
+            "src": "https://postgenre.org/monster-rally-interview/",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "none",
+        "facts": []
+      }
+    },
+    "milestones": [],
+    "conflicts": [
+      "卡池 Bandcamp 寫洛杉磯；Gold Robot（2013 稿）寫從俄亥俄搬洛杉磯，PostGenre（2020）寫已搬到克里夫蘭，Clear Vision 2022 稱 From Cleveland。現居地不下定論，facts 只寫經過"
+    ],
+    "pubIssues": [],
+    "searches": 4,
+    "failedFetches": 2,
+    "status": "thin",
+    "notes": "名字 Ted Feighan 見 PostGenre、Gold Robot（兩處）、Clear Vision Collective、AllMusic（搜尋摘要，未開頁）；Clear Vision 與 Indie Shuffle 引文誤作 Tim。非獨立：Gold Robot 評語為廠牌轉載，只當具名說法，不當共識評價；SPIN/Passion of the Weiss 原頁未開。legacy 無榜單或官方榮譽，維持 thin。Last.fm 說 Columbus（未開頁，不收）。Belly Up Aspen 頁 404，2026 年新專輯《Echoes of the Emerald Sands》只在搜尋摘要見到、未開頁，不收。"
+  },
+  {
+    "key": "l'orange",
+    "name": "L'Orange",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "L'Orange 本名 Austin Hart，北卡羅來納州人；藝名取自他高中時開的一輛亮橘色車。",
+            "src": "https://en.wikipedia.org/wiki/L%27Orange_(music_producer)",
+            "src2": "https://daily.bandcamp.com/lorange-interview",
+            "from": "new"
+          },
+          {
+            "f": "他說早期在北卡羅來納做很怪的器樂嘻哈，當地人不買單；來自北卡羅來納的導師 KON Sci 放 Mello Music Group 的《The Left》給他聽，讓他第一次看到自己這種怪音樂能被更多人聽到的路。",
+            "src": "https://www.cabbageshiphop.com/lorange-the-cabbages-interview/",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "2013 年他簽約 Mello Music Group，與 Stik Figa 合作的《The City Under the City》是他在該廠的第一張；此前他先自行發行，《The Mad Writer》（2012）則在 Jakarta Records 出版。",
+            "src": "https://daily.bandcamp.com/lorange-interview",
+            "src2": "https://www.cabbageshiphop.com/lorange-the-cabbages-interview/",
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "他的取樣以老爵士、搖擺與靈魂唱片為主，混入舊廣播節目與黑色電影的音訊；器材包括 MPC 2500、SP303、唱盤與 Logic，再加上大量咖啡。",
+            "src": "https://en.wikipedia.org/wiki/L%27Orange_(music_producer)",
+            "src2": "https://daily.bandcamp.com/lorange-interview",
+            "from": "new"
+          },
+          {
+            "f": "他的人聲取樣多取自 20 世紀初的廣播，尤其偏愛 1940 年代；Mello Music Group 創辦人 Michael Tolle 說他的製作像禁酒時期的風格，粗礪中帶一點那個年代的搞笑感，「人們愛說他是 noir，但那只是一面」。",
+            "src": "https://daily.bandcamp.com/lorange-interview",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "他的合作多是概念專輯：與 Kool Keith 的《Time? Astonishing!》、與 Jeremiah Jae 的《The Night Took Us In Like Family》、與 Mr. Lif 的《The Life & Death of Scenery》（設定在藝術已不存在的末日世界）；《The Mad Writer》後被拿來和 Blockhead、Wax Tailor、The Avalanches 並提。",
+            "src": "https://daily.bandcamp.com/lorange-interview",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "他說自己簽約前拒絕了「器樂展示」性質的製作人合約，堅持要以藝人身分簽，因為每張專輯都得先替聽眾建立自己的脈絡；他的流程是一層層反覆修改，與饒舌者合作時會回頭改 beat，讓人聲像是順著 beat 唱出來。",
+            "src": "https://www.cabbageshiphop.com/lorange-the-cabbages-interview/",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "他的右耳有良性腫瘤（膽脂瘤），2016 年前一年內動了兩次大手術，最後一次是「耳壁降低」手術，聽力不太可能回來；他也有聽覺過敏，聽音樂與做音樂都很痛苦。他說自己從小就聽不太清楚那隻耳朵。",
+            "src": "https://daily.bandcamp.com/lorange-interview",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "術後他從一天做一兩首 beat 變成一週一兩首，一度沮喪，但說這段經歷讓他寫得更多、並找到其他興趣；Tolle 說廠牌把他的手術排在專輯發行之間。",
+            "src": "https://daily.bandcamp.com/lorange-interview",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "2021 年他在訪談中說，自己的銷量不算大，但最自豪的是「撐下來」：這些專輯持續給有興趣的人一些可以咬進去的東西。",
+            "src": "https://www.cabbageshiphop.com/lorange-the-cabbages-interview/",
+            "single": true,
+            "from": "new"
+          },
+          {
+            "f": "一部關於他因膽脂瘤失去聽力的紀錄片，2023 年 1 月 20 日在 Slamdance 影展首映；他同年創辦廠牌 Old Soul Music，並已離開 Mello Music Group。",
+            "src": "https://en.wikipedia.org/wiki/L%27Orange_(music_producer)",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      },
+      "era": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "2011 年他以《The Manipulation》EP 與首張全長《Old Soul》（以 Billie Holiday 老唱片為取樣）出道，此後自行發行，2012 年《The Mad Writer》由 Jakarta Records 出版（目錄號 JAKARTA046）。",
+            "src": "https://daily.bandcamp.com/lorange-interview",
+            "src2": "https://www.discogs.com/release/4074180-LOrange-The-Mad-Writer",
+            "from": "new"
+          }
+        ]
+      }
+    },
+    "milestones": [],
+    "conflicts": [
+      "維基首段寫 1991-12-07 生，wikidata 寫 1984-01-01，兩者不一致；生年不收進 facts"
+    ],
+    "pubIssues": [],
+    "searches": 3,
+    "failedFetches": 1,
+    "status": "full",
+    "notes": "poolAlbums 為空，身分依研究稿《The Mad Writer》（Jakarta 2012）與維基「北卡羅來納、MPC、老爵士取樣」一致；維基警示（未提卡池專輯）因維基本就不列專輯而解除。Bandcamp Daily 2016 稱他為 Nashville 製作人，維基與 2021 Cabbages 稱北卡羅來納，不寫現居地。非獨立：Bandcamp Daily 文為訪談，Tolle 為廠牌創辦人說法，只當具名說法。「2011 年出道」、Old Soul Music 2023、紀錄片首映日期為單源或維基單源（Old Soul Music 的 mrcnnlive 頁只在搜尋結果見到、未開頁），若寫作層要用，出道年僅 Bandcamp Daily 一源，保守可寫「2011 年前後」。legacy 沒有榜單、榮譽、後輩點名等共識評價，只有身體與創作的人物故事。"
+  },
+  {
+    "key": "eagle eyed tiger",
+    "name": "Eagle Eyed Tiger",
+    "slots": {
+      "origin": {
+        "status": "bank",
+        "facts": [
+          {
+            "f": "Eagle Eyed Tiger 的據點在紐約，是一人計畫；《Feathers》（2022 年 4 月 8 日）全由他一人寫作、製作、混音與母帶，Bandcamp 簡介只有一句「From East to West」。",
+            "src": "https://eagleeyedtiger.bandcamp.com/album/feathers-2",
+            "src2": "https://musicbrainz.org/artist/1ffbafef-7908-44ae-a65d-9522794392dc",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "bank",
+        "facts": [
+          {
+            "f": "他自述《Feathers》先有一首同名單曲，但它不適合前兩張專輯，也不適合下一張，在「未發行資料夾」與正式發行間擺盪；後來新寫的 demo 能和它「坐在同一張桌上」，才有這 9 首。Bandcamp 標籤含 chillwave、bedroom pop、lofi pop、retrowave、synthwave、trip hop、electronica。",
+            "src": "https://eagleeyedtiger.bandcamp.com/album/feathers-2",
+            "single": true,
+            "from": "bank"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "none",
+        "facts": []
+      },
+      "era": {
+        "status": "none",
+        "facts": []
+      }
+    },
+    "milestones": [],
+    "conflicts": [],
+    "pubIssues": [],
+    "searches": 1,
+    "failedFetches": 0,
+    "status": "thin",
+    "notes": "MB 藝人頁：Person、New York、註解 Electronic Artist，與 Bandcamp 地點一致。事實大多取自研究稿（Bandcamp 專輯頁）。作者自述「前兩張」，但前作名稱、年份未查，不寫。查無評論，legacy 查不到。"
+  },
+  {
+    "key": "mindspring memories",
+    "name": "MindSpring Memories",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Bandcamp 頁標示藝人所在地為芝加哥，頁面無簡介與 credits；MusicBrainz 藝人頁註解寫「ambient／new age vaporwave」。",
+            "src": "https://mindspringmemories.bandcamp.com/album/2-0",
+            "single": true,
+            "from": "new",
+            "src2": "https://musicbrainz.org/artist/e37e6c3f-81c5-429e-856b-cff7ad818d6f"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Bandcamp 標籤包含 vaporwave、slushwave、eccojams、plunderphonics、sample-based、new age、smooth jazz、soft rock、adult contemporary、ambient、downtempo，指向以 80、90 年代 smooth jazz 與軟搖滾為素材的取樣路線；專輯 6 首、曲長多在 6 分鐘以上。",
+            "src": "https://mindspringmemories.bandcamp.com/album/2-0",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "none",
+        "facts": []
+      },
+      "era": {
+        "status": "none",
+        "facts": []
+      }
+    },
+    "milestones": [],
+    "conflicts": [],
+    "pubIssues": [],
+    "searches": 2,
+    "failedFetches": 1,
+    "status": "thin",
+    "notes": "2015 年專輯在 2021 年再發，卡單年份照 MB 首發。曲名為非拉丁文字，不入 facts。MB 藝人頁（Chicago）與 Bandcamp 一致。查無評論與訪談，legacy 查不到。"
+  },
+  {
+    "key": "guitoud",
+    "name": "Guitoud",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Guitoud 的據點在巴黎（Bandcamp 與 MusicBrainz 一致）；《Conscious Rasta》2010 年 11 月 1 日由 Fresh Poulp Records 發行，目錄號 FPR 53。",
+            "src": "https://guitoud.bandcamp.com/album/conscious-rasta",
+            "single": true,
+            "from": "new",
+            "src2": "https://musicbrainz.org/artist/6655738b-057b-45b5-be7e-6bee0ace6906"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "《Conscious Rasta》11 首、約 54 分鐘，Bandcamp 標籤為 ambient、downtempo、dub、trip hop；曲目有〈Coming Jah〉／〈Coming Dub〉這類成對的 dub 版本，節奏沉緩，多為 4 到 6 分鐘的長曲。",
+            "src": "https://guitoud.bandcamp.com/album/conscious-rasta",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "none",
+        "facts": []
+      },
+      "era": {
+        "status": "none",
+        "facts": []
+      }
+    },
+    "milestones": [],
+    "conflicts": [],
+    "pubIssues": [],
+    "searches": 2,
+    "failedFetches": 1,
+    "status": "thin",
+    "notes": "沿用研究稿 b 組事實並以 MB 藝人頁（Person、Paris）補身分。Bandcamp 首頁 403。查無評論與訪談，legacy 查不到。"
+  },
+  {
+    "key": "el jazzy chavo",
+    "name": "El Jazzy Chavo",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "El Jazzy Chavo 的據點在雅典，專輯《Today the Sun Falls in the East》（2017）自己在 Funkypseli Cave 製作與混音，Bandcamp 版權標示 Funkypseli Cave Records 2017。",
+            "src": "https://jazzychavo.bandcamp.com/album/today-the-sun-falls-in-the-east",
+            "single": true,
+            "from": "new",
+            "src2": "https://musicbrainz.org/artist/b184cc1a-0b95-49ef-98bb-f9e6a926bab3"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "專輯簡介寫「泛黃的黑膠、一台舊唱盤、一台取樣機、一些咖啡，和許多靈感」；標籤含 beat tape、boom bap、sp303、jazz、funk、spiritual、trip hop、downtempo、lo-fi；14 首、單曲 1 分 43 秒到 3 分 51 秒。",
+            "src": "https://jazzychavo.bandcamp.com/album/today-the-sun-falls-in-the-east",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "none",
+        "facts": []
+      },
+      "era": {
+        "status": "none",
+        "facts": []
+      }
+    },
+    "milestones": [],
+    "conflicts": [],
+    "pubIssues": [],
+    "searches": 2,
+    "failedFetches": 1,
+    "status": "thin",
+    "notes": "MB 藝人頁（Person、Athens）與 Bandcamp 一致。sp303 是標籤、不是簡介直述設備。研究稿提到的同名《Redirections》為選輯、已汰。查無評論，legacy 查不到。"
+  },
+  {
+    "key": "koi.",
+    "name": "Koi.",
+    "slots": {
+      "origin": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Koi. 的《Maelstrom》2012 年 5 月 21 日發行，掛在 collectivelanguage 帳號；Bandcamp 地點標示奧斯汀，簡介只放 koisounds、koimusic 的社群連結。",
+            "src": "https://collectivelanguage.bandcamp.com/album/maelstrom",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      },
+      "sound": {
+        "status": "gap",
+        "facts": [
+          {
+            "f": "Bandcamp 標籤包含 chillwave、glo-fi、dreampop、shoegaze、trip hop、lo-fi、ambient、downtempo、lounge、experimental、instrumental；10 首、約 35 分鐘。",
+            "src": "https://collectivelanguage.bandcamp.com/album/maelstrom",
+            "single": true,
+            "from": "new"
+          }
+        ]
+      },
+      "legacy": {
+        "status": "none",
+        "facts": []
+      },
+      "era": {
+        "status": "none",
+        "facts": []
+      }
+    },
+    "milestones": [],
+    "conflicts": [
+      "Bandcamp 專輯頁標示 Austin, Texas；MusicBrainz 藝人頁（Koi.，註解「Virginia Beach electronic/chillwave producer」，area Costa Mesa）。MB 藝人頁連結指向同一個 collectivelanguage Bandcamp 與 koisounds 帳號，故確認為同一人，但所在地兩邊不一致，facts 只寫 Bandcamp 標示"
+    ],
+    "pubIssues": [],
+    "searches": 2,
+    "failedFetches": 0,
+    "status": "thin",
+    "notes": "維基「Koi」是錦鯉條目，非本人，不收。MB 同名另有 Koi（2001 起 Person、ripcoye）與瑞典金屬團，皆非。查無評論，legacy 查不到。"
+  }
+]
