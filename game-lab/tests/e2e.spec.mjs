@@ -1,6 +1,8 @@
 // game-lab/tests/e2e.spec.mjs — 品味對決・試做版 Playwright 端到端測試（SPEC §8.3，14 個情境）。Agent D。
 // 純 node 腳本（不用 @playwright/test）：node game-lab/tests/e2e.spec.mjs
-//   環境變數：LAB_URL（預設 http://localhost:8765/game-lab/index.html）、LAB_SIZES（預設 "390x844,390x660"）、LAB_ONLY（例 "1,2,9"）
+//   環境變數：LAB_URL（預設 http://localhost:8765/game-lab/index.html）、LAB_SIZES（預設 "390x844,390x660"）、LAB_ONLY（例 "1,2,9"）、
+//            LAB_NARROW（#4 的窄手機版面，預設 "375x667,360x740"；空字串＝不跑）
+//   評審修正後加的：#4（窄手機：手牌列每張都在螢幕內）、#15（換面板防連點）、#16（標題推門不丟今晚、散場中重新整理不丟紀錄）
 //   需要靜態伺服器：cd dip-vinyl-shop && python3 -m http.server 8765
 // 每個情境印 PASS／FAIL；任何一個 FAIL → exit 1。
 import { createRequire } from 'module';
@@ -10,6 +12,7 @@ try { ({ chromium } = require('playwright')); } catch (_) { ({ chromium } = requ
 
 const URL0 = process.env.LAB_URL || 'http://localhost:8765/game-lab/index.html';
 const SIZES = (process.env.LAB_SIZES || '390x844,390x660').split(',').map(s => s.split('x').map(Number));
+const NARROW = (process.env.LAB_NARROW != null ? process.env.LAB_NARROW : '375x667,360x740').split(',').filter(Boolean).map(s => s.split('x').map(Number));
 const ONLY = process.env.LAB_ONLY ? new Set(process.env.LAB_ONLY.split(',').map(Number)) : null;
 const SEED = '20261106';
 const Q = (extra) => `${URL0}?debug=1&seed=${SEED}${extra === undefined ? '&fast=1' : extra}`;
@@ -288,6 +291,72 @@ async function runSize(browser, [W, H]) {
     } catch (e) { record(10, size, false, 'crashed: ' + e.message.split('\n')[0]); }
     await ctx.close();
   }
+  // E：15 換面板防連點（挖箱：點箱子連點兩下，第二下不會直接拿走沒看過的那張）、16 標題推門不丟今晚＋散場中重新整理不丟紀錄
+  if (want(15) || want(16)) {
+    const { ctx, page } = await newPage(browser, W, H);
+    try {
+      await page.goto(Q(), { waitUntil: 'domcontentloaded' });
+      await page.waitForSelector('[data-a=quiet]', { timeout: 5000 });
+      await page.click('[data-a=quiet]');
+      await page.evaluate(() => window.__lab.autoplay('ev', { until: 'map' }));
+      await page.waitForFunction(() => window.__lab.screen() === 'map' && window.DipLabEngine.nextStep(window.__lab.run) === 'move', null, { timeout: 60000 });
+      await page.evaluate(() => window.__lab.stop()); await sleep(300);
+      if (want(15)) {
+        await page.evaluate(() => window.__lab.skipTo(2)); await sleep(400);
+        await page.click('.lb-node[data-n="c2a"]'); await page.click('.lb-sheet.preview [data-a=go]');
+        await page.waitForSelector('.lb-sheet.crate [data-k="tw"]', { timeout: 5000 }); await sleep(450);
+        const d0 = await page.evaluate(() => window.__lab.run.deck.length);
+        const box = await page.evaluate(() => { const b = document.querySelector('.lb-sheet.crate [data-k="tw"]').getBoundingClientRect(); return { x: b.left + b.width / 2, y: b.top + b.height / 2 }; });
+        await page.mouse.click(box.x, box.y); await sleep(90); await page.mouse.click(box.x, box.y); await sleep(600);
+        const r = await page.evaluate(() => ({ deck: window.__lab.run.deck.length, step: window.DipLabEngine.nextStep(window.__lab.run), sheet: !!document.querySelector('.lb-sheet.cratecard') }));
+        record(15, size, r.deck === d0 && r.step === 'crateCard' && r.sheet, `crate double-tap: deck ${d0}→${r.deck}, step ${r.step}, cards shown ${r.sheet}`);
+        await page.click('.lb-sheet.cratecard [data-a=none]'); await page.waitForSelector('.lb-sheet.done [data-a=next]'); await sleep(450);
+        await page.click('.lb-sheet.done [data-a=next]');
+        await page.waitForFunction(() => window.__lab.screen() === 'map', null, { timeout: 5000 }); await sleep(300);
+      }
+      if (want(16)) {
+        await page.click('.lb-top [aria-label=暫停選單]'); await page.click('.lb-modal [data-a=title]');
+        await page.waitForSelector('[data-a=cont]', { timeout: 5000 });
+        await page.click('[data-a=push]'); await sleep(300);
+        const kept = await page.evaluate(() => ({ s: window.__lab.screen(), run: !!(window.__lab.run && !window.__lab.run.over) }));
+        await page.click('[data-a=cont]');
+        await page.waitForFunction(() => window.__lab.screen() === 'map', null, { timeout: 5000 }); await sleep(300);
+        const fight = await page.evaluate(() => { const r = window.__lab.run; const c = r.map.cols.find(x => x.col === r.col); const n = c && c.nodes.find(x => x.enemyId && x.type !== 'boss'); return n ? n.id : null; });
+        if (!fight) await page.evaluate(() => window.__lab.skipTo(3));
+        const fid = fight || 'c3a';
+        await sleep(300);
+        await page.click(`.lb-node[data-n="${fid}"]`); await page.click('.lb-sheet.preview [data-a=go]');
+        await page.waitForFunction(() => window.__lab.screen() === 'duel', null, { timeout: 10000 }); await sleep(800);
+        await page.evaluate(() => window.__lab.forceLose());
+        await page.waitForFunction(() => window.__lab.screen() === 'scene', null, { timeout: 5000 }); await sleep(300);
+        await page.reload({ waitUntil: 'domcontentloaded' }); await page.waitForSelector('[data-a=push]', { timeout: 5000 });
+        const rec = await page.evaluate(() => ({ nights: window.__lab.save.nights.length, cont: !!document.querySelector('[data-a=cont]'), end: !!document.querySelector('[data-a=end]') }));
+        record(16, size, kept.s === 'title' && kept.run && rec.nights === 1 && !rec.cont && rec.end, `推門 once keeps the run ${kept.run}; reload in the 散場 scene → nights ${rec.nights}, 看今晚結算 ${rec.end}`);
+      }
+      if (page._errors.length) record(15, size, false, 'console errors ' + JSON.stringify(page._errors.slice(0, 2)));
+    } catch (e) { record(want(15) ? 15 : 16, size, false, 'crashed: ' + e.message.split('\n')[0]); }
+    await ctx.close();
+  }
+}
+// 窄手機（375、360）：只量 #4 版面，加上「手牌列每張盤都在螢幕內」
+async function narrowSize(browser, [W, H]) {
+  const size = `${W}x${H}`;
+  const { ctx, page } = await newPage(browser, W, H);
+  try {
+    await openAndPush(page);
+    const ok = await prologueToDuel(page, {});
+    await page.click('.dl-hand .dl-card[data-i="0"]');
+    await page.waitForSelector('.dl-attrs .dl-ab', { timeout: 5000 });
+    const r = await page.evaluate(() => {
+      const iw = innerWidth, ih = innerHeight;
+      const cards = [...document.querySelectorAll('.dl-hand .dl-card')].map(e => e.getBoundingClientRect());
+      const sels = ['.dl-rec', '.dl-disc', '.dl-ban', '.dl-hand .dl-card', '.dl-attrs .dl-ab'];
+      let maxB = 0; for (const s of sels) for (const e of document.querySelectorAll(s)) maxB = Math.max(maxB, e.getBoundingClientRect().bottom);
+      return { n: cards.length, maxR: Math.round(Math.max(...cards.map(c => c.right))), minL: Math.round(Math.min(...cards.map(c => c.left))), maxB: Math.round(maxB), iw, ih, sw: document.documentElement.scrollWidth };
+    });
+    record(4, size, ok && r.n >= 4 && r.maxR <= r.iw && r.minL >= 0 && r.maxB <= r.ih && r.sw <= r.iw, `narrow: ${r.n} cards, right ${r.maxR}/${r.iw}, bottom ${r.maxB}/${r.ih}, scrollWidth ${r.sw}`);
+  } catch (e) { record(4, size, false, 'crashed: ' + e.message.split('\n')[0]); }
+  await ctx.close();
 }
 async function measureKeys(page) {
   return page.evaluate(() => {
@@ -305,6 +374,7 @@ async function measureKeys(page) {
   const browser = await launch();
   const t0 = Date.now();
   for (const s of SIZES) await runSize(browser, s);
+  if (want(4)) for (const s of NARROW) await narrowSize(browser, s);
   await browser.close();
   const fail = results.filter(r => !r.ok);
   console.log(`\n${results.length - fail.length}/${results.length} passed in ${Math.round((Date.now() - t0) / 1000)} s`);

@@ -3,7 +3,7 @@
 > 由 `node game-lab/tools/lint-copy.mjs` 產生，請勿手改。要改句子，直接改 `game-lab/content.js`（劇本、台詞、提示、事件）或 `game-lab/tools/pitches.json`（推薦語，改完重跑 `node game-lab/tools/bake-cards.mjs`），再重跑本檢查。
 > 這份只列**新句**（試做版新寫、或取自四份概念稿，店主還沒看過）。標成「原句」「拍板」的句子已與現行 `roguelike.html` 逐字比對（36 句，全部一致才會產生這份）。
 
-統計：原句 34、拍板 2、新 171（同一句在有聲／安靜兩版序章只算一次）。
+統計：原句 34、拍板 2、新 182（同一句在有聲／安靜兩版序章只算一次）。
 
 ## 序章（有聲音）
 
@@ -86,6 +86,7 @@
 
 | 說話者 | 句子 | 出處 | 位置 |
 |---|---|---|---|
+| 男子・jabBubble | ……對啦，就這張。 | 本規格新寫 | `lines.man.jabBubble` |
 | 男子・bubble | 這張排行榜第一名欸。 | 概念稿 C | `lines.man.bubble[0]` |
 | 男子・bubble | 大家都在聽這個啦。 | 本規格新寫 | `lines.man.bubble[1]` |
 | 男子・countered | 你那什麼？聽都沒聽過。 | 概念稿 B | `lines.man.countered[0]` |
@@ -128,7 +129,9 @@
 |---|---|---|---|
 | 針壓強迫症・intro | 你這張是幾版？ | 概念稿 D | `lines.needle.intro` |
 | 針壓強迫症・bubble | 我的器材比較準。 | 概念稿 D | `lines.needle.bubble[0]` |
-| 針壓強迫症・countered | 一定是你的唱針沒調好。 | 概念稿 D | `lines.needle.countered[0]` |
+| 針壓強迫症・bubble | 這個音場，你的喇叭擺歪了。 | 本規格新寫 | `lines.needle.bubble[1]` |
+| 針壓強迫症・bubble | 針壓先量一下再說。 | 本規格新寫 | `lines.needle.bubble[2]` |
+| 針壓強迫症・countered | ……一定是我的針壓偏了。 | 概念稿 D | `lines.needle.countered[0]` |
 | 針壓強迫症・hit | 你最大那張，我盯很久了。 | 本規格新寫 | `lines.needle.hit[0]` |
 | 針壓強迫症・faceChange | 你的唱針該換了。 | 概念稿 D | `lines.needle.faceChange` |
 | 針壓強迫症・habit | 剛剛那手，我記下來了。 | 本規格新寫 | `lines.needle.habit` |
@@ -156,6 +159,8 @@
 |---|---|---|---|
 | 月底吃土・intro | 這個月又爆預算了…… | 概念稿 D | `lines.broke.intro` |
 | 月底吃土・bubble | 隨便啦，反正都刷了。 | 概念稿 D | `lines.broke.bubble[0]` |
+| 月底吃土・bubble | 刷卡，分期零利率。 | 本規格新寫 | `lines.broke.bubble[1]` |
+| 月底吃土・bubble | 這張……我先看看就好。 | 本規格新寫 | `lines.broke.bubble[2]` |
 | 月底吃土・countered | 我的伙食費…… | 概念稿 D | `lines.broke.countered[0]` |
 | 月底吃土・hit | 這張是我這個月的便當錢。 | 本規格新寫 | `lines.broke.hit[0]` |
 | 月底吃土・faceChange | 這個月的伙食費，全押了！ | 概念稿 D | `lines.broke.faceChange` |
@@ -170,12 +175,14 @@
 |---|---|---|---|
 | 剁手黨・intro | 這三張我都買兩份，一份聽、一份收。 | 概念稿 B | `lines.buyer.intro` |
 | 剁手黨・bubble | 月底？月底再說。 | 概念稿 B | `lines.buyer.bubble[0]` |
+| 剁手黨・bubble | 這張我家已經有三張了。 | 本規格新寫 | `lines.buyer.bubble[1]` |
+| 剁手黨・bubble | 先買再說，聽不聽另外算。 | 本規格新寫 | `lines.buyer.bubble[2]` |
 | 剁手黨・countered | 沒關係，我再買一張。 | 本規格新寫 | `lines.buyer.countered[0]` |
 | 剁手黨・hit | 又入手一張！ | 概念稿 B | `lines.buyer.hit[0]` |
 | 剁手黨・faceChange | 限量彩膠，最後一張了喔。 | 概念稿 D | `lines.buyer.faceChange` |
 | 剁手黨・ultWarn | 全部帶走，不用包！ | 本規格新寫 | `lines.buyer.ultWarn` |
 | 剁手黨・lose | ……我先去領個錢。 | 概念稿 B | `lines.buyer.lose[0]` |
-| 剁手黨・win | 謝謝光臨，下次請早。 | 本規格新寫 | `lines.buyer.win` |
+| 剁手黨・win | 這張歸我了。刷卡。 | 本規格新寫 | `lines.buyer.win` |
 
 ## 對決台詞・冷門仙人
 
@@ -198,6 +205,8 @@
 |---|---|---|---|
 | 名盤守門員・intro | 我寫過這張的樂評。 | 概念稿 A | `lines.critic.intro` |
 | 名盤守門員・bubble | 這張我在專欄寫過三千字。 | 概念稿 C | `lines.critic.bubble[0]` |
+| 名盤守門員・bubble | 這段的混音，我有意見。 | 本規格新寫 | `lines.critic.bubble[1]` |
+| 名盤守門員・bubble | 你知道這張的製作人是誰嗎？ | 本規格新寫 | `lines.critic.bubble[2]` |
 | 名盤守門員・countered | ……我會寫進專欄。 | 概念稿 A | `lines.critic.countered[0]` |
 | 名盤守門員・hit | 三顆星，不能再多。 | 概念稿 A | `lines.critic.hit[0]` |
 | 名盤守門員・faceChange | 你懂什麼叫脈絡嗎？ | 概念稿 C | `lines.critic.faceChange` |
@@ -211,11 +220,13 @@
 | 說話者 | 句子 | 出處 | 位置 |
 |---|---|---|---|
 | 傳說藏家・bubble | 你猜，我這手是真的嗎？ | 概念稿 A | `lines.boss.bubble[0]` |
+| 傳說藏家・bubble | 這張，我年輕的時候也有一張。 | 本規格新寫 | `lines.boss.bubble[1]` |
+| 傳說藏家・bubble | 慢慢來，我們有一整晚。 | 本規格新寫 | `lines.boss.bubble[2]` |
 | 傳說藏家・countered | 有意思。 | 本規格新寫 | `lines.boss.countered[0]` |
 | 傳說藏家・hit | 這張，我三十年前就有了。 | 概念稿 B | `lines.boss.hit[0]` |
 | 傳說藏家・faceChange | ……翻面。讓我看看你手上拿的是什麼。 | 概念稿 A | `lines.boss.faceChange` |
 | 傳說藏家・habit | 你最大那張，我也有。 | 本規格新寫 | `lines.boss.habit` |
-| 傳說藏家・ultWarn | 收藏是一種病。我病了五十年。 | 概念稿 C | `lines.boss.ultWarn` |
+| 傳說藏家・ultWarn | 收藏是一種病。我病了三十年。 | 概念稿 C | `lines.boss.ultWarn` |
 | 傳說藏家・aceOut | 這張，我只在打烊之後放。 | 概念稿 B | `lines.boss.aceOut` |
 | 傳說藏家・lose | ……這張，送你。三十年前，我也是這樣拿到的。 | 概念稿 A | `lines.boss.lose[0]` |
 
@@ -223,13 +234,13 @@
 
 | 說話者 | 句子 | 出處 | 位置 |
 |---|---|---|---|
-| 老闆 | 他喊經典。冷門剋經典。 | 本規格新寫 | `hints.h_counter` |
-| 老闆 | 格子顏色＝他會出的；數字＝結果。 | 本規格新寫 | `hints.h_forecast` |
+| 老闆 | 他喊經典。冷門剋它，大張經典硬碰也行。 | 本規格新寫 | `hints.h_counter` |
+| 老闆 | 上排＝他出的；綠＝他扣，紅＝你扣。 | 本規格新寫 | `hints.h_forecast` |
 | 老闆 | 他惱羞了。四格是「晃」。 | 本規格新寫 | `hints.h_face` |
-| 老闆 | 晃：出剋你剋招的那個。 | 本規格新寫 | `hints.h_feint` |
+| 老闆 | 晃：他料到你要剋，反剋回來。 | 本規格新寫 | `hints.h_feint` |
 | 老闆 | 氣勢滿了。現在放，或存到更痛。 | 本規格新寫 | `hints.h_ult` |
 | 老闆 | 王牌每場一次，被剋就白用。 | 本規格新寫 | `hints.h_ace` |
-| 老闆 | 他要輾壓。出剋它的盤割捨防禦。 | 本規格新寫 | `hints.h_eult` |
+| 老闆 | 他要輾壓。出剋它的盤，割捨防禦。 | 本規格新寫 | `hints.h_eult` |
 | 老闆 | 你的王牌剋得到它：七星回擊。 | 本規格新寫 | `hints.h_reflect` |
 | 老闆 | 相生：經→冷→硬→經，加氣勢。 | 本規格新寫 | `hints.h_chain` |
 | 老闆 | 點播的盤，出招 +2。 | 本規格新寫 | `hints.h_request` |
@@ -307,7 +318,7 @@
 |---|---|---|---|
 | 旁白 | 客人把手機遞過來：網拍寫「九成新，聽不到十次」。 | 本規格新寫 | `events.ninetynine.text` |
 | 選項 | 下標｜得到一張盤（先亮給你看），但三軸各 −1（最低 1，盤上標「九成新」）｜→ 寄來了。封套上有一圈咖啡漬。 | 本規格新寫 | `events.ninetynine.options[0]` |
-| 選項 | 算了｜什麼都沒發生｜→ 你把手機還給他。 | 本規格新寫 | `events.ninetynine.options[1]` |
+| 選項 | 算了｜回 2 聲望｜→ 你把手機還給他。他請你喝了口茶。 | 本規格新寫 | `events.ninetynine.options[1]` |
 
 ## 第二夜預告
 

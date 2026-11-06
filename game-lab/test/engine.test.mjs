@@ -579,5 +579,73 @@ section('13. policies are exported, legal and deterministic', () => {
   }
 });
 
+section('14. review fixes (heal cap after damage, maxed analog, prologue retries, overflow qi, no duplicate stakes, first record)', () => {
+  // R6: 經典 heal is capped AFTER the hit; attrFx.hp = actual gain; damage event comes first
+  { const st = mk({ tier: 'hall', hp: 20, maxHp: 20, disc: ['true', 'true', 'true', 'true', 'true', 'true'], record: R(1, 5, 1, { tag: 'r6' }), hand: [R(4, 1, 1, { tag: 'p6' })], K: 2 });
+    st.intent = { ult: false, bubble: 'o', cellIdx: 0 };
+    const ev = EN.applyClash(st, { type: 'card', i: 0, attr: 'c' }, 0);
+    const cl = clashOf(ev), fx = ev.find(e => e.t === 'attrFx' && e.who === 'p'), di = ev.findIndex(e => e.t === 'damage' && e.target === 'p'), fi = ev.indexOf(fx);
+    ok(cl.kind === 'countered' && cl.toP === 6 && fx.hp === 2 && st.p.hp === 16 && di >= 0 && di < fi, 'R6: full HP, hit 6, 老派耳朵 heal 2 after the hit → 16', { kind: cl.kind, toP: cl.toP, fx, hp: st.p.hp, di, fi }); }
+  { const st = mk({ tier: 'hall', hp: 20, maxHp: 20, disc: ['true', 'true', 'true', 'true', 'true', 'true'], record: R(1, 1, 5, { tag: 'r6b' }), hand: [R(4, 1, 1, { tag: 'p6b' })], K: 2 });
+    st.intent = { ult: false, bubble: 'h', cellIdx: 0 };
+    const ev = EN.applyClash(st, { type: 'card', i: 0, attr: 'c' }, 0);
+    const fx = ev.find(e => e.t === 'attrFx' && e.who === 'p');
+    ok(clashOf(ev).toP === 0 && fx.hp === 0 && st.p.hp === 20, 'R6: full HP and no damage → attrFx.hp 0 (nothing to float)', { fx, hp: st.p.hp }); }
+  // R12: 站類比 on a card already at 硬蕊 5 fails before anything happens
+  { const run = runAt('hall', 3, { seedKey: 'r12' }); run.map.cols[3].nodes[1].eventId = 'analog'; run.hp = 10;
+    EN.choose(run, C, { type: 'move', nodeId: 'c3b' });
+    const id = run.deck[0]; run.cardMods[id] = { h: 9 };
+    const r = EN.choose(run, C, { type: 'event', option: 0, cardId: id });
+    ok(r.error === 'maxed' && run.hp === 10 && run.pending && run.pending.step === 'event', 'R12: analog on a maxed card → maxed, nothing applied', r); }
+  // R14: a lost prologue attempt adds nothing to the score (only retries++)
+  { const run = EN.newRun(C, { seedKey: 'r14', nightNo: 1, aceTier: 'hall', prologue: true });
+    const { duel } = EN.startNodeDuel(run, C, 'c0a'); duel.stats.readHit = 3; duel.stats.seeThrough = 2; duel.over = 'lose';
+    const f = EN.finishDuel(run, C, duel);
+    ok(f.offer.kind === 'retry' && run.stats.readHit === 0 && run.stats.seeThrough === 0 && run.stats.retries === 1, 'R14: lost prologue → no score stats', run.stats); }
+  // FUN-08: node heals that overflow a full bar by ≥3 → next start qi +1, at most +2 per fight, reset at the next duel
+  { const run = runAt('hall', 4, { seedKey: 'f08' }); run.hp = run.maxHp;
+    EN.choose(run, C, { type: 'move', nodeId: 'c4b' });
+    const r = EN.choose(run, C, { type: 'rest', option: 'tea' });
+    ok(!r.error && run.hp === run.maxHp && run.nextStartQi === 1 && r.effects.some(e => e.overflowQi === 1), 'FUN-08: tea at full HP → next start qi +1', r);
+    const run2 = runAt('hall', 4, { seedKey: 'f08b' }); run2.hp = run2.maxHp - 1;
+    EN.choose(run2, C, { type: 'move', nodeId: 'c4b' });
+    const r2 = EN.choose(run2, C, { type: 'rest', option: 'tea' });
+    ok(run2.nextStartQi === 1, 'FUN-08: tea at max−1 (overflow 7) → +1', r2);
+    const run3 = runAt('hall', 1, { seedKey: 'f08c' }); run3.hp = run3.maxHp; run3.ovQi = 2; run3.nextStartQi = 2;
+    const eff = []; run3.relics = ['cleaner'];
+    const r3 = EN.choose(run3, C, { type: 'move', nodeId: 'c1a' }); void r3;
+    ok(run3.ovQi === 2, 'FUN-08: cap counter untouched by a move');
+    const { duel } = EN.startNodeDuel(run3, C, 'c1a'); ok(run3.ovQi === 0 && run3.nextStartQi === 0 && duel.p.qi >= 2, 'FUN-08: overflow qi spent and reset at the next duel', { ov: run3.ovQi, q: duel.p.qi }); void eff;
+    const run4 = runAt('hall', 3, { seedKey: 'f08d' }); run4.hp = 15; run4.map.cols[3].nodes[1].eventId = 'auntie';
+    EN.choose(run4, C, { type: 'move', nodeId: 'c3b' });
+    const r4 = EN.choose(run4, C, { type: 'event', option: 0 });
+    ok(run4.hp === 20 && run4.nextStartQi === 0 && !r4.effects.some(e => e.overflowQi), 'FUN-08: no spill when the heal just fills the bar', r4); }
+  // R13: stakes never repeat within a night or duplicate the starting bag; crate／listen draws skip owned and staked cards
+  { let dupStake = 0, inBag = 0, listenDup = 0, crateDup = 0, n = 0;
+    for (let i = 0; i < 300; i++) for (const tier of EN.TIERS) {
+      const run = EN.newRun(C, { seedKey: 'r13-' + i, nightNo: 1, aceTier: tier, prologue: true }); n++;
+      const stakes = run.map.cols.flatMap(c => c.nodes).filter(x => x.stakeId && x.type !== 'boss').map(x => x.stakeId);
+      if (new Set(stakes).size !== stakes.length) dupStake++;
+      if (stakes.some(id => run.deck.includes(id))) inBag++;
+      const own = new Set(run.deck.concat(stakes));
+      run.col = 2; run.pending = null;
+      EN.choose(run, C, { type: 'move', nodeId: 'c2b' });
+      if (run.pending.cardIds.some(id => own.has(id))) listenDup++;
+      run.pending = null; run.col = 2; run.visited = [];
+      EN.choose(run, C, { type: 'move', nodeId: 'c2a' }); const cr = EN.choose(run, C, { type: 'crate', crate: ['jazz', 'tw', 'noise'][i % 3] });
+      if (!cr.error && run.pending.cardIds.some(id => own.has(id))) crateDup++;
+    }
+    ok(!dupStake && !inBag && !listenDup && !crateDup, 'R13: no duplicate stakes / bag copies / listen or crate repeats (' + n + ' nights)', { dupStake, inBag, listenDup, crateDup }); }
+  // FUN-13: a fight won on a 看穿 KO adds 看穿收尾 ×n (50 each) to the score
+  { const run = EN.newRun(C, { seedKey: 'f13', nightNo: 1, aceTier: 'hall' }); run.stats.seeThroughKO = 2;
+    const s = EN.scoreRun(run); ok(s.parts.some(p => /看穿收尾 ×2/.test(p[0]) && p[1] === 100), 'FUN-13: 看穿收尾 score line', s.parts); }
+  // jab callback: opts.firstRecordId puts that record on hand 1 without changing anything else
+  { const run = EN.newRun(C, { seedKey: 'jab', nightNo: 1, aceTier: 'hall', prologue: true });
+    const a = JSON.parse(JSON.stringify(run));
+    const d1 = EN.startNodeDuel(run, C, 'c0a', { firstRecordId: 'coldplay-mylo-xyloto' }).duel;
+    const d0 = EN.startNodeDuel(a, C, 'c0a').duel;
+    ok(d1.e.record.id === 'coldplay-mylo-xyloto' && d1.p.hand.map(c => c.id).join() === d0.p.hand.map(c => c.id).join() && d1.e.deck.length === d0.e.deck.length, 'firstRecordId: Mylo Xyloto on hand 1, same hand dealt', d1.e.record.id); }
+});
+
 console.log('\n' + pass + ' passed, ' + fail + ' failed');
 if (fail) { console.log('\nFAILURES:'); fails.slice(0, 40).forEach(f => console.log(' - ' + f.slice(0, 600))); process.exit(1); }

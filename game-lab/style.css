@@ -4,7 +4,7 @@
  * 浮層（泡泡、章、飛卡、提示）一律 pointer-events:none；只有底部面板與彈窗吃點擊。
  */
 :root{
-  --ink:#111; --gray:#888; --gray2:#666; --line:#ddd; --bg:#fff; --gold:#b8860b; --gold2:#f0c75e; --red:#c11628; --win:#2e7d52;
+  --ink:#111; --gray:#767676; --gray2:#666; --line:#ddd; --bg:#fff; --gold:#b8860b; --gold2:#f0c75e; --red:#c11628; --win:#2e7d52;
   --c:#1f5fae; --o:#6a3fa0; --h:#c11628;
   --hall:#9aa0a8; --pearl:#5b4a8a; --heresy:#a01020;
   --silver-shine:linear-gradient(115deg,#9498a0 0%,#9498a0 34%,#c8ccd2 40%,#fff 47%,#fff 50%,#fff 53%,#c8ccd2 60%,#9498a0 66%,#9498a0 100%);
@@ -15,7 +15,9 @@
 }
 *{box-sizing:border-box;-webkit-tap-highlight-color:transparent;}
 html,body{margin:0;height:100%;background:var(--bg);}
-body{color:var(--ink);font-family:var(--font);font-size:13px;line-height:1.5;letter-spacing:.03em;overflow-x:hidden;
+/* 震動只震 #app：html 接手捲動，body 用 clip 夾住 #app 的位移，整頁不會被推寬 */
+html{overflow-x:hidden;}
+body{color:var(--ink);font-family:var(--font);font-size:13px;line-height:1.5;letter-spacing:.03em;overflow-x:hidden;overflow-x:clip;
   -webkit-text-size-adjust:100%;text-size-adjust:100%;}
 #app{position:relative;max-width:430px;margin:0 auto;height:100vh;height:100svh;overflow:hidden;overflow:clip;background:var(--bg);
   display:flex;flex-direction:column;}
@@ -26,7 +28,7 @@ img{display:block;}
 .lb-sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;}
 
 /* ---------- 共用按鈕 ---------- */
-.lb-btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;min-height:44px;min-width:44px;padding:8px 14px;
+.lb-btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;min-height:44px;min-width:44px;padding:8px 14px;word-break:keep-all;overflow-wrap:anywhere;
   background:#fff;border:1px solid var(--ink);font-size:14px;font-weight:700;letter-spacing:.06em;line-height:1.25;text-align:center;
   transition:background .12s,color .12s,transform .08s;}
 .lb-btn:active{transform:translateY(1px);}
@@ -46,7 +48,7 @@ img{display:block;}
 /* ---------- 頂欄（44px，所有點擊區 ≥44） ---------- */
 .lb-top{flex:none;height:44px;display:flex;align-items:center;gap:2px;padding:0 4px 0 10px;border-bottom:1px solid var(--ink);background:#fff;position:relative;z-index:30;}
 .lb-top .tt{flex:1;min-width:0;font-size:12px;font-weight:700;letter-spacing:.06em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
-.lb-top .tt small{font-weight:400;color:var(--gray2);margin-left:6px;}
+.lb-top .tt small{font-size:12px;font-weight:400;color:var(--gray2);margin-left:6px;}
 .lb-top .chip{font-size:12px;font-weight:700;border:1px solid var(--ink);padding:1px 6px;margin-right:4px;white-space:nowrap;}
 .lb-top .chip.gold{border-color:var(--gold);color:var(--gold);}
 .lb-top .lnk{min-height:44px;padding:0 8px;font-size:12px;font-weight:700;letter-spacing:.06em;display:inline-flex;align-items:center;}
@@ -54,7 +56,8 @@ img{display:block;}
 .lb-snd{display:inline-flex;align-items:center;justify-content:center;min-width:44px;height:44px;}
 .lb-snd button{min-width:44px;min-height:44px;font-size:18px;line-height:1;background:none;border:0;color:inherit;}
 .lb-hpchip{font-size:12px;font-weight:700;white-space:nowrap;margin-right:6px;}
-.lb-hpchip b{color:var(--red);}
+.lb-hpchip b{color:var(--ink);}
+.lb-hpchip.low b{color:var(--red);}
 
 /* ---------- 畫面骨架 ---------- */
 .lb-scr{position:relative;flex:1;min-height:0;display:flex;flex-direction:column;}
@@ -193,7 +196,7 @@ img{display:block;}
 .lb-cv.ace.heresy::after{background-image:var(--crimson-shine);}
 .lb-cv.ace.sel::after{animation-duration:2.6s;padding:4px;}
 .lb-cv .badge{position:absolute;top:0;left:0;z-index:4;font-size:12px;font-weight:700;padding:1px 5px;color:#fff;line-height:1.3;}
-.lb-cv .badge.hall{background:var(--hall);} .lb-cv .badge.pearl{background:var(--pearl);} .lb-cv .badge.heresy{background:var(--heresy);}
+.lb-cv .badge.hall{background:#6f757d;} .lb-cv .badge.pearl{background:var(--pearl);} .lb-cv .badge.heresy{background:var(--heresy);}
 .lb-cv .badge.gold{background:var(--gold);}
 .lb-cv .badge.new{left:auto;right:0;background:var(--red);}
 .lb-cv .badge.mod{top:auto;bottom:0;background:rgba(17,17,17,.82);}
@@ -379,7 +382,8 @@ button.lb-ct:focus-visible{outline:2px dashed var(--gold);outline-offset:3px;}
 .lb-filters{display:flex;gap:6px;margin:8px 0 12px;}
 .lb-filters .lb-btn{flex:1;font-size:13px;min-height:44px;padding:4px 6px;}
 .lb-filters .lb-btn.on{background:var(--ink);color:#fff;}
-.lb-book{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;}
+.lb-book{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;}
+.lb-bk .lb-glyphs{flex-wrap:wrap;}
 .lb-bk{border:1px solid var(--ink);padding:8px;display:flex;flex-direction:column;gap:4px;min-height:150px;position:relative;background:#fff;}
 .lb-bk.unmet{border-style:dashed;border-color:#aaa;background:#fafafa;}
 .lb-bk .pic{width:48px;height:48px;}
@@ -430,14 +434,15 @@ button.lb-ct:focus-visible{outline:2px dashed var(--gold);outline-offset:3px;}
 #app{--W:min(100vw,430px);}
 .lb-stg.duel{position:absolute;inset:0;height:auto;aspect-ratio:auto;}
 /* title：舞台吃剩下的高度（上限＝全景），按鈕固定在下面 */
-.lb-scr.title{justify-content:center;}
-.lb-scr.title .lb-stg{flex:0 1 auto;aspect-ratio:448/492;min-height:200px;border-bottom:2px solid var(--ink);}
+.lb-scr.title{justify-content:flex-start;}
+/* 舞台吃滿按鈕以外的高度（fill：美術放大、左下對齊、右邊裁掉），高手機不再留白帶（UX-07） */
+.lb-scr.title .lb-stg{flex:1 1 auto;aspect-ratio:auto;min-height:200px;border-bottom:2px solid var(--ink);}
 .lb-title-acts{flex:none;padding:12px 14px calc(10px + env(safe-area-inset-bottom,0px));display:flex;flex-direction:column;gap:8px;background:#fff;}
 .lb-title-acts .row{display:flex;gap:8px;}
 .lb-title-acts .row .lb-btn{flex:1;}
 .lb-title-acts .lb-sub{text-align:center;}
 /* scene：舞台＋對話窗一個框，框最高到舞台自然高度，多的空間上下置中 */
-.lb-scr.scene .lb-box{flex:1 1 auto;max-height:calc(var(--W) * 470 / 448 + 158px);}
+.lb-scr.scene .lb-box{flex:1 1 auto;}
 .lb-scr.scene .lb-stg{flex:1 1 auto;aspect-ratio:auto;min-height:120px;}
 /* map／node／reward：舞台在上，吃剩下的高度 */
 .lb-scr.stagescr>.lb-stg{flex:1 1 auto;aspect-ratio:auto;min-height:150px;}
@@ -458,7 +463,7 @@ button.lb-ct:focus-visible{outline:2px dashed var(--gold);outline-offset:3px;}
 .lb-glyph.found{border-color:var(--gold);background:#fffbe9;color:#6b4d00;}
 /* 結果吐司（不吃點擊） */
 .lb-toast{position:absolute;left:50%;top:54px;transform:translateX(-50%);z-index:120;pointer-events:none;background:var(--ink);color:#fff;font-size:13px;font-weight:700;
-  padding:6px 12px;max-width:calc(100% - 24px);text-align:center;line-height:1.45;box-shadow:0 6px 16px rgba(0,0,0,.25);animation:lbToastIn .25s cubic-bezier(.2,1.4,.4,1);}
+  padding:6px 12px;width:max-content;max-width:calc(100% - 24px);text-align:center;text-wrap:balance;line-height:1.45;box-shadow:0 6px 16px rgba(0,0,0,.25);animation:lbToastIn .25s cubic-bezier(.2,1.4,.4,1);}
 .lb-toast.out{opacity:0;transition:opacity .35s;}
 @keyframes lbToastIn{0%{transform:translate(-50%,-10px);opacity:0;}100%{transform:translate(-50%,0);opacity:1;}}
 .lb-tl .grid{position:relative;}
@@ -472,4 +477,63 @@ button.lb-ct:focus-visible{outline:2px dashed var(--gold);outline-offset:3px;}
   .lb-stg .rain,.lb-notes.on span,.lb-anger.on,.lb-spr .body,.lb-spr .body svg,.lb-node.can,.lb-tt.spin,.lb-mini-tt .rec,.lb-cv.ace::after{animation:none !important;}
   .lb-spr{transition:opacity .15s;}
   .lb-sheet,.lb-modal .pane,.lb-stamp,.lb-say{animation:lbFade .15s !important;}
+}
+
+/* ---------- 評審修正（FIXER-SHELL） ---------- */
+/* scene 的底部面板放進版面裡（不蓋舞台）：對話窗與包包條先收起來，舞台縮短時從上面裁，人物頭腳都在（UX-04、UX-08） */
+.lb-scr.scene>.lb-sheet{position:relative;left:auto;right:auto;bottom:auto;flex:none;max-height:calc(100% - 190px);box-shadow:none;}
+.lb-scr.scene.sheeted .lb-dq,.lb-scr.scene.sheeted .lb-strip{display:none;}
+/* 地圖的節點預覽／包包：一樣放進版面，時間軸與包包條先收起來，舞台從上面裁，你整個人都在（不再只露頭頂） */
+.lb-scr.stagescr.map>.lb-sheet{position:relative;left:auto;right:auto;bottom:auto;flex:none;max-height:calc(100% - 150px);box-shadow:none;}
+.lb-scr.stagescr.map.sheeted>.lb-tl,.lb-scr.stagescr.map.sheeted>.lb-bagbar{display:none;}
+/* 剛換上的面板／選單：短暫不吃點擊（雙擊的第二下不會選到沒看過的東西；ui.js guardClicks） */
+.lb-sheet.arming,.lb-dq .menu.arming{pointer-events:none;}
+/* 對話窗選單淡入 */
+.lb-dq.hasmenu .lb-dqopt{animation:lbOptIn .2s ease-out both;}
+@keyframes lbOptIn{0%{opacity:0;transform:translateY(6px);}100%{opacity:1;transform:none;}}
+/* 鍵盤焦點：黑底主鈕上也看得到（UX-12） */
+.lb-btn:focus-visible,.lb-ico:focus-visible,.lb-node:focus-visible,.lb-crate:focus-visible,.lb-top .lnk:focus-visible,.lb-flip .meta .lnk:focus-visible,.lb-bagbar button:focus-visible,.lb-tt:focus-visible{outline:3px solid var(--gold);outline-offset:2px;}
+button.lb-ct:focus-visible{outline:3px solid var(--gold);outline-offset:3px;}
+.lb-dqopt:focus-visible{outline:2px solid var(--gold2);outline-offset:0;}
+/* 標題：重新推門要按兩次 */
+.lb-title-acts .lb-btn.armed{background:var(--red);border-color:var(--red);color:#fff;}
+.lb-title-acts{position:relative;}
+/* 警告蓋在舞台底邊（不擠進版面）：按第一下之後兩顆鈕不會往上跳，第二下按原位就對了 */
+.lb-title-acts .lb-warn{color:#fff;font-weight:700;position:absolute;left:0;right:0;bottom:100%;margin:0;padding:5px 14px;background:var(--red);text-align:center;z-index:5;pointer-events:none;}
+.lb-title-acts .lb-btn.pri .sub{opacity:.9;}
+/* 地圖上的你（走到下一站） */
+.lb-me{position:absolute;left:0;top:0;width:26px;height:26px;z-index:4;pointer-events:none;line-height:0;opacity:0;transition:opacity .2s;
+  filter:drop-shadow(0 1px 0 #fff) drop-shadow(0 -1px 0 #fff) drop-shadow(1px 0 0 #fff) drop-shadow(-1px 0 0 #fff);}
+.lb-me.on{opacity:1;}
+.lb-me svg{width:26px;height:auto;display:block;}
+.lb-me.walk svg{animation:sprBob .26s steps(1,end) infinite;}
+/* 試聽機：放完可以點唱機再聽一次 */
+button.lb-tt:disabled{cursor:default;}
+button.lb-tt:not(:disabled){cursor:pointer;box-shadow:0 0 0 3px #fff,0 0 0 5px var(--gold);}
+button.lb-tt:not(:disabled)::before{content:'↻';position:absolute;right:-6px;top:-8px;z-index:2;background:var(--gold);color:#fff;font-size:12px;font-weight:700;width:20px;height:20px;border-radius:50%;display:flex;align-items:center;justify-content:center;}
+/* 結算：唱片櫃進度與下一個目標（FUN-14） */
+.lb-goal{margin-top:14px;border:1px solid var(--ink);padding:8px 10px;}
+.lb-goal .row{display:flex;justify-content:space-between;align-items:baseline;font-size:13px;}
+.lb-goal .row span{font-size:12px;color:var(--gray2);font-weight:700;}
+.lb-goal .bar{height:8px;border:1px solid var(--ink);margin:6px 0;background:#fafafa;}
+.lb-goal .bar i{display:block;height:100%;background:var(--gold);}
+/* 圖鑑：沒見過的格子縮成一行（UX-30） */
+.lb-bk.unmet{min-height:0;flex-direction:row;align-items:center;gap:8px;padding:8px;}
+.lb-bk.unmet .pic{width:32px;height:32px;flex:none;}
+/* 小抄：名詞表＋唱盤字表（UX-15） */
+.lb-help{font-family:'Noto Sans TC','PingFang TC','Heiti TC','Microsoft JhengHei',sans-serif;}
+.lb-help h2{font-family:var(--font);}
+.lb-gl{display:grid;grid-template-columns:auto 1fr;gap:6px 10px;font-size:13px;line-height:1.5;margin:0;}
+.lb-gl dt{font-weight:700;white-space:nowrap;}
+.lb-gl dd{margin:0;}
+.lb-h3{font-size:13px;font-weight:700;margin:12px 0 6px;padding-top:8px;border-top:1px solid var(--line);}
+.lb-glt{display:grid;grid-template-columns:24px 1fr 24px 1fr;gap:6px 8px;align-items:center;font-size:13px;}
+/* 窄手機：地圖節點留出間隔，菁英 ★ 不壓到隔壁（UX-28） */
+@media (max-width:370px){
+  .lb-tl{padding-left:8px;padding-right:8px;}
+  .lb-node.can{box-shadow:0 0 0 2px var(--gold);animation:none;}
+  .lb-node .mk{left:-3px;top:-6px;transform:scale(.85);transform-origin:0 0;}
+}
+@media (prefers-reduced-motion: reduce){
+  .lb-dq.hasmenu .lb-dqopt,.lb-me.walk svg{animation:none !important;}
 }

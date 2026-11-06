@@ -11,12 +11,13 @@
   'use strict';
   if (typeof window === 'undefined') return;
 
-  const MASTER = 0.35, MUSIC_VOL = 0.5, GIVE_UP_MS = 2500, LRU_MAX = 6;
+  // LRU_MAX：存「抓下來的原始檔」（每首約 1 MB）；DEC_MAX：解碼後的 PCM（每首約 10 MB）只留目前＋下一首
+  const MASTER = 0.35, MUSIC_VOL = 0.5, GIVE_UP_MS = 2500, LRU_MAX = 6, DEC_MAX = 2;
   const S = {
     ctx: null, own: null, master: null, noise: null, pink: null,
     unlocked: false, localPref: 'off',
     rain: null, speed: 1,
-    soundCbs: new Set(),
+    soundCbs: new Set(), toggles: new Set(), resumeCard: null,
   };
   const DP = () => (window.DipPlayer && typeof window.DipPlayer.audioContext === 'function') ? window.DipPlayer : null;
 
@@ -51,7 +52,8 @@
   .bossmask .bline.r{transform-origin:right;}
   .bossmask .bemoji{font-size:64px;line-height:1;animation:bossStamp .6s .1s both cubic-bezier(.2,1.4,.4,1);}
   .bossmask .btitle{font-size:32px;font-weight:700;letter-spacing:.35em;text-indent:.35em;color:#111;animation:bossStamp .55s .35s both cubic-bezier(.2,1.4,.4,1),bossGlow 1.2s .9s infinite;}
-  .bossmask .bsub{font-size:13px;color:#b8860b;letter-spacing:.14em;font-weight:700;animation:bossStamp .5s .62s both;}
+  @keyframes bossSub{0%{transform:scale(1.6);opacity:0;}100%{transform:none;opacity:1;}}
+  .bossmask .bsub{font-size:13px;color:#b8860b;letter-spacing:.14em;font-weight:700;animation:bossSub .4s .62s both ease-out;max-width:90vw;white-space:nowrap;}
   body.boss-shake #app{animation:bossShake .5s .55s;}
   /* 飄字／蓋章／閃白 */
   .dlfx-layer{position:fixed;inset:0;pointer-events:none;z-index:2147480000;overflow:hidden;}
@@ -114,7 +116,14 @@
     try { const b = c.createBuffer(1, 1, 22050); const s = c.createBufferSource(); s.buffer = b; s.connect(c.destination); s.start(0); } catch (_) {}
     return c;
   }
-  function emitSound() { const on = soundOn(); S.soundCbs.forEach(cb => { try { cb(on); } catch (e) { console.error(e); } }); }
+  // 每一顆 🔊（對決頂欄、⏸ 選單、地圖…）都跟著同步；已經不在畫面上的順手收掉
+  function syncToggles() {
+    S.toggles.forEach(t => {
+      if (!t || !t.el || !t.el.isConnected) { try { if (t && t.destroy) t.destroy(); } catch (_) {} S.toggles.delete(t); }
+      else { try { t.sync(); } catch (_) {} }
+    });
+  }
+  function emitSound() { const on = soundOn(); S.soundCbs.forEach(cb => { try { cb(on); } catch (e) { console.error(e); } }); syncToggles(); }
 
   function init() { injectCss(); return api; }
   // 只能在 click handler 內呼叫
@@ -123,7 +132,7 @@
     if (dp && typeof dp.setAutoplayPreference === 'function') { try { dp.setAutoplayPreference(!!withSound); } catch (_) {} }
     else S.localPref = withSound ? 'on' : 'off';
     S.unlocked = true;
-    if (withSound) resumeNow();
+    if (withSound) { resumeNow(); resumeMusic(); }
     else { music.stop({ fadeMs: 0 }); rainStop(); }
     emitSound();
     return soundOn();
@@ -131,14 +140,15 @@
   function mountToggle(el) {
     if (!el) return null;
     const onToggle = enable => {
-      if (enable) { S.unlocked = true; if (!DP()) S.localPref = 'on'; resumeNow(); }
-      else { if (!DP()) S.localPref = 'off'; music.stop({ fadeMs: 0 }); rainStop(); }
+      // 關：聲音停，但「唱盤上那張」留著（迷你唱盤照轉、圈標不消失）；開：接著放剛剛那張
+      if (enable) { S.unlocked = true; if (!DP()) S.localPref = 'on'; resumeNow(); resumeMusic(); }
+      else { if (!DP()) S.localPref = 'off'; music.mute(); rainStop(); }
       emitSound();
       return false;
     };
     const dp = DP();
     if (dp && typeof dp.createToggle === 'function') {
-      try { return dp.createToggle(el, { armOnEnable: false, onToggle }); } catch (e) { console.error(e); }
+      try { const t = dp.createToggle(el, { armOnEnable: false, onToggle }); if (t) S.toggles.add(t); return t; } catch (e) { console.error(e); }
     }
     // 沒有 DipPlayer：自己做一顆
     const b = document.createElement('button');
@@ -146,8 +156,13 @@
     const sync = () => { const on = pref() === 'on' && S.unlocked; b.textContent = on ? '🔊' : '🔇'; b.setAttribute('aria-pressed', String(on)); b.setAttribute('aria-label', on ? '關閉聲音' : '開啟聲音'); };
     b.addEventListener('click', ev => { ev.preventDefault(); ev.stopPropagation(); const en = !(pref() === 'on' && S.unlocked); S.localPref = en ? 'on' : 'off'; onToggle(en); sync(); });
     el.appendChild(b); sync();
-    const off = onSound(sync);
-    return { el: b, sync, destroy() { off(); b.remove(); } };
+    const h = { el: b, sync, destroy() { S.toggles.delete(h); b.remove(); } };
+    S.toggles.add(h);
+    return h;
+  }
+  function resumeMusic() {
+    const c = S.resumeCard; S.resumeCard = null;
+    if (c && !M.cur && soundOn()) music.play(c, { fadeMs: 800 }).catch(() => {});
   }
   function onSound(cb) { S.soundCbs.add(cb); return () => S.soundCbs.delete(cb); }
 
@@ -215,18 +230,32 @@
     bell(c) { [1320, 1760].forEach(f => tone(c, { f, d: 0.9, g: 0.22, a: 0.002 })); [1320, 1760].forEach(f => tone(c, { f, t: 0.14, d: 0.9, g: 0.22 * 0.7, a: 0.002 })); },
     tick(c) { tone(c, { type: 'square', f: 880, d: 0.025, g: 0.12, a: 0.001 }); },
     select(c) { tone(c, { type: 'triangle', f: 440, f2: 660, d: 0.07, g: 0.3, a: 0.003 }); },
-    slam(c) { tone(c, { f: 60, f2: 40, d: 0.12, g: 0.9, a: 0.002 }); noise(c, { d: 0.03, g: 0.35, filter: { type: 'highpass', f: 2000 } }); },
-    needle(c) { noise(c, { d: 0.04, g: 0.35, filter: { type: 'bandpass', f: 3000, q: 1.2 } }); tone(c, { f: 90, d: 0.06, g: 0.5, a: 0.002 }); },
+    // 低頻本體照 SPEC；另外疊一點 250 Hz 以上的泛音／噪音，手機喇叭才聽得到（手機喇叭 250 Hz 以下幾乎不出聲）
+    slam(c) { tone(c, { f: 60, f2: 40, d: 0.12, g: 0.65, a: 0.002 }); noise(c, { d: 0.03, g: 0.35, filter: { type: 'highpass', f: 2000 } }); noise(c, { d: 0.05, g: 0.45, filter: { type: 'bandpass', f: 500, q: 0.8 } }); tone(c, { type: 'square', f: 240, f2: 160, d: 0.09, g: 0.4, filter: { type: 'lowpass', f: 1600 } }); },
+    // 落針：90 Hz 的「咚」手機喇叭放不出來，疊一個 250 Hz 以上的短「叩」（三角波＋中頻噪音）
+    needle(c) { noise(c, { d: 0.04, g: 0.35, filter: { type: 'bandpass', f: 3000, q: 1.2 } }); tone(c, { f: 90, d: 0.06, g: 0.5, a: 0.002 }); tone(c, { type: 'triangle', f: 340, f2: 210, d: 0.06, g: 0.34, a: 0.002 }); noise(c, { d: 0.035, g: 0.3, filter: { type: 'bandpass', f: 900, q: 1 } }); },
     readHit(c, o) { const k = (o && o.oct) || 1; [NOTE.C5, NOTE.E5, NOTE.G5].forEach((f, i) => tone(c, { type: 'triangle', f: f * k, t: i * 0.04, d: 0.14, g: 0.32 })); },
     seeThrough(c) { SFX.readHit(c, { oct: 2 }); noise(c, { d: 0.18, g: 0.28, filter: { type: 'bandpass', f: 6000, f2: 2000, q: 1.4 } }); },
     feintHit(c) { tone(c, { type: 'sawtooth', f: 400, f2: 90, d: 0.22, g: 0.25, a: 0.003, filter: { type: 'lowpass', f: 2400 } }); noise(c, { d: 0.2, g: 0.18, filter: { type: 'bandpass', f: 1800, f2: 500, q: 0.8 } }); },
     scratch(c) { tone(c, { type: 'sawtooth', f: 300, f2: 120, d: 0.14, g: 0.16, a: 0.003, filter: { type: 'lowpass', f: 2000 } }); noise(c, { d: 0.12, g: 0.12, filter: { type: 'bandpass', f: 1500, f2: 600, q: 0.8 } }); },
-    hurt(c) { tone(c, { f: 110, d: 0.18, g: 0.7 }); tone(c, { type: 'square', f: 55, d: 0.08, g: 0.25 }); },
+    hurt(c) { tone(c, { f: 110, d: 0.18, g: 0.5 }); tone(c, { type: 'square', f: 55, d: 0.08, g: 0.25 }); tone(c, { type: 'square', f: 220, f2: 110, d: 0.14, g: 0.38, filter: { type: 'lowpass', f: 1800 } }); noise(c, { d: 0.06, g: 0.3, filter: { type: 'bandpass', f: 800, q: 0.9 } }); },
     mirror(c) { tone(c, { f: 720, d: 0.06, g: 0.5, a: 0.001 }); },
     qiUp(c, o) { const n = Math.max(1, Math.min(10, (o && o.n) || 1)); tone(c, { type: 'square', f: QI_SCALE[n - 1], d: 0.04, g: 0.1, a: 0.002 }); },
     ultCharge(c) { noise(c, { d: 0.45, g: 0.3, a: 0.05, curve: 'lin', filter: { type: 'highpass', f: 200, f2: 6000, q: 0.7 } }); },
-    ult(c) { tone(c, { f: 50, d: 0.3, g: 0.95 }); noise(c, { d: 0.4, g: 0.08 / MASTER * 0.35, a: 0.04, pink: true, filter: { type: 'bandpass', f: 1200, q: 0.5 } }); },
-    eUltWarn(c) { tone(c, { f: 55, d: 0.09, g: 0.95, a: 0.004 }); tone(c, { f: 55, t: 0.18, d: 0.09, g: 0.95, a: 0.004 }); },
+    ult(c) {
+      tone(c, { f: 50, d: 0.3, g: 0.7 });
+      tone(c, { type: 'triangle', f: 120, f2: 60, d: 0.3, g: 0.35 });
+      tone(c, { type: 'square', f: 200, f2: 100, d: 0.24, g: 0.38, filter: { type: 'lowpass', f: 1800 } });
+      noise(c, { d: 0.14, g: 0.7, filter: { type: 'bandpass', f: 600, q: 0.8 } });
+      noise(c, { d: 0.4, g: 0.5, a: 0.04, pink: true, filter: { type: 'bandpass', f: 1200, q: 0.5 } });
+    },
+    eUltWarn(c) {
+      [0, 0.18].forEach(t => {
+        tone(c, { f: 55, t, d: 0.09, g: 0.7, a: 0.004 });
+        tone(c, { type: 'square', f: 110, t, d: 0.09, g: 0.42, a: 0.004, filter: { type: 'lowpass', f: 1400 } });
+        noise(c, { t, d: 0.04, g: 0.6, filter: { type: 'bandpass', f: 700, q: 1 } });
+      });
+    },
     reflect(c) { noise(c, { d: 0.4, g: 0.45, curve: 'rev', filter: { type: 'highpass', f: 3000 } }); [NOTE.C4, NOTE.G4, NOTE.C5, NOTE.E5].forEach(f => tone(c, { type: 'triangle', f, t: 0.4, d: 0.4, g: 0.2 })); },
     faceChange(c) { SFX.feintHit(c); tone(c, { type: 'square', f: 220, t: 0.06, d: 0.07, g: 0.15 }); tone(c, { type: 'square', f: 220, t: 0.2, d: 0.07, g: 0.15 }); },
     ko(c) { tone(c, { f: 300, f2: 80, d: 0.5, g: 0.6, a: 0.005, lin: true }); },
@@ -278,40 +307,57 @@
   }
 
   // ---------------------------------------------------------------- music（試聽）
-  const M = { cache: new Map(), cur: null, card: null, token: 0, cbs: new Set() };
-  function lruTouch(url, entry) { M.cache.delete(url); M.cache.set(url, entry); while (M.cache.size > LRU_MAX) { const k = M.cache.keys().next().value; M.cache.delete(k); } }
-  function load(url) {
+  // cache：url → 抓下來的原始檔（ArrayBuffer，約 1 MB／首，留 6 首）；dec：url → 解碼後的 AudioBuffer（約 10 MB／首，只留 2 首）
+  const M = { cache: new Map(), dec: new Map(), cur: null, card: null, token: 0, cbs: new Set(), endCbs: new Set() };
+  function lru(map, key, entry, max) { map.delete(key); map.set(key, entry); while (map.size > max) { const k = map.keys().next().value; map.delete(k); } }
+  function fetchBytes(url) {
     const hit = M.cache.get(url);
-    if (hit) { lruTouch(url, hit); return hit.p; }
-    const entry = { buf: null, p: null };
+    if (hit) { lru(M.cache, url, hit, LRU_MAX); return hit.p; }
+    const entry = { p: null };
     entry.p = (async () => {
-      const c = ctx(); if (!c) throw new Error('no audio');
       const r = await fetch(url, { mode: 'cors', credentials: 'omit' });
       if (!r.ok) throw new Error('http ' + r.status);
-      const ab = await r.arrayBuffer();
-      const buf = await new Promise((res, rej) => { try { const p = c.decodeAudioData(ab, res, rej); if (p && p.then) p.then(res, rej); } catch (e) { rej(e); } });
-      entry.buf = buf; return buf;
+      return r.arrayBuffer();
     })();
     entry.p.catch(() => { if (M.cache.get(url) === entry) M.cache.delete(url); });
-    lruTouch(url, entry);
+    lru(M.cache, url, entry, LRU_MAX);
+    return entry.p;
+  }
+  function load(url) {
+    const hit = M.dec.get(url);
+    if (hit) { lru(M.dec, url, hit, DEC_MAX); return hit.p; }
+    const entry = { p: null };
+    entry.p = (async () => {
+      const c = ctx(); if (!c) throw new Error('no audio');
+      const bytes = await fetchBytes(url);
+      // decodeAudioData 會把傳進去的 ArrayBuffer 拿走：給它一份複本，原始檔留在快取
+      const ab = bytes.slice(0);
+      return new Promise((res, rej) => { try { const p = c.decodeAudioData(ab, res, rej); if (p && p.then) p.then(res, rej); } catch (e) { rej(e); } });
+    })();
+    entry.p.catch(() => { if (M.dec.get(url) === entry) M.dec.delete(url); });
+    lru(M.dec, url, entry, DEC_MAX);
     return entry.p;
   }
   function emitMusic() { const card = M.card; M.cbs.forEach(cb => { try { cb(card); } catch (e) { console.error(e); } }); }
   function fadeOutCur(fadeMs) {
     const cur = M.cur; M.cur = null; if (!cur) return;
+    clearTimeout(cur.maxT);
     try { const t = cur.ctx.currentTime, d = Math.max(0.02, fadeMs / 1000); cur.g.gain.cancelScheduledValues(t); cur.g.gain.setValueAtTime(cur.g.gain.value, t); cur.g.gain.linearRampToValueAtTime(0.0001, t + d); cur.src.stop(t + d + 0.05); } catch (_) {}
   }
   const music = {
-    // play(card,{fadeMs}) → Promise<boolean>：真的出聲才 true。靜音時只換「唱盤上那張」（視覺），不出聲。
+    // play(card,{fadeMs, maxMs, exclusive}) → Promise<boolean>：真的出聲才 true。靜音時只換「唱盤上那張」（視覺），不出聲。
+    //   maxMs：放這麼久就淡出（試聽機 15 秒）；exclusive：一呼叫就先把正在放的那首收掉（抓檔慢時，不會讓上一首墊在底下被當成題目）
     play(card, opts) {
-      const fadeMs = (opts && opts.fadeMs != null) ? opts.fadeMs : 1500;
+      opts = opts || {};
+      const fadeMs = opts.fadeMs != null ? opts.fadeMs : 1500;
       const tok = ++M.token;
       if (!card) return Promise.resolve(false);
       if (!soundOn() || !card.previewUrl) {
         if (!card.previewUrl) return Promise.resolve(false);
-        M.card = card; emitMusic(); return Promise.resolve(false);
+        M.card = card; S.resumeCard = card; emitMusic(); return Promise.resolve(false);
       }
-      if (M.card && M.card.id === card.id && M.cur) return Promise.resolve(true);
+      if (M.card && M.card.id === card.id && M.cur && !opts.maxMs) return Promise.resolve(true);
+      if (opts.exclusive) fadeOutCur(Math.min(fadeMs, 400));
       return new Promise(resolve => {
         let done = false;
         const giveUp = setTimeout(() => { if (!done) { done = true; resolve(false); } }, GIVE_UP_MS);
@@ -326,8 +372,10 @@
             const g = c.createGain(); const t = c.currentTime, d = Math.max(0.02, fadeMs / 1000);
             g.gain.setValueAtTime(0.0001, t); g.gain.linearRampToValueAtTime(MUSIC_VOL, t + d);
             src.connect(g); g.connect(c.destination); src.start(t);
-            const me = { ctx: c, src, g, card };
-            src.onended = () => { if (M.cur === me) { M.cur = null; } };
+            const me = { ctx: c, src, g, card, maxT: 0 };
+            // 自然放完（不是被換掉、不是被 maxMs 收掉）才通知：讓對決畫面接著放下一張，不留 20 秒的空白
+            src.onended = () => { if (M.cur === me) { M.cur = null; M.endCbs.forEach(cb => { try { cb(card); } catch (e) { console.error(e); } }); } };
+            if (opts.maxMs) me.maxT = setTimeout(() => { if (M.cur === me) fadeOutCur(1200); }, Math.max(0, opts.maxMs - 1200));
             M.cur = me; M.card = card;
             sfx('scratch');
             emitMusic(); resolve(true);
@@ -335,15 +383,18 @@
         }).catch(() => { if (!done) { done = true; clearTimeout(giveUp); resolve(false); } });
       });
     },
-    stop(opts) { M.token++; fadeOutCur((opts && opts.fadeMs != null) ? opts.fadeMs : 1500); if (M.card) { M.card = null; emitMusic(); } },
-    // 預抓（最多 3 首；只在有聲時抓，避免靜音玩家白下載）
+    stop(opts) { M.token++; fadeOutCur((opts && opts.fadeMs != null) ? opts.fadeMs : 1500); S.resumeCard = null; if (M.card) { M.card = null; emitMusic(); } },
+    // 🔇：聲音收掉，但唱盤上那張（圈標）留著；🔊 打開時從這張接著放
+    mute() { M.token++; if (M.card) S.resumeCard = M.card; fadeOutCur(0); },
+    // 預抓（最多 3 首；只在有聲時抓，避免靜音玩家白下載）：只抓原始檔，換歌時再解碼（約 0.1 s）
     preload(cards) {
       if (!soundOn()) return;
-      (cards || []).filter(c => c && c.previewUrl).slice(0, 3).forEach(c => { load(c.previewUrl).catch(() => {}); });
+      (cards || []).filter(c => c && c.previewUrl).slice(0, 3).forEach(c => { fetchBytes(c.previewUrl).catch(() => {}); });
     },
     current() { return M.card; },
     playing() { return !!M.cur; },
     onChange(cb) { M.cbs.add(cb); return () => M.cbs.delete(cb); },
+    onEnded(cb) { M.endCbs.add(cb); return () => M.endCbs.delete(cb); },
   };
 
   // ---------------------------------------------------------------- visual fx

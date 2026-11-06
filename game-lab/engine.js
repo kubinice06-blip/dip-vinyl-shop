@@ -49,6 +49,7 @@
     stylusBonus: 2, obiBonus: 2, matrixBonus: 2, isolationBlock: 2, firstpressBonus: 2, chain3Dmg: 2,
     adapterQi: 2, goodEarQi: 1,
     goldChance: 0.1, teaHp: 8, listenHit: 6, listenMiss: 3, listenMuted: 4, starCap: 5,
+    overflowQiAt: 3, overflowQiCap: 2,   // a node heal that overflows full 聲望 by ≥3 → 下一場開局氣勢 +1 (at most +2 per fight)
   };
 
   // ---------- RNG (mulberry32; state lives in the object so clones are deterministic) ----------
@@ -102,6 +103,8 @@
       stats: { pUlt: 0, eUlt: 0, reflect: 0, block: 0, feintSeen: 0, feintBitten: 0, seeThrough: 0, readHit: 0, hegemony: 0, chain3: 0, faceChange: 0, found: 0, maxHit: 0 },
     };
     shuffle(st.p.deck, st); shuffle(st.e.deck, st);
+    // opts.firstRecordId: that record comes up on hand 1 (序章回嘴的伏筆); same RNG draws as without it
+    if (opts.firstRecordId) { const k = st.e.deck.findIndex(c => c.id === opts.firstRecordId); if (k >= 0) st.e.deck.push(st.e.deck.splice(k, 1)[0]); }
     draw(st);
     const events = [];
     beginHand(st, events);
@@ -214,8 +217,8 @@
     const plus = eCard && !eCard.tier ? E.starPlus : 0;
     const eStar = a => star(eCard, a) + plus;
     const reqP = pCard && st.request && (pCard.tags || []).includes(st.request) ? CFG.requestBonus : 0;   // 點播: your attack star only
-    ev.push({ t: 'reveal', pAct: act.type, pCard, pAttr, eCard, eAttr, eUlt: !!it.ult, cellIdx, glyph, bubble: it.bubble, hiddenCell: cellGlyph === 'hidden' });
-    if (cellGlyph === 'hidden' && !E.habitKnown) { E.habitKnown = true; st.stats.found++; ev.push({ t: 'habitRevealed', glyph: E.hidden, cellIdx }); }
+    ev.push({ t: 'reveal', pAct: act.type, pCard, pAttr, eCard, eAttr, eUlt: !!it.ult, cellIdx, glyph, bubble: it.bubble, hiddenCell: cellGlyph === 'hidden', prevLast: P.lastAttr || null });
+    if (cellGlyph === 'hidden' && !E.habitKnown) { E.habitKnown = true; st.stats.found++; ev[0].found = true; ev.push({ t: 'habitRevealed', glyph: E.hidden, cellIdx }); }
     // --- ace on-play passives (cannot cancel an already-announced ult: its damage was locked at beginHand) ---
     if (act.type === 'ace') {
       if (P.ace.tier === 'hall') { const d = Math.min(E.qi, CFG.hallQiCut); E.qi -= d; ev.push({ t: 'acePassive', tier: 'hall', name: '眾望所歸', qi: -d }); }
@@ -336,18 +339,20 @@
     const clashEv = { t: 'clash', kind, pAttr, eAttr, K, counterName: kind === 'counter' ? COUNTER_NAME[pAttr] : (kind === 'countered' ? COUNTER_NAME[eAttr] : null),
       stamp, breakdown: bd, toE, toP, glyph, bubble: it.bubble, hand: st.hand };
     ev.push(clashEv);
-    // attribute effects (only for played records; an ult never triggers them; the voided side never triggers them)
+    // apply damage
+    if (toE) { E.hp -= toE; ev.push({ t: 'damage', target: 'e', amount: toE }); }
+    if (toP) { P.hp -= toP; ev.push({ t: 'damage', target: 'p', amount: toP }); }
+    // attribute effects (only for played records; an ult never triggers them; the voided side never triggers them).
+    // §3.3: 屬性效果 (step 5) → 扣血／聲望不超過上限 (step 6): the 經典 heal is capped AFTER the hit, so at full HP it still
+    // offsets damage; attrFx.hp is what was actually healed (0 when nothing moved, so the UI floats nothing).
     const fx = (side, attr, isP) => {
       const X = isP ? P : E, Y = isP ? E : P;
-      if (attr === 'c') { const h = CFG.attrFx.c.selfHp + (isP && X.ear === 'hall' ? 1 : 0); X.hp = Math.min(X.maxHp, X.hp + h); ev.push({ t: 'attrFx', who: side, attr, hp: h }); }
+      if (attr === 'c') { const h = CFG.attrFx.c.selfHp + (isP && X.ear === 'hall' ? 1 : 0); const g = Math.max(0, Math.min(X.maxHp, X.hp + h) - X.hp); X.hp += g; ev.push({ t: 'attrFx', who: side, attr, hp: g }); }
       if (attr === 'o') { const q = CFG.attrFx.o.selfQi + (isP && X.ear === 'pearl' ? 1 : 0); X.qi += q; ev.push({ t: 'attrFx', who: side, attr, qi: q }); }
       if (attr === 'h') { Y.qi += CFG.attrFx.h.oppQi; ev.push({ t: 'attrFx', who: side, attr, oppQi: CFG.attrFx.h.oppQi }); }
     };
     if (pCard) fx('p', pAttr, true);
     if (!it.ult && kind !== 'ult') fx('e', eAttr, false);
-    // apply damage
-    if (toE) { E.hp -= toE; ev.push({ t: 'damage', target: 'e', amount: toE }); }
-    if (toP) { P.hp -= toP; ev.push({ t: 'damage', target: 'p', amount: toP }); }
     if (toE > st.stats.maxHit) st.stats.maxHit = toE;
     P.qi = clamp(P.qi, 0, CFG.qiMax); E.qi = clamp(E.qi, 0, CFG.qiMax);
     if (!pUlt) P.lastAttr = pAttr;
@@ -455,12 +460,16 @@
     return cand.slice(0, n);
   }
   function crateUnion(content) { const c = (content.pools && content.pools.crate) || {}; return [].concat(c.jazz || [], c.tw || [], c.noise || []); }
+  // cards the bag already holds plus every stake of tonight: crate／event／listen draws avoid them (no duplicate copies)
+  function ownedOrStaked(run) { const out = run.deck.slice(); if (run.map) for (const c of run.map.cols) for (const n of c.nodes) if (n.stakeId) out.push(n.stakeId); return out; }
   function drawFromPool(run, content, which) {
     const pool = which === 'gold' ? ((content.pools && content.pools.gold) || []) : crateUnion(content);
-    return drawDistinct(run, pool, 1, run.deck)[0] || null;
+    return drawDistinct(run, pool, 1, ownedOrStaked(run))[0] || null;
   }
   function listenTrio(run, content) {
-    const pool = shuffle(((content.pools && content.pools.listen) || []).slice(), run);
+    const ex = new Set(ownedOrStaked(run)), all = ((content.pools && content.pools.listen) || []);
+    const fresh = all.filter(id => !ex.has(id));
+    const pool = shuffle((fresh.length >= 3 ? fresh : all).slice(), run);
     const out = [], seenG = new Set();
     for (const id of pool) { const c = content.cards[id]; const g = c && c.genres && c.genres[0]; if (out.length < 3 && !seenG.has(g)) { out.push(id); seenG.add(g); } }
     for (const id of pool) if (out.length < 3 && !out.includes(id)) out.push(id);
@@ -484,11 +493,16 @@
     const elite = pickOne(content.elites, R);
     const bossAceTier = pickOne(TIERS.filter(t => t !== aceTier), R);          // the ace the player did NOT pick (one of two)
     const mk = (col, idx, type, extra) => Object.assign({ id: 'c' + col + 'ab'[idx], col, time: times[col], type }, extra || {});
+    // stakes never repeat within a night and never duplicate the starting bag (two copies would share cardMods)
+    const usedStakes = new Set([...((content.gifts || {})[aceTier] || []), ...(content.junk || [])]);
     const fightNode = (col, idx, type, enemyId) => {
       const E = content.enemies[enemyId];
       const n = mk(col, idx, type, { enemyId });
       n.request = type === 'prologue' || !(E.requests && E.requests.length) ? null : pickOne(E.requests, R);
-      n.stakeId = E.stakePool && E.stakePool.length ? pickOne(E.stakePool, R) : null;
+      if (E.stakePool && E.stakePool.length) {
+        const fresh = E.stakePool.filter(id => !usedStakes.has(id));
+        n.stakeId = pickOne(fresh.length ? fresh : E.stakePool, R); usedStakes.add(n.stakeId);
+      } else n.stakeId = null;
       n.relicId = E.relicOffer || null;
       n.ultAttr = resolveUltAttr(E.ultAttr, aceTier);
       return n;
@@ -556,7 +570,7 @@
   }
 
   // startNodeDuel(run, content, nodeId) -> { duel, events }   (moves to the node first if needed; prologue uses prologueHp/prologueStake)
-  function startNodeDuel(run, content, nodeId) {
+  function startNodeDuel(run, content, nodeId, extra) {
     const none = error => ({ duel: null, events: [], error });
     if (run.over) return none('over');
     const node = findNode(run, nodeId);
@@ -575,7 +589,7 @@
     const prologue = node.type === 'prologue';
     const has = id => run.relics.includes(id);
     const startQi = (run.goodEar ? CFG.goodEarQi : 0) + (has('adapter45') ? CFG.adapterQi : 0) + (run.nextStartQi || 0);
-    run.nextStartQi = 0;
+    run.nextStartQi = 0; run.ovQi = 0;
     const pDef = { hp: prologue ? CFG.prologueHp : run.hp, maxHp: prologue ? CFG.prologueHp : run.maxHp, deck: deckCards(run, content),
       ace: content.cards[content.aces[run.aceTier]] || null, ear: run.aceTier, relics: run.relics.slice(), startQi,
       reviveOnce: has('testpress') && !run.testpressUsed };
@@ -585,7 +599,8 @@
     const seed = ((rng(run) * 4294967296) >>> 0) || 1;
     const opts = { seed, ultAttr: node.ultAttr, request: prologue ? null : (node.request || null), prologue,
       habitKnown: !!(run.knownHabits && run.knownHabits[node.enemyId]),
-      enemyAce: node.enemyAceId ? (content.cards[node.enemyAceId] || null) : null };
+      enemyAce: node.enemyAceId ? (content.cards[node.enemyAceId] || null) : null,
+      firstRecordId: (extra && extra.firstRecordId) || null };
     const res = startDuel(pDef, eDef, opts);
     run.duel = res.duel;
     return res;
@@ -605,16 +620,20 @@
     const node = pend && pend.type === 'duel' ? findNode(run, pend.nodeId) : null;
     if (!node) return { offer: null, error: 'noDuelPending' };
     const S = run.stats, ds = duel.stats;
+    const prologue = node.type === 'prologue';
+    if (!(prologue && duel.over === 'lose')) {   // a lost prologue attempt is retried with the same deck: it adds nothing to the score
     S.readHit += ds.readHit | 0; S.seeThrough += ds.seeThrough | 0; S.feintBitten += ds.feintBitten | 0; S.reflect += ds.reflect | 0;
     S.found += ds.found | 0; S.block += ds.block | 0; S.pUlt += ds.pUlt | 0; S.chain3 += ds.chain3 | 0;
     S.maxHit = Math.max(S.maxHit, ds.maxHit | 0); S.fights++; S.hands += duel.hand | 0;
+    }
     if (duel.p.revived) run.testpressUsed = true;
     if (duel.e.habitKnown && ds.found) run.knownHabits[node.enemyId] = true;
     run.duel = null;
-    const prologue = node.type === 'prologue';
     let offer;
     if (duel.over === 'win') {
       S.wins++;
+      const lc = duel.lastClash;   // 看穿收尾：KO 那一手是看穿（FUN-13；duel.js 蓋「看穿收尾！」章）
+      if (lc && lc.kind === 'counter' && lc.stamp === 'seeThrough') S.seeThroughKO = (S.seeThroughKO | 0) + 1;
       if (!prologue) run.hp = Math.min(run.maxHp, Math.max(0, duel.p.hp) + CFG.winHeal + (run.relics.includes('cleaner') ? CFG.cleanerHeal : 0));
       addMet(run, node.stakeId);
       if (node.type === 'boss') {
@@ -660,8 +679,15 @@
     run.deck.push(cardId); effects.push({ gainCard: cardId });
   }
   function heal(run, n) { run.hp = clamp(run.hp + n, 1, run.maxHp); }
+  // node heals (試聽機／櫃檯／事件／配件重複): what spills over a full bar by ≥ overflowQiAt becomes 下一場開局氣勢 +1
+  // (run.ovQi counts those, capped per fight, reset at the next duel start). Effects: {hp:n} then {overflowQi:1}.
+  function nodeHeal(run, n, effects) {
+    const over = run.hp + n - run.maxHp;
+    heal(run, n); effects.push({ hp: n });
+    if (n > 0 && over >= CFG.overflowQiAt && (run.ovQi | 0) < CFG.overflowQiCap) { run.ovQi = (run.ovQi | 0) + 1; run.nextStartQi += 1; effects.push({ overflowQi: 1 }); }
+  }
   function gainRelicOrHp(run, id, elseHp, effects) {
-    if (!id || run.relics.includes(id)) { heal(run, elseHp); effects.push({ hp: elseHp }); }
+    if (!id || run.relics.includes(id)) nodeHeal(run, elseHp, effects);
     else { run.relics.push(id); effects.push({ gainRelic: id }); }
   }
 
@@ -748,11 +774,11 @@
         if (!nodeStep('crate')) return fail('noCrate');
         const pool = content.pools && content.pools.crate && content.pools.crate[ch.crate];
         if (!pool || !pool.length) return fail('badCrate');
-        const ids = drawDistinct(run, pool, 3, run.deck);
+        const ids = drawDistinct(run, pool, 3, ownedOrStaked(run));
         const goldRoll = rng(run);
         let goldId = null;
         if (goldRoll < (content.pools.goldChance != null ? content.pools.goldChance : CFG.goldChance)) {
-          goldId = drawDistinct(run, (content.pools.gold || []), 1, run.deck.concat(ids))[0] || null;
+          goldId = drawDistinct(run, (content.pools.gold || []), 1, ownedOrStaked(run).concat(ids))[0] || null;
           if (goldId) ids[Math.min(2, ids.length)] = goldId;
         }
         p.step = 'crateCard'; p.crate = ch.crate; p.cardIds = ids; p.goldId = goldId;
@@ -776,7 +802,7 @@
         if (g == null) { n = CFG.listenMuted; result = 'muted'; keepId = p.cardIds.includes(ch.pickId) ? ch.pickId : p.answerId; }
         else if (g === p.answerId) { n = CFG.listenHit; result = 'hit'; keepId = p.answerId; addMet(run, p.answerId); }
         else { n = CFG.listenMiss; result = 'miss'; keepId = null; }
-        heal(run, n); effects.push({ hp: n });
+        nodeHeal(run, n, effects);
         p.step = 'listenKeep'; p.result = result; p.keepId = keepId; p.guessId = g;
         return { effects, result, answerId: p.answerId };
       }
@@ -791,7 +817,7 @@
       }
       case 'rest': {
         if (!nodeStep('rest')) return fail('noRest');
-        if (ch.option === 'tea') { heal(run, CFG.teaHp); effects.push({ hp: CFG.teaHp }); }
+        if (ch.option === 'tea') nodeHeal(run, CFG.teaHp, effects);
         else if (ch.option === 'wash') {
           if (!run.deck.includes(ch.cardId)) return fail('badCard');
           const ax = washTarget(run, content, ch.cardId);
@@ -814,10 +840,12 @@
         if (needsCard && !run.deck.includes(ch.cardId)) return fail('needsCard');
         if (opt.minDeck && run.deck.length < opt.minDeck) return fail('deckTooSmall');
         if (fxs.some(f => f.giveAwayPicked) && run.deck.length - 1 < CFG.deckMin) return fail('deckTooSmall');
+        const upFx = fxs.find(f => f.starUpPicked);
+        if (upFx) { const c0 = cardWithMods(content, ch.cardId, run.cardMods[ch.cardId]); if (!c0 || star(c0, upFx.starUpPicked) >= CFG.starCap) return fail('maxed'); }
         const gainId = fxs.some(f => f.gainFromPool) ? (p.eventCards || {})[ch.option] : null;
         if (gainId) { const e = deckFullError(run, ch.dropId); if (e) return fail(e); }
         for (const f of fxs) {
-          if (f.hp != null) { heal(run, f.hp); effects.push({ hp: f.hp }); }
+          if (f.hp != null) nodeHeal(run, f.hp, effects);
           if (f.nextStartQi != null) { run.nextStartQi += f.nextStartQi; effects.push({ nextStartQi: f.nextStartQi }); }
           if (f.giveAwayPicked) { run.deck.splice(run.deck.indexOf(ch.cardId), 1); effects.push({ loseCard: ch.cardId }); }
           if (f.gainRelic) gainRelicOrHp(run, f.gainRelic, f.elseHp || 0, effects);
@@ -844,6 +872,7 @@
     parts.push(['勝場 ×' + s.wins, s.wins * 100]);
     parts.push(['讀中 ×' + s.readHit, s.readHit * 10]);
     parts.push(['看穿 ×' + s.seeThrough, s.seeThrough * 25]);
+    if (s.seeThroughKO) parts.push(['看穿收尾 ×' + s.seeThroughKO, s.seeThroughKO * 50]);
     parts.push(['七星回擊 ×' + s.reflect, s.reflect * 60]);
     parts.push(['🔍發現 ×' + s.found, s.found * 20]);
     parts.push(['新認識的盤 ×' + s.newMetIds.length, s.newMetIds.length * 15]);
