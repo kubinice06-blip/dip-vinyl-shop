@@ -54,3 +54,15 @@
 - 23986：Spunkshine《HUGE Humans》moodGuess 存疑：標籤 grooving weirdness、IDM、theatrical、unsettling，MB 標 big beat，偏躁怪。
 - 23987：Lauge & Baba Gnohm《Langbortistan》：Bandcamp 2011-10-15、MB 2011-11-11，採 MB；Altar Records 為 CD-R 初版，label 留空。聲音僅 Sonic Immersion 單一評論（旋律豐盈、放鬆、部分曲有低音律動），不標存疑但 y 0.5 偏低。
 - 23988：desert sand feels warm at night《バビロンの空中庭園 上》：Bandcamp 為 2026 Hushtones 黑膠重發頁，年份採 MB 2019；聲音僅標籤（slushwave、hypnagogic），thin，未發現反證。
+
+## 研究 a 組
+- 23961：Era《Era》moodGuess 存疑（強）：2 到 5 分鐘歌曲結構、持續鼓與貝斯（Neil Wilkinson、Lee Sklar）、電吉他，流行搖滾式推進，建議汰。MB 同名兩個 RG，釘 1996 正確；『600 萬張』為計畫整體銷量，單一來源（維基），未歸給單張。
+- 23962：Carbon Based Lifeforms《Interloper》moodGuess 存疑（輕度）：樂團先做無鼓版（後為《Twentythree》）再加鼓成《Interloper》，整張有持續拍子，不是『極少鼓』；暖與厚墊成立，邊界。Bandcamp 2015 為重發，年份採 MB 2010。
+- 23963：Delerium《Semantic Spaces》moodGuess 存疑（輕度）：靜重成立，但聽眾評論提 beats／edgy／moody，暖度未證；聲音證據僅維基與聽眾評論，無專業樂評。Bandcamp 單曲版 4:22 與專輯版 7:55 不同，採維基。
+- 23964：Delerium《Nuages Du Monde》moodGuess 存疑（強）：維基類型 electronic／pop／ambient，〈Angelicus〉與〈Lost and Found〉登美國舞曲榜（第 1、第 4 名），有舞曲節拍，建議汰。
+- 23965：ASURA《Life²》moodGuess 存疑（輕度）：廠方文案寫亞蘭式部落節奏與迷幻貝斯線，帶拍 psybient；聲音證據只有廠方文案。Bandcamp 2015 重發，年份採 MB 2007。
+- 23966：ASURA《360》moodGuess 存疑（輕度）：廠方文案 slowly grooving rhythms，有律動；〈360 (Full Mix)〉1 小時 17 分不計入正曲長度。
+- 23967：AES DANA《Memory Shell》無新增存疑，a 組最貼目標格；拍子強度只有廠方文案，年份採 MB 2004（Bandcamp 2015 重發）。
+- 23968：Nym《Warm Blooded Lizard》moodGuess 存疑（強）：標籤與簡介明說 instrumental hip-hop／beats，1 到 5 分鐘短曲、鼓機節拍，x 2.8 也超出邊距，建議汰。Bandcamp 原頁 303 轉址循環，facts 取自 Wayback 存檔的 ld+json，src 寫原站網址，status thin。
+- 23969：Wikipedia API 被 429 限流，改用 WebFetch 取維基摘要；Delerium／CBL／Ultimae 條目為摘要轉述，facts 僅寫摘要明確出現的內容。
+- 23970：（預留未用）
