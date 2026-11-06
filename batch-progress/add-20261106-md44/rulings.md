@@ -30,3 +30,15 @@
 - 25028 Ness《Planet D》：補「鼓型不明」fact（Bandcamp 標 dub／deep／hypnotic techno，7 首 5–9 分鐘；WebSearch 與 MB 皆無四拍底鼓來源）；依判準不建議汰，待主線聽確認，風險中。
 - 25029 Disparition《Granicha》：補鼓型 fact（Bernstein programming＋Tim Monaghan 打擊樂 5 首，非舞池）；不建議汰。
 - 25030 本小節 WebSearch 用 3 次（兩次無關結果），餘靠 Bandcamp ld+json 與 MB 標籤。
+
+## 研究 b 組（25011–25020）
+- 25011 Brael & Tokyo Bloodworm《Living Language》：§1 人工身分核對通過——Discogs master 172656／release 1322120（Moteer moteer::013cd，CD Album，2008-04-25）；Bandcamp 2011-04-29 是上架日，年份維持 2008。Bandcamp 版多 4 首 remix（11 首），以原盤 7 首為準。鼓型：精簡打擊、microbeats，近無鼓；不建議汰。
+- 25012 Chris Imler《The Internet Will Break My Heart》：建議汰：舞池推進（證據偏弱）——Libération「dance dans les pieds」、NTS 與 Kraftwerk／DAF／NEU! 並列，皆文案轉述；曲短、鼓機推進、帶人聲、無 BPM。信心中低，主線可改以評分為準。moodGuess「實驗 dubstep」與來源不符。
+- 25013 Urbs《Geheimland》：label 更正為 Compost Records（CPT603）；慢拍 trip-hop，作者自述偏好慢；不建議汰。
+- 25014 Transparent Man《Puppets》：label 更正為 S!X Music（獨家授權）；四首真人鼓（Thomas Kostoulas）＋律動拍＋管弦；不建議汰。
+- 25015 Symbolico《Connectika》：鼓型不明（自述 groovy rhythms，標籤 psytrance／psytrap／dub，無 BPM）；舞池風險僅有標籤證據，不建議汰；label self-released。
+- 25016 Dillard《Empress LP》：鼓型不明偏半拍（標籤「140」＋dubstep，無一手 BPM）；不建議汰；self-released。
+- 25017 I Awake《Zenith》：鼓型不明（僅標題曲有現場鼓，標籤 dubstep／glitch hop）；不建議汰。Merkaba Music 偏 psytrance 為二手說法，未入 facts。
+- 25018 Gi Gi《Lamella Pressed》：慢中速 dub／UK stepping＋LA beat，〈Palm Slick〉breaksy；非舞池；不建議汰。與池中 Gigi 為不同人，維持分開。
+- 25019 Ugress、Odd Nosdam：Ugress trip-hop 下行拍、self-released；Odd Nosdam sampler 嘻哈鼓＋氛圍（Anticon 共同創辦人）、self-released；皆不建議汰，無推翻。
+- 25020 本支 WebSearch 用 3 次（Imler 評論、I Awake、Urbs），其餘靠 Bandcamp ld+json、MB、Discogs API、WebFetch；多張只有廠牌／Bandcamp 文案，status 多為 thin（Brael、Urbs 為 ok）。
