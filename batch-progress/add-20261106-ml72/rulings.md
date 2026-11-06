@@ -71,3 +71,24 @@
 - 24076：woob《Repurpose》：存疑（弱，可能偏冷）——Em:t 時期抽象 ambient dub，暖度未證實，thin。廠牌 Discogs 為 Bigamoebasounds（非 Em:t）。
 - 24077：Josh Leake《Clara》（§1 人工）：盤名 Clara、日期 2019-03-14 兩邊相符；差異＝Bandcamp 10 首、Apple 9 首，缺第 10 首〈Don't Wake Me Up〉（4:49）。以 Bandcamp 為準。聲音自稱 uplifting ambient，無鼓，成立度最高，但無第三方樂評，thin。
 - 24078：Wikipedia 直連被代理擋，woob 人物背景改用 WebFetch 的 Wikipedia 摘要；WebSearch 用 3 次（Era2、Salvage、woob），僅 woob 有用。
+
+## 研究 e 組
+- 24081：RUMTUM《Glue of Everything》§1 人工身分核對：Bandcamp 2025-07-18、11 首（含 Bonus Track〈In a Forest〉）與 Apple 2025-05-30、10 首是同盤兩版本，盤名、廠牌 Tropic Tone 一致，year 2025 成立。
+- 24082：Rupert Cox《Search Party》§1 核對：Bandcamp 與 Apple 皆 2023-11-24、11 首，對得上；Apple 版權 Albert's Favourites Ltd.。
+- 24083：Elephant Château 該卡是 2020 Bureau B 整理輯（收 1985 與 1990 舊作），非原創專輯，但官方母帶重整、附訪談，有歷史定位，建議保留；樂團編制查無可靠來源故不寫，status thin。
+- 24084：moodGuess 存疑：RUMTUM（簡介自述 playful／funky、midtempo 有拍）、Rupert Cox（評論一致描述快速打擊、鼓底持續、爵士舞曲，判輕偏躁，建議汰）、Elephant Château（無聲音來源，脈絡推測偏陰冷疏離）、Cephas Azariah（前半輕盈鋼琴、後段 driving percussion，邊界）。
+
+## 主線研究汰換（不佔條號；2026-11-06）
+研究層交件後照各組「moodGuess 存疑」汰 23 → 剩 9；被汰卡移到 `dropped-cards.json`／`dropped-research.json`。不補位（卡單即策展結果）。
+- 有拍推進＋判輕 7：Shpongle《Ineffable Mysteries From Shpongleland》（真人鼓手、多層明亮迷幻（研究 a；池中已 2 張））、Rocket Empire《Caves》（acoustic indie rock 加 downtempo、約 96 BPM 短曲（研究 c））、Spoonbill《CANOPY》（自稱 eminently danceable downbeat、銅管加切分律動（研究 b））、Argaman《My Little Forest》（多數曲重心在中高頻、psychill 持續律動（研究 b））、Shwamp《Circus》（自述 playful、brighter vibes，dub／glitch 節拍（研究 d））、RUMTUM《Glue of Everything》（自述 playful、funky 低音、dusty drums、midtempo 取樣拼貼（研究 e））、Rupert Cox《Search Party》（樂評寫快速打擊、鼓底持續、電子爵士舞曲（研究 e））
+- 有拍推進 7：Parra for Cuva《Mimose》（groovy basslines、trance-inducing shakers、house 本行、人聲歌曲（研究 a））、Dr. Toast《Gravity is Quiet》（deep thumping head-nodding 基底、breaks／hip hop 背景（研究 a））、Glen Porter《Mr. Vampire & The Deadly Walkers》（衝浪搖滾能量、吉他、breaks、西部風（研究 c））、DHAMIKA《Energy Flow》（psytrance 出身、鼓與打擊樂、psychill 持續律動（研究 c））、Kalya Scintilla《Open Ancient Eyes》（world／tribal bass 拍子持續推進（研究 b））、Gabriel Le Mar《Gab's Gift》（Discogs 附註第 2–10 首 120–150 BPM，trance／dub 舞池推進（研究 d））、Tim Love Lee《Confessions Of A Selector》（Discogs 風格 Breaks／Big Beat（研究 d））
+- 無來源 1：Joey Fehrenbach《Mellowdrama》（trance 製作人轉 downtempo，查無任何聲音描述（研究 a））
+- 混音混入＋非電子 1：The Roots of Orchis《crooked ceilings》（indie 器樂搖滾雙 CD，11 首原作加 8 首他人混音（研究 c））
+- 判輕＋有拍推進 2：DHAMIKA《Endless Horizons》（crystal clear glittering pulses、psychill 律動（研究 c））、Cephas Azariah《conditions for observing light》（輕盈鋼琴、upbeat 曲、標題曲 driving percussion 與 euphoric 推進（研究 e））
+- 無來源＋有拍風險 1：Master Minded《Elements》（資訊極薄、psybient 加迪吉里杜管儀式律動（研究 c））
+- 判輕 2：Colourform《Visions of surya》（響度極低、低頻占比低，空靈而非厚重包覆（研究 b））、another fine day《salvage》（樂評 lighter-than-air，卡林巴與手風琴明亮（研究 d））
+- 判冷 1：Dreamstate Logic《Era2》（space ambient 宇宙感疏離（研究 d））
+- 合輯 1：Elephant Château《Dreamings & Offshore Drilling - Pearls and Turtles》（2020 Bureau B 整理 1985《Dreamings》與 1990《Offshore Drilling》兩張舊作，且無聲音來源（研究 e））
+- 留下但聲音待評分驗證：Funki Porcini《PLOD》（零星 breakbeat 但低頻厚、拍子不連續）、CIRCULAR《Moon Pool》（暖合成器、無鼓導向，但 arctic 冷感可能壓過暖）、Edamame《Ochre》（短曲、wonky／bass 標籤，重量感未證實）、woob《Repurpose》（抽象 ambient dub，暖度未證實）、Solar Fields 兩張（聲音證據偏薄）。
+- 照研究改卡單：Solar Fields《Until we meet the sky》label 清空（Bandcamp 版權 droneform records，未證實）；woob《Repurpose》label＝Bigamoebasounds。
+- **第二輪結論**：卡單 52 → 主線汰 20 → 研究汰 23 → 剩 9（17%）。剩下的 psybient／psychill 幾乎都有持續律動，標 downtempo 的 Ultimae 系太空 ambient 多半偏冷；留得住的是厚低頻慢拍與無鼓暖墊。
