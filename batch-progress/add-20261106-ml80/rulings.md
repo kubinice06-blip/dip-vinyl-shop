@@ -94,3 +94,14 @@
 - **24908** 來源與轉述：RUMTUM note 的「Bandcamp 版比 Apple 版多收」改寫成「較早的版本是 10 首，7 月 18 日版多收〈In a Forest〉」；Asta Hiroki 的 Everything Is Noise 評語直述成聲音（節拍平穩、音色溫暖柔和），不具名媒體；Globular「簡介說」改為「片名的意思是」，krusseldorf 的簡介改歸 Simon Heath 本人所寫（facts：Simon 在簡介寫）；Govinda「行善寫在廠方介紹裡」一句刪去（hook 已承載）。Andi Otto、DHAMIKA EH 照 note 以廠方說法領句。
 - **24909** 時長樣板：`首約分鐘` 初掃 10 張（含 out-1 兩張），本檔逐張換成互異的時長句型；Eat Static「兩人的錄音室」改「錄音空間」避開 Namas hook 的「兩間錄音室」。
 - **24910** 自掃：本檔 han() 4-gram 跨張 0 條；與 out-1 合掃 3 張以上 0 條，2 張殘片剩 2 條（`成年月日` Eat Static／Sedibus、`作年月日` krusseldorf／Rhi，皆日期黏合、只 2 張，未再動）。`qa-batch out` 全部通過（36 張、thin 全 ≤180）、`qa-check-research` 標記 0、`fix-spacing` 待補 0。
+
+## 主線審稿（24911–24912；2026-11-06）
+- **24911** 逐張審 36 張（全文印出，逐句對研究稿 a–e 與藝人介紹補洞稿 ar-d-813）。改 9 張（`desc-override.json`），只動措辭與刪單源句，研究／hooks／input 不需同步：
+  - `Skinshape|Life & Love`：刪「來自英格蘭南岸的 Swanage」（ar-d-813 補洞層：Swanage 只有 Bandcamp 單源）；205 字。
+  - `Entheogenic|Entheogenic`：刪「在地下迷幻圈賣得出乎意料地好」（單一訪談的銷量自評）；221 字。
+  - `Espen Horne|The Anatomy Of Serene Eloquence`：「俱樂部名曲」→「俱樂部單曲」（評價詞）；223 字。
+  - `Rituals of Mine|HYPE NOSTALGIA`：「他們在 2015 年相繼離世」→「兩人相繼離世」（ar-d-813 補洞層：2015 只見單源）；193 字。
+  - `Eivør|Enn`：刪「1983 年出生」（生年只有維基與 wikidata 同源家族）；220 字。
+  - `DHAMIKA|Energy Flow`、`DHAMIKA|Endless Horizons`：刪本名 Sven Lundgren（ar-d-813 補洞層：本名單源未驗證）；EH 補「這位瑞典 psychill 製作人…DHAMIKA 名義」回到 192 字。
+  - `Asta Hiroki|Entropy`：「他偏好真人演奏」→「Asta Hiroki 偏好真人演奏」（性別無來源，不用代名詞）；203 字。
+- **24912** 媒體名、榜單名次、「據說／據傳」全批 0；Moderator 的 Morricone 依寫作層照 note 寫「莫利克奈」，照留。

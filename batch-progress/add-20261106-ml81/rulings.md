@@ -96,3 +96,11 @@
 - **24988** 轉述與否定：MONKYMAN 的提問／結論原文保留在「」內（note 指定原句）；Project Lazarus 聽眾留言照 ml73 Macroblank 先例寫「聽眾留言裡提到」；Abakus「文案說主題是深遠未來」轉成陳述句；ALBA「團員說」改「團員認為」。MONKYMAN「沒有 loop，也不掛外掛」為 note 指定事實，保留。
 - **24989** 自掃（han() 中文 4-gram，本批 out-1＋out-2＋並行 ml80 out-1／out-2）：本組參與的 3 張以上殘片 0。途中拆掉：在年月日（GENDEMA、Sender 對 out-1 Yaima）、作品年月／品年月日（Chavo 對 ml80 Yu Su、out-1 Session Victim）、洛杉磯的（Sweatson 對 soft siren、Dj Drez，改「洛杉磯 beat scene 出身的」）、這是他第／器樂專輯／專輯年月日（Chavo）、年月推出、客座有與（MONKYMAN）、發行了這、落在到分（Pandrezz）、再加一點（Huerta）、張年月日、母帶交給（Zero Cult）、四人自稱／人自稱做、第一張專輯、出道專輯（Birdsnake）、月由發行（Abakus）。剩 2 張殘片多為對 ml80 的「首共分鐘」「長達分鐘」「模組合成器」「首張專輯」等通用尾巴，留主線統一收件掃。
 - **24990** 腳本：`node qa-batch.mjs out add-20261106-ml81` 全部通過 ✓（out-2 150–238）；`qa-check-research` 標記 0；`fix-spacing` 待補 0。「據」grep 0；來源平台名 0。輔助腳本：scratchpad `ml81w2/ml81w2-save.py`、`ml81w2-scan.py`。
+
+## 主線審稿（24991–24992；2026-11-06）
+- **24991** 逐張審 38 張（全文印出，逐句對研究稿 a–e 與藝人介紹補洞稿 ar-d-814）。改 4 張（`desc-override.json`），研究／hooks／input 不需同步：
+  - `downstairs J|basement, etc...`：「一則樂評形容它放慢、悶鈍」→「整張放慢、悶鈍」（指向媒體的轉述，保留聲音事實）；216 字。
+  - `Slowly Rolling Camera|All Things`：刪「樂評拿它和 4Hero、The Cinematic Orchestra、Massive Attack 相提並論」（單篇樂評比較）；補「爵士、電子與 trip-hop」（Bandcamp 標籤）、「威爾斯」與「主要落在兩首抒情曲…裡」回到 184 字。
+  - `Project Lazarus|Ждите Нас Звезды!`：刪「聽眾留言裡提到，曲中穿插著蘇聯太空人的通訊語音」（樂迷留言不算來源）；143 字（thin）。
+  - `ASURA|Life²`：「里昂 psychill 計畫」→「法國 psychill 計畫」（md43 審稿先例：里昂是 Ultimae 廠牌所在地，不是 ASURA）；223 字。
+- **24992** 抽核：Klaada 本名與 16 歲起做迷幻樂、Sephira 本名 Matthew Crick、Huerta 洛杉磯出生，皆出自該專輯 Bandcamp 頁本人 credits／自述，照留；JOE BEATS 照卡池掛名大寫，照留。媒體名、「據說」全批 0。
