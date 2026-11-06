@@ -1,0 +1,113 @@
+# add-20261106-md40 裁定（情緒薄格線・頹靡：Bandcamp downtempo 候選 md40）
+
+> 店主 2026-11-06：協調端從 Bandcamp downtempo 等標籤抓 1,901 張、依 Last.fm 收聽排序、便宜模型粗估落格；店主選「先做最遠的」——預估離邊界遠的 289 張分六批，三個工作階段並行。本工作階段做 md40＋md41（並行：ml68＋ml69、ml70＋md39）。卡單 `batch-progress/bandcamp-dt-20261105/pick-md40.json`（47 張）即策展結果，不派策展代理；說明見同目錄 `README.md`。
+> 目標格：**頹靡＝靜（x<3.0）＋重（y≥0.5）＋冷（z<0）**；評分照 `batch-progress/mood-axes/score500/BRIEF.md`（10-23 店主體感標準）。卡單的 moodGuess 是只看 Bandcamp 標籤的粗估、把握多半 low，**研究層要照聲音再判一次**：判輕、有拍子推進、判暖的汰掉，不補人。
+> 流程：卡單 47 → 主線初篩（身分、去重、資格、文案直述聲音）→ `curation-md40.json`（32）→ `master-md40.json`（MB 釘住 32、§1 人工 0）→ `build-cards.mjs` → 研究 3 組（a 11、b 11、c 10；組數由五組併成三組，壓尖峰代理數）。
+> **預留：研究 a 23801–23810、b 23811–23820、c 23821–23830（d、e 不用）、鉤子 23851–23860、寫作 23861–23870、主線 23871–23880。**
+---
+
+## 主線初篩（不佔條號；2026-11-06）
+- 身分：Bandcamp 專輯頁 ld+json（發行日、曲數、總長、發行者）＋ MB release-group 查詢（score 100、primary Album、無 secondary）逐張比對；留下的全數 MB 釘得住。
+- 去重：`dedup-md37.mjs`（seed、所有 manifest、`data/pool-removed.json`、所有卡單、所有 curation）0 撞。
+- **主線初篩汰 15**（卡單 47 → 32）：
+  - 資格（EP／合輯／demo 集／remix）：Arms and Sleepers《NOSTALGIA FOR THE ABSOLUTE》（MB 標 EP、28 分）、All India Radio《Diamonds In The Dark》（Bandcamp 自述「orphaned songs」合集）、36《The Lower Lights》（MB Album＋Compilation）、All India Radio《ISO 2020》《Utopia 2021》（Patreon demo／早期混音集）、2814《Lost Fragments》（MB Compilation，稀有曲與未發表）、Sorrow《Unrequited》（MB EP、29 分）、Kaya Project《Ambient Mixes 2》（舊曲重製混音）。
+  - 去重：Yagya《Stormur》（md8 已提名、研究後以「純 techno、像 DJ set」汰掉，不再提）。
+  - 聲音明顯不落頹靡（文案直述）：Martin Nonstatic《Granite》（「smooth catchy drifts、soothing」，判暖判輕）、International Observer《Seen》（旋律 dub、「gorgeously seductive」，判暖；店主 11-05 dub 太多）、Moth Equals《Honey Trap》（「colourful plunderphonics、sticky melodies、runny beats」）、Gaudi & Antonio Testa《CONTINVVM》（民族打擊樂儀式、psydub；MB 查無、2005 錄 2018 發）、rest symbol《rest symbol》（「smoke-choked soul、psychedelic dub、exotica」判暖，29 分）、Lavurn《Baby it Cold Outside》（R&B、懷舊情歌，判暖）。
+- 年份以原盤首發為準：Blackbird《Lonely Bird》2018（2026 Doki Doki Beats 重發）、mars kumari 2023（Bandcamp 2023-12-01 早於 MB 2024-02-21）、Bed《Spacebox》2002。
+- 自我同名：Halou《Halou》（MB rgMbid 釘住，2008 年 Halou 第四張專輯，身分以 rgMbid 為證）。
+- 同人多張：Disparition 3、Between Interval 2、2814 1（池中另 1）、All India Radio 1；同人不設上限。
+
+
+## 研究 c 組（23821–23830；2026-11-06）
+- 23821 Martin Stürtzer《Illumination Cycle》：moodVerdict borderline（Berlin School 音序脈動 x 風險）。單源（只有 Bandcamp＋Synphaera 廠牌官網），status thin。身分無誤。
+- 23822 mars kumari《I Thought I Lost You》：moodVerdict keep（文案 mournful／tenebrous／power electronics）。單源 thin。建議 label 改 Bruiser Brigade（卡單寫藝人名）；年份 2023 維持。
+- 23823 Bed《Spacebox》：moodVerdict drop（DeBaser 樂評：鼓刷、低音大提琴、幾乎全原聲，判輕、y 不足）。建議 label 改 Ici d'ailleurs（IDA022）；年份 MB 2002／Bandcamp 2003-03-11 有落差，維持 2002、寫作層勿寫具體日。單源（用戶樂評）thin。
+- 23824 Black Boboi《Sepia》：moodVerdict borderline（trip-hop＋techno 拍、旋律起伏、合唱人聲）。Tokyo ON＋Bandcamp，full。
+- 23825 Rún《Rún》：moodVerdict borderline（y 重、z 冷證據強；〈Terror Moon〉雷鳴打擊 x 風險）。Rocket Recordings 廠牌頁＋Bandcamp，full（無獨立樂評）。
+- 23826 Disparition《Granicha》：moodVerdict drop（雙專輯、techno／工業／爵士／流行雜陳，Brainwashed 稱 crisp and vibrant）。moodGuess 推翻。full。
+- 23827 worriedaboutsatan《Crystalline》：moodVerdict borderline（專輯層級無聲音文字，樂團史顯示 glitch／techno 根基）。單源 thin。
+- 23828 il:lo《Lucent》：moodVerdict drop（文案 tension and hope、invigorating、light emerges）。單源 thin。
+- 23829 Burning Pyre《Imago》：moodVerdict borderline（pristine、melodic stabs、skittering percussion 判輕；enveloping subs／dub 支持重）。Bandcamp 與 Rubadub 同稿，單源 thin。
+- 23830 Disparition《Palm in Mirror》：moodVerdict drop（官網直述 storm of driving beats、shimmering textures）。moodGuess 推翻。full（藝人官網為自家稿）。
+- 彙總：drop 4（Bed、Granicha、Lucent、Palm in Mirror）、borderline 5、keep 1（mars kumari）。WebSearch 用 3 次（Disparition 無評、Bed 取得 AllMusic／Uncut 摘要但頁面 403、Burning Pyre／il:lo 無結果）。
+
+## 研究 b 組（23811–23820；2026-11-06）
+- 23811 Blackbird《Lonely Bird》：moodVerdict borderline（僅標籤 future garage／dubstep／trip hop，無聲音文字，x 有 2-step 風險）。單源 thin。原發 2018 自行發行，Doki Doki Beats 為 2026 重發廠牌；Discogs 稱法國製作人，與卡單 country us 矛盾，建議不寫國籍。
+- 23812 Now Always Fades《Coalesce》：moodVerdict drop（廠方文案 bright、uplifting、warm、breakbeat，判暖且有拍）。moodGuess 推翻。單源 thin。
+- 23813 2814《Rain Temple》：moodVerdict keep（drone、遙遠人聲、A.V. Club 比擬 This Mortal Coil／Andy Stott）。full。country 英美，非單純 gb。
+- 23814 All India Radio《The Unified Field》：moodVerdict borderline（殘響 tremolo 吉他、Duster／Lynch 方向對；〈Catch The Breeze〉有人聲、z 風險）。full。數位版自行發行，實體 Spectra SPECTRA019，label 欄主線裁。
+- 23815 Disparition《Transmutations》：moodVerdict borderline（IDM／downtempo 標籤、無聲音文字）。thin。label 欄是自行發行。
+- 23816 Space Afrika《Quiet Storm》：moodVerdict borderline（人聲客串、弦樂、爵士打擊，與前作 industrial-noir 不同）。full（Clash＋Wikipedia 同源）。**label 應更正為 Dais Records（DAIS232）**。
+- 23817 Lauge《Echoes》：moodVerdict borderline（無鼓 drone，但自然題材 ambient 恐判輕、無冷暖依據）。單源 thin。label 欄疑為帳號名拼接，真廠牌疑 Baba Gnohm，待證。
+- 23818 Pye Corner Audio《Lake Deep Memory》：moodVerdict borderline（無鼓、磁帶嘶聲、彈簧殘響，靜重成立；樂評稱平和、旋律導向、有光，z 風險）。full。
+- 23819 conelrad《Sure is the Risk Made》：moodVerdict borderline（僅標籤）。單源 thin；Wikipedia 僅證曲名與史事同名，不可寫成專輯主題。建議主線考慮汰換。
+- 23820 Phelios《Astral Unity》：moodVerdict keep（暗黑 ambient，Discogs 樂評 hypnotic、ritualistic percussion、ominous）。full。Bandcamp 頁為含 5 首 bonus 的 12 首自行重發，原版 CD 7 首。
+- One Arc Degree《The Glow Beneath》（共用 23820 區間尾，另記）：moodVerdict borderline（dub techno 標籤、x 風險）。thin。**country 應為希臘二人組，非 us**（us 是 Synphaera 廠牌所在）。
+- 彙總：keep 2、drop 1、borderline 8。WebSearch 用 3 次（Pye Corner Audio 取得評論、One Arc Degree 與 Disparition 無專輯評）。Wikipedia、Discogs API、Clash、A.V. Club、Complex Distractions 以 curl 直抓。
+
+## 研究 a 組（23801–23810；2026-11-06）
+- 23801 Headache《The Head Hurts…》：moodVerdict borderline（只有標籤與兩句 Bandcamp 文案，鼓拍無來源）。label 推翻：Headache→PLZ Make It Ruins（MB PLZ051）。Headache 為 Vegyn 別名（維基 Vegyn 條）；AI 人聲說單源，寫作層慎用。thin。
+- 23802 moby《Destroyed》：moodVerdict borderline（Moby 自述「凌晨兩點空城」利靜冷；但有旋律人聲曲、Spin 稱中速）。Mute 保留（MB 有登記）。full。
+- 23803 Just Mustard《Heart Under》：moodVerdict borderline（noise rock、工業吉他、無副歌利重冷；有鼓與 scything guitars，x 風險）。full。
+- 23804 Aydio《Nonentity》：moodVerdict drop（Kraak 頁：長笛、小提琴、trippy melodies、laid back；hip-hop／dub／爵士）。label 推翻→Kraak Records（KRK028）。moodGuess 推翻。thin。
+- 23805 Halou《Halou》：moodVerdict borderline（Guthrie 吉他霧利重；歌曲式旋律、人聲，z 未必冷）。label 推翻→Vertebrae Music Productions（MB 數位版＋維基）。full。
+- 23806 MANES《Slow Motion Death Sequence》：moodVerdict borderline（Metal Trenches：暗沉 subdued；廠牌 hook-ridden pop、PopMatters busier）。full。
+- 23807 Between Interval《Autumn Continent》：moodVerdict keep（三篇獨立樂評：冷風 drone、旋律缺席）。label 推翻→Spotted Peccary（SPM-1602）。真名 Jönsson／Strand 兩說並存，寫作層不寫。full。
+- 23808 gridlock《formless》：moodVerdict borderline（磨碾節奏、metalized noise vs. 文案 lush melodies、analog warmth）。full。
+- 23809 Subheim《No Land Called Home》：moodVerdict borderline（深沉黑暗、低音線居中；現場鼓、penetrating rhythms、人聲歌曲）。label 推翻→Ad Noiseam（adn133）。full。
+- 23810 Jogging House《Weight》與 Between Interval《The Edge Of A Fairytale》：Weight borderline（盤帶 lo-fi 利重；「melancholy and hope」；label 推翻→Seil Records；單源 thin）。Edge 為 keep（Lustmord 對照、dark ambient、近乎可怕；label 推翻→Spotted Peccary SPM-1604；full）。
+- 彙總：keep 2（Autumn Continent、Edge）、drop 1（Aydio）、borderline 8。label 推翻 7 張（Headache、Aydio、Halou、兩張 Between Interval、Subheim、Jogging House）。WebSearch 用 3 次（Headache 無結果、Manes、Subheim）；其餘用維基／廠牌頁／Kraak 頁。
+
+## 主線研究後汰換（不佔條號；2026-11-06）
+- 判準同 md41：研究稿以來源直述**有拍推進**、**判輕**、**判暖／旋律明確**的汰；聲音只有標籤、邊距未知的留給評分驗收。單源 thin 一般不汰，但**連聲音文字都沒有、只剩標籤**的單源卡汰（寫不出有內容的簡介）。
+- **汰 12 張**（存 `dropped-cards.json`／`dropped-research.json`）：
+  - 能量：Subheim《No Land Called Home》（研究 a：現場鼓、部落節奏）、gridlock《formless》（研究 a：磨碾節奏，文案另寫類比溫暖）、Black Boboi《Sepia》（研究 c：techno 拍、起伏旋律與合唱）、Disparition《Palm in Mirror》（研究 c：官網「a storm of driving beats」）、Disparition《Granicha》（研究 c：官網寫 techno、工業、爵士、流行雜陳的 112 分雙專輯）、Burning Pyre《Imago》（研究 c：pristine、melodic stabs、skittering percussion）。
+  - 判輕：Bed《Spacebox》（研究 c：鼓刷、低音大提琴、幾乎全原聲）、Aydio《Nonentity》（研究 a：長笛、小提琴、爵士節拍）。
+  - 判暖：Now Always Fades《Coalesce》（研究 b：廠方文案 bright、uplifting、warm，breakbeat 與 MPC 鼓）、il:lo《Lucent》（研究 c：tension and hope、invigorating、light emerges）、MANES《Slow Motion Death Sequence》（研究 a：廠牌文案 hook-ridden pop、旋律明確；金屬底的 x 也有風險）。
+  - 故事與聲音皆無來源：conelrad《Sure is the Risk Made》（研究 b：只有標籤）。
+- **研究層更正已改進卡單**：label——Headache → PLZ Make It Ruins、Halou《Halou》→ Vertebrae Music Productions、Between Interval 兩張 → Spotted Peccary、Jogging House → Seil Records、Space Afrika → Dais Records、mars kumari → Bruiser Brigade Records；Blackbird（2018 原發自行發行，Doki Doki Beats 為 2026 重發）、Disparition、All India Radio（數位版）→ self-released。country——One Arc Degree us → gr（希臘二人組；us 是 Synphaera 所在地）、Blackbird 清空（Discogs 稱法國製作人，與 Bandcamp 地點矛盾，不寫國籍）。
+- 寫作層注意：Headache「人聲是 AI」單源，不寫；Between Interval 真名兩說，不寫真名；Phelios Bandcamp 版是含 5 首 bonus 的自行重發，以 Malignant 原版 7 首為準。
+- 不補位。定案 **20 張**。留給評分驗收的邊距風險：moby《Destroyed》（techno 拍幾首）、Just Mustard（有鼓噪音 shoegaze）、Space Afrika（人聲客串、弦樂、打擊）、Pye Corner Audio（樂評稱平和、有光）、Blackbird（2-step）、Martin Stürtzer（音序器脈動）、All India Radio（人聲）、Lauge《Echoes》（自然題材判輕）。
+
+## 鉤子層（c）（23856–23860；2026-11-06）
+- **23856** 交件：`desc-tools/batches/hooks/add-20261106-md40-hooks-c.json` 4 張（研究稿 c 組汰換後剩 4，張數以研究稿為準）。預算公式：`Array.from(hook)+Array.from(note) − 主故事： − 所有 → − 正文只寫上列各項。 − 這條骨架全批只走本張。`；thin 上限 170、full 上限 230。逐筆（預算／hook 原始字元／加權）：Martin Stürtzer《Illumination Cycle》163／24／24（thin）；mars kumari 165／21／15（thin）；Rún 209／25／25（full）；worriedaboutsatan 169／24／22.5（thin）。初稿 4 張全超標（213–375），整格捨去：Stürtzer 的 SYN20、母帶與 24 位元、靜止／流動對照；mars kumari 的別名 bruiser marcy、Roy Christopher 與 hauntology、客座名單、dark ambient、13 首；Rún 三位成員的個別背景（Jim Henson 配音、Nurse With Wound、Lankum）、影響清單、〈Caoineadh〉曲長、〈Strike It〉與 Tuam 事件（屬單曲題材、非本作招牌事實，預算不足整格捨去）；worriedaboutsatan 的利茲音樂學院、融合 glitch／techno 的自述與影響樂團、BBC 紀錄片（屬 2016 年另一張）、曲數曲長。moodVerdict 一律未進 note；label 照卡單現值（worriedaboutsatan 自發行，不寫廠牌）。壓完回核：hook 依賴格皆在 g1／g2（Stürtzer 冬天＋烏珀塔爾＋八首在 g2，「音序器」在 g3 聲音格、該格為 thin 卡必留；mars kumari 的「她」與 Danny Brown 在 g1 收尾；Rún 三個愛爾蘭人＋即興進入狀態在 g1／g2；worriedaboutsatan 的 Deus B 面在 g2）。hook 自驗事實：Stürtzer 冬天＝2020–2021 冬、八首；Danny Brown 擔任執行製作；Rún「深處」是三人自己的說法；Deus 為比利時樂團、〈Worried About Satan〉為 1996 年單曲 B 面。
+- **23857** 骨架歸屬（本組 4 條，各張 note 只寫自己的歸屬句）：Illumination Cycle＝一人在自家工作室過冬錄成（錄音時節與地點）；I Thought I Lost You＝Danny Brown 所屬集團收下實驗拼貼製作人的首張（執行製作掛名）；Rún＝即興先入「深處」的儀式式創作＋愛爾蘭語團名語義；Crystalline＝團名借自別團歌名＋二人組剩一人。對照 a 組已交 7 張（念白別名、機場看板封面、隧道意象、Guthrie 殘響、北歐寒秋、盤帶單次、童話邊緣）不撞；Between Interval 的「寒秋」是靈感季節，Stürtzer 的「冬天」是錄音時段，不同軸。Just Mustard 與 Rún 同為愛爾蘭：Rún 只帶即興方法與團名語義，不碰封城、不提 Portishead（研究 c 有 Portishead 對照，已捨去，讓給 Just Mustard）。
+- **23858** 同人跨張：**Phelios（b 組《Astral Unity》）即 Martin Stürtzer**（研究 b 第 1 條）。分軸：本卡只帶「錄音時節＋地點＋音序器聲音」，生平、暗黑 ambient 別名、Phobos 音樂節、Malignant 歸 Phelios 卡；本卡的身分句只寫「德國電子音樂人」並以名字直接領句。b 組若在 Phelios 卡寫烏珀塔爾，請以音樂節為軸、避開「自家工作室錄音」。Synphaera 同時是 One Arc Degree（b 組）的廠牌：本卡廠牌只寫名字，創立者、24 位元母帶、IO Mastering 留給 One Arc Degree。
+- **23859** hook 四型：場景（Stürtzer）／懸疑（mars kumari，「她」在第二句由 note 收尾具名）／人物定調（Rún）／斷言（worriedaboutsatan）。開頭前四字：烏珀塔爾、Dann、三個愛爾、一首比利，與 a 組 7 張互異，也避開 md31 已上架 hook 的「整個冬天」（初稿撞，已改）。「他／她」引入法與第二句句型：Stürtzer＝名字直接領句＋國籍身分「Martin Stürtzer，德國電子音樂人」；mars kumari＝居住地＋身分「奧克蘭製作人…在…的首張」；Rún＝國籍＋編制「愛爾蘭三人組 Rún」；worriedaboutsatan＝「是英國電子後搖組合」。「日」後一字：Stürtzer「列」、mars kumari「登」、Rún「隨」、worriedaboutsatan 只寫到月；避開 a 組（由、發、上）與 md37–md41 已用（推以自才交問由出在先同上發替經從掛透放這面首釋編）。
+- **23860** 自查：本組 4 個 hook 互相 4-gram 0 撞、對 a 組 0 撞；對全 repo 既有 hooks 與 output 只剩「執行製作」（職稱）、「在家裡錄」（4 處、常用語）、「首音序器」「冬天他在」「他在家裡」各 1 處；mars kumari 初稿「執行製作欄上，寫著…的名字」撞「製作欄上」13 處、「欄上寫著」5 處，改寫。hook 與自己 note 無逐字重複句（Rún 原稿 note 重述「先布置氣氛」，已改成「進入那個狀態後」）。`node qa-batch.mjs hooks add-20261106-md40`：僅報 b 缺檔；`node chk-hook-crossgroup.mjs add-20261106-md40`：2 組 11 張全部通過（hook 加權 15–25、note 158–236）。
+
+## 鉤子層（a、b）（23851–23855；2026-11-06）
+- **23851** 交件：`desc-tools/batches/hooks/add-20261106-md40-hooks-a.json`（7）、`-b.json`（9），共 16 張，張數以研究稿為準。預算公式：`Array.from(hook)+Array.from(note) − 主故事： − 所有 → − 正文只寫上列各項。 − 這條骨架全批只走本張。`；thin 上限 170、full 上限 230。逐筆（預算／hook 原始字元／加權）：Headache 155／24／21（thin）；moby 227／30／24.5；Just Mustard 222／21／21；Halou 222／29／21.5；Autumn Continent 224／29／23.5；Jogging House 163／18／18（thin）；Edge Of A Fairytale 223／23／23；Blackbird 170／29／24（thin）；2814 212／30／24.5；All India Radio 227／28／23.5；Disparition 158／26／21（thin）；Space Afrika 222／30／23.5；Lauge 170／23／23（thin）；Pye Corner Audio 228／18／18；Phelios 210／25／22；One Arc Degree 170／21／21（thin）。初稿 14 張超標，整格捨去：Headache 的 Frank Ocean《Blonde》與曲名格；Just Mustard 的主唱名；Halou 的 Zoe Keating、標籤與曲長格；Autumn 的 Wanderings 子廠牌、〈The Tides of Time〉、目錄號；Edge 的目錄號、曲數；Blackbird 的 SolusMind 與曲數時長；2814 的「第三張」、無取樣、This Mortal Coil／Cocteau Twins／Andy Stott 比擬、曲數時長；All India Radio 的 Mark Wendt 與兩地錄音、Labradford／Lynch、Lisa Gibbs；Disparition 的總長與典籍名；Space Afrika 的 dub techno 一句、前作相隔五年、客串名單；Pye 的時長、〈Beneath The Noise Floor〉兩首；Phelios 的 False Mirror、拉丁原文、曲長、烏珀塔爾（讓給 c 組 Stürtzer 卡）。moodVerdict 一律未進 note；label／country 照卡單現值（Blackbird、Disparition、All India Radio 寫自行發行；Lauge 卡單 label 是帳號拼接，不寫廠牌、只寫放上 Bandcamp；Blackbird 不寫國籍）。寫作層注意照辦：Headache 不寫 AI 人聲（連帶「低調友人」也不寫，同出一條）；Between Interval 兩張不寫真名、以「創作者」「他」指稱；Phelios 寫原版 7 首。壓完回核：hook 依賴格全在 g1／g2 或由 hook 自帶（moby 封面前移到 g1；2814 樂評封號前移到 g2；Space Afrika 的 Ligon 命名在 g2；Jogging House 回補「錄進盤帶」與「10 首」到 g2；One Arc Degree 兩城雲端合作由 hook 自帶）。hook 自驗事實：Blackbird 2018→2026 重發＝八年；Edge 2006→2009＝隔三年；Phelios「故人」依獻詞的 1983 至 2009 年；Lauge 八首中七首是地景、〈Cityscape〉例外，寫「多以地景為名」。
+- **23852** 骨架歸屬（本兩組 16 條，各張只寫自己的歸屬句）：Headache＝製作人換別名做念白；Destroyed＝封面攝影的偶然＋失眠夜裡作曲；Heart Under＝第二張由 shoegaze 轉向 noise rock（樂團要的意象：開窗過隧道）；Halou＝名家吉他客串＋停用名義前的最後一張；Autumn Continent＝季節地理意象（樂評的北歐寒秋比喻）；Weight＝直錄盤帶單次完成；Edge＝創作者自述標題語義（已知與未知之間）；Lonely Bird＝自發小品多年後限量壓片；Rain Temple＝被樂評封為某類型經典而作者不認標籤；Unified Field＝老團回到早年路線；Transmutations＝古代神祕學概念專輯；Quiet Storm＝視覺藝術家替專輯命名並供封面；Echoes＝以地景巡禮為曲名；Lake Deep Memory＝刻意保留雜訊的美學＋旅途湖畔錄音；Astral Unity＝獻給故人的曲子；Glow Beneath＝跨城雲端合作的二人組。對並行 md41 已寫的避開：Halou 不碰夫妻與 Anomie 出身（歸 md41《Wiser》）；2814 不碰 Dream Catalogue 創辦與 dream music 起源（歸 md41 Hong Kong Express）；Lauge 不碰本名、8 聲道、海洋曲名（歸 md41《Latitudes》），連續混音整格捨去（md41 State Azure 已用作 hook）；One Arc Degree 與 Phelios 不寫 Synphaera 創辦與文案世界觀（歸 md41 Ascendant、S1gns Of L1fe）；Phelios 不碰 Stritzel 與特雷門琴（歸 md41 Sphäre Sechs）；Jogging House 的「單次錄完」與 md41 Lauge 的「每段 8 聲道」不同軸（本卡軸是盤帶載體）。
+- **23853** hook 四型：場景（moby、Jogging House、Blackbird、Lauge、One Arc Degree）／斷言（Autumn Continent、2814、Disparition、Space Afrika）／人物定調（Headache、Just Mustard、Halou、All India Radio、Pye Corner Audio、Edge）／懸疑（Phelios，收尾指派〈Origin〉獻給 Marcel K.，語氣克制）。開頭前四字：Vegy、機場看板、這支鄧多、借來 C、若說 B、法蘭克福、已知與未、2018、被封為 、塔斯馬尼、一位洛杉、專輯名是、霧中松林、別人費力、〈Ori、一人在雅——全批 20 張互異，也不與 md41 已寫 18 張、md1–md39 已上架 hook 開頭相同。
+- **23854** 同人跨張與「他」引入法、第二句句型配表：Between Interval 兩張——Autumn＝國籍領句「是瑞典的 dark ambient 計畫」、軸＝樂評比喻與聲音；Edge＝廠牌關係領句「Spotted Peccary 旗下…隔三年的新作」、軸＝創作者自述與題材，兩張互不重述對方的軸。Phelios＝Martin Stürtzer（c 組《Illumination Cycle》同人）：本卡以名義領句「是…的暗黑 ambient 名義，他也主辦 Phobos 音樂節」，軸＝名義、音樂節、獻詞、Malignant；錄音時節、烏珀塔爾工作室、音序器、Synphaera 歸 c 組（照 23858）。其餘第二句句型逐張：Headache「是…的別名」；moby「這是…第十張」；Just Mustard「是…樂團，…成軍」；Halou「來自…，做…」；Jogging House「是…兼任…」；Blackbird「是一人…的」；2814「是…組成的」；All India Radio「始終在團」；Disparition「是…在洛杉磯的名義」；Space Afrika「是曼徹斯特的…二人組」；Lauge「是丹麥的」；Pye「是…的計畫」；One Arc Degree「是兩位…成立的」。「日」後一字：Headache 由、Just Mustard 發、Autumn 上、Blackbird 自、2814 在、All India Radio 推、Lauge 放、Pye 交、One Arc Degree 經；其餘 7 張只寫到年或月；與 c 組（列、登、隨）不撞。
+- **23855** 自查：本兩組 16 個 hook 對全批 20 張、md41 18 張與 md1–md39 全部已寫 hooks（151 檔 975 張）中文 4-gram 掃描，初掃 5 撞全改：Halou「的吉他手」×2（→「借來…那把吉他」）、Jogging House「直接錄進」（→「一次錄上」）、Pye「到最前面」（→「拉到前景」）、Phelios「一位朋友」（→「一位故人」）；終掃 0 撞。hook 與自己 note 無逐字重複句（Disparition 初稿 hook「煉金術士與神祕學者」與 note 同句，改寫 hook；殘留只剩地名「法蘭克福」「塔斯馬尼亞」）。`node qa-batch.mjs hooks add-20261106-md40` 全部通過；`node chk-hook-crossgroup.mjs add-20261106-md40` 3 組 20 張全部通過（hook 加權 15–25、note 158–237）。
+
+## 寫作層（writer-2）（23866–23870；2026-11-06）
+- **23866** 交件：`desc-tools/batches/output/add-20261106-md40-out-2.json` 9 張（full 5、thin 4），字數 155–227。逐張：Blackbird 169（thin）、2814 206、All India Radio 208、Disparition 155（thin）、Space Afrika 225、Lauge 177（thin）、Pye Corner Audio 227、Phelios 216、One Arc Degree 180（thin）。初稿 One Arc Degree 183 超出 thin 帶，整格改寫日期句與時長句壓回；無掉下限。`qa-batch out`（本檔 0 處；另報的 thin 超 180 是 writer-3 的 mars kumari 182、worriedaboutsatan 186）、`qa-check-research`（標記 0）、`fix-spacing`（待補 0）通過；「據」、媒體名、資料平台名（Apple／Discogs／MusicBrainz／Spotify／維基）0。
+- **23867** 第二句句型照鉤子層 23854 配表：Blackbird「是一人包辦…的」、2814「是…組成的」、All India Radio 以 Martin Kennedy 領句「始終在團」、Disparition「是…立足洛城的名義」（原表「在洛杉磯的名義」與 md41／md40 他卡撞「洛杉磯的」「在洛杉磯」3 張以上，改「立足洛城」，可逆）、Space Afrika「是曼徹斯特的…二人組」、Lauge「是丹麥的」、Pye「是…的計畫」、Phelios「是德國人…的暗黑 ambient 名義，他也…」（「德國音樂人」與 Pye「英國音樂人」撞「國音樂人」，改「德國人」）、One Arc Degree「是兩位希臘樂手…成立的組合」（「音樂人年」「計畫年月」與 Lauge 及他卡撞，改「樂手」「組合」）。
+- **23868** 日期句偏離鉤子層「日」後一字表四處（可逆）：Blackbird「日自」與 md35–md41 撞 `年月日自`／`自行發行` 3 張以上，改「首發於年月日，發行人就是他自己」；All India Radio「日推」撞 `年月日推`／`月日推出`，改「推出日為年月日」；Pye「日交」撞 `年月日交`，改「發行方 quiet details 把它排進年月日」；One Arc Degree「日經」撞 `年月日經`（4 張），改「年月日，洛杉磯廠牌 Synphaera 推出」。2814「日在」、Lauge「日把」（原表「放」撞 `年月日放` 3 張，改語序）照表或近表。只寫到年／月的 3 張逐張錯開：Disparition「年，Bernstein 親自把它發行」、Space Afrika「Dais Records 在年替他們出版」、Phelios「年月由 Malignant Records 推出」。
+- **23869** hook 不複述：2814 第二句不重講「經典」，改寫封號出處（同年 11 月一篇樂評）與 HKE 的叫法 dream music；Space Afrika 不重講「錄完才命名」，只寫《Figure #30》為起點與封面；Pye 的「帶到前景」已在 hook，正文只寫噪音、嗡聲、嘶聲吸引他；Blackbird 的「100 張」已在 hook，正文只補重發廠牌與 2026 年時序；Phelios 第二句後以「那位故人是 Marcel K.」替 hook 代稱具名，生卒年平敘、語氣克制；Lauge 以英文原題替 hook 的「北方森林」「冰河湖」具名。Disparition 的 downtempo 已在 hook，正文只補 ambient。
+- **23870** 自掃（han() 中文 4-gram）：本檔 9 張內 2 張以上 0 條；合掃 md35–md41、ml66–ml67 已寫 out 與 md40 writer-1／3 的 hook，途中拆掉 3 張以上的「的合成器」「首約分鐘」「分鐘曲名」「洛杉磯的」「首張專輯」「殘響裡的」「曲名取自」「廠牌發行」「是年月日」「在年月日」「於年月日」「年月日出」「作曲與製」等，一律整詞改寫；終掃 3 張以上 0 條。可逆小判斷：Disparition「不少曲名借自煉金術典籍」（facts 的曲名來源含非煉金術的 Baikonur，故用「不少」）；Pye「全碟無鼓」照 note「整張無鼓」；Lauge「放上 Bandcamp」照 note 原詞（發行處，非資料來源）。
+
+## 寫作層（writer-1、writer-3）（23861–23865；2026-11-06）
+- **23861** 交件：`desc-tools/batches/output/add-20261106-md40-out-1.json` 7 張、`-out-3.json` 4 張，共 11 張。full 6 張 204–239（moby 231、Just Mustard 239、Halou 217、Autumn Continent 235、Edge 204、Rún 224）；thin 5 張 143–179（Headache 175、Jogging House 143、Martin Stürtzer 155、mars kumari 174、worriedaboutsatan 179）。初稿僅 worriedaboutsatan 186 超 thin 上限，整格捨去「樂團從此」「出爐」「負責」壓回；Just Mustard 改寫後一度 247，捨去「那天」並把「典型的副歌也很少出現」縮成「典型副歌少見」。無掉下限。`qa-batch out`（3 檔 20 張全部通過）、`qa-check-research`（兩檔標記 0）、`fix-spacing`（兩檔待補 0）；「據」、資料平台名、媒體名 grep 0。
+- **23862** 第二句句型照鉤子層 23854／23859 配表：Headache「是…的別名」、moby「這是…第十張」、Just Mustard「是…樂團，…成軍」、Halou「來自…，做…」、Autumn「是瑞典的」、Jogging House「是…兼任…」、Edge 廠牌關係領句「Spotted Peccary 旗下的…隔三年的新作」、Stürtzer 名字直接領句「Martin Stürtzer，德國電子樂手」、mars kumari「奧克蘭製作人…替他那個底特律集團…交出頭一張長片」（收尾 hook 的「她」並具名「他」的集團）、Rún「Rún 這支愛爾蘭三人組」（原「他們是愛爾蘭三人組」與 Just Mustard 成績句、已上架卡撞 `是愛爾蘭` 3 張，改領句）、worriedaboutsatan「是英國電子後搖組合」。本卡藝人名照卡單逐字寫 `moby`（小寫，note 寫 Moby）。
+- **23863** 日期句偏離鉤子層「日」後一字表四處（可逆）：合掃 md30–md41、ml60–ml67、shop 已上架 out，`年月日由`（15 張）、`年月日發`／`月日發行`（6–7）、`年月日上`／`月日上市`（7–10）、`年月日登`（3）都已是大族，改成 Headache「PLZ Make It Ruins 推出它，時值…日」、Just Mustard「…日，Partisan Records 讓它上架」、Autumn「上市日期為…日」（與 writer-2 All India Radio 共 `為年月日` 2 張，未達 3）、mars kumari「…日它登上 Bandcamp」；Stürtzer「列」、Rún「隨」照表。只寫年／月的 5 張逐張錯開：moby「年由…與…發行」、Halou「年經…推出」、Jogging House「年，由他策展的那家廠牌以數位版推出」、Edge「年交出」、worriedaboutsatan「年月的」。
+- **23864** hook 不複述：Autumn 第二句補「那個挪威對照出自樂評之口」收尾 hook 的比喻；Halou「那把吉他屬於 Robin Guthrie」替 hook 代稱具名，不重講三首；Jogging House 不重寫「一次錄上盤帶」，改「錄好的帶子原樣保留」（note「事後不剪接」照否定句禁令改正面寫）；Headache「不唱旋律」同理改「以說話的語調讀出」；Stürtzer 不重寫冬天與八首，只補年份與 58 分鐘；Edge 不重寫標題語義，只寫創作者自述的起因。
+- **23865** 自掃（han() 中文 4-gram）：本兩檔 11 張內部 2 張以上 0 條；三檔 20 張合掃只剩 `為年月日` 2 張；對 md30–md41、ml60–ml67、shop 已上架 out 合掃，3 張以上只剩 `原聲吉他`（樂器）、`國專輯榜`（英國專輯榜，榜名）、`執行製作`（hook 原文、職稱）。途中拆掉的 3 張以上殘片：`作並混音` `倫敦製作` `製作人的` `張錄音室` `錄音室專` `正式專輯` `西班牙的` `是愛爾蘭` `樂評聽見` `樂評形容` `四張專輯` `張專輯年` `年由發行` `的唱片是` `這個名字` `靈感來自` `數位形式` `現場演奏` `發行了它` `給自己的` `廠牌把它` `一人包辦` `獨力完成` `加起來約` `計約分鐘` `電子音樂` `全盤只有` `由她自己` `製作人在` `音年月日` `錄音地點` `的錄音室` `首約分鐘` `首共分鐘` `分鐘上下` `只剩一人` `年月推出` `年月面世` `是年月日` `在年月日` `作品年月` `張年月日`，一律整詞改寫。對 writer-2 卡單 hook 與 note 0 撞（僅 `製作混音` 見於 Blackbird note）。
+
+## 主線審稿（23871–23872；2026-11-06）
+- **23871** 逐張審 20 張（out-1／2／3 全文印出，逐句對研究稿 a–c）。改 4 張 4 處（`desc-override.json`），只刪不穩事實或統一譯名：
+  - `Just Mustard|Heart Under`：刪「2015 年成軍」——成軍年三說（維基內文 2015、維基分類與 wikidata 2016、樂評推算約 2016；藝人介紹補洞 ar-d-525 g1 查得），不寫年份。
+  - `Martin Stürtzer|Illumination Cycle`：「烏珀塔爾」→「伍珀塔爾」（與藝人介紹、Phelios 統一；hooks-c、input 同步）。
+  - `mars kumari|I Thought I Lost You`：「替他那個底特律集團 Bruiser Brigade」→「替底特律的 Bruiser Brigade」（Bruiser Brigade 歸屬 Danny Brown 一說在研究稿為單源；Danny Brown 掛執行製作有 Bandcamp credits 直述，保留）。
+  - `worriedaboutsatan|Crystalline`：刪「2019 年 6 月 Tom Ragsdale 離團，只留下 Gavin Miller」——只有維基單源（補洞 ar-d-525 g2 亦標單源放 notes），改為「《Crystalline》由 Gavin Miller 操作電腦與吉他」。
+  - 照准：moby 照卡池掛名小寫；2814「被封為 vaporwave 第一張經典」出自研究 b 樂評、正文不寫媒體名；Halou 借用 Robin Guthrie 三首有兩源。
+- **23872** `qa-batch out` 20 張全部通過；「據」、媒體名、資料平台名 0。
+- 三軸：`ratings-override.json` 20 張全依 §0.8.1 人工錨點（經典 3／4＝12／8、冷門 2／3／4＝2／9／9、硬蕊 2／3／4＝3／15／2）。頂點 0。
+- 試聽：Apple 自動配對 14 ready；Headache、Space Afrika、Lauge《Echoes》、Phelios、mars kumari、Rún 六張 us／gb／jp 以藝人＋盤名查 iTunes 皆無條目 → unavailable。封面 CAA 20／20，縮圖表目視相符。
+
+## 上線與評分（主線，2026-11-06）（條號 23873–23874）
+- **23873** 上線 20 張：card_catalog 20／20、KV 20 鍵回讀逐字一致（stamp 20261106md40）、試聽 14 ready／6 unavailable（最紅那首換 11 張）、seed +20、published gate 0 error（warning 皆 UPC 盡力而為）。藝人介紹 ar-d-525 寫 13／不寫 3（見 `batch-progress/artist-intro/ar-d-rulings-md40.md`）。
+- **23874** Opus 1 支照 `score500/BRIEF.md` 打 20 張（`batch-progress/mood-axes/score-md40/`），主線看過未改值；`build-priors` → `build-scale v0`（錨點 104/104）→ `build-card-moods`。**落格 16／20＝80%**；出格：Just Mustard《Heart Under》3.1／1.8／−1.3 暴躁（研究 a 已標有鼓噪音 shoegaze）、Rún 3.0／1.9／−1.7 暴躁（雷鳴打擊）、Halou《Halou》z +0.3 恍惚、Pye Corner Audio z +0.2 恍惚（研究 b 已標樂評稱平和、有光）。類型樹 `warm-batch` 20／20 有標籤，`build-genre-tree --pull --write`、`build-draw-covers --pull --write` 重建。

@@ -3855,4 +3855,12 @@ window.DipPreviewStatus = Object.freeze({
   "lindsheaven virtual plaza|超越愛": "unavailable",
   "oscob|praise the sun god": "unavailable",
   "my sister's fugazi shirt|god's in his heaven, all's right with the world": "unavailable",
+  "cashforgold|manic pixie nightmare": "unavailable",
+  "moth equals|the fall and rise": "unavailable",
+  "headache|the head hurts but the heart knows the truth": "unavailable",
+  "space afrika|quiet storm": "unavailable",
+  "lauge|echoes": "unavailable",
+  "phelios|astral unity": "unavailable",
+  "mars kumari|i thought i lost you": "unavailable",
+  "rún|rún": "unavailable",
 });
