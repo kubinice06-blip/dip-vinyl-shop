@@ -25,3 +25,10 @@
 - 23573：moodGuess 存疑：Asta Hiroki（活鼓、肌肉感低音、精緻乾淨）、Jazz Playaz（smooth jazz、自述 bold rhythmic beats）、Lapgan（thumping frenzy、短曲快切）、Purrple Cat（piano／relax／study，偏輕）、Sweeps（輕，證據缺）。
 - 23574：最貼近靜重暖者 Kalpataru Tree（8 首 6–9 分半、psy-dub）、Guitoud（dub）。年份 Kalpataru 照 MB 2007。
 - 23575：10 張皆為正規全長專輯（MB Album，無次類型），無合輯／EP。
+
+## 研究 a 組（23561–23570；2026-11-06）
+- 23561：全組 10 張 Bandcamp ld+json 曲目與長度為第一手；樂評只找到 Bluetech（Exclaim、Debaser）與 L'Orange（Scratched Vinyl），其餘 8 張無樂評，聲音 facts 退成標籤＋credits＋曲長結構，status 誠實標 thin（7 張）。
+- 23562：L'Orange《The Mad Writer》卡單廠牌 Jazz Spot Records 查無佐證，Discogs／樂評均為 Jakarta Records（JAKARTA046，2012-12-14 黑膠）；notes 建議改廠牌。
+- 23563：廠牌與 MB 不符另有 Bluetech（Interchill）、Manatee Commune（Bastard Jazz BJCD14）、CASSOWARY（Fat Possum）、Monster Rally（Golden Robot）、Eagle Eyed Tiger（Stratford Ct.）；卡單 self-released 皆待主線改。
+- 23564：fLako《The Mesektet》廠牌文案自述為 2008 年前未發行／數位曲集成（36 首含 6 首 bonus）；MB 仍為 Album 有目錄號 PMC077，保留，是否視同合輯由主線定。
+- 23565：moodGuess 存疑：Manatee Commune（文案寫舞池、LED 鼓墊 break、夏日國歌，x 低估）、Monster Rally（exotica 明亮）、CASSOWARY（G-funk 律動）、Eagle Eyed Tiger（synthwave／retrowave）、Dirty Art Club（曲名藥物夜間意象）、L'Orange（noir 偏暗）、Bluetech（暖 dub 與殘響陰影並存）。
