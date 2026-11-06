@@ -45,3 +45,24 @@
 - 23889 ASKII《Obscura》：thin／borderline。單源；D&D 地牢配樂、管弦旋律，z 存疑；曲目 17 首＋一條連播檔。
 - 23890 worriedaboutsatan《Blank Tape》：full／borderline。維基：樂團自述融合 glitch、techno、rock、metal，同人《Bloodsport》已因 aggressive 被汰，x 預估 2.1 存疑，建議降權或汰換。
 - 本組 WebSearch 3 次（Lund Quartet、Sync24、CASHFORGOLD〔無結果〕）；其餘經 WebFetch／curl（Bandcamp ld+json、MB API、維基、Sonic Immersion、The Skinny）。維基 REST API 被限流，改走 WebFetch。
+
+## 研究 c 組（23901–23910）
+- 23901 Muslimgauze《Satyajit Eye》：thin／borderline。Bandcamp 文案自述 desert-like 節奏、warm、sun-covered dunes，且三首為《Vote Hezbollah》重混（有拍）；重／冷無支撐，傾向汰換。DAT 換封套故事單源。年份 1993／Staalplaat 成立（維基列表）。
+- 23902 worriedaboutsatan《Glass Infinites》：thin／borderline。靜成立（文案「drifty beatless」，Minibrute 2）；重、冷無直述。卡單 label 欄是藝人名，MB 廠牌為 This Is It Forever，建議更正。
+- 23903 HEXSYSTEM《Amanita Ocreata》：thin／borderline。文案主角是鋼琴與合成器，鼓與電吉他僅「briefly」；y 有判輕風險。label 欄是藝人名，MB／Bandcamp 為 Stereokroma。單源。
+- 23904 S1gns Of L1fe《The Age of Cymatics》：thin／borderline。八首 7–9 分鐘長曲，但文案無聲音直述，psybient／space music 有判暖判輕風險；廠牌 Synphaera（SYN18）成立。
+- 23905 defrag《drown》：thin／drop。文案自述 exciting, fast-paced structures、analogue warmth、cinematic strings，標籤 breakcore／dubstep／IDM；建議汰換。卡單 country us，Bandcamp 地點 Lappersdorf、MB 發行國 DE，建議改 de。
+- 23906 State Azure《Pale Light of a Hollow Moon》：thin／keep（低信心）。長曲＋Blade Runner／cyberpunk＋雨聲；總長 206 分含 1 小時 50 分混音版（單曲約 96 分）。單源。
+- 23907 Leandro Fresco & Rafael Anton Irisarri《La Equidistancia》：full／borderline。失真和聲、磁帶循環、crushing depths 成立靜重；文案反覆 warm，z 疑偏中性至暖。label 欄是藝人名，MB／維基為 A Strangely Isolated Place（ASIPV008），建議更正。
+- 23908 Appleblim《Liminal Tides》：full／drop。廠牌與藝術家文案皆「warm harmonic analogue chords」「buoyant」、曲名 Warmth；靜重成立但落恍惚，建議移作 ml 格候選。
+- 23909 Sphäre Sechs《Extradimension》：full／keep。Sonic Immersion：non-rhythmic、darker shaded、hypnotizing drone；label 欄『Martin Stürtzer』是人名，Echo Elberfeld 為廠牌，建議更正。
+- 23910 本組方法：WebSearch 3 次（worriedaboutsatan〔無結果〕、Sphäre Sechs、Appleblim）；其餘 curl／WebFetch（Bandcamp ld+json、MB、維基、synphaera.com、Sonic Immersion、Turner 電子報）。MB 的 Muslimgauze 廠牌查詢連線失敗；AllMusic／Discogs 403、DuckDuckGo 要驗證，未繞過。共用 scratchpad 目錄曾與他組撞檔名，已改用 md41c-own 自有目錄重抓。
+
+## 主線研究後汰換（不佔條號；2026-11-06）
+- 判準照 md37 先例：研究稿以來源直述**有拍推進／舞曲感**、**判輕（乾淨、smooth）**、**判暖（warm、euphoric、buoyant）**的汰；只是「聲音只有標籤、邊距未知」的留給評分驗收。單源 thin 不汰（本線卡是依收聽人數挑的，故事薄照實寫短稿）。
+- **汰 11 張**（存 `dropped-cards.json`／`dropped-research.json`）：
+  - 能量：Sync24《Comfortable Void》（研究 a：L'altromondo 稱有可舞段落、作者原意中到快速）、worriedaboutsatan《Blank Tape》（研究 a：樂團自述融合 techno 與 metal）、defrag《drown》（研究 c：文案 fast-paced、breakcore／dubstep，另含 analogue warmth）、Muslimgauze《Satyajit Eye》（研究 c：三首為《Vote Hezbollah》重混有拍，文案寫 warm 沙丘）。
+  - 判輕：Lund Quartet《Lund Quartet》（研究 a：The Skinny「too smooth and comfortable」）。
+  - 判暖：Lulu Rouge《The Song Is In The Drum》（研究 a：lighter、poppy，五位客座歌手）、Good Weather For An Airstrike《Kenopsia》（研究 b：旋律導向、人聲長笛）、PINHDAR《A Sparkle On The Dark Water》（研究 b：post-punk.com「warm electronic elements」「steering clear of cold detachment」）、Merrin Karras《Apex》（研究 b：作者自述 warm、euphoric）、Leandro Fresco & Rafael Anton Irisarri《La Equidistancia》（研究 c：文案反覆寫 warm、Fresco 的暖色旋律）、Appleblim《Liminal Tides》（研究 c：warm harmonic analogue chords、buoyant，曲名〈Warmth〉）。
+- **研究層更正已改進卡單（label）**：worriedaboutsatan《Glass Infinites》→ This Is It Forever、HEXSYSTEM《Amanita Ocreata》→ Stereokroma、Sphäre Sechs → Echo Elberfeld、Lauge《Latitudes》→ Fallen Metropolis、Halou《Wiser》→ Nettwerk（維基單源）、LANDROID → Mojave Beach Records（黑膠）、CHANTSSSS → co:clear／Theory Therapy；Cinephile、State Azure 兩張、Moth Equals、CASHFORGOLD、HEXSYSTEM《Spiritual Paralysis》→ self-released。
+- 不補位。定案 **18 張**。留給評分驗收的邊距風險：ASKII《Obscura》（管弦旋律、z）、HEXSYSTEM《Amanita Ocreata》（鋼琴、y）、LANDROID（有鼓、x）、CASHFORGOLD（witch house 拍）、Moth Equals（dubstep 拍）、Hong Kong Express《2047》（30:02 剛好過線）。
