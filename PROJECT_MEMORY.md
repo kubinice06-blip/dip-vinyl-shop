@@ -7,10 +7,21 @@
 - **md41**（`add-20261106-md41`）：卡單 47 → 初篩汰 18 → 研究汰 11 → 封面目視汰 1（Cinephile《Ten》封面印十年回顧，實為精選）→ **上線 17、落頹靡 15（88%）**；出格兩張判輕落平靜。
 - **結論**：粗估「離邊界遠」的卡單實際上線率約 39%（94 → 37）；標籤粗估最常錯在有鼓推進、溫暖旋律、乾淨鋼琴。label 欄多是 Bandcamp 帳號名，研究層更正 30 處。
 - **寫入（已即時生效）**：card_catalog 37、KV 37 鍵逐字回讀一致（stamp 20261106md40／md41）、試聽 29 ready／8 unavailable（最紅那首換 19 張）、seed +37；prepare／published gate 皆 0 error；頂點 0；封面 CAA 37／37。三軸全依 §0.8.1 人工錨點（經典 3／4＝23／14）。審稿改 5 張（刪單源成軍年與離團日、譯名統一、Halou breakbeat 說法與本人衝突）。
-- **藝人介紹**：ar-d-525 寫 13／不寫 3、ar-d-526 寫 7／不寫 6（單源或身分不清）；審稿刪「據」轉述詞 7 處。介紹 10,454 → 10,474。
-- **八格**：頹靡 1,732 → 1,763（含本批）；錨點 104/104 同格。類型樹、抽卡封面、card-moods 重建。
+- **藝人介紹**：ar-d-525 寫 13／不寫 3、ar-d-526 寫 7／不寫 6（單源或身分不清）；審稿刪「據」轉述詞 7 處。介紹 10,454 → 10,492（合併 ml68／ml69 後）。
+- **八格**：頹靡 1,732 → 1,766（含本批，合併 ml68／ml69 後重建）；錨點 104/104 同格。類型樹、抽卡封面、card-moods 重建。
 - **主要檔案**：`batch-progress/add-20261106-{md40,md41}/`、`onboarding-manifest-add-20261106-md4[01]-20261106.json`、`batch-progress/mood-cells-20261022/{curation-md40,md41,master-md40,md41,cut-artist-intros-md40.mjs,SCENES.md}`、`desc-tools/batches/{cards,research,hooks,input,output}/add-20261106-md4*`、`batch-progress/mood-axes/score-{md40,md41}/`、`batch-progress/artist-intro/{roster-md40-ar-d-525,roster-md41-ar-d-526,ar-d-rulings-md40.md}`、`data/artist-intros/`、`seed_cards.json`、`data/mood/`、`genre-tree.json`、`card-subgenres.json`、`draw-covers/`、試聽地圖。
 - **驗證**：`verify-album-onboarding --published` 兩批 0 error；`verify-wave-kv` 37／37；`build-card-moods` 錨點 104/104；`qa-artist out` 兩批只剩不寫的缺位。
+### 2026-11-06｜dip-vinyl-shop｜情緒薄格恍惚 Bandcamp downtempo 候選 ml68／ml69：31 張上線（落恍惚 27）＋藝人介紹 18 位
+
+- **店主 11-06**：Bandcamp downtempo 等標籤 1,901 張依 Last.fm 收聽排序、粗估落格，「先做最遠的」289 張分六批三個工作階段並行；本工作階段做 ml68（`pick-ml68.json` 50）、ml69（`pick-ml69.json` 49）。卡單即策展結果，主線逐張過身分、去重、同人上限、聲音初判。
+- **ml68**（`add-20261106-ml68`）：卡單 50 → 主線汰 31（合輯／選輯 6、EP 2、先例已汰 4、同人超量 8、四拍／trance 7、冷 4）→ 研究汰 6（tribal／house／club 拍 4、Brock Berrigan 27:52、Blueprint 陰暗）→ **上線 13、落恍惚 11（85%）**；出格 The Saxophones 判輕、Juj 判微冷。
+- **ml69**（`add-20261106-ml69`）：卡單 49 → 主線汰 19（Chillhop 季刊合輯、Laswell 重混、Mesektet 擴充版、池中同人判冷判躁等）→ 研究汰 11（funk／electro／舞池拍 9）→ 寫作後汰 Teal（27:42、Apple 標 EP）→ **上線 18、落恍惚 16（89%）**；出格 Dirty Art Club、L'Orange 判微冷落頹靡。
+- **寫入（已即時生效）**：card_catalog 31、KV 35 鍵逐字回讀一致（stamp 20261106m68／m69）、試聽 27 ready（21 張換成最紅那首）／4 unavailable（Apple 無此盤）、seed +31；prepare／published gate 皆 0 error；頂點 0。封面 CAA 27＋Bandcamp 4（CAA 404）。審稿兩批逐張審過未改字。
+- **藝人介紹**：ar-d-521（寫 5、不寫 7：查無國籍或單一來源）、ar-d-522（寫 13、不寫 Koi.、Teal）上線；審稿改 4 處（刪「據」轉述詞 3、telepath 單源本名生年）。介紹 10,454 → 10,472。
+- **八格**：恍惚 1,708、頹靡 1,735（本分支，合併 main 後重建）。錨點 104/104。
+- **注意**：並行的 ml70 卡單有同藝人（Hello Meteor、Sweeps、Purrple Cat、Bluetech、L'Orange、City Girl），藝人介紹可能兩邊都切；合併時以先上 main 的版本為準。
+- **主要檔案**：`batch-progress/add-20261106-{ml68,ml69}/`、`onboarding-manifest-add-20261106-ml6[89]-20261106.json`、`batch-progress/mood-cells-20261022/{curation-ml68,curation-ml69,master-ml68,master-ml69,cut-artist-intros-ml68.mjs,SCENES.md}`、`desc-tools/batches/{cards,research,hooks,input,output}/add-20261106-ml6[89]*`、`batch-progress/mood-axes/score-{ml68,ml69}/`、`batch-progress/artist-intro/{roster-ml68-ar-d-521,roster-ml69-ar-d-522,ar-d-rulings-ml68.md}`、`data/artist-intros/`、`seed_cards.json`、試聽地圖、`data/mood/`、`genre-tree.json`、`card-subgenres.json`、`draw-covers/`。
+- **驗證**：`verify-album-onboarding --published` 兩批 0 error；`verify-wave-kv` 35／35；`build-card-moods` 錨點 104/104；`qa-artist out` 只剩刻意不寫的缺位。
 
 ### 2026-11-05｜dip-vinyl-shop｜藝人介紹二十批上線（雲端，卡池缺介紹藝人補登 ar-d-501～520；介紹 9,650 → 10,454）
 
