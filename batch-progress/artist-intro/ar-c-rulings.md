@@ -2744,3 +2744,15 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 截止日後事實主線核實：Timber Timbre 主唱 Taylor Kirk 2026 年 4 月 14 日驟逝、得年 44、死因未公開（Billboard Canada、Consequence、Stereogum 等多源，皆引同一份代表聲明），正文一句帶過；The Beta Band 2025 年重組巡演未另行核實，刪除。
 - 題材照寫：Trees of Eternity 的 Aleah Stanbridge 2016 年 4 月因癌症過世、得年 39（派工特注誤拼 Starbridge，研究稿已更正）；Tom Brock 2002 年過世；YEBBA 母親過世後她以〈My Mind〉紀念。
 - 主線審稿 39 處：第一句補國籍或身分（O’Malley、Suburban Lawns、Sun Araw、The Antlers、The Telescopes、Timber Timbre、Sound of Ceres、The Fur.「台灣」、Nisennenmondai 與 Mori wa Ikiteiru「日本」、Sa-Ra、Society of Soul、The Internet、Thee Sinseers「美國」、Spacek「英國」、Tank、Tom Brock、Yazmin Lacey、YEBBA、Yuna 補名字與身分）；在世者不寫獎項、串流——Timber Timbre 刪 Polaris 長短名單、Yuna 刪 Myspace 百萬播放、YEBBA 刪 Sam Smith 合寫（只留一項）、Yazmin Lacey 刪 Ezra Collective 一句；單源與過度評語——Tom Brock「最偉大 soul 歌手之一」（個人部落格）、YEBBA 的 Zane Lowe「最有力」、Thergothon「第一張真正的 funeral doom」、The Fur. SXSW（單源）、Tank「長年維持聲量」刪除；柴田聡子→柴田聰子；多處刪句壓回 250 字。
+
+## ar-d-806（2026-11-06，reggae：roots、rocksteady、ska、dub、lovers rock；沖繩 dub、剛果 soukous×Lee Perry；17 位，補洞與寫作各只有一組）
+
+- 14 位寫：13 full、1 thin；不寫 3 位——問題總部（只有 Bandcamp 一條來源）、Shanti Yalah（沒有聲音事實，身分也查不到）、Well Pleased & Satisfied（身世查不到，聲音只有零售頁單源）。
+- 題材照寫：Roland Alphonso 1998 年在洛杉磯同台演出時倒下、同月辭世（兩源，不寫死因）；Tyrone Evans 2000 年在紐約因癌症過世；The Frightnrs 主唱 Dan Klein 錄首張專輯期間確診漸凍症、2016 年 6 月在發行前過世；Tony Tuff 2024 年在京斯敦辭世（dancehallmag 等）；Seke Molenga 與 Kalo Kawongolo 被法國製作人丟在牙買加、流落街頭。
+- 主線審稿 27 處：第一句補名字與國籍（Prince Alla、Rita Marley、Roland Alphonso、Sammy Dread、Susan Cadogan、Tony Tuff、Tyrone Evans、Winston Jarrett「牙買加」，The Aggrovators、The Frightnrs、Ryukyu Underground 補團名與身分）；在世者不寫榜單——Stick Figure 刪 Billboard 冠軍與終結《Legend》140 週（改補 Ruffwood Records 與早年影響兩句以維持 full）、Susan Cadogan「英國單曲榜第 4 名」改「在英國走紅」（比照 ar-d-520 Mad Professor 卡）；單源評語刪除——Susan Cadogan「lovers rock 代表聲音」、Aggrovators「最重要的錄音室班底」、Sammy Dread「經典 roots 嗓音」、Ryukyu「狂熱」；Roland Alphonso 刪勳位；多處刪句壓回 250 字。
+
+## 剩餘六批收尾（2026-11-06）
+
+- ar-d-801～806 全數上架：217 位寫 201 位、不寫 16 位（研究稿只有一條來源、沒有聲音或身世事實）；主線審稿合計 177 處。
+- 截止日後事實：Taylor Kirk（Timber Timbre）2026 年 4 月驟逝，主線以多源核實後寫入；其餘 2025–26 年的再版、重組、獎項一律刪除。
+- 這 16 位與歷批 277 位資料不足者，依店主規則不再重派；卡池目前沒有從沒排過的藝人。
