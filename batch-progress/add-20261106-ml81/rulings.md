@@ -52,3 +52,12 @@
 - 24933：年份與身分：8 張 MB 年份與 Bandcamp 頁無實質衝突（CYGN 9/21 對 9/29、Joe Beats 2002 對 Bandcamp 2003-01-28，皆以 MB 年為準）。label：Khotin＝Ghostly International、Gnarls＝10K Projects／Atlantic、CYGN＝Radio Juicy、Pejzaż＝The Very Polish Cut Outs、Crookram＝Bankrupt Recordings／Budabeats；AJE、CharlestheFirst、Joe Beats 無外部廠牌（Persona Free Music 為製作名義，未證廠牌）。
 - 24934：facts 取捨：CharlestheFirst、CYGN 僅 7 條 facts——Bandcamp 以外無獨立來源（樂評皆缺），已補至 8 條；CYGN「5000 萬串流」為廠方單源，Crookram〈Badalamenti〉致意與 AJE Cafe D 性質未證，一律不寫。
 - 24935：WebSearch 用 2 次（Gnarls Barkley 樂評、Khotin 樂評）；其餘用 Bandcamp ld+json、RA 與維基頁直讀。MusicBrainz API 本次回空，沿用卡單 mbNote 的 MB 核對。
+
+## 研究 d 組
+- 24951：Sweatson Klank《Super Stuff》標 moodGuess 存疑（舞池推進）：Bandcamp 文案稱〈Summer Static〉〈The Sugar〉〈Final Boss〉為 uptempo 90 年代浩室（303 酸性貝斯），其餘為搖擺鼓 boogie／beat 與靈魂爵士，混合型，約佔 15 分鐘；來源僅藝人文案，無獨立樂評。
+- 24952：Birdsnake《Biofilter》標 moodGuess 存疑（舞池推進）：文案寫〈Hydrostatic Pressure〉「four-to-the-floor kick」「dance floor focused tempo」，〈Rare Amulet〉同家族；其餘曲速度未證。label Bathtub Music，國別 au。
+- 24953：Pandrezz、Zero Cult、GENDEMA、Huerta、Abakus、Jogging House 鼓型未證，不標存疑；Abakus 與 Zero Cult 的 club／trance 標籤在 notes 記為風險點；Huerta 廠方明說「遠離舞池、少量 breakbeat」，不標；Jogging House 文案稱素材僅 kalimba 取樣，推論無傳統鼓組。
+- 24954：GENDEMA 年份照 MB 2025（Bandcamp 2026-05-15 為 No Problema Tapes 重發頁）；前作《sassy things》樂評僅作旁證，不當本張證據。
+- 24955：label 補：Pandrezz 自發、Zero Cult→Cosmicleaf Records、Sweatson Klank→Friends Of Friends、GENDEMA→No Problema Tapes、Huerta→R&R（Leizure 子廠牌）、Birdsnake→Bathtub Music、Abakus→Modus Recordings、Jogging House 自發（聯合出版 Elektron Music Machines）。
+- 24956：Abakus Bandcamp 頁已加 5 首 bonus（2026-09），卡單以正式 12 首為準。
+- 24957：WebSearch 用 3 次（GENDEMA、Abakus、Birdsnake），皆無獨立樂評；其餘 5 張聲音事實僅來自 Bandcamp 文案／標籤，status 多為 thin，不湊數。
