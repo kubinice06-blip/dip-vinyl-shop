@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1868 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1871 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -1645,6 +1645,9 @@
 | ar-d-803 | Pink Siifu & Fly Anakin | FlySiifu's | 製作人逾十位、各做一首 | Powmag 訪談稱約 10 至 13 位製作人參與 22 首曲子，「各做一首」不成立（Madlib 只做一首〈Time Up〉屬實），建議改為「製作人逾十位」 | https://www.powmag.net/p/fly-anakin-pink-siifu-flysiifus-interview |
 | ar-d-803 | Psalm Trees & Moose Dawa | Dreams From the Shore | 一位是英國製作人 | Psalm//Trees 出身地有兩說：Discogs 寫英國南部，Stereofox 寫南非出生、荷蘭定居；建議上線簡介改為不指明國籍或標明來源不一致 | https://stereofox.com/psalm-trees-neighbourhood |
 | ar-d-803 | Wicca Phase Springs Eternal | Suffer On | 這是他第一次以吉他與鍵盤當每首歌的核心來寫 | DIY 訪談只說這是第一張完全自己寫的 Wicca Phase 專輯、以木吉他歌配 808，沒提到鍵盤；『第一次以吉他與鍵盤為核心』查無來源支持，建議改為『第一張完全自己寫、以木吉他為底』，並核對『第二張專輯』一說 | https://diymag.com/interview/wicca-phase-springs-eternal-suffer-on-interview |
+| ar-d-804 | Roscoe Mitchell, Anthony Braxton | Roscoe Mitchell Duets with Anthony Braxton | 芝加哥簧管手 Roscoe Mitchell … 只有簧管的二重奏 | 維基與樂評只標兩人演奏「reeds」（簧樂器，Mitchell 與 Braxton 慣用各種薩克斯風與豎笛），寫成「簧管手」「只有簧管」容易讓人以為是單簧管；建議改「簧樂器」或「薩克斯風與豎笛」。非確定錯誤，屬措辭風險。 | https://en.wikipedia.org/wiki/Duets_(Roscoe_Mitchell_and_Anthony_Braxton_album) |
+| ar-d-804 | The Giuseppi Logan Quartet | The Giuseppi Logan Quartet | 同年約 11 月就進了當地的錄音棚 | 維基與 WBGO 只說錄音在 1964 年 10 月 October Revolution in Jazz 之後不久、『幾週後』，沒有 11 月的依據；『約 11 月』來源不明，建議改為『10 月的 October Revolution in Jazz 之後不久』 | https://en.wikipedia.org/wiki/The_Giuseppi_Logan_Quartet |
+| ar-d-804 | 吉田アミ | Tiger Thrush | 出版前一個月她與 Sachiko M 的二人組 Cosmos 才在 Ars Electronica 獲獎 | 得獎的是雙 CD 合輯《Astro Twin + Cosmos》（Astro Twin 為吉田與ユタカワサキ，Cosmos 為吉田與 Sachiko M），不是只有 Cosmos；『前一個月』的時序本層未查到頒獎月份，建議改成『同年獲獎』或查證後再寫 | https://www.ftarri.com/festival/2019/weektwo/yoshida-e.html |
 | ar-d-929 | Erik Truffaz | Rollin' | 2000 年簽進這個廠牌 | 上線簡介沿用 Blue Note 官網簡介的 2000 年簽約說；但維基與已上線的《Out of a Dream》《The Dawn》《Bending New Corners》簡介顯示 1997–1999 年已在 Blue Note 發片，瑞士聯邦文化局新聞稿也記《Bending New Corners》為 1999 年 Blue Note 專輯，2000 年簽約的說法與之矛盾，建議改為不寫簽約年。 | https://musikzeitung.ch/en/?p=44583 |
 | ar-d-929 | Erik Truffaz | The Walk of the Giant Turtle | 前一張四重奏盤在法國賣到十萬張的金唱片 | 維基只寫《Bending New Corners》（1999）是法國 Silver Album；本張的前一張是《Mantis》（2001），並非《Bending New Corners》。需核對金唱片的專輯歸屬與認證層級。 | https://en.wikipedia.org/wiki/Erik_Truffaz |
 | ar-d-929 | Stanley Jordan | Magic Touch | 九軌裡有五軌只有一把電吉他 … 六軌只有他的電吉他 | 同一則簡介前後自相矛盾：五軌 vs 六軌；事實庫引 jazzdisco 為六軌純獨奏、其餘三軌各配一組節奏，應統一為六軌。 | https://en.wikipedia.org/wiki/Magic_Touch_(Stanley_Jordan_album) |
