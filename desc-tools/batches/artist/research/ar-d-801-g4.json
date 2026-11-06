@@ -1,0 +1,673 @@
+[
+ {
+  "key": "raum",
+  "name": "Raum",
+  "slots": {
+   "origin": {
+    "status": "bank",
+    "facts": [
+     {
+      "f": "Raum 是兩人二重奏：以 Grouper 之名創作的 Liz Harris，與實驗音樂人 Jefre Cantu-Ledesma。Cantu-Ledesma 在德州出生長大，在舊金山學雕塑與視覺藝術，是後搖滾／氛圍樂團 Tarentel 的創團成員，也共同經營 drone 與氛圍廠牌 Root Strata。",
+      "src": "https://en.wikipedia.org/wiki/Jefre_Cantu-Ledesma",
+      "from": "bank",
+      "single": true
+     },
+     {
+      "f": "Liz Harris 成長於舊金山灣區一個受葛吉夫（Gurdjieff）「第四道」哲學影響的公社，公社稱為「The Group」，Grouper 之名部分源於此；她的音樂用到磁帶、田野錄音、原聲吉他、鋼琴與人聲迴圈。",
+      "src": "https://en.wikipedia.org/wiki/Grouper_(musician)",
+      "from": "bank",
+      "single": true
+     },
+     {
+      "f": "兩人首次同台是 2012 年柏林 Transmediale（CTM）藝術節，演出 Harris 構想的《Circular Veil》：一場長達數小時、設計成讓觀眾躺下入睡的作品，長度對應一整個睡眠週期。",
+      "src": "https://archive.ctm-festival.de/ctm-festival/program-schedule/program-schedule/04/circular-veil.html",
+      "from": "new",
+      "single": true
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Stereogum 把 2013 年的《The Event of Your Leaving》稱為「soft-drone」專輯，聲音朦朧、包覆感強，情感濃。",
+      "src": "https://stereogum.com/2175055/stream-grouper-side-project-raums-new-surprise-album-daughter/music",
+      "from": "new",
+      "single": true
+     }
+    ]
+   },
+   "legacy": {
+    "status": "none",
+    "facts": []
+   },
+   "era": {
+    "status": "bank",
+    "facts": [
+     {
+      "f": "2013 年首張《The Event of Your Leaving》；第二張《Daughter》2022 年突然發行，是睽違近十年的新作。",
+      "src": "https://stereogum.com/2175055/stream-grouper-side-project-raums-new-surprise-album-daughter/music",
+      "src2": "https://en.wikipedia.org/wiki/Jefre_Cantu-Ledesma",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [],
+  "conflicts": [],
+  "pubIssues": [],
+  "searches": 3,
+  "failedFetches": [],
+  "status": "thin",
+  "notes": "維基 Raum 條目是惡魔學的同名詞，與藝人無關，已忽略。確認身分：Grouper 的 Liz Harris＋Jefre Cantu-Ledesma，與卡池專輯一致。Circular Veil 時長各源不一（Glass House 稱 8 小時；Quietus、CTM 稱 7 小時），故 facts 不寫時長，只寫對應一個睡眠週期；CTM 與 theglasshouse.org 為搜尋摘要讀到，未全頁開讀，故標單源。legacy 查不到有出處的共識（Sputnik 4.5、Scaruffi 6/10 為個別評分，不收）。"
+ },
+ {
+  "key": "retribution body",
+  "name": "Retribution Body",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Retribution Body 是 Matthew Azevedo 的個人計畫。他是作曲者、母帶工程師與聲學師；Type 唱片發行時的介紹是波士頓人，白天做建築聲學模擬、在 Berklee 教音樂聲學，偶爾替唱片做母帶。",
+      "src": "https://tower.com/products/retribution-body-aokigahara",
+      "src2": "https://ssl.fas.harvard.edu/artist-in-residence",
+      "from": "new",
+      "single": true
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "《Aokigahara》是兩段長篇低頻 drone，在音樂廳裡做的聲學錄音，而不是軟體堆出來的 drone；通篇偏重低音，需要好的重低音喇叭才聽得出份量，零售商介紹拿它與 Earth《Earth 2》、Sunn O)))《OO Void》的低頻取向相比，但說廳堂錄音讓它與眾不同。",
+      "src": "https://tower.com/products/retribution-body-aokigahara",
+      "from": "new",
+      "single": true
+     },
+     {
+      "f": "Retribution Body 的方法是用自製重低音喇叭與模組合成器，以密集的駐波場讓演出空間的建築共振現形，哈佛 2025 年 4 月駐校藝術家介紹形容結果「極簡又壓倒性」。",
+      "src": "https://ssl.fas.harvard.edu/artist-in-residence",
+      "from": "new",
+      "single": true
+     }
+    ]
+   },
+   "legacy": {
+    "status": "none",
+    "facts": []
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [],
+  "conflicts": [],
+  "pubIssues": [],
+  "searches": 3,
+  "failedFetches": [],
+  "status": "thin",
+  "notes": "確認身分：Matthew Azevedo 的 Retribution Body，Type 2015《Aokigahara》。Tower 為零售頁（按規則商品頁不算可靠來源），僅作輔助，origin 與 sound 第一條的可靠度以 Harvard 頁（官方）為主，寫作層建議只用 Harvard 句與 Bleep/Tower 的錄音方式兩者一致處。Tower 與 Bent Crayon 文字相同，同源。居住地：Tower 寫波士頓，Harvard 2025 寫普羅維登斯，寫作層不寫居住地。上線簡介『Fisher Recital Hall、2013 年 10 月 12 日』未查到對應出處，未驗證（不列 pubIssues）。legacy 無。"
+ },
+ {
+  "key": "richard devine",
+  "name": "Richard Devine",
+  "slots": {
+   "origin": {
+    "status": "bank",
+    "facts": [
+     {
+      "f": "Richard Devine 是亞特蘭大的電子音樂人與聲音設計師；約 1993 年起用電腦作曲，亞特蘭大藝術學院的 Don Hassler 老師帶他接觸 Csound 等電腦合成工具，他後來還用 SuperCollider 自寫 FFT 程式。",
+      "src": "https://en.wikipedia.org/wiki/Richard_Devine",
+      "from": "bank",
+      "single": true
+     }
+    ]
+   },
+   "sound": {
+    "status": "bank",
+    "facts": [
+     {
+      "f": "他以層層堆疊、重度加工的聲音見稱，把 glitch 音樂與新舊電子音樂的影響混在一起；也替 Reason、Absynth、Reaktor、Massive 與 Moog 的 Animoog 設計音色，並為 Nike 等廣告配樂。",
+      "src": "https://en.wikipedia.org/wiki/Richard_Devine",
+      "from": "bank",
+      "single": true
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Autechre 對他音樂的稱讚，加上他重混 Aphex Twin〈Come to Daddy〉的版本（收於 1999 年 Warp 的混音合輯），讓 Warp 在 2000 年請他錄全長專輯，成果《Lipswitch》由 Schematic 與 Warp 聯合發行。",
+      "src": "https://en.wikipedia.org/wiki/Richard_Devine",
+      "src2": "https://artsandculture.google.com/story/get-to-know-sound-design-superstar-richard-devine/yQKi85dP7h1lIg",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [],
+  "conflicts": [
+   "上線簡介寫『Warp 第一張美國音樂人作品』；事實庫來自 Prefuse 73 維基條目的單一說法，補查找不到第二源，且 Warp 已有 Prefuse 73 之前的美國藝人可能性未排除，故不放 facts"
+  ],
+  "pubIssues": [
+   {
+    "album": "Lipswitch",
+    "claim": "在 Warp，這是第一張美國音樂人的作品",
+    "problem": "『第一』宣稱僅有維基 Prefuse 73 條目單一出處，補查未找到第二源；建議改成較保守寫法或查證 Warp 沿革",
+    "src": "https://en.wikipedia.org/wiki/Vocal_Studies_%2B_Uprock_Narratives"
+   }
+  ],
+  "searches": 2,
+  "failedFetches": [
+   "https://drownedinsound.com/artists/Richard_Devine"
+  ],
+  "status": "thin",
+  "notes": "確認身分：亞特蘭大 Richard Devine，Lipswitch 2001（維基寫 2000，專輯發行年份各源不一，寫作層不寫年份細節）。Google Arts & Culture 該頁只讀到搜尋摘要。legacy 的 Autechre 稱讚為單方說法，第二源為摘要，寫作層建議保守。無後輩點名或共識榮譽。"
+ },
+ {
+  "key": "richard skelton",
+  "name": "Richard Skelton",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Richard Skelton 是英格蘭人，2010 年前住在威根附近的 Standish，之後搬到愛爾蘭西海岸；妻子 Louise（也是藝術家）2004 年去世，他在 2005 年成立 Sustain-Release Private Press，作為紀念她的「追思」，音樂與她的畫作一起做成手工裝幀的限量版。",
+      "src": "https://en.wikipedia.org/wiki/Richard_Skelton",
+      "src2": "https://thelineofbestfit.com/features/interviews/tlobf-interview-richard-skelton-a-broken-consort-15408",
+      "from": "new"
+     },
+     {
+      "f": "他用過多個化名發片，如 A Broken Consort、Heidika、Carousell、Clouwbeck，他說化名反映了與 Louise 協作的性質。",
+      "src": "https://thelineofbestfit.com/features/interviews/tlobf-interview-richard-skelton-a-broken-consort-15408",
+      "from": "new",
+      "single": true
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他的樂器以吉他與小提琴為主，也用鋼琴、曼陀林、手風琴與打擊，想捕捉每次演奏不可重複的細節；音樂被拿來與 Arvo Pärt 比較，《Landings》被比作 Brian Eno 的《Ambient 4: On Land》，都在喚起地方與記憶。",
+      "src": "https://en.wikipedia.org/wiki/Richard_Skelton",
+      "src2": "https://thelineofbestfit.com/features/interviews/tlobf-interview-richard-skelton-a-broken-consort-15408",
+      "from": "new",
+      "single": true
+     },
+     {
+      "f": "《Landings》源自他清晨在西彭寧 Anglezarke 荒原的廢棄農舍裡演奏，並把 CD 盒藏在那裡；後來他覺得帶樂器進去是對景色的打擾，便改為不帶樂器去走訪。他在包裝裡放樹枝、赤楊花序等來自那些地方的物件。",
+      "src": "https://thelineofbestfit.com/features/interviews/tlobf-interview-richard-skelton-a-broken-consort-15408",
+      "from": "new",
+      "single": true
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他的口碑靠口耳緩慢累積，早期小量限定版獲 The Wire 與 Blow Up 好評，之後經 Tompkins Square 重發與 Preservation 發行同名專輯，觸及範圍超出私人小版。",
+      "src": "https://thelineofbestfit.com/features/interviews/tlobf-interview-richard-skelton-a-broken-consort-15408",
+      "from": "new",
+      "single": true
+     },
+     {
+      "f": "2011 年他把 Sustain-Release 的錄音全數封存，做成 20 張光碟的箱裝《*SKURA》，往後的音樂與文字改由 Corbel Stone Press 發行。",
+      "src": "https://en.wikipedia.org/wiki/Richard_Skelton",
+      "from": "new",
+      "single": true
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [],
+  "conflicts": [
+   "Wise Music 簡介稱他 2014 年才開始做音樂；LOBF 訪談與維基皆為 2005 年成立廠牌，採 2005，不收 2014"
+  ],
+  "pubIssues": [],
+  "searches": 2,
+  "failedFetches": [],
+  "status": "full",
+  "notes": "確認身分：英國 Richard Skelton，Landings（Sustain-Release 2009）。Louise 去世年 2004、成立廠牌 2005 兩源一致。上線簡介『2004 年起以音樂回應喪痛』與 LOBF『2005 年成立廠牌』略有時間落差，寫作層用『妻子去世後』即可，不寫起始年。維基 wikidata 顯示生年 2000-01-01 為錯值，不用。legacy 無後輩點名，口碑句為單源；Guardian 轉載報導『13 年沒聽過別人的音樂』只讀到搜尋摘要，未收。"
+ },
+ {
+  "key": "robert görl",
+  "name": "Robert Görl",
+  "slots": {
+   "origin": {
+    "status": "bank",
+    "facts": [
+     {
+      "f": "Robert Görl 1955 年 6 月 15 日生於慕尼黑，在孤兒院開始人生；18 歲跟爵士樂手 Freddie Brocksieper 學鼓，1974 年進奧格斯堡 Leopold Mozart 音樂院學古典、1976 年轉到格拉茨大學，同時投入爵士。1978 年中斷學業去倫敦接觸龐克，同年在杜塞道夫認識 Gabi Delgado-López，組成 DAF。",
+      "src": "https://en.wikipedia.org/wiki/Robert_G%C3%B6rl",
+      "src2": "https://www.electronicsound.co.uk/?p=12449",
+      "from": "bank"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "DAF 裡 Görl 負責全部音樂，Delgado 寫詞；電子報導形容那是「懲罰式的 Korg 迪斯可」。Görl 說他們要的是「髒與粗礪」，他歸納為「electronic body music」。",
+      "src": "https://www.electronicsound.co.uk/?p=12449",
+      "from": "new",
+      "single": true
+     },
+     {
+      "f": "1989 年他遭遇嚴重車禍，之後成為佛教徒，赴亞洲修習三年；回來後 1990 年代在慕尼黑的 techno 廠牌 Disko B 發了多張個人專輯與單曲。",
+      "src": "https://en.wikipedia.org/wiki/Robert_G%C3%B6rl",
+      "from": "bank",
+      "single": true
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Görl 說，有些知名音樂人對他說「我們是因為你們才開始做音樂」，並舉 Rammstein 為例。",
+      "src": "https://www.electronicsound.co.uk/?p=12449",
+      "from": "new",
+      "single": true
+     },
+     {
+      "f": "DAF 被媒體稱為 EBM 先驅；Delgado-López 2020 年 3 月 22 日去世（61 歲），由 Görl 對外宣布，兩人當時仍在合作並剛有現場演出。",
+      "src": "https://djmag.com/news/ebm-pioneer-dafs-gabi-delgado-lopez-has-died-aged-61",
+      "src2": "https://faroutmagazine.co.uk/gabi-delgado-lopez-daf-died-cause/",
+      "from": "new"
+     },
+     {
+      "f": "1982 年 DAF 以《Alles ist Gut》獲德國唱片獎（Deutscher Schallplattenpreis）；1981 年的這張讓他們打進國際。",
+      "src": "https://en.wikipedia.org/wiki/Robert_G%C3%B6rl",
+      "from": "bank",
+      "single": true
+     }
+    ]
+   },
+   "era": {
+    "status": "bank",
+    "facts": [
+     {
+      "f": "DAF 在 1983 年處於高峰時解散；Görl 1984 年發第一張個人專輯。Delgado 去世後，Görl 2021 年用 DAF 八〇年代未發表的聲音序列做成《Nur Noch Einer》。",
+      "src": "https://en.wikipedia.org/wiki/Robert_G%C3%B6rl",
+      "src2": "https://djmag.com/news/ebm-pioneer-dafs-gabi-delgado-lopez-has-died-aged-61",
+      "from": "bank"
+     }
+    ]
+   }
+  },
+  "milestones": [],
+  "conflicts": [],
+  "pubIssues": [],
+  "searches": 3,
+  "failedFetches": [],
+  "status": "full",
+  "notes": "確認身分：DAF 鼓手 Robert Görl，Night Full of Tension 1984。電子報導稱 John Peel 把 DAF 叫「techno 教父」，找不到第二源，未收進 facts（單源引語）。獎項『Deutscher Schallplattenpreis 1982』僅維基單源，屬高風險，寫作層建議不寫或降級。DAF 解散年（1983 vs 其他）勿寫。DJ Mag 與 Far Out 只讀到搜尋摘要，標題與摘要一致。"
+ },
+ {
+  "key": "robin guthrie & harold budd",
+  "name": "Robin Guthrie & Harold Budd",
+  "slots": {
+   "origin": {
+    "status": "bank",
+    "facts": [
+     {
+      "f": "Harold Budd 生於洛杉磯，13 歲起在莫哈維沙漠邊的 Victorville 長大，少年時就在加州的爵士酒吧演出。",
+      "src": "https://thequietus.com/?p=29349",
+      "src2": "https://en.wikipedia.org/wiki/Harold_Budd",
+      "from": "new"
+     },
+     {
+      "f": "Robin Guthrie 在蘇格蘭 Grangemouth 長大，家裡有樂器，但沒受過正規音樂訓練；受電工訓練、迷電子，用破音盒與效果器為吉他找另一種聲音，1980 年與 Will Heggie、Elizabeth Fraser 共創 Cocteau Twins。",
+      "src": "https://en.wikipedia.org/wiki/Robin_Guthrie",
+      "from": "bank",
+      "single": true
+     },
+     {
+      "f": "Budd 1986 年搬到英國住了五年，與 Cocteau Twins 的 Guthrie 結為朋友；當年 4AD 發行《The Moon and the Melodies》，由 Budd 與 Cocteau Twins 成員共同掛名。",
+      "src": "https://thequietus.com/?p=29349",
+      "src2": "https://en.wikipedia.org/wiki/The_Moon_and_the_Melodies",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Budd 發展出緩慢、延音綿長的「軟踏板」鋼琴風格；他拒絕被貼上 ambient 標籤，說自己的作品「其實毫無意義」。他與 Brian Eno 合作過《Ambient 2: The Plateaux of Mirror》（1980）、《The Pearl》（1984），Eno 也製作了他的《The Pavilion of Dreams》（1978）。",
+      "src": "https://thequietus.com/?p=29349",
+      "src2": "https://en.wikipedia.org/wiki/Harold_Budd",
+      "from": "new"
+     },
+     {
+      "f": "2007 年的《After the Night Falls》與《Before the Day Breaks》，兩人共同作曲、共同製作；與電影《Mysterious Skin》配樂一樣，是以處理過的吉他與鋼琴構成的緩慢飄移樂段。",
+      "src": "https://en.wikipedia.org/wiki/Robin_Guthrie",
+      "from": "new",
+      "single": true
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Guthrie 的吉他以大量效果器與殘響塑形，他說大音牆式的製作受 Phil Spector 影響，維基將他列為夢幻流行（dream pop）樂團 Cocteau Twins 的共同創辦人。",
+      "src": "https://en.wikipedia.org/wiki/Robin_Guthrie",
+      "from": "bank",
+      "single": true
+     },
+     {
+      "f": "Budd 2020 年 12 月過世（84 歲），一般報導稱死於 COVID-19 併發症，由 Guthrie 在社群上證實；Cocteau Twins 稱他是「鋼琴的詩人」，Guthrie 說自己感到「empty, shattered, lost」。他最後的專輯是與 Guthrie 合作的《Another Flower》，在他去世前不久發行。",
+      "src": "https://thequietus.com/?p=29349",
+      "src2": "https://www.thewrap.com/harold-budd-ambient-composer-and-cocteau-twins-collaborator-dies-at-84/amp/",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [],
+  "conflicts": [
+   "Quietus 稱 Budd 死於 12 月 7 日且未公布死因；TheWrap（搜尋摘要）稱死於 COVID-19，兩源有出入，facts 的『報導稱』已保守寫，寫作層建議不寫死因"
+  ],
+  "pubIssues": [],
+  "searches": 3,
+  "failedFetches": [],
+  "status": "full",
+  "notes": "這是合作名義：兩位各自成名，卡池僅 After the Night Falls（2007，Darla）。上線簡介『兩張同日問世』『曲目一一對應』未驗證。『1986 年 The Moon and the Melodies』發行年有 1985 錄音／1986 發行之別，只寫 1986 發行。Budd 生年 1936 僅維基單源（與 Quietus 84 歲吻合），寫作層建議用『84 歲』不另寫生年。TheWrap 只讀到搜尋摘要。legacy 無後輩點名與榮譽。"
+ },
+ {
+  "key": "rose kallal",
+  "name": "Rose Kallal",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Rose Kallal 是加拿大人，現居紐約的影音藝術家；1980 年代在多倫多讀藝術學校，從繪畫轉向電影、錄影與攝影，其後在紐約的一年學業因移民問題中斷，她開始想要更即時的創作方式。",
+      "src": "https://thequietus.com/?p=24578",
+      "from": "new",
+      "single": true
+     },
+     {
+      "f": "她自學吉他與鼓，1990 年代中期買下第一台合成器，早期玩即興樂團並偏好做配樂；2009 年起彈模組合成器，2006 年起確立投影 16mm 影片迴圈加現場聲音的表演形式。",
+      "src": "https://thequietus.com/?p=24578",
+      "from": "new",
+      "single": true
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "她把 16mm 影片迴圈、類比錄影回授與電腦動畫結合，常用多台放映機；偏愛類比流程的觸感，著迷於非線性系統、迴圈，以及光、液體、蒸氣這類元素性的意象，並說現實「本質上很循環」。",
+      "src": "https://thequietus.com/?p=24578",
+      "from": "new",
+      "single": true
+     },
+     {
+      "f": "The Quietus 把她的專輯形容為反烏托邦的合成器配樂，她自己說科幻、特別是反烏托邦作品是長期的影響。",
+      "src": "https://thequietus.com/?p=24578",
+      "from": "new",
+      "single": true
+     }
+    ]
+   },
+   "legacy": {
+    "status": "none",
+    "facts": []
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [],
+  "conflicts": [],
+  "pubIssues": [
+   {
+    "album": "Perseus",
+    "claim": "她是布魯克林的影像與聲音藝術家",
+    "problem": "The Quietus（2018）與 Lyles & King 只寫『紐約』，找不到『布魯克林』的出處；建議改『紐約』",
+    "src": "https://thequietus.com/?p=24578"
+   }
+  ],
+  "searches": 2,
+  "failedFetches": [],
+  "status": "thin",
+  "notes": "確認身分：We Can Elude Control 的 Rose Kallal，Perseus 2017。Forced Exposure 稱 Perseus 是她首張專輯（搜尋摘要，單源，不收）。Lyles & King 出生年 1965（搜尋摘要，單源，不收）。事實庫 Vermillion Vortex 2011 單曲條目不重複。legacy 無可查共識，寫作層可只寫兩格。"
+ },
+ {
+  "key": "salami rose joe louis",
+  "name": "Salami Rose Joe Louis",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "本名 Lindsay Olsen，在聖地牙哥都會區長大，就讀 UC Santa Cruz 的地球與行星科學，主修海洋化學；全職做音樂前在舊金山灣區的海洋學實驗室當研究員。",
+      "src": "https://en.wikipedia.org/wiki/Salami_Rose_Joe_Louis",
+      "src2": "https://rob-hakimian.squarespace.com/features/2019/9/3/salami-rose-joe-louis-interview-the-recent-brainfeeder-signing-unpacks-the-8-dimensions-of-her-new-sci-fi-concept-album",
+      "from": "new"
+     },
+     {
+      "f": "藝名『Salami Rose』是姊姊在她還沒出生前、約三歲時取的，因為姊姊愛吃薩拉米也愛玫瑰；『Joe Louis』是後來朋友加的，與拳擊無關。",
+      "src": "https://rob-hakimian.squarespace.com/features/2019/9/3/salami-rose-joe-louis-interview-the-recent-brainfeeder-signing-unpacks-the-8-dimensions-of-her-new-sci-fi-concept-album",
+      "from": "new",
+      "single": true
+     },
+     {
+      "f": "她在奧克蘭的多媒體藝術與音樂集體 Smart Bomb 活動，也在灣區的多個樂團裡演奏，包括八人實驗樂隊 Science Band；她用 MV-8800 做的音樂連團員都覺得古怪，起初只留給自己，是友人經營的小廠牌 Hot Record Societe 勸她發卡帶，才有首作《Son of a Sauce!》與《Zlaty Sauce Nephew》。",
+      "src": "https://rob-hakimian.squarespace.com/features/2019/9/3/salami-rose-joe-louis-interview-the-recent-brainfeeder-signing-unpacks-the-8-dimensions-of-her-new-sci-fi-concept-album",
+      "src2": "https://en.wikipedia.org/wiki/Salami_Rose_Joe_Louis",
+      "from": "new",
+      "single": true
+     }
+    ]
+   },
+   "sound": {
+    "status": "bank",
+    "facts": [
+     {
+      "f": "作品被歸為電子、爵士與臥室流行（bedroom pop）；她自己列出的影響包含 Stereolab、Shuggie Otis 與 R. Stevie Moore，並用 Roland MV-8800 作曲製作。",
+      "src": "https://en.wikipedia.org/wiki/Salami_Rose_Joe_Louis",
+      "from": "bank",
+      "single": true
+     },
+     {
+      "f": "她說自己從 2014 年起唯一的 DAW 是 MV-8800，人聲用一支不到百美元的動圈麥克風直錄並疊錄雙軌，microKorg 在《Zdenka 2080》裡用得很重。",
+      "src": "https://synthhistory.com/post/salami-rose-joe-louis-recommends",
+      "from": "bank",
+      "single": true
+     },
+     {
+      "f": "在實驗室盯著海水顯微影像數小時的經驗，後來成了專輯裡矽藻意象的靈感；她的科幻啟蒙包括 Octavia Butler、Gene Wolfe 的小說。",
+      "src": "https://rob-hakimian.squarespace.com/features/2019/9/3/salami-rose-joe-louis-interview-the-recent-brainfeeder-signing-unpacks-the-8-dimensions-of-her-new-sci-fi-concept-album",
+      "from": "new",
+      "single": true
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Brainfeeder 的工作人員在 SoundCloud 追蹤她，首次個人演出後私訊她，保持聯絡多年後才簽她；她說「Flying Lotus 是最初啟發我做 beats 的人」。她曾為 Flying Lotus、Toro y Moi、tUnE-yArDs、Clairo 擔任暖場，2022 年客串 Toro y Moi《Mahal》人聲。",
+      "src": "https://rob-hakimian.squarespace.com/features/2019/9/3/salami-rose-joe-louis-interview-the-recent-brainfeeder-signing-unpacks-the-8-dimensions-of-her-new-sci-fi-concept-album",
+      "src2": "https://en.wikipedia.org/wiki/Salami_Rose_Joe_Louis",
+      "from": "new",
+      "single": true
+     }
+    ]
+   },
+   "era": {
+    "status": "bank",
+    "facts": [
+     {
+      "f": "2019 年簽 Brainfeeder，《Zdenka 2080》是廠牌首作；之後《Chapters of Zdenka》（2020）、《Akousmatikous》（2023），2025 年《Lorings》。",
+      "src": "https://en.wikipedia.org/wiki/Salami_Rose_Joe_Louis",
+      "from": "bank",
+      "single": true
+     }
+    ]
+   }
+  },
+  "milestones": [],
+  "conflicts": [],
+  "pubIssues": [],
+  "searches": 2,
+  "failedFetches": [],
+  "status": "full",
+  "notes": "確認身分：Brainfeeder 的 Lindsay Olsen，與卡池一致。Hakimian 訪談為搜尋摘要加全頁讀到。Wikipedia『專輯被評論稱有科幻敘事與前衛影響』可用。上線簡介『專攻海洋化學』與維基、訪談一致；『22 首約 43 分鐘』『一台 MV-8800』未重驗。legacy 為暖場與合作，非共識評價，寫作層不宜誇大。"
+ },
+ {
+  "key": "sally dige",
+  "name": "Sally Dige",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Sally Dige 是加拿大人，現居柏林的藝術家、設計師與表演者，創作跨視覺藝術、劇場與設計，常穿自製服裝演出、在不同人格角色間切換。",
+      "src": "https://www.theransomnote.com/?p=12447",
+      "src2": "https://www.jpc.de/jpcng/poprock/detail/-/art/sally-dige-hard-to-please/hnum/7228074",
+      "from": "new",
+      "single": true
+     },
+     {
+      "f": "首張專輯《Hard to Please》歷時近兩年，在家中錄製，常在清晨，2015 年 5 月 11 日經 Night School Records 發行。",
+      "src": "https://www.theransomnote.com/?p=12447",
+      "from": "new",
+      "single": true
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "The Ransom Note 稱這張是「Italo-Disco Pop」，範圍從早期 Madonna 式流行到較陰鬱的浪漫歌與適合跳舞的電子曲；歌談身分、人有許多層，露出她較脆弱的一面。",
+      "src": "https://www.theransomnote.com/?p=12447",
+      "src2": "https://www.jpc.de/jpcng/poprock/detail/-/art/sally-dige-hard-to-please/hnum/7228074",
+      "from": "new",
+      "single": true
+     }
+    ]
+   },
+   "legacy": {
+    "status": "none",
+    "facts": []
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [],
+  "conflicts": [],
+  "pubIssues": [],
+  "searches": 2,
+  "failedFetches": [],
+  "status": "thin",
+  "notes": "確認身分：Night School Records 的 Sally Dige，Hard to Please 2015。jpc 為零售頁（商品頁不算可靠來源），僅作輔助；Ransom Note 為音樂媒體，主要依據。Ransom Note 文章為發行前預告。Mystic Sons 評 6/10 為單一樂評，不收。legacy 無。"
+ },
+ {
+  "key": "sephiroth",
+  "name": "Sephiroth",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Sephiroth 是瑞典人 Ulf Söderberg 的 dark ambient 計畫。他在利德雪平（Lidköping）附近的鄉間長大，職業是替博物館、電影與裝置做聲音設計的音響設計師，曾在斯科夫德大學教七年音響製作；也以本名在自己的 Slow Moon 廠牌發過四張專輯。",
+      "src": "https://paragraph.com/@blackstonesanctuarypm.me/scandinavian-heritage-an-interview-with-ulf-soderberg",
+      "from": "new",
+      "single": true
+     },
+     {
+      "f": "他的興趣與題材來自北歐自然、古諾斯神話（散文埃達、Völuspá）、青銅器時代岩刻與陰鬱神祕的文學；早年受 John Bauer、Hans Arnold 的插畫影響，後來聽 Gary Numan、John Foxx、Peter Gabriel，以及 Graeme Revell、Lustmord。",
+      "src": "https://paragraph.com/@blackstonesanctuarypm.me/scandinavian-heritage-an-interview-with-ulf-soderberg",
+      "from": "new",
+      "single": true
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "《Cathedron》把 dark ambient 與部落工業（tribal industrial）揉在一起，鋪陳緩慢，用較尖銳的工業音色當標點；田野錄音來自開羅、冰島與北歐荒野。",
+      "src": "https://www.musiquemachine.com/reviews/sephiroth-cathedron-11029",
+      "src2": "https://cycliclaw.com/music/sephiroth-cathedron-cd-/-2lp-/-dl-226th-cycle",
+      "from": "new"
+     },
+     {
+      "f": "Söderberg 的方法是田野錄音（常在清晨避開飛機噪音），用 Kyma 重新加工，並用自製的原始樂器；他看重氣氛與不完美勝過技術修飾，說「Learn how to listen」。",
+      "src": "https://paragraph.com/@blackstonesanctuarypm.me/scandinavian-heritage-an-interview-with-ulf-soderberg",
+      "from": "new",
+      "single": true
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "2025 年 Cyclic Law 重發《Cathedron》（CD／雙 LP，限量），發行方稱它是 dark ambient 與部落工業的里程碑；MusiqueMachine 的重發評論給五星、稱它是「傳奇」之作，二十多年後仍不顯老。",
+      "src": "https://cycliclaw.com/music/sephiroth-cathedron-cd-/-2lp-/-dl-226th-cycle",
+      "src2": "https://www.musiquemachine.com/reviews/sephiroth-cathedron-11029",
+      "from": "new",
+      "single": true
+     },
+     {
+      "f": "Söderberg 2017 年在斯德哥爾摩的 Cold Meat Industry 30 週年活動演出，之後也出現在 CMI 35 週年；他說這個計畫「就我而言隨 CMI 一起淡去」。",
+      "src": "https://paragraph.com/@blackstonesanctuarypm.me/scandinavian-heritage-an-interview-with-ulf-soderberg",
+      "from": "new",
+      "single": true
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [],
+  "conflicts": [
+   "上線簡介寫『1990 年 Ulf Söderberg 創立 Sephiroth』；Cyclic Law 只寫 early 90s、其他來源 1990 只見單一出處；本層不收創立年"
+  ],
+  "pubIssues": [
+   {
+    "album": "Cathedron",
+    "claim": "1990 年，Ulf Söderberg 創立 Sephiroth",
+    "problem": "補查僅見 Cyclic Law『early 90s』與單一來源 1990，未找到兩源確認；Cyclic Law 另說《Cathedron》是他以 Sephiroth 名義的首張專輯，且在此之前已有兩張個人專輯，需注意『1990 創立』與此時序是否成立",
+    "src": "https://cycliclaw.com/music/sephiroth-cathedron-cd-/-2lp-/-dl-226th-cycle"
+   }
+  ],
+  "searches": 4,
+  "failedFetches": [
+   "https://releasemagazine.net/Onrecord/orsephirothc.htm"
+  ],
+  "status": "full",
+  "notes": "⚠ 同名：維基 Sephiroth 預抓條目是 Final Fantasy 角色，與藝人無關，已忽略；身分依卡池 Cathedron（CMI 1999）確認為 Ulf Söderberg。Cyclic Law 頁與 MusiqueMachine 評論的『限量 300 份』等細節為發行方資訊，不收。事實庫『Graeme Revell、Lustmord、Nurse With Wound』來源 Discogs 簡介，Söderberg 訪談只確認 Revell 與 Lustmord，未提 Nurse With Wound，寫作層只寫前兩者。Cyclic Law 為發行方，與評論非完全獨立；legacy 屬重發評價，無後輩點名。"
+ }
+]
