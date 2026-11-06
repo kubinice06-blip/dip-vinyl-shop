@@ -17,3 +17,16 @@
   - 同人超量（池中＋本線＋並行卡單一起算，本線每位最多一張）：Arms and Sleepers《FIND THE RIGHT PLACE》《former kingdoms》（留聽眾最多的《Swim Team》；並行 ml74、ml78 另有兩張）、AES DANA《Inks》（留《Perimeters》）、Halou《Brutalism For Lovers》（留 1999 首張《Sans Soucie》）、Zane Alexander《Midrealm》（md45 留《A Time Like This》）、Bluetech《Phoenix Rising》（池中已三張、並行 ml79 另兩張）。
 - **保留但標風險的**（判不出來的留，交研究與評分）：Earthen Sea《Mirage》（md39 研究：每分鐘 117–123 拍 dub techno 大鼓——照店主「慢 dub techno 仍算靜」留）、Ness《Planet D》（標籤 deep／hypnotic techno，鼓型無來源，研究層查）、Symbolico（psytrance／psytrap 標籤）、Khotin《New Tab》（ambient house）、AgonyOST、Dillard（future garage／dubstep）、Chris Imler（鼓手、kraut）。逐張寫在卡單 `curatorRisk`。
 - 同人在池：Puma Blue（2）、Christ.（1）、AES DANA（1）、Martina Topley-Bird（1）、Arms and Sleepers（1）、Khotin（2）、Wax Tailor（2）、Halou（2）、Odd Nosdam（2）、Disparition（1）；本線各只加一張。並行卡單同人（Ochre ml75／77／79、Khotin ml74／81、Odd Nosdam ml74／75／79、Wax Tailor ml76 等）各工作階段自行勻，藝人介紹以先上 main 的為準。
+
+## 研究 c 組（沿用稿補件）
+
+- 25021 Christ.《Blue Shift Emissions》：補鼓型 fact（IDM 碎拍，Bandcamp 標 idm／downtempo／lofi，無 BPM 來源）；第三輪重判不建議汰（判輕判暖不汰）。
+- 25022 AES DANA《Perimeters》：已有鼓型 fact；notes 加重判：碎裂 downtempo 鼓為主、中段 prog-psy 脈動，不建議汰（風險交評分）。
+- 25023 Public Memory《Elegiac Beat》：補鼓型 fact（電子鼓機混有機打擊，krautwave／trip-hop 標籤）；不建議汰。
+- 25024 Now Always Fades《Coalesce》：已有鼓型；重判慢 MPC 鼓／鬆散 breakbeat，不建議汰。
+- 25025 Locust《Spectral+》：已有鼓型（反拍鼓點、穩定脈動）；不建議汰。
+- 25026 Earthen Sea《Mirage》：已有鼓型（約 120 BPM dub techno 大鼓，時隱時現）；依「慢 dub techno 仍算靜」不建議汰，風險寫明。
+- 25027 Monophona《The Spy》：已有鼓型（真鼓手＋碎拍 trip hop）；不建議汰。
+- 25028 Ness《Planet D》：補「鼓型不明」fact（Bandcamp 標 dub／deep／hypnotic techno，7 首 5–9 分鐘；WebSearch 與 MB 皆無四拍底鼓來源）；依判準不建議汰，待主線聽確認，風險中。
+- 25029 Disparition《Granicha》：補鼓型 fact（Bernstein programming＋Tim Monaghan 打擊樂 5 首，非舞池）；不建議汰。
+- 25030 本小節 WebSearch 用 3 次（兩次無關結果），餘靠 Bandcamp ld+json 與 MB 標籤。
