@@ -2,7 +2,7 @@
  "v": 1,
  "per": 40,
  "roster": "roster-20260929.json",
- "updatedAt": "2026-11-06T11:46:28.437Z",
+ "updatedAt": "2026-11-06T12:15:41.861Z",
  "batches": [
   {
    "batch": "ar-a-001",
@@ -17838,8 +17838,10 @@
     "tryphème",
     "smigonaut"
    ],
-   "state": "cut",
-   "note": "情緒薄格策展線（Bandcamp downtempo 第三輪有鼓名單）add-20261106-ml76 上架卡缺介紹的藝人（ALBUM_ONBOARDING §11；30 位；名冊 batch-progress/artist-intro/roster-ml76-ar-d-809.json）"
+   "state": "published",
+   "note": "情緒薄格策展線（Bandcamp downtempo 第三輪有鼓名單）add-20261106-ml76 上架卡缺介紹的藝人（ALBUM_ONBOARDING §11；30 位；名冊 batch-progress/artist-intro/roster-ml76-ar-d-809.json）",
+   "reviewFixes": 5,
+   "reviewNote": "主線逐位審 28 位（2026-11-06），不寫 Travelling Day（無聲音事實）、Erik Jackson（只有本人 Bandcamp 一源）。改 5 處：Smidley 刪單源評價與 2026 年報導的休團事（截止日後、未核實）並補國籍；Moonchild 刪維基單源的 Stevie Wonder 讚賞；Degiheugi 刪單源職業；Govinda「EP」改「專輯」。詳 batch-progress/artist-intro/ar-d-rulings-ml76.md。"
   },
   {
    "batch": "ar-d-810",
@@ -17874,8 +17876,10 @@
     "high tides",
     "lal"
    ],
-   "state": "cut",
-   "note": "情緒薄格策展線（Bandcamp downtempo 第三輪有鼓名單）add-20261106-ml77 上架卡缺介紹的藝人（ALBUM_ONBOARDING §11；22 位；名冊 batch-progress/artist-intro/roster-ml77-ar-d-810.json）"
+   "state": "published",
+   "note": "情緒薄格策展線（Bandcamp downtempo 第三輪有鼓名單）add-20261106-ml77 上架卡缺介紹的藝人（ALBUM_ONBOARDING §11；22 位；名冊 batch-progress/artist-intro/roster-ml77-ar-d-810.json）",
+   "reviewFixes": 4,
+   "reviewNote": "主線逐位審 21 位（2026-11-06），不寫 Dr. Toast（只有本人 Last.fm 自述一源）。改 3 處：Robot Koch 刪在世者獎項；Anthony Naples 刪評價句；Pan Amsterdam 改寫 Iggy Pop 引語。詳 batch-progress/artist-intro/ar-d-rulings-ml76.md。"
   }
  ]
 }
