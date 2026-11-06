@@ -111,3 +111,17 @@
 - **24177** n-gram 自查：本批 hook 間中文 4-gram 0；對 ml68–72／md39–43 已交 hook 掃到一條「撐起一整」（MindSpring 初稿對 md42 Melanie De Biasio），已改寫，複掃 0。hook 與 note 無逐字重複句。媒體名與榜名一律不進 hook／note（Krusseldorf 寫「樂評說」）。
 - **24178** 正面表述：Hawgood「而非完全痊癒」被 crossgroup 標校對痕跡風險，改成只寫「抵達與接納」。逝者／健康題材：Veryan 父親過世、Hawgood PTSD 復健皆標「語氣克制」，屬與作品綁定的背景。時序：Delerium〈Silence〉1999 單曲、Krusseldorf 2018 重發皆標時序（作品流傳）。VANITAS 的 slushwave 慣例格（研究稿標推論）只指派「屬 vaporwave 分支」這一句。
 - **24179** 腳本：`node qa-batch.mjs hooks add-20261106-ml73` 全部通過；`node chk-hook-crossgroup.mjs add-20261106-ml73` 全部通過（hook 加權 15.5–24，note 154–228）。
+
+## 寫作層（writer-1；24181–24190）
+- **24181** 交件：`desc-tools/batches/output/add-20261106-ml73-out-1.json` 9 張（full 5：CBL 217、Delerium 232、Krusseldorf 223、Veryan 223、Hawgood 181；thin 4：Photon 175、MindSpring 157、Macroblank 156、VANITAS 152）。初稿超標 3 張（CBL 253、Delerium 245、Krusseldorf 242），整格捨去：CBL 第二句的團名（卡片標題已顯示）與「一起／正式」、Delerium「兩年後的」、Krusseldorf 第二句改以「Krusseldorf 這張」領句；Hawgood 初稿 179 掉出 full 下限，把「抵達與接納」拆成兩個短句補回。
+- **24182** 腳本：`qa-batch out` 全部通過、標記 0；`qa-check-research` 通過；`fix-spacing` 只報 VANITAS命死 一處（要在「VANITAS」與「命死」之間補空格）——那是本卡藝人欄原文，照 writer-base「本卡藝人名照卡單逐字」不套用 `--write`。轉述引導詞（據）grep 0；媒體名與榜名 0。
+- **24183** 第二句領句全照鉤子層 24175；「日」後一字照 24176（CBL 日首、Delerium 日由、Photon 日自、MindSpring 日編、VANITAS 日放、Veryan 日在、Hawgood 日交；Krusseldorf 只到月、Macroblank 只寫年）。
+- **24184** 自掃 han() 4-gram（本檔＋ml68–72、md40–42 已交 out）：本檔內 2 次以上 0 條。途中拆掉：`環境音樂`×2（CBL 改「改做 ambient」，Hawgood 的「環境音樂人」是指派句型照留）、`專輯年月日`×2（Delerium 日期句改由「教堂。」接、Veryan 改「整張」領頭）、`的合成器`×2（Photon 改「這類合成器」）、`這張專輯`×2（Macroblank 改「這一張走 vaporwave」）、`發行廠方`×2（Hawgood 去掉「發行」）。跨批另拆：`首加起來`、`長約分鐘`、`長達分秒`、`在年月日`、`作品年月`。剩 `與組成的`（CBL 指派句型「X 與 Y 組成的」，對 md40 2814、ml70 Desert Dwellers）與跨批日期殘片（`年月日由／自／在／放／交／首`，日後字由鉤子層配死、各批互撞屬結構性）未動。
+- **24185** 第二句不複述 hook：CBL 原稿第二句重寫「姊姊帶回」，改成點名那張唱片是《Orgship》；Delerium 不重寫「比買授權便宜」，只補錄音地點西溫哥華；VANITAS 不重寫「2019 年初完成的遺失專輯」，改寫附詩；Veryan 不重寫「12 首」，只寫全盤約 65 分鐘；Hawgood 不重寫賣設備，接「當時正在接受 PTSD 的復健與諮商」。
+- **24186** 性別：Photon、Macroblank 研究稿無性別，正文不用「他／她」（Photon 用「整張想捕捉」）；Veryan 依 facts 用「她」；Hawgood、Krusseldorf（Simon Heath）用「他」。
+- **24187** Macroblank 的「留言者說它輕鬆」寫成「聽眾留言裡，它被形容成輕鬆、適合雨天開車的音樂」（被動，不具名）；desc4 兩張日文盤名、曲名照原文（〈寒い夏の夜〉〈悲嘆〉〈夜の森の湖〉）。
+
+## 主線審稿（24191；2026-11-06）
+- **24191** 逐張審 9 張（全文印出，逐句對研究稿 a／c／d／e；抽核 CBL 的 Solar Quest《Orgship》與 Hedberg 姊姊、Delerium 30 人合唱團進西溫哥華教堂比取樣授權便宜（維基引 Drop-D 訪談）、Krusseldorf 第一張交給以色列 Aleph Zero（Igloo）、Ian Hawgood PTSD 復健期（quiet details 藝人自述）、Veryan 太極招式曲名與父親過世（廠牌頁），皆有出處）。改 1 張 1 處（`desc-override.json`），研究／hooks／input 不需同步（只動措辭）：
+  - `Macroblank|絶望に負けた`：「作品多交給 Aloe City 系廠牌的 Macroblank，」→「Macroblank 的作品多交給 Aloe City 系廠牌，」（原句主詞錯置，讀成廠牌名叫 Macroblank）。
+- 媒體名、榜單名次、「據說／據傳」全批 0。`fix-spacing` 只報 VANITAS命死 藝人名內部，照卡池掛名不動。

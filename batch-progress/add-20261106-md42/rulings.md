@@ -88,3 +88,16 @@
 - **24255** 第二句句型配表：Funki「Ninja Tune 在 2002 年發行」／Melanie「這是…第三張…」／Miktek「寫它的是…」／Æthereal「…由 Ascendant 自己創立」／Cell「…用 Cell 這個名字…」／ASKII「…出身的 ASKII 住在…」／Particle「…是 Ascendant 兩人之一」／State Azure「Bandcamp 上的發行已超過 90 個」。引入法：Melanie＝她（第三張錄音室專輯）；Ascendant＝他們（Æthereal 廠牌關係、Particle 身分＝母帶工程師）；Funki＝廠牌；Miktek＝生地＋本名；Cell＝本名＋化名；ASKII＝出身；State Azure＝稱「這個計畫」。hook 四型：懸疑 Melanie（note 交代收尾）；斷言 Æthereal、Cell；場景 Funki、ASKII、Particle；人物定調 Miktek、State Azure。
 - **24256** 「日」後一字：Melanie 日由、Miktek 日問、Æthereal 日在、Cell 日數、ASKII 日登、Particle 日推、State Azure 日自；Funki 只寫年（兩源日期不同）。媒體名一律不進 hook／note（樂評、聽者泛稱）。Melanie note 的「沒有光、沒有暖氣」是事實內容，非校對痕跡。
 - **24257** 自查：hook 間中文 4-gram 0；hook 對他張 note 0；hook 對自身 note 只剩專名／樂器殘片（悶音小號、模組合成、冰封山谷、個人專輯）；開頭前四字與 md39–41、md43、ml7x 已有 hook 不撞。`qa-batch hooks` 全部通過；`chk-hook-crossgroup` 全部通過（只報不擋 1：Melanie「沒有」，屬內容）。
+
+## 寫作層（writer-1，24261–24270）
+- **24261** 交件：`desc-tools/batches/output/add-20261106-md42-out-1.json` 8 張（full 7：209–229；thin 1：State Azure 165）。逐張：Funki Porcini 213、Melanie De Biasio 229、Miktek 227、Æthereal Code 218、Cell 209、ASKII 227、Particle Horizon 222、State Azure 165。初稿 0 張超標（Miktek 初稿 240 貼上限，砍「除了 cold wave」子句）。`qa-batch out`、`qa-check-research`、`fix-spacing` 皆 0 處；「據」「也就是」grep 0。
+- **24262** 第二句句型與「日」後一字全照 24255／24256；Funki 只寫年。日期前一字逐張配開，本檔 han() 4-gram 跨張 0。對 2026-11 其他 out 檔另拆：「首加起來約」「之間來回」「唱片在年」「合計約分」「分秒到分」「之一這張」「自行發行」「是年月日」；殘留的「第三張錄音室專輯」「年月日由／在／推」是鉤子層指派句型，未動。
+- **24263** 媒體名與媒體榜單名次整句不寫：Funki 只寫「樂評聽成帶睏意的冬日漂流」、Cell 寫「樂評把〈Auxin〉形容成氣凝膠般的冰冷」，皆不具名；無榜單。Melanie 的鼓／貝斯／單音鋼琴照 note 寫成陳述句，不掛聽者來源。
+- **24264** Ascendant 分軸：《Æthereal Code》帶廠牌（Synphaera 自創、SYN01）＋Source Trilogy 第二張（全批唯一提三部曲）；《Particle Horizon》帶 Don Tyler 母帶＋調色盤＋曲長，不提系列。兩張皆不列 Chris Bryant。
+- **24265** 開頭兩句交代身分：Cell 的前兩句只有人名＋廠牌（note 未給樂種），樂種靠第三、四句的底鼓／酥脆質地補；Miktek 靠 hook 的 cold wave；可逆。
+
+## 主線審稿（24271；2026-11-06）
+- **24271** 逐張審 8 張（全文印出，逐句對研究稿 a–e；抽核 Funki Porcini 倫敦人（維基）、Lilies 第三張錄音室專輯與 SM-58（維基、Bandcamp 自述）、Miktek 希臘米蒂利尼（Ultimae Bandcamp credits）、Ascendant 兩人含母帶工程師 Don Tyler 與 SYN01／SYN10（MB、Synphaera Bandcamp）、State Azure 英國南岸與 CC BY 4.0（Bandcamp），皆有出處）。改 1 張 1 處（`desc-override.json`），研究／hooks／input 不需同步：
+  - `Ascendant|Æthereal Code`：「那家廠牌叫 Synphaera，是洛杉磯的獨立電子氛圍廠牌，2015 年由 Ascendant 自己創立。」→「那家廠牌叫 Synphaera，是 2015 年在洛杉磯成立的獨立電子氛圍廠牌。」（與 hook「自己開了廠牌」重複）。
+- Cell 前兩句只交代人名與廠牌（寫作 24265 提請）：Ultimae 為 ambient／downtempo 廠牌、第三句即寫節拍與質地，判可接受，不改。
+- 媒體名、榜單名次、「據說／據傳」全批 0。
