@@ -15,3 +15,14 @@
   6. Eivør：刪「據說這份榮譽通常只給冰島藝人」（轉述、無第二源）。
 - 其餘逐位審過未改：Rituals of Mine 的父親輕生、摯友溺逝有 Grammy.com 與 Bandcamp 兩源，照收（題材無禁區、語氣克制）。
 - 上線 16 位（full 6：CYNE、Potatohead People、Entheogenic、Yu Su、Lee Scott、Eivør；thin 10）。
+
+## ar-d-814
+- 寫作交件 18 位、不寫 10（soft siren、Car Culture、Quok、MONKYMAN、Project Lazarus、Pandrezz：身世或聲音缺格，過不了 thin 門檻；GENDEMA：國籍兩說；Huerta、ALBA、Scott Campbell：來源只有 1 條，Scott Campbell 另有同名高風險）。
+- **主線撤寫 1**：RYKARD（補洞稿只有一個網址，寫作層補的第二源是 MB 搜尋 API 查詢網址，不算來源）。
+- **審稿改 12 位**：
+  1. Gnarls Barkley：刪「兩人據說都出身亞特蘭大的嘻哈圈」（Danger Mouse 出身紐約白原、在喬治亞大學所在的 Athens 起步，此句不實）。
+  2. C Y G N：刪「據說從 SoundCloud『黃金時期』的製作人圈起家」（廠牌單源）。
+  3. Tor、DEGIHEUGI、Crookram、JOE BEATS、Session Victim、downstairs J、Sephira、Klaada：拿掉「據說／據介紹／據廠牌介紹／據其自述」等轉述引導詞，改直述（事實本身有兩源或為本人自述）。
+  4. CharlestheFirst、Zero Cult：src 刪 MB 搜尋 API 網址（仍各有 2 條以上真來源）。
+- 其餘逐位審過未改：CharlestheFirst 只寫過世年份、得年與同行悼念，不寫死因與現場細節。
+- 上線 17 位（full 3：Tor、Gnarls Barkley、JOE BEATS；thin 14）。
