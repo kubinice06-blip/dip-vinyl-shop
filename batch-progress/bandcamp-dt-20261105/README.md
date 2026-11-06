@@ -23,3 +23,9 @@
 店主：「先做最遠的」。預估落格離邊界遠（恍惚 x≤2.7、y≥0.8、z≥0.3；頹靡 x≤2.7、y≥0.8、z≤−0.3）的 289 張，店主勾「不要」0 張。依收聽人數輪流分配成六批：
 恍惚 `pick-ml68.json` 50、`pick-ml69.json` 49、`pick-ml70.json` 49；頹靡 `pick-md39.json` 47、`pick-md40.json` 47、`pick-md41.json` 47。
 條號：ml68 23481、ml69 23561、ml70 23641、md39 23721、md40 23801、md41 23881。藝人介紹批號 ar-d-521～526。三個子工作階段各兩批。
+
+## 第一輪結果與第二輪（2026-11-06）
+
+第一輪（ml68–70、md39–41，卡單 289）：上線 104、落目標格 92（恍惚 42、頹靡 50），PR #399／#400／#401。汰掉的主因：合輯／EP／同人超量、標 downtempo 卻有舞池／四拍／breakbeat 推進。
+店主：「繼續」。剩下靠近邊界的 612 張先照第一輪教訓過濾：Bandcamp 標籤含 house／techno／breakbeat／funk／electro／disco／club／dance／trance／dubstep／drum／jungle／garage／synthwave／hip-hop／rap／reggae／dub／soul／r&b／pop 的拿掉（378），<30 分的拿掉（2）→ 232 張。
+第二輪卡單：恍惚 `pick-ml71.json` 52、`pick-ml72.json` 52、`pick-ml73.json` 51；頹靡 `pick-md42.json` 39、`pick-md43.json` 38。條號 ml71 23961、ml72 24041、ml73 24121、md42 24201、md43 24281；藝人介紹 ar-d-527～531。
