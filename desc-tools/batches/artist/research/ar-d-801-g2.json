@@ -1,0 +1,790 @@
+[
+ {
+  "key": "the fine arts quartet",
+  "name": "The Fine Arts Quartet",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "The Fine Arts Quartet 1946 年在芝加哥由 Leonard Sorkin 與 George Sopkin 創立；成員在 1939 年起就同在芝加哥交響樂團共事，1940 年有過首場演出，二戰從軍延後到 1946 年才正式運作。",
+      "src": "https://en.wikipedia.org/wiki/Fine_Arts_Quartet",
+      "src2": "https://fineartsquartet.com/history",
+      "from": "new"
+     },
+     {
+      "f": "團史上只有兩位第一小提琴與團長：Leonard Sorkin（1946 至 1981 年）與 Ralph Evans（1982 年至今）。",
+      "src": "https://en.wikipedia.org/wiki/Fine_Arts_Quartet",
+      "src2": "https://fineartsquartet.com/biography",
+      "from": "new"
+     },
+     {
+      "f": "1963 年起在威斯康辛大學密爾瓦基分校駐校，到 2017 年；更早 1952 至 1955 年曾在西北大學駐校。",
+      "src": "https://fineartsquartet.com/history",
+      "from": "new",
+      "single": true
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他們長期把當時還陌生、偏前衛的曲目帶給聽眾：Bartók、Shostakovich、Bloch、Babbitt、Wuorinen、Hindemith、Husa 等人的四重奏都在演出、委託與錄音之列。",
+      "src": "https://en.wikipedia.org/wiki/Fine_Arts_Quartet",
+      "src2": "https://fineartsquartet.com/history",
+      "from": "new"
+     },
+     {
+      "f": "Bartók 六首四重奏的錄音，是在一個電視系列之後完成的；系列中每首都先由團員訪談、講解並以樂例說明，再完整演出。",
+      "src": "https://en.wikipedia.org/wiki/Fine_Arts_Quartet",
+      "from": "new",
+      "single": true
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1946 至 1954 年他們在 ABC 廣播網的週日早晨節目固定演出；1950 年代中期上過《Ed Sullivan Show》（與 Benny Goodman 同台）與《Today Show》。",
+      "src": "https://en.wikipedia.org/wiki/Fine_Arts_Quartet",
+      "src2": "https://fineartsquartet.com/history",
+      "from": "new"
+     },
+     {
+      "f": "1958 年起每年巡迴歐洲；1960 年代晚期由美國國務院贊助巡演日本、韓國、台灣、泰國、澳洲與紐西蘭，到 1970 年代晚期已在 28 國 270 座城市演出。",
+      "src": "https://en.wikipedia.org/wiki/Fine_Arts_Quartet",
+      "src2": "https://fineartsquartet.com/history",
+      "from": "new"
+     },
+     {
+      "f": "他們留下兩百多首錄音作品，並以演奏與錄音超過近八十年而被視為現存歷史最久的主要弦樂四重奏之一。",
+      "src": "https://en.wikipedia.org/wiki/Fine_Arts_Quartet",
+      "src2": "https://fineartsquartet.com/biography",
+      "from": "new"
+     },
+     {
+      "f": "Babbitt 的第三號弦樂四重奏（1969 至 1970 年）是受 Lee A. Freeman 夫婦委託、題獻給 Fine Arts Quartet 的作品；1970 年 5 月 4、5 日由該團世界首演，後續錄音獲福特基金會贊助。",
+      "src": "https://en.wikipedia.org/wiki/String_Quartet_No._3_(Babbitt)",
+      "from": "bank",
+      "single": true
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1946 年 Joseph Stepansky 加入擔任第二小提琴；1940 年最初陣容為 Leonard Sorkin、Ben Senescu、Sheppard Lehnhoff 與 George Sopkin。",
+      "src": "https://fineartsquartet.com/history",
+      "from": "new",
+      "single": true
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "1946 年在芝加哥正式成軍，由 Sorkin 與 Sopkin 創立。",
+    "src": "https://en.wikipedia.org/wiki/Fine_Arts_Quartet",
+    "src2": "https://fineartsquartet.com/history",
+    "from": "new"
+   },
+   {
+    "f": "1970 年 5 月世界首演 Babbitt 第三號弦樂四重奏，作品題獻給他們。",
+    "src": "https://en.wikipedia.org/wiki/String_Quartet_No._3_(Babbitt)",
+    "from": "bank",
+    "single": true
+   }
+  ],
+  "conflicts": [],
+  "searches": 3,
+  "failedFetches": [],
+  "status": "full",
+  "pubIssues": [],
+  "notes": "補查 3 次（WebSearch 1、官網 history 與 biography 2；英文維基來自預抓與事實庫）。身分已對 poolAlbums 確認：1972 Turnabout 的 Babbitt／Wuorinen 專輯對上維基列出的 Babbitt、Wuorinen 委託紀錄，預抓 warn（頁面未提專輯名）可忽略。創立年 1946 有維基與官網兩源，但兩源互相沿用（官網與維基文字相近，非獨立）；官網另說成員 1939 年起共事、1940 年首演，維基未載，故以單源放進 origin 的括號說明。未收（單源或自述）：官網稱『首套完整立體聲 Bartók 四重奏錄音』『首套美國版完整 Beethoven 四重奏錄音』『首位上 NBC Today Show 的四重奏』等 first 類，只見官網（搜尋摘要說『credited with』但沒給獨立來源），移入 notes 不進 facts；官網引《華盛頓郵報》『one of the gold-plated names in chamber music』也是官網轉述，不收；格萊美獎是製作人 Steven Epstein 的，不是樂團的，不得寫成團得獎。1972 年專輯陣容（Sorkin、Abram Loft、Bernard Zaslav、George Sopkin）只見搜尋摘要，未開頁，不收。"
+ },
+ {
+  "key": "todd seelye",
+  "name": "Todd Seelye",
+  "slots": {
+   "origin": {
+    "status": "none",
+    "facts": []
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Seelye 專注當代作曲家的吉他曲：1998 年《Sheer Pluck》一張盤收 Mamlok、Dillon、Babbitt、Wuorinen、Carter、Berio、Robert Morris 七人作品，其中 Mamlok、Dillon、Wuorinen 的曲子與 Babbitt 的修訂版是首次錄音（廠牌頁標示）。",
+      "src": "https://musicandarts.com/product/sheer-pluck-modern-guitar-compositions-todd-seelye-guitar/",
+      "from": "new",
+      "single": true
+     },
+     {
+      "f": "Wuorinen 的《Guitar Variations》1994 年寫成，是 Seelye 委託並為他而寫的作品，由他演出首演。",
+      "src": "https://www.charleswuorinen.com/compositions/guitar-variations/",
+      "from": "new",
+      "single": true
+     }
+    ]
+   },
+   "legacy": {
+    "status": "none",
+    "facts": []
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [],
+  "conflicts": [],
+  "searches": 3,
+  "failedFetches": [],
+  "status": "thin",
+  "pubIssues": [],
+  "notes": "補查 3 次（WebSearch 1、Music & Arts 商品頁、Wuorinen 官網作品頁）。查不到出身、師承與公認評價；他是少見的獨立吉他手，沒有維基條目。商品頁（廠牌）稱他曾與紐約 Ensemble 21、New York New Music Consort、Pittsburgh New Music Ensemble 擔任獨奏，錄製過 Bridge Records，在 June in Buffalo 與 Guitar Foundation of America 國際吉他節演出，任教 Grinnell College——全是廠牌自述（履歷性質、單源且未註日期），不收進 facts。LinkedIn 列 University of Arizona DMA、居 Cedar Falls，LinkedIn 不算可靠來源，不收。『首次錄音』是 first 類，只有廠牌頁單源，已在 facts 內以『廠牌頁標示』限定，寫作層若要用請同樣限定。Wuorinen 作品頁只說『明年 3 月首演』由 Seelye 演出，年份是依 1994 年夏完成推算（1995 年 3 月），不寫首演年月。"
+ },
+ {
+  "key": "trio recherche",
+  "name": "Trio Recherche",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Trio Recherche 是由 ensemble recherche 的三位弦樂手組成的弦樂三重奏：小提琴 Melise Mellinger、中提琴 Barbara Maurer、大提琴 Lucas Fels。",
+      "src": "https://de.wikipedia.org/wiki/Ensemble_Recherche",
+      "src2": "https://musicbrainz.org/release-group/643443f3-5077-4dfd-9c06-5bd79fd79914",
+      "from": "new"
+     },
+     {
+      "f": "ensemble recherche 1985 年成立於德國弗萊堡，是由專攻新音樂的獨奏者組成的自由團體，歷來首演近千首作品。",
+      "src": "https://de.wikipedia.org/wiki/Ensemble_Recherche",
+      "src2": "https://www.ensemble-recherche.de/ensemble",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他們這張錄的是 Rihm 1977 年的《Musik für drei Streicher》；Kairos 的文案形容這部作品是「沒有距離與禁忌、毫不留情地肢體化與姿態化、近乎粗暴」的音樂，並以突兀的剪接把差異極大的音樂世界並置。",
+      "src": "https://kairos-music.com/products/recording/0012042kai",
+      "from": "new",
+      "single": true
+     }
+    ]
+   },
+   "legacy": {
+    "status": "none",
+    "facts": []
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [],
+  "conflicts": [],
+  "searches": 5,
+  "failedFetches": [],
+  "status": "thin",
+  "pubIssues": [],
+  "notes": "補查 5 次（WebSearch 2、de.wikipedia ensemble Recherche、Kairos 產品頁、ensemble-recherche.de 官網）。Trio Recherche 沒有獨立條目，也沒有可查的獨立評價，legacy 查無。母團 ensemble recherche 的獎項（de.wikipedia：1995 Schneider-Schott-Musikpreis、1997 Rheingau Musikpreis、2018 Reinhold-Schneider-Preis；官網只證實 2018）只有 2018 年有兩源，且是母團的獎，不是三重奏的，不得寫成 Trio 得獎，故不收 facts。官網『近千首首演』與『約 60 張 CD』是自述數字，維基寫 50 多張，不一致，首演數寫『近千』已限定來源，CD 數不收。創始三人名單（Mellinger 1985 至 2024、Maurer 1985 至 2017、Fels 1985 至 2006）只見 de.wikipedia（官網未載），故 origin 那條以 MusicBrainz 作第二源只證實三人為此錄音的演奏者，de.wikipedia 另稱三人是 1985 年創始成員（單源），不收，寫作層不得寫『創始』。上線簡介『幾乎不打草稿寫成』『筆記本作品』兩句本層沒有查到來源，未驗證。"
+ },
+ {
+  "key": "valgeir sigurðsson",
+  "name": "Valgeir Sigurðsson",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Valgeir 1971 年生，成長在冰島北部一個約千人的小社區，起先彈電吉他、玩搖滾與龐克，後來迷上電子與錄音；17 歲左右（1987 年）因為一則提供免費錄音室時間的徵人啟事，進了一間地下室錄音室幫忙，為此輟學。",
+      "src": "https://www.redbullmusicacademy.com/lectures/valgeir-sigurosson/",
+      "src2": "https://en.wikipedia.org/wiki/Valgeir_Sigur%C3%B0sson",
+      "from": "new"
+     },
+     {
+      "f": "他後來到倫敦 SAE 學音樂製作與錄音工程（Tonmeister 學位）再回冰島，並學過古典吉他。",
+      "src": "https://en.wikipedia.org/wiki/Valgeir_Sigur%C3%B0sson",
+      "src2": "https://www.redbullmusicacademy.com/lectures/valgeir-sigurosson/",
+      "from": "new"
+     },
+     {
+      "f": "他 1997 年創辦 Greenhouse Studios，是冰島最重要的錄音室之一。",
+      "src": "https://en.wikipedia.org/wiki/Valgeir_Sigur%C3%B0sson",
+      "src2": "https://www.fabermusic.com/we-represent/valgeir-sigur%C3%B0sson",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他的作品以模糊當代古典寫作與電子製作的界線為辨識，常在管弦與室內樂裡加入電子，曾為 City of London Sinfonia、溫尼伯交響樂團、Crash Ensemble、Alarm Will Sound 等團寫曲。",
+      "src": "https://www.fabermusic.com/we-represent/valgeir-sigur%C3%B0sson",
+      "from": "new",
+      "single": true
+     },
+     {
+      "f": "他自述做事靠「自己動手」的想法，不等合適的夥伴出現，並愛用貼近麥克風錄古典樂器這類實驗做法；他說：「沒有什麼東西是現成交給你的，你得自己想辦法。」",
+      "src": "https://www.redbullmusicacademy.com/lectures/valgeir-sigurosson/",
+      "from": "new",
+      "single": true
+     },
+     {
+      "f": "Björk 與 Thom Yorke 合唱的〈I've Seen It All〉（《Dancer in the Dark》）裡貫穿全曲的火車節奏是 Valgeir 做的。",
+      "src": "https://en.wikipedia.org/wiki/Valgeir_Sigur%C3%B0sson",
+      "from": "new",
+      "single": true
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1998 年 Björk 指名他擔任《Dancer in the Dark》配樂的工程師與程式編寫，這個案子打開了他的名聲；與 Björk 的合作從 1998 年初持續到 2006 年，他是她的主要錄音室夥伴之一。",
+      "src": "https://en.wikipedia.org/wiki/Valgeir_Sigur%C3%B0sson",
+      "src2": "https://www.redbullmusicacademy.com/lectures/valgeir-sigurosson/",
+      "from": "new"
+     },
+     {
+      "f": "他與 Nico Muhly、Ben Frost 共同創辦廠牌 Bedroom Community，旗下有 Sam Amidon、Daníel Bjarnason、Liam Byrne 等人；廠牌首發是 Muhly 的《Speaks Volumes》。",
+      "src": "https://www.redbullmusicacademy.com/lectures/valgeir-sigurosson/",
+      "src2": "https://www.fabermusic.com/we-represent/valgeir-sigur%C3%B0sson",
+      "from": "new"
+     },
+     {
+      "f": "他在 Greenhouse 合作過的人包括 Björk、Bonnie 'Prince' Billy、Feist、CocoRosie、Hilary Hahn、Brian Eno、Sigur Rós 與 Jóhann Jóhannsson。",
+      "src": "https://en.wikipedia.org/wiki/Valgeir_Sigur%C3%B0sson",
+      "src2": "https://www.fabermusic.com/we-represent/valgeir-sigur%C3%B0sson",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [
+   {
+    "f": "1997 年創辦 Greenhouse Studios。",
+    "src": "https://en.wikipedia.org/wiki/Valgeir_Sigur%C3%B0sson",
+    "src2": "https://www.fabermusic.com/we-represent/valgeir-sigur%C3%B0sson",
+    "from": "new"
+   },
+   {
+    "f": "1998 年起擔任 Björk 的錄音室夥伴，起點是《Dancer in the Dark》。",
+    "src": "https://en.wikipedia.org/wiki/Valgeir_Sigur%C3%B0sson",
+    "src2": "https://www.redbullmusicacademy.com/lectures/valgeir-sigurosson/",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "Bedroom Community 的成立年：英文維基寫 2005，Faber 與 Red Bull Music Academy 寫 2006（RBMA 另說首發 Muhly《Speaks Volumes》在 2006）；兩源不一致，facts 不寫成立年。",
+   "Faber 稱 Björk 的《Dancer in the Dark》配樂獲奧斯卡提名；實際獲提名的是歌曲〈I've Seen It All〉，不是整部配樂，facts 不採。"
+  ],
+  "searches": 3,
+  "failedFetches": [],
+  "status": "full",
+  "pubIssues": [],
+  "notes": "補查 3 次（WebSearch 1、Red Bull Music Academy 講座頁、Faber Music 簡介）；英文維基來自預抓。身分確認：Dissonance、Bedroom Community 對得上。未收（單源高風險）：Dissonance 獲 2018 年 Iceland Music Awards 年度專輯（Faber 單源）；Dreamland 入圍 EDDA 最佳配樂（Faber 單源）；《紐約時報》點名 2017 Sónar Barcelona（Faber 轉述，未開 NYT）；Touching Extremes 的 'one of the most open-eared talents…' 是單一樂評，不收。RBMA 與維基都是講述性資料，家鄉『北部小社區』是 RBMA 單源，wikidata 寫出生地 Reykjavík，兩者不一致，facts 只寫『成長在冰島北部』不寫出生地。上線簡介『他是 2012 年後的首張個人作品』與維基（第三張 Architecture of Loss 2012 年 9 月）相符。"
+ },
+ {
+  "key": "yejin gil",
+  "name": "Yejin Gil",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Yejin Gil 五歲開始學琴，先在首爾國立大學受訓，在那裡對二十世紀音樂產生興趣；之後赴德國埃森的 Folkwang 藝術大學，師從 Bernhard Wambach 與 Michael Roll，取得音樂會演奏文憑（Konzertexamen）。",
+      "src": "https://oci-piano.com/en/laureat/yejin-gil-eng/",
+      "src2": "https://www.bechstein.com/en/the-world-of-bechstein/pianists/yejin-gil/",
+      "from": "new"
+     },
+     {
+      "f": "她現居柏林。",
+      "src": "https://www.bechstein.com/en/the-world-of-bechstein/pianists/yejin-gil/",
+      "from": "new",
+      "single": true
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "她的曲目從古典、浪漫到二十與二十一世紀音樂，與 Unsuk Chin、Pierre Boulez、Philippe Hurel、Heiner Goebbels、Martin Matalon、Oscar Strasnoy 等作曲家合作過。",
+      "src": "https://www.yejingil.com/about-7",
+      "src2": "https://www.bechstein.com/en/the-world-of-bechstein/pianists/yejin-gil/",
+      "from": "new"
+     },
+     {
+      "f": "2012 年她把重心放在 Messiaen（逝世 20 週年）與 Debussy（誕辰 150 週年）的曲目上。",
+      "src": "https://oci-piano.com/en/laureat/yejin-gil-eng/",
+      "from": "new",
+      "single": true
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "2010 年 Orléans 國際鋼琴大賽（專門只收二十與二十一世紀音樂的雙年賽）她拿第二名，第一名 Christopher Falzone、第三名 Anaël Bonnet；她同時包辦四個專獎：Sacem 獎、Nadia Boulanger 獎、Albert Roussel 獎與 Hitachi 獎，並獲 Philippe Hurel《Interstices》（決賽首演的新作）最佳詮釋獎。",
+      "src": "https://oci-piano.com/en/laureat/yejin-gil-eng/",
+      "src2": "https://en.wikipedia.org/wiki/International_Piano_Competition_of_Orl%C3%A9ans",
+      "from": "new"
+     },
+     {
+      "f": "首張個人專輯《Fulgurances》（Solstice，2013 年底）獲 2014 年法國 Académie Charles Cros「Coup de Coeur」當代音樂類獎。",
+      "src": "https://oci-piano.com/en/laureat/yejin-gil-eng/",
+      "src2": "https://www.yejingil.com/about-7",
+      "from": "new"
+     },
+     {
+      "f": "她曾與 Kent Nagano、Steven Sloane 等指揮合作，並與杜伊斯堡愛樂、Bergische Symphoniker 等樂團以獨奏家身分演出。",
+      "src": "https://www.yejingil.com/about-7",
+      "src2": "https://oci-piano.com/en/laureat/yejin-gil-eng/",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [
+   {
+    "f": "2010 年 Orléans 國際鋼琴大賽第二名並囊括四個專獎。",
+    "src": "https://oci-piano.com/en/laureat/yejin-gil-eng/",
+    "src2": "https://en.wikipedia.org/wiki/International_Piano_Competition_of_Orl%C3%A9ans",
+    "from": "new"
+   },
+   {
+    "f": "2014 年《Fulgurances》獲 Académie Charles Cros「Coup de Coeur」。",
+    "src": "https://oci-piano.com/en/laureat/yejin-gil-eng/",
+    "src2": "https://www.yejingil.com/about-7",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "Bechstein 寫《Fulgurances》錄於 2013 年 11 月；上線簡介寫 2013 年 9 月在貝濟耶一座小教堂錄音；事實庫（MusicWeb）寫 2013 年 11 月發行。三處不一致，facts 不寫錄音月份，只寫『2013 年底』發行（oci-piano）。"
+  ],
+  "searches": 6,
+  "failedFetches": [],
+  "status": "full",
+  "pubIssues": [
+   {
+    "album": "Chin / Boulez / Ligeti / Messiaen: Fulgurances",
+    "claim": "錄音 2013 年 9 月在法國貝濟耶一座小教堂進行",
+    "problem": "Bechstein 藝人頁寫『recorded in November 2013』，MusicWeb 寫 2013 年 11 月發行；錄音月份與地點本層未查到可靠來源，待人工核對 Solstice 官方資料。",
+    "src": "https://www.bechstein.com/en/the-world-of-bechstein/pianists/yejin-gil/"
+   }
+  ],
+  "notes": "補查 6 次（WebSearch 2、Orléans 大賽官網的得獎者頁、Bechstein 藝人頁、Yejin Gil 官網、英文維基 Orléans 大賽頁）。無維基藝人條目；出生地與年份查不到，facts 不寫。同名確認：Fulgurances 是 Solstice 那張。官網與 Bechstein（贊助商）屬自述，故 origin／sound 各取兩處；Charles Cros 獎的兩源是 oci-piano（大賽官網）與藝人官網，非獨立於藝人本人；搜尋結果另有 ResMusica、Impuls 音樂節頁可佐證但未開頁。未收：『first finalist to win four prizes』（Bechstein 單源，官網改寫成 sole finalist，說法不一，屬『第一』類）；Korea National Competition 與 Köhler-Osbahr-Wettbewerb 首獎（兩源其一缺年份，Bechstein 與官網都未註年，不收）；2017 年 Scriabin 專輯入圍德國唱片評論家獎與 ICMA（官網單源）。Orléans 專獎的主詞：四個專獎與 Hurel 最佳詮釋獎是 Gil 本人，沒有團體問題。"
+ },
+ {
+  "key": "yuji takahashi",
+  "name": "Yuji Takahashi",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "高橋悠治（Yuji Takahashi）1938 年 9 月 21 日生於東京；父親是音樂評論家，母親是鋼琴家，妹妹是鋼琴家高橋アキ。",
+      "src": "https://ja.wikipedia.org/wiki/%E9%AB%98%E6%A9%8B%E6%82%A0%E6%B2%BB",
+      "from": "new",
+      "single": true
+     },
+     {
+      "f": "他師從柴田南雄與小倉朗學作曲，1960 年以演奏 Bo Nilsson 的《Quantitäten》登台；1960 年代初前往西柏林，跟 Xenakis 學習。",
+      "src": "https://en.wikipedia.org/wiki/Y%C5%ABji_Takahashi",
+      "src2": "https://www.schottjapan.com/composer/takahashi/bio.html",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他在日本演奏過 Xenakis、Cage、武滿徹等人的新作；1962 年 2 月 2 日在東京首演了 Xenakis 的鋼琴曲《Herma》（1960 至 1961 年寫成）。",
+      "src": "https://brahms.ircam.fr/en/works/work/12809/",
+      "src2": "https://ja.wikipedia.org/wiki/%E9%AB%98%E6%A9%8B%E6%82%A0%E6%B2%BB",
+      "from": "new"
+     },
+     {
+      "f": "1966 年他前往紐約，靠洛克菲勒基金會獎學金研究電腦作曲，1970 年代起以電腦與取樣器作曲，1990 年代起也為日本傳統樂器寫作。",
+      "src": "https://ja.wikipedia.org/wiki/%E9%AB%98%E6%A9%8B%E6%82%A0%E6%B2%BB",
+      "from": "new",
+      "single": true
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1978 年他組織「水牛楽団」，演奏泰國等亞洲與拉丁美洲的抵抗歌曲；團活動到 1985 年，同時發行月刊《水牛通信》（1980 至 1987 年）。",
+      "src": "https://en.wikipedia.org/wiki/Y%C5%ABji_Takahashi",
+      "src2": "https://www.schottjapan.com/composer/takahashi/bio.html",
+      "from": "new"
+     },
+     {
+      "f": "日文維基稱他的活動啟發了坂本龍一。",
+      "src": "https://ja.wikipedia.org/wiki/%E9%AB%98%E6%A9%8B%E6%82%A0%E6%B2%BB",
+      "from": "new",
+      "single": true
+     },
+     {
+      "f": "他以演奏者、作曲家、評論家、指揮與作家多重身分活動，出版過多本音樂著作，包括 2010 年的自傳《ピアノはここにいらない》。",
+      "src": "https://ja.wikipedia.org/wiki/%E9%AB%98%E6%A9%8B%E6%82%A0%E6%B2%BB",
+      "src2": "https://en.wikipedia.org/wiki/Y%C5%ABji_Takahashi",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他 1966 年離開歐洲轉往紐約，1972 年回日本定居。",
+      "src": "https://en.wikipedia.org/wiki/Y%C5%ABji_Takahashi",
+      "src2": "https://ja.wikipedia.org/wiki/%E9%AB%98%E6%A9%8B%E6%82%A0%E6%B2%BB",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "1962 年 2 月 2 日在東京首演 Xenakis 的《Herma》。",
+    "src": "https://brahms.ircam.fr/en/works/work/12809/",
+    "from": "new",
+    "single": true
+   },
+   {
+    "f": "1978 年組織水牛楽團。",
+    "src": "https://en.wikipedia.org/wiki/Y%C5%ABji_Takahashi",
+    "src2": "https://www.schottjapan.com/composer/takahashi/bio.html",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "赴西柏林學習年份：英文維基寫 1962 年，日文維基與日文搜尋摘要多寫 1963 年；兩源不一致，facts 只寫『1960 年代初』。",
+   "Xenakis 專輯得 Grand Prix du Disque：日文維基寫 1965 年、搜尋摘要寫 1966 年（ADF 大賞）；不一致，不收。"
+  ],
+  "searches": 4,
+  "failedFetches": [
+   "https://mtosmt.org/issues/mto.01.7.3/mto.01.7.3.wannamaker.html (503)"
+  ],
+  "status": "full",
+  "pubIssues": [
+   {
+    "album": "Xenakis: Evryali / Herma / Messiaen: Quatre études de rythme",
+    "claim": "有評論家說這是史上最難彈的鋼琴曲；Herma 題獻給高橋",
+    "problem": "搜尋找不到把 Herma 稱為『史上最難彈』的可靠來源（只見技術上極困難的描述，網路另有人推 Synaphai 更難）；另 Music Theory Online 的分析文章（搜尋摘要）稱 Herma 是高橋『委託』，IRCAM 只列他為首演者，未載題獻，『題獻』與『委託』待核。首演日期 1962 年 2 月 2 日與 IRCAM 一致。",
+    "src": "https://brahms.ircam.fr/en/works/work/12809/"
+   }
+  ],
+  "notes": "補查 4 次（WebSearch 2、日文維基、Schott Japan 略歷、IRCAM Brahms 資料庫；英文維基來自預抓，預抓 warn 因專輯名未出現於維基頁，但 Xenakis 師生關係與《Herma》首演對上卡池，身分確認）；MTO 論文頁 503 未取得。IRCAM 只證實首演者與日期，高橋 1962 年 2 月 2 日的首演另有搜尋摘要的 bach-cantatas 短傳『1962 年 2 月』，未開頁，故 sound 的《Herma》首演以 IRCAM＋日文維基（維基只說演奏過《Herma》）並列。『委託』說法只見 MTO 搜尋摘要，未收。未收：2006 年 Foundation for Contemporary Arts 補助獎（英文維基單源）；1971 年印第安納大學電腦音樂中心副主任被解職（日文維基單源且屬爭議，且為履歷細節）；父母名字不寫。英文維基寫他靠福特基金會、1966 年後在紐約受洛克菲勒基金會獎學金到 1972 年；日文維基寫 1966 年洛克菲勒獎學金赴紐約，兩源年份一致處才收 era。英日維基同屬維基家族，非獨立；水牛楽團與 era 的第二源為 Schott（水牛）與日文維基（era），era 那條兩源其實同為維基，非獨立。"
+ },
+ {
+  "key": "petri alanko & martin stig andersen",
+  "name": "Petri Alanko & Martin Stig Andersen",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Petri Alanko 是芬蘭作曲家，童年學鋼琴，受過配器與指揮訓練，一度往管風琴演奏家的路走，後來被 Kraftwerk、Depeche Mode、Ultravox 這類合成器流行樂改變方向；早年也替芬蘭流行樂團彈鍵盤（Neon2）。",
+      "src": "https://www.lacedrecords.com/blogs/blog/interview-how-alan-wake-composer-petri-alanko-established-control",
+      "src2": "https://www.thecomposerworks.com/composers/petri-alanko/",
+      "from": "new"
+     },
+     {
+      "f": "Alanko 的遊戲啟蒙是 Sinclair ZX Spectrum 與 Commodore 64，後來用 Amiga 500 加 MIDI 介面做音樂；他也以 Lowland 之名發行《Classical Trancelations》系列。",
+      "src": "https://www.lacedrecords.com/blogs/blog/interview-how-alan-wake-composer-petri-alanko-established-control",
+      "src2": "https://www.thecomposerworks.com/composers/petri-alanko/",
+      "from": "new"
+     },
+     {
+      "f": "Martin Stig Andersen 1973 年生於丹麥奧胡斯，先在奧胡斯的皇家音樂學院學管弦樂作曲，2003 年畢業後到倫敦城市大學隨 Denis Smalley 學電聲作曲；Tristan Murail 的頻譜樂派與 Smalley、Trevor Wishart 的電聲論述，讓他離開管弦樂寫作。",
+      "src": "https://en.wikipedia.org/wiki/Martin_Stig_Andersen",
+      "src2": "https://www.lacedrecords.co/blogs/blog/interview-control-inside-composer-martin-stig-andersen",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Control 的分工是：Alanko 寫線性的過場與主題性音樂，Andersen 負責遊戲內的即時配樂，由許多小段素材在 Wwise 裡依情境組合；兩人共用一台伺服器，互相取用對方的聲音素材與數位樂器。",
+      "src": "https://www.lacedrecords.co/blogs/blog/interview-control-inside-composer-martin-stig-andersen",
+      "src2": "https://www.lacedrecords.com/blogs/blog/interview-how-alan-wake-composer-petri-alanko-established-control",
+      "from": "new"
+     },
+     {
+      "f": "Alanko 為 Control 建了一座龐大的原始聲音庫：濃縮咖啡機、洗衣機、電燈開關、合板、燒過的鋼琴、弓奏鈸，並用接觸式麥克風錄下「幾乎所有東西」，再用 Reaktor 與 Kyma 自寫演算法處理成扭曲變形的質地；他偏愛類比式的故障聲，也避開 trance 式 pad，選用慢速預期性的壓迫感與長達近 30 秒的殘響。",
+      "src": "https://www.lacedrecords.com/blogs/blog/interview-how-alan-wake-composer-petri-alanko-established-control",
+      "from": "new",
+      "single": true
+     },
+     {
+      "f": "Andersen 把錄下來的聲音當成音樂演奏的素材，主張每款遊戲都該有自己獨有的聲音世界，從零錄製與加工新素材；他把「實作」視為作曲的一部分，讓遊戲本身成為作曲者。",
+      "src": "https://www.lacedrecords.co/blogs/blog/interview-control-inside-composer-martin-stig-andersen",
+      "from": "new",
+      "single": true
+     },
+     {
+      "f": "Andersen 以抽象聲響界定氛圍著稱：做《Limbo》時側重抽象聲音，《Inside》的音樂則把聲音導入人類頭骨做出「骨傳導聲」。",
+      "src": "https://en.wikipedia.org/wiki/Martin_Stig_Andersen",
+      "from": "new",
+      "single": true
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Andersen 以 Playdead 的《Limbo》與《Inside》廣為人知；2017 年又與 Mick Gordon 一起為《Wolfenstein II: The New Colossus》配樂，Gordon 寫反抗軍，Andersen 寫納粹與機器的「壓迫行進」。",
+      "src": "https://en.wikipedia.org/wiki/Martin_Stig_Andersen",
+      "from": "new",
+      "single": true
+     },
+     {
+      "f": "Alanko 長期是 Remedy 的御用作曲家，從《Alan Wake》、《Quantum Break》、《Control》到 2023 年的《Alan Wake II》；《Alan Wake》的主題曲來自他投標時交的一份 demo。",
+      "src": "https://www.thecomposerworks.com/composers/petri-alanko/",
+      "src2": "https://www.lacedrecords.com/blogs/blog/interview-how-alan-wake-composer-petri-alanko-established-control",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [],
+  "conflicts": [
+   "上線簡介寫 Hiss 的錄製（電磁麥克風、拖木頭、燒鋼琴）出自 Alanko；Laced Records 的 Andersen 訪談寫 Hiss 是 Andersen 在巴黎錄有機、儀式性質地，Alanko 的訪談未提 Hiss。燒鋼琴確為 Alanko 的素材。facts 不歸屬 Hiss 給任何一人。"
+  ],
+  "searches": 5,
+  "failedFetches": [
+   "https://www.musicradar.com/news/so-you-want-to-be-a-videogames-composer-... (只回導覽列，無內文)"
+  ],
+  "status": "thin",
+  "pubIssues": [
+   {
+    "album": "Control: Original Game Soundtrack",
+    "claim": "那股力量叫 Hiss，Alanko 用能錄電磁輻射的麥克風錄下沉重木頭拖過地面的聲響，連同燒鋼琴的錄音一起處理成嘈雜的 droning 聲",
+    "problem": "Laced Records 的 Andersen 訪談指出 Hiss 的音響是 Andersen 負責（在巴黎錄有機、儀式性質地）；Alanko 的訪談只說他自己錄了燒鋼琴、弓奏鈸等素材，未提 Hiss。Hiss 聲音的歸屬待對照原始訪談再核。",
+    "src": "https://www.lacedrecords.co/blogs/blog/interview-control-inside-composer-martin-stig-andersen"
+   }
+  ],
+  "notes": "補查 5 次（WebSearch 2、兩篇 Laced Records 訪談、The Composer Works 簡介；MusicRadar 專訪只回導覽列，不計；英文維基 Andersen 為預抓）。這張是兩人合作的《Control》原聲帶，身分以專輯為準；預抓 warn 因維基頁未提專輯，但維基載 Andersen 為《Limbo》《Inside》作曲，身分確認為同一人。公認評價：搜尋摘要稱 Control 配樂團隊獲 D.I.C.E. Awards 的 Outstanding Achievement in Original Music Composition，且 Alanko 三度入圍 BAFTA，皆只見行銷與簡介頁摘要、未開頁讀到，屬獎項類不收。MusicRadar 專訪標題『我有時想電影作曲家真的太輕鬆了』是 Alanko 自述，未開頁，不收。維基 Andersen 無獎項節內容（預抓被截斷）。Alanko 的出生年（IMDb 1970）只見搜尋摘要，不收。『Alanko 與 Sunrise Avenue 有關』的假設查無，不收。"
+ },
+ {
+  "key": "philippe petit",
+  "name": "Philippe Petit",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "這位 Philippe Petit 出身法國南部馬賽，1983 年起就在當 DJ、主持廣播、編音樂雜誌（fanzine）；後來在馬賽的 CNRR 音樂學院學電聲音樂，專攻多聲道擴聲與模組合成器。",
+      "src": "https://www.cronicaelectronica.org/philippe-petit/",
+      "from": "new",
+      "single": true
+     },
+     {
+      "f": "他 1993 年創辦廠牌 Pandemonium Rdz.（共發行 41 張），2000 年再建立 BiP_HOp Musique。",
+      "src": "https://www.cronicaelectronica.org/philippe-petit/",
+      "from": "new",
+      "single": true
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他用電、擴音與電子設備產生並加工聲音，要求每張專輯都跟上一張不同，刻意避開慣性；風格橫跨實驗、氛圍、drone 與暗色環境音樂。",
+      "src": "https://www.cronicaelectronica.org/philippe-petit/",
+      "src2": "https://glacialmovements.bandcamp.com/album/you-only-live-ice",
+      "from": "new"
+     },
+     {
+      "f": "他對配樂有興趣，即使創作原創音樂，也寧願被介紹為「音樂旅行社」而不是作曲家。",
+      "src": "https://glacialmovements.bandcamp.com/album/you-only-live-ice",
+      "from": "bank",
+      "single": true
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他合作過的人包括 Lydia Lunch、Murcof、Faust、Cindytalk、Stephen O'Malley、Cosey Fanni Tutti、Graham Lewis 與 Scanner，也與 European Contemporary Orchestra 合作；作品在 Sub Rosa、Staubgold、Important、Aagoo 等廠牌發行。",
+      "src": "https://www.cronicaelectronica.org/philippe-petit/",
+      "src2": "https://glacialmovements.bandcamp.com/album/you-only-live-ice",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [],
+  "conflicts": [],
+  "searches": 2,
+  "failedFetches": [
+   "http://atypeekmusic.com/Philippe_Petit.html (400)"
+  ],
+  "status": "thin",
+  "pubIssues": [],
+  "notes": "補查 2 次（WebSearch 1、Crónica Electronica 藝人頁）。⚠ 預抓英文維基的 Philippe Petit 是法國走鋼索藝人（1949 年生，跨越雙子星大樓），與發《You Only Live Ice》的電子樂人同名不同人，維基與 wikidata 一條都沒收；卡池只有 Glacial Movements 2016 那張，確認為電子樂人。Crónica 頁是以第三人稱寫的藝人頁，來源性質偏自述／電子音樂資料站，查無維基條目與外部評價，legacy 只能收合作對象。搜尋摘要另有：RYM 登記生日 1966 年 6 月 26 日、『活動 40 年』（synradio 與 Crónica）、樂器含 cymbalum、電動 psaltery（日文頁摘要），皆未開頁讀到，不收。Glacial Movements 稱《You Only Live Ice》是他在該廠的首張，單源未開出處以外頁面，不收。上線簡介『Murcof 等人都曾與他合作』與 Crónica 吻合。"
+ },
+ {
+  "key": "phonothek",
+  "name": "Phonothek",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Phonothek 是來自喬治亞首都提比里斯的一男一女二人組，在 Cryo Chamber 發行；曲子在喬治亞錄製。",
+      "src": "https://www.side-line.com/phonothek-lost-in-fog-cd-album-cryo-chamber/",
+      "src2": "https://cryochamber.bandcamp.com/album/red-moon",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "小號是 Phonothek 的標誌聲音：評論稱它帶出孤立的冰冷感，而且在 dark ambient 與工業爵士的底上製造近乎電影般的畫面；Cryo Chamber 列出 George Shamanauri 吹小號、圓號與上低音號。",
+      "src": "https://www.side-line.com/phonothek-styx-album-cryo-chamber/",
+      "src2": "https://cryochamber.bandcamp.com/album/red-moon",
+      "from": "new"
+     },
+     {
+      "f": "音響上是低頻共鳴、迴盪的 drone 與田野錄音經過大量處理，有時從工業滑進冷調爵士，另有零碎的低沉人聲。",
+      "src": "https://www.side-line.com/phonothek-styx-album-cryo-chamber/",
+      "src2": "https://www.side-line.com/phonothek-lost-in-fog-cd-album-cryo-chamber/",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "none",
+    "facts": []
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他們在 Cryo Chamber 的專輯依序是《Lost in Fog》（2016）、《Red Moon》（2017 年 4 月 4 日）與《Styx》（2020 年 7 月 14 日，第三張）。",
+      "src": "https://cryochamber.bandcamp.com/album/red-moon",
+      "src2": "https://cryochamber.bandcamp.com/album/styx",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [],
+  "conflicts": [],
+  "searches": 5,
+  "failedFetches": [
+   "https://www.discogs.com/artist/5678205-George-Shamanauri (403)"
+  ],
+  "status": "thin",
+  "pubIssues": [],
+  "notes": "補查 5 次（WebSearch 1、Side-Line 的《Styx》與《Lost in Fog》評論、Cryo Chamber《Red Moon》頁；Discogs 403 不計）。公開資料很少：沒有維基條目，也查不到任何公認評價，legacy 查無。搜尋摘要（Discogs）稱 2015 年成立、George Shamanauri 曾任提比里斯國家歌劇院與交響樂團的首席小號、搭檔是妻子 Nina，這些只見搜尋摘要，Discogs 為使用者編輯站且 403 未開頁，故不收；摘要另說 Nina 是 Eurovision 歌手 Nina Sublatti，未查證且不是同一人的證據，絕對不可寫。兩篇 Side-Line 評論同站，非獨立；《Lost in Fog》是『首張／出道作』的說法只見 Side-Line（官方出道作），故 era 只列發行順序，用 Cryo Chamber 頁（《Red Moon》是第二張）交叉。上線簡介『George Shamanauri 與 Nina 搭檔』本層未能驗證 Nina 一節。"
+ },
+ {
+  "key": "pinkcourtesyphone",
+  "name": "Pinkcourtesyphone",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Pinkcourtesyphone 是 Richard Chartier 的別名。Chartier 1971 年 3 月 29 日生於維吉尼亞州阿靈頓，在詹姆斯麥迪遜大學念平面設計與繪畫（1989 至 1993 年）；他沒受過正規音樂訓練，小時候先聽廚房冰箱的聲音、玩一台 1930 年代收音機入門。",
+      "src": "https://en.wikipedia.org/wiki/Richard_Chartier",
+      "src2": "https://clotmag.com/interviews/richard-chartier-a-pulsating-journey-into-microsounds-and-pink-noise",
+      "from": "new"
+     },
+     {
+      "f": "這個名字的起點是 1997 年，他原本為 Leyland Kirby（The Caretaker）的 VVM 廠牌做了一份 demo，沒有寄出；多年後他拿當年的 loop 與聲音檔重做成第一張專輯《Foley Folly Folio》，Room40 的 Lawrence English 聽到後再向他邀第二張。",
+      "src": "https://clotmag.com/interviews/richard-chartier-a-pulsating-journey-into-microsounds-and-pink-noise",
+      "from": "new",
+      "single": true
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他說 Pinkcourtesyphone 是比本名作品「更直覺」的出口，裝的是他童年的聲音與影像迷戀；「pink」同時指向酷兒的意涵與粉紅噪音，作品常回應酷兒與性別。",
+      "src": "https://clotmag.com/interviews/richard-chartier-a-pulsating-journey-into-microsounds-and-pink-noise",
+      "from": "new",
+      "single": true
+     },
+     {
+      "f": "他自述的影像靈感是電影與夢境，尤其 Fassbinder、Douglas Sirk 與許多 B 級片。",
+      "src": "https://clotmag.com/interviews/richard-chartier-a-pulsating-journey-into-microsounds-and-pink-noise",
+      "from": "new",
+      "single": true
+     },
+     {
+      "f": "本名 Chartier 的作品屬「還原主義」microsound：安靜而稀疏的極簡電子音。",
+      "src": "https://en.wikipedia.org/wiki/Richard_Chartier",
+      "from": "bank",
+      "single": true
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Chartier 2000 年創辦 LINE 廠牌，專發數位極簡的聲音藝術，名單有 Taylor Deupree、Carsten Nicolai（Alva Noto）、Asmus Tietchens、Steve Roden、Mark Fell 等；他本人也與 William Basinski、Taylor Deupree 合作。",
+      "src": "https://en.wikipedia.org/wiki/Richard_Chartier",
+      "from": "new",
+      "single": true
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [],
+  "conflicts": [],
+  "searches": 3,
+  "failedFetches": [],
+  "status": "thin",
+  "pubIssues": [],
+  "notes": "補查 3 次（WebSearch 1、Clot 訪談、英文維基 Richard Chartier；維基預抓為空故自行開頁）。Pinkcourtesyphone 沒有獨立維基條目，維基頁亦未提這個別名，別名身分靠 Clot 訪談與 Room40 專輯頁（事實庫）對上。公認評價：維基只有 2013 年 Inverted Audio 一篇評論形容『meditative and precise』，屬單一樂評，不收。Prix Ars Electronica 2001 榮譽提名（《Series》，LINE 首發）只見維基＋搜尋摘要，屬獎項，且是本名作品，不收進 Pinkcourtesyphone 的 facts。Clot 訪談說第一張是《Foley Folly Folio》（2012），事實庫 Bandcamp 稱《Elegant & Detached》是第二張，兩邊一致；『Foley Folly Folio』年份不寫以避免與 Elegant & Detached 同年的混淆。上線簡介『更情感』與訪談相符；5 首、約 71 分鐘不在本層查證範圍。"
+ }
+]

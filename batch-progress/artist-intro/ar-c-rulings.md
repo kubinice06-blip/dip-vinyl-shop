@@ -2708,3 +2708,51 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 - 與 main 合併時，main 同日另線（add-20261105-md38 等，ar-d-283～286）也寫了 Hammock、Kevin Richard Martin、Benoît Pioulard、Jacob Kirkegaard、Acetone 五位；建置依檔名排序，以本線 ar-d-5xx 版本為準（兩版都經主線審稿）。
 - 合併後介紹總數 10,454 位（本線前 9,650）。
 - 通則補充（本線累積）：研究稿只有一條來源的一律不寫；thin 的「做法」句若只剩角色分工或歌詞性質，撤稿；片假名與平假名人名一律改羅馬字，日文漢字轉台灣字形（冨→富、勲→勳、譲→讓、恵→惠、辺→邊、髙→高、内→內）；在世者的榜單名次、銷量、串流數、認證、獎項數一律不寫。
+
+## 剩餘補登六批（2026-11-06 起，fill-20261106）
+
+- 二十批後重算：卡池 10,823 位藝人，缺介紹 494 位；其中 217 位從沒排過（全部各只有一張卡），另 277 位是歷批試過資料不足沒寫的（141 位記在 skipped、136 位在舊批漏記），不重派。
+- 217 位補登 `roster-fill-20261106.json`（addedBy fill-20261106），切 ar-d-801～806（ar-d-2xx、5xx 已有其他工作階段依序使用，改用 8xx 避開）。腳本 `batch-progress/artist-intro/fill-20261106.mjs`。
+
+## ar-d-801（2026-11-06，當代古典演奏者、作曲家，電子、dark ambient、synth-pop、EBM）
+
+- 37 位寫：20 full、17 thin；不寫 3 位——The Ars Combinatoria String Quartet（沒有聲音事實，評語是評 Carlson 本人）、Todd Seelye（沒有身世）、Rose Kallal（研究稿只有一條來源，比照前例撤稿）。
+- 題材照寫：Robert Miller 50 歲因癌症過世；Richard Skelton 妻子 Louise 2004 年過世；Robert Görl 孤兒院長大、車禍後轉信佛教；protoU 的 Sasha Cats 在戰爭開始後帶兒子離開烏克蘭；Harold Budd 2020 年過世。
+- 主線審稿 9 處：高橋悠治 的「高橋アキ」改 Aki Takahashi、「水牛楽団」改「水牛樂團」，並壓回 250 字；Sephiroth 刪 2025 年重發的單源評語；Robert Görl、Rational Youth、Plastics 第一句補國籍；Rational Youth 刪約 2 萬張與「最暢銷獨立專輯」（在世者不寫銷量）；Plastics 刪一句壓字數。
+
+## ar-d-802（2026-11-06，electronic：dark ambient、EBM、synth-pop、glitch、techno、日本電子）
+
+- 37 位寫：19 full、18 thin；不寫 3 位——Shulman（沒有聲音事實）、Stuzha、Tdel（研究稿只有一條來源，比照前例撤稿）。
+- 題材照寫：Snowy Red 的 Micky Mike 辭世（只有部落格 RIP，無日期與死因，正文只寫「後來辭世」）；TESTPATTERN 的比留間雅夫 2011 年過世；Tobe Hooper 2017 年過世。
+- 主線審稿 23 處：第一句補國籍或身分——SND「英國」、SOFT BALLET 改寫成「日本電子樂團」開頭、Sweatson Klank「製作人」、Trans-X「加拿大」、UnderViewer「比利時」、The Orb 卡補「英國」與 Pink Floyd；在世者不寫榜單、銷量、獎項——Trans-X 刪五國榜位、Stian Westerhus 刪 Spellemannprisen、Trevor Wishart 刪 Giga-Hertz 大獎（Golden Nica 綁在 CDP 這項核心成就上保留）、TESTPATTERN 刪 2025 年重發售罄與二手價、The Hacker 刪「走紅全球」；單源最高級評語刪除——Taphephobia「最受推崇的北歐 ambient 音樂人」、Treha Sektori「同世代最有才華」、The Weathermen「電子音樂的經典」、The Neon Judgement「幾乎與這個類型同義」、SOFT BALLET 降一句；Troum & Yen Pox 補 Yen Pox「美國」以免誤為不來梅；Lehn & Schmickler、Ugasanie & Xerxes、Hooper & Bell 刪句壓回 250 字內。
+
+## ar-d-803（2026-11-06，electronic：dark ambient、synthwave、田野錄音；folk；lo-fi／jazz hip-hop、emo rap；歐洲自由即興合作卡）
+
+- 36 位寫：19 full、17 thin；不寫 4 位——Suff Daddy、SwuM.（研究稿只有一個來源網址）、sleepy fish（兩條來源都是 Stereofox 同一媒體，算一條來源，比照前例撤稿）、Wun Two & Boora（沒有聲音或做法事實，Boora 身分未核實）。
+- 題材照寫：The Nonce 的 Yusef Muhammad 2000 年在洛杉磯過世、得年 28、死因未明（原稿「陳屍高速公路旁」改為克制寫法）；Yoshi Wada 2021 年辭世；Tom Cora 1998 年死於黑色素瘤；Peter Kowald 2002 年在紐約因心臟病過世；Michel Pilz 2023 年、Teppo Hauta-Aho 2021 年、Rolf Kühn 2022 年辭世；Zero Kama 的 Dewitt 改名 Zoe，全文不用人稱代名詞。
+- 主線審稿 34 處：第一句補國籍或身分——Units、The Low Anthem、Wicca Phase、The Nonce「美國」，Talib Kweli、Q-Tip 改以「美國饒舌歌手」開頭，Tsutchie「日本 DJ 兼製作人」、Wen「英國製作人」、Phil Minton「英國即興人聲樂手」、Wachsmann 兩卡「英國」、Yoshi Wada「日本音樂人」、Zero Kama「奧地利」、Glotman 改以「低音提琴手兼作曲家」開頭、Favre「鼓手」、Kühn 卡補「德國兄弟檔」；單源或過度的最高級評語軟化——Madlib「最具影響力的現代製作人之一」刪除、Wachsmann「最好的小提琴手之一」改「重要小提琴手」、Hauta-Aho「最搶手」改「搶手」；Q-Tip 刪 2024 年入選搖滾名人堂（在世者不列榮譽，名人堂評語保留）；Vestigial 刪 2025 年再版的年份；渡辺→渡邊；Yoshi Wada、Phil Minton、Wen、Wicca Phase、The Low Anthem 刪句壓回 250 字。
+
+## ar-d-804（2026-11-06，自由爵士／前衛爵士、歐洲即興合作卡；獨立搖滾、dream pop、後龐克）
+
+- 38 位寫：28 full、10 thin；不寫 2 位——The Ric Colbeck Quartet（只有 Discogs 編制資料，身世與地位都空）、Tim Berne, Craig Taborn & Tom Rainey（唯一的聲音句是 David Torn 談 Taborn 個人，不是三重奏的聲音，比照「做法句只剩個人側寫」撤稿）。
+- 題材照寫：Sonny Simmons 早年流落舊金山街頭、2021 年 4 月過世；Giuseppi Logan 藥物濫用與精神疾病後消失數十年、2020 年 4 月過世（死因與新冠肺炎有關）；Tom Cora 1998 年死於黑色素瘤；Tony Oxley 2023 年、Tristan Honsinger 2023 年、Urs Voerkel 1999 年、Wolfgang Fuchs 2016 年過世（Voerkel 卒年研究稿以德文維基與 MusicBrainz 雙源核對）。
+- 主線審稿 45 處：第一句補國籍或身分（Mitchell 四卡、Braxton、Mahanthappa、Simmons、Logan、Lehman、Courvoisier、Tom Cora 兩卡、Honsinger、Voerkel、Zeena Parkins、Polyrock、Q and Not U、Bennink、Battaglia、Oxley、Guthrie、Raymonde、Sonic Boom、Art Ensemble）；在世者不列榮譽——Mitchell 刪 NEA 爵士大師（兩卡）、Zeena Parkins 刪與 Björk 巡演一句；最高級評語軟化——Purrkur Pillnikk 刪「那個年代最受歡迎也最有影響力」；單人卡壓回 250 字（Simmons、Logan 刪 Bill Dixon 引語等）；Roscoe Mitchell 跨卡重複的「稀疏而不協和」句只留 Sextet 一處；多人卡 Taborn/Baku、Beresford/Bennink 壓回 280 字內。
+
+## ar-d-805（2026-11-06，shoegaze／dream pop、drone／funeral doom、post-rock、no wave、prog；日韓台獨立搖滾；neo-soul、R&B）
+
+- 39 位寫：22 full、17 thin；不寫 1 位——声音玩具（研究稿只有 thepaper.cn 一條來源）。
+- 截止日後事實主線核實：Timber Timbre 主唱 Taylor Kirk 2026 年 4 月 14 日驟逝、得年 44、死因未公開（Billboard Canada、Consequence、Stereogum 等多源，皆引同一份代表聲明），正文一句帶過；The Beta Band 2025 年重組巡演未另行核實，刪除。
+- 題材照寫：Trees of Eternity 的 Aleah Stanbridge 2016 年 4 月因癌症過世、得年 39（派工特注誤拼 Starbridge，研究稿已更正）；Tom Brock 2002 年過世；YEBBA 母親過世後她以〈My Mind〉紀念。
+- 主線審稿 39 處：第一句補國籍或身分（O’Malley、Suburban Lawns、Sun Araw、The Antlers、The Telescopes、Timber Timbre、Sound of Ceres、The Fur.「台灣」、Nisennenmondai 與 Mori wa Ikiteiru「日本」、Sa-Ra、Society of Soul、The Internet、Thee Sinseers「美國」、Spacek「英國」、Tank、Tom Brock、Yazmin Lacey、YEBBA、Yuna 補名字與身分）；在世者不寫獎項、串流——Timber Timbre 刪 Polaris 長短名單、Yuna 刪 Myspace 百萬播放、YEBBA 刪 Sam Smith 合寫（只留一項）、Yazmin Lacey 刪 Ezra Collective 一句；單源與過度評語——Tom Brock「最偉大 soul 歌手之一」（個人部落格）、YEBBA 的 Zane Lowe「最有力」、Thergothon「第一張真正的 funeral doom」、The Fur. SXSW（單源）、Tank「長年維持聲量」刪除；柴田聡子→柴田聰子；多處刪句壓回 250 字。
+
+## ar-d-806（2026-11-06，reggae：roots、rocksteady、ska、dub、lovers rock；沖繩 dub、剛果 soukous×Lee Perry；17 位，補洞與寫作各只有一組）
+
+- 14 位寫：13 full、1 thin；不寫 3 位——問題總部（只有 Bandcamp 一條來源）、Shanti Yalah（沒有聲音事實，身分也查不到）、Well Pleased & Satisfied（身世查不到，聲音只有零售頁單源）。
+- 題材照寫：Roland Alphonso 1998 年在洛杉磯同台演出時倒下、同月辭世（兩源，不寫死因）；Tyrone Evans 2000 年在紐約因癌症過世；The Frightnrs 主唱 Dan Klein 錄首張專輯期間確診漸凍症、2016 年 6 月在發行前過世；Tony Tuff 2024 年在京斯敦辭世（dancehallmag 等）；Seke Molenga 與 Kalo Kawongolo 被法國製作人丟在牙買加、流落街頭。
+- 主線審稿 27 處：第一句補名字與國籍（Prince Alla、Rita Marley、Roland Alphonso、Sammy Dread、Susan Cadogan、Tony Tuff、Tyrone Evans、Winston Jarrett「牙買加」，The Aggrovators、The Frightnrs、Ryukyu Underground 補團名與身分）；在世者不寫榜單——Stick Figure 刪 Billboard 冠軍與終結《Legend》140 週（改補 Ruffwood Records 與早年影響兩句以維持 full）、Susan Cadogan「英國單曲榜第 4 名」改「在英國走紅」（比照 ar-d-520 Mad Professor 卡）；單源評語刪除——Susan Cadogan「lovers rock 代表聲音」、Aggrovators「最重要的錄音室班底」、Sammy Dread「經典 roots 嗓音」、Ryukyu「狂熱」；Roland Alphonso 刪勳位；多處刪句壓回 250 字。
+
+## 剩餘六批收尾（2026-11-06）
+
+- ar-d-801～806 全數上架：217 位寫 201 位、不寫 16 位（研究稿只有一條來源、沒有聲音或身世事實）；主線審稿合計 177 處。
+- 截止日後事實：Taylor Kirk（Timber Timbre）2026 年 4 月驟逝，主線以多源核實後寫入；其餘 2025–26 年的再版、重組、獎項一律刪除。
+- 這 16 位與歷批 277 位資料不足者，依店主規則不再重派；卡池目前沒有從沒排過的藝人。

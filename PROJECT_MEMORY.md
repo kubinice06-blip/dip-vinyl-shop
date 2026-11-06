@@ -1,5 +1,13 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-06｜dip-vinyl-shop｜藝人介紹剩餘補登六批 ar-d-801～806：寫 201 位（總數 10,731）
+
+- **店主 11-06「剩下的分配批次跑完 並上架」**：二十批後重算，卡池 10,823 位藝人缺 494 位；其中 217 位從沒排過，補登 `roster-fill-20261106.json`（addedBy fill-20261106），切 ar-d-801～806（2xx、5xx 已被其他工作階段使用，改用 8xx）。另 277 位是歷批試過、資料不足的，照規則不重派。
+- **結果**：217 位寫 201、不寫 16（研究稿只有一條來源，或沒有聲音／身世事實）；各批 801：37、802：37、803：36、804：38、805：39、806：14；主線審稿合計 177 處（第一句補國籍、在世者刪榜單／獎項／串流、單源最高級評語刪除、片假名與韓文改羅馬字、台灣字形）。
+- **截止日後事實**：Timber Timbre 的 Taylor Kirk 2026 年 4 月驟逝，主線 WebSearch 多源核實後寫入；其餘 2025–26 年的再版、重組、獎項一律刪除。
+- **主要檔案**：`batch-progress/artist-intro/{fill-20261106.mjs,roster-fill-20261106.json,ar-c-rulings.md}`、`desc-tools/batches/artist/{cut,facts,research,output}/ar-d-80[1-6]*`、`desc-tools/batches/artist/progress.json`、`data/artist-intros/`、`audits/ARTIST-PUB-ISSUES.md`。
+- **驗證**：六批 `qa-artist gap` 皆 0 處；`qa-artist out` 皆只剩不寫者的缺位；`build-artist-intros` 64 分片、合併 main 後 10,731 位（main 原 10,530）。
+
 ### 2026-11-06｜dip-vinyl-shop｜情緒薄格頹靡 Bandcamp downtempo 候選第二輪 md43：11 張上線（落頹靡 10）＋藝人介紹 8 位
 
 - **店主 11-06「繼續」**：第一輪剩下靠近邊界的 612 張先過濾成 232 張、切 ml71–73／md42–43，三個工作階段並行；本工作階段只做 md43（卡單 `pick-md43.json` 38 張，條號 24281）。
