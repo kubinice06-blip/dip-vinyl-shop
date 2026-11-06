@@ -1,5 +1,14 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-06｜dip-vinyl-shop｜Spotify 灰鈕：前台快取中毒修正＋KV 補連結 664 張（進行中）
+
+- **店主 11-06**：「好多 Spotify 連結是灰的，趕快全部掃描修復」（例：Grimes《Geidi Primes》）。
+- **主因（前台）**：`index.html` 的 `fetchSpotifyCover` localStorage 快取（300 張、永不過期）連「有封面沒連結」也存，10 月配額爆掉時的空結果被手機記住，KV 補好也不再問。PR #417：快取升 v5 刪 v4、只存有 `spotifyUrl` 的結果。Geidi Primes KV 本來就有連結，屬此類。
+- **資料**：卡池 22,302 張，KV 有連結 7,304、確定沒連結 4,051、未查過 10,947（首次瀏覽即時查）。補沒連結的：Wikidata（MB release-group→P2205，oEmbed 核名）579（含主線判讀 27；不收 Justice→現場盤、Hank Mobley《Hank》→《Hank Mobley》等 6）；Spotify 搜尋（藝人同名＋專輯名相同或只差版本後綴）85，撤回 3 張錯配（Loretta Lynn→Ed Sullivan 現場、Spandau Ballet《True》→EP、Donald Byrd《Black Byrd》→Live），比對改為 Spotify 名帶 live／EP／single 而卡名沒有者不收。KV 寫 `spotifyFix: fill-20261106:*`，舊值存 `before-*.json`。
+- **配額**：worker 的 Spotify app 115 次就 429（retry-after 約 13 小時，正式站新卡查詢同時被鎖）。店主在雲端環境「修正全通」存了第二組 Spotify 憑證（accounts.spotify.com，代理注入；Node fetch 不會被注入，換 token 走 curl），但首請求即 429、倒數與原 app 相同——待店主確認是否為新 app。
+- **進行中**：MusicBrainz url-rels 重查剩餘 3,258 張（`mb.mjs`，免配額）；Spotify 搜尋剩約 3,340 張待配額。
+- 主要檔案：`index.html`、`batch-progress/spotify-fill-20261106/`。
+
 ### 2026-11-06｜dip-vinyl-shop｜頻率光譜：從專輯卡回星圖不重播，接著播完（v70）
 
 - **店主 11-06**：「從專輯卡退回上一頁時，不要重播音樂，繼續播完。」
