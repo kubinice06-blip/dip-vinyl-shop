@@ -9,6 +9,22 @@
 - **MusicBrainz 重查**（免配額，3,299 張）：有登錄 94，收 80（名稱對上 59＋主線判讀 21，如久石譲《風立ちぬ》→《The Wind Rises Soundtrack》、Ayler《Ghosts》→《Vibrations》）；不收 Black Radio→III、J Dilla→Instrumentals、Janet Jackson《janet.》→同名首張等 14。
 - **配額結論**：店主確認一個帳號只能一組 client id，第二組憑證即原 app、配額共用。不另開帳號（等於繞過限流）。改每天解鎖後（約 04:00 UTC）跑 400 次、留六成給正式站，`send_later` 每日自排（`spotify.mjs 400 own`）；剩約 3,300 張、命中率約六成五，預估 7–8 天，約三分之一 Spotify 本來就沒有、維持灰。
 - 主要檔案：`index.html`、`batch-progress/spotify-fill-20261106/`。
+### 2026-11-06｜dip-vinyl-shop｜品味對決試做版 `/game-lab/`：從序章重做成「讀人」對決（獨立頁，不動正式遊戲）
+
+- **店主 11-06**：「我的卡牌遊戲從序章開始就不夠好玩，以我的卡牌遊戲為基底做一個試做的更加好玩版」。雲端工作階段，PR #409。
+- **診斷現行 `roguelike.html`**：到第一個自由出牌要 61 次點擊、6–9 分鐘，教學鎖操作；「讀晃交替」固定公式在第一個 Boss 贏 95%；選哪張卡只解釋 7–11% 的勝負（屬性選擇 60–69%）；拿著王牌就自動擋掉敵方輾壓；Boss 前沒有威脅；完全無聲；隱形放水（DDA）。
+- **設計**：四個方案（讀人心理戰／開放意圖解謎／唱片聆聽派對／巷弄冒險）由三位評審（好玩 45%／店主口味 35%／可建 20%）打分，巷弄冒險 36.4 最高當底盤，整晚搬回店裡，合成規格（約 11 萬字，含已驗證參考引擎）。
+- **成果**（新目錄 `game-lab/`，直接網址，不加 hub 入口）：
+  - 序章：推門真的放一張唱片，靠耳朵猜是哪張，再邊聽邊挑王牌；8 次點擊進第一手（不讀對白約 40 秒，正常閱讀約 75–90 秒）。店主拍板句與原句 36 句一字未改，耳朵宣告句不加回（`lint-copy` 把關）。
+  - 對決：敵方唱片正面朝上、屬性暗選；公開的「氣場唱盤」6 格（真／晃／跟／報／盯／？）＝真實機率，拿掉 DDA；賭注每手遞增；品味輾壓傷害＝當下氣勢、保證命中；割捨防禦＝出剋得到的盤用星數擋；七星回擊要王牌屬性剋得到；霸權改成「王牌被剋這手互不傷害」。屬性鈕直接畫出每格結果，UI 不算傷害（引擎 forecast＝resolve）。
+  - 一晚：交流夜 21:30→02:00 七欄地圖；10 位客人（店主名字產生器命名、各有脾氣、變臉、隱藏習慣）；挖箱、試聽機、7 則事件、櫃檯；12 件發燒配件；Boss 傳說藏家（翻 B 面帶著你沒選的王牌）；唱片櫃、讀人圖鑑、日期種子、10 秒內再來一夜。
+  - 聲光：WebAudio 合成音效（不載音檔）；勝方唱片在大時刻真的播（自己 fetch 試聽 30 秒，不 mount DipPlayer 4.3MB 索引）；唱針落格、看穿／虛晃章、七星回擊全螢幕、打烊演出。
+  - 資料：117 張真專輯（seed 原值，王牌 7/1/1），封面與試聽由 `tools/bake-cards.mjs` 烘進 `cards.js`，執行期不讀 Firestore；只寫 localStorage `dipGameLab_v1`，不碰 `dipRogueMeta_v2`。
+- **平衡**（`sim.mjs` 每格 1,500 場、整晚通關率）：亂點 1.7%、最高星 10.9%、剋氣場 10.8%、舊公式 30.7%、讀唱盤 62.8%、期望值 83.3%、知道真招 100%；期望值玩家 85% 的晚上至少一次七星回擊。為過全部 48 門檻：Boss 聲望 24→26、玩家聲望 22→20。
+- **試玩評審與修正**：四路評審（規則、好玩度、手機版面與文案、音效與存檔）76 項 → 兩路修正 → 獨立驗收兩輪 → 收尾打磨。重點：連點防呆、推門不丟進行中的一晚、結算時重整不丟紀錄、壞存檔可復原、窄螢幕手牌、氣場唱盤改黑膠圈標＋唱臂（不像輪盤）、面板不切小人頭、屬性鈕改一條結果帶、提示時機、手機喇叭聽得到的音效頻段、試聽播完接下一首、試聽機 15 秒、地圖路線與走路動畫、飄字避讓。驗收者好玩度評 7/10。
+- **待店主決定**（`game-lab/README.md`）：敵方唱片明牌；流亡王牌改用 Barney Wilen《Zodiac》（Deerfield 沒試聽，猜歌用不了）；霸權、七星回擊、割捨防禦的新規則；新台詞 182 句集中在 `content.js`，待審清單 `game-lab/LINES-REVIEW.md`。
+- **主要檔案**：`game-lab/{index.html,ui.js,style.css,duel.js,duel.css,fx.js,engine.js,content.js,cards.js,sim.mjs,README.md,LINES-REVIEW.md,mock.html}`、`game-lab/test/engine.test.mjs`、`game-lab/tests/e2e.spec.mjs`、`game-lab/tools/{bake-cards.mjs,lint-copy.mjs,check-content.mjs,deck-lists.json,pitches.json}`、`game-lab/dev/duel-harness.html`。
+- **驗證**：`node game-lab/test/engine.test.mjs` 52,841 項全過；`node game-lab/sim.mjs --n 1500` 48/48；`node game-lab/tools/lint-copy.mjs` 通過；`node game-lab/tests/e2e.spec.mjs` 34/34（390×844、390×660、375×667、360×740）；多輪真人點擊整晚 console 0 錯誤、無橫向捲動。**未驗**：真手機實聽（只在無頭 Chromium 驗過音訊）；`/album-desc` 簡介在 localhost 受 Worker CORS 擋，要在 Pages 預覽或正式站看。
 
 ### 2026-11-06｜dip-vinyl-shop｜頻率光譜：從專輯卡回星圖不重播，接著播完（v70）
 

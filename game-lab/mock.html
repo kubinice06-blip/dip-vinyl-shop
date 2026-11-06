@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="zh-Hant"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>品味對決・試做 線框 | dip vinyl</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+  /* 線框頁專用：每個畫面一個 390×660 框（對決畫面的硬限制），可橫向排開 */
+  body{background:#f2f2f2;overflow-x:hidden;}
+  .mk-head{max-width:1240px;margin:0 auto;padding:16px 16px 4px;}
+  .mk-head h1{font-size:18px;letter-spacing:.12em;margin:0 0 4px;}
+  .mk-head p{font-size:12px;color:#555;margin:0 0 4px;line-height:1.6;}
+  .mk-wall{display:flex;flex-wrap:wrap;gap:22px 18px;justify-content:center;padding:12px 8px 40px;}
+  .mk-cell{display:flex;flex-direction:column;gap:6px;width:390px;max-width:100%;}
+  .mk-cap{font-size:12px;font-weight:700;letter-spacing:.06em;}
+  .mk-cap small{font-weight:400;color:#666;margin-left:6px;}
+  .mk-frame{--W:390px;position:relative;width:390px;max-width:100%;height:660px;background:#fff;border:1px solid #111;overflow:hidden;display:flex;flex-direction:column;}
+  .mk-frame.tall{height:844px;}
+  .mk-frame .lb-modal{position:absolute;}
+  .mk-frame .lb-sheet{animation:none;}
+  .mk-ph{border:1px dashed #999;color:#666;font-size:12px;display:flex;align-items:center;justify-content:center;text-align:center;background:#fafafa;}
+</style>
+</head><body>
+<div class="mk-head">
+  <h1>品味對決・試做 · 畫面線框</h1>
+  <p>每一格是手機 390×660（對決畫面不能捲動的高度）。資料是假的，封面與小人是真的素材。對決畫面由另一支代理實作，這裡只放位置示意。</p>
+  <p>白底細黑框、Space Mono、金與紅點綴；舞台是店裡的 shop2；對話窗沿用勇者鬥惡龍式黑底雙白框。</p>
+</div>
+<div class="mk-wall" id="wall"></div>
+<script src="../dip-character.js?v=2"></script>
+<script src="cards.js"></script>
+<script src="content.js"></script>
+<script>
+(function () {
+  'use strict';
+  var C = window.DipLabContent, CARDS = C.cards;
+  var esc = function (s) { return String(s == null ? '' : s).replace(/[&<>"']/g, function (m) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[m]; }); };
+  // 像素小人（只取線框會用到的幾個；正式版在 ui.js 的 LAB_SPR）
+  var SPRM = {
+    owner: sprRows(['................', '.....dddddd.....', '....dddddddd....', '....dssssssd....', '....ekkeekke....', '....sdssssds....', '.....dddddd.....'], 'w', 'd', { 8: '...wnnnnnnnnw...', 9: '...snnnnnnnns...', 10: '...snnnnnnnns...', 11: '....nnnnnnnn....' }),
+    e0: sprRows(['.....gggggg.....', '.....kkkkkk.....', '....kkkkkkkk....', '...gksssssskg...', '...gssksskssg...', '....ssssssss....', '.....ssssss.....'], 'w', 'b'),
+    e1: sprRows(['................', '.....nnnnnn.....', '....nnnnnnnn....', '....nssssssn....', '....ssksskss....', '....ssssssss....', '.....ssssss.....'], 'e', 'k', { 7: '....rrrrrrrr....' }),
+    e3: sprRows(['................', '......pppp......', '....pppppppp....', '....kssssssk....', '....ekkeekke....', '....ssssssss....', '.....ssssss.....'], 'e', 'k'),
+    boss: sprRows(['.....kkkkkk.....', '.....kkkkkk.....', '.....kkkkkk.....', '...kkkkkkkkkk...', '....ssssssss....', '....sskssyys....', '.....ssssss.....'], 'k', 'k', { 7: '....kkwrrwkk....', 8: '...kkkwrrwkkk...' })
+  };
+  var PLAYER = { head: 'phones', hair: 'm', shirt: 'k', pants: 'e', skin: 'v' };
+  function sprite(key, size) { return key === 'player' ? pixArtHTML(avatarRows(PLAYER), size || 96) : (SPRM[key] ? pixArtHTML(SPRM[key], size || 96) : pixArtHTML(avatarRows(key), size || 96)); }
+  var POS = { p: { door: [48, 408], browse: [136, 458], atdoor: [128, 420], duel: [48, 412] }, o: { counter: [174, 325], between: [85, 452], aisle: [72, 345] }, f: { out: [42, 336], door: [42, 344], 'in': [42, 396], duel: [196, 412] } };
+  function pc(q) { return 'left:' + ((q[0] - 39) / 448 * 100).toFixed(2) + '%;bottom:' + ((492 - (q[1] + 5)) / 492 * 100).toFixed(2) + '%;z-index:' + (q[1] < 402 ? 2 : q[1] < 458 ? 7 + Math.round((q[1] - 402) / 8) : 21 + Math.round((q[1] - 458) / 8)); }
+  function stage(cls, dy, actors, extra) {
+    var h = '<div class="lb-stg ' + cls + '"><div class="lb-stg-in" style="--dy:' + dy + '%">';
+    h += '<div class="rain"></div><img class="door" src="../art/shop2-door-' + ((extra && extra.door) || 0) + '.png" alt="">';
+    (actors || []).forEach(function (a) {
+      h += '<div class="lb-spr ' + a.id + (a.cls ? ' ' + a.cls : '') + '" style="' + pc(POS[a.id][a.at]) + '"><div class="body">' + sprite(a.spr) + (a.anger ? '<div class="lb-anger on">💢</div>' : '') + '</div>' + (a.say ? '<div class="lb-say ' + (a.sayCls || '') + '">' + esc(a.say) + '</div>' : '') + '</div>';
+    });
+    if (extra && extra.notes) h += '<div class="lb-notes on"><span>♪</span><span>♫</span><span>♪</span></div>';
+    h += '<img class="fg back" src="../art/shop2-fg-back.png" alt=""><img class="fg front" src="../art/shop2-fg-front.png" alt=""><div class="shade"></div>';
+    if (extra && extra.inner) h += extra.inner;
+    return h + '</div>' + ((extra && extra.outer) || '') + '</div>';
+  }
+  function src(c) { return c.localCover || c.coverUrl; }
+  function rarity(c) { if (c.tier) return 'ace ' + c.tier; if (c.gold) return 'r-gold'; var s = c.c + c.h + (c.o >= 5 ? 1 : 0); return s >= 9 ? 'r-legendary' : s >= 8 ? 'r-epic' : s >= 7 ? 'r-uncommon' : s >= 6 ? 'r-rare' : 'r-common'; }
+  function cv(id, size, o) {
+    var c = CARDS[id]; o = o || {};
+    var st = size ? 'width:' + size + 'px;height:' + size + 'px;' : '';
+    var badge = c.tier ? '<span class="badge ' + c.tier + '">' + C.aceTitle[c.tier] + '</span>' : (c.gold ? '<span class="badge gold">私藏</span>' : '');
+    return '<div class="lb-cv ' + rarity(c) + (o.sel ? ' sel' : '') + '" style="' + st + '"><div class="alt">' + esc(c.album) + '</div><img src="' + esc(src(c)) + '" alt="" loading="lazy" onerror="this.remove()">' + badge + (o.isNew ? '<span class="badge new">NEW</span>' : '') + '</div>';
+  }
+  function stars(id, long) { var c = CARDS[id]; return '<div class="lb-stars' + (long ? ' long' : '') + '"><span class="c">' + c.c + '</span><span class="o">' + c.o + '</span><span class="h">' + c.h + '</span></div>'; }
+  function tile(id, o) { o = o || {}; var c = CARDS[id]; return '<button class="lb-ct' + (o.sel ? ' sel' : '') + (o.cls ? ' ' + o.cls : '') + '">' + cv(id, o.size, o) + (o.noText ? '' : '<div class="ar">' + esc(c.artist) + '</div><div class="al">' + esc(c.album) + '</div>') + (o.stars === false ? '' : stars(id)) + (o.extra || '') + '</button>'; }
+  function top(left, right) { return '<div class="lb-top"><div class="tt">' + left + '</div>' + (right || '') + '</div>'; }
+  var SND = '<span class="lb-snd"><button aria-label="聲音">🔊</button></span>';
+  function dq(who, text, o) { o = o || {}; return '<div class="lb-dq' + (who ? '' : ' narr') + (o.foe ? ' foe' : '') + (o.menu ? ' hasmenu' : '') + '"><div class="nm">' + esc(who) + '</div><div class="tx">' + esc(text) + '</div><div class="nx on' + (o.choice ? ' choice' : '') + '">▼</div>' +
+    (o.menu ? '<div class="menu">' + o.menu.map(function (m) { return '<button class="lb-dqopt"><span class="cur">▶</span>' + esc(m) + '</button>'; }).join('') + '</div>' : '') + '</div>'; }
+  function strip(ace, ids) {
+    var h = '<div class="lb-strip"><span class="lab">包包</span><div class="slot ace' + (ace ? ' filled' : '') + '">' + (ace ? '<img src="' + esc(src(CARDS[ace])) + '" alt="">' : '') + '</div><span class="sep"></span>';
+    for (var i = 0; i < 7; i++) { var id = ids[i]; h += '<div class="slot' + (id ? ' filled' : '') + (i >= 4 && id ? ' junk' : '') + '">' + (id ? '<img src="' + esc(src(CARDS[id])) + '" alt="">' : '') + '</div>'; }
+    return h + '</div>';
+  }
+  function scene(o) {
+    return top('11/06 的雨夜 <small>#1</small>', (o.goodEar ? '<span class="chip gold">好耳朵</span>' : '') + '<button class="lb-ico" aria-label="快轉">⏩</button>' + SND) +
+      '<div class="lb-scr"><div class="lb-main"><div class="lb-box">' + stage('full', 4.47, o.actors, o.extra) + dq(o.who, o.text, o) + '</div>' + strip(o.ace, o.bag || []) + '</div>' + (o.sheet || '') + '</div>';
+  }
+  var gifts = C.gifts.hall, junk = C.junk, bag = gifts.concat(junk);
+  var frames = [];
+  function add(cap, sub, html, tall) { frames.push('<div class="mk-cell"><div class="mk-cap">' + cap + '<small>' + (sub || '') + '</small></div><div class="mk-frame' + (tall ? ' tall' : '') + '">' + html + '</div></div>'); }
+
+  // 1. title
+  add('title 店門口', '推門＝解鎖聲音',
+    top('<span class="lb-snd"><button>🔇</button></span>', '<button class="lnk">唱片櫃</button><button class="lnk">讀人圖鑑</button>') +
+    '<div class="lb-scr"><div class="lb-main" style="justify-content:flex-start">' +
+    stage('title', 0, [{ id: 'o', at: 'counter', spr: 'owner' }], { inner: '<div class="lb-sign"><h1>品味對決<span class="gold">・</span>試做</h1><p>dip vinyl game lab</p></div>' }) +
+    '<div style="padding:12px 14px;display:flex;flex-direction:column;gap:8px;margin-top:auto"><button class="lb-btn pri big wide">推門（有聲音） ▶</button>' +
+    '<div class="row" style="display:flex;gap:8px"><button class="lb-btn" style="flex:1">🔇 安靜地推門</button><button class="lb-btn" style="flex:1">繼續今晚 <span class="sub">23:20・聲望 14</span></button></div>' +
+    '<p class="lb-sub" style="text-align:center">今天的雨夜 11/06・最佳 1,240 分</p></div></div></div>');
+
+  // 2. scene P4
+  add('scene 對話', 'P4（拍板・第 6 句）',
+    scene({ who: '', text: '你抬起頭。老闆正把一張唱片放上唱盤。櫃檯上還攤著兩張，封套邊緣磨損嚴重，顯然塵封已久。',
+      actors: [{ id: 'o', at: 'counter', spr: 'owner', cls: 'busy' }, { id: 'p', at: 'browse', spr: 'player' }], extra: { notes: true } }));
+
+  // 3. guess
+  var aces = [C.aces.hall, C.aces.pearl, C.aces.heresy];
+  add('guess 猜歌', 'P5 點 ▼ 才展開；不亮星數',
+    scene({ who: '老闆', text: '「這三張，是我這裡最貴的三張。」他沒抬頭。「剛才那段，你覺得是哪一張？」', choice: true,
+      actors: [{ id: 'o', at: 'counter', spr: 'owner', cls: 'busy' }, { id: 'p', at: 'browse', spr: 'player' }], extra: { notes: true },
+      sheet: '<div class="lb-sheet"><div class="hd"><h3>剛才那段，是哪一張？</h3><span class="lb-mini-tt"><span class="rec"></span>播放中</span></div><div class="lb-trio">' +
+        aces.map(function (id) { return tile(id, { stars: false }); }).join('') + '</div><p class="note">點封套作答。音樂會繼續放，不會換歌。</p></div>' }));
+
+  // 4. acePick
+  add('guess 挑王牌', '點封套換著聽；選中的有掃光框',
+    scene({ who: '老闆', text: '「……你眼光真不錯。」老闆終於抬起頭來，看著你。', goodEar: true,
+      actors: [{ id: 'o', at: 'counter', spr: 'owner' }, { id: 'p', at: 'browse', spr: 'player' }],
+      sheet: '<div class="lb-sheet"><div class="hd"><h3>（點封套換著聽，挑一張帶走。）</h3><span class="lb-mini-tt"><span class="rec"></span>OK Computer</span></div><div class="lb-trio">' +
+        aces.map(function (id, i) {
+          var c = CARDS[id], t = ['hall', 'pearl', 'heresy'][i], ax = C.aceAxis[t];
+          return tile(id, { sel: i === 0, stars: false, noText: true, extra: '<div class="acex"><span class="' + ax + '">' + C.aceTitle[t] + '・' + { c: '經典', o: '冷門', h: '硬蕊' }[ax] + ' 7</span>｜' + C.ears[t].name + '</div><div class="ar">' + esc(c.artist) + '</div><div class="pitch">' + esc(c.pitch || '') + '</div>' });
+        }).join('') + '</div><button class="lb-btn pri big wide">就這張</button></div>' }));
+
+  // 5. retort
+  add('scene 回嘴', 'P13 點 ▼ 後，對話窗裡出現兩句（勇者鬥惡龍式選單）',
+    scene({ who: '', text: '你的憤怒表露無遺。', ace: C.aces.hall, bag: bag, menu: C.retorts.map(function (r) { return r.label; }),
+      actors: [{ id: 'o', at: 'counter', spr: 'owner' }, { id: 'p', at: 'atdoor', spr: 'player', anger: true }, { id: 'f', at: 'in', spr: 'e0' }] }));
+
+  // 6. duel wireframe
+  add('duel 對決', 'Agent C 實作；這裡只示意位置（390×660 不捲動）',
+    '<div class="lb-scr" style="padding:0">' +
+    '<div class="mk-ph" style="height:32px">22:00 那張我有 ？ 賭注×2 🔊 ? ⏸</div>' +
+    stage('duel', 15.24, [{ id: 'p', at: 'duel', spr: 'player' }, { id: 'o', at: 'counter', spr: 'owner', say: '格子顏色＝他會出的；數字＝結果。', sayCls: 'hint' }, { id: 'f', at: 'duel', spr: 'e1', say: '我也有！我也有！', sayCls: 'r' }]).replace('class="lb-stg duel"', 'class="lb-stg duel" style="height:150px;flex:none"') +
+    '<div class="mk-ph" style="height:22px">那張我有 文青同好　聲望 ███████ 18</div><div class="mk-ph" style="height:16px">氣勢 ▮▮▮▯▯┃▯▯▯▯ 6⚡經典</div>' +
+    '<div style="display:flex;gap:8px;padding:6px 8px;height:110px">' + cv('lorde-melodrama', 88) + '<div class="mk-ph" style="width:96px;border-radius:50%">氣場唱盤<br>跟 跟 真<br>真 報 晃</div><div class="mk-ph" style="flex:1">點播：民謠<br>王牌接得住</div></div>' +
+    '<div class="mk-ph" style="height:48px;margin:0 8px">讀中！品味突襲 冷門4−他的1＋賭注2＝5</div>' +
+    '<div class="mk-ph" style="height:36px;margin:4px 8px">聲望 ██████ 20　氣勢 ▮▮▮▯　相生 ●●○→硬　[品味輾壓 6]</div>' +
+    '<div style="display:flex;gap:6px;padding:4px 8px">' + cv(C.aces.hall, 64) + bag.slice(0, 4).map(function (id) { return cv(id, 66); }).join('') + '</div>' +
+    '<div style="display:flex;gap:6px;padding:6px 8px">' + ['經典 5', '冷門 2', '硬蕊 3'].map(function (t) { return '<div class="mk-ph" style="flex:1;height:76px">' + t + '<br>經×2 撞 平<br>冷×2 你−3</div>'; }).join('') + '</div></div>');
+
+  // 7. reward
+  add('reward 押盤翻開', '翻開就開始播；二選一',
+    '<div class="lb-scr">' + top('22:00 那張我有 <small>勝</small>', '<span class="lb-hpchip">聲望 <b>17</b>/20</span>' + SND) +
+    '<div class="lb-main" style="justify-content:flex-start">' + stage('full', 4.47, [{ id: 'o', at: 'counter', spr: 'owner' }, { id: 'p', at: 'browse', spr: 'player' }, { id: 'f', at: 'in', spr: 'e1', say: '我回去也要買一張。', sayCls: 'l' }], { notes: true }) + '</div>' +
+    '<div class="lb-sheet"><div class="hd"><h3>他押的那張</h3><span class="lb-mini-tt"><span class="rec"></span>播放中</span></div>' +
+    '<div class="lb-flip"><div class="card3d"><div class="in" style="transform:rotateY(180deg)"><div class="back"><div class="lb-sleeve r-epic">' + stars('mogwai-come-on-die-young') + '</div></div><div class="face">' + cv('mogwai-come-on-die-young', 0, { isNew: true }) + '</div></div></div>' +
+    '<div class="meta"><div class="ar">Mogwai</div><div class="al">Come On Die Young</div><div class="ar">1999・rock</div>' + stars('mogwai-come-on-die-young', true) + '<div class="tags"><span class="new">NEW</span><button class="lnk">ⓘ 唱片資訊</button></div></div></div>' +
+    '<div class="row"><button class="lb-btn big">收進包包<span class="sub">包包 8／12</span></button><button class="lb-btn big">拿 45 轉接環<span class="sub">每場開局氣勢 +2</span></button></div></div></div>');
+
+  // 8. map
+  var F = function (k) { return '<span class="face">' + sprite(k, 40) + '</span>'; };
+  var cols = [['✓'], [F('e1'), F({ head: 'fedora', hair: 'k', shirt: 'g', pants: 'k', skin: 't' })], ['📦', '🎧'], [F('e3'), '🗣️'], ['★', '☕'], [F({ head: 'cap', hair: 'u', shirt: 'r', pants: 'd', skin: 's' }), '🎧'], [F('boss')]];
+  var times = C.map.times;
+  var tl = '<div class="lb-tl"><div class="grid">' + times.map(function (t, i) { return '<div class="tm' + (i === 1 ? ' now' : '') + '">' + t + '</div>'; }).join('') +
+    [0, 1].map(function (r) { return cols.map(function (c, i) { var n = c[r]; if (!n) return '<div class="cell"></div>'; var cls = 'lb-node' + (i === 0 ? ' done went' : i === 1 ? ' can' : '') + (n === '★' ? ' elite' : '') + (i === 6 ? ' boss' : ''); return '<div class="cell"><button class="' + cls + '">' + (i === 0 ? '✓' : n === '★' ? F('e5') + '<span class="mk">★</span>' : n) + '</button></div>'; }).join(''); }).join('') +
+    cols.map(function (c, i) { return '<div class="here">' + (i === 1 ? '▲ 下一位' : '') + '</div>'; }).join('') + '</div></div>';
+  var bagbar = '<div class="lb-bagbar"><button class="bag">包包 7／12</button><span class="lab">配件</span><div class="relics"><button title="黑膠唱針">' + (window.pixArtHTML ? '' : '') + '🪡</button></div></div>';
+  add('map 今晚的時間軸', '只能往右；點節點看預覽',
+    '<div class="lb-scr">' + top('11/06 的雨夜 <small>#1</small>', '<span class="lb-hpchip">聲望 <b>16</b>/20</span>' + SND + '<button class="lb-ico">？</button><button class="lb-ico">⏸</button>') +
+    '<div class="lb-main" style="justify-content:flex-start">' + stage('map', 0, [{ id: 'o', at: 'counter', spr: 'owner' }, { id: 'p', at: 'door', spr: 'player' }, { id: 'f', at: 'out', spr: 'e1', cls: 'sil' }]) + '</div>' + tl + bagbar + '</div>');
+
+  // 9. node preview
+  add('map 節點預覽', '「就他了」才走過去',
+    '<div class="lb-scr">' + top('11/06 的雨夜 <small>#1</small>', '<span class="lb-hpchip">聲望 <b>16</b>/20</span>' + SND) +
+    '<div class="lb-main" style="justify-content:flex-start">' + stage('map', 0, [{ id: 'o', at: 'counter', spr: 'owner' }, { id: 'p', at: 'door', spr: 'player' }]) + '</div>' + tl +
+    '<div class="lb-sheet"><div class="lb-pv"><div class="who"><div class="face">' + pixArtHTML(avatarRows({ head: 'fedora', hair: 'k', shirt: 'g', pants: 'k', skin: 't' }), 48) + '</div><div><div class="nm">剁手黨</div><div class="ti">22:00・客人</div></div></div>' +
+    '<p class="blurb">氣勢漲得快，常放品味輾壓。</p>' +
+    '<div class="ln"><span class="k">唱盤</span><span class="lb-glyphs">' + ['真', '真', '晃', '報', '跟', '盯'].map(function (g) { return '<span class="lb-glyph' + (g === '晃' ? ' feint' : '') + '">' + g + '</span>'; }).join('') + '</span></div>' +
+    '<div class="ln"><span class="k">聲望</span><b>18</b><span class="k">輾壓</span><b>氣勢 6・<span class="lb-attr h">硬蕊</span></b><span class="lb-gold-tag">王牌接得住</span></div>' +
+    '<div class="ln"><span class="k">押盤</span><div class="lb-sleeve r-epic" style="width:44px;height:44px"></div>' + stars('mogwai-come-on-die-young', true) + '</div>' +
+    '<div class="ln"><span class="k">點播</span><b>電子</b><span class="k">身上</span><b>45 轉接環</b></div>' +
+    '<div class="row" style="margin-top:4px"><button class="lb-btn pri big">就他了</button><button class="lb-btn big">再看看</button></div></div></div></div>');
+
+  // 10. crate
+  add('node 挖箱', '箱子→三張正面→挑一張',
+    '<div class="lb-scr">' + top('22:40 挖箱', '<span class="lb-hpchip">聲望 <b>16</b>/20</span>' + SND) +
+    '<div class="lb-main" style="justify-content:flex-start">' + stage('map', 0, [{ id: 'o', at: 'counter', spr: 'owner' }, { id: 'p', at: 'browse', spr: 'player', cls: 'dig' }]) + '</div>' +
+    '<div class="lb-sheet"><div class="hd"><h3>爵士區</h3><span class="lb-sub">挑一張進包包</span></div><div class="lb-trio">' +
+    ['kenny-wheeler-gnu-high', 'andrew-cyrille-what-about', 'barney-wilen-moshi'].map(function (id) { return tile(id); }).join('') +
+    '</div><p class="lb-result">老闆：「這張……本來沒要賣的。」</p><button class="lb-btn wide">都不要</button></div></div>');
+
+  // 11. listen
+  add('node 試聽機', '播 15 秒，猜一張',
+    '<div class="lb-scr">' + top('22:40 試聽機', '<span class="lb-hpchip">聲望 <b>16</b>/20</span>' + SND) +
+    '<div class="lb-main" style="justify-content:flex-start">' + stage('map', 0, [{ id: 'o', at: 'counter', spr: 'owner' }, { id: 'p', at: 'browse', spr: 'player' }], { notes: true }) + '</div>' +
+    '<div class="lb-sheet"><div class="lb-listen-head"><div class="lb-tt spin"></div><div><b>試聽機</b><div class="lb-sub">♪ 正在放其中一張。猜中回 6 聲望，猜錯回 3。</div></div></div><div class="lb-trio">' +
+    ['fela-kuti-zombie', 'merzbow-1930', 'bill-evans-waltz-for-debby'].map(function (id) { return tile(id, { stars: false }); }).join('') + '</div></div></div>');
+
+  // 12. event
+  var ev = C.events[0];
+  add('node 事件', '後果先寫在選項上',
+    '<div class="lb-scr">' + top('23:20 ' + esc(ev.title), '<span class="lb-hpchip">聲望 <b>16</b>/20</span>' + SND) +
+    '<div class="lb-main" style="justify-content:flex-start">' + stage('map', 0, [{ id: 'o', at: 'counter', spr: 'owner' }, { id: 'p', at: 'browse', spr: 'player' }, { id: 'f', at: 'in', spr: { head: 'cap', hair: 'k', shirt: 'n', pants: 'k', skin: 't' } }], { door: 1 }) + '</div>' +
+    '<div class="lb-sheet"><div class="hd"><h3>' + esc(ev.title) + '</h3></div><p class="lb-event-text">' + esc(ev.text) + '</p><div class="lb-opts">' +
+    ev.options.map(function (o) { return '<button class="lb-btn two big">' + esc(o.label) + '<span class="sub">' + esc(o.note) + '</span></button>'; }).join('') + '</div></div></div>');
+
+  // 13. rest
+  add('node 櫃檯', '喝茶或洗一張盤',
+    '<div class="lb-scr">' + top('00:10 櫃檯', '<span class="lb-hpchip">聲望 <b>9</b>/20</span>' + SND) +
+    '<div class="lb-main" style="justify-content:flex-start">' + stage('map', 0, [{ id: 'o', at: 'counter', spr: 'owner', say: '茶還燙，慢慢喝。' }, { id: 'p', at: 'browse', spr: 'player' }]) + '</div>' +
+    '<div class="lb-sheet"><div class="hd"><h3>櫃檯</h3></div><div class="lb-opts"><button class="lb-btn two big pri">喝杯茶<span class="sub">回 8 聲望</span></button><button class="lb-btn two big">洗一張盤<span class="sub">包包裡一張盤的最高軸 +1（上限 5）</span></button></div>' +
+    '<div class="lb-pick">' + bag.slice(0, 4).map(function (id) { return tile(id, { noText: true }); }).join('') + '</div></div></div>');
+
+  // 14. end
+  add('end 結算', '可捲動；再來一夜 ≤10 秒',
+    '<div class="lb-scr scroll">' + top('11/06 的雨夜 <small>#2</small>', SND) + '<div class="lb-pad">' +
+    '<div class="lb-endhero"><div class="pic">' + pixArtHTML(avatarRows(PLAYER), 64) + '</div><div><div class="lb-h1">今晚就到這</div><p class="lb-sub">走到 00:10・名盤守門員・第 6 手</p></div></div>' +
+    '<div class="lb-lost"><div class="k">輸在這一手</div><div class="b">虛晃！他喊冷門，出的是經典：賭注 6＋虛晃 2＝8</div><div class="s">差 3 滴聲望</div></div>' +
+    '<div class="lb-h2">品味分數</div><div class="lb-bigscore">835<small>今天最佳</small></div><table class="lb-parts"><tr><td>勝場 ×3</td><td>300</td></tr><tr><td>讀中 ×9</td><td>90</td></tr><tr><td>看穿 ×3</td><td>75</td></tr><tr><td>七星回擊 ×1</td><td>60</td></tr><tr><td>🔍發現 ×2</td><td>40</td></tr><tr><td>新認識的盤 ×6</td><td>90</td></tr><tr class="tot"><td>合計</td><td>835</td></tr></table>' +
+    '<div class="lb-h2">今晚認識的盤 <small>6 張</small></div><div class="lb-wall">' + ['fishmans-long-season', 'mogwai-come-on-die-young', 'kenny-wheeler-gnu-high', 'fela-kuti-zombie', 'nick-drake-bryter-layter', 'barney-wilen-moshi'].map(function (id) { return tile(id, { isNew: true, noText: true, stars: false }); }).join('') + '</div>' +
+    '<div class="lb-endbtns"><button class="lb-btn pri big wide">再來一夜</button><div class="row"><button class="lb-btn">唱片櫃</button><button class="lb-btn">讀人圖鑑</button></div></div></div></div>');
+
+  // 15. shelf
+  add('shelf 唱片櫃', '點封面＝唱片資訊',
+    '<div class="lb-scr scroll">' + top('唱片櫃 <small>已認識 14／117</small>', '<button class="lb-ico">✕</button>') + '<div class="lb-pad">' +
+    '<div class="lb-filters"><button class="lb-btn on">全部</button><button class="lb-btn">NEW</button><button class="lb-btn">王牌</button></div><div class="lb-wall">' +
+    ['radiohead-ok-computer', 'fishmans-long-season', 'mogwai-come-on-die-young', 'kenny-wheeler-gnu-high', 'fela-kuti-zombie', 'nick-drake-bryter-layter', 'barney-wilen-moshi', 'david-bowie-low', 'bill-evans-waltz-for-debby', 'merzbow-1930', 'swans-filth', 'coldplay-mylo-xyloto'].map(function (id, i) { return tile(id, { isNew: i < 3, noText: true }); }).join('') + '</div></div></div>');
+
+  // 16. book
+  var bk = ['copycat', 'already', 'needle', 'skip', 'broke', 'buyer', 'label', 'critic', 'boss', 'man'];
+  add('book 讀人圖鑑', '沒見過＝剪影；發現的習慣下一夜攤開',
+    '<div class="lb-scr scroll">' + top('讀人圖鑑 <small>4／10</small>', '<button class="lb-ico">✕</button>') + '<div class="lb-pad"><div class="lb-book">' +
+    bk.map(function (id, i) { var E = C.enemies[id], met = i < 4 || id === 'man'; return '<div class="lb-bk' + (met ? '' : ' unmet') + '"><div class="pic">' + (E.spr ? sprite(SPRM[E.spr] ? E.spr : 'e0', 48) : pixArtHTML(avatarRows(E.avatar), 48)) + '</div><div class="nm">' + (met ? esc(E.name) : '？？？') + '</div>' + (met ? '<div class="ti">' + esc(E.title || '') + '</div><div class="bl">' + esc(E.blurb) + '</div>' + (id === 'already' ? '<div class="bl">🔍 已發現：<b>跟</b></div>' : '') + '<div class="wl">勝 2・敗 1</div>' : '') + '</div>'; }).join('') + '</div></div></div>');
+
+  // 17. info
+  var ic = CARDS['david-bowie-low'];
+  add('info 唱片資訊', '長按 450 ms 或點 ⓘ',
+    top('11/06 的雨夜', '') + '<div class="lb-scr"></div><div class="lb-modal"><div class="pane lb-info"><button class="lb-ico x">✕</button><div class="top">' + cv('david-bowie-low') +
+    '<div class="meta"><div class="al">' + esc(ic.album) + '</div><div class="ar">' + esc(ic.artist) + '</div><div class="yr">' + ic.year + '・' + ic.genres.join(' / ') + '</div>' + stars('david-bowie-low', true) + '</div></div>' +
+    '<p class="pitch">' + esc(ic.pitch || '') + '</p><p class="desc load">……</p><div class="act"><button class="lb-btn pri big">▶ 試聽</button><button class="lb-btn big">關閉</button></div></div></div>');
+
+  // 18. help + settings
+  var tri = '<svg class="tri" viewBox="0 0 220 150" aria-label="相剋三角"><defs><marker id="ah" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#111"/></marker></defs>' +
+    '<text x="110" y="20" text-anchor="middle" font-size="14" font-weight="700" fill="#6a3fa0">冷門</text><text x="22" y="138" text-anchor="middle" font-size="14" font-weight="700" fill="#1f5fae">經典</text><text x="198" y="138" text-anchor="middle" font-size="14" font-weight="700" fill="#c11628">硬蕊</text>' +
+    '<line x1="96" y1="30" x2="34" y2="118" stroke="#6a3fa0" stroke-width="2.5" marker-end="url(#ah)"/><line x1="48" y1="134" x2="170" y2="134" stroke="#1f5fae" stroke-width="2.5" marker-end="url(#ah)"/><line x1="188" y1="118" x2="124" y2="30" stroke="#c11628" stroke-width="2.5" marker-end="url(#ah)"/></svg>';
+  add('help 小抄', '右上 ？',
+    top('11/06 的雨夜', '') + '<div class="lb-scr"></div><div class="lb-modal"><div class="pane lb-help"><button class="lb-ico x">✕</button><h2>小抄</h2>' + tri + '<p>' + esc(C.help) + '</p></div></div>');
+  add('⏸ 設定', '',
+    top('11/06 的雨夜', '') + '<div class="lb-scr"></div><div class="lb-modal"><div class="pane"><button class="lb-ico x">✕</button><h2>暫停</h2><div class="lb-menu">' +
+    '<button class="lb-btn pri big">繼續</button><button class="lb-btn big">回標題（存檔）</button><button class="lb-btn big">聲音 <span class="sw on">開</span></button>' +
+    '<button class="lb-btn big">進階：自己讀唱盤 <span class="sw">關</span></button><button class="lb-btn big">動畫加速 <span class="sw">關</span></button><button class="lb-btn big ghost">重置試做版存檔</button></div></div></div>');
+
+  document.getElementById('wall').innerHTML = frames.join('');
+})();
+</script>
+</body></html>
