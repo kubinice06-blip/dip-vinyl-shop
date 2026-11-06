@@ -125,3 +125,15 @@
 - **24191** 逐張審 9 張（全文印出，逐句對研究稿 a／c／d／e；抽核 CBL 的 Solar Quest《Orgship》與 Hedberg 姊姊、Delerium 30 人合唱團進西溫哥華教堂比取樣授權便宜（維基引 Drop-D 訪談）、Krusseldorf 第一張交給以色列 Aleph Zero（Igloo）、Ian Hawgood PTSD 復健期（quiet details 藝人自述）、Veryan 太極招式曲名與父親過世（廠牌頁），皆有出處）。改 1 張 1 處（`desc-override.json`），研究／hooks／input 不需同步（只動措辭）：
   - `Macroblank|絶望に負けた`：「作品多交給 Aloe City 系廠牌的 Macroblank，」→「Macroblank 的作品多交給 Aloe City 系廠牌，」（原句主詞錯置，讀成廠牌名叫 Macroblank）。
 - 媒體名、榜單名次、「據說／據傳」全批 0。`fix-spacing` 只報 VANITAS命死 藝人名內部，照卡池掛名不動。
+
+## 主線試聽／封面／三軸（不佔條號；2026-11-06）
+- 試聽：自動配對＋override 1（Photon §1 人工身分無 MB 曲目表，取 Apple us 1573411551，盤名、藝人、10 軌、日期與 Bandcamp 一致）→ ready 8／unavailable 1（Macroblank，Apple 查無）；`popular-preview manifest` 換成最紅那首 8 張。
+- 封面：CAA release-group front 8；Photon（人工身分無 CAA）用 Bandcamp og:image 1200px（`covers.json`）。全批 HTTP 200，主線縮圖表目視與盤名相符。
+- 三軸：機器基線（worker /album-rating，Last.fm listeners）；CBL《Hydroponic Garden》、Delerium《Karma》為藝人代表作，經典度上調 4（`ratings-override.json`，Karma 硬蕊 2）；冷門度照 §0.8.1 下限表無需上調。頂點 0（無殿堂共識、listeners 皆 ≥772 非遺珠、無異端證據）。
+
+## 上線（2026-11-06，主線）（條號 24192）
+- **24192**：上線 9 張：card_catalog 9／9、KV 11 鍵（含兩張 desc4 的 desc2 別名鍵）回讀逐字一致（stamp 20261106ml73）、seed +9、prepare／published gate 0 error（warning 皆 UPC 盡力而為與 Photon 人工身分）。寫入前 `git fetch` 確認 origin/main 無新提交；藝人介紹 ar-d-529（寫 3、不寫 VANITAS命死）同 PR 上線（`batch-progress/artist-intro/ar-d-rulings-ml73.md`）。
+
+## 評分與落格（2026-11-06，主線）（條號 24193）
+- **24193**：Opus 1 支照 `score500/BRIEF.md`（10-23 體感標準）打 9 張（`batch-progress/mood-axes/score-ml73/`，聲音依據讀研究稿），主線看過未改值。`build-priors` → `build-scale v0`（錨點 104/104）→ `build-card-moods`；`warm-batch` 7/9 有標籤，`build-genre-tree --pull --write`、`build-draw-covers --pull --write` 重建。
+- **落格率 8/9**。出格：VANITAS命死《心の泉》z −0.1 落頹靡（研究稿無聲音描述，評分貼 0 猜）。

@@ -101,3 +101,15 @@
   - `Ascendant|Æthereal Code`：「那家廠牌叫 Synphaera，是洛杉磯的獨立電子氛圍廠牌，2015 年由 Ascendant 自己創立。」→「那家廠牌叫 Synphaera，是 2015 年在洛杉磯成立的獨立電子氛圍廠牌。」（與 hook「自己開了廠牌」重複）。
 - Cell 前兩句只交代人名與廠牌（寫作 24265 提請）：Ultimae 為 ambient／downtempo 廠牌、第三句即寫節拍與質地，判可接受，不改。
 - 媒體名、榜單名次、「據說／據傳」全批 0。
+
+## 主線試聽／封面／三軸（不佔條號；2026-11-06）
+- 試聽：自動配對 → ready 8；`popular-preview manifest` 換成最紅那首 5 張。
+- 封面：CAA release-group front 8／8，HTTP 200，主線縮圖表目視與盤名相符。
+- 三軸：機器基線（worker /album-rating）；經典度一律 3（場景二線、無代表作共識），冷門度照 §0.8.1 下限表無需上調。頂點 0。
+
+## 上線（2026-11-06，主線）（條號 24272）
+- **24272**：上線 8 張：card_catalog 8／8、KV 8 鍵回讀逐字一致（stamp 20261106md42）、seed +8、prepare／published gate 0 error（warning 皆 UPC 盡力而為）。藝人介紹 ar-d-530（寫 3）同 PR 上線。
+
+## 評分與落格（2026-11-06，主線）（條號 24273）
+- **24273**：Opus 1 支打 8 張（`batch-progress/mood-axes/score-md42/`），主線看過未改值；`warm-batch` 8/8 有標籤，類型樹、抽卡封面重建。
+- **落格率 8/8**。
