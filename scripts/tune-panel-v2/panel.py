@@ -324,10 +324,10 @@ vgroove(fq_x_end, y_fq, y_fq_end)
 out.paste(FQ.crop((828, 14, 1310, 110)), (fq_x(828), 14 - TITLE_Y0 + y_fq))
 
 # ── 右欄：就這張＋隨機（原本一顆 168×358 直鍵 → 上長下短兩顆）────────
-# 2026-11-06 店主：「就這張溢出按鈕了」「隨機只需要留骰子」——隨機鍵只放骰子、縮成短鍵，
-# 讓出來的高度給就這張，字改直排（跟原本的直鍵一樣），三個字放得下又夠大
+# 2026-11-06 店主：「就這張溢出按鈕了」「隨機只需要留骰子」「就這張也要有一個圖示可以代表」——
+# 兩顆鍵都只放像素圖示（就這張＝黑膠唱片、隨機＝骰子），字拿掉，回到上下等高
 KEY_W, KEY_GAP = 168, 11
-KEY_H_DRAW, KEY_H_RAND = 226, 94
+KEY_H_DRAW = KEY_H_RAND = 160
 kx0 = fq_x_end + GROOVE + ((INNER_X1 - fq_x_end - GROOVE) - KEY_W) // 2
 ky_a = y_fq + 16
 ky_b = ky_a + KEY_H_DRAW + KEY_GAP
@@ -359,7 +359,7 @@ kr = np.asarray(short_key(BTN, KEY_H_RAND)).astype(float)
 lum = np.clip(kr @ np.array([.299, .587, .114]), 0, 255).astype(int)
 key_rand = Image.fromarray(np.clip(copper_lut()[lum], 0, 255).astype('uint8'))
 # 骰子（9×9 格，三點）畫在隨機鍵上
-gk = Grid((KEY_W - 9 * P) / 2, (KEY_H_RAND - 9 * P) / 2 - 2, key_rand)   # 置中（略往上，鍵的下緣比較厚）
+gk = Grid(round((KEY_W - 9 * P) / 2), round((KEY_H_RAND - 9 * P) / 2) - 3, key_rand)   # 置中（略往上，鍵的下緣比較厚）
 DIE_HI = tuple(int(v) for v in copper_lut()[230])
 for a in range(9):
     for b in range(9):
@@ -370,6 +370,30 @@ for a in range(9):
         gk.box(a, b, a + 1, b + 1, INK if edge else DIE_HI)
 for a, b in ((2, 2), (4, 4), (6, 6)):
     gk.box(a, b, a + 1, b + 1, INK)
+# 黑膠唱片（13×13 格）畫在就這張鍵上：黑盤、兩圈溝紋、左上一道反光、中間標籤＋軸孔
+VINYL_N = 13
+gv = Grid(round((KEY_W - VINYL_N * P) / 2), round((KEY_H_DRAW - VINYL_N * P) / 2) - 3, key_draw)
+DISC, GROOVE_C, SHEEN, LABEL, LABEL_HI = (16, 13, 10), (52, 45, 36), (150, 132, 96), (196, 64, 44), (232, 112, 72)
+VINYL = [                                         # 手點的 13×13：D 黑盤、g 溝紋、s 反光、L 標籤、l 標籤亮面、o 軸孔
+    '....DDDDD....',
+    '..DDDDDDDDD..',
+    '.DDsDDDDDDDD.',
+    '.DsDDggggDDD.',
+    'DsDgDDDDDgDDD',
+    'DDgDDlLLDDgDD',
+    'DDgDDLoLDDgDD',
+    'DDgDDLLLDDgDD',
+    'DDDgDDDDDgDDD',
+    '.DDDggggDDDD.',
+    '.DDDDDDDDDDD.',
+    '..DDDDDDDDD..',
+    '....DDDDD....',
+]
+VC = {'D': DISC, 'g': GROOVE_C, 's': SHEEN, 'L': LABEL, 'l': LABEL_HI, 'o': DISC}
+for b, row in enumerate(VINYL):
+    for a, ch in enumerate(row):
+        if ch in VC:
+            gv.box(a, b, a + 1, b + 1, VC[ch])
 key_draw.save(os.path.join(SPR, 'key-draw.png')); key_rand.save(os.path.join(SPR, 'key-rand.png'))
 
 # ── 篩選列（FILTER）：三顆篩選滾筒＋名牌，右邊液晶計數＋全部鍵 ─────────
@@ -662,8 +686,7 @@ put_l(mock, text_img('RADIO', 2, DIM), R_SW['lab_bot'][0], (R_SW['led_bot'][1] +
 hl = (255, 236, 170, 140)
 mock.paste(key_draw, R_KEYS['draw'][:2]); mock.paste(key_rand, R_KEYS['rand'][:2])
 rk = R_KEYS['draw']
-for i, ch in enumerate('就這張'):                 # 直排
-    put(mock, text_img(ch, 3, INK, (2, 2, hl)), (rk[0] + rk[2]) / 2, (rk[1] + rk[3]) / 2 + (i - 1) * 54)
+# 兩顆鍵只有圖示（畫在零件圖上），不疊字
 # 篩選滾筒
 FL_ITEMS = {
     'genre': [('搖滾', DIM), ('爵士', AMBER), ('電子', DIM)],
