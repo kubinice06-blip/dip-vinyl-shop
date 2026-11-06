@@ -3865,4 +3865,7 @@ window.DipPreviewStatus = Object.freeze({
   "rún|rún": "unavailable",
   "macroblank|tales of the cypher": "unavailable",
   "moth equals|sick puppy": "unavailable",
+  "desert sand feels warm at night|バビロンの空中庭園 下": "unavailable",
+  "desert sand feels warm at night|バビロンの空中庭園 上": "unavailable",
+  "lindsheaven virtual plaza|nordwrong": "unavailable",
 });

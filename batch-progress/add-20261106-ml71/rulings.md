@@ -103,3 +103,20 @@
 - 24017：派工補充照辦：媒體名一律不進 note（Elaquent 寫「一家音樂網站」並指派網站名這一格不寫；Lauge、Deadbeat 寫「樂評」）；研究稿自量頻譜／BPM（Monde UFO F8、Telenights F5–F6、Yaima F8–F9、下集 F7–F8）未進 note；Deadbeat 已故染織家標「寫得克制」。hook 型：懸疑（ASURA、Elaquent、Lindsheaven、Atomic Skunk）／斷言（Delerium、Monde UFO、Telenights、SoS、Lauge）／場景（AES、Yaima、Shwamp、上集、Deadbeat）／人物定調（下集、't Geruis）。
 - 24018：自查：hook 間中文 4-gram 0 條；開頭前四字 16 張互異，也與 ml68–70、md39–41 已交 hook 開頭不同；hook 與 note 無逐字重複句（Delerium note 改「這條路線的起點」避開與 hook 重字）。`qa-batch hooks` 全部通過；`chk-hook-crossgroup` 全部通過（只報不擋 2 筆「沒有」皆為內容：下集自介引句、上集「數位版沒有的〈幻想〉」）。
 - 24019–24020：（預留未用）
+
+## 寫作層（writer-1）（24021–24030）
+- 24021：交件 `desc-tools/batches/output/add-20261106-ml71-out-1.json` 16 張（full／partial 10：186–238；thin 6：147–178）。逐張：Delerium 227、ASURA 211、AES DANA 238、Monde UFO 227、Telenights 169、Yaima 203、下集 159、Lauge 219、Shwamp 188、上集 147、Elaquent 156、SoS 178、't Geruis 211、Atomic Skunk 190、Deadbeat 211、Lindsheaven 164。無超標、無掉下限（Shwamp 初稿 176 補一個指涉子句）。`qa-batch out`、`qa-check-research`、`fix-spacing` 全過、標記 0。
+- 24022：自查刪掉 note 外的補字：Yaima「西非的 kora」與吉他／handpan 鋪開句、下集「匿名」（骨架名稱，facts 無此詞）、Atomic Skunk 結尾「包覆的音景」（取自 sound 欄、note 未列）。
+- 24023：轉述引導詞全不用：note 的「簡介說／廠牌文案說／團體簡介說」一律改直述（Monde UFO、Yaima、Shwamp、SoS、't Geruis、Lindsheaven 文案改寫「把專輯文字寫成虛構企業的口吻」）；Deadbeat 的樂評形容改直述聲音句；只留 Lauge 一處「樂評形容」（無媒體名）。't Geruis 自述引語「深深的孤獨，但沒關係」轉成間接敘述。
+- 24024：代名詞：只有 Atomic Skunk、Deadbeat 用「他」（hook 自帶、性別有來源）；其餘全用名號或「這個 slushwave／mallsoft 計畫」「這位比利時藝人」。Charles Farewell、Vincent Villuis、Ray Monde 一律名字重複。
+- 24025：第二句與「日」後一字全照 24015／24016；Elaquent 為守「先」字寫「2013 年 6 月 23 日先交給一家音樂網站放出，隔天才正式發行」，並具名《Believing》替 hook 的「整張」具名。Telenights 第二句以 TC011 替 hook 的「第 11 號」具名。
+- 24026：自掃 han() 跨張 4-gram：初稿 3 次以上 4 條（「首約分鐘」×9 最大族、「專輯年月」×3、「輯年月日」×3、「計約分鐘」×3、「長約分鐘」×3），全部以整個名詞拿掉的方式拆（片長約／總共⋯上下／一共⋯出頭／的長度約／總時數約／全長⋯左右／切成九首）；Monde UFO、SoS、Yaima 的日期句前一字改掉避開「於年月日」「張年月日」。定稿 3 次以上 0 條；2 次的只剩「這個計畫」（兩張皆照 24015 指派）、「年月日首」（Shwamp「日首發」對 Lindsheaven「日，首版」）、田野錄音、原聲樂器（名詞）。
+- 24027–24030：（預留未用）
+
+## 主線審稿（24031–24032；2026-11-06）
+- **24031** 逐張審 16 張（全文印出，逐句對研究稿 a–e；抽核 Delerium 第七張與 Kristy Thirsk 四首、ASURA 第四張與 Ultimae 創立緣起、Monde UFO 的 Jacques Vallée／7171、Yaima 第三張與 Bluetech 混音、Lauge 曲名丹麥文與 Altar CD-R、Science Of Sleeping 七首最高級曲名、't Geruis 封面拼貼、Deadbeat 京都陶雕滴水，皆有出處）。改 4 張（`desc-override.json`），研究／hooks／input 不需同步（只動措辭與一處被補洞層抓到的「首張」）：
+  - `Delerium|Semantic Spaces`：刪「後來被稱為『Delerium 的聲音』」（被動轉述的評價句，單一維基來源）；207 字。
+  - `Lauge & Baba Gnohm|Langbortistan`：「樂評形容它緩慢展開、旋律豐盈。」→「整張緩慢展開，旋律豐盈。」（指向媒體的轉述；保留聲音事實）；216 字。
+  - `Science Of Sleeping|Sleep Cinema`：「的首張專輯於 2022 年 7 月 29 日推出」→「在 2022 年 7 月 29 日推出」（藝人介紹補洞層 ar-d-527 查到 Bandcamp 同頁另有 2021 年《Ocean Sleep》《Forest Sleep》，「首張」不穩）；173 字。
+  - `Deadbeat|Kansai Botanicals`：「奧田祐斎」→「奥田祐斎」（日本人名用日文原字）。
+- **24032** 媒體名、榜單名次、「據說／據傳／官方／簡介」全批 0；代名詞「他」只在 Atomic Skunk、Deadbeat（性別有來源）。
