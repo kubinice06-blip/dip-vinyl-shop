@@ -1,0 +1,882 @@
+[
+ {
+  "key": "tom cora, david moss",
+  "name": "Tom Cora, David Moss",
+  "slots": {
+   "origin": {
+    "status": "bank",
+    "facts": [
+     {
+      "f": "Tom Cora 1953 年 9 月 14 日生於維吉尼亞，1998 年 4 月 9 日因黑色素瘤在法國南部的醫院過世，享年 44 歲。",
+      "src": "https://en.wikipedia.org/wiki/Tom_Cora",
+      "src2": "https://www.peaceandrhythm.com/blogs/news/tom-cora-sept-14-1953-april-9-1998",
+      "from": "new"
+     },
+     {
+      "f": "Cora 起初是鼓手，在華府一帶彈過爵士吉他，大學時才拿起大提琴，師從 Pablo Casals 的學生 Luis Garcia-Renart，後來又隨 Karl Berger 學習；1979 年搬到紐約。",
+      "src": "https://en.wikipedia.org/wiki/Tom_Cora",
+      "src2": "https://www.peaceandrhythm.com/blogs/news/tom-cora-sept-14-1953-april-9-1998",
+      "from": "new"
+     },
+     {
+      "f": "David Moss 1949 年生於紐約，1963 至 1968 年學打擊，1971 至 1973 年在 Bill Dixon Ensemble 演奏。",
+      "src": "https://en.wikipedia.org/wiki/David_Moss_(musician)",
+      "from": "bank",
+      "single": true
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Cora 把大提琴當電吉他來彈：鋸出和弦、拉出打擊式的反覆樂句，常加大音量放大演奏，還改裝、預置琴身。",
+      "src": "https://en.wikipedia.org/wiki/Tom_Cora",
+      "src2": "https://www.peaceandrhythm.com/blogs/news/tom-cora-sept-14-1953-april-9-1998",
+      "from": "new"
+     },
+     {
+      "f": "他的音樂取材自自由爵士、前衛與實驗搖滾，也吸收東歐與土耳其民間音樂；他還自製可用腳操作的裝置。",
+      "src": "https://www.peaceandrhythm.com/blogs/news/tom-cora-sept-14-1953-april-9-1998",
+      "from": "new",
+      "single": true
+     },
+     {
+      "f": "1979 年搬到紐約後，Cora 與吉他手 Eugene Chadbourne 合作，把大提琴帶進鄉村酒吧（honky-tonk）的演出圈。",
+      "src": "https://en.wikipedia.org/wiki/Tom_Cora",
+      "from": "bank",
+      "single": true
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Cora 過世約一個月後，紐約 Knitting Factory 為他的家人辦了義演；1999 年 5 月 Tzadik 發行雙 CD 紀念專輯《Hallelujah, Anyway – Remembering Tom Cora》，由 Fred Frith 與 Peter Hardt 編選，John Zorn、Zeena Parkins、The Ex 等人參與。",
+      "src": "https://en.wikipedia.org/wiki/Tom_Cora",
+      "src2": "https://en.wikipedia.org/wiki/Hallelujah,_Anyway_%E2%80%93_Remembering_Tom_Cora",
+      "from": "new",
+      "note": "同站不同條目，非獨立"
+     },
+     {
+      "f": "AllMusic 的 Joslyn Layne 評紀念專輯時稱他是「重要的即興者與出色的大提琴手」，並說專輯凸顯他「被低估的才華」。",
+      "src": "https://en.wikipedia.org/wiki/Hallelujah,_Anyway_%E2%80%93_Remembering_Tom_Cora",
+      "from": "new",
+      "single": true
+     },
+     {
+      "f": "Cora 與荷蘭樂團 The Ex 合作過上百場演出。",
+      "src": "https://www.peaceandrhythm.com/blogs/news/tom-cora-sept-14-1953-april-9-1998",
+      "from": "new",
+      "single": true
+     }
+    ]
+   },
+   "era": {
+    "status": "bank",
+    "facts": [
+     {
+      "f": "1979 年他與 George Cartwright、Bill Laswell 等人組成 Curlew，此後十年多參與五張專輯。",
+      "src": "https://en.wikipedia.org/wiki/Tom_Cora",
+      "from": "bank"
+     },
+     {
+      "f": "1982 年 Cora 與 Fred Frith 組成 Skeleton Crew，兩人各自一人身兼多件樂器，巡演歐洲、北美與日本約五年，錄有兩張錄音室專輯。",
+      "src": "https://en.wikipedia.org/wiki/Tom_Cora",
+      "from": "bank"
+     },
+     {
+      "f": "1996 年他為默片《持攝影機的人》（Man With a Movie Camera）寫配樂。",
+      "src": "https://www.peaceandrhythm.com/blogs/news/tom-cora-sept-14-1953-april-9-1998",
+      "from": "new",
+      "single": true
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "1982 年與 Fred Frith 組成 Skeleton Crew，巡演歐美日約五年。",
+    "src": "https://en.wikipedia.org/wiki/Tom_Cora",
+    "from": "bank"
+   }
+  ],
+  "conflicts": [
+   "維基寫 Cora 生於 Yancey Mills（維吉尼亞），peaceandrhythm 寫 Richmond；兩源不一致，facts 只寫『維吉尼亞』。",
+   "事實庫寫『1953 年生於維吉尼亞』，本層加上月日；上線簡介說 Cora『原是鼓手』與兩源一致。",
+   "事實庫第一條『大學時才開始拉大提琴』兩源一致；上線簡介與之相符。"
+  ],
+  "pubIssues": [],
+  "searches": 4,
+  "failedFetches": 0,
+  "status": "full",
+  "notes": "Tom Cora 已故（1998 年 4 月 9 日，黑色素瘤，維基與 peaceandrhythm 兩源一致；維基另載死於法國南部醫院）。David Moss 在世，只留事實庫一條生平（單源，不再寫成就）；合作卡寫法應落在 Cargo Cult Revival 二重奏本身，Moss 側 legacy 查無。Rift 1983 與 Cora 第一部重要作品之說見上線簡介，本層未另查。Skeleton Crew 為 Cora 與 Fred Frith 的 1980 年代團，非同名混卡。Hallelujah 條目與 Tom Cora 條目同站，非獨立；『重要的即興者』為 AllMusic 評紀念專輯語，經維基轉引（AllMusic 站在雲端被擋，未開原頁）。"
+ },
+ {
+  "key": "tony malaby",
+  "name": "Tony Malaby",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Tony Malaby 1964 年 1 月 12 日生於亞利桑那州 Tucson，是第一代墨西哥裔美國人，成長於說西班牙語的家庭與 Tucson 西區的 Barrio Hollywood。",
+      "src": "https://www.tucsonweekly.com/newsopinion/artistically-naked-1075866/",
+      "src2": "https://en.wikipedia.org/wiki/Tony_Malaby",
+      "from": "new",
+      "note": "墨西哥裔身分與西語家庭取自 Tucson Weekly；維基只給生日與出生地"
+     },
+     {
+      "f": "他在國中從中音薩克斯風學起，Tucson High 的老師 Lou Rodriguez 讓他認識 Charlie Parker，並安排 Dexter Gordon 到校開大師班，這次經驗讓他決定走音樂這條路；上 Arizona State University 時才改吹次中音，約 20 歲。",
+      "src": "https://www.tucsonweekly.com/newsopinion/artistically-naked-1075866/",
+      "from": "new",
+      "single": true
+     },
+     {
+      "f": "1995 年他與鋼琴手 Angelica Sanchez 一起搬到紐約，早期曾與 Joey DeFrancesco 及 Mingus Big Band 合作，並向 Joe Lovano 學習 bebop。",
+      "src": "https://www.tucsonweekly.com/newsopinion/artistically-naked-1075866/",
+      "from": "new",
+      "single": true
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "樂評形容他是流動的即興者，把自由爵士與 bebop、後 bop 的語彙混在一起；Ben Ratliff 在《紐約時報》稱他是「受過訓練、富詩意的演奏者」。",
+      "src": "https://www.tucsonweekly.com/newsopinion/artistically-naked-1075866/",
+      "from": "new",
+      "single": true
+     },
+     {
+      "f": "在 Tamarindo 三重奏裡沒有鋼琴或吉他，旋律常被壓到很後面才現身，三人繞著它慢慢累積；Free Jazz Blog 給五星。",
+      "src": "https://www.freejazzblog.org/2007/12/tony-malaby-tamarindo-clean-feed-2007.html",
+      "from": "bank",
+      "single": true
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "維基稱《紐約時報》說他是「同世代最好的演奏者之一」。",
+      "src": "https://en.wikipedia.org/wiki/Tony_Malaby",
+      "from": "new",
+      "single": true
+     },
+     {
+      "f": "他在紐約曾與 Paul Motian、Mark Helias、Mario Pavone 及 Charlie Haden 的 Liberation Music Orchestra 合作。",
+      "src": "https://en.wikipedia.org/wiki/Tony_Malaby",
+      "from": "bank",
+      "single": true
+     }
+    ]
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [],
+  "conflicts": [
+   "事實庫寫 Tamarindo 為 2007 年 12 月 Clean Feed 發行，與上線簡介一致，採用。"
+  ],
+  "pubIssues": [],
+  "searches": 3,
+  "failedFetches": 0,
+  "status": "thin",
+  "notes": "在世，只留核心成就。《紐約時報》『同世代最好』一句只在維基單源，原報導未見，已標 single 並不建議寫成強斷言；Ratliff『schooled, poetic』經 Tucson Weekly 轉述，單源。JazzTimes 稱其為第一代墨西哥裔美國人，因站被擋未開頁，Tucson Weekly 的西語家庭與 Barrio Hollywood 為實際讀到的出處。Tamarindo 後來成為固定團名見上線簡介，Free Jazz Blog 2015 與 2011 另有 Tamarindo Live、Somos Agua，可佐證。legacy 只有同行合作與媒體稱許，無後輩點名。"
+ },
+ {
+  "key": "tristan honsinger & olaf rupp",
+  "name": "Tristan Honsinger & Olaf Rupp",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Tristan Honsinger 1949 年 10 月 23 日生於佛蒙特州 Burlington，2023 年 8 月 5 日在義大利 Trieste 過世，享年 73 歲。",
+      "src": "https://en.wikipedia.org/wiki/Tristan_Honsinger",
+      "src2": "https://www.freejazzblog.org/2023/08/tristan-honsiger-1949-2023.html",
+      "from": "new",
+      "note": "Free Jazz Blog 8 月 6 日貼文只說『昨天』傳來死訊、未給日期與地點；死亡日期與地點取自維基與 wikidata"
+     },
+     {
+      "f": "他 12 歲就近乎每週開音樂會，在 New England Conservatory 學古典大提琴，1969 年為躲避徵兵搬到蒙特婁，在加拿大對即興音樂產生興趣。",
+      "src": "https://en.wikipedia.org/wiki/Tristan_Honsinger",
+      "from": "new",
+      "single": true
+     },
+     {
+      "f": "1974 年他遷往歐洲，在聽了 Evan Parker、Derek Bailey、Han Bennink 的《The Topography of the Lungs》之後轉往荷蘭，加入 Instant Composers Pool，後來是 ICP Orchestra 的長期成員。",
+      "src": "https://www.freejazzblog.org/2023/08/tristan-honsiger-1949-2023.html",
+      "from": "new",
+      "single": true
+     },
+     {
+      "f": "Olaf Rupp 1963 年生於薩爾州 Saarlouis，現居柏林，自學吉他，約 12 歲開始接觸即興。",
+      "src": "https://jazz.com/encyclopedia/rupp-olaf-oliver-ludwig",
+      "from": "new",
+      "note": "jazz.com 與廠牌說明來自搜尋摘要，未逐頁開讀",
+      "single": true
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Honsinger 把爵士技法與口說、民間音樂、即興戲劇和達達元素混在一起，演出幽默又帶戲劇性，Free Jazz Blog 稱他是即興音樂的「大丑角」（great harlequin）。",
+      "src": "https://www.freejazzblog.org/2023/08/tristan-honsiger-1949-2023.html",
+      "from": "new",
+      "single": true
+     },
+     {
+      "f": "荷蘭《Volkskrant》記者 Erik van de Berg 說他的作品像孩子的畫，或像《小熊維尼》的故事：笨拙、單純得動人；Honsinger 自己說簡單的事物、簡單的故事最讓他著迷。",
+      "src": "https://en.wikipedia.org/wiki/Tristan_Honsinger",
+      "from": "new",
+      "single": true
+     },
+     {
+      "f": "Olaf Rupp 稱自己發展出一種「類比顆粒合成」的吉他技法，ADK 的介紹說他的音樂既不由機率也不由刻意決定所控制。",
+      "src": "https://www.softrecords.ro/?p=206",
+      "from": "new",
+      "single": true
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Honsinger 因與鋼琴手 Cecil Taylor、吉他手 Derek Bailey 的長期合作而最為人知。",
+      "src": "https://en.wikipedia.org/wiki/Tristan_Honsinger",
+      "from": "bank",
+      "single": true
+     },
+     {
+      "f": "他 1979 年與英國後龐克團 The Pop Group、1990 年代初與荷蘭的 The Ex 合作，也與 Ig Henneman Tentet 合作，跨出自由即興圈。",
+      "src": "https://en.wikipedia.org/wiki/Tristan_Honsinger",
+      "from": "bank",
+      "single": true
+     },
+     {
+      "f": "Free Jazz Blog 的訃文說他透過 Derek Bailey 的 Company Weeks 與英國、德國樂手連線，包括 Alexander von Schlippenbach 的 Globe Unity Orchestra；晚年在柏林屬於 Echtzeit 圈，與 Rupp 同屬這個場景。",
+      "src": "https://www.freejazzblog.org/2023/08/tristan-honsiger-1949-2023.html",
+      "from": "new",
+      "single": true
+     }
+    ]
+   },
+   "era": {
+    "status": "bank",
+    "facts": [
+     {
+      "f": "2010 年 3 月在柏林錄下《Stretto》，約 60 分鐘、8 軌，2011 年 FMP 發行（CD 148），並收入 2011 年 12 CD 套裝《FMP In Retrospect》。",
+      "src": "https://en.wikipedia.org/wiki/Stretto_(album)",
+      "from": "new",
+      "single": true
+     }
+    ]
+   }
+  },
+  "milestones": [],
+  "conflicts": [
+   "Dusty Groove 把《Stretto》標為 2010 年，上線簡介與維基標 2011 年（錄音 2010 年 3 月）；採上線簡介。"
+  ],
+  "pubIssues": [],
+  "searches": 3,
+  "failedFetches": 1,
+  "status": "full",
+  "notes": "Honsinger 已故（2023 年 8 月 5 日，Trieste；維基與 wikidata 同族，Free Jazz Blog 訃文確認 2023 年 8 月初過世但未給日地）。維基預抓 warn『未提到卡池專輯』只因頁面未列 Stretto，身分以 FMP 與大提琴確認無誤。事實庫的『12 歲幾乎每週開音樂會』與『1974 年遷歐洲』與維基一致。Free Jazz Blog 稱 Honsinger 學於 New England Conservatory 與 Peabody，維基只寫前者，facts 只寫 NEC。未找到 Rupp–Honsinger 的獨立二重奏專題報導；二人同屬柏林 Echtzeit 圈，並同在 HDRS 四重奏（與 Axel Dörner、Olli Steidle，Evil Fingers，2014）。ADK 頁面 404（未計入）。Rupp 段落多為搜尋摘要，寫作層用一句帶過即可。"
+ },
+ {
+  "key": "urs voerkel, peter k. frey, paul lovens",
+  "name": "Urs Voerkel, Peter K. Frey, Paul Lovens",
+  "slots": {
+   "origin": {
+    "status": "bank",
+    "facts": [
+     {
+      "f": "Urs Voerkel 1949 年 4 月 10 日生於蘇黎世，1999 年 9 月 11 日在蘇黎世過世；父親是古典低音大提琴手，他自小學鋼琴，因 John Coltrane 轉向爵士。",
+      "src": "https://de.wikipedia.org/wiki/Urs_Voerkel",
+      "src2": "https://musicbrainz.org/ws/2/artist/0ff98e0a-4c58-4627-8b73-cec992080a5a",
+      "from": "bank",
+      "note": "MusicBrainz 只佐證生卒日期與蘇黎世；父親與 Coltrane 為維基單源"
+     },
+     {
+      "f": "Voerkel 與爵士鋼琴手 Irène Schweizer 住在同一個音樂人合租處，另兼任蘇黎世 Burghölzli 精神科診所的音樂治療師（兼職）。",
+      "src": "https://de.wikipedia.org/wiki/Urs_Voerkel",
+      "from": "new",
+      "single": true
+     },
+     {
+      "f": "Paul Lovens 1949 年 6 月 6 日生於亞琛，1970 年代初起與鋼琴手 Alexander von Schlippenbach 組三重奏，參加過 Globe Unity Orchestra。",
+      "src": "https://en.wikipedia.org/wiki/Paul_Lovens",
+      "from": "bank",
+      "single": true
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Voerkel 屬歐洲前衛爵士，逐步拆解傳統曲式；樂評人 Wilhelm E. Liefland 說他的演奏是「分析式」的，卻從不失去推進感（drive）。",
+      "src": "https://de.wikipedia.org/wiki/Urs_Voerkel",
+      "from": "new",
+      "single": true
+     },
+     {
+      "f": "1976 年的這張三重奏唱片由三人分寫曲目，七首中〈Ans Wasser〉〈Am Wasser〉〈Im Wasser〉出自 Lovens。",
+      "src": "https://www.discogs.com/release/2745463",
+      "from": "bank",
+      "single": true
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Voerkel 與 Lovens 長期以二重奏合作，Intakt 的遺作選輯稱兩人合作超過二十年，並說他也向年輕、受古典與巴洛克訓練的樂手開放。",
+      "src": "https://intaktrec.ch/products/057-urs-voerkel-propinquity-zwischenstuck-aria",
+      "src2": "https://de.wikipedia.org/wiki/Urs_Voerkel",
+      "from": "new"
+     },
+     {
+      "f": "1973 年他在聖塞巴斯蒂安爵士音樂節被選為最佳獨奏者。",
+      "src": "https://de.wikipedia.org/wiki/Urs_Voerkel",
+      "from": "bank",
+      "single": false,
+      "note": "獎項高風險，僅維基單源；建議寫作層不用"
+     },
+     {
+      "f": "德文維基稱訃文把他描述為歐洲自由爵士圈中固執己見的個人主義者；Evan Parker 在 Intakt 選輯的文字中提到他面對疾病與困頓的勇氣與精神力量。",
+      "src": "https://de.wikipedia.org/wiki/Urs_Voerkel",
+      "from": "new",
+      "single": true
+     }
+    ]
+   },
+   "era": {
+    "status": "bank",
+    "facts": [
+     {
+      "f": "1976 年 5 月在柏林錄音，同年 12 月 22 日由 FMP 發行（FMP 0340），Jost Gebers 負責錄音。",
+      "src": "https://www.discogs.com/release/2745463",
+      "from": "bank"
+     },
+     {
+      "f": "1981 年 Voerkel 與 Frey、Christoph Gallio 組成三重奏 Tiegel。",
+      "src": "https://de.wikipedia.org/wiki/Urs_Voerkel",
+      "from": "new",
+      "single": true
+     }
+    ]
+   }
+  },
+  "milestones": [],
+  "conflicts": [
+   "事實庫寫 1973 年聖塞巴斯蒂安爵士音樂節『最佳獨奏者』，只有德文維基一源，列入 legacy 時標單源不建議寫；上線簡介未提。",
+   "上線簡介稱 Voerkel『前衛鋼琴手』『父親是古典低音大提琴手』，與兩源一致，無衝突。"
+  ],
+  "pubIssues": [],
+  "searches": 6,
+  "failedFetches": 2,
+  "status": "full",
+  "notes": "Voerkel 已故（1999-09-11，德文維基與 MusicBrainz 一致；死因維基只寫長期病後，不寫死因）。Peter K. Frey（貝斯）本層未另查，僅與 Voerkel 組 Tiegel 見德文維基；Paul Lovens 在世，只留一項核心成就。合作卡寫法落在 1976 年柏林錄音與 FMP 發行。Intakt voerkel.htm 無傳記內容（未計入）；GND 查詢誤指另一人（Ernst August Voelkel），未採用。『訃文稱他固執己見的個人主義者』為德文維基概括，原始訃文未見。"
+ },
+ {
+  "key": "wolfgang fuchs",
+  "name": "Wolfgang Fuchs",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Wolfgang Fuchs 1949 年 2 月 21 日生於普法爾茨的 Landau，2016 年 2 月 3 日在柏林過世。",
+      "src": "https://de.wikipedia.org/wiki/Wolfgang_Fuchs_(Saxophonist)",
+      "src2": "https://musicbrainz.org/ws/2/artist/fda5b7dc-8834-4ab4-93eb-cb39d20861f8",
+      "from": "new",
+      "note": "Free Jazz Blog 另寫他 2016 年 2 月死於心臟病發，死因僅此單源，建議不寫"
+     },
+     {
+      "f": "他 9 歲起學曼陀林與小提琴，1969 年起在卡爾斯魯厄音樂學院學單簧管與薩克斯風，1974 年移居柏林，1976 年起當自由樂手。",
+      "src": "https://de.wikipedia.org/wiki/Wolfgang_Fuchs_(Saxophonist)",
+      "from": "bank",
+      "single": true
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Fuchs 後來愈來愈專注於 sopranino 薩克斯風與低音單簧管。",
+      "src": "https://de.wikipedia.org/wiki/Wolfgang_Fuchs_(Saxophonist)",
+      "from": "new",
+      "single": true
+     },
+     {
+      "f": "Free Jazz Blog 的 Martin Schray 形容他的音色是「尖叫般、擠壓的」，低音單簧管上是斷奏、鳥鳴般的呼叫與喘不過氣的樂句，聽起來是點描式的歐洲新音樂音景，而非美式自由爵士傳統。",
+      "src": "https://www.freejazzblog.org/2018/12/new-from-fmp.html",
+      "from": "new",
+      "single": true
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1983 年他與 Radu Malfatti、Erhard Hirt、Phil Wachsmann、Paul Lytton 等人創辦歐洲即興樂團 King Übü Örchestrü，他是這個十人團的領導者；團至今偶爾演出。",
+      "src": "https://de.wikipedia.org/wiki/Wolfgang_Fuchs_(Saxophonist)",
+      "src2": "https://www.freejazzblog.org/2018/12/new-from-fmp.html",
+      "from": "new",
+      "note": "創立年 1983 兩源一致；成員名單僅德文維基"
+     },
+     {
+      "f": "他 2001 至 2008 年與人共同主持柏林的 Total Music Meeting 音樂節。",
+      "src": "https://de.wikipedia.org/wiki/Wolfgang_Fuchs_(Saxophonist)",
+      "from": "bank",
+      "single": true
+     },
+     {
+      "f": "Free Jazz Blog 稱他是 FMP 廠牌的典型樂手，也是大小編制裡出色的團隊型演奏者。",
+      "src": "https://www.freejazzblog.org/2018/12/new-from-fmp.html",
+      "from": "new",
+      "single": true
+     }
+    ]
+   },
+   "era": {
+    "status": "bank",
+    "facts": [
+     {
+      "f": "1985 年 6 月他獨自借用 FMP 錄音室錄下《So - und? So!》，1986 年由 Uhlklang 發行。",
+      "src": "https://api.discogs.com/labels/62370",
+      "from": "bank",
+      "single": true
+     }
+    ]
+   }
+  },
+  "milestones": [],
+  "conflicts": [
+   "Schott Music London 列他生日為 1948 年 12 月 7 日，德文維基與 MusicBrainz 同為 1949 年 2 月 21 日；採後者，不寫 Schott 的日期。",
+   "事實庫 Squid's Ear 寫 2016 年 2 月心臟病去世；本層未能開該頁（403），只有 Free Jazz Blog 一源寫心臟病發，死因不收。"
+  ],
+  "pubIssues": [],
+  "searches": 5,
+  "failedFetches": 2,
+  "status": "full",
+  "notes": "已故（2016-02-03，德文維基與 MusicBrainz 一致）。德文維基列出的合作者未含 Hans Schneider 以外的上線簡介人名，但含 Schneider；Klaus Huber 與 Paul Lovens 未見。AllMusic 被擋，King Übü Örchestrü『創辦人與領導者』之說來自搜尋摘要，未開原頁，寫作層用德文維基『共同創辦』較穩。Fuchs 與下一筆『wolfgang fuchs, hans schneider, klaus huber』為同一人，搜尋共用。"
+ },
+ {
+  "key": "wolfgang fuchs, hans schneider, klaus huber",
+  "name": "Wolfgang Fuchs, Hans Schneider, Klaus Huber",
+  "slots": {
+   "origin": {
+    "status": "bank",
+    "facts": [
+     {
+      "f": "Wolfgang Fuchs 1949 年 2 月 21 日生於普法爾茨的 Landau，2016 年 2 月 3 日在柏林過世；9 歲起學曼陀林與小提琴，1969 年起在卡爾斯魯厄音樂學院學單簧管與薩克斯風，1974 年移居柏林，1976 年起當自由樂手。",
+      "src": "https://de.wikipedia.org/wiki/Wolfgang_Fuchs_(Saxophonist)",
+      "src2": "https://musicbrainz.org/ws/2/artist/fda5b7dc-8834-4ab4-93eb-cb39d20861f8",
+      "from": "new",
+      "note": "生卒日兩源；養成經歷維基單源"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Fuchs 專注於 sopranino 薩克斯風與低音單簧管；Free Jazz Blog 形容他的音色「尖叫般、擠壓的」，與貝斯手 Hans Schneider 粗礪的弓拉低音對撞。",
+      "src": "https://www.freejazzblog.org/2018/12/new-from-fmp.html",
+      "src2": "https://de.wikipedia.org/wiki/Wolfgang_Fuchs_(Saxophonist)",
+      "from": "new",
+      "note": "sopranino 與低音單簧管取自德文維基，音色形容取自 Free Jazz Blog，兩源各管一半"
+     },
+     {
+      "f": "德文維基把 Hans Schneider 列為 Fuchs 的合作者之一；Free Jazz Blog 評 Fuchs、鋼琴手 Bernhard Arndt 與 Schneider 1984 年的 FMP 三重奏錄音（2018 年才以下載發行）為四顆半星。",
+      "src": "https://www.freejazzblog.org/2018/12/new-from-fmp.html",
+      "from": "new",
+      "single": true
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1983 年他共同創辦歐洲即興樂團 King Übü Örchestrü，並在 2001 至 2008 年共同主持柏林 Total Music Meeting。",
+      "src": "https://de.wikipedia.org/wiki/Wolfgang_Fuchs_(Saxophonist)",
+      "src2": "https://www.freejazzblog.org/2018/12/new-from-fmp.html",
+      "from": "new",
+      "note": "Total Music Meeting 年份僅維基；Free Jazz Blog 只提 2001 年那屆"
+     },
+     {
+      "f": "Free Jazz Blog 稱他是 FMP 的典型樂手，也是大小編制裡出色的團隊型演奏者。",
+      "src": "https://www.freejazzblog.org/2018/12/new-from-fmp.html",
+      "from": "new",
+      "single": true
+     }
+    ]
+   },
+   "era": {
+    "status": "bank",
+    "facts": [
+     {
+      "f": "1978 年 10 月 15 日在柏林一座青年中心現場錄音，Fuchs 吹 sopranino 薩克斯風與低音單簧管，與 Hans Schneider、Klaus Huber 留下十二首短曲，1979 年 2 月由 FMP 發行。",
+      "src": "https://www.discogs.com/release/2745475",
+      "from": "bank",
+      "single": true
+     }
+    ]
+   }
+  },
+  "milestones": [],
+  "conflicts": [
+   "事實庫寫 Klaus Huber 在 Discogs 名字後綴 (3)；Huber 本層查無生平，只留鼓手與作曲者身分。"
+  ],
+  "pubIssues": [],
+  "searches": 0,
+  "failedFetches": 0,
+  "status": "thin",
+  "notes": "Fuchs 已故（2016-02-03）。與 wolfgang fuchs 條為同一人，研究共用該條搜尋；本條不另計次數。Hans Schneider（貝斯）與 Klaus Huber（鼓）在此查無獨立傳記，合作卡應落在 1978 年柏林青年中心的現場錄音與 FMP 發行。"
+ },
+ {
+  "key": "zeena parkins",
+  "name": "Zeena Parkins",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Zeena Parkins 1956 年生於底特律，在 Cass Technical High School 本來學鋼琴，被分派到豎琴後立刻迷上，也同時在跳舞；後來進 Bard College，1984 年搬到紐約。",
+      "src": "https://www.thetonearm.com/zeena-parkins-under-constant-revision-electric-harp/",
+      "src2": "https://en.wikipedia.org/wiki/Zeena_Parkins",
+      "from": "new",
+      "note": "Cass Tech 與分派豎琴取自 Tonearm 訪談；生年、地點、Bard 與 1984 年取自維基；養成經過單源"
+     },
+     {
+      "f": "她在紐約的小俱樂部裡發現原聲豎琴的音量壓不過電吉他、長號與鼓，現成拾音器又聽起來薄；加入 Skeleton Crew（與 Tom Cora、Fred Frith）時，她確定需要一把電豎琴，吉他製作師 Ken Parker 做了第一把，她說：「我不想當房間裡最小聲的人。」",
+      "src": "https://www.thetonearm.com/zeena-parkins-under-constant-revision-electric-harp/",
+      "from": "new",
+      "single": true
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "她設計並一路改良自己的電豎琴，一共做過三個版本，目前這把由 Douglas Henderson 在 2003 年完成；除了標準與電豎琴，她也用家製樂器、取樣機、類比合成器與 Foley、現場錄音。",
+      "src": "https://www.foundationforcontemporaryarts.org/recipients/zeena-parkins/",
+      "src2": "https://en.wikipedia.org/wiki/Zeena_Parkins",
+      "from": "new",
+      "note": "Henderson 與 2003 年取自 Tonearm 與搜尋摘要；三個版本取自 FCA"
+     },
+     {
+      "f": "《Nightmare Alley》在刺耳噪音、受控回授與細緻的豎琴即興之間來回。",
+      "src": "https://cdn.soundohm.com/product/nightmare-alley",
+      "from": "bank",
+      "single": true
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "維基首段稱她「重新發明了豎琴」；Tonearm 訪談指出這句話出自 Alex Ross 1993 年在《紐約時報》的文章。",
+      "src": "https://en.wikipedia.org/wiki/Zeena_Parkins",
+      "src2": "https://www.thetonearm.com/zeena-parkins-under-constant-revision-electric-harp/",
+      "from": "new"
+     },
+     {
+      "f": "她和 Björk 巡演並錄音三、四年，與 Butch Morris 的 conduction 合作十多年，也與 Ikue Mori 組成 Phantom Orchard，該作獲 2004 年 Prix Ars Electronica 榮譽提名（honorary mention）。",
+      "src": "https://www.thetonearm.com/zeena-parkins-under-constant-revision-electric-harp/",
+      "src2": "https://www.foundationforcontemporaryarts.org/recipients/zeena-parkins/",
+      "from": "new"
+     },
+     {
+      "f": "她替舞蹈作曲拿過三座 Bessie 獎，2019 年成為古根漢研究員（Guggenheim Fellow）。",
+      "src": "https://en.wikipedia.org/wiki/Zeena_Parkins",
+      "src2": "https://www.thetonearm.com/zeena-parkins-under-constant-revision-electric-harp/",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1993 年她在 Table of the Elements 發行《Nightmare Alley》（TOTE 1），該廠牌依元素週期表序號編號。",
+      "src": "https://www.discogs.com/release/661500",
+      "from": "bank",
+      "single": true
+     }
+    ]
+   }
+  },
+  "milestones": [
+   {
+    "f": "2019 年獲古根漢研究金（作曲）。",
+    "src": "https://en.wikipedia.org/wiki/Zeena_Parkins",
+    "src2": "https://www.thetonearm.com/zeena-parkins-under-constant-revision-electric-harp/",
+    "from": "new"
+   }
+  ],
+  "conflicts": [
+   "維基與 Tonearm 對 Mills College 任教起訖寫法不一，facts 不收。"
+  ],
+  "pubIssues": [],
+  "searches": 3,
+  "failedFetches": 0,
+  "status": "full",
+  "notes": "在世，核心成就取『重新發明豎琴』。維基預抓 warn 只因頁面未列 Nightmare Alley，身分以底特律豎琴手與 Skeleton Crew 確認，卡池僅一張。她在 Skeleton Crew 的角色（維基列為成員，Tonearm 說加入時促成電豎琴）與 Tom Cora 的條目相互呼應；Tom Cora 那邊 Skeleton Crew 成員只寫 Cora 與 Frith，兩者不矛盾（團後期擴編）但不寫成 Parkins 為創團成員。獎項與研究金全是低風險的履歷，寫作層只留一項。"
+ },
+ {
+  "key": "zs",
+  "name": "Zs",
+  "slots": {
+   "origin": {
+    "status": "bank",
+    "facts": [
+     {
+      "f": "Zs 由薩克斯風手兼作曲家 Sam Hillmer 於 2000 年在紐約創立，成員在 Manhattan School of Music 相識，起初是五重奏，很快轉向集體創作。",
+      "src": "https://en.wikipedia.org/wiki/Zs_(band)",
+      "src2": "https://www.qobuz.com/us-en/interpreter/zs/344763",
+      "from": "bank",
+      "note": "Qobuz 為轉貼的樂團簡介（Jesse Jarnow）；成軍年僅維基"
+     },
+     {
+      "f": "2003 年的《Zs》是六人編制：Alex Hoskins、Brad Wentworth、Charlie Looker、Matthew Hough、Alex Mincek 與 Hillmer；五首主要由兩位薩克斯風手 Mincek 與 Hillmer 寫成，2003 年 7 月出版，錄於紐約 Westbeth Studios。",
+      "src": "https://en.wikipedia.org/wiki/Zs_(band)",
+      "from": "bank",
+      "single": true
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他們的音樂被分別歸為 no wave、噪音、後極簡、drone 與 psych，核心是挑戰演奏者與聽者的身體與心理極限。",
+      "src": "https://en.wikipedia.org/wiki/Zs_(band)",
+      "from": "new",
+      "single": true
+     },
+     {
+      "f": "樂團以薩克斯風為基礎，疊出旋轉循環的節奏層次，2005 年《Karate Bump》前後發展出音色漂移的節奏格網並用延伸的打擊技法，帶有出神般的質地；既屬後極簡前衛傳統，也具布魯克林搖滾場景的噪音與 DIY 精神。",
+      "src": "https://www.qobuz.com/us-en/interpreter/zs/344763",
+      "from": "new",
+      "single": true
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "《紐約時報》的 Ben Ratliff 稱 Zs 是「紐約最強的前衛樂團之一」，並在 2012 年 8 月評論了三人新陣容在布魯克林 285 Kent 的首演。",
+      "src": "https://en.wikipedia.org/wiki/Zs_(band)",
+      "from": "new",
+      "note": "高風險稱許僅維基單源；原文未見",
+      "single": true
+     },
+     {
+      "f": "2007 年 11 月 Howard Stern 在節目上放了《Arms》的曲目，連播數日並展開一場關於『什麼是音樂』的即興討論，讓數百萬聽眾接觸到他們的錄音。",
+      "src": "https://en.wikipedia.org/wiki/Zs_(band)",
+      "src2": "https://www.qobuz.com/us-en/interpreter/zs/344763",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "bank",
+    "facts": [
+     {
+      "f": "樂團後來縮編為四重奏，2012 年春天 Patrick Higgins 與 Greg Fox 加入 Hillmer；Charlie Looker 離團去組 Extra Life。",
+      "src": "https://en.wikipedia.org/wiki/Zs_(band)",
+      "from": "bank",
+      "single": true
+     }
+    ]
+   }
+  },
+  "milestones": [],
+  "conflicts": [
+   "維基預抓 warn『未提到卡池專輯』，但維基明載 2003 年 7 月 Zs（Westbeth Studios，五首）與上線簡介一致，身分確認，非同名混卡。",
+   "上線簡介稱『成員是在 Manhattan School of Music 相識的』與 Qobuz 簡介一致；Qobuz 把創始成員寫成 Hillmer、Greenberg、Antonio，與維基 2003 陣容不同，facts 不收該名單。"
+  ],
+  "pubIssues": [],
+  "searches": 3,
+  "failedFetches": 0,
+  "status": "full",
+  "notes": "在世團，只留核心成就。Ratliff 稱讚語在雲端未能開《紐約時報》原文，僅維基與搜尋摘要，建議寫作層寫『《紐約時報》稱…』並可接受維基轉述風險；Howard Stern 事件兩源（維基與 Qobuz）。Qobuz 與維基非獨立程度不明（Qobuz 簡介是 Jesse Jarnow 所寫，獨立於維基）。"
+ },
+ {
+  "key": "吉田アミ",
+  "name": "吉田アミ",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Ami Yoshida 1976 年 5 月 13 日生於日本，約 1990 年開始音樂生涯；她不演奏樂器，只用自己的嗓音做音樂。",
+      "src": "https://en.wikipedia.org/wiki/Ami_Yoshida",
+      "src2": "https://www.ftarri.com/festival/2019/weektwo/yoshida-e.html",
+      "from": "new",
+      "note": "生日僅維基；1990 年出自 Ftarri；兩者不衝突"
+     },
+     {
+      "f": "1990 年代末到 2000 年代初，她參與大友良英的計畫，並與 Sachiko M（正弦波）組成二人團體 Cosmos、與ユタカワサキ（類比合成器）組成 Astro Twin。",
+      "src": "https://ftarri.com/imj/504/index-j.html",
+      "from": "bank",
+      "single": true
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "她發出的聲音常聽不出是人聲，有些經過輕微電子處理；她把自己的做法稱為「howling voice」。",
+      "src": "https://en.wikipedia.org/wiki/Ami_Yoshida",
+      "from": "new",
+      "single": true
+     },
+     {
+      "f": "《Tiger Thrush》99 軌全無曲名，近 68 分鐘全由她的嗓音與電腦做成，錄於東京家中，她形容它像依類別排列、圖鑑式的聲音辭典。",
+      "src": "https://ftarri.com/imj/504/index-j.html",
+      "from": "bank",
+      "single": true
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "2003 年她與 Sachiko M 的 Cosmos、與ユタカワサキ的 Astro Twin 合為雙 CD《Astro Twin + Cosmos》，獲 Ars Electronica 數位音樂（Digital Musics）類 Golden Nica 首獎。",
+      "src": "https://www.ftarri.com/festival/2019/weektwo/yoshida-e.html",
+      "src2": "https://webarchive.ars.electronica.art/en/festival2003/updates/article2.asp%3FiNewsID=313&iFollowUpID=1075.html",
+      "from": "new",
+      "note": "Ars 頁寫明 Astro Twins and Cosmos、Golden Nica、Digital Musics，但未寫年份；2003 年取自 Ftarri 與頁面路徑 festival2003。維基 Sachiko M 條稱得獎者為 Cosmos 專輯，各源說法略有不同，寫作層寫『合輯』最穩"
+     },
+     {
+      "f": "Ftarri 稱她是 1990 年代到 2000 年代『音響派（onkyo）』風格的創始者之一。",
+      "src": "https://www.ftarri.com/festival/2019/weektwo/yoshida-e.html",
+      "from": "new",
+      "single": true
+     }
+    ]
+   },
+   "era": {
+    "status": "bank",
+    "facts": [
+     {
+      "f": "2020 年 Ftarri 旗下的 Hitorri 廠牌以限量 200 張重發《Tiger Thrush》。",
+      "src": "https://ftarri.com/hitorri/981/index.html",
+      "from": "bank",
+      "single": true
+     }
+    ]
+   }
+  },
+  "milestones": [],
+  "conflicts": [
+   "上線簡介寫『前一個月她與 Sachiko M 的二人組 Cosmos 才在 Ars Electronica 獲獎』；搜尋與 Ftarri 都說得獎作品是 Astro Twin + Cosmos 雙 CD 合輯（Astro Twin 為ユタカワサキ），而 Ars 典禮通常在 9 月（待查），與《Tiger Thrush》2003 年 7 月出版相差約兩個月；見 pubIssues。"
+  ],
+  "pubIssues": [
+   {
+    "album": "Tiger Thrush",
+    "claim": "出版前一個月她與 Sachiko M 的二人組 Cosmos 才在 Ars Electronica 獲獎",
+    "problem": "得獎的是雙 CD 合輯《Astro Twin + Cosmos》（Astro Twin 為吉田與ユタカワサキ，Cosmos 為吉田與 Sachiko M），不是只有 Cosmos；『前一個月』的時序本層未查到頒獎月份，建議改成『同年獲獎』或查證後再寫",
+    "src": "https://www.ftarri.com/festival/2019/weektwo/yoshida-e.html"
+   }
+  ],
+  "searches": 4,
+  "failedFetches": 0,
+  "status": "full",
+  "notes": "在世。日文名寫作 Ami Yoshida 為主，正文不用片假名（ユタカワサキ為專名，必要時改寫 Utah Kawasaki；Ftarri 英文頁與維基皆用 Utah Kawasaki）。同名檢查：卡池僅 Tiger Thrush 一張，與 Ftarri IMJ-504 對應，無混卡。維基 Ami Yoshida 條無 Ars 獎細節，獎項以 Ftarri 為主；Ars 頁明確有『Astro Twins and Cosmos: Golden Nica / Digital Musics』。Ars 頒獎月份未查（檢查上限內不追）。"
+ },
+ {
+  "key": "vansire",
+  "name": "Vansire",
+  "slots": {
+   "origin": {
+    "status": "bank",
+    "facts": [
+     {
+      "f": "Vansire 是明尼蘇達州羅徹斯特的二人組 Josh Augustin 與 Sam Winemiller，兩人在高中鼓隊認識，2015 年夏天 Winemiller 提議組一個「像 Mac DeMarco」的樂團，第一首歌是用 iPad 的 GarageBand 錄的。",
+      "src": "https://en.wikipedia.org/wiki/Vansire",
+      "src2": "https://www.oberlin.edu/news/qa-vansire-cofounder-josh-augustin-20",
+      "from": "bank",
+      "note": "2015 年與 iPad 錄音：維基與 Oberlin 訪談一致（Oberlin 未寫年份）"
+     },
+     {
+      "f": "團名來自線上隨機字詞產生器，抽到的是侏獴的別名 vansire。",
+      "src": "https://en.wikipedia.org/wiki/Vansire",
+      "src2": "https://www.oberlin.edu/news/qa-vansire-cofounder-josh-augustin-20",
+      "from": "bank"
+     },
+     {
+      "f": "首張專輯《Reflections and Reveries》2016 年 8 月自行發行，錄於 Winemiller 家的地下室；之後 Augustin 到歐柏林音樂學院、Winemiller 到明尼蘇達大學，兩人遠距離合作。",
+      "src": "https://en.wikipedia.org/wiki/Vansire",
+      "from": "bank",
+      "single": true
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Augustin 就讀歐柏林的 TIMARA（電子與電腦音樂）專業，環境音、田野錄音與分樂章的歌都影響樂團；他點名 Pauline Oliveros、John Cage、Luc Ferrari、Sun Ra 與 Alice Coltrane，認為實驗音樂與流行不必互斥，目標是捕捉「細微變成壯闊」的那一刻。",
+      "src": "https://www.oberlin.edu/news/qa-vansire-cofounder-josh-augustin-20",
+      "from": "new",
+      "single": true
+     },
+     {
+      "f": "他們通常先一起把器樂軌做出來，人聲最後才錄，歌聲都由 Augustin 寫並錄；歌詞常混合文學、電影與音樂典故，與威斯康辛、明尼蘇達一帶 Driftless 地區和鏽帶（Rust Belt）的中西部意象。",
+      "src": "https://www.oberlin.edu/news/qa-vansire-cofounder-josh-augustin-20",
+      "from": "new",
+      "single": true
+     }
+    ]
+   },
+   "legacy": {
+    "status": "none",
+    "facts": []
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "《Angel Youth》的核心想法是『把自己的人生說成像電影』的哲學後果；與邁阿密饒舌手 Chester Watson 的合作從 2017 年 Augustin 寄去幾首歌開始，做出〈Star Catcher〉。",
+      "src": "https://www.oberlin.edu/news/qa-vansire-cofounder-josh-augustin-20",
+      "from": "new",
+      "single": true
+     }
+    ]
+   }
+  },
+  "milestones": [],
+  "conflicts": [
+   "Oberlin 訪談稱 Watson 是邁阿密饒舌手；上線簡介未提籍貫，無衝突。"
+  ],
+  "pubIssues": [],
+  "searches": 2,
+  "failedFetches": 0,
+  "status": "thin",
+  "notes": "在世的小型獨立團，legacy 查無有出處的共識評價（無後輩點名、獎項或權威榜單），標 none，寫作層用身世與聲音即可。同名檢查：卡池 Angel Youth 2018 與羅徹斯特二人組一致，無混卡。維基稱 Winemiller 到明尼蘇達大學；不同報導有系所差異（建築說），不收。"
+ }
+]
