@@ -3895,4 +3895,5 @@ window.DipPreviewStatus = Object.freeze({
   "monkyman|what about love": "unavailable",
   "gendema|where it hurts less": "unavailable",
   "alba|sacramentarium": "unavailable",
+  "govinda|resonance": "unavailable",
 });

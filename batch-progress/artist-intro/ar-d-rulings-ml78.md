@@ -25,3 +25,4 @@
 ## 合併 main
 - Ochre 與並行批 ar-d-815（md44／md45）重複，ar-d-815 先上 main，讓給已上線版本；ar-d-812 實上線 14 位、兩批合計 32 位。
 - 再合併 main（ml80／ml81）：Entheogenic 與 ar-d-813、Project Lazarus 與 ar-d-814 重複，皆讓給已上線版本（Zero Cult 本批原本就不寫）。最終 ar-d-811 上線 17、ar-d-812 上線 13，合計 30 位。
+- 三合併 main（ml76／ml77）：Saafi Brothers 讓 ar-d-809；Robot Koch、Błoto、Evil Needle 讓 ar-d-810。最終 ar-d-811 上線 16、ar-d-812 上線 10，合計 26 位。
