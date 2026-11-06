@@ -4410,7 +4410,11 @@ ${seenList}
   }
 
   // Spotify result cache (localStorage) — avoids repeated API calls for same album
-  const SPOTIFY_CACHE_KEY = 'dip_spotify_cache_v4'; // v4：worker 加跨語言比對後重抓（日韓中文專輯改由 Spotify 命中）
+  // v5（2026-11-06）：舊版把「有封面但沒 Spotify 連結」的結果也永久存著——10 月 Spotify 配額爆掉那幾天查到的空連結
+  // 被玩家手機記住，KV 之後補好連結也不會再問，按鈕一直灰（店主：「好多 Spotify 連結是灰的」，Grimes《Geidi Primes》KV 有連結、畫面灰）。
+  // 升版清掉舊快取；之後只存有 Spotify 連結的結果，沒連結的每次都回 worker 問（KV 命中，很快）。
+  const SPOTIFY_CACHE_KEY = 'dip_spotify_cache_v5';
+  try { localStorage.removeItem('dip_spotify_cache_v4'); } catch (e) {}
   const SPOTIFY_CACHE_MAX = 300;
   function _spotifyCacheKey(artist, album) {
     return (artist + '||' + album).toLowerCase().trim();
@@ -4420,7 +4424,8 @@ ${seenList}
       const s = localStorage.getItem(SPOTIFY_CACHE_KEY);
       if (!s) return null;
       const cache = JSON.parse(s);
-      return cache[key] || null;
+      const hit = cache[key];
+      return hit && hit.spotifyUrl ? hit : null;   // 沒 Spotify 連結的不算命中，回 worker 重問
     } catch(e) { return null; }
   }
   function _spotifyCacheSet(key, val) {
@@ -4454,12 +4459,12 @@ ${seenList}
       clearTimeout(tid);
       const result = res.ok ? (await res.json()) : {};
       console.log('[cover]', result.imageUrl ? '✓' : '✗', artist, '-', album);
-      if (result.imageUrl) { _spotifyCacheSet(cacheKey, result); return result; }
+      if (result.imageUrl) { if (result.spotifyUrl) _spotifyCacheSet(cacheKey, result); return result; }
       // Spotify 沒有 → 回頭問 Bandcamp（冷門／獨立發行常只在這裡有）
       const bc = await fetchBandcampCover(artist, album);
       if (bc.imageUrl || bc.bandcampUrl) {
         const merged = { ...result, imageUrl: bc.imageUrl || null, bandcampUrl: bc.bandcampUrl || null };
-        if (merged.imageUrl) _spotifyCacheSet(cacheKey, merged);
+        // 這條沒有 Spotify 連結：不存本機，下次仍回 worker 問（KV 之後補上連結才接得到）
         return merged;
       }
       // Bandcamp 也沒有 → 確認 YT Music 有官方專輯頁（無封面，但證明專輯真實存在＋給直連）
