@@ -41,3 +41,12 @@
 - 24165：Tryphème《Slowride》：trip-hop loop 鼓拍＋bass 吉他 riff＋MBV 系糊，屬有拍沒攻擊性；x 2.5 可能到 2.8–3.0（偏躁），z 未決。
 - 24166：VANITAS命死《心の泉》：無任何聲音描述，只有 slushwave 標籤與 9 首長曲（均長 8 分）；無鼓證據，z（暖冷）未決，曲名一首含『冷』。thin。
 - 24167：Ian Hawgood《Well, Here We Are》：廠方與藝人自述一致，電聲＋田野錄音＋drone，無鼓；最合 ml，y 0.6 略低於邊距待評分層確認。
+
+## 研究 b 組
+- 24131 Swim Surreal《In the Half Light》：只有標籤與文案，無樂評；Zero 7 製作的有人聲歌曲，推論 y 偏輕（約 0～0.4）、較像放鬆。status thin，moodGuess 存疑（y 偏低）。
+- 24132 Helios《Domicile》：廠牌文案直述平靜合成器質地、無結構堆疊、背景音樂；無鼓。判 y 約 0.2～0.5，邊緣放鬆／恍惚，moodGuess 存疑（y 偏輕）。
+- 24133 Saafi Brothers《Mystic Cigarettes》：文案直述 bopping drums、bassy beats、drum trills，每首 7–14 分鐘；判 x 約 2.5～3.0，擦邊沸騰，moodGuess 存疑（x 偏躁）。年份 MB 1997-11 對 Bandcamp 1997-01-11，採 MB。
+- 24134 Circular《Substans》：文案有 uplifting grooves、industrial clunks，影響來源 Boards of Canada／Biosphere；x 可能 2.0～2.8，z 可能 <0，moodGuess 存疑（偏冷）。status thin。
+- 24135 Hinkstep《A Generation Lost in Space》：無聲音描述，太空音景＋朗讀詩，z 可能偏冷，moodGuess 存疑（偏冷）；年份 2016 照 MB，2023 為 Nebulosa 實體版。
+- 24136 Koan《When the Silence Is…》：MB／Bandcamp 的 2013 版是 18 首含大量混音、157 分鐘的擴充版，原專輯疑為 2009 年《When the Silence Is Speaking》（PsyNews、Sputnik 標 2009，Apple 標 2010），原始首發年未證實；MB 另掛 progressive trance，x 可能偏躁。建議主線考慮汰換。
+- 24137 Evil Needle《Cirrostratus》：15 首平均 2.5 分鐘的 beat tape，曲名暗示鼓點與律動；Cold Busted 網址互相轉址、WebFetch 讀不到；判較像放鬆或雀躍邊緣，建議汰換。
