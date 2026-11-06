@@ -1,5 +1,16 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-06｜dip-vinyl-shop｜情緒薄格 Bandcamp「有鼓」名單 ml76／ml77：66 張上線（落恍惚 47）＋藝人介紹 49 位
+
+- **店主 11-06**：「有些要死不活的音樂也會有鼓推進」「全都上架吧」→ 前兩輪因有拍推進被汰／被舞池標籤先篩掉的 473 張切十批、五個工作階段並行；本工作階段做 ml76（`pick-ml76.json` 47，條號 24521）、ml77（`pick-ml77.json` 47，條號 24601）。只汰「鼓＋攻擊性」與「舞池推進」，**判輕判冷不汰**（落其他格照實計）；前輪研究稿 11 張直接沿用、只補鼓型。
+- **ml76**：主線汰 9（合輯、EP、同人超量、house／dnb 與舞曲自述）→ 研究汰 3（Little Dragon、Abakus、Dan le Sac 舞池）→ **上線 35、落恍惚 27（77%）**；其他格沸騰 2、頹靡 3、放鬆 3。
+- **ml77**：主線汰 13（Chillhop 季度合輯、重混輯、翻唱輯、Kompakt 四拍、同人超量）→ 研究汰 3（GILA 攻擊性、Banco de Gaia 舞池、Invisible Allies remix 過半）→ **上線 31、落恍惚 20（65%）**；其他格沸騰 4（皆 x 3.0 貼線）、頹靡 5、雀躍 1、平靜 1。
+- **結論**：有鼓名單 66 張只有 6 張判躁，慢拖鼓照「有鼓不等於躁」確實多留在靜；出格主因是判冷（頹靡 8）與判輕（放鬆／雀躍 4），不是鼓。
+- **寫入（已即時生效）**：card_catalog 66、KV 66 鍵逐字回讀一致（stamp 20261106ml76／ml77）、試聽 65 ready／1 unavailable（Govinda，Apple 查無；最紅那首換 56 張）、seed +66；prepare／published gate 皆 0 error；頂點 0。封面 CAA 59、Bandcamp 5、Apple 官方 2（CAA 404）。§1 人工身分 2（Smigonaut、LAL）。審稿改 3 張（Smidley 單源命名軼事出處頁查無、Flox 單源評價、Blackfish 時序倒置）。
+- **藝人介紹**：ar-d-809 寫 28（不寫 Travelling Day、Erik Jackson）、ar-d-810 寫 21（不寫 Dr. Toast）；審稿改 8 處（刪單源評價／獎項、截止日後未核實的 Foxing 休團、Govinda「EP」誤稱）。介紹總數 10,780（合併 main 前）。
+- **主要檔案**：`batch-progress/add-20261106-{ml76,ml77}/`、`onboarding-manifest-add-20261106-ml7[67]-20261106.json`、`batch-progress/mood-cells-20261022/{curation-ml76,curation-ml77,master-ml76,master-ml77,cut-artist-intros-ml76.mjs,SCENES.md}`、`desc-tools/batches/{cards,research,hooks,input,output}/add-20261106-ml7[67]*`、`batch-progress/mood-axes/score-{ml76,ml77}/`、`batch-progress/artist-intro/{roster-ml76-ar-d-809,roster-ml77-ar-d-810,ar-d-rulings-ml76.md}`、`data/artist-intros/`、`seed_cards.json`、`data/mood/`、`genre-tree.json`、`card-subgenres.json`、`draw-covers/`、試聽地圖。
+- **驗證**：`verify-album-onboarding --published` 兩批 0 error；`verify-wave-kv` 35／35、31／31；`build-card-moods` 錨點 104/104；`qa-artist out` 兩批只剩刻意不寫的缺位。
+
 ### 2026-11-06｜dip-vinyl-shop｜藝人介紹剩餘補登六批 ar-d-801～806：寫 201 位（總數 10,731）
 
 - **店主 11-06「剩下的分配批次跑完 並上架」**：二十批後重算，卡池 10,823 位藝人缺 494 位；其中 217 位從沒排過，補登 `roster-fill-20261106.json`（addedBy fill-20261106），切 ar-d-801～806（2xx、5xx 已被其他工作階段使用，改用 8xx）。另 277 位是歷批試過、資料不足的，照規則不重派。

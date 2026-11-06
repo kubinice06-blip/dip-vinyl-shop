@@ -100,3 +100,15 @@
 - **24671** 逐張審 31 張（全文印出，逐句對研究稿 a–e；抽核 BALTHVS 波哥大郊外鄉間屋與 Cubensis Records（Riff Magazine）、Dr. Toast 為 False Profit 長期成員（Last.fm wiki；ml73 研究稿當時查無的是「False Profit Records 廠牌」，與本句不同）、Robot Koch 1977 年生於卡塞爾（維基）、Evil Needle 的 HW&W Recordings（Bandcamp）、Blackfish 生平（Discogs），皆有出處）。改 1 張 1 處（`desc-override.json`），只動語序，研究／hooks／input 不需同步：
   - `Blackfish|Pole Navigation`：「1999 年成立 Blackfish 這個名號。之後他轉向 trip-hop，到了 90 年代中段又把 drum'n'bass 混了進來。」→「後來轉向 trip-hop，90 年代中段又把 drum'n'bass 混了進來，1999 年才成立 Blackfish 這個名號。」（原句時序倒置：1999 之後不可能再回到 90 年代中段）。
 - 媒體名、榜單名次、「據說／據傳」全批 0。Era「賣出超過 600 萬張」是整個計畫的銷量（研究稿出自維基），照留。
+
+## 主線試聽／封面／三軸（不佔條號；2026-11-06）
+- 試聽：自動配對＋override 8（Apple 搜尋落空改走藝人頁 lookup 6；LAL §1 人工身分取 Apple ca 1365618209；Era 的 1996 原版不在 Apple，取 2002 Mercury 版《Era I》的〈Ameno〉，us 商店 lookup 回空改 fr）→ ready 31；`popular-preview manifest` 換成最紅那首 25 張。
+- 封面：CAA release-group front 28；Dr. Toast（CAA 404）用 Apple 452858981 官方封面（apple-verified-collection），Blackfish（CAA 404）與 LAL（§1）用 Bandcamp og:image。全批 HTTP 200，主線縮圖表目視與盤名相符。
+- 三軸：機器基線；Era《Era》為計畫首張與〈Ameno〉所在，經典度上調 4（`ratings-override.json`）。頂點 0。
+
+## 上線（2026-11-06，主線）（條號 24672）
+- **24672**：上線 31 張：card_catalog 31／31、KV 31 鍵回讀逐字一致（stamp 20261106ml77）、seed +31、prepare／published gate 0 error。藝人介紹 ar-d-810（寫 21、不寫 Dr. Toast）同 PR 上線。
+
+## 評分與落格（2026-11-06，主線）（條號 24673）
+- **24673**：Opus 1 支打 31 張（`batch-progress/mood-axes/score-ml77/`），主線看過未改值；priors／scale／card-moods、類型樹、抽卡封面同 ml76 重建；`warm-batch` 31/31 有標籤。
+- **落恍惚 20/31（65%）**；其他格 11：沸騰 4（Era、BALTHVS《Cause & Effect》、Glen Porter、Romare，皆 x 3.0 貼線——中速歌曲律動或局部 4/4）、頹靡 5（Robot Koch、Anthony Naples、Move 78、Błoto、LAL 判冷）、雀躍 1（Star Parks 判輕）、平靜 1（Ochre）。

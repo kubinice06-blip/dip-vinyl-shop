@@ -96,3 +96,15 @@
   - `Smidley|Smidley`：整段重寫。原 hook「計畫的名字，取自他兒時養的一隻黑色拉不拉多」出自研究稿引 Stereogum，主線重抓該頁全文查無 dog／labrador／named after，藝人介紹補洞層（ar-d-809 g1）也回報出處頁沒有這句——**單源且無法覆核，整句刪**；改以演奏名單（Bandcamp credits）開頭：「主唱的個人計畫，連薩克斯風都找齊了一支樂隊。」其餘句照研究稿（235 字）。
   - `Flox|The Words`：「被視為 nu reggae 的代表」→「做的是 nu reggae」（單篇樂評、且評的是後來的《Square》，評價句刪、留樂種）。
 - 媒體名、媒體年終榜、「據說／據傳」全批 0。
+
+## 主線試聽／封面／三軸（不佔條號；2026-11-06）
+- 試聽：自動配對＋override 2（Smigonaut §1 人工身分取 Apple us 1832081042；Govinda Apple 查無 → unavailable）→ ready 34／unavailable 1；`popular-preview manifest` 換成最紅那首 31 張。
+- 封面：CAA release-group front 31；Frenic、Sweeps（CAA 404）與 Smigonaut（§1）用 Bandcamp og:image，Dday One（CAA 404）用 Apple 1609539039 官方封面（apple-verified-collection）。全批 HTTP 200，主線縮圖表目視與盤名相符。
+- 三軸：機器基線（worker /album-rating，Last.fm listeners）；頂點 0（無殿堂共識、listeners 皆 ≥810 非遺珠、無異端證據）。
+
+## 上線（2026-11-06，主線）（條號 24592）
+- **24592**：上線 35 張：card_catalog 35／35、KV 35 鍵回讀逐字一致（stamp 20261106ml76）、seed +35、prepare／published gate 0 error（warning 皆 UPC 盡力而為與 Smigonaut 人工身分）。寫入前對 origin 近 25 個分支的 seed 去重 0。藝人介紹 ar-d-809（寫 28、不寫 Travelling Day、Erik Jackson）同 PR 上線（`batch-progress/artist-intro/ar-d-rulings-ml76.md`）。
+
+## 評分與落格（2026-11-06，主線）（條號 24593）
+- **24593**：Opus 1 支照 `score500/BRIEF.md`（10-23 體感標準＋「有鼓不等於躁」）打 35 張（`batch-progress/mood-axes/score-ml76/`），主線看過未改值。`build-priors` → `build-scale v0`（錨點 104/104）→ `build-card-moods`；`warm-batch` 33/35 有標籤，`build-genre-tree --pull --write`、`build-draw-covers --pull --write` 重建。
+- **落恍惚 27/35（77%）**；其他格 8：沸騰 2（Smidley 失真吉他 x 3.5、Shinji 放克 break x 3.0）、頹靡 3（The New Law、Neutron 9000、Saffron Bloom 判冷）、放鬆 3（Travelling Day、AndyFellaz、Tek 9 判輕）。**有鼓名單的慢拖鼓確實多留在靜**：35 張只有 2 張判躁。
