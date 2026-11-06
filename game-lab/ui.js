@@ -573,6 +573,7 @@
     if (s.bag.length > 7) h += '<span class="tag key">+' + (s.bag.length - 7) + '</span>';
     else if (s.label) h += '<span class="tag key">' + esc(s.label) + '</span>';
     sc.strip.innerHTML = h;
+    sc.strip.classList.toggle('tagged', s.bag.length > 7 || !!s.label);   // 右上角有標籤：格子往下讓，不壓到封面
   }
   function flyCover(c, fromEl, toEl, delay) {
     return new Promise(function (res) {

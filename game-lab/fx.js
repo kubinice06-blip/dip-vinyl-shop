@@ -54,7 +54,7 @@
   .bossmask .btitle{font-size:32px;font-weight:700;letter-spacing:.35em;text-indent:.35em;color:#111;animation:bossStamp .55s .35s both cubic-bezier(.2,1.4,.4,1),bossGlow 1.2s .9s infinite;}
   @keyframes bossSub{0%{transform:scale(1.6);opacity:0;}100%{transform:none;opacity:1;}}
   .bossmask .bsub{font-size:13px;color:#b8860b;letter-spacing:.14em;font-weight:700;animation:bossSub .4s .62s both ease-out;max-width:90vw;white-space:nowrap;}
-  body.boss-shake #app{animation:bossShake .5s .55s;}
+  body.boss-shake #app>:not(.lb-top):not(.lb-scr.duel),body.boss-shake #app .dl-root>:not(.dl-top){animation:bossShake .5s .55s;}   /* 上排鈕不震（不會被推出右緣） */
   /* 飄字／蓋章／閃白 */
   .dlfx-layer{position:fixed;inset:0;pointer-events:none;z-index:2147480000;overflow:hidden;}
   .dlfx-float{position:fixed;transform:translate(-50%,-100%);text-align:center;pointer-events:none;white-space:nowrap;
@@ -438,7 +438,22 @@
     const r = el.getBoundingClientRect(); return { x: r.left + r.width / 2, y: r.top, w: r.width, h: r.height, cy: r.top + r.height / 2 };
   }
   // 飄字：大數字＋一行 12px 拆解；cls：'toE'|'toP'|'big'|'small'|'qi'|'neg'
+  // 同時飄的字不疊在一起，也不壓在 opt.avoid 給的重要標籤（聲望條、品味輾壓鈕、橫幅…）上：
+  // 先試原位，再往上／下一格一格挪（opt.prefer 'down' 先往下），都不行就挑壓得最少的位置。整條上飄的路徑都算佔位。
+  const liveFloats = new Set();
+  function boxOf(e) {
+    if (!e) return null;
+    if (Array.isArray(e)) return e;
+    if (!e.getBoundingClientRect || !e.isConnected) return null;
+    const r = e.getBoundingClientRect();
+    return r.width && r.height ? [r.left, r.top, r.right, r.bottom] : null;
+  }
+  function overlap(a, b) {
+    const w = Math.min(a[2], b[2]) - Math.max(a[0], b[0]), h = Math.min(a[3], b[3]) - Math.max(a[1], b[1]);
+    return w > 0 && h > 0 ? w * h : 0;
+  }
   function floatText(anchorEl, text, sub, cls, opt) {
+    opt = opt || {};
     const p = anchorPt(anchorEl);
     const d = document.createElement('div');
     d.className = 'dlfx-float ' + (cls || '');
@@ -447,10 +462,32 @@
     if (sub) d.querySelector('.s').textContent = sub;
     d.style.left = '0px'; d.style.top = '0px';
     layer().appendChild(d);
-    const half = Math.ceil((d.offsetWidth || 120) / 2) + 4, vw = window.innerWidth || 390;
-    const x = Math.max(half, Math.min(vw - half, p.x + ((opt && opt.dx) || 0)));
-    d.style.left = x + 'px'; d.style.top = Math.max(d.offsetHeight + 2, p.y + ((opt && opt.dy) || 0) + 6) + 'px';
-    const dur = (opt && opt.ms) || 600, rise = (opt && opt.rise) || 34;
+    const dur = opt.ms || 600, rise = opt.rise || 34;
+    const vw = window.innerWidth || 390, vh = window.innerHeight || 700;
+    const fw = (d.offsetWidth || 120) * 1.1, fh = (d.offsetHeight || 20) * 1.1;   // 彈出時放大 1.15：多留一點
+    const half = Math.ceil(fw / 2) + 4;
+    const clampX = x => Math.max(half, Math.min(vw - half, x));
+    const clampY = y => Math.max(fh + rise + 2, Math.min(vh - 2, y));
+    const x0 = clampX(p.x + (opt.dx || 0)), y0 = clampY(p.y + (opt.dy || 0) + 6);
+    const foot = (x, y) => [x - fw / 2, y - fh - rise, x + fw / 2, y];
+    const now = performance.now();
+    const others = [];
+    liveFloats.forEach(f => { if (f.until > now && f.el.isConnected) others.push(f.box); else liveFloats.delete(f); });
+    const avoid = (opt.avoid || []).map(boxOf).filter(Boolean);
+    const score = b => others.reduce((t, o) => t + overlap(b, o) * 4, 0) + avoid.reduce((t, o) => t + overlap(b, o), 0);
+    const step = fh + 4, dirs = opt.prefer === 'down' ? [1, -1] : [-1, 1];
+    const cands = [[x0, y0]];
+    for (let k = 1; k <= 4; k++) dirs.forEach(dir => cands.push([x0, clampY(y0 + dir * k * step)]));
+    [-1, 1].forEach(dir => cands.push([clampX(x0 + dir * fw * 0.6), y0]));
+    let best = null;
+    for (const c of cands) {
+      const sc = score(foot(c[0], c[1]));
+      if (!best || sc < best.sc) best = { x: c[0], y: c[1], sc };
+      if (sc === 0) break;
+    }
+    d.style.left = Math.round(best.x) + 'px'; d.style.top = Math.round(best.y) + 'px';
+    const rec = { el: d, box: foot(best.x, best.y), until: now + (dur + 300) / sp() };
+    liveFloats.add(rec);
     let a;
     if (reducedMotion()) a = anim(d, [{ opacity: 0 }, { opacity: 1, offset: 0.25 }, { opacity: 1, offset: 0.75 }, { opacity: 0 }], { duration: dur + 300, fill: 'forwards' });
     else a = anim(d, [
@@ -459,7 +496,7 @@
       { transform: `translate(-50%,calc(-100% - ${rise * 0.6}px)) scale(1)`, opacity: 1, offset: 0.7 },
       { transform: `translate(-50%,calc(-100% - ${rise}px)) scale(1)`, opacity: 0 },
     ], { duration: dur + 300, easing: 'ease-out', fill: 'forwards' });
-    return fin(a, dur + 300).then(() => d.remove());
+    return fin(a, dur + 300).then(() => { liveFloats.delete(rec); d.remove(); });
   }
   // 蓋章：300 ms 彈出，停 ms（預設 900）後淡出。sub＝章下屬性色小字（技能名），subCls 'c'|'o'|'h'
   function stamp(anchorEl, text, cls, ms, sub, subCls) {

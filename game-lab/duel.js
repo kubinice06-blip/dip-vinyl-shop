@@ -313,7 +313,7 @@
       <div class="dl-eqi"><span class="lab">氣勢</span><div class="dl-segs"></div><span class="qn"></span><span class="uat"></span></div>
       <div class="dl-mid">
         <button type="button" class="dl-rec" aria-label="他擺上唱盤的唱片"><div class="cv"></div><div class="dl-stars key"></div></button>
-        <div class="dl-discw"><div class="dl-disc"><div class="dl-plate"><div class="dl-lbl"></div></div>
+        <div class="dl-discw"><div class="dl-disc"><div class="dl-plate"><div class="dl-lbl"></div></div><div class="dl-gls"></div>
           <div class="kill"></div><div class="dl-arm"><i class="base"></i><i class="rod"></i></div></div></div>
         <div class="dl-side"><div class="chips"></div><div class="dl-table"><span class="who">你出</span><div class="tc"></div></div></div>
       </div>
@@ -336,7 +336,7 @@
       bf: $('.dl-bub.f'), bo: $('.dl-bub.o'), bp: $('.dl-bub.p'), anger: $('.dl-anger'),
       nm: $('.dl-ename .nm'), tt: $('.dl-ename .tt'), phase: $('.dl-phase'), ehp: $('.dl-hp.e'), ehpn: $('.dl-hpn.e'),
       eqi: $('.dl-eqi'), segs: $('.dl-segs'), eqn: $('.dl-eqi .qn'), uat: $('.dl-eqi .uat'),
-      rec: $('.dl-rec'), recCv: $('.dl-rec .cv'), stars: $('.dl-stars'), disc: $('.dl-disc'), plate: $('.dl-plate'), lbl: $('.dl-lbl'),
+      rec: $('.dl-rec'), recCv: $('.dl-rec .cv'), stars: $('.dl-stars'), disc: $('.dl-disc'), plate: $('.dl-plate'), lbl: $('.dl-lbl'), gls: $('.dl-gls'),
       kill: $('.dl-disc .kill'), arm: $('.dl-arm .rod'), side: $('.dl-side'), chips: $('.dl-side .chips'), table: $('.dl-table'), tableC: $('.dl-table .tc'),
       hist: $('.dl-hist'), ban: $('.dl-ban'), bs: $('.dl-ban .bs'), bt: $('.dl-ban .bt'), tt2: $('.dl-tt'), ttLb: $('.dl-tt .lb'),
       php: $('.dl-hp.me'), phpn: $('.dl-hpn.p'), vu: $('.dl-vu'), pqn: $('.dl-me .row:nth-child(2) .qn'), peak: $('.dl-peak'), chain: $('.dl-chain'),
@@ -479,17 +479,34 @@
     const HINT_PRIORITY = { h_face: 1, h_eult: 1, h_reflect: 1 };
     // 第一手的兩句教學不靠計時消失：留到玩家下一個動作（點盤／出手）才收
     const HINT_STICKY = { h_counter: 1, h_forecast: 1 };
+    // 看「這一手」的提示：要講的那一刻條件還成立才講；不排隊（每手開始時重新判斷），免得上一手的「七星回擊」講在下一手
+    const HINT_NOW = {
+      h_reflect: v => !!(v.intent && v.intent.ult && v.p.aceCanReflect),
+      h_eult: v => !!(v.intent && v.intent.ult && !v.p.aceCanReflect),
+      h_ult: v => v.p.qi >= 6,
+      h_ace: v => !!(v.prologue && v.hand >= 2 && !v.p.aceUsed),
+      h_counter: v => !!(v.prologue && v.hand === 1),
+      h_forecast: () => S.sel != null,
+      h_request: v => !!v.request,
+      h_skip: v => !!(v.e.quirk && v.e.quirk.type === 'skip'),
+      h_copy: v => glyphHints(v).includes('h_copy'),
+      h_grudge: v => glyphHints(v).includes('h_grudge'),
+      h_eye: v => glyphHints(v).includes('h_eye'),
+      h_hidden: v => glyphHints(v).includes('h_hidden'),
+    };
+    const hintStale = id => !!(HINT_NOW[id] && S.v && !HINT_NOW[id](S.v));
     function hint(id) {
       const text = content.hints && content.hints[id];
       if (!text) return false;
-      // 結算動畫中冒出來的提示先排隊，等這手播完再講（不跟章、飄字、他的台詞疊在一起）
-      if (S.busy) { if (!S.hintQ.includes(id)) S.hintQ.push(id); return false; }
+      // 結算動畫中冒出來的提示先排隊，等這手播完再講（不跟章、飄字、他的台詞疊在一起）；看這一手的提示不排隊
+      if (S.busy) { if (!HINT_NOW[id] && !S.hintQ.includes(id)) S.hintQ.push(id); return false; }
+      if (hintStale(id)) return false;
       if (S.hintOn && !HINT_PRIORITY[id]) return false;
       let ok = false;
       if (hooks.hint) { try { ok = !!hooks.hint(id); } catch (e) { console.error(e); } }
       else if (!S.seenLocal[id]) { S.seenLocal[id] = true; ok = true; }
       if (!ok) return false;
-      S.hintOn = true;
+      S.hintOn = true; S.hintId = id;
       const sticky = !!HINT_STICKY[id];
       S.hintSticky = sticky;
       say('o', esc(text), sticky ? {} : { ms: 3500 });
@@ -498,7 +515,7 @@
       S.debug.log.push('hint:' + id);
       return true;
     }
-    function hideHint() { if (S.hintOn) { say('o', null); S.hintOn = false; S.hintSticky = false; } }
+    function hideHint() { if (S.hintOn) { say('o', null); S.hintOn = false; S.hintSticky = false; clearTimeout(S.hintTimer); } }
     function firstHint(ids) { for (const id of ids) if (id && hint(id)) return id; return null; }
     function glyphHints(v) {
       const out = [];
@@ -563,6 +580,15 @@
       const d = duel.e.disc || [];
       return d.map((g, i) => ({ i, glyph: g === 'hidden' ? (duel.e.habitKnown && duel.e.hidden ? duel.e.hidden : 'hidden') : g, attr: null }));
     }
+    // 唱盤上的字：角度 deg（0＝正上方，順時針）、半徑 r → 整數 px 平移
+    function slXY(deg, r) { const t = deg * Math.PI / 180; return `translate(${Math.round(r * Math.sin(t))}px,${Math.round(-r * Math.cos(t))}px)`; }
+    function placeSlices(rot) { els.gls.querySelectorAll('.dl-sl').forEach(n => { n.style.transform = slXY(+n.dataset.a + rot, +n.dataset.r); }); }
+    // 轉盤動畫：字的那層跟唱盤轉同樣的角度、每個字反轉回正；轉完放回整數平移
+    function orbitSlices(R0, R1, o) {
+      const out = [A(els.gls, [{ transform: 'rotate(0deg)' }, { transform: `rotate(${R1 - R0}deg)` }], o)];
+      els.gls.querySelectorAll('.dl-sl .in').forEach(n => out.push(A(n, [{ transform: 'rotate(0deg)' }, { transform: `rotate(${R0 - R1}deg)` }], o)));
+      return out;
+    }
     // 氣場唱盤：一張黑膠（溝紋整面看得到）＋中間一小圈圈標（他這手的唱片封面）＋唱臂。
     // 6 格＝溝紋上的 6 個字（真／晃／跟…），字旁的小色塊＝那格他會出的屬性（色＝真實機率；字＋色）。不畫扇形、不畫輻條：不是輪盤。
     function renderDisc(v) {
@@ -571,16 +597,18 @@
       els.lbl.style.background = '';
       const rot = S.rot;
       const showDot = !selfRead && !ult;
-      let h = '<div class="dl-hl"></div><div class="dl-inr"></div>';
+      const h = '<div class="dl-hl"></div><div class="dl-inr"></div><div class="dl-hole"></div>';
+      // 字與色塊不放在會轉的唱盤裡：轉過的圖層裡的字會被旋轉兩次再取樣，1x 螢幕上「晃」會糊成「旯」。
+      // 停著的時候一律是整數 px 的平移、不旋轉不縮放；轉盤的那 0.5 秒才整層跟著轉（spinTo／resetDisc）。
+      let g = '';
       sl.forEach((s, i) => {
         const a = i * 60 + 30;
-        const pos = r => `transform:rotate(${a}deg) translateY(-${r}px) rotate(${-a}deg)`;
         const al = s.glyph === 'hidden' ? '？：還沒看過的習慣' : `${GL[s.glyph]}：${glyphWhy(s.glyph, v)}${s.attr ? '（' + ZH[s.attr] + '）' : ''}`;
-        h += `<div class="dl-sl gl${s.glyph === 'hidden' ? ' hid' : ''}" data-i="${i}" style="${pos(35)}" aria-label="${esc(al)}"><div class="in" style="transform:rotate(${-rot}deg)"><span class="g key">${GL[s.glyph] || "？"}</span></div></div>`;
-        if (showDot && s.attr) h += `<div class="dl-sl d ${s.attr}" data-i="${i}" style="${pos(22)}"><div class="in" style="transform:rotate(${-rot}deg)">${ZH1[s.attr]}</div></div>`;
+        g += `<div class="dl-sl gl${s.glyph === 'hidden' ? ' hid' : ''}" data-i="${i}" data-a="${a}" data-r="35" style="transform:${slXY(a + rot, 35)}" aria-label="${esc(al)}"><div class="in"><span class="g key">${GL[s.glyph] || "？"}</span></div></div>`;
+        if (showDot && s.attr) g += `<div class="dl-sl d ${s.attr}" data-i="${i}" data-a="${a}" data-r="22" style="transform:${slXY(a + rot, 22)}"><div class="in">${ZH1[s.attr]}</div></div>`;
       });
-      h += '<div class="dl-hole"></div>';
       els.lbl.innerHTML = h;
+      els.gls.innerHTML = g;
       const rc = v.intent && v.intent.record, src = rc ? coverSrc(rc) : '';
       const inr = els.lbl.querySelector('.dl-inr');
       if (inr && src) inr.style.backgroundImage = `url("${src.replace(/"/g, '%22')}")`;
@@ -913,14 +941,16 @@
           dx = Math.min(0, Math.round(br.left - 8 - (ar.left + ar.width / 2 + 30)));   // 泡泡在他右邊：數字往左讓
         }
       }
-      f.floatText(a, '−' + amount, sub, (target === 'e' ? 'toE' : 'toP') + (amount >= 6 || big ? ' big' : ''), { dy, dx });
+      f.floatText(a, '−' + amount, sub, (target === 'e' ? 'toE' : 'toP') + (amount >= 6 || big ? ' big' : ''), { dy, dx, avoid: [els.bf, els.ename] });
     }
-    function floatSmall(anchor, text, cls) { const f = Fx(); if (f) f.floatText(anchor, text, null, 'small ' + (cls || ''), { ms: 520, rise: 20 }); }
+    // 飄字不能壓的標籤（fx.floatText 會挪開；同時飄的字彼此也會錯開）
+    const KEEP_CLEAR = () => [els.ban, els.php, els.ult, els.ehp, els.nm];
+    function floatSmall(anchor, text, cls, o) { const f = Fx(); if (f) f.floatText(anchor, text, null, 'small ' + (cls || ''), Object.assign({ ms: 520, rise: 20, avoid: KEEP_CLEAR() }, o || {})); }
     // 「你」這邊的小字（＋聲望、＋氣勢、你氣勢 −1）：壓在你自己的聲望／氣勢列上，不飄到橫幅上
     function floatMine(anchor, text, cls) {
       const f = Fx(); if (!f) return;
       const r = anchor.getBoundingClientRect();
-      f.floatText(anchor, text, null, 'small ' + (cls || ''), { ms: 620, rise: 8, dy: Math.round(r.height - 4), dx: 44 });
+      f.floatText(anchor, text, null, 'small ' + (cls || ''), { ms: 620, rise: 8, dy: Math.round(r.height - 4), dx: 44, avoid: KEEP_CLEAR() });
     }
     // 「他」這邊的小字：放在舞台上他身邊，不蓋住名牌那一列
     function floatHis(text, cls) {
@@ -928,7 +958,7 @@
       const a = actor('f');
       if (a && a.getBoundingClientRect().width) {
         const r = a.getBoundingClientRect(), sr = els.stageWrap.getBoundingClientRect();
-        f.floatText(a, text, null, 'small ' + (cls || ''), { ms: 620, rise: 14, dy: Math.round(Math.min(r.height * 0.7, sr.bottom - r.top - 10)), dx: Math.round(r.width * 0.5 + 40) });
+        f.floatText(a, text, null, 'small ' + (cls || ''), { ms: 620, rise: 14, dy: Math.round(Math.min(r.height * 0.7, sr.bottom - r.top - 10)), dx: Math.round(r.width * 0.5 + 40), avoid: [els.bf, els.ename, els.ban] });
       } else floatSmall(els.segs, text, cls);
     }
 
@@ -951,20 +981,18 @@
     async function spinTo(cellIdx) {
       const R0 = S.rot, base = R0 + 540, target = NEEDLE_DEG - (cellIdx * 60 + 30);
       const R1 = base + (((target - base) % 360) + 360) % 360;
-      const ins = Array.from(els.lbl.querySelectorAll('.dl-sl .in'));
       if (rm()) {
-        S.rot = R1; els.plate.style.transform = `rotate(${R1}deg)`; ins.forEach(n => { n.style.transform = `rotate(${-R1}deg)`; });
+        S.rot = R1; els.plate.style.transform = `rotate(${R1}deg)`; placeSlices(R1);
         els.arm.style.transform = 'rotate(101deg)';
         await wait(150);
       } else {
         const o = { duration: 560, easing: 'cubic-bezier(.2,.7,.2,1)', fill: 'forwards' };
-        const aa = [A(els.plate, [{ transform: `rotate(${R0}deg)` }, { transform: `rotate(${R1}deg)` }], o)];
-        ins.forEach(n => aa.push(A(n, [{ transform: `rotate(${-R0}deg)` }, { transform: `rotate(${-R1}deg)` }], o)));
+        const aa = [A(els.plate, [{ transform: `rotate(${R0}deg)` }, { transform: `rotate(${R1}deg)` }], o)].concat(orbitSlices(R0, R1, o));
         await wait(450);
         const arm = A(els.arm, [{ transform: 'rotate(84deg)' }, { transform: 'rotate(103deg)', offset: 0.7 }, { transform: 'rotate(101deg)' }], { duration: 230, easing: 'ease-in', fill: 'forwards' });
         await wait(230);
         S.rot = R1;
-        els.plate.style.transform = `rotate(${R1}deg)`; ins.forEach(n => { n.style.transform = `rotate(${-R1}deg)`; });
+        els.plate.style.transform = `rotate(${R1}deg)`; placeSlices(R1);
         els.arm.style.transform = 'rotate(101deg)';
         aa.forEach(a => a && a.cancel()); if (arm) arm.cancel();
       }
@@ -978,31 +1006,30 @@
         hl.style.boxShadow = '';
         A(hl, [{ opacity: 0 }, { opacity: 1 }], { duration: 200, fill: 'forwards' });
       }
-      els.lbl.querySelectorAll(`.dl-sl[data-i="${cellIdx}"]`).forEach(n => n.classList.add('hit'));
+      els.gls.querySelectorAll(`.dl-sl[data-i="${cellIdx}"]`).forEach(n => n.classList.add('hit'));
     }
     async function resetDisc() {
       const R0 = S.rot; if (!R0) return;
       const R1 = Math.ceil(R0 / 360) * 360;
-      const ins = Array.from(els.lbl.querySelectorAll('.dl-sl .in'));
       if (!rm() && R1 !== R0) {
         const o = { duration: 300, easing: 'ease-in-out', fill: 'forwards' };
-        const aa = [A(els.plate, [{ transform: `rotate(${R0}deg)` }, { transform: `rotate(${R1}deg)` }], o)];
-        ins.forEach(n => aa.push(A(n, [{ transform: `rotate(${-R0}deg)` }, { transform: `rotate(${-R1}deg)` }], o)));
+        const aa = [A(els.plate, [{ transform: `rotate(${R0}deg)` }, { transform: `rotate(${R1}deg)` }], o)].concat(orbitSlices(R0, R1, o));
         const hl = els.lbl.querySelector('.dl-hl'); if (hl) A(hl, [{ opacity: 1 }, { opacity: 0 }], { duration: 200, fill: 'forwards' });
         A(els.arm, [{ transform: 'rotate(101deg)' }, { transform: 'rotate(84deg)' }], { duration: 260, easing: 'ease-out', fill: 'forwards' });
         await wait(300);
+        placeSlices(0);
         aa.forEach(a => a && a.cancel());
       }
-      S.rot = 0; els.plate.style.transform = 'rotate(0deg)'; els.arm.style.transform = '';
+      S.rot = 0; els.plate.style.transform = 'rotate(0deg)'; els.arm.style.transform = ''; placeSlices(0);
       els.arm.getAnimations && els.arm.getAnimations().forEach(a => a.cancel());
     }
     async function flipSlices(newSl, onlyIdx, per) {
       const v = S.v;
       for (let i = 0; i < newSl.length; i++) {
         if (onlyIdx && !onlyIdx.includes(i)) continue;
-        const g = els.lbl.querySelector(`.dl-sl.gl[data-i="${i}"]`); if (!g) continue;
+        const g = els.gls.querySelector(`.dl-sl.gl[data-i="${i}"]`); if (!g) continue;
         const inner = g.querySelector('.in'); const sp = g.querySelector('.g');
-        A(inner, [{ transform: `rotate(${-S.rot}deg) scaleX(1)` }, { transform: `rotate(${-S.rot}deg) scaleX(0.05)`, offset: 0.5 }, { transform: `rotate(${-S.rot}deg) scaleX(1)` }], { duration: per * 2 });
+        A(inner, [{ transform: 'scaleX(1)' }, { transform: 'scaleX(0.05)', offset: 0.5 }, { transform: 'scaleX(1)' }], { duration: per * 2 });
         later(() => { if (sp) sp.textContent = GL[newSl[i].glyph] || '？'; }, per / S.speed);
         sfx('tick');
         await wait(per);
@@ -1024,7 +1051,7 @@
       } else A(ov, [{ opacity: 0 }, { opacity: 1 }], { duration: 150, fill: 'forwards' });
       await wait(560);
       sfx('ult');
-      if (f) f.shake(root, 10, 300 / S.speed);
+      if (f) shakeBody(f, 10, 300 / S.speed);
       await wait(260);
       A(ov, [{ opacity: 1 }, { opacity: 0 }], { duration: 200, fill: 'forwards' });
       later(() => ov.remove(), 220 / S.speed + 20);
@@ -1055,10 +1082,14 @@
       A(ov, [{ opacity: 1 }, { opacity: 0 }], { duration: 250, fill: 'forwards' });
       later(() => ov.remove(), 260 / S.speed + 20);
     }
-    // 全螢幕震動：震 #app（body 用 overflow-x:clip 把它夾住）＋蓋在上面的 fixed 疊層；
+    // 震動：震上排以外的每一塊（同一組關鍵影格，看起來就是整個畫面在震）；上排的 ⏸／？／🔇 不動，不會被推出螢幕右緣
     // 不震 document.body，不然手機上整頁會被推寬幾 px、短暫可以左右滑
+    function shakeBody(f, px, ms) {
+      Array.from(root.children).forEach(c => { if (!c.classList.contains('dl-top')) f.shake(c, px, ms); });
+    }
+    // 全螢幕震動（七星回擊、打烊）：畫面＋蓋在上面的 fixed 疊層
     function shakeScreen(f, ov, px, ms) {
-      f.shake(document.getElementById('app') || document.body, px, ms);
+      shakeBody(f, px, ms);
       if (ov) f.shake(ov, px, ms);
     }
     // 打倒傳說藏家：凍住 → 反相 → 全螢幕「打烊！」＋他押的那張 → 震 → 收（約 2 s，不受加速保險影響）
@@ -1184,7 +1215,7 @@
             S.chainShown = true; els.chain.classList.remove('pd');
             const dots = els.chain.querySelectorAll('i');
             for (let i = 0; i < ev.len; i++) { if (dots[i]) { dots[i].classList.add('on'); } sfx('qiUp', { n: 3 + i * 2 }); }
-            floatSmall(els.chain, `${ev.skill} ${ev.len} 連 ＋${ev.qi} 氣勢${ev.dmg ? ' ＋' + ev.dmg + ' 傷害' : ''}`, 'qi');
+            floatSmall(els.chain, `${ev.skill} ${ev.len} 連 ＋${ev.qi} 氣勢${ev.dmg ? ' ＋' + ev.dmg + ' 傷害' : ''}`, 'qi', { prefer: 'down', avoid: KEEP_CLEAR().concat([els.phpn, els.vu, els.pqn]) });
             if (ev.len >= 3) { els.chain.classList.remove('sweep'); void els.chain.offsetWidth; els.chain.classList.add('sweep'); }
             if (ev.len === 2) hint('h_chain');
             break;
@@ -1258,7 +1289,7 @@
               dmgDone = true;
               flushFx(250);
               if (clash && clash.kind !== 'reflect') await (f.hitStop ? f.hitStop(90) : wait(90));
-              if (!isUlt) f.shake(root, glyphFe ? 6 : 4, (glyphFe ? 160 : 120) / S.speed);
+              if (!isUlt) shakeBody(f, glyphFe ? 6 : 4, (glyphFe ? 160 : 120) / S.speed);
               f.vibrate(15);
             }
             if (tgt === 'e') {
@@ -1325,7 +1356,7 @@
               if (plusUp) parts.push(`他的唱片三軸＋${ev.starPlus} 星`);
               if (ev.aceIn) parts.push('你沒選的那張王牌洗進他的牌庫');
               if (bannerInfo) { bannerInfo.note = '翻面：' + parts.join('，'); renderBanner(bannerInfo); }
-              if (f) { f.shake(root, 6, 260 / S.speed); f.stamp(els.disc, (enemy.phaseLabels && enemy.phaseLabels[ev.phase]) || '翻面', 'ink', 900, ev.aceIn ? '王牌洗進他的牌庫' : '唱片＋' + ev.starPlus + ' 星'); }
+              if (f) { shakeBody(f, 6, 260 / S.speed); f.stamp(els.disc, (enemy.phaseLabels && enemy.phaseLabels[ev.phase]) || '翻面', 'ink', 900, ev.aceIn ? '王牌洗進他的牌庫' : '唱片＋' + ev.starPlus + ' 星'); }
               await wait(1150);
             }
             // h_face 的字（四格是「晃」）只對序章男子成立：只在序章提示
@@ -1393,7 +1424,15 @@
       if (v.p.qi >= 6) ids.push('h_ult');
       ids.push(...glyphHints(v));
       if (it && it.ult) ids.push(...q);
-      later(() => firstHint(ids), 400);
+      // 上一手留下來、這手已經不成立的提示（例：七星回擊）先收掉
+      if (S.hintOn && hintStale(S.hintId)) hideHint();
+      // 等 400 ms 再講（跟速度一起縮）；這段時間玩家已經出手了：看這手的提示作廢（下一手重新判斷），結算中冒出來的照樣排隊
+      const hand = v.hand;
+      later(() => {
+        if (S.destroyed || S.ending) return;
+        if (S.busy || (S.v && S.v.hand !== hand)) { ids.forEach(id => { if (id && !HINT_NOW[id] && !S.hintQ.includes(id)) S.hintQ.push(id); }); return; }
+        firstHint(ids);
+      }, 400 / (S.speed || 1));
     }
     function finish(over) {
       if (S.ending) return; S.ending = true;

@@ -168,7 +168,7 @@ img{display:block;}
 
 /* ---------- 包包條（scene 底部：王牌格＋手牌列；封面飛進來） ---------- */
 .lb-strip{flex:none;display:flex;align-items:center;gap:4px;padding:8px 10px;min-height:64px;border-bottom:1px solid var(--line);background:#fff;position:relative;overflow:hidden;}
-.lb-strip .lab{font-size:12px;font-weight:700;color:var(--gray2);writing-mode:vertical-rl;letter-spacing:.2em;flex:none;}
+.lb-strip .lab{font-size:12px;font-weight:700;color:var(--gray2);flex:none;width:1.1em;line-height:1.25;letter-spacing:0;text-align:center;white-space:normal;word-break:break-all;}   /* 「包包」一字一行（不用直排：沒有直排字距的字型會把兩個字疊在一起） */
 .lb-strip .slot{flex:0 1 38px;min-width:0;height:38px;border:1px dashed #bbb;position:relative;overflow:hidden;background:#fafafa;}
 .lb-strip .slot.ace{width:46px;height:46px;border-color:var(--gold);}
 .lb-strip .slot img{width:100%;height:100%;object-fit:cover;}
@@ -176,7 +176,8 @@ img{display:block;}
 .lb-strip .slot.junk{opacity:.85;}
 .lb-strip .sep{width:1px;align-self:stretch;background:var(--line);margin:0 2px;}
 /* 390px 放不下 7 格＋標籤：標籤貼在包包列右上角（不再把整頁往右推） */
-.lb-strip .tag{position:absolute;right:8px;top:1px;font-size:12px;line-height:1.1;color:var(--gray2);white-space:nowrap;background:rgba(255,255,255,.92);padding:0 3px;}
+.lb-strip .tag{position:absolute;right:8px;top:2px;font-size:12px;line-height:13px;color:var(--gray2);white-space:nowrap;background:rgba(255,255,255,.92);padding:0 3px;}
+.lb-strip.tagged{padding-top:17px;padding-bottom:4px;}
 
 /* ---------- 封面、卡片 ---------- */
 .lb-cv{position:relative;overflow:hidden;background:repeating-linear-gradient(45deg,#fff,#fff 5px,#f1f1f1 5px,#f1f1f1 10px);flex:none;}
@@ -324,7 +325,7 @@ button.lb-ct:focus-visible{outline:2px dashed var(--gold);outline-offset:3px;}
 .lb-pv .ln .k{color:var(--gray2);min-width:3.2em;}
 .lb-pv .ln b{font-size:13px;}
 .lb-glyphs{display:inline-flex;gap:3px;}
-.lb-glyph{display:inline-flex;align-items:center;justify-content:center;width:24px;height:24px;border:1px solid var(--ink);font-size:13px;font-weight:700;background:#fff;}
+.lb-glyph{display:inline-flex;align-items:center;justify-content:center;width:24px;height:24px;border:1px solid var(--ink);font-family:'DipGlyph','Noto Sans TC','PingFang TC','Heiti TC','Microsoft JhengHei',sans-serif;font-size:14px;font-weight:700;letter-spacing:0;background:#fff;}
 .lb-glyph.feint{border-color:var(--red);color:var(--red);}
 .lb-glyph.hidden{background:#111;color:#fff;}
 .lb-gold-tag{display:inline-block;background:var(--gold);color:#fff;font-size:12px;font-weight:700;padding:1px 6px;}

@@ -4,6 +4,7 @@
   --c:#1f5fae; --o:#6a3fa0; --h:#c11628; --gold:#b8860b; --red:#c11628; --win:#2e7d52;
   --ink:#111; --gray:#666; --line:#ddd; --paper:#f4ecd8;
   --tc:#d9e4f4; --to:#e6dcf1; --th:#f6d8dc; --tn:#ececec;
+  --glyph:'DipGlyph','Noto Sans TC','PingFang TC','Heiti TC','Microsoft JhengHei',sans-serif;   /* 唱盤字（真晃跟報盯？經冷硬霸）：ui.js 載 Noto Sans TC 子集 */
   position:relative; display:flex; flex-direction:column; width:100%; max-width:430px; height:100%; min-height:0;
   margin:0 auto; background:#fff; color:var(--ink); overflow:hidden;
   font-family:'Space Mono','Noto Sans TC',monospace; font-size:12px; line-height:1.3; letter-spacing:.02em;
@@ -19,7 +20,7 @@
 .dl-top{flex:0 0 44px; display:flex; align-items:center; gap:6px; padding:0 0 0 8px; border-bottom:1px solid var(--ink); background:#fff; position:relative; z-index:5;}
 .dl-time{font-weight:700; font-size:13px; white-space:nowrap;}
 .dl-tname{font-weight:700; font-size:13px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; min-width:0; flex:0 1 auto;}
-.dl-hid{font-size:12px; font-weight:700; border:1px solid var(--gold); color:var(--gold); padding:0 4px; line-height:18px; white-space:nowrap;}
+.dl-hid{font-family:var(--glyph); font-size:13px; font-weight:700; border:1px solid var(--gold); color:var(--gold); padding:0 4px; line-height:18px; white-space:nowrap;}
 .dl-hid.known{background:var(--gold); color:#fff;}
 .dl-hid.bounce{animation:dlHidBounce .6s cubic-bezier(.2,1.6,.4,1);}
 @keyframes dlHidBounce{0%{transform:scale(1);}25%{transform:translateY(-6px) scale(1.5);}60%{transform:translateY(0) scale(.9);}100%{transform:none;}}
@@ -149,12 +150,14 @@
 .dl-inr{position:absolute; left:37px; top:37px; width:26px; height:26px; border-radius:50%; background:#f4ecd8 center/cover no-repeat; box-shadow:0 0 0 1px #000, 0 0 0 2px #c9a227;}
 .dl-sl{position:absolute; left:50%; top:50%; width:0; height:0;}
 .dl-sl .in{position:absolute; left:-12px; top:-12px; width:24px; height:24px; display:flex; align-items:center; justify-content:center; line-height:1;}
-.dl-sl .g{font-size:15px; font-weight:900; line-height:1; color:#f4ecd8; text-shadow:0 1px 0 #000, 0 0 2px #000;}
+.dl-gls{position:absolute; inset:0; z-index:3; pointer-events:none;}
+.dl-sl .g{font-family:var(--glyph); font-size:15px; font-weight:700; line-height:1; color:#f4ecd8; text-shadow:0 1px 0 #000; letter-spacing:0;}
 .dl-sl.hid .g{color:#e2bd52;}
-.dl-sl.d .in{left:-7px; top:-7px; width:14px; height:14px; font-size:12px; font-weight:900; color:#fff; border-radius:2px; box-shadow:0 0 0 1px rgba(0,0,0,.7); letter-spacing:0;}
+.dl-sl.d .in{left:-8px; top:-8px; width:16px; height:16px; font-family:var(--glyph); font-size:13px; font-weight:700; color:#fff; border-radius:2px; box-shadow:0 0 0 1px rgba(0,0,0,.7); letter-spacing:0;}
 .dl-sl.d.c .in{background:var(--c);} .dl-sl.d.o .in{background:var(--o);} .dl-sl.d.h .in{background:var(--h);}
-.dl-sl.hit .g{color:#fff; transform:scale(1.35); text-shadow:0 0 4px #000, 0 0 2px #000;}
-.dl-sl.hit.d .in{transform:scale(1.25); box-shadow:0 0 0 1px #fff;}
+/* 亮起來的那格：放大用字級，不用 transform 縮放（縮放過的字在 1x 螢幕會糊） */
+.dl-sl.hit .g{color:#fff; font-size:19px; text-shadow:0 1px 0 #000, 0 0 3px #000;}
+.dl-sl.hit.d .in{left:-10px; top:-10px; width:20px; height:20px; font-size:15px; box-shadow:0 0 0 1px #fff;}
 .dl-hole{position:absolute; left:48px; top:48px; width:4px; height:4px; border-radius:50%; background:#d6d6d6; box-shadow:0 0 0 1px #000;}
 /* 唱臂：方形底座＋軸心、後面一塊配重、前端斜的唱頭（不是拉霸） */
 .dl-arm{position:absolute; left:104px; top:4px; width:0; height:0; z-index:4; pointer-events:none;}
@@ -163,7 +166,7 @@
 .dl-arm .rod{position:absolute; left:0; top:-1px; width:46px; height:2px; background:#c4c4c4; box-shadow:0 0 0 1px #333; transform-origin:0 50%; transform:rotate(84deg);}
 .dl-arm .rod::before{content:''; position:absolute; left:-11px; top:-3px; width:7px; height:8px; background:#4a4a4a; border-radius:1px; box-shadow:0 0 0 1px #222;}
 .dl-arm .rod::after{content:''; position:absolute; right:-7px; top:-3px; width:10px; height:7px; background:#2a2a2a; border-radius:1px 2px 2px 1px; transform:rotate(-22deg); transform-origin:0 50%; box-shadow:0 0 0 1px #000;}
-.dl-disc.ult .dl-plate, .dl-disc.ult .dl-lbl{filter:grayscale(1); opacity:.55;}
+.dl-disc.ult .dl-plate, .dl-disc.ult .dl-lbl, .dl-disc.ult .dl-gls{filter:grayscale(1); opacity:.55;}
 .dl-disc .kill{position:absolute; left:50%; top:50%; transform:translate(-50%,-50%) rotate(-8deg); background:#fff; color:var(--red); border:2px solid var(--red); font-size:12px; font-weight:900;
   padding:2px 5px; line-height:1.25; text-align:center; white-space:nowrap; z-index:5; display:none; pointer-events:none;}
 .dl-disc.ult .kill{display:block;}
@@ -301,7 +304,7 @@
 /* 預覽條：一塊＝他出的一種情況；寬＝格數。上排＝他出的屬性（白字屬性色塊，跟唱盤上的色塊一樣），下排＝結果 */
 .dl-strip{display:flex; gap:2px; width:100%; margin-top:4px; min-height:36px; align-items:stretch;}
 .dl-strip .sg{min-width:0; display:flex; flex-direction:column; border:1px solid var(--ink); overflow:hidden; text-align:center;}
-.dl-strip .sg .t{font-size:12px; font-weight:900; line-height:15px; color:#fff; background:#8a8a8a; letter-spacing:0;}
+.dl-strip .sg .t{font-family:var(--glyph); font-size:13px; font-weight:700; line-height:16px; color:#fff; background:#8a8a8a; letter-spacing:0;}
 .dl-strip .sg .t.c{background:var(--c); color:#fff;} .dl-strip .sg .t.o{background:var(--o); color:#fff;} .dl-strip .sg .t.h{background:var(--h); color:#fff;}
 .dl-strip .sg .t.n{background:#555; color:#fff;}
 .dl-strip .sg b{flex:1 1 auto; display:flex; align-items:center; justify-content:center; font-size:15px; font-weight:900; line-height:1; letter-spacing:-.05em; min-height:19px;}
@@ -309,7 +312,8 @@
 .dl-strip .sg.ng b{background:#fff; color:var(--red); box-shadow:inset 0 0 0 2px var(--red);}
 .dl-strip .sg.eq b{background:#ededed; color:#444; font-size:13px;}
 .dl-strip .sg.un b{background:repeating-linear-gradient(45deg,#fff 0 3px,#e4e4e4 3px 6px); color:#444;}
-.dl-strip .sg.fe .t{text-decoration:underline; text-decoration-color:#fff; text-underline-offset:1px;}
+/* 晃格：斜紋底（不用底線：底線會切過「晃」的下半，小字看起來像「旯」） */
+.dl-strip .sg.fe .t{background-image:repeating-linear-gradient(135deg, rgba(255,255,255,.28) 0 2px, transparent 2px 5px);}
 .dl-tip{position:absolute; left:7px; right:7px; z-index:40; background:#fff; border:2px solid var(--ink); padding:6px 8px; font-size:13px; font-weight:700; line-height:1.45; white-space:pre-line; pointer-events:none; box-shadow:0 4px 12px rgba(0,0,0,.2);}
 @media (hover:none),(pointer:coarse){ .dl-ab .hd .k:not(.ace){display:none;} }
 .dl-ab.rec{outline:2px dashed var(--gold); outline-offset:-5px;}
