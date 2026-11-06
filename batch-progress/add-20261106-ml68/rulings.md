@@ -62,3 +62,8 @@
 ## 主線審稿（2026-11-06，cloud-main）
 - 逐張審 13 張，抽核回研究稿：The Saxophones 廠牌 Full Time Hobby（MB 兩版本皆是）、Juj 本名 Julian Burg 與「第三張正式發行」（Bandcamp 簡介）、telepath 俄亥俄州阿克倫（維基）、Forhill Reverb Machine 撰文與 Stratford Ct.、Sweeps Hue.Hue、Lovespirals 11 首正式曲目與 Chillcuts Studio。
 - **逐張審過，未改字。**
+
+## 主線上線（條號 23531–23533）
+- **23531**：上線 13 張：card_catalog 13／13、KV 16 鍵回讀逐字一致（stamp 20261106m68）、試聽 10 ready（7 張換成最紅那首；City Girl 走 Apple 藝人目錄人工配）／3 unavailable（telepath、Lindsheaven Virtual Plaza、OSCOB：Apple 無此盤）、seed +13、prepare／published gate 0 error。封面 CAA 11＋Bandcamp 2（Sweeps、Kalpataru Tree，CAA 404）；縮圖表目視相符。三軸 §0.8.1 錨點人工評分（經典 4 佔 6、3 佔 7；冷門 4 佔 12）。頂點 0。藝人介紹 ar-d-521（寫 5 位）同 PR 上線。
+- **23532**：情緒評分 `score-ml68/`：**落恍惚 11/13＝85%**。出格：The Saxophones 判輕落放鬆（稀疏 exotica、木吉他顫音琴留白）；Juj《Walnut》判微冷落頹靡（錯拍、效果塗滿、旋律零碎，z −0.1）。
+- **23533**：**來源結論**：Bandcamp downtempo 標籤＋Last.fm 收聽排序的卡單，主線篩掉六成（合輯、EP、同人超量、四拍）後落格率高；lo-fi beat tape、chillwave／vaporwave 最穩，psy-dub 一查多帶 trance／tribal 拍。

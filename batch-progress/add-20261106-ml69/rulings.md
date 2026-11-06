@@ -82,3 +82,8 @@
 ## 主線審稿（2026-11-06，cloud-main）
 - 逐張審 18 張，抽核回研究稿：Dirty Art Club Paxico Records PX065、Bluetech Debaser 評論的 dub／殘響牆兩面與 Interchill、Monster Rally 第二次壓製 500 張 Misty Amethyst、L'Orange Jakarta Records 2012-12-14 與 Dave Cooley 母帶、monde ufo 收尾〈I'm So Tired〉為 Ian MacKaye 作品、bvdub CD 版單一曲目與「一氣呵成」、MSFS 實體版卡帶／MiniDisc。
 - **逐張審過，未改字。**（monde ufo 正文照廠牌寫 Monde UFO，卡池掛名維持 Bandcamp／MB 小寫，不改。）
+
+## 主線上線（條號 23611–23613）
+- **23611**：上線 18 張：card_catalog 18／18、KV 19 鍵回讀逐字一致（stamp 20261106m69）、試聽 17 ready（14 張換成最紅那首）／1 unavailable（My Sister's Fugazi Shirt：Apple 無此盤）、seed +18、prepare／published gate 0 error。封面 CAA 16＋Bandcamp 2（Kalpataru Tree、Photon，CAA 404）；縮圖表目視相符。三軸 §0.8.1 錨點人工評分。頂點 0。藝人介紹 ar-d-522（寫 13 位）同 PR 上線。
+- **23612**：情緒評分 `score-ml69/`：**落恍惚 16/18＝89%**。出格：Dirty Art Club《Gardens》（詭譎取樣，z −0.1）、L'Orange《The Mad Writer》（黑色電影陰影，z −0.2）判微冷落頹靡（頹靡也是薄格）。
+- **23613**：本批汰換最多的是 funk／electro／舞池拍（研究汰 11 張中 9 張）；beat tape 要看廠牌文案有沒有 upbeat／funk／heavy drums。
