@@ -5,7 +5,7 @@
   {
    "id": "rock",
    "zh": "搖滾",
-   "count": 5406,
+   "count": 5410,
    "children": [
     {
      "id": "jrock-asia",
@@ -248,7 +248,7 @@
     {
      "id": "psych-prog",
      "zh": "迷幻前衛",
-     "count": 750,
+     "count": 752,
      "children": [
       {
        "id": "prog",
@@ -258,7 +258,7 @@
       {
        "id": "psych",
        "zh": "迷幻搖滾",
-       "count": 327
+       "count": 329
       },
       {
        "id": "art-rock",
@@ -317,7 +317,7 @@
     {
      "id": "dream-post",
      "zh": "音牆後搖",
-     "count": 408,
+     "count": 410,
      "children": [
       {
        "id": "post-rock",
@@ -332,7 +332,7 @@
       {
        "id": "dream-pop",
        "zh": "夢幻流行",
-       "count": 161
+       "count": 163
       },
       {
        "id": "slowcore",
@@ -363,7 +363,7 @@
   {
    "id": "jazz",
    "zh": "爵士",
-   "count": 4925,
+   "count": 4927,
    "children": [
     {
      "id": "bop",
@@ -442,7 +442,7 @@
     {
      "id": "fusion",
      "zh": "Fusion / Jazz-Funk",
-     "count": 912,
+     "count": 913,
      "children": [
       {
        "id": "jazz-funk",
@@ -462,7 +462,7 @@
       {
        "id": "acid-nu",
        "zh": "Acid / Nu Jazz",
-       "count": 80
+       "count": 81
       },
       {
        "id": "japan",
@@ -484,12 +484,12 @@
     {
      "id": "contemporary",
      "zh": "當代與 Nu Jazz",
-     "count": 804,
+     "count": 805,
      "children": [
       {
        "id": "nu-jazz",
        "zh": "Nu / Acid Jazz",
-       "count": 275
+       "count": 276
       },
       {
        "id": "smooth",
@@ -514,7 +514,7 @@
       {
        "id": "euro",
        "zh": "ECM / 歐陸",
-       "count": 93
+       "count": 94
       },
       {
        "id": "vocal",
@@ -635,17 +635,17 @@
   {
    "id": "electronic",
    "zh": "電子",
-   "count": 3134,
+   "count": 3170,
    "children": [
     {
      "id": "ambient",
      "zh": "Ambient / Drone",
-     "count": 1604,
+     "count": 1622,
      "children": [
       {
        "id": "drone",
        "zh": "Drone",
-       "count": 447
+       "count": 448
       },
       {
        "id": "dark-ambient",
@@ -655,7 +655,7 @@
       {
        "id": "idm",
        "zh": "偏 IDM",
-       "count": 296
+       "count": 301
       },
       {
        "id": "ambient-techno",
@@ -670,14 +670,14 @@
       {
        "id": "new-age",
        "zh": "New Age",
-       "count": 71
+       "count": 75
       }
      ]
     },
     {
      "id": "techno",
      "zh": "Techno",
-     "count": 713,
+     "count": 716,
      "children": [
       {
        "id": "minimal",
@@ -687,7 +687,7 @@
       {
        "id": "ambient-techno",
        "zh": "Ambient Techno",
-       "count": 326
+       "count": 328
       },
       {
        "id": "detroit",
@@ -717,39 +717,39 @@
       {
        "id": "acid",
        "zh": "Acid",
-       "count": 36
+       "count": 37
       }
      ]
     },
     {
      "id": "downtempo",
      "zh": "Trip-hop / Downtempo",
-     "count": 613,
+     "count": 637,
      "children": [
       {
        "id": "chillout",
        "zh": "Chillout / Lounge",
-       "count": 341
+       "count": 355
       },
       {
        "id": "ambient",
        "zh": "偏 Ambient",
-       "count": 330
+       "count": 344
       },
       {
        "id": "trip-hop",
        "zh": "Trip-hop",
-       "count": 210
-      },
-      {
-       "id": "chillwave",
-       "zh": "Chillwave / Synthwave",
-       "count": 55
+       "count": 221
       },
       {
        "id": "beats",
        "zh": "Instrumental Hip-hop / Beats",
-       "count": 54
+       "count": 60
+      },
+      {
+       "id": "chillwave",
+       "zh": "Chillwave / Synthwave",
+       "count": 56
       },
       {
        "id": "nu-jazz",
@@ -759,29 +759,29 @@
       {
        "id": "folktronica",
        "zh": "Folktronica / Indietronica",
-       "count": 43
+       "count": 44
       }
      ]
     },
     {
      "id": "idm",
      "zh": "IDM / Glitch",
-     "count": 497,
+     "count": 505,
      "children": [
       {
        "id": "ambient-idm",
        "zh": "Ambient IDM",
-       "count": 288
+       "count": 293
       },
       {
        "id": "glitch",
        "zh": "Glitch / Microsound",
-       "count": 208
+       "count": 210
       },
       {
        "id": "warp",
        "zh": "Warp / Braindance",
-       "count": 39
+       "count": 40
       },
       {
        "id": "glitch-hop",
@@ -798,7 +798,7 @@
     {
      "id": "synth",
      "zh": "Synthpop / Electro",
-     "count": 460,
+     "count": 462,
      "children": [
       {
        "id": "synthpop",
@@ -808,12 +808,12 @@
       {
        "id": "electro",
        "zh": "Electro / Electroclash",
-       "count": 205
+       "count": 207
       },
       {
        "id": "techno",
        "zh": "偏 Techno",
-       "count": 132
+       "count": 133
       },
       {
        "id": "electropop",
@@ -840,17 +840,17 @@
     {
      "id": "bass",
      "zh": "Dub / Bass",
-     "count": 391,
+     "count": 397,
      "children": [
       {
        "id": "dub",
        "zh": "Dub / Dub Techno",
-       "count": 223
+       "count": 226
       },
       {
        "id": "dubstep",
        "zh": "Dubstep / UK Bass",
-       "count": 99
+       "count": 101
       },
       {
        "id": "dnb",
@@ -860,7 +860,7 @@
       {
        "id": "breakbeat",
        "zh": "Breakbeat / Big Beat",
-       "count": 62
+       "count": 63
       }
      ]
     },
@@ -926,12 +926,12 @@
     {
      "id": "house",
      "zh": "House",
-     "count": 335,
+     "count": 338,
      "children": [
       {
        "id": "deep",
        "zh": "Deep House",
-       "count": 91
+       "count": 92
       },
       {
        "id": "tech",
@@ -966,19 +966,19 @@
       {
        "id": "garage",
        "zh": "UK Garage",
-       "count": 22
+       "count": 23
       }
      ]
     },
     {
      "id": "trance",
      "zh": "Trance / Goa",
-     "count": 83,
+     "count": 90,
      "children": [
       {
        "id": "psy",
        "zh": "Psy / Goa",
-       "count": 43
+       "count": 48
       },
       {
        "id": "progressive",
@@ -1004,17 +1004,17 @@
   {
    "id": "soul",
    "zh": "靈魂放克",
-   "count": 1638,
+   "count": 1640,
    "children": [
     {
      "id": "classic-rnb",
      "zh": "經典 R&B / Doo-wop",
-     "count": 869,
+     "count": 870,
      "children": [
       {
        "id": "funk",
        "zh": "偏 Funk",
-       "count": 378
+       "count": 379
       },
       {
        "id": "neo-contemporary",
@@ -1056,7 +1056,7 @@
     {
      "id": "funk",
      "zh": "Funk / P-Funk",
-     "count": 796,
+     "count": 797,
      "children": [
       {
        "id": "soul-side",
@@ -1099,7 +1099,7 @@
     {
      "id": "neo-soul",
      "zh": "Neo-Soul",
-     "count": 181,
+     "count": 182,
      "children": []
     },
     {
@@ -1137,17 +1137,17 @@
   {
    "id": "hiphop",
    "zh": "嘻哈 R&B",
-   "count": 1606,
+   "count": 1628,
    "children": [
     {
      "id": "underground",
      "zh": "地下與抽象",
-     "count": 435,
+     "count": 439,
      "children": [
       {
        "id": "instrumental",
        "zh": "Instrumental / Beats",
-       "count": 176
+       "count": 178
       },
       {
        "id": "abstract",
