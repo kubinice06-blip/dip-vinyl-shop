@@ -2713,3 +2713,9 @@ C 級（卡池 2 張）審稿深度比照 A／B 級逐位審（計畫書 §7-4 �
 
 - 二十批後重算：卡池 10,823 位藝人，缺介紹 494 位；其中 217 位從沒排過（全部各只有一張卡），另 277 位是歷批試過資料不足沒寫的（141 位記在 skipped、136 位在舊批漏記），不重派。
 - 217 位補登 `roster-fill-20261106.json`（addedBy fill-20261106），切 ar-d-801～806（ar-d-2xx、5xx 已有其他工作階段依序使用，改用 8xx 避開）。腳本 `batch-progress/artist-intro/fill-20261106.mjs`。
+
+## ar-d-801（2026-11-06，當代古典演奏者、作曲家，電子、dark ambient、synth-pop、EBM）
+
+- 37 位寫：20 full、17 thin；不寫 3 位——The Ars Combinatoria String Quartet（沒有聲音事實，評語是評 Carlson 本人）、Todd Seelye（沒有身世）、Rose Kallal（研究稿只有一條來源，比照前例撤稿）。
+- 題材照寫：Robert Miller 50 歲因癌症過世；Richard Skelton 妻子 Louise 2004 年過世；Robert Görl 孤兒院長大、車禍後轉信佛教；protoU 的 Sasha Cats 在戰爭開始後帶兒子離開烏克蘭；Harold Budd 2020 年過世。
+- 主線審稿 9 處：高橋悠治 的「高橋アキ」改 Aki Takahashi、「水牛楽団」改「水牛樂團」，並壓回 250 字；Sephiroth 刪 2025 年重發的單源評語；Robert Görl、Rational Youth、Plastics 第一句補國籍；Rational Youth 刪約 2 萬張與「最暢銷獨立專輯」（在世者不寫銷量）；Plastics 刪一句壓字數。

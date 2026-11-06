@@ -1,6 +1,6 @@
 # 已上線專輯簡介問題（藝人介紹補洞層查到）
 
-自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1845 條。改完 KV 後在「處理」欄註記，或整列刪除。
+自動彙整，`desc-tools/artist-issues.mjs` 產生；共 1863 條。改完 KV 後在「處理」欄註記，或整列刪除。
 
 | 批次 | 藝人 | 專輯 | 上線簡介寫法 | 問題 | 依據 |
 |---|---|---|---|---|---|
@@ -1622,6 +1622,24 @@
 | ar-d-520 | Iration Steppas | Original Dub D.A.T. | 1996 年在自營廠牌推出第一張 | 『第一張』未能由來源證實（訪談只說他們有 10 至 12 張單曲與數張專輯；宣傳文稱 1993 年已有單曲〈Scud Missile〉），建議改成『1996 年的自營廠牌作品』或再核 | https://unitedreggae.com/articles/n1036/071512/interview-iration-steppas |
 | ar-d-520 | Jacob Miller | Tenement Yard | 約莫 1974 年起站上這個樂團的麥克風前 | 各來源 1973（DancehallMag）至 1974（維基）不一，建議改成『1970 年代中期』 | https://dancehallmag.com/?p=47667 |
 | ar-d-520 | Junior Ross & The Spears | Babylon Fall | 1970 年代中期問世，混音者 King Jammy | 來源不一致：United Reggae 稱 1992 年彙編 7 吋與 disco 版，Roots Archives 稱 1976；United Reggae 稱 Scientist 在 King Tubby's 混音，與上線簡介『混音者是 King Jammy』不同，建議主線對實物或 Discogs 再核 | https://unitedreggae.com/discographies/1992/junior-ross-and-the-spear-babylon-fall;954/ |
+| ar-d-801 | Yejin Gil | Chin / Boulez / Ligeti / Messiaen: Fulgurances | 錄音 2013 年 9 月在法國貝濟耶一座小教堂進行 | Bechstein 藝人頁寫『recorded in November 2013』，MusicWeb 寫 2013 年 11 月發行；錄音月份與地點本層未查到可靠來源，待人工核對 Solstice 官方資料。 | https://www.bechstein.com/en/the-world-of-bechstein/pianists/yejin-gil/ |
+| ar-d-801 | Yuji Takahashi | Xenakis: Evryali / Herma / Messiaen: Quatre études de rythme | 有評論家說這是史上最難彈的鋼琴曲；Herma 題獻給高橋 | 搜尋找不到把 Herma 稱為『史上最難彈』的可靠來源（只見技術上極困難的描述，網路另有人推 Synaphai 更難）；另 Music Theory Online 的分析文章（搜尋摘要）稱 Herma 是高橋『委託』，IRCAM 只列他為首演者，未載題獻，『題獻』與『委託』待核。首演日期 1962 年 2 月 2 日與 IRCAM 一致。 | https://brahms.ircam.fr/en/works/work/12809/ |
+| ar-d-801 | Petri Alanko & Martin Stig Andersen | Control: Original Game Soundtrack | 那股力量叫 Hiss，Alanko 用能錄電磁輻射的麥克風錄下沉重木頭拖過地面的聲響，連同燒鋼琴的錄音一起處理成嘈雜的 droning 聲 | Laced Records 的 Andersen 訪談指出 Hiss 的音響是 Andersen 負責（在巴黎錄有機、儀式性質地）；Alanko 的訪談只說他自己錄了燒鋼琴、弓奏鈸等素材，未提 Hiss。Hiss 聲音的歸屬待對照原始訪談再核。 | https://www.lacedrecords.co/blogs/blog/interview-control-inside-composer-martin-stig-andersen |
+| ar-d-801 | Plastics | ORIGATO PLASTICO | 1980 年，樂團在 Invitation 發行第二張專輯 | 搜尋摘要稱第二張（Welcome Back）發行於 1981 年 3 月、首張《Welcome Plastics》為 1980 年 1 月；《Origato Plastico》是否為 1980 年未能確認，建議查 Discogs／日文維基 | https://en.wikipedia.org/wiki/Plastics_(band) |
+| ar-d-801 | Rangers | Suburban Tours | 德州 Denton 的 Joe Knight | Texas Standard（2016）寫 Rangers 是達拉斯的音樂人，Denton 本層查無佐證；兩者在地理上相近，可能是不同時期的住處，但簡介寫死為 Denton，建議確認或改成『德州』 | https://texasstandard.org/stories/dallas-band-releases-album-that-feels-like-an-instant-classic/ |
+| ar-d-801 | Richard Devine | Lipswitch | 在 Warp，這是第一張美國音樂人的作品 | 『第一』宣稱僅有維基 Prefuse 73 條目單一出處，補查未找到第二源；建議改成較保守寫法或查證 Warp 沿革 | https://en.wikipedia.org/wiki/Vocal_Studies_%2B_Uprock_Narratives |
+| ar-d-801 | Rose Kallal | Perseus | 她是布魯克林的影像與聲音藝術家 | The Quietus（2018）與 Lyles & King 只寫『紐約』，找不到『布魯克林』的出處；建議改『紐約』 | https://thequietus.com/?p=24578 |
+| ar-d-801 | Sephiroth | Cathedron | 1990 年，Ulf Söderberg 創立 Sephiroth | 補查僅見 Cyclic Law『early 90s』與單一來源 1990，未找到兩源確認；Cyclic Law 另說《Cathedron》是他以 Sephiroth 名義的首張專輯，且在此之前已有兩張個人專輯，需注意『1990 創立』與此時序是否成立 | https://cycliclaw.com/music/sephiroth-cathedron-cd-/-2lp-/-dl-226th-cycle |
+| ar-d-802 | Tanzmuzik | Sinsekai | 1994 年，倫敦的 Rising High 替他們發行首張專輯 | Sony Music Japan 目錄頁的團體簡介寫歐洲版 1995 年 1 月在〈Tan Tangue〉EP（1994 年 9 月）之後發行；Discogs 與卡池寫 1994。年份兩源不一致，建議主線以原盤實物或 Discogs 版本頁核對 | https://www.sonymusic.co.jp/Music/Info/SonyTechno/catalog/Sinsekai.html |
+| ar-d-802 | TESTPATTERN | APRÈS‐MIDI | 市村文夫與比留間雅夫的日本二人組 | 名字的寫法：Tracking Angle 與 Bandcamp 皆作 Fumio Ichimura（文男／文夫兩寫法並見，事實庫研究稿註『另有寫作文夫』）；屬寫法差異，低優先。 | https://evelynemasao.bandcamp.com/album/testpattern |
+| ar-d-802 | The Hacker | Mélodies en Sous-Sol | 1999 年在格勒諾勃寫成 11 首 electro | 維基百科寫首張專輯 Mélodies En Sous-Sol 於 2000 年春發行；上線簡介寫 1999 年。錄製年與發行年可能不同，待店主用 Discogs 或 MusicBrainz 確認。 | https://en.wikipedia.org/wiki/The_Hacker |
+| ar-d-802 | The Orb featuring David Gilmour | Metallic Spheres | 起因是倫敦 ambient 與 dub DJ 起家的 The Orb 重混了他的網路單曲 | Factmag 與 Floydian Slip 的說法是 Gilmour 為 McKinnon 錄〈Chicago/Change the World〉時與 Youth 在錄音室即興，Alex Paterson 其後把草稿發展成專輯；另 Loudersound 摘要稱 Orb 為 McKinnon 支持者而重混該曲，來源有出入，建議改寫或查證。 | https://factmag.com/2010/08/20/the-orb-team-up-with-pink-floyds-gilmour-on-new-lp |
+| ar-d-802 | The Weathermen | Ten Deadly Kisses | 兩個比利時人假扮成美國藝人寄出樣帶，廠牌竟然信了 | 維基支持『假扮美國藝人』說法，但 PIAS 共同創辦人 Kenny Gates 的版本是 Lederman 帶來〈Old Friend Sam〉並稱之為玩笑，沒有提到假扮美國人；兩者有出入，建議保留但語氣降為『據維基』。 | https://www.musicmaniarecords.be/5819-the-weathermen/13578-the-weathermen-pias-40/ |
+| ar-d-802 | Tho-So-Aa | Epoch, Part 1 | Art Konkret 在 1996 年發行的這張，是 Tho-So-Aa 的第一張專輯 | 藝人官方 Bandcamp 稱其首張 CD 為《Identify》；loki-found 重發文案稱《Epoch Part One》為首張，二者矛盾，建議刪去『第一張專輯』或改成『據重發廠牌說法』。 | https://thosoaa.bandcamp.com |
+| ar-d-802 | Tobe Hooper and Wayne Bell | The Texas Chain Saw Massacre (Original Motion Picture Score) | 2024 年 Waxwork 首度正式推出 | Dazed（2024 年稿）說 Waxwork 版『明年』即 2025 年推出，搜尋所見賣家多寫 2025；Waxwork 頁面現為圖案膠預購、預計 2026 年 10 月出貨。卡池年份 2024 與上線簡介『2024』可能有誤，需對 Waxwork 官網或 Discogs 核發行年。 | https://www.dazeddigital.com/film-tv/article/65001/1/the-texas-chainsaw-massacres-score-wayne-bell-interview-2024 |
+| ar-d-802 | Trans-X | Living on Video | 美國版 1986 年由 ATCO／Mirage 發行 | 維基〈Living on Video〉頁寫該曲 1983 年 5 月 3 日由 Polydor 與 Atco 發單曲，美國 Hot 100 第 61 名是 1985 年重混再發之後；上線簡介寫美國版 1986 年，與單曲年份有出入，建議對專輯版 Discogs 確認再改。 | https://en.wikipedia.org/wiki/Living_on_Video |
+| ar-d-802 | Ugasanie & Xerxes The Dark | Abysmal | 伊朗作曲家 Govahi 以 Xerxes The Dark 為名 | 訪談頁以 Morego Dimmer 稱呼，未見 Govahi 這個名字；本名來源僅 Discogs 簡介，單源，建議確認或保守處理。 | https://thedungeonindeepspace.com/2019/11/02/eyre-transmissions-ii-interview-with-legendary-dark-ambient-artist-xerxes-the-dark/ |
+| ar-d-802 | UnderViewer | Wonders & Monsters | 1980 至 1981 年間的錄音 | 官方簡介稱二人 1978 年起合作，錄音年份各源不一（Spill 提 1978/1979/1981）；簡介的 1980–1981 範圍無出處，建議保守改寫。 | https://www.underviewer.com/bio/ |
 | ar-d-929 | Erik Truffaz | Rollin' | 2000 年簽進這個廠牌 | 上線簡介沿用 Blue Note 官網簡介的 2000 年簽約說；但維基與已上線的《Out of a Dream》《The Dawn》《Bending New Corners》簡介顯示 1997–1999 年已在 Blue Note 發片，瑞士聯邦文化局新聞稿也記《Bending New Corners》為 1999 年 Blue Note 專輯，2000 年簽約的說法與之矛盾，建議改為不寫簽約年。 | https://musikzeitung.ch/en/?p=44583 |
 | ar-d-929 | Erik Truffaz | The Walk of the Giant Turtle | 前一張四重奏盤在法國賣到十萬張的金唱片 | 維基只寫《Bending New Corners》（1999）是法國 Silver Album；本張的前一張是《Mantis》（2001），並非《Bending New Corners》。需核對金唱片的專輯歸屬與認證層級。 | https://en.wikipedia.org/wiki/Erik_Truffaz |
 | ar-d-929 | Stanley Jordan | Magic Touch | 九軌裡有五軌只有一把電吉他 … 六軌只有他的電吉他 | 同一則簡介前後自相矛盾：五軌 vs 六軌；事實庫引 jazzdisco 為六軌純獨奏、其餘三軌各配一組節奏，應統一為六軌。 | https://en.wikipedia.org/wiki/Magic_Touch_(Stanley_Jordan_album) |
