@@ -284,8 +284,12 @@ button.lb-ct:focus-visible{outline:2px dashed var(--gold);outline-offset:3px;}
 .lb-tl .tm{font-size:12px;font-weight:700;text-align:center;color:var(--gray2);height:18px;line-height:18px;letter-spacing:0;}
 .lb-tl .tm.now{color:var(--ink);}
 .lb-tl .cell{display:flex;justify-content:center;align-items:center;height:52px;position:relative;}
-.lb-tl .wire{position:absolute;left:0;right:0;pointer-events:none;}
-.lb-tl .wire svg{width:100%;height:100%;display:block;overflow:visible;}
+/* 路線：蓋在格子上、裁在格子裡（不是格子裡的一格；ui.js watchWires 等版面穩了才畫） */
+.lb-tl svg.wires{position:absolute;left:0;top:0;width:100%;height:100%;pointer-events:none;z-index:1;overflow:hidden;display:block;}
+.lb-tl svg.wires line{stroke-linecap:round;fill:none;}
+.lb-tl svg.wires .ahead line{stroke:#9a9a9a;stroke-width:2;}
+.lb-tl svg.wires .walked line{stroke:var(--ink);stroke-width:3;}
+.lb-tl svg.wires .next line{stroke:var(--gold);stroke-width:3;}
 .lb-node{position:relative;z-index:2;width:44px;height:44px;border:2px solid var(--ink);border-radius:6px;background:#fff;display:flex;align-items:center;justify-content:center;
   font-size:19px;line-height:1;transition:transform .12s;}
 .lb-node.can{box-shadow:0 0 0 3px #fff,0 0 0 5px var(--gold);animation:lbNodePulse 1.4s ease-in-out infinite;}
@@ -487,7 +491,7 @@ button.lb-ct:focus-visible{outline:2px dashed var(--gold);outline-offset:3px;}
 .lb-scr.stagescr.map>.lb-sheet{position:relative;left:auto;right:auto;bottom:auto;flex:none;max-height:calc(100% - 150px);box-shadow:none;}
 .lb-scr.stagescr.map.sheeted>.lb-tl,.lb-scr.stagescr.map.sheeted>.lb-bagbar{display:none;}
 /* 剛換上的面板／選單：短暫不吃點擊（雙擊的第二下不會選到沒看過的東西；ui.js guardClicks） */
-.lb-sheet.arming,.lb-dq .menu.arming{pointer-events:none;}
+.lb-sheet.arming,.lb-dq .menu.arming,.lb-tl.arming,.lb-bagbar.arming{pointer-events:none;}
 /* 對話窗選單淡入 */
 .lb-dq.hasmenu .lb-dqopt{animation:lbOptIn .2s ease-out both;}
 @keyframes lbOptIn{0%{opacity:0;transform:translateY(6px);}100%{opacity:1;transform:none;}}

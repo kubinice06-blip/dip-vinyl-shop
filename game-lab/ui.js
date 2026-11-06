@@ -393,8 +393,8 @@
     if (o.skip) { var sk = el('button', 'lb-ico key', '⏩'); sk.type = 'button'; sk.setAttribute('aria-label', '快轉到下一個選擇'); sk.addEventListener('click', function (e) { stopEv(e); o.skip(); }); bar.appendChild(sk); }
     if (o.links) o.links.forEach(function (l) { var b = el('button', 'lnk key', esc(l[0])); b.type = 'button'; b.addEventListener('click', function (e) { stopEv(e); l[1](); }); bar.appendChild(b); });
     if (o.sound !== false) { var s = el('span', 'lb-snd'); bar.appendChild(s); var f = FX(); if (f && f.mountToggle) { try { keepToggle(f.mountToggle(s)); } catch (e) { console.error(e); } } }
-    if (o.help) { var hb = el('button', 'lb-ico key', '？'); hb.type = 'button'; hb.setAttribute('aria-label', '小抄'); hb.addEventListener('click', function (e) { stopEv(e); openHelp(); }); bar.appendChild(hb); }
-    if (o.pause) { var pb = el('button', 'lb-ico key', '⏸'); pb.type = 'button'; pb.setAttribute('aria-label', '暫停選單'); pb.addEventListener('click', function (e) { stopEv(e); openSettings(); }); bar.appendChild(pb); }
+    if (o.help) { var hb = el('button', 'lb-ico key', '？'); hb.type = 'button'; hb.setAttribute('aria-label', '小抄'); hb.addEventListener('click', function (e) { stopEv(e); if (UI.going) return; openHelp(); }); bar.appendChild(hb); }
+    if (o.pause) { var pb = el('button', 'lb-ico key', '⏸'); pb.type = 'button'; pb.setAttribute('aria-label', '暫停選單'); pb.addEventListener('click', function (e) { stopEv(e); if (UI.going) return; openSettings(); }); bar.appendChild(pb); }
     if (o.close) { var cb = el('button', 'lb-ico key', '✕'); cb.type = 'button'; cb.setAttribute('aria-label', '關閉'); cb.addEventListener('click', function (e) { stopEv(e); o.close(); }); bar.appendChild(cb); }
     return bar;
   }
@@ -806,7 +806,11 @@
     if (!s) return;
     var host = s.parentNode;
     if (host) s.remove();
-    if (inFlowHost(host) && !qs(':scope > .lb-sheet', host)) host.classList.remove('sheeted');
+    if (inFlowHost(host) && !qs(':scope > .lb-sheet', host)) {
+      host.classList.remove('sheeted');
+      // 面板收起來、時間軸＋包包條回到手指底下：跟新面板一樣先不吃點擊（雙擊「就他了／再看看」的第二下不會打開包包）
+      qsa(':scope > .lb-tl, :scope > .lb-bagbar', host).forEach(guardClicks);
+    }
   }
   function inFlowHost(h) { return !!(h && h.classList && (h.classList.contains('scene') || (h.classList.contains('stagescr') && h.classList.contains('map')))); }
   function playingTag() { var f = FX(); return (f && f.soundOn && f.soundOn()) ? '<span class="lb-mini-tt"><span class="rec"></span>播放中</span>' : ''; }
@@ -1498,12 +1502,14 @@
       (r.relics.length ? r.relics.map(function (id) { return '<button type="button" data-r="' + esc(id) + '" aria-label="' + esc(C.relics[id].name) + '" title="' + esc(C.relics[id].name) + '">' + relicIcon(id, 26) + '</button>'; }).join('') : '<span class="lab">（還沒有）</span>') + '</div>' +
       (r.nextStartQi ? '<span class="lab key">下一場氣勢 +' + r.nextStartQi + '</span>' : '');
     ss.scr.appendChild(bag);
-    requestAnimationFrame(function () { drawWires(tl, r); placeMe(tl, r); });
+    guardClicks(tl); guardClicks(bag);   // 從上一個畫面連點過來的第二下不算
+    watchWires(tl, r);
     tl.addEventListener('click', function (e) {
       var b = e.target.closest && e.target.closest('[data-n]'); if (!b || UI.going) return;
       sfx('tick'); previewNode(ss, r, E.findNode(r, b.getAttribute('data-n')));
     });
     bag.addEventListener('click', function (e) {
+      if (UI.going) return;   // 走向下一站的路上：包包、配件都不開（就他了的第二下會落在這裡）
       if (e.target.closest && e.target.closest('[data-a=bag]')) { bagSheet(ss, r); return; }
       if (e.target.closest && e.target.closest('[data-r]')) relicSheet(ss, r);
     });
@@ -1512,24 +1518,49 @@
       if (ch && ch.type === 'move') { var nd = E.findNode(save.run, ch.nodeId); previewNode(ss, save.run, nd); autoAct(function () { var b = qs('.lb-sheet [data-a=go]', ss.scr); if (b) b.click(); }, 200); }
     }, 300);
   };
+  // 路線：版面穩定之後才量（字型、預覽面板開關、轉向都會改格子大小），格子一變就重畫；線只畫在時間軸格子裡（svg 裁切）
+  function watchWires(tl, r) {
+    var grid = qs('.grid', tl); if (!grid) return;
+    var t = 0, ro = null;
+    var redraw = function () {
+      if (t) return;
+      t = requestAnimationFrame(function () {
+        t = 0;
+        if (!tl.isConnected) { if (ro) ro.disconnect(); return; }
+        if (!grid.getBoundingClientRect().width) return;   // 預覽面板開著時時間軸收起來了，等它回來再量
+        drawWires(tl, r);
+        if (!UI.going) placeMe(tl, r);   // 走路動畫中不要把人拉回原位
+      });
+    };
+    redraw();
+    if (W.ResizeObserver) { ro = new ResizeObserver(redraw); ro.observe(grid); }
+    else W.addEventListener('resize', redraw);
+    try { if (D.fonts && D.fonts.ready) D.fonts.ready.then(redraw); } catch (_) {}
+  }
   function drawWires(tl, r) {
     var svg = qs('svg.wires', tl), grid = qs('.grid', tl); if (!svg || !grid) return;
-    var gr = grid.getBoundingClientRect();
-    svg.setAttribute('style', 'position:absolute;left:0;top:0;width:' + gr.width + 'px;height:' + gr.height + 'px;pointer-events:none;z-index:1;overflow:visible');
-    svg.setAttribute('viewBox', '0 0 ' + gr.width + ' ' + gr.height);
+    var gr = grid.getBoundingClientRect(); if (!gr.width) return;
+    svg.setAttribute('viewBox', '0 0 ' + gr.width.toFixed(1) + ' ' + gr.height.toFixed(1));
     var pos = {};
     qsa('[data-n]', grid).forEach(function (b) { var q = b.getBoundingClientRect(); pos[b.getAttribute('data-n')] = [q.left - gr.left + q.width / 2, q.top - gr.top + q.height / 2]; });
-    var out = '';
+    var last = null;
+    for (var k = r.visited.length - 1; k >= 0 && !last; k--) if (pos[r.visited[k]]) last = r.visited[k];
+    var lines = { walked: '', next: '', ahead: '' };
     for (var i = 0; i + 1 < r.map.cols.length; i++) {
-      r.map.cols[i].nodes.forEach(function (a) {
-        r.map.cols[i + 1].nodes.forEach(function (b) {
+      var ca = r.map.cols[i], cb = r.map.cols[i + 1];
+      ca.nodes.forEach(function (a) {
+        cb.nodes.forEach(function (b) {
           var A = pos[a.id], B = pos[b.id]; if (!A || !B) return;
-          var on = r.visited.indexOf(a.id) >= 0 && r.visited.indexOf(b.id) >= 0;
-          out += '<line x1="' + A[0].toFixed(1) + '" y1="' + A[1].toFixed(1) + '" x2="' + B[0].toFixed(1) + '" y2="' + B[1].toFixed(1) + '" stroke="' + (on ? '#111' : '#c8c8c8') + '" stroke-width="' + (on ? 3 : 1.5) + '"' + (on ? '' : ' stroke-dasharray="4 4"') + '/>';
+          var kind;
+          if (r.visited.indexOf(a.id) >= 0 && r.visited.indexOf(b.id) >= 0) kind = 'walked';
+          else if (a.id === last && cb.col === r.col) kind = 'next';        // 從你站的地方到下一站
+          else if (ca.col >= r.col) kind = 'ahead';                          // 還沒走到的路
+          else return;                                                        // 走過的欄位裡沒選的路：不畫
+          lines[kind] += '<line x1="' + A[0].toFixed(1) + '" y1="' + A[1].toFixed(1) + '" x2="' + B[0].toFixed(1) + '" y2="' + B[1].toFixed(1) + '"/>';
         });
       });
     }
-    svg.innerHTML = out;
+    svg.innerHTML = '<g class="ahead">' + lines.ahead + '</g><g class="walked">' + lines.walked + '</g><g class="next">' + lines.next + '</g>';
   }
   // 地圖上的你（§5.1-15）：站在最後走過的節點右下角；選了下一站就走過去（780 ms 一段）
   function nodeCenter(grid, id) {
