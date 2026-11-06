@@ -32,3 +32,17 @@
 - 24882：Eivør《Enn》鼓型＝真鼓＋穩定重擊低音，非舞池；局部喉音嘶吼，標「moodGuess 存疑（攻擊性）」。
 - 24883：DHAMIKA《Endless Horizons》僅憑單一樂迷留言稱 4/4 kick，標「存疑（舞池推進）」弱證；《Energy Flow》、Buffywave、CRYSTAL VIBE 鼓型未證，不標存疑。
 - 24884：Asta Hiroki（中慢規律活鼓）、RUMTUM（midtempo dusty drums）屬慢拍，鼓型不存疑；兩者另標「存疑（判輕）」。
+
+## 研究 c 組
+- 24861：c 組 8 張鼓型判定，全數不標存疑（攻擊性／舞池推進）。慢、拖：Espen Horne（真鼓，soul-jazz／dub 鬆拍，D&B 傾向但憂鬱拖行）、Rituals of Mine（破碎拍 trip-hop）；Andi Otto 廠方直述 slowed down dancefloor，列慢。鼓型未證：Namas、Govinda、Lab's Cloud（有鼓、slow trance、速度未證）、Eat Static（標籤 psy trance／techno 與 downtempo 並列，無 dancefloor 文案）、Dj Drez。
+- 24862：判冷／判輕提示：Rituals of Mine 廠方寫 dark synths（可能偏冷暗）；Govinda 文案 glitch／trance／性感人聲（可能偏輕）。主線本輪不汰，交評分層落格。
+- 24863：status：Espen Horne、Rituals of Mine、Eat Static full；其餘 5 張 thin（無樂評，只有 Bandcamp 文案與 MB／Apple 核對）。label 建議：Espen Horne＝Wah Wah 45s、Andi Otto＝Pingipung、Dj Drez＝Nectar Drop、Eat Static＝Interchill（後者僅維基搜尋摘要，保守）、Lab's Cloud＝Ensancha el Alma Records、Namas＝Dooinit Music、Govinda＝Gravitas Recordings。
+- 24864：年份無推翻；Espen Horne 黑膠 2024-04-19 晚於 MB／Bandcamp 數位 2023-11-17，仍用 2023。
+
+## 研究 b 組
+
+- 24851｜b 組 8 張皆由 Bandcamp ld+json 核對盤名、年份、曲目，與 MB 釘住的 release-group 相符，無推翻身分。廠牌欄卡單為空者（Rhi、Entheogenic、Yu Su、Elaquent）不寫廠牌；Moderator＝Melting Records、Sim Nagai＝Cold Busted、Sedibus＝Orbscure／Cooking Vinyl、Daily Bread＝Philos Records（後者僅採 Bandcamp 頁面證據）。
+- 24852｜鼓型判定：Elaquent（Dilla 式懶拍）、Sim Nagai（收斂 hip-hop 鼓）屬慢拖仍算靜，不標存疑；Rhi、Entheogenic、Sedibus、Daily Bread 鼓型未證，不標存疑。
+- 24853｜標「moodGuess 存疑（舞池推進，局部）」：Moderator（〈Tamboo〉dance floor、〈Haunted Lover〉big breakbeat）、Yu Su（標籤 house／techno，〈Foundry〉acid 重踏）；皆僅局部，整張不判舞池。
+- 24854｜標「存疑（判輕／判冷）」：Rhi（R&B 人聲前置）、Sim Nagai（熱帶明亮）、Daily Bread（科幻 electro 合成器可能偏冷）。主線本輪不因此汰卡。
+- 24855｜Entheogenic 聲音層僅有標籤與曲長，無評論；評分層宜自行試聽。Sedibus 卡單「6 首」含 2 首 Edit。
