@@ -1,86 +1,383 @@
 [
-  {
-    "key": "delerium",
-    "name": "Delerium",
-    "slots": {
-      "origin": { "status": "gap", "facts": [
-        { "f": "Delerium 1987 年在加拿大溫哥華成立，起初是工業樂團 Front Line Assembly 的副計畫，成員是 Bill Leeb 與 Rhys Fulber（維基另記創辦人含 Michael Balch）。", "src": "https://en.wikipedia.org/wiki/Delerium", "src2": "https://encyclopedia.com/education/news-wires-white-papers-and-books/delerium", "from": "new" },
-        { "f": "早期作品偏陰暗、空靈的氛圍路線，1988 年首張《Faces, Forms and Illusions》被拿來和恐怖片配樂比較。", "src": "https://encyclopedia.com/education/news-wires-white-papers-and-books/delerium", "single": true, "from": "new" }
-      ] },
-      "sound": { "status": "gap", "facts": [
-        { "f": "樂團的風格跨度很大，從陰暗的空靈氛圍 trance、無人聲的工業音景，到電子流行都有。", "src": "https://en.wikipedia.org/wiki/Delerium", "single": true, "from": "new" },
-        { "f": "1994 年《Semantic Spaces》起固定請女性客座歌手；Kristy Thirsk 在其中四首演唱，後來被稱為「Delerium 的聲音」。", "src": "https://en.wikipedia.org/wiki/Semantic_Spaces", "src2": "https://en.wikipedia.org/wiki/Delerium", "from": "bank" }
-      ] },
-      "legacy": { "status": "gap", "facts": [
-        { "f": "Delerium 曾兩度獲加拿大 Juno 獎最佳舞曲錄音：1998 年〈Euphoria (Rabbit in the Moon Mix)〉，2000 年〈Silence〉。", "src": "https://en.wikipedia.org/wiki/Delerium", "src2": "https://encyclopedia.com/education/news-wires-white-papers-and-books/delerium", "from": "new" },
-        { "f": "1997 年《Karma》收錄 Sarah McLachlan 演唱的〈Silence〉，成為樂團最大的單曲，在多國上榜。", "src": "https://en.wikipedia.org/wiki/Delerium", "src2": "https://encyclopedia.com/education/news-wires-white-papers-and-books/delerium", "from": "new" }
-      ] },
-      "era": { "status": "gap", "facts": [
-        { "f": "1994 年《Semantic Spaces》讓樂團進入加拿大流行榜，〈Flowers Become Screens〉與〈Incantation〉為代表。", "src": "https://encyclopedia.com/education/news-wires-white-papers-and-books/delerium", "single": true, "from": "new" },
-        { "f": "Rhys Fulber 在 1997 年《Karma》之後離團，之後由 Bill Leeb 延續。", "src": "https://en.wikipedia.org/wiki/Semantic_Spaces", "src2": "https://encyclopedia.com/education/news-wires-white-papers-and-books/delerium", "from": "bank" }
-      ] }
-    },
-    "milestones": [],
-    "conflicts": [],
-    "searches": 3,
-    "failedFetches": 0,
-    "pubIssues": [],
-    "status": "full",
-    "notes": "身分：Semantic Spaces 1994 與維基頁「自 1994 年 Semantic Spaces 起固定女性客座」吻合，確認是同一團。Semantic Spaces 銷量 7 萬張只在 encyclopedia.com 與搜尋摘要出現（同源），數字不收。encyclopedia.com 稱 Leeb 生於奧地利、曾在 Skinny Puppy，單源未收。維基與 encyclopedia.com 對 Fulber 在團內角色略有出入，未收。「Silence 被稱為史上最偉大 trance 歌曲之一」維基單源且無具名，不收。"
+ {
+  "key": "delerium",
+  "name": "Delerium",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Delerium 1987 年在加拿大溫哥華成立，起初是工業樂團 Front Line Assembly 的副計畫，成員是 Bill Leeb 與 Rhys Fulber（維基另記創辦人含 Michael Balch）。",
+      "src": "https://en.wikipedia.org/wiki/Delerium",
+      "src2": "https://encyclopedia.com/education/news-wires-white-papers-and-books/delerium",
+      "from": "new"
+     },
+     {
+      "f": "早期作品偏陰暗、空靈的氛圍路線，1988 年首張《Faces, Forms and Illusions》被拿來和恐怖片配樂比較。",
+      "src": "https://encyclopedia.com/education/news-wires-white-papers-and-books/delerium",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "樂團的風格跨度很大，從陰暗的空靈氛圍 trance、無人聲的工業音景，到電子流行都有。",
+      "src": "https://en.wikipedia.org/wiki/Delerium",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "1994 年《Semantic Spaces》起固定請女性客座歌手；Kristy Thirsk 在其中四首演唱，後來被稱為「Delerium 的聲音」。",
+      "src": "https://en.wikipedia.org/wiki/Semantic_Spaces",
+      "src2": "https://en.wikipedia.org/wiki/Delerium",
+      "from": "bank"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Delerium 曾兩度獲加拿大 Juno 獎最佳舞曲錄音：1998 年〈Euphoria (Rabbit in the Moon Mix)〉，2000 年〈Silence〉。",
+      "src": "https://en.wikipedia.org/wiki/Delerium",
+      "src2": "https://encyclopedia.com/education/news-wires-white-papers-and-books/delerium",
+      "from": "new"
+     },
+     {
+      "f": "1997 年《Karma》收錄 Sarah McLachlan 演唱的〈Silence〉，成為樂團最大的單曲，在多國上榜。",
+      "src": "https://en.wikipedia.org/wiki/Delerium",
+      "src2": "https://encyclopedia.com/education/news-wires-white-papers-and-books/delerium",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "1994 年《Semantic Spaces》讓樂團進入加拿大流行榜，〈Flowers Become Screens〉與〈Incantation〉為代表。",
+      "src": "https://encyclopedia.com/education/news-wires-white-papers-and-books/delerium",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "Rhys Fulber 在 1997 年《Karma》之後離團，之後由 Bill Leeb 延續。",
+      "src": "https://en.wikipedia.org/wiki/Semantic_Spaces",
+      "src2": "https://encyclopedia.com/education/news-wires-white-papers-and-books/delerium",
+      "from": "bank"
+     }
+    ]
+   }
   },
-  {
-    "key": "asura",
-    "name": "ASURA",
-    "slots": {
-      "origin": { "status": "gap", "facts": [
-        { "f": "ASURA 是法國作曲家 Charles Farewell（1975 年生）的計畫，1996 年起與 Vincent Villuis 以二人組開始，1998 年 Christopher Maze 加入。", "src": "https://ultimae.com/?p=630", "single": true, "from": "new" },
-        { "f": "Vincent Villuis 自述 1995 年遇到 Charles Farewell 而共組 Asura，當時做的是「帶著空靈 pad 與民族質地的輕快 downtempo ambient」。", "src": "https://www.sonicimmersion.org/interview-with-ultimae-records/", "single": true, "from": "new" }
-      ] },
-      "sound": { "status": "gap", "facts": [
-        { "f": "廠牌 bio 說 ASURA 把電子機器與原聲樂器並置，混合 trance、迷幻、ambient 與世界音樂。", "src": "https://ultimae.com/?p=630", "single": true, "from": "new" },
-        { "f": "廠方形容 360 是 Charles Farewell 作為跨越重疊氛圍類型的作曲家的亮相，從狂喜到冷靜，空間感與永恆感強烈。", "src": "https://ultimae.bandcamp.com/album/360", "single": true, "from": "bank" }
-      ] },
-      "legacy": { "status": "gap", "facts": [
-        { "f": "ASURA 1999 年準備首張專輯《Code Eternity》時，多家廠牌表示興趣卻無人簽下，Vincent Villuis 因此自己成立 Ultimae Records，該專輯 2000 年成為廠牌首發。", "src": "https://en.wikipedia.org/wiki/Ultimae_Records", "src2": "https://www.sonicimmersion.org/interview-with-ultimae-records/", "from": "new" }
-      ] },
-      "era": { "status": "gap", "facts": [
-        { "f": "專輯依序有 2000《Code Eternity》、2007《Life²》、2010《360》、2014 末《Radio Universe》；2005 年前另兩位成員離開後，ASURA 成為 Farewell 一人計畫。", "src": "https://ultimae.com/?p=630", "single": true, "from": "new" }
-      ] }
-    },
-    "milestones": [],
-    "conflicts": [],
-    "searches": 2,
-    "failedFetches": 0,
-    "pubIssues": [],
-    "status": "thin",
-    "notes": "身分：Ultimae 頁與 Bandcamp 的 360（2010、Charles Farewell）吻合；維基 Asura 為印度神話同名頁，不收。Villuis 離團年份：Ultimae bio 說 2001 年離開，但專輯年表與其他說法有出入，不收。Lost Eden（2003 或有 2002 說）年份各處不一，facts 不列。「最具辨識度的世界電子／trance ambient 樂團之一」是廠牌自述，不收。Ultimae 維基與 Aes Dana 條目互為同家族，非獨立。ASURA 本人所在地：搜尋摘要稱里昂，但 ultimae 頁沒寫，不寫。"
+  "milestones": [],
+  "conflicts": [],
+  "searches": 3,
+  "failedFetches": 0,
+  "pubIssues": [],
+  "status": "full",
+  "notes": "身分：Semantic Spaces 1994 與維基頁「自 1994 年 Semantic Spaces 起固定女性客座」吻合，確認是同一團。Semantic Spaces 銷量 7 萬張只在 encyclopedia.com 與搜尋摘要出現（同源），數字不收。encyclopedia.com 稱 Leeb 生於奧地利、曾在 Skinny Puppy，單源未收。維基與 encyclopedia.com 對 Fulber 在團內角色略有出入，未收。「Silence 被稱為史上最偉大 trance 歌曲之一」維基單源且無具名，不收。"
+ },
+ {
+  "key": "asura",
+  "name": "ASURA",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "ASURA 是法國作曲家 Charles Farewell（1975 年生）的計畫，1996 年起與 Vincent Villuis 以二人組開始，1998 年 Christopher Maze 加入。",
+      "src": "https://ultimae.com/?p=630",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "Vincent Villuis 自述 1995 年遇到 Charles Farewell 而共組 Asura，當時做的是「帶著空靈 pad 與民族質地的輕快 downtempo ambient」。",
+      "src": "https://www.sonicimmersion.org/interview-with-ultimae-records/",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "廠牌 bio 說 ASURA 把電子機器與原聲樂器並置，混合 trance、迷幻、ambient 與世界音樂。",
+      "src": "https://ultimae.com/?p=630",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "廠方形容 360 是 Charles Farewell 作為跨越重疊氛圍類型的作曲家的亮相，從狂喜到冷靜，空間感與永恆感強烈。",
+      "src": "https://ultimae.bandcamp.com/album/360",
+      "single": true,
+      "from": "bank"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "ASURA 1999 年準備首張專輯《Code Eternity》時，多家廠牌表示興趣卻無人簽下，Vincent Villuis 因此自己成立 Ultimae Records，該專輯 2000 年成為廠牌首發。",
+      "src": "https://en.wikipedia.org/wiki/Ultimae_Records",
+      "src2": "https://www.sonicimmersion.org/interview-with-ultimae-records/",
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "專輯依序有 2000《Code Eternity》、2007《Life²》、2010《360》、2014 末《Radio Universe》；2005 年前另兩位成員離開後，ASURA 成為 Farewell 一人計畫。",
+      "src": "https://ultimae.com/?p=630",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   }
   },
-  {
-    "key": "aes dana",
-    "name": "AES DANA",
-    "slots": {
-      "origin": { "status": "gap", "facts": [
-        { "f": "AES Dana 是法國作曲家、聲音設計師與 DJ Vincent Villuis 的名義，他也是 Ultimae Records 的創辦人。", "src": "https://en.wikipedia.org/wiki/Aes_Dana", "src2": "https://ultimae.com/artists/aes-dana/", "from": "new" },
-        { "f": "Villuis 14 歲起在幾個樂團做音樂，早期背景是 industrial 與 coldwave；1995 年遇到 Charles Farewell 並共組 Asura。", "src": "https://www.sonicimmersion.org/interview-with-ultimae-records/", "single": true, "from": "new" },
-        { "f": "他在 2000 年遇到 Sunbeam 後開始 Aes Dana，想探索不同的聲音，自述為「深沉催眠的 ambient、解構的節奏與晨間 trance」。", "src": "https://www.sonicimmersion.org/interview-with-ultimae-records/", "single": true, "from": "new" }
-      ] },
-      "sound": { "status": "gap", "facts": [
-        { "f": "Villuis 的 Aes Dana 風格自述為深沉催眠的 ambient、解構的節奏與晨間 trance。", "src": "https://www.sonicimmersion.org/interview-with-ultimae-records/", "single": true, "from": "new" }
-      ] },
-      "legacy": { "status": "gap", "facts": [
-        { "f": "Villuis 1999 年底創辦 Ultimae Records，2000 年以 Asura 的《Code Eternity》首發；廠牌核心藝人含 Aes Dana、Solar Fields、Carbon Based Lifeforms、SYNC24 與 Asura。", "src": "https://www.sonicimmersion.org/interview-with-ultimae-records/", "src2": "https://en.wikipedia.org/wiki/Ultimae_Records", "from": "new" },
-        { "f": "他與 Solar Fields 的 Magnus Birgersson 另組 H.U.V.A. Network。", "src": "https://www.sonicimmersion.org/interview-with-ultimae-records/", "single": true, "from": "new" }
-      ] },
-      "era": { "status": "gap", "facts": [
-        { "f": "《Memory Shell》2004 年 9 月 29 日由 Ultimae 發行，是他在該廠牌的第三張專輯，據廠方說花了一年製作。", "src": "https://ultimae.com/?p=1027", "src2": "https://trance.net/www.trance.net/article/articleview/530/1/4.html", "from": "new" }
-      ] }
-    },
-    "milestones": [],
-    "conflicts": [],
-    "searches": 4,
-    "failedFetches": 0,
-    "pubIssues": [],
-    "status": "full",
-    "notes": "⚠ 名冊 key aes dana 與法國凱爾特黑金屬團 Aes Dana（1994 年成軍，維基 Aes_Dana_(band)）同名；卡池專輯 Memory Shell（Ultimae、2004）屬 Vincent Villuis，黑金屬團一條未收。維基預抓頁帶 warn 即此原因。Villuis 所在地：僅 Ultimae 廠址里昂，本人所在地未見來源，不寫。Memory Shell 日期與『第三張』兩源皆為廠牌頁與 trance.net 評論，視為兩源；專輯在 2004 的出生地無來源。「Ultimae 在 psybient 的地位」兩源皆未用該詞，不收。"
-  }
+  "milestones": [],
+  "conflicts": [],
+  "searches": 2,
+  "failedFetches": 0,
+  "pubIssues": [],
+  "status": "thin",
+  "notes": "身分：Ultimae 頁與 Bandcamp 的 360（2010、Charles Farewell）吻合；維基 Asura 為印度神話同名頁，不收。Villuis 離團年份：Ultimae bio 說 2001 年離開，但專輯年表與其他說法有出入，不收。Lost Eden（2003 或有 2002 說）年份各處不一，facts 不列。「最具辨識度的世界電子／trance ambient 樂團之一」是廠牌自述，不收。Ultimae 維基與 Aes Dana 條目互為同家族，非獨立。ASURA 本人所在地：搜尋摘要稱里昂，但 ultimae 頁沒寫，不寫。"
+ },
+ {
+  "key": "aes dana",
+  "name": "AES DANA",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "AES Dana 是法國作曲家、聲音設計師與 DJ Vincent Villuis 的名義，他也是 Ultimae Records 的創辦人。",
+      "src": "https://en.wikipedia.org/wiki/Aes_Dana",
+      "src2": "https://ultimae.com/artists/aes-dana/",
+      "from": "new"
+     },
+     {
+      "f": "Villuis 14 歲起在幾個樂團做音樂，早期背景是 industrial 與 coldwave；1995 年遇到 Charles Farewell 並共組 Asura。",
+      "src": "https://www.sonicimmersion.org/interview-with-ultimae-records/",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "他在 2000 年遇到 Sunbeam 後開始 Aes Dana，想探索不同的聲音，自述為「深沉催眠的 ambient、解構的節奏與晨間 trance」。",
+      "src": "https://www.sonicimmersion.org/interview-with-ultimae-records/",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Villuis 的 Aes Dana 風格自述為深沉催眠的 ambient、解構的節奏與晨間 trance。",
+      "src": "https://www.sonicimmersion.org/interview-with-ultimae-records/",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Villuis 1999 年底創辦 Ultimae Records，2000 年以 Asura 的《Code Eternity》首發；廠牌核心藝人含 Aes Dana、Solar Fields、Carbon Based Lifeforms、SYNC24 與 Asura。",
+      "src": "https://www.sonicimmersion.org/interview-with-ultimae-records/",
+      "src2": "https://en.wikipedia.org/wiki/Ultimae_Records",
+      "from": "new"
+     },
+     {
+      "f": "他與 Solar Fields 的 Magnus Birgersson 另組 H.U.V.A. Network。",
+      "src": "https://www.sonicimmersion.org/interview-with-ultimae-records/",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "《Memory Shell》2004 年 9 月 29 日由 Ultimae 發行，是他在該廠牌的第三張專輯，據廠方說花了一年製作。",
+      "src": "https://ultimae.com/?p=1027",
+      "src2": "https://trance.net/www.trance.net/article/articleview/530/1/4.html",
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [],
+  "conflicts": [],
+  "searches": 4,
+  "failedFetches": 0,
+  "pubIssues": [],
+  "status": "full",
+  "notes": "⚠ 名冊 key aes dana 與法國凱爾特黑金屬團 Aes Dana（1994 年成軍，維基 Aes_Dana_(band)）同名；卡池專輯 Memory Shell（Ultimae、2004）屬 Vincent Villuis，黑金屬團一條未收。維基預抓頁帶 warn 即此原因。Villuis 所在地：僅 Ultimae 廠址里昂，本人所在地未見來源，不寫。Memory Shell 日期與『第三張』兩源皆為廠牌頁與 trance.net 評論，視為兩源；專輯在 2004 的出生地無來源。「Ultimae 在 psybient 的地位」兩源皆未用該詞，不收。"
+ },
+ {
+  "key": "telenights",
+  "name": "Telenights",
+  "slots": {
+   "origin": {
+    "status": "none",
+    "facts": []
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Lucky Tiger 由荷蘭小廠牌 the Tidal Charm 發行；廠牌稱它是「新鮮創新、不使用採樣的 barber beats 專輯」，Bandcamp 標籤則雜到包含 IDM、downtempo、trip-hop、dungeon synth 與 vaporwave。",
+      "src": "https://www.listencorp.co.uk/post/inside-the-tidal-charm",
+      "src2": "https://thetidalcharm.bandcamp.com/album/lucky-tiger",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "none",
+    "facts": []
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [],
+  "conflicts": [],
+  "searches": 3,
+  "failedFetches": 0,
+  "pubIssues": [],
+  "status": "thin",
+  "notes": "藝人頁 telenights.bandcamp.com 只有「It's hard to explain.」，無所在地、無年份；discography 另有 The Heathen、24-25、Summer Daze、Le Boxeur 等。the Tidal Charm 所在地：事實庫寫荷蘭，listencorp 訪談則以『每季換據點』的玩笑回應，故所在地不寫。TC011 號碼只見於 Bandcamp 頁。身分：Lucky Tiger 與廠牌訪談『Season 2 開場』吻合。origin 與 legacy 查不到。"
+ },
+ {
+  "key": "yaima",
+  "name": "Yaima",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Yaima 是西雅圖的二人組，2014 年起活動，成員是 Mas Higasa（吉他、笛、handpan）與主唱 Pepper Proud；自稱「Cascadian Elemental & Alchemical Electronic Music Duo」。",
+      "src": "https://lpr.com/?p=61950",
+      "single": true,
+      "from": "new"
+     },
+     {
+      "f": "專輯依序是 2014《Pellucidity》、2016《OvO》、2018《Antidote》，《Antidote》是第三張。",
+      "src": "https://lpr.com/?p=61950",
+      "src2": "https://higherplainmusic.com/2019/01/30/yaima-antidote-review",
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "評論形容《Antidote》是帶古老氣息的民謠，混入世界音樂、trip-hop 手法與電子節拍，以吉他 loop 疊在平靜的人聲上；用到 dulcimer、cajón、手鼓、笛與 udu pot 等樂器，人聲常被拿來比 Sarah McLachlan。",
+      "src": "https://higherplainmusic.com/2019/01/30/yaima-antidote-review",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "none",
+    "facts": []
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [],
+  "conflicts": [],
+  "searches": 4,
+  "failedFetches": 1,
+  "pubIssues": [],
+  "status": "thin",
+  "notes": "身分：2018《Antidote》、cajón 與電子鼓的描述相符，確認是西雅圖 Yaima。lpr.com 為場館宣傳頁，視為單源（低風險身世）。搜尋摘要稱 Echoes 電台、Bandsintown 也寫西雅圖，但未開頁，不當 src。巡演足跡（受邀峇里島、紐西蘭等）只見場館自述，不收。Apple Music 的 cajón 與電子鼓描述來自試聽，與評論一致。legacy 無具名共識評價，查不到。bandsintown 403。"
+ },
+ {
+  "key": "desert sand feels warm at night",
+  "name": "desert sand feels warm at night",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "desert sand feels warm at night 是英國的電子音樂人，Bandcamp 藝人頁所在地標 England, UK；2018 年立下這個名義，主打 slushwave 與 dreampunk。",
+      "src": "https://en.wikipedia.org/wiki/Desert_Sand_Feels_Warm_at_Night",
+      "src2": "https://desertsand.bandcamp.com/music",
+      "from": "new"
+     },
+     {
+      "f": "他說自己是靠 Spotify 推薦聽到 Telepath（美國音樂人 Luke Laurila）才愛上 slushwave，並因此開始做自己的作品。",
+      "src": "https://en.wikipedia.org/wiki/Desert_Sand_Feels_Warm_at_Night",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他以不使用採樣的 slushwave 專輯聞名（如 2021《New World Disciples》），但也做過大量取樣處理的作品（如 2022《Dream Desert》）；他自稱屬於 vaporwave 裡偏 ambient 的一側。",
+      "src": "https://en.wikipedia.org/wiki/Desert_Sand_Feels_Warm_at_Night",
+      "src2": "https://beardedgentlemenmusic.com/2022/08/20/an-interview-with-slushwave-artist-desert-sand-feels-warm-at-night/",
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他說自己直到 2022 年參加音樂節，才發現這個計畫有龐大的支持者，至今仍對有人喜歡他的音樂感到意外。",
+      "src": "https://en.wikipedia.org/wiki/Desert_Sand_Feels_Warm_at_Night",
+      "src2": "https://beardedgentlemenmusic.com/2022/08/20/an-interview-with-slushwave-artist-desert-sand-feels-warm-at-night/",
+      "from": "new"
+     },
+     {
+      "f": "他的免採樣作品與取樣手法，被維基歸為影響並推進了 slushwave 子類型。",
+      "src": "https://en.wikipedia.org/wiki/Desert_Sand_Feels_Warm_at_Night",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "era": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "2019 年他以 Prisoner 等取樣作品、卡帶發行的《The Hanging Gardens of Babylon》二部曲（卡池的上、下兩卷）受到注意，同年發表首張免採樣專輯《Forgive and Forget》。",
+      "src": "https://en.wikipedia.org/wiki/Desert_Sand_Feels_Warm_at_Night",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   }
+  },
+  "milestones": [],
+  "conflicts": [
+   "專輯研究稿稱所在地為美國波特蘭；查實 Hushtones 是緬因州波特蘭的重發廠牌，藝人本人在英格蘭，採英格蘭"
+  ],
+  "searches": 6,
+  "failedFetches": 0,
+  "pubIssues": [],
+  "status": "full",
+  "notes": "所在地矛盾已解：美國波特蘭是 Hushtones 廠牌（黑膠重發），藝人頁與維基皆為英國。真名：維基寫 William Hallworth-Cook，Bearded Gentlemen 訪談內文拼 Wallword-Cook，拼法不一，facts 不用真名。WKNC 2022 年度榜、各樂評形容（New World Disciples 最受歡迎、key figure）為維基單源，榜單與獎項類不收；Dream Desert YouTube 逾兩百萬觀看為單源數字，不收。維基稱 Hanging Gardens 為 2019 卡帶，Bandcamp 頁未列該名，與 Hushtones 2026 黑膠重發不衝突，facts 只寫維基版。「slushwave 影響」為維基單源，非獨立於其引文，寫作層請保守。"
+ }
 ]
