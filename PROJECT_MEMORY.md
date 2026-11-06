@@ -1,5 +1,15 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-06｜dip-vinyl-shop｜情緒薄格 Bandcamp downtempo 候選 ml70／md39：36 張上線（落格 34）＋藝人介紹 18 位
+
+- **店主 11-06**：Bandcamp downtempo 1,901 張候選「先做最遠的」→ 289 張分六批、三個工作階段並行；本工作階段做 ml70（恍惚，卡單 49）與 md39（頹靡，卡單 47）。卡單即策展，主線組 `curation-ml70／md39.json` → master → 卡單。
+- **ml70**（`add-20261106-ml70`）：主線汰 13（合輯 6、原聲 1、EP 1、自我同名 3、先例已汰 2）→ 研究汰 20（有拍推進 11、判輕 6、判冷 2、混音 1）→ **上線 16、落恍惚 15（94%）**；出格 Martin Brugger 判輕。
+- **md39**（`add-20261106-md39`）：主線汰 9（現場、擴充重發、自我同名 3、瑞士黑金屬身分對不上、deep house 四拍、先例已汰 2）→ 研究汰 18（有拍推進 9、判暖判輕 7、躁 1、EP 合集 1）→ **上線 20、落頹靡 19（95%）**；出格 How to Disappear Completely 判暖落恍惚。
+- **來源結論**：卡單的粗估 moodGuess 過濾掉約四成（標 downtempo 的 breakbeat／舞池／dub techno 120 BPM 盤多）；過了研究層的評分落格率很高。lo-fi beat tape、暖 dub、dark ambient／drone、80 BPM 冷 trip-hop 是穩的。
+- **寫入（已即時生效）**：card_catalog 36、KV 36 鍵逐字回讀一致（stamp 20261106ml70／md39）、試聽 34 ready／2 unavailable（最紅那首換 28 張）、seed +36；prepare／published gate 皆 0 error；頂點 0。審稿改 4 張（Kuba 人名改拉丁、Bluetech 代名詞誤指、Macroblank 性別、Lauge 誤寫二人組——已同步研究／鉤子層）。
+- **藝人介紹**：ar-d-523（寫 8、不寫 5）、ar-d-524（寫 16、不寫 1）；審稿改 13 處（Cujo 名號時序、單源評價句、「據」轉述詞、補第二來源）。合併 main 後 7 位與並行批重複、讓給已上線版本；Lauge 以本線為準（ar-d-525 誤寫二人組，已移除）→ 最終上線 18 位（ar-d-523 7、ar-d-524 11），介紹總數 10,509。
+- **主要檔案**：`batch-progress/add-20261106-{ml70,md39}/`、`onboarding-manifest-add-20261106-{ml70,md39}-20261106.json`、`batch-progress/mood-cells-20261022/{curation-ml70,curation-md39,master-ml70,master-md39,cut-artist-intros-ml70.mjs,SCENES.md}`、`desc-tools/batches/{cards,research,hooks,input,output}/add-20261106-*`、`batch-progress/mood-axes/score-{ml70,md39}/`、`batch-progress/artist-intro/{roster-ml70-ar-d-523,roster-md39-ar-d-524,ar-d-rulings-ml70.md}`、`data/artist-intros/`、`seed_cards.json`、`data/mood/`、`genre-tree.json`、`card-subgenres.json`、`draw-covers/`、試聽地圖。
+- **驗證**：`verify-album-onboarding --published` 兩批 0 error；`verify-wave-kv` 36／36；`build-card-moods` 錨點 104/104；`qa-artist out` 兩批只剩刻意不寫的缺位。
 ### 2026-11-06｜dip-vinyl-shop｜情緒薄格頹靡 Bandcamp downtempo 候選 md40／md41：37 張上線（落頹靡 31）＋藝人介紹 20 位
 
 - **店主 11-06**：Bandcamp downtempo 1,901 張依 Last.fm 收聽排序、便宜模型粗估落格，「先做最遠的」289 張分六批、三個工作階段並行；本工作階段做 md40＋md41（條號 23801／23881），卡單即策展、不派策展代理。

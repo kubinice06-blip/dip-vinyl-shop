@@ -3863,4 +3863,6 @@ window.DipPreviewStatus = Object.freeze({
   "phelios|astral unity": "unavailable",
   "mars kumari|i thought i lost you": "unavailable",
   "rún|rún": "unavailable",
+  "macroblank|tales of the cypher": "unavailable",
+  "moth equals|sick puppy": "unavailable",
 });
