@@ -31,3 +31,23 @@
 - 24612：Dr. Toast 沿用 ml72 研究稿不重查，只補鼓型行；原稿『建議主線汰』改為不達門檻（只有藝人層描述，無這張鼓型證據）。
 - 24613：Pan Amsterdam 廠牌名（Def Pressé）只有 Bandcamp 文案暗示，facts 不寫確切廠牌；Norman Records 評論頁 403，內容引自搜尋摘要，單一來源。
 - 24614：Star Parks、The New Law、Random Rab、Long Arm、Pan Amsterdam 的 label 卡單為空或未驗證，facts 不寫廠牌。
+
+## 研究 a 組
+- 24601：Era《Era》沿用 ml71 研究稿不重查；原稿「建議汰」撤回：鼓型為流行搖滾式持續鼓貝斯，非攻擊性、非舞池，依本輪標準判輕不汰；notes 補鼓型行（不明）。
+- 24602：Potatohead People《Mellow Fantasy》沿用 ml68 稿；鼓型判慢拖（Dilla 式鬆散拍為主，個別曲 house／boogie 快段），不建議汰。
+- 24603：BALTHVS 兩張地點矛盾（Bandcamp 標 San Diego、Riff Magazine 稱波哥大）：facts 並列註明；廠牌 Cubensis Records 單一來源。
+- 24604：BALTHVS《Cause & Effect》鼓型標「不明」：文案列 deep house／disco 但無逐曲或 BPM 來源，證據不足不寫建議汰；主線知悉為本組最大舞池風險。
+- 24605：Robot Koch、Moderator、Anthony Naples 鼓型判慢拖（半速重拍／boom bap 懶拍／鼓可有可無的 trip-hop 慢鼓），不建議汰；Naples 的 house／techno 標籤是出身風格非這張律動。
+
+## 研究 d 組
+- 24631：d 組七張鼓型判讀——Blackfish 慢拖（Bandcamp downbeat／groove，無 BPM）、Emapea 慢拖（boom bap 重鼓，x 貼邊 2.9）、Deceptikon 慢拖（鬆散不量化鼓機）、Brock Berrigan／Klangstein／Invisible Allies／Glen Porter 不明；七張皆無攻擊性或舞池推進的直接證據，無建議汰。
+- 24632：Invisible Allies《Hyperdimensional Animals》Discogs 曲目 10 首中後 5 首為他人重混（MB 仍是 Album）；移交主線裁定是否比照 Quanta 先例以 remix 過半處理。
+- 24633：Glen Porter 原稿「建議汰」是風格不符（吉他迷幻／衝浪搖滾）而非鼓型，依本輪規則改為不建議汰、鼓型不明，風格存疑留給主線。
+- 24634：Blackfish 卡單 label 寫 blackfish productions，但 2001 原版是 Konvex | Konkav KK012；Klangstein 查不到樂評，status thin。
+
+## 研究 c 組
+- 24621：c 組 7 張鼓型判定——攻擊性：GILA《Energy Demonstration》（FACT「razor-sharp percussion、destructive art-trap」、Boomkat「bags of killer drums」、Bandcamp 自述 hard-edged bangers，標籤 techno／trap；**建議汰**，預估 x≈3.6）；慢拖：Random Rab《Awoke》（把握低，僅標籤與上一張宣傳稿）、Zero Cult《Closer Than Ever》（末曲〈Hit and Run〉廠牌文案特指舞池，前九首不是）、Evil Needle《Abyssal》（僅標籤 jazzy／lounge／neo-soul）；不明：Astronaut Ape（文案 progressive grooves、dub-like basslines，標籤含 Progressive Trance）、Jean du Voyage、Błoto（真人鼓加 TR-8／SPD-SX，商店文案 jazz／house／techno pulses）。其餘六張無攻擊性或舞池證據，不建議汰。
+- 24622：Astronaut Ape（Progressive Trance）與 Błoto（house／techno pulses）舞池風險中等，但無 BPM、無樂評證據，依「判不出來的留」不汰，交評分。
+- 24623：x 貼邊提醒（≤2.7 門檻）：Astronaut Ape 2.8、Jean du Voyage 2.8、Błoto 2.8；Zero Cult 卡單 1.8 我改估 2.2。
+- 24624：Jean du Voyage、Evil Needle、Astronaut Ape、Zero Cult 查不到樂評，facts 只用 Bandcamp 頁面與廠牌文案，status 標 thin；WebSearch 用了 3 次（GILA、Błoto、Random Rab）。
+- 24625：Free Jazz Blog 把 Błoto《Grzybnia》標 2025 年、團員名單與 Bandcamp 署名不同；採 Bandcamp／MB（2024-10-11，Cancer G 打鼓）。
