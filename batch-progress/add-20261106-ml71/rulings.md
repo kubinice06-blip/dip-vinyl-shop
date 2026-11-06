@@ -78,3 +78,17 @@
 - 23978：desert sand feels warm at night《バビロンの空中庭園 下》無存疑但『重』不穩：Bandcamp 串流 45 秒片段頻譜，無高頻、悶暖，lo150 0.07–0.83 不一；原發日期取 MB 2019-03-25，Bandcamp 現頁為 2026 Hushtones 黑膠重發。「上」卷頁找不到，不寫上下卷關係。thin。
 - 23979：頻譜方法：Apple 30 秒試聽片段（desert sand 改用 Bandcamp 串流）做 150Hz 以下／4kHz 以上能量占比，BPM 自相關估計不穩，facts 只寫能量占比與「有鼓／無鼓」。WebSearch 用 1 次（Nym）；Wikipedia 用 WebFetch（curl 被擋）。
 - 23980：（預留未用）
+
+## 主線研究汰換（不佔條號；2026-11-06）
+研究層交件後照各組「moodGuess 存疑」汰 21 → 剩 16；被汰卡移到 `dropped-cards.json`／`dropped-research.json`。不補位（卡單即策展結果）。
+- 有拍推進 9：CRYSTAL VIBE《Change Is the Only Constant》（psychill／progressive psychedelic 8–10 分鐘舞池式展開（研究 e））、Somatoast《Goop》（IDM／glitch／dubstep，stuttering 切分拍（研究 d））、LAB'S CLOUD《Underwater Galaxy》（每首 95–115 BPM、uplifting synth、soulful grooves（研究 d））、Era《Era》（2–5 分鐘歌曲、持續鼓貝斯與電吉他、流行搖滾式推進（研究 a））、Delerium《Nuages Du Monde》（electronic／pop，主打曲登美國舞曲榜（研究 a））、Nym《Warm Blooded Lizard》（器樂嘻哈 beats 短曲，卡單 x 2.8 已越邊距（研究 a））、ASURA《Life²》（廠方文案部落節奏＋迷幻貝斯線（研究 a；ASURA 留《360》一張））、Nym《Convex》（多數曲有持續半速取樣鼓組，只有兩首無鼓（研究 b））、Hibernation《Some Things Never Change》（新聞稿 syncopated grooves、breaks、glitch（研究 b））
+- 判輕 2：glaciære《pool water blue》（Sunvox 夏日泳池 library 小品、29 分鐘（研究 e））、Joris Voorn《Melatonin》（鋼琴加乾淨現代混音、無低頻厚度證據（研究 d））
+- 判輕／雜 1：woob《Have Landed》（四個年代風格拼貼、含舊作與短過場，不是統一的慢糊（研究 e））
+- 無來源 3：Neuroq《Catharsis》（Bandcamp 轉址迴圈讀不到，聲音零證據，卡單 x 2.8 已越邊距（研究 d））、Entheogenic《Meltwater Pulse 1B》（簡介一句、無聲音描述（研究 d））、boerd《Dwaal》（全無聲音描述，只有 trip hop 標籤（研究 c））
+- 判冷＋補遺性質 1：Astropilot《Solar Walk III. Unseen Chapters》（太空 cinematic、另版與混音、第 9 軌 56 分鐘整張連續混音（研究 d））
+- 有拍推進＋判輕 2：Tryphème《Online Dating》（細密鼓聲是地基、有舞池／acid／放克曲、明亮樂觀（研究 c））、Stone《Dream Curtain Eternally Gentle》（beat tape 型鼓組脈動、高頻偏多（研究 b））
+- 判躁 1：Spunkshine《HUGE Humans》（grooving weirdness／IDM／unsettling、MB 標 big beat（研究 c））
+- 有拍推進＋同人錨點判冷 1：Carbon Based Lifeforms《Interloper》（先做無鼓版再加鼓、整張持續拍子；池中《World of Sleepers》z −0.3（研究 a））
+- 判冷 1：Funki Porcini《Conservative Apocalypse》（MB／Bandcamp 標 dark ambient、政治警示主題，陰冷疏離（研究 b））
+- 留下但聲音待評分驗證：Elaquent《Believing》（鼓點 beat 專輯，池中同人兩張皆落恍惚，比照 ml16 jazz-rap 先例）、Shwamp《Emergence Unfolding》（psydub 律動，低頻厚、暖屬實，比照 ml70 Kuba 暖 dub）、Monde UFO（半數曲低頻薄，輕度存疑；池中同人落恍惚）、Telenights（低頻極厚、穩定鼓機）、Science Of Sleeping（無鼓，低頻與暖度無證據）、Lauge & Baba Gnohm（單一評論）、desert sand 上下集（悶暖、厚薄隨曲變）。
+- 照研究補卡單：Hibernation 147 分鐘＝14 首專輯＋一條 71 分鐘 DJ mix（已汰）；Somatoast 視同全長（已汰）。

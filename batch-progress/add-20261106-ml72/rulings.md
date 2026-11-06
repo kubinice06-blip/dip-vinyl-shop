@@ -32,3 +32,19 @@
 - **池中同人錨點**是這批最有用的篩子：第二輪 moodGuess 貼邊時，同藝人已上線卡的評分落格幾乎就是這張的落格（Bonobo、The Album Leaf、Helios 判輕；State Azure、Carbon Based Lifeforms 判冷；Mr. Scruff 判躁）。
 - label 欄多為 Bandcamp 帳號名，帳號＝藝人本人的留空；Solar Fields 補 Ultimae。
 - 同藝人：Solar Fields 2、DHAMIKA 2、Shwamp 2（ml71 另 1）、woob（ml71 另 1）、Funki Porcini（ml71 另 1）；其餘一人一張。
+
+## 研究 a 組（條號 24041–24050）
+- 24041：Bandcamp 自訂網域（Joey Fehrenbach、Dr. Toast）與 *.bandcamp.com 互相 303 重導成迴圈，直連與 WebFetch 皆失敗；改取 Wayback 存檔的 ld+json，src 用 web.archive.org 網址。
+- 24042：Shpongle 日期 Bandcamp 2009-03-29 與 MB／維基 2009-11-02 不一致，採 MB（先例）；label 卡單空白、維基為 Twisted Records。
+- 24043：Solar Fields《Until we meet the sky》Bandcamp 版權為 droneform records，卡單補的 Ultimae 未證實；facts 並列、不寫成 Ultimae 出版，序數（Bandcamp 稱第十張）不採用。
+- 24044：Parra for Cuva《Mimose》序數第四／第五來源不一，不採；聲音判『有律動的舞曲系流行電子』，moodGuess 存疑。
+- 24045：Shpongle、Parra for Cuva、Dr. Toast、Joey Fehrenbach 標 moodGuess 存疑（理由見各卡 notes）；Edamame 輕度存疑。主線複核時以 notes 為準。
+
+## 研究 c 組（24061–24070）
+- 24061：Rocket Empire《Caves》卡單 label 空，Om Records 發行（Bandcamp 標籤與 Om 新聞稿）；聲音為 acoustic indie＋downtempo、96 BPM、十首 2–4 分鐘短曲，moodGuess 存疑（判輕、有拍）。
+- 24062：CIRCULAR《Moon Pool》Ultimae inre070；暖合成器、無鼓導向、13 分鐘開場，大致成立；風險：Circular 以 arctic 冷感著稱（z 可能偏冷）、〈Imbrium〉為 AES Dana 的 dnb 合作（Igloo 稱最具攻擊性）。
+- 24063：DHAMIKA《Energy Flow》、24064：《Endless Horizons》label 空，應為 Altar Records（ARDEP24／ARCDA59）；psytrance 出身、自述混入鼓與打擊樂，後者文案稱「crystal clear glittering pulses」，兩張皆標 moodGuess 存疑（持續律動、偏清亮）。無獨立樂評，facts 以藝人／廠牌自述為主。
+- 24065：The Roots of Orchis《crooked ceilings》實為 indie／instrumental rock 樂團雙 CD（11 首原作＋8 首他人混音），有低音單簧管、大提琴、小號；moodGuess 強烈存疑，建議汰。
+- 24066：Master Minded《Elements》資訊極薄（status thin）；psybient、人聲＋迪吉里杜管、儀式感，聲音無法佐證，moodGuess 輕度存疑。
+- 24067：Glen Porter《Mr. Vampire & The Deadly Walkers》Discogs 簡介：迷幻＋衝浪搖滾能量、吉他、breaks、西部風，有吉他貝斯人聲；moodGuess 強烈存疑，建議汰。label 補 Content (L)abel（CNT 1032），藝人本名 Ryan Stephenson（1983–2018，Discogs 簡介）。Bandcamp 專輯頁載入失敗，改用 MB／Discogs。
+- 24068：全組無推翻年份／廠牌／盤名處；身分均與 MB 一致。
