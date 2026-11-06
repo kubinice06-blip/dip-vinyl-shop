@@ -32,3 +32,12 @@
 - 24122：Alpha《The Sky Is Mine》卡單寫「環境音景」不符，實為歌曲式 trip-hop（有拍子、女聲主導），x 預估 2.5–2.9、z 貼邊 0.2–0.4；年份取 MB 2007（Wikipedia 發行日 09-18，MB 09-03，年不變）。
 - 24123：Nym《Lilac Chaser》與 Edamame《Bask》Bandcamp 自訂網域重導迴圈讀不到（nymself↔ratsofnym、gravitasrecordings↔bandcamp），改用 MB、WebSearch 各 1 次（共 2 次）與樂評；兩張 status thin，聲音證據弱。Nym 自述 beat-driven，x 存疑；Edamame 偏暖但 x、y 貼邊。
 - 24124：AES Dana《Leylines》自述 luminous darkness、cinematic，z 恐 <0.3（moodGuess 存疑：偏冷）；Carbon Based Lifeforms《Hydroponic Garden》與 Delerium《Karma》大致成立（CBL z 貼邊 0.3，Karma z 偏暖 0.5）。未推翻策展層身分／年份／廠牌。Nym 的 MB 無廠牌（卡單 label 空）。
+
+## 研究 e 組
+- 24161：Halina Rice《UNREALITY》：藝人自述與 EDM Junkies、MusicRadar 皆指舞曲節拍驅動、『讓人想動』，聲音屬舞池電子，moodGuess x 1.9 嚴重偏低（應 ≥3.0）。建議主線汰換。
+- 24162：Dday One《Manu Propria》：官網頁與 Bandcamp 互相轉址、無法抓取，僅 MB 與零售頁，facts 4 條 thin；卡單類型含 hiphop，『取樣製作人』說法來自未開啟的搜尋摘要不入 facts，路數有鼓拍，x 可能 >2.7。建議汰換或交評分層實聽。發行日 MB 為 2022-02-25，零售摘要為 2022-11-03，採 MB。
+- 24163：Donovan Hikaru《Selected Moods》：Bandcamp 地區為多倫多、Tobira 稱加州，facts 與寫作層不寫產地。聲音只有標籤與短曲長，y 0.5 存疑偏輕（vaporwave／filmscore／lounge 乾淨質感）。
+- 24164：Veryan《One Universal Breath》：廠方明寫 sub-weight 厚、旋律性、打擊樂『有時』推進；x 存疑偏低（1.2→約 2.3–2.8，貼邊距）。
+- 24165：Tryphème《Slowride》：trip-hop loop 鼓拍＋bass 吉他 riff＋MBV 系糊，屬有拍沒攻擊性；x 2.5 可能到 2.8–3.0（偏躁），z 未決。
+- 24166：VANITAS命死《心の泉》：無任何聲音描述，只有 slushwave 標籤與 9 首長曲（均長 8 分）；無鼓證據，z（暖冷）未決，曲名一首含『冷』。thin。
+- 24167：Ian Hawgood《Well, Here We Are》：廠方與藝人自述一致，電聲＋田野錄音＋drone，無鼓；最合 ml，y 0.6 略低於邊距待評分層確認。

@@ -39,3 +39,18 @@
 - 24234：Ascendant《Particle Horizon》SYN10，十首 73:40 全在 6–8.6 分；modular／dark ambient 冷色，大致符合 moodGuess；唯一疑慮是 Berlin School 式音序脈動可能推高 x，無音檔未能驗證。
 - 24235：Zane Alexander《Midrealm》證據薄（status thin）；acoustic＋synth＋trip-hop／dreampunk，是否有拍子不明；moodGuess 存疑：x 可能到 2.6–3、z 或不夠冷，建議主線優先考慮汰換。
 - 推翻策展層 0 處。
+
+## 研究 b 組（24211–24215）
+- 24211 Antimatter《The Judas Table》：身分無誤（MB 2015-10-09、Prophecy）。聲音是有鼓組的暗色搖滾（Liam Edwards），含較重金屬式吉他；moodGuess 存疑（x 偏高、z 偏暖），建議汰換候補。status full。
+- 24212 Connect.Ohm《9980》：首發 2012，Bandcamp 2018 為重製版（曲目為重製版九首）。聲音含蓄 downtempo＋drone，靜成立；冷暖偏中性略暖，z 邊界。Koizumi 國籍未驗不寫。status full。
+- 24213 Miktek《Elsewhere》：Bandcamp 12 首＋73 分鐘連續混音（148 分即此）。cold wave 根、慢、深低頻，大致符合；有精緻節奏。status full。
+- 24214 Ascendant《Æthereal Code》：Synphaera SYN01，Source Trilogy 第二張。dark ambient／Berlin school，但聽眾稱溫暖、有輕拍；moodGuess 存疑（z 可能偏中性）。創辦人人名單一來源，不寫。status full。
+- 24215 1000 Eyes《Duality》：卡單廠牌 Rabbithole Club 無法證實（Bandcamp publisher 為本人）；聲音資料極薄，短曲 trip hop 拼貼，y 恐偏高；moodGuess 存疑，建議聽過再定或汰換。status thin。
+
+## 研究 c 組
+- 24221：Eivind Aarset《Électronique noire》身分 OK（MB 1998-05-10）；Bandcamp 2017 為再上架且曲序／曲名與維基不同，廠牌 Bandcamp 簡介稱 Jazzland、維基列 EmArcy，不寫死廠牌。9 首裡 7 首有真鼓（Ofstad／Engen）；moodGuess 存疑：x 1.9 偏低，有鼓與貝斯推進，可能 2.5–3.0 擦邊距（方向：偏躁）。
+- 24222：Hong Kong Express《This》AS032、2015-08-18；無樂評、Discogs 403，聲音僅憑標籤與聽眾留言（status thin，把握 low）。moodGuess 存疑：vaporwave／dream music 慣用糊濾波，聽眾稱「天堂、平靜」，方向偏暖（可能落恍惚）。
+- 24223：Scandinavian Star《SOLAS》Posh Isolation 214，題材為 1990 年渡輪大火；曲名對船史是我的推對應（非來源明說）。moodGuess 存疑：簡介明說部分曲目四拍底鼓＋踉蹌節奏、拼貼曲短（偏躁），情感偏「心碎、優雅」（偏暖）。建議主線備汰。
+- 24224：Locust《Spectral+》2026-09-11、TODO Records；curatorRisk 的「舊作《Spectral》擴充」查無，+ 是正式盤名。moodGuess 存疑（強）：歌曲取向、客座人聲、backbeat 與心跳脈動、shoegaze 流行（方向：偏躁、偏暖），建議汰換。
+- 24225：Cell《Onwards System》Ultimae inre107，身分 OK；克制慢拍＋深沉底鼓＋冷色墊層，大致符合 moodGuess；y 存疑：樂評強調「酥脆、清晰」質地而非霧與低頻淹沒（方向：偏輕、可能 y<0.8）。
+- 推翻策展層 0 處（Locust 的「舊作擴充」疑點查無，為澄清非推翻）；卡單 label 空的 Locust 可補 TODO Records。
