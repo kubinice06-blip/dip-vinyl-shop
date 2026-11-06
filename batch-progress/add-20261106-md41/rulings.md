@@ -105,3 +105,7 @@
 - **23952** `qa-batch out` 17 張全部通過；「據」、媒體名、資料平台名 0。
 - 三軸：`ratings-override.json` 17 張全依 §0.8.1 人工錨點（經典 3／4＝11／6、冷門 2／3／4＝2／2／13、硬蕊 2／3／4＝2／13／2）；藝人最多人聽的代表作給經典 4。頂點 0（無殿堂／遺珠／異端證據）。
 - 試聽：Apple 自動配對 15 ready；CASHFORGOLD、Moth Equals（Cinephile 已汰）us／gb／jp 查無 → unavailable。封面 CAA 17／17。
+
+## 上線與評分（主線，2026-11-06）（條號 23953–23954）
+- **23953** 上線 17 張：card_catalog 17／17、KV 17 鍵回讀逐字一致（stamp 20261106md41）、試聽 15 ready／2 unavailable（最紅那首換 8 張）、seed +17、published gate 0 error。藝人介紹 ar-d-526 寫 7／不寫 6。
+- **23954** Opus 1 支打 17 張（`batch-progress/mood-axes/score-md41/`），主線看過未改值。**落格 15／17＝88%**；出格：worriedaboutsatan《Glass Infinites》y 0.4、HEXSYSTEM《Amanita Ocreata》y 0.3 判輕落平靜（研究 c 已標鋼琴為主、聲部清楚）。最貼邊：Halou《Wiser》z −0.1、State Azure《Phantoms》z −0.2、CHANTSSSS z −0.2、S1gns Of L1fe z −0.2。

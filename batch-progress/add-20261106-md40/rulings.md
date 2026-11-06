@@ -107,3 +107,7 @@
 - **23872** `qa-batch out` 20 張全部通過；「據」、媒體名、資料平台名 0。
 - 三軸：`ratings-override.json` 20 張全依 §0.8.1 人工錨點（經典 3／4＝12／8、冷門 2／3／4＝2／9／9、硬蕊 2／3／4＝3／15／2）。頂點 0。
 - 試聽：Apple 自動配對 14 ready；Headache、Space Afrika、Lauge《Echoes》、Phelios、mars kumari、Rún 六張 us／gb／jp 以藝人＋盤名查 iTunes 皆無條目 → unavailable。封面 CAA 20／20，縮圖表目視相符。
+
+## 上線與評分（主線，2026-11-06）（條號 23873–23874）
+- **23873** 上線 20 張：card_catalog 20／20、KV 20 鍵回讀逐字一致（stamp 20261106md40）、試聽 14 ready／6 unavailable（最紅那首換 11 張）、seed +20、published gate 0 error（warning 皆 UPC 盡力而為）。藝人介紹 ar-d-525 寫 13／不寫 3（見 `batch-progress/artist-intro/ar-d-rulings-md40.md`）。
+- **23874** Opus 1 支照 `score500/BRIEF.md` 打 20 張（`batch-progress/mood-axes/score-md40/`），主線看過未改值；`build-priors` → `build-scale v0`（錨點 104/104）→ `build-card-moods`。**落格 16／20＝80%**；出格：Just Mustard《Heart Under》3.1／1.8／−1.3 暴躁（研究 a 已標有鼓噪音 shoegaze）、Rún 3.0／1.9／−1.7 暴躁（雷鳴打擊）、Halou《Halou》z +0.3 恍惚、Pye Corner Audio z +0.2 恍惚（研究 b 已標樂評稱平和、有光）。類型樹 `warm-batch` 20／20 有標籤，`build-genre-tree --pull --write`、`build-draw-covers --pull --write` 重建。

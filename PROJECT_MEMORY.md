@@ -1,5 +1,17 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-06｜dip-vinyl-shop｜情緒薄格頹靡 Bandcamp downtempo 候選 md40／md41：37 張上線（落頹靡 31）＋藝人介紹 20 位
+
+- **店主 11-06**：Bandcamp downtempo 1,901 張依 Last.fm 收聽排序、便宜模型粗估落格，「先做最遠的」289 張分六批、三個工作階段並行；本工作階段做 md40＋md41（條號 23801／23881），卡單即策展、不派策展代理。
+- **md40**（`add-20261106-md40`）：卡單 47 → 主線初篩汰 15（EP／合輯／demo 集、去重、文案直述判暖判輕）→ 研究 3 組汰 12（有拍推進 6、判輕 2、判暖 3、無來源 1）→ **上線 20、落頹靡 16（80%）**；出格 Just Mustard、Rún 判躁，Halou《Halou》、Pye Corner Audio 判暖。
+- **md41**（`add-20261106-md41`）：卡單 47 → 初篩汰 18 → 研究汰 11 → 封面目視汰 1（Cinephile《Ten》封面印十年回顧，實為精選）→ **上線 17、落頹靡 15（88%）**；出格兩張判輕落平靜。
+- **結論**：粗估「離邊界遠」的卡單實際上線率約 39%（94 → 37）；標籤粗估最常錯在有鼓推進、溫暖旋律、乾淨鋼琴。label 欄多是 Bandcamp 帳號名，研究層更正 30 處。
+- **寫入（已即時生效）**：card_catalog 37、KV 37 鍵逐字回讀一致（stamp 20261106md40／md41）、試聽 29 ready／8 unavailable（最紅那首換 19 張）、seed +37；prepare／published gate 皆 0 error；頂點 0；封面 CAA 37／37。三軸全依 §0.8.1 人工錨點（經典 3／4＝23／14）。審稿改 5 張（刪單源成軍年與離團日、譯名統一、Halou breakbeat 說法與本人衝突）。
+- **藝人介紹**：ar-d-525 寫 13／不寫 3、ar-d-526 寫 7／不寫 6（單源或身分不清）；審稿刪「據」轉述詞 7 處。介紹 10,454 → 10,474。
+- **八格**：頹靡 1,732 → 1,763（含本批）；錨點 104/104 同格。類型樹、抽卡封面、card-moods 重建。
+- **主要檔案**：`batch-progress/add-20261106-{md40,md41}/`、`onboarding-manifest-add-20261106-md4[01]-20261106.json`、`batch-progress/mood-cells-20261022/{curation-md40,md41,master-md40,md41,cut-artist-intros-md40.mjs,SCENES.md}`、`desc-tools/batches/{cards,research,hooks,input,output}/add-20261106-md4*`、`batch-progress/mood-axes/score-{md40,md41}/`、`batch-progress/artist-intro/{roster-md40-ar-d-525,roster-md41-ar-d-526,ar-d-rulings-md40.md}`、`data/artist-intros/`、`seed_cards.json`、`data/mood/`、`genre-tree.json`、`card-subgenres.json`、`draw-covers/`、試聽地圖。
+- **驗證**：`verify-album-onboarding --published` 兩批 0 error；`verify-wave-kv` 37／37；`build-card-moods` 錨點 104/104；`qa-artist out` 兩批只剩不寫的缺位。
+
 ### 2026-11-05｜dip-vinyl-shop｜藝人介紹二十批上線（雲端，卡池缺介紹藝人補登 ar-d-501～520；介紹 9,650 → 10,454）
 
 - **做了什麼**：卡池裡 1,019 位沒有介紹、也不在任何名冊的藝人，依卡數取前 800 位補登名冊 `batch-progress/artist-intro/roster-fill-20261105.json`（addedBy fill-20261105），按主類型切 ar-d-501～520（古典、電子、嘻哈、爵士、搖滾、soul、reggae／世界）。每批照 dip-artist-intro 跑完補洞 4 組、寫作 2 組、主線逐位審、上架。
