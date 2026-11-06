@@ -114,3 +114,10 @@
 - **24111** 逐張審 9 張（全文印出，逐句對研究稿 a–d；抽核 Solar Fields《Mirror's Edge》配樂與 droneform／Studio Jupiter、Edamame 的 BBC《Planet Earth》自述與 Loci Records、Funki Porcini「bits and bobbies」、Hinkstep 的 Jonas Tegenfeldt 與 Alice Spacedoll（Bandcamp credits）、Krusseldorf 出道作與 2016 重製、CIRCULAR 第三張 Ultimae 與 Lunokhod、Josh Leake 串流版缺第 10 首、woob 1999–2009 沉寂與重構《Woob 4495》兩首，皆有出處）。改 1 張（`desc-override.json`），研究／hooks／input 不需同步：
   - `CIRCULAR|Moon Pool`：「是整張最有攻擊性的一首 drum'n'bass。」→「曲風是 ambient drum'n'bass。」（「最有攻擊性」是單篇樂評的評價；改用廠方簡介的曲風描述）。
 - **24112** 收卡判斷：Funki Porcini《PLOD》自稱「a series of bits and bobbies」、woob《Repurpose》重構舊曲加新長曲，兩張 MB 皆 Album、皆藝人本人新錄或重構，非他人選輯或混音集，照收。媒體名、榜單名次、「據說／官方／簡介」全批 0。
+
+## 上線（2026-11-06，主線）（條號 24113）
+- **24113**：上線 9 張：card_catalog 9／9、KV 9 鍵回讀逐字一致（stamp 20261106ml72）、試聽 8 ready（7 張換成最紅那首）／1 unavailable（woob，Apple 查無）、seed +9、prepare／published gate 0 error。封面 CAA 6＋Bandcamp 3（Krusseldorf CAA 404、Josh Leake §1、CIRCULAR CAA 當天斷線）。三軸機器基線（經典 3），頂點 0。藝人介紹 ar-d-528 同 PR 上線。
+
+## 評分與落格（2026-11-06，主線）（條號 24114）
+- **24114**：Opus 1 支照 BRIEF 打 9 張（`batch-progress/mood-axes/score-ml72/`），主線看過未改值；重建流程同 ml71。
+- **落格率 6/9（67%）**。出格：CIRCULAR《Moon Pool》（y 0.4 z −0.3，音響乾淨、北極意象）落平靜；Josh Leake《Clara》（y 0.1，明亮）落放鬆；woob《Repurpose》（z −0.3，太空 dub 疏離）落頹靡。

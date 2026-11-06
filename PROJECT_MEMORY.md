@@ -1,5 +1,26 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-06｜dip-vinyl-shop｜情緒薄格恍惚 Bandcamp downtempo 候選第二輪 ml71／ml72：25 張上線（落恍惚 18）＋藝人介紹 8 位
+
+- **店主 11-06「繼續」**：第一輪 289 張上線 104 後，剩下靠近邊界的 612 張先濾掉舞池／嘻哈／dub／soul／pop 標籤 → 232 張分五批、三個工作階段並行；本工作階段做 ml71（`pick-ml71.json` 52）與 ml72（`pick-ml72.json` 52），條號 23961／24041。卡單即策展，主線組 curation → master → 卡單，不補人。
+- **ml71**（`add-20261106-ml71`）：主線汰 15（合輯／混音集／翻唱 6、同人錨點 2、同人超量 2、先例 2、EP、原聲、特別版重發各 1）→ 研究汰 21（有拍推進 12、判輕 3、無來源 3、判冷 2、判躁 1）→ **上線 16、落恍惚 12（75%）**；出格 Delerium、AES DANA、Science Of Sleeping 判冷落頹靡，Monde UFO 判輕。
+- **ml72**（`add-20261106-ml72`）：主線汰 20（同人錨點判輕判冷判躁 10、同人超量 5、先例 4、慈善盤 1）→ 研究汰 23（有拍推進 16）→ **上線 9、落恍惚 6（67%）**；出格 CIRCULAR 落平靜、Josh Leake 落放鬆、woob 落頹靡。
+- **來源結論**：第二輪卡單 104 → 上線 25（24%）。**池中同人錨點是主線初篩最有用的篩子**（Bonobo、The Album Leaf、Helios 判輕，State Azure、Carbon Based Lifeforms 判冷，Mr. Scruff 判躁）；研究層汰掉的多是 psybient／psychill 的持續律動與 Ultimae 系太空 ambient 的冷。Bandcamp downtempo 這個來源已挖乾，不建議再派第三輪。
+- **寫入（已即時生效）**：card_catalog 25、KV 27 鍵逐字回讀一致（stamp 20261106ml71／ml72）、試聽 21 ready（20 張換成最紅那首）／4 unavailable（Apple 查無）、seed +25；prepare／published gate 皆 0 error；頂點 0。封面 CAA 18＋Bandcamp 7（CAA 404 2、§1 人工身分 2、CAA 當天 500／斷線 3）。§1 人工身分 2（Science Of Sleeping、Josh Leake，各附 Bandcamp＋Apple collectionId）。審稿改 5 張（Delerium 被動轉述評價、Lauge 樂評轉述、Science Of Sleeping「首張」不穩、Deadbeat 奥田祐斎日文字、CIRCULAR 單篇樂評評價）。
+- **藝人介紹**：ar-d-527 寫 7、不寫 3（Telenights 無身世；Yaima、Lauge & Baba Gnohm 國籍單源）；ar-d-528 寫 2、不寫 3（Edamame、Josh Leake 出身單源，Hinkstep 素材不足）；審稿改 3 處（刪單源評價句）。合併 main 後 Delerium 與並行批重複、讓給已上線版本 → 最終上線 8 位。
+- **八格**（合併 ml73／md42 後重建）：恍惚 1,752、頹靡 1,798；錨點 104/104。類型樹、抽卡封面、card-moods 重建。
+- **主要檔案**：`batch-progress/add-20261106-{ml71,ml72}/`、`onboarding-manifest-add-20261106-ml7[12]-20261106.json`、`batch-progress/mood-cells-20261022/{curation-ml71,curation-ml72,master-ml71,master-ml72,cut-artist-intros-ml71.mjs,SCENES.md}`、`desc-tools/batches/{cards,research,hooks,input,output}/add-20261106-ml7[12]*`、`batch-progress/mood-axes/score-{ml71,ml72}/`、`batch-progress/artist-intro/{roster-ml71-ar-d-527,roster-ml72-ar-d-528,ar-d-rulings-ml71.md}`、`data/artist-intros/`、`seed_cards.json`、`data/mood/`、`genre-tree.json`、`card-subgenres.json`、`draw-covers/`、試聽地圖。
+- **驗證**：`verify-album-onboarding --published` 兩批 0 error；`verify-wave-kv` 18／18、9／9；`build-card-moods` 錨點 104/104；`qa-artist out` 兩批只剩刻意不寫的缺位。
+### 2026-11-06｜dip-vinyl-shop｜情緒薄格 Bandcamp downtempo 候選第二輪 ml73／md42：17 張上線（落格 16）＋藝人介紹 6 位
+
+- **店主 11-06「繼續」**：第二輪 232 張（靠近邊界、已濾舞池節拍標籤）分五批三個工作階段並行；本工作階段做 ml73（恍惚，卡單 51，條號 24121）與 md42（頹靡，卡單 39，條號 24201）。卡單即策展，主線組 `curation-ml73／md42.json` → master → 卡單；同藝人跨並行卡單與池中一起勻（本線每位最多一張、兩批合計不過兩張）。
+- **ml73**（`add-20261106-ml73`）：主線汰 16（同人超量 8、合輯／原聲／單曲混音 3、先例 2 等）→ 研究汰 26（有拍推進 10、判冷 7、判輕 5、無聲音來源 3、版本 1）→ **上線 9、落恍惚 8**；出格 VANITAS命死 z −0.1 落頹靡。
+- **md42**（`add-20261106-md42`）：主線汰 16（同人超量 9、x 2.8 出邊距 3、合輯 2 等）→ 研究汰 15（有拍推進 7、判暖 4、無來源 2 等）→ **上線 8、落頹靡 8**。
+- **來源結論**：近邊界卡單上線率只有約 19%（90 → 17），遠低於第一輪的 39%；psybient／psydub 與 trip-hop 標籤多有脈動或鼓、Ultimae 系多判冷。留得住的是 Ultimae／Synphaera 冷 ambient（頹靡）、無鼓 slushwave／drone 與 psydub 慢盤（恍惚）。**第二輪不建議再挖**。
+- **寫入（已即時生效）**：card_catalog 17、KV 19 鍵逐字回讀一致（stamp 20261106ml73／md42；含兩張 desc4 的 desc2 別名鍵）、試聽 16 ready／1 unavailable（Macroblank，Apple 查無；最紅那首換 13 張）、seed +17；prepare／published gate 皆 0 error；頂點 0。封面 CAA 16＋Bandcamp 1（Photon §1 人工身分）。CBL《Hydroponic Garden》、Delerium《Karma》經典度上調 4。審稿各改 1 處（Macroblank 主詞錯置、Ascendant 廠牌句重複 hook）。
+- **藝人介紹**：ar-d-529 寫 3（Delerium、Veryan、Ian Hawgood；不寫 VANITAS命死）、ar-d-530 寫 3（Melanie De Biasio、Miktek、Cell）；審稿改 6 處（刪單源評價句、「據」轉述詞 3、兩源不符的軼事、Miktek 補第二來源後寫國籍）。介紹 10,509 → 10,515。
+- **主要檔案**：`batch-progress/add-20261106-{ml73,md42}/`、`onboarding-manifest-add-20261106-{ml73,md42}-20261106.json`、`batch-progress/mood-cells-20261022/{curation-ml73,curation-md42,master-ml73,master-md42,cut-artist-intros-ml73.mjs,SCENES.md}`、`desc-tools/batches/{cards,research,hooks,input,output}/add-20261106-{ml73,md42}*`、`batch-progress/mood-axes/score-{ml73,md42}/`、`batch-progress/artist-intro/{roster-ml73-ar-d-529,roster-md42-ar-d-530,ar-d-rulings-ml73.md}`、`data/artist-intros/`、`seed_cards.json`、`data/mood/`、`genre-tree.json`、`card-subgenres.json`、`draw-covers/`、試聽地圖。
+- **驗證**：`verify-album-onboarding --published` 兩批 0 error；`verify-wave-kv` 19／19；`build-card-moods` 錨點 104/104；`qa-artist out` 兩批只剩刻意不寫的缺位。
 ### 2026-11-06｜dip-vinyl-shop｜情緒薄格 Bandcamp downtempo 候選 ml70／md39：36 張上線（落格 34）＋藝人介紹 18 位
 
 - **店主 11-06**：Bandcamp downtempo 1,901 張候選「先做最遠的」→ 289 張分六批、三個工作階段並行；本工作階段做 ml70（恍惚，卡單 49）與 md39（頹靡，卡單 47）。卡單即策展，主線組 `curation-ml70／md39.json` → master → 卡單。

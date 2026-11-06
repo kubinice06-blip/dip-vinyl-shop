@@ -120,3 +120,10 @@
   - `Science Of Sleeping|Sleep Cinema`：「的首張專輯於 2022 年 7 月 29 日推出」→「在 2022 年 7 月 29 日推出」（藝人介紹補洞層 ar-d-527 查到 Bandcamp 同頁另有 2021 年《Ocean Sleep》《Forest Sleep》，「首張」不穩）；173 字。
   - `Deadbeat|Kansai Botanicals`：「奧田祐斎」→「奥田祐斎」（日本人名用日文原字）。
 - **24032** 媒體名、榜單名次、「據說／據傳／官方／簡介」全批 0；代名詞「他」只在 Atomic Skunk、Deadbeat（性別有來源）。
+
+## 上線（2026-11-06，主線）（條號 24033）
+- **24033**：上線 16 張：card_catalog 16／16、KV 18 鍵回讀逐字一致（stamp 20261106ml71）、試聽 13 ready（13 張換成最紅那首）／3 unavailable（desert sand 上下集、Lindsheaven：Apple 查無）、seed +16、prepare／published gate 0 error（warning 皆 UPC 盡力而為與 §1 人工身分提示）。封面 CAA 12＋Bandcamp 4（Atomic Skunk CAA 404、Science Of Sleeping §1、ASURA／Shwamp CAA 當天 500／斷線），主線縮圖表目視相符。三軸機器基線（經典 3），頂點 0。寫入前對 origin 全部 `claude/*` 分支 seed 去重 0。藝人介紹 ar-d-527 同 PR 上線（`batch-progress/artist-intro/ar-d-rulings-ml71.md`）。
+
+## 評分與落格（2026-11-06，主線）（條號 24034）
+- **24034**：Opus 1 支照 `score500/BRIEF.md`（10-23 體感標準）打 16 張（`batch-progress/mood-axes/score-ml71/`，聲音依據讀研究稿，不讀 moodGuess），主線看過未改值。合併 main 後 `build-priors` → `build-scale v0`（錨點 104/104）→ `build-card-moods`；`warm-batch` 14/16 有標籤，`build-genre-tree --pull --write`、`build-draw-covers --pull --write` 重建。
+- **落格率 12/16（75%）**。出格：Delerium《Semantic Spaces》（z −0.2，工業出身陰鬱底色）、AES DANA《Memory Shell》（z −0.3，太空感偏涼）、Science Of Sleeping（y 0.6 z −0.1，旋律模糊）落頹靡；Monde UFO（y 0.4，錄音薄）落放鬆。四張都是研究層已標「暖度／厚度未證實」的那幾張。
