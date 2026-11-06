@@ -24,3 +24,10 @@
 - Jogging House 卡單 3 張留 2（收聽最高兩張）。
 - 前輪研究判有鼓、依新規重判留下 2（e 組）：ASURA《Life²》（部落鼓、中速，不是舞池拍）、CIRCULAR《Substans》（偶有律動，冷暖待判）。
 - label 欄留空（Bandcamp 帳號多為藝人本人），研究層補。
+
+## 研究 e 組
+- 24961：ASURA《Life²》、CIRCULAR《Substans》沿用前輪稿，只補鼓型與聲音 facts；ASURA 判中速部落鼓、非舞池，不標存疑；CIRCULAR 鼓型未證（文案只有 grooves／clunks），不標存疑，冷度存疑（判冷）記 notes。
+- 24962：Jogging House《Softie》、Scott Campbell《Quiet Rituals》頁面無鼓描述，記鼓型未證；Jogging House 以同作者他盤頁面作旁證，已在 fact 內註明非本盤所寫。
+- 24963：Klaada 標籤有 breaks／psydub／psytrance 但無速度或舞池字眼，依規則記鼓型未證、不標存疑，notes 提示評分層聽音落格。
+- 24964：Sim Nagai《Up North》判中慢 boom-bap、非舞池，不標鼓存疑；notes 記判輕。ALBA 真人鼓加民族打擊、速度未證，notes 記判輕／偏亮。
+- 24965：WebSearch 3 次（Klaada、Jogging House、Sim Nagai）皆無有用結果，聲音證據以 Bandcamp ld+json 為主；e 組無獨立樂評，多張 status thin。
