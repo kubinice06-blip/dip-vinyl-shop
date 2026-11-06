@@ -26,3 +26,9 @@
 - §1 人工：Andi Otto《VIA》（MB 只有《VIA Remixes》）、Dj Drez《The Magnificent Hum》、RUMTUM《GLUE OF EVERYTHING》（MB 只有其單曲／EP）。
 - 前輪研究判有鼓、依新規重判留下 7（e 組，研究稿沿用 ml69／70／71／72）：Eivør《Enn》（真鼓＋交響、喉音，攻擊性待判）、Asta Hiroki《Entropy》（中慢速活鼓、乾淨）、DHAMIKA 兩張（psychill 律動，是否四拍未證）、Stream☾atcher《Buffywave》（future funk 標籤，是否四拍未證）、CRYSTAL VIBE（psychill，無聲音證據）、RUMTUM（midtempo dusty drums、不是舞池拍）。
 - label 欄留空（Bandcamp 帳號多為藝人本人），研究層補。
+
+## 研究 e 組（24881–24890）
+- 24881：e 組 7 張沿用前輪研究稿，不重查；只補鼓型與聲音 facts（WebFetch 4 次讀 Bandcamp 頁，未用 WebSearch）。
+- 24882：Eivør《Enn》鼓型＝真鼓＋穩定重擊低音，非舞池；局部喉音嘶吼，標「moodGuess 存疑（攻擊性）」。
+- 24883：DHAMIKA《Endless Horizons》僅憑單一樂迷留言稱 4/4 kick，標「存疑（舞池推進）」弱證；《Energy Flow》、Buffywave、CRYSTAL VIBE 鼓型未證，不標存疑。
+- 24884：Asta Hiroki（中慢規律活鼓）、RUMTUM（midtempo dusty drums）屬慢拍，鼓型不存疑；兩者另標「存疑（判輕）」。
