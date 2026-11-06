@@ -104,3 +104,7 @@
 - 三軸 `ratings-override.json` 29 張全依 §0.8.1 人工錨點：經典 3／4＝23／6、冷門 2／3／4＝1／12／16、硬蕊 2／3／4＝14／13／2。經典 3 佔 79%（自檢線七成）：已用 Bandcamp 候選檔（1,901 張含同人多張）逐人比對聽眾排序，本張是同人聽眾最多或唯一 LP 的升 4（Puma Blue、Khotin、AgonyOST、Transparent Man、Christ.、No-Man）；其餘多是同人非代表作（Ochre 第四、Arms and Sleepers 第四、Public Memory 第四、AES DANA 第四、Odd Nosdam、Wax Tailor）或單一張無代表作依據，維持 3。
 - 試聽：Apple 28 ready／1 unavailable（Brael & Tokyo Bloodworm，Apple 查無；Bandcamp 有數位版）。Wax Tailor 在 Apple 只有《Extended with Instrumentals》27 軌版（前 13 首即原盤），照收並記 note。
 - 封面：CAA 26＋Bandcamp 3（Brael §1 人工身分、Urbs 與 Earthen Sea CAA 404），縮圖表目視全數與盤名相符（Earthen Sea 封面印 Lovers Rock no.4 2014）。頂點 0。
+
+## 上線與評分（主線，2026-11-06）（條號 25052–25053）
+- **25052** 上線 29 張：寫入前對 origin 所有 `claude/*` 分支的 seed 去重 0 撞；card_catalog 29／29、KV 29 鍵回讀逐字一致（stamp 20261106md44）、試聽 28 ready／1 unavailable（最紅那首換 20 張；Wax Tailor 最紅取〈Keep It Movin〉原盤曲）、seed +29、prepare／published gate 0 error。藝人介紹 ar-d-815 寫 18／不寫 2。
+- **25053** Opus 1 支打 29 張（`batch-progress/mood-axes/score-md44/`），主線看過未改值。**落頹靡 18／29＝62%**；出格恍惚 7（z 0.0～+0.5：Arms and Sleepers、Khotin、I Awake、Symbolico、Dillard、Now Always Fades、Locust）、平靜 2（Ochre y 0.1、Disparition y 0.4）、放鬆 1（Martina Topley-Bird）、冷冽 1（Chris Imler x 3.3，研究 b 曾建議汰、證據弱留下，評分證實偏躁）。全批 x 只有 Chris Imler 過 3——「有鼓不等於躁」成立，出格主因是色溫。

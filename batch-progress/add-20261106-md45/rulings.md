@@ -100,3 +100,7 @@
 - 三軸 26 張依 §0.8.1：經典 3／4＝17／9（同人聽眾最多或唯一 LP 升 4：Era、H.U.V.A. Network、Forhill、Tara Lily、Zane Alexander、Leif、Bergsonist、Scandinavian Star、1000 Eyes）、冷門 2／3／4＝1／11／14、硬蕊 1／2／3／4＝1／12／12／1。
 - 試聽：Apple 25 ready／1 unavailable（Pontiac Streator，Apple 查無；Bandcamp 有數位版，冷門度依但書給 4）。
 - 封面：CAA 24＋Bandcamp 2（Cemento Atlantico CAA 404、El Jazzy Chavo CAA 當天回 500），縮圖表目視全數相符。頂點 0。
+
+## 上線與評分（主線，2026-11-06）（條號 25132–25133）
+- **25132** 上線 26 張：origin `claude/*` 分支 seed 去重 0 撞；card_catalog 26／26、KV 26 鍵回讀逐字一致（stamp 20261106md45）、試聽 25 ready／1 unavailable（最紅那首換 18 張）、seed +26、prepare／published gate 0 error。藝人介紹 ar-d-816 寫 13／不寫 5。
+- **25133** Opus 1 支打 26 張（`batch-progress/mood-axes/score-md45/`），主線看過未改值。**落頹靡 19／26＝73%**；出格恍惚 4（Era z +0.3、Forhill +0.3、Tripswitch 0.0、Jogging House +0.2）、平靜 2（Bergsonist、Plant43 y 0.4）、放鬆 1（Leif y 0.3 z +0.7，研究層已標判暖）。26 張 x 全落 1.5–2.9。

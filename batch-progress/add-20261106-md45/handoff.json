@@ -1,10 +1,38 @@
 {
  "batch": "add-20261106-md45",
  "cards": 26,
- "written": { "cardCatalog": 26, "kvKeys": 26, "seedRows": 26, "previewReady": 25, "previewUnavailable": 1 },
- "review": { "by": "cloud-main", "cards": 26, "changed": ["desc2:Jogging House|Kiosk"] },
- "qa": { "research": "pass", "hooks": "pass", "out": "pass", "prepareGate": "0 error", "publishedGate": "0 error" },
- "mood": { "target": "頹靡", "landed": null, "live": 26 },
+ "written": {
+  "cardCatalog": 26,
+  "kvKeys": 26,
+  "seedRows": 26,
+  "previewReady": 25,
+  "previewUnavailable": 1
+ },
+ "review": {
+  "by": "cloud-main",
+  "cards": 26,
+  "changed": [
+   "desc2:Jogging House|Kiosk"
+  ]
+ },
+ "qa": {
+  "research": "pass",
+  "hooks": "pass",
+  "out": "pass",
+  "prepareGate": "0 error",
+  "publishedGate": "0 error"
+ },
+ "mood": {
+  "target": "頹靡",
+  "landed": 19,
+  "live": 26
+ },
  "artistIntro": "ar-d-816 寫 13（不寫 5）",
- "pendingLocal": { "kv": "無", "listeners": [], "apexEvidence": [], "genreTree": "已重建", "albumOverrides": "無" }
+ "pendingLocal": {
+  "kv": "無",
+  "listeners": [],
+  "apexEvidence": [],
+  "genreTree": "已重建",
+  "albumOverrides": "無"
+ }
 }
