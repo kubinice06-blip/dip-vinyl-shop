@@ -3871,4 +3871,6 @@ window.DipPreviewStatus = Object.freeze({
   "lindsheaven virtual plaza|nordwrong": "unavailable",
   "woob|repurpose": "unavailable",
   "ambientium|fractal philosophy": "unavailable",
+  "neat beats|cosmic surgery": "unavailable",
+  "lindsheaven virtual plaza|ntsc memories": "unavailable",
 });

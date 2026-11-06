@@ -95,3 +95,16 @@
 - **24827** 第二句全照 note 句型；日期「日」後一字照 24814／24818（Błoto 日與、Electronic Visions 日經、Graham 日自、Rocket Empire 日在、Cephas 日亮；其餘只寫年）。日期前一字：Błoto 音、Electronic Visions 輯、Graham 落、Rocket 天、Cephas 在。Błoto 原稿「作品，2020…」與 writer-1 Moods 撞 `品年月日`，改成「…就是這批錄音，2020…」；Rocket 原稿「現在。2020」黏出 `在年月日`（撞 Cephas 的指派句型），改「今天」。
 - **24828** Nanosphere 的 note「這個數字出自 Beatport」：正文不點名資料平台（writer-base 來源平台條），改寫成「那個數字是〈Void〉登記的速度」，事實保留、平台名不進正文。Orpheus 樂評只寫 note 列的「鍵盤與粗厚貝斯線」，facts 的「漂亮」不寫。Lindsheaven 公告原文的「你從不孤單」轉成「說聽的人從不孤單」（禁你我）。Professor Creepshow 不複述 hook 的「獻給卡帶迷／三分半」，第二格改寫「廠方給它們取的稱呼是 lofi playawave」。
 - **24829** 自掃（han() 中文 4-gram，本檔 14 張＋writer-1 out 15 張合掃）：3 張以上 0；本檔內 2 張 0。途中拆掉：`第二張專輯`（Błoto 讓給 Cephas 的指派句型）、`專輯年月日`（Błoto×Electronic Visions）、`首約分鐘`×4（Deadbeats 總共…左右、Electronic Visions 播完約、Graham 合計約、Orpheus 上下；Rocket 保留）、`社群媒體`（Sync24 改社群平台）、`國製作人`／`的製作人`／`英國的製`（Goodge 改「這位製作人」，避 Odd Nosdam 指派句與 writer-1 Robot Koch、neat beats）。兩端都是 note 指派句型的 2 張殘片：`荷蘭製作`（Electronic Visions×writer-1 Moods），不動。對 add-20261105／20261106 既有 out 的命中只剩通用日期樣板與「自家廠牌」「自行發行」等常用詞，未改。請主線兩檔定稿後再跑一次收件合掃。
+
+## 主線審稿（24831；2026-11-06）
+- **24831** 逐張審 29 張（全文印出，逐句對研究稿 a–e；抽核 Joomanji 錄音室與兩年、Robot Koch 龐克硬核鼓手出身與 XLR8R、Ash Walker 與 The Specials 放黑膠、El Jazzy Chavo 雅典與 Funkypseli Cave、Deadbeats 成員與 Rae & Christian 混音集、Electronic Visions 荷蘭與一人包辦、Graham Kartna 漢米爾頓、Odd Nosdam 為 Anticon 共同創辦人、Cephas Azariah 英籍印裔，皆有出處）。改 6 張（`desc-override.json`），只動措辭，研究／hooks／input 不需同步：
+  - `Morcheeba|Blackest Blue`：「樂評形容它燒得很慢，也是樂團最內省的一張。」→「整張是慢燃型，主題圍繞失去與退縮進自我。」（指向媒體的轉述＋單篇樂評最高級評價；保留聲音與主題事實，The Skinny）；221 字。
+  - `Robot Koch|Death Star Droid`：刪「樂評說」，直述拍子停停走走、wonky、低頻深沉；180 字。
+  - `Evil Needle|Cirrostratus`：刪「樂評說」（EarMilk 2012）；146 字。
+  - `Zero Cult|Deep In Your Mind`：hook「海法來的 Emil Ilyayev」→「以色列的 Emil Ilyayev」（海法只有 Discogs 一源，藝人介紹補洞層查到海法／特拉維夫／蘇聯三說互斥，退到上位國別）；204 字。
+  - `Lindsheaven Virtual Plaza|NTSC Memories`：刪「留言稱它是 Late Night Lo-fi classic。」（Bandcamp 樂迷留言當評價）；146 字。
+  - `Orpheus|VISIONS`：「樂評點名鍵盤與粗厚的貝斯線」→「鍵盤與粗厚的貝斯線撐起主軸」；236 字。
+- 媒體名、榜單名次、「據說／據／官方」全批 0（Nanosphere 寫作層已把 Beatport 改成「登記的速度」）；`qa-batch out`、`qa-check-research`、`fix-spacing` 兩檔皆 0 標記。
+
+## 上線（2026-11-06，主線）（條號 24832）
+- **24832**：上線 29 張：card_catalog 29／29、KV 29 鍵回讀逐字一致（stamp 20261106ml79）、試聽 27 ready（21 張換成最紅那首）／2 unavailable（neat beats、Lindsheaven：Apple 查無；Electronic Visions §1 卡以 Apple 1767306233 指定）、seed +29、prepare／published gate 0 error（warning 皆 UPC 盡力而為與 §1 提示）。封面 CAA 27＋Bandcamp 2（Electronic Visions §1、Professor Creepshow CAA 404），主線縮圖表目視相符。三軸機器基線（經典 3；冷門度合 §0.8.1 下限），頂點 0。寫入前對 origin 全部 `claude/*` 分支與 main 的 seed 去重 0。
