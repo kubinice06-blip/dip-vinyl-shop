@@ -1,47 +1,129 @@
 [
- {"key":"oblique occasions","name":"Oblique Occasions",
-  "slots":{
-   "origin":{"status":"gap","facts":[
-    {"f":"Oblique Occasions 的 Bandcamp 藝人頁標示地點為美國馬里蘭州巴爾的摩，自述只有一句「I keep it oblique」。","src":"https://obliqueoccasions.bandcamp.com/","single":true,"from":"new"}]},
-   "sound":{"status":"none","facts":[]},
-   "legacy":{"status":"none","facts":[]},
-   "era":{"status":"none","facts":[]}},
-  "milestones":[],
-  "conflicts":[],
-  "searches":4,
-  "status":"thin",
-  "pubIssues":[],
-  "failedFetches":1,
-  "notes":"身分：poolAlbums 為空，卡池專輯《punishment》（2023）；Bandcamp 藝人頁列 16 張作品（含與 Macroblank 合作的 elegiac blasphemy），標題多為日文與俄文。《punishment》2023-11-02 由 Aloe City Wrld（Bucharest）發行，目錄號 NU-ACR150，標籤含 barber beats、experimental、vaporwave、downtempo（https://aloecitywrld.bandcamp.com/album/punishment），頁面無簡介。藝人頁 bio 含 placeholder 字樣，疑未完成。MusicBrainz 頁被瀏覽器驗證擋下（failed）。事實庫僅一條 MB 發行日，未收。音樂風格與影響查無可靠來源，留空。"},
- {"key":"macroblank","name":"Macroblank",
-  "slots":{
-   "origin":{"status":"none","facts":[]},
-   "sound":{"status":"gap","facts":[
-    {"f":"《Tales of the Cypher》2022-01-07 由 Hairs aBlazin' 以卡式錄音帶限量 120 卷發行（目錄號 HAB105），共 11 首，標籤含 barber beats、chillwave、downtempo、instrumental、trip-hop、vaporwave；封面與版面由 macroblank 自己負責。","src":"https://hairsablazin.bandcamp.com/album/tales-of-the-cypher","single":true,"from":"new"}]},
-   "legacy":{"status":"none","facts":[]},
-   "era":{"status":"none","facts":[]}},
-  "milestones":[],
-  "conflicts":[],
-  "searches":3,
-  "status":"thin",
-  "pubIssues":[],
-  "failedFetches":0,
-  "notes":"身分：卡池《Tales of the Cypher》（2021 年入卡池、版權標 2022，發行頁 2022-01-07）。macroblank 的 Bandcamp 藝人頁地點標西雅圖，bio 只有 placeholder；Hairs aBlazin' 位於肯塔基州 Liberty，那是廠牌地點，不可當藝人出身。搜尋稱藝人頁有 74 張作品，但開頁時未列出，單源不收。與 Oblique Occasions 有合作作品 elegiac blasphemy（Oblique Occasions 頁面列出，單源）。出身、影響查無可靠來源。"},
- {"key":"kuba","name":"Kuba",
-  "slots":{
-   "origin":{"status":"gap","facts":[
-    {"f":"Kuba 是製作人 Laurence Harvey 的藝名，1980 年生於英國劍橋；詞曲與製作皆由他一人包辦。","src":"https://kuba1.bandcamp.com/album/relative-to-the-sun","single":true,"from":"bank"},
-    {"f":"Youth（Killing Joke 貝斯手、製作過 Pink Floyd、The Verve、Crowded House）聽到他的個人計畫後，製作了他的首張專輯《Inside Out》，2006 年由 Liquid Sound Design 發行，他從此以 Kuba 名義發片。","src":"https://www.mixcloud.com/lozaharvey/","single":true,"from":"new"}]},
-   "sound":{"status":"gap","facts":[
-    {"f":"他混用類比合成器、軟體合成器與多種樂器，做 dub、電子、世界音樂、雷鬼、氛圍與迷幻，《Relative to the Sun》（2022-02-04，Liquid Sound Design）被廠方形容為帶東方氛圍的迷幻 dub。","src":"https://kuba1.bandcamp.com/album/relative-to-the-sun","single":true,"from":"bank"},
-    {"f":"《Relative to the Sun》合作者包括 Youth、Gaudi、Shpongle 的 Michele Adamson，以及 Rizwan 與 Muazzam Khan。","src":"https://kuba1.bandcamp.com/album/relative-to-the-sun","single":true,"from":"bank"}]},
-   "legacy":{"status":"none","facts":[]},
-   "era":{"status":"none","facts":[]}},
-  "milestones":[],
-  "conflicts":[],
-  "searches":4,
-  "status":"thin",
-  "pubIssues":[],
-  "failedFetches":0,
-  "notes":"身分：維基預抓 Kuba (surname) 是姓氏頁，與本人無關，當沒有。事實庫的「Rizwan 與 Muazzam 是努斯拉特．法特赫．阿里．汗的外甥」「Gaudi 為 dub 雷鬼先驅」本次讀到的 Bandcamp 頁面未見，未收。Mixcloud 稱他為 Shpongle、Banco de Gaia 等做過混音，曾收錄於 Youth & Gaudi《Astronaut Alchemists – Remixes》，皆單源自述，不收。Bandcamp 宣傳稱他是同代頂尖 downtempo 音樂人，屬行銷語，不收。legacy 查無獨立來源。"}
+ {
+  "key": "oblique occasions",
+  "name": "Oblique Occasions",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Oblique Occasions 的 Bandcamp 藝人頁標示地點為美國馬里蘭州巴爾的摩，自述只有一句「I keep it oblique」。",
+      "src": "https://obliqueoccasions.bandcamp.com/",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "none",
+    "facts": []
+   },
+   "legacy": {
+    "status": "none",
+    "facts": []
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [],
+  "conflicts": [],
+  "searches": 4,
+  "status": "thin",
+  "pubIssues": [],
+  "failedFetches": 1,
+  "notes": "身分：poolAlbums 為空，卡池專輯《punishment》（2023）；Bandcamp 藝人頁列 16 張作品（含與 Macroblank 合作的 elegiac blasphemy），標題多為日文與俄文。《punishment》2023-11-02 由 Aloe City Wrld（Bucharest）發行，目錄號 NU-ACR150，標籤含 barber beats、experimental、vaporwave、downtempo（https://aloecitywrld.bandcamp.com/album/punishment），頁面無簡介。藝人頁 bio 含 placeholder 字樣，疑未完成。MusicBrainz 頁被瀏覽器驗證擋下（failed）。事實庫僅一條 MB 發行日，未收。音樂風格與影響查無可靠來源，留空。"
+ },
+ {
+  "key": "macroblank",
+  "name": "Macroblank",
+  "slots": {
+   "origin": {
+    "status": "none",
+    "facts": []
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "《Tales of the Cypher》2022-01-07 由 Hairs aBlazin' 以卡式錄音帶限量 120 卷發行（目錄號 HAB105），共 11 首，標籤含 barber beats、chillwave、downtempo、instrumental、trip-hop、vaporwave；封面與版面由 macroblank 自己負責。",
+      "src": "https://hairsablazin.bandcamp.com/album/tales-of-the-cypher",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "none",
+    "facts": []
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [],
+  "conflicts": [],
+  "searches": 3,
+  "status": "thin",
+  "pubIssues": [],
+  "failedFetches": 0,
+  "notes": "身分：卡池《Tales of the Cypher》（2021 年入卡池、版權標 2022，發行頁 2022-01-07）。macroblank 的 Bandcamp 藝人頁地點標西雅圖，bio 只有 placeholder；Hairs aBlazin' 位於肯塔基州 Liberty，那是廠牌地點，不可當藝人出身。搜尋稱藝人頁有 74 張作品，但開頁時未列出，單源不收。與 Oblique Occasions 有合作作品 elegiac blasphemy（Oblique Occasions 頁面列出，單源）。出身、影響查無可靠來源。"
+ },
+ {
+  "key": "kuba",
+  "name": "Kuba",
+  "slots": {
+   "origin": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "Kuba 是製作人 Laurence Harvey 的藝名，1980 年生於英國劍橋；詞曲與製作皆由他一人包辦。",
+      "src": "https://kuba1.bandcamp.com/album/relative-to-the-sun",
+      "single": true,
+      "from": "bank"
+     },
+     {
+      "f": "Youth（Killing Joke 貝斯手、製作過 Pink Floyd、The Verve、Crowded House）聽到他的個人計畫後，製作了他的首張專輯《Inside Out》，2006 年由 Liquid Sound Design 發行，他從此以 Kuba 名義發片。",
+      "src": "https://www.mixcloud.com/lozaharvey/",
+      "single": true,
+      "from": "new"
+     }
+    ]
+   },
+   "sound": {
+    "status": "gap",
+    "facts": [
+     {
+      "f": "他混用類比合成器、軟體合成器與多種樂器，做 dub、電子、世界音樂、雷鬼、氛圍與迷幻，《Relative to the Sun》（2022-02-04，Liquid Sound Design）被廠方形容為帶東方氛圍的迷幻 dub。",
+      "src": "https://kuba1.bandcamp.com/album/relative-to-the-sun",
+      "single": true,
+      "from": "bank"
+     },
+     {
+      "f": "《Relative to the Sun》合作者包括 Youth、Gaudi、Shpongle 的 Michele Adamson，以及 Rizwan 與 Muazzam Khan。",
+      "src": "https://kuba1.bandcamp.com/album/relative-to-the-sun",
+      "single": true,
+      "from": "bank"
+     }
+    ]
+   },
+   "legacy": {
+    "status": "none",
+    "facts": []
+   },
+   "era": {
+    "status": "none",
+    "facts": []
+   }
+  },
+  "milestones": [],
+  "conflicts": [],
+  "searches": 4,
+  "status": "thin",
+  "pubIssues": [],
+  "failedFetches": 0,
+  "notes": "身分：維基預抓 Kuba (surname) 是姓氏頁，與本人無關，當沒有。事實庫的「Rizwan 與 Muazzam 是努斯拉特．法特赫．阿里．汗的外甥」「Gaudi 為 dub 雷鬼先驅」本次讀到的 Bandcamp 頁面未見，未收。Mixcloud 稱他為 Shpongle、Banco de Gaia 等做過混音，曾收錄於 Youth & Gaudi《Astronaut Alchemists – Remixes》，皆單源自述，不收。Bandcamp 宣傳稱他是同代頂尖 downtempo 音樂人，屬行銷語，不收。legacy 查無獨立來源。"
+ }
 ]

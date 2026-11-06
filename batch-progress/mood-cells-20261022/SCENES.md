@@ -156,6 +156,8 @@
 | md36 | 22601 | 頹靡電子：illbient、冷 ambient techno／Berlin 慢盤、慢工業電子／post-industrial ambient、暗 downtempo 新世代（只收電子盤） | ✅ 上線 19／落格 19（2026-11-04；illbient 多 hip-hop／reggae 根、冷 techno 池中已滿；見底不再派） |
 | md37 | 23161 | 頹靡 Bandcamp 線 A（2026-11-05，店主「恍惚跟頹靡可以去 Bandcamp 爬梳」）：Bandcamp Daily「Best Ambient」「Best Experimental」月度專欄與年度榜（2016–2026）裡冷、暗、重的那半——dark ambient、drone、tape loop、isolationist、暗色 field recording 拼貼、冷 modern classical 音塊（暖、明亮、有旋律的留給恍惚線）（條號避開並行的 ml66／ml67＝23321／23401） | ✅ 上線 14／落格 13（2026-11-05；策展兩組 47、主線汰 24（自我同名、貼邊、x 風險、單源）、研究汰 9；Tape Melt 判輕。**Bandcamp 來源產量與坑**：兩專欄約 200 期、提及約 2,500 張，冷暗重的少；小廠卡帶常只有一段 Daily 評介、沒第二來源，故事性不夠就汰；人工身分 6 張、Apple 查無 4 張。產量低，不建議再單獨派） |
 | md38 | 23241 | 頹靡 Bandcamp 線 B：Bandcamp Daily Lists／Scene Report／Label Profile／Album of the Day 裡的頹靡場景——dungeon synth、dark jazz／doom jazz、slowcore／sadcore 冷盤、dark folk／drone folk、暗色 post-rock 無鼓、hauntology 廠牌、暗 downtempo（非嘻哈） | ✅ 上線 5／落格 5（2026-11-05；策展兩組 26、主線汰 12、研究汰 9（有鼓 2、判輕判亮 4、<30 分 1、故事薄 2）；Daily 對這幾個場景幾乎沒有專文，hauntology 廠牌 0、dungeon synth 多明亮、dark jazz 頭牌已在池；**死池，不再派**） |
+| md40 | 23801 | 頹靡 Bandcamp downtempo 候選（2026-11-06，店主「先做最遠的」；`batch-progress/bandcamp-dt-20261105/pick-md40.json` 47 張卡單即策展，不派策展代理） | ✅ 上線 20／落格 16（2026-11-06；主線初篩汰 15（EP／合輯／demo 集 8、去重 1、文案直述判暖判輕 6）、研究汰 12（有拍推進 6、判輕 2、判暖 3、無來源 1）；出格 Just Mustard、Rún 判躁，Halou《Halou》、Pye Corner Audio 判暖） |
+| md41 | 23881 | 頹靡 Bandcamp downtempo 候選（同上，`pick-md41.json` 47 張） | ✅ 上線 17／落格 15（2026-11-06；主線初篩汰 18（EP／remix 4、嘻哈／dub 2、同人錨點判輕判暖 3、有拍推進 6、判暖 2、同人保留兩張 1）、研究汰 11、封面目視汰 1（Cinephile《Ten》為十年回顧精選）；出格 worriedaboutsatan《Glass Infinites》、HEXSYSTEM《Amanita Ocreata》判輕。**粗估離邊界遠的卡單，實際只有約 39% 上線；卡單 moodGuess 只看標籤，研究層汰掉的多半是有鼓、溫暖或明亮**） |
 
 ## 冷冽 mc（躁＋輕＋冷；門檻 x ≥ 3.3、y ≤ +0.2、z ≤ −0.3）
 
