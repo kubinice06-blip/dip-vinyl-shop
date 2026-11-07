@@ -7,6 +7,7 @@
 - **資料**：卡池 22,302 張，KV 有連結 7,304、確定沒連結 4,051、未查過 10,947（首次瀏覽即時查）。補沒連結的：Wikidata（MB release-group→P2205，oEmbed 核名）579（含主線判讀 27；不收 Justice→現場盤、Hank Mobley《Hank》→《Hank Mobley》等 6）；Spotify 搜尋（藝人同名＋專輯名相同或只差版本後綴）85，撤回 3 張錯配（Loretta Lynn→Ed Sullivan 現場、Spandau Ballet《True》→EP、Donald Byrd《Black Byrd》→Live），比對改為 Spotify 名帶 live／EP／single 而卡名沒有者不收。KV 寫 `spotifyFix: fill-20261106:*`，舊值存 `before-*.json`。
 - **配額**：worker 的 Spotify app 115 次就 429（retry-after 約 13 小時，正式站新卡查詢同時被鎖）。店主在雲端環境「修正全通」存了第二組 Spotify 憑證（accounts.spotify.com，代理注入；Node fetch 不會被注入，換 token 走 curl），但首請求即 429、倒數與原 app 相同——待店主確認是否為新 app。
 - **MusicBrainz 重查**（免配額，3,299 張）：有登錄 94，收 80（名稱對上 59＋主線判讀 21，如久石譲《風立ちぬ》→《The Wind Rises Soundtrack》、Ayler《Ghosts》→《Vibrations》）；不收 Black Radio→III、J Dilla→Instrumentals、Janet Jackson《janet.》→同名首張等 14。
+- **11-07 防錯改版**（店主：「搜尋關鍵字寫錯或語言用錯，以前犯過的錯不要再犯」）：`match.mjs` 把 10-29 稽核 92 筆指錯與 Bandana、本批撤回 3 筆逐條寫成規則——藝人完全相同（不收包含）、同名高風險卡加年份檢查、live／EP／Taylor's Version／remix／redux 等另一種作品不收、single 不收、早於原盤不收；語言：兩邊繁轉簡（opencc-js 1.4.2，拚／拼異體收斂）、依卡名語系送 Accept-Language、中英並列拆語段、羅馬字別名；關鍵字：清《》引號、精準查無再換去副標一般查詢。錯案對照表見 `rulings.md`；昨日已寫入 744 條離線複查無新錯。
 - **配額結論**：店主確認一個帳號只能一組 client id，第二組憑證即原 app、配額共用。不另開帳號（等於繞過限流）。改每天解鎖後（約 04:00 UTC）跑 400 次、留六成給正式站，`send_later` 每日自排（`spotify.mjs 400 own`）；剩約 3,300 張、命中率約六成五，預估 7–8 天，約三分之一 Spotify 本來就沒有、維持灰。
 - 主要檔案：`index.html`、`batch-progress/spotify-fill-20261106/`。
 ### 2026-11-06｜dip-vinyl-shop｜品味對決試做版 `/game-lab/`：從序章重做成「讀人」對決（獨立頁，不動正式遊戲）
