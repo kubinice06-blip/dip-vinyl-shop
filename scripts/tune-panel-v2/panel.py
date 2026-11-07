@@ -442,6 +442,21 @@ for key, a0, a1 in FL_DRUMS_CELLS:
 RB_A0, RB_A1 = 156, 214
 lcd(gf, RB_A0, PL_B0, RB_A1, 32)
 R_LCD = gf.rect(RB_A0 + 1, PL_B0 + 1, RB_A1 - 1, 31)
+# 2026-11-07 店主：符合張數不要中文，改成水表那種數字滾輪——五顆數字滾筒（同篩選滾筒的畫法），左右各一個琥珀色指標對準中線
+ODO_N, ODO_W, ODO_GAP, ODO_A0, ODO_B0, ODO_B1 = 5, 9, 1, 160, 6, 28
+ODO = []
+for i in range(ODO_N):
+    a0 = ODO_A0 + i * (ODO_W + ODO_GAP)
+    r = gf.rect(a0, ODO_B0, a0 + ODO_W, ODO_B1)
+    out.paste(make_drum(r[2] - r[0], r[3] - r[1]), r[:2])
+    ODO.append(r)
+ODO_H = ODO[0][3] - ODO[0][1]
+om = round((ODO_B0 + ODO_B1) / 2 - 1.5)
+for a, b0, b1 in ((ODO_A0 - 2.5, om, om + 3), (ODO_A0 - 1.5, om + 1, om + 2)):
+    gf.box(a, b0, a + 1, b1, TICK)
+oa1 = ODO_A0 + ODO_N * (ODO_W + ODO_GAP) - ODO_GAP
+for a, b0, b1 in ((oa1 + 1.5, om, om + 3), (oa1 + 0.5, om + 1, om + 2)):
+    gf.box(a, b0, a + 1, b1, TICK)
 ALL = gf.rect(RB_A0, 35, RB_A1, FW_B1)
 recess(ALL[0], ALL[1], ALL[2], ALL[3])
 key_all = Image.new('RGB', (ALL[2] - ALL[0], ALL[3] - ALL[1]))
@@ -611,8 +626,8 @@ bg = out.copy()                                 # 實作用底圖（無文字、
 bg.save(os.path.join(HERE, 'panel-bg.png'), optimize=True); bg.save('tune/panel-all.png', optimize=True)
 
 # 明暗罩貼圖
-SH_FQ = shade_overlay(FQ_DRUM_H); SH_FL = shade_overlay(FL_DRUM_H)
-SH_FQ.save(os.path.join(SPR, f'drum-shade-{FQ_DRUM_H}.png')); SH_FL.save(os.path.join(SPR, f'drum-shade-{FL_DRUM_H}.png'))
+SH_FQ = shade_overlay(FQ_DRUM_H); SH_FL = shade_overlay(FL_DRUM_H); SH_ODO = shade_overlay(ODO_H)
+SH_FQ.save(os.path.join(SPR, f'drum-shade-{FQ_DRUM_H}.png')); SH_FL.save(os.path.join(SPR, f'drum-shade-{FL_DRUM_H}.png')); SH_ODO.save(os.path.join(SPR, f'drum-shade-{ODO_H}.png'))
 
 # ════════ 以下是 HTML 活件的示意（實作時是 HTML 疊在底圖上）════════════════
 mock = out.convert('RGBA')
@@ -700,14 +715,9 @@ for key, lab in (('genre', '類別 GENRE'), ('grade', '等級 RATING'), ('tier',
     put(mock, text_img(lab, 2, INK), (r[0] + r[2]) / 2, (r[1] + r[3]) / 2 - 2)
     mock.alpha_composite(LED_ON if key in ('genre', 'grade') else LED_OFF, R_LEDS[key][:2])
 # 液晶計數器
-lc = R_LCD
-put_l(mock, text_img('符合', 2, (156, 128, 44)), lc[0] + 3 * P, lc[1] + 3.2 * P)
-put_l(mock, text_img('MATCH', 2, (110, 92, 40)), lc[0] + 3 * P + 72, lc[1] + 3.2 * P)
-num = text_img('2886', 4, AMBER)
-zh = text_img('張', 3, AMBER)
-right_x = lc[2] - 3 * P
-mock.alpha_composite(zh, (round(right_x - zh.width), round(lc[3] - 3 * P - zh.height)))
-mock.alpha_composite(num, (round(right_x - zh.width - 10 - num.width), round(lc[3] - 3 * P - num.height)))
+for i, r in enumerate(ODO):                    # 水表滾輪 02886
+    dgt = '02886'[i]
+    drum_text(r, [(str((int(dgt) + 9) % 10), DIM), (dgt, BEIGE), (str((int(dgt) + 1) % 10), DIM)], 4, 76, SH_ODO)
 # 全部鍵
 mock.paste(key_all, ALL[:2])
 put(mock, text_img('全部', 3, BEIGE, (0, 3, (0, 0, 0, 255))), (ALL[0] + ALL[2]) / 2, (ALL[1] + ALL[3]) / 2 - 18)
@@ -745,7 +755,10 @@ for key, r in FL_DRUMS:
 for key, r in R_PLATES.items():
     reg('flt.plate.' + key, r, False)
     reg('flt.led.' + key, R_LEDS[key], False)
-reg('flt.lcd', R_LCD, False); reg('flt.all 全部', ALL)
+reg('flt.lcd', R_LCD, False)
+for i, r in enumerate(ODO):
+    reg(f'odo.{i}', r, False)
+reg('flt.all 全部', ALL)
 for ax, r in R_WHEEL.items():
     reg('wheel.' + ax, r)
 for name, r, live in sorted(ACTIVE, key=lambda t: t[2]):

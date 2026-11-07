@@ -101,7 +101,7 @@
 
   // ── 畫面 ──────────────────────────────────────────────────────────
   // 面板圖片與輪廓表網址帶版本：正式站圖片快取 4 小時，換圖不換網址的話手機會拿舊圖套新版面（2026-11-06 店主實機：骰子跑位）。換任何 tune/ 圖就把這個數字加一
-  const AV = 69;
+  const AV = 71;
   const CSS = `
 .tune-app{--pix:'DotGothic16','Space Mono',monospace;position:relative;display:grid;grid-template-columns:1fr;grid-template-rows:minmax(200px,1fr) auto;width:100%;max-width:720px;margin:0 auto;height:var(--tvh,100dvh);padding:env(safe-area-inset-top,0px) env(safe-area-inset-right,0px) env(safe-area-inset-bottom,0px) env(safe-area-inset-left,0px);background:#0b0c10;color:#e9e2c8;font-family:var(--pix);font-size:11px;letter-spacing:.04em;overflow:hidden}
 /* 主畫面 App（standalone）：iOS 在狀態列下緣多一條毛玻璃，蓋住讀數與正在播放卡；只有這個模式再往下讓一截，瀏覽器不受影響 */
@@ -265,11 +265,14 @@
 .tune-flt svg.st{display:inline-block;width:.78em;height:.78em;margin:0 .04em;vertical-align:-.04em}
 .tune-flt span .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
 .tune-flt span.sel{color:#ffd34d}.tune-flt span.sel.all{color:#e9e2c8}
-.tune-lcd{left:68.15%;top:39.207%;width:21.558%;height:10.899%;font-family:var(--pix);color:#ffd34d;pointer-events:none}
-.tune-lcd small{position:absolute;left:5%;top:6%;font-size:2.2cqw;color:#8d7a3c;letter-spacing:.06em;white-space:nowrap}
-.tune-lcd b{position:absolute;right:6%;bottom:9%;font-weight:400;font-size:4.4cqw;white-space:nowrap}
-.tune-lcd b em{font-style:normal;font-size:.8em;margin-left:.2em}
-.tune-lcd.zero b{color:#ff7a6b}
+/* 符合張數：水表式五顆數字滾輪（2026-11-07 店主：不要中文，數字切換時滾輪快速轉到下一個數字）；滾筒與指標畫在 panel-all.png 上 */
+.tune-lcd{left:68.15%;top:39.207%;width:21.558%;height:10.899%;pointer-events:none}
+.tune-odo{position:absolute;top:10.395%;height:79.218%;width:16.128%;overflow:hidden}
+.tune-odo:nth-child(1){left:5.483%}.tune-odo:nth-child(2){left:23.226%}.tune-odo:nth-child(3){left:41.29%;width:15.81%}.tune-odo:nth-child(4){left:59.031%}.tune-odo:nth-child(5){left:76.774%}
+.tune-odo::after{content:"";position:absolute;inset:0;background:url(tune/drum-shade-122.png?v=${AV}) 0 0/100% 100% no-repeat;image-rendering:pixelated}
+.tune-odo .strip{will-change:transform}
+.tune-odo span{display:block;height:5.4cqw;line-height:5.4cqw;text-align:center;font-family:var(--pix);font-size:4.6cqw;color:#e9e2c8}
+.tune-lcd.zero span{color:#ff7a6b}
 .tune-all{left:67.803%;top:51.734%;width:22.323%;height:13.659%;background-image:url(tune/key-all.png?v=${AV});color:#8d9478;font-size:3.6cqw;line-height:1.15;text-align:center;padding-top:.6cqw}
 .tune-all small{display:block;font-size:2.2cqw;letter-spacing:.08em}
 .tune-all.on{color:#e9e2c8}
@@ -346,7 +349,7 @@ html.tune-inapp-lock body{padding-top:120px}
     <div class="abs tune-flt" data-k="genre" role="spinbutton" tabindex="0" aria-label="類別篩選"><div class="fdrum"><div class="strip"></div></div></div>
     <div class="abs tune-flt" data-k="grade" role="spinbutton" tabindex="0" aria-label="等級篩選"><div class="fdrum"><div class="strip"></div></div></div>
     <div class="abs tune-flt" data-k="tier" role="spinbutton" tabindex="0" aria-label="分級篩選"><div class="fdrum"><div class="strip"></div></div></div>
-    <div class="abs tune-lcd" id="tuneLcd" aria-live="polite"><small>符合 MATCH</small><b><span id="tuneMatch">----</span><em>張</em></b></div>
+    <div class="abs tune-lcd" id="tuneLcd" role="status" aria-label="符合張數">${'<div class="tune-odo"><div class="strip"></div></div>'.repeat(5)}</div>
     <button class="abs tune-key tune-all" id="tuneAll" type="button" aria-label="篩選全部重設">全部<small>RESET</small></button>
     <div class="abs tune-wheel" data-axis="x"><canvas></canvas></div>
     <div class="abs tune-wheel" data-axis="y"><canvas></canvas></div>
@@ -1403,6 +1406,37 @@ html.tune-inapp-lock body{padding-top:120px}
   // 上下拖：字跟著手指 1:1 走、每過一格喀一聲＋輕震；放手停在最近一格才真的套用（只重算一次）。
   // 點滾筒上半＝上一個、下半＝下一個；滑鼠滾輪、方向鍵也行；選項頭尾相接。全部在面板上操作，不開任何視窗。
   // 字條放三份一樣的選項，位置 P 可以是小數；跨過頭尾時悄悄平移整整一份（畫面完全一樣），轉起來永遠是最短方向
+  // ── 符合張數的水表滾輪：五顆，每顆字條放三份 0–9，位置 P 可以是小數、取 10 的餘數畫在中間那份 ──
+  // 數字變了：每顆從舊位置轉到新位置——張數變多往上捲、變少往下捲；越低位轉越多圈（像真的水表），快速、尾段減速停住
+  let odoSet = () => {};
+  function wireOdo() {
+    const drums = [...el.lcd.querySelectorAll('.tune-odo')].map(d => {
+      const st = d.querySelector('.strip'); let html = ''; for (let k = 0; k < 30; k++) html += `<span>${k % 10}</span>`; st.innerHTML = html;
+      return { d, st, p: 0, raf: 0 };
+    });
+    const draw = o => { const h = o.st.firstElementChild.getBoundingClientRect().height || 1, H = o.d.getBoundingClientRect().height; const q = ((o.p % 10) + 10) % 10;
+      o.st.style.transform = `translateY(${(H - h) / 2 - (q + 10) * h}px)`; };
+    let shown = 0;
+    odoSet = v => {
+      v = Math.max(0, Math.min(99999, v | 0)); const from = shown; shown = v; if (from === v) { drums.forEach(draw); return; }
+      const dir = v > from ? 1 : -1;
+      drums.forEach((o, i) => {
+        const k = 10 ** (drums.length - 1 - i), D = Math.floor(v / k) - Math.floor(from / k);
+        cancelAnimationFrame(o.raf); const p0 = o.p, cur = ((Math.round(p0) % 10) + 10) % 10, to = Math.floor(v / k) % 10;
+        if (!D && cur === to) { o.p = Math.round(p0); draw(o); return; }
+        let step = dir > 0 ? (to - cur + 10) % 10 : -((cur - to + 10) % 10);
+        if (!step) step = 10 * dir;                                   // 轉了整圈回到同一個數字
+        const extra = Math.min(2, Math.floor(Math.log10(Math.abs(D) || 1)));   // 低位多轉幾圈
+        const p1 = Math.round(p0) + step + 10 * extra * dir, dur = Math.min(700, 260 + Math.abs(p1 - p0) * 16), t0 = performance.now();
+        const tick = now => { const u = Math.min(1, (now - t0) / dur), e = 1 - Math.pow(1 - u, 3); o.p = p0 + (p1 - p0) * e; draw(o);
+          if (u < 1) o.raf = requestAnimationFrame(tick); else o.p = ((p1 % 10) + 10) % 10; };
+        o.raf = requestAnimationFrame(tick);
+      });
+    };
+    drums.forEach(draw);
+    new ResizeObserver(() => drums.forEach(draw)).observe(el.lcd);
+  }
+
   // 星號用像素圖（DotGothic16 沒有 ★，備用字型的星又小又糊）
   const STAR = '<svg class="st" viewBox="0 0 7 7" shape-rendering="crispEdges" aria-hidden="true"><path fill="currentColor" d="M3 0h1v2H3zM0 2h7v1H0zM1 3h5v1H1zM2 4h3v1H2zM1 5h2v1H1zM4 5h2v1H4zM0 6h2v1H0zM5 6h2v1H5z"/></svg><span class="sr">星</span>';
   function wireFilters(host) {
@@ -1438,10 +1472,11 @@ html.tune-inapp-lock body{padding-top:120px}
       drums[k] = { show };
       show(FILT[k], false);
     });
+    wireOdo();
     syncFilterUI = (anim = true) => {
       for (const k in drums) drums[k].show(FILT[k], anim);
       host.querySelectorAll('.tune-fled').forEach(l => l.classList.toggle('on', FILT[l.dataset.k] > 0));
-      el.match.textContent = N ? passN.toLocaleString('en-US') : '----'; el.lcd.classList.toggle('zero', !!N && passN === 0);
+      odoSet(N ? passN : 0); el.lcd.setAttribute('aria-label', `符合 ${N ? passN : 0} 張`); el.lcd.classList.toggle('zero', !!N && passN === 0);
       el.rand.disabled = !N || passN === 0; el.all.classList.toggle('on', !!filterActive());
     };
     el.rand.onclick = () => { if (!N) return; sfxClick(); randomPick(); };
@@ -1487,7 +1522,7 @@ html.tune-inapp-lock body{padding-top:120px}
     host.innerHTML = html();
     el = { stage: host.querySelector('#tuneStage'), gl: host.querySelector('#tuneGl'), readout: host.querySelector('#tuneReadout'), spk: host.querySelector('#tuneSpk'), back: host.querySelector('#tuneBack'), now: host.querySelector('#tuneNow'), msg: host.querySelector('#tuneMsg'),
       dx: host.querySelector('#tuneDx'), dy: host.querySelector('#tuneDy'), dz: host.querySelector('#tuneDz'), dcell: host.querySelector('#tuneDcell'), cellStrip: host.querySelector('#tuneCellStrip'),
-      rand: host.querySelector('#tuneRand'), all: host.querySelector('#tuneAll'), lcd: host.querySelector('#tuneLcd'), match: host.querySelector('#tuneMatch'), mode: host.querySelector('#tuneMode'), lever: host.querySelector('#tuneLever'), hint: host.querySelector('#tuneHint'), search: host.querySelector('#tuneSearch'), searchGo: host.querySelector('#tuneSearchGo'), sugg: host.querySelector('#tuneSugg'), swTop: host.querySelector('#tuneSwTop'), swBot: host.querySelector('#tuneSwBot'), ledTop: host.querySelector('#tuneLedTop'), ledBot: host.querySelector('#tuneLedBot'), draw: host.querySelector('#tuneDraw'), console: host.querySelector('#tuneConsole'), holo: host.querySelector('#tuneHolo'), fx: host.querySelector('#tuneHoloFx'), holoBtn: host.querySelector('#tuneHoloBtn') };
+      rand: host.querySelector('#tuneRand'), all: host.querySelector('#tuneAll'), lcd: host.querySelector('#tuneLcd'), mode: host.querySelector('#tuneMode'), lever: host.querySelector('#tuneLever'), hint: host.querySelector('#tuneHint'), search: host.querySelector('#tuneSearch'), searchGo: host.querySelector('#tuneSearchGo'), sugg: host.querySelector('#tuneSugg'), swTop: host.querySelector('#tuneSwTop'), swBot: host.querySelector('#tuneSwBot'), ledTop: host.querySelector('#tuneLedTop'), ledBot: host.querySelector('#tuneLedBot'), draw: host.querySelector('#tuneDraw'), console: host.querySelector('#tuneConsole'), holo: host.querySelector('#tuneHolo'), fx: host.querySelector('#tuneHoloFx'), holoBtn: host.querySelector('#tuneHoloBtn') };
     trackViewport(host);
     wireHoloDrag(); wireBoatClick();
     el.back.onclick = () => cfg.onBack?.();
