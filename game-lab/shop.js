@@ -241,8 +241,8 @@
     var R = rows.map(function (r) { return r.split(''); }), sl = R[8][12], sk = R[9][12];
     if (sl === '.' || sk === '.') return rows;
     function put(c, r, ch) { if (R[r]) R[r][c] = ch; }
-    if (/^(wind|throw|up|shield|flag)$/.test(kind)) { put(12, 9, '.'); put(12, 10, '.'); }
-    if (kind === 'wind') { put(12, 7, sl); put(13, 6, sl); put(13, 5, sk); put(13, 4, sk); }
+    if (/^(wind|show|throw|up|shield|flag)$/.test(kind)) { put(12, 9, '.'); put(12, 10, '.'); }
+    if (kind === 'wind' || kind === 'show') { put(12, 7, sl); put(13, 6, sl); put(13, 5, sk); put(13, 4, sk); }
     else if (kind === 'throw') { put(13, 8, sl); put(14, 8, sl); put(15, 8, sk); }
     else if (kind === 'up') { put(12, 7, sl); put(13, 6, sl); put(13, 5, sl); put(13, 4, sk); put(13, 3, sk); }
     else if (kind === 'shield') { put(13, 8, sl); put(13, 9, sk); }
@@ -251,7 +251,7 @@
     return R.map(function (r) { return r.join(''); });
   }
   // 手的位置（小人格，未 flip）：拿封套、唱片、大金盤、旗都畫在這裡
-  var HANDAT = { wind: [13, 3], throw: [15, 8], up: [13, 2], shield: [13, 9], flag: [14, 5], shrug: [13, 6], none: [13, 10] };
+  var HANDAT = { wind: [13, 3], show: [14, 5], throw: [15, 8], up: [13, 2], shield: [13, 9], flag: [14, 5], shrug: [13, 6], none: [13, 10] };
   // 道具庫可以掛的掛勾（shop-props.js 填）：holdDraw(P, actor, hx, hy, K, S)＝手上拿的東西
   var HOOKS = {};
   function hook(name, fn) { HOOKS[name] = fn; }
@@ -570,6 +570,24 @@
       }
       vctx.imageSmoothingEnabled = false; vctx.webkitImageSmoothingEnabled = false;
       vctx.drawImage(world, vx, vy, vw, vh, 0, 0, bw, bh);
+      // 高解析頂層（木箱裡朝外的那張、櫃檯上正在放的那張）：世界格已經畫了像素版；前面沒有人擋著才用原圖蓋上去（有人擋就留像素版，前後關係永遠對）
+      if (S.hires) {
+        var V2 = { ctx: vctx, k: k, vx: vx, vy: vy, X: function (x) { return (x - vx) * k; }, Y: function (y) { return (y - vy) * k; }, blocked: blockedBy };
+        (L.props || []).forEach(function (o) { var sp = PROPS[o.type]; if (sp && sp.hiresTop && !o.hidden) { vctx.save(); try { sp.hiresTop(V2, o, S); } catch (e) { console.error(e); } vctx.restore(); } });
+        vctx.imageSmoothingEnabled = false;
+      }
+    }
+    // 這個矩形（場景座標）前面有沒有東西：腳底比 base 低（站得比較前面）的小人、飛行中的唱片
+    function blockedBy(r, base) {
+      for (var id in actors) {
+        var a = actors[id]; if (a.hidden || a.outside || !a.rows) continue;
+        if (base != null && a.y + (a.zb || 0) <= base) continue;
+        var x0 = Math.round(a.x) - 9 * K, y0 = Math.round(a.y) - 16 * K;
+        if (x0 < r[0] + r[2] && x0 + 18 * K > r[0] && y0 < r[1] + r[3] && Math.round(a.y) + 2 > r[1]) return true;
+      }
+      var fx = state.fx;
+      if (fx && fx.discs) for (var i = 0; i < fx.discs.length; i++) { var d = fx.discs[i]; if (d.x + 8 > r[0] && d.x - 8 < r[0] + r[2] && d.y + 8 > r[1] && d.y - 8 < r[1] + r[3]) return true; }
+      return false;
     }
     // 選取外框、教學聚光、今晚亮金框、提示星
     function drawFocus() {

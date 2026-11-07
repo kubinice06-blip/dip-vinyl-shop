@@ -276,7 +276,7 @@
     function restHolds() {
       ['f', 'p'].forEach(function (id) {
         var h = TT.held[id];
-        shop.hold(id, h || null); shop.arm(id, h ? 'shield' : null); shop.nudge(id, 0);
+        shop.hold(id, h || null); shop.arm(id, h ? 'show' : null); shop.nudge(id, 0);
       });
     }
     function sleeveOf(h) { return h ? (h === 'ace' ? 'ace' : h) : null; }
@@ -330,7 +330,7 @@
         if (t < TTK.relP) { shop.arm('p', 'wind'); shop.hold('p', { disc: lab.p, kind: dk.p }); }
         else if (t < TTK.relP + 120) { shop.arm('p', 'throw'); shop.hold('p', null); }
         else { shop.arm('p', null); shop.hold('p', null); }
-        if (t < TTK.windE) { shop.arm('f', hs.f ? 'shield' : null); shop.hold('f', sleeveOf(hs.f)); }
+        if (t < TTK.windE) { shop.arm('f', hs.f ? 'show' : null); shop.hold('f', sleeveOf(hs.f)); }
         else if (t < TTK.relE) { shop.arm('f', 'wind'); shop.hold('f', { disc: lab.e, kind: dk.e }); }
         else if (t < TTK.relE + 120) { shop.arm('f', 'throw'); shop.hold('f', null); }
         else { shop.arm('f', null); shop.hold('f', null); }
@@ -413,7 +413,7 @@
       // 手上拿著：{ sleeve: cardId } | 'ace' | null（選牌時就看得到；他拿他亮出的那張、你點了哪張就拿哪張）
       hold: function (side, what) {
         var id = sid(side); TT.held[id] = what || null;
-        setFlips(); shop.hold(id, what || null); shop.arm(id, what ? 'shield' : null);
+        setFlips(); shop.hold(id, what || null); shop.arm(id, what ? 'show' : null);
         return stage;
       },
       // 唱盤台：{ rec: { attr, card, kind }, state: 'land'|'armMid'|'spin'|null }；null＝清掉
@@ -444,6 +444,8 @@
       flatDisc: function (at, attr, o) { o = o || {}; ttAdd({ step: function (t, fx) { fx.discs.push({ x: at[0], y: at[1], attr: attr, flat: true, void: !!o.void, kind: o.kind }); return t < (o.ms || 2000); } }); return stage; },
       pause: function (on) { TT.paused = !!on; return stage; },
       speed: function (k) { if (k > 0) TT.speedK = k; return stage; },
+      // 除錯／截圖：把正在演的時間軸停在 t（ms）。t==null＝放開
+      seek: function (t) { if (t == null) { TT.paused = false; return stage; } TT.paused = true; TT.items.forEach(function (x) { x.t = t; }); ttTick(shop.now()); shop.render(); return stage; },
       clashState: function () { return { items: TT.items.length, decks: JSON.parse(JSON.stringify(TT.decks)), held: JSON.parse(JSON.stringify(TT.held)), paused: TT.paused, speed: TT.speedK, fast: TT.fast }; }
     };
     function ttReset() { TT.items = []; TT.decks = {}; TT.held = {}; TT.paused = false; if (TT.off) { TT.off(); TT.off = null; } if (TT.fast && shop) shop.fast(false); TT.fast = false; if (shop) { shop.state.fx = null; shop.state.decks = {}; ['f', 'p', 'o'].forEach(function (id) { shop.arm(id, null); shop.hold(id, null); shop.nudge(id, 0); }); } }

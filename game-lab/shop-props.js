@@ -721,6 +721,15 @@
     c.fillStyle = 'rgba(255,255,255,0.16)'; c.fillRect(X, Y, Z, Math.max(1, Math.round(k * 0.6)));
     c.fillStyle = 'rgba(0,0,0,0.18)'; c.fillRect(X, Y + Z - Math.max(1, Math.round(k * 0.6)), Z, Math.max(1, Math.round(k * 0.6)));
   }
+  // 頂層高解析封面（只畫看得到的上半截 clipH；沒載到就不蓋，留世界格的像素版）
+  function hiCoverTop(V, S, id, x, y, size, clipH, dim) {
+    var img = S.coverImg(id); if (!img) return;
+    var c = V.ctx, k = V.k, iw = img.naturalWidth, ih = img.naturalHeight, sq = Math.min(iw, ih), ch = clipH == null ? size : Math.min(size, clipH);
+    c.imageSmoothingEnabled = true; c.imageSmoothingQuality = 'high';
+    c.drawImage(img, (iw - sq) / 2, (ih - sq) / 2, sq, sq * ch / size, V.X(x), V.Y(y), size * k, ch * k);
+    if (dim) { c.fillStyle = dim; c.fillRect(V.X(x), V.Y(y), size * k, ch * k); }
+    c.fillStyle = 'rgba(255,255,255,0.18)'; c.fillRect(V.X(x), V.Y(y), size * k, Math.max(1, Math.round(k * 0.6)));
+  }
   // 木紋：幾條長短不一的細線（同一個 seed 每格畫面一樣，不會閃）
   function grain(P, x, y, w, h, c, seed, n) {
     var r = seeded(seed);
@@ -921,6 +930,7 @@
       box(P, x + c - 5, y - 8, 9, 10, '#1c120b', null);
       P.sprite(['..kk', '..kk', '..k.', '..k.', 'kkk.', 'kkk.'], x + c - 3, y - 7 + (on ? 0 : 1), { k: on ? C.gold : '#b8860b' }, {});
     },
+    hiresTop: function (V, o, S) { var c = o.cell || 26; if (!V.blocked([o.x, o.y, c, c], o.base)) hiCoverTop(V, S, o.record, o.x, o.y, c); },
     hots: function (o, S) { var c = o.cell || 26, cd = S.card(o.record); return [{ id: 'now', rect: [o.x, o.y, c, c], label: '正在放：' + (cd ? cd.album : ''), action: 'wall-record:' + o.record }]; }
   });
   // 貼在櫃檯正面的活動傳單（「公告」）
@@ -1032,6 +1042,18 @@
       // 桌上的木箱
       (o.crates || []).forEach(function (cr, i) { woodCrate(P, S, x + cr.x, fe - 2, cr, 'cr' + i); });
     },
+    hiresTop: function (V, o, S) {
+      var ht = o.top || 22, fe = o.base - ht;
+      (o.crates || []).forEach(function (cr) {
+        var r = crateCovers(o.x + cr.x, fe - 2, cr);
+        var any = false;
+        r.forEach(function (q) { if (!V.blocked([q.x, q.y, q.cs, q.ch], o.base)) { hiCoverTop(V, S, q.id, q.x, q.y, q.cs, q.ch, q.dim); any = true; } });
+        if (any && cr.tab && r.length) {   // 分類小卡插在唱片之間（蓋在高解析封面上面）
+          var w = cr.w || 56, cy = r[r.length - 1].y, c = V.ctx, k = V.k, tx = V.X(o.x + cr.x + w - 12), ty = V.Y(cy - 4);
+          c.fillStyle = C.ppLo; c.fillRect(tx, ty, 7 * k, 6 * k); c.fillStyle = C.pp; c.fillRect(tx + k, ty + k, 5 * k, 4 * k);
+        }
+      });
+    },
     hots: function (o, S) {
       var ht = o.top || 22, fe = o.base - ht;
       return (o.crates || []).filter(function (cr) { return cr.id; }).map(function (cr) {
@@ -1039,6 +1061,14 @@
       });
     }
   });
+  // 木箱裡朝外的封面位置（世界格畫法與高解析頂層共用）：後面那張先、前面那張後
+  function crateCovers(x, by, cr) {
+    var w = cr.w || 56, f = cr.face || 16, fy = by - f, recs = cr.records || [], cs = cr.cover || 30, out = [];
+    var cx = x + Math.round((w - cs) / 2) + (cr.coverDx || 0), cy = fy - Math.round(cs * 0.6);
+    if (recs[1]) { var bx = x + w - cs - 3, by2 = cy - 4; cx = x + 3; out.push({ id: recs[1], x: bx, y: by2, cs: cs, ch: fy - by2, dim: 'rgba(20,10,4,0.28)' }); }
+    if (recs[0]) out.push({ id: recs[0], x: cx, y: cy, cs: cs, ch: Math.round(cs * 0.6) });
+    return out;
+  }
   // 木箱：前板 face 高、上緣看得到 4 px 的箱口；最前面那張唱片封面朝外（真封面，露出上 60%），後面幾張露出上緣
   function woodCrate(P, S, x, by, cr, seed) {
     var w = cr.w || 56, f = cr.face || 16, fy = by - f, ry = fy - 4, recs = cr.records || [];
@@ -1283,7 +1313,7 @@
     box: function () { return [0, 0, 1, 1]; },
     draw: function (P, o, S) {
       var fx = S.state.fx; if (!fx || S.mask) return;
-      (fx.shards || []).forEach(function (q) { P.rect(q[0], q[1], q[2] || 3, 2, C.vin); P.px(q[0], q[1], C.vinHi); if (q[3]) P.px(q[0] + 1, q[1] + 1, ATTR[q[3]] || C.rugLb); });
+      (fx.shards || []).forEach(function (q) { var w = (q[2] || 3) + 2; P.rect(q[0] - 1, q[1] - 1, w + 2, 5, '#9a9aa6'); P.rect(q[0], q[1], w, 3, C.vin); P.hl(q[0], q[1], w - 1, '#5a5a66'); if (q[3]) P.rect(q[0] + 1, q[1] + 1, 2, 2, ATTR[q[3]] || C.rugLb); });
       (fx.discs || []).filter(function (d) { return d.flat; }).forEach(function (d) { flatDisc(P, d.x, d.y, d.attr, d); });
       (fx.trails || []).forEach(function (t) { P.rect(Math.round(t[0]) - 1, Math.round(t[1]) - 1, 2, 2, t[2] || 'rgba(255,241,194,0.7)'); });
       (fx.discs || []).filter(function (d) { return !d.flat; }).forEach(function (d) { disc(P, Math.round(d.x), Math.round(d.y), d.attr, d.r || 5, d.fr || 0, d); });
@@ -1330,9 +1360,8 @@
   // 平躺在地毯上的唱片（輸家落地、平手）
   function flatDisc(P, x, y, attr, o) {
     var vd = o && o.void;
-    P.ellipse(x, y + 1, 7, 2, 'rgba(10,6,4,0.35)');
-    P.ellipse(x, y, 7, 2, C.olS); P.ellipse(x, y, 6, 1, vd ? '#55555f' : C.vin);
-    P.rect(x - 1, y, 3, 1, vd ? '#9a9aa4' : (o && o.kind === 'ace') ? C.gold : (ATTR[attr] || C.rugLb)); P.hl(x - 4, y - 1, 3, C.vinHi);
+    P.ellipse(x, y, 10, 4, '#9a9aa6'); P.ellipse(x, y, 9, 3, vd ? '#55555f' : C.vin); P.ring(x, y, 6, 2, '#34343c');
+    P.ellipse(x, y, 3, 1, vd ? '#9a9aa4' : (o && o.kind === 'ace') ? C.gold : (ATTR[attr] || C.rugLb)); P.px(x, y, C.ol); P.hl(x - 6, y - 2, 4, '#6a6a76');
   }
   function spark(P, x, y, size, c) {
     if (size === 'ring') {   // 一圈白點「鏘」
@@ -1363,13 +1392,13 @@
   DS.hook('holdDraw', function (P, a, hx, hy, K, S) {
     var h = a.hold; if (!h) return;
     if (h === 'ace' || h.ace) {
-      var cs = 16; P.rect(hx - 9, hy - 10, cs + 2, cs + 2, C.gold); P.rect(hx - 8, hy - 9, cs, cs, '#1c120b');
-      if (h.card) cover(P, S, h.card, hx - 7, hy - 8, cs - 2);
-      else { P.ellipse(hx, hy - 1, 6, 6, C.vin); P.ellipse(hx, hy - 1, 2, 2, C.gold); P.px(hx, hy - 1, C.ol); }
-      if (Math.floor(S.t * 4) % 2 === 0) { P.px(hx + 9, hy - 11, '#fff1c2'); P.px(hx - 10, hy + 7, '#fff1c2'); }
+      P.rect(hx - 12, hy - 12, 24, 24, C.goldLo); P.rect(hx - 11, hy - 11, 22, 22, C.gold); P.rect(hx - 10, hy - 10, 20, 20, '#1c120b');
+      if (h.card) cover(P, S, h.card, hx - 9, hy - 9, 18);
+      else { P.ellipse(hx, hy, 7, 7, '#c9c9d2'); P.ellipse(hx, hy, 6, 6, C.vin); P.ellipse(hx, hy, 2, 2, C.gold); P.px(hx, hy, C.ol); }
+      if (Math.floor(S.t * 4) % 2 === 0) { P.rect(hx + 11, hy - 14, 2, 2, '#fff1c2'); P.rect(hx - 14, hy + 10, 2, 2, '#fff1c2'); }
       return;
     }
-    if (h.sleeve) { P.rect(hx - 9, hy - 10, 18, 18, '#2a1608'); cover(P, S, h.sleeve, hx - 8, hy - 9, 16); P.hl(hx - 8, hy - 9, 16, 'rgba(255,255,255,0.2)'); return; }
+    if (h.sleeve) { P.rect(hx - 11, hy - 11, 22, 22, '#2a1608'); cover(P, S, h.sleeve, hx - 10, hy - 10, 20); P.hl(hx - 10, hy - 10, 20, 'rgba(255,255,255,0.22)'); return; }
     if (h.disc) disc(P, hx, hy, h.disc, 5, Math.floor(S.t * 16) % 4, { kind: h.kind });
   });
   window.DipPropsB = { C: C, ATTR: ATTR, disc: disc, flatDisc: flatDisc, spark: spark, note: note, flag: flag, cover: cover, hiCover: hiCover };
