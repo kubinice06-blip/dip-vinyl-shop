@@ -1222,7 +1222,8 @@
       if (W.DipLabDuel && W.DipLabDuel.on) {
         try { UI.offs.push(W.DipLabDuel.on('resolved', function () { commitSeen(); })); } catch (_) {}
       }
-      if (p.tutorial && opts.hooks.tut) startLesson(r.aceTier);
+      reqLabelFix(wrap);
+      if (p.tutorial && opts.hooks.tut) startLesson(r.aceTier, p.res.duel);
       if (UI.auto) later(autoDuel, 400);
     };
     if (!enter) {
@@ -1233,17 +1234,28 @@
       mountBoard();
       return;
     }
-    // 進場（§3.7＋主線裁定 #6）：「！」＋閃白＋黑條（店主拍板的 encounterFx）跟鏡頭推近同時跑，整段約 1.5 s
+    // 進場（§3.7＋主線裁定 #6）：「！」＋閃白＋黑條（店主拍板的 encounterFx）先起頭，鏡頭推近與盤面淡入在黑條之下／之後同時跑，整段約 1.4 s
+    //   fx.encounter2：0「！」→ 200 閃白 → 320 onPush（這裡：走位＋鏡頭推近 760 ms＋掛盤面，盤面自己 600 ms 從下方淡入）＋黑條掃進 → 1000 黑條退開 → 1420 收完
     var appH = app().clientHeight, finalH = Math.max(200, appH - 32 - stripCssH());
     wrap.classList.add('entering'); wrap.style.height = finalH + 'px';
     var f = FX(), foeAnc = anchorOf('f');
     UI.going = true; UI.entering = true; UI.hintQ = [];
-    var enc = (f && f.encounter2) ? f.encounter2(foeAnc, {}) : Promise.resolve();
     stg('interact', 'duel');
-    var walkIn = stgP('duelIn', { foe: foeSpr, ms: Math.round(600 / speed()) });
     UI.camName = 'strip';
+    // 盤面在「！」那 300 ms 就先掛好（藏著）：掛盤面的 DOM／封面成本不會卡到鏡頭推近的那幾格
+    wrap.style.visibility = 'hidden';
     mountBoard();
-    Promise.all([walkIn, enc]).then(function () {
+    var walkIn = null;
+    var push = function () {
+      if (walkIn || UI.screen !== 'duel' || !wrap.isConnected) return;
+      wrap.style.visibility = '';
+      if (wrap.animate && !rm()) wrap.animate([{ opacity: 0, transform: 'translateY(24px)' }, { opacity: 1, transform: 'none' }], { duration: Math.round(600 / speed()), easing: 'cubic-bezier(.2,.7,.3,1)' });
+      walkIn = stgP('duelIn', { foe: foeSpr, ms: Math.round(760 / speed()) });
+    };
+    var enc;
+    try { enc = (f && f.encounter2) ? f.encounter2(foeAnc, { onPush: push }) : null; } catch (e) { console.error(e); enc = null; }
+    if (!enc) { push(); enc = Promise.resolve(); }
+    enc.then(function () { push(); return walkIn; }).then(function () {
       UI.going = false; UI.entering = false;
       var q = UI.hintQ || []; UI.hintQ = [];
       if (UI.screen !== 'duel' || !wrap.isConnected) return;
@@ -1254,10 +1266,23 @@
       }
     });
   };
-  function startLesson(tier) {
+  // 點播小標：duel.js 目前寫的是原始鍵（「點播 g:electronic +2」）→ 換成 C.requests 的字（「電子」）。已在 requests.md 請 D 改；D 改好之後這段什麼都不做。
+  function reqLabelFix(root) {
+    if (!root || !W.MutationObserver || !C.requests) return;
+    var fix = function () {
+      var b = root.querySelector('.dl-p .req b'); if (!b) return;
+      var k = b.textContent, lab = C.requests[k];
+      if (lab && lab !== k) b.textContent = lab;
+    };
+    var mo = new MutationObserver(fix);
+    mo.observe(root, { childList: true, subtree: true, characterData: true });
+    fix();
+    UI.offs.push(function () { mo.disconnect(); });
+  }
+  function startLesson(tier, duel) {
     var T = W.DipLabTut;
     try {
-      var pr = T.startDuelLesson({ tier: tier, duelApi: W.DipLabDuel, stage: UI.stage, duel: save.run && save.run.duel, content: C, replay: !!UI.tutReplay });
+      var pr = T.startDuelLesson({ tier: tier, duelApi: W.DipLabDuel, stage: UI.stage, duel: duel, content: C, replay: !!UI.tutReplay });
       if (pr && pr.then) pr.then(function (how) { UI.tutResult = how; if (how === 'done' && !UI.tutReplay) markLearned(); }, function (e) { console.error(e); });
     } catch (e) { console.error(e); }
   }

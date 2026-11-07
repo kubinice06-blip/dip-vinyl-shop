@@ -410,8 +410,9 @@ async function runSize(browser, [W, H]) {
               const d = window.__lab.rawDuel(); if (!d || d.over) return null;
               const api = window.DipLabDuel.api(); const t = performance.now();
               await api.play(window.DipLabEngine.policies.ev(d));
-              const dbg = window.DipLabDuel.debug();
-              return { ms: dbg && dbg.ms != null ? dbg.ms : performance.now() - t, over: !!(window.__lab.rawDuel() && window.__lab.rawDuel().over) };
+              const dbg = window.DipLabDuel.debug(), d2 = window.__lab.rawDuel();
+              // 打倒那一手：duel.js 卸載、finishDuel 把 run.duel 清掉 → 也算 over
+              return { ms: dbg && dbg.ms != null ? dbg.ms : performance.now() - t, over: !dbg || !d2 || d2 !== d || !!d2.over };
             });
             if (!r) break; if (r.over) break; ms.push(Math.round(r.ms));   // 打倒那一手多了大章＋退場，不算在一手的時間裡
             await duelReady(p2, 10000);
@@ -420,7 +421,7 @@ async function runSize(browser, [W, H]) {
         const errs9 = page._errors.concat(p2._errors);
         await c2.close();
         const okAnim = ms.length >= 3 && ms.every(x => x <= 2300);
-        record(9, size, end && errs9.length === 0 && okAnim, `night to end ${end} (${info.over}); console errors ${errs9.length}; anim ms ${JSON.stringify(ms)}`);
+        record(9, size, end && errs9.length === 0 && okAnim, `night to end ${end} (${info.over}); console errors ${errs9.length}${errs9.length ? ' ' + JSON.stringify(errs9.slice(0, 2)) : ''}; anim ms ${JSON.stringify(ms)}`);
       }
       if (want(13) && end) {
         await page.waitForSelector('[data-a=again]', { timeout: 5000 });
@@ -553,7 +554,7 @@ async function runSize(browser, [W, H]) {
         const ok = await prologueToDuel(page, { tier }, 'tut');
         const r = await walkTutorial(page, W, H, tier === 'hall' && want(20));
         if (want(20) && tier === 'hall') record(20, size, r.wrong && r.wrong.blocked && /先點我指的這裡/.test(r.wrong.text || ''), `wrong card at 1-4: hand ${r.wrong && r.wrong.hand0}→${r.wrong && r.wrong.hand1}, bubble 「${r.wrong && r.wrong.text}」`);
-        if (want(19)) record(19, size, ok && r.over === 'win' && r.pHpSame && r.done && page._errors.length === 0, `${tier}: steps ${r.steps}, result ${r.result}, over ${r.over}, 你 ${r.pHp0}→${r.pHp1}, tutorialDone ${r.done}, errors ${page._errors.length}${r.note ? ', ' + r.note : ''}`);
+        if (want(19)) record(19, size, ok && r.over === 'win' && r.pHpSame && r.done && page._errors.length === 0, `${tier}: steps ${r.steps}, result ${r.result}, over ${r.over}, 你 ${r.pHp0}→${r.pHp1}, tutorialDone ${r.done}, errors ${page._errors.length}${page._errors.length ? ' ' + JSON.stringify(page._errors.slice(0, 2)) : ''}${r.note ? ', ' + r.note : ''}`);
       } catch (e) { record(19, size, false, tier + ' crashed: ' + e.message.split('\n')[0]); }
       await ctx.close();
     }
@@ -580,6 +581,13 @@ async function runSize(browser, [W, H]) {
         record(25, size, r.d === 'none' && r.cls, `.dipprev-badge display ${r.d}; body.in-battle ${r.cls}`);
       }
       if (want(26)) {
+        // 先讓序章自己的「今晚這張」放起來、停在猜歌面板（劇本不會再自己換歌），再測切背景／回前景
+        for (let i = 0; i < 150; i++) {
+          if (await page.$('.lb-sheet.guess [data-pick]')) break;
+          if (await page.$('.lb-dq .nx.on')) await page.click('.lb-dq').catch(() => {});
+          await sleep(200);
+        }
+        await sleep(600);
         const started = await page.evaluate(async () => { const f = window.DipLabFx; const c = window.DipLabContent.cards['fishmans-long-season']; return f.music.play(c, { fadeMs: 50 }); });
         await sleep(400);
         // 畫面上的「播放中」：⏸ 選單第一行（用 DipLabUI.openSettings 打開，不產生觸碰，免得觸碰本身就把音樂叫回來）

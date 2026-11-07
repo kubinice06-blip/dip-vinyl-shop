@@ -630,10 +630,11 @@
       encounterFx(resolve, Object.assign({ target: targetEl || null }, opts || {}));
     });
   }
-  // v2 進對決（SPEC-v2 §3.7＋主線裁定 #6）：保留店主拍板的「！＋黑條」，但整段 ≤2 s，而且鏡頭推近在黑條「之下／之前」同時跑：
-  //   0 ms 他頭上「！」→ 260 ms 閃白一次 → 480 ms 黑條掃進來（steps(6)）→ 980 ms 蓋滿：onCovered() → 1100 ms 黑條往兩邊退開 → 1500 ms 收掉。
-  //   呼叫端在 0 ms 就開始推鏡頭（600 ms），黑條掃進來時畫面已經是兩個對決者的橫條，退開時盤面已經在底下就位 → 讀起來是同一個動作。
-  //   減少動態：不閃、不掃，只有「！」與 150 ms 淡入淡出。回傳 Promise（全部收完才 resolve）。
+  // v2 進對決（SPEC-v2 §3.7＋主線裁定 #6）：保留店主拍板的「！＋閃白＋黑條」，整段 ≤2 s，鏡頭推近在黑條「之下／之後」同時跑：
+  //   0 ms 他頭上「！」＋門鈴 → 200 ms 閃白一次 → 320 ms onPush()：呼叫端開始推鏡頭（約 760 ms）＋盤面從下方淡入，同時黑條一條條掃進來（steps(6)）
+  //   → 約 960 ms 蓋滿：onCovered() →「！」收掉 → 1000 ms 黑條往兩邊退開（鏡頭還在收最後一段）→ 約 1420 ms 收掉、resolve。
+  //   掃進來的時候縫隙裡看得到店內畫面往上收，退開時已經是兩個對決者的橫條＋盤面 → 讀起來是同一個動作。
+  //   減少動態：不閃、不掃，「！」300 ms 後 onPush（鏡頭由舞台改 150 ms 淡入淡出），600 ms resolve。
   const ENC2_CSS = `
   .enc2{position:fixed;inset:0;z-index:2147482000;pointer-events:none;}
   .enc2 .f{position:absolute;inset:0;background:#fff;opacity:0;}
@@ -657,7 +658,7 @@
     injectCss();
     if (!document.getElementById('dlfx-css2')) { const st = document.createElement('style'); st.id = 'dlfx-css2'; st.textContent = ENC2_CSS; (document.head || document.documentElement).appendChild(st); }
     const t = ms => new Promise(r => setTimeout(r, ms));
-    const covered = () => { try { if (opts.onCovered) opts.onCovered(); } catch (e) { console.error(e); } };
+    const call = fn => { try { if (fn) fn(); } catch (e) { console.error(e); } };
     let ex = null;
     if (targetEl && opts.mark !== false) {
       ex = document.createElement('div'); ex.className = 'rpg-excl'; ex.textContent = '！';
@@ -665,22 +666,20 @@
       targetEl.appendChild(ex);
     }
     sfx('bell');
-    const ov = document.createElement('div');
     if (reducedMotion()) {
-      ov.className = 'enc2 soft'; document.body.appendChild(ov);
       return (async () => {
-        await t(300); ov.classList.add('on'); await t(160); covered(); await t(60);
-        ov.classList.remove('on'); await t(180); ov.remove(); if (ex) ex.remove();
+        await t(300); call(opts.onPush); await t(300); if (ex) ex.remove(); call(opts.onCovered);
       })();
     }
+    const ov = document.createElement('div');
     ov.className = 'enc2';
     ov.innerHTML = '<div class="f"></div><div class="b">' + '<i></i>'.repeat(8) + '</div>';
     document.body.appendChild(ov);
     return (async () => {
-      await t(260); ov.classList.add('flash');
-      await t(220); ov.classList.remove('flash'); ov.classList.add('in'); if (ex) ex.remove();
-      await t(500); covered();
-      await t(120); ov.classList.remove('in'); ov.classList.add('out');
+      await t(200); ov.classList.add('flash');
+      await t(120); call(opts.onPush); ov.classList.add('in');
+      await t(640); if (ex) ex.remove(); call(opts.onCovered);
+      await t(40); ov.classList.remove('flash', 'in'); ov.classList.add('out');
       await t(420); ov.remove();
     })();
   }
