@@ -386,7 +386,7 @@
     UI.offs.forEach(function (f) { try { f(); } catch (_) {} }); UI.offs = [];
     UI.decor.forEach(function (d) { if (d && d.remove) d.remove(); }); UI.decor = [];
     qsa('.lb-sheet.float', app()).forEach(function (s) { s.remove(); });
-    UI.going = false; UI.lastAct = null;
+    UI.going = false; UI.entering = false; UI.lastAct = null;
     closeModal();
     var ci = CI(); if (ci && ci.isOpen()) ci.close();
     stg('highlight', []); stg('clearStamps');
@@ -956,7 +956,7 @@
         (overRun ? '<button type="button" class="lb-btn wide" data-a="end">看今晚結算</button>' : '');
     }
     h += '</div>' + (hint ? '<p class="lb-foot">' + esc(hint) + '</p>' : '') + (infoLine ? '<p class="lb-foot sm">' + esc(infoLine) + '</p>' : '');
-    panel.innerHTML = h;
+    var box = el('div', 'lb-screen', h); panel.appendChild(box);   // #panel 常駐：監聽器掛在這一層，換畫面就跟著丟掉
     // 舞台：門關、雨、你在門外（剪影）、老闆在櫃檯
     cam('full', 'title', UI.firstScreen ? 0 : 450);
     stg('interact', 'title');
@@ -970,16 +970,16 @@
     var placePlate = function () { if (!plate.isConnected) return; var sh0 = UI.stageHost.getBoundingClientRect(), ar = app().getBoundingClientRect(); plate.style.top = Math.round(sh0.bottom - ar.top - 26) + 'px'; };
     placePlate(); if (W.ResizeObserver) { var ro = new ResizeObserver(placePlate); ro.observe(UI.stageHost); UI.offs.push(function () { ro.disconnect(); }); }
     var armed = null, armedAt = 0;
-    panel.addEventListener('click', function (e) {
+    box.addEventListener('click', function (e) {
       var b = e.target.closest && e.target.closest('[data-a]'); if (!b) return;
       var act = b.getAttribute('data-a');
       if (act === 'push' || act === 'quiet') {
         if (hasRun && armed === act && Date.now() - armedAt < 300) return;
         if (hasRun && armed !== act) {
           armed = act; armedAt = Date.now();
-          qsa('[data-a=push],[data-a=quiet]', panel).forEach(function (x) { x.classList.toggle('armed', x === b); });
+          qsa('[data-a=push],[data-a=quiet]', box).forEach(function (x) { x.classList.toggle('armed', x === b); });
           b.textContent = act === 'push' ? '再按一次：重新推門' : '再按一次：安靜地重新推門';
-          var w = qs('.lb-warn', panel); if (w) w.hidden = false;
+          var w = qs('.lb-warn', box); if (w) w.hidden = false;
           sfx('tick');
           return;
         }
@@ -1150,6 +1150,7 @@
   // 對決的提示（§6.5 夜晚遇到才教）：DipLabTut.firstTime；save.seen 在玩家照著做完那一手才寫（B15）
   function duelHint(id, targets) {
     if (!id || save.seen[id] || UI.tutReplay) return;
+    if (UI.entering) { UI.hintQ = (UI.hintQ || []).concat([[id, targets]]); return; }   // 進場的黑條還在跑：等收完再出提示
     var T = W.DipLabTut;
     if (T && typeof T.firstTime === 'function') {
       // tutorial.js 自己記 save.seen（照著做完那一手才寫，B15）
@@ -1236,15 +1237,17 @@
     var appH = app().clientHeight, finalH = Math.max(200, appH - 32 - stripCssH());
     wrap.classList.add('entering'); wrap.style.height = finalH + 'px';
     var f = FX(), foeAnc = anchorOf('f');
-    UI.going = true;
+    UI.going = true; UI.entering = true; UI.hintQ = [];
     var enc = (f && f.encounter2) ? f.encounter2(foeAnc, {}) : Promise.resolve();
     stg('interact', 'duel');
     var walkIn = stgP('duelIn', { foe: foeSpr, ms: Math.round(600 / speed()) });
     UI.camName = 'strip';
     mountBoard();
     Promise.all([walkIn, enc]).then(function () {
-      UI.going = false;
+      UI.going = false; UI.entering = false;
+      var q = UI.hintQ || []; UI.hintQ = [];
       if (UI.screen !== 'duel' || !wrap.isConnected) return;
+      q.forEach(function (h) { duelHint(h[0], h[1]); });
       wrap.classList.remove('entering'); wrap.style.height = '';
       if (node.type === 'boss' && f && f.bossIntro) {
         try { f.bossIntro({ spriteHtml: sprHTML('boss', 72), title: en.name, sub: (C.lines.boss && C.lines.boss.stampSub) || '' }); } catch (e) { console.error(e); }
@@ -1728,7 +1731,7 @@
     UI.lastSpot = 'crateP';
     stg('allow', ['crate-*', 'rack:*', 'now']);
     var L = (C.pools && C.pools.crateLabels) || { jazz: '爵士區', tw: '台灣區', noise: '噪音區' };
-    stg('highlight', ['jazz', 'tw', 'noise'].map(function (k) { return { ids: ['crate-' + k], label: L[k] }; }));
+    stg('highlight', [{ ids: ['crate-jazz', 'crate-tw', 'crate-noise'], label: NODE_NAME.crate }]);
     var s = sheet('<div class="hd"><h3>挖箱：挑一箱</h3><span class="sub">點店裡的箱子也可以</span></div><div class="lb-crates">' +
       ['jazz', 'tw', 'noise'].map(function (k) { return '<button type="button" class="lb-btn big key" data-k="' + k + '">' + esc(L[k]) + '</button>'; }).join('') + '</div>' +
       '<p class="sub">翻出三張，帶走一張。</p>', 'crate');
@@ -1970,9 +1973,9 @@
     if (save.unlocks.secondNightTeaser) h += '<div class="lb-teaser"><div class="sil">' + pix(labSpr().e7, 40) + '</div><div><b>' + esc(C.secondNight.line) + '</b><div class="sub">' + esc(C.secondNight.label) + '</div></div></div>';
     h += '<div class="lb-endmore"><button type="button" class="lb-btn key" data-a="shelf">唱片櫃</button><button type="button" class="lb-btn key" data-a="taipei">' + esc(line('taipeiLink') || '出門看看（台北地圖・預告）') + '</button></div>';
     h += '</div></div><div class="foot lb-endbtns"><button type="button" class="lb-btn pri big wide key" data-a="again">再來一夜</button></div>';
-    panel.innerHTML = h;
+    var box = el('div', 'lb-screen end', h); panel.appendChild(box);
     sfx(clear ? 'win' : 'lose');
-    panel.addEventListener('click', function (e) {
+    box.addEventListener('click', function (e) {
       var b = e.target.closest && e.target.closest('[data-a]'); if (!b) return;
       var act = b.getAttribute('data-a');
       if (act === 'again') {

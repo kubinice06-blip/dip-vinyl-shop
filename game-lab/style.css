@@ -483,3 +483,5 @@ small{font-size:inherit;}
 .lb-endmore{display:flex;gap:8px;margin-top:14px;}
 .lb-endmore .lb-btn{flex:1;font-size:12px;padding:6px 8px;}
 .lb-modal .pane.lb-pause{padding-bottom:calc(16px + env(safe-area-inset-bottom,0px));}
+/* 每個畫面自己的一層（#panel 常駐，監聽器掛在這層才不會累積） */
+.lb-screen{display:flex;flex-direction:column;flex:1 1 auto;min-height:0;}

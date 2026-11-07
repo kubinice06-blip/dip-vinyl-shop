@@ -637,7 +637,8 @@
   const ENC2_CSS = `
   .enc2{position:fixed;inset:0;z-index:2147482000;pointer-events:none;}
   .enc2 .f{position:absolute;inset:0;background:#fff;opacity:0;}
-  .enc2.flash .f{animation:encFlash .22s steps(1,end) 1;}
+  .enc2.flash .f{animation:enc2Flash .18s ease-out 1;}
+  @keyframes enc2Flash{0%{opacity:.85;}100%{opacity:0;}}
   .enc2 .b{position:absolute;inset:0;display:flex;flex-direction:column;}
   .enc2 .b i{flex:1;background:#000;transform:translateX(-101%);}
   .enc2 .b i:nth-child(even){transform:translateX(101%);}

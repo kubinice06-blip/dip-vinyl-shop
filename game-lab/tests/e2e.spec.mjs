@@ -405,7 +405,7 @@ async function runSize(browser, [W, H]) {
         await openAndPush(p2, Q('&fast=0'), 'quiet');
         await prologueToDuel(p2, {});
         if (await duelReady(p2, 60000)) {
-          for (let i = 0; i < 5; i++) {
+          for (let i = 0; i < 6; i++) {
             const r = await p2.evaluate(async () => {
               const d = window.__lab.rawDuel(); if (!d || d.over) return null;
               const api = window.DipLabDuel.api(); const t = performance.now();
@@ -413,7 +413,7 @@ async function runSize(browser, [W, H]) {
               const dbg = window.DipLabDuel.debug();
               return { ms: dbg && dbg.ms != null ? dbg.ms : performance.now() - t, over: !!(window.__lab.rawDuel() && window.__lab.rawDuel().over) };
             });
-            if (!r) break; ms.push(Math.round(r.ms)); if (r.over) break;
+            if (!r) break; if (r.over) break; ms.push(Math.round(r.ms));   // 打倒那一手多了大章＋退場，不算在一手的時間裡
             await duelReady(p2, 10000);
           }
         }
@@ -606,19 +606,21 @@ async function walkTutorial(page, W, H, tryWrong) {
   out.pHp0 = await page.evaluate(() => window.__lab.duel() ? window.__lab.duel().p.hp : null);
   const t0 = Date.now(); let last = null; out.minHp = out.pHp0;
   while (Date.now() - t0 < 200000) {
-    const st = await page.evaluate(() => ({ s: window.__lab.screen(), over: (window.__lab.rawDuel() || {}).over || null, hp: window.__lab.duel() ? window.__lab.duel().p.hp : null, d: window.DipLabTut && window.DipLabTut.debug ? window.DipLabTut.debug() : null }));
+    const st = await page.evaluate(() => ({ s: window.__lab.screen(), over: (window.__lab.rawDuel() || {}).over || null, hp: window.__lab.duel() ? window.__lab.duel().p.hp : null, d: window.DipLabTut && window.DipLabTut.debug ? window.DipLabTut.debug() : null,
+      sel: window.DipLabDuel && window.DipLabDuel.debug && window.DipLabDuel.debug() ? String(window.DipLabDuel.debug().sel) + window.DipLabDuel.debug().phase : '' }));
     if (st.hp != null && out.minHp != null) out.minHp = Math.min(out.minHp, st.hp);
     if (st.over) { out.over = st.over; break; }
     if (st.s !== 'duel') break;
     const d = st.d;
-    if (!d || !d.active || !d.shown || !d.text || !['say', 'do', 'soft'].includes(d.mode)) { await sleep(100); continue; }
-    const key = d.shown + '|' + d.mode + '|' + d.text;
+    if (!d || !d.active || !d.shown || !d.text || !['say', 'do', 'soft', 'modal'].includes(d.mode)) { await sleep(100); continue; }
+    const key = d.shown + '|' + d.mode + '|' + d.text + '|' + st.sel;   // 同一步可能要點兩下（2-3：先選盤、再選冷門）
     if (key === last) { await sleep(100); continue; }
     await sleep(380);
     const d2 = await page.evaluate(() => window.DipLabTut.debug());
     if (d2.shown !== d.shown) continue;
     last = key; out.steps++;
     if (d.mode === 'say') { await page.mouse.click(W / 2, H - 10); continue; }
+    if (d.mode === 'modal') { const cb = await page.$('#ciClose'); if (cb) await cb.click(); continue; }   // 1-9：唱片資訊開著，點「關閉」
     if (tryWrong && !out.wrong && d.shown === '1-4') {
       const hand0 = await page.evaluate(() => window.__lab.duel().hand);
       const pt = await page.evaluate(() => { const e = window.DipLabDuel.el('hand-1'); const b = e.getBoundingClientRect(); return [b.left + b.width / 2, b.top + b.height / 2]; });
