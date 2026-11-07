@@ -1,6 +1,9 @@
-/* game-lab/duel.css — 品味對決 v2 盤面（Agent D；SPEC-v2 §3.9）。顏色一律用 style.css :root 的 token（括號裡是保險值）。
-   全部規則都收在 .dl 底下，不撞外殼的 class。WebKit：不用 backface-visibility、不用 100vh、長按目標 -webkit-touch-callout:none。 */
+/* game-lab/duel.css — 品味對決 v3 盤面（Agent D；SPEC-v3 §4，樣式照 v3/final/mock/mock-v3.html）。
+   顏色一律用 style.css :root 的 token（括號裡是保險值）。全部規則收在 .dl 底下，不撞外殼的 class。
+   WebKit：不用 backface-visibility、不用 100vh、長按目標 -webkit-touch-callout:none；flex gap 用 margin 代替（iOS 14.0–14.4）。
+   尺寸分級（duel.js 量盤面可用高度後加 class）：.roomy ≥600、預設 500–599、.compact 450–499、.short <450；還放不下再加 .tighter。 */
 .dl{--dl-zh:var(--zh,'Noto Sans TC','PingFang TC','Heiti TC',sans-serif);--dl-mono:'Space Mono',var(--dl-zh);
+  --ecv:56px;--scv:78px;--hcv:66px;--pill:32px;--thr-h:46px;--tri-w:132px;--tri-h:118px;--tri-rw:110px;--tri-rh:98px;
   position:relative;flex:1 1 auto;min-height:0;height:100%;display:flex;flex-direction:column;overflow:hidden;
   font-family:var(--dl-zh);color:var(--ink,#111);background:var(--bg,#fff);
   -webkit-user-select:none;user-select:none;-webkit-touch-callout:none;-webkit-tap-highlight-color:transparent;touch-action:manipulation}
@@ -11,270 +14,212 @@
 .dl button:disabled{cursor:default}
 .dl img{-webkit-touch-callout:none;-webkit-user-drag:none;user-select:none;-webkit-user-select:none}
 .dl .num{font-family:'Space Mono',monospace}
-.dl .c{color:var(--c,#1f5fae)}.dl .o{color:var(--o,#6a3fa0)}.dl .h{color:var(--h,#c11628)}.dl .q{color:#999}
+.dl .c{color:var(--c,#1f5fae)}.dl .o{color:var(--o,#6a3fa0)}.dl .h{color:var(--h,#c11628)}
 .dl .g{color:var(--win,#2e7d52)}.dl .r{color:var(--red,#c11628)}.dl .z{color:var(--gray,#888)}
+.dl .cv{display:block;object-fit:cover;background:#eee;border:1px solid var(--ink,#111)}
+.dl .cv.noimg{display:grid;place-items:center;overflow:hidden;background:repeating-linear-gradient(45deg,#f2f2f2 0 6px,#e6e6e6 6px 12px);font-size:10px;line-height:1.2;text-align:center;color:#666;padding:3px;word-break:break-all}
 
-/* 名牌列＋聲望條（兩邊同一套） */
-.dl .nmrow{display:flex;align-items:baseline;gap:8px;height:20px;min-width:0}
-.dl .nmrow>b{font-size:14px;letter-spacing:.06em;white-space:nowrap}
-.dl .nmrow .bl{flex:1;min-width:0;font-size:10px;color:var(--gray,#888);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.dl .nmrow .bl.req b{color:var(--gold,#b8860b)}
-.dl .nmrow .qk{font-size:10px;font-weight:700;color:#fff;background:var(--red,#c11628);padding:0 4px;line-height:14px;white-space:nowrap}
-.dl .nmrow .hpn{font:700 12px var(--dl-mono);white-space:nowrap}
-.dl .nmrow .hpn span{font-family:var(--dl-zh);font-weight:400;color:var(--gray,#888);font-size:10px;margin-right:4px}
-.dl .nmrow .hpn b{font-weight:700}
-.dl .hp{position:relative;height:8px;background:var(--hp-bg,#eee);margin:3px 0 0}
+/* 名字列＋聲望條（兩邊同一套） */
+.dl .nmrow{display:flex;align-items:baseline;height:20px;min-width:0}
+.dl .nmrow>b{font-size:15px;letter-spacing:.06em;white-space:nowrap;margin-right:8px}
+.dl .nmrow .sub{font-size:10px;color:var(--gray,#888);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
+.dl .nmrow .sp{flex:1}
+.dl .nmrow .hpn{font:700 13px var(--dl-mono);white-space:nowrap;flex:none}
+.dl .nmrow .hpn span{font:400 10px var(--dl-zh);color:var(--gray,#888);margin-right:4px}
+.dl .hp{position:relative;height:8px;background:var(--hp-bg,#eee);margin-top:3px}
 .dl .hp i{position:absolute;left:0;top:0;bottom:0;width:100%;transition:width .5s cubic-bezier(.4,0,.2,1)}
 .dl .hp i.fill{background:var(--ink,#111)}
 .dl .hp i.lost{background:var(--red,#c11628);opacity:.35}
 .dl .hp .notch{position:absolute;top:-3px;bottom:-3px;width:2px;margin-left:-1px;background:var(--gold,#b8860b)}
 
-/* ===================== 他的一塊 ===================== */
-.dl .dl-e{flex:none;padding:5px 12px 6px;border-bottom:1px solid var(--line,#ddd)}
-.dl .rec{display:flex;gap:10px;margin-top:7px;align-items:stretch;min-width:0;height:52px}
-.dl .cv{display:block;object-fit:cover;background:#eee;border:1px solid var(--ink,#111)}
-.dl .cv.noimg{display:grid;place-items:center;overflow:hidden;background:repeating-linear-gradient(45deg,#f2f2f2 0 6px,#e6e6e6 6px 12px);font-size:10px;line-height:1.2;text-align:center;color:#666;padding:3px;word-break:break-all}
-.dl .rec .cvb{flex:none;display:block;width:52px;height:52px;-webkit-touch-callout:none}
-.dl .rec .cv{width:52px;height:52px;flex:none}
-.dl .rec .nextph{border:1px dashed #bbb;background:#fff;display:grid;place-items:center;color:#bbb;font-size:14px}
-.dl .rec .tx{min-width:0;flex:1;display:flex;flex-direction:column;justify-content:space-between}
-.dl .rec .l1{font-size:12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;line-height:16px;cursor:pointer}
+/* ===================== 他的一塊（上；底線淺灰） ===================== */
+.dl .dl-e{flex:none;padding:6px 12px 8px;border-bottom:1px solid var(--line,#ddd)}
+.dl .habit{display:flex;align-items:center;margin-top:7px;height:26px;border:1px solid var(--ink,#111);background:#fff;min-width:0}
+.dl .habit .lb{align-self:stretch;flex:none;display:grid;place-items:center;background:var(--ink,#111);color:#fff;font-size:11px;font-weight:700;letter-spacing:.12em;padding:0 7px;margin-right:7px;white-space:nowrap}
+.dl .habit.alt .lb{background:var(--red,#c11628)}
+.dl .habit .tx{font-size:13px;font-weight:700;letter-spacing:.02em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0;padding-right:6px}
+.dl .rec{display:flex;margin-top:8px;align-items:flex-start;min-width:0}
+.dl .rec .cvb{flex:none;display:block;width:var(--ecv);height:var(--ecv);margin-right:10px;-webkit-touch-callout:none}
+.dl .rec .cv{width:var(--ecv);height:var(--ecv);flex:none}
+.dl .rec .nextph{border:1px dashed #bbb;background:#fff;display:grid;place-items:center;color:#bbb;font-size:14px;margin-right:10px}
+.dl .rec .tx{flex:1;min-width:0}
+.dl .rec .l1{font-size:12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;line-height:16px;height:16px}
+.dl .rec .l1[data-card]{cursor:pointer}
 .dl .rec .l1 small{font-size:10px;color:var(--gray,#888);margin-right:4px}
-.dl .rec .l2{display:flex;align-items:center;gap:8px;line-height:16px;min-height:16px}
-.dl .stars{font:700 12px/16px var(--dl-mono);letter-spacing:.02em;white-space:nowrap}
-.dl .stars b{font-weight:700;margin-right:5px}
-.dl .stars b:last-child{margin-right:0}
-.dl .stars b i{font-style:normal;font-family:var(--dl-zh)}
-.dl .stars b small{font-size:9px;margin-left:1px;color:var(--gold,#b8860b)}
-.dl .shout{font-size:10px;font-weight:700;border:1px solid var(--ink,#111);padding:0 4px;line-height:14px;white-space:nowrap}
-.dl .will{position:relative;display:flex;align-items:center;gap:7px;line-height:16px;min-height:16px;font-size:12px;font-weight:700;white-space:nowrap;min-width:0;max-width:100%}
-.dl .will .lb{font-size:10px;color:var(--gray,#888);font-weight:400}
-.dl .bar6{display:flex;flex:none}
-.dl .bar6 i{display:block;width:9px;height:10px;transform-origin:50% 100%}
-.dl .bar6 i+i{margin-left:2px}   /* B-inset-ios14：iOS 14.0–14.4 沒有 flex gap，間距用 margin */
-.dl .bar6 i.c{background:var(--c,#1f5fae)}.dl .bar6 i.o{background:var(--o,#6a3fa0)}.dl .bar6 i.h{background:var(--h,#c11628)}.dl .bar6 i.q{background:#bbb}
-.dl .bar6 i.hit{outline:2px solid var(--ink,#111);outline-offset:1px}
-.dl .will .pc{font-family:var(--dl-mono);overflow:hidden;text-overflow:ellipsis}
-.dl .will .pc span{font-family:var(--dl-mono)}
-.dl .will .pc .q{color:#777}
-.dl .will .more{font-size:10px;color:var(--gray,#888);font-weight:400;margin-left:-2px}
-.dl .celltag{position:absolute;bottom:100%;margin-bottom:1px;transform:translate(-50%,0);font-size:10px;font-weight:700;color:#fff;background:var(--ink,#111);padding:0 4px;line-height:14px;white-space:nowrap;pointer-events:none;z-index:3}
-.dl .killbar{display:block;width:100%;background:var(--red,#c11628);color:#fff;font-size:12px;font-weight:700;padding:0 6px;line-height:18px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;letter-spacing:.04em}
-.dl .dl-e .qirow{height:16px;margin-top:3px}
-.dl .dl-e .qirow .tip{margin-left:auto;font-size:10px;color:var(--gray,#888);font-weight:400;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
-.dl .dl-e .qirow .tip b{color:var(--gold,#b8860b)}
+.dl .estars{display:flex;margin-top:4px}
+.dl .es{width:58px;flex:0 1 58px;min-width:0;text-align:center}
+.dl .es+.es{margin-left:6px}
+.dl .es .k{display:block;height:24px;border:1px solid #ccc;font:700 14px/22px var(--dl-mono);white-space:nowrap}
+.dl .es .k i{font:700 12px var(--dl-zh);font-style:normal;margin-right:2px}
+.dl .es .k.c{border-color:var(--c,#1f5fae)}.dl .es .k.o{border-color:var(--o,#6a3fa0)}.dl .es .k.h{border-color:var(--h,#c11628)}
+.dl .es.q .k{color:#ccc;border-color:#e6e6e6}
+.dl .es .ans{display:block;height:15px;margin-top:2px;font:700 11px/15px var(--dl-mono);white-space:nowrap}
+.dl .es .ans.g{color:var(--win,#2e7d52)}.dl .es .ans.r{color:var(--red,#c11628)}.dl .es .ans.z{color:var(--gray,#888)}
+.dl .pile{margin-left:8px;flex:none;text-align:right;align-self:flex-end;padding-bottom:18px}
+.dl .pile .bars{display:flex;justify-content:flex-end}
+.dl .pile .bars i{display:block;width:4px;height:16px;background:#444}
+.dl .pile .bars i+i{margin-left:2px}
+.dl .pile .bars i.x{background:#e4e4e4}
+.dl .pile small{display:block;font-size:10px;color:var(--gray,#888);margin-top:2px;white-space:nowrap}
 
-/* ===================== 牌桌（O6：不設 overflow:hidden；錯位用 top） ===================== */
-/* 高螢幕多出來的高度給牌桌（兩格垂直置中），手牌與屬性鈕永遠貼著底部（拇指好按） */
-.dl .dl-t{flex:1 0 127px;position:relative;z-index:2;height:127px;max-height:300px}
-.dl .slot{position:absolute;width:84px;height:84px;-webkit-touch-callout:none}
-.dl .slot.e{left:40px;top:calc(50% - 57.5px)}
-.dl .slot.p{right:40px;top:calc(50% - 41.5px)}
-.dl .slot .cv{width:84px;height:84px}
+/* ===================== 牌桌（中間）：上一手兩格＋三角＋浮框＋上一手一行 ===================== */
+.dl .dl-t{flex:1 1 158px;min-height:118px;max-height:300px;position:relative;z-index:2}
+.dl .slot{position:absolute;width:var(--scv);-webkit-touch-callout:none}
+.dl .slot.e{left:16px;top:calc(50% - 69px)}
+.dl .slot.p{right:16px;top:calc(50% - 49px)}
+.dl .slot .cvw{position:relative;display:block;width:var(--scv);height:var(--scv)}
+.dl .slot .cv{width:var(--scv);height:var(--scv)}
 .dl .slot[data-card]{cursor:pointer}
-.dl .slot.empty{border:1px dashed #bbb;display:grid;place-items:center;font-size:11px;color:var(--gray,#888)}
+.dl .slot.empty{height:var(--scv);border:1px dashed #d4d4d4;display:grid;place-items:center}
+.dl .slot.empty .ph{font-size:11px;color:#bbb}
 .dl .slot .badge{position:absolute;right:-1px;top:-1px;font-size:11px;font-weight:700;color:#fff;background:var(--ink,#111);padding:1px 5px;line-height:15px;z-index:1}
 .dl .slot .badge.l{background:var(--red,#c11628)}
 .dl .slot .badge.d{background:var(--gray,#888)}
-.dl .slot .who{position:absolute;top:88px;white-space:nowrap;font-size:12px;font-weight:700;line-height:15px}
-.dl .slot.e .who{left:0}
-.dl .slot.p .who{right:0}
-.dl .slot.dim .cv{opacity:.45;-webkit-filter:grayscale(.5);filter:grayscale(.5);transition:opacity .3s,filter .3s}
+.dl .slot .who{margin-top:4px;white-space:nowrap;font-size:12px;font-weight:700;line-height:15px}
+.dl .slot.p .who{text-align:right}
+.dl .slot.dim .cv{opacity:.42;-webkit-filter:grayscale(.5);filter:grayscale(.5);transition:opacity .3s,filter .3s}
 .dl .slot.dim .who{color:var(--gray,#888)}
-.dl .slot.dim .who .c,.dl .slot.dim .who .o,.dl .slot.dim .who .h,.dl .slot.dim .who .r{opacity:.6}
-.dl .slot .ultbox{background:var(--red,#c11628);color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;font-weight:700;font-size:12px;line-height:1.3}
-.dl .slot .ultbox b{font-size:22px;line-height:1.1}
-.dl .slot .ultbox small{font-size:11px;font-weight:700;opacity:.9}
-.dl .slot .void{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%) rotate(-8deg);font-size:13px;font-weight:700;color:#fff;background:rgba(80,80,80,.85);padding:1px 8px;letter-spacing:.2em;pointer-events:none}
-.dl .stk{position:absolute;left:50%;top:calc(50% - 33.5px);transform:translateX(-50%);text-align:center;line-height:1;pointer-events:none}
-.dl .stk small{display:block;font-size:9px;color:var(--gray,#888);margin-bottom:3px;letter-spacing:.1em}
-.dl .stk b{font:700 22px 'Space Mono',monospace}
-.dl .tri{position:absolute;left:50%;top:calc(50% - 55.5px);width:110px;height:100px;transform:translateX(-50%);pointer-events:none}
-.dl .callout{position:absolute;left:50%;top:calc(50% - 33.5px);transform:translate(-50%,0);background:#fff;border:1px solid var(--ink,#111);box-shadow:0 6px 22px rgba(0,0,0,.22);padding:6px 10px 7px;text-align:center;white-space:nowrap;z-index:4;min-width:146px;pointer-events:none;display:none}
+.dl .slot.dim .who>span{opacity:.65}
+.dl .slot.dim .badge{opacity:.7}
+.dl .tri{position:absolute;left:50%;top:calc(50% - 73px);width:var(--tri-w);height:var(--tri-h);transform:translateX(-50%);pointer-events:none;transition:top .2s,width .2s,height .2s}
+.dl .tri svg{display:block;width:100%;height:100%;overflow:visible;font-family:var(--dl-zh)}
+.dl .dl-t.res .tri{top:calc(50% - 79px);width:var(--tri-rw);height:var(--tri-rh)}
+.dl .callout{position:absolute;left:50%;top:calc(50% + 22px);transform:translate(-50%,0);background:rgba(255,255,255,.97);border:1px solid var(--ink,#111);box-shadow:0 6px 22px rgba(0,0,0,.2);padding:4px 10px 5px;text-align:center;white-space:nowrap;z-index:4;min-width:178px;pointer-events:none;display:none}
 .dl .callout.on{display:block}
-.dl .callout .st{display:inline-block;font-size:10px;font-weight:700;color:#fff;background:var(--ink,#111);padding:0 5px;line-height:15px;letter-spacing:.1em;margin-bottom:3px}
-.dl .callout .st.gold{background:var(--gold,#b8860b)}
-.dl .callout .l1{font-size:13px;font-weight:700;letter-spacing:.04em}
-.dl .callout .l2{font:700 22px var(--dl-mono);margin-top:1px;line-height:1.1}
-.dl .callout .l3{font-size:10px;color:var(--gray,#888);margin-top:3px}
-/* O1：屬性效果（他出經典 回 1）寫在大字下面；多了幾行就把浮框往上提，不蓋到結果一行 */
-.dl .callout .fx{margin-top:3px;border-top:1px solid var(--line,#ddd);padding-top:3px}
-.dl .callout .fx span{display:block;font-size:11px;font-weight:700;color:#444;line-height:14px}
-.dl .callout.fx1{top:calc(50% - 44.5px)}
-.dl .callout.fx2{top:calc(50% - 58.5px)}
-.dl .kost{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%) rotate(-6deg);z-index:6;display:none;pointer-events:none;font:700 26px/1 var(--dl-zh);letter-spacing:.18em;padding:8px 14px 7px;border:3px solid currentColor;background:rgba(255,255,255,.94);white-space:nowrap}
-.dl .kost.on{display:block}
-.dl .kost small{display:block;font:700 18px/1.2 var(--dl-mono);letter-spacing:.04em;margin-top:4px;color:var(--win,#2e7d52);text-align:center}
-.dl .kost.gold{color:var(--gold,#b8860b)}.dl .kost.red{color:var(--red,#c11628)}.dl .kost.ink{color:var(--ink,#111)}
+.dl .callout .st{display:inline-block;font-size:11px;font-weight:900;color:#fff;background:var(--gold,#b8860b);padding:0 5px;line-height:16px;letter-spacing:.1em;margin-right:6px;vertical-align:1px}
+.dl .callout .l1{font-size:13px;font-weight:700;letter-spacing:.04em;line-height:18px}
+.dl .callout .l2{font:700 22px var(--dl-mono);line-height:1.1}
+.dl .callout .l2.g{color:var(--win,#2e7d52)}.dl .callout .l2.r{color:var(--red,#c11628)}.dl .callout .l2.z{color:var(--gray,#888)}
+.dl .callout .l3{font-size:10px;font-weight:700;color:var(--gold,#b8860b);margin-top:1px;line-height:13px}
+.dl .lastline{position:absolute;left:4px;right:4px;bottom:6px;text-align:center;font-size:11px;line-height:15px;color:var(--gray,#888);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;pointer-events:none}
+.dl .lastline .lb{margin-right:7px}
+.dl .lastline b{color:#555}
+.dl .lastline b .g,.dl .lastline b .r{opacity:.85}
+.dl .lastline .stp{display:inline-block;font-size:10px;font-weight:700;color:#fff;background:#b9a46a;padding:0 4px;line-height:14px;margin-left:5px;vertical-align:1px}
+.dl .lastline .nt{margin-left:6px;color:#9c8240;font-size:10px}
+.dl .lastline.first{color:#666}
 
-/* 結果一行（點一下＝算式） */
-.dl .dl-res{flex:none;height:24px;padding:0 12px;display:flex;align-items:center;gap:7px;font-size:12px;font-weight:700;white-space:nowrap;overflow:hidden;width:100%;text-align:left}
-.dl .dl-res .tx{min-width:0;overflow:hidden;text-overflow:ellipsis}
-.dl .dl-res .stp{flex:none;font-size:10px;background:var(--ink,#111);color:#fff;padding:0 4px;line-height:15px;letter-spacing:.08em}
-.dl .dl-res .stp.gold{background:var(--gold,#b8860b)}
-.dl .dl-res .more{margin-left:auto;flex:none;font-weight:400;color:var(--gray,#888);font-size:11px}
-.dl .dl-res.old{color:var(--gray,#888)}
-.dl .dl-res.old .stp{background:#999}
-.dl .dl-res.old .g,.dl .dl-res.old .r{opacity:.7}
-.dl .dl-res .lbl{flex:none;font-weight:400;font-size:10px;color:var(--gray,#888)}
-.dl .dl-res .fx{font-weight:400;color:#555}
-.dl .dl-res:disabled .lbl{color:#bbb}
-
-/* ===================== 你的一塊 ===================== */
+/* ===================== 你的一塊（下）：黑線分界 ===================== */
 .dl .dl-p{flex:none;border-top:1px solid var(--ink,#111);padding:6px 12px 0}
-.dl .qirow{display:flex;align-items:center;gap:7px;height:26px;margin-top:3px;min-width:0}
-.dl .qirow .lb{font-size:10px;font-weight:700;color:var(--gold,#b8860b);letter-spacing:.08em;flex:none}
-.dl .seg{display:flex;flex:none}
-.dl .seg s{display:block;width:10px;height:8px;border:1px solid #d6c9a3;text-decoration:none}
-.dl .seg s+s{margin-left:2px}
-.dl .seg s.on{background:var(--gold,#b8860b);border-color:var(--gold,#b8860b)}
-.dl .seg s.gap{margin-left:7px}
-.dl .seg s.pop{box-shadow:0 0 0 1px #fff,0 0 5px 1px var(--gold,#b8860b)}
-.dl .qirow .n{font:700 12px/16px 'Space Mono',monospace;flex:none}
-.dl .qirow .full{flex:none;font-size:11px;font-weight:700;color:var(--gray,#888);margin-left:-3px}
-.dl .qirow .chain{font-size:10px;color:var(--gray,#888);white-space:nowrap;overflow:hidden;min-width:0}
-.dl .qirow .chain b{font-size:11px}
-.dl .ultb{margin-left:auto;flex:none;height:26px;min-width:44px;padding:0 10px;background:var(--red,#c11628);color:#fff;font-size:12px;font-weight:700;letter-spacing:.06em;border:1px solid var(--red,#c11628);position:relative;overflow:hidden;text-align:center}
-.dl .ultb::before{content:'';position:absolute;left:0;right:0;top:50%;height:44px;margin-top:-22px}
-.dl .ultb::after{content:'';position:absolute;top:0;right:0;bottom:0;left:0;background:linear-gradient(110deg,transparent 30%,rgba(255,255,255,.35) 48%,transparent 66%);background-size:250% 100%;-webkit-animation:dl-shine 2.6s linear infinite;animation:dl-shine 2.6s linear infinite;pointer-events:none}
-.dl .ultb.armed{background:#fff;color:var(--red,#c11628)}
-.dl .ultb.armed::after{display:none}
-@-webkit-keyframes dl-shine{from{background-position:120% 0}to{background-position:-130% 0}}
-@keyframes dl-shine{from{background-position:120% 0}to{background-position:-130% 0}}
-
-/* 手牌：5 格（王牌在最左）；點一下＝選，選中再點一次／右上 i／長按＝唱片資訊（B09） */
-.dl .dl-hand{flex:none;display:flex;justify-content:space-between;padding:6px 12px 0}
-.dl .tile{width:64px;flex:none;text-align:center;position:relative;transition:transform .12s;-webkit-touch-callout:none}
-.dl .tile .cvw{position:relative;display:block}
-.dl .tile .cv{width:64px;height:64px}
-.dl .tile .st3{display:block;margin:3px -4px 0;font:700 12px var(--dl-mono);white-space:nowrap;letter-spacing:0;line-height:15px}
-.dl .tile .st3 b{margin:0 1px}
-.dl .tile .st3 b i{font:400 11px/15px var(--dl-zh);font-style:normal;margin-right:0}
-.dl .itag{position:absolute;right:-1px;top:-1px;width:18px;height:18px;background:var(--ink,#111);color:#fff;font:700 12px/18px 'Space Mono',monospace;text-align:center}
-.dl .itag::before{content:'';position:absolute;right:-8px;top:-8px;width:44px;height:44px}
-.dl .tile.sel{transform:translateY(-6px)}
-.dl .tile.sel .cv{outline:2px solid var(--ink,#111);outline-offset:0;box-shadow:0 5px 10px rgba(0,0,0,.25)}
+.dl .relics{display:flex;align-self:center;height:20px;align-items:center}
+.dl .relics .rl{position:relative;width:20px;height:20px;display:grid;place-items:center;border:1px solid var(--gold,#b8860b);background:var(--cream,#fffbe9);margin-right:4px;-webkit-touch-callout:none}
+.dl .relics .rl::before{content:'';position:absolute;left:-12px;right:-12px;top:-12px;bottom:-12px}
+.dl .relics .rl svg,.dl .relics .rl canvas,.dl .relics .rl img,.dl .relics .rl>span:not(.rl-t){max-width:16px;max-height:16px;display:block}
+.dl .relics .rl .rl-t{font-size:11px;font-weight:700;color:var(--cream-ink,#5a4a10);line-height:1}
+.dl .hand{display:flex;justify-content:space-between;align-items:flex-end;margin-top:10px}
+.dl .tile{flex:1 1 0;min-width:0;max-width:96px;position:relative}
+.dl .tile+.tile{margin-left:8px}
+.dl .tile.ace{flex:0 0 auto;width:calc(var(--hcv) + 8px);max-width:none}
+.dl .tile .cvw{position:relative;display:block;width:var(--hcv);height:var(--hcv);margin:0 auto;transition:transform .12s;-webkit-touch-callout:none}
+.dl .tile .cv{width:var(--hcv);height:var(--hcv)}
 .dl .tile.ace .cv{outline:2px solid var(--gold,#b8860b);outline-offset:-1px}
-.dl .tile.ace.sel .cv{outline-color:var(--ink,#111)}
-.dl .tile.ace.ok .cv{-webkit-animation:dl-okpulse 1.15s ease-in-out infinite;animation:dl-okpulse 1.15s ease-in-out infinite}
-@-webkit-keyframes dl-okpulse{0%,100%{box-shadow:0 0 0 0 rgba(184,134,11,.0)}50%{box-shadow:0 0 0 4px rgba(184,134,11,.55)}}
-@keyframes dl-okpulse{0%,100%{box-shadow:0 0 0 0 rgba(184,134,11,.0)}50%{box-shadow:0 0 0 4px rgba(184,134,11,.55)}}
 .dl .tile .acetag{position:absolute;left:0;top:0;background:var(--gold,#b8860b);color:#fff;font-size:10px;font-weight:700;padding:0 4px;line-height:15px;letter-spacing:.06em}
-.dl .tile .acetag.ok{background:var(--ink,#111)}
-.dl .tile .reqtag{position:absolute;left:0;bottom:0;background:var(--gold,#b8860b);color:#fff;font:700 9px/13px 'Space Mono',monospace;padding:0 3px}
+.dl .tile.sel .cvw{transform:translateY(-5px)}
+.dl .tile.sel .cv{outline:2px solid var(--ink,#111);outline-offset:0;box-shadow:0 5px 10px rgba(0,0,0,.22)}
 .dl .tile.used{opacity:.35}
 .dl .tile.gone{visibility:hidden}
-.dl .tile .okt{color:var(--gold,#b8860b);font:700 11px/15px var(--dl-zh);margin-left:2px}
+/* 星鈕：按鈕本身就是點擊範圍（≥28×44），看得到的框是裡面 32px 高的那一塊 */
+.dl .chips{display:flex;margin-top:-1px}
+.dl .chip{flex:1 1 0;min-width:0;height:calc(var(--pill) + 12px);padding:6px 1px;position:relative;font:700 13px var(--dl-mono);text-align:center;white-space:nowrap;-webkit-touch-callout:none}
+.dl .chip::after{content:'';position:absolute;left:1px;right:1px;top:6px;bottom:6px;border:1px solid #cfcfcf;background:#fff;z-index:0;pointer-events:none}
+.dl .chip>*{position:relative;z-index:1}
+.dl .chip{line-height:var(--pill);display:flex;align-items:center;justify-content:center}
+.dl .chip i{font:700 11px var(--dl-zh);font-style:normal;margin-right:1px;position:relative;z-index:1}
+.dl .chip{z-index:0}
+.dl .chip.sel::after{border:2px solid var(--ink,#111);box-shadow:0 3px 8px rgba(0,0,0,.2)}
+.dl .chip:disabled{opacity:.55}
+.dl .tile.used .chip:disabled,.dl.busy .chip:disabled{opacity:1}
+.dl .chip .eye{position:absolute;right:1px;top:6px;z-index:2;font:700 9px/12px var(--dl-zh);color:#fff;background:var(--ink,#111);padding:0 2px}
+.dl .chip.wide{flex:1 1 auto}
+/* 「選好了」＋丟！ */
+.dl .act{display:flex;align-items:center;height:calc(var(--thr-h) + 2px);margin-top:8px;padding-bottom:env(safe-area-inset-bottom,0px);box-sizing:content-box}
+.dl .act .say{flex:1;min-width:0;font-size:12px;line-height:16px;margin-right:10px;white-space:nowrap;overflow:hidden}
+.dl .act .say small{display:block;font-size:10px;color:var(--gray,#888);overflow:hidden;text-overflow:ellipsis}
+.dl .act .say b{font-size:13px;margin-right:10px}
+.dl .act .say .hn{font-size:12px;color:#333}
+.dl .act .say .w{color:var(--gray,#888)}
+.dl .throw{flex:none;width:96px;height:var(--thr-h);background:var(--ink,#111);color:#fff;font:900 18px var(--dl-zh);letter-spacing:.2em;text-align:center;padding-left:.2em}
+.dl .throw:disabled{background:#e8e8e8;color:#bbb}
+.dl .act.wait .throw{visibility:hidden}
 
-/* 屬性鈕（吃剩下的高度，min 66、max 84）；預覽最多兩行，數字全部來自 forecast */
-.dl .dl-at{flex:1 1 84px;min-height:66px;max-height:84px;display:flex;padding:2px 12px 8px;padding-bottom:calc(8px + env(safe-area-inset-bottom,0px))}
-.dl .dl-at>*+*{margin-left:6px}
-.dl .ab{flex:1 1 0;min-width:0;border:1px solid var(--ink,#111);background:#fff;text-align:left;padding:5px 8px;display:flex;flex-direction:column;justify-content:flex-start;gap:1px;overflow:hidden;-webkit-touch-callout:none}
-.dl .ab .k{display:flex;align-items:baseline;gap:4px;font-size:15px;font-weight:700;letter-spacing:.04em;line-height:20px;white-space:nowrap}
-.dl .ab .k .num{font-size:16px}
-.dl .ab .k .mo{margin-left:auto;min-width:0;overflow:hidden;text-overflow:ellipsis;font:400 11px var(--dl-mono);color:#666;letter-spacing:0}
-.dl .ab .pv{display:block;font:700 12px var(--dl-mono);line-height:16px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.dl .ab .pv .f{font-weight:400;color:#666;font-size:11px;margin-right:4px}
-.dl .ab .pv .nm{color:var(--ink,#111);margin-right:6px;font-family:var(--dl-zh)}
-.dl .ab .l3{display:block;font-size:10px;color:var(--gray,#888);line-height:14px;margin-top:1px}
-.dl .ab.bare{justify-content:center}
-.dl .ab.bare .k{font-size:17px}
-.dl .ab.wide{flex:1 1 auto}
-.dl .ab.wide .k{font-size:15px}
-.dl .ab.ph{border:1px dashed #bbb;display:grid;place-items:center;text-align:center;color:var(--gray,#888);font-size:12px;font-weight:400}
-.dl .ab.gold{border:2px solid var(--gold,#b8860b);background:var(--cream,#fffbe9)}
-.dl .ab.ult{background:var(--red,#c11628);border-color:var(--red,#c11628);color:#fff;justify-content:center}
-.dl .ab.ult .k{justify-content:center;font-size:14px;white-space:normal;line-height:18px}
-.dl .dl-at.lock .ab{opacity:.55}
-.dl .dl-at.lock .ab.ph{opacity:1}
+/* 發燒配件說明（點圖示） */
+.dl .dl-pop{position:absolute;z-index:30;max-width:230px;background:#fff;border:1px solid var(--gold,#b8860b);box-shadow:0 4px 14px rgba(0,0,0,.18);padding:5px 8px;font-size:12px;line-height:1.5;white-space:normal}
+.dl .dl-pop b{display:block;font-size:12px;color:var(--cream-ink,#5a4a10)}
 
-/* 點了才出現的底部面板（他的脾氣／算式／六格完整表） */
-.dl .dl-scrim{position:absolute;top:0;right:0;bottom:0;left:0;z-index:20;background:rgba(255,255,255,.55)}
-.dl .dl-sheet{position:absolute;left:0;right:0;bottom:0;z-index:21;max-height:72%;display:flex;flex-direction:column;background:#fff;border-top:1px solid var(--ink,#111);box-shadow:0 -6px 20px rgba(0,0,0,.12)}
-.dl .dl-sheet[hidden],.dl .dl-scrim[hidden]{display:none}
-.dl .dl-sheet .hd{flex:none;display:flex;align-items:center;height:44px;padding:0 4px 0 12px;border-bottom:1px solid var(--line,#ddd)}
-.dl .dl-sheet .hd .tt{flex:1;font-size:14px;letter-spacing:.06em}
-.dl .dl-sheet .hd .x{height:44px;min-width:64px;padding:0 12px;font-size:12px;font-weight:700;text-align:center;background:var(--ink,#111);color:#fff}
-.dl .dl-sheet .bd{flex:1 1 auto;min-height:0;overflow:auto;-webkit-overflow-scrolling:touch;overscroll-behavior:contain;padding:8px 12px 12px;padding-bottom:calc(12px + env(safe-area-inset-bottom,0px))}
-.dl .dl-sheet .sb{font-size:12px;color:#444;line-height:1.7;margin:2px 0 6px}
-.dl .dl-sheet .sb.pb{color:var(--red,#c11628);font-weight:700}
-.dl .dl-sheet .kill{background:var(--red,#c11628);color:#fff;font-size:12px;font-weight:700;padding:2px 6px;margin:4px 0 6px}
-.dl .dl-sheet .fm{font:700 13px/1.7 var(--dl-mono);margin:2px 0 10px;white-space:normal;word-break:break-word}
-.dl .dl-sheet .fxl{margin:-6px 0 10px}
-.dl .dl-sheet .fm.fx{font-size:12px;color:#444;margin:0}
-.dl .dl-sheet .cells{display:flex;flex-direction:column;border-top:1px solid var(--line,#ddd)}
-.dl .dl-sheet .cl{display:flex;align-items:center;gap:8px;min-height:30px;border-bottom:1px solid var(--line,#ddd);font-size:12px}
-.dl .dl-sheet .cl .gl{width:22px;height:22px;flex:none;display:grid;place-items:center;border:1px solid var(--ink,#111);font-size:12px}
-.dl .dl-sheet .cl .a{flex:none;width:34px;font-weight:700}
-.dl .dl-sheet .cl .d{flex:1;min-width:0;color:#555;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.dl .dl-sheet .cl .o{flex:none;font:700 12px var(--dl-mono)}
-.dl .dl-sheet .hist{display:flex;flex-direction:column;gap:6px}
-.dl .dl-sheet .hr{display:flex;align-items:center;gap:6px;min-height:44px}
-.dl .dl-sheet .hc{flex:none;width:40px;height:40px;display:block;-webkit-touch-callout:none}
-.dl .dl-sheet .hc .cv{width:40px;height:40px}
-.dl .dl-sheet .hc.ub{display:grid;place-items:center;background:var(--red,#c11628);color:#fff;font-size:10px;font-weight:700}
-.dl .dl-sheet .ht{min-width:0;display:flex;flex-direction:column;font-size:11px;font-weight:700;line-height:1.5}
-.dl .dl-sheet .ht .hl{color:#444;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.dl .dl-sheet .ht .stp{font-size:10px;background:var(--ink,#111);color:#fff;padding:0 4px;line-height:14px}
+/* 結束大章（整個盤面上） */
+.dl .kost{position:absolute;left:50%;top:46%;transform:translate(-50%,-50%) rotate(-4deg);z-index:25;display:none;pointer-events:none;text-align:center;padding:10px 18px 9px;border:3px solid currentColor;background:rgba(255,255,255,.96);white-space:nowrap;box-shadow:0 8px 30px rgba(0,0,0,.18)}
+.dl .kost.on{display:block}
+.dl .kost b{display:block;font:900 28px/1.1 var(--dl-zh);letter-spacing:.18em}
+.dl .kost small{display:block;font:700 13px/1.4 var(--dl-zh);letter-spacing:.04em;margin-top:6px;color:#333}
+.dl .kost.red{color:var(--red,#c11628)}.dl .kost.ink{color:var(--ink,#111)}.dl .kost.gold{color:var(--gold,#b8860b)}
 
-/* 小飄字（數字旁）＋浮層：一律不吃點擊 */
+/* 小飄字＋浮層：一律不吃點擊 */
 .dl .dl-fx{position:absolute;top:0;right:0;bottom:0;left:0;pointer-events:none;z-index:15;overflow:visible}
-.dl .dl-fx .fl{position:absolute;transform:translate(-50%,0);font:700 11px/1.2 var(--dl-mono);white-space:nowrap;pointer-events:none;background:#fff;padding:0 3px;text-shadow:none}
-.dl .dl-fx .fl.big{font-size:18px}
-.dl .dl-fx .fl.gd{color:var(--gold,#b8860b)}
-.dl .dl-fx .fl.g{color:var(--win,#2e7d52)}.dl .dl-fx .fl.r{color:var(--red,#c11628)}.dl .dl-fx .fl.z{color:#666}
+.dl .dl-fx .fl{position:absolute;font:700 16px/1.2 var(--dl-mono);white-space:nowrap;pointer-events:none;background:#fff;padding:0 3px}
+.dl .dl-fx .fl.g{color:var(--win,#2e7d52)}.dl .dl-fx .fl.r{color:var(--red,#c11628)}
 
-/* 結算中：只有封面（唱片資訊）與加速點擊有效 */
-.dl.busy .dl-hand .tile:not(.gone){opacity:.6}
-.dl.over .dl-hand,.dl.over .dl-at{opacity:.4;pointer-events:none}
+/* 結算中：手牌淡一點；點畫面加速（封面仍可開唱片資訊） */
+.dl.busy .tile:not(.gone){opacity:.6}
+.dl.over .hand{opacity:.4;pointer-events:none}
+.dl.held .hand,.dl.held .act{pointer-events:none}
 
-/* ===================== 矮螢幕（B04）：可視高 <600 或內容放不下 → .tight（duel.js 量測後加） ===================== */
-.dl.tight .dl-e{padding:4px 12px 5px}
-.dl.tight .rec{margin-top:5px;height:44px}
-.dl.tight .killbar{line-height:16px}
-.dl.tight .stars{line-height:14px}
-.dl.tight .rec .cvb,.dl.tight .rec .cv{width:44px;height:44px}
-.dl.tight .rec .l1{line-height:14px}
-.dl.tight .rec .l2,.dl.tight .will{line-height:14px;min-height:14px}
-.dl.tight .dl-t{height:104px;flex-basis:104px}
-.dl.tight .slot{width:70px;height:70px}.dl.tight .slot .cv{width:70px;height:70px}.dl.tight .slot .who{top:73px}
-.dl.tight .slot.p{top:calc(50% - 35px)}.dl.tight .slot.e{top:calc(50% - 48px)}
-.dl.tight .slot .ultbox b{font-size:18px}
-.dl.tight .stk{top:calc(50% - 30px)}.dl.tight .callout{top:calc(50% - 32px)}
-.dl.tight .callout.fx1{top:calc(50% - 40px)}.dl.tight .callout.fx2{top:calc(50% - 48px)}
-.dl.tight .callout .l1{font-size:12px}.dl.tight .callout .l2{font-size:20px}
-.dl.tight .callout .fx span{line-height:13px}
-.dl.tight .dl-res{height:22px}
-.dl.tight .dl-p{padding-top:4px}
-.dl.tight .qirow{height:22px;margin-top:2px}.dl.tight .ultb{height:22px}
-.dl.tight .dl-e .qirow{height:14px;margin-top:2px}
-.dl.tight .dl-hand{padding-top:4px}
-.dl.tight .tile{width:56px}.dl.tight .tile .cv{width:56px;height:56px}
-.dl.tight .tile .st3{line-height:14px}.dl.tight .tile .st3 b i,.dl.tight .tile .okt{line-height:14px}
-.dl.tight .dl-at{min-height:56px;padding-bottom:calc(5px + env(safe-area-inset-bottom,0px))}
-.dl.tight .ab{padding:3px 6px}.dl.tight .ab .k{font-size:14px;line-height:18px}.dl.tight .ab .pv{line-height:14px}
-.dl.tight .ab .pv .f{margin-right:3px}
-/* 再擠一點（360×560 之類）：他的一塊少一點留白、牌桌再矮 */
-.dl.tighter .dl-e{padding:3px 12px 4px}
-.dl.tighter .nmrow{height:18px}
+/* ===================== 尺寸分級 ===================== */
+/* 高螢幕（390×844 之類）：封面放大，多的高度給牌桌 */
+.dl.roomy{--ecv:64px;--scv:92px;--hcv:74px;--pill:34px;--thr-h:50px;--tri-w:150px;--tri-h:134px;--tri-rw:126px;--tri-rh:112px}
+.dl.roomy .dl-e{padding:10px 12px 12px}
+.dl.roomy .habit{margin-top:10px;height:30px}.dl.roomy .habit .tx{font-size:14px}
+.dl.roomy .rec{margin-top:10px}
+.dl.roomy .estars{margin-top:8px}
+.dl.roomy .es{width:64px;flex-basis:64px}.dl.roomy .es .k{height:28px;line-height:26px;font-size:15px}
+.dl.roomy .slot.e{top:calc(50% - 82px)}.dl.roomy .slot.p{top:calc(50% - 58px)}
+.dl.roomy .tri{top:calc(50% - 82px)}.dl.roomy .dl-t.res .tri{top:calc(50% - 92px)}
+.dl.roomy .callout{top:calc(50% + 24px)}
+.dl.roomy .dl-p{padding-top:10px}.dl.roomy .hand{margin-top:14px}.dl.roomy .act{margin-top:12px;margin-bottom:6px}
+/* 360×640 之類 */
+.dl.compact{--ecv:50px;--scv:66px;--hcv:60px;--pill:30px;--thr-h:44px;--tri-w:118px;--tri-h:106px;--tri-rw:100px;--tri-rh:90px}
+.dl.compact .dl-e{padding:5px 12px 6px}
+.dl.compact .habit{margin-top:6px;height:25px}
+.dl.compact .rec{margin-top:6px}
+.dl.compact .estars{margin-top:3px}
+.dl.compact .slot.e{top:calc(50% - 62px)}.dl.compact .slot.p{top:calc(50% - 44px)}
+.dl.compact .tri{top:calc(50% - 64px)}.dl.compact .dl-t.res .tri{top:calc(50% - 70px)}
+.dl.compact .callout{top:calc(50% + 18px)}
+.dl.compact .dl-p{padding-top:5px}.dl.compact .hand{margin-top:8px}.dl.compact .act{margin-top:4px}
+/* 矮螢幕（≤600 高，375×548）：SPEC-v3 §4 */
+.dl.short{--ecv:44px;--scv:62px;--hcv:54px;--pill:30px;--thr-h:40px;--tri-w:100px;--tri-h:90px;--tri-rw:88px;--tri-rh:79px}
+.dl.short .dl-e{padding:4px 12px 5px}
+.dl.short .nmrow{height:18px}
+.dl.short .habit{margin-top:5px;height:24px}
+.dl.short .rec{margin-top:5px}
+.dl.short .rec .l1{line-height:14px;height:14px}
+.dl.short .estars{margin-top:2px}
+.dl.short .es .k{height:22px;line-height:20px;font-size:13px}
+.dl.short .es .ans{height:13px;line-height:13px;margin-top:1px}
+.dl.short .pile{padding-bottom:14px}.dl.short .pile .bars i{height:12px}
+.dl.short .dl-t{min-height:112px}
+.dl.short .slot.e{top:calc(50% - 54px)}.dl.short .slot.p{top:calc(50% - 40px)}
+.dl.short .slot .who{font-size:11px;margin-top:2px}
+.dl.short .tri{top:calc(50% - 54px)}.dl.short .dl-t.res .tri{top:calc(50% - 58px)}
+.dl.short .callout{top:calc(50% + 12px);padding:2px 8px 3px}
+.dl.short .callout .l1{font-size:12px;line-height:16px}.dl.short .callout .l2{font-size:19px}
+.dl.short .lastline{bottom:3px}
+.dl.short .dl-p{padding-top:4px}
+.dl.short .hand{margin-top:6px}
+.dl.short .act{margin-top:2px}
+.dl.short .act .say small{line-height:14px}
+/* 還是放不下：再收一點留白 */
+.dl.tighter .dl-e{padding-top:3px;padding-bottom:4px}
+.dl.tighter .habit{margin-top:4px}
 .dl.tighter .rec{margin-top:4px}
-.dl.tighter .dl-t{height:96px;flex-basis:96px}
-.dl.tighter .slot,.dl.tighter .slot .cv{width:64px;height:64px}.dl.tighter .slot .who{top:66px}
-.dl.tighter .slot.p{top:calc(50% - 34px)}.dl.tighter .slot.e{top:calc(50% - 45px)}
-.dl.tighter .dl-res{height:20px}
-.dl.tighter .dl-hand{padding-top:3px}
-.dl.tighter .tile .st3{margin-top:2px}
-.dl.tighter .dl-at{min-height:52px}
+.dl.tighter .hand{margin-top:4px}
+.dl.tighter .act{margin-top:0}
 
-@supports not (aspect-ratio:1/1){.dl .cv{flex-shrink:0}}
 @media (hover:hover) and (pointer:fine){
-  .dl .tile:not(.sel):not(.used):hover .cv{outline:1px solid #999}
-  .dl .ab:not(.ph):hover{background:#f7f7f7}
-  .dl .ab.ult:hover{background:#a5101f}
-  .dl .will:hover .more,.dl .dl-res:hover .more{color:var(--ink,#111)}
+  .dl .chip:not(:disabled):not(.sel):hover::after{border-color:#888}
+  .dl .throw:not(:disabled):hover{background:#333}
+  .dl .tile .cvw:hover .cv{outline:1px solid #999}
 }
 @media (prefers-reduced-motion:reduce){
-  .dl .ultb::after,.dl .tile.ace.ok .cv{-webkit-animation:none;animation:none}
   .dl .hp i{transition-duration:.15s}
-  .dl .tile{transition:none}
+  .dl .tile .cvw,.dl .tri{transition:none}
 }
