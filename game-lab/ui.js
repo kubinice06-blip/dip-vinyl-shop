@@ -311,7 +311,9 @@
   }
   function openHelp() {
     var rows = C.helpRows || [], gl = C.helpGlyphs || [];
-    var body = rows.length ? '<dl class="lb-gl">' + rows.map(function (r) { return '<dt>' + esc(r[0]) + '</dt><dd>' + esc(r[1]) + '</dd>'; }).join('') + '</dl>' +
+    // v2 盤面上叫「他會出」（六格色條），小抄跟著用同一個詞（content.js 的鍵仍是「氣場唱盤」，duel.js 用它查）
+    var HELP_LABEL = { '氣場唱盤': '他會出' };
+    var body = rows.length ? '<dl class="lb-gl">' + rows.map(function (r) { return '<dt>' + esc(HELP_LABEL[r[0]] || r[0]) + '</dt><dd>' + esc(r[1]) + '</dd>'; }).join('') + '</dl>' +
       (gl.length ? '<div class="lb-h3">他會出的字</div><div class="lb-glt">' + gl.map(function (g) { return '<span class="lb-glyph' + (g[0] === '晃' ? ' feint' : g[0] === '？' ? ' hidden' : '') + '">' + esc(g[0]) + '</span><span>' + esc(g[1]) + '</span>'; }).join('') + '</div>' : '')
       : '<p>' + esc(C.help) + '</p>';
     var canReplay = canTutorial() && UI.screen !== 'duel';
@@ -714,9 +716,13 @@
     guardClicks(s);
     bindInfoTaps(s);
     app().appendChild(s);
+    // 預覽開著時，地圖的 soft 提示（老闆泡泡＋挖洞框）先藏起來，不要疊在預覽上（關掉預覽就回來）
+    if (!UI.floatMo && W.MutationObserver) { UI.floatMo = new MutationObserver(syncFloat); UI.floatMo.observe(app(), { childList: true }); }
+    syncFloat();
     focusFirst(s);
     return s;
   }
+  function syncFloat() { D.body.classList.toggle('lb-float-open', !!qs(':scope > .lb-sheet.float', app())); }
   function playingTag() {
     var f = FX(); var on = !!(f && f.music && f.music.playing && f.music.playing());
     return on ? '<span class="lb-playing"><span class="rec" aria-hidden="true"></span>播放中</span>' : '';
@@ -1242,15 +1248,17 @@
     UI.going = true; UI.entering = true; UI.hintQ = [];
     stg('interact', 'duel');
     UI.camName = 'strip';
-    // 盤面在「！」那 300 ms 就先掛好（藏著）：掛盤面的 DOM／封面成本不會卡到鏡頭推近的那幾格
-    wrap.style.visibility = 'hidden';
-    mountBoard();
-    var walkIn = null;
+    // 盤面在 onPush 才掛（duel.js 自己 600 ms 從下方淡入，掛完才算「可以出牌」）；
+    // 鏡頭在掛完的下一格才開始推：掛盤面的 DOM／封面成本不會吃掉推近的頭幾格（不卡）
+    var walkIn = null, pushed = false;
     var push = function () {
-      if (walkIn || UI.screen !== 'duel' || !wrap.isConnected) return;
-      wrap.style.visibility = '';
-      if (wrap.animate && !rm()) wrap.animate([{ opacity: 0, transform: 'translateY(24px)' }, { opacity: 1, transform: 'none' }], { duration: Math.round(600 / speed()), easing: 'cubic-bezier(.2,.7,.3,1)' });
-      walkIn = stgP('duelIn', { foe: foeSpr, ms: Math.round(760 / speed()) });
+      if (pushed || UI.screen !== 'duel' || !wrap.isConnected) return;
+      pushed = true;
+      mountBoard();
+      walkIn = new Promise(function (res) {
+        var go2 = function () { stgP('duelIn', { foe: foeSpr, ms: Math.round(760 / speed()) }).then(res, res); };
+        if (W.requestAnimationFrame) requestAnimationFrame(go2); else go2();
+      });
     };
     var enc;
     try { enc = (f && f.encounter2) ? f.encounter2(foeAnc, { onPush: push }) : null; } catch (e) { console.error(e); enc = null; }
@@ -1756,7 +1764,8 @@
     UI.lastSpot = 'crateP';
     stg('allow', ['crate-*', 'rack:*', 'now']);
     var L = (C.pools && C.pools.crateLabels) || { jazz: '爵士區', tw: '台灣區', noise: '噪音區' };
-    stg('highlight', [{ ids: ['crate-jazz', 'crate-tw', 'crate-noise'], label: NODE_NAME.crate }]);
+    // 只畫像素外框、不掛標籤：面板已經寫「點店裡的箱子也可以」，標籤會被你的頭推到箱子下面、被舞台下緣切掉
+    stg('highlight', [{ ids: ['crate-jazz', 'crate-tw', 'crate-noise'], label: '' }]);
     var s = sheet('<div class="hd"><h3>挖箱：挑一箱</h3><span class="sub">點店裡的箱子也可以</span></div><div class="lb-crates">' +
       ['jazz', 'tw', 'noise'].map(function (k) { return '<button type="button" class="lb-btn big key" data-k="' + k + '">' + esc(L[k]) + '</button>'; }).join('') + '</div>' +
       '<p class="sub">翻出三張，帶走一張。</p>', 'crate');
@@ -1778,10 +1787,10 @@
     place('p', 'crateP', 'player');
     var L = (C.pools && C.pools.crateLabels) || {};
     if (p.goldId) { later(function () { stageSay('o', C.lines.owner.gold, 'owner'); sfx('seeThrough'); }, 200); }
-    var s = sheet('<div class="hd"><h3>' + esc(L[p.crate] || '挖箱') + '</h3><span class="sub">挑一張進包包</span></div><div class="lb-trio">' +
+    // 「都不要」放在標題列右邊（不佔底部 sticky 列）：三顆「帶走」在 375×548 也不用捲就看得到
+    var s = sheet('<div class="hd"><h3>' + esc(L[p.crate] || '挖箱') + '</h3><span class="sub">挑一張進包包</span><button type="button" class="lb-btn hdb" data-a="none">都不要</button></div><div class="lb-trio">' +
       p.cardIds.map(function (id) { return tileHTML(card(id), { pick: '帶走' }); }).join('') + '</div>' +
-      (p.goldId ? '<p class="lb-result">老闆：「' + esc(C.lines.owner.gold) + '」</p>' : '') +
-      '<div class="foot"><button type="button" class="lb-btn wide" data-a="none">都不要</button></div>', 'cratecard');
+      (p.goldId ? '<p class="lb-result">老闆：「' + esc(C.lines.owner.gold) + '」</p>' : ''), 'cratecard');
     s.addEventListener('click', function (e) {
       var t = e.target.closest && e.target.closest('.lb-ct');
       if (t) {

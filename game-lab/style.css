@@ -479,9 +479,17 @@ small{font-size:inherit;}
 @media (max-height:600px){.lb-panel.title .lb-tbtns{padding-top:34px;}}
 /* 三張並排：封面 96px（§8.4），置中 */
 .lb-trio .lb-ct{max-width:96px;justify-self:center;width:100%;}
+/* 三張的「選這張／帶走」對齊同一條線（專輯名一行兩行都一樣） */
+.lb-trio .lb-ct .lb-pickb{margin-top:auto;}
+.lb-trio .lb-ct .stars{margin-bottom:6px;}
+/* 標題列右邊的小次鈕（挖箱「都不要」） */
+.lb-sheet .hd .lb-btn.hdb{flex:none;position:relative;min-height:34px;height:34px;padding:0 14px;font-size:13px;margin:-5px 0;}
+.lb-sheet .hd .lb-btn.hdb::after{content:'';position:absolute;left:-2px;right:-2px;top:-5px;bottom:-5px;}   /* 點擊區撐到 44 */
 .lb-sheet.acepick .lb-trio .lb-ct{max-width:104px;}
 .lb-endmore{display:flex;gap:8px;margin-top:14px;}
 .lb-endmore .lb-btn{flex:1;font-size:12px;padding:6px 8px;}
 .lb-modal .pane.lb-pause{padding-bottom:calc(16px + env(safe-area-inset-bottom,0px));}
 /* 每個畫面自己的一層（#panel 常駐，監聽器掛在這層才不會累積） */
 .lb-screen{display:flex;flex-direction:column;flex:1 1 auto;min-height:0;}
+/* 地圖預覽（.lb-sheet.float）開著時，教學的 soft 提示先藏起來（不疊在預覽上；關掉預覽就回來） */
+body.lb-float-open #tut{visibility:hidden;}

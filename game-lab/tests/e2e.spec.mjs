@@ -32,7 +32,16 @@ async function newPage(browser, w, h, opts = {}) {
   const ctx = await browser.newContext({ viewport: { width: w, height: h }, deviceScaleFactor: 1, hasTouch: true, isMobile: true });
   const page = await ctx.newPage();
   page._errors = []; page._requests = []; page._clicks = 0;
-  page.on('console', m => { if (m.type() === 'error') page._errors.push(m.text()); });
+  // 像素店把遠端封面縮進 canvas 要 CORS；偶爾某張圖的回應（快取／代理）沒帶 ACAO，shop.js 照規格改畫色塊（SPEC-v2 §5.1）。
+  // 這種瀏覽器自己印的 CORS 訊息（＋緊跟的 net::ERR_FAILED）不是程式錯誤，不算進主控台錯誤。
+  let corsImg = 0;
+  page.on('console', m => {
+    if (m.type() !== 'error') return;
+    const t = m.text();
+    if (/^Access to image at 'https:\/\/[^']+' from origin '[^']+' has been blocked by CORS policy/.test(t)) { corsImg++; page._corsImg = (page._corsImg || 0) + 1; return; }
+    if (corsImg > 0 && /^Failed to load resource: net::ERR_FAILED$/.test(t)) { corsImg--; return; }
+    page._errors.push(t);
+  });
   page.on('pageerror', e => page._errors.push('pageerror: ' + e.message));
   page.on('request', r => page._requests.push(r.url()));
   if (opts.watchStorage) {
@@ -510,6 +519,8 @@ async function runSize(browser, [W, H]) {
         const nid = await page.evaluate(() => { const r = window.__lab.run; return r.map.cols.find(c => c.col === r.col).nodes.find(n => n.type === 'fight').id; });
         await page.click(`.lb-node[data-n="${nid}"]`); await page.click('.lb-sheet.float [data-a=go]');
         const inDuel = await duelReady(page, 15000);
+        // 進場整段（「！」→ 黑條 → 鏡頭推近）收完才讀最後高度
+        await page.waitForFunction(() => !document.querySelector('.lb-duelwrap.entering, .enc2'), null, { timeout: 8000 }).catch(() => {});
         const hs = await page.evaluate(() => window.__hs.slice());
         const strip = await page.evaluate(() => document.getElementById('stage').offsetHeight);
         const i0 = hs.findIndex((h, i) => i > 0 && h < hs[i - 1]);
@@ -522,7 +533,7 @@ async function runSize(browser, [W, H]) {
         const relic = await page.$('.lb-sheet.relics [data-r]'); if (relic) await relic.click();
         const back = await page.waitForFunction(() => window.__lab.screen() === 'map', null, { timeout: 15000 }).then(() => true, () => false);
         const same = await page.evaluate(() => document.querySelector('#stage canvas') === window.__c0);
-        record(27, size, inDuel && mono && same && back && stake && hs[0] > strip + 100, `canvas same node ${same}; #stage ${hs[0]}→${strip} monotonic ${mono} (${seg.length} frames); stake ${stake}; back to map ${back}`);
+        record(27, size, inDuel && mono && same && back && stake && hs[0] > strip + 100 && strip <= 125, `canvas same node ${same}; #stage ${hs[0]}→${strip} monotonic ${mono} (${seg.length} frames); stake ${stake}; back to map ${back}`);
       }
       if (want(16)) {
         await page.click('.lb-top [aria-label=暫停選單]'); await page.click('.lb-modal [data-a=title]');
