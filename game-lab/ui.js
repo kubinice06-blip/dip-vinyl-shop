@@ -2207,6 +2207,13 @@
       camera: 'full', screen: 'title', speed: speed, onAction: onStageAction
     }).then(function (st) { UI.stage = st; st.onAction = onStageAction; configTut(); return st; }, function (e) { console.error(e); UI.stageHost.classList.add('nostage'); return null; });
   }
+  // iOS < 15.4 沒有 svh：100vh 會比可視區高（工具列收起來的高度），底部按鈕被切。改用可視高。
+  function svhFallback() {
+    var ok = false; try { ok = !!(W.CSS && CSS.supports && CSS.supports('height', '100svh')); } catch (_) {}
+    if (ok) return;
+    var fit = function () { var a = app(); if (!a) return; var h = W.visualViewport ? Math.min(W.innerHeight, W.visualViewport.height) : W.innerHeight; if (h > 0) a.style.height = Math.round(h) + 'px'; };
+    fit(); W.addEventListener('resize', fit); if (W.visualViewport) W.visualViewport.addEventListener('resize', fit);
+  }
   function configTut() {
     var T = W.DipLabTut; if (!T || typeof T.configure !== 'function') return;
     try { T.configure({ stage: UI.stage, save: function () { return UI.tutReplay ? { seen: {} } : save; }, persist: persist, content: C }); } catch (e) { console.error(e); }
@@ -2218,6 +2225,7 @@
     if (!E || !C || !app()) { if (app()) app().innerHTML = '<div class="lb-boot">載入失敗，請重新整理。</div>'; return; }
     // B03：預覽站「重置」浮鈕整個藏掉（重置在 ⏸）
     D.body.classList.add('in-battle');
+    svhFallback();
     save = loadSave();
     var f = FX();
     if (f) { try { if (f.init) f.init(); if (f.setSpeed) f.setSpeed(speed()); } catch (e) { console.error(e); } }
