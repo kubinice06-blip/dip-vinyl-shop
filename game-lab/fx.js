@@ -2,8 +2,11 @@
 // window.DipLabFx：WebAudio 合成音效（不載任何音檔）、試聽播放（fetch → decodeAudioData → BufferSource）、
 // 震屏／打擊停頓／閃白／飄字／蓋章、encounterFx 移植、傳說藏家蓋章出場。
 // 規則：
-//  - 音效與音樂共用一個 AudioContext：有 DipPlayer 就用 DipPlayer.audioContext()（每次重新取，DipPlayer 關掉後會重建），
-//    沒有就自建。**絕不 DipPlayer.mount**。
+//  - 音效與音樂共用 fx.js **自己的** AudioContext（v2 B13：不再借 DipPlayer.audioContext()——DipPlayer 切背景時會把它 close 掉）。
+//    DipPlayer 只借全站的聲音偏好 autoplayPreference。**絕不 DipPlayer.mount**。
+//  - 切背景（visibilitychange hidden）：記下正在放的那張、真的停掉、suspend()；回來後下一次觸碰 resume() 並從頭放（B13）。
+//    playing() 同時檢查 ctx.state === 'running'，「播放中」永遠是真的（B05／B13）。
+//  - 「有聲音」的手勢（unlockFromGesture(true)、setSound(true)）：navigator.audioSession.type='playback'，舊 iOS 用循環靜音 <audio> 後備（B05）。
 //  - 這次造訪呼叫過 unlockFromGesture(true)（或在 🔊 開關上打開）且偏好為 'on' 才出聲。
 //  - 動畫永遠不等音樂；抓檔 2.5 s 內沒好就放棄這次換歌。
 //  - 所有浮層 pointer-events:none。prefers-reduced-motion：不震、不閃白，改 150 ms 淡入。
@@ -85,20 +88,15 @@
 
   // ---------------------------------------------------------------- audio context
   function ctx() {
-    let c = null;
-    const dp = DP();
-    if (dp) { try { c = dp.audioContext(); } catch (_) { c = null; } }
-    if (!c) {
-      if (!S.own || S.own.state === 'closed') {
-        const C = window.AudioContext || window.webkitAudioContext;
-        if (C) { try { S.own = new C(); } catch (_) { S.own = null; } }
-      }
-      c = S.own;
+    if (!S.own || S.own.state === 'closed') {
+      const C = window.AudioContext || window.webkitAudioContext;
+      if (C) { try { S.own = new C(); } catch (_) { S.own = null; } }
     }
+    const c = S.own;
     if (c && c !== S.ctx) {
       S.ctx = c; S.master = null; S.noise = null; S.pink = null;
       try { S.master = c.createGain(); S.master.gain.value = MASTER; S.master.connect(c.destination); } catch (_) { S.master = null; }
-      // 換了 context（DipPlayer 關掉重建）：舊的音樂節點已經失效
+      // 換了 context（被系統關掉重建）：舊的音樂節點已經失效
       if (M.cur && M.cur.ctx !== c) { M.cur = null; }
       if (S.rain) { S.rain = null; }
     }
@@ -110,6 +108,25 @@
     return S.localPref;
   }
   function soundOn() { return !!S.unlocked && pref() === 'on'; }
+  // B05：iOS 靜音切換。Web Audio 預設是「環境音」，靜音模式下整個沒聲音；在有聲音的手勢裡把 session 拉成 playback。
+  function audioSessionPlayback() {
+    try { if (navigator.audioSession) { navigator.audioSession.type = 'playback'; return; } } catch (_) {}
+    // 舊 iOS 後備：同一個手勢裡放一個循環、playsinline 的極短靜音 WAV
+    try {
+      if (!/iP(hone|ad|od)|Macintosh/.test(navigator.userAgent || '') || !('ontouchend' in document)) return;
+      if (!S.silentEl) {
+        const n = 2000, b = new Uint8Array(44 + n), v = new DataView(b.buffer);
+        const w = (o, t) => { for (let i = 0; i < t.length; i++) b[o + i] = t.charCodeAt(i); };
+        w(0, 'RIFF'); v.setUint32(4, 36 + n, true); w(8, 'WAVE'); w(12, 'fmt '); v.setUint32(16, 16, true); v.setUint16(20, 1, true); v.setUint16(22, 1, true);
+        v.setUint32(24, 8000, true); v.setUint32(28, 8000, true); v.setUint16(32, 1, true); v.setUint16(34, 8, true); w(36, 'data'); v.setUint32(40, n, true); b.fill(128, 44);
+        const a = document.createElement('audio');
+        a.src = URL.createObjectURL(new Blob([b], { type: 'audio/wav' }));
+        a.loop = true; a.setAttribute('playsinline', ''); a.setAttribute('webkit-playsinline', ''); a.preload = 'auto'; a.volume = 0;
+        S.silentEl = a;
+      }
+      const p = S.silentEl.play(); if (p && p.catch) p.catch(() => {});
+    } catch (_) {}
+  }
   function resumeNow() {
     const c = ctx(); if (!c) return null;
     try { if (c.state !== 'running') { const p = c.resume(); if (p && p.catch) p.catch(() => {}); } } catch (_) {}
@@ -132,16 +149,27 @@
     if (dp && typeof dp.setAutoplayPreference === 'function') { try { dp.setAutoplayPreference(!!withSound); } catch (_) {} }
     else S.localPref = withSound ? 'on' : 'off';
     S.unlocked = true;
-    if (withSound) { resumeNow(); resumeMusic(); }
+    if (withSound) { audioSessionPlayback(); resumeNow(); resumeMusic(); }
     else { music.stop({ fadeMs: 0 }); rainStop(); }
     emitSound();
+    return soundOn();
+  }
+  // ⏸ 選單的「聲音 開／關」（文字開關，不用 🔊 emoji）：只能在 click handler 內呼叫
+  function setSound(on) {
+    const dp = DP();
+    if (dp && typeof dp.setAutoplayPreference === 'function') { try { dp.setAutoplayPreference(!!on); } catch (_) {} }
+    S.localPref = on ? 'on' : 'off';
+    S.unlocked = true;
+    if (on) { audioSessionPlayback(); resumeNow(); resumeMusic(); }
+    else { music.mute(); rainStop(); }
+    emitSound(); syncToggles();
     return soundOn();
   }
   function mountToggle(el) {
     if (!el) return null;
     const onToggle = enable => {
       // 關：聲音停，但「唱盤上那張」留著（迷你唱盤照轉、圈標不消失）；開：接著放剛剛那張
-      if (enable) { S.unlocked = true; if (!DP()) S.localPref = 'on'; resumeNow(); resumeMusic(); }
+      if (enable) { S.unlocked = true; if (!DP()) S.localPref = 'on'; audioSessionPlayback(); resumeNow(); resumeMusic(); }
       else { if (!DP()) S.localPref = 'off'; music.mute(); rainStop(); }
       emitSound();
       return false;
@@ -271,7 +299,7 @@
     if (!soundOn()) return;
     const f = SFX[name]; if (!f) return;
     const c = ctx(); if (!c || !out()) return;
-    try { if (c.state === 'suspended') { const p = c.resume(); if (p && p.catch) p.catch(() => {}); } } catch (_) {}
+    try { if (c.state !== 'running' && !S.hidden) { const p = c.resume(); if (p && p.catch) p.catch(() => {}); } } catch (_) {}
     try { f(c, opts || {}); } catch (e) { /* 音效失敗不影響遊戲 */ }
   }
   // 打字機嗶聲（每 2 字呼叫一次；說話者音高 §4.1）。jitter：跳針王 ±20 Hz
@@ -366,7 +394,7 @@
           done = true; clearTimeout(giveUp);
           const c = ctx(); if (!c) { resolve(false); return; }
           try {
-            if (c.state === 'suspended') { const p = c.resume(); if (p && p.catch) p.catch(() => {}); }
+            if (c.state !== 'running') { const p = c.resume(); if (p && p.catch) p.catch(() => {}); }
             fadeOutCur(fadeMs);
             const src = c.createBufferSource(); src.buffer = buf;
             const g = c.createGain(); const t = c.currentTime, d = Math.max(0.02, fadeMs / 1000);
@@ -392,10 +420,37 @@
       (cards || []).filter(c => c && c.previewUrl).slice(0, 3).forEach(c => { fetchBytes(c.previewUrl).catch(() => {}); });
     },
     current() { return M.card; },
-    playing() { return !!M.cur; },
+    // 真的在出聲才 true：有來源、context 在跑、頁面在前景（B05／B13）
+    playing() { return !!(M.cur && M.cur.ctx && M.cur.ctx.state === 'running' && !S.hidden); },
     onChange(cb) { M.cbs.add(cb); return () => M.cbs.delete(cb); },
     onEnded(cb) { M.endCbs.add(cb); return () => M.endCbs.delete(cb); },
   };
+
+  // ---------------------------------------------------------------- 切背景／回前景（B13）
+  // hidden：記下正在放的那張、真的停掉、suspend；visible：下一次觸碰 resume＋從頭放（iOS 要手勢才能 resume）
+  function onVisibility() {
+    if (document.hidden) {
+      S.hidden = true;
+      if (M.cur) { S.resumeCard = M.card; M.token++; fadeOutCur(0); }
+      rainStop();
+      const c = S.own; if (c && c.state === 'running') { try { const p = c.suspend(); if (p && p.catch) p.catch(() => {}); } catch (_) {} }
+      emitMusic(); emitSound();
+      return;
+    }
+    S.hidden = false;
+    emitMusic(); emitSound();
+    if (S.armed) return;
+    S.armed = true;
+    const once = () => {
+      S.armed = false;
+      document.removeEventListener('pointerdown', once, true); document.removeEventListener('keydown', once, true);
+      if (!soundOn()) return;
+      resumeNow();
+      resumeMusic();
+    };
+    document.addEventListener('pointerdown', once, true); document.addEventListener('keydown', once, true);
+  }
+  document.addEventListener('visibilitychange', onVisibility);
 
   // ---------------------------------------------------------------- visual fx
   function reducedMotion() { try { return !!(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches); } catch (_) { return false; } }
@@ -575,6 +630,59 @@
       encounterFx(resolve, Object.assign({ target: targetEl || null }, opts || {}));
     });
   }
+  // v2 進對決（SPEC-v2 §3.7＋主線裁定 #6）：保留店主拍板的「！＋黑條」，但整段 ≤2 s，而且鏡頭推近在黑條「之下／之前」同時跑：
+  //   0 ms 他頭上「！」→ 260 ms 閃白一次 → 480 ms 黑條掃進來（steps(6)）→ 980 ms 蓋滿：onCovered() → 1100 ms 黑條往兩邊退開 → 1500 ms 收掉。
+  //   呼叫端在 0 ms 就開始推鏡頭（600 ms），黑條掃進來時畫面已經是兩個對決者的橫條，退開時盤面已經在底下就位 → 讀起來是同一個動作。
+  //   減少動態：不閃、不掃，只有「！」與 150 ms 淡入淡出。回傳 Promise（全部收完才 resolve）。
+  const ENC2_CSS = `
+  .enc2{position:fixed;inset:0;z-index:2147482000;pointer-events:none;}
+  .enc2 .f{position:absolute;inset:0;background:#fff;opacity:0;}
+  .enc2.flash .f{animation:encFlash .22s steps(1,end) 1;}
+  .enc2 .b{position:absolute;inset:0;display:flex;flex-direction:column;}
+  .enc2 .b i{flex:1;background:#000;transform:translateX(-101%);}
+  .enc2 .b i:nth-child(even){transform:translateX(101%);}
+  .enc2.in .b i{animation:encBar .5s steps(6,end) forwards;}
+  .enc2.in .b i:nth-child(2),.enc2.in .b i:nth-child(7){animation-delay:.04s;}
+  .enc2.in .b i:nth-child(3),.enc2.in .b i:nth-child(6){animation-delay:.08s;}
+  .enc2.in .b i:nth-child(4),.enc2.in .b i:nth-child(5){animation-delay:.12s;}
+  .enc2.out .b i{transform:translateX(0);animation:enc2OutR .4s steps(5,end) forwards;}
+  .enc2.out .b i:nth-child(even){animation-name:enc2OutL;}
+  @keyframes enc2OutR{to{transform:translateX(101%);}}
+  @keyframes enc2OutL{to{transform:translateX(-101%);}}
+  .enc2.soft{background:#000;opacity:0;transition:opacity .15s;} .enc2.soft.on{opacity:.85;}
+  `;
+  function encounter2(targetEl, opts) {
+    opts = opts || {};
+    injectCss();
+    if (!document.getElementById('dlfx-css2')) { const st = document.createElement('style'); st.id = 'dlfx-css2'; st.textContent = ENC2_CSS; (document.head || document.documentElement).appendChild(st); }
+    const t = ms => new Promise(r => setTimeout(r, ms));
+    const covered = () => { try { if (opts.onCovered) opts.onCovered(); } catch (e) { console.error(e); } };
+    let ex = null;
+    if (targetEl && opts.mark !== false) {
+      ex = document.createElement('div'); ex.className = 'rpg-excl'; ex.textContent = '！';
+      try { if (getComputedStyle(targetEl).position === 'static') targetEl.style.position = 'relative'; } catch (_) {}
+      targetEl.appendChild(ex);
+    }
+    sfx('bell');
+    const ov = document.createElement('div');
+    if (reducedMotion()) {
+      ov.className = 'enc2 soft'; document.body.appendChild(ov);
+      return (async () => {
+        await t(300); ov.classList.add('on'); await t(160); covered(); await t(60);
+        ov.classList.remove('on'); await t(180); ov.remove(); if (ex) ex.remove();
+      })();
+    }
+    ov.className = 'enc2';
+    ov.innerHTML = '<div class="f"></div><div class="b">' + '<i></i>'.repeat(8) + '</div>';
+    document.body.appendChild(ov);
+    return (async () => {
+      await t(260); ov.classList.add('flash');
+      await t(220); ov.classList.remove('flash'); ov.classList.add('in'); if (ex) ex.remove();
+      await t(500); covered();
+      await t(120); ov.classList.remove('in'); ov.classList.add('out');
+      await t(420); ov.remove();
+    })();
+  }
   // 傳說藏家蓋章出場（roguelike.html bossIntro 移植；文字由呼叫端給）：resolve 於 2.35 s 移除時
   function bossIntro(o) {
     injectCss();
@@ -597,7 +705,7 @@
 
   const api = {
     init, unlockFromGesture, soundOn, mountToggle, onSound, sfx, blip, rainStart, rainStop, music,
-    shake, hitStop, flash, floatText, stamp, sparks, encounter, bossIntro, reducedMotion, setSpeed, vibrate,
+    shake, hitStop, flash, floatText, stamp, sparks, encounter, encounter2, bossIntro, reducedMotion, setSpeed, vibrate, setSound,
     get speed() { return S.speed; },
     _state: S,
   };

@@ -49,6 +49,9 @@
 @-webkit-keyframes dsFloat{0%{opacity:0;margin-top:4px}12%{opacity:1;margin-top:0}66%{opacity:1;margin-top:-18px}100%{opacity:0;margin-top:-22px}}
 @keyframes dsFloat{0%{opacity:0;margin-top:4px}12%{opacity:1;margin-top:0}66%{opacity:1;margin-top:-18px}100%{opacity:0;margin-top:-22px}}
 
+/* 舞台閃一下（只蓋舞台） */
+.ds-flash{position:absolute;left:0;top:0;width:100%;height:100%;z-index:9;opacity:0}
+
 /* 小人的透明替身（教學挖洞、飛牌、fx 定位用） */
 .ds-anc{position:absolute;z-index:1;background:transparent}
 

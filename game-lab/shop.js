@@ -756,6 +756,15 @@
       },
       play: function (on) { state.playing = on !== false; return api; },
       dim: function (k) { state.dim = k || 1; return api; },
+      // 舞台閃一下（七星回擊「舞台閃白一下」）：只蓋舞台，不蓋盤面；減少動態＝不閃
+      flash: function (color, ms) {
+        if (reducedMotion()) return api;
+        var d = document.createElement('div'); d.className = 'ds-flash'; d.style.background = color || '#fff';
+        overlay.appendChild(d); ms = ms || 160;
+        var an = null; try { an = d.animate([{ opacity: 0.92 }, { opacity: 0 }], { duration: ms, easing: 'ease-out', fill: 'forwards' }); } catch (_) {}
+        setTimeout(function () { if (an) try { an.cancel(); } catch (_) {} d.remove(); }, ms + 40);
+        return api;
+      },
       // 教學聚光（店內版）：只有目標能點，點了就 resolve
       spotlight: function (hotId, text) {
         dropMarks(function (m) { return m.spotLbl; });

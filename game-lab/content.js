@@ -101,7 +101,7 @@
   C.enemies = {
     man: {
       id: 'man', name: '男子', title: null, spr: 'e0', avatar: null,
-      blurb: '只聽排行榜。惱羞會反著出。',
+      blurb: '只聽排行榜。惱羞會反著出。', phaseBlurb: '惱羞了：嘴上喊一套，手上出另一套。',
       hp: 16, qi0: 0, qiRate: 0, ultAt: 99, ultAttr: 'c', taste: 'coh',
       disc: [T, T, T, T, T, F], hidden: null,
       phases: [{ atHp: 12, disc: [T, T, F, F, F, F] }],
@@ -112,7 +112,7 @@
     },
     copycat: {
       id: 'copycat', name: '那張我有', title: '文青同好', spr: 'e1', avatar: null,
-      blurb: '你上一手出什麼，他就跟著出。',
+      blurb: '你上一手出什麼，他就跟著出。', phaseBlurb: '急了：更愛跟你，也會記仇、虛晃。',
       hp: 18, qi0: 0, qiRate: 0, ultAt: 6, ultAttr: 'c', taste: 'coh',
       disc: [K, K, T, T, G, F], hidden: null,
       phases: [{ atHp: 9, disc: [K, K, K, G, F, F] }],
@@ -123,7 +123,7 @@
     },
     already: {
       id: 'already', name: '我早就聽過', title: '社團學長', spr: 'e2', avatar: null,
-      blurb: '專剋你上一手。還藏一手。',
+      blurb: '專剋你上一手。還藏一手。', phaseBlurb: '認真了：專剋你上一手，還藏兩手。',
       hp: 18, qi0: 0, qiRate: 0, ultAt: 6, ultAttr: 'h', taste: 'hco',
       disc: [G, G, T, F, H, H], hidden: K,
       phases: [{ atHp: 9, disc: [G, G, G, F, H, H] }],
@@ -134,7 +134,7 @@
     },
     needle: {
       id: 'needle', name: '針壓強迫症', title: '品味行家', spr: 'e6', avatar: null,
-      blurb: '剋你手上最大張的那一軸。',
+      blurb: '剋你手上最大張的那一軸。', phaseBlurb: '急了：一半盯你最大張，還藏兩手。',
       hp: 18, qi0: 0, qiRate: 0, ultAt: 6, ultAttr: 'c', taste: 'coh',
       disc: [Y, Y, T, F, H, H], hidden: G,
       phases: [{ atHp: 9, disc: [Y, Y, Y, F, H, H] }],
@@ -145,7 +145,7 @@
     },
     skip: {
       id: 'skip', name: '跳針王', title: '二手店老闆', spr: 'e4', avatar: null,
-      blurb: '不剋他，跳針就越疊越大聲。',
+      blurb: '不剋他，跳針就越疊越大聲。', phaseBlurb: '火大了：一半照喊，一半虛晃。',
       hp: 18, qi0: 0, qiRate: 0, ultAt: 6, ultAttr: 'c', taste: 'coh',
       disc: [T, T, T, F, F, K], hidden: null,
       phases: [{ atHp: 9, disc: [T, T, T, F, F, F] }],
@@ -157,7 +157,7 @@
     broke: {
       id: 'broke', name: '月底吃土', title: null, spr: null,
       avatar: { head: 'cap', hair: 'u', shirt: 'r', pants: 'd', skin: 's' },
-      blurb: '什麼都想要一點，被逼急會全押。',
+      blurb: '什麼都想要一點，被逼急會全押。', phaseBlurb: '被逼急了：氣勢 4 就全押。',
       hp: 14, qi0: 0, qiRate: 0, ultAt: 6, ultAttr: 'o', taste: 'och',
       disc: [T, F, K, G, Y, H], hidden: F,
       phases: [{ atHp: 6, ultAt: 4, disc: [T, F, K, G, Y, F] }],
@@ -169,7 +169,7 @@
     buyer: {
       id: 'buyer', name: '剁手黨', title: null, spr: null,
       avatar: { head: 'fedora', hair: 'k', shirt: 'g', pants: 'k', skin: 't' },
-      blurb: '氣勢漲得快，常放品味輾壓。',
+      blurb: '氣勢漲得快，常放品味輾壓。', phaseBlurb: '殺紅眼了：虛晃變多。',
       hp: 18, qi0: 0, qiRate: 2, ultAt: 6, ultAttr: 'reflectable', taste: 'coh',
       disc: [T, T, F, G, K, Y], hidden: null,
       phases: [{ atHp: 9, disc: [T, F, F, G, K, Y] }],
@@ -180,7 +180,7 @@
     },
     label: {
       id: 'label', name: '冷門仙人', title: '地下廠牌主理人', spr: 'e5', avatar: null,
-      blurb: '愛虛晃，氣勢漲得快。',
+      blurb: '愛虛晃，氣勢漲得快。', phaseBlurb: '認真了：一半在虛晃。',
       hp: 22, qi0: 0, qiRate: 2, ultAt: 6, ultAttr: 'reflectable', taste: 'hoc',
       disc: [F, F, G, T, K, H], hidden: Y,
       phases: [{ atHp: 11, disc: [F, F, F, G, Y, T] }],
@@ -191,7 +191,7 @@
     },
     critic: {
       id: 'critic', name: '名盤守門員', title: '資深樂評', spr: 'e3', avatar: null,
-      blurb: '盯你最大張，偶爾虛晃。',
+      blurb: '盯你最大張，偶爾虛晃。', phaseBlurb: '認真了：一半盯你最大張。',
       hp: 22, qi0: 0, qiRate: 2, ultAt: 6, ultAttr: 'reflectable', taste: 'ohc',
       disc: [Y, Y, G, T, F, H], hidden: K,
       phases: [{ atHp: 11, disc: [Y, Y, Y, G, F, K] }],
@@ -202,7 +202,7 @@
     },
     boss: {
       id: 'boss', name: '傳說藏家', title: null, spr: 'boss', avatar: null,
-      blurb: 'A 面混著騙；翻面後盯你最大張，還帶著你沒選的那張王牌。',
+      blurb: 'A 面混著騙；翻面後盯你最大張，還帶著你沒選的那張王牌。', phaseBlurb: '翻面了：盯你最大張，還亮出王牌。',
       hp: 26, qi0: 2, qiRate: 1, ultAt: 7, ultAttr: 'unreflectable', taste: 'coh',   // A2 balance: 24→26 (SPEC §8.2 step ①)
       disc: [T, F, F, G, K, H], hidden: Y,
       phases: [{ atHp: 12, disc: [Y, Y, F, F, G, T], starPlus: 1, addAce: true }],
@@ -212,6 +212,9 @@
       boss: true, phaseLabels: ['A 面', 'B 面'], voice: { freq: 147, wave: 'sine' }
     }
   };
+  // v2：變臉後「他的脾氣」那行換成 phaseBlurb（duel.js 讀 enemies[id].phaseBlurb）；全部是新句
+  C.phaseBlurbTags = {};
+  Object.keys(C.enemies).forEach(function (k) { if (C.enemies[k].phaseBlurb) C.phaseBlurbTags[k] = '新'; });
   C.normals = ['copycat', 'already', 'needle', 'skip', 'broke', 'buyer'];
   C.elites = ['label', 'critic'];
   C.prologueEnemy = 'man';
@@ -250,7 +253,8 @@
     { who: '男子', text: '「……這品味，也敢出來丟臉？」', tag: '原句' },
     { who: '', text: '你的憤怒表露無遺。', stage: { anger: true }, ui: 'retort', tag: '原句' },
     { who: '', text: '老闆不發一語，緩步走出櫃檯，站在兩人之間。', stage: { oPath: ['aisle', 'between'], anger: false }, tag: '拍板' },
-    { who: '老闆', text: '「既然雙方都不服氣，不如來一場品味對決如何？」', ui: 'duel', prompt: '▶ 品味對決', tag: '原句' }
+    // v2（SPEC-v2 §6.4）：補完後亮 ▼，再點一下出兩顆鈕：prompts[0]＝帶教學、prompts[1]＝不帶教學（男子照舊 16／12、預覽開著）
+    { who: '老闆', text: '「既然雙方都不服氣，不如來一場品味對決如何？」', ui: 'duel', prompt: '▶ 品味對決', prompts: ['▶ 品味對決', '▶ 直接開打（我會玩）'], tag: '原句' }
   ];
   C.script = {
     // 第一次玩（有聲音）：P1–P16，猜歌 → 挑王牌 → 回嘴 → 對決
@@ -473,6 +477,121 @@
     h_chain: '第一次接成 2 連', h_request: '第一次有點播的對決', h_copy: '第一次看到「跟」格', h_grudge: '第一次看到「報」格',
     h_eye: '第一次看到「盯」格', h_hidden: '第一次看到 ？ 格', h_skip: '第一次遇到跳針王', h_hegemony: '第一次出現霸權'
   };
+
+  // ===================================================================
+  // 序章引導教學（SPEC-v2 §6；tutorial.js 讀這份）。全部台詞 ≤18 字、老闆的口氣、標記 tag。
+  //   man：只有教學場用（Object.assign({}, enemies.man, tutorial.man)）；「直接開打（我會玩）」與夜晚照舊 16／12。
+  //   records：他擺的盤（第 1 手＝firstRecordId，之後照順序）；hand／draw：三張王牌各自的起手 4 張與抽牌順序（tutorial-simplify.md §4.4）。
+  //   steps：依序播。kind：say＝說明（點任何地方繼續）、do＝操作（只有 allow 的動作有效）、soft＝建議（壓暗 40%，不擋）。
+  //     target：data-tut 名稱（duel.js §3.3）、'@f'/'@p'/'@o'＝舞台替身、'card:<id>'／'card:bestC'＝手牌那張、
+  //             'info-close'＝唱片資訊的「關閉」、'shop:<hotId>'＝店裡熱點。target2／point2＝選了盤之後（attr 階段）改指的洞與手指。
+  //     allow：{card:'<id>'|'any'|'bestC'} {attr:'o'} {ace:true} {aceAttr:true} {ult:true} {ultConfirm:true} {info:'slot-e'} {close:true}
+  //     cell：這手指定他抽到的格子（'true'|'feint'）→ resolveTurn(…, { forcedCell })；previews：從這步起屬性鈕顯示預覽。
+  //     tier：只在那張王牌的路線出現（流亡的第 2 課是王牌課、沒有第 4 課）；text 可依王牌分開寫。
+  //     bubble：'above'|'below'|'free'（free＝放在最大的空白帶、不畫箭頭）；keep：泡泡不能蓋到的元素。
+  //     fx：說明步的小動畫（stars 三軸依序跳、tri 相剋三角、bar6 色條逐格亮、qi6 輾壓線閃、sweep 掃光、stake 賭注翻動、calc 算式面板展開）。
+  //     learn：這步結束後飛一張「學會了：…」小卡進頂欄「?」。delay：顯示前先等（毫秒；讓舞台上的台詞先演完）。
+  //     colorChars：單字的經／冷／硬也上屬性色。
+  // ===================================================================
+  var JUNK1 = 'david-bowie-never-let-me-down';
+  C.tutorial = {
+    man: { hp: 20, phases: [{ atHp: 18, disc: [T, T, F, F, F, F] }] },
+    records: ['coldplay-mylo-xyloto', 'westlife-coast-to-coast', 'imagine-dragons-night-visions', 'katy-perry-prism', 'oasis-be-here-now', 'linkin-park-one-more-light'],
+    hand: {
+      hall: [JUNK1, 'vashti-bunyan-just-another-diamond-day', 'david-bowie-low', 'scott-walker-tilt'],
+      pearl: [JUNK1, '黃小楨-賞味期限', 'bark-psychosis-hex', 'karen-dalton-in-my-own-time'],
+      heresy: [JUNK1, 'melt-banana-speak-squeak-creak', 'the-velvet-underground-white-light-white-heat', 'pharoah-sanders-tauhid']
+    },
+    draw: {
+      hall: ['can-ege-bamyasi', 'miles-davis-you-re-under-arrest', 'devo-oh-no-it-s-devo'],
+      pearl: ['傷心欲絕-我愛您', 'miles-davis-you-re-under-arrest', 'devo-oh-no-it-s-devo'],
+      heresy: ['einsturzende-neubauten-halber-mensch', 'miles-davis-you-re-under-arrest', 'devo-oh-no-it-s-devo']
+    },
+    steps: [
+      // ---- 開場（第 1 手，還沒出牌）
+      { id: 'D-1', kind: 'say', target: ['e-hud', '@f'], text: '這是他。上面這塊都是他的。', bubble: 'below', tag: '新' },
+      { id: 'D-2', kind: 'say', target: ['p-hud', 'hand', '@p'], text: '這是你。手上是你的盤。', bubble: 'free', tag: '新' },
+      { id: 'D-3', kind: 'say', target: ['e-hp', 'p-hp'], text: '聲望先扣光的，就輸了。', bubble: 'free', tag: '新' },
+      // ---- 第 1 課：三種星、喊、冷門剋經典
+      { id: '1-1', kind: 'say', target: ['[data-tut="e-stars"] .stars'], text: '每張盤都有經、冷、硬三種星。', fx: 'stars', colorChars: true, tag: '新' },
+      { id: '1-2', kind: 'say', target: ['e-shout'], text: '他喊經典：嘴上說要出經典。', tag: '新' },
+      { id: '1-3', kind: 'say', target: ['tri'], text: '冷門剋經典。', fx: 'tri', tri: ['oc'], tag: '新' },
+      { id: '1-4', kind: 'do', target: ['card:' + JUNK1], text: '點這張：門口一百塊那張。', allow: { card: JUNK1 }, bubble: 'above', tag: '新' },
+      { id: '1-5', kind: 'do', target: ['attr-o', 'e-shout'], text: '出冷門，剋他喊的經典！', allow: { attr: 'o' }, cell: 'true', bubble: 'free', keep: ['hand'], tag: '新' },
+      { id: '1-6', kind: 'say', target: ['result', '.dl-sheet'], text: '你冷 2－他冷 1＋賭注 1＝2', fx: 'calc', colorChars: true, bubble: 'free', tag: '新' },
+      { id: '1-7', kind: 'say', target: ['p-qi'], text: '剋中，氣勢會漲。存到 6 有大招。', fx: 'qi6', tag: '新' },
+      { id: '1-8', kind: 'do', target: ['slot-e'], text: '點他的盤，看唱片資訊。', allow: { info: 'slot-e' }, tag: '新' },
+      { id: '1-9', kind: 'do', target: ['info-close'], text: '看完點關閉回來。', allow: { close: true }, learn: 'L1', tag: '新' },
+      // ---- 第 2 課：他會出、自己挑一張（流亡：王牌課）
+      { id: '2-1', kind: 'say', target: ['e-intent'], text: '他會出什麼，看這一條。', fx: 'bar6', bubble: 'below', tag: '新' },
+      { id: '2-2', kind: 'say', target: ['e-intent'], text: '六次有五次，他出經典。', bubble: 'below', tag: '新' },
+      { id: '2-3', tier: ['hall', 'heresy'], kind: 'do', target: ['hand-0', 'hand-1', 'hand-2', 'hand-3'], target2: ['attrs'], point2: 'attr-o',
+        text: '換你：挑一張，出冷門。', allow: { card: 'any', attr: 'o' }, wrongAttr: '這手先出冷門。', cell: 'true', keep: ['hand'], tag: '新' },
+      { id: '2-3p', tier: 'pearl', kind: 'say', target: ['hand-ace'], text: '這是王牌：一軸 7 星。', fx: 'sweep', tag: '新' },
+      { id: '2-4p', tier: 'pearl', kind: 'say', target: ['hand-ace'], text: '每場只能出一次。', tag: '新' },
+      { id: '2-5p', tier: 'pearl', kind: 'say', target: ['hand-ace'], text: '被剋的話，這手互不傷害。', tag: '新' },
+      { id: '2-6p', tier: 'pearl', kind: 'do', target: ['hand-ace'], text: '王牌是冷門 7：剋他！', allow: { ace: true }, tag: '新' },
+      { id: '2-6q', tier: 'pearl', kind: 'do', target: ['attr-ace'], text: '出王牌！', allow: { aceAttr: true }, cell: 'true', bubble: 'free', keep: ['hand'], tag: '新' },
+      // （劇情）他聲望 ≤18 → 變臉：舞台上他💢＋「你很會嘛？再出冷門試試看！」；duel.js 換 phaseBlurb、「他會出」重跑
+      { id: '2-7', kind: 'say', target: ['e-intent'], text: '他惱羞了。四格是「晃」。', delay: 1500, bubble: 'below', tag: '新' },
+      { id: '2-8', kind: 'say', target: ['ult'], text: '氣勢到 6，品味輾壓亮了。', fx: 'sweep', tag: '新' },
+      { id: '2-9', kind: 'say', target: ['ult'], text: '先存著。越存，越痛。', learnTier: { pearl: 'L4' }, tag: '新' },
+      // ---- 第 3 課：賭注、晃、經剋硬、硬剋冷、預覽
+      { id: '3-1', kind: 'say', target: ['stake'], text: '賭注變 2 了，越後面越大。', fx: 'stake', tag: '新' },
+      { id: '3-2', kind: 'say', target: ['e-intent'], text: '晃：喊經典，出的是硬蕊。', bubble: 'below', tag: '新' },
+      { id: '3-3', kind: 'say', target: ['tri'], text: '硬蕊剋冷門：他在等你出冷門。', fx: 'tri', tri: ['oc', 'ho'], tag: '新' },
+      { id: '3-4', kind: 'say', target: ['tri'], text: '經典剋硬蕊：出經典剋回去。', fx: 'tri', tri: ['oc', 'ho', 'ch'], triOut: true, tag: '新' },
+      { id: '3-5', kind: 'do', target: ['card:bestC'], text: '點這張：經典 5。', allow: { card: 'bestC' }, previews: true, bubble: 'above', tag: '新' },
+      { id: '3-6', kind: 'say', target: ['attrs'], text: '按鈕上寫了會怎樣。', bubble: 'free', keep: ['hand'], tag: '新' },
+      { id: '3-7', kind: 'do', target: ['attr-c'], text: '出經典：怎樣都是他扣。', allow: { attr: 'c' }, cell: 'feint', bubble: 'free', keep: ['hand'], tag: '新' },
+      { id: '3-8', kind: 'say', target: ['result'], text: '他晃了，被你看穿：多扣 2。', learn: 'L3', tag: '新' },
+      // ---- 第 4 課：王牌（流亡已在第 2 課教過）
+      { id: '4-1', tier: ['hall', 'heresy'], kind: 'say', target: ['hand-ace'], text: '這是王牌：一軸 7 星。', fx: 'sweep', tag: '新' },
+      { id: '4-2', tier: ['hall', 'heresy'], kind: 'say', target: ['hand-ace'], text: '每場只能出一次。', tag: '新' },
+      { id: '4-3', tier: ['hall', 'heresy'], kind: 'say', target: ['hand-ace'], text: '被剋的話，這手互不傷害。', tag: '新' },
+      { id: '4-4', tier: ['hall', 'heresy'], kind: 'do', target: ['hand-ace'], text: { hall: '經典 7：他晃也好，真也好。', heresy: '他多半出硬蕊：硬碰硬！' }, allow: { ace: true }, tag: '新' },
+      { id: '4-5', tier: ['hall', 'heresy'], kind: 'do', target: ['attr-ace'], text: '出王牌！', allow: { aceAttr: true }, cell: 'feint', bubble: 'free', keep: ['hand'], tag: '新' },
+      { id: '4-6', tier: ['hall', 'heresy'], kind: 'say', target: ['hand-ace'], text: '王牌這場用掉了。', learn: 'L4', tag: '新' },
+      // ---- 第 5 課：品味輾壓收尾（建議，不擋；玩家出別的＝放手，打到分出勝負）
+      { id: '5-1', kind: 'soft', target: ['ult'], text: '氣勢 {qi}：現在放！', allow: { ult: true }, tag: '新' },
+      { id: '5-2', kind: 'soft', target: ['ult-confirm'], text: '保證命中，他這手作廢。', allow: { ultConfirm: true }, learn: 'L5', bubble: 'free', keep: ['hand'], tag: '新' }
+    ],
+    learned: { L1: '冷門剋經典', L3: '晃・經剋硬・硬剋冷', L4: '王牌', L5: '品味輾壓' },
+    ui: {
+      who: '老闆', learnedPrefix: '學會了：', wrong: '先點我指的這裡。',
+      skipTut: '跳過教學', replay: '重看教學', start: '▶ 品味對決', skip: '▶ 直接開打（我會玩）', learnedTitle: '學會的規則'
+    },
+    uiTag: '新'
+  };
+
+  // ===================================================================
+  // 店裡熱點的一句話、地圖第一次的提示、台北地圖預告（SPEC-v2 §5.5、§5.6、§6.5；ui.js 讀這些鍵，沒有的鍵就不出那句）
+  //   全部是字串（ownerHint 依畫面、mapIntro 兩句接著說）；來源標記在 shopLineTags（同形狀）。
+  // ===================================================================
+  var RAW_SHOP = {
+    crateNotYet: L('這箱今晚還沒輪到你。', '新'),            // 老闆：地圖這一欄沒有挖箱時點箱子
+    poster: L('贏一場，押的盤就是你的。', '新'),             // 老闆：公告（今晚沒有事件欄時）
+    cat: L('……喵。', '新'),                                 // 店貓
+    locked: L('這間還沒開。', '新'),                          // 台北地圖：點鎖住的圖釘
+    ownerHint: {                                             // 老闆：一句提示，依畫面
+      title: L('外面雨大，進來坐。', '新'),
+      scene: L('慢慢看，不趕你。', '新'),
+      map: L('亮著的，就是下一站。', '新'),
+      duel: L('先看他會出什麼。', '新'),
+      node: L('挑你聽得下去的。', '新'),
+      reward: L('收好，別折到封套。', '新')
+    },
+    mapIntro: [L('今晚的客人，一個一個來。', '新'), L('亮著的，就是下一站。', '新')],   // §6.5 第一次進「今晚」地圖（tutorial.js firstTime('map')）
+    titleHint: L('點店裡的東西看看：牆上的唱片、箱子、試聽機', '新'),
+    taipeiHere: L('你在這', '新'),
+    taipeiNote: L('其他店還沒開。之後一家一家開，每家的箱子、客人、老闆都不一樣。', '新'),
+    taipeiLink: L('出門看看（台北地圖・預告）', '新'),
+    backToShop: L('回店裡', '新')
+  };
+  C.shopLines = pick(RAW_SHOP, 't');
+  C.shopLineTags = pick(RAW_SHOP, 'g');
+  C.shopLineWho = { crateNotYet: '老闆', poster: '老闆', cat: '店貓', locked: '（畫面字）', ownerHint: '老闆', mapIntro: '老闆', titleHint: '（畫面字）',
+    taipeiHere: '（畫面字）', taipeiNote: '（畫面字）', taipeiLink: '（畫面字）', backToShop: '（畫面字）' };
 
   // 「？」小抄（右上，隨時可開，≤200 字；上方另畫一張相剋三角圖）
   C.help = '冷門剋經典・經典剋硬蕊・硬蕊剋冷門。剋中：賭注＋（你的星－他那張同屬性的星，不會是負的）。撞招：同屬性比星，差多少打多少。相生：經→冷→硬→經，2 連 +1 氣勢、3 連 +2 氣勢再 +2 傷害。氣場唱盤：六格隨機落一格。真＝照喊的出；晃＝出剋你剋招的；跟＝出你上一手；報＝剋你上一手；盯＝剋你最大張；？＝還沒看過。氣勢 6 起可放品味輾壓：傷害＝當下氣勢，他這手作廢。';

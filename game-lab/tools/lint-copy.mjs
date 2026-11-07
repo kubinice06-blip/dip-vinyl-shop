@@ -3,12 +3,14 @@
 //   node game-lab/tools/lint-copy.mjs          # 檢查＋產生 game-lab/LINES-REVIEW.md；有違規 exit 1
 //
 // 檢查：
-//   1. 禁用字串（店主用語、支語、破折號）：content.js 的字串、cards.js 的 pitch、ui.js／duel.js／index.html 的字串（缺檔就跳過）
+//   1. 禁用字串（店主用語、支語、破折號、舊三軸名「入」）：content.js 的字串、cards.js 的 pitch、
+//      ui.js／duel.js／tutorial.js／cardinfo.js／stage.js／shop.js／shop-props.js／fx.js／index.html 的字串、shops/*.json 的名牌（缺檔就跳過）
+//      v2（bugs.md O2、O3、O5）：三軸一律經典／冷門／硬蕊（「入4」「經／冷／入」型樣禁用）、「卡片資訊」→「唱片資訊」、台詞與提示不用破折號
 //   2. 必須原樣出現的六句（序章拍板句與原句）
 //   3. 不得出現現行尾聲第 8 句（老闆宣告耳朵專長，09-03 店主拿掉）
 //   4. 每一句都有來源標記（Beat.tag、lineTags、hintTags、helpTag、retorts[].tag、relics[].lineTag、events[].tag、pitches.json）
 //   5. 標成 原句／拍板 的句子，必須一字不差地出現在現行 roguelike.html
-//   6. 提示 ≤20 字、小抄 ≤200 字；說話的 Beat 要用「」
+//   6. 提示 ≤20 字、小抄 ≤200 字；說話的 Beat 要用「」；序章教學的老闆台詞 ≤18 字；變臉脾氣字 ≤18 字
 // 產出：game-lab/LINES-REVIEW.md（所有「新」句依場景列出，給店主過目）
 import fs from 'fs';
 import path from 'path';
@@ -89,21 +91,45 @@ function htmlStrings(src) {
 const FORBID = ['——', '櫃台', '入耳', '遺物', '卡片資訊', '派對', '全場大合唱', '心聲', '反咬',
   '視頻', '質量', '信息', '網絡', '軟件', '默認', '用戶', '屏幕', '登錄', '鼠標', '硬盤', '打印', '緩存', '加載'];
 const HAS_CJK = /[㐀-鿿　-〿＀-￯]/;
+// 舊三軸名「入」（原版戰利品寫「經2 冷1 入4」；O2）：「入」後面直接接數字、夾在三軸分隔符之間、或整個字串就是「入」
+const AXIS_IN = [/(^|[^一-鿿])入\s?[0-9０-９]/, /[經冷](典|門)?\s?[0-9０-９]*\s?[／/、・|｜ ]\s?入(?![一-鿿])/, /^入[:：]?$/];
 function scanStrings(file, strings, opts = {}) {
   for (const { s, line } of strings) {
     if (!s) continue;
     for (const f of FORBID) if (s.includes(f)) err(file + ':' + line, '禁用字串「' + f + '」→ ' + s.slice(0, 60));
     // 單一破折號：只在含中文的字串（畫面上的對白／說明）裡禁止
     if (s.includes('—') && (opts.allDash || HAS_CJK.test(s))) err(file + ':' + line, '破折號「—」→ ' + s.slice(0, 60));
+    for (const re of AXIS_IN) if (re.test(s)) err(file + ':' + line, '三軸寫成舊名「入」（要寫硬蕊）→ ' + s.slice(0, 60));
   }
 }
 const read = f => fs.existsSync(f) ? fs.readFileSync(f, 'utf8') : null;
 const scanned = [];
-for (const [rel, kind] of [['content.js', 'js'], ['ui.js', 'js'], ['duel.js', 'js'], ['index.html', 'html']]) {
+for (const [rel, kind] of [['content.js', 'js'], ['ui.js', 'js'], ['duel.js', 'js'], ['tutorial.js', 'js'], ['cardinfo.js', 'js'], ['stage.js', 'js'], ['shop.js', 'js'],
+  ['shop-props.js', 'js'], ['fx.js', 'js'], ['index.html', 'html']]) {
   const src = read(path.join(LAB, rel));
   if (src == null) { warns.push('略過（尚無此檔）：' + rel); continue; }
   scanned.push(rel);
   scanStrings(rel, kind === 'html' ? htmlStrings(src) : jsStrings(src), { allDash: rel === 'content.js' });
+}
+
+// 店內名牌（shops/*.json：熱點 label、revealLabel、店名、區名；SPEC-v2 §5.2 放在 layout 裡，不搬進 content.js）
+const SHOP_KEYS = ['label', 'revealLabel', 'name', 'district', 'note'];
+const shopLabels = [];
+const shopDir = path.join(LAB, 'shops');
+if (fs.existsSync(shopDir)) {
+  for (const f of fs.readdirSync(shopDir).filter(x => x.endsWith('.json')).sort()) {
+    let J; try { J = JSON.parse(fs.readFileSync(path.join(shopDir, f), 'utf8')); } catch (e) { err('shops/' + f, 'JSON 讀不了：' + e.message); continue; }
+    const walk = (o, p) => {
+      if (Array.isArray(o)) o.forEach((v, k) => walk(v, p + '[' + k + ']'));
+      else if (o && typeof o === 'object') for (const [k, v] of Object.entries(o)) {
+        if (typeof v === 'string' && SHOP_KEYS.includes(k) && HAS_CJK.test(v)) shopLabels.push({ file: 'shops/' + f, where: p + '.' + k, s: v });
+        else walk(v, p + '.' + k);
+      }
+    };
+    walk(J, '');
+  }
+  scanStrings('shops', shopLabels.map(x => ({ s: x.s, line: x.file + x.where })), { allDash: true });
+  scanned.push('shops/*.json（名牌 ' + shopLabels.length + '）');
 }
 
 // ---------------------------------------------------------------------------
@@ -142,9 +168,12 @@ for (const [key, beats] of Object.entries(C.script || {})) {
     if (b.ui && !['guess', 'acePick', 'retort', 'duel', 'stake', 'relic', 'map'].includes(b.ui)) err(where, 'ui 不合法：' + b.ui);
     const dup = b.who + '|' + b.text + '|' + b.tag;
     // 面板提示／蓋章字：現行 roguelike.html 有原文就算原句，否則算新句；同一句只列一次
-    for (const extra of ['prompt', 'stamp', 'quietText']) if (b[extra] && !seenExtra.has(b[extra])) {
-      seenExtra.add(b[extra]);
-      items.push({ scene: SCENE[key] || key, where: where + '.' + extra, who: '（畫面字）', text: b[extra], tag: ORIG && ORIG.includes(b[extra]) ? '原句' : '新', ui: true });
+    const extras = [];
+    for (const extra of ['prompt', 'stamp', 'quietText']) if (b[extra]) extras.push([extra, b[extra]]);
+    (b.prompts || []).forEach((t, k) => extras.push(['prompts[' + k + ']', t]));
+    for (const [extra, t] of extras) if (!seenExtra.has(t)) {
+      seenExtra.add(t);
+      items.push({ scene: SCENE[key] || key, where: where + '.' + extra, who: '（畫面字）', text: t, tag: ORIG && ORIG.includes(t) ? '原句' : '新', ui: true });
     }
     if (seenBeat.has(dup)) return; seenBeat.add(dup);
     items.push({ scene: SCENE[key] || key, where, who: b.who || '旁白', text: b.text, tag: b.tag });
@@ -205,6 +234,55 @@ for (const [id, r] of Object.entries(C.relics || {})) if (r.line) {
     for (const s of [o.label, o.note, o.result]) scanStrings('events.' + ev.id, [{ s, line: 'option' + k }], { allDash: true });
   });
 });
+// v2：序章引導教學（SPEC-v2 §6.3；老闆的泡泡 ≤18 字）
+const TUT = C.tutorial;
+if (TUT) {
+  const tlen = t => [...String(t).replace(/\{qi\}/g, '10')].length;
+  for (const st of TUT.steps || []) {
+    const texts = typeof st.text === 'object' ? Object.entries(st.text).map(([t, x]) => [t, x]) : [[null, st.text]];
+    for (const [tier, t] of texts) {
+      const where = 'tutorial.steps.' + st.id + (tier ? '.' + tier : '');
+      if (typeof t !== 'string' || !t) { err(where, '沒有台詞'); continue; }
+      if (!TAG_OK(st.tag)) err(where, '沒有合法 tag');
+      if (tlen(t) > 18) err(where, '教學台詞超過 18 字（' + tlen(t) + '）：' + t);
+      if (/——|—/.test(t)) err(where, '教學台詞有破折號：' + t);
+      const lessonOf = id => id.startsWith('D') ? '開場' : '第 ' + id[0] + ' 課';
+      const tierZh = { hall: '殿堂', pearl: '流亡', heresy: '異端' };
+      const only = st.tier ? '（' + [].concat(st.tier).map(x => tierZh[x]).join('、') + '）' : '';
+      items.push({ scene: '序章引導教學・' + lessonOf(st.id) + '（老闆的泡泡）', where, who: '老闆・' + st.id + (tier ? '・' + tierZh[tier] : only), text: t, tag: st.tag });
+      if (st.wrongAttr) items.push({ scene: '序章引導教學・點錯時', where: where + '.wrongAttr', who: '老闆', text: st.wrongAttr, tag: st.tag });
+    }
+  }
+  for (const [k, v] of Object.entries(TUT.ui || {})) {
+    if (!TAG_OK(TUT.uiTag)) err('tutorial.ui', '沒有 uiTag');
+    if ([...v].length > 18) err('tutorial.ui.' + k, '超過 18 字：' + v);
+    items.push({ scene: k === 'wrong' ? '序章引導教學・點錯時' : '序章引導教學・按鈕與標題', where: 'tutorial.ui.' + k, who: k === 'wrong' ? '老闆' : '（畫面字）', text: v, tag: TUT.uiTag });
+  }
+  for (const [k, v] of Object.entries(TUT.learned || {})) items.push({ scene: '序章引導教學・學會的小卡', where: 'tutorial.learned.' + k, who: '（畫面字）', text: (TUT.ui && TUT.ui.learnedPrefix || '') + v, tag: TUT.uiTag });
+}
+// v2：變臉後的脾氣字
+for (const [id, e] of Object.entries(C.enemies || {})) if (e.phaseBlurb) {
+  const tag = (C.phaseBlurbTags || {})[id];
+  if (!TAG_OK(tag)) err('enemies.' + id + '.phaseBlurb', '沒有 tag（phaseBlurbTags）');
+  if ([...e.phaseBlurb].length > 18) err('enemies.' + id + '.phaseBlurb', '超過 18 字：' + e.phaseBlurb);
+  items.push({ scene: '對決・變臉後的脾氣字（phaseBlurb）', where: 'enemies.' + id + '.phaseBlurb', who: e.name, text: e.phaseBlurb, tag });
+}
+// v2：店裡熱點的一句話、地圖第一次的提示、台北預告（C.shopLines ↔ C.shopLineTags 同形狀）
+if (C.shopLines) {
+  const SHORT = ['crateNotYet', 'poster', 'cat', 'locked', 'ownerHint', 'mapIntro', 'taipeiHere', 'backToShop'];
+  const walkS = (val, tag, key, where) => {
+    if (Array.isArray(val)) return val.forEach((v, k) => walkS(v, Array.isArray(tag) ? tag[k] : tag, key, where + '[' + k + ']'));
+    if (val && typeof val === 'object') return Object.entries(val).forEach(([k, v]) => walkS(v, tag && tag[k], key, where + '.' + k));
+    if (typeof val !== 'string' || !val) { err(where, '不是字串'); return; }
+    if (!TAG_OK(tag)) err(where, '沒有合法 tag（shopLineTags）：' + val);
+    if (SHORT.includes(key) && [...val].length > 20) err(where, '超過 20 字：' + val);
+    items.push({ scene: key === 'mapIntro' ? '今晚地圖・第一次進來（soft 提示）' : /^taipei|backToShop/.test(key) ? '台北地圖預告' : '店裡熱點（點了說一句）',
+      where, who: ((C.shopLineWho || {})[key]) || '老闆', key: where.replace(/^shopLines\./, ''), text: val, tag });
+  };
+  for (const [k, v] of Object.entries(C.shopLines)) walkS(v, (C.shopLineTags || {})[k], k, 'shopLines.' + k);
+}
+// 店內名牌（shops/*.json）：列進審稿表（都是新字）
+for (const x of shopLabels) items.push({ scene: '店內名牌（' + x.file + '）', where: x.file + x.where, who: '（畫面字）', text: x.s, tag: '新' });
 if (C.secondNight) items.push({ scene: '第二夜預告', where: 'secondNight', who: '（畫面字）', text: C.secondNight.name + '（' + C.secondNight.title + '）／' + C.secondNight.label, tag: C.secondNight.tag });
 for (const [id, p] of Object.entries(pitches)) {
   if (id.startsWith('_')) continue;

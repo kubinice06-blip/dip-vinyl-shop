@@ -3,7 +3,7 @@
 > 由 `node game-lab/tools/lint-copy.mjs` 產生，請勿手改。要改句子，直接改 `game-lab/content.js`（劇本、台詞、提示、事件）或 `game-lab/tools/pitches.json`（推薦語，改完重跑 `node game-lab/tools/bake-cards.mjs`），再重跑本檢查。
 > 這份只列**新句**（試做版新寫、或取自四份概念稿，店主還沒看過）。標成「原句」「拍板」的句子已與現行 `roguelike.html` 逐字比對（36 句，全部一致才會產生這份）。
 
-統計：原句 34、拍板 2、新 182（同一句在有聲／安靜兩版序章只算一次）。
+統計：原句 34、拍板 2、新 292（同一句在有聲／安靜兩版序章只算一次）。
 
 ## 序章（有聲音）
 
@@ -15,6 +15,7 @@
 | 旁白 | （點封套換著聽，挑一張帶走。） | 本規格新寫 | `script.prologue[7]` |
 | 老闆 | 「門口那箱一百塊三張，順手帶著。」 | 本規格新寫 | `script.prologue[10]` |
 | （畫面字） | ▶ 品味對決 | 本規格新寫 | `script.prologue[16].prompt` |
+| （畫面字） | ▶ 直接開打（我會玩） | 本規格新寫 | `script.prologue[16].prompts[1]` |
 
 ## 序章（安靜）
 
@@ -319,6 +320,195 @@
 | 旁白 | 客人把手機遞過來：網拍寫「九成新，聽不到十次」。 | 本規格新寫 | `events.ninetynine.text` |
 | 選項 | 下標｜得到一張盤（先亮給你看），但三軸各 −1（最低 1，盤上標「九成新」）｜→ 寄來了。封套上有一圈咖啡漬。 | 本規格新寫 | `events.ninetynine.options[0]` |
 | 選項 | 算了｜回 2 聲望｜→ 你把手機還給他。他請你喝了口茶。 | 本規格新寫 | `events.ninetynine.options[1]` |
+
+## 序章引導教學・開場（老闆的泡泡）
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| 老闆・D-1 | 這是他。上面這塊都是他的。 | 本規格新寫 | `tutorial.steps.D-1` |
+| 老闆・D-2 | 這是你。手上是你的盤。 | 本規格新寫 | `tutorial.steps.D-2` |
+| 老闆・D-3 | 聲望先扣光的，就輸了。 | 本規格新寫 | `tutorial.steps.D-3` |
+
+## 序章引導教學・第 1 課（老闆的泡泡）
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| 老闆・1-1 | 每張盤都有經、冷、硬三種星。 | 本規格新寫 | `tutorial.steps.1-1` |
+| 老闆・1-2 | 他喊經典：嘴上說要出經典。 | 本規格新寫 | `tutorial.steps.1-2` |
+| 老闆・1-3 | 冷門剋經典。 | 本規格新寫 | `tutorial.steps.1-3` |
+| 老闆・1-4 | 點這張：門口一百塊那張。 | 本規格新寫 | `tutorial.steps.1-4` |
+| 老闆・1-5 | 出冷門，剋他喊的經典！ | 本規格新寫 | `tutorial.steps.1-5` |
+| 老闆・1-6 | 你冷 2－他冷 1＋賭注 1＝2 | 本規格新寫 | `tutorial.steps.1-6` |
+| 老闆・1-7 | 剋中，氣勢會漲。存到 6 有大招。 | 本規格新寫 | `tutorial.steps.1-7` |
+| 老闆・1-8 | 點他的盤，看唱片資訊。 | 本規格新寫 | `tutorial.steps.1-8` |
+| 老闆・1-9 | 看完點關閉回來。 | 本規格新寫 | `tutorial.steps.1-9` |
+
+## 序章引導教學・第 2 課（老闆的泡泡）
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| 老闆・2-1 | 他會出什麼，看這一條。 | 本規格新寫 | `tutorial.steps.2-1` |
+| 老闆・2-2 | 六次有五次，他出經典。 | 本規格新寫 | `tutorial.steps.2-2` |
+| 老闆・2-3（殿堂、異端） | 換你：挑一張，出冷門。 | 本規格新寫 | `tutorial.steps.2-3` |
+| 老闆・2-3p（流亡） | 這是王牌：一軸 7 星。 | 本規格新寫 | `tutorial.steps.2-3p` |
+| 老闆・2-4p（流亡） | 每場只能出一次。 | 本規格新寫 | `tutorial.steps.2-4p` |
+| 老闆・2-5p（流亡） | 被剋的話，這手互不傷害。 | 本規格新寫 | `tutorial.steps.2-5p` |
+| 老闆・2-6p（流亡） | 王牌是冷門 7：剋他！ | 本規格新寫 | `tutorial.steps.2-6p` |
+| 老闆・2-6q（流亡） | 出王牌！ | 本規格新寫 | `tutorial.steps.2-6q` |
+| 老闆・2-7 | 他惱羞了。四格是「晃」。 | 本規格新寫 | `tutorial.steps.2-7` |
+| 老闆・2-8 | 氣勢到 6，品味輾壓亮了。 | 本規格新寫 | `tutorial.steps.2-8` |
+| 老闆・2-9 | 先存著。越存，越痛。 | 本規格新寫 | `tutorial.steps.2-9` |
+
+## 序章引導教學・點錯時
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| 老闆 | 這手先出冷門。 | 本規格新寫 | `tutorial.steps.2-3.wrongAttr` |
+| 老闆 | 先點我指的這裡。 | 本規格新寫 | `tutorial.ui.wrong` |
+
+## 序章引導教學・第 3 課（老闆的泡泡）
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| 老闆・3-1 | 賭注變 2 了，越後面越大。 | 本規格新寫 | `tutorial.steps.3-1` |
+| 老闆・3-2 | 晃：喊經典，出的是硬蕊。 | 本規格新寫 | `tutorial.steps.3-2` |
+| 老闆・3-3 | 硬蕊剋冷門：他在等你出冷門。 | 本規格新寫 | `tutorial.steps.3-3` |
+| 老闆・3-4 | 經典剋硬蕊：出經典剋回去。 | 本規格新寫 | `tutorial.steps.3-4` |
+| 老闆・3-5 | 點這張：經典 5。 | 本規格新寫 | `tutorial.steps.3-5` |
+| 老闆・3-6 | 按鈕上寫了會怎樣。 | 本規格新寫 | `tutorial.steps.3-6` |
+| 老闆・3-7 | 出經典：怎樣都是他扣。 | 本規格新寫 | `tutorial.steps.3-7` |
+| 老闆・3-8 | 他晃了，被你看穿：多扣 2。 | 本規格新寫 | `tutorial.steps.3-8` |
+
+## 序章引導教學・第 4 課（老闆的泡泡）
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| 老闆・4-1（殿堂、異端） | 這是王牌：一軸 7 星。 | 本規格新寫 | `tutorial.steps.4-1` |
+| 老闆・4-2（殿堂、異端） | 每場只能出一次。 | 本規格新寫 | `tutorial.steps.4-2` |
+| 老闆・4-3（殿堂、異端） | 被剋的話，這手互不傷害。 | 本規格新寫 | `tutorial.steps.4-3` |
+| 老闆・4-4・殿堂 | 經典 7：他晃也好，真也好。 | 本規格新寫 | `tutorial.steps.4-4.hall` |
+| 老闆・4-4・異端 | 他多半出硬蕊：硬碰硬！ | 本規格新寫 | `tutorial.steps.4-4.heresy` |
+| 老闆・4-5（殿堂、異端） | 出王牌！ | 本規格新寫 | `tutorial.steps.4-5` |
+| 老闆・4-6（殿堂、異端） | 王牌這場用掉了。 | 本規格新寫 | `tutorial.steps.4-6` |
+
+## 序章引導教學・第 5 課（老闆的泡泡）
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| 老闆・5-1 | 氣勢 {qi}：現在放！ | 本規格新寫 | `tutorial.steps.5-1` |
+| 老闆・5-2 | 保證命中，他這手作廢。 | 本規格新寫 | `tutorial.steps.5-2` |
+
+## 序章引導教學・按鈕與標題
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| （畫面字） | 老闆 | 本規格新寫 | `tutorial.ui.who` |
+| （畫面字） | 學會了： | 本規格新寫 | `tutorial.ui.learnedPrefix` |
+| （畫面字） | 跳過教學 | 本規格新寫 | `tutorial.ui.skipTut` |
+| （畫面字） | 重看教學 | 本規格新寫 | `tutorial.ui.replay` |
+| （畫面字） | ▶ 品味對決 | 本規格新寫 | `tutorial.ui.start` |
+| （畫面字） | ▶ 直接開打（我會玩） | 本規格新寫 | `tutorial.ui.skip` |
+| （畫面字） | 學會的規則 | 本規格新寫 | `tutorial.ui.learnedTitle` |
+
+## 序章引導教學・學會的小卡
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| （畫面字） | 學會了：冷門剋經典 | 本規格新寫 | `tutorial.learned.L1` |
+| （畫面字） | 學會了：晃・經剋硬・硬剋冷 | 本規格新寫 | `tutorial.learned.L3` |
+| （畫面字） | 學會了：王牌 | 本規格新寫 | `tutorial.learned.L4` |
+| （畫面字） | 學會了：品味輾壓 | 本規格新寫 | `tutorial.learned.L5` |
+
+## 對決・變臉後的脾氣字（phaseBlurb）
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| 男子 | 惱羞了：嘴上喊一套，手上出另一套。 | 本規格新寫 | `enemies.man.phaseBlurb` |
+| 那張我有 | 急了：更愛跟你，也會記仇、虛晃。 | 本規格新寫 | `enemies.copycat.phaseBlurb` |
+| 我早就聽過 | 認真了：專剋你上一手，還藏兩手。 | 本規格新寫 | `enemies.already.phaseBlurb` |
+| 針壓強迫症 | 急了：一半盯你最大張，還藏兩手。 | 本規格新寫 | `enemies.needle.phaseBlurb` |
+| 跳針王 | 火大了：一半照喊，一半虛晃。 | 本規格新寫 | `enemies.skip.phaseBlurb` |
+| 月底吃土 | 被逼急了：氣勢 4 就全押。 | 本規格新寫 | `enemies.broke.phaseBlurb` |
+| 剁手黨 | 殺紅眼了：虛晃變多。 | 本規格新寫 | `enemies.buyer.phaseBlurb` |
+| 冷門仙人 | 認真了：一半在虛晃。 | 本規格新寫 | `enemies.label.phaseBlurb` |
+| 名盤守門員 | 認真了：一半盯你最大張。 | 本規格新寫 | `enemies.critic.phaseBlurb` |
+| 傳說藏家 | 翻面了：盯你最大張，還亮出王牌。 | 本規格新寫 | `enemies.boss.phaseBlurb` |
+
+## 店裡熱點（點了說一句）
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| 老闆・crateNotYet | 這箱今晚還沒輪到你。 | 本規格新寫 | `shopLines.crateNotYet` |
+| 老闆・poster | 贏一場，押的盤就是你的。 | 本規格新寫 | `shopLines.poster` |
+| 店貓・cat | ……喵。 | 本規格新寫 | `shopLines.cat` |
+| （畫面字）・locked | 這間還沒開。 | 本規格新寫 | `shopLines.locked` |
+| 老闆・ownerHint.title | 外面雨大，進來坐。 | 本規格新寫 | `shopLines.ownerHint.title` |
+| 老闆・ownerHint.scene | 慢慢看，不趕你。 | 本規格新寫 | `shopLines.ownerHint.scene` |
+| 老闆・ownerHint.map | 亮著的，就是下一站。 | 本規格新寫 | `shopLines.ownerHint.map` |
+| 老闆・ownerHint.duel | 先看他會出什麼。 | 本規格新寫 | `shopLines.ownerHint.duel` |
+| 老闆・ownerHint.node | 挑你聽得下去的。 | 本規格新寫 | `shopLines.ownerHint.node` |
+| 老闆・ownerHint.reward | 收好，別折到封套。 | 本規格新寫 | `shopLines.ownerHint.reward` |
+| （畫面字）・titleHint | 點店裡的東西看看：牆上的唱片、箱子、試聽機 | 本規格新寫 | `shopLines.titleHint` |
+
+## 今晚地圖・第一次進來（soft 提示）
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| 老闆・mapIntro[0] | 今晚的客人，一個一個來。 | 本規格新寫 | `shopLines.mapIntro[0]` |
+| 老闆・mapIntro[1] | 亮著的，就是下一站。 | 本規格新寫 | `shopLines.mapIntro[1]` |
+
+## 台北地圖預告
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| （畫面字）・taipeiHere | 你在這 | 本規格新寫 | `shopLines.taipeiHere` |
+| （畫面字）・taipeiNote | 其他店還沒開。之後一家一家開，每家的箱子、客人、老闆都不一樣。 | 本規格新寫 | `shopLines.taipeiNote` |
+| （畫面字）・taipeiLink | 出門看看（台北地圖・預告） | 本規格新寫 | `shopLines.taipeiLink` |
+| （畫面字）・backToShop | 回店裡 | 本規格新寫 | `shopLines.backToShop` |
+
+## 店內名牌（shops/basement.json）
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| （畫面字） | 霓虹地下室 | 本規格新寫 | `shops/basement.json.name` |
+| （畫面字） | （虛構店家・示範用） | 本規格新寫 | `shops/basement.json.district` |
+| （畫面字） | 上樓 | 本規格新寫 | `shops/basement.json.props[7].hot.label` |
+| （畫面字） | 試聽台 | 本規格新寫 | `shops/basement.json.props[11].hot.label` |
+| （畫面字） | 櫃檯 | 本規格新寫 | `shops/basement.json.props[14].hot.label` |
+| （畫面字） | 黑貓 | 本規格新寫 | `shops/basement.json.props[19].hot.label` |
+| （畫面字） | 龐克區 | 本規格新寫 | `shops/basement.json.props[20].hot.label` |
+| （畫面字） | 日本區 | 本規格新寫 | `shops/basement.json.props[21].hot.label` |
+| （畫面字） | 特價區 | 本規格新寫 | `shops/basement.json.props[22].hot.label` |
+| （畫面字） | 老闆 | 本規格新寫 | `shops/basement.json.hotspots[0].label` |
+
+## 店內名牌（shops/dip.json）
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| （畫面字） | （本店） | 本規格新寫 | `shops/dip.json.district` |
+| （畫面字） | 門口 | 本規格新寫 | `shops/dip.json.props[1].hot.label` |
+| （畫面字） | 牆上的唱片 | 本規格新寫 | `shops/dip.json.props[2].revealLabel` |
+| （畫面字） | 公告 | 本規格新寫 | `shops/dip.json.props[4].hot.label` |
+| （畫面字） | 試聽機 | 本規格新寫 | `shops/dip.json.props[11].hot.label` |
+| （畫面字） | 櫃檯 | 本規格新寫 | `shops/dip.json.props[14].hot.label` |
+| （畫面字） | 店貓 | 本規格新寫 | `shops/dip.json.props[15].hot.label` |
+| （畫面字） | 爵士區 | 本規格新寫 | `shops/dip.json.props[21].hot.label` |
+| （畫面字） | 台灣區 | 本規格新寫 | `shops/dip.json.props[22].hot.label` |
+| （畫面字） | 噪音區 | 本規格新寫 | `shops/dip.json.props[23].hot.label` |
+| （畫面字） | 老闆 | 本規格新寫 | `shops/dip.json.hotspots[0].label` |
+
+## 店內名牌（shops/taipei.json）
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| （畫面字） | 台北市 | 本規格新寫 | `shops/taipei.json.name` |
+| （畫面字） | 踢館地圖（示意） | 本規格新寫 | `shops/taipei.json.district` |
+| （畫面字） | dip vinyl（本店） | 本規格新寫 | `shops/taipei.json.props[2].hot.label` |
+| （畫面字） | ？？？（還沒開） | 本規格新寫 | `shops/taipei.json.props[3].hot.label` |
+| （畫面字） | ？？？（還沒開） | 本規格新寫 | `shops/taipei.json.props[4].hot.label` |
+| （畫面字） | ？？？（還沒開） | 本規格新寫 | `shops/taipei.json.props[5].hot.label` |
+| （畫面字） | ？？？（還沒開） | 本規格新寫 | `shops/taipei.json.props[6].hot.label` |
+| （畫面字） | 示意地圖：只有本店開著；其他圖釘鎖住（v2 預告） | 本規格新寫 | `shops/taipei.json.meta.note` |
 
 ## 第二夜預告
 

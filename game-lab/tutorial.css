@@ -1,0 +1,89 @@
+/* game-lab/tutorial.css — 序章引導教學（Agent T；SPEC-v2 §6.2；shots/mock/tut-0/1/2.png）
+ * #tut：body 層、z 50、本身不吃點擊。會吃點擊的只有：遮罩（操作步：洞外＝點錯）、說明步的整片接點層、「跳過教學」。
+ * 洞＝SVG evenodd 路徑挖掉（不用 <mask>，iOS 最穩）；洞裡的點擊直接打到底下的目標。
+ * 不靠 backface-visibility、不用 100vh；長按目標 -webkit-touch-callout:none；touch-action:manipulation。 */
+#tut{position:fixed;left:0;top:0;right:0;bottom:0;z-index:50;pointer-events:none;
+  -webkit-user-select:none;user-select:none;-webkit-touch-callout:none;-webkit-tap-highlight-color:transparent;
+  font-family:var(--zh,'Noto Sans TC','PingFang TC','Heiti TC',sans-serif);color:var(--ink,#111)}
+#tut:not(.on){display:none}
+#tut.over-modal{z-index:75}                              /* 1-9：泡泡與手指要在唱片資訊（z 70）上面，遮罩收起 */
+#tut .tut-mask{position:absolute;left:0;top:0;width:100%;height:100%;pointer-events:none;overflow:visible}
+#tut .tut-mask .m,#tut .tut-mask .tb{fill:#000;fill-opacity:.62}
+#tut .tut-mask.soft .m,#tut .tut-mask.soft .tb{fill-opacity:.4}
+#tut .tut-mask .tb{pointer-events:none}                  /* 頂欄只壓暗：⏸、? 隨時按得到 */
+#tut .tut-mask.block .m{pointer-events:visiblePainted}   /* 操作步：洞外吃點擊（點錯）；洞裡因 evenodd 不算 painted，點擊穿過去 */
+#tut .tut-catch{position:absolute;left:0;right:0;top:0;bottom:0;pointer-events:auto;touch-action:manipulation;cursor:pointer;background:transparent}
+#tut .tut-catch[hidden]{display:none}
+#tut .tut-catch.clear{cursor:default}
+
+/* 洞框：2px 金＋外圈 2px 白，1.15 s 脈動（原版 .tut-glow） */
+#tut .tut-rings{position:absolute;left:0;top:0;width:0;height:0}
+#tut .tut-ring{position:absolute;box-sizing:border-box;border:2px solid var(--gold,#b8860b);box-shadow:0 0 0 2px rgba(255,255,255,.92);pointer-events:none;
+  -webkit-animation:tutRing 1.15s ease-in-out infinite;animation:tutRing 1.15s ease-in-out infinite}
+@-webkit-keyframes tutRing{50%{box-shadow:0 0 0 2px rgba(255,255,255,.92),0 0 0 6px rgba(184,134,11,.45)}}
+@keyframes tutRing{50%{box-shadow:0 0 0 2px rgba(255,255,255,.92),0 0 0 6px rgba(184,134,11,.45)}}
+#tut.m-modal .tut-ring{border-width:3px}
+
+/* 老闆的一句話：白底 2px 黑框、左邊 34px 像素頭像、上一行金色小字「老闆」、正文 15px 粗、最多兩行 */
+#tut .tut-bub{position:absolute;box-sizing:border-box;background:#fff;border:2px solid var(--ink,#111);padding:7px 26px 8px 52px;min-height:52px;pointer-events:none;
+  box-shadow:3px 3px 0 rgba(0,0,0,.35)}
+#tut .tut-bub[hidden]{display:none}
+#tut .tut-bub .av{position:absolute;left:8px;top:8px;width:34px;height:34px;box-sizing:border-box;background:#f3efe6;border:1px solid var(--ink,#111);
+  display:flex;align-items:center;justify-content:center;overflow:hidden}
+#tut .tut-bub .av svg{display:block;image-rendering:pixelated;image-rendering:-webkit-optimize-contrast}
+#tut .tut-bub .who{display:block;font-size:10px;color:var(--gold,#b8860b);font-weight:700;letter-spacing:.12em;line-height:14px}
+#tut .tut-bub .tx{display:block;font-size:15px;font-weight:700;line-height:22px;letter-spacing:.03em;line-break:strict;word-break:normal;overflow-wrap:normal}
+#tut .tut-bub .tx b{font-weight:700}
+#tut .tut-bub .tx b.c{color:var(--c,#1f5fae)}
+#tut .tut-bub .tx b.o{color:var(--o,#6a3fa0)}
+#tut .tut-bub .tx b.h{color:var(--h,#c11628)}
+#tut .tut-bub.warn{border-color:var(--red,#c11628)}
+#tut .tut-bub.warn .tx{color:var(--red,#c11628)}
+#tut .tut-bub .nx{position:absolute;right:8px;bottom:5px;font-size:11px;line-height:1;-webkit-animation:tutBlink 1s steps(2,start) infinite;animation:tutBlink 1s steps(2,start) infinite}
+@-webkit-keyframes tutBlink{50%{opacity:0}}
+@keyframes tutBlink{50%{opacity:0}}
+#tut .tut-bub::after{content:'';position:absolute;width:10px;height:10px;background:#fff;border-right:2px solid var(--ink,#111);border-bottom:2px solid var(--ink,#111);
+  left:var(--ax,50%);display:none;-webkit-transform:translateX(-50%) rotate(45deg);transform:translateX(-50%) rotate(45deg)}
+#tut .tut-bub.up::after{display:block;bottom:-7px}
+#tut .tut-bub.down::after{display:block;top:-7px;-webkit-transform:translateX(-50%) rotate(225deg);transform:translateX(-50%) rotate(225deg)}
+
+/* 像素手指：HAND 9×9 ×3＝27px，0.9 s 點兩下循環 */
+#tut .tut-hand{position:absolute;width:27px;height:27px;pointer-events:none;filter:drop-shadow(1px 1px 0 rgba(0,0,0,.45));
+  -webkit-animation:tutTap .9s steps(2,end) infinite;animation:tutTap .9s steps(2,end) infinite}
+#tut .tut-hand[hidden]{display:none}
+#tut .tut-hand svg{display:block;width:27px;height:27px}
+@-webkit-keyframes tutTap{50%{-webkit-transform:translate(-2px,-4px);transform:translate(-2px,-4px)}}
+@keyframes tutTap{50%{-webkit-transform:translate(-2px,-4px);transform:translate(-2px,-4px)}}
+
+/* 跳過教學：右上、舞台上方，白框半透明 */
+#tut .tut-skip{position:absolute;right:8px;top:38px;pointer-events:auto;touch-action:manipulation;font:700 11px/1 var(--zh,'Noto Sans TC',sans-serif);
+  color:#fff;background:rgba(0,0,0,.35);border:1px solid rgba(255,255,255,.75);padding:0 9px;height:28px;min-width:44px;cursor:pointer;letter-spacing:.06em;
+  -webkit-appearance:none;appearance:none;border-radius:0}
+#tut .tut-skip[hidden]{display:none}
+#tut .tut-skip::before{content:'';position:absolute;left:-6px;right:-6px;top:-8px;bottom:-8px}  /* 熱區 ≥44 */
+
+/* 小動畫 */
+#tut .tut-fx{position:absolute;left:0;top:0;width:0;height:0}
+#tut .tut-sweep{position:absolute;overflow:hidden;pointer-events:none}
+#tut .tut-sweep i{position:absolute;top:-10%;bottom:-10%;left:0;width:34%;background:linear-gradient(90deg,rgba(255,255,255,0),rgba(255,255,255,.85),rgba(255,255,255,0))}
+#tut .tut-learn{position:absolute;pointer-events:none;background:var(--cream,#fffbe9);border:2px solid var(--gold,#b8860b);box-shadow:0 0 0 2px #fff,4px 4px 0 rgba(0,0,0,.35);
+  padding:8px 14px 9px;text-align:center;white-space:nowrap;z-index:2}
+#tut .tut-learn small{display:block;font-size:10px;letter-spacing:.2em;color:var(--gold,#b8860b);font-weight:700;line-height:14px}
+#tut .tut-learn>b{display:block;font-size:16px;line-height:22px;letter-spacing:.04em;color:var(--cream-ink,#5a4a10)}
+#tut .tut-learn>b b{display:inline}
+#tut .tut-learn>b b.c{color:var(--c,#1f5fae)}#tut .tut-learn>b b.o{color:var(--o,#6a3fa0)}#tut .tut-learn>b b.h{color:var(--h,#c11628)}
+
+/* 相剋三角：畫進 duel.js 的 [data-tut=tri]（110×100） */
+.tut-tri{position:absolute;left:0;top:0;width:110px;height:100px;box-sizing:border-box;background:#fff;border:1px solid var(--ink,#111);pointer-events:none}
+.tut-tri svg{position:absolute;left:0;top:0;width:110px;height:100px;overflow:visible}
+.tut-tri b{position:absolute;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%);font:700 12px/1 var(--zh,'Noto Sans TC',sans-serif);background:#fff;padding:2px 3px;letter-spacing:.02em;white-space:nowrap}
+.tut-tri b.c{color:var(--c,#1f5fae)}.tut-tri b.o{color:var(--o,#6a3fa0)}.tut-tri b.h{color:var(--h,#c11628)}
+
+/* 減少動態：不脈動、不點、不閃 */
+#tut.rm .tut-ring,#tut.rm .tut-hand,#tut.rm .tut-bub .nx{-webkit-animation:none;animation:none}
+@media (prefers-reduced-motion:reduce){
+  #tut .tut-ring,#tut .tut-hand,#tut .tut-bub .nx{-webkit-animation:none;animation:none}
+}
+@media (hover:hover) and (pointer:fine){
+  #tut .tut-skip:hover{background:rgba(0,0,0,.55)}
+}

@@ -809,7 +809,10 @@
       if (cl.toE > 0) { stg('pose', 'f', 'hurt', 200); if (hasStage('float')) stg('float', 'f', '−' + cl.toE); else floatAt(els.ehpn, '−' + cl.toE, 'r big'); }
       if (cl.toP > 0) { stg('pose', 'p', 'hurt', 200); if (hasStage('float')) stg('float', 'p', '−' + cl.toP); else floatAt(els.phpn, '−' + cl.toP, 'r big'); }
       if ((cl.stamp === 'seeThrough' || cl.kind === 'reflect') && !rm()) { const f = Fx(); if (f && f.hitStop) try { f.hitStop(80); } catch (_) {} }
-      if (cl.kind === 'reflect') { bigStamp('七星回擊', 'gold', 1200, '他 −' + cl.toE); const f = Fx(); if (f && f.flash && !rm()) try { f.flash('#fff', 80); } catch (_) {} }
+      if (cl.kind === 'reflect') {   // 全場唯一的大演出：牌桌金章＋舞台閃白一下
+        bigStamp('七星回擊', 'gold', 1200, '他 −' + cl.toE);
+        if (!rm()) { if (hasStage('flash')) stg('flash', '#fff', 80); else { const f = Fx(); if (f && f.flash) try { f.flash('#fff', 80); } catch (_) {} } }
+      }
       // 他的台詞（只在事件時）
       if (cl.kind === 'counter' || cl.kind === 'reflect') say('f', pickLine('countered'));
       else if (cl.kind === 'countered' || cl.kind === 'eultHit' || cl.kind === 'mirrorLose') say('f', pickLine('hit'));

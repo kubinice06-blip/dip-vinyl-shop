@@ -11,7 +11,7 @@
  *   Stage.say(id, text, { tone:'owner'|null, ms = 2600 })   ms 0＝不自動收；text 空＝收掉
  *   Stage.pose(id, 'atk'|'hurt'|'ko'|'warn'|'dig'|'busy'|'sit'|null, ms?)
  *   Stage.emote(id, 'anger'|'record'|'note'|'excl'|'sweat'|'tea'|null, ms?)   頭上像素小圖示（不用 emoji）
- *   Stage.door('open'|'swing'|'close') ; Stage.play(on)
+ *   Stage.door('open'|'swing'|'close') ; Stage.play(on) ; Stage.flash(color='#fff', ms=160)（只閃舞台；減少動態不閃） ; Stage.dim(k)
  *   Stage.tag(id, text, 'e'|'p', 'L'|'R') ; Stage.untag(id?) ; Stage.float(id, text|{text,sub}, cls?)
  *   Stage.anchor(id) → HTMLElement (#anc-<id>) ; Stage.hotRect(hotId) → DOMRect
  *   Stage.highlight([{ ids:[hotId…], label }]) ; highlight([]) 清掉
@@ -245,6 +245,7 @@
       door: function (mode) { if (mode === 'open' || mode === 'swing') sfx('bell'); shop.door(mode); return stage; },
       play: function (on) { shop.play(on); return stage; },
       dim: function (k) { shop.dim(k); return stage; },
+      flash: function (color, ms) { shop.flash(color, ms); return stage; },
       tag: function (id, text, side, lr) { return shop.tag(id, text, side, lr); },
       untag: function (id) { shop.untag(id); return stage; },
       float: function (id, text, cls) { return shop.float(id, text, cls); },
