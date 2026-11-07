@@ -18,6 +18,11 @@
  *   Stage.hotspots() ; Stage.tap(hotId) ; Stage.reveal(ms) ; Stage.interact(mode) ; Stage.allow(fn|patterns|null)
  *   Stage.legacy(name) → spot ; Stage.destroy()
  *   Stage.duelIn({ foe, ms }) / duelOut({ screen }) → Promise   進出對決的走位＋鏡頭（選用的便利函式）
+ *   唱盤區（v3，他左白台／你右黑台／老闆裁判）：
+ *   Stage.clash({ kind, p:{attr,card,ace}, e:{attr,card}, seeThrough, toE, toP, speed, reduced, onHit(side), onLand(side,card) }) → Promise（≈1460 ms÷速度）
+ *   Stage.clearClash(ms=150) ; hold(side, {sleeve:id}|'ace'|null) ; deck(side, {rec:{attr,card,kind}, state:'spin'|'land'|'armMid'}|null)
+ *   Stage.flag('e'|'p'|null, ms) ; throwDisc(from, to, {attr, kind, arc, ms}) → Promise ; burst(x,y,size,color,ms) ; shatter(at, attr) ; flatDisc(at, attr, o)
+ *   Stage.pause(on) ; speed(k) ; clashState()
  *   舊 Stage 相容：anger notes busy dig show foe setSprite actor cls stamp clearStamps unmount
  *
  * 規則：整支包在 IIFE；只掛 window.DipLabStage；讀 dip-character.js 的 avatarRows／PIX_PAL，不宣告同名全域；不碰 localStorage。
@@ -80,6 +85,14 @@
   function fitCamera(c, o) {
     if (c.minH == null || !(o.avail > 0)) return { y: c.y, h: c.h, dev: null };
     var dpr = o.dpr || 1, dev0 = o.dev || Math.round(3 * dpr), minDev = Math.max(1, Math.floor(2 * dpr + 1e-6));
+    if (o.fine) {   // 細格子世界（倍率非整數）：先裁到 minH，再不夠才把倍率每次降 8%，最多降到 70%
+      var full = Math.floor(o.avail / (dev0 / dpr) + 1e-6);
+      if (full >= c.h) return { y: c.y, h: c.h, dev: null };
+      var cropF = function (rows, dev) { rows = Math.max(1, Math.min(c.h, rows)); var y = c.anchor === 'top' ? c.y : c.anchor === 'center' ? c.y + Math.floor((c.h - rows) / 2) : c.y + c.h - rows; return { y: y, h: rows, dev: dev }; };
+      if (full >= c.minH) return cropF(full, null);
+      for (var f = 0.92; f >= 0.69; f -= 0.08) { var dv = dev0 * f, rw = Math.floor(o.avail / (dv / dpr) + 1e-6); if (rw >= c.minH) return cropF(rw, dv); }
+      return cropF(c.minH, dev0 * 0.7);
+    }
     function crop(rows, dev) {
       rows = Math.max(1, Math.min(c.h, rows));
       var y = c.anchor === 'top' ? c.y : c.anchor === 'center' ? c.y + Math.floor((c.h - rows) / 2) : c.y + c.h - rows;
@@ -169,7 +182,7 @@
     function fitCam(name, c, o) {
       var v = shop.view();
       var pm = o.panelMin != null ? o.panelMin : (PANEL_MIN[o.screen] != null ? PANEL_MIN[o.screen] : (CAM_PANEL[name] != null ? CAM_PANEL[name] : 150));
-      return fitCamera(c, { dpr: v.dpr, dev: v.baseDev, avail: visH() - 32 - pm });
+      return fitCamera(c, { dpr: v.dpr, dev: v.baseDev, avail: visH() - 32 - pm, fine: !!L.fine });
     }
     var lastCam = { name: 'full', o: {} }, tweening = 0;
     function camera(name, o) {
@@ -199,6 +212,242 @@
     W.addEventListener('resize', onResize);
     if (W.visualViewport) W.visualViewport.addEventListener('resize', onResize);
 
+    // ======================================================================= 唱盤區（v3；DESIGN「兩座唱盤對峙」）
+    // 他在左（白台）、你在右（黑台）、老闆在櫃檯正中當裁判。時間 t＝你點屬性鈕那一刻（ms，×速度）；
+    // clash() 每格算出所有東西的位置，填進 shop.state.fx／decks，並設定兩人的手臂、手上的東西、後退。
+    var TT = { items: [], decks: {}, held: {}, paused: false, speedK: 1, off: null, fast: false, last: 0, seq: 0 };
+    var TTK = { relP: 200, windE: 260, relE: 300, col: 520, sep: 560, go: 600, hit: 760, home: 1180, back: 1460, done: 1500, next: 2060, clear: 2360 };
+    var ATTRC = { c: '#1f5fae', o: '#6a3fa0', h: '#c11628' };
+    function ttK() { return L.spriteScale || 1; }
+    function sid(side) { return side === 'e' || side === 'f' ? 'f' : 'p'; }
+    function sideOf(id) { return id === 'f' ? 'e' : 'p'; }
+    function lerp(a, b, u) { return a + (b - a) * u; }
+    function seg(t, a, b) { return Math.max(0, Math.min(1, (t - a) / (b - a))); }
+    function arcP(S0, E0, h, u) { return [lerp(S0[0], E0[0], u), lerp(S0[1], E0[1], u) - 4 * h * u * (1 - u)]; }
+    function spinFr(t, t0, ms) { return Math.floor(Math.max(0, t - t0) / (ms || 100)) & 3; }
+    // 幾何：layout.duel 有寫就用，沒寫就從唱盤台道具與站位算
+    function geo() {
+      var D = L.duel || {}, K = ttK(), sp = L.spots || {};
+      function deckC(side) {
+        var k = side === 'e' ? 'deckE' : 'deckP'; if (D[k]) return D[k];
+        var pr = (L.props || []).filter(function (o) { return o.id === (side === 'e' ? 'deck-e' : 'deck-p'); })[0];
+        return pr ? [pr.x - (pr.w || 44) / 2 + 18, pr.base - 29] : (side === 'e' ? [sp.duelE[0] + 40, sp.duelE[1] - 30] : [sp.duelP[0] - 40, sp.duelP[1] - 30]);
+      }
+      var fE = sp.duelE || [0, 0], fP = sp.duelP || [0, 0];
+      var C = D.clash || [Math.round((fE[0] + fP[0]) / 2) - 2 * K, fE[1] - 12 * K];
+      var rug = D.rug || [Math.round((fE[0] + fP[0]) / 2), fE[1] - 8];
+      return { K: K, PE: deckC('e'), PP: deckC('p'), C: C, rug: rug, ref: sp.ref || sp.counter };
+    }
+    // 手的位置（場景座標）：小人腳底 + 格子（flip 後朝對手）
+    function handAt(id, kind, base) {
+      var a = base || shop.pos(id) || { x: 0, y: 0 }, K = ttK(), hp = (W.DipShop.HANDAT || {})[kind || 'none'] || [13, 10];
+      var col = id === 'p' ? 15 - hp[0] : hp[0];
+      return [Math.round(a.x) - 8 * K + col * K + (K >> 1), Math.round(a.y) - 15 * K + 1 + hp[1] * K + (K >> 1)];
+    }
+    function hitAt(id, base) { var a = base || shop.pos(id), K = ttK(); return [Math.round(a.x) + (id === 'f' ? 2 : -2) * K, Math.round(a.y) - 9 * K]; }
+    // 老闆舉旗的位置：旗竿下半段握在手上，旗尖指贏家（他贏＝老闆轉向左）
+    function flagPos(side) {
+      var K = ttK(), a = shop.pos('o') || { x: 0, y: 0 }, hp = (W.DipShop.HANDAT || {}).flag || [14, 5], col = side === 'e' ? 15 - hp[0] : hp[0];
+      return { x: Math.round(a.x) - 8 * K + col * K + (K >> 1), y: Math.round(a.y) - 15 * K + 1 + hp[1] * K + (K >> 1) - 16, side: side };
+    }
+    function emptyFx() { return { discs: [], trails: [], sparks: [], shards: [], notes: [], dots: [], excl: [], flag: null, decks: {} }; }
+    function ttTick(rt) {
+      if (!shop) return;
+      var dt = Math.max(0, (rt - TT.last) * 1000); TT.last = rt;
+      if (TT.paused) dt = 0;
+      var fx = emptyFx(), wantFast = false;
+      TT.items = TT.items.filter(function (it) {
+        it.t += dt * (it.ignoreSpeed ? 1 : TT.speedK);
+        var r; try { r = it.step(it.t, fx); } catch (e) { console.error(e); r = false; }
+        if (r !== false && it.fastTo && it.t < it.fastTo) wantFast = true;
+        if (r === false && it.end) { try { it.end(); } catch (e) { console.error(e); } }
+        return r !== false;
+      });
+      // 台上的唱片：常駐狀態（spin 一直轉到下一手 clearClash）＋這一格的暫時狀態（落盤三拍）
+      var decks = {};
+      ['e', 'p'].forEach(function (s) { var d = fx.decks[s] || TT.decks[s]; if (d) decks[s] = d; });
+      shop.state.decks = decks;
+      shop.state.fx = fx;
+      if (wantFast !== TT.fast) { TT.fast = wantFast; shop.fast(wantFast); }
+    }
+    function ttStart() { if (!TT.off && shop) { TT.last = shop.now(); TT.off = shop.onTick(ttTick); } }
+    function ttAdd(it) { it.t = it.t || 0; TT.items.push(it); ttStart(); return it; }
+    function setFlips() { shop.flip('p', true); shop.flip('f', false); }
+    function restHolds() {
+      ['f', 'p'].forEach(function (id) {
+        var h = TT.held[id];
+        shop.hold(id, h || null); shop.arm(id, h ? 'shield' : null); shop.nudge(id, 0);
+      });
+    }
+    function sleeveOf(h) { return h ? (h === 'ace' ? 'ace' : h) : null; }
+
+    // 一手的整段演出
+    function clashItem(o) {
+      var G = geo(), K = G.K, kind = o.kind || 'counter';
+      var mode = (kind === 'counter' || kind === 'countered') ? 'beat' : (kind === 'mirrorWin' || kind === 'mirrorLose') ? 'mirror' : kind === 'tie' || /^hegemony/.test(kind) ? 'tie' : 'beat';
+      var Wn = (kind === 'counter' || kind === 'mirrorWin' || kind === 'hegemonyP') ? 'p' : (kind === 'countered' || kind === 'mirrorLose' || kind === 'hegemonyE') ? 'e' : null;
+      if (mode === 'tie') Wn = null;
+      var Lo = Wn === 'p' ? 'e' : Wn === 'e' ? 'p' : null;
+      var p = o.p || {}, e = o.e || {}, lab = { p: p.attr || 'c', e: e.attr || 'c' }, dk = { p: p.ace ? 'ace' : 'disc', e: e.ace ? 'ace' : 'disc' };
+      var dmg = { e: o.toE | 0, p: o.toP | 0 };
+      var baseF = shop.pos('f'), baseP = shop.pos('p');
+      baseF = { x: Math.round(baseF.x), y: Math.round(baseF.y) }; baseP = { x: Math.round(baseP.x), y: Math.round(baseP.y) };
+      var WP = handAt('p', 'wind', baseP), SP = handAt('p', 'throw', baseP), WE = handAt('f', 'wind', baseF), SE = handAt('f', 'throw', baseF);
+      var C = G.C, end = { p: [C[0] + 6, C[1]], e: [C[0] - 6, C[1]] }, H = { e: hitAt('f', baseF), p: hitAt('p', baseP) }, home = { e: G.PE, p: G.PP };
+      var rugY = G.rug[1], drop = { e: [G.rug[0] - 22, rugY], p: [G.rug[0] + 22, rugY] };
+      var flagAt = flagPos;
+      var hs = { f: TT.held.f, p: TT.held.p };
+      var fired = {}, it = { kind: kind, fastTo: TTK.done, res: null };
+      function once(k, fn) { if (!fired[k]) { fired[k] = 1; try { fn(); } catch (er) { console.error(er); } } }
+      function hurt(side, back) {
+        var id = sid(side);
+        shop.pose(id, 'hurt', 200); if (dmg[side] > 0) shop.float(id, '−' + dmg[side], side === 'p' ? 'r' : null);
+        it['nb' + side] = back;
+        if (typeof o.onHit === 'function') try { o.onHit(side); } catch (er) { console.error(er); }
+      }
+      function trail(fx, f, t, t0) { [40, 80].forEach(function (d) { if (t - d >= t0) { var q = f(t - d); fx.trails.push([q[0], q[1], 'rgba(255,241,194,' + (d === 40 ? 0.7 : 0.4) + ')']); } }); }
+      function landAt(fx, t, side, t0) {
+        var P0 = home[side], rec = { attr: lab[side], kind: dk[side] === 'ace' ? 'ace' : null, card: (side === 'p' ? p.card : e.card) };
+        if (t >= t0 && t < t0 + 80) { fx.decks[side] = { rec: rec, state: 'land' }; fx.dots.push([P0[0] - 16, P0[1] + 1, '#e8e8ee'], [P0[0] + 15, P0[1] + 1, '#e8e8ee']); }
+        else if (t >= t0 + 80 && t < t0 + 160) fx.decks[side] = { rec: rec, state: 'armMid' };
+        else if (t >= t0 + 160) once('land' + side, function () { TT.decks[side] = { rec: rec, state: 'spin' }; if (typeof o.onLand === 'function') o.onLand(side, rec.card); });
+      }
+      function flagUntil(fx, t, t0, side) { if (t >= t0 && t < t0 + 900) { fx.flag = flagAt(side); shop.arm('o', 'flag'); shop.flip('o', side === 'e'); } else if (t >= t0 + 900) { shop.arm('o', null); shop.flip('o', false); } }
+      it.step = function (t0, fx) {
+        var t = t0;
+        if (o.seeThrough && t > TTK.col) t = Math.max(TTK.col, t - 80);
+        // ---- 減少動態：不飛、不翻；560 贏家的唱片直接出現在自己的台上轉
+        if (o.reduced) {
+          if (t >= TTK.sep) once('r', function () {
+            if (Wn) TT.decks[Wn] = { rec: { attr: lab[Wn], kind: dk[Wn] === 'ace' ? 'ace' : null }, state: 'spin' };
+            ['e', 'p'].forEach(function (s) { if (dmg[s] > 0) shop.float(sid(s), '−' + dmg[s], s === 'p' ? 'r' : null); });
+            if (it.res) { it.res(); it.res = null; }
+          });
+          return t < TTK.sep + 50 ? true : false;
+        }
+        // ---- 手：你 0–200 蓄力、200 出手；他 0–260 拿著封套、260 蓄力、300 出手
+        setFlips();
+        if (t < TTK.relP) { shop.arm('p', 'wind'); shop.hold('p', { disc: lab.p, kind: dk.p }); }
+        else if (t < TTK.relP + 120) { shop.arm('p', 'throw'); shop.hold('p', null); }
+        else { shop.arm('p', null); shop.hold('p', null); }
+        if (t < TTK.windE) { shop.arm('f', hs.f ? 'shield' : null); shop.hold('f', sleeveOf(hs.f)); }
+        else if (t < TTK.relE) { shop.arm('f', 'wind'); shop.hold('f', { disc: lab.e, kind: dk.e }); }
+        else if (t < TTK.relE + 120) { shop.arm('f', 'throw'); shop.hold('f', null); }
+        else { shop.arm('f', null); shop.hold('f', null); }
+        // ---- 飛（相撞前）：低弧
+        var fp = function (tt) { return arcP(SP, end.p, 10, seg(tt, TTK.relP, TTK.col)); }, fe = function (tt) { return arcP(SE, end.e, 10, seg(tt, TTK.relE, TTK.col)); };
+        if (t >= TTK.relP && t < TTK.col) { var q1 = fp(t); fx.discs.push({ x: q1[0], y: q1[1], attr: lab.p, kind: dk.p, fr: spinFr(t, TTK.relP, 60) }); trail(fx, fp, t, TTK.relP); }
+        if (t >= TTK.relE && t < TTK.col) { var q2 = fe(t); fx.discs.push({ x: q2[0], y: q2[1], attr: lab.e, kind: dk.e, fr: spinFr(t, TTK.relE, 60) }); trail(fx, fe, t, TTK.relE); }
+        // ---- 相撞（520–600 貼在一起）
+        if (t >= TTK.col && t < TTK.go) {
+          var crack = t >= TTK.sep && mode === 'beat';
+          fx.discs.push({ x: end.p[0], y: end.p[1], attr: lab.p, kind: dk.p, fr: 1, crack: crack && Lo === 'p' });
+          fx.discs.push({ x: end.e[0], y: end.e[1], attr: lab.e, kind: dk.e, fr: 3, crack: crack && Lo === 'e' });
+          if (mode === 'beat') fx.sparks.push({ x: C[0], y: C[1] - 1, size: 'small' });
+          else fx.sparks.push({ x: C[0], y: C[1], size: 'ring', c: '#ffffff' });
+        }
+        var shardsOn = function () { if (t >= 900 && t < TTK.clear) { var cx = Lo === 'e' ? G.rug[0] - 14 : G.rug[0] + 14, sh = [[cx - 12, rugY - 2, 3], [cx - 4, rugY + 2, 2], [cx - 9, rugY + 1, 3, lab[Lo]], [cx + 3, rugY - 3, 2], [cx + 9, rugY + 1, 3], [cx - 16, rugY + 2, 2, lab[Lo]]]; fx.shards = sh.filter(function (s2, i) { return t < TTK.next || i % 2 === 0; }); } };
+        if (mode === 'beat' && Wn) {
+          // 輸的那張：600 裂三塊往下掉 → 900 地毯上的碎片
+          if (t >= TTK.go && t < 900) { var u = (t - TTK.go) / 300; fx.discs.push({ x: end[Lo][0] + (Lo === 'e' ? -1 : 1) * Math.round(u * 8), y: end[Lo][1] + Math.round(u * u * (rugY - end[Lo][1])), attr: lab[Lo], kind: dk[Lo], split: 1 + Math.floor(u * 3) }); }
+          shardsOn();
+          // 贏的那張：600–760 穿過去打中輸家 → 820–1180 高弧回自己的唱盤
+          var Hp = H[Lo], sg = Wn === 'p' ? 1 : -1;
+          if (t >= TTK.go && t < TTK.hit) { var q3 = arcP(end[Wn], Hp, 3, seg(t, TTK.go, TTK.hit)); fx.discs.push({ x: q3[0], y: q3[1], attr: lab[Wn], kind: dk[Wn], fr: spinFr(t, TTK.go, 60) }); }
+          if (t >= TTK.hit && t < TTK.hit + 60) fx.discs.push({ x: Hp[0], y: Hp[1], attr: lab[Wn], kind: dk[Wn], fr: 0 });
+          if (t >= TTK.hit && t < TTK.hit + 100) fx.sparks.push({ x: Hp[0] - 6 * sg, y: Hp[1] + 2, size: 'small', c: '#ec4a5a' });
+          if (t >= TTK.hit) once('hit', function () { hurt(Lo, 2 * K); });
+          var S2 = [Hp[0] + 4 * sg, Hp[1] - 2], fh = function (tt) { return arcP(S2, home[Wn], 44, seg(tt, TTK.hit + 60, TTK.home)); };
+          if (t >= TTK.hit + 60 && t < TTK.home) { var q4 = fh(t); fx.discs.push({ x: q4[0], y: q4[1], attr: lab[Wn], kind: dk[Wn], fr: spinFr(t, TTK.hit, 60) }); trail(fx, fh, t, TTK.hit + 60); }
+          landAt(fx, t, Wn, TTK.home);
+          flagUntil(fx, t, TTK.home, Wn);
+        } else if (mode === 'mirror' && Wn) {
+          // 撞招：數字大的高弧回自己的唱盤（1000 落）；小的低弧彈回去敲到自己（760）→ 掉在地毯自己那側平躺
+          var Hl = H[Lo], fw = function (tt) { return arcP(end[Wn], home[Wn], 36, seg(tt, TTK.go, 1000)); };
+          if (t >= TTK.go && t < 1000) { var q5 = fw(t); fx.discs.push({ x: q5[0], y: q5[1], attr: lab[Wn], kind: dk[Wn], fr: spinFr(t, TTK.go, 60) }); trail(fx, fw, t, TTK.go); }
+          if (t >= TTK.go && t < TTK.hit) { var q6 = arcP(end[Lo], Hl, 15, seg(t, TTK.go, TTK.hit)); fx.discs.push({ x: q6[0], y: q6[1], attr: lab[Lo], kind: dk[Lo], fr: spinFr(t, TTK.go, 60) }); }
+          if (t >= TTK.hit && t < 900) { var q7 = arcP(Hl, drop[Lo], 6, seg(t, TTK.hit, 900)); fx.discs.push({ x: q7[0], y: q7[1], attr: lab[Lo], kind: dk[Lo], fr: 2 }); }
+          if (t >= 900 && t < TTK.clear) fx.discs.push({ x: drop[Lo][0], y: drop[Lo][1], attr: lab[Lo], kind: dk[Lo], flat: true });
+          if (t >= TTK.hit && t < TTK.hit + 100) fx.sparks.push({ x: Hl[0], y: Hl[1] - 1, size: 'small', c: '#ec4a5a' });
+          if (t >= TTK.hit) once('hit', function () { hurt(Lo, K); });
+          landAt(fx, t, Wn, 1000);
+          flagUntil(fx, t, 1000, Wn);
+        } else {
+          // 平手：兩張彈開、平躺在地毯兩邊，誰的唱盤都不轉；老闆聳肩
+          if (t >= TTK.go && t < 900) {
+            ['e', 'p'].forEach(function (s) { var q8 = arcP(end[s], drop[s], 15, seg(t, TTK.go, 900)); fx.discs.push({ x: q8[0], y: q8[1], attr: lab[s], kind: dk[s], fr: spinFr(t, TTK.go, 80) }); });
+          }
+          if (t >= 900 && t < TTK.clear) ['e', 'p'].forEach(function (s) { fx.discs.push({ x: drop[s][0], y: drop[s][1], attr: lab[s], kind: dk[s], flat: true }); });
+          if (t >= TTK.hit) once('hit', function () { ['e', 'p'].forEach(function (s) { if (dmg[s] > 0) hurt(s, K); }); });
+          if (t >= 900 && t < 1700) { shop.arm('o', 'shrug'); once('dots', function () { shop.emote('o', 'dots', 800 / Math.max(0.25, TT.speedK)); }); }
+          else if (t >= 1700) shop.arm('o', null);
+        }
+        // 受擊後退：1460 回原位
+        ['e', 'p'].forEach(function (s) { var nb = it['nb' + s] || 0; if (!nb) return; var dx = t < TTK.back ? nb : t < TTK.back + 100 ? Math.round(nb / 2) : 0; shop.nudge(sid(s), s === 'e' ? -dx : dx); });
+        if (t >= TTK.back && it.res) { var rr = it.res; it.res = null; rr(); }
+        return t < TTK.clear;
+      };
+      it.end = function () { shop.nudge('f', 0); shop.nudge('p', 0); shop.arm('o', null); shop.flip('o', false); if (it.res) { var r = it.res; it.res = null; r(); } };
+      return it;
+    }
+    var turntable = {
+      // 一手：t=0（點屬性鈕）呼叫；Promise 在「演完」（≈1460 ms ÷ 速度）resolve
+      clash: function (o) {
+        o = o || {};
+        if (!shop || !shop.has('f') || !shop.has('p')) return Promise.resolve();
+        if (o.speed > 0) TT.speedK = o.speed;
+        if (o.reduced == null) o.reduced = reduced();
+        TT.items.filter(function (x) { return x.kind; }).forEach(function (x) { x.step = function () { return false; }; });
+        var it = clashItem(o);
+        TT.held = {};
+        return new Promise(function (res) { it.res = res; ttAdd(it); });
+      },
+      // 下一手 t=0：台上的唱片淡掉、碎片與平躺唱片清掉
+      clearClash: function (ms) {
+        TT.items.forEach(function (x) { x.step = function () { return false; }; });
+        var keep = TT.decks; TT.decks = {};
+        if (ms !== 0 && (keep.e || keep.p)) ttAdd({ ignoreSpeed: true, step: function (t, fx) { if (t >= (ms == null ? 150 : ms)) return false; ['e', 'p'].forEach(function (s) { if (keep[s] && Math.floor(t / 50) % 2 === 0) fx.decks[s] = keep[s]; }); return true; } });
+        ttStart(); ttTick(shop ? shop.now() : 0);
+        return stage;
+      },
+      // 手上拿著：{ sleeve: cardId } | 'ace' | null（選牌時就看得到；他拿他亮出的那張、你點了哪張就拿哪張）
+      hold: function (side, what) {
+        var id = sid(side); TT.held[id] = what || null;
+        setFlips(); shop.hold(id, what || null); shop.arm(id, what ? 'shield' : null);
+        return stage;
+      },
+      // 唱盤台：{ rec: { attr, card, kind }, state: 'land'|'armMid'|'spin'|null }；null＝清掉
+      deck: function (side, d) { TT.decks[side === 'f' ? 'e' : side] = d && d.rec ? d : null; ttStart(); ttTick(shop.now()); return stage; },
+      // 老闆三角旗：黑＝你、白＝他（null 收起）
+      flag: function (side, ms) {
+        if (!side) { shop.arm('o', null); return stage; }
+        var f = flagPos(side);
+        shop.arm('o', 'flag'); shop.flip('o', side === 'e');
+        ttAdd({ ignoreSpeed: true, step: function (t, fx) { if (t >= (ms || 900)) return false; fx.flag = f; return true; }, end: function () { shop.arm('o', null); shop.flip('o', false); } });
+        return stage;
+      },
+      // 低階零件（教學示範也可以單獨叫）
+      throwDisc: function (from, to, o) {
+        o = o || {};
+        var pt = function (v) { if (Array.isArray(v)) return v; if (v === 'e' || v === 'p') return handAt(sid(v), 'throw'); var s = (L.spots || {})[v]; return s ? [s[0], s[1] - 40] : [0, 0]; };
+        var S0 = pt(from), E0 = to === 'e' || to === 'p' ? geo()[to === 'e' ? 'PE' : 'PP'] : pt(to), ms = o.ms || 420, h = o.arc == null ? 10 : o.arc;
+        return new Promise(function (res) {
+          ttAdd({ fastTo: ms, step: function (t, fx) { var q = arcP(S0, E0, h, seg(t, 0, ms)); fx.discs.push({ x: q[0], y: q[1], attr: o.attr || 'c', kind: o.kind || 'disc', fr: spinFr(t, 0, o.spinMs || 60) }); if (o.trail !== 0) [40, 80].forEach(function (d) { if (t - d > 0) { var r = arcP(S0, E0, h, seg(t - d, 0, ms)); fx.trails.push([r[0], r[1], 'rgba(255,241,194,0.55)']); } }); return t < ms; }, end: res });
+        });
+      },
+      burst: function (x, y, size, color, ms) { ttAdd({ fastTo: ms || 120, step: function (t, fx) { fx.sparks.push({ x: x, y: y, size: size || 'small', c: color }); return t < (ms || 120); } }); return stage; },
+      shatter: function (at, attr) {
+        var q0 = Array.isArray(at) ? at : geo().C, rugY = geo().rug[1];
+        ttAdd({ fastTo: 320, step: function (t, fx) { if (t < 300) { var u = t / 300; fx.discs.push({ x: q0[0], y: q0[1] + Math.round(u * u * (rugY - q0[1])), attr: attr, split: 1 + Math.floor(u * 3) }); return true; } fx.shards.push([q0[0] - 6, rugY - 1, 3], [q0[0] + 1, rugY + 2, 2, attr], [q0[0] + 6, rugY, 3]); return t < 2000; } });
+        return stage;
+      },
+      flatDisc: function (at, attr, o) { o = o || {}; ttAdd({ step: function (t, fx) { fx.discs.push({ x: at[0], y: at[1], attr: attr, flat: true, void: !!o.void, kind: o.kind }); return t < (o.ms || 2000); } }); return stage; },
+      pause: function (on) { TT.paused = !!on; return stage; },
+      speed: function (k) { if (k > 0) TT.speedK = k; return stage; },
+      clashState: function () { return { items: TT.items.length, decks: JSON.parse(JSON.stringify(TT.decks)), held: JSON.parse(JSON.stringify(TT.held)), paused: TT.paused, speed: TT.speedK, fast: TT.fast }; }
+    };
+    function ttReset() { TT.items = []; TT.decks = {}; TT.held = {}; TT.paused = false; if (TT.off) { TT.off(); TT.off = null; } if (TT.fast && shop) shop.fast(false); TT.fast = false; if (shop) { shop.state.fx = null; shop.state.decks = {}; ['f', 'p', 'o'].forEach(function (id) { shop.arm(id, null); shop.hold(id, null); shop.nudge(id, 0); }); } }
+
     // ---------------- 公開 API
     var stage = {
       get shopId() { return L.id; },
@@ -212,7 +461,7 @@
         o = o || {};
         return loadLayout(id, opts.layoutBase).then(function (layout) {
           if (destroyed) return stage;
-          stage.clearStamps();
+          stage.clearStamps(); ttReset();
           shop.destroy(); mountShop(layout);
           return camera(o.camera || 'full', { ms: 0, screen: o.screen }).then(function () { return stage; });
         });
@@ -273,7 +522,7 @@
         o = o || {};
         if (o.foe != null) shop.sprite('f', o.foe);
         var sp = o.walkSpeed || 96, jobs = [];
-        [['f', 'duelE'], ['p', 'duelP'], ['o', 'counter']].forEach(function (x) {
+        [['f', 'duelE'], ['p', 'duelP'], ['o', (L.spots || {}).ref ? 'ref' : 'counter']].forEach(function (x) {
           var id = x[0], to = x[1], at = shop.pos(id), s = (L.spots || {})[to];
           if (!s) return;
           if (!at || at.hidden || !shop.has(id)) { if (id !== 'o' || shop.has('o')) shop.put(id, to); return; }
@@ -282,11 +531,12 @@
         });
         stage.interact('duel');
         jobs.push(camera('strip', { ms: o.ms == null ? 600 : o.ms }));
-        return Promise.all(jobs).then(function () { return stage; });
+        return Promise.all(jobs).then(function () { if (shop) setFlips(); return stage; });
       },
       duelOut: function (o) {
         o = o || {};
         shop.untag(); ['f', 'p'].forEach(function (id) { shop.say(id, null); shop.emote(id, null); });
+        ttReset(); shop.flip('p', false);
         stage.interact(o.interact || 'scene');
         return camera(o.camera || 'full', { ms: o.ms == null ? 600 : o.ms, screen: o.screen || 'scene' }).then(function () { return stage; });
       },
@@ -314,10 +564,12 @@
         return stage;
       },
       destroy: function () {
-        destroyed = true; timers.forEach(clearTimeout); clearTimeout(rzT);
+        destroyed = true; ttReset(); timers.forEach(clearTimeout); clearTimeout(rzT);
         W.removeEventListener('resize', onResize); if (W.visualViewport) W.visualViewport.removeEventListener('resize', onResize); timers = []; stage.clearStamps(); if (shop) shop.destroy(); shop = null; }
     };
 
+    // 唱盤區 API 掛到 stage 上（duel.js 有就用、沒有就退回 pose／float）
+    Object.keys(turntable).forEach(function (k) { stage[k] = turntable[k]; });
     mountShop(L0);
     // 預設三人：老闆在櫃檯（layout.actors）、你、他（選填）
     if (opts.p) stage.put('p', opts.p, 'player');
@@ -325,5 +577,5 @@
     return camera(opts.camera || 'full', { ms: 0, screen: opts.screen }).then(function () { return stage; });
   }
 
-  W.DipLabStage = { mount: mount, loadLayout: loadLayout, fitCamera: fitCamera, pickCamera: pickCamera, ALIAS: ALIAS, PANEL_MIN: PANEL_MIN, INTERACT: INTERACT, version: '2.0' };
+  W.DipLabStage = { mount: mount, loadLayout: loadLayout, fitCamera: fitCamera, pickCamera: pickCamera, ALIAS: ALIAS, PANEL_MIN: PANEL_MIN, INTERACT: INTERACT, version: '3.0' };
 })();

@@ -1,8 +1,11 @@
-/* shop.js：DipShop 像素唱片行渲染器（核心）。SPEC-v2 §5。
+/* shop.js：DipShop 像素唱片行渲染器（核心）。SPEC-v2 §5；v3 細格子（店主 2026-11-07「像素的精緻度要像初版一樣」）。
  *
- * 一個原則：1 場景像素 = 1 小人像素。整間店畫在低解析度世界畫布（dip 本店 144×144），
- * 鏡頭（camera）把世界的一段 y 範圍貼到放大的 <canvas>；倍率對齊裝置像素（390 寬 ×3、360 寬 DPR 3 ×2.667），
- * CSS image-rendering: pixelated。牆、地板、櫃檯、唱片箱、封面、小人全部在同一個格子上。
+ * 兩種世界：
+ *   粗格子（v2，basement／taipei）：1 場景像素 = 1 小人像素（144×144），整數倍率 ×3。
+ *   細格子（v3 本店 dip，layout.fine）：448×492 = 初版描圖的座標契約；1 場景像素 ≈ 0.87 CSS px（390 寬），倍率不必是整數。
+ *     牆、34 張手繪封面、地板、門洞＝初版原圖 art/shop2-bg.jpg（layout.bg，原生解析度直接畫到裝置像素）；
+ *     家具全部是程式畫的道具，畫在同一個 448×492 格子上（初版的畫風：平塗＋1 px 深色描邊＋一條亮邊）；
+ *     小人一格 = spriteScale（5）個場景像素（人高 75）；牆上蓋的真封面走「高解析層」（hires，跟手繪封面一樣細）。
  *
  *   var shop = DipShop.mount(hostEl, layoutJSON, {
  *     cards: { id: { localCover, coverUrl, artist, album } },  // 牆上唱片、箱子、正在放
@@ -12,6 +15,8 @@
  *   });
  *   shop.put('p', 'door', rows) / walk('p', ['door','pay']) / say('o','「歡迎。」') / door('open')
  *   shop.setView({ y, h }) / tweenView({ y, h }, ms) / tag / untag / float / anchor / pose / emote / highlight / hotRect
+ *   唱盤區（v3）：shop.arm(id, 'wind'|'throw'|'shield'|'up'|'flag'|'shrug'|null) / hold(id, what) / nudge(id, dx)
+ *                 shop.state.fx（飛行唱片、火花、碎片、旗…，由 stage.js 的 clash() 每格填）/ state.decks / fast(on) / onTick(fn)
  *
  * 道具在 shop-props.js 用 DipShop.defProp(type, spec) 註冊；店的配置是純 JSON（shops/*.json）。
  * 只掛 window.DipShop；不宣告 dip-character.js 的同名全域。
@@ -119,21 +124,21 @@
         for (var a = 0; a < 360; a += 2) { var x = Math.round(cx + rx * Math.cos(a * Math.PI / 180)), y = Math.round(cy + ry * Math.sin(a * Math.PI / 180)); var k = x + ',' + y; if (k !== last) { ctx.fillRect(x, y, 1, 1); last = k; } }
       },
       textW: function (s) { s = String(s).toUpperCase(); var w = 0; for (var i = 0; i < s.length; i++) w += ((GLYPH[s.charAt(i)] || GLYPH['?']).length / 5) + 1; return Math.max(0, w - 1); },
-      text: function (s, x, y, c) {
-        s = String(s).toUpperCase(); ctx.fillStyle = P.col(c);
+      text: function (s, x, y, c, k) {
+        s = String(s).toUpperCase(); ctx.fillStyle = P.col(c); k = k || 1;
         var cx = x;   // 可變寬：3、4、5 格寬的字（M、N、W 用寬字）
-        for (var i = 0; i < s.length; i++) { var g = GLYPH[s.charAt(i)] || GLYPH['?'], gw = g.length / 5; for (var b = 0; b < g.length; b++) if (g.charAt(b) === '1') ctx.fillRect(cx + (b % gw), y + ((b / gw) | 0), 1, 1); cx += gw + 1; }
-        return cx - x - 1;
+        for (var i = 0; i < s.length; i++) { var g = GLYPH[s.charAt(i)] || GLYPH['?'], gw = g.length / 5; for (var b = 0; b < g.length; b++) if (g.charAt(b) === '1') ctx.fillRect(cx + (b % gw) * k, y + ((b / gw) | 0) * k, k, k); cx += (gw + 1) * k; }
+        return cx - x - k;
       },
-      // 小人／圖示：rows 是字母陣列，sp 是字母→色碼（PIX_PAL 格式）
+      // 小人／圖示：rows 是字母陣列，sp 是字母→色碼（PIX_PAL 格式）；o.k＝每格幾個場景像素（細格子世界 ×5）
       sprite: function (rows, x, y, sp, o) {
-        o = o || {}; var w = rows[0].length;
+        o = o || {}; var w = rows[0].length, k = o.k || 1;
         for (var j = 0; j < rows.length; j++) {
           var row = rows[j];
           for (var i = 0; i < w; i++) {
             var ch = row.charAt(o.flip ? w - 1 - i : i); if (ch === '.' || ch === ' ' || !ch) continue;
             ctx.fillStyle = o.sil ? (o.sil === true ? '#0b0f1a' : o.sil) : ((sp && sp[ch]) || pal[ch] || '#ff00ff');
-            ctx.fillRect(x + i, y + j, 1, 1);
+            ctx.fillRect(x + i * k, y + j * k, k, k);
           }
         }
       },
@@ -207,12 +212,49 @@
     return null;
   }
 
+  // 高解析封面（牆上蓋的真封面）：原圖直接平滑縮到裝置像素，跟初版手繪封面一樣細。CORS 讀（?px=1），畫布不會被汙染。
+  var hiCache = {};
+  function loadHiCover(url, onload) {
+    var c = hiCache[url];
+    if (c) { if (!c.img && !c.failed && onload && c.cbs.indexOf(onload) < 0) c.cbs.push(onload); return c.img; }
+    c = hiCache[url] = { img: null, failed: false, cbs: onload ? [onload] : [] };
+    var img = new Image(), src = url;
+    if (/^https?:/.test(url) && url.indexOf(location.origin) !== 0) { img.crossOrigin = 'anonymous'; src = url + (url.indexOf('?') < 0 ? '?' : '&') + 'px=1'; }
+    img.decoding = 'async';
+    img.onload = function () { c.img = img; var cb = c.cbs; c.cbs = []; cb.forEach(function (f) { try { f(); } catch (_) {} }); };
+    img.onerror = function () { c.failed = true; c.cbs = []; };
+    img.src = src;
+    return null;
+  }
+
   // ===================================================================== 小人變形（倒下＝轉 90 度）
   function rotRows(rows) {   // 順時針轉 90 度：頭朝右躺下
     var h = rows.length, w = rows[0].length, out = [];
     for (var i = 0; i < w; i++) { var s = ''; for (var j = h - 1; j >= 0; j--) s += rows[j].charAt(i) || '.'; out.push(s); }
     return out;
   }
+
+  // ===================================================================== 手臂姿勢（唱盤區，v3）
+  // 小人 16 欄：右手在第 12 欄（第 9–10 列）。改格子畫出蓄力／出手／擋／舉高／舉旗；flip 之後自動朝對手。
+  function armRows(rows, kind) {
+    if (!kind || !rows || rows.length < 12 || rows[0].length < 16) return rows;
+    var R = rows.map(function (r) { return r.split(''); }), sl = R[8][12], sk = R[9][12];
+    if (sl === '.' || sk === '.') return rows;
+    function put(c, r, ch) { if (R[r]) R[r][c] = ch; }
+    if (/^(wind|throw|up|shield|flag)$/.test(kind)) { put(12, 9, '.'); put(12, 10, '.'); }
+    if (kind === 'wind') { put(12, 7, sl); put(13, 6, sl); put(13, 5, sk); put(13, 4, sk); }
+    else if (kind === 'throw') { put(13, 8, sl); put(14, 8, sl); put(15, 8, sk); }
+    else if (kind === 'up') { put(12, 7, sl); put(13, 6, sl); put(13, 5, sl); put(13, 4, sk); put(13, 3, sk); }
+    else if (kind === 'shield') { put(13, 8, sl); put(13, 9, sk); }
+    else if (kind === 'flag') { put(12, 8, sl); put(13, 7, sl); put(14, 6, sk); }
+    else if (kind === 'shrug') { put(3, 9, '.'); put(3, 10, '.'); put(2, 8, R[8][3]); put(2, 7, sk); put(12, 9, '.'); put(12, 10, '.'); put(13, 8, sl); put(13, 7, sk); }
+    return R.map(function (r) { return r.join(''); });
+  }
+  // 手的位置（小人格，未 flip）：拿封套、唱片、大金盤、旗都畫在這裡
+  var HANDAT = { wind: [13, 3], throw: [15, 8], up: [13, 2], shield: [13, 9], flag: [14, 5], shrug: [13, 6], none: [13, 10] };
+  // 道具庫可以掛的掛勾（shop-props.js 填）：holdDraw(P, actor, hx, hy, K, S)＝手上拿的東西
+  var HOOKS = {};
+  function hook(name, fn) { HOOKS[name] = fn; }
 
   // ===================================================================== 掛載
   function mount(host, layout, opts) {
@@ -235,7 +277,22 @@
     var scale = 3, vx = 0, vy = 0, vw = W, vh = H, hostW = 0, devPx = 3;
     var cam = { y: 0, h: H, dev: null };
     var c0 = (L.cameras || {}).full; if (c0) { cam.y = c0.y; cam.h = c0.h; }
-    var cardOf = function (id) { return (opts.cards && opts.cards[id]) || null; };
+    var cardOf = function (id) { return (opts.cards && opts.cards[id]) || (opts.extraCards && opts.extraCards[id]) || null; };
+    // ---------------- 背景圖層（route B：沿用初版描圖的牆面＋地板；家具全部是程式畫的道具）
+    var bgImg = null, bgGrid = null, bgMode = opts.bgMode || (L.bg && L.bg.mode) || 'native';
+    if (L.bg) {
+      bgImg = new Image(); bgImg.decoding = 'async';
+      bgImg.onload = function () {
+        if (bgMode === 'grid') {   // 縮到場景格：每個場景像素 = 原圖 2.5×2.5 的平均
+          var g = document.createElement('canvas'); g.width = W; g.height = H;
+          var gx = g.getContext('2d'); gx.imageSmoothingEnabled = true; gx.imageSmoothingQuality = 'high';
+          gx.drawImage(bgImg, 0, 0, W, H); bgGrid = g;
+        }
+        if (!destroyed) { try { render(); } catch (e) { console.error(e); } }
+      };
+      bgImg.src = (opts.bgBase || '') + L.bg.src;
+    }
+    function tagOn(id) { for (var i = 0; i < marks.length; i++) if (marks[i].kind === 'tag' && marks[i].id === id && marks[i].lr === 'T') return true; return false; }
     var coverMode = opts.coverMode || L.coverMode || 'raw';
     var sparkleOn = opts.sparkle !== false, allowFn = null;
     function spd() { var k = typeof opts.speed === 'function' ? opts.speed() : (opts.speed || 1); return k > 0 ? k : 1; }
@@ -249,11 +306,15 @@
     }
     function cover(id, size) { var u = coverURL(id); if (!u) return null; return loadCover(u, size, coverMode); }
 
+    var hiT = 0; function hiReady() { if (destroyed || hiT) return; hiT = setTimeout(function () { hiT = 0; if (!destroyed) { try { blit(); } catch (_) {} } }, 30); }
     // ---------------- 場景物件 S（給道具用）
     var S = {
       W: W, H: H, layout: L, pal: pal, state: state,
       get t() { return state.t; }, get rt() { return state.rt; }, get frame() { return state.frame; },
       cover: cover, card: cardOf, rand: seeded,
+      // 高解析層（只在有背景圖的店：牆在背景圖裡，世界格只有家具）：道具 spec.hires(V, o, S) 直接畫到裝置像素
+      hires: !!(L.bg && (L.bg.mode || 'native') === 'native' && opts.bgMode !== 'grid'),
+      coverImg: function (id) { var u = coverURL(id); return u ? loadHiCover(u, hiReady) : null; },
       wallBase: (L.wall && L.wall.h != null) ? L.wall.h : 58,
       // 門、窗會呼叫：把站在門外的人畫在開口裡（clip）；o.sil＝隔著玻璃只看得到剪影
       drawOutside: function (P2, rect, o) {
@@ -285,50 +346,62 @@
       return { x: sp[0], y: sp[1], outside: !!sp[2] };
     }
     function poseOf(a) { if (a.poseUntil && state.rt > a.poseUntil) { a.pose = null; a.poseUntil = 0; } return a.pose; }
+    // 細格子世界（route B：448×492，1 場景像素≈1 CSS px）：小人一格＝K 個場景像素，所有「以小人格計」的位移都乘 K
+    var K = L.spriteScale || 1, KE = L.iconScale || Math.max(1, K - 2);
     function drawActor(P2, a, inOutside) {
       var rows = a.rows; if (!rows) return;
+      if (a.arm) { if (!a._arm || a._arm.src !== rows || a._arm.kind !== a.arm) a._arm = { src: rows, kind: a.arm, rows: (typeof opts.arm === 'function' ? opts.arm : armRows)(rows, a.arm) }; rows = a._arm.rows; }
       var pose = inOutside ? null : poseOf(a);
       var bob = 0, ox = 0, oy = 0;
-      if (a.moving) bob = (Math.floor(state.t * 8) % 2);
-      if (pose === 'atk') ox = 2 * (a.fwd || 1);
-      else if (pose === 'hurt') ox = -(a.fwd || 1);
-      else if (pose === 'dig') oy = Math.floor(state.t * 8) % 2;
-      else if (pose === 'busy') oy = Math.floor(state.t * 3) % 2;
-      var fx = Math.round(a.x) + ox, fy = Math.round(a.y);
+      if (a.moving) bob = (Math.floor(state.t * 8) % 2) * K;
+      if (pose === 'atk') ox = 2 * (a.fwd || 1) * K;
+      else if (pose === 'hurt') ox = -(a.fwd || 1) * K;
+      else if (pose === 'dig') oy = (Math.floor(state.t * 8) % 2) * K;
+      else if (pose === 'busy') oy = (Math.floor(state.t * 3) % 2) * K;
+      var fx = Math.round(a.x) + ox + (a.ox || 0), fy = Math.round(a.y);
       if (pose === 'ko') {
         var rr = a._rot || (a._rot = { src: rows, rows: rotRows(rows) });
         if (rr.src !== rows) { rr.src = rows; rr.rows = rotRows(rows); }
         // 躺在地上：頭朝門外那側，腳底對齊地面
-        if (!inOutside) P2.rect(fx - 8, fy + 1, 16, 1, 'rgba(18,8,2,0.4)');
-        P2.sprite(rr.rows, fx - 9, fy - 12, spritePal, { flip: (a.fwd || 1) > 0 });
+        if (!inOutside) P2.rect(fx - 8 * K, fy + 1, 16 * K, K, 'rgba(18,8,2,0.4)');
+        P2.sprite(rr.rows, fx - 9 * K, fy - 12 * K, spritePal, { flip: (a.fwd || 1) > 0, k: K });
         return;
       }
       if (pose === 'sit') {   // 坐下（門口台階、試聽機的圓凳）：不畫腿，身體往下 3 格
         rows = a._sit && a._sit.src === a.rows ? a._sit.rows : (a._sit = { src: a.rows, rows: a.rows.slice(0, 12) }).rows;
-        oy = 3;
+        oy = 3 * K;
       }
-      var x = fx - 8, y = fy - 14 + (a.dy || 0) + oy;
-      if (!inOutside && !a.sil) P2.rect(fx - 4, fy + 1, 8, 1, 'rgba(18,8,2,0.4)');
+      var x = fx - 8 * K, y = fy - 15 * K + 1 + (a.dy || 0) + oy;
+      // 腳下影子：細格子世界用兩層（外淡內濃），不是一條 1 px 線
+      if (!inOutside && !a.sil) { P2.rect(fx - 5 * K, fy - 1, 10 * K, 3, 'rgba(18,8,2,0.22)'); P2.rect(fx - 4 * K, fy, 8 * K, 2, 'rgba(18,8,2,0.28)'); }
       var sil = a.sil ? true : inOutside === 'sil' ? '#0a0e1c' : null;
+      var by = y - (a.moving ? bob : 0);
       if (pose === 'warn' && !sil) {   // 金色描邊（脈動）
-        if (Math.floor(state.t * 4) % 2 === 0) [[-1, 0], [1, 0], [0, -1], [0, 1]].forEach(function (d) { P2.sprite(rows, x + d[0], y + d[1] - (a.moving ? bob : 0), spritePal, { flip: a.flip, sil: '#f0c75e' }); });
+        if (Math.floor(state.t * 4) % 2 === 0) [[-1, 0], [1, 0], [0, -1], [0, 1]].forEach(function (d) { P2.sprite(rows, x + d[0] * 2, by + d[1] * 2, spritePal, { flip: a.flip, sil: '#f0c75e', k: K }); });
       }
-      P2.sprite(rows, x, y - (a.moving ? bob : 0), spritePal, { flip: a.flip, sil: sil });
+      // 細格子世界：小人加一圈 1 px 深色描邊，貼在細緻的牆與家具前面才不會糊進背景（初版的小人也是黑邊）
+      if (!sil && L.spriteOutline) [[-1, 0], [1, 0], [0, -1], [0, 1]].forEach(function (d) { P2.sprite(rows, x + d[0], by + d[1], spritePal, { flip: a.flip, sil: L.spriteOutline, k: K }); });
+      P2.sprite(rows, x, by, spritePal, { flip: a.flip, sil: sil, k: K });
       // 受擊：閃紅（疊一層半透明紅，不整個塗掉，看得出是誰）
-      if (pose === 'hurt' && !sil && Math.floor((state.rt - (a.poseAt || 0)) * 10) % 2 === 0) P2.sprite(rows, x, y, spritePal, { flip: a.flip, sil: 'rgba(230,40,56,0.6)' });
+      if (pose === 'hurt' && !sil && Math.floor((state.rt - (a.poseAt || 0)) * 10) % 2 === 0) P2.sprite(rows, x, y, spritePal, { flip: a.flip, sil: 'rgba(230,40,56,0.6)', k: K });
       // 呼吸：站著時偶爾眨眼
       if (!a.moving && !sil && a.bob !== false && !pose && rows[4] && Math.floor(state.t * 10 + a.phase * 7) % 34 === 0) {
-        for (var i = 0; i < rows[4].length; i++) if (rows[4].charAt(i) === 'k' && rows[3].charAt(i) !== 'k') P2.px(x + (a.flip ? rows[4].length - 1 - i : i), y + 4, spritePal.s || '#e8b48c');
+        for (var i = 0; i < rows[4].length; i++) if (rows[4].charAt(i) === 'k' && rows[3].charAt(i) !== 'k') P2.rect(x + (a.flip ? rows[4].length - 1 - i : i) * K, y + 4 * K, K, K, spritePal.s || '#e8b48c');
+      }
+      if (a.hold && !sil) {
+        var hd = opts.holdDraw || HOOKS.holdDraw, hp = HANDAT[a.arm || 'none'] || HANDAT.none, hc = a.flip ? 15 - hp[0] : hp[0];
+        if (typeof hd === 'function') hd(P2, a, x + hc * K + (K >> 1), by + hp[1] * K + (K >> 1), K, S);
       }
       // 頭上小圖示
       if (a.emote && (!a.emoteUntil || state.rt < a.emoteUntil)) {
         var k = a.emote; if (k === 'anger' && Math.floor(state.t * 4) % 2) k = 'angerB';
         var er = EMOTE[k]; if (er) {
           // 頭頂右上，白色描邊（在深色櫃檯、牆上也看得清楚）
-          var ew = er[0].length, ex = fx + 5 - Math.floor(ew / 2), ey = y - er.length - 1 + (Math.floor(state.t * 3) % 2);
-          if (k === 'anger' || k === 'angerB') P2.sprite(er, ex + 1, ey + 1, null, { sil: 'rgba(17,17,17,0.7)' });   // 怒：細線條，只加陰影不描白（描白會糊成一團）
-          else [[-1, 0], [1, 0], [0, -1], [0, 1]].forEach(function (d) { P2.sprite(er, ex + d[0], ey + d[1], null, { sil: '#ffffff' }); });
-          P2.sprite(er, ex, ey, { r: '#e0303f', k: '#111111', c: '#3fb6c9' }, {});
+          var ew = er[0].length * KE, ex = fx + 5 * K - Math.floor(ew / 2), ey = y - er.length * KE - KE + (Math.floor(state.t * 3) % 2) * KE;
+          if (tagOn(a.id)) { ex = fx + (a.fwd || 1) * 9 * K - Math.floor(ew / 2); ey = y + K + (Math.floor(state.t * 3) % 2) * KE; }   // 頭上有名牌：圖示改到臉的內側
+          if (k === 'anger' || k === 'angerB') P2.sprite(er, ex + KE, ey + KE, null, { sil: 'rgba(17,17,17,0.7)', k: KE });   // 怒：細線條，只加陰影不描白（描白會糊成一團）
+          else [[-1, 0], [1, 0], [0, -1], [0, 1]].forEach(function (d) { P2.sprite(er, ex + d[0] * KE, ey + d[1] * KE, null, { sil: '#ffffff', k: KE }); });
+          P2.sprite(er, ex, ey, { r: '#e0303f', k: '#111111', c: '#3fb6c9' }, { k: KE });
         }
       } else if (a.emote) a.emote = null;
     }
@@ -342,10 +415,10 @@
       hots = [];
       (L.props || []).forEach(function (o, idx) {
         var sp = PROPS[o.type]; if (!sp || o.hidden) return;
-        if (sp.hots) (sp.hots(o, S) || []).forEach(function (h) { h.prop = o; h.order = idx; h.sub = true; hots.push(h); });
+        if (sp.hots) (sp.hots(o, S) || []).forEach(function (h) { h.prop = o; h.order = idx; h.sub = !h.main; hots.push(h); });
         if (o.hot) {
           var b = propBox(o);
-          hots.push({ id: o.id || (o.type + idx), rect: o.hot.rect || b, label: o.hot.label, action: o.hot.action, prop: o, order: idx, mask: null, pri: o.hot.pri || 0, noSparkle: !!o.hot.noSparkle });
+          hots.push({ id: o.id || (o.type + idx), rect: o.hot.rect || b, label: o.hot.label, action: o.hot.action, prop: o, order: idx, mask: null, pri: o.hot.pri || 0, noSparkle: !!o.hot.noSparkle, rectOnly: !!o.hot.rectOnly });
         }
       });
       (L.hotspots || []).forEach(function (h, k) { hots.push(Object.assign({ order: 1000 + k }, h)); });
@@ -369,13 +442,20 @@
     function outlineOf(mask, r) {
       var out = [];
       if (!mask) {
-        for (var x = r[0] - 1; x <= r[0] + r[2]; x++) { out.push([x, r[1] - 1]); out.push([x, r[1] + r[3]]); }
-        for (var y = r[1]; y < r[1] + r[3]; y++) { out.push([r[0] - 1, y]); out.push([r[0] + r[2], y]); }
+        for (var q = 1; q <= (L.outlineW || 1); q++) {
+          for (var x = r[0] - q; x <= r[0] + r[2] - 1 + q; x++) { out.push([x, r[1] - q]); out.push([x, r[1] + r[3] - 1 + q]); }
+          for (var y = r[1] - q + 1; y < r[1] + r[3] - 1 + q; y++) { out.push([r[0] - q, y]); out.push([r[0] + r[2] - 1 + q, y]); }
+        }
         return out;
       }
-      for (var yy = 0; yy < H; yy++) for (var xx = 0; xx < W; xx++) {
-        if (mask[yy * W + xx]) continue;
-        if ((xx > 0 && mask[yy * W + xx - 1]) || (xx < W - 1 && mask[yy * W + xx + 1]) || (yy > 0 && mask[(yy - 1) * W + xx]) || (yy < H - 1 && mask[(yy + 1) * W + xx])) out.push([xx, yy]);
+      var ow = L.outlineW || 1, m = mask, ring = null;
+      for (var pass = 0; pass < ow; pass++) {
+        var nm = new Uint8Array(W * H);
+        for (var yy = 0; yy < H; yy++) for (var xx = 0; xx < W; xx++) {
+          var ii = yy * W + xx; if (m[ii]) { nm[ii] = 1; continue; }
+          if ((xx > 0 && m[ii - 1]) || (xx < W - 1 && m[ii + 1]) || (yy > 0 && m[ii - W]) || (yy < H - 1 && m[ii + W])) { nm[ii] = 2; out.push([xx, yy]); }
+        }
+        m = nm;
       }
       return out;
     }
@@ -383,7 +463,7 @@
     function syncFollow() {
       hots.forEach(function (h) {
         if (!h.follow) return;
-        var a = actors[h.follow], rel = h.rel || [-6, -14, 12, 15];
+        var a = actors[h.follow], rel = h.rel || [-6 * K, -14 * K, 12 * K, 15 * K];
         h.gone = !a || a.hidden || a.outside || !a.rows;
         if (h.gone) return;
         var r = [Math.round(a.x) + rel[0], Math.round(a.y) + rel[1], rel[2], rel[3]];
@@ -402,7 +482,7 @@
         return h;
       }
       // 手指胖：4 格內最近的
-      var best = null, bd = 16;
+      var best = null, bd = (L.fat || 4) * (L.fat || 4);
       cand.forEach(function (h) { var r = h.rect; var dx = Math.max(r[0] - x, 0, x - (r[0] + r[2] - 1)), dy = Math.max(r[1] - y, 0, y - (r[1] + r[3] - 1)); var d = dx * dx + dy * dy; if (d < bd) { bd = d; best = h; } });
       return best;
     }
@@ -449,9 +529,10 @@
     function render() {
       wctx.setTransform(1, 0, 0, 1, 0, 0);
       wctx.clearRect(0, 0, W, H);
-      drawShell();
+      if (bgGrid) wctx.drawImage(bgGrid, 0, 0);       // 背景圖縮到場景格（bgMode=grid）：牆／地板跟道具同一格
+      else if (!L.bg) drawShell();
       var props = L.props || [];
-      var byLayer = { wall: [], floor: [], stand: [], ceiling: [], front: [] };
+      var byLayer = { wall: [], floor: [], stand: [], ceiling: [], front: [], glow: [] };
       props.forEach(function (o) { if (!o.hidden && PROPS[o.type]) (byLayer[propLayer(o)] || byLayer.stand).push(o); });
       byLayer.wall.forEach(function (o) { PROPS[o.type].draw(P, o, S); });
       byLayer.floor.forEach(function (o) { PROPS[o.type].draw(P, o, S); });
@@ -462,18 +543,32 @@
       items.forEach(function (it) { if (it.o) PROPS[it.o.type].draw(P, it.o, S); else drawActor(P, it.a, false); });
       byLayer.ceiling.forEach(function (o) { PROPS[o.type].draw(P, o, S); });
       byLayer.front.forEach(function (o) { PROPS[o.type].draw(P, o, S); });
-      applyLight();
+      if (!L.bg) applyLight();
+      byLayer.glow.forEach(function (o) { PROPS[o.type].draw(P, o, S); });
       drawFocus();
       blit();
     }
     // 可視畫布直接用裝置像素大小（每格 devPx×devPx 個裝置像素），自己用最近鄰放大：
     // 不靠 CSS image-rendering（舊 iOS Safari 對 canvas 的 pixelated 不可靠），每一格在任何瀏覽器都是銳利的方塊。
     function blit() {
-      var k = devPx, bw = vw * k, bh = vh * k;
+      var k = devPx, bw = Math.round(vw * k), bh = Math.round(vh * k);
       if (view.width !== bw) view.width = bw;
       if (view.height !== bh) view.height = bh;
-      vctx.imageSmoothingEnabled = false; vctx.webkitImageSmoothingEnabled = false;
       vctx.clearRect(0, 0, bw, bh);
+      // 背景（初版描圖的牆與地板）：原生解析度 1120×1231，直接平滑縮到裝置像素——細節跟初版一樣
+      if (L.bg && !bgGrid) {
+        if (bgImg && bgImg.complete && bgImg.naturalWidth) {
+          var bs = bgImg.naturalWidth / W;
+          vctx.imageSmoothingEnabled = true; vctx.imageSmoothingQuality = 'high';
+          vctx.drawImage(bgImg, vx * bs, vy * bs, vw * bs, vh * bs, 0, 0, bw, bh);
+        } else { vctx.fillStyle = L.bg.color || '#3a2a18'; vctx.fillRect(0, 0, bw, bh); }
+      }
+      // 高解析層（牆上蓋的真封面、小木架上的 7 吋）：在背景圖之上、家具之下
+      if (S.hires) {
+        var V = { ctx: vctx, k: k, vx: vx, vy: vy, X: function (x) { return (x - vx) * k; }, Y: function (y) { return (y - vy) * k; } };
+        (L.props || []).forEach(function (o) { var sp = PROPS[o.type]; if (sp && sp.hires && !o.hidden) { vctx.save(); try { sp.hires(V, o, S); } catch (e) { console.error(e); } vctx.restore(); } });
+      }
+      vctx.imageSmoothingEnabled = false; vctx.webkitImageSmoothingEnabled = false;
       vctx.drawImage(world, vx, vy, vw, vh, 0, 0, bw, bh);
     }
     // 選取外框、教學聚光、今晚亮金框、提示星
@@ -493,14 +588,14 @@
         }
         wctx.drawImage(state.spot.ov, 0, 0);
         outlineDraw(h, t);
-        var bx = Math.round(h.cx) - 3, by = Math.round(r[1] + r[3]) + 1 + (Math.floor(t * 3) % 2);
-        if (by + 9 > H) by = Math.round(r[1]) - 10 - (Math.floor(t * 3) % 2);
-        P2.sprite(HAND, bx, by, { k: '#111111', w: '#ffffff', s: '#f6dcc4' }, {});
+        var bx = Math.round(h.cx) - 3 * KE, by = Math.round(r[1] + r[3]) + KE + (Math.floor(t * 3) % 2) * KE;
+        if (by + 9 * KE > H) by = Math.round(r[1]) - 10 * KE - (Math.floor(t * 3) % 2) * KE;
+        P2.sprite(HAND, bx, by, { k: '#111111', w: '#ffffff', s: '#f6dcc4' }, { k: KE });
       }
       // 今晚可去的地方：金／奶油雙色外框（慢慢呼吸，不跑馬燈）
       if (state.hi.length) {
         var on = Math.floor(t * 2.5) % 2;
-        state.hi.forEach(function (g) { g.hots.forEach(function (h) { h.outline.forEach(function (p) { wctx.fillStyle = on ? '#f0c75e' : '#fff1c2'; wctx.fillRect(p[0], p[1], 1, 1); }); }); });
+        state.hi.forEach(function (g) { g.hots.forEach(function (h) { wctx.fillStyle = on ? '#f0c75e' : '#fff1c2'; h.outline.forEach(function (p) { wctx.fillRect(p[0], p[1], 1, 1); }); }); });
       }
       var show = [];
       if (state.flash && state.rt < state.flash.until) show.push(state.flash.h);
@@ -513,7 +608,7 @@
         if (ph < 0.55) {
           var main = hots.filter(function (h) { return !h.sub && !h.noSparkle && enabled(h); });
           var hh = main[cyc % (main.length || 1)];
-          if (hh) { var sx = hh.rect[0] + hh.rect[2] - 2, sy = hh.rect[1] + 1, big = ph > 0.15 && ph < 0.4; P2.px(sx, sy, 'hi'); if (big) { P2.px(sx - 1, sy, 'hi2'); P2.px(sx + 1, sy, 'hi2'); P2.px(sx, sy - 1, 'hi2'); P2.px(sx, sy + 1, 'hi2'); } }
+          if (hh) { var q = KE, sx = hh.rect[0] + hh.rect[2] - 2 * q, sy = hh.rect[1] + q, big = ph > 0.15 && ph < 0.4; P2.rect(sx, sy, q, q, 'hi'); if (big) { P2.rect(sx - q, sy, q, q, 'hi2'); P2.rect(sx + q, sy, q, q, 'hi2'); P2.rect(sx, sy - q, q, q, 'hi2'); P2.rect(sx, sy + q, q, q, 'hi2'); } }
         }
       }
     }
@@ -527,6 +622,8 @@
     // 依寬度算的最大倍率（裝置像素）：dev = floor(容器寬 × DPR ÷ 安全區寬)，上限 maxScale × DPR
     function baseDev() {
       var hw = host.clientWidth || hostW || 390, safe = L.safe || [0, W], sw = safe[1] - safe[0], dpr = dprNow();
+      // 細格子世界：倍率不必是整數（1 場景像素 = 2.6 個裝置像素也行），寬度貼滿；最近鄰放大，每格 2～3 個裝置像素
+      if (L.fine) return Math.max(0.5, Math.min((opts.maxScale || L.maxScale || 1.5) * dpr, hw * dpr / sw));
       return Math.max(1, Math.min(Math.floor((opts.maxScale || L.maxScale || 3) * dpr + 1e-6), Math.floor(hw * dpr / sw + 1e-6)));
     }
     function fit() {
@@ -535,6 +632,7 @@
       if (cam.dev) dev = Math.min(dev, cam.dev);
       devPx = dev; scale = dev / dpr;
       vw = Math.min(W, Math.floor(hostW / scale + 1e-6));
+      if (L.fine && vw > W - 2) vw = W;
       var safe = L.safe || [0, W], cx = (safe[0] + safe[1]) / 2; vx = clamp(Math.round(cx - vw / 2), 0, W - vw);
       vy = clamp(Math.round(cam.y), 0, H - 1); vh = clamp(Math.round(cam.h), 1, H - vy);
       var cssW = vw * scale, cssH = vh * scale;
@@ -589,7 +687,7 @@
     function labelFor(h, cls, ms) {
       var d = document.createElement('div'); d.className = 'ds-label' + (cls ? ' ' + cls : ''); d.textContent = h.label || '';
       return addMark({ el: d, kind: 'label', h: h, until: ms ? state.rt + ms / 1000 : 0, place: function () {
-        var r = h.rect, p = toCss(r[0] + r[2] / 2, r[1]), below = p.y < 26;
+        var r = h.rect, la = h.labelAt || (h.prop && h.prop.hot && h.prop.hot.labelAt), p = la ? toCss(la[0], la[1]) : toCss(r[0] + r[2] / 2, r[1]), below = p.y < 26;
         if (below) p = toCss(r[0] + r[2] / 2, r[1] + r[3]);
         d.style.left = p.x + 'px'; d.style.top = p.y + 'px'; d.classList.toggle('below', below);
         d.style.setProperty('--shift', sideShift(d, p.x) + 'px');
@@ -599,9 +697,9 @@
       var el = document.createElement('div'); el.className = 'ds-say' + (o.tone ? ' ' + o.tone : ''); el.textContent = text;
       return addMark({ el: el, kind: 'say', id: id, place: function () {
         var a = actors[id]; if (!a) return;
-        var head = a.y - 15, p = toCss(a.x, head), bh = el.offsetHeight || 24;
+        var head = a.y - 15 * K - (o.lift || 0) - (tagOn(id) ? 20 : 0), p = toCss(a.x, head), bh = el.offsetHeight || 24;
         if (p.y - bh - 8 < 0) {   // 頭頂放不下（例：對決橫條裡櫃檯後的老闆）→ 放在身體旁邊
-          var right = toCss(a.x + 8, a.y - 10), left = toCss(a.x - 8, a.y - 10), ow = overlay.clientWidth || vw * scale, w = el.offsetWidth;
+          var right = toCss(a.x + 8 * K, a.y - 10 * K), left = toCss(a.x - 8 * K, a.y - 10 * K), ow = overlay.clientWidth || vw * scale, w = el.offsetWidth;
           var useRight = right.x + 6 + w <= ow - 2 || left.x - 6 - w < 2;
           el.classList.add('side'); el.classList.toggle('sl', !useRight); el.classList.toggle('sr', useRight);
           var top = clamp(right.y, bh / 2 + 2, (vh * scale) - bh / 2 - 2);
@@ -621,7 +719,8 @@
     function onDown(ev) { var p = fromEvent(ev); down = { x: p.x, y: p.y, h: hitTest(p.x, p.y), t: now() }; }
     function onUp(ev) {
       if (!down) return; var p = fromEvent(ev), h = hitTest(p.x, p.y), d0 = down; down = null;
-      if (!h || h !== d0.h || Math.abs(p.x - d0.x) > 6 || Math.abs(p.y - d0.y) > 6) return;
+      var tol = L.fine ? 14 : 6;
+      if (!h || h !== d0.h || Math.abs(p.x - d0.x) > tol || Math.abs(p.y - d0.y) > tol) return;
       if (state.spot && state.spot.h !== h) { bump(); return; }
       tap(h);
     }
@@ -646,12 +745,14 @@
     view.addEventListener('pointercancel', function () { down = null; });
 
     // ---------------- 迴圈（10 fps：像素動畫用跳格）；分頁藏起來時停
-    var last = 0, raf = 0, t0 = now(), fixedT = opts.fixedTime, tPaused = 0;
+    // 唱盤區演出（clash）時每個 rAF 都畫（fast>0），演完回 10 fps；onTick 的函式每格在畫之前跑（stage.js 用來推進時間軸）
+    var last = 0, raf = 0, t0 = now(), fixedT = opts.fixedTime, tPaused = 0, fastN = 0, ticks = [];
     function loop(ts) {
       if (destroyed) return;
       raf = requestAnimationFrame(loop);
-      if (ts - last < 95) return; var dt = Math.min(0.2, (ts - last) / 1000); last = ts;
+      if (!fastN && ts - last < 95) return; var dt = Math.min(0.2, (ts - last) / 1000); last = ts;
       state.rt = (now() - t0 - tPaused) / 1000; state.t = fixedT != null ? fixedT : state.rt; state.frame++;   // rt＝真時間（到期用），t＝畫面動畫時間（可凍結截圖）
+      for (var ti = 0; ti < ticks.length; ti++) { try { ticks[ti](state.rt, dt); } catch (e) { console.error(e); } }
       stepActors(dt);
       dropMarks(function (m) { return m.until && state.rt > m.until; });
       render();
@@ -668,10 +769,10 @@
       var k = spd();
       Object.keys(actors).forEach(function (id) {
         var a = actors[id]; if (!a.path || !a.path.length) return;
-        var tgt = a.path[0], dx = tgt.x - a.x, dy = tgt.y - a.y, dist = Math.sqrt(dx * dx + dy * dy), sp = (a.speed || 36) * dt * k;
+        var tgt = a.path[0], dx = tgt.x - a.x, dy = tgt.y - a.y, dist = Math.sqrt(dx * dx + dy * dy), sp = (a.speed || 36) * (L.walkK || K) * dt * k;
         a.moving = true; if (Math.abs(dx) > 0.5) a.flip = (a.faceFlip ? dx > 0 : false);
         if (dist <= sp) { a.x = tgt.x; a.y = tgt.y; a.outside = tgt.outside; a.path.shift(); if (!a.path.length) { a.moving = false; var r = a.res; a.res = null; if (r) r(); } }
-        else { a.x += dx / dist * sp; a.y += dy / dist * sp; if (tgt.outside !== a.outside && dist < 6) a.outside = tgt.outside; }
+        else { a.x += dx / dist * sp; a.y += dy / dist * sp; if (tgt.outside !== a.outside && dist < 6 * K) a.outside = tgt.outside; }
       });
     }
 
@@ -696,6 +797,15 @@
         return new Promise(function (res) { if (!a.path.length) { a.moving = false; res(); return; } a.res = res; });
       },
       face: function (id, fwd) { actor(id).fwd = fwd; return api; },
+      // route B：手臂姿勢（wind／throw／flag…，改小人格子）、手上拿的東西（封套、唱片）、水平位移（受擊後退）
+      arm: function (id, kind) { actor(id).arm = kind || null; return api; },
+      hold: function (id, what) { actor(id).hold = what || null; return api; },
+      nudge: function (id, dx) { actor(id).ox = dx || 0; return api; },
+      flip: function (id, on) { actor(id).flip = !!on; return api; },
+      fast: function (on) { fastN = Math.max(0, fastN + (on ? 1 : -1)); return api; },
+      onTick: function (fn) { ticks.push(fn); return function () { ticks = ticks.filter(function (f) { return f !== fn; }); }; },
+      tick: function () { state.rt = (now() - t0 - tPaused) / 1000; if (fixedT == null) state.t = state.rt; ticks.forEach(function (f) { try { f(state.rt, 0); } catch (e) { console.error(e); } }); render(); layoutOverlay(); return api; },
+      now: function () { return (now() - t0 - tPaused) / 1000; },
       pose: function (id, name, ms) {
         var a = actor(id); a.pose = name || null; a.poseAt = state.rt;
         a.poseUntil = (name && ms) ? state.rt + ms / 1000 / spd() : 0;
@@ -712,15 +822,21 @@
         return m.el;
       },
       tag: function (id, text, side, lr) {
+        if (L.tagTop) lr = 'T';
         dropMarks(function (m) { return m.kind === 'tag' && m.id === id; });
         if (!text) return null;
-        var d = document.createElement('div'); d.className = 'ds-tag ' + (side === 'p' ? 'p' : 'e') + ' ' + (lr === 'R' ? 'R' : 'L'); d.textContent = text;
-        addMark({ el: d, kind: 'tag', id: id, place: function () {
+        var d = document.createElement('div'); d.className = 'ds-tag ' + (side === 'p' ? 'p' : 'e') + ' ' + (lr === 'R' ? 'R' : lr === 'T' ? 'T' : 'L'); d.textContent = text;
+        addMark({ el: d, kind: 'tag', id: id, lr: lr, place: function () {
           var a = actors[id]; if (!a || a.hidden) { d.style.display = 'none'; return; }
           d.style.display = '';
-          var p = toCss(lr === 'R' ? a.x + 8 : a.x - 8, a.y - 9), w = d.offsetWidth, ow = overlay.clientWidth || vw * scale;
-          // 長名字（冷門仙人、那張我有）不要被舞台邊緣切掉：夾在畫面內，必要時蓋到身體一點點
-          if (lr === 'R') p.x = Math.min(p.x, ow - 2 - 3 - w); else p.x = Math.max(p.x, 2 + 3 + w);
+          var w = d.offsetWidth, ow = overlay.clientWidth || vw * scale, p;
+          if (lr === 'T') {   // 名牌在頭上（唱盤區對決）：置中、夾在畫面內
+            p = toCss(a.x, a.y - 14 * K - 3); p.x = clamp(p.x, 2 + w / 2, ow - 2 - w / 2);
+          } else {
+            p = toCss(lr === 'R' ? a.x + 8 * K : a.x - 8 * K, a.y - 9 * K);
+            // 長名字（冷門仙人、那張我有）不要被舞台邊緣切掉：夾在畫面內，必要時蓋到身體一點點
+            if (lr === 'R') p.x = Math.min(p.x, ow - 2 - 3 - w); else p.x = Math.max(p.x, 2 + 3 + w);
+          }
           d.style.left = p.x + 'px'; d.style.top = p.y + 'px';
         } });
         return d;
@@ -735,7 +851,7 @@
         // 其他人：飄在頭上；頭上正有泡泡就改飄在身體上。
         var x0 = a.x, y0 = a.y, fw = a.fwd || 0, talking = marks.some(function (m) { return m.kind === 'say' && m.id === id; });
         var m = addMark({ el: d, kind: 'float', place: function () {
-          var p = fw ? toCss(x0 + fw * 12 + 0.5, y0 - 4) : toCss(x0 + 0.5, talking ? y0 - 3 : y0 - 15);
+          var tg = tagOn(id), p = tg ? toCss(x0 + (fw || 1) * 11 * K, y0 - 13 * K) : fw ? toCss(x0 + fw * 12 * K + 0.5, y0 - 4 * K) : toCss(x0 + 0.5, talking ? y0 - 3 * K : y0 - 15 * K);
           d.style.left = p.x + 'px'; d.style.top = p.y + 'px';
         } });
         setTimeout(function () { dropMarks(function (x) { return x === m; }); }, 1000);
@@ -748,7 +864,7 @@
         addMark({ el: d, kind: 'anc', id: id, place: function () {
           var a = actors[id]; if (!a || a.hidden) { d.style.display = 'none'; return; }
           d.style.display = '';
-          var p0 = toCss(a.x - 6, a.y - 14), p1 = toCss(a.x + 6, a.y + 1);
+          var p0 = toCss(a.x - 6 * K, a.y - 14 * K), p1 = toCss(a.x + 6 * K, a.y + 1);
           d.style.left = p0.x + 'px'; d.style.top = p0.y + 'px'; d.style.width = (p1.x - p0.x) + 'px'; d.style.height = (p1.y - p0.y) + 'px';
         } });
         return d;
@@ -844,5 +960,5 @@
     return api;
   }
 
-  return { mount: mount, defProp: defProp, PROPS: PROPS, Painter: Painter, DEFAULT_PAL: DEFAULT_PAL, GLYPH: GLYPH, HAND: HAND, EMOTE: EMOTE, bayer: bayer, seeded: seeded, version: '2.0' };
+  return { mount: mount, defProp: defProp, hook: hook, HOOKS: HOOKS, PROPS: PROPS, Painter: Painter, DEFAULT_PAL: DEFAULT_PAL, GLYPH: GLYPH, HAND: HAND, EMOTE: EMOTE, HANDAT: HANDAT, armRows: armRows, bayer: bayer, seeded: seeded, version: '3.0' };
 });

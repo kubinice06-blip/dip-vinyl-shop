@@ -86,3 +86,6 @@
 }
 @-webkit-keyframes dsFloatR{0%,80%{opacity:1}100%{opacity:0}}
 @keyframes dsFloatR{0%,80%{opacity:1}100%{opacity:0}}
+
+/* route B：名牌在頭上（唱盤區對決） */
+.ds-tag.T{-webkit-transform:translate(-50%,-100%);transform:translate(-50%,-100%)}

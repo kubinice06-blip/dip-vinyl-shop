@@ -6,6 +6,8 @@
 //       spots／熱點／鏡頭都在畫布內；舊 POS 別名表（stage.js）每個目標在每家店都有；引用的唱片都在 cards.js；
 //       箱子對到 content.js 的卡池；地圖圖釘對到 shops/index.json；每個道具都畫得出來（假畫布）、畫在畫布內；
 //       比例：唱片箱整體不高過一個小人（14 格），所有站立道具的格子跟小人同一個尺度（不縮放）。
+//       v3 細格子（layout.fine，本店 448×492）：小人一格＝spriteScale 個場景像素，人高＝14×spriteScale；
+//       長桌＋桌上木箱＋露出的唱片要比人矮（店主：人明顯比箱子高）、櫃檯面不高過人、背景圖檔要在；唱盤區兩座台與特效層都在。
 import fs from 'fs';
 import path from 'path';
 import vm from 'vm';
@@ -20,7 +22,16 @@ export const CHAR_H = 14;   // 小人看得到的列數（16×16 格，腳底在
 export const SHOP_SPOTS = ['out', 'q1', 'q2', 'door', 'atdoor', 'in', 'counter', 'pay', 'aisle', 'browse', 'crateP', 'dig1', 'dig2', 'dig3',
   'listen', 'between', 'duelE', 'duelP', 'near', 'visit', 'leave', 'map', 'frontleft'];
 export const SHOP_CAMERAS = ['full', 'reward', 'strip', 'stripS'];
-const ACTION_RE = /^(door|listen|counter|cat|talk:owner|poster:event|now|locked|wall-record:.+|crate:[a-z0-9]+|shop:[a-z0-9-]+)$/;
+const ACTION_RE = /^(door|listen|counter|cat|talk:owner|poster:event|now|locked|wall-record:.+|wall-painted:.+|crate:[a-z0-9]+|shop:[a-z0-9-]+)$/;
+// 細格子世界：小人看得到的列數 × 每格場景像素
+export function charH(L) { return CHAR_H * ((L && L.fine && L.spriteScale) || 1); }
+// 本店箱子的卡池：v2 content.pools.crate[key]（陣列）；v3 content.bins[key].ids
+function cratePool(content, key) {
+  if (!content) return null;
+  if (content.pools && content.pools.crate && content.pools.crate[key]) return content.pools.crate[key];
+  if (content.bins && content.bins[key]) return content.bins[key].ids || content.bins[key];
+  return null;
+}
 const FORBIDDEN = [/派對/, /——/, /—/];
 
 // ---------- 把 shop.js／shop-props.js／stage.js 放進沙盒載入（跟瀏覽器同一份程式）
@@ -51,6 +62,7 @@ function fakeCtx() {
       b.n++; b.x0 = Math.min(b.x0, X0); b.y0 = Math.min(b.y0, Y0); b.x1 = Math.max(b.x1, X1); b.y1 = Math.max(b.y1, Y1);
     },
     drawImage() {}, save() {}, restore() { clip = null; }, beginPath() {}, rect(x, y, w, h) { clip = [x, y, w, h]; }, clip() {},
+    get ctx() { return ctx; },
     clearRect() {}, getImageData() { throw new Error('no getImageData in check'); }
   };
   return ctx;
@@ -72,11 +84,18 @@ export function checkLayout(L, file, lib, cards, content, opts = {}) {
   if (L.id !== base) bad('id「' + L.id + '」跟檔名不一致');
   if (!['shop', 'map'].includes(L.kind)) bad('kind 要是 shop 或 map：' + L.kind);
   if (typeof L.name !== 'string' || !L.name) bad('缺 name');
-  if (!Array.isArray(L.size) || L.size.length !== 2 || !L.size.every(v => isInt(v) && v >= 32 && v <= 400)) { bad('size 要是 [寬, 高] 整數'); return { problems: P, warnings: Wn, hotIds: [], info }; }
-  const [W, H] = L.size;
+  if (!Array.isArray(L.size) || L.size.length !== 2 || !L.size.every(v => isInt(v) && v >= 32 && v <= (L.fine ? 640 : 400))) { bad('size 要是 [寬, 高] 整數'); return { problems: P, warnings: Wn, hotIds: [], info }; }
+  const [W, H] = L.size, CH = charH(L);
+  if (L.fine) {
+    if (!(isInt(L.spriteScale) && L.spriteScale >= 2 && L.spriteScale <= 8)) bad('細格子世界要有 spriteScale（2–8）');
+    if (L.bg) {
+      if (typeof L.bg.src !== 'string' || !fs.existsSync(path.resolve(LAB, L.bg.src))) bad('背景圖 ' + (L.bg && L.bg.src) + ' 不存在（路徑相對 game-lab/）');
+      if (!(L.bg.w > 0 && L.bg.h > 0) || Math.abs(L.bg.w / L.bg.h - W / H) > 0.01) bad('背景圖比例要跟 size 一樣');
+    }
+  }
   const inside = (x, y) => isInt(x) && isInt(y) && x >= 0 && y >= 0 && x < W && y < H;
   if (!Array.isArray(L.safe) || L.safe.length !== 2 || !(L.safe[0] >= 0 && L.safe[1] <= W && L.safe[0] < L.safe[1])) bad('safe 要在 0..寬 之間');
-  if (L.maxScale != null && !(L.maxScale >= 1 && L.maxScale <= 4)) bad('maxScale 1–4');
+  if (L.maxScale != null && !(L.maxScale >= (L.fine ? 0.5 : 1) && L.maxScale <= 4)) bad('maxScale ' + (L.fine ? '0.5' : '1') + '–4');
   if (L.coverMode && !['raw', 'palette', 'poster'].includes(L.coverMode)) bad('coverMode ' + L.coverMode);
   for (const k of ['palette']) if (L[k] != null && (typeof L[k] !== 'object' || Array.isArray(L[k]))) bad(k + ' 要是物件');
   for (const [k, v] of Object.entries(L.palette || {})) if (!/^#[0-9a-f]{3,8}$/i.test(v)) bad('palette.' + k + ' 不是色碼');
@@ -91,7 +110,7 @@ export function checkLayout(L, file, lib, cards, content, opts = {}) {
   }
   if (L.kind === 'shop' && cams.strip && cams.stripS) {
     if (cams.stripS.h > cams.strip.h) bad('stripS 要比 strip 矮');
-    if (cams.strip.y * 1 + cams.strip.h !== cams.stripS.y + cams.stripS.h) warn('strip 與 stripS 的下緣不一樣（兩個對決者的腳要都在）');
+    if (!L.fine && cams.strip.y * 1 + cams.strip.h !== cams.stripS.y + cams.stripS.h) warn('strip 與 stripS 的下緣不一樣（兩個對決者的腳要都在）');
   }
   // spots
   const spots = L.spots || {};
@@ -104,7 +123,7 @@ export function checkLayout(L, file, lib, cards, content, opts = {}) {
   // 對決兩人：他在左、你在右；腳都在 strip、stripS 裡
   if (L.kind === 'shop' && spots.duelE && spots.duelP) {
     if (!(spots.duelE[0] < spots.duelP[0])) bad('duelE 要在 duelP 左邊（他＝左、你＝右）');
-    for (const cn of ['strip', 'stripS']) { const c = cams[cn]; if (!c) continue; for (const k of ['duelE', 'duelP']) { const y = spots[k][1]; if (y > c.y + c.h - 1 || y - CHAR_H + 2 < c.y) bad(cn + ' 鏡頭看不到 ' + k + ' 的全身'); } }
+    for (const cn of ['strip', 'stripS']) { const c = cams[cn]; if (!c) continue; for (const k of ['duelE', 'duelP']) { const y = spots[k][1]; if (y > c.y + c.h - 1 || y - CH + 2 < c.y) bad(cn + ' 鏡頭看不到 ' + k + ' 的全身'); } }
   }
   // 別名表
   if (L.kind === 'shop') for (const [from, to] of Object.entries(lib.ALIAS)) if (!spots[to]) bad('別名 ' + from + ' → ' + to + '：這家店沒有這個 spot');
@@ -112,7 +131,7 @@ export function checkLayout(L, file, lib, cards, content, opts = {}) {
   const props = Array.isArray(L.props) ? L.props : (bad('props 要是陣列'), []);
   const ids = new Map();
   const S = {
-    W, H, layout: L, pal: Object.assign({}, lib.DipShop.DEFAULT_PAL, L.palette || {}), state: { door: 'closed', playing: true },
+    W, H, layout: L, pal: Object.assign({}, lib.DipShop.DEFAULT_PAL, L.palette || {}), state: { door: 'closed', playing: true, poke: {}, decks: {}, fx: null, hi: [] },
     t: 1.3, frame: 1, cover: () => null, card: (id) => cards[id] || null, rand: lib.DipShop.seeded,
     wallBase: (L.wall && L.wall.h != null) ? L.wall.h : 58, drawOutside() {}
   };
@@ -132,7 +151,7 @@ export function checkLayout(L, file, lib, cards, content, opts = {}) {
     const spec = lib.PROPS[o.type];
     if (!spec) { bad(src + '：沒有這種道具'); return; }
     info.props++;
-    if (o.layer && !['wall', 'floor', 'stand', 'ceiling', 'front'].includes(o.layer)) bad(src + '：layer ' + o.layer);
+    if (o.layer && !['wall', 'floor', 'stand', 'ceiling', 'front', 'glow'].includes(o.layer)) bad(src + '：layer ' + o.layer);
     // 畫一次（假畫布）：不能丟錯、要畫在畫布內
     const ctx = fakeCtx(), Pn = lib.DipShop.Painter(ctx, S.pal);
     try { spec.draw(Pn, o, S); } catch (e) { bad(src + '：畫的時候出錯 ' + e.message); return; }
@@ -147,6 +166,18 @@ export function checkLayout(L, file, lib, cards, content, opts = {}) {
       if ((o.h || 7) > CHAR_H / 2 + 2) bad(src + '：箱子正面 ' + (o.h || 7) + ' 格太高');
     }
     if (o.type === 'counter' && o.h > CHAR_H) bad(src + '：櫃檯比小人高');
+    // v3 細格子：長桌＋木箱＋露出的唱片（整體）比人矮；櫃檯正面＋檯面比人矮；試聽櫃不高過人
+    if (o.type === 'tableB') {
+      const hh = b.y1 - b.y0; info.scale.push({ id: o.id || o.type, h: hh, kind: 'table' });
+      if (hh >= CH) bad(src + '：長桌連木箱高 ' + hh + '，不比小人（' + CH + '）矮');
+      (o.crates || []).forEach(cr => { info.scale.push({ id: cr.id, h: (cr.face || 16) + Math.round((cr.cover || 30) * 0.6) + 4, kind: 'crate' }); (cr.records || []).forEach(r => recRefs.push([r, src + ' ' + cr.id])); });
+      (o.bins || []).forEach(bn => (bn.records || []).forEach(r => recRefs.push([r, src + ' 黑籃'])));
+    }
+    if (o.type === 'counterB' && (o.face || 38) + (o.depth || 10) >= CH) bad(src + '：櫃檯比小人高');
+    if (o.type === 'listenB' && (o.face || 32) + (o.depth || 8) >= CH) bad(src + '：試聽櫃比小人高');
+    if (o.type === 'deckB' && 38 >= CH) bad(src + '：唱盤台比小人高');
+    if (o.type === 'wallSlots') (o.cells || []).forEach(c => { if (c[2]) recRefs.push([c[2], src]); });
+    if (o.type === 'singlesLedge' || o.type === 'nowEasel') [].concat(o.records || [], o.record || []).forEach(r => recRefs.push([r, src]));
     if (o.type === 'wallRack' && (o.cell || 10) > CHAR_H) bad(src + '：牆上封面比小人大');
     if (o.type === 'wallRack') (o.records || []).forEach(r => r && recRefs.push([r, src]));
     if (o.type === 'nowPlaying') recRefs.push([o.record, src]);
@@ -178,20 +209,28 @@ export function checkLayout(L, file, lib, cards, content, opts = {}) {
   const meta = L.meta || {};
   if (L.kind === 'shop') {
     if (!meta.crates || typeof meta.crates !== 'object') bad('缺 meta.crates');
+    // 箱子可以是獨立道具（v2 crate），也可以放在長桌上（v3 tableB.crates）
+    const crateById = (hid) => { const top = props.find(o => o.id === hid); if (top) return { rec: top.records, action: top.hot && top.hot.action }; for (const o of props) for (const cr of (o.crates || [])) if (cr.id === hid) return { rec: cr.records, action: cr.action }; return null; };
     for (const [hid, key] of Object.entries(meta.crates || {})) {
       if (!ids.has(hid)) bad('meta.crates：熱點 ' + hid + ' 不存在');
-      const hp = props.find(o => o.id === hid);
-      if (hp && hp.hot && hp.hot.action !== 'crate:' + key) bad('meta.crates：' + hid + ' 的動作是 ' + hp.hot.action + '，不是 crate:' + key);
-      if (L.id === 'dip' && content && !(content.pools && content.pools.crate && content.pools.crate[key])) bad('meta.crates：content.js 沒有卡池 pools.crate.' + key);
+      const hp = crateById(hid);
+      if (hp && hp.action !== 'crate:' + key) bad('meta.crates：' + hid + ' 的動作是 ' + hp.action + '，不是 crate:' + key);
+      const pool = cratePool(content, key);
+      if (L.id === 'dip' && content && !pool) bad('meta.crates：content.js 沒有卡池 ' + key + '（pools.crate 或 bins）');
+      // 本店的箱子露出的唱片要在那個箱子的卡池裡
+      if (L.id === 'dip' && pool) (hp && hp.rec || []).forEach(r => { if (!pool.includes(r)) warn(hid + '：露出的唱片 ' + r + ' 不在卡池 ' + key); });
     }
-    // 本店的箱子露出的唱片要在那個箱子的卡池裡
-    if (L.id === 'dip' && content && content.pools && content.pools.crate) {
-      for (const [hid, key] of Object.entries(meta.crates || {})) {
-        const hp = props.find(o => o.id === hid); const pool = content.pools.crate[key] || [];
-        (hp && hp.records || []).forEach(r => { if (!pool.includes(r)) warn(hid + '：露出的唱片 ' + r + ' 不在 pools.crate.' + key); });
-      }
+    // 唱盤區：兩座台＋特效層（他左白台、你右黑台）
+    if (L.fine) {
+      const dE = props.find(o => o.type === 'deckB' && o.side === 'e'), dP = props.find(o => o.type === 'deckB' && o.side === 'p');
+      if (!dE || !dP) bad('唱盤區要有兩座唱盤台（deckB side e／p）');
+      else if (!(dE.x < dP.x)) bad('他的白台（e）要在左、你的黑台（p）在右');
+      if (!props.some(o => o.type === 'duelfxB') || !props.some(o => o.type === 'duelglowB')) bad('唱盤區要有 duelfxB 與 duelglowB 特效層');
+      if (L.duel) for (const k of ['deckE', 'deckP', 'clash', 'rug']) { const v = L.duel[k]; if (v && !inside(v[0], v[1])) bad('duel.' + k + ' 在畫布外'); }
+      if (spots.ref && !inside(spots.ref[0], spots.ref[1])) bad('spots.ref 在畫布外');
     }
   }
+  info.charH = CH;
   return { problems: P, warnings: Wn, hotIds: [...ids.keys()], info };
 }
 
@@ -206,7 +245,7 @@ export function runChecks() {
     layouts[L.id || f] = L;
     const r = checkLayout(L, 'shops/' + f, lib, cards, content);
     problems.push(...r.problems); warnings.push(...r.warnings);
-    stats[f] = { hots: r.info.hots, props: r.info.props, crates: r.info.scale, hotIds: r.hotIds };
+    stats[f] = { hots: r.info.hots, props: r.info.props, crates: r.info.scale, hotIds: r.hotIds, charH: r.info.charH };
   }
   // index.json
   let idx = null;
@@ -240,7 +279,7 @@ if (process.argv[1] && import.meta.url === pathToFileURL(path.resolve(process.ar
   const quiet = process.argv.includes('--quiet');
   const { problems, warnings, stats } = runChecks();
   if (!quiet) {
-    for (const [f, s] of Object.entries(stats)) console.log(f + '：道具 ' + s.props + '、熱點 ' + s.hots + (s.crates.length ? '、唱片箱高 ' + s.crates.map(c => c.id + ' ' + c.h).join(' / ') + '（小人 ' + CHAR_H + '）' : ''));
+    for (const [f, s] of Object.entries(stats)) console.log(f + '：道具 ' + s.props + '、熱點 ' + s.hots + (s.crates.length ? '、唱片箱高 ' + s.crates.map(c => c.id + ' ' + c.h).join(' / ') + '（小人 ' + s.charH + '）' : ''));
     warnings.forEach(w => console.log('  注意：' + w));
   }
   if (problems.length) { problems.forEach(p => console.log('✗ ' + p)); console.log('check-shops：' + problems.length + ' 個問題'); process.exit(1); }

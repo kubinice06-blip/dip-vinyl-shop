@@ -28,7 +28,7 @@
 //                   {t:'draw', i, card, reshuffled}     {t:'switch', habit, line, label}     {t:'over', win, by:'hp'|'pile', pHp, eHp}
 //            order per resolve: clash → draw (not after the ace) → over | (switch? → hand)
 // Night      newRun(content, {seedKey, nightNo, ace, prologue?, relics?, bossAce?}) -> run    nextStep(run) · current(run, content)
-//            startFight(run, content, {tutorial?, firstRecordId?}) -> {duel, events, enemyId}
+//            startFight(run, content, {tutorial?, firstRecordId?}) -> {duel, events, enemyId}   (run.duel already there → {…, events:[], resumed:true})
 //            finishFight(run, content, duel?) -> {win, by, enemyId, met:[ids], offer, over}
 //            choose(run, content, {type:'take',cardId,dropId?}|{type:'relic',relicId,dropRelicId?}|{type:'skip'}|{type:'retry'}|{type:'end'})
 //              -> {ok, error?, effects}
@@ -57,7 +57,7 @@
   const CFG = {
     playerHp: 10, handSize: 3, bagStart: 7, bagMax: 8, habitP: 0.4, retries: 1, relicMax: 3,
     colorRelicBonus: 1,   // 原版側標／神秘見本盤／黑膠唱針：那色剋中多扣 1
-    dustcoverCut: 2,      // 防塵套：每場第一次被剋少扣 2
+    dustcoverCut: 1,      // 防塵套：每場第一次被剋少扣 1（2 太強：固定公式一晚過 20%，見 sim.mjs）
     cleanerTie: 1,        // 洗碟水：同色同星時你扣他 1
   };
 
@@ -215,11 +215,12 @@
     const hAttr = habitAttr(E.habit, ctx);
     const roll = rng(st), any = ATTRS[Math.floor(rng(st) * 3)];
     const headphone = st.n === 1 && E.p < 1 && hasRelic(st, 'headphone');
-    let attr = (roll < E.p || headphone) ? hAttr : any;
+    let how = roll < E.p ? 'habit' : headphone ? 'headphone' : 'any';
+    let attr = how === 'any' ? any : hAttr;
     const forced = st.script && st.script.attrs[st.n - 1];
-    if (forced) attr = forced;
+    if (forced) { attr = forced; how = 'script'; }
     const hk = {}; for (const k of HABIT_KEYS) hk[k] = HABITS[k](ctx);   // every habit's answer this hand (learner policy)
-    st.intent = { attr, habitAttr: hAttr, headphone: headphone && !forced, hk };
+    st.intent = { attr, habitAttr: hAttr, how, headphone: headphone && !forced, hk };
     events.push({ t: 'hand', n: st.n, eCard: E.card, pile: E.pile.length, first: isFirst(st) });
   }
 
@@ -355,6 +356,7 @@
   }
   function startFight(run, content, o) {
     o = o || {};
+    if (run.duel) return { duel: run.duel, events: [], enemyId: run.duelEnemy || run.duel.e.id, resumed: true };   // a saved fight in progress (or over but not finished)
     if (run.over || run.pending) return null;
     const enemyId = current(run, content);
     if (!enemyId) return null;
