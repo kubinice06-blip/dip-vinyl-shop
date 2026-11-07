@@ -1449,7 +1449,6 @@
     var en = C.enemies[p.enemyId] || {};
     setTop(esc(r.times[r.idx] || '') + '<small>' + esc(en.name || '') + '</small>', { help: true, pause: true });
     UI.panel.classList.add('reward');
-    cam('reward', 'reward', 600);
     stg('interact', 'reward');
     stg('pose', 'f', null); stg('pose', 'p', null);
     place('p', 'duelP', 'player'); place('o', 'counter', 'owner');
@@ -1466,6 +1465,9 @@
       (relics.length ? '<div class="lb-h3">' + (cards.length ? '或改拿一件發燒配件' : '挑一件發燒配件') + '</div><div class="lb-opts">' + relicButtonsHTML(relics, 'data-r') + '</div>' : '') +
       '<div class="foot"><button type="button" class="lb-btn wide" data-a="skip">' + (cards.length || relics.length ? '都不要' : '繼續') + '</button></div>';
     var s = sheet(html, 'reward');
+    // 面板量出來要多高，舞台就收到放得下（最多讓到可視高的 72%）：收這張的鈕不被底下那條蓋住
+    var vh = W.visualViewport ? Math.min(W.innerHeight, W.visualViewport.height) : W.innerHeight;
+    cam('reward', 'reward', 600, Math.min(Math.round(vh * 0.72), Math.max(260, Math.ceil(s.scrollHeight + 4))));
     var busy = false;
     var finish = function (res) {
       if (res && res.effects) toast(effectsText(res.effects));
@@ -1640,6 +1642,8 @@
   }
 
   // ======================================================================= end（打烊／散場：走到幾點、贏了幾位、收了哪幾張）
+  // 一行：模板「贏了 {n} 位」→ 左「贏了」、右「3 位」
+  function sumRow(tpl, o) { var k = String(tpl).split('{')[0].trim(), full = fill(tpl, o); return '<li><span class="k">' + esc(k) + '</span><b>' + esc(full.slice(full.indexOf(k) + k.length).trim()) + '</b></li>'; }
   SCREENS.end = function () {
     var r = save.run;
     if (!r || !r.over) return go('title');
@@ -1660,9 +1664,8 @@
     var h = '<div class="lb-scroll"><div class="lb-pad"><div class="lb-endhero"><div class="lb-h1">' + (clear ? '打烊了' : '今晚就到這') + '</div>' +
       (lostEn ? '<p class="sub">輸給「' + esc(lostEn.name) + '」</p>' : '') + '</div>' +
       '<ul class="lb-sum">' +
-      '<li><span class="k">' + esc(fill(S.reached || '走到 {time}', { time: '' }).trim()) + '</span><b>' + esc(reached) + '</b></li>' +
-      '<li><span class="k">' + esc(fill(S.wins || '贏了 {n} 位', { n: '' }).replace(/\s+/g, ' ').trim()) + '</span><b>' + r.stats.wins + ' 位</b></li>' +
-      '<li><span class="k">' + esc(S.taken || '收了') + '</span><b>' + taken.length + ' 張</b></li></ul>' +
+      sumRow(S.reached || '走到 {time}', { time: reached }) + sumRow(S.wins || '贏了 {n} 位', { n: r.stats.wins }) +
+      sumRow((S.taken || '收了') + ' {n} 張', { n: taken.length }) + '</ul>' +
       (taken.length ? '<div class="lb-wall">' + taken.map(function (id) { return coverHTML(card(id), {}); }).join('') + '</div>' : '<p class="sub">' + esc(S.none || '這晚沒收唱片') + '</p>');
     if (save.unlocks.secondNightTeaser) h += '<div class="lb-teaser"><div class="sil">' + pix(labSpr().e7, 40) + '</div><div><b>' + esc(C.secondNight.line) + '</b><div class="sub">' + esc(C.secondNight.label) + '</div></div></div>';
     h += '<div class="lb-endmore"><button type="button" class="lb-btn key" data-a="shelf">唱片櫃</button><button type="button" class="lb-btn key" data-a="taipei">' + esc(line('taipeiLink') || '出門看看（台北地圖・預告）') + '</button></div>';

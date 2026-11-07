@@ -1,12 +1,44 @@
-// game-lab/tests/e2e.spec.mjs — 品味對決 v2 Playwright 端到端測試（SPEC-v2 §9.3：#1–#16 保留＋#17–#29 新增）。Agent U。
+// game-lab/tests/e2e.spec.mjs：品味對決 v3 Playwright 端到端測試（SPEC-v3 §11.3＋v2 外殼 bug 回歸）。Agent U。
 // 純 node 腳本（不用 @playwright/test）：node game-lab/tests/e2e.spec.mjs
 //   需要靜態伺服器：cd dip-vinyl-shop && python3 -m http.server 8765
 //   環境變數：LAB_URL（預設 http://localhost:8765/game-lab/index.html）
 //            LAB_SIZES（預設 "390x664,375x548,360x640,390x844"）：手機情境（hasTouch、isMobile、DPR 1）
-//            LAB_ONLY（例 "1,17,22"）：只跑這幾個
-//            LAB_FULL=1：每個尺寸都跑全部情境（預設：版面相關的 #1 #3 #4 #6 #17 #22 #24 #27 #29 四個尺寸都跑，
-//                       其餘流程情境只在第一個尺寸跑；它們跟尺寸無關，省時間）
-// 每個情境印 PASS／FAIL；任何一個 FAIL → exit 1。只有 Chromium（沒有 WebKit）：WebKit 的風險用 DOM 斷言守（#23 #24 #25）。
+//            LAB_ONLY（例 "1,3,19"）：只跑這幾個
+//            LAB_FULL=1：每個尺寸都跑全部情境（預設：版面情境 #1 #3 #4 #6 #17 #22 #27 #29 #40 四個尺寸都跑，流程情境只在第一個尺寸跑）
+// 每個情境印 PASS／FAIL；任何一個 FAIL → exit 1。只有 Chromium（沒有 WebKit）。
+//
+// 情境（v3）：
+//   1 開頁：標題 2.5 s 內、兩顆推門鈕在畫面內、沒有捲動
+//   3 推門到第一手 ≤10 下（猜歌、挑王牌、回嘴、直接開打）；盤面可以出牌
+//   4 對決版面：e-habit e-rec e-stars tri 4 張手牌 全部星鈕 throw 的下緣都 ≤ innerHeight
+//   6 點擊區：星鈕 ≥28×44、其他鈕 ≥44×44；數字 ≥12px
+//   7 序章打贏 → 掉出來的那張 → 發燒配件三選一（防塵套／黑膠唱針／洗碟水）→ 今晚來客（沒有押盤、沒有翻牌）
+//   8 序章打輸 →「……再一場。」→ 同一位男子、聲望回滿
+//   9 一整晚（自動遊玩）→ 結算三件事 →（13）再來一夜 → 挑王牌 → 今晚來客（沒有序章）
+//  10 續玩：打到第 2 手重新整理 → 繼續今晚 → 同一場、同一手
+//  11 存檔隔離：只寫 dipGameLab_v1（版本 3）；舊版存檔安全丟掉
+//  12 網路：沒有 Firebase
+//  14 長按手牌封面＝唱片資訊
+//  16 標題有存檔時點兩下店門＝繼續今晚，不會放棄今晚（B-title-door-abandons-run）
+//  17 兩邊分明：他在上（底線淺灰）你在下（頂線黑）；舞台他左你右
+//  18 每一張專輯都開唱片資訊：他亮出的、slot-e、slot-p、手牌、王牌、挑唱片面板、唱片櫃、牆上的、箱子、試聽機；點星鈕不開
+//  19 教學三王牌：10 步照指示點；每手後聲望照 C.tutorial.expect；save.tutorialDone
+//  20 教學擋錯招：第 4 步點錯星鈕、第 9 步點非硬蕊 →「先點我指的這裡。」、手數不前進
+//  21 直接開打：沒有教學遮罩、男子 10 聲望
+//  22 不捲動：每個畫面 #app 沒有被撐出可視高、沒有橫向捲動
+//  27 無縫接軌：今晚來客 → 對決 → 挑唱片 → 今晚來客，#stage canvas 是同一個節點；黑條只在 #stage 裡、≤1.6 s
+//  29 主控台 0 錯誤
+//  30 結果預告＝引擎 preview
+//  31 急了換字（菁英聲望 ≤ 一半）
+//  32 唱片丟完（force 7 手同色比星）→ by pile、你贏
+//  33 老闆說情：輸一次 → 同一位重開、聲望 10；再輸 → 散場
+//  34 盤面沒有舊機制
+//  35 跳過教學＋重新整理不會重開教學（B-skip-reload）
+//  36 ⏸ 回標題會結束教學；之後的直接開打不被教學劫持（B-stale-lesson-hijack）
+//  37 連點安全：推門 ×2、下一位 ×2、台北 ×2
+//  38 傳說藏家登場卡擋點擊、點一下提早收掉
+//  39 規則卡：六行＋例子＝engine.clash；店內熱點（公告、箱子、試聽機、老闆）
+//  40 375×548 等矮螢幕：有存檔時「再按一次就放棄今晚」那行在畫面內（B-title-375-clipped）
 import { createRequire } from 'module';
 const require = createRequire(import.meta.url);
 let chromium;
@@ -16,9 +48,9 @@ const URL0 = process.env.LAB_URL || 'http://localhost:8765/game-lab/index.html';
 const SIZES = (process.env.LAB_SIZES || '390x664,375x548,360x640,390x844').split(',').filter(Boolean).map(s => s.split('x').map(Number));
 const ONLY = process.env.LAB_ONLY ? new Set(process.env.LAB_ONLY.split(',').map(Number)) : null;
 const FULL = process.env.LAB_FULL === '1';
-const LAYOUT = new Set([1, 3, 4, 6, 17, 22, 24, 27, 29]);
+const LAYOUT = new Set([1, 3, 4, 6, 17, 22, 27, 29, 40]);
 const SEED = '20261106';
-const Q = extra => `${URL0}?debug=1&seed=${SEED}${extra === undefined ? '&fast=1' : extra}`;
+const Q = (extra = '&fast=1') => `${URL0}?debug=1&seed=${SEED}${extra}`;
 const ALLOWED_LS = new Set(['dipGameLab_v1', 'dip:autoplay', 'dip:autoplay-consent', 'dipAutoplayHintSeen', 'dip:autoplay-hint']);
 const results = [];
 const sleep = ms => new Promise(r => setTimeout(r, ms));
@@ -32,13 +64,12 @@ async function newPage(browser, w, h, opts = {}) {
   const ctx = await browser.newContext({ viewport: { width: w, height: h }, deviceScaleFactor: 1, hasTouch: true, isMobile: true });
   const page = await ctx.newPage();
   page._errors = []; page._requests = []; page._clicks = 0;
-  // 像素店把遠端封面縮進 canvas 要 CORS；偶爾某張圖的回應（快取／代理）沒帶 ACAO，shop.js 照規格改畫色塊（SPEC-v2 §5.1）。
-  // 這種瀏覽器自己印的 CORS 訊息（＋緊跟的 net::ERR_FAILED）不是程式錯誤，不算進主控台錯誤。
+  // 像素店把遠端封面縮進 canvas 要 CORS；偶爾某張圖的回應沒帶 ACAO，店裡改畫色塊。這種瀏覽器自己印的 CORS 訊息不算程式錯誤。
   let corsImg = 0;
   page.on('console', m => {
     if (m.type() !== 'error') return;
     const t = m.text();
-    if (/^Access to image at 'https:\/\/[^']+' from origin '[^']+' has been blocked by CORS policy/.test(t)) { corsImg++; page._corsImg = (page._corsImg || 0) + 1; return; }
+    if (/^Access to image at 'https:\/\/[^']+' from origin '[^']+' has been blocked by CORS policy/.test(t)) { corsImg++; return; }
     if (corsImg > 0 && /^Failed to load resource: net::ERR_FAILED$/.test(t)) { corsImg--; return; }
     page._errors.push(t);
   });
@@ -59,633 +90,724 @@ function record(n, size, ok, detail) {
 }
 let FIRST = true;
 const want = n => (!ONLY || ONLY.has(n)) && (FULL || FIRST || LAYOUT.has(n));
-const wantAny = (...ns) => ns.some(want);
 
 // ---- 共用步驟 ----------------------------------------------------------------
 const screen = page => page.evaluate(() => window.__lab ? window.__lab.screen() : null);
-async function clickCount(page, sel) { await page.click(sel); page._clicks++; }
-// el.click()（不用 page.tap：Playwright 會自動捲動，掩蓋版面問題）
+async function waitScreen(page, s, ms = 20000) {
+  return page.waitForFunction(s => window.__lab && window.__lab.screen() === s, s, { timeout: ms }).then(() => true, () => false);
+}
+// el.click()（不用 page.tap：Playwright 會自動捲動，掩蓋版面問題；也不吃換畫面 380 ms 的防連點）
 const jsClick = (page, sel) => page.evaluate(s => { const e = document.querySelector(s); if (!e) return false; e.click(); return true; }, sel);
+async function tapAt(page, sel) {
+  const r = await page.evaluate(s => {
+    const el = s.startsWith('dt:') ? window.DipLabDuel.el(s.slice(3)) : document.querySelector(s);
+    if (!el) return null; const b = el.getBoundingClientRect(); return { x: b.left + b.width / 2, y: b.top + b.height / 2 };
+  }, sel);
+  if (!r) throw new Error('no element ' + sel);
+  await page.touchscreen.tap(r.x, r.y); page._clicks++;
+  return r;
+}
 async function duelReady(page, ms = 20000) {
   return page.waitForFunction(() => {
     const D = window.DipLabDuel; if (!window.__lab || window.__lab.screen() !== 'duel' || !D || !D.debug || !D.api()) return false;
-    const d = D.debug(); return d && d.enterDone && !D.api().busy() && d.phase === 'choose' && !!document.querySelector('[data-tut=hand] .tile');
+    const d = D.debug(); return d && d.enterDone && !D.api().busy() && d.phase === 'choose' && !d.held && !!document.querySelector('.dl [data-tut=hand] .tile');
   }, null, { timeout: ms }).then(() => true, () => false);
 }
-// 序章：▼（選擇句）亮才點；面板出現就照最少點擊作答；開打選「直接開打（我會玩）」（mode 'tut'＝帶教學）
-async function prologueToDuel(page, marks = {}, mode = 'direct') {
-  const t0 = marks.t0 || Date.now();
-  for (let guard = 0; guard < 600; guard++) {
+async function openTitle(page, q) {
+  const t0 = Date.now();
+  await page.goto(q || Q(), { waitUntil: 'domcontentloaded' });
+  await page.waitForSelector('[data-a=push],[data-a=cont]', { state: 'visible', timeout: 8000 });
+  const ms = Date.now() - t0;
+  await page.waitForFunction(() => !document.body.classList.contains('stage-wait'), null, { timeout: 6000 }).catch(() => {});
+  await sleep(500);
+  return ms;
+}
+// 序章：▼（選擇句）亮才點；面板出現就照最少點擊作答；mode 'direct'＝直接開打、'tut'＝帶教學
+async function prologueToDuel(page, mode = 'direct', tier = null) {
+  for (let guard = 0; guard < 800; guard++) {
     const st = await page.evaluate(() => ({
       s: window.__lab && window.__lab.screen(),
       guess: !!document.querySelector('.lb-sheet.guess [data-pick]'), ace: !!document.querySelector('.lb-sheet.acepick [data-a=ok]'),
       menu: document.querySelectorAll('.lb-dq.hasmenu .lb-dqopt').length, next: !!document.querySelector('.lb-dq .nx.on.choice'),
-      duel: window.__lab && window.__lab.screen() === 'duel'
+      arming: !!document.querySelector('.lb-sheet.arming, .lb-dq .menu.arming')
     }));
-    if (st.duel) { const ok = mode === 'tut' ? true : await duelReady(page); marks.duelReady = Date.now() - t0; return ok; }
-    if (st.guess) { if (!marks.firstPanel) { marks.firstPanel = Date.now() - t0; marks.panel = 'guess'; } await sleep(420); await clickCount(page, '.lb-sheet.guess [data-pick] >> nth=0'); await sleep(250); continue; }
+    if (st.s === 'duel') return true;
+    if (st.arming) { await sleep(120); continue; }
+    if (st.guess) { await sleep(300); await page.click('.lb-sheet.guess [data-pick] >> nth=0'); page._clicks++; await sleep(250); continue; }
     if (st.ace) {
-      if (!marks.firstPanel) { marks.firstPanel = Date.now() - t0; marks.panel = 'acePick'; }
-      await sleep(420);
-      if (marks.tier) { const t = await page.$(`.lb-sheet.acepick .lb-ct[data-tier="${marks.tier}"] .ar, .lb-sheet.acepick .lb-ct[data-tier="${marks.tier}"] .acex`); if (t) { await t.click(); page._clicks++; await sleep(150); } }
-      await clickCount(page, '.lb-sheet.acepick [data-a=ok]'); await sleep(250); continue;
+      await sleep(300);
+      if (tier) { const sel = `.lb-sheet.acepick .lb-ct[data-tier="${tier}"] .acex`; const cur = await page.$(`.lb-sheet.acepick .lb-ct.sel[data-tier="${tier}"]`); if (!cur) { await page.click(sel); page._clicks++; await sleep(150); } }
+      await page.click('.lb-sheet.acepick [data-a=ok]'); page._clicks++; await sleep(250); continue;
     }
     if (st.menu) {
-      await sleep(420);
-      const pickDirect = st.menu > 1 && mode !== 'tut';
-      await clickCount(page, `.lb-dq .lb-dqopt[data-i="${pickDirect ? 1 : 0}"]`); await sleep(250); continue;
+      await sleep(300);
+      const pick = st.menu > 1 ? (mode === 'tut' ? 0 : 1) : 0;
+      const isDuelMenu = await page.evaluate(() => /品味對決/.test(document.querySelector('.lb-dq .menu').textContent));
+      await page.click(`.lb-dq .lb-dqopt[data-i="${isDuelMenu ? pick : 0}"]`); page._clicks++; await sleep(250); continue;
     }
-    if (st.next && st.s === 'scene') { await clickCount(page, '.lb-dq'); await sleep(200); continue; }
-    await sleep(120);
+    if (st.next && st.s === 'scene') { await page.click('.lb-dq'); page._clicks++; await sleep(150); continue; }
+    await sleep(100);
   }
   return false;
 }
-async function openAndPush(page, q, which = 'push') {
-  const t0 = Date.now();
-  await page.goto(q || Q(), { waitUntil: 'domcontentloaded' });
-  await page.waitForSelector(`[data-a=${which}]`, { state: 'visible', timeout: 5000 });
-  const titleMs = Date.now() - t0;
-  await sleep(150);
-  await clickCount(page, `[data-a=${which}]`);
-  return { t0, titleMs };
+// 頁面裡直接做一份存檔（engine.newRun），重新整理後從標題「繼續今晚」
+async function seedRun(page, o = {}) {
+  await page.evaluate(o => {
+    const E = window.DipLabEngine, C = window.DipLabContent;
+    const r = E.newRun(C, { seedKey: o.seedKey || '20261106', nightNo: 1, ace: o.ace || 'pearl', prologue: !!o.prologue, relics: o.relics || [] });
+    r.goodEar = false; r.tut = o.tut == null ? false : o.tut;
+    if (o.idx != null) r.idx = o.idx;
+    const s = { v: 3, seen: Object.assign({ night: true, reveal: true }, o.seen || {}), learned: {}, settings: { fastAnim: false, sound: false }, player: null, run: r, nights: [],
+      best: { clears: 0, bySeedKey: {} }, shelf: {}, relics: [], unlocks: { secondNightTeaser: false }, tutorialDone: o.tutorialDone !== false, prologueDone: !o.prologue, lastAce: o.ace || 'pearl' };
+    localStorage.setItem('dipGameLab_v1', JSON.stringify(s));
+  }, o);
 }
-// 場景裡：▼ 亮就點，直到條件成立
-async function advanceUntil(page, pred, ms = 40000) {
-  const end = Date.now() + ms;
-  while (Date.now() < end) {
-    if (await page.evaluate(pred)) return true;
-    const nx = await page.$('.lb-dq .nx.on');
-    if (nx && !(await page.$('.lb-dq.hasmenu'))) { try { await page.click('.lb-dq', { timeout: 1000 }); } catch (_) {} }
-    await sleep(150);
+async function seededContinue(page, o, q) {
+  await openTitle(page, q);
+  await seedRun(page, o);
+  await openTitle(page, q);
+  await jsClick(page, '[data-a=cont]');
+}
+async function resolveHands(page, n, policy = 'oracle') {
+  await page.evaluate(([n, p]) => { const E = window.DipLabEngine, d = window.__lab.rawDuel(); for (let k = 0; k < n && !d.over; k++) E.resolveTurn(d, E.policies[p](d)); }, [n, policy]);
+}
+const noScroll = page => page.evaluate(() => {
+  const a = document.getElementById('app'), de = document.documentElement;
+  return { app: a.scrollHeight - a.clientHeight, docY: de.scrollHeight - innerHeight, docX: de.scrollWidth - innerWidth, appH: a.getBoundingClientRect().height, vh: innerHeight };
+});
+const scrollOk = s => s.app <= 1 && s.docY <= 1 && s.docX <= 1;
+// 教學 10 步（照 T 的 walk.cjs）：回傳 {hp:[...], end}
+async function waitStep(page, id, ms = 12000) {
+  await page.waitForFunction(id => { const t = window.DipLabTut.debug(); return t.shown === id && (t.mode === 'say' || t.mode === 'do' || t.mode === 'soft'); }, id, { timeout: ms });
+  await sleep(420);
+}
+async function walkTutorial(page, w, h, variant = 'plain') {
+  const dbg = () => page.evaluate(() => { const x = window.DipLabDuel.debug(); return { t: window.DipLabTut.debug(), d: x ? { n: x.n, sel: x.sel, eHp: x.view.eHp, pHp: x.view.pHp, held: x.held } : null }; });
+  const hp = [], log = [];
+  for (const id of ['t1', 't2', 't3']) { await waitStep(page, id); await page.touchscreen.tap(w / 2, h - 30); }
+  await waitStep(page, 't4');
+  if (variant === 'wrong') {
+    const wrongSel = await page.evaluate(() => { const b = window.DipLabDuel.el('chip:best:o'); const all = [...document.querySelectorAll('.dl .chip')].filter(x => x !== b && x.dataset.a !== 'o'); return all.length ? '[data-tut="' + all[0].dataset.tut + '"]' : null; });
+    const n0 = (await dbg()).d.n;
+    await tapAt(page, '.dl ' + wrongSel); await sleep(250);
+    const st = await dbg();
+    log.push({ step: 't4', text: st.t.text, n: st.d.n, n0, sel: st.d.sel });
+    await sleep(1700);
   }
-  return false;
-}
-async function playHand(page) {
-  return page.evaluate(async () => {
-    const api = window.DipLabDuel.api(); const d = window.__lab.rawDuel();
-    if (!d || d.over) return true;
-    await api.play(window.DipLabEngine.policies.ev(d));
-    return !!(window.__lab.rawDuel() && window.__lab.rawDuel().over);
-  });
-}
-const waitIdle = page => page.waitForFunction(() => !window.DipLabDuel.api() || (!window.DipLabDuel.api().busy() && window.DipLabDuel.debug().phase !== 'resolve'), null, { timeout: 15000 }).catch(() => {});
-// 第一次進地圖的軟提示（tutorial.js firstTime 'map'，兩句、點一下換句）：點舞台左上角的牆收掉
-async function dismissSoft(page) {
-  for (let i = 0; i < 4; i++) {
-    const soft = await page.evaluate(() => !!(window.DipLabTut && window.DipLabTut.debug && window.DipLabTut.debug().soft));
-    if (!soft) return;
-    await page.mouse.click(8, 40); await sleep(350);
+  await tapAt(page, 'dt:chip:best:o');
+  await waitStep(page, 't5');
+  await tapAt(page, '.dl [data-tut="throw"]');
+  await waitStep(page, 't6');
+  hp.push((await dbg()).d.eHp);
+  await sleep(500);
+  await page.touchscreen.tap(w / 2, h / 2);
+  await waitStep(page, 't7', 14000);
+  await tapAt(page, 'dt:chip:best:c');
+  await waitStep(page, 't8');
+  await tapAt(page, '.dl [data-tut="throw"]');
+  await page.waitForFunction(() => window.DipLabDuel.debug().n >= 3, null, { timeout: 9000 });
+  hp.push((await dbg()).d.eHp);
+  await waitStep(page, 't9', 14000);
+  if (variant === 'wrong') {
+    const n0 = (await dbg()).d.n;
+    await tapAt(page, '.dl [data-tut="chip-0-o"]'); await sleep(250);
+    const st = await dbg();
+    log.push({ step: 't9', text: st.t.text, n: st.d.n, n0, sel: st.d.sel });
+    await sleep(1700);
   }
-}
-async function infoCheck(page) {
-  const ok = await page.waitForSelector('#cardInfoMask', { timeout: 3000 }).then(() => true, () => false);
-  if (!ok) return { ok: false };
-  await sleep(250);
-  const r = await page.evaluate(() => {
-    const m = document.getElementById('cardInfoMask'), b = document.getElementById('ciClose').getBoundingClientRect();
-    return { lab: (m.querySelector('.lab') || {}).textContent, rows: m.querySelectorAll('.stats .st').length, closeIn: b.top >= 0 && b.bottom <= innerHeight + 0.5,
-      cover: !!m.querySelector('.cov'), album: (m.querySelector('.al') || {}).textContent || '', artist: (m.querySelector('.ar') || {}).textContent || '',
-      player: !!m.querySelector('.lb-mini-player') || /沒有試聽/.test(m.textContent) };
-  });
-  await page.click('#ciClose'); await sleep(300);
-  const closed = !(await page.$('#cardInfoMask'));
-  return Object.assign(r, { ok: r.lab === '唱片資訊' && r.rows === 3 && r.closeIn && closed && r.cover && !!r.album });
-}
-// 按鈕斷行（#24）：每顆可見按鈕逐字量行；不准行尾是「（」「「」、不准整行只剩「）」「」」、不准 keep-all
-async function lineBreaks(page) {
-  return page.evaluate(() => {
-    const bad = [];
-    const btns = [...document.querySelectorAll('button, .lb-btn, [role=button]')].filter(b => { const r = b.getBoundingClientRect(); const s = getComputedStyle(b); return r.width > 1 && r.height > 1 && s.visibility !== 'hidden' && s.display !== 'none'; });
-    for (const b of btns) {
-      if (getComputedStyle(b).wordBreak === 'keep-all') bad.push('keep-all:' + b.textContent.trim().slice(0, 12));
-      const lines = []; let cur = null;
-      const walker = document.createTreeWalker(b, NodeFilter.SHOW_TEXT);
-      let n;
-      while ((n = walker.nextNode())) {
-        const t = n.textContent;
-        for (let i = 0; i < t.length; i++) {
-          if (!t[i].trim()) continue;
-          const rg = document.createRange(); rg.setStart(n, i); rg.setEnd(n, i + 1);
-          const rc = rg.getClientRects()[0]; if (!rc || !rc.width) continue;
-          const top = Math.round(rc.top);
-          if (!cur || Math.abs(top - cur.top) > rc.height * 0.6) { cur = { top, s: '' }; lines.push(cur); }
-          cur.s += t[i];
-        }
-      }
-      // 同一顆鈕裡分成標籤＋副標兩段：各自一行，不算斷行
-      lines.forEach((l, k) => {
-        if (k < lines.length - 1 && /[（「]$/.test(l.s)) bad.push('ends「' + l.s + '」');
-        if (/^[）」]+$/.test(l.s)) bad.push('orphan「' + l.s + '」');
-      });
-    }
-    return { n: btns.length, bad };
-  });
+  const hsel = await page.evaluate(() => { const v = window.DipLabDuel.debug().view; let bi = -1, bs = -1; v.hand.forEach((c, i) => { if (c && c.h > bs) { bs = c.h; bi = i; } }); return '[data-tut="chip-' + bi + '-h"]'; });
+  await tapAt(page, '.dl ' + hsel); await sleep(300);
+  await tapAt(page, '.dl [data-tut="throw"]');
+  await page.waitForFunction(() => window.DipLabDuel.debug().n >= 4, null, { timeout: 9000 });
+  hp.push((await dbg()).d.eHp);
+  await waitStep(page, 't10', 14000);
+  await tapAt(page, 'dt:chip:best:o'); await sleep(320);
+  await tapAt(page, '.dl [data-tut="throw"]');
+  return { hp, log };
 }
 
-// ---- 情境 ----------------------------------------------------------------------
-async function runSize(browser, [W, H]) {
-  const size = `${W}x${H}`;
-  // A：1、2、3、4、5、6、14、17、18（對決部分）、22、7、23、24、18（押盤）、11、12（同一個分頁）
-  if (wantAny(1, 2, 3, 4, 5, 6, 7, 11, 12, 14, 17, 18, 22, 23, 24)) {
-    const { ctx, page } = await newPage(browser, W, H, { watchStorage: true });
-    try {
-      const { t0, titleMs } = await openAndPush(page);
-      await sleep(50);
-      if (want(1)) {
-        const ov = await page.evaluate(() => ({ sw: document.documentElement.scrollWidth, iw: innerWidth }));
-        record(1, size, titleMs <= 2000 && page._errors.length === 0 && ov.sw <= ov.iw, `title ${titleMs} ms, console errors ${page._errors.length}, scrollWidth ${ov.sw}/${ov.iw}`);
-      }
-      const marks = { t0 };
-      const ok = await prologueToDuel(page, marks);
-      if (want(2)) record(2, size, !!marks.firstPanel && marks.firstPanel <= 30000, `first panel (${marks.panel || 'none'}) at ${marks.firstPanel} ms`);
-      if (want(3)) record(3, size, ok && marks.duelReady <= 90000 && page._clicks <= 12, `first hand operable at ${marks.duelReady} ms, clicks ${page._clicks}`);
-      // 4：選一張盤後：手牌 4＋王牌、屬性鈕 3 顆、全部在畫面內、不捲動
-      if (want(4)) {
-        await jsClick(page, '[data-tut=hand-0]');
-        await page.waitForSelector('[data-tut=attrs] .ab[data-a]', { timeout: 5000 }).catch(() => {});
-        const r = await page.evaluate(() => {
-          const n = { hand: document.querySelectorAll('[data-tut=hand] .tile:not([data-tut=hand-ace])').length, ace: document.querySelectorAll('[data-tut=hand-ace]').length, attrs: document.querySelectorAll('[data-tut=attrs] .ab[data-a]').length };
-          let maxB = 0; for (const s of ['[data-tut=e-rec]', '[data-tut=e-intent]', '[data-tut=result]', '[data-tut=hand] .tile', '[data-tut=attrs] .ab']) for (const e of document.querySelectorAll(s)) maxB = Math.max(maxB, e.getBoundingClientRect().bottom);
-          const tiles = [...document.querySelectorAll('[data-tut=hand] .tile')].map(e => e.getBoundingClientRect());
-          const app = document.getElementById('app');
-          return { n, maxB: Math.round(maxB), ih: innerHeight, maxR: Math.round(Math.max(...tiles.map(t => t.right))), minL: Math.round(Math.min(...tiles.map(t => t.left))), iw: innerWidth,
-            scroll: document.scrollingElement.scrollHeight > innerHeight + 1 || app.scrollHeight > app.clientHeight + 1 };
-        });
-        const ok4 = r.maxB <= r.ih && r.n.hand === 4 && r.n.attrs === 3 && r.n.ace === 1 && !r.scroll && r.maxR <= r.iw && r.minL >= 0;
-        record(4, size, ok4, `max bottom ${r.maxB}/${r.ih}, hand right ${r.maxR}/${r.iw}, counts ${JSON.stringify(r.n)}, scroll ${r.scroll}`);
-        await page.evaluate(() => window.DipLabDuel.select(null)); await sleep(200);   // 再點一下＝唱片資訊（B09），取消選取用 API
-      }
-      // 5：浮層不吃點擊（舞台名牌、泡泡、飄字、吐司、fx 層）
-      if (want(5)) {
-        await page.evaluate(() => { const s = window.__lab.stage; if (s) s.say('f', '「測試泡泡」', { ms: 3000 }); });
-        await sleep(120);
-        await page.click('[data-tut=hand-1]', { timeout: 3000 });
-        const sel = await page.evaluate(() => { const c = document.querySelector('[data-tut=hand-1]'); return !!c && c.classList.contains('sel'); });
-        const pe = await page.evaluate(() => [...document.querySelectorAll('.ds-say, .ds-tag, .ds-float, .ds-label, .ds-opt, .lb-toast, .dlfx-layer, .lb-plate, .lb-fly')].map(e => getComputedStyle(e).pointerEvents));
-        record(5, size, sel && pe.length > 0 && pe.every(x => x === 'none'), `card selected ${sel}; overlays ${pe.length} pointer-events ${JSON.stringify([...new Set(pe)])}`);
-        await page.evaluate(() => window.DipLabDuel.select(null)); await sleep(150);
-      }
-      // 6：字級（.key ≥12px）與點擊區（面板與彈窗的按鈕 ≥44；頂欄用 ::after 撐高、對決盤面 D 自管，不量）
-      if (want(6)) page._keys6 = await measureKeys(page);
-      // 14：唱片資訊（長按手牌）：封面、藝人、專輯、唱機；關掉後對決狀態不變
-      if (want(14)) {
-        const before = await page.evaluate(() => JSON.stringify(window.__lab.duel()));
-        const box = await (await page.$('[data-tut=hand-2]')).boundingBox();
-        await page.mouse.move(box.x + box.width / 2, box.y + box.height / 3);
-        await page.mouse.down(); await sleep(650); await page.mouse.up();
-        const info = await infoCheck(page);
-        const after = await page.evaluate(() => ({ v: JSON.stringify(window.__lab.duel()), s: window.__lab.screen() }));
-        record(14, size, info.ok && info.player && after.s === 'duel' && after.v === before, `info ${info.ok} 「${info.artist}《${info.album}》」 player ${info.player}; state unchanged ${after.v === before}`);
-      }
-      // 18（對決）：他拿出的盤、手牌第二下 → 唱片資訊
-      const info18 = {};
-      if (want(18)) {
-        await jsClick(page, '[data-tut=e-rec] .cvb'); info18.erec = (await infoCheck(page)).ok;
-        await jsClick(page, '[data-tut=hand-0]'); await sleep(250); await jsClick(page, '[data-tut=hand-0]'); info18.hand2 = (await infoCheck(page)).ok;
-        await page.evaluate(() => window.DipLabDuel.select(null)); await sleep(200);
-      }
-      // 17、22：打三手，每手都量
-      const r17 = { hands: 0, bad: [] }, r22 = { checks: 0, bad: [] };
-      const measure22 = async ph => {
-        const m = await page.evaluate(() => { const a = document.querySelector('[data-tut=attrs]'); const b = a ? a.getBoundingClientRect().bottom : 0; return { b: Math.round(b), ih: innerHeight, sw: document.documentElement.scrollWidth, iw: innerWidth }; });
-        r22.checks++; if (m.b > m.ih || m.sw > m.iw) r22.bad.push(`${ph}:${m.b}/${m.ih},${m.sw}/${m.iw}`);
-      };
-      if (wantAny(17, 22, 18)) {
-        for (let k = 0; k < 3; k++) {
-          await measure22('choose');
-          const act = await page.evaluate(() => window.DipLabEngine.policies.ev(window.__lab.rawDuel()));
-          if (act.type === 'card') {
-            await page.evaluate(i => window.DipLabDuel.select(i), act.i); await sleep(250); await measure22('attr');
-          }
-          const pr = page.evaluate(a => window.DipLabDuel.api().play(a), act);
-          await sleep(400); await measure22('resolve');
-          await pr;
-          await page.waitForFunction(() => window.DipLabDuel.debug().phase !== 'resolve', null, { timeout: 10000 }).catch(() => {});
-          await measure22('result');
-          const s = await page.evaluate(() => {
-            const D = window.DipLabDuel.debug(); const tags = [...document.querySelectorAll('.ds-tag')].map(t => ({ p: t.classList.contains('p'), x: t.getBoundingClientRect().left, txt: t.textContent }));
-            const e = document.querySelector('[data-tut=slot-e]'), p = document.querySelector('[data-tut=slot-p]');
-            return { over: !!(window.__lab.rawDuel() || {}).over, e: D.slots.e, p: D.slots.p, eImg: !!(e && e.querySelector('img.cv, .ultbox, .cv')), pImg: !!(p && p.querySelector('img.cv, .ultbox, .cv')), tags };
-          });
-          if (s.over) break;
-          r17.hands++;
-          const tagE = s.tags.find(t => !t.p), tagP = s.tags.find(t => t.p);
-          if (!s.eImg || !s.pImg) r17.bad.push(`h${k + 1}:cover`);
-          if (!/^他・/.test(s.e.who || '') || !/^你・/.test(s.p.who || '')) r17.bad.push(`h${k + 1}:who ${s.e.who}/${s.p.who}`);
-          if (!s.e.badge || !s.p.badge) r17.bad.push(`h${k + 1}:badge`);
-          if (!tagE || !tagP || !(tagP.x > tagE.x) || tagP.txt.trim() !== '你') r17.bad.push(`h${k + 1}:tags ${JSON.stringify(s.tags)}`);
-          await duelReady(page, 8000);
-          const kept = await page.evaluate(() => { const D = window.DipLabDuel.debug(); return { e: D.slots.e, p: D.slots.p }; });
-          if (!kept.e.card || !kept.p.card || !kept.e.dim || !kept.p.dim) r17.bad.push(`h${k + 1}:kept ${JSON.stringify(kept)}`);
-          if (want(18) && k === 0) {
-            await jsClick(page, '[data-tut=slot-e]'); info18.slotE = (await infoCheck(page)).ok;
-            await jsClick(page, '[data-tut=slot-p]'); info18.slotP = (await infoCheck(page)).ok;
-            const box = await (await page.$('[data-tut=hand-1]')).boundingBox();
-            await page.mouse.move(box.x + box.width / 2, box.y + box.height / 3); await page.mouse.down(); await sleep(650); await page.mouse.up();
-            info18.long = (await infoCheck(page)).ok;
-            const rack = await page.evaluate(() => { const h = (window.__lab.stage.hotspots() || []).find(x => /^rack:/.test(x.id)); return h ? h.id : null; });
-            if (rack) { await page.evaluate(id => window.__lab.stage.tap(id), rack); info18.wall = (await infoCheck(page)).ok; } else info18.wall = 'n/a (no wall record in strip)';
-          }
-        }
-        if (want(17)) record(17, size, r17.hands >= 2 && !r17.bad.length, `hands checked ${r17.hands}; problems ${JSON.stringify(r17.bad)}`);
-        if (want(22)) record(22, size, r22.checks >= 8 && !r22.bad.length, `phases checked ${r22.checks}; overflow ${JSON.stringify(r22.bad)}`);
-      }
-      // 7：序章打贏 → 押盤翻開 → 配件三選一 → 地圖
-      if (wantAny(7, 6, 11, 12, 18, 23, 24)) {
-        await page.evaluate(() => window.__lab.autoplay('ev', { until: 'duelEnd' }));
-        const sawStake = await advanceUntil(page, () => !!document.querySelector('.lb-sheet.stake .card3d.shown'), 60000);
-        let sawRelic = false, map = false;
-        if (sawStake) {
-          await page.waitForSelector('.lb-sheet.stake [data-i="0"]:not([disabled])', { state: 'visible', timeout: 8000 }).catch(() => {});
-          await sleep(450);
-          if (want(23)) {
-            const f = await page.evaluate(() => {
-              const back = document.querySelector('.lb-sheet.stake .card3d .back');
-              // 鏡像＝行列式為負（scaleX<0 或 rotateY 過 90°）；純旋轉（轉盤圖示）不算
-              const neg = [...document.querySelectorAll('.lb-sheet.stake, .lb-sheet.stake *')].filter(e => { const t = getComputedStyle(e).transform; if (!t || t === 'none') return false; const m = /matrix(3d)?\(([^)]+)\)/.exec(t); if (!m) return false; const v = m[2].split(',').map(Number); const det = m[1] ? v[0] * v[5] - v[1] * v[4] : v[0] * v[3] - v[1] * v[2]; return det < 0 || (m[1] && v[0] < 0 && v[5] > 0); }).length;
-              const css3d = [...document.querySelectorAll('.lb-sheet.stake *')].filter(e => { const s = getComputedStyle(e); return s.transformStyle === 'preserve-3d' || s.backfaceVisibility === 'hidden'; }).length;
-              return { vis: back && getComputedStyle(back).visibility, neg, css3d };
-            });
-            record(23, size, f.vis === 'hidden' && f.neg === 0 && f.css3d === 0, `back visibility ${f.vis}, mirrored transforms ${f.neg}, 3d/backface ${f.css3d}`);
-          }
-          if (want(24)) page._lb = [await lineBreaks(page)];
-          if (want(18)) { await jsClick(page, '.lb-sheet.stake .card3d'); info18.stake = (await infoCheck(page)).ok; }
-          runSize._infoA = info18;
-          await page.click('.lb-sheet.stake [data-i="0"]');
-          sawRelic = await advanceUntil(page, () => !!document.querySelector('.lb-sheet.relics [data-r]'), 30000);
-          if (sawRelic) {
-            await sleep(450);
-            if (want(6)) page._keys6b = await measureKeys(page);
-            if (want(24)) page._lb.push(await lineBreaks(page));
-            await page.click('.lb-sheet.relics [data-r] >> nth=0');
-            map = await advanceUntil(page, () => window.__lab.screen() === 'map' && !!document.querySelector('.lb-node.can'), 30000);
-          }
-        }
-        if (want(7)) record(7, size, sawStake && sawRelic && map, `stake flip ${sawStake}, relic pick ${sawRelic}, map ${map}`);
-        if (map) {
-          await sleep(900);
-          await dismissSoft(page);
-          if (want(6)) page._keys6c = await measureKeys(page);
-          if (want(24)) { await page.click('.lb-node.can >> nth=0'); await sleep(500); page._lb.push(await lineBreaks(page)); await page.click('.lb-sheet.float [data-a=close] >> nth=-1').catch(() => {}); await sleep(200); }
-          if (want(18)) {
-            await page.evaluate(() => window.__lab.openPage('shelf')); await sleep(400);
-            await jsClick(page, '.lb-page .lb-wall .lb-cv'); info18.shelf = (await infoCheck(page)).ok;
-            await page.click('.lb-page [data-a=close]'); await sleep(200);
-            // 挖箱三張之一
-            const col = await page.evaluate(() => { const r = window.__lab.run; for (const c of r.map.cols) if (c.col >= r.col && c.nodes.some(n => n.type === 'crate')) return c.col; return null; });
-            if (col != null) {
-              await page.evaluate(c => window.__lab.skipTo(c), col); await sleep(600);
-              const nid = await page.evaluate(() => { const r = window.__lab.run; return r.map.cols.find(c => c.col === r.col).nodes.find(n => n.type === 'crate').id; });
-              await page.click(`.lb-node[data-n="${nid}"]`); await page.click('.lb-sheet.float [data-a=go]');
-              await page.waitForSelector('.lb-sheet.crate [data-k="jazz"]', { timeout: 8000 }); await sleep(450);
-              await page.click('.lb-sheet.crate [data-k="jazz"]');
-              await page.waitForSelector('.lb-sheet.cratecard .lb-ct .lb-cv', { timeout: 5000 }); await sleep(450);
-              if (want(24)) page._lb.push(await lineBreaks(page));
-              await jsClick(page, '.lb-sheet.cratecard .lb-ct .lb-cv'); info18.crate = (await infoCheck(page)).ok;
-              await page.click('.lb-sheet.cratecard [data-a=none]'); await page.waitForSelector('.lb-sheet.done [data-a=next]'); await sleep(450);
-              await page.click('.lb-sheet.done [data-a=next]'); await sleep(400);
-            } else info18.crate = 'n/a';
-          }
-        }
-        if (want(6)) {
-          const all = [page._keys6, page._keys6b, page._keys6c].filter(Boolean);
-          const small = all.flatMap(x => x.small), tiny = all.flatMap(x => x.tiny);
-          record(6, size, all.length >= 2 && small.length === 0 && tiny.length === 0, `.key checked ${all.reduce((a, x) => a + x.nKeys, 0)}, <12px ${small.length} ${JSON.stringify(small.slice(0, 4))}; buttons checked ${all.reduce((a, x) => a + x.nBtn, 0)}, <44px ${tiny.length} ${JSON.stringify(tiny.slice(0, 6))}`);
-        }
-      }
-      if (want(24)) {
-        const t = await (async () => { const all = page._lb || []; return { n: all.reduce((a, x) => a + x.n, 0), bad: all.flatMap(x => x.bad) }; })();
-        record(24, size, t.n > 10 && !t.bad.length, `buttons measured ${t.n}; bad breaks ${JSON.stringify(t.bad.slice(0, 6))}`);
-      }
-      if (want(18) && FIRST) page._info18 = info18;
-      if (want(11)) {
-        const keys = await page.evaluate(() => ({ set: [...new Set(window.__lsKeys || [])], all: Object.keys(localStorage) }));
-        const bad = keys.set.filter(k => !ALLOWED_LS.has(k)).concat(keys.all.filter(k => k === 'dipRogueMeta_v2' || /^dipRogueMeta/.test(k)));
-        record(11, size, keys.set.includes('dipGameLab_v1') && bad.length === 0, `setItem keys ${JSON.stringify(keys.set)}; disallowed ${JSON.stringify(bad)}`);
-      }
-      if (want(12)) {
-        const bad = page._requests.filter(u => /firestore\.googleapis\.com|firebase|gstatic\.com\/firebasejs|\/data\/apple-audio-runtime/.test(u));
-        record(12, size, bad.length === 0, `${page._requests.length} requests; forbidden ${bad.length} ${JSON.stringify(bad.slice(0, 3))}`);
-      }
-      if (want(18)) page._info18A = info18;
-      page._errA = page._errors.slice();
-      await ctx.close();
-      runSize._infoA = info18;
-    } catch (e) { record(0, size, false, 'flow A crashed: ' + e.message.split('\n')[0]); await ctx.close(); }
-  }
-  // B：8 序章打輸 → 「……再一場。」→ 重打可操作
-  if (want(8)) {
-    const { ctx, page } = await newPage(browser, W, H);
-    try {
-      await openAndPush(page, Q(), 'quiet');
-      await prologueToDuel(page, {});
-      await page.evaluate(() => window.__lab.forceLose());
-      const said = await page.waitForFunction(() => /……再一場。/.test((document.querySelector('.lb-dq .tx') || {}).textContent || ''), null, { timeout: 10000 }).then(() => true, () => false);
-      const t1 = Date.now();
-      const ready = await duelReady(page, 15000);
-      const v = ready ? await page.evaluate(() => window.__lab.duel()) : null;
-      record(8, size, said && ready && v && v.hand === 1 && v.p.hp === v.p.maxHp, `「……再一場。」 ${said}; duel operable again ${ready} after ${Date.now() - t1} ms; hand ${v && v.hand}, hp ${v && v.p.hp}/${v && v.p.maxHp}`);
-    } catch (e) { record(8, size, false, 'crashed: ' + e.message.split('\n')[0]); }
-    await ctx.close();
-  }
-  // C：9／29 一整晚（autoplay 到 end，0 console error）＋動畫時間（?fast=0 抽 5 手）；13 再來一夜；18（結算封面牆）
-  if (wantAny(9, 13, 29, 18)) {
-    const { ctx, page } = await newPage(browser, W, H);
-    try {
-      await openAndPush(page, Q(), 'quiet');
-      await page.evaluate(() => window.__lab.autoplay('ev', { until: 'end' }));
-      const end = await page.waitForFunction(() => window.__lab.screen() === 'end', null, { timeout: 240000 }).then(() => true, () => false);
-      const info = await page.evaluate(() => ({ over: window.__lab.run && window.__lab.run.over, trail: window.__lab.trail().filter((x, i, a) => a[i - 1] !== x).join('>') }));
-      if (want(29)) record(29, size, end && page._errors.length === 0, `night to end ${end} (${info.over}); console errors ${page._errors.length} ${JSON.stringify(page._errors.slice(0, 2))}`);
-      if (want(18) && end) {
-        await sleep(800);
-        await jsClick(page, '.lb-panel.end .lb-wall .lb-cv'); const ok = (await infoCheck(page)).ok;
-        const A = runSize._infoA || {};
-        const all = Object.assign({}, A, { endWall: ok });
-        const vals = Object.values(all);
-        const need = ['erec', 'hand2', 'slotE', 'slotP', 'long', 'stake', 'shelf', 'crate', 'endWall'];
-        const missing = need.filter(k => all[k] !== true && all[k] !== 'n/a');
-        record(18, size, missing.length === 0 && (all.wall === true || /^n\/a/.test(String(all.wall))), `opened from ${JSON.stringify(all)}; failed ${JSON.stringify(missing)}`);
-        void vals;
-      }
-      let ms = [];
-      if (want(9)) {
-        const { ctx: c2, page: p2 } = await newPage(browser, W, H);
-        await openAndPush(p2, Q('&fast=0'), 'quiet');
-        await prologueToDuel(p2, {});
-        if (await duelReady(p2, 60000)) {
-          for (let i = 0; i < 6; i++) {
-            const r = await p2.evaluate(async () => {
-              const d = window.__lab.rawDuel(); if (!d || d.over) return null;
-              const api = window.DipLabDuel.api(); const t = performance.now();
-              await api.play(window.DipLabEngine.policies.ev(d));
-              const dbg = window.DipLabDuel.debug(), d2 = window.__lab.rawDuel();
-              // 打倒那一手：duel.js 卸載、finishDuel 把 run.duel 清掉 → 也算 over
-              return { ms: dbg && dbg.ms != null ? dbg.ms : performance.now() - t, over: !dbg || !d2 || d2 !== d || !!d2.over };
-            });
-            if (!r) break; if (r.over) break; ms.push(Math.round(r.ms));   // 打倒那一手多了大章＋退場，不算在一手的時間裡
-            await duelReady(p2, 10000);
-          }
-        }
-        const errs9 = page._errors.concat(p2._errors);
-        await c2.close();
-        const okAnim = ms.length >= 3 && ms.every(x => x <= 2300);
-        record(9, size, end && errs9.length === 0 && okAnim, `night to end ${end} (${info.over}); console errors ${errs9.length}${errs9.length ? ' ' + JSON.stringify(errs9.slice(0, 2)) : ''}; anim ms ${JSON.stringify(ms)}`);
-      }
-      if (want(13) && end) {
-        await page.waitForSelector('[data-a=again]', { timeout: 5000 });
-        const t1 = Date.now();
-        await page.click('[data-a=again]');
-        await advanceUntil(page, () => !!document.querySelector('.lb-sheet.acepick [data-a=ok]'), 10000);
-        await sleep(420);
-        await page.click('.lb-sheet.acepick [data-a=ok]');
-        const ok = await page.waitForFunction(() => window.__lab.screen() === 'map' && window.__lab.run && window.__lab.run.col === 1 && !!document.querySelector('.lb-node.can'), null, { timeout: 10000 }).then(() => true, () => false);
-        const dt = Date.now() - t1;
-        record(13, size, ok && dt <= 10000, `map c1 clickable ${ok} in ${dt} ms (night #${await page.evaluate(() => window.__lab.run && window.__lab.run.nightNo)})`);
-      } else if (want(13)) record(13, size, false, 'never reached end screen');
-    } catch (e) { record(9, size, false, 'crashed: ' + e.message.split('\n')[0]); }
-    await ctx.close();
-  }
-  // D：10 續玩（對決中重新整理 → 繼續今晚 → view 相同）
-  if (want(10)) {
-    const { ctx, page } = await newPage(browser, W, H);
-    try {
-      await openAndPush(page, Q(), 'quiet');
-      await prologueToDuel(page, {});
-      for (let i = 0; i < 2; i++) { if (await playHand(page)) break; await duelReady(page, 10000); }
-      const before = await page.evaluate(() => JSON.stringify(window.__lab.duel()));
-      await page.reload({ waitUntil: 'domcontentloaded' });
-      await page.waitForSelector('[data-a=cont]', { timeout: 5000 });
-      await page.click('[data-a=cont]');
-      const ready = await duelReady(page, 15000);
-      const after = ready ? await page.evaluate(() => JSON.stringify(window.__lab.duel())) : null;
-      record(10, size, ready && after === before, `resumed ${ready}; view identical ${after === before} (hand ${before && JSON.parse(before).hand})`);
-    } catch (e) { record(10, size, false, 'crashed: ' + e.message.split('\n')[0]); }
-    await ctx.close();
-  }
-  // E：15 換面板防連點、28 店裡可點、27 無縫接軌、16 標題推門不丟今晚＋散場中重新整理不丟紀錄
-  if (wantAny(15, 16, 27, 28)) {
-    const { ctx, page } = await newPage(browser, W, H);
-    try {
-      await page.goto(Q(), { waitUntil: 'domcontentloaded' });
-      await page.waitForSelector('[data-a=quiet]', { timeout: 5000 });
-      await page.click('[data-a=quiet]');
-      await page.evaluate(() => window.__lab.autoplay('ev', { until: 'map' }));
-      await page.waitForFunction(() => window.__lab.screen() === 'map' && window.DipLabEngine.nextStep(window.__lab.run) === 'move', null, { timeout: 90000 });
-      await page.evaluate(() => window.__lab.stop()); await sleep(1500);
-      await dismissSoft(page);
-      if (want(28)) {
-        // 這一欄有挖箱：點店裡的箱子 → 開預覽；沒有：老闆一句、不開預覽
-        const cols = await page.evaluate(() => window.__lab.run.map.cols.map(c => ({ col: c.col, crate: c.nodes.some(n => n.type === 'crate') })));
-        const yes = cols.find(c => c.crate && c.col >= 1), no = cols.find(c => !c.crate && c.col >= 1);
-        let okYes = null, okNo = null;
-        if (yes) {
-          await page.evaluate(c => window.__lab.skipTo(c), yes.col); await sleep(700);
-          await page.evaluate(() => window.__lab.stage.interact('map'));
-          await page.evaluate(() => window.__lab.stage.tap('crate-jazz')); await sleep(400);
-          okYes = await page.evaluate(() => !!document.querySelector('.lb-sheet.float.preview [data-a=go]'));
-          await page.click('.lb-sheet.float [data-a=close] >> nth=-1').catch(() => {}); await sleep(200);
-        }
-        if (no) {
-          await page.evaluate(c => window.__lab.skipTo(c), no.col); await sleep(700);
-          await page.evaluate(() => window.__lab.stage.tap('crate-jazz')); await sleep(400);
-          okNo = await page.evaluate(() => !document.querySelector('.lb-sheet.float.preview') && !![...document.querySelectorAll('.ds-say')].find(e => getComputedStyle(e).display !== 'none'));
-        }
-        record(28, size, okYes === true && okNo === true, `crate column → preview ${okYes}; no crate → owner bubble, no preview ${okNo}`);
-      }
-      if (want(15)) {
-        await page.evaluate(() => window.__lab.skipTo(2)); await sleep(500);
-        const cid = await page.evaluate(() => { const r = window.__lab.run; const n = r.map.cols.find(c => c.col === r.col).nodes.find(x => x.type === 'crate'); return n ? n.id : null; });
-        if (!cid) record(15, size, false, 'no crate node in column 2 for this seed');
-        else {
-          await page.click(`.lb-node[data-n="${cid}"]`); await page.click('.lb-sheet.float [data-a=go]');
-          await page.waitForSelector('.lb-sheet.crate [data-k="tw"]', { timeout: 8000 }); await sleep(450);
-          const d0 = await page.evaluate(() => window.__lab.run.deck.length);
-          const box = await page.evaluate(() => { const b = document.querySelector('.lb-sheet.crate [data-k="tw"]').getBoundingClientRect(); return { x: b.left + b.width / 2, y: b.top + b.height / 2 }; });
-          await page.mouse.click(box.x, box.y); await sleep(90); await page.mouse.click(box.x, box.y); await sleep(600);
-          const r = await page.evaluate(() => ({ deck: window.__lab.run.deck.length, step: window.DipLabEngine.nextStep(window.__lab.run), sheet: !!document.querySelector('.lb-sheet.cratecard') }));
-          record(15, size, r.deck === d0 && r.step === 'crateCard' && r.sheet, `crate double-tap: deck ${d0}→${r.deck}, step ${r.step}, cards shown ${r.sheet}`);
-          await page.click('.lb-sheet.cratecard [data-a=none]'); await page.waitForSelector('.lb-sheet.done [data-a=next]'); await sleep(450);
-          await page.click('.lb-sheet.done [data-a=next]');
-          await page.waitForFunction(() => window.__lab.screen() === 'map', null, { timeout: 5000 }); await sleep(400);
-        }
-      }
-      if (want(27)) {
-        // 地圖 → 對決 → 押盤 → 地圖：#stage canvas 同一個節點；進場時 #stage 高度單調收到橫條
-        const fid = await page.evaluate(() => { const r = window.__lab.run; for (const c of r.map.cols) if (c.col >= r.col && c.nodes.some(n => n.enemyId && n.type === 'fight')) return c.col; return null; });
-        if (fid != null) await page.evaluate(c => window.__lab.skipTo(c), fid);
-        await sleep(800);
-        await page.evaluate(() => { window.__c0 = document.querySelector('#stage canvas'); window.__hs = []; const tick = () => { window.__hs.push(document.getElementById('stage').offsetHeight); if (window.__hs.length < 400) requestAnimationFrame(tick); }; requestAnimationFrame(tick); });
-        const nid = await page.evaluate(() => { const r = window.__lab.run; return r.map.cols.find(c => c.col === r.col).nodes.find(n => n.type === 'fight').id; });
-        await page.click(`.lb-node[data-n="${nid}"]`); await page.click('.lb-sheet.float [data-a=go]');
-        const inDuel = await duelReady(page, 15000);
-        // 進場整段（「！」→ 黑條 → 鏡頭推近）收完才讀最後高度
-        await page.waitForFunction(() => !document.querySelector('.lb-duelwrap.entering, .enc2'), null, { timeout: 8000 }).catch(() => {});
-        const hs = await page.evaluate(() => window.__hs.slice());
-        const strip = await page.evaluate(() => document.getElementById('stage').offsetHeight);
-        const i0 = hs.findIndex((h, i) => i > 0 && h < hs[i - 1]);
-        const seg = i0 > 0 ? hs.slice(i0 - 1) : hs;
-        let mono = true; for (let i = 1; i < seg.length; i++) if (seg[i] > seg[i - 1]) mono = false;
-        await page.evaluate(() => window.__lab.forceWin());
-        const stake = await page.waitForSelector('.lb-sheet.stake .card3d.shown', { timeout: 15000 }).then(() => true, () => false);
-        await sleep(400);
-        if (stake) { await page.click('.lb-sheet.stake [data-i="1"]').catch(() => page.click('.lb-sheet.stake [data-i="0"]')); }
-        const relic = await page.$('.lb-sheet.relics [data-r]'); if (relic) await relic.click();
-        const back = await page.waitForFunction(() => window.__lab.screen() === 'map', null, { timeout: 15000 }).then(() => true, () => false);
-        const same = await page.evaluate(() => document.querySelector('#stage canvas') === window.__c0);
-        record(27, size, inDuel && mono && same && back && stake && hs[0] > strip + 100 && strip <= 125, `canvas same node ${same}; #stage ${hs[0]}→${strip} monotonic ${mono} (${seg.length} frames); stake ${stake}; back to map ${back}`);
-      }
-      if (want(16)) {
-        await page.click('.lb-top [aria-label=暫停選單]'); await page.click('.lb-modal [data-a=title]');
-        await page.waitForSelector('[data-a=cont]', { timeout: 5000 });
-        await page.click('[data-a=push]'); await sleep(300);
-        const kept = await page.evaluate(() => ({ s: window.__lab.screen(), run: !!(window.__lab.run && !window.__lab.run.over) }));
-        await page.click('[data-a=cont]');
-        await page.waitForFunction(() => window.__lab.screen() === 'map', null, { timeout: 5000 }); await sleep(500);
-        let fid = await page.evaluate(() => { const r = window.__lab.run; const c = r.map.cols.find(x => x.col === r.col); const n = c && c.nodes.find(x => x.enemyId && x.type !== 'boss'); return n ? n.id : null; });
-        if (!fid) { await page.evaluate(() => window.__lab.skipTo(3)); await sleep(500); fid = await page.evaluate(() => { const r = window.__lab.run; const n = r.map.cols.find(x => x.col === r.col).nodes.find(x => x.enemyId && x.type !== 'boss'); return n ? n.id : null; }); }
-        await page.click(`.lb-node[data-n="${fid}"]`); await page.click('.lb-sheet.float [data-a=go]');
-        await page.waitForFunction(() => window.__lab.screen() === 'duel', null, { timeout: 10000 }); await sleep(1200);
-        await page.evaluate(() => window.__lab.forceLose());
-        await page.waitForFunction(() => window.__lab.screen() === 'scene', null, { timeout: 5000 }); await sleep(300);
-        await page.reload({ waitUntil: 'domcontentloaded' }); await page.waitForSelector('[data-a=push]', { timeout: 5000 });
-        const rec = await page.evaluate(() => ({ nights: window.__lab.save.nights.length, cont: !!document.querySelector('[data-a=cont]'), end: !!document.querySelector('[data-a=end]') }));
-        record(16, size, kept.s === 'title' && kept.run && rec.nights === 1 && !rec.cont && rec.end, `推門 once keeps the run ${kept.run}; reload in the 散場 scene → nights ${rec.nights}, 看今晚結算 ${rec.end}`);
-      }
-      if (page._errors.length) record(15, size, false, 'console errors ' + JSON.stringify(page._errors.slice(0, 2)));
-    } catch (e) { record(want(15) ? 15 : 16, size, false, 'crashed: ' + e.message.split('\n')[0]); }
-    await ctx.close();
-  }
-  // F：19 教學三張王牌、20 擋錯招、21 直接開打
-  if (wantAny(19, 20)) {
-    for (const tier of ['hall', 'pearl', 'heresy']) {
-      const { ctx, page } = await newPage(browser, W, H);
-      try {
-        await openAndPush(page, Q(), 'quiet');
-        const ok = await prologueToDuel(page, { tier }, 'tut');
-        const r = await walkTutorial(page, W, H, tier === 'hall' && want(20));
-        if (want(20) && tier === 'hall') record(20, size, r.wrong && r.wrong.blocked && /先點我指的這裡/.test(r.wrong.text || ''), `wrong card at 1-4: hand ${r.wrong && r.wrong.hand0}→${r.wrong && r.wrong.hand1}, bubble 「${r.wrong && r.wrong.text}」`);
-        if (want(19)) record(19, size, ok && r.over === 'win' && r.pHpSame && r.done && page._errors.length === 0, `${tier}: steps ${r.steps}, result ${r.result}, over ${r.over}, 你 ${r.pHp0}→${r.pHp1}, tutorialDone ${r.done}, errors ${page._errors.length}${page._errors.length ? ' ' + JSON.stringify(page._errors.slice(0, 2)) : ''}${r.note ? ', ' + r.note : ''}`);
-      } catch (e) { record(19, size, false, tier + ' crashed: ' + e.message.split('\n')[0]); }
-      await ctx.close();
-    }
-  }
-  if (want(21)) {
-    const { ctx, page } = await newPage(browser, W, H);
-    try {
-      await openAndPush(page, Q(), 'quiet');
-      await prologueToDuel(page, {});
-      await jsClick(page, '[data-tut=hand-0]'); await sleep(300);
-      const r = await page.evaluate(() => ({ svg: !!document.querySelector('#tut svg'), active: !!(window.DipLabTut && window.DipLabTut.active()), hp: window.__lab.duel().e.hp, max: window.__lab.duel().e.maxHp,
-        pv: document.querySelectorAll('[data-tut=attrs] .ab .pv').length }));
-      record(21, size, !r.svg && !r.active && r.hp === 16 && r.max === 16 && r.pv > 0, `tutorial mask ${r.svg}, lesson active ${r.active}, 男子 ${r.hp}/${r.max}, preview lines ${r.pv}`);
-    } catch (e) { record(21, size, false, 'crashed: ' + e.message.split('\n')[0]); }
-    await ctx.close();
-  }
-  // G：25 預覽站浮鈕、26 聲音狀態誠實
-  if (wantAny(25, 26)) {
-    const { ctx, page } = await newPage(browser, W, H);
-    try {
-      await openAndPush(page, Q(), 'push');
-      if (want(25)) {
-        const r = await page.evaluate(() => { const b = document.createElement('button'); b.className = 'dipprev-badge'; b.textContent = 'x'; document.body.appendChild(b); const d = getComputedStyle(b).display; b.remove(); return { d, cls: document.body.classList.contains('in-battle') }; });
-        record(25, size, r.d === 'none' && r.cls, `.dipprev-badge display ${r.d}; body.in-battle ${r.cls}`);
-      }
-      if (want(26)) {
-        // 先讓序章自己的「今晚這張」放起來、停在猜歌面板（劇本不會再自己換歌），再測切背景／回前景
-        for (let i = 0; i < 150; i++) {
-          if (await page.$('.lb-sheet.guess [data-pick]')) break;
-          if (await page.$('.lb-dq .nx.on')) await page.click('.lb-dq').catch(() => {});
-          await sleep(200);
-        }
-        await sleep(600);
-        const started = await page.evaluate(async () => { const f = window.DipLabFx; const c = window.DipLabContent.cards['fishmans-long-season']; return f.music.play(c, { fadeMs: 50 }); });
-        await sleep(400);
-        // 畫面上的「播放中」：⏸ 選單第一行（用 DipLabUI.openSettings 打開，不產生觸碰，免得觸碰本身就把音樂叫回來）
-        const shown = () => page.evaluate(() => { window.DipLabUI.openSettings(); const np = document.querySelector('.lb-modal .lb-np'); const on = !!(np && np.classList.contains('on')); const pl = window.DipLabFx.music.playing(); document.querySelector('.lb-modal [data-a=resume]').click(); return { on, pl }; });
-        const s0 = await shown();
-        await page.evaluate(() => { Object.defineProperty(document, 'hidden', { configurable: true, get: () => true }); document.dispatchEvent(new Event('visibilitychange')); });
-        await sleep(300);
-        const s1 = await shown();
-        await page.evaluate(() => { Object.defineProperty(document, 'hidden', { configurable: true, get: () => false }); document.dispatchEvent(new Event('visibilitychange')); });
-        await sleep(300);
-        const s2 = await shown();   // 回前景、還沒碰：不在放，畫面也不說在放
-        await page.mouse.click(W / 2, 16); await sleep(2500);   // 下一次觸碰（頂欄標題，不會觸發任何按鈕）
-        const s3 = await shown();
-        const ok = started ? (s0.on && s0.pl && !s1.pl && !s1.on && !s2.pl && !s2.on && s3.pl && s3.on) : (!s0.on && !s0.pl);
-        record(26, size, ok, `play ok ${started}; before ${JSON.stringify(s0)}, hidden ${JSON.stringify(s1)}, visible ${JSON.stringify(s2)}, after tap ${JSON.stringify(s3)}`);
-      }
-    } catch (e) { record(26, size, false, 'crashed: ' + e.message.split('\n')[0]); }
-    await ctx.close();
-  }
-}
-// 教學：照著 DipLabTut 的步驟走（說明步點空白、操作步點手指指的地方）；hall 時順便試一次點錯（#20）
-async function walkTutorial(page, W, H, tryWrong) {
-  const out = { steps: 0, wrong: null };
-  out.pHp0 = await page.evaluate(() => window.__lab.duel() ? window.__lab.duel().p.hp : null);
-  const t0 = Date.now(); let last = null; out.minHp = out.pHp0;
-  while (Date.now() - t0 < 200000) {
-    const st = await page.evaluate(() => ({ s: window.__lab.screen(), over: (window.__lab.rawDuel() || {}).over || null, hp: window.__lab.duel() ? window.__lab.duel().p.hp : null, d: window.DipLabTut && window.DipLabTut.debug ? window.DipLabTut.debug() : null,
-      sel: window.DipLabDuel && window.DipLabDuel.debug && window.DipLabDuel.debug() ? String(window.DipLabDuel.debug().sel) + window.DipLabDuel.debug().phase : '' }));
-    if (st.hp != null && out.minHp != null) out.minHp = Math.min(out.minHp, st.hp);
-    if (st.over) { out.over = st.over; break; }
-    if (st.s !== 'duel') break;
-    const d = st.d;
-    if (!d || !d.active || !d.shown || !d.text || !['say', 'do', 'soft', 'modal'].includes(d.mode)) { await sleep(100); continue; }
-    const key = d.shown + '|' + d.mode + '|' + d.text + '|' + st.sel;   // 同一步可能要點兩下（2-3：先選盤、再選冷門）
-    if (key === last) { await sleep(100); continue; }
-    await sleep(380);
-    const d2 = await page.evaluate(() => window.DipLabTut.debug());
-    if (d2.shown !== d.shown) continue;
-    last = key; out.steps++;
-    if (d.mode === 'say') { await page.mouse.click(W / 2, H - 10); continue; }
-    if (d.mode === 'modal') { const cb = await page.$('#ciClose'); if (cb) await cb.click(); continue; }   // 1-9：唱片資訊開著，點「關閉」
-    if (tryWrong && !out.wrong && d.shown === '1-4') {
-      const hand0 = await page.evaluate(() => window.__lab.duel().hand);
-      const pt = await page.evaluate(() => { const e = window.DipLabDuel.el('hand-1'); const b = e.getBoundingClientRect(); return [b.left + b.width / 2, b.top + b.height / 2]; });
-      await page.mouse.click(pt[0], pt[1]); await sleep(250);
-      const w = await page.evaluate(() => ({ text: window.DipLabTut.debug().text, sel: window.DipLabDuel.debug().sel, hand: window.__lab.duel().hand }));
-      out.wrong = { hand0, hand1: w.hand, text: w.text, blocked: w.hand === hand0 && (w.sel == null || w.sel !== 1) };
-      await sleep(1700);
-    }
-    const pt = await page.evaluate(() => { const h = document.querySelector('#tut .tut-hand'); if (!h || h.hidden || !h.getBoundingClientRect().width) return null; const r = h.getBoundingClientRect(); return [r.left + 12, r.top + 2]; });
-    if (d.shown === '2-3' && d.mode === 'do' && await page.evaluate(() => window.DipLabDuel.api().phase()) === 'choose') {
-      const c = await page.evaluate(() => { const e = window.DipLabDuel.el('hand-0'); const b = e.getBoundingClientRect(); return [b.left + b.width / 2, b.top + b.height / 2]; });
-      await page.mouse.click(c[0], c[1]); continue;
-    }
-    if (d.shown === '1-9' || /close/.test(String(d.shown))) { const cb = await page.$('#ciClose'); if (cb) { await cb.click(); continue; } }
-    if (!pt) { await page.mouse.click(W / 2, H / 2); continue; }
-    await page.mouse.click(pt[0], pt[1]);
-  }
-  await page.waitForFunction(() => window.__lab.screen() !== 'duel', null, { timeout: 20000 }).catch(() => {});
-  const fin = await page.evaluate(() => ({ done: !!window.__lab.save.tutorialDone }));
-  out.done = fin.done;
-  out.pHp1 = out.minHp;
-  out.pHpSame = out.minHp === out.pHp0;
-  out.result = await page.evaluate(() => window.DipLabTut && window.DipLabTut.debug ? window.DipLabTut.debug().state : null);
-  return out;
-}
-async function measureKeys(page) {
-  return page.evaluate(() => {
-    const vis = e => { const r = e.getBoundingClientRect(); if (r.width < 1 || r.height < 1) return false; const s = getComputedStyle(e); return s.visibility !== 'hidden' && s.display !== 'none' && +s.opacity > 0.05; };
-    const small = [], tiny = [];
-    const keys = [...document.querySelectorAll('.key')].filter(vis);
-    for (const e of keys) { const fs = parseFloat(getComputedStyle(e).fontSize); if (fs < 12) small.push((e.className || e.tagName) + ':' + fs); }
-    // 頂欄（32px，::after 把點擊區撐到 44）與對決盤面（duel.css 自己的尺寸規格）不在這裡量；唱片資訊的平台鈕是原版 8px 樣式
-    const btns = [...document.querySelectorAll('#app button, .lb-modal button, [role=button]')].filter(b => vis(b) && !b.closest('.lb-top, .dl, .lb-strip, .lb-tl, .drawmask'));
-    for (const b of btns) { const r = b.getBoundingClientRect(); if (r.width < 43.5 || r.height < 35.5) tiny.push((b.className || b.tagName).toString().slice(0, 30) + ':' + Math.round(r.width) + 'x' + Math.round(r.height)); }
-    // 對決：手牌與屬性鈕（主要操作）要 ≥44
-    for (const b of document.querySelectorAll('.dl [data-tut=hand] .tile, .dl [data-tut=attrs] .ab')) { if (!vis(b)) continue; const r = b.getBoundingClientRect(); if (r.width < 43.5 || r.height < 43.5) tiny.push('duel:' + (b.className || '').toString().slice(0, 20) + ':' + Math.round(r.width) + 'x' + Math.round(r.height)); }
-    return { nKeys: keys.length, nBtn: btns.length, small, tiny, screen: window.__lab && window.__lab.screen() };
-  });
-}
-
-(async () => {
+// =============================================================================== 情境
+async function run() {
   const browser = await launch();
-  const t0 = Date.now();
-  for (const s of SIZES) { await runSize(browser, s); FIRST = false; }
+  for (const [w, h] of SIZES) {
+    const size = `${w}x${h}`;
+    const errsBySize = [];
+    const track = page => errsBySize.push(page);
+
+    // #1 開頁 ＋ #22 標題不捲動
+    if (want(1)) {
+      const { ctx, page } = await newPage(browser, w, h); track(page);
+      try {
+        const ms = await openTitle(page);
+        const r = await page.evaluate(() => { const a = document.querySelector('[data-a=push]').getBoundingClientRect(), b = document.querySelector('[data-a=quiet]').getBoundingClientRect(); return { a: a.bottom, b: b.bottom, vh: innerHeight, plate: !!document.querySelector('.lb-plate') }; });
+        const sc = await noScroll(page);
+        record(1, size, ms < 2500 && r.a <= r.vh && r.b <= r.vh && r.plate && scrollOk(sc), `title ${ms} ms, buttons bottom ${Math.round(r.a)}/${Math.round(r.b)} ≤ ${r.vh}, scroll ${JSON.stringify(sc)}`);
+      } catch (e) { record(1, size, false, e.message); }
+      await ctx.close();
+    }
+
+    // #3 推門到第一手 ≤10 下 ＋ #4 版面 ＋ #6 點擊區 ＋ #17 兩邊分明 ＋ #22 對決不捲動 ＋ #34 沒有舊機制 ＋ #30 預覽＝引擎 ＋ #14 長按 ＋ #18（對決的封面）
+    if (want(3) || want(4) || want(6) || want(17) || want(30) || want(34) || want(14) || want(18)) {
+      const { ctx, page } = await newPage(browser, w, h); track(page);
+      try {
+        await openTitle(page);
+        page._clicks = 0;
+        await page.click('[data-a=quiet]'); page._clicks++;
+        const ok = await prologueToDuel(page, 'direct');
+        const ready = ok && await duelReady(page);
+        if (want(3)) record(3, size, ready && page._clicks <= 10, `prologue → first hand in ${page._clicks} taps (ready=${ready})`);
+        if (ready) {
+          if (want(4)) {
+            const r = await page.evaluate(() => {
+              const names = ['e-habit', 'e-rec', 'e-stars', 'tri', 'hand-ace', 'hand-0', 'hand-1', 'hand-2', 'throw'];
+              const out = {}; names.forEach(n => { const e = document.querySelector('.dl [data-tut="' + n + '"]'); out[n] = e ? Math.round(e.getBoundingClientRect().bottom) : -1; });
+              const chips = [...document.querySelectorAll('.dl .chip')].map(c => Math.round(c.getBoundingClientRect().bottom));
+              return { out, chipMax: Math.max(...chips), chips: chips.length, vh: innerHeight };
+            });
+            const bad = Object.entries(r.out).filter(([k, v]) => v < 0 || v > r.vh);
+            record(4, size, !bad.length && r.chipMax <= r.vh && r.chips >= 10, `bottoms ${JSON.stringify(r.out)} chips ${r.chips} max ${r.chipMax} ≤ ${r.vh}${bad.length ? ' BAD ' + JSON.stringify(bad) : ''}`);
+          }
+          if (want(6)) {
+            const r = await page.evaluate(() => {
+              const small = [];
+              document.querySelectorAll('.dl .chip').forEach(c => { const b = c.getBoundingClientRect(); if (b.width < 27.5 || b.height < 44) small.push(c.dataset.tut + ' ' + Math.round(b.width) + 'x' + Math.round(b.height)); });
+              const th = document.querySelector('.dl [data-tut=throw]').getBoundingClientRect();
+              if (th.width < 44 || th.height < 40) small.push('throw ' + Math.round(th.width) + 'x' + Math.round(th.height));
+              document.querySelectorAll('#top button').forEach(b0 => { const b = b0.getBoundingClientRect(); const cs = getComputedStyle(b0, '::after'); const hh = b.height + (parseFloat(cs.top) < 0 ? -parseFloat(cs.top) * 2 : 0); if (b.width < 40 || hh < 44) small.push('top ' + b0.textContent + ' ' + Math.round(b.width) + 'x' + Math.round(hh)); });
+              const fonts = []; document.querySelectorAll('.dl .chip, .dl [data-tut=e-hp], .dl [data-tut=p-hp]').forEach(e => { const fs = parseFloat(getComputedStyle(e).fontSize); if (fs < 12) fonts.push(e.dataset.tut + ' ' + fs); });
+              return { small, fonts };
+            });
+            record(6, size, !r.small.length && !r.fonts.length, `small ${JSON.stringify(r.small).slice(0, 200)} fonts ${JSON.stringify(r.fonts)}`);
+          }
+          if (want(17)) {
+            const r = await page.evaluate(() => {
+              const e = document.querySelector('.dl [data-tut=e-hud]').getBoundingClientRect(), p = document.querySelector('.dl [data-tut=p-hud]').getBoundingClientRect();
+              const se = document.querySelector('.dl [data-tut=slot-e]').getBoundingClientRect(), sp = document.querySelector('.dl [data-tut=slot-p]').getBoundingClientRect();
+              const st = window.__lab.stage; const f = st && st.anchor('f'), pa = st && st.anchor('p');
+              const fx = f ? f.getBoundingClientRect().left : 0, px = pa ? pa.getBoundingClientRect().left : 1;
+              const handInE = !!document.querySelector('.dl [data-tut=e-hud] .chip');
+              return { eAbove: e.top < p.top, slots: se.left < sp.left, stage: fx < px, handInE, top: document.querySelector('#top .tt').textContent };
+            });
+            record(17, size, r.eAbove && r.slots && r.stage && !r.handInE, JSON.stringify(r));
+          }
+          if (want(34)) {
+            const r = await page.evaluate(() => {
+              const old = ['e-qi', 'p-qi', 'e-intent', 'stake', 'ult', 'chain', 'attrs'].filter(n => document.querySelector('[data-tut="' + n + '"]'));
+              const tx = document.querySelector('.dl').textContent;
+              const words = ['氣勢', '輾壓', '賭注', '相生', '配件'].filter(w0 => tx.indexOf(w0) >= 0);
+              return { old, words };
+            });
+            record(34, size, !r.old.length && !r.words.length, JSON.stringify(r));
+          }
+          if (want(30)) {
+            const r = await page.evaluate(() => {
+              const E = window.DipLabEngine, D = window.DipLabDuel, d = window.__lab.rawDuel(); const bad = []; let n = 0;
+              const chips = [...document.querySelectorAll('.dl .chip')];
+              for (const c of chips) {
+                const t = c.dataset.tut; const m = /^chip-(\d|ace)(?:-([coh]))?$/.exec(t); if (!m) continue;
+                const act = m[1] === 'ace' ? { ace: true } : { i: +m[1], attr: m[2] };
+                D.select(m[1] === 'ace' ? 'ace' : +m[1], m[1] === 'ace' ? undefined : m[2]);
+                const pv = E.preview(d, act);
+                for (const a of ['c', 'o', 'h']) {
+                  const ui = (document.querySelector('.dl [data-tut=e-star-' + a + '] .ans') || {}).textContent || '';
+                  const o = pv[a]; const want0 = o.toE > 0 ? '他 −' + o.toE : o.toP > 0 ? '你 −' + o.toP : '沒事';
+                  n++; if (ui.replace(/\s+/g, ' ').trim().indexOf(want0) < 0) bad.push(t + ':' + a + ' ui=' + ui + ' want=' + want0);
+                }
+              }
+              D.select(null);
+              return { n, bad };
+            });
+            record(30, size, r.n >= 30 && !r.bad.length, `${r.n} answers checked, bad ${JSON.stringify(r.bad.slice(0, 4))}`);
+          }
+          if (want(14)) {
+            const r = await page.evaluate(() => { const c = document.querySelector('.dl [data-tut=hand-1] .cv, .dl [data-tut=hand-1] img'); const b = c.getBoundingClientRect(); return { x: b.left + b.width / 2, y: b.top + b.height / 2 }; });
+            await page.mouse.move(r.x, r.y);
+            const cdp = await ctx.newCDPSession(page);
+            await cdp.send('Input.dispatchTouchEvent', { type: 'touchStart', touchPoints: [{ x: r.x, y: r.y }] });
+            await sleep(700);
+            await cdp.send('Input.dispatchTouchEvent', { type: 'touchEnd', touchPoints: [] });
+            const open = await page.waitForSelector('#cardInfoMask', { timeout: 3000 }).then(() => true, () => false);
+            record(14, size, open, `long-press hand cover → 唱片資訊 ${open}`);
+            if (open) { await jsClick(page, '#ciClose'); await sleep(300); }
+          }
+          if (want(18)) {
+            const opened = {};
+            const tryInfo = async (key, sel) => {
+              const ok = await page.evaluate(s => { const e = document.querySelector(s); if (!e) return false; e.click(); return true; }, sel);
+              if (!ok) { opened[key] = 'missing'; return; }
+              opened[key] = await page.waitForSelector('#cardInfoMask', { timeout: 2500 }).then(() => true, () => false);
+              if (opened[key] === true) { await jsClick(page, '#ciClose'); await page.waitForSelector('#cardInfoMask', { state: 'detached', timeout: 2000 }).catch(() => {}); await sleep(150); }
+            };
+            await tryInfo('his', '.dl [data-tut=e-cover] img, .dl [data-tut=e-cover] .cv, .dl [data-tut=e-cover]');
+            await tryInfo('hand', '.dl [data-tut=hand-0] .cv, .dl [data-tut=hand-0] img');
+            await tryInfo('ace', '.dl [data-tut=hand-ace] .cv, .dl [data-tut=hand-ace] img');
+            // 星鈕不開
+            await jsClick(page, '.dl [data-tut="chip-0-c"]'); await sleep(400);
+            const chipOpen = !!(await page.$('#cardInfoMask'));
+            await page.evaluate(() => window.DipLabDuel.select(null));
+            // 丟一手：牌桌兩張
+            await page.evaluate(() => window.DipLabDuel.play({ i: 0, attr: 'c' }));
+            await page.waitForFunction(() => window.DipLabDuel.debug().n >= 2 && !window.DipLabDuel.api().busy(), null, { timeout: 12000 }).catch(() => {});
+            await sleep(300);
+            await tryInfo('slotE', '.dl [data-tut=slot-e] .cv, .dl [data-tut=slot-e] img');
+            await tryInfo('slotP', '.dl [data-tut=slot-p] .cv, .dl [data-tut=slot-p] img');
+            const ok = Object.values(opened).every(v => v === true) && !chipOpen;
+            record(18, size, ok, `duel covers ${JSON.stringify(opened)} chipOpensInfo=${chipOpen}`);
+          }
+          if (want(22)) { const sc = await noScroll(page); record(22, size, scrollOk(sc), `duel scroll ${JSON.stringify(sc)}`); }
+        } else {
+          for (const n of [4, 6, 17, 30, 34, 14, 18]) if (want(n)) record(n, size, false, 'duel not ready');
+        }
+      } catch (e) { record(3, size, false, 'error ' + e.message); }
+      await ctx.close();
+    }
+
+    // #27 無縫接軌（今晚來客 → 對決 → 挑唱片 → 今晚來客；同一個 canvas；黑條只在 #stage 裡）＋ #22 今晚來客／挑唱片不捲動 ＋ #18（挑唱片面板）
+    if (want(27)) {
+      const { ctx, page } = await newPage(browser, w, h); track(page);
+      try {
+        await seededContinue(page, { ace: 'pearl', idx: 0 }, Q(''));
+        await waitScreen(page, 'night');
+        await page.evaluate(() => { const c = document.querySelector('#stage canvas'); window.__cv0 = c; window.__enc = []; new MutationObserver(ms => ms.forEach(m => m.addedNodes.forEach(n => { if (n.classList && n.classList.contains('enc2')) { const st = document.getElementById('stage'); window.__enc.push({ t: performance.now(), inStage: st.contains(n), board: false }); const rec = window.__enc[window.__enc.length - 1]; const iv = setInterval(() => { if (document.querySelector('.lb-duelwrap .dl')) rec.board = true; if (!n.isConnected) { rec.ms = performance.now() - rec.t; clearInterval(iv); } }, 30); } }))).observe(document.body, { childList: true, subtree: true }); });
+        await sleep(600);
+        const scN = await noScroll(page);
+        await jsClick(page, '[data-a=go]');
+        await waitScreen(page, 'duel');
+        await duelReady(page, 20000);
+        const enc = await page.evaluate(() => window.__enc);
+        await resolveHands(page, 3);
+        await page.evaluate(() => window.__lab.forceWin());
+        await waitScreen(page, 'reward');
+        await sleep(1200);
+        const scR = await noScroll(page);
+        const rew = await page.evaluate(() => { const b = document.querySelector('.lb-sheet.reward [data-pick]'); if (!b) return null; const r = b.getBoundingClientRect(); const f = document.querySelector('.lb-sheet.reward .foot').getBoundingClientRect(); return { btnBottom: r.bottom, footTop: f.top, vh: innerHeight }; });
+        // 挑唱片面板的封面開唱片資訊
+        await jsClick(page, '.lb-sheet.reward .lb-ct .lb-cv');
+        const info = await page.waitForSelector('#cardInfoMask', { timeout: 2500 }).then(() => true, () => false);
+        if (info) { await jsClick(page, '#ciClose'); await sleep(300); }
+        await jsClick(page, '.lb-sheet.reward [data-pick]');
+        await waitScreen(page, 'night');
+        const same = await page.evaluate(() => document.querySelector('#stage canvas') === window.__cv0 && !!window.__cv0 && window.__cv0.isConnected);
+        const e0 = enc[0] || {};
+        const ok = same && e0.inStage && e0.board && (e0.ms || 0) <= 1600 && rew && rew.btnBottom <= rew.footTop + 1 && info;
+        record(27, size, ok, `same canvas ${same}; bars inStage=${e0.inStage} boardVisibleDuring=${e0.board} ${Math.round(e0.ms || 0)} ms; reward btn ${rew && Math.round(rew.btnBottom)} ≤ foot ${rew && Math.round(rew.footTop)}; reward cover info ${info}`);
+        if (want(22)) record(22, size, scrollOk(scN) && scrollOk(scR), `night ${JSON.stringify(scN)} reward ${JSON.stringify(scR)}`);
+      } catch (e) { record(27, size, false, 'error ' + e.message); }
+      await ctx.close();
+    }
+
+    // #40 有存檔的標題：「再按一次就放棄今晚」在畫面內；第二下才放棄
+    if (want(40)) {
+      const { ctx, page } = await newPage(browser, w, h); track(page);
+      try {
+        await openTitle(page); await seedRun(page, { ace: 'hall', idx: 1 }); await openTitle(page);
+        await page.click('[data-a=push]');
+        await sleep(200);
+        const r = await page.evaluate(() => { const w0 = document.querySelector('.lb-warn'); const b = w0.getBoundingClientRect(); return { vis: getComputedStyle(w0).visibility, bottom: b.bottom, vh: innerHeight, run: !!window.__lab.run, s: window.__lab.screen() }; });
+        const sc = await noScroll(page);
+        record(40, size, r.vis === 'visible' && r.bottom <= r.vh && r.run && r.s === 'title' && scrollOk(sc), `warn ${r.vis} bottom ${Math.round(r.bottom)} ≤ ${r.vh}; run kept ${r.run}; scroll ${JSON.stringify(sc)}`);
+      } catch (e) { record(40, size, false, 'error ' + e.message); }
+      await ctx.close();
+    }
+
+    // ---- 流程情境（第一個尺寸） -------------------------------------------------
+    // #7 序章打贏 → 掉出來的那張 → 配件三選一 → 今晚來客
+    if (want(7)) {
+      const { ctx, page } = await newPage(browser, w, h); track(page);
+      try {
+        await openTitle(page);
+        await page.click('[data-a=quiet]');
+        await prologueToDuel(page, 'direct');
+        await duelReady(page);
+        await page.evaluate(() => window.DipLabDuel.autoplay('novice'));
+        const card = await page.waitForSelector('.lb-sheet.one', { timeout: 60000 }).then(() => true, () => false);
+        const cardTxt = card ? await page.evaluate(() => document.querySelector('.lb-sheet.one').textContent) : '';
+        await sleep(500);
+        await jsClick(page, '.lb-sheet.one [data-i="0"]');
+        // 繼續播到配件面板（▼ 才點）
+        let relic = false;
+        for (let g = 0; g < 200 && !relic; g++) { relic = !!(await page.$('.lb-sheet.relics [data-r]')); if (!relic) { const nx = await page.$('.lb-dq .nx.on'); if (nx) await jsClick(page, '.lb-dq'); await sleep(150); } }
+        const rel = relic ? await page.evaluate(() => [...document.querySelectorAll('.lb-sheet.relics [data-r]')].map(b => b.getAttribute('data-r'))) : [];
+        await sleep(450);
+        if (relic) await jsClick(page, '.lb-sheet.relics [data-r="stylus"]');
+        let night = false;
+        for (let g = 0; g < 200 && !night; g++) { night = (await screen(page)) === 'night'; if (!night) { const nx = await page.$('.lb-dq .nx.on'); if (nx) await jsClick(page, '.lb-dq'); await sleep(150); } }
+        const st = await page.evaluate(() => ({ relics: window.__lab.run.relics, bag: window.__lab.run.bag, heads: document.querySelectorAll('[data-tut=night] .nc').length, flip: !!document.querySelector('.lb-flip, .card3d') }));
+        const ok = card && /Fishmans|Long Season/i.test(cardTxt) && rel.join(',') === 'dustcover,stylus,cleaner' && night && st.relics.join() === 'stylus' && st.bag.indexOf('fishmans-long-season') >= 0 && st.heads === 5 && !st.flip;
+        record(7, size, ok, `card panel ${card} (${cardTxt.slice(0, 40)}), relics offered ${rel}, night ${night}, ${JSON.stringify({ relics: st.relics, heads: st.heads, bag: st.bag.length })}`);
+      } catch (e) { record(7, size, false, 'error ' + e.message); }
+      await ctx.close();
+    }
+
+    // #8 序章打輸 →「……再一場。」→ 同一位男子、聲望回滿
+    if (want(8)) {
+      const { ctx, page } = await newPage(browser, w, h); track(page);
+      try {
+        await openTitle(page);
+        await page.click('[data-a=quiet]');
+        await prologueToDuel(page, 'direct');
+        await duelReady(page);
+        await page.evaluate(() => window.__lab.forceLose());
+        let said = false;
+        for (let g = 0; g < 100; g++) { said = await page.evaluate(() => /再一場/.test((document.querySelector('.lb-dq .tx') || {}).textContent || '')); if (said) break; await sleep(100); }
+        const back = await waitScreen(page, 'duel', 20000);
+        await duelReady(page);
+        const v = await page.evaluate(() => window.__lab.duel());
+        record(8, size, said && back && v.eId === 'man' && v.pHp === 10 && v.eHp === v.eMax, `said ${said}, back ${back}, ${v && v.eId} p ${v && v.pHp} e ${v && v.eHp}/${v && v.eMax}`);
+      } catch (e) { record(8, size, false, 'error ' + e.message); }
+      await ctx.close();
+    }
+
+    // #9 一整晚 ＋ #13 再來一夜 ＋ #11 存檔隔離 ＋ #12 網路
+    if (want(9) || want(13) || want(11) || want(12)) {
+      const { ctx, page } = await newPage(browser, w, h, { watchStorage: true }); track(page);
+      try {
+        await openTitle(page);
+        await page.click('[data-a=quiet]');
+        await sleep(300);
+        await page.evaluate(() => window.__lab.autoplay('oracle', { until: 'end' }));
+        const end = await waitScreen(page, 'end', 180000);
+        await sleep(800);
+        const r = await page.evaluate(() => ({ over: window.__lab.run.over, rows: [...document.querySelectorAll('.lb-sum li')].map(li => li.textContent.replace(/\s+/g, ' ').trim()), again: !!document.querySelector('[data-a=again]'), nights: window.__lab.save.nights.length, trail: window.__lab.trail() }));
+        const sawNight = r.trail.filter(s => s === 'night').length, sawReward = r.trail.includes('reward');
+        if (want(9)) record(9, size, end && r.rows.length === 3 && r.again && r.nights === 1 && sawNight >= 4 && sawReward, `end ${end} ${r.over}; rows ${JSON.stringify(r.rows)}; night×${sawNight}, reward ${sawReward}`);
+        if (want(13)) {
+          await jsClick(page, '[data-a=again]');
+          const ace = await page.waitForSelector('.lb-sheet.acepick [data-a=ok]', { timeout: 20000 }).then(() => true, () => false);
+          await sleep(450);
+          await jsClick(page, '.lb-sheet.acepick [data-a=ok]');
+          const n2 = await waitScreen(page, 'night', 15000);
+          const rr = await page.evaluate(() => ({ prologue: window.__lab.run.prologue, nightNo: window.__lab.run.nightNo, relics: window.__lab.run.relics }));
+          record(13, size, ace && n2 && rr.prologue == null && rr.nightNo === 2, `再來一夜 → acePick ${ace} → night ${n2}; ${JSON.stringify(rr)}`);
+        }
+        if (want(11)) {
+          const ks = await page.evaluate(() => ({ keys: [...new Set(window.__lsKeys)], v: JSON.parse(localStorage.getItem('dipGameLab_v1')).v }));
+          const bad = ks.keys.filter(k => !ALLOWED_LS.has(k));
+          // 舊版存檔：v:1 → 丟掉、不壞
+          await page.evaluate(() => localStorage.setItem('dipGameLab_v1', JSON.stringify({ v: 1, run: { map: { cols: [] }, deck: [], hp: 3 }, settings: { sound: false }, shelf: { x: 1 } })));
+          await openTitle(page, Q());
+          const old = await page.evaluate(() => ({ v: window.__lab.save.v, run: window.__lab.save.run, cont: !!document.querySelector('[data-a=cont]'), push: !!document.querySelector('[data-a=push]') }));
+          record(11, size, !bad.length && ks.v === 3 && old.v === 3 && !old.run && !old.cont && old.push, `keys ${JSON.stringify(ks.keys)} v${ks.v}; old v1 save → ${JSON.stringify(old)}`);
+        }
+        if (want(12)) {
+          const fb = page._requests.filter(u => /firebase|firestore|googleapis\.com\/identitytoolkit/i.test(u));
+          record(12, size, !fb.length, `firebase requests ${fb.length}`);
+        }
+      } catch (e) { record(9, size, false, 'error ' + e.message); }
+      await ctx.close();
+    }
+
+    // #10 續玩（對決第 2 手）＋ #16 店門點兩下＝繼續今晚
+    if (want(10) || want(16)) {
+      const { ctx, page } = await newPage(browser, w, h); track(page);
+      try {
+        await seededContinue(page, { ace: 'hall', idx: 1 });
+        await waitScreen(page, 'night'); await sleep(500);
+        await jsClick(page, '[data-a=go]');
+        await duelReady(page);
+        await page.evaluate(() => window.DipLabDuel.play({ i: 0, attr: 'o' }));
+        await page.waitForFunction(() => window.DipLabDuel.debug().n === 2 && !window.DipLabDuel.api().busy(), null, { timeout: 12000 });
+        const before = await page.evaluate(() => { const v = window.__lab.duel(); return { n: v.n, e: v.eId, eHp: v.eHp, pHp: v.pHp, card: v.eCard.id }; });
+        await openTitle(page);
+        if (want(16)) {
+          // 店門（舞台熱點）點兩下：有存檔＝繼續今晚
+          const hot = await page.evaluate(() => { const st = window.__lab.stage; const r = st && st.hotRect && st.hotRect('door'); return r ? { x: r.left + r.width / 2, y: r.top + r.height / 2 } : null; });
+          if (hot) { await page.touchscreen.tap(hot.x, hot.y); await sleep(600); await page.touchscreen.tap(hot.x, hot.y); }
+          else { await page.evaluate(() => window.__lab.stageAction('door')); await sleep(600); await page.evaluate(() => window.__lab.stageAction('door')); }
+        } else await jsClick(page, '[data-a=cont]');
+        await duelReady(page);
+        const after = await page.evaluate(() => { const v = window.__lab.duel(); return { n: v.n, e: v.eId, eHp: v.eHp, pHp: v.pHp, card: v.eCard.id, trail: window.__lab.trail() }; });
+        const same = before.n === after.n && before.e === after.e && before.eHp === after.eHp && before.card === after.card;
+        if (want(10)) record(10, size, same, `before ${JSON.stringify(before)} after ${JSON.stringify({ n: after.n, e: after.e, eHp: after.eHp, card: after.card })}`);
+        if (want(16)) record(16, size, same && !after.trail.includes('scene'), `door ×2 → ${after.trail.join('>')}`);
+      } catch (e) { record(10, size, false, 'error ' + e.message); }
+      await ctx.close();
+    }
+
+    // #19 教學三王牌 ＋ #20 擋錯招（流亡那一輪）
+    if (want(19) || want(20)) {
+      for (const tier of ['hall', 'pearl', 'heresy']) {
+        const { ctx, page } = await newPage(browser, w, h); track(page);
+        try {
+          const variant = tier === 'pearl' && want(20) ? 'wrong' : 'plain';
+          if (tier === 'hall') {
+            // 走真的序章：▶ 品味對決
+            await openTitle(page, Q(''));
+            await page.click('[data-a=quiet]');
+            await prologueToDuel(page, 'tut', tier);
+          } else {
+            await seededContinue(page, { ace: tier, prologue: true, tut: true, tutorialDone: false, seen: {} }, Q(''));
+          }
+          await waitScreen(page, 'duel');
+          const res = await walkTutorial(page, w, h, variant);
+          const C = await page.evaluate(() => ({ exp: window.DipLabContent.tutorial.expect, hp: window.DipLabContent.tutorial.hp }));
+          const exp = C.exp[tier]; const want0 = [C.hp - exp[0], C.hp - exp[0] - exp[1], C.hp - exp[0] - exp[1] - exp[2]];
+          const done = await page.waitForFunction(() => window.__lab.save.tutorialDone === true, null, { timeout: 20000 }).then(() => true, () => false);
+          if (want(19)) record(19, size, JSON.stringify(res.hp) === JSON.stringify(want0) && done, `${tier}: eHp ${JSON.stringify(res.hp)} want ${JSON.stringify(want0)}; tutorialDone ${done}`);
+          if (variant === 'wrong') {
+            const ok = res.log.length === 2 && res.log.every(l => l.text === '先點我指的這裡。' && l.n === l.n0 && !l.sel);
+            record(20, size, ok, JSON.stringify(res.log));
+          }
+        } catch (e) { record(19, size, false, `${tier} error ${e.message}`); }
+        await ctx.close();
+      }
+    }
+
+    // #21 直接開打：沒有教學、男子 10 聲望
+    if (want(21)) {
+      const { ctx, page } = await newPage(browser, w, h); track(page);
+      try {
+        await openTitle(page);
+        await page.click('[data-a=quiet]');
+        await prologueToDuel(page, 'direct');
+        await duelReady(page);
+        const r = await page.evaluate(() => ({ v: window.__lab.duel(), holes: window.DipLabTut.debug().holes, active: window.DipLabTut.active(), svg: !!document.querySelector('#tut svg:not([style*="none"])') && getComputedStyle(document.querySelector('#tut svg')).display !== 'none' }));
+        record(21, size, r.v.eHp === 10 && r.v.eMax === 10 && !r.active && !r.holes, `man ${r.v.eHp}/${r.v.eMax}, tut active ${r.active}, holes ${r.holes}`);
+      } catch (e) { record(21, size, false, 'error ' + e.message); }
+      await ctx.close();
+    }
+
+    // #31 急了換字（冷門仙人）
+    if (want(31)) {
+      const { ctx, page } = await newPage(browser, w, h); track(page);
+      try {
+        await seededContinue(page, { ace: 'pearl', idx: 3 });
+        await waitScreen(page, 'night');
+        const elite = await page.evaluate(() => window.__lab.run.order[3]);
+        await jsClick(page, '[data-a=go]');
+        await duelReady(page);
+        const line0 = await page.evaluate(() => document.querySelector('.dl [data-tut=e-habit]').textContent);
+        await page.evaluate(() => window.__lab.force({ kind: 'counter', toE: 3, toP: 0 }));
+        let switched = false, bubble = false;
+        const off = await page.evaluate(() => { window.__bub = ''; const st = window.__lab.stage; const o = st.say; st.say = function (id, t, x) { if (id === 'f' && t) window.__bub += t + '|'; return o.apply(this, arguments); }; return true; });
+        for (let k = 0; k < 6 && !switched; k++) {
+          await duelReady(page, 15000);
+          await page.evaluate(() => window.DipLabDuel.play({ i: 0, attr: 'c' }));
+          await sleep(2600);
+          switched = await page.evaluate(() => window.__lab.duel().switched);
+        }
+        await sleep(800);
+        const r = await page.evaluate(() => ({ line: document.querySelector('.dl [data-tut=e-habit]').textContent, bub: window.__bub, v: window.__lab.duel() }));
+        const C2 = await page.evaluate(e => { const C = window.DipLabContent, en = C.enemies[e]; return { l2: C.habits[en.phase2].line, sw: (C.lines[e] || {}).switch || '……急了。' }; }, elite);
+        bubble = r.bub.indexOf(C2.sw) >= 0;
+        await page.evaluate(() => window.__lab.force(null));
+        record(31, size, switched && r.line !== line0 && r.line.indexOf(C2.l2) >= 0 && bubble, `${elite}: ${line0} → ${r.line}; bubble ${bubble} (${r.bub.slice(0, 60)}) eHp ${r.v.eHp}/${r.v.eMax}`);
+      } catch (e) { record(31, size, false, 'error ' + e.message); }
+      await ctx.close();
+    }
+
+    // #32 唱片丟完：7 手同色比星（你 +1）→ by pile、你贏
+    if (want(32)) {
+      const { ctx, page } = await newPage(browser, w, h); track(page);
+      try {
+        await seededContinue(page, { ace: 'hall', idx: 0 });
+        await waitScreen(page, 'night');
+        await jsClick(page, '[data-a=go]');
+        await duelReady(page);
+        await page.evaluate(() => { window.__over = null; window.DipLabDuel.on('over', r => { window.__over = { win: r.win, by: r.by }; }); window.__lab.force({ kind: 'mirrorWin', toE: 1, toP: 0 }); });
+        for (let k = 0; k < 9; k++) {
+          const over = await page.evaluate(() => window.__over);
+          if (over) break;
+          if (!(await duelReady(page, 8000))) continue;
+          await page.evaluate(() => { const v = window.__lab.duel(); const i = v.hand.findIndex(Boolean); window.DipLabDuel.play({ i, attr: 'c' }); });
+          await sleep(1200);
+        }
+        await page.waitForFunction(() => window.__over, null, { timeout: 10000 }).catch(() => {});
+        const r = await page.evaluate(() => ({ over: window.__over, stamp: document.body.textContent.indexOf(window.DipLabContent.duelText.pileOut) >= 0 }));
+        await page.evaluate(() => window.__lab.force(null));
+        record(32, size, !!r.over && r.over.by === 'pile' && r.over.win === true, JSON.stringify(r));
+      } catch (e) { record(32, size, false, 'error ' + e.message); }
+      await ctx.close();
+    }
+
+    // #33 老闆說情：輸一次 → 同一位重開、聲望 10；再輸 → 散場
+    if (want(33)) {
+      const { ctx, page } = await newPage(browser, w, h); track(page);
+      try {
+        await seededContinue(page, { ace: 'pearl', idx: 1 });
+        await waitScreen(page, 'night');
+        const eid = await page.evaluate(() => window.__lab.run.order[1]);
+        await jsClick(page, '[data-a=go]');
+        await duelReady(page);
+        await resolveHands(page, 1);
+        await page.evaluate(() => window.__lab.forceLose());
+        const menu = await page.waitForSelector('.lb-dq.hasmenu .lb-dqopt[data-i="0"]', { timeout: 20000 }).then(() => true, () => false);
+        const txt = menu ? await page.evaluate(() => document.querySelector('.lb-dq').textContent) : '';
+        await sleep(450);
+        await jsClick(page, '.lb-dq .lb-dqopt[data-i="0"]');
+        await duelReady(page);
+        const v = await page.evaluate(() => ({ d: window.__lab.duel(), left: window.__lab.run.retryLeft }));
+        await page.evaluate(() => window.__lab.forceLose());
+        const end = await waitScreen(page, 'end', 30000);
+        const o = await page.evaluate(() => window.__lab.run.over);
+        record(33, size, menu && /再一場/.test(txt) && v.d.eId === eid && v.d.pHp === 10 && v.left === 0 && end && o === 'dead', `menu ${menu}; retry vs ${v.d.eId} (want ${eid}) pHp ${v.d.pHp} left ${v.left}; 2nd loss → end ${end} (${o})`);
+      } catch (e) { record(33, size, false, 'error ' + e.message); }
+      await ctx.close();
+    }
+
+    // #35 跳過教學＋重新整理不會重開教學
+    if (want(35)) {
+      const { ctx, page } = await newPage(browser, w, h); track(page);
+      try {
+        await seededContinue(page, { ace: 'heresy', prologue: true, tut: true, tutorialDone: false, seen: {} }, Q(''));
+        await waitScreen(page, 'duel');
+        await page.waitForFunction(() => window.DipLabTut.active(), null, { timeout: 15000 });
+        await page.waitForFunction(() => { const b = document.querySelector('.tut-skip'); return b && !b.hidden; }, null, { timeout: 10000 }).catch(() => {});
+        await sleep(400);
+        const viaBtn = await jsClick(page, '.tut-skip');
+        if (!viaBtn) await page.evaluate(() => window.DipLabTut.skip());
+        await page.waitForFunction(() => window.__lab.save.tutorialDone === true, null, { timeout: 5000 }).catch(() => {});
+        await duelReady(page);
+        await page.evaluate(() => window.DipLabDuel.play({ i: 0, attr: 'c' }));
+        await page.waitForFunction(() => window.DipLabDuel.debug().n === 2 && !window.DipLabDuel.api().busy(), null, { timeout: 12000 });
+        await openTitle(page, Q(''));
+        await jsClick(page, '[data-a=cont]');
+        await duelReady(page);
+        await sleep(800);
+        const r = await page.evaluate(() => ({ n: window.__lab.duel().n, active: window.DipLabTut.active(), done: window.__lab.save.tutorialDone, tut: window.__lab.run.tut }));
+        record(35, size, r.n === 2 && !r.active && r.done === true, `skip via button ${viaBtn}; after reload ${JSON.stringify(r)}`);
+      } catch (e) { record(35, size, false, 'error ' + e.message); }
+      await ctx.close();
+    }
+
+    // #36 ⏸ 回標題會結束教學；重新推門 → 直接開打不被劫持
+    if (want(36)) {
+      const { ctx, page } = await newPage(browser, w, h); track(page);
+      try {
+        await seededContinue(page, { ace: 'hall', prologue: true, tut: true, tutorialDone: false, seen: {} }, Q(''));
+        await waitScreen(page, 'duel');
+        await page.waitForFunction(() => window.DipLabTut.active() && window.DipLabTut.debug().shown === 't2', null, { timeout: 20000 }).catch(() => {});
+        await jsClick(page, '#top [data-a=pause]'); await sleep(400);
+        await jsClick(page, '.lb-modal [data-a=title]');
+        await waitScreen(page, 'title');
+        const a1 = await page.evaluate(() => window.DipLabTut.active());
+        await sleep(400);
+        await page.click('[data-a=quiet]'); await sleep(200); await page.click('[data-a=quiet]');
+        await prologueToDuel(page, 'direct');
+        await duelReady(page);
+        await sleep(500);
+        const r = await page.evaluate(() => ({ active: window.DipLabTut.active(), holes: window.DipLabTut.debug().holes, tut: window.__lab.run.tut }));
+        await tapAt(page, '.dl [data-tut="chip-1-c"]'); await sleep(300);
+        const sel = await page.evaluate(() => window.DipLabDuel.debug().sel);
+        record(36, size, !a1 && !r.active && !r.holes && !!sel, `after ⏸ title active=${a1}; direct duel ${JSON.stringify(r)} sel ${JSON.stringify(sel)}`);
+      } catch (e) { record(36, size, false, 'error ' + e.message); }
+      await ctx.close();
+    }
+
+    // #37 連點安全：推門 ×2、下一位 ×2、台北 ×2
+    if (want(37)) {
+      const { ctx, page } = await newPage(browser, w, h); track(page);
+      try {
+        await openTitle(page);
+        const tb = await page.evaluate(() => { const b = document.querySelector('#top [data-a=taipei]').getBoundingClientRect(); return { x: b.left + b.width / 2, y: b.top + b.height / 2 }; });
+        await page.touchscreen.tap(tb.x, tb.y); await sleep(120); await page.touchscreen.tap(tb.x, tb.y);
+        await sleep(1500);
+        const t1 = await page.evaluate(() => window.__lab.trail().join('>'));
+        await openTitle(page);
+        const pb = await page.evaluate(() => { const b = document.querySelector('[data-a=quiet]').getBoundingClientRect(); return { x: b.left + b.width / 2, y: b.top + b.height / 2 }; });
+        await page.touchscreen.tap(pb.x, pb.y); await sleep(90); await page.touchscreen.tap(pb.x, pb.y);
+        await sleep(1200);
+        const t2 = await page.evaluate(() => window.__lab.trail().join('>'));
+        await seedRun(page, { ace: 'pearl', idx: 0 }); await openTitle(page); await jsClick(page, '[data-a=cont]');
+        await waitScreen(page, 'night'); await sleep(600);
+        const gb = await page.evaluate(() => { const b = document.querySelector('[data-a=go]').getBoundingClientRect(); return { x: b.left + b.width / 2, y: b.top + b.height / 2 }; });
+        await page.touchscreen.tap(gb.x, gb.y); await sleep(100); await page.touchscreen.tap(gb.x, gb.y);
+        await duelReady(page);
+        const t3 = await page.evaluate(() => window.__lab.trail().join('>'));
+        const ok = t1 === 'title>taipei' && t2 === 'title>scene' && /night>duel$/.test(t3) && (t3.match(/duel/g) || []).length === 1;
+        record(37, size, ok, `taipei×2: ${t1}; push×2: ${t2}; go×2: ${t3}`);
+      } catch (e) { record(37, size, false, 'error ' + e.message); }
+      await ctx.close();
+    }
+
+    // #38 傳說藏家登場卡：盤面 hold、卡吃點擊、點一下提早收掉
+    if (want(38)) {
+      const { ctx, page } = await newPage(browser, w, h); track(page);
+      try {
+        await seededContinue(page, { ace: 'heresy', idx: 4 });
+        await waitScreen(page, 'night'); await sleep(500);
+        await jsClick(page, '[data-a=go]');
+        await waitScreen(page, 'scene');
+        await page.waitForSelector('.lb-dq.hasmenu .lb-dqopt', { timeout: 30000 }).catch(async () => {});
+        for (let g = 0; g < 80 && !(await page.$('.lb-dq.hasmenu .lb-dqopt')); g++) { if (await page.$('.lb-dq .nx.on')) await jsClick(page, '.lb-dq'); await sleep(200); }
+        await sleep(450);
+        await jsClick(page, '.lb-dq .lb-dqopt');
+        const mask = await page.waitForSelector('#dlfxBossMask', { timeout: 8000 }).then(() => true, () => false);
+        const r1 = await page.evaluate(() => ({ held: window.DipLabDuel.debug() && window.DipLabDuel.debug().held, pe: getComputedStyle(document.getElementById('dlfxBossMask')).pointerEvents }));
+        await sleep(700);
+        // 點在星鈕的位置：被登場卡吃掉、不會選到；同時登場卡提早收掉
+        const chip = await page.evaluate(() => { const c = document.querySelector('.dl [data-tut="chip-0-c"]'); if (!c) return null; const b = c.getBoundingClientRect(); return { x: b.left + b.width / 2, y: b.top + b.height / 2 }; });
+        if (chip) await page.touchscreen.tap(chip.x, chip.y);
+        await sleep(100);
+        const sel = await page.evaluate(() => window.DipLabDuel.debug().sel);
+        const gone = await page.waitForSelector('#dlfxBossMask', { state: 'detached', timeout: 1500 }).then(() => true, () => false);
+        const ready = await duelReady(page, 8000);
+        record(38, size, mask && r1.held >= 1 && r1.pe === 'auto' && !sel && gone && ready, `mask ${mask} ${JSON.stringify(r1)}; tap selected ${JSON.stringify(sel)}; closed early ${gone}; board ready ${ready}`);
+      } catch (e) { record(38, size, false, 'error ' + e.message); }
+      await ctx.close();
+    }
+
+    // #39 規則卡（六行＋例子＝engine.clash）＋店內熱點 ＋ #18（唱片櫃、牆上的、箱子、試聽機）
+    if (want(39) || want(18)) {
+      const { ctx, page } = await newPage(browser, w, h); track(page);
+      try {
+        await seededContinue(page, { ace: 'pearl', idx: 0 });
+        await waitScreen(page, 'night'); await sleep(600);
+        await jsClick(page, '#top [data-a=help]'); await sleep(400);
+        const rc = await page.evaluate(() => {
+          const C = window.DipLabContent, E = window.DipLabEngine, ex = C.rules.example;
+          const rows = [...document.querySelectorAll('.lb-rules .out > div')].map(d => d.textContent.replace(/\s+/g, ' '));
+          const e = C.cards[ex.eCard], p = C.cards[ex.pCard], pa = ex.pAttr;
+          const exp = ['o', 'h', 'c'].map(a => E.clash(p[pa], pa, e[a], a)).map(r => r.toE ? '他 −' + r.toE : r.toP ? '你 −' + r.toP : '沒事');
+          return { lines: document.querySelectorAll('.lb-rules .rl li').length, rows, exp, foot: document.querySelector('.lb-rules .rfoot').textContent };
+        });
+        const rowsOk = rc.rows.length === 3 && rc.exp.every((x, i) => rc.rows[i].indexOf(x) >= 0);
+        await jsClick(page, '.lb-modal [data-x]'); await sleep(300);
+        // 店內熱點
+        const hs = await page.evaluate(() => (window.__lab.stage.hotspots() || []).map(h => h.action));
+        await page.evaluate(() => window.__lab.stageAction('poster:event')); await sleep(300);
+        const posterRules = !!(await page.$('.lb-modal .lb-rules')); await jsClick(page, '.lb-modal [data-x]'); await sleep(300);
+        await page.evaluate(() => window.__lab.stageAction('crate:jazz')); await sleep(400);
+        const bin = !!(await page.$('.lb-sheet.bin .lb-ct'));
+        const opened = {};
+        const tryInfo = async (key, sel) => {
+          const ok = await jsClick(page, sel); if (!ok) { opened[key] = 'missing'; return; }
+          opened[key] = await page.waitForSelector('#cardInfoMask', { timeout: 2500 }).then(() => true, () => false);
+          if (opened[key] === true) { await jsClick(page, '#ciClose'); await sleep(250); }
+        };
+        await tryInfo('bin', '.lb-sheet.bin .lb-ct .lb-cv');
+        await page.evaluate(() => { const s = document.querySelector('.lb-sheet.float'); if (s) s.remove(); });
+        await page.evaluate(() => window.__lab.stageAction('listen')); await sleep(400);
+        const booth = !!(await page.$('.lb-sheet.booth [data-pick]'));
+        await tryInfo('booth', '.lb-sheet.booth .lb-ct .lb-cv');
+        await page.evaluate(() => { const s = document.querySelector('.lb-sheet.float'); if (s) s.remove(); });
+        // 牆上的唱片（真的點舞台上的熱點）
+        const wall = await page.evaluate(() => { const st = window.__lab.stage; const h = (st.hotspots() || []).find(x => /^wall-record:/.test(x.action)); if (!h) return null; const r = st.hotRect(h.id); return r ? { x: r.left + r.width / 2, y: r.top + r.height / 2, id: h.id } : null; });
+        if (wall) { await page.touchscreen.tap(wall.x, wall.y); opened.wall = await page.waitForSelector('#cardInfoMask', { timeout: 2500 }).then(() => true, () => false); if (opened.wall) { await jsClick(page, '#ciClose'); await sleep(250); } }
+        else opened.wall = 'no hotspot';
+        // 老闆：一句
+        await page.evaluate(() => window.__lab.stageAction('talk:owner')); await sleep(200);
+        // 唱片櫃
+        await page.evaluate(() => window.__lab.openPage('shelf')); await sleep(300);
+        await tryInfo('shelf', '.lb-page.shelf .lb-cv');
+        await jsClick(page, '.lb-page [data-a=close]');
+        const ok18 = Object.values(opened).every(v => v === true);
+        if (want(39)) record(39, size, rc.lines === 6 && rowsOk && posterRules && bin && booth, `rule lines ${rc.lines}; example rows ${JSON.stringify(rc.rows)} want ${JSON.stringify(rc.exp)}; poster→rules ${posterRules}; bin ${bin}; booth ${booth}; hotspots ${[...new Set(hs.map(a => a.split(':')[0]))].join(',')}`);
+        if (want(18)) record(18, size, ok18, `shop/shelf covers ${JSON.stringify(opened)}`);
+      } catch (e) { record(39, size, false, 'error ' + e.message); }
+      await ctx.close();
+    }
+
+    // #29 主控台 0 錯誤（這個尺寸開過的所有頁面）
+    if (want(29)) {
+      const all = errsBySize.flatMap(p => p._errors || []);
+      record(29, size, !all.length, all.length ? all.slice(0, 5).join(' | ') : '0 errors');
+    }
+    FIRST = false;
+  }
   await browser.close();
   const fail = results.filter(r => !r.ok);
-  console.log(`\n${results.length - fail.length}/${results.length} passed in ${Math.round((Date.now() - t0) / 1000)} s`);
-  if (fail.length) { console.log('FAILED:', fail.map(f => `#${f.n}[${f.size}]`).join(' ')); process.exitCode = 1; }
-})().catch(e => { console.error(e); process.exit(1); });
+  console.log(`\n${results.length - fail.length}/${results.length} PASS`);
+  if (fail.length) { console.log('FAILED: ' + fail.map(r => `#${r.n}[${r.size}]`).join(' ')); process.exit(1); }
+}
+run().catch(e => { console.error(e); process.exit(1); });

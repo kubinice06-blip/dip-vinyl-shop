@@ -289,6 +289,9 @@
     C.put(hx + 3, hy + 5, 'skin', 1); C.put(hx + 3, hy + 6, 'skin', 3); C.put(hx + 4, hy + 6, 'skin', 1); C.put(hx + 3, hy + 7, 'skin', 1);
     // 額頭亮面、下巴陰影
     C.put(hx + 7, hy + 3, 'skin', 3); C.put(hx + 8, hy + 3, 'skin', 3); C.put(hx + 6, hy + 9, 'skin', 1);
+    var Hs = HAIR[spec.hair];
+    if (Hs && Hs.shine && spec.hat === 'none') { C.put(hx + 5, hy + 1, 'skin', 4); C.put(hx + 6, hy + 1, 'skin', 4); C.put(hx + 4, hy + 2, 'skin', 3); }
+    if (spec.acc && spec.acc.indexOf('earring') >= 0) { C.put(hx + 3, hy + 8, 'gold', 3); }
     drawFace(C, hx, hy, spec, ex || {});
   }
 
@@ -777,9 +780,9 @@
       '........kKkk........',
       '......kkKKkkkk......',
       '.....kKKkkkkkkk.....',
-      '....kkkkkkkkkkkj....',
-      'KkkkkkjjjjjjjjjjD...',
-      '.qqqq...............'
+      '...KkkkkkkkkkkkD....',
+      '.Kkkjjjjjjjjjjj.....',
+      'qqq.................'
     ] },
     { id: 'bucket', label: '漁夫帽', dflt: 'khaki', cut: 2, front: [
       '', '', '', '', '', '', '', '',
@@ -924,12 +927,13 @@
     if (spec.scarfColor && CLOTHCOL[spec.scarfColor]) o.scarfColor = spec.scarfColor;
     if (spec.bagColor && CLOTHCOL[spec.bagColor]) o.bagColor = spec.bagColor;
     if (spec.tieColor && CLOTHCOL[spec.tieColor]) o.tieColor = spec.tieColor;
+    if (spec.hatBandColor && CLOTHCOL[spec.hatBandColor]) o.hatBandColor = spec.hatBandColor;
     if (spec.name) o.name = String(spec.name);
     return o;
   }
 
   // ===================================================================== 材質登記
-  function setupMats(C, spec) {
+  function setupMats(C, spec, opts) {
     C.reg('skin', SKIN[spec.skin].ramp);
     C.reg('eyek', ['#08060a', '#140e12', '#1c1418', '#3a2e34', '#ffffff']);
     C.reg('eyew', ['#8a8aa0', '#c8c8d8', '#f4f4f8', '#ffffff', '#ffffff']);
@@ -955,9 +959,13 @@
     C.reg('tie', cloth(spec.tieColor || 'red'));
     C.reg('glass', anyRamp(spec.glassesColor) || METAL.black);
     C.reg('lens', ['#0a0a12', '#1a1c2a', '#262a3e', '#4a5470', '#9aa8c8']);
+    C.reg('clear', [sk[1], sk[2], mix(sk[2], '#bfe0f0', 0.45), mix(sk[3], '#d8f0fa', 0.55), '#f4fbff']);
     C.reg('vinyl', ['#050506', '#0e0e12', '#18181e', '#34343e', '#6a6a78']);
     C.reg('label', cloth('red'));
     C.reg('paper', cloth('cream'));
+    C.reg('hatb', cloth(spec.hatBandColor || (spec.hatColor === 'black' || spec.hatColor === 'charcoal' ? 'maroon' : 'black')));
+    C.reg('stub', [sk[1], mix(sk[1], hr[1], 0.4), mix(sk[2], hr[1], 0.42), sk[3], sk[4]]);
+    if (opts && opts.labelColor) C.reg('label', autoRamp(ATTR[opts.labelColor] || opts.labelColor));
   }
 
   // ===================================================================== 骨架（正向運動學）
@@ -1066,7 +1074,8 @@
     var part = C.begin('torso');
     var hem = T.hem;
     var pts = torsoPts(sk, M, { hem: hem - (T.apron ? 0 : 0), flare: hem < -3 ? 1 : 0 });
-    poly(C, pts, function (x, y) { return ['top', 2]; });
+    var fillMat = T.apron ? 'top2' : 'top';
+    poly(C, pts, function (x, y) { return [fillMat, 2]; });
     // 陰影：背側一格亮、胸側兩格暗、下襬一列暗
     for (var y = -60; y < 10; y++) {
       var sp = rowSpan(C, part, y); if (sp[0] == null) continue;
@@ -1133,6 +1142,29 @@
       C.put(nx + 1, ny + 2, 'white', 2); C.put(nx + 1, ny + 3, 'white', 2); C.put(nx - 1, ny + 2, 'white', 2); C.put(nx - 1, ny + 3, 'white', 1);
     }
   }
+  function drawApron(C, sk, spec) {
+    var T = TOP[spec.top]; if (!T.apron) return;
+    var M = sk.M, part = C.begin('apron');
+    var topY = Math.floor(sk.S[1]) + 3, knee = Math.round(sk.H[1] + M.thigh * 0.85), tor = C.parts.length - 2;
+    var lastL = null, lastR = null;
+    for (var y = topY; y <= knee; y++) {
+      var sp = null;
+      for (var q = tor; q > 0 && !sp; q--) if (C.parts[q] && C.parts[q].name === 'torso') { var r0 = rowSpan(C, q, y); if (r0[0] != null) sp = r0; }
+      var L, R;
+      if (sp) { L = Math.round(sp[0] + (sp[1] - sp[0] + 1) * (y < topY + 3 ? 0.42 : 0.3)); R = sp[1]; lastL = L; lastR = R; }
+      else { if (lastL == null) continue; L = lastL - ((y - knee) % 2 ? 0 : 0); R = lastR + (y > sk.H[1] ? 1 : 0); }
+      for (var x = L; x <= R; x++) { var t = x === L ? 3 : x >= R - 1 ? 1 : 2; if (y === knee) t = Math.min(t, 1); C.put(x, y, 'top', t); }
+    }
+    // 頸帶、腰帶、口袋
+    var nx = Math.round(sk.S[0] + 1), ny = Math.floor(sk.S[1]);
+    C.put(nx - 1, ny + 1, 'top', 1); C.put(nx - 1, ny + 2, 'top', 1); C.put(nx + 2, ny + 1, 'top', 1); C.put(nx + 2, ny + 2, 'top', 1);
+    var wy = Math.round(sk.H[1] - 4), wsp = null;
+    for (var q2 = tor; q2 > 0 && !wsp; q2--) if (C.parts[q2] && C.parts[q2].name === 'torso') { var r1 = rowSpan(C, q2, wy); if (r1[0] != null) wsp = r1; }
+    if (wsp) { for (var x2 = wsp[0]; x2 < Math.round(wsp[0] + (wsp[1] - wsp[0]) * 0.3); x2++) C.put(x2, wy, 'top', 1); C.put(wsp[0] - 1, wy, 'top', 2); C.put(wsp[0] - 1, wy + 1, 'top', 1); C.put(wsp[0] - 2, wy + 2, 'top', 1); }
+    var px = lastR != null ? lastR - 5 : nx, py = Math.round(sk.H[1] - 2);
+    for (var i = 0; i < 4; i++) C.tone(px + i, py, 0, 'top');
+    C.tone(px, py + 1, 1, 'top'); C.tone(px + 3, py + 1, 1, 'top'); C.tone(px, py + 2, 1, 'top'); C.tone(px + 3, py + 2, 1, 'top');
+  }
   function drawNeck(C, sk, spec) {
     var M = sk.M, T = TOP[spec.top];
     C.begin('neck');
@@ -1145,11 +1177,13 @@
     C.begin('arm' + side);
     var total = M.armU + M.armL;
     var sl = T.sleeve === 'short' ? M.armU * 0.55 : T.sleeve === 'rolled' ? M.armU + M.armL * 0.35 : T.sleeve === 'long' ? total - 0.6 : -1;
-    var sleeveMat = T.apron ? 'top2' : 'top';
+    var sleeveMat = T.apron ? 'top2' : 'top', wrist = has(spec, 'wristband'), watch = has(spec, 'watch');
     function seg(a, b, s0, s1) {
       capsule(C, a[0], a[1], b[0], b[1], w, function (x, y, t, ox, oy, r) {
         var s = s0 + t * (s1 - s0), tone = limbTone(ox, oy, r);
         if (s <= sl) { if (sl - s < 1.0 && T.sleeve !== 'none') return [sleeveMat, T.sleeve === 'rolled' ? 3 : Math.max(0, tone - 1)]; return [sleeveMat, tone]; }
+        if (side === 'N' && wrist && s > total - 1.6) return ['acc', tone];
+        if (side === 'F' && watch && s > total - 1.4) return ['silver', tone];
         return ['skin', tone];
       });
     }
@@ -1181,12 +1215,199 @@
     }
   }
 
+  // ===================================================================== 帽子、眼鏡、鬍子
+  function hatLegend() {
+    return { k: ['hat', 2], K: ['hat', 3], J: ['hat', 4], j: ['hat', 1], q: ['hat', 0], B: ['hatb', 2], b: ['hatb', 1],
+      g: ['gold', 2], G: ['gold', 3], w: ['white', 2], r: ['label', 2] };
+  }
+  function drawHat(C, sk, spec, layer) {
+    var Ht = HAT[spec.hat]; if (!Ht || spec.hat === 'none') return;
+    var rows = layer === 'back' ? Ht.back : Ht.front; if (!rows) return;
+    C.begin(layer === 'back' ? 'hatB' : 'hat');
+    stamp(C, rows, sk.head[0] + (Ht.ox != null ? Ht.ox : -3), sk.head[1] + (Ht.oy != null ? Ht.oy : -10), hatLegend());
+  }
+  function drawGlasses(C, hx, hy, spec, ex) {
+    var g = spec.glasses; if (!g || g === 'none') return;
+    C.begin('glasses', { ink: false });
+    function P(x, y, m, t) { C.put(hx + x, hy + y, m || 'glass', t == null ? 2 : t); }
+    if (g === 'monocle') {
+      [[9, 4], [8, 5], [8, 6], [10, 5], [10, 6], [9, 7]].forEach(function (q) { P(q[0], q[1], 'gold', q[1] === 4 ? 3 : 2); });
+      P(10, 5, 'clear', 4);
+      P(10, 7, 'gold', 1); P(10, 8, 'gold', 2); P(10, 9, 'gold', 1); P(9, 10, 'gold', 2);
+      return;
+    }
+    // 鏡片：眼睛旁邊一格淡藍反光（看得出是玻璃）；鏡框：上緣一條＋外側＋鼻樑，下緣只有方框才有
+    var lensN = [[5, 5], [5, 6]], lensF = [[10, 5], [10, 6]];
+    if (g === 'sunglasses') {
+      [[5, 5], [6, 5], [5, 6], [6, 6], [9, 5], [10, 5], [9, 6], [10, 6]].forEach(function (q) { P(q[0], q[1], 'lens', 2); });
+      P(5, 5, 'lens', 4); P(9, 5, 'lens', 3); P(6, 6, 'lens', 1); P(10, 6, 'lens', 1);
+      [[4, 4], [5, 4], [6, 4], [7, 4], [8, 4], [9, 4], [10, 4], [11, 4], [7, 5], [8, 5], [4, 5], [3, 5]].forEach(function (q) { P(q[0], q[1], 'glass', 2); });
+      return;
+    }
+    lensN.forEach(function (q, i) { P(q[0], q[1], 'clear', i ? 2 : 3); });
+    lensF.forEach(function (q, i) { P(q[0], q[1], 'clear', i ? 2 : 3); });
+    var top = [[5, 4], [6, 4], [9, 4], [10, 4]], side = [[4, 5], [7, 5], [8, 5], [11, 5]], arm = [[3, 5]];
+    if (g === 'square') top = top.concat([[4, 4], [7, 4], [8, 4], [11, 4]]).concat([[4, 6], [11, 6], [5, 7], [6, 7], [9, 7], [10, 7]]);
+    if (g === 'round') top = top.concat([[4, 6], [11, 6], [5, 7], [6, 7], [9, 7], [10, 7]]);
+    if (g === 'browline') { top = [[4, 4], [5, 4], [6, 4], [7, 4], [8, 4], [9, 4], [10, 4], [11, 4], [5, 3], [6, 3], [9, 3], [10, 3]]; side = [[7, 5], [8, 5]]; }
+    top.concat(side).concat(arm).forEach(function (q) { P(q[0], q[1], 'glass', q[1] === 4 ? 2 : 1); });
+    if (g === 'browline') [[5, 7], [6, 7], [9, 7], [10, 7]].forEach(function (q) { P(q[0], q[1], 'silver', 3); });
+  }
+  function drawFacial(C, hx, hy, spec) {
+    var f = spec.facial; if (!f || f === 'none') return;
+    C.begin('facial', { ink: false });
+    function P(x, y, t) { C.put(hx + x, hy + y, 'beard', t == null ? 2 : t); }
+    function S(x, y) { C.put(hx + x, hy + y, 'stub', 2); }
+    var mo = [[7, 7], [8, 7], [9, 7], [10, 7]];
+    if (f === 'stubble') { for (var y = 7; y <= 10; y++) for (var x = 3; x <= 10; x++) if ((x + y) % 2 === 0 && C.matAt(hx + x, hy + y) === 'skin' && !(y === 8 && (x === 8 || x === 9))) S(x, y); return; }
+    if (f === 'moustache') { mo.forEach(function (q, i) { P(q[0], q[1], i === 1 ? 3 : 2); }); P(7, 8, 1); return; }
+    if (f === 'curled') { mo.forEach(function (q, i) { P(q[0], q[1], i === 1 ? 3 : 2); }); P(6, 7, 2); P(5, 6, 2); P(11, 7, 2); P(11, 6, 1); return; }
+    if (f === 'goatee') { P(8, 7, 2); P(9, 7, 2); P(10, 7, 1); P(8, 9, 2); P(9, 9, 2); P(7, 10, 1); P(8, 10, 2); P(9, 10, 2); P(7, 11, 1); P(8, 11, 2); return; }
+    // 落腮鬍／長鬍子
+    var px = [[4, 7], [4, 8], [5, 8], [6, 8], [7, 8], [10, 8], [4, 9], [5, 9], [6, 9], [7, 9], [8, 9], [9, 9], [10, 9],
+      [5, 10], [6, 10], [7, 10], [8, 10], [9, 10], [10, 10], [6, 11], [7, 11], [8, 11], [9, 11]];
+    if (f === 'longbeard') px = px.concat([[6, 12], [7, 12], [8, 12], [9, 12], [6, 13], [7, 13], [8, 13], [7, 14], [8, 14], [7, 15]]);
+    px.forEach(function (q) { var t = 2; if (q[0] === 4 || q[1] >= 11) t = 1; if ((q[0] * 3 + q[1]) % 5 === 0) t = 3; P(q[0], q[1], t); });
+    mo.forEach(function (q, i) { P(q[0], q[1], i === 1 ? 3 : 2); });
+    P(9, 11, 0); if (f === 'longbeard') P(8, 14, 1);
+  }
+
+  // ===================================================================== 配件、手上的唱片
+  function has(spec, a) { return spec.acc.indexOf(a) >= 0; }
+  function drawBag(C, sk, spec) {
+    var bag = has(spec, 'recordbag') ? 'record' : has(spec, 'tote') ? 'tote' : null; if (!bag) return;
+    var H = sk.H, M = sk.M;
+    // 背帶：斜背（遠肩 → 近側腰）；帆布袋：掛在近肩
+    C.begin('strap', { ink: false });
+    var bx = Math.round(H[0] - M.hip / 2 - (bag === 'record' ? 5 : 3)), by = Math.round(H[1] - 5);
+    var bw = bag === 'record' ? 9 : 7, bh = bag === 'record' ? 9 : 8;
+    if (bag === 'record') {
+      var a = sk.armF.sh, b = [bx + bw - 2, by];
+      var n = Math.max(Math.abs(b[0] - a[0]), Math.abs(b[1] - a[1]));
+      for (var i = 0; i <= n; i++) C.put(Math.round(a[0] + (b[0] - a[0]) * i / n), Math.round(a[1] + (b[1] - a[1]) * i / n), 'bag', 0);
+    } else {
+      var sh = sk.armN.sh;
+      for (var y = Math.round(sh[1]); y < by; y++) { C.put(bx + 1, y, 'bag', 1); C.put(bx + 4, y, 'bag', 1); }
+    }
+    C.begin('bag');
+    if (bag === 'record') {
+      // 露出袋口的黑膠（半張）
+      var cx = bx + 4, cy = by;
+      for (var dy = -3; dy <= 0; dy++) for (var dx = -3; dx <= 3; dx++) if (dx * dx + dy * dy <= 11) C.put(cx + dx, cy + dy, 'vinyl', (dx + dy) % 3 === 0 ? 3 : 2);
+      C.put(cx, cy - 1, 'label', 2); C.put(cx - 1, cy - 1, 'label', 3); C.put(cx + 1, cy - 1, 'label', 2);
+    }
+    for (var yy = 0; yy < bh; yy++) for (var xx = 0; xx < bw; xx++) {
+      var t = xx === 0 ? 3 : xx === bw - 1 ? 1 : yy === bh - 1 ? 1 : 2;
+      if (bag === 'tote') C.put(bx + xx, by + yy, 'paper', t); else C.put(bx + xx, by + yy, 'bag', t);
+    }
+    if (bag === 'record') { for (var x2 = 0; x2 < bw; x2++) C.put(bx + x2, by, 'bag', 3); for (var y2 = 2; y2 < 5; y2++) C.put(bx + bw - 1, by + y2, 'bag', 0); C.put(bx + 2, by + 4, 'gold', 3); }
+    else { C.put(bx + 2, by + 3, 'acc', 2); C.put(bx + 3, by + 3, 'acc', 2); C.put(bx + 2, by + 4, 'acc', 1); C.put(bx + 3, by + 4, 'acc', 2); C.put(bx + 4, by + 3, 'acc', 3); C.put(bx + 1, by + 6, 'acc', 1); C.put(bx + 2, by + 6, 'acc', 1); C.put(bx + 3, by + 6, 'acc', 1); C.put(bx + 4, by + 6, 'acc', 1); }
+  }
+  function drawNeckAcc(C, sk, spec) {
+    var nx = Math.round(sk.S[0] + 1), ny = Math.floor(sk.S[1]);
+    if (has(spec, 'necklace')) {
+      C.begin('necklace', { ink: false });
+      [[-2, 0], [-2, 1], [-1, 2], [0, 3], [1, 2], [1, 1]].forEach(function (q, i) { C.put(nx + q[0], ny + q[1], 'gold', i % 2 ? 2 : 3); });
+      C.put(nx, ny + 4, 'gold', 4);
+    }
+    if (has(spec, 'badge')) { C.begin('badge', { ink: false }); var bx = nx - 4, by = ny + 5; C.put(bx, by, 'acc', 3); C.put(bx + 1, by, 'acc', 2); C.put(bx, by + 1, 'acc', 2); C.put(bx + 1, by + 1, 'acc', 1); }
+  }
+  function drawScarf(C, sk, spec) {
+    if (!has(spec, 'scarf')) return;
+    C.begin('scarf');
+    var nx = Math.round(sk.S[0] + 1), ny = Math.floor(sk.S[1]);
+    for (var y = ny - 3; y <= ny + 1; y++) for (var x = nx - 4; x <= nx + 3; x++) {
+      var edge = (y === ny - 3 && (x === nx - 4 || x === nx + 3));
+      if (edge) continue;
+      C.put(x, y, 'scarf', (y - ny) % 2 === 0 ? 1 : (x === nx - 4 ? 3 : 2));
+    }
+    // 垂在胸前的一截＋流蘇
+    var tx = nx + 1;
+    for (var t = 0; t < 8; t++) { C.put(tx, ny + 1 + t, 'scarf', t % 3 === 2 ? 1 : 3); C.put(tx + 1, ny + 1 + t, 'scarf', t % 3 === 2 ? 0 : 2); }
+    C.put(tx, ny + 9, 'scarf', 2); C.put(tx + 1, ny + 10, 'scarf', 1);
+  }
+  // 唱片／封套：labelColor 可以是 '#rrggbb' 或屬性 c/o/h（經冷硬）
+  var ATTR = { c: '#1f5fae', o: '#6a3fa0', h: '#c11628', g: '#c8961e' };
+  function drawRecord(C, cx, cy, r, edge) {
+    for (var dy = -r; dy <= r; dy++) for (var dx = -r; dx <= r; dx++) {
+      var d2 = dx * dx + dy * dy; if (d2 > r * r + r * 0.6) continue;
+      var d = Math.sqrt(d2), t = 2;
+      if (d < 1.2) t = -1; else if (d < 2.2) t = -2;
+      else if (Math.abs(d - (r - 1.2)) < 0.5 && dx < 0 && dy < 0) t = 4; else if ((Math.round(d * 2)) % 3 === 0) t = 1; else if (dx + dy < -r) t = 3;
+      if (t === -1) C.put(cx + dx, cy + dy, 'label', dx === 0 && dy === 0 ? 0 : 2); else if (t === -2) C.put(cx + dx, cy + dy, 'label', 3); else C.put(cx + dx, cy + dy, 'vinyl', t);
+    }
+    C.put(cx, cy, 'vinyl', 0);
+  }
+  function drawSleeve(C, x, y, w, h) {
+    for (var j = 0; j < h; j++) for (var i = 0; i < w; i++) {
+      var t = 2; if (i === 0 || j === 0) t = 3; if (i === w - 1 || j === h - 1) t = 1;
+      var art = (i > 1 && i < w - 2 && j > 1 && j < h - 2);
+      if (art && (i + j) % 5 === 0) C.put(x + i, y + j, 'label', 3); else if (art && j > h / 2) C.put(x + i, y + j, 'label', 1); else C.put(x + i, y + j, art ? 'label' : 'paper', art ? 2 : t);
+    }
+  }
+  function drawHeld(C, sk, spec, P, opts) {
+    var what = opts.held != null ? opts.held : P.held; if (!what || what === 'none') return;
+    C.begin('held');
+    var hN = sk.armN.hand, hF = sk.armF.hand;
+    if (what === 'sleeve') {   // 兩手捧著封套，黑膠從右邊露一截
+      var cx = Math.round((hN[0] + hF[0]) / 2), cy = Math.round((hN[1] + hF[1]) / 2) - 1;
+      drawRecord(C, cx + 3, cy, 4); drawSleeve(C, cx - 5, cy - 4, 9, 9);
+      C.anch.held = [cx, cy];
+    } else if (what === 'record' || what === 'big') {
+      var h = P.heldAt === 'F' ? hF : hN, rr = what === 'big' ? 6 : 4;
+      var hx = Math.round(h[0] + (P.heldOff ? P.heldOff[0] : 0)), hy = Math.round(h[1] + (P.heldOff ? P.heldOff[1] : 0));
+      drawRecord(C, hx, hy, rr);
+      C.anch.held = [hx, hy];
+    }
+  }
+
   // ===================================================================== 姿勢
   // 角度：0＝朝下，正值＝往前（朝面向）。leg:[大腿角, 膝彎(小腿相對)], arm:[上臂角, 肘彎(前臂相對)]
   var POSE = {
     idle: [
-      { legN: [0, 0], legF: [0, 0], armN: [-4, 10], armF: [6, 8] },
-      { legN: [0, 0], legF: [0, 0], armN: [-4, 12], armF: [6, 10], breath: 1 }
+      { legN: [-3, 2], legF: [4, -2], armN: [-4, 10], armF: [6, 8] },
+      { legN: [-3, 2], legF: [4, -2], armN: [-4, 12], armF: [6, 10], breath: 1 }
+    ],
+    walk: [
+      { lean: 3, legN: [24, -4], legF: [-18, -12], footF: 'toe', armN: [-24, 8], armF: [24, 20] },
+      { lean: 2, legN: [2, 0], legF: [12, -52], footF: 'air', armN: [-6, 10], armF: [8, 12] },
+      { lean: 3, legN: [-18, -12], footN: 'toe', legF: [24, -4], armN: [24, 20], armF: [-24, 8] },
+      { lean: 2, legN: [12, -52], footN: 'air', legF: [2, 0], armN: [8, 12], armF: [-6, 10] }
+    ],
+    walkFront: [
+      { legN: [-2, 0], legF: [3, 0], armN: [-12, 10], armF: [14, 12] },
+      { legN: [16, -30], footN: 'air', legF: [3, 0], armN: [-4, 10], armF: [6, 10] },
+      { legN: [-2, 0], legF: [3, 0], armN: [8, 14], armF: [-8, 10] },
+      { legN: [-2, 0], legF: [20, -34], footF: 'air', armN: [-4, 10], armF: [6, 10] }
+    ],
+    throw: [
+      { lean: -10, legN: [-14, 6], legF: [18, -6], armN: [-150, -40], armF: [40, 20], expr: 'effort', held: 'record', heldAt: 'N', heldOff: [0, -1] },
+      { lean: 12, legN: [-24, -10], footN: 'toe', legF: [22, -10], armN: [92, -6], armF: [-40, 30], expr: 'effort' },
+      { lean: 16, legN: [-20, -14], footN: 'toe', legF: [20, -8], armN: [40, 20], armF: [-30, 20], expr: 'cheer' }
+    ],
+    hold: [{ legN: [-3, 2], legF: [4, -2], armN: [24, 83], armF: [20, 100], armFfront: true, held: 'sleeve', heldFirst: true }],
+    shield: [{ lean: -6, legN: [-8, 4], legF: [10, -2], armN: [60, 70], armF: [55, 80], armFfront: true, held: 'sleeve', heldFirst: true, expr: 'down' }],
+    show: [{ legN: [-3, 2], legF: [4, -2], armN: [50, 60], armF: [6, 8], held: 'record', heldAt: 'N', heldOff: [1, -1] }],
+    hurt: [
+      { lean: -14, dx: -1, head: [-1, 0], legN: [-8, 10], legF: [12, 4], armN: [-50, 40], armF: [60, -30], expr: 'hurt' },
+      { lean: -8, legN: [-6, 8], legF: [10, 2], armN: [-30, 30], armF: [40, -10], expr: 'hurt' }
+    ],
+    ko: [{ legN: [-2, 0], legF: [3, 0], armN: [-24, 6], armF: [26, -4], expr: 'ko', rotate: true }],
+    dig: [
+      { lean: 48, dx: -3, legN: [-8, 12], legF: [-2, 8], armN: [40, 8], armF: [52, 4], expr: 'down' },
+      { lean: 48, dx: -3, legN: [-8, 12], legF: [-2, 8], armN: [58, 30], armF: [50, 4], expr: 'down', held: 'record', heldAt: 'N', heldOff: [1, -2] }
+    ],
+    sit: [{ ground: false, dy: 9, lean: -3, legN: [80, -82], legF: [84, -86], armN: [32, 38], armF: [38, 36] }],
+    cheer: [
+      { legN: [-4, 0], legF: [6, 0], armN: [-165, 20], armF: [165, -20], expr: 'cheer' },
+      { ground: false, dy: -4, legN: [10, -30], footN: 'air', legF: [16, -34], footF: 'air', armN: [-172, 10], armF: [172, -10], expr: 'cheer' }
+    ],
+    shrug: [{ legN: [-3, 2], legF: [4, -2], armN: [-8, -80], armF: [10, 75], expr: 'shrug' }],
+    point: [{ legN: [-3, 2], legF: [6, -2], armN: [130, 10], armF: [6, 8], expr: 'cheer' }],
+    up: [{ legN: [-5, 2], legF: [6, -2], armN: [172, 4], armF: [-172, -4], armFfront: true, expr: 'effort', held: 'big', heldAt: 'N', heldOff: [1, -5] }],
+    talk: [
+      { legN: [-3, 2], legF: [4, -2], armN: [-4, 10], armF: [30, 50], expr: 'talk' },
+      { legN: [-3, 2], legF: [4, -2], armN: [-4, 10], armF: [24, 44] }
     ]
   };
   var POSE_FRAMES = {}; Object.keys(POSE).forEach(function (k) { POSE_FRAMES[k] = POSE[k].length; });
@@ -1195,28 +1416,265 @@
   function build(spec, pose, frame, opts) {
     spec = normalize(spec); opts = opts || {};
     var frames = POSE[pose] || POSE.idle; var P = frames[((frame | 0) % frames.length + frames.length) % frames.length];
-    var C = new Comp(); setupMats(C, spec);
+    var C = new Comp(); setupMats(C, spec, opts);
     var sk = skeleton(spec, P), ex = extend(EXPR[P.expr] || {}, opts.expr ? (EXPR[opts.expr] || {}) : {});
+    var Ht = HAT[spec.hat]; sk.hatCut = Ht && Ht.cut != null && spec.hat !== 'none' ? Ht.cut : null;
+    var held = opts.held != null ? opts.held : P.held;
+    drawHat(C, sk, spec, 'back');
     drawHair(C, sk, spec, 'back');
     if (!P.armFfront) drawArm(C, sk, spec, 'F');
     drawLeg(C, sk, spec, 'F'); drawShoe(C, sk, spec, 'F');
     drawLeg(C, sk, spec, 'N'); drawShoe(C, sk, spec, 'N');
     drawPelvis(C, sk, spec);
     drawTorso(C, sk, spec);
+    drawApron(C, sk, spec);
+    drawNeckAcc(C, sk, spec);
     drawNeck(C, sk, spec);
+    drawScarf(C, sk, spec);
     drawHead(C, sk.head[0], sk.head[1], spec, ex);
+    drawFacial(C, sk.head[0], sk.head[1], spec);
     drawHair(C, sk, spec, 'front');
+    drawGlasses(C, sk.head[0], sk.head[1], spec, ex);
+    drawHat(C, sk, spec, 'front');
+    drawBag(C, sk, spec);
+    if (P.heldFirst) drawHeld(C, sk, spec, P, extend(opts, { held: held }));
     if (P.armFfront) drawArm(C, sk, spec, 'F');
     drawArm(C, sk, spec, 'N');
+    if (!P.heldFirst) drawHeld(C, sk, spec, P, extend(opts, { held: held }));
     C.anch.foot = [0, 0];
-    C.anch.head = [sk.head[0] + 6, sk.head[1] - 1];
-    C.anch.chest = [Math.round(sk.S[0]), Math.round(sk.S[1] + 4)];
-    return finish(C, opts);
+    var topY = sk.head[1] - 1; for (var y = sk.head[1] - 14; y < sk.head[1] + 4; y++) { var any = false; for (var x = sk.head[0] - 4; x < sk.head[0] + 16; x++) if (C.get(x, y)) { any = true; break; } if (any) { topY = y; break; } }
+    C.anch.head = [sk.head[0] + 6, topY];          // 頭頂（含帽子、頭髮）：名牌、泡泡貼這裡
+    C.anch.face = [sk.head[0] + 8, sk.head[1] + 5];
+    C.anch.chest = [Math.round(sk.S[0] + 1), Math.round(sk.S[1] + 5)];   // 被打中的點
+    C.anch.hip = [Math.round(sk.H[0]), Math.round(sk.H[1])];
+    if (pose === 'sit') C.anch.seat = [Math.round(sk.H[0]), Math.round(sk.H[1] + 2)];
+    var out = finish(C, opts);
+    if (P.rotate) out = rotateCCW(out);
+    return out;
+  }
+  // 倒地：整張逆時針轉 90°（頭到左邊、臉朝上），錨點改成躺平後的底邊中點
+  function rotateCCW(f) {
+    var W = f.w, H = f.h, d = new Uint8ClampedArray(W * H * 4);
+    for (var y = 0; y < H; y++) for (var x = 0; x < W; x++) { var s = (y * W + x) * 4, nx = y, ny = W - 1 - x, t = (ny * H + nx) * 4; d[t] = f.data[s]; d[t + 1] = f.data[s + 1]; d[t + 2] = f.data[s + 2]; d[t + 3] = f.data[s + 3]; }
+    var nw = H, nh = W, ax = Math.floor(nw / 2), ay = nh, an = {};
+    Object.keys(f.anchors).forEach(function (k) { var a = f.anchors[k], ox = a[0] + f.ax, oy = a[1] + f.ay, nx = oy, ny = W - 1 - ox; an[k] = [nx - ax, ny - ay]; });
+    an.foot = [0, 0];
+    return { w: nw, h: nh, ax: ax, ay: ay, data: d, anchors: an };
   }
 
+
+  // ===================================================================== 客人與老闆（保留舊 16 格 SPR 的辨識點，細節加倍）
+  var NPC = {
+    owner: { name: '老闆', skin: 'light', build: 'sturdy', hair: 'sidepart', hairColor: 'grey', brows: 'thick', eyes: 'dot', mouth: 'smile',
+      glasses: 'square', glassesColor: 'black', facial: 'beard', facialColor: 'grey', top: 'apron', topColor: 'green', top2Color: 'white',
+      bottom: 'chinos', bottomColor: 'grey', shoes: 'boots', shoesColor: 'brown', acc: ['watch'] },
+    man: { name: '男子', skin: 'peach', hair: 'short', hairColor: 'ginger', brows: 'raised', mouth: 'smirk', hat: 'headphones', hatColor: 'gold',
+      top: 'tee', topColor: 'green', bottom: 'jeans', shoes: 'sneakers', shoesColor: 'white', acc: ['recordbag'], bagColor: 'charcoal' },
+    copycat: { name: '那張我有', skin: 'porcelain', hair: 'bob', hairColor: 'brown', glasses: 'round', glassesColor: 'brown', cheeks: 'blush', mouth: 'smile',
+      hat: 'beanie', hatColor: 'green', top: 'cardigan', topColor: 'lightgrey', top2Color: 'cream', bottom: 'blackjeans', shoes: 'hightops', shoesColor: 'cream',
+      acc: ['scarf', 'tote'], scarfColor: 'red', accColor: 'red' },
+    already: { name: '我早就聽過', skin: 'tan', hair: 'short', hairColor: 'black', eyes: 'sleepy', mouth: 'smirk', hat: 'cap', hatColor: 'blue',
+      top: 'bandtee', topColor: 'white', top2Color: 'black', bottom: 'blackjeans', shoes: 'sneakers', shoesColor: 'white', acc: ['wristband'], accColor: 'blue' },
+    needle: { name: '針壓強迫症', skin: 'light', build: 'slim', hair: 'sidepart', hairColor: 'black', eyes: 'narrow', brows: 'raised', mouth: 'flat', facial: 'moustache',
+      hat: 'bowler', hatColor: 'orange', top: 'suit', topColor: 'purple', top2Color: 'white', tieColor: 'black', bottom: 'slacks', bottomColor: 'black',
+      shoes: 'loafers', shoesColor: 'black', acc: ['watch'] },
+    skip: { name: '跳針王', skin: 'tan', build: 'sturdy', height: 'short', hair: 'bald', hairColor: 'grey', facial: 'beard', facialColor: 'grey', brows: 'thick', mouth: 'grin',
+      top: 'apron', topColor: 'mustard', top2Color: 'white', bottom: 'chinos', bottomColor: 'grey', shoes: 'boots', shoesColor: 'brown' },
+    broke: { name: '月底吃土', skin: 'light', hair: 'short', hairColor: 'espresso', eyes: 'sleepy', brows: 'worried', mouth: 'frown', hat: 'capback', hatColor: 'brown',
+      top: 'hoodie', topColor: 'red', bottom: 'joggers', bottomColor: 'grey', shoes: 'sneakers', shoesColor: 'lightgrey', accColor: 'grey' },
+    buyer: { name: '剁手黨', skin: 'tan', build: 'sturdy', hair: 'short', hairColor: 'black', eyes: 'happy', mouth: 'grin', hat: 'fedora', hatColor: 'black',
+      top: 'shirt', topColor: 'mustard', bottom: 'blackjeans', shoes: 'loafers', shoesColor: 'brown', acc: ['recordbag', 'necklace', 'watch'], bagColor: 'red' },
+    label: { name: '冷門仙人', skin: 'porcelain', build: 'slim', height: 'tall', hair: 'long', hairColor: 'black', eyes: 'narrow', brows: 'soft', mouth: 'flat',
+      top: 'coat', topColor: 'black', top2Color: 'charcoal', bottom: 'blackjeans', shoes: 'boots', shoesColor: 'black', acc: ['earring', 'necklace'] },
+    critic: { name: '名盤守門員', skin: 'peach', hair: 'short', hairColor: 'grey', glasses: 'round', glassesColor: 'black', facial: 'goatee', facialColor: 'grey',
+      brows: 'raised', mouth: 'flat', hat: 'beret', hatColor: 'purple', top: 'turtleneck', topColor: 'lightgrey', bottom: 'slacks', bottomColor: 'black',
+      shoes: 'loafers', shoesColor: 'brown', acc: ['badge'], accColor: 'purple' },
+    boss: { name: '傳說藏家', skin: 'light', height: 'tall', hair: 'short', hairColor: 'white', eyes: 'narrow', brows: 'thick', mouth: 'smirk', glasses: 'monocle',
+      facial: 'curled', facialColor: 'white', hat: 'tophat', hatColor: 'black', hatBandColor: 'maroon', top: 'suit', topColor: 'black', top2Color: 'white', tieColor: 'red',
+      bottom: 'slacks', bottomColor: 'black', shoes: 'loafers', shoesColor: 'black', acc: ['watch'] },
+    // 舊流派預設＋品味之神（LAB_SPR 的其他鍵）
+    guard: { name: '守舊派', hair: 'sidepart', hairColor: 'black', top: 'cardigan', topColor: 'blue', top2Color: 'white', bottom: 'slacks', bottomColor: 'black', shoes: 'loafers' },
+    digger: { name: '挖掘派', hair: 'short', hairColor: 'brown', hat: 'capback', hatColor: 'green', top: 'hoodie', topColor: 'green', bottom: 'cargo', bottomColor: 'grey', shoes: 'sneakers', acc: ['recordbag'] },
+    heretic: { name: '異端派', hair: 'spiky', hairColor: 'black', top: 'leather', topColor: 'red', top2Color: 'black', bottom: 'blackjeans', shoes: 'boots', shoesColor: 'black', acc: ['wristband'], accColor: 'black' },
+    god: { name: '品味之神', skin: 'light', height: 'tall', hair: 'long', hairColor: 'platinum', facial: 'longbeard', facialColor: 'platinum', hat: 'crown', hatColor: 'gold',
+      top: 'coat', topColor: 'purple', top2Color: 'gold', bottom: 'slacks', bottomColor: 'purple', shoes: 'loafers', shoesColor: 'gold' }
+  };
+  var SPR_KEY = { e0: 'man', e1: 'copycat', e2: 'already', e3: 'critic', e4: 'skip', e5: 'label', e6: 'needle', e7: 'god', boss: 'boss', owner: 'owner', guard: 'guard', digger: 'digger', heretic: 'heretic' };
+  function npc(id) { var k = NPC[id] ? id : SPR_KEY[id]; if (!k || !NPC[k]) return null; var o = JSON.parse(JSON.stringify(NPC[k])); o.id = k; return o; }
+
+  // ===================================================================== 舊捏角色 → 新零件（dip-character.js：head／hair／shirt／pants／skin）
+  var OLD_COLOR = { k: 'black', g: 'mustard', r: 'red', b: 'blue', w: 'white', e: 'lightgrey', d: 'grey', n: 'green', p: 'purple', o: 'orange', y: 'yellow', s: 'camel', c: 'teal', t: 'camel', u: 'brown', v: 'cream', m: 'pink' };
+  var OLD_HAIR = { k: 'black', d: 'grey', o: 'ginger', y: 'blonde', r: 'red', b: 'blue', n: 'green', p: 'purple', c: 'teal', m: 'pink', w: 'white', u: 'brown', t: 'brown', s: 'blonde', g: 'blonde', e: 'platinum', v: 'platinum' };
+  var OLD_SKIN = { v: 'porcelain', s: 'light', t: 'tan', u: 'brown' };
+  var OLD_PANTS = { k: ['blackjeans', 'black'], d: ['chinos', 'grey'], b: ['jeans', 'denim'], n: ['cargo', 'olive'], p: ['chinos', 'purple'], o: ['chinos', 'orange'], e: ['chinos', 'lightgrey'], w: ['chinos', 'cream'] };
+  var OLD_HEAD = {
+    neat: { hair: 'sidepart' }, bob: { hair: 'bob' }, spike: { hair: 'spiky' }, long: { hair: 'long' },
+    cap: { hair: 'short', hat: 'capback', hatFromHair: true }, ballcap: { hair: 'short', hat: 'cap', hatFromHair: true },
+    beanie: { hair: 'short', hat: 'beanie', hatFromHair: true }, beret: { hair: 'short', hat: 'beret', hatFromHair: true, glasses: 'round' },
+    fedora: { hair: 'short', hat: 'fedora', hatFromHair: true }, phones: { hair: 'short', hat: 'headphones', hatColor: 'gold' }
+  };
+  function fromDipChar(av) {
+    av = av || {}; var h = OLD_HEAD[av.head] || OLD_HEAD.neat, hairKey = typeof av.hair === 'string' ? av.hair : 'k';
+    var o = { skin: OLD_SKIN[av.skin] || 'light', hair: h.hair, hairColor: 'black', top: 'tee', topColor: OLD_COLOR[av.shirt] || 'blue',
+      shoes: 'sneakers', shoesColor: 'white' };
+    if (h.hatFromHair) { o.hat = h.hat; o.hatColor = OLD_COLOR[hairKey] || 'black'; o.hairColor = 'black'; if (h.hat === 'beanie' || h.hat === 'beret') o.hairColor = 'espresso'; }
+    else { o.hairColor = OLD_HAIR[hairKey] || 'black'; if (h.hat) { o.hat = h.hat; o.hatColor = h.hatColor; } }
+    if (h.glasses) { o.glasses = h.glasses; }
+    var pt = OLD_PANTS[av.pants] || OLD_PANTS.k; o.bottom = pt[0]; o.bottomColor = pt[1];
+    if (o.topColor === o.bottomColor && o.top === 'tee') o.top = 'bandtee';
+    return normalize(o);
+  }
+
+  // ===================================================================== 隨機路人（同一個 seed 永遠同一個人）
+  function rng(seed) {
+    var a = 0; seed = String(seed == null ? 0 : seed); for (var i = 0; i < seed.length; i++) a = (Math.imul(a, 31) + seed.charCodeAt(i)) | 0;
+    return function () { a |= 0; a = a + 0x6D2B79F5 | 0; var t = Math.imul(a ^ a >>> 15, 1 | a); t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t; return ((t ^ t >>> 14) >>> 0) / 4294967296; };
+  }
+  function random(seed, o) {
+    var R = rng(seed), base = (o && o.base) || {};
+    function pk(arr) { return arr[Math.floor(R() * arr.length)]; }
+    function wpk(pairs) { var tot = 0, i; for (i = 0; i < pairs.length; i++) tot += pairs[i][1]; var r = R() * tot; for (i = 0; i < pairs.length; i++) { r -= pairs[i][1]; if (r < 0) return pairs[i][0]; } return pairs[0][0]; }
+    var sp = {};
+    sp.skin = pk(['porcelain', 'light', 'light', 'peach', 'peach', 'tan', 'tan', 'olive', 'brown', 'deep']);
+    sp.build = wpk([['slim', 3], ['regular', 5], ['sturdy', 2]]);
+    sp.height = wpk([['short', 2], ['mid', 5], ['tall', 2]]);
+    sp.hair = wpk([['short', 4], ['buzz', 2], ['sidepart', 3], ['bangs', 2], ['spiky', 1], ['curly', 2], ['bob', 3], ['long', 3], ['longbangs', 2], ['wavy', 2], ['afro', 1], ['ponytail', 2], ['bun', 2], ['mohawk', 1], ['mullet', 1], ['bald', 1], ['horseshoe', 1]]);
+    sp.hairColor = wpk([['black', 7], ['espresso', 5], ['brown', 4], ['auburn', 1], ['ginger', 1], ['blonde', 1], ['platinum', 1], ['grey', 1], ['white', 0.5], ['blue', 0.6], ['pink', 0.6], ['green', 0.4], ['purple', 0.4], ['teal', 0.4], ['red', 0.4]]);
+    sp.eyes = wpk([['dot', 6], ['round', 2], ['sleepy', 2], ['happy', 1], ['wide', 1], ['lash', 1.5], ['narrow', 1.5]]);
+    sp.brows = wpk([['soft', 5], ['thick', 2], ['raised', 1], ['worried', 1], ['angry', 0.5]]);
+    sp.mouth = wpk([['neutral', 4], ['smile', 4], ['smirk', 1.5], ['flat', 1.5], ['grin', 1], ['frown', 0.5]]);
+    sp.glasses = wpk([['none', 12], ['round', 2], ['square', 2], ['sunglasses', 1], ['browline', 1]]);
+    sp.glassesColor = pk(['black', 'black', 'brown', 'gold', 'silver']);
+    sp.facial = R() < 0.22 ? pk(['stubble', 'stubble', 'moustache', 'beard', 'goatee']) : 'none';
+    sp.cheeks = wpk([['none', 8], ['blush', 1.5], ['freckles', 1.2], ['both', 0.5]]);
+    sp.hat = R() < 0.3 ? pk(['beanie', 'cap', 'capback', 'bucket', 'fedora', 'beret', 'headphones', 'bandana', 'bowler']) : 'none';
+    var tops = ['tee', 'tee', 'bandtee', 'bandtee', 'stripe', 'hoodie', 'hoodie', 'flannel', 'denim', 'leather', 'turtleneck', 'cardigan', 'shirt', 'suit', 'coat', 'tank'];
+    sp.top = pk(tops);
+    var warm = ['red', 'maroon', 'orange', 'mustard', 'yellow', 'camel', 'brown', 'pink', 'magenta'], cool = ['blue', 'navy', 'sky', 'teal', 'mint', 'green', 'forest', 'olive', 'purple', 'lavender'], neut = ['white', 'cream', 'lightgrey', 'grey', 'charcoal', 'black'];
+    var pal = R() < 0.4 ? neut : R() < 0.5 ? warm : cool;
+    sp.topColor = TOP[sp.top].dflt && R() < 0.5 ? TOP[sp.top].dflt : pk(pal);
+    sp.top2Color = pk(neut.concat([sp.topColor === 'white' ? 'black' : 'white']));
+    sp.bottom = wpk([['jeans', 5], ['blackjeans', 4], ['chinos', 3], ['slacks', 1.5], ['shorts', 1.5], ['skirt', 1.5], ['cargo', 1.5], ['joggers', 1]]);
+    sp.bottomColor = R() < 0.65 ? BOTTOM[sp.bottom].dflt : pk(['black', 'charcoal', 'grey', 'khaki', 'olive', 'navy', 'brown', 'denim', 'lightdenim', 'cream', 'maroon']);
+    if (sp.bottomColor === sp.topColor) sp.bottomColor = BOTTOM[sp.bottom].dflt;
+    sp.shoes = wpk([['sneakers', 5], ['hightops', 3], ['boots', 2], ['loafers', 2], ['sandals', 0.6]]);
+    sp.shoesColor = R() < 0.6 ? SHOE[sp.shoes].dflt : pk(['white', 'black', 'red', 'navy', 'cream', 'brown', 'green', 'yellow']);
+    sp.hatColor = pk(neut.concat(warm, cool));
+    sp.accColor = pk(warm.concat(cool));
+    sp.scarfColor = pk(warm.concat(cool, neut));
+    sp.bagColor = pk(['camel', 'brown', 'black', 'olive', 'navy', 'maroon', 'cream']);
+    var acc = [], n = wpk([[0, 4], [1, 4], [2, 2]]);
+    var pool = ['recordbag', 'recordbag', 'tote', 'necklace', 'scarf', 'wristband', 'watch', 'badge', 'earring'];
+    while (acc.length < n) { var a = pk(pool); if (acc.indexOf(a) < 0 && !(a === 'tote' && acc.indexOf('recordbag') >= 0) && !(a === 'recordbag' && acc.indexOf('tote') >= 0)) acc.push(a); }
+    sp.acc = acc;
+    Object.keys(base).forEach(function (k) { sp[k] = base[k]; });
+    return normalize(sp);
+  }
+
+  // ===================================================================== 目錄（捏人介面用；label 繁中）
+  function cat(list) { return list.map(function (x) { return { id: x.id, label: x.label }; }); }
+  var PARTS = {
+    skin: cat(SKINS), build: cat(BUILDS), height: cat(HEIGHTS),
+    hair: cat(HAIRS), hairColor: cat(HAIRC), eyes: cat(EYES), brows: cat(BROWS), mouth: cat(MOUTHS),
+    glasses: cat(GLASSES), facial: cat(FACIALS), cheeks: cat(CHEEKS), hat: cat(HATS),
+    top: cat(TOPS), bottom: cat(BOTTOMS), shoes: cat(SHOES), acc: cat(ACCS), color: cat(CLOTH),
+    glassesColor: [{ id: 'black', label: '黑框' }, { id: 'brown', label: '玳瑁' }, { id: 'gold', label: '金框' }, { id: 'silver', label: '銀框' }, { id: 'red', label: '紅框' }]
+  };
+  // 捏人欄位（分頁、順序、色票來源）
+  var SLOTS = [
+    { tab: 'body', label: '身形', fields: [{ key: 'skin', label: '膚色', list: 'skin', swatch: 'skin' }, { key: 'build', label: '體型', list: 'build' }, { key: 'height', label: '身高', list: 'height' }] },
+    { tab: 'face', label: '臉', fields: [{ key: 'eyes', label: '眼睛', list: 'eyes' }, { key: 'brows', label: '眉毛', list: 'brows' }, { key: 'mouth', label: '嘴巴', list: 'mouth' },
+      { key: 'cheeks', label: '臉頰', list: 'cheeks' }, { key: 'glasses', label: '眼鏡', list: 'glasses' }, { key: 'glassesColor', label: '鏡框色', list: 'glassesColor', swatch: 'any' },
+      { key: 'facial', label: '鬍子', list: 'facial' }] },
+    { tab: 'hair', label: '頭髮', fields: [{ key: 'hair', label: '髮型', list: 'hair' }, { key: 'hairColor', label: '髮色', list: 'hairColor', swatch: 'hair' }] },
+    { tab: 'hat', label: '帽子', fields: [{ key: 'hat', label: '帽子', list: 'hat' }, { key: 'hatColor', label: '帽色', list: 'color', swatch: 'cloth' }] },
+    { tab: 'top', label: '上衣', fields: [{ key: 'top', label: '款式', list: 'top' }, { key: 'topColor', label: '主色', list: 'color', swatch: 'cloth' }, { key: 'top2Color', label: '內搭／配色', list: 'color', swatch: 'cloth' }] },
+    { tab: 'bottom', label: '褲裙', fields: [{ key: 'bottom', label: '款式', list: 'bottom' }, { key: 'bottomColor', label: '顏色', list: 'color', swatch: 'cloth' }] },
+    { tab: 'shoes', label: '鞋', fields: [{ key: 'shoes', label: '款式', list: 'shoes' }, { key: 'shoesColor', label: '顏色', list: 'color', swatch: 'cloth' }] },
+    { tab: 'acc', label: '配件', fields: [{ key: 'acc', label: '配件（可複選）', list: 'acc', multi: true }, { key: 'accColor', label: '配件色', list: 'color', swatch: 'cloth' },
+      { key: 'scarfColor', label: '圍巾色', list: 'color', swatch: 'cloth' }, { key: 'bagColor', label: '袋子色', list: 'color', swatch: 'cloth' }] }
+  ];
+  function swatch(kind, id) { var r = kind === 'skin' ? (SKIN[id] && SKIN[id].ramp) : kind === 'hair' ? (HAIRCOL[id] && HAIRCOL[id].ramp) : anyRamp(id); return r ? r[2] : '#ff00ff'; }
+
+  // ===================================================================== 輸出：快取、canvas、繪製
+  var CACHE = {}, CACHE_N = 0, CACHE_MAX = 600;
+  function keyOf(spec, pose, frame, opts) { return JSON.stringify([normalize(spec), pose, frame | 0, opts && opts.held, opts && opts.labelColor, opts && opts.expr, opts && opts.outline === false]); }
+  function composeCached(spec, pose, frame, opts) {
+    var k = keyOf(spec, pose, frame, opts), hit = CACHE[k];
+    if (hit) return hit;
+    if (CACHE_N > CACHE_MAX) { CACHE = {}; CACHE_N = 0; }
+    hit = CACHE[k] = build(spec, pose, frame, opts); CACHE_N++;
+    return hit;
+  }
+  function hasDOM() { return typeof document !== 'undefined' && document.createElement; }
+  function frameCanvas(f) {
+    if (f._cv) return f._cv;
+    if (!hasDOM()) return null;
+    var cv = document.createElement('canvas'); cv.width = f.w; cv.height = f.h;
+    var cx = cv.getContext('2d'), im = cx.createImageData(f.w, f.h); im.data.set(f.data); cx.putImageData(im, 0, 0);
+    cv.ax = f.ax; cv.ay = f.ay; cv.anchors = f.anchors;
+    f._cv = cv; return cv;
+  }
+  function toCanvas(spec, pose, frame, opts) { return frameCanvas(composeCached(spec, pose || 'idle', frame || 0, opts)); }
+  function toDataURL(spec, pose, frame, opts) {
+    opts = opts || {}; var f = composeCached(spec, pose || 'idle', frame || 0, opts), k = Math.max(1, opts.scale | 0 || 1);
+    if (!hasDOM()) return null;
+    var cv = document.createElement('canvas'); cv.width = f.w * k; cv.height = f.h * k;
+    var cx = cv.getContext('2d'); cx.imageSmoothingEnabled = false;
+    if (opts.flip) { cx.translate(cv.width, 0); cx.scale(-1, 1); }
+    cx.drawImage(frameCanvas(f), 0, 0, f.w * k, f.h * k);
+    return cv.toDataURL('image/png');
+  }
+  function flipA(a, flip, k) { return [(flip ? -a[0] : a[0]) * k, a[1] * k]; }
+  function anchor(spec, pose, frame, name, o) { o = o || {}; var f = composeCached(spec, pose || 'idle', frame || 0, o), a = f.anchors[name]; if (!a) return null; return flipA(a, o.flip, o.scale || 1); }
+  // ctx 上畫一格：(x,y)＝腳底中點
+  function render(ctx, spec, pose, frame, x, y, o) {
+    o = o || {}; var f = composeCached(spec, pose || 'idle', frame || 0, o), k = o.scale || 1, flip = !!o.flip;
+    var left = flip ? x - (f.w - f.ax) * k : x - f.ax * k, top = y - f.ay * k;
+    var cv = (!o.sil && hasDOM() && typeof ctx.drawImage === 'function') ? frameCanvas(f) : null;
+    var ga = ctx.globalAlpha; if (o.alpha != null) ctx.globalAlpha = ga * o.alpha;
+    if (cv) {
+      var sm = ctx.imageSmoothingEnabled; ctx.imageSmoothingEnabled = false;
+      if (flip) { ctx.save(); ctx.translate(left + f.w * k, top); ctx.scale(-1, 1); ctx.drawImage(cv, 0, 0, f.w * k, f.h * k); ctx.restore(); }
+      else ctx.drawImage(cv, left, top, f.w * k, f.h * k);
+      ctx.imageSmoothingEnabled = sm;
+    } else {
+      // 沒有 DOM（或要剪影）：逐格畫，同色的橫段合併成一個 fillRect
+      for (var j = 0; j < f.h; j++) {
+        var run = -1, col = null;
+        for (var i = 0; i <= f.w; i++) {
+          var c = null;
+          if (i < f.w) { var q = (j * f.w + (flip ? f.w - 1 - i : i)) * 4; if (f.data[q + 3]) c = o.sil ? (o.sil === true ? '#0b0f1a' : o.sil) : 'rgb(' + f.data[q] + ',' + f.data[q + 1] + ',' + f.data[q + 2] + ')'; }
+          if (c !== col) { if (col) { ctx.fillStyle = col; ctx.fillRect(left + run * k, top + j * k, (i - run) * k, k); } col = c; run = i; }
+        }
+      }
+    }
+    ctx.globalAlpha = ga;
+    var an = {}; Object.keys(f.anchors).forEach(function (n) { var a = flipA(f.anchors[n], flip, k); an[n] = [x + a[0], y + a[1]]; });
+    return { x: left, y: top, w: f.w * k, h: f.h * k, anchors: an };
+  }
+  // shop.js P.sprite 相容：字母列＋色盤（每張圖自己的色盤，最多 62 色）
+  var ALPHA = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+  function grid(spec, pose, frame, o) {
+    var f = composeCached(spec, pose || 'idle', frame || 0, o), pal = {}, inv = {}, n = 0, rows = [];
+    for (var j = 0; j < f.h; j++) { var r = '';
+      for (var i = 0; i < f.w; i++) { var q = (j * f.w + i) * 4; if (!f.data[q + 3]) { r += '.'; continue; }
+        var hx = rgb2hex(f.data[q], f.data[q + 1], f.data[q + 2]); if (!inv[hx]) { if (n >= ALPHA.length) { r += ALPHA.charAt(ALPHA.length - 1); continue; } inv[hx] = ALPHA.charAt(n++); pal[inv[hx]] = hx; } r += inv[hx]; }
+      rows.push(r); }
+    return { rows: rows, pal: pal, ax: f.ax, ay: f.ay, anchors: f.anchors };
+  }
+  // shop.js 手臂姿勢 → 這裡的 [姿勢, 格]
+  var ARM = { wind: ['throw', 0], throw: ['throw', 1], show: ['show', 0], up: ['up', 0], shield: ['shield', 0], flag: ['point', 0], shrug: ['shrug', 0], none: ['idle', 0] };
+
   return {
-    compose: build, normalize: normalize, HAIRS: HAIRS,
-    _internal: { Comp: Comp, capsule: capsule, poly: poly, rect: rect, stamp: stamp, legend: legend, finish: finish, limbTone: limbTone, autoRamp: autoRamp, mix: mix, extend: extend },
-    SKINS: SKINS, HAIRC: HAIRC, CLOTH: CLOTH, METAL: METAL, cloth: cloth, hairRamp: hairRamp, anyRamp: anyRamp, LINE: LINE
+    version: '3.0',
+    render: render, compose: composeCached, toCanvas: toCanvas, toDataURL: toDataURL, grid: grid, anchor: anchor,
+    npc: npc, NPC_IDS: Object.keys(NPC), fromDipChar: fromDipChar, random: random, normalize: normalize, DEFAULT: DEFAULT,
+    parts: PARTS, SLOTS: SLOTS, swatch: swatch, POSES: POSE_FRAMES, ARM: ARM, ATTR: ATTR,
+    SCALE: { adultPx: 48, cmPerPx: 3.6, doorPx: 58, counterPx: 27, tablePx: 21 },
+    clearCache: function () { CACHE = {}; CACHE_N = 0; },
+    _internal: { build: build, Comp: Comp, capsule: capsule, poly: poly, stamp: stamp, finish: finish, autoRamp: autoRamp, mix: mix, rng: rng,
+      SKINS: SKINS, HAIRC: HAIRC, CLOTH: CLOTH, HAIRS: HAIRS, HATS: HATS, TOPS: TOPS, BOTTOMS: BOTTOMS, SHOES: SHOES, ACCS: ACCS, NPC: NPC, SPR_KEY: SPR_KEY,
+      OLD_HEAD: OLD_HEAD, OLD_COLOR: OLD_COLOR, OLD_HAIR: OLD_HAIR, OLD_SKIN: OLD_SKIN, OLD_PANTS: OLD_PANTS, POSE: POSE }
   };
 });
