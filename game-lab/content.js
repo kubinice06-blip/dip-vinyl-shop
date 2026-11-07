@@ -545,7 +545,7 @@
       { id: '3-5', kind: 'do', target: ['card:bestC'], text: '點這張：經典 5。', allow: { card: 'bestC' }, previews: true, bubble: 'above', tag: '新' },
       { id: '3-6', kind: 'say', target: ['attrs'], text: '按鈕上寫了會怎樣。', bubble: 'free', keep: ['hand'], tag: '新' },
       { id: '3-7', kind: 'do', target: ['attr-c'], text: '出經典：怎樣都是他扣。', allow: { attr: 'c' }, cell: 'feint', bubble: 'free', keep: ['hand'], tag: '新' },
-      { id: '3-8', kind: 'say', target: ['result'], text: '他晃了，被你看穿：多扣 2。', learn: 'L3', tag: '新' },
+      { id: '3-8', kind: 'say', target: ['result'], text: '他晃了，被你看穿：多扣 2。', learn: 'L3', bubble: 'below', tag: '新' },
       // ---- 第 4 課：王牌（流亡已在第 2 課教過）
       { id: '4-1', tier: ['hall', 'heresy'], kind: 'say', target: ['hand-ace'], text: '這是王牌：一軸 7 星。', fx: 'sweep', tag: '新' },
       { id: '4-2', tier: ['hall', 'heresy'], kind: 'say', target: ['hand-ace'], text: '每場只能出一次。', tag: '新' },

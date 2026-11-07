@@ -192,6 +192,7 @@
   function place(id, spot, spr) {
     if (spr === 'player') spr = save && save.player ? playerAv() : 'player';   // 換了造型也會重畫（'player' 字串會被舞台快取）
     stg('put', id, spot, spr); stg('hide', id, false);
+    stg('sil', id, false);   // 剪影只在門外排隊時用；換位置一律先清掉（呼叫端要剪影會在 place 之後再設）。修：重新整理後接押盤，你變成黑色剪影
   }
   function hideActor(id) { if (UI.stage && stg('has', id)) stg('hide', id, true); }
   function resetPoses() { ['p', 'f', 'o'].forEach(function (id) { stg('pose', id, null); stg('emote', id, null); stg('say', id, null); }); stg('untag'); }
@@ -856,7 +857,7 @@
         '<div class="face"><img alt="" draggable="false" src="' + esc(coverSrc(c)) + '" onerror="this.remove()"><span class="alt">' + esc(c.album) + '</span>' + (isNew ? '<span class="new">NEW</span>' : '') + '</div>' +
         '</div></div>' + meta + '</div>' +
         (opts.note ? '<p class="msg">' + opts.note + '</p>' : '') +
-        '<div class="btns' + ((opts.buttons || []).length > 2 ? ' three' : '') + '">' + (opts.buttons || []).map(function (b, i) {
+        '<div class="btns' + ((opts.buttons || []).length > 2 ? ' three' : '') + ((opts.buttons || []).some(function (b) { return b.wrap; }) ? ' wrap' : '') + '">' + (opts.buttons || []).map(function (b, i) {
           return '<button type="button" class="lb-btn big col' + (b.pri ? ' pri' : '') + '" data-i="' + i + '"' + (b.disabled ? ' disabled' : '') + '><span class="lb">' + esc(b.label) + '</span>' + (b.sub ? '<span class="sub">' + esc(b.sub) + '</span>' : '') + '</button>';
         }).join('') + '</div>';
       var s = sheet(html, 'stake');
@@ -1332,7 +1333,7 @@
   }
   // ---- 序章輸了：「……再一場。」
   function retryFlow(node) {
-    go('scene', { p: 'atdoor', f: 'in', fSpr: 'e0', o: 'between', camMs: 600, start: function (sc) {
+    go('scene', { p: 'duelP', f: 'duelE', fSpr: 'e0', o: 'between', camMs: 600, start: function (sc) {
       stg('pose', 'p', null); stg('pose', 'f', null);
       var dlg = Dialogue(sc, {});
       dlg.run([{ who: '男子', text: '「' + C.lines.man.win + '」' }, { who: '老闆', text: '「' + C.lines.owner.retry + '」' }]).then(function () {
@@ -1343,7 +1344,7 @@
   // ---- 序章收尾（押盤 → 配件三選一 → 地圖）
   function epilogueFlow(offer, resumed) {
     var r = save.run;
-    go('scene', { p: 'atdoor', f: 'in', fSpr: 'e0', o: 'between', camMs: 600, start: function (sc) {
+    go('scene', { p: 'duelP', f: 'duelE', fSpr: 'e0', o: 'between', camMs: 600, start: function (sc) {
       stg('pose', 'f', null); stg('pose', 'p', null);
       var dlg = Dialogue(sc, {});
       var beats = C.script.epilogueWin;
@@ -1383,7 +1384,7 @@
   }
   // ---- 打烊（通關）：店燈暗一半、老闆擦唱盤
   function clearFlow(offer, node, first) {
-    go('scene', { p: 'atdoor', f: 'in', fSpr: 'boss', o: 'counter', camMs: 600, start: function (sc) {
+    go('scene', { p: 'duelP', f: 'duelE', fSpr: 'boss', o: 'counter', camMs: 600, start: function (sc) {
       stg('pose', 'f', null); stg('pose', 'p', null);
       var dlg = Dialogue(sc, { flags: { firstClear: first } });
       dlg.run(C.script.clear, function (ui) {
@@ -1455,8 +1456,8 @@
     cam('reward', 'reward', 600);
     stg('interact', 'reward');
     stg('pose', 'f', null); stg('pose', 'p', null);
-    place('p', 'atdoor', 'player'); place('o', 'counter', 'owner');
-    if (!stg('has', 'f')) place('f', 'near', enemySpr(enemy));
+    place('p', 'duelP', 'player'); place('o', 'counter', 'owner');   // 對決剛結束：你留在原地，他從 duelE 走去門口（不瞬移）
+    if (!stg('has', 'f')) place('f', 'duelE', enemySpr(enemy));
     stg('sprite', 'f', enemySpr(enemy)); stg('hide', 'f', false); stg('sil', 'f', false);
     var lose = (C.lines[node.enemyId] && C.lines[node.enemyId].lose) || [];
     later(function () { stageSay('f', [].concat(lose)[0], null, 2200); }, 300);
@@ -1471,7 +1472,8 @@
       if (elite || !o.relicId) btns.push({ label: '寄放櫃檯', sub: '只收進唱片櫃', value: 'shelf' });
       else {
         var rel = C.relics[o.relicId];
-        btns.push({ label: '拿他的「' + rel.name + '」', sub: o.relicOwned ? '已經有了：改回 ' + ((C.relicFallback && C.relicFallback.hp) || 4) + ' 聲望' : rel.desc, value: 'relic' });
+        // 配件名＋效果要讀得到：主字短（「拿他的配件」），副標寫名字與效果、可以換行（不再被省略號吃掉）
+        btns.push({ label: '拿他的配件', sub: '「' + rel.name + '」' + (o.relicOwned ? '已經有了：改回 ' + ((C.relicFallback && C.relicFallback.hp) || 4) + ' 聲望' : rel.desc), value: 'relic', wrap: true });
       }
       if (o.extraCardIds && o.extraCardIds.length) btns.push({ label: '再挑一張他的盤', sub: '會員集點卡', value: 'extra' });
       var loop = function () {
@@ -1616,7 +1618,7 @@
       html += '<div class="pv-who"><div class="av">' + headHTML(enemySpr(Em), 30) + '</div><div><b class="key">' + esc(Em.name) + '</b>' + (Em.title ? '<small>' + esc(Em.title) + '</small>' : '') +
         (nd.type === 'elite' ? '<span class="gtag">菁英</span>' : '') + '<div class="bl">' + esc(Em.blurb) + '</div></div></div>' +
         '<div class="kv"><span class="k">聲望</span><b class="num">' + pv.hp + '</b>　<span class="k">輾壓</span>' + ult + '<br>' +
-        (stakeC ? '<span class="k">押盤</span>蓋著・' + starsHTML(stakeC) + (stakeC.tier ? '<span class="sub">你沒選的王牌</span>' : '') + (stakeC.gold ? '<span class="gtag">私藏</span>' : '') : '') +
+        (stakeC ? '<span class="k">押盤</span>蓋著・' + starsHTML(stakeC) + (stakeC.tier ? '<span class="sub">・你沒選的王牌</span>' : '') + (stakeC.gold ? '<span class="gtag">私藏</span>' : '') : '') +
         (pv.requestLabel ? '　<span class="k">點播</span>' + esc(pv.requestLabel) : '') +
         (pv.relic ? '<br><span class="k">身上</span>' + relicIcon(pv.relic.id, 16) + ' ' + esc(pv.relic.name) + (pv.relicOwned ? '（已有）' : '') : '') + '</div>';
     } else {

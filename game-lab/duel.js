@@ -664,7 +664,7 @@
       if ((x = t.closest('.tile'))) { const i = x.dataset.i === 'ace' ? 'ace' : +x.dataset.i; tileTap(i, x); return; }
       if ((x = t.closest('.ab'))) { if (x.dataset.a) attrTap(x.dataset.a, x); return; }
       if ((x = t.closest('.ultb'))) { ultTap(); return; }
-      if ((x = t.closest('.cvb'))) { const it = S.v.intent; if (it && it.record) openInfo(it.record, 'e-rec'); return; }
+      if ((x = t.closest('.cvb, .rec .l1'))) { const it = S.v.intent; if (it && it.record) openInfo(it.record, 'e-rec'); return; }   // 封面或「他拿出 藝人《專輯》」那一行都開唱片資訊
       if ((x = t.closest('.slot[data-card]'))) {
         const side = x.classList.contains('e') ? 'e' : 'p', d = S.table && S.table[side];
         if (d && d.card) openInfo(d.card, 'slot-' + side, d.attr); return;

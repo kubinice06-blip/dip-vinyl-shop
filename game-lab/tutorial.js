@@ -460,7 +460,9 @@
     var top = null, dir = null;
     if (first && sh.bubble !== 'free') {
       var above = first.top - 12 - bh, below = first.bottom + 12;
-      var order = sh.bubble === 'below' ? [['down', below], ['up', above]] : [['up', above], ['down', below]];
+      // 'auto'（夜晚的一次性提示）：洞在畫面上半就放下面、在下半就放上面，泡泡往牌桌那邊靠
+      var down1 = sh.bubble === 'below' || (sh.bubble === 'auto' && (first.top + first.bottom) / 2 < vh / 2);
+      var order = down1 ? [['down', below], ['up', above]] : [['up', above], ['down', below]];
       for (var k = 0; k < order.length; k++) if (ok(order[k][1])) { dir = order[k][0]; top = order[k][1]; break; }
     }
     if (top == null) {   // 最大的空白帶，不畫箭頭
@@ -471,6 +473,12 @@
       gaps.sort(function (a, c) { return (c[1] - c[0]) - (a[1] - a[0]); });
       var g = gaps[0] || [minTop, maxBot];
       top = (g[1] - g[0] >= bh) ? Math.round(g[0] + (g[1] - g[0] - bh) / 2) : Math.round(Math.max(minTop, Math.min(maxBot - bh, g[0])));
+      // 對決中：空白帶裡有牌桌就壓在牌桌中間（牌桌是選盤時最不要緊的一塊），別蓋到他拿出的盤、「他會出」或你的手牌
+      var Dt = Duel(), tbl = Dt && Dt.el ? Dt.el('table') : null, tr = tbl ? tbl.getBoundingClientRect() : null;
+      if (tr && tr.height && g[1] - g[0] >= bh && tr.bottom > g[0] && tr.top < g[1]) {
+        var tt = Math.round(tr.top + tr.height / 2 - bh / 2);
+        top = Math.max(g[0], Math.min(g[1] - bh, tt));
+      }
     }
     b.style.top = Math.round(top) + 'px';
     if (dir && first) {
@@ -898,7 +906,9 @@
     showSoft(cur);
   }
   function showSoft(cur) {
-    setShow({ mode: 'soft', targets: cur.targets, text: cur.lines[cur.k], point: POINT_HINTS[cur.id] ? cur.targets[0] : null, bubble: 'free' });
+    // 對決中的提示：泡泡貼著洞、往牌桌靠，不蓋手牌與屬性鈕（玩家要看得到手上的盤才能照著做）
+    var duelK = cur.kind === 'duel';
+    setShow({ mode: 'soft', targets: cur.targets, text: cur.lines[cur.k], point: POINT_HINTS[cur.id] ? cur.targets[0] : null, bubble: duelK ? 'auto' : 'free', keep: duelK ? ['hand', 'attrs'] : null });
     var h = function () {
       document.removeEventListener('pointerdown', h, true);
       if (S.soft !== cur) return;

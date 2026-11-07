@@ -257,6 +257,8 @@ small{font-size:inherit;}
 .lb-sheet .btns.three .lb-btn{flex:1 1 40%;}
 .lb-sheet .btns .lb-btn .lb{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%;}
 .lb-sheet .btns .lb-btn.pri .sub{color:#ccc;}
+.lb-sheet .btns.wrap .lb-btn{height:auto;min-height:58px;align-items:stretch;justify-content:center;}   /* 拿他的配件：副標（名字＋效果）可以換行 */
+.lb-sheet .btns.wrap .lb-btn .sub{white-space:normal;overflow:visible;text-overflow:clip;}
 
 /* ---------- 地圖預覽（浮在舞台下緣）、包包／配件 ---------- */
 .lb-sheet.float{position:absolute;top:auto;left:0;right:0;bottom:0;max-height:72%;z-index:20;border-top:1px solid var(--ink);box-shadow:0 -8px 18px rgba(0,0,0,.14);padding-bottom:calc(12px + env(safe-area-inset-bottom,0px));}
