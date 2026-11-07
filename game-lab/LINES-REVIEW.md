@@ -1,20 +1,22 @@
-# 台詞審稿：品味對決・試做版（LINES-REVIEW）
+# 台詞審稿：品味對決 v3（LINES-REVIEW）
 
-> 由 `node game-lab/tools/lint-copy.mjs` 產生，請勿手改。要改句子，直接改 `game-lab/content.js`（劇本、台詞、提示、事件）或 `game-lab/tools/pitches.json`（推薦語，改完重跑 `node game-lab/tools/bake-cards.mjs`），再重跑本檢查。
-> 這份只列**新句**（試做版新寫、或取自四份概念稿，店主還沒看過）。標成「原句」「拍板」的句子已與現行 `roguelike.html` 逐字比對（36 句，全部一致才會產生這份）。
+> 由 `node game-lab/tools/lint-copy.mjs` 產生，請勿手改。要改句子，直接改 `game-lab/content.js`（劇本、台詞、名牌、提示、規則卡、教學）或 `game-lab/tools/pitches.json`（推薦語，改完重跑 `node game-lab/tools/bake-cards.mjs`），再重跑本檢查。
+> 這份只列**新句**（試做版新寫、或取自四份概念稿，店主還沒看過）。標成「原句」「拍板」的句子已與現行 `roguelike.html` 逐字比對（37 句，全部一致才會產生這份）。
+> v3（三相剋當核心）：氣勢、輾壓、賭注、相生、割捨、七星回擊、霸權、點播、脾氣唱盤（晃）、事件、挖箱、試聽機的句子全部刪除；v2 教學的 37 句換成 10 步；發燒配件留 6 件，每件一句話。
 
-統計：原句 34、拍板 2、新 182（同一句在有聲／安靜兩版序章只算一次）。
+統計：原句 35、拍板 2、新 237（同一句在有聲／安靜兩版序章只算一次）。
 
 ## 序章（有聲音）
 
 | 說話者 | 句子 | 出處 | 位置 |
 |---|---|---|---|
 | （畫面字） | 剛才那段，是哪一張？ | 本規格新寫 | `script.prologue[4].prompt` |
-| （畫面字） | 好耳朵：今晚每場開局氣勢 +1 | 本規格新寫 | `script.prologue[5].stamp` |
+| （畫面字） | 好耳朵 | 本規格新寫 | `script.prologue[5].stamp` |
 | 老闆 | 「不是這張。不過，你挑的這張也不壞。」 | 本規格新寫 | `script.prologue[6]` |
-| 旁白 | （點封套換著聽，挑一張帶走。） | 本規格新寫 | `script.prologue[7]` |
+| 旁白 | （點封套下面的字換著聽，挑一張帶走。） | 本規格新寫 | `script.prologue[7]` |
 | 老闆 | 「門口那箱一百塊三張，順手帶著。」 | 本規格新寫 | `script.prologue[10]` |
 | （畫面字） | ▶ 品味對決 | 本規格新寫 | `script.prologue[16].prompt` |
+| （畫面字） | ▶ 直接開打（我會玩） | 本規格新寫 | `script.prologue[16].prompts[1]` |
 
 ## 序章（安靜）
 
@@ -22,14 +24,14 @@
 |---|---|---|---|
 | （畫面字） | （挑一張帶走。） | 本規格新寫 | `script.quietPrologue[4].prompt` |
 
-## 序章收尾
+## 序章收尾（贏了男子 → 挑一張盤 → 發燒配件三選一）
 
 | 說話者 | 句子 | 出處 | 位置 |
 |---|---|---|---|
 | 旁白 | 他的袋子裡掉出一張盤。 | 本規格新寫 | `script.epilogueWin[2]` |
 | 老闆 | 「……他每個禮拜都來聽這張。」 | 本規格新寫 | `script.epilogueWin[3]` |
 
-## 配件挑完 → 地圖
+## 配件挑完 → 今晚來客
 
 | 說話者 | 句子 | 出處 | 位置 |
 |---|---|---|---|
@@ -64,261 +66,375 @@
 | 你 | ……（把唱片抱緊） | 本規格新寫 | `retorts[1].label` |
 | 男子 | 「哼，抱那麼緊，怕被笑喔？」 | 本規格新寫 | `retorts[1].reply` |
 
-## 老闆（對決外的小聲提點）
+## 老闆（對決外）
 
 | 說話者 | 句子 | 出處 | 位置 |
 |---|---|---|---|
-| 老闆・retry | ……再一場。 | 本規格新寫 | `lines.owner.retry` |
-| 老闆・gold | 這張……本來沒要賣的。 | 本規格新寫 | `lines.owner.gold` |
-| 老闆・listenRight | 對，就是這張。 | 本規格新寫 | `lines.owner.listenRight` |
-| 老闆・listenWrong | 是這張。下次就認得了。 | 本規格新寫 | `lines.owner.listenWrong` |
-| 老闆・tea | 茶還燙，慢慢喝。 | 本規格新寫 | `lines.owner.tea` |
-| 老闆・wash | 洗乾淨了，聲音會回來一點。 | 本規格新寫 | `lines.owner.wash` |
-| 老闆・bagFull | 包包滿了。先拿一張出來。 | 本規格新寫 | `lines.owner.bagFull` |
+| 老闆・老闆說情 | ……再一場。 | 本規格新寫 | `lines.owner.retry` |
+| 老闆・包包滿了 | 包包滿了。先拿一張出來。 | 本規格新寫 | `lines.owner.bagFull` |
+| 老闆・發燒配件滿了 | 配件最多帶三件。先放一件回去。 | 本規格新寫 | `lines.owner.relicFull` |
 
-## 你
+## 舞台泡泡・男子
 
 | 說話者 | 句子 | 出處 | 位置 |
 |---|---|---|---|
-| 你・revive | 還沒完。 | 本規格新寫 | `lines.player.revive` |
+| 男子・口頭禪（開場泡泡） | 這張排行榜第一名欸。 | 概念稿 C | `lines.man.line` |
+| 男子・回嘴選了那張（第一手） | ……對啦，就這張。 | 本規格新寫 | `lines.man.jabBubble` |
+| 男子・你輸了（他說） | 回家多聽兩年再來啦。 | 概念稿 A | `lines.man.win` |
 
-## 對決台詞・男子
-
-| 說話者 | 句子 | 出處 | 位置 |
-|---|---|---|---|
-| 男子・jabBubble | ……對啦，就這張。 | 本規格新寫 | `lines.man.jabBubble` |
-| 男子・bubble | 這張排行榜第一名欸。 | 概念稿 C | `lines.man.bubble[0]` |
-| 男子・bubble | 大家都在聽這個啦。 | 本規格新寫 | `lines.man.bubble[1]` |
-| 男子・countered | 你那什麼？聽都沒聽過。 | 概念稿 B | `lines.man.countered[0]` |
-| 男子・hit | 看吧，大家都聽這個。 | 本規格新寫 | `lines.man.hit[0]` |
-| 男子・faceChange | 你很會嘛？再出{lastAttr}試試看！ | 概念稿 A | `lines.man.faceChange` |
-| 男子・win | 回家多聽兩年再來啦。 | 概念稿 A | `lines.man.win` |
-
-## 對決台詞・那張我有
+## 舞台泡泡・那張我有
 
 | 說話者 | 句子 | 出處 | 位置 |
 |---|---|---|---|
-| 那張我有・intro | 欸你那張哪裡買的？ | 概念稿 C | `lines.copycat.intro` |
-| 那張我有・bubble | 我也有！我也有！ | 概念稿 D | `lines.copycat.bubble[0]` |
-| 那張我有・bubble | 最近大家都在聽這種的吧？ | 概念稿 A | `lines.copycat.bubble[1]` |
-| 那張我有・countered | 等等，我先查一下這張是誰。 | 概念稿 D | `lines.copycat.countered[0]` |
-| 那張我有・hit | 你剛剛那招，我學起來了。 | 概念稿 C | `lines.copycat.hit[0]` |
-| 那張我有・faceChange | 欸你剛那張叫什麼？我馬上下單。 | 概念稿 D | `lines.copycat.faceChange` |
-| 那張我有・ultWarn | 這張我也有，而且是彩膠。 | 本規格新寫 | `lines.copycat.ultWarn` |
-| 那張我有・lose | 我回去也要買一張。 | 概念稿 A | `lines.copycat.lose[0]` |
-| 那張我有・win | 那張我有，兩張。 | 本規格新寫 | `lines.copycat.win` |
+| 那張我有・口頭禪（開場泡泡） | 你出這個？那張我也有。 | 本規格新寫 | `lines.copycat.line` |
+| 那張我有・進門那句 | 欸你那張哪裡買的？ | 概念稿 C | `lines.copycat.intro` |
+| 那張我有・你贏了（他說） | 我回去也要買一張。 | 概念稿 A | `lines.copycat.lose[0]` |
+| 那張我有・你輸了（他說） | 那張我有，兩張。 | 本規格新寫 | `lines.copycat.win` |
 
-## 對決台詞・我早就聽過
+## 舞台泡泡・我早就聽過
 
 | 說話者 | 句子 | 出處 | 位置 |
 |---|---|---|---|
-| 我早就聽過・intro | 這張？我高中就聽過了。 | 概念稿 D | `lines.already.intro` |
-| 我早就聽過・bubble | 真正懂的人都知道…… | 概念稿 D | `lines.already.bubble[0]` |
-| 我早就聽過・bubble | 學弟，這張要聽原版。 | 概念稿 A | `lines.already.bubble[1]` |
-| 我早就聽過・countered | 哼。這招我早就聽過。 | 概念稿 D | `lines.already.countered[0]` |
-| 我早就聽過・hit | 你放的我都有，我的還是日版側標。 | 概念稿 B | `lines.already.hit[0]` |
-| 我早就聽過・faceChange | 這張日本盤有 bonus track，你知道嗎？ | 概念稿 D | `lines.already.faceChange` |
-| 我早就聽過・habit | ……其實我也想聽聽看你那張。 | 本規格新寫 | `lines.already.habit` |
-| 我早就聽過・ultWarn | 這張的初版，我也有。 | 本規格新寫 | `lines.already.ultWarn` |
-| 我早就聽過・lose | ……這張我真的沒聽過。可以借我嗎？ | 概念稿 B | `lines.already.lose[0]` |
-| 我早就聽過・win | 回去把黑膠版聽完再來。 | 概念稿 A | `lines.already.win` |
+| 我早就聽過・口頭禪（開場泡泡） | 你剛那招，我早就聽過了。 | 本規格新寫 | `lines.already.line` |
+| 我早就聽過・進門那句 | 這張？我高中就聽過了。 | 概念稿 D | `lines.already.intro` |
+| 我早就聽過・你贏了（他說） | ……這張我真的沒聽過。可以借我嗎？ | 概念稿 B | `lines.already.lose[0]` |
+| 我早就聽過・你輸了（他說） | 回去把黑膠版聽完再來。 | 概念稿 A | `lines.already.win` |
 
-## 對決台詞・針壓強迫症
+## 舞台泡泡・針壓強迫症
 
 | 說話者 | 句子 | 出處 | 位置 |
 |---|---|---|---|
-| 針壓強迫症・intro | 你這張是幾版？ | 概念稿 D | `lines.needle.intro` |
-| 針壓強迫症・bubble | 我的器材比較準。 | 概念稿 D | `lines.needle.bubble[0]` |
-| 針壓強迫症・bubble | 這個音場，你的喇叭擺歪了。 | 本規格新寫 | `lines.needle.bubble[1]` |
-| 針壓強迫症・bubble | 針壓先量一下再說。 | 本規格新寫 | `lines.needle.bubble[2]` |
-| 針壓強迫症・countered | ……一定是我的針壓偏了。 | 概念稿 D | `lines.needle.countered[0]` |
-| 針壓強迫症・hit | 你最大那張，我盯很久了。 | 本規格新寫 | `lines.needle.hit[0]` |
-| 針壓強迫症・faceChange | 你的唱針該換了。 | 概念稿 D | `lines.needle.faceChange` |
-| 針壓強迫症・habit | 剛剛那手，我記下來了。 | 本規格新寫 | `lines.needle.habit` |
-| 針壓強迫症・ultWarn | 針壓兩克，剛剛好。 | 本規格新寫 | `lines.needle.ultWarn` |
-| 針壓強迫症・lose | ……我回去重新校正。 | 概念稿 D | `lines.needle.lose[0]` |
-| 針壓強迫症・win | 先把唱臂調平再來。 | 本規格新寫 | `lines.needle.win` |
+| 針壓強迫症・口頭禪（開場泡泡） | 你手上那張，我盯很久了。 | 本規格新寫 | `lines.needle.line` |
+| 針壓強迫症・進門那句 | 你這張是幾版？ | 概念稿 D | `lines.needle.intro` |
+| 針壓強迫症・你贏了（他說） | ……我回去重新校正。 | 概念稿 D | `lines.needle.lose[0]` |
+| 針壓強迫症・你輸了（他說） | 先把唱臂調平再來。 | 本規格新寫 | `lines.needle.win` |
 
-## 對決台詞・跳針王
+## 舞台泡泡・跳針王
 
 | 說話者 | 句子 | 出處 | 位置 |
 |---|---|---|---|
-| 跳針王・intro | 欸，這段剛剛是不是聽過了？ | 概念稿 B | `lines.skip.intro` |
-| 跳針王・bubble | 我這台唱盤很有個性。 | 概念稿 B | `lines.skip.bubble[0]` |
-| 跳針王・bubble | 看看就好，不要摸。 | 概念稿 A | `lines.skip.bubble[1]` |
-| 跳針王・countered | ……喔，順了。 | 本規格新寫 | `lines.skip.countered[0]` |
-| 跳針王・hit | 跳針啦！ | 概念稿 B | `lines.skip.hit[0]` |
-| 跳針王・faceChange | 少年仔，這張你阿公那時陣就在聽了。 | 概念稿 C | `lines.skip.faceChange` |
-| 跳針王・ultWarn | 這段再來一次！ | 本規格新寫 | `lines.skip.ultWarn` |
-| 跳針王・lose | ……我真的該換唱針了。 | 概念稿 B | `lines.skip.lose[0]` |
-| 跳針王・win | 好聽的段落，就是要多聽幾次。 | 本規格新寫 | `lines.skip.win` |
+| 跳針王・口頭禪（開場泡泡） | 跳、跳、跳……又跳針了。 | 本規格新寫 | `lines.skip.line` |
+| 跳針王・進門那句 | 欸，這段剛剛是不是聽過了？ | 概念稿 B | `lines.skip.intro` |
+| 跳針王・你贏了（他說） | ……我真的該換唱針了。 | 概念稿 B | `lines.skip.lose[0]` |
+| 跳針王・你輸了（他說） | 好聽的段落，就是要多聽幾次。 | 本規格新寫 | `lines.skip.win` |
 
-## 對決台詞・月底吃土
+## 舞台泡泡・月底吃土
 
 | 說話者 | 句子 | 出處 | 位置 |
 |---|---|---|---|
-| 月底吃土・intro | 這個月又爆預算了…… | 概念稿 D | `lines.broke.intro` |
-| 月底吃土・bubble | 隨便啦，反正都刷了。 | 概念稿 D | `lines.broke.bubble[0]` |
-| 月底吃土・bubble | 刷卡，分期零利率。 | 本規格新寫 | `lines.broke.bubble[1]` |
-| 月底吃土・bubble | 這張……我先看看就好。 | 本規格新寫 | `lines.broke.bubble[2]` |
-| 月底吃土・countered | 我的伙食費…… | 概念稿 D | `lines.broke.countered[0]` |
-| 月底吃土・hit | 這張是我這個月的便當錢。 | 本規格新寫 | `lines.broke.hit[0]` |
-| 月底吃土・faceChange | 這個月的伙食費，全押了！ | 概念稿 D | `lines.broke.faceChange` |
-| 月底吃土・habit | 其實我根本還沒拆封。 | 本規格新寫 | `lines.broke.habit` |
-| 月底吃土・ultWarn | 信用卡，刷下去！ | 本規格新寫 | `lines.broke.ultWarn` |
-| 月底吃土・lose | 這張……先寄放你那邊。 | 概念稿 D | `lines.broke.lose[0]` |
-| 月底吃土・win | 贏了，這禮拜可以吃滷肉飯加蛋。 | 本規格新寫 | `lines.broke.win` |
+| 月底吃土・口頭禪（開場泡泡） | 什麼都想要一點。 | 本規格新寫 | `lines.broke.line` |
+| 月底吃土・進門那句 | 這個月又爆預算了…… | 概念稿 D | `lines.broke.intro` |
+| 月底吃土・你贏了（他說） | 這張……先寄放你那邊。 | 概念稿 D | `lines.broke.lose[0]` |
+| 月底吃土・你輸了（他說） | 贏了，這禮拜可以吃滷肉飯加蛋。 | 本規格新寫 | `lines.broke.win` |
 
-## 對決台詞・剁手黨
+## 舞台泡泡・剁手黨
 
 | 說話者 | 句子 | 出處 | 位置 |
 |---|---|---|---|
-| 剁手黨・intro | 這三張我都買兩份，一份聽、一份收。 | 概念稿 B | `lines.buyer.intro` |
-| 剁手黨・bubble | 月底？月底再說。 | 概念稿 B | `lines.buyer.bubble[0]` |
-| 剁手黨・bubble | 這張我家已經有三張了。 | 本規格新寫 | `lines.buyer.bubble[1]` |
-| 剁手黨・bubble | 先買再說，聽不聽另外算。 | 本規格新寫 | `lines.buyer.bubble[2]` |
-| 剁手黨・countered | 沒關係，我再買一張。 | 本規格新寫 | `lines.buyer.countered[0]` |
-| 剁手黨・hit | 又入手一張！ | 概念稿 B | `lines.buyer.hit[0]` |
-| 剁手黨・faceChange | 限量彩膠，最後一張了喔。 | 概念稿 D | `lines.buyer.faceChange` |
-| 剁手黨・ultWarn | 全部帶走，不用包！ | 本規格新寫 | `lines.buyer.ultWarn` |
-| 剁手黨・lose | ……我先去領個錢。 | 概念稿 B | `lines.buyer.lose[0]` |
-| 剁手黨・win | 這張歸我了。刷卡。 | 本規格新寫 | `lines.buyer.win` |
+| 剁手黨・口頭禪（開場泡泡） | 這張剛剁的，看清楚。 | 本規格新寫 | `lines.buyer.line` |
+| 剁手黨・進門那句 | 這三張我都買兩份，一份聽、一份收。 | 概念稿 B | `lines.buyer.intro` |
+| 剁手黨・你贏了（他說） | ……我先去領個錢。 | 概念稿 B | `lines.buyer.lose[0]` |
+| 剁手黨・你輸了（他說） | 這張歸我了。刷卡。 | 本規格新寫 | `lines.buyer.win` |
 
-## 對決台詞・冷門仙人
+## 舞台泡泡・冷門仙人
 
 | 說話者 | 句子 | 出處 | 位置 |
 |---|---|---|---|
-| 冷門仙人・intro | 這張全世界只壓了三百張。我有兩張。 | 概念稿 B | `lines.label.intro` |
-| 冷門仙人・bubble | 你沒聽過很正常。 | 概念稿 B | `lines.label.bubble[0]` |
-| 冷門仙人・bubble | 拿主流盤來？ | 概念稿 A | `lines.label.bubble[1]` |
-| 冷門仙人・countered | 嗯，有點東西。 | 概念稿 D | `lines.label.countered[0]` |
-| 冷門仙人・hit | 這張壓了三百張，到現在還賣不完。 | 概念稿 A | `lines.label.hit[0]` |
-| 冷門仙人・faceChange | 這張的母帶，只有我有。 | 概念稿 D | `lines.label.faceChange` |
-| 冷門仙人・habit | 你手上那張，我們廠牌也發過。 | 本規格新寫 | `lines.label.habit` |
-| 冷門仙人・ultWarn | 音量開到十一。 | 概念稿 D | `lines.label.ultWarn` |
-| 冷門仙人・lose | ……下一批，算你一張。 | 概念稿 A | `lines.label.lose[0]` |
-| 冷門仙人・win | 旋律太多了，下次少一點。 | 本規格新寫 | `lines.label.win` |
+| 冷門仙人・口頭禪（開場泡泡） | 你以為我會出最大的？ | 本規格新寫 | `lines.label.line` |
+| 冷門仙人・進門那句 | 這張全世界只壓了三百張。我有兩張。 | 概念稿 B | `lines.label.intro` |
+| 冷門仙人・急了／翻面（泡泡） | ……急了。 | 本規格新寫 | `lines.label.switch` |
+| 冷門仙人・你贏了（他說） | ……下一批，算你一張。 | 概念稿 A | `lines.label.lose[0]` |
+| 冷門仙人・你輸了（他說） | 旋律太多了，下次少一點。 | 本規格新寫 | `lines.label.win` |
 
-## 對決台詞・名盤守門員
+## 舞台泡泡・名盤守門員
 
 | 說話者 | 句子 | 出處 | 位置 |
 |---|---|---|---|
-| 名盤守門員・intro | 我寫過這張的樂評。 | 概念稿 A | `lines.critic.intro` |
-| 名盤守門員・bubble | 這張我在專欄寫過三千字。 | 概念稿 C | `lines.critic.bubble[0]` |
-| 名盤守門員・bubble | 這段的混音，我有意見。 | 本規格新寫 | `lines.critic.bubble[1]` |
-| 名盤守門員・bubble | 你知道這張的製作人是誰嗎？ | 本規格新寫 | `lines.critic.bubble[2]` |
-| 名盤守門員・countered | ……我會寫進專欄。 | 概念稿 A | `lines.critic.countered[0]` |
-| 名盤守門員・hit | 三顆星，不能再多。 | 概念稿 A | `lines.critic.hit[0]` |
-| 名盤守門員・faceChange | 你懂什麼叫脈絡嗎？ | 概念稿 C | `lines.critic.faceChange` |
-| 名盤守門員・habit | 你那張，我也給過五顆星。 | 本規格新寫 | `lines.critic.habit` |
-| 名盤守門員・ultWarn | 這篇樂評，今晚就上稿。 | 本規格新寫 | `lines.critic.ultWarn` |
-| 名盤守門員・lose | ……這張，我重寫一篇。 | 本規格新寫 | `lines.critic.lose[0]` |
-| 名盤守門員・win | 回去把年表背熟。 | 本規格新寫 | `lines.critic.win` |
+| 名盤守門員・口頭禪（開場泡泡） | 名盤就是名盤。 | 本規格新寫 | `lines.critic.line` |
+| 名盤守門員・進門那句 | 我寫過這張的樂評。 | 概念稿 A | `lines.critic.intro` |
+| 名盤守門員・急了／翻面（泡泡） | ……急了。 | 本規格新寫 | `lines.critic.switch` |
+| 名盤守門員・你贏了（他說） | ……這張，我重寫一篇。 | 本規格新寫 | `lines.critic.lose[0]` |
+| 名盤守門員・你輸了（他說） | 回去把年表背熟。 | 本規格新寫 | `lines.critic.win` |
 
-## 對決台詞・傳說藏家
+## 舞台泡泡・傳說藏家
 
 | 說話者 | 句子 | 出處 | 位置 |
 |---|---|---|---|
-| 傳說藏家・bubble | 你猜，我這手是真的嗎？ | 概念稿 A | `lines.boss.bubble[0]` |
-| 傳說藏家・bubble | 這張，我年輕的時候也有一張。 | 本規格新寫 | `lines.boss.bubble[1]` |
-| 傳說藏家・bubble | 慢慢來，我們有一整晚。 | 本規格新寫 | `lines.boss.bubble[2]` |
-| 傳說藏家・countered | 有意思。 | 本規格新寫 | `lines.boss.countered[0]` |
-| 傳說藏家・hit | 這張，我三十年前就有了。 | 概念稿 B | `lines.boss.hit[0]` |
-| 傳說藏家・faceChange | ……翻面。讓我看看你手上拿的是什麼。 | 概念稿 A | `lines.boss.faceChange` |
-| 傳說藏家・habit | 你最大那張，我也有。 | 本規格新寫 | `lines.boss.habit` |
-| 傳說藏家・ultWarn | 收藏是一種病。我病了三十年。 | 概念稿 C | `lines.boss.ultWarn` |
-| 傳說藏家・aceOut | 這張，我只在打烊之後放。 | 概念稿 B | `lines.boss.aceOut` |
-| 傳說藏家・lose | ……這張，送你。三十年前，我也是這樣拿到的。 | 概念稿 A | `lines.boss.lose[0]` |
+| 傳說藏家・口頭禪（開場泡泡） | ……這張，我也有。 | 本規格新寫 | `lines.boss.line` |
+| 傳說藏家・急了／翻面（泡泡） | ……換面。 | 本規格新寫 | `lines.boss.switch` |
+| 傳說藏家・你贏了（他說） | ……這張，送你。三十年前，我也是這樣拿到的。 | 概念稿 A | `lines.boss.lose[0]` |
 
-## 老闆小聲提點（即時提示）
+## 名牌上的脾氣（對決盤面 e-habit）
 
 | 說話者 | 句子 | 出處 | 位置 |
 |---|---|---|---|
-| 老闆 | 他喊經典。冷門剋它，大張經典硬碰也行。 | 本規格新寫 | `hints.h_counter` |
-| 老闆 | 上排＝他出的；綠＝他扣，紅＝你扣。 | 本規格新寫 | `hints.h_forecast` |
-| 老闆 | 他惱羞了。四格是「晃」。 | 本規格新寫 | `hints.h_face` |
-| 老闆 | 晃：他料到你要剋，反剋回來。 | 本規格新寫 | `hints.h_feint` |
-| 老闆 | 氣勢滿了。現在放，或存到更痛。 | 本規格新寫 | `hints.h_ult` |
-| 老闆 | 王牌每場一次，被剋就白用。 | 本規格新寫 | `hints.h_ace` |
-| 老闆 | 他要輾壓。出剋它的盤，割捨防禦。 | 本規格新寫 | `hints.h_eult` |
-| 老闆 | 你的王牌剋得到它：七星回擊。 | 本規格新寫 | `hints.h_reflect` |
-| 老闆 | 相生：經→冷→硬→經，加氣勢。 | 本規格新寫 | `hints.h_chain` |
-| 老闆 | 點播的盤，出招 +2。 | 本規格新寫 | `hints.h_request` |
-| 老闆 | 跟＝出你上一手。 | 本規格新寫 | `hints.h_copy` |
-| 老闆 | 報＝剋你上一手。 | 本規格新寫 | `hints.h_grudge` |
-| 老闆 | 盯＝剋你最大張。 | 本規格新寫 | `hints.h_eye` |
-| 老闆 | ？＝還沒看過的習慣。 | 本規格新寫 | `hints.h_hidden` |
-| 老闆 | 不剋他，跳針就越疊越大聲。 | 本規格新寫 | `hints.h_skip` |
-| 老闆 | 王牌被剋：這手互不傷害。 | 本規格新寫 | `hints.h_hegemony` |
+| （畫面字）・老實 | 只認排行榜：丟他那張最大的星。 | 本規格新寫 | `habits.honest.line` |
+| （畫面字）・跟風 | 你上一手丟什麼，他就跟著丟。 | 本規格新寫 | `habits.copy.line` |
+| （畫面字）・記仇 | 專丟剋你上一手的那種。 | 本規格新寫 | `habits.grudge.line` |
+| （畫面字）・跳針 | 上一手丟什麼，這手還丟什麼。 | 本規格新寫 | `habits.repeat.line` |
+| （畫面字）・輪流 | 照三角的箭頭輪著丟：冷→經→硬→冷。 | 本規格新寫 | `habits.rot.line` |
+| （畫面字）・虛晃 | 亮最大的星嚇你，丟的是剋你的那招。 | 本規格新寫 | `habits.bluff.line` |
+| （畫面字）・盯手 | 盯著你手上最大的星，丟剋它的。 | 本規格新寫 | `habits.eye.line` |
 
-## 「？」小抄
+## 名牌上的脾氣・急了／翻面之後
 
 | 說話者 | 句子 | 出處 | 位置 |
 |---|---|---|---|
-| （畫面字） | 冷門剋經典・經典剋硬蕊・硬蕊剋冷門。剋中：賭注＋（你的星－他那張同屬性的星，不會是負的）。撞招：同屬性比星，差多少打多少。相生：經→冷→硬→經，2 連 +1 氣勢、3 連 +2 氣勢再 +2 傷害。氣場唱盤：六格隨機落一格。真＝照喊的出；晃＝出剋你剋招的；跟＝出你上一手；報＝剋你上一手；盯＝剋你最大張；？＝還沒看過。氣勢 6 起可放品味輾壓：傷害＝當下氣勢，他這手作廢。 | 本規格新寫 | `help` |
+| 冷門仙人 | 急了：上一手丟什麼，這手還丟什麼。 | 本規格新寫 | `phase2Lines.label` |
+| 名盤守門員 | 急了：專丟剋你上一手的那種。 | 本規格新寫 | `phase2Lines.critic` |
+| 傳說藏家 | B 面：專丟剋你上一手的那種。 | 本規格新寫 | `phase2Lines.boss` |
 
-## 發燒配件
-
-| 說話者 | 句子 | 出處 | 位置 |
-|---|---|---|---|
-| 老闆 | 戴上這個。誰在說謊，聽得出來。（監聽耳機） | 本規格新寫 | `relics.headphone.line` |
-
-## 事件・躲雨的外送員
+## 名牌上的脾氣・左邊的黑底標籤
 
 | 說話者 | 句子 | 出處 | 位置 |
 |---|---|---|---|
-| 旁白 | 外送員衝進來躲雨，耳機漏音大到整間店都聽得到。 | 本規格新寫 | `events.delivery.text` |
-| 選項 | 借他毛巾｜回 4 聲望｜→ 他點點頭，雨還在下。 | 本規格新寫 | `events.delivery.options[0]` |
-| 選項 | 推薦他一張｜從包包挑一張送他，下一場開局氣勢 +3（包包 6 張以上）｜→ 他說下次會來買。 | 本規格新寫 | `events.delivery.options[1]` |
+| （畫面字） | 脾氣 | 本規格新寫 | `habitLabels.base` |
+| （畫面字） | 急了 | 本規格新寫 | `habitLabels.switched` |
 
-## 事件・滷味攤阿姨
-
-| 說話者 | 句子 | 出處 | 位置 |
-|---|---|---|---|
-| 旁白 | 隔壁滷味攤的阿姨來借插座，順手塞給你一包米血。 | 本規格新寫 | `events.auntie.text` |
-| 選項 | 吃｜回 5 聲望｜→ 米血還是熱的。 | 本規格新寫 | `events.auntie.options[0]` |
-| 選項 | 回送她一張盤｜從包包挑一張送她，拿到「會員集點卡」（已有則回 5 聲望；包包 6 張以上）｜→ 她從圍裙口袋掏出一張集點卡：「這間我很熟，拿去。」 | 本規格新寫 | `events.auntie.options[1]` |
-
-## 事件・店貓
+## 一次性老闆小提示（第一次發生時，5 秒）
 
 | 說話者 | 句子 | 出處 | 位置 |
 |---|---|---|---|
-| 旁白 | 店貓睡在你想翻的那箱上。 | 本規格新寫 | `events.cat.text` |
-| 選項 | 等牠醒｜回 3 聲望｜→ 牠伸了個懶腰，換到隔壁那箱繼續睡。 | 本規格新寫 | `events.cat.options[0]` |
-| 選項 | 輕輕抽出來｜拿到那箱最上面那張（先亮給你看），被抓一下 −3 聲望｜→ 抽出來了。手背多了三條紅線。 | 本規格新寫 | `events.cat.options[1]` |
+| 老闆・第一次同色比星（含同色同星） | 同一色比星，多的扣差額。 | 本規格新寫 | `coachTips.tip_mirror` |
+| 老闆・第一次他沒照脾氣 | 他這手沒照脾氣。十手大概六手會照。 | 本規格新寫 | `coachTips.tip_offhabit` |
+| 老闆・第一次看穿 | 看穿：他照脾氣丟，被你剋中。 | 本規格新寫 | `coachTips.tip_read` |
+| 老闆・第一次急了／翻面 | 他急了，脾氣換了一句，照新的讀。 | 本規格新寫 | `coachTips.tip_switch` |
+| 老闆・第一次遇到盯手 | 他盯的是你掛「盯」的那顆星。 | 本規格新寫 | `coachTips.tip_eye` |
 
-## 事件・明天要不要排
-
-| 說話者 | 句子 | 出處 | 位置 |
-|---|---|---|---|
-| 旁白 | 一位客人在櫃檯問大家：明天 RSD 要不要去排？ | 本規格新寫 | `events.rsd.text` |
-| 選項 | 陪他去排｜−4 聲望，得到一張店主私藏金邊盤（先亮給你看）｜→ 老闆聽到了，默默從櫃檯底下抽出一張盤，推到你面前。 | 本規格新寫 | `events.rsd.options[0]` |
-| 選項 | 反正明年會再版｜回 2 聲望，下一場開局氣勢 +1｜→ 客人想了想：「也是。」 | 本規格新寫 | `events.rsd.options[1]` |
-
-## 事件・類比還是數位
+## 規則卡（「?」小抄）
 
 | 說話者 | 句子 | 出處 | 位置 |
 |---|---|---|---|
-| 旁白 | 兩個大叔在櫃檯前吵類比跟數位，吵到要你評評理。 | 本規格新寫 | `events.analog.text` |
-| 選項 | 站類比｜包包裡一張盤的硬蕊 +1（你挑，上限 5），吵到口乾 −2 聲望｜→ 類比大叔拍拍你的肩。你嗓子啞了。 | 本規格新寫 | `events.analog.options[0]` |
-| 選項 | 站數位｜下一場開局氣勢 +3｜→ 數位大叔請你喝了一罐咖啡。 | 本規格新寫 | `events.analog.options[1]` |
-| 選項 | 默默走開｜回 2 聲望｜→ 他們吵到現在，都沒發現你走了。 | 本規格新寫 | `events.analog.options[2]` |
+| （畫面字） | 品味對決・規則 | 本規格新寫 | `rules.title` |
+| （畫面字） | 三相剋決定每一手 | 本規格新寫 | `rules.sub` |
+| （畫面字） | 1 冷門剋經典，經典剋硬蕊，硬蕊剋冷門。 | 本規格新寫 | `rules.lines[0]` |
+| （畫面字） | 2 他先亮出這手的唱片；你點自己唱片上的一顆星，兩邊一起丟。 | 本規格新寫 | `rules.lines[1]` |
+| （畫面字） | 3 剋中的一方，用自己那顆星扣對方聲望；同一色就比星，多的扣差額。 | 本規格新寫 | `rules.lines[2]` |
+| （畫面字） | 4 他名牌上那句是他的脾氣，他多半照著丟。 | 本規格新寫 | `rules.lines[3]` |
+| （畫面字） | 5 王牌一軸 7 星，每場只能丟一次。 | 本規格新寫 | `rules.lines[4]` |
+| （畫面字） | 6 聲望先歸零的輸；他的唱片丟完，聲望多的贏。 | 本規格新寫 | `rules.lines[5]` |
+| （畫面字） | 例：對「那張我有」 | 本規格新寫 | `rules.example.title` |
+| （畫面字） | 你上一手丟了冷門，所以他多半也丟冷門。 | 本規格新寫 | `rules.example.read[0]` |
+| （畫面字） | 硬蕊剋冷門：這手丟硬蕊。 | 本規格新寫 | `rules.example.read[1]` |
+| （畫面字） | 他亮出 | 本規格新寫 | `rules.example.eLabel` |
+| （畫面字） | 你點 | 本規格新寫 | `rules.example.pLabel` |
+| （畫面字） | 他丟{attr} {n} | 本規格新寫 | `rules.example.rowLabel` |
+| （畫面字） | 發燒配件：自動生效，最多帶三件。 | 本規格新寫 | `rules.relics` |
+| （畫面字） | 點任何一張專輯＝唱片資訊。 | 本規格新寫 | `rules.foot[0]` |
+| （畫面字） | 你 10 聲望；客人 14、菁英 16、傳說藏家 18。 | 本規格新寫 | `rules.foot[1]` |
 
-## 事件・這張是不是初版
+## 對決盤面的字（{x} 由畫面代入）
 
 | 說話者 | 句子 | 出處 | 位置 |
 |---|---|---|---|
-| 旁白 | 有人拿著你手上的盤問：「這張是不是初版？」 | 本規格新寫 | `events.firstpress.text` |
-| 選項 | 自信地說是｜下一場開局氣勢 +3｜→ 他肅然起敬。你自己也不太確定。 | 本規格新寫 | `events.firstpress.options[0]` |
-| 選項 | 老實說不知道｜回 3 聲望｜→ 「我也不知道。」他笑了。 | 本規格新寫 | `events.firstpress.options[1]` |
+| （畫面字）・firstHand | 第一手：他多半丟最大的星。 | 本規格新寫 | `duelText.firstHand` |
+| （畫面字）・pickHint | 點一顆星選牌 | 本規格新寫 | `duelText.pickHint` |
+| （畫面字）・picked | 選好了： | 本規格新寫 | `duelText.picked` |
+| （畫面字）・again | 再點一次，或按丟 | 本規格新寫 | `duelText.again` |
+| （畫面字）・throwBtn | 丟！ | 本規格新寫 | `duelText.throwBtn` |
+| （畫面字）・pileLeft | 還有 {n} 張 | 本規格新寫 | `duelText.pileLeft` |
+| （畫面字）・lastPrefix | 上一手 | 本規格新寫 | `duelText.lastPrefix` |
+| （畫面字）・shows | 他亮出 | 本規格新寫 | `duelText.shows` |
+| （畫面字）・he | 他・ | 本規格新寫 | `duelText.he` |
+| （畫面字）・you | 你・ | 本規格新寫 | `duelText.you` |
+| （畫面字）・prevE | 他的上一手 | 本規格新寫 | `duelText.prevE` |
+| （畫面字）・prevP | 你的上一手 | 本規格新寫 | `duelText.prevP` |
+| （畫面字）・seeThrough | 看穿！ | 本規格新寫 | `duelText.seeThrough` |
+| （畫面字）・counter | {who}{ace}{a}剋{b} | 本規格新寫 | `duelText.counter` |
+| （畫面字）・aceWord | 王牌 | 本規格新寫 | `duelText.aceWord` |
+| （畫面字）・mirror | 同一色比星　{x} 比 {y} | 本規格新寫 | `duelText.mirror` |
+| （畫面字）・tie | 同一色、一樣多 | 本規格新寫 | `duelText.tie` |
+| （畫面字）・nothing | 沒事 | 本規格新寫 | `duelText.nothing` |
+| （畫面字）・hitE | 他 −{n} | 本規格新寫 | `duelText.hitE` |
+| （畫面字）・hitP | 你 −{n} | 本規格新寫 | `duelText.hitP` |
+| （畫面字）・badgeWin | 勝 | 本規格新寫 | `duelText.badgeWin` |
+| （畫面字）・badgeLose | 負 | 本規格新寫 | `duelText.badgeLose` |
+| （畫面字）・badgeTie | 平 | 本規格新寫 | `duelText.badgeTie` |
+| （畫面字）・eyeMark | 盯 | 本規格新寫 | `duelText.eyeMark` |
+| （畫面字）・koWin | 品味勝出 | 本規格新寫 | `duelText.koWin` |
+| （畫面字）・koWinSub | 你贏了【{name}】。 | 本規格新寫 | `duelText.koWinSub` |
+| （畫面字）・koLose | 聲望歸零 | 本規格新寫 | `duelText.koLose` |
+| （畫面字）・koLoseRetry | 老闆：……再一場。 | 本規格新寫 | `duelText.koLoseRetry` |
+| （畫面字）・pileOut | 他的唱片丟完了 | 本規格新寫 | `duelText.pileOut` |
+| （畫面字）・pileScore | 你 {p} 比 他 {e}：{who}贏 | 本規格新寫 | `duelText.pileScore` |
+| （畫面字）・switchBubble | ……急了。 | 本規格新寫 | `duelText.switchBubble` |
+| （畫面字）・hp | 聲望 | 本規格新寫 | `duelText.hp` |
+| （畫面字）・aceSlot | 王牌 | 本規格新寫 | `duelText.aceSlot` |
+| （畫面字）・aceOnce | 王牌 7 星・每場一次 | 本規格新寫 | `duelText.aceOnce` |
 
-## 事件・九成新
+## 發燒配件（點圖示看的說明／生效那手結果行補的一句）
 
 | 說話者 | 句子 | 出處 | 位置 |
 |---|---|---|---|
-| 旁白 | 客人把手機遞過來：網拍寫「九成新，聽不到十次」。 | 本規格新寫 | `events.ninetynine.text` |
-| 選項 | 下標｜得到一張盤（先亮給你看），但三軸各 −1（最低 1，盤上標「九成新」）｜→ 寄來了。封套上有一圈咖啡漬。 | 本規格新寫 | `events.ninetynine.options[0]` |
-| 選項 | 算了｜回 2 聲望｜→ 你把手機還給他。他請你喝了口茶。 | 本規格新寫 | `events.ninetynine.options[1]` |
+| 防塵套 | 每場第一次被剋少扣 1。｜防塵套：少扣 1 | 本規格新寫 | `relics.dustcover` |
+| 黑膠唱針 | 硬蕊剋中多扣 1。｜黑膠唱針：多扣 1 | 本規格新寫 | `relics.stylus` |
+| 洗碟水 | 同色同星時你扣他 1。｜洗碟水：他 −1 | 本規格新寫 | `relics.cleaner` |
+| 原版側標 | 經典剋中多扣 1。｜原版側標：多扣 1 | 本規格新寫 | `relics.obi` |
+| 神秘見本盤 | 冷門剋中多扣 1。｜神秘見本盤：多扣 1 | 本規格新寫 | `relics.testpress` |
+| 監聽耳機 | 每場第一手他照名牌丟。｜監聽耳機：他照名牌丟 | 本規格新寫 | `relics.headphone` |
+
+## 序章引導教學・第 1 手（老闆的泡泡）
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| 老闆・t1・說 | 這是他的脾氣。他多半照著丟。 | 本規格新寫 | `tutorial.steps.t1` |
+| 老闆・t2・說 | 只認排行榜：他會丟最大的星，經典。 | 本規格新寫 | `tutorial.steps.t2` |
+| 老闆・t3・說 | 冷門剋經典。 | 本規格新寫 | `tutorial.steps.t3` |
+| 老闆・t4・做 | 點這顆冷門。 | 本規格新寫 | `tutorial.steps.t4` |
+| 老闆・t5・做 | 再點一下，丟！ | 本規格新寫 | `tutorial.steps.t5` |
+| 老闆・t6・說 | 剋中：用你那顆星扣他。 | 本規格新寫 | `tutorial.steps.t6` |
+
+## 序章引導教學・第 2 手（老闆的泡泡）
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| 老闆・t7・做 | 他最大的是硬蕊。經典剋硬蕊。 | 本規格新寫 | `tutorial.steps.t7` |
+| 老闆・t8・做 | 丟！ | 本規格新寫 | `tutorial.steps.t8` |
+
+## 序章引導教學・第 3 手（老闆的泡泡）
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| 老闆・t9・做 | 冷門最大。剋冷門的是哪個？ | 本規格新寫 | `tutorial.steps.t9` |
+
+## 序章引導教學・第 4 手（老闆的泡泡）
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| 老闆・t10・建議 | 王牌 7 星，每場一次。接下來自己來。 | 本規格新寫 | `tutorial.steps.t10` |
+
+## 序章引導教學・按鈕與標題
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| （畫面字） | 老闆 | 本規格新寫 | `tutorial.ui.who` |
+| （畫面字） | 學會了： | 本規格新寫 | `tutorial.ui.learnedPrefix` |
+| （畫面字） | 重看教學 | 本規格新寫 | `tutorial.ui.replay` |
+| （畫面字） | ▶ 品味對決 | 本規格新寫 | `tutorial.ui.start` |
+| （畫面字） | ▶ 直接開打（我會玩） | 本規格新寫 | `tutorial.ui.skip` |
+| （畫面字） | 學會的規則 | 本規格新寫 | `tutorial.ui.learnedTitle` |
+
+## 序章引導教學・點錯時
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| 老闆 | 先點我指的這裡。 | 本規格新寫 | `tutorial.ui.wrong` |
+
+## 序章引導教學・學會的小卡（飛進「?」）
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| （畫面字） | 學會了：冷門剋經典 | 本規格新寫 | `tutorial.learned.L1` |
+| （畫面字） | 學會了：經典剋硬蕊 | 本規格新寫 | `tutorial.learned.L2` |
+| （畫面字） | 學會了：硬蕊剋冷門 | 本規格新寫 | `tutorial.learned.L3` |
+| （畫面字） | 學會了：王牌 7 星，每場一次 | 本規格新寫 | `tutorial.learned.L4` |
+
+## 店裡熱點（點了說一句）
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| 店貓・cat | ……喵。 | 本規格新寫 | `shopLines.cat` |
+| 老闆・poster | 冷門剋經典，經典剋硬蕊，硬蕊剋冷門。 | 本規格新寫 | `shopLines.poster` |
+| （畫面字）・locked | 這間還沒開。 | 本規格新寫 | `shopLines.locked` |
+| 老闆・ownerHint.title | 外面雨大，進來坐。 | 本規格新寫 | `shopLines.ownerHint.title` |
+| 老闆・ownerHint.scene | 慢慢看，不趕你。 | 本規格新寫 | `shopLines.ownerHint.scene` |
+| 老闆・ownerHint.night | 今晚的客人，一個一個來。 | 本規格新寫 | `shopLines.ownerHint.night` |
+| 老闆・ownerHint.duel | 先看他名牌上那句。 | 本規格新寫 | `shopLines.ownerHint.duel` |
+| 老闆・ownerHint.reward | 收好，別折到封套。 | 本規格新寫 | `shopLines.ownerHint.reward` |
+| 老闆・bin | 慢慢翻。點封面看唱片資訊。 | 本規格新寫 | `shopLines.bin` |
+| 老闆・booth | 挑一張你唱片櫃裡的，放來聽聽。 | 本規格新寫 | `shopLines.booth` |
+| 老闆・boothEmpty | 唱片櫃還空著。贏一場再來聽。 | 本規格新寫 | `shopLines.boothEmpty` |
+| （畫面字）・titleHint | 點店裡的東西看看：牆上的唱片、箱子、試聽機 | 本規格新寫 | `shopLines.titleHint` |
+
+## 今晚來客・第一次（soft 提示）
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| 老闆・nightIntro[0] | 今晚的客人，一個一個來。 | 本規格新寫 | `shopLines.nightIntro[0]` |
+| 老闆・nightIntro[1] | 點頭像，先看他的脾氣。 | 本規格新寫 | `shopLines.nightIntro[1]` |
+
+## 台北地圖預告
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| （畫面字）・taipeiHere | 你在這 | 本規格新寫 | `shopLines.taipeiHere` |
+| （畫面字）・taipeiNote | 其他店還沒開。之後一家一家開，每家的箱子、客人、老闆都不一樣。 | 本規格新寫 | `shopLines.taipeiNote` |
+| （畫面字）・taipeiLink | 出門看看（台北地圖・預告） | 本規格新寫 | `shopLines.taipeiLink` |
+| （畫面字）・backToShop | 回店裡 | 本規格新寫 | `shopLines.backToShop` |
+
+## 店裡熱點・箱子的名牌
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| （畫面字） | 爵士區 | 本規格新寫 | `bins.jazz.label` |
+| （畫面字） | 台灣區 | 本規格新寫 | `bins.tw.label` |
+| （畫面字） | 噪音區 | 本規格新寫 | `bins.noise.label` |
+
+## 今晚來客・結算
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| （畫面字） | 今晚來客 | 本規格新寫 | `night.label` |
+| （畫面字） | 打烊 | 本規格新寫 | `night.closing` |
+| （畫面字）・reached | 走到 {time} | 本規格新寫 | `summary.reached` |
+| （畫面字）・wins | 贏了 {n} 位 | 本規格新寫 | `summary.wins` |
+| （畫面字）・taken | 收了 | 本規格新寫 | `summary.taken` |
+| （畫面字）・none | 這晚沒收唱片 | 本規格新寫 | `summary.none` |
+| （畫面字）・again | 再來一夜 | 本規格新寫 | `summary.again` |
+
+## 包包與唱片櫃
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| （畫面字） | 門口一百塊三張 | 本規格新寫 | `junkLabel` |
+
+## 店內名牌（shops/basement.json）
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| （畫面字） | 霓虹地下室 | 本規格新寫 | `shops/basement.json.name` |
+| （畫面字） | （虛構店家・示範用） | 本規格新寫 | `shops/basement.json.district` |
+| （畫面字） | 上樓 | 本規格新寫 | `shops/basement.json.props[7].hot.label` |
+| （畫面字） | 試聽台 | 本規格新寫 | `shops/basement.json.props[11].hot.label` |
+| （畫面字） | 櫃檯 | 本規格新寫 | `shops/basement.json.props[14].hot.label` |
+| （畫面字） | 黑貓 | 本規格新寫 | `shops/basement.json.props[19].hot.label` |
+| （畫面字） | 龐克區 | 本規格新寫 | `shops/basement.json.props[20].hot.label` |
+| （畫面字） | 日本區 | 本規格新寫 | `shops/basement.json.props[21].hot.label` |
+| （畫面字） | 特價區 | 本規格新寫 | `shops/basement.json.props[22].hot.label` |
+| （畫面字） | 老闆 | 本規格新寫 | `shops/basement.json.hotspots[0].label` |
+
+## 店內名牌（shops/dip.json）
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| （畫面字） | （本店） | 本規格新寫 | `shops/dip.json.district` |
+| （畫面字） | 斜俯視 3/4（店主 2026-11-07 選的路線 P2）：x＝寬、y＝地板前緣（越下越近）、高度直接往上減；不縮放。人＝16×16 小人 ×3（48 格＝1.70 m，28.2 格/m）；1 格≈1.336 CSS px（390 寬）。 | 本規格新寫 | `shops/dip.json.note` |
+| （畫面字） | pools＝[x, y, rx, ry, 顏色, 強度]：窗、窗光落地、中島軌道燈、唱盤區、試聽桌燈、櫃檯；軌道燈的光池由 trackLights 道具自己給 | 本規格新寫 | `shops/dip.json.light.note` |
+| （畫面字） | 唱盤區（他左白台、你右黑台、老闆在兩台中間後面當裁判）：轉盤中心、半空相撞點、地板落點（碎片、平躺的唱片）、弧高 | 本規格新寫 | `shops/dip.json.duel.note` |
+| （畫面字） | 門口 | 本規格新寫 | `shops/dip.json.props[3].hot.label` |
+| （畫面字） | 牆上的唱片 | 本規格新寫 | `shops/dip.json.props[4].revealLabel` |
+| （畫面字） | 爵士區 | 本規格新寫 | `shops/dip.json.props[24].hot.label` |
+| （畫面字） | 台灣 | 本規格新寫 | `shops/dip.json.props[25].label` |
+| （畫面字） | 台灣區 | 本規格新寫 | `shops/dip.json.props[25].hot.label` |
+| （畫面字） | 試聽機 | 本規格新寫 | `shops/dip.json.props[26].hot.label` |
+| （畫面字） | 噪音區 | 本規格新寫 | `shops/dip.json.props[28].hot.label` |
+| （畫面字） | 櫃檯 | 本規格新寫 | `shops/dip.json.props[29].hot.label` |
+| （畫面字） | 公告 | 本規格新寫 | `shops/dip.json.hotspots[0].label` |
+| （畫面字） | 老闆 | 本規格新寫 | `shops/dip.json.hotspots[1].label` |
+| （畫面字） | 熟客：背對鏡頭翻後牆的箱子（P2 原型的位置）；舞台 API 不動她 | 本規格新寫 | `shops/dip.json.actors[1].note` |
+
+## 店內名牌（shops/taipei.json）
+
+| 說話者 | 句子 | 出處 | 位置 |
+|---|---|---|---|
+| （畫面字） | 台北市 | 本規格新寫 | `shops/taipei.json.name` |
+| （畫面字） | 踢館地圖（示意） | 本規格新寫 | `shops/taipei.json.district` |
+| （畫面字） | dip vinyl（本店） | 本規格新寫 | `shops/taipei.json.props[2].hot.label` |
+| （畫面字） | ？？？（還沒開） | 本規格新寫 | `shops/taipei.json.props[3].hot.label` |
+| （畫面字） | ？？？（還沒開） | 本規格新寫 | `shops/taipei.json.props[4].hot.label` |
+| （畫面字） | ？？？（還沒開） | 本規格新寫 | `shops/taipei.json.props[5].hot.label` |
+| （畫面字） | ？？？（還沒開） | 本規格新寫 | `shops/taipei.json.props[6].hot.label` |
+| （畫面字） | 示意地圖：只有本店開著；其他圖釘鎖住（v2 預告） | 本規格新寫 | `shops/taipei.json.meta.note` |
 
 ## 第二夜預告
 
@@ -405,6 +521,7 @@
 | 原句 | 聽說這裡有個新來的，品味不錯？ | `lines.boss.intro` |
 | 原句 | 三十年的耳朵，不會騙人。 | `lines.boss.stampSub` |
 | 原句 | 我的木箱裡，沒有一張爛盤。 | `lines.boss.win` |
+| 原句 | 跳過教學 | `tutorial.ui.skipTut` |
 | 原句 | 「這張放出來客人會跑光……我喜歡。」 | `pitch#swans-filth` |
 | 原句 | 「柏林時期第一張，B 面幾乎沒有人聲。第一次聽會覺得怪，第三次就回不去了。」 | `pitch#david-bowie-low` |
 | 原句 | 「1970 年出的時候沒人要，她就去鄉下住了三十年。後來全世界都在找這張。」 | `pitch#vashti-bunyan-just-another-diamond-day` |

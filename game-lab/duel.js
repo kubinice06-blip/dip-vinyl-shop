@@ -1,25 +1,25 @@
-// game-lab/duel.js — 品味對決・試做版：對決畫面＋動畫佇列（Agent C）。SPEC §6.4、§5.1、§7.4、§2.5。
-// window.DipLabDuel = { mount(container, opts), unmount(), debug() }
+// game-lab/duel.js — 品味對決 v3：店內舞台下方的極簡雙方盤面，三相剋為核心（Agent D；SPEC-v3 §4–§7）
 //
-// ── mount 契約（Agent D 照這個接）────────────────────────────────────────────────
-// DipLabDuel.mount(container, { duel, events, run, content, onEnd(result), onSave(duel), hooks })
-//   duel/events：engine.startDuel／startNodeDuel 的回傳；result = { over:'win'|'lose', duel }
-//   只透過 DipLabEngine.view / forecast / legalActions / isLegal / resolveTurn 讀寫對決。每次 resolveTurn 後立刻 onSave(duel)。
-// hooks（全部可省略；省略時用簡易替代品）：
-//   stage(el, 'duel') -> Stage   C 在 mount 時呼叫一次，el＝空的舞台橫條（寬 100%，高度會 flex 長高，約 140–200px；
-//                                 請以邏輯 y=417 為底對齊裁切）。C 用到的 Stage 方法（都會先 typeof 檢查）：
-//                                 foe(sprKeyOrAvatar)、put(id,key)（C 呼叫 put('p','duel')、put('f','duel')、put('o','counter')）、
-//                                 actor(id)->HTMLElement（C 在上面加 dl-act/e/p 與 atk/hurt/ko/warn class，動畫 CSS 在 duel.css）、
-//                                 unmount()。泡泡、💢、提示泡泡都由 C 自己畫（不需要 stage.say）。
-//   sprite(sprKeyOrAvatar, px) -> HTML string   LAB_SPR／avatarRows 小人（沒有 stage 時的替代舞台與小頭像用）
-//   hint(hintId) -> boolean      UI 只查／記 save.seen，第一次回 true；C 負責把 content.hints[id] 畫在老闆泡泡（h_counter 另描金框）
-//   info(card)                   唱片資訊彈窗（長按 450 ms、選中卡的 ⓘ、點他的唱片、點迷你唱盤）
-//   pause() / help()             頂欄 ⏸ ／ ？
-//   settings() -> { selfRead, fastAnim }        每手讀一次
-//   onEvent(ev, duel)            每個引擎事件播放時呼叫（圖鑑、唱片櫃等由 UI 自己記）
-//   player -> { name, avatar }   （可省略）
-//   artBase                      （可省略）沒有 stage 時替代舞台的圖檔路徑，預設 '<game-lab>/../art/'
-// ?fast=1 → 動畫 4 倍速；結算中點畫面任一處 → 4 倍速跑完；?debug=1 時 window.__dl = DipLabDuel.debug。
+// ── v3 contract（tutorial.js／ui.js 照這些名字找）──────────────────────────────────────────────────────────
+// data-tut  他的一塊：e-hud e-name e-hp e-habit e-rec e-cover e-stars e-star-c e-star-o e-star-h e-pile
+//           牌桌    ：table slot-e slot-p tri tri-oc tri-ch tri-ho result（浮框） lastline
+//           你的一塊：p-hud p-hp relics relic-<id> hand hand-ace hand-0 hand-1 hand-2 chip-ace chip-<i>-<attr> throw act
+// el(name)：上面的名字；'chip:best:<attr>'＝那一色星最多的星鈕（王牌能丟且同色也算；並列取最左，王牌格算最左）；
+//           'card:<id>'＝那張手牌；'@f'|'@p'|'@o'＝舞台錨點。
+//
+// DipLabDuel.mount(panelEl, { duel, events, run, content, enter, onEnd(result), onSave(duel),
+//   hooks: { stage, cardInfo(card,{attr,from}), hint(id,targets), settings()->{fastAnim}, onEvent(ev,duel), tut,
+//            beforeEnd(result)->Promise, endText(result)->{title,sub}|null, relicIcon(id,size)->html } })
+//   result（onEnd／'over'）＝{ over:'win'|'lose', win, by:'hp'|'pile', pHp, eHp, duel }
+// DipLabDuel.unmount() rerender() el(name) on(evt,cb)->off hold(bool)->count select(i|'ace'|null, attr?) play(act)->Promise
+//           tri(lit|null)（教學：強制亮哪幾條箭頭，'oc'|'ch'|'ho' 或陣列） autoplay(policy) stopAuto() debug()
+// gate（hooks.tut.gate(action) 回 false 就擋）：{kind:'chip',i,attr,id} {kind:'throw',i,attr,id} {kind:'info',where} {kind:'close'}
+// 事件：'phase'(choose|resolve|over) 'selected'({i,attr}|null) 'resolved'(evs：560 ms 浮框剛出現時，同步) 'settled'(evs：1460 浮框收成一行)
+//       'handStart'(view) 'over'(result) 'info'(where) 'infoClosed'(where) 'relic'(id)
+//
+// 規則：畫面上每個數字都來自引擎的 view()／preview()／legalActions()／resolveTurn() 事件；UI 不算傷害、不讀 intent。
+// 一手：點一顆星（選）→ 再點同一顆或按「丟！」（丟）。結算約 2 s：0 兩張飛上牌桌＋舞台互丟 → 560 浮框、角標、聲望 → 1460 收成「上一手」→ 2060 下一手。
+// 結算中點畫面任一處（封面除外）＝這手 4 倍速；?fast=1 → 全程 4 倍速；?debug=1 → window.__dl。
 (function () {
   'use strict';
   if (typeof window === 'undefined') return;
@@ -29,1542 +29,956 @@
     try { return new URL('.', location.href).href; } catch (_) { return ''; }
   })();
   const ZH = { c: '經典', o: '冷門', h: '硬蕊' }, ZH1 = { c: '經', o: '冷', h: '硬' }, ATTRS = ['c', 'o', 'h'];
-  const GL = { true: '真', feint: '晃', copy: '跟', grudge: '報', eye: '盯', hidden: '？' };
-  const BEATER = { c: 'o', o: 'h', h: 'c' };        // BEATER[x] 剋 x
-  const BEATS = { o: 'c', h: 'o', c: 'h' };         // x 剋 BEATS[x]
-  const NEXT = { c: 'o', o: 'h', h: 'c' };
+  const ARROW = { o: 'c', c: 'h', h: 'o' };            // 三角的箭頭（畫圖用；輸贏一律看引擎事件）：冷→經、經→硬、硬→冷
+  const EDGES = [['o', 'c'], ['c', 'h'], ['h', 'o']];
   const TIER_AXIS = { hall: 'c', pearl: 'o', heresy: 'h' };
-  const TIER_ZH = { hall: '殿堂', pearl: '流亡', heresy: '異端' };
-  const NEEDLE_DEG = 90;   // 唱針落點（12 點鐘起順時針）；唱臂支點在唱盤右上
-  const HEAVY180 = ['............', '...kkkkkk...', '..kkkkkkkk..', '.kkkkkkkkkk.', '.kkkkggkkkk.', '.kkkg..gkkk.', '.kkkg..gkkk.', '.kkkkggkkkk.', '.kkkkkkkkkk.', '..kkkkkkkk..', '...kkkkkk...', '............'];
+  const FIRST_HABITS = ['copy', 'grudge', 'repeat', 'rot'];   // 第一手還沒有「上一手」時退回丟最大的星（SPEC-v3 §2.2）
+  const LONG_MS = 450;
+  const DBL_MS = 230;      // 同一顆星連點兩下：230 ms 內的第二下吞掉（一次觸控不會被算成兩下）；之後的第二下＝丟
+  const RUSH_MS = 350;     // 丟出後 350 ms 內的點擊不算「加速這一手」
+  const T_HIT = 560, T_LINE = 1460, T_NEXT = 2060;
   const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, ch => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[ch]));
   const Eng = () => window.DipLabEngine;
   const Fx = () => window.DipLabFx || null;
-  const sfx = (n, o) => { const f = Fx(); if (f) try { f.sfx(n, o); } catch (_) {} };
+  const sfx = (n, o) => { const f = Fx(); if (f && f.sfx) try { f.sfx(n, o); } catch (_) {} };
   const qs = new URLSearchParams(location.search || '');
   const FAST = qs.get('fast') === '1';
+  const rmq = () => { try { return !!(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches); } catch (_) { return false; } };
 
+  // ------------------------------------------------------------------ covers
   function coverSrc(card) {
     if (!card) return '';
     if (card.localCover) { try { return new URL(card.localCover, BASE).href; } catch (_) {} }
     return card.coverUrl || '';
   }
-  function coverHTML(card) {
-    if (!card) return '<div class="dl-noimg"></div>';
+  function img(card) {
+    if (!card) return '<span class="cv noimg"></span>';
     const src = coverSrc(card);
+    if (!src) return `<span class="cv noimg"><span>${esc(card.album)}</span></span>`;
     const fb = card.localCover && card.coverUrl ? ` data-fb="${esc(card.coverUrl)}"` : '';
-    // 封面還在載入時：底下先看到黑膠＋盤名（圖畫出來就蓋掉），不會是一片沒有名字的黑
-    return src ? `<span class="dl-cvph" aria-hidden="true"><span>${esc(card.album)}</span></span><img class="dl-cv" src="${esc(src)}"${fb} alt="${esc(card.artist + '《' + card.album + '》')}" draggable="false">`
-      : `<div class="dl-noimg">${esc(card.album)}</div>`;
+    return `<img class="cv" src="${esc(src)}"${fb} alt="${esc((card.artist || '') + '《' + (card.album || '') + '》')}" draggable="false" decoding="async">`;
   }
-  const starsOf = (card, plus) => ATTRS.map(a => `<span class="${a}">${ZH1[a]}<b>${(card[a] | 0) + (plus || 0)}</b></span>`).join('');
+  const title = c => c ? `${c.artist || ''}《${c.album || ''}》` : '';
+  const aceAxisOf = c => c ? (TIER_AXIS[c.tier] || ATTRS.reduce((b, a) => ((c[a] | 0) > (c[b] | 0) ? a : b), 'c')) : 'c';
 
-  // ---------------------------------------------------------------- 預覽行（只整理 forecast，不算傷害）
-  function resText(o) {
-    if (!o) return '不知道';
-    switch (o.kind) {
-      case 'counter': return '他−' + o.toE;
-      case 'countered': return '你−' + o.toP;
-      case 'mirrorWin': return '撞 他−' + o.toE;
-      case 'mirrorLose': return '撞 你−' + o.toP;
-      case 'tie': return '撞 平';
-      case 'hegemonyE': case 'hegemonyP': return '霸權 互不傷';
-      case 'ult': return '他−' + o.toE;
-      case 'reflect': return '七星回擊 他−' + o.toE;
-      case 'block': return '割捨防禦 你−' + o.toP;
-      case 'eultHit': return '吃下 你−' + o.toP;
-      case 'trade': return '對轟 他−' + o.toE + ' 你−' + o.toP;
-    }
-    return '';
+  // ------------------------------------------------------------------ 引擎輸出 → 盤面要的形狀（只改名字，不算規則）
+  function normView(v, duel) {
+    v = Object.assign({}, v || {});
+    const e = (duel && duel.e) || {};
+    if (v.hand == null) v.hand = [];
+    if (!v.ace && v.aceUsed && v.aceCard) v.ace = v.aceCard;          // 用過的王牌仍留在王牌格（變淡、寫「用過」）
+    if (v.aceAxis == null && v.ace) v.aceAxis = aceAxisOf(v.ace);
+    if (v.pileMax == null) v.pileMax = Math.max(v.pile | 0, (e.deck && e.deck.length) || 7);
+    if (!v.habitLabel) v.habitLabel = v.switched ? '急了' : '脾氣';
+    if (v.first == null) v.first = !v.last && FIRST_HABITS.includes(v.habit);
+    if (!Array.isArray(v.relics)) v.relics = [];
+    return v;
   }
-  const resCls = o => !o ? 'eq' : o.toE > o.toP ? 'ok' : o.toP > o.toE ? 'ng' : 'eq';
-  function groupRows(fc, selfRead) {
-    if (!fc) return [];
-    if (fc.ult) return [{ ult: true, n: 6, res: resText(fc.outcome), cls: resCls(fc.outcome), outcome: fc.outcome }];
-    const rows = [], map = {};
-    for (const s of fc.slices) {
-      let key, row;
-      if (s.attr == null || !s.outcome) {
-        key = '?';
-        row = map[key] || (map[key] = { hidden: true, attr: null, glyph: 'hidden', n: 0, res: '不知道', cls: 'eq' });
-      } else {
-        const feint = s.glyph === 'feint', res = resText(s.outcome);
-        key = (selfRead ? 'g:' + s.glyph : 'a:' + s.attr + (feint ? 'f' : '')) + '|' + res;
-        row = map[key] || (map[key] = { attr: s.attr, glyph: s.glyph, feint, n: 0, res, cls: resCls(s.outcome), outcome: s.outcome, cells: [] });
-      }
-      if (!row.n) rows.push(row);
-      row.n++; if (row.cells) row.cells.push(s.i);
-    }
-    const ord = r => r.hidden ? 99 : (selfRead ? ['true', 'feint', 'copy', 'grudge', 'eye'].indexOf(r.glyph) : ATTRS.indexOf(r.attr) * 2 + (r.feint ? 1 : 0));
-    rows.sort((a, b) => ord(a) - ord(b));
-    return rows;
+  // 名牌那句：「急了：…」「B 面：…」的前綴收進左邊的黑底標籤
+  function habitParts(v) {
+    let lb = v.habitLabel || DT0.habitLabel, tx = String(v.habitLine || '');
+    const m = /^(急了|B ?面|A ?面)[：:]\s*/.exec(tx);
+    if (m) { lb = m[1].replace(/^([AB])面$/, '$1 面'); tx = tx.slice(m[0].length); }
+    return { lb, tx };
   }
-  function rowLabel(r, selfRead) {
-    if (r.ult) return '';
-    if (r.hidden) return '？×' + r.n;
-    if (selfRead) return GL[r.glyph] + '×' + r.n;
-    return ZH1[r.attr] + '×' + r.n + (r.feint ? '晃' : '');
+  // 盤面上的字：content.duelText 有就用（lint 掃 content.js），沒有就用這份（同一套字，SPEC-v3 §4、§6）
+  const DT0 = {
+    firstHand: '第一手：他多半丟最大的星。', pickHint: '點一顆星選牌', picked: '選好了：', again: '再點一次，或按丟', throwBtn: '丟！',
+    waiting: '演完就換下一手（點畫面跳過）', next: '下一張，演完就亮出', pileLeft: '還有 {n} 張', lastPrefix: '上一手', shows: '他亮出',
+    he: '他・', you: '你・', seeThrough: '看穿！', counter: '{who}{ace}{a}剋{b}', aceWord: '王牌', mirror: '同一色比星　{x} 比 {y}',
+    tie: '同一色、一樣多', nothing: '沒事', hitE: '他 −{n}', hitP: '你 −{n}', badgeWin: '勝', badgeLose: '負', badgeTie: '平', eyeMark: '盯',
+    koWin: '品味勝出', koWinSub: '你贏了【{name}】。', koLose: '聲望歸零', koLoseRetry: '老闆：……再一場。',
+    pileOut: '他的唱片丟完了', pileScore: '你 {p} 比 他 {e}：{who}贏', switchBubble: '……急了。', switchBubbleB: '……換面。', hp: '聲望', aceSlot: '王牌', aceUsed: '用過',
+    slotE: '他丟的', slotP: '你丟的', habitLabel: '脾氣',
+  };
+  function dtOf(content) {
+    const src = (content && content.duelText) || {};
+    return (k, vars) => {
+      let s = src[k] != null ? String(src[k]) : (DT0[k] != null ? DT0[k] : k);
+      if (vars) s = s.replace(/\{(\w+)\}/g, (m, n) => (vars[n] != null ? vars[n] : ''));
+      return s;
+    };
   }
-  function rowLong(r) {
-    if (r.ult) return r.res;
-    if (r.hidden) return `他有 ${r.n} 格還沒看過`;
-    return `他出${ZH[r.attr]}${r.feint ? '（晃）' : ''}時 ${r.res.replace('他−', '他扣 ').replace('你−', '你扣 ')}`;
-  }
-
-  // ---------------------------------------------------------------- 結果橫幅（由 clash.breakdown 組字）
-  const sgnTerm = t => (t.v >= 0 ? '＋' : '−') + t.label + ' ' + Math.abs(t.v);
-  const MAIN_K = ['atk', 'K', 'def', 'mirrorP', 'mirrorE', 'ult', 'eult', 'block', 'reflect'];
-  // 一個「星」項：值一律取 |v|（真的加減進去的數），有點播／B 面＋星時拆成「原星＋加成」。
-  // multi＝這項是兩個數加起來的；放在減號後面時要加括號，不然「5−2＋2」會被讀成 5。
-  function termStr(label, t) {
-    if (!t) return { s: '', multi: false };
-    const v = Math.abs(t.v);
-    if (t.note === '點播+2') return { s: `${label}${v - 2}＋點播 2`, multi: true };
-    const m = t.note && /^\+(\d+)星$/.exec(t.note);
-    if (m) return { s: `${label}${v - +m[1]}＋${m[1]}星`, multi: true };
-    return { s: `${label}${v}`, multi: false };
-  }
-  const minus = o => (o.multi ? `（${o.s}）` : o.s);
-  // 這手之前有沒有「你上一手」：對決畫面直接給 prevLast；結算頁只有存下來的 clash（prevLast 給 null），就看 clash.hand
-  const noLastOf = (c, ctx) => ctx.prevLast ? false : (c.hand != null ? (c.hand | 0) <= 1 : true);
-  // 這一格為什麼出這個屬性（輸的那手用來開頭，例：「被剋（盯：剋你最大張）！」）
-  function cellWhy(c, ctx) {
-    const g = c.glyph, ea = c.eAttr;
-    const gauge = !!(ctx.relics && ctx.relics.includes('gauge'));
-    const noLast = noLastOf(c, ctx);
-    switch (g) {
-      case 'true': return '真：照喊的出';
-      case 'copy': return noLast ? '跟：沒有上一手，照喊的出' : `跟：出你上一手的${ZH[ea]}`;
-      case 'grudge': return noLast ? '報：沒有上一手，照喊的出' : `報：剋你上一手的${ZH[BEATS[ea]]}`;
-      case 'eye': return gauge ? '盯：針壓計讓他照喊的出' : `盯：剋你最大張的${ZH[BEATS[ea]]}`;
-    }
-    return '';
-  }
-  function banner(c, ctx) {
-    ctx = ctx || {};
-    const bd = c.breakdown || [], by = k => bd.find(t => t.k === k), ex = bd.filter(t => !MAIN_K.includes(t.k));
-    const extras = ex.map(sgnTerm).join('');
-    const feint = c.glyph === 'feint';
-    const fe = `虛晃！他喊${ZH[c.bubble] || ''}，出的是${ZH[c.eAttr] || ''}：`;
-    // 輸的那手：章名後面直接講是哪一格（有 🔍 發現那行時就不重複）
-    const why = !ctx.habit && !feint ? cellWhy(c, ctx) : '';
-    const tag = why ? `（${why}）` : '';
-    let stamp = null, cls = 'ink', text = '', tone = '';
+  const T0 = dtOf(null);
+  // 一手的結果字（SPEC-v3 §6）。c＝clash 事件（或 view().last）。主詞一定先寫。
+  function clashText(c, T) {
+    T = T || T0;
+    const p = ZH[c.pAttr], e = ZH[c.eAttr], ace = c.ace ? T('aceWord') : '';
+    const W = T('badgeWin'), Lz = T('badgeLose'), D = T('badgeTie');
+    let st = null, l1 = '', l2 = '', cls = 'z', badges;
     switch (c.kind) {
-      case 'counter': case 'countered': {
-        const atk = by('atk'), K = by('K'), def = by('def');
-        const N = c.kind === 'counter' ? c.toE : c.toP;
-        const atkS = termStr(atk ? atk.label : '', atk).s;
-        const main = def && def.note === '擋住星差' ? `（${def.label}${def.star} 擋住星差）賭注${K ? K.v : c.K}` : `${atkS}−${minus(termStr(def ? def.label : '', def))}＋賭注${K ? K.v : c.K}`;
-        const body = main + extras + '＝' + N;
-        if (c.kind === 'counter') { stamp = c.stamp === 'seeThrough' ? '看穿' : '讀中'; cls = 'gold'; tone = 'win'; text = `${stamp}！${c.counterName || ''} ${body}`; }
-        else if (c.stamp === 'feintHit') { stamp = '虛晃'; cls = 'red'; tone = 'lose'; text = fe + body; }
-        else { stamp = '被剋'; cls = 'ink'; tone = 'lose'; text = `被剋${tag}！${c.counterName || ''} ${body}`; }
-        break;
-      }
-      case 'mirrorWin': case 'mirrorLose': {
-        const p = termStr(`你的${ZH[c.pAttr]}`, by('mirrorP')), e = termStr(`他的${ZH[c.eAttr]}`, by('mirrorE'));
-        if (c.kind === 'mirrorWin') { stamp = '撞招'; cls = 'ink'; tone = 'win'; text = `撞招！${p.s}−${minus(e)}${extras}＝${c.toE}`; }
-        else if (feint) { stamp = '虛晃'; cls = 'red'; tone = 'lose'; text = fe + `撞招 ${e.s}−${minus(p)}${extras}＝${c.toP}`; }
-        else { stamp = '撞招'; cls = 'ink'; tone = 'lose'; text = `撞招${tag}！${e.s}−${minus(p)}${extras}＝${c.toP}`; }
-        break;
-      }
-      case 'tie': {
-        const p = by('mirrorP'), e = by('mirrorE');
-        stamp = '撞招'; cls = 'ink'; text = `撞招！你的${ZH[c.pAttr]}${p ? Math.abs(p.v) : ''} 對 他的${ZH[c.eAttr]}${e ? Math.abs(e.v) : ''}：平手，雙方氣勢 +1`;
-        break;
-      }
-      case 'hegemonyE': case 'hegemonyP':
-        stamp = '霸權'; cls = 'grey'; text = '霸權：王牌被剋，這手互不傷害'; break;
-      case 'ult': {
-        const u = by('ult');
-        stamp = '輾壓'; cls = 'red'; tone = 'win'; text = `品味輾壓！氣勢 ${u ? u.v : c.toE}${extras}＝${c.toE}，他這手作廢`; break;
-      }
-      case 'trade': {
-        const u = by('ult'), eu = by('eult'), m = by('matrix');
-        stamp = '對轟'; cls = 'red'; text = `對轟！你的品味輾壓 ${u ? u.v : ''}${m ? sgnTerm(m) : ''} 對 他的品味輾壓 ${eu ? eu.v : ''}：他−${c.toE} 你−${c.toP}`; break;
-      }
-      case 'reflect': {
-        const K = by('K');
-        stamp = '七星回擊'; cls = 'gold'; tone = 'win'; text = `七星回擊！7＋賭注${K ? K.v : c.K}＝${c.toE}，他的氣勢歸零`; break;
-      }
-      case 'block': {
-        const b = by('block'), iso = by('isolation');
-        stamp = '割捨防禦'; cls = 'blue'; tone = c.toP ? 'lose' : 'win';
-        text = `割捨防禦：${ZH[c.pAttr]}${b ? b.star : ''}${iso ? sgnTerm(iso).replace('−', '＋') : ''} 擋下，吃 ${c.toP}`; break;
-      }
-      case 'eultHit': {
-        const eu = by('eult');
-        stamp = '吃下'; cls = 'red'; tone = 'lose';
-        text = `吃下輾壓：他的品味輾壓・${ZH[c.eAttr] || ''} ${eu ? eu.v : c.toP}，你這手沒剋到它＝${c.toP}`; break;
-      }
+      case 'counter': st = c.read ? T('seeThrough') : null; l1 = T('counter', { who: T('you'), ace, a: p, b: e }); badges = { e: Lz, p: W }; break;
+      case 'countered': l1 = T('counter', { who: T('he'), ace: '', a: e, b: p }); badges = { e: W, p: Lz }; break;
+      case 'mirrorWin': l1 = T('mirror', { x: (ace ? ace + ' ' : '') + c.pStar, y: c.eStar }); badges = { e: Lz, p: W }; break;
+      case 'mirrorLose': l1 = T('mirror', { x: c.pStar, y: c.eStar }); badges = { e: W, p: Lz }; break;
+      default: l1 = T('tie'); badges = (c.toE | 0) > 0 ? { e: Lz, p: W } : { e: D, p: D };
     }
-    let found = '';
-    if (ctx.habit) {
-      const g = ctx.habit.glyph, ea = c.eAttr;
-      const noLast = noLastOf(c, ctx);
-      const gauge = !!(ctx.relics && ctx.relics.includes('gauge'));
-      let why = '';
-      if (g === 'copy') why = noLast ? '沒有上一手，他照喊的出' : `這手他跟了你上一手的${ZH[ea]}`;
-      else if (g === 'grudge') why = noLast ? '沒有上一手，他照喊的出' : `這手他剋了你上一手的${ZH[BEATS[ea]]}`;
-      else if (g === 'eye') why = gauge ? `針壓計讓他的盯照喊的出${ZH[ea] || ''}` : `這手他剋了你最大張的${ZH[BEATS[ea]] || ''}`;
-      else if (g === 'feint') why = `這手他出剋你剋招的${ZH[ea] || ''}`;
-      else why = `這手他照喊的出${ZH[ea] || ''}`;
-      found = `🔍 發現：他有『${GL[g] || '？'}』。${why}`;
-    }
-    return { stamp, cls, text, found, tone };
+    if ((c.toE | 0) > 0) { l2 = T('hitE', { n: c.toE }); cls = 'g'; }
+    else if ((c.toP | 0) > 0) { l2 = T('hitP', { n: c.toP }); cls = 'r'; }
+    else l2 = T('nothing');
+    const notes = (c.notes || []).map(n => (typeof n === 'string' ? n : n && n.text) || '').filter(Boolean);
+    return { st, l1, l2, cls, badges, notes };
   }
-  function subLine(c, target) {
-    const bd = c.breakdown || [], by = k => bd.find(t => t.k === k);
-    const ex = bd.filter(t => !MAIN_K.includes(t.k) && (target !== 'p' || c.kind !== 'trade'));
-    const parts = [];
-    switch (c.kind) {
-      case 'counter': case 'countered': {
-        const atk = by('atk'), K = by('K'), def = by('def');
-        parts.push('賭注 ' + (K ? K.v : c.K));
-        const diff = (atk ? atk.v : 0) + (def ? def.v : 0);
-        if (diff > 0) parts.push('星差 ' + diff); else if (def && def.note === '擋住星差') parts.push('星差擋住');
-        break;
-      }
-      case 'mirrorWin': case 'mirrorLose': { const p = by('mirrorP'), e = by('mirrorE'); parts.push('星差 ' + Math.abs((p ? p.v : 0) + (e ? e.v : 0))); break; }
-      case 'ult': { const u = by('ult'); parts.push('氣勢 ' + (u ? u.v : c.toE)); break; }
-      case 'trade': { if (target === 'p') { const eu = by('eult'); return '他的品味輾壓 ' + (eu ? eu.v : c.toP); } const u = by('ult'); parts.push('氣勢 ' + (u ? u.v : '')); break; }
-      case 'reflect': { const K = by('K'); parts.push('7', '賭注 ' + (K ? K.v : c.K)); break; }
-      case 'block': { const eu = by('eult'), b = by('block'); return `輾壓 ${eu ? eu.v : ''}−擋 ${b ? -b.v : 0}` + bd.filter(t => t.k === 'isolation').map(sgnTerm).join(''); }
-      case 'eultHit': { const eu = by('eult'); return '品味輾壓 ' + (eu ? eu.v : c.toP); }
-    }
-    let s = parts.join('＋');
-    ex.forEach(t => { s += (t.v >= 0 ? '＋' : '−') + t.label + ' ' + Math.abs(t.v); });
-    return s;
+  function answerOf(o, T) {
+    T = T || T0;
+    if (!o) return { cls: '', text: '' };
+    if ((o.toE | 0) > 0) return { cls: 'g', text: T('hitE', { n: o.toE }) };
+    if ((o.toP | 0) > 0) return { cls: 'r', text: T('hitP', { n: o.toP }) };
+    return { cls: 'z', text: T('nothing') };
   }
 
-  // ================================================================ instance
+  // ------------------------------------------------------------------ module state
   let CUR = null;
-  function mount(container, opts) {
-    unmount();
-    CUR = createDuel(container, opts || {});
-    return CUR.api;
-  }
-  function unmount() { if (CUR) { try { CUR.destroy(); } catch (e) { console.error(e); } CUR = null; } }
+  const LISTEN = {};
+  function emit(evt, ...a) { const set = LISTEN[evt]; if (set) [...set].forEach(cb => { try { cb(...a); } catch (e) { console.error(e); } }); }
+  function on(evt, cb) { (LISTEN[evt] = LISTEN[evt] || new Set()).add(cb); return () => { if (LISTEN[evt]) LISTEN[evt].delete(cb); }; }
+  function mount(panel, opts) { unmount(); CUR = createDuel(panel, opts || {}); return CUR.api; }
+  function unmount() { if (CUR) { const c = CUR; CUR = null; try { c.destroy(); } catch (e) { console.error(e); } } }
 
-  function createDuel(container, opts) {
+  // ================================================================== instance
+  function createDuel(panel, opts) {
     const E = Eng();
     if (!E) throw new Error('DipLabDuel: DipLabEngine not loaded');
     const duel = opts.duel, content = opts.content || window.DipLabContent || {}, run = opts.run || null;
     const hooks = opts.hooks || {};
-    const enemy = (content.enemies && content.enemies[duel.e.id]) || { id: duel.e.id, name: duel.e.name };
-    const lines = (content.lines && content.lines[duel.e.id]) || {};
-    const node = run && run.pending && E.findNode ? E.findNode(run, run.pending.nodeId) : null;
+    const tut = hooks.tut || null;
+    const eid = duel && duel.e ? duel.e.id : null;
+    const enemy = Object.assign({ id: eid, name: duel && duel.e && duel.e.name, title: duel && duel.e && duel.e.title }, (content.enemies && content.enemies[eid]) || {});
+    const lines = (content.lines && content.lines[eid]) || {};
+    const T = dtOf(content);
     const settings = () => { try { return (hooks.settings && hooks.settings()) || {}; } catch (_) { return {}; } };
+    const view = () => normView(E.view(duel), duel);
     const S = {
-      v: E.view(duel), sel: null, armed: false, busy: false, destroyed: false,
-      speed: 1, anims: new Set(), timers: new Set(), rot: 0, lastLine: {}, seenLocal: {},
-      stage: null, fb: {}, bubT: {}, hintOn: false, hintTimer: 0, recAttr: null,
-      musicHand: -9, lastPlayed: null, ending: false, debug: { events: [], banner: '', rows: null, act: null, log: [] },
-      offMusic: null, offEnded: null, toggle: null, keyH: null, introDone: false,
-      hintQ: [], hintSticky: false, recBase: null, chainShown: false,
+      v: view(), phase: 'choose', sel: null, selAt: 0, busy: false, destroyed: false, speed: 1,
+      anims: new Set(), timers: new Set(), infoOpen: 0, held: 0, table: null, flash: null, triForce: null,
+      recNext: false, lp: null, swallow: null, enterDone: !opts.enter, ending: false, auto: false, tagged: false,
+      rush: false, playAt: 0, fitRaf: 0, ro: null, lastLine: {}, seenOff: false, debug: { log: [], hands: [] },
     };
+    const paused = () => !!(S.infoOpen || S.held);
     const baseSpeed = () => FAST ? 4 : (settings().fastAnim ? 2 : 1);
     S.speed = baseSpeed();
-    const rm = () => { const f = Fx(); return f ? f.reducedMotion() : false; };
+    const rm = () => { const f = Fx(); try { return f && f.reducedMotion ? f.reducedMotion() : rmq(); } catch (_) { return rmq(); } };
+    const log = s => { S.debug.log.push(s); if (S.debug.log.length > 400) S.debug.log.shift(); };
 
-    // ---------------- timing (speed-aware) ----------------
+    // ---------------- timing (speed- and pause-aware) ----------------
     function wait(ms) {
       return new Promise(res => {
         if (S.destroyed) return res();
-        let left = ms, last = performance.now();
+        let left = ms, last = performance.now(), h;
         const tick = () => {
           S.timers.delete(h);
           if (S.destroyed) return res();
-          const now = performance.now(); left -= (now - last) * S.speed; last = now;
-          if (left <= 0) res(); else { h = setTimeout(tick, Math.max(4, Math.min(20, left / S.speed))); S.timers.add(h); }
+          const now = performance.now();
+          if (!paused()) left -= (now - last) * S.speed;
+          last = now;
+          if (left <= 0) res(); else { h = setTimeout(tick, 16); S.timers.add(h); }
         };
-        let h = setTimeout(tick, Math.max(4, Math.min(20, ms / S.speed))); S.timers.add(h);
+        h = setTimeout(tick, Math.min(16, ms)); S.timers.add(h);
       });
     }
     function later(fn, ms) { const h = setTimeout(() => { S.timers.delete(h); if (!S.destroyed) fn(); }, ms); S.timers.add(h); return h; }
     function A(el, kf, o) {
       if (!el || !el.animate) return null;
       let a; try { a = el.animate(kf, o); } catch (_) { return null; }
-      a.playbackRate = S.speed; S.anims.add(a);
+      try { a.playbackRate = S.speed; if (paused()) a.pause(); } catch (_) {}
+      S.anims.add(a);
       const done = () => S.anims.delete(a); a.finished.then(done, done);
       return a;
     }
-    function setSpeed(s) { S.speed = s; S.anims.forEach(a => { try { a.playbackRate = s; } catch (_) {} }); const f = Fx(); if (f && f.setSpeed) f.setSpeed(s); }
-    function cssDur(el, ms) { if (el) el.style.animationDuration = Math.round(ms / S.speed) + 'ms'; }
+    function setSpeed(s) {
+      S.speed = s;
+      S.anims.forEach(a => { try { a.playbackRate = s; } catch (_) {} });
+      const f = Fx(); if (f && f.setSpeed) try { f.setSpeed(s); } catch (_) {}
+      if (hasStage('speed')) stg('speed', s);
+    }
+    const pauseAnims = () => S.anims.forEach(a => { try { a.pause(); } catch (_) {} });
+    const resumeAnims = () => S.anims.forEach(a => { try { if (a.playState === 'paused') a.play(); } catch (_) {} });
+    // 外殼開 ⏸／登場卡、教學要停在浮框上時 hold(true)，收掉 hold(false)（計數，可巢狀）：結算停在原地、盤面不收點擊
+    function hold(onOff) {
+      const was = S.held;
+      S.held = Math.max(0, S.held + (onOff ? 1 : -1));
+      if (S.held && !was) { pauseAnims(); if (S.lp) { clearTimeout(S.lp.h); S.lp = null; } root.classList.add('held'); if (hasStage('pause')) stg('pause', true); }
+      else if (!S.held && was) { root.classList.remove('held'); if (!paused()) resumeAnims(); if (hasStage('pause')) stg('pause', false); }
+      return S.held;
+    }
+
+    // ---------------- stage（常駐 DipLabStage；duel.js 只呼叫 API，新唱盤 API 有就用、沒有就退回 pose／float） ----------------
+    function stg(m, ...a) { const s = hooks.stage; if (!s || typeof s[m] !== 'function') return null; try { return s[m](...a); } catch (e) { console.error(e); return null; } }
+    const hasStage = m => !!(hooks.stage && typeof hooks.stage[m] === 'function');
+    function say(id, text, ms) { if (text) stg('say', id, text, { ms: ms || 1500, lift: 7 }); }
+    function pickLine(keys) {
+      for (const key of keys) {
+        let arr = lines[key]; if (arr == null) continue;
+        if (!Array.isArray(arr)) arr = [arr];
+        if (!arr.length) continue;
+        let i = Math.floor(Math.random() * arr.length);
+        if (arr.length > 1 && i === S.lastLine[key]) i = (i + 1) % arr.length;
+        S.lastLine[key] = i;
+        return arr[i];
+      }
+      return null;
+    }
+    function tags(onOff) {
+      if (onOff && !S.tagged) { stg('tag', 'f', enemy.name || '他', 'e', 'L'); stg('tag', 'p', '你', 'p', 'R'); S.tagged = true; }
+      else if (!onOff && S.tagged) { stg('untag', 'f'); stg('untag', 'p'); S.tagged = false; }
+    }
+    function holdSleeve(side, card, ace) {
+      if (!hasStage('hold')) return;
+      stg('hold', side, card ? (ace ? 'ace' : { sleeve: card.id }) : null);
+    }
+
+    // ---------------- hooks: tutorial / hints / info ----------------
+    function gate(action) {
+      if (!tut || typeof tut.gate !== 'function') return true;
+      try { return tut.gate(action) !== false; } catch (e) { console.error(e); return true; }
+    }
+    const hinted = new Set();
+    function hint(id, targets) {
+      if (!hooks.hint || hinted.has(id)) return;        // 一場只送一次；一輩子只出一次由外殼／教學記
+      hinted.add(id);
+      try { hooks.hint(id, targets || []); } catch (e) { console.error(e); }
+      log('hint:' + id);
+    }
+    function onEvent(ev) { if (hooks.onEvent) try { hooks.onEvent(ev, duel); } catch (e) { console.error(e); } }
+    function setPhase(p) {
+      S.phase = p;
+      if (root) root.dataset.phase = p;
+      if (tut && typeof tut.onPhase === 'function') try { tut.onPhase(p); } catch (e) { console.error(e); }
+      emit('phase', p);
+    }
+    async function openInfo(card, where, attr) {
+      if (!card || S.destroyed || S.held) return;
+      if (!gate({ kind: 'info', where })) return;
+      emit('info', where);
+      const fn = typeof hooks.cardInfo === 'function' ? hooks.cardInfo
+        : (window.DipLabCardInfo && typeof window.DipLabCardInfo.open === 'function' ? (c, o) => window.DipLabCardInfo.open(c, o) : null);
+      log('info:' + where + ':' + card.id);
+      if (!fn) return;
+      S.infoOpen++; pauseAnims();
+      try { await Promise.resolve(fn(card, { attr: attr || null, from: 'duel:' + where })); } catch (e) { console.error(e); }
+      S.infoOpen = Math.max(0, S.infoOpen - 1);
+      if (!paused()) resumeAnims();
+      if (S.destroyed) return;
+      if (tut && typeof tut.gate === 'function') try { tut.gate({ kind: 'close' }); } catch (_) {}
+      emit('infoClosed', where);
+    }
 
     // ---------------- DOM skeleton ----------------
     const root = document.createElement('div');
-    root.className = 'dl-root';
+    root.className = 'dl';
+    root.dataset.phase = 'choose';
     root.setAttribute('role', 'application');
     root.setAttribute('aria-label', '品味對決');
     root.innerHTML = `
-      <div class="dl-top">
-        <span class="dl-time"></span><span class="dl-tname"></span><span class="dl-hid" aria-label="隱藏習慣"></span>
-        <span class="dl-stake key" aria-live="polite"></span><span class="sp"></span>
-        <span class="dl-snd"></span>
-        <button type="button" class="dl-ic dl-help" aria-label="小抄">？</button>
-        <button type="button" class="dl-ic dl-pause" aria-label="暫停選單">⏸</button>
-      </div>
-      <div class="dl-stage"><div class="dl-stagehost"></div><div class="dl-board"></div><div class="dl-bubs">
-        <div class="dl-bub f tl"></div><div class="dl-bub o tl hint"></div><div class="dl-bub p"></div><div class="dl-anger">💢</div></div></div>
-      <div class="dl-ename"><span class="nm"></span><span class="tt"></span><span class="dl-phase"></span><span class="lab">聲望</span>
-        <div class="dl-hp e"><div class="gh"></div><div class="fl"></div></div><span class="dl-hpn e key"></span></div>
-      <div class="dl-eqi"><span class="lab">氣勢</span><div class="dl-segs"></div><span class="qn"></span><span class="uat"></span></div>
-      <div class="dl-mid">
-        <button type="button" class="dl-rec" aria-label="他擺上唱盤的唱片"><div class="cv"></div><div class="dl-stars key"></div></button>
-        <div class="dl-discw"><div class="dl-disc"><div class="dl-plate"><div class="dl-lbl"></div></div><div class="dl-gls"></div>
-          <div class="kill"></div><div class="dl-arm"><i class="base"></i><i class="rod"></i></div></div></div>
-        <div class="dl-side"><div class="chips"></div><div class="dl-table"><span class="who">你出</span><div class="tc"></div></div></div>
-      </div>
-      <div class="dl-hist"></div>
-      <div class="dl-res"><div class="dl-ban" aria-live="polite"><span class="bs"></span><span class="bt key"></span></div>
-        <button type="button" class="dl-tt" aria-label="正在播的唱片"><div class="rec"><div class="lb"></div></div><i class="ta"></i></button></div>
-      <div class="dl-me"><div class="l">
-          <div class="row"><span class="lab">聲望</span><div class="dl-hp me"><div class="gh"></div><div class="fl"></div></div><span class="dl-hpn p key"></span></div>
-          <div class="row"><span class="lab">氣勢</span><div class="dl-vu"></div><span class="qn"></span><span class="dl-peak">PEAK</span>
-            <span class="dl-chain"><span class="lab">相生</span><i>●</i><i>●</i><i>●</i><span class="nx"></span></span></div>
-        </div><button type="button" class="dl-ult key" aria-label="品味輾壓"></button></div>
-      <div class="dl-hand"></div>
-      <div class="dl-attrs"></div>`;
-    container.innerHTML = '';
-    container.appendChild(root);
+      <section class="dl-e" data-tut="e-hud">
+        <div class="nmrow"><b class="nm" data-tut="e-name"></b><span class="sub"></span><span class="sp"></span>
+          <span class="hpn" data-tut="e-hp"><span>${esc(T('hp'))}</span><b class="num key"></b></span></div>
+        <div class="hp"><i class="lost"></i><i class="fill"></i></div>
+        <div class="habit" data-tut="e-habit"><span class="lb"></span><span class="tx"></span></div>
+        <div class="rec" data-tut="e-rec"></div>
+      </section>
+      <section class="dl-t" data-tut="table">
+        <div class="slot e" data-tut="slot-e"></div>
+        <div class="slot p" data-tut="slot-p"></div>
+        <div class="tri" data-tut="tri"></div>
+        <div class="callout" data-tut="result" aria-live="polite"></div>
+        <div class="lastline" data-tut="lastline"></div>
+      </section>
+      <section class="dl-p" data-tut="p-hud">
+        <div class="nmrow"><b>你</b><span class="relics" data-tut="relics"></span><span class="sp"></span>
+          <span class="hpn" data-tut="p-hp"><span>${esc(T('hp'))}</span><b class="num key"></b></span></div>
+        <div class="hp"><i class="lost"></i><i class="fill"></i></div>
+        <div class="hand" data-tut="hand"></div>
+        <div class="act" data-tut="act"><div class="say"></div><button type="button" class="throw" data-tut="throw" disabled>${esc(T('throwBtn'))}</button></div>
+      </section>
+      <div class="dl-pop" role="status" hidden></div>
+      <div class="kost" aria-hidden="true"></div>
+      <div class="dl-fx" aria-hidden="true"></div>`;
+    panel.innerHTML = '';
+    panel.appendChild(root);
     const $ = s => root.querySelector(s);
     const els = {
-      time: $('.dl-time'), tname: $('.dl-tname'), hid: $('.dl-hid'), stake: $('.dl-stake'), snd: $('.dl-snd'),
-      stageWrap: $('.dl-stage'), host: $('.dl-stagehost'), board: $('.dl-board'), bubs: $('.dl-bubs'),
-      bf: $('.dl-bub.f'), bo: $('.dl-bub.o'), bp: $('.dl-bub.p'), anger: $('.dl-anger'),
-      nm: $('.dl-ename .nm'), tt: $('.dl-ename .tt'), phase: $('.dl-phase'), ehp: $('.dl-hp.e'), ehpn: $('.dl-hpn.e'),
-      eqi: $('.dl-eqi'), segs: $('.dl-segs'), eqn: $('.dl-eqi .qn'), uat: $('.dl-eqi .uat'),
-      rec: $('.dl-rec'), recCv: $('.dl-rec .cv'), stars: $('.dl-stars'), disc: $('.dl-disc'), plate: $('.dl-plate'), lbl: $('.dl-lbl'), gls: $('.dl-gls'),
-      kill: $('.dl-disc .kill'), arm: $('.dl-arm .rod'), side: $('.dl-side'), chips: $('.dl-side .chips'), table: $('.dl-table'), tableC: $('.dl-table .tc'),
-      hist: $('.dl-hist'), ban: $('.dl-ban'), bs: $('.dl-ban .bs'), bt: $('.dl-ban .bt'), tt2: $('.dl-tt'), ttLb: $('.dl-tt .lb'),
-      php: $('.dl-hp.me'), phpn: $('.dl-hpn.p'), vu: $('.dl-vu'), pqn: $('.dl-me .row:nth-child(2) .qn'), peak: $('.dl-peak'), chain: $('.dl-chain'),
-      ult: $('.dl-ult'), hand: $('.dl-hand'), attrs: $('.dl-attrs'),
+      e: $('.dl-e'), enm: $('.dl-e .nm'), esub: $('.dl-e .sub'), ehpn: $('.dl-e .hpn .num'), ehp: $('.dl-e .hp'),
+      habit: $('.habit'), hlb: $('.habit .lb'), htx: $('.habit .tx'), rec: $('.rec'),
+      table: $('.dl-t'), se: $('.slot.e'), sp: $('.slot.p'), tri: $('.tri'), call: $('.callout'), last: $('.lastline'),
+      p: $('.dl-p'), relics: $('.relics'), phpn: $('.dl-p .hpn .num'), php: $('.dl-p .hp'),
+      hand: $('.hand'), act: $('.act'), say: $('.act .say'), thr: $('.throw'), pop: $('.dl-pop'), kost: $('.kost'), fx: $('.dl-fx'),
     };
-    // 高度：容器沒給高度時，用可見高度
-    later(() => { if (root.getBoundingClientRect().height < 480) root.style.height = Math.max(560, window.innerHeight - root.getBoundingClientRect().top) + 'px'; }, 0);
-    els.segs.innerHTML = '<i></i>'.repeat(10) + '<b class="ul"></b>';
-    els.vu.innerHTML = Array.from({ length: 10 }, (_, i) => `<i class="${i < 5 ? 'g' : i < 7 ? 'y' : 'r'}"></i>`).join('');
     // 封面載入失敗：本機 → 遠端 → 文字
     root.addEventListener('error', ev => {
       const t = ev.target; if (!t || t.tagName !== 'IMG') return;
       if (t.dataset.fb && t.src !== t.dataset.fb) { const fb = t.dataset.fb; t.removeAttribute('data-fb'); t.src = fb; return; }
-      const d = document.createElement('div'); d.className = 'dl-noimg'; d.textContent = (t.alt || '').replace(/^.*《|》$/g, '');
+      const d = document.createElement('span'); d.className = 'cv noimg'; const s = document.createElement('span'); s.textContent = (t.alt || '').replace(/^.*《|》$/g, ''); d.appendChild(s);
       t.replaceWith(d);
     }, true);
 
-    // ---------------- stage ----------------
-    const artBase = hooks.artBase || (BASE ? new URL('../art/', BASE).href : '../art/');
-    function spriteHTML(key, px) {
-      if (hooks.sprite) { try { const h = hooks.sprite(key, px); if (h) return h; } catch (e) { console.error(e); } }
+    // ---------------- helpers ----------------
+    const pct = (x, m) => Math.max(0, Math.min(100, (x / (m || 1)) * 100));
+    function setHp(bar, numEl, hp, max, notch, animate) {
+      const fill = bar.querySelector('.fill'), lost = bar.querySelector('.lost');
+      const w = pct(Math.max(0, hp), max);
+      bar.querySelectorAll('.notch').forEach(n => n.remove());
+      [].concat(notch == null ? [] : notch).forEach(n => { if (!(n > 0)) return; const t = document.createElement('span'); t.className = 'notch'; t.style.left = pct(n, max) + '%'; bar.appendChild(t); });
+      numEl.textContent = `${Math.max(0, hp)}/${max}`;
+      if (!animate) { fill.style.transition = 'none'; lost.style.transition = 'none'; fill.style.width = w + '%'; lost.style.width = w + '%'; void fill.offsetWidth; fill.style.transition = ''; lost.style.transition = ''; return; }
+      const dur = Math.round(500 / S.speed);
+      fill.style.transitionDuration = dur + 'ms';
+      const old = parseFloat(fill.style.width) || 0;
+      if (w < old) { lost.style.transition = 'none'; lost.style.width = old + '%'; void lost.offsetWidth; lost.style.transition = ''; fill.style.width = w + '%'; later(() => { lost.style.transitionDuration = dur + 'ms'; lost.style.width = w + '%'; }, dur + 250); }
+      else { fill.style.width = w + '%'; lost.style.width = w + '%'; }
+    }
+    // 數字旁的小飄字（不吃點擊）：'left'＝聲望數字左邊往左飄
+    function floatAt(el, text, cls) {
+      if (!el || !text || S.destroyed) return;
+      const a0 = (el.closest && el.closest('.hpn')) || el, r = a0.getBoundingClientRect(), rr = root.getBoundingClientRect();
+      if (!r.width) return;
+      const d = document.createElement('span'); d.className = 'fl ' + (cls || ''); d.textContent = text;
+      els.fx.appendChild(d);
+      const fh = d.offsetHeight || 16;
+      d.style.left = Math.round(r.left - rr.left - 4) + 'px'; d.style.top = Math.round(r.top - rr.top + (r.height - fh) / 2) + 'px';
+      const kf = rm() ? [{ opacity: 0, transform: 'translate(-100%,0)' }, { opacity: 1, transform: 'translate(-100%,0)', offset: .2 }, { opacity: 1, transform: 'translate(-100%,0)', offset: .8 }, { opacity: 0, transform: 'translate(-100%,0)' }]
+        : [{ transform: 'translate(-100%,0)', opacity: 0 }, { transform: 'translate(calc(-100% - 6px),0)', opacity: 1, offset: .2 }, { transform: 'translate(calc(-100% - 10px),0)', opacity: 1, offset: .75 }, { transform: 'translate(calc(-100% - 14px),0)', opacity: 0 }];
+      d.style.transform = 'translate(-100%,0)';
+      const a = A(d, kf, { duration: 1300, easing: 'ease-out', fill: 'forwards' });
+      const rmv = () => d.remove(); if (a) a.finished.then(rmv, rmv); else later(rmv, 1300);
+    }
+    const cardOf = (v, i) => i === 'ace' ? v.ace : v.hand[i];
+    const selKey = s => s ? s.i + ':' + s.attr : '';
+    function actOf(sel) { return sel.i === 'ace' ? { type: 'ace', ace: true } : { type: 'card', i: sel.i, attr: sel.attr }; }
+    function safePreview(sel) {
+      if (!sel || typeof E.preview !== 'function') return null;
+      try { return E.preview(duel, actOf(sel)) || null; } catch (e) { console.error(e); return null; }
+    }
+    function legal(sel) {
+      if (!sel) return false;
       try {
-        if (key && typeof key === 'object' && typeof window.avatarRows === 'function' && typeof window.pixArtHTML === 'function') return window.pixArtHTML(window.avatarRows(key), px);
-        if (typeof window.sprRows === 'function' && typeof window.pixArtHTML === 'function') {
-          const heads = { boss: ['.....kkkkkk.....', '.....kkkkkk.....', '.....kkkkkk.....', '...kkkkkkkkkk...', '....ssssssss....', '....sskssyys....', '.....ssssss.....'] };
-          const head = heads[key] || ['................', '.....kkkkkk.....', '....kkkkkkkk....', '....kssssssk....', '....ssksskss....', '....ssssssss....', '.....ssssss.....'];
-          const shirt = key === 'owner' ? 'n' : key === 'p' ? 'b' : 'd';
-          return window.pixArtHTML(window.sprRows(head, shirt, 'k'), px);
-        }
-      } catch (_) {}
-      return `<div style="width:${px}px;height:${px}px;background:#333;border-radius:40% 40% 8px 8px"></div>`;
-    }
-    const foeKey = enemy.spr || enemy.avatar || 'e0';
-    const playerAv = (hooks.player && hooks.player.avatar) || (content.avatarsFallback && content.avatarsFallback[0]) || null;
-    function setupStage() {
-      if (hooks.stage) {
-        try { S.stage = hooks.stage(els.host, 'duel') || null; } catch (e) { console.error(e); S.stage = null; }
-      }
-      const st = S.stage;
-      if (st) {
-        try { if (typeof st.foe === 'function') st.foe(foeKey); } catch (e) { console.error(e); }
-        try { if (typeof st.put === 'function') { st.put('p', 'duel'); st.put('f', 'duel', foeKey); st.put('o', 'counter'); } } catch (e) { console.error(e); }
-      }
-      if (!st || typeof st.actor !== 'function') fallbackStage(!!st);
-      ['f', 'p', 'o'].forEach(id => { const a = actor(id); if (a) a.classList.add('dl-act', id === 'f' ? 'e' : id); });
-    }
-    function fallbackStage(spritesOnly) {
-      const W = els.host.clientWidth || 390, H = els.host.clientHeight || 160, s = W / 448;
-      const top = H - 417 * s;
-      const fb = document.createElement('div'); fb.className = 'dl-fb';
-      if (!spritesOnly) {
-        fb.style.backgroundImage = `url('${artBase}shop2-bg.jpg')`; fb.style.backgroundSize = '100% auto'; fb.style.backgroundPosition = `0 ${top}px`;
-        fb.innerHTML = `<div class="lay" style="top:${top}px;height:${492 * s}px;background-image:url('${artBase}shop2-fg-back.png');z-index:6"></div>
-          <div class="lay" style="top:${top}px;height:${492 * s}px;background-image:url('${artBase}shop2-fg-front.png');z-index:20"></div>`;
-      }
-      const put = (id, x, y, key, z) => {
-        const a = document.createElement('div'); a.className = 'act ' + id + ' bob';
-        a.style.width = (78 * s) + 'px'; a.style.left = ((x - 39) * s) + 'px'; a.style.bottom = ((417 - (y + 5)) * s) + 'px'; a.style.zIndex = z;
-        a.innerHTML = spriteHTML(key, Math.round(78 * s)); fb.appendChild(a); S.fb[id] = a;
-      };
-      put('o', 174, 325, 'owner', 2);
-      put('p', 48, 412, playerAv || 'p', 12);
-      put('f', 196, 412, foeKey, 12);
-      els.host.appendChild(fb);
-    }
-    function actor(id) {
-      const st = S.stage;
-      if (st && typeof st.actor === 'function') { try { const a = st.actor(id); if (a) return a; } catch (_) {} }
-      return S.fb[id] || null;
-    }
-    function sprAnim(id, cls, ms) {
-      const a = actor(id); if (!a) return;
-      a.classList.remove('atk', 'hurt'); void a.offsetWidth;
-      a.classList.add(cls); cssDur(a, ms);
-      later(() => { a.classList.remove(cls); a.style.animationDuration = ''; }, ms / S.speed + 30);
+        if (typeof E.isLegal === 'function') return !!E.isLegal(duel, actOf(sel));
+        const L = E.legalActions(duel) || [];
+        return L.some(a => sel.i === 'ace' ? (a.ace || a.type === 'ace') : (!a.ace && a.type !== 'ace' && a.i === sel.i && a.attr === sel.attr));
+      } catch (_) { return false; }
     }
 
-    // ---------------- bubbles ----------------
-    function bubbleAt(which) {
-      const sr = els.stageWrap.getBoundingClientRect(), W = sr.width, H = sr.height;
-      const a = actor(which), r = a && a.getBoundingClientRect();
-      const ax = r && r.width ? r.left - sr.left + r.width / 2 : (which === 'f' ? W * 0.44 : which === 'p' ? W * 0.11 : W * 0.39);
-      const ay = r && r.height ? r.top - sr.top : H - 70;
-      return { W, H, ax, ay, r: r && r.width ? { l: r.left - sr.left, t: r.top - sr.top, w: r.width, h: r.height } : null };
+    // ---------------- render: 他的一塊 ----------------
+    function renderE(v, opt) {
+      opt = opt || {};
+      els.enm.textContent = enemy.name || v.eName || '';
+      els.esub.textContent = enemy.title || v.eTitle || '';
+      if (!opt.keepHp) setHp(els.ehp, els.ehpn, v.eHp, v.eMax, v.notch, false);
+      renderHabit(v);
+      renderRec(v);
     }
-    function say(which, html, o) {
-      o = o || {};
-      const b = which === 'f' ? els.bf : which === 'o' ? els.bo : els.bp;
-      clearTimeout(S.bubT[which]);
-      if (!html) { b.classList.remove('on'); return; }
-      b.className = 'dl-bub ' + which + (which === 'o' ? ' tl hint' : which === 'f' ? ' tl' : '') + (o.tone ? ' ' + o.tone : '');
-      b.innerHTML = html;
-      const P = bubbleAt(which);
-      b.style.maxWidth = (which === 'f' ? Math.max(120, P.W - (P.r ? P.r.l + P.r.w * 0.78 : P.W * 0.5) - 6) : which === 'o' ? Math.min(230, P.W - 150) : 170) + 'px';
-      b.style.left = '0px'; b.style.top = '0px';
-      const bw = b.offsetWidth, bh = b.offsetHeight;
-      let x, y;
-      if (which === 'f') { x = P.r ? P.r.l + P.r.w * 0.8 : P.ax + 30; y = Math.max(4, (P.r ? P.r.t + P.r.h * 0.36 : P.ay + 20) - bh); }
-      else if (which === 'o') { x = P.r ? P.r.l + P.r.w * 0.82 : P.ax + 30; y = Math.max(19, P.r ? P.r.t + P.r.h * 0.2 - bh : 19); }
-      else { x = P.ax - bw / 2; y = Math.max(26, P.ay - bh - 6); }
-      x = Math.max(4, Math.min(P.W - bw - 4, x));
-      b.style.left = x + 'px'; b.style.top = y + 'px';
-      const tx = Math.max(6, Math.min(bw - 18, P.ax - x - 6));
-      b.style.setProperty('--tx', tx + 'px'); b.style.setProperty('--ox', (tx + 6) + 'px');
-      b.classList.remove('on'); void b.offsetWidth; b.classList.add('on');
-      if (o.ms) S.bubT[which] = later(() => b.classList.remove('on'), o.ms);
-      if (which === 'f' && o.voice !== false) voice(3);
+    function renderHabit(v) {
+      const h = habitParts(v);
+      els.hlb.textContent = h.lb; els.htx.textContent = h.tx;
     }
-    function voice(n) {
-      const f = Fx(), vo = enemy.voice; if (!f || !vo || !f.soundOn()) return;
-      for (let i = 0; i < n; i++) later(() => f.blip(vo.freq, vo.wave, vo.jitter || 0), i * 70);
-    }
-    function pickLine(key, fill) {
-      let arr = lines[key]; if (arr == null) return null;
-      if (!Array.isArray(arr)) arr = [arr];
-      if (!arr.length) return null;
-      let i = Math.floor(Math.random() * arr.length);
-      if (arr.length > 1 && i === S.lastLine[key]) i = (i + 1) % arr.length;
-      S.lastLine[key] = i;
-      let s = arr[i];
-      if (fill) s = s.replace(/\{lastAttr\}/g, fill);
-      return s;
-    }
-    function bubbleForHand(v) {
-      const it = v.intent; if (!it) return;
-      if (it.ult) {
-        const w = pickLine('ultWarn');
-        say('f', `<b>殺氣騰騰：品味輾壓・${ZH[it.attr]} ${it.dmg}</b>${w ? '<br>' + esc(w) : ''}`, { tone: 'red' });
+    function renderRec(v) {
+      const n = v.pile | 0, max = Math.max(n, v.pileMax | 0);
+      const bars = Array.from({ length: max }, (_, k) => `<i${k < n ? '' : ' class="x"'}></i>`).join('');
+      const pile = `<div class="pile" data-tut="e-pile"><span class="bars">${bars}</span><small>${esc(T('pileLeft', { n }))}</small></div>`;
+      if (S.recNext || !v.eCard) {
+        els.rec.innerHTML = `<span class="cv nextph" aria-hidden="true">…</span><div class="tx"><div class="l1"><small>${S.recNext && !v.over ? esc(T('next')) : ''}</small></div>
+          <div class="estars" data-tut="e-stars">${ATTRS.map(a => `<div class="es q" data-tut="e-star-${a}"><span class="k"><i>${ZH1[a]}</i>?</span><span class="ans"></span></div>`).join('')}</div></div>${pile}`;
         return;
       }
-      const recd = it.record || {};
-      // 序章回嘴的伏筆：第一手他的泡泡改講 UI 給的那句
-      const first = v.hand === 1 && typeof hooks.firstBubble === 'string' && hooks.firstBubble ? hooks.firstBubble : null;
-      const line = first || (recd.tier && lines.aceOut ? pickLine('aceOut') : pickLine('bubble'));
-      say('f', `${line ? esc(line) : ''}<span class="call ${it.bubble}">${ZH[it.bubble]}！</span>`);
+      const c = v.eCard;
+      els.rec.innerHTML = `<button type="button" class="cvb" data-tut="e-cover" data-card="${esc(c.id)}" aria-label="唱片資訊：${esc(title(c))}">${img(c)}</button>
+        <div class="tx"><div class="l1" data-card="${esc(c.id)}"><small>${esc(T('shows'))}</small>${esc(title(c))}</div>
+        <div class="estars" data-tut="e-stars">${ATTRS.map(a => `<div class="es" data-tut="e-star-${a}"><span class="k ${a}"><i>${ZH1[a]}</i><b class="key">${c[a] | 0}</b></span><span class="ans"></span></div>`).join('')}</div></div>${pile}`;
+      renderAnswers();
     }
-
-    // ---------------- hints (owner bubble) ----------------
-    // 這幾個提示是「這一手不看懂就會吃虧」的，可以蓋掉正在顯示的一般提示（例：序章變臉那手同時接成 2 連）
-    const HINT_PRIORITY = { h_face: 1, h_eult: 1, h_reflect: 1 };
-    // 第一手的兩句教學不靠計時消失：留到玩家下一個動作（點盤／出手）才收
-    const HINT_STICKY = { h_counter: 1, h_forecast: 1 };
-    // 看「這一手」的提示：要講的那一刻條件還成立才講；不排隊（每手開始時重新判斷），免得上一手的「七星回擊」講在下一手
-    const HINT_NOW = {
-      h_reflect: v => !!(v.intent && v.intent.ult && v.p.aceCanReflect),
-      h_eult: v => !!(v.intent && v.intent.ult && !v.p.aceCanReflect),
-      h_ult: v => v.p.qi >= 6,
-      h_ace: v => !!(v.prologue && v.hand >= 2 && !v.p.aceUsed),
-      h_counter: v => !!(v.prologue && v.hand === 1),
-      h_forecast: () => S.sel != null,
-      h_request: v => !!v.request,
-      h_skip: v => !!(v.e.quirk && v.e.quirk.type === 'skip'),
-      h_copy: v => glyphHints(v).includes('h_copy'),
-      h_grudge: v => glyphHints(v).includes('h_grudge'),
-      h_eye: v => glyphHints(v).includes('h_eye'),
-      h_hidden: v => glyphHints(v).includes('h_hidden'),
-    };
-    const hintStale = id => !!(HINT_NOW[id] && S.v && !HINT_NOW[id](S.v));
-    function hint(id) {
-      const text = content.hints && content.hints[id];
-      if (!text) return false;
-      // 結算動畫中冒出來的提示先排隊，等這手播完再講（不跟章、飄字、他的台詞疊在一起）；看這一手的提示不排隊
-      if (S.busy) { if (!HINT_NOW[id] && !S.hintQ.includes(id)) S.hintQ.push(id); return false; }
-      if (hintStale(id)) return false;
-      if (S.hintOn && !HINT_PRIORITY[id]) return false;
-      let ok = false;
-      if (hooks.hint) { try { ok = !!hooks.hint(id); } catch (e) { console.error(e); } }
-      else if (!S.seenLocal[id]) { S.seenLocal[id] = true; ok = true; }
-      if (!ok) return false;
-      S.hintOn = true; S.hintId = id;
-      const sticky = !!HINT_STICKY[id];
-      S.hintSticky = sticky;
-      say('o', esc(text), sticky ? {} : { ms: 3500 });
-      clearTimeout(S.hintTimer);
-      if (!sticky) S.hintTimer = later(() => { S.hintOn = false; }, 3500);
-      S.debug.log.push('hint:' + id);
-      return true;
-    }
-    function hideHint() { if (S.hintOn) { say('o', null); S.hintOn = false; S.hintSticky = false; clearTimeout(S.hintTimer); } }
-    function firstHint(ids) { for (const id of ids) if (id && hint(id)) return id; return null; }
-    function glyphHints(v) {
-      const out = [];
-      const sl = v.intent && !v.intent.ult ? v.intent.slices : [];
-      ['copy', 'grudge', 'eye'].forEach(g => { if (sl.some(s => s.glyph === g)) out.push('h_' + g); });
-      if (sl.some(s => s.glyph === 'hidden')) out.push('h_hidden');
-      return out;
-    }
-
-    // ---------------- render ----------------
-    function hpBar(bar, hp, max, notches, crossed) {
-      const pct = x => Math.max(0, Math.min(100, x / max * 100));
-      bar.querySelector('.fl').style.width = pct(hp) + '%';
-      const gh = bar.querySelector('.gh'); gh.classList.remove('red'); gh.style.width = pct(hp) + '%';
-      bar.querySelectorAll('.nt').forEach(n => n.remove());
-      (notches || []).forEach((n, i) => {
-        const t = document.createElement('i'); t.className = 'nt' + (crossed && crossed[i] ? ' crack' : ''); t.style.left = pct(n) + '%';
-        t.title = '變臉刻度 ' + n; bar.appendChild(t);
-      });
-    }
-    function hpAnim(bar, from, to, max) {
-      const pct = x => Math.max(0, Math.min(100, x / max * 100));
-      const fl = bar.querySelector('.fl'), gh = bar.querySelector('.gh');
-      if (to < from) {
-        gh.classList.remove('red'); gh.style.width = pct(from) + '%'; fl.style.transition = 'none'; fl.style.width = pct(to) + '%';
-        void fl.offsetWidth; fl.style.transition = '';
-        later(() => { gh.style.transitionDuration = (400 / S.speed) + 'ms'; gh.classList.add('red'); gh.style.width = pct(to) + '%'; }, 250 / S.speed);
-      } else { gh.style.width = pct(to) + '%'; fl.style.width = pct(to) + '%'; }
-    }
-    function renderTop(v) {
-      els.time.textContent = (node && node.time) || (v.prologue ? '21:30' : '');
-      els.tname.textContent = enemy.name || v.e.name || '';
-      const hasHid = v.e.hasHidden;
-      els.hid.textContent = hasHid ? (v.e.hiddenGlyph ? GL[v.e.hiddenGlyph] : '？') : '';
-      els.hid.classList.toggle('known', !!v.e.hiddenGlyph);
-      els.hid.title = v.e.hiddenGlyph ? '發現過的習慣：' + GL[v.e.hiddenGlyph] : '他還藏一個習慣';
-      els.stake.innerHTML = `賭注×<b>${v.K}</b>`;
-    }
-    function renderEnemy(v) {
-      els.nm.textContent = enemy.name || v.e.name;
-      els.tt.textContent = enemy.title || '';
-      const labels = enemy.phaseLabels;
-      els.phase.textContent = labels && labels[v.e.phase] && v.e.notches.length ? labels[v.e.phase] : '';
-      hpBar(els.ehp, v.e.hp, v.e.maxHp, v.e.notches, v.e.notches.map((n, i) => i < v.e.phase));
-      els.ehpn.textContent = Math.max(0, v.e.hp);
-      eqi(v.e.qi, v);
-    }
-    function eqi(q, v) {
-      v = v || S.v;
-      els.segs.querySelectorAll('i').forEach((s, i) => s.classList.toggle('on', i < q));
-      const ul = els.segs.querySelector('.ul');
-      if (v.e.ultAt <= 10) { ul.style.display = ''; ul.style.left = (v.e.ultAt * 11 - 2) + 'px'; } else ul.style.display = 'none';
-      els.eqn.textContent = q;
-      const it = v.intent;
-      els.eqi.classList.toggle('ult', !!(it && it.ult));
-      if (v.e.ultAt > 10) els.uat.innerHTML = '<span style="color:var(--gray)">不輾壓</span>';
-      else { const ua = it && it.ult ? it.attr : v.e.ultAttr; els.uat.innerHTML = `輾壓 ${v.e.ultAt}・<span class="ut ${ua}">${ZH[ua] || ''}</span>`; }
-    }
-    function discSlices(v) {
-      const it = v.intent;
-      if (it && !it.ult && it.slices) return it.slices.map(s => ({ i: s.i, glyph: s.glyph, attr: s.attr }));
-      const d = duel.e.disc || [];
-      return d.map((g, i) => ({ i, glyph: g === 'hidden' ? (duel.e.habitKnown && duel.e.hidden ? duel.e.hidden : 'hidden') : g, attr: null }));
-    }
-    // 唱盤上的字：角度 deg（0＝正上方，順時針）、半徑 r → 整數 px 平移
-    function slXY(deg, r) { const t = deg * Math.PI / 180; return `translate(${Math.round(r * Math.sin(t))}px,${Math.round(-r * Math.cos(t))}px)`; }
-    function placeSlices(rot) { els.gls.querySelectorAll('.dl-sl').forEach(n => { n.style.transform = slXY(+n.dataset.a + rot, +n.dataset.r); }); }
-    // 轉盤動畫：字的那層跟唱盤轉同樣的角度、每個字反轉回正；轉完放回整數平移
-    function orbitSlices(R0, R1, o) {
-      const out = [A(els.gls, [{ transform: 'rotate(0deg)' }, { transform: `rotate(${R1 - R0}deg)` }], o)];
-      els.gls.querySelectorAll('.dl-sl .in').forEach(n => out.push(A(n, [{ transform: 'rotate(0deg)' }, { transform: `rotate(${R0 - R1}deg)` }], o)));
-      return out;
-    }
-    // 氣場唱盤：一張黑膠（溝紋整面看得到）＋中間一小圈圈標（他這手的唱片封面）＋唱臂。
-    // 6 格＝溝紋上的 6 個字（真／晃／跟…），字旁的小色塊＝那格他會出的屬性（色＝真實機率；字＋色）。不畫扇形、不畫輻條：不是輪盤。
-    function renderDisc(v) {
-      const selfRead = settings().selfRead && !v.prologue;
-      const sl = discSlices(v), ult = !!(v.intent && v.intent.ult);
-      els.lbl.style.background = '';
-      const rot = S.rot;
-      const showDot = !selfRead && !ult;
-      const h = '<div class="dl-hl"></div><div class="dl-inr"></div><div class="dl-hole"></div>';
-      // 字與色塊不放在會轉的唱盤裡：轉過的圖層裡的字會被旋轉兩次再取樣，1x 螢幕上「晃」會糊成「旯」。
-      // 停著的時候一律是整數 px 的平移、不旋轉不縮放；轉盤的那 0.5 秒才整層跟著轉（spinTo／resetDisc）。
-      // 字在半徑 39、色塊在 22：兩個方塊不重疊（以前 35／22 會讓色塊蓋住「晃」的右下角，看起來像「旯」）。
-      let g = '';
-      sl.forEach((s, i) => {
-        const a = i * 60 + 30;
-        const al = s.glyph === 'hidden' ? '？：還沒看過的習慣' : `${GL[s.glyph]}：${glyphWhy(s.glyph, v)}${s.attr ? '（' + ZH[s.attr] + '）' : ''}`;
-        g += `<div class="dl-sl gl${s.glyph === 'hidden' ? ' hid' : ''}" data-i="${i}" data-a="${a}" data-r="39" style="transform:${slXY(a + rot, 39)}" aria-label="${esc(al)}"><div class="in"><span class="g key">${GL[s.glyph] || "？"}</span></div></div>`;
-        if (showDot && s.attr) g += `<div class="dl-sl d ${s.attr}" data-i="${i}" data-a="${a}" data-r="22" style="transform:${slXY(a + rot, 22)}"><div class="in">${ZH1[s.attr]}</div></div>`;
-      });
-      els.lbl.innerHTML = h;
-      els.gls.innerHTML = g;
-      const rc = v.intent && v.intent.record, src = rc ? coverSrc(rc) : '';
-      const inr = els.lbl.querySelector('.dl-inr');
-      if (inr && src) inr.style.backgroundImage = `url("${src.replace(/"/g, '%22')}")`;
-      els.plate.style.transform = `rotate(${rot}deg)`;
-      els.disc.classList.toggle('ult', ult);
-      els.kill.innerHTML = ult ? `殺氣騰騰<br>輾壓・${ZH[v.intent.attr]} <b>${v.intent.dmg}</b>` : '';
-      els.disc.setAttribute('aria-label', ult ? `殺氣騰騰：品味輾壓・${ZH[v.intent.attr]} ${v.intent.dmg}` : '氣場唱盤：' + sl.map(s => GL[s.glyph] + (s.attr ? ZH1[s.attr] : '')).join('、'));
-    }
-    function glyphWhy(g, v) {
-      const last = v.p.lastAttr;
-      switch (g) {
-        case 'true': return '照喊的出';
-        case 'feint': return '出剋你剋招的';
-        case 'copy': return last ? '你上一手' + ZH[last] : '出你上一手';
-        case 'grudge': return last ? '剋你上一手' + ZH[last] : '剋你上一手';
-        case 'eye': return '剋你最大張';
-      }
-      return '';
-    }
-    function renderRecord(v) {
-      const it = v.intent, rc = it && it.record;
-      if (!rc) { els.recCv.innerHTML = ''; els.stars.innerHTML = ''; return; }
-      const plus = rc.tier ? 0 : (v.e.starPlus || 0);
-      const call = it.ult ? `<span class="call" style="background:var(--red)">輾壓 ${ZH[it.attr]}</span>` : `<span class="call ${it.bubble}">喊 ${ZH[it.bubble]}</span>`;
-      els.recCv.innerHTML = coverHTML(rc) + call + (plus ? `<span class="plus">＋${plus}</span>` : '') + (rc.tier ? `<span class="acetag dl-tier ${rc.tier}">${TIER_ZH[rc.tier]}</span>` : '');
-      els.recCv.className = 'cv' + (rc.tier ? ' dl-shine ' + rc.tier : '');
-      els.stars.innerHTML = starsOf(rc, plus);
-      els.stars.classList.toggle('boost', !!plus);
-      els.rec.setAttribute('aria-label', `他擺上唱盤：${rc.artist}《${rc.album}》 經${(rc.c | 0) + plus} 冷${(rc.o | 0) + plus} 硬${(rc.h | 0) + plus}，喊${ZH[it.bubble] || ''}`);
-    }
-    function renderSide(v) {
-      const ch = [];
-      if (v.request) ch.push(`<span class="dl-chip req">點播：${esc((content.requests && content.requests[v.request]) || v.request)}</span>`);
-      if (v.e.quirk && v.e.quirk.type === 'skip') ch.push(`<span class="dl-chip skip">跳針 +${v.e.quirk.val}</span>`);
-      if (v.p.aceCanReflect) ch.push('<span class="dl-chip reflect">王牌接得住</span>');
-      if (v.e.starPlus) ch.push(`<span class="dl-chip bside">唱片 ＋${v.e.starPlus} 星</span>`);
-      els.chips.innerHTML = ch.join('');
-      els.board.textContent = v.request ? '今晚點播：' + ((content.requests && content.requests[v.request]) || v.request) : '';
-    }
-    function renderHist(v) {
-      const h = (v.history || []).slice(-3);
-      // 序章第 1 手先不擺史冊（第一眼要看的東西已經夠多了）
-      els.hist.classList.toggle('pd', !!(v.prologue && !h.length));
-      if (!h.length) { els.hist.innerHTML = '<span class="lab">史冊</span><span class="lab">（還沒出過手）</span>'; return; }
-      els.hist.innerHTML = '<span class="lab">史冊</span>' + h.map(x => {
-        const mk = x.toE > x.toP ? '<b class="ok">✔</b>' : x.toP > x.toE ? '<b class="ng">✘</b>' : '<b class="eq">＝</b>';
-        const pa = x.pAct === 'ult' ? '<b class="h">輾</b>' : `<b class="${x.pAttr}">${ZH1[x.pAttr]}</b>`;
-        const ea = x.eUlt ? '<b class="h">輾</b>' : `<b class="${x.eAttr}">${ZH1[x.eAttr]}</b>${x.glyph === 'feint' ? '晃' : ''}`;
-        return `<span>${pa}vs${ea}${mk}</span>`;
-      }).join('');
-    }
-    function renderMe(v, qOverride) {
-      hpBar(els.php, v.p.hp, v.p.maxHp, [], null);
-      els.phpn.textContent = Math.max(0, v.p.hp);
-      vu(qOverride != null ? qOverride : v.p.qi);
-      const n = v.p.chainLen | 0;
-      // 序章：相生燈等第一次接成 2 連才出現
-      if (!v.prologue || n >= 2) S.chainShown = true;
-      els.chain.classList.toggle('pd', !S.chainShown);
-      els.chain.querySelectorAll('i').forEach((d, i) => d.classList.toggle('on', i < n));
-      els.chain.querySelector('.nx').innerHTML = v.p.chainLast ? `→<span class="${NEXT[v.p.chainLast]}">${ZH1[NEXT[v.p.chainLast]]}</span>` : '';
-      renderUlt(v);
-    }
-    function vu(q) {
-      els.vu.querySelectorAll('i').forEach((d, i) => d.classList.toggle('on', i < q));
-      els.pqn.textContent = q;
-      els.peak.classList.toggle('on', q >= 6);
-    }
-    function ultForecast(v) {
-      if (v.p.qi < 6 || v.over) return null;
-      let fc = null; try { fc = E.forecast(duel, { type: 'ult' }); } catch (_) { return null; }
-      if (!fc) return null;
-      if (fc.ult) return fc.outcome;
-      const s = fc.slices.find(x => x.outcome); return s ? s.outcome : null;
-    }
-    function renderUlt(v) {
-      const o = ultForecast(v), b = els.ult;
-      b.classList.toggle('ready', !!o); b.classList.toggle('armed', !!(o && S.armed));
-      b.disabled = !o;
-      if (!o) { S.armed = false; b.innerHTML = `品味輾壓<small>氣勢 6 起</small>`; b.setAttribute('aria-label', '品味輾壓（氣勢 6 起）'); return; }
-      const eUlt = v.intent && v.intent.ult;
-      const lethal = o.toE >= v.e.hp;   // 這一放就擊倒：按鈕直接講出來（收尾要有收尾的樣子）
-      const main = eUlt ? `對轟` : `品味輾壓 ${o.toE}`;
-      const sub = eUlt ? `他−${o.toE} 你−${o.toP}` : (lethal ? '保證擊倒' : '保證命中');
-      b.classList.toggle('lethal', lethal);
-      b.innerHTML = S.armed ? `放！<small>他−${o.toE}${lethal ? '（擊倒）' : eUlt ? ' 你−' + o.toP : ''}</small>` : `${main}<small>${sub}</small>`;
-      b.setAttribute('aria-label', S.armed ? '再點一次放出品味輾壓' + (lethal ? '：擊倒' : '') : (eUlt ? `對轟：他扣 ${o.toE}、你扣 ${o.toP}` : `品味輾壓：他扣 ${o.toE}${lethal ? '，擊倒' : ''}`));
-    }
-    function cardTile(card, i, v) {
-      const req = v.request && (card.tags || []).includes(v.request);
-      const mod = card.washed ? '洗過' : card.worn ? '九成新' : '';
-      return `<button type="button" class="dl-card${S.sel === i ? ' sel' : ''}" data-i="${i}" aria-pressed="${S.sel === i}"
-        aria-label="${esc(`${card.artist}《${card.album}》 經${card.c} 冷${card.o} 硬${card.h}${req ? '，點播' : ''}`)}">
-        <div class="cvw">${coverHTML(card)}</div>
-        <div class="nums key">${ATTRS.map(a => `<span class="${a}">${ZH1[a]}<b>${card[a] | 0}</b></span>`).join('')}</div>
-        ${req ? '<span class="req">點播✓</span>' : ''}${mod ? `<span class="mod">${mod}</span>` : ''}<span class="inf" data-info="${i}" aria-label="唱片資訊">ⓘ</span></button>`;
-    }
-    function renderHand(v) {
-      const ace = v.p.ace;
-      let h = '';
-      if (ace) {
-        const ax = TIER_AXIS[ace.tier] || 'c';
-        h += `<button type="button" class="dl-card dl-ace ${ace.tier}${v.p.aceUsed ? ' used' : ''}${S.sel === 'ace' ? ' sel' : ''}" data-i="ace" ${v.p.aceUsed ? 'aria-disabled="true"' : ''}
-          aria-label="${esc(`王牌 ${TIER_ZH[ace.tier]} ${ace.artist}《${ace.album}》 ${ZH[ax]} 7${v.p.aceUsed ? '，本場已用' : ''}`)}">
-          <div class="cvw dl-shine ${ace.tier}">${coverHTML(ace)}<span class="tier ${ace.tier}">王牌</span></div>
-          <div class="at">${TIER_ZH[ace.tier]}<span class="${ax}">${ZH1[ax]}7</span></div>
-          <div class="at2">${v.p.aceUsed ? '本場已用' : '每場一次'}</div><span class="inf" data-info="ace" aria-label="唱片資訊">ⓘ</span></button>`;
-      }
-      v.p.hand.forEach((c, i) => { h += cardTile(c, i, v); });
-      els.hand.innerHTML = h;
-    }
-    function renderAttrs(v) {
-      const sel = S.sel;
-      const selfRead = settings().selfRead && !v.prologue;
-      if (v.over) { els.attrs.innerHTML = '<div class="ph">對決結束</div>'; return; }
-      if (sel == null) {
-        const ph = !(v.intent && v.intent.ult) ? '先挑一張盤'
-          : v.p.aceCanReflect ? '他要品味輾壓：王牌接得住＝七星回擊；或出剋它的盤擋下' : '他要品味輾壓：挑一張剋得到它的盤擋下來';
-        els.attrs.innerHTML = `<div class="ph">${ph}</div>`;
-        S.debug.rows = null; return;
-      }
-      const acts = sel === 'ace' ? [{ type: 'ace' }] : ATTRS.map(a => ({ type: 'card', i: sel, attr: a }));
-      const card = sel === 'ace' ? v.p.ace : v.p.hand[sel];
-      const dbg = {}, fcs = {};
-      acts.forEach(act => {
-        const attr = act.type === 'ace' ? (TIER_AXIS[card.tier] || 'c') : act.attr;
-        try { fcs[attr] = E.forecast(duel, act); } catch (e) { console.error(e); fcs[attr] = null; }
-      });
-      // 序章第 1 手的金框（h_counter）：剋招那格要是每一格都被別的屬性比下去，就把框移到「最壞情況最好」的那個屬性
-      if (S.recBase && sel !== 'ace') S.recAttr = recFor(fcs, S.recBase);
-      let h = '';
-      acts.forEach(act => {
-        const attr = act.type === 'ace' ? (TIER_AXIS[card.tier] || 'c') : act.attr;
-        const fc = fcs[attr];
-        const rows = groupRows(fc, selfRead);
-        dbg[attr] = rows.map(r => ({ label: rowLabel(r, selfRead), res: r.res, attr: r.attr, feint: !!r.feint, hidden: !!r.hidden, n: r.n, cells: r.cells || null, ult: !!r.ult }));
-        const reqB = act.type === 'card' && v.request && (card.tags || []).includes(v.request) ? '<span class="bn">＋點播 2</span>' : '';
-        const star = attr && card ? (card[attr] | 0) : 0;
-        const isRec = S.recAttr && S.recAttr === attr;
-        const ultHand = fc && fc.ult;
-        const body = ultHand ? rows.map(r => `<span class="rw"><span class="${r.cls}">${esc(r.res)}</span></span>`).join('') : stripHTML(rows, selfRead);
-        const al = `出${ZH[attr]}：` + rows.map(rowLong).join('、');
-        h += `<button type="button" class="dl-ab key ${attr}${act.type === 'ace' ? ' wide' : ''}${ultHand ? ' ultrow' : ''}${isRec ? ' rec' : ''}" data-act='${JSON.stringify(act)}' data-attr="${attr}" aria-label="${esc(al)}" data-long="${esc(al)}">
-          <span class="hd"><span class="${attr}">${ZH[attr]}</span> ${star}${reqB}${act.type === 'ace' ? '<span class="k ace">王牌</span>' : `<span class="k">${'QWE'[ATTRS.indexOf(attr)]}</span>`}</span>${body}</button>`;
-      });
-      els.attrs.innerHTML = h;
-      S.debug.rows = dbg;
-    }
-    // 預覽條：每一塊＝他會出的一種情況，寬度＝格數（＝機率），上排＝他出的屬性（晃格寫「晃」），
-    // 下排＝結果：綠底＝他扣、紅框＝你扣、灰＝撞平／霸權、？＝還沒看過的格。數字全部來自 forecast，UI 不算傷害。
-    function stripHTML(rows, selfRead) {
-      return '<span class="dl-strip">' + rows.map(r => {
-        const o = r.outcome;
-        let cls = 'eq', num = '＝';
-        if (r.hidden || !o) { cls = 'un'; num = '?'; }
-        else if (o.kind === 'hegemonyE' || o.kind === 'hegemonyP') { cls = 'eq'; num = '霸'; }
-        else if (o.toE > o.toP) { cls = 'ok'; num = o.toE; }
-        else if (o.toP > o.toE) { cls = 'ng'; num = o.toP; }
-        const top = r.hidden ? '？' : selfRead ? GL[r.glyph] : (r.feint ? '晃' : ZH1[r.attr]);
-        const tc = r.hidden || selfRead ? 'n' : r.attr;
-        return `<span class="sg ${cls}${r.feint && !selfRead ? ' fe' : ''}" style="flex:${r.n} 1 0"><span class="t ${tc}">${esc(top)}</span><b>${num}</b></span>`;
-      }).join('') + '</span>';
-    }
-    function recFor(fcs, base) {
-      const nets = a => (fcs[a] && !fcs[a].ult && fcs[a].slices) ? fcs[a].slices.map(s => s.outcome ? (s.outcome.toE || 0) - (s.outcome.toP || 0) : null) : null;
-      const nb = nets(base); if (!nb) return base;
-      const beats = a => {
-        const na = nets(a); if (!na) return false;
-        let ge = true, gt = false;
-        na.forEach((x, i) => { if (x == null || nb[i] == null) return; if (x < nb[i]) ge = false; if (x > nb[i]) gt = true; });
-        return ge && gt;
-      };
-      if (!ATTRS.some(a => a !== base && beats(a))) return base;
-      let best = base, bw = -1e9, bs = -1e9;
+    // 結果預告：你點了一顆星，他三顆星底下各浮一個結果（他丟那色會怎樣）；數字全部是 preview()
+    function renderAnswers() {
+      const p = !S.busy && S.sel ? safePreview(S.sel) : null;
       ATTRS.forEach(a => {
-        const k = (nets(a) || []).filter(x => x != null); if (!k.length) return;
-        const w = Math.min(...k), s = k.reduce((p, x) => p + x, 0);
-        if (w > bw || (w === bw && s > bs)) { best = a; bw = w; bs = s; }
+        const el = els.rec.querySelector(`.es[data-tut="e-star-${a}"] .ans`); if (!el) return;
+        const t = p ? answerOf(p[a], T) : { cls: '', text: '' };
+        el.className = 'ans key ' + t.cls; el.textContent = t.text;
       });
-      return best;
     }
-    function renderBanner(info, opt) {
+
+    // ---------------- render: 牌桌 ----------------
+    function renderSlot(side) {
+      const el = side === 'e' ? els.se : els.sp, Tb = S.table, d = Tb && Tb[side];
+      el.className = 'slot ' + side + (Tb && Tb.dim ? ' dim' : '') + (d ? '' : ' empty');
+      el.removeAttribute('data-card'); el.removeAttribute('role'); el.removeAttribute('tabindex'); el.removeAttribute('aria-label');
+      if (!d) { el.innerHTML = `<span class="ph">${esc(T(side === 'e' ? 'slotE' : 'slotP'))}</span>`; return; }
+      const b = Tb.badges && Tb.badges[side];
+      const badge = b ? `<span class="badge ${b === T('badgeLose') ? 'l' : b === T('badgeTie') ? 'd' : 'w'}">${esc(b)}</span>` : '';
+      el.innerHTML = `<span class="cvw">${img(d.card)}${badge}</span><div class="who">${esc(T(side === 'e' ? 'he' : 'you'))}<span class="${d.attr}">${d.ace ? esc(T('aceWord')) : ''}${ZH[d.attr]} <span class="num">${d.star}</span></span></div>`;
+      if (d.card) { el.dataset.card = d.card.id; el.setAttribute('role', 'button'); el.tabIndex = 0; el.setAttribute('aria-label', (side === 'e' ? '他丟的：' : '你丟的：') + title(d.card)); }
+    }
+    function triSVG() {
+      const P = { c: [66, 17], h: [112, 97], o: [20, 97] }, R = 15;
+      const col = { c: 'var(--c,#1f5fae)', o: 'var(--o,#6a3fa0)', h: 'var(--h,#c11628)' };
+      const STROKE = { k: '#111', g: '#2e7d52', r: '#c11628', f: '#d6d6d6' };
+      let ring = null;
+      const tone = {};
+      EDGES.forEach(([a, b]) => { tone[a + b] = 'k'; });
+      if (S.triForce) { EDGES.forEach(([a, b]) => { tone[a + b] = S.triForce.includes(a + b) ? 'g' : 'f'; }); }
+      else if (S.flash) {
+        const f = S.flash;
+        EDGES.forEach(([a, b]) => { tone[a + b] = 'f'; });
+        if (f.edge) tone[f.edge] = f.tone; else ring = f.ring;
+      } else if (S.sel && !S.busy) {
+        const x = S.sel.attr; ring = x;
+        EDGES.forEach(([a, b]) => { tone[a + b] = a === x ? 'g' : b === x ? 'r' : 'f'; });
+      }
+      let s = `<svg viewBox="0 0 132 118" aria-label="冷門剋經典，經典剋硬蕊，硬蕊剋冷門" role="img"><defs>`;
+      Object.keys(STROKE).forEach(k => { s += `<marker id="dlm${k}" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="${STROKE[k]}"/></marker>`; });
+      s += '</defs>';
+      EDGES.forEach(([a, b]) => {
+        const p0 = P[a], p1 = P[b], dx = p1[0] - p0[0], dy = p1[1] - p0[1], L = Math.hypot(dx, dy), ux = dx / L, uy = dy / L;
+        const x1 = p0[0] + ux * (R + 3), y1 = p0[1] + uy * (R + 3), x2 = p1[0] - ux * (R + 4), y2 = p1[1] - uy * (R + 4);
+        const k = tone[a + b], w = k === 'f' ? 1.6 : (k === 'k' ? 2.2 : 3.2);
+        const mx = (p0[0] + p1[0]) / 2 - uy * 9, my = (p0[1] + p1[1]) / 2 + ux * 9 + 4;
+        s += `<g data-tut="tri-${a}${b}" class="eg ${k}"><line x1="${x1.toFixed(1)}" y1="${y1.toFixed(1)}" x2="${x2.toFixed(1)}" y2="${y2.toFixed(1)}" stroke="${STROKE[k]}" stroke-width="${w}" marker-end="url(#dlm${k})"/>`
+          + `<text x="${mx.toFixed(1)}" y="${my.toFixed(1)}" text-anchor="middle" font-size="11" font-weight="700" fill="${k === 'f' ? '#c4c4c4' : STROKE[k]}">剋</text></g>`;
+      });
+      ATTRS.forEach(a => {
+        const p = P[a];
+        s += `<circle cx="${p[0]}" cy="${p[1]}" r="${R}" fill="${col[a]}"${ring === a ? ' stroke="#111" stroke-width="3"' : ''}/>`;
+        s += `<text x="${p[0]}" y="${p[1] + 5.5}" text-anchor="middle" font-size="16" font-weight="900" fill="#fff">${ZH1[a]}</text>`;
+      });
+      return s + '</svg>';
+    }
+    function renderTri() { els.tri.innerHTML = triSVG(); }
+    function lastLineHTML(ct) {
+      return `<span class="lb">${esc(T('lastPrefix'))}</span><b>${esc(ct.l1)}　<span class="${ct.cls}">${esc(ct.l2)}</span></b>${ct.st ? `<span class="stp">${esc(ct.st.replace(/[！!]$/, ''))}</span>` : ''}`
+        + (ct.notes.length ? `<span class="nt">${esc(ct.notes.join('・'))}</span>` : '');
+    }
+    function renderLast(v) {
+      els.last.classList.remove('first');
+      if (S.lastCt) { els.last.innerHTML = lastLineHTML(S.lastCt); return; }
+      if (v.first && !v.over) { els.last.classList.add('first'); els.last.textContent = T('firstHand'); return; }
+      els.last.textContent = '';
+    }
+    function renderTable(v) { renderSlot('e'); renderSlot('p'); renderTri(); renderLast(v); }
+
+    // ---------------- render: 你的一塊、手牌、星鈕 ----------------
+    function relicIconHTML(r) {
+      const sz = 16;
+      try { if (typeof hooks.relicIcon === 'function') { const h = hooks.relicIcon(r.id, sz); if (h) return h; } } catch (_) {}
+      try { const U = window.DipLabUI; if (U && typeof U.relicIcon === 'function') { const h = U.relicIcon(r.id, sz); if (h && !/lb-ri/.test(h)) return h; } } catch (_) {}
+      return `<span class="rl-t">${esc(String(r.name || '?').slice(0, 1))}</span>`;
+    }
+    function renderP(v, opt) {
       opt = opt || {};
-      if (!info) { els.bs.textContent = ''; els.bs.className = 'bs'; els.bt.innerHTML = opt.text ? `<span class="dim">${esc(opt.text)}</span>` : ''; els.ban.className = 'dl-ban'; return; }
-      els.bs.textContent = opt.noStamp ? '' : (info.stamp || '');
-      els.bs.className = 'bs ' + (info.cls || '') + (opt.pop ? ' pop' : '');
-      els.bt.innerHTML = esc(info.text) + (info.found ? `<span class="fd">${esc(info.found)}</span>` : '') + (info.note ? `<span class="fd nt">${esc(info.note)}</span>` : '');
-      els.ban.className = 'dl-ban' + (info.tone ? ' ' + info.tone : '') + (info.found || info.note || info.text.length > 40 ? ' dense' : '') + (opt.flash ? ' flash' : '');
-      S.debug.banner = info.text + (info.found ? ' ' + info.found : '') + (info.note ? ' ' + info.note : '');
+      if (!opt.keepHp) setHp(els.php, els.phpn, v.pHp, v.pMax, null, false);
+      els.relics.innerHTML = (v.relics || []).slice(0, 3).map(r => `<button type="button" class="rl" data-tut="relic-${esc(r.id)}" data-relic="${esc(r.id)}" aria-label="發燒配件：${esc(r.name || '')}">${relicIconHTML(r)}</button>`).join('');
     }
-    function renderTurntable() {
-      const f = Fx(); const c = f && f.music ? f.music.current() : null;
-      const src = c ? coverSrc(c) : '';
-      els.ttLb.style.backgroundImage = src ? `url("${src.replace(/"/g, '%22')}")` : '';
-      els.tt2.setAttribute('aria-label', c ? `正在播：${c.artist}《${c.album}》` : '唱盤');
-      els.tt2.dataset.has = c ? '1' : '';
+    function tileHTML(v, i) {
+      const isAce = i === 'ace', c = cardOf(v, i); if (!c) return '';
+      const used = isAce && v.aceUsed, sel = S.sel && S.sel.i === i;
+      const eye = v.eyeTarget && v.eyeTarget.i === i ? v.eyeTarget.attr : null;
+      const lock = S.busy || used;
+      const chip = (a, wide) => {
+        const on = sel && S.sel.attr === a;
+        return `<button type="button" class="chip ${a}${wide ? ' wide' : ''}${on ? ' sel' : ''}" data-tut="${isAce ? 'chip-ace' : `chip-${i}-${a}`}" data-i="${i}" data-a="${a}"${lock ? ' disabled' : ''} aria-pressed="${on}" aria-label="${esc((isAce ? '王牌 ' : '') + ZH[a] + ' ' + (c[a] | 0) + ' 星')}">`
+          + `<i>${ZH1[a]}</i><b class="key">${c[a] | 0}</b>${eye === a ? `<span class="eye">${esc(T('eyeMark'))}</span>` : ''}</button>`;
+      };
+      const chips = isAce ? chip(v.aceAxis || aceAxisOf(c), true) : ATTRS.map(a => chip(a)).join('');
+      return `<div class="tile${isAce ? ' ace' : ''}${sel ? ' sel' : ''}${used ? ' used' : ''}" data-tut="${isAce ? 'hand-ace' : 'hand-' + i}" data-card="${esc(c.id)}" data-i="${i}">`
+        + `<button type="button" class="cvw" data-act="info" aria-label="唱片資訊：${esc(title(c))}">${img(c)}${isAce ? `<span class="acetag">${esc(T(used ? 'aceUsed' : 'aceSlot'))}</span>` : ''}</button>`
+        + `<div class="chips">${chips}</div></div>`;
     }
-    function renderAll() {
+    function renderHand(v, opt) {
+      opt = opt || {};
+      const ids = [];
+      if (v.ace) ids.push('ace');
+      v.hand.forEach((c, i) => { if (c) ids.push(i); });
+      els.hand.innerHTML = ids.map(i => tileHTML(v, i)).join('');
+      if (opt.slideNew != null) {
+        const t = els.hand.querySelector(`.tile[data-i="${opt.slideNew}"]`);
+        if (t && !rm()) A(t, [{ transform: 'translateY(40px)', opacity: 0 }, { transform: 'none', opacity: 1 }], { duration: 260, easing: 'cubic-bezier(.2,.7,.3,1)' });
+      }
+    }
+    // 只換選取狀態（不重畫封面，避免圖片閃）
+    function markSel() {
+      els.hand.querySelectorAll('.tile').forEach(t => {
+        const i = t.dataset.i === 'ace' ? 'ace' : +t.dataset.i, on = !!(S.sel && S.sel.i === i);
+        t.classList.toggle('sel', on);
+        t.querySelectorAll('.chip').forEach(ch => { const s = on && ch.dataset.a === S.sel.attr; ch.classList.toggle('sel', s); ch.setAttribute('aria-pressed', String(s)); });
+      });
+    }
+    function renderAct() {
       const v = S.v;
-      renderTop(v); renderEnemy(v); renderRecord(v); renderDisc(v); renderSide(v); renderHist(v); renderMe(v); renderHand(v); renderAttrs(v);
-      els.table.classList.remove('on');
+      els.act.classList.remove('wait', 'ready');
+      if (S.ending || v.over) { els.act.classList.add('wait'); els.say.innerHTML = ''; els.thr.disabled = true; return; }
+      if (S.busy) { els.act.classList.add('wait'); els.say.innerHTML = `<span class="w">${esc(T('waiting'))}</span>`; els.thr.disabled = true; return; }
+      if (!S.sel) { els.say.innerHTML = `<span class="w">${esc(T('pickHint'))}</span>`; els.thr.disabled = true; return; }
+      const c = cardOf(v, S.sel.i), a = S.sel.attr;
+      els.act.classList.add('ready');
+      els.say.innerHTML = `<small>${esc(T('picked'))}${esc(title(c))}</small><b class="${a}">${S.sel.i === 'ace' ? esc(T('aceWord')) + ' ' : ''}${ZH[a]} <span class="num">${c ? c[a] | 0 : ''}</span></b><span class="hn">${esc(T('again'))}</span>`;
+      els.thr.disabled = false;
     }
+    function renderAll(opt) {
+      const v = S.v;
+      renderE(v, opt); renderTable(v); renderP(v, opt); renderHand(v); renderAct();
+      scheduleFit();
+    }
+
+    // ---------------- 尺寸：沒有捲動；依盤面可用高度換一級（SPEC-v3 §4 矮螢幕） ----------------
+    function fit() {
+      S.fitRaf = 0;
+      if (S.destroyed) return;
+      const H = root.clientHeight;
+      root.classList.remove('roomy', 'compact', 'short', 'tighter');
+      if (H > 0) {
+        if (H >= 600) root.classList.add('roomy');
+        else if (H < 450) root.classList.add('short');
+        else if (H < 500) root.classList.add('compact');
+      }
+      if (root.scrollHeight > root.clientHeight + 1) root.classList.add('tighter');
+    }
+    function scheduleFit() { if (!S.fitRaf) { fit(); S.fitRaf = requestAnimationFrame(() => { S.fitRaf = 0; fit(); }); } }
+    try { S.ro = new ResizeObserver(() => scheduleFit()); S.ro.observe(root); } catch (_) {}
+    try { if (document.fonts && document.fonts.ready) document.fonts.ready.then(() => scheduleFit()); } catch (_) {}
 
     // ---------------- input ----------------
-    function select(i) {
-      if (S.busy || S.v.over || S.ending) return;
+    function bumpEl(el) { if (el && !rm()) A(el, [{ transform: 'translateX(0)' }, { transform: 'translateX(-3px)' }, { transform: 'translateX(3px)' }, { transform: 'translateX(0)' }], { duration: 300 }); }
+    const isOver = () => !!(S.v && S.v.over) || S.ending;
+    const canAct = () => !S.busy && S.enterDone && !isOver() && !S.held;
+    function selectChip(i, attr) {
+      if (!canAct()) return false;
       const v = S.v;
-      if (i === 'ace' && (!v.p.ace || v.p.aceUsed)) { sfx('tick'); return; }
-      if (i !== 'ace' && (i < 0 || i >= v.p.hand.length)) return;
-      S.armed = false;
-      S.sel = S.sel === i ? null : i;
-      sfx(S.sel == null ? 'tick' : 'select');
-      if (S.hintSticky) hideHint();
-      if (S.sel != null) hint('h_forecast');
-      renderHand(v); renderAttrs(v); renderUlt(v);
+      if (i === null) {
+        if (!S.sel) return true;
+        S.sel = null; markSel(); renderAnswers(); renderTri(); renderAct(); holdSleeve('p', null); emit('selected', null); return true;
+      }
+      const c = cardOf(v, i); if (!c) return false;
+      if (i === 'ace') { if (v.aceUsed) return false; attr = v.aceAxis || aceAxisOf(c); }
+      if (!ATTRS.includes(attr)) return false;
+      const sel = { i, attr };
+      if (!legal(sel)) return false;
+      if (!gate({ kind: 'chip', i, attr, id: c.id })) return false;
+      const changedCard = !S.sel || S.sel.i !== i;
+      S.sel = sel; S.selAt = performance.now();
+      sfx('select');
+      markSel(); renderAnswers(); renderTri(); renderAct();
+      if (changedCard) holdSleeve('p', c, i === 'ace');
+      emit('selected', { i, attr });
+      return true;
     }
-    function infoCard(which) {
-      const v = S.v; const card = which === 'ace' ? v.p.ace : which === 'rec' ? (v.intent && v.intent.record) : which === 'tt' ? (Fx() && Fx().music.current()) : v.p.hand[which];
-      if (card && hooks.info) { try { hooks.info(card); } catch (e) { console.error(e); } }
+    function throwSel(btn) {
+      if (!canAct()) return false;
+      if (!S.sel) { bumpEl(btn || els.thr); return false; }
+      const c = cardOf(S.v, S.sel.i);
+      if (!legal(S.sel)) { bumpEl(btn || els.thr); return false; }
+      if (!gate({ kind: 'throw', i: S.sel.i, attr: S.sel.attr, id: c && c.id })) { bumpEl(btn || els.thr); return false; }
+      if (btn && !rm()) A(btn, [{ transform: 'scale(1)' }, { transform: 'scale(.95)' }, { transform: 'scale(1)' }], { duration: 90 });
+      play(actOf(S.sel), S.sel);
+      return true;
     }
-    function tapUlt() {
-      if (S.busy || S.v.over || S.ending) return;
-      const o = ultForecast(S.v); if (!o) return;
-      if (!S.armed) { S.armed = true; sfx('ultCharge'); renderUlt(S.v); return; }
-      S.armed = false; play({ type: 'ult' });
-    }
-    // 長按 450 ms ＝唱片資訊；一般點擊＝選取
-    let lp = null;
-    // 長按屬性鈕：在鈕上方攤開文字版的預覽（他出什麼 → 誰扣幾），放開就收
-    function showTip(ab) {
-      hideTip();
-      const t = document.createElement('div'); t.className = 'dl-tip';
-      t.textContent = (ab.dataset.long || '').replace(/：/, '：\n').replace(/、/g, '\n');
-      root.appendChild(t);
-      const rr = root.getBoundingClientRect(), ar = els.attrs.getBoundingClientRect();
-      t.style.bottom = Math.round(rr.bottom - ar.top + 4) + 'px';
-    }
-    function hideTip() { root.querySelectorAll('.dl-tip').forEach(n => n.remove()); }
-    root.addEventListener('pointerdown', ev => {
-      if (S.busy) { if (S.speed < 4) setSpeed(4); return; }
-      const ab = ev.target.closest('.dl-ab');
-      if (ab && !ab.classList.contains('ultrow')) {
-        lp = { key: null, ab, fired: false, x: ev.clientX, y: ev.clientY, timer: later(() => { if (lp && lp.ab) { lp.fired = true; showTip(lp.ab); } }, 450) };
+    function chipTap(btn) {
+      const i = btn.dataset.i === 'ace' ? 'ace' : +btn.dataset.i, a = btn.dataset.a;
+      if (!canAct()) return;
+      if (S.sel && S.sel.i === i && S.sel.attr === a) {
+        if (performance.now() - S.selAt < DBL_MS) return;     // 一次觸控的第二下：吞掉
+        throwSel(btn);
         return;
       }
-      const t = ev.target.closest('.dl-card, .dl-rec, .dl-tt');
-      if (!t) return;
-      const key = t.classList.contains('dl-rec') ? 'rec' : t.classList.contains('dl-tt') ? 'tt' : (t.dataset.i === 'ace' ? 'ace' : +t.dataset.i);
-      lp = { key, fired: false, x: ev.clientX, y: ev.clientY, timer: later(() => { if (lp) { lp.fired = true; infoCard(lp.key); } }, 450) };
-    });
-    const cancelLp = () => { if (lp) { clearTimeout(lp.timer); } };
-    root.addEventListener('pointermove', ev => { if (lp && (Math.abs(ev.clientX - lp.x) > 10 || Math.abs(ev.clientY - lp.y) > 10)) { cancelLp(); if (lp.ab) hideTip(); lp = null; } });
-    root.addEventListener('pointerup', () => { cancelLp(); if (lp && lp.ab && lp.fired) later(hideTip, 900); });
-    root.addEventListener('pointercancel', () => { cancelLp(); hideTip(); lp = null; });
-    root.addEventListener('contextmenu', ev => { if (ev.target.closest('.dl-card, .dl-rec, .dl-ab')) ev.preventDefault(); });
-    root.addEventListener('click', ev => {
+      if (!selectChip(i, a)) bumpEl(btn);
+    }
+    function relicTap(btn) {
+      const id = btn.dataset.relic, r = (S.v.relics || []).find(x => x.id === id); if (!r) return;
+      emit('relic', id);
+      els.pop.innerHTML = `<b>${esc(r.name || '')}</b>${esc(r.line || r.desc || '')}`;
+      els.pop.hidden = false;
+      const br = btn.getBoundingClientRect(), rr = root.getBoundingClientRect();
+      els.pop.style.left = Math.max(8, Math.min(rr.width - 230, br.left - rr.left - 8)) + 'px';
+      els.pop.style.top = Math.max(4, br.top - rr.top - els.pop.offsetHeight - 6) + 'px';
+      clearTimeout(S.popT); S.popT = later(() => { els.pop.hidden = true; }, 2600);
+    }
+    // 點封面（或長按）＝唱片資訊：他亮出的、牌桌上兩張、手牌、王牌。星鈕不開。
+    const INFO_SEL = '[data-act="info"], .cvb, .rec .l1[data-card], .slot[data-card]';
+    function infoFor(t) {
+      const x = t && t.closest && t.closest(INFO_SEL); if (!x) return false;
+      if (x.matches('[data-act="info"]')) { const tl = x.closest('.tile'); const i = tl.dataset.i === 'ace' ? 'ace' : +tl.dataset.i; const c = cardOf(S.v, i); if (c) openInfo(c, i === 'ace' ? 'hand-ace' : 'hand'); return true; }
+      if (x.matches('.slot')) { const side = x.classList.contains('e') ? 'e' : 'p', d = S.table && S.table[side]; if (d && d.card) openInfo(d.card, 'slot-' + side, d.attr); return true; }
+      if (S.v.eCard && !S.recNext) openInfo(S.v.eCard, 'e-rec');
+      return true;
+    }
+    function onClick(ev) {
       const t = ev.target;
-      if (lp && lp.fired) { lp = null; ev.preventDefault(); return; }
-      lp = null;
-      if (t.closest('.dl-pause')) { if (hooks.pause) hooks.pause(); return; }
-      if (t.closest('.dl-help')) { if (hooks.help) hooks.help(); return; }
-      if (S.busy) return;
-      const inf = t.closest('[data-info]');
-      if (inf) { infoCard(inf.dataset.info === 'ace' ? 'ace' : +inf.dataset.info); return; }
-      const card = t.closest('.dl-card');
-      if (card) { select(card.dataset.i === 'ace' ? 'ace' : +card.dataset.i); return; }
-      const ab = t.closest('.dl-ab');
-      if (ab) { let act = null; try { act = JSON.parse(ab.dataset.act); } catch (_) {} if (act) play(act); return; }
-      if (t.closest('.dl-ult')) { tapUlt(); return; }
-      if (t.closest('.dl-rec')) { infoCard('rec'); return; }
-      if (t.closest('.dl-tt')) { infoCard('tt'); return; }
-      if (S.armed) { S.armed = false; renderUlt(S.v); }
+      const sw = S.swallow; S.swallow = null;
+      if (sw && performance.now() < sw.until && sw.el.contains(t)) { ev.preventDefault(); return; }   // 長按之後的那一下 click
+      if (S.held) { ev.preventDefault(); return; }
+      if (!els.pop.hidden && !t.closest('.rl')) els.pop.hidden = true;
+      let x;
+      if (infoFor(t)) return;
+      if ((x = t.closest('.rl'))) { relicTap(x); return; }
+      if (S.busy) {   // 結算中點畫面＝這手 4 倍速
+        if (!S.rush && performance.now() - S.playAt > RUSH_MS) { S.rush = true; setSpeed(Math.max(S.speed, 4)); }
+        return;
+      }
+      if ((x = t.closest('.chip'))) { chipTap(x); return; }
+      if ((x = t.closest('.throw'))) { throwSel(x); return; }
+    }
+    function onDown(ev) {
+      const t = ev.target.closest(INFO_SEL);
+      if (!t || S.held || (ev.button != null && ev.button > 0)) { S.lp = null; return; }
+      const lp = S.lp = { el: t, x: ev.clientX, y: ev.clientY, h: 0 };
+      lp.h = later(() => {
+        if (S.lp !== lp) return;
+        S.lp = null;
+        infoFor(t);
+        S.swallow = { el: t, until: performance.now() + 900 };   // 放開手指的那一下 click 不再開一次
+      }, LONG_MS);
+    }
+    function onMove(ev) { const lp = S.lp; if (lp && (Math.abs(ev.clientX - lp.x) > 10 || Math.abs(ev.clientY - lp.y) > 10)) { clearTimeout(lp.h); S.lp = null; } }
+    function onUp() { const lp = S.lp; if (lp) { clearTimeout(lp.h); S.lp = null; } }
+    root.addEventListener('click', onClick);
+    root.addEventListener('pointerdown', onDown);
+    root.addEventListener('pointermove', onMove);
+    root.addEventListener('pointerup', onUp);
+    root.addEventListener('pointercancel', onUp);
+    root.addEventListener('contextmenu', ev => { if (ev.target.closest('.tile,.slot,.cvb,.chip')) ev.preventDefault(); });
+    root.addEventListener('keydown', ev => {
+      if ((ev.key === 'Enter' || ev.key === ' ') && ev.target.classList && ev.target.classList.contains('slot')) { ev.preventDefault(); ev.target.click(); }
     });
-    S.keyH = ev => {
-      if (!root.isConnected || ev.ctrlKey || ev.metaKey || ev.altKey) return;
-      // ⏸／小抄／唱片資訊開著時，鍵盤不能在後面偷偷出手
-      if (document.querySelector('.lb-modal, .hx-ov')) return;
-      const tg = ev.target; if (tg && (tg.tagName === 'INPUT' || tg.tagName === 'TEXTAREA')) return;
-      if (S.busy) { if (S.speed < 4) setSpeed(4); return; }
-      const k = ev.key.toLowerCase();
-      if (k >= '1' && k <= '4') { select(+k - 1); ev.preventDefault(); return; }
-      if (k === '5' || k === 'a') { select('ace'); ev.preventDefault(); return; }
-      if (k === 'q' || k === 'w' || k === 'e') {
-        const attr = { q: 'c', w: 'o', e: 'h' }[k];
-        if (S.sel === 'ace') { const ax = TIER_AXIS[S.v.p.ace.tier]; if (ax === attr) play({ type: 'ace' }); }
-        else if (S.sel != null) play({ type: 'card', i: S.sel, attr });
-        ev.preventDefault(); return;
-      }
-      if (k === 'u') { tapUlt(); ev.preventDefault(); return; }
-      if (k === 'escape') { S.sel = null; S.armed = false; renderHand(S.v); renderAttrs(S.v); renderUlt(S.v); }
-    };
-    document.addEventListener('keydown', S.keyH);
 
-    // ---------------- music ----------------
-    function cardById(id) { return id && content.cards ? content.cards[id] || null : null; }
-    // always：七星回擊、打倒傳說藏家這種全晚只有一次的時刻，不受「6 秒內不連換」限制
-    function bigMusic(card, force, always) {
-      const f = Fx(); if (!f || !card || !card.previewUrl) return;
-      const hand = duel.hand, now = performance.now();
-      if (!force && hand - S.musicHand < 2) return;
-      if (force && !always && S.musicAt && now - S.musicAt < 6000) return;   // 剛換過歌（例：Boss 出場）就別馬上又換
-      S.musicHand = hand; S.musicAt = now;
-      f.music.play(card).catch(() => {});
+    // ---------------- 一手（約 2 s；SPEC-v3 §5、§7） ----------------
+    function rectOf(el) { if (!el) return null; const r = el.getBoundingClientRect(); return r.width ? r : null; }
+    function fly(el, from, ms) {
+      if (!el) return null;
+      if (!from || rm()) return A(el, [{ opacity: 0 }, { opacity: 1 }], { duration: 150 });
+      const to = el.getBoundingClientRect(); if (!to.width) return null;
+      const dx = from.left - to.left, dy = from.top - to.top, s = from.width / to.width;
+      el.style.transformOrigin = '0 0';
+      const a = A(el, [{ transform: `translate(${dx}px,${dy}px) scale(${s})` }, { transform: 'translate(0,0) scale(1)' }], { duration: ms, easing: 'cubic-bezier(.2,.7,.3,1)' });
+      if (a) a.finished.then(() => { el.style.transformOrigin = '50% 50%'; }, () => {});
+      return a;
     }
-    // 30 秒試聽放完：接著放下一張（不算「大時刻換歌」，不動 musicHand）
-    function onMusicEnded(ended) {
-      const f = Fx(); if (S.destroyed || !f || !f.soundOn()) return;
-      const v = S.v;
-      const cand = [S.lastPlayed, v.intent && v.intent.record, v.p.ace, ended].filter(c => c && c.previewUrl);
-      const next = cand.find(c => !ended || c.id !== ended.id) || cand[0];
-      if (next) f.music.play(next, { fadeMs: 1200 }).catch(() => {});
+    function fadeIn(el, ms) { if (el) A(el, [{ opacity: 0 }, { opacity: 1 }], { duration: ms || 200, easing: 'ease-out' }); }
+    function showCallout(ct) {
+      const c = els.call;
+      c.innerHTML = `<div class="l1">${ct.st ? `<span class="st">${esc(ct.st)}</span>` : ''}${esc(ct.l1)}</div>`
+        + `<div class="l2 ${ct.cls}"><span class="v key">${esc(ct.l2)}</span>${ct.notes.length ? `<span class="l3">${esc(ct.notes.join('・'))}</span>` : ''}</div>`;   // 發燒配件生效：數字旁一句
+      c.classList.add('on');
+      els.table.classList.add('res');
+      if (rm()) A(c, [{ opacity: 0 }, { opacity: 1 }], { duration: 150, fill: 'both' });
+      else A(c, [{ transform: 'translate(-50%,0) scale(.3)', opacity: 0 }, { transform: 'translate(-50%,0) scale(1.08)', opacity: 1, offset: .6 }, { transform: 'translate(-50%,0) scale(1)', opacity: 1 }], { duration: 380, easing: 'cubic-bezier(.18,.9,.32,1.25)', fill: 'both' });
     }
-
-    // ================================================================ 動畫佇列
-    function emit(ev) { if (hooks.onEvent) { try { hooks.onEvent(ev, duel); } catch (e) { console.error(e); } } }
-    function anchorOf(target) {
-      const a = actor(target === 'e' ? 'f' : 'p');
-      if (a && a.getBoundingClientRect().width) return a;
-      return target === 'e' ? els.ehp : els.php;
+    function hideCallout() {
+      const c = els.call; if (!c.classList.contains('on')) return;
+      const a = A(c, [{ opacity: 1 }, { opacity: 0 }], { duration: 200, fill: 'forwards' });
+      const done = () => { c.classList.remove('on'); c.innerHTML = ''; els.table.classList.remove('res'); S.anims.forEach(x => { try { if (x.effect && x.effect.target === c) x.cancel(); } catch (_) {} }); };
+      if (a) a.finished.then(done, done); else done();
     }
-    function floatDmg(target, amount, sub, big) {
-      const f = Fx(); if (!f) return;
-      const a = anchorOf(target);
-      // 他頭上的泡泡在畫面上時，數字往下挪，不要壓在泡泡的字上
-      let dy = 8, dx = 0;
-      if (target === 'e' && els.bf.classList.contains('on')) {
-        const br = els.bf.getBoundingClientRect(), ar = a.getBoundingClientRect();
-        if (br.bottom > ar.top - 40) {
-          dy = Math.min(Math.round(ar.height * 0.55), Math.round(br.bottom - ar.top + 44));
-          dx = Math.min(0, Math.round(br.left - 8 - (ar.left + ar.width / 2 + 30)));   // 泡泡在他右邊：數字往左讓
-        }
-      }
-      f.floatText(a, '−' + amount, sub, (target === 'e' ? 'toE' : 'toP') + (amount >= 6 || big ? ' big' : ''), { dy, dx, avoid: [bubZone(), els.ename] });
+    function bigStamp(text, cls, sub) {
+      const k = els.kost;
+      k.className = 'kost on ' + (cls || '');
+      k.innerHTML = `<b>${esc(text)}</b>${sub ? `<small>${esc(sub)}</small>` : ''}`;
+      if (rm()) A(k, [{ opacity: 0 }, { opacity: 1 }], { duration: 200, fill: 'forwards' });
+      else A(k, [{ transform: 'translate(-50%,-50%) rotate(-4deg) scale(1.8)', opacity: 0 }, { transform: 'translate(-50%,-50%) rotate(-4deg) scale(.96)', opacity: 1, offset: .5 }, { transform: 'translate(-50%,-50%) rotate(-4deg) scale(1)', opacity: 1 }], { duration: 420, easing: 'ease-out', fill: 'forwards' });
     }
-    // 飄字不能壓的標籤（fx.floatText 會挪開；同時飄的字彼此也會錯開）
-    const KEEP_CLEAR = () => [els.ban, els.hist, els.php, els.ult, els.ehp, els.nm, els.chain];
-    // 他的泡泡：下一句（例如粗框的「殺氣騰騰」）會比現在這句高，往上長；先把上方留一段給它
-    const bubZone = () => {
-      const b = els.bf; if (!b || !b.classList.contains('on')) return null;
-      const r = b.getBoundingClientRect();
-      return r.width ? [r.left - 6, r.top - 34, r.right + 6, r.bottom + 2] : null;
-    };
-    function floatSmall(anchor, text, cls, o) { const f = Fx(); if (f) f.floatText(anchor, text, null, 'small ' + (cls || ''), Object.assign({ ms: 520, rise: 20, avoid: KEEP_CLEAR() }, o || {})); }
-    // 「你」這邊的小字（＋聲望、＋氣勢、你氣勢 −1）：壓在你自己的聲望／氣勢列上，不飄到橫幅上
-    function floatMine(anchor, text, cls) {
-      const f = Fx(); if (!f) return;
-      const r = anchor.getBoundingClientRect();
-      f.floatText(anchor, text, null, 'small ' + (cls || ''), { ms: 620, rise: 8, dy: Math.round(r.height - 4), dx: 44, avoid: KEEP_CLEAR().concat([els.phpn, els.pqn, els.vu]) });
+    const HIT_SFX = { counter: c => (c.read ? 'seeThrough' : 'readHit'), countered: () => 'hurt', mirrorWin: () => 'mirror', mirrorLose: () => 'hurt', tie: () => 'mirror' };
+    function flashOf(c) {
+      if (c.kind === 'counter') return { edge: c.pAttr + c.eAttr, tone: 'g' };
+      if (c.kind === 'countered') return { edge: c.eAttr + c.pAttr, tone: 'r' };
+      return { ring: c.pAttr };
     }
-    // 「他」這邊的小字：放在舞台上他身邊，不蓋住名牌那一列
-    function floatHis(text, cls) {
-      const f = Fx(); if (!f) return;
-      const a = actor('f');
-      if (a && a.getBoundingClientRect().width) {
-        const r = a.getBoundingClientRect(), sr = els.stageWrap.getBoundingClientRect();
-        f.floatText(a, text, null, 'small ' + (cls || ''), { ms: 620, rise: 14, dy: Math.round(Math.min(r.height * 0.7, sr.bottom - r.top - 10)), dx: Math.round(r.width * 0.5 + 40), avoid: [bubZone(), els.ehp, els.ehpn, els.nm, els.phase, els.ban] });
-      } else floatSmall(els.segs, text, cls);
+    function stageFallbackHit(cl) {   // 沒有新唱盤 API 時：受擊＋頭上飄字
+      if (cl.toE > 0) { stg('pose', 'f', 'hurt', 200); stg('float', 'f', '−' + cl.toE); }
+      if (cl.toP > 0) { stg('pose', 'p', 'hurt', 200); stg('float', 'p', '−' + cl.toP, 'r'); }
     }
 
-    async function flyCard(srcEl, card, attr, isUlt) {
-      const tgt = els.table;
-      els.tableC.innerHTML = coverHTML(card) + (attr ? `<span class="tg ${attr}">${ZH[attr]} ${card[attr] | 0}</span>` : '');
-      tgt.classList.add('on'); tgt.style.visibility = 'hidden';
-      if (!srcEl || rm()) { tgt.style.visibility = ''; A(tgt, [{ opacity: 0 }, { opacity: 1 }], { duration: 150 }); return; }
-      const r0 = srcEl.getBoundingClientRect(), r1 = tgt.getBoundingClientRect();
-      const fly = document.createElement('div');
-      fly.style.cssText = `position:fixed;left:${r0.left}px;top:${r0.top}px;width:${r0.width}px;height:${r0.height}px;z-index:2147480100;pointer-events:none;border:1px solid #111;background:#fff;overflow:hidden;transform-origin:0 0;box-shadow:0 8px 22px rgba(0,0,0,.25)`;
-      fly.innerHTML = coverHTML(card);
-      document.body.appendChild(fly);
-      const sc = r1.width / Math.max(1, r0.width);
-      const a = A(fly, [{ transform: 'translate(0,0) scale(1)' }, { transform: `translate(${r1.left - r0.left}px,${r1.top - r0.top}px) scale(${sc})` }], { duration: 220, easing: 'ease-out', fill: 'forwards' });
-      await wait(220);
-      fly.remove(); if (a) a.cancel();
-      tgt.style.visibility = '';
+    // 他丟的那色跟名牌算出來的那色，在玩家眼裡一樣（最大的星並列，例：經 3／冷 3）：不跳「他這手沒照脾氣」，免得教錯
+    function tiedWithTag(v0, cl) {
+      const c = cl && cl.eCard; if (!c || !v0) return false;
+      const st = a => +(c[a] || 0), mx = Math.max(st('c'), st('o'), st('h'));
+      const tops = ATTRS.filter(a => st(a) === mx); if (tops.length < 2) return false;
+      const BE = (E && E.BEATS) || { o: 'c', c: 'h', h: 'o' };
+      if (v0.habit === 'bluff') return tops.some(a => BE[a] === cl.eAttr);
+      if (v0.habit === 'honest' || v0.first) return tops.indexOf(cl.eAttr) >= 0;
+      return false;
     }
-    async function spinTo(cellIdx) {
-      const R0 = S.rot, base = R0 + 540, target = NEEDLE_DEG - (cellIdx * 60 + 30);
-      const R1 = base + (((target - base) % 360) + 360) % 360;
-      if (rm()) {
-        S.rot = R1; els.plate.style.transform = `rotate(${R1}deg)`; placeSlices(R1);
-        els.arm.style.transform = 'rotate(101deg)';
-        await wait(150);
-      } else {
-        const o = { duration: 560, easing: 'cubic-bezier(.2,.7,.2,1)', fill: 'forwards' };
-        const aa = [A(els.plate, [{ transform: `rotate(${R0}deg)` }, { transform: `rotate(${R1}deg)` }], o)].concat(orbitSlices(R0, R1, o));
-        await wait(450);
-        const arm = A(els.arm, [{ transform: 'rotate(84deg)' }, { transform: 'rotate(103deg)', offset: 0.7 }, { transform: 'rotate(101deg)' }], { duration: 230, easing: 'ease-in', fill: 'forwards' });
-        await wait(230);
-        S.rot = R1;
-        els.plate.style.transform = `rotate(${R1}deg)`; placeSlices(R1);
-        els.arm.style.transform = 'rotate(101deg)';
-        aa.forEach(a => a && a.cancel()); if (arm) arm.cancel();
-      }
-      sfx('needle');
-    }
-    function lightSlice(cellIdx, attr, glyph) {
-      const hl = els.lbl.querySelector('.dl-hl');
-      const col = attr === 'c' ? 'rgba(52,120,210,.8)' : attr === 'o' ? 'rgba(140,90,205,.8)' : attr === 'h' ? 'rgba(225,40,60,.8)' : 'rgba(160,160,160,.7)';
-      if (hl) {
-        hl.style.background = `conic-gradient(from ${cellIdx * 60}deg, ${col} 0deg 60deg, transparent 60deg 360deg)`;
-        hl.style.boxShadow = '';
-        A(hl, [{ opacity: 0 }, { opacity: 1 }], { duration: 200, fill: 'forwards' });
-      }
-      els.gls.querySelectorAll(`.dl-sl[data-i="${cellIdx}"]`).forEach(n => n.classList.add('hit'));
-    }
-    async function resetDisc() {
-      const R0 = S.rot; if (!R0) return;
-      const R1 = Math.ceil(R0 / 360) * 360;
-      if (!rm() && R1 !== R0) {
-        const o = { duration: 300, easing: 'ease-in-out', fill: 'forwards' };
-        const aa = [A(els.plate, [{ transform: `rotate(${R0}deg)` }, { transform: `rotate(${R1}deg)` }], o)].concat(orbitSlices(R0, R1, o));
-        const hl = els.lbl.querySelector('.dl-hl'); if (hl) A(hl, [{ opacity: 1 }, { opacity: 0 }], { duration: 200, fill: 'forwards' });
-        A(els.arm, [{ transform: 'rotate(101deg)' }, { transform: 'rotate(84deg)' }], { duration: 260, easing: 'ease-out', fill: 'forwards' });
-        await wait(300);
-        placeSlices(0);
-        aa.forEach(a => a && a.cancel());
-      }
-      S.rot = 0; els.plate.style.transform = 'rotate(0deg)'; els.arm.style.transform = ''; placeSlices(0);
-      els.arm.getAnimations && els.arm.getAnimations().forEach(a => a.cancel());
-    }
-    async function flipSlices(newSl, onlyIdx, per) {
-      const v = S.v;
-      for (let i = 0; i < newSl.length; i++) {
-        if (onlyIdx && !onlyIdx.includes(i)) continue;
-        const g = els.gls.querySelector(`.dl-sl.gl[data-i="${i}"]`); if (!g) continue;
-        const inner = g.querySelector('.in'); const sp = g.querySelector('.g');
-        A(inner, [{ transform: 'scaleX(1)' }, { transform: 'scaleX(0.05)', offset: 0.5 }, { transform: 'scaleX(1)' }], { duration: per * 2 });
-        later(() => { if (sp) sp.textContent = GL[newSl[i].glyph] || '？'; }, per / S.speed);
-        sfx('tick');
-        await wait(per);
-      }
-      void v;
-    }
-    async function ultFx(qi, who, dmg) {
-      const f = Fx();
-      sfx('ultCharge');
-      if (f) f.flash(who === 'p' ? '#c11628' : '#4a0a13', 120);
-      const ov = document.createElement('div'); ov.className = 'dl-ov dl-ultfx' + (who === 'e' ? ' e' : '');
-      const art = typeof window.pixArtHTML === 'function' ? window.pixArtHTML(HEAVY180, 120) : '<div style="width:120px;height:120px;border-radius:50%;background:#111"></div>';
-      ov.innerHTML = `<div class="vin">${art}</div><div class="tx">${who === 'p' ? '品味輾壓 ' + dmg : '他的品味輾壓 ' + dmg}</div>`;
-      document.body.appendChild(ov);
-      const turns = 1.2 + (Math.max(6, Math.min(10, qi || 6)) - 6) / 4 * 1.3;
-      if (!rm()) {
-        A(ov.querySelector('.vin'), [{ transform: 'scale(.2) rotate(0deg)', opacity: 0 }, { transform: `scale(1) rotate(${turns * 360}deg)`, opacity: 1 }], { duration: 500, easing: 'cubic-bezier(.2,.7,.2,1)', fill: 'forwards' });
-        A(ov.querySelector('.tx'), [{ transform: 'scale(2.2)', opacity: 0 }, { transform: 'scale(1)', opacity: 1 }], { duration: 300, delay: 250, easing: 'cubic-bezier(.2,1.4,.4,1)', fill: 'both' });
-      } else A(ov, [{ opacity: 0 }, { opacity: 1 }], { duration: 150, fill: 'forwards' });
-      await wait(560);
-      sfx('ult');
-      if (f) shakeBody(f, 10, 300 / S.speed);
-      await wait(260);
-      A(ov, [{ opacity: 1 }, { opacity: 0 }], { duration: 200, fill: 'forwards' });
-      later(() => ov.remove(), 220 / S.speed + 20);
-    }
-    async function reflectFx(K, aceCard) {
-      const f = Fx();
-      sfx('reflect');
-      bigMusic(aceCard, true, true);
-      // 凍結 → 反相 → 王牌框放大 → 大字＋震 → 收回（≤1.6 s）
-      await wait(220);
-      if (!rm()) { root.classList.add('invert'); await wait(130); root.classList.remove('invert'); }
-      const aceEl = els.hand.querySelector('.dl-ace .cvw') || els.table;
-      const r = aceEl.getBoundingClientRect();
-      const ov = document.createElement('div'); ov.className = 'dl-ov dl-refx';
-      const tier = aceCard && aceCard.tier || 'hall';
-      ov.innerHTML = `<div class="dim"></div><div class="fr dl-shine ${tier}" style="left:${r.left}px;top:${r.top}px;width:${r.width}px;height:${r.height}px"></div>
-        <div class="big">${aceCard ? `<div class="cov dl-shine ${tier}">${coverHTML(aceCard)}</div>` : ''}<b>七星回擊</b><span>7＋賭注 ${K}</span></div>`;
-      document.body.appendChild(ov);
-      const fr = ov.querySelector('.fr');
-      const W = window.innerWidth, H = window.innerHeight;
-      A(ov.querySelector('.dim'), [{ opacity: 0 }, { opacity: 1 }], { duration: 300, fill: 'forwards' });
-      A(fr, [{ left: r.left + 'px', top: r.top + 'px', width: r.width + 'px', height: r.height + 'px' }, { left: '6px', top: '6px', width: (W - 12) + 'px', height: (H - 12) + 'px' }], { duration: 350, easing: 'cubic-bezier(.2,.8,.2,1)', fill: 'forwards' });
-      A(ov.querySelector('.big'), [{ transform: 'scale(3)', opacity: 0 }, { transform: 'scale(1)', opacity: 1 }], { duration: 300, delay: 250, easing: 'cubic-bezier(.2,1.4,.4,1)', fill: 'both' });
-      const cov = ov.querySelector('.cov'); if (cov && !rm()) A(cov, [{ transform: 'scale(.3) rotate(-8deg)' }, { transform: 'scale(1) rotate(0deg)' }], { duration: 380, delay: 200, easing: 'cubic-bezier(.2,1.3,.4,1)', fill: 'both' });
-      await wait(480);
-      if (f) { shakeScreen(f, ov, 12, 300 / S.speed); f.vibrate(30); }
-      await wait(380);
-      A(ov, [{ opacity: 1 }, { opacity: 0 }], { duration: 250, fill: 'forwards' });
-      later(() => ov.remove(), 260 / S.speed + 20);
-    }
-    // 震動：震上排以外的每一塊（同一組關鍵影格，看起來就是整個畫面在震）；上排的 ⏸／？／🔇 不動，不會被推出螢幕右緣
-    // 不震 document.body，不然手機上整頁會被推寬幾 px、短暫可以左右滑
-    function shakeBody(f, px, ms) {
-      Array.from(root.children).forEach(c => { if (!c.classList.contains('dl-top')) f.shake(c, px, ms); });
-    }
-    // 全螢幕震動（七星回擊、打烊）：畫面＋蓋在上面的 fixed 疊層
-    function shakeScreen(f, ov, px, ms) {
-      shakeBody(f, px, ms);
-      if (ov) f.shake(ov, px, ms);
-    }
-    // 打倒傳說藏家：凍住 → 反相 → 全螢幕「打烊！」＋他押的那張 → 震 → 收（約 2 s，不受加速保險影響）
-    async function bossKoFx(readKo) {
-      const f = Fx();
-      const stake = cardById(node && node.stakeId) || cardById(node && node.enemyAceId);
-      await wait(300);
-      if (!rm()) { root.classList.add('invert'); await wait(150); root.classList.remove('invert'); }
-      sfx('reflect');
-      const ov = document.createElement('div'); ov.className = 'dl-ov dl-refx dl-kofx';
-      ov.innerHTML = `<div class="dim"></div><div class="big">${stake ? `<div class="cov dl-shine ${stake.tier || 'hall'}">${coverHTML(stake)}</div>` : ''}<b>打烊！</b>${readKo ? '<span>看穿收尾</span>' : ''}</div>`;
-      document.body.appendChild(ov);
-      A(ov.querySelector('.dim'), [{ opacity: 0 }, { opacity: 1 }], { duration: 300, fill: 'forwards' });
-      A(ov.querySelector('.big'), rm() ? [{ opacity: 0 }, { opacity: 1 }] : [{ transform: 'scale(3)', opacity: 0 }, { transform: 'scale(1)', opacity: 1 }], { duration: rm() ? 150 : 360, easing: 'cubic-bezier(.2,1.4,.4,1)', fill: 'both' });
-      const cov = ov.querySelector('.cov'); if (cov && !rm()) A(cov, [{ transform: 'scale(.3) rotate(10deg)' }, { transform: 'scale(1) rotate(0deg)' }], { duration: 420, delay: 120, easing: 'cubic-bezier(.2,1.3,.4,1)', fill: 'both' });
-      await wait(380);
-      if (f) { shakeScreen(f, ov, 12, 300 / S.speed); f.vibrate(40); }
-      later(() => sfx('win'), 200);
-      await wait(1200);
-      A(ov, [{ opacity: 1 }, { opacity: 0 }], { duration: 300, fill: 'forwards' });
-      later(() => ov.remove(), 320 / S.speed + 20);
-      await wait(200);
-    }
-
-    async function play(act) {
-      if (S.busy || S.ending || S.v.over) return;
-      if (!E.isLegal(duel, act)) return;
-      const before = S.v;
-      S.busy = true; root.classList.add('busy'); S.armed = false; hideHint();
-      els.ult.classList.remove('armed', 'ready'); els.ult.disabled = true;
-      S.speed = baseSpeed(); setSpeed(S.speed);
-      const selKey = act.type === 'ace' ? 'ace' : act.type === 'card' ? act.i : null;
-      const srcEl = selKey == null ? null : (els.hand.querySelector(`.dl-card[data-i="${selKey}"] .cvw`));
-      const pCard = act.type === 'card' ? before.p.hand[act.i] : act.type === 'ace' ? before.p.ace : null;
-      S.debug.act = act; S.debug.shownRows = S.debug.rows;
-      els.ult.innerHTML = '品味輾壓<small>氣勢 6 起</small>';
-      let events;
-      try { events = E.resolveTurn(duel, act); } catch (e) { console.error(e); S.busy = false; root.classList.remove('busy'); return; }
-      try { if (opts.onSave) opts.onSave(duel); } catch (e) { console.error(e); }
-      const after = E.view(duel);
-      S.debug.events = events; S.debug.t0 = performance.now();
-      if (pCard) S.lastPlayed = pCard;
+    async function play(act, sel) {
+      if (!canAct() || !legal(sel)) return false;
+      S.busy = true; S.rush = false; S.playAt = performance.now();
+      const v0 = S.v;
+      const tileEl = els.hand.querySelector(`.tile[data-i="${sel.i}"]`);
+      const srcP = rectOf(tileEl && tileEl.querySelector('.cv'));
+      const srcE = rectOf(els.rec.querySelector('.cvb .cv'));
+      let evs;
+      const ro = {};
+      try { if (typeof hooks.resolveOpts === 'function') Object.assign(ro, hooks.resolveOpts(act) || {}); } catch (e) { console.error(e); }
+      try { if (tut && typeof tut.resolveOpts === 'function') Object.assign(ro, tut.resolveOpts(act) || {}); } catch (e) { console.error(e); }
+      try { evs = E.resolveTurn(duel, act, ro) || []; } catch (e) { console.error(e); S.busy = false; renderAll(); return false; }
+      if (opts.onSave) try { opts.onSave(duel); } catch (e) { console.error(e); }
+      const v1 = view();
+      const cl = evs.find(e => e.t === 'clash');
+      const sw = evs.find(e => e.t === 'switch'), over = evs.find(e => e.t === 'over'), hs = evs.find(e => e.t === 'hand'), dr = evs.find(e => e.t === 'draw');
+      if (!cl) { console.error('DipLabDuel: no clash event', evs); S.busy = false; S.v = v1; renderAll(); return false; }
+      const t0 = performance.now();
+      const ct = clashText(cl, T);
+      const rec = { n: v0.n, act, sel, evs, ct };
+      S.debug.hands.push(rec); if (S.debug.hands.length > 300) S.debug.hands.shift();
       S.sel = null;
-      S.recAttr = S.recBase = null;   // h_counter 的金框只給序章第 1 手；之後（尤其變臉後）再框冷門會誤導
-      try { await playEvents(events, { before, after, act, srcEl, pCard }); }
-      catch (e) { console.error(e); }
-      S.debug.t1 = performance.now();
+      setPhase('resolve');
+      root.classList.add('busy');
+      emit('selected', null);
+      // ---- t=0：兩張唱片飛上牌桌、舞台開始互丟
+      sfx('needle');
+      S.lastCt = null; S.flash = null;
+      S.table = { e: { card: cl.eCard, attr: cl.eAttr, star: cl.eStar }, p: { card: cl.pCard, attr: cl.pAttr, star: cl.pStar, ace: !!cl.ace }, dim: false, badges: null };
+      renderTable(v0);
+      els.last.textContent = '';
+      if (tileEl) tileEl.classList.add('gone');
+      els.hand.querySelectorAll('.chip').forEach(b => { b.disabled = true; });
+      S.recNext = true; renderRec(v1);
+      fly(els.sp.querySelector('.cv'), srcP, 260); fadeIn(els.sp.querySelector('.who'), 260);
+      fly(els.se.querySelector('.cv'), srcE, 260); fadeIn(els.se.querySelector('.who'), 260);
+      renderAct();
+      let stagePr = null;
+      if (hasStage('clash')) {
+        if (hasStage('clearClash')) stg('clearClash');
+        stagePr = stg('clash', { kind: cl.kind, p: { attr: cl.pAttr, card: cl.pCard && cl.pCard.id, ace: !!cl.ace }, e: { attr: cl.eAttr, card: cl.eCard && cl.eCard.id },
+          seeThrough: !!cl.read, toE: cl.toE | 0, toP: cl.toP | 0, nameE: enemy.name || '', speed: S.speed, reduced: rm() });
+      } else {
+        stg('pose', 'p', 'atk', 200);
+        later(() => stg('pose', 'f', 'atk', 200), 260 / S.speed);
+      }
+      onEvent(cl);
+      await wait(T_HIT);
+      if (S.destroyed) return true;
+      // ---- t=560：浮框、勝負角標、聲望條、音效
+      S.table.badges = ct.badges; renderSlot('e'); renderSlot('p');
+      S.flash = flashOf(cl); renderTri();
+      showCallout(ct);
+      sfx((HIT_SFX[cl.kind] || (() => 'mirror'))(cl));
+      if (cl.read && !rm()) { const f = Fx(); if (f && f.hitStop) try { f.hitStop(80); } catch (_) {} }
+      if (!hasStage('clash')) stageFallbackHit(cl);
+      setHp(els.ehp, els.ehpn, v1.eHp, v1.eMax, v1.notch, true);
+      setHp(els.php, els.phpn, v1.pHp, v1.pMax, null, true);
+      if (cl.toE > 0) floatAt(els.ehpn, '−' + cl.toE, 'g');
+      if (cl.toP > 0) floatAt(els.phpn, '−' + cl.toP, 'r');
+      if (ct.notes.length) (cl.notes || []).forEach(n => { const b = n && n.relic && els.relics.querySelector(`[data-relic="${CSS.escape(n.relic)}"]`); if (b && !rm()) A(b, [{ transform: 'scale(1)', boxShadow: '0 0 0 0 rgba(184,134,11,0)' }, { transform: 'scale(1.25)', boxShadow: '0 0 0 3px rgba(184,134,11,.6)', offset: .4 }, { transform: 'scale(1)', boxShadow: '0 0 0 0 rgba(184,134,11,0)' }], { duration: 700 }); });
+      // 一次性小提示（外殼／教學決定是不是這輩子第一次）
+      if (cl.kind === 'mirrorWin' || cl.kind === 'mirrorLose' || cl.kind === 'tie') hint('tip_mirror', ['result']);
+      if (cl.followed === false && !tiedWithTag(v0, cl)) hint('tip_offhabit', ['e-habit']);
+      if (cl.read) hint('tip_read', ['result']);
+      rec.ui = snapUI();
+      if (tut && typeof tut.onResolved === 'function') try { tut.onResolved(evs); } catch (e) { console.error(e); }
+      emit('resolved', evs);
+      await wait(T_LINE - T_HIT);
+      if (S.destroyed) return true;
+      // ---- t=1460：浮框收成「上一手」
+      hideCallout();
+      S.lastCt = ct; S.flash = null;
+      renderLast(v1); renderTri();
+      rec.ui.lastline = els.last.textContent.replace(/\s+/g, ' ').trim();
+      if (sw) habitSwap(sw, v1);
+      emit('settled', evs);
+      if (over) { await finish(over, v1); return true; }
+      await wait(T_NEXT - T_LINE);
+      if (S.destroyed) return true;
+      if (stagePr && typeof stagePr.then === 'function' && !S.rush) { /* 舞台演完才換手（最多再等 400 ms） */ await Promise.race([stagePr.catch(() => {}), wait(400)]); }
+      // ---- t=2060：下一手
+      S.debug.lastMs = performance.now() - t0;
+      S.v = v1; S.recNext = false;
+      if (S.table) S.table.dim = true;
+      S.speed = baseSpeed(); setSpeed(S.speed); S.rush = false;
+      root.classList.remove('busy');
+      S.busy = false;
+      renderE(v1); renderTable(v1); renderP(v1); renderHand(v1, { slideNew: dr && dr.card ? dr.i : null }); renderAct();
+      scheduleFit();
+      const cv = els.rec.querySelector('.cvb'), stars = els.rec.querySelector('.estars');
+      if (!rm()) { A(cv, [{ transform: 'translateY(-10px)', opacity: 0 }, { transform: 'none', opacity: 1 }], { duration: 260, easing: 'ease-out' }); A(stars, [{ opacity: 0 }, { opacity: 1 }], { duration: 260 }); }
+      if (hs) onEvent(hs);
+      handStart(v1);
+      setPhase('choose');
+      return true;
+    }
+    function habitSwap(sw, v1) {
+      onEvent(sw);
+      sfx('faceChange');
+      const boss = /B ?面/.test(String(sw.label || v1.habitLabel || ''));
+      say('f', pickLine(['switch', 'phase2', '急了']) || T(boss ? 'switchBubbleB' : 'switchBubble'), 1800);
+      if (rm()) { renderHabit(v1); }
+      else {
+        const a = A(els.habit, [{ opacity: 1 }, { opacity: 0 }], { duration: 150, fill: 'forwards' });
+        const fin = () => { renderHabit(v1); A(els.habit, [{ opacity: 0 }, { opacity: 1 }], { duration: 150, fill: 'forwards' }); };
+        if (a) a.finished.then(fin, fin); else fin();
+      }
+      hint('tip_switch', ['e-habit']);
+    }
+    function handStart(v) {
+      if (v.eCard) holdSleeve('e', v.eCard, false);
+      holdSleeve('p', null);
+      if (v.habit === 'eye' && v.eyeTarget) {
+        const t = v.eyeTarget.i === 'ace' ? 'chip-ace' : `chip-${v.eyeTarget.i}-${v.eyeTarget.attr}`;
+        hint('tip_eye', ['e-habit', t]);
+      }
+      emit('handStart', v);
+    }
+    async function finish(over, v1) {
+      S.ending = true;
+      const win = !!over.win;
+      const result = { over: win ? 'win' : 'lose', win, by: over.by || 'hp', pHp: v1.pHp, eHp: v1.eHp, duel };
+      setPhase('over');
+      root.classList.add('over');
+      renderAct();
+      stg('pose', win ? 'f' : 'p', 'ko', 700);
+      sfx('ko');
+      say('f', pickLine(win ? ['lose'] : ['win']), 1800);
+      later(() => sfx(win ? 'win' : 'lose'), 300);
+      let tx = null;
+      if (typeof hooks.endText === 'function') try { tx = hooks.endText(result); } catch (e) { console.error(e); }
+      if (!tx) {
+        const nm = enemy.name || '';
+        if (result.by === 'pile') tx = { title: T('pileOut'), sub: T('pileScore', { p: Math.max(0, v1.pHp), e: Math.max(0, v1.eHp), who: win ? '你' : '他' }), cls: win ? 'ink' : 'red' };
+        else if (win) tx = { title: T('koWin'), sub: nm ? T('koWinSub', { name: nm }) : '', cls: 'ink' };
+        else tx = { title: T('koLose'), sub: run && (run.retryLeft | 0) > 0 ? T('koLoseRetry') : '', cls: 'red' };
+      }
+      bigStamp(tx.title, tx.cls || (win ? 'ink' : 'red'), tx.sub);
+      onEvent(over);
+      S.v = v1;
+      emit('over', result);
+      await wait(1500);
       if (S.destroyed) return;
-      S.v = after;
-      renderAll();
-      S.busy = false; root.classList.remove('busy');
-      S.speed = baseSpeed(); setSpeed(S.speed);
-      if (after.over) finish(after.over);
-      else afterHandHints(after);
+      if (typeof hooks.beforeEnd === 'function') { try { await hooks.beforeEnd(result); } catch (e) { console.error(e); } }
+      if (S.destroyed) return;
+      if (!rm()) { const a = A(root, [{ opacity: 1, transform: 'none' }, { opacity: 0, transform: 'translateY(24px)' }], { duration: 300, easing: 'ease-in', fill: 'forwards' }); if (a) await a.finished.catch(() => {}); }
+      tags(false);
+      holdSleeve('e', null); holdSleeve('p', null);
+      S.busy = false;
+      if (opts.onEnd) try { opts.onEnd(result); } catch (e) { console.error(e); }
     }
 
-    async function playEvents(evs, ctx) {
-      const { before, after, act, srcEl, pCard } = ctx;
-      const f = Fx();
-      const clash = evs.find(e => e.t === 'clash'), reveal = evs.find(e => e.t === 'reveal'), habit = evs.find(e => e.t === 'habitRevealed');
-      const hp = { p: before.p.hp, e: before.e.hp };
-      const hsEv = evs.find(e => e.t === 'handStart');
-      const qiGain = (hsEv && hsEv.qiGain) || { p: 0, e: 0 };
-      let bannerInfo = null, faceSeen = false;
-      const pendFx = [];
-      let dmgDone = false;
-      const flushFx = delay => { if (!pendFx.length) return; const fs = pendFx.splice(0); if (delay) later(() => fs.forEach(fn => fn()), delay / S.speed); else fs.forEach(fn => fn()); };
-      // 全晚的高潮（傳說藏家翻 B 面、打倒傳說藏家）不准被「這手太長就加速」的保險壓成 2 倍速
-      const koEv = evs.find(e => e.t === 'ko');
-      const climax = evs.some(e => e.t === 'faceChange' && (e.aceIn || (e.starPlus && e.starPlus > (before.e.starPlus || 0)))) || !!(koEv && koEv.winner === 'p' && enemy.boss);
-      // hand cards: hide the played one
-      if (act.type === 'card' || act.type === 'ace') {
-        const el = els.hand.querySelector(`.dl-card[data-i="${act.type === 'ace' ? 'ace' : act.i}"]`);
-        if (el) { el.classList.remove('sel'); if (act.type === 'card') el.classList.add('gone'); }
-      }
-      els.attrs.innerHTML = '<div class="ph">　</div>';
-      say('o', null);
-      const t0 = performance.now(), base = S.speed;
-      const guard = () => { if (climax) return; const el = (performance.now() - t0) * (S.speed / base); if (el > 1350 && S.speed < base * 2) setSpeed(base * 2); };   // 1350：連 KO 那手也壓在 2.2 s 內
-      for (const ev of evs) {
-        if (S.destroyed) return;
-        emit(ev);
-        if (ev.t === 'damage' || ev.t === 'faceChange' || ev.t === 'handStart' || ev.t === 'ko') guard();
-        switch (ev.t) {
-          case 'reveal': {
-            const ps = [];
-            if (ev.pAct === 'ult') ps.push(ultFx(before.p.qi, 'p', clash ? clash.toE : before.p.qi));
-            else ps.push(flyCard(srcEl, ev.pCard, ev.pAttr));
-            // 他的唱片原地翻面閃一下
-            els.rec.classList.remove('flip'); void els.rec.offsetWidth; els.rec.classList.add('flip');
-            if (!ev.eUlt && ev.cellIdx >= 0) ps.push(spinTo(ev.cellIdx));
-            await Promise.all(ps);
-            if (ev.pAct !== 'ult') {
-              sfx('slam');
-              els.table.classList.remove('slam'); els.rec.classList.remove('slam'); void els.table.offsetWidth;
-              els.table.classList.add('slam'); els.rec.classList.add('slam');
-            }
-            if (!ev.eUlt && ev.cellIdx >= 0) {
-              lightSlice(ev.cellIdx, ev.eAttr, ev.glyph);
-              await wait(200);
-              if (ev.glyph === 'feint') hint('h_feint');
-            } else await wait(80);
-            break;
-          }
-          case 'habitRevealed': {
-            const idx = []; discSlices(before).forEach((s, i) => { if (s.glyph === 'hidden') idx.push(i); });
-            const ns = discSlices(before).map(s => s.glyph === 'hidden' ? { glyph: ev.glyph } : s);
-            sfx('flip');
-            await flipSlices(ns, idx, 80);
-            // 蓋在他的唱片上（不蓋橫幅：橫幅的「🔍 發現：…」那行要馬上讀得到）
-            if (f) f.stamp(els.rec || els.disc, '🔍 發現', 'green', 600);
-            // 名牌上的「？」翻成那個字，跳一下（讀人圖鑑記下來了）
-            els.hid.textContent = GL[ev.glyph] || '？'; els.hid.classList.add('known'); els.hid.title = '發現過的習慣：' + (GL[ev.glyph] || '');
-            els.hid.classList.remove('bounce'); void els.hid.offsetWidth; els.hid.classList.add('bounce');
-            break;
-          }
-          case 'acePassive': {
-            floatHis(ev.qi ? `${ev.name} 他氣勢${ev.qi}` : ev.name, 'qi');
-            eqi(Math.max(0, before.e.qi + (ev.qi || 0)), before);
-            break;
-          }
-          case 'chain': {
-            S.chainShown = true; els.chain.classList.remove('pd');
-            const dots = els.chain.querySelectorAll('i');
-            for (let i = 0; i < ev.len; i++) { if (dots[i]) { dots[i].classList.add('on'); } sfx('qiUp', { n: 3 + i * 2 }); }
-            floatSmall(els.chain, `${ev.skill} ${ev.len} 連 ＋${ev.qi} 氣勢${ev.dmg ? ' ＋' + ev.dmg + ' 傷害' : ''}`, 'qi', { prefer: 'down', avoid: KEEP_CLEAR().concat([els.phpn, els.vu, els.pqn]) });
-            if (ev.len >= 3) { els.chain.classList.remove('sweep'); void els.chain.offsetWidth; els.chain.classList.add('sweep'); }
-            if (ev.len === 2) hint('h_chain');
-            break;
-          }
-          case 'clash': {
-            bannerInfo = banner(ev, { habit, prevLast: before.p.lastAttr, relics: before.p.relics });
-            const k = ev.kind;
-            // 小人出手
-            if (ev.toE > 0) sprAnim('p', 'atk', 520);
-            if (ev.toP > 0) sprAnim('f', 'atk', 520);
-            // 音效＋章
-            if (k === 'reflect') {
-              renderBanner(bannerInfo, { noStamp: true });
-              await reflectFx(ev.K, before.p.ace);
-            } else {
-              const st = bannerInfo.stamp, big = { 讀中: 'gold', 看穿: 'gold', 虛晃: 'red', 霸權: 'grey', 割捨防禦: 'blue' }[st];
-              if (k === 'counter') sfx(ev.stamp === 'seeThrough' ? 'seeThrough' : 'readHit');
-              else if (k === 'countered') sfx(ev.stamp === 'feintHit' ? 'feintHit' : 'hurt');
-              else if (k === 'mirrorWin' || k === 'mirrorLose' || k === 'tie') sfx(ev.glyph === 'feint' && k === 'mirrorLose' ? 'feintHit' : 'mirror');
-              else if (k === 'block') sfx('mirror');
-              else if (k === 'eultHit' || k === 'trade') { await ultFx(before.e.qi, 'e', ev.toP); }
-              if (big && f) {
-                const sub = ev.counterName ? ev.counterName : null;
-                const subCls = k === 'counter' ? ev.pAttr : k === 'countered' ? ev.eAttr : null;
-                f.stamp(els.disc, st + '！', big, 900, sub, subCls);
-                if (st === '看穿') f.sparks(els.disc, 14);
-              }
-              renderBanner(bannerInfo, { pop: true, flash: true });
-              if (k === 'hegemonyE' || k === 'hegemonyP') hint('h_hegemony');
-            }
-            // 台詞
-            if (k === 'counter' || k === 'reflect' || k === 'mirrorWin') { const l = pickLine('countered'); if (l) say('f', esc(l), { ms: 1600 }); }
-            else if (ev.toP > 0) { const l = pickLine('hit'); if (l) say('f', esc(l), { ms: 1600 }); }
-            // 音樂大時刻
-            if (k === 'counter' && ev.stamp === 'seeThrough' && ev.toE >= 6 && pCard) bigMusic(pCard);
-            if (k === 'ult' && ev.toE >= 6) bigMusic(S.lastPlayed || before.p.ace);
-            // 氣勢條：先到「這手結束」的值（下一手的漲勢在 handStart 才加）
-            later(() => {
-              eqi(Math.max(0, after.e.qi - (qiGain.e || 0)), before);
-              qiTo(before.p.qi, Math.max(0, after.p.qi - (qiGain.p || 0)));
-            }, 120);
-            await wait(k === 'reflect' ? 60 : 240);
-            break;
-          }
-          case 'attrFx': {
-            const isP = ev.who === 'p';
-            // 小字晚 250 ms、壓在各自的列上，不跟傷害數字同時擠在一起；聲望已滿就不飄「＋聲望」
-            const mine = (txt, cls) => () => floatMine(cls === 'qi' || /氣勢/.test(txt) ? els.pqn : els.phpn, txt, cls);   // 氣勢的增減貼在氣勢列
-            const his = (txt, cls) => () => floatHis(txt, cls);
-            if (ev.hp) {
-              const cap = isP ? before.p.maxHp : before.e.maxHp, from = hp[ev.who], gain = Math.max(0, Math.min(cap, from + ev.hp) - from);
-              hp[ev.who] += gain;
-              if (gain > 0) {
-                pendFx.push(isP ? mine(`＋${gain} 聲望`, '') : his(`他＋${gain} 聲望`, ''));
-                hpAnim(isP ? els.php : els.ehp, from, hp[ev.who], cap);
-              }
-              if (isP) { els.phpn.textContent = hp.p; } else els.ehpn.textContent = hp.e;
-            }
-            if (ev.qi) pendFx.push(isP ? mine(`＋${ev.qi} 氣勢`, 'qi') : his(`他＋${ev.qi} 氣勢`, 'qi'));
-            if (ev.oppQi) pendFx.push(isP ? his(`他氣勢 ${ev.oppQi}`, 'neg') : mine(`你氣勢 ${ev.oppQi}`, 'neg'));
-            if (dmgDone) flushFx(120);   // 傷害數字已經飄了：小字晚一拍接著出
-            break;
-          }
-          case 'damage': {
-            const tgt = ev.target, amt = ev.amount;
-            const from = hp[tgt]; hp[tgt] = from - amt;
-            const glyphFe = clash && clash.glyph === 'feint';
-            const isUlt = clash && (clash.kind === 'ult' || clash.kind === 'trade' || clash.kind === 'eultHit' || clash.kind === 'reflect');
-            if (f) {
-              floatDmg(tgt, amt, clash ? subLine(clash, tgt) : '', isUlt);
-              dmgDone = true;
-              flushFx(250);
-              if (clash && clash.kind !== 'reflect') await (f.hitStop ? f.hitStop(90) : wait(90));
-              if (!isUlt) shakeBody(f, glyphFe ? 6 : 4, (glyphFe ? 160 : 120) / S.speed);
-              f.vibrate(15);
-            }
-            if (tgt === 'e') {
-              hpAnim(els.ehp, from, hp.e, before.e.maxHp); els.ehpn.textContent = Math.max(0, hp.e);
-              // 變臉刻度裂開
-              (before.e.notches || []).forEach((n, i) => {
-                if (from > n && hp.e <= n) { const nt = els.ehp.querySelectorAll('.nt')[i]; if (nt) { nt.classList.add('crack'); cssDur(nt, 180); } }
-              });
-              sprAnim('f', 'hurt', 550);
-            } else {
-              hpAnim(els.php, from, hp.p, before.p.maxHp); els.phpn.textContent = Math.max(0, hp.p);
-              sprAnim('p', 'hurt', 550);
-              if (!f || clash.kind !== 'countered') sfx('hurt');
-            }
-            await wait(220);
-            break;
-          }
-          case 'revive': {
-            hpAnim(els.php, 0, ev.hp, before.p.maxHp); els.phpn.textContent = ev.hp; hp.p = ev.hp;
-            if (f) { f.stamp(els.php, '神秘見本盤', 'green', 700); f.flash('#ffffff', 150); }
-            const l = (content.lines && content.lines.player && content.lines.player.revive) || '還沒完。';
-            say('p', esc(l), { ms: 1800 });
-            sfx('win');
-            await wait(500);
-            break;
-          }
-          case 'ko': {
-            const pWin = ev.winner === 'p';
-            sfx('ko');
-            const a = actor(pWin ? 'f' : 'p'); if (a) { a.classList.remove('atk', 'hurt', 'bob'); a.classList.add('ko'); cssDur(a, 700); }
-            // 藏家輸的那句「……這張，送你。」留給打烊那一幕講，這裡只說「有意思。」免得連講兩次
-            const l = (pWin && enemy.boss) ? pickLine('countered') : pickLine(pWin ? 'lose' : 'win');
-            if (l) say('f', esc(l), { voice: true });
-            const readKo = pWin && !ev.timeout && clash && clash.kind === 'counter' && clash.stamp === 'seeThrough';
-            if (pWin && enemy.boss && !ev.timeout) {
-              // 打倒傳說藏家：全晚的收尾，比照七星回擊給一個全螢幕的「打烊！」；音樂換成他押的那張（等一下就歸你）
-              bigMusic(cardById(node && node.stakeId) || cardById(node && node.enemyAceId), true, true);
-              await bossKoFx(readKo);
-              break;
-            }
-            if (f) f.stamp(els.disc, pWin ? (readKo ? '看穿收尾！' : '勝出！') : '倒下', pWin ? 'gold' : 'red', readKo ? 900 : 700, ev.timeout ? '時間到' : null);
-            if (readKo && f) f.sparks(els.disc, 18);
-            // 贏了不在這裡換歌：下一個畫面的押盤翻開就會換（兩秒內連換兩次只會聽到刮盤）
-            if (!pWin) bigMusic(before.intent && before.intent.record, true);
-            later(() => sfx(pWin ? 'win' : 'lose'), 380);
-            await wait(readKo ? 900 : 750);
-            break;
-          }
-          case 'faceChange': {
-            faceSeen = true;
-            sfx('faceChange');
-            const st = S.stage;
-            showAnger(true); later(() => showAnger(false), 1600);
-            const fa = actor('f'); if (fa) { fa.classList.add('warn', 'rage'); later(() => fa.classList.remove('warn', 'rage'), 1600); }
-            const l = pickLine('faceChange', ZH[duel.p.lastAttr] || ZH[after.p.lastAttr] || '');
-            if (l) say('f', esc(l), { tone: 'bold', ms: 2200 });
-            // 唱盤一格一格翻面
-            const ns = discSlices(after);
-            const plusUp = ev.starPlus && ev.starPlus > (before.e.starPlus || 0);
-            await flipSlices(ns, null, (ev.aceIn || plusUp) ? 80 : 45);
-            if (ev.aceIn || plusUp) {
-              // 傳說藏家翻 B 面：全場最大的規則變化，章停久一點、橫幅多一行講清楚
-              const parts = [];
-              if (plusUp) parts.push(`他的唱片三軸＋${ev.starPlus} 星`);
-              if (ev.aceIn) parts.push('你沒選的那張王牌洗進他的牌庫');
-              if (bannerInfo) { bannerInfo.note = '翻面：' + parts.join('，'); renderBanner(bannerInfo); }
-              if (f) { shakeBody(f, 6, 260 / S.speed); f.stamp(els.disc, (enemy.phaseLabels && enemy.phaseLabels[ev.phase]) || '翻面', 'ink', 900, ev.aceIn ? '王牌洗進他的牌庫' : '唱片＋' + ev.starPlus + ' 星'); }
-              await wait(1150);
-            }
-            // h_face 的字（四格是「晃」）只對序章男子成立：只在序章提示
-            if (duel.prologue) hint('h_face');
-            void st;
-            break;
-          }
-          case 'handStart': {
-            await resetDisc();
-            S.v = after;
-            renderTop(after); renderSide(after); renderHist(after);
-            renderRecord(after); renderDisc(after);
-            els.rec.classList.remove('flip'); void els.rec.offsetWidth; els.rec.classList.add('flip');
-            A(els.rec, [{ transform: 'translateX(40px)', opacity: 0 }, { transform: 'none', opacity: 1 }], { duration: 220, easing: 'ease-out' });
-            sfx('flip');
-            if (before.K !== after.K) { els.stake.classList.remove('bump'); void els.stake.offsetWidth; els.stake.classList.add('bump'); }
-            eqi(after.e.qi, after);
-            if (qiGain.p) qiTo(+els.pqn.textContent || 0, after.p.qi);
-            if (after.e.quirk && before.e.quirk && after.e.quirk.val > before.e.quirk.val) { const sk = els.chips.querySelector('.skip'); if (sk) sk.classList.add('up'); }
-            els.table.classList.remove('on');
-            if (after.intent && after.intent.ult) { sfx('eUltWarn'); bubbleForHand(after); }
-            else if (!faceSeen) later(() => bubbleForHand(after), 200);
-            else later(() => bubbleForHand(after), 1400);
-            await wait(240);
-            break;
-          }
-        }
-      }
-      flushFx(0);
-      // ult hand with no handStart (ko) → keep banner
-      if (bannerInfo) S.debug.bannerInfo = bannerInfo;
+    // ---------------- 起手 ----------------
+    function initialTable() {   // 續玩：從 view().last 還原「上一手」兩張（變淡）
+      const l = S.v.last;
+      if (!l || S.v.over) return;
+      S.lastCt = clashText(l, T);
+      S.table = { e: { card: l.eCard, attr: l.eAttr, star: l.eStar }, p: { card: l.pCard, attr: l.pAttr, star: l.pStar, ace: !!l.ace }, dim: true, badges: S.lastCt.badges };
     }
-    function qiTo(from, to) {
-      if (to === from) { vu(to); return; }
-      if (to < from) { vu(to); return; }
-      let q = from;
-      const step = () => {
-        if (S.destroyed) return;
-        q++; vu(q);
-        const led = els.vu.querySelectorAll('i')[q - 1]; if (led) { led.classList.remove('pop'); void led.offsetWidth; led.classList.add('pop'); }
-        sfx('qiUp', { n: q });
-        if (q === 6) { els.peak.classList.remove('on'); void els.peak.offsetWidth; els.peak.classList.add('on'); sfx('qiUp', { n: 10 }); }
-        if (q < to) later(step, 55 / S.speed);
-      };
-      step();
-    }
-    function showAnger(on) {
-      const a = actor('f'), sr = els.stageWrap.getBoundingClientRect();
-      if (on && a) { const r = a.getBoundingClientRect(); els.anger.style.left = (r.left - sr.left + r.width * 0.02) + 'px'; els.anger.style.top = Math.max(2, r.top - sr.top - 2) + 'px'; }
-      els.anger.classList.toggle('on', !!on);
-    }
-    function afterHandHints(v) {
-      const it = v.intent;
-      const ids = [];
-      // 這手非懂不可的放最前：殺氣騰騰而你的王牌接得住 → 先講七星回擊（h_reflect 已經隱含「他要輾壓」），
-      // 不然第一次七星回擊的機會會被「割捨防禦」那句搶走
-      // h_reflect 只在真的輾壓手講（不是「整場王牌剋得到他的大招屬性」就講）；接得住的那手不講「割捨防禦」
-      if (it && it.ult && v.p.aceCanReflect) ids.push('h_reflect');
-      if (it && it.ult && !v.p.aceCanReflect) ids.push('h_eult');
-      // 上一手結算中冒出來、排隊等著的（晃、相生、變臉、霸權）
-      const q = S.hintQ.splice(0);
-      if (!(it && it.ult)) ids.push(...q);
-      // 序章第 2 手起（第 2 手常被前一個提示佔住，就順延；王牌已用就不講了）
-      if (v.prologue && v.hand >= 2 && !v.p.aceUsed) ids.push('h_ace');
-      if (v.p.qi >= 6) ids.push('h_ult');
-      ids.push(...glyphHints(v));
-      if (it && it.ult) ids.push(...q);
-      // 上一手留下來、這手已經不成立的提示（例：七星回擊）先收掉
-      if (S.hintOn && hintStale(S.hintId)) hideHint();
-      // 等 400 ms 再講（跟速度一起縮）；這段時間玩家已經出手了：看這手的提示作廢（下一手重新判斷），結算中冒出來的照樣排隊
-      const hand = v.hand;
-      later(() => {
-        if (S.destroyed || S.ending) return;
-        if (S.busy || (S.v && S.v.hand !== hand)) { ids.forEach(id => { if (id && !HINT_NOW[id] && !S.hintQ.includes(id)) S.hintQ.push(id); }); return; }
-        firstHint(ids);
-      }, 400 / (S.speed || 1));
-    }
-    function finish(over) {
-      if (S.ending) return; S.ending = true;
-      renderAttrs(S.v);
-      later(() => { try { if (opts.onEnd) opts.onEnd({ over, duel }); } catch (e) { console.error(e); } }, 300);
-    }
-
-    // ---------------- intro ----------------
-    async function intro(evs) {
-      // 等遇敵黑幕／Boss 蓋章退場（Boss 蓋章是 mount 之後才加上的，先讓一拍）
-      await wait(80);
-      for (let i = 0; i < 120 && document.querySelector('.enc-ov, .bossmask'); i++) await wait(50);
-      if (S.destroyed) return;
-      const v = S.v;
-      (evs || []).forEach(emit);
-      const resumed = v.hand > 1 || (v.history && v.history.length);
-      const f = Fx();
-      if (f && f.music) {
-        const pre = [];
-        if (node && node.stakeId) pre.push(cardById(node.stakeId));
-        if (v.p.ace) pre.push(v.p.ace);
-        if (node && node.enemyAceId) pre.push(cardById(node.enemyAceId));
-        f.music.preload(pre.filter(Boolean));
-        if (enemy.boss && v.intent && v.intent.record && !resumed) bigMusic(v.intent.record, true);
-      }
-      if (!resumed && lines.intro) { say('f', esc(lines.intro), {}); await wait(1700); }
-      if (S.destroyed) return;
-      S.introDone = true;
-      bubbleForHand(S.v);
-      const ids = [];
-      if (v.prologue && v.hand === 1) {
-        ids.push('h_counter');
-      }
-      if (v.intent && v.intent.ult && v.p.aceCanReflect) ids.push('h_reflect');
-      if (v.intent && v.intent.ult && !v.p.aceCanReflect) ids.push('h_eult');
-      if (v.request) ids.push('h_request');
-      if (v.e.quirk && v.e.quirk.type === 'skip') ids.push('h_skip');
-      ids.push(...glyphHints(v));
-      const shown = firstHint(ids);
-      if (shown === 'h_counter' && v.intent && !v.intent.ult) { S.recBase = S.recAttr = BEATER[v.intent.bubble]; renderAttrs(S.v); }
-    }
-
-    // ---------------- boot ----------------
-    setupStage();
-    const f0 = Fx();
-    if (f0) {
-      try { S.toggle = f0.mountToggle(els.snd); } catch (e) { console.error(e); }
-      // 換歌：迷你唱盤先減速 300 ms 再換圈標
-      if (f0.music && f0.music.onChange) S.offMusic = f0.music.onChange(() => { els.tt2.classList.add('slow'); later(() => { els.tt2.classList.remove('slow'); renderTurntable(); }, 300); });
-      if (f0.music && f0.music.onEnded) S.offEnded = f0.music.onEnded(card => later(() => onMusicEnded(card), 250));
-      f0.setSpeed(S.speed);
-    }
+    initialTable();
     renderAll();
-    renderTurntable();
-    // 重新整理後回到對決：橫幅接著顯示上一手的結果（不是一句「接著上次的對決」就帶過）
-    let resumedBanner = false;
-    if (S.v.hand > 1 && duel.lastClash) {
-      try {
-        const rv = duel.lastReveal || null;
-        const info = banner(duel.lastClash, { habit: rv && rv.found && rv.glyph ? { glyph: rv.glyph } : null, prevLast: (rv && rv.prevLast) || null, relics: S.v.p.relics });
-        if (info && info.text) { renderBanner(info); resumedBanner = true; }
-      } catch (e) { console.error(e); }
+    if (opts.enter && !rm()) {
+      const a = A(root, [{ opacity: 0, transform: 'translateY(24px)' }, { opacity: 1, transform: 'none' }], { duration: 600, easing: 'cubic-bezier(.2,.7,.3,1)' });
+      const done = () => { if (S.destroyed) return; S.enterDone = true; afterEnter(); };
+      if (a) a.finished.then(done, done); else done();
+    } else { S.enterDone = true; later(afterEnter, 0); }
+    function afterEnter() {
+      if (S.destroyed) return;
+      tags(true);
+      const fresh = (S.v.n | 0) <= 1 && !S.v.last;
+      const open1 = lines.line || lines.intro;   // 口頭禪（SPEC-v3 §3），沒有就用推門那句
+      if (fresh && open1 && !tut) say('f', Array.isArray(open1) ? open1[0] : open1, 1800);
+      renderAct();
+      handStart(S.v);
+      setPhase('choose');
     }
-    if (!resumedBanner) renderBanner(null, { text: S.v.hand > 1 ? '接著上次的對決。挑一張盤。' : '他把唱片擺上唱盤了。挑一張盤，再選屬性。' });
-    if (S.v.over) later(() => finish(S.v.over), 50);
-    else intro(opts.events);
 
-    // ---------------- 自動遊玩（__lab.autoplay(policy,{animated:true}) 用；走真的 UI 與動畫）----------------
+    // ---------------- autoplay（e2e 用；走正常的點擊流程與 gate） ----------------
     async function autoplay(policy) {
-      const pols = E.policies || {};
-      const pol = pols[policy || 'ev'] || pols.ev;
-      if (!pol || S.auto) return false;
-      const rnd = E.makeRng(((duel.rng | 0) ^ 0x5bd1e995) >>> 0 || 1);
+      const P = E.policies || {};
+      const pol = P[policy] || P.novice || P.random;
+      if (typeof pol !== 'function') return false;
       S.auto = true;
-      while (!S.destroyed && S.auto && !duel.over) {
-        while (!S.destroyed && (!S.introDone || S.busy)) await wait(50);
-        if (S.destroyed || !S.auto || duel.over) break;
-        let act = null; try { act = pol(duel, rnd); } catch (e) { console.error(e); break; }
-        if (!act || !E.isLegal(duel, act)) break;
-        if (act.type === 'card') S.sel = act.i; else if (act.type === 'ace') S.sel = 'ace';
-        await play(act);
+      const r = E.makeRng ? E.makeRng(1234) : Math.random, mem = {};
+      while (S.auto && !S.destroyed && !isOver()) {
+        if (!canAct() || paused()) { await wait(40); continue; }
+        let act; try { act = pol(duel, r, mem); } catch (e) { console.error(e); break; }
+        if (!act) break;
+        const isAce = act.ace || act.type === 'ace';
+        const sel = isAce ? { i: 'ace', attr: S.v.aceAxis } : { i: act.i, attr: act.attr };
+        if (!selectChip(sel.i, sel.attr) && selKey(S.sel) !== selKey(sel)) { await wait(80); continue; }
+        await wait(120);
+        throwSel(null);
+        await wait(60);
       }
-      S.auto = false;
       return true;
     }
 
-    // ---------------- api ----------------
     function destroy() {
       S.destroyed = true;
+      tags(false);
       S.timers.forEach(h => clearTimeout(h)); S.timers.clear();
-      S.anims.forEach(a => { try { a.cancel(); } catch (_) {} });
-      document.removeEventListener('keydown', S.keyH);
-      if (S.offMusic) S.offMusic();
-      if (S.offEnded) S.offEnded();
-      if (S.toggle && S.toggle.destroy) { try { S.toggle.destroy(); } catch (_) {} }
-      if (S.stage && typeof S.stage.unmount === 'function') { try { S.stage.unmount(); } catch (_) {} }
-      document.querySelectorAll('.dl-ov').forEach(n => n.remove());
+      S.anims.forEach(a => { try { a.cancel(); } catch (_) {} }); S.anims.clear();
+      if (S.fitRaf) cancelAnimationFrame(S.fitRaf);
+      if (S.ro) try { S.ro.disconnect(); } catch (_) {}
       root.remove();
+    }
+    function elByName(name) {
+      if (!name) return null;
+      if (name[0] === '@') { const s = hooks.stage; return s && typeof s.anchor === 'function' ? (() => { try { return s.anchor(name.slice(1)); } catch (_) { return null; } })() : null; }
+      if (name.startsWith('card:')) return els.hand.querySelector(`.tile[data-card="${CSS && CSS.escape ? CSS.escape(name.slice(5)) : name.slice(5)}"]`);
+      if (name.startsWith('chip:best:')) {   // 'chip:best:o'＝手牌裡冷門星最多的那顆（不含王牌）；'chip:best:o:ace'＝含王牌
+        const [a, withAce] = name.slice(10).split(':'), v = S.v; let b = null;
+        if (typeof E.bestChip === 'function') { try { b = E.bestChip(duel, a, { ace: withAce === 'ace' }); } catch (_) { b = null; } }
+        else {
+          let bs = -1;
+          if (withAce === 'ace' && v.ace && !v.aceUsed && v.aceAxis === a) { b = { ace: true }; bs = v.ace[a] | 0; }
+          v.hand.forEach((c, i) => { if (c && (c[a] | 0) > bs) { bs = c[a] | 0; b = { i, attr: a }; } });
+        }
+        if (!b) return null;
+        return root.querySelector(`[data-tut="${b.ace ? 'chip-ace' : `chip-${b.i}-${a}`}"]`);
+      }
+      return root.querySelector(`[data-tut="${name}"]`);
+    }
+    const txt = el => el ? el.textContent.replace(/\s+/g, ' ').trim() : '';
+    function snapUI() {
+      const ans = {}, stars = {};
+      ATTRS.forEach(a => { const es = els.rec.querySelector(`.es[data-tut="e-star-${a}"]`); ans[a] = txt(es && es.querySelector('.ans')); stars[a] = txt(es && es.querySelector('.k')); });
+      const slot = el => ({ who: txt(el.querySelector('.who')), badge: txt(el.querySelector('.badge')), card: el.dataset.card || null, dim: el.classList.contains('dim') });
+      return {
+        call: { st: txt(els.call.querySelector('.st')), l1: txt(els.call.querySelector('.l1')).replace(/^看穿！\s*/, ''), l2: txt(els.call.querySelector('.l2 .v')), l3: txt(els.call.querySelector('.l3')), on: els.call.classList.contains('on') },
+        slotE: slot(els.se), slotP: slot(els.sp), lastline: txt(els.last), habit: { lb: txt(els.hlb), tx: txt(els.htx) },
+        eHp: txt(els.ehpn), pHp: txt(els.phpn), answers: ans, stars, pile: txt(els.rec.querySelector('.pile small')), act: txt(els.say),
+      };
     }
     const api = {
       el: root,
+      elByName,
       view: () => S.v,
       duel: () => duel,
       busy: () => S.busy,
-      play: act => play(act),
-      select: i => select(i),
+      phase: () => S.phase,
+      select: (i, attr) => {
+        if (i == null) return selectChip(null);
+        if (attr == null) { const c = cardOf(S.v, i); if (!c) return false; attr = i === 'ace' ? (S.v.aceAxis || aceAxisOf(c)) : ATTRS.reduce((b, a) => ((c[a] | 0) > (c[b] | 0) ? a : b), 'c'); }
+        return selectChip(i, attr);
+      },
+      play: act => {
+        if (!act) return Promise.resolve(false);
+        const isAce = act.ace || act.type === 'ace';
+        const sel = isAce ? { i: 'ace', attr: S.v.aceAxis } : { i: act.i, attr: act.attr };
+        if (selKey(S.sel) !== selKey(sel) && !selectChip(sel.i, sel.attr)) return Promise.resolve(false);
+        const c = cardOf(S.v, sel.i);
+        if (!canAct() || !gate({ kind: 'throw', i: sel.i, attr: sel.attr, id: c && c.id })) return Promise.resolve(false);
+        return play(actOf(sel), sel);
+      },
+      hold: onOff => hold(onOff !== false),
+      held: () => S.held,
+      tri: lit => { S.triForce = lit == null ? null : [].concat(lit); renderTri(); },
       autoplay: p => autoplay(p),
       stopAuto: () => { S.auto = false; },
-      // ⏸ 改了設定（自己讀唱盤、加速）：馬上重畫，不用等下一手
-      rerender: () => { if (S.destroyed || S.busy) return; S.v = E.view(duel); S.speed = baseSpeed(); setSpeed(S.speed); renderAll(); renderUlt(S.v); },
-      debug: () => ({ view: S.v, busy: S.busy, sel: S.sel, events: S.debug.events, banner: S.debug.banner, bannerInfo: S.debug.bannerInfo || null,
-        rows: S.debug.rows, shownRows: S.debug.shownRows || null, act: S.debug.act, ms: S.debug.t1 && S.debug.t0 ? S.debug.t1 - S.debug.t0 : null, log: S.debug.log.slice(), introDone: S.introDone }),
+      rerender: () => { if (S.destroyed || S.busy) return; S.v = view(); S.speed = baseSpeed(); setSpeed(S.speed); renderAll(); },
+      debug: () => ({
+        phase: S.phase, n: S.v.n, view: S.v, sel: S.sel, busy: S.busy, held: S.held, speed: S.speed, enterDone: S.enterDone, rush: S.rush,
+        ui: snapUI(), hands: S.debug.hands.map(h => ({ n: h.n, sel: h.sel, evs: h.evs, ui: h.ui })), last: S.debug.hands[S.debug.hands.length - 1] || null,
+        log: S.debug.log.slice(), ms: S.debug.lastMs || null, cls: root.className,
+      }),
     };
+    if (qs.get('debug') === '1') window.__dl = api;
     return { api, destroy };
   }
 
   const DipLabDuel = {
-    mount, unmount,
+    mount, unmount, on,
+    el: name => (CUR ? CUR.api.elByName(name) : null),
     debug: () => (CUR ? CUR.api.debug() : null),
     api: () => (CUR ? CUR.api : null),
+    select: (i, attr) => (CUR ? CUR.api.select(i, attr) : false),
+    hold: onOff => (CUR ? CUR.api.hold(onOff) : 0),
+    play: act => (CUR ? CUR.api.play(act) : Promise.resolve(false)),
+    tri: lit => { if (CUR) CUR.api.tri(lit); },
     autoplay: policy => (CUR ? CUR.api.autoplay(policy) : false),
     stopAuto: () => { if (CUR) CUR.api.stopAuto(); },
     rerender: () => { if (CUR) CUR.api.rerender(); },
-    _fmt: { banner, groupRows, resText, subLine, rowLabel },
+    _fmt: { clashText, answerOf, habitParts, text: dtOf },
   };
   window.DipLabDuel = DipLabDuel;
-  if (qs.get('debug') === '1') window.__dl = DipLabDuel;
 })();

@@ -1,5 +1,15 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-07｜dip-vinyl-shop｜game-lab 試做版 v2→v3：照店主回饋改成「三相剋為核心」的精簡對決＋P2 斜俯視像素店＋原版可愛人物
+
+- **店主 11-07 一連串回饋**（PR #423）：v1 對戰介面太亂、看不懂；要回原版極簡、雙方分明；點專輯開原版唱片資訊卡；唱片行改像素風且比例一致、可互動、之後要能換店家與台北地圖；序章保留手遊式逐步教學；修 iOS 屬性文字鏡像 bug；對戰保留店內畫面無縫接軌；規劃唱盤區互丟唱片；「機制太複雜，去蕪存菁，以三相剋為核心」；配件可留但不影響遊玩；像素精緻度要像初版；店景照他實拍（中間唱片箱島、透視、耳機高度寫實）；人物要原本的可愛 Q 版（拒絕寫實版與重畫 Q 版）；整體老 GBA 像素風；最後選定「P2 斜俯視」店景。
+- **規則（v3）**：六行規則卡。他先亮出這手的唱片（三軸可見）→ 你點自己唱片上的一顆星，同時丟；三相剋（冷剋經、經剋硬、硬剋冷）剋中用自己那顆星扣，同色比星扣差額；名牌寫脾氣（老實、跟風、記仇、跳針、輪流、虛晃、盯手），約六成照脾氣；王牌一軸 7 星每場一次；聲望先歸零輸，他唱片丟完比聲望。拿掉氣勢、品味輾壓、相生、賭注、六格唱盤、點播、事件、地圖分岔。發燒配件保留 6 件被動、最多 3 件。今晚來客線性（3 一般＋1 菁英＋傳說藏家），每晚老闆說情重打一次。數字：你 10、客人 14、菁英 16、藏家 18（為配件回補後調高 1）。
+- **介面**：上方像素店唱盤區（他左白台、你右黑台、老闆裁判，雙方丟唱片相撞、贏的打中、落盤轉動），下方原版極簡盤面（他在上、你在下、兩張出牌各有「他・／你・」與勝負角標、中央三角箭頭亮起）；手牌點星＝選、再點＝丟，點封面＝唱片資訊（原版 roguelike 卡移植到 `cardinfo.js`）。序章 10 步手遊式引導（聚光、手指、擋錯招、可跳過）。
+- **美術**：店景採店主選定的 P2 斜俯視（中間唱片箱島、牆上封面朝外、試聽桌耳機在桌高、櫃檯、門、窗、植物、串燈），34 個熱點；店家配置資料化（`shops/*.json`，台北地圖先做預告）。人物用原版 16 格 Q 版放大 3 倍加 1px 外框與一階陰影；捏角色（17 髮型、18 髮色、帽子／眼鏡／上衣／下身／配件），標題與 ⏸ 進入。
+- **主要檔案**：`game-lab/{engine.js,content.js,duel.js,duel.css,tutorial.js,tutorial.css,ui.js,style.css,cardinfo.js,fx.js,stage.js,shop.js,shop-props.js,shop.css,chars.js,charedit.js,charedit.css,index.html,README.md,LINES-REVIEW.md}`、`game-lab/shops/*.json`、`game-lab/test/{engine,tutorial,shop,chars}.test.mjs`、`game-lab/tests/e2e.spec.mjs`、`game-lab/sim.mjs`、`game-lab/tools/{lint-copy,check-content,check-shops,bake-cards}.mjs`。設計稿與評審紀錄在雲端 scratchpad（SPEC-v2、SPEC-v3、轉盤區設計、各輪評審）。
+- **驗證**：engine.test 1,596,867、tutorial.test 3,584、shop.test 409、chars.test 30,061 全過；sim 77/77（照名牌 83%、亂丟 28%、最強固定公式 51%）；lint-copy、check-content、check-shops 通過；e2e 96/96（390×664、375×548、360×640、390×844），console 0 錯誤。**未驗**：真 iPhone（Safari／Chrome）實機；localhost 看不到 `/album-desc` 簡介（Worker CORS）。
+- **待店主**：新台詞（`LINES-REVIEW.md`）；名牌是否改用玩家自取的名字；店裡背對鏡頭的熟客要留或加；聲望 14/16/18 與防塵套少扣 1 的調整。
+
 ### 2026-11-07｜dip-vinyl-shop｜頻率光譜：下排轉輪往上加高、篩選排縮小、「溫暖 / WARMTH」改「溫度 / TEMP」（v72）
 
 - **店主 11-07（截圖紅框）**：「讓最下排的旋鈕往上擴充，上面的旋鈕縮小；溫暖 warmth 改成溫度（英文太長就用縮寫）。」
