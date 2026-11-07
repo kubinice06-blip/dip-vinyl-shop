@@ -1,9 +1,9 @@
 # 台詞審稿：品味對決・試做版（LINES-REVIEW）
 
 > 由 `node game-lab/tools/lint-copy.mjs` 產生，請勿手改。要改句子，直接改 `game-lab/content.js`（劇本、台詞、提示、事件）或 `game-lab/tools/pitches.json`（推薦語，改完重跑 `node game-lab/tools/bake-cards.mjs`），再重跑本檢查。
-> 這份只列**新句**（試做版新寫、或取自四份概念稿，店主還沒看過）。標成「原句」「拍板」的句子已與現行 `roguelike.html` 逐字比對（36 句，全部一致才會產生這份）。
+> 這份只列**新句**（試做版新寫、或取自四份概念稿，店主還沒看過）。標成「原句」「拍板」的句子已與現行 `roguelike.html` 逐字比對（37 句，全部一致才會產生這份）。
 
-統計：原句 34、拍板 2、新 292（同一句在有聲／安靜兩版序章只算一次）。
+統計：原句 35、拍板 2、新 291（同一句在有聲／安靜兩版序章只算一次）。
 
 ## 序章（有聲音）
 
@@ -404,7 +404,6 @@
 |---|---|---|---|
 | （畫面字） | 老闆 | 本規格新寫 | `tutorial.ui.who` |
 | （畫面字） | 學會了： | 本規格新寫 | `tutorial.ui.learnedPrefix` |
-| （畫面字） | 跳過教學 | 本規格新寫 | `tutorial.ui.skipTut` |
 | （畫面字） | 重看教學 | 本規格新寫 | `tutorial.ui.replay` |
 | （畫面字） | ▶ 品味對決 | 本規格新寫 | `tutorial.ui.start` |
 | （畫面字） | ▶ 直接開打（我會玩） | 本規格新寫 | `tutorial.ui.skip` |
@@ -595,6 +594,7 @@
 | 原句 | 聽說這裡有個新來的，品味不錯？ | `lines.boss.intro` |
 | 原句 | 三十年的耳朵，不會騙人。 | `lines.boss.stampSub` |
 | 原句 | 我的木箱裡，沒有一張爛盤。 | `lines.boss.win` |
+| 原句 | 跳過教學 | `tutorial.ui.skipTut` |
 | 原句 | 「這張放出來客人會跑光……我喜歡。」 | `pitch#swans-filth` |
 | 原句 | 「柏林時期第一張，B 面幾乎沒有人聲。第一次聽會覺得怪，第三次就回不去了。」 | `pitch#david-bowie-low` |
 | 原句 | 「1970 年出的時候沒人要，她就去鄉下住了三十年。後來全世界都在找這張。」 | `pitch#vashti-bunyan-just-another-diamond-day` |

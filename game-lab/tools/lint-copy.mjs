@@ -256,7 +256,8 @@ if (TUT) {
   for (const [k, v] of Object.entries(TUT.ui || {})) {
     if (!TAG_OK(TUT.uiTag)) err('tutorial.ui', '沒有 uiTag');
     if ([...v].length > 18) err('tutorial.ui.' + k, '超過 18 字：' + v);
-    items.push({ scene: k === 'wrong' ? '序章引導教學・點錯時' : '序章引導教學・按鈕與標題', where: 'tutorial.ui.' + k, who: k === 'wrong' ? '老闆' : '（畫面字）', text: v, tag: TUT.uiTag });
+    items.push({ scene: k === 'wrong' ? '序章引導教學・點錯時' : '序章引導教學・按鈕與標題', where: 'tutorial.ui.' + k, who: k === 'wrong' ? '老闆' : '（畫面字）', text: v,
+      tag: ORIG && ORIG.includes(v) && v.length > 3 ? '原句' : TUT.uiTag });
   }
   for (const [k, v] of Object.entries(TUT.learned || {})) items.push({ scene: '序章引導教學・學會的小卡', where: 'tutorial.learned.' + k, who: '（畫面字）', text: (TUT.ui && TUT.ui.learnedPrefix || '') + v, tag: TUT.uiTag });
 }

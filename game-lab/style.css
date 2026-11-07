@@ -477,3 +477,9 @@ small{font-size:inherit;}
 .lb-ct .al.one{-webkit-line-clamp:1;margin-top:1px;}
 .lb-panel.title .lb-tbtns{padding-top:40px;}
 @media (max-height:600px){.lb-panel.title .lb-tbtns{padding-top:34px;}}
+/* 三張並排：封面 96px（§8.4），置中 */
+.lb-trio .lb-ct{max-width:96px;justify-self:center;width:100%;}
+.lb-sheet.acepick .lb-trio .lb-ct{max-width:104px;}
+.lb-endmore{display:flex;gap:8px;margin-top:14px;}
+.lb-endmore .lb-btn{flex:1;font-size:12px;padding:6px 8px;}
+.lb-modal .pane.lb-pause{padding-bottom:calc(16px + env(safe-area-inset-bottom,0px));}

@@ -5,7 +5,7 @@
 #tut{position:fixed;left:0;top:0;right:0;bottom:0;z-index:50;pointer-events:none;
   -webkit-user-select:none;user-select:none;-webkit-touch-callout:none;-webkit-tap-highlight-color:transparent;
   font-family:var(--zh,'Noto Sans TC','PingFang TC','Heiti TC',sans-serif);color:var(--ink,#111)}
-#tut:not(.on){display:none}
+#tut:not(.on),#tut.gone{display:none}
 #tut.over-modal{z-index:75}                              /* 1-9：泡泡與手指要在唱片資訊（z 70）上面，遮罩收起 */
 #tut .tut-mask{position:absolute;left:0;top:0;width:100%;height:100%;pointer-events:none;overflow:visible}
 #tut .tut-mask .m,#tut .tut-mask .tb{fill:#000;fill-opacity:.62}

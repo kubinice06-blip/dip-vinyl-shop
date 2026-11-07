@@ -189,7 +189,10 @@
   function anchorOf(id) { return stg('anchor', id); }
   function stageSay(id, text, tone, ms) { if (text) stg('say', id, text, { tone: tone || (id === 'o' ? 'owner' : null), ms: ms == null ? 2600 : ms }); }
   // 小人站位：put 一次就留在舞台上，換畫面不會消失；每個畫面只擺需要的
-  function place(id, spot, spr) { stg('put', id, spot, spr); stg('hide', id, false); }
+  function place(id, spot, spr) {
+    if (spr === 'player') spr = save && save.player ? playerAv() : 'player';   // 換了造型也會重畫（'player' 字串會被舞台快取）
+    stg('put', id, spot, spr); stg('hide', id, false);
+  }
   function hideActor(id) { if (UI.stage && stg('has', id)) stg('hide', id, true); }
   function resetPoses() { ['p', 'f', 'o'].forEach(function (id) { stg('pose', id, null); stg('emote', id, null); stg('say', id, null); }); stg('untag'); }
 
@@ -271,13 +274,17 @@
     if (o.pause) { var pb = el('button', 'ti', '<span class="pz" aria-hidden="true"></span>'); pb.type = 'button'; pb.setAttribute('aria-label', '暫停選單'); pb.addEventListener('click', function (e) { stopEv(e); if (UI.going) return; openSettings(); }); bar.appendChild(pb); }
     if (o.close) { var cb = el('button', 'lnk', esc(o.closeLabel || '關閉')); cb.type = 'button'; cb.setAttribute('aria-label', '關閉'); cb.setAttribute('data-a', 'close'); cb.addEventListener('click', function (e) { stopEv(e); o.close(); }); bar.appendChild(cb); }
   }
-  function modal(cls, html, onClose) {
+  function modal(cls, html, onClose, o) {
+    o = o || {};
     closeModal();
     var m = el('div', 'lb-modal');
-    m.innerHTML = '<div class="pane ' + (cls || '') + '" role="dialog" aria-modal="true">' + html + '<div class="mfoot"><button type="button" class="lb-btn pri wide" data-x="1">關閉</button></div></div>';
+    m.innerHTML = '<div class="pane ' + (cls || '') + '" role="dialog" aria-modal="true">' + html + (o.foot === false ? '' : '<div class="mfoot"><button type="button" class="lb-btn pri wide" data-x="1">關閉</button></div>') + '</div>';
     var close = function () { if (m.parentNode) m.remove(); UI.modal = null; if (m._off) m._off.forEach(function (f) { try { f(); } catch (_) {} }); if (onClose) onClose(); };
     m.addEventListener('click', function (e) { if (e.target === m) close(); });
-    qs('[data-x]', m).addEventListener('click', function (e) { stopEv(e); close(); });
+    var xb = qs('[data-x]', m); if (xb) xb.addEventListener('click', function (e) { stopEv(e); close(); });
+    m._keyH = function (e) { if (e.key === 'Escape' && UI.modal && UI.modal.el === m && !(CI() && CI().isOpen())) { e.preventDefault(); close(); } };
+    D.addEventListener('keydown', m._keyH);
+    m._off = [function () { D.removeEventListener('keydown', m._keyH); }];
     D.body.appendChild(m);
     UI.modal = { el: m, close: close };
     return m;
@@ -333,11 +340,11 @@
       '<button type="button" class="lb-btn big sp" data-a="fast">動畫加速 ' + swHTML(S.fastAnim) + '</button>' +
       (tutOn ? '<button type="button" class="lb-btn big" data-a="skiptut">' + esc(tutLabel('skipTut', '跳過教學')) + '</button>' : (canTutorial() && UI.screen !== 'duel' ? '<button type="button" class="lb-btn big" data-a="replay">' + esc(tutLabel('replay', '重看教學')) + '</button>' : '')) +
       '<button type="button" class="lb-btn big ghost" data-a="reset">重置試做版存檔</button></div>';
-    var m = modal('', html);
+    var m = modal('lb-pause', html, null, { foot: false });
     var f = FX();
     var syncNp = function () { var b = qs('[data-a=np]', m), h = nowPlayingLine(); if (b) { if (h) b.outerHTML = h; else b.remove(); } };
     var off = f && f.music && f.music.onChange ? f.music.onChange(syncNp) : null;
-    m._off = off ? [off] : [];
+    if (off) m._off.push(off);
     m.addEventListener('click', function (e) {
       var b = e.target.closest && e.target.closest('[data-a]'); if (!b) return;
       var a = b.getAttribute('data-a');
@@ -1624,7 +1631,7 @@
       return;
     }
     UI.lastSpot = NODE_SPOT[nd.type] || 'browse';
-    stgP('walk', 'p', [UI.lastSpot]).then(function () {
+    stgP('walk', 'p', [UI.lastSpot], 110).then(function () {
       if (UI.screen !== 'map') return;
       var res = doChoose({ type: 'move', nodeId: nd.id });
       if (res.error) { UI.going = false; toast('現在不能過去'); return; }
@@ -1721,12 +1728,13 @@
     UI.lastSpot = 'crateP';
     stg('allow', ['crate-*', 'rack:*', 'now']);
     var L = (C.pools && C.pools.crateLabels) || { jazz: '爵士區', tw: '台灣區', noise: '噪音區' };
+    stg('highlight', ['jazz', 'tw', 'noise'].map(function (k) { return { ids: ['crate-' + k], label: L[k] }; }));
     var s = sheet('<div class="hd"><h3>挖箱：挑一箱</h3><span class="sub">點店裡的箱子也可以</span></div><div class="lb-crates">' +
       ['jazz', 'tw', 'noise'].map(function (k) { return '<button type="button" class="lb-btn big key" data-k="' + k + '">' + esc(L[k]) + '</button>'; }).join('') + '</div>' +
       '<p class="sub">翻出三張，帶走一張。</p>', 'crate');
     var chosen = false;
     var choose = function (k) {
-      if (chosen) return; chosen = true; UI.crateTap = null;
+      if (chosen) return; chosen = true; UI.crateTap = null; stg('highlight', []);
       sfx('flip');
       var res = doChoose({ type: 'crate', crate: k });
       if (res.error) { chosen = false; return; }
@@ -1960,7 +1968,8 @@
     h += '<div class="lb-goal"><div class="row"><b>唱片櫃 已認識 ' + shc.n + '／' + shc.total + '</b><span>' + pct + '%</span></div><div class="bar"><i style="width:' + pct + '%"></i></div>' +
       '<p class="sub">' + esc(goal) + '。再來一夜，客人和箱子都會換一批。</p></div>';
     if (save.unlocks.secondNightTeaser) h += '<div class="lb-teaser"><div class="sil">' + pix(labSpr().e7, 40) + '</div><div><b>' + esc(C.secondNight.line) + '</b><div class="sub">' + esc(C.secondNight.label) + '</div></div></div>';
-    h += '</div></div><div class="foot lb-endbtns"><button type="button" class="lb-btn pri big wide key" data-a="again">再來一夜</button><div class="row"><button type="button" class="lb-btn key" data-a="shelf">唱片櫃</button><button type="button" class="lb-btn key" data-a="taipei">' + esc(line('taipeiLink') || '出門看看（台北地圖・預告）') + '</button></div></div>';
+    h += '<div class="lb-endmore"><button type="button" class="lb-btn key" data-a="shelf">唱片櫃</button><button type="button" class="lb-btn key" data-a="taipei">' + esc(line('taipeiLink') || '出門看看（台北地圖・預告）') + '</button></div>';
+    h += '</div></div><div class="foot lb-endbtns"><button type="button" class="lb-btn pri big wide key" data-a="again">再來一夜</button></div>';
     panel.innerHTML = h;
     sfx(clear ? 'win' : 'lose');
     panel.addEventListener('click', function (e) {

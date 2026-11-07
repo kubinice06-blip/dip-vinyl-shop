@@ -10,6 +10,7 @@
 //   duelHooks() → { gate(action)→bool, forcedCell()→int|null, previews()→bool, onPhase(phase), onResolved(events) }   // 放進 DipLabDuel hooks.tut
 //   startDuelLesson({ tier, duelApi?, stage?, duel?, replay?, from? }) → Promise<'done'|'skipped'|'released'|'aborted'>
 //   prep: content(C) → 教學場用的 content（只換 enemies.man＝男子 20／18）；enemyDef(C)；startOpts(C)；prepDuel(duel, tier, C)（排好起手、牌庫、他擺的盤）
+//         prepareDuel(duel, { tier, content })＝一般男子開場之後一起改成 20／18 再排牌（ui.js 用這個）
 //   step(def) → Promise                     // 通用：一步（say／do／soft），給對決以外的畫面用
 //   firstTime(hintId, targets) → void      // 第一個夜晚的 soft 提示（save.seen 一個存檔一次；照著做完那一手才寫）
 //   hintHook                               // ＝(id, targets) => firstTime(id, targets)；可直接當 duel hooks.hint
@@ -261,8 +262,9 @@
       r._.hand.innerHTML = pix(HAND, 27);
       r._.path.addEventListener('pointerdown', onMaskDown);
       r._.path.addEventListener('click', function (e) { e.preventDefault(); e.stopPropagation(); });
-      r._.catcher.addEventListener('pointerdown', onCatchDown);
-      r._.catcher.addEventListener('click', function (e) { e.preventDefault(); e.stopPropagation(); });
+      // 說明步用 click（整個點擊結束才換下一步）：用 pointerdown 的話，iOS 隨後補發的 click 會落到下一步才露出來的目標上
+      r._.catcher.addEventListener('pointerdown', function (e) { e.preventDefault(); });
+      r._.catcher.addEventListener('click', onCatchTap);
       r._.skip.addEventListener('click', function (e) { e.preventDefault(); e.stopPropagation(); api.skip(); });
     }
     S.root = r;
@@ -341,6 +343,9 @@
   // show = { mode, targets:[...], point:name|null, keep:[...], text, bubble, dim, onTap?, step }
   function setShow(sh) {
     ensureRoot();
+    // 步驟之間的短暫等待：保留上一步的壓暗與洞（不閃一下全亮），只收泡泡和手指
+    if (sh && sh.mode === 'wait' && sh.keepMask && S.show && S.show.targets && S.show.mode !== 'wait' && S.show.mode !== 'modal' && S.show.mode !== 'hide') { sh.targets = S.show.targets; sh.dim = true; }
+    else if (sh && sh.mode === 'wait' && sh.keepMask && S.show && S.show.dim) { sh.targets = S.show.targets; sh.dim = true; }
     S.show = sh; S.sig = '';
     var R = S.root._;
     clearTimeout(wrongT); R.bub.classList.remove('warn');
@@ -351,11 +356,11 @@
       return;
     }
     S.root.className = 'on m-' + sh.mode + (rm() ? ' rm' : '');
-    R.svg.style.display = (sh.mode === 'wait' || sh.mode === 'modal') ? 'none' : '';
+    R.svg.style.display = ((sh.mode === 'wait' && !sh.dim) || sh.mode === 'modal' || sh.mode === 'fx') ? 'none' : '';
     R.svg.setAttribute('class', 'tut-mask' + (sh.mode === 'soft' ? ' soft' : '') + (sh.mode === 'do' ? ' block' : ''));
     R.catcher.hidden = !(sh.mode === 'say' || sh.mode === 'wait');
     R.catcher.className = 'tut-catch' + (sh.mode === 'wait' ? ' clear' : '');
-    R.skip.hidden = !(S.lesson && S.runner && S.runner.active()) || sh.mode === 'modal';
+    R.skip.hidden = !(S.lesson && S.runner && S.runner.active()) || sh.mode === 'modal' || sh.mode === 'fx';
     R.skip.textContent = UI().skipTut || '跳過教學';
     if (sh.text != null) {
       R.who.textContent = UI().who || '老闆';
@@ -378,7 +383,15 @@
   function setText(t, chars) { var R = S.root._; R.tx.innerHTML = colorize(t, chars); S.sig = ''; }
   function startLoop() { if (!S.raf) S.raf = requestAnimationFrame(tick); }
   function stopLoop() { if (S.raf) cancelAnimationFrame(S.raf); S.raf = 0; }
-  function tick() { S.raf = 0; if (!S.show || S.show.mode === 'hide') return; layout(false); S.raf = requestAnimationFrame(tick); }
+  function tick() {
+    S.raf = 0; if (!S.show || S.show.mode === 'hide') return;
+    // 對決盤面被收掉（⏸ → 唱片櫃之類）：遮罩先藏起來、不擋別的畫面；盤面回來再出現（ui.js 重開教學會叫 startDuelLesson，舊的自動作廢）
+    var gone = !!((S.lesson || (S.soft && S.soft.kind === 'duel')) && !duelApi());
+    if (S.root) S.root.classList.toggle('gone', gone);
+    if (gone && S.soft && S.soft.kind === 'duel' && !S.lesson) { dismissSoft(); return; }
+    if (!gone) layout(false);
+    S.raf = requestAnimationFrame(tick);
+  }
 
   function holesFor(sh) {
     var rs = [];
@@ -404,8 +417,8 @@
     R.svg.setAttribute('width', vw); R.svg.setAttribute('height', vh);
     var d = 'M0 ' + tb + 'H' + vw + 'V' + vh + 'H0Z';
     holes.forEach(function (h) {
-      var t = Math.max(tb, h.top), b = Math.min(vh, h.bottom); if (b <= t) return;
-      d += 'M' + h.left.toFixed(1) + ' ' + t.toFixed(1) + 'h' + h.width.toFixed(1) + 'v' + (b - t).toFixed(1) + 'h' + (-h.width).toFixed(1) + 'Z';
+      var t = Math.max(tb, h.top), b = Math.min(vh, h.bottom), l = Math.max(0, h.left), r = Math.min(vw, h.right); if (b <= t || r <= l) return;   // 洞不能超出外框（evenodd 會把外面塗黑）
+      d += 'M' + l.toFixed(1) + ' ' + t.toFixed(1) + 'h' + (r - l).toFixed(1) + 'v' + (b - t).toFixed(1) + 'h' + (l - r).toFixed(1) + 'Z';
     });
     R.path.setAttribute('d', d);
     R.tb.setAttribute('x', 0); R.tb.setAttribute('y', 0); R.tb.setAttribute('width', vw); R.tb.setAttribute('height', tb);
@@ -468,8 +481,8 @@
   }
 
   // ---------------------------------------------------------------- 點擊
-  function onCatchDown(e) {
-    e.preventDefault();
+  function onCatchTap(e) {
+    e.preventDefault(); e.stopPropagation();
     var sh = S.show; if (!sh) return;
     if (sh.mode === 'say' && sh.onTap && performance.now() - sh.shownAt > 280) { var f = sh.onTap; sh.onTap = null; f(); }
   }
@@ -597,7 +610,7 @@
     var p = (rm() ? Promise.resolve() : (function () { var a = A(c, [{ transform: 'scale(.6)', opacity: 0 }, { transform: 'scale(1.06)', opacity: 1, offset: 0.6 }, { transform: 'scale(1)', opacity: 1 }], { duration: 260, easing: 'ease-out' }); return a ? a.finished.catch(function () {}) : Promise.resolve(); })())
       .then(function () { return wait(rm() ? 700 : 820); })
       .then(function () { return flyTo(c, helpRect(), 300); })
-      .then(function () { c.remove(); var h = helpRect(); void h; });
+      .then(function () { c.remove(); });
     S.learnBusy = S.learnBusy.then(function () { return p; });
     return p;
   }
@@ -613,11 +626,11 @@
     return ph === 'choose' || ph === 'attr';
   }
   function until(fn, ms, every) {
+    var L0 = S.lesson;
     return new Promise(function (res) {
       var t0 = performance.now();
       (function poll() {
-        var L = S.lesson;
-        if (L && L.dead) return res(false);
+        if (L0 && L0.dead) return res(false);
         var v = false; try { v = fn(); } catch (_) {}
         if (v) return res(v);
         if (ms && performance.now() - t0 > ms) return res(false);
@@ -633,7 +646,9 @@
     var C = o.content || Cn();
     var D = o.duelApi || Duel();
     var a = D && D.api ? D.api() : null;
-    var duel = o.duel || (a && a.duel ? a.duel() : null);
+    var mounted = a && a.duel ? a.duel() : null;
+    var duel = mounted || o.duel || null;               // 以盤面上那場為準（重看教學時存檔裡的 run.duel 是另一場）
+    if (mounted && o.duel && o.duel !== mounted) console.warn('DipLabTut: startDuelLesson 的 duel 跟盤面上的不是同一場，用盤面上的');
     if (!C.tutorial || !duel) { console.error('DipLabTut.startDuelLesson: 沒有 C.tutorial 或對決'); return Promise.resolve('aborted'); }
     var tier = o.tier || (duel.p && duel.p.ear) || 'hall';
     var R = createRunner(C, tier, duel, { from: o.from });
@@ -656,6 +671,7 @@
   function endLesson(why) {
     var L = S.lesson; if (!L) return;
     L.dead = true;
+    if (L.step && L.step.finish) try { L.step.finish(); } catch (_) {}   // 讓舊的 run() 迴圈醒來、看到 dead 就收
     L.offs.forEach(function (f) { try { f && f(); } catch (_) {} });
     if (S.runner) { if (why === 'skipped') S.runner.skip(); else if (why !== 'done') S.runner.release(); }
     clearTri();
@@ -668,8 +684,8 @@
 
   async function run(L) {
     var R = L.R;
-    // 進場：等盤面滑上來、鏡頭推完
-    await until(duelReady, 0);
+    // 進場：等盤面滑上來、鏡頭推完、遇敵黑條（fx.encounter2 的 .enc2）收掉
+    await until(function () { return duelReady() && !document.querySelector('.enc2, .lb-duelwrap.entering'); }, 0);
     if (L.dead) return;
     await wait(350);
     while (!L.dead) {
@@ -694,8 +710,16 @@
         if (d2.over) {
           if (d2.over === 'win' && R.state !== 'released') {
             if (R.state === 'run') { R.learned.push(Cn().tutorial.learned.L5); R.state = 'done'; }
-            setShow({ mode: 'hide' });
+            // 引擎已經分出勝負，畫面還在演這一手：等盤面進到 over、牌桌大章（900 ms）蓋完再飛小卡，不跟浮框、大章疊在一起。
+            // settled() 先掛住，duel.js 的 beforeEnd 會等小卡飛完才收盤面
+            var release = null, hold = new Promise(function (r) { release = r; });
+            S.learnBusy = S.learnBusy.then(function () { return hold; });
+            await until(function () { var a2 = duelApi(); return !a2 || (a2.phase && a2.phase() === 'over'); }, 4000, 60);
+            if (!L.dead) await wait(rm() ? 300 : 950);
+            if (L.dead) { release(); return; }
+            setShow({ mode: 'fx' });           // 只留小卡（不壓暗、不擋點）
             await learnCard(Cn().tutorial.learned.L5);
+            release();
             return endLesson('done');
           }
           return endLesson('released');
@@ -706,7 +730,7 @@
       var s = R.cur();
       if (!s) { if (R.state === 'done') return endLesson('done'); return endLesson('released'); }
       // 這一步要的東西出現了才開始（例：attr 鈕在選了盤之後才有）
-      setShow({ mode: 'wait' });
+      setShow({ mode: 'wait', keepMask: true });
       var ready = await until(function () { return duelReady() && targetsReady(s); }, s.kind === 'do' && s.allow && s.allow.close ? 1500 : 4000);
       if (L.dead) return;
       if (R.cur() !== s) continue;          // 等的時候已經被點掉了（例：唱片資訊一開就關）
@@ -738,7 +762,7 @@
       var text = R.text(s);
       if (s.kind === 'say') {
         setShow({ mode: 'say', step: s, targets: s.target, text: text, bubble: s.bubble, keep: s.keep, colorChars: s.colorChars, point: null,
-          onTap: function () { sfx('tick'); R.done(); setShow({ mode: 'wait' }); finish(); } });
+          onTap: function () { sfx('tick'); R.done(); setShow({ mode: 'wait', keepMask: true }); finish(); } });
         fxStart(s);
         L.step = { s: s, finish: finish };
         return;
@@ -760,9 +784,7 @@
           if (last.released) { finish(); return; }
           if (last.final) { finish(); return; }
           // 2-3：挑了一張 → 洞改成屬性鈕、手指指冷門
-          var p2 = phaseTargets();
           setTimeout(function () { if (!finished && S.show && S.show.step === s) { var p3 = phaseTargets(); S.show.targets = p3.t; S.show.point = p3.p; S.sig = ''; } }, 30);
-          void p2;
         },
         onPhase: function (ph) {
           if (finished) return;

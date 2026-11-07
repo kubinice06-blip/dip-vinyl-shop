@@ -249,7 +249,8 @@
     { who: '老闆', text: '「這四張也很適合你。跟你有緣，收下吧。」', stage: { oPath: ['aisle', 'dig1', 'dig2', 'dig3'], give: 'gifts' }, tag: '原句' },
     { who: '老闆', text: '「門口那箱一百塊三張，順手帶著。」', stage: { oPath: ['frontleft', 'aisle', 'counter'], give: 'junk' }, tag: '新' },
     { who: '', text: '這時，門開了。', stage: { f: 'door', door: 'open' }, tag: '原句' },
-    { who: '', text: '一名男子走進來。他的視線，落在你手上的那幾張專輯上。', stage: { f: 'in', p: 'atdoor', door: 'shut' }, tag: '原句' },
+    // v2 像素店：他走到 duelE、你站 duelP（對峙的位置就是對決的位置，進對決時只推鏡頭；U 04:05）
+    { who: '', text: '一名男子走進來。他的視線，落在你手上的那幾張專輯上。', stage: { f: 'duelE', p: 'duelP', door: 'shut' }, tag: '原句' },
     { who: '男子', text: '「……這品味，也敢出來丟臉？」', tag: '原句' },
     { who: '', text: '你的憤怒表露無遺。', stage: { anger: true }, ui: 'retort', tag: '原句' },
     { who: '', text: '老闆不發一語，緩步走出櫃檯，站在兩人之間。', stage: { oPath: ['aisle', 'between'], anger: false }, tag: '拍板' },
@@ -271,7 +272,7 @@
     ], prologueTail),
     // 序章收尾（贏了男子）：押盤 Fishmans 翻開 → 發燒配件三選一
     epilogueWin: [
-      { who: '男子', text: '「……哼。」他把自己的唱片塞回袋子裡，看都不看你一眼。', stage: { p: 'atdoor', o: 'between', f: 'in', fSpr: 'e0', anger: false, notes: false }, tag: '原句' },
+      { who: '男子', text: '「……哼。」他把自己的唱片塞回袋子裡，看都不看你一眼。', stage: { p: 'duelP', o: 'between', f: 'duelE', fSpr: 'e0', anger: false, notes: false }, tag: '原句' },
       { who: '男子', text: '「搵休督欸丟！」', tag: '原句' },
       { who: '', text: '他的袋子裡掉出一張盤。', stage: { f: 'out', door: 'swing' }, ui: 'stake', music: 'stake', tag: '新' },
       { who: '老闆', text: '「……他每個禮拜都來聽這張。」', stage: { o: 'between' }, tag: '新' },
@@ -285,8 +286,8 @@
     ],
     // 02:00 打烊前，傳說藏家推門
     bossEnter: [
-      { who: '', text: '這時，門開了。', stage: { p: 'atdoor', o: 'counter', f: 'door', fSpr: 'boss', door: 'open' }, tag: '原句' },
-      { who: '藏家', text: '「聽說這裡有個新來的，品味不錯？」', stage: { f: 'in', door: 'shut' }, stamp: '三十年的耳朵，不會騙人。', ui: 'duel', prompt: '▶ 品味對決', tag: '原句' }
+      { who: '', text: '這時，門開了。', stage: { p: 'duelP', o: 'counter', f: 'door', fSpr: 'boss', door: 'open' }, tag: '原句' },
+      { who: '藏家', text: '「聽說這裡有個新來的，品味不錯？」', stage: { f: 'duelE', door: 'shut' }, stamp: '三十年的耳朵，不會騙人。', ui: 'duel', prompt: '▶ 品味對決', tag: '原句' }
     ],
     // 通關：他用過的那張王牌（你當初沒選的）翻開、播放、收進唱片櫃
     clear: [

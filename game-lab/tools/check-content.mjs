@@ -4,6 +4,8 @@
 //
 // 檢查：所有引用的卡 id 都存在；牌庫 6–8 張；頂點（apex）卡只能當王牌；每張卡有封面與試聽；
 //       唱盤字、配件、點播標籤、事件效果、像素小人零件都合法。
+//       v2：序章引導教學 C.tutorial（男子 20／18、牌序＝老闆四張＋門口三張、步驟欄位）、每位敵人的 phaseBlurb、
+//           C.shopLines（ui.js 讀的鍵）、序章開打的兩顆鈕（prompts）。
 import fs from 'fs';
 import path from 'path';
 import { createRequire } from 'module';
@@ -125,6 +127,46 @@ ok(C.map.times.length === 7, 'map.times 要 7 欄');
 const uis = new Set(Object.values(C.script).flat().map(b => b.ui).filter(Boolean));
 for (const u of ['guess', 'acePick', 'retort', 'duel', 'stake', 'relic', 'map']) ok(uis.has(u), 'script 沒有 ui:' + u);
 ok(C.retorts.length === 2, 'retorts 要 2 句');
+
+// v2：序章引導教學（SPEC-v2 §6.3）
+const TT = C.tutorial;
+ok(TT && typeof TT === 'object', '沒有 C.tutorial');
+if (TT) {
+  ok(Number.isInteger(TT.man && TT.man.hp) && TT.man.hp > C.enemies.man.hp, 'tutorial.man.hp 要比一般男子高（' + (TT.man && TT.man.hp) + '）');
+  ok(Array.isArray(TT.man.phases) && TT.man.phases.length === C.enemies.man.phases.length && TT.man.phases.every(ph => Number.isInteger(ph.atHp) && ph.atHp < TT.man.hp && (!ph.disc || (ph.disc.length === 6 && ph.disc.every(g => GL.includes(g))))), 'tutorial.man.phases');
+  ok(JSON.stringify(TT.records) === JSON.stringify(C.enemies.man.deck), 'tutorial.records 要＝男子牌庫（第 1 張＝序章回嘴的 Mylo Xyloto）');
+  for (const t of ['hall', 'pearl', 'heresy']) {
+    ok(TT.hand[t] && TT.hand[t].length === 4 && TT.draw[t] && TT.draw[t].length === 3, 'tutorial.hand／draw.' + t + ' 要 4＋3 張');
+    if (TT.hand[t] && TT.draw[t]) ok(JSON.stringify([...TT.hand[t], ...TT.draw[t]].sort()) === JSON.stringify([...C.gifts[t], ...C.junk].sort()), 'tutorial.' + t + '：起手＋牌庫要剛好＝老闆四張＋門口一百塊三張');
+  }
+  const KINDS = ['say', 'do', 'soft'], ALLOW = ['card', 'attr', 'ace', 'aceAttr', 'ult', 'ultConfirm', 'info', 'close'];
+  const sids = new Set();
+  for (const st of TT.steps || []) {
+    const w = 'tutorial.steps.' + st.id;
+    ok(st.id && !sids.has(st.id), w + ': id 重複或沒有'); sids.add(st.id);
+    ok(KINDS.includes(st.kind), w + ': kind');
+    ok(Array.isArray(st.target) && st.target.length, w + ': target');
+    ok(typeof st.text === 'string' ? !!st.text : (st.text && typeof st.text === 'object' && [].concat(st.tier).every(t => st.text[t])), w + ': text');
+    if (st.kind !== 'say') ok(st.allow && Object.keys(st.allow).every(k => ALLOW.includes(k)), w + ': allow');
+    if (st.allow && st.allow.card && !['any', 'bestC'].includes(st.allow.card)) has(st.allow.card, w + '.allow.card');
+    (st.target || []).filter(n => n.startsWith('card:') && n !== 'card:bestC').forEach(n => has(n.slice(5), w + '.target'));
+    if (st.cell) ok(['true', 'feint'].includes(st.cell) && C.tutorial.man.phases.concat([{ disc: C.enemies.man.disc }]).some(ph => (ph.disc || []).includes(st.cell)), w + ': cell 要是男子唱盤上有的字');
+    if (st.learn) ok(TT.learned[st.learn], w + ': learn');
+    if (st.learnTier) for (const v of Object.values(st.learnTier)) ok(TT.learned[v], w + ': learnTier');
+    if (st.tier) for (const t of [].concat(st.tier)) ok(['hall', 'pearl', 'heresy'].includes(t), w + ': tier');
+  }
+  ok(sids.has('D-1') && sids.has('5-1') && sids.has('5-2'), 'tutorial.steps 要從 D-1 開始、5-1／5-2 收尾');
+  ok(TT.learned && ['L1', 'L3', 'L4', 'L5'].every(k => TT.learned[k]), 'tutorial.learned 四張小卡');
+  ok(TT.ui && TT.ui.wrong && TT.ui.skipTut && TT.ui.replay, 'tutorial.ui（wrong／skipTut／replay）');
+}
+for (const id of EIDS) ok(typeof C.enemies[id].phaseBlurb === 'string' && C.enemies[id].phaseBlurb, 'enemies.' + id + ': 缺 phaseBlurb（變臉後的脾氣字）');
+// v2：ui.js 讀的 C.shopLines 鍵（SPEC-v2 §5.5、§5.6、§6.5）
+const SL = C.shopLines || {};
+for (const k of ['crateNotYet', 'poster', 'cat', 'locked', 'titleHint', 'taipeiHere', 'taipeiNote', 'taipeiLink', 'backToShop']) ok(typeof SL[k] === 'string' && SL[k], 'shopLines.' + k);
+ok(SL.ownerHint && ['title', 'scene', 'map', 'duel', 'node', 'reward'].every(k => typeof SL.ownerHint[k] === 'string'), 'shopLines.ownerHint 六個畫面');
+ok(Array.isArray(SL.mapIntro) && SL.mapIntro.length === 2, 'shopLines.mapIntro 兩句');
+const duelBeat = C.script.prologue.find(b => b.ui === 'duel');
+ok(duelBeat && Array.isArray(duelBeat.prompts) && duelBeat.prompts.length === 2, '序章開打要有兩顆鈕（prompts：帶教學／直接開打）');
 
 const used = new Set([...Object.values(C.aces), ...Object.values(C.gifts).flat(), ...C.junk, ...Object.values(C.enemies).flatMap(e => e.deck.concat(e.stakePool)),
   ...Object.values(C.pools.crate).flat(), ...C.pools.gold, ...C.pools.listen]);
