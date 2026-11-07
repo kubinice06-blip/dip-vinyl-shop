@@ -119,8 +119,9 @@ SEC_ROWS = list(range(WH_LAB0, WIN_I0)) + cell_keep(WIN_I1 - WIN_I0, (WIN_I1 - W
 NH = len(SEC_ROWS)                             # 450
 y_wh = H - BOTTOM - NH                         # 918
 y_g3 = y_wh - GROOVE                           # 906
-# 評審合併版：輪子模組改用 D1 的分帶砍列（946–1368），篩選列延長到 537–934
-y_wh = 946; y_g3 = 934
+# 評審合併版：輪子模組改用 D1 的分帶砍列，篩選列在上面。
+# 2026-11-07 店主：「讓最下排的旋鈕往上擴充，上面的旋鈕縮小」——輪子模組 946–1368 → 848–1368，篩選列 537–934 → 537–836
+y_wh = 848; y_g3 = 836
 
 out = Image.new('RGB', (W, H))
 d = ImageDraw.Draw(out)
@@ -400,7 +401,7 @@ key_draw.save(os.path.join(SPR, 'key-draw.png')); key_rand.save(os.path.join(SPR
 hgroove(y_g2); hgroove(y_g3)
 gf = Grid(INNER_X0, y_flt)
 FL_DRUMS_CELLS = [('genre', 12, 50), ('grade', 53, 104), ('tier', 107, 145)]   # 各滾筒 x 範圍（格）
-FW_A0, FW_A1, FW_B0, FW_B1 = 5, 151, 15, 70                                  # 窗框（格）
+FW_A0, FW_A1, FW_B0, FW_B1 = 5, 151, 15, 52                                  # 窗框（格）
 PL_B0, PL_B1 = 2, 13                                                        # 名牌（格）
 fw = gf.rect(FW_A0, FW_B0, FW_A1, FW_B1)
 out.paste(nine(WIN_SRC, fw[2] - fw[0], fw[3] - fw[1]), fw[:2])
@@ -440,10 +441,10 @@ for key, a0, a1 in FL_DRUMS_CELLS:
     R_LEDS[key] = (lx, ly, lx + LED_ON.width, ly + LED_ON.height)
 # 右塊：液晶計數器＋全部鍵
 RB_A0, RB_A1 = 156, 214
-lcd(gf, RB_A0, PL_B0, RB_A1, 32)
-R_LCD = gf.rect(RB_A0 + 1, PL_B0 + 1, RB_A1 - 1, 31)
+lcd(gf, RB_A0, PL_B0, RB_A1, 26)
+R_LCD = gf.rect(RB_A0 + 1, PL_B0 + 1, RB_A1 - 1, 25)
 # 2026-11-07 店主：符合張數不要中文，改成水表那種數字滾輪——五顆數字滾筒（同篩選滾筒的畫法），左右各一個琥珀色指標對準中線
-ODO_N, ODO_W, ODO_GAP, ODO_A0, ODO_B0, ODO_B1 = 5, 9, 1, 160, 6, 28
+ODO_N, ODO_W, ODO_GAP, ODO_A0, ODO_B0, ODO_B1 = 5, 9, 1, 160, 5, 23
 ODO = []
 for i in range(ODO_N):
     a0 = ODO_A0 + i * (ODO_W + ODO_GAP)
@@ -457,7 +458,7 @@ for a, b0, b1 in ((ODO_A0 - 2.5, om, om + 3), (ODO_A0 - 1.5, om + 1, om + 2)):
 oa1 = ODO_A0 + ODO_N * (ODO_W + ODO_GAP) - ODO_GAP
 for a, b0, b1 in ((oa1 + 1.5, om, om + 3), (oa1 + 0.5, om + 1, om + 2)):
     gf.box(a, b0, a + 1, b1, TICK)
-ALL = gf.rect(RB_A0, 35, RB_A1, FW_B1)
+ALL = gf.rect(RB_A0, 29, RB_A1, FW_B1)
 recess(ALL[0], ALL[1], ALL[2], ALL[3])
 key_all = Image.new('RGB', (ALL[2] - ALL[0], ALL[3] - ALL[1]))
 gka = Grid(0, 0, key_all)
@@ -621,7 +622,36 @@ for x0, x1 in ((0, L_RAIL), (R_RAIL, W)):
 for cxx in (54, W - 54):
     out.paste(SCREW, (cxx - 35, H - 62 - 35), SCREW)
 
-out.paste(Image.open(os.path.join(HERE, 'panel-only.png')).convert('RGB').crop((0, 934, W, H)), (0, 934))
+out.paste(Image.open(os.path.join(HERE, 'panel-only.png')).convert('RGB').crop((0, y_g3, W, H)), (0, y_g3))
+
+# 色溫輪名牌「溫暖 / WARMTH」→「溫度 / TEMP」（2026-11-07 店主：溫度的英文太長就用縮寫）。
+# 原稿字是 Noto Sans TC／Noto Sans Regular 一路的黑體：原字清掉，用同字型（fonts/ 裡只含這幾個字的子集）4 倍超取樣畫回。
+def relabel_temp(img):
+    dy = y_wh - 946                                   # 原稿量到的座標是舊版（輪子模組從 946 起）
+    a = np.asarray(img).astype(int)
+    FG = (208, 144, 138)
+    for x0, x1 in ((950, 1090), (1092, 1316)):        # 清掉「溫暖」與「/ WARMTH」，每列用該列非字的中位色補
+        for y in range(955 + dy, 1032 + dy):
+            row = a[y, x0:x1]; bg = row[(row[:, 0] - row[:, 1]) < 15]
+            if len(bg):
+                a[y, x0:x1] = np.median(bg, axis=0)
+    im = Image.fromarray(a.astype('uint8'))
+    def draw(text, font, left, top=None, bottom=None):
+        SS = 4
+        f = ImageFont.truetype(os.path.join(SRC_DIR, 'fonts', font), font_size[font] * SS)
+        bb = f.getbbox(text)
+        L = Image.new('L', (bb[2] - bb[0] + 8 * SS, bb[3] - bb[1] + 8 * SS), 0)
+        ImageDraw.Draw(L).text((4 * SS - bb[0], 4 * SS - bb[1]), text, font=f, fill=255)
+        L = L.resize((L.width // SS, L.height // SS), Image.LANCZOS)
+        y = top - 4 if top is not None else bottom - (L.height - 4)
+        im.paste(Image.new('RGB', L.size, FG), (left - 4, y), L)
+    font_size = {'noto-sans-tc-400-subset.ttf': 64, 'noto-sans-400-subset.ttf': 45}
+    draw('溫度', 'noto-sans-tc-400-subset.ttf', 957, top=963 + dy)
+    draw('/ TEMP', 'noto-sans-400-subset.ttf', 1100, bottom=1022 + dy)
+    return im
+
+
+out.paste(relabel_temp(out), (0, 0))              # 原地改（各 Grid 綁著 out 這個物件）
 bg = out.copy()                                 # 實作用底圖（無文字、無活件）
 bg.save(os.path.join(HERE, 'panel-bg.png'), optimize=True); bg.save('tune/panel-all.png', optimize=True)
 
