@@ -272,16 +272,16 @@ lcd(d, y_search, LA0, LB0, LA1, LB1)
 
 # ── 輪子區：上半＝篩選排（等級｜分級｜符合），下半＝砍半的三顆輪子 ─────────────────
 B_Y0 = y_wh                     # 678
-B_H = 256
+B_H = 158                       # 2026-11-07 店主：輪子往上擴充、篩選排縮小（256 → 158，輪子模組多 98 列）
 B_Y1 = B_Y0 + B_H               # 934
 y_g3 = B_Y1                     # 934..946 新增的橫溝
 y_wm = y_g3 + GROOVE            # 946：輪子模組（原稿 45..735 砍掉 268 列）
 CUTN = WH_H - B_H - GROOVE      # 422
 REMOVE = WH_H - CUTN            # 268
 # 分帶砍列：每一條直帶各自從「沒東西的地方」抽掉 268 列，讓標籤、外殼、刻度尺都保持完整
-LABEL_CUT = [(250, 518)]                                   # 躁／靜 兩字之間的素面
-HOUSING_CUT = [(279, 547)]                                 # 外殼直邊中段（輪子本身會重畫）
-LADDER_CUT = [(140, 160), (234, 350), (440, 551), (645, 666)]  # 刻度尺：上下各抽一段，中間亮刻度留著
+LABEL_CUT = [(330, 500)]                                   # 躁／靜 兩字之間的素面
+HOUSING_CUT = [(328, 498)]                                 # 外殼直邊中段（輪子本身會重畫）
+LADDER_CUT = [(140, 160), (234, 299), (440, 505), (645, 665)]   # 中線以上抽 85、以下抽 85  # 刻度尺：上下各抽一段，中間亮刻度留著
 MODS = [  # (模組左, 外殼左, 刻度帶左, 模組右, 輪子元素左, 外殼內左, 外殼內右, 軸)
     (112, 230, 412, 508, 224, 255, 382, 'x'),
     (521, 640, 822, 920, 644, 664, 789, 'y'),
@@ -298,9 +298,11 @@ for x0, x1, cuts in bands:
 # 新座標：wm 第 r 列 ↔ 原稿第 r+45 列（砍點以上），以下各帶都上移 268
 def wm_y(src_y): return src_y - WH_Y0                        # 砍點以上的原稿列 → wm 列
 HOUSING_TOP = 141; HOUSING_BOT = 683 - REMOVE                 # 原稿外殼 141..683 → 141..415（原稿列號系）
+PTR_UP = sum(b - a for a, b in LADDER_CUT if b <= 412)              # 刻度尺中線以上抽掉的列數＝指針上移量
+CV_H = HOUSING_BOT + 4 - 151                                  # 輪子 canvas 高（原 268）
 CENTER = (HOUSING_TOP + HOUSING_BOT) // 2                     # 278：刻度尺中央亮刻度也剛好落在這
-WHEEL_H = 190                                                 # 原稿輪子 441 列 → 190 列（整格取樣）
-CURVE = 0.5                                                   # 輪廓弧度收斂比例
+WHEEL_H = 288                                                 # 原稿輪子 441 列 → 190 列（整格取樣）
+CURVE = 0.65                                                  # 輪廓弧度收斂比例
 HALF_SPANS = {}
 for m0, h0, l0, m1, ex0, in0, in1, ax in MODS:
     # 外殼內清空（實作時輪子是 canvas 畫在上面，底圖不留舊輪子）
@@ -309,9 +311,9 @@ for m0, h0, l0, m1, ex0, in0, in1, ax in MODS:
     # ◀ 指針：原稿 384..434 列那塊整塊搬到新中心（刻度尺上移 136 列，指針跟著上移 136）
     # 只搬比底色亮的像素（指針本體＋光暈），光暈邊緣才不會切出一塊方框
     ax0, ax1 = in1 - 12, in1 + 22
-    patch = WHA[372:446, ax0:ax1].astype(int); base = wm[wm_y(372 - 136):wm_y(446 - 136), ax0:ax1].astype(int)
+    patch = WHA[372:446, ax0:ax1].astype(int); base = wm[wm_y(372 - PTR_UP):wm_y(446 - PTR_UP), ax0:ax1].astype(int)
     m = (patch.sum(-1) > base.sum(-1) + 9)[..., None]
-    wm[wm_y(372 - 136):wm_y(446 - 136), ax0:ax1] = np.where(m, patch, base).astype(np.uint8)
+    wm[wm_y(372 - PTR_UP):wm_y(446 - PTR_UP), ax0:ax1] = np.where(m, patch, base).astype(np.uint8)
     # 半高輪子：輪廓（wheel-spans）整格取樣成 190 列，貼圖照 dip-tune.js 的圓柱投影畫
     sp = SPANS[ax]; rows = [list(r) if r else None for r in sp['rows']]
     # 原稿輪廓在 ◀ 指針那幾列右緣多抓了 10px（指針光暈），先壓回去
@@ -342,8 +344,8 @@ for m0, h0, l0, m1, ex0, in0, in1, ax in MODS:
         if c > .92:
             a = (c - .92) * 1.2; line = line * (1 - a) + np.array([255, 240, 200]) * a
         wm[wm_y(wy0 + j), ex0 + r[0]:ex0 + r[1]] = line.clip(0, 255).astype(np.uint8)
-    half_spans = {'w': sp['w'], 'h': 268, 'ref': 536, 'y0': wy0 - 151, 'y1': wy0 - 151 + WHEEL_H, 'rows': half_rows}
-    mark(f'wheel.{ax}', ex0, y_wm + wm_y(151), ex0 + sp['w'], y_wm + wm_y(151) + 268)
+    half_spans = {'w': sp['w'], 'h': CV_H, 'ref': 536, 'y0': wy0 - 151, 'y1': wy0 - 151 + WHEEL_H, 'rows': half_rows}
+    mark(f'wheel.{ax}', ex0, y_wm + wm_y(151), ex0 + sp['w'], y_wm + wm_y(151) + CV_H)
     LAYOUT.pop(f'wheel.{ax}.rows'); HALF_SPANS[ax] = half_spans
 out.paste(Image.fromarray(wm), (0, y_wm))
 hgroove(out, y_g3)
@@ -401,6 +403,8 @@ led = FQ0.crop((1190, 234, 1232, 266))
 mark('match.led', c1 - 14 - led.width, TITLE_Y + 8, c1 - 14, TITLE_Y + 8 + led.height)
 out.paste(led, (c1 - 14 - led.width, TITLE_Y + 8))
 
+# 篩選排縮短後（2026-11-07），上面那排的示意零件會畫超過橫溝：輪子模組最後再鋪一次蓋回去
+out.paste(Image.fromarray(wm), (0, y_wm)); hgroove(out, y_g3)
 # ── 側軌、底端螺絲（最後鋪，同 build-tune-panel.py）────────────────────────
 rail_row_l, rail_row_r = WH.crop((0, 400, L_RAIL, 401)), WH.crop((R_RAIL, 400, W, 401))
 for y in range(160, H - BOTTOM):

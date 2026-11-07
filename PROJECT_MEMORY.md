@@ -1,5 +1,14 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-07｜dip-vinyl-shop｜頻率光譜：下排轉輪往上加高、篩選排縮小、「溫暖 / WARMTH」改「溫度 / TEMP」（v72）
+
+- **店主 11-07（截圖紅框）**：「讓最下排的旋鈕往上擴充，上面的旋鈕縮小；溫暖 warmth 改成溫度（英文太長就用縮寫）。」
+- **版面**：輪子模組 946–1368 → 848–1368（`wheels_half.py` 的 `B_H` 256→158；分帶砍列改成標籤 330–500、外殼 328–498、刻度尺中線上下各抽 85 列；輪子 190→288 列、弧度 `CURVE` 0.5→0.65；指針上移量改由刻度尺砍列推算 `PTR_UP`；canvas 高 `CV_H` 366）。篩選排 537–934 → 537–836（`panel.py`：篩選窗 `FW_B1` 70→52、篩選滾筒 225→126 列、液晶 2–26、水表滾輪 5–23、全部鍵 29–52）。舊 D1 示意零件會畫進輪子區，`wheels_half.py` 最後再鋪一次輪子模組蓋回。
+- **名牌**：原字是 Noto Sans TC／Noto Sans Regular 一路，清掉後用同字型子集（`scripts/tune-panel-v2/fonts/`，Google Fonts 只含用到的字，OFL）4 倍超取樣畫「溫度 / TEMP」；讀數提示與輪子 `aria-label` 一併改「溫度」。
+- **程式**：`dip-tune.js` 篩選滾筒熱區 26.61%→19.604%、字條列高 5.563→4.8cqw、點擊分界 0.598→0.635；水表與全部鍵、輪子 canvas（top 67.516%／高 25.902%）、整欄熱區（66.171%／27.955%）重定位；明暗罩換 `drum-shade-126`／`drum-shade-99`（刪 225、122）；`AV` 72。
+- **驗證**：Playwright iPhone 13 直放＋橫放截圖；篩選、水表數字都對準中線（0.0px）；拖能量輪 49.7→61.7；點類別下半→搖滾、分級上半→繞到普通（1979 張）；無頁面錯誤。
+- **主要檔案**：`dip-tune.js`、`index.html`（v72）、`scripts/tune-panel-v2/{panel.py,wheels_half.py,fonts/}`、`tune/{panel-all,key-all,drum-shade-126,drum-shade-99}.png`、`tune/wheel-spans.json`。
+
 ### 2026-11-07｜dip-vinyl-shop｜按串流去聽歌、切回網頁串流被停（第二次）：真正元凶是 Tawk.to 客服小工具的 AudioContext
 
 - **店主 11-07**：「按串流連結去聽歌，換回網頁時串流就停了——情況一模一樣沒有改善」（11-05 PR #388 只關自家音訊，無效）。

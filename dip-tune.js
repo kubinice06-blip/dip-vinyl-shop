@@ -101,7 +101,7 @@
 
   // ── 畫面 ──────────────────────────────────────────────────────────
   // 面板圖片與輪廓表網址帶版本：正式站圖片快取 4 小時，換圖不換網址的話手機會拿舊圖套新版面（2026-11-06 店主實機：骰子跑位）。換任何 tune/ 圖就把這個數字加一
-  const AV = 71;
+  const AV = 72;
   const CSS = `
 .tune-app{--pix:'DotGothic16','Space Mono',monospace;position:relative;display:grid;grid-template-columns:1fr;grid-template-rows:minmax(200px,1fr) auto;width:100%;max-width:720px;margin:0 auto;height:var(--tvh,100dvh);padding:env(safe-area-inset-top,0px) env(safe-area-inset-right,0px) env(safe-area-inset-bottom,0px) env(safe-area-inset-left,0px);background:#0b0c10;color:#e9e2c8;font-family:var(--pix);font-size:11px;letter-spacing:.04em;overflow:hidden}
 /* 主畫面 App（standalone）：iOS 在狀態列下緣多一條毛玻璃，蓋住讀數與正在播放卡；只有這個模式再往下讓一截，瀏覽器不受影響 */
@@ -254,33 +254,33 @@
 .tune-fled{top:44.232%;width:2.364%;height:1.557%;background:url(tune/led-off.png?v=${AV}) 0 0/100% 100% no-repeat;image-rendering:pixelated;pointer-events:none}
 .tune-fled.on{background-image:url(tune/led-on.png?v=${AV})}
 .tune-fled[data-k="genre"]{left:18.498%}.tune-fled[data-k="grade"]{left:36.787%}.tune-fled[data-k="tier"]{left:55.076%}
-.tune-flt{top:38.783%;height:26.61%;cursor:ns-resize;touch-action:none;outline:0}
+.tune-flt{top:38.783%;height:19.604%;cursor:ns-resize;touch-action:none;outline:0}
 .tune-flt[data-k="genre"]{left:12.378%;width:14.673%}.tune-flt[data-k="grade"]{left:28.164%;width:19.611%}.tune-flt[data-k="tier"]{left:48.957%;width:14.604%}
 .tune-flt:focus-visible .fdrum{outline:2px solid #ffd166;outline-offset:-2px}
-.tune-flt .fdrum{position:absolute;left:0;right:0;top:29.8%;height:59.84%;overflow:hidden;pointer-events:none}
-.tune-flt .fdrum::after{content:"";position:absolute;inset:0;background:url(tune/drum-shade-225.png?v=${AV}) 0 0/100% 100% no-repeat;image-rendering:pixelated}
+.tune-flt .fdrum{position:absolute;left:0;right:0;top:40.793%;height:45.486%;overflow:hidden;pointer-events:none}
+.tune-flt .fdrum::after{content:"";position:absolute;inset:0;background:url(tune/drum-shade-126.png?v=${AV}) 0 0/100% 100% no-repeat;image-rendering:pixelated}
 .tune-flt .strip{will-change:transform}
 .tune-flt .strip.anim{transition:transform .22s cubic-bezier(.25,.9,.3,1.08)}
-.tune-flt span{display:block;height:5.563cqw;line-height:5.563cqw;text-align:center;font-family:var(--pix);font-size:3.27cqw;color:#8d9478;white-space:nowrap}
+.tune-flt span{display:block;height:4.8cqw;line-height:4.8cqw;text-align:center;font-family:var(--pix);font-size:3.27cqw;color:#8d9478;white-space:nowrap}
 .tune-flt svg.st{display:inline-block;width:.78em;height:.78em;margin:0 .04em;vertical-align:-.04em}
 .tune-flt span .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
 .tune-flt span.sel{color:#ffd34d}.tune-flt span.sel.all{color:#e9e2c8}
 /* 符合張數：水表式五顆數字滾輪（2026-11-07 店主：不要中文，數字切換時滾輪快速轉到下一個數字）；滾筒與指標畫在 panel-all.png 上 */
-.tune-lcd{left:68.15%;top:39.207%;width:21.558%;height:10.899%;pointer-events:none}
-.tune-odo{position:absolute;top:10.395%;height:79.218%;width:16.128%;overflow:hidden}
+.tune-lcd{left:68.15%;top:39.207%;width:21.558%;height:8.563%;pointer-events:none}
+.tune-odo{position:absolute;top:9.097%;height:81.817%;width:16.128%;overflow:hidden}
 .tune-odo:nth-child(1){left:5.483%}.tune-odo:nth-child(2){left:23.226%}.tune-odo:nth-child(3){left:41.29%;width:15.81%}.tune-odo:nth-child(4){left:59.031%}.tune-odo:nth-child(5){left:76.774%}
-.tune-odo::after{content:"";position:absolute;inset:0;background:url(tune/drum-shade-122.png?v=${AV}) 0 0/100% 100% no-repeat;image-rendering:pixelated}
+.tune-odo::after{content:"";position:absolute;inset:0;background:url(tune/drum-shade-99.png?v=${AV}) 0 0/100% 100% no-repeat;image-rendering:pixelated}
 .tune-odo .strip{will-change:transform}
-.tune-odo span{display:block;height:5.4cqw;line-height:5.4cqw;text-align:center;font-family:var(--pix);font-size:4.6cqw;color:#e9e2c8}
+.tune-odo span{display:block;height:5.2cqw;line-height:5.2cqw;text-align:center;font-family:var(--pix);font-size:4.4cqw;color:#e9e2c8}
 .tune-lcd.zero span{color:#ff7a6b}
-.tune-all{left:67.803%;top:51.734%;width:22.323%;height:13.659%;background-image:url(tune/key-all.png?v=${AV});color:#8d9478;font-size:3.6cqw;line-height:1.15;text-align:center;padding-top:.6cqw}
+.tune-all{left:67.803%;top:49.328%;width:22.323%;height:9.059%;background-image:url(tune/key-all.png?v=${AV});color:#8d9478;font-size:3.6cqw;line-height:1.15;text-align:center;padding-top:.6cqw}
 .tune-all small{display:block;font-size:2.2cqw;letter-spacing:.08em}
 .tune-all.on{color:#e9e2c8}
-/* 轉輪：畫面縮成一半高，點擊範圍放大到整欄（含名牌與刻度），手指好抓 */
-.tune-wheel{background:transparent;overflow:hidden;top:74.452%;height:18.967%;pointer-events:none}
+/* 轉輪：點擊範圍放大到整欄（含名牌與刻度），手指好抓。2026-11-07 店主：輪子往上擴充、篩選排縮小（輪子 190 → 288 列） */
+.tune-wheel{background:transparent;overflow:hidden;top:67.516%;height:25.902%;pointer-events:none}
 .tune-wheel canvas{display:block;width:100%;height:100%;image-rendering:pixelated}
 .tune-wheel[data-axis="x"]{left:15.577%;width:12.656%}.tune-wheel[data-axis="y"]{left:44.784%;width:12.239%}.tune-wheel[data-axis="z"]{left:73.713%;width:12.239%}
-.tune-wcol{top:73.319%;height:20.807%;cursor:ns-resize;touch-action:none;background:transparent}
+.tune-wcol{top:66.171%;height:27.955%;cursor:ns-resize;touch-action:none;background:transparent}
 .tune-wcol[data-axis="x"]{left:7.789%;width:27.538%}.tune-wcol[data-axis="y"]{left:36.231%;width:27.747%}.tune-wcol[data-axis="z"]{left:64.882%;width:27.33%}
 .tune-wcol:focus-visible{outline:2px solid #ffd166;outline-offset:-2px}
 /* 搜尋列：名牌、液晶、黃銅鍵畫在面板上，文字、輸入框、按鍵疊 HTML */
@@ -314,7 +314,7 @@ html.tune-inapp-lock body{padding-top:120px}
 <div class="tune-app" id="tuneApp">
   <div class="tune-stage" id="tuneStage"><canvas id="tuneGl"></canvas>
     <div class="tune-hud">
-      <div class="tune-readout" id="tuneReadout" title="能量 / 質地 / 色溫"><span style="--c:${AX.x}"><b>-.--</b></span><span style="--c:${AX.y}"><b>-.--</b></span><span style="--c:${AX.z}"><b>-.--</b></span></div>
+      <div class="tune-readout" id="tuneReadout" title="能量 / 質地 / 溫度"><span style="--c:${AX.x}"><b>-.--</b></span><span style="--c:${AX.y}"><b>-.--</b></span><span style="--c:${AX.z}"><b>-.--</b></span></div>
       <button class="tune-spk" id="tuneSpk" type="button" aria-pressed="true" aria-label="聲音">${SPK}</button>
       <button class="tune-spk tune-hbtn" id="tuneHoloBtn" type="button" aria-pressed="true" aria-label="懸浮封面" title="懸浮封面">${HOLO}</button>
       <button class="tune-back" id="tuneBack" type="button" aria-label="回找一張來聽" title="找一張來聽">↩</button>
@@ -356,7 +356,7 @@ html.tune-inapp-lock body{padding-top:120px}
     <div class="abs tune-wheel" data-axis="z"><canvas></canvas></div>
     <div class="abs tune-wcol" data-axis="x" role="slider" tabindex="0" aria-label="能量" aria-valuemin="0" aria-valuemax="100" aria-valuenow="25"></div>
     <div class="abs tune-wcol" data-axis="y" role="slider" tabindex="0" aria-label="質地" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"></div>
-    <div class="abs tune-wcol" data-axis="z" role="slider" tabindex="0" aria-label="色溫" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"></div>
+    <div class="abs tune-wcol" data-axis="z" role="slider" tabindex="0" aria-label="溫度" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"></div>
   </div></div>
 </div>`;
   }
@@ -1463,7 +1463,7 @@ html.tune-inapp-lock body{padding-top:120px}
         at(pos, false); const w = wrap(Math.round(pos)); if (w !== drag.last) { drag.last = w; tick(); } });
       hit.addEventListener('pointerup', e => { if (!drag) return; const d = drag; drag = null;
         if (d.moved) { setFilter(k, wrap(Math.round(P))); return; }
-        const r = hit.getBoundingClientRect(); tick(); setFilter(k, FILT[k] + ((e.clientY - r.top) / r.height < 0.598 ? -1 : 1)); });
+        const r = hit.getBoundingClientRect(); tick(); setFilter(k, FILT[k] + ((e.clientY - r.top) / r.height < 0.635 ? -1 : 1)); });
       hit.addEventListener('pointercancel', () => { if (!drag) return; drag = null; show(FILT[k], true); });
       hit.addEventListener('wheel', e => { e.preventDefault(); const now = performance.now(); if (!e.deltaY || now - wheelT < 120) return; wheelT = now; tick(); setFilter(k, FILT[k] + Math.sign(e.deltaY)); }, { passive: false });
       hit.addEventListener('keydown', e => { let to = null;
