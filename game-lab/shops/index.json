@@ -1,0 +1,17 @@
+{
+  "map": "shops/taipei.json",
+  "shops": [
+    {
+      "id": "dip",
+      "layout": "shops/dip.json",
+      "pin": "pin-dip",
+      "status": "open"
+    },
+    {
+      "id": "basement",
+      "layout": "shops/basement.json",
+      "pin": "pin-basement",
+      "status": "debug"
+    }
+  ]
+}

@@ -647,5 +647,77 @@ section('14. review fixes (heal cap after damage, maxed analog, prologue retries
     ok(d1.e.record.id === 'coldplay-mylo-xyloto' && d1.p.hand.map(c => c.id).join() === d0.p.hand.map(c => c.id).join() && d1.e.deck.length === d0.e.deck.length, 'firstRecordId: Mylo Xyloto on hand 1, same hand dealt', d1.e.record.id); }
 });
 
+section('15. SPEC-v2 §7.1 resolveTurn(st, act, {forcedCell}): forced cell === forecast; no opts === before', () => {
+  // (a) 300 random positions × every legal action × every cell: the forced resolve equals that forecast slice
+  let positions = 0, cases = 0, bad = 0, ultIgnored = 0, ultBad = 0, rngBad = 0;
+  for (let seed = 1; positions < 300 && seed < 4000; seed++) {
+    const tier = EN.TIERS[seed % 3], id = ENEMY_IDS[seed % ENEMY_IDS.length];
+    const { duel: st } = startFor(id, tier, 7000 + seed, { relics: seed % 3 ? [] : ['stylus', 'dustcover', 'obi'], startQi: seed % 9, habitKnown: seed % 2 === 0 });
+    const r = lcg(seed * 31 + 5);
+    const steps = Math.floor(r() * 6);
+    for (let k = 0; k < steps && !st.over; k++) { const a = EN.legalActions(st); EN.resolveTurn(st, a[Math.floor(r() * a.length)]); }
+    if (st.over) continue;
+    positions++;
+    const acts = EN.legalActions(st);
+    for (const act of acts) {
+      const fc = EN.forecast(st, act);
+      if (fc.ult) {   // 殺氣騰騰: forcedCell is ignored; the outcome is the ult outcome
+        const s2 = EN.cloneDuel(st); const c = clashOf(EN.resolveTurn(s2, act, { forcedCell: 0 })); ultIgnored++;
+        if (c.kind !== fc.outcome.kind || c.toE !== fc.outcome.toE || c.toP !== fc.outcome.toP || c.stamp !== fc.outcome.stamp) ultBad++;
+        continue;
+      }
+      for (const sl of fc.slices) {
+        if (!sl.outcome) continue;    // hidden cell: the UI cannot show it, nothing to compare
+        const s2 = EN.cloneDuel(st); const rng0 = s2.rng;
+        const ev = EN.resolveTurn(s2, act, { forcedCell: sl.i }); const c = clashOf(ev), rv = ev.find(e => e.t === 'reveal');
+        cases++;
+        if (c.kind !== sl.outcome.kind || c.toE !== sl.outcome.toE || c.toP !== sl.outcome.toP || c.stamp !== sl.outcome.stamp || JSON.stringify(c.breakdown) !== JSON.stringify(sl.outcome.breakdown) || rv.cellIdx !== sl.i) { bad++; if (bad < 4) fails.push('forced mismatch ' + JSON.stringify({ id, seed, act, cell: sl.i, c, o: sl.outcome })); }
+        // forcing cell i ≡ the hidden draw having landed on i (test-only peek): same events, same state, same RNG afterwards
+        const s3 = EN.cloneDuel(st); s3.intent.cellIdx = sl.i; const ev3 = EN.resolveTurn(s3, act);
+        if (JSON.stringify(ev3) !== JSON.stringify(ev) || s3.rng !== s2.rng || JSON.stringify(s3.p) !== JSON.stringify(s2.p) || JSON.stringify(s3.e) !== JSON.stringify(s2.e)) rngBad++;
+        void rng0;
+      }
+    }
+  }
+  console.log('     positions', positions, 'forced cases', cases, 'ult hands (forcedCell ignored)', ultIgnored);
+  ok(positions >= 300, '300 random positions', positions);
+  ok(cases >= 3000, 'at least 3000 forced cases', cases);
+  ok(bad === 0, 'forced cell ≠ forecast slice', bad);
+  ok(ultBad === 0, 'forcedCell ignored on 殺氣騰騰', ultBad);
+  ok(rngBad === 0, 'forcing cell i ≡ hidden draw on i (events, state, RNG)', rngBad);
+  // invalid forcedCell values are ignored (fall back to the hidden cell)
+  { const { duel: st } = startFor('copycat', 'hall', 77); const a = EN.cloneDuel(st), b = EN.cloneDuel(st), c = EN.cloneDuel(st), d = EN.cloneDuel(st);
+    const act = { type: 'card', i: 0, attr: 'o' };
+    const e0 = JSON.stringify(EN.resolveTurn(a, act)), e1 = JSON.stringify(EN.resolveTurn(b, act, { forcedCell: 99 })), e2 = JSON.stringify(EN.resolveTurn(c, act, { forcedCell: 1.5 })), e3 = JSON.stringify(EN.resolveTurn(d, act, { forcedCell: null }));
+    ok(e0 === e1 && e0 === e2 && e0 === e3, 'out-of-range / non-integer / null forcedCell ignored'); }
+  // (b) without opts: identical to before the change. In-run: no opts === undefined === {} === {forcedCell:null}
+  let diff = 0;
+  for (let g = 0; g < 60; g++) {
+    const id = ENEMY_IDS[g % 10], tier = EN.TIERS[g % 3];
+    const runs = [undefined, 'none', {}, { forcedCell: null }].map(o => {
+      const { duel: st, events } = startFor(id, tier, 500 + g); const all = [events]; const r = lcg(g + 3);
+      while (!st.over) { const a = EN.legalActions(st)[Math.floor(r() * EN.legalActions(st).length)]; all.push(o === 'none' ? EN.resolveTurn(st, a) : EN.resolveTurn(st, a, o)); }
+      return JSON.stringify(all) + JSON.stringify(st);
+    });
+    if (runs.some(x => x !== runs[0])) diff++;
+  }
+  ok(diff === 0, 'resolveTurn without opts / with empty opts identical', diff);
+  // golden: 200 seeded duels hashed with the pre-change engine (2026-11-07). Skipped only if the card/enemy content itself changed.
+  const fnv = s => { let x = 0x811c9dc5; for (let i = 0; i < s.length; i++) { x ^= s.charCodeAt(i); x = Math.imul(x, 0x01000193); } return (x >>> 0).toString(16); };
+  const contentHash = fnv(JSON.stringify({ e: C.enemies, g: C.gifts, j: C.junk, a: C.aces, c: C.cards }));
+  let h = 0x811c9dc5; const mix = str => { for (let i = 0; i < str.length; i++) { h ^= str.charCodeAt(i); h = Math.imul(h, 0x01000193); } };
+  for (let g = 0; g < 200; g++) {
+    const id = ENEMY_IDS[g % 10], tier = EN.TIERS[g % 3], E = C.enemies[id];
+    const pDef = { hp: 22, maxHp: 22, deck: [...C.gifts[tier], ...C.junk].map(card), ace: card(C.aces[tier]), ear: tier, relics: g % 4 ? [] : ['stylus', 'obi'], startQi: g % 5 };
+    const { duel: st, events } = EN.startDuel(pDef, { ...E, deck: E.deck.map(card) }, { seed: 1000 + g, ultAttr: EN.resolveUltAttr(E.ultAttr, tier), prologue: id === 'man', enemyAce: E.boss ? card(C.aces[otherTier(tier, g)]) : null });
+    mix(JSON.stringify(events)); const r = lcg(g * 7 + 1);
+    while (!st.over) { const a = EN.legalActions(st); mix(JSON.stringify(EN.resolveTurn(st, a[Math.floor(r() * a.length)]))); }
+    mix(JSON.stringify(st));
+  }
+  const golden = (h >>> 0).toString(16);
+  if (contentHash === '602975b1') ok(golden === '64caff7b', 'no-opts event stream bit-identical to the pre-change engine (200 duels)', golden);
+  else console.log('     (golden skipped: card/enemy content changed since 2026-11-07, hash ' + contentHash + '; in-run identity above still checked)');
+});
+
 console.log('\n' + pass + ' passed, ' + fail + ' failed');
 if (fail) { console.log('\nFAILURES:'); fails.slice(0, 40).forEach(f => console.log(' - ' + f.slice(0, 600))); process.exit(1); }

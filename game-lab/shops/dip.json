@@ -1,0 +1,59 @@
+{
+  "id": "dip", "kind": "shop", "name": "dip vinyl", "district": "（本店）", "fictional": false,
+  "size": [144, 144], "safe": [10, 134], "maxScale": 3, "coverMode": "raw",
+  "palette": {},
+  "light": { "ambient": 0.9, "vignette": 0.24, "warm": "#ffcf80", "extra": [{ "x": 106, "y": 124, "rx": 32, "ry": 12, "power": 0.12 }] },
+  "ambience": { "rain": true, "door": "closed", "time": "night" },
+  "wall": { "style": "panel", "h": 66, "board": 12, "wainscot": 60 },
+  "floor": { "style": "planks" },
+  "cameras": {
+    "full":   { "y": 0,  "h": 144, "minH": 120, "anchor": "bottom" },
+    "reward": { "y": 22, "h": 112, "minH": 96,  "anchor": "bottom" },
+    "strip":  { "y": 74, "h": 40 },
+    "stripS": { "y": 86, "h": 28 }
+  },
+  "spots": {
+    "out": [18, 62, true], "q1": [14, 59, true], "q2": [22, 58, true], "door": [18, 74], "atdoor": [26, 80], "in": [26, 96],
+    "counter": [48, 90], "pay": [56, 102], "aisle": [40, 104], "browse": [104, 120], "crateP": [96, 119],
+    "dig1": [88, 120], "dig2": [104, 120], "dig3": [123, 119], "listen": [123, 83], "between": [54, 125],
+    "duelE": [34, 112], "duelP": [74, 112], "near": [60, 106], "visit": [92, 104], "leave": [14, 74], "map": [56, 133], "frontleft": [22, 127]
+  },
+  "meta": {
+    "owner": "owner", "boss": "boss",
+    "crates": { "crate-jazz": "jazz", "crate-tw": "tw", "crate-noise": "noise" },
+    "roster": null, "unlock": null, "difficulty": 1
+  },
+  "props": [
+    { "type": "clock", "x": 15, "y": 22 },
+    { "type": "door", "id": "door", "x": 9, "y": 36, "w": 18, "h": 30, "hot": { "label": "門口", "action": "door" } },
+    { "type": "wallRack", "id": "rack", "x": 34, "y": 9, "cols": 6, "rows": 3, "cell": 10, "gap": 2, "rowGap": 3,
+      "records": ["radiohead-ok-computer", "bill-evans-waltz-for-debby", "fishmans-long-season", "sun-ra-space-is-the-place", "生祥樂隊-圍庄", "david-bowie-low",
+        "stevie-wonder-innervisions", "john-coltrane-blue-train", "宇多田ヒカル-first-love", "fela-kuti-zombie", "beach-house-teen-dream", "herbie-hancock-maiden-voyage",
+        "brian-eno-ambient-1-music-for-airports", "美秀集團-amazing-show-電火王", "kate-bush-the-dreaming", "daft-punk-random-access-memories", "nick-drake-bryter-layter", "cornelius-fantasma"] },
+    { "type": "speaker", "x": 34, "y": 50, "w": 7, "h": 10, "bracket": true, "layer": "wall" },
+    { "type": "poster", "id": "poster-event", "x": 44, "y": 49, "w": 10, "h": 12, "style": "event", "title": "VS", "hot": { "label": "公告", "action": "poster:event" } },
+    { "type": "poster", "x": 57, "y": 50, "w": 8, "h": 11, "bg": "#1f5fae", "motif": "circle", "layer": "wall" },
+    { "type": "nowPlaying", "id": "nowframe", "x": 72, "y": 48, "cell": 11, "record": "caetano-veloso-transa" },
+    { "type": "speaker", "x": 95, "y": 50, "w": 7, "h": 10, "bracket": true, "layer": "wall" },
+    { "type": "lamp", "x": 50, "y": 4 },
+    { "type": "lamp", "x": 92, "y": 4 },
+    { "type": "goldDisc", "x": 117, "y": 12 },
+    { "type": "booth", "id": "booth", "x": 108, "y": 30, "w": 28, "h": 46, "deskY": 67, "sign": "LISTEN", "hot": { "label": "試聽機", "action": "listen" } },
+    { "type": "stool", "x": 118, "y": 77 },
+    { "type": "mat", "x": 10, "y": 67, "w": 16, "h": 3 },
+    { "type": "counter", "id": "counter", "x": 30, "y": 86, "w": 58, "h": 11, "top": 3, "sign": "DIP", "panel": 12, "hot": { "label": "櫃檯", "action": "counter" } },
+    { "type": "cat", "id": "cat", "x": 32, "y": 86, "base": 97.6, "color": "o", "light": "y", "hot": { "label": "店貓", "action": "cat" } },
+    { "type": "turntable", "x": 60, "y": 80, "base": 97.5 },
+    { "type": "register", "x": 76, "y": 78, "base": 97.5 },
+    { "type": "rug", "x": 54, "y": 113, "rx": 24, "ry": 8 },
+    { "type": "plant", "x": 8, "y": 113 },
+    { "type": "box", "x": 26, "y": 125, "w": 15, "h": 7, "label": "NEW" },
+    { "type": "crate", "id": "crate-jazz", "x": 80, "y": 123, "w": 17, "h": 7, "label": "JAZZ", "genre": "jazz", "wood": "wd2", "ink": "pp2", "tab": "b", "records": ["kenny-burrell-midnight-blue"], "hot": { "label": "爵士區", "action": "crate:jazz" } },
+    { "type": "crate", "id": "crate-tw", "x": 98, "y": 123, "w": 13, "h": 7, "label": "TW", "genre": "tw", "wood": "wd4", "woodHi": "wd6", "ink": "line", "tab": "n", "tabAt": 7, "records": ["林生祥-種樹"], "hot": { "label": "台灣區", "action": "crate:tw" } },
+    { "type": "crate", "id": "crate-noise", "x": 112, "y": 122, "w": 23, "h": 8, "label": "NOISE", "genre": "noise", "style": "milk", "ink": "pp2", "min": 2, "records": ["melt-banana-scratch-or-stitch"], "hot": { "label": "噪音區", "action": "crate:noise" } }
+  ],
+  "hotspots": [
+    { "id": "owner", "rect": [42, 76, 13, 9], "label": "老闆", "action": "talk:owner", "pri": 2, "noSparkle": true }
+  ],
+  "actors": [ { "id": "o", "at": "counter", "sprite": "owner" } ]
+}

@@ -1,3 +1,8 @@
+// ── v2 contract (Agent D, SPEC-v2 §3.3/§3.8) — v2 rewrite in progress; names below are final ──
+// data-tut: e-hud e-hp e-qi e-rec e-stars e-shout e-intent | table slot-e slot-p stake tri | result |
+//           p-hud p-hp p-qi ult chain | hand hand-ace hand-0..hand-3 | attrs attr-c attr-o attr-h attr-ace ult-confirm
+// DipLabDuel.el(name) -> Element|null   ('@f'|'@p'|'@o' -> hooks.stage.anchor(id); 'card:<id>' -> hand tile)
+// DipLabDuel.on(evt, cb) -> off   evt: phase selected resolved over info infoClosed
 // game-lab/duel.js — 品味對決・試做版：對決畫面＋動畫佇列（Agent C）。SPEC §6.4、§5.1、§7.4、§2.5。
 // window.DipLabDuel = { mount(container, opts), unmount(), debug() }
 //
@@ -1564,6 +1569,8 @@
     stopAuto: () => { if (CUR) CUR.api.stopAuto(); },
     rerender: () => { if (CUR) CUR.api.rerender(); },
     _fmt: { banner, groupRows, resText, subLine, rowLabel },
+    el: name => { try { return document.querySelector('.dl [data-tut="' + name + '"]'); } catch (_) { return null; } },
+    on: () => () => {},
   };
   window.DipLabDuel = DipLabDuel;
   if (qs.get('debug') === '1') window.__dl = DipLabDuel;

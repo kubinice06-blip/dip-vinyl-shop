@@ -386,10 +386,13 @@
     return ev;
   }
 
-  function resolveTurn(st, act) {
+  // opts.forcedCell (SPEC-v2 §7.1, tutorial only): resolve against that cell instead of the hidden intent.cellIdx.
+  // Not a rule change: applyClash already takes forcedCell (forecast uses it); consumes no RNG; ignored on 殺氣騰騰 hands.
+  function resolveTurn(st, act, opts) {
     if (st.over) return [];
     if (!isLegal(st, act)) throw new Error('DipLabEngine.resolveTurn: illegal action ' + JSON.stringify(act));
-    const ev = applyClash(st, act, null);
+    const fc = opts && Number.isInteger(opts.forcedCell) && st.intent && !st.intent.ult && opts.forcedCell >= 0 && opts.forcedCell < st.e.disc.length ? opts.forcedCell : null;
+    const ev = applyClash(st, act, fc);
     if (!st.over) {
       draw(st);
       if (st.hand >= CFG.maxHands) { st.over = st.p.hp >= st.e.hp ? 'win' : 'lose'; ev.push({ t: 'ko', winner: st.over === 'win' ? 'p' : 'e', timeout: true }); }
