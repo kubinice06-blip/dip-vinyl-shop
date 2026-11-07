@@ -4,7 +4,7 @@
 > 這份只列**新句**（試做版新寫、或取自四份概念稿，店主還沒看過）。標成「原句」「拍板」的句子已與現行 `roguelike.html` 逐字比對（37 句，全部一致才會產生這份）。
 > v3（三相剋當核心）：氣勢、輾壓、賭注、相生、割捨、七星回擊、霸權、點播、脾氣唱盤（晃）、事件、挖箱、試聽機的句子全部刪除；v2 教學的 37 句換成 10 步；發燒配件留 6 件，每件一句話。
 
-統計：原句 35、拍板 2、新 241（同一句在有聲／安靜兩版序章只算一次）。
+統計：原句 35、拍板 2、新 237（同一句在有聲／安靜兩版序章只算一次）。
 
 ## 序章（有聲音）
 
@@ -408,24 +408,20 @@
 | 說話者 | 句子 | 出處 | 位置 |
 |---|---|---|---|
 | （畫面字） | （本店） | 本規格新寫 | `shops/dip.json.district` |
-| （畫面字） | 初版描圖背景（店主看過、喜歡的精緻度）：牆、34 張手繪封面、地板、門洞（雨夜）。家具全部挖掉，前景由程式畫在同一個 448×492 格子上。 | 本規格新寫 | `shops/dip.json.bg.note` |
-| （畫面字） | 座標契約沿用 scripts/trace-shop-art.py：邏輯 448×492，牆／地板交界 y=325，門洞 x12–86 y156–325 | 本規格新寫 | `shops/dip.json.geometry.note` |
-| （畫面字） | 門口 | 本規格新寫 | `shops/dip.json.props[1].hot.label` |
-| （畫面字） | 牆上的唱片 | 本規格新寫 | `shops/dip.json.props[2].revealLabel` |
-| （畫面字） | 山下達郎《For You》 | 本規格新寫 | `shops/dip.json.props[2].cells[0][3].label` |
-| （畫面字） | 山下達郎《Big Wave》 | 本規格新寫 | `shops/dip.json.props[2].cells[1][3].label` |
-| （畫面字） | King Crimson《In the Court of the Crimson King》 | 本規格新寫 | `shops/dip.json.props[2].cells[7][3].label` |
-| （畫面字） | Hank Mobley《Dippin'》 | 本規格新寫 | `shops/dip.json.props[2].cells[8][3].label` |
-| （畫面字） | 竹內瑪莉亞 | 本規格新寫 | `shops/dip.json.props[2].cells[10][3].label` |
-| （畫面字） | Miles Davis《Bitches Brew》 | 本規格新寫 | `shops/dip.json.props[2].cells[15][3].label` |
-| （畫面字） | Pink Floyd《The Dark Side of the Moon》 | 本規格新寫 | `shops/dip.json.props[2].cells[18][3].label` |
-| （畫面字） | 初版手繪封面 13 格：認得出來的留原畫（點了亮名字；卡池沒有這幾張）；其餘 19 格是「JAZZ／CITY POP」假封面，蓋上卡池真封面（高解析層，點了開唱片資訊） | 本規格新寫 | `shops/dip.json.props[2].note` |
-| （畫面字） | 試聽機 | 本規格新寫 | `shops/dip.json.props[7].hot.label` |
-| （畫面字） | 櫃檯 | 本規格新寫 | `shops/dip.json.props[9].hot.label` |
-| （畫面字） | 店貓 | 本規格新寫 | `shops/dip.json.props[12].hot.label` |
-| （畫面字） | 公告 | 本規格新寫 | `shops/dip.json.props[15].hot.label` |
-| （畫面字） | 老闆 | 本規格新寫 | `shops/dip.json.hotspots[0].label` |
-| （畫面字） | 唱盤區幾何（場景座標）：兩座轉盤中心、半空相撞點（你早丟 100 ms，偏他那邊）、地毯中心（碎片、平躺的唱片落在這條線上） | 本規格新寫 | `shops/dip.json.duel.note` |
+| （畫面字） | 斜俯視 3/4（店主 2026-11-07 選的路線 P2）：x＝寬、y＝地板前緣（越下越近）、高度直接往上減；不縮放。人＝16×16 小人 ×3（48 格＝1.70 m，28.2 格/m）；1 格≈1.336 CSS px（390 寬）。 | 本規格新寫 | `shops/dip.json.note` |
+| （畫面字） | pools＝[x, y, rx, ry, 顏色, 強度]：窗、窗光落地、中島軌道燈、唱盤區、試聽桌燈、櫃檯；軌道燈的光池由 trackLights 道具自己給 | 本規格新寫 | `shops/dip.json.light.note` |
+| （畫面字） | 唱盤區（他左白台、你右黑台、老闆在兩台中間後面當裁判）：轉盤中心、半空相撞點、地板落點（碎片、平躺的唱片）、弧高 | 本規格新寫 | `shops/dip.json.duel.note` |
+| （畫面字） | 門口 | 本規格新寫 | `shops/dip.json.props[3].hot.label` |
+| （畫面字） | 牆上的唱片 | 本規格新寫 | `shops/dip.json.props[4].revealLabel` |
+| （畫面字） | 爵士區 | 本規格新寫 | `shops/dip.json.props[24].hot.label` |
+| （畫面字） | 台灣 | 本規格新寫 | `shops/dip.json.props[25].label` |
+| （畫面字） | 台灣區 | 本規格新寫 | `shops/dip.json.props[25].hot.label` |
+| （畫面字） | 試聽機 | 本規格新寫 | `shops/dip.json.props[26].hot.label` |
+| （畫面字） | 噪音區 | 本規格新寫 | `shops/dip.json.props[28].hot.label` |
+| （畫面字） | 櫃檯 | 本規格新寫 | `shops/dip.json.props[29].hot.label` |
+| （畫面字） | 公告 | 本規格新寫 | `shops/dip.json.hotspots[0].label` |
+| （畫面字） | 老闆 | 本規格新寫 | `shops/dip.json.hotspots[1].label` |
+| （畫面字） | 熟客：背對鏡頭翻後牆的箱子（P2 原型的位置）；舞台 API 不動她 | 本規格新寫 | `shops/dip.json.actors[1].note` |
 
 ## 店內名牌（shops/taipei.json）
 

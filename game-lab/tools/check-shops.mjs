@@ -6,8 +6,9 @@
 //       spots／熱點／鏡頭都在畫布內；舊 POS 別名表（stage.js）每個目標在每家店都有；引用的唱片都在 cards.js；
 //       箱子對到 content.js 的卡池；地圖圖釘對到 shops/index.json；每個道具都畫得出來（假畫布）、畫在畫布內；
 //       比例：唱片箱整體不高過一個小人（14 格），所有站立道具的格子跟小人同一個尺度（不縮放）。
-//       v3 細格子（layout.fine，本店 448×492）：小人一格＝spriteScale 個場景像素，人高＝14×spriteScale；
-//       長桌＋桌上木箱＋露出的唱片要比人矮（店主：人明顯比箱子高）、櫃檯面不高過人、背景圖檔要在；唱盤區兩座台與特效層都在。
+//       斜俯視 3/4（layout.projection＝'oblique34'，本店 dip，店主選的路線 P2）：道具用 DipShop.O34.PROPS 畫（量外框＋假畫布各畫一次）；
+//       人＝16×16 小人 ×spriteScale（48 格）；箱子桌、櫃檯、唱盤台、試聽桌都比人矮；耳機掛勾在桌面高度；唱盤區他左白台、你右黑台＋特效層；
+//       走位：每個 spot 不站在家具裡、從門口都走得到（沿 nav 路點、不穿過家具）。
 import fs from 'fs';
 import path from 'path';
 import vm from 'vm';
@@ -22,9 +23,11 @@ export const CHAR_H = 14;   // 小人看得到的列數（16×16 格，腳底在
 export const SHOP_SPOTS = ['out', 'q1', 'q2', 'door', 'atdoor', 'in', 'counter', 'pay', 'aisle', 'browse', 'crateP', 'dig1', 'dig2', 'dig3',
   'listen', 'between', 'duelE', 'duelP', 'near', 'visit', 'leave', 'map', 'frontleft'];
 export const SHOP_CAMERAS = ['full', 'reward', 'strip', 'stripS'];
+export const O34_CAMERAS = ['full', 'scene', 'map', 'reward', 'strip', 'stripS'];
+export const O34_HOTS = ['door', 'now', 'poster-event', 'booth', 'counter', 'cat', 'owner', 'crate-jazz', 'crate-tw', 'crate-noise'];
 const ACTION_RE = /^(door|listen|counter|cat|talk:owner|poster:event|now|locked|wall-record:.+|wall-painted:.+|crate:[a-z0-9]+|shop:[a-z0-9-]+)$/;
-// 細格子世界：小人看得到的列數 × 每格場景像素
-export function charH(L) { return CHAR_H * ((L && L.fine && L.spriteScale) || 1); }
+// 小人看得到的列數 × 每格場景像素（斜俯視：人整格 16×spriteScale＝48 格；腳底在第 14 列）
+export function charH(L) { return L && L.projection ? 16 * (L.spriteScale || 3) : CHAR_H * ((L && L.fine && L.spriteScale) || 1); }
 // 本店箱子的卡池：v2 content.pools.crate[key]（陣列）；v3 content.bins[key].ids
 function cratePool(content, key) {
   if (!content) return null;
@@ -41,11 +44,12 @@ export function loadLib() {
   const sb = { window: win, console, Math, JSON, Object, Array, String, Number, Promise, RegExp, parseInt, parseFloat, isFinite };
   vm.createContext(sb);
   vm.runInContext(fs.readFileSync(path.join(LAB, 'shop-props.js'), 'utf8'), sb, { filename: 'shop-props.js' });
+  const PropsO = win.DipPropsO || null;
   const sw = { location: { search: '', href: 'http://localhost/game-lab/' } };
   const sb2 = { window: sw, document: {}, location: sw.location, URLSearchParams, console, Promise, JSON, Object, Array, String, RegExp, setTimeout, clearTimeout };
   vm.createContext(sb2);
   vm.runInContext(fs.readFileSync(path.join(LAB, 'stage.js'), 'utf8'), sb2, { filename: 'stage.js' });
-  return { DipShop, PROPS: DipShop.PROPS, ALIAS: sw.DipLabStage.ALIAS, Stage: sw.DipLabStage };
+  return { DipShop, PROPS: DipShop.PROPS, PropsO, ALIAS: sw.DipLabStage.ALIAS, Stage: sw.DipLabStage };
 }
 
 // 假畫布：記錄每一筆 fillRect 的範圍（道具畫得出來、畫在哪裡）
@@ -74,8 +78,174 @@ export function readJSON(rel) { return JSON.parse(fs.readFileSync(path.join(LAB,
 
 const isInt = v => Number.isInteger(v);
 
+// ---------- 斜俯視 3/4（本店 dip）
+// 假畫布（裝置像素）：記外框；fillText／measureText 也要有（中文標籤）
+function fakeCtx2() {
+  const c = fakeCtx();
+  Object.assign(c, { font: '', textAlign: 'left', textBaseline: 'alphabetic', globalCompositeOperation: 'source-over', imageSmoothingEnabled: false, imageSmoothingQuality: 'low',
+    fillText() {}, measureText(t) { return { width: String(t).length * 7 }; }, setTransform() {}, translate() {}, scale() {} });
+  return c;
+}
+export function checkOblique(L, file, lib, cards, content) {
+  const P = [], Wn = [];
+  const bad = (m) => P.push(file + ': ' + m), warn = (m) => Wn.push(file + ': ' + m);
+  const info = { props: 0, hots: 0, scale: [] };
+  const DS = lib.DipShop, OP = DS.O34 && DS.O34.PROPS;
+  if (!OP) { bad('shop.js 沒有斜俯視 renderer（DipShop.O34）'); return { problems: P, warnings: Wn, hotIds: [], info }; }
+  const base = path.basename(file, '.json');
+  if (L.id !== base) bad('id「' + L.id + '」跟檔名不一致');
+  if (L.kind !== 'shop') bad('斜俯視的 layout 要是 kind:shop');
+  if (typeof L.name !== 'string' || !L.name) bad('缺 name');
+  if (!Array.isArray(L.size) || L.size.length !== 2 || !L.size.every(v => isInt(v) && v >= 64 && v <= 640)) { bad('size 要是 [寬, 高] 整數'); return { problems: P, warnings: Wn, hotIds: [], info }; }
+  const [W, H] = L.size, KS = L.spriteScale, CH = charH(L);
+  if (!(isInt(KS) && KS >= 2 && KS <= 6)) bad('spriteScale 要是 2–6 的整數（16×16 小人放大幾倍）');
+  if (!(isInt(L.wallBase) && L.wallBase > 20 && L.wallBase < H / 2)) bad('wallBase（後牆和地板的交界）不合理');
+  if (L.maxScale != null && !(L.maxScale >= 0.5 && L.maxScale <= 4)) bad('maxScale 0.5–4');
+  if (!Array.isArray(L.safe) || L.safe.length !== 2 || !(L.safe[0] >= 0 && L.safe[1] <= W && L.safe[0] < L.safe[1])) bad('safe 要在 0..寬 之間');
+  const inside = (x, y) => isInt(x) && isInt(y) && x >= 0 && y >= 0 && x < W && y < H;
+  // 鏡頭
+  const cams = L.cameras || {};
+  for (const c of O34_CAMERAS) if (!cams[c]) bad('缺 cameras.' + c);
+  for (const [n, c] of Object.entries(cams)) {
+    if (!isInt(c.y) || !isInt(c.h) || c.y < 0 || c.h < 8 || c.y + c.h > H) bad('cameras.' + n + ' 超出畫布：' + JSON.stringify(c));
+    if (c.minH != null && !(isInt(c.minH) && c.minH > 0 && c.minH <= c.h)) bad('cameras.' + n + '.minH 要 ≤ h');
+    if (c.anchor != null && !['bottom', 'top', 'center'].includes(c.anchor)) bad('cameras.' + n + '.anchor ' + c.anchor);
+  }
+  if (cams.strip && cams.stripS && cams.stripS.h > cams.strip.h) bad('stripS 要比 strip 矮');
+  for (const n of ['full', 'scene', 'map']) if (cams[n] && cams[n].y + cams[n].h !== H) bad('cameras.' + n + ' 要看到地板最下緣（唱盤區）');
+  // spots
+  const spots = L.spots || {};
+  for (const [k, s] of Object.entries(spots)) {
+    if (!Array.isArray(s) || s.length < 2 || s.length > 3) { bad('spots.' + k + ' 格式'); continue; }
+    if (!inside(s[0], s[1])) bad('spots.' + k + ' 在畫布外：' + JSON.stringify(s));
+    if (s.length === 3 && typeof s[2] !== 'boolean') bad('spots.' + k + ' 第三格要是 true/false');
+  }
+  for (const k of SHOP_SPOTS) if (!spots[k]) bad('缺 spots.' + k);
+  for (const [from, to] of Object.entries(lib.ALIAS)) if (!spots[to]) bad('別名 ' + from + ' → ' + to + '：這家店沒有這個 spot');
+  if (spots.duelE && spots.duelP) {
+    if (!(spots.duelE[0] < spots.duelP[0])) bad('duelE 要在 duelP 左邊（他＝左、你＝右）');
+    for (const cn of ['strip', 'stripS']) { const c = cams[cn]; if (!c) continue; for (const k of ['duelE', 'duelP']) { const y = spots[k][1]; if (y > c.y + c.h - 1 || y - 15 * KS < c.y) bad(cn + ' 鏡頭看不到 ' + k + ' 的全身'); } }
+    if (cams.strip && spots.ref && spots.ref[1] - 15 * KS < cams.strip.y) bad('strip 鏡頭看不到老闆裁判（ref）的頭');
+  }
+  // 道具：量外框（不能丟錯、畫在畫布內）＋假畫布再畫一次（文字、封面、裁切的路徑）
+  const props = Array.isArray(L.props) ? L.props : (bad('props 要是陣列'), []);
+  const S = {
+    L, layout: L, W, H, card: (id) => cards[id] || null, t: 1.3, rt: 1.3, frame: 1,
+    state: { door: 'closed', playing: true, poke: {}, decks: { e: { rec: { attr: 'c' }, state: 'spin' }, p: { rec: { attr: 'h', kind: 'ace' }, state: 'land' } }, fx: { discs: [{ x: 100, y: 280, attr: 'o', fr: 1 }, { x: 120, y: 282, attr: 'c', split: 2 }, { x: 140, y: 300, attr: 'h', flat: true }], trails: [[90, 280, 'rgba(255,241,194,0.7)']], sparks: [{ x: 140, y: 280, size: 'ring' }], shards: [[130, 300, 3, 'c']], notes: [{ x: 80, y: 270 }], flag: { x: 160, y: 270, side: 'p' }, dots: [[70, 283]], excl: [{ x: 200, y: 260 }] }, dim: 1 },
+    drawOutside() {}, outsideCount() { return 1; }
+  };
+  const ids = new Map(), recRefs = [], kinds = {};
+  const addHot = (id, rect, action, label, src) => {
+    if (typeof id !== 'string' || !id) { bad(src + '：熱點沒有 id'); return; }
+    if (ids.has(id)) bad('熱點 id 重複：' + id + '（' + ids.get(id) + '、' + src + '）'); else ids.set(id, src);
+    if (!Array.isArray(rect) || rect.length !== 4 || !rect.every(isInt)) bad('熱點 ' + id + ' rect 格式');
+    else if (!(rect[0] >= 0 && rect[1] >= 0 && rect[0] + rect[2] <= W && rect[1] + rect[3] <= H && rect[2] > 0 && rect[3] > 0)) bad('熱點 ' + id + ' 超出畫布：' + JSON.stringify(rect));
+    if (typeof action !== 'string' || !ACTION_RE.test(action)) bad('熱點 ' + id + ' 動作不合法：' + action);
+    if (typeof label !== 'string' || !label) bad('熱點 ' + id + ' 沒有名牌文字');
+    else for (const re of FORBIDDEN) if (re.test(label)) bad('熱點 ' + id + ' 名牌有禁字：' + label);
+    info.hots++;
+  };
+  props.forEach((o, i) => {
+    const src = 'props[' + i + '] ' + o.type + (o.id ? '#' + o.id : '');
+    const spec = OP[o.type];
+    if (!spec) { bad(src + '：沒有這種斜俯視道具'); return; }
+    info.props++; kinds[o.type] = (kinds[o.type] || 0) + 1;
+    if (o.layer && !['bg', 'wall', 'fx', 'stand'].includes(o.layer)) bad(src + '：layer ' + o.layer);
+    const T = { ctx: null, k: 1, cx: 0, cy: 0, meas: [1e9, 1e9, -1e9, -1e9], cover: () => null, used: {}, pool: Object.keys(cards).slice(0, 20) };
+    const Pn = DS.OPainter(T);
+    try { spec.draw(Pn, o, S); if (spec.glow) { T.meas = [1e9, 1e9, -1e9, -1e9]; spec.glow(Pn, o, S); T.meas = null; } } catch (e) { bad(src + '：畫的時候出錯 ' + e.message); return; }
+    T.meas = [1e9, 1e9, -1e9, -1e9]; spec.draw(Pn, o, S); const m = T.meas; T.meas = null;
+    try { T.ctx = fakeCtx2(); spec.draw(Pn, o, S); if (spec.glow) spec.glow(Pn, o, S); } catch (e) { bad(src + '：在畫布上畫的時候出錯 ' + e.message); }
+    if (m[2] > m[0] && (m[0] < -2 || m[1] < -2 || m[2] > W + 2 || m[3] > H + 2) && o.type !== 'duelfx' && (o.layer || spec.layer) !== 'bg') warn(src + '：畫到畫布外 ' + m.map(v => Math.round(v)).join(','));
+    // 比例：人 CH（48）格；箱子桌（前板＋露出的唱片＋堆疊）、櫃檯、唱盤台、試聽桌都比人矮
+    const tall = (o.h || 0) + (o.d || 0);
+    if (o.type === 'binTable' || o.type === 'binCabinet') {
+      // 斜俯視：畫面上的高＝深度＋高度；真的高度＝前板 h＋露出的唱片 rec＋分隔卡（約 5）
+      const hh = (o.h || 0) + (o.rec || 8) + 5;
+      info.scale.push({ id: o.id || o.type, h: hh });
+      if (hh >= CH * 0.8) bad(src + '：箱子桌連唱片高 ' + hh + '，人（' + CH + '）沒有明顯比較高');
+      [].concat(o.front || [], o.cards || [], o.lean ? [o.lean] : []).forEach(r => recRefs.push([r, src]));
+    }
+    if (o.type === 'counter') { if (tall >= CH) bad(src + '：櫃檯比人高'); if (o.now) recRefs.push([o.now, src]); }
+    if (o.type === 'deckStand') { if (tall >= CH) bad(src + '：唱盤台比人高'); if (!['e', 'p'].includes(o.side)) bad(src + '：side 要是 e 或 p'); }
+    if (o.type === 'listenDesk') {
+      if (tall >= CH) bad(src + '：試聽桌比人高');
+      const hookM = (o.h - 1) / (L.pxPerM || 28.2); if (hookM < 0.55 || hookM > 0.9) bad(src + '：耳機掛勾離地 ' + hookM.toFixed(2) + ' m，要在桌面高度（0.55–0.9 m）');
+      if (o.stack) recRefs.push([o.stack, src]);
+    }
+    if (o.type === 'ledge' || o.type === 'shelving') (o.cards || []).forEach(r => r && recRefs.push([r, src]));
+    // 熱點
+    if (spec.hots) (spec.hots(o, S) || []).forEach(h => addHot(h.id, (h.rect || []).map(v => Math.round(v)), h.action, h.label, src + ' 子熱點'));
+    if (o.hot) {
+      if (!o.id) bad(src + '：可點的道具要有 id');
+      const box = o.hot.rect || (spec.box ? spec.box(o) : null);
+      if (!box) bad(src + '：hot 要有 rect（這種道具沒有 box）');
+      else addHot(o.id, box.map(v => Math.round(v)), o.hot.action, o.hot.label, src);
+    }
+  });
+  (L.hotspots || []).forEach((h, i) => {
+    addHot(h.id, h.rect, h.action, h.label, 'hotspots[' + i + ']');
+    if (h.follow != null) {
+      if (!(L.actors || []).some(a => a.id === h.follow)) bad('hotspots[' + i + '] follow 的小人 ' + h.follow + ' 不在 actors');
+      if (!Array.isArray(h.rel) || h.rel.length !== 4 || !h.rel.every(isInt)) bad('hotspots[' + i + '] rel 要是 [dx,dy,w,h] 整數');
+      else { const a = (L.actors || []).find(x => x.id === h.follow), s = a && spots[a.at]; if (s && (s[0] + h.rel[0] !== h.rect[0] || s[1] + h.rel[1] !== h.rect[1])) bad('hotspots[' + i + '] rect 跟小人起始位置＋rel 對不上'); }
+    }
+  });
+  for (const id of O34_HOTS) if (!ids.has(id)) bad('缺熱點 ' + id);
+  if ([...ids.keys()].filter(h => h.startsWith('rack:')).length < 12) bad('牆上（與櫃子裡）可點的唱片少於 12 張');
+  for (const [r, src] of recRefs) if (!cards[r]) bad(src + '：唱片 ' + r + ' 不在 cards.js');
+  (L.actors || []).forEach((a, i) => {
+    if (!a.id || typeof a.id !== 'string') bad('actors[' + i + '] 缺 id');
+    if (!spots[a.at]) bad('actors[' + i + '] 站的位置 ' + a.at + ' 不存在');
+    if (typeof a.sprite !== 'string') bad('actors[' + i + '] sprite 要是字串');
+  });
+  // meta：三個箱子＝熱點＋動作＋卡池
+  const meta = L.meta || {};
+  if (!meta.crates || typeof meta.crates !== 'object') bad('缺 meta.crates');
+  for (const [hid, key] of Object.entries(meta.crates || {})) {
+    if (!ids.has(hid)) bad('meta.crates：熱點 ' + hid + ' 不存在');
+    const pr = props.find(o => o.id === hid);
+    if (pr && (!pr.hot || pr.hot.action !== 'crate:' + key)) bad('meta.crates：' + hid + ' 的動作是 ' + (pr.hot && pr.hot.action) + '，不是 crate:' + key);
+    const pool = cratePool(content, key);
+    if (content && !pool) bad('meta.crates：content.js 沒有卡池 ' + key);
+    if (pool && pr) (pr.front || []).forEach(r => { if (!pool.includes(r)) warn(hid + '：露出的唱片 ' + r + ' 不在卡池 ' + key); });
+  }
+  // 唱盤區：他左白台、你右黑台、特效層、幾何點在畫布內
+  const dE = props.find(o => o.type === 'deckStand' && o.side === 'e'), dP = props.find(o => o.type === 'deckStand' && o.side === 'p');
+  if (!dE || !dP) bad('唱盤區要有兩座唱盤台（deckStand side e／p）');
+  else if (!(dE.x < dP.x)) bad('他的白台（e）要在左、你的黑台（p）在右');
+  if (!props.some(o => o.type === 'duelfx')) bad('唱盤區要有 duelfx 特效層');
+  const D = L.duel || {};
+  for (const k of ['deckE', 'deckP', 'clash', 'rug']) { const v = D[k]; if (!v) bad('缺 duel.' + k); else if (!inside(v[0], v[1])) bad('duel.' + k + ' 在畫布外'); }
+  if (D.deckE && D.deckP && !(D.deckE[0] < D.deckP[0])) bad('duel.deckE 要在 deckP 左邊');
+  if (spots.ref && !inside(spots.ref[0], spots.ref[1])) bad('spots.ref 在畫布外');
+  if (props.some(o => /rug/i.test(o.type))) bad('店主：不要地毯');
+  // 走位：spot 不站在家具裡；從門口都走得到（每一段不穿過家具）
+  const obs = DS.navObstacles(L);
+  (L.nav || []).forEach((q, i) => { if (!inside(q[0], q[1])) bad('nav[' + i + '] 在畫布外'); if (obs.some(r => q[0] > r[0] && q[0] < r[0] + r[2] && q[1] > r[1] && q[1] < r[1] + r[3])) bad('nav[' + i + '] 在家具裡 ' + JSON.stringify(q)); });
+  for (const [k, s] of Object.entries(spots)) {
+    if (s[2]) continue;
+    const r = obs.find(r => s[0] > r[0] && s[0] < r[0] + r[2] && s[1] > r[1] && s[1] < r[1] + r[3]);
+    if (r) bad('spots.' + k + ' 站在家具裡 ' + JSON.stringify(r));
+  }
+  const clear = (a, b) => !obs.some(r => !(a[0] > r[0] && a[0] < r[0] + r[2] && a[1] > r[1] && a[1] < r[1] + r[3]) && !(b[0] > r[0] && b[0] < r[0] + r[2] && b[1] > r[1] && b[1] < r[1] + r[3]) && DS.segHitsRect(a, b, r));
+  info.routes = 0;
+  if (spots.door) for (const [k, s] of Object.entries(spots)) {
+    if (s[2] || k === 'door') continue;
+    for (const from of ['door', 'counter']) {
+      if (!spots[from]) continue;
+      const pts = [spots[from].slice(0, 2)].concat(DS.navRoute(L, spots[from].slice(0, 2), s.slice(0, 2), obs));
+      for (let i = 1; i < pts.length; i++) if (!clear(pts[i - 1], pts[i])) { bad('走不到 spots.' + k + '（從 ' + from + '，' + JSON.stringify(pts[i - 1]) + '→' + JSON.stringify(pts[i]) + ' 穿過家具）'); break; }
+      info.routes++;
+    }
+  }
+  info.charH = CH; info.kinds = kinds;
+  return { problems: P, warnings: Wn, hotIds: [...ids.keys()], info };
+}
+
 // 單一 layout 的檢查；回傳 { problems, warnings, hotIds, info }
 export function checkLayout(L, file, lib, cards, content, opts = {}) {
+  if (L && L.projection === 'oblique34') return checkOblique(L, file, lib, cards, content);
   const P = [], Wn = [];
   const bad = (m) => P.push(file + ': ' + m), warn = (m) => Wn.push(file + ': ' + m);
   const info = { props: 0, hots: 0, scale: [] };
@@ -86,13 +256,6 @@ export function checkLayout(L, file, lib, cards, content, opts = {}) {
   if (typeof L.name !== 'string' || !L.name) bad('缺 name');
   if (!Array.isArray(L.size) || L.size.length !== 2 || !L.size.every(v => isInt(v) && v >= 32 && v <= (L.fine ? 640 : 400))) { bad('size 要是 [寬, 高] 整數'); return { problems: P, warnings: Wn, hotIds: [], info }; }
   const [W, H] = L.size, CH = charH(L);
-  if (L.fine) {
-    if (!(isInt(L.spriteScale) && L.spriteScale >= 2 && L.spriteScale <= 8)) bad('細格子世界要有 spriteScale（2–8）');
-    if (L.bg) {
-      if (typeof L.bg.src !== 'string' || !fs.existsSync(path.resolve(LAB, L.bg.src))) bad('背景圖 ' + (L.bg && L.bg.src) + ' 不存在（路徑相對 game-lab/）');
-      if (!(L.bg.w > 0 && L.bg.h > 0) || Math.abs(L.bg.w / L.bg.h - W / H) > 0.01) bad('背景圖比例要跟 size 一樣');
-    }
-  }
   const inside = (x, y) => isInt(x) && isInt(y) && x >= 0 && y >= 0 && x < W && y < H;
   if (!Array.isArray(L.safe) || L.safe.length !== 2 || !(L.safe[0] >= 0 && L.safe[1] <= W && L.safe[0] < L.safe[1])) bad('safe 要在 0..寬 之間');
   if (L.maxScale != null && !(L.maxScale >= (L.fine ? 0.5 : 1) && L.maxScale <= 4)) bad('maxScale ' + (L.fine ? '0.5' : '1') + '–4');
@@ -166,18 +329,6 @@ export function checkLayout(L, file, lib, cards, content, opts = {}) {
       if ((o.h || 7) > CHAR_H / 2 + 2) bad(src + '：箱子正面 ' + (o.h || 7) + ' 格太高');
     }
     if (o.type === 'counter' && o.h > CHAR_H) bad(src + '：櫃檯比小人高');
-    // v3 細格子：長桌＋木箱＋露出的唱片（整體）比人矮；櫃檯正面＋檯面比人矮；試聽櫃不高過人
-    if (o.type === 'tableB') {
-      const hh = b.y1 - b.y0; info.scale.push({ id: o.id || o.type, h: hh, kind: 'table' });
-      if (hh >= CH) bad(src + '：長桌連木箱高 ' + hh + '，不比小人（' + CH + '）矮');
-      (o.crates || []).forEach(cr => { info.scale.push({ id: cr.id, h: (cr.face || 16) + Math.round((cr.cover || 30) * 0.6) + 4, kind: 'crate' }); (cr.records || []).forEach(r => recRefs.push([r, src + ' ' + cr.id])); });
-      (o.bins || []).forEach(bn => (bn.records || []).forEach(r => recRefs.push([r, src + ' 黑籃'])));
-    }
-    if (o.type === 'counterB' && (o.face || 38) + (o.depth || 10) >= CH) bad(src + '：櫃檯比小人高');
-    if (o.type === 'listenB' && (o.face || 32) + (o.depth || 8) >= CH) bad(src + '：試聽櫃比小人高');
-    if (o.type === 'deckB' && 38 >= CH) bad(src + '：唱盤台比小人高');
-    if (o.type === 'wallSlots') (o.cells || []).forEach(c => { if (c[2]) recRefs.push([c[2], src]); });
-    if (o.type === 'singlesLedge' || o.type === 'nowEasel') [].concat(o.records || [], o.record || []).forEach(r => recRefs.push([r, src]));
     if (o.type === 'wallRack' && (o.cell || 10) > CHAR_H) bad(src + '：牆上封面比小人大');
     if (o.type === 'wallRack') (o.records || []).forEach(r => r && recRefs.push([r, src]));
     if (o.type === 'nowPlaying') recRefs.push([o.record, src]);
@@ -209,8 +360,7 @@ export function checkLayout(L, file, lib, cards, content, opts = {}) {
   const meta = L.meta || {};
   if (L.kind === 'shop') {
     if (!meta.crates || typeof meta.crates !== 'object') bad('缺 meta.crates');
-    // 箱子可以是獨立道具（v2 crate），也可以放在長桌上（v3 tableB.crates）
-    const crateById = (hid) => { const top = props.find(o => o.id === hid); if (top) return { rec: top.records, action: top.hot && top.hot.action }; for (const o of props) for (const cr of (o.crates || [])) if (cr.id === hid) return { rec: cr.records, action: cr.action }; return null; };
+    const crateById = (hid) => { const top = props.find(o => o.id === hid); return top ? { rec: top.records, action: top.hot && top.hot.action } : null; };
     for (const [hid, key] of Object.entries(meta.crates || {})) {
       if (!ids.has(hid)) bad('meta.crates：熱點 ' + hid + ' 不存在');
       const hp = crateById(hid);
@@ -219,15 +369,6 @@ export function checkLayout(L, file, lib, cards, content, opts = {}) {
       if (L.id === 'dip' && content && !pool) bad('meta.crates：content.js 沒有卡池 ' + key + '（pools.crate 或 bins）');
       // 本店的箱子露出的唱片要在那個箱子的卡池裡
       if (L.id === 'dip' && pool) (hp && hp.rec || []).forEach(r => { if (!pool.includes(r)) warn(hid + '：露出的唱片 ' + r + ' 不在卡池 ' + key); });
-    }
-    // 唱盤區：兩座台＋特效層（他左白台、你右黑台）
-    if (L.fine) {
-      const dE = props.find(o => o.type === 'deckB' && o.side === 'e'), dP = props.find(o => o.type === 'deckB' && o.side === 'p');
-      if (!dE || !dP) bad('唱盤區要有兩座唱盤台（deckB side e／p）');
-      else if (!(dE.x < dP.x)) bad('他的白台（e）要在左、你的黑台（p）在右');
-      if (!props.some(o => o.type === 'duelfxB') || !props.some(o => o.type === 'duelglowB')) bad('唱盤區要有 duelfxB 與 duelglowB 特效層');
-      if (L.duel) for (const k of ['deckE', 'deckP', 'clash', 'rug']) { const v = L.duel[k]; if (v && !inside(v[0], v[1])) bad('duel.' + k + ' 在畫布外'); }
-      if (spots.ref && !inside(spots.ref[0], spots.ref[1])) bad('spots.ref 在畫布外');
     }
   }
   info.charH = CH;

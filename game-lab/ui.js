@@ -157,8 +157,10 @@
     if (key && typeof key === 'object') return (typeof W.avatarRows === 'function') ? W.avatarRows(key) : null;
     var S = labSpr(); return S[key] || S.e0;
   }
-  function sprHTML(key, size) { var rows = sprRowsOf(key); return rows ? pix(rows, size || 96) : ''; }
-  function headHTML(key, size) { var rows = sprRowsOf(key); return rows ? pix(rows.slice(0, 10), size || 30) : ''; }   // 頭＋肩
+  // 捏角色存的是 DipLabChars v2 spec（沒有 head 欄位）：HTML 頭像交給 DipLabChars.svg
+  function v2svg(key, size, crop) { var CH = W.DipLabChars; if (!(key && typeof key === 'object' && !Array.isArray(key) && !('head' in key) && CH && CH.svg)) return null; try { return CH.svg(key, size, { crop: crop }); } catch (e) { console.error(e); return null; } }
+  function sprHTML(key, size) { var v = v2svg(key, size || 96, 'full'); if (v) return v; var rows = sprRowsOf(key); return rows ? pix(rows, size || 96) : ''; }
+  function headHTML(key, size) { var v = v2svg(key, size || 30, 'bust'); if (v) return v; var rows = sprRowsOf(key); return rows ? pix(rows.slice(0, 10), size || 30) : ''; }   // 頭＋肩
   function enemySpr(en) { return en ? (en.avatar || en.spr || 'e0') : 'e0'; }
   function playerAv() { return (save.player && save.player.avatar) || (C.avatarsFallback && C.avatarsFallback[0]) || { head: 'neat' }; }
   function ensurePlayer() {
@@ -378,7 +380,8 @@
     var html = '<h2>暫停</h2>' + nowPlayingLine() + '<div class="lb-menu">' +
       '<button type="button" class="lb-btn pri big" data-a="resume">繼續</button>' +
       (UI.tutReplay ? '<button type="button" class="lb-btn big" data-a="endreplay">結束重看</button>' : (UI.screen !== 'title' ? '<button type="button" class="lb-btn big" data-a="title">回標題（存檔）</button>' : '')) +
-      '<div class="row"><button type="button" class="lb-btn big" data-a="shelf">唱片櫃</button><button type="button" class="lb-btn big" data-a="rules">規則</button></div>' +
+      '<div class="row"><button type="button" class="lb-btn big" data-a="shelf">唱片櫃</button><button type="button" class="lb-btn big" data-a="rules">規則</button>' +
+      (canCharEdit() && UI.screen !== 'duel' && !tutOn ? '<button type="button" class="lb-btn big" data-a="char">捏角色</button>' : '') + '</div>' +
       '<button type="button" class="lb-btn big sp" data-a="snd">聲音 ' + swHTML(soundOn()) + '</button>' +
       '<button type="button" class="lb-btn big sp" data-a="fast">動畫加速 ' + swHTML(S.fastAnim) + '</button>' +
       (tutOn ? '<button type="button" class="lb-btn big" data-a="skiptut">' + esc(tutLabel('skipTut', '跳過教學')) + '</button>' : (canTutorial() && UI.screen !== 'duel' ? '<button type="button" class="lb-btn big" data-a="replay">' + esc(tutLabel('replay', '重看教學')) + '</button>' : '')) +
@@ -397,6 +400,7 @@
       else if (a === 'endreplay') { closeModal(); endReplay(); }
       else if (a === 'shelf') { closeModal(); persist(); openPage('shelf'); }
       else if (a === 'rules') { closeModal(); openRules(); }
+      else if (a === 'char') { closeModal(); openCharEdit(); }
       else if (a === 'snd') {
         var want = !soundOn(); var fx = FX();
         if (fx && fx.setSound) try { fx.setSound(want); } catch (err) { console.error(err); }
@@ -417,6 +421,23 @@
         go('title');
       }
     });
+  }
+
+  // ---- 捏角色（charedit.js：DipLabCharEdit；沒載到就不出現入口）
+  function canCharEdit() { return !!(W.DipLabCharEdit && W.DipLabCharEdit.open && W.DipLabChars); }
+  function openCharEdit() {
+    if (!canCharEdit() || UI.charEd) return;
+    ensurePlayer();
+    var done = function () { UI.charEd = null; };
+    try {
+      UI.charEd = W.DipLabCharEdit.open(D.body, { name: save.player.name, spec: save.player.avatar }, {
+        onSave: function (r) {
+          save.player.name = r.name; save.player.avatar = r.spec; persist(); done();
+          if (UI.stage && stg('has', 'p')) stg('sprite', 'p', 'player');   // 店裡的你馬上換裝
+        },
+        onCancel: done
+      });
+    } catch (e) { console.error(e); done(); }
   }
 
   // ======================================================================= 路由
@@ -984,7 +1005,7 @@
   }
   SCREENS.title = function () {
     var r = save.run, hasRun = !!(r && !r.over), overRun = !!(r && r.over);
-    setTop(esc(dateLabel(seedKey())) + ' 的雨夜', { links: [['唱片櫃', function () { openPage('shelf'); }, 'shelf'], ['台北', function () { go('taipei', { back: 'title' }); }, 'taipei']], help: true });
+    setTop(esc(dateLabel(seedKey())) + ' 的雨夜', { links: (canCharEdit() ? [['捏角色', openCharEdit, 'char']] : []).concat([['唱片櫃', function () { openPage('shelf'); }, 'shelf'], ['台北', function () { go('taipei', { back: 'title' }); }, 'taipei']]), help: true });
     var panel = UI.panel; panel.classList.add('title');
     var sh = shelfCount();
     var infoLine = (save.best.clears ? '打烊 ' + save.best.clears + ' 次' : '') + (sh.n ? (save.best.clears ? '・' : '') + '唱片櫃 ' + sh.n + '／' + sh.total : '');

@@ -1,4 +1,6 @@
 /* stage.js：DipLabStage，game-lab 的常駐舞台（SPEC-v2 §2、§5.3）。包住 DipShop（shop.js），給 ui.js／duel.js／tutorial.js 用。
+ * v3.1：本店換成斜俯視 3/4 的店（路線 P2，shops/dip.json projection:'oblique34'）；API 不變。唱盤區的幾何（轉盤中心、相撞點、落點、弧高）都從 layout.duel 讀，
+ *       手的位置問 shop.handAt（DipLabChars 有錨點就用錨點）。小人：window.DipLabChars 有就用，沒有就用原本的 16×16 小人 ×3。
  *
  *   DipLabStage.mount(hostEl, { shop:'dip', cards, coverBase:'./', sprites: labSpr(), spritePal: PIX_PAL, player: avatar|fn, onAction(action, hot) })
  *     → Promise<Stage>        // 整個 session 只 mount 一次；換畫面只換鏡頭（camera）與下方面板
@@ -42,7 +44,7 @@
   };
   // 矮螢幕規則：面板最少要留多高（SPEC-v2 §2）
   var PANEL_MIN = { title: 130, scene: 150, map: 200, reward: 260, node: 260, end: 260, taipei: 92 };
-  var CAM_PANEL = { full: 150, reward: 260 };
+  var CAM_PANEL = { full: 150, scene: 150, map: 200, reward: 260 };
   // 每個畫面舞台上哪些東西可以點（SPEC-v2 §5.4）
   var INTERACT = {
     all: null,
@@ -167,6 +169,7 @@
         sprites: opts.sprites,
         spritePal: opts.spritePal || (typeof PIX_PAL !== 'undefined' ? PIX_PAL : null),   // eslint-disable-line no-undef
         resolveSprite: resolveSprite,
+        resolveAvatar: function (spr) { if (spr !== 'player') return null; var pl = typeof opts.player === 'function' ? opts.player() : opts.player; return (pl && typeof pl === 'object' && !Array.isArray(pl)) ? pl : { head: 'neat' }; },
         sparkle: opts.sparkle !== false && !QS.nosparkle,
         fixedTime: QS.shopT != null ? +QS.shopT : undefined,
         speed: speed,
@@ -182,7 +185,7 @@
     function fitCam(name, c, o) {
       var v = shop.view();
       var pm = o.panelMin != null ? o.panelMin : (PANEL_MIN[o.screen] != null ? PANEL_MIN[o.screen] : (CAM_PANEL[name] != null ? CAM_PANEL[name] : 150));
-      return fitCamera(c, { dpr: v.dpr, dev: v.baseDev, avail: visH() - 32 - pm, fine: !!L.fine });
+      return fitCamera(c, { dpr: v.dpr, dev: v.baseDev, avail: visH() - 32 - pm, fine: !!(L.fine || L.projection) });
     }
     var lastCam = { name: 'full', o: {} }, tweening = 0;
     function camera(name, o) {
@@ -231,15 +234,20 @@
       function deckC(side) {
         var k = side === 'e' ? 'deckE' : 'deckP'; if (D[k]) return D[k];
         var pr = (L.props || []).filter(function (o) { return o.id === (side === 'e' ? 'deck-e' : 'deck-p'); })[0];
+        var spec = pr && W.DipShop.O34 && W.DipShop.O34.PROPS[pr.type];
+        if (spec && spec.center) { var c = spec.center(pr); return [Math.round(c[0]), Math.round(c[1])]; }
         return pr ? [pr.x - (pr.w || 44) / 2 + 18, pr.base - 29] : (side === 'e' ? [sp.duelE[0] + 40, sp.duelE[1] - 30] : [sp.duelP[0] - 40, sp.duelP[1] - 30]);
       }
       var fE = sp.duelE || [0, 0], fP = sp.duelP || [0, 0];
       var C = D.clash || [Math.round((fE[0] + fP[0]) / 2) - 2 * K, fE[1] - 12 * K];
       var rug = D.rug || [Math.round((fE[0] + fP[0]) / 2), fE[1] - 8];
-      return { K: K, PE: deckC('e'), PP: deckC('p'), C: C, rug: rug, ref: sp.ref || sp.counter };
+      // 弧高與特效間距：舊格子世界（448 寬、小人 ×5）的數字是預設；斜俯視店在 layout.duel.arc 給自己的
+      var A = Object.assign({ low: 10, high: 44, mid: 36, bounce: 15, tiny: 3, drop: 6 }, D.arc || {});
+      return { K: K, PE: deckC('e'), PP: deckC('p'), C: C, rug: rug, ref: sp.ref || sp.counter, arc: A, gap: D.gap || (L.projection ? 4 : 6), dropDx: D.dropDx || (L.projection ? 18 : 22), fxK: D.fxK || (L.projection ? 0.6 : 1) };
     }
     // 手的位置（場景座標）：小人腳底 + 格子（flip 後朝對手）
     function handAt(id, kind, base) {
+      if (typeof shop.handAt === 'function') { var hq = shop.handAt(id, kind || 'none'); if (hq) { if (base) { var cur = shop.pos(id); if (cur) { hq[0] += Math.round(base.x) - Math.round(cur.x); hq[1] += Math.round(base.y) - Math.round(cur.y); } } return [Math.round(hq[0]), Math.round(hq[1])]; } }
       var a = base || shop.pos(id) || { x: 0, y: 0 }, K = ttK(), hp = (W.DipShop.HANDAT || {})[kind || 'none'] || [13, 10];
       var col = id === 'p' ? 15 - hp[0] : hp[0];
       return [Math.round(a.x) - 8 * K + col * K + (K >> 1), Math.round(a.y) - 15 * K + 1 + hp[1] * K + (K >> 1)];
@@ -247,6 +255,7 @@
     function hitAt(id, base) { var a = base || shop.pos(id), K = ttK(); return [Math.round(a.x) + (id === 'f' ? 2 : -2) * K, Math.round(a.y) - 9 * K]; }
     // 老闆舉旗的位置：旗竿下半段握在手上，旗尖指贏家（他贏＝老闆轉向左）
     function flagPos(side) {
+      if (typeof shop.handAt === 'function') { shop.flip('o', side === 'e'); var hq = shop.handAt('o', 'flag'); if (hq) return { x: Math.round(hq[0]), y: Math.round(hq[1]), side: side }; }
       var K = ttK(), a = shop.pos('o') || { x: 0, y: 0 }, hp = (W.DipShop.HANDAT || {}).flag || [14, 5], col = side === 'e' ? 15 - hp[0] : hp[0];
       return { x: Math.round(a.x) - 8 * K + col * K + (K >> 1), y: Math.round(a.y) - 15 * K + 1 + hp[1] * K + (K >> 1) - 16, side: side };
     }
@@ -293,8 +302,8 @@
       var baseF = shop.pos('f'), baseP = shop.pos('p');
       baseF = { x: Math.round(baseF.x), y: Math.round(baseF.y) }; baseP = { x: Math.round(baseP.x), y: Math.round(baseP.y) };
       var WP = handAt('p', 'wind', baseP), SP = handAt('p', 'throw', baseP), WE = handAt('f', 'wind', baseF), SE = handAt('f', 'throw', baseF);
-      var C = G.C, end = { p: [C[0] + 6, C[1]], e: [C[0] - 6, C[1]] }, H = { e: hitAt('f', baseF), p: hitAt('p', baseP) }, home = { e: G.PE, p: G.PP };
-      var rugY = G.rug[1], drop = { e: [G.rug[0] - 22, rugY], p: [G.rug[0] + 22, rugY] };
+      var C = G.C, A = G.arc, fk = G.fxK, end = { p: [C[0] + G.gap, C[1]], e: [C[0] - G.gap, C[1]] }, H = { e: hitAt('f', baseF), p: hitAt('p', baseP) }, home = { e: G.PE, p: G.PP };
+      var rugY = G.rug[1], drop = { e: [G.rug[0] - G.dropDx, rugY], p: [G.rug[0] + G.dropDx, rugY] };
       var flagAt = flagPos;
       var hs = { f: TT.held.f, p: TT.held.p };
       var fired = {}, it = { kind: kind, fastTo: TTK.done, res: null };
@@ -308,7 +317,7 @@
       function trail(fx, f, t, t0) { [40, 80].forEach(function (d) { if (t - d >= t0) { var q = f(t - d); fx.trails.push([q[0], q[1], 'rgba(255,241,194,' + (d === 40 ? 0.7 : 0.4) + ')']); } }); }
       function landAt(fx, t, side, t0) {
         var P0 = home[side], rec = { attr: lab[side], kind: dk[side] === 'ace' ? 'ace' : null, card: (side === 'p' ? p.card : e.card) };
-        if (t >= t0 && t < t0 + 80) { fx.decks[side] = { rec: rec, state: 'land' }; fx.dots.push([P0[0] - 16, P0[1] + 1, '#e8e8ee'], [P0[0] + 15, P0[1] + 1, '#e8e8ee']); }
+        if (t >= t0 && t < t0 + 80) { fx.decks[side] = { rec: rec, state: 'land' }; fx.dots.push([P0[0] - Math.round(16 * fk), P0[1] + 1, '#e8e8ee'], [P0[0] + Math.round(15 * fk), P0[1] + 1, '#e8e8ee']); }
         else if (t >= t0 + 80 && t < t0 + 160) fx.decks[side] = { rec: rec, state: 'armMid' };
         else if (t >= t0 + 160) once('land' + side, function () { TT.decks[side] = { rec: rec, state: 'spin' }; if (typeof o.onLand === 'function') o.onLand(side, rec.card); });
       }
@@ -335,7 +344,7 @@
         else if (t < TTK.relE + 120) { shop.arm('f', 'throw'); shop.hold('f', null); }
         else { shop.arm('f', null); shop.hold('f', null); }
         // ---- 飛（相撞前）：低弧
-        var fp = function (tt) { return arcP(SP, end.p, 10, seg(tt, TTK.relP, TTK.col)); }, fe = function (tt) { return arcP(SE, end.e, 10, seg(tt, TTK.relE, TTK.col)); };
+        var fp = function (tt) { return arcP(SP, end.p, A.low, seg(tt, TTK.relP, TTK.col)); }, fe = function (tt) { return arcP(SE, end.e, A.low, seg(tt, TTK.relE, TTK.col)); };
         if (t >= TTK.relP && t < TTK.col) { var q1 = fp(t); fx.discs.push({ x: q1[0], y: q1[1], attr: lab.p, kind: dk.p, fr: spinFr(t, TTK.relP, 60) }); trail(fx, fp, t, TTK.relP); }
         if (t >= TTK.relE && t < TTK.col) { var q2 = fe(t); fx.discs.push({ x: q2[0], y: q2[1], attr: lab.e, kind: dk.e, fr: spinFr(t, TTK.relE, 60) }); trail(fx, fe, t, TTK.relE); }
         // ---- 相撞（520–600 貼在一起）
@@ -346,27 +355,27 @@
           if (mode === 'beat') fx.sparks.push({ x: C[0], y: C[1] - 1, size: 'small' });
           else fx.sparks.push({ x: C[0], y: C[1], size: 'ring', c: '#ffffff' });
         }
-        var shardsOn = function () { if (t >= 900 && t < TTK.clear) { var cx = Lo === 'e' ? G.rug[0] - 14 : G.rug[0] + 14, sh = [[cx - 12, rugY - 2, 3], [cx - 4, rugY + 2, 2], [cx - 9, rugY + 1, 3, lab[Lo]], [cx + 3, rugY - 3, 2], [cx + 9, rugY + 1, 3], [cx - 16, rugY + 2, 2, lab[Lo]]]; fx.shards = sh.filter(function (s2, i) { return t < TTK.next || i % 2 === 0; }); } };
+        var shardsOn = function () { if (t >= 900 && t < TTK.clear) { var cx = Lo === 'e' ? G.rug[0] - Math.round(14 * fk) : G.rug[0] + Math.round(14 * fk), q = function (v) { return Math.round(v * fk); }, sh = [[cx - q(12), rugY - q(2), 3], [cx - q(4), rugY + q(2), 2], [cx - q(9), rugY + q(1), 3, lab[Lo]], [cx + q(3), rugY - q(3), 2], [cx + q(9), rugY + q(1), 3], [cx - q(16), rugY + q(2), 2, lab[Lo]]]; fx.shards = sh.filter(function (s2, i) { return t < TTK.next || i % 2 === 0; }); } };
         if (mode === 'beat' && Wn) {
           // 輸的那張：600 裂三塊往下掉 → 900 地毯上的碎片
           if (t >= TTK.go && t < 900) { var u = (t - TTK.go) / 300; fx.discs.push({ x: end[Lo][0] + (Lo === 'e' ? -1 : 1) * Math.round(u * 8), y: end[Lo][1] + Math.round(u * u * (rugY - end[Lo][1])), attr: lab[Lo], kind: dk[Lo], split: 1 + Math.floor(u * 3) }); }
           shardsOn();
           // 贏的那張：600–760 穿過去打中輸家 → 820–1180 高弧回自己的唱盤
           var Hp = H[Lo], sg = Wn === 'p' ? 1 : -1;
-          if (t >= TTK.go && t < TTK.hit) { var q3 = arcP(end[Wn], Hp, 3, seg(t, TTK.go, TTK.hit)); fx.discs.push({ x: q3[0], y: q3[1], attr: lab[Wn], kind: dk[Wn], fr: spinFr(t, TTK.go, 60) }); }
+          if (t >= TTK.go && t < TTK.hit) { var q3 = arcP(end[Wn], Hp, A.tiny, seg(t, TTK.go, TTK.hit)); fx.discs.push({ x: q3[0], y: q3[1], attr: lab[Wn], kind: dk[Wn], fr: spinFr(t, TTK.go, 60) }); }
           if (t >= TTK.hit && t < TTK.hit + 60) fx.discs.push({ x: Hp[0], y: Hp[1], attr: lab[Wn], kind: dk[Wn], fr: 0 });
           if (t >= TTK.hit && t < TTK.hit + 100) fx.sparks.push({ x: Hp[0] - 6 * sg, y: Hp[1] + 2, size: 'small', c: '#ec4a5a' });
           if (t >= TTK.hit) once('hit', function () { hurt(Lo, 2 * K); });
-          var S2 = [Hp[0] + 4 * sg, Hp[1] - 2], fh = function (tt) { return arcP(S2, home[Wn], 44, seg(tt, TTK.hit + 60, TTK.home)); };
+          var S2 = [Hp[0] + Math.round(4 * fk) * sg, Hp[1] - 2], fh = function (tt) { return arcP(S2, home[Wn], A.high, seg(tt, TTK.hit + 60, TTK.home)); };
           if (t >= TTK.hit + 60 && t < TTK.home) { var q4 = fh(t); fx.discs.push({ x: q4[0], y: q4[1], attr: lab[Wn], kind: dk[Wn], fr: spinFr(t, TTK.hit, 60) }); trail(fx, fh, t, TTK.hit + 60); }
           landAt(fx, t, Wn, TTK.home);
           flagUntil(fx, t, TTK.home, Wn);
         } else if (mode === 'mirror' && Wn) {
           // 撞招：數字大的高弧回自己的唱盤（1000 落）；小的低弧彈回去敲到自己（760）→ 掉在地毯自己那側平躺
-          var Hl = H[Lo], fw = function (tt) { return arcP(end[Wn], home[Wn], 36, seg(tt, TTK.go, 1000)); };
+          var Hl = H[Lo], fw = function (tt) { return arcP(end[Wn], home[Wn], A.mid, seg(tt, TTK.go, 1000)); };
           if (t >= TTK.go && t < 1000) { var q5 = fw(t); fx.discs.push({ x: q5[0], y: q5[1], attr: lab[Wn], kind: dk[Wn], fr: spinFr(t, TTK.go, 60) }); trail(fx, fw, t, TTK.go); }
-          if (t >= TTK.go && t < TTK.hit) { var q6 = arcP(end[Lo], Hl, 15, seg(t, TTK.go, TTK.hit)); fx.discs.push({ x: q6[0], y: q6[1], attr: lab[Lo], kind: dk[Lo], fr: spinFr(t, TTK.go, 60) }); }
-          if (t >= TTK.hit && t < 900) { var q7 = arcP(Hl, drop[Lo], 6, seg(t, TTK.hit, 900)); fx.discs.push({ x: q7[0], y: q7[1], attr: lab[Lo], kind: dk[Lo], fr: 2 }); }
+          if (t >= TTK.go && t < TTK.hit) { var q6 = arcP(end[Lo], Hl, A.bounce, seg(t, TTK.go, TTK.hit)); fx.discs.push({ x: q6[0], y: q6[1], attr: lab[Lo], kind: dk[Lo], fr: spinFr(t, TTK.go, 60) }); }
+          if (t >= TTK.hit && t < 900) { var q7 = arcP(Hl, drop[Lo], A.drop, seg(t, TTK.hit, 900)); fx.discs.push({ x: q7[0], y: q7[1], attr: lab[Lo], kind: dk[Lo], fr: 2 }); }
           if (t >= 900 && t < TTK.clear) fx.discs.push({ x: drop[Lo][0], y: drop[Lo][1], attr: lab[Lo], kind: dk[Lo], flat: true });
           if (t >= TTK.hit && t < TTK.hit + 100) fx.sparks.push({ x: Hl[0], y: Hl[1] - 1, size: 'small', c: '#ec4a5a' });
           if (t >= TTK.hit) once('hit', function () { hurt(Lo, K); });
@@ -375,7 +384,7 @@
         } else {
           // 平手：兩張彈開、平躺在地毯兩邊，誰的唱盤都不轉；老闆聳肩
           if (t >= TTK.go && t < 900) {
-            ['e', 'p'].forEach(function (s) { var q8 = arcP(end[s], drop[s], 15, seg(t, TTK.go, 900)); fx.discs.push({ x: q8[0], y: q8[1], attr: lab[s], kind: dk[s], fr: spinFr(t, TTK.go, 80) }); });
+            ['e', 'p'].forEach(function (s) { var q8 = arcP(end[s], drop[s], A.bounce, seg(t, TTK.go, 900)); fx.discs.push({ x: q8[0], y: q8[1], attr: lab[s], kind: dk[s], fr: spinFr(t, TTK.go, 80) }); });
           }
           if (t >= 900 && t < TTK.clear) ['e', 'p'].forEach(function (s) { fx.discs.push({ x: drop[s][0], y: drop[s][1], attr: lab[s], kind: dk[s], flat: true }); });
           if (t >= TTK.hit) once('hit', function () { ['e', 'p'].forEach(function (s) { if (dmg[s] > 0) hurt(s, K); }); });
@@ -430,15 +439,15 @@
       throwDisc: function (from, to, o) {
         o = o || {};
         var pt = function (v) { if (Array.isArray(v)) return v; if (v === 'e' || v === 'p') return handAt(sid(v), 'throw'); var s = (L.spots || {})[v]; return s ? [s[0], s[1] - 40] : [0, 0]; };
-        var S0 = pt(from), E0 = to === 'e' || to === 'p' ? geo()[to === 'e' ? 'PE' : 'PP'] : pt(to), ms = o.ms || 420, h = o.arc == null ? 10 : o.arc;
+        var S0 = pt(from), E0 = to === 'e' || to === 'p' ? geo()[to === 'e' ? 'PE' : 'PP'] : pt(to), ms = o.ms || 420, h = o.arc == null ? geo().arc.low : o.arc;
         return new Promise(function (res) {
           ttAdd({ fastTo: ms, step: function (t, fx) { var q = arcP(S0, E0, h, seg(t, 0, ms)); fx.discs.push({ x: q[0], y: q[1], attr: o.attr || 'c', kind: o.kind || 'disc', fr: spinFr(t, 0, o.spinMs || 60) }); if (o.trail !== 0) [40, 80].forEach(function (d) { if (t - d > 0) { var r = arcP(S0, E0, h, seg(t - d, 0, ms)); fx.trails.push([r[0], r[1], 'rgba(255,241,194,0.55)']); } }); return t < ms; }, end: res });
         });
       },
       burst: function (x, y, size, color, ms) { ttAdd({ fastTo: ms || 120, step: function (t, fx) { fx.sparks.push({ x: x, y: y, size: size || 'small', c: color }); return t < (ms || 120); } }); return stage; },
       shatter: function (at, attr) {
-        var q0 = Array.isArray(at) ? at : geo().C, rugY = geo().rug[1];
-        ttAdd({ fastTo: 320, step: function (t, fx) { if (t < 300) { var u = t / 300; fx.discs.push({ x: q0[0], y: q0[1] + Math.round(u * u * (rugY - q0[1])), attr: attr, split: 1 + Math.floor(u * 3) }); return true; } fx.shards.push([q0[0] - 6, rugY - 1, 3], [q0[0] + 1, rugY + 2, 2, attr], [q0[0] + 6, rugY, 3]); return t < 2000; } });
+        var G0 = geo(), q0 = Array.isArray(at) ? at : G0.C, rugY = G0.rug[1], f0 = G0.fxK;
+        ttAdd({ fastTo: 320, step: function (t, fx) { if (t < 300) { var u = t / 300; fx.discs.push({ x: q0[0], y: q0[1] + Math.round(u * u * (rugY - q0[1])), attr: attr, split: 1 + Math.floor(u * 3) }); return true; } fx.shards.push([q0[0] - Math.round(6 * f0), rugY - 1, 3], [q0[0] + 1, rugY + 2, 2, attr], [q0[0] + Math.round(6 * f0), rugY, 3]); return t < 2000; } });
         return stage;
       },
       flatDisc: function (at, attr, o) { o = o || {}; ttAdd({ step: function (t, fx) { fx.discs.push({ x: at[0], y: at[1], attr: attr, flat: true, void: !!o.void, kind: o.kind }); return t < (o.ms || 2000); } }); return stage; },
@@ -523,13 +532,20 @@
       duelIn: function (o) {
         o = o || {};
         if (o.foe != null) shop.sprite('f', o.foe);
-        var sp = o.walkSpeed || 96, jobs = [];
+        var sp = o.walkSpeed || 96, jobs = [], ms0 = o.ms == null ? 600 : o.ms;
         [['f', 'duelE'], ['p', 'duelP'], ['o', (L.spots || {}).ref ? 'ref' : 'counter']].forEach(function (x) {
           var id = x[0], to = x[1], at = shop.pos(id), s = (L.spots || {})[to];
           if (!s) return;
           if (!at || at.hidden || !shop.has(id)) { if (id !== 'o' || shop.has('o')) shop.put(id, to); return; }
           if (Math.round(at.x) === s[0] && Math.round(at.y) === s[1]) return;
-          jobs.push(shop.walk(id, at.outside ? ['door', to] : [to], sp));
+          // 繞過家具的路比直線長：走快一點，鏡頭推近收完時三個人都已經站定（盤面一出來就不會還有人在走）
+          var v = sp;
+          if (typeof shop.route === 'function' && !at.outside) {
+            var pts = [[at.x, at.y]].concat(shop.route([at.x, at.y], to)), len = 0;
+            for (var i = 1; i < pts.length; i++) len += Math.hypot(pts[i][0] - pts[i - 1][0], pts[i][1] - pts[i - 1][1]);
+            v = Math.max(sp, len / Math.max(0.25, ms0 * 0.6 / 1000) / (L.walkK || 2) / speed());
+          }
+          jobs.push(shop.walk(id, at.outside ? ['door', to] : [to], v));
         });
         stage.interact('duel');
         jobs.push(camera('strip', { ms: o.ms == null ? 600 : o.ms }));
@@ -579,5 +595,5 @@
     return camera(opts.camera || 'full', { ms: 0, screen: opts.screen }).then(function () { return stage; });
   }
 
-  W.DipLabStage = { mount: mount, loadLayout: loadLayout, fitCamera: fitCamera, pickCamera: pickCamera, ALIAS: ALIAS, PANEL_MIN: PANEL_MIN, INTERACT: INTERACT, version: '3.0' };
+  W.DipLabStage = { mount: mount, loadLayout: loadLayout, fitCamera: fitCamera, pickCamera: pickCamera, ALIAS: ALIAS, PANEL_MIN: PANEL_MIN, INTERACT: INTERACT, version: '3.1' };
 })();
