@@ -176,6 +176,14 @@
   }
   function stgP() { var r = stg.apply(null, arguments); return (r && typeof r.then === 'function') ? r.then(null, function (e) { console.error(e); }) : Promise.resolve(r); }
   // 鏡頭：name＝full|reward|strip；screen＝矮螢幕規則；panelMin＝面板至少要多高（量出來的，B-title-375-clipped）
+  // 面板內容本身要多高（不算被撐開的空白）：暫時讓它長成內容的高度量一次
+  function naturalH(node) {
+    var st = node.style, keep = [st.bottom, st.flex, st.height, st.maxHeight];
+    st.bottom = 'auto'; st.flex = 'none'; st.height = 'auto'; st.maxHeight = 'none';
+    var h = node.offsetHeight;
+    st.bottom = keep[0]; st.flex = keep[1]; st.height = keep[2]; st.maxHeight = keep[3];
+    return h;
+  }
   function cam(name, screen, ms, panelMin) {
     UI.camName = name;
     if (ms == null) ms = UI.camQuick ? 0 : 450;
@@ -635,7 +643,7 @@
     // 選項要的空間：只把舞台往上收到放得下（ART-12：不換 reward 鏡頭、不留一大塊黑）
     function roomFor() {
       if (!UI.stage) return;
-      var need = Math.ceil(dq.scrollHeight + 30);
+      var need = Math.ceil(naturalH(dq) + 30);
       if (UI.panel.clientHeight >= need) return;
       cam('full', 'scene', 260, need);
     }
@@ -954,13 +962,13 @@
   function takeCard(cardId, autoDrop) {
     var r = save.run;
     if (r.bag.length < E.CFG.bagMax) return Promise.resolve(doChoose({ type: 'take', cardId: cardId }));
-    stageSay('o', C.lines.owner && C.lines.owner.bagFull, 'owner');
+    // 老闆那句就是面板標題；不再另外在舞台上冒同一句（泡泡貼在舞台右緣會被切掉）
     return dropPanel(cardId, autoDrop).then(function (dropId) { return dropId ? doChoose({ type: 'take', cardId: cardId, dropId: dropId }) : null; });
   }
   function takeRelic(relicId, autoDrop) {
     var r = save.run;
     if (r.relics.length < E.CFG.relicMax) return Promise.resolve(doChoose({ type: 'relic', relicId: relicId }));
-    stageSay('o', C.lines.owner && C.lines.owner.relicFull, 'owner');
+    // 老闆那句就是面板標題；不再另外在舞台上冒同一句（泡泡貼在舞台右緣會被切掉）
     return relicPanel(r.relics, { prompt: (C.lines.owner && C.lines.owner.relicFull) || '配件最多帶三件。先放一件回去。', cancel: '算了，不換了', autoId: autoDrop })
       .then(function (dropId) { return dropId ? doChoose({ type: 'relic', relicId: relicId, dropRelicId: dropId }) : null; });
   }
@@ -995,8 +1003,8 @@
       (UI.discardedOld ? '<p class="lb-foot sm">規則改版了，舊的存檔已經清掉。</p>' : '');
     var box = el('div', 'lb-screen', h); panel.appendChild(box);
     // 面板量出來要多高，舞台就收到放得下（B-title-375-clipped：警告那行永遠在畫面裡）
-    var need = Math.max(130, Math.ceil(box.scrollHeight + 8));
-    cam('full', 'title', UI.firstScreen ? 0 : 450, need);
+    var need = Math.max(130, Math.ceil(naturalH(box) + 8));
+    cam('full', 'title', (UI.firstScreen || UI.camQuick) ? 0 : 450, need);
     stg('interact', 'title');
     place('o', 'counter', 'owner'); stg('pose', 'o', 'busy');
     hideActor('f'); hideActor('q1'); hideActor('q2');
@@ -1351,6 +1359,7 @@
   // ---- 序章收尾：他掉出來的那張 → 發燒配件三選一（店主認可的那一段）→ 今晚來客
   function epilogueFlow(resumed) {
     var r = save.run;
+    save.prologueDone = true; persist();             // 序章打贏了：之後放棄今晚也不會再從序章開始
     afterDuelScene('man', { fSpr: 'e0' }, function (sc) {
       var pend0 = r.pending;
       var ctx = { flags: {}, stakeId: pend0 && pend0.cards && pend0.cards[0] };
@@ -1467,7 +1476,9 @@
     var s = sheet(html, 'reward');
     // 面板量出來要多高，舞台就收到放得下（最多讓到可視高的 72%）：收這張的鈕不被底下那條蓋住
     var vh = W.visualViewport ? Math.min(W.innerHeight, W.visualViewport.height) : W.innerHeight;
-    cam('reward', 'reward', 600, Math.min(Math.round(vh * 0.72), Math.max(260, Math.ceil(s.scrollHeight + 4))));
+    var needR = Math.min(Math.round(vh * 0.72), Math.max(260, Math.ceil(naturalH(s) + 4)));
+    if (vh - 32 - needR < 210) cam('strip', 'reward', 600);       // 放不下整間店：收成對決那條（你和他都還在畫面裡），不要把店縮成一小塊
+    else cam('reward', 'reward', 600, needR);
     var busy = false;
     var finish = function (res) {
       if (res && res.effects) toast(effectsText(res.effects));
@@ -1515,14 +1526,14 @@
         '<span class="nm">' + esc(en.boss ? '打烊前' : en.elite ? '菁英' : en.name) + '</span></button>';
     }).join('');
     var nen = C.enemies[nx] || {};
-    var h = '<div class="lb-night"><div class="nh"><b>' + esc(C.night.label || '今晚來客') + '</b><span class="sub">贏了 ' + r.stats.wins + ' 位' + (r.retryLeft > 0 ? '・老闆說情 剩 ' + r.retryLeft + ' 次' : '') + '</span></div>' +
+    var h = '<div class="lb-night"><div class="nh"><b>' + esc(C.night.label || '今晚來客') + '</b><span class="sub">' + [r.idx > 0 ? '贏了 ' + r.idx + ' 位' : '', r.retryLeft > 0 ? '老闆說情 剩 ' + r.retryLeft + ' 次' : ''].filter(Boolean).join('・') + '</span></div>' +
       '<div class="nrow" data-tut="night">' + row + '</div>' +
       '<button type="button" class="lb-btn pri big wide key" data-a="go" data-tut="night-next">下一位：' + esc(r.times[r.idx] || '') + '　' + esc(nen.name || '') + ' ▸</button></div>' +
       '<div class="lb-bagline"><button type="button" class="bag" data-a="bag">包包 <b>' + r.bag.length + '/' + E.CFG.bagMax + '</b></button>' +
       '<button type="button" class="rl" data-a="relics"><span class="k">發燒配件</span>' + (r.relics.length ? r.relics.map(function (id) { return '<span class="ri">' + relicIcon(id, 16) + '</span>'; }).join('') + (r.relics.length === 1 ? '<span>' + esc(relicOf(r.relics[0]).name) + '</span>' : '') : '<span>（還沒有）</span>') + '</button></div>';
     var box = el('div', 'lb-screen', h); panel.appendChild(box);
     guardClicks(box);
-    cam('full', 'map', 600, Math.max(170, Math.ceil(box.scrollHeight + 6)));
+    cam('full', 'map', 600, Math.max(170, Math.ceil(naturalH(box) + 6)));
     box.addEventListener('click', function (e) {
       var b = e.target.closest && e.target.closest('[data-a],[data-i]'); if (!b || UI.going) return;
       if (b.hasAttribute('data-i')) { sfx('tick'); guestSheet(+b.getAttribute('data-i')); return; }
@@ -1620,12 +1631,20 @@
       stg('play', true);
     });
   }
+  // 牆上手繪的封面（不在卡池裡）：卡池有同一張就開那張；沒有就開一張只有名字的唱片資訊（不給星）
+  function paintedCard(id, label) {
+    var m = /^(.*?)《(.*)》\s*$/.exec(String(label || '')), artist = m ? m[1].trim() : String(label || '').trim(), album = m ? m[2].trim() : '';
+    var lo = function (x) { return String(x || '').toLowerCase().replace(/[^a-z0-9\u3040-\u9fff]/g, ''); };
+    if (album) for (var k in C.cards) { var c = C.cards[k]; if (lo(c.album) === lo(album) && (!artist || lo(c.artist).indexOf(lo(artist)) >= 0 || lo(artist).indexOf(lo(c.artist)) >= 0)) return c; }
+    return { id: 'painted:' + id, artist: artist, album: album || artist, painted: true, c: 0, o: 0, h: 0 };
+  }
   function onStageAction(action, hot) {
     if (!action) return;
     var ci = CI(); if (ci && ci.isOpen()) return;
     if (UI.modal || UI.page || UI.going) return;
     var scr = UI.screen, m;
     if ((m = /^wall-record:(.+)$/.exec(action))) { info(m[1], { from: 'stage' }); return; }
+    if ((m = /^wall-painted:(.+)$/.exec(action))) { info(paintedCard(m[1], hot && hot.label), { from: 'stage' }); return; }
     if (action === 'now') { var f = FX(), c = f && f.music && f.music.current && f.music.current(); if (c) info(c, { from: 'stage' }); return; }
     if (action === 'talk:owner' || action === 'counter' || action === 'owner') { stageSay('o', line('ownerHint', scr === 'scene' ? 'scene' : scr) || line('ownerHint', 'night'), 'owner', 2600); return; }
     if (action === 'cat') { var ct = line('cat'); if (ct) stageSay('o', ct, 'owner', 1600); return; }

@@ -376,7 +376,7 @@
       const bars = Array.from({ length: max }, (_, k) => `<i${k < n ? '' : ' class="x"'}></i>`).join('');
       const pile = `<div class="pile" data-tut="e-pile"><span class="bars">${bars}</span><small>${esc(T('pileLeft', { n }))}</small></div>`;
       if (S.recNext || !v.eCard) {
-        els.rec.innerHTML = `<span class="cv nextph" aria-hidden="true">…</span><div class="tx"><div class="l1"><small>${S.recNext ? esc(T('next')) : ''}</small></div>
+        els.rec.innerHTML = `<span class="cv nextph" aria-hidden="true">…</span><div class="tx"><div class="l1"><small>${S.recNext && !v.over ? esc(T('next')) : ''}</small></div>
           <div class="estars" data-tut="e-stars">${ATTRS.map(a => `<div class="es q" data-tut="e-star-${a}"><span class="k"><i>${ZH1[a]}</i>?</span><span class="ans"></span></div>`).join('')}</div></div>${pile}`;
         return;
       }
@@ -683,6 +683,16 @@
       if (cl.toP > 0) { stg('pose', 'p', 'hurt', 200); stg('float', 'p', '−' + cl.toP, 'r'); }
     }
 
+    // 他丟的那色跟名牌算出來的那色，在玩家眼裡一樣（最大的星並列，例：經 3／冷 3）：不跳「他這手沒照脾氣」，免得教錯
+    function tiedWithTag(v0, cl) {
+      const c = cl && cl.eCard; if (!c || !v0) return false;
+      const st = a => +(c[a] || 0), mx = Math.max(st('c'), st('o'), st('h'));
+      const tops = ATTRS.filter(a => st(a) === mx); if (tops.length < 2) return false;
+      const BE = (E && E.BEATS) || { o: 'c', c: 'h', h: 'o' };
+      if (v0.habit === 'bluff') return tops.some(a => BE[a] === cl.eAttr);
+      if (v0.habit === 'honest' || v0.first) return tops.indexOf(cl.eAttr) >= 0;
+      return false;
+    }
     async function play(act, sel) {
       if (!canAct() || !legal(sel)) return false;
       S.busy = true; S.rush = false; S.playAt = performance.now();
@@ -746,7 +756,7 @@
       if (ct.notes.length) (cl.notes || []).forEach(n => { const b = n && n.relic && els.relics.querySelector(`[data-relic="${CSS.escape(n.relic)}"]`); if (b && !rm()) A(b, [{ transform: 'scale(1)', boxShadow: '0 0 0 0 rgba(184,134,11,0)' }, { transform: 'scale(1.25)', boxShadow: '0 0 0 3px rgba(184,134,11,.6)', offset: .4 }, { transform: 'scale(1)', boxShadow: '0 0 0 0 rgba(184,134,11,0)' }], { duration: 700 }); });
       // 一次性小提示（外殼／教學決定是不是這輩子第一次）
       if (cl.kind === 'mirrorWin' || cl.kind === 'mirrorLose' || cl.kind === 'tie') hint('tip_mirror', ['result']);
-      if (cl.followed === false) hint('tip_offhabit', ['e-habit']);
+      if (cl.followed === false && !tiedWithTag(v0, cl)) hint('tip_offhabit', ['e-habit']);
       if (cl.read) hint('tip_read', ['result']);
       rec.ui = snapUI();
       if (tut && typeof tut.onResolved === 'function') try { tut.onResolved(evs); } catch (e) { console.error(e); }

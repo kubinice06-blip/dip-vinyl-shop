@@ -122,6 +122,8 @@
 .dl .chips{display:flex;margin-top:-1px}
 .dl .chip{flex:1 1 0;min-width:0;height:calc(var(--pill) + 12px);padding:6px 1px;position:relative;font:700 13px var(--dl-mono);text-align:center;white-space:nowrap;-webkit-touch-callout:none}
 .dl .chip{line-height:var(--pill);display:flex;align-items:center;justify-content:center;isolation:isolate}
+/* 點擊範圍：::before 往下、往兩側各撐一點，矮螢幕（--pill 30）也有 ≥28×44（SPEC-v3 §4）；不往上蓋到封面 */
+.dl .chip::before{content:'';position:absolute;left:-1px;right:-1px;top:0;bottom:-2px}
 .dl .chip::after{content:'';position:absolute;left:1px;right:1px;top:6px;bottom:6px;border:1px solid #cfcfcf;background:#fff;z-index:-1;pointer-events:none}
 .dl .chip i{font:700 11px var(--dl-zh);font-style:normal;margin-right:1px}
 .dl .chip b{font-weight:700}

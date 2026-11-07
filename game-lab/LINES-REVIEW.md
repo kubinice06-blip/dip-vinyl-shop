@@ -327,7 +327,7 @@
 | （畫面字） | 學會了：冷門剋經典 | 本規格新寫 | `tutorial.learned.L1` |
 | （畫面字） | 學會了：經典剋硬蕊 | 本規格新寫 | `tutorial.learned.L2` |
 | （畫面字） | 學會了：硬蕊剋冷門 | 本規格新寫 | `tutorial.learned.L3` |
-| （畫面字） | 學會了：王牌：7 星，每場一次 | 本規格新寫 | `tutorial.learned.L4` |
+| （畫面字） | 學會了：王牌 7 星，每場一次 | 本規格新寫 | `tutorial.learned.L4` |
 
 ## 店裡熱點（點了說一句）
 

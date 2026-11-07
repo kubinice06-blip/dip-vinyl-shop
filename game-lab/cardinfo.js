@@ -1,4 +1,4 @@
-/* game-lab/cardinfo.js — 唱片資訊（店主 roguelike 版 openCardInfo 移植；SPEC-v2 §4）。Agent U。
+/* game-lab/cardinfo.js：唱片資訊（店主 roguelike 版 openCardInfo 移植；SPEC-v2 §4）。Agent U。
  *
  * window.DipLabCardInfo = {
  *   open(card | cardId, { attr, from }) → Promise<void>   // 關掉時 resolve（duel.js 用它暫停結算、教學用它等「關閉」）
@@ -39,7 +39,7 @@
   function toOrigCard(c) {
     return { id: c.id, artist: c.artist || '', album: c.album || '', year: c.year || '', coverUrl: c.localCover || c.coverUrl || '',
       classic: c.c | 0, obscurity: c.o | 0, accessibility: c.h | 0, ace: c.tier || null, gold: !!c.gold, previewUrl: c.previewUrl || '', previewResolved: true,
-      junk: !!c.junk, pitch: c.pitch || '', _attr: c._attr || null, washed: !!c.washed, worn: !!c.worn,
+      junk: !!c.junk, pitch: c.pitch || '', _attr: c._attr || null, painted: !!c.painted,
       appleUrl: c.appleUrl || '', spotifyUrl: c.spotifyUrl || '', bandcampUrl: c.bandcampUrl || '' };
   }
   // 原版 starsHTML：平常 5 格；王牌那軸 7 格。這一手出的那軸（act）標籤金色粗體
@@ -151,7 +151,7 @@
     var o = toOrigCard(card);
     var act = opts.attr || o._attr || null;
     var aceTag = o.ace ? '<span class="acebadge ' + o.ace + '">' + ACE_ZH[o.ace] + '</span>' : (o.gold ? '<span class="acebadge gold">私藏</span>' : '');
-    var mods = o.washed ? '<span class="mod">洗過</span>' : (o.worn ? '<span class="mod">九成新</span>' : '');
+    var mods = o.painted ? '<span class="mod">店裡的手繪封面</span>' : '';
     var cover = o.coverUrl
       ? '<img class="cov" src="' + esc(o.coverUrl) + '" alt="' + esc(o.artist + '《' + o.album + '》') + '" draggable="false">'
       : '<div class="cov noimg"><span>' + esc(o.album) + '</span></div>';
@@ -165,7 +165,7 @@
       '<div class="al">' + esc(o.album) + '</div>' +
       '<div class="yr">' + esc(o.year) + mods + '</div>' +
       (aceTag ? '<div class="acerow">' + aceTag + '</div>' : '') +
-      '<div class="stats">' + starsHTML(o, act) + '</div>' +
+      (o.painted ? '' : '<div class="stats">' + starsHTML(o, act) + '</div>') +
       (o.previewUrl ? '<button class="lb-mini-player muted" type="button" aria-pressed="false" aria-label="播放試聽"><span class="note n1">♪</span><span class="note n2">♫</span><span class="note n3">♪</span></button>' : '<div class="lb-mini-none">（這張沒有試聽）</div>') +
       (o.pitch ? '<div class="pitch">' + esc(o.pitch) + '</div>' : '') +
       '<div class="intro wait">介紹載入中…</div>' +

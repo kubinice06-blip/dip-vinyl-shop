@@ -474,7 +474,7 @@
       { id: 't9', kind: 'do', target: ['hand'], point: false, allow: { chip: { i: 'any', attr: 'h' }, throw: true }, tri: ['ho'], text: '冷門最大。剋冷門的是哪個？', learn: 'L3', bubble: 'above', tag: '新' },
       { id: 't10', kind: 'soft', target: ['hand-ace'], text: '王牌 7 星，每場一次。接下來自己來。', learn: 'L4', tag: '新' }
     ],
-    learned: { L1: '冷門剋經典', L2: '經典剋硬蕊', L3: '硬蕊剋冷門', L4: '王牌：7 星，每場一次' },
+    learned: { L1: '冷門剋經典', L2: '經典剋硬蕊', L3: '硬蕊剋冷門', L4: '王牌 7 星，每場一次' },
     ui: {
       who: '老闆', learnedPrefix: '學會了：', wrong: '先點我指的這裡。',
       skipTut: '跳過教學', replay: '重看教學', start: '▶ 品味對決', skip: '▶ 直接開打（我會玩）', learnedTitle: '學會的規則'

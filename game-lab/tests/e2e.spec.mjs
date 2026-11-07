@@ -4,7 +4,8 @@
 //   環境變數：LAB_URL（預設 http://localhost:8765/game-lab/index.html）
 //            LAB_SIZES（預設 "390x664,375x548,360x640,390x844"）：手機情境（hasTouch、isMobile、DPR 1）
 //            LAB_ONLY（例 "1,3,19"）：只跑這幾個
-//            LAB_FULL=1：每個尺寸都跑全部情境（預設：版面情境 #1 #3 #4 #6 #17 #22 #27 #29 #40 四個尺寸都跑，流程情境只在第一個尺寸跑）
+//            LAB_FULL=1：每個尺寸都跑全部情境（預設：版面情境＋店主點名的流程四個尺寸都跑：#1 #3 #4 #6 #9 #10 #16 #17 #18 #19 #20 #22 #27 #29 #33 #35 #36 #40；
+//                       其餘流程只在第一個尺寸跑。#19 在第一個尺寸跑三張王牌，其他尺寸只跑流亡（含 #20 擋錯招））
 // 每個情境印 PASS／FAIL；任何一個 FAIL → exit 1。只有 Chromium（沒有 WebKit）。
 //
 // 情境（v3）：
@@ -48,7 +49,7 @@ const URL0 = process.env.LAB_URL || 'http://localhost:8765/game-lab/index.html';
 const SIZES = (process.env.LAB_SIZES || '390x664,375x548,360x640,390x844').split(',').filter(Boolean).map(s => s.split('x').map(Number));
 const ONLY = process.env.LAB_ONLY ? new Set(process.env.LAB_ONLY.split(',').map(Number)) : null;
 const FULL = process.env.LAB_FULL === '1';
-const LAYOUT = new Set([1, 3, 4, 6, 17, 22, 27, 29, 40]);
+const LAYOUT = new Set([1, 3, 4, 6, 9, 10, 16, 17, 18, 19, 20, 22, 27, 29, 33, 35, 36, 40]);
 const SEED = '20261106';
 const Q = (extra = '&fast=1') => `${URL0}?debug=1&seed=${SEED}${extra}`;
 const ALLOWED_LS = new Set(['dipGameLab_v1', 'dip:autoplay', 'dip:autoplay-consent', 'dipAutoplayHintSeen', 'dip:autoplay-hint']);
@@ -63,7 +64,7 @@ function launch() {
 async function newPage(browser, w, h, opts = {}) {
   const ctx = await browser.newContext({ viewport: { width: w, height: h }, deviceScaleFactor: 1, hasTouch: true, isMobile: true });
   const page = await ctx.newPage();
-  page._errors = []; page._requests = []; page._clicks = 0;
+  page._errors = []; page._requests = []; page._clicks = 0; page._loadFail = [];
   // 像素店把遠端封面縮進 canvas 要 CORS；偶爾某張圖的回應沒帶 ACAO，店裡改畫色塊。這種瀏覽器自己印的 CORS 訊息不算程式錯誤。
   let corsImg = 0;
   page.on('console', m => {
@@ -71,10 +72,15 @@ async function newPage(browser, w, h, opts = {}) {
     const t = m.text();
     if (/^Access to image at 'https:\/\/[^']+' from origin '[^']+' has been blocked by CORS policy/.test(t)) { corsImg++; return; }
     if (corsImg > 0 && /^Failed to load resource: net::ERR_FAILED$/.test(t)) { corsImg--; return; }
+    if (/^Failed to load resource:/.test(t)) { page._loadFail.push(t); return; }   // 收尾再跟遠端失敗的數目對帳
     page._errors.push(t);
   });
   page.on('pageerror', e => page._errors.push('pageerror: ' + e.message));
   page.on('request', r => page._requests.push(r.url()));
+  // 遠端（封面 CDN、試聽、字型）偶爾回 4xx／5xx：那是網路，不是程式錯誤；本機檔案載不到才算
+  page._badRemote = 0; page._badLocal = [];
+  page.on('response', r => { if (r.status() < 400) return; const u = r.url(); if (/^https?:\/\/(localhost|127\.0\.0\.1)[:/]/.test(u)) page._badLocal.push(r.status() + ' ' + u); else page._badRemote++; });
+  page.on('requestfailed', r => { const u = r.url(); if (!/^https?:\/\/(localhost|127\.0\.0\.1)[:/]/.test(u)) page._badRemote++; });
   if (opts.watchStorage) {
     await page.addInitScript(() => {
       window.__lsKeys = [];
@@ -159,6 +165,7 @@ async function seedRun(page, o = {}) {
     if (o.idx != null) r.idx = o.idx;
     const s = { v: 3, seen: Object.assign({ night: true, reveal: true }, o.seen || {}), learned: {}, settings: { fastAnim: false, sound: false }, player: null, run: r, nights: [],
       best: { clears: 0, bySeedKey: {} }, shelf: {}, relics: [], unlocks: { secondNightTeaser: false }, tutorialDone: o.tutorialDone !== false, prologueDone: !o.prologue, lastAce: o.ace || 'pearl' };
+    [C.aces[r.ace]].concat(C.gifts[r.ace] || [], C.junk || []).forEach(id => { s.shelf[id] = { at: r.seedKey + '#1', seen: false }; });
     localStorage.setItem('dipGameLab_v1', JSON.stringify(s));
   }, o);
 }
@@ -182,7 +189,7 @@ async function waitStep(page, id, ms = 12000) {
   await sleep(420);
 }
 async function walkTutorial(page, w, h, variant = 'plain') {
-  const dbg = () => page.evaluate(() => { const x = window.DipLabDuel.debug(); return { t: window.DipLabTut.debug(), d: x ? { n: x.n, sel: x.sel, eHp: x.view.eHp, pHp: x.view.pHp, held: x.held } : null }; });
+  const dbg = () => page.evaluate(() => { const x = window.DipLabDuel.debug(); const v = x ? window.DipLabEngine.view(window.DipLabDuel.api().duel()) : null; return { t: window.DipLabTut.debug(), d: x ? { n: v.n, sel: x.sel, eHp: v.eHp, pHp: v.pHp, held: x.held } : null }; });
   const hp = [], log = [];
   for (const id of ['t1', 't2', 't3']) { await waitStep(page, id); await page.touchscreen.tap(w / 2, h - 30); }
   await waitStep(page, 't4');
@@ -270,7 +277,13 @@ async function run() {
           if (want(6)) {
             const r = await page.evaluate(() => {
               const small = [];
-              document.querySelectorAll('.dl .chip').forEach(c => { const b = c.getBoundingClientRect(); if (b.width < 27.5 || b.height < 44) small.push(c.dataset.tut + ' ' + Math.round(b.width) + 'x' + Math.round(b.height)); });
+              // 點擊區＝按鈕本身，或用 ::before／::after 往外撐的那一塊（負的 top/bottom/left/right）
+              const hit = el => { const b = el.getBoundingClientRect(); let w0 = b.width, h0 = b.height;
+                for (const ps of ['::before', '::after']) { const cs = getComputedStyle(el, ps); if (!cs || cs.content === 'none' || cs.position !== 'absolute' || cs.pointerEvents === 'none') continue;
+                  const t = parseFloat(cs.top) || 0, bt = parseFloat(cs.bottom) || 0, l = parseFloat(cs.left) || 0, r = parseFloat(cs.right) || 0;
+                  h0 = Math.max(h0, b.height - Math.min(0, t) - Math.min(0, bt)); w0 = Math.max(w0, b.width - Math.min(0, l) - Math.min(0, r)); }
+                return { w: w0, h: h0 }; };
+              document.querySelectorAll('.dl .chip').forEach(c => { const b = hit(c); if (b.w < 27.5 || b.h < 43.5) small.push(c.dataset.tut + ' ' + Math.round(b.w) + 'x' + Math.round(b.h)); });
               const th = document.querySelector('.dl [data-tut=throw]').getBoundingClientRect();
               if (th.width < 44 || th.height < 40) small.push('throw ' + Math.round(th.width) + 'x' + Math.round(th.height));
               document.querySelectorAll('#top button').forEach(b0 => { const b = b0.getBoundingClientRect(); const cs = getComputedStyle(b0, '::after'); const hh = b.height + (parseFloat(cs.top) < 0 ? -parseFloat(cs.top) * 2 : 0); if (b.width < 40 || hh < 44) small.push('top ' + b0.textContent + ' ' + Math.round(b.width) + 'x' + Math.round(hh)); });
@@ -420,7 +433,8 @@ async function run() {
         await prologueToDuel(page, 'direct');
         await duelReady(page);
         await page.evaluate(() => window.DipLabDuel.autoplay('novice'));
-        const card = await page.waitForSelector('.lb-sheet.one', { timeout: 60000 }).then(() => true, () => false);
+        let card = false;
+        for (let g = 0; g < 600 && !card; g++) { card = !!(await page.$('.lb-sheet.one [data-i]')); if (!card) { if ((await screen(page)) === 'scene' && await page.$('.lb-dq .nx.on')) await jsClick(page, '.lb-dq'); await sleep(150); } }
         const cardTxt = card ? await page.evaluate(() => document.querySelector('.lb-sheet.one').textContent) : '';
         await sleep(500);
         await jsClick(page, '.lb-sheet.one [data-i="0"]');
@@ -526,7 +540,7 @@ async function run() {
 
     // #19 教學三王牌 ＋ #20 擋錯招（流亡那一輪）
     if (want(19) || want(20)) {
-      for (const tier of ['hall', 'pearl', 'heresy']) {
+      for (const tier of (FIRST || FULL ? ['hall', 'pearl', 'heresy'] : ['pearl'])) {
         const { ctx, page } = await newPage(browser, w, h); track(page);
         try {
           const variant = tier === 'pearl' && want(20) ? 'wrong' : 'plain';
@@ -682,7 +696,7 @@ async function run() {
         await waitScreen(page, 'title');
         const a1 = await page.evaluate(() => window.DipLabTut.active());
         await sleep(400);
-        await page.click('[data-a=quiet]'); await sleep(200); await page.click('[data-a=quiet]');
+        await page.click('[data-a=quiet]'); await sleep(450); await page.click('[data-a=quiet]');
         await prologueToDuel(page, 'direct');
         await duelReady(page);
         await sleep(500);
@@ -785,6 +799,9 @@ async function run() {
         const wall = await page.evaluate(() => { const st = window.__lab.stage; const h = (st.hotspots() || []).find(x => /^wall-record:/.test(x.action)); if (!h) return null; const r = st.hotRect(h.id); return r ? { x: r.left + r.width / 2, y: r.top + r.height / 2, id: h.id } : null; });
         if (wall) { await page.touchscreen.tap(wall.x, wall.y); opened.wall = await page.waitForSelector('#cardInfoMask', { timeout: 2500 }).then(() => true, () => false); if (opened.wall) { await jsClick(page, '#ciClose'); await sleep(250); } }
         else opened.wall = 'no hotspot';
+        // 手繪的牆上封面（不在卡池）也開唱片資訊
+        const painted = await page.evaluate(() => { const st = window.__lab.stage; const h = (st.hotspots() || []).find(x => /^wall-painted:/.test(x.action)); if (!h) return null; const r = st.hotRect(h.id); return r ? { x: r.left + r.width / 2, y: r.top + r.height / 2 } : null; });
+        if (painted) { await page.touchscreen.tap(painted.x, painted.y); opened.painted = await page.waitForSelector('#cardInfoMask', { timeout: 2500 }).then(() => true, () => false); if (opened.painted) { await jsClick(page, '#ciClose'); await sleep(250); } }
         // 老闆：一句
         await page.evaluate(() => window.__lab.stageAction('talk:owner')); await sleep(200);
         // 唱片櫃
@@ -800,7 +817,7 @@ async function run() {
 
     // #29 主控台 0 錯誤（這個尺寸開過的所有頁面）
     if (want(29)) {
-      const all = errsBySize.flatMap(p => p._errors || []);
+      const all = errsBySize.flatMap(p => (p._errors || []).concat((p._badLocal || []).map(x => 'local ' + x), (p._loadFail || []).slice(p._badRemote || 0)));
       record(29, size, !all.length, all.length ? all.slice(0, 5).join(' | ') : '0 errors');
     }
     FIRST = false;

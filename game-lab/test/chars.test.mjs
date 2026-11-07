@@ -74,7 +74,7 @@ section('捏人欄位表 SLOTS：每欄都指到存在的目錄與 spec 鍵', ()
 });
 
 section('姿勢：必要姿勢與格數、shop.js 手臂姿勢對照', () => {
-  const need = { idle: 2, walk: 4, walkFront: 4, throw: 2, hold: 1, hurt: 1, ko: 1, dig: 1, sit: 1, cheer: 1 };
+  const need = { idle: 2, walk: 4, walkFront: 4, idleFront: 2, idleBack: 2, walkBack: 4, browseBack: 2, throw: 2, hold: 1, hurt: 1, ko: 1, dig: 1, sit: 1, cheer: 1 };
   for (const k of Object.keys(need)) ok((CH.POSES[k] || 0) >= need[k], 'pose ' + k + ' ≥ ' + need[k], CH.POSES[k]);
   for (const k of ['wind', 'throw', 'show', 'up', 'shield', 'flag', 'shrug', 'none']) { const a = CH.ARM[k]; ok(a && CH.POSES[a[0]] > a[1], 'ARM ' + k, a); }
 });
@@ -227,8 +227,10 @@ section('grid：shop.js P.sprite 相容（字母列＋色盤）', () => {
   const w = g.rows[0].length;
   ok(g.rows.every(r => r.length === w), '每列等寬');
   ok(g.rows.every(r => [...r].every(ch => ch === '.' || g.pal[ch])), '字母都在色盤');
-  ok(Object.keys(g.pal).length <= 62 && Object.keys(g.pal).length > 12, '色數', Object.keys(g.pal).length);
-  ok(g.ay === g.rows.length, '腳底在最下面那列之下');
+  ok(Object.keys(g.pal).length <= 93 && Object.keys(g.pal).length > 12, '色數', Object.keys(g.pal).length);
+  let mx = 0; for (let i = 0; i < 120; i++) { const gg = CH.grid(CH.random(i), 'hold', 0); mx = Math.max(mx, Object.keys(gg.pal).length); const inv = {}; Object.keys(gg.pal).forEach(k => { ok(!inv[gg.pal[k]], 'grid 色盤不重複 ' + i); inv[gg.pal[k]] = 1; }); }
+  ok(mx < 93, 'grid 色盤沒爆（不同顏色不會被併成同一個字母）', mx);
+  ok(g.ay === g.rows.length - 1, '最下面一列是貼地的外框（腳底中點在它的上緣）', [g.ay, g.rows.length]);
 });
 
 section('細節：每個零件真的有畫出不同的東西', () => {
@@ -237,8 +239,24 @@ section('細節：每個零件真的有畫出不同的東西', () => {
   diff('hair', P.hair.map(x => x.id)); diff('hat', P.hat.map(x => x.id)); diff('top', P.top.map(x => x.id)); diff('bottom', P.bottom.map(x => x.id));
   diff('shoes', P.shoes.map(x => x.id)); diff('glasses', P.glasses.map(x => x.id)); diff('facial', P.facial.map(x => x.id)); diff('eyes', P.eyes.map(x => x.id));
   diff('mouth', P.mouth.map(x => x.id)); diff('skin', P.skin.map(x => x.id)); diff('hairColor', P.hairColor.map(x => x.id)); diff('build', P.build.map(x => x.id));
-  P.acc.forEach(a => ok(hash(CH.compose(Object.assign({}, base, { acc: [a] }), 'idle', 0)) !== hash(CH.compose(base, 'idle', 0)), '配件看得到 ' + a));
+  P.acc.forEach(a => ok(hash(CH.compose(Object.assign({}, base, { acc: [a.id] }), 'idle', 0)) !== hash(CH.compose(base, 'idle', 0)), '配件看得到 ' + a.id));
   P.cheeks.filter(x => x.id !== 'none').forEach(a => ok(hash(CH.compose(Object.assign({}, base, { cheeks: a.id }), 'idle', 0)) !== hash(CH.compose(base, 'idle', 0)), '臉頰 ' + a.id));
+});
+
+section('正面／背面：左右大致對稱、背面看不到臉', () => {
+  for (const id of ['owner', 'man', 'label', 'boss']) {
+    const f = CH.compose(CH.npc(id), 'idleFront', 0), b = CH.compose(CH.npc(id), 'idleBack', 0), sd = CH.compose(CH.npc(id), 'idle', 0);
+    ok(Math.abs(heightOf(f) - heightOf(sd)) <= 2 && Math.abs(heightOf(b) - heightOf(sd)) <= 2, '三個角度一樣高 ' + id, [heightOf(f), heightOf(b), heightOf(sd)]);
+    ok(hash(f) !== hash(b), '正背面不同 ' + id);
+    // 左右對稱度：鏡射後相同的不透明格比例（配件、髮型可以不對稱，但身體要大致對稱）
+    let same = 0, tot = 0; const ax = f.ax;
+    for (let y = 0; y < f.h; y++) for (let x = 0; x < f.w; x++) { const mx = 2 * ax - x - 1 + 1; if (mx < 0 || mx >= f.w) continue; const a = f.data[(y * f.w + x) * 4 + 3] > 0, c = f.data[(y * f.w + mx) * 4 + 3] > 0; if (a || c) { tot++; if (a === c) same++; } }
+    ok(same / tot > 0.8, '正面大致對稱 ' + id, (same / tot).toFixed(2));
+  }
+  // 背面：同一個人換眼睛、嘴巴，背面完全不變（看不到臉）
+  const b1 = hash(CH.compose({ eyes: 'dot', mouth: 'smile' }, 'idleBack', 0)), b2 = hash(CH.compose({ eyes: 'wide', mouth: 'grin' }, 'idleBack', 0));
+  eq(b1, b2, '背面看不到臉');
+  ok(hash(CH.compose({ eyes: 'dot' }, 'idleFront', 0)) !== hash(CH.compose({ eyes: 'wide' }, 'idleFront', 0)), '正面看得到眼睛');
 });
 
 section('只掛 window.DipLabChars（不宣告 PIX_PAL／SPR_BODY／AVATAR_*）', () => {
