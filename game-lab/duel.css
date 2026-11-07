@@ -49,8 +49,9 @@
 .dl .shout{font-size:10px;font-weight:700;border:1px solid var(--ink,#111);padding:0 4px;line-height:14px;white-space:nowrap}
 .dl .will{position:relative;display:flex;align-items:center;gap:7px;line-height:16px;min-height:16px;font-size:12px;font-weight:700;white-space:nowrap;min-width:0;max-width:100%}
 .dl .will .lb{font-size:10px;color:var(--gray,#888);font-weight:400}
-.dl .bar6{display:flex;gap:2px;flex:none}
+.dl .bar6{display:flex;flex:none}
 .dl .bar6 i{display:block;width:9px;height:10px;transform-origin:50% 100%}
+.dl .bar6 i+i{margin-left:2px}   /* B-inset-ios14：iOS 14.0–14.4 沒有 flex gap，間距用 margin */
 .dl .bar6 i.c{background:var(--c,#1f5fae)}.dl .bar6 i.o{background:var(--o,#6a3fa0)}.dl .bar6 i.h{background:var(--h,#c11628)}.dl .bar6 i.q{background:#bbb}
 .dl .bar6 i.hit{outline:2px solid var(--ink,#111);outline-offset:1px}
 .dl .will .pc{font-family:var(--dl-mono);overflow:hidden;text-overflow:ellipsis}
@@ -123,10 +124,11 @@
 .dl .dl-p{flex:none;border-top:1px solid var(--ink,#111);padding:6px 12px 0}
 .dl .qirow{display:flex;align-items:center;gap:7px;height:26px;margin-top:3px;min-width:0}
 .dl .qirow .lb{font-size:10px;font-weight:700;color:var(--gold,#b8860b);letter-spacing:.08em;flex:none}
-.dl .seg{display:flex;gap:2px;flex:none}
+.dl .seg{display:flex;flex:none}
 .dl .seg s{display:block;width:10px;height:8px;border:1px solid #d6c9a3;text-decoration:none}
+.dl .seg s+s{margin-left:2px}
 .dl .seg s.on{background:var(--gold,#b8860b);border-color:var(--gold,#b8860b)}
-.dl .seg s.gap{margin-left:5px}
+.dl .seg s.gap{margin-left:7px}
 .dl .seg s.pop{box-shadow:0 0 0 1px #fff,0 0 5px 1px var(--gold,#b8860b)}
 .dl .qirow .n{font:700 12px/16px 'Space Mono',monospace;flex:none}
 .dl .qirow .full{flex:none;font-size:11px;font-weight:700;color:var(--gray,#888);margin-left:-3px}
@@ -165,7 +167,8 @@
 .dl .tile .okt{color:var(--gold,#b8860b);font:700 11px/15px var(--dl-zh);margin-left:2px}
 
 /* 屬性鈕（吃剩下的高度，min 66、max 84）；預覽最多兩行，數字全部來自 forecast */
-.dl .dl-at{flex:1 1 84px;min-height:66px;max-height:84px;display:flex;gap:6px;padding:2px 12px 8px;padding-bottom:calc(8px + env(safe-area-inset-bottom,0px))}
+.dl .dl-at{flex:1 1 84px;min-height:66px;max-height:84px;display:flex;padding:2px 12px 8px;padding-bottom:calc(8px + env(safe-area-inset-bottom,0px))}
+.dl .dl-at>*+*{margin-left:6px}
 .dl .ab{flex:1 1 0;min-width:0;border:1px solid var(--ink,#111);background:#fff;text-align:left;padding:5px 8px;display:flex;flex-direction:column;justify-content:flex-start;gap:1px;overflow:hidden;-webkit-touch-callout:none}
 .dl .ab .k{display:flex;align-items:baseline;gap:4px;font-size:15px;font-weight:700;letter-spacing:.04em;line-height:20px;white-space:nowrap}
 .dl .ab .k .num{font-size:16px}

@@ -556,8 +556,10 @@
     try { el.animate([{ transform: 'translateX(0)' }, { transform: 'translateX(-3px)' }, { transform: 'translateX(3px)' }, { transform: 'translateX(0)' }], { duration: 300, easing: 'steps(3,end)' }); } catch (_) {}
   }
   var wrongT = 0;
+  var SWALLOW_MS = 350;      // 換步之後這麼短的時間內點錯＝上一步的連點（例：1-4 點兩下 Bowie），不罵、不震，只是不放行（B-duel-doubletap）
   function wrong(kind) {
     var sh = S.show; if (!sh || !S.root || !(sh.mode === 'do' || sh.mode === 'soft') || sh.text == null) return;
+    if (sh.shownAt && performance.now() - sh.shownAt < SWALLOW_MS) return;
     var R = S.root._;
     R.rings.querySelectorAll('.tut-ring').forEach(bump); bump(R.hand);
     var msg = kind === 'attr' && sh.step && sh.step.wrongAttr ? sh.step.wrongAttr : (UI().wrong || '先點我指的這裡。');
@@ -935,7 +937,8 @@
     var lines = (id === 'map' || id === 'h_map') ? ((C.shopLines && C.shopLines.mapIntro) || []).slice() : (C.hints && C.hints[id] ? [C.hints[id]] : []);
     if (!lines.length) return;
     if (S.softQ.some(function (x) { return x.id === id; }) || (S.soft && S.soft.id === id)) return;
-    S.softQ.push({ id: id, targets: (targets || []).slice(), lines: lines });
+    var at = DUEL_HINTS[id] ? duelNow() : null;      // 哪一場、第幾手送來的（殺氣騰騰那種只在那一手有意義）
+    S.softQ.push({ id: id, targets: (targets || []).slice(), lines: lines, d: at && at.d, hand: at && at.hand });
     ensureDuelSeenHook();
     setTimeout(pumpSoft, 0);      // 同一下送進來的幾則（殺氣騰騰那手的 h_eult＋h_reflect）先排好再挑
   }
@@ -961,6 +964,11 @@
     // 殺氣騰騰那手、王牌剋得到：先講七星回擊（比割捨防禦好得多）；h_eult 這次不出、也不記看過，下一次殺氣騰騰再講
     var iR = qIndex('h_reflect'), iE = qIndex('h_eult');
     if (iR >= 0 && iE >= 0) S.softQ.splice(iE, 1);
+    // 只在那一手有意義的（殺氣騰騰）：排到最前面；那一手過了就丟掉（不記看過，下次再講）
+    var now0 = duelNow();
+    S.softQ = S.softQ.filter(function (x) { return !NO_RETRY[x.id] || !x.d || (now0 && now0.d === x.d && now0.hand === x.hand); });
+    S.softQ.sort(function (a, b) { return (NO_RETRY[b.id] ? 1 : 0) - (NO_RETRY[a.id] ? 1 : 0); });
+    if (!S.softQ.length) return;
     var h = S.softQ[0];
     var isDuel = !!DUEL_HINTS[h.id];
     if (isDuel) {

@@ -41,6 +41,7 @@
 #tut .tut-bub .tx b.h{color:var(--h,#c11628)}
 #tut .tut-bub.warn{border-color:var(--red,#c11628)}
 #tut .tut-bub.warn .tx{color:var(--red,#c11628)}
+@media (max-width:370px){#tut .tut-bub{padding-right:22px}}   /* 360 寬：18 字一行放得下（▼ 在右下角，不跟字疊） */
 #tut .tut-bub .nx{position:absolute;right:8px;bottom:5px;font-size:11px;line-height:1;-webkit-animation:tutBlink 1s steps(2,start) infinite;animation:tutBlink 1s steps(2,start) infinite}
 @-webkit-keyframes tutBlink{50%{opacity:0}}
 @keyframes tutBlink{50%{opacity:0}}

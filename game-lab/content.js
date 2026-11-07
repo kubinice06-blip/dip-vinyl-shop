@@ -236,7 +236,8 @@
   //   quietText：靜音（或試聽沒出聲）時改用的文字
   // ===================================================================
   function P_START() { return { p: 'door', o: 'counter', f: 'out', door: 'swing' }; }
-  var acePickBeat = { who: '', text: '（點封套換著聽，挑一張帶走。）', ui: 'acePick', tag: '新' };
+  // NP-01：點封套開的是唱片資訊，換選要點封套下面那行字（ui.js 若改成點封套就換選，這句照樣成立）
+  var acePickBeat = { who: '', text: '（點封套下面的字換著聽，挑一張帶走。）', ui: 'acePick', tag: '新' };
   var prologueHead = [
     { who: '', text: '下著雨。你推開巷子裡那間唱片行的門。門上的鈴鐺，響了一聲。', stage: P_START(), tag: '原句' },
     { who: '', text: '這時候，店裡的音響傳出一段旋律。', stage: { notes: true }, music: 'tonight', tag: '原句' },
@@ -303,7 +304,7 @@
     // 再來一夜（≤10 秒）：門 swing → 三張王牌 → 地圖 c1
     again: [
       { who: '老闆', text: '「……又是你。」', stage: P_START(), tag: '新' },
-      { who: '', text: '（點封套換著聽，挑一張帶走。）', quietText: '（挑一張帶走。）', ui: 'acePick', tag: '新' }
+      { who: '', text: '（點封套下面的字換著聽，挑一張帶走。）', quietText: '（挑一張帶走。）', ui: 'acePick', tag: '新' }
     ]
   };
 
@@ -526,7 +527,7 @@
       { id: '1-5', kind: 'do', target: ['attr-o', 'e-shout'], look: ['e-shout'], text: '出冷門，剋他喊的經典！', allow: { attr: 'o' }, cell: 'true', bubble: 'free', keep: ['hand'], tag: '新' },
       { id: '1-6', kind: 'say', target: ['result', '.dl-sheet'], text: '剋中：你的星－他同屬性的星＋賭注', fx: 'calc', bubble: 'free', tag: '新' },
       { id: '1-6b', kind: 'say', target: ['e-hp'], text: '他出經典，自己回了 1 聲望。', tag: '新' },
-      { id: '1-7', kind: 'say', target: ['p-qi'], text: '剋中、出冷門都加氣勢，6 起有大招。', fx: 'qi6', tag: '新' },
+      { id: '1-7', kind: 'say', target: ['p-qi'], text: '剋中、出冷門加氣勢，6 起有大招。', fx: 'qi6', tag: '新' },
       { id: '1-8', kind: 'do', target: ['slot-e'], text: '點他的盤，看唱片資訊。', allow: { info: 'slot-e' }, tag: '新' },
       { id: '1-9', kind: 'do', target: ['info-close'], text: '看完點關閉回來。', allow: { close: true }, learn: 'L1', tag: '新' },
       // ---- 第 2 課：他會出、自己挑一張（流亡：王牌課）
@@ -542,9 +543,9 @@
       // （劇情）他聲望 ≤18 → 變臉：舞台上他💢＋「你很會嘛？再出冷門試試看！」；duel.js 換 phaseBlurb、「他會出」重跑
       //   NP-07／NP-08：「晃」只寫在他的脾氣面板上 → 讓玩家自己點開一次、看到那四格寫著晃，再關掉（2-7＝h_face）
       { id: '2-7', kind: 'do', target: ['e-intent'], text: '他惱羞了。點這條看他的脾氣。', allow: { sheet: 'temper' }, delay: 1500, bubble: 'below', tag: '新' },
-      { id: '2-7b', kind: 'do', target: ['.dl-sheet'], point: '.dl-sheet .x', text: '晃：喊經典，出的是硬蕊。看完點關閉。', allow: { sheetClose: true }, bubble: 'above', tag: '新' },
+      { id: '2-7b', kind: 'do', target: ['.dl-sheet'], point: '.dl-sheet .x', text: '晃：喊經典，出硬蕊。看完點關閉。', allow: { sheetClose: true }, bubble: 'above', tag: '新' },
       // （O8 合併 2-8／2-9；NP-10：流亡這時氣勢已經 10 滿格，不叫他「先存著」）
-      { id: '2-8', kind: 'say', target: ['ult'], text: { hall: '品味輾壓亮了。先存著，越存越痛。', heresy: '品味輾壓亮了。先存著，越存越痛。', pearl: '品味輾壓亮了。氣勢滿了，留著收尾。' },
+      { id: '2-8', kind: 'say', target: ['ult'], text: { hall: '品味輾壓亮了。先存著，越存越痛。', heresy: '品味輾壓亮了。先存著，越存越痛。', pearl: '輾壓亮了。氣勢滿了，留著收尾。' },
         fx: 'sweep', learnTier: { pearl: 'L4' }, tag: '新' },
       // ---- 第 3 課：賭注、經剋硬・硬剋冷、預覽、屬性效果（硬蕊）
       { id: '3-1', kind: 'say', target: ['stake'], text: '賭注變 2 了，越後面越大。', fx: 'stake', tag: '新' },
