@@ -2,7 +2,7 @@
  * 所有疊層（名牌、泡泡、飄字、替身、亮金標）pointer-events:none；只有畫布本身吃點擊。 */
 .ds-host{position:relative;display:flex;justify-content:center;align-items:flex-start;background:#0d0a08;overflow:hidden;line-height:0;
   -webkit-user-select:none;user-select:none;-webkit-touch-callout:none;-webkit-tap-highlight-color:transparent;contain:layout paint}
-.ds-canvas{display:block;flex:none;image-rendering:pixelated;image-rendering:crisp-edges;-ms-interpolation-mode:nearest-neighbor;
+.ds-canvas{display:block;flex:none;image-rendering:-webkit-optimize-contrast;image-rendering:crisp-edges;image-rendering:pixelated;-ms-interpolation-mode:nearest-neighbor;
   touch-action:manipulation;-webkit-tap-highlight-color:transparent;-webkit-touch-callout:none;-webkit-user-select:none;user-select:none}
 .ds-overlay{position:absolute;top:0;pointer-events:none;line-height:1.3}
 .ds-overlay *{pointer-events:none}
@@ -42,6 +42,7 @@
   -webkit-transform:translate(-50%,-100%);transform:translate(-50%,-100%);
   -webkit-animation:dsFloat .9s cubic-bezier(.2,.8,.3,1) forwards;animation:dsFloat .9s cubic-bezier(.2,.8,.3,1) forwards}
 .ds-float small{display:block;font:700 10px/1.3 'Noto Sans TC','PingFang TC',sans-serif;color:#111;text-shadow:none;background:rgba(255,255,255,.9);padding:0 3px;margin-top:1px}
+.ds-float.dmg,.ds-float.r{color:#c11628}
 .ds-float.heal,.ds-float.g{color:#2e7d52}
 .ds-float.gold{color:#b8860b}
 .ds-float.sm{font-size:14px}

@@ -26,7 +26,7 @@
   "props": [
     { "type": "clock", "x": 15, "y": 22 },
     { "type": "door", "id": "door", "x": 9, "y": 36, "w": 18, "h": 30, "hot": { "label": "門口", "action": "door" } },
-    { "type": "wallRack", "id": "rack", "x": 34, "y": 9, "cols": 6, "rows": 3, "cell": 10, "gap": 2, "rowGap": 3,
+    { "type": "wallRack", "id": "rack", "x": 34, "y": 9, "cols": 6, "rows": 3, "cell": 10, "gap": 2, "rowGap": 3, "revealLabel": "牆上的唱片",
       "records": ["radiohead-ok-computer", "bill-evans-waltz-for-debby", "fishmans-long-season", "sun-ra-space-is-the-place", "生祥樂隊-圍庄", "david-bowie-low",
         "stevie-wonder-innervisions", "john-coltrane-blue-train", "宇多田ヒカル-first-love", "fela-kuti-zombie", "beach-house-teen-dream", "herbie-hancock-maiden-voyage",
         "brian-eno-ambient-1-music-for-airports", "美秀集團-amazing-show-電火王", "kate-bush-the-dreaming", "daft-punk-random-access-memories", "nick-drake-bryter-layter", "cornelius-fantasma"] },
@@ -53,7 +53,7 @@
     { "type": "crate", "id": "crate-noise", "x": 112, "y": 122, "w": 23, "h": 8, "label": "NOISE", "genre": "noise", "style": "milk", "ink": "pp2", "min": 2, "records": ["melt-banana-scratch-or-stitch"], "hot": { "label": "噪音區", "action": "crate:noise" } }
   ],
   "hotspots": [
-    { "id": "owner", "rect": [42, 76, 13, 9], "label": "老闆", "action": "talk:owner", "pri": 2, "noSparkle": true }
+    { "id": "owner", "rect": [42, 76, 13, 9], "follow": "o", "rel": [-6, -14, 13, 9], "label": "老闆", "action": "talk:owner", "pri": 2, "noSparkle": true }
   ],
   "actors": [ { "id": "o", "at": "counter", "sprite": "owner" } ]
 }

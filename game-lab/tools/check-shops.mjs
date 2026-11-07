@@ -159,7 +159,14 @@ export function checkLayout(L, file, lib, cards, content, opts = {}) {
       addHot(o.id, (o.hot.rect || box).map(v => Math.round(v)), o.hot.action, o.hot.label, src);
     }
   });
-  (L.hotspots || []).forEach((h, i) => addHot(h.id, h.rect, h.action, h.label, 'hotspots[' + i + ']'));
+  (L.hotspots || []).forEach((h, i) => {
+    addHot(h.id, h.rect, h.action, h.label, 'hotspots[' + i + ']');
+    if (h.follow != null) {
+      if (!(L.actors || []).some(a => a.id === h.follow)) bad('hotspots[' + i + '] follow 的小人 ' + h.follow + ' 不在 actors');
+      if (!Array.isArray(h.rel) || h.rel.length !== 4 || !h.rel.every(isInt)) bad('hotspots[' + i + '] rel 要是 [dx,dy,w,h] 整數');
+      else { const a = (L.actors || []).find(x => x.id === h.follow), s = a && spots[a.at]; if (s && (s[0] + h.rel[0] !== h.rect[0] || s[1] + h.rel[1] !== h.rect[1])) bad('hotspots[' + i + '] rect 跟小人起始位置＋rel 對不上'); }
+    }
+  });
   for (const [r, src] of recRefs) if (!cards[r]) bad(src + '：唱片 ' + r + ' 不在 cards.js');
   // 小人
   (L.actors || []).forEach((a, i) => {

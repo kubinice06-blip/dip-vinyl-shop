@@ -382,7 +382,8 @@
     box: function (o) { return [o.x, o.y - 9, o.w || 16, (o.h || 7) + 9]; },
     base: function (o) { return o.y + (o.h || 7); },
     draw: function (P, o, S) {
-      var x = o.x, y = o.y, w = o.w || 16, h = o.h || 7, rnd = seeded('bin' + (o.id || x));
+      var poked = o.id && S.state.poke && S.state.poke[o.id] > S.state.rt && !S.mask;
+      var x = o.x, y = o.y, w = o.w || 16, h = o.h || 7, rnd = seeded('bin' + (o.id || x) + (poked ? Math.floor(S.t * 6) : ''));
       var set = Array.isArray(o.genre) ? o.genre : (SPINE_SET[o.genre] || SPINE_SET.jazz), milk = o.style === 'milk';
       var dark = milk ? 'mt0' : (o.woodDark || 'wd1'), D = 3;
       shade(P, x + 1, y + h, w, 1, 0.65); shade(P, x + w, y + 1, 1, h, 0.35);
@@ -534,17 +535,19 @@
     base: function (o) { return o.y; },
     draw: function (P, o, S) {
       var t = S.t, col = o.color || 'o', light = o.light || 'y';
-      var pose = o.pose === 'sit' ? CAT.sit : (Math.floor(t / 0.25) % 16 === 0 ? CAT.loaf : CAT.loafB);
+      var poked = o.id && S.state.poke && S.state.poke[o.id] > S.state.rt && !S.mask;   // 被點：抬頭睜眼、尾巴甩快一點
+      var pose = o.pose === 'sit' ? CAT.sit : ((poked || Math.floor(t / 0.25) % 16 === 0) ? CAT.loaf : CAT.loafB);
       var h = pose.length, x = o.x, y = o.y - h;
       for (var j = 0; j < h; j++) for (var i = 0; i < pose[j].length; i++) {
         var ch = pose[j].charAt(i); if (ch === '.') continue;
         P.px(x + i, y + j, ch === 'C' ? col : ch === 'L' ? light : ch === 'E' ? 'gr4' : ch === '-' ? 'line' : col);
       }
       // 尾巴：每兩秒甩一下
-      var flick = Math.floor(t * 5) % 10 < 2;
+      var flick = poked ? Math.floor(t * 8) % 2 === 0 : Math.floor(t * 5) % 10 < 2;
       if (o.pose !== 'sit') { P.px(x + 10, y + h - 2 - (flick ? 1 : 0), col); P.px(x + 10, y + h - 1, col); }
       P.px(x + 1, y + 1, 'line'); P.px(x + 3, y + 1, 'line');   // 耳朵內側
-      if (o.pose !== 'sit') { var zz = Math.floor(t * 1.2) % 3; if (zz) { P.px(x + 4 + zz, y - 2 - zz, 'pp2'); P.px(x + 5 + zz, y - 2 - zz, 'pp2'); } }
+      if (o.pose !== 'sit' && !poked) { var zz = Math.floor(t * 1.2) % 3; if (zz) { P.px(x + 4 + zz, y - 2 - zz, 'pp2'); P.px(x + 5 + zz, y - 2 - zz, 'pp2'); } }
+      if (poked) { P.px(x + 2, y - 3, 'pp2'); P.px(x + 2, y - 2, 'pp2'); P.px(x + 2, y, 'pp2'); }   // 「！」
     }
   });
 

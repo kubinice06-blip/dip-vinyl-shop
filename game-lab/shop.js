@@ -85,12 +85,13 @@
   var HAND = ['...kk....', '..kwwk...', '..kwwk...', '..kwwkkk.', '.kkwwwwwk', 'kwkwwwwwk', 'kwwwwwwwk', '.kwwwwwk.', '..kkkkk..'];
   // 頭上小圖示（舞台畫，不用 emoji 字元）
   var EMOTE = {
-    anger: ['.r...r.', 'rr...rr', '.......', '.......', 'rr...rr', '.r...r.'],
-    angerB: ['r.....r', '.r...r.', '.......', '.......', '.r...r.', 'r.....r'],
+    anger: ['.r...r.', 'rr...rr', '.......', '.......', '.......', 'rr...rr', '.r...r.'],
+    angerB: ['.......', '..r.r..', '.rr.rr.', '.......', '.rr.rr.', '..r.r..', '.......'],
     note: ['..kk', '..kk', '..k.', '..k.', 'kkk.', 'kkk.'],
     record: ['.kkk.', 'kkkkk', 'kkrkk', 'kkkkk', '.kkk.'],
     excl: ['.rr.', '.rr.', '.rr.', '.rr.', '....', '.rr.'],
     sweat: ['.c.', 'ccc', 'ccc', '.c.'],
+    tea: ['.d..d.', '..d..d', 'kkkkk.', 'kwwwkk', 'kwwwk.', '.kkk..'],
     dots: ['k.k.k']
   };
 
@@ -222,7 +223,7 @@
     var vctx = view.getContext('2d');
     var overlay = document.createElement('div'); overlay.className = 'ds-overlay';
     host.classList.add('ds-host'); host.innerHTML = ''; host.appendChild(view); host.appendChild(overlay);
-    var state = { door: 'closed', playing: true, t: 0, frame: 0, spot: null, flash: null, reveal: 0, hover: null, hi: [] };
+    var state = { door: 'closed', playing: true, t: 0, rt: 0, frame: 0, spot: null, flash: null, reveal: 0, hover: null, hi: [], poke: {} };
     state.door = (L.ambience && L.ambience.door) || 'closed';
     if (L.ambience && L.ambience.playing === false) state.playing = false;
     var actors = {}, hots = [], destroyed = false, lightMap = null;
@@ -246,7 +247,7 @@
     // ---------------- 場景物件 S（給道具用）
     var S = {
       W: W, H: H, layout: L, pal: pal, state: state,
-      get t() { return state.t; }, get frame() { return state.frame; },
+      get t() { return state.t; }, get rt() { return state.rt; }, get frame() { return state.frame; },
       cover: cover, card: cardOf, rand: seeded,
       wallBase: (L.wall && L.wall.h != null) ? L.wall.h : 58,
       // 門、窗會呼叫：把站在門外的人畫在開口裡（clip）；o.sil＝隔著玻璃只看得到剪影
@@ -278,7 +279,7 @@
       if (!sp) return null;
       return { x: sp[0], y: sp[1], outside: !!sp[2] };
     }
-    function poseOf(a) { if (a.poseUntil && state.t > a.poseUntil) { a.pose = null; a.poseUntil = 0; } return a.pose; }
+    function poseOf(a) { if (a.poseUntil && state.rt > a.poseUntil) { a.pose = null; a.poseUntil = 0; } return a.pose; }
     function drawActor(P2, a, inOutside) {
       var rows = a.rows; if (!rows) return;
       var pose = inOutside ? null : poseOf(a);
@@ -297,6 +298,10 @@
         P2.sprite(rr.rows, fx - 9, fy - 12, spritePal, { flip: (a.fwd || 1) > 0 });
         return;
       }
+      if (pose === 'sit') {   // 坐下（門口台階、試聽機的圓凳）：不畫腿，身體往下 3 格
+        rows = a._sit && a._sit.src === a.rows ? a._sit.rows : (a._sit = { src: a.rows, rows: a.rows.slice(0, 12) }).rows;
+        oy = 3;
+      }
       var x = fx - 8, y = fy - 14 + (a.dy || 0) + oy;
       if (!inOutside && !a.sil) P2.rect(fx - 4, fy + 1, 8, 1, 'rgba(18,8,2,0.4)');
       var sil = a.sil ? true : inOutside === 'sil' ? '#0a0e1c' : null;
@@ -305,15 +310,21 @@
       }
       P2.sprite(rows, x, y - (a.moving ? bob : 0), spritePal, { flip: a.flip, sil: sil });
       // 受擊：閃紅（疊一層半透明紅，不整個塗掉，看得出是誰）
-      if (pose === 'hurt' && !sil && Math.floor((state.t - (a.poseAt || 0)) * 10) % 2 === 0) P2.sprite(rows, x, y, spritePal, { flip: a.flip, sil: 'rgba(230,40,56,0.6)' });
+      if (pose === 'hurt' && !sil && Math.floor((state.rt - (a.poseAt || 0)) * 10) % 2 === 0) P2.sprite(rows, x, y, spritePal, { flip: a.flip, sil: 'rgba(230,40,56,0.6)' });
       // 呼吸：站著時偶爾眨眼
       if (!a.moving && !sil && a.bob !== false && !pose && rows[4] && Math.floor(state.t * 10 + a.phase * 7) % 34 === 0) {
         for (var i = 0; i < rows[4].length; i++) if (rows[4].charAt(i) === 'k' && rows[3].charAt(i) !== 'k') P2.px(x + (a.flip ? rows[4].length - 1 - i : i), y + 4, spritePal.s || '#e8b48c');
       }
       // 頭上小圖示
-      if (a.emote && (!a.emoteUntil || state.t < a.emoteUntil)) {
+      if (a.emote && (!a.emoteUntil || state.rt < a.emoteUntil)) {
         var k = a.emote; if (k === 'anger' && Math.floor(state.t * 4) % 2) k = 'angerB';
-        var er = EMOTE[k]; if (er) { var ew = er[0].length; P2.sprite(er, fx + 3 - Math.floor(ew / 2) + 3, y - er.length - 1 + (Math.floor(state.t * 3) % 2), { r: '#e0303f', k: '#111111', c: '#3fb6c9' }, {}); }
+        var er = EMOTE[k]; if (er) {
+          // 頭頂右上，白色描邊（在深色櫃檯、牆上也看得清楚）
+          var ew = er[0].length, ex = fx + 5 - Math.floor(ew / 2), ey = y - er.length - 1 + (Math.floor(state.t * 3) % 2);
+          if (k === 'anger' || k === 'angerB') P2.sprite(er, ex + 1, ey + 1, null, { sil: 'rgba(17,17,17,0.7)' });   // 怒：細線條，只加陰影不描白（描白會糊成一團）
+          else [[-1, 0], [1, 0], [0, -1], [0, 1]].forEach(function (d) { P2.sprite(er, ex + d[0], ey + d[1], null, { sil: '#ffffff' }); });
+          P2.sprite(er, ex, ey, { r: '#e0303f', k: '#111111', c: '#3fb6c9' }, {});
+        }
       } else if (a.emote) a.emote = null;
     }
     function actor(id) {
@@ -363,8 +374,20 @@
       }
       return out;
     }
-    function enabled(h) { return !h.disabled && (!allowFn || allowFn(h)); }
+    // 跟著小人走的熱點（例：老闆走去挖箱時，點他本人還是「老闆」）：rel＝相對腳底的 [dx, dy, w, h]
+    function syncFollow() {
+      hots.forEach(function (h) {
+        if (!h.follow) return;
+        var a = actors[h.follow], rel = h.rel || [-6, -14, 12, 15];
+        h.gone = !a || a.hidden || a.outside || !a.rows;
+        if (h.gone) return;
+        var r = [Math.round(a.x) + rel[0], Math.round(a.y) + rel[1], rel[2], rel[3]];
+        if (!h.rect || r[0] !== h.rect[0] || r[1] !== h.rect[1]) { h.rect = r; h.outline = outlineOf(null, r); h.cx = r[0] + r[2] / 2; h.cy = r[1] + r[3] / 2; }
+      });
+    }
+    function enabled(h) { return !h.disabled && !h.gone && (!allowFn || allowFn(h)); }
     function hitTest(x, y) {
+      syncFollow();
       var cand = hots.filter(enabled);
       cand.sort(function (a, b) { return (b.sub ? 1 : 0) - (a.sub ? 1 : 0) || (b.pri || 0) - (a.pri || 0) || b.order - a.order; });
       for (var i = 0; i < cand.length; i++) {
@@ -438,16 +461,20 @@
       drawFocus();
       blit();
     }
+    // 可視畫布直接用裝置像素大小（每格 devPx×devPx 個裝置像素），自己用最近鄰放大：
+    // 不靠 CSS image-rendering（舊 iOS Safari 對 canvas 的 pixelated 不可靠），每一格在任何瀏覽器都是銳利的方塊。
     function blit() {
-      if (view.width !== vw) view.width = vw;
-      if (view.height !== vh) view.height = vh;
-      vctx.imageSmoothingEnabled = false;
-      vctx.clearRect(0, 0, vw, vh);
-      vctx.drawImage(world, vx, vy, vw, vh, 0, 0, vw, vh);
+      var k = devPx, bw = vw * k, bh = vh * k;
+      if (view.width !== bw) view.width = bw;
+      if (view.height !== bh) view.height = bh;
+      vctx.imageSmoothingEnabled = false; vctx.webkitImageSmoothingEnabled = false;
+      vctx.clearRect(0, 0, bw, bh);
+      vctx.drawImage(world, vx, vy, vw, vh, 0, 0, bw, bh);
     }
     // 選取外框、教學聚光、今晚亮金框、提示星
     function drawFocus() {
       var t = state.t, P2 = P;
+      syncFollow();
       if (state.spot) {
         var h = state.spot.h, m = h.mask, r = h.rect, pad = 2;
         if (!state.spot.ov) {
@@ -471,9 +498,9 @@
         state.hi.forEach(function (g) { g.hots.forEach(function (h) { h.outline.forEach(function (p) { wctx.fillStyle = on ? '#f0c75e' : '#fff1c2'; wctx.fillRect(p[0], p[1], 1, 1); }); }); });
       }
       var show = [];
-      if (state.flash && t < state.flash.until) show.push(state.flash.h);
+      if (state.flash && state.rt < state.flash.until) show.push(state.flash.h);
       if (state.hover) show.push(state.hover);
-      if (state.reveal > t) hots.forEach(function (h) { if (enabled(h) && (!h.sub || h.revealSub)) show.push(h); });
+      if (state.reveal > state.rt) hots.forEach(function (h) { if (enabled(h) && (!h.sub || h.revealSub || h._rv)) show.push(h); });
       show.forEach(function (h) { if (h) outlineDraw(h, t); });
       // 提示星：每 3.2 秒在一個可互動物件角落閃一下（手遊常見的「這裡可以點」）
       if (!state.spot && sparkleOn && hots.length) {
@@ -556,7 +583,7 @@
     }
     function labelFor(h, cls, ms) {
       var d = document.createElement('div'); d.className = 'ds-label' + (cls ? ' ' + cls : ''); d.textContent = h.label || '';
-      return addMark({ el: d, kind: 'label', h: h, until: ms ? state.t + ms / 1000 : 0, place: function () {
+      return addMark({ el: d, kind: 'label', h: h, until: ms ? state.rt + ms / 1000 : 0, place: function () {
         var r = h.rect, p = toCss(r[0] + r[2] / 2, r[1]), below = p.y < 26;
         if (below) p = toCss(r[0] + r[2] / 2, r[1] + r[3]);
         d.style.left = p.x + 'px'; d.style.top = p.y + 'px'; d.classList.toggle('below', below);
@@ -601,7 +628,8 @@
     function onLeave() { state.hover = null; dropMarks(function (m) { return m.hover; }); }
     function bump() { host.classList.remove('ds-bump'); void host.offsetWidth; host.classList.add('ds-bump'); }
     function tap(h) {
-      state.flash = { h: h, until: state.t + 0.9 };
+      state.flash = { h: h, until: state.rt + 0.9 };
+      if (h.prop && h.prop.id) state.poke[h.prop.id] = state.rt + 1.6;   // 道具自己的小反應（貓坐起來、箱子裡的唱片被翻動）
       dropMarks(function (m) { return m.tapLbl; }); labelFor(h, 'tap', 1100).tapLbl = true;
       if (state.spot && state.spot.h === h) { var cb = state.spot.done; api.spotlight(null); if (cb) cb(h); }
       if (opts.onAction) { try { opts.onAction(h.action, h); } catch (e) { console.error(e); } }
@@ -618,9 +646,9 @@
       if (destroyed) return;
       raf = requestAnimationFrame(loop);
       if (ts - last < 95) return; var dt = Math.min(0.2, (ts - last) / 1000); last = ts;
-      state.t = fixedT != null ? fixedT : (now() - t0 - tPaused) / 1000; state.frame++;
+      state.rt = (now() - t0 - tPaused) / 1000; state.t = fixedT != null ? fixedT : state.rt; state.frame++;   // rt＝真時間（到期用），t＝畫面動畫時間（可凍結截圖）
       stepActors(dt);
-      dropMarks(function (m) { return m.until && state.t > m.until; });
+      dropMarks(function (m) { return m.until && state.rt > m.until; });
       render();
       layoutOverlay();
     }
@@ -664,11 +692,11 @@
       },
       face: function (id, fwd) { actor(id).fwd = fwd; return api; },
       pose: function (id, name, ms) {
-        var a = actor(id); a.pose = name || null; a.poseAt = state.t;
-        a.poseUntil = (name && ms) ? state.t + ms / 1000 / spd() : 0;
+        var a = actor(id); a.pose = name || null; a.poseAt = state.rt;
+        a.poseUntil = (name && ms) ? state.rt + ms / 1000 / spd() : 0;
         return api;
       },
-      emote: function (id, kind, ms) { var a = actor(id); a.emote = kind || null; a.emoteUntil = (kind && ms) ? state.t + ms / 1000 : 0; return api; },
+      emote: function (id, kind, ms) { var a = actor(id); a.emote = kind || null; a.emoteUntil = (kind && ms) ? state.rt + ms / 1000 : 0; return api; },
       say: function (id, text, o) {
         o = o || {};
         dropMarks(function (m) { return m.kind === 'say' && m.id === id; });
@@ -685,7 +713,9 @@
         addMark({ el: d, kind: 'tag', id: id, place: function () {
           var a = actors[id]; if (!a || a.hidden) { d.style.display = 'none'; return; }
           d.style.display = '';
-          var p = toCss(lr === 'R' ? a.x + 8 : a.x - 8, a.y - 9);
+          var p = toCss(lr === 'R' ? a.x + 8 : a.x - 8, a.y - 9), w = d.offsetWidth, ow = overlay.clientWidth || vw * scale;
+          // 長名字（冷門仙人、那張我有）不要被舞台邊緣切掉：夾在畫面內，必要時蓋到身體一點點
+          if (lr === 'R') p.x = Math.min(p.x, ow - 2 - 3 - w); else p.x = Math.max(p.x, 2 + 3 + w);
           d.style.left = p.x + 'px'; d.style.top = p.y + 'px';
         } });
         return d;
@@ -696,9 +726,13 @@
         var d = document.createElement('div'); d.className = 'ds-float' + (cls ? ' ' + cls : '');
         if (typeof text === 'object') { d.textContent = text.text; if (text.sub) { var sm = document.createElement('small'); sm.textContent = text.sub; d.appendChild(sm); } }
         else d.textContent = text;
-        // 頭上有台詞泡泡時改飄在身體上，不跟泡泡疊在一起
-        var x0 = a.x, y0 = a.y, talking = marks.some(function (m) { return m.kind === 'say' && m.id === id; });
-        var m = addMark({ el: d, kind: 'float', place: function () { var p = toCss(x0 + 0.5, talking ? y0 - 3 : y0 - 15); d.style.left = p.x + 'px'; d.style.top = p.y + 'px'; } });
+        // 對決的兩個人（有面向）：數字飄在頭旁邊、朝對手那一側（頭上留給台詞泡泡，外側留給名牌），怎樣都不會疊在一起。
+        // 其他人：飄在頭上；頭上正有泡泡就改飄在身體上。
+        var x0 = a.x, y0 = a.y, fw = a.fwd || 0, talking = marks.some(function (m) { return m.kind === 'say' && m.id === id; });
+        var m = addMark({ el: d, kind: 'float', place: function () {
+          var p = fw ? toCss(x0 + fw * 12 + 0.5, y0 - 4) : toCss(x0 + 0.5, talking ? y0 - 3 : y0 - 15);
+          d.style.left = p.x + 'px'; d.style.top = p.y + 'px';
+        } });
         setTimeout(function () { dropMarks(function (x) { return x === m; }); }, 1000);
         return d;
       },
@@ -733,8 +767,15 @@
         });
       },
       reveal: function (ms) {
-        ms = ms || 2600; state.reveal = state.t + ms / 1000; dropMarks(function (m) { return m.revealLbl; });
+        ms = ms || 2600; state.reveal = state.rt + ms / 1000; dropMarks(function (m) { return m.revealLbl; });
         hots.forEach(function (h) { if (!h.sub && h.label && enabled(h)) labelFor(h, 'reveal', ms).revealLbl = true; });
+        // 沒有整體熱點、但裡面每張都能點的道具（牆上唱片架）：給一個總名牌
+        (L.props || []).forEach(function (o) {
+          if (!o.revealLabel || o.hidden) return;
+          var subs = hots.filter(function (h) { return h.sub && h.prop === o && enabled(h); }); if (!subs.length) return;
+          labelFor({ rect: propBox(o), label: o.revealLabel }, 'reveal', ms).revealLbl = true;
+          subs.forEach(function (h) { h._rv = true; });
+        });
         return api;
       },
       highlight: function (list) {
@@ -762,10 +803,11 @@
       tweenView: tweenView,
       view: function () { return { y: vy, h: vh, x: vx, w: vw, scale: scale, dev: devPx, baseDev: baseDev(), dpr: dprNow() }; },
       camera: function (name) { var c = (L.cameras || {})[name]; if (c) api.setView({ y: c.y, h: c.h, dev: null }); return api; },
-      hotspots: function () { return hots.map(function (h) { return { id: h.id, label: h.label, action: h.action, rect: h.rect.slice(), sub: !!h.sub }; }); },
-      hotRect: function (hotId) { var h = hotById(hotId); return h ? rectToScreen(h.rect) : null; },
+      hotspots: function () { syncFollow(); return hots.map(function (h) { return { id: h.id, label: h.label, action: h.action, rect: h.rect.slice(), sub: !!h.sub }; }); },
+      hotRect: function (hotId) { syncFollow(); var h = hotById(hotId); return h ? rectToScreen(h.rect) : null; },
       rectOf: function (r) { return rectToScreen(r); },
-      tap: function (hotId) { var h = hotById(hotId); if (h) tap(h); return !!h; },
+      // 程式點一下（測試、教學）：跟手指點一樣受 allow() 限制；o.force 才繞過
+      tap: function (hotId, o) { syncFollow(); var h = hotById(hotId); if (!h || (!(o && o.force) && !enabled(h))) return false; tap(h); return true; },
       allow: function (fn) { allowFn = fn || null; return api; },
       sparkle: function (on) { sparkleOn = !!on; return api; },
       bump: bump,

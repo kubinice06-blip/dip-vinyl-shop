@@ -9,14 +9,15 @@
  *       full／reward 有矮螢幕規則（從牆頂往下裁到 minH，再不夠才降倍率）；prefers-reduced-motion＝150 ms 淡入淡出
  *   Stage.put(id, spot | [x,y,outside], sprite?) ; walk(id, spots[], speed?) → Promise ; hide(id,on) ; sil(id,on) ; sprite(id,spr)
  *   Stage.say(id, text, { tone:'owner'|null, ms = 2600 })   ms 0＝不自動收；text 空＝收掉
- *   Stage.pose(id, 'atk'|'hurt'|'ko'|'warn'|'dig'|'busy'|null, ms?)
- *   Stage.emote(id, 'anger'|'record'|'note'|'excl'|'sweat'|null, ms?)   頭上像素小圖示（不用 emoji）
+ *   Stage.pose(id, 'atk'|'hurt'|'ko'|'warn'|'dig'|'busy'|'sit'|null, ms?)
+ *   Stage.emote(id, 'anger'|'record'|'note'|'excl'|'sweat'|'tea'|null, ms?)   頭上像素小圖示（不用 emoji）
  *   Stage.door('open'|'swing'|'close') ; Stage.play(on)
  *   Stage.tag(id, text, 'e'|'p', 'L'|'R') ; Stage.untag(id?) ; Stage.float(id, text|{text,sub}, cls?)
  *   Stage.anchor(id) → HTMLElement (#anc-<id>) ; Stage.hotRect(hotId) → DOMRect
  *   Stage.highlight([{ ids:[hotId…], label }]) ; highlight([]) 清掉
  *   Stage.hotspots() ; Stage.tap(hotId) ; Stage.reveal(ms) ; Stage.interact(mode) ; Stage.allow(fn|patterns|null)
  *   Stage.legacy(name) → spot ; Stage.destroy()
+ *   Stage.duelIn({ foe, ms }) / duelOut({ screen }) → Promise   進出對決的走位＋鏡頭（選用的便利函式）
  *   舊 Stage 相容：anger notes busy dig show foe setSprite actor cls stamp clearStamps unmount
  *
  * 規則：整支包在 IIFE；只掛 window.DipLabStage；讀 dip-character.js 的 avatarRows／PIX_PAL，不宣告同名全域；不碰 localStorage。
@@ -35,7 +36,7 @@
     'q.q1': 'q1', 'q.q2': 'q2'
   };
   // 矮螢幕規則：面板最少要留多高（SPEC-v2 §2）
-  var PANEL_MIN = { title: 130, scene: 150, map: 200, reward: 260, node: 260, end: 260, taipei: 130 };
+  var PANEL_MIN = { title: 130, scene: 150, map: 200, reward: 260, node: 260, end: 260, taipei: 92 };
   var CAM_PANEL = { full: 150, reward: 260 };
   // 每個畫面舞台上哪些東西可以點（SPEC-v2 §5.4）
   var INTERACT = {
@@ -159,6 +160,7 @@
         onAction: function (action, hot) { if (typeof stage.onAction === 'function') stage.onAction(action, hot); }
       });
       shop.face('f', 1).face('p', -1);
+      shop.sprite('p', 'player');   // 你的小人（還沒 put 之前不畫）
       applyInteract();
       return shop;
     }
@@ -169,8 +171,10 @@
       var pm = o.panelMin != null ? o.panelMin : (PANEL_MIN[o.screen] != null ? PANEL_MIN[o.screen] : (CAM_PANEL[name] != null ? CAM_PANEL[name] : 150));
       return fitCamera(c, { dpr: v.dpr, dev: v.baseDev, avail: visH() - 32 - pm });
     }
+    var lastCam = { name: 'full', o: {} }, tweening = 0;
     function camera(name, o) {
       o = o || {};
+      lastCam = { name: name, o: { screen: o.screen, panelMin: o.panelMin, noAuto: o.noAuto } };
       var cams = L.cameras || {};
       if (!o.noAuto) name = pickCamera(name, cams, visH());
       var c = cams[name] || cams.full || { y: 0, h: L.size[1] };
@@ -183,8 +187,17 @@
           T(function () { shop.setView(tgt); host.classList.remove('ds-fade'); T(res, 75); }, 75);
         });
       }
-      return shop.tweenView(tgt, ms);
+      tweening++;
+      return shop.tweenView(tgt, ms).then(function () { tweening--; }, function (e) { tweening--; throw e; });
     }
+    // 可視高改變（轉向、Safari 工具列收起來、鍵盤）：用同一個鏡頭重新套矮螢幕規則
+    var rzT = 0;
+    function onResize() {
+      clearTimeout(rzT);
+      rzT = setTimeout(function () { if (!destroyed && shop && !tweening) camera(lastCam.name, Object.assign({ ms: 0 }, lastCam.o)); }, 150);
+    }
+    W.addEventListener('resize', onResize);
+    if (W.visualViewport) W.visualViewport.addEventListener('resize', onResize);
 
     // ---------------- 公開 API
     var stage = {
@@ -239,7 +252,7 @@
       hotRect: function (id) { return shop.hotRect(hotId(id)); },
       highlight: function (list) { shop.highlight(list || []); return stage; },
       hotspots: function () { return shop.hotspots(); },
-      tap: function (id) { return shop.tap(hotId(id)); },
+      tap: function (id, o) { return shop.tap(hotId(id), o); },
       reveal: function (ms) { shop.reveal(ms); return stage; },
       spotlight: function (id, text) { return shop.spotlight(id ? hotId(id) : null, text); },
       interact: function (mode) { interactMode = mode || 'all'; customAllow = null; applyInteract(); return stage; },
@@ -253,6 +266,29 @@
       view: function () { return shop.view(); },
       cssOf: function (x, y) { return shop.hostCss(x, y); },
       bump: function () { shop.bump(); return stage; },
+      // ---- 進／出對決的舞台部分（SPEC-v2 §3.7，選用；「！」與黑條由 fx.encounterFx 負責，這裡只管走位與鏡頭，兩者同時跑）
+      // o: { foe: sprite, ms = 600, walkSpeed = 96 }。他走到 duelE、你走到 duelP、老闆回櫃檯，同時鏡頭推近成橫條。
+      duelIn: function (o) {
+        o = o || {};
+        if (o.foe != null) shop.sprite('f', o.foe);
+        var sp = o.walkSpeed || 96, jobs = [];
+        [['f', 'duelE'], ['p', 'duelP'], ['o', 'counter']].forEach(function (x) {
+          var id = x[0], to = x[1], at = shop.pos(id), s = (L.spots || {})[to];
+          if (!s) return;
+          if (!at || at.hidden || !shop.has(id)) { if (id !== 'o' || shop.has('o')) shop.put(id, to); return; }
+          if (Math.round(at.x) === s[0] && Math.round(at.y) === s[1]) return;
+          jobs.push(shop.walk(id, at.outside ? ['door', to] : [to], sp));
+        });
+        stage.interact('duel');
+        jobs.push(camera('strip', { ms: o.ms == null ? 600 : o.ms }));
+        return Promise.all(jobs).then(function () { return stage; });
+      },
+      duelOut: function (o) {
+        o = o || {};
+        shop.untag(); ['f', 'p'].forEach(function (id) { shop.say(id, null); shop.emote(id, null); });
+        stage.interact(o.interact || 'scene');
+        return camera(o.camera || 'full', { ms: o.ms == null ? 600 : o.ms, screen: o.screen || 'scene' }).then(function () { return stage; });
+      },
       // ---- 舊 Stage 相容（ui.js v1 的呼叫）
       anger: function (on, id) { shop.emote(id || 'f', on ? 'anger' : null); return stage; },
       notes: function (on) { shop.play(!!on); return stage; },
@@ -276,12 +312,14 @@
         ['p', 'f', 'o'].forEach(function (id) { shop.say(id, null); shop.pose(id, null); shop.emote(id, null); });
         return stage;
       },
-      destroy: function () { destroyed = true; timers.forEach(clearTimeout); timers = []; stage.clearStamps(); if (shop) shop.destroy(); shop = null; }
+      destroy: function () {
+        destroyed = true; timers.forEach(clearTimeout); clearTimeout(rzT);
+        W.removeEventListener('resize', onResize); if (W.visualViewport) W.visualViewport.removeEventListener('resize', onResize); timers = []; stage.clearStamps(); if (shop) shop.destroy(); shop = null; }
     };
 
     mountShop(L0);
     // 預設三人：老闆在櫃檯（layout.actors）、你、他（選填）
-    if (opts.p) stage.put('p', opts.p, 'player'); else shop.sprite('p', 'player');
+    if (opts.p) stage.put('p', opts.p, 'player');
     if (opts.f) stage.put('f', opts.f, opts.fSpr || 'e0');
     return camera(opts.camera || 'full', { ms: 0, screen: opts.screen }).then(function () { return stage; });
   }
