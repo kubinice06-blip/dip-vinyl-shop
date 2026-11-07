@@ -376,17 +376,338 @@
   // h 本色、H 亮、W 高光、D 陰、x 最深。ox/oy＝圖章左上角相對頭框的位移。cut＝戴帽子時髮型從第幾列（頭框 y）以上剪掉
   var HAIRS = [];
   function defHair(id, label, o) { o.id = id; o.label = label; HAIRS.push(o); }
+  // 通用框：ox −3、oy −5（第 0 欄＝頭框 x−3，第 0 列＝頭框 y−5）；back 層通用框 bx −6、by −5
   defHair('short', '短髮', { ox: -1, oy: -1, front: [
     '...hhhhhh.....',
-    '.hhhhHHHhhh...',
-    'hhhhhHHhhhhh..',
-    'hhhhhhhhhhhhh.',
-    'Dhhhhhhh.hDh..',
+    '.hhhhHHHhhD...',
+    'hhhhhHHhhhhD..',
+    'hhhhhhhhhhhhD.',
+    'Dhhhhhhh.hDD..',
     'Dhhhhx........',
     'Dhhh..........',
     'Dhhh..........',
     'xDh...........',
     '.D............'
+  ] });
+  defHair('buzz', '平頭', { ox: -3, oy: -5, front: [
+    '', '', '', '', '',
+    '......DhDhD.......',
+    '....DhDhHhDhD.....',
+    '...hDhDhDhDhD.....',
+    '...DhDhDhD........',
+    '...hDhDh..........',
+    '...DhD............',
+    '...hDh............',
+    '....Dh............',
+    '....xD............'
+  ] });
+  defHair('sidepart', '旁分', { ox: -3, oy: -5, front: [
+    '',
+    '',
+    '',
+    '......hhhhh.......',
+    '....hhhxhHHhh.....',
+    '...hhhhxHHhhD.....',
+    '..hhhhhhhhhhhD....',
+    '..hhhhhhhhhhhhD...',
+    '..hhhhhhh...hD....',
+    '..DhhhhD..........',
+    '..Dhhh............',
+    '..Dhhh............',
+    '..xDhh............',
+    '...xDh............',
+    '.....D............'
+  ] });
+  defHair('bangs', '齊瀏海', { ox: -3, oy: -5, front: [
+    '',
+    '',
+    '',
+    '',
+    '.....hhhhhh.......',
+    '...hhhHHHHhhD.....',
+    '..hhhhHHhhhhhD....',
+    '..hhhhhhhhhhhhD...',
+    '..hhhhhhhDhhDD....',
+    '..DhhhhD..........',
+    '..Dhhh............',
+    '..Dhhh............',
+    '..xDhh............',
+    '...xDh............'
+  ] });
+  defHair('spiky', '刺蝟頭', { ox: -3, oy: -5, front: [
+    '',
+    '......h...h.......',
+    '.....hh.hh..h.....',
+    '....hhhHhhhhh.....',
+    '...hhhHHhhhhhh....',
+    '...hhhHHhhhhD.....',
+    '..hhhhhhhhhhhD....',
+    '..hhhhhhhhhhhDD...',
+    '..hhhhhhhh.DhD....',
+    '..DhhhhD..........',
+    '..Dhhh............',
+    '..Dhhh............',
+    '..xDhh............',
+    '...xD.............'
+  ] });
+  defHair('curly', '捲毛', { ox: -3, oy: -5, curls: true, front: [
+    '',
+    '',
+    '',
+    '.....hh.hh.h......',
+    '...hhhhhhhhhh.....',
+    '..hhhhhhhhhhhD....',
+    '.hhhhhhhhhhhhhD...',
+    '.hhhhhhhhhhhhhhD..',
+    '.hhhhhhhhDhhDhD...',
+    '.hhhhhhD..........',
+    '.hhhhhh...........',
+    '.hhhhh............',
+    '.DhhhD............',
+    '..DhD.............',
+    '...x..............'
+  ] });
+  defHair('bob', '鮑伯頭', { ox: -3, oy: -5, front: [
+    '',
+    '',
+    '',
+    '',
+    '.....hhhhhhh......',
+    '...hhhHHHHhhD.....',
+    '..hhhhHHhhhhhD....',
+    '.hhhhhhhhhhhhhD...',
+    '.hhhhhhhhDhhhD....',
+    '.hhhhhhh.....hD...',
+    '.hhhhhhh..........',
+    '.hHhhhhh..........',
+    '.hhhhhhh..........',
+    '.DhhhhhD..........',
+    '..DhhhD...........',
+    '...xDx............'
+  ] });
+  var LONG_BACK = [
+    '', '', '', '',
+    '.........hhhhhh.....',
+    '.......hhhhhhhhh....',
+    '......hhhhhhhhhhhh..',
+    '.....hhhhhhhhhhhhhh.',
+    '....hhhhhhhhhhhhhhh.',
+    '....hhhhhhhhhhhhhhD.',
+    '....hhhhhhhhhhhhhhD.',
+    '....hhhhhhhhhhhhhhD.',
+    '....hhhhhhhhhhhhhhD.',
+    '....hhhhhhhhhhhhhD..',
+    '...hhhhhhhhhhhhhhD..',
+    '...hhhhhhhhhhhhhD...',
+    '..hhhhhhhhhhhhhD....',
+    '..hhhhhhhhhhhh......',
+    '..Dhhhhhhhhhh.......',
+    '..DhhhhhhhhD........',
+    '..DhhhhhhhD.........',
+    '..DhhhhhhD..........',
+    '...DhhhhD...........',
+    '...xDhhD............',
+    '....xxx.............'
+  ];
+  defHair('long', '長直髮', { ox: -3, oy: -5, bx: -6, by: -5, back: LONG_BACK, front: [
+    '',
+    '',
+    '',
+    '',
+    '......hhhhhh......',
+    '....hhhhHHHhD.....',
+    '..hhhhhhhHHhhD....',
+    '..hhhhhhhhhhhhD...',
+    '.hhhhhhhD.........',
+    '.hhhhhhD..........',
+    '.hHhhhh...........',
+    '.hHhhhh...........',
+    '.hhhhhh...........',
+    '.hhhhhh...........',
+    '.Dhhhhh...........',
+    '.Dhhhhh...........',
+    '..Dhhhh...........',
+    '..DhhhD...........',
+    '...xDx............'
+  ] });
+  defHair('longbangs', '長髮瀏海', { ox: -3, oy: -5, bx: -6, by: -5, back: LONG_BACK, front: [
+    '',
+    '',
+    '',
+    '',
+    '......hhhhhh......',
+    '...hhhHHHHhhD.....',
+    '..hhhhHHhhhhhD....',
+    '.hhhhhhhhhhhhhD...',
+    '.hhhhhhhhDhhDD....',
+    '.hhhhhhD..........',
+    '.hHhhhh...........',
+    '.hHhhhh...........',
+    '.hhhhhh...........',
+    '.hhhhhh...........',
+    '.Dhhhhh...........',
+    '.Dhhhhh...........',
+    '..Dhhhh...........',
+    '..DhhhD...........',
+    '...xDx............'
+  ] });
+  defHair('wavy', '大波浪', { ox: -3, oy: -5, bx: -6, by: -5, back: [
+    '', '', '', '',
+    '.........hhhhhh.....',
+    '.......hhhhhhhhh....',
+    '......hhhhhhhhhhhh..',
+    '.....hhhhhhhhhhhhhh.',
+    '....hhhhhhhhhhhhhhhh',
+    '...hhhhhhhhhhhhhhhhD',
+    '...hhhhhhhhhhhhhhhD.',
+    '..hhhhhhhhhhhhhhhhD.',
+    '..hhhhhhhhhhhhhhhhh.',
+    '..hhhhhhhhhhhhhhhD..',
+    '.hhhhhhhhhhhhhhhhD..',
+    '.hhhhhhhhhhhhhhhD...',
+    '.Dhhhhhhhhhhhhh.....',
+    '..DhhhhhhhhhD.......',
+    '.DhhhhhhhhD.........',
+    '..DhDhhDhD..........',
+    '...x.xx.x...........'
+  ], front: [
+    '',
+    '',
+    '',
+    '.......hh.........',
+    '.....hhhhhhh......',
+    '...hhhHHHhhhh.....',
+    '..hhhHHhhhhhhh....',
+    '.hhhhhhhhhhhhhh...',
+    '.hhhhhhhhDhD.hD...',
+    '.hhHhhhD..........',
+    '.hhhHhh...........',
+    'hhhhhHh...........',
+    '.hhhhhh...........',
+    'hhHhhhh...........',
+    '.hhHhhD...........',
+    '.DhhhhD...........',
+    'DhhhhD............',
+    '.DhhD.............',
+    '..xx..............'
+  ] });
+  defHair('afro', '爆炸頭', { ox: -3, oy: -5, curls: true, front: [
+    '.....hhhhhhh......',
+    '...hhhhhhhhhhh....',
+    '..hhhhhhhhhhhhh...',
+    '.hhhhhhhhhhhhhhh..',
+    '.hhhhhhhhhhhhhhhh.',
+    'hhhhhhhhhhhhhhhhh.',
+    'hhhhhhhhhhhhhhhhh.',
+    'hhhhhhhhhhhhhhhhh.',
+    'hhhhhhhhhD....hhh.',
+    'hhhhhhhh......hhD.',
+    'hhhhhhh.......hD..',
+    'Dhhhhhh.......D...',
+    '.DhhhhD...........',
+    '..DhhhD...........',
+    '...xxx............'
+  ] });
+  defHair('ponytail', '馬尾', { ox: -3, oy: -5, bx: -6, by: -5, back: [
+    '', '', '', '', '', '', '',
+    '.....hh.............',
+    '....hhhh............',
+    '...hhhhh............',
+    '..hhhhhh............',
+    '..hhhhh.............',
+    '..hHhhh.............',
+    '.hhhhh..............',
+    '.hHhhh..............',
+    '.hhhh...............',
+    '.hhhh...............',
+    '.Dhhh...............',
+    '..Dhh...............',
+    '..xD................'
+  ], front: [
+    '',
+    '',
+    '',
+    '',
+    '.......hhhhh......',
+    '....hhhhHHHhh.....',
+    '..hhhhhhhHHhhh....',
+    '..hhhhhhhhhhhhh...',
+    '.aahhhhhD..hD.....',
+    '.aaDhhhD..........',
+    '...Dhh............',
+    '...Dhh............',
+    '...xDh............',
+    '....xD............'
+  ] });
+  defHair('bun', '丸子頭', { ox: -3, oy: -5, front: [
+    '...hhhh...........',
+    '..hhHhhh..........',
+    '..hHhhhhD.........',
+    '..hhhhhhD.........',
+    '...aaaaD..........',
+    '...hhhhhhhhD......',
+    '..hhhhhhHHHhD.....',
+    '..hhhhhhhHHhhD....',
+    '..hhhhhhhhhhhD....',
+    '..hhhhhhD...hD....',
+    '..DhhhhD..........',
+    '..Dhhh............',
+    '..Dhhh............',
+    '..xDhh............',
+    '...xDh............'
+  ] });
+  defHair('mohawk', '龐克頭', { ox: -3, oy: -5, front: [
+    '.........h..h.....',
+    '.......hhh.hh.h...',
+    '.....hhhhhhhhhhh..',
+    '....hhhHHhhhhhh...',
+    '...hhhHHhhhhhh....',
+    '...DhhhhhhhhhD....',
+    '...D.D.D.D.D......',
+    '..D.D.D.D.D.D.....',
+    '..xD.D.D..........',
+    '..D.D.D...........',
+    '..xD..............',
+    '..D.D.............',
+    '...xD.............'
+  ] });
+  defHair('mullet', '鯔魚頭', { ox: -3, oy: -5, bx: -6, by: -5, back: [
+    '', '', '', '', '', '', '', '', '', '',
+    '......hhh...........',
+    '.....hhhh...........',
+    '....hhhhh...........',
+    '....hHhhh...........',
+    '...hhhhhh...........',
+    '...hhHhh............',
+    '...Dhhhh............',
+    '....DhhD............',
+    '.....xx.............'
+  ], front: [
+    '',
+    '',
+    '',
+    '........h.........',
+    '......hhhhh.......',
+    '....hhhhHHHhh.....',
+    '..hhhhhhhHHhhh....',
+    '..hhhhhhhhhhhhh...',
+    '..hhhhhhhhDhD.....',
+    '..DhhhhD..........',
+    '..Dhhh............',
+    '..Dhhh............',
+    '..hDhh............',
+    '..hhDh............',
+    '..hhhD............'
+  ] });
+  defHair('bald', '光頭', { ox: -3, oy: -5, shine: true, front: null });
+  defHair('horseshoe', '地中海', { ox: -3, oy: -5, shine: true, front: [
+    '', '', '', '', '', '', '', '',
+    '..DD..............',
+    '..hhhD............',
+    '..hhhD............',
+    '..Dhh.............',
+    '..xDh.............',
+    '...xD.............'
   ] });
   var HAIR = {}; HAIRS.forEach(function (h) { HAIR[h.id] = h; });
 
@@ -429,9 +750,140 @@
     { id: 'sandals', label: '涼鞋', dflt: 'brown', flat: ['........', 'fuffuff.', 'SSSSSSSs'], toe: ['........', '..fuffu.', '...SSSSs'] }
   ];
   var SHOE = byId(SHOES);
-  var HATS = [{ id: 'none', label: '無' }];
+  // ===================================================================== 帽子（3/4 朝右；通用框 ox −3、oy −10）
+  // k 本色、K 亮、J 高光、j 陰、q 最深、B 帽帶、b 帽帶陰、g 金、G 金亮、w 白；cut＝頭框 y 以上的頭髮剪掉
+  var HATS = [
+    { id: 'none', label: '無' },
+    { id: 'beanie', label: '毛帽', dflt: 'green', cut: 1, front: [
+      '', '', '', '', '', '', '',
+      '.......kkk........',
+      '.....kkkkkkk......',
+      '....kkKKkkkkk.....',
+      '...kKKkkkkkkkj....',
+      '..KkKkKkKkKkKkj...',
+      '..jkjkjkjkjkjkj...'
+    ] },
+    { id: 'cap', label: '棒球帽', dflt: 'blue', cut: 2, front: [
+      '', '', '', '', '', '', '', '',
+      '......kKkk........',
+      '....kkKKkkkk......',
+      '...kKKkkkkkkk.....',
+      '..kkkkkkkkkkkj....',
+      '..jjjjjjjjjkkkkkK.',
+      '...........qqqq...'
+    ] },
+    { id: 'capback', label: '反戴帽', dflt: 'brown', cut: 2, ox: -5, front: [
+      '', '', '', '', '', '', '', '',
+      '........kKkk........',
+      '......kkKKkkkk......',
+      '.....kKKkkkkkkk.....',
+      '....kkkkkkkkkkkj....',
+      'KkkkkkjjjjjjjjjjD...',
+      '.qqqq...............'
+    ] },
+    { id: 'bucket', label: '漁夫帽', dflt: 'khaki', cut: 2, front: [
+      '', '', '', '', '', '', '', '',
+      '.....kkkkkkk......',
+      '....kKKkkkkkk.....',
+      '...kKkkkkkkkkj....',
+      '...jjjjjjjjjjjj...',
+      '.kKkkkkkkkkkkkkj..',
+      'kjjjjjjjjjjjjjjjk.',
+      '.q..............q.'
+    ] },
+    { id: 'fedora', label: '紳士帽', dflt: 'black', cut: 1, front: [
+      '', '', '', '', '', '',
+      '.....kkk.kkk......',
+      '....kkKkkkKkkj....',
+      '....kKkkkkkkkj....',
+      '....kkkkkkkkkj....',
+      '....BBBBBBBBBb....',
+      'kkkkkkkkkkkkkkkkK.',
+      '.qjjjjjjjjjjjjjjjq'
+    ] },
+    { id: 'bowler', label: '圓頂禮帽', dflt: 'orange', cut: 1, front: [
+      '', '', '', '', '', '',
+      '......kkkkk.......',
+      '.....kKJkkkk......',
+      '....kKKkkkkkkj....',
+      '....kkkkkkkkkj....',
+      '....BBBBBBBBBb....',
+      '..KkkkkkkkkkkkkK..',
+      '...qjjjjjjjjjjq...'
+    ] },
+    { id: 'beret', label: '貝雷帽', dflt: 'purple', cut: 1, front: [
+      '', '', '', '', '', '',
+      '........q.........',
+      '.....kkkKKkk......',
+      '...kkkKKkkkkkk....',
+      '.kkkkkkkkkkkkkkj..',
+      '..jjkkkkkkkkkjj...',
+      '....jjjjjjjjj.....'
+    ] },
+    { id: 'tophat', label: '高禮帽', dflt: 'black', cut: 1, front: [
+      '.....kkkkkkkkk....',
+      '....kKJkkkkkkkj...',
+      '....kKkkkkkkkkj...',
+      '....kKkkkkkkkkj...',
+      '....kKkkkkkkkkj...',
+      '....kKkkkkkkkkj...',
+      '....kKkkkkkkkkj...',
+      '....BBBBBBBBBBb...',
+      '....BBBBBBBBBBb...',
+      '..KkkkkkkkkkkkkkK.',
+      '...qjjjjjjjjjjjq..'
+    ] },
+    { id: 'headphones', label: '耳機', dflt: 'gold', cut: null, front: [
+      '', '', '', '', '', '', '',
+      '.......qkkkq......',
+      '.....qk.....kq....',
+      '....qk.......k....',
+      '...qk.............',
+      '...qk.............',
+      '...qk.............',
+      '...qKk............',
+      '...KJkkj..........',
+      '..kKkkkq..........',
+      '..kkkkkq..........',
+      '..kkkkkq..........',
+      '..jkkkjq..........',
+      '...jjjq...........'
+    ], back: [
+      '', '', '', '', '', '', '', '', '', '',
+      '............kk....',
+      '.............k....',
+      '.............kk...',
+      '............kkkk..',
+      '............kkkkj.',
+      '............kkkkj.',
+      '.............jjj..'
+    ] },
+    { id: 'bandana', label: '頭巾', dflt: 'red', cut: 2, front: [
+      '', '', '', '', '', '', '', '',
+      '.....kkkkkk.......',
+      '...kkwkkkwkkk.....',
+      '..kKkkkwkkkkwkj...',
+      '.kkkkkkkkkkkkkkj..',
+      'qkkjjjjjjjjjjjj...',
+      'qkk...............',
+      'qk................',
+      '.k................'
+    ] },
+    { id: 'crown', label: '小皇冠', dflt: 'gold', cut: null, front: [
+      '', '', '', '', '', '',
+      '.....G..G..G......',
+      '.....kG.kG.kG.....',
+      '.....kkkkkkkkj....',
+      '.....kwkkrkkwj....',
+      '.....jjjjjjjjj....'
+    ] }
+  ];
   var HAT = byId(HATS);
-  var ACCS = [];
+  var ACCS = [
+    { id: 'recordbag', label: '唱片袋' }, { id: 'tote', label: '帆布袋' }, { id: 'necklace', label: '項鍊' },
+    { id: 'scarf', label: '圍巾' }, { id: 'wristband', label: '護腕' }, { id: 'watch', label: '手錶' },
+    { id: 'badge', label: '徽章' }, { id: 'earring', label: '耳環' }
+  ];
   var ACC = byId(ACCS);
 
   // ===================================================================== 預設與正規化
@@ -711,7 +1163,22 @@
     var rows = layer === 'back' ? Hh.back : Hh.front; if (!rows) return;
     C.begin(layer === 'back' ? 'hairB' : 'hairF');
     var ox = layer === 'back' ? (Hh.bx != null ? Hh.bx : Hh.ox) : Hh.ox, oy = layer === 'back' ? (Hh.by != null ? Hh.by : Hh.oy) : Hh.oy;
-    stamp(C, rows, sk.head[0] + ox, sk.head[1] + oy, legend('hair'));
+    var leg = extend(legend('hair'), { a: ['acc', 2] });
+    var cut = sk.hatCut;
+    if (cut != null) {   // 戴帽：帽緣以上的頭髮剪掉（頭框 y < cut）
+      var rr = rows.map(function (r, j) { return (j + oy) < cut ? '' : r; });
+      rows = rr;
+    }
+    stamp(C, rows, sk.head[0] + ox, sk.head[1] + oy, leg);
+    if (Hh.curls) {   // 捲度：一顆顆小捲（亮一格、右下陰一格）
+      var X0 = sk.head[0] + ox, Y0 = sk.head[1] + oy;
+      for (var j = 0; j < rows.length; j++) for (var i = 0; i < rows[j].length; i++) {
+        var X = X0 + i, Y = Y0 + j; if (C.getPart(X, Y) !== C.cur) continue;
+        var q = ((i * 5 + j * 3) % 7 + 7) % 7, odd = (j % 2);
+        if (q === 0) { C.tone(X, Y, 3); if (C.getPart(X + 1, Y) === C.cur) C.tone(X + 1, Y, 3); if (C.getPart(X + 1, Y + 1) === C.cur) C.tone(X + 1, Y + 1, 1); }
+        else if (q === 4 && odd) C.tone(X, Y, 1);
+      }
+    }
   }
 
   // ===================================================================== 姿勢

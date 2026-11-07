@@ -381,3 +381,103 @@ small{font-size:inherit;}
 /* 地圖預覽（.lb-sheet.float）開著時，教學的 soft 提示先藏起來（不疊在預覽上；關掉預覽就回來） */
 body.lb-float-open #tut{visibility:hidden;}
 
+
+/* ===================== v3 外殼（SPEC-v3 §9＋主線補充） ===================== */
+/* 標題：「再按一次就放棄今晚」那行一直佔著位置（不推動第二下要點的鈕），按第一下才看得到（B-title-375-clipped） */
+.lb-tbtns .lb-warn{visibility:hidden;min-height:18px;}
+.lb-screen.warned .lb-warn{visibility:visible;}
+@media (max-height:600px){.lb-panel.title .lb-foot.hint{display:none;}}
+body.stage-wait .lb-panel.title .lb-btn{pointer-events:none;opacity:.55;}   /* 舞台還沒好：先不收推門（B-slow-stage-empty-scene） */
+/* 挑王牌：封面下面那行字＝換聽（按鈕，點擊區 ≥44） */
+.lb-ct .acex{display:block;width:100%;min-height:44px;margin-top:4px;padding:2px 0;text-align:left;font-size:12px;font-weight:700;line-height:1.35;border-bottom:1px dashed #bbb;}
+.lb-ct .acex .al.one{display:block;font-size:11px;font-weight:400;color:var(--gray2);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.lb-ct.sel .acex{border-bottom:2px solid var(--ink);}
+/* 一張唱片攤開（序章掉出來的、藏家送的） */
+.lb-one{display:flex;gap:14px;margin-top:10px;align-items:center;flex:none;}
+.lb-one .lb-cv{flex:none;}
+.lb-one .meta{min-width:0;display:flex;flex-direction:column;gap:2px;}
+.lb-one .meta .al{font-size:17px;font-weight:700;line-height:1.25;word-break:normal;line-break:strict;}
+.lb-one .meta .yr{font:400 11px 'Space Mono',monospace;color:var(--gray);letter-spacing:.12em;margin-bottom:4px;}
+.lb-one .meta .sub{margin-top:6px;}
+.stars b.mk{outline:2px solid var(--ink);outline-offset:1px;padding:0 2px;}
+/* 贏了：他丟過的唱片（最多 7 張）＋（菁英／藏家）一件配件 */
+.lb-rgrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px 8px;margin-top:8px;flex:none;}
+.lb-rgrid .lb-ct .al{-webkit-line-clamp:1;font-size:11px;}
+.lb-rgrid .lb-ct .ar{font-size:9px;}
+.lb-rgrid .lb-ct .stars{font-size:11px;margin-top:2px;}
+.lb-rgrid .lb-ct .stars b{margin-right:3px;}
+.lb-rgrid .lb-ct .lb-pickb{min-height:44px;margin-top:4px;}
+.lb-rgrid.bin{grid-template-columns:repeat(3,minmax(0,1fr));}
+.lb-sheet.reward .lb-h3{margin-top:14px;}
+.lb-sheet.reward .lb-relic{min-height:56px;}
+/* 試聽機：選中的那張 */
+.lb-pick.booth{grid-template-columns:repeat(4,minmax(0,1fr));}
+.lb-pick.booth .lb-pickb{min-height:40px;}
+.lb-pick.booth .lb-ct.sel .lb-cv{outline:2px solid var(--gold);outline-offset:2px;}
+/* 今晚來客：一條五顆頭像（打完的變黑、下一位金框）＋下一位＋包包／配件 */
+.lb-panel.night{justify-content:flex-start;}
+.lb-night{flex:none;padding:8px 10px 0;}
+.lb-night .nh{display:flex;align-items:baseline;gap:8px;margin-bottom:4px;}
+.lb-night .nh b{font-size:13px;letter-spacing:.12em;}
+.lb-night .nrow{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:4px;margin-bottom:8px;}
+.lb-night .nc{display:flex;flex-direction:column;align-items:center;gap:2px;min-height:44px;padding:2px 0;font-family:var(--zh);}
+.lb-night .nc .tm{font:700 10px 'Space Mono',monospace;color:var(--gray);}
+.lb-night .nc .hd{position:relative;width:42px;height:42px;border:1px solid var(--ink);display:grid;place-items:center;background:#fff;overflow:hidden;}
+.lb-night .nc .nm{font-size:11px;font-weight:700;line-height:1.2;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.lb-night .nc.done .hd{background:var(--ink);}
+.lb-night .nc.done .hd svg{opacity:.35;}
+.lb-night .nc.done .ok{position:absolute;right:2px;bottom:0;color:#fff;font-size:12px;font-weight:700;}
+.lb-night .nc.done .nm,.lb-night .nc.done .tm{color:var(--gray);}
+.lb-night .nc.cur .hd{border:2px solid var(--gold);box-shadow:0 0 0 2px var(--cream);animation:lbNodePulse 1.6s ease-in-out infinite;}
+.lb-night .nc.cur .tm{color:var(--ink);}
+.lb-night .nc.boss .hd{border-color:var(--red);}
+.lb-night .nc.boss.cur .hd{border-color:var(--gold);}
+@keyframes lbNodePulse{0%,100%{box-shadow:0 0 0 2px var(--cream);}50%{box-shadow:0 0 0 4px rgba(184,134,11,.35);}}
+.lb-bagline{flex:none;margin-top:auto;border-top:1px solid var(--line);height:44px;display:flex;align-items:center;gap:6px;padding:0 6px 0 2px;font-size:12px;white-space:nowrap;overflow:hidden;}
+.lb-bagline button{min-height:44px;padding:0 8px;display:inline-flex;align-items:center;gap:5px;font:400 12px var(--zh);}
+.lb-bagline .bag b{font:700 13px 'Space Mono',monospace;}
+.lb-bagline .rl{color:var(--gray2);font-size:11px;min-width:0;overflow:hidden;text-overflow:ellipsis;}
+.lb-bagline .rl .k{color:var(--gray);margin-right:2px;}
+.lb-bagline .rl .ri{display:inline-grid;place-items:center;}
+/* 點頭像：名牌那句（跟盤面上的一樣：黑底標籤＋粗體一句） */
+.lb-habit{display:flex;align-items:stretch;margin-top:10px;border:1px solid var(--ink);min-height:30px;}
+.lb-habit .lb{flex:none;display:grid;place-items:center;background:var(--ink);color:#fff;font-size:11px;font-weight:700;letter-spacing:.12em;padding:0 8px;}
+.lb-habit .tx{padding:5px 8px;font-size:13px;font-weight:700;line-height:1.45;}
+.lb-sheet.guest .sub{margin:6px 0 0;}
+/* 規則卡（v3/final/rule-card.png；mock rulecard.html 的樣式） */
+.lb-rules h1{margin:0;font-size:22px;font-weight:900;letter-spacing:.18em;text-align:center;}
+.lb-rules .rsub{text-align:center;font-size:12px;color:var(--gray);letter-spacing:.2em;margin-top:2px;}
+.lb-rules .tri{display:block;width:100%;max-width:260px;height:auto;margin:8px auto 0;}
+.lb-rules .rl{list-style:none;margin:10px 0 0;padding:0;border-top:1px solid var(--ink);}
+.lb-rules .rl li{display:flex;gap:10px;padding:8px 0 7px;border-bottom:1px solid var(--line);font-size:14px;line-height:1.6;font-weight:700;letter-spacing:.02em;}
+.lb-rules .rl li .n{flex:none;width:22px;height:22px;background:var(--ink);color:#fff;font:700 13px/22px 'Space Mono',monospace;text-align:center;margin-top:1px;}
+.lb-rules .rl b{font-weight:700;}
+.lb-rules .ex{margin-top:14px;border:1px solid var(--ink);}
+.lb-rules .ex .hd{background:var(--ink);color:#fff;font-size:12px;font-weight:700;letter-spacing:.14em;padding:4px 10px;}
+.lb-rules .ex .bd{padding:10px 10px 12px;}
+.lb-rules .habit{display:flex;align-items:stretch;min-height:26px;border:1px solid var(--ink);}
+.lb-rules .habit .lb{display:grid;place-items:center;background:var(--ink);color:#fff;font-size:11px;font-weight:700;letter-spacing:.12em;padding:0 7px;}
+.lb-rules .habit .tx{padding:3px 7px;font-size:13px;font-weight:700;}
+.lb-rules .step{display:flex;gap:8px;align-items:flex-start;margin-top:9px;font-size:13px;line-height:1.55;}
+.lb-rules .step .k{flex:none;font-size:11px;color:var(--gray);width:28px;padding-top:1px;}
+.lb-rules .rec{display:flex;gap:9px;align-items:center;margin-top:9px;}
+.lb-rules .rec .t{font-size:12px;line-height:1.5;min-width:0;}
+.lb-rules .rec .t small{color:var(--gray);font-size:10px;margin-right:4px;}
+.lb-rules .out{margin-top:10px;border-top:1px dashed #bbb;padding-top:8px;}
+.lb-rules .out div{display:flex;gap:8px;align-items:baseline;font-size:13px;line-height:1.8;}
+.lb-rules .out .p{flex:none;font-size:11px;color:var(--gray);width:70px;}
+.lb-rules .g{color:var(--win);} .lb-rules .r{color:var(--red);}
+.lb-rules .gold{display:inline-block;background:var(--gold);color:#fff;font-size:10px;font-weight:900;padding:0 4px;line-height:15px;letter-spacing:.08em;margin-left:4px;vertical-align:1px;}
+.lb-rules .rrel{margin:12px 0 0;font-size:12px;color:#333;text-align:center;}
+.lb-rules .rfoot{margin-top:10px;font-size:11px;color:var(--gray);line-height:1.6;text-align:center;}
+.lb-help .lb-btn[data-a=replay]{margin-top:14px;}
+/* 結算三件事 */
+.lb-sum{list-style:none;margin:12px 0 10px;padding:0;border-top:1px solid var(--ink);}
+.lb-sum li{display:flex;justify-content:space-between;align-items:baseline;padding:8px 0;border-bottom:1px solid var(--line);font-size:13px;}
+.lb-sum li .k{color:var(--gray2);}
+.lb-sum li b{font:700 15px 'Space Mono',var(--zh);}
+.lb-endhero .sub{margin:2px 0 0;}
+/* 手機橫拿：盤面放不下，請轉回直的（B-landscape） */
+@media (orientation:landscape) and (max-height:500px){
+  #app::after{content:'請把手機轉回直的';position:fixed;top:0;right:0;bottom:0;left:0;z-index:2147483000;background:#fff;display:flex;align-items:center;justify-content:center;font:700 16px var(--zh);letter-spacing:.12em;color:var(--ink);}
+}
