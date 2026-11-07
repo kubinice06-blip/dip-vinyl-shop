@@ -1,8 +1,8 @@
-// game-lab/fx.js — 品味對決・試做版：聲光（Agent C）。SPEC §5.1、§5.2、§5.3、§7.3。
+// game-lab/fx.js：品味對決・試做版：聲光（Agent C）。SPEC §5.1、§5.2、§5.3、§7.3。
 // window.DipLabFx：WebAudio 合成音效（不載任何音檔）、試聽播放（fetch → decodeAudioData → BufferSource）、
 // 震屏／打擊停頓／閃白／飄字／蓋章、encounterFx 移植、傳說藏家蓋章出場。
 // 規則：
-//  - 音效與音樂共用 fx.js **自己的** AudioContext（v2 B13：不再借 DipPlayer.audioContext()——DipPlayer 切背景時會把它 close 掉）。
+//  - 音效與音樂共用 fx.js **自己的** AudioContext（v2 B13：不再借 DipPlayer.audioContext()：DipPlayer 切背景時會把它 close 掉）。
 //    DipPlayer 只借全站的聲音偏好 autoplayPreference。**絕不 DipPlayer.mount**。
 //  - 切背景（visibilitychange hidden）：記下正在放的那張、真的停掉、suspend()；回來後下一次觸碰 resume() 並從頭放（B13）。
 //    playing() 同時檢查 ctx.state === 'running'，「播放中」永遠是真的（B05／B13）。
@@ -28,11 +28,11 @@
   const CSS = `
   .rpg-excl{position:absolute;left:11px;top:-24px;font-size:15px;font-weight:900;line-height:18px;color:#c11628;background:#fff;border:2px solid #111;padding:0 5px;animation:rpgExcl .18s steps(2,end);z-index:40;pointer-events:none;}
   @keyframes rpgExcl{0%{transform:translateY(6px);opacity:0;}100%{transform:none;opacity:1;}}
-  .enc-ov{position:fixed;inset:0;z-index:2147482000;pointer-events:none;}
-  .enc-ov .enc-flash{position:absolute;inset:0;background:#fff;opacity:0;}
+  .enc-ov{position:fixed;top:0;right:0;bottom:0;left:0;z-index:2147482000;pointer-events:none;}
+  .enc-ov .enc-flash{position:absolute;top:0;right:0;bottom:0;left:0;background:#fff;opacity:0;}
   .enc-ov.flash .enc-flash{animation:encFlash .22s steps(1,end) 3;}
   @keyframes encFlash{0%{opacity:1;}50%{opacity:0;}100%{opacity:0;}}
-  .enc-ov .enc-bars{position:absolute;inset:0;display:flex;flex-direction:column;}
+  .enc-ov .enc-bars{position:absolute;top:0;right:0;bottom:0;left:0;display:flex;flex-direction:column;}
   .enc-ov .enc-bars i{flex:1;background:#000;transform:translateX(-101%);}
   .enc-ov .enc-bars i:nth-child(even){transform:translateX(101%);}
   .enc-ov.bars .enc-bars i{animation:encBar .5s steps(6,end) forwards;}
@@ -49,7 +49,7 @@
   @keyframes bossLine{0%{transform:scaleX(0);}100%{transform:scaleX(1);}}
   @keyframes bossShake{0%,100%{transform:translate(0,0);}20%{transform:translate(-6px,2px);}40%{transform:translate(5px,-3px);}60%{transform:translate(-4px,-2px);}80%{transform:translate(3px,2px);}}
   @keyframes bossGlow{0%,100%{text-shadow:0 0 0 rgba(184,134,11,0);}50%{text-shadow:0 0 26px rgba(184,134,11,.75);}}
-  .bossmask{position:fixed;inset:0;z-index:2147481000;background:rgba(255,255,255,.97);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;animation:bossMaskIn .25s;pointer-events:none;font-family:'Space Mono','Noto Sans TC',monospace;}
+  .bossmask{position:fixed;top:0;right:0;bottom:0;left:0;z-index:2147481000;background:rgba(255,255,255,.97);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;animation:bossMaskIn .25s;pointer-events:auto;touch-action:manipulation;cursor:pointer;font-family:'Space Mono','Noto Sans TC',monospace;}
   .bossmask.out{opacity:0;transition:opacity .45s;}
   .bossmask .bline{width:min(320px,70vw);height:2px;background:#b8860b;transform-origin:left;animation:bossLine .5s .15s both;}
   .bossmask .bline.r{transform-origin:right;}
@@ -57,9 +57,9 @@
   .bossmask .btitle{font-size:32px;font-weight:700;letter-spacing:.35em;text-indent:.35em;color:#111;animation:bossStamp .55s .35s both cubic-bezier(.2,1.4,.4,1),bossGlow 1.2s .9s infinite;}
   @keyframes bossSub{0%{transform:scale(1.6);opacity:0;}100%{transform:none;opacity:1;}}
   .bossmask .bsub{font-size:13px;color:#b8860b;letter-spacing:.14em;font-weight:700;animation:bossSub .4s .62s both ease-out;max-width:90vw;white-space:nowrap;}
-  body.boss-shake #app>:not(.lb-top):not(.lb-scr.duel),body.boss-shake #app .dl-root>:not(.dl-top){animation:bossShake .5s .55s;}   /* 上排鈕不震（不會被推出右緣） */
+  body.boss-shake #app>#stage,body.boss-shake #app>#panel{animation:bossShake .5s .55s;}   /* 頂欄不震（不會被推出右緣） */
   /* 飄字／蓋章／閃白 */
-  .dlfx-layer{position:fixed;inset:0;pointer-events:none;z-index:2147480000;overflow:hidden;}
+  .dlfx-layer{position:fixed;top:0;right:0;bottom:0;left:0;pointer-events:none;z-index:2147480000;overflow:hidden;}
   .dlfx-float{position:fixed;transform:translate(-50%,-100%);text-align:center;pointer-events:none;white-space:nowrap;
     font-family:'Space Mono','Noto Sans TC',monospace;font-weight:700;line-height:1;color:#c11628;
     text-shadow:0 2px 0 #fff,2px 0 0 #fff,-2px 0 0 #fff,0 -2px 0 #fff,0 3px 6px rgba(0,0,0,.35);}
@@ -77,7 +77,7 @@
   .dlfx-stamp.green{color:#2e7d52;} .dlfx-stamp.ink{color:#111;}
   .dlfx-stamp small.c{color:#1f5fae;} .dlfx-stamp small.o{color:#6a3fa0;} .dlfx-stamp small.h{color:#c11628;}
   .dlfx-spark{position:fixed;width:6px;height:6px;background:#f0c75e;pointer-events:none;box-shadow:0 0 6px #f0c75e;}
-  .dlfx-flash{position:fixed;inset:0;pointer-events:none;z-index:2147480500;}
+  .dlfx-flash{position:fixed;top:0;right:0;bottom:0;left:0;pointer-events:none;z-index:2147480500;}
   `;
   function injectCss() {
     if (document.getElementById('dlfx-css')) return;
@@ -252,7 +252,6 @@
     return src;
   }
   const NOTE = { C4: 261.63, E4: 329.63, G4: 392.0, C5: 523.25, D5: 587.33, E5: 659.25, F5: 698.46, G5: 783.99, A5: 880, B5: 987.77, C6: 1046.5, D6: 1174.66, E6: 1318.51 };
-  const QI_SCALE = [NOTE.C5, NOTE.D5, NOTE.E5, NOTE.F5, NOTE.G5, NOTE.A5, NOTE.B5, NOTE.C6, NOTE.D6, NOTE.E6];
 
   const SFX = {
     bell(c) { [1320, 1760].forEach(f => tone(c, { f, d: 0.9, g: 0.22, a: 0.002 })); [1320, 1760].forEach(f => tone(c, { f, t: 0.14, d: 0.9, g: 0.22 * 0.7, a: 0.002 })); },
@@ -268,23 +267,6 @@
     scratch(c) { tone(c, { type: 'sawtooth', f: 300, f2: 120, d: 0.14, g: 0.16, a: 0.003, filter: { type: 'lowpass', f: 2000 } }); noise(c, { d: 0.12, g: 0.12, filter: { type: 'bandpass', f: 1500, f2: 600, q: 0.8 } }); },
     hurt(c) { tone(c, { f: 110, d: 0.18, g: 0.5 }); tone(c, { type: 'square', f: 55, d: 0.08, g: 0.25 }); tone(c, { type: 'square', f: 220, f2: 110, d: 0.14, g: 0.38, filter: { type: 'lowpass', f: 1800 } }); noise(c, { d: 0.06, g: 0.3, filter: { type: 'bandpass', f: 800, q: 0.9 } }); },
     mirror(c) { tone(c, { f: 720, d: 0.06, g: 0.5, a: 0.001 }); },
-    qiUp(c, o) { const n = Math.max(1, Math.min(10, (o && o.n) || 1)); tone(c, { type: 'square', f: QI_SCALE[n - 1], d: 0.04, g: 0.1, a: 0.002 }); },
-    ultCharge(c) { noise(c, { d: 0.45, g: 0.3, a: 0.05, curve: 'lin', filter: { type: 'highpass', f: 200, f2: 6000, q: 0.7 } }); },
-    ult(c) {
-      tone(c, { f: 50, d: 0.3, g: 0.7 });
-      tone(c, { type: 'triangle', f: 120, f2: 60, d: 0.3, g: 0.35 });
-      tone(c, { type: 'square', f: 200, f2: 100, d: 0.24, g: 0.38, filter: { type: 'lowpass', f: 1800 } });
-      noise(c, { d: 0.14, g: 0.7, filter: { type: 'bandpass', f: 600, q: 0.8 } });
-      noise(c, { d: 0.4, g: 0.5, a: 0.04, pink: true, filter: { type: 'bandpass', f: 1200, q: 0.5 } });
-    },
-    eUltWarn(c) {
-      [0, 0.18].forEach(t => {
-        tone(c, { f: 55, t, d: 0.09, g: 0.7, a: 0.004 });
-        tone(c, { type: 'square', f: 110, t, d: 0.09, g: 0.42, a: 0.004, filter: { type: 'lowpass', f: 1400 } });
-        noise(c, { t, d: 0.04, g: 0.6, filter: { type: 'bandpass', f: 700, q: 1 } });
-      });
-    },
-    reflect(c) { noise(c, { d: 0.4, g: 0.45, curve: 'rev', filter: { type: 'highpass', f: 3000 } }); [NOTE.C4, NOTE.G4, NOTE.C5, NOTE.E5].forEach(f => tone(c, { type: 'triangle', f, t: 0.4, d: 0.4, g: 0.2 })); },
     faceChange(c) { SFX.feintHit(c); tone(c, { type: 'square', f: 220, t: 0.06, d: 0.07, g: 0.15 }); tone(c, { type: 'square', f: 220, t: 0.2, d: 0.07, g: 0.15 }); },
     ko(c) { tone(c, { f: 300, f2: 80, d: 0.5, g: 0.6, a: 0.005, lin: true }); },
     win(c) { [NOTE.C5, NOTE.E5, NOTE.G5, NOTE.C6].forEach((f, i) => tone(c, { type: 'square', f, t: i * 0.09, d: 0.09, g: 0.14, a: 0.002 })); },
@@ -636,18 +618,19 @@
   //   掃進來的時候縫隙裡看得到店內畫面往上收，退開時已經是兩個對決者的橫條＋盤面 → 讀起來是同一個動作。
   //   減少動態：不閃、不掃，「！」300 ms 後 onPush（鏡頭由舞台改 150 ms 淡入淡出），600 ms resolve。
   const ENC2_CSS = `
-  .enc2{position:fixed;inset:0;z-index:2147482000;pointer-events:none;}
-  .enc2 .f{position:absolute;inset:0;background:#fff;opacity:0;}
+  .enc2{position:fixed;top:0;right:0;bottom:0;left:0;z-index:2147482000;pointer-events:none;overflow:hidden;}
+  .enc2.inhost{position:absolute;z-index:60;}
+  .enc2 .f{position:absolute;top:0;right:0;bottom:0;left:0;background:#fff;opacity:0;}
   .enc2.flash .f{animation:enc2Flash .18s ease-out 1;}
   @keyframes enc2Flash{0%{opacity:.85;}100%{opacity:0;}}
-  .enc2 .b{position:absolute;inset:0;display:flex;flex-direction:column;}
+  .enc2 .b{position:absolute;top:0;right:0;bottom:0;left:0;display:flex;flex-direction:column;}
   .enc2 .b i{flex:1;background:#000;transform:translateX(-101%);}
   .enc2 .b i:nth-child(even){transform:translateX(101%);}
-  .enc2.in .b i{animation:encBar .5s steps(6,end) forwards;}
+  .enc2.in .b i{animation:encBar .32s steps(3,end) forwards;}
   .enc2.in .b i:nth-child(2),.enc2.in .b i:nth-child(7){animation-delay:.04s;}
   .enc2.in .b i:nth-child(3),.enc2.in .b i:nth-child(6){animation-delay:.08s;}
   .enc2.in .b i:nth-child(4),.enc2.in .b i:nth-child(5){animation-delay:.12s;}
-  .enc2.out .b i{transform:translateX(0);animation:enc2OutR .4s steps(5,end) forwards;}
+  .enc2.out .b i{transform:translateX(0);animation:enc2OutR .36s steps(4,end) forwards;}
   .enc2.out .b i:nth-child(even){animation-name:enc2OutL;}
   @keyframes enc2OutR{to{transform:translateX(101%);}}
   @keyframes enc2OutL{to{transform:translateX(-101%);}}
@@ -671,16 +654,20 @@
         await t(300); call(opts.onPush); await t(300); if (ex) ex.remove(); call(opts.onCovered);
       })();
     }
+    // v3（O2／ART-03）：opts.host（#stage）有給，黑條就只蓋在舞台裡、跟著舞台一起收；盤面從下方滑入全程看得到。
+    //   0「！」→ 150 閃白 → 180 黑條掃進（3 格）→ 540 onPush（鏡頭推近＋盤面滑入）→ 580 黑條往兩邊退開 → 約 960 收掉
+    const host = opts.host && opts.host.isConnected ? opts.host : null;
     const ov = document.createElement('div');
-    ov.className = 'enc2';
+    ov.className = 'enc2' + (host ? ' inhost' : '');
     ov.innerHTML = '<div class="f"></div><div class="b">' + '<i></i>'.repeat(8) + '</div>';
-    document.body.appendChild(ov);
+    (host || document.body).appendChild(ov);
     return (async () => {
-      await t(200); ov.classList.add('flash');
-      await t(120); call(opts.onPush); ov.classList.add('in');
-      await t(640); if (ex) ex.remove(); call(opts.onCovered);
-      await t(40); ov.classList.remove('flash', 'in'); ov.classList.add('out');
-      await t(420); ov.remove();
+      await t(150); ov.classList.add('flash');
+      await t(30); ov.classList.add('in');
+      await t(360); call(opts.onPush);
+      await t(40); if (ex) ex.remove(); call(opts.onCovered);
+      ov.classList.remove('flash', 'in'); ov.classList.add('out');
+      await t(380); ov.remove();
     })();
   }
   // 傳說藏家蓋章出場（roguelike.html bossIntro 移植；文字由呼叫端給）：resolve 於 2.35 s 移除時
@@ -689,16 +676,23 @@
     o = o || {};
     const old = document.getElementById('dlfxBossMask'); if (old) old.remove();
     const m = document.createElement('div'); m.className = 'bossmask'; m.id = 'dlfxBossMask';
+    m.setAttribute('role', 'dialog'); m.setAttribute('aria-label', o.title || '傳說藏家');
     m.innerHTML = `<div class="bline"></div><div class="bemoji"></div><div class="btitle"></div><div class="bsub"></div><div class="bline r"></div>`;
-    if (o.spriteHtml) m.querySelector('.bemoji').innerHTML = o.spriteHtml; else m.querySelector('.bemoji').textContent = '👑';
+    if (o.spriteHtml) m.querySelector('.bemoji').innerHTML = o.spriteHtml; else m.querySelector('.bemoji').textContent = '';
     m.querySelector('.btitle').textContent = o.title || '傳說藏家';
     m.querySelector('.bsub').textContent = o.sub || '';
     document.body.appendChild(m);
     if (!reducedMotion()) document.body.classList.add('boss-shake');
     sfx('slam');
+    // B-boss-intro-passthrough：登場卡吃掉所有點擊（不會點到底下的盤面）；點一下（0.6 s 後）就提早收掉
     return new Promise(r => {
-      setTimeout(() => { m.classList.add('out'); }, 1850);
-      setTimeout(() => { m.remove(); document.body.classList.remove('boss-shake'); r(); }, 2350);
+      let done = false, t1 = 0, t2 = 0;
+      const t0 = Date.now();
+      const fin = () => { if (done) return; done = true; clearTimeout(t1); clearTimeout(t2); m.remove(); document.body.classList.remove('boss-shake'); r(); };
+      const out = () => { if (done) return; m.classList.add('out'); clearTimeout(t2); t2 = setTimeout(fin, 450); };
+      const swallow = e => { e.stopPropagation(); e.preventDefault(); if (o.tapToClose !== false && Date.now() - t0 > 600) out(); };
+      ['click', 'pointerdown', 'touchstart'].forEach(k => m.addEventListener(k, swallow, { passive: false }));
+      t1 = setTimeout(out, 1850);
     });
   }
   function vibrate(ms) { try { if (navigator.vibrate) navigator.vibrate(ms || 15); } catch (_) {} }

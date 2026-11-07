@@ -70,6 +70,7 @@
   color:#fff;background:rgba(0,0,0,.35);border:1px solid rgba(255,255,255,.75);padding:0 9px;height:28px;min-width:44px;cursor:pointer;letter-spacing:.06em;
   -webkit-appearance:none;appearance:none;border-radius:0}
 #tut .tut-skip[hidden]{display:none}
+#tut .tut-skip.intop{height:24px;background:#111;border-color:#fff}   /* 在頂欄裡（「?」左邊）：頂欄壓暗了，用實心黑底才看得清楚 */
 #tut .tut-skip::before{content:'';position:absolute;left:-6px;right:-6px;top:-8px;bottom:-8px}  /* 熱區 ≥44 */
 
 /* 「學會了：…」小卡 */

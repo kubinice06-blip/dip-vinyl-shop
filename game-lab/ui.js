@@ -1,74 +1,79 @@
-/* game-lab/ui.js — 品味對決 v2：外殼與所有非對決畫面（Agent U）。SPEC-v2 §2、§3.7、§4.4、§5.4–5.6、§8。
+/* game-lab/ui.js：品味對決 v3：外殼與所有非對決畫面（Agent U）。SPEC-v3 §9、§10.5＋主線補充（發燒配件保留、店內熱點有意義）。
  *
- * 版面（§2）：#app ＝ #top（32px 頂欄）＋ #stage（常駐像素店舞台，整個 session 只 mount 一次）＋ #panel（每個畫面的面板）。
+ * 版面：#app ＝ #top（32px 頂欄）＋ #stage（常駐像素店舞台，整個 session 只 mount 一次）＋ #panel（每個畫面的面板）。
  *   go(screen) 只做三件事：換 #top、stage.camera(鏡頭)＋擺小人、換 #panel。舞台不重建，所以門、雨、正在放的唱片、店裡的人都連續。
- *   唱片櫃／讀人圖鑑是蓋在舞台與面板上的整頁（.lb-page），舞台照樣在底下，不重掛。
- * 對決（§3）交給 duel.js（DipLabDuel.mount 在 #panel 裡）；進場／退場的鏡頭與面板編排在這裡（§3.7）：
- *   「！」＋黑條（fx.encounter2，店主拍板的遇敵特效）與鏡頭推近同時跑，整段約 1.5 s。
- * 唱片資訊（§4）：cardinfo.js（DipLabCardInfo.open）。畫面上每一張封面點一下就開（§4.4）。
+ * 一晚（SPEC-v3 §9）：標題（像素店）→ 序章劇本（店主定稿句）→ 猜歌／挑王牌 → 教學對決 → 收尾（掉出來的盤、發燒配件三選一）
+ *   → 今晚來客（一條，五顆頭像，不分岔）→ 對決（無縫推近；黑條只蓋在舞台上）→ 贏了挑他一張唱片（菁英／藏家：唱片或配件）
+ *   → 下一位 → 傳說藏家 → 打烊（走到幾點、贏了幾位、收了哪幾張）→ 再來一夜。每晚一次老闆說情（輸了重打同一位）。
+ * 對決交給 duel.js（DipLabDuel.mount 在 #panel 裡）；規則全在 engine.js（newRun／startFight／finishFight／choose）。
+ * 唱片資訊：cardinfo.js（DipLabCardInfo.open）。畫面上每一張封面點一下就開。
  * 規則：
- *  - 只寫 localStorage 'dipGameLab_v1'；不用 Firebase；不 DipPlayer.mount；執行期網路只有封面、試聽、/album-desc（DESC_OK 網域）。
- *  - 不宣告 dip-character.js 的同名全域（PIX_PAL、SPR_BODY、AVATAR_*）；整支包在 IIFE 裡，只掛 window.DipLabUI（＋?debug=1 的 window.__lab）。
- *  - UI 不算傷害：所有數字都來自 DipLabEngine；UI 不讀 intent.cellIdx。
- *  - 浮層（泡泡、章、飛卡、吐司、標題牌）pointer-events:none；只有面板、彈窗、教學遮罩吃點擊。
- *  - 不用 emoji 當圖示（⏸ 用 CSS 兩條直線、聲音收進 ⏸ 選單、配件用像素圖示）。
+ *  - 只寫 localStorage 'dipGameLab_v1'（存檔版本 3；舊版存檔安全丟掉）；不用 Firebase；不 DipPlayer.mount。
+ *  - 整支包在 IIFE 裡，只掛 window.DipLabUI（＋?debug=1 的 window.__lab）。
+ *  - UI 不算傷害、不讀 intent：所有數字都來自 DipLabEngine。
+ *  - 浮層（泡泡、章、飛卡、吐司、標題牌）pointer-events:none；只有面板、彈窗、教學遮罩、藏家登場卡吃點擊。
  */
 (function () {
   'use strict';
   var W = window, D = document;
-  var E = null, C = null;                         // DipLabEngine / DipLabContent（boot 時取）
+  var E = null, C = null;
   var KEY = 'dipGameLab_v1';
+  var SAVE_V = 3;                                   // v2 是 1；v3 規則全換，舊存檔一律丟掉（只留聲音偏好與小人）
   var QS = {};
   try { new URLSearchParams(location.search).forEach(function (v, k) { QS[k] = v; }); } catch (_) {}
   var DEBUG = QS.debug === '1';
   var FAST = QS.fast === '1';
   var ZH = { c: '經典', o: '冷門', h: '硬蕊' }, ZH1 = { c: '經', o: '冷', h: '硬' };
+  var ATTRS = ['c', 'o', 'h'];
   var TIERS = ['hall', 'pearl', 'heresy'];
-  var TIER_AXIS = { hall: 'c', pearl: 'o', heresy: 'h' };
 
   // ======================================================================= 小工具
   function FX() { return W.DipLabFx || null; }
   function CI() { return W.DipLabCardInfo || null; }
+  function TUT() { return W.DipLabTut || null; }
+  function DUEL() { return W.DipLabDuel || null; }
   function esc(s) { return String(s == null ? '' : s).replace(/[&<>"']/g, function (m) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[m]; }); }
   function el(tag, cls, html) { var e = D.createElement(tag); if (cls) e.className = cls; if (html != null) e.innerHTML = html; return e; }
   function qs(sel, root) { return (root || D).querySelector(sel); }
   function qsa(sel, root) { return Array.prototype.slice.call((root || D).querySelectorAll(sel)); }
+  function now() { return Date.now(); }
   function speed() { return FAST ? 4 : (save && save.settings && save.settings.fastAnim ? 2 : 1); }
   function wait(ms) { return new Promise(function (r) { setTimeout(r, Math.max(0, ms / speed())); }); }
   function rnd(n) { return Math.floor(Math.random() * n); }
   function pickR(a) { return a[rnd(a.length)]; }
   function shuffled(a) { a = a.slice(); for (var i = a.length - 1; i > 0; i--) { var j = rnd(i + 1), t = a[i]; a[i] = a[j]; a[j] = t; } return a; }
-  function card(id) { return (C && C.cards[id]) || null; }
-  function cardM(id) { var r = save && save.run; return r ? (E.cardWithMods(C, id, r.cardMods && r.cardMods[id]) || card(id)) : card(id); }
-  function sfx(n, o) { var f = FX(); if (f) try { f.sfx(n, o); } catch (e) { console.error(e); } }
-  function stopEv(e) { if (e) { e.stopPropagation(); } }
+  function card(id) { return (C && id && C.cards[id]) || null; }
+  function sfx(n, o) { var f = FX(); if (f && f.sfx) try { f.sfx(n, o); } catch (e) { console.error(e); } }
+  function stopEv(e) { if (e) e.stopPropagation(); }
   function rm() { var f = FX(); try { return !!(f && f.reducedMotion && f.reducedMotion()); } catch (_) { return false; } }
   function soundOn() { var f = FX(); try { return !!(f && f.soundOn && f.soundOn()); } catch (_) { return false; } }
-  function line(k, sub) { var L = C && C.shopLines; var v = L && L[k]; if (sub != null && v && typeof v === 'object') v = v[sub]; return typeof v === 'string' ? v : ''; }
+  function line(k, sub) { var L = C && C.shopLines; var v = L && L[k]; if (sub != null && v && typeof v === 'object' && !Array.isArray(v)) v = v[sub]; return typeof v === 'string' ? v : ''; }
   function todayKey() { var d = new Date(); return d.getFullYear() + '-' + ('0' + (d.getMonth() + 1)).slice(-2) + '-' + ('0' + d.getDate()).slice(-2); }
   function seedKey() { return UI.seedOverride || (QS.seed ? String(QS.seed) : todayKey()); }
   function dateLabel(k) { var m = /^(\d{4})-?(\d{2})-?(\d{2})$/.exec(String(k || '')); return m ? m[2] + '/' + m[3] : String(k || ''); }
   function nightLabel(run) { return run ? esc(dateLabel(run.seedKey)) + ' 的雨夜<small>#' + run.nightNo + '</small>' : esc(dateLabel(seedKey())) + ' 的雨夜'; }
+  function fill(s, o) { return String(s || '').replace(/\{(\w+)\}/g, function (m, k) { return o && o[k] != null ? o[k] : m; }); }
+  function dt(k, o) { var T = (C && C.duelText) || {}; return fill(T[k] || '', o); }
+  // 經典／冷門／硬蕊 三個字上屬性色（esc 之後再換）
+  function colorZh(s) { return esc(s).replace(/經典|冷門|硬蕊/g, function (w) { var a = w === '經典' ? 'c' : w === '冷門' ? 'o' : 'h'; return '<b class="' + a + '">' + w + '</b>'; }); }
 
-  // ======================================================================= 存檔（SPEC-v1 §7.6；v2 加 world、tutorialDone）
+  // ======================================================================= 存檔
   var save = null;
   function defSave() {
-    return { v: 1, seen: {}, settings: { fastAnim: false, sound: null }, player: null, run: null, nights: [],
-      best: { score: 0, clears: 0, bySeedKey: {} }, shelf: {}, book: {}, unlocks: { secondNightTeaser: false },
-      world: { at: 'dip', open: ['dip'], cleared: [] }, tutorialDone: false };
+    return { v: SAVE_V, seen: {}, learned: {}, settings: { fastAnim: false, sound: null }, player: null, run: null, nights: [],
+      best: { clears: 0, bySeedKey: {} }, shelf: {}, relics: [], unlocks: { secondNightTeaser: false },
+      tutorialDone: false, prologueDone: false, lastAce: null };
   }
-  var RUN_SV = 1;        // run 的存檔格式版本：對不上就不續玩
-  var NODE_STEPS = /^(crate|crateCard|listen|listenKeep|event|rest)$/;
   function validRun(r) {
     try {
-      if (!r || typeof r !== 'object') return false;
-      if (r.sv != null && r.sv !== RUN_SV) return false;
-      if (!r.map || !Array.isArray(r.map.cols) || !r.map.cols.length || !Array.isArray(r.deck) || typeof r.hp !== 'number' || !Array.isArray(r.visited) || !r.stats) return false;
+      if (!r || typeof r !== 'object' || r.v !== 3) return false;
+      if (!Array.isArray(r.bag) || !Array.isArray(r.order) || !r.order.length || !Array.isArray(r.relics) || !r.stats || TIERS.indexOf(r.ace) < 0) return false;
+      if (r.order.some(function (id) { return !C.enemies[id]; })) return false;
+      if (r.bag.some(function (id) { return !card(id); })) return false;
       var p = r.pending;
-      if (p && !/^(duel|reward|node)$/.test(p.type)) return false;
-      if (p && !E.findNode(r, p.nodeId)) return false;
-      if (p && p.type === 'node' && !NODE_STEPS.test(p.step || '')) return false;
-      if (p && p.type === 'reward' && !p.offer) return false;
+      if (p && !/^(reward|retry)$/.test(p.type)) return false;
+      if (p && p.type === 'reward' && (!Array.isArray(p.cards) || !Array.isArray(p.relics))) return false;
+      if (r.duel && (!r.duel.e || !r.duel.p)) return false;
       if (!r.over && !E.nextStep(r)) return false;
       return true;
     } catch (_) { return false; }
@@ -77,15 +82,24 @@
     var s = null;
     try { var raw = W.localStorage.getItem(KEY); if (raw) s = JSON.parse(raw); } catch (_) { s = null; }
     var d = defSave();
-    if (s && typeof s === 'object' && typeof s.v === 'number' && s.v > 1) { UI.saveReadOnly = true; return d; }
-    if (!s || typeof s !== 'object' || s.v !== 1) return d;
+    if (s && typeof s === 'object' && typeof s.v === 'number' && s.v > SAVE_V) { UI.saveReadOnly = true; return d; }   // 比這版新：不覆寫
+    if (!s || typeof s !== 'object' || s.v !== SAVE_V) {
+      // 舊版（v1／v2 的 v:1）：規則與資料形狀都不一樣，整份丟掉；只帶走聲音偏好與小人（不是遊戲狀態）
+      if (s && typeof s === 'object') {
+        try { if (s.settings && typeof s.settings.sound === 'boolean') d.settings.sound = s.settings.sound; } catch (_) {}
+        try { if (s.player && s.player.avatar && typeof s.player.avatar === 'object') d.player = { name: '你', avatar: s.player.avatar }; } catch (_) {}
+        UI.discardedOld = true;
+      }
+      return d;
+    }
     for (var k in d) if (s[k] == null || typeof s[k] !== typeof d[k]) s[k] = d[k];
     s.settings = Object.assign({}, d.settings, s.settings || {});
     s.best = Object.assign({}, d.best, s.best || {});
     if (!s.best.bySeedKey || typeof s.best.bySeedKey !== 'object') s.best.bySeedKey = {};
     s.unlocks = Object.assign({}, d.unlocks, s.unlocks || {});
-    s.world = Object.assign({}, d.world, s.world || {}); s.world.at = 'dip';
     if (!Array.isArray(s.nights)) s.nights = [];
+    if (!Array.isArray(s.relics)) s.relics = [];
+    s.relics = s.relics.filter(function (id) { return C.relics && C.relics[id]; }).slice(0, 3);
     if (s.run && !validRun(s.run)) s.run = null;
     return s;
   }
@@ -93,24 +107,17 @@
     if (UI.saveReadOnly || UI.noSave) return;
     try { W.localStorage.setItem(KEY, JSON.stringify(save)); } catch (_) { /* 寫不進去不影響遊戲 */ }
   }
-  function knownHabits() { var o = {}; for (var id in save.book) { var b = save.book[id]; if (b && b.habits && b.habits.length) o[id] = true; } return o; }
-  function knownCards() { var o = {}; for (var id in save.shelf) o[id] = true; return o; }
+  // 唱片櫃：at＝哪一晚第一次認識；seen＝打開唱片櫃看過了沒（NEW 只標「今晚新認識、還沒看過」的，ART-17）
+  function nightTag(r) { r = r || save.run; return r ? r.seedKey + '#' + r.nightNo : seedKey(); }
   function shelfAdd(id) {
     if (!id || !card(id) || save.shelf[id]) return false;
-    save.shelf[id] = { first: (save.run && save.run.seedKey) || seedKey(), heard: false, isNew: true };
+    save.shelf[id] = { at: nightTag(), seen: false };
     return true;
   }
-  function shelfSync() { var r = save.run; if (!r || !r.stats) return; (r.stats.metIds || []).forEach(shelfAdd); }
-  function bookOf(id) {
-    var b = save.book[id];
-    if (!b) b = save.book[id] = { met: true, beaten: 0, lost: 0, habits: [] };
-    if (!Array.isArray(b.habits)) b.habits = [];
-    return b;
-  }
-  function bookHabit(enemyId, glyph) { if (!enemyId || !glyph) return; var b = bookOf(enemyId); if (b.habits.indexOf(glyph) < 0) b.habits.push(glyph); }
+  function isNewOnShelf(id) { var s = save.shelf[id]; return !!(s && !s.seen && s.at === nightTag()); }
 
   // ======================================================================= 像素小人、配件圖示
-  // LAB_SPR＝roguelike.html L1378–1426 的 SPR 整段（依賴 dip-character.js 的 sprRows；不宣告它的同名全域）
+  // LAB_SPR＝roguelike.html 的 SPR 整段（依賴 dip-character.js 的 sprRows；不宣告它的同名全域）
   var LAB_SPR = null;
   function labSpr() {
     if (LAB_SPR) return LAB_SPR;
@@ -125,54 +132,42 @@
       e5: sr(['................', '.....kkkkkk.....', '....kkkkkkkk....', '...kksssssskk...', '...kksksskskk...', '...kssssssssk...', '.....ssssss.....'], 'k', 'k'),
       e6: sr(['................', '.....oooooo.....', '.....oooooo.....', '...oooooooooo...', '....ssksskss....', '....ssssssss....', '.....ssssss.....'], 'p', 'k'),
       e7: sr(['....y.y..y.y....', '....yyyyyyyy....', '....kkkkkkkk....', '....kssssssk....', '....ssksskss....', '....ssssssss....', '.....ssssss.....'], 'p', 'p'),
-      boss: sr(['.....kkkkkk.....', '.....kkkkkk.....', '.....kkkkkk.....', '...kkkkkkkkkk...', '....ssssssss....', '....sskssyys....', '.....ssssss.....'], 'k', 'k', { 7: '....kkwrrwkk....', 8: '...kkkwrrwkkk...' }),
-      guard: sr(['................', '.....kkkkkk.....', '....kkkkkkkk....', '....kssssssk....', '....ssksskss....', '....ssssssss....', '.....ssssss.....'], 'b', 'k'),
-      digger: sr(['................', '.....nnnnnn.....', '..nnnnnnnnnn....', '....kssssssk....', '....ssksskss....', '....ssssssss....', '.....ssssss.....'], 'n', 'd'),
-      heretic: sr(['....k.k..k.k....', '....kkkkkkkk....', '....kkkkkkkk....', '....kssssssk....', '....ssksskss....', '....ssssssss....', '.....ssssss.....'], 'r', 'k')
+      boss: sr(['.....kkkkkk.....', '.....kkkkkk.....', '.....kkkkkk.....', '...kkkkkkkkkk...', '....ssssssss....', '....sskssyys....', '.....ssssss.....'], 'k', 'k', { 7: '....kkwrrwkk....', 8: '...kkkwrrwkkk...' })
     };
-    LAB_SPR.brokenrec = ['............', '...kk.kkk...', '..kkk.kkkk..', '.kkkk.kkkkk.', '.kkkkg.kkkk.', '.kkkg..gkkk.', '.kkkg..gkkk.', '.kkkk.gkkkk.', '.kkkk.kkkkk.', '..kkk.kkkk..', '...kkkkkk...', '............'];
     LAB_SPR.owner = sr(['................', '.....dddddd.....', '....dddddddd....', '....dssssssd....', '....ekkeekke....', '....sdssssds....', '.....dddddd.....'], 'w', 'd', { 8: '...wnnnnnnnnw...', 9: '...snnnnnnnns...', 10: '...snnnnnnnns...', 11: '....nnnnnnnn....' });
     return LAB_SPR;
   }
-  // 配件圖示：roguelike.html PIX_ICONS_LV[icon][0]
+  // 發燒配件圖示（roguelike.html PIX_ICONS_LV[icon][0]；只留 v3 的六件）
   var LAB_ICONS = {
     stylus: ['............', '.........kk.', '........kk..', '.......kk...', '......kk....', '.....kk.....', '....kk......', '...kk.......', '..kk........', '.kkk........', '.kkd........', '............'],
     dustcover: ['............', '..dddddddd..', '.d........d.', '.d.kkkkkk.d.', '.d.k....k.d.', '.d.kkkkkk.d.', '.d........d.', '.dddddddddd.', '.kkkkkkkkkk.', '............', '............', '............'],
     testpress: ['............', '...kkkkkk...', '..kkkkkkkk..', '.kkkwwwwkkk.', '.kkwwwwwwkk.', '.kkwwwwwwkk.', '.kkwwwwwwkk.', '.kkwwwwwwkk.', '.kkwwwwwwkk.', '.kkkwwwwkkk.', '..kkkkkkkk..', '...kkkkkk...'],
-    pointcard: ['............', '............', '.kkkkkkkkkk.', '.kwwwwwwwwk.', '.kwgwwwwwwk.', '.kwwwwwwwwk.', '.kwwwwwwwwk.', '.kwwwwwwwwk.', '.kwwwwwkkwk.', '.kkkkkkkkkk.', '............', '............'],
-    adapter45: ['............', '....kkkk....', '..kkkkkkkk..', '..kk....kk..', '.kk......kk.', '.kk......kk.', '.kk......kk.', '.kk......kk.', '..kk....kk..', '..kkkkkkkk..', '....kkkk....', '............'],
     cleaner: ['....kkk.....', '...kkkkk....', '...kk.......', '...kkkk.....', '...kwwk.....', '..kwwwwk....', '..kwwwwk....', '..kwwwwk....', '..kwbbwk....', '..kwbbwk....', '..kkkkkk....', '............'],
     obi: ['....kkkk....', '....kwwk....', '....kwwk....', '....kwwk....', '....kkwk....', '....kwwk....', '....kwkk....', '....kwwk....', '....kkwk....', '....kwwk....', '....kkkk....', '............'],
-    gauge: ['............', '..kkkkkkkk..', '.k........k.', '.k...kk...k.', '.k...kk...k.', '.k....k...k.', '.kkkkkkkkkk.', '....kkkk....', '............', '............', '............', '............'],
-    heavy180: ['............', '...kkkkkk...', '..kkkkkkkk..', '.kkkkkkkkkk.', '.kkkkddkkkk.', '.kkkd..dkkk.', '.kkkd..dkkk.', '.kkkkddkkkk.', '.kkkkkkkkkk.', '..kkkkkkkk..', '...kkkkkk...', '............'],
-    matrix: ['............', '...kkkkkk...', '..kkkkkkkk..', '.kkkkkkkkkk.', '.kw.....wkk.', '.kkkddddkkk.', '.kkkd..dkkk.', '.kkkddddkkk.', '.kkkkkkkkkk.', '..kkkkkkkk..', '...kkkkkk...', '............'],
-    headphone: ['............', '....kkkk....', '...kk..kk...', '..kk....kk..', '..k......k..', '..k......k..', '.kkk....kkk.', '.kkk....kkk.', '.kkk....kkk.', '.kkk....kkk.', '............', '............'],
-    isolation: ['............', '............', '............', '.kkkkkkkkkk.', '...d....d...', '...d....d...', '...d....d...', '.kkkkkkkkkk.', '............', '............', '............', '............'],
-    firstpress: ['............', '...kkkkkk...', '..kkkkkkkk..', '.kkkkkkkkkk.', '.kkkkkkkkkk.', '.kkkkggkkkk.', '.kkkkggkkkk.', '.kkkkkkkkkk.', '.kkkkkkkkkk.', '..kkkkkkkk..', '...kkkkkk...', '............']
+    headphone: ['............', '....kkkk....', '...kk..kk...', '..kk....kk..', '..k......k..', '..k......k..', '.kkk....kkk.', '.kkk....kkk.', '.kkk....kkk.', '.kkk....kkk.', '............', '............']
   };
   function pix(rows, size, cls) { return (typeof W.pixArtHTML === 'function' && rows) ? W.pixArtHTML(rows, size, cls) : ''; }
+  function relicOf(id) { return (C && C.relics && C.relics[id]) || null; }
   function relicIcon(id, size) {
-    var r = C && C.relics[id]; var rows = r && LAB_ICONS[r.icon];
-    return rows ? pix(rows, size || 24) : '<span class="lb-ri">' + esc((r && r.name || '?').slice(0, 1)) + '</span>';
+    var r = relicOf(id); var rows = r && LAB_ICONS[r.icon];
+    var h = rows ? pix(rows, size || 24) : '';
+    return h || '<span class="lb-ri">' + esc((r && r.name || '?').slice(0, 1)) + '</span>';
   }
   function sprRowsOf(key) {
     if (key && typeof key === 'object') return (typeof W.avatarRows === 'function') ? W.avatarRows(key) : null;
     var S = labSpr(); return S[key] || S.e0;
   }
   function sprHTML(key, size) { var rows = sprRowsOf(key); return rows ? pix(rows, size || 96) : ''; }
-  function headHTML(key, size) { var rows = sprRowsOf(key); return rows ? pix(rows.slice(0, 10), size || 30) : ''; }   // 頭＋肩（地圖節點、預覽）
-  function enemySpr(enemy) { return enemy ? (enemy.avatar || enemy.spr || 'e0') : 'e0'; }
+  function headHTML(key, size) { var rows = sprRowsOf(key); return rows ? pix(rows.slice(0, 10), size || 30) : ''; }   // 頭＋肩
+  function enemySpr(en) { return en ? (en.avatar || en.spr || 'e0') : 'e0'; }
   function playerAv() { return (save.player && save.player.avatar) || (C.avatarsFallback && C.avatarsFallback[0]) || { head: 'neat' }; }
-  function playerName() { return (save.player && save.player.name) || '你'; }
   function ensurePlayer() {
     if (save.player && save.player.avatar) return;
     var me = null; try { me = W.DipChar && W.DipChar.load(); } catch (_) {}
-    var av = me && me.avatar ? me.avatar : pickR(C.avatarsFallback || [{ head: 'neat' }]);
-    var nm = me && me.name ? me.name : pickR(C.names || ['你']);
-    save.player = { name: nm, avatar: av };
+    save.player = { name: '你', avatar: me && me.avatar ? me.avatar : pickR(C.avatarsFallback || [{ head: 'neat' }]) };
   }
 
-  // ======================================================================= 常駐舞台（DipLabStage；§2、§5.3）
+  // ======================================================================= 常駐舞台（DipLabStage）
   // 舞台還沒好（或載入失敗）時，所有呼叫都是空操作：遊戲照樣能玩
   function stg(m) {
     var s = UI.stage; if (!s || typeof s[m] !== 'function') return null;
@@ -180,25 +175,24 @@
     try { return s[m].apply(s, a); } catch (e) { console.error(e); return null; }
   }
   function stgP() { var r = stg.apply(null, arguments); return (r && typeof r.then === 'function') ? r.then(null, function (e) { console.error(e); }) : Promise.resolve(r); }
-  // 鏡頭：name＝full|reward|strip；screen 決定矮螢幕規則的面板最少高
-  function cam(name, screen, ms) {
+  // 鏡頭：name＝full|reward|strip；screen＝矮螢幕規則；panelMin＝面板至少要多高（量出來的，B-title-375-clipped）
+  function cam(name, screen, ms, panelMin) {
     UI.camName = name;
     if (ms == null) ms = UI.camQuick ? 0 : 450;
-    return stgP('camera', name, { ms: Math.round(ms / speed()), screen: screen });
+    var o = { ms: Math.round(ms / speed()), screen: screen };
+    if (panelMin != null) o.panelMin = panelMin;
+    return stgP('camera', name, o);
   }
   function anchorOf(id) { return stg('anchor', id); }
   function stageSay(id, text, tone, ms) { if (text) stg('say', id, text, { tone: tone || (id === 'o' ? 'owner' : null), ms: ms == null ? 2600 : ms }); }
-  // 小人站位：put 一次就留在舞台上，換畫面不會消失；每個畫面只擺需要的
   function place(id, spot, spr) {
-    if (spr === 'player') spr = save && save.player ? playerAv() : 'player';   // 換了造型也會重畫（'player' 字串會被舞台快取）
-    stg('put', id, spot, spr); stg('hide', id, false);
-    stg('sil', id, false);   // 剪影只在門外排隊時用；換位置一律先清掉（呼叫端要剪影會在 place 之後再設）。修：重新整理後接押盤，你變成黑色剪影
+    if (spr === 'player') spr = playerAv();
+    stg('put', id, spot, spr); stg('hide', id, false); stg('sil', id, false);
   }
   function hideActor(id) { if (UI.stage && stg('has', id)) stg('hide', id, true); }
   function resetPoses() { ['p', 'f', 'o'].forEach(function (id) { stg('pose', id, null); stg('emote', id, null); stg('say', id, null); }); stg('untag'); }
 
   // ======================================================================= 封面、三軸、卡片
-  var ATTRS = ['c', 'o', 'h'];
   function coverSrc(c) { return c ? (c.localCover || c.coverUrl || '') : ''; }
   function rarityCls(c) {
     if (!c) return '';
@@ -207,45 +201,39 @@
     var s = (c.c || 0) + (c.h || 0) + ((c.o || 0) >= 5 ? 1 : 0);
     return s >= 9 ? 'r-legendary' : s >= 8 ? 'r-epic' : s >= 7 ? 'r-uncommon' : s >= 6 ? 'r-rare' : 'r-common';
   }
-  // 封面：點一下＝唱片資訊（data-info）。img 一律 draggable=false（B06）
+  // 封面：點一下＝唱片資訊（data-info）。img 一律 draggable=false
   function coverHTML(c, o) {
     o = o || {};
-    if (!c) return '<span class="lb-cv"></span>';
+    if (!c) return '<span class="lb-cv empty"></span>';
     var st = o.size ? ' style="width:' + o.size + 'px;height:' + o.size + 'px"' : '';
     var badge = '';
     if (c.tier && o.badge !== false) badge = '<span class="badge ' + c.tier + '">' + esc((C.aceTitle || {})[c.tier] || '') + '</span>';
     else if (c.gold && o.badge !== false) badge = '<span class="badge gold">私藏</span>';
     if (o.isNew) badge += '<span class="badge new">NEW</span>';
-    if (c.washed) badge += '<span class="badge mod">洗過</span>';
-    else if (c.worn) badge += '<span class="badge mod">九成新</span>';
     var src = coverSrc(c);
     return '<span class="lb-cv ' + (o.frame === false ? '' : rarityCls(c)) + (o.sel ? ' sel' : '') + '"' + st + (o.info === false ? '' : ' data-info="1" data-cid="' + esc(c.id) + '"') +
       ' role="img" aria-label="' + esc(c.artist + '《' + c.album + '》') + '"><span class="alt" aria-hidden="true">' + esc(c.album) + '</span>' +
       (src ? '<img alt="" src="' + esc(src) + '" loading="lazy" draggable="false" onerror="this.remove()">' : '') + badge + '</span>';
   }
-  // 三軸一行：經5冷3硬3（字＋色一起出現）
   function starsHTML(c, o) {
     o = o || {};
     if (!c) return '';
-    var base = o.base || null;
     return '<span class="stars' + (o.cls ? ' ' + o.cls : '') + '">' + ATTRS.map(function (a) {
-      var up = base && (c[a] || 0) > (base[a] || 0);
-      return '<b class="' + a + (up ? ' up' : '') + '"><i>' + ZH1[a] + '</i>' + (c[a] || 0) + '</b>';
+      return '<b class="' + a + (o.mark === a ? ' mk' : '') + '"><i>' + ZH1[a] + '</i>' + (c[a] || 0) + '</b>';
     }).join('') + '</span>';
   }
-  // 卡片：封面（點＝資訊）＋藝人／專輯＋三軸＋「選這張」。點卡片其他地方＝選（§4.4）
   function tileHTML(c, o) {
     o = o || {};
     if (!c) return '';
     var cls = 'lb-ct' + (o.sel ? ' sel' : '') + (o.cls ? ' ' + o.cls : '');
     return '<div class="' + cls + '" data-cid="' + esc(c.id) + '"' + (o.data ? ' ' + o.data : '') + '>' + coverHTML(c, o) +
       (o.text === false ? '' : '<div class="ar">' + esc(c.artist) + '</div><div class="al">' + esc(c.album) + '</div>') +
-      (o.stars === false ? '' : starsHTML(c, { base: o.base })) + (o.extra || '') +
+      (o.stars === false ? '' : starsHTML(c)) + (o.extra || '') +
       (o.pick ? '<button type="button" class="lb-pickb key" data-pick="' + esc(c.id) + '"' + (o.disabled ? ' disabled' : '') + '>' + esc(o.pick) + '</button>' : '') + '</div>';
   }
   function info(c, o) {
     var ci = CI(); if (!c || !ci) return Promise.resolve();
-    if (typeof c === 'string') c = cardM(c) || card(c);
+    if (typeof c === 'string') c = card(c);
     return ci.open(c, o || {});
   }
   // 封面點一下＝唱片資訊（capture：先於面板自己的「選」處理）
@@ -263,82 +251,126 @@
   }
 
   // ======================================================================= 頂欄（32px）、彈窗
+  // 換畫面後 380 ms 內的頂欄點擊不算（B-topbar-doubletap-pingpong：台北 ×2 進去又出來）
+  function topTapOk(e) { return !(e && e.isTrusted && now() - (UI.screenAt || 0) < 380); }
   function setTop(left, o) {
     o = o || {};
     var bar = UI.top; bar.innerHTML = '';
     bar.appendChild(el('div', 'tt', left));
     if (o.chips) o.chips.forEach(function (c) { bar.insertAdjacentHTML('beforeend', c); });
-    if (o.hp && save.run) bar.insertAdjacentHTML('beforeend', '<span class="lb-hpchip' + (save.run.hp <= save.run.maxHp * 0.3 ? ' low' : '') + '">聲望 <b>' + save.run.hp + '/' + save.run.maxHp + '</b></span>');
-    if (o.links) o.links.forEach(function (l) { var b = el('button', 'lnk', esc(l[0])); b.type = 'button'; b.setAttribute('data-a', l[2] || ''); b.addEventListener('click', function (e) { stopEv(e); if (UI.going) return; l[1](); }); bar.appendChild(b); });
+    if (o.links) o.links.forEach(function (l) {
+      var b = el('button', 'lnk', esc(l[0])); b.type = 'button'; b.setAttribute('data-a', l[2] || '');
+      b.addEventListener('click', function (e) { stopEv(e); if (UI.going || !topTapOk(e)) return; l[1](); });
+      bar.appendChild(b);
+    });
     if (o.skip) { var sk = el('button', 'ti skip', '<span class="ff" aria-hidden="true"></span>'); sk.type = 'button'; sk.setAttribute('aria-label', '快轉到下一個選擇'); sk.addEventListener('click', function (e) { stopEv(e); o.skip(); }); bar.appendChild(sk); }
-    if (o.help) { var hb = el('button', 'ti', '?'); hb.type = 'button'; hb.setAttribute('aria-label', '小抄'); hb.setAttribute('data-tut', 'help'); hb.addEventListener('click', function (e) { stopEv(e); if (UI.going) return; openHelp(); }); bar.appendChild(hb); }
-    if (o.pause) { var pb = el('button', 'ti', '<span class="pz" aria-hidden="true"></span>'); pb.type = 'button'; pb.setAttribute('aria-label', '暫停選單'); pb.addEventListener('click', function (e) { stopEv(e); if (UI.going) return; openSettings(); }); bar.appendChild(pb); }
-    if (o.close) { var cb = el('button', 'lnk', esc(o.closeLabel || '關閉')); cb.type = 'button'; cb.setAttribute('aria-label', '關閉'); cb.setAttribute('data-a', 'close'); cb.addEventListener('click', function (e) { stopEv(e); o.close(); }); bar.appendChild(cb); }
+    if (o.help) { var hb = el('button', 'ti', '?'); hb.type = 'button'; hb.setAttribute('aria-label', '規則'); hb.setAttribute('data-tut', 'help'); hb.setAttribute('data-a', 'help'); hb.addEventListener('click', function (e) { stopEv(e); if (UI.going || !topTapOk(e)) return; openRules(); }); bar.appendChild(hb); }
+    if (o.pause) { var pb = el('button', 'ti', '<span class="pz" aria-hidden="true"></span>'); pb.type = 'button'; pb.setAttribute('aria-label', '暫停選單'); pb.setAttribute('data-a', 'pause'); pb.addEventListener('click', function (e) { stopEv(e); if (UI.going || !topTapOk(e)) return; openSettings(); }); bar.appendChild(pb); }
   }
+  // 彈窗開在對決上：盤面 hold（計時與動畫停住、不收點擊；B-pause-not-pausing）
+  function duelHold(on) { var Dl = DUEL(); if (UI.screen === 'duel' && Dl && Dl.hold && Dl.api && Dl.api()) { try { Dl.hold(on); return true; } catch (e) { console.error(e); } } return false; }
   function modal(cls, html, onClose, o) {
     o = o || {};
     closeModal();
     var m = el('div', 'lb-modal');
     m.innerHTML = '<div class="pane ' + (cls || '') + '" role="dialog" aria-modal="true">' + html + (o.foot === false ? '' : '<div class="mfoot"><button type="button" class="lb-btn pri wide" data-x="1">關閉</button></div>') + '</div>';
-    var close = function () { if (m.parentNode) m.remove(); UI.modal = null; if (m._off) m._off.forEach(function (f) { try { f(); } catch (_) {} }); if (onClose) onClose(); };
+    var held = duelHold(true);
+    var close = function () {
+      if (m.parentNode) m.remove(); UI.modal = null;
+      if (m._off) m._off.forEach(function (f) { try { f(); } catch (_) {} });
+      if (held) { held = false; duelHold(false); }
+      if (onClose) onClose();
+    };
     m.addEventListener('click', function (e) { if (e.target === m) close(); });
     var xb = qs('[data-x]', m); if (xb) xb.addEventListener('click', function (e) { stopEv(e); close(); });
     m._keyH = function (e) { if (e.key === 'Escape' && UI.modal && UI.modal.el === m && !(CI() && CI().isOpen())) { e.preventDefault(); close(); } };
     D.addEventListener('keydown', m._keyH);
     m._off = [function () { D.removeEventListener('keydown', m._keyH); }];
     D.body.appendChild(m);
+    bindInfoTaps(m);
+    guardClicks(m);
     UI.modal = { el: m, close: close };
     return m;
   }
   function closeModal() { if (UI.modal) { var c = UI.modal.close; UI.modal = null; c(); } }
-  // ---- 小抄（相剋三角＋短表；最下面「重看教學」）
+
+  // ---- 規則卡（「?」；SPEC-v3 §0，圖 v3/final/rule-card.png）：三角＋六行＋一個例子＋學會的規則＋重看教學
   function triSVG() {
-    return '<svg class="tri" viewBox="0 0 220 150" role="img" aria-label="相剋三角：冷門剋經典、經典剋硬蕊、硬蕊剋冷門">' +
-      '<defs>' + ['c', 'o', 'h'].map(function (a) { var col = { c: '#1f5fae', o: '#6a3fa0', h: '#c11628' }[a]; return '<marker id="lbAh' + a + '" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 z" fill="' + col + '"/></marker>'; }).join('') + '</defs>' +
-      '<text x="110" y="18" text-anchor="middle" font-size="14" font-weight="700" fill="#6a3fa0">冷門</text>' +
-      '<text x="24" y="142" text-anchor="middle" font-size="14" font-weight="700" fill="#1f5fae">經典</text>' +
-      '<text x="196" y="142" text-anchor="middle" font-size="14" font-weight="700" fill="#c11628">硬蕊</text>' +
-      '<line x1="98" y1="28" x2="36" y2="118" stroke="#6a3fa0" stroke-width="2.5" marker-end="url(#lbAho)"/>' +
-      '<line x1="50" y1="137" x2="166" y2="137" stroke="#1f5fae" stroke-width="2.5" marker-end="url(#lbAhc)"/>' +
-      '<line x1="184" y1="118" x2="122" y2="28" stroke="#c11628" stroke-width="2.5" marker-end="url(#lbAhh)"/></svg>';
+    var t = function (x, y, s) { return '<text x="' + x + '" y="' + y + '" font-size="' + s + '" font-weight="900" text-anchor="middle" fill="#111">剋</text>'; };
+    var n = function (cx, cy, col, ch) { return '<circle cx="' + cx + '" cy="' + cy + '" r="36" fill="' + col + '"/><text x="' + cx + '" y="' + (cy + 12) + '" font-size="32" font-weight="900" text-anchor="middle" fill="#fff">' + ch + '</text>'; };
+    return '<svg class="tri" viewBox="0 0 280 236" role="img" aria-label="冷門剋經典，經典剋硬蕊，硬蕊剋冷門">' +
+      '<defs><marker id="lbRuleAh" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="4.2" markerHeight="4.2" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#111"/></marker></defs>' +
+      '<line x1="72" y1="162" x2="119" y2="78" stroke="#111" stroke-width="4" marker-end="url(#lbRuleAh)"/>' +
+      '<line x1="161" y1="78" x2="208" y2="162" stroke="#111" stroke-width="4" marker-end="url(#lbRuleAh)"/>' +
+      '<line x1="196" y1="196" x2="88" y2="196" stroke="#111" stroke-width="4" marker-end="url(#lbRuleAh)"/>' +
+      t(80, 112, 17) + t(200, 112, 17) + t(140, 224, 17) +
+      n(140, 44, '#1f5fae', '經') + n(232, 196, '#c11628', '硬') + n(48, 196, '#6a3fa0', '冷') + '</svg>';
+  }
+  // 例子：他亮出／你點，三種「他丟哪色」的結果由 engine.clash 算（UI 不算傷害）
+  function ruleExampleHTML() {
+    var R = C.rules || {}, ex = R.example; if (!ex) return '';
+    var eC = card(ex.eCard), pC = card(ex.pCard), pa = ex.pAttr || 'h';
+    if (!eC || !pC || !E.clash) return '';
+    var hab = (C.habits[ex.habit] || {}).line || '';
+    var read0 = (ex.read || [])[0] || '', hAttr = null, best = -1;
+    ATTRS.forEach(function (a) { var i = read0.lastIndexOf(ZH[a]); if (i > best) { best = i; hAttr = a; } });
+    var order = [hAttr || 'o'].concat([pa], ATTRS).filter(function (a, k, arr) { return arr.indexOf(a) === k; });
+    var rows = order.map(function (ea) {
+      var r = E.clash(pC[pa] | 0, pa, eC[ea] | 0, ea), txt;
+      if (r.kind === 'counter') txt = esc(dt('counter', { who: dt('you'), ace: '', a: ZH[pa], b: ZH[ea] })) + '　<b class="g">' + esc(dt('hitE', { n: r.toE })) + '</b>' + (ea === hAttr ? '<span class="gold">' + esc(dt('seeThrough').replace(/！$/, '')) + '</span>' : '');
+      else if (r.kind === 'countered') txt = esc(dt('counter', { who: dt('he'), ace: '', a: ZH[ea], b: ZH[pa] })) + '　<b class="r">' + esc(dt('hitP', { n: r.toP })) + '</b>';
+      else if (r.kind === 'tie') txt = esc(dt('tie')) + '　<b>' + esc(dt('nothing')) + '</b>';
+      else txt = esc(dt('mirror', { x: pC[pa] | 0, y: eC[ea] | 0 })) + '　<b class="' + (r.toE ? 'g' : 'r') + '">' + esc(r.toE ? dt('hitE', { n: r.toE }) : dt('hitP', { n: r.toP })) + '</b>';
+      return '<div><span class="p">' + esc(fill(ex.rowLabel || '他丟{attr} {n}', { attr: ZH[ea], n: eC[ea] | 0 })) + '</span><span>' + txt + '</span></div>';
+    }).join('');
+    var rec = function (lab, c, mark) {
+      return '<div class="rec">' + coverHTML(c, { size: 46, frame: false, badge: false }) + '<div class="t"><small>' + esc(lab) + '</small>' + esc(c.artist + '《' + c.album + '》') + '<br>' + starsHTML(c, { mark: mark }) + '</div></div>';
+    };
+    return '<div class="ex"><div class="hd">' + esc(ex.title || '') + '</div><div class="bd">' +
+      '<div class="habit"><span class="lb">' + esc((C.habitLabels || {}).base || '脾氣') + '</span><span class="tx">' + esc(hab) + '</span></div>' +
+      '<div class="step"><span class="k">讀</span><div>' + (ex.read || []).map(colorZh).join('<br>') + '</div></div>' +
+      rec(ex.eLabel || '他亮出', eC) + rec(ex.pLabel || '你點', pC, pa) + '<div class="out">' + rows + '</div></div></div>';
   }
   function learnedHTML() {
     var L = (C.tutorial && C.tutorial.learned) || null, got = save.learned || {};
     if (!L) return '';
     var names = Object.keys(L).filter(function (k) { return got[k]; }).map(function (k) { return L[k]; });
-    try { if (W.DipLabTut && W.DipLabTut.learned) W.DipLabTut.learned().forEach(function (t) { if (names.indexOf(t) < 0) names.push(t); }); } catch (_) {}
+    try { var T = TUT(); if (T && T.learned) T.learned().forEach(function (t) { if (names.indexOf(t) < 0) names.push(t); }); } catch (_) {}
     var ttl = (C.tutorial.ui && C.tutorial.ui.learnedTitle) || '學會的規則';
     return names.length ? '<div class="lb-h3">' + esc(ttl) + '</div><div class="lb-learned">' + names.map(function (t) { return '<span>' + esc(t) + '</span>'; }).join('') + '</div>' : '';
   }
-  function openHelp() {
-    var rows = C.helpRows || [], gl = C.helpGlyphs || [];
-    // v2 盤面上叫「他會出」（六格色條），小抄跟著用同一個詞（content.js 的鍵仍是「氣場唱盤」，duel.js 用它查）
-    var HELP_LABEL = { '氣場唱盤': '他會出' };
-    var body = rows.length ? '<dl class="lb-gl">' + rows.map(function (r) { return '<dt>' + esc(HELP_LABEL[r[0]] || r[0]) + '</dt><dd>' + esc(r[1]) + '</dd>'; }).join('') + '</dl>' +
-      (gl.length ? '<div class="lb-h3">他會出的字</div><div class="lb-glt">' + gl.map(function (g) { return '<span class="lb-glyph' + (g[0] === '晃' ? ' feint' : g[0] === '？' ? ' hidden' : '') + '">' + esc(g[0]) + '</span><span>' + esc(g[1]) + '</span>'; }).join('') + '</div>' : '')
-      : '<p>' + esc(C.help) + '</p>';
-    var canReplay = canTutorial() && UI.screen !== 'duel';
-    var m = modal('lb-help', '<h2>小抄</h2>' + triSVG() + body + learnedHTML() +
+  function rulesHTML() {
+    var R = C.rules || {};
+    var lines = (R.lines || []).map(function (s, i) { return '<li><span class="n">' + (i + 1) + '</span><div>' + (i === 0 ? colorZh(s) : esc(s)) + '</div></li>'; }).join('');
+    return '<div class="lb-rules"><h1>' + esc(R.title || '品味對決・規則') + '</h1><div class="rsub">' + esc(R.sub || '') + '</div>' + triSVG() +
+      '<ol class="rl">' + lines + '</ol>' + ruleExampleHTML() +
+      (R.relics ? '<p class="rrel">' + esc(R.relics) + '</p>' : '') +
+      '<div class="rfoot">' + (R.foot || []).map(esc).join('<br>') + '</div></div>';
+  }
+  function tutLabel(k, d) { var u = C && C.tutorial && C.tutorial.ui; return (u && typeof u[k] === 'string' && u[k]) || d; }
+  function openRules() {
+    var canReplay = canTutorial() && UI.screen !== 'duel' && !UI.tutReplay;
+    var m = modal('lb-help', rulesHTML() + learnedHTML() +
       (canReplay ? '<button type="button" class="lb-btn wide" data-a="replay">' + esc(tutLabel('replay', '重看教學')) + '</button>' : ''));
     var rb = qs('[data-a=replay]', m);
     if (rb) rb.addEventListener('click', function (e) { stopEv(e); closeModal(); replayTutorial(); });
+    return m;
   }
-  // ---- ⏸ 暫停選單（聲音、動畫加速、唱片櫃、讀人圖鑑、重看／跳過教學、重置）
+  // ---- ⏸ 暫停選單
   function nowPlayingLine() {
     var f = FX(), c = f && f.music && f.music.current && f.music.current();
     var on = !!(f && f.music && f.music.playing && f.music.playing());
     if (!c) return '';
     return '<button type="button" class="lb-np' + (on ? ' on' : '') + '" data-a="np" data-cid="' + esc(c.id) + '"><span class="rec" aria-hidden="true"></span><span class="k">' + (on ? '播放中' : '暫停中') + '</span><b>' + esc(c.artist) + '《' + esc(c.album) + '》</b></button>';
   }
-  function tutLabel(k, d) { var u = C && C.tutorial && C.tutorial.ui; return (u && typeof u[k] === 'string' && u[k]) || d; }
   function swHTML(on) { return '<span class="sw' + (on ? ' on' : '') + '">' + (on ? '開' : '關') + '</span>'; }
   function openSettings() {
     var S = save.settings, armed = false;
-    var tutOn = !!(W.DipLabTut && W.DipLabTut.active && W.DipLabTut.active());
+    var T = TUT(), tutOn = !!(T && T.active && T.active());
     var html = '<h2>暫停</h2>' + nowPlayingLine() + '<div class="lb-menu">' +
       '<button type="button" class="lb-btn pri big" data-a="resume">繼續</button>' +
-      (UI.screen !== 'title' && !UI.tutReplay ? '<button type="button" class="lb-btn big" data-a="title">回標題（存檔）</button>' : '') +
-      '<div class="row"><button type="button" class="lb-btn big" data-a="shelf">唱片櫃</button><button type="button" class="lb-btn big" data-a="book">讀人圖鑑</button></div>' +
+      (UI.tutReplay ? '<button type="button" class="lb-btn big" data-a="endreplay">結束重看</button>' : (UI.screen !== 'title' ? '<button type="button" class="lb-btn big" data-a="title">回標題（存檔）</button>' : '')) +
+      '<div class="row"><button type="button" class="lb-btn big" data-a="shelf">唱片櫃</button><button type="button" class="lb-btn big" data-a="rules">規則</button></div>' +
       '<button type="button" class="lb-btn big sp" data-a="snd">聲音 ' + swHTML(soundOn()) + '</button>' +
       '<button type="button" class="lb-btn big sp" data-a="fast">動畫加速 ' + swHTML(S.fastAnim) + '</button>' +
       (tutOn ? '<button type="button" class="lb-btn big" data-a="skiptut">' + esc(tutLabel('skipTut', '跳過教學')) + '</button>' : (canTutorial() && UI.screen !== 'duel' ? '<button type="button" class="lb-btn big" data-a="replay">' + esc(tutLabel('replay', '重看教學')) + '</button>' : '')) +
@@ -353,8 +385,10 @@
       var a = b.getAttribute('data-a');
       if (a === 'resume') closeModal();
       else if (a === 'np') { info(b.getAttribute('data-cid'), { from: 'pause' }); }
-      else if (a === 'title') { closeModal(); persist(); unmountDuel(); go('title'); }
-      else if (a === 'shelf' || a === 'book') { closeModal(); persist(); openPage(a); }
+      else if (a === 'title') { closeModal(); persist(); go('title'); }
+      else if (a === 'endreplay') { closeModal(); endReplay(); }
+      else if (a === 'shelf') { closeModal(); persist(); openPage('shelf'); }
+      else if (a === 'rules') { closeModal(); openRules(); }
       else if (a === 'snd') {
         var want = !soundOn(); var fx = FX();
         if (fx && fx.setSound) try { fx.setSound(want); } catch (err) { console.error(err); }
@@ -364,42 +398,54 @@
         S.fastAnim = !S.fastAnim; persist();
         b.innerHTML = '動畫加速 ' + swHTML(S.fastAnim);
         var fx2 = FX(); if (fx2 && fx2.setSpeed) fx2.setSpeed(speed());
-        if (UI.screen === 'duel' && W.DipLabDuel && W.DipLabDuel.rerender) try { W.DipLabDuel.rerender(); } catch (err) { console.error(err); }
-      } else if (a === 'skiptut') { closeModal(); try { W.DipLabTut.skip(); } catch (err) { console.error(err); } }
+        if (UI.screen === 'duel' && DUEL() && DUEL().rerender) try { DUEL().rerender(); } catch (err) { console.error(err); }
+      } else if (a === 'skiptut') { closeModal(); try { TUT().skip(); } catch (err) { console.error(err); } }
       else if (a === 'replay') { closeModal(); replayTutorial(); }
       else if (a === 'reset') {
-        if (!armed) { armed = true; b.textContent = '再按一次：真的清掉唱片櫃與圖鑑'; b.classList.add('pri'); return; }
-        var keepSound = save.settings.sound;
-        save = defSave(); save.settings.sound = keepSound; persist(); closeModal();
-        unmountDuel(); go('title');
+        if (!armed) { armed = true; b.textContent = '再按一次：真的清掉唱片櫃與存檔'; b.classList.add('armed'); return; }
+        var keepSound = save.settings.sound, keepPlayer = save.player;
+        leaveDuel();
+        save = defSave(); save.settings.sound = keepSound; save.player = keepPlayer; persist(); closeModal();
+        go('title');
       }
     });
   }
 
   // ======================================================================= 路由
   var UI = { screen: null, params: null, modal: null, stage: null, dlg: null, auto: null, trail: [], seedOverride: null, timers: [], going: false,
-    top: null, stageHost: null, panel: null, decor: [], camName: 'full', pendingSeen: {}, offs: [] };
+    top: null, stageHost: null, panel: null, decor: [], camName: 'full', offs: [], screenAt: 0, force: null };
   var SCREENS = {};
   function app() { return D.getElementById('app'); }
   function later(fn, ms) { var t = setTimeout(fn, ms / speed()); UI.timers.push(t); return t; }
-  function unmountDuel() { if (W.DipLabDuel && W.DipLabDuel.unmount) { try { W.DipLabDuel.unmount(); } catch (_) {} } }
+  function unmountDuel() { var Dl = DUEL(); if (Dl && Dl.unmount) { try { Dl.unmount(); } catch (_) {} } }
+  // 離開對決（⏸ 回標題、重置、重看結束、打完）：教學一定收掉（B-stale-lesson-hijack），唱盤區清乾淨
+  function leaveDuel() {
+    var T = TUT();
+    try { if (T && T.abort) T.abort(); } catch (e) { console.error(e); }
+    unmountDuel();
+    UI.tutReplay = null;
+    stg('clearClash', 0);
+    if (UI.stage && typeof UI.stage.duelOut === 'function') { try { UI.stage.duelOut({ camera: UI.camName === 'strip' ? 'strip' : UI.camName, ms: 0, interact: 'none' }); } catch (e) { console.error(e); } }
+    stg('untag');
+  }
   function cleanup() {
     if (UI.dlg) { UI.dlg.cancel(); UI.dlg = null; }
     UI.timers.forEach(clearTimeout); UI.timers = [];
     UI.offs.forEach(function (f) { try { f(); } catch (_) {} }); UI.offs = [];
     UI.decor.forEach(function (d) { if (d && d.remove) d.remove(); }); UI.decor = [];
-    qsa('.lb-sheet.float', app()).forEach(function (s) { s.remove(); });
-    UI.going = false; UI.entering = false; UI.lastAct = null;
+    qsa('.lb-sheet.float, .lb-toast', app()).forEach(function (s) { s.remove(); });
+    UI.going = false; UI.lastAct = null;
     closeModal();
     var ci = CI(); if (ci && ci.isOpen()) ci.close();
     stg('highlight', []); stg('clearStamps');
+    var T = TUT(); if (T && T.dismissSoft) try { T.dismissSoft(); } catch (_) {}
   }
   function go(id, params) {
-    if (UI.screen === 'duel' && id !== 'duel') unmountDuel();
+    if (UI.screen === 'duel' && id !== 'duel') leaveDuel();
     cleanup();
     closePage(true);
-    UI.screen = id; UI.params = params || {};
-    UI.trail.push(id); if (UI.trail.length > 80) UI.trail.shift();
+    UI.screen = id; UI.params = params || {}; UI.screenAt = now();
+    UI.trail.push(id); if (UI.trail.length > 120) UI.trail.shift();
     app().setAttribute('data-screen', id);
     D.body.setAttribute('data-screen', id);
     var p = UI.panel; p.className = 'lb-panel'; p.removeAttribute('style'); p.innerHTML = '';
@@ -408,7 +454,7 @@
     UI.camQuick = false;
     if (UI.auto && UI.auto.until === id) UI.auto = null;
   }
-  // 面板換內容：舊的往下淡出 150 ms（對白框 → 盤面、節點預覽 → 走過去）
+  // 面板換內容：舊的往下淡出 150 ms（對白框 → 盤面）
   function ghostPanel() {
     var p = UI.panel; if (!p || !p.firstChild || rm()) return;
     var r = p.getBoundingClientRect(), ar = app().getBoundingClientRect();
@@ -424,7 +470,7 @@
     p = p || {};
     var chips = [];
     if (save.run && save.run.goodEar) chips.push('<span class="chip gold">好耳朵</span>');
-    setTop(nightLabel(save.run), { chips: chips, skip: function () { if (UI.dlg) UI.dlg.skip(); }, help: !!p.help });
+    setTop(nightLabel(save.run), { chips: chips, skip: function () { if (UI.dlg) UI.dlg.skip(); }, help: !!p.help, pause: !!p.pause });
     var panel = UI.panel; panel.classList.add('scene');
     var dq = el('div', 'lb-dq narr', '<div class="nm"></div><div class="tx" aria-live="polite"></div><div class="nx" aria-hidden="true">▼</div><div class="menu"></div>');
     panel.appendChild(dq);
@@ -436,25 +482,23 @@
     if (p.f === 'hide') hideActor('f'); else if (p.f) { place('f', p.f, p.fSpr || null); stg('sil', 'f', p.f === 'out'); }
     if (p.o) place('o', p.o, 'owner');
     if (p.door) stg('door', p.door);
-    if (p.fSil != null) stg('sil', 'f', !!p.fSil);
     var sc = { panel: panel, box: dq, dq: dq, strip: strip, stripState: p.stripState || null };
     if (strip) renderStrip(sc);
-    var f = FX(); if (soundOn() && f.rainStart) try { f.rainStart(); } catch (_) {}
+    var f = FX(); if (soundOn() && f && f.rainStart) try { f.rainStart(); } catch (_) {}
     return sc;
   }
-  function stripFromRun() { var r = save.run; if (!r) return { ace: null, bag: [] }; return { ace: C.aces[r.aceTier], bag: r.deck.slice() }; }
+  function stripFromRun() { var r = save.run; if (!r) return { ace: null, bag: [] }; return { ace: C.aces[r.ace], bag: r.bag.slice() }; }
   function renderStrip(sc) {
     if (!sc.strip) return;
     var s = sc.stripState || stripFromRun();
     var slot = function (id, cls, key) {
-      var c = id && cardM(id);
+      var c = card(id);
       return '<div class="slot' + cls + (c ? ' filled' : '') + '" data-slot="' + key + '"' + (c ? ' data-info="1" data-cid="' + esc(id) + '" role="button" aria-label="' + esc(c.artist + '《' + c.album + '》') + '"' : '') + '>' +
         (c ? '<img alt="" draggable="false" src="' + esc(coverSrc(c)) + '" onerror="this.remove()">' : '') + '</div>';
     };
     var h = '<span class="lab">包包</span>' + slot(s.ace, ' ace', 'ace') + '<span class="sep"></span>';
-    for (var i = 0; i < Math.min(7, Math.max(7, s.bag.length)); i++) h += slot(s.bag[i], C.junk.indexOf(s.bag[i]) >= 0 ? ' junk' : '', i);
-    if (s.bag.length > 7) h += '<span class="tag">+' + (s.bag.length - 7) + '</span>';
-    else if (s.label) h += '<span class="tag">' + esc(s.label) + '</span>';
+    for (var i = 0; i < Math.max(7, Math.min(8, s.bag.length)); i++) h += slot(s.bag[i], C.junk.indexOf(s.bag[i]) >= 0 ? ' junk' : '', i);
+    if (s.label) h += '<span class="tag">' + esc(s.label) + '</span>';
     sc.strip.innerHTML = h;
   }
   function flyCover(c, fromEl, toEl, delay) {
@@ -468,17 +512,18 @@
       var dur = 520 / speed();
       setTimeout(function () {
         sfx('flip');
-        var an = f.animate([{ transform: 'translate(0,0) scale(.6)', opacity: 0 }, { transform: 'translate(' + dx * 0.15 + 'px,' + (dy * 0.15 - 30) + 'px) scale(1.05)', opacity: 1, offset: 0.3 },
-          { transform: 'translate(' + dx + 'px,' + dy + 'px) scale(' + sc + ')', opacity: 1 }], { duration: dur, easing: 'cubic-bezier(.3,.7,.3,1)', fill: 'forwards' });
+        var an = f.animate ? f.animate([{ transform: 'translate(0,0) scale(.6)', opacity: 0 }, { transform: 'translate(' + dx * 0.15 + 'px,' + (dy * 0.15 - 30) + 'px) scale(1.05)', opacity: 1, offset: 0.3 },
+          { transform: 'translate(' + dx + 'px,' + dy + 'px) scale(' + sc + ')', opacity: 1 }], { duration: dur, easing: 'cubic-bezier(.3,.7,.3,1)', fill: 'forwards' }) : null;
         var fin = function () { f.remove(); res(); };
-        an.onfinish = fin; setTimeout(function () { if (f.isConnected) fin(); }, dur + 200);
+        if (an) an.onfinish = fin;
+        setTimeout(function () { if (f.isConnected) fin(); }, dur + 200);
       }, (delay || 0) / speed());
     });
   }
   function giveCards(sc, kind, instant) {
     var r = save.run; if (!r || !sc.strip) return Promise.resolve();
     var s = sc.stripState || (sc.stripState = { ace: null, bag: [] });
-    var ids = kind === 'ace' ? [C.aces[r.aceTier]] : kind === 'gifts' ? (C.gifts[r.aceTier] || []) : (C.junk || []);
+    var ids = kind === 'ace' ? [C.aces[r.ace]] : kind === 'gifts' ? (C.gifts[r.ace] || []) : (C.junk || []);
     var from = anchorOf('o');
     var jobs = ids.map(function (id, k) {
       var slot = kind === 'ace' ? qs('[data-slot=ace]', sc.strip) : qs('[data-slot="' + (s.bag.length + k) + '"]', sc.strip);
@@ -516,8 +561,7 @@
     };
     D.addEventListener('keydown', keyH);
     function setWho(who) {
-      var name = who === 'player' ? playerName() : who;
-      nm.textContent = name || '';
+      nm.textContent = who === 'player' ? '你' : (who || '');      // NP-16：你說話的名牌一律寫「你」
       dq.classList.toggle('narr', !who);
       dq.classList.toggle('foe', who === '男子');
       dq.classList.toggle('boss', who === '藏家');
@@ -527,7 +571,7 @@
         var n = 0; st.typing = true; tx.textContent = '';
         var done = function () { if (st.timer) clearInterval(st.timer); st.timer = null; st.typing = false; st.finish = null; tx.textContent = text; res(); };
         st.finish = done;
-        if (st.skipping || !text) return done();
+        if (st.skipping || !text || UI.auto) return done();
         var f = FX();
         st.timer = setInterval(function () {
           if (st.cancelled) { clearInterval(st.timer); return; }
@@ -566,10 +610,8 @@
         else {
           var at = stg('pos', 'f');
           stg('sil', 'f', false);
-          if (!instant && at && !at.hidden && stg('has', 'f')) {
-            stg('hide', 'f', false);
-            jobs.push(stgP('walk', 'f', at.outside ? ['door', sg.f] : [sg.f]));
-          } else place('f', sg.f);
+          if (!instant && at && !at.hidden && stg('has', 'f')) { stg('hide', 'f', false); jobs.push(stgP('walk', 'f', at.outside ? ['door', sg.f] : [sg.f])); }
+          else place('f', sg.f);
         }
       }
       if (sg.door) stg('door', sg.door === 'shut' ? 'close' : (instant && sg.door === 'swing' ? 'close' : sg.door));
@@ -580,14 +622,22 @@
       return Promise.all(jobs);
     }
     function music(kind) {
-      var f = FX(); if (!f) return;
+      var f = FX(); if (!f || !f.music) return;
       if (kind === 'tonight' && ctx.tonightId) {
         var c = card(ctx.tonightId);
         if (!f.soundOn()) { ctx.quiet = true; return; }
         var settled = false;
         f.music.play(c, { fadeMs: 1500 }).then(function (ok) { settled = true; if (!ok) ctx.quiet = true; else ctx.heard = true; });
         setTimeout(function () { if (!settled) ctx.quiet = true; }, 2500);
-      } else if (kind === 'stop') { try { f.music.stop({ fadeMs: 1500 }); } catch (_) {} }
+      } else if (kind === 'stake' && ctx.stakeId && f.soundOn()) { try { f.music.play(card(ctx.stakeId), { fadeMs: 1500 }); } catch (_) {} }
+      else if (kind === 'stop') { try { f.music.stop({ fadeMs: 1500 }); } catch (_) {} }
+    }
+    // 選項要的空間：只把舞台往上收到放得下（ART-12：不換 reward 鏡頭、不留一大塊黑）
+    function roomFor() {
+      if (!UI.stage) return;
+      var need = Math.ceil(dq.scrollHeight + 30);
+      if (UI.panel.clientHeight >= need) return;
+      cam('full', 'scene', 260, need);
     }
     var api = {
       ctx: ctx,
@@ -601,14 +651,18 @@
           items.forEach(function (it, i) {
             var b = el('button', 'lb-dqopt key', '<span class="cur" aria-hidden="true">▸</span>' + esc(String(it).replace(/^▶\s*/, '')));
             b.type = 'button'; b.setAttribute('data-i', i);
-            b.addEventListener('click', function (e) { stopEv(e); sfx('tick'); menu.innerHTML = ''; dq.classList.remove('hasmenu'); UI.panel.classList.remove('menu-open'); camBackSoon(); res(i); });
+            b.addEventListener('click', function (e) {
+              stopEv(e); if (menu._done) return; menu._done = true;
+              sfx('tick'); menu.innerHTML = ''; dq.classList.remove('hasmenu'); UI.panel.classList.remove('menu-open');
+              if (UI.camName === 'full' && UI.screen === 'scene') cam('full', 'scene', 260);
+              res(i);
+            });
             menu.appendChild(b);
           });
+          menu._done = false;
           dq.classList.add('hasmenu');
-          // 選項需要空間：包包條先收起來、鏡頭收成 reward（面板 296px 以上）
           UI.panel.classList.add('menu-open');
-          clearTimeout(UI.camBack); UI.camBack = 0;
-          if (UI.camName !== 'reward') cam('reward', 'reward', 300);
+          requestAnimationFrame(roomFor);
           focusFirst(menu, '.lb-dqopt');
           autoAct(function () { var b = qs('button[data-i="' + (o.autoIndex || 0) + '"]', menu) || qs('button', menu); if (b) b.click(); });
         });
@@ -628,7 +682,7 @@
           if (b.music) music(b.music);
           if (b.stamp && !instant) {
             var parts = String(b.stamp).split('：');
-            stg('stamp', parts[0], parts[1] || '', b.who === '藏家' ? 'ink' : 'gold', 0);
+            stg('stamp', parts[0], parts[1] || '', b.who === '藏家' ? 'ink' : 'gold', 2400);
             sfx('readHit');
           }
           if (instant) return p0.then(next);
@@ -644,7 +698,8 @@
                 .then(function () { return onUi ? onUi(b.ui, b) : null; }).then(next);
             }
             showNext(true, false);
-            var ms = Math.min(3500, 900 + 90 * text.length);
+            // NP-11：自動前進給足閱讀時間（約每秒 6–7 字）；點一下就走
+            var ms = Math.min(6500, 1400 + 140 * String(text || '').length);
             if (UI.auto) ms = 120;
             return Promise.all([p0, waitTap(ms)]).then(next);
           });
@@ -663,7 +718,7 @@
   }
 
   // ======================================================================= 面板（sheet）
-  // 換面板的防連點（R1）：剛換上的面板 GUARD_MS 內真人的點擊不算（自動遊玩的 b.click() 不受影響）
+  // 防連點：剛換上的面板 GUARD_MS 內真人的點擊不算（自動遊玩的 el.click() 不受影響）
   var GUARD_MS = FAST ? 160 : 380;
   function guardClicks(node) {
     node.classList.add('arming');
@@ -680,13 +735,14 @@
       if (b) try { b.focus({ preventScroll: true }); } catch (_) {}
     });
   }
-  // 面板蓋在 #panel 上（對白窗、時間軸收在底下）；場景裡開面板時鏡頭換 reward，讓面板有 296px 以上
+  // 面板蓋在 #panel 上；場景裡開面板時鏡頭換 reward，讓面板有 260px 以上
   function sheet(html, cls, o) {
     o = o || {};
     qsa(':scope > .lb-sheet', UI.panel).forEach(function (s) { s.remove(); });
     var s = el('div', 'lb-sheet' + (cls ? ' ' + cls : ''), html);
     s.addEventListener('click', stopEv);
     guardClicks(s);
+    bindInfoTaps(s);
     UI.panel.appendChild(s);
     UI.panel.classList.add('sheeted');
     clearTimeout(UI.camBack); UI.camBack = 0;
@@ -698,18 +754,14 @@
     if (UI.screen !== 'scene' || UI.camName !== 'reward') return;
     var scr0 = UI.screen;
     clearTimeout(UI.camBack);
-    UI.camBack = setTimeout(function () { UI.camBack = 0; if (UI.screen === scr0 && !qs(':scope > .lb-sheet', UI.panel) && !UI.panel.classList.contains('menu-open') && UI.camName === 'reward') cam('full', 'scene', 380); }, 160);
+    UI.camBack = setTimeout(function () { UI.camBack = 0; if (UI.screen === scr0 && !qs(':scope > .lb-sheet', UI.panel) && UI.camName === 'reward') cam('full', 'scene', 380); }, 160);
   }
   function closeSheet(s) {
     if (!s) return;
     if (s.parentNode) s.remove();
-    if (!qs(':scope > .lb-sheet', UI.panel)) {
-      UI.panel.classList.remove('sheeted');
-      camBackSoon();
-      qsa(':scope > .lb-tl, :scope > .lb-bagline', UI.panel).forEach(guardClicks);
-    }
+    if (!qs(':scope > .lb-sheet', UI.panel)) { UI.panel.classList.remove('sheeted'); camBackSoon(); }
   }
-  // 浮在舞台下緣的預覽面板（地圖：點節點／點店裡亮的東西）
+  // 浮在舞台下緣的小面板（今晚來客的頭像、箱子、試聽機、包包、配件）
   function floatSheet(html, cls) {
     qsa('.lb-sheet.float', app()).forEach(function (s) { s.remove(); });
     var s = el('div', 'lb-sheet float' + (cls ? ' ' + cls : ''), html);
@@ -717,9 +769,9 @@
     guardClicks(s);
     bindInfoTaps(s);
     app().appendChild(s);
-    // 預覽開著時，地圖的 soft 提示（老闆泡泡＋挖洞框）先藏起來，不要疊在預覽上（關掉預覽就回來）
-    if (!UI.floatMo && W.MutationObserver) { UI.floatMo = new MutationObserver(syncFloat); UI.floatMo.observe(app(), { childList: true }); }
+    s.addEventListener('click', function (e) { if (e.target.closest && e.target.closest('[data-a=close]')) { s.remove(); syncFloat(); } });
     syncFloat();
+    if (!UI.floatMo && W.MutationObserver) { UI.floatMo = new MutationObserver(syncFloat); UI.floatMo.observe(app(), { childList: true }); }
     focusFirst(s);
     return s;
   }
@@ -728,9 +780,8 @@
     var f = FX(); var on = !!(f && f.music && f.music.playing && f.music.playing());
     return on ? '<span class="lb-playing"><span class="rec" aria-hidden="true"></span>播放中</span>' : '';
   }
-  // 「● 播放中」只在真的在放時顯示（B05／B13）：跟著 FX().music 的狀態更新
   function watchPlaying(host) {
-    var f = FX(); if (!f || !f.music || !f.music.onChange) return;
+    var f = FX(); if (!f || !f.music || !f.music.onChange || !host) return;
     var upd = function () { if (!host.isConnected) return; host.innerHTML = playingTag(); };
     upd();
     var off1 = f.music.onChange(upd), off2 = f.onSound ? f.onSound(upd) : null;
@@ -738,7 +789,7 @@
     var iv = setInterval(upd, 1500); UI.offs.push(function () { clearInterval(iv); });
   }
 
-  // 猜歌（只亮封面、藝人、專輯，不亮星數）：封面＝唱片資訊、卡片其他地方或「是這張」＝作答
+  // 猜歌（只亮封面、藝人、專輯，不亮星數）：封面＝唱片資訊、「是這張」＝作答
   function guessPanel(sc, ctx, beat) {
     return new Promise(function (res) {
       var ids = shuffled(TIERS.map(function (t) { return C.aces[t]; }));
@@ -759,146 +810,117 @@
       autoAct(function () { var b = qs('[data-pick]', s); if (b) b.click(); });
     });
   }
-  // 挑王牌：卡片＝換聽（選）、封面＝唱片資訊、「就這張」確認（sticky）
+  // 挑王牌：封面＝唱片資訊；封面下面的字＝換聽（選）；「就這張」確認（劇本那句「點封套下面的字換著聽」照這個做）
   function acePickPanel(sc, ctx, beat) {
     return new Promise(function (res) {
       var f = FX();
       var sel = ctx.defaultTier || 'hall';
-      var prompt = ctx.quiet ? ((beat && (beat.prompt && /挑一張帶走/.test(beat.prompt) ? beat.prompt : beat.quietText)) || '（挑一張帶走。）') : ((beat && beat.prompt) || (beat && beat.text) || '（點封套換著聽，挑一張帶走。）');
+      var prompt = ctx.quiet ? ((beat && beat.quietText) || (beat && beat.prompt && /挑一張帶走/.test(beat.prompt) && beat.prompt) || '（挑一張帶走。）') : ((beat && beat.prompt) || (beat && beat.text) || '（點封套下面的字換著聽，挑一張帶走。）');
       var html = '<div class="hd"><h3>' + esc(prompt) + '</h3><span class="np"></span></div><div class="lb-trio">' +
         TIERS.map(function (t) {
           var c = card(C.aces[t]), ax = C.aceAxis[t];
           return tileHTML(c, { sel: t === sel, stars: false, text: false, data: 'data-tier="' + t + '"',
-            extra: '<div class="acex"><span class="' + ax + '">' + esc(C.aceTitle[t]) + '・' + ZH[ax] + ' 7</span></div><div class="al one">' + esc(c.album) + '</div>' });
+            extra: '<button type="button" class="acex"><span class="' + ax + '">' + esc(C.aceTitle[t]) + '・' + ZH[ax] + ' 7</span><span class="al one">' + esc(c.album) + '</span></button>' });
         }).join('') + '</div><p class="note detail"></p><div class="foot"><button type="button" class="lb-btn pri big wide key" data-a="ok">就這張</button></div>';
       var s = sheet(html, 'acepick');
       watchPlaying(qs('.np', s));
       var det = qs('.detail', s);
       function mark() {
-        qsa('.lb-ct', s).forEach(function (x) { var on = x.getAttribute('data-tier') === sel; x.classList.toggle('sel', on); });
-        det.innerHTML = '<b>' + esc(C.ears[sel].name) + '</b>：' + esc(C.ears[sel].desc) + '　<b>' + esc(C.acePassives[sel].name) + '</b>：' + esc(C.acePassives[sel].desc);
+        qsa('.lb-ct', s).forEach(function (x) { x.classList.toggle('sel', x.getAttribute('data-tier') === sel); });
+        var c = card(C.aces[sel]), ax = C.aceAxis[sel];
+        det.innerHTML = '<b>' + esc(C.aceTitle[sel]) + '</b>：' + esc(c.artist + '《' + c.album + '》') + '。<b class="' + ax + '">' + ZH[ax] + ' 7</b>，' + esc(dt('aceOnce').replace(/^.*・/, '') || '每場一次') + '。';
       }
       mark();
+      var done = false;
       s.addEventListener('click', function (e) {
+        if (done) return;
         var t = e.target.closest && e.target.closest('.lb-ct');
-        if (t) {
+        if (t && !(e.target.closest('[data-a=ok]'))) {
           var tier = t.getAttribute('data-tier'); if (tier === sel) return;
           sel = tier; sfx('select'); mark();
           if (f && f.soundOn && f.soundOn()) f.music.play(card(C.aces[sel]), { fadeMs: 1500 });
           return;
         }
-        if (e.target.closest && e.target.closest('[data-a=ok]')) { sfx('select'); closeSheet(s); ctx.acePicked = true; res(sel); }
+        if (e.target.closest && e.target.closest('[data-a=ok]')) { done = true; sfx('select'); closeSheet(s); ctx.acePicked = true; res(sel); }
       });
-      autoAct(function () { var b = qs('[data-a=ok]', s); if (b) b.click(); }, 260);
+      autoAct(function () {
+        if (UI.auto && UI.auto.ace && UI.auto.ace !== sel) { var b0 = qs('.lb-ct[data-tier="' + UI.auto.ace + '"] .acex', s); if (b0) b0.click(); }
+        var b = qs('[data-a=ok]', s); if (b) b.click();
+      }, 260);
     });
   }
-  // 發燒配件三選一
-  function relicPanel(sc, choices, opts) {
+  // 一張唱片攤開（序章掉出來的那張、打烊時藏家送的那張）：封面 140＋三軸＋按鈕
+  function cardPanel(c, opts) {
     opts = opts || {};
     return new Promise(function (res) {
-      var html = '<div class="hd"><h3>' + esc(opts.prompt || '挑一件發燒配件') + '</h3></div><div class="lb-opts">' +
-        (choices.length ? choices : [null]).map(function (id) {
-          if (!id) return '<button type="button" class="lb-btn big key" data-r="">' + esc((C.relicFallback && C.relicFallback.label) || '回 4 聲望') + '</button>';
-          var r = C.relics[id];
-          return '<button type="button" class="lb-btn big lb-relic" data-r="' + esc(id) + '"><span class="pix">' + relicIcon(id, 30) + '</span><span class="tx"><span class="nm key">' + esc(r.name) + '</span><span class="ds">' + esc(r.desc) + '</span></span></button>';
+      var html = '<div class="hd"><h3>' + esc(opts.title || '') + '</h3><span class="np"></span></div>' +
+        '<div class="lb-one">' + coverHTML(c, { size: 132, isNew: !!opts.isNew }) +
+        '<div class="meta"><div class="ar">' + esc(c.artist) + '</div><div class="al">' + esc(c.album) + '</div><div class="yr">' + esc(c.year || '') + '</div>' +
+        starsHTML(c, { cls: 'big' }) + '<span class="sub">點封面：唱片資訊</span></div></div>' +
+        (opts.note ? '<p class="msg">' + esc(opts.note) + '</p>' : '') +
+        '<div class="btns">' + (opts.buttons || []).map(function (b, i) {
+          return '<button type="button" class="lb-btn big col' + (b.pri ? ' pri' : '') + '" data-i="' + i + '"><span class="lb">' + esc(b.label) + '</span>' + (b.sub ? '<span class="sub">' + esc(b.sub) + '</span>' : '') + '</button>';
         }).join('') + '</div>';
-      var s = sheet(html, 'relics');
+      var s = sheet(html, 'one');
+      watchPlaying(qs('.np', s));
+      var f = FX(); if (f && f.music && soundOn() && c.previewUrl) try { f.music.play(c, { fadeMs: 1500 }); } catch (_) {}
+      stg('play', true);
+      var done = false;
       s.addEventListener('click', function (e) {
-        var b = e.target.closest && e.target.closest('[data-r]'); if (!b) return;
-        sfx('select'); closeSheet(s); res(b.getAttribute('data-r') || null);
+        var b = e.target.closest && e.target.closest('[data-i]'); if (!b || done) return;
+        done = true; sfx('select');
+        var v = opts.buttons[+b.getAttribute('data-i')];
+        closeSheet(s); res(v.value);
       });
-      autoAct(function () { var pick = E.routePolicy(save.run, C); var id = pick && pick.relicId; var b = id ? qs('[data-r="' + id + '"]', s) : qs('[data-r]', s); if (b) b.click(); });
+      autoAct(function () { var b = qs('[data-i="' + (opts.autoIndex || 0) + '"]', s); if (b) b.click(); }, 200);
     });
   }
-  // 包包滿了：先丟一張（點卡片＝拿出來；封面＝唱片資訊；sticky 取消）
-  function dropPanel(sc, incomingId) {
+  // 發燒配件挑一件（序章收尾三選一；也用在「配件滿了，先放一件回去」）
+  function relicButtonsHTML(ids, attr) {
+    return ids.map(function (id) {
+      var r = relicOf(id); if (!r) return '';
+      return '<button type="button" class="lb-btn big lb-relic" ' + attr + '="' + esc(id) + '"><span class="pix">' + relicIcon(id, 30) + '</span><span class="tx"><span class="nm key">' + esc(r.name) + '</span><span class="ds">' + esc(r.desc) + '</span></span></button>';
+    }).join('');
+  }
+  function relicPanel(choices, opts) {
+    opts = opts || {};
+    return new Promise(function (res) {
+      var html = '<div class="hd"><h3>' + esc(opts.prompt || '挑一件發燒配件') + '</h3></div>' +
+        '<p class="note">' + esc((C.rules && C.rules.relics) || '自動生效，最多帶三件。') + '</p>' +
+        '<div class="lb-opts">' + relicButtonsHTML(choices, 'data-r') + '</div>' +
+        (opts.cancel ? '<div class="foot"><button type="button" class="lb-btn wide" data-a="cancel">' + esc(opts.cancel) + '</button></div>' : '');
+      var s = sheet(html, 'relics');
+      var done = false;
+      s.addEventListener('click', function (e) {
+        if (done) return;
+        var b = e.target.closest && e.target.closest('[data-r]');
+        if (b) { done = true; sfx('select'); closeSheet(s); res(b.getAttribute('data-r')); return; }
+        if (e.target.closest && e.target.closest('[data-a=cancel]')) { done = true; closeSheet(s); res(null); }
+      });
+      autoAct(function () { var id = opts.autoId; var b = id ? qs('[data-r="' + id + '"]', s) : qs('[data-r]', s); if (b) b.click(); });
+    });
+  }
+  // 包包滿了：先拿一張出來（點卡片＝拿出來；封面＝唱片資訊；「算了」取消）
+  function dropPanel(incomingId, autoId) {
     return new Promise(function (res) {
       var r = save.run;
-      var html = '<div class="hd"><h3>' + esc(C.lines.owner.bagFull || '包包滿了。先拿一張出來。') + '</h3></div>' +
+      var html = '<div class="hd"><h3>' + esc((C.lines.owner && C.lines.owner.bagFull) || '包包滿了。先拿一張出來。') + '</h3></div>' +
         '<p class="msg">要放進來的是《' + esc((card(incomingId) || {}).album || '') + '》。挑一張拿出來，它會留在唱片櫃。</p>' +
-        '<div class="lb-pick">' + r.deck.map(function (id) { return tileHTML(cardM(id), { text: false, pick: '拿出來' }); }).join('') + '</div>' +
+        '<div class="lb-pick">' + r.bag.map(function (id) { return tileHTML(card(id), { text: false, pick: '拿出來' }); }).join('') + '</div>' +
         '<div class="foot"><button type="button" class="lb-btn wide" data-a="cancel">算了，不放了</button></div>';
       var s = sheet(html, 'drop');
+      var done = false;
       s.addEventListener('click', function (e) {
+        if (done) return;
         var t = e.target.closest && e.target.closest('.lb-ct');
-        if (t) { sfx('tick'); closeSheet(s); res(t.getAttribute('data-cid')); return; }
-        if (e.target.closest && e.target.closest('[data-a=cancel]')) { closeSheet(s); res(null); }
+        if (t) { done = true; sfx('tick'); closeSheet(s); res(t.getAttribute('data-cid')); return; }
+        if (e.target.closest && e.target.closest('[data-a=cancel]')) { done = true; closeSheet(s); res(null); }
       });
-      autoAct(function () { var pick = E.routePolicy(save.run, C); var id = pick && pick.dropId; var b = id ? qs('.lb-ct[data-cid="' + id + '"] [data-pick]', s) : qs('[data-pick]', s); if (b) b.click(); });
-    });
-  }
-  // 從包包挑一張（事件送盤／洗盤）
-  function pickCardPanel(sc, title, filterFn, opts) {
-    opts = opts || {};
-    return new Promise(function (res) {
-      var r = save.run;
-      var html = '<div class="hd"><h3>' + esc(title) + '</h3></div>' + (opts.msg ? '<p class="msg">' + opts.msg + '</p>' : '') +
-        '<div class="lb-pick">' + r.deck.map(function (id) { var ok = !filterFn || filterFn(id); return tileHTML(cardM(id), { text: false, cls: ok ? '' : 'dis', pick: '選這張', disabled: !ok }); }).join('') + '</div>' +
-        '<div class="foot"><button type="button" class="lb-btn wide" data-a="cancel">返回</button></div>';
-      var s = sheet(html, 'pick');
-      s.addEventListener('click', function (e) {
-        var t = e.target.closest && e.target.closest('.lb-ct');
-        if (t && !t.classList.contains('dis')) { sfx('select'); closeSheet(s); res(t.getAttribute('data-cid')); return; }
-        if (e.target.closest && e.target.closest('[data-a=cancel]')) { closeSheet(s); res(null); }
-      });
-      autoAct(function () { var id = opts.autoId; var b = id ? qs('.lb-ct[data-cid="' + id + '"] [data-pick]', s) : qs('[data-pick]:not([disabled])', s); if (b) b.click(); });
-    });
-  }
-  // 押盤翻開（§8.3）：壓扁換面（scaleX 1→0 換面 0→1；不用 3D，不可能鏡像：B01）
-  function stakePanel(sc, cardId, opts) {
-    opts = opts || {};
-    return new Promise(function (res) {
-      var c = card(cardId), isNew = !!opts.isNew, f = FX();
-      var meta = '<div class="meta"><div class="ar">' + esc(c.artist) + '</div><div class="al">' + esc(c.album) + '</div><div class="yr">' + esc(c.year || '') + '</div>' +
-        starsHTML(c, { cls: 'big' }) + '<button type="button" class="lnk" data-info="1" data-cid="' + esc(c.id) + '">點封面：唱片資訊</button></div>';
-      var html = '<div class="hd"><h3>' + esc(opts.title || '他押的那張') + '</h3><span class="np"></span></div>' +
-        '<div class="lb-flip"><div class="card3d" data-info="1" data-cid="' + esc(c.id) + '" role="button" aria-label="' + esc(c.artist + '《' + c.album + '》唱片資訊') + '"><div class="in">' +
-        '<div class="back" aria-hidden="true"><span class="vinyl"></span></div>' +
-        '<div class="face"><img alt="" draggable="false" src="' + esc(coverSrc(c)) + '" onerror="this.remove()"><span class="alt">' + esc(c.album) + '</span>' + (isNew ? '<span class="new">NEW</span>' : '') + '</div>' +
-        '</div></div>' + meta + '</div>' +
-        (opts.note ? '<p class="msg">' + opts.note + '</p>' : '') +
-        '<div class="btns' + ((opts.buttons || []).length > 2 ? ' three' : '') + ((opts.buttons || []).some(function (b) { return b.wrap; }) ? ' wrap' : '') + '">' + (opts.buttons || []).map(function (b, i) {
-          return '<button type="button" class="lb-btn big col' + (b.pri ? ' pri' : '') + '" data-i="' + i + '"' + (b.disabled ? ' disabled' : '') + '><span class="lb">' + esc(b.label) + '</span>' + (b.sub ? '<span class="sub">' + esc(b.sub) + '</span>' : '') + '</button>';
-        }).join('') + '</div>';
-      var s = sheet(html, 'stake');
-      watchPlaying(qs('.np', s));
-      var box = qs('.card3d', s), inn = qs('.card3d .in', s), btns = qs('.btns', s);
-      btns.style.visibility = 'hidden';
-      var spd = speed();
-      var reveal = function () {
-        box.classList.add('shown');
-        btns.style.visibility = '';
-        focusFirst(btns);
-        if (f && f.music && soundOn()) f.music.play(c, { fadeMs: 1500 });
-        stg('play', true);
-        autoAct(function () { var b = qs('[data-i="' + (opts.autoIndex || 0) + '"]', s); if (b && !b.disabled) b.click(); else { b = qs('[data-i]:not([disabled])', s); if (b) b.click(); } }, 200);
-      };
-      if (rm() || !inn.animate) setTimeout(reveal, 150);
-      else {
-        setTimeout(function () {
-          inn.animate([{ transform: 'rotate(0)' }, { transform: 'rotate(-3deg)' }, { transform: 'rotate(3deg)' }, { transform: 'rotate(0)' }], { duration: 240 / spd, iterations: 2 });
-          setTimeout(function () {
-            sfx('flip');
-            var half = 160 / spd;
-            var a1 = inn.animate([{ transform: 'scaleX(1)' }, { transform: 'scaleX(0)' }], { duration: half, easing: 'ease-in', fill: 'forwards' });
-            a1.onfinish = function () {
-              box.classList.add('shown');            // 中點換面：背面藏、封面現
-              var a2 = inn.animate([{ transform: 'scaleX(0)' }, { transform: 'scaleX(1)' }], { duration: half, easing: 'ease-out', fill: 'forwards' });
-              a2.onfinish = function () { a1.cancel(); a2.cancel(); reveal(); };
-            };
-          }, 520 / spd);
-        }, 220 / spd);
-      }
-      s.addEventListener('click', function (e) {
-        var b = e.target.closest && e.target.closest('[data-i]'); if (!b || b.disabled) return;
-        sfx('select');
-        var v = opts.buttons[+b.getAttribute('data-i')];
-        Promise.resolve(v.onPick ? v.onPick() : true).then(function (ok) { if (ok === false) return; closeSheet(s); res(v.value); });
-      });
+      autoAct(function () { var b = autoId ? qs('.lb-ct[data-cid="' + autoId + '"] [data-pick]', s) : qs('[data-pick]', s); if (b) b.click(); });
     });
   }
 
-  // ======================================================================= 吐司（z 40；唱片資訊開著時排隊：O4）
+  // ======================================================================= 吐司（z 40；唱片資訊開著時排隊）
   var toastQ = [];
   function toast(text, cls) {
     if (!text) return;
@@ -911,95 +933,106 @@
   function flushToasts() { var q = toastQ; toastQ = []; q.forEach(function (x, i) { setTimeout(function () { toast(x[0], x[1]); }, i * 300); }); }
   function effectsText(effects) {
     var out = [];
-    var spill = (effects || []).some(function (f) { return f.overflowQi; });
     (effects || []).forEach(function (f) {
-      if (f.hp != null) out.push(spill && f.hp > 0 ? '聲望回滿' : '聲望 ' + (f.hp >= 0 ? '+' : '−') + Math.abs(f.hp));
-      if (f.overflowQi) out.push('多的變成下一場開局氣勢 +' + f.overflowQi);
-      if (f.nextStartQi) out.push('下一場開局氣勢 +' + f.nextStartQi);
       if (f.gainCard) out.push('《' + ((card(f.gainCard) || {}).album || '') + '》進包包');
       if (f.loseCard) out.push('《' + ((card(f.loseCard) || {}).album || '') + '》拿出來了');
-      if (f.gainRelic) out.push('拿到「' + ((C.relics[f.gainRelic] || {}).name || '') + '」');
-      if (f.starUp) out.push('《' + ((card(f.starUp.cardId) || {}).album || '') + '》' + ZH[f.starUp.axis] + ' +1');
+      if (f.gainRelic) out.push('拿到「' + ((relicOf(f.gainRelic) || {}).name || '') + '」');
+      if (f.loseRelic) out.push('「' + ((relicOf(f.loseRelic) || {}).name || '') + '」放回去了');
     });
     return out.join('・');
   }
-  function spillNote(n) {
-    var r = save.run; if (!r || !E.CFG.overflowQiAt) return '';
-    var over = r.hp + n - r.maxHp;
-    if (over < E.CFG.overflowQiAt || (r.ovQi | 0) >= E.CFG.overflowQiCap) return '';
-    return r.hp >= r.maxHp ? '聲望已滿：改成下一場開局氣勢 +1' : '回滿，多的變成下一場開局氣勢 +1';
-  }
   function doChoose(ch) {
-    var res = E.choose(save.run, C, ch);
-    if (res.error) console.warn('choose error', res.error, ch);
-    shelfSync(); persist();
+    var r = save.run;
+    var res = E.choose(r, C, ch);
+    if (!res.ok) console.warn('choose error', res.error, ch);
+    (res.effects || []).forEach(function (f) { if (f.gainCard) shelfAdd(f.gainCard); });
+    save.relics = r.relics.slice(0, 3);          // 身上的配件帶到下一晚（engine 建議；最多三件）
+    persist();
     return res;
   }
+  // 收一張進包包：滿 8 張先挑一張拿出來（拿出來的留在唱片櫃）
+  function takeCard(cardId, autoDrop) {
+    var r = save.run;
+    if (r.bag.length < E.CFG.bagMax) return Promise.resolve(doChoose({ type: 'take', cardId: cardId }));
+    stageSay('o', C.lines.owner && C.lines.owner.bagFull, 'owner');
+    return dropPanel(cardId, autoDrop).then(function (dropId) { return dropId ? doChoose({ type: 'take', cardId: cardId, dropId: dropId }) : null; });
+  }
+  function takeRelic(relicId, autoDrop) {
+    var r = save.run;
+    if (r.relics.length < E.CFG.relicMax) return Promise.resolve(doChoose({ type: 'relic', relicId: relicId }));
+    stageSay('o', C.lines.owner && C.lines.owner.relicFull, 'owner');
+    return relicPanel(r.relics, { prompt: (C.lines.owner && C.lines.owner.relicFull) || '配件最多帶三件。先放一件回去。', cancel: '算了，不換了', autoId: autoDrop })
+      .then(function (dropId) { return dropId ? doChoose({ type: 'relic', relicId: relicId, dropRelicId: dropId }) : null; });
+  }
 
-  // ======================================================================= title（§8.6）
+  // ======================================================================= title
   function firstEver() { return !save.prologueDone && !(save.nights && save.nights.length); }
   function shelfCount() { return { n: Object.keys(save.shelf).filter(card).length, total: Object.keys(C.cards).length }; }
+  function runWhere(r) {
+    if (!r) return '';
+    if (r.prologue === 'pending') return (C.night.prologueTime || '21:30') + '・序章';
+    var id = E.current(r, C), en = C.enemies[id];
+    return (r.times[r.idx] || '') + (en ? '・' + en.name : '');
+  }
   SCREENS.title = function () {
     var r = save.run, hasRun = !!(r && !r.over), overRun = !!(r && r.over);
-    setTop(esc(dateLabel(seedKey())) + ' 的雨夜', { links: [['唱片櫃', function () { openPage('shelf'); }, 'shelf'], ['讀人圖鑑', function () { openPage('book'); }, 'book'], ['台北', function () { go('taipei', { back: 'title' }); }, 'taipei']] });
+    setTop(esc(dateLabel(seedKey())) + ' 的雨夜', { links: [['唱片櫃', function () { openPage('shelf'); }, 'shelf'], ['台北', function () { go('taipei', { back: 'title' }); }, 'taipei']], help: true });
     var panel = UI.panel; panel.classList.add('title');
-    var contSub = '';
-    if (hasRun) {
-      var col = r.map.cols.find(function (c) { return c.col === r.col; });
-      var hpNow = (r.duel && r.duel.p && typeof r.duel.p.hp === 'number' && !r.duel.over) ? Math.max(0, r.duel.p.hp) : r.hp;
-      contSub = (col ? col.time : '') + '・聲望 ' + hpNow;
-    }
-    var best = save.best.bySeedKey[seedKey()], sh = shelfCount();
-    var infoLine = (best ? '今天最佳 ' + best + ' 分' : '') + (save.best.clears ? (best ? '・' : '') + '打烊 ' + save.best.clears + ' 次' : '') + (sh.n ? ((best || save.best.clears) ? '・' : '') + '唱片櫃 ' + sh.n + '／' + sh.total : '');
-    var hint = line('titleHint');
+    var sh = shelfCount();
+    var infoLine = (save.best.clears ? '打烊 ' + save.best.clears + ' 次' : '') + (sh.n ? (save.best.clears ? '・' : '') + '唱片櫃 ' + sh.n + '／' + sh.total : '');
+    var hint = line('titleHint'), where = runWhere(r);
     var h = '<div class="lb-tbtns">';
     if (hasRun) {
-      h += '<button type="button" class="lb-btn pri big wide col key" data-a="cont">繼續今晚 ▸<span class="sub">' + esc(contSub) + '</span></button>' +
+      h += '<button type="button" class="lb-btn pri big wide col key" data-a="cont">繼續今晚 ▸<span class="sub">' + esc(where) + '</span></button>' +
         '<div class="row"><button type="button" class="lb-btn key" data-a="push">重新推門</button><button type="button" class="lb-btn key" data-a="quiet">安靜地重新推門</button></div>' +
-        '<p class="lb-warn" hidden>再按一次就放棄今晚（' + esc(contSub) + '），從頭推門。</p>';
+        '<p class="lb-warn" aria-live="polite">再按一次就放棄今晚（' + esc(where) + '），從頭推門。</p>';
     } else {
       h += '<button type="button" class="lb-btn pri big wide key" data-a="push">推門（有聲音）▸</button>' +
         '<button type="button" class="lb-btn big wide key" data-a="quiet">安靜地推門</button>' +
         (overRun ? '<button type="button" class="lb-btn wide" data-a="end">看今晚結算</button>' : '');
     }
-    h += '</div>' + (hint ? '<p class="lb-foot">' + esc(hint) + '</p>' : '') + (infoLine ? '<p class="lb-foot sm">' + esc(infoLine) + '</p>' : '');
-    var box = el('div', 'lb-screen', h); panel.appendChild(box);   // #panel 常駐：監聽器掛在這一層，換畫面就跟著丟掉
-    // 舞台：門關、雨、你在門外（剪影）、老闆在櫃檯
-    cam('full', 'title', UI.firstScreen ? 0 : 450);
+    h += '</div>' + (hint && !hasRun ? '<p class="lb-foot hint">' + esc(hint) + '</p>' : '') + (infoLine ? '<p class="lb-foot sm">' + esc(infoLine) + '</p>' : '') +
+      (UI.discardedOld ? '<p class="lb-foot sm">規則改版了，舊的存檔已經清掉。</p>' : '');
+    var box = el('div', 'lb-screen', h); panel.appendChild(box);
+    // 面板量出來要多高，舞台就收到放得下（B-title-375-clipped：警告那行永遠在畫面裡）
+    var need = Math.max(130, Math.ceil(box.scrollHeight + 8));
+    cam('full', 'title', UI.firstScreen ? 0 : 450, need);
     stg('interact', 'title');
     place('o', 'counter', 'owner'); stg('pose', 'o', 'busy');
     hideActor('f'); hideActor('q1'); hideActor('q2');
     place('p', 'out', 'player'); stg('sil', 'p', true);
     stg('door', 'close'); stg('play', true); stg('dim', 1);
-    // 標題牌：壓在舞台下緣（白底 2px 黑框＋4px 黑色硬陰影），不擋點
     var plate = el('div', 'lb-plate', '<b>品味對決<i>・</i>試做</b><small>dip vinyl game lab</small>');
     app().appendChild(plate); UI.decor.push(plate);
-    var placePlate = function () { if (!plate.isConnected) return; var sh0 = UI.stageHost.getBoundingClientRect(), ar = app().getBoundingClientRect(); plate.style.top = Math.round(sh0.bottom - ar.top - 26) + 'px'; };
+    var placePlate = function () { if (!plate.isConnected) return; var sh0 = UI.stageHost.getBoundingClientRect(), ar = app().getBoundingClientRect(); plate.style.top = Math.max(36, Math.round(sh0.bottom - ar.top - 26)) + 'px'; };
     placePlate(); if (W.ResizeObserver) { var ro = new ResizeObserver(placePlate); ro.observe(UI.stageHost); UI.offs.push(function () { ro.disconnect(); }); }
     var armed = null, armedAt = 0;
     box.addEventListener('click', function (e) {
-      var b = e.target.closest && e.target.closest('[data-a]'); if (!b) return;
+      var b = e.target.closest && e.target.closest('[data-a]'); if (!b || UI.going) return;
       var act = b.getAttribute('data-a');
       if (act === 'push' || act === 'quiet') {
-        if (hasRun && armed === act && Date.now() - armedAt < 300) return;
+        if (hasRun && armed === act && now() - armedAt < 300) return;          // 一次觸控算成兩下：不算第二下
         if (hasRun && armed !== act) {
-          armed = act; armedAt = Date.now();
+          armed = act; armedAt = now();
           qsa('[data-a=push],[data-a=quiet]', box).forEach(function (x) { x.classList.toggle('armed', x === b); });
           b.textContent = act === 'push' ? '再按一次：重新推門' : '再按一次：安靜地重新推門';
-          var w = qs('.lb-warn', box); if (w) w.hidden = false;
+          box.classList.add('warned');
           sfx('tick');
           return;
         }
         pushDoor(act === 'push');
       } else if (act === 'end') go('end');
       else if (act === 'cont') {
+        UI.going = true;
         var f = FX(); var want = save.settings.sound === true;
-        if (f) { try { f.unlockFromGesture(want); } catch (_) {} }
+        if (f) { try { if (f.init) f.init(); f.unlockFromGesture(want); } catch (_) {} }
         ensurePlayer(); resumeRun();
       }
     });
   };
   function pushDoor(withSound) {
+    if (UI.going) return;
+    UI.going = true;
     var f = FX();
     if (f) { try { if (f.init) f.init(); f.unlockFromGesture(withSound); if (f.setSpeed) f.setSpeed(speed()); } catch (e) { console.error(e); } }
     save.settings.sound = withSound;
@@ -1011,7 +1044,6 @@
     var first = !save.seen.reveal;
     if (firstEver()) startPrologue(!withSound);
     else startAgain();
-    // 第一次進店：「看看能點什麼」一次（§8.6）
     if (first) { save.seen.reveal = true; persist(); later(function () { stg('reveal', 2600); }, 900); }
   }
 
@@ -1019,15 +1051,15 @@
   function nightsFor(k) { return save.nights.filter(function (n) { return n.seedKey === k; }).length; }
   function createRun(o) {
     var k = seedKey();
-    var r = E.newRun(C, { seedKey: k, nightNo: nightsFor(k) + 1, aceTier: o.aceTier, goodEar: !!o.goodEar, knownHabits: knownHabits(), knownCards: knownCards(), prologue: !!o.prologue });
-    r.sv = RUN_SV;
-    save.run = r; save.lastAceTier = o.aceTier;
-    shelfAdd(C.aces[o.aceTier]); (C.gifts[o.aceTier] || []).forEach(shelfAdd); (C.junk || []).forEach(shelfAdd);
+    var r = E.newRun(C, { seedKey: k, nightNo: nightsFor(k) + 1, ace: o.ace, prologue: !!o.prologue, relics: o.prologue ? [] : (save.relics || []).slice(0, 3) });
+    r.goodEar = !!o.goodEar; r.tut = null;            // tut：null＝還沒選、true＝帶教學、false＝直接開打／教學結束
+    save.run = r; save.lastAce = o.ace;
+    shelfAdd(C.aces[o.ace]); (C.gifts[o.ace] || []).forEach(shelfAdd); (C.junk || []).forEach(shelfAdd);
     persist();
     return r;
   }
   function tierOfCard(id) { for (var i = 0; i < TIERS.length; i++) if (C.aces[TIERS[i]] === id) return TIERS[i]; return null; }
-  // ---- 序章（§8.7）
+  // ---- 序章
   function startPrologue(quiet) {
     var tonight = C.aces[TIERS[E.fnv1a32(seedKey() + '#tonight') % 3]];
     var ctx = { flags: {}, quiet: !!quiet, tonightId: tonight, defaultTier: tierOfCard(tonight) };
@@ -1039,13 +1071,14 @@
   }
   function acePickAndCreate(sc, ctx, b, prologue) {
     return acePickPanel(sc, ctx, b).then(function (tier) {
-      createRun({ aceTier: tier, goodEar: !!ctx.goodEar, prologue: prologue });
+      createRun({ ace: tier, goodEar: !!ctx.goodEar, prologue: prologue });
+      sc.stripState = null; renderStrip(sc);
       if (ctx.goodEar && !qs('.chip.gold', UI.top)) qs('.tt', UI.top).insertAdjacentHTML('afterend', '<span class="chip gold">好耳朵</span>');
       return tier;
     });
   }
   function playerLine(label) { return /^……（|^（/.test(label) ? label : '「' + label + '」'; }
-  function canTutorial() { return !!(C && C.tutorial && C.tutorial.hand && W.DipLabTut && typeof W.DipLabTut.duelHooks === 'function' && typeof W.DipLabTut.startDuelLesson === 'function'); }
+  function canTutorial() { var T = TUT(); return !!(C && C.tutorial && C.tutorial.script && T && typeof T.duelHooks === 'function' && typeof T.startDuelLesson === 'function'); }
   function prologueUi(ui, b, sc, dlg, ctx) {
     if (ui === 'guess') {
       if (ctx.quiet) return acePickAndCreate(sc, ctx, { prompt: '（挑一張帶走。）' }, true);
@@ -1061,27 +1094,30 @@
       });
     }
     if (ui === 'duel') {
-      // 開打前兩顆鈕（§6.4）：「▶ 品味對決」帶教學／「▶ 直接開打（我會玩）」
+      // 開打前兩顆鈕：「▶ 品味對決」帶教學／「▶ 直接開打（我會玩）」（教學做過了就預設直接開打）
       var tutOk = canTutorial();
-      var items = (Array.isArray(b.prompts) && b.prompts.length) ? b.prompts.slice(0, tutOk ? 2 : 1) : [b.prompt || '▶ 品味對決'].concat(tutOk ? ['▶ 直接開打（我會玩）'] : []);
-      return dlg.menu(items, { autoIndex: items.length > 1 ? 1 : 0 }).then(function (i) {
-        var r = save.run; var n = r.map.cols[0].nodes[0];
+      var items = (Array.isArray(b.prompts) && b.prompts.length) ? b.prompts.slice(0, tutOk ? 2 : 1) : [tutLabel('start', '▶ 品味對決')].concat(tutOk ? [tutLabel('skip', '▶ 直接開打（我會玩）')] : []);
+      var autoI = items.length > 1 ? (UI.auto && UI.auto.tut ? 0 : 1) : 0;
+      return dlg.menu(items, { autoIndex: autoI }).then(function (i) {
+        var r = save.run; if (!r) return go('title');
         var tut = tutOk && i === 0;
-        var jab = !tut && ctx.jab && C.cards['coldplay-mylo-xyloto'] && C.enemies[n.enemyId] && (C.enemies[n.enemyId].deck || []).indexOf('coldplay-mylo-xyloto') >= 0;
-        startDuel(n.id, { tutorial: tut, firstRecordId: jab ? 'coldplay-mylo-xyloto' : null, firstBubble: jab ? (C.lines.man && C.lines.man.jabBubble) : null });
+        r.tut = tut;
+        var jab = !tut && ctx.jab && C.cards['coldplay-mylo-xyloto'] && (C.enemies.man.deck || []).indexOf('coldplay-mylo-xyloto') >= 0;
+        persist();
+        beginFight({ tutorial: tut, enter: true, firstRecordId: jab ? 'coldplay-mylo-xyloto' : null, jab: jab });
         return new Promise(function () {});
       });
     }
     return Promise.resolve();
   }
-  // ---- 再來一夜（≤10 秒）
+  // ---- 再來一夜（≤10 秒）：門 swing → 三張王牌 → 今晚來客
   function startAgain() {
-    var ctx = { flags: {}, quiet: !soundOn(), defaultTier: save.lastAceTier || 'hall' };
+    var ctx = { flags: {}, quiet: !soundOn(), defaultTier: save.lastAce || 'hall' };
     save.run = null; persist();
     go('scene', { p: 'door', f: 'hide', o: 'counter', stripState: { ace: null, bag: [] }, start: function (sc) {
       var dlg = Dialogue(sc, ctx);
       dlg.run(C.script.again, function (ui, b) {
-        if (ui === 'acePick') return acePickAndCreate(sc, ctx, b, false).then(function () { go('map'); return new Promise(function () {}); });
+        if (ui === 'acePick') return acePickAndCreate(sc, ctx, b, false).then(function () { go('night'); return new Promise(function () {}); });
         return Promise.resolve();
       });
     } });
@@ -1090,314 +1126,287 @@
   function resumeRun() {
     var r = save.run;
     if (!r) return go('title');
-    if (r.over) return go('end');
     var step = E.nextStep(r);
-    if (!step) { save.run = null; persist(); return go('title'); }
-    if (step === 'move' && r.col === 0 && r.map.cols[0] && r.map.cols[0].nodes[0].type === 'prologue') return startDuel(r.map.cols[0].nodes[0].id, { noEncounter: true, tutorial: !save.tutorialDone && canTutorial() });
-    if (step === 'move') return go('map');
-    if (step === 'duel') {
-      // 教學場中途離開／重新整理：從第 1 手重開這場（B15；牌序固定所以結果一樣）
-      if (r.tutDuel && r.duel && !r.duel.over && canTutorial()) { r.duel = null; persist(); return startDuel(r.pending.nodeId, { tutorial: true, noEncounter: true }); }
-      return startDuel(r.pending.nodeId, { noEncounter: true });
-    }
-    if (step === 'stake' || step === 'relic') {
-      var node = E.findNode(r, r.pending.nodeId);
-      if (node && node.type === 'prologue') return epilogueFlow(r.pending.offer, true);
-      return go('reward', { offer: r.pending.offer });
-    }
-    return go('node');
+    if (step === 'reward') return r.pending.prologue ? epilogueFlow(true) : go('reward');
+    if (step === 'retry') return retryFlow({ enemyId: r.pending.enemyId, resumed: true });
+    if (r.over) return go('end');
+    if (step === 'duel') return beginFight({});
+    if (step === 'prologue') return beginFight({ tutorial: r.tut === true || (r.tut == null && !save.tutorialDone && canTutorial()) });
+    if (step === 'fight') return go('night');
+    save.run = null; persist(); go('title');
   }
 
-  // ======================================================================= 對決（duel.js；進場／退場編排 §3.7）
-  function preloadDuel(duel, node) {
+  // ======================================================================= 對決（duel.js；進場／退場編排）
+  function preloadDuel(duel) {
     try {
-      var cs = [].concat(duel.e.deck || [], duel.p.hand || [], duel.p.deck || []);
-      cs.forEach(function (c) { var s = coverSrc(c); if (s) { var im = new Image(); im.src = s; } });
-      var f = FX(); var list = [];
-      if (node && node.stakeId) list.push(card(node.stakeId));
-      if (duel.p.ace) list.push(duel.p.ace);
-      if (duel.e.ace) list.push(duel.e.ace);
-      if (f && f.music && f.music.preload) f.music.preload(list.filter(Boolean));
+      var seen = {};
+      var walk = function (o, depth) {
+        if (!o || depth > 2) return;
+        Object.keys(o).forEach(function (k) {
+          var v = o[k];
+          if (Array.isArray(v)) v.forEach(function (c) { if (c && c.id && !seen[c.id]) { seen[c.id] = 1; var s = coverSrc(c); if (s) { var im = new Image(); im.src = s; } } });
+        });
+      };
+      walk(duel.e, 0); walk(duel.p, 0);
     } catch (e) { console.error(e); }
   }
-  // 教學場的牌序（§6.3：ui.js 開教學場時做；duel.js 不碰）。C.tutorial：man{hp,phases}、records、hand[tier]、draw[tier]
-  function prepTutorialDuel(duel, tier) {
-    if (W.DipLabTut && typeof W.DipLabTut.prepareDuel === 'function') { try { W.DipLabTut.prepareDuel(duel, { tier: tier, content: C }); return; } catch (e) { console.error(e); } }
-    var T = C.tutorial || {}; var cd = function (id) { return card(id); };
-    var man = T.man || {};
-    if (man.hp) { duel.e.hp = man.hp; duel.e.maxHp = man.hp; }
-    if (Array.isArray(man.phases) && Array.isArray(duel.e.phases)) man.phases.forEach(function (ph, i) { if (duel.e.phases[i]) { if (ph.atHp != null) duel.e.phases[i].atHp = ph.atHp; if (ph.disc) duel.e.phases[i].disc = ph.disc.slice(); } });
-    var hand = (T.hand && T.hand[tier]) || null, draw = (T.draw && T.draw[tier]) || [];
-    if (hand) {
-      var all = (C.gifts[tier] || []).concat(C.junk || []);
-      duel.p.hand = hand.map(cd).filter(Boolean);
-      var rest = draw.concat(all.filter(function (id) { return hand.indexOf(id) < 0 && draw.indexOf(id) < 0; }));
-      duel.p.deck = rest.slice().reverse().map(cd).filter(Boolean);   // draw() 從尾巴拿：draw[0] 先抽
-      duel.p.discard = [];
-    }
-    if (Array.isArray(T.records) && T.records.length > 1) duel.e.deck = T.records.slice(1).reverse().map(cd).filter(Boolean);
-  }
-  function startDuel(nodeId, o) {
+  function beginFight(o) {
     o = o || {};
-    var r = save.run;
-    var tutFirst = !!(o.tutorial && C.tutorial && C.tutorial.records && C.tutorial.records[0]);
-    var res = E.startNodeDuel(r, C, nodeId, (o.firstRecordId || tutFirst) ? { firstRecordId: tutFirst ? C.tutorial.records[0] : o.firstRecordId } : undefined);
-    if (!res || !res.duel) { console.error('startNodeDuel failed', res && res.error); go('map'); return; }
-    if (o.tutorial && !res.resumed) { prepTutorialDuel(res.duel, r.aceTier); r.tutDuel = true; }
-    else if (!o.tutorial) r.tutDuel = false;
+    var r = save.run; if (!r) return go('title');
+    var tutorial = !!o.tutorial && canTutorial() && r.prologue === 'pending' && !r.duel;
+    var res = null;
+    try { res = E.startFight(r, C, { tutorial: tutorial, firstRecordId: o.firstRecordId || undefined }); } catch (e) { console.error(e); }
+    if (!res || !res.duel) { console.error('startFight failed'); persist(); return go(r.over ? 'end' : 'night'); }
+    if (!res.resumed) r.tut = tutorial;
     persist();
-    var node = E.findNode(r, nodeId);
-    bookOf(node.enemyId).met = true; persist();
-    preloadDuel(res.duel, node);
-    if (res.duel.over) { onDuelEnd(res.duel); return; }
+    preloadDuel(res.duel);
+    if (res.duel.over) return onDuelEnd({ duel: res.duel });           // 打完了但還沒結算（重新整理在結尾那 2 秒）
     UI.ending = null;
-    if (!o.noEncounter) ghostPanel();
-    go('duel', { res: res, node: node, enter: !o.noEncounter, tutorial: !!o.tutorial, firstBubble: o.firstBubble || null });
+    var tutOn = r.tut === true && !save.tutorialDone && canTutorial();
+    var enter = !!o.enter && !res.resumed;
+    if (enter) ghostPanel();
+    go('duel', { res: res, enemyId: res.enemyId, enter: enter, quick: !!o.quick && !res.resumed, tutorial: tutOn, jab: !!o.jab && !res.resumed });
   }
-  // 對決的提示（§6.5 夜晚遇到才教）：DipLabTut.firstTime；save.seen 在玩家照著做完那一手才寫（B15）
-  function duelHint(id, targets) {
-    if (!id || save.seen[id] || UI.tutReplay) return;
-    if (UI.entering) { UI.hintQ = (UI.hintQ || []).concat([[id, targets]]); return; }   // 進場的黑條還在跑：等收完再出提示
-    var T = W.DipLabTut;
-    if (T && typeof T.firstTime === 'function') {
-      // tutorial.js 自己記 save.seen（照著做完那一手才寫，B15）
-      if (!(T.active && T.active())) { try { T.firstTime(id, targets || []); } catch (e) { console.error(e); } }
-      return;
-    }
-    if (UI.pendingSeen[id]) return;
-    UI.pendingSeen[id] = true;
-    var tx = C.hints && C.hints[id];
-    if (tx) stageSay('o', tx, 'owner', 3400);
-  }
-  function commitSeen() {
-    var ks = Object.keys(UI.pendingSeen); if (!ks.length) return;
-    ks.forEach(function (k) { save.seen[k] = true; }); UI.pendingSeen = {}; persist();
-  }
-  function duelHooks(node, p) {
-    var tut = null;
-    if (p.tutorial && canTutorial()) { try { tut = W.DipLabTut.duelHooks(); } catch (e) { console.error(e); tut = null; } }
+  function duelHooks(p) {
+    var T = TUT(), tut = null;
+    if (p.tutorial && canTutorial()) { try { tut = T.duelHooks(); } catch (e) { console.error(e); tut = null; } }
     return {
       stage: UI.stage,
-      firstBubble: (p && p.firstBubble) || null,
       cardInfo: function (c, o) { return info(c, o); },
-      hint: function (id, targets) { duelHint(id, targets); },
-      pause: function () { openSettings(); },
-      help: function () { openHelp(); },
+      hint: function (id, targets) { if (UI.tutReplay || !T || !T.hintHook) return; try { T.hintHook(id, targets); } catch (e) { console.error(e); } },
       settings: function () { return { fastAnim: !!save.settings.fastAnim || FAST }; },
-      onEvent: function (ev, duel) { if (ev && ev.t === 'habitRevealed' && duel && duel.e && !UI.tutReplay) { bookHabit(duel.e.id, ev.glyph); persist(); } },
-      player: { name: playerName(), avatar: playerAv() },
-      previews: function () { return true; },
+      onEvent: function () {},
+      player: { name: '你', avatar: playerAv() },
+      relicIcon: function (id, size) { return relicIcon(id, size); },
+      resolveOpts: function () { return UI.force ? { debugOutcome: UI.force } : {}; },
       tut: tut,
-      beforeEnd: tut && W.DipLabTut.settled ? function () { try { return W.DipLabTut.settled(); } catch (_) { return null; } } : null
+      beforeEnd: tut && T.settled ? function () { try { return T.settled(); } catch (_) { return null; } } : null
     };
   }
-  function duelTitle(node) {
-    if (!node) return '';
-    var en = C.enemies[node.enemyId];
-    return esc(node.time) + '<small>' + (node.type === 'prologue' ? '序章' : esc(en ? en.name : '')) + '</small>';
+  function duelTitle(eid, r) {
+    var en = C.enemies[eid] || {};
+    if (en.prologue || eid === (C.prologueEnemy || 'man')) return esc(C.night.prologueTime || '21:30') + '<small>序章</small>';
+    var t = (r && r.times && r.times[r.idx]) || '';
+    if (en.boss) return esc(t) + '<small>打烊前</small>';
+    return esc(t) + '<small>今晚第 ' + ((r && r.idx | 0) + 1) + ' 位' + (en.elite ? '・菁英' : '') + '</small>';
   }
   // 盤面最終高度：螢幕高 − 頂欄 − 橫條（舞台 strip 鏡頭的 CSS 高）
   function stripCssH() {
-    var st = UI.stage; if (!st) return 120;
+    var st = UI.stage, vh = W.visualViewport ? Math.min(W.innerHeight, W.visualViewport.height) : W.innerHeight;
+    if (!st) return vh < 600 ? 84 : 120;
     try {
-      var L = st.layout, v = st.view(), vh = W.visualViewport ? Math.min(W.innerHeight, W.visualViewport.height) : W.innerHeight;
+      var L = st.layout, v = st.view();
       var nm = (W.DipLabStage && W.DipLabStage.pickCamera) ? W.DipLabStage.pickCamera('strip', L.cameras, vh) : 'strip';
-      var c = L.cameras[nm] || { h: 40 };
-      return Math.round(c.h * (v.baseDev || v.dev) / (v.dpr || 1));
-    } catch (_) { return 120; }
+      var c = L.cameras[nm] || L.cameras.strip;
+      var h = Math.round(c.h * (v.baseDev || v.dev) / (v.dpr || 1));
+      return h > 40 ? h : (vh < 600 ? 84 : 120);
+    } catch (_) { return vh < 600 ? 84 : 120; }
   }
   SCREENS.duel = function (p) {
-    var r = p.fakeRun || save.run, node = p.node, en = C.enemies[node.enemyId];
-    var tutOn = !!(p.tutorial && canTutorial());
-    setTop(duelTitle(node), { help: true, pause: true, skip: tutOn ? function () { try { if (W.DipLabTut.active()) W.DipLabTut.fastForward(); } catch (e) { console.error(e); } } : null });
+    var r = p.fakeRun || save.run, eid = p.enemyId, en = C.enemies[eid] || {};
+    setTop(duelTitle(eid, r), { help: true, pause: true });
     var panel = UI.panel; panel.classList.add('duel');
     var wrap = el('div', 'lb-duelwrap'); panel.appendChild(wrap);
     var foeSpr = enemySpr(en);
     resetPoses(); hideActor('q1'); hideActor('q2'); stg('sil', 'f', false); stg('sil', 'p', false);
     stg('sprite', 'f', foeSpr);
-    var enter = !!p.enter && !UI.auto;
+    var enter = !!p.enter && !UI.auto, quick = !!p.quick && !UI.auto;
     var opts = {
-      duel: p.res.duel, events: p.res.events || [], run: r, content: C, enter: enter,
-      onEnd: function (result) { onDuelEnd((result && result.duel) || r.duel); },
-      onSave: function (d) { if (save.run && !UI.tutReplay) { save.run.duel = d; persist(); } commitSeen(); },
-      hooks: duelHooks(node, p)
+      duel: p.res.duel, events: p.res.events || [], run: r, content: C, enter: enter || quick,
+      onEnd: function (result) { onDuelEnd(result); },
+      onSave: function () { if (save.run && !UI.tutReplay) persist(); },
+      hooks: duelHooks(p)
     };
+    var boss = !!en.boss && enter;
     var mountBoard = function () {
-      if (W.DipLabDuel && typeof W.DipLabDuel.mount === 'function') {
-        try { W.DipLabDuel.mount(wrap, opts); } catch (e) { console.error(e); stubDuel(wrap, opts); }
-      } else stubDuel(wrap, opts);
-      if (W.DipLabDuel && W.DipLabDuel.on) {
-        try { UI.offs.push(W.DipLabDuel.on('resolved', function () { commitSeen(); })); } catch (_) {}
-      }
-      if (p.tutorial && opts.hooks.tut) startLesson(r.aceTier, p.res.duel);
+      var Dl = DUEL();
+      if (Dl && typeof Dl.mount === 'function') { try { Dl.mount(wrap, opts); } catch (e) { console.error(e); stubDuel(wrap, opts); } }
+      else stubDuel(wrap, opts);
+      if (p.tutorial && opts.hooks.tut) startLesson(r.ace, !!p.replay);
+      if (p.jab && C.lines.man && C.lines.man.jabBubble) later(function () { if (UI.screen === 'duel') stageSay('f', C.lines.man.jabBubble, null, 1800); }, 2300);
+      if (boss) duelHold(true);                                   // 藏家登場卡收掉之前，盤面不能出牌（B-boss-intro-passthrough）
       if (UI.auto) later(autoDuel, 400);
     };
-    if (!enter) {
-      // 續玩／中途回來：直接是橫條，不播進場（§3.7）
-      place('f', 'duelE', foeSpr); place('p', 'duelP', 'player'); place('o', 'counter', 'owner'); stg('door', 'close');
+    var afterIn = function () {
+      if (UI.screen !== 'duel' || !wrap.isConnected) return;
+      wrap.classList.remove('entering'); wrap.style.height = '';
+      UI.going = false;
+      if (!boss) return;
+      var f = FX();
+      var intro = (f && f.bossIntro) ? Promise.resolve().then(function () { return f.bossIntro({ spriteHtml: sprHTML('boss', 72), title: en.name, sub: (C.lines.boss && C.lines.boss.stampSub) || '', tapToClose: true }); }) : Promise.resolve();
+      intro.then(null, function (e) { console.error(e); }).then(function () { if (UI.screen === 'duel') duelHold(false); });
+    };
+    if (!enter && !quick) {
+      // 續玩／中途回來：直接是橫條，不播進場
+      place('f', 'duelE', foeSpr); place('p', 'duelP', 'player'); place('o', stg('spot', 'ref') ? 'ref' : 'counter', 'owner'); stg('door', 'close');
       stg('interact', 'duel');
       cam('strip', 'duel', 0);
       mountBoard();
       return;
     }
-    // 進場（§3.7＋主線裁定 #6）：「！」＋閃白＋黑條（店主拍板的 encounterFx）先起頭，鏡頭推近與盤面淡入在黑條之下／之後同時跑，整段約 1.4 s
-    //   fx.encounter2：0「！」→ 200 閃白 → 320 onPush（這裡：走位＋鏡頭推近 760 ms＋掛盤面，盤面自己 600 ms 從下方淡入）＋黑條掃進 → 1000 黑條退開 → 1420 收完
+    // 進場：「！」＋閃白＋黑條（店主拍板的遇敵特效）只蓋在舞台上（O2／ART-03）；鏡頭推近與盤面從下方滑入都看得到。整段約 1.4 s
     var appH = app().clientHeight, finalH = Math.max(200, appH - 32 - stripCssH());
     wrap.classList.add('entering'); wrap.style.height = finalH + 'px';
     var f = FX(), foeAnc = anchorOf('f');
-    UI.going = true; UI.entering = true; UI.hintQ = [];
+    UI.going = true;
     stg('interact', 'duel');
     UI.camName = 'strip';
-    // 盤面在 onPush 才掛（duel.js 自己 600 ms 從下方淡入，掛完才算「可以出牌」）；
-    // 鏡頭在掛完的下一格才開始推：掛盤面的 DOM／封面成本不會吃掉推近的頭幾格（不卡）
     var walkIn = null, pushed = false;
     var push = function () {
       if (pushed || UI.screen !== 'duel' || !wrap.isConnected) return;
       pushed = true;
       mountBoard();
       walkIn = new Promise(function (res) {
-        var go2 = function () { stgP('duelIn', { foe: foeSpr, ms: Math.round(760 / speed()) }).then(res, res); };
+        var go2 = function () {
+          if (UI.stage && typeof UI.stage.duelIn === 'function') stgP('duelIn', { foe: foeSpr, ms: Math.round(760 / speed()) }).then(res, res);
+          else cam('strip', 'duel', 760).then(res, res);
+        };
         if (W.requestAnimationFrame) requestAnimationFrame(go2); else go2();
       });
     };
-    var enc;
-    try { enc = (f && f.encounter2) ? f.encounter2(foeAnc, { onPush: push }) : null; } catch (e) { console.error(e); enc = null; }
+    var enc = null;
+    if (enter) { try { enc = (f && f.encounter2) ? f.encounter2(foeAnc, { onPush: push, host: UI.stageHost }) : null; } catch (e) { console.error(e); enc = null; } }
     if (!enc) { push(); enc = Promise.resolve(); }
-    enc.then(function () { push(); return walkIn; }).then(function () {
-      UI.going = false; UI.entering = false;
-      var q = UI.hintQ || []; UI.hintQ = [];
-      if (UI.screen !== 'duel' || !wrap.isConnected) return;
-      q.forEach(function (h) { duelHint(h[0], h[1]); });
-      wrap.classList.remove('entering'); wrap.style.height = '';
-      if (node.type === 'boss' && f && f.bossIntro) {
-        try { f.bossIntro({ spriteHtml: sprHTML('boss', 72), title: en.name, sub: (C.lines.boss && C.lines.boss.stampSub) || '' }); } catch (e) { console.error(e); }
-      }
-    });
+    enc.then(function () { push(); return walkIn; }).then(afterIn, afterIn);
   };
-  function startLesson(tier, duel) {
-    var T = W.DipLabTut;
+  function startLesson(tier, replay) {
+    var T = TUT();
     try {
-      var pr = T.startDuelLesson({ tier: tier, duelApi: W.DipLabDuel, stage: UI.stage, duel: duel, content: C, replay: !!UI.tutReplay });
-      if (pr && pr.then) pr.then(function (how) { UI.tutResult = how; if (how === 'done' && !UI.tutReplay) markLearned(); }, function (e) { console.error(e); });
+      var pr = T.startDuelLesson({ tier: tier, replay: !!replay });
+      if (pr && pr.then) pr.then(function (how) {
+        UI.tutResult = how;
+        if (replay) return;
+        if (how === 'done' || how === 'skipped' || how === 'released') {
+          save.tutorialDone = true;                       // B-skip-reload：跳過之後重新整理不會再開教學
+          if (save.run) save.run.tut = false;
+          persist();
+        }
+      }, function (e) { console.error(e); });
     } catch (e) { console.error(e); }
   }
-  function markLearned() {
-    var L = (C.tutorial && C.tutorial.learned) || {};
-    save.learned = save.learned || {}; Object.keys(L).forEach(function (k) { save.learned[k] = true; }); persist();
-  }
-  // 退場（§3.7）：duel.js 的大章＋盤面淡出已經做完 → 這裡把鏡頭拉回全景、下一個面板從下面上來
-  function onDuelEnd(duel) {
-    if (UI.tutReplay) return endReplay(duel);
+  // 打完：duel.js 的大章＋盤面淡出已經做完 → 結算、下一個畫面
+  function onDuelEnd(result) {
+    var duel = (result && result.duel) || (save.run && save.run.duel);
+    if (UI.tutReplay) return endReplay();
     var r = save.run;
     if (!r || !duel || !duel.over || UI.ending === duel) return;
     UI.ending = duel;
-    var node = r.pending && E.findNode(r, r.pending.nodeId);
-    if (!node) { go('map'); return; }
-    commitSeen();
-    var eId = node.enemyId, b = bookOf(eId);
-    if (duel.over === 'win') b.beaten++; else b.lost++;
-    if (duel.e && duel.e.hidden && duel.stats && duel.stats.found) bookHabit(eId, duel.e.hidden);
-    if (r.tutDuel && duel.over === 'win') { save.tutorialDone = true; }
-    var eLeft = Math.max(0, (duel.e && duel.e.hp) || 0);
-    var out = E.finishDuel(r, C, duel);
-    if (!out || !out.offer) { console.error('finishDuel', out && out.error); persist(); go('map'); return; }
-    if (out.offer.kind === 'dead') r.lostShort = eLeft;
-    r.tutDuel = false;
-    shelfSync(); persist();
+    var wasTut = r.tut === true;
+    var out = null;
+    try { out = E.finishFight(r, C, duel); } catch (e) { console.error(e); }
+    if (!out || out.error) { console.error('finishFight', out && out.error); persist(); return go(r.over ? 'end' : 'night'); }
+    if (wasTut && out.win) save.tutorialDone = true;     // 教學那場打贏（含教學步驟中 KO）：B-tut-done-not-persisted
+    r.tut = false;
+    (out.met || []).forEach(shelfAdd);
+    persist();
     stg('untag');
-    var o = out.offer;
     if (UI.auto && UI.auto.until === 'duelEnd') UI.auto = null;
-    if (o.kind === 'retry') return retryFlow(node);
-    if (o.kind === 'stake' && o.prologue) return epilogueFlow(o);
-    if (o.kind === 'stake' || o.kind === 'elite') return go('reward', { offer: o });
-    var firstClear = o.kind === 'clear' && !save.best.clears;
-    recordNight(r);
-    if (o.kind === 'clear') return clearFlow(o, node, firstClear);
-    return deadFlow(node);
+    var off = out.offer;
+    if (off && off.type === 'retry') return retryFlow(out);
+    if (off && off.type === 'reward') return off.prologue ? epilogueFlow(false) : go('reward');
+    if (r.over) { recordNight(r); return r.over === 'clear' ? clearFlow() : deadFlow(out); }
+    go('night');
   }
   function recordNight(r) {
     if (!r || !r.over || r.recorded) return;
-    var sc = E.scoreRun(r);
     var firstClear = r.over === 'clear' && !save.best.clears;
     r.recorded = true;
-    var reached = r.over === 'clear' ? '02:00' : ((r.stats.lostAt && r.stats.lostAt.time) || '');
-    save.nights.push({ seedKey: r.seedKey, nightNo: r.nightNo, aceTier: r.aceTier, result: r.over, reached: reached, score: sc.total });
+    var la = r.stats.lostAt;
+    var reached = r.over === 'clear' ? (r.times[r.times.length - 1] || '02:00') : ((la && la.time) || (r.prologue === 'pending' ? C.night.prologueTime : ''));
+    save.nights.push({ seedKey: r.seedKey, nightNo: r.nightNo, ace: r.ace, result: r.over, reached: reached, wins: r.stats.wins, taken: r.stats.taken.slice() });
     if (save.nights.length > 30) save.nights = save.nights.slice(-30);
-    r.bestBefore = save.best.bySeedKey[r.seedKey] || 0;
-    if (sc.total > r.bestBefore) save.best.bySeedKey[r.seedKey] = sc.total;
-    if (sc.total > save.best.score) save.best.score = sc.total;
-    if (r.over === 'clear') save.best.clears++;
+    if (r.over === 'clear') { save.best.clears++; save.best.bySeedKey[r.seedKey] = (save.best.bySeedKey[r.seedKey] | 0) + 1; }
     if (firstClear) save.unlocks.secondNightTeaser = true;
+    r.firstClear = firstClear;
     save.prologueDone = true;
-    shelfSync(); persist();
+    save.relics = r.relics.slice(0, 3);
+    persist();
   }
-  // ---- 序章輸了：「……再一場。」
-  function retryFlow(node) {
-    go('scene', { p: 'duelP', f: 'duelE', fSpr: 'e0', o: 'between', camMs: 600, start: function (sc) {
+  // 場景：對決結束後的那個位置（他在左、你在右、老闆在中間），鏡頭拉回全景
+  function afterDuelScene(eid, o, start) {
+    var en = C.enemies[eid] || {};
+    go('scene', Object.assign({ p: 'duelP', f: 'duelE', fSpr: enemySpr(en), o: 'between', camMs: 600, start: function (sc) {
       stg('pose', 'p', null); stg('pose', 'f', null);
-      var dlg = Dialogue(sc, {});
-      dlg.run([{ who: '男子', text: '「' + C.lines.man.win + '」' }, { who: '老闆', text: '「' + C.lines.owner.retry + '」' }]).then(function () {
-        startDuel(node.id, { noEncounter: true });
-      });
-    } });
+      start(sc);
+    } }, o || {}));
   }
-  // ---- 序章收尾（押盤 → 配件三選一 → 地圖）
-  function epilogueFlow(offer, resumed) {
-    var r = save.run;
-    go('scene', { p: 'duelP', f: 'duelE', fSpr: 'e0', o: 'between', camMs: 600, start: function (sc) {
-      stg('pose', 'f', null); stg('pose', 'p', null);
+  // ---- 輸了：序章男子免費再一場；客人每晚一次老闆說情（同一位重打、聲望回滿）
+  function retryFlow(out) {
+    var r = save.run, eid = out.enemyId, p = r.pending, free = !!(p && p.free);
+    afterDuelScene(eid, {}, function (sc) {
       var dlg = Dialogue(sc, {});
+      var winLine = C.lines[eid] && C.lines[eid].win;
+      var beats = [];
+      if (winLine && !out.resumed) beats.push({ who: eid === 'man' ? '男子' : (eid === 'boss' ? '藏家' : C.enemies[eid].name), text: '「' + [].concat(winLine)[0] + '」' });
+      beats.push({ who: '老闆', text: '「' + ((C.lines.owner && C.lines.owner.retry) || '……再一場。') + '」' });
+      dlg.run(beats).then(function () {
+        if (free) { doChoose({ type: 'retry' }); return beginFight({ quick: true }); }
+        return dlg.menu(['▶ 再一場（老闆說情，今晚只有一次）', '今晚到這'], { autoIndex: 0 }).then(function (i) {
+          if (i === 0) { doChoose({ type: 'retry' }); beginFight({ quick: true }); return; }
+          doChoose({ type: 'end' }); recordNight(save.run); deadFlow({ enemyId: eid });
+        });
+      });
+    });
+  }
+  // ---- 序章收尾：他掉出來的那張 → 發燒配件三選一（店主認可的那一段）→ 今晚來客
+  function epilogueFlow(resumed) {
+    var r = save.run;
+    afterDuelScene('man', { fSpr: 'e0' }, function (sc) {
+      var pend0 = r.pending;
+      var ctx = { flags: {}, stakeId: pend0 && pend0.cards && pend0.cards[0] };
+      var dlg = Dialogue(sc, ctx);
       var beats = C.script.epilogueWin;
       if (resumed) beats = beats.filter(function (b) { return b.ui === 'stake' || b.ui === 'relic'; });
       dlg.run(beats, function (ui, b) {
         var pend = save.run.pending;
         if (ui === 'stake') {
-          if (!pend || pend.stakeDone) return Promise.resolve();
-          var isNew = !!(r.stats.newMetIds && r.stats.newMetIds.indexOf(offer.cardId) >= 0);
-          return stakePanel(sc, offer.cardId, { title: '他的袋子裡掉出來的', isNew: isNew, buttons: [
-            { label: '收進包包', sub: '包包 ' + r.deck.length + '／12', value: 'take', pri: true },
-            { label: '寄放櫃檯', sub: '只收進唱片櫃', value: 'shelf' }] }).then(function (v) {
-            var res = doChoose(v === 'take' ? { type: 'takeStake' } : { type: 'keepStakeOnShelf' });
-            toast(effectsText(res.effects)); sc.stripState = null; renderStrip(sc);
+          if (!pend || pend.cardDone || !pend.cards.length) return Promise.resolve();
+          var c = card(pend.cards[0]);
+          return cardPanel(c, { title: '他的袋子裡掉出來的', isNew: true, buttons: [
+            { label: '收進包包', sub: '包包 ' + save.run.bag.length + '／' + E.CFG.bagMax, value: 'take', pri: true },
+            { label: '不用了', sub: '還是會留在唱片櫃', value: 'skip' }] }).then(function (v) {
+            shelfAdd(c.id);
+            if (v === 'take') return takeCard(c.id).then(function (res) { if (!res) doChoose({ type: 'skip' }); else toast(effectsText(res.effects)); sc.stripState = null; renderStrip(sc); });
+            doChoose({ type: 'skip' });
           });
         }
         if (ui === 'relic') {
-          if (!pend || pend.relicDone) return Promise.resolve();
-          return relicPanel(sc, offer.relicChoices || [], { prompt: b.prompt }).then(function (id) {
-            var res = doChoose({ type: 'pickRelic', relicId: id });
-            toast(effectsText(res.effects));
+          pend = save.run.pending;
+          if (!pend || pend.relicDone || !pend.relics.length) return Promise.resolve();
+          var auto = E.runPolicy ? E.runPolicy(save.run, C) : null;
+          return relicPanel(pend.relics, { prompt: b.prompt || '挑一件發燒配件', autoId: auto && auto.relicId }).then(function (id) {
+            if (!id) { doChoose({ type: 'skip' }); return; }
+            return takeRelic(id).then(function (res) { if (res) toast(effectsText(res.effects)); else doChoose({ type: 'skip' }); });
           });
         }
         return Promise.resolve();
       }).then(function () {
-        try {
-          var c1 = save.run.map.cols.find(function (c) { return c.col === 1; });
-          var nd1 = c1 && c1.nodes.find(function (n) { return n.enemyId; });
-          if (nd1) { place('f', 'out', enemySpr(C.enemies[nd1.enemyId])); stg('sil', 'f', true); }
-        } catch (_) {}
+        var nx = save.run && save.run.order[save.run.idx];
+        if (nx) { place('f', 'out', enemySpr(C.enemies[nx])); stg('sil', 'f', true); }
         return dlg.run(C.script.afterPrologue, function (ui) {
-          if (ui === 'map') { save.prologueDone = true; persist(); go('map'); return new Promise(function () {}); }
+          if (ui === 'map') { save.prologueDone = true; persist(); go('night'); return new Promise(function () {}); }
           return Promise.resolve();
         });
       });
-    } });
+    });
   }
-  // ---- 打烊（通關）：店燈暗一半、老闆擦唱盤
-  function clearFlow(offer, node, first) {
-    go('scene', { p: 'duelP', f: 'duelE', fSpr: 'boss', o: 'counter', camMs: 600, start: function (sc) {
-      stg('pose', 'f', null); stg('pose', 'p', null);
-      var dlg = Dialogue(sc, { flags: { firstClear: first } });
+  // ---- 打烊（通關）：藏家用過的那張（你當初沒選的王牌）收進唱片櫃
+  function clearFlow() {
+    var r = save.run;
+    afterDuelScene('boss', { o: 'counter' }, function (sc) {
+      var aceId = C.aces[r.bossAce];
+      var dlg = Dialogue(sc, { flags: { firstClear: !!r.firstClear }, stakeId: aceId });
       dlg.run(C.script.clear, function (ui) {
-        if (ui === 'stake') {
-          shelfAdd(offer.cardId); persist();
-          return stakePanel(sc, offer.cardId, { title: '他用過的那張', isNew: true, buttons: [{ label: '收進唱片櫃', value: 'ok', pri: true }] });
+        if (ui === 'stake' && card(aceId)) {
+          var isNew = shelfAdd(aceId); persist();
+          return cardPanel(card(aceId), { title: '他用過的那張', isNew: isNew, buttons: [{ label: '收進唱片櫃', value: 'ok', pri: true }] });
         }
         return Promise.resolve();
       }).then(function () { go('end'); });
-    } });
+    });
   }
-  // ---- 散場：你倒在地上，老闆一句
-  function deadFlow(node) {
+  // ---- 散場：你坐在地上，老闆一句
+  function deadFlow(out) {
     go('scene', { p: 'duelP', o: 'counter', camMs: 600, start: function (sc) {
       stg('pose', 'f', null);
       stgP('walk', 'f', ['door', 'leave']).then(function () { hideActor('f'); });
@@ -1405,604 +1414,268 @@
       dlg.run(C.script.dead).then(function () { go('end'); });
     } });
   }
-  // ---- 傳說藏家進門
-  function bossEnterFlow(node) {
-    go('scene', { p: 'atdoor', f: 'out', fSpr: 'boss', o: 'counter', start: function (sc) {
+  // ---- 傳說藏家進門（02:00）
+  function bossEnterFlow() {
+    go('scene', { p: 'duelP', f: 'out', fSpr: 'boss', o: 'counter', start: function (sc) {
       var dlg = Dialogue(sc, {});
       dlg.run(C.script.bossEnter, function (ui, b) {
-        if (ui === 'duel') return dlg.menu([b.prompt || '▶ 品味對決']).then(function () { startDuel(node.id, {}); return new Promise(function () {}); });
+        if (ui === 'duel') return dlg.menu([b.prompt || '▶ 品味對決']).then(function () { stg('clearStamps'); beginFight({ enter: true }); return new Promise(function () {}); });
         return Promise.resolve();
       });
     } });
   }
-  // ---- 重看教學（小抄／⏸）：不跑劇情、不寫存檔、沒有獎勵；用上次的王牌直接開一場教學對決
+  // ---- 重看教學（規則卡／⏸）：不跑劇情、不寫存檔、沒有獎勵
   function replayTutorial() {
-    if (!canTutorial()) return;
-    var tier = save.lastAceTier || (save.run && save.run.aceTier) || 'hall';
-    var man = C.enemies.man;
-    var pDef = { hp: E.CFG.prologueHp, maxHp: E.CFG.prologueHp, deck: (C.gifts[tier] || []).concat(C.junk || []).map(card).filter(Boolean),
-      ace: card(C.aces[tier]), ear: tier, relics: [], startQi: 0, reviveOnce: false };
-    var eDef = Object.assign({}, man, { deck: (man.deck || []).map(card).filter(Boolean) });
-    var res;
-    try { res = E.startDuel(pDef, eDef, { seed: 7, prologue: true, firstRecordId: (C.tutorial.records || [])[0] || null }); } catch (e) { console.error(e); return; }
-    prepTutorialDuel(res.duel, tier);
-    UI.tutReplay = { back: UI.screen === 'duel' ? 'title' : (save.run && !save.run.over ? 'resume' : 'title') };
-    var node = { id: 'tut', enemyId: 'man', type: 'prologue', time: '21:30' };
-    var fakeRun = { aceTier: tier, relics: [], deck: [], hp: pDef.hp, maxHp: pDef.hp };
-    go('duel', { res: res, node: node, enter: true, tutorial: true, fakeRun: fakeRun });
+    var T = TUT();
+    if (!canTutorial() || UI.screen === 'duel' || !T.replayDuel) return;
+    var tier = save.lastAce || (save.run && save.run.ace) || 'hall';
+    var res; try { res = T.replayDuel(C, tier, 7); } catch (e) { console.error(e); return; }
+    var back = UI.screen === 'night' ? 'night' : (save.run && !save.run.over ? 'resume' : 'title');
+    go('duel', { res: res, enemyId: C.prologueEnemy || 'man', enter: true, tutorial: true, replay: true, fakeRun: { ace: tier, retryLeft: 1, relics: [], idx: 0, times: [] } });
+    UI.tutReplay = { back: back };
   }
-  function endReplay(duel) {
+  function endReplay() {
     var back = (UI.tutReplay && UI.tutReplay.back) || 'title';
-    UI.tutReplay = null;
-    try { if (W.DipLabTut && W.DipLabTut.active && W.DipLabTut.active()) W.DipLabTut.skip(); } catch (_) {}
-    stg('untag'); resetPoses();
-    if (back === 'resume') resumeRun(); else go('title');
+    leaveDuel();
+    resetPoses();
+    if (back === 'resume') resumeRun(); else if (back === 'night' && save.run && !save.run.over) go('night'); else go('title');
   }
 
-  // ======================================================================= reward（押盤翻開 §8.3）
-  function takeCardWithDrop(sc, cardId, mk) {
-    var r = save.run;
-    if (r.deck.length < E.CFG.deckCap) return Promise.resolve(doChoose(mk(undefined)));
-    stageSay('o', C.lines.owner.bagFull, 'owner');
-    return dropPanel(sc, cardId).then(function (dropId) { return dropId ? doChoose(mk(dropId)) : null; });
-  }
-  SCREENS.reward = function (p) {
-    var r = save.run, o = p.offer || (r.pending && r.pending.offer);
-    if (!o) return resumeRun();
-    var node = E.findNode(r, r.pending.nodeId), enemy = C.enemies[node.enemyId];
-    setTop(esc(node.time) + '<small>' + esc(enemy.name) + '</small>', { hp: true, pause: true });
+  // ======================================================================= reward：贏了挑他一張唱片（菁英／藏家：唱片或一件配件）
+  SCREENS.reward = function () {
+    var r = save.run, p = r && r.pending;
+    if (!p || p.type !== 'reward') return resumeRun();
+    if (p.prologue) return epilogueFlow(true);
+    var en = C.enemies[p.enemyId] || {};
+    setTop(esc(r.times[r.idx] || '') + '<small>' + esc(en.name || '') + '</small>', { help: true, pause: true });
     UI.panel.classList.add('reward');
-    // 舞台：他往門口走（輸了）、你站在門邊、唱盤轉
     cam('reward', 'reward', 600);
     stg('interact', 'reward');
     stg('pose', 'f', null); stg('pose', 'p', null);
-    place('p', 'duelP', 'player'); place('o', 'counter', 'owner');   // 對決剛結束：你留在原地，他從 duelE 走去門口（不瞬移）
-    if (!stg('has', 'f')) place('f', 'duelE', enemySpr(enemy));
-    stg('sprite', 'f', enemySpr(enemy)); stg('hide', 'f', false); stg('sil', 'f', false);
-    var lose = (C.lines[node.enemyId] && C.lines[node.enemyId].lose) || [];
+    place('p', 'duelP', 'player'); place('o', 'counter', 'owner');
+    if (!stg('has', 'f')) place('f', 'duelE', enemySpr(en));
+    stg('sprite', 'f', enemySpr(en)); stg('hide', 'f', false); stg('sil', 'f', false);
+    var lose = (C.lines[p.enemyId] && C.lines[p.enemyId].lose) || [];
     later(function () { stageSay('f', [].concat(lose)[0], null, 2200); }, 300);
     later(function () { stg('door', 'open'); stgP('walk', 'f', ['door', 'leave']).then(function () { hideActor('f'); stg('door', 'close'); }); }, 1700);
-    var sc = { panel: UI.panel };
-    var elite = o.kind === 'elite';
-    var pend = r.pending;
-    var stakeStep = function () {
-      if (pend.stakeDone) return Promise.resolve();
-      var isNew = !!(r.stats.newMetIds && r.stats.newMetIds.indexOf(o.cardId) >= 0);
-      var btns = [{ label: '收進包包', sub: '包包 ' + r.deck.length + '／12', value: 'take', pri: true }];
-      if (elite || !o.relicId) btns.push({ label: '寄放櫃檯', sub: '只收進唱片櫃', value: 'shelf' });
-      else {
-        var rel = C.relics[o.relicId];
-        // 配件名＋效果要讀得到：主字短（「拿他的配件」），副標寫名字與效果、可以換行（不再被省略號吃掉）
-        btns.push({ label: '拿他的配件', sub: '「' + rel.name + '」' + (o.relicOwned ? '已經有了：改回 ' + ((C.relicFallback && C.relicFallback.hp) || 4) + ' 聲望' : rel.desc), value: 'relic', wrap: true });
-      }
-      if (o.extraCardIds && o.extraCardIds.length) btns.push({ label: '再挑一張他的盤', sub: '會員集點卡', value: 'extra' });
-      var loop = function () {
-        return stakePanel(sc, o.cardId, { title: '他押的那張', isNew: isNew, buttons: btns }).then(function (v) {
-          if (v === 'take') return takeCardWithDrop(sc, o.cardId, function (d) { return { type: 'takeStake', dropId: d }; }).then(function (res) { if (!res) return loop(); toast(effectsText(res.effects)); });
-          if (v === 'shelf') { doChoose({ type: 'keepStakeOnShelf' }); return; }
-          if (v === 'relic') { var res = doChoose({ type: 'takeRelic', relicId: o.relicId }); toast(effectsText(res.effects)); return; }
-          if (v === 'extra') return extraPanel(sc, o).then(function (res) { if (!res) return loop(); toast(effectsText(res.effects)); });
-        });
-      };
-      return loop();
+    var cards = p.cards.map(card).filter(Boolean), relics = p.relics.filter(relicOf);
+    var bagLine = '包包 ' + r.bag.length + '／' + E.CFG.bagMax;
+    var html = '<div class="hd"><h3>' + (cards.length ? '他丟過的唱片：挑一張收進包包' : '他沒有能收的唱片') + '</h3><span class="sub">' + esc(bagLine) + '</span></div>' +
+      (cards.length ? '<div class="lb-rgrid">' + cards.map(function (c) { return tileHTML(c, { pick: '收這張', isNew: isNewOnShelf(c.id) }); }).join('') + '</div>' +
+        '<p class="note">點封面看唱片資訊、試聽。沒收的也都進了唱片櫃。</p>' : '') +
+      (relics.length ? '<div class="lb-h3">' + (cards.length ? '或改拿一件發燒配件' : '挑一件發燒配件') + '</div><div class="lb-opts">' + relicButtonsHTML(relics, 'data-r') + '</div>' : '') +
+      '<div class="foot"><button type="button" class="lb-btn wide" data-a="skip">' + (cards.length || relics.length ? '都不要' : '繼續') + '</button></div>';
+    var s = sheet(html, 'reward');
+    var busy = false;
+    var finish = function (res) {
+      if (res && res.effects) toast(effectsText(res.effects));
+      var rr = save.run;
+      if (rr.pending && rr.pending.type === 'reward') { busy = false; return; }          // 還沒選完（例：包包滿了按「算了」）
+      if (rr.over) { recordNight(rr); return later(function () { rr.over === 'clear' ? clearFlow() : go('end'); }, 300); }
+      later(function () { go('night'); }, 300);
     };
-    stakeStep().then(function () {
-      if (elite && !pend.relicDone && save.run.pending) {
-        return relicPanel(sc, o.relicChoices || [], { prompt: '他身上掉出三件發燒配件，挑一件' }).then(function (id) {
-          var res = doChoose({ type: 'pickRelic', relicId: id }); toast(effectsText(res.effects));
-        });
-      }
-    }).then(function () { later(function () { go('map'); }, 250); });
-  };
-  function extraPanel(sc, o) {
-    return new Promise(function (res) {
-      var html = '<div class="hd"><h3>再挑一張他的盤</h3></div><div class="lb-trio">' + o.extraCardIds.map(function (id) { return tileHTML(card(id), { pick: '選這張' }); }).join('') + '</div>' +
-        '<div class="foot"><button type="button" class="lb-btn wide" data-a="back">返回</button></div>';
-      var s = sheet(html, 'extra');
-      s.addEventListener('click', function (e) {
-        var t = e.target.closest && e.target.closest('.lb-ct');
-        if (t) { var id = t.getAttribute('data-cid'); closeSheet(s); takeCardWithDrop(sc, id, function (d) { return { type: 'takeExtra', cardId: id, dropId: d }; }).then(res); return; }
-        if (e.target.closest && e.target.closest('[data-a=back]')) { closeSheet(s); res(null); }
-      });
+    s.addEventListener('click', function (e) {
+      if (busy) return;
+      var pk = e.target.closest && e.target.closest('[data-pick]');
+      var rl = e.target.closest && e.target.closest('[data-r]');
+      if (pk) { busy = true; sfx('select'); takeCard(pk.getAttribute('data-pick')).then(finish); return; }
+      if (rl) { busy = true; sfx('select'); takeRelic(rl.getAttribute('data-r')).then(finish); return; }
+      if (e.target.closest && e.target.closest('[data-a=skip]')) { busy = true; finish(doChoose({ type: 'skip' })); }
     });
-  }
+    autoAct(function () {
+      var ch = E.runPolicy(save.run, C) || { type: 'skip' };
+      if (ch.type === 'take') { busy = true; takeCard(ch.cardId, ch.dropId).then(finish); }
+      else if (ch.type === 'relic') { busy = true; takeRelic(ch.relicId, ch.dropRelicId).then(finish); }
+      else { busy = true; finish(doChoose({ type: 'skip' })); }
+    }, 300);
+  };
 
-  // ======================================================================= map（今晚 §8.2）：店裡亮金標＋時間軸
-  var NODE_NAME = { prologue: '序章', fight: '客人', elite: '菁英', boss: '打烊前', crate: '挖箱', listen: '試聽機', event: '事件', rest: '櫃檯' };
-  var NODE_SHORT = { crate: '挖箱', listen: '試聽', event: '事件', rest: '櫃檯' };
-  var NODE_HOT = { crate: ['crate-jazz', 'crate-tw', 'crate-noise'], listen: ['booth'], rest: ['counter'], event: ['poster-event'], fight: ['door'], elite: ['door'], boss: ['door'] };
-  var NODE_DESC = {
-    crate: '三個箱子：爵士區、台灣區、噪音區。挑一箱翻出三張，帶走一張。偶爾會翻到店主私藏。',
-    listen: '試聽機放一段，三張封面猜一張。猜中回 6 聲望，那張可以收；猜錯回 3。',
-    rest: '喝杯茶回 8 聲望，或洗一張盤（最高軸 +1，上限 5）。'
-  };
-  function nodeLabel(nd) {
-    if (nd.enemyId) return C.enemies[nd.enemyId].name;
-    if (nd.type === 'event') { var ev = C.events.find(function (e) { return e.id === nd.eventId; }); return ev ? ev.title : '事件'; }
-    return NODE_NAME[nd.type] || nd.type;
-  }
-  function curCol(r) { return r.map.cols.find(function (c) { return c.col === r.col; }); }
-  // 這一欄的選項在店裡亮金標（§8.2）；門口排隊的客人＝下一位（剪影）
-  function mapStage(r) {
-    var col = curCol(r); if (!col) return;
-    var list = [], k = 0;
-    var by = {};
-    col.nodes.forEach(function (nd) {
-      var ids = NODE_HOT[nd.type]; if (!ids) return;
-      var nm = nd.enemyId ? C.enemies[nd.enemyId].name : (NODE_NAME[nd.type] || '');
-      var key = ids.join(',');
-      if (by[key]) by[key].label += '／' + nm;
-      else { by[key] = { ids: ids, label: col.time + ' ' + nm }; list.push(by[key]); }
-      if (nd.enemyId && k < 2) { k++; place('q' + k, 'q' + k, enemySpr(C.enemies[nd.enemyId])); stg('sil', 'q' + k, true); }
-    });
-    if (k < 2) hideActor('q2'); if (k < 1) hideActor('q1');
-    stg('highlight', list);
-  }
-  SCREENS.map = function () {
+  // ======================================================================= 今晚來客（SPEC-v3 §9：店內底部一條，五顆頭像，打完的變黑，下一位金框）
+  function enemyHp(id) { var e = C.enemies[id] || {}; return e.hp | 0; }
+  SCREENS.night = function () {
     var r = save.run;
     if (!r) return go('title');
-    if (r.over) return go('end');
-    if (E.nextStep(r) !== 'move') return resumeRun();
-    setTop(nightLabel(r), { hp: true, help: true, pause: true });
-    var panel = UI.panel; panel.classList.add('map');
-    cam('full', 'map', 600);
+    if (r.over && !r.pending) return go('end');
+    if (E.nextStep(r) !== 'fight') return resumeRun();
+    setTop(nightLabel(r), { help: true, pause: true });
+    var panel = UI.panel; panel.classList.add('night');
     stg('interact', 'map');
     resetPoses(); hideActor('f'); stg('sil', 'p', false);
     place('o', 'counter', 'owner'); place('p', UI.lastSpot || 'browse', 'player'); stg('door', 'close');
-    mapStage(r);
-    // 時間軸：一欄一欄往右走（不畫連線）；這一欄後面一條金框（data-tut="map-col"，教學挖洞用）
-    var cols = r.map.cols, n = cols.length;
-    var g = '<div class="lb-tl" style="grid-template-columns:repeat(' + n + ',minmax(0,1fr))">';
-    cols.forEach(function (c, i) {
-      g += '<span class="tm' + (c.col === r.col ? ' cur' : '') + '" style="grid-column:' + (i + 1) + ';grid-row:1">' + esc(c.time) + '</span>';
-      if (c.col === r.col) g += '<span class="colhl" data-tut="map-col" style="grid-column:' + (i + 1) + ';grid-row:2 / span 2" aria-hidden="true"></span>';
-      c.nodes.forEach(function (nd, row) {
-        var went = r.visited.indexOf(nd.id) >= 0;
-        var cls = 'lb-node';
-        if (c.col < r.col) cls += went ? ' done' : ' past';
-        else if (c.col === r.col) cls += ' can';
-        else cls += ' locked';
-        if (nd.type === 'elite') cls += ' elite';
-        if (nd.type === 'boss') cls += ' boss';
-        var face = went ? '✓' : nd.enemyId ? '<span class="face">' + headHTML(enemySpr(C.enemies[nd.enemyId]), 28) + '</span>' : esc(NODE_SHORT[nd.type] || '？');
-        g += '<span class="cell" style="grid-column:' + (i + 1) + ';grid-row:' + (2 + row) + '"><button type="button" class="' + cls + '" data-n="' + esc(nd.id) + '" aria-label="' + esc(c.time + ' ' + nodeLabel(nd)) + '">' + face +
-          (nd.type === 'elite' && !went ? '<span class="el">菁英</span>' : '') + '</button></span>';
-      });
-      if (c.col === r.col) g += '<span class="me" style="grid-column:' + (i + 1) + ';grid-row:4">▲ 下一站</span>';
+    // 門外排隊：下一位（剪影）
+    var nx = r.order[r.idx], nx2 = r.order[r.idx + 1];
+    if (nx) { place('q1', 'q1', enemySpr(C.enemies[nx])); stg('sil', 'q1', true); } else hideActor('q1');
+    if (nx2) { place('q2', 'q2', enemySpr(C.enemies[nx2])); stg('sil', 'q2', true); } else hideActor('q2');
+    var row = r.order.map(function (id, i) {
+      var en = C.enemies[id] || {}, done = i < r.idx, cur = i === r.idx;
+      return '<button type="button" class="nc' + (done ? ' done' : '') + (cur ? ' cur' : '') + (en.elite ? ' elite' : '') + (en.boss ? ' boss' : '') + '" data-i="' + i + '" data-tut="night-' + i + '" aria-label="' + esc((r.times[i] || '') + ' ' + en.name) + '">' +
+        '<span class="tm">' + esc(r.times[i] || '') + '</span><span class="hd">' + headHTML(enemySpr(en), 30) + (done ? '<span class="ok" aria-hidden="true">✓</span>' : '') + '</span>' +
+        '<span class="nm">' + esc(en.boss ? '打烊前' : en.elite ? '菁英' : en.name) + '</span></button>';
+    }).join('');
+    var nen = C.enemies[nx] || {};
+    var h = '<div class="lb-night"><div class="nh"><b>' + esc(C.night.label || '今晚來客') + '</b><span class="sub">贏了 ' + r.stats.wins + ' 位' + (r.retryLeft > 0 ? '・老闆說情 剩 ' + r.retryLeft + ' 次' : '') + '</span></div>' +
+      '<div class="nrow" data-tut="night">' + row + '</div>' +
+      '<button type="button" class="lb-btn pri big wide key" data-a="go" data-tut="night-next">下一位：' + esc(r.times[r.idx] || '') + '　' + esc(nen.name || '') + ' ▸</button></div>' +
+      '<div class="lb-bagline"><button type="button" class="bag" data-a="bag">包包 <b>' + r.bag.length + '/' + E.CFG.bagMax + '</b></button>' +
+      '<button type="button" class="rl" data-a="relics"><span class="k">發燒配件</span>' + (r.relics.length ? r.relics.map(function (id) { return '<span class="ri">' + relicIcon(id, 16) + '</span>'; }).join('') + (r.relics.length === 1 ? '<span>' + esc(relicOf(r.relics[0]).name) + '</span>' : '') : '<span>（還沒有）</span>') + '</button></div>';
+    var box = el('div', 'lb-screen', h); panel.appendChild(box);
+    guardClicks(box);
+    cam('full', 'map', 600, Math.max(170, Math.ceil(box.scrollHeight + 6)));
+    box.addEventListener('click', function (e) {
+      var b = e.target.closest && e.target.closest('[data-a],[data-i]'); if (!b || UI.going) return;
+      if (b.hasAttribute('data-i')) { sfx('tick'); guestSheet(+b.getAttribute('data-i')); return; }
+      var a = b.getAttribute('data-a');
+      if (a === 'go') nextGuest();
+      else if (a === 'bag') bagSheet(r);
+      else if (a === 'relics') relicSheet(r);
     });
-    g += '</div>';
-    var tl = el('div', 'lb-tlw', g);
-    panel.appendChild(tl);
-    var bag = el('div', 'lb-bagline');
-    bag.innerHTML = '<button type="button" class="bag" data-a="bag">包包 <b>' + r.deck.length + '/' + E.CFG.deckCap + '</b></button>' +
-      '<button type="button" class="rl" data-a="relics"><span class="k">發燒配件：</span>' + (r.relics.length ? r.relics.map(function (id) { return '<span class="ri">' + relicIcon(id, 16) + '</span>'; }).join('') + (r.relics.length === 1 ? '<span>' + esc(C.relics[r.relics[0]].name) + '</span>' : '') : '<span>（還沒有）</span>') + '</button>' +
-      (r.nextStartQi ? '<span class="qi">下一場氣勢 +' + r.nextStartQi + '</span>' : '');
-    panel.appendChild(bag);
-    guardClicks(tl); guardClicks(bag);
-    tl.addEventListener('click', function (e) {
-      var b = e.target.closest && e.target.closest('[data-n]'); if (!b || UI.going) return;
-      sfx('tick'); previewNode(r, E.findNode(r, b.getAttribute('data-n')));
-    });
-    bag.addEventListener('click', function (e) {
-      if (UI.going) return;
-      if (e.target.closest && e.target.closest('[data-a=bag]')) { bagSheet(r); return; }
-      if (e.target.closest && e.target.closest('[data-a=relics]')) relicSheet(r);
-    });
-    // 第一次進今晚：「今晚的客人，一個一個來。」→「亮著的，就是下一站。」（§6.5，照著點了才算看過）
-    if (!save.seen.map && !save.seen.mapIntro && !UI.auto) {
-      later(function () {
-        if (UI.screen !== 'map') return;
-        var T = W.DipLabTut;
-        if (T && typeof T.firstTime === 'function') { try { T.firstTime('map', ['map-col'].concat(curCol(r).nodes.map(function (nd) { return 'shop:' + ((NODE_HOT[nd.type] || [])[0] || ''); }))); } catch (e) { console.error(e); } }
-        else { var ls = (C.shopLines && C.shopLines.mapIntro) || []; if (ls[0]) stageSay('o', ls[0], 'owner', 2600); if (ls[1]) later(function () { stageSay('o', ls[1], 'owner', 2600); }, 2700); UI.pendingSeen.mapIntro = true; }
-      }, 700);
-    }
-    autoAct(function () {
-      var ch = E.routePolicy(save.run, C);
-      if (ch && ch.type === 'move') { var nd = E.findNode(save.run, ch.nodeId); previewNode(save.run, nd); autoAct(function () { var b = qs('.lb-sheet.float [data-a=go]'); if (b) b.click(); }, 200); }
-    }, 300);
+    if (!save.seen.night && !UI.auto) later(function () {
+      if (UI.screen !== 'night') return;
+      var T = TUT(); if (T && T.firstTime) try { T.firstTime('night', ['night', 'night-next']); } catch (e) { console.error(e); }
+    }, 700);
+    autoAct(function () { var b = qs('[data-a=go]', box); if (b) b.click(); }, 300);
   };
-  // 節點預覽（點時間軸的節點，或點店裡亮金標的東西：同一個面板）
-  function previewNode(r, nd, o) {
-    o = o || {};
-    if (!nd || UI.going) return;
-    var pv = E.nodePreview(r, C, nd.id) || { node: nd };
-    var can = !!pv.canMove;
-    var past = nd.col < r.col;
-    var col = r.map.cols.find(function (c) { return c.col === nd.col; });
-    var html = '<div class="hd"><h3>' + (can ? '下一站・' : past ? '走過了・' : '還沒輪到・') + esc(nd.time || (col && col.time) || '') + '</h3><button type="button" class="x" data-a="close" aria-label="關閉">✕</button></div>';
-    if (pv.enemy) {
-      var Em = pv.enemy;
-      var ult = pv.ults ? '氣勢 ' + pv.ultAt + '・<span class="' + pv.ultAttr + '">' + ZH[pv.ultAttr] + '</span>' + (pv.reflectable ? '<span class="gtag">王牌接得住</span>' : '') : '不輾壓';
-      var stakeC = nd.stakeId && card(nd.stakeId);
-      html += '<div class="pv-who"><div class="av">' + headHTML(enemySpr(Em), 30) + '</div><div><b class="key">' + esc(Em.name) + '</b>' + (Em.title ? '<small>' + esc(Em.title) + '</small>' : '') +
-        (nd.type === 'elite' ? '<span class="gtag">菁英</span>' : '') + '<div class="bl">' + esc(Em.blurb) + '</div></div></div>' +
-        '<div class="kv"><span class="k">聲望</span><b class="num">' + pv.hp + '</b>　<span class="k">輾壓</span>' + ult + '<br>' +
-        (stakeC ? '<span class="k">押盤</span>蓋著・' + starsHTML(stakeC) + (stakeC.tier ? '<span class="sub">・你沒選的王牌</span>' : '') + (stakeC.gold ? '<span class="gtag">私藏</span>' : '') : '') +
-        (pv.requestLabel ? '　<span class="k">點播</span>' + esc(pv.requestLabel) : '') +
-        (pv.relic ? '<br><span class="k">身上</span>' + relicIcon(pv.relic.id, 16) + ' ' + esc(pv.relic.name) + (pv.relicOwned ? '（已有）' : '') : '') + '</div>';
-    } else {
-      var ev = pv.event;
-      var lab = o.crate ? ((C.pools && C.pools.crateLabels && C.pools.crateLabels[o.crate]) || '') : '';
-      html += '<div class="pv-who"><div class="av txt">' + esc(NODE_SHORT[nd.type] || '？') + '</div><div><b class="key">' + esc(nodeLabel(nd)) + (lab ? '・' + esc(lab) : '') + '</b><div class="bl">' + esc(ev ? ev.text : (NODE_DESC[nd.type] || '')) + '</div></div></div>' +
-        (ev ? '<p class="sub">選項的後果會先寫出來。</p>' : '');
-    }
-    html += '<div class="two">' + (can ? '<button type="button" class="lb-btn pri big key" data-a="go">' + (pv.enemy ? '就他了' : '就這個') + '</button>' : '<button type="button" class="lb-btn big key" disabled>' + (past ? '已經過了' : '還沒輪到') + '</button>') +
-      '<button type="button" class="lb-btn big key" data-a="close">再看看</button></div>';
-    var s = floatSheet(html, 'preview');
-    s.addEventListener('click', function (e) {
-      var b = e.target.closest && e.target.closest('[data-a]'); if (!b) return;
-      if (b.getAttribute('data-a') === 'close') { s.remove(); return; }
-      if (b.getAttribute('data-a') === 'go' && can) { s.remove(); goNode(nd, o); }
-    });
+  // 點頭像：他的名字、名牌那句（先知道今晚會遇到哪些脾氣）
+  function guestSheet(i) {
+    var r = save.run, id = r.order[i], en = C.enemies[id]; if (!en) return;
+    var hb = C.habits[en.habit] || {}, cur = i === r.idx, done = i < r.idx;
+    var lab = en.habitLabel || (C.habitLabels && C.habitLabels.base) || '脾氣';
+    var html = '<div class="hd"><h3>' + esc(r.times[i] || '') + '・' + (done ? '打過了' : cur ? '下一位' : '還沒輪到') + '</h3><button type="button" class="x" data-a="close" aria-label="關閉">✕</button></div>' +
+      '<div class="pv-who"><div class="av">' + headHTML(enemySpr(en), 30) + '</div><div><b class="key">' + esc(en.name) + '</b>' + (en.title ? '<small>' + esc(en.title) + '</small>' : '') +
+      (en.elite ? '<span class="gtag">菁英</span>' : '') + (en.boss ? '<span class="gtag">打烊前</span>' : '') + '<div class="bl">聲望 ' + enemyHp(id) + '</div></div></div>' +
+      '<div class="lb-habit"><span class="lb">' + esc(lab) + '</span><span class="tx">' + esc(hb.line || '') + '</span></div>' +
+      (en.phase2 ? '<p class="sub">聲望掉到一半以下，名牌會換一句。</p>' : '') +
+      '<div class="two">' + (cur ? '<button type="button" class="lb-btn pri big key" data-a="go">就他了</button>' : '') + '<button type="button" class="lb-btn big key" data-a="close">' + (cur ? '再看看' : '關閉') + '</button></div>';
+    var s = floatSheet(html, 'guest');
+    s.addEventListener('click', function (e) { if (e.target.closest && e.target.closest('[data-a=go]')) { s.remove(); syncFloat(); nextGuest(); } });
   }
-  // 走過去：舞台上你走到那個地方、門開、客人進來（§8.2「就他了」）
-  var NODE_SPOT = { crate: 'crateP', listen: 'listen', rest: 'pay', event: 'near' };
-  function goNode(nd, o) {
-    o = o || {};
+  // 下一位推門進來：門 swing、他走進來說一句（推門那句），接著無縫推近成對決
+  function nextGuest() {
     var r = save.run;
-    if (UI.going || !E.canMove(r, nd.id)) return;
+    if (UI.going || !r || E.nextStep(r) !== 'fight') return;
     UI.going = true;
     sfx('select');
-    stg('highlight', []);
-    if (nd.type === 'boss') { later(function () { bossEnterFlow(nd); }, 200); return; }
-    if (nd.enemyId) {
-      var en = C.enemies[nd.enemyId];
-      hideActor('q1'); hideActor('q2');
-      stg('door', 'swing'); place('f', 'door', enemySpr(en)); stg('sil', 'f', false);
-      stgP('walk', 'f', ['in']).then(function () { stageSay('f', en.title ? en.title : en.name, null, 1400); });
-      later(function () { if (UI.screen === 'map') startDuel(nd.id, {}); }, 900);
-      return;
-    }
-    UI.lastSpot = NODE_SPOT[nd.type] || 'browse';
-    stgP('walk', 'p', [UI.lastSpot], 110).then(function () {
-      if (UI.screen !== 'map') return;
-      var res = doChoose({ type: 'move', nodeId: nd.id });
-      if (res.error) { UI.going = false; toast('現在不能過去'); return; }
-      commitSeen();
-      go('node', { crate: o.crate || null });
-    });
+    qsa('.lb-sheet.float', app()).forEach(function (s) { s.remove(); }); syncFloat();
+    var T = TUT(); if (T && T.dismissSoft) try { T.dismissSoft(); } catch (_) {}
+    var id = r.order[r.idx], en = C.enemies[id] || {};
+    if (en.boss) { later(function () { bossEnterFlow(); }, 200); return; }
+    hideActor('q1');
+    stg('door', 'swing'); place('f', 'door', enemySpr(en)); stg('sil', 'f', false);
+    var intro = C.lines[id] && C.lines[id].intro;
+    stgP('walk', 'f', ['in']).then(function () { if (intro) stageSay('f', [].concat(intro)[0], null, 1500); });
+    later(function () { if (UI.screen === 'night') beginFight({ enter: true }); }, UI.auto ? 300 : 1100);
   }
   function bagSheet(r) {
-    var html = '<div class="hd"><h3>包包 ' + r.deck.length + '／' + E.CFG.deckCap + '</h3><button type="button" class="x" data-a="close" aria-label="關閉">✕</button></div>' +
-      '<p class="sub">點封面看唱片資訊。</p><div class="lb-pick">' + tileHTML(card(C.aces[r.aceTier]), { text: false }) + r.deck.map(function (id) { return tileHTML(cardM(id), { text: false }); }).join('') + '</div>';
-    var s = floatSheet(html, 'bag tall');
-    s.addEventListener('click', function (e) {
-      if (e.target.closest && e.target.closest('[data-a=close]')) { s.remove(); return; }
-      var t = e.target.closest && e.target.closest('.lb-ct'); if (t) info(t.getAttribute('data-cid'), { from: 'bag' });
-    });
+    var html = '<div class="hd"><h3>包包 ' + r.bag.length + '／' + E.CFG.bagMax + '</h3><button type="button" class="x" data-a="close" aria-label="關閉">✕</button></div>' +
+      '<p class="sub">點封面看唱片資訊。王牌另外放，不佔包包。</p><div class="lb-pick">' + tileHTML(card(C.aces[r.ace]), { text: false }) + r.bag.map(function (id) { return tileHTML(card(id), { text: false }); }).join('') + '</div>';
+    floatSheet(html, 'bag tall');
   }
   function relicSheet(r) {
-    var html = '<div class="hd"><h3>發燒配件</h3><button type="button" class="x" data-a="close" aria-label="關閉">✕</button></div><div class="lb-opts">' + (r.relics.length ? r.relics.map(function (id) {
-      var x = C.relics[id];
-      return '<div class="lb-relic static"><span class="pix">' + relicIcon(id, 30) + '</span><span class="tx"><span class="nm">' + esc(x.name) + '</span><span class="ds">' + esc(x.desc) + '</span></span></div>';
-    }).join('') : '<p class="sub">還沒有。贏了菁英、序章收尾都會拿到。</p>') + '</div>';
-    var s = floatSheet(html, 'relics');
-    s.addEventListener('click', function (e) { if (e.target.closest && e.target.closest('[data-a=close]')) s.remove(); });
+    var html = '<div class="hd"><h3>發燒配件</h3><button type="button" class="x" data-a="close" aria-label="關閉">✕</button></div>' +
+      '<p class="sub">' + esc((C.rules && C.rules.relics) || '') + '</p><div class="lb-opts">' + (r.relics.length ? r.relics.map(function (id) {
+        var x = relicOf(id);
+        return '<div class="lb-relic static"><span class="pix">' + relicIcon(id, 30) + '</span><span class="tx"><span class="nm">' + esc(x.name) + '</span><span class="ds">' + esc(x.desc) + '</span></span></div>';
+      }).join('') : '<p class="sub">還沒有。序章收尾、打贏菁英或藏家都拿得到。</p>') + '</div>';
+    floatSheet(html, 'relics');
   }
 
-  // ======================================================================= 店裡的東西點了會怎樣（§5.5）
+  // ======================================================================= 店裡的東西點了會怎樣（牆上唱片＝唱片資訊、箱子＝翻、試聽機＝放一張、老闆／店貓＝一句）
+  function binOf(key) {
+    var B = C.bins || {}, keys = Object.keys(B);
+    if (!keys.length) return null;
+    if (B[key]) return key;
+    var alias = { jazz: 'jazz', jz: 'jazz', tw: 'tw', taiwan: 'tw', noise: 'noise', nz: 'noise' };
+    if (alias[key] && B[alias[key]]) return alias[key];
+    return keys[E.fnv1a32(String(key || 'bin')) % keys.length];
+  }
+  function openBin(key) {
+    var k = binOf(key); if (!k) return;
+    var b = C.bins[k], ids = (b.ids || []).filter(card);
+    var html = '<div class="hd"><h3>' + esc(b.label || '箱子') + '</h3><button type="button" class="x" data-a="close" aria-label="關閉">✕</button></div>' +
+      '<p class="sub">' + esc(line('bin') || '點封面看唱片資訊。') + '</p><div class="lb-rgrid bin">' + ids.map(function (id) { return tileHTML(card(id), {}); }).join('') + '</div>';
+    floatSheet(html, 'bin tall');
+  }
+  function boothIds() {
+    var r = save.run, out = [], add = function (id) { var c = card(id); if (c && c.previewUrl && out.indexOf(id) < 0) out.push(id); };
+    if (r) { add(C.aces[r.ace]); r.bag.forEach(add); }
+    Object.keys(save.shelf).reverse().forEach(add);
+    return out.slice(0, 24);
+  }
+  function openBooth() {
+    var ids = boothIds();
+    if (!ids.length) { stageSay('o', line('boothEmpty') || '唱片櫃還空著。', 'owner', 2400); return; }
+    var html = '<div class="hd"><h3>試聽機</h3><span class="np"></span><button type="button" class="x" data-a="close" aria-label="關閉">✕</button></div>' +
+      '<p class="sub">' + esc(line('booth') || '挑一張你唱片櫃裡的，放來聽聽。') + '</p><div class="lb-pick booth">' + ids.map(function (id) { return tileHTML(card(id), { text: false, stars: false, pick: '放這張' }); }).join('') + '</div>';
+    var s = floatSheet(html, 'booth tall');
+    watchPlaying(qs('.np', s));
+    if (UI.screen === 'night' || UI.screen === 'title') stgP('walk', 'p', ['listen'], 110).then(function () { UI.lastSpot = 'listen'; });
+    s.addEventListener('click', function (e) {
+      var b = e.target.closest && e.target.closest('[data-pick]'); if (!b) return;
+      var c = card(b.getAttribute('data-pick')), f = FX(); if (!c || !f || !f.music) return;
+      if (!soundOn()) { try { if (f.init) f.init(); if (f.setSound) f.setSound(true); else f.unlockFromGesture(true); } catch (err) { console.error(err); } save.settings.sound = true; persist(); }
+      qsa('.lb-ct', s).forEach(function (x) { x.classList.toggle('sel', x === b.closest('.lb-ct')); });
+      try { f.music.play(c, { fadeMs: 900 }); } catch (err) { console.error(err); }
+      stg('play', true);
+    });
+  }
   function onStageAction(action, hot) {
     if (!action) return;
     var ci = CI(); if (ci && ci.isOpen()) return;
-    if (UI.modal || UI.page) return;
-    var scr = UI.screen, r = save && save.run;
-    var m;
+    if (UI.modal || UI.page || UI.going) return;
+    var scr = UI.screen, m;
     if ((m = /^wall-record:(.+)$/.exec(action))) { info(m[1], { from: 'stage' }); return; }
     if (action === 'now') { var f = FX(), c = f && f.music && f.music.current && f.music.current(); if (c) info(c, { from: 'stage' }); return; }
-    if (action === 'talk:owner') { stageSay('o', line('ownerHint', scr === 'map' ? 'map' : scr === 'duel' ? 'duel' : scr) || line('ownerHint', 'map'), 'owner', 2600); return; }
+    if (action === 'talk:owner' || action === 'counter' || action === 'owner') { stageSay('o', line('ownerHint', scr === 'scene' ? 'scene' : scr) || line('ownerHint', 'night'), 'owner', 2600); return; }
     if (action === 'cat') { var ct = line('cat'); if (ct) stageSay('o', ct, 'owner', 1600); return; }
     if ((m = /^shop:(.+)$/.exec(action))) { if (scr === 'taipei' && m[1] === 'dip') backFromTaipei(); return; }
     if (action === 'locked') { var lk = line('locked'); if (lk) toast(lk); return; }
-    // 地圖：這一欄有對應節點 → 開同一個預覽
-    if (scr === 'map' && r && !UI.going) {
-      var col = curCol(r), want = null, crate = null;
-      if ((m = /^crate:(.+)$/.exec(action))) { want = 'crate'; crate = m[1]; }
-      else if (action === 'listen') want = 'listen';
-      else if (action === 'counter') want = 'rest';
-      else if (action === 'poster:event') want = 'event';
-      else if (action === 'door') want = 'fight';
-      var nd = col && col.nodes.find(function (n) { return want === 'fight' ? !!n.enemyId : n.type === want; });
-      if (nd) { sfx('tick'); previewNode(r, nd, { crate: crate }); return; }
-      if (want === 'crate') { var nl = line('crateNotYet'); if (nl) stageSay('o', nl, 'owner', 2200); return; }
-    }
-    // 挖箱節點：點箱子＝選那一箱（§8.4）
-    if (scr === 'node' && (m = /^crate:(.+)$/.exec(action)) && UI.crateTap) { UI.crateTap(m[1]); return; }
-    if (scr === 'title' && action === 'door') { var pb = qs('[data-a=push]', UI.panel); if (pb) pb.click(); return; }
-    if (action === 'poster:event') { var po = line('poster'); if (po) stageSay('o', po, 'owner', 2400); return; }
-    if (/^crate:/.test(action)) { var cn = line('crateNotYet'); if (cn) stageSay('o', cn, 'owner', 2200); return; }
-    if (action === 'listen') {
-      var fx = FX(), nowId = null;
-      try { var hs = stg('hotspots') || []; var nh = hs.find(function (h) { return h.id === 'now'; }); nowId = nh && /^wall-record:(.+)$/.exec(nh.action) && /^wall-record:(.+)$/.exec(nh.action)[1]; } catch (_) {}
-      if (fx && soundOn() && nowId && card(nowId)) fx.music.play(card(nowId), { fadeMs: 1200 });
-      else if (nowId) info(nowId, { from: 'stage' });
+    if (scr === 'duel' || scr === 'scene' || scr === 'reward') return;      // 這些畫面只開唱片資訊與老闆那句
+    if ((m = /^(?:crate|bin|crates|bins)(?::(.*))?$/.exec(action))) { sfx('tick'); openBin(m[1] || ''); return; }
+    if (action === 'listen' || action === 'booth') { sfx('tick'); openBooth(); return; }
+    if (/^poster/.test(action)) { sfx('tick'); openRules(); return; }
+    if (action === 'door') {
+      if (scr === 'title') { var cb = qs('[data-a=cont]', UI.panel) || qs('[data-a=push]', UI.panel); if (cb) cb.click(); return; }   // B-title-door-abandons-run：有存檔＝繼續今晚
+      if (scr === 'night' && save.run) { sfx('tick'); guestSheet(save.run.idx); }
     }
   }
 
-  // ======================================================================= node（挖箱／試聽機／事件／櫃檯 §8.4；鏡頭 reward）
-  function dropRun() { save.run = null; persist(); go('title'); }
-  SCREENS.node = function (p0) {
-    var r = save.run, p = r && r.pending;
-    if (!r) return go('title');
-    if (!p) return go(r.over ? 'end' : 'map');
-    if (p.type === 'duel' || p.type === 'reward') return resumeRun();
-    if (p.type !== 'node') return dropRun();
-    var node = E.findNode(r, p.nodeId);
-    if (!node) return dropRun();
-    setTop(esc(node.time) + '<small>' + esc(nodeLabel(node)) + '</small>', { hp: true, help: true, pause: true });
-    UI.panel.classList.add('node');
-    cam('reward', 'node', 600);
-    stg('interact', 'node');
-    resetPoses(); hideActor('q1'); hideActor('q2');
-    place('o', 'counter', 'owner');
-    var ss = { panel: UI.panel };
-    var fn = { crate: crateStep, crateCard: crateCardStep, listen: listenStep, listenKeep: listenKeepStep, event: eventStep, rest: restStep }[p.step];
-    if (fn) fn(ss, r, p, node, p0 || {}); else dropRun();
-  };
-  function nodeDone(ss, effects, ln, lineWho) {
-    var txt = effectsText(effects);
-    if (ln) stageSay(lineWho || 'o', ln, lineWho && lineWho !== 'o' ? null : 'owner');
-    var s = sheet((txt ? '<p class="lb-result key">' + esc(txt) + '</p>' : '') + '<div class="foot"><button type="button" class="lb-btn pri big wide key" data-a="next">繼續</button></div>', 'done');
-    qs('[data-a=next]', s).addEventListener('click', function () { go('map'); });
-    autoAct(function () { var b = qs('[data-a=next]', s); if (b) b.click(); });
-  }
-  // 挖箱：你走到箱子後面（腿被箱子擋住＝在翻箱，B12）；點箱子或三顆字鈕
-  function crateStep(ss, r, p, node, p0) {
-    place('p', 'crateP', 'player'); stg('pose', 'p', 'dig');
-    UI.lastSpot = 'crateP';
-    stg('allow', ['crate-*', 'rack:*', 'now']);
-    var L = (C.pools && C.pools.crateLabels) || { jazz: '爵士區', tw: '台灣區', noise: '噪音區' };
-    // 只畫像素外框、不掛標籤：面板已經寫「點店裡的箱子也可以」，標籤會被你的頭推到箱子下面、被舞台下緣切掉
-    stg('highlight', [{ ids: ['crate-jazz', 'crate-tw', 'crate-noise'], label: '' }]);
-    var s = sheet('<div class="hd"><h3>挖箱：挑一箱</h3><span class="sub">點店裡的箱子也可以</span></div><div class="lb-crates">' +
-      ['jazz', 'tw', 'noise'].map(function (k) { return '<button type="button" class="lb-btn big key" data-k="' + k + '">' + esc(L[k]) + '</button>'; }).join('') + '</div>' +
-      '<p class="sub">翻出三張，帶走一張。</p>', 'crate');
-    var chosen = false;
-    var choose = function (k) {
-      if (chosen) return; chosen = true; UI.crateTap = null; stg('highlight', []);
-      sfx('flip');
-      var res = doChoose({ type: 'crate', crate: k });
-      if (res.error) { chosen = false; return; }
-      closeSheet(s); crateCardStep(ss, save.run, save.run.pending);
-    };
-    UI.crateTap = choose;
-    s.addEventListener('click', function (e) { var b = e.target.closest && e.target.closest('[data-k]'); if (b) choose(b.getAttribute('data-k')); });
-    if (p0 && p0.crate) { later(function () { choose(p0.crate); }, 500); return; }
-    autoAct(function () { var ch = E.routePolicy(save.run, C); var b = ch && qs('[data-k="' + ch.crate + '"]', s); if (b) b.click(); });
-  }
-  function crateCardStep(ss, r, p) {
-    stg('pose', 'p', null); stg('allow', null); stg('interact', 'node');
-    place('p', 'crateP', 'player');
-    var L = (C.pools && C.pools.crateLabels) || {};
-    if (p.goldId) { later(function () { stageSay('o', C.lines.owner.gold, 'owner'); sfx('seeThrough'); }, 200); }
-    // 「都不要」放在標題列右邊（不佔底部 sticky 列）：三顆「帶走」在 375×548 也不用捲就看得到
-    var s = sheet('<div class="hd"><h3>' + esc(L[p.crate] || '挖箱') + '</h3><span class="sub">挑一張進包包</span><button type="button" class="lb-btn hdb" data-a="none">都不要</button></div><div class="lb-trio">' +
-      p.cardIds.map(function (id) { return tileHTML(card(id), { pick: '帶走' }); }).join('') + '</div>' +
-      (p.goldId ? '<p class="lb-result">老闆：「' + esc(C.lines.owner.gold) + '」</p>' : ''), 'cratecard');
-    s.addEventListener('click', function (e) {
-      var t = e.target.closest && e.target.closest('.lb-ct');
-      if (t) {
-        var id = t.getAttribute('data-cid'); closeSheet(s);
-        takeCardWithDrop(ss, id, function (d) { return { type: 'crateCard', cardId: id, dropId: d }; }).then(function (res) {
-          if (!res) return crateCardStep(ss, save.run, save.run.pending);
-          nodeDone(ss, res.effects);
-        });
-        return;
-      }
-      if (e.target.closest && e.target.closest('[data-a=none]')) { closeSheet(s); var res = doChoose({ type: 'crateCard', cardId: null }); nodeDone(ss, res.effects); }
-    });
-    autoAct(function () { var ch = E.routePolicy(save.run, C); var b = ch && ch.cardId ? qs('.lb-ct[data-cid="' + ch.cardId + '"] [data-pick]', s) : qs('[data-a=none]', s); if (b) b.click(); });
-  }
-  var LISTEN_MS = 15000;
-  function listenStep(ss, r, p) {
-    var f = FX(), ans = card(p.answerId);
-    place('p', 'listen', 'player'); stg('pose', 'p', 'sit'); UI.lastSpot = 'listen';
-    var muted = !(soundOn() && ans && ans.previewUrl);
-    stg('play', !muted);
-    var s = sheet('<div class="lb-listen-head"><button type="button" class="lb-tt' + (muted ? '' : ' spin') + '" aria-label="再聽一次" disabled></button><div><b>試聽機</b><div class="sub msgl"></div></div></div>' +
-      '<div class="lb-trio">' + p.cardIds.map(function (id) { return tileHTML(card(id), { stars: false, pick: muted ? '選這張' : '是這張' }); }).join('') + '</div>', 'listen');
-    var msg = qs('.msgl', s), tt = qs('.lb-tt', s), tok = 0, done = false;
-    var spillHit = spillNote(E.CFG.listenHit), spillMute = spillNote(E.CFG.listenMuted);
-    function stopMusic(ms) { if (f && f.music) try { f.music.stop({ fadeMs: ms }); } catch (_) {} }
-    function setMuted() {
-      muted = true; tok++; stopMusic(300);
-      stg('play', false); tt.classList.remove('spin'); tt.disabled = true;
-      qsa('[data-pick]', s).forEach(function (b) { b.textContent = '選這張'; });
-      msg.textContent = '（試聽機沒聲音。挑一張帶走，回 4 聲望。）' + (spillMute ? '（' + spillMute + '）' : '');
-    }
-    function ended() {
-      stg('play', false); tt.classList.remove('spin'); tt.disabled = false;
-      msg.textContent = '（放完了。點唱機再聽一次。）猜中回 6 聲望，猜錯回 3。' + (spillHit ? '（' + spillHit + '）' : '');
-    }
-    function playAns() {
-      var my = ++tok, settled = false;
-      tt.disabled = true; tt.classList.add('spin'); stg('play', true);
-      msg.textContent = '正在放其中一張。猜中回 6 聲望，猜錯回 3。' + (spillHit ? '（' + spillHit + '）' : '');
-      f.music.play(ans, { fadeMs: 600, maxMs: LISTEN_MS, exclusive: true }).then(function (ok) {
-        settled = true;
-        if (my !== tok || !s.isConnected) return;
-        if (!ok) { setMuted(); return; }
-        setTimeout(function () { if (my !== tok || !s.isConnected || done) return; stopMusic(1500); ended(); }, LISTEN_MS);
-      });
-      setTimeout(function () { if (!settled && s.isConnected && my === tok) setMuted(); }, 2600);
-    }
-    tt.addEventListener('click', function (e) { stopEv(e); if (!muted && !done && !tt.disabled) playAns(); });
-    if (muted) setMuted(); else playAns();
-    s.addEventListener('click', function (e) {
-      var t = e.target.closest && e.target.closest('.lb-ct'); if (!t || done) return;
-      done = true;
-      var id = t.getAttribute('data-cid');
-      var res = doChoose(muted ? { type: 'listen', guessId: null, pickId: id } : { type: 'listen', guessId: id });
-      if (res.error) { done = false; return; }
-      tok++;
-      closeSheet(s);
-      listenKeepStep(ss, save.run, save.run.pending, null, null, res);
-    });
-    autoAct(function () { var ch = E.routePolicy(save.run, C); var b = ch && ch.guessId ? qs('.lb-ct[data-cid="' + ch.guessId + '"] [data-pick]', s) : qs('[data-pick]', s); if (b) b.click(); }, 400);
-  }
-  function listenKeepStep(ss, r, p, node, p0, res) {
-    stg('pose', 'p', null);
-    var result = p.result, keepId = p.keepId, ans = card(p.answerId);
-    var ln = result === 'hit' ? C.lines.owner.listenRight : result === 'miss' ? C.lines.owner.listenWrong : '';
-    if (ln) stageSay('o', ln, 'owner');
-    sfx(result === 'hit' ? 'readHit' : result === 'miss' ? 'tick' : 'select');
-    var head = result === 'hit' ? '猜中了！' : result === 'miss' ? '不是這張。' : '你挑了這張。';
-    var gain = res ? effectsText(res.effects) : '';
-    var c = keepId ? card(keepId) : ans;
-    var html = '<div class="hd"><h3>' + esc(head) + '</h3></div>' + (gain ? '<p class="lb-result key">' + esc(gain) + '</p>' : '') +
-      '<div class="lb-one">' + coverHTML(c, { size: 96 }) + '<div class="meta"><div class="ar">' + esc(c.artist) + '</div><div class="al">' + esc(c.album) + '</div>' + starsHTML(c) + '</div></div>' +
-      '<div class="foot two">' + (keepId ? '<button type="button" class="lb-btn pri big key" data-a="keep">收進包包</button><button type="button" class="lb-btn big key" data-a="no">不用了</button>' : '<button type="button" class="lb-btn pri big wide key" data-a="no">繼續</button>') + '</div>';
-    var s = sheet(html, 'listenkeep');
-    s.addEventListener('click', function (e) {
-      var b = e.target.closest && e.target.closest('[data-a]'); if (!b) return;
-      if (b.getAttribute('data-a') === 'keep') {
-        closeSheet(s);
-        takeCardWithDrop(ss, keepId, function (d) { return { type: 'listenKeep', keep: true, dropId: d }; }).then(function (r2) {
-          if (!r2) return listenKeepStep(ss, save.run, save.run.pending, null, null, res);
-          toast(effectsText(r2.effects)); go('map');
-        });
-      } else { closeSheet(s); doChoose({ type: 'listenKeep', keep: false }); go('map'); }
-    });
-    autoAct(function () { var ch = E.routePolicy(save.run, C); var b = qs(ch && ch.keep ? '[data-a=keep]' : '[data-a=no]', s); if (b) b.click(); }, 300);
-  }
-  function eventStep(ss, r, p) {
-    var ev = C.events.find(function (x) { return x.id === p.eventId; });
-    if (!ev) return go('map');
-    stg('door', 'swing');
-    var me = JSON.stringify(playerAv());
-    var vpool = (C.avatarsFallback || []).filter(function (av) { return JSON.stringify(av) !== me; });
-    place('f', 'visit', vpool[E.fnv1a32(ev.id) % Math.max(1, vpool.length)] || 'e1'); stg('sil', 'f', false);
-    place('p', 'near', 'player'); UI.lastSpot = 'near';
-    var cap = E.CFG.deckCap, minD = E.CFG.deckMin;
-    function disabled(o) {
-      var fx = o.effects || [];
-      if (o.minDeck && r.deck.length < o.minDeck) return true;
-      if (fx.some(function (f) { return f.giveAwayPicked; }) && r.deck.length - 1 < minD) return true;
-      var up = fx.find(function (f) { return f.starUpPicked; });
-      if (up && !r.deck.some(function (id) { var c = cardM(id); return c && (c[up.starUpPicked] || 0) < E.CFG.starCap; })) return true;
-      return false;
-    }
-    var html = '<div class="hd"><h3>' + esc(ev.title) + '</h3></div><p class="lb-event-text">' + esc(ev.text) + '</p><div class="lb-opts">' +
-      ev.options.map(function (o, i) {
-        var gid = p.eventCards && p.eventCards[i];
-        var gc = gid && card(gid);
-        return '<div class="lb-evopt">' + (gc ? coverHTML(gc, { size: 44 }) : '') + '<button type="button" class="lb-btn two big key" data-i="' + i + '"' + (disabled(o) ? ' disabled' : '') + '>' +
-          '<span class="lb">' + esc(o.label) + '</span><span class="sub">' + esc(o.note || '') + (gc ? '：' + esc(gc.artist) + '《' + esc(gc.album) + '》' : '') + '</span></button></div>';
-      }).join('') + '</div>';
-    var s = sheet(html, 'event');
-    s.addEventListener('click', function (e) {
-      var b = e.target.closest && e.target.closest('[data-i]'); if (!b || b.disabled) return;
-      var i = +b.getAttribute('data-i'), o = ev.options[i], fx = o.effects || [];
-      var up = fx.find(function (f) { return f.starUpPicked; });
-      var needsCard = o.needsCard || fx.some(function (f) { return f.giveAwayPicked || f.starUpPicked; });
-      var gid = p.eventCards && p.eventCards[i];
-      sfx('select');
-      var chooseWith = function (cid) {
-        var mk = function (d) { var ch = { type: 'event', eventId: ev.id, option: i }; if (cid) ch.cardId = cid; if (d) ch.dropId = d; return ch; };
-        var pr = (gid && r.deck.length >= cap) ? takeCardWithDrop(ss, gid, mk) : Promise.resolve(doChoose(mk()));
-        pr.then(function (res) {
-          if (!res || res.error) { eventStep(ss, save.run, save.run.pending); return; }
-          closeSheet(s);
-          var s2 = sheet('<div class="hd"><h3>' + esc(ev.title) + '</h3></div><p class="lb-result key">' + esc(o.result || '') + '</p>' +
-            (effectsText(res.effects) ? '<p class="msg">' + esc(effectsText(res.effects)) + '</p>' : '') + '<div class="foot"><button type="button" class="lb-btn pri big wide key" data-a="next">繼續</button></div>', 'eventdone');
-          qs('[data-a=next]', s2).addEventListener('click', function () { go('map'); });
-          autoAct(function () { var nb = qs('[data-a=next]', s2); if (nb) nb.click(); });
-          later(function () { stgP('walk', 'f', ['door', 'leave']).then(function () { hideActor('f'); }); }, 600);
-        });
-      };
-      if (needsCard) {
-        closeSheet(s);
-        var title = up ? '挑一張盤：' + ZH[up.starUpPicked] + ' +1' : '挑一張送出去';
-        var filt = up ? function (id) { var c = cardM(id); return c && (c[up.starUpPicked] || 0) < E.CFG.starCap; } : null;
-        var auto = E.routePolicy(save.run, C);
-        pickCardPanel(ss, title, filt, { autoId: auto && auto.cardId }).then(function (cid) { if (!cid) return eventStep(ss, save.run, save.run.pending); chooseWith(cid); });
-      } else chooseWith(null);
-    });
-    autoAct(function () { var ch = E.routePolicy(save.run, C); var b = ch && qs('[data-i="' + ch.option + '"]', s); if (b && !b.disabled) b.click(); else { b = qs('[data-i]:not([disabled])', s); if (b) b.click(); } }, 300);
-  }
-  function restStep(ss, r, p) {
-    place('p', 'pay', 'player'); UI.lastSpot = 'pay';
-    stg('pose', 'o', 'busy'); stg('emote', 'o', 'tea', 2400);
-    var s = sheet('<div class="hd"><h3>櫃檯</h3><span class="sub">老闆把茶推過來</span></div><div class="lb-opts">' +
-      '<button type="button" class="lb-btn two big pri key" data-a="tea"><span class="lb">喝杯茶</span><span class="sub">回 ' + E.CFG.teaHp + ' 聲望（現在 ' + r.hp + '／' + r.maxHp + '）' + (spillNote(E.CFG.teaHp) ? '・' + spillNote(E.CFG.teaHp) : '') + '</span></button>' +
-      '<button type="button" class="lb-btn two big key" data-a="wash"><span class="lb">洗一張盤</span><span class="sub">包包裡一張盤的最高軸 +1（上限 5，盤上標「洗過」）</span></button></div>', 'rest');
-    s.addEventListener('click', function (e) {
-      var b = e.target.closest && e.target.closest('[data-a]'); if (!b) return;
-      stg('pose', 'o', null);
-      if (b.getAttribute('data-a') === 'tea') { closeSheet(s); var res = doChoose({ type: 'rest', option: 'tea' }); nodeDone(ss, res.effects, C.lines.owner.tea); return; }
-      closeSheet(s);
-      var auto = E.routePolicy(save.run, C);
-      pickCardPanel(ss, '洗哪一張？', function (id) { return !!E.washTarget(save.run, C, id); }, { autoId: auto && auto.cardId, msg: '最高的那一軸 +1。' }).then(function (cid) {
-        if (!cid) return restStep(ss, save.run, save.run.pending);
-        var res = doChoose({ type: 'rest', option: 'wash', cardId: cid });
-        nodeDone(ss, res.effects, C.lines.owner.wash);
-      });
-    });
-    autoAct(function () { var ch = E.routePolicy(save.run, C); var b = qs('[data-a="' + ((ch && ch.option) || 'tea') + '"]', s); if (b) b.click(); }, 300);
-  }
-
-  // ======================================================================= end（散場／打烊 §8.5）
-  function clashLine(cl) {
-    if (!cl) return '（還沒出手就倒下了）';
-    var fmt = W.DipLabDuel && W.DipLabDuel._fmt;
-    try { if (fmt && fmt.clashText) { var t = fmt.clashText(cl); if (t && t.plain) return (t.st ? '［' + t.st + '］' : '') + t.plain; } } catch (e) { console.error(e); }
-    try { if (fmt && fmt.banner) { var b0 = fmt.banner(cl); if (b0 && (b0.line || b0.text)) return b0.line || b0.text; } } catch (e) { console.error(e); }
-    var tot = cl.toP || cl.toE || 0;
-    return (cl.toP ? '你扣 ' : '他扣 ') + tot;
-  }
-  function lostHandHTML(la) {
-    var rv = la && la.reveal, cl = la && la.clash;
-    var eC = rv && rv.eCard, pC = rv && rv.pCard;
-    var side = function (c, who, attr, cls) {
-      return '<div class="slot ' + cls + '">' + (c ? coverHTML(c, { size: 64, frame: false, badge: false }) : '<span class="lb-cv empty"></span>') +
-        '<div class="who">' + who + '・' + (c && attr ? '<span class="' + attr + '">' + ZH[attr] + ' ' + (c[attr] || 0) + '</span>' : '<span>品味輾壓</span>') + '</div></div>';
-    };
-    return '<div class="lb-lost"><div class="k">輸在這一手</div><div class="tbl">' + side(eC, '他', rv && rv.eAttr, 'e') + side(pC, '你', rv && rv.pAttr, 'p') + '</div>' +
-      '<div class="ln key">' + esc(clashLine(cl)) + '</div>' + (save.run && save.run.lostShort ? '<div class="s">他還剩 ' + save.run.lostShort + ' 聲望' + (save.run.lostShort <= 5 ? '，差一點就贏了' : '') + '</div>' : '') + '</div>';
-  }
+  // ======================================================================= end（打烊／散場：走到幾點、贏了幾位、收了哪幾張）
   SCREENS.end = function () {
     var r = save.run;
     if (!r || !r.over) return go('title');
     recordNight(r);
-    var sc = E.scoreRun(r);
+    var S = C.summary || {};
     var clear = r.over === 'clear', la = r.stats.lostAt;
-    setTop(nightLabel(r), { pause: true });
+    setTop(nightLabel(r), { help: true, pause: true });
     var panel = UI.panel; panel.classList.add('end');
-    cam('reward', 'end', 600);
+    cam('strip', 'end', 600);                               // ART-07：結算用小鏡頭，三件事不用捲
     stg('interact', 'none');
     resetPoses(); hideActor('f'); hideActor('q1'); hideActor('q2');
     place('o', 'counter', 'owner');
-    if (clear) { place('p', 'atdoor', 'player'); stg('dim', 0.6); stg('pose', 'o', 'busy'); }
-    else { place('p', 'atdoor', 'player'); stg('pose', 'p', 'sit'); }
-    var lostEnemy = la && C.enemies[la.enemyId];
-    var sub = clear ? '02:00 打烊・' + r.stats.wins + ' 勝' : '走到 ' + (la ? la.time + '・' + (lostEnemy ? lostEnemy.name : '') + '・第 ' + la.hand + ' 手' : '');
-    var newBest = sc.total > (r.bestBefore || 0);
-    var met = r.stats.metIds || [], fresh = r.stats.newMetIds || [];
-    var h = '<div class="lb-scroll"><div class="lb-pad"><div class="lb-endhero"><div class="lb-h1">' + (clear ? '打烊了' : '今晚就到這') + '</div><p class="sub">' + esc(sub) + '</p></div>';
-    if (!clear) h += lostHandHTML(la);
-    h += '<div class="lb-h2">品味分數</div><table class="lb-parts">' +
-      sc.parts.map(function (p) { return '<tr><td>' + esc(String(p[0]).replace(/🔍/g, '')) + '</td><td>' + p[1] + '</td></tr>'; }).join('') +
-      '<tr class="tot"><td>合計' + (newBest ? '<small>今天最佳</small>' : '') + '</td><td>' + sc.total + '</td></tr></table>';
-    h += '<div class="lb-h2">今晚認識的盤 <small>' + met.length + ' 張・NEW ' + fresh.length + '</small></div>' +
-      (met.length ? '<div class="lb-wall">' + met.map(function (id) { return coverHTML(card(id), { isNew: fresh.indexOf(id) >= 0 }); }).join('') + '</div>' : '<p class="sub">今晚還沒帶走任何一張。</p>');
-    var shc = shelfCount(), pct = shc.total ? Math.round(shc.n / shc.total * 100) : 0;
-    var ORDER = ['man', 'copycat', 'already', 'needle', 'skip', 'broke', 'buyer', 'label', 'critic', 'boss'];
-    var unmet = ORDER.filter(function (id) { return !(save.book[id] && save.book[id].met); }).length;
-    var unknownHab = ORDER.filter(function (id) { var Em = C.enemies[id], b = save.book[id]; return b && b.met && Em && Em.hidden && Em.disc.indexOf('hidden') >= 0 && (b.habits || []).indexOf(Em.hidden) < 0; }).length;
-    var goal = unmet ? '讀人圖鑑：還有 ' + unmet + ' 位客人沒見過' : unknownHab ? '讀人圖鑑：還有 ' + unknownHab + ' 位客人的「？」沒翻開' : '讀人圖鑑全開了。下一個目標：今天最佳分數';
-    h += '<div class="lb-goal"><div class="row"><b>唱片櫃 已認識 ' + shc.n + '／' + shc.total + '</b><span>' + pct + '%</span></div><div class="bar"><i style="width:' + pct + '%"></i></div>' +
-      '<p class="sub">' + esc(goal) + '。再來一夜，客人和箱子都會換一批。</p></div>';
+    if (clear) { place('p', 'duelP', 'player'); stg('dim', 0.6); stg('pose', 'o', 'busy'); }
+    else { place('p', 'duelP', 'player'); stg('pose', 'p', 'sit'); }
+    var reached = clear ? (r.times[r.times.length - 1] || '02:00') + ' ' + (C.night.closing || '打烊') : ((la && la.time) || (r.prologue === 'pending' ? C.night.prologueTime : '') || '');
+    var lostEn = la && C.enemies[la.enemyId];
+    var taken = r.stats.taken.filter(card);
+    var h = '<div class="lb-scroll"><div class="lb-pad"><div class="lb-endhero"><div class="lb-h1">' + (clear ? '打烊了' : '今晚就到這') + '</div>' +
+      (lostEn ? '<p class="sub">輸給「' + esc(lostEn.name) + '」</p>' : '') + '</div>' +
+      '<ul class="lb-sum">' +
+      '<li><span class="k">' + esc(fill(S.reached || '走到 {time}', { time: '' }).trim()) + '</span><b>' + esc(reached) + '</b></li>' +
+      '<li><span class="k">' + esc(fill(S.wins || '贏了 {n} 位', { n: '' }).replace(/\s+/g, ' ').trim()) + '</span><b>' + r.stats.wins + ' 位</b></li>' +
+      '<li><span class="k">' + esc(S.taken || '收了') + '</span><b>' + taken.length + ' 張</b></li></ul>' +
+      (taken.length ? '<div class="lb-wall">' + taken.map(function (id) { return coverHTML(card(id), {}); }).join('') + '</div>' : '<p class="sub">' + esc(S.none || '這晚沒收唱片') + '</p>');
     if (save.unlocks.secondNightTeaser) h += '<div class="lb-teaser"><div class="sil">' + pix(labSpr().e7, 40) + '</div><div><b>' + esc(C.secondNight.line) + '</b><div class="sub">' + esc(C.secondNight.label) + '</div></div></div>';
     h += '<div class="lb-endmore"><button type="button" class="lb-btn key" data-a="shelf">唱片櫃</button><button type="button" class="lb-btn key" data-a="taipei">' + esc(line('taipeiLink') || '出門看看（台北地圖・預告）') + '</button></div>';
-    h += '</div></div><div class="foot lb-endbtns"><button type="button" class="lb-btn pri big wide key" data-a="again">再來一夜</button></div>';
+    h += '</div></div><div class="foot lb-endbtns"><button type="button" class="lb-btn pri big wide key" data-a="again">' + esc(S.again || '再來一夜') + '</button></div>';
     var box = el('div', 'lb-screen end', h); panel.appendChild(box);
     sfx(clear ? 'win' : 'lose');
     box.addEventListener('click', function (e) {
-      var b = e.target.closest && e.target.closest('[data-a]'); if (!b) return;
+      var b = e.target.closest && e.target.closest('[data-a]'); if (!b || UI.going) return;
       var act = b.getAttribute('data-a');
       if (act === 'again') {
+        UI.going = true;
         var f = FX(); if (f && save.settings.sound && !f.soundOn()) try { f.unlockFromGesture(true); } catch (_) {}
-        stg('dim', 1);
+        stg('dim', 1); stg('pose', 'p', null);
         startAgain();
       } else if (act === 'shelf') openPage('shelf');
       else if (act === 'taipei') go('taipei', { back: 'end' });
@@ -2010,27 +1683,32 @@
     if (UI.auto && UI.auto.until === 'end') UI.auto = null;
   };
 
-  // ======================================================================= 台北地圖預告（§5.6：同一個渲染器換一份 JSON）
+  // ======================================================================= 台北地圖預告（同一個渲染器換一份 JSON）
   SCREENS.taipei = function (p) {
     UI.taipeiBack = p.back || 'title';
     setTop('台北踢館地圖<small>預告・示意</small>', { links: [[line('backToShop') || '回店裡', backFromTaipei, 'back']] });
     var panel = UI.panel; panel.classList.add('taipei');
     panel.innerHTML = '<div class="lb-pad"><p class="lb-tp"><b>dip vinyl（本店）</b>：' + esc(line('taipeiHere') || '你在這。') + '</p>' +
       (line('taipeiNote') ? '<p class="sub">' + esc(line('taipeiNote')) + '</p>' : '') + '</div>';
+    UI.going = true;
     stgP('load', 'taipei', { camera: 'full', screen: 'taipei' }).then(function () {
       if (UI.screen !== 'taipei') return;
+      UI.going = false;
       stg('interact', 'taipei'); place('p', 'here', 'player');
     });
   };
   function backFromTaipei() {
+    if (UI.backing) return;
+    UI.backing = true; UI.going = true;
     var back = UI.taipeiBack || 'title';
     stgP('load', 'dip', { camera: 'full', screen: back === 'end' ? 'end' : 'title' }).then(function () {
+      UI.backing = false;
       place('o', 'counter', 'owner');
-      if (back === 'end') go('end'); else go('title');
+      if (back === 'end' && save.run && save.run.over) go('end'); else go('title');
     });
   }
 
-  // ======================================================================= 唱片櫃／讀人圖鑑（整頁蓋在舞台上；舞台不重掛）
+  // ======================================================================= 唱片櫃（整頁蓋在舞台上；舞台不重掛）
   function openPage(kind, p) {
     p = p || {};
     closePage(true);
@@ -2039,54 +1717,30 @@
     app().appendChild(pg);
     UI.page = { el: pg, kind: kind };
     bindInfoTaps(pg);
-    if (kind === 'shelf') renderShelf(pg, p.filter || 'all'); else renderBook(pg);
+    var held = duelHold(true); UI.page.held = held;
+    renderShelf(pg, p.filter || 'all');
   }
-  function closePage(silent) {
+  function closePage() {
     var pg = UI.page; if (!pg) return;
     UI.page = null;
-    if (pg.kind === 'shelf') { Object.keys(save.shelf).forEach(function (id) { save.shelf[id].isNew = false; }); persist(); }
+    if (pg.kind === 'shelf') { Object.keys(save.shelf).forEach(function (id) { save.shelf[id].seen = true; }); persist(); }
     pg.el.remove();
-  }
-  function pageTop(title, pg) {
-    var bar = el('div', 'lb-top page', '<div class="tt">' + title + '</div><button type="button" class="lnk" data-a="close">關閉</button>');
-    pg.appendChild(bar);
-    qs('[data-a=close]', bar).addEventListener('click', function (e) { stopEv(e); closePage(); });
+    if (pg.held) duelHold(false);
   }
   function renderShelf(pg, filter) {
     pg.innerHTML = '';
     var total = Object.keys(C.cards).length;
     var ids = Object.keys(save.shelf).filter(card).reverse();
-    var shown = ids.filter(function (id) { return filter === 'new' ? save.shelf[id].isNew : filter === 'ace' ? !!card(id).tier : true; });
-    pageTop('唱片櫃<small>已認識 ' + ids.length + '／' + total + '</small>', pg);
+    var shown = ids.filter(function (id) { return filter === 'new' ? isNewOnShelf(id) : filter === 'ace' ? !!card(id).tier : true; });
+    var bar = el('div', 'lb-top page', '<div class="tt">唱片櫃<small>已認識 ' + ids.length + '／' + total + '</small></div><button type="button" class="lnk" data-a="close">關閉</button>');
+    pg.appendChild(bar);
+    qs('[data-a=close]', bar).addEventListener('click', function (e) { stopEv(e); closePage(); });
     var body = el('div', 'lb-scroll');
-    body.innerHTML = '<div class="lb-pad"><div class="lb-filters">' + [['all', '全部'], ['new', 'NEW'], ['ace', '王牌']].map(function (f) { return '<button type="button" class="lb-btn' + (filter === f[0] ? ' on' : '') + '" data-f="' + f[0] + '">' + f[1] + '</button>'; }).join('') + '</div>' +
-      (shown.length ? '<div class="lb-wall">' + shown.map(function (id) { return coverHTML(card(id), { isNew: save.shelf[id].isNew }); }).join('') + '</div>' : '<p class="sub">' + (ids.length ? '這一格是空的。' : '還沒認識任何一張。推門進去吧。') + '</p>') +
-      '<p class="sub" style="margin-top:14px">點封面＝唱片資訊。贏了客人押的盤、挖箱、試聽機猜中，都會收進這裡。</p></div>';
+    body.innerHTML = '<div class="lb-pad"><div class="lb-filters">' + [['all', '全部'], ['new', '今晚新認識'], ['ace', '王牌']].map(function (f) { return '<button type="button" class="lb-btn' + (filter === f[0] ? ' on' : '') + '" data-f="' + f[0] + '">' + f[1] + '</button>'; }).join('') + '</div>' +
+      (shown.length ? '<div class="lb-wall">' + shown.map(function (id) { return coverHTML(card(id), { isNew: isNewOnShelf(id) }); }).join('') + '</div>' : '<p class="sub">' + (ids.length ? '這一格是空的。' : '還沒認識任何一張。推門進去吧。') + '</p>') +
+      '<p class="sub" style="margin-top:14px">點封面＝唱片資訊。客人丟過的唱片、你收的、老闆送的，都會收進這裡。</p></div>';
     pg.appendChild(body);
     body.addEventListener('click', function (e) { var f = e.target.closest && e.target.closest('[data-f]'); if (f) renderShelf(pg, f.getAttribute('data-f')); });
-  }
-  function renderBook(pg) {
-    pg.innerHTML = '';
-    var order0 = ['man', 'copycat', 'already', 'needle', 'skip', 'broke', 'buyer', 'label', 'critic', 'boss'];
-    var GLYPH = { 'true': '真', feint: '晃', copy: '跟', grudge: '報', eye: '盯', hidden: '？' };
-    var isMet = function (id) { return !!(save.book[id] && save.book[id].met); };
-    var order = order0.filter(isMet).concat(order0.filter(function (id) { return !isMet(id); }));
-    var met = order0.filter(isMet).length;
-    pageTop('讀人圖鑑<small>' + met + '／' + order.length + '</small>', pg);
-    var h = '<div class="lb-pad"><div class="lb-book">' + order.map(function (id) {
-      var Em = C.enemies[id], b = save.book[id];
-      if (!b || !b.met) return '<div class="lb-bk unmet"><div class="pic">' + headHTML(enemySpr(Em), 32) + '</div><div class="nm">？？？</div><div class="ti">' + (Em.elite ? '菁英' : Em.boss ? '打烊前' : '還沒見過') + '</div></div>';
-      var habits = b.habits || [];
-      var disc = Em.disc.map(function (g) { var real = g === 'hidden' ? (habits.indexOf(Em.hidden) >= 0 ? Em.hidden : 'hidden') : g; return '<span class="lb-glyph' + (real === 'feint' ? ' feint' : '') + (real === 'hidden' ? ' hidden' : '') + (g === 'hidden' && real !== 'hidden' ? ' found' : '') + '">' + GLYPH[real] + '</span>'; }).join('');
-      return '<div class="lb-bk">' + (Em.elite ? '<span class="el">菁英</span>' : '') + '<div class="pic">' + headHTML(enemySpr(Em), 40) + '</div><div class="nm">' + esc(Em.name) + '</div>' +
-        (Em.title ? '<div class="ti">' + esc(Em.title) + '</div>' : '') + '<div class="bl">' + esc(Em.blurb) + '</div><div class="lb-glyphs">' + disc + '</div>' +
-        (habits.length ? '<div class="bl">已發現：' + habits.map(function (g) { return '<b>' + GLYPH[g] + '</b>'; }).join('、') + '（下一夜直接攤開）</div>' : '') +
-        '<div class="wl">勝 ' + (b.beaten || 0) + '・敗 ' + (b.lost || 0) + '</div></div>';
-    }).join('');
-    if (save.unlocks.secondNightTeaser) h += '<div class="lb-bk unmet"><div class="pic">' + pix(labSpr().e7, 32) + '</div><div class="nm">' + esc(C.secondNight.name) + '</div><div class="ti">' + esc(C.secondNight.title) + '</div><div class="bl">' + esc(C.secondNight.label) + '</div></div>';
-    h += '</div><p class="sub" style="margin-top:14px">沒見過的客人是剪影。他會出的字裡「？」被你發現過，下一夜就直接攤開。</p></div>';
-    var body = el('div', 'lb-scroll', h);
-    pg.appendChild(body);
   }
 
   // ======================================================================= scene 路由
@@ -2103,11 +1757,11 @@
     wrap.appendChild(body);
     function render() {
       var v = E.view(d);
-      body.innerHTML = '<p><b>' + esc(v.e.name) + '</b> 聲望 ' + v.e.hp + '／' + v.e.maxHp + '・氣勢 ' + v.e.qi + '</p><p>你 聲望 ' + v.p.hp + '／' + v.p.maxHp + '・氣勢 ' + v.p.qi + '・第 ' + v.hand + ' 手・賭注 ×' + v.K + '</p>' +
-        '<div class="lb-opts"><button type="button" class="lb-btn big" data-a="one">出一手（期望值）</button><button type="button" class="lb-btn pri big" data-a="all">打完這場</button></div>';
+      body.innerHTML = '<p><b>' + esc(v.eName) + '</b> 聲望 ' + v.eHp + '／' + v.eMax + '</p><p>你 聲望 ' + v.pHp + '／' + v.pMax + '・第 ' + v.n + ' 手</p>' +
+        '<div class="lb-opts"><button type="button" class="lb-btn big" data-a="one">出一手（照名牌）</button><button type="button" class="lb-btn pri big" data-a="all">打完這場</button></div>';
     }
-    function step() { if (d.over) return; E.resolveTurn(d, E.policies.ev(d)); opts.onSave(d); }
-    function finish() { if (done || !d.over) return; done = true; opts.onEnd({ over: d.over, duel: d }); }
+    function step() { if (d.over) return; E.resolveTurn(d, E.policies.novice(d)); if (opts.onSave) opts.onSave(d); }
+    function finish() { if (done || !d.over) return; done = true; opts.onEnd({ over: d.over.win ? 'win' : 'lose', duel: d }); }
     body.addEventListener('click', function (e) {
       var b = e.target.closest && e.target.closest('[data-a]'); if (!b) return;
       if (b.getAttribute('data-a') === 'one') step(); else { var g = 0; while (!d.over && g++ < 60) step(); }
@@ -2118,13 +1772,14 @@
   function autoDuel() {
     var r = save.run, d = r && r.duel;
     if (!UI.auto || !d || UI.screen !== 'duel') return;
-    var pol = E.policies[UI.auto.policy] || E.policies.ev;
-    if (W.DipLabDuel && typeof W.DipLabDuel.autoplay === 'function' && UI.auto.animated) { try { if (W.DipLabDuel.autoplay(UI.auto.policy) !== false) return; } catch (e) { console.error(e); } }
+    var Dl = DUEL();
+    if (UI.auto.animated && Dl && typeof Dl.autoplay === 'function') { try { Dl.autoplay(UI.auto.policy || 'novice'); return; } catch (e) { console.error(e); } }
+    var pol = E.policies[UI.auto.policy] || E.policies.novice, R = E.makeRng(7), mem = {};
     var g = 0;
-    while (!d.over && g++ < 80) E.resolveTurn(d, pol(d));
+    while (!d.over && g++ < 80) { var evs = E.resolveTurn(d, pol(d, R, mem), UI.force ? { debugOutcome: UI.force } : undefined); if (!evs || !evs.length) break; }
     persist();
     unmountDuel();
-    onDuelEnd(d);
+    onDuelEnd({ duel: d });
   }
 
   // ======================================================================= 除錯鉤子（?debug=1）
@@ -2132,7 +1787,6 @@
     if (!UI.auto) return;
     if (UI.screen === 'duel') return autoDuel();
     if (UI.lastAct) UI.lastAct();
-    else if (UI.screen === 'map') go('map');
   }
   function installDebug() {
     W.__lab = {
@@ -2144,41 +1798,34 @@
       screen: function () { return UI.screen; },
       trail: function () { return UI.trail.slice(); },
       cam: function () { return UI.camName; },
-      autoplay: function (policy, o) { o = o || {}; UI.auto = { policy: policy || 'ev', until: o.until || 'duelEnd', animated: !!o.animated }; kick(); return true; },
+      going: function () { return !!UI.going; },
+      autoplay: function (policy, o) { o = o || {}; UI.auto = { policy: policy || 'novice', until: o.until || 'duelEnd', animated: !!o.animated, tut: !!o.tut, ace: o.ace || null }; kick(); return true; },
       stop: function () { UI.auto = null; },
       seed: function (n) { UI.seedOverride = String(n); return seedKey(); },
-      skipTo: function (col) { var r = save.run; if (!r) return false; r.duel = null; r.pending = null; r.col = col; persist(); go('map'); return true; },
+      // 讓之後每一手都照這個結果（e2e #32：7 手同色 → 唱片丟完）；null 取消
+      force: function (o) { UI.force = o || null; return UI.force; },
+      // 跳到今晚第 idx 位（序章算完成）：清掉進行中的對決與待選
+      skipTo: function (idx) {
+        var r = save.run; if (!r) return false;
+        leaveDuel(); r.duel = null; r.duelEnemy = null; r.pending = null; r.prologue = 'done'; r.idx = Math.max(0, Math.min(r.order.length - 1, idx | 0)); r.over = null;
+        save.prologueDone = true; persist(); go('night'); return true;
+      },
       forceLose: function () {
         var r = save.run, d = r && r.duel; if (!d) return false;
-        d.p.hp = 0; d.over = 'lose'; persist();
-        unmountDuel();
-        onDuelEnd(d); return true;
+        d.p.hp = 0; d.over = { win: false, by: 'hp', pHp: 0, eHp: d.e.hp }; persist();
+        unmountDuel(); onDuelEnd({ duel: d }); return true;
       },
       forceWin: function () {
         var r = save.run, d = r && r.duel; if (!d) return false;
-        d.e.hp = 0; d.over = 'win'; persist();
-        unmountDuel();
-        onDuelEnd(d); return true;
+        d.e.hp = 0; d.over = { win: true, by: 'hp', pHp: d.p.hp, eHp: 0 }; persist();
+        unmountDuel(); onDuelEnd({ duel: d }); return true;
       },
       info: function (id) { return info(id, { from: 'debug' }); },
-      openPage: openPage, go: go, replayTutorial: replayTutorial
+      rules: openRules, openPage: openPage, go: go, replayTutorial: replayTutorial, stageAction: onStageAction
     };
   }
 
   // ======================================================================= boot
-  // 他會出的字（真晃跟報盯？經冷硬）：Noto Sans TC 粗體子集（DipGlyph），載不到就退回系統字
-  function loadGlyphFont() {
-    try {
-      if (!W.FontFace || !D.fonts || !W.fetch) return;
-      fetch('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@700&text=' + encodeURIComponent('真晃跟報盯？經冷硬'))
-        .then(function (r) { return r.ok ? r.text() : ''; })
-        .then(function (css) {
-          var m = /src:\s*url\(([^)]+)\)/.exec(css || ''); if (!m) return;
-          var ff = new FontFace('DipGlyph', 'url(' + m[1] + ')', { weight: '700' });
-          return ff.load().then(function (f) { D.fonts.add(f); });
-        }).catch(function () {});
-    } catch (_) {}
-  }
   function buildShell() {
     var a = app(); a.innerHTML = '';
     UI.top = el('div', 'lb-top'); UI.top.id = 'top';
@@ -2189,13 +1836,12 @@
   }
   function mountStage() {
     if (!W.DipLabStage || !W.DipLabStage.mount) return Promise.resolve(null);
-    var labS = labSpr();
     return W.DipLabStage.mount(UI.stageHost, {
-      shop: 'dip', cards: C.cards, coverBase: './', sprites: labS, player: function () { return save && save.player ? playerAv() : { head: 'neat' }; },
+      shop: 'dip', cards: C.cards, coverBase: './', sprites: labSpr(), player: function () { return save && save.player ? playerAv() : { head: 'neat' }; },
       camera: 'full', screen: 'title', speed: speed, onAction: onStageAction
     }).then(function (st) { UI.stage = st; st.onAction = onStageAction; configTut(); return st; }, function (e) { console.error(e); UI.stageHost.classList.add('nostage'); return null; });
   }
-  // iOS < 15.4 沒有 svh：100vh 會比可視區高（工具列收起來的高度），底部按鈕被切。改用可視高。
+  // iOS < 15.4 沒有 svh：100vh 會比可視區高。改用可視高。
   function svhFallback() {
     var ok = false; try { ok = !!(W.CSS && CSS.supports && CSS.supports('height', '100svh')); } catch (_) {}
     if (ok) return;
@@ -2203,51 +1849,54 @@
     fit(); W.addEventListener('resize', fit); if (W.visualViewport) W.visualViewport.addEventListener('resize', fit);
   }
   function configTut() {
-    var T = W.DipLabTut; if (!T || typeof T.configure !== 'function') return;
-    try { T.configure({ stage: UI.stage, save: function () { return UI.tutReplay ? { seen: {} } : save; }, persist: persist, content: C }); } catch (e) { console.error(e); }
+    var T = TUT(); if (!T || typeof T.configure !== 'function') return;
+    try {
+      T.configure({ stage: UI.stage, content: C, save: function () { return UI.tutReplay ? (UI.replaySave || (UI.replaySave = { seen: {}, learned: {} })) : save; }, persist: persist,
+        onEnd: function (how) { if ((how === 'done' || how === 'skipped' || how === 'released') && !UI.tutReplay) { save.tutorialDone = true; if (save.run) save.run.tut = false; persist(); } } });
+    } catch (e) { console.error(e); }
   }
   function boot() {
     if (UI.booted) return; UI.booted = true;
-    loadGlyphFont();
     E = W.DipLabEngine; C = W.DipLabContent;
-    if (!E || !C || !app()) { if (app()) app().innerHTML = '<div class="lb-boot">載入失敗，請重新整理。</div>'; return; }
-    // B03：預覽站「重置」浮鈕整個藏掉（重置在 ⏸）
+    if (!E || !C || !app() || !E.newRun) { if (app()) app().innerHTML = '<div class="lb-boot">載入失敗，請重新整理。</div>'; return; }
     D.body.classList.add('in-battle');
     svhFallback();
     save = loadSave();
     var f = FX();
     if (f) { try { if (f.init) f.init(); if (f.setSpeed) f.setSpeed(speed()); } catch (e) { console.error(e); } }
-    if (f && f.music && f.music.onChange) f.music.onChange(function (c) { if (c && soundOn() && save.shelf[c.id] && !save.shelf[c.id].heard) save.shelf[c.id].heard = true; });
-    // 對決以外：一首試聽自然放完就接下一首
+    // 對決以外：一首試聽自然放完就接下一首（包包裡的）
     if (f && f.music && f.music.onEnded) f.music.onEnded(function (c) {
       if (!c || UI.screen === 'duel' || !soundOn()) return;
-      if (UI.screen === 'node' && qs('.lb-sheet.listen')) return;
       var next = c, r = save.run;
-      if (r && (UI.screen === 'map' || UI.screen === 'node' || UI.screen === 'reward')) {
-        var pool = (r.deck || []).map(cardM).filter(function (x) { return x && x.previewUrl && x.id !== c.id; });
+      if (r && (UI.screen === 'night' || UI.screen === 'reward')) {
+        var pool = (r.bag || []).map(card).filter(function (x) { return x && x.previewUrl && x.id !== c.id; });
         if (pool.length) next = pickR(pool);
       }
       setTimeout(function () { if (UI.screen !== 'duel' && soundOn()) try { f.music.play(next, { fadeMs: 1200 }); } catch (e) { console.error(e); } }, 400);
     });
     var ci = CI();
     if (ci) {
-      ci.config({ onSoundUnlock: function () { save.settings.sound = true; persist(); }, cardOf: function (id) { return cardM(id); } });
+      ci.config({ onSoundUnlock: function () { save.settings.sound = true; persist(); }, cardOf: function (id) { return card(id); } });
       ci.on('close', function () { flushToasts(); });
     }
     labSpr();
     if (DEBUG) installDebug();
     buildShell();
     configTut();
-    // 舞台最多等 1.2 s：標題要在 2 s 內出來（e2e #1）；晚到的舞台照樣接上
+    if (UI.discardedOld) persist();
+    // 舞台最多等 1.2 s：標題要在 2 s 內出來；晚到的舞台照樣接上（B-slow-stage-empty-scene：標題的鈕等舞台好了才收點擊）
     var started = false;
     var start = function () { if (started) return; started = true; UI.firstScreen = true; go('title'); UI.firstScreen = false; };
+    var stageReady = false;
     mountStage().then(function (st) {
+      stageReady = true;
       if (!started) start();
       else if (st && UI.screen === 'title') { UI.camQuick = true; go('title'); }
+      D.body.classList.remove('stage-wait');
     });
-    setTimeout(start, 1200);
+    setTimeout(function () { if (!stageReady) D.body.classList.add('stage-wait'); start(); setTimeout(function () { D.body.classList.remove('stage-wait'); }, 2500); }, 1200);
   }
-  W.DipLabUI = { boot: boot, go: go, info: info, openHelp: openHelp, openSettings: openSettings, openPage: openPage,
+  W.DipLabUI = { boot: boot, go: go, info: info, openRules: openRules, openHelp: openRules, openSettings: openSettings, openPage: openPage,
     sprite: sprHTML, relicIcon: relicIcon, labSpr: labSpr, get stage() { return UI.stage; }, get save() { return save; }, get screen() { return UI.screen; } };
   if (D.readyState === 'loading') D.addEventListener('DOMContentLoaded', boot); else setTimeout(boot, 0);
 })();

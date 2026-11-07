@@ -483,9 +483,25 @@
       R.hand.style.top = Math.round(Math.min(vh - 28, tipY - 1)) + 'px';
     } else R.hand.hidden = true;
     var ar = appRect();
-    R.skip.style.top = (tb + 6) + 'px';
-    R.skip.style.right = Math.max(8, Math.round(vw - ar.right + 8)) + 'px';
+    placeSkip(R.skip, ar, tb, vw);
     if (!R.bub.hidden) placeBubble(R.bub, sh, holes, keep, ar, tb);
+  }
+  // 「跳過教學」：放在頂欄裡、「?」的左邊（頂欄只壓暗不擋，這裡永遠不會跟泡泡或洞打架）；
+  // 頂欄擠不下（標題字太長）就退回舞台右上角
+  function placeSkip(b, ar, tb, vw) {
+    if (b.hidden) return;
+    var top = document.getElementById('top'), spot = null;
+    var tr = top ? top.getBoundingClientRect() : null;
+    if (tr && tr.height >= 26) {
+      var bw = b.offsetWidth || 72, leftLim = tr.left + 8, rightLim = Math.min(tr.right, ar.right) - 8;
+      var tt = top.querySelector('.tt');
+      if (tt) { try { var rg = document.createRange(); rg.selectNodeContents(tt); var rr = rg.getBoundingClientRect(); if (rr.width) leftLim = rr.right + 10; } catch (_) {} }
+      var bs = top.querySelectorAll('button, a, [role="button"], .ti, .lnk');
+      for (var i = 0; i < bs.length; i++) { var r = bs[i].getBoundingClientRect(); if (r.width && r.left >= leftLim - 4 && r.left - 10 < rightLim) rightLim = r.left - 10; }
+      if (rightLim - leftLim >= bw) spot = { left: Math.round(rightLim - bw), top: Math.round(tr.top + (tr.height - 24) / 2) };
+    }
+    if (spot) { b.classList.add('intop'); b.style.left = spot.left + 'px'; b.style.top = spot.top + 'px'; b.style.right = 'auto'; }
+    else { b.classList.remove('intop'); b.style.left = 'auto'; b.style.top = (tb + 6) + 'px'; b.style.right = Math.max(8, Math.round(vw - ar.right + 8)) + 'px'; }
   }
   // 泡泡：先試貼著第一個洞（上或下），不壓到其他洞與 keep；放不下就放最大的空白帶
   function placeBubble(b, sh, holes, keep, ar, tb) {
@@ -519,7 +535,9 @@
       if (maxBot > y) gaps.push([y, maxBot]);
       gaps.sort(function (a, c) { return (c[1] - c[0]) - (a[1] - a[0]); });
       var g = gaps[0] || [minTop, maxBot];
-      top = (g[1] - g[0] >= bh) ? Math.round(g[0] + (g[1] - g[0] - bh) / 2) : Math.round(Math.max(minTop, Math.min(maxBot - bh, g[0])));
+      // 最上面那段空白＝舞台橫條＋他的名字與聲望：貼著頂欄放（蓋舞台，不蓋他的聲望條；矮螢幕 375×548 的第 9 步）
+      if (g[0] <= minTop && g[1] - g[0] >= bh) top = minTop;
+      else top = (g[1] - g[0] >= bh) ? Math.round(g[0] + (g[1] - g[0] - bh) / 2) : Math.round(Math.max(minTop, Math.min(maxBot - bh, g[0])));
     }
     b.style.top = Math.round(top) + 'px';
     if (dir && first) {
@@ -670,6 +688,9 @@
     S.lesson = L; S.runner = R; S.armed = 0;
     if (L.replay) S.replayDuel = duel;
     ensureRoot();
+    // 續玩（重整後依 duel.n 接回來）：前面手數學過的小卡、教學中就把他打倒的那一場，都補寫進存檔（B-tut-done-not-persisted）
+    if (duel.over && duel.over.win) R.resolved([{ t: 'over', win: true }]);
+    R.learnedIds.forEach(function (id) { markLearned(id); });
     if (duel.over || R.state !== 'run') {      // 續玩：已經過了第 4 手（或打完了）＝教學早就走完
       R.learnedIds.forEach(function (id) { var t = C.tutorial.learned[id]; if (t && S.learnedAll.indexOf(t) < 0) S.learnedAll.push(t); });
       setTimeout(function () { if (S.lesson === L) endLesson(R.state === 'run' ? 'done' : (R.state === 'skipped' ? 'skipped' : R.state === 'released' ? 'released' : 'done')); }, 0);
@@ -832,9 +853,10 @@
       var finished = false;
       var finish = function () { if (finished) return; finished = true; res(); };
       var text = s.text;
+      // 結算時講的那步（第 6 步）：泡泡放在浮框下面（蓋已經變暗的手牌），不蓋牌桌上的兩張唱片與勝負角標
       setTri(s.tri);
       if (s.kind === 'say') {
-        setShow({ mode: 'say', step: s, targets: s.target, look: s.look, text: text, bubble: s.bubble, keep: s.keep, colorChars: s.colorChars, point: null,
+        setShow({ mode: 'say', step: s, targets: s.target, look: s.look, text: text, bubble: s.bubble || (atResolve(s) ? 'below' : undefined), keep: s.keep, colorChars: s.colorChars, point: null,
           onTap: function () { sfx('tick'); R.done(); if (!atResolve(s)) setShow({ mode: 'wait', keepMask: true }); finish(); } });
         if ((s.target || []).indexOf('e-stars') >= 0) pulseBigStar();
         L.step = { s: s, finish: finish };
