@@ -1228,7 +1228,6 @@
       if (W.DipLabDuel && W.DipLabDuel.on) {
         try { UI.offs.push(W.DipLabDuel.on('resolved', function () { commitSeen(); })); } catch (_) {}
       }
-      reqLabelFix(wrap);
       if (p.tutorial && opts.hooks.tut) startLesson(r.aceTier, p.res.duel);
       if (UI.auto) later(autoDuel, 400);
     };
@@ -1274,19 +1273,6 @@
       }
     });
   };
-  // 點播小標：duel.js 目前寫的是原始鍵（「點播 g:electronic +2」）→ 換成 C.requests 的字（「電子」）。已在 requests.md 請 D 改；D 改好之後這段什麼都不做。
-  function reqLabelFix(root) {
-    if (!root || !W.MutationObserver || !C.requests) return;
-    var fix = function () {
-      var b = root.querySelector('.dl-p .req b'); if (!b) return;
-      var k = b.textContent, lab = C.requests[k];
-      if (lab && lab !== k) b.textContent = lab;
-    };
-    var mo = new MutationObserver(fix);
-    mo.observe(root, { childList: true, subtree: true, characterData: true });
-    fix();
-    UI.offs.push(function () { mo.disconnect(); });
-  }
   function startLesson(tier, duel) {
     var T = W.DipLabTut;
     try {

@@ -194,11 +194,16 @@
     if (c) return c.cv;
     c = coverCache[key] = { cv: null };
     var img = new Image();
-    if (/^https?:/.test(url) && url.indexOf(location.origin) !== 0) img.crossOrigin = 'anonymous';
+    var src = url;
+    if (/^https?:/.test(url) && url.indexOf(location.origin) !== 0) {
+      img.crossOrigin = 'anonymous';
+      // 跟頁面上一般 <img>（no-cors）分開快取：同一網址先被 no-cors 載過時，Chrome 可能拿那份沒帶 ACAO 的快取來配 CORS 請求而報錯
+      src = url + (url.indexOf('?') < 0 ? '?' : '&') + 'px=1';
+    }
     img.decoding = 'async';
     img.onload = function () { try { c.cv = pixelateCover(img, size, mode); } catch (e) { c.cv = null; c.failed = true; } };
     img.onerror = function () { c.failed = true; };
-    img.src = url;
+    img.src = src;
     return null;
   }
 

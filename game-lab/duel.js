@@ -471,7 +471,7 @@
     function renderP(v, opt) {
       opt = opt || {};
       if (!opt.keepHp) { setHp(els.php, els.phpn, v.p.hp, v.p.maxHp, null, false); setSeg(els.pseg, els.pqn, v.p.qi, v.p.qi, false); }
-      if (v.request) { els.req.innerHTML = `點播 <b>${esc(v.request)}</b> +2`; els.req.hidden = false; } else { els.req.textContent = ''; }
+      if (v.request) { const rl = (content.requests || {})[v.request] || v.request; els.req.innerHTML = `點播 <b>${esc(rl)}</b> +2`; els.req.hidden = false; } else { els.req.textContent = ''; }
       renderChain(v);
       renderUlt(v);
     }
