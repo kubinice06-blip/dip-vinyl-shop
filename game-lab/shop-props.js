@@ -1122,6 +1122,7 @@
   }
 
   // ================================================================ 試聽櫃（右後方，初版右邊唱片櫃的味道：正面兩格看得到唱片書背）
+  var LPC = ['#1c1c22', '#e8e0cc', '#2a2a30', '#8e2a1e', '#3e4e6a', '#c9b48a', '#55555f', '#d8d0bc', '#6a3a2a', '#f2b45a', '#2e4a3a', '#c94a2a', '#7a6a8a', '#14141a'];
   def('listenB', {
     layer: 'stand',
     box: function (o) { return [o.x, o.top - 30, o.w, (o.depth || 8) + (o.face || 32) + 32]; },
@@ -1140,7 +1141,14 @@
       cells.forEach(function (cl) {
         var cx0 = cl[0], cy0 = cl[1], k = cl[2] % 2 === 1 && cl[2] === nr * 2 - 1 ? 1 : 0, ch = rh;
         P.rect(cx0, cy0, cw, ch, '#2a170b');
-        for (var sx = cx0 + 1; sx < cx0 + cw - 1; sx += 2) { var sh = ch - 2 - Math.floor(r() * 4); P.rect(sx, cy0 + ch - sh, 2, sh, cols[Math.floor(r() * cols.length)]); P.px(sx, cy0 + ch - sh, 'rgba(255,255,255,0.3)'); }
+        // LP 書背：一樣高、很薄、擠在一起，顏色偏暗（不是書：書會高低不齊、色塊大）；偶爾一點白字
+        for (var sx = cx0 + 1; sx < cx0 + cw - 1;) {
+          if (r() < 0.08) { sx++; continue; }
+          var sw = r() < 0.22 ? 2 : 1, sc = LPC[Math.floor(r() * LPC.length)];
+          P.rect(sx, cy0 + 1, Math.min(sw, cx0 + cw - 1 - sx), ch - 1, sc); P.px(sx, cy0 + 1, 'rgba(255,255,255,0.18)');
+          if (r() < 0.45) P.px(sx, cy0 + 3 + Math.floor(r() * Math.max(1, ch - 7)), sc === '#e8e0cc' || sc === '#d8d0bc' ? '#5a4a3a' : 'rgba(255,255,255,0.55)');
+          sx += sw;
+        }
         if (k === 1) { P.rect(cx0 + cw - 9, cy0 + 4, 8, ch - 4, '#2a170b'); P.rect(cx0 + cw - 8, cy0 + 6, 6, ch - 6, '#e8e0cc'); }   // 一張斜放的
         P.hl(cx0, cy0 + ch, cw, '#8a5a3c');
       });
