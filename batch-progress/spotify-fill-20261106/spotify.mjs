@@ -40,15 +40,22 @@ function getToken() {
 getToken();
 
 const clean = s => String(s || '').replace(/[《》「」『』〈〉"“”]/g, ' ').replace(/\s+/g, ' ').trim();
-let used = 0, linked = 0, stop = '';
+let used = 0, linked = 0, stop = '', consecutiveErr = 0;
 async function search(q, lang) {
   if (used >= BUDGET) { stop = 'budget'; return null; }
   for (let i = 0; i < 2; i++) {
     used++;
-    const r = await fetch(`https://api.spotify.com/v1/search?q=${encodeURIComponent(q)}&type=album&limit=20&market=TW`, { headers: { Authorization: 'Bearer ' + token, 'Accept-Language': lang } });
+    const r = await fetch(`https://api.spotify.com/v1/search?q=${encodeURIComponent(q)}&type=album&limit=10&market=TW`, { headers: { Authorization: 'Bearer ' + token, 'Accept-Language': lang } });
     if (r.status === 401) { getToken(); continue; }
     if (r.status === 429) { stop = `429 retry-after ${r.headers.get('retry-after')}s`; return null; }
-    if (!r.ok) return { err: r.status, items: [] };
+    if (!r.ok) {
+      // 出錯也要等，連續出錯就停（11-07 limit=20 被拒時一路空打 201 次、寫了 100 列空結果）
+      consecutiveErr++;
+      if (consecutiveErr >= 3) stop = `HTTP ${r.status} 連續 3 次：${(await r.text()).slice(0, 80)}`;
+      await new Promise(s => setTimeout(s, 1500));
+      return { err: r.status, items: [] };
+    }
+    consecutiveErr = 0;
     await new Promise(s => setTimeout(s, 1500));
     return { items: (await r.json()).albums?.items || [] };
   }
@@ -91,15 +98,17 @@ for (const m of todo) {
   if (alt) queries.push(`album:"${clean(m.album)}" artist:"${clean(alt)}"`);
   const plainAlbum = clean(stripEdition(m.album).replace(/\s*[:：].*$/, ''));
   queries.push(`${clean(alt || m.artist)} ${plainAlbum}`);
-  let res = null, rejects = [], usedQ = '';
+  let res = null, rejects = [], usedQ = '', hadErr = false;
   for (const q of [...new Set(queries)]) {
     const r = await search(q, lang);
     if (!r) break;
+    if (r.err) { hadErr = true; break; }
     const j = judge(m, r.items, artistSet);
     rejects.push(...j.rejects);
     if (j.best) { res = j.best; usedQ = q; break; }
   }
   if (stop && !res) break;
+  if (hadErr && !res) continue;   // 查詢出錯不寫結果，下次重查
   const row = { key: m.key, artist: m.artist, album: m.album, year: m.year, v2: true,
     url: res?.it.external_urls?.spotify || '', spName: res?.it.name || '', spArtists: res ? res.it.artists.map(a => a.name).join(', ') : '',
     spYear: res?.y || '', how: res?.how || '', q: usedQ, rejected: [...new Set(rejects)].slice(0, 5) };

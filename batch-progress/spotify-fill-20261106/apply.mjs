@@ -4,7 +4,7 @@ const [planFile, tag] = process.argv.slice(2);
 const ACC = '3a23f905e8f31d91c85050f2ed304321', NS = '5f65e74b17d644b68a3f542b08a5c105';
 const H = { Authorization: `Bearer ${process.env.CLOUDFLARE_API_TOKEN}`, 'Content-Type': 'application/json' };
 const KV = `https://api.cloudflare.com/client/v4/accounts/${ACC}/storage/kv/namespaces/${NS}`;
-const D = 'batch-progress/spotify-fill-20261106/';
+const D = new URL('.', import.meta.url).pathname;   // 以腳本所在資料夾為準，從哪裡執行都可以
 const plan = JSON.parse(fs.readFileSync(planFile, 'utf8'));
 const before = {}, put = [];
 for (let i = 0; i < plan.length; i += 100) {
