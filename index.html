@@ -1072,7 +1072,7 @@
 <script src="dip-player.js?v=57"></script>
 <script src="dip-draw-anim.js?v=5"></script>
 <script src="dip-genre-tree.js?v=5"></script>
-<script src="dip-tune.js?v=71"></script>
+<script src="dip-tune.js?v=72"></script>
 <script src="dip-artist-intro.js?v=2"></script>
 <script type="module">
   import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
@@ -6575,6 +6575,30 @@ ${seenList}
       navigator.serviceWorker.register('/sw.js').catch(() => {});
     });
   }
+</script>
+<!-- 2026-11-07 店主：「按串流連結去聽歌，換回網頁時串流就停了」（第二次回報，11-05 只關自家音訊的修正無效）。
+     Playwright 掛記錄重現：自家播放器與調頻音效切出去時都已 closed，唯一還 running 的 AudioContext 是 Tawk.to 客服小工具的——
+     它在第一次觸控時自建 AudioContext、以音量 0 播一次提示音來「解鎖」，之後一直開著；iOS 切回分頁時它把音訊焦點要回去，串流就停。
+     它不經過 DipPlayer，關喇叭、切背景、按串流鈕都管不到。這裡在 Tawk 載入前包住 AudioContext：呼叫者是 Tawk 時改給
+     OfflineAudioContext——Tawk 只用 createBufferSource／createGain／decodeAudioData／destination，離線版全支援、不報錯，
+     但永遠不接喇叭、不向系統要音訊。代價：客服新訊息的提示音不響（訊息與角標照常）。 -->
+<script>
+(function () {
+  const Offline = window.OfflineAudioContext || window.webkitOfflineAudioContext;
+  if (!Offline) return;
+  for (const name of ['AudioContext', 'webkitAudioContext']) {
+    const Real = window[name];
+    if (!Real) continue;
+    const Guarded = function (...args) {
+      let fromTawk = false;
+      try { fromTawk = /tawk\.to|twk-/i.test(String(new Error().stack || '')); } catch (_) {}
+      if (fromTawk) { try { return new Offline(1, 44100, 44100); } catch (_) {} }
+      return new Real(...args);
+    };
+    Guarded.prototype = Real.prototype;
+    window[name] = Guarded;
+  }
+})();
 </script>
 <!--Start of Tawk.to Script-->
 <script type="text/javascript">

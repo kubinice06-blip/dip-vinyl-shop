@@ -1,5 +1,22 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-07｜dip-vinyl-shop｜頻率光譜：下排轉輪往上加高、篩選排縮小、「溫暖 / WARMTH」改「溫度 / TEMP」（v72）
+
+- **店主 11-07（截圖紅框）**：「讓最下排的旋鈕往上擴充，上面的旋鈕縮小；溫暖 warmth 改成溫度（英文太長就用縮寫）。」
+- **版面**：輪子模組 946–1368 → 848–1368（`wheels_half.py` 的 `B_H` 256→158；分帶砍列改成標籤 330–500、外殼 328–498、刻度尺中線上下各抽 85 列；輪子 190→288 列、弧度 `CURVE` 0.5→0.65；指針上移量改由刻度尺砍列推算 `PTR_UP`；canvas 高 `CV_H` 366）。篩選排 537–934 → 537–836（`panel.py`：篩選窗 `FW_B1` 70→52、篩選滾筒 225→126 列、液晶 2–26、水表滾輪 5–23、全部鍵 29–52）。舊 D1 示意零件會畫進輪子區，`wheels_half.py` 最後再鋪一次輪子模組蓋回。
+- **名牌**：原字是 Noto Sans TC／Noto Sans Regular 一路，清掉後用同字型子集（`scripts/tune-panel-v2/fonts/`，Google Fonts 只含用到的字，OFL）4 倍超取樣畫「溫度 / TEMP」；讀數提示與輪子 `aria-label` 一併改「溫度」。
+- **程式**：`dip-tune.js` 篩選滾筒熱區 26.61%→19.604%、字條列高 5.563→4.8cqw、點擊分界 0.598→0.635；水表與全部鍵、輪子 canvas（top 67.516%／高 25.902%）、整欄熱區（66.171%／27.955%）重定位；明暗罩換 `drum-shade-126`／`drum-shade-99`（刪 225、122）；`AV` 72。
+- **驗證**：Playwright iPhone 13 直放＋橫放截圖；篩選、水表數字都對準中線（0.0px）；拖能量輪 49.7→61.7；點類別下半→搖滾、分級上半→繞到普通（1979 張）；無頁面錯誤。
+- **主要檔案**：`dip-tune.js`、`index.html`（v72）、`scripts/tune-panel-v2/{panel.py,wheels_half.py,fonts/}`、`tune/{panel-all,key-all,drum-shade-126,drum-shade-99}.png`、`tune/wheel-spans.json`。
+
+### 2026-11-07｜dip-vinyl-shop｜按串流去聽歌、切回網頁串流被停（第二次）：真正元凶是 Tawk.to 客服小工具的 AudioContext
+
+- **店主 11-07**：「按串流連結去聽歌，換回網頁時串流就停了——情況一模一樣沒有改善」（11-05 PR #388 只關自家音訊，無效）。
+- **重現**：Playwright（iPhone 13）在真頁面包住 AudioContext／resume／HTMLMediaElement.play 並記呼叫堆疊，走「?q=Nevermind#tune → 點星圖 → 試聽 → 就這張 → 點串流鈕 → 切背景 → 切回 → 再點一下」。自家播放器與調頻音效切出去時都已 closed；唯一還 running 的是 `twk-main.js`（Tawk.to）建的 AudioContext——它在第一次觸控時自建 context、以音量 0 播一次提示音「解鎖」，之後一直開著，不經過 DipPlayer，關喇叭／切背景／按串流鈕都管不到；iOS 切回分頁時它把音訊焦點要回去。很可能也是過去「關了聲音串流還是停」的根因之一。
+- **改動**（`index.html`，Tawk 載入前）：包住 AudioContext／webkitAudioContext，呼叫堆疊含 tawk.to／twk- 時改給 `OfflineAudioContext`——Tawk 只用 createBufferSource／createGain／decodeAudioData／destination，離線版全支援、不報錯、永不接喇叭。代價：客服新訊息提示音不響（訊息、角標照常）。
+- **驗證**：同腳本重跑——Tawk 載入 online、拿到 OfflineAudioContext 1 個、0 頁面錯誤；切回後頁面 0 個 running 的 AudioContext、0 個播放中的媒體元素。**iOS 真機待店主實測**（首頁走網路優先，重新整理即生效）。
+- 主要檔案：`index.html`。
+
 ### 2026-11-07｜dip-vinyl-shop｜頻率光譜：符合張數改成水表式數字滾輪（v71）
 
 - **店主 11-07**：「右邊的數量那一欄不要顯示中文，改成像水表的數字顯示，也會上下跳動，數字切換時面板會快速轉到下一個數字。」
@@ -7,7 +24,7 @@
 - **驗證**：Playwright（iPhone 13）全部 22,302 → 爵士 05712 → ＋殿堂 00060 → 0 張 00000（紅）→ 全部 22302，每顆數字都對準中線（偏移 0.0px）；取樣確認換數字時滾筒有轉、約 0.7 秒停住；無頁面錯誤。
 - **主要檔案**：`dip-tune.js`、`index.html`（v71）、`scripts/tune-panel-v2/panel.py`、`tune/panel-all.png`、`tune/drum-shade-122.png`。
 
-### 2026-11-06｜dip-vinyl-shop｜Spotify 灰鈕：前台快取中毒修正＋KV 補連結 744 張（每日批次進行中）
+### 2026-11-06｜dip-vinyl-shop｜Spotify 灰鈕：前台快取中毒修正＋KV 補連結 933 張（每日批次進行中）
 
 - **店主 11-06**：「好多 Spotify 連結是灰的，趕快全部掃描修復」（例：Grimes《Geidi Primes》）。
 - **主因（前台）**：`index.html` 的 `fetchSpotifyCover` localStorage 快取（300 張、永不過期）連「有封面沒連結」也存，10 月配額爆掉時的空結果被手機記住，KV 補好也不再問。PR #417：快取升 v5 刪 v4、只存有 `spotifyUrl` 的結果。Geidi Primes KV 本來就有連結，屬此類。
@@ -15,6 +32,7 @@
 - **配額**：worker 的 Spotify app 115 次就 429（retry-after 約 13 小時，正式站新卡查詢同時被鎖）。店主在雲端環境「修正全通」存了第二組 Spotify 憑證（accounts.spotify.com，代理注入；Node fetch 不會被注入，換 token 走 curl），但首請求即 429、倒數與原 app 相同——待店主確認是否為新 app。
 - **MusicBrainz 重查**（免配額，3,299 張）：有登錄 94，收 80（名稱對上 59＋主線判讀 21，如久石譲《風立ちぬ》→《The Wind Rises Soundtrack》、Ayler《Ghosts》→《Vibrations》）；不收 Black Radio→III、J Dilla→Instrumentals、Janet Jackson《janet.》→同名首張等 14。
 - **11-07 防錯改版**（店主：「搜尋關鍵字寫錯或語言用錯，以前犯過的錯不要再犯」）：`match.mjs` 把 10-29 稽核 92 筆指錯與 Bandana、本批撤回 3 筆逐條寫成規則——藝人完全相同（不收包含）、同名高風險卡加年份檢查、live／EP／Taylor's Version／remix／redux 等另一種作品不收、single 不收、早於原盤不收；語言：兩邊繁轉簡（opencc-js 1.4.2，拚／拼異體收斂）、依卡名語系送 Accept-Language、中英並列拆語段、羅馬字別名；關鍵字：清《》引號、精準查無再換去副標一般查詢。錯案對照表見 `rulings.md`；昨日已寫入 744 條離線複查無新錯。
+- **11-07 每日第 2 批**（395 次）：找到 190、收 189（不收 Philip Glass《Koyaanisqatsi》1998 重錄→2009 電影原錄音）。事故：Spotify 搜尋 limit 現行上限 10，首跑用 20 全被拒、空打 201 次寫了 100 列空結果——已刪、改 limit 10、出錯也等待、連續 3 錯即停、出錯不寫結果；`apply.mjs` 改以腳本資料夾為準。累計 933，剩 3,118（未搜 3,024），預估再 11 天。
 - **配額結論**：店主確認一個帳號只能一組 client id，第二組憑證即原 app、配額共用。不另開帳號（等於繞過限流）。改每天解鎖後（約 04:00 UTC）跑 400 次、留六成給正式站，`send_later` 每日自排（`spotify.mjs 400 own`）；剩約 3,300 張、命中率約六成五，預估 7–8 天，約三分之一 Spotify 本來就沒有、維持灰。
 - 主要檔案：`index.html`、`batch-progress/spotify-fill-20261106/`。
 ### 2026-11-06｜dip-vinyl-shop｜品味對決試做版 `/game-lab/`：從序章重做成「讀人」對決（獨立頁，不動正式遊戲）

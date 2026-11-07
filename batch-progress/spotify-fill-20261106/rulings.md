@@ -21,3 +21,7 @@
 - Spotify 搜尋：Loretta Lynn → Ed Sullivan 現場、Spandau Ballet《True》→ EP、Donald Byrd《Black Byrd》→ Live（已撤回 KV）。
 - MusicBrainz：Black Radio → III、Super Discount → 2、J Dilla → Instrumentals、J Balvin → Lado B、janet. → 同名首張、Temptations → Do The Temptations、Boult → 合輯、Martinho da Vila → 同名、RC サクセション → 現場重混、Ash Ra Tempel → Mixed Tracks、Nass El Ghiwane → 精選、Kreisler → 合輯、Northern Exposure → Redux。
 - 保留（原盤即現場）：Jaco《Invitation》、Buddy Rich《Big Swing Face》、Aretha《Amazing Grace》、Prêtre《Last Concert at La Scala》。
+
+## 每日批次 2026-11-07（第 2 批，395 次）
+- 找到 190（exact 170、edition 20），收 189。**不收** Philip Glass《Koyaanisqatsi》（卡為 1998 Nonesuch 重錄，Spotify 為 2009《Complete Original Soundtrack》電影原錄音，不同錄音）。
+- 事故：首跑 `limit=20` 被 Spotify 拒（現行上限 10），出錯不等待、一路空打 201 次並寫入 100 列空結果；已刪除那 100 列、limit 改 10、出錯也等待、連續 3 次錯即停、出錯不寫結果。
