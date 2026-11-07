@@ -1,5 +1,13 @@
 # dip vinyl 專案備忘錄
 
+### 2026-11-07｜dip-vinyl-shop｜按串流去聽歌、切回網頁串流被停（第二次）：真正元凶是 Tawk.to 客服小工具的 AudioContext
+
+- **店主 11-07**：「按串流連結去聽歌，換回網頁時串流就停了——情況一模一樣沒有改善」（11-05 PR #388 只關自家音訊，無效）。
+- **重現**：Playwright（iPhone 13）在真頁面包住 AudioContext／resume／HTMLMediaElement.play 並記呼叫堆疊，走「?q=Nevermind#tune → 點星圖 → 試聽 → 就這張 → 點串流鈕 → 切背景 → 切回 → 再點一下」。自家播放器與調頻音效切出去時都已 closed；唯一還 running 的是 `twk-main.js`（Tawk.to）建的 AudioContext——它在第一次觸控時自建 context、以音量 0 播一次提示音「解鎖」，之後一直開著，不經過 DipPlayer，關喇叭／切背景／按串流鈕都管不到；iOS 切回分頁時它把音訊焦點要回去。很可能也是過去「關了聲音串流還是停」的根因之一。
+- **改動**（`index.html`，Tawk 載入前）：包住 AudioContext／webkitAudioContext，呼叫堆疊含 tawk.to／twk- 時改給 `OfflineAudioContext`——Tawk 只用 createBufferSource／createGain／decodeAudioData／destination，離線版全支援、不報錯、永不接喇叭。代價：客服新訊息提示音不響（訊息、角標照常）。
+- **驗證**：同腳本重跑——Tawk 載入 online、拿到 OfflineAudioContext 1 個、0 頁面錯誤；切回後頁面 0 個 running 的 AudioContext、0 個播放中的媒體元素。**iOS 真機待店主實測**（首頁走網路優先，重新整理即生效）。
+- 主要檔案：`index.html`。
+
 ### 2026-11-07｜dip-vinyl-shop｜頻率光譜：符合張數改成水表式數字滾輪（v71）
 
 - **店主 11-07**：「右邊的數量那一欄不要顯示中文，改成像水表的數字顯示，也會上下跳動，數字切換時面板會快速轉到下一個數字。」
