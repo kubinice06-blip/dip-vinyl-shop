@@ -3,6 +3,7 @@
 //   node game-lab/tools/bake-cards.mjs              # 解析 seed＋Apple 試聽索引＋Firestore 封面，驗證後寫 cards.js
 //   node game-lab/tools/bake-cards.mjs --no-verify  # 不逐一驗證封面／試聽網址（只在離線時用）
 //   node game-lab/tools/bake-cards.mjs --links-only # v2：只補四平台連結（appleUrl／spotifyUrl／bandcampUrl），其他欄位原封不動
+//   node game-lab/tools/bake-cards.mjs --covers-only # v2 fix：只套 LOCAL_COVER_SKIP（本機封面是錯的那幾張改用遠端 coverUrl），不打 Firestore、不重抓連結
 //
 // v2（SPEC-v2 §4.3）：唱片資訊的平台鈕在烘焙時就把連結烘進 cards.js，執行期不打網路。
 //   appleUrl    ← Apple 試聽索引的專輯 id＋slug＋國別（https://music.apple.com/<cc>/album/<slug>/<id>）；沒有就空（畫面上退回搜尋連結）
@@ -28,6 +29,13 @@ const ROOT = path.resolve(LAB, '..') + '/';
 const ARGV = new Set(process.argv.slice(2));
 const VERIFY = !ARGV.has('--no-verify');
 const LINKS_ONLY = ARGV.has('--links-only');
+const COVERS_ONLY = ARGV.has('--covers-only');
+const REUSE = LINKS_ONLY || COVERS_ONLY;      // 拿現有的 cards.js 當底
+// 本機封面（art/covers）是別的版本、看不出是哪張專輯的：不給 localCover，改用遠端 coverUrl（店主：封面要看得出專輯）
+//   art/covers 那張檔案本身也要在主站換掉（不在 game-lab 範圍）
+const LOCAL_COVER_SKIP = {
+  'john-coltrane-blue-train': '本機圖是 10 CD 合輯的封面，不是 Blue Note 1577（v2 fix O9）'
+};
 const WORKER = 'https://dip-vinyl-worker.kubinice06.workers.dev';
 
 const seed = JSON.parse(fs.readFileSync(ROOT + 'seed_cards.json', 'utf8'));
@@ -150,8 +158,8 @@ async function pool(items, n, fn) {
   return out;
 }
 
-if (LINKS_ONLY) {
-  // 只補連結：拿現有的 cards.js（封面、試聽、推薦語都不動）
+if (REUSE) {
+  // 只補連結／只修本機封面：拿現有的 cards.js（封面、試聽、推薦語都不動）
   const { createRequire } = await import('module');
   const existing = createRequire(import.meta.url)(path.join(LAB, 'cards.js'));
   for (const k of Object.keys(cards)) delete cards[k];
@@ -159,17 +167,28 @@ if (LINKS_ONLY) {
   problems.length = 0;
 }
 const ids = Object.keys(cards);
-const fsCovers = LINKS_ONLY ? {} : await batchGetCovers(ids);
-if (!LINKS_ONLY) for (const id of ids) {
+const fsCovers = REUSE ? {} : await batchGetCovers(ids);
+if (!REUSE) for (const id of ids) {
   const c = cards[id];
   c.coverUrl = rewrite(fsCovers[id]) || null;
   const f = coverSlug(c.artist, c.album) + '.jpg';
-  if (fs.existsSync(ROOT + 'art/covers/' + f)) c.localCover = '../art/covers/' + f;
+  if (fs.existsSync(ROOT + 'art/covers/' + f) && !LOCAL_COVER_SKIP[id]) c.localCover = '../art/covers/' + f;
+}
+for (const id of Object.keys(LOCAL_COVER_SKIP)) {
+  if (!cards[id]) continue;
+  cards[id].localCover = null;
+  if (!cards[id].coverUrl) problems.push('LOCAL-COVER-SKIPPED-BUT-NO-REMOTE ' + id);
 }
 
 const report = { coversOk: 0, coverFallback: [], coverFail: [], previewOk: 0, previewFail: [], caaSwapped: [] };
 if (LINKS_ONLY) {
   // 跳過封面／試聽驗證
+} else if (COVERS_ONLY) {
+  // 只驗改用遠端的那幾張
+  if (VERIFY) for (const id of Object.keys(LOCAL_COVER_SKIP)) if (cards[id] && cards[id].coverUrl) {
+    const res = await probe(cards[id].coverUrl, 'image');
+    if (res.ok) report.coversOk++; else report.coverFail.push(id + ' ' + cards[id].coverUrl + ' → ' + res.status + ' ' + (res.ct || ''));
+  }
 } else if (VERIFY) {
   await pool(ids, 6, async id => {
     const c = cards[id];
@@ -237,7 +256,7 @@ async function bakeLinks(cards, ids) {
   });
   console.log('links: apple', stat.apple + '/' + ids.length, ' spotify', stat.spotify, ' bandcamp', stat.bandcamp);
 }
-await bakeLinks(cards, ids);
+if (!COVERS_ONLY) await bakeLinks(cards, ids);
 
 // ---- 寫檔 ----
 const FIELDS = ['id', 'artist', 'album', 'year', 'genres', 'region', 'c', 'o', 'h', 'tier', 'coverUrl', 'localCover', 'previewUrl', 'tags', 'pitch', 'gold', 'appleUrl', 'spotifyUrl', 'bandcampUrl'];

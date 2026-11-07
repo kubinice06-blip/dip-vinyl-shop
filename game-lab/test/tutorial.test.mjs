@@ -4,7 +4,8 @@
 // 出牌時用 runner.forcedCell() 呼叫真引擎 resolveTurn(…, { forcedCell })。
 // 三張王牌 × 好耳朵（開局氣勢 0／1）× 第 2 課挑哪一張（殿堂、異端各 4 種；流亡固定王牌）＝18 條路線，每條：
 //   變臉發生在第 2 課那手、第 5 課之前沒有人倒下、品味輾壓收尾、玩家聲望 16 一滴都沒少、他每手結算後的聲望＝劇本（tutorial-simplify.md §4.4）。
-// 另外測：步驟資料（字數、目標名、allow、標記）、擋錯招、放手、重掛（B15）、老闆說的話是真的（預覽「怎樣都是他扣」）。
+// 另外測：步驟資料（字數、目標名、allow、標記）、擋錯招、放手、重掛（B15）、老闆說的話是真的（預覽「怎樣都是他扣」、
+// v2 fix：「他出經典，自己回了 1 聲望」「硬蕊削了你 1 氣勢」「氣勢滿了」「晃：喊經典，出的是硬蕊」都對得上引擎的數字）。
 import path from 'path';
 import fs from 'fs';
 import { createRequire } from 'module';
@@ -61,7 +62,7 @@ const header = duelSrc.slice(0, 2000);
 const KNOWN = new Set(SPEC_NAMES.filter(n => !duelSrc || header.includes(n) || duelSrc.includes('data-tut="' + n + '"')));
 section('步驟資料：字數、種類、目標、allow、標記', () => {
   const KINDS = ['say', 'do', 'soft'];
-  const ALLOW = ['card', 'attr', 'ace', 'aceAttr', 'ult', 'ultConfirm', 'info', 'close'];
+  const ALLOW = ['card', 'attr', 'ace', 'aceAttr', 'ult', 'ultConfirm', 'info', 'close', 'sheet', 'sheetClose'];
   const ids = new Set();
   for (const s of T.steps) {
     ok(!ids.has(s.id), '步驟 id 不重複 ' + s.id); ids.add(s.id);
@@ -74,7 +75,7 @@ section('步驟資料：字數、種類、目標、allow、標記', () => {
       ok(!/——|—|反咬|派對|櫃台|卡片資訊/.test(t), s.id + ' 沒有禁用字：' + t);
     }
     ok(Array.isArray(s.target) && s.target.length, s.id + ' 有目標');
-    for (const n of [...s.target, ...(s.target2 || []), ...(s.keep || []), ...(s.point2 ? [s.point2] : [])]) {
+    for (const n of [...s.target, ...(s.target2 || []), ...(s.keep || []), ...(s.look || []), ...(s.point ? [s.point] : []), ...(s.point2 ? [s.point2] : [])]) {
       const okName = KNOWN.has(n) || (/^hand-[0-3]$/.test(n) && /hand-0\.\.hand-3|'hand-' \+ i/.test(duelSrc)) || /^@[fpo]$/.test(n) || n === 'card:bestC' || (n.startsWith('card:') && C.cards[n.slice(5)]) || n === 'info-close' || /^[.#[]/.test(n) || n.startsWith('shop:');
       ok(okName, s.id + ' 目標名合法：' + n);
     }
@@ -82,9 +83,11 @@ section('步驟資料：字數、種類、目標、allow、標記', () => {
       ok(s.allow && Object.keys(s.allow).length && Object.keys(s.allow).every(k => ALLOW.includes(k)), s.id + ' allow 合法', s.allow);
     } else ok(!s.allow, s.id + ' 說明步沒有 allow');
     if (s.cell) ok(['true', 'feint'].includes(s.cell) && (s.allow.attr || s.allow.aceAttr), s.id + ' cell 只用在出牌那一下');
+    if (s.look) ok(s.kind === 'do' && s.look.every(n => s.target.includes(n)) && s.look.length < s.target.length, s.id + ' look 是 target 的一部分（至少留一個能點的洞）', s.look);
+    if (s.allow && s.allow.sheet) ok(['temper', 'calc', 'cells'].includes(s.allow.sheet), s.id + ' sheet 名稱合法', s.allow.sheet);
     if (s.learn) ok(T.learned[s.learn], s.id + ' learn ' + s.learn);
     if (s.tier) for (const t of [].concat(s.tier)) ok(TUT.TIERS.includes(t), s.id + ' tier ' + t);
-    if (typeof s.text === 'object') for (const t of [].concat(s.tier)) ok(s.text[t], s.id + ' 每條路線都有字 ' + t);
+    if (typeof s.text === 'object') for (const t of [].concat(s.tier || TUT.TIERS)) ok(s.text[t], s.id + ' 每條路線都有字 ' + t);
   }
   for (const [k, v] of Object.entries(T.ui)) ok(typeof v === 'string' && len(v) <= 18 && !/——|反咬|派對/.test(v), 'ui.' + k + '：' + v);
   for (const t of TUT.TIERS) {
@@ -125,7 +128,8 @@ function play(tier, q, l2, seed, opt = {}) {
     if (evs.some(e => e.t === 'faceChange')) out.fc = out.fc || d.hand - 1;
     const ko = R.resolved(evs);
     if (ko && act.type !== 'ult') out.koEarly = true;
-    out.hands.push({ h: d.hand - (ko ? 0 : 1), act: act.type === 'card' ? act.attr : act.type, kind: cl.kind, stamp: cl.stamp || null, toE: cl.toE, toP: cl.toP, ehp: d.e.hp, qiBefore: before.qi });
+    out.hands.push({ h: d.hand - (ko ? 0 : 1), act: act.type === 'card' ? act.attr : act.type, kind: cl.kind, stamp: cl.stamp || null, toE: cl.toE, toP: cl.toP, ehp: d.e.hp, ehpBefore: before.ehp, qiBefore: before.qi, qiAfter: d.p.qi,
+      fx: evs.filter(e => e.t === 'attrFx').map(e => ({ who: e.who, attr: e.attr, hp: e.hp, qi: e.qi, oppQi: e.oppQi })) });
     out.php.push(d.p.hp);
     R.handReady();
     sel = null;
@@ -138,6 +142,8 @@ function play(tier, q, l2, seed, opt = {}) {
     const a = s.allow || {};
     if (s.kind === 'say') {
       ok(R.gate({ kind: 'card', i: 0, id: d.p.hand[0].id }) === false, out.route + ' ' + s.id + ' 說明步擋住出牌');
+      ok(R.gate({ kind: 'sheet', which: 'temper' }) === false, out.route + ' ' + s.id + ' 說明步擋住開面板');
+      out.claims.push({ id: s.id, qi: d.p.qi, ehp: d.e.hp, hand: d.hand, intent: E.view(d).intent });
       R.done(); continue;
     }
     if (s.id === '5-1' && opt.releaseAt51) { ok(R.gate({ kind: 'card', i: 0, id: d.p.hand[0].id }) === true, '5-1 出別張：放行'); break; }
@@ -148,7 +154,11 @@ function play(tier, q, l2, seed, opt = {}) {
       if (a.attr && !a.card) { const w = ['c', 'o', 'h'].find(x => x !== a.attr); ok(R.gate({ kind: 'attr', attr: w, i: sel, id: d.p.hand[sel] && d.p.hand[sel].id }) === false, out.route + ' ' + s.id + ' 按錯屬性被擋'); out.blocks++; }
       if (a.ace) { ok(R.gate({ kind: 'ult' }) === false, out.route + ' ' + s.id + ' 按輾壓被擋'); out.blocks++; }
       if (a.info) { ok(R.gate({ kind: 'info', where: 'hand' }) === false, out.route + ' ' + s.id + ' 開別張的資訊被擋'); out.blocks++; }
+      // ART-01：操作步不准順手開別的面板（1-5 點「喊 經典」那格曾經穿過去開他的脾氣）
+      if (!a.sheet) { ok(R.gate({ kind: 'sheet', which: 'temper' }) === false, out.route + ' ' + s.id + ' 開他的脾氣被擋'); out.blocks++; }
+      else { ok(R.gate({ kind: 'sheet', which: 'calc' }) === false, out.route + ' ' + s.id + ' 開別的面板被擋'); out.blocks++; }
     }
+    if (a.sheet || a.sheetClose) out.claims.push({ id: s.id, qi: d.p.qi, ehp: d.e.hp, hand: d.hand, intent: E.view(d).intent });
     if (a.card) {
       let i;
       if (a.card === 'any') i = l2;
@@ -190,6 +200,8 @@ function play(tier, q, l2, seed, opt = {}) {
     if (a.ultConfirm) { ok(R.gate({ kind: 'ultConfirm' }) === true, out.route + ' 5-2 確認放行'); commit({ type: 'ult' }); continue; }
     if (a.info) { ok(R.gate({ kind: 'info', where: a.info }) === true, out.route + ' ' + s.id + ' 開他的盤'); continue; }
     if (a.close) { ok(R.gate({ kind: 'close' }) === true, out.route + ' ' + s.id + ' 關閉'); continue; }
+    if (a.sheet) { ok(R.gate({ kind: 'sheet', which: a.sheet }) === true, out.route + ' ' + s.id + ' 開他的脾氣放行'); continue; }
+    if (a.sheetClose) { ok(R.gate({ kind: 'sheetClose' }) === true, out.route + ' ' + s.id + ' 關面板放行'); continue; }
     ok(false, out.route + ' 不認得的步驟 ' + s.id);
     break;
   }
@@ -234,6 +246,20 @@ section('18 條路線（三張王牌 × 好耳朵 × 第 2 課選牌）：照劇
         ok(r.previewsAt['1-5'] === false && r.previewsAt['2-2'] === false && r.previewsAt['3-6'] === true, tag + ' 預覽：第 1、2 課關著，3-5 起打開', r.previewsAt);
         eq(r.R.learned, tier === 'pearl' ? ['冷門剋經典', '王牌', '晃・經剋硬・硬剋冷', '品味輾壓'] : ['冷門剋經典', '晃・經剋硬・硬剋冷', '王牌', '品味輾壓'], tag + ' 學會的四張小卡');
         ok(r.blocks >= 5, tag + ' 每條路線都試過點錯被擋（' + r.blocks + '）');
+        // ---- 老闆說的話是真的（v2 fix O1／NP-02／NP-08／NP-10）
+        const h1 = r.hands[0], claim = id => r.claims.find(c => c.id === id);
+        ok(h1.fx.some(f => f.who === 'e' && f.attr === 'c' && f.hp === 1) && h1.ehp === h1.ehpBefore - h1.toE + 1, tag + ' 1-6b「他出經典，自己回了 1 聲望」：20－2＋1＝19', h1);
+        ok(h1.fx.some(f => f.who === 'p' && f.attr === 'o' && f.qi > 0) && h1.qiAfter > h1.qiBefore, tag + ' 1-7「剋中、出冷門都加氣勢」', h1);
+        const c7 = claim('2-7b');
+        ok(c7 && c7.intent && c7.intent.bubble === 'c' && c7.intent.slices.filter(x => x.glyph === 'feint').every(x => x.attr === 'h') && c7.intent.slices.some(x => x.glyph === 'feint'),
+          tag + ' 2-7b「晃：喊經典，出的是硬蕊」', c7 && c7.intent);
+        const c8 = claim('2-8');
+        if (tier === 'pearl') ok(c8 && c8.qi === E.CFG.qiMax, tag + ' 2-8 流亡「氣勢滿了」', c8 && c8.qi);
+        else ok(c8 && c8.qi >= E.CFG.ultMin && c8.qi < E.CFG.qiMax, tag + ' 2-8「輾壓亮了，先存著」：氣勢 ≥6 而且還沒滿', c8 && c8.qi);
+        const h3 = r.hands[2];
+        ok(h3.fx.some(f => f.who === 'e' && f.attr === 'h' && f.oppQi === -1), tag + ' 第 3 手他出硬蕊（削你 1 氣勢）', h3.fx);
+        if (tier !== 'pearl') ok(h3.qiAfter === h3.qiBefore + E.CFG.counterQiWin - 1, tag + ' 3-8「硬蕊削了你 1 氣勢」看得到（沒被上限吃掉）', [h3.qiBefore, h3.qiAfter]);
+        else ok(h3.qiAfter === E.CFG.qiMax, tag + ' 3-8p 流亡氣勢頂在 10（所以不提削氣勢）', h3.qiAfter);
         if (seed === 7) { n++; if (d.over === 'win' && r.fc === 2 && !r.koEarly && r.php.every(h => h === 16)) good++; console.log('     ' + tag.replace(' seed7', '') + ' → ' + r.hands.map(h => h.ehp).join('→') + '（' + r.steps.length + ' 步）'); }
       }
     }
@@ -292,6 +318,25 @@ section('放手：5-1 出別張 → 教學結束、不再指定格子、預覽�
   eq(r.duel.p.hp, 16, '放手之前沒被扣血');
 });
 
+section('建議步（5-1）：看一眼唱片資訊／他的脾氣不算放手；出別張才算', () => {
+  const d = newDuel('hall', 0, 7);
+  const R = TUT.createRunner(C, 'hall', d, { from: '5-1' });
+  R.begin();
+  eq(R.cur().id, '5-1', '在 5-1');
+  eq(R.gate({ kind: 'info', where: 'slot-e' }), true, '開唱片資訊放行');
+  eq(R.gate({ kind: 'sheet', which: 'temper' }), true, '開他的脾氣放行');
+  eq([R.state, R.cur().id], ['run', '5-1'], '還在教學、還在 5-1');
+  eq(R.gate({ kind: 'card', i: 1, id: d.p.hand[1].id }), true, '出別張放行');
+  eq(R.state, 'released', '出別張＝放手');
+});
+
+section('learnedIds：學到哪一課就記哪幾個鍵（跳過／放手也留著）', () => {
+  const r = play('hall', 0, 0, 7, { releaseAt51: true });
+  eq(r.R.learnedIds, ['L1', 'L3', 'L4'], '放手在 5-1：L1、L3、L4');
+  const r2 = play('pearl', 0, 'ace', 7);
+  eq(r2.R.learnedIds, ['L1', 'L4', 'L3', 'L5'], '流亡走完：L1、L4、L3、L5');
+});
+
 section('跳過：skip() 之後全部放行、不指定格子、預覽打開', () => {
   const d = newDuel('heresy', 1, 7);
   const R = TUT.createRunner(C, 'heresy', d);
@@ -312,7 +357,7 @@ section('重掛（B15）：依 duel.hand 從那一課開頭接；from 可指定�
   d.hand = 3; const r3 = TUT.createRunner(C, 'hall', d); eq(r3.cur().id, '2-7', '第 3 手從 2-7'); eq(r3.previewsOn(), false, '第 3 手開頭預覽還關著');
   d.hand = 4; const r4 = TUT.createRunner(C, 'hall', d); eq(r4.cur().id, '3-8', '第 4 手從 3-8'); eq(r4.previewsOn(), true, '第 4 手預覽打開');
   d.hand = 5; eq(TUT.createRunner(C, 'hall', d).cur().id, '4-6', '第 5 手從 4-6');
-  d.hand = 4; eq(TUT.createRunner(C, 'pearl', d).cur().id, '3-8', '流亡第 4 手從 3-8（接著品味輾壓）');
+  d.hand = 4; eq(TUT.createRunner(C, 'pearl', d).cur().id, '3-8p', '流亡第 4 手從 3-8p（接著品味輾壓）');
 });
 
 section('敏感度（canon2 的表）：男子 16／12 照劇本不成立，20／18 才全部成立', () => {
@@ -333,7 +378,7 @@ section('敏感度（canon2 的表）：男子 16／12 照劇本不成立，20�
         if (a.attr) { R.gate({ kind: 'attr', attr: a.attr }); go({ type: 'card', i: sel, attr: a.attr }); continue; }
         if (a.aceAttr) { R.gate({ kind: 'attr', attr: AXIS[tier], ace: true }); go({ type: 'ace' }); continue; }
         if (a.ultConfirm) { R.gate({ kind: 'ultConfirm' }); go({ type: 'ult' }); continue; }
-        R.gate(a.ace ? { kind: 'ace' } : a.ult ? { kind: 'ult' } : a.info ? { kind: 'info', where: a.info } : { kind: 'close' });
+        R.gate(a.ace ? { kind: 'ace' } : a.ult ? { kind: 'ult' } : a.info ? { kind: 'info', where: a.info } : a.sheet ? { kind: 'sheet', which: a.sheet } : a.sheetClose ? { kind: 'sheetClose' } : { kind: 'close' });
       }
       if (broke) early++;
     }

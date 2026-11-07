@@ -277,7 +277,8 @@
       { who: '', text: '他的袋子裡掉出一張盤。', stage: { f: 'out', door: 'swing' }, ui: 'stake', music: 'stake', tag: '新' },
       { who: '老闆', text: '「……他每個禮拜都來聽這張。」', stage: { o: 'between' }, tag: '新' },
       { who: '老闆', text: '「我看你對音樂脈絡，很有天份。」', tag: '原句' },
-      { who: '老闆', text: '「我這邊有一些被我淘汰的設備，你挑一個，帶回去吧。」', ui: 'relic', prompt: '（老闆從長桌底下拖出一個木箱。）', tag: '原句' }
+      // 店主 09-08：箱子放在折疊長桌上、桌下放黑籃。老闆走到長桌（dig1）再拖出木箱，這句原文才對得上畫面（O3）
+      { who: '老闆', text: '「我這邊有一些被我淘汰的設備，你挑一個，帶回去吧。」', stage: { oPath: ['dig1'] }, ui: 'relic', prompt: '（老闆從長桌底下拖出一個木箱。）', tag: '原句' }
     ],
     // 配件挑完 → 今晚的地圖
     afterPrologue: [
@@ -454,7 +455,7 @@
   C.hints = {
     h_counter: '他喊經典。冷門剋它，大張經典硬碰也行。',
     h_forecast: '上排＝他出的；綠＝他扣，紅＝你扣。',
-    h_face: '他惱羞了。四格是「晃」。',
+    h_face: '他惱羞了。點這條看他的脾氣。',
     h_feint: '晃：他料到你要剋，反剋回來。',
     h_ult: '氣勢滿了。現在放，或存到更痛。',
     h_ace: '王牌每場一次，被剋就白用。',
@@ -487,6 +488,8 @@
   //     target：data-tut 名稱（duel.js §3.3）、'@f'/'@p'/'@o'＝舞台替身、'card:<id>'／'card:bestC'＝手牌那張、
   //             'info-close'＝唱片資訊的「關閉」、'shop:<hotId>'＝店裡熱點。target2／point2＝選了盤之後（attr 階段）改指的洞與手指。
   //     allow：{card:'<id>'|'any'|'bestC'} {attr:'o'} {ace:true} {aceAttr:true} {ult:true} {ultConfirm:true} {info:'slot-e'} {close:true}
+  //            {sheet:'temper'}＝點開他的脾氣面板 {sheetClose:true}＝把開著的面板關掉（v2 fix NP-07／NP-08）
+  //     look：target 裡只給看、不給點的洞（點到＝點錯；ART-01）；point：手指指哪裡（沒寫＝target[0]）。
   //     cell：這手指定他抽到的格子（'true'|'feint'）→ resolveTurn(…, { forcedCell })；previews：從這步起屬性鈕顯示預覽。
   //     tier：只在那張王牌的路線出現（流亡的第 2 課是王牌課、沒有第 4 課）；text 可依王牌分開寫。
   //     bubble：'above'|'below'|'free'（free＝放在最大的空白帶、不畫箭頭）；keep：泡泡不能蓋到的元素。
@@ -513,14 +516,17 @@
       { id: 'D-1', kind: 'say', target: ['e-hud', '@f'], text: '這是他。上面這塊都是他的。', bubble: 'below', tag: '新' },
       { id: 'D-2', kind: 'say', target: ['p-hud', 'hand', '@p'], text: '這是你。手上是你的盤。', bubble: 'free', tag: '新' },
       { id: 'D-3', kind: 'say', target: ['e-hp', 'p-hp'], text: '聲望先扣光的，就輸了。', bubble: 'free', tag: '新' },
-      // ---- 第 1 課：三種星、喊、冷門剋經典
-      { id: '1-1', kind: 'say', target: ['[data-tut="e-stars"] .stars'], text: '每張盤都有經、冷、硬三種星。', fx: 'stars', colorChars: true, tag: '新' },
-      { id: '1-2', kind: 'say', target: ['e-shout'], text: '他喊經典：嘴上說要出經典。', tag: '新' },
+      // ---- 第 1 課：三種星、喊、冷門剋經典、屬性效果（v2 fix O1／NP-02／NP-09：扣多少要跟聲望少多少對得上）
+      //   1-1、1-2 泡泡放下面，不蓋「他拿出 藝人《專輯》」那一行（ART-15）
+      { id: '1-1', kind: 'say', target: ['[data-tut="e-stars"] .stars'], text: '每張盤都有經、冷、硬三種星。', fx: 'stars', colorChars: true, bubble: 'below', keep: ['[data-tut="e-rec"] .l1'], tag: '新' },
+      { id: '1-2', kind: 'say', target: ['e-shout'], text: '他喊經典：嘴上說要出經典。', bubble: 'below', keep: ['[data-tut="e-rec"] .l1'], tag: '新' },
       { id: '1-3', kind: 'say', target: ['tri'], text: '冷門剋經典。', fx: 'tri', tri: ['oc'], tag: '新' },
       { id: '1-4', kind: 'do', target: ['card:' + JUNK1], text: '點這張：門口一百塊那張。', allow: { card: JUNK1 }, bubble: 'above', tag: '新' },
-      { id: '1-5', kind: 'do', target: ['attr-o', 'e-shout'], text: '出冷門，剋他喊的經典！', allow: { attr: 'o' }, cell: 'true', bubble: 'free', keep: ['hand'], tag: '新' },
-      { id: '1-6', kind: 'say', target: ['result', '.dl-sheet'], text: '你冷 2－他冷 1＋賭注 1＝2', fx: 'calc', colorChars: true, bubble: 'free', tag: '新' },
-      { id: '1-7', kind: 'say', target: ['p-qi'], text: '剋中，氣勢會漲。存到 6 有大招。', fx: 'qi6', tag: '新' },
+      //   look：只給看、不給點的洞（ART-01：點「喊 經典」那格不能穿過去開別的面板）
+      { id: '1-5', kind: 'do', target: ['attr-o', 'e-shout'], look: ['e-shout'], text: '出冷門，剋他喊的經典！', allow: { attr: 'o' }, cell: 'true', bubble: 'free', keep: ['hand'], tag: '新' },
+      { id: '1-6', kind: 'say', target: ['result', '.dl-sheet'], text: '剋中：你的星－他同屬性的星＋賭注', fx: 'calc', bubble: 'free', tag: '新' },
+      { id: '1-6b', kind: 'say', target: ['e-hp'], text: '他出經典，自己回了 1 聲望。', tag: '新' },
+      { id: '1-7', kind: 'say', target: ['p-qi'], text: '剋中、出冷門都加氣勢，6 起有大招。', fx: 'qi6', tag: '新' },
       { id: '1-8', kind: 'do', target: ['slot-e'], text: '點他的盤，看唱片資訊。', allow: { info: 'slot-e' }, tag: '新' },
       { id: '1-9', kind: 'do', target: ['info-close'], text: '看完點關閉回來。', allow: { close: true }, learn: 'L1', tag: '新' },
       // ---- 第 2 課：他會出、自己挑一張（流亡：王牌課）
@@ -528,27 +534,29 @@
       { id: '2-2', kind: 'say', target: ['e-intent'], text: '六次有五次，他出經典。', bubble: 'below', tag: '新' },
       { id: '2-3', tier: ['hall', 'heresy'], kind: 'do', target: ['hand-0', 'hand-1', 'hand-2', 'hand-3'], target2: ['attrs'], point2: 'attr-o',
         text: '換你：挑一張，出冷門。', allow: { card: 'any', attr: 'o' }, wrongAttr: '這手先出冷門。', cell: 'true', keep: ['hand'], tag: '新' },
-      { id: '2-3p', tier: 'pearl', kind: 'say', target: ['hand-ace'], text: '這是王牌：一軸 7 星。', fx: 'sweep', tag: '新' },
-      { id: '2-4p', tier: 'pearl', kind: 'say', target: ['hand-ace'], text: '每場只能出一次。', tag: '新' },
+      // （O8：同一格連三句改成兩句）
+      { id: '2-3p', tier: 'pearl', kind: 'say', target: ['hand-ace'], text: '王牌：一軸 7 星，每場只能出一次。', fx: 'sweep', tag: '新' },
       { id: '2-5p', tier: 'pearl', kind: 'say', target: ['hand-ace'], text: '被剋的話，這手互不傷害。', tag: '新' },
       { id: '2-6p', tier: 'pearl', kind: 'do', target: ['hand-ace'], text: '王牌是冷門 7：剋他！', allow: { ace: true }, tag: '新' },
       { id: '2-6q', tier: 'pearl', kind: 'do', target: ['attr-ace'], text: '出王牌！', allow: { aceAttr: true }, cell: 'true', bubble: 'free', keep: ['hand'], tag: '新' },
       // （劇情）他聲望 ≤18 → 變臉：舞台上他💢＋「你很會嘛？再出冷門試試看！」；duel.js 換 phaseBlurb、「他會出」重跑
-      { id: '2-7', kind: 'say', target: ['e-intent'], text: '他惱羞了。四格是「晃」。', delay: 1500, bubble: 'below', tag: '新' },
-      { id: '2-8', kind: 'say', target: ['ult'], text: '氣勢到 6，品味輾壓亮了。', fx: 'sweep', tag: '新' },
-      { id: '2-9', kind: 'say', target: ['ult'], text: '先存著。越存，越痛。', learnTier: { pearl: 'L4' }, tag: '新' },
-      // ---- 第 3 課：賭注、晃、經剋硬、硬剋冷、預覽
+      //   NP-07／NP-08：「晃」只寫在他的脾氣面板上 → 讓玩家自己點開一次、看到那四格寫著晃，再關掉（2-7＝h_face）
+      { id: '2-7', kind: 'do', target: ['e-intent'], text: '他惱羞了。點這條看他的脾氣。', allow: { sheet: 'temper' }, delay: 1500, bubble: 'below', tag: '新' },
+      { id: '2-7b', kind: 'do', target: ['.dl-sheet'], point: '.dl-sheet .x', text: '晃：喊經典，出的是硬蕊。看完點關閉。', allow: { sheetClose: true }, bubble: 'above', tag: '新' },
+      // （O8 合併 2-8／2-9；NP-10：流亡這時氣勢已經 10 滿格，不叫他「先存著」）
+      { id: '2-8', kind: 'say', target: ['ult'], text: { hall: '品味輾壓亮了。先存著，越存越痛。', heresy: '品味輾壓亮了。先存著，越存越痛。', pearl: '品味輾壓亮了。氣勢滿了，留著收尾。' },
+        fx: 'sweep', learnTier: { pearl: 'L4' }, tag: '新' },
+      // ---- 第 3 課：賭注、經剋硬・硬剋冷、預覽、屬性效果（硬蕊）
       { id: '3-1', kind: 'say', target: ['stake'], text: '賭注變 2 了，越後面越大。', fx: 'stake', tag: '新' },
-      { id: '3-2', kind: 'say', target: ['e-intent'], text: '晃：喊經典，出的是硬蕊。', bubble: 'below', tag: '新' },
-      { id: '3-3', kind: 'say', target: ['tri'], text: '硬蕊剋冷門：他在等你出冷門。', fx: 'tri', tri: ['oc', 'ho'], tag: '新' },
-      { id: '3-4', kind: 'say', target: ['tri'], text: '經典剋硬蕊：出經典剋回去。', fx: 'tri', tri: ['oc', 'ho', 'ch'], triOut: true, tag: '新' },
+      { id: '3-3', kind: 'say', target: ['tri'], text: '硬蕊剋冷門，經典剋硬蕊。', fx: 'tri', tri: ['oc', 'ho', 'ch'], triOut: true, tag: '新' },
       { id: '3-5', kind: 'do', target: ['card:bestC'], text: '點這張：經典 5。', allow: { card: 'bestC' }, previews: true, bubble: 'above', tag: '新' },
       { id: '3-6', kind: 'say', target: ['attrs'], text: '按鈕上寫了會怎樣。', bubble: 'free', keep: ['hand'], tag: '新' },
       { id: '3-7', kind: 'do', target: ['attr-c'], text: '出經典：怎樣都是他扣。', allow: { attr: 'c' }, cell: 'feint', bubble: 'free', keep: ['hand'], tag: '新' },
-      { id: '3-8', kind: 'say', target: ['result'], text: '他晃了，被你看穿：多扣 2。', learn: 'L3', bubble: 'below', tag: '新' },
-      // ---- 第 4 課：王牌（流亡已在第 2 課教過）
-      { id: '4-1', tier: ['hall', 'heresy'], kind: 'say', target: ['hand-ace'], text: '這是王牌：一軸 7 星。', fx: 'sweep', tag: '新' },
-      { id: '4-2', tier: ['hall', 'heresy'], kind: 'say', target: ['hand-ace'], text: '每場只能出一次。', tag: '新' },
+      //   殿堂、異端：他出的硬蕊削了你 1 氣勢（看得到）；流亡氣勢頂在 10，削了也還是滿的，就不提
+      { id: '3-8', tier: ['hall', 'heresy'], kind: 'say', target: ['result', 'p-qi'], text: '看穿多扣 2。硬蕊削了你 1 氣勢。', learn: 'L3', bubble: 'below', tag: '新' },
+      { id: '3-8p', tier: 'pearl', kind: 'say', target: ['result'], text: '他晃了，被你看穿：多扣 2。', learn: 'L3', bubble: 'below', tag: '新' },
+      // ---- 第 4 課：王牌（流亡已在第 2 課教過；O8：同一格連三句改成兩句）
+      { id: '4-1', tier: ['hall', 'heresy'], kind: 'say', target: ['hand-ace'], text: '王牌：一軸 7 星，每場只能出一次。', fx: 'sweep', tag: '新' },
       { id: '4-3', tier: ['hall', 'heresy'], kind: 'say', target: ['hand-ace'], text: '被剋的話，這手互不傷害。', tag: '新' },
       { id: '4-4', tier: ['hall', 'heresy'], kind: 'do', target: ['hand-ace'], text: { hall: '經典 7：他晃也好，真也好。', heresy: '他多半出硬蕊：硬碰硬！' }, allow: { ace: true }, tag: '新' },
       { id: '4-5', tier: ['hall', 'heresy'], kind: 'do', target: ['attr-ace'], text: '出王牌！', allow: { aceAttr: true }, cell: 'feint', bubble: 'free', keep: ['hand'], tag: '新' },
@@ -594,19 +602,33 @@
   C.shopLineWho = { crateNotYet: '老闆', poster: '老闆', cat: '店貓', locked: '（畫面字）', ownerHint: '老闆', mapIntro: '老闆', titleHint: '（畫面字）',
     taipeiHere: '（畫面字）', taipeiNote: '（畫面字）', taipeiLink: '（畫面字）', backToShop: '（畫面字）' };
 
-  // 「？」小抄（右上，隨時可開，≤200 字；上方另畫一張相剋三角圖）
-  C.help = '冷門剋經典・經典剋硬蕊・硬蕊剋冷門。剋中：賭注＋（你的星－他那張同屬性的星，不會是負的）。撞招：同屬性比星，差多少打多少。相生：經→冷→硬→經，2 連 +1 氣勢、3 連 +2 氣勢再 +2 傷害。他會出：六格隨機落一格。真＝照喊的出；晃＝出剋你剋招的；跟＝出你上一手；報＝剋你上一手；盯＝剋你最大張；？＝還沒看過。氣勢 6 起可放品味輾壓：傷害＝當下氣勢，他這手作廢。';
+  // 「？」小抄（右上，隨時可開，≤200 字；上方另畫一張相剋三角圖）。畫面上用 helpRows／helpGlyphs，這段是備用全文
+  C.help = '冷門剋經典・經典剋硬蕊・硬蕊剋冷門。剋中：賭注＋你的星－他那張同屬性的星。撞招：同屬性比星。屬性效果：出經典回 1 聲望、出冷門自己氣勢 +1、出硬蕊對手氣勢 −1。相生：依序出經、冷、硬，2 連 +1 氣勢、3 連 +2 氣勢再 +2 傷害。他會出：六格隨機落一格。王牌：一軸 7 星，每場一次，被剋就互不傷害。氣勢 6 起可放品味輾壓：傷害＝當下氣勢，他這手作廢。';
   C.helpTag = '新';
   // 小抄的版面用資料（同一套說法拆成名詞表＋唱盤字表；畫面上用這兩張表，不再整段貼出 C.help）
+  //   v2 fix（O1、NP-02、NP-14）：補屬性效果、王牌、點播、他的輾壓怎麼接；相生寫清楚順序跟剋的箭頭相反
   C.helpRows = [
     ['相剋', '冷門剋經典・經典剋硬蕊・硬蕊剋冷門'],
     ['剋中', '賭注＋星差（你的星－他那張同屬性的星，不會是負的）'],
     ['撞招', '同屬性比星，差多少打多少'],
-    ['相生', '經→冷→硬→經：2 連 +1 氣勢；3 連 +2 氣勢，再 +2 傷害'],
+    ['屬性效果', '雙方都算：出經典回 1 聲望；出冷門自己氣勢 +1；出硬蕊對手氣勢 −1'],
+    ['相生', '依序出 經典、冷門、硬蕊（跟上圖剋的箭頭反方向）：2 連 +1 氣勢；3 連 +2 氣勢，再 +2 傷害'],
     ['氣場唱盤', '六格隨機落一格，他照那格的字出'],
-    ['品味輾壓', '氣勢 6 起可放：傷害＝當下氣勢，他這手作廢']
+    ['王牌', '一軸 7 星，每場只能出一次；被剋＝霸權，這手互不傷害'],
+    ['點播', '客人點的那一類盤，你出招的星 +2'],
+    ['品味輾壓', '氣勢 6 起可放：傷害＝當下氣勢，他這手作廢'],
+    ['他的輾壓', '出剋它的盤＝割捨防禦，用星擋；王牌剋得到＝七星回擊（7＋賭注），地圖上寫「王牌接得住」；沒擋＝吃下；你也放＝對轟']
   ];
   C.helpGlyphs = [['真', '照喊的出'], ['晃', '出剋你剋招的'], ['跟', '出你上一手'], ['報', '剋你上一手'], ['盯', '剋你最大張'], ['？', '還沒看過']];
+  // 今晚地圖點客人的預覽：每個詞底下一行灰字（NP-15、O10；ui.js previewNode 讀，沒有的鍵就不出）。≤20 字
+  C.previewGloss = {
+    ult: '他氣勢到這個數，會放品味輾壓',
+    reflectable: '你的王牌剋得到它，可以七星回擊',
+    request: '他點的那一類盤，你出招 +2',
+    stake: '贏了，這張盤就是你的',
+    relic: '贏了，這件配件給你挑'
+  };
+  C.previewGlossTag = '新';
 
   // 第一次通關後的剪影預告（§2.7、§6.8）
   C.secondNight = { name: '增值哥', title: '對街潮流館', line: '對街新開了一間黑膠潮流館。', label: '第二夜（尚未開放）', tag: '新' };

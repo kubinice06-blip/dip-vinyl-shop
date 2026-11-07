@@ -139,14 +139,16 @@ if (TT) {
     ok(TT.hand[t] && TT.hand[t].length === 4 && TT.draw[t] && TT.draw[t].length === 3, 'tutorial.hand／draw.' + t + ' 要 4＋3 張');
     if (TT.hand[t] && TT.draw[t]) ok(JSON.stringify([...TT.hand[t], ...TT.draw[t]].sort()) === JSON.stringify([...C.gifts[t], ...C.junk].sort()), 'tutorial.' + t + '：起手＋牌庫要剛好＝老闆四張＋門口一百塊三張');
   }
-  const KINDS = ['say', 'do', 'soft'], ALLOW = ['card', 'attr', 'ace', 'aceAttr', 'ult', 'ultConfirm', 'info', 'close'];
+  const KINDS = ['say', 'do', 'soft'], ALLOW = ['card', 'attr', 'ace', 'aceAttr', 'ult', 'ultConfirm', 'info', 'close', 'sheet', 'sheetClose'];
   const sids = new Set();
   for (const st of TT.steps || []) {
     const w = 'tutorial.steps.' + st.id;
     ok(st.id && !sids.has(st.id), w + ': id 重複或沒有'); sids.add(st.id);
     ok(KINDS.includes(st.kind), w + ': kind');
     ok(Array.isArray(st.target) && st.target.length, w + ': target');
-    ok(typeof st.text === 'string' ? !!st.text : (st.text && typeof st.text === 'object' && [].concat(st.tier).every(t => st.text[t])), w + ': text');
+    ok(typeof st.text === 'string' ? !!st.text : (st.text && typeof st.text === 'object' && [].concat(st.tier || ['hall', 'pearl', 'heresy']).every(t => st.text[t])), w + ': text');
+    if (st.look) ok(st.kind === 'do' && st.look.every(n => st.target.includes(n)) && st.look.length < st.target.length, w + ': look 要是 target 的一部分，而且至少留一個能點的洞');
+    if (st.allow && st.allow.sheet) ok(['temper', 'calc', 'cells'].includes(st.allow.sheet), w + ': allow.sheet');
     if (st.kind !== 'say') ok(st.allow && Object.keys(st.allow).every(k => ALLOW.includes(k)), w + ': allow');
     if (st.allow && st.allow.card && !['any', 'bestC'].includes(st.allow.card)) has(st.allow.card, w + '.allow.card');
     (st.target || []).filter(n => n.startsWith('card:') && n !== 'card:bestC').forEach(n => has(n.slice(5), w + '.target'));
@@ -165,6 +167,11 @@ const SL = C.shopLines || {};
 for (const k of ['crateNotYet', 'poster', 'cat', 'locked', 'titleHint', 'taipeiHere', 'taipeiNote', 'taipeiLink', 'backToShop']) ok(typeof SL[k] === 'string' && SL[k], 'shopLines.' + k);
 ok(SL.ownerHint && ['title', 'scene', 'map', 'duel', 'node', 'reward'].every(k => typeof SL.ownerHint[k] === 'string'), 'shopLines.ownerHint 六個畫面');
 ok(Array.isArray(SL.mapIntro) && SL.mapIntro.length === 2, 'shopLines.mapIntro 兩句');
+// v2 fix：小抄（O1、NP-02、NP-14）要有屬性效果、王牌、點播；地圖預覽的灰字（NP-15）
+const HR = new Map((C.helpRows || []).map(r => [r[0], r[1]]));
+for (const k of ['相剋', '剋中', '撞招', '屬性效果', '相生', '氣場唱盤', '王牌', '點播', '品味輾壓']) ok(HR.has(k), '小抄少了「' + k + '」那一列');
+ok(/經典.*回 1 聲望/.test(HR.get('屬性效果') || '') && /冷門.*氣勢 \+1/.test(HR.get('屬性效果') || '') && /硬蕊.*氣勢 −1/.test(HR.get('屬性效果') || ''), '小抄「屬性效果」要寫經典回 1 聲望、冷門氣勢 +1、硬蕊對手氣勢 −1（engine CFG.attrFx）');
+ok(C.previewGloss && ['ult', 'reflectable', 'request', 'stake', 'relic'].every(k => typeof C.previewGloss[k] === 'string' && C.previewGloss[k]), 'previewGloss 五個鍵');
 const duelBeat = C.script.prologue.find(b => b.ui === 'duel');
 ok(duelBeat && Array.isArray(duelBeat.prompts) && duelBeat.prompts.length === 2, '序章開打要有兩顆鈕（prompts：帶教學／直接開打）');
 

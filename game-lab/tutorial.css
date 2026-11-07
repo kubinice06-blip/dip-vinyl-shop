@@ -12,6 +12,8 @@
 #tut .tut-mask.soft .m,#tut .tut-mask.soft .tb{fill-opacity:.4}
 #tut .tut-mask .tb{pointer-events:none}                  /* 頂欄只壓暗：⏸、? 隨時按得到 */
 #tut .tut-mask.block .m{pointer-events:visiblePainted}   /* 操作步：洞外吃點擊（點錯）；洞裡因 evenodd 不算 painted，點擊穿過去 */
+#tut .tut-mask .lk{fill:#000;fill-opacity:0;pointer-events:none}
+#tut .tut-mask.block .lk{pointer-events:fill}              /* 只給看的洞（look）：亮著，但點下去＝點錯，不穿過去（ART-01） */
 #tut .tut-catch{position:absolute;left:0;right:0;top:0;bottom:0;pointer-events:auto;touch-action:manipulation;cursor:pointer;background:transparent}
 #tut .tut-catch[hidden]{display:none}
 #tut .tut-catch.clear{cursor:default}

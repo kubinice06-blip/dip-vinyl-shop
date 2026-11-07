@@ -261,6 +261,16 @@ if (TUT) {
   }
   for (const [k, v] of Object.entries(TUT.learned || {})) items.push({ scene: '序章引導教學・學會的小卡', where: 'tutorial.learned.' + k, who: '（畫面字）', text: (TUT.ui && TUT.ui.learnedPrefix || '') + v, tag: TUT.uiTag });
 }
+// v2 fix（NP-15）：今晚地圖預覽每個詞底下的灰字
+for (const [k, v] of Object.entries(C.previewGloss || {})) {
+  const where = 'previewGloss.' + k;
+  if (typeof v !== 'string' || !v) { err(where, '不是字串'); continue; }
+  if (!TAG_OK(C.previewGlossTag)) err(where, '沒有 tag（previewGlossTag）');
+  if ([...v].length > 20) err(where, '超過 20 字（' + [...v].length + '）：' + v);
+  items.push({ scene: '今晚地圖・客人預覽的灰字說明', where, who: '（畫面字）', key: k, text: v, tag: C.previewGlossTag });
+}
+// 小抄的名詞表（helpRows／helpGlyphs）：畫面上用的是這兩張表，列進審稿表
+(C.helpRows || []).forEach((r, k) => { scanStrings('content.js', [{ s: r[1], line: 'helpRows[' + k + ']' }], { allDash: true }); items.push({ scene: '「？」小抄（名詞表）', where: 'helpRows[' + k + ']', who: '（畫面字）', key: r[0], text: r[1], tag: C.helpTag }); });
 // v2：變臉後的脾氣字
 for (const [id, e] of Object.entries(C.enemies || {})) if (e.phaseBlurb) {
   const tag = (C.phaseBlurbTags || {})[id];
