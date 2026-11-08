@@ -151,9 +151,12 @@
     if (S.veil) return;
     var v = D.createElement('div'); v.className = 'ec-veil';
     var top = app().querySelector(':scope > .lb-top'); if (top) v.style.top = top.offsetHeight + 'px';
-    v.addEventListener('pointerdown', function (e) { e.preventDefault(); });
+    // 只認「在 veil 上按下」的點擊：點舞台開抽屜的那一下，放開後瀏覽器補送的 click 會落在剛蓋上的 veil，不能當成「點外面」
+    v.addEventListener('pointerdown', function (e) { e.preventDefault(); v._down = true; });
     v.addEventListener('click', function (e) {
       e.preventDefault(); e.stopPropagation();
+      if (!v._down) return;
+      v._down = false;
       if (S.walking) { var st = ST(); if (st && st.finish) st.finish('p'); return; }   // 走路途中點一下＝直接走到
       if (!S.open) return;
       if (S.kind === 'pick') { nudge(); return; }   // 開局挑三張：一定要挑

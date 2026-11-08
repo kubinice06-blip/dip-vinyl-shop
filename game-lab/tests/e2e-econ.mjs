@@ -8,7 +8,7 @@
 //   2  抽屜高 ≤ #app 50%，內容不溢出（scrollHeight ≤ clientHeight），整個在畫面裡
 //   3  那一箱的形狀整個在舞台可見範圍內（hotspots 的 rect ⊂ 鏡頭），而且在抽屜上緣之上（stage.hotRect 沒被抽屜蓋到）
 //   4  一張大封面翻著看：› ‹、縮圖、左右滑都會換張；點封面＝唱片資訊（關掉回到抽屜）
-//   5  點抽屜外面關掉：抽屜不見、描框清掉、不再 dig、鏡頭回到開之前
+//   5  點抽屜外面關掉：抽屜不見、描框清掉、不再 dig、鏡頭回到開之前；人已在箱子前再點同一箱＝不走路直接開、不會被放開後的 click 關掉
 //   6  買（錢夠、包包沒滿）→ 錢減價格、包包 +1、那張從抽屜消失、吐司「進包包」
 //   7  包包滿 → 先賣一張：賣回子面板（半價）→ 選一張 →「賣這張」→ 錢＝原本＋半價－價格、包包仍 8、賣掉那張不在、買的那張在
 //   8  錢不夠的鈕停用（「錢不夠」）
@@ -160,8 +160,13 @@ async function runSize(browser, w, h) {
         const st = window.H.stage, v = st.view(), v0 = window.__view0, last = window.H.poses.filter(p => p.id === 'p').slice(-1)[0];
         return { hi: (st.shop.state.hi || []).length, pose: last && last.name, same: v.y === v0.y && v.h === v0.h && Math.abs(v.scale - v0.scale) < 1e-6, v: [v.y, v.h], v0: [v0.y, v0.h] };
       });
-      const ok = r.hi === 0 && r.pose === null && r.same;
-      record(5, size, ok, `關了；描框 ${r.hi}；姿勢 ${r.pose}；鏡頭 ${r.v} ＝ 開之前 ${r.v0}：${r.same}`);
+      // 人已經站在箱子前：再點同一箱＝不用走、直接開；放開後補送的 click 不能把剛開的抽屜當成「點外面」關掉
+      await page.evaluate(() => { window.H.walks.length = 0; });
+      await tapHot(page, 'bin:hiphop'); await sleep(700);
+      const again = await page.evaluate(() => ({ open: window.DipLabEcon.debug().open, walks: window.H.walks.length }));
+      await page.evaluate(() => window.DipLabEcon.close()); await sleep(450);
+      const ok = r.hi === 0 && r.pose === null && r.same && again.open && again.walks === 0;
+      record(5, size, ok, `關了；描框 ${r.hi}；姿勢 ${r.pose}；鏡頭 ${r.v} ＝ 開之前 ${r.v0}：${r.same}；站在箱子前再點一次：不走路 ${again.walks === 0}、抽屜開著 ${again.open}`);
     });
     // ---------------- 6：買（錢夠、包包沒滿） ----------------
     await T(6, async () => {
