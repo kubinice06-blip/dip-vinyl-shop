@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>stage harness：一台唱盤的一手（SPEC-v4 §2.3.3）</title>
+<link rel="stylesheet" href="../shop.css">
+<style>
+  html,body{margin:0;background:#1a1410;color:#eee5c6;font:13px/1.4 system-ui,'Noto Sans TC','PingFang TC',sans-serif;-webkit-text-size-adjust:100%}
+  body{display:flex;flex-direction:column;min-height:100vh}
+  #stage{flex:none;position:relative;z-index:3;background:#0d0a08}
+  .panel{flex:1;padding:8px 10px 14px;display:flex;flex-direction:column;gap:7px}
+  .row{display:flex;flex-wrap:wrap;gap:5px;align-items:center}
+  .row b{font-size:12px;color:#c9b98e;margin-right:2px}
+  button{font:inherit;font-size:12px;color:#1d1712;background:#eee5c6;border:2px solid #1d1712;padding:4px 8px;border-radius:0;cursor:pointer}
+  button.on{background:#e9c35a}
+  button:active{transform:translateY(1px)}
+  #info{font:11px/1.35 'Space Mono',monospace;color:#c9b98e;white-space:pre-wrap;margin:0;max-height:9.5em;overflow:auto}
+  #now{font-weight:700;color:#fff}
+  /* 路線圖（§2.3.2 的表）：家具腳下範圍紅框、每條路線一色、中點標號；下方圖例寫秒數 */
+  #legend{margin:0;padding:0 0 0 2px;list-style:none;display:none;columns:2;column-gap:10px;font:11px/1.45 'Space Mono','Noto Sans TC',monospace}
+  #legend.on{display:block}
+  #legend li{break-inside:avoid;white-space:nowrap}
+  #legend i{display:inline-block;width:15px;height:15px;line-height:15px;text-align:center;font-style:normal;font-weight:700;color:#111;margin-right:4px;border:1px solid #111}
+  #legend li.bad{color:#ff8a8a}
+  svg.rt{position:absolute;left:0;top:0;pointer-events:none;z-index:8}
+</style>
+</head>
+<body>
+<div id="stage"></div>
+<div class="panel">
+  <div class="row"><b>一手</b>
+    <button data-k="counter">剋中</button><button data-k="countered">被剋（唬人）</button><button data-k="gap">剋不動（差 2）</button>
+    <button data-k="aceBlock">剋不動（王牌）</button><button data-k="mirrorWin">同色比星</button><button data-k="tie">平手</button><button data-k="ace">王牌</button>
+  </div>
+  <div class="row"><b>停格</b>
+    <button data-t="100">100</button><button data-t="300">300</button><button data-t="560">560</button><button data-t="1000">1000</button><button data-t="1460">1460</button>
+    <button data-t="">放開</button><button id="clear">清台</button>
+  </div>
+  <div class="row"><b>速度</b><button data-s="1" class="on">×1</button><button data-s="4">×4</button>
+    <button id="reduced">減少動態：關</button><button id="sound">開聲音</button>
+  </div>
+  <div class="row"><b>其他</b><button id="duelIn">走進唱盤區</button><button id="holdO">老闆拿唱片</button><button id="floor">地上唱片</button><button id="cam">鏡頭：strip</button><button id="routes">路線圖</button></div>
+  <ol id="legend"></ol>
+  <div id="now">—</div>
+  <pre id="info"></pre>
+</div>
+<script src="../../dip-character.js?v=2"></script>
+<script src="../chars.js"></script>
+<script src="../cards.js"></script>
+<script src="../fx.js"></script>
+<script src="../shop.js"></script>
+<script src="../shop-props.js"></script>
+<script src="../stage.js"></script>
+<script>
+/* dev/stage-harness.html（A2，SPEC-v4 §3.1 A2 交件 6）：只掛舞台，依序演一手（剋中／被剋／剋不動 gap／剋不動 ace／同色比星／平手／王牌），能 seek(t) 停格。
+ *   ?kind=counter&t=560   一開就演那一手並停在 t（截圖用）；?reduced=1 減少動態；?speed=4；?cam=full
+ *   window.H：{ stage, run(kind, t?), seek(t), measure() → 頭頂方塊與頭頂、名牌的量測（§2.3.3：方塊下緣 ≤ 頭頂＋1 格、不跟名牌相交）, log }
+ * 嚴格模式（DipShop.strict）打開：走不到的路線會丟錯（SPEC-v4 §2.4.5）。 */
+(function () {
+  'use strict';
+  var QS = {}; try { new URLSearchParams(location.search).forEach(function (v, k) { QS[k] = v; }); } catch (_) {}
+  if (window.DipShop) window.DipShop.strict = true;
+  var $ = function (s) { return document.querySelector(s); }, $$ = function (s) { return [].slice.call(document.querySelectorAll(s)); };
+  // 每一手：你（p，右）與他（e，左）丟的牌（星數照 cards.js；王牌 7 星），結算照 SPEC-v4 §5.1 #5 的規則抽查表
+  var R = {
+    counter:   { label: '剋中：你冷 4 剋他經 5 → 他 −4', kind: 'counter', by: 'p', blocked: null, toE: 4, toP: 0,
+                 p: { attr: 'o', star: 4, card: '老王樂隊-暮夜徐行' }, e: { attr: 'c', star: 5, card: 'david-bowie-low' } },
+    countered: { label: '被剋（他唬人）：你經 5，他冷 4 → 你 −4', kind: 'countered', by: 'e', blocked: null, toE: 0, toP: 4,
+                 p: { attr: 'c', star: 5, card: 'vashti-bunyan-just-another-diamond-day' }, e: { attr: 'o', star: 4, card: '傷心欲絕-我愛您' } },
+    gap:       { label: '剋不動：你冷 3 剋他經 5（差 2）→ 比星 你 −2', kind: 'mirrorLose', by: 'p', blocked: 'gap', toE: 0, toP: 2,
+                 p: { attr: 'o', star: 3, card: 'the-kinks-preservation-act-1' }, e: { attr: 'c', star: 5, card: 'bark-psychosis-hex' } },
+    aceBlock:  { label: '剋不動：他王牌經 7 被你冷 5 剋 → 你 −2', kind: 'mirrorLose', by: 'p', blocked: 'ace', toE: 0, toP: 2,
+                 p: { attr: 'o', star: 5, card: 'pauline-anna-strom-trans-millenia-consort' }, e: { attr: 'c', star: 7, card: 'radiohead-ok-computer', ace: true } },
+    mirrorWin: { label: '同色：你經 5 比他經 3 → 他 −2', kind: 'mirrorWin', by: null, blocked: null, toE: 2, toP: 0,
+                 p: { attr: 'c', star: 5, card: 'beverly-glenn-copeland-keyboard-fantasies' }, e: { attr: 'c', star: 3, card: 'blur-the-great-escape' } },
+    tie:       { label: '平手：經 4 對經 4 → 空盤、老闆搖頭', kind: 'tie', by: null, blocked: null, toE: 0, toP: 0,
+                 p: { attr: 'c', star: 4, card: 'scott-walker-tilt' }, e: { attr: 'c', star: 4, card: 'pharoah-sanders-tauhid' } },
+    ace:       { label: '王牌：你王牌硬 7 被他經 2 剋 → 剋不動、他 −5', kind: 'mirrorWin', by: 'e', blocked: 'ace', toE: 5, toP: 0,
+                 p: { attr: 'h', star: 7, card: 'swans-filth', ace: true }, e: { attr: 'c', star: 2, card: 'coldplay-mylo-xyloto' } }
+  };
+  var H = window.H = { stage: null, log: [], ready: false, errors: [] };
+  var spd = +QS.speed > 0 ? +QS.speed : 1, red = QS.reduced === '1', cam = QS.cam || 'strip', cur = null, curT = null;
+  function sfx(n, o) {
+    H.log.push(n + (o && 'attr' in o ? '(' + o.attr + ')' : ''));
+    if (H.log.length > 12) H.log.shift();
+    var f = window.DipLabFx; if (f && f.sfx) try { f.sfx(n, o); } catch (_) {}
+  }
+  function info() {
+    var st = H.stage; if (!st) return;
+    var s = st.clashState();
+    $('#info').textContent = 'state ' + JSON.stringify({ items: s.items, deck: s.deck && (s.deck.state + ' ' + s.deck.by + ' ' + s.deck.rec.attr + ' ' + s.deck.rec.card), badges: s.badges, speed: s.speed, paused: s.paused }) + '\nsfx ' + H.log.join(' ');
+  }
+  function place() {
+    var st = H.stage;
+    st.put('f', 'duelE', 'e0'); st.put('p', 'duelP', 'player'); st.put('o', 'ref');
+    st.hold('e', null); st.hold('p', null);
+    st.tag('f', '男子', 'e', 'L'); st.tag('p', '你', 'p', 'R');
+  }
+  // 演一手；t 有值＝停在 t（ms，速度 1 的時間軸）
+  H.run = function (k, t) {
+    var st = H.stage, r = R[k]; if (!st || !r) return null;
+    cur = k; $('#now').textContent = r.label;
+    st.clearClash(0); place();
+    var o = JSON.parse(JSON.stringify(r)); o.speed = spd; o.reduced = red; o.nameE = '男子';
+    o.onHit = function (side) { H.log.push('hit:' + side); };
+    o.onLand = function (side, c) { H.log.push('land:' + side); };
+    var pr = st.clash(o);
+    if (t != null && t !== '') H.seek(+t); else st.seek(null);
+    return pr;
+  };
+  H.seek = function (t) { var st = H.stage; if (!st) return; curT = t; st.seek(t == null || t === '' ? null : +t); info(); return H.measure(); };
+  // 量頭頂方塊（CSS px，相對舞台 host）：下緣 ≤ 頭頂＋1 格；不跟任何看得到的名牌相交
+  H.measure = function () {
+    var st = H.stage; if (!st) return null;
+    var host = $('#stage').getBoundingClientRect(), v = st.view(), out = {};
+    var tags = $$('#stage .ds-tag').filter(function (d) { return d.style.display !== 'none' && d.offsetWidth; }).map(function (d) { var r = d.getBoundingClientRect(); return [r.left - host.left, r.top - host.top, r.width, r.height, d.textContent]; });
+    ['e', 'p'].forEach(function (s) {
+      var r = st.badgeRect(s); if (!r) { out[s] = null; return; }
+      var id = s === 'e' ? 'f' : 'p', a = st.pos(id), hy = st.shop.headY(id), hc = st.cssOf(a.x, hy);
+      var b = [r.left - host.left, r.top - host.top, r.width, r.height];
+      var hitTag = tags.filter(function (g) { return b[0] < g[0] + g[2] && g[0] < b[0] + b[2] && b[1] < g[1] + g[3] && g[1] < b[1] + b[3]; }).map(function (g) { return g[4]; });
+      out[s] = { rect: b.map(Math.round), headTop: Math.round(hc.y), cell: +v.scale.toFixed(3), bottomOk: b[1] + b[3] <= hc.y + v.scale + 0.5, insideX: b[0] >= 0 && b[0] + b[2] <= host.width, hitTag: hitTag, centerDx: Math.round(b[0] + b[2] / 2 - hc.x) };
+    });
+    out.tags = tags.length; out.view = { y: v.y, h: v.h, scale: v.scale };
+    return out;
+  };
+  window.addEventListener('error', function (e) { H.errors.push(String(e.message || e)); });
+  DipLabStage.mount($('#stage'), {
+    shop: 'dip', layoutBase: '../shops/', cards: window.DipLabCards, coverBase: '../', sprites: {}, player: { head: 'neat' },
+    camera: cam, screen: 'duel', sfx: sfx
+  }).then(function (st) {
+    H.stage = st;
+    place();
+    return st.camera(cam, { ms: 0, panelMin: 0 });
+  }).then(function () {
+    H.ready = true;
+    if (QS.kind && R[QS.kind]) H.run(QS.kind, QS.t);
+    setInterval(info, 250);
+  }).catch(function (e) { console.error(e); H.errors.push(String(e)); });
+
+  $$('[data-k]').forEach(function (b) { b.onclick = function () { H.run(b.getAttribute('data-k'), curT); }; });
+  $$('[data-t]').forEach(function (b) { b.onclick = function () { var t = b.getAttribute('data-t'); if (!cur) H.run('counter'); H.seek(t === '' ? null : +t); if (t === '') curT = null; }; });
+  $$('[data-s]').forEach(function (b) { b.onclick = function () { spd = +b.getAttribute('data-s'); $$('[data-s]').forEach(function (x) { x.classList.toggle('on', x === b); }); if (H.stage) H.stage.speed(spd); }; });
+  $('#reduced').onclick = function () { red = !red; this.textContent = '減少動態：' + (red ? '開' : '關'); this.classList.toggle('on', red); };
+  $('#sound').onclick = function () { var f = window.DipLabFx; try { f.init(); f.unlockFromGesture(true); if (f.setSound) f.setSound(true); } catch (e) { console.warn(e); } this.classList.add('on'); };
+  $('#clear').onclick = function () { if (H.stage) { H.stage.seek(null); H.stage.clearClash(); } cur = null; curT = null; $('#now').textContent = '—'; };
+  $('#duelIn').onclick = function () {
+    var st = H.stage; if (!st) return;
+    st.clearClash(0); st.seek(null); st.put('f', 'mid', 'e0'); st.put('p', 'leaving'); st.put('o', 'counter');
+    st.camera('full', { ms: 0, panelMin: 0 }).then(function () { return st.duelIn({ ms: 600 }); }).then(function () { place(); });
+  };
+  $('#holdO').onclick = function () { var st = H.stage; if (!st) return; var on = !this.classList.contains('on'); st.hold('o', on ? { sleeve: 'caetano-veloso-transa' } : null); this.classList.toggle('on', on); };
+  $('#floor').onclick = function () { var st = H.stage; if (!st) return; var on = !this.classList.contains('on'); st.floorRecord(on ? 'duelE' : null, { attr: 'o', card: '老王樂隊-暮夜徐行' }); this.classList.toggle('on', on); };
+  // 路線圖（SPEC-v4 §2.3.2）：每條路線用 navRoute 算（跟 shop.walk 同一套），1 倍速＝每秒 72 格；家具腳下範圍（foot）畫紅框
+  var ROUTES = [
+    ['counter', 'dig1', 3.2], ['counter', 'dig2', 3.2], ['dig2', 'counter', 3.2],
+    ['counter', 'mid', 3.5], ['mid', 'ref', 3.5], ['pay', 'leaving', 3.5], ['atdoor', 'duelE', 3.5], ['leaving', 'duelP', 3.5],
+    ['ref', 'visit', 3.5], ['visit', 'dig1', 3.5], ['duelE', 'door', 3.5], ['browse', 'sale', 4.5], ['sale', 'pay', 4.5]
+  ];
+  var COLORS = ['#ffd23f', '#ff9f1c', '#ffbf69', '#2ec4b6', '#cbf3f0', '#e0aaff', '#9bf6ff', '#a0c4ff', '#caffbf', '#fdffb6', '#ffadad', '#80ffdb', '#f72585'];
+  H.routes = function (on) {
+    var st = H.stage, host = $('#stage'); if (!st) return null;
+    $$('#stage svg.rt').forEach(function (s) { s.remove(); });
+    var lg = $('#legend'); lg.innerHTML = ''; lg.classList.toggle('on', !!on);
+    if (!on) return null;
+    var L = st.layout, DS = window.DipShop, OP = DS.O34.PROPS, obs = DS.navObstacles(L), sp = L.spots, ns = 'http://www.w3.org/2000/svg';
+    var svg = document.createElementNS(ns, 'svg'); svg.setAttribute('class', 'rt'); svg.setAttribute('width', host.clientWidth); svg.setAttribute('height', host.clientHeight);
+    var mk = function (n, a) { var e = document.createElementNS(ns, n); for (var k in a) e.setAttribute(k, a[k]); svg.appendChild(e); return e; };
+    var C = function (x, y) { return st.cssOf(x, y); };
+    // 家具的腳下範圍（站立道具的 foot，不加邊）
+    var feet = [];
+    (L.props || []).forEach(function (o) { var s = OP[o.type], ly = o.layer || (s && s.layer); if (!s || !s.foot || o.hidden || ly === 'wall' || ly === 'bg' || ly === 'fx' || o.block === false) return; feet.push([o.id || o.type, s.foot(o)]); });
+    feet.forEach(function (f) { var a = C(f[1][0], f[1][1]), b = C(f[1][0] + f[1][2], f[1][1] + f[1][3]); mk('rect', { x: a.x, y: a.y, width: b.x - a.x, height: b.y - a.y, fill: 'rgba(255,40,40,.18)', stroke: '#ff3b3b', 'stroke-width': 1, 'stroke-dasharray': '3 2' }); });
+    // 中島右側走道（x 188–210、y 150–270）
+    var a0 = C(188, 150), a1 = C(210, 270); mk('rect', { x: a0.x, y: a0.y, width: a1.x - a0.x, height: a1.y - a0.y, fill: 'none', stroke: '#fff', 'stroke-width': 1, 'stroke-dasharray': '1 3' });
+    var out = [];
+    ROUTES.forEach(function (r, i) {
+      var A = sp[r[0]].slice(0, 2), B = sp[r[1]].slice(0, 2), path = DS.navRoute(L, A, B, obs);
+      if (!path || !path.length) { out.push({ from: r[0], to: r[1], ok: false, sec: null }); return; }
+      var pts = [A].concat(path), len = 0, hit = null, best = 0, mid = null;
+      for (var j = 1; j < pts.length; j++) {
+        var d = Math.hypot(pts[j][0] - pts[j - 1][0], pts[j][1] - pts[j - 1][1]); len += d;
+        if (d > best) { best = d; mid = [(pts[j][0] + pts[j - 1][0]) / 2, (pts[j][1] + pts[j - 1][1]) / 2]; }
+        feet.forEach(function (f) { if (!hit && DS.segHitsRect(pts[j - 1], pts[j], f[1])) hit = f[0]; });
+      }
+      var sec = len / (36 * (L.walkK || 2)), col = COLORS[i % COLORS.length], off = (i % 5 - 2) * 0.6;
+      mk('polyline', { points: pts.map(function (q) { var c = C(q[0] + off, q[1] + off); return c.x + ',' + c.y; }).join(' '), fill: 'none', stroke: '#111', 'stroke-width': 4, 'stroke-linejoin': 'round', opacity: 0.55 });
+      mk('polyline', { points: pts.map(function (q) { var c = C(q[0] + off, q[1] + off); return c.x + ',' + c.y; }).join(' '), fill: 'none', stroke: col, 'stroke-width': 2, 'stroke-linejoin': 'round' });
+      var e0 = C(B[0], B[1]); mk('circle', { cx: e0.x, cy: e0.y, r: 2.5, fill: col, stroke: '#111', 'stroke-width': 1 });
+      var m = C(mid[0] + off * 4, mid[1] + off * 4); mk('rect', { x: m.x - 7, y: m.y - 7, width: 14, height: 14, fill: col, stroke: '#111', 'stroke-width': 1 });
+      var tx = mk('text', { x: m.x, y: m.y + 4, 'text-anchor': 'middle', 'font-size': 10, 'font-weight': 700, 'font-family': 'Space Mono, monospace', fill: '#111' }); tx.textContent = String(i + 1);
+      var aisle = i < 3 ? pts.some(function (q) { return q[0] >= 188 && q[0] <= 210 && q[1] >= 150 && q[1] <= 270; }) : null;
+      out.push({ n: i + 1, from: r[0], to: r[1], sec: +sec.toFixed(2), lim: r[2], ok: !hit && sec <= r[2] && aisle !== false, hit: hit, aisle: aisle, len: Math.round(len) });
+      var li = document.createElement('li'); li.className = (!hit && sec <= r[2] && aisle !== false) ? '' : 'bad';
+      li.innerHTML = '<i style="background:' + col + '">' + (i + 1) + '</i>' + r[0] + '→' + r[1] + ' ' + sec.toFixed(2) + 's（≤' + r[2] + '）' + (aisle ? ' 右側走道' : '') + (hit ? ' 穿過 ' + hit : '');
+      lg.appendChild(li);
+    });
+    host.appendChild(svg);
+    return out;
+  };
+  $('#routes').onclick = function () { var on = !this.classList.contains('on'); this.classList.toggle('on', on); var st = H.stage; if (!st) return; st.seek(null); st.clearClash(0); (on ? st.camera('full', { ms: 0, panelMin: 0 }) : Promise.resolve()).then(function () { H.routes(on); }); };
+  $('#cam').onclick = function () { var st = H.stage; if (!st) return; cam = cam === 'strip' ? 'full' : 'strip'; this.textContent = '鏡頭：' + cam; st.camera(cam, { ms: 300, panelMin: 0 }); };
+})();
+</script>
+</body>
+</html>
