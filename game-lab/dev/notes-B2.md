@@ -6,8 +6,8 @@
 ## 階段
 - **第 1 階段（完成）**：beat runner（§2.5.3）、v4 劇本（§2.5.4＋D §2）、序章面板（§2.5.7）、外殼（§2.5.2）、刪 v3 墊片與試做版新增、
   序章藏 r1、走位（D §3）、lint-copy 26 句原句、check-content、`tests/e2e-prologue.mjs`（§5.4）全綠、段 4 截圖。
-- **第 2 階段（進行中）**：教學六手（§2.5.5：`C.tutorial.steps／learned／ui`、`tutorial.js`、replayDuel／fakeRun、`test/tutorial.test.mjs`）、
-  `tests/e2e.spec.mjs` 改 v4（import e2e-lib）、規則卡四尺寸不捲動（實測 390×664 規則卡 .pane 高 805 px > 可視高 664：三角圖＋六行＋頁尾太高，要改緊湊版；第 6 行 54 字已會自動換行）。
+- **第 2 階段（完成）**：合併 B1-M1；教學六手（§2.5.5：`C.tutorial.steps／learned／ui`、`tutorial.js`、replayDuel／fakeRun、`test/tutorial.test.mjs`）、
+  `tests/e2e.spec.mjs` 改 v4（import e2e-lib；#4 #9 #17 #19 #20 一起列入）四尺寸綠、規則卡四尺寸不捲動、e2e-prologue 照樣綠、段 4 截圖重拍＋教學停格。
 
 ## 進度（第 2 階段）
 - [x] 合併 `v4/B1-M1`（92a352007）
@@ -15,7 +15,9 @@
 - [x] ui.js：重看教學 fakeRun（禮物＋特價箱 c／o／h 或 `save.lastBargain`）、規則卡四尺寸不捲動（03f9830d5）
 - [x] check-content 教學步驟檢查（`tutorialProblems`）、lint-copy 教學字（d95b05599）
 - [x] `tests/e2e.spec.mjs` v4（import e2e-lib；#4 #9 #17 #19 #20 一起）——390×664 逐段跑過（9207b37b1、486c8e443）
-- [ ] e2e.spec 四尺寸整輪（跑中）、e2e-prologue 重跑、段 4 截圖重拍
+- [x] e2e.spec 四尺寸整輪 102／103（唯一一個是 #18 430×932 王牌長按，見下「請求」B1／C；測試改成以盤面送出 info 為準，d242a2574）
+- [x] 教學結算步驟的浮框被 hold 停在進場動畫開頭（看不到結果）→ tutorial.js `finishCallout`；e2e #19 加檢查（6c471fd77）
+- [x] 改過的情境（#18 #19 #20 #35 #36 #29）在 375×548／430×932／360x640 重跑、e2e-prologue 52／52、段 4 截圖＋教學停格重拍
 
 ## 第 2 階段做了什麼
 - **教學六手**（§2.5.5、DECISIONS §5 順序）：18 步（`m1–m5` 比星數＋說明提示＋點破「名盤」、`k1–k3` 冷剋經、`c1–c2` 經剋硬、`h1–h2` 硬剋冷、`b1–b3` 差 2 星剋不動、`a1–a3` 王牌）。
@@ -32,6 +34,10 @@
 - **check-content** 加 `tutorialProblems(C)`（六手各一個丟、點／丟的步驟形狀、結算步驟在丟之後、L1–L6 各一次照課表、第 1 手前說明提示、點破關鍵字一次、依王牌分句三張都有）。
 - **e2e.spec v4**：見檔頭情境表。v4 版的共用步驟（`seedRun4`、`prologueToDuel4`、`answerBargain`、`walkTutorial4`、`tapHot`、`resolveHands`）先放在 e2e.spec 裡（e2e-lib 沒人擁有、裡面還是 v3）。
   經濟介面 `LAB_ECON`：預設 game-lab/econ.js 在就用真的、不在就用 `tests/econ-stub.js`（`answerBargain` 兩種都會挑；用替身時 #3 點擊數照真的面板算 4 下）。
+
+- **結算浮框被 hold 停住**（截圖抓到的）：duel.js 在 560 ms 叫 `showCallout`（380 ms 放大進場）之後馬上同步呼叫 `tut.onResolved`，教學在那裡 `hold(true)`，
+  `pauseAnims` 把進場動畫停在 scale .3／透明——老闆講「同色就比星數…」時浮框幾乎看不到。tutorial.js 在 hold 之後把 `result` 的動畫 `finish()`（跳到終點）；
+  e2e #19 每個結算步驟量浮框（不透明、寬 ≥150、有 l2 數字）。
 
 ## 第 2 階段跟規格不一樣／我自己定的（可逆）
 13. 教學 18 步、每手「點那顆 → 丟！」兩步（v3 是點星鈕兩下＝丟；v4 的 duel.js 只有「丟！」能出手）；第 3、4 手沒有結算後的說明步（小卡掛在「丟」那步，下一手開始前飛），省點擊。
@@ -86,6 +92,18 @@
 11. **P10「▼ 空檔」**只算同一句裡 ▼ 一直亮著的時間（換句那一下不算）。
 12. 六手比聲望（店主待定）不是我的檔，沒碰。FIXLIST 2（拿掉王牌不會被剋）、6（客人名字）沒有派給我，沒做。
 
+## 測試結果（第 2 階段最後一次；LAB_BASE=http://localhost:8782）
+| 指令 | 結果 |
+|---|---|
+| `node game-lab/test/tutorial.test.mjs` | 142776 passed, 0 failed（三王牌 × 特價箱 84 種 × 照做／只點星鈕／點錯／看唱片資訊＝1008 條路線，每條 6 手＝expect、第 6 手 KO、L1–L6） |
+| `LAB_SIZES=390x664,375x548,430x932,360x640 node game-lab/tests/e2e.spec.mjs`（預設模式：版面情境四尺寸、流程第一個尺寸；經濟介面替身） | 102／103；唯一 FAIL #18 430×932 王牌長按（放開手指的 click 關掉唱片資訊）→ 測試改以盤面送出 info 為準後重跑 PASS，另記一條「放開手指就被關掉」 |
+| 改過之後重跑 `LAB_ONLY=18,19,20,35,36,29`（375×548、430×932、360×640；390×664 另跑 19／20） | 23／23 PASS＋390×664 4／4 PASS |
+| `node game-lab/test/shop.test.mjs`／`hit.test.mjs`、`tools/check-shops.mjs`／`check-covers.mjs` | 1058／330 passed, 0 failed；OK／OK |
+| `node game-lab/tests/e2e-prologue.mjs`（C＋A＋B） | 52 passed, 0 failed |
+| `node game-lab/tools/lint-copy.mjs` | 通過；句子 350（原句 45、店主 40、新 265）；v4 劇本原句 26／26、順序一致 |
+| `node game-lab/tools/check-content.mjs` | 通過（含新的 tutorialProblems） |
+| `node game-lab/test/engine.test.mjs --quick` | 沒重跑（B1 的檔；第 1 階段時唯一失敗是 :681 的墊片檢查，請求還開著） |
+
 ## 測試結果（第 1 階段最後一次）
 | 指令 | 結果 |
 |---|---|
@@ -107,12 +125,25 @@
   `-toDuel-settled.png`（選完走到唱盤三人站定）、`-E4-door.png`（他在門口、門開著）、`-E4-pickup.png`（撿起面板，沒有標題）、`-E7-table.png`（老闆在長桌翻）、
   `-E10-guest.png`（第一位客人）、`-night.png`（今晚來客：錢、第一位在店裡、熟客出現）
 - 375×548：`375x548-O17.png`、`375x548-O21-menu.png`（後走道的人頭沒被裁）、`375x548-toDuel-settled.png`、`375x548-O12-recs.png`
+- 第 2 階段（合併 B1-M1 後全部重拍，主控台 0 錯誤）；另加：
+  - 規則卡（學會六張＋重看教學，最長的樣子）：`390x664-rules.png`、`375x548-rules.png`、`430x932-rules.png`、`360x640-rules.png`（腳本 scratchpad `B2/rules-probe.mjs`，`SHOTS=` 才截）
+  - 教學停格（腳本 scratchpad `B2/tut-shots.mjs`）：殿堂 390×664 `390x664-tut-hall-{m1,m2,m5,k1,b1,b3,a1,a3}.png`（說明提示、第 1 手手指、點破『名盤』、冷剋經、第 5 手又是名盤、剋不動、丟王牌、王牌結果）；
+    異端 375×548 `375x548-tut-heresy-{m1,k1,b3,a3}.png`（a3＝「經典剋硬蕊，但 7 星剋不動：比星數。」）
 
 ## 請求
 - **B1（或 C）**：`test/engine.test.mjs:681` `for (const k of ['habits', 'habitLabels']) ok(Object.keys(C[k]).length <= 2, 'v3 shim ' + k + ' only');`
   —— 墊片照規格刪掉了，`Object.keys(undefined)` 丟錯讓 #14 整段算失敗。改成 `ok(!(k in C), 'v3 shim ' + k + ' removed');`（一行，不動契約）。
-- **B1**：`dev/duel-harness.html:117` `[...C.gifts[aceTier], ...C.junk]`——`C.junk` 刪了（spread undefined 會丟錯）。改用特價箱三張，例如
-  `const bp = ['c','o','h'].map(a => C.bargain.pool.find(id => E.topAttr(C.cards[id]) === a));`（跟 §2.5.5 重看教學的 fakeRun 同一個挑法）。
+- ~~**B1**：`dev/duel-harness.html` 的 `C.junk`~~ → B1-M1 已改，不用了。
+- **B1（或 C，cardinfo.js 沒人擁有）**：長按手牌封面 450 ms 開唱片資訊時手指還按著；放開手指補送的 click 落在唱片資訊的遮罩上（資訊面板沒蓋到的地方）就把它關掉。
+  duel.js 的 `S.swallow` 只吞盤面上的 click，吞不到遮罩上的。430×932 的王牌（左下角）每次都這樣（e2e #18 記成「放開手指就被關掉：ace」）。
+  B3 的特價箱格子遇過一樣的事、改成「放開才開」。建議 duel.js 也改成放開才開（或 cardinfo.js 開啟後 400 ms 內不收遮罩的 click）。
+- **B1（建議）**：`hold(true)` 會把盤面所有動畫停在原地；教學在浮框剛出現時 hold，浮框的進場動畫被停在開頭。tutorial.js 已自己把那個動畫 finish 掉；
+  如果 duel.js 的 hold 想對所有呼叫者都安全，可以在 hold 時把 `els.call` 的動畫先 finish。
+- **C**：e2e-lib.mjs 的 `seedRun`／`prologueToDuel`／`walkTutorial` 還是 v3；v4 版在 `tests/e2e.spec.mjs`（`seedRun4`、`prologueToDuel4`、`answerBargain`、`walkTutorial4`、`tapHot`、`resolveHands`），
+  整合時可以搬進 e2e-lib（e2e-taps 要跑今晚來客時也用得到 `seedRun4`）。
+- **C**：e2e.spec 的經濟介面 `LAB_ECON` 預設「econ.js 在就用真的」——整合 B3 後自動換真的；`answerBargain` 已照 B3（9abed73f8）的 `.ec-drawer [data-a=tog]`／`[data-a=take]` 寫，
+  #9／#13 的整晚 autoplay 會在特價區停下來時替人挑；#18 抽屜封面、#43 櫃檯在真的介面下看 `.ec-drawer`。真的介面若有不同的選擇器，改這兩處就好。
+- **C／店主**：FIXLIST 2（拿掉王牌不會被剋）若定案，教學只要改 `C.tutorial.learned.L6` 一行（＋check-content／tutorial.test 的期望字），台詞不用改。
 - **C**：`tests/e2e-lib.mjs`（沒人擁有）`seedRun` 還寫 v3 存檔：`v: 3` → `v: 4`（v3 會被 ui.js 當舊檔丟掉）；`C.junk` 刪掉；非序章的 run 要先
   `E.choose(r, C, E.bargainPolicy(r, C))`（不然今晚來客一進去就先開特價區挑三張）。`r.goodEar` 那行可以刪。
 - **C**：e2e 要用經濟介面替身時，`tests/econ-stub.js` 可以拿去用（page.route 把 econ.js 換成它）；`tests/e2e-prologue.mjs` 一律用替身＋把試聽換成無聲 WAV，整合後照樣跑。
