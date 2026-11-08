@@ -6,7 +6,7 @@
 // 每個尺寸（真點：page.touchscreen.tap；網址帶 strict，走不到就丟錯）：
 //   1  點箱子（舞台上真點 bin:hiphop）→ 玩家照路線走到 stand（1.5 倍速），到了才 dig、才開抽屜；途中沒有抽屜
 //   2  抽屜高 ≤ #app 50%，內容不溢出（scrollHeight ≤ clientHeight），整個在畫面裡
-//   3  那一箱的形狀整個在舞台可見範圍內（hotspots 的 rect ⊂ 鏡頭），而且在抽屜上緣之上（stage.hotRect 沒被抽屜蓋到）
+//   3  那一箱的形狀整個在舞台可見範圍內（hotspots 的 rect ⊂ 鏡頭），而且在抽屜上緣之上（沒被抽屜蓋到）；賣回子面板（#7）、櫃檯（#9）、特價箱（#10）也照查
 //   4  一張大封面翻著看：› ‹、縮圖、左右滑都會換張；點封面＝唱片資訊（關掉回到抽屜）
 //   5  點抽屜外面關掉：抽屜不見、描框清掉、不再 dig、鏡頭回到開之前；人已在箱子前再點同一箱＝不走路直接開、不會被放開後的 click 關掉
 //   6  買（錢夠、包包沒滿）→ 錢減價格、包包 +1、那張從抽屜消失、吐司「進包包」
@@ -73,6 +73,18 @@ async function measure(page) {
     return { top: r.top, bottom: r.bottom, h: r.height, appH: ar.height, appTop: ar.top, scrollH: el.scrollHeight, clientH: el.clientHeight, vw: innerWidth, vh: innerHeight, left: r.left, right: r.right, btns };
   });
 }
+// 那一箱（或櫃檯）整個在舞台的鏡頭裡、而且在抽屜上緣之上（沒被抽屜蓋到）；等鏡頭推完
+async function shown(page, hotId) {
+  await sleep(450);
+  return page.evaluate(id => {
+    const st = window.H.stage, v = st.view(), hot = st.hotspots().find(x => x.id === id), el = document.querySelector('.ec-drawer');
+    if (!hot || !el) return { ok: false, why: !hot ? '沒有熱點' : '沒有抽屜' };
+    const dr = el.getBoundingClientRect(), full = st.shop.rectOf(hot.rect), host = st.host.getBoundingClientRect();
+    const inView = hot.rect[1] >= v.y && hot.rect[1] + hot.rect[3] <= v.y + v.h;
+    const ok = inView && full.bottom <= dr.top + 0.5 && full.top >= host.top - 0.5;
+    return { ok, why: `${id} y ${hot.rect[1]}–${hot.rect[1] + hot.rect[3]} 在鏡頭 ${v.y}–${v.y + v.h}：${inView}；CSS 下緣 ${Math.round(full.bottom)} ≤ 抽屜上緣 ${Math.round(dr.top)}：${full.bottom <= dr.top + 0.5}` };
+  }, hotId);
+}
 function panelOk(m, name) {
   if (!m) return [false, name + '：沒有抽屜'];
   const bad = [];
@@ -116,14 +128,9 @@ async function runSize(browser, w, h) {
     });
     await T(2, async () => { const m = await measure(page); panels.push(['箱子', m]); const [ok, s] = panelOk(m, '箱子抽屜'); record(2, size, ok, s); });
     await T(3, async () => {
-      const r = await page.evaluate(() => {
-        const st = window.H.stage, v = st.view(), hot = st.hotspots().find(x => x.id === 'bin:hiphop');
-        const dr = document.querySelector('.ec-drawer').getBoundingClientRect(), full = st.shop.rectOf(hot.rect), host = st.host.getBoundingClientRect();
-        return { rect: hot.rect, view: [v.y, v.h], cssTop: full.top, cssBottom: full.bottom, drawerTop: dr.top, hostTop: host.top, hostBottom: host.bottom, hi: (st.shop.state.hi || []).map(g => g.hots.map(h => h.id)) };
-      });
-      const inView = r.rect[1] >= r.view[0] && r.rect[1] + r.rect[3] <= r.view[0] + r.view[1];
-      const ok = inView && r.cssBottom <= r.drawerTop + 0.5 && r.cssTop >= r.hostTop - 0.5 && JSON.stringify(r.hi) === '[["bin:hiphop"]]';
-      record(3, size, ok, `箱子 y ${r.rect[1]}–${r.rect[1] + r.rect[3]} 在鏡頭 ${r.view[0]}–${r.view[0] + r.view[1]}；CSS 下緣 ${Math.round(r.cssBottom)} ≤ 抽屜上緣 ${Math.round(r.drawerTop)}；描框 ${JSON.stringify(r.hi)}`);
+      const r = await shown(page, 'bin:hiphop');
+      const hi = await page.evaluate(() => (window.H.stage.shop.state.hi || []).map(g => g.hots.map(h => h.id)));
+      record(3, size, r.ok && JSON.stringify(hi) === '[["bin:hiphop"]]', `${r.why}；描框 ${JSON.stringify(hi)}`);
     });
     // ---------------- 4：翻、唱片資訊 ----------------
     await T(4, async () => {
@@ -191,6 +198,7 @@ async function runSize(browser, w, h) {
       await tapSel(page, '.ec-drawer [data-a=buy]'); await sleep(300);
       const ds = await dbg(page), msg = await page.locator('.ec-drawer .ec-msg').innerText();
       panels.push(['賣回（唱片）', await measure(page)]);
+      const vis7 = await shown(page, 'bin:hiphop');
       const sellDis0 = await page.locator('.ec-drawer [data-a=sell]').isDisabled();
       const sellId = r0.bag[2];
       const sv = await page.evaluate(id => window.DipLabEngine.sellValue(window.DipLabContent, window.DipLabContent.cards[id]), sellId);
@@ -199,9 +207,9 @@ async function runSize(browser, w, h) {
       const pv = await page.evaluate(id => window.DipLabEngine.priceOf(window.DipLabContent, id), sellId);
       await tapSel(page, '.ec-drawer [data-a=sell]'); await sleep(350);
       const r1 = await run(page), d1 = await dbg(page), toasts = await page.evaluate(() => window.H.toasts.slice());
-      const ok = ds.sub && ds.sub.kind === 'card' && ds.sub.need === 1 && /包包滿了/.test(msg) && sellDis0 && !sellDis1 && sv === Math.floor(pv / 2) &&
+      const ok = vis7.ok && ds.sub && ds.sub.kind === 'card' && ds.sub.need === 1 && /包包滿了/.test(msg) && sellDis0 && !sellDis1 && sv === Math.floor(pv / 2) &&
         r1.money === r0.money + sv - price && r1.bag.length === 8 && !r1.bag.includes(sellId) && r1.bag.includes(id) && !d1.ids.includes(id) && !d1.sub && /賣掉/.test(toasts.slice(-1)[0] || '');
-      record(7, size, ok, `子面板「${msg}」；沒選時鈕停用 ${sellDis0}、選了 ${!sellDis1}；賣 ${sellId}（${pv} 的半價 ${sv}）；$${r0.money} → $${r1.money}（＋${sv}－${price}）；包包 ${r1.bag.length}；吐司「${toasts.slice(-1)[0]}」`);
+      record(7, size, ok, `子面板「${msg}」（箱子沒被蓋到 ${vis7.ok}${vis7.ok ? '' : '：' + vis7.why}）；沒選時鈕停用 ${sellDis0}、選了 ${!sellDis1}；賣 ${sellId}（${pv} 的半價 ${sv}）；$${r0.money} → $${r1.money}（＋${sv}－${price}）；包包 ${r1.bag.length}；吐司「${toasts.slice(-1)[0]}」`);
     });
     // ---------------- 8：錢不夠 ----------------
     await T(8, async () => {
@@ -221,6 +229,7 @@ async function runSize(browser, w, h) {
       await page.evaluate(() => { window.H.open('relic'); }); await sleep(150); await skipWalk(page); await waitOpen(page);
       const pos = await page.evaluate(() => { const a = window.H.stage.pos('p'), s = window.H.stage.spot('pay'); return [Math.round(a.x), Math.round(a.y), s]; });
       panels.push(['櫃檯', await measure(page)]);
+      const vis9 = await shown(page, 'counter');
       const r0 = await run(page), rid = r0.shop.relics[0];
       const price = await page.evaluate(id => window.DipLabEngine.relicPrice(window.DipLabContent, id), rid);
       await tapSel(page, `.ec-drawer [data-a=rbuy][data-r="${rid}"]`); await sleep(300);
@@ -242,7 +251,7 @@ async function runSize(browser, w, h) {
         s2 = `滿 3 件「${msg}」→ 賣 ${sell}（+${sv}）買 ${rid2}（${price2}）：$${r1.money} → $${r2.money}、配件 ${r2.relics.join(',')}`;
       }
       const atPay = Math.abs(pos[0] - pos[2][0]) <= 1 && Math.abs(pos[1] - pos[2][1]) <= 1;
-      record(9, size, ok1 && ok2 && atPay, `走到櫃檯前 ${atPay}；買 ${rid}（${price}）：$${r0.money} → $${r1.money}、配件 ${r1.relics.length}；${s2}`);
+      record(9, size, ok1 && ok2 && atPay && vis9.ok, `走到櫃檯前 ${atPay}；櫃檯沒被蓋到 ${vis9.ok}${vis9.ok ? '' : '（' + vis9.why + '）'}；買 ${rid}（${price}）：$${r0.money} → $${r1.money}、配件 ${r1.relics.length}；${s2}`);
       await page.evaluate(() => window.DipLabEcon.close()); await sleep(300);
     });
     // ---------------- 10：特價箱開局模式（真點特價箱） ----------------
@@ -251,6 +260,7 @@ async function runSize(browser, w, h) {
       await tapHot(page, 'bin:sale');
       await sleep(150); await skipWalk(page); await waitOpen(page);
       panels.push(['特價（挑三張）', await measure(page)]);
+      const vis10 = await shown(page, 'bin:sale');
       const d0 = await dbg(page), r0 = await run(page);
       const take = page.locator('.ec-drawer [data-a=take]');
       const ids = d0.ids;
@@ -269,9 +279,9 @@ async function runSize(browser, w, h) {
       const want = [ids[2], ids[4], ids[5]];
       await tapSel(page, '.ec-drawer [data-a=take]'); await sleep(400);
       const r1 = await run(page), closed = !(await dbg(page)).open;
-      const ok = ids.length === 6 && !priceShown && dis.join() === 'true,true,true,false' && disOff && JSON.stringify(sel4) === JSON.stringify(want) && still && closed && r1.bag.length === r0.bag.length + 3 &&
+      const ok = vis10.ok && ids.length === 6 && !priceShown && dis.join() === 'true,true,true,false' && disOff && JSON.stringify(sel4) === JSON.stringify(want) && still && closed && r1.bag.length === r0.bag.length + 3 &&
         want.every(id => r1.bag.includes(id)) && r1.shop.bargainPicked && r1.shop.bargain.length === 3;
-      record(10, size, ok, `${ids.length} 張、沒有價格 ${!priceShown}；挑 0/1/2/3 張時鈕停用 ${dis.join('/')}；取消一張又停用 ${disOff}；第 4 張換掉最早那張 ${JSON.stringify(sel4) === JSON.stringify(want)}；點外面不關 ${still}；收下 → 包包 ${r0.bag.length} → ${r1.bag.length}、特價剩 ${r1.shop.bargain.length}`);
+      record(10, size, ok, `特價箱沒被蓋到 ${vis10.ok}${vis10.ok ? '' : '（' + vis10.why + '）'}；${ids.length} 張、沒有價格 ${!priceShown}；挑 0/1/2/3 張時鈕停用 ${dis.join('/')}；取消一張又停用 ${disOff}；第 4 張換掉最早那張 ${JSON.stringify(sel4) === JSON.stringify(want)}；點外面不關 ${still}；收下 → 包包 ${r0.bag.length} → ${r1.bag.length}、特價剩 ${r1.shop.bargain.length}`);
     });
     // ---------------- 11：特價箱之後模式 ----------------
     await T(11, async () => {

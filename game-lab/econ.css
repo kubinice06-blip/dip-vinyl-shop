@@ -86,6 +86,7 @@
 .ec-tile.sel .ec-tcv{outline:3px solid var(--gold,#b8860b);outline-offset:1px;}
 .ec-chk{position:absolute;right:0;top:0;z-index:2;width:18px;height:18px;font:700 13px/18px var(--mono,'Space Mono',monospace);text-align:center;color:#fff;background:var(--gold,#b8860b);}
 .ec-sv{font:700 11px var(--mono,'Space Mono',monospace);color:var(--win,#2e7d52);white-space:nowrap;}
+.ec-spick.poor{opacity:.35;}
 .ec-foot{flex:none;padding-top:8px;}
 .ec-foot.two{display:flex;gap:8px;}
 .ec-foot.two .lb-btn{flex:1;min-width:0;}
