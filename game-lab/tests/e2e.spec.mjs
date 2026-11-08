@@ -498,13 +498,13 @@ async function run() {
         if (want(13)) {
           await page.evaluate(() => window.__lab.stop());
           await jsClick(page, '[data-a=again]');
-          const ace = await page.waitForSelector('.lb-sheet.acepick [data-a=ok]', { timeout: 20000 }).then(() => true, () => false);
+          const ace = await advanceUntil(page, () => !!document.querySelector('.lb-sheet.acepick [data-a=ok]'), null, 20000);
           await sleep(450);
           await jsClick(page, '.lb-sheet.acepick [data-a=ok]');
           let n2 = false; const t1 = Date.now();
           while (!n2 && Date.now() - t1 < 20000) { n2 = (await screen(page)) === 'night'; if (!n2) { await answerBargain(page); await sleep(200); } }
           await sleep(500);
-          const rr = await page.evaluate(() => ({ prologue: window.__lab.run.prologue, nightNo: window.__lab.run.nightNo, relics: window.__lab.run.relics, bag: window.__lab.run.bag.length, picked: window.__lab.run.shop.bargainPicked, trail: window.__lab.trail().slice(-4) }));
+          const rr = await page.evaluate(() => !window.__lab.run ? { noRun: true, s: window.__lab.screen(), beat: window.__lab.beat, trail: window.__lab.trail().slice(-5), sheet: (document.querySelector('#panel > .lb-sheet') || {}).className || null, calls: (window.__econCalls || []).map(c => c.m) } : ({ prologue: window.__lab.run.prologue, nightNo: window.__lab.run.nightNo, relics: window.__lab.run.relics, bag: window.__lab.run.bag.length, picked: window.__lab.run.shop.bargainPicked, trail: window.__lab.trail().slice(-4) }));
           const ms = Date.now() - t1;
           record(13, size, ace && n2 && rr.prologue == null && rr.nightNo === 2 && rr.bag === 7 && rr.picked && JSON.stringify(rr.relics) === JSON.stringify(r.relics), `再來一夜 → acePick ${ace} → night ${n2} (${ms} ms); ${JSON.stringify(rr)}; relics last night ${JSON.stringify(r.relics)}`);
         }
