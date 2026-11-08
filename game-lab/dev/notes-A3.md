@@ -6,7 +6,9 @@
 - [x] M1：deck-lists.json v4、bake-cards.mjs（跳 `_` 鍵、_region、bins.js）、pitches.json、cards.js＋bins.js（0 problems）、substitutions-v4.json、index.html 載入 bins.js → 分支 `v4/A3-M1`
 - [x] 第二段開工：合併 `v4/A2-M1`（2026-11-08，merge commit，無衝突）
 - [x] shop.js §2.4＋§2.3.7＋test/hit.test.mjs（commit 177c14e3f；hit.test 330 passed、shop.test 919、check-shops OK）
-- [ ] 下一步：check-covers → e2e-lib（複製）→ e2e-taps → bins-v4.md → 截圖（index.html 的 bins.js 已在 M1 做完）
+- [x] tools/check-covers.mjs（commit 41340b56a；OK，看得到的封面 60 張、12 箱）
+- [x] tests/e2e-lib.mjs（從 e2e.spec.mjs:59-234 複製）、tests/e2e-taps.mjs（四尺寸 28/28，commit 841965e3d）
+- [ ] 下一步：dev/bins-v4.md → 截圖（hitmap ×2、press、label-hiphop、covers）→ notes 收尾（index.html 的 bins.js 已在 M1 做完）
 
 ## 進度紀錄
 （開工 2026-11-08）
