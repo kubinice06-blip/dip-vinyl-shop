@@ -1813,7 +1813,7 @@
     var r = save.run, id = r.order[i], en = C.enemies[id]; if (!en) return;
     var cur = i === r.idx, done = i < r.idx, ln = (C.lines[id] && C.lines[id].line) || en.line || '';
     var html = '<div class="hd"><h3>' + esc(r.times[i] || '') + '・' + (done ? '打過了' : cur ? '下一位' : '還沒輪到') + '</h3><button type="button" class="x" data-a="close" aria-label="關閉">✕</button></div>' +
-      '<div class="pv-who"><div class="av">' + headHTML(enemySpr(en), 30) + '</div><div><b class="key">' + esc(en.name) + '</b>' + (en.title ? '<small>' + esc(en.title) + '</small>' : '') +
+      '<div class="pv-who"><div class="av">' + headHTML(enemySpr(en), 30) + '</div><div><b class="key">' + esc(en.name) + '</b>' +   // FIXLIST 6：只有名字（沒有副標、沒有誠實度）
       (en.elite ? '<span class="gtag">菁英</span>' : '') + (en.boss ? '<span class="gtag">打烊前</span>' : '') + '<div class="bl">聲望 ' + enemyHp(id) + '</div></div></div>' +
       (ln ? '<div class="lb-habit"><span class="tx">' + esc([].concat(ln)[0]) + '</span></div>' : '') +
       '<div class="two">' + (cur ? '<button type="button" class="lb-btn pri big key" data-a="go">就他了</button>' : '') + '<button type="button" class="lb-btn big key" data-a="close">' + (cur ? '再看看' : '關閉') + '</button></div>';

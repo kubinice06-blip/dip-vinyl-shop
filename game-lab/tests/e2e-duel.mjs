@@ -9,13 +9,13 @@
 //          LAB_SHOTS＝目錄 → 另存段 3「對戰畫面」截圖（deviceScaleFactor 2）：出牌前、命中／剋不動／唬人（揭曉浮框出現後停格）、最後一手 KO、（另加）王牌擋下。
 //
 // 每個尺寸：
-//   1 版面：手牌三張＋王牌＋星鈕＋丟！下緣 ≤ innerHeight、盤面與文件都不捲動、星鈕本體 ≥28×44、其他鈕 ≥44×44；誠實度名牌看不到（D §5）
+//   1 版面：手牌三張＋王牌＋星鈕＋丟！下緣 ≤ innerHeight、盤面與文件都不捲動、星鈕本體 ≥28×44、其他鈕 ≥44×44；名牌只有新名字（沒有副標、沒有誠實度，FIXLIST 6）
 //   2 點封面＝選這張、屬性＝engine.topAttr；3 點別的星＝換；4 再點已選的星鈕（與已選的封面）不出手
 //   5 丟（剋中）：280 ms 前 slot-e 是「蓋著」、之後才翻成他的牌；他還有 N 張丟出就少一；浮框三行＝_fmt.clashText(事件)；第 n／6 手加一；提示句換字
-//   6 剋不動（gap）／7 唬人（被剋，「他唬你！」）／8 平手（舞台 sfx('chime',{attr:null})、唱盤空）／9 王牌擋下（「王牌不會被剋」）：浮框＝clashText
+//   6 剋不動（gap）／7 唬人（被剋，「他唬你！」）／8 平手（舞台 sfx('chime',{attr:null})、唱盤空）／9 王牌被 ≤5 星剋＝剋不動（gap；FIXLIST 2 沒有「不會被剋」）＋tip_ace：浮框＝clashText
 //  10 __lab.force：counter 之後 1.6 s clashState().deck.by==='p'；tie 時 deck===null
 //  11 長按手牌封面 450 ms＝唱片資訊（不選牌）
-//  12 六手比聲望：最後一手他贏、你靠聲望贏整場 → 大章 roundsOut／roundsScore、勝利曲只叫一次而且是你最後丟的那張；tip_rounds；
+//  12 六手比聲望條剩幾成（FIXLIST 3）：最後一手他贏、你靠聲望贏整場 → 大章 roundsOut／roundsScore（%＝E.pctPair）、勝利曲只叫一次而且是你最後丟的那張；tip_rounds；
 //     每手的提示句：有字、不寫「經典／冷門／硬蕊」、跟上一手不同、＝C.hints 那句
 //  13 最後一手 KO：你 KO 他 → 「品味勝出」、勝利曲＝你那張；他 KO 你 → 「聲望歸零」、勝利曲＝他那張
 //  14 autoplay('thoughtful') 打完一場（走正常點擊流程）
@@ -62,7 +62,7 @@ function pageTools() {
             : want === 'blocked' ? plain && !bluff && r.blocked === 'gap' && r.by === 'p'
             : want === 'bluff' ? plain && a === E.BEATS[hintA] && pa === E.COUNTER_OF[hintA] && r.kind === 'countered'
             : want === 'tie' ? plain && !bluff && r.kind === 'tie'
-            : want === 'ace' ? act.ace && !isAce && r.blocked === 'ace'
+            : want === 'ace' ? act.ace && !isAce && a === E.BEATS[pa] && r.blocked === 'gap' && r.by === 'e'
             : want === 'kill' ? plain && !bluff && r.kind === 'counter' && r.toE >= v.eHp
             : want === 'any' ? plain
             : false;
@@ -214,23 +214,24 @@ async function synthetic(browser) {
       const bb = F.clashText(ev({ pAttr: 'h', eAttr: 'c', kind: 'mirrorWin', toE: 2, blocked: 'gap', by: 'e', bluff: true, hint: { attr: 'o', line: 'o2' } }), T, C.hints);
       out.bb = [bb.l1, bb.l2, bb.l3];
       out.him = line(F.clashText(ev({ pAttr: 'c', eAttr: 'o', kind: 'mirrorWin', toE: 2, blocked: 'gap', by: 'e' }), T, C.hints));
-      out.aceYou = line(F.clashText(ev({ pAttr: 'c', eAttr: 'o', kind: 'mirrorWin', toE: 3, blocked: 'ace', by: 'e', ace: true }), T, C.hints));
-      out.aceHim = line(F.clashText(ev({ pAttr: 'o', eAttr: 'c', kind: 'mirrorLose', toP: 3, blocked: 'ace', by: 'p', eAce: true }), T, C.hints));
+      // 王牌沒有「不會被剋」（FIXLIST 2）：被 ≤5 星剋＝差 2 星剋不動（gap）
+      out.aceGap = line(F.clashText(ev({ pAttr: 'h', eAttr: 'c', kind: 'mirrorWin', toE: 5, blocked: 'gap', by: 'e', ace: true }), T, C.hints));
+      out.aceText = Object.values(C.duelText || {}).some(t => /不會被剋/.test(t)) || /不會被剋/.test(F.text(null)('aceYou') + F.text(null)('aceHim'));
       out.aceCounter = line(F.clashText(ev({ pAttr: 'o', eAttr: 'c', kind: 'counter', toE: 7, by: 'p', ace: true }), T, C.hints));
       out.mirror = line(F.clashText(ev({ pAttr: 'c', eAttr: 'c', kind: 'mirrorWin', toE: 1 }), T, C.hints));
       out.tie = line(F.clashText(ev({ pAttr: 'c', eAttr: 'c', kind: 'tie' }), T, C.hints));
       out.countered = line(F.clashText(ev({ pAttr: 'c', eAttr: 'o', kind: 'countered', toP: 5, by: 'e' }), T, C.hints));
-      out.rs = [T('roundsOut'), T('roundsScore', { p: 9, e: 7, who: '你' })];
+      out.rs = [T('roundsOut'), T('roundsScore', { p: '90', e: '70', who: '你' }), T('roundsEven', { p: '50', e: '50' })];
       return out;
     });
     const want = {
       d1: '冷門剋經典，命中！他 −4', d2: '冷門剋經典，但他高你 2 星以上，剋不動。比星數，你 −3', d3: '他唬你！『紀念版』是經典，他出的是硬蕊。你 −4',
       nkB: '他唬你！提示是經典，他出的是硬蕊。', nkH: '提示是冷門，他照實出。', hon: '『白版』是冷門，他照實出。',
       bb: ['他唬你！『白版』是冷門，他出的是經典。', '他 −2', '經典剋硬蕊，但你高他 2 星以上，他剋不動。比星數。'],
-      him: '冷門剋經典，但你高他 2 星以上，他剋不動。比星數，他 −2', aceYou: '冷門剋經典，但王牌不會被剋。比星數，他 −3',
-      aceHim: '冷門剋經典，但他的王牌不會被剋。比星數，你 −3', aceCounter: '王牌冷門剋經典，命中！他 −7',
+      him: '冷門剋經典，但你高他 2 星以上，他剋不動。比星數，他 −2', aceGap: '經典剋王牌硬蕊，但你高他 2 星以上，他剋不動。比星數，他 −5', aceText: false,
+      aceCounter: '王牌冷門剋經典，命中！他 −7',
       mirror: '同樣是經典，比星數，他 −1', tie: '同樣是經典，比星數，一樣大，不扣。', countered: '冷門剋經典，被剋了。你 −5',
-      rs: ['六手打完，比聲望', '你 9 比 他 7：你贏'],
+      rs: ['六手打完，比聲望條', '你剩 90%，他剩 70%：你贏', '你剩 50%，他剩 50%：一樣，算你贏'],
     };
     for (const k of Object.keys(want)) {
       const ok = JSON.stringify(R[k]) === JSON.stringify(want[k]);
@@ -259,7 +260,10 @@ async function runSize(browser, w, h) {
       const covers = [...document.querySelectorAll('.dl .tile .cvw')].map(c => ({ tut: c.dataset.tut, r: rect(c) }));
       const hon = D.el('e-honesty');
       return { vh: innerHeight, vw: innerWidth, scroll: [root.scrollHeight, root.clientHeight], doc: [document.documentElement.scrollHeight, document.documentElement.scrollWidth],
-        tiles, chips, covers, thr: rect(D.el('throw')), honExists: !!hon, honShown: !!(hon && hon.offsetWidth > 0 && hon.offsetHeight > 0 && getComputedStyle(hon).visibility !== 'hidden'),
+        tiles, chips, covers, thr: rect(D.el('throw')), honExists: !!hon,
+        nm: ((document.querySelector('.dl .dl-e .nm') || {}).textContent || '').trim(),
+        sub: (document.querySelector('.dl .dl-e .nmrow .sub') || {}).textContent || '',
+        want: ((window.DipLabContent.enemies || {})[(window.__lab.rawDuel() || { e: {} }).e.id] || {}).name || '',
         sleeve: (D.el('e-sleeve') || {}).textContent || '', slotE: (D.el('slot-e') || {}).textContent || '', cls: root.className };
     });
     {
@@ -271,7 +275,7 @@ async function runSize(browser, w, h) {
       const ok = hand.length === 4 && hand.some(t => t.tut === 'hand-ace') && bottom <= L.vh + 0.5 && L.scroll[0] <= L.scroll[1] + 1 && L.doc[0] <= L.vh + 1 && L.doc[1] <= L.vw + 1
         && minChip[0] >= 28 && minChip[1] >= 44 && L.thr.w >= 44 && L.thr.h >= 44 && minCover[0] >= 44 && minCover[1] >= 44 && inX;
       record(1, size, ok, `手牌 ${hand.map(t => t.tut).join(',')}；下緣 ${Math.round(bottom)}/${L.vh}；盤面 ${L.scroll.join('/')}；文件 ${L.doc.join('×')}；星鈕最小 ${minChip.map(Math.round).join('×')}；封面最小 ${minCover.map(Math.round).join('×')}；丟！${Math.round(L.thr.w)}×${Math.round(L.thr.h)}（${L.cls}）`);
-      record('1b', size, L.honExists && !L.honShown, `誠實度名牌：DOM ${L.honExists ? '有' : '沒有'}、畫面上${L.honShown ? '看得到（D §5 要拿掉）' : '看不到（D §5：店主 06:05 拿掉；§5.5「名牌顯示誠實度」照 D 改成看不到）'}`);
+      record('1b', size, !L.honExists && !L.sub && L.nm === L.want && L.want, `名牌「${L.nm}」（要＝content 的新名字「${L.want}」）；副標 ${L.sub ? '「' + L.sub + '」' : '沒有'}；誠實度 ${L.honExists ? '還在 DOM' : '沒有'}（FIXLIST 6）`);
       record('1c', size, /蓋著/.test(L.sleeve), `他的封套：「${L.sleeve.trim()}」；牌桌他那格：「${L.slotE.trim()}」`);
     }
     // ---- 2 點封面＝選這張＋topAttr
@@ -335,7 +339,7 @@ async function runSize(browser, w, h) {
       [6, 'blocked', u => u.blocked === 'gap' && u.by === 'p' && /剋不動。比星數，$/.test(u.ui.l1) && /照實出/.test(u.ui.l3), `${size}-3-blocked.png`],
       [7, 'bluff', u => u.bluff && u.kind === 'countered' && /^他唬你！『.+』是.{2}，他出的是.{2}。$/.test(u.ui.l1) && /^你 −\d$/.test(u.ui.l2) && u.ui.l3 === '' && u.tip, `${size}-4-bluff.png`],
       [8, 'tie', u => u.kind === 'tie' && u.ui.l2 === '一樣大，不扣。' && u.chime0 && u.deck === null, null],
-      [9, 'ace', u => u.blocked === 'ace' && /王牌不會被剋。比星數[，。]$/.test(u.bluff ? u.ui.l3 : u.ui.l1), `${size}-6-ace.png`],   // 他唬人時規則句在 l3
+      [9, 'ace', u => u.blocked === 'gap' && u.by === 'e' && /剋王牌.{2}，但你高他 2 星以上，他剋不動。比星數[，。]$/.test(u.bluff ? u.ui.l3 : u.ui.l1) && !/不會被剋/.test(u.ui.l1 + u.ui.l3) && u.tipAce, `${size}-6-ace.png`],   // 他唬人時規則句在 l3
     ]) {
       await waitChoose(page);
       await page.evaluate(() => { window.__h.sfx.length = 0; window.DipLabDuel.select(null); });
@@ -348,9 +352,9 @@ async function runSize(browser, w, h) {
       await sleep(400); if (shotName) await shot(page, shotName);
       await sleep(1200);   // ≈1.6 s：唱盤上的狀態
       const st = await page.evaluate(() => ({ deck: window.__lab.stage.clashState().deck, sfx: window.__h.sfx.slice(), log: window.__h.log.slice() }));
-      const u = Object.assign({}, ex, { ui, deck: st.deck, chime0: st.sfx.some(([k, o]) => k === 'chime' && o && o.attr === null), tip: st.log.some(s => /^hint tip_bluff/.test(s)) });
+      const u = Object.assign({}, ex, { ui, deck: st.deck, chime0: st.sfx.some(([k, o]) => k === 'chime' && o && o.attr === null), tip: st.log.some(s => /^hint tip_bluff/.test(s)), tipAce: st.log.some(s => /^hint tip_ace/.test(s)) });
       const ok = okC && sameLines(ui, ex) && test(u);
-      record(n, size, ok, `${want}：浮框 ${short([ui.l1, ui.l2, ui.l3])}${n === 8 ? `；chime(null) ${u.chime0 ? '有' : '沒有'}；唱盤 ${JSON.stringify(st.deck)}` : ''}${n === 7 ? `；tip_bluff ${u.tip ? '有' : '沒有'}` : ''}`);
+      record(n, size, ok, `${want}：浮框 ${short([ui.l1, ui.l2, ui.l3])}${n === 8 ? `；chime(null) ${u.chime0 ? '有' : '沒有'}；唱盤 ${JSON.stringify(st.deck)}` : ''}${n === 7 ? `；tip_bluff ${u.tip ? '有' : '沒有'}` : ''}${n === 9 ? `；tip_ace ${u.tipAce ? '有' : '沒有'}` : ''}`);
       await waitChoose(page);
     }
     // ---- 10 __lab.force：counter → 1.6 s 唱盤上是你的（by p）；tie → 空盤
@@ -399,9 +403,10 @@ async function runSize(browser, w, h) {
       const okO = ok6 && await waitOver(page);
       await sleep(400);
       const R = await page.evaluate(() => ({ ended: window.__h.ended && { by: window.__h.ended.by, win: window.__h.ended.win, pHp: window.__h.ended.pHp, eHp: window.__h.ended.eHp },
+        pct: (() => { const d = window.__lab.rawDuel(); return d && window.DipLabEngine.pctPair(d.p.hp, d.p.max, d.e.hp, d.e.max); })(),
         stamp: [((document.querySelector('.dl .kost b') || {}).textContent || ''), ((document.querySelector('.dl .kost small') || {}).textContent || '')],
         music: window.__h.music.slice(), last: window.__e2e.expect(), tip: window.__h.log.some(s => /^hint tip_rounds/.test(s)) }));
-      const ok = okO && R.ended && R.ended.by === 'rounds' && R.ended.win && R.last.kind === 'countered' && R.stamp[0] === '六手打完，比聲望' && R.stamp[1] === `你 ${R.ended.pHp} 比 他 ${R.ended.eHp}：你贏`;
+      const ok = okO && R.ended && R.ended.by === 'rounds' && R.ended.win && R.last.kind === 'countered' && R.stamp[0] === '六手打完，比聲望條' && R.pct && R.stamp[1] === `你剩 ${R.pct.p}%，他剩 ${R.pct.e}%：你贏` && R.stamp[1] === '你剩 90%，他剩 70%：你贏';
       record('12a', size, ok, `結束 ${short(R.ended)}；最後一手 ${R.last && R.last.kind}；大章「${R.stamp.join('／')}」`);
       record('12b', size, R.music.length === 1 && R.music[0] === lastP && lastP === R.last.pCard, `勝利曲 ${JSON.stringify(R.music)}（你最後丟的 ${lastP}；最後一手他贏、整場你贏）`);
       record('12c', size, R.tip, `tip_rounds ${R.tip ? '有' : '沒有'}`);

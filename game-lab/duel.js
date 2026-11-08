@@ -1,7 +1,7 @@
 // game-lab/duel.js — 品味對決 v4：店內舞台下方的對決盤面（Agent B1；SPEC-v4 §2.5.1、§2.2.7、§2.3.3）
 //
 // ── v4 contract（tutorial.js／ui.js／e2e 照這些名字找）────────────────────────────────────────────────────
-// data-tut  他的一塊：e-hud e-name e-honesty（D §5：店主 06:05 拿掉，DOM 留著但 hidden） e-hp e-hint e-rec e-sleeve e-pile
+// data-tut  他的一塊：e-hud e-name e-hp e-hint e-rec e-sleeve e-pile（名牌只有名字：副標與誠實度都拿掉，FIXLIST 6）
 //           牌桌    ：table slot-e slot-p tri tri-oc tri-ch tri-ho rounds result（浮框 .l1 .l2 .l3） lastline
 //           你的一塊：p-hud p-hp relics relic-<id> hand hand-<i> hand-ace card-<i> card-ace chip-<i>-<attr> chip-ace act throw
 // el(name)：上面的名字；
@@ -80,13 +80,12 @@
     he: '他・', you: '你・', slotE: '他丟的', slotP: '你丟的', lastPrefix: '上一手', pileLeft: '他還有 {n} 張',
     counter: '{a}剋{b}，命中！', countered: '{b}剋{a}，被剋了。',
     blockedYou: '{a}剋{b}，但他高你 2 星以上，剋不動。比星數，', blockedHim: '{b}剋{a}，但你高他 2 星以上，他剋不動。比星數，',
-    aceYou: '{b}剋{a}，但王牌不會被剋。比星數，', aceHim: '{a}剋{b}，但他的王牌不會被剋。比星數，',
     mirror: '同樣是{a}，比星數，', tie: '一樣大，不扣。',
     hitE: '他 −{n}', hitP: '你 −{n}',
     bluff: '他唬你！『{key}』是{hint}，他出的是{e}。', honest: '『{key}』是{hint}，他照實出。',
     bluffNoKey: '他唬你！提示是{hint}，他出的是{e}。', honestNoKey: '提示是{hint}，他照實出。',
     koWin: '品味勝出', koWinSub: '你贏了【{name}】。', koLose: '聲望歸零', koLoseRetry: '老闆：……再一場。',
-    roundsOut: '六手打完，比聲望', roundsScore: '你 {p} 比 他 {e}：{who}贏',
+    roundsOut: '六手打完，比聲望條', roundsScore: '你剩 {p}%，他剩 {e}%：{who}贏', roundsEven: '你剩 {p}%，他剩 {e}%：一樣，算你贏',
   };
   function dtOf(content) {
     const src = (content && content.duelText) || {};
@@ -108,14 +107,13 @@
     return x || null;
   }
   // 一手的結果字（SPEC-v4 §2.5.1）。c＝clash 事件（或 view().last）；hints＝C.hints。
-  //   l1＝唬人時 bluff；否則規則句（counter｜countered｜blockedYou｜blockedHim｜aceYou｜aceHim｜mirror）
+  //   l1＝唬人時 bluff；否則規則句（counter｜countered｜blockedYou｜blockedHim｜mirror）；王牌沒有「不會被剋」（FIXLIST 2）：被 ≤5 星剋＝剋不動（gap）
   //   l2＝hitE｜hitP｜tie；l3＝照實時 honest（關鍵字那句）；唬人且剋不動時放規則句（句尾「，」改「。」）；其他空
   //   D 的三個例句：l1＋l2 逐字＝「冷門剋經典，命中！他 −4」「冷門剋經典，但他高你 2 星以上，剋不動。比星數，你 −3」「他唬你！『紀念版』是經典，他出的是硬蕊。你 −4」
   function ruleText(c, T) {
     const ace = c.ace ? T('aceWord') : '';
     const a = ace + ZH[c.pAttr], a0 = ZH[c.pAttr], b = ZH[c.eAttr];
     if (c.blocked === 'gap') return T(c.by === 'e' ? 'blockedHim' : 'blockedYou', { a, b });
-    if (c.blocked === 'ace') return c.by === 'e' ? T('aceYou', { a: a0, b }) : T('aceHim', { a, b });   // aceYou 句子裡已經有「王牌」，{a} 不再加
     if (c.kind === 'counter') return T('counter', { a, b });
     if (c.kind === 'countered') return T('countered', { a, b });
     return T('mirror', { a: a0, b });                                                                  // 「同樣是經典」：同色不加「王牌」
@@ -155,7 +153,7 @@
     const hooks = opts.hooks || {};
     const tut = hooks.tut || null;
     const eid = duel && duel.e ? duel.e.id : null;
-    const enemy = Object.assign({ id: eid, name: duel && duel.e && duel.e.name, title: duel && duel.e && duel.e.title }, (content.enemies && content.enemies[eid]) || {});
+    const enemy = Object.assign({ id: eid, name: duel && duel.e && duel.e.name }, (content.enemies && content.enemies[eid]) || {});
     const lines = (content.lines && content.lines[eid]) || {};
     const hints = content.hints || null;
     const T = dtOf(content);
@@ -296,7 +294,7 @@
     root.setAttribute('aria-label', '品味對決');
     root.innerHTML = `
       <section class="dl-e" data-tut="e-hud">
-        <div class="nmrow"><b class="nm" data-tut="e-name"></b><span class="sub"></span><span class="hon" data-tut="e-honesty" hidden></span>
+        <div class="nmrow"><b class="nm" data-tut="e-name"></b>
           <div class="rec" data-tut="e-rec"><div class="pile" data-tut="e-pile"><span class="bars"></span><small></small></div></div><span class="sp"></span>
           <span class="hpn" data-tut="e-hp"><span>${esc(T('hp'))}</span><b class="num key"></b></span></div>
         <div class="hp"><i class="lost"></i><i class="fill"></i></div>
@@ -324,7 +322,7 @@
     panel.appendChild(root);
     const $ = s => root.querySelector(s);
     const els = {
-      e: $('.dl-e'), enm: $('.dl-e .nm'), esub: $('.dl-e .sub'), hon: $('.dl-e .hon'), ehpn: $('.dl-e .hpn .num'), ehp: $('.dl-e .hp'),
+      e: $('.dl-e'), enm: $('.dl-e .nm'), ehpn: $('.dl-e .hpn .num'), ehp: $('.dl-e .hp'),
       hint: $('.hint'), htx: $('.hint .tx'), rec: $('.rec'), bars: $('.pile .bars'), pileTx: $('.pile small'),
       table: $('.dl-t'), se: $('.slot.e'), sp: $('.slot.p'), tri: $('.tri'), rounds: $('.rounds'), call: $('.callout'), last: $('.lastline'),
       p: $('.dl-p'), relics: $('.relics'), phpn: $('.dl-p .hpn .num'), php: $('.dl-p .hp'),
@@ -388,8 +386,6 @@
     function renderE(v, opt) {
       opt = opt || {};
       els.enm.textContent = enemy.name || v.eName || '';
-      els.esub.textContent = enemy.title || v.eTitle || '';
-      els.hon.textContent = (v.honesty && v.honesty.zh) || '';   // D §5：不顯示（hidden），留給教學／測試讀
       if (!opt.keepHp) setHp(els.ehp, els.ehpn, v.eHp, v.eMax, false);
       renderHint(v);
       renderRec(v);
@@ -771,7 +767,7 @@
     function oneTimeTips(cl) {
       if (cl.bluff) hint('tip_bluff', ['result']);
       if (cl.blocked === 'gap') hint('tip_block', ['result']);
-      if (cl.blocked === 'ace') hint('tip_ace', ['result']);
+      if (cl.ace) hint('tip_ace', ['result']);          // 第一次丟王牌（FIXLIST 2；hint 一場只送一次）
       if (cl.pAttr === cl.eAttr) hint('tip_mirror', ['result']);
     }
     async function play(act, sel) {
@@ -869,8 +865,15 @@
       if ((v.n | 0) >= (v.maxRounds || 6)) hint('tip_rounds', ['rounds']);
       emit('handStart', v);
     }
-    // 六手打完／他牌出完的副標（店主還沒定比法：現在比剩下的聲望絕對值＝engine finish()；要改比扣多少或比幾成，改這裡＋C.duelText.roundsScore）
-    function roundsVars(v, win) { return { p: Math.max(0, v.pHp), e: Math.max(0, v.eHp), who: win ? '你' : '他' }; }
+    // 六手打完／他牌出完的副標（FIXLIST 3：比聲望條剩幾成）。% 用引擎 over 事件的 pct（＝E.pctPair：整數一樣但勝負不同時改一位小數），
+    //   不自己四捨五入；兩邊比例真的一樣（一樣算你贏）用 roundsEven
+    function roundsVars(over, v, win) {
+      let pct = over && over.pct;
+      if (!pct && typeof E.pctPair === 'function') pct = E.pctPair(v.pHp, v.pMax, v.eHp, v.eMax);
+      pct = pct || { p: String(Math.max(0, v.pHp)), e: String(Math.max(0, v.eHp)) };
+      const even = win && typeof E.playerAhead === 'function' && v.pMax > 0 && v.eMax > 0 && v.pHp * v.eMax === v.eHp * v.pMax;
+      return { p: pct.p, e: pct.e, who: win ? '你' : '他', even };
+    }
     // 勝利曲（D §4）：一律播整場贏家最後丟出的那張（＝最後一手贏家那邊的唱片；§2.5.1）
     function winnerSong(win, cl) {
       const card = cl ? (win ? cl.pCard : cl.eCard) : null;
@@ -893,7 +896,7 @@
       if (typeof hooks.endText === 'function') try { tx = hooks.endText(result); } catch (e) { console.error(e); }
       if (!tx) {
         const nm = enemy.name || '';
-        if (result.by === 'rounds' || result.by === 'pile') tx = { title: T('roundsOut'), sub: T('roundsScore', roundsVars(v1, win)), cls: win ? 'ink' : 'red' };
+        if (result.by === 'rounds' || result.by === 'pile') { const rv = roundsVars(over, v1, win); tx = { title: T('roundsOut'), sub: T(rv.even ? 'roundsEven' : 'roundsScore', rv), cls: win ? 'ink' : 'red' }; }
         else if (win) tx = { title: T('koWin'), sub: nm ? T('koWinSub', { name: nm }) : '', cls: 'ink' };
         else tx = { title: T('koLose'), sub: run && (run.retryLeft | 0) > 0 ? T('koLoseRetry') : '', cls: 'red' };
       }

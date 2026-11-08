@@ -23,7 +23,6 @@
 /* 名字列＋聲望條（兩邊同一套） */
 .dl .nmrow{display:flex;align-items:baseline;height:20px;min-width:0}
 .dl .nmrow>b{font-size:15px;letter-spacing:.06em;white-space:nowrap;margin-right:8px}
-.dl .nmrow .sub{font-size:10px;color:var(--gray,#888);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
 .dl .nmrow .sp{flex:1}
 .dl .nmrow .hpn{font:700 13px var(--dl-mono);white-space:nowrap;flex:none}
 .dl .nmrow .hpn span{font:400 10px var(--dl-zh);color:var(--gray,#888);margin-right:4px}

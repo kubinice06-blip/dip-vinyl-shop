@@ -296,7 +296,7 @@ export function contentProblems(C, E) {
   // §2.2.7 那一份，扣掉 aceYou／aceHim（FIXLIST 2：王牌沒有「不會被剋」，不會再有 blocked:'ace'）
   const DT = ['pickHint', 'picked', 'again', 'throwBtn', 'waiting', 'hintLabel', 'sleeve', 'rounds', 'hp', 'aceSlot', 'aceUsed', 'aceWord', 'he', 'you', 'slotE', 'slotP',
     'lastPrefix', 'pileLeft', 'counter', 'countered', 'blockedYou', 'blockedHim', 'mirror', 'tie', 'hitE', 'hitP', 'bluff', 'honest',
-    'bluffNoKey', 'honestNoKey', 'koWin', 'koWinSub', 'koLose', 'koLoseRetry', 'roundsOut', 'roundsScore'];
+    'bluffNoKey', 'honestNoKey', 'koWin', 'koWinSub', 'koLose', 'koLoseRetry', 'roundsOut', 'roundsScore', 'roundsEven'];
   ok(C.duelText && sameSet(Object.keys(C.duelText), DT), 'duelText 的鍵要剛好是 §2.2.7 那一份（沒有 aceYou／aceHim）');
   ok(C.duelText && Object.values(C.duelText).every(t => !/不會被剋/.test(t)), 'duelText 不准有「不會被剋」（FIXLIST 2）');
   // D §5 的三個例句要組得出來
@@ -307,6 +307,7 @@ export function contentProblems(C, E) {
     ok(f(T.blockedYou, { a: '冷門', b: '經典' }) + f(T.hitP, { n: 3 }) === '冷門剋經典，但他高你 2 星以上，剋不動。比星數，你 −3', 'duelText：組不出剋不動那句');
     ok(f(T.bluff, { key: '紀念版', hint: '經典', e: '硬蕊' }) + f(T.hitP, { n: 4 }) === '他唬你！『紀念版』是經典，他出的是硬蕊。你 −4', 'duelText：組不出唬人那句');
     ok(f(T.roundsScore, { p: 60, e: 50, who: '你' }) === '你剩 60%，他剩 50%：你贏', 'duelText.roundsScore：比聲望條剩幾 %（FIXLIST 3）');
+    ok(f(T.roundsEven, { p: 50, e: 50 }) === '你剩 50%，他剩 50%：一樣，算你贏', 'duelText.roundsEven：比例一樣算你贏（FIXLIST 3）');
   }
   const SL = C.shopLines || {};
   for (const k of ['poster', 'cat', 'locked', 'binBusy', 'titleHint', 'taipeiHere', 'taipeiNote', 'taipeiLink', 'backToShop', 'bin', 'booth', 'boothEmpty']) ok(typeof SL[k] === 'string' && SL[k], 'shopLines.' + k);
