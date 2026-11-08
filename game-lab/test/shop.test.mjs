@@ -149,7 +149,8 @@ section('spots：門外的人在門洞裡、他左你右、橫條看得到全身
   ok(ref[1] < dk.y - dk.d && ref[0] >= dk.x && ref[0] <= dk.x + dk.w, '老闆（ref）站在台後、x 在唱盤範圍內', [ref, dk]);
   ok(ref[1] - 15 * KS >= dip.cameras.stripS.y, 'stripS 看得到老闆的頭', ref);
   eq(dip.spots.between, ref, 'between＝ref');
-  eq([dip.spots.leaving, dip.spots.mid], [[150, 110], [96, 112]], '後走道對峙站位（§2.3.1）');
+  // 後走道對峙站位（§2.3.1 原本 leaving [150,110]、mid [96,112]——站在中島最上排畫出來的範圍裡；FIXLIST 1 移到後走道：後牆矮櫃前緣與中島上緣之間）
+  eq([dip.spots.leaving, dip.spots.mid], [[170, 95], [96, 100]], '後走道對峙站位（FIXLIST 1）');
   // 挖箱：站在箱子前面、x 在箱子範圍內
   const jazz = propById('crate-jazz'), tw = propById('crate-tw');
   for (const k of ['dig1', 'crateP']) ok(dip.spots[k][1] > jazz.y && dip.spots[k][0] >= jazz.x && dip.spots[k][0] <= tw.x + 42, k + ' 在爵士／台灣箱前面', dip.spots[k]);
@@ -161,9 +162,9 @@ section('spots：門外的人在門洞裡、他左你右、橫條看得到全身
 
 section('走位：繞過家具，從門口、櫃檯到每個 spot 都走得到', () => {
   const obs = DS.navObstacles(dip);
-  ok(obs.length >= 15, '家具都有地面範圍', obs.length);
-  const inside = (p, r) => p[0] > r[0] && p[0] < r[0] + r[2] && p[1] > r[1] && p[1] < r[1] + r[3];
-  const clear = (a, b) => !obs.some(r => !inside(a, r) && !inside(b, r) && DS.segHitsRect(a, b, r));
+  ok(obs.length >= 12, '家具都有腳下範圍（中島 10 箱合成一塊）', obs.length);
+  const inside = (p, r) => DS.inObs(p, r);
+  const clear = (a, b) => DS.navClear(obs, a, b);
   // navRoute 走不到（A3 加固後回 null）＝斷言失敗「走不到 a→b」，不 TypeError（SPEC-v4 §2.4.5）
   const routeOr = (navRoute, from, to) => { const r = navRoute(dip, from, to, obs); return r ? [from].concat(r) : '走不到 ' + JSON.stringify(from) + '→' + JSON.stringify(to); };
   const route = (from, to) => { const r = routeOr(DS.navRoute, from, to); if (typeof r === 'string') { ok(false, r); return [from]; } return r; };
@@ -220,11 +221,13 @@ section('路線表（SPEC-v4 §2.3.2）：不穿家具、1 倍速不超過上限
   const dx = Math.max(sb[0] - st[0], 0, st[0] - (sb[0] + sb[2])), dy = Math.max(sb[1] - st[1], 0, st[1] - (sb[1] + sb[3]));
   ok(Math.hypot(dx, dy) <= 10, '特價箱 stand 離箱子 ≤10 格', [st, sb]);
   eq(dip.spots.sale, st, 'spots.sale＝特價箱的 stand');
-  const inside = (p, r) => p[0] > r[0] && p[0] < r[0] + r[2] && p[1] > r[1] && p[1] < r[1] + r[3];
-  const clear = (a, b) => !obs.some(r => !inside(a, r) && !inside(b, r) && DS.segHitsRect(a, b, r));
-  const doorPath = [dip.spots.door, dip.spots.atdoor, [30, 100], [72, 110]].map(p => p.slice(0, 2));
+  const clear = (a, b) => DS.navClear(obs, a, b);
+  // §2.3.5 原文「不擋 door→atdoor→nav[30,100]→nav[72,110]」：FIXLIST 1 之後特價箱的腳下範圍＝畫出來的那一塊（後排唱片頂到 y102），
+  // [30,100] 剛好在它上緣，從那裡往右下走會擦過箱子；進店的路改驗 door→atdoor→[72,110]，[30,100] 只要不在家具裡、atdoor 走得到
+  const doorPath = [dip.spots.door, dip.spots.atdoor, [72, 110]].map(p => p.slice(0, 2));
   ok(dip.nav.some(q => q[0] === 30 && q[1] === 100) && dip.nav.some(q => q[0] === 72 && q[1] === 110), 'nav 有 [30,100]、[72,110]');
-  ok(doorPath.every((p, i) => i === 0 || clear(doorPath[i - 1], p)), '特價箱不擋 door→atdoor→[30,100]→[72,110]');
+  ok(doorPath.every((p, i) => i === 0 || clear(doorPath[i - 1], p)), '特價箱不擋 door→atdoor→[72,110]（進店的路）');
+  ok(!obs.some(o => DS.inObs([30, 100], o)) && clear(dip.spots.atdoor.slice(0, 2), [30, 100]) && clear(dip.spots.door.slice(0, 2), [30, 100]), '[30,100] 不在家具裡、door／atdoor 走得到');
 });
 
 section('舊 POS 別名表齊全（SPEC-v2 §5.2）', () => {
@@ -377,12 +380,15 @@ section('櫃檯 logo（B15，SPEC-v4 §2.3.6）：畫在正面板中央、不蓋
   ok(probs.some(p => /^x：.*EMBLEM/.test(p)) && probs.some(p => /^y：.*不等長/.test(p)) && probs.some(p => /^z：.*pal 沒有的字元/.test(p)) && !probs.some(p => /^ok/.test(p)), 'check-shops 的招牌檢查', probs);
 });
 
-// D §3「Add an automated check that no actor route intersects furniture footprints」：任兩個 spot／stand 的路線，逐段對每個站立家具的腳下範圍（foot，不加邊、端點不豁免）
+// D §3「Add an automated check that no actor route intersects furniture footprints」：任兩個 spot／stand 的路線，逐段對每個站立家具的腳下範圍（不加邊、端點不豁免）
+// 腳下範圍＝畫出來的那一塊（FIXLIST 1，DipShop.footprints；中島 10 箱一塊）
 section('D §3：沒有任何人的路線穿過家具的腳下範圍（任兩個 spot／bin.stand）', () => {
   const OP = DS.O34.PROPS, feet = CS.footprints(dip, OP);
   const standing = dip.props.filter(o => { const sp = OP[o.type], ly = o.layer || (sp && sp.layer); return sp && !o.hidden && !['wall', 'bg', 'fx'].includes(ly); });
-  eq(feet.length, standing.length, '每個站立道具都有腳下範圍（' + standing.length + ' 件）');
-  for (const id of ['counter', 'deck', 'booth', 'crate-sale', 'isl-0a', 'crate-jazz', 'backbin']) ok(feet.some(f => f[0] === id), id + ' 算在家具裡');
+  const covered = standing.map(o => o.id || o.type + '#' + dip.props.indexOf(o)).filter(id => feet.filter(f => f[2].includes(id)).length === 1);
+  eq(covered.length, standing.length, '每個站立道具都剛好在一塊腳下範圍裡（' + standing.length + ' 件）');
+  for (const id of ['counter', 'deck', 'booth', 'crate-sale', 'crate-noise', 'shelving', 'island', 'backbin']) ok(feet.some(f => f[0] === id), id + ' 算在家具裡');
+  ok(['isl-0a', 'isl-0b', 'crate-jazz', 'crate-tw'].every(id => feet.find(f => f[0] === 'island')[2].includes(id)), '中島（含最上排 isl-0a／isl-0b）一塊');
   const obs = DS.navObstacles(dip), pts = Object.entries(dip.spots).filter(([, s]) => !s[2]).map(([k, s]) => [k, s.slice(0, 2)])
     .concat(dip.props.filter(p => p.bin).map(p => ['bin:' + p.bin.key, p.bin.stand]));
   let n = 0; const bad = [];
@@ -401,6 +407,69 @@ section('D §3：沒有任何人的路線穿過家具的腳下範圍（任兩個
   // 站立道具沒有 foot＝抓得到
   const probs = []; CS.footprints({ props: [{ type: 'noFoot', id: 'x' }] }, { noFoot: { draw() {} } }, m => probs.push(m));
   ok(probs.some(p => /沒有 foot/.test(p)), '站立道具沒有 foot 抓得到', probs);
+});
+
+// FIXLIST 1（店主：「不要跨過中島唱片區」）：腳下範圍＝道具實際畫出來的那一塊。這裡用自己的假畫布重新量（不用 shop.js 的 drawnExtent），
+// 驗 DipShop.footprints 真的把畫出來的箱身、唱片、標籤都包進去；中島一塊；往後走道的路線先走旁邊的走道、再沿後走道橫移，不斜切中島
+function maskOfProp(o) {
+  const [W, H] = dip.size, M = new Uint8Array(W * H); let clip = null;
+  const ctx = { globalAlpha: 1, fillStyle: '#000', font: '7px x', textAlign: 'center', textBaseline: 'middle',
+    fillRect(x, y, w, h) {
+      if (ctx.globalAlpha < 0.99 || /^rgba\(/.test(String(ctx.fillStyle))) return;   // 影子、光、反光
+      let x0 = x, y0 = y, x1 = x + w, y1 = y + h; if (clip) { x0 = Math.max(x0, clip[0]); y0 = Math.max(y0, clip[1]); x1 = Math.min(x1, clip[0] + clip[2]); y1 = Math.min(y1, clip[1] + clip[3]); }
+      for (let yy = Math.max(0, y0); yy < Math.min(H, y1); yy++) for (let xx = Math.max(0, x0); xx < Math.min(W, x1); xx++) M[yy * W + xx] = 1;
+    },
+    fillText(t, x, y) { const sz = parseFloat(/([\d.]+)px/.exec(ctx.font)[1]); ctx.fillRect(Math.round(x - String(t).length * sz / 2), Math.round(y - sz / 2), Math.round(String(t).length * sz), Math.round(sz)); },
+    measureText: t => ({ width: String(t).length * 7 }), drawImage() {}, save() {}, restore() { clip = null; }, beginPath() {}, rect(x, y, w, h) { clip = [x, y, w, h]; }, clip() {} };
+  DS.O34.PROPS[o.type].draw(DS.OPainter({ ctx, k: 1, cx: 0, cy: 0, meas: null, cover: () => null, used: {}, pool: [] }), o, { L: dip, layout: dip, state: {}, t: 0, rt: 0, card: () => null });
+  // 只留「連續 ≥3 格」的像素（1–2 格寬的細柱：鉻管、燈桿、線不算，跟 shop.js 同一條規則；這裡只用來挑像素，上緣由 footprints 自己量）
+  const out = [];
+  for (let y = 0; y < H; y++) { let run = 0; for (let x = 0; x <= W; x++) { if (x < W && M[y * W + x]) { run++; continue; } if (run >= 3) for (let k = x - run; k < x; k++) out.push([k, y]); run = 0; } }
+  return out;
+}
+section('FIXLIST 1：腳下範圍＝畫出來的那一塊（中島一塊含最上排），往後走道走旁邊的走道、不斜切中島', () => {
+  const feet = DS.footprints(dip), F = id => feet.find(f => f.id === id), P = id => propById(id);
+  const isl = F('island');
+  ok(isl && isl.props.length === 10 && isl.gap <= 2, '中島 10 箱合成一塊（縫 ≤2 格）', isl && [isl.props.length, isl.gap]);
+  // 每件道具畫出來的（寬 ≥3 格的）每一格都在它的腳下範圍裡（格子中心嚴格在多邊形內）
+  const own = { counter: 'counter', deck: 'deck', backbin: 'backbin', booth: 'booth', 'crate-sale': 'crate-sale', 'crate-noise': 'crate-noise', shelving: 'shelving' };
+  for (const o of dip.props) if (/^isl-|^crate-(jazz|tw)$/.test(o.id || '')) own[o.id] = 'island';
+  for (const [id, fid] of Object.entries(own)) {
+    const o = P(id), f = F(fid), px = maskOfProp(o), wb = (dip.footprints.walkBehind || []).includes(id), fy = o.y - o.d;
+    const miss = px.filter(([x, y]) => (!wb || y >= fy) && !DS.inPoly([x + 0.5, y + 0.5], f.poly));
+    ok(px.length > 50 && miss.length === 0, id + '：畫出來的每一格都在腳下範圍（' + fid + '）裡' + (wb ? '（walkBehind：地面那塊以前）' : ''), miss.slice(0, 4));
+    if (wb) { const xs = px.map(p => p[0]); ok(f.box[0] <= Math.min(...xs) && f.box[0] + f.box[2] >= Math.max(...xs) + 1 && f.box[1] <= fy, id + '：左右照畫出來的、上緣不晚於地面那塊', [f.box, Math.min(...xs), Math.max(...xs)]); }
+  }
+  // 中島最上排（R&B／OST）畫出來的上緣：箱身與唱片 y≈104–106；腳下範圍從那裡起算（原本的 foot 只從 y128 起＝店主看到的「走在箱子上」）
+  ok(isl.box[1] <= 106 && isl.box[0] <= 97 && isl.box[0] + isl.box[2] >= 185 && isl.box[1] + isl.box[3] >= 262, '中島腳下範圍 x 97–185、y ≤106–262', isl.box);
+  // 後走道：後牆矮櫃（民謠）與窗下矮櫃前緣以後、中島上緣以前；mid、leaving 站在這裡（不被中島擋住腳）
+  const backY = Math.max(F('backbin').box[1] + F('backbin').box[3], feet.find(f => f.props[0].startsWith('lowShelf')).box[1] + feet.find(f => f.props[0].startsWith('lowShelf')).box[3]);
+  const islTop = isl.box[1];
+  for (const k of ['mid', 'leaving']) { const s0 = dip.spots[k]; ok(s0[1] > backY && s0[1] < islTop && !feet.some(f => DS.inPoly(s0, f.poly)), k + ' 站在後走道（y ' + backY + '–' + islTop + '）', s0); }
+  // 路線：counter→mid、pay→leaving 走右側走道上到後走道再橫移；mid→ref、atdoor→duelE 走左側走道；sale→pay、browse→sale、leaving→duelP 也不碰中島的外框
+  const obs = DS.navObstacles(dip), S0 = k => dip.spots[k].slice(0, 2), ib = isl.box;
+  const inBox = (p) => p[0] > ib[0] && p[0] < ib[0] + ib[2] && p[1] > ib[1] && p[1] < ib[1] + ib[3];
+  const crossBox = (pts) => pts.some((p, i) => i > 0 && (DS.segHitsRect(pts[i - 1], p, ib) || inBox(p)));
+  const rightAisle = p => p[0] >= ib[0] + ib[2] && p[0] <= P('counter').x && p[1] >= islTop - 6;
+  const leftAisle = p => p[0] <= ib[0] && p[0] >= 53 && p[1] >= islTop - 6;
+  const corridor = p => p[1] > backY && p[1] < islTop;
+  for (const [a, b, need] of [['counter', 'mid', 'R'], ['pay', 'leaving', 'R'], ['leaving', 'duelP', 'R'], ['mid', 'ref', 'L'], ['atdoor', 'duelE', 'L'], ['sale', 'pay', ''], ['browse', 'sale', ''], ['duelE', 'door', 'L']]) {
+    const r = CS.routeOf(DS, dip, S0(a), S0(b), obs); if (!r) { ok(false, '走不到 ' + a + '→' + b); continue; }
+    ok(!crossBox(r.pts), a + '→' + b + ' 不碰中島的外框（不斜切中島）', r.pts);
+    if (need === 'R') ok(r.pts.some(rightAisle) && r.pts.some(corridor), a + '→' + b + ' 經過右側走道與後走道', r.pts);
+    if (need === 'L') ok(r.pts.some(leftAisle), a + '→' + b + ' 經過左側走道', r.pts);
+  }
+  // 抓得到：舊站位（站在最上排箱子畫出來的範圍裡）、舊路點 [146,110]、舊路線 sale→pay 那一段 [90,124]→[192,124]、拿掉 walkBehind（老闆站進櫃檯裡）、walkBehind 放在箱子上、群組有不存在的 id
+  const bad1 = JSON.parse(JSON.stringify(dip)); bad1.spots.leaving = [150, 110]; bad1.spots.mid = [96, 112]; bad1.nav.push([146, 110]);
+  const r1 = CS.checkLayout(bad1, 'shops/dip.json', lib, cards, content).problems;
+  ok(r1.some(p => /spots\.leaving 站在家具裡 island/.test(p)) && r1.some(p => /spots\.mid 站在家具裡 island/.test(p)) && r1.some(p => /nav\[\d+\] 在家具裡 \[146,110\]/.test(p)), '抓得到 A2 的舊站位與舊路點（站在中島最上排）', r1.slice(0, 4));
+  const h1 = CS.routeHitsFeet(DS, [[90, 124], [192, 124]], CS.footprints(dip, DS.O34.PROPS));
+  ok(h1 && h1.id === 'island', '抓得到 A2 路線圖 13（sale→pay）那一段 [90,124]→[192,124] 穿過中島', h1);
+  ok(!CS.routeHitsFeet(DS, [[90, 124], [192, 124]], dip.props.filter(o => /^isl-/.test(o.id)).map(o => [o.id, DS.O34.PROPS.binTable.foot(o)])), '（對照：舊的 foot 只框地面那塊，這一段抓不到）');
+  const bad2 = JSON.parse(JSON.stringify(dip)); bad2.footprints.walkBehind = ['deck', 'isl-0a']; bad2.footprints.groups.island = bad2.footprints.groups.island.filter(i => i !== 'isl-0a').concat(['nope']);
+  const r2 = CS.checkLayout(bad2, 'shops/dip.json', lib, cards, content).problems;
+  ok(r2.some(p => /spots\.counter 站在家具裡 counter/.test(p)), '拿掉櫃檯的 walkBehind：老闆的站位在櫃檯畫出來的範圍裡 → 抓得到', r2.slice(0, 3));
+  ok(r2.some(p => /walkBehind：isl-0a.*不是櫃檯或唱盤台/.test(p)) && r2.some(p => /groups\.island：沒有道具 nope/.test(p)), '抓得到 walkBehind 放在箱子上、群組有不存在的 id', r2.slice(0, 5));
 });
 
 // ---------- 舞台（stage.js v4）的純邏輯：假 shop 記下每個呼叫，手動推時間（SPEC-v4 §2.3.2、§2.3.3、§2.3.8、§5.1 A2）

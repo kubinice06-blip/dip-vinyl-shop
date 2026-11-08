@@ -1124,17 +1124,181 @@
     return t0 < t1;
   }
   function inRect(p, r) { return p[0] > r[0] && p[0] < r[0] + r[2] && p[1] > r[1] && p[1] < r[1] + r[3]; }
-  function navObstacles(L) {
-    var out = [], m = L.navMargin || [5, 2];
-    (L.props || []).forEach(function (o) {
-      var sp = O34.PROPS[o.type]; if (!sp || !sp.foot || o.hidden || o.block === false) return;
-      var r = sp.foot(o); out.push([r[0] - m[0], r[1] - m[1], r[2] + 2 * m[0], r[3] + 2 * m[1]]);
+
+  // ---- 多邊形（腳下範圍、避障框）：[[x,y],…]，邊界上的點不算「在裡面」（跟 inRect／segHitsRect 一樣只算內部）
+  function onSeg(p, a, b) {
+    var cr = (b[0] - a[0]) * (p[1] - a[1]) - (b[1] - a[1]) * (p[0] - a[0]);
+    if (Math.abs(cr) > 1e-9 * (1 + Math.abs(b[0] - a[0]) + Math.abs(b[1] - a[1]))) return false;
+    return p[0] >= Math.min(a[0], b[0]) - 1e-9 && p[0] <= Math.max(a[0], b[0]) + 1e-9 && p[1] >= Math.min(a[1], b[1]) - 1e-9 && p[1] <= Math.max(a[1], b[1]) + 1e-9;
+  }
+  function inPoly(p, poly) {   // 嚴格在裡面（邊界上＝false）
+    var n = poly.length, inside = false;
+    for (var i = 0, j = n - 1; i < n; j = i++) {
+      var a = poly[j], b = poly[i];
+      if (onSeg(p, a, b)) return false;
+      if ((b[1] > p[1]) !== (a[1] > p[1]) && p[0] < (a[0] - b[0]) * (p[1] - b[1]) / (a[1] - b[1]) + b[0]) inside = !inside;
+    }
+    return inside;
+  }
+  // 線段 a→b 有沒有穿過多邊形內部：找出線段碰到每條邊的參數 t，相鄰兩個 t 的中點只要有一個嚴格在裡面就算穿過
+  // （沿著邊走、只擦過角＝不算，跟 segHitsRect 一樣）
+  function segHitsPoly(a, b, poly) {
+    var dx = b[0] - a[0], dy = b[1] - a[1], ts = [0, 1], n = poly.length;
+    for (var i = 0, j = n - 1; i < n; j = i++) {
+      var p = poly[j], q = poly[i], ex = q[0] - p[0], ey = q[1] - p[1], den = dx * ey - dy * ex;
+      var wx = p[0] - a[0], wy = p[1] - a[1];
+      if (Math.abs(den) < 1e-12) {   // 平行：共線就把這條邊的兩端投影到線段上
+        if (Math.abs(wx * dy - wy * dx) > 1e-9) continue;
+        var dd = dx * dx + dy * dy; if (!dd) continue;
+        [p, q].forEach(function (v) { var t = ((v[0] - a[0]) * dx + (v[1] - a[1]) * dy) / dd; if (t > 0 && t < 1) ts.push(t); });
+        continue;
+      }
+      var t = (wx * ey - wy * ex) / den, u = (wx * dy - wy * dx) / den;
+      if (t > 0 && t < 1 && u >= -1e-12 && u <= 1 + 1e-12) ts.push(t);
+    }
+    ts.sort(function (x, y) { return x - y; });
+    for (var k = 1; k < ts.length; k++) {
+      if (ts[k] - ts[k - 1] < 1e-9) continue;
+      var tm = (ts[k] + ts[k - 1]) / 2;
+      if (inPoly([a[0] + dx * tm, a[1] + dy * tm], poly)) return true;
+    }
+    return false;
+  }
+  function rectPoly(r) { return [[r[0], r[1]], [r[0] + r[2], r[1]], [r[0] + r[2], r[1] + r[3]], [r[0], r[1] + r[3]]]; }
+  // 一組矩形的聯集 → 階梯形多邊形（順時針：上緣左→右、下緣右→左）。按 x 的分界切成直條，每條取蓋到它的矩形的最上與最下；
+  // 沒蓋到的直條（縫）照兩邊補起來（gapFix 記最寬的縫，check-shops 擋 >2 格）。同一直條裡有兩段（中間空著）也當一段（保守）
+  function rectsPoly(rects) {
+    var xs = [];
+    rects.forEach(function (r) { xs.push(r[0], r[0] + r[2]); });
+    xs = xs.sort(function (a, b) { return a - b; }).filter(function (v, i, A) { return i === 0 || v !== A[i - 1]; });
+    var S = [];
+    for (var i = 0; i + 1 < xs.length; i++) {
+      var x0 = xs[i], x1 = xs[i + 1], t = Infinity, b = -Infinity;
+      rects.forEach(function (r) { if (r[0] <= x0 && r[0] + r[2] >= x1) { t = Math.min(t, r[1]); b = Math.max(b, r[1] + r[3]); } });
+      S.push({ x0: x0, x1: x1, t: t, b: b });
+    }
+    var gap = 0;
+    S.forEach(function (s, i) {
+      if (s.t < Infinity) return;
+      var L0 = null, R0 = null, k;
+      for (k = i - 1; k >= 0; k--) if (S[k].t < Infinity) { L0 = S[k]; break; }
+      for (k = i + 1; k < S.length; k++) if (S[k].t < Infinity) { R0 = S[k]; break; }
+      var w = (R0 ? R0.x0 : s.x1) - (L0 ? L0.x1 : s.x0); gap = Math.max(gap, w);
+      s.t = Math.min(L0 ? L0.t : Infinity, R0 ? R0.t : Infinity); s.b = Math.max(L0 ? L0.b : -Infinity, R0 ? R0.b : -Infinity);
     });
-    (L.obstacles || []).forEach(function (r) { out.push(r.slice()); });
+    var pts = [], n = S.length;
+    pts.push([S[0].x0, S[0].t]);
+    for (i = 1; i < n; i++) if (S[i].t !== S[i - 1].t) { pts.push([S[i].x0, S[i - 1].t]); pts.push([S[i].x0, S[i].t]); }
+    pts.push([S[n - 1].x1, S[n - 1].t]); pts.push([S[n - 1].x1, S[n - 1].b]);
+    for (i = n - 1; i > 0; i--) if (S[i].b !== S[i - 1].b) { pts.push([S[i].x0, S[i].b]); pts.push([S[i].x0, S[i - 1].b]); }
+    pts.push([S[0].x0, S[0].b]);
+    pts.gapFix = gap;
+    return pts;
+  }
+  function polyBox(poly) {
+    var x0 = Infinity, y0 = Infinity, x1 = -Infinity, y1 = -Infinity;
+    poly.forEach(function (p) { x0 = Math.min(x0, p[0]); y0 = Math.min(y0, p[1]); x1 = Math.max(x1, p[0]); y1 = Math.max(y1, p[1]); });
+    return [x0, y0, x1 - x0, y1 - y0];
+  }
+
+  // ---- 腳下範圍（FIXLIST 1，店主：「不要跨過中島唱片區」）
+  // 斜俯視裡人腳站的那一格＝畫面上那一格：腳落在道具「畫出來的範圍」裡，不是站在道具上，就是被道具蓋住腳（看起來走在箱子裡）。
+  // 所以站立道具的腳下範圍＝它實際畫出來的那一塊（用畫筆量，不是猜的）：
+  //   左右＝畫出來的最左到最右；上緣＝最上面一列「連續 ≥3 格不透明」的那列（1–2 格寬的細柱：箱子的鉻管、燈桿、耳機線不算）；
+  //   下緣＝地板前緣 o.y 與畫出來的最下緣取大的（地上半透明的影子不算）；再跟道具自己的 foot（地面那塊）取聯集。
+  //   L.footprints.walkBehind（櫃檯、唱盤台）：老闆站在它後面（spots.counter、ref；被它擋住腳是故意的），只算地面那塊，左右照畫出來的。
+  //   L.footprints.groups（中島）：成員合成一塊多邊形（rectsPoly，欄間的縫補起來）。避障（navObstacles，加 navMargin）、
+  //   check-shops 的「路線不穿家具」、shop.test、dev/stage-harness 的路線圖都用這一份。
+  var FOOT_PAD = 24;
+  function maskPainter(W, H) {
+    var MW = W + 2 * FOOT_PAD, MH = H + 2 * FOOT_PAD, M = new Uint8Array(MW * MH), clip = null;
+    var ctx = {
+      globalAlpha: 1, fillStyle: '#000', strokeStyle: '#000', lineWidth: 1, font: '7px sans-serif', textAlign: 'center', textBaseline: 'middle', imageSmoothingEnabled: false, imageSmoothingQuality: 'low',
+      fillRect: function (x, y, w, h) {
+        if (!(w > 0 && h > 0) || ctx.globalAlpha < 0.99 || /^rgba\(/.test(String(ctx.fillStyle))) return;   // 半透明＝影子、光、反光，不算道具本體
+        var x0 = x, y0 = y, x1 = x + w, y1 = y + h;
+        if (clip) { x0 = Math.max(x0, clip[0]); y0 = Math.max(y0, clip[1]); x1 = Math.min(x1, clip[0] + clip[2]); y1 = Math.min(y1, clip[1] + clip[3]); }
+        x0 = Math.max(0, Math.floor(x0)); y0 = Math.max(0, Math.floor(y0)); x1 = Math.min(MW, Math.ceil(x1)); y1 = Math.min(MH, Math.ceil(y1));
+        for (var yy = y0; yy < y1; yy++) for (var xx = x0; xx < x1; xx++) M[yy * MW + xx] = 1;
+      },
+      fillText: function (s, x, y) {   // 字：每字一個字級寬的方塊（量外框用；中文標籤都在自己的底框裡）
+        var m = /([\d.]+)px/.exec(ctx.font || ''), sz = m ? +m[1] : 7, w = String(s).length * sz;
+        var x0 = ctx.textAlign === 'left' ? x : ctx.textAlign === 'right' ? x - w : x - w / 2;
+        ctx.fillRect(x0, y - sz / 2, w, sz);
+      },
+      measureText: function (t) { var m = /([\d.]+)px/.exec(ctx.font || ''); return { width: String(t).length * (m ? +m[1] : 7) }; },
+      drawImage: function () {}, save: function () {}, restore: function () { clip = null; }, beginPath: function () {}, rect: function (x, y, w, h) { clip = [x, y, w, h]; }, clip: function () {},
+      fill: function () {}, stroke: function () {}, moveTo: function () {}, lineTo: function () {}, arc: function () {}, closePath: function () {}, setTransform: function () {}, translate: function () {}, scale: function () {}
+    };
+    return { ctx: ctx, M: M, MW: MW, MH: MH, T: { ctx: ctx, k: 1, cx: -FOOT_PAD, cy: -FOOT_PAD, meas: null, cover: function () { return null; }, used: {}, pool: [] } };
+  }
+  // 道具畫出來的範圍（不透明、不含影子）：{ x0, x1, top（最上面一列連續 ≥3 格）, topAny（最上面一格）, bottom }｜null
+  function drawnExtent(o, PR, S) {
+    var sp = PR[o.type]; if (!sp || !sp.draw) return null;
+    var W = (S.L && S.L.size && S.L.size[0]) || 320, H = (S.L && S.L.size && S.L.size[1]) || 320, mp = maskPainter(W, H);
+    try { sp.draw(OPainter(mp.T), o, S); } catch (e) { return null; }
+    var M = mp.M, MW = mp.MW, MH = mp.MH, x0 = Infinity, x1 = -Infinity, top = Infinity, topAny = Infinity, bottom = -Infinity;
+    for (var y = 0; y < MH; y++) {
+      var run = 0, wide = false, any = false;
+      for (var x = 0; x < MW; x++) {
+        if (M[y * MW + x]) { any = true; run++; if (run >= 3) wide = true; if (x < x0) x0 = x; if (x + 1 > x1) x1 = x + 1; } else run = 0;
+      }
+      if (any) { if (y < topAny) topAny = y; bottom = y + 1; }
+      if (wide && y < top) top = y;
+    }
+    if (!(x1 > x0) || top === Infinity) return null;
+    return { x0: x0 - FOOT_PAD, x1: x1 - FOOT_PAD, top: top - FOOT_PAD, topAny: topAny - FOOT_PAD, bottom: bottom - FOOT_PAD };
+  }
+  function sceneFor(L) { return { L: L, layout: L, W: L.size && L.size[0], H: L.size && L.size[1], state: {}, t: 0, rt: 0, frame: 0, card: function () { return null; } }; }
+  function standing(o, PR) { var sp = PR[o.type], ly = propLayerO(o, PR); return !!sp && !o.hidden && ly !== 'wall' && ly !== 'bg' && ly !== 'fx'; }
+  // 一件站立道具的腳下範圍 [x, y, w, h]（見上）；量不到就退回 foot；兩個都沒有回 null
+  function propFoot(o, PR, S, walkBehind) {
+    PR = PR || O34.PROPS; var sp = PR[o.type]; if (!sp) return null;
+    var f = sp.foot ? sp.foot(o) : null, d = drawnExtent(o, PR, S || {});
+    if (!d) return f ? f.slice() : null;
+    var fy = o.y != null ? o.y : d.bottom, x0 = d.x0, x1 = d.x1, y0 = walkBehind && f ? f[1] : d.top, y1 = Math.max(fy, d.bottom);
+    if (walkBehind && !f) y0 = fy - (o.d || 0);
+    if (f) { x0 = Math.min(x0, f[0]); x1 = Math.max(x1, f[0] + f[2]); y0 = Math.min(y0, f[1]); y1 = Math.max(y1, f[1] + f[3]); }
+    return [x0, y0, x1 - x0, y1 - y0];
+  }
+  // 整間店的腳下範圍：[{ id, props:[道具 id…], rects:[[x,y,w,h]…], poly:[[x,y]…], box, walkBehind? }]（站立、沒 hidden、block 不是 false 的道具；
+  // 群組＝一塊多邊形）。PR 預設 O34.PROPS；margin＝[mx,my] 時每個成員矩形先往外加邊再合（navObstacles 用）
+  function footprints(L, PR, margin) {
+    PR = PR || O34.PROPS; var S = sceneFor(L), F = L.footprints || {}, groups = F.groups || {}, wb = {}, gOf = {}, out = [], byG = {};
+    (F.walkBehind || []).forEach(function (id) { wb[id] = true; });
+    Object.keys(groups).forEach(function (g) { (groups[g] || []).forEach(function (id) { gOf[id] = g; }); });
+    var mx = margin ? margin[0] : 0, my = margin ? margin[1] : 0;
+    (L.props || []).forEach(function (o, i) {
+      if (!standing(o, PR) || o.block === false) return;
+      var id = o.id || (o.type + '#' + i), r = propFoot(o, PR, S, !!wb[id]); if (!r) return;
+      if (mx || my) r = [r[0] - mx, r[1] - my, r[2] + 2 * mx, r[3] + 2 * my];
+      var g = gOf[id];
+      if (g) { if (!byG[g]) { byG[g] = { id: g, props: [], rects: [] }; out.push(byG[g]); } byG[g].props.push(id); byG[g].rects.push(r); return; }
+      out.push({ id: id, props: [id], rects: [r], walkBehind: !!wb[id] });
+    });
+    out.forEach(function (f) { f.poly = f.rects.length === 1 ? rectPoly(f.rects[0]) : rectsPoly(f.rects); f.gap = f.poly.gapFix || 0; f.box = polyBox(f.poly); });
     return out;
   }
+  // 避障框：腳下範圍加 navMargin（每件道具的矩形各自加邊再合）＋ layout.obstacles（直接給的矩形）
+  function navObstacles(L) {
+    var m = L.navMargin || [5, 2];
+    var out = footprints(L, O34.PROPS, m).map(function (f) { return { id: f.id, poly: f.poly, box: f.box }; });
+    (L.obstacles || []).forEach(function (r, i) { out.push({ id: 'obstacles[' + i + ']', poly: rectPoly(r), box: r.slice() }); });
+    return out;
+  }
+  // 障礙可以是 {poly, box} 或舊式矩形 [x,y,w,h]
+  function inObs(p, o) {
+    if (Array.isArray(o) && typeof o[0] === 'number') return inRect(p, o);
+    var b = o.box; if (b && !(p[0] > b[0] && p[0] < b[0] + b[2] && p[1] > b[1] && p[1] < b[1] + b[3])) return false;
+    return inPoly(p, o.poly || o);
+  }
+  function segHitsObs(p, q, o) {
+    if (Array.isArray(o) && typeof o[0] === 'number') return segHitsRect(p, q, o);
+    var b = o.box; if (b && !segHitsRect(p, q, [b[0] - 1e-6, b[1] - 1e-6, b[2] + 2e-6, b[3] + 2e-6]) && !inRect(p, b) && !inRect(q, b)) return false;
+    return segHitsPoly(p, q, o.poly || o);
+  }
   // 線段 p→q 不穿過任何障礙（端點本身在框裡的那個框跳過：spot 站在框裡由 check-shops 擋）
-  function navClear(obs, p, q) { for (var i = 0; i < obs.length; i++) { var r = obs[i]; if (inRect(p, r) || inRect(q, r)) continue; if (segHitsRect(p, q, r)) return false; } return true; }
+  function navClear(obs, p, q) { for (var i = 0; i < obs.length; i++) { var r = obs[i]; if (inObs(p, r) || inObs(q, r)) continue; if (segHitsObs(p, q, r)) return false; } return true; }
   // SPEC-v4 §2.4.5：走不到回 null（不再回 [b]＝直線穿家具）；自己絕不丟例外。呼叫端一定要處理 null（routed()、api.route、stage.duelIn、check-shops、shop.test）
   function navRoute(L, a, b, obs) {
     try {
@@ -2166,6 +2330,7 @@
   // strict：走不到就丟錯（Node 測試設 DipShop.strict＝true；瀏覽器用 ?strict=1 開，SPEC-v4 §2.4.5）
   var EXPORTS = { mount: mount, defProp: defProp, hook: hook, HOOKS: HOOKS, PROPS: PROPS, Painter: Painter, DEFAULT_PAL: DEFAULT_PAL, GLYPH: GLYPH, HAND: HAND, EMOTE: EMOTE, HANDAT: HANDAT, armRows: armRows, bayer: bayer, seeded: seeded,
     defO: defO, hookO: hookO, O34: O34, OPainter: OPainter, navRoute: navRoute, navObstacles: navObstacles, navClear: navClear, navFallback: navFallback, segHitsRect: segHitsRect,
+    segHitsPoly: segHitsPoly, inPoly: inPoly, rectPoly: rectPoly, rectsPoly: rectsPoly, inObs: inObs, segHitsObs: segHitsObs, drawnExtent: drawnExtent, propFoot: propFoot, footprints: footprints,
     buildHotList: buildHotList, hitPick: hitPick, hitTop: hitTop, hotRegion: hotRegion, regionCenter: regionCenter, regionOutline: regionOutline, followHot: followHot, propVisBox: propVisBox,
     strict: false, version: '4.0' };
   try { if (typeof location !== 'undefined' && /[?&]strict=1(&|$)/.test(location.search || '')) EXPORTS.strict = true; } catch (_) {}

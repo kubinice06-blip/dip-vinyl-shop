@@ -32,11 +32,10 @@
   "note": "pools＝[x, y, rx, ry, 顏色, 強度]：窗、窗光落地、中島軌道燈、唱盤區、試聽桌燈、櫃檯；軌道燈的光池由 trackLights 道具自己給"
  },
  "cameras": {"full": {"y": 0, "h": 322, "minH": 250, "anchor": "bottom"}, "scene": {"y": 0, "h": 322, "minH": 240, "anchor": "bottom"}, "map": {"y": 0, "h": 322, "minH": 250, "anchor": "bottom"}, "reward": {"y": 40, "h": 282, "minH": 230, "anchor": "bottom"}, "strip": {"y": 228, "h": 90}, "stripS": {"y": 256, "h": 62}},
- "spots": {"out": [24, 78, true], "q1": [17, 77, true], "q2": [31, 76, true], "door": [24, 90], "leave": [24, 88], "atdoor": [40, 100], "in": [64, 170], "counter": [244, 176], "regular": [70, 104], "ref": [146, 304], "pay": [222, 224], "aisle": [72, 140], "near": [120, 292], "visit": [168, 292], "browse": [198, 240], "crateP": [120, 274], "dig1": [112, 274], "dig2": [168, 274], "dig3": [26, 276], "listen": [54, 186], "between": [146, 304], "frontleft": [60, 296], "map": [150, 300], "duelE": [90, 316], "duelP": [202, 316], "leaving": [150, 110], "mid": [96, 112], "sale": [44, 128]},
+ "spots": {"out": [24, 78, true], "q1": [17, 77, true], "q2": [31, 76, true], "door": [24, 90], "leave": [24, 88], "atdoor": [40, 100], "in": [64, 170], "counter": [244, 176], "regular": [70, 104], "ref": [146, 304], "pay": [222, 224], "aisle": [72, 140], "near": [120, 292], "visit": [168, 292], "browse": [198, 240], "crateP": [120, 274], "dig1": [112, 274], "dig2": [168, 274], "dig3": [26, 276], "listen": [54, 186], "between": [146, 304], "frontleft": [60, 296], "map": [150, 300], "duelE": [90, 316], "duelP": [202, 316], "leaving": [170, 95], "mid": [96, 100], "sale": [44, 128]},
  "nav": [
   [30, 100],
   [72, 110],
-  [146, 110],
   [198, 110],
   [72, 170],
   [198, 170],
@@ -54,12 +53,19 @@
   [193, 266],
   [90, 124],
   [88, 268],
-  [52, 158],
+  [62, 156],
   [42, 112],
   [115, 303],
-  [177, 303]
+  [177, 303],
+  [90, 100],
+  [194, 100],
+  [62, 127],
+  [62, 180],
+  [203, 212],
+  [41, 98]
  ],
  "navMargin": [5, 2],
+ "footprints": {"groups": {"island": ["isl-0a", "isl-0b", "isl-1a", "isl-1b", "isl-2a", "isl-2b", "isl-3a", "isl-3b", "crate-jazz", "crate-tw"]}, "walkBehind": ["counter", "deck"], "note": "腳下範圍（FIXLIST 1，店主：不要跨過中島唱片區）：每件站立道具＝它實際畫出來的那一塊（shop.js propFoot 量的：左右照畫的、上緣＝最上面連續 ≥3 格的那列、下緣＝地板前緣）∪ foot；groups 合成一塊多邊形（中島 10 箱）；walkBehind＝老闆站在它後面（spots.counter、ref），只算地面那塊。避障＝這一份加 navMargin；check-shops、shop.test、路線圖都用這一份。後走道＝後牆矮櫃前緣 y90 與中島上緣 y104 之間（mid、leaving 站這裡）"},
  "duel": {"deck": [146, 293], "step": 10, "note": "唱盤區（一台，SPEC-v4 §2.3.1）：轉盤中心＝duel.deck；老闆站在台後（ref）當裁判，兩個對決者在兩側，贏的人往台子上前 step 格放唱片"},
  "meta": {"owner": "owner", "boss": "boss", "crates": null, "roster": null, "unlock": null, "difficulty": 1},
  "props": [
