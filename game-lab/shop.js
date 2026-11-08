@@ -1262,27 +1262,26 @@
     return [x0, y0, x1 - x0, y1 - y0];
   }
   // 整間店的腳下範圍：[{ id, props:[道具 id…], rects:[[x,y,w,h]…], poly:[[x,y]…], box, walkBehind? }]（站立、沒 hidden、block 不是 false 的道具；
-  // 群組＝一塊多邊形）。PR 預設 O34.PROPS；margin＝[mx,my] 時每個成員矩形先往外加邊再合（navObstacles 用）
+  // 群組＝一塊多邊形）。PR 預設 O34.PROPS；margin＝[mx,my]（或 function(那一塊的 id) → [mx,my]）時每個成員矩形先往外加邊再合（navObstacles 用）
   function footprints(L, PR, margin) {
     PR = PR || O34.PROPS; var S = sceneFor(L), F = L.footprints || {}, groups = F.groups || {}, wb = {}, gOf = {}, out = [], byG = {};
     (F.walkBehind || []).forEach(function (id) { wb[id] = true; });
     Object.keys(groups).forEach(function (g) { (groups[g] || []).forEach(function (id) { gOf[id] = g; }); });
-    var mx = margin ? margin[0] : 0, my = margin ? margin[1] : 0;
     (L.props || []).forEach(function (o, i) {
       if (!standing(o, PR) || o.block === false) return;
       var id = o.id || (o.type + '#' + i), r = propFoot(o, PR, S, !!wb[id]); if (!r) return;
+      var g = gOf[id], m = typeof margin === 'function' ? margin(g || id) : margin, mx = m ? m[0] : 0, my = m ? m[1] : 0;
       if (mx || my) r = [r[0] - mx, r[1] - my, r[2] + 2 * mx, r[3] + 2 * my];
-      var g = gOf[id];
       if (g) { if (!byG[g]) { byG[g] = { id: g, props: [], rects: [] }; out.push(byG[g]); } byG[g].props.push(id); byG[g].rects.push(r); return; }
       out.push({ id: id, props: [id], rects: [r], walkBehind: !!wb[id] });
     });
     out.forEach(function (f) { f.poly = f.rects.length === 1 ? rectPoly(f.rects[0]) : rectsPoly(f.rects); f.gap = f.poly.gapFix || 0; f.box = polyBox(f.poly); });
     return out;
   }
-  // 避障框：腳下範圍加 navMargin（每件道具的矩形各自加邊再合）＋ layout.obstacles（直接給的矩形）
+  // 避障框：腳下範圍加 navMargin（每件道具的矩形各自加邊再合；L.footprints.margin 可以逐塊指定）＋ layout.obstacles（直接給的矩形）
   function navObstacles(L) {
-    var m = L.navMargin || [5, 2];
-    var out = footprints(L, O34.PROPS, m).map(function (f) { return { id: f.id, poly: f.poly, box: f.box }; });
+    var m = L.navMargin || [5, 2], mm = (L.footprints && L.footprints.margin) || {};
+    var out = footprints(L, O34.PROPS, function (id) { return mm[id] || m; }).map(function (f) { return { id: f.id, poly: f.poly, box: f.box }; });
     (L.obstacles || []).forEach(function (r, i) { out.push({ id: 'obstacles[' + i + ']', poly: rectPoly(r), box: r.slice() }); });
     return out;
   }

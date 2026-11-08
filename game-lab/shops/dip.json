@@ -48,10 +48,10 @@
   [240, 282],
   [40, 300],
   [250, 300],
-  [192, 124],
+  [196, 124],
   [204, 188],
   [193, 266],
-  [90, 124],
+  [86, 124],
   [88, 268],
   [62, 156],
   [42, 112],
@@ -65,7 +65,7 @@
   [41, 98]
  ],
  "navMargin": [5, 2],
- "footprints": {"groups": {"island": ["isl-0a", "isl-0b", "isl-1a", "isl-1b", "isl-2a", "isl-2b", "isl-3a", "isl-3b", "crate-jazz", "crate-tw"]}, "walkBehind": ["counter", "deck"], "note": "腳下範圍（FIXLIST 1，店主：不要跨過中島唱片區）：每件站立道具＝它實際畫出來的那一塊（shop.js propFoot 量的：左右照畫的、上緣＝最上面連續 ≥3 格的那列、下緣＝地板前緣）∪ foot；groups 合成一塊多邊形（中島 10 箱）；walkBehind＝老闆站在它後面（spots.counter、ref），只算地面那塊。避障＝這一份加 navMargin；check-shops、shop.test、路線圖都用這一份。後走道＝後牆矮櫃前緣 y90 與中島上緣 y104 之間（mid、leaving 站這裡）"},
+ "footprints": {"groups": {"island": ["isl-0a", "isl-0b", "isl-1a", "isl-1b", "isl-2a", "isl-2b", "isl-3a", "isl-3b", "crate-jazz", "crate-tw"]}, "walkBehind": ["counter", "deck"], "margin": {"island": [8, 2]}, "note": "腳下範圍（FIXLIST 1，店主：不要跨過中島唱片區）：每件站立道具＝它實際畫出來的那一塊（shop.js propFoot 量的：左右照畫的、上緣＝最上面連續 ≥3 格的那列、下緣＝地板前緣）∪ foot；groups 合成一塊多邊形（中島 10 箱）；walkBehind＝老闆站在它後面（spots.counter、ref），只算地面那塊。避障＝這一份加 navMargin（margin 可以逐塊指定：中島兩側走道多留 3 格，人的手臂比腳寬，走在走道上不會被箱子邊切掉一塊）；check-shops、shop.test、路線圖都用這一份。後走道＝後牆矮櫃前緣 y90 與中島上緣 y104 之間（mid、leaving 站這裡）"},
  "duel": {"deck": [146, 293], "step": 10, "note": "唱盤區（一台，SPEC-v4 §2.3.1）：轉盤中心＝duel.deck；老闆站在台後（ref）當裁判，兩個對決者在兩側，贏的人往台子上前 step 格放唱片"},
  "meta": {"owner": "owner", "boss": "boss", "crates": null, "roster": null, "unlock": null, "difficulty": 1},
  "props": [

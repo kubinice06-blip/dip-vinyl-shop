@@ -466,10 +466,14 @@ section('FIXLIST 1：腳下範圍＝畫出來的那一塊（中島一塊含最�
   const h1 = CS.routeHitsFeet(DS, [[90, 124], [192, 124]], CS.footprints(dip, DS.O34.PROPS));
   ok(h1 && h1.id === 'island', '抓得到 A2 路線圖 13（sale→pay）那一段 [90,124]→[192,124] 穿過中島', h1);
   ok(!CS.routeHitsFeet(DS, [[90, 124], [192, 124]], dip.props.filter(o => /^isl-/.test(o.id)).map(o => [o.id, DS.O34.PROPS.binTable.foot(o)])), '（對照：舊的 foot 只框地面那塊，這一段抓不到）');
-  const bad2 = JSON.parse(JSON.stringify(dip)); bad2.footprints.walkBehind = ['deck', 'isl-0a']; bad2.footprints.groups.island = bad2.footprints.groups.island.filter(i => i !== 'isl-0a').concat(['nope']);
+  const bad2 = JSON.parse(JSON.stringify(dip)); bad2.footprints.walkBehind = ['deck', 'isl-0a']; bad2.footprints.margin = { island: [8, 2], nope: [1, 1], booth: [3] }; bad2.footprints.groups.island = bad2.footprints.groups.island.filter(i => i !== 'isl-0a').concat(['nope']);
   const r2 = CS.checkLayout(bad2, 'shops/dip.json', lib, cards, content).problems;
   ok(r2.some(p => /spots\.counter 站在家具裡 counter/.test(p)), '拿掉櫃檯的 walkBehind：老闆的站位在櫃檯畫出來的範圍裡 → 抓得到', r2.slice(0, 3));
   ok(r2.some(p => /walkBehind：isl-0a.*不是櫃檯或唱盤台/.test(p)) && r2.some(p => /groups\.island：沒有道具 nope/.test(p)), '抓得到 walkBehind 放在箱子上、群組有不存在的 id', r2.slice(0, 5));
+  ok(r2.some(p => /footprints\.margin：沒有這一塊 nope/.test(p)) && r2.some(p => /footprints\.margin\.booth 要是/.test(p)), '抓得到壞的 footprints.margin', r2.slice(0, 8));
+  // 中島兩側走道多留 3 格（footprints.margin.island）：避障框比腳下範圍左右各多 8 格
+  const oIsl = DS.navObstacles(dip).find(o => o.id === 'island');
+  eq([oIsl.box[0], oIsl.box[0] + oIsl.box[2]], [isl.box[0] - 8, isl.box[0] + isl.box[2] + 8], '中島的避障框左右各多 8 格（footprints.margin.island）');
 });
 
 // ---------- 舞台（stage.js v4）的純邏輯：假 shop 記下每個呼叫，手動推時間（SPEC-v4 §2.3.2、§2.3.3、§2.3.8、§5.1 A2）

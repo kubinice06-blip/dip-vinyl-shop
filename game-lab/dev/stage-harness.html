@@ -155,7 +155,8 @@
   };
   $('#holdO').onclick = function () { var st = H.stage; if (!st) return; var on = !this.classList.contains('on'); st.hold('o', on ? { sleeve: 'caetano-veloso-transa' } : null); this.classList.toggle('on', on); };
   $('#floor').onclick = function () { var st = H.stage; if (!st) return; var on = !this.classList.contains('on'); st.floorRecord(on ? 'duelE' : null, { attr: 'o', card: '老王樂隊-暮夜徐行' }); this.classList.toggle('on', on); };
-  // 路線圖（SPEC-v4 §2.3.2）：每條路線用 navRoute 算（跟 shop.walk 同一套），1 倍速＝每秒 72 格；家具腳下範圍（foot）畫紅框
+  // 路線圖（SPEC-v4 §2.3.2）：每條路線用 navRoute 算（跟 shop.walk 同一套），1 倍速＝每秒 72 格；
+  // 家具腳下範圍＝DipShop.footprints（FIXLIST 1：道具實際畫出來的那一塊；中島 10 箱一塊；櫃檯、唱盤台只算地面那塊）畫紅框，避障框（加 navMargin）畫淡虛線
   var ROUTES = [
     ['counter', 'dig1', 3.2], ['counter', 'dig2', 3.2], ['dig2', 'counter', 3.2],
     ['counter', 'mid', 3.5], ['mid', 'ref', 3.5], ['pay', 'leaving', 3.5], ['atdoor', 'duelE', 3.5], ['leaving', 'duelP', 3.5],
@@ -171,12 +172,15 @@
     var svg = document.createElementNS(ns, 'svg'); svg.setAttribute('class', 'rt'); svg.setAttribute('width', host.clientWidth); svg.setAttribute('height', host.clientHeight);
     var mk = function (n, a) { var e = document.createElementNS(ns, n); for (var k in a) e.setAttribute(k, a[k]); svg.appendChild(e); return e; };
     var C = function (x, y) { return st.cssOf(x, y); };
-    // 家具的腳下範圍（站立道具的 foot，不加邊）
-    var feet = [];
-    (L.props || []).forEach(function (o) { var s = OP[o.type], ly = o.layer || (s && s.layer); if (!s || !s.foot || o.hidden || ly === 'wall' || ly === 'bg' || ly === 'fx' || o.block === false) return; feet.push([o.id || o.type, s.foot(o)]); });
-    feet.forEach(function (f) { var a = C(f[1][0], f[1][1]), b = C(f[1][0] + f[1][2], f[1][1] + f[1][3]); mk('rect', { x: a.x, y: a.y, width: b.x - a.x, height: b.y - a.y, fill: 'rgba(255,40,40,.18)', stroke: '#ff3b3b', 'stroke-width': 1, 'stroke-dasharray': '3 2' }); });
-    // 中島右側走道（x 188–210、y 150–270）
+    // 家具的腳下範圍（DipShop.footprints，不加邊）＝紅框；避障框（navObstacles，加 navMargin）＝淡紅虛線
+    var feet = DS.footprints(L, OP).map(function (f) { return [f.id, f.poly]; });
+    var pp = function (poly) { return poly.map(function (q) { var c = C(q[0], q[1]); return c.x + ',' + c.y; }).join(' '); };
+    obs.forEach(function (o) { mk('polygon', { points: pp(o.poly), fill: 'none', stroke: 'rgba(255,120,120,.55)', 'stroke-width': 1, 'stroke-dasharray': '1 2' }); });
+    feet.forEach(function (f) { mk('polygon', { points: pp(f[1]), fill: 'rgba(255,40,40,.2)', stroke: '#ff3b3b', 'stroke-width': 1.2, 'stroke-dasharray': '3 2' }); });
+    // 中島右側走道（x 188–210、y 150–270）、後走道（後牆矮櫃前緣 → 中島上緣）
     var a0 = C(188, 150), a1 = C(210, 270); mk('rect', { x: a0.x, y: a0.y, width: a1.x - a0.x, height: a1.y - a0.y, fill: 'none', stroke: '#fff', 'stroke-width': 1, 'stroke-dasharray': '1 3' });
+    var isl = DS.footprints(L, OP).filter(function (f) { return f.id === 'island'; })[0];
+    if (isl) { var c0 = C(40, 91), c1 = C(isl.box[0] + isl.box[2] + 25, isl.box[1]); mk('rect', { x: c0.x, y: c0.y, width: c1.x - c0.x, height: c1.y - c0.y, fill: 'none', stroke: '#9bf6ff', 'stroke-width': 1, 'stroke-dasharray': '1 3' }); }
     var out = [];
     ROUTES.forEach(function (r, i) {
       var A = sp[r[0]].slice(0, 2), B = sp[r[1]].slice(0, 2), path = DS.navRoute(L, A, B, obs);
@@ -185,7 +189,7 @@
       for (var j = 1; j < pts.length; j++) {
         var d = Math.hypot(pts[j][0] - pts[j - 1][0], pts[j][1] - pts[j - 1][1]); len += d;
         if (d > best) { best = d; mid = [(pts[j][0] + pts[j - 1][0]) / 2, (pts[j][1] + pts[j - 1][1]) / 2]; }
-        feet.forEach(function (f) { if (!hit && DS.segHitsRect(pts[j - 1], pts[j], f[1])) hit = f[0]; });
+        feet.forEach(function (f) { if (!hit && DS.segHitsPoly(pts[j - 1], pts[j], f[1])) hit = f[0]; });
       }
       var sec = len / (36 * (L.walkK || 2)), col = COLORS[i % COLORS.length], off = (i % 5 - 2) * 0.6;
       mk('polyline', { points: pts.map(function (q) { var c = C(q[0] + off, q[1] + off); return c.x + ',' + c.y; }).join(' '), fill: 'none', stroke: '#111', 'stroke-width': 4, 'stroke-linejoin': 'round', opacity: 0.55 });
@@ -207,7 +211,7 @@
       var t = mk('text', { x: c.x + 3, y: c.y - 3, 'font-size': 9, 'font-weight': 700, 'font-family': 'Space Mono, monospace', fill: '#fff', stroke: '#111', 'stroke-width': 2.5, 'paint-order': 'stroke' }); t.textContent = k;
     });
     var note = document.createElement('li'); note.className = 'note';
-    note.textContent = '紅虛線＝家具腳下範圍（foot）；白點線＝中島右側走道（x 188–210、y 150–270）；秒數＝1 倍速（每秒 72 格），序章實際用 1.5 倍速。全部 ' + out.filter(function (x) { return x.ok; }).length + '／' + out.length + ' 條沒穿過家具、沒超過上限。';
+    note.textContent = '紅框＝家具腳下範圍（畫出來的那一塊；中島 10 箱一塊）、淡紅點線＝避障框（加 navMargin）；白點線＝中島右側走道（x 188–210、y 150–270）、藍點線＝後走道；秒數＝1 倍速（每秒 72 格），序章實際用 1.5 倍速。全部 ' + out.filter(function (x) { return x.ok; }).length + '／' + out.length + ' 條沒穿過家具、沒超過上限。';
     lg.appendChild(note);
     host.appendChild(svg);
     return out;

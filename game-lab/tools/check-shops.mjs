@@ -343,6 +343,12 @@ export function checkOblique(L, file, lib, cards, content) {
   }
   const feetAll = DS.footprints ? DS.footprints(L, OP) : [];
   for (const f of feetAll) if (f.gap > 2) bad('footprints.groups.' + f.id + '：成員之間有 ' + f.gap + ' 格寬的縫（>2），不是一塊');
+  // footprints.margin＝{那一塊的 id: [mx, my]}：逐塊的避障邊（取代 navMargin）；id 要是 footprints 算出來的某一塊
+  if (FP.margin != null && (typeof FP.margin !== 'object' || Array.isArray(FP.margin))) bad('footprints.margin 要是 {id: [mx, my]}');
+  for (const [id, m] of Object.entries(FP.margin || {})) {
+    if (!feetAll.some(f => f.id === id)) bad('footprints.margin：沒有這一塊 ' + id);
+    if (!Array.isArray(m) || m.length !== 2 || !m.every(v => typeof v === 'number' && v >= 0 && v <= 20)) bad('footprints.margin.' + id + ' 要是 [mx, my]（0–20）');
+  }
   // 走位：spot 不站在家具裡；從門口都走得到（每一段不穿過家具）
   const obs = DS.navObstacles(L);
   const obsAt = (q) => obs.find(o => (DS.inObs ? DS.inObs(q, o) : inRect(q, o)));
