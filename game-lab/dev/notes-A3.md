@@ -11,6 +11,7 @@
 - [x] dev/bins-v4.md（commit 11fc44de3；產生器 `dev/shots/A3/mk-bins-md.cjs`，不提交）
 - [x] 截圖（段 5 前半，見下）；highlight（抽屜開著時描那一箱）也改描看得到的那一塊
 - [x] 第二段全部交件（index.html 的 bins.js 在 M1 已做）
+- [x] **A3-M2**（A1 交件 5(b) 請求）：already／skip 各換 2 張，重烘 0 problems，check-covers OK → 分支 `v4/A3-M2`（見「A3-M2」段）
 
 ## 第二段做了什麼（shop.js §2.4＋§2.3.7）
 - `DipShop.buildHotList(L, PROPS, S)`：主熱點（道具 hot、箱子 bin → `bin:<key>`／`crate:<key>`／名牌＝bin.label）、子熱點（`hots(o,S)`，深度＝父＋0.01、`parent`）、
@@ -68,10 +69,27 @@
 
 ## 替換（§4.6）
 - M1：無（207 張全部烘得出來）。
+- M2（2026-11-08，A1 模擬校準請求，記進 `tools/substitutions-v4.json`）：
+  | 組 | 舊 id（星） | 新 id（星） |
+  |---|---|---|
+  | already | `pauline-anna-strom-trans-millenia-consort`（3/5/3） | `don-slepian-sea-of-bliss`（3/4/2） |
+  | already | `gigi-masin-wind`（3/5/3） | `harold-budd-abandoned-cities`（3/4/3） |
+  | skip | `mina-studio-uno-66`（4/5/2） | `roberto-goyeneche-cantor-de-mi-barrio`（3/4/2） |
+  | skip | `dorival-caymmi-caymmi-visita-tom`（4/5/1） | `king-sunny-ade-aura`（3/4/2） |
+  四張都是請求的首選，**沒有用到備案**（C.m2Swaps 不用改）。舊卡從 deck-lists 刪掉、不再烘（content／bins／shops／pitches 都沒用到）。
+
+## A3-M2（2026-11-08）
+- `tools/deck-lists.json`：already／skip 原位置換 4 張（順序不變）；`tools/substitutions-v4.json` 記 4 筆 `{new, group, reason}`。
+- 重烘（`NODE_USE_ENV_PROXY=1 node game-lab/tools/bake-cards.mjs`）：**0 problems**，207 張（−4／+4），封面 207/207、試聽 207 驗過；
+  bins.js 跟 M1 一個位元組都不差；其餘 203 張每一欄 0 變動、順序不變（腳本 scratchpad `A3-cmp-m2.cjs`）。
+  新卡封面：Don Slepian＝Spotify 300px、Harold Budd／Goyeneche＝Apple 300px、King Sunny Adé＝CAA front-250；四張逐一下載目視，都是對的專輯（截圖 `dev/shots/A3/m2/m2-covers.png`）。
+  bandcamp 連結 47 → 46（舊卡 Pauline Anna Strom、Gigi Masin 有，新卡只 Harold Budd 有）。
+- 交叉驗（暫存目錄＝v4/A1 的 game-lab＋這次的 cards.js／bins.js＋A2-M1 的 shops/dip.json）：`check-content` 通過（換牌已生效）、`check-covers` OK（m2Swaps 新卡不跟箱子重複）、
+  `sim.mjs --n 3000` **20/20**，輸出跟 `--project-m2` 除了秒數一模一樣（S4 ≤3 手 4.3%、S7 一般客人 74.9–93.0＝18.1 點）。
 
 ## 請求
-- **主線／A1**：v4/A1 的 notes-A1 已經寫了 A3-M2 請求（冷門仙人、跳針王各換 2 張：don-slepian-sea-of-bliss、harold-budd-abandoned-cities、roberto-goyeneche-cantor-de-mi-barrio、king-sunny-ade-aura）。
-  這一段的派工沒包含 M2，我沒做；要做就派給 A3（改 deck-lists.json、重烘、提交 v4/A3-M2）。check-covers 已經會檢查 content.m2Swaps 的新卡不跟箱子重複。
+- **A2**：A3-M2 起 `pauline-anna-strom-trans-millenia-consort` 不再烘；v4/A2 `dev/stage-harness.html:76` 拿它當示範卡，請換一張（例如 `demetrio-stratos-metrodora`，同樣冷 5，already 組）。
+- **A1／C**：合併 `v4/A3-M2` 後 `C.m2Swaps` 自動生效；整合時把 content.js 的 already／skip 牌單直接改寫成新 id、刪 `C.m2Swaps`（＋check-content 的對應檢查、sim 的 `--project-m2`）。沒有用備案，表不用改。
 - **B2（第二波）**：`tests/e2e.spec.mjs` 改成 import `tests/e2e-lib.mjs`（從 :59-234 複製過來，行為不變；多了 `newPage(…, {dpr})`、`LAB_BASE`、預設四個驗收尺寸）並刪掉自己那份；
   e2e 用 `?strict=1` 開（走不到就主控台錯誤）。
 - **C（整合）**：`check-shops` 的 `o34HotIds` 跟 `buildHotList` 的交叉比對我已經寫在 hit.test（每個必有熱點都在 buildHotList 裡）；C 要再加在 check-shops 也行。
