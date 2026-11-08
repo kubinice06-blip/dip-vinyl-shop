@@ -1328,20 +1328,38 @@
     }
   });
 
-  // ================================================================ 手上拿的東西（shop.js 的 hold）：{ sleeve: 卡 id }＝封套；'ace'＝王牌；{ disc: 屬性 }＝要丟的唱片
+  // ================================================================ 手上拿的東西（shop.js 的 hold）
+  //   { sleeve: 卡 id }＝封套；{ sleeve, back:true }＝封套背面（他亮牌前：深色紙＋白色內圈標；不帶 id＝不知道是哪張）；
+  //   'ace' 或 { ace:true, sleeve|card }＝王牌（金框）；{ disc: 屬性 }＝唱片；sx（0–1）＝翻面時橫向壓扁（stage.js roundItem 200–280 ms）
+  function sleeveBack(P, hx, hy, hw, sx) {
+    P.r(hx - hw, hy - 7, hw * 2, 14, '#1d1712');
+    if (hw < 2) return;
+    P.r(hx - hw + 1, hy - 6, hw * 2 - 2, 12, '#3a2f2b');
+    P.r(hx - hw + 1, hy - 6, hw * 2 - 2, 1, '#4d413b'); P.r(hx - hw + 1, hy + 5, hw * 2 - 2, 1, '#2a211e');
+    P.ell(hx, hy, 3.6 * sx, 3.6, '#efe8d6'); P.ell(hx, hy, 1.6 * sx, 1.6, '#3a2f2b'); P.p(hx, hy, '#1d1712');
+  }
   DS.hookO('holdDraw', function (P, a, hx, hy, S) {
     var h = a.hold; if (!h) return;
+    var sx = (h && h.sx != null) ? Math.max(0, Math.min(1, +h.sx || 0)) : 1;
+    if (h.back) { sleeveBack(P, hx, hy, Math.max(1, Math.round(7 * sx)), sx); return; }
     if (h === 'ace' || h.ace) {
-      P.r(hx - 8, hy - 8, 16, 16, '#8a6020'); P.r(hx - 7, hy - 7, 14, 14, '#e9c35a'); P.r(hx - 6, hy - 6, 12, 12, '#1d1712');
-      if (h.card) P.cover(h.card, hx - 5, hy - 5, 10, 10, { glare: false });
-      else disc7(P, hx, hy, 'c', 0, { kind: 'ace', outline: false });
-      if (Math.floor((S.t || 0) * 4) % 2 === 0) { P.p(hx + 8, hy - 9, '#fff1c2'); P.p(hx - 9, hy + 7, '#fff1c2'); }
+      var aw = Math.max(1, Math.round(8 * sx)), cid = h.card || h.sleeve;
+      P.r(hx - aw, hy - 8, aw * 2, 16, '#8a6020');
+      if (aw >= 2) P.r(hx - aw + 1, hy - 7, aw * 2 - 2, 14, '#e9c35a');
+      if (aw >= 3) P.r(hx - aw + 2, hy - 6, aw * 2 - 4, 12, '#1d1712');
+      if (aw >= 4) { if (cid) P.cover(cid, hx - aw + 3, hy - 5, aw * 2 - 6, 10, { glare: false }); else if (sx >= 1) disc7(P, hx, hy, 'c', 0, { kind: 'ace', outline: false }); }
+      if (sx >= 1 && Math.floor((S.t || 0) * 4) % 2 === 0) { P.p(hx + 8, hy - 9, '#fff1c2'); P.p(hx - 9, hy + 7, '#fff1c2'); }
       return;
     }
-    if (h.sleeve) { P.r(hx - 7, hy - 7, 14, 14, '#1d1712'); P.cover(h.sleeve, hx - 6, hy - 6, 12, 12, { glare: false }); P.a(0.22, function () { P.r(hx - 6, hy - 6, 12, 1, '#ffffff'); }); return; }
+    if (h.sleeve) {
+      var w7 = Math.max(1, Math.round(7 * sx));
+      P.r(hx - w7, hy - 7, w7 * 2, 14, '#1d1712');
+      if (w7 >= 2) { P.cover(h.sleeve, hx - w7 + 1, hy - 6, w7 * 2 - 2, 12, { glare: false }); P.a(0.22, function () { P.r(hx - w7 + 1, hy - 6, w7 * 2 - 2, 1, '#ffffff'); }); }
+      return;
+    }
     if (h.disc) disc7(P, hx, hy, h.disc, Math.floor((S.t || 0) * 16) % 8, { kind: h.kind });
   });
 
   window.DipPropsO = { ATTR: ATTR, disc7: disc7, flatDisc: flatDisc, spark: spark, note: noteGlyph, flag: flag, phones: phones, binGeo: binGeo, duelDeckGeo: duelDeckGeo, counterGeo: counterGeo,
-    EMBLEM: EMBLEM, signEmblem: signEmblem, counterSign: counterSign };
+    EMBLEM: EMBLEM, signEmblem: signEmblem, counterSign: counterSign, sleeveBack: sleeveBack };
 })();

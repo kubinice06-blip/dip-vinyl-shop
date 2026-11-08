@@ -275,6 +275,20 @@
       tone(c, { type: 'square', f: 261.63, t: 0.3, d: 0.3, g: 0.14, a: 0.002, filter: { type: 'lowpass', f: 3000, f2: 200 } });
     },
     flip(c) { noise(c, { d: 0.025, g: 0.3, filter: { type: 'highpass', f: 4000 } }); noise(c, { t: 0.09, d: 0.025, g: 0.3, filter: { type: 'highpass', f: 4000 } }); },
+    // 每手落針後的屬性短音（SPEC-v4 §2.3.9，0.25 s 內）：經典＝大三和弦上行 C5-E5-G5；冷門＝小三和弦下行 A4-F4-D4（三角波）；
+    // 硬蕊＝短方波兩下低音＋噪音；attr null（平手）＝空轉的唱針聲：0.3 s 低通白噪音沙沙＋兩下很輕的低頻「咚」，不帶音高
+    chime(c, o) {
+      const a = o && o.attr;
+      if (a === 'c') [NOTE.C5, NOTE.E5, NOTE.G5].forEach((f, i) => tone(c, { type: 'triangle', f, t: i * 0.055, d: 0.12, g: 0.26, a: 0.003 }));
+      else if (a === 'o') [440, 349.23, 293.66].forEach((f, i) => tone(c, { type: 'triangle', f, t: i * 0.06, d: 0.12, g: 0.3, a: 0.003 }));
+      else if (a === 'h') {
+        [0, 0.1].forEach(t => { tone(c, { type: 'square', f: 98, f2: 82, t, d: 0.08, g: 0.2, a: 0.002, filter: { type: 'lowpass', f: 1400 } }); tone(c, { type: 'square', f: 196, t, d: 0.06, g: 0.1, a: 0.002 }); });
+        noise(c, { d: 0.18, g: 0.16, filter: { type: 'bandpass', f: 1200, q: 0.7 } });
+      } else {
+        noise(c, { d: 0.3, g: 0.12, a: 0.02, filter: { type: 'lowpass', f: 900, q: 0.5 } });
+        [0.05, 0.2].forEach(t => { tone(c, { f: 70, t, d: 0.07, g: 0.22, a: 0.004 }); tone(c, { type: 'triangle', f: 260, f2: 180, t, d: 0.04, g: 0.06, a: 0.002 }); });
+      }
+    },
   };
 
   function sfx(name, opts) {
@@ -698,7 +712,7 @@
   function vibrate(ms) { try { if (navigator.vibrate) navigator.vibrate(ms || 15); } catch (_) {} }
 
   const api = {
-    init, unlockFromGesture, soundOn, mountToggle, onSound, sfx, blip, rainStart, rainStop, music,
+    init, unlockFromGesture, soundOn, mountToggle, onSound, sfx, sfxNames: () => Object.keys(SFX), blip, rainStart, rainStop, music,
     shake, hitStop, flash, floatText, stamp, sparks, encounter, encounter2, bossIntro, reducedMotion, setSpeed, vibrate, setSound,
     get speed() { return S.speed; },
     _state: S,

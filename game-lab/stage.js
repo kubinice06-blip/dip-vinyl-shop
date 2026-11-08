@@ -1,4 +1,4 @@
-/* stage.js：DipLabStage，game-lab 的常駐舞台（SPEC-v2 §2、§5.3）。包住 DipShop（shop.js），給 ui.js／duel.js／tutorial.js 用。
+/* stage.js：DipLabStage，game-lab 的常駐舞台（SPEC-v2 §2、§5.3；v4＝SPEC-v4 §2.3，version '4.0'）。包住 DipShop（shop.js），給 ui.js／duel.js／tutorial.js 用。
  * v3.1：本店換成斜俯視 3/4 的店（路線 P2，shops/dip.json projection:'oblique34'）；API 不變。唱盤區的幾何（轉盤中心、相撞點、落點、弧高）都從 layout.duel 讀，
  *       手的位置問 shop.handAt（DipLabChars 有錨點就用錨點）。小人：window.DipLabChars 有就用，沒有就用原本的 16×16 小人 ×3。
  *
@@ -19,12 +19,18 @@
  *   Stage.highlight([{ ids:[hotId…], label }]) ; highlight([]) 清掉
  *   Stage.hotspots() ; Stage.tap(hotId) ; Stage.reveal(ms) ; Stage.interact(mode) ; Stage.allow(fn|patterns|null)
  *   Stage.legacy(name) → spot ; Stage.destroy()
- *   Stage.duelIn({ foe, ms }) / duelOut({ screen }) → Promise   進出對決的走位＋鏡頭（選用的便利函式）
- *   唱盤區（v3，他左白台／你右黑台／老闆裁判）：
- *   Stage.clash({ kind, p:{attr,card,ace}, e:{attr,card}, seeThrough, toE, toP, speed, reduced, onHit(side), onLand(side,card) }) → Promise（≈1460 ms÷速度）
- *   Stage.clearClash(ms=150) ; hold(side, {sleeve:id}|'ace'|null) ; deck(side, {rec:{attr,card,kind}, state:'spin'|'land'|'armMid'}|null)
- *   Stage.flag('e'|'p'|null, ms) ; throwDisc(from, to, {attr, kind, arc, ms}) → Promise ; burst(x,y,size,color,ms) ; shatter(at, attr) ; flatDisc(at, attr, o)
- *   Stage.pause(on) ; speed(k) ; clashState()
+ *   Stage.duelIn({ foe, ms }) / duelOut({ screen }) → Promise   進出對決的走位＋鏡頭（選用的便利函式；shop.route 回 [] 時用直線距離估路長）
+ *   v4（SPEC-v4 §2.3）：
+ *   Stage.finish(id) ; finishAll()        正在走的那段直接放到終點（⏩／點一下快轉）；finishAll＝p、o、f、q1、q2
+ *   Stage.faceTo(id, other) ; floorRecord(at | null, { attr, card })   面向對方；地上一張平躺的唱片（收尾 E4）
+ *   Stage.bins() → [{ key, hotId:'bin:'+key, label, stand, propId }] ; focus(hotId, { panelMin, ms }) → Promise ; unfocus(ms)
+ *   唱盤區（v4：一台置中，老闆在台後當裁判，他左你右）：
+ *   Stage.clash({ kind, blocked, by, toE, toP, speed, reduced, nameE, p:{attr,star,card,ace}, e:{attr,star,card,ace}, onHit(side), onLand(side,card) })
+ *       → Promise（1460 ms÷速度；減少動態 560 ms÷速度）。v3 呼叫（沒有 star／blocked／by）照演：星數退回卡片那軸、by 從屬性推
+ *   Stage.clearClash(ms=150) ; hold(side 'e'|'f'|'p'|'o', {sleeve:id, back?}|'ace'|null) ; deck({rec:{attr,card,kind}, state, by}|null)（舊 deck(side, d) 照收）
+ *   Stage.badge(side, {attr, star, ace}|null, ms?) ; badgeRect(side) → DOMRect|null   頭頂屬性方塊（.ds-badge；方塊在時那人的名牌暫時收起）
+ *   Stage.flag('e'|'p'|null, ms) ; burst(x,y,size,color,ms) ; flatDisc(at, attr, o)
+ *   Stage.pause(on) ; speed(k) ; seek(t|null) ; clashState() → { items, deck, held, badges, paused, speed, fast }
  *   舊 Stage 相容：anger notes busy dig show foe setSprite actor cls stamp clearStamps unmount
  *
  * 規則：整支包在 IIFE；只掛 window.DipLabStage；讀 dip-character.js 的 avatarRows／PIX_PAL，不宣告同名全域；不碰 localStorage。
@@ -45,13 +51,14 @@
   // 矮螢幕規則：面板最少要留多高（SPEC-v2 §2）
   var PANEL_MIN = { title: 130, scene: 150, map: 200, reward: 260, node: 260, end: 260, taipei: 92 };
   var CAM_PANEL = { full: 150, scene: 150, map: 200, reward: 260 };
-  // 每個畫面舞台上哪些東西可以點（SPEC-v2 §5.4）
+  // 每個畫面舞台上哪些東西可以點（SPEC-v2 §5.4；v4 §2.3.8：scene／duel／reward 也能點箱子，ui.js 決定開抽屜還是老闆說「打完再翻。」）
   var INTERACT = {
     all: null,
     title: null, map: null,
-    scene: ['rack:*', 'now'],
-    duel: ['rack:*', 'now', 'owner'],
-    node: [], reward: [], none: [],
+    scene: ['rack:*', 'now', 'bin:*'],
+    duel: ['rack:*', 'now', 'owner', 'bin:*'],
+    reward: ['bin:*'],
+    node: [], none: [],
     taipei: ['pin-*']
   };
   var layoutCache = {};
@@ -123,10 +130,10 @@
     var timers = [];
     function T(fn, ms) { var t = setTimeout(fn, ms); timers.push(t); return t; }
     function speed() { var k = typeof opts.speed === 'function' ? opts.speed() : (opts.speed || 1); return k > 0 ? k : 1; }
-    function sfx(n) {
+    function sfx(n, o) {   // o 照傳下去（chime 的 {attr}）
       if (opts.sfx === false) return;
-      if (typeof opts.sfx === 'function') { try { opts.sfx(n); } catch (e) { console.error(e); } return; }
-      var f = W.DipLabFx; if (f && typeof f.sfx === 'function') try { f.sfx(n); } catch (e) { console.error(e); }
+      if (typeof opts.sfx === 'function') { try { opts.sfx(n, o); } catch (e) { console.error(e); } return; }
+      var f = W.DipLabFx; if (f && typeof f.sfx === 'function') try { f.sfx(n, o); } catch (e) { console.error(e); }
     }
     function avatarRowsOf(av) { return (typeof W.avatarRows === 'function') ? W.avatarRows(av) : null; }
     function resolveSprite(spr) {
@@ -187,16 +194,8 @@
       var pm = o.panelMin != null ? o.panelMin : (PANEL_MIN[o.screen] != null ? PANEL_MIN[o.screen] : (CAM_PANEL[name] != null ? CAM_PANEL[name] : 150));
       return fitCamera(c, { dpr: v.dpr, dev: v.baseDev, avail: visH() - 32 - pm, fine: !!(L.fine || L.projection) });
     }
-    var lastCam = { name: 'full', o: {} }, tweening = 0;
-    function camera(name, o) {
-      o = o || {};
-      lastCam = { name: name, o: { screen: o.screen, panelMin: o.panelMin, noAuto: o.noAuto } };
-      var cams = L.cameras || {};
-      if (!o.noAuto) name = pickCamera(name, cams, visH());
-      var c = cams[name] || cams.full || { y: 0, h: L.size[1] };
-      camName = name;
-      shop.sparkle(opts.sparkle !== false && !QS.nosparkle && !/^strip/.test(name));
-      var tgt = fitCam(name, c, o), ms = o.ms || 0;
+    var lastCam = { name: 'full', o: {} }, tweening = 0, focusPrev = null;
+    function toView(tgt, ms) {
       if (ms > 0 && reduced()) {
         return new Promise(function (res) {
           host.classList.add('ds-fade');
@@ -206,60 +205,108 @@
       tweening++;
       return shop.tweenView(tgt, ms).then(function () { tweening--; }, function (e) { tweening--; throw e; });
     }
+    function camera(name, o) {
+      o = o || {};
+      focusPrev = null;   // 換鏡頭＝抽屜那一箱的對焦結束
+      lastCam = { name: name, o: { screen: o.screen, panelMin: o.panelMin, noAuto: o.noAuto } };
+      var cams = L.cameras || {};
+      if (!o.noAuto) name = pickCamera(name, cams, visH());
+      var c = cams[name] || cams.full || { y: 0, h: L.size[1] };
+      camName = name;
+      shop.sparkle(opts.sparkle !== false && !QS.nosparkle && !/^strip/.test(name));
+      return toView(fitCam(name, c, o), o.ms || 0);
+    }
+    // 熱點的形狀（場景座標外框）：shop 的熱點清單有就用；箱子 bin:<key> 還沒有熱點時退回道具的 box
+    function shapeOf(hid) {
+      var hs = shop.hotspots ? shop.hotspots() : [];
+      for (var i = 0; i < hs.length; i++) if (hs[i].id === hid) return hs[i].rect;
+      if (/^bin:/.test(hid)) {
+        var k = hid.slice(4), pr = (L.props || []).filter(function (o) { return o.bin && o.bin.key === k; })[0], sp = pr && W.DipShop.O34 && W.DipShop.O34.PROPS[pr.type];
+        if (sp && sp.box) return sp.box(pr);
+      }
+      return null;
+    }
+    // 對焦一箱（抽屜開著時，SPEC-v4 §2.3.8）：full 的鏡頭規則、面板最少 panelMin，再把 y 移到形狀整個在畫面裡（上下各留 6 格）
+    function focusView(hid, o) {
+      var c = (L.cameras || {}).full || { y: 0, h: L.size[1] }, tgt = fitCam('full', c, { panelMin: o.panelMin, screen: o.screen });
+      var r = shapeOf(hid), H = L.size[1];
+      if (r) {
+        var m = 6, y = tgt.y, h = tgt.h;
+        if (r[1] - m < y) y = r[1] - m;
+        if (r[1] + r[3] + m > y + h) y = r[1] + r[3] + m - h;
+        if (r[3] + 2 * m > h) y = r[1] - m;   // 比畫面還高：上緣優先
+        tgt = { y: Math.max(0, Math.min(H - h, Math.round(y))), h: h, dev: tgt.dev };
+      }
+      return tgt;
+    }
+    function focus(hid, o) {
+      o = o || {};
+      if (!focusPrev) focusPrev = { name: lastCam.name, o: lastCam.o };   // unfocus 回到第一次 focus 之前的鏡頭
+      var prev = focusPrev;
+      lastCam = { name: 'full', o: {}, focus: hid, fo: { panelMin: o.panelMin, screen: o.screen } };
+      camName = 'full';
+      shop.sparkle(opts.sparkle !== false && !QS.nosparkle);
+      var pr = toView(focusView(hid, o), o.ms == null ? 300 : o.ms);
+      focusPrev = prev;
+      return pr;
+    }
+    function unfocus(ms) {
+      if (!focusPrev) return Promise.resolve();
+      var p = focusPrev; focusPrev = null;
+      return camera(p.name, Object.assign({}, p.o, { ms: ms == null ? 300 : ms }));
+    }
     // 可視高改變（轉向、Safari 工具列收起來、鍵盤）：用同一個鏡頭重新套矮螢幕規則
     var rzT = 0;
     function onResize() {
       clearTimeout(rzT);
-      rzT = setTimeout(function () { if (!destroyed && shop && !tweening) camera(lastCam.name, Object.assign({ ms: 0 }, lastCam.o)); }, 150);
+      rzT = setTimeout(function () {
+        if (destroyed || !shop || tweening) return;
+        if (lastCam.focus && focusPrev) toView(focusView(lastCam.focus, lastCam.fo || {}), 0);   // 抽屜開著：重新對焦那一箱
+        else camera(lastCam.name, Object.assign({ ms: 0 }, lastCam.o));
+      }, 150);
     }
     W.addEventListener('resize', onResize);
     if (W.visualViewport) W.visualViewport.addEventListener('resize', onResize);
 
-    // ======================================================================= 唱盤區（v3；DESIGN「兩座唱盤對峙」）
-    // 他在左（白台）、你在右（黑台）、老闆在櫃檯正中當裁判。時間 t＝你點屬性鈕那一刻（ms，×速度）；
-    // clash() 每格算出所有東西的位置，填進 shop.state.fx／decks，並設定兩人的手臂、手上的東西、後退。
-    var TT = { items: [], decks: {}, held: {}, paused: false, speedK: 1, off: null, fast: false, last: 0, seq: 0 };
-    var TTK = { relP: 200, windE: 260, relE: 300, col: 520, sep: 560, go: 600, hit: 760, home: 1180, back: 1460, done: 1500, next: 2060, clear: 2360 };
-    var ATTRC = { c: '#1f5fae', o: '#6a3fa0', h: '#c11628' };
+    // ======================================================================= 唱盤區（v4：一台置中，SPEC-v4 §2.3.3／§2.3.4）
+    // 老闆站在台後（ref）當裁判，他在左（duelE）、你在右（duelP）。一手＝roundItem：兩人舉起封套（他背面朝外）→ 他翻面 → 頭頂屬性方塊
+    // → 判定（剋中：火花從贏家方塊射到輸家；剋不動：防守方方塊一圈白環＋比星閃；同色：一起閃）→ 輸家受擊、贏家上前把唱片放上轉盤
+    // （落針、屬性短音、NOW 小窗、音符、老闆舉旗）→ 輸家收回袋子；平手＝空盤、老闆搖頭。
+    // 時間 t＝duel.js 叫 clash() 那一刻（ms，速度 1；實際 ÷ TT.speedK）。每格把台上的唱片填進 shop.state.deck（單數）、特效填進 shop.state.fx。
+    var TT = { items: [], deck: null, held: {}, badges: {}, nudge: {}, floor: null, paused: false, speedK: 1, off: null, fast: false, last: 0 };
+    var RT = { flip: 200, face: 240, badge: 280, judge: 480, flash: 520, hit: 560, slide: 600, stepEnd: 680, put: 700, land: 800, arm: 880, flag: 900, spin: 960, chime: 980,
+      shake: 600, shakeEnd: 1320, back: 1300, home: 1400, done: 1460, flagEnd: 1800, end: 1800 };
+    var ATTRC = { c: '#1f5fae', o: '#6a3fa0', h: '#c11628' }, ZH1 = { c: '經', o: '冷', h: '硬' }, BEATS = { o: 'c', c: 'h', h: 'o' };
     function ttK() { return L.spriteScale || 1; }
     function sid(side) { return side === 'e' || side === 'f' ? 'f' : 'p'; }
-    function sideOf(id) { return id === 'f' ? 'e' : 'p'; }
+    function sideOf(id) { return id === 'f' || id === 'e' ? 'e' : 'p'; }
     function lerp(a, b, u) { return a + (b - a) * u; }
     function seg(t, a, b) { return Math.max(0, Math.min(1, (t - a) / (b - a))); }
     function arcP(S0, E0, h, u) { return [lerp(S0[0], E0[0], u), lerp(S0[1], E0[1], u) - 4 * h * u * (1 - u)]; }
     function spinFr(t, t0, ms) { return Math.floor(Math.max(0, t - t0) / (ms || 100)) & 3; }
-    // 幾何：layout.duel 有寫就用，沒寫就從唱盤台道具與站位算
+    // 幾何：轉盤中心＝layout.duel.deck（沒寫就問 duelDeck 道具，再沒有就取兩個對決者中間）；贏家上前 duel.step 格
     function geo() {
-      var D = L.duel || {}, K = ttK(), sp = L.spots || {};
-      function deckC(side) {
-        var k = side === 'e' ? 'deckE' : 'deckP'; if (D[k]) return D[k];
-        var pr = (L.props || []).filter(function (o) { return o.id === (side === 'e' ? 'deck-e' : 'deck-p'); })[0];
-        var spec = pr && W.DipShop.O34 && W.DipShop.O34.PROPS[pr.type];
-        if (spec && spec.center) { var c = spec.center(pr); return [Math.round(c[0]), Math.round(c[1])]; }
-        return pr ? [pr.x - (pr.w || 44) / 2 + 18, pr.base - 29] : (side === 'e' ? [sp.duelE[0] + 40, sp.duelE[1] - 30] : [sp.duelP[0] - 40, sp.duelP[1] - 30]);
-      }
+      var Dd = L.duel || {}, sp = L.spots || {}, K = ttK();
+      var pr = (L.props || []).filter(function (o) { return o.type === 'duelDeck'; })[0];
+      var spec = pr && W.DipShop.O34 && W.DipShop.O34.PROPS && W.DipShop.O34.PROPS.duelDeck;
       var fE = sp.duelE || [0, 0], fP = sp.duelP || [0, 0];
-      var C = D.clash || [Math.round((fE[0] + fP[0]) / 2) - 2 * K, fE[1] - 12 * K];
-      var rug = D.rug || [Math.round((fE[0] + fP[0]) / 2), fE[1] - 8];
-      // 弧高與特效間距：舊格子世界（448 寬、小人 ×5）的數字是預設；斜俯視店在 layout.duel.arc 給自己的
-      var A = Object.assign({ low: 10, high: 44, mid: 36, bounce: 15, tiny: 3, drop: 6 }, D.arc || {});
-      return { K: K, PE: deckC('e'), PP: deckC('p'), C: C, rug: rug, ref: sp.ref || sp.counter, arc: A, gap: D.gap || (L.projection ? 4 : 6), dropDx: D.dropDx || (L.projection ? 18 : 22), fxK: D.fxK || (L.projection ? 0.6 : 1) };
+      var pc = Dd.deck || (spec && spec.center ? spec.center(pr) : [Math.round((fE[0] + fP[0]) / 2), fE[1] - 8 * K]);
+      return { K: K, pc: [Math.round(pc[0]), Math.round(pc[1])], step: Dd.step || 10 };
     }
     // 手的位置（場景座標）：小人腳底 + 格子（flip 後朝對手）
     function handAt(id, kind, base) {
       if (typeof shop.handAt === 'function') { var hq = shop.handAt(id, kind || 'none'); if (hq) { if (base) { var cur = shop.pos(id); if (cur) { hq[0] += Math.round(base.x) - Math.round(cur.x); hq[1] += Math.round(base.y) - Math.round(cur.y); } } return [Math.round(hq[0]), Math.round(hq[1])]; } }
       var a = base || shop.pos(id) || { x: 0, y: 0 }, K = ttK(), hp = (W.DipShop.HANDAT || {})[kind || 'none'] || [13, 10];
       var col = id === 'p' ? 15 - hp[0] : hp[0];
-      return [Math.round(a.x) - 8 * K + col * K + (K >> 1), Math.round(a.y) - 15 * K + 1 + hp[1] * K + (K >> 1)];
+      return [Math.round(a.x) - 8 * K + col * K + (K >> 1) + (TT.nudge[id] || 0), Math.round(a.y) - 15 * K + 1 + hp[1] * K + (K >> 1)];
     }
-    function hitAt(id, base) { var a = base || shop.pos(id), K = ttK(); return [Math.round(a.x) + (id === 'f' ? 2 : -2) * K, Math.round(a.y) - 9 * K]; }
     // 老闆舉旗的位置：旗竿下半段握在手上，旗尖指贏家（他贏＝老闆轉向左）
     function flagPos(side) {
       if (typeof shop.handAt === 'function') { shop.flip('o', side === 'e'); var hq = shop.handAt('o', 'flag'); if (hq) return { x: Math.round(hq[0]), y: Math.round(hq[1]), side: side }; }
       var K = ttK(), a = shop.pos('o') || { x: 0, y: 0 }, hp = (W.DipShop.HANDAT || {}).flag || [14, 5], col = side === 'e' ? 15 - hp[0] : hp[0];
       return { x: Math.round(a.x) - 8 * K + col * K + (K >> 1), y: Math.round(a.y) - 15 * K + 1 + hp[1] * K + (K >> 1) - 16, side: side };
     }
-    function emptyFx() { return { discs: [], trails: [], sparks: [], shards: [], notes: [], dots: [], excl: [], flag: null, decks: {} }; }
+    function emptyFx() { return { discs: [], trails: [], sparks: [], shards: [], notes: [], dots: [], excl: [], flag: null }; }
     function ttTick(rt) {
       if (!shop) return;
       var dt = Math.max(0, (rt - TT.last) * 1000); TT.last = rt;
@@ -272,161 +319,251 @@
         if (r === false && it.end) { try { it.end(); } catch (e) { console.error(e); } }
         return r !== false;
       });
-      // 台上的唱片：常駐狀態（spin 一直轉到下一手 clearClash）＋這一格的暫時狀態（落盤三拍）
-      var decks = {};
-      ['e', 'p'].forEach(function (s) { var d = fx.decks[s] || TT.decks[s]; if (d) decks[s] = d; });
-      shop.state.decks = decks;
+      // 地上平躺的唱片（收尾：他走了，唱片留在他站的位置）
+      if (TT.floor) fx.discs.push({ x: TT.floor.x, y: TT.floor.y, attr: TT.floor.attr, kind: TT.floor.kind, flat: true });
+      // 台上的唱片：常駐狀態（spin 一直轉到下一手 clearClash）；這一格有暫時狀態（clearClash 抬針、閃兩下）就用暫時的
+      shop.state.deck = fx.hasOwnProperty('deck') ? fx.deck : TT.deck;
       shop.state.fx = fx;
+      placeBadges();
       if (wantFast !== TT.fast) { TT.fast = wantFast; shop.fast(wantFast); }
     }
     function ttStart() { if (!TT.off && shop) { TT.last = shop.now(); TT.off = shop.onTick(ttTick); } }
     function ttAdd(it) { it.t = it.t || 0; TT.items.push(it); ttStart(); return it; }
     function setFlips() { shop.flip('p', true); shop.flip('f', false); }
-    function restHolds() {
-      ['f', 'p'].forEach(function (id) {
-        var h = TT.held[id];
-        shop.hold(id, h || null); shop.arm(id, h ? 'show' : null); shop.nudge(id, 0);
-      });
-    }
-    function sleeveOf(h) { return h ? (h === 'ace' ? 'ace' : h) : null; }
+    function setNudge(id, dx) { dx = Math.round(dx || 0); if ((TT.nudge[id] || 0) !== dx) { TT.nudge[id] = dx; shop.nudge(id, dx); } }
 
-    // 一手的整段演出
-    function clashItem(o) {
-      var G = geo(), K = G.K, kind = o.kind || 'counter';
-      var mode = (kind === 'counter' || kind === 'countered') ? 'beat' : (kind === 'mirrorWin' || kind === 'mirrorLose') ? 'mirror' : kind === 'tie' || /^hegemony/.test(kind) ? 'tie' : 'beat';
-      var Wn = (kind === 'counter' || kind === 'mirrorWin' || kind === 'hegemonyP') ? 'p' : (kind === 'countered' || kind === 'mirrorLose' || kind === 'hegemonyE') ? 'e' : null;
-      if (mode === 'tie') Wn = null;
+    // ---------------- 頭頂屬性方塊（DOM .ds-badge，掛在舞台 host 裡；每格用 shop.hostCss 重新定位）
+    // 下緣＝頭頂上方 2 格；鏡頭上緣不夠放就貼齊舞台上緣 2 CSS px（可以壓到頭頂一點，不移到頭的側邊）。方塊在的時候那個人的名牌 tag 暫時收起。
+    var BADGE = {}, TAGS = {};
+    function badgeEl(side) {
+      if (!D || typeof D.createElement !== 'function' || !host || typeof host.appendChild !== 'function') return null;
+      var b = BADGE[side];
+      if (!b || b.parentNode !== host) { b = D.createElement('div'); b.className = 'ds-badge ' + side; b.setAttribute('aria-hidden', 'true'); b.style.display = 'none'; host.appendChild(b); b._k = ''; BADGE[side] = b; }
+      return b;
+    }
+    function starOf(v) {
+      if (v.star != null && v.star !== '') return v.star | 0;
+      if (v.ace) return 7;
+      var cs = opts.cards || W.DipLabCards || {}, c = v.card && cs[v.card];
+      return c ? (c[v.attr] | 0) : 0;   // v3 呼叫（沒有 star）：退回卡片那軸的星數
+    }
+    function tagHide(id) { if (TAGS[id] && shop) shop.untag(id); }
+    function tagRestore(id) { var t = TAGS[id]; if (t && shop) shop.tag(id, t[0], t[1], t[2]); }
+    function setBadge(side, v, fxCls) {
+      side = sideOf(side); var id = sid(side), was = !!TT.badges[side];
+      if (!v) {
+        if (!was) return;
+        TT.badges[side] = null;
+        var b0 = BADGE[side]; if (b0) { b0.style.display = 'none'; b0._k = ''; }
+        tagRestore(id);
+        return;
+      }
+      var at = ZH1[v.attr] ? v.attr : 'c', st = starOf(v), ace = !!v.ace, fxc = fxCls || '';
+      TT.badges[side] = { attr: at, star: st, ace: ace, fx: fxc };
+      if (!was) tagHide(id);
+      var b = badgeEl(side); if (!b) return;
+      var cls = 'ds-badge ' + side + ' ' + at + (ace ? ' ace' : '') + (fxc ? ' ' + fxc : ''), key = cls + '|' + st;
+      if (b._k !== key) { b.className = cls; b.innerHTML = '<i>' + ZH1[at] + '</i><b>' + st + '</b>'; b._k = key; }
+      b.style.display = '';
+      placeBadge(side);
+      ttStart();
+    }
+    function placeBadge(side) {
+      var b = BADGE[side], v = TT.badges[side]; if (!b) return;
+      var id = sid(side), a = shop && shop.pos(id);
+      if (!v || !a || a.hidden || !shop.has(id)) { b.style.display = 'none'; return; }
+      b.style.display = '';
+      var hy = typeof shop.headY === 'function' ? shop.headY(id) : a.y - 15 * ttK();
+      var p = shop.hostCss(Math.round(a.x) + (TT.nudge[id] || 0), hy - 2), w = b.offsetWidth || 30, h = b.offsetHeight || 16, hw = host.clientWidth || 0;
+      var cx = hw ? Math.max(2 + w / 2, Math.min(hw - 2 - w / 2, p.x)) : p.x;
+      b.style.left = Math.round(cx - w / 2) + 'px'; b.style.top = Math.round(Math.max(2, p.y - h)) + 'px';
+    }
+    function placeBadges() { placeBadge('e'); placeBadge('p'); }
+    // 方塊中心（場景座標）＋半寬半高（格）：火花從這裡射出去
+    function badgeAt(side) {
+      var id = sid(side), b = BADGE[side], v = shop.view ? shop.view() : null, a = shop.pos(id) || { x: 0, y: 0 };
+      var hy = typeof shop.headY === 'function' ? shop.headY(id) : a.y - 15 * ttK();
+      if (!b || b.style.display === 'none' || !v || !v.scale) return [Math.round(a.x) + (TT.nudge[id] || 0), hy - 8, 8, 5];
+      var o0 = shop.hostCss(0, v.y), w = b.offsetWidth || 30, h = b.offsetHeight || 16;
+      return [Math.round(((parseFloat(b.style.left) || 0) + w / 2 - o0.x) / v.scale), Math.round(((parseFloat(b.style.top) || 0) + h / 2) / v.scale + v.y), w / 2 / v.scale, h / 2 / v.scale];
+    }
+    function hideBadges() { setBadge('e', null); setBadge('p', null); }
+
+    // ---------------- 一手的整段演出（取代 v3 的 clashItem）
+    function roundItem(o) {
+      var G = geo(), kind = o.kind || 'counter';
+      if (/^hegemony/.test(kind)) kind = 'tie';
+      var Wn = (kind === 'counter' || kind === 'mirrorWin') ? 'p' : (kind === 'countered' || kind === 'mirrorLose') ? 'e' : null;
       var Lo = Wn === 'p' ? 'e' : Wn === 'e' ? 'p' : null;
-      var p = o.p || {}, e = o.e || {}, lab = { p: p.attr || 'c', e: e.attr || 'c' }, dk = { p: p.ace ? 'ace' : 'disc', e: e.ace ? 'ace' : 'disc' };
-      var dmg = { e: o.toE | 0, p: o.toP | 0 };
-      var baseF = shop.pos('f'), baseP = shop.pos('p');
-      baseF = { x: Math.round(baseF.x), y: Math.round(baseF.y) }; baseP = { x: Math.round(baseP.x), y: Math.round(baseP.y) };
-      var WP = handAt('p', 'wind', baseP), SP = handAt('p', 'throw', baseP), WE = handAt('f', 'wind', baseF), SE = handAt('f', 'throw', baseF);
-      var C = G.C, A = G.arc, fk = G.fxK, end = { p: [C[0] + G.gap, C[1]], e: [C[0] - G.gap, C[1]] }, H = { e: hitAt('f', baseF), p: hitAt('p', baseP) }, home = { e: G.PE, p: G.PP };
-      var rugY = G.rug[1], drop = { e: [G.rug[0] - G.dropDx, rugY], p: [G.rug[0] + G.dropDx, rugY] };
-      var flagAt = flagPos;
-      var hs = { f: TT.held.f, p: TT.held.p };
-      var fired = {}, it = { kind: kind, fastTo: TTK.done, res: null };
+      var p = o.p || {}, e = o.e || {}, pl = { p: p, e: e }, lab = { p: ZH1[p.attr] ? p.attr : 'c', e: ZH1[e.attr] ? e.attr : 'c' };
+      var bv = { p: { attr: lab.p, star: p.star, ace: !!p.ace, card: p.card }, e: { attr: lab.e, star: e.star, ace: !!e.ace, card: e.card } };
+      var dmg = { e: o.toE | 0, p: o.toP | 0 }, blocked = o.blocked || null;
+      // by＝誰出了剋招（同色 null）；v3 呼叫沒有 by → 從兩邊的屬性推
+      var by = o.by !== undefined ? o.by : (lab.p === lab.e ? null : BEATS[lab.p] === lab.e ? 'p' : 'e');
+      var def = by === 'p' ? 'e' : by === 'e' ? 'p' : null;
+      var mode = kind === 'tie' ? 'tie' : (by && !blocked) ? 'beat' : (by && blocked) ? 'block' : 'mirror';
+      var dir = { p: -1, e: 1 }, fired = {}, it = { kind: kind, fastTo: RT.end, res: null, round: true };
       function once(k, fn) { if (!fired[k]) { fired[k] = 1; try { fn(); } catch (er) { console.error(er); } } }
-      function hurt(side, back) {
-        var id = sid(side);
-        shop.pose(id, 'hurt', 200); if (dmg[side] > 0) shop.float(id, '−' + dmg[side], side === 'p' ? 'r' : null);
-        it['nb' + side] = back;
-        if (typeof o.onHit === 'function') try { o.onHit(side); } catch (er) { console.error(er); }
+      function rec(side) { return { attr: lab[side], card: pl[side].card || null, kind: pl[side].ace ? 'ace' : null }; }
+      function sleeve(side, back, sx) {
+        var c = pl[side], h = { sleeve: c.card || null };
+        if (back) h.back = true; else if (c.ace) h.ace = true;
+        if (sx != null && sx < 1) h.sx = Math.max(0, sx);
+        return h;
       }
-      function trail(fx, f, t, t0) { [40, 80].forEach(function (d) { if (t - d >= t0) { var q = f(t - d); fx.trails.push([q[0], q[1], 'rgba(255,241,194,' + (d === 40 ? 0.7 : 0.4) + ')']); } }); }
-      function landAt(fx, t, side, t0) {
-        var P0 = home[side], rec = { attr: lab[side], kind: dk[side] === 'ace' ? 'ace' : null, card: (side === 'p' ? p.card : e.card) };
-        if (t >= t0 && t < t0 + 80) { fx.decks[side] = { rec: rec, state: 'land' }; fx.dots.push([P0[0] - Math.round(16 * fk), P0[1] + 1, '#e8e8ee'], [P0[0] + Math.round(15 * fk), P0[1] + 1, '#e8e8ee']); }
-        else if (t >= t0 + 80 && t < t0 + 160) fx.decks[side] = { rec: rec, state: 'armMid' };
-        else if (t >= t0 + 160) once('land' + side, function () { TT.decks[side] = { rec: rec, state: 'spin' }; if (typeof o.onLand === 'function') o.onLand(side, rec.card); });
+      function hand(side, arm, what) { var id = sid(side); shop.arm(id, what ? arm : null); shop.hold(id, what || null); }
+      function resolve() { if (it.res) { var r = it.res; it.res = null; r(); } }
+      function badgeFx(side, t) {   // 這一格方塊要加的 class（判定 480–560、受擊 560–760、贏家發亮）
+        var c = [];
+        if (mode === 'tie') { if (t >= RT.judge) c.push('ring'); return c.join(' '); }
+        if (mode === 'block' && side === def && t >= RT.judge) c.push('ring');
+        if ((mode === 'block' && t >= RT.flash && t < RT.hit) || (mode === 'mirror' && t >= RT.judge && t < RT.hit)) c.push('flash');
+        if (mode === 'beat' && side === Wn && t >= RT.judge && t < RT.hit) c.push('zap');
+        if (side === Wn && t >= RT.hit) c.push('win');
+        if (side === Lo && t >= RT.hit && t < 760) c.push('hit');
+        return c.join(' ');
       }
-      function flagUntil(fx, t, t0, side) { if (t >= t0 && t < t0 + 900) { fx.flag = flagAt(side); shop.arm('o', 'flag'); shop.flip('o', side === 'e'); } else if (t >= t0 + 900) { shop.arm('o', null); shop.flip('o', false); } }
-      it.step = function (t0, fx) {
-        var t = t0;
-        if (o.seeThrough && t > TTK.col) t = Math.max(TTK.col, t - 80);
-        // ---- 減少動態：不飛、不翻；560 贏家的唱片直接出現在自己的台上轉
+      function flagOn(fx, side) { fx.flag = flagPos(side); shop.arm('o', 'flag'); it.flagged = true; }
+      function flagOff() { if (it.flagged) { it.flagged = false; shop.arm('o', null); shop.flip('o', false); } }
+      it.step = function (t, fx) {
+        var wid = Wn && sid(Wn), lid = Lo && sid(Lo);
+        // ---- 減少動態：不舉、不翻、不滑、沒火花；560 方塊出現、贏家的唱片直接在台上轉、舉旗；560 resolve
         if (o.reduced) {
-          if (t >= TTK.sep) once('r', function () {
-            if (Wn) TT.decks[Wn] = { rec: { attr: lab[Wn], kind: dk[Wn] === 'ace' ? 'ace' : null }, state: 'spin' };
-            ['e', 'p'].forEach(function (s) { if (dmg[s] > 0) shop.float(sid(s), '−' + dmg[s], s === 'p' ? 'r' : null); });
-            if (it.res) { it.res(); it.res = null; }
-          });
-          return t < TTK.sep + 50 ? true : false;
-        }
-        // ---- 手：你 0–200 蓄力、200 出手；他 0–260 拿著封套、260 蓄力、300 出手
-        setFlips();
-        if (t < TTK.relP) { shop.arm('p', 'wind'); shop.hold('p', { disc: lab.p, kind: dk.p }); }
-        else if (t < TTK.relP + 120) { shop.arm('p', 'throw'); shop.hold('p', null); }
-        else { shop.arm('p', null); shop.hold('p', null); }
-        if (t < TTK.windE) { shop.arm('f', hs.f ? 'show' : null); shop.hold('f', sleeveOf(hs.f)); }
-        else if (t < TTK.relE) { shop.arm('f', 'wind'); shop.hold('f', { disc: lab.e, kind: dk.e }); }
-        else if (t < TTK.relE + 120) { shop.arm('f', 'throw'); shop.hold('f', null); }
-        else { shop.arm('f', null); shop.hold('f', null); }
-        // ---- 飛（相撞前）：低弧
-        var fp = function (tt) { return arcP(SP, end.p, A.low, seg(tt, TTK.relP, TTK.col)); }, fe = function (tt) { return arcP(SE, end.e, A.low, seg(tt, TTK.relE, TTK.col)); };
-        if (t >= TTK.relP && t < TTK.col) { var q1 = fp(t); fx.discs.push({ x: q1[0], y: q1[1], attr: lab.p, kind: dk.p, fr: spinFr(t, TTK.relP, 60) }); trail(fx, fp, t, TTK.relP); }
-        if (t >= TTK.relE && t < TTK.col) { var q2 = fe(t); fx.discs.push({ x: q2[0], y: q2[1], attr: lab.e, kind: dk.e, fr: spinFr(t, TTK.relE, 60) }); trail(fx, fe, t, TTK.relE); }
-        // ---- 相撞（520–600 貼在一起）
-        if (t >= TTK.col && t < TTK.go) {
-          var crack = t >= TTK.sep && mode === 'beat';
-          fx.discs.push({ x: end.p[0], y: end.p[1], attr: lab.p, kind: dk.p, fr: 1, crack: crack && Lo === 'p' });
-          fx.discs.push({ x: end.e[0], y: end.e[1], attr: lab.e, kind: dk.e, fr: 3, crack: crack && Lo === 'e' });
-          if (mode === 'beat') fx.sparks.push({ x: C[0], y: C[1] - 1, size: 'small' });
-          else fx.sparks.push({ x: C[0], y: C[1], size: 'ring', c: '#ffffff' });
-        }
-        var shardsOn = function () { if (t >= 900 && t < TTK.clear) { var cx = Lo === 'e' ? G.rug[0] - Math.round(14 * fk) : G.rug[0] + Math.round(14 * fk), q = function (v) { return Math.round(v * fk); }, sh = [[cx - q(12), rugY - q(2), 3], [cx - q(4), rugY + q(2), 2], [cx - q(9), rugY + q(1), 3, lab[Lo]], [cx + q(3), rugY - q(3), 2], [cx + q(9), rugY + q(1), 3], [cx - q(16), rugY + q(2), 2, lab[Lo]]]; fx.shards = sh.filter(function (s2, i) { return t < TTK.next || i % 2 === 0; }); } };
-        if (mode === 'beat' && Wn) {
-          // 輸的那張：600 裂三塊往下掉 → 900 地毯上的碎片
-          if (t >= TTK.go && t < 900) { var u = (t - TTK.go) / 300; fx.discs.push({ x: end[Lo][0] + (Lo === 'e' ? -1 : 1) * Math.round(u * 8), y: end[Lo][1] + Math.round(u * u * (rugY - end[Lo][1])), attr: lab[Lo], kind: dk[Lo], split: 1 + Math.floor(u * 3) }); }
-          shardsOn();
-          // 贏的那張：600–760 穿過去打中輸家 → 820–1180 高弧回自己的唱盤
-          var Hp = H[Lo], sg = Wn === 'p' ? 1 : -1;
-          if (t >= TTK.go && t < TTK.hit) { var q3 = arcP(end[Wn], Hp, A.tiny, seg(t, TTK.go, TTK.hit)); fx.discs.push({ x: q3[0], y: q3[1], attr: lab[Wn], kind: dk[Wn], fr: spinFr(t, TTK.go, 60) }); }
-          if (t >= TTK.hit && t < TTK.hit + 60) fx.discs.push({ x: Hp[0], y: Hp[1], attr: lab[Wn], kind: dk[Wn], fr: 0 });
-          if (t >= TTK.hit && t < TTK.hit + 100) fx.sparks.push({ x: Hp[0] - 6 * sg, y: Hp[1] + 2, size: 'small', c: '#ec4a5a' });
-          if (t >= TTK.hit) once('hit', function () { hurt(Lo, 2 * K); });
-          var S2 = [Hp[0] + Math.round(4 * fk) * sg, Hp[1] - 2], fh = function (tt) { return arcP(S2, home[Wn], A.high, seg(tt, TTK.hit + 60, TTK.home)); };
-          if (t >= TTK.hit + 60 && t < TTK.home) { var q4 = fh(t); fx.discs.push({ x: q4[0], y: q4[1], attr: lab[Wn], kind: dk[Wn], fr: spinFr(t, TTK.hit, 60) }); trail(fx, fh, t, TTK.hit + 60); }
-          landAt(fx, t, Wn, TTK.home);
-          flagUntil(fx, t, TTK.home, Wn);
-        } else if (mode === 'mirror' && Wn) {
-          // 撞招：數字大的高弧回自己的唱盤（1000 落）；小的低弧彈回去敲到自己（760）→ 掉在地毯自己那側平躺
-          var Hl = H[Lo], fw = function (tt) { return arcP(end[Wn], home[Wn], A.mid, seg(tt, TTK.go, 1000)); };
-          if (t >= TTK.go && t < 1000) { var q5 = fw(t); fx.discs.push({ x: q5[0], y: q5[1], attr: lab[Wn], kind: dk[Wn], fr: spinFr(t, TTK.go, 60) }); trail(fx, fw, t, TTK.go); }
-          if (t >= TTK.go && t < TTK.hit) { var q6 = arcP(end[Lo], Hl, A.bounce, seg(t, TTK.go, TTK.hit)); fx.discs.push({ x: q6[0], y: q6[1], attr: lab[Lo], kind: dk[Lo], fr: spinFr(t, TTK.go, 60) }); }
-          if (t >= TTK.hit && t < 900) { var q7 = arcP(Hl, drop[Lo], A.drop, seg(t, TTK.hit, 900)); fx.discs.push({ x: q7[0], y: q7[1], attr: lab[Lo], kind: dk[Lo], fr: 2 }); }
-          if (t >= 900 && t < TTK.clear) fx.discs.push({ x: drop[Lo][0], y: drop[Lo][1], attr: lab[Lo], kind: dk[Lo], flat: true });
-          if (t >= TTK.hit && t < TTK.hit + 100) fx.sparks.push({ x: Hl[0], y: Hl[1] - 1, size: 'small', c: '#ec4a5a' });
-          if (t >= TTK.hit) once('hit', function () { hurt(Lo, K); });
-          landAt(fx, t, Wn, 1000);
-          flagUntil(fx, t, 1000, Wn);
-        } else {
-          // 平手：兩張彈開、平躺在地毯兩邊，誰的唱盤都不轉；老闆聳肩
-          if (t >= TTK.go && t < 900) {
-            ['e', 'p'].forEach(function (s) { var q8 = arcP(end[s], drop[s], A.bounce, seg(t, TTK.go, 900)); fx.discs.push({ x: q8[0], y: q8[1], attr: lab[s], kind: dk[s], fr: spinFr(t, TTK.go, 80) }); });
+          if (t >= RT.hit) {
+            once('r', function () {
+              ['e', 'p'].forEach(function (s) { hand(s, null, null); });
+              if (Wn) TT.deck = { rec: rec(Wn), state: 'spin', by: Wn };
+              if (Lo && dmg[Lo] > 0) shop.float(lid, '−' + dmg[Lo], Lo === 'p' ? 'r' : null);
+              if (Lo && typeof o.onHit === 'function') o.onHit(Lo);
+              if (Wn) { sfx('needle'); sfx('chime', { attr: lab[Wn] }); if (typeof o.onLand === 'function') o.onLand(Wn, pl[Wn].card || null); }
+              else sfx('chime', { attr: null });
+              resolve();
+            });
+            ['e', 'p'].forEach(function (s) { if (t < RT.done) setBadge(s, bv[s], badgeFx(s, RT.done - 1)); else setBadge(s, null); });
+            if (Wn && t < RT.hit + 900) flagOn(fx, Wn); else flagOff();
           }
-          if (t >= 900 && t < TTK.clear) ['e', 'p'].forEach(function (s) { fx.discs.push({ x: drop[s][0], y: drop[s][1], attr: lab[s], kind: dk[s], flat: true }); });
-          if (t >= TTK.hit) once('hit', function () { ['e', 'p'].forEach(function (s) { if (dmg[s] > 0) hurt(s, K); }); });
-          if (t >= 900 && t < 1700) { shop.arm('o', 'shrug'); once('dots', function () { shop.emote('o', 'dots', 800 / Math.max(0.25, TT.speedK)); }); }
-          else if (t >= 1700) shop.arm('o', null);
+          return t < RT.done;
         }
-        // 受擊後退：1460 回原位
-        ['e', 'p'].forEach(function (s) { var nb = it['nb' + s] || 0; if (!nb) return; var dx = t < TTK.back ? nb : t < TTK.back + 100 ? Math.round(nb / 2) : 0; shop.nudge(sid(s), s === 'e' ? -dx : dx); });
-        if (t >= TTK.back && it.res) { var rr = it.res; it.res = null; rr(); }
-        return t < TTK.clear;
+        setFlips();
+        // ---- 手上的封套：0 舉起（他背面朝外）；200–280 他翻面（橫向壓扁再展開）
+        ['e', 'p'].forEach(function (s) {
+          var back = s === 'e' && t < RT.face, sx = s === 'e' ? (t < RT.flip ? 1 : t < RT.face ? 1 - seg(t, RT.flip, RT.face) : t < RT.badge ? seg(t, RT.face, RT.badge) : 1) : 1;
+          var up = sleeve(s, back, sx);
+          if (mode === 'tie' || !Wn) { if (t < RT.flag) hand(s, 'wind', up); else hand(s, null, null); }
+          else if (s === Lo) { if (t < RT.put) hand(s, 'wind', up); else hand(s, null, null); }
+          else { if (t < RT.hit) hand(s, 'wind', up); else if (t < RT.stepEnd) hand(s, 'throw', up); else if (t < RT.home) hand(s, 'show', up); else hand(s, null, null); }
+        });
+        if (t >= RT.flip) once('flip', function () { sfx('flip'); });
+        // ---- 頭頂方塊：280 出現、1460 收起
+        ['e', 'p'].forEach(function (s) { if (t >= RT.badge && t < RT.done) setBadge(s, bv[s], badgeFx(s, t)); else setBadge(s, null); });
+        // ---- 判定：剋中＝火花從贏家方塊射到輸家方塊（480–560），560 打中
+        if (mode === 'beat' && Wn && t >= RT.judge && t < RT.hit + 60) {
+          var bw = badgeAt(Wn), bl = badgeAt(Lo), ex = [bl[0] - dir[Lo] * Math.round(bl[2]), bl[1]];
+          if (t < RT.hit) {
+            var fs = function (tt) { return arcP([bw[0] + dir[Lo] * Math.round(bw[2]), bw[1]], ex, 6, seg(tt, RT.judge, RT.hit)); }, q = fs(t);
+            fx.sparks.push({ x: q[0], y: q[1], size: 'small', c: ATTRC[lab[Wn]] });
+            [20, 40].forEach(function (d) { if (t - d >= RT.judge) { var r = fs(t - d); fx.trails.push([r[0], r[1], 'rgba(255,241,194,' + (d === 20 ? 0.8 : 0.45) + ')']); } });
+          } else fx.sparks.push({ x: ex[0], y: ex[1], size: 'big', c: '#ec4a5a' });
+        }
+        // ---- 560：輸家受擊（hurt 200、頭上 −N）
+        if (t >= RT.hit && Lo) once('hit', function () {
+          shop.pose(lid, 'hurt'); it.hurt = lid;
+          if (dmg[Lo] > 0) shop.float(lid, '−' + dmg[Lo], Lo === 'p' ? 'r' : null);
+          if (typeof o.onHit === 'function') o.onHit(Lo);
+        });
+        if (t >= 760 && it.hurt) once('hurtEnd', function () { shop.pose(it.hurt, null); it.hurt = null; });
+        if (Wn) {
+          // ---- 贏家：560–680 往唱盤上前 step 格；1300–1400 退回原位
+          var st = G.step, nx = t < RT.hit ? 0 : t < RT.stepEnd ? st * seg(t, RT.hit, RT.stepEnd) : t < RT.back ? st : t < RT.home ? st * (1 - seg(t, RT.back, RT.home)) : 0;
+          setNudge(wid, dir[Wn] * nx); setNudge(lid, 0);
+          // ---- 600–800：唱片從贏家手上滑到轉盤中心（扁弧）
+          if (t >= RT.slide && t < RT.land) {
+            var h0 = handAt(wid, 'throw'), u = seg(t, RT.slide, RT.land), q2 = arcP(h0, G.pc, 5, u);
+            fx.discs.push({ x: q2[0], y: q2[1], attr: lab[Wn], kind: pl[Wn].ace ? 'ace' : 'disc', fr: spinFr(t, RT.slide, 60) });
+          }
+          // ---- 700：輸家放下封套，腰間冒一點灰（收回袋子）
+          if (t >= RT.put && t < RT.flag) { var hw0 = handAt(lid, 'none'), k = seg(t, RT.put, RT.flag); [[-2, 0], [1, -1], [3, 1]].forEach(function (d, i) { if (k < 0.9 - i * 0.2) fx.dots.push([hw0[0] + d[0], hw0[1] + d[1] - Math.round(k * 4), '#b8b4ae']); }); }
+          // ---- 800 落下 → 880 抬到一半 → 960 在轉（落針、屬性短音、NOW 小窗、音符）
+          if (t >= RT.land) {
+            TT.deck = { rec: rec(Wn), state: t < RT.arm ? 'land' : t < RT.spin ? 'armMid' : 'spin', by: Wn };
+            if (t < RT.arm) fx.dots.push([G.pc[0] - 12, G.pc[1] + 1, '#e8e8ee'], [G.pc[0] + 12, G.pc[1] + 1, '#e8e8ee']);
+          } else TT.deck = null;
+          if (t >= RT.spin) once('needle', function () { sfx('needle'); if (typeof o.onLand === 'function') o.onLand(Wn, pl[Wn].card || null); });
+          if (t >= RT.chime) once('chime', function () { sfx('chime', { attr: lab[Wn] }); });
+          // ---- 900–1800：老闆朝贏家舉旗
+          if (t >= RT.flag && t < RT.flagEnd) flagOn(fx, Wn); else flagOff();
+        } else {
+          // ---- 平手：空盤、不落針、不舉旗；600–1320 老闆搖頭（每 120 ms 翻面一次、共 6 次，回到原本朝向）；960 中性短音（空轉的唱針聲）
+          setNudge('f', 0); setNudge('p', 0); TT.deck = null;
+          if (t >= RT.shake && t < RT.shakeEnd) { shop.flip('o', Math.floor((t - RT.shake) / 120) % 2 === 0); it.shook = true; }
+          else if (it.shook) { it.shook = false; shop.flip('o', false); }
+          if (t >= RT.spin) once('chime0', function () { sfx('chime', { attr: null }); });
+        }
+        if (t >= RT.done) resolve();
+        return t < RT.end;
       };
-      it.end = function () { shop.nudge('f', 0); shop.nudge('p', 0); shop.arm('o', null); shop.flip('o', false); if (it.res) { var r = it.res; it.res = null; r(); } };
+      it.end = function () {
+        setNudge('f', 0); setNudge('p', 0);
+        if (it.hurt) { shop.pose(it.hurt, null); it.hurt = null; }
+        if (it.flagged || it.shook) { shop.arm('o', null); shop.flip('o', false); it.flagged = it.shook = false; }
+        hideBadges(); resolve();
+      };
       return it;
     }
     var turntable = {
-      // 一手：t=0（點屬性鈕）呼叫；Promise 在「演完」（≈1460 ms ÷ 速度）resolve
+      // 一手：t=0（按「丟！」）呼叫；Promise 在 1460 ms ÷ 速度 resolve（減少動態 560 ms ÷ 速度）
       clash: function (o) {
         o = o || {};
         if (!shop || !shop.has('f') || !shop.has('p')) return Promise.resolve();
         if (o.speed > 0) TT.speedK = o.speed;
         if (o.reduced == null) o.reduced = reduced();
         TT.items.filter(function (x) { return x.kind; }).forEach(function (x) { x.step = function () { return false; }; });
-        var it = clashItem(o);
+        var it = roundItem(o);
         TT.held = {};
         return new Promise(function (res) { it.res = res; ttAdd(it); });
       },
-      // 下一手 t=0：台上的唱片淡掉、碎片與平躺唱片清掉
+      // 下一手 t=0：抬針（armMid 80 ms）→ 唱片閃兩下消失；方塊收起；TT.deck＝null
       clearClash: function (ms) {
         TT.items.forEach(function (x) { x.step = function () { return false; }; });
-        var keep = TT.decks; TT.decks = {};
-        if (ms !== 0 && (keep.e || keep.p)) ttAdd({ ignoreSpeed: true, step: function (t, fx) { if (t >= (ms == null ? 150 : ms)) return false; ['e', 'p'].forEach(function (s) { if (keep[s] && Math.floor(t / 50) % 2 === 0) fx.decks[s] = keep[s]; }); return true; } });
-        ttStart(); ttTick(shop ? shop.now() : 0);
+        var keep = TT.deck, tot = ms == null ? 150 : ms; TT.deck = null;
+        if (tot > 0 && keep && keep.rec) ttAdd({ ignoreSpeed: true, step: function (t, fx) {
+          if (t >= tot) return false;
+          var lifted = { rec: keep.rec, state: 'armMid', by: keep.by };
+          if (t < Math.min(80, tot)) { fx.deck = lifted; return true; }
+          var ph = Math.floor((t - 80) / Math.max(1, (tot - 80) / 4));
+          fx.deck = ph % 2 === 0 ? lifted : null; return true;
+        } });
+        hideBadges();
+        ttStart(); if (shop) ttTick(shop.now());
         return stage;
       },
-      // 手上拿著：{ sleeve: cardId } | 'ace' | null（選牌時就看得到；他拿他亮出的那張、你點了哪張就拿哪張）
+      // 手上拿著：{ sleeve: cardId, back? } | 'ace' | null。side：'e'|'f'＝他、'p'＝你（選牌時就看得到：他一直拿著 {back:true}，你點了哪張就拿哪張）；
+      // 'o'＝老闆（序章 O11 拿著唱片走回櫃檯）：直接 shop.hold＋arm，不動對決的翻面、不記進 TT.held
       hold: function (side, what) {
+        if (side === 'o') { shop.hold('o', what || null); shop.arm('o', what ? 'show' : null); return stage; }
         var id = sid(side); TT.held[id] = what || null;
         setFlips(); shop.hold(id, what || null); shop.arm(id, what ? 'show' : null);
         return stage;
       },
-      // 唱盤台：{ rec: { attr, card, kind }, state: 'land'|'armMid'|'spin'|null }；null＝清掉
-      deck: function (side, d) { TT.decks[side === 'f' ? 'e' : side] = d && d.rec ? d : null; ttStart(); ttTick(shop.now()); return stage; },
+      // 唱盤：deck({ rec:{attr,card,kind}, state:'land'|'armMid'|'spin', by:'e'|'p' } | null)；舊的 deck(side, d) 照收（side 當成 by）
+      deck: function (a, b) {
+        var d = a, by = null;
+        if (typeof a === 'string') { by = a === 'f' ? 'e' : a; d = b; }
+        TT.deck = d && d.rec ? { rec: d.rec, state: d.state || 'spin', by: by || d.by || null } : null;
+        ttStart(); ttTick(shop.now());
+        return stage;
+      },
+      // 頭頂屬性方塊：badge(side, {attr, star, ace} | null, ms?)；badgeRect(side) → 方塊目前的 CSS 外框（DOMRect，跟 hotRect 同一套座標）| null
+      badge: function (side, v, ms) {
+        setBadge(side, v || null, v && v.fx);
+        if (v && ms > 0) { var s0 = sideOf(side), k0 = TT.badges[s0]; T(function () { if (TT.badges[s0] === k0) setBadge(s0, null); }, ms); }
+        return stage;
+      },
+      badgeRect: function (side) {
+        var s = sideOf(side), b = BADGE[s];
+        if (!TT.badges[s] || !b || b.style.display === 'none' || typeof b.getBoundingClientRect !== 'function') return null;
+        placeBadge(s); return b.getBoundingClientRect();
+      },
       // 老闆三角旗：黑＝你、白＝他（null 收起）
       flag: function (side, ms) {
         if (!side) { shop.arm('o', null); return stage; }
@@ -435,32 +572,41 @@
         ttAdd({ ignoreSpeed: true, step: function (t, fx) { if (t >= (ms || 900)) return false; fx.flag = f; return true; }, end: function () { shop.arm('o', null); shop.flip('o', false); } });
         return stage;
       },
-      // 低階零件（教學示範也可以單獨叫）
-      throwDisc: function (from, to, o) {
-        o = o || {};
-        var pt = function (v) { if (Array.isArray(v)) return v; if (v === 'e' || v === 'p') return handAt(sid(v), 'throw'); var s = (L.spots || {})[v]; return s ? [s[0], s[1] - 40] : [0, 0]; };
-        var S0 = pt(from), E0 = to === 'e' || to === 'p' ? geo()[to === 'e' ? 'PE' : 'PP'] : pt(to), ms = o.ms || 420, h = o.arc == null ? geo().arc.low : o.arc;
-        return new Promise(function (res) {
-          ttAdd({ fastTo: ms, step: function (t, fx) { var q = arcP(S0, E0, h, seg(t, 0, ms)); fx.discs.push({ x: q[0], y: q[1], attr: o.attr || 'c', kind: o.kind || 'disc', fr: spinFr(t, 0, o.spinMs || 60) }); if (o.trail !== 0) [40, 80].forEach(function (d) { if (t - d > 0) { var r = arcP(S0, E0, h, seg(t - d, 0, ms)); fx.trails.push([r[0], r[1], 'rgba(255,241,194,0.55)']); } }); return t < ms; }, end: res });
-        });
-      },
       burst: function (x, y, size, color, ms) { ttAdd({ fastTo: ms || 120, step: function (t, fx) { fx.sparks.push({ x: x, y: y, size: size || 'small', c: color }); return t < (ms || 120); } }); return stage; },
-      shatter: function (at, attr) {
-        var G0 = geo(), q0 = Array.isArray(at) ? at : G0.C, rugY = G0.rug[1], f0 = G0.fxK;
-        ttAdd({ fastTo: 320, step: function (t, fx) { if (t < 300) { var u = t / 300; fx.discs.push({ x: q0[0], y: q0[1] + Math.round(u * u * (rugY - q0[1])), attr: attr, split: 1 + Math.floor(u * 3) }); return true; } fx.shards.push([q0[0] - Math.round(6 * f0), rugY - 1, 3], [q0[0] + 1, rugY + 2, 2, attr], [q0[0] + Math.round(6 * f0), rugY, 3]); return t < 2000; } });
+      flatDisc: function (at, attr, o) { o = o || {}; ttAdd({ step: function (t, fx) { fx.discs.push({ x: at[0], y: at[1], attr: attr, flat: true, void: !!o.void, kind: o.kind }); return t < (o.ms || 2000); } }); return stage; },
+      // 地上一張平躺的唱片，直到 floorRecord(null)（收尾 E4：他走了，唱片留在他站的位置）。at＝spot 名、[x,y] 或人（'f'／'p'／'o'）
+      floorRecord: function (at, o) {
+        o = o || {};
+        if (at == null) { TT.floor = null; if (shop) ttTick(shop.now()); return stage; }
+        var q = null;
+        if (Array.isArray(at)) q = at;
+        else { var k = spotName('p', at); if (k && (L.spots || {})[k]) q = L.spots[k]; else { var a = shop.pos(at); if (a) q = [Math.round(a.x), Math.round(a.y)]; } }
+        if (!q) { console.warn('[stage] floorRecord: unknown place', at); return stage; }
+        TT.floor = { x: q[0], y: q[1], attr: o.attr || 'c', card: o.card || null, kind: o.kind || (o.ace ? 'ace' : null) };
+        ttStart(); ttTick(shop.now());
         return stage;
       },
-      flatDisc: function (at, attr, o) { o = o || {}; ttAdd({ step: function (t, fx) { fx.discs.push({ x: at[0], y: at[1], attr: attr, flat: true, void: !!o.void, kind: o.kind }); return t < (o.ms || 2000); } }); return stage; },
       pause: function (on) { TT.paused = !!on; return stage; },
       speed: function (k) { if (k > 0) TT.speedK = k; return stage; },
       // 除錯／截圖：把正在演的時間軸停在 t（ms）。t==null＝放開
       seek: function (t) { if (t == null) { TT.paused = false; return stage; } TT.paused = true; TT.items.forEach(function (x) { x.t = t; }); ttTick(shop.now()); shop.render(); return stage; },
-      clashState: function () { return { items: TT.items.length, decks: JSON.parse(JSON.stringify(TT.decks)), held: JSON.parse(JSON.stringify(TT.held)), paused: TT.paused, speed: TT.speedK, fast: TT.fast }; }
+      clashState: function () {
+        var bd = {}; ['e', 'p'].forEach(function (s) { var v = TT.badges[s]; bd[s] = v ? { attr: v.attr, star: v.star, ace: v.ace } : null; });
+        return { items: TT.items.length, deck: TT.deck ? JSON.parse(JSON.stringify(TT.deck)) : null, held: JSON.parse(JSON.stringify(TT.held)), badges: bd, paused: TT.paused, speed: TT.speedK, fast: TT.fast };
+      }
     };
-    function ttReset() { TT.items = []; TT.decks = {}; TT.held = {}; TT.paused = false; if (TT.off) { TT.off(); TT.off = null; } if (TT.fast && shop) shop.fast(false); TT.fast = false; if (shop) { shop.state.fx = null; shop.state.decks = {}; ['f', 'p', 'o'].forEach(function (id) { shop.arm(id, null); shop.hold(id, null); shop.nudge(id, 0); }); } }
+    function ttReset() {
+      TT.items = []; TT.deck = null; TT.held = {}; TT.paused = false; hideBadges(); TT.badges = {};
+      if (TT.off) { TT.off(); TT.off = null; } if (TT.fast && shop) shop.fast(false); TT.fast = false;
+      if (shop) { shop.state.fx = null; shop.state.deck = null; ['f', 'p', 'o'].forEach(function (id) { shop.arm(id, null); shop.hold(id, null); shop.nudge(id, 0); }); }
+      TT.nudge = {};
+      if (TT.floor) ttStart();   // 地上的唱片留到 floorRecord(null)
+    }
 
     // ---------------- 公開 API
+    var WALK = {};   // id → { to, done }：最後一次 walk 的終點（finish 用）
     var stage = {
+      version: '4.0',
       get shopId() { return L.id; },
       get layout() { return L; },
       get canvas() { return shop && shop.canvas; },
@@ -472,7 +618,7 @@
         o = o || {};
         return loadLayout(id, opts.layoutBase).then(function (layout) {
           if (destroyed) return stage;
-          stage.clearStamps(); ttReset();
+          stage.clearStamps(); TT.floor = null; ttReset(); TAGS = {}; WALK = {}; focusPrev = null;
           shop.destroy(); mountShop(layout);
           return camera(o.camera || 'full', { ms: 0, screen: o.screen }).then(function () { return stage; });
         });
@@ -488,7 +634,26 @@
       },
       walk: function (id, keys, spd) {
         var path = [].concat(keys || []).map(function (k) { return spotName(id, k); }).filter(function (k) { return k != null; });
-        return shop.walk(id, path, spd);
+        var pr = shop.walk(id, path, spd), w = { to: path.length ? path[path.length - 1] : null, done: !path.length };
+        WALK[id] = w;
+        if (pr && typeof pr.then === 'function') pr.then(function () { w.done = true; });   // 只接成功：嚴格模式走不到的 reject 照樣冒出來
+        return pr;
+      },
+      // ⏩／點一下快轉（SPEC-v4 §2.3.2）：把這個人正在走的那段直接放到終點（shop.put 會 resolve 那個 walk Promise），姿勢回 null
+      finish: function (id) {
+        var w = WALK[id];
+        if (!w || w.done || w.to == null || !shop) return stage;
+        w.done = true; shop.put(id, w.to); shop.pose(id, null);
+        return stage;
+      },
+      finishAll: function () { ['p', 'o', 'f', 'q1', 'q2'].forEach(function (id) { stage.finish(id); }); return stage; },
+      // 讓 id 面向 other（人、spot 名或 [x,y]）
+      faceTo: function (id, other) {
+        var a = shop.pos(id), b = null;
+        if (Array.isArray(other)) b = { x: other[0], y: other[1] };
+        else if (other != null) { b = shop.pos(other); if (!b) { var k = spotName(id, other); if (k && (L.spots || {})[k]) b = { x: L.spots[k][0], y: L.spots[k][1] }; } }
+        if (a && b && Math.round(b.x) !== Math.round(a.x)) shop.flip(id, b.x < a.x);
+        return stage;
       },
       hide: function (id, on) { shop.hide(id, on); return stage; },
       sil: function (id, on) { shop.sil(id, on); return stage; },
@@ -506,12 +671,25 @@
       play: function (on) { shop.play(on); return stage; },
       dim: function (k) { shop.dim(k); return stage; },
       flash: function (color, ms) { shop.flash(color, ms); return stage; },
-      tag: function (id, text, side, lr) { return shop.tag(id, text, side, lr); },
-      untag: function (id) { shop.untag(id); return stage; },
+      // 名牌：記下來（頭頂屬性方塊出現時暫時收起、收方塊時還原）
+      tag: function (id, text, side, lr) {
+        TAGS[id] = text ? [text, side, lr] : null;
+        if (text && (id === 'f' || id === 'p') && TT.badges[sideOf(id)]) { shop.untag(id); return null; }
+        return shop.tag(id, text, side, lr);
+      },
+      untag: function (id) { if (id == null) TAGS = {}; else delete TAGS[id]; shop.untag(id); return stage; },
       float: function (id, text, cls) { return shop.float(id, text, cls); },
       anchor: function (id) { return shop.anchor(id); },
       hotRect: function (id) { return shop.hotRect(hotId(id)); },
       highlight: function (list) { shop.highlight(list || []); return stage; },
+      // 箱子（SPEC-v4 §2.3.5、§2.3.8）：從 layout 讀；focus／unfocus＝抽屜開著時把那一箱留在畫面上
+      bins: function () {
+        return (L.props || []).filter(function (o) { return o.bin && o.bin.key; }).map(function (o) {
+          return { key: o.bin.key, hotId: 'bin:' + o.bin.key, label: o.bin.label || '', stand: (o.bin.stand || []).slice(), propId: o.id };
+        });
+      },
+      focus: focus,
+      unfocus: unfocus,
       hotspots: function () { return shop.hotspots(); },
       tap: function (id, o) { return shop.tap(hotId(id), o); },
       reveal: function (ms) { shop.reveal(ms); return stage; },
@@ -541,7 +719,9 @@
           // 繞過家具的路比直線長：走快一點，鏡頭推近收完時三個人都已經站定（盤面一出來就不會還有人在走）
           var v = sp;
           if (typeof shop.route === 'function' && !at.outside) {
-            var pts = [[at.x, at.y]].concat(shop.route([at.x, at.y], to)), len = 0;
+            // shop.route 回 []（或舊版 null）＝走不到：路長用直線距離估，照常 walk（walk 自己走退路，SPEC-v4 §2.4.5）
+            var rt = shop.route([at.x, at.y], to); if (!rt || !rt.length) rt = [[s[0], s[1]]];
+            var pts = [[at.x, at.y]].concat(rt), len = 0;
             for (var i = 1; i < pts.length; i++) len += Math.hypot(pts[i][0] - pts[i - 1][0], pts[i][1] - pts[i - 1][1]);
             v = Math.max(sp, len / Math.max(0.25, ms0 * 0.6 / 1000) / (L.walkK || 2) / speed());
           }
@@ -595,5 +775,5 @@
     return camera(opts.camera || 'full', { ms: 0, screen: opts.screen }).then(function () { return stage; });
   }
 
-  W.DipLabStage = { mount: mount, loadLayout: loadLayout, fitCamera: fitCamera, pickCamera: pickCamera, ALIAS: ALIAS, PANEL_MIN: PANEL_MIN, INTERACT: INTERACT, version: '3.1' };
+  W.DipLabStage = { mount: mount, loadLayout: loadLayout, fitCamera: fitCamera, pickCamera: pickCamera, ALIAS: ALIAS, PANEL_MIN: PANEL_MIN, INTERACT: INTERACT, version: '4.0' };
 })();
