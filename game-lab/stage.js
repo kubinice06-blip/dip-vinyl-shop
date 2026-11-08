@@ -227,6 +227,7 @@
       var c = cams[name] || cams.full || { y: 0, h: L.size[1] };
       camName = name;
       shop.sparkle(opts.sparkle !== false && !QS.nosparkle && !/^strip/.test(name));
+      if (typeof shop.strip === 'function') shop.strip(/^strip/.test(name));   // 唱盤區橫條：泡泡避開中間（strip 的 grow 讓高螢幕的橫條變高，shop 不能只看可視列數）
       return toView(fitCam(name, c, o), o.ms || 0);
     }
     // 熱點的形狀（場景座標外框）：shop 的熱點清單有就用；箱子 bin:<key> 還沒有熱點時退回道具的 box
@@ -259,6 +260,7 @@
       lastCam = { name: 'full', o: {}, focus: hid, fo: { panelMin: o.panelMin, screen: o.screen } };
       camName = 'full';
       shop.sparkle(opts.sparkle !== false && !QS.nosparkle);
+      if (typeof shop.strip === 'function') shop.strip(false);
       var pr = toView(focusView(hid, o), o.ms == null ? 300 : o.ms);
       focusPrev = prev;
       return pr;

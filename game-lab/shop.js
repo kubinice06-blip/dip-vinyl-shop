@@ -1523,7 +1523,7 @@
     host.classList.add('ds-host'); host.innerHTML = ''; host.appendChild(view); host.appendChild(overlay);
     var state = { door: (L.ambience && L.ambience.door) || 'closed', playing: !(L.ambience && L.ambience.playing === false), t: 0, rt: 0, frame: 0, spot: null, flash: null, reveal: 0, hover: null, hi: [], poke: {}, decks: {}, fx: null, dim: 1 };
     var actors = {}, hots = [], destroyed = false, allowFn = null, sparkleOn = opts.sparkle !== false;
-    var k = 4, scale = 4 / 3, vy = 0, vh = H, hostW = 0;
+    var k = 4, scale = 4 / 3, vy = 0, vh = H, hostW = 0, stripOn = false;   // stripOn：舞台說現在是唱盤區橫條（strip 高螢幕會往上長，不能只看 vh）
     var cam = { y: 0, h: H, dev: null };
     var c0 = (L.cameras || {}).full; if (c0) { cam.y = c0.y; cam.h = c0.h; }
     var cardOf = function (id) { return (opts.cards && opts.cards[id]) || (opts.extraCards && opts.extraCards[id]) || null; };
@@ -1992,7 +1992,7 @@
         var a = actors[id]; if (!a) return;
         var head = a.y - a.head - (o.lift || 0) - (tagOn(id) ? 20 / scale : 0), p = toCss(a.x, head), bh2 = el.offsetHeight || 24;
         if (a.hidden) { el.style.display = 'none'; return; } el.style.display = '';
-        if (vh <= 120) {
+        if (vh <= 120 || stripOn) {
           // 唱盤區橫條（strip／stripS，SPEC-v4 §2.3.7）：泡泡避開中間（唱盤與站在台後的老闆，老闆 x±16 格）。
           // 說話的人在哪半邊，泡泡中心就夾在那半邊：左 [4+w/2, mid−ownerHalf−6−w/2]、右 [mid+ownerHalf+6+w/2, ow−4−w/2]；寬 ≤ mid−ownerHalf−10。
           // 頭頂放得下就放頭頂，放不下就貼在橫條頂上、尾巴朝下指他。老闆（站中間）照舊置中。會蓋到自己的名牌，沒關係（尾巴已經說是誰）
@@ -2315,6 +2315,7 @@
       rectOf: function (r) { return rectToScreen(r, false); },
       tap: function (hid, o) { syncFollow(); var h = hotById(hid); if (!h || (!(o && o.force) && !enabled(h))) return false; tapHot(h); return true; },
       allow: function (fn) { allowFn = fn || null; return api; },
+      strip: function (on) { if (stripOn !== !!on) { stripOn = !!on; layoutOverlay(); } return api; },
       sparkle: function (on) { sparkleOn = !!on; return api; },
       bump: bump,
       toCss: toCss, hostCss: hostCss, render: render, fit: fit,
