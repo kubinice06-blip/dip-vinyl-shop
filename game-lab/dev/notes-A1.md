@@ -21,7 +21,8 @@ A1 不 push、不在 `/home/user/dip-vinyl-shop` 本身提交；整合由另一�
 - [x] sim.mjs v4 初版（`db85d7ffe`；S1–S8、`--econ`、`--patch`、`--hp`、`--set mercy=false`）
 - [x] 校準（`9477c2552`）：聲望、開局的錢、三件加成價寫回 content.js；`C.m2Swaps`＋`sim --project-m2`；check-content 檢查換牌表
 - [x] dev/decks-v4.md（§4 牌單表＋A3-M2 之後的兩副牌＋禮物＋特價箱＋經濟表）、dev/sim-v4.json（`sim.mjs --n 3000 --project-m2 --json`）
-- [ ] 合併 A3-M2 後重跑（見上）
+- [x] 合併 A3-M2（merge commit，`v4/A3-M2 @ 8435b2345`；連帶進來 A2-M1／A3 第二段的 shop.js、hit.test、e2e-taps、check-covers 等，都不是 A1 的檔）
+- [ ] 第 3 階段：牌單直接改寫成新卡、刪 `C.m2Swaps`／`--project-m2`／check-content 換牌段 → 重跑必過四項 → 重產 dev/decks-v4.md、dev/sim-v4.json
 
 ## 第 2 階段校準筆記
 
