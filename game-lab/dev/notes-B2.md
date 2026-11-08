@@ -7,7 +7,7 @@
 - **第 1 階段（完成）**：beat runner（§2.5.3）、v4 劇本（§2.5.4＋D §2）、序章面板（§2.5.7）、外殼（§2.5.2）、刪 v3 墊片與試做版新增、
   序章藏 r1、走位（D §3）、lint-copy 26 句原句、check-content、`tests/e2e-prologue.mjs`（§5.4）全綠、段 4 截圖。
 - **第 2 階段（還沒開始）**：教學六手（§2.5.5：`C.tutorial.steps／learned／ui`、`tutorial.js`、replayDuel／fakeRun、`test/tutorial.test.mjs`）、
-  `tests/e2e.spec.mjs` 改 v4（import e2e-lib）、規則卡 54 字第 6 行四尺寸不捲動的驗證。
+  `tests/e2e.spec.mjs` 改 v4（import e2e-lib）、規則卡四尺寸不捲動（實測 390×664 規則卡 .pane 高 805 px > 可視高 664：三角圖＋六行＋頁尾太高，要改緊湊版；第 6 行 54 字已會自動換行）。
 
 ## 進度（第 1 階段）
 - [x] notes 開工（4d5cd0efc）
@@ -66,6 +66,9 @@
 | `node game-lab/tools/check-shops.mjs`／`check-covers.mjs` | OK／OK |
 | `node game-lab/test/engine.test.mjs --quick` | 171169 passed, **1 failed**：#14 第 681 行 `Object.keys(C.habits)`（墊片刪了就丟錯），見「請求」 |
 | `node game-lab/test/tutorial.test.mjs` | 還是 v3 的（第一波就預期會壞），第 2 階段改寫 |
+
+另外手動探過（scratchpad `B2/probe3.mjs`，替身 econ）：序章中點箱子＝老闆泡泡「打完再翻。」、不開抽屜；今晚來客點箱子＝`openBin:jazz`、特價區＝`openBargain`、
+櫃檯（canShop）＝`openRelicShop`、不認得的 key＝console.warn；錢那格 `$300`；規則卡頁尾「客人 17–20、菁英 17–20、傳說藏家 16」；主控台 0 錯誤。
 
 ## 截圖（段 4「序章」；deviceScaleFactor 2；腳本 scratchpad `B2/shots.mjs`，讀 LAB_BASE；經濟介面是替身，特價區面板等 B3）
 截圖好了：`game-lab/dev/shots/B2/`
