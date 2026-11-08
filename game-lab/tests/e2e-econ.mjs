@@ -9,12 +9,12 @@
 //   3  那一箱的形狀整個在舞台可見範圍內（hotspots 的 rect ⊂ 鏡頭），而且在抽屜上緣之上（沒被抽屜蓋到）；賣回子面板（#7）、櫃檯（#9）、特價箱（#10）也照查
 //   4  一張大封面翻著看：› ‹、縮圖、左右滑都會換張；點封面＝唱片資訊（關掉回到抽屜）
 //   5  點抽屜外面關掉：抽屜不見、描框清掉、不再 dig、鏡頭回到開之前；人已在箱子前再點同一箱＝不走路直接開、不會被放開後的 click 關掉
-//   6  買（錢夠、包包沒滿）→ 錢減價格、包包 +1、那張從抽屜消失、吐司「進包包」
+//   6  買（錢夠、包包沒滿）→ 錢減價格（稀有度價，鈕「買 $1,000」千分位）、包包 +1、那張從抽屜消失、吐司「進包包」；抽屜標題＝名牌英文＋中文、標稀有度
 //   7  包包滿 → 先賣一張：賣回子面板（半價）→ 選一張 →「賣這張」→ 錢＝原本＋半價－價格、包包仍 8、賣掉那張不在、買的那張在
 //   8  錢不夠、賣一張也不夠 → 鈕停用（「錢不夠」）
 //   9  櫃檯配件：走到櫃檯前、買一件（錢減、配件 +1）；滿 3 件 → 先賣一件（半價）再買
-//   10 特價箱開局模式（舞台上真點特價箱）：6 張、恰好挑 3 張「收下這三張」才能按（第 4 張換掉最早挑的那張）；長按封面＝唱片資訊；點外面不會關；收下 → 包包 +3、bargainPicked
-//   11 特價箱之後模式：挑 1 張 → $100 → 錢 −100、包包 +1；包包滿時先賣（需要幾張就賣幾張）
+//   10 特價箱開局模式（舞台上真點特價箱）：6 張、每格的特價劃掉＋標題「這次免費」（FIXLIST 8）、恰好挑 3 張「收下這三張」才能按（第 4 張換掉最早挑的那張）；長按封面＝唱片資訊；點外面不會關；收下 → 包包 +3、bargainPicked
+//   11 特價箱之後模式（FIXLIST 8）：每格標價 $100／200／300；沒挑「挑一到三張」停用；挑 1 張 →「買下 $那張」→ 錢 −那張、包包 +1；包包滿時先賣（需要幾張就賣幾張），付挑的那幾張的總和
 //   12 序章、對決中點箱子 → 老闆說「打完再翻。」、不開抽屜
 //   13 沒有 run（標題）：抽屜只能翻、沒有買的鈕
 //   15 包包沒滿、錢不夠但賣一張就夠（SPEC §2.5.6 第 3 點）：鈕可按（「買 $400／先賣一張」）→ 子面板「錢不夠：先賣一張」、賣了也不夠的那張不給選 → 賣一張買到、包包張數不變；
@@ -22,11 +22,11 @@
 //   14 所有面板（箱子、賣回、特價兩種、櫃檯、配件賣回、錢不夠先賣）不捲出畫面、鈕 ≥44 高；主控台 0 錯誤（最後跑）
 //
 // index.html（整合後：ui.js 已經 configure 經濟介面、載入 econ.css／econ.js；沒接上就印 SKIP、不算失敗；ECON_INDEX=0 不跑）：
-//   21 今晚來客：錢那一格＝econ 的 moneyHTML、跟 run.money 一樣；DipLabEcon 已 configure；econ.css 有載入
+//   21 今晚來客：錢那一格＝econ 的 moneyHTML、跟 run.money 一樣（千分位 $5,000）；DipLabEcon 已 configure；econ.css 有載入
 //   22 真點舞台上的箱子 → 你走到那一箱的 stand 才開抽屜；抽屜 ≤50%、不溢出、鈕 ≥44；那一箱沒被抽屜蓋到
 //   23 買一張 → run.money 減價格；點抽屜外面關掉 → 今晚來客重畫：錢那一格、包包 n/8 跟著變；存檔（localStorage）也是新的錢
 //   24 真點櫃檯 → 走到櫃檯前、配件面板（2–3 件）；✕ 關掉
-//   25 真點特價箱（已挑過）→ $100 模式；✕ 關掉；整段主控台 0 錯誤、本機檔案沒有 4xx
+//   25 真點特價箱（已挑過）→ 買的模式（每格 $100–300、鈕「挑一到三張」）；✕ 關掉；整段主控台 0 錯誤、本機檔案沒有 4xx
 // 每一項印 PASS／FAIL；任何 FAIL → exit 1。
 import { launch, newPage, SIZES, record, results, sleep, URL0, jsClick, waitScreen } from './e2e-lib.mjs';
 
@@ -186,16 +186,17 @@ async function runSize(browser, w, h) {
     });
     // ---------------- 6：買（錢夠、包包沒滿） ----------------
     await T(6, async () => {
-      await reset(page, { mode: 'night', money: 800, bag: 5, relics: 2 });
+      await reset(page, { mode: 'night', money: 1500, bag: 5, relics: 2 });
       await openAndWait(page, 'bin:hiphop');
       const r0 = await run(page), d0 = await dbg(page);
       const id = d0.ids[d0.idx];
       const price = await page.evaluate(id => window.DipLabEngine.priceOf(window.DipLabContent, id), id);
+      const pt = await page.evaluate(id => { const C = window.DipLabContent, E = window.DipLabEngine, k = E.rarity(C.cards[id]); return { mt: E.moneyText(E.priceOf(C, id)), rz: C.rarityZh[k], want: C.economy.price[k], ttl: (document.querySelector('.ec-drawer .ec-ttl') || {}).textContent || '', rar: (document.querySelector('.ec-drawer .ec-meta .ec-rar') || {}).textContent || '' }; }, id);
       const lab = await page.locator('.ec-drawer [data-a=buy]').innerText();
       await tapSel(page, '.ec-drawer [data-a=buy]'); await sleep(350);
       const r1 = await run(page), d1 = await dbg(page), toasts = await page.evaluate(() => window.H.toasts.slice());
-      const ok = r1.money === r0.money - price && r1.bag.length === r0.bag.length + 1 && r1.bag.includes(id) && !d1.ids.includes(id) && d1.ids.length === d0.ids.length - 1 && /進包包/.test(toasts.join()) && lab.replace(/\s/g, '') === ('買$' + price);
-      record(6, size, ok, `「${lab.replace(/\s+/g, ' ')}」：$${r0.money} → $${r1.money}（價 ${price}）；包包 ${r0.bag.length} → ${r1.bag.length}；抽屜 ${d0.ids.length} → ${d1.ids.length} 張；吐司「${toasts.slice(-1)[0]}」`);
+      const ok = r1.money === r0.money - price && r1.bag.length === r0.bag.length + 1 && r1.bag.includes(id) && !d1.ids.includes(id) && d1.ids.length === d0.ids.length - 1 && /進包包/.test(toasts.join()) && lab.replace(/\s/g, '') === ('買$' + pt.mt) && price === pt.want && price >= 800 && price <= 1200 && pt.ttl === 'HIP-HOP嘻哈 R&B' && pt.rar === pt.rz;
+      record(6, size, ok, `標題「${pt.ttl}」稀有度「${pt.rar}」（${pt.rz}＝$${pt.want}）；「${lab.replace(/\s+/g, ' ')}」：$${r0.money} → $${r1.money}（價 ${price}）；包包 ${r0.bag.length} → ${r1.bag.length}；抽屜 ${d0.ids.length} → ${d1.ids.length} 張；吐司「${toasts.slice(-1)[0]}」`);
       panels.push(['箱子（買完）', await measure(page)]);
     });
     // ---------------- 7：包包滿 → 先賣一張 ----------------
@@ -234,7 +235,7 @@ async function runSize(browser, w, h) {
     });
     // ---------------- 9：櫃檯配件 ----------------
     await T(9, async () => {
-      await reset(page, { mode: 'night', money: 2500, bag: 5, relics: 2 });
+      await reset(page, { mode: 'night', money: 6500, bag: 5, relics: 2 });   // 配件一件 $3,000（FIXLIST 8）：買一件剩 3,500，滿 3 件再買要先賣一件（+1,500）
       await page.evaluate(() => { window.H.open('relic'); }); await sleep(150); await skipWalk(page); await waitOpen(page);
       const pos = await page.evaluate(() => { const a = window.H.stage.pos('p'), s = window.H.stage.spot('pay'); return [Math.round(a.x), Math.round(a.y), s]; });
       panels.push(['櫃檯', await measure(page)]);
@@ -243,7 +244,7 @@ async function runSize(browser, w, h) {
       const price = await page.evaluate(id => window.DipLabEngine.relicPrice(window.DipLabContent, id), rid);
       await tapSel(page, `.ec-drawer [data-a=rbuy][data-r="${rid}"]`); await sleep(300);
       const r1 = await run(page);
-      const ok1 = r1.money === r0.money - price && r1.relics.length === 3 && r1.relics.includes(rid) && !r1.shop.relics.includes(rid);
+      const ok1 = price === 3000 && r1.money === r0.money - price && r1.relics.length === 3 && r1.relics.includes(rid) && !r1.shop.relics.includes(rid);
       // 滿 3 件：再買一件 → 先賣一件
       const rid2 = r1.shop.relics[0];
       let ok2 = false, s2 = '櫃檯只剩 0 件';
@@ -273,7 +274,11 @@ async function runSize(browser, w, h) {
       const d0 = await dbg(page), r0 = await run(page);
       const take = page.locator('.ec-drawer [data-a=take]');
       const ids = d0.ids;
-      const priceShown = await page.evaluate(() => /\$/.test(document.querySelector('.ec-drawer').innerText));
+      // 每格標特價、劃掉（這次免費；FIXLIST 8）：價＝engine.bargainPriceOf（最高星 1／2／3 → $100／200／300）
+      const pr = await page.evaluate(() => { const C = window.DipLabContent, E = window.DipLabEngine;
+        return { free: /這次免費/.test((document.querySelector('.ec-drawer .ec-hd') || {}).textContent || ''),
+          tiles: [...document.querySelectorAll('.ec-drawer .ec-tile')].map(t => { const s = t.querySelector('.ec-pt.free s'); return { s: s ? s.textContent : null, want: '$' + E.moneyText(E.bargainPriceOf(C, t.dataset.cid)) }; }) }; });
+      const priceShown = pr.free && pr.tiles.length === 6 && pr.tiles.every(t => t.s && t.s === t.want && /^\$[123]00$/.test(t.s));
       const dis = [];
       dis.push(await take.isDisabled());
       for (let i = 0; i < 3; i++) { await tapSel(page, `.ec-drawer .ec-tile[data-cid="${ids[i]}"]`); await sleep(150); dis.push(await take.isDisabled()); }
@@ -307,9 +312,9 @@ async function runSize(browser, w, h) {
       const still = (await dbg(page)).open;
       await tapSel(page, '.ec-drawer [data-a=take]'); await sleep(400);
       const r1 = await run(page), closed = !(await dbg(page)).open;
-      const ok = vis10.ok && ids.length === 6 && !priceShown && dis.join() === 'true,true,true,false' && disOff && JSON.stringify(sel4) === JSON.stringify(want) && lpOk && still && closed && r1.bag.length === r0.bag.length + 3 &&
+      const ok = vis10.ok && ids.length === 6 && priceShown && dis.join() === 'true,true,true,false' && disOff && JSON.stringify(sel4) === JSON.stringify(want) && lpOk && still && closed && r1.bag.length === r0.bag.length + 3 &&
         want.every(id => r1.bag.includes(id)) && r1.shop.bargainPicked && r1.shop.bargain.length === 3;
-      record(10, size, ok, `特價箱沒被蓋到 ${vis10.ok}${vis10.ok ? '' : '（' + vis10.why + '）'}；${ids.length} 張、沒有價格 ${!priceShown}；挑 0/1/2/3 張時鈕停用 ${dis.join('/')}；取消一張又停用 ${disOff}；第 4 張換掉最早那張 ${JSON.stringify(sel4) === JSON.stringify(want)}；長按＝唱片資訊（有補送 click ${lp1.open}、沒有 ${lp2.open}，不會選到 ${JSON.stringify(lp2.sel) === JSON.stringify(want)}）；點外面不關 ${still}；收下 → 包包 ${r0.bag.length} → ${r1.bag.length}、特價剩 ${r1.shop.bargain.length}`);
+      record(10, size, ok, `特價箱沒被蓋到 ${vis10.ok}${vis10.ok ? '' : '（' + vis10.why + '）'}；${ids.length} 張、特價劃掉＋這次免費 ${priceShown}（${pr.tiles.map(t => t.s).join(' ')}）；挑 0/1/2/3 張時鈕停用 ${dis.join('/')}；取消一張又停用 ${disOff}；第 4 張換掉最早那張 ${JSON.stringify(sel4) === JSON.stringify(want)}；長按＝唱片資訊（有補送 click ${lp1.open}、沒有 ${lp2.open}，不會選到 ${JSON.stringify(lp2.sel) === JSON.stringify(want)}）；點外面不關 ${still}；收下 → 包包 ${r0.bag.length} → ${r1.bag.length}、特價剩 ${r1.shop.bargain.length}`);
     });
     // ---------------- 11：特價箱之後模式 ----------------
     await T(11, async () => {
@@ -318,11 +323,14 @@ async function runSize(browser, w, h) {
       panels.push(['特價（$100）', await measure(page)]);
       const d0 = await dbg(page), r0 = await run(page), buy = page.locator('.ec-drawer [data-a=bbuy]');
       const dis0 = await buy.isDisabled(), lab = (await buy.innerText()).replace(/\s+/g, '');
+      const each = await page.evaluate(() => [...document.querySelectorAll('.ec-drawer .ec-tile')].map(t => { const C = window.DipLabContent, E = window.DipLabEngine; return [(t.querySelector('.ec-pt') || {}).textContent || '', '$' + E.moneyText(E.bargainPriceOf(C, t.dataset.cid)), !!t.querySelector('.ec-pt.free')]; }));
+      const p0 = await page.evaluate(id => window.DipLabEngine.bargainPriceOf(window.DipLabContent, id), d0.ids[0]);
       await tapSel(page, `.ec-drawer .ec-tile[data-cid="${d0.ids[0]}"]`); await sleep(150);
-      const dis1 = await buy.isDisabled();
+      const dis1 = await buy.isDisabled(), lab1 = (await buy.innerText()).replace(/\s+/g, '');
       await tapSel(page, '.ec-drawer [data-a=bbuy]'); await sleep(350);
       const r1 = await run(page), d1 = await dbg(page);
-      const ok1 = dis0 && !dis1 && lab === '$100：最多挑三張' && r1.money === r0.money - 100 && r1.bag.length === r0.bag.length + 1 && r1.bag.includes(d0.ids[0]) && !d1.ids.includes(d0.ids[0]);
+      const okEach = each.length > 0 && each.every(([a, b, free]) => a === b && !free && /^\$[123]00$/.test(a));
+      const ok1 = dis0 && !dis1 && lab === '挑一到三張' && lab1 === '買下$' + p0 && okEach && r1.money === r0.money - p0 && r1.bag.length === r0.bag.length + 1 && r1.bag.includes(d0.ids[0]) && !d1.ids.includes(d0.ids[0]);
       await page.evaluate(() => window.DipLabEcon.close()); await sleep(250);
       await page.evaluate(() => window.DipLabEcon.close()); await sleep(250);
       // 包包滿 8：挑 2 張 → 要先賣 2 張
@@ -336,8 +344,9 @@ async function runSize(browser, w, h) {
       const sv = await page.evaluate(ids => ids.reduce((s, id) => s + window.DipLabEngine.sellValue(window.DipLabContent, window.DipLabContent.cards[id]), 0), q0.bag.slice(0, 2));
       await tapSel(page, '.ec-drawer [data-a=sell]'); await sleep(350);
       const q1 = await run(page);
-      const ok3 = es.sub && es.sub.need === 2 && /先賣 2 張/.test(msg) && q1.bag.length === 8 && q1.money === q0.money + sv - 100 && e0.ids.slice(0, 2).every(id => q1.bag.includes(id)) && q0.bag.slice(0, 2).every(id => !q1.bag.includes(id));
-      record(11, size, ok1 && ok3, `「${lab}」沒挑停用 ${dis0}、挑 1 張可按 ${!dis1}；$${r0.money} → $${r1.money}、包包 ${r0.bag.length} → ${r1.bag.length}；包包滿挑 2 張 →「${msg}」→ 賣 2 張（+${sv}）：$${q0.money} → $${q1.money}、包包 ${q1.bag.length}`);
+      const p2 = await page.evaluate(ids => ids.reduce((s, id) => s + window.DipLabEngine.bargainPriceOf(window.DipLabContent, id), 0), e0.ids.slice(0, 2));
+      const ok3 = es.sub && es.sub.need === 2 && /先賣 2 張/.test(msg) && q1.bag.length === 8 && q1.money === q0.money + sv - p2 && e0.ids.slice(0, 2).every(id => q1.bag.includes(id)) && q0.bag.slice(0, 2).every(id => !q1.bag.includes(id));
+      record(11, size, ok1 && ok3, `每格標價 ${okEach}（${each.map(x => x[0]).join(' ')}）；「${lab}」沒挑停用 ${dis0}、挑 1 張「${lab1}」可按 ${!dis1}；$${r0.money} → $${r1.money}、包包 ${r0.bag.length} → ${r1.bag.length}；包包滿挑 2 張 →「${msg}」→ 賣 2 張（+${sv}）付 $${p2}：$${q0.money} → $${q1.money}、包包 ${q1.bag.length}`);
       await page.evaluate(() => window.DipLabEcon.close()); await sleep(300);
     });
     // ---------------- 12：序章、對決中點箱子 ----------------
@@ -387,7 +396,7 @@ async function runSize(browser, w, h) {
       await tapSel(page, `.ec-drawer .ec-spick[data-cid="${sell}"]`); await sleep(200);
       await tapSel(page, '.ec-drawer [data-a=sell]'); await sleep(350);
       const r1 = await run(page), d1 = await dbg(page), toasts = await page.evaluate(() => window.H.toasts.slice());
-      const okCard = d0.ids[d0.idx] === setup.id && setup.money < setup.price && !dis && txt === '買$' + setup.price + '先賣一張' && ds.sub && ds.sub.kind === 'card' && ds.sub.why === 'money' && ds.sub.need === 1 &&
+      const okCard = d0.ids[d0.idx] === setup.id && setup.money < setup.price && !dis && txt === '買$' + setup.price.toLocaleString('en-US') + '先賣一張' && ds.sub && ds.sub.kind === 'card' && ds.sub.why === 'money' && ds.sub.need === 1 &&
         /^錢不夠：先賣一張/.test(msg) && JSON.stringify(tiles) === JSON.stringify(want) && vis.ok &&
         r1.money === setup.money + setup.max - setup.price && r1.bag.length === r0.bag.length && !r1.bag.includes(sell) && r1.bag.includes(setup.id) && !d1.ids.includes(setup.id) && !d1.sub && /賣掉/.test(toasts.slice(-1)[0] || '');
       const sCard = `$${setup.money}、《${setup.id}》$${setup.price}：鈕「${txt}」可按 ${!dis}；子面板「${msg}」（箱子沒被蓋到 ${vis.ok}）；不給選 ${tiles.filter(t => t[1]).length}/${tiles.length} 張（照賣回價算 ${JSON.stringify(tiles) === JSON.stringify(want)}）；賣 ${sell}（+${setup.max}）→ $${r1.money}、包包 ${r0.bag.length} → ${r1.bag.length}`;
@@ -410,7 +419,7 @@ async function runSize(browser, w, h) {
       await tapSel(page, `.ec-drawer .ec-spick[data-r="${rsell}"]`); await sleep(200);
       await tapSel(page, '.ec-drawer [data-a=sell]'); await sleep(350);
       const q1 = await run(page);
-      const okRelic = rs.money < rs.price && !rdis && rtxt === '買$' + rs.price + '先賣一件' && rds.sub && rds.sub.kind === 'relic' && rds.sub.why === 'money' && /^錢不夠：先賣一件/.test(rmsg) &&
+      const okRelic = rs.money < rs.price && !rdis && rtxt === '買$' + rs.price.toLocaleString('en-US') + '先賣一件' && rds.sub && rds.sub.kind === 'relic' && rds.sub.why === 'money' && /^錢不夠：先賣一件/.test(rmsg) &&
         q1.relics.length === 2 && !q1.relics.includes(rsell) && q1.relics.includes(rs.rid) && q1.money === rs.money + rs.max - rs.price;
       const sRelic = `配件 $${rs.money}、「${rs.rid}」$${rs.price}：鈕「${rtxt}」可按 ${!rdis}；「${rmsg}」；賣 ${rsell}（+${rs.max}）→ $${q1.money}、配件 ${q1.relics.join(',')}`;
       record(15, size, okCard && okRelic, sCard + '；' + sRelic);
@@ -479,7 +488,7 @@ async function runIndex(browser, w, h) {
     await openTitleI(page);
     const wired = await page.evaluate(() => !!(window.__lab && window.DipLabEcon && document.querySelector('script[src*="econ.js"]')));
     if (!wired) return false;
-    await seedNight(page, 800);
+    await seedNight(page, 5000);   // FEATURE 那格最貴 $4,000（FIXLIST 8）
     await openTitleI(page);
     await jsClick(page, '[data-a=cont]');
     if (!(await waitScreen(page, 'night', 15000))) throw new Error('進不了今晚來客（' + (await page.evaluate(() => window.__lab.screen())) + '）');
@@ -487,7 +496,7 @@ async function runIndex(browser, w, h) {
     await T(21, async () => {
       const r = await nightLine(page), d = await page.evaluate(() => window.DipLabEcon.debug());
       const css = await page.evaluate(() => [...document.styleSheets].some(s => /econ\.css/.test(s.href || '')));
-      record(21, size, r.ec && r.money === '$' + r.run.money && d.cfg && css, `錢那一格「${r.money}」（run $${r.run.money}；econ 的 moneyHTML ${r.ec}）；DipLabEcon configure ${d.cfg}；econ.css ${css}`);
+      record(21, size, r.ec && r.money === '$' + r.run.money.toLocaleString('en-US') && r.money === '$5,000' && d.cfg && css, `錢那一格「${r.money}」（run $${r.run.money}；econ 的 moneyHTML ${r.ec}）；DipLabEcon configure ${d.cfg}；econ.css ${css}`);
     });
     let hot = null;
     await T(22, async () => {
@@ -513,7 +522,7 @@ async function runIndex(browser, w, h) {
       await sleep(900);
       const l1 = await nightLine(page), scr = await page.evaluate(() => window.__lab.screen());
       const ok = mid.money === l0.run.money - price && mid.bag === l0.run.bag + 1 && !mid.ids.includes(id) && scr === 'night' &&
-        l1.money === '$' + mid.money && l1.bag === '包包' + mid.bag + '/8' && l1.saved === mid.money;
+        l1.money === '$' + mid.money.toLocaleString('en-US') && l1.bag === '包包' + mid.bag + '/8' && l1.saved === mid.money;
       record(23, size, ok, `買 ${id}（$${price}）：$${l0.run.money} → $${mid.money}、包包 ${l0.run.bag} → ${mid.bag}；點外面關 → ${scr}：錢那一格「${l0.money}」→「${l1.money}」、「${l0.bag}」→「${l1.bag}」、存檔 $${l1.saved}`);
     });
     await T(24, async () => {
@@ -541,7 +550,7 @@ async function runIndex(browser, w, h) {
       const closed = await page.waitForFunction(() => !window.DipLabEcon.isOpen() && !document.querySelector('.ec-drawer'), null, { timeout: 4000 }).then(() => true, () => false);
       await sleep(600);
       const errs = page._errors.slice(), bad = page._badLocal.slice();
-      record(25, size, d.kind === 'bargain' && d.mode === 'buy' && /^\$100/.test(lab) && pok && closed && !errs.length && !bad.length,
+      record(25, size, d.kind === 'bargain' && d.mode === 'buy' && lab === '挑一到三張' && pok && closed && !errs.length && !bad.length,
         `真點特價箱 → ${d.kind}/${d.mode}「${lab}」；${ps}；✕ 關掉 ${closed}；主控台錯誤 ${errs.length}${errs.length ? '：' + errs.slice(0, 3).join(' / ') : ''}；本機 4xx ${bad.length}${bad.length ? '：' + bad.slice(0, 3).join(' / ') : ''}`);
     });
     return true;
