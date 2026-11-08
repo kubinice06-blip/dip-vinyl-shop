@@ -4,8 +4,9 @@
  * Node：require('./cards.js')、try require('./bins.js')，module.exports = 同一份物件。
  * 只有資料，沒有邏輯；engine.js 只讀不改。
  *
- * v4：三相剋＋門檻 N=2（被剋方高 2 星以上剋不動，改比星）、對手暗選（提示＋誠實度，會唬人）、王牌 7 星不會被剋、六手上限；
- *     拿掉脾氣、急了、翻面、B 面。經濟：贏了拿錢、箱子買唱片、櫃檯買配件、特價箱；錢與買的唱片打烊歸零，配件照 v3 帶到下一晚。
+ * v4：三相剋＋門檻 N=2（被剋方高 2 星以上剋不動，改比星）、對手暗選（提示＋誠實度，會唬人）、王牌 7 星（一場一次；沒有「不會被剋」，FIXLIST 2）、
+ *     六手上限（比聲望條剩幾成，FIXLIST 3）；拿掉脾氣、急了、翻面、B 面。
+ *     經濟（FIXLIST 8 台幣行情）：贏了拿錢、箱子買唱片（照稀有度定價）、櫃檯買配件、特價箱；錢與買的唱片打烊歸零，配件照 v3 帶到下一晚。
  *
  * 第一波（A1）：§2.2.2–§2.2.10 的資料。第二波（B2）：v4 劇本（C.script、C.tonightLines、C.blocking，§2.5.4）、
  *   刪掉 v3 外殼墊片（junk、habits、retorts、v3 劇本、bins[*].ids）；教學步驟（C.tutorial.steps／learned／ui）第二波第 2 階段改。
@@ -59,15 +60,16 @@
   C.bargainTag = '新';
 
   // ===================================================================
-  // 誠實度（D §5；名牌上的那個詞，tag 店主）與出招難度（原版 aiPlan 的係數，roguelike.html:3650-3660，拿掉相生與氣勢）
+  // 誠實度（D §5：照實出的機率 q）與出招難度（原版 aiPlan 的係數，roguelike.html:3650-3660，拿掉相生與氣勢）
+  //   誠實度只在引擎裡用，畫面上不寫任何誠實度的字（店主 2026-11-08 06:05「不用寫什麼提示大多可信 看了很煩」，FIXLIST 6）；
+  //   玩家從結果句「他唬你！」自己體會。
   // ===================================================================
   C.honesty = {
-    honest:    { zh: '老實', q: 1 },
-    sometimes: { zh: '偶爾唬人', q: 0.8 },
-    often:     { zh: '愛唬人', q: 0.7 },
-    veteran:   { zh: '老江湖', q: 0.6 }
+    honest:    { q: 1 },     // 序章男子
+    sometimes: { q: 0.8 },   // 一般客人
+    often:     { q: 0.7 },   // 菁英
+    veteran:   { q: 0.6 }    // 傳說藏家
   };
-  C.honestyTag = '店主';
   C.planners = {
     easy:   { w: 0.45, nz: 2.4, mercy: false },   // 原版 easy：星×0.45＋U(0,2.4)，不鈍化
     normal: { w: 0.6,  nz: 1.4, mercy: true },    // 原版 normal：星×0.6＋U(0,1.4)
@@ -78,23 +80,23 @@
 
   // ===================================================================
   // 發燒配件（9 件；全部被動、自動生效、最多帶 3 件；照 v3 帶到下一晚）
-  //   desc＝說明（點圖示時看）；note＝生效那手結果行補的一句（engine 的 clash.notes[].text）；price＝櫃檯價（序章／獎勵拿到的只用來算賣回）
-  //   三件加成 1200 → 1000（sim 校準，S6；仍 > 5 星唱片 $800）
+  //   desc＝說明（點圖示時看）；note＝生效那手結果行補的一句（engine 的 clash.notes[].text）
+  //   價錢：一律 C.economy.relicPrice（$3,000 一件，FIXLIST 8）；序章／獎勵拿到的只用來算賣回（半價）。要個別定價再在這裡加 price
   //   boost＝出那色時 +1 星（engine outcome；王牌不加）；v4:false＝v4 哪裡都拿不到（engine newRun 濾掉）
   //   icon＝ui.js LAB_ICONS（roguelike.html PIX_ICONS_LV）的鍵；heavy180／numbered／matrix 由 B2 加進 LAB_ICONS
   //   序章收尾三選一：防塵套／黑膠唱針／洗碟水；菁英、藏家打贏：他丟過的唱片挑一張，或改拿 rewards.relicPool 裡的一件；櫃檯只賣三件加成
   // ===================================================================
   C.relics = {
-    dustcover: { id: 'dustcover', name: '防塵套',     icon: 'dustcover', desc: '每場第一次被剋少扣 1。', note: '防塵套：少扣 1',      price: 900,  tag: '新' },
-    stylus:    { id: 'stylus',    name: '黑膠唱針',   icon: 'stylus',    desc: '硬蕊剋中多扣 1。',       note: '黑膠唱針：多扣 1',    price: 1000, tag: '新' },
-    cleaner:   { id: 'cleaner',   name: '洗碟水',     icon: 'cleaner',   desc: '同色同星時你扣他 1。',   note: '洗碟水：他 −1',       price: 900,  tag: '新' },
-    obi:       { id: 'obi',       name: '原版側標',   icon: 'obi',       desc: '經典剋中多扣 1。',       note: '原版側標：多扣 1',    price: 1000, tag: '新' },
-    testpress: { id: 'testpress', name: '神秘見本盤', icon: 'testpress', desc: '冷門剋中多扣 1。',       note: '神秘見本盤：多扣 1',  price: 1000, tag: '新' },
+    dustcover: { id: 'dustcover', name: '防塵套',     icon: 'dustcover', desc: '每場第一次被剋少扣 1。', note: '防塵套：少扣 1',      tag: '新' },
+    stylus:    { id: 'stylus',    name: '黑膠唱針',   icon: 'stylus',    desc: '硬蕊剋中多扣 1。',       note: '黑膠唱針：多扣 1',    tag: '新' },
+    cleaner:   { id: 'cleaner',   name: '洗碟水',     icon: 'cleaner',   desc: '同色同星時你扣他 1。',   note: '洗碟水：他 −1',       tag: '新' },
+    obi:       { id: 'obi',       name: '原版側標',   icon: 'obi',       desc: '經典剋中多扣 1。',       note: '原版側標：多扣 1',    tag: '新' },
+    testpress: { id: 'testpress', name: '神秘見本盤', icon: 'testpress', desc: '冷門剋中多扣 1。',       note: '神秘見本盤：多扣 1',  tag: '新' },
     // 〔補〕⚠規則：v3 效果靠名牌脾氣，v4 已無脾氣；新效果（第一手他不唬人）等店主決定，預設哪裡都拿不到（SPEC-v4 §2.2.6、§5.7 #7）
-    headphone: { id: 'headphone', name: '監聽耳機',   icon: 'headphone', desc: '每場第一手他不唬人。',   note: '監聽耳機：他照實出',  price: 1000, v4: false, tag: '新' },
-    boost_c:   { id: 'boost_c',   name: '180g 重量盤', icon: 'heavy180', desc: '經典出招時 +1 星。',     note: '重量盤：+1 星',       price: 1000, boost: 'c', tag: '新' },
-    boost_o:   { id: 'boost_o',   name: '絕版編號標', icon: 'numbered',  desc: '冷門出招時 +1 星。',     note: '絕版編號標：+1 星',   price: 1000, boost: 'o', tag: '新' },
-    boost_h:   { id: 'boost_h',   name: '內圈刻字',   icon: 'matrix',    desc: '硬蕊出招時 +1 星。',     note: '內圈刻字：+1 星',     price: 1000, boost: 'h', tag: '新' }
+    headphone: { id: 'headphone', name: '監聽耳機',   icon: 'headphone', desc: '每場第一手他不唬人。',   note: '監聽耳機：他照實出',  v4: false, tag: '新' },
+    boost_c:   { id: 'boost_c',   name: '180g 重量盤', icon: 'heavy180', desc: '經典出招時 +1 星。',     note: '重量盤：+1 星',       boost: 'c', tag: '新' },
+    boost_o:   { id: 'boost_o',   name: '絕版編號標', icon: 'numbered',  desc: '冷門出招時 +1 星。',     note: '絕版編號標：+1 星',   boost: 'o', tag: '新' },
+    boost_h:   { id: 'boost_h',   name: '內圈刻字',   icon: 'matrix',    desc: '硬蕊出招時 +1 星。',     note: '內圈刻字：+1 星',     boost: 'h', tag: '新' }
   };
   C.relicMax = 3;
   C.rewards = {
@@ -104,22 +106,32 @@
   C.relicShop = { pool: ['boost_c', 'boost_o', 'boost_h'] };     // 櫃檯只賣三件屬性加成（D §6）
 
   // ===================================================================
-  // 經濟（§2.2.5；一晚內有效，打烊歸零）。sim.mjs --n 3000 校準後的值（只動 SPEC-v4 §2.2.5 的旋鈕表；D §6 的獎金與唱片價維持起始值）
+  // 經濟（台幣行情，FIXLIST 8＋X／Y 契約；一晚內有效，打烊歸零）。畫面一律寫千分位（$1,200；engine.moneyText）
+  //   唱片照稀有度定價（engine.rarity：score＝經典＋硬蕊＋(冷門=5 ? 1 : 0)；≤5 普通、6 稀有、7 獨特、8 史詩、≥9 傳奇；頂點卡＝頂點）
+  //   箱子／新進／店長推薦只上普通～獨特（$800–1,200）；門口牆最靠門那格 FEATURE 只上史詩 $3,000／傳奇 $4,000；頂點 $8,000 先備好、v4 不上架（王牌是老闆送的）
+  //   特價箱每張照最高星 $100／200／300（序章挑三張照舊免費）；櫃檯配件一件 $3,000；賣回一律半價
+  //   start／win＝sim.mjs --n 3000 校準（dev/notes-X.md、dev/sim-v4.json）；其他是店主定的價，不拿來校準
   // ===================================================================
   C.economy = {
-    start: 300,                                                 // 〔補〕開局的錢（校準：0 → 300，讓「會買的」在第 3 位客人前買得起加成配件，S6）
-    win:   { prologue: 0, normal: 300, elite: 500, boss: 0 },   // normal／elite＝D §6 起始值；prologue／boss＝〔補〕
-    price: { 1: 100, 2: 100, 3: 200, 4: 400, 5: 800 },          // 價格看最高星；3–5★＝D §6 起始值；1、2★＝〔補〕
-    sellRate: 0.5,                                              // 半價賣回
-    bargainPrice: 100,                                          // 特價箱 $100、最多三張
-    stock: [4, 6], relicStock: [2, 3]                           // 每箱 4–6 張、櫃檯 2–3 件
+    start: 1000,                                                  // 開局的錢（校準）
+    win:   { prologue: 0, normal: 1500, elite: 2500, boss: 0 },   // 贏一位客人拿多少（校準；序章 0、藏家 0＝打贏就打烊）
+    price: { common: 800, rare: 1000, uncommon: 1200, epic: 3000, legendary: 4000, apex: 8000 },
+    bargain: { 1: 100, 2: 200, 3: 300 },                          // 特價箱每張，照那張最高星
+    relicPrice: 3000,                                             // 櫃檯配件一件
+    sellRate: 0.5,                                                // 半價賣回
+    stock: [4, 6], featureStock: [2, 3], relicStock: [2, 3]       // 每區 4–6 張（FEATURE 2–3 張）、櫃檯 2–3 件
   };
-  // 店裡的箱子（bins.js，由 tools/bake-cards.mjs 產生；沒有 bins.js 時是空的）。引擎只從非 display 區上貨；區名在 shops/dip.json
+  C.rarityZh = { common: '普通', rare: '稀有', uncommon: '獨特', epic: '史詩', legendary: '傳奇', apex: '頂點' };   // CARD_GAME_DESIGN §5 的名字
+  C.rarityTag = '店主';
+  // 店裡的箱子（bins.js，由 tools/bake-cards.mjs 產生；沒有 bins.js 時是空的）。
+  //   X／Y 契約：每個 key { key, label, zh, pool, front }：jazz tw rock elec soul hiphop pop classical world folk blues new feature picks
+  //   引擎照 pool 上今晚的貨（engine stockShop）；front＝畫在道具上的封面（Y）；名牌英文 label、點了看 zh
   C.bins = {};
   (function () {
-    var B = (BINS && BINS.shops && BINS.shops.dip) || {};
+    var B = (BINS && BINS.shops && BINS.shops.dip) || (BINS && BINS.bins) || {};
     Object.keys(B).forEach(function (k) {
       var b = B[k], o = {};
+      if (!b || typeof b !== 'object' || !Array.isArray(b.pool)) return;
       for (var x in b) o[x] = b[x];
       C.bins[k] = o;
     });
@@ -132,82 +144,85 @@
   C.nightTag = '新';
 
   // ===================================================================
-  // 客人（10 位；SPEC-v4 §2.2.3、§4.1。聲望＝sim.mjs --n 3000 校準後的值（範圍 12–20；男子固定 10、教學 18），過程見 dev/notes-A1.md）
-  //   honesty：C.honesty 的鍵（男子老實、一般客人偶爾唬人、菁英愛唬人、藏家老江湖）；出招難度跟著場次走（C.plannerByDepth），客人沒有自己的 planner
+  // 客人（10 位；SPEC-v4 §2.2.3、§4.1。聲望＝sim.mjs --n 3000 校準後的值（男子固定 10、教學 18），過程見 dev/notes-X.md）
+  //   FIXLIST 3 改成「六手比聲望條剩幾成」之後，你 10 對他 17–20 一下子好打很多（會讀的一晚通關 95%）；聲望拉到 20–34 才回到 S1 70–85%。
+  //   菁英「地下廠牌主理人」與藏家受 S7 單場下限（60%／45%）限制，只能 21／20；其他照 S7 一般客人差 ≤20 點拉平
+  //   name：一看就知道是誰、偏好什麼的身分（FIXLIST 6，店主 2026-11-08 06:03）；原本的綽號＋副標（title）併掉，沒有 title 欄
+  //   honesty：C.honesty 的鍵（男子老實、一般客人偶爾唬人、菁英愛唬人、藏家老江湖；只在引擎裡，不上畫面）；出招難度跟著場次走（C.plannerByDepth）
   //   taste：三軸並列時的順序（只當並列順序）；deck：7 張真唱片（藏家 6 張＋你沒選的那張王牌，由 engine 加；男子 6 張）
   //   line：口頭禪（開場泡泡，= lines[id].line）；drop：序章男子打輸掉出來的那張
   // ===================================================================
   C.enemies = {
     man: {
-      id: 'man', name: '男子', title: null, spr: 'e0', avatar: null,
+      id: 'man', name: '男子', spr: 'e0', avatar: null,
       honesty: 'honest', hp: 10, taste: 'coh',
       deck: ['coldplay-mylo-xyloto', 'imagine-dragons-night-visions', 'limp-bizkit-results-may-vary', '老王樂隊-暮夜徐行',
         'eminem-the-eminem-show', 'katy-perry-prism'],
       drop: 'fishmans-long-season', prologue: true, voice: { freq: 659, wave: 'square' }
     },
     copycat: {
-      id: 'copycat', name: '那張我有', title: '文青同好', spr: 'e1', avatar: null,
-      honesty: 'sometimes', hp: 18, taste: 'och',
+      id: 'copycat', name: '文青同好', spr: 'e1', avatar: null,
+      honesty: 'sometimes', hp: 31, taste: 'och',
       deck: ['beach-house-teen-dream', 'weyes-blood-titanic-rising', 'mitski-be-the-cowboy', 'billie-eilish-when-we-all-fall-asleep-where-do-we-go',
         'low-double-negative', 'sophie-oil-of-every-pearl-s-un-insides', '大象體操-elephant-gym-角度'],
       voice: { freq: 523, wave: 'square' }
     },
     already: {
-      id: 'already', name: '我早就聽過', title: '社團學長', spr: 'e2', avatar: null,
-      honesty: 'sometimes', hp: 17, taste: 'hco',
+      id: 'already', name: '社團學長', spr: 'e2', avatar: null,
+      honesty: 'sometimes', hp: 24, taste: 'hco',
       deck: ['don-slepian-sea-of-bliss', 'harold-budd-abandoned-cities', 'demetrio-stratos-metrodora',
         'etron-fou-leloublan-les-trois-fou-s-perdegagnent-au-pays-des', 'nocturnal-emissions-fruiting-body', 'eivind-aarset-electronique-noire',
         'yezda-urfa-boris'],
       voice: { freq: 440, wave: 'square' }
     },
     needle: {
-      id: 'needle', name: '針壓強迫症', title: '品味行家', spr: 'e6', avatar: null,
-      honesty: 'sometimes', hp: 19, taste: 'coh',
+      id: 'needle', name: '音響發燒友', spr: 'e6', avatar: null,
+      honesty: 'sometimes', hp: 31, taste: 'coh',
       deck: ['steely-dan-gaucho', 'art-pepper-art-pepper-meets-the-rhythm-section', 'bill-evans-waltz-for-debby', 'kenny-burrell-midnight-blue',
         'roscoe-mitchell-sextet-sound', 'john-zorn-cobra', 'andrew-cyrille-what-about'],
       voice: { freq: 587, wave: 'triangle' }
     },
     skip: {
-      id: 'skip', name: '跳針王', title: '二手店老闆', spr: 'e4', avatar: null,
-      honesty: 'sometimes', hp: 17, taste: 'coh',
+      id: 'skip', name: '二手店老闆', spr: 'e4', avatar: null,
+      honesty: 'sometimes', hp: 25, taste: 'coh',
       deck: ['roberto-goyeneche-cantor-de-mi-barrio', 'amalia-rodrigues-gostava-de-ser-quem-era', 'king-sunny-ade-aura',
         'washington-phillips-the-key-to-the-kingdom', 'otha-turner-the-rising-star-fife-drum-band-everybody-holleri',
         'tony-scott-the-indonesian-all-stars-djanger-bali', 'barney-wilen-moshi'],
       voice: { freq: 330, wave: 'square', jitter: 20 }
     },
     broke: {
-      id: 'broke', name: '月底吃土', title: null, spr: null,
+      id: 'broke', name: '地下樂團吉他手', spr: null,
       avatar: { head: 'cap', hair: 'u', shirt: 'r', pants: 'd', skin: 's' },
-      honesty: 'sometimes', hp: 20, taste: 'och',
+      honesty: 'sometimes', hp: 34, taste: 'och',
       deck: ['血肉果汁機-flesh-juicer-golden太子bro', '血肉果汁機-flesh-juicer-深海童話', '閃靈-失竊千年',
         '血肉果汁機-flesh-juicer-血肉宮建宮蓋廟演唱會', '閃靈-永劫輪迴', '閃靈-醒靈寺大決戰', '林強-驚蟄'],
       voice: { freq: 494, wave: 'square' }
     },
     buyer: {
-      id: 'buyer', name: '剁手黨', title: null, spr: null,
+      id: 'buyer', name: '前衛樂迷', spr: null,
       avatar: { head: 'fedora', hair: 'k', shirt: 'g', pants: 'k', skin: 't' },
-      honesty: 'sometimes', hp: 20, taste: 'coh',
+      honesty: 'sometimes', hp: 31, taste: 'coh',
       deck: ['swans-soundtracks-for-the-blind', 'venetian-snares-making-orange-things', 'nurse-with-wound-homotopy-to-marie',
         'ryoji-ikeda-mort-aux-vaches', 'sunn-o-white1', 'sigur-ros-von', 'william-basinski-the-disintegration-loops'],
       voice: { freq: 554, wave: 'square' }
     },
     label: {
-      id: 'label', name: '冷門仙人', title: '地下廠牌主理人', spr: 'e5', avatar: null,
-      honesty: 'often', hp: 17, taste: 'ohc',
+      id: 'label', name: '地下廠牌主理人', spr: 'e5', avatar: null,
+      honesty: 'often', hp: 21, taste: 'ohc',
       deck: ['廢五金-廢五金', '明田川荘之-yamazaki-blues', '菊地雅章-end-for-the-beginning', 'keiji-haino-watashi-dake',
         'harry-roesli-gang-philosophy-gang', 'c-o-b-moyshe-mcstiff-and-the-tartan-lancers-of-the-sacred-he', 'pholas-dactylus-concerto-delle-menti'],
       elite: true, voice: { freq: 294, wave: 'sine' }
     },
     critic: {
-      id: 'critic', name: '名盤守門員', title: '資深樂評', spr: 'e3', avatar: null,
-      honesty: 'often', hp: 20, taste: 'ohc',
+      id: 'critic', name: '資深樂評', spr: 'e3', avatar: null,
+      honesty: 'often', hp: 30, taste: 'ohc',
       deck: ['tim-buckley-starsailor', 'throbbing-gristle-20-jazz-funk-greats', 'black-midi-schlagenheim', 'faust-faust-iv',
         'neu-neu', 'sun-ra-space-is-the-place', 'the-plastic-people-of-the-universe-egon-bondy-s-happy-hearts'],
       elite: true, voice: { freq: 392, wave: 'square' }
     },
     boss: {
-      id: 'boss', name: '傳說藏家', title: null, spr: 'boss', avatar: null,
-      honesty: 'veteran', hp: 16, taste: 'coh',
+      id: 'boss', name: '傳說藏家', spr: 'boss', avatar: null,
+      honesty: 'veteran', hp: 20, taste: 'coh',
       deck: ['交工樂隊-我等就來唱山歌', 'ganelin-trio-ancora-da-capo', 'luis-russell-the-luis-russell-story-1929-1934',
         'raw-material-time-is', 'alexander-von-schlippenbach-globe-unity', '裸のラリーズ-the-oz-tapes'],
       boss: true, voice: { freq: 147, wave: 'sine' }
@@ -393,22 +408,22 @@
       win: L('先把唱臂調平再來。', '新')
     },
     skip: {
-      line: L('跳、跳、跳……又跳針了。', '新'),
-      intro: L('欸，這段剛剛是不是聽過了？', '新:B'),
-      lose: [L('……我真的該換唱針了。', '新:B')],
-      win: L('好聽的段落，就是要多聽幾次。', '新')
+      line: L('這張在我店裡放了十年，沒人問過。', '新'),
+      intro: L('你手上那張，我收的時候才五十塊。', '新'),
+      lose: [L('……下次這張，我要開高一點。', '新')],
+      win: L('回去多跑幾間二手店再來。', '新')
     },
     broke: {
-      line: L('什麼都想要一點。', '新'),
-      intro: L('這個月又爆預算了……', '新:D'),
-      lose: [L('這張……先寄放你那邊。', '新:D')],
-      win: L('贏了，這禮拜可以吃滷肉飯加蛋。', '新')
+      line: L('這段吉他，我練了一整個暑假。', '新'),
+      intro: L('剛從練團室出來，耳朵還在嗡嗡叫。', '新'),
+      lose: [L('……回去再練一百遍。', '新')],
+      win: L('週末來看我們的場，報我名字。', '新')
     },
     buyer: {
-      line: L('這張剛剁的，看清楚。', '新'),
-      intro: L('這三張我都買兩份，一份聽、一份收。', '新:B'),
-      lose: [L('……我先去領個錢。', '新:B')],
-      win: L('這張歸我了。刷卡。', '新')
+      line: L('這張你聽得完嗎？', '新'),
+      intro: L('這張四十分鐘只有一個音。很好聽。', '新'),
+      lose: [L('……原來你也聽到最後。', '新')],
+      win: L('耳朵還沒打開，回去再磨。', '新')
     },
     label: {
       line: L('你以為我會出最大的？', '新'),
@@ -473,21 +488,23 @@
     tip_mirror: '同一色比星，多的扣差額。',
     tip_bluff: '提示不一定是真的。',
     tip_block: '差 2 星以上，剋不動。',
-    tip_ace: '王牌不會被剋。',
-    tip_rounds: '六手內沒分勝負，比聲望。'
+    tip_ace: '王牌 7 星，一場用一次。',
+    tip_rounds: '六手沒分勝負，比聲望條剩幾成。'
   };
   C.coachTipWhen = {
     tip_mirror: '第一次同色比星（含同色同星）', tip_bluff: '第一次被唬', tip_block: '第一次剋不動（你或他）',
-    tip_ace: '第一次王牌擋下相剋', tip_rounds: '第一次打到第 6 手'
+    tip_ace: '第一次丟王牌', tip_rounds: '第一次打到第 6 手'
   };
   C.coachTipTags = {};
   Object.keys(C.coachTips).forEach(function (k) { C.coachTipTags[k] = '新'; });
 
   // ===================================================================
   // 對決盤面上的字（§2.2.7；A1 寫字、B1 組句。{x} 由 UI 代入）
-  //   結果三行：l1 規則句（counter／countered／blockedYou／blockedHim／aceYou／aceHim／mirror／tie）、l2 扣多少（hitE／hitP）、
+  //   結果三行：l1 規則句（counter／countered／blockedYou／blockedHim／mirror／tie）、l2 扣多少（hitE／hitP）、
   //   l3 關鍵字那句（bluff／honest；key 為 null 時用 bluffNoKey／honestNoKey）
   //   {a}＝你出的屬性中文（王牌前面加「王牌」）、{b}／{e}＝他出的、{hint}＝提示屬性中文、{key}＝C.hints 的 key
+  //   王牌沒有「不會被剋」了（FIXLIST 2）：王牌被 ≤5 星剋＝差 2 星以上剋不動，走 blockedYou／blockedHim；aceYou／aceHim 刪掉
+  //   六手打完（FIXLIST 3）：roundsScore 的 {p}／{e}＝聲望條剩幾 %（engine.hpPct；over 事件的 pPct／ePct），{who}＝你／他
   // ===================================================================
   C.duelText = {
     pickHint: '點一張專輯', picked: '選好了：', again: '點別的星換屬性，或按丟', throwBtn: '丟！', waiting: '演完就換下一手（點畫面跳過）',
@@ -495,18 +512,17 @@
     he: '他・', you: '你・', slotE: '他丟的', slotP: '你丟的', lastPrefix: '上一手', pileLeft: '他還有 {n} 張',
     counter: '{a}剋{b}，命中！', countered: '{b}剋{a}，被剋了。',
     blockedYou: '{a}剋{b}，但他高你 2 星以上，剋不動。比星數，', blockedHim: '{b}剋{a}，但你高他 2 星以上，他剋不動。比星數，',
-    aceYou: '{b}剋{a}，但王牌不會被剋。比星數，', aceHim: '{a}剋{b}，但他的王牌不會被剋。比星數，',
     mirror: '同樣是{a}，比星數，', tie: '一樣大，不扣。',
     hitE: '他 −{n}', hitP: '你 −{n}',
     bluff: '他唬你！『{key}』是{hint}，他出的是{e}。', honest: '『{key}』是{hint}，他照實出。',
     bluffNoKey: '他唬你！提示是{hint}，他出的是{e}。', honestNoKey: '提示是{hint}，他照實出。',
     koWin: '品味勝出', koWinSub: '你贏了【{name}】。', koLose: '聲望歸零', koLoseRetry: '老闆：……再一場。',
-    roundsOut: '六手打完，比聲望', roundsScore: '你 {p} 比 他 {e}：{who}贏'
+    roundsOut: '六手打完，比聲望條', roundsScore: '你剩 {p}%，他剩 {e}%：{who}贏'
   };
   C.duelTextTag = '新';
 
   // ===================================================================
-  // 規則卡（§2.2.8；「?」小抄與標題畫面共用）。lines＝D §5 規則卡六行一字不改（tag 店主；畫面上的編號由 UI 加）
+  // 規則卡（§2.2.8；「?」小抄與標題畫面共用）。lines＝D §5 規則卡六行，第 6 行照 FIXLIST 2／3 改（tag 店主；畫面上的編號由 UI 加）
   //   foot 的 {normal}／{elite}／{boss}：由 UI 代入 hpText（同一級聲望都一樣寫單一數字，不一樣寫「最小–最大」）
   // ===================================================================
   C.rules = {
@@ -517,7 +533,7 @@
       '冷剋經、經剋硬、硬剋冷：剋中，就用你那個屬性的星數扣他聲望。',
       '被剋的一方高 2 星以上，剋不動，改成比星數。',
       '沒有相剋就比星數，高的扣差額；一樣大不扣。',
-      '提示會暗示他這手的打算，但有些人會唬你。王牌 7 星、不會被剋，一場用一次。六手內沒分出勝負，比剩下的聲望。'
+      '提示會暗示他這手的打算，但有些人會唬你。王牌 7 星，一場用一次。六手內沒分出勝負，比誰的聲望條剩得多。'
     ],
     relics: '發燒配件：自動生效，最多帶三件。',
     foot: ['點專輯選牌；按住封面看唱片資訊。', '你 10 聲望；客人 {normal}、菁英 {elite}、傳說藏家 {boss}。']
@@ -576,7 +592,7 @@
       pearl: [{ kind: 'mirrorWin', toE: 3, toP: 0 }, { kind: 'counter', toE: 4, toP: 0 }, { kind: 'counter', toE: 4, toP: 0 },
         { kind: 'counter', toE: 3, toP: 0 }, GAP5, { kind: 'counter', toE: 7, toP: 0 }],
       heresy: [{ kind: 'mirrorWin', toE: 3, toP: 0 }, { kind: 'counter', toE: 4, toP: 0 }, { kind: 'counter', toE: 4, toP: 0 },
-        { kind: 'counter', toE: 5, toP: 0 }, GAP5, { kind: 'mirrorWin', toE: 5, toP: 0, blocked: 'ace' }]
+        { kind: 'counter', toE: 5, toP: 0 }, GAP5, { kind: 'mirrorWin', toE: 5, toP: 0, blocked: 'gap' }]
     },
     // ---- 以下 steps／learned／ui 由 B2 寫（§2.5.5）：六手各教一件事 ----
     //   target／point 的 'pick'＝這一手 script[tier].pick 指的那顆（tutorial.js stepsFor 代入：{id,attr}→chip:id:<id>:<attr>、'blocked:o'→chip:blocked:o、'ace'→王牌）；
@@ -604,7 +620,7 @@
       { id: 'a3', kind: 'say', target: ['result'], learn: 'L6', tag: '新',
         text: { hall: '同色比星數，7 比 2，他 −5。', pearl: '冷門剋經典，王牌 7 星，他 −7。', heresy: '經典剋硬蕊，但 7 星剋不動：比星數。' } }
     ],
-    learned: { L1: '同色比星數', L2: '冷門剋經典', L3: '經典剋硬蕊', L4: '硬蕊剋冷門', L5: '差 2 星剋不動', L6: '王牌 7 星、不會被剋' },
+    learned: { L1: '同色比星數', L2: '冷門剋經典', L3: '經典剋硬蕊', L4: '硬蕊剋冷門', L5: '差 2 星剋不動', L6: '王牌 7 星，一場一次' },
     ui: { who: '老闆', learnedPrefix: '學會了：', wrong: '先點我指的這裡。', skipTut: '跳過教學', replay: '重看教學', learnedTitle: '學會的規則' },
     uiTag: '新'
   };
@@ -647,7 +663,7 @@
   C.shopLineWho = { cat: '店貓', poster: '老闆', locked: '（畫面字）', binBusy: '老闆', ownerHint: '老闆', nightIntro: '老闆', bin: '老闆', booth: '老闆', boothEmpty: '老闆',
     titleHint: '（畫面字）', taipeiHere: '（畫面字）', taipeiNote: '（畫面字）', taipeiLink: '（畫面字）', backToShop: '（畫面字）' };
 
-  // 經濟介面的字（B3 用；{x} 由 UI 代入；${n} 的 $ 是錢的符號）
+  // 經濟介面的字（B3 用；{x} 由 UI 代入；${n} 的 $ 是錢的符號，{n} 一律代入千分位字串 engine.moneyText(n)：$1,200）
   C.shopUi = {
     money: '${n}',
     binTitle: '{label}',
@@ -663,7 +679,8 @@
     bargainTitle: '特價區',
     bargainPrompt: '（挑三張。）',
     bargainTake: '收下這三張',
-    bargainBuy: '${n}：最多挑三張',                               // {n}＝economy.bargainPrice（econ.js 代入）
+    bargainBuy: '買下 ${n}',                                      // {n}＝挑的那幾張特價加起來（engine.bargainPriceOf；每張 $100／200／300）
+    bargainEach: '${n}',                                          // 特價箱每張封面下的價（engine.bargainPriceOf）
     bargainEmpty: '特價區今晚賣完了。',
     close: '關閉',
     earned: '+${n}',

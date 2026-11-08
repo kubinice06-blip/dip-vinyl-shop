@@ -1,10 +1,11 @@
 // game-lab/sim.mjs — v4 balance simulation + thresholds (SPEC-v4 §5.2; Agent A1).  Runs on the REAL engine.js / content.js / cards.js / bins.js.
 // Usage: node game-lab/sim.mjs [--n 3000] [--mode all|nights|fights] [--econ both|none|smart] [--json out.json]
 //                              [--set mercy=false,threshold=2] [--hp '{"copycat":15}'] [--patch '{"economy":{"win":{"normal":250}}}']
-//                              [--policies thoughtful,high,...]
+//                              [--policies thoughtful,high,...] [--data <dir with cards.js and bins.js>]
 //   --n       nights per cell (night tables) and fights per cell (single-fight tables)
 //   --econ    which shopPolicy mode(s) the night tables use; 'both' (default) is needed for S6
 //   --set     engine CFG overrides (numbers or true/false); --hp per-guest starting 聲望; --patch deep-merges into content (calibration trials)
+//   --data    use another cards.js／bins.js（e.g. Y's worktree game-lab/）for the shop stock — calibrate against the bins before they are merged
 // Model (§5.2): first night = prologue man (no tutorial; bargain pick "one per colour, highest peak") → Fishmans + one of three prologue
 // relics (runPolicy) → 3 normals → 1 elite → boss, the owner pleads once (retry); shopPolicy(mode) before every guest.
 // Any failed threshold sets process.exitCode = 1.
@@ -32,6 +33,15 @@ if (arg('set', null)) for (const kv of arg('set').split(',')) {
   CFG[k] = v === 'true' ? true : v === 'false' ? false : +v;
 }
 if (arg('hp', null)) { const o = JSON.parse(arg('hp')); for (const k in o) { if (!C.enemies[k]) throw new Error('unknown guest ' + k); C.enemies[k].hp = o[k]; } }
+if (arg('data', null)) {
+  const dir = path.resolve(arg('data'));
+  const cards = require(path.join(dir, 'cards.js')), bins = require(path.join(dir, 'bins.js'));
+  const B = (bins.shops && bins.shops.dip) || bins.bins || {};
+  for (const id of Object.keys(C.cards)) if (!cards[id]) console.error('--data: cards.js 沒有 ' + id + '（沿用本地的）');
+  C.cards = Object.assign({}, C.cards, cards);
+  C.bins = {}; for (const k of Object.keys(B)) if (B[k] && Array.isArray(B[k].pool)) C.bins[k] = Object.assign({}, B[k]);
+  console.log('--data ' + dir + '：卡 ' + Object.keys(C.cards).length + ' 張、箱子 ' + Object.keys(C.bins).join(' '));
+}
 const deepMerge = (t, s) => { for (const k in s) { if (s[k] && typeof s[k] === 'object' && !Array.isArray(s[k]) && t[k] && typeof t[k] === 'object') deepMerge(t[k], s[k]); else t[k] = s[k]; } return t; };
 if (arg('patch', null)) deepMerge(C, JSON.parse(arg('patch')));
 
@@ -149,7 +159,8 @@ function fightCell(fn, n) {
 const checks = [];
 const check = (id, name, ok, info) => { checks.push({ id, name, ok: !!ok, info }); };
 const report = { N, ECON, CFG: Object.assign({}, CFG), hp: Object.fromEntries([MAN, ...GUESTS].map(k => [k, C.enemies[k].hp])), economy: C.economy,
-  relicPrices: Object.fromEntries(Object.keys(C.relics).map(k => [k, C.relics[k].price])),
+  relicPrices: Object.fromEntries(Object.keys(C.relics).map(k => [k, EN.relicPrice(C, k)])),
+  bins: Object.fromEntries(Object.keys(C.bins).map(k => [k, (C.bins[k].pool || []).length])),
   decks: Object.fromEntries([MAN, ...GUESTS].map(k => [k, C.enemies[k].deck.slice()])) };
 const MODES = ECON === 'both' ? ['smart', 'none'] : [ECON];
 

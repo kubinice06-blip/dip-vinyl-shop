@@ -5,12 +5,12 @@
 // 檢查：
 //   卡片：欄位、星數（一般卡 ≤5、王牌那軸 7）、封面、試聽、region ∈ tw／jp／zh／xx；所有引用的卡 id 都存在（王牌、禮物、特價箱、牌單、掉牌、教學、箱子）。
 //   王牌、禮物（§4.2：三軸都有 ≥4 星、殿堂有冷門 ≥4、王牌那軸 ≥4 至少 2 張）、特價箱（§4.3：9 張、topAttr 3／3／3、峰值 ≤3、冷門 ≤3）。
-//   客人（§2.2.3、§4.1）：誠實度（男子老實、一般偶爾唬人、菁英愛唬人、藏家老江湖）、聲望（男子 10、其他 12–20）、張數（男子 6、一般與菁英 7、藏家 6）；
+//   客人（§2.2.3、§4.1）：名字（FIXLIST 6 的身分、沒有 title）、誠實度（男子老實、一般偶爾唬人、菁英愛唬人、藏家老江湖；只有 q）、聲望（男子 10、其他 12–40）、張數（男子 6、一般與菁英 7、藏家 6）；
 //     牌組限制（deckMain、嚴格峰值 ≥4、唬人色 ≥4 星 ≥2 張、剋他用色 ≥4 星 ≥1 張；男子只要一張副屬性 ≥4；經典客人 ≤4 位不含藏家；
 //     藏家三色各 ≥2 張峰值、每色都有 ≥4 星）；牌組／禮物／特價箱彼此不重複且不含王牌。
-//   提示句（§2.2.4：每色 5 句、key 必為 text 的子字串、不寫屬性名）、誠實度表、出招難度表、經濟（§2.2.5 的旋鈕範圍、配件價 > 唱片最高價）、
+//   提示句（§2.2.4：每色 5 句、key 必為 text 的子字串、不寫屬性名）、誠實度表、出招難度表、經濟（FIXLIST 8 台幣行情：稀有度價、特價箱每張、配件 3000；start／win 的範圍）、
 //   發燒配件 9 件（§2.2.6）、規則卡六行逐字＝tools/owner-lines-v4.json、頁尾聲望數字、教學規則資料（§2.2.10）、小提示、盤面字、店內字、經濟介面字。
-//   C.bins 的鍵＝bins.js（A3 烘）。
+//   C.bins 的鍵＝bins.js；bins.js 是 X／Y 契約形狀（有 feature）時再跑 binsProblems（十四區、名牌、分類、FEATURE 稀有度、30 晚上貨夠不夠）。
 //   v4 教學步驟（§2.5.5，B2；匯出 tutorialProblems(C)）：六手各一個「丟」、做的步驟只有「點那顆（allow.pick＋'tile:pick'／point 'pick'）」或「丟（allow.throw＋point throw）」、
 //     每手的 pick 在 script 裡指得到（禮物的那張那色／blocked:o／ace）、結算時講的步驟（target result）只在丟之後、小卡 L1–L6 各學一次而且照課表順序、
 //     第 1 手前一句指提示（e-hint）、第 1 手結算後點破第 1 手提示句的關鍵字一次、依王牌分句的 text 三張都有、三角邊合法、ui 鍵齊全。
@@ -69,10 +69,11 @@ export function shapeProblems(C, E) {
     bcs.forEach(c => { ok(peak(c) <= 3, '特價箱 ' + c.id + ' 峰值要 ≤3'); ok(c.o <= 3, '特價箱 ' + c.id + ' 冷門要 ≤3（教學第 5 手）'); ok(!c.tier, '特價箱 ' + c.id + ' 是王牌'); });
   }
 
-  // ---- 誠實度、難度 ----
+  // ---- 誠實度（只有機率 q；FIXLIST 6：畫面不寫誠實度，沒有 zh）、難度 ----
   const HK = ['honest', 'sometimes', 'often', 'veteran'];
   ok(C.honesty && sameSet(Object.keys(C.honesty), HK), 'honesty 要剛好是 ' + HK.join(' '));
-  for (const k of HK) { const h = (C.honesty || {})[k]; ok(h && typeof h.zh === 'string' && h.zh && h.q > 0 && h.q <= 1, 'honesty.' + k + ': zh／q'); }
+  for (const k of HK) { const h = (C.honesty || {})[k]; ok(h && h.q > 0 && h.q <= 1 && !('zh' in h), 'honesty.' + k + ': 只有 q（0–1），不寫 zh（FIXLIST 6）'); }
+  ok(!('honestyTag' in C), 'honestyTag 要拿掉（FIXLIST 6）');
   if (C.honesty && C.honesty.honest) ok(C.honesty.honest.q === 1, 'honesty.honest.q 要 1');
   ok(C.planners && sameSet(Object.keys(C.planners), ['easy', 'normal', 'hard']), 'planners 要剛好是 easy normal hard');
   for (const [k, p] of Object.entries(C.planners || {})) ok(p && p.w > 0 && p.nz >= 0 && typeof p.mercy === 'boolean', 'planners.' + k + ': w／nz／mercy');
@@ -88,15 +89,20 @@ export function shapeProblems(C, E) {
   const WANT_H = { man: 'honest', normal: 'sometimes', elite: 'often', boss: 'veteran' };
   let classic = 0;
   const allDeck = [];
+  // FIXLIST 6（店主 2026-11-08 06:03）：名字＝一看就知道是誰、偏好什麼的身分；原本的副標（title）併掉
+  const NAME = { man: '男子', copycat: '文青同好', already: '社團學長', needle: '音響發燒友', skip: '二手店老闆', broke: '地下樂團吉他手',
+    buyer: '前衛樂迷', label: '地下廠牌主理人', critic: '資深樂評', boss: '傳說藏家' };
   for (const id of EIDS) {
     const e = (C.enemies || {})[id]; const w = 'enemies.' + id;
     if (!e) continue;
     const kind = kindOf(e);
-    ok(e.id === id && e.name, w + ': id／name');
+    ok(e.id === id && e.name === NAME[id], w + ': id／name 要是「' + NAME[id] + '」（FIXLIST 6），現在 ' + e.name);
+    ok(!('title' in e) && !('sub' in e), w + ': 副標併進名字了，拿掉 title／sub（FIXLIST 6）');
     ok(e.honesty === WANT_H[kind], w + ': 誠實度要 ' + WANT_H[kind] + '，現在 ' + e.honesty);
     for (const k of ['habit', 'phase2', 'phase2Label', 'habitLabel', 'p', 'planner']) ok(!(k in e), w + ': v4 拿掉的欄位 ' + k);
     if (kind === 'man') ok(e.hp === 10, w + ': 男子聲望固定 10');
-    else ok(Number.isInteger(e.hp) && e.hp >= 12 && e.hp <= 20, w + ': 聲望要在 12–20，現在 ' + e.hp);
+    // FIXLIST 3（比聲望條剩幾成）之後 12–20 太好打，sim 校準到 20–34；上限放到 40（校準旋鈕的範圍，不是門檻）
+    else ok(Number.isInteger(e.hp) && e.hp >= 12 && e.hp <= 40, w + ': 聲望要在 12–40，現在 ' + e.hp);
     ok(/^[coh]{3}$/.test(e.taste) && new Set(e.taste).size === 3, w + ': taste');
     const want = kind === 'normal' || kind === 'elite' ? 7 : 6;
     ok(Array.isArray(e.deck) && e.deck.length === want && new Set(e.deck).size === want, w + ': 唱片要 ' + want + ' 張不重複，現在 ' + (e.deck || []).length);
@@ -151,38 +157,43 @@ export function shapeProblems(C, E) {
     });
   }
 
-  // ---- 經濟（§2.2.5 的旋鈕範圍） ----
+  // ---- 經濟（FIXLIST 8 台幣行情＋X／Y 契約：價格是店主定的、不校準；只有 start／win 是 sim 校準的旋鈕） ----
   const EC = C.economy || {};
-  ok(Number.isInteger(EC.start) && EC.start >= 0 && EC.start <= 300, 'economy.start 0–300');
+  ok(Number.isInteger(EC.start) && EC.start >= 0 && EC.start <= 3000 && EC.start % 100 === 0, 'economy.start 0–3000、整百（校準旋鈕）');
   const W = EC.win || {};
-  ok(['prologue', 'normal', 'elite', 'boss'].every(k => Number.isInteger(W[k])), 'economy.win 四級');
-  ok(W.prologue >= 0 && W.prologue <= 300, 'economy.win.prologue 0–300');
-  ok(W.normal >= 200 && W.normal <= 500, 'economy.win.normal 200–500');
-  ok(W.elite >= 300 && W.elite <= 800 && W.elite >= W.normal, 'economy.win.elite 300–800 且 ≥ normal');
+  ok(['prologue', 'normal', 'elite', 'boss'].every(k => Number.isInteger(W[k]) && W[k] % 100 === 0), 'economy.win 四級、整百');
+  ok(W.prologue >= 0 && W.prologue <= 3000, 'economy.win.prologue 0–3000');
+  ok(W.normal >= 500 && W.normal <= 4000, 'economy.win.normal 500–4000（校準旋鈕；店主例：一般 $1,500 左右）');
+  ok(W.elite >= W.normal && W.elite <= 6000, 'economy.win.elite ≥ normal、≤6000（店主例：菁英 $2,500 左右）');
   ok(W.boss === 0, 'economy.win.boss 要 0（打贏藏家＝通關）');
-  const PR = EC.price || {}, BASE = { 1: 100, 2: 100, 3: 200, 4: 400, 5: 800 };
-  for (let s = 1; s <= 5; s++) {
-    ok(Number.isInteger(PR[s]) && PR[s] >= BASE[s] * 0.5 && PR[s] <= BASE[s] * 1.5, 'economy.price[' + s + '] 要在起始值 ±50%');
-    if (s > 1) ok(PR[s] >= PR[s - 1], 'economy.price 要單調不減（' + (s - 1) + '→' + s + '）');
-  }
-  ok(PR[5] <= 850, 'economy.price[5] ≤ 850');
+  const PR = EC.price || {};
+  ok(JSON.stringify(PR) === JSON.stringify({ common: 800, rare: 1000, uncommon: 1200, epic: 3000, legendary: 4000, apex: 8000 }),
+    'economy.price 要＝店主的稀有度價（普通 800、稀有 1000、獨特 1200、史詩 3000、傳奇 4000、頂點 8000）');
+  ok(sameSet(Object.keys(PR), E.RARITY), 'economy.price 的鍵＝engine RARITY');
+  ok(JSON.stringify(EC.bargain) === JSON.stringify({ 1: 100, 2: 200, 3: 300 }), 'economy.bargain 要＝每張照最高星 1→100、2→200、3→300');
+  ok(!('bargainPrice' in EC), 'economy.bargainPrice（一次 $100 三張）拿掉了，改每張照星（FIXLIST 8）');
+  ok(EC.relicPrice === 3000, 'economy.relicPrice 要 3000（櫃檯配件一件）');
   ok(EC.sellRate === 0.5, 'economy.sellRate 0.5（半價賣回）');
-  ok(Number.isInteger(EC.bargainPrice) && EC.bargainPrice >= 50 && EC.bargainPrice <= 200, 'economy.bargainPrice 50–200');
-  ok(JSON.stringify(EC.stock) === '[4,6]' && JSON.stringify(EC.relicStock) === '[2,3]', 'economy.stock [4,6]、relicStock [2,3]');
+  ok(JSON.stringify(EC.stock) === '[4,6]' && JSON.stringify(EC.featureStock) === '[2,3]' && JSON.stringify(EC.relicStock) === '[2,3]', 'economy.stock [4,6]、featureStock [2,3]、relicStock [2,3]');
+  ok(C.rarityZh && JSON.stringify(C.rarityZh) === JSON.stringify({ common: '普通', rare: '稀有', uncommon: '獨特', epic: '史詩', legendary: '傳奇', apex: '頂點' }), 'rarityZh（CARD_GAME_DESIGN §5 的名字）');
+  // 稀有度公式抽查（CARD_GAME_DESIGN §5）
+  const RC = (c, o, h, tier) => E.rarity({ c, o, h, tier: tier || null });
+  ok(RC(3, 4, 2) === 'common' && RC(4, 2, 2) === 'rare' && RC(5, 5, 1) === 'uncommon' && RC(5, 1, 3) === 'epic' && RC(5, 5, 4) === 'legendary' && RC(5, 4, 4) === 'legendary' && RC(7, 1, 1, 'hall') === 'apex',
+    'engine.rarity：score＝經典＋硬蕊＋(冷門 5 ? 1 : 0)；≤5 普通、6 稀有、7 獨特、8 史詩、≥9 傳奇；頂點卡＝頂點');
+  for (const id of BP) if (CARDS[id]) ok(E.priceOf(C, id) === EC.bargain[Math.min(3, peak(CARDS[id]))], '特價箱 ' + id + ' 的價照最高星');
 
   // ---- 發燒配件（§2.2.6） ----
   const RIDS = ['dustcover', 'stylus', 'cleaner', 'obi', 'testpress', 'headphone', 'boost_c', 'boost_o', 'boost_h'];
   ok(C.relics && sameSet(Object.keys(C.relics), RIDS), '發燒配件要剛好 9 件：' + RIDS.join(' '));
   for (const [id, r] of Object.entries(C.relics || {})) {
     ok(r.id === id && r.name && r.icon && r.desc && r.note && r.tag, 'relics.' + id + ': id／name／icon／desc／note／tag');
-    ok(Number.isInteger(r.price) && r.price >= 900 && r.price <= 1500, 'relics.' + id + ': 價格 900–1500');
+    ok(!('price' in r), 'relics.' + id + ': 不個別定價，一律 economy.relicPrice（$3,000）');
+    ok(E.relicPrice(C, id) === EC.relicPrice, 'relics.' + id + ': relicPrice＝economy.relicPrice');
     if (/^boost_/.test(id)) ok(r.boost === id.slice(6), 'relics.' + id + ': boost 要是 ' + id.slice(6));
     else ok(!r.boost, 'relics.' + id + ': 只有 boost_* 有 boost');
   }
   ok(C.relics && C.relics.headphone && C.relics.headphone.v4 === false, 'relics.headphone.v4 要 false（〔補〕⚠規則，等店主決定）');
-  const maxPrice = Math.max(...Object.values(PR).filter(Number.isFinite));
-  const minRelic = Math.min(...Object.values(C.relics || {}).map(r => r.price).filter(Number.isFinite));
-  ok(minRelic > maxPrice, '配件價要全部高於唱片最高價（min 配件 ' + minRelic + ' > max 唱片 ' + maxPrice + '）');
+  ok(EC.relicPrice > Math.max(PR.common, PR.rare, PR.uncommon), '配件比箱子裡的唱片貴（' + EC.relicPrice + ' > ' + Math.max(PR.common, PR.rare, PR.uncommon) + '）');
   ok(C.relicShop && Array.isArray(C.relicShop.pool) && C.relicShop.pool.length && C.relicShop.pool.every(id => /^boost_[coh]$/.test(id) && C.relics[id]), 'relicShop.pool ⊂ boost_*');
   ok(C.rewards && sameSet(C.rewards.prologueRelics || [], ['dustcover', 'stylus', 'cleaner']), '序章三選一＝防塵套／黑膠唱針／洗碟水');
   ok(C.rewards && (C.rewards.relicPool || []).every(id => C.relics[id] && C.relics[id].v4 !== false), 'rewards.relicPool ⊂ relics 而且沒有 v4:false 的');
@@ -272,19 +283,22 @@ export function contentProblems(C, E) {
 
   // 箱子＝bins.js
   let BJ = null; try { BJ = require(path.join(LAB, 'bins.js')); } catch (_) { BJ = null; }
-  const binsSrc = BJ && BJ.shops && BJ.shops.dip;
-  if (ok(!!binsSrc, '沒有 bins.js（A3-M1 由 tools/bake-cards.mjs 產生）')) {
+  const binsSrc = BJ && ((BJ.shops && BJ.shops.dip) || BJ.bins);
+  if (ok(!!binsSrc, '沒有 bins.js（由 tools/bake-cards.mjs 產生）')) {
     ok(sameSet(Object.keys(C.bins || {}), Object.keys(binsSrc)), 'C.bins 的鍵要＝bins.js');
     for (const [k, b] of Object.entries(binsSrc)) for (const id of b.pool || []) has(id, 'bins.' + k);
+    if (C.bins && C.bins.feature) bad.push(...binsProblems(C, E));
   }
 
   // 小提示、盤面字、店內字、經濟介面字
   ok(C.coachTips && sameSet(Object.keys(C.coachTips), ['tip_mirror', 'tip_bluff', 'tip_block', 'tip_ace', 'tip_rounds']), 'coachTips 要剛好是 tip_mirror tip_bluff tip_block tip_ace tip_rounds');
   for (const k of Object.keys(C.coachTips || {})) ok(C.coachTipTags && C.coachTipTags[k], 'coachTipTags.' + k);
+  // §2.2.7 那一份，扣掉 aceYou／aceHim（FIXLIST 2：王牌沒有「不會被剋」，不會再有 blocked:'ace'）
   const DT = ['pickHint', 'picked', 'again', 'throwBtn', 'waiting', 'hintLabel', 'sleeve', 'rounds', 'hp', 'aceSlot', 'aceUsed', 'aceWord', 'he', 'you', 'slotE', 'slotP',
-    'lastPrefix', 'pileLeft', 'counter', 'countered', 'blockedYou', 'blockedHim', 'aceYou', 'aceHim', 'mirror', 'tie', 'hitE', 'hitP', 'bluff', 'honest',
+    'lastPrefix', 'pileLeft', 'counter', 'countered', 'blockedYou', 'blockedHim', 'mirror', 'tie', 'hitE', 'hitP', 'bluff', 'honest',
     'bluffNoKey', 'honestNoKey', 'koWin', 'koWinSub', 'koLose', 'koLoseRetry', 'roundsOut', 'roundsScore'];
-  ok(C.duelText && sameSet(Object.keys(C.duelText), DT), 'duelText 的鍵要剛好是 §2.2.7 那一份');
+  ok(C.duelText && sameSet(Object.keys(C.duelText), DT), 'duelText 的鍵要剛好是 §2.2.7 那一份（沒有 aceYou／aceHim）');
+  ok(C.duelText && Object.values(C.duelText).every(t => !/不會被剋/.test(t)), 'duelText 不准有「不會被剋」（FIXLIST 2）');
   // D §5 的三個例句要組得出來
   if (C.duelText) {
     const f = (s, o) => s.replace(/\{(\w+)\}/g, (m, k) => (k in o ? o[k] : m));
@@ -292,6 +306,7 @@ export function contentProblems(C, E) {
     ok(f(T.counter, { a: '冷門', b: '經典' }) + f(T.hitE, { n: 4 }) === '冷門剋經典，命中！他 −4', 'duelText：組不出「冷門剋經典，命中！他 −4」');
     ok(f(T.blockedYou, { a: '冷門', b: '經典' }) + f(T.hitP, { n: 3 }) === '冷門剋經典，但他高你 2 星以上，剋不動。比星數，你 −3', 'duelText：組不出剋不動那句');
     ok(f(T.bluff, { key: '紀念版', hint: '經典', e: '硬蕊' }) + f(T.hitP, { n: 4 }) === '他唬你！『紀念版』是經典，他出的是硬蕊。你 −4', 'duelText：組不出唬人那句');
+    ok(f(T.roundsScore, { p: 60, e: 50, who: '你' }) === '你剩 60%，他剩 50%：你贏', 'duelText.roundsScore：比聲望條剩幾 %（FIXLIST 3）');
   }
   const SL = C.shopLines || {};
   for (const k of ['poster', 'cat', 'locked', 'binBusy', 'titleHint', 'taipeiHere', 'taipeiNote', 'taipeiLink', 'backToShop', 'bin', 'booth', 'boothEmpty']) ok(typeof SL[k] === 'string' && SL[k], 'shopLines.' + k);
@@ -310,6 +325,49 @@ export function contentProblems(C, E) {
   const enemyNames = Object.values(C.enemies).map(e => e.name);
   ok(C.names.length >= 20 && C.names.every(n => !enemyNames.includes(n) && [...n].length <= 8), 'names：不能用客人的名字、≤8 字');
   ok(C.avatarsFallback.length === 6, 'avatarsFallback 要 6 組'); C.avatarsFallback.forEach((a, k) => avatarOk(a, 'avatarsFallback[' + k + ']'));
+  return bad;
+}
+
+// ================================================================================================
+// 箱子（FIXLIST 4／5／8＋X／Y 契約；bins.js 是契約形狀＝有 feature 那一區時才查）。匯出給 engine.test 查 fixture
+//   十四區 { key, label, zh, pool, front }；分類箱的 pool 都是那一類（第一個曲風＝genre-tree 頂層、台灣地區＝tw）；FEATURE 只有史詩／傳奇；
+//   沒有頂點卡；front 的卡都在；30 晚 newRun 每區都上得到 4–6 張（FEATURE 2–3）、全店不重複
+// ================================================================================================
+export const BIN_LABELS = { jazz: ['JAZZ', '爵士'], tw: ['TW', '台灣'], rock: ['ROCK', '搖滾'], elec: ['ELEC', '電子'], soul: ['SOUL', '靈魂放克'],
+  hiphop: ['HIP-HOP', '嘻哈 R&B'], pop: ['POP', '流行'], classical: ['CLASSICAL', '古典'], world: ['WORLD', '世界'], folk: ['FOLK', '民謠'], blues: ['BLUES', '藍調'],
+  new: ['NEW', '新進'], feature: ['FEATURE', '店長推薦精選'], picks: [null, '店長推薦'] };
+export function binsProblems(C, E) {
+  const bad = [];
+  const ok = (cond, msg) => { if (!cond) bad.push(msg); return !!cond; };
+  const B = C.bins || {}, CARDS = C.cards || {};
+  let tops = null; try { tops = JSON.parse(fs.readFileSync(path.join(ROOT, 'genre-tree.json'), 'utf8')).genres.map(g => g.id); } catch (_) { tops = null; }
+  ok(sameSet(Object.keys(B), Object.keys(BIN_LABELS)), 'bins 的鍵要剛好是契約的 14 區：' + Object.keys(BIN_LABELS).join(' ') + '（現在 ' + Object.keys(B).join(' ') + '）');
+  if (tops) ok(sameSet(Object.keys(E.GENRE_BIN), tops), 'engine GENRE_BIN 的鍵＝genre-tree.json 頂層十類');
+  const CATS = Object.values(E.GENRE_BIN).concat(['tw']);
+  for (const [k, [label, zh]] of Object.entries(BIN_LABELS)) {
+    const b = B[k], w = 'bins.' + k;
+    if (!ok(b, w + '：沒有這一區')) continue;
+    ok(b.key === k && b.zh === zh && typeof b.label === 'string' && b.label && (label == null || b.label === label), w + '：key／label／zh 要是 ' + k + '／' + (label || '（英文）') + '／' + zh);
+    ok(Array.isArray(b.pool) && b.pool.length && new Set(b.pool).size === b.pool.length, w + '：pool 要有卡、不重複');
+    ok(Array.isArray(b.front) && b.front.every(id => CARDS[id]), w + '：front 的卡都要在 cards.js');
+    for (const id of b.pool || []) {
+      const c = CARDS[id];
+      if (!ok(c, w + '：找不到卡 ' + id)) continue;
+      ok(!c.tier, w + '：' + id + ' 是頂點卡（v4 不上架）');
+      if (CATS.includes(k)) ok(E.categoryOf(c) === k, w + '：' + id + ' 的分類是 ' + E.categoryOf(c) + '（第一個曲風 ' + (c.genres || [])[0] + '、地區 ' + c.region + '）');
+      if (k === 'feature') ok(['epic', 'legendary'].includes(E.rarity(c)), w + '：' + id + ' 是 ' + E.rarity(c) + '（FEATURE 只放史詩／傳奇）');
+      if (tops && c.region !== 'tw') ok(tops.includes((c.genres || [])[0]), w + '：' + id + ' 的第一個曲風 ' + (c.genres || [])[0] + ' 不是 genre-tree 頂層');
+    }
+  }
+  // 30 晚上貨：每區都上得滿下限（全店不重複之後）
+  const short = {};
+  for (let s = 1; s <= 30; s++) {
+    const run = E.newRun(C, { seedKey: 'bins-check-' + s, nightNo: 1 + (s % 3), ace: TIERS[s % 3] });
+    const all = Object.values(run.shop.bins).flat();
+    ok(new Set(all).size === all.length, '第 ' + s + ' 晚：全店有重複的唱片');
+    for (const [k, st] of Object.entries(run.shop.bins)) if (st.length < (k === 'feature' ? 2 : 4)) short[k] = Math.min(short[k] == null ? 99 : short[k], st.length);
+  }
+  for (const [k, n] of Object.entries(short)) bad.push('bins.' + k + '：有幾晚只上得到 ' + n + ' 張（扣掉王牌、包包、特價箱、別區先拿的、稀有度不對的之後不夠；pool 要再多一點）');
   return bad;
 }
 
@@ -427,7 +485,7 @@ export function tutorialProblems(C) {
   const steps = T.steps || [];
   if (!ok(steps.length > 0, 'tutorial.steps：沒有步驟')) return bad;
   ok(new Set(steps.map(s => s.id)).size === steps.length, 'tutorial.steps：id 重複');
-  const LEARN = { L1: '同色比星數', L2: '冷門剋經典', L3: '經典剋硬蕊', L4: '硬蕊剋冷門', L5: '差 2 星剋不動', L6: '王牌 7 星、不會被剋' };
+  const LEARN = { L1: '同色比星數', L2: '冷門剋經典', L3: '經典剋硬蕊', L4: '硬蕊剋冷門', L5: '差 2 星剋不動', L6: '王牌 7 星，一場一次' };   // L6：FIXLIST 2
   ok(JSON.stringify(T.learned) === JSON.stringify(LEARN), 'tutorial.learned 要＝§2.5.5 的 L1–L6');
   ok(T.ui && ['who', 'learnedPrefix', 'wrong', 'skipTut', 'replay', 'learnedTitle'].every(k => typeof T.ui[k] === 'string' && T.ui[k]), 'tutorial.ui 的鍵');
   let hand = 1, thrown = false;
@@ -482,6 +540,7 @@ if (isMain) {
   if (bad.length) { console.log('content 自檢沒過（' + bad.length + '）：'); bad.forEach(b => console.log('  ✗ ' + b)); process.exitCode = 1; }
   else {
     const decks = Object.values(C.enemies).map(e => e.id + ' ' + e.deck.length + '／' + e.hp + '／' + E.deckMain(e.deck.map(id => C.cards[id]), e.taste)).join('、');
+    if (!(C.bins && C.bins.feature)) console.log('（bins.js 還是舊形狀、沒有 feature 區：契約檢查 binsProblems 等 Y 的 bins.js 進來才跑；engine.test 用 fixture 驗）');
     console.log('content 自檢通過：卡 ' + Object.keys(C.cards).length + ' 張；客人 10 位（唱片／聲望／主屬性 ' + decks + '）；發燒配件 ' + Object.keys(C.relics).length + ' 件；箱子 ' + Object.keys(C.bins).length + ' 區。');
   }
 }
