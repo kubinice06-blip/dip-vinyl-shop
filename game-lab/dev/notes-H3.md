@@ -20,10 +20,16 @@
 - [x] RV11-5 雙擊疊著那排——同一點 320 ms／24 px 內的第二下不算（90–260 ms 都只攤開）；別的位置照收（G8 照舊浮起）；教學剛攤開 350 ms 內點遮罩不罵（四尺寸 warn false）
 - [x] RV11-6 長按屬性鈕＝出牌——LP_SEL 加 .ab：按住 450 ms 跳「經典 2 星」小字、放開那下吞掉；之後一般點照常出牌
 - [x] ?v= 加一（43→44；dip-character／dip-player 跟主站不動）、README
-- [~] 全部檢查——單元 engine 2040482／tutorial 182142／shop 1280／hit 343／chars 30061 全 0 失敗；sim --n 3000 22/22；lint-copy 過（LINES-REVIEW 重產沒變）；check-content／shops／covers OK。e2e 四尺寸在跑：scratchpad/v4/H3/runall.sh → run1/（spec LAB_FULL=1 → duel → prologue×4 → econ → taps title,night）
-- [ ] 截圖 dev/shots/hand5/（腳本 scratchpad/v4/H3/shots.mjs，e2e 跑完再拍）
+- [x] 全部檢查——單元 engine 2040482／tutorial 182142／shop 1280／hit 343／chars 30061 全 0 失敗；sim --n 3000 22/22（S1 78.3、S9 47.8）；lint-copy 過（LINES-REVIEW 重產沒變）；check-content／shops／covers OK。
+  e2e 四尺寸（scratchpad/v4/H3/runall.sh → run1/）：e2e.spec LAB_FULL=1 147/149（#20 390、#18 360 → 修了，#18／#20 四尺寸重跑 12/12）；e2e-duel 124/124；e2e-prologue 52/52×4；e2e-econ 80/80；e2e-taps title,night 56/56
+- [x] 截圖 dev/shots/hand5/（@2；腳本 scratchpad/v4/H3/shots.mjs）：390／375／430／360-1-stack、430-1b-stack-hand2（第 2 手：手牌上空 23 px、跟第 1 手一樣，沒有 .tighter）、390-2-spread、3-lift、4-reveal、4b-next-hand、5／6／7-tut-lesson2（疊著→那張→冷 4 大鈕）、430-8-prologue、9-prologue-guess-sheet（開面板整間店都在、沒暗線）、390-10-sell-gift（四張老闆送的停用）。都看過
 
 ## 記錄
 - RV11-1：cardinfo.js open() 加 armed（面板裡 pointerdown 過才收 click；detail 0＝鍵盤／el.click() 照常）。lpmap 390／360 全部 stillOpen=true，lppop 不再開 Spotify 分頁；e2e.spec #18（390）PASS（hand／ace／spread／lifted）。
 - 探針：scratchpad/v4/H3/input.mjs（RV11-1／2／3／5／6，390／360 全 PASS）、tutprobe.mjs（RH-6／8、RV11-4／5，四尺寸 PASS）、callout.mjs、flip.mjs、prol2.mjs、seam2.mjs。單元：tutorial 182142／0、chars、hit 綠。
 - e2e.spec #20 390 第一次 FAIL：教學剛攤開 350 ms 內「點別張」也被我當成雙擊不罵 → 改成只有跟攤開那下同一點（24 px 內）才不罵（sh.quiet＋onMaskDown 比座標）；#20 390 重跑 PASS、tutprobe RV11-5 照舊 PASS。
+
+## 交件
+- 修了：RV11-1（major）、RH-1（major）、RH-3（major）、RH-2、RH-4、RH-5、RH-6、RH-8、RV11-2、RV11-3、RV11-4、RV11-5、RV11-6。全部先重現過（RV11-1 lpmap、RH-1 tighter、RH-2 handstart、RH-4 seam2、RH-5 prol2；其他照 findings 的腳本與證據）。
+- 沒做：RH-7（攤開封面只剩一半）——寬度決定，改重疊或兩排＝改店主定的「攤開成不重疊的一排」，留給店主。
+- 另外：e2e #18 加攤開／浮起的長按（放開 400 ms 後還開著、串流連結沒開）；README 手牌那段、?v=44。
