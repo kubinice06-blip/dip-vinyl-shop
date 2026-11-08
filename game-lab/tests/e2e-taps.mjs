@@ -79,7 +79,8 @@ async function runScreen(browser, w, h, screenName) {
     // 鏡頭外（矮螢幕從牆頂裁掉）的熱點沒有點：只列出來，不算錯；但畫面裡露出一部分的一定要有點
     const outOfView = await page.evaluate(ids => { const sh = window.__lab.stage.shop; return ids.filter(id => !sh.hotRegion(id)); }, noPt);
     const lost = noPt.filter(id => !outOfView.includes(id));
-    record(1, size, !bad1.length && !covered.length && !lost.length && S.pts.length >= 30,
+    // 至少 30 個熱點：真點過的＋整個在鏡頭外的（矮螢幕的今晚來客，面板讓鏡頭從牆頂裁掉兩排牆上唱片與海報；箱子與家具一定在畫面裡，見 #2／#4）
+    record(1, size, !bad1.length && !covered.length && !lost.length && S.pts.length + outOfView.length >= 30,
       `hotPoints ${S.pts.length} 點真點、觸發自己 ${S.pts.length - bad1.length - covered.length}/${S.pts.length}` + (bad1.length ? ' 錯：' + bad1.join('、') : '') +
       (covered.length ? ' 被 DOM 蓋住：' + covered.join('、') : '') + (lost.length ? ' 看得到卻沒點：' + lost.join('、') : '') + (outOfView.length ? '（鏡頭外：' + outOfView.join('、') + '）' : ''));
 
