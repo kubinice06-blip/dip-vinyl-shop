@@ -25,3 +25,7 @@
 ## 每日批次 2026-11-07（第 2 批，395 次）
 - 找到 190（exact 170、edition 20），收 189。**不收** Philip Glass《Koyaanisqatsi》（卡為 1998 Nonesuch 重錄，Spotify 為 2009《Complete Original Soundtrack》電影原錄音，不同錄音）。
 - 事故：首跑 `limit=20` 被 Spotify 拒（現行上限 10），出錯不等待、一路空打 201 次並寫入 100 列空結果；已刪除那 100 列、limit 改 10、出錯也等待、連續 3 次錯即停、出錯不寫結果。
+
+## 每日批次 2026-11-08（第 3 批，395 次）
+- 找到 261（exact 236、edition 25），全收；edition 都是同張的重製／擴充／豪華版（Mew 兩張 Extended Version、Stratovarius Original Version 亦同張）。
+- 修：《Koyaanisqatsi》前一批已退回，但 v2 列有 url、make-plan 隔天又列入；新增 `rejected.json`，make-plan 一律排除。
