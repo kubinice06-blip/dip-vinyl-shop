@@ -467,6 +467,7 @@
     // 對決以外的提示（今晚來客）：它指的東西不見了（換畫面了）就收掉，不帶進對決（B-map-hint-leak）
     if (S.soft && S.soft.kind !== 'duel' && !S.lesson && softTargetsGone(S.soft)) { dismissSoft('gone'); return; }
     if (S.tip && !duelApi()) hideTip('gone');
+    else if (S.tip && duelPhase() && duelPhase() !== 'choose') hideTip('next');     // 你丟出去了：下一手的演出不要被泡泡蓋住（R-01）
     if (anyShow) layout(false);
     if (S.tip) layoutTip(false);
     if ((S.show && S.show.mode !== 'hide') || S.tip) S.raf = requestAnimationFrame(tick);
@@ -1012,6 +1013,10 @@
   function pumpTips() {
     if (S.tip || !S.tipQ.length || S.lesson) return;
     if (!duelApi()) { S.tipQ = []; return; }            // 對決已經收掉：丟掉（沒看到就不算看過，下次遇到再出）
+    // 揭曉演出中不出（R-01／V04：泡泡在舞台橫條上，會蓋住兩個人、唱盤與老闆舉旗）：等這手演完、輪到你挑牌再出；打完了就丟掉
+    var ph = duelPhase();
+    if (ph === 'over') { S.tipQ = []; return; }
+    if (ph && ph !== 'choose') { setTimeout(pumpTips, 200); return; }
     var t = S.tipQ.shift();
     if (seen(t.id)) { setTimeout(pumpTips, 0); return; }
     var r = ensureTipRoot();
@@ -1030,6 +1035,7 @@
   function hideTip(why) {
     var cur = S.tip; if (!cur) return;
     clearTimeout(cur.seenT); clearTimeout(cur.hideT);
+    if (why === 'next' && now() - cur.at >= 800) markSeen(cur.id);     // 看了一會兒才丟出去：算看過
     S.tip = null;
     var r = S.tipRoot;
     if (r) {
