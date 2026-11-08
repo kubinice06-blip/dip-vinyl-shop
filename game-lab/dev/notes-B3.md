@@ -31,17 +31,17 @@
 - `DipLabEcon.debug()`：`{open, walking, kind, key, mode, idx, ids, sel, sub, height, focusH}`（測試用）。
 
 ## 測試結果
-- `LAB_BASE=http://localhost:8783 node game-lab/tests/e2e-econ.mjs`（預設四尺寸 390x664,375x548,430x932,360x640）：**56/56 PASS**（2026-11-08）。
+- `LAB_BASE=http://localhost:8783 node game-lab/tests/e2e-econ.mjs`（預設四尺寸 390x664,375x548,430x932,360x640）：**56/56 PASS**（2026-11-08，最後一次＝9f2f83bb4 之後；含長按兩種情況、賣回／櫃檯／特價箱沒被抽屜蓋到）。
   各面板高（/ #app）：390x664 箱子 277、賣回唱片 332、櫃檯 232、賣回配件 307、挑三張 323、$100 230；375x548 箱子 248、賣回 271、櫃檯 232、賣回配件 267、挑三張 273、$100 225（都 ≤50%、不溢出）。主控台 0 錯誤（strict）。
 - 沒改到別人的檔（`git diff --stat v4/base-B..HEAD` 只有 econ.js、econ.css、dev/econ-harness.html、tests/e2e-econ.mjs、本檔）；順手跑 `shop.test` 1058/0、`hit.test` 330/0、`check-shops` OK。
 
 ## 截圖
-- 截圖好了（段 5 後半「唱片櫃：買賣介面」，deviceScaleFactor 2，`dev/econ-harness.html?shot=1`；腳本 scratchpad `b3/shots.cjs`，讀 LAB_BASE）：
+- 截圖好了（段 5 後半「唱片櫃：買賣介面」，deviceScaleFactor 2，`dev/econ-harness.html?shot=1`；腳本 `game-lab/dev/shots/B3/shots-B3.cjs`（不進 repo；讀 LAB_BASE、SIZES）：
   `game-lab/dev/shots/B3/390x664-*.png`、`430x932-*.png`，各 14 張：
   01-walk（點嘻哈箱、走過去途中）、02-bin-dig-drawer（到了在翻、抽屜開著、那一箱整個看得到）、03-bin-flip-2（翻到第 2 張）、
   04-bagfull-sell（包包滿：先賣一張）、05-bagfull-sell-picked（選了一張，鈕寫要買的那張）、06-bagfull-sold-toast（賣＋買的吐司）、07-bin-nomoney（錢不夠）、
   08-relic-shop（櫃檯配件）、09-relic-bought、10-relic-full-sell（滿 3 件先賣一件）、
-  11-bargain-pick-2of3／12-bargain-pick-3of3（開局挑三張）、13-bargain-buy（之後 $100）、14-busy（序章中點箱子：「打完再翻。」）。
+  11-bargain-pick-2of3／12-bargain-pick-3of3（開局挑三張；長按封面＝唱片資訊、放開才開）、13-bargain-buy（之後 $100）、14-busy（序章中點箱子：「打完再翻。」）。
   「今晚來客有錢的樣子」是 B2 的畫面（ui.js），不在這裡。
 
 ## 請求
