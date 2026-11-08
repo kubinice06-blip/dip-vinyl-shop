@@ -973,7 +973,7 @@
       var ids = shuffled(TIERS.map(function (t) { return C.aces[t]; }));
       var s = sheet('<div class="hd"><h3>' + esc((beat && beat.prompt) || '') + '</h3><span class="np"></span></div>' +
         '<div class="lb-trio">' + ids.map(function (id) { return tileHTML(card(id), { stars: false, frame: false, badge: false, pick: '是這張' }); }).join('') + '</div>' +
-        '<p class="note">' + (soundOn() ? '音樂會繼續放，不會換歌。' : '') + '點封面看唱片資訊。</p>', 'guess');
+        '<p class="note">點封面看唱片資訊。</p>', 'guess');      // R-07：試做版加的「音樂會繼續放，不會換歌。」拿掉
       watchPlaying(qs('.np', s));
       var done = false;
       s.addEventListener('click', function (e) {
@@ -996,16 +996,19 @@
       var html = '<div class="hd"><h3>' + esc((beat && beat.prompt) || '') + '</h3><span class="np"></span></div><div class="lb-trio">' +
         TIERS.map(function (t) {
           var c = card(C.aces[t]), ax = C.aceAxis[t];
-          return tileHTML(c, { sel: t === sel, stars: false, text: false, data: 'data-tier="' + t + '"',
+          return tileHTML(c, { sel: t === sel, stars: false, text: false, badge: false, data: 'data-tier="' + t + '"',      // 名號寫在下面那行，封面角不再蓋標（V13：異端標蓋住 SWANS）
             extra: '<button type="button" class="acex"><span class="' + ax + '">' + esc(C.aceTitle[t]) + '・' + ZH[ax] + ' 7</span><span class="al one">' + esc(c.album) + '</span></button>' });
         }).join('') + '</div><p class="note detail"></p><div class="foot"><button type="button" class="lb-btn pri big wide key" data-a="ok">就這張</button></div>';
       var s = sheet(html, 'acepick');
+      roomForSheet(s);                   // 三張＋名號＋說明那行＋「就這張」：舞台讓出放得下的高，不用在面板裡捲（V01）
+      // 焦點放在「就這張」：不要讓第一行名號（殿堂）的焦點框跟選中的那張同時亮（V01 兩個框）
+      var okb = qs('[data-a=ok]', s); if (okb) try { okb.focus({ preventScroll: true }); } catch (_) {}
       watchPlaying(qs('.np', s));
       var det = qs('.detail', s);
       function mark() {
         qsa('.lb-ct', s).forEach(function (x) { x.classList.toggle('sel', x.getAttribute('data-tier') === sel); });
         var c = card(C.aces[sel]), ax = C.aceAxis[sel];
-        det.innerHTML = '<b>' + esc(C.aceTitle[sel]) + '</b>：' + esc(c.artist + '《' + c.album + '》') + '。<b class="' + ax + '">' + ZH[ax] + ' 7</b>，每場一次。';
+        det.innerHTML = '<b>' + esc(C.aceTitle[sel]) + '</b>：' + esc(c.artist + '《' + c.album + '》') + '。<b class="' + ax + '">' + ZH[ax] + ' 7</b>，一場用一次。';
       }
       mark();
       var done = false;

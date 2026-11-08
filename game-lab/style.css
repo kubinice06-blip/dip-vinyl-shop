@@ -537,3 +537,14 @@ body.stage-wait .lb-panel.title .lb-btn{pointer-events:none;opacity:.55;}   /* �
   .lb-dq .tx{min-height:64px;}
   .lb-panel.night .lb-bagline{margin-top:6px;}
 }
+/* 矮螢幕：老闆的四張（R-08a，375×548 第四張的推薦語被「收下這四張」蓋住）——專輯、藝人、星數排同一行（放不下才換行）、推薦語最多兩行 */
+@media (max-height:600px){
+  .lb-recs{gap:6px;margin-top:6px;}
+  .lb-recs .rc .lb-cv{width:42px !important;height:42px !important;}
+  .lb-recs .rc .t{display:flex;flex-wrap:wrap;align-items:baseline;column-gap:6px;}
+  .lb-recs .rc .al{order:1;}
+  .lb-recs .rc .ar{order:2;}
+  .lb-recs .rc .stars{order:3;margin-top:0;}
+  .lb-recs .rc .pt{order:4;flex-basis:100%;overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;}
+}
+.lb-panel.sheeted>.lb-dq,.lb-panel.sheeted>.lb-strip{visibility:hidden;}   /* 面板滑進來那 0.2 秒，底下的對白不要透出來疊字（R-08c） */
