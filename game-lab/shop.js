@@ -1723,7 +1723,7 @@
       }
       if (state.hi.length) {
         var on = Math.floor(t * 2.5) % 2, ph = Math.floor(t * 4) * 2;
-        state.hi.forEach(function (g) { g.hots.forEach(function (h) { frame(h.rect, on ? '#ffd75e' : '#fff1c2', 'rgba(0,0,0,0)', ph); }); });
+        state.hi.forEach(function (g) { g.hots.forEach(function (h) { outlineVis(h, on ? '#ffd75e' : '#fff1c2', 'rgba(0,0,0,0)', ph); }); });   // 箱子：只描看得到的那一塊
       }
       var show = [];
       if (state.flash && state.rt < state.flash.until && state.flash.h !== (state.press && state.press.h)) show.push(state.flash.h);
