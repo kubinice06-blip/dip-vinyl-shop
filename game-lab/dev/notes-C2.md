@@ -9,8 +9,8 @@
 - [x] 2. 請求：B1／B2／B3 notes＋第一波遺留（check-shops 交叉比對、e2e-taps 今晚來客）
 - [x] 3. B2 的 DipLabEcon 替身換成真的 econ.js（index.html 早已載真的；e2e-prologue 改用真的、e2e.spec 預設真的）
 - [x] 4. index.html ?v=41（267524a11）；README v4（b3f6a54c1）
-- [ ] 5. 全部檢查（§5）
-- [ ] 6. 段 6 截圖（shots/C2/）＋自己看過、修畫面問題
+- [x] 5. 全部檢查（§5）：全綠（見「測試結果」）
+- [x] 6. 段 6 截圖（shots/C2/）＋自己看過、修畫面問題（FIXLIST 9）
 
 ## 請求處理紀錄
 - [x] B2：engine.test:681 墊片檢查改 `!(k in C)`（a1976a702）
@@ -39,9 +39,15 @@
 | `node game-lab/tools/check-content.mjs`／`check-shops.mjs`／`check-covers.mjs` | 通過／OK（含 bin:* 交叉比對）／OK（60 張、12 箱） |
 | `node game-lab/tests/e2e-prologue.mjs`（真的 econ.js） | 52 passed, 0 failed |
 | `LAB_SIZES=四尺寸 node game-lab/tests/e2e-duel.mjs`（index.html，FIXLIST 9 之後） | 116/116 PASS |
+| 同上 `LAB_DUEL_PAGE=harness`（dev/duel-harness.html） | 116/116 PASS |
+| `LAB_SIZES=<每個尺寸> LAB_FULL=1 node game-lab/tests/e2e.spec.mjs`（四尺寸各跑一次，真的 econ.js） | 390×664 37/37、375×548 37/37、430×932 37/37、360×640 37/37 |
+| `LAB_SIZES=四尺寸 node game-lab/tests/e2e-econ.mjs` | 80/80 PASS（harness 60＋index.html #21–#25 20） |
+| `LAB_SIZES=四尺寸 LAB_SCREENS=title,night node game-lab/tests/e2e-taps.mjs` | 56/56 PASS（第一次 55/56：375×548 今晚來客牆上兩排在鏡頭外、可點的 29 點 <30；門檻改成「真點＋鏡頭外 ≥30」，6c8ef21a3） |
+| `node game-lab/tests/e2e-prologue.mjs`（最後一次） | 52 passed, 0 failed |
 
 ## 截圖
 段 6（390×664 @2，`game-lab/dev/shots/C2/`；腳本 scratchpad `c2/shots-c2.mjs`，PART=prologue,duel,shop、SIZE=）：
 - 序章：`390x664-P1-O3`、`-P2-O7-guess`、`-P3-O9-acepick`、`-P4-O11-dig`、`-P5-O13-bargain`（真的 econ 抽屜 3／3）、`-P6-O14-fly`、`-P7-O17-backcorridor`、`-P8-O21-choice`、`-P9-toDuel-settled`
 - 對決（FIXLIST 9 之後）：`390x664-D1-before-throw`、`-D2-counter`、`-D3-blocked-2stars`、`-D4-bluff`、`-D5-tie`；另有 375x548／430x932／360x640 同一組
 - 店：`390x664-S0-night-money`、`-S1-bin-drawer`、`-S2-bagfull-sellback`、`-S3-counter-relics`
+- 四尺寸不捲動拼圖：`4sizes-noscroll-duel.png`（出牌前、剋中 × 四尺寸）
