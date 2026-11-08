@@ -175,8 +175,11 @@
     // 封面讀不到：換成斜紋底＋專輯名（原版 .cov.noimg）
     var img = m.querySelector('img.cov');
     if (img) img.addEventListener('error', function () { var d = D.createElement('div'); d.className = 'cov noimg'; d.innerHTML = '<span>' + esc(o.album) + '</span>'; if (img.parentNode) img.parentNode.replaceChild(d, img); });
+    // 點遮罩（面板外）關掉：只認「在遮罩上按下」的那一下。長按封面開資訊時手指還按著，放開補送的 click 會落在遮罩上——那一下不算（notes-B2 請求）
+    var downOnMask = false;
+    m.addEventListener('pointerdown', function (e) { downOnMask = e.target === m; });
     m.addEventListener('click', function (e) {
-      if (e.target === m) { close(); return; }
+      if (e.target === m) { if (!downOnMask) return; downOnMask = false; close(); return; }
       var t = e.target.closest && e.target.closest('#ciClose');
       if (t) { e.preventDefault(); close(); return; }
       if (e.target.closest && e.target.closest('.streaming-btn[aria-disabled=true]')) { e.preventDefault(); }

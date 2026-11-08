@@ -1753,7 +1753,8 @@
     stg('interact', 'map');
     resetPoses(); stg('sil', 'p', false);
     stg('hide', 'r1', false);                                  // 熟客：序章與收尾藏著，今晚來客才出現（D §2）
-    settle('o', 'counter', 'owner'); settle('p', UI.lastSpot || 'browse', 'player');
+    settle('o', 'counter', 'owner');
+    if (UI.keepP && stg('has', 'p')) UI.keepP = false; else { UI.keepP = false; settle('p', UI.lastSpot || 'browse', 'player'); }
     // 序章收尾 E10 推門進來的那位＝今晚第一位：已經在店裡（門邊、不剪影），門外排的是再下一位
     var inside = !!(r.shop && r.shop.firstGuestInside) && r.idx === 0;
     var nx = r.order[r.idx], q = inside ? [r.order[r.idx + 1], r.order[r.idx + 2]] : [nx, r.order[r.idx + 1]];
@@ -1877,7 +1878,8 @@
   function econCall(m, arg) {
     var X = econ();
     if (!X || typeof X[m] !== 'function') { console.warn('[ui] DipLabEcon.' + m + ' 不在'); return Promise.resolve(); }
-    return Promise.resolve().then(function () { return X[m](arg); }).then(function () { if (UI.screen === 'night' && save.run) go('night'); }, function (e) { console.error(e); });
+    // 抽屜／櫃檯關掉才 resolve：重畫今晚來客的錢與包包；你的人物留在箱子／櫃檯前（notes-B3 請求 4：不要走回 browse）
+    return Promise.resolve().then(function () { return X[m](arg); }).then(function () { if (UI.screen === 'night' && save.run) { UI.keepP = true; go('night'); } }, function (e) { console.error(e); });
   }
   function onStageAction(action, hot) {
     if (!action) return;

@@ -205,12 +205,14 @@
       if (hasStage('speed')) stg('speed', s);
     }
     const pauseAnims = () => S.anims.forEach(a => { try { a.pause(); } catch (_) {} });
+    // 結果框的進場動畫（showCallout）在 hold 時直接跳到終點：不然教學在浮框剛出現時 hold，浮框會停在 scale .3／透明（notes-B2 請求）
+    const finishCallIn = () => S.anims.forEach(a => { try { const ef = a.effect; if (ef && ef.target === els.call && a.playState !== 'finished') { const kf = ef.getKeyframes(); if (kf.length && +kf[kf.length - 1].opacity === 1) a.finish(); } } catch (_) {} });
     const resumeAnims = () => S.anims.forEach(a => { try { if (a.playState === 'paused') a.play(); } catch (_) {} });
     // 外殼開 ⏸／登場卡、教學要停在浮框上時 hold(true)，收掉 hold(false)（計數，可巢狀）：結算停在原地、盤面不收點擊
     function hold(onOff) {
       const was = S.held;
       S.held = Math.max(0, S.held + (onOff ? 1 : -1));
-      if (S.held && !was) { pauseAnims(); if (S.lp) { clearTimeout(S.lp.h); S.lp = null; } root.classList.add('held'); if (hasStage('pause')) stg('pause', true); }
+      if (S.held && !was) { finishCallIn(); pauseAnims(); if (S.lp) { clearTimeout(S.lp.h); S.lp = null; } root.classList.add('held'); if (hasStage('pause')) stg('pause', true); }
       else if (!S.held && was) { root.classList.remove('held'); if (!paused()) resumeAnims(); if (hasStage('pause')) stg('pause', false); }
       return S.held;
     }

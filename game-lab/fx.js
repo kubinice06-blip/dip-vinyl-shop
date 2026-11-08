@@ -262,7 +262,6 @@
     // 落針：90 Hz 的「咚」手機喇叭放不出來，疊一個 250 Hz 以上的短「叩」（三角波＋中頻噪音）
     needle(c) { noise(c, { d: 0.04, g: 0.35, filter: { type: 'bandpass', f: 3000, q: 1.2 } }); tone(c, { f: 90, d: 0.06, g: 0.5, a: 0.002 }); tone(c, { type: 'triangle', f: 340, f2: 210, d: 0.06, g: 0.34, a: 0.002 }); noise(c, { d: 0.035, g: 0.3, filter: { type: 'bandpass', f: 900, q: 1 } }); },
     readHit(c, o) { const k = (o && o.oct) || 1; [NOTE.C5, NOTE.E5, NOTE.G5].forEach((f, i) => tone(c, { type: 'triangle', f: f * k, t: i * 0.04, d: 0.14, g: 0.32 })); },
-    seeThrough(c) { SFX.readHit(c, { oct: 2 }); noise(c, { d: 0.18, g: 0.28, filter: { type: 'bandpass', f: 6000, f2: 2000, q: 1.4 } }); },
     feintHit(c) { tone(c, { type: 'sawtooth', f: 400, f2: 90, d: 0.22, g: 0.25, a: 0.003, filter: { type: 'lowpass', f: 2400 } }); noise(c, { d: 0.2, g: 0.18, filter: { type: 'bandpass', f: 1800, f2: 500, q: 0.8 } }); },
     scratch(c) { tone(c, { type: 'sawtooth', f: 300, f2: 120, d: 0.14, g: 0.16, a: 0.003, filter: { type: 'lowpass', f: 2000 } }); noise(c, { d: 0.12, g: 0.12, filter: { type: 'bandpass', f: 1500, f2: 600, q: 0.8 } }); },
     hurt(c) { tone(c, { f: 110, d: 0.18, g: 0.5 }); tone(c, { type: 'square', f: 55, d: 0.08, g: 0.25 }); tone(c, { type: 'square', f: 220, f2: 110, d: 0.14, g: 0.38, filter: { type: 'lowpass', f: 1800 } }); noise(c, { d: 0.06, g: 0.3, filter: { type: 'bandpass', f: 800, q: 0.9 } }); },
