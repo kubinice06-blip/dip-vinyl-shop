@@ -8,7 +8,7 @@
 //   B「完全不點」：安靜推門、只在選擇的 ▼ 亮時點一下打開面板、猜錯；位移不瞬移（P7）
 // A、B 都：每 40 ms 取樣（對話框字數、▼、三人位置、.lb-fly、包包條格數、門、遇敵特效、老闆姿勢）＋逐句執行器的 UI.timeline＋舞台呼叫紀錄；
 //   打到男子那場就 __lab.forceWin()，接著演收尾 E1–E11，到今晚來客為止。斷言 P1–P4、P6–P9、P11、P13（§5.4 表）。
-// 經濟介面用替身（tests/econ-stub.js：bargainPick 直接挑前三張）；試聽一律換成 20 秒的無聲 WAV（不靠網路，P12 才測得準）。
+// 經濟介面用真的 econ.js（特價區抽屜：駕駛挑前三張、收下）；LAB_ECON=stub 才用替身（tests/econ-stub.js）。試聽一律換成 20 秒的無聲 WAV（不靠網路，P12 才測得準）。
 import fs from 'fs';
 import path from 'path';
 import { createRequire } from 'module';
@@ -21,6 +21,8 @@ const C = require(path.join(LAB, 'content.js'));
 const E = require(path.join(LAB, 'engine.js'));
 const L = JSON.parse(fs.readFileSync(path.join(LAB, 'shops', 'dip.json'), 'utf8'));
 const STUB = fs.readFileSync(path.join(HERE, 'econ-stub.js'), 'utf8');
+// 經濟介面：預設用真的 econ.js（C 整合後）；LAB_ECON=stub 才換成 tests/econ-stub.js 替身
+const ECON = process.env.LAB_ECON || (fs.existsSync(path.join(LAB, 'econ.js')) ? 'real' : 'stub');
 const SEED = process.env.LAB_SEED || '20261106';
 const [W, H] = (process.env.LAB_SIZE || '390x664').split('x').map(Number);
 const TIERS = ['hall', 'pearl', 'heresy'];
@@ -116,6 +118,16 @@ function driver(o) {
       return;
     }
     if (scr !== 'scene') return;
+    // 特價區（真的經濟介面 econ.js 的抽屜）：挑前三張、收下
+    const ec = [...document.querySelectorAll('.ec-drawer [data-a=tog]')];
+    if (ec.length) {
+      if (!after('ec', o.answerMs)) return;
+      clear('ec');
+      const n = ec.filter(b => b.classList.contains('sel')).length;
+      ec.filter(b => !b.classList.contains('sel')).slice(0, Math.max(0, 3 - n)).forEach(b => b.click());
+      click('.ec-drawer [data-a=take]:not([disabled])', 'bargain take');
+      return;
+    }
     const sheet = q('#panel > .lb-sheet');
     if (sheet) {
       const k = sheet.className;
@@ -150,8 +162,10 @@ function driver(o) {
 
 async function openPage(browser, extra) {
   const { ctx, page } = await newPage(browser, W, H);
-  await page.route(/\/game-lab\/econ\.js(\?|$)/, r => r.fulfill({ contentType: 'application/javascript', body: STUB }));
-  await page.route(/\/game-lab\/econ\.css(\?|$)/, r => r.fulfill({ contentType: 'text/css', body: '' }));
+  if (ECON === 'stub') {
+    await page.route(/\/game-lab\/econ\.js(\?|$)/, r => r.fulfill({ contentType: 'application/javascript', body: STUB }));
+    await page.route(/\/game-lab\/econ\.css(\?|$)/, r => r.fulfill({ contentType: 'text/css', body: '' }));
+  }
   await page.route(/^https:\/\/audio-ssl\.itunes\.apple\.com\//, r => r.fulfill({ status: 200, contentType: 'audio/wav', headers: { 'access-control-allow-origin': '*' }, body: WAV }));
   await page.addInitScript(instrument);
   await page.goto(URL0 + '?debug=1&strict=1&seed=' + SEED + (extra || ''), { waitUntil: 'domcontentloaded' });
