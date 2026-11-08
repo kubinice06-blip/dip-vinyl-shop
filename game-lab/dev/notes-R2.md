@@ -10,8 +10,9 @@
 - [x] major R-01/V04（tutorial.js）、R-02/V06/RT-12（dip.json＋makeRoom）、RT-2、RT-3、V01、V02、COPY-01、COPY-02；V03 一部分（高螢幕對白框）
 - [x] RT-14 e2e #22（ghost 不超出 #app）
 - [x] minor：R-03/05/06/07/08/09、RT-5..RT-13、V05、V07..V11、V13、V14、V16、COPY-03/04/06..12/15..18（部分）
-- [ ] ?v=43、全部檢查重跑
-- [ ] 店主截圖 dev/shots/final/
+- [x] ?v=43（index.html 的 game-lab 資源本來就是 43，沒有要改的）
+- [ ] 全部檢查重跑（node 全綠；e2e 跑中）
+- [x] 店主截圖 dev/shots/final/（16 張；shots/ 在 .gitignore）
 
 ## 記錄
 
@@ -36,3 +37,14 @@
 - COPY-18：b（shops 的 note 不列）、c（推薦語照實際位置分組）、d（O7 面板標題＝店主句的一段）做了；a（ui.js 寫死的字搬進 content）、e（shopLines.cat、ownerHint.scene 用不到）沒做。
 - V07 keepHeads(pad 22) 在 set.emote；V08 左走道轉角點 x 87/88/86→84、右 194/193/196→199/199/200（中島邊距 9→13–14），shop.test 路線上限 3.5→3.6（mid→ref 3.52 s）；V10 over 時小卡放牌桌上緣；V16 地上那張畫封套＋半張黑膠＋閃。
 - V09 唱片資訊 ≤700 高封面 30svh、關閉上緣淡出；V14 charedit 1 倍螢幕 U 最小 2、格子 46、清單淡出；RT-11 今晚來客提示目標＝整個名單、開抽屜 dismissSoft；RT-13 reward 面板 _armUntil＝鏡頭 620 ms。
+
+## 檢查（R2 修完）
+- node：engine.test 1459115／0、tutorial.test 142776／0、shop.test 1280／0、hit.test 343／0、chars.test 30061／0；lint-copy 通過（383 句：原句 45、店主 66、新 272）、check-content、check-shops、check-covers OK。
+- `sim.mjs --n 3000 --json dev/sim-v4.json`：22/22（S1 80.5、S9 48.9）；sim-v4.json 沒變（規則與數字沒動）。
+- 中途抓到：兩處我加的行尾註解吃掉程式（ui.js 今晚來客提示的 catch、duel.js 手數淡入）→ 標題出不來；c0398cd40 修好、node --check 全部 JS 過。
+
+## 店主截圖（dev/shots/final/，390×664@2；另 375×548、430×932 出牌前）
+01 標題、02 猜歌、03 後走道兩顆鈕、04 三人在唱盤（遇敵前）、05 出牌前（選了一張）、06 剋中揭曉（照實）、07 KO、08 比聲望條（你贏）、
+09 今晚來客（錢、配件）、10 JAZZ 抽屜、11 FEATURE、12 特價箱之後（標價）、13 櫃檯配件、14 規則卡。
+看截圖修的：打完時「上一手」從大章兩側露出（.dl.over .lastline 藏）；抽屜上面的空隙改舞台黑（不是白條）。
+430×932 序章：對白框照內容長以後，下面空一塊白（店景 292×322 在 430 寬已經整間店，剩下的高要給店景得裁兩側或做跟拍鏡頭——留給店主／下一輪）。
