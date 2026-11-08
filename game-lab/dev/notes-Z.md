@@ -13,8 +13,8 @@
 - [x] 5. 教學（不提王牌不會被剋；L6 照常）＋tutorial.test L6
 - [x] 6. 版面 a–d（店主提示不蓋頭上徽章、接受對決後下方面板不空白、430x932 不留大空帶、375x548 今晚看得到門口牆）
 - [x] 7. index.html ?v=42、README
-- [ ] 8. 全部檢查（見「測試結果」）
-- [ ] 9. 店主截圖 shots/Z/
+- [x] 8. 全部檢查（見「測試結果」）
+- [x] 9. 店主截圖 shots/Z/
 
 ## 紀錄
 - 合併 v4/Y、v4/X 都沒衝突。合併後 engine.test 全過、check-content 通過（binsProblems 跑了）、tutorial.test 只差 L6 常數 → db6ffbbbe。
@@ -44,3 +44,17 @@
 | `node game-lab/tools/check-content.mjs`／`check-shops.mjs`／`check-covers.mjs` | 通過（14 區、binsProblems 有跑）／OK（3 份 layout）／OK（60 張、14 區） |
 | e2e 第一輪（四尺寸） | e2e-econ 80/80、e2e-prologue 52/0、e2e-duel 112/116（#9 找王牌那手的方向寫反 → 6334a86df）、e2e-taps 54/56（#6 430×932：橫條變高後泡泡不再避開中間 → 7f428ec45 shop.strip） |
 | `node game-lab/sim.mjs --n 3000` | 20/20（S1 80.1%、S2 最高 40.6%、S3 0%、S4 5.84 手／≤3 手 0.6%、S5 100%、S6 +8.7 點（none 71.4%）、S7 一般 71.4–89.0、菁英 65.3／77.7、藏家 52.6、S8 99.7%） |
+
+## e2e 最後一輪（7f428ec45 之後，伺服器 8765＝這個 checkout，四尺寸 390x664,375x548,430x932,360x640）
+| 指令 | 結果 |
+|---|---|
+| `LAB_SIZES=四尺寸 node game-lab/tests/e2e-duel.mjs`（index.html） | 116/116 PASS |
+| `LAB_SIZES=四尺寸 LAB_SCREENS=title,night node game-lab/tests/e2e-taps.mjs` | 56/56 PASS |
+| `LAB_SIZES=<各尺寸> LAB_FULL=1 node game-lab/tests/e2e.spec.mjs` | 390×664 37/37、375×548 37/37、430×932 37/37、360×640 37/37 |
+| `LAB_SIZES=四尺寸 node game-lab/tests/e2e-econ.mjs` | 80/80 PASS |
+| `node game-lab/tests/e2e-prologue.mjs` | 52 passed, 0 failed |
+
+## 截圖（deviceScaleFactor 2，`game-lab/dev/shots/Z/`，不進 repo；腳本 scratchpad `Z/shots-Z.mjs`、`Z/pickshot.mjs`）
+- 390x664：`01-title`（新名牌）、`02-night-money`（$2,500、新名字）、`03-feature`（史詩 $3,000）、`03b-feature-legendary`（傳奇 $4,000）、`04-bin-rock`（稀有 $1,000）、
+  `05-bargain-later`（每格 $200／$300、買下 $500）、`05a-bargain-prologue-free`（econ-harness：劃掉＋這次免費）、`06-duel-before`、`07-counter`、`08-rounds-tiebreak`（你 6/10＝60%、他 17/31＝55% → 你贏）、`09-rules`
+- 出牌前另拍：`375x548-06-duel-before`、`430x932-06-duel-before`（橫條往上長、下方空帶 ~25 px）
