@@ -1,9 +1,10 @@
 /* game-lab/duel.css — 品味對決 v4 盤面（v3 Agent D 起稿；v4 Agent B1，SPEC-v4 §2.5.1：提示句、蓋著的封套、第 n／6 手、結果三行）。
    顏色一律用 style.css :root 的 token（括號裡是保險值）。全部規則收在 .dl 底下，不撞外殼的 class。
    WebKit：不用 backface-visibility、不用 100vh、長按目標 -webkit-touch-callout:none；flex gap 用 margin 代替（iOS 14.0–14.4）。
-   尺寸分級（duel.js 量盤面可用高度後加 class）：.roomy ≥600、預設 500–599、.compact 450–499、.short <450；還放不下再加 .tighter。 */
+   尺寸分級（duel.js 量盤面可用高度後加 class）：.roomy ≥600、預設 500–599、.compact 450–499、.short <450；還放不下再加 .tighter。
+   牌桌兩張封面的邊長 --scv 由 duel.js fit() 照牌桌剩下的高與寬算（店主 2026-11-08：專輯是主角）。 */
 .dl{--dl-zh:var(--zh,'Noto Sans TC','PingFang TC','Heiti TC',sans-serif);--dl-mono:'Space Mono',var(--dl-zh);
-  --sx:10px;--ecv:56px;--scv:78px;--hcv:66px;--pill:32px;--thr-h:46px;--tri-w:132px;--tri-h:118px;--tri-rw:62px;--tri-rh:55px;
+  --ecv:56px;--scv:120px;--hcv:66px;--pill:32px;--thr-h:46px;--tri-w:64px;--tri-h:57px;
   position:relative;flex:1 1 auto;min-height:0;height:100%;display:flex;flex-direction:column;overflow:hidden;
   font-family:var(--dl-zh);color:var(--ink,#111);background:var(--bg,#fff);
   -webkit-user-select:none;user-select:none;-webkit-touch-callout:none;-webkit-tap-highlight-color:transparent;touch-action:manipulation}
@@ -32,55 +33,60 @@
 .dl .hp i.lost{background:var(--red,#c11628);opacity:.35}
 .dl .hp .notch{position:absolute;top:-3px;bottom:-3px;width:2px;margin-left:-1px;background:var(--gold,#b8860b)}
 
-/* ===================== 他的一塊（上；底線淺灰）：名字＋聲望、提示句、蓋著的封套＋他還有幾張 ===================== */
-.dl .dl-e{flex:none;padding:6px 12px 8px;border-bottom:1px solid var(--line,#ddd)}
-.dl .hint{display:flex;align-items:center;margin-top:7px;min-height:26px;border:1px solid var(--ink,#111);background:#fff;min-width:0}
+/* ===================== 他的一塊（上；底線淺灰）：名字＋聲望；提示句與「蓋著的封套＋他還有幾張」同一列 ===================== */
+.dl .dl-e{flex:none;padding:5px 12px 6px;border-bottom:1px solid var(--line,#ddd);display:grid;grid-template-columns:minmax(0,1fr) auto;column-gap:8px}
+.dl .dl-e>.nmrow,.dl .dl-e>.hp{grid-column:1 / -1}
+.dl .hint{grid-column:1;display:flex;align-items:center;margin-top:6px;min-height:28px;border:1px solid var(--ink,#111);background:#fff;min-width:0}
 .dl .hint .lb{align-self:stretch;flex:none;display:grid;place-items:center;background:var(--ink,#111);color:#fff;font-size:11px;font-weight:700;letter-spacing:.12em;padding:0 7px;margin-right:7px;white-space:nowrap}
 .dl .hint .tx{font-size:13px;font-weight:700;letter-spacing:.02em;line-height:16px;padding:3px 6px 3px 0;min-width:0;overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
 .dl .hint.empty .tx{color:#bbb}
 .dl .hint.done{border-color:#ccc}.dl .hint.done .lb{background:#bbb}.dl .hint.done .tx{color:#aaa}
-.dl .rec{display:flex;margin-top:7px;align-items:center;min-width:0}
-.dl .rec .sp{flex:1}
+.dl .rec{grid-column:2;display:flex;margin-top:6px;align-items:center;min-width:0}
+.dl .rec .sp{display:none}
 .dl .sleeve{display:flex;align-items:center;flex:none;min-width:0;transition:opacity .2s}
-.dl .sleeve .sleeve-bk{width:30px;height:30px;margin-right:7px}
-.dl .sleeve .sl{font-size:11px;color:var(--gray,#888);white-space:nowrap}
+.dl .sleeve .sleeve-bk{width:28px;height:28px}
+/* 「蓋著」兩個字留給讀螢幕（畫面上是那張背面朝上的封套；揭曉時牌桌他那格也寫「蓋著」） */
+.dl .sleeve .sl{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 .dl .sleeve.off{opacity:.25}
 /* 封套背面：深色紙＋白色內圈標（跟舞台 holdDraw 的背面同一個樣子） */
 .dl .sleeve-bk{position:relative;display:block;background:#26201a;border:1px solid var(--ink,#111);box-shadow:inset 0 0 0 2px #3a3128}
 .dl .sleeve-bk i{position:absolute;left:50%;top:50%;width:38%;height:38%;transform:translate(-50%,-50%);border-radius:50%;background:#f4efe2;box-shadow:0 0 0 2px #26201a,0 0 0 3px #6b5f50}
 .dl .sleeve-bk i::after{content:'';position:absolute;left:50%;top:50%;width:18%;height:18%;transform:translate(-50%,-50%);border-radius:50%;background:#26201a}
-.dl .pile{margin-left:8px;flex:none;text-align:right}
+.dl .pile{margin-left:7px;flex:none;text-align:right}
 .dl .pile .bars{display:flex;justify-content:flex-end}
-.dl .pile .bars i{display:block;width:4px;height:14px;background:#444}
+.dl .pile .bars i{display:block;width:4px;height:12px;background:#444}
 .dl .pile .bars i+i{margin-left:2px}
 .dl .pile .bars i.x{background:#e4e4e4}
-.dl .pile small{display:block;font-size:10px;color:var(--gray,#888);margin-top:2px;white-space:nowrap}
+.dl .pile small{display:block;font-size:10px;line-height:12px;color:var(--gray,#888);margin-top:2px;white-space:nowrap}
 
-/* ===================== 牌桌（中間）：上一手兩格＋三角＋浮框＋上一手一行 ===================== */
-.dl .dl-t{flex:1 1 158px;min-height:118px;max-height:300px;position:relative;z-index:2}
-.dl .slot{position:absolute;width:var(--scv);height:var(--scv);-webkit-touch-callout:none}
-.dl .slot.e{left:var(--sx);top:calc(50% - 69px)}
-.dl .slot.p{right:var(--sx);top:calc(50% - 49px)}
+/* ===================== 牌桌（中間）：兩張丟出去的專輯是主角（店主 2026-11-08：「相剋圖比例太大 主角是專輯」）=====================
+   兩格並排放大（--scv＝封面邊長，duel.js fit() 照牌桌的高與寬算：390×664 約 128）；中間一欄＝「第 n／6 手」＋小小的相剋圖例；
+   結果框在兩張封面（連同下面那行「他・經典 5」）的下方、整個寬，不蓋封面；收起後「上一手」那行也在同一個位置。
+   --tp＝封面上緣、--tx＝左右留白、--lab＝封面下那行字的高。 */
+.dl .dl-t{--tp:6px;--tx:12px;--lab:19px;flex:1 1 200px;min-height:150px;max-height:350px;position:relative;z-index:2}
+.dl .slot{position:absolute;top:var(--tp);width:var(--scv);height:var(--scv);-webkit-touch-callout:none}
+.dl .slot.e{left:var(--tx)}
+.dl .slot.p{right:var(--tx)}
 .dl .slot .cvw{position:relative;display:block;width:var(--scv);height:var(--scv)}
 .dl .slot .cv{width:var(--scv);height:var(--scv)}
 .dl .slot[data-card]{cursor:pointer}
 .dl .slot.ace .cv{outline:2px solid var(--gold,#b8860b);outline-offset:-1px}
-.dl .slot.empty{height:var(--scv);border:1px dashed #d4d4d4;display:grid;place-items:center}
-.dl .slot.empty .ph{font-size:11px;color:#bbb}
+.dl .slot.empty{height:var(--scv);border:1px dashed #cfcfcf;display:grid;place-items:center}
+.dl .slot.empty .ph{font-size:12px;color:#bbb}
 .dl .slot .sleeve-bk.cv{width:var(--scv);height:var(--scv)}
-.dl .slot .who{position:absolute;top:calc(100% + 4px);white-space:nowrap;font-size:12px;font-weight:700;line-height:15px}
+.dl .slot .who{position:absolute;top:calc(100% + 3px);white-space:nowrap;font-size:13px;font-weight:700;line-height:16px}
 .dl .slot.e .who{left:0}
-.dl .slot.p .who{right:0;text-align:right}   /* 字比封面寬（你・王牌冷門 7）時往左長，不會被螢幕右緣切掉 */
+.dl .slot.p .who{right:0;text-align:right}
 .dl .slot.dim .cv{opacity:.42;-webkit-filter:grayscale(.5);filter:grayscale(.5);transition:opacity .3s,filter .3s}
 .dl .slot.dim .who{color:var(--gray,#888)}
 .dl .slot.dim .who>span{opacity:.65}
-.dl .tri{position:absolute;left:50%;top:calc(50% - 73px);width:var(--tri-w);height:var(--tri-h);transform:translateX(-50%);pointer-events:none;transition:top .2s,width .2s,height .2s}
+/* 中間一欄：第 n／6 手（上）＋相剋圖例（封面中線） */
+.dl .rounds{position:absolute;left:50%;top:calc(var(--tp) + 2px);transform:translateX(-50%);font-size:11px;font-weight:700;line-height:14px;color:#555;letter-spacing:.02em;white-space:nowrap;pointer-events:none;font-family:var(--dl-zh)}
+.dl .tri{position:absolute;left:50%;top:calc(var(--tp) + var(--scv) / 2 - var(--tri-h) / 2 + 7px);width:var(--tri-w);height:var(--tri-h);transform:translateX(-50%);pointer-events:none}
 .dl .tri svg{display:block;width:100%;height:100%;overflow:visible;font-family:var(--dl-zh)}
-.dl .dl-t.res .tri{top:3px;width:var(--tri-rw);height:var(--tri-rh)}   /* 揭曉：三角縮到牌桌頂（亮的那條箭頭還看得到），下面給浮框 */
-.dl .rounds{position:absolute;right:8px;top:4px;font-size:11px;font-weight:700;line-height:14px;color:#555;letter-spacing:.02em;white-space:nowrap;pointer-events:none;font-family:var(--dl-zh)}
-/* 結果浮框（560 ms）：l1 規則句（唬人時「他唬你！…」）、l2 扣多少、l3 關鍵字那句（照實）或規則句（唬人又剋不動）
-   只放在兩張牌中間（左右各留 6px），不蓋到牌、也不蓋「他・經典 5」那行字；字太長就在標點後換行 */
-.dl .callout{--gap:calc(100% - 2 * (var(--sx) + var(--scv)) - 12px);position:absolute;left:50%;top:calc(var(--tri-rh) + 7px);transform:translateX(-50%);transform-origin:50% 20%;background:rgba(255,255,255,.97);border:1px solid var(--ink,#111);box-shadow:0 6px 22px rgba(0,0,0,.2);padding:5px 6px 6px;text-align:center;z-index:4;width:max-content;min-width:min(150px,var(--gap));max-width:var(--gap);pointer-events:none;display:none}
+/* 結果框（560 ms）：l1 規則句（唬人時「他唬你！…」）、l2 扣多少、l3 關鍵字那句（照實）或規則句（唬人又剋不動）
+   在兩張封面下方（整個寬，左右各留 --tx），不蓋封面；字太長就在標點後換行 */
+.dl .callout{position:absolute;left:50%;top:calc(var(--tp) + var(--scv) + var(--lab) + 6px);transform:translateX(-50%);transform-origin:50% 0;background:rgba(255,255,255,.97);border:1px solid var(--ink,#111);box-shadow:0 6px 22px rgba(0,0,0,.2);padding:4px 10px 5px;text-align:center;z-index:4;width:max-content;min-width:min(230px,calc(100% - 2 * var(--tx)));max-width:calc(100% - 2 * var(--tx));pointer-events:none;display:none}
 .dl .callout.on{display:block}
 .dl .callout .l1{font-size:13px;font-weight:700;letter-spacing:.02em;line-height:18px;text-wrap:balance}
 .dl .callout .l1.bl{color:var(--red,#c11628)}
@@ -89,7 +95,7 @@
 .dl .callout .l2 .nt{display:inline-block;font:700 10px/1.2 var(--dl-zh);color:var(--gold,#b8860b);margin-left:8px;vertical-align:4px;letter-spacing:0;white-space:nowrap}
 .dl .callout .l3{font-size:12px;font-weight:700;line-height:16px;color:#333;margin-top:1px;text-wrap:balance}
 .dl .callout .sg{display:inline-block}   /* 一段（到標點為止）不拆開；段跟段之間才換行 */
-.dl .lastline{position:absolute;left:4px;right:4px;bottom:6px;text-align:center;font-size:11px;line-height:15px;color:var(--gray,#888);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;pointer-events:none}
+.dl .lastline{position:absolute;left:var(--tx);right:var(--tx);top:calc(var(--tp) + var(--scv) + var(--lab) + 8px);text-align:center;font-size:11px;line-height:15px;color:var(--gray,#888);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;pointer-events:none}
 .dl .lastline .lb{margin-right:7px}
 .dl .lastline b{color:#555}
 .dl .lastline b>span{margin-left:.3em}
@@ -103,7 +109,7 @@
 .dl .relics .rl::before{content:'';position:absolute;left:-12px;right:-12px;top:-12px;bottom:-12px}
 .dl .relics .rl svg,.dl .relics .rl canvas,.dl .relics .rl img,.dl .relics .rl>span:not(.rl-t){max-width:16px;max-height:16px;display:block}
 .dl .relics .rl .rl-t{font-size:11px;font-weight:700;color:var(--cream-ink,#5a4a10);line-height:1}
-.dl .hand{display:flex;justify-content:space-between;align-items:flex-end;margin-top:10px}
+.dl .hand{display:flex;justify-content:space-between;align-items:flex-end;margin-top:7px}
 .dl .tile{flex:1 1 0;min-width:0;max-width:96px;position:relative}
 .dl .tile+.tile{margin-left:8px}
 .dl .tile.ace{flex:0 0 auto;width:calc(var(--hcv) + 4px);max-width:none}
@@ -130,7 +136,7 @@
 .dl .tile.used .chip:disabled,.dl.busy .chip:disabled{opacity:1}
 .dl .chip.wide{flex:1 1 auto}
 /* 「選好了」＋丟！ */
-.dl .act{display:flex;align-items:center;height:calc(var(--thr-h) + 2px);margin-top:8px;padding-bottom:env(safe-area-inset-bottom,0px);box-sizing:content-box}
+.dl .act{display:flex;align-items:center;height:calc(var(--thr-h) + 2px);margin-top:4px;padding-bottom:env(safe-area-inset-bottom,0px);box-sizing:content-box}
 .dl .act .say{flex:1;min-width:0;font-size:12px;line-height:16px;margin-right:10px;white-space:nowrap;overflow:hidden}
 .dl .act .say small{display:block;font-size:10px;color:var(--gray,#888);overflow:hidden;text-overflow:ellipsis}
 .dl .act .say b{font-size:13px;margin-right:10px}
@@ -162,45 +168,40 @@
 .dl.held .hand,.dl.held .act{pointer-events:none}
 
 /* ===================== 尺寸分級 ===================== */
-/* 高螢幕（390×844 之類）：封面放大，多的高度給牌桌 */
-.dl.roomy{--ecv:64px;--scv:92px;--hcv:74px;--pill:34px;--thr-h:50px;--tri-w:150px;--tri-h:134px;--tri-rw:84px;--tri-rh:75px}
-.dl.roomy .dl-e{padding:10px 12px 12px}
-.dl.roomy .hint{margin-top:10px;min-height:30px}.dl.roomy .hint .tx{font-size:14px;line-height:18px}
-.dl.roomy .rec{margin-top:10px}
-.dl.roomy .sleeve .sleeve-bk{width:36px;height:36px}
-.dl.roomy .slot.e{top:calc(50% - 82px)}.dl.roomy .slot.p{top:calc(50% - 58px)}
-.dl.roomy .tri{top:calc(50% - 82px)}.dl.roomy .dl-t.res .tri{top:8px}.dl.roomy .callout{top:calc(var(--tri-rh) + 16px)}
-.dl.roomy .dl-p{padding-top:10px}.dl.roomy .hand{margin-top:14px}.dl.roomy .act{margin-top:12px;margin-bottom:6px}
+/* 高螢幕（430×932、390×844 之類）：多的高度給牌桌（封面最大 150） */
+.dl.roomy{--ecv:64px;--hcv:74px;--pill:34px;--thr-h:50px;--tri-w:72px;--tri-h:64px}
+.dl.roomy .dl-e{padding:9px 12px 10px}
+.dl.roomy .hint{margin-top:9px;min-height:32px}.dl.roomy .hint .tx{font-size:14px;line-height:18px}
+.dl.roomy .rec{margin-top:9px}
+.dl.roomy .sleeve .sleeve-bk{width:32px;height:32px}
+.dl.roomy .dl-t{--tp:12px;--lab:20px}
+.dl.roomy .callout .l1{font-size:14px;line-height:19px}.dl.roomy .callout .l2{font-size:24px}.dl.roomy .callout .l3{font-size:13px;line-height:17px}
+.dl.roomy .dl-p{padding-top:10px}.dl.roomy .hand{margin-top:12px}.dl.roomy .act{margin-top:10px;margin-bottom:6px}
 /* 360×640 之類 */
-.dl.compact{--ecv:50px;--scv:66px;--hcv:60px;--pill:30px;--thr-h:44px;--tri-w:118px;--tri-h:106px;--tri-rw:58px;--tri-rh:52px}
-.dl.compact .dl-e{padding:5px 12px 6px}
-.dl.compact .hint{margin-top:6px;min-height:25px}
-.dl.compact .rec{margin-top:6px}
-.dl.compact .slot.e{top:calc(50% - 62px)}.dl.compact .slot.p{top:calc(50% - 44px)}
-.dl.compact .tri{top:calc(50% - 64px)}.dl.compact .dl-t.res .tri{top:3px}
+.dl.compact{--ecv:50px;--hcv:60px;--pill:30px;--thr-h:44px;--tri-w:60px;--tri-h:54px}
+.dl.compact .dl-e{padding:4px 12px 5px}
+.dl.compact .hint{margin-top:5px;min-height:27px}
+.dl.compact .rec{margin-top:5px}
 .dl.compact .callout .l1{font-size:12px;line-height:17px}
 .dl.compact .tile+.tile{margin-left:6px}
-.dl.compact .dl-p{padding-top:5px}.dl.compact .hand{margin-top:8px}.dl.compact .act{margin-top:4px}
+.dl.compact .dl-p{padding-top:5px}.dl.compact .hand{margin-top:6px}.dl.compact .act{margin-top:3px}
 /* 矮螢幕（≤600 高，375×548）：SPEC-v3 §4 */
-.dl.short{--ecv:44px;--scv:62px;--hcv:54px;--pill:30px;--thr-h:44px;--tri-w:100px;--tri-h:90px;--tri-rw:46px;--tri-rh:41px}
-.dl.short .dl-e{padding:4px 12px 5px}
+.dl.short{--ecv:44px;--hcv:54px;--pill:30px;--thr-h:44px;--tri-w:52px;--tri-h:46px}
+.dl.short .dl-e{padding:3px 12px 4px}
 .dl.short .nmrow{height:18px}
-.dl.short .hint{margin-top:5px;min-height:24px}
+.dl.short .hint{margin-top:4px;min-height:25px}
 .dl.short .hint .tx{font-size:12px;line-height:15px;padding:2px 6px 2px 0}
-.dl.short .rec{margin-top:5px}
+.dl.short .rec{margin-top:4px}
 .dl.short .sleeve .sleeve-bk{width:24px;height:24px}
-.dl.short .pile .bars i{height:10px}
-.dl.short .dl-t{min-height:112px}
-.dl.short .slot.e{top:calc(50% - 54px)}.dl.short .slot.p{top:calc(50% - 40px)}
-.dl.short .slot .who{top:calc(100% + 2px)}
-.dl.short .tri{top:calc(50% - 54px)}.dl.short .dl-t.res .tri{top:2px}
+.dl.short .pile .bars i{height:9px}
+.dl.short .dl-t{--tp:4px;--lab:17px;min-height:140px}
+.dl.short .slot .who{top:calc(100% + 2px);font-size:12px;line-height:15px}
 .dl.short .tile+.tile{margin-left:6px}
-.dl.short .callout{padding:2px 6px 3px;top:calc(var(--tri-rh) + 4px)}
+.dl.short .callout{padding:2px 8px 3px}
 .dl.short .callout .l1{font-size:12px;line-height:16px}.dl.short .callout .l2{font-size:19px}.dl.short .callout .l3{font-size:11px;line-height:14px}
-.dl.short .rounds{top:2px}
-.dl.short .lastline{bottom:3px}
+.dl.short .rounds{top:var(--tp)}
 .dl.short .dl-p{padding-top:4px}
-.dl.short .hand{margin-top:6px}
+.dl.short .hand{margin-top:5px}
 .dl.short .act{margin-top:2px}
 .dl.short .act .say small{line-height:14px}
 /* 還是放不下：再收一點留白 */
@@ -217,5 +218,5 @@
 }
 @media (prefers-reduced-motion:reduce){
   .dl .hp i{transition-duration:.15s}
-  .dl .tile .cvw,.dl .tri{transition:none}
+  .dl .tile .cvw{transition:none}
 }

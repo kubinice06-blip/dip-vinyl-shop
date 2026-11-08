@@ -424,8 +424,10 @@
       el.classList.toggle('ace', !!d.ace);
       if (d.card) { el.dataset.card = d.card.id; el.setAttribute('role', 'button'); el.tabIndex = 0; el.setAttribute('aria-label', (side === 'e' ? '他丟的：' : '你丟的：') + title(d.card)); }
     }
+    // 相剋圖例（店主 2026-11-08：相剋圖縮小、專輯當主角）：牌桌中間一個約 64 px 的小三角，圓大一點、箭頭粗一點、不寫「剋」字（箭頭就是剋）；
+    // 選了一顆星：你剋得到的那條亮綠、剋你的那條亮紅；揭曉：剋中的那條亮起
     function triSVG() {
-      const P = { c: [66, 17], h: [112, 97], o: [20, 97] }, R = 15;
+      const P = { c: [66, 23], h: [107, 94], o: [25, 94] }, R = 21;
       const col = { c: 'var(--c,#1f5fae)', o: 'var(--o,#6a3fa0)', h: 'var(--h,#c11628)' };
       const STROKE = { k: '#111', g: '#2e7d52', r: '#c11628', f: '#d6d6d6' };
       let ring = null;
@@ -441,20 +443,18 @@
         EDGES.forEach(([a, b]) => { tone[a + b] = a === x ? 'g' : b === x ? 'r' : 'f'; });
       }
       let s = `<svg viewBox="0 0 132 118" aria-label="冷剋經、經剋硬、硬剋冷" role="img"><defs>`;
-      Object.keys(STROKE).forEach(k => { s += `<marker id="dlm${k}" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="${STROKE[k]}"/></marker>`; });
+      Object.keys(STROKE).forEach(k => { s += `<marker id="dlm${k}" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="3" markerHeight="3" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="${STROKE[k]}"/></marker>`; });
       s += '</defs>';
       EDGES.forEach(([a, b]) => {
         const p0 = P[a], p1 = P[b], dx = p1[0] - p0[0], dy = p1[1] - p0[1], L = Math.hypot(dx, dy), ux = dx / L, uy = dy / L;
-        const x1 = p0[0] + ux * (R + 3), y1 = p0[1] + uy * (R + 3), x2 = p1[0] - ux * (R + 4), y2 = p1[1] - uy * (R + 4);
-        const k = tone[a + b], w = k === 'f' ? 1.6 : (k === 'k' ? 2.2 : 3.2);
-        const mx = (p0[0] + p1[0]) / 2 - uy * 9, my = (p0[1] + p1[1]) / 2 + ux * 9 + 4;
-        s += `<g data-tut="tri-${a}${b}" class="eg ${k}"><line x1="${x1.toFixed(1)}" y1="${y1.toFixed(1)}" x2="${x2.toFixed(1)}" y2="${y2.toFixed(1)}" stroke="${STROKE[k]}" stroke-width="${w}" marker-end="url(#dlm${k})"/>`
-          + `<text x="${mx.toFixed(1)}" y="${my.toFixed(1)}" text-anchor="middle" font-size="11" font-weight="700" fill="${k === 'f' ? '#c4c4c4' : STROKE[k]}">剋</text></g>`;
+        const x1 = p0[0] + ux * (R + 3), y1 = p0[1] + uy * (R + 3), x2 = p1[0] - ux * (R + 7), y2 = p1[1] - uy * (R + 7);
+        const k = tone[a + b], w = k === 'f' ? 3 : (k === 'k' ? 4 : 6);
+        s += `<g data-tut="tri-${a}${b}" class="eg ${k}"><line x1="${x1.toFixed(1)}" y1="${y1.toFixed(1)}" x2="${x2.toFixed(1)}" y2="${y2.toFixed(1)}" stroke="${STROKE[k]}" stroke-width="${w}" marker-end="url(#dlm${k})"/></g>`;
       });
       ATTRS.forEach(a => {
         const p = P[a];
-        s += `<circle cx="${p[0]}" cy="${p[1]}" r="${R}" fill="${col[a]}"${ring === a ? ' stroke="#111" stroke-width="3"' : ''}/>`;
-        s += `<text x="${p[0]}" y="${p[1] + 5.5}" text-anchor="middle" font-size="16" font-weight="900" fill="#fff">${ZH1[a]}</text>`;
+        s += `<circle cx="${p[0]}" cy="${p[1]}" r="${R}" fill="${col[a]}"${ring === a ? ' stroke="#111" stroke-width="5"' : ''}/>`;
+        s += `<text x="${p[0]}" y="${p[1] + 8.5}" text-anchor="middle" font-size="24" font-weight="900" fill="#fff">${ZH1[a]}</text>`;
       });
       return s + '</svg>';
     }
@@ -541,6 +541,19 @@
         else if (H < 500) root.classList.add('compact');
       }
       if (root.scrollHeight > root.clientHeight + 1) root.classList.add('tighter');
+      sizeTable();
+    }
+    // 牌桌兩張封面的邊長 --scv（店主 2026-11-08：專輯是主角）：牌桌的高扣掉封面上緣、封面下那行字、結果框的位子；
+    // 寬扣掉中間那欄（第 n／6 手＋相剋圖例）。[上緣 --tp, 字高 --lab, 結果框高, 最小, 最大]（上緣、字高跟 duel.css 的 .dl-t 一致）
+    const TABLE_FIT = { short: [4, 17, 62, 72, 120], compact: [6, 19, 72, 84, 140], base: [6, 19, 74, 84, 140], roomy: [12, 20, 80, 96, 150] };
+    function sizeTable() {
+      const k = ['short', 'compact', 'roomy'].find(c => root.classList.contains(c)) || 'base';
+      const [tp, lab, res, mn, mx] = TABLE_FIT[k];
+      const tH = els.table.clientHeight, tW = els.table.clientWidth;
+      if (!tH || !tW) return;
+      const triW = parseFloat(getComputedStyle(root).getPropertyValue('--tri-w')) || 64;
+      const byH = tH - tp - lab - 6 - res, byW = Math.floor((tW - 2 * 12 - triW - 2 * 10) / 2);
+      root.style.setProperty('--scv', Math.round(Math.max(mn, Math.min(mx, byH, byW))) + 'px');
     }
     function scheduleFit() { if (!S.fitRaf) { fit(); S.fitRaf = requestAnimationFrame(() => { S.fitRaf = 0; fit(); }); } }
     try { S.ro = new ResizeObserver(() => scheduleFit()); S.ro.observe(root); } catch (_) {}
