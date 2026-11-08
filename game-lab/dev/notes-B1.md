@@ -15,6 +15,11 @@
   - [x] `dev/duel-harness.html` v4：版面＝index 的對決畫面（頂欄＋舞台 strip＋盤面）；`window.__lab.{force,stage,duel,rawDuel,autoplay,el}`；`?e=bluff,honest,c,o,h,ace,-` 指定他每手；`?tutorial=1&ace=`；⚙ 測試鈕
   - 樣式只做到能用（M1）：浮框置中、會蓋到牌桌兩張的「他・硬蕊 4」字；他還有 N 張到下一手才減——階段 2 修
 - [ ] 階段 2：交件 1（§2.5.1 全部、harness 指定他每手、`tests/e2e-duel.mjs` 四尺寸、截圖）
+  - [ ] 浮框只放在兩張牌中間（不蓋「他・經典 5」）、揭曉時三角縮到牌桌頂；星鈕本體 ≥28×44（四尺寸）
+  - [ ] 「他還有 N 張」丟出當下就減一；六手比聲望的字集中在一個函式（`roundsVars`）
+  - [ ] harness：`__h.setNext({i,attr})`、`__h.sfx`／`__h.music` 記錄
+  - [ ] `tests/e2e-duel.mjs`（§5.5 全部條目，四尺寸）
+  - [ ] 截圖 段 3（四尺寸 × 出牌前／命中／剋不動／唬人 560 ms／最後一手 KO）
 
 ## 實作裁定（契約沒寫死、B1 自己定的，可逆）
 
