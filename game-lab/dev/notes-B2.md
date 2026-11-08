@@ -6,8 +6,16 @@
 ## 階段
 - **第 1 階段（完成）**：beat runner（§2.5.3）、v4 劇本（§2.5.4＋D §2）、序章面板（§2.5.7）、外殼（§2.5.2）、刪 v3 墊片與試做版新增、
   序章藏 r1、走位（D §3）、lint-copy 26 句原句、check-content、`tests/e2e-prologue.mjs`（§5.4）全綠、段 4 截圖。
-- **第 2 階段（還沒開始）**：教學六手（§2.5.5：`C.tutorial.steps／learned／ui`、`tutorial.js`、replayDuel／fakeRun、`test/tutorial.test.mjs`）、
+- **第 2 階段（進行中）**：教學六手（§2.5.5：`C.tutorial.steps／learned／ui`、`tutorial.js`、replayDuel／fakeRun、`test/tutorial.test.mjs`）、
   `tests/e2e.spec.mjs` 改 v4（import e2e-lib）、規則卡四尺寸不捲動（實測 390×664 規則卡 .pane 高 805 px > 可視高 664：三角圖＋六行＋頁尾太高，要改緊湊版；第 6 行 54 字已會自動換行）。
+
+## 進度（第 2 階段）
+- [x] 合併 `v4/B1-M1`（92a352007）
+- [ ] 教學六手：content `C.tutorial.steps／learned／ui`、tutorial.js（allow 擴充、pick 佔位、replayDuel 帶特價箱）、`test/tutorial.test.mjs`
+- [ ] ui.js：重看教學 fakeRun（禮物＋特價箱 c／o／h 或 `save.lastBargain`）、規則卡四尺寸不捲動
+- [ ] check-content 教學步驟檢查、lint-copy 教學字
+- [ ] `tests/e2e.spec.mjs` v4（import e2e-lib；#4 #9 #17 #19 #20 一起）四尺寸綠
+- [ ] e2e-prologue 重跑、段 4 截圖重拍
 
 ## 進度（第 1 階段）
 - [x] notes 開工（4d5cd0efc）
