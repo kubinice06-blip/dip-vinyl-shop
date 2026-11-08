@@ -7,8 +7,8 @@
  * v4：三相剋＋門檻 N=2（被剋方高 2 星以上剋不動，改比星）、對手暗選（提示＋誠實度，會唬人）、王牌 7 星不會被剋、六手上限；
  *     拿掉脾氣、急了、翻面、B 面。經濟：贏了拿錢、箱子買唱片、櫃檯買配件、特價箱；錢與買的唱片打烊歸零，配件照 v3 帶到下一晚。
  *
- * 第一波範圍（A1）：§2.2.2–§2.2.10 的資料。劇本（C.script）、回嘴（C.retorts）、教學步驟（C.tutorial.steps／learned／ui）
- *   與下面標「v3 外殼墊片」的鍵，留給第二波 B2 改／刪（讓 v3 的 ui.js 還能開到標題與今晚來客）。
+ * 第一波（A1）：§2.2.2–§2.2.10 的資料。第二波（B2）：v4 劇本（C.script、C.tonightLines、C.blocking，§2.5.4）、
+ *   刪掉 v3 外殼墊片（junk、habits、retorts、v3 劇本、bins[*].ids）；教學步驟（C.tutorial.steps／learned／ui）第二波第 2 階段改。
  *
  * 文案慣例（店主規則）：
  *   - script 的 Beat.text：說話者的台詞包在「」裡（同現行 RPG_BEATS）；旁白第二人稱「你」、不加「」。
@@ -57,9 +57,6 @@
       'metallica-reload', 'weezer-van-weezer', 'ramones-halfway-to-sanity']
   };
   C.bargainTag = '新';
-  // v3 外殼墊片，第二波 B2 刪（ui.js:528,566 的 junk 標記改看 C.bargain.pool）
-  C.junk = C.bargain.pool.slice(0, 3);
-  C.junkLabel = '門口一百塊三張';
 
   // ===================================================================
   // 誠實度（D §5；名牌上的那個詞，tag 店主）與出招難度（原版 aiPlan 的係數，roguelike.html:3650-3660，拿掉相生與氣勢）
@@ -78,12 +75,6 @@
   };
   // 原版 enemyForDepth：d<3 easy、d<5 normal、其餘 hard（roguelike.html:3480），index＝run.idx（今晚第幾位客人，0 起）；序章男子固定 easy
   C.plannerByDepth = ['easy', 'easy', 'normal', 'normal', 'hard'];
-
-  // ===================================================================
-  // v3 外殼墊片（脾氣系統已刪），第二波 B2 刪：ui.js 今晚來客的名牌還讀得到、不會壞
-  // ===================================================================
-  C.habits = { honest: { zh: '老實', line: '' } };
-  C.habitLabels = { base: '脾氣', switched: '急了' };
 
   // ===================================================================
   // 發燒配件（9 件；全部被動、自動生效、最多帶 3 件；照 v3 帶到下一晚）
@@ -130,7 +121,6 @@
     Object.keys(B).forEach(function (k) {
       var b = B[k], o = {};
       for (var x in b) o[x] = b[x];
-      o.ids = (b.pool || []).slice();     // v3 外殼墊片（ui.js binOf 讀 ids），第二波 B2 刪
       C.bins[k] = o;
     });
   })();
@@ -235,100 +225,137 @@
   C.voices = { owner: { freq: 196, wave: 'square' }, narrator: null };   // 打字機嗶聲
 
   // ===================================================================
-  // v3 外殼墊片：下面的 C.script（劇本）照 v3 原樣保留，讓 v3 的 ui.js 還能跑；第二波 B2 整份改寫成 SPEC-v4 §2.5.4 的 v4 劇本。
+  // 今晚那張（三張王牌之一，日期種子決定）的兩句音樂描述（D §2 猜歌第 2 步；店主草稿，逐字收在 tools/owner-lines-v4.json）
+  //   序章 O5a／O5b 依今晚那張的 tier 取（Beat.text 是 {hall, pearl, heresy} 物件）；沒開聲音也照樣念，玩家聽描述也猜得出來
   // ===================================================================
-  // 劇本（§2.3、§2.7）。Beat = { who, text, stage?, ui?, music?, prompt?, if?, stamp?, quietText?, tag }
-  //   who：''＝旁白、'老闆'、'男子'、'藏家'、'player'
-  //   stage：p／o／f＝站位鍵（RPG_POS）；door：'swing'|'open'|'shut'；notes／oBusy／anger：bool；oPath：走位陣列；fSpr：門口那位的小人鍵；
-  //          give：'ace'|'gifts'|'junk'＝封面飛進王牌格／手牌列的演出（不開面板）
-  //   ui：這句是「選擇句」，補完後亮 ▼，玩家點一下才展開面板（§2.2）：
-  //       'guess' 猜歌、'acePick' 挑王牌、'retort' 回嘴（選項＝C.retorts，選完把 reply 當成男子的一句播出）、
-  //       'duel' 進對決、'stake' 亮出那張盤（序章：挑一張收進包包；打烊：藏家送的王牌進唱片櫃）、'relic' 發燒配件三選一、
-  //       'map' 進「今晚來客」（v3 沒有分岔地圖，鍵名沿用）
-  //   music：'tonight' 開始播今晚那張（三張王牌之一）、'stake' 播那張盤、'stop' 淡出
-  //   prompt：面板上方的提示字（同現行 RPG_BEATS 的 prompt）
-  //   if：條件句，只有符合時才播：'guessRight' 猜中、'guessWrong' 猜錯、'firstClear' 第一次通關；沒有 if 的一律播
-  //   stamp：這句播出時一起蓋的章（例：好耳朵）
-  //   quietText：靜音（或試聽沒出聲）時改用的文字
+  C.tonightLines = {
+    hall: ['清脆的吉他分解和弦，底下墊著一層像機器運轉的電子聲。', '一個又高又細的男聲飄在上面，聽起來疲憊又不安。'],
+    pearl: ['一支薩克斯風自顧自地吹，旋律說斷就斷。', '鼓和貝斯不照拍子走，像在跟它鬥嘴。'],
+    heresy: ['鼓一下一下砸下來，像有人在敲鐵門。', '低音一直磨同一個音，一個男聲在吼，聽不出在唱什麼。']
+  };
+  C.tonightLinesTag = '店主';
+
   // ===================================================================
-  function P_START() { return { p: 'door', o: 'counter', f: 'out', door: 'swing' }; }
-  // NP-01：點封套開的是唱片資訊，換選要點封套下面那行字（ui.js 若改成點封套就換選，這句照樣成立）
-  var acePickBeat = { who: '', text: '（點封套下面的字換著聽，挑一張帶走。）', ui: 'acePick', tag: '新' };
-  var prologueHead = [
-    { who: '', text: '下著雨。你推開巷子裡那間唱片行的門。門上的鈴鐺，響了一聲。', stage: P_START(), tag: '原句' },
-    { who: '', text: '這時候，店裡的音響傳出一段旋律。', stage: { notes: true }, music: 'tonight', tag: '原句' },
-    { who: '', text: '……很迷人。你停下腳步，不自覺跟著點起頭來。', stage: { p: 'browse' }, tag: '原句' },
-    { who: '', text: '你抬起頭。老闆正把一張唱片放上唱盤。櫃檯上還攤著兩張，封套邊緣磨損嚴重，顯然塵封已久。', stage: { oBusy: true }, tag: '拍板' }
-  ];
-  var P5 = '「這三張，是我這裡最貴的三張。」他沒抬頭。「剛才那段，你覺得是哪一張？」';
-  var prologueTail = [
-    { who: '老闆', text: '「這張是我的私人收藏。今天讓給你。」', stage: { give: 'ace' }, tag: '原句' },
-    { who: '老闆', text: '「這四張也很適合你。跟你有緣，收下吧。」', stage: { oPath: ['aisle', 'dig1', 'dig2', 'dig3'], give: 'gifts' }, tag: '原句' },
-    { who: '老闆', text: '「門口那箱一百塊三張，順手帶著。」', stage: { oPath: ['frontleft', 'aisle', 'counter'], give: 'junk' }, tag: '新' },
-    { who: '', text: '這時，門開了。', stage: { f: 'door', door: 'open' }, tag: '原句' },
-    // v2 像素店：他走到 duelE、你站 duelP（對峙的位置就是對決的位置，進對決時只推鏡頭；U 04:05）
-    { who: '', text: '一名男子走進來。他的視線，落在你手上的那幾張專輯上。', stage: { f: 'duelE', p: 'duelP', door: 'shut' }, tag: '原句' },
-    { who: '男子', text: '「……這品味，也敢出來丟臉？」', tag: '原句' },
-    { who: '', text: '你的憤怒表露無遺。', stage: { anger: true }, ui: 'retort', tag: '原句' },
-    { who: '', text: '老闆不發一語，緩步走出櫃檯，站在兩人之間。', stage: { oPath: ['aisle', 'between'], anger: false }, tag: '拍板' },
-    // v2（SPEC-v2 §6.4）：補完後亮 ▼，再點一下出兩顆鈕：prompts[0]＝帶教學、prompts[1]＝不帶教學（男子照舊 16／12、預覽開著）
-    { who: '老闆', text: '「既然雙方都不服氣，不如來一場品味對決如何？」', ui: 'duel', prompt: '▶ 品味對決', prompts: ['▶ 品味對決', '▶ 直接開打（我會玩）'], tag: '原句' }
-  ];
+  // 劇本（SPEC-v4 §2.5.3、§2.5.4；D §2、§3）。ui.js 的逐句執行器（beat runner）照這份演，不寫死人名與站位。
+  //   Beat = { id, who, text, tag, if?, set?, pre?, act?, music?, ui?, prompt?, prompts?, button? }
+  //     id：'O1'…'O21'、'E1'…'E11'、'B1'…（測試與時間軸用）
+  //     who：''＝旁白、'老闆'、'男子'、'藏家'、'？？？'、'player'
+  //     text：字串，或 { hall, pearl, heresy }＝依今晚那張（C.tonightLines）
+  //     tag：'原句'（roguelike.html RPG_BEATS／TUT_EPILOGUE_BEATS 一字不差）、'店主'（owner-lines-v4.json 逐字）、'新'
+  //     if：'guessRight' 猜中、'guessWrong' 猜錯、'firstClear' 第一次通關；沒有 if 的一律播
+  //     set：開口前立即套用 { put:{id:spot}, door:'open'|'swing'|'close', notes:bool, sprite:{id:spr}, hide:{id:bool}, sil:{id:bool},
+  //          pose:{id:name|null}, emote:{id:kind|null}, stamp:'主字：副字' }
+  //     pre：開口前依序做完的步驟（對話框空著、不打字）；act：跟打字同時開始、依序做的步驟。▼ 等字打完而且 act 做完才亮
+  //     music：'tonight' 開始播今晚那張、'stake' 播那張盤、{ stop: fadeMs } 淡出（在 set 那一刻開始）
+  //     ui：選擇句（▼ 以選擇樣式亮，點一下才開面板）：'guess' 猜歌、'acePick' 挑王牌、'recs' 老闆的四張、'bargain' 特價區挑三張、
+  //         'duel' 兩顆接受對決、'stake' 地上那張盤、'relic' 發燒配件三選一、'map' 進今晚來客
+  //     prompt：面板上方那行字；prompts：選單的鈕（duel）；button：面板的確認鈕（recs）
+  //   Step = { do:'walk', id, to:[spot|[x,y]…], speed? } | { do:'pose', id, name, ms? } | { do:'emote', id, kind, ms? } | { do:'wait', ms }
+  //        | { do:'door', mode } | { do:'face', id, to } | { do:'hold', id, what } | { do:'hide', id, on } | { do:'give', from, gap }
+  //        | { do:'floor', at } | { do:'sfx', name } | { do:'par', steps } | { do:'seq', steps }
+  //   人物：p＝你、o＝老闆、f＝門口進來的那位、r1＝熟客（序章與收尾藏起來）。
+  //   '@' 開頭的值由執行器代入：'@man' 序章男子的小人、'@guest' 今晚第一位客人的小人、'@gift' 老闆送的第一張（依你挑的王牌）
+  //   走路：序章與收尾預設速度 C.blocking.speed（54＝1.5 倍）；O20「緩步」36。一律用走的（不瞬移）；翻箱（dig）一定在走到之後
+  // ===================================================================
+  function walk(id, to, speed) { var s = { do: 'walk', id: id, to: [].concat(to) }; if (speed) s.speed = speed; return s; }
+  function pose(id, name, ms) { var s = { do: 'pose', id: id, name: name }; if (ms) s.ms = ms; return s; }
+  function face(id, to) { return { do: 'face', id: id, to: to }; }
+  function wait(ms) { return { do: 'wait', ms: ms }; }
+  function door(mode) { return { do: 'door', mode: mode }; }
+  function hold(id, what) { return { do: 'hold', id: id, what: what }; }
+  function hide(id, on) { return { do: 'hide', id: id, on: on }; }
+  function sfx(name) { return { do: 'sfx', name: name }; }
+  function par() { return { do: 'par', steps: [].slice.call(arguments) }; }
+  function seq() { return { do: 'seq', steps: [].slice.call(arguments) }; }
+  function tonight(k) { return { hall: C.tonightLines.hall[k], pearl: C.tonightLines.pearl[k], heresy: C.tonightLines.heresy[k] }; }
+
+  C.blocking = {
+    speed: 54,
+    // O21 選完「接受對決」（不加台詞、對話框清空）：老闆帶路走到唱盤後面，兩人走到唱盤兩側；三人站定才播遇敵特效（D §3）
+    toDuel: [par(walk('o', 'ref'), seq(wait(400), par(walk('f', 'duelE'), walk('p', 'duelP'))))],
+    // 再來一夜：挑完王牌，走到門邊的特價箱挑三張（§2.5.2）
+    toSale: [walk('p', 'sale')]
+  };
+
   C.script = {
-    // 第一次玩（有聲音）：P1–P16，猜歌 → 挑王牌 → 回嘴 → 對決
-    prologue: prologueHead.concat([
-      { who: '老闆', text: P5, ui: 'guess', prompt: '剛才那段，是哪一張？', tag: '原句' },
-      { who: '老闆', text: '「……你眼光真不錯。」老闆終於抬起頭來，看著你。', if: 'guessRight', stage: { oBusy: false },
-        stamp: '好耳朵', tag: '原句' },
-      { who: '老闆', text: '「不是這張。不過，你挑的這張也不壞。」', if: 'guessWrong', stage: { oBusy: false }, tag: '新' },
-      acePickBeat
-    ], prologueTail),
-    // 沒開聲音（安靜地推門、音訊被擋、2.5 秒內試聽沒出聲）：猜歌整段跳過，P5 直接進挑王牌，不給好耳朵
-    quietPrologue: prologueHead.map(function (b) { return b.music ? { who: b.who, text: b.text, stage: b.stage, tag: b.tag } : b; }).concat([
-      { who: '老闆', text: P5, ui: 'acePick', prompt: '（挑一張帶走。）', stage: { oBusy: false }, tag: '原句' }
-    ], prologueTail),
-    // 序章收尾（贏了男子）：他掉出 Fishmans（finishFight 的 offer.cards）→ 發燒配件三選一（offer.relics＝rewards.prologueRelics）
+    // 序章（O1–O21）：原版 RPG_BEATS 為底（D §2）。猜歌七步、四張、特價區三張、八張、兩顆接受對決
+    prologue: [
+      { id: 'O1', who: '', text: '下著雨。你推開巷子裡那間唱片行的門。門上的鈴鐺，響了一聲。', tag: '原句',
+        set: { put: { p: 'door', o: 'counter' }, hide: { f: true, r1: true }, door: 'swing', pose: { o: 'busy' } } },
+      { id: 'O2', who: '', text: '櫃檯後面的老闆抬頭看了你一眼，又低下頭，繼續整理手上的唱片。', tag: '原句',
+        act: [pose('o', null), wait(600), pose('o', 'busy')] },
+      { id: 'O3', who: '', text: '你自己逛自己的。一排排的黑膠，大部分連名字都沒看過。', tag: '原句', act: [walk('p', 'browse')] },
+      { id: 'O4', who: '', text: '這時候，店裡的音響傳出一段旋律。', tag: '原句', set: { notes: true }, music: 'tonight' },
+      { id: 'O5a', who: '', text: tonight(0), tag: '店主' },
+      { id: 'O5b', who: '', text: tonight(1), tag: '店主' },
+      { id: 'O6', who: '', text: '你抬起頭。老闆正把一張唱片放上唱盤。櫃檯上還攤著兩張，封套邊緣磨損嚴重，顯然塵封已久。', tag: '原句',
+        act: [face('p', 'o')] },
+      { id: 'O7', who: '老闆', text: '「這三張，是我這裡最貴的三張。」他沒抬頭。「你覺得，現在播的是哪張？」', tag: '店主',
+        ui: 'guess', prompt: '你覺得，現在播的是哪張？' },
+      { id: 'O8r', who: '老闆', text: '「……你眼光真不錯。」老闆終於抬起頭來，看著你。', tag: '原句', if: 'guessRight', set: { pose: { o: null } } },
+      { id: 'O8w', who: '老闆', text: '「可惜啊。」老闆終於抬起頭來，看著你。', tag: '店主', if: 'guessWrong', set: { pose: { o: null } } },
+      { id: 'O9', who: '老闆', text: '「跟你很有緣，挑一張送你。」', tag: '店主', ui: 'acePick', prompt: '（挑一張。）' },
+      // 音樂播到這句說完（D：私人收藏那句「之後」才停）
+      { id: 'O10', who: '老闆', text: '「這張是我的私人收藏。今天讓給你。」', tag: '原句' },
+      // 老闆走到長桌（dig1）翻、再到 dig2 翻，拿著唱片；O14 走回櫃檯看過才入袋（包包條在那之前一律空）
+      { id: 'O11', who: '', text: '老闆不發一語，走出櫃檯，在那張長桌上的木箱裡翻翻找找。', tag: '原句', set: { notes: false }, music: { stop: 1500 },
+        act: [walk('o', 'dig1'), pose('o', 'dig', 1000), walk('o', 'dig2'), pose('o', 'dig', 1000), hold('o', { sleeve: '@gift' })] },
+      { id: 'O12', who: '老闆', text: '「這四張也很適合你。收下吧。」', tag: '店主', pre: [face('o', 'p')],
+        ui: 'recs', prompt: '（老闆把四張盤遞給你。）', button: '收下這四張' },
+      { id: 'O13', who: '老闆', text: '「特價區那邊，隨便挑三張。」', tag: '店主', act: [walk('p', 'sale')], ui: 'bargain', prompt: '（挑三張。）' },
+      { id: 'O14', who: '', text: '你把八張唱片放到櫃檯上。老闆一張一張看過，替你收進紙袋。', tag: '店主',
+        pre: [par(walk('p', 'pay'), seq(walk('o', 'counter'), hold('o', null)))],
+        act: [pose('o', 'busy'), { do: 'give', from: 'counter', gap: 250 }, pose('o', null)] },
+      { id: 'O15', who: '', text: '你抱著紙袋，心滿意足，往門口走去。', tag: '原句', act: [walk('p', 'leaving')] },
+      { id: 'O16', who: '', text: '這時，門開了。', tag: '原句', set: { sprite: { f: '@man' }, put: { f: 'door' }, hide: { f: false }, sil: { f: false }, door: 'open' } },
+      // 嗆聲在後走道（門邊）：誰都還不去唱盤
+      { id: 'O17', who: '', text: '一名男子走進來。他的視線，落在你手上的那幾張專輯上。', tag: '原句',
+        act: [walk('f', 'atdoor'), door('close'), face('f', 'p'), face('p', 'f')] },
+      { id: 'O18', who: '男子', text: '「……這品味，也敢出來丟臉？」', tag: '原句' },
+      { id: 'O19', who: '', text: '你的憤怒表露無遺。', tag: '原句', set: { emote: { p: 'anger' } }, act: [sfx('faceChange')] },
+      { id: 'O20', who: '', text: '老闆不發一語，緩步走出櫃檯，站在兩人之間。', tag: '原句', set: { emote: { p: null } }, act: [walk('o', 'mid', 36)] },
+      // 兩顆都是接受：第 0 顆＝老闆帶的教學那場、第 1 顆＝直接打；沒有「轉身離開」。選完照 C.blocking.toDuel 走到唱盤
+      { id: 'O21', who: '老闆', text: '「既然雙方都不服氣，不如來一場品味對決如何？」', tag: '原句', ui: 'duel',
+        prompts: ['▶ 接受對決（看向老闆）', '▶ 接受對決（手伸進袋子，準備出招）'] }
+    ],
+    // 序章收尾（贏了男子；人物起點 p duelP、f duelE、o ref）：原版 TUT_EPILOGUE_BEATS 十一句
+    //   E4 他真的走出門（走到門口門才晃），地上留一張盤（男子的 drop，Fishmans）→ 撿起面板（沒有旁白、沒有敘述標題）
     epilogueWin: [
-      { who: '男子', text: '「……哼。」他把自己的唱片塞回袋子裡，看都不看你一眼。', stage: { p: 'duelP', o: 'between', f: 'duelE', fSpr: 'e0', anger: false, notes: false }, tag: '原句' },
-      { who: '男子', text: '「搵休督欸丟！」', tag: '原句' },
-      { who: '', text: '他的袋子裡掉出一張盤。', stage: { f: 'out', door: 'swing' }, ui: 'stake', music: 'stake', tag: '新' },
-      { who: '老闆', text: '「……他每個禮拜都來聽這張。」', stage: { o: 'between' }, tag: '新' },
-      { who: '老闆', text: '「我看你對音樂脈絡，很有天份。」', tag: '原句' },
-      // 店主 09-08：箱子放在折疊長桌上、桌下放黑籃。老闆走到長桌（dig1）再拖出木箱，這句原文才對得上畫面（O3）
-      { who: '老闆', text: '「我這邊有一些被我淘汰的設備，你挑一個，帶回去吧。」', stage: { oPath: ['dig1'] }, ui: 'relic', prompt: '（老闆從長桌底下拖出一個木箱。）', tag: '原句' }
+      { id: 'E1', who: '', text: '對決結束。店裡安靜了幾秒。', tag: '原句', set: { hide: { r1: true } } },
+      { id: 'E2', who: '男子', text: '「……哼。」他把自己的唱片塞回袋子裡，看都不看你一眼。', tag: '原句', act: [face('f', 'p')] },
+      { id: 'E3', who: '男子', text: '「搵休督欸丟！」', tag: '原句' },
+      { id: 'E4', who: '', text: '門上的鈴鐺又響了一聲。他走了。', tag: '原句',
+        act: [{ do: 'floor', at: 'duelE' }, walk('f', 'door'), door('swing'), wait(200), walk('f', 'out'), hide('f', true)], ui: 'stake' },
+      { id: 'E5', who: '老闆', text: '「年輕人。」老闆看著你，慢慢點了點頭。', tag: '原句', pre: [walk('o', 'visit'), face('o', 'p')] },
+      { id: 'E6', who: '老闆', text: '「我看你對音樂脈絡，很有天份。」', tag: '原句' },
+      { id: 'E7', who: '老闆', text: '「我這邊有一些被我淘汰的設備，你挑一個，帶回去吧。」', tag: '原句',
+        act: [walk('o', 'dig1'), pose('o', 'dig', 1000)], ui: 'relic', prompt: '（老闆從長桌底下拖出一個木箱。）' },
+      { id: 'E8', who: '老闆', text: '「年輕人，有空再來這邊走走，與大家交流音樂。」', tag: '原句', pre: [walk('o', 'visit'), face('o', 'p')] },
+      { id: 'E9', who: '', text: '你正要道謝，門又開了。', tag: '原句', set: { sprite: { f: '@guest' }, put: { f: 'door' }, hide: { f: false }, sil: { f: false }, door: 'open' } },
+      { id: 'E10', who: '？？？', text: '「聽說這裡有個新來的，品味不錯？」', tag: '原句', act: [walk('f', 'atdoor'), door('close')] },
+      { id: 'E11', who: '', text: '無止盡的品味試煉，開始了。', tag: '原句', ui: 'map' }
     ],
-    // 配件挑完 → 今晚來客
-    afterPrologue: [
-      { who: '', text: '你正要道謝，門又開了。', stage: { f: 'door', door: 'open' }, tag: '原句' },
-      { who: '老闆', text: '「今晚是交流夜。人會越來越多。」', ui: 'map', tag: '新' }
-    ],
-    // 02:00 打烊前，傳說藏家推門
+    // 02:00 打烊前，傳說藏家推門（B2＝原版 BOSS_LINES[0]；出場蓋章＝BOSS_LINES[4]）
     bossEnter: [
-      { who: '', text: '這時，門開了。', stage: { p: 'duelP', o: 'counter', f: 'door', fSpr: 'boss', door: 'open' }, tag: '原句' },
-      { who: '藏家', text: '「聽說這裡有個新來的，品味不錯？」', stage: { f: 'duelE', door: 'shut' }, stamp: '三十年的耳朵，不會騙人。', ui: 'duel', prompt: '▶ 品味對決', tag: '原句' }
+      { id: 'B1', who: '', text: '這時，門開了。', tag: '原句', set: { sprite: { f: 'boss' }, put: { f: 'door' }, hide: { f: false }, sil: { f: false }, door: 'open' } },
+      { id: 'B2', who: '藏家', text: '「讓我看看你的品味有幾兩重。」', tag: '原句', set: { stamp: '三十年的耳朵，不會騙人。' },
+        act: [walk('f', 'atdoor'), door('close')], ui: 'duel', prompt: '▶ 品味對決' }
     ],
     // 通關：他用過的那張王牌（你當初沒選的）翻開、播放、收進唱片櫃
     clear: [
-      { who: '藏家', text: '「……這張，送你。三十年前，我也是這樣拿到的。」', ui: 'stake', music: 'stake', tag: '新:A' },
-      { who: '老闆', text: '「年輕人，有空再來這邊走走，與大家交流音樂。」', tag: '原句' },
-      { who: '', text: '對街新開了一間黑膠潮流館。', if: 'firstClear', stamp: '第二夜（尚未開放）', tag: '新' }
+      { id: 'C1', who: '藏家', text: '「……這張，送你。三十年前，我也是這樣拿到的。」', tag: '新:A', ui: 'stake', music: 'stake' },
+      { id: 'C2', who: '', text: '對街新開了一間黑膠潮流館。', tag: '新', if: 'firstClear', set: { stamp: '第二夜（尚未開放）' } }
     ],
     // 散場（倒下）
     dead: [
-      { who: '老闆', text: '「……今晚就到這。」', music: 'stop', tag: '新' }
+      { id: 'D1', who: '老闆', text: '「……今晚就到這。」', tag: '新', music: { stop: 1500 } }
     ],
-    // 再來一夜（≤10 秒）：門 swing → 三張王牌 → 今晚來客
+    // 再來一夜（≤10 秒）：門晃 → 挑王牌 → 走到特價箱挑三張（C.blocking.toSale）→ 今晚來客
     again: [
-      { who: '老闆', text: '「……又是你。」', stage: P_START(), tag: '新' },
-      { who: '', text: '（點封套下面的字換著聽，挑一張帶走。）', quietText: '（挑一張帶走。）', ui: 'acePick', tag: '新' }
+      { id: 'A1', who: '老闆', text: '「……又是你。」', tag: '新', set: { put: { p: 'door', o: 'counter' }, hide: { f: true }, door: 'swing' },
+        ui: 'acePick', prompt: '（挑一張。）' }
     ]
   };
-
-  // 玩家第一次有台詞（P13 的回嘴）；reply 由男子說，當成一句 Beat 播出（v3 外殼墊片，第二波 B2 刪）
-  C.retorts = [
-    { label: '你耳機裡那張，是《Mylo Xyloto》吧。', reply: '「……那張也是 Coldplay 好嗎！」', tag: '新' },
-    { label: '……（把唱片抱緊）', reply: '「哼，抱那麼緊，怕被笑喔？」', tag: '新' }
-  ];
 
   // ===================================================================
   // 台詞（舞台泡泡）。lines[誰][鍵]＝字串或字串陣列；lineTags 同形狀，記每句的來源標記。
@@ -551,24 +578,34 @@
       heresy: [{ kind: 'mirrorWin', toE: 3, toP: 0 }, { kind: 'counter', toE: 4, toP: 0 }, { kind: 'counter', toE: 4, toP: 0 },
         { kind: 'counter', toE: 5, toP: 0 }, GAP5, { kind: 'mirrorWin', toE: 5, toP: 0, blocked: 'ace' }]
     },
-    // ---- 以下 steps／learned／ui 是 v3 的教學步驟，第二波 B2 改寫成 v4 六手 ----
+    // ---- 以下 steps／learned／ui 由 B2 寫（§2.5.5）：六手各教一件事 ----
+    //   target／point 的 'pick'＝這一手 script[tier].pick 指的那顆（tutorial.js stepsFor 代入：{id,attr}→chip:id:<id>:<attr>、'blocked:o'→chip:blocked:o、'ace'→王牌）；
+    //   'tile:pick'＝那顆所在的整格（封面＋星鈕；點封面也算，只要選到的屬性對）。allow.pick＝只放行那一顆。
+    //   每手：（說明）→ 點那顆 → 丟！ →（結算浮框出現時講，target 含 result）。learn＝這步做完就學到哪張小卡。
+    //   第 1 手前一句說明提示；第 1 手結算後老闆點破關鍵字一次（提示 c5「他把那張名盤擦得發亮。」→「名盤」＝經典；規劃書，不是 D，列 §5.7）。
     steps: [
-      { id: 't1', kind: 'say', target: ['e-habit'], text: '這是他的脾氣。他多半照著丟。', bubble: 'below', tag: '新' },
-      { id: 't2', kind: 'say', target: ['e-stars'], text: '只認排行榜：他會丟最大的星，經典。', colorChars: true, bubble: 'below', tag: '新' },
-      { id: 't3', kind: 'say', target: ['tri'], tri: ['oc'], text: '冷門剋經典。', tag: '新' },
-      { id: 't4', kind: 'do', target: ['chip:best:o'], allow: { chip: { i: 'best', attr: 'o' } }, tri: ['oc'], text: '點這顆冷門。', bubble: 'above', tag: '新' },
-      { id: 't5', kind: 'do', target: ['chip:best:o', 'throw'], point: 'throw', allow: { throw: true }, tri: ['oc'], text: '再點一下，丟！', bubble: 'above', tag: '新' },
-      { id: 't6', kind: 'say', target: ['result'], text: '剋中：用你那顆星扣他。', learn: 'L1', tag: '新' },
-      { id: 't7', kind: 'do', target: ['chip:best:c'], allow: { chip: { i: 'best', attr: 'c' } }, tri: ['ch'], text: '他最大的是硬蕊。經典剋硬蕊。', bubble: 'above', tag: '新' },
-      { id: 't8', kind: 'do', target: ['chip:best:c', 'throw'], point: 'throw', allow: { throw: true }, tri: ['ch'], text: '丟！', learn: 'L2', bubble: 'above', tag: '新' },
-      { id: 't9', kind: 'do', target: ['hand'], point: false, allow: { chip: { i: 'any', attr: 'h' }, throw: true }, tri: ['ho'], text: '冷門最大。剋冷門的是哪個？', learn: 'L3', bubble: 'above', tag: '新' },
-      { id: 't10', kind: 'soft', target: ['hand-ace'], text: '王牌 7 星，每場一次。接下來自己來。', learn: 'L4', tag: '新' }
+      { id: 'm1', kind: 'say', target: ['e-hint'], text: '上面這句是提示，暗示他這手要出什麼。', bubble: 'below', tag: '新' },
+      { id: 'm2', kind: 'do', target: ['tile:pick'], point: 'pick', allow: { pick: true }, text: '先出這張的經典，跟他比星數。', bubble: 'above', tag: '新' },
+      { id: 'm3', kind: 'do', target: ['pick', 'throw'], point: 'throw', allow: { throw: true }, text: '丟！', bubble: 'above', tag: '新' },
+      { id: 'm4', kind: 'say', target: ['result'], text: '同色就比星數，多的扣差額。', learn: 'L1', tag: '新' },
+      { id: 'm5', kind: 'say', target: ['result'], text: '『名盤』就是經典。提示裡會藏這種字。', tag: '新' },
+      { id: 'k1', kind: 'do', target: ['tile:pick'], point: 'pick', allow: { pick: true }, tri: ['oc'], text: '冷門剋經典：點這顆冷門。', bubble: 'above', tag: '新' },
+      { id: 'k2', kind: 'do', target: ['pick', 'throw'], point: 'throw', allow: { throw: true }, tri: ['oc'], text: '丟！', bubble: 'above', tag: '新' },
+      { id: 'k3', kind: 'say', target: ['result'], text: '剋中：用你那顆星扣他。', learn: 'L2', tag: '新' },
+      { id: 'c1', kind: 'do', target: ['tile:pick'], point: 'pick', allow: { pick: true }, tri: ['ch'], text: '經典剋硬蕊：點這顆經典。', bubble: 'above', tag: '新' },
+      { id: 'c2', kind: 'do', target: ['pick', 'throw'], point: 'throw', allow: { throw: true }, tri: ['ch'], text: '丟！', learn: 'L3', bubble: 'above', tag: '新' },
+      { id: 'h1', kind: 'do', target: ['tile:pick'], point: 'pick', allow: { pick: true }, tri: ['ho'], text: '硬蕊剋冷門：點這顆硬蕊。', bubble: 'above', tag: '新' },
+      { id: 'h2', kind: 'do', target: ['pick', 'throw'], point: 'throw', allow: { throw: true }, tri: ['ho'], text: '丟！', learn: 'L4', bubble: 'above', tag: '新' },
+      { id: 'b1', kind: 'do', target: ['tile:pick'], point: 'pick', allow: { pick: true }, tri: ['oc'], text: '又是『名盤』。出這張冷門試試。', bubble: 'above', tag: '新' },
+      { id: 'b2', kind: 'do', target: ['pick', 'throw'], point: 'throw', allow: { throw: true }, tri: ['oc'], text: '丟！', bubble: 'above', tag: '新' },
+      { id: 'b3', kind: 'say', target: ['result'], text: '他高你 2 星以上，剋不動，改比星數。', learn: 'L5', tag: '新' },
+      { id: 'a1', kind: 'do', target: ['tile:pick'], point: 'pick', allow: { pick: true }, text: '最後一手。丟王牌：7 星，一場一次。', bubble: 'above', tag: '新' },
+      { id: 'a2', kind: 'do', target: ['pick', 'throw'], point: 'throw', allow: { throw: true }, text: '丟！', bubble: 'above', tag: '新' },
+      { id: 'a3', kind: 'say', target: ['result'], learn: 'L6', tag: '新',
+        text: { hall: '同色比星數，7 比 2，他 −5。', pearl: '冷門剋經典，王牌 7 星，他 −7。', heresy: '經典剋硬蕊，但 7 星剋不動：比星數。' } }
     ],
-    learned: { L1: '冷門剋經典', L2: '經典剋硬蕊', L3: '硬蕊剋冷門', L4: '王牌 7 星，每場一次' },
-    ui: {
-      who: '老闆', learnedPrefix: '學會了：', wrong: '先點我指的這裡。',
-      skipTut: '跳過教學', replay: '重看教學', start: '▶ 品味對決', skip: '▶ 直接開打（我會玩）', learnedTitle: '學會的規則'
-    },
+    learned: { L1: '同色比星數', L2: '冷門剋經典', L3: '經典剋硬蕊', L4: '硬蕊剋冷門', L5: '差 2 星剋不動', L6: '王牌 7 星、不會被剋' },
+    ui: { who: '老闆', learnedPrefix: '學會了：', wrong: '先點我指的這裡。', skipTut: '跳過教學', replay: '重看教學', learnedTitle: '學會的規則' },
     uiTag: '新'
   };
   ['hall', 'pearl', 'heresy'].forEach(function (t) {

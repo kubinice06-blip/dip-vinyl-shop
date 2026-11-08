@@ -4,17 +4,19 @@
 //
 // 檢查：
 //   1. 禁用字串（店主用語、支語、破折號、舊三軸名「入」）：content.js 的字串、cards.js 的 pitch、
-//      ui.js／duel.js／tutorial.js／cardinfo.js／stage.js／shop.js／shop-props.js／fx.js／index.html 的字串、shops/*.json 的名牌（缺檔就跳過）。
+//      ui.js／duel.js／tutorial.js／cardinfo.js／econ.js（v4 B3）／stage.js／shop.js／shop-props.js／fx.js／index.html 的字串、shops/*.json 的名牌（缺檔就跳過）。
 //      三軸一律經典／冷門／硬蕊；「唱片資訊」不寫「卡片資訊」；「櫃檯」不寫「櫃台」；「派對」不出現；台詞與提示不用破折號。
 //   2. v3 拿掉的系統不准回來（SPEC-v3 §2.3、§10.6）：
 //      對決、教學、外殼的畫面字不准有「氣勢、輾壓、賭注、相生、割捨、七星回擊、霸權、點播」
 //        （content.js、duel.js、tutorial.js、ui.js、cardinfo.js、index.html）；
 //      對決與教學的字不准有「晃」（脾氣的內部名 C.habits.*.zh「虛晃」除外，它不上畫面）；
 //      「配件」只准出現在發燒配件的介面（content.js／duel.js／tutorial.js 裡，同一行原始碼要提到 relic；ui.js 本身就是配件介面所在，不擋）。
-//   3. 必須原樣出現的六句（序章拍板句與原句）；不得出現尾聲的耳朵宣告（09-03 店主拿掉）
-//      （第一波的 C.script 還是 v3 墊片；v4 序章＋收尾「原句恰好 26 句、順序一致」由第二波 B2 加）
+//   3. 必須原樣出現的六句（序章拍板句與原句）；不得出現尾聲的耳朵宣告（09-03 店主拿掉）；
+//      v4 劇本（SPEC-v4 §2.5.4，B2）：序章＋收尾標「原句」的恰好 26 句（原版 RPG_BEATS 19 句扣掉被換掉的 4 句＋TUT_EPILOGUE_BEATS 11 句），
+//      而且跟原版的順序一致；D §2 拿掉的試做版句子不准回來（回嘴、好耳朵、一百塊三張、交流夜…）
 //   4. 每一句都有來源標記（Beat.tag、lineTags、coachTipTags、rulesTag／rulesLinesTag、duelTextTag、relics[].tag、hints[].tag、hintKeywordsTag、
-//      honestyTag、tutorial steps[].tag／uiTag、shopLineTags、shopUiTag、bargainTag、summaryTag、nightTag、retorts[].tag、pitches.json）
+//      honestyTag、tonightLinesTag、tutorial steps[].tag／uiTag、shopLineTags、shopUiTag、bargainTag、summaryTag、nightTag、pitches.json）；
+//      Beat 的畫面字（prompt／prompts／button／set.stamp）：在 roguelike.html 找得到＝原句、在 owner-lines-v4.json＝店主、其他＝新
 //   5. 標成 原句／拍板 的句子，必須一字不差地出現在現行 roguelike.html；標成 店主 的字串，必須一字不差地在 tools/owner-lines-v4.json
 //      （＝DECISIONS-v4 裡店主寫／核可的字，SPEC-v4 §2.2.9）
 //   6. 長度：教學老闆的泡泡 ≤25 字、按鈕 ≤18；一次性小提示 ≤20；規則卡六行、每行 ≤56（D 第 6 行 54 字）、第 3 行是三相剋（冷剋經／經剋硬／硬剋冷）、
@@ -131,7 +133,7 @@ const scanned = [];
 const FILES = [
   // [檔名, 種類, 舊系統字, 對決／教學的字]
   ['content.js', 'js', true, true], ['duel.js', 'js', true, true], ['tutorial.js', 'js', true, true],
-  ['ui.js', 'js', true, false], ['cardinfo.js', 'js', true, false], ['index.html', 'html', true, false],
+  ['ui.js', 'js', true, false], ['cardinfo.js', 'js', true, false], ['econ.js', 'js', true, false], ['index.html', 'html', true, false],
   ['stage.js', 'js', false, false], ['shop.js', 'js', false, false], ['shop-props.js', 'js', false, false], ['fx.js', 'js', false, false]
 ];
 const SKIP = new Set(String(process.env.LINT_SKIP || '').split(',').map(x => x.trim()).filter(Boolean));
@@ -181,37 +183,49 @@ try { OWNER = JSON.parse(read(path.join(HERE, 'owner-lines-v4.json'))); } catch 
 const OWNER_SET = new Set(OWNER.lines || []);
 const items = []; // { scene, where, who, key?, text, tag, raw? }
 const add = it => items.push(it);
-const SCENE = { prologue: '序章（有聲音）', quietPrologue: '序章（安靜）', epilogueWin: '序章收尾（贏了男子 → 挑一張盤 → 發燒配件三選一）',
-  afterPrologue: '配件挑完 → 今晚來客', bossEnter: '傳說藏家進門', clear: '打烊（通關）', dead: '散場', again: '再來一夜' };
-const UI_OK = ['guess', 'acePick', 'retort', 'duel', 'stake', 'relic', 'map'];
+const SCENE = { prologue: '序章（O1–O21）', epilogueWin: '序章收尾（E1–E11：他走了 → 地上那張盤 → 發燒配件三選一 → 第一位客人推門）',
+  bossEnter: '傳說藏家進門', clear: '打烊（通關）', dead: '散場', again: '再來一夜' };
+const UI_OK = ['guess', 'acePick', 'recs', 'bargain', 'duel', 'stake', 'relic', 'map'];
+const WHO_OK = ['', '老闆', '男子', '藏家', '？？？', 'player'];
+const TIER_KEYS = ['hall', 'pearl', 'heresy'];
 const seenBeat = new Set();
 const seenExtra = new Set();
 const ORIG = read(path.join(ROOT, 'roguelike.html'));
+let OWNER_SET0 = new Set(); try { OWNER_SET0 = new Set(JSON.parse(read(path.join(HERE, 'owner-lines-v4.json'))).lines || []); } catch (_) {}
+const extraTag = t => ORIG && ORIG.includes(t) ? '原句' : OWNER_SET0.has(t) ? '店主' : '新';
+// Beat.text：字串，或 { hall, pearl, heresy }（依今晚那張；C.tonightLines）→ 展開成 [[tier|null, 字串]]
+const beatTexts = b => (b && b.text && typeof b.text === 'object') ? TIER_KEYS.map(t => [t, b.text[t]]) : [[null, b && b.text]];
+const flatTexts = b => beatTexts(b).map(x => x[1]).filter(x => typeof x === 'string');
 for (const [key, beats] of Object.entries(C.script || {})) {
   if (!Array.isArray(beats)) { err('script.' + key, '不是陣列'); continue; }
+  const ids = new Set();
   beats.forEach((b, k) => {
     const where = 'script.' + key + '[' + k + ']';
-    if (!b || typeof b.text !== 'string') { err(where, '沒有 text'); return; }
-    if (!TAG_OK(b.tag)) err(where, 'Beat 沒有合法 tag（原句／拍板／新）：' + b.text.slice(0, 30));
-    if (!['', '老闆', '男子', '藏家', 'player'].includes(b.who)) err(where, 'who 不合法：' + b.who);
-    if (b.who && b.who !== 'player' && !b.text.includes('「')) err(where, '說話的句子要用「」：' + b.text.slice(0, 30));
+    if (!b || beatTexts(b).some(x => typeof x[1] !== 'string' || !x[1])) { err(where, '沒有 text（字串，或 hall／pearl／heresy 三個都有）'); return; }
+    if (!b.id || ids.has(b.id)) err(where, 'Beat 要有不重複的 id：' + b.id); ids.add(b.id);
+    if (!TAG_OK(b.tag)) err(where, 'Beat 沒有合法 tag（原句／拍板／店主／新）：' + flatTexts(b)[0].slice(0, 30));
+    if (!WHO_OK.includes(b.who)) err(where, 'who 不合法：' + b.who);
+    for (const t of flatTexts(b)) if (b.who && b.who !== 'player' && !t.includes('「')) err(where, '說話的句子要用「」：' + t.slice(0, 30));
     if (b.ui && !UI_OK.includes(b.ui)) err(where, 'ui 不合法：' + b.ui);
     const extras = [];
-    for (const extra of ['prompt', 'stamp', 'quietText']) if (b[extra]) extras.push([extra, b[extra]]);
+    for (const extra of ['prompt', 'stamp', 'quietText', 'button']) if (b[extra]) extras.push([extra, b[extra]]);
+    if (b.set && b.set.stamp) extras.push(['set.stamp', b.set.stamp]);
     (b.prompts || []).forEach((t, j) => extras.push(['prompts[' + j + ']', t]));
     for (const [extra, t] of extras) if (!seenExtra.has(t)) {
       seenExtra.add(t);
-      add({ scene: SCENE[key] || key, where: where + '.' + extra, who: '（畫面字）', text: t, tag: ORIG && ORIG.includes(t) ? '原句' : '新', ui: true });
+      add({ scene: SCENE[key] || key, where: where + '.' + extra, who: '（畫面字）', text: t, tag: extraTag(t), ui: true });
     }
-    const dup = b.who + '|' + b.text + '|' + b.tag;
-    if (seenBeat.has(dup)) return; seenBeat.add(dup);
-    add({ scene: SCENE[key] || key, where, who: b.who || '旁白', text: b.text, tag: b.tag });
+    for (const [tier, t] of beatTexts(b)) {
+      const dup = b.who + '|' + t + '|' + b.tag;
+      if (seenBeat.has(dup)) continue; seenBeat.add(dup);
+      add({ scene: SCENE[key] || key, where: where + (tier ? '.' + tier : ''), who: (b.who || '旁白') + '・' + b.id + (tier ? '・' + tier : ''), text: t, tag: b.tag, beat: true });
+    }
   });
 }
-(C.retorts || []).forEach((r, k) => {
-  if (!TAG_OK(r.tag)) err('retorts[' + k + ']', '沒有 tag');
-  add({ scene: '回嘴（玩家第一次有台詞）', where: 'retorts[' + k + '].label', who: '你', text: r.label, tag: r.tag });
-  add({ scene: '回嘴（玩家第一次有台詞）', where: 'retorts[' + k + '].reply', who: '男子', text: r.reply, tag: r.tag });
+// 今晚那張的兩句音樂描述（D §2 猜歌第 2 步；店主草稿）
+for (const t of TIER_KEYS) ((C.tonightLines || {})[t] || []).forEach((x, k) => {
+  if (!TAG_OK(C.tonightLinesTag)) err('tonightLines.' + t, '沒有 tag（tonightLinesTag）');
+  add({ scene: '序章・今晚那張的音樂描述（O5a／O5b）', where: 'tonightLines.' + t + '[' + k + ']', who: '旁白', text: x, tag: C.tonightLinesTag });
 });
 
 // 舞台泡泡（lines ↔ lineTags 同形狀）
@@ -321,7 +335,7 @@ for (const [id, r] of Object.entries(C.relics || {})) {
 if (C.relics && C.relics.boost_o && C.relics.boost_o.desc !== '冷門出招時 +1 星' + '。') err('relics.boost_o.desc', '要是 D §6 例句「冷門出招時 +1 星」加句號');
 if (!OWNER_SET.has('冷門出招時 +1 星')) err('tools/owner-lines-v4.json', '少了 D §6 的「冷門出招時 +1 星」');
 
-// 序章引導教學（SPEC-v3 §8：10 步，老闆的泡泡 ≤25 字）
+// 序章引導教學（SPEC-v4 §2.5.5：六手 18 步，老闆的泡泡 ≤25 字；依王牌分句的 text 三張各算一句）
 const TUT = C.tutorial;
 if (!TUT) err('tutorial', '沒有 C.tutorial');
 else {
@@ -390,7 +404,6 @@ for (const [k, v] of Object.entries(C.summary || {})) {
   if (!TAG_OK(C.summaryTag)) err('summary.' + k, '沒有 tag（summaryTag）');
   add({ scene: '今晚來客・結算', where: 'summary.' + k, who: '（畫面字）', key: k, text: v, tag: C.summaryTag });
 }
-if (C.junkLabel) add({ scene: '包包與唱片櫃', where: 'junkLabel', who: '（畫面字）', text: C.junkLabel, tag: '新' });
 for (const x of shopLabels) add({ scene: '店內名牌（' + x.file + '）', where: x.file + x.where, who: '（畫面字）', text: x.s, tag: '新' });
 if (C.secondNight) add({ scene: '第二夜預告', where: 'secondNight', who: '（畫面字）', text: C.secondNight.name + '（' + C.secondNight.title + '）／' + C.secondNight.label, tag: C.secondNight.tag });
 for (const [id, p] of Object.entries(pitches)) {
@@ -416,11 +429,11 @@ for (const it of items) {
 // ---------------------------------------------------------------------------
 const MUST = ['封套邊緣磨損嚴重，顯然塵封已久。', '老闆不發一語，緩步走出櫃檯，站在兩人之間。', '……這品味，也敢出來丟臉？',
   '搵休督欸丟！', '你的憤怒表露無遺。', '既然雙方都不服氣，不如來一場品味對決如何？'];
-const scriptText = Object.values(C.script || {}).flat().map(b => b.text).join('\n');
+const scriptText = Object.values(C.script || {}).flat().map(b => flatTexts(b).join('\n')).join('\n');
 for (const m of MUST) if (!scriptText.includes(m)) err('script', '必須原樣出現的句子不見了：「' + m + '」');
 const EAR_DECL = [/往後都是你自己的打法/, /耳朵專長/, /你的耳朵是/, /你是(老派耳朵|挖盤狂|噪音信徒)/];
 for (const it of items) for (const re of EAR_DECL) if (re.test(it.text)) err(it.where, '出現耳朵宣告句（店主 09-03 拿掉，不准加回）：' + it.text);
-for (const [key, beats] of Object.entries(C.script || {})) for (const b of beats) if (b.who === '老闆' && /(老派耳朵|挖盤狂|噪音信徒)/.test(b.text)) err('script.' + key, '老闆的對白提到耳朵名（耳朵宣告不准加回）：' + b.text);
+for (const [key, beats] of Object.entries(C.script || {})) for (const b of beats) for (const t of flatTexts(b)) if (b.who === '老闆' && /(老派耳朵|挖盤狂|噪音信徒)/.test(t)) err('script.' + key, '老闆的對白提到耳朵名（耳朵宣告不准加回）：' + t);
 
 // ---------------------------------------------------------------------------
 // 5. 原句／拍板 必須與現行 roguelike.html 一字不差
@@ -433,15 +446,35 @@ const beatTextsOf = name => {
   return [...blk.matchAll(/text:'([^']*)'/g)].map(m => m[1]);
 };
 const ORIG_BEATS = new Set(beatTextsOf('RPG_BEATS').concat(beatTextsOf('TUT_EPILOGUE_BEATS')));
+// 藏家進門那句用原版 BOSS_LINES（D §2）
+const BOSS_LINES = (() => { if (!ORIG) return []; const i = ORIG.indexOf('const BOSS_LINES = ['); if (i < 0) return []; return [...ORIG.slice(i, ORIG.indexOf('];', i)).matchAll(/'([^']*)'/g)].map(m => m[1]); })();
+if (ORIG && BOSS_LINES.length < 5) warns.push('roguelike.html 的 BOSS_LINES 只抓到 ' + BOSS_LINES.length + ' 句');
 if (ORIG && ORIG_BEATS.size < 20) warns.push('roguelike.html 的 RPG_BEATS／TUT_EPILOGUE_BEATS 只抓到 ' + ORIG_BEATS.size + ' 句，請確認格式');
 if (ORIG == null) warns.push('找不到 ../roguelike.html，略過原句比對');
 else for (const it of items) if (it.tag === '原句' || it.tag === '拍板') {
   const t = it.raw || it.text;
   origChecked++;
-  if (/^script\.[^.]+\[\d+\]$/.test(it.where) && !ORIG_BEATS.has(t)) { err(it.where, '標成「' + it.tag + '」但不等於現行 RPG_BEATS／TUT_EPILOGUE_BEATS 的任何一句：' + t); continue; }
+  if (it.beat && !ORIG_BEATS.has(t) && !(/^script\.bossEnter/.test(it.where) && BOSS_LINES.includes(t))) { err(it.where, '標成「' + it.tag + '」但不等於現行 RPG_BEATS／TUT_EPILOGUE_BEATS（藏家進門：BOSS_LINES）的任何一句：' + t); continue; }
   const inner = /^「([^「」]+)」$/.exec(t);
   if (!ORIG.includes(t) && !(inner && it.where.startsWith('pitch#') && ORIG.includes(inner[1]))) err(it.where, '標成「' + it.tag + '」但現行 roguelike.html 裡找不到一字不差的原文：' + t);
 }
+
+// v4 劇本的原句（SPEC-v4 §2.5.4、§2.2.9 B2）：序章＋收尾標「原句」的恰好 26 句，順序＝原版 RPG_BEATS（扣掉 D §2 換掉的 4 句）＋TUT_EPILOGUE_BEATS
+//   換掉的 4 句：很迷人那句（→ 今晚那張的兩句描述）、「剛才那段，你覺得是哪一張？」、「跟你有緣，收下吧。」、「你把五張唱片…」
+const REPLACED_BY_D = ['……很迷人。你停下腳步，不自覺跟著點起頭來。', '「這三張，是我這裡最貴的三張。」他沒抬頭。「剛才那段，你覺得是哪一張？」',
+  '「這四張也很適合你。跟你有緣，收下吧。」', '你把五張唱片放到櫃檯上。老闆一張一張看過，替你收進紙袋。'];
+let orig26 = 0;
+if (ORIG) {
+  const want = beatTextsOf('RPG_BEATS').filter(t => !REPLACED_BY_D.includes(t)).concat(beatTextsOf('TUT_EPILOGUE_BEATS'));
+  const got = [].concat((C.script || {}).prologue || [], (C.script || {}).epilogueWin || []).filter(b => b.tag === '原句').map(b => b.text);
+  if (want.length !== 26) err('roguelike.html', '原版序章＋收尾扣掉換掉的 4 句應該是 26 句，抓到 ' + want.length + ' 句（格式變了？）');
+  if (got.length !== 26) err('script.prologue＋epilogueWin', '標「原句」的要恰好 26 句，現在 ' + got.length + ' 句');
+  want.forEach((t, k) => { if (got[k] !== t) err('script.prologue＋epilogueWin', '第 ' + (k + 1) + ' 句原句不對（要跟原版順序一致）：要「' + t + '」，是「' + (got[k] || '（沒有）') + '」'); else orig26++; });
+}
+// D §2 拿掉的試做版句子不准回來
+const GONE = [/Mylo Xyloto/, /好耳朵/, /點封套下面的字/, /一百塊三張/, /他的袋子裡掉出一張盤/, /每個禮拜都來聽這張/, /今晚是交流夜/, /不是這張。不過/];
+for (const it of items) for (const re of GONE) if (re.test(it.text)) err(it.where, 'D §2 拿掉的試做版句子不准回來：' + it.text);
+if ('retorts' in C || (C.script && ('quietPrologue' in C.script || 'afterPrologue' in C.script))) err('content', 'v3 的回嘴（C.retorts）、安靜版序章、afterPrologue 要刪掉（D §2）');
 
 // 店主：必須一字不差地在 tools/owner-lines-v4.json（SPEC-v4 §2.2.9）
 let ownerChecked = 0;
@@ -467,7 +500,7 @@ let md = `# 台詞審稿：品味對決 v4（LINES-REVIEW）
 > 由 \`node game-lab/tools/lint-copy.mjs\` 產生，請勿手改。要改句子，直接改 \`game-lab/content.js\`（劇本、台詞、名牌、提示、規則卡、教學）或 \`game-lab/tools/pitches.json\`（推薦語，改完重跑 \`node game-lab/tools/bake-cards.mjs\`），再重跑本檢查。
 > 這份只列**新句**（試做版新寫、或取自四份概念稿，店主還沒看過）。標成「原句」「拍板」的句子已與現行 \`roguelike.html\` 逐字比對（${origChecked} 句）；標成「店主」的字已與 \`tools/owner-lines-v4.json\`（DECISIONS-v4 店主寫／核可的字）逐字比對（${ownerChecked} 句）。全部一致才會產生這份。
 > v4：三相剋＋差 2 星剋不動、對手暗選＋提示（會唬人）、六手上限、經濟（錢、箱子、櫃檯配件、特價箱）。脾氣、急了、翻面、B 面的句子全部刪除。
-> 第一波（A1）：劇本、回嘴、教學步驟仍是 v3 墊片，第二波由 B2 換成 v4 劇本與六手教學。
+> 第二波（B2）：v4 劇本（序章 O1–O21、收尾 E1–E11：原版 26 句逐字＋店主改的句子）；回嘴、好耳朵、一百塊三張等試做版句子已刪。教學六手（第 2 階段）之前，教學步驟仍是 v3 的。
 
 統計：原句 ${counts['原句']}、拍板 ${counts['拍板']}、店主 ${counts['店主']}、新 ${counts['新']}（同一句在有聲／安靜兩版序章只算一次）。
 
@@ -488,6 +521,6 @@ report();
 if (!errors.length) {
   fs.writeFileSync(path.join(LAB, 'LINES-REVIEW.md'), md);
   console.log('文案檢查通過。掃過：' + scanned.join('、'));
-  console.log('句子 ' + items.length + '（原句 ' + counts['原句'] + '、拍板 ' + counts['拍板'] + '、店主 ' + counts['店主'] + '、新 ' + counts['新'] + '）；原句／拍板逐字比對 ' + origChecked + ' 句、店主逐字比對 ' + ownerChecked + ' 句一致。');
+  console.log('句子 ' + items.length + '（原句 ' + counts['原句'] + '、拍板 ' + counts['拍板'] + '、店主 ' + counts['店主'] + '、新 ' + counts['新'] + '）；原句／拍板逐字比對 ' + origChecked + ' 句、店主逐字比對 ' + ownerChecked + ' 句一致；v4 劇本原句 ' + orig26 + '／26 句、順序一致。');
   console.log('已寫 game-lab/LINES-REVIEW.md（新句 ' + fresh.length + '，' + byScene.size + ' 個場景）。');
 }
