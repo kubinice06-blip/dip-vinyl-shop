@@ -1324,6 +1324,16 @@
   function acePickAndCreate(sc, ctx, b, prologue) {
     return acePickPanel(sc, ctx, b).then(function (tier) { createRun({ ace: tier, prologue: prologue }); return tier; });
   }
+  function resumePrologueAfterBargain() {
+    var tonight = tonightId();
+    var ctx = { flags: {}, quiet: !soundOn(), tonightId: tonight, tonightTier: tierOfCard(tonight), defaultTier: tierOfCard(tonight), acePicked: true };
+    var seen = false;
+    ctx.skipBeat = function (b) { if (b.id === 'O14') seen = true; return !seen; };
+    go('scene', { p: 'sale', f: 'hide', o: 'counter', hideR1: true, stripState: { ace: null, bag: [] }, start: function (sc) {
+      var dlg = Dialogue(sc, ctx);
+      dlg.run(C.script.prologue, function (ui, b) { return prologueUi(ui, b, sc, dlg, ctx); });
+    } });
+  }
   function canTutorial() { var T = TUT(); return !!(C && C.tutorial && C.tutorial.script && T && typeof T.duelHooks === 'function' && typeof T.startDuelLesson === 'function'); }
   function prologueUi(ui, b, sc, dlg, ctx) {
     if (ui === 'guess') return guessPanel(sc, ctx, b);
@@ -1377,6 +1387,8 @@
     if (step === 'duel') return beginFight({});
     if (step === 'prologue') {
       if (E.canBargainPick(r)) return startPrologue();
+      // 特價區挑完、還沒按兩顆「接受對決」（r.tut 還沒定）：從 O14（八張放上櫃檯）接著演到兩顆鈕，不直接開打（RT-6）
+      if (r.tut == null && !r.duel) return resumePrologueAfterBargain();
       return beginFight({ tutorial: r.tut === true || (r.tut == null && !save.tutorialDone), overlay: canTutorial() });
     }
     if (step === 'fight') return go('night');

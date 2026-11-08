@@ -696,7 +696,7 @@ async function run() {
       await ctx.close();
     }
 
-    // #44 序章途中重新整理：特價箱還沒挑 → 從頭開始；挑過了 → 直接到對決
+    // #44 序章途中重新整理：特價箱還沒挑 → 從頭開始；挑過了、還沒按「接受對決」→ 從 O14（八張放上櫃檯）接著演到兩顆鈕（RT-6），按了才進對決
     if (want(44)) {
       const { ctx, page } = await newPage(browser, w, h); track(page);
       try {
@@ -709,15 +709,20 @@ async function run() {
         await jsClick(page, '[data-a=cont]');
         const fromStart = await page.waitForFunction(() => window.__lab.screen() === 'scene' && /^O[1-3]$/.test(window.__lab.beat || ''), null, { timeout: 15000 }).then(() => true, () => false);
         const beatA = await page.evaluate(() => window.__lab.beat);
-        // （b）一路到特價箱挑完 → 重新整理 → 直接到對決
+        // （b）一路到特價箱挑完 → 重新整理 → 從 O14 接著演、停在兩顆「接受對決」→ 按第二顆 → 對決（不是教學）
         await prologueToDuel4(page, 'direct', null, { until: 'bargainDone' });
         const b0 = await page.evaluate(() => ({ picked: window.__lab.run.shop.bargainPicked, bag: window.__lab.run.bag.length }));
         await sleep(300);
         await openTitle(page);
         await jsClick(page, '[data-a=cont]');
-        const toDuel = await waitScreen(page, 'duel', 20000);
+        const atO14 = await page.waitForFunction(() => window.__lab.screen() === 'scene' && /^O1[4-9]$|^O2[01]$/.test(window.__lab.beat || ''), null, { timeout: 15000 }).then(() => true, () => false);
+        const beatB = await page.evaluate(() => window.__lab.beat);
+        const menu = await advanceUntil(page, () => document.querySelectorAll('.lb-dq .lb-dqopt').length === 2, null, 40000);
+        if (menu) { await jsClick(page, '.lb-dq .lb-dqopt:nth-child(2)'); }
+        const toDuel = menu && await waitScreen(page, 'duel', 20000);
+        const tut = await page.evaluate(() => window.__lab.run && window.__lab.run.tut);
         const trail = await page.evaluate(() => window.__lab.trail().join('>'));
-        record(44, size, !a0.picked && a0.prologue === 'pending' && fromStart && b0.picked && b0.bag === 7 && toDuel && !/scene/.test(trail), `before pick ${JSON.stringify(a0)} → reload → beat ${beatA} (from start ${fromStart}); after pick ${JSON.stringify(b0)} → reload → ${trail}`);
+        record(44, size, !a0.picked && a0.prologue === 'pending' && fromStart && b0.picked && b0.bag === 7 && atO14 && menu && toDuel && tut === false, `before pick ${JSON.stringify(a0)} → reload → beat ${beatA} (from start ${fromStart}); after pick ${JSON.stringify(b0)} → reload → beat ${beatB}、兩顆鈕 ${menu}、第二顆 → duel ${toDuel}（tut ${tut}）；${trail}`);
       } catch (e) { record(44, size, false, 'error ' + e.message); }
       await ctx.close();
     }
