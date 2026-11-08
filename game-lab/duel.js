@@ -604,7 +604,7 @@
     //   封面到上限還有多的，給手牌區（疊著的那一排大一點、上下置中）——中間不留空帶（FIXLIST 9）。
     //   兩張封面中間只留 --gap（相剋圖例與「第 n／6 手」搬到中間字帶的左邊）。
     //   [上緣 --tp, 字高 --lab, 中間字帶高, 封面最小, 封面最大, 屬性鈕高]（上緣、字高跟 duel.css 的 .dl-t 一致）
-    const BOARD = { short: [4, 17, 66, 84, 176, 46], compact: [6, 19, 72, 96, 176, 48], base: [6, 19, 74, 100, 176, 50], roomy: [12, 20, 80, 110, 188, 52] };
+    const BOARD = { short: [4, 17, 66, 84, 176, 46], compact: [6, 19, 72, 96, 176, 48], base: [6, 19, 74, 100, 176, 50], roomy: [12, 20, 80, 110, 196, 52] };
     const SPREAD_MAX = 76, PAIR_GAP = 10, TX = 12;
     function sizeBoard() {
       const k = ['short', 'compact', 'roomy'].find(c => root.classList.contains(c)) || 'base';
@@ -625,8 +625,9 @@
       els.hand.style.height = handH + 'px';
       root.style.setProperty('--scv', scv + 'px');
       root.style.setProperty('--band-h', band + 'px');
-      // 疊著的那一排：手牌區放得下的最大，不超過牌桌封面的 6 成多、118 px（牌桌那兩張才是主角）
-      const F = Math.max(s, Math.min(Math.round(scv * 0.64), 118, Math.floor((handH - 8) / 1.15), Math.floor((hw - 8) / (1 + STACK_DX * (n - 1)))));
+      // 疊著的那一排：手牌區放得下的最大，不超過牌桌封面的 7 成、128 px（牌桌那兩張才是主角）；
+      //   直線疊法不像扇形有弧度撐高度，上下各留的空不能超過約 24 px（FIXLIST 9）→ 430×932 牌桌封面上限 196、疊著 128
+      const F = Math.max(s, Math.min(Math.round(scv * 0.68), 128, Math.floor((handH - 8) / 1.15), Math.floor((hw - 8) / (1 + STACK_DX * (n - 1)))));
       S.lay = { F, smax: SPREAD_MAX, gap, bot: 3, handH, handMin, scv, popH };
       layoutHand(false);
     }
