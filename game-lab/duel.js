@@ -16,7 +16,7 @@
 //   hooks: { stage, cardInfo(card,{attr,from}), hint(id,targets), settings()->{fastAnim}, onEvent(ev,duel), tut, resolveOpts(act),
 //            beforeEnd(result)->Promise, endText(result)->{title,sub}|null, relicIcon(id,size)->html } })
 //   result（onEnd／'over'）＝{ over:'win'|'lose', win, by:'hp'|'rounds'|'pile', pHp, eHp, duel }
-// DipLabDuel.unmount() rerender() el(name) on(evt,cb)->off hold(bool)->count select(i|'ace'|null, attr?) spread(bool) play(act)->Promise
+// DipLabDuel.unmount() rerender() el(name) on(evt,cb)->off hold(bool)->count select(i|'ace'|null, attr?) spread(bool) preview(attr) play(act)->Promise
 //           tri(lit|null)（教學：強制亮哪幾條箭頭，'oc'|'ch'|'ho' 或陣列） autoplay(policy) stopAuto() debug()
 //           _fmt.clashText(clashEvent, T, hints) → { l1, l2, l3, cls, rule, notes }（e2e 比對浮框）
 // gate（hooks.tut.gate(action) 回 false 就擋）：{kind:'spread'}（點疊著的手牌＝攤開） {kind:'card',i,attr,id}（攤開後點封面＝浮起這張，attr＝topAttr）
@@ -582,7 +582,10 @@
         els.abpop.style.left = Math.max(0, Math.min(W - pw, Math.round(p.x + p.s / 2 - pw / 2))) + 'px';
         els.abpop.style.top = Math.round(p.y - POP_GAP - ph) + 'px';
       }
-      els.hprompt.style.top = Math.max(0, Math.round((rowY - LIFT - 18) / 2 + LIFT / 2)) + 'px';   // 「點一張專輯」：屬性鈕會出現的那一塊的正中間
+      // 「點一張專輯」：虛線框，在屬性鈕會跳出來的位置（跟「你丟的」空格同一個樣子；不在那一排上面留一條空帶）
+      const ph = L.popH || 50;
+      els.hprompt.style.height = ph + 'px';
+      els.hprompt.style.top = Math.max(0, Math.round(rowY - LIFT - POP_GAP - ph)) + 'px';
       if (still) { void els.hand.offsetWidth; if (!rm()) els.hand.classList.remove('noanim'); }
     }
 
@@ -629,7 +632,7 @@
       // 扇形：手牌區放得下的最大（轉角讓上下多出一點），不超過牌桌封面的 6 成多、118 px（牌桌那兩張才是主角）
       const mid = (n - 1) / 2, arcMax = FAN_ARC * mid * mid;
       const F = Math.max(s, Math.min(Math.round(scv * 0.64), 118, Math.floor((handH - 8 - arcMax) / 1.15), Math.floor((hw - 8) / (1 + FAN_DX * (n - 1)))));
-      S.lay = { F, smax: SPREAD_MAX, gap, bot: 3, handH, handMin, scv };
+      S.lay = { F, smax: SPREAD_MAX, gap, bot: 3, handH, handMin, scv, popH };
       layoutHand(false);
     }
     function scheduleFit() { if (!S.fitRaf) { fit(); S.fitRaf = requestAnimationFrame(() => { S.fitRaf = 0; fit(); }); } }
@@ -1152,6 +1155,12 @@
         if (attr == null) return liftCard(i, true);
         return previewAttr(i, attr);
       },
+      // preview(attr)＝浮起那張的預覽換成這個屬性（不經 gate、不出手；教學點屬性那步用：「你丟的」跟手指指的那顆一致）
+      preview: attr => {
+        if (!S.sel || S.sel.i === 'ace' || !ATTRS.includes(attr) || !canAct() || S.sel.attr === attr) return !!(S.sel && S.sel.attr === attr);
+        S.sel = { i: S.sel.i, attr }; renderPop(); renderTri(); renderSlot('p'); emit('selected', { i: S.sel.i, attr });
+        return true;
+      },
       // spread(true)＝攤開（不經 gate）；spread(false)＝收回扇形
       spread: on => { if (on === false) return collapseHand(false); if (!canAct()) return false; setSpread(true); return true; },
       // play(act)＝直接照這個屬性丟出（gate 只看 'throw'）
@@ -1186,6 +1195,7 @@
     api: () => (CUR ? CUR.api : null),
     select: (i, attr) => (CUR ? CUR.api.select(i, attr) : false),
     spread: on => (CUR ? CUR.api.spread(on) : false),
+    preview: attr => (CUR ? CUR.api.preview(attr) : false),
     hold: onOff => (CUR ? CUR.api.hold(onOff) : 0),
     play: act => (CUR ? CUR.api.play(act) : Promise.resolve(false)),
     tri: lit => { if (CUR) CUR.api.tri(lit); },

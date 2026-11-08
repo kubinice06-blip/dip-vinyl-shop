@@ -11,7 +11,7 @@
 //   提示句（§2.2.4：每色 5 句、key 必為 text 的子字串、不寫屬性名）、誠實度表、出招難度表、經濟（FIXLIST 8 台幣行情：稀有度價、特價箱每張、配件 3000；start／win 的範圍）、
 //   發燒配件 9 件（§2.2.6）、規則卡六行逐字＝tools/owner-lines-v4.json、頁尾聲望數字、教學規則資料（§2.2.10）、小提示、盤面字、店內字、經濟介面字。
 //   C.bins 的鍵＝bins.js；bins.js 是 X／Y 契約形狀（有 feature）時再跑 binsProblems（十四區、名牌、分類、FEATURE 稀有度、30 晚上貨夠不夠）。
-//   v4 教學步驟（§2.5.5，B2；匯出 tutorialProblems(C)）：六手各一個「丟」、做的步驟只有「點那顆（allow.pick＋'tile:pick'／point 'pick'）」或「丟（allow.throw＋point throw）」、
+//   v4 教學步驟（§2.5.5，B2；匯出 tutorialProblems(C)）：六手各一個「丟」、做的步驟只有「點那張（allow.pick＋'card:pick'）」或「點那個屬性＝丟（allow.pick＋throw＋point 'pick'）」（FIXLIST 11）、
 //     每手的 pick 在 script 裡指得到（禮物的那張那色／blocked:o／ace）、結算時講的步驟（target result）只在丟之後、小卡 L1–L6 各學一次而且照課表順序、
 //     第 1 手前一句指提示（e-hint）、第 1 手結算後點破第 1 手提示句的關鍵字一次、依王牌分句的 text 三張都有、三角邊合法、ui 鍵齊全。
 //   v4 劇本（§2.5.3、§2.5.4，B2；匯出 scriptProblems(C, layout)）：序章 O1–O21、收尾 E1–E11 的 id 與順序；D §2 店主改的句子逐字；
@@ -508,12 +508,14 @@ export function tutorialProblems(C) {
     else ok(typeof s.text === 'string' && s.text, w + '：沒有台詞');
     if (s.tri) ok(Array.isArray(s.tri) && s.tri.every(x => ['oc', 'ch', 'ho'].includes(x)), w + '：tri 只能是 oc／ch／ho');
     if (s.learn) { ok(LEARN[s.learn], w + '：learn ' + s.learn + ' 不在 learned'); learnOrder.push(s.learn); }
+    // FIXLIST 11：每手「點那張（allow {pick}、point／target card:pick）→ 點那個屬性＝丟（allow {pick, throw}、point／target pick、look card:pick）」
     if (s.kind === 'do') {
       const al = s.allow || {};
       if (al.throw) {
-        ok(!al.pick && s.point === 'throw' && (s.target || []).includes('throw') && (s.target || []).includes('pick'), w + '：丟的那步 allow {throw}、point throw、target 含 pick 與 throw');
+        ok(al.pick === true && s.point === 'pick' && JSON.stringify(s.target) === JSON.stringify(['pick']) && (s.look || []).includes('card:pick'), w + '：點屬性（丟）那步 allow {pick,throw}、point pick、target [pick]、look 含 card:pick');
         thrown = true; hand++;
-      } else ok(al.pick === true && s.point === 'pick' && JSON.stringify(s.target) === JSON.stringify(['tile:pick']), w + '：點的那步 allow {pick}、point pick、target [tile:pick]');
+      } else ok(al.pick === true && s.point === 'card:pick' && JSON.stringify(s.target) === JSON.stringify(['card:pick']), w + '：點那張的那步 allow {pick}、point card:pick、target [card:pick]');
+      if (s.spread != null) ok(typeof s.spread === 'string' && s.spread && !al.throw, w + '：spread（疊著時的泡泡）只給點那張的那步');
     }
   });
   ok(hand - 1 === 6, 'tutorial.steps：六手各一個「丟」（現在 ' + (hand - 1) + '）');
@@ -525,6 +527,8 @@ export function tutorialProblems(C) {
   }
   const first = steps[0];
   ok(first.kind === 'say' && (first.target || []).includes('e-hint'), 'tutorial：第 1 手前一句說明提示（target e-hint）');
+  const sp = steps.filter(s => s.spread);
+  ok(sp.length === 1 && handOf[steps.indexOf(sp[0])] === 1, 'tutorial：「點一下手牌攤開」只在第 1 手（step.spread 只有一步）');
   const hint1 = ((C.hints || {})[(T.hints || [])[0] && T.hints[0][0]] || []).find(h => h.id === (T.hints || [])[0]);
   const after1 = steps.filter((s, k) => handOf[k] === 1 && s.kind === 'say' && (s.target || []).includes('result'));
   const callouts = steps.filter(s => hint1 && typeof s.text === 'string' && s.text.includes('『' + hint1.key + '』就是'));

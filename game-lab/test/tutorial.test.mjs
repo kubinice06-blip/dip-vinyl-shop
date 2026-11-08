@@ -1,8 +1,9 @@
 // game-lab/test/tutorial.test.mjs — 序章男子那場的引導教學 v4（SPEC-v4 §2.5.5、§2.2.10、§5.1 B2）
 //   node game-lab/test/tutorial.test.mjs        # 有失敗 exit 1
 // 用 content.js 的 C.tutorial、tutorial.js 的純邏輯（stepsFor／createRunner／matches…）與真引擎（startFight(run, C, {tutorial:true})）：
-// 照教學的每一步餵 gate（跟 duel.js 送的一樣：點封面 {kind:'card'}、點星鈕 {kind:'chip'}、丟 {kind:'throw'}），丟出去時 resolveTurn。
-// 路線：三張王牌 × 特價箱 84 種挑法 × {照做、點錯、看唱片資訊}，每條：
+// 照教學的每一步餵 gate（跟 duel.js 送的一樣；FIXLIST 11：點疊著的手牌 {kind:'spread'} → 點封面＝浮起 {kind:'card'} → 點屬性鈕＝丟 {kind:'throw'}；
+//   點手牌外面 {kind:'collapse'} 教學中一律不放行、也不罵），丟出去時 resolveTurn。
+// 路線：三張王牌 × 特價箱 84 種挑法 × {照做（先攤開）、直接點（已攤開）、點錯、看唱片資訊}，每條：
 //   18 步照順序走完、每手 kind／toE／toP＝C.tutorial.expect、第 5 手剋不動（你 −(5−冷)）、第 6 手王牌 KO、前 5 手不 KO、學到 L1–L6、你沒倒。
 //   手牌 5 張（FIXLIST 11；CFG.handSize）：每一手開手時你手上都是 5 張、要教的那張在手上；第 5 手手指指的（blockedChoice 最左）＝特價箱挑的第 2 張。男子的暗手照舊 3 張。
 // 另外測：步驟資料（六手、字數、禁用字、目標名＝duel.js 的名字、allow、三角邊、小卡）、老闆說的話是真的、擋錯招（e2e #20 的純邏輯版）、
@@ -49,9 +50,10 @@ const actOf = pick => pick.i === 'ace' ? { ace: true } : { i: pick.i, attr: pick
 const cardAt = (duel, i) => i === 'ace' ? duel.p.ace : duel.p.hand[i];
 const idxOf = (duel, id) => duel.p.ace && duel.p.ace.id === id ? 'ace' : duel.p.hand.findIndex(c => c && c.id === id);
 const axisOf = duel => E.aceAxis(duel.p.ace);
-// duel.js 會送的 gate：點封面（attr＝topAttr；王牌＝它那軸）、點星鈕
+// duel.js 會送的 gate：點封面＝浮起（attr＝topAttr；王牌＝它那軸）、點屬性鈕＝丟、（API select(i,attr)）換預覽屬性
 const cardAct = (duel, i) => { const c = cardAt(duel, i); return { kind: 'card', i, attr: i === 'ace' ? axisOf(duel) : E.topAttr(c), id: c.id }; };
 const chipAct = (duel, i, attr) => { const c = cardAt(duel, i); return { kind: 'chip', i, attr: i === 'ace' ? axisOf(duel) : attr, id: c.id }; };
+const shotAct = (duel, i, attr) => { const c = cardAt(duel, i); return { kind: 'throw', i, attr: i === 'ace' ? axisOf(duel) : attr, id: c.id }; };
 // 這一手 pick 指的那一顆（{i, attr}）
 function target(duel, pick) {
   if (pick === 'ace') return { i: 'ace', attr: axisOf(duel) };
@@ -61,7 +63,7 @@ function target(duel, pick) {
 
 // ---------------------------------------------------------------------------
 // 一條路線（DOM 的順序：丟 → resolveTurn → 結算時講的步驟（盤面 hold）→ 分出勝負才 R.resolved → 下一手 handReady）
-//   variant：'plain' 照手指點（點封面能選對就點封面，不然點星鈕）｜'chip' 一律點星鈕｜'wrong' 每個操作步先點錯幾種｜'info' 每一步先開唱片資訊再關
+//   variant：'plain' 照手指點（先點疊著的手牌攤開，再點封面、點屬性鈕）｜'direct' 手牌已攤開（直接點封面）｜'wrong' 每個操作步先點錯幾種｜'info' 每一步先開唱片資訊再關
 function route(tier, bargain, variant = 'plain', o = {}) {
   const { run, duel } = tutDuel(tier, bargain, o.seedKey);
   const bargainOf = run.bag.slice(4);   // 特價箱挑的三張（照挑的順序）
@@ -89,7 +91,7 @@ function route(tier, bargain, variant = 'plain', o = {}) {
     if (variant === 'info') peek();
     if (s.kind === 'say') {
       ok(!TUT.atResolve(s) || (out.clashes.length && s.hand === out.clashes.length), tag + ' ' + s.id + ' 結算時講的步驟只在剛結算完出現');
-      if (variant === 'wrong') tryWrong({ kind: 'chip', i: 0, attr: 'o', id: duel.p.hand[0] && duel.p.hand[0].id }, '說明步點星鈕');
+      if (variant === 'wrong') { tryWrong({ kind: 'card', i: 0, attr: 'o', id: duel.p.hand[0] && duel.p.hand[0].id }, '說明步點封面'); tryWrong({ kind: 'spread' }, '說明步點手牌'); }
       out.steps.push(s.id);
       if (s.learn) out.learnedAt[s.learn] = s.id;
       R.done();
@@ -105,39 +107,42 @@ function route(tier, bargain, variant = 'plain', o = {}) {
       if (s.pick === 'blocked:o' && bargainOf) ok(want && want.i === 0 && duel.p.hand[0].id === bargainOf[1], tag + ' 第 5 手手指＝最左＝特價箱挑的第 2 張', { want, hand: duel.p.hand.map(c => c.id) });
     }
     if (!want) break;
-    if (!al.throw) {                    // 點那一顆
+    // 點手牌外面（收回）：教學中不放行、不算點錯、不前進
+    { const idx = R.idx; ok(R.gate({ kind: 'collapse' }) === false && R.last.quiet === true && !R.last.wrong && R.idx === idx, tag + ' ' + s.id + ' 收回手牌：不放行、不罵'); }
+    if (!al.throw) {                    // 點那一張（疊著時先攤開）
+      ok(TUT.isLift(s), tag + ' ' + s.id + ' 是點那張的步驟');
       if (variant === 'wrong') {
         const others = duel.p.hand.map((c, i) => i).filter(i => i !== want.i && duel.p.hand[i]);
-        if (want.i !== 'ace') {
-          tryWrong(chipAct(duel, want.i, ATTRS.find(a => a !== want.attr)), '同一張別色');
-          if (E.topAttr(cardAt(duel, want.i)) !== want.attr) tryWrong(cardAct(duel, want.i), '點封面（topAttr 不是要的那色）');
-          if (duel.p.ace && !duel.p.aceUsed) tryWrong(cardAct(duel, 'ace'), '點王牌');
-        }
-        if (others.length) { tryWrong(chipAct(duel, others[0], want.attr), '別張同色'); tryWrong(cardAct(duel, others[0]), '點別張的封面'); }
-        tryWrong({ kind: 'throw', i: want.i, attr: want.attr, id: cardAt(duel, want.i).id }, '還沒選就丟');
+        if (want.i !== 'ace' && duel.p.ace && !duel.p.aceUsed) tryWrong(cardAct(duel, 'ace'), '點王牌');
+        if (others.length) { tryWrong(cardAct(duel, others[0]), '點別張的封面'); tryWrong(chipAct(duel, others[0], want.attr), '別張同色（API）'); }
+        tryWrong(shotAct(duel, want.i, want.attr), '還沒浮起就丟');
       }
-      const useCard = variant !== 'chip' && (want.i === 'ace' || E.topAttr(cardAt(duel, want.i)) === want.attr);
-      const a = useCard ? cardAct(duel, want.i) : chipAct(duel, want.i, want.attr);
-      ok(R.gate(a) === true, tag + ' ' + s.id + ' 點手指那顆（' + a.kind + '）', a);
+      if (variant !== 'direct') {
+        const idx = R.idx;
+        ok(R.gate({ kind: 'spread' }) === true && R.last.ok && R.last.spread && !R.last.final && R.idx === idx && R.state === 'run', tag + ' ' + s.id + ' 點疊著的手牌：放行（攤開），這步還沒完成');
+      }
+      const a = cardAct(duel, want.i);
+      ok(R.gate(a) === true, tag + ' ' + s.id + ' 點手指那張（' + a.kind + '）', a);
       ok(R.last.final === true && R.state === 'run', tag + ' ' + s.id + ' 這步完成');
       out.steps.push(s.id);
       continue;
     }
-    // 丟
+    // 點那個屬性＝丟
     const p = R.pick;
-    ok(p && p.i === want.i && p.attr === want.attr, tag + ' ' + s.id + ' 上一步點的就是手指那顆', { p, want });
+    ok(p && p.i === want.i, tag + ' ' + s.id + ' 上一步點的就是手指那張', { p, want });
     if (variant === 'wrong') {
-      const others = duel.p.hand.map((c, i) => i).filter(i => i !== p.i && duel.p.hand[i]);
-      if (others.length) { tryWrong(chipAct(duel, others[0], p.attr), '丟之前換點別張'); tryWrong({ kind: 'throw', i: others[0], attr: p.attr, id: duel.p.hand[others[0]].id }, '丟別張'); }
-      if (p.i !== 'ace') tryWrong({ kind: 'throw', i: p.i, attr: ATTRS.find(a => a !== p.attr), id: cardAt(duel, p.i).id }, '丟同張別色');
+      const others = duel.p.hand.map((c, i) => i).filter(i => i !== want.i && duel.p.hand[i]);
+      if (others.length) { tryWrong(cardAct(duel, others[0]), '丟之前換浮起別張'); tryWrong(shotAct(duel, others[0], want.attr), '丟別張'); }
+      if (want.i !== 'ace') for (const a of ATTRS.filter(a => a !== want.attr)) tryWrong(shotAct(duel, want.i, a), '丟同張別色 ' + a);
+      tryWrong({ kind: 'spread' }, '點屬性那步點手牌');
     }
     out.hints.push(E.view(duel).hint.line);
     const plan = duel.plan;
-    ok(R.gate({ kind: 'throw', i: p.i, attr: p.attr, id: cardAt(duel, p.i).id }) === true, tag + ' ' + s.id + ' 丟');
+    ok(R.gate(shotAct(duel, want.i, want.attr)) === true, tag + ' ' + s.id + ' 點屬性鈕＝丟');
     ok(R.last.commit === true && R.awaiting === true, tag + ' ' + s.id + ' 丟出去＝等結算');
     out.steps.push(s.id);
     if (s.learn) out.learnedAt[s.learn] = s.id;
-    const act = actOf(p);
+    const act = actOf(want);
     const pv = E.preview(duel, act, { i: plan.idx, attr: plan.attr });
     const evs = E.resolveTurn(duel, act, {});
     const cl = evs.find(e => e.t === 'clash');
@@ -192,7 +197,7 @@ const tutSrc = fs.readFileSync(path.join(LAB, 'tutorial.js'), 'utf8');
 // 目標名：duel.js 的 data-tut 名或 elByName 認得的前綴；'tile:' 是 tutorial.js 自己的前綴（那顆所在的整格）
 function nameKnown(n) {
   if (n.startsWith('tile:')) return tutSrc.includes("'tile:'") && nameKnown(n.slice(5));
-  for (const pre of ['chip:id:', 'chip:blocked:', 'card:id:', 'chip:best:', 'card:best:']) if (n.startsWith(pre)) return duelSrc.includes("'" + pre + "'") || duelSrc.includes("startsWith('" + pre);
+  for (const pre of ['chip:id:', 'chip:blocked:', 'card:id:', 'card:blocked:', 'chip:best:', 'card:best:']) if (n.startsWith(pre)) return duelSrc.includes("'" + pre + "'") || duelSrc.includes("startsWith('" + pre);
   return duelSrc.includes('data-tut="' + n + '"') || duelSrc.includes("'" + n + "'") || duelSrc.includes('"' + n + '"') || new RegExp('data-tut="\\$\\{isAce \\? \'' + n + '\'').test(duelSrc);
 }
 section('步驟資料：18 步、六手、≤25 字、禁用字、目標名＝duel.js、allow、三角邊、小卡 L1–L6', () => {
@@ -200,7 +205,7 @@ section('步驟資料：18 步、六手、≤25 字、禁用字、目標名＝du
   eq(steps.map(s => s.id), IDS, '18 步照順序');
   const FORBID = /——|—|派對|櫃台|卡片資訊|氣勢|輾壓|賭注|相生|割捨|七星回擊|霸權|點播|配件|脾氣|急了|看穿/;
   for (const s of steps) {
-    const texts = typeof s.text === 'object' ? Object.values(s.text) : [s.text];
+    const texts = (typeof s.text === 'object' ? Object.values(s.text) : [s.text]).concat(s.spread != null ? [s.spread] : []);
     for (const t of texts) {
       ok(typeof t === 'string' && t.length > 0, s.id + ' 有台詞');
       ok(len(t) <= 25, s.id + ' ≤25 字（' + len(t) + '）：' + t);
@@ -211,8 +216,9 @@ section('步驟資料：18 步、六手、≤25 字、禁用字、目標名＝du
     ok(['say', 'do'].includes(s.kind), s.id + ' 說或做');
     if (s.tri) eq(s.tri, TRI[s.id], s.id + ' 三角亮邊');
     else ok(!TRI[s.id], s.id + ' 要亮三角');
-    if (s.kind === 'do') ok(s.allow && (s.allow.pick || s.allow.throw) && !(s.allow.pick && s.allow.throw), s.id + ' 做的步驟：點（allow.pick）或丟（allow.throw）');
+    if (s.kind === 'do') ok(s.allow && s.allow.pick === true && Object.keys(s.allow).every(k => k === 'pick' || k === 'throw'), s.id + ' 做的步驟：點那張（allow.pick）或點那個屬性＝丟（allow.pick＋throw）');
   }
+  eq(steps.filter(s => s.spread).map(s => [s.id, s.spread]), [['m2', '點一下手牌攤開。']], '「點一下手牌攤開。」只在第 1 手點那張那步（手牌疊著時）');
   eq(Object.fromEntries(steps.filter(s => s.learn).map(s => [s.id, s.learn])), LEARN_AT, '學會的小卡在 m4／k3／c2／h2／b3／a3');
   eq(T.learned, LEARNED, '小卡 L1–L6＝§2.5.5');
   for (const v of Object.values(T.learned)) ok(len(v) <= 16 && !/霸權|配件/.test(v), '小卡 ≤16 字、沒有禁用字：' + v);
@@ -228,13 +234,19 @@ section('步驟資料：18 步、六手、≤25 字、禁用字、目標名＝du
         ok(n !== 'pick' && n !== 'tile:pick', t + ' ' + s.id + ' pick 都代入了：' + n);
         ok(nameKnown(n), t + ' ' + s.id + ' 目標名在 duel.js 裡：' + n);
       }
-      if (s.kind === 'do' && !s.allow.throw) {
-        const p = pick[s.hand - 1];
-        if (p === 'ace') { eq(s.allow, { ace: true }, t + ' ' + s.id + ' 第 6 手只放行王牌'); eq([s.target, s.point], [['hand-ace'], 'card-ace'], t + ' ' + s.id + ' 王牌那格、手指指封面'); }
-        else if (p === 'blocked:o') { eq(s.allow, { chip: { blocked: 'o' } }, t + ' ' + s.id + ' 第 5 手只放行 blockedChoice 那張的冷門'); eq(s.point, 'chip:blocked:o', t + ' ' + s.id + ' 手指 chip:blocked:o'); }
-        else { eq(s.allow, { chip: { id: p.id, attr: p.attr } }, t + ' ' + s.id + ' 只放行 pick 那張那色'); eq([s.target, s.point], [['tile:chip:id:' + p.id + ':' + p.attr], 'chip:id:' + p.id + ':' + p.attr], t + ' ' + s.id + ' 洞＝那一格、手指＝那顆星'); }
+      const p = pick[s.hand - 1];
+      if (s.kind === 'do' && !s.allow.throw) {        // 點那張（疊著時 tutorial.js 先指 'hand'）
+        ok(TUT.isLift(s), t + ' ' + s.id + ' isLift');
+        if (p === 'ace') { eq(s.allow, { ace: true }, t + ' ' + s.id + ' 第 6 手只放行王牌'); eq([s.target, s.point], [['card-ace'], 'card-ace'], t + ' ' + s.id + ' 洞＝王牌封面、手指指它'); }
+        else if (p === 'blocked:o') { eq(s.allow, { card: { blocked: 'o' } }, t + ' ' + s.id + ' 第 5 手只放行 blockedChoice 那張'); eq([s.target, s.point], [['card:blocked:o'], 'card:blocked:o'], t + ' ' + s.id + ' 手指 card:blocked:o'); }
+        else { eq(s.allow, { card: { id: p.id } }, t + ' ' + s.id + ' 只放行 pick 那張'); eq([s.target, s.point], [['card:id:' + p.id], 'card:id:' + p.id], t + ' ' + s.id + ' 洞＝那張封面、手指指它'); }
       }
-      if (s.kind === 'do' && s.allow.throw) { eq(s.allow, { throw: true }, t + ' ' + s.id + ' 丟的那步只放行丟'); eq(s.point, 'throw', t + ' ' + s.id + ' 手指指「丟！」'); }
+      if (s.kind === 'do' && s.allow.throw) {         // 點那個屬性＝丟
+        ok(!TUT.isLift(s) && TUT.isCommit(s), t + ' ' + s.id + ' isCommit');
+        if (p === 'ace') { eq(s.allow, { throw: true, ace: true }, t + ' ' + s.id + ' 只放行王牌那顆'); eq([s.target, s.point, s.look], [['chip-ace'], 'chip-ace', ['card-ace']], t + ' ' + s.id + ' 洞＝王牌那顆、看得到王牌'); }
+        else if (p === 'blocked:o') { eq(s.allow, { throw: true, chip: { blocked: 'o' } }, t + ' ' + s.id + ' 只放行 blockedChoice 那張的冷門'); eq([s.target, s.point, s.look], [['chip:blocked:o'], 'chip:blocked:o', ['card:blocked:o']], t + ' ' + s.id + ' 手指 chip:blocked:o'); }
+        else { eq(s.allow, { throw: true, chip: { id: p.id, attr: p.attr } }, t + ' ' + s.id + ' 只放行那張那色'); eq([s.target, s.point, s.look], [['chip:id:' + p.id + ':' + p.attr], 'chip:id:' + p.id + ':' + p.attr, ['card:id:' + p.id]], t + ' ' + s.id + ' 洞＝那顆屬性鈕、看得到那張'); }
+      }
     }
     eq(S.find(s => s.id === 'a3').text, T.steps.find(s => s.id === 'a3').text[t], t + ' a3 用這張王牌的那句');
   }
@@ -270,11 +282,11 @@ section('老闆說的話是真的：提示、點破的關鍵字、三相剋、�
 });
 
 // ---------------------------------------------------------------------------
-section('三王牌 × 特價箱 84 種挑法 × {照做、只點星鈕、點錯、看唱片資訊}：18 步走完、每手＝expect、第 6 手 KO、學到 L1–L6', () => {
+section('三王牌 × 特價箱 84 種挑法 × {照做（先攤開）、直接點、點錯、看唱片資訊}：18 步走完、每手＝expect、第 6 手 KO、學到 L1–L6', () => {
   eq(COMBOS.length, 84, '特價箱 9 張挑 3＝84 種');
   let n = 0;
   for (const t of TIERS) for (let k = 0; k < COMBOS.length; k++) {
-    for (const variant of ['plain', 'chip', 'wrong', 'info']) {
+    for (const variant of ['plain', 'direct', 'wrong', 'info']) {
       // 挑的順序也換一換（照挑的順序抽）
       const combo = k % 2 ? COMBOS[k].slice().reverse() : COMBOS[k];
       const r = route(t, combo, variant, { seedKey: 'tut-' + t + '-' + k });
@@ -305,7 +317,7 @@ section('三王牌 × 特價箱 84 種挑法 × {照做、只點星鈕、點錯�
 });
 
 // ---------------------------------------------------------------------------
-section('擋錯招（e2e #20 的純邏輯版）：第 2 步點別色／別張、第 5 手點不是 blockedChoice 的那張 → 不前進、標 wrong', () => {
+section('擋錯招（e2e #20 的純邏輯版）：第 1 手點別張／王牌、點同張別色、第 5 手點不是 blockedChoice 的那張 → 不前進、標 wrong；收回手牌不罵', () => {
   for (const t of TIERS) {
     const { duel } = tutDuel(t);
     const R = TUT.createRunner(C, t, duel, { engine: E });
@@ -313,15 +325,23 @@ section('擋錯招（e2e #20 的純邏輯版）：第 2 步點別色／別張、
     eq(R.cur().id, 'm2', t + ' 到 m2');
     R.begin();
     const w = target(duel, T.script[t].pick[0]);
-    for (const a of [chipAct(duel, w.i, 'o'), chipAct(duel, w.i, 'h'), chipAct(duel, (w.i + 1) % duel.p.hand.length, 'c'), cardAct(duel, 'ace'), { kind: 'throw', i: w.i, attr: 'c', id: 'x' }])
+    for (const a of [cardAct(duel, (w.i + 1) % duel.p.hand.length), cardAct(duel, 'ace'), chipAct(duel, (w.i + 1) % duel.p.hand.length, 'c'), shotAct(duel, w.i, 'c')])
       eq(R.gate(a), false, t + ' m2 擋 ' + JSON.stringify(a));
     eq([R.cur().id, duel.n, R.state], ['m2', 1, 'run'], t + ' 被擋後還在 m2、引擎第 1 手');
     eq(R.last.wrong, 'target', t + ' 標 wrong');
-    // 等結算時點星鈕：擋；看唱片資訊：放行
-    R.gate(chipAct(duel, w.i, w.attr)); R.begin(); R.gate({ kind: 'throw', i: w.i, attr: w.attr, id: 'x' });
+    eq([R.gate({ kind: 'collapse' }), R.last.quiet, R.cur().id], [false, true, 'm2'], t + ' 收回手牌：不放行、不罵');
+    ok(R.gate({ kind: 'spread' }) && R.last.spread && R.cur().id === 'm2', t + ' m2 攤開：放行、還在 m2');
+    ok(R.gate(cardAct(duel, w.i)) && R.cur().id === 'm3', t + ' m2 點那張 → m3');
+    R.begin();
+    for (const a of ATTRS.filter(a => a !== w.attr).map(a => shotAct(duel, w.i, a)).concat([cardAct(duel, (w.i + 1) % duel.p.hand.length), { kind: 'spread' }]))
+      eq(R.gate(a), false, t + ' m3 擋 ' + JSON.stringify(a));
+    eq(R.cur().id, 'm3', t + ' 被擋後還在 m3');
+    // 等結算時點封面／屬性／手牌：擋；看唱片資訊：放行
+    R.gate(shotAct(duel, w.i, w.attr));
     ok(R.awaiting, t + ' 丟出去之後在等結算');
-    eq(R.gate(chipAct(duel, 0, 'c')), false, t + ' 等結算時點星鈕：擋');
+    eq(R.gate(chipAct(duel, 0, 'c')), false, t + ' 等結算時點屬性：擋');
     eq(R.gate(cardAct(duel, 0)), false, t + ' 等結算時點封面：擋');
+    eq(R.gate({ kind: 'spread' }), false, t + ' 等結算時點手牌：擋');
     eq(R.gate({ kind: 'info', where: 'slot-e' }), true, t + ' 等結算時看唱片資訊：放行');
   }
   // 第 5 手：手牌三張特價箱都冷 ≤3（都會剋不動），手指只指 blockedChoice 那張（最左）
@@ -333,9 +353,13 @@ section('擋錯招（e2e #20 的純邏輯版）：第 2 步點別色／別張、
   R5.begin();
   const b = E.blockedChoice(duel, 'o');
   ok(b && b.i === 0, 'blockedChoice＝最左那張', b);
-  eq(R5.gate(chipAct(duel, 1, 'o')), false, 'b1 別張的冷門：擋');
-  eq(R5.gate(chipAct(duel, 0, 'c')), false, 'b1 那張的經典：擋');
-  eq(R5.gate(chipAct(duel, 0, 'o')), true, 'b1 那張的冷門：放行');
+  eq(R5.gate(cardAct(duel, 1)), false, 'b1 點別張：擋');
+  eq(R5.gate(cardAct(duel, 0)), true, 'b1 點 blockedChoice 那張：放行');
+  R5.begin();
+  eq(R5.cur().id, 'b2', '到 b2');
+  eq(R5.gate(shotAct(duel, 0, 'c')), false, 'b2 那張的經典：擋');
+  eq(R5.gate(shotAct(duel, 1, 'o')), false, 'b2 別張的冷門：擋');
+  eq(R5.gate(shotAct(duel, 0, 'o')), true, 'b2 那張的冷門：放行（丟）');
 });
 
 // ---------------------------------------------------------------------------
@@ -385,27 +409,32 @@ section('跳過、放手、輸了：狀態、gate 全放行', () => {
 });
 
 // ---------------------------------------------------------------------------
-section('matches／chipOk：點封面要選對色、id／blocked／ace、丟的要是點的那顆', () => {
+section('matches／chipOk：點那張認 id／blocked／ace；點屬性（丟）要是那張那色', () => {
   const { duel } = tutDuel('hall');
   const R = TUT.createRunner(C, 'hall', duel, { engine: E });
   const ctx = R.context();
   const S = TUT.stepsFor(C, 'hall');
-  const k1 = S.find(s => s.id === 'k1'), m2 = S.find(s => s.id === 'm2'), m3 = S.find(s => s.id === 'm3');
+  const k1 = S.find(s => s.id === 'k1'), k2 = S.find(s => s.id === 'k2'), m2 = S.find(s => s.id === 'm2'), m3 = S.find(s => s.id === 'm3');
   const kf = 'beverly-glenn-copeland-keyboard-fantasies', low = 'david-bowie-low';
   const iKF = idxOf(duel, kf), iLow = idxOf(duel, low);
-  ok(TUT.matches(m2, cardAct(duel, iLow), ctx), 'm2 點 Low 的封面（topAttr＝經典）：放行');
-  ok(TUT.matches(m2, chipAct(duel, iLow, 'c'), ctx), 'm2 點 Low 的經典：放行');
-  ok(!TUT.matches(m2, chipAct(duel, iLow, 'h'), ctx), 'm2 點 Low 的硬蕊：擋');
+  ok(TUT.matches(m2, cardAct(duel, iLow), ctx), 'm2 點 Low 的封面：放行');
+  ok(!TUT.matches(m2, cardAct(duel, iKF), ctx), 'm2 點別張：擋');
+  ok(!TUT.matches(m2, shotAct(duel, iLow, 'c'), ctx), 'm2 還沒浮起就丟：擋');
   eq(E.topAttr(C.cards[kf]), 'c', 'Keyboard Fantasies 的 topAttr 是經典');
-  ok(!TUT.matches(k1, cardAct(duel, iKF), ctx), 'k1 點 Keyboard Fantasies 的封面（會選到經典）：擋');
-  ok(TUT.matches(k1, chipAct(duel, iKF, 'o'), ctx), 'k1 點 Keyboard Fantasies 的冷門：放行');
-  ok(!TUT.matches(m3, { kind: 'throw', i: iLow, attr: 'c', id: low }, Object.assign({}, ctx, { pick: { i: iKF, attr: 'o' } })), '丟的跟點的不是同一顆：擋');
-  ok(TUT.matches(m3, { kind: 'throw', i: iLow, attr: 'c', id: low }, Object.assign({}, ctx, { pick: { i: iLow, attr: 'c' } })), '丟點的那顆：放行');
-  ok(TUT.matches({ allow: { ace: true } }, { kind: 'card', i: 'ace', attr: 'c', id: C.aces.hall }, ctx) && TUT.matches({ allow: { ace: true } }, { kind: 'chip', i: 'ace', attr: 'c', id: C.aces.hall }, ctx), 'allow.ace：點王牌封面或星鈕都行');
+  ok(TUT.matches(k1, cardAct(duel, iKF), ctx), 'k1 點 Keyboard Fantasies 的封面（不管 topAttr）：放行');
+  ok(TUT.matches(k2, shotAct(duel, iKF, 'o'), ctx), 'k2 點 Keyboard Fantasies 的冷門：放行');
+  ok(!TUT.matches(k2, shotAct(duel, iKF, 'c'), ctx), 'k2 點 Keyboard Fantasies 的經典（topAttr）：擋');
+  ok(!TUT.matches(m3, shotAct(duel, iKF, 'c'), ctx), 'm3 丟別張：擋');
+  ok(TUT.matches(m3, shotAct(duel, iLow, 'c'), ctx), 'm3 丟 Low 的經典：放行');
+  ok(TUT.matches({ allow: { ace: true } }, { kind: 'card', i: 'ace', attr: 'c', id: C.aces.hall }, ctx), 'allow.ace：點王牌封面');
+  ok(TUT.matches({ allow: { throw: true, ace: true } }, { kind: 'throw', i: 'ace', attr: 'c', id: C.aces.hall }, ctx) && !TUT.matches({ allow: { throw: true, ace: true } }, shotAct(duel, 0, 'c'), ctx), 'allow throw＋ace：只丟王牌');
   ok(!TUT.matches({ allow: { ace: true } }, cardAct(duel, 0), ctx), 'allow.ace：點別張擋');
-  ok(TUT.matches({ allow: { card: { id: low } } }, cardAct(duel, iLow), ctx) && !TUT.matches({ allow: { card: { id: low } } }, chipAct(duel, iLow, 'c'), ctx), 'allow.card：只認點那張的封面');
-  ok(!TUT.matches({ allow: { chip: { blocked: 'o' } } }, chipAct(duel, 0, 'o'), Object.assign({}, ctx, { blocked: { c: null, o: null, h: null } })), 'blocked 沒有那張：擋');
+  const bk = { o: { i: 2, attr: 'o' } };
+  ok(TUT.matches({ allow: { card: { blocked: 'o' } } }, cardAct(duel, 2), Object.assign({}, ctx, { blocked: bk })) && !TUT.matches({ allow: { card: { blocked: 'o' } } }, cardAct(duel, 1), Object.assign({}, ctx, { blocked: bk })), 'allow.card.blocked：只認 blockedChoice 那張');
+  ok(!TUT.matches({ allow: { card: { blocked: 'o' } } }, cardAct(duel, 2), Object.assign({}, ctx, { blocked: { c: null, o: null, h: null } })), 'blocked 沒有那張：擋');
+  ok(!TUT.matches({ allow: { throw: true, chip: { blocked: 'o' } } }, shotAct(duel, 0, 'o'), Object.assign({}, ctx, { blocked: { c: null, o: null, h: null } })), 'blocked 沒有那張：丟也擋');
   ok(!TUT.matches(m2, { kind: 'info', where: 'e-rec' }, ctx), '沒有 allow.info 的步驟：看唱片資訊不算完成這步');
+  ok(!TUT.matches(m2, { kind: 'spread' }, ctx) && TUT.isLift(m2) && !TUT.isLift(m3), 'spread 不是 matches 管的（runner：點那張的步驟放行、不完成）');
   ok(!TUT.matches(null, chipAct(duel, 0, 'o'), ctx) && !TUT.matches(m2, null, ctx), 'null 安全');
   // v3 的 {i:'best'|'any'} 照收
   ok(TUT.chipOk({ i: 'any', attr: 'h' }, { kind: 'chip', i: 1, attr: 'h' }, ctx) && !TUT.chipOk({ i: 'any', attr: 'h' }, { kind: 'chip', i: 1, attr: 'o' }, ctx), 'v3 {i:any} 照收');
@@ -433,9 +462,9 @@ section('重看教學：包包＝老闆四張＋特價箱 c／o／h 各第一張
         const s = R.begin(); if (!s) break;
         if (s.kind === 'say') { R.done(); continue; }
         const w = target(rp.duel, s.pick);
-        if (!s.allow.throw) { R.gate(chipAct(rp.duel, w.i, w.attr)); continue; }
-        R.gate({ kind: 'throw', i: R.pick.i, attr: R.pick.attr, id: 'x' });
-        const evs = E.resolveTurn(rp.duel, actOf(R.pick), {});
+        if (!s.allow.throw) { R.gate({ kind: 'spread' }); R.gate(cardAct(rp.duel, w.i)); continue; }
+        R.gate(shotAct(rp.duel, w.i, w.attr));
+        const evs = E.resolveTurn(rp.duel, actOf(w), {});
         clashes.push(evs.find(e => e.t === 'clash'));
         while (R.state === 'run' && TUT.atResolve(R.cur())) { R.begin(); R.done(); }
         const over = evs.find(e => e.t === 'over');

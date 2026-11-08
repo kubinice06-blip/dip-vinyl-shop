@@ -11,20 +11,20 @@
 // 情境（v4，§5.5）：
 //   1 開頁：標題 2.5 s 內、兩顆推門鈕在畫面內、沒有捲動
 //   3 推門到第一手（猜歌、挑王牌、收下四張、特價三張、收下、接受對決（手伸進袋子））≤16 下（特價區用替身時照真的面板算 4 下）
-//   4 對決版面（v4 名字）：e-hint e-rec tri rounds 手牌三張＋王牌 全部星鈕 throw 的下緣都 ≤ innerHeight；誠實度名牌看不到（D §5）
-//   6 點擊區：星鈕 ≥28×44、丟！≥44×40、頂欄鈕 ≥40×44；數字 ≥12px
+//   4 對決版面（v4 名字）：e-hint e-rec tri rounds 手牌（扇形 5 張＋王牌）的下緣都 ≤ innerHeight；攤開、浮起之後三顆屬性鈕也在畫面裡；誠實度名牌看不到（D §5）
+//   6 點擊區：屬性鈕 ≥44×44、攤開的封面 ≥44×44、頂欄鈕 ≥40×44；數字 ≥12px（FIXLIST 11：沒有星鈕列、沒有丟！）
 //   7 序章打贏 → 地上的唱片撿起面板（沒有標題字，只有封面、藝人《專輯》、兩顆鈕）→ 配件三選一 → 今晚來客且第一位客人已在店裡
 //   8 序章打輸 →「……再一場。」→ 同一位男子、聲望回滿
 //   9 一整晚 autoplay('thoughtful',{until:'end'}) → 結算三件事 → 13 再來一夜（挑王牌 → 走到特價箱挑三張 → 今晚來客、包包 7；上一晚的配件還在）
 //  10 續玩：打到第 2 手重新整理 → 繼續今晚 → 同一場、同一手
 //  11 存檔只寫 dipGameLab_v1、版本 4；v3 存檔被安全丟掉
 //  12 網路：沒有 Firebase
-//  14 長按手牌封面＝唱片資訊；點一下＝選牌（不開）
+//  14 長按手牌封面＝唱片資訊（扇形也行）；點一下＝攤開／浮起（不開）
 //  16 標題有存檔時點兩下店門＝繼續今晚
 //  17 他在上、你在下；舞台他左你右、老闆在中間；一台唱盤在兩人中間
 //  18 每張專輯都開得了唱片資訊：手牌（長按）、王牌（長按）、牌桌兩張、猜歌面板、挑唱片面板、唱片櫃、牆上的（抽屜與特價箱：真的經濟介面才測）
 //  19 教學三王牌六手照課表：每手 kind／toE／toP＝C.tutorial.expect、第 6 手 KO、學到 L1–L6、tutorialDone
-//  20 教學擋錯招：第 1 手點別張（遮罩上）、第 2 手點同一格的別色 →「先點我指的這裡。」、手數不前進、沒選到
+//  20 教學擋錯招：第 1 手攤開後點別張、第 2 手點浮起那張的別色屬性鈕（都在遮罩上）→「先點我指的這裡。」、手數不前進（第 1 手沒浮起、第 2 手沒丟出去）
 //  21 直接開打：沒有遮罩、男子 10 聲望；21b 教學程式不在（canTutorial 假）：兩顆鈕都在，第 0 顆照課表出牌（他 18、第一手 Mylo Xyloto）、沒有遮罩
 //  22 不捲動：標題、對決、今晚來客、挑唱片、規則卡、撿起面板
 //  27 無縫接軌：今晚來客 → 對決 → 挑唱片 → 今晚來客，#stage canvas 是同一個節點；黑條只在 #stage 裡、≤1.6 s
@@ -129,18 +129,22 @@ async function run() {
         if (ready) {
           if (want(4)) {
             const r = await page.evaluate(() => {
-              const names = ['e-hint', 'e-rec', 'tri', 'rounds', 'hand-ace', 'hand-0', 'hand-1', 'hand-2', 'throw'];
+              const names = ['e-hint', 'e-rec', 'tri', 'rounds', 'hand', 'hand-ace', 'hand-0', 'hand-1', 'hand-2', 'hand-3', 'hand-4'];
               const out = {}; names.forEach(n => { const e = document.querySelector('.dl [data-tut="' + n + '"]'); out[n] = e ? Math.round(e.getBoundingClientRect().bottom) : -1; });
-              const chips = [...document.querySelectorAll('.dl .chip')].map(c => Math.round(c.getBoundingClientRect().bottom));
               const hon = document.querySelector('.dl [data-tut="e-honesty"]');
               const honVis = !!hon && hon.getBoundingClientRect().height > 0 && getComputedStyle(hon).display !== 'none' && !hon.hidden;
               const hint = (document.querySelector('.dl [data-tut="e-hint"] .tx') || {}).textContent || '';
-              return { out, chipMax: Math.max(...chips), chips: chips.length, vh: innerHeight, honVis, hint, attrWord: /經典|冷門|硬蕊/.test(hint) };
+              return { out, vh: innerHeight, honVis, hint, attrWord: /經典|冷門|硬蕊/.test(hint), old: document.querySelectorAll('.dl .chip, .dl [data-tut=throw]').length };
             });
+            // 攤開、浮起第 0 張：三顆屬性鈕都在畫面裡
+            await tapAt(page, 'dt:hand'); await sleep(300); await tapAt(page, 'dt:card-0'); await sleep(300);
+            const ab = await page.evaluate(() => [...document.querySelectorAll('.dl .pop .ab')].map(b => { const r = b.getBoundingClientRect(); return [Math.round(r.top), Math.round(r.bottom)]; }));
+            await page.evaluate(() => window.DipLabDuel.spread(false)); await sleep(250);
             const bad = Object.entries(r.out).filter(([k, v]) => v < 0 || v > r.vh);
-            record(4, size, !bad.length && r.chipMax <= r.vh && r.chips >= 10 && !r.honVis && r.hint && !r.attrWord, `bottoms ${JSON.stringify(r.out)} chips ${r.chips} max ${r.chipMax} ≤ ${r.vh}; honesty visible ${r.honVis}; hint「${r.hint}」${bad.length ? ' BAD ' + JSON.stringify(bad) : ''}`);
+            record(4, size, !bad.length && ab.length === 3 && ab.every(([t, b]) => t >= 0 && b <= r.vh) && !r.old && !r.honVis && r.hint && !r.attrWord, `bottoms ${JSON.stringify(r.out)} ≤ ${r.vh}; 屬性鈕 ${JSON.stringify(ab)}; 舊星鈕／丟！${r.old}; honesty visible ${r.honVis}; hint「${r.hint}」${bad.length ? ' BAD ' + JSON.stringify(bad) : ''}`);
           }
           if (want(6)) {
+            await tapAt(page, 'dt:hand'); await sleep(300); await tapAt(page, 'dt:card-1'); await sleep(300);
             const r = await page.evaluate(() => {
               const small = [];
               const hit = el => { const b = el.getBoundingClientRect(); let w0 = b.width, h0 = b.height;
@@ -148,13 +152,15 @@ async function run() {
                   const t = parseFloat(cs.top) || 0, bt = parseFloat(cs.bottom) || 0, l = parseFloat(cs.left) || 0, r = parseFloat(cs.right) || 0;
                   h0 = Math.max(h0, b.height - Math.min(0, t) - Math.min(0, bt)); w0 = Math.max(w0, b.width - Math.min(0, l) - Math.min(0, r)); }
                 return { w: w0, h: h0 }; };
-              document.querySelectorAll('.dl .chip').forEach(c => { const b = hit(c); if (b.w < 27.5 || b.h < 43.5) small.push(c.dataset.tut + ' ' + Math.round(b.w) + 'x' + Math.round(b.h)); });
-              const th = document.querySelector('.dl [data-tut=throw]').getBoundingClientRect();
-              if (th.width < 44 || th.height < 40) small.push('throw ' + Math.round(th.width) + 'x' + Math.round(th.height));
+              const abs = document.querySelectorAll('.dl .pop .ab');
+              if (abs.length !== 3) small.push('屬性鈕 ' + abs.length + ' 顆');
+              abs.forEach(c => { const b = hit(c); if (b.w < 43.5 || b.h < 43.5) small.push(c.dataset.tut + ' ' + Math.round(b.w) + 'x' + Math.round(b.h)); });
+              document.querySelectorAll('.dl .tile .cvw').forEach(c => { const b = c.getBoundingClientRect(); if (b.width < 43.5 || b.height < 43.5) small.push(c.dataset.tut + ' ' + Math.round(b.width) + 'x' + Math.round(b.height)); });
               document.querySelectorAll('#top button').forEach(b0 => { const b = b0.getBoundingClientRect(); const cs = getComputedStyle(b0, '::after'); const hh = b.height + (parseFloat(cs.top) < 0 ? -parseFloat(cs.top) * 2 : 0); if (b.width < 40 || hh < 44) small.push('top ' + b0.textContent + ' ' + Math.round(b.width) + 'x' + Math.round(hh)); });
-              const fonts = []; document.querySelectorAll('.dl .chip, .dl [data-tut=e-hp], .dl [data-tut=p-hp]').forEach(e => { const fs = parseFloat(getComputedStyle(e).fontSize); if (fs < 12) fonts.push(e.dataset.tut + ' ' + fs); });
+              const fonts = []; document.querySelectorAll('.dl .pop .ab, .dl [data-tut=e-hp], .dl [data-tut=p-hp]').forEach(e => { const fs = parseFloat(getComputedStyle(e).fontSize); if (fs < 12) fonts.push(e.dataset.tut + ' ' + fs); });
               return { small, fonts };
             });
+            await page.evaluate(() => window.DipLabDuel.spread(false)); await sleep(250);
             record(6, size, !r.small.length && !r.fonts.length, `small ${JSON.stringify(r.small).slice(0, 200)} fonts ${JSON.stringify(r.fonts)}`);
           }
           if (want(17)) {
@@ -163,7 +169,7 @@ async function run() {
               const st = window.__lab.stage, x = id => { const a = st && st.anchor(id); return a ? a.getBoundingClientRect().left : NaN; };
               const L = st.layout, decks = (L.props || []).filter(q => q.type === 'duelDeck');
               const d = decks[0], mid = d ? d.x + d.w / 2 : NaN, sE = L.spots.duelE, sP = L.spots.duelP;
-              const handInE = !!document.querySelector('.dl [data-tut=e-hud] .chip');
+              const handInE = !!document.querySelector('.dl [data-tut=e-hud] .ab, .dl [data-tut=e-hud] .tile');
               return { eAbove: e.top < p.top, f: x('f'), o: x('o'), p: x('p'), decks: decks.length, deckMid: mid, between: d && Math.abs(mid - (sE[0] + sP[0]) / 2) <= 1 && sE[0] < d.x && sP[0] > d.x + d.w, handInE };
             });
             record(17, size, r.eAbove && r.f < r.o && r.o < r.p && r.decks === 1 && r.between && !r.handInE, JSON.stringify(r));
@@ -174,12 +180,14 @@ async function run() {
             const open = await infoOpen(page, 3000);
             const sel1 = await page.evaluate(() => window.DipLabDuel.debug().sel);
             if (open) await closeInfo(page);
-            // 點一下＝選牌（不開唱片資訊）
+            // 點一下＝攤開；再點一張＝浮起（都不開唱片資訊）
+            await tapAt(page, '.dl [data-tut=card-0]'); await sleep(400);
+            const sp = await page.evaluate(() => window.DipLabDuel.debug().spread);
             await tapAt(page, '.dl [data-tut=card-0]'); await sleep(400);
             const tapOpen = !!(await page.$('#cardInfoMask'));
             const sel2 = await page.evaluate(() => window.DipLabDuel.debug().sel);
-            await page.evaluate(() => window.DipLabDuel.select(null));
-            record(14, size, open && !sel1 && !sel0 && !tapOpen && sel2 && sel2.i === 0, `long-press → 唱片資訊 ${open}（沒選到 ${!sel1}）；tap → select ${JSON.stringify(sel2)}, info ${tapOpen}`);
+            await page.evaluate(() => window.DipLabDuel.spread(false));
+            record(14, size, open && !sel1 && !sel0 && sp && !tapOpen && sel2 && sel2.i === 0, `扇形長按 → 唱片資訊 ${open}（沒選到 ${!sel1}）；tap → 攤開 ${sp}；tap → 浮起 ${JSON.stringify(sel2)}, info ${tapOpen}`);
           }
           if (want(22)) { const sc = await noScroll(page); record(22, size, scrollOk(sc), `duel scroll ${JSON.stringify(sc)}`); }
           if (want(18)) {
@@ -416,7 +424,8 @@ async function run() {
           const callOk = res.callouts.length === 5 && res.callouts.every(c => c && c.op > 0.95 && c.w >= 150 && c.l2);
           if (want(19)) record(19, size, handsOk && done && ko && callOk && res.learned.join() === 'L1,L2,L3,L4,L5,L6', `${tier}: callouts ${callOk ? 'ok' : JSON.stringify(res.callouts)}; hands ${JSON.stringify((res.hands || []).map(c => c.kind + ':' + c.toE + '/' + c.toP))}; learned ${res.learned}; tutorialDone ${done}; KO→收尾 ${ko}`);
           if (variant === 'wrong') {
-            const ok = res.log.length === 2 && res.log.every(l => l.text === '先點我指的這裡。' && l.warn && l.n === l.n0 && !l.sel);
+            // 第 1 手點別張：沒浮起；第 2 手點別色屬性鈕：沒丟出去、還是那張浮著（FIXLIST 11）
+            const ok = res.log.length === 2 && res.log.every(l => l.text === '先點我指的這裡。' && l.warn && l.n === l.n0 && (l.hand === 1 ? !l.sel : !!l.sel));
             record(20, size, ok, JSON.stringify(res.log));
           }
         } catch (e) { record(19, size, false, `${tier} error ${e.message}`); }
@@ -526,7 +535,7 @@ async function run() {
         await duelReady(page);
         await sleep(500);
         const r = await page.evaluate(() => ({ active: window.DipLabTut.active(), holes: window.DipLabTut.debug().holes, tut: window.__lab.run.tut }));
-        await tapAt(page, '.dl [data-tut="chip-1-c"]'); await sleep(300);
+        await tapAt(page, 'dt:hand'); await sleep(300); await tapAt(page, 'dt:card-1'); await sleep(300);
         const sel = await page.evaluate(() => window.DipLabDuel.debug().sel);
         record(36, size, !a1 && !r.active && !r.holes && !!sel, `after ⏸ title active=${a1}; direct duel ${JSON.stringify(r)} sel ${JSON.stringify(sel)}`);
       } catch (e) { record(36, size, false, 'error ' + e.message); }
@@ -573,10 +582,10 @@ async function run() {
         const mask = await page.waitForSelector('#dlfxBossMask', { timeout: 8000 }).then(() => true, () => false);
         const r1 = await page.evaluate(() => ({ held: window.DipLabDuel.debug() && window.DipLabDuel.debug().held, pe: getComputedStyle(document.getElementById('dlfxBossMask')).pointerEvents }));
         await sleep(700);
-        const chip = await page.evaluate(() => { const c = document.querySelector('.dl [data-tut="chip-0-c"]'); if (!c) return null; const b = c.getBoundingClientRect(); return { x: b.left + b.width / 2, y: b.top + b.height / 2 }; });
+        const chip = await page.evaluate(() => { const c = document.querySelector('.dl [data-tut="hand"]'); if (!c) return null; const b = c.getBoundingClientRect(); return { x: b.left + b.width / 2, y: b.top + b.height / 2 }; });
         if (chip) await page.touchscreen.tap(chip.x, chip.y);
         await sleep(100);
-        const sel = await page.evaluate(() => window.DipLabDuel.debug().sel);
+        const sel = await page.evaluate(() => window.DipLabDuel.debug().sel || (window.DipLabDuel.debug().spread ? 'spread' : null));
         const gone = await page.waitForSelector('#dlfxBossMask', { state: 'detached', timeout: 1500 }).then(() => true, () => false);
         const ready = await duelReady(page, 8000);
         record(38, size, mask && r1.held >= 1 && r1.pe === 'auto' && !sel && gone && ready, `mask ${mask} ${JSON.stringify(r1)}; tap selected ${JSON.stringify(sel)}; closed early ${gone}; board ready ${ready}`);

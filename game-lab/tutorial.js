@@ -4,8 +4,10 @@
 // 他每手出什麼、提示哪句、你抽哪幾張，都由引擎的 script 決定（C.tutorial.script[tier]，engine.startFight(run, C, {tutorial:true}) 帶進 startDuel；
 // 有 script 時你的牌堆不洗：老闆四張先（照出牌順序）、特價箱三張照挑的順序接在後面；手牌 5 張（FIXLIST 11）＝四張＋特價箱第 1 張，
 // 第 5 手最左那張一定是特價箱的，見 content.js C.tutorial 的註解）。教學只管「手指指哪、放行哪個動作」。
-// 手指目標＝C.tutorial.script[tier].pick（{id,attr} → chip:id:<id>:<attr>；'blocked:o' → chip:blocked:o＝engine.blockedChoice；'ace' → 王牌那格），
-// 由 stepsFor 代入步驟裡的 'pick'／'tile:pick'／allow.pick。
+// 每手（FIXLIST 11：手牌疊成扇形、點牌才跳屬性）：點那張（allow.pick）→ 點那個屬性（allow.pick＋throw＝出手）。
+//   點那張那一步：手牌還疊著時，洞與手指先指整疊手牌（'hand'；第一次泡泡換成 step.spread「點一下手牌攤開。」），攤開了才指那張。
+// 手指目標＝C.tutorial.script[tier].pick（{id,attr} → 封面 card:id:<id>、屬性鈕 chip:id:<id>:<attr>；'blocked:o' → card:／chip:blocked:o＝engine.blockedChoice；
+//   'ace' → card-ace／chip-ace），由 stepsFor 代入步驟裡的 'card:pick'（封面）／'pick'（屬性鈕）／'tile:pick'（那一格）／allow.pick。
 // 畫面：壓暗＋挖洞（一張 SVG evenodd）、金框脈動、像素手指、貼著目標的老闆一句話（≤25 字）、說明步點一下繼續、
 // 操作步只放行指定的動作（點錯：目標震一下＋「先點我指的這裡。」）。三角亮邊交給 duel.js：DipLabDuel.tri(['oc'])。
 // 結算時講的步驟（target 含 'result'）：浮框剛出現就 hold 住盤面，講完才走（第 6 手 KO 那一手也一樣，講完才蓋大章）。
@@ -21,10 +23,12 @@
 //   firstTime(id, targets)  // 同一條佇列；另有 'night'（C.shopLines.nightIntro 兩句，壓暗 40%、點一下換句）
 //   dismissSoft(), step(def), replayDuel(C, tier, seed?, {bargain?}), learned(), learnedIds(), settled(), debug()
 // };
-// gate action（duel.js 送進來）：{kind:'card',i,attr,id}（點封面＝選這張＋topAttr） {kind:'chip',i,attr,id}（點星鈕） {kind:'throw',i,attr,id}（丟！）
-//   {kind:'info',where} {kind:'close'}；i＝0..2 或 'ace'。
-// allow：{pick:true}（stepsFor 代入成下面其中一種） {chip:{id,attr}} {chip:{blocked:attr}} {card:{id}} {ace:true} {throw:true} {info} {close}
-//   （v3 的 {chip:{i:'best'|'any'|n, attr}} 照收）。點封面＝選那張的 topAttr：屬性跟 allow 要的一樣才放行。
+// gate action（duel.js 送進來）：{kind:'spread'}（點疊著的手牌＝攤開） {kind:'card',i,attr,id}（攤開後點封面＝浮起這張）
+//   {kind:'throw',i,attr,id}（點屬性鈕＝出手） {kind:'collapse'}（點手牌外面＝收回：教學中一律不放行、也不罵）
+//   {kind:'chip',i,attr,id}（只有 API select(i,attr) 送） {kind:'info',where} {kind:'close'}；i＝0..handSize−1 或 'ace'。
+// allow：{pick:true}（stepsFor 代入：點那張的步驟 → {card:{id}}｜{card:{blocked:attr}}｜{ace:true}；
+//   點屬性的步驟（allow.throw）→ {throw:true, chip:{id,attr}}｜{throw:true, chip:{blocked:attr}}｜{throw:true, ace:true}） {info} {close}
+//   （v3 的 {chip:{i:'best'|'any'|n, attr}} 照收）。點那張的步驟：{kind:'spread'} 放行但不算完成（攤開了才指那張）。
 //
 // Node（test/tutorial.test.mjs）：require('./tutorial.js') 拿到純邏輯（stepsFor／createRunner／matches／replayDuel…），不碰 DOM。
 // 只掛 window.DipLabTut；localStorage 一律不碰（seen／learned 寫進 ui.js 給的存檔物件，由 ui.js persist）。
@@ -36,14 +40,15 @@
   var ATTRS = ['c', 'o', 'h'];
 
   function textOf(step, tier) { return (step.text && typeof step.text === 'object') ? (step.text[tier] || '') : (step.text || ''); }
-  // script[tier].pick 的一項 → 手指／洞／allow
+  // script[tier].pick 的一項 → 封面（card）／屬性鈕（chip）／那一格（tile）的名字，與兩步各放行什麼（lift＝點那張、shot＝點那個屬性）
   function pickSpec(p) {
-    if (p === 'ace') return { point: 'card-ace', hole: 'hand-ace', tile: 'hand-ace', allow: { ace: true } };
-    if (typeof p === 'string' && /^blocked:[coh]$/.test(p)) { var ba = p.slice(8), bn = 'chip:blocked:' + ba; return { point: bn, hole: bn, tile: 'tile:' + bn, allow: { chip: { blocked: ba } } }; }
-    if (p && typeof p === 'object' && p.id && ATTRS.indexOf(p.attr) >= 0) { var n = 'chip:id:' + p.id + ':' + p.attr; return { point: n, hole: n, tile: 'tile:' + n, allow: { chip: { id: p.id, attr: p.attr } } }; }
+    if (p === 'ace') return { card: 'card-ace', chip: 'chip-ace', tile: 'hand-ace', lift: { ace: true }, shot: { ace: true } };
+    if (typeof p === 'string' && /^blocked:[coh]$/.test(p)) { var ba = p.slice(8); return { card: 'card:blocked:' + ba, chip: 'chip:blocked:' + ba, tile: 'tile:card:blocked:' + ba, lift: { card: { blocked: ba } }, shot: { chip: { blocked: ba } } }; }
+    if (p && typeof p === 'object' && p.id && ATTRS.indexOf(p.attr) >= 0) return { card: 'card:id:' + p.id, chip: 'chip:id:' + p.id + ':' + p.attr, tile: 'tile:card:id:' + p.id, lift: { card: { id: p.id } }, shot: { chip: { id: p.id, attr: p.attr } } };
     return null;
   }
-  function subPick(name, P) { return name === 'pick' ? P.hole : name === 'tile:pick' ? P.tile : name; }
+  function subPick(name, P) { return name === 'pick' ? P.chip : name === 'card:pick' ? P.card : name === 'tile:pick' ? P.tile : name; }
+  var PICK_NAMES = ['pick', 'card:pick', 'tile:pick'];
   function stepsFor(C, tier) {
     var T = (C && C.tutorial) || {};
     var picks = (T.script && T.script[tier] && T.script[tier].pick) || [];
@@ -55,20 +60,28 @@
       var o = {}; for (var k in s) o[k] = s[k]; o.text = textOf(s, tier);
       var res = o.kind === 'say' && (o.target || []).indexOf('result') >= 0;
       o.hand = res ? hand - 1 : hand;
-      var uses = (o.target || []).some(function (n) { return n === 'pick' || n === 'tile:pick'; }) || o.point === 'pick' || !!(o.allow && o.allow.pick);
+      var uses = (o.target || []).concat(o.look || []).some(function (n) { return PICK_NAMES.indexOf(n) >= 0; }) || PICK_NAMES.indexOf(o.point) >= 0 || !!(o.allow && o.allow.pick);
       var P = uses ? pickSpec(picks[o.hand - 1]) : null;
       if (P) {
         o.target = (o.target || []).map(function (n) { return subPick(n, P); });
-        if (o.point === 'pick') o.point = P.point;
-        if (o.allow && o.allow.pick) { var al = {}; for (var q in o.allow) if (q !== 'pick') al[q] = o.allow[q]; for (var r in P.allow) al[r] = P.allow[r]; o.allow = al; }
+        if (o.look) o.look = o.look.map(function (n) { return subPick(n, P); });
+        if (o.point) o.point = subPick(o.point, P);
+        if (o.allow && o.allow.pick) {
+          var al = {}, add = o.allow.throw ? P.shot : P.lift;
+          for (var q in o.allow) if (q !== 'pick') al[q] = o.allow[q];
+          for (var r in add) al[r] = add[r];
+          o.allow = al;
+        }
         o.pick = picks[o.hand - 1];
       }
       if (o.allow && o.allow.throw) hand++;
       return o;
     });
   }
-  // 丟出去的那一步（這一手的最後一個操作）
+  // 丟出去的那一步（這一手的最後一個操作：點屬性鈕）
   function isCommit(s) { return !!(s && s.allow && s.allow.throw); }
+  // 點那張的那一步（手牌疊著時先攤開）
+  function isLift(s) { return !!(s && s.kind === 'do' && s.allow && !s.allow.throw && (s.allow.card || s.allow.ace)); }
   // 結算浮框出現時才講的說明步（第 6 步：「剋中：用你那顆星扣他。」）
   function atResolve(s) { return !!(s && s.kind === 'say' && (s.target || []).indexOf('result') >= 0); }
   // 第 n 手從哪一步開始（hand 1 → 0；每過一個 commit 加一手；結算時講的那步算前一手）
@@ -111,14 +124,18 @@
     var al = step && step.allow; if (!al || !a) return false;
     ctx = ctx || {};
     switch (a.kind) {
-      case 'card':      // 點封面＝選這張（屬性＝topAttr）
-        if (al.card) return a.id === al.card.id;
+      case 'card':      // 攤開後點封面＝浮起這張
+        if (al.card) {
+          if (al.card.blocked) { var bk = ctx.blocked && ctx.blocked[al.card.blocked]; return !!bk && a.i === bk.i; }   // engine.blockedChoice 那張
+          return a.id === al.card.id;
+        }
         if (al.ace) return a.i === 'ace';
         return !!al.chip && chipOk(al.chip, a, ctx);
       case 'chip': return !!al.chip ? chipOk(al.chip, a, ctx) : (!!al.ace && a.i === 'ace');
-      case 'throw':
+      case 'throw':     // 點屬性鈕＝丟
         if (!al.throw) return false;
-        if (al.chip) return chipOk(al.chip, a, ctx);                       // 點＋丟同一步：丟的也要是那一顆
+        if (al.chip) return chipOk(al.chip, a, ctx);                       // 那一張的那一色
+        if (al.ace) return a.i === 'ace';
         if (ctx.pick) return a.i === ctx.pick.i && a.attr === ctx.pick.attr;  // 丟的就是上一步點的那顆
         return true;
       case 'info': return !!al.info && al.info === a.where;
@@ -175,8 +192,13 @@
         if (s0 && !R.awaiting && s0.kind !== 'say' && matches(s0, a, R.ctx || R.context())) { R.last = { ok: true, final: true }; R.done(); return true; }
         R.last = { ok: true, note: true }; return true;
       }
+      if (a.kind === 'collapse') { R.last = { ok: false, quiet: true }; return false; }   // 教學中手牌不收回（手指指著的東西不會不見）；不算點錯
       var s = R.cur();
       if (!s || R.awaiting || s.kind === 'say') { R.last = { ok: false, wrong: 'target' }; R.log.push('block ' + (s ? s.id : '-') + ' ' + JSON.stringify(a)); return false; }
+      if (a.kind === 'spread') {    // 點那張的步驟：先攤開（放行，但這一步還沒完成）
+        if (isLift(s)) { R.last = { ok: true, final: false, spread: true }; R.log.push('spread ' + s.id); return true; }
+        R.last = { ok: false, wrong: 'target' }; R.log.push('block ' + s.id + ' spread'); return false;
+      }
       if (s.kind === 'soft') {      // 第 10 步：建議，不擋；任何一個動作就算看過了
         R.log.push('soft ' + s.id + ' ' + a.kind);
         R.last = { ok: true, final: true, soft: true };
@@ -252,7 +274,7 @@
     return Eng.startDuel(pDef, eDef, { seed: (seed >>> 0) || 7, script: C.tutorial.script[tier] });
   }
 
-  var core = { TIERS: TIERS, stepsFor: stepsFor, textOf: textOf, pickSpec: pickSpec, isCommit: isCommit, atResolve: atResolve, stepForHand: stepForHand,
+  var core = { TIERS: TIERS, stepsFor: stepsFor, textOf: textOf, pickSpec: pickSpec, isCommit: isCommit, isLift: isLift, atResolve: atResolve, stepForHand: stepForHand,
     bestChipOf: bestChipOf, chipOk: chipOk, matches: matches, createRunner: createRunner, replayBag: replayBag, replayDuel: replayDuel, clone: clone };
 
   if (typeof module === 'object' && module.exports) { module.exports = core; return; }
@@ -746,6 +768,7 @@
       L.offs.push(D.on('infoClosed', function () { kick(); }));
       L.offs.push(D.on('over', function () { kick(); }));
       L.offs.push(D.on('phase', function () { kick(); }));
+      L.offs.push(D.on('spread', function () { kick(); if (L.step && L.step.refresh) setTimeout(function () { if (L.step && L.step.refresh) L.step.refresh(); }, 0); }));
     }
     setShow({ mode: 'wait' });
     run(L);
@@ -809,7 +832,7 @@
           return false;
         }, 0, 30);
         if (L.dead) return;
-        if (got === 'none') { R.awaiting = false; R.idx = Math.max(0, R.idx - 1); while (R.idx > 0 && !(R.steps[R.idx].allow && (R.steps[R.idx].allow.chip || R.steps[R.idx].allow.ace))) R.idx--; continue; }
+        if (got === 'none') { R.awaiting = false; R.idx = Math.max(0, R.idx - 1); while (R.idx > 0 && !isLift(R.steps[R.idx])) R.idx--; continue; }   // 退回這一手「點那張」那步
         var evs = L.evs; L.evs = null;
         var over = (evs || []).find(function (e) { return e.t === 'over'; });
         // 第 6 步：浮框停在畫面上講（duel.js 在 onResolved 之前已經畫好浮框；L.held 在 onResolved 裡同步 hold 住了）
@@ -876,7 +899,7 @@
     if (!L.dead) endLesson('done');
   }
   function targetsReady(s) {
-    var list = s.target || [];
+    var list = targetsFor(s);
     if (!list.length) return true;
     for (var i = 0; i < list.length; i++) { if (rectOf(resolveTarget(list[i]))) return true; }
     return false;
@@ -890,11 +913,31 @@
     }
     return look.filter(function (n) { return (s.target || []).indexOf(n) < 0; });
   }
-  // 第 9 步（點一顆、再丟）：點了之後「丟！」才挖洞（之前按「丟！」＝點錯）
-  function targetsFor(s, picked) {
-    var t = (s.target || []).slice();
-    if (picked && s.kind === 'do' && s.allow && s.allow.throw && t.indexOf('throw') < 0) t.push('throw');
-    return t;
+  // 手牌還疊著（扇形）：點那張的步驟先指整疊手牌（FIXLIST 11：點牌堆 → 點牌 → 點屬性）
+  function fanned() {
+    var D = Duel(); if (!D || !D.debug) return false;
+    var d = null; try { d = D.debug(); } catch (_) { d = null; }
+    return !!d && d.spread === false;
+  }
+  function targetsFor(s) {
+    if (isLift(s) && fanned()) return ['hand'];
+    return (s.target || []).slice();
+  }
+  // 這一步此刻的手指與泡泡（點那張的步驟：疊著時指整疊，第一次寫 step.spread）
+  function liveDo(s) {
+    var fan = isLift(s) && fanned(), soft = s.kind === 'soft';
+    var point = fan ? 'hand' : (s.point === false ? null : (s.point || (soft ? null : (s.target || [])[0]) || null));
+    var text = fan && s.spread ? s.spread : s.text;          // step.spread 只有第一手那步有（「點一下手牌攤開。」）
+    return { targets: targetsFor(s), point: point, text: text, fan: fan };
+  }
+  // 攤開了（gate 放行 spread、或盤面送 'spread'）：同一步，洞與手指換到那張
+  function refreshDo(s) {
+    var sh = S.show; if (!sh || sh.step !== s || sh.mode !== 'do') return;
+    var x = liveDo(s);
+    sh.targets = x.targets; sh.point = x.point; sh.fan = x.fan;
+    if (sh.text !== x.text) { sh.text = x.text; setText(x.text, sh.colorChars); }
+    S.root._.hand.hidden = !sh.point;
+    S.sig = ''; layout(true);
   }
   // 一步：say 等點一下；do 等 gate 放行；soft 等任一操作
   function showStep(L, s) {
@@ -913,18 +956,20 @@
         return;
       }
       var soft = s.kind === 'soft';
+      // 點屬性那步：「你丟的」預覽換成要教的那一色（浮起時預設是最高那顆；跟手指指的那顆一致）
+      if (isCommit(s) && s.pick && s.pick !== 'ace') { var D0 = Duel(), pa = s.pick === 'blocked:o' ? 'o' : s.pick.attr; if (D0 && D0.preview) try { D0.preview(pa); } catch (_) {} }
       // 建議步（第 10 步）不給手指：異端的王牌是硬蕊，指著它等於叫你被剋
-      var point = s.point === false ? null : (s.point || (soft ? null : (s.target || [])[0]) || null);
-      setShow({ mode: soft ? 'soft' : 'do', step: s, targets: targetsFor(s), look: soft ? [] : lookFor(s), point: point, text: text, bubble: s.bubble || 'above', keep: s.keep, colorChars: s.colorChars });
+      var x = liveDo(s);
+      setShow({ mode: soft ? 'soft' : 'do', step: s, targets: x.targets, look: soft ? [] : lookFor(s), point: x.point, text: x.text, fan: x.fan, bubble: s.bubble || 'above', keep: s.keep, colorChars: s.colorChars });
       L.step = {
         s: s, finish: finish,
+        refresh: function () { if (!finished) refreshDo(s); },
         onGate: function (last) {         // gate 之後由 hooks 呼叫
           if (finished) return;
-          if (!last.ok) { wrong(); return; }
+          if (!last.ok) { if (!last.quiet) wrong(); return; }
           if (last.note) return;
           if (last.final) { finish(); return; }
-          // 第 9 步：點了一顆硬蕊 → 不給手指（SPEC-v3 §8），只把「丟！」也挖出來
-          if (S.show && S.show.step === s) { S.show.targets = targetsFor(s, true); S.sig = ''; layout(true); }
+          if (last.spread) { setTimeout(function () { if (!finished) refreshDo(s); }, 0); return; }   // 攤開了：同一步，手指換到那張（盤面先畫好再量）
         }
       };
     }).then(function () { if (L.step && L.step.s === s) L.step = null; });
@@ -938,15 +983,15 @@
         var R = S.runner, L = S.lesson;
         if (!L || !R || L.dead) {
           // mount 之後、startDuelLesson 之前：擋 3 秒（防止玩家搶先出牌），之後放行
-          if (S.armed && now() - S.armed < 3000 && a && (a.kind === 'chip' || a.kind === 'card' || a.kind === 'throw')) return false;
+          if (S.armed && now() - S.armed < 3000 && a && (a.kind === 'chip' || a.kind === 'card' || a.kind === 'throw' || a.kind === 'spread')) return false;
           return true;
         }
         if (!R.active()) return true;
-        if (R.awaiting && a && (a.kind === 'chip' || a.kind === 'card' || a.kind === 'throw')) return false;
+        if (R.awaiting && a && (a.kind === 'chip' || a.kind === 'card' || a.kind === 'throw' || a.kind === 'spread' || a.kind === 'collapse')) return false;
         var ok = R.gate(a);
         var last = R.last || { ok: ok };
         if (L.step && L.step.onGate) L.step.onGate(last);
-        else if (!ok) wrong();
+        else if (!ok && !last.quiet) wrong();
         if (last.commit || last.soft) setTri(null);
         kick();
         return ok;
@@ -1169,6 +1214,7 @@
       var R = S.runner;
       return { active: api.active(), step: R && R.cur() ? R.cur().id : null, shown: S.show && S.show.step ? S.show.step.id || null : null, idx: R ? R.idx : -1,
         state: R ? R.state : null, awaiting: R ? R.awaiting : null, picked: R ? R.picked : null, mode: S.show ? S.show.mode : null,
+        point: S.show && S.show.point && typeof S.show.point === 'string' ? S.show.point : null, fan: !!(S.show && S.show.fan),
         text: S.root && S.root._ && !S.root._.bub.hidden ? S.root._.tx.textContent : null, warn: !!(S.root && S.root._ && S.root._.bub.classList.contains('warn')),
         holes: S.show && S.show.holes ? S.show.holes.length : 0, soft: S.soft ? S.soft.id : null, tip: S.tip ? S.tip.id : null, tipQ: S.tipQ.map(function (x) { return x.id; }),
         held: S.lesson ? S.lesson.held : 0, learned: S.learnedAll.slice(), learnedIds: R ? R.learnedIds.slice() : [], log: R ? R.log.slice(-30) : [] };

@@ -546,7 +546,7 @@
       '提示會暗示他這手的打算，但有些人會唬你。王牌 7 星，一場用一次。六手內沒分出勝負，比誰的聲望條剩得多。'
     ],
     relics: '發燒配件：自動生效，最多帶三件。',
-    foot: ['點專輯選牌；按住封面看唱片資訊。', '你 9 聲望；客人 {normal}、菁英 {elite}、傳說藏家 {boss}。']
+    foot: ['點手牌攤開，點專輯再點屬性出牌；按住封面看唱片資訊。', '你 9 聲望；客人 {normal}、菁英 {elite}、傳說藏家 {boss}。']
   };
   C.rulesTag = '新';          // title／relics／foot
   C.rulesLinesTag = '店主';   // lines（六行）
@@ -609,29 +609,30 @@
       heresy: [{ kind: 'mirrorWin', toE: 3, toP: 0 }, { kind: 'counter', toE: 4, toP: 0 }, { kind: 'counter', toE: 4, toP: 0 },
         { kind: 'counter', toE: 5, toP: 0 }, GAP5, { kind: 'mirrorWin', toE: 5, toP: 0, blocked: 'gap' }]
     },
-    // ---- 以下 steps／learned／ui 由 B2 寫（§2.5.5）：六手各教一件事 ----
-    //   target／point 的 'pick'＝這一手 script[tier].pick 指的那顆（tutorial.js stepsFor 代入：{id,attr}→chip:id:<id>:<attr>、'blocked:o'→chip:blocked:o、'ace'→王牌）；
-    //   'tile:pick'＝那顆所在的整格（封面＋星鈕；點封面也算，只要選到的屬性對）。allow.pick＝只放行那一顆。
-    //   每手：（說明）→ 點那顆 → 丟！ →（結算浮框出現時講，target 含 result）。learn＝這步做完就學到哪張小卡。
+    // ---- 以下 steps／learned／ui 由 B2 寫（§2.5.5）：六手各教一件事；FIXLIST 11（H2）改成「點那張 → 點那個屬性（＝丟）」 ----
+    //   'card:pick'＝這一手 script[tier].pick 那張的封面、'pick'＝那張那個屬性的屬性鈕（tutorial.js stepsFor 代入：{id,attr}→card:id:<id>／chip:id:<id>:<attr>、
+    //   'blocked:o'→card:／chip:blocked:o、'ace'→card-ace／chip-ace）。allow.pick：點那張那步＝只放行那張；點屬性那步（allow.throw）＝只放行那一顆。
+    //   點那張那步：手牌還疊著（扇形）時，洞與手指先指整疊手牌；spread＝那時候泡泡換成這句（只有第一手寫）。
+    //   每手：（說明）→ 點那張 → 點那個屬性（丟出去）→（結算浮框出現時講，target 含 result）。learn＝這步做完就學到哪張小卡。
     //   第 1 手前一句說明提示；第 1 手結算後老闆點破關鍵字一次（提示 c5「他把那張名盤擦得發亮。」→「名盤」＝經典；規劃書，不是 D，列 §5.7）。
     steps: [
       { id: 'm1', kind: 'say', target: ['e-hint'], text: '上面這句是提示，暗示他這手要出什麼。', bubble: 'below', tag: '新' },
-      { id: 'm2', kind: 'do', target: ['tile:pick'], point: 'pick', allow: { pick: true }, text: '先出這張的經典，跟他比星數。', bubble: 'above', tag: '新' },
-      { id: 'm3', kind: 'do', target: ['pick', 'throw'], point: 'throw', allow: { throw: true }, text: '丟！', bubble: 'above', tag: '新' },
+      { id: 'm2', kind: 'do', target: ['card:pick'], point: 'card:pick', allow: { pick: true }, spread: '點一下手牌攤開。', text: '先出這張。', bubble: 'above', tag: '新' },
+      { id: 'm3', kind: 'do', target: ['pick'], point: 'pick', look: ['card:pick'], allow: { pick: true, throw: true }, text: '出經典，跟他比星數。', bubble: 'above', tag: '新' },
       { id: 'm4', kind: 'say', target: ['result'], text: '同色比星數，多的扣差額。', learn: 'L1', tag: '新' },
       { id: 'm5', kind: 'say', target: ['result'], text: '『名盤』就是經典。提示裡會藏這種字。', tag: '新' },
-      { id: 'k1', kind: 'do', target: ['tile:pick'], point: 'pick', allow: { pick: true }, tri: ['oc'], text: '冷門剋經典：點這顆冷門。', bubble: 'above', tag: '新' },
-      { id: 'k2', kind: 'do', target: ['pick', 'throw'], point: 'throw', allow: { throw: true }, tri: ['oc'], text: '丟！', bubble: 'above', tag: '新' },
+      { id: 'k1', kind: 'do', target: ['card:pick'], point: 'card:pick', allow: { pick: true }, tri: ['oc'], text: '冷門剋經典：出這張。', bubble: 'above', tag: '新' },
+      { id: 'k2', kind: 'do', target: ['pick'], point: 'pick', look: ['card:pick'], allow: { pick: true, throw: true }, tri: ['oc'], text: '出冷門。', bubble: 'above', tag: '新' },
       { id: 'k3', kind: 'say', target: ['result'], text: '剋中：用你那顆星扣他。', learn: 'L2', tag: '新' },
-      { id: 'c1', kind: 'do', target: ['tile:pick'], point: 'pick', allow: { pick: true }, tri: ['ch'], text: '經典剋硬蕊：點這顆經典。', bubble: 'above', tag: '新' },
-      { id: 'c2', kind: 'do', target: ['pick', 'throw'], point: 'throw', allow: { throw: true }, tri: ['ch'], text: '丟！', learn: 'L3', bubble: 'above', tag: '新' },
-      { id: 'h1', kind: 'do', target: ['tile:pick'], point: 'pick', allow: { pick: true }, tri: ['ho'], text: '硬蕊剋冷門：點這顆硬蕊。', bubble: 'above', tag: '新' },
-      { id: 'h2', kind: 'do', target: ['pick', 'throw'], point: 'throw', allow: { throw: true }, tri: ['ho'], text: '丟！', learn: 'L4', bubble: 'above', tag: '新' },
-      { id: 'b1', kind: 'do', target: ['tile:pick'], point: 'pick', allow: { pick: true }, tri: ['oc'], text: '又是『名盤』。出這張冷門試試。', bubble: 'above', tag: '新' },
-      { id: 'b2', kind: 'do', target: ['pick', 'throw'], point: 'throw', allow: { throw: true }, tri: ['oc'], text: '丟！', bubble: 'above', tag: '新' },
+      { id: 'c1', kind: 'do', target: ['card:pick'], point: 'card:pick', allow: { pick: true }, tri: ['ch'], text: '經典剋硬蕊：出這張。', bubble: 'above', tag: '新' },
+      { id: 'c2', kind: 'do', target: ['pick'], point: 'pick', look: ['card:pick'], allow: { pick: true, throw: true }, tri: ['ch'], text: '出經典。', learn: 'L3', bubble: 'above', tag: '新' },
+      { id: 'h1', kind: 'do', target: ['card:pick'], point: 'card:pick', allow: { pick: true }, tri: ['ho'], text: '硬蕊剋冷門：出這張。', bubble: 'above', tag: '新' },
+      { id: 'h2', kind: 'do', target: ['pick'], point: 'pick', look: ['card:pick'], allow: { pick: true, throw: true }, tri: ['ho'], text: '出硬蕊。', learn: 'L4', bubble: 'above', tag: '新' },
+      { id: 'b1', kind: 'do', target: ['card:pick'], point: 'card:pick', allow: { pick: true }, tri: ['oc'], text: '又是『名盤』。出這張試試。', bubble: 'above', tag: '新' },
+      { id: 'b2', kind: 'do', target: ['pick'], point: 'pick', look: ['card:pick'], allow: { pick: true, throw: true }, tri: ['oc'], text: '出冷門。', bubble: 'above', tag: '新' },
       { id: 'b3', kind: 'say', target: ['result'], text: '他高你 2 星以上，剋不動，改比星數。', learn: 'L5', tag: '新' },
-      { id: 'a1', kind: 'do', target: ['tile:pick'], point: 'pick', allow: { pick: true }, text: '最後一手。丟王牌：7 星，一場用一次。', bubble: 'above', tag: '新' },
-      { id: 'a2', kind: 'do', target: ['pick', 'throw'], point: 'throw', allow: { throw: true }, text: '丟！', bubble: 'above', tag: '新' },
+      { id: 'a1', kind: 'do', target: ['card:pick'], point: 'card:pick', allow: { pick: true }, text: '最後一手。丟王牌：7 星，一場用一次。', bubble: 'above', tag: '新' },
+      { id: 'a2', kind: 'do', target: ['pick'], point: 'pick', look: ['card:pick'], allow: { pick: true, throw: true }, text: '丟！', bubble: 'above', tag: '新' },
       { id: 'a3', kind: 'say', target: ['result'], learn: 'L6', tag: '新',
         text: { hall: '同色比星數，7 比 2，他 −5。', pearl: '冷門剋經典，王牌 7 星，他 −7。', heresy: '經典剋硬蕊，但你高 2 星以上，剋不動：他 −5。' } }   // a3.heresy：COPY-04 照結果句的講法、寫出扣多少（tutorial.test 對 toE）
     ],

@@ -19,7 +19,7 @@
 ## 進度
 
 - [x] 1 duel.js／duel.css：扇形、攤開、浮起＋屬性鈕、拿掉星鈕列與丟！列、牌桌重排、尺寸（四尺寸不捲、沒有 >24 px 空帶）
-- [ ] 2 教學：tutorial.js（runner：spread／lift／attr；DOM：扇形時先指扇形）、content.js C.tutorial.steps 文字、tutorial.test、check-content／lint-copy、規則卡頁尾第 1 行
+- [x] 2 教學：tutorial.js（runner：spread／lift／attr；DOM：扇形時先指扇形）、content.js C.tutorial.steps 文字、tutorial.test、check-content／lint-copy、規則卡頁尾第 1 行
 - [ ] 3 e2e：e2e-duel、e2e.spec、e2e-lib walkTutorial、e2e-prologue；四尺寸
 - [ ] 4 V03：430×932 序章／尾聲店景下面的白帶
 - [ ] 5 截圖（390×664@2＋375×548＋430×932）：扇形、攤開、浮起＋三顆鈕、剛丟出（揭曉）、教學第 2 手手指
@@ -31,3 +31,13 @@
   量到的（封面／手牌區）：390×664 176／141、375×548 145／120、430×932 188／177、360×640 163／144（原本 140／120／140／128）。
   丟出去手牌收回扇形；結算中整疊一起變淡。duelText 拿掉 picked／again／throwBtn／waiting／aceUsed（check-content 的鍵表同步；lint-copy 重產 LINES-REVIEW）。
   e2e 還沒改（下一步）。
+- 步驟 2：tutorial.js pickSpec → {card, chip, tile, lift, shot}；stepsFor 代入 'card:pick'（封面）／'pick'（屬性鈕）／'tile:pick'，look 也代入；
+  isLift(s)＝點那張的步驟；R.gate：{kind:'spread'} 在點那張的步驟放行但不完成（R.last.spread）、其他步驟＝點錯；{kind:'collapse'} 一律不放行、quiet（不罵）。
+  DOM：liveDo(s)——點那張的步驟手牌還疊著時洞＝'hand'、手指指它，第一次（m2）泡泡＝step.spread「點一下手牌攤開。」；攤開（gate 或 duel 'spread' 事件）→ refreshDo 換到那張。
+  點屬性那步開始時 DipLabDuel.preview(那一色)：「你丟的」預覽跟手指指的那顆一致（浮起時預設是最高那顆）。debug() 加 point／fan。
+  content.js steps：m2「先出這張。」（spread「點一下手牌攤開。」）、m3「出經典，跟他比星數。」、k1「冷門剋經典：出這張。」k2「出冷門。」、
+  c1／c2、h1／h2 同形、b1「又是『名盤』。出這張試試。」b2「出冷門。」、a1 照舊、a2「丟！」。規則卡頁尾第 1 行「點手牌攤開，點專輯再點屬性出牌；按住封面看唱片資訊。」
+  check-content tutorialProblems 改新形狀＋spread 只在第 1 手；lint-copy 掃 step.spread。tutorial.test 182142／0（variant chip→direct；擋錯招、matches 重寫）。
+  duel.js：「點一張專輯」改成屬性鈕位置的虛線框（攤開時不留空帶）；preview(attr) API。
+  e2e-lib：HIT_PT／hitPoint（扇形時點真的點得到的那一點）給 tapAt／longPress；walkTutorial 走「點扇形 → 點那張 → 點屬性」，#20 第 1 手攤開後點別張、第 2 手點別色屬性鈕。
+  e2e-duel：#1a 扇形／#1b 攤開／#1c 浮起（版面、空帶 ≤26）、#2–#4 改新流程、liftIt／quickPlay。四尺寸 43＋97＝140/140 PASS。e2e.spec #19／#20（390）4/4 PASS。

@@ -69,11 +69,24 @@ export async function waitScreen(page, s, ms = 20000) {
 }
 // el.click()（不用 page.tap：Playwright 會自動捲動，掩蓋版面問題；也不吃換畫面 380 ms 的防連點）
 export const jsClick = (page, sel) => page.evaluate(s => { const e = document.querySelector(s); if (!e) return false; e.click(); return true; }, sel);
-export async function tapAt(page, sel) {
-  const r = await page.evaluate(s => {
+// 元素上「真的點得到」的一點（FIXLIST 11：手牌疊成扇形時每張只露出一條，中心可能被上面那張蓋住）：
+//   先試中心；不行就在元素裡掃一圈，找 elementFromPoint 落在它（或它裡面）的那一點；都不行退回中心（例如教學的遮罩蓋著：點到遮罩＝點錯）
+export const HIT_PT = `(function (el) {
+  if (!el) return null; const b = el.getBoundingClientRect(); if (!b.width || !b.height) return null;
+  const ok = (x, y) => { const t = document.elementFromPoint(x, y); return !!t && (t === el || el.contains(t)); };
+  const cx = b.left + b.width / 2, cy = b.top + b.height / 2;
+  if (ok(cx, cy)) return { x: cx, y: cy };
+  for (const fy of [.5, .35, .65, .2, .8]) for (const fx of [.12, .2, .3, .06, .4, .5, .6, .7, .8, .9]) { const x = b.left + b.width * fx, y = b.top + b.height * fy; if (ok(x, y)) return { x, y }; }
+  return { x: cx, y: cy };
+})`;
+export async function hitPoint(page, sel) {
+  return page.evaluate(([s, src]) => {
     const el = s.startsWith('dt:') ? window.DipLabDuel.el(s.slice(3)) : document.querySelector(s);
-    if (!el) return null; const b = el.getBoundingClientRect(); return { x: b.left + b.width / 2, y: b.top + b.height / 2 };
-  }, sel);
+    return (0, eval)(src)(el);
+  }, [sel, HIT_PT]);
+}
+export async function tapAt(page, sel) {
+  const r = await hitPoint(page, sel);
   if (!r) throw new Error('no element ' + sel);
   await page.touchscreen.tap(r.x, r.y); page._clicks++;
   return r;
@@ -194,7 +207,7 @@ export async function resolveHands(page, n, policy = 'thoughtful') {
 }
 // 長按（CDP 觸控）
 export async function longPress(page, ctx, sel, ms = 700) {
-  const r = await page.evaluate(s => { const e = document.querySelector(s); if (!e) return null; const b = e.getBoundingClientRect(); return { x: b.left + b.width / 2, y: b.top + b.height / 2 }; }, sel);
+  const r = await hitPoint(page, sel);
   if (!r) return false;
   const cdp = await ctx.newCDPSession(page);
   await cdp.send('Input.dispatchTouchEvent', { type: 'touchStart', touchPoints: [{ x: r.x, y: r.y }] });
@@ -251,28 +264,51 @@ export async function walkTutorial(page, w, h, variant = 'plain') {
       callouts.push(Object.assign({ step: s.id }, cv));
     }
     if (s.kind === 'say') { await page.touchscreen.tap(w / 2, h - 30); continue; }
+    // FIXLIST 11：每手「點疊著的手牌（攤開）→ 點那張 → 點那個屬性（＝丟）」；手指照教學 debug().point 走
     if (!s.thr) {
-      if (variant === 'wrong' && (s.hand === 1 || s.hand === 2)) {
+      const fan = await page.evaluate(() => window.DipLabDuel.debug().spread === false);
+      if (fan) {
+        const pt = await page.evaluate(() => window.DipLabTut.debug().point);
+        if (pt !== 'hand') log.push({ step: s.id, bad: 'fanned but finger on ' + pt });
+        await tapAt(page, 'dt:hand');
+        await page.waitForFunction(p => window.DipLabDuel.debug().spread === true && window.DipLabTut.debug().point === p, s.point, { timeout: 4000 }).catch(() => {});
+        await sleep(250);
+      }
+      if (variant === 'wrong' && s.hand === 1) {
+        // 第 1 手：攤開後點別張（在遮罩上）→「先點我指的這裡。」、沒浮起
         const n0 = (await dbg()).d.n;
-        // 第 1 手：點別張的星鈕（在遮罩上）；第 2 手：點那一格裡別色的星鈕（洞裡、gate 擋）
-        const wrongSel = await page.evaluate(([pt, hand]) => {
+        const wrongSel = await page.evaluate(pt => {
           const tgt = window.DipLabDuel.el(pt); if (!tgt) return null;
           const tile = tgt.closest('.tile');
-          const chips = [...document.querySelectorAll('.dl .tile:not(.ace) .chip')];
-          const c = hand === 1 ? chips.find(x => x.closest('.tile') !== tile) : chips.find(x => x.closest('.tile') === tile && x !== tgt);
+          const c = [...document.querySelectorAll('.dl .tile .cvw')].find(x => x.closest('.tile') !== tile);
           return c ? '.dl [data-tut="' + c.dataset.tut + '"]' : null;
-        }, [s.point, s.hand]);
+        }, s.point);
         if (wrongSel) {
           await tapAt(page, wrongSel); await sleep(250);
           const st = await dbg();
-          log.push({ step: s.id, text: st.t.text, warn: st.t.warn, n: st.d.n, n0, sel: st.d.sel, shown: st.t.shown });
+          log.push({ step: s.id, hand: 1, text: st.t.text, warn: st.t.warn, n: st.d.n, n0, sel: st.d.sel, shown: st.t.shown });
           await sleep(1700);
         }
       }
       await tapAt(page, 'dt:' + s.point);
       continue;
     }
-    await tapAt(page, '.dl [data-tut="throw"]');
+    if (variant === 'wrong' && s.hand === 2) {
+      // 第 2 手：浮起那張的別色屬性鈕（在遮罩上）→「先點我指的這裡。」、沒丟出去、還是那張浮著
+      const n0 = (await dbg()).d.n;
+      const wrongSel = await page.evaluate(pt => {
+        const tgt = window.DipLabDuel.el(pt); if (!tgt) return null;
+        const c = [...document.querySelectorAll('.dl .pop .ab')].find(x => x !== tgt);
+        return c ? '.dl [data-tut="' + c.dataset.tut + '"]' : null;
+      }, s.point);
+      if (wrongSel) {
+        await tapAt(page, wrongSel); await sleep(250);
+        const st = await dbg();
+        log.push({ step: s.id, hand: 2, text: st.t.text, warn: st.t.warn, n: st.d.n, n0, sel: st.d.sel, shown: st.t.shown });
+        await sleep(1700);
+      }
+    }
+    await tapAt(page, 'dt:' + s.point);
   }
   const learned = await page.waitForFunction(() => Object.keys(window.__lab.save.learned || {}).length >= 6, null, { timeout: 15000 }).then(() => page.evaluate(() => Object.keys(window.__lab.save.learned).sort()), () => page.evaluate(() => Object.keys(window.__lab.save.learned || {}).sort()));
   return { tier, hands, log, learned, callouts };

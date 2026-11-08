@@ -362,13 +362,13 @@ else {
     if (st.allow && st.allow.throw) hand++;
   });
   steps.forEach((st, k) => {
-    const texts = typeof st.text === 'object' ? Object.entries(st.text) : [[null, st.text]];
+    const texts = (typeof st.text === 'object' ? Object.entries(st.text) : [[null, st.text]]).concat(st.spread != null ? [['spread', st.spread]] : []);   // spread：手牌疊著時那一步的泡泡（FIXLIST 11）
     for (const [tier, t] of texts) {
       const where = 'tutorial.steps.' + st.id + (tier ? '.' + tier : '');
       if (typeof t !== 'string' || !t) { err(where, '沒有台詞'); continue; }
       if (!TAG_OK(st.tag)) err(where, '沒有合法 tag');
       if (len(t) > 25) err(where, '教學台詞超過 25 字（' + len(t) + '）：' + t);
-      const tierZh = { hall: '殿堂', pearl: '流亡', heresy: '異端' };
+      const tierZh = { hall: '殿堂', pearl: '流亡', heresy: '異端', spread: '手牌疊著時' };
       const kindZh = { say: '說', do: '做', soft: '建議' }[st.kind] || st.kind;
       add({ scene: '序章引導教學・第 ' + handOf[k] + ' 手（老闆的泡泡）', where, who: '老闆・' + st.id + '・' + kindZh + (tier ? '・' + tierZh[tier] : ''), text: t, tag: st.tag });
     }
