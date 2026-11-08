@@ -5,12 +5,12 @@
 // 檢查：
 //   卡片：欄位、星數（一般卡 ≤5、王牌那軸 7）、封面、試聽、region ∈ tw／jp／zh／xx；所有引用的卡 id 都存在（王牌、禮物、特價箱、牌單、掉牌、教學、箱子）。
 //   王牌、禮物（§4.2：三軸都有 ≥4 星、殿堂有冷門 ≥4、王牌那軸 ≥4 至少 2 張）、特價箱（§4.3：9 張、topAttr 3／3／3、峰值 ≤3、冷門 ≤3）。
-//   客人（§2.2.3、§4.1）：誠實度（男子老實、一般偶爾唬人、菁英愛唬人、藏家老江湖）、聲望（男子 10、其他 12–20）、張數（男子 6、一般與菁英 7、藏家 6）；
+//   客人（§2.2.3、§4.1）：名字（FIXLIST 6 的身分、沒有 title）、誠實度（男子老實、一般偶爾唬人、菁英愛唬人、藏家老江湖；只有 q）、聲望（男子 10、其他 12–40）、張數（男子 6、一般與菁英 7、藏家 6）；
 //     牌組限制（deckMain、嚴格峰值 ≥4、唬人色 ≥4 星 ≥2 張、剋他用色 ≥4 星 ≥1 張；男子只要一張副屬性 ≥4；經典客人 ≤4 位不含藏家；
 //     藏家三色各 ≥2 張峰值、每色都有 ≥4 星）；牌組／禮物／特價箱彼此不重複且不含王牌。
-//   提示句（§2.2.4：每色 5 句、key 必為 text 的子字串、不寫屬性名）、誠實度表、出招難度表、經濟（§2.2.5 的旋鈕範圍、配件價 > 唱片最高價）、
+//   提示句（§2.2.4：每色 5 句、key 必為 text 的子字串、不寫屬性名）、誠實度表、出招難度表、經濟（FIXLIST 8 台幣行情：稀有度價、特價箱每張、配件 3000；start／win 的範圍）、
 //   發燒配件 9 件（§2.2.6）、規則卡六行逐字＝tools/owner-lines-v4.json、頁尾聲望數字、教學規則資料（§2.2.10）、小提示、盤面字、店內字、經濟介面字。
-//   C.bins 的鍵＝bins.js（A3 烘）。
+//   C.bins 的鍵＝bins.js；bins.js 是 X／Y 契約形狀（有 feature）時再跑 binsProblems（十四區、名牌、分類、FEATURE 稀有度、30 晚上貨夠不夠）。
 //   v4 教學步驟（§2.5.5，B2；匯出 tutorialProblems(C)）：六手各一個「丟」、做的步驟只有「點那顆（allow.pick＋'tile:pick'／point 'pick'）」或「丟（allow.throw＋point throw）」、
 //     每手的 pick 在 script 裡指得到（禮物的那張那色／blocked:o／ace）、結算時講的步驟（target result）只在丟之後、小卡 L1–L6 各學一次而且照課表順序、
 //     第 1 手前一句指提示（e-hint）、第 1 手結算後點破第 1 手提示句的關鍵字一次、依王牌分句的 text 三張都有、三角邊合法、ui 鍵齊全。
@@ -101,7 +101,8 @@ export function shapeProblems(C, E) {
     ok(e.honesty === WANT_H[kind], w + ': 誠實度要 ' + WANT_H[kind] + '，現在 ' + e.honesty);
     for (const k of ['habit', 'phase2', 'phase2Label', 'habitLabel', 'p', 'planner']) ok(!(k in e), w + ': v4 拿掉的欄位 ' + k);
     if (kind === 'man') ok(e.hp === 10, w + ': 男子聲望固定 10');
-    else ok(Number.isInteger(e.hp) && e.hp >= 12 && e.hp <= 20, w + ': 聲望要在 12–20，現在 ' + e.hp);
+    // FIXLIST 3（比聲望條剩幾成）之後 12–20 太好打，sim 校準到 20–34；上限放到 40（校準旋鈕的範圍，不是門檻）
+    else ok(Number.isInteger(e.hp) && e.hp >= 12 && e.hp <= 40, w + ': 聲望要在 12–40，現在 ' + e.hp);
     ok(/^[coh]{3}$/.test(e.taste) && new Set(e.taste).size === 3, w + ': taste');
     const want = kind === 'normal' || kind === 'elite' ? 7 : 6;
     ok(Array.isArray(e.deck) && e.deck.length === want && new Set(e.deck).size === want, w + ': 唱片要 ' + want + ' 張不重複，現在 ' + (e.deck || []).length);
