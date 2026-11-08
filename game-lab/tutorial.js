@@ -285,7 +285,7 @@
   var HAND = ['...kk....', '..kwwk...', '..kwwk...', '..kwwkkk.', '.kkwwwwwk', 'kwkwwwwwk', 'kwwwwwwwk', '.kwwwwwk.', '..kkkkk..'];
   var OWNER_HEAD = ['................', '.....dddddd.....', '....dddddddd....', '....dssssssd....', '....ekkeekke....', '....sdssssds....', '.....dddddd.....'];
   var PAD = 4;
-  var SAY_ARM_RESOLVE_MS = 1000;   // 結算時講的說明：出現 1 秒內的點擊不算「看完了」（RV11-4）
+  var SAY_ARM_RESOLVE_MS = 1000;   // 結算時講的說明：連點中的一下（間隔 <400 ms）要等它出現滿 1 秒才算「看完了」（RV11-4）
   var SWALLOW_MS = 350;      // 換步之後這麼短的時間內點錯＝上一步的連點，不罵、不震，只是不放行（B-duel-doubletap）
   var TIP_MS = 5000;         // 一次性小提示停多久（SPEC-v3 §6）
   var READ_MS = 1200;        // 至少要在畫面上這麼久才算看過（NP-05）
@@ -352,6 +352,8 @@
       // 說明步用 click（整個點擊結束才換下一步）：用 pointerdown 的話，iOS 隨後補發的 click 會落到下一步才露出來的目標上
       r._.catcher.addEventListener('pointerdown', function (e) { e.preventDefault(); });
       r._.catcher.addEventListener('click', onCatchTap);
+      // 每一下按下的間隔（不管按在哪：揭曉時連點盤面加速的那串也算）：分辨「連點中的一下」與「停下來再點」（RV11-4）
+      document.addEventListener('pointerdown', function () { var t = now(); S.downGap = S.lastDown ? t - S.lastDown : 1e9; S.lastDown = t; }, true);
       r._.skip.addEventListener('pointerdown', function (e) { e.stopPropagation(); });
       r._.skip.addEventListener('click', function (e) { e.preventDefault(); e.stopPropagation(); api.skip(); });
     }
@@ -644,8 +646,10 @@
   function onCatchTap(e) {
     e.preventDefault(); e.stopPropagation();
     var sh = S.show; if (!sh) return;
-    // 結算時講的那句（k3「剋中：…」之類）：玩家常在揭曉時連點盤面加速，那串連點不能把這句點掉——1 秒後才收點擊（RV11-4）
-    if (sh.mode === 'say' && sh.onTap && now() - sh.shownAt > (atResolve(sh.step) ? SAY_ARM_RESOLVE_MS : 280)) { var f = sh.onTap; sh.onTap = null; f(); }
+    // 結算時講的那句（k3「剋中：…」之類）：玩家常在揭曉時連點盤面加速，那串連點不能把這句點掉（RV11-4）——
+    //   連點中的一下（跟上一下按下隔不到 400 ms）要等這句出現滿 1 秒才算；停了一下再點的照舊 280 ms 就收
+    var age = now() - sh.shownAt, burst = S.downGap < 400;
+    if (sh.mode === 'say' && sh.onTap && age > 280 && (!atResolve(sh.step) || !burst || age > SAY_ARM_RESOLVE_MS)) { var f = sh.onTap; sh.onTap = null; f(); }
   }
   function onMaskDown(e) {
     e.preventDefault(); e.stopPropagation();

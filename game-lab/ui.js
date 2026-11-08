@@ -934,7 +934,7 @@
     var vh = W.visualViewport ? Math.min(W.innerHeight, W.visualViewport.height) : W.innerHeight;
     var need = Math.min(Math.round(vh * 0.72), Math.max(260, Math.ceil(naturalH(s) + 4)));
     if (UI.camName === 'full' && floorRoom(need)) return;
-    UI.sheetNeed = 0;
+    UI.sheetNeed = need; floorSoon();               // 地板讓到 0 還不夠：鏡頭收；地板不能再把讓出來的高補回去（不然面板還是一樣矮）
     if (vh - 32 - need < 210) cam('strip', 'reward', 380); else cam('reward', 'reward', 380, need);
   }
   // 高螢幕接著木地板（V03）時開面板：面板要的高從延伸的地板讓出來，鏡頭照舊看整間店（RH-5：原本換 reward 鏡頭把店景上緣裁掉 58 px，

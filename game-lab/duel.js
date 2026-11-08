@@ -663,6 +663,7 @@
     }
     function scheduleFit() { if (!S.fitRaf) { fit(); S.fitRaf = requestAnimationFrame(() => { S.fitRaf = 0; fit(); }); } }
     try { S.ro = new ResizeObserver(() => scheduleFit()); S.ro.observe(root); } catch (_) {}
+    try { S.roCall = new ResizeObserver(() => { if (els.call.classList.contains('on')) placeCallout(); }); S.roCall.observe(els.call); } catch (_) {}   // 字型晚到、換行變了：結果框重新擺（RH-3）
     try { if (document.fonts && document.fonts.ready) document.fonts.ready.then(() => scheduleFit()); } catch (_) {}
 
     // ---------------- input（FIXLIST 11＝原版：點疊著的手牌＝攤開；點一張＝浮起＋跳屬性鈕；點屬性鈕＝照那個屬性丟出；點外面＝收回） ----------------
@@ -909,14 +910,14 @@
     }
     // 結果框長在字帶裡（上緣＝字帶上緣）；四行（唬你＋剋不動）在矮螢幕放不下時整個往上挪，不蓋到牌桌下的黑線與「你／聲望」那列（RH-3）；
     //   最多挪到封面下緣（蓋到封面下那行字，不蓋封面）
+    //   挪到底還放不下（唬你＋剋不動兩句都換行）：行距收緊一點（.tight）
     function placeCallout() {
       const c = els.call;
-      c.style.marginTop = '';
-      const avail = els.table.clientHeight - 2 - c.offsetTop, h = c.offsetHeight;
-      if (h > avail) {
-        const lab = parseFloat(getComputedStyle(els.table).getPropertyValue('--lab')) || 19;
-        c.style.marginTop = -Math.min(h - avail, lab + 4) + 'px';
-      }
+      c.style.marginTop = ''; c.classList.remove('tight');
+      const avail = els.table.clientHeight - 2 - c.offsetTop, up = (parseFloat(getComputedStyle(els.table).getPropertyValue('--lab')) || 19) + 4;
+      let h = c.offsetHeight;
+      if (h - avail > up) { c.classList.add('tight'); h = c.offsetHeight; }
+      if (h > avail) c.style.marginTop = -Math.min(h - avail, up) + 'px';
     }
     function hideCallout() {
       const c = els.call; if (!c.classList.contains('on')) return;
@@ -1166,6 +1167,7 @@
       S.anims.forEach(a => { try { a.cancel(); } catch (_) {} }); S.anims.clear();
       if (S.fitRaf) cancelAnimationFrame(S.fitRaf);
       if (S.ro) try { S.ro.disconnect(); } catch (_) {}
+      if (S.roCall) try { S.roCall.disconnect(); } catch (_) {}
       root.remove();
     }
     // ---------------- 名字 → 元素（教學手指、e2e） ----------------

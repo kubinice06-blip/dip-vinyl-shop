@@ -112,6 +112,7 @@
 .dl .callout .l2.g{color:var(--win,#2e7d52)}.dl .callout .l2.r{color:var(--red,#c11628)}.dl .callout .l2.z{color:var(--gray,#888)}
 .dl .callout .l2 .nt{display:inline-block;font:700 10px/1.2 var(--dl-zh);color:var(--gold,#b8860b);margin-left:8px;vertical-align:4px;letter-spacing:0;white-space:nowrap}
 .dl .callout .l3{font-size:12px;font-weight:700;line-height:16px;color:#333;margin-top:1px;text-wrap:balance}
+.dl .dl-t .callout.tight{padding-top:2px;padding-bottom:3px}.dl .dl-t .callout.tight .l1{line-height:16px}.dl .dl-t .callout.tight .l3{line-height:14px;margin-top:0}   /* 四、五行放不下時（duel.js placeCallout） */
 .dl .callout .sg{display:inline-block}   /* 一段（到標點為止）不拆開；段跟段之間才換行 */
 .dl .lastline{position:absolute;left:var(--bx);right:var(--pl);top:calc(var(--bt) + var(--band-h,74px) / 2);transform:translateY(-50%);text-align:center;font-size:11px;line-height:15px;color:var(--gray,#888);overflow:hidden;pointer-events:none;
   display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical}
