@@ -6,7 +6,7 @@
  *     → Promise<Stage>        // 整個 session 只 mount 一次；換畫面只換鏡頭（camera）與下方面板
  *
  *   Stage.load(shopId) → Promise              換一家店（台北地圖預告）；同一個 host
- *   Stage.camera(name, { ms, screen, panelMin }) → Promise
+ *   Stage.camera(name, { ms, screen, panelMin }) → Promise ; Stage.camCssH(name, o) → 這個鏡頭現在的舞台 CSS 高（strip 的 grow：高螢幕往上長）
  *       整數場景像素插值；同步設定 host 高度；ms 0＝直接切；strip 在可視高 <600 自動換 stripS；
  *       full／reward 有矮螢幕規則（從牆頂往下裁到 minH，再不夠才降倍率）；prefers-reduced-motion＝150 ms 淡入淡出
  *   Stage.put(id, spot | [x,y,outside], sprite?) ; walk(id, spots[], speed?) → Promise ; hide(id,on) ; sil(id,on) ; sprite(id,spr)
@@ -92,6 +92,12 @@
   // 矮螢幕規則（純函式，test/shop.test.mjs 直接測）：c＝layout 的鏡頭 {y,h,minH,anchor}；o＝{ dpr, dev（依寬度的最大裝置像素倍率）, avail（舞台可用 CSS 高）}
   // 放得下→原樣；放不下→照 anchor 從牆頂往下裁（留腳）到 minH；再不夠才把倍率降一級（×3→×2.667→…→×2）。回 {y,h,dev|null}
   function fitCamera(c, o) {
+    // grow＝{ panel }（對決橫條 strip）：高螢幕上盤面只要 panel 那麼高，多出來的高度讓橫條往上長（多看到店裡），不在盤面下面留空帶
+    //   o.growAvail＝可視高 − 頂欄 − grow.panel（CSS px）；放不下原本的 h 就照原樣
+    if (c.grow && o.growAvail > 0) {
+      var pr = (o.dev || Math.round(3 * (o.dpr || 1))) / (o.dpr || 1), gr = Math.floor(o.growAvail / pr + 1e-6), bot = c.y + c.h;
+      if (gr > c.h) { var gh = Math.min(gr, bot, c.grow.maxH || bot); return { y: bot - gh, h: gh, dev: null }; }
+    }
     if (c.minH == null || !(o.avail > 0)) return { y: c.y, h: c.h, dev: null };
     var dpr = o.dpr || 1, dev0 = o.dev || Math.round(3 * dpr), minDev = Math.max(1, Math.floor(2 * dpr + 1e-6));
     if (o.fine) {   // 細格子世界（倍率非整數）：先裁到 minH，再不夠才把倍率每次降 8%，最多降到 70%
@@ -192,7 +198,14 @@
     function fitCam(name, c, o) {
       var v = shop.view();
       var pm = o.panelMin != null ? o.panelMin : (PANEL_MIN[o.screen] != null ? PANEL_MIN[o.screen] : (CAM_PANEL[name] != null ? CAM_PANEL[name] : 150));
-      return fitCamera(c, { dpr: v.dpr, dev: v.baseDev, avail: visH() - 32 - pm, fine: !!(L.fine || L.projection) });
+      return fitCamera(c, { dpr: v.dpr, dev: v.baseDev, avail: visH() - 32 - pm, fine: !!(L.fine || L.projection), growAvail: c.grow ? visH() - 32 - (c.grow.panel | 0) : 0 });
+    }
+    // 這個鏡頭在現在的可視高下，舞台會是幾 CSS px 高（ui.js 對決進場時先把盤面定在最後的高度）
+    function camCssH(name, o) {
+      o = o || {};
+      var cams = L.cameras || {}, nm = o.noAuto ? name : pickCamera(name, cams, visH()), c = cams[nm] || cams.full || { y: 0, h: L.size[1] };
+      var v = shop.view(), t = fitCam(nm, c, o), dev = t.dev || v.baseDev || v.dev;
+      return Math.round(t.h * dev / (v.dpr || 1));
     }
     var lastCam = { name: 'full', o: {} }, tweening = 0, focusPrev = null;
     function toView(tgt, ms) {
@@ -715,6 +728,7 @@
       },
       spot: function (name) { var s = (L.spots || {})[name]; return s ? s.slice() : null; },
       view: function () { return shop.view(); },
+      camCssH: function (name, o) { return camCssH(name, o); },
       cssOf: function (x, y) { return shop.hostCss(x, y); },
       bump: function () { shop.bump(); return stage; },
       // ---- 進／出對決的舞台部分（SPEC-v2 §3.7，選用；「！」與黑條由 fx.encounterFx 負責，這裡只管走位與鏡頭，兩者同時跑）

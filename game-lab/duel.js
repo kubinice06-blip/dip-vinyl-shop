@@ -546,7 +546,7 @@
       const H = root.clientHeight;
       root.classList.remove('roomy', 'compact', 'short', 'tighter');
       if (H > 0) {
-        if (H >= 600) root.classList.add('roomy');
+        if (H >= 580) root.classList.add('roomy');   // 580：430×932 的橫條往上長之後盤面約 584（shops/dip.json strip.grow.panel）
         else if (H < 450) root.classList.add('short');
         else if (H < 500) root.classList.add('compact');
       }

@@ -1,7 +1,7 @@
 /* game-lab/duel.css — 品味對決 v4 盤面（v3 Agent D 起稿；v4 Agent B1，SPEC-v4 §2.5.1：提示句、蓋著的封套、第 n／6 手、結果三行）。
    顏色一律用 style.css :root 的 token（括號裡是保險值）。全部規則收在 .dl 底下，不撞外殼的 class。
    WebKit：不用 backface-visibility、不用 100vh、長按目標 -webkit-touch-callout:none；flex gap 用 margin 代替（iOS 14.0–14.4）。
-   尺寸分級（duel.js 量盤面可用高度後加 class）：.roomy ≥600、預設 500–599、.compact 450–499、.short <450；還放不下再加 .tighter。
+   尺寸分級（duel.js 量盤面可用高度後加 class）：.roomy ≥580、預設 500–599、.compact 450–499、.short <450；還放不下再加 .tighter。
    牌桌兩張封面的邊長 --scv 由 duel.js fit() 照牌桌剩下的高與寬算（店主 2026-11-08：專輯是主角）。 */
 .dl{--dl-zh:var(--zh,'Noto Sans TC','PingFang TC','Heiti TC',sans-serif);--dl-mono:'Space Mono',var(--dl-zh);
   --ecv:56px;--scv:120px;--hcv:66px;--pill:32px;--thr-h:46px;--tri-w:64px;--tri-h:57px;

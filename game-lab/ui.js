@@ -1423,6 +1423,7 @@
     var st = UI.stage, vh = W.visualViewport ? Math.min(W.innerHeight, W.visualViewport.height) : W.innerHeight;
     if (!st) return vh < 600 ? 84 : 120;
     try {
+      if (typeof st.camCssH === 'function') { var hh = st.camCssH('strip'); if (hh > 40) return hh; }   // strip 的 grow：高螢幕橫條往上長（整合版面 c）
       var L = st.layout, v = st.view();
       var nm = (W.DipLabStage && W.DipLabStage.pickCamera) ? W.DipLabStage.pickCamera('strip', L.cameras, vh) : 'strip';
       var c = L.cameras[nm] || L.cameras.strip;
