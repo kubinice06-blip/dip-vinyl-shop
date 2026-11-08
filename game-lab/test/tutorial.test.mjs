@@ -263,8 +263,7 @@ section('三王牌 × 特價箱 84 種挑法 × {照做、只點星鈕、點錯�
   eq(COMBOS.length, 84, '特價箱 9 張挑 3＝84 種');
   let n = 0;
   for (const t of TIERS) for (let k = 0; k < COMBOS.length; k++) {
-    const variants = k % 7 === 0 ? ['plain', 'chip', 'wrong', 'info'] : [['plain', 'chip', 'wrong', 'info'][k % 4]];
-    for (const variant of variants) {
+    for (const variant of ['plain', 'chip', 'wrong', 'info']) {
       // 挑的順序也換一換（照挑的順序抽）
       const combo = k % 2 ? COMBOS[k].slice().reverse() : COMBOS[k];
       const r = route(t, combo, variant, { seedKey: 'tut-' + t + '-' + k });
@@ -291,7 +290,7 @@ section('三王牌 × 特價箱 84 種挑法 × {照做、只點星鈕、點錯�
       if (variant === 'info') ok(r.infoOk >= 18, r.tag + ' 每一步都能看唱片資訊（' + r.infoOk + ' 次）');
     }
   }
-  ok(n >= 3 * 84, '路線數 ' + n);
+  eq(n, 3 * 84 * 4, '路線數 3 王牌 × 84 種 × 4 種點法');
 });
 
 // ---------------------------------------------------------------------------
