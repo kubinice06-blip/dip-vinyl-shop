@@ -42,6 +42,7 @@
 //  44（新）序章途中重新整理：特價箱還沒挑 → 從頭開始；挑過了 → 直接到對決
 import fs from 'fs';
 import path from 'path';
+import { createRequire } from 'module';
 import { launch, newPage as newPage0, record, results, sleep, Q, SIZES, ALLOWED_LS, screen, waitScreen, jsClick, tapAt, duelReady, openTitle, noScroll, scrollOk,
   answerBargain, prologueToDuel as prologueToDuel4, seedRun as seedRun4, seededContinue as seededContinue4, advanceUntil, resolveHands, longPress, infoOpen, closeInfo,
   watchSay, econCalls, tapHot, waitStep, walkTutorial as walkTutorial4 } from './e2e-lib.mjs';
@@ -49,6 +50,7 @@ import { launch, newPage as newPage0, record, results, sleep, Q, SIZES, ALLOWED_
 const HERE = path.dirname(new URL(import.meta.url).pathname);
 const LAB = path.resolve(HERE, '..');
 const ONLY = process.env.LAB_ONLY ? new Set(process.env.LAB_ONLY.split(',').map(Number)) : null;
+const YOU_HP = createRequire(import.meta.url)(path.join(LAB, 'engine.js')).CFG.playerHp;   // 你的聲望（FIXLIST 11 H5-1：9）
 const FULL = process.env.LAB_FULL === '1';
 const LAYOUT = new Set([1, 3, 4, 6, 10, 16, 17, 18, 19, 20, 22, 27, 29, 33, 35, 36, 39, 40, 41, 42]);
 const ECON = process.env.LAB_ECON || (fs.existsSync(path.join(LAB, 'econ.js')) ? 'real' : 'stub');
@@ -310,7 +312,7 @@ async function run() {
         const back = await waitScreen(page, 'duel', 20000);
         await duelReady(page);
         const v = await page.evaluate(() => window.__lab.duel());
-        record(8, size, said && back && v.eId === 'man' && v.pHp === 10 && v.eHp === v.eMax, `said ${said}, back ${back}, ${v && v.eId} p ${v && v.pHp} e ${v && v.eHp}/${v && v.eMax}`);
+        record(8, size, said && back && v.eId === 'man' && v.pHp === YOU_HP && v.eHp === v.eMax, `said ${said}, back ${back}, ${v && v.eId} p ${v && v.pHp} e ${v && v.eHp}/${v && v.eMax}`);
       } catch (e) { record(8, size, false, 'error ' + e.message); }
       await ctx.close();
     }
@@ -477,7 +479,7 @@ async function run() {
         await page.evaluate(() => window.__lab.forceLose());
         const end = await waitScreen(page, 'end', 30000);
         const o = await page.evaluate(() => window.__lab.run.over);
-        record(33, size, menu && /再一場/.test(txt) && v.d.eId === eid && v.d.pHp === 10 && v.left === 0 && end && o === 'dead', `menu ${menu}; retry vs ${v.d.eId} (want ${eid}) pHp ${v.d.pHp} left ${v.left}; 2nd loss → end ${end} (${o})`);
+        record(33, size, menu && /再一場/.test(txt) && v.d.eId === eid && v.d.pHp === YOU_HP && v.left === 0 && end && o === 'dead', `menu ${menu}; retry vs ${v.d.eId} (want ${eid}) pHp ${v.d.pHp} left ${v.left}; 2nd loss → end ${end} (${o})`);
       } catch (e) { record(33, size, false, 'error ' + e.message); }
       await ctx.close();
     }
@@ -598,7 +600,7 @@ async function run() {
             replay: !!m.querySelector('[data-a=replay]'), learned: m.querySelectorAll('.lb-learned span').length, contentLines: window.DipLabContent.rules.lines };
         });
         const linesOk = JSON.stringify(rc.lines) === JSON.stringify(RULE_LINES) && JSON.stringify(rc.contentLines) === JSON.stringify(RULE_LINES);
-        const footOk = !/[{}]/.test(rc.foot) && /你 10 聲望/.test(rc.foot);
+        const footOk = !/[{}]/.test(rc.foot) && rc.foot.includes('你 ' + YOU_HP + ' 聲望');
         await jsClick(page, '.lb-modal [data-x]'); await sleep(300);
         await page.evaluate(() => window.__lab.stageAction('poster:event')); await sleep(300);
         const posterRules = !!(await page.$('.lb-modal .lb-rules')); await jsClick(page, '.lb-modal [data-x]'); await sleep(300);

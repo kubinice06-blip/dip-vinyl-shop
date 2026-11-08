@@ -9,7 +9,7 @@
 - [x] 1 引擎 CFG handSize 5、playerHp 9；客人聲望 H5-1；規則卡頁尾「你 9」；engine 註解與後備表
 - [x] 2 老闆送的（四張禮物＋王牌）不能賣回：engine choose 擋（錯誤碼）、econ 賣回介面標「老闆送的」不能選；S6 ≥5
 - [x] 3 教學腳本五張版（C.tutorial.script：hand/draw/pick/expect），六課順序不變；男子手牌 3
-- [ ] 4 sim --n 3000 22/22；engine.test、tutorial.test、check-content、lint-copy 綠；README 平衡、dev/decks-v4.md、dev/sim-v4.json
+- [x] 4 sim --n 3000 22/22；engine.test、tutorial.test、check-content、lint-copy 綠；README 平衡、dev/decks-v4.md、dev/sim-v4.json
 
 ## 記錄
 - 步驟 1：engine CFG playerHp 9、handSize 5（enemyHand 3、bagMax 8、maxRounds 6、mercy 不動）；HONESTY／PLANNER_BY_DEPTH 後備表照 R1（註記 H5-1 照用）；
@@ -28,3 +28,15 @@
   第 1–4 手教的那張都在第 1–4 格、到那一手才出。pick／expect、六課順序、男子暗手 3 張、教學 18 都沒變（只有 pearl 的四張換了順序：Rhythm X 第 3 格）。
   tutorial.test：起手＝四張＋特價箱第 1 張、你 CFG.playerHp、每個「點」步驟手上 5 張、男子暗手 min(3, 剩下)、第 5 手手指＝最左＝特價箱第 2 張、點錯的別張改用整手的索引。
   check-content：四張＝handSize−1、照 pick[0..3] 的順序。tutorial.js 頂端註解。tutorial.test 155808／0、engine.test 2040487／0、check-content、lint-copy 通過。
+- 步驟 4：`sim.mjs --n 3000 --json dev/sim-v4.json`：22/22（36 秒）。S1 78.3、S2 5.1／47.0／57.4／40.1（≤63.3）、S3 0、S4 5.67 手／≤3 手 0.6%、
+  S5 100%／2.59 手、S6 +11.0（none 67.3）、S7 一般 79.2–93.3（14.1）、主理人 66.3、樂評 89.1、藏家 53.3、S8 99.9、S9 KO 47.8%（你 43.4／他 4.5）、HP 20–25 ≤ 25–26 ≤ 28（你 9）——跟 H5-A 的 H5-1 一致。
+  sim.mjs 頂端註解加 FIXLIST 11。dev/decks-v4.md 用 scratchpad v4/H1/gen-decks.cjs 重產（R1 版改：括號欄改 R1 聲望、手牌與聲望說明、送的不能賣）。
+  README：v4 改了什麼加 FIXLIST 11（追加）列、規則頁尾你 9、手牌 5 張、聲望、教學、平衡整節改 H5-1（對照 R1）、經濟賣回列、等店主決定的 1／8。
+  e2e.spec #8／#33（pHp）、#39（頁尾）改讀 engine CFG.playerHp。
+- 驗：engine.test 2040487／0、tutorial.test 155808／0、shop／hit／chars test 綠、check-content、lint-copy 通過；
+  e2e-econ 四尺寸 80/80；e2e.spec #8 #20 #21 #33 #39（390）6/6、#19 教學全程（現在的對決盤面，手牌 5 張）390 三王牌＋360 pearl 4/4。
+
+## 沒做／留給主線
+- 對決盤面的 5 張手牌版面（疊成扇形、點牌跳屬性）、教學步驟的「點牌堆→點牌→點屬性」、規則卡頁尾第 1 行「點專輯選牌；按住封面看唱片資訊。」——FIXLIST 11 主體（介面），不在這次範圍。
+- 拿獎勵包包滿「拿掉一張」（take 的 dropId）照舊可以拿掉送的：那不是賣、不收錢。要也擋的話改 engine take＋ui.js dropPanel。
+- 沒跑完整的 e2e.spec／e2e-duel 四尺寸（版面測試等介面那支改完再跑；手牌 5 張在現在的盤面可能擠）。

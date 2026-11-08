@@ -11,6 +11,8 @@
 // FIXLIST 10（平衡 R1）加兩條：S9＝會讀的＋smart 一晚裡的客人場（一般／菁英／藏家）由 KO 結束（任一方聲望歸零）≥35%；
 //   HP＝聲望單調：一般客人的最大值 ≤ 菁英的最小值、菁英的最大值 ≤ 藏家（同一級可以不一樣，跨級不准倒掛；規則卡頁尾照級寫範圍）。
 //   報表另列 KO 分「你 KO 他／他 KO 你」與「第 6 手比聲望條」結束的比例，一晚裡分一般／菁英／藏家，單場表每位客人也列。
+// FIXLIST 11（平衡 H5-1）：你的手牌 5 張（CFG.handSize；他的暗手 CFG.enemyHand 照舊 3）、你 9（CFG.playerHp）、客人 20–25／菁英 25–26／藏家 28；門檻不變（22 條）。
+//   老闆送的四張＋王牌不能賣回（engine.isGift）：smart 包包滿要賣時只賣不是送的那幾張。
 // Any failed threshold sets process.exitCode = 1.
 import { createRequire } from 'module';
 import fs from 'fs';
