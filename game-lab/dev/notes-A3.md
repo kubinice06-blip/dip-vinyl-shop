@@ -62,7 +62,7 @@
   - `node game-lab/test/shop.test.mjs`：919 passed、0 failed；`node game-lab/tools/check-shops.mjs`：OK（A2 的，確認 shop.js 改動沒弄壞）
   - `LAB_URL=http://localhost:8773/game-lab/index.html node game-lab/tests/e2e-taps.mjs`：四尺寸 28/28 PASS（標題畫面；#1 hotPoints 真點 44/44（375×548 37/37，牆上第一排 7 張在鏡頭外）、
     #2 13 箱×左中右、#3 probe3、#4 21 件家具、#5 按下金框＋放開名牌 16 個、#6 橫條泡泡不碰老闆、#7 主控台 0 錯誤（?strict=1））
-  - v3 `tests/e2e.spec.mjs`（390×664 抽 11 個情境）：#1 #18(店內封面) #39 過；其他 FAIL＝`engine: missing card westlife-coast-to-coast`（M1 刪掉的卡、v3 content 還在引用，§3.1 預期壞）。對照組（合併 A2-M1、還沒改 shop.js 的 28026882f）見下一行。
+  - v3 `tests/e2e.spec.mjs`（390×664 抽 11 個情境）：#1 #18(店內封面) #39 過；其他 FAIL＝`engine: missing card westlife-coast-to-coast`（M1 刪掉的卡、v3 content 還在引用，§3.1 預期壞）。對照組（合併 A2-M1、還沒改 shop.js 的 28026882f，同樣 11 個情境）PASS／FAIL 一模一樣 → shop.js 的改動沒有造成 v3 回歸。
 - M1（2026-11-08）：`node game-lab/tools/bake-cards.mjs` 0 problems、exit 0；`lint-copy` 通過（LINES-REVIEW.md 已 checkout 回去，A1 擁有）。
   `engine.test`、`check-content`、`check-shops`、`shop.test` 失敗＝v3 的 content.js／shops 引用上面 36 張已刪的卡（預期，A1／A2 換成 v4 牌組與封面後就好）。
 
