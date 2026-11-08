@@ -26,3 +26,4 @@
 ## 記錄
 - RV11-1：cardinfo.js open() 加 armed（面板裡 pointerdown 過才收 click；detail 0＝鍵盤／el.click() 照常）。lpmap 390／360 全部 stillOpen=true，lppop 不再開 Spotify 分頁；e2e.spec #18（390）PASS（hand／ace／spread／lifted）。
 - 探針：scratchpad/v4/H3/input.mjs（RV11-1／2／3／5／6，390／360 全 PASS）、tutprobe.mjs（RH-6／8、RV11-4／5，四尺寸 PASS）、callout.mjs、flip.mjs、prol2.mjs、seam2.mjs。單元：tutorial 182142／0、chars、hit 綠。
+- e2e.spec #20 390 第一次 FAIL：教學剛攤開 350 ms 內「點別張」也被我當成雙擊不罵 → 改成只有跟攤開那下同一點（24 px 內）才不罵（sh.quiet＋onMaskDown 比座標）；#20 390 重跑 PASS、tutprobe RV11-5 照舊 PASS。

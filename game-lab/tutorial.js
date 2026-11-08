@@ -353,7 +353,7 @@
       r._.catcher.addEventListener('pointerdown', function (e) { e.preventDefault(); });
       r._.catcher.addEventListener('click', onCatchTap);
       // 每一下按下的間隔（不管按在哪：揭曉時連點盤面加速的那串也算）：分辨「連點中的一下」與「停下來再點」（RV11-4）
-      document.addEventListener('pointerdown', function () { var t = now(); S.downGap = S.lastDown ? t - S.lastDown : 1e9; S.lastDown = t; }, true);
+      document.addEventListener('pointerdown', function (e) { var t = now(); S.downGap = S.lastDown ? t - S.lastDown : 1e9; S.lastDown = t; S.lastXY = { x: e.clientX, y: e.clientY }; }, true);
       r._.skip.addEventListener('pointerdown', function (e) { e.stopPropagation(); });
       r._.skip.addEventListener('click', function (e) { e.preventDefault(); e.stopPropagation(); api.skip(); });
     }
@@ -654,6 +654,8 @@
   function onMaskDown(e) {
     e.preventDefault(); e.stopPropagation();
     var sh = S.show; if (!sh) return;
+    var q = sh.quiet;
+    if (q && now() - q.t < SWALLOW_MS && Math.abs(e.clientX - q.x) < 24 && Math.abs(e.clientY - q.y) < 24) return;   // 雙擊攤開的第二下：不罵（點別的地方照罵）
     if (sh.mode === 'do') wrong('target');
   }
   function bump(el) {
@@ -664,7 +666,6 @@
   function wrong() {
     var sh = S.show; if (!sh || !S.root || sh.mode !== 'do' || sh.text == null) return;
     if (sh.shownAt && now() - sh.shownAt < SWALLOW_MS) return;
-    if (sh.quietAt && now() - sh.quietAt < SWALLOW_MS) return;
     var R = S.root._;
     R.rings.querySelectorAll('.tut-ring').forEach(bump); bump(R.hand);
     setText(UI().wrong || '先點我指的這裡。', false); layout(true);
@@ -961,7 +962,7 @@
   function refreshDo(s) {
     var sh = S.show; if (!sh || sh.step !== s || sh.mode !== 'do') return;
     var x = liveDo(s);
-    if (sh.stacked && !x.stacked) sh.quietAt = now();   // 剛攤開：雙擊的第二下落在遮罩上（洞已經移到那張）不罵（RV11-5）
+    if (sh.stacked && !x.stacked && S.lastXY) sh.quiet = { t: now(), x: S.lastXY.x, y: S.lastXY.y };   // 剛攤開：雙擊的第二下（同一點）落在遮罩上（洞已經移到那張）不罵（RV11-5）
     sh.targets = x.targets; sh.point = x.point; sh.stacked = x.stacked; sh.pointAt = x.pointAt;
     if (sh.text !== x.text) { sh.text = x.text; setText(x.text, sh.colorChars); }
     S.root._.hand.hidden = !sh.point;
