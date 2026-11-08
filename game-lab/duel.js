@@ -388,10 +388,12 @@
       renderHint(v);
       renderRec(v);
     }
+    // 打完了（v.over）：引擎不再給提示 → 留著最後一手那句、變淡（不留一個空框）
     function renderHint(v) {
       const tx = v.over ? '' : hintText(v);
-      els.htx.textContent = tx;
-      els.hint.classList.toggle('empty', !tx);
+      if (tx || !v.over) els.htx.textContent = tx;
+      els.hint.classList.toggle('empty', !tx && !(v.over && els.htx.textContent));
+      els.hint.classList.toggle('done', !!v.over);
     }
     // 他還有 N 張＝他手牌＋牌堆；丟出的那一刻（t=0）他已經把一張放上牌桌 → thrown＝1 先少一張（不等下一手的 view）
     function renderRec(v, thrown) {
@@ -409,7 +411,9 @@
       if (!d) { el.innerHTML = `<span class="ph">${esc(T(side === 'e' ? 'slotE' : 'slotP'))}</span>`; return; }
       const who = esc(T(side === 'e' ? 'he' : 'you'));
       if (d.hidden) { el.innerHTML = `<span class="cvw">${sleeveHTML('cv')}</span><div class="who">${who}<span class="z">${esc(T('sleeve'))}</span></div>`; return; }
-      el.innerHTML = `<span class="cvw">${img(d.card)}</span><div class="who">${who}<span class="${d.attr}">${d.ace ? esc(T('aceWord')) : ''}${ZH[d.attr]} <span class="num">${d.star}</span></span></div>`;
+      // 王牌：封面左上角掛「王牌」小標（跟手牌一樣），字只寫「你・經典 7」——字短才不會伸進中間的浮框
+      el.innerHTML = `<span class="cvw">${img(d.card)}${d.ace ? `<span class="acetag">${esc(T('aceWord'))}</span>` : ''}</span><div class="who">${who}<span class="${d.attr}">${ZH[d.attr]} <span class="num">${d.star}</span></span></div>`;
+      el.classList.toggle('ace', !!d.ace);
       if (d.card) { el.dataset.card = d.card.id; el.setAttribute('role', 'button'); el.tabIndex = 0; el.setAttribute('aria-label', (side === 'e' ? '他丟的：' : '你丟的：') + title(d.card)); }
     }
     function triSVG() {
