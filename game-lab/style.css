@@ -530,3 +530,10 @@ body.stage-wait .lb-panel.title .lb-btn{pointer-events:none;opacity:.55;}   /* �
 .lb-recs .rc .pt{margin:2px 0 0;font-size:12px;color:#333;line-height:1.45;}
 .lb-bagline .money{flex:none;font:700 13px 'Space Mono',monospace;padding:0 6px 0 4px;color:var(--ink);}
 .lb-sheet.one.notitle .lb-one{margin-top:4px;}
+/* 高螢幕（430×932 這類，V03）：店景已經整面寬、不能再大，對白框不再撐滿剩下的高（一兩行字配 360px 黑框）——
+   框照內容長（至少約 4 行）、字大一號，包包那條緊接在下面；今晚來客的錢／包包那條也緊接在名單下面 */
+@media (min-height:800px){
+  .lb-dq{flex:0 0 auto;min-height:176px;font-size:16px;line-height:2;margin-top:18px;}
+  .lb-dq .tx{min-height:64px;}
+  .lb-panel.night .lb-bagline{margin-top:6px;}
+}

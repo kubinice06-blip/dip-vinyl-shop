@@ -206,6 +206,7 @@
     el.addEventListener('contextmenu', function (e) { e.preventDefault(); });
     veil(true);
     app().appendChild(el);
+    app().classList.add('ec-open');          // 抽屜開著：後面的今晚來客藏起來，不會半截露在抽屜上面（V12）
     S.el = el; S.open = true;
     D.addEventListener('keydown', onKey, true);
     W.addEventListener('resize', onResize);
@@ -219,11 +220,12 @@
     else if (e.key === 'ArrowLeft' && S.kind === 'bin' && !S.sub) { e.preventDefault(); flip(-1); }
     else if (e.key === 'ArrowRight' && S.kind === 'bin' && !S.sub) { e.preventDefault(); flip(1); }
   }
-  // 抽屜高（開的時候量一次，給 stage.focus 的 panelMin）；變高了才重新對焦
+  // 抽屜高（開的時候量一次，給 stage.focus 的 panelMin）；高度變了（變高或變矮）就重新對焦——
+  //   變矮沒對焦會在店景與抽屜之間露出一條今晚來客（RT-5／V12：櫃檯「先賣一件」）
   function refocus(ms) {
     var st = ST(); if (!st || !st.focus || !S.el || !S.hotId) return Promise.resolve();
     var h = S.el.offsetHeight;
-    if (S.focusH != null && h <= S.focusH && ms !== 0) return Promise.resolve();
+    if (S.focusH != null && Math.abs(h - S.focusH) < 2 && ms !== 0) return Promise.resolve();
     S.focusH = h;
     return Promise.resolve(st.focus(S.hotId, { panelMin: h, ms: ms == null ? 300 : ms })).catch(function (e) { console.error(e); });
   }
@@ -233,6 +235,7 @@
     S.token++;
     var st = ST();
     if (S.el) { S.el.remove(); S.el = null; }
+    app().classList.remove('ec-open');
     veil(false);
     D.removeEventListener('keydown', onKey, true);
     W.removeEventListener('resize', onResize);
@@ -462,7 +465,7 @@
     el.innerHTML = html;
     el.classList.toggle('ec-sub', !!S.sub);
     fit();
-    if (S.focusH != null) refocus();   // 變高了（例：賣回子面板）就重新對焦，箱子不會被蓋到
+    if (S.focusH != null) refocus();   // 高度變了（賣回子面板變高、先賣一件變矮）就重新對焦：箱子不被蓋到、也不露出後面的今晚來客
   }
   function fit() {
     var el = S.el; if (!el) return;
@@ -505,6 +508,8 @@
     e.stopPropagation();
     var b = e.target.closest && e.target.closest('[data-a]'); if (!b || b.disabled || !S.el || !S.el.contains(b)) return;
     var a = b.getAttribute('data-a');
+    // 剛買完：抽屜換成下一張、「買」鈕在同一個位置——連點的第二下不算（RT-2：雙擊買到兩張）
+    if (S.lockUntil && Date.now() < S.lockUntil && /^(buy|bbuy|rbuy|sell|spick|tog|take)$/.test(a)) return;
     if (a === 'close') { close(); return; }
     if (a === 'info') { info(card(b.getAttribute('data-cid'))); return; }
     if (a === 'prev') { flip(-1); return; }
@@ -613,9 +618,12 @@
     }
     done(choose({ type: 'buyRelic', relicId: id }));
   }
+  var LOCK_MS = 450;
   function done(res) {
     S.sub = null;
     if (res) {
+      S.lockUntil = Date.now() + LOCK_MS;
+      if (S.el) { var el0 = S.el; el0.classList.add('ec-lock'); setTimeout(function () { el0.classList.remove('ec-lock'); }, LOCK_MS); }
       sfx('readHit'); effectsToast(res);
       S.sel = []; S.focusId = null;
       if (S.kind === 'bargain') { var r = liveRun(); if (r && !(r.shop.bargain || []).length) { render(); setTimeout(function () { if (S.kind === 'bargain') { close(); var st = ST(); if (st && st.say) st.say('o', ui('bargainEmpty'), { tone: 'owner', ms: 2200 }); } }, 600); return; } }
