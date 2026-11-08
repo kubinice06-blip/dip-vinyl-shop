@@ -3,6 +3,9 @@ import fs from 'node:fs';
 const D = new URL('.', import.meta.url).pathname;
 const applied = new Set();
 for (const f of fs.readdirSync(D)) if (/^applied-.*\.json$/.test(f)) for (const p of JSON.parse(fs.readFileSync(D + f, 'utf8'))) applied.add(p.key);
+// 主線裁定不收的（rulings.md），每天的 plan 都要排除，否則已退回的對應隔天又會被寫進去
+const rejected = new Set(fs.existsSync(D + 'rejected.json') ? JSON.parse(fs.readFileSync(D + 'rejected.json', 'utf8')).map(r => r.key) : []);
+for (const k of rejected) applied.add(k);
 const rows = new Map();
 for (const l of fs.readFileSync(D + 'spotify.jsonl', 'utf8').split('\n')) if (l.trim()) { const r = JSON.parse(l); rows.set(r.key, r); }
 const plan = [...rows.values()].filter(r => r.v2 && r.url && !applied.has(r.key)).map(r => ({ key: r.key, url: r.url, via: 'spotify-v2-' + r.how }));
