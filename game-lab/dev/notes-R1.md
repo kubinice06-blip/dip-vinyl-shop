@@ -10,7 +10,7 @@
 - [x] 2. sim.mjs：S9（客人場 KO 任一方 ≥35%）、HP 聲望單調（一般最大 ≤ 菁英最小、菁英最大 ≤ 藏家）、KO 分你／他、比聲望條比例；單場表加 KO 列；S7 標題照 C.plannerByDepth 產
 - [x] 3. `sim.mjs --n 3000 --json dev/sim-v4.json`：全部門檻（含 S9、HP）通過
 - [x] 4. engine.test、tutorial.test、check-content、lint-copy（LINES-REVIEW 有變就重產）
-- [ ] 5. README（規則／聲望／唬人／出招）、dev/decks-v4.md、規則卡頁尾（hpText 自動算，確認字）
+- [x] 5. README（規則／聲望／唬人／出招）、dev/decks-v4.md、規則卡頁尾（hpText 自動算，確認字）
 
 ## 記錄
 
@@ -43,3 +43,13 @@
 - `node game-lab/test/tutorial.test.mjs`：142776 passed, 0 failed（教學 hp 18、男子 easy／老實，不受影響）。
 - `node game-lab/tools/check-content.mjs`：通過（客人 聲望 man 10、copycat 22、already 21、needle 22、skip 22、broke 22、buyer 22、label 22、critic 24、boss 24；hpText＝實際聲望）。
 - `node game-lab/tools/lint-copy.mjs`：通過；LINES-REVIEW.md 重產後沒有變（句子 390、新 293；規則卡頁尾是模板，數字由 UI 代入）。
+
+### 5. 文件與頁尾（3d6e8335b＋這一筆）
+- README：依據加 FIXLIST 10；改了什麼表加 FIXLIST 10 列；規則節加「聲望」、「他」改照 `C.plannerByDepth`、「唬人」改八成／七成五；頁尾字寫出來；
+  新「平衡」節（S1–S9＋HP 數字表、各級 KO、可行區窄）；檔案表與檢查指令的 sim 說明；等店主決定的第 1 項改成 R1 已寫回＋放寬的兩個方向。
+- dev/decks-v4.md：用 X 的產生器改的 `scratchpad/v4/R1/gen-decks.cjs` 重產（照實率從 `C.honesty` 算、加「出招」欄與「單場 KO」欄、括號改成 X 版聲望、HP 與 KO 摘要兩行）。
+  diff 只有這些（X 之後沒人手改過這份）。
+- 規則卡頁尾：`C.rules.hpText` 自動算，字＝「你 10 聲望；客人 21–22、菁英 22–24、傳說藏家 24。」（「你 10」是 foot 的固定字，check-content 對 `CFG.playerHp` 查；你沒變，不用改）。
+  `LAB_ONLY=39 LAB_FULL=1 node game-lab/tests/e2e.spec.mjs`：4/4 PASS（四個尺寸頁尾都是新字、不捲動）。
+- index.html 的 game-lab 資源 `?v=42` → `?v=43`（content.js／engine.js 改了數字，避免瀏覽器拿舊檔；dip-character／dip-player 跟主站，不動）；README 檔案表跟著改。
+- 其他 node 檢查順手跑：shop.test 1276／hit.test 343／chars.test 30061 全過，check-shops、check-covers OK。
