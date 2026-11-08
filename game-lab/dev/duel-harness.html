@@ -28,6 +28,8 @@
   <div><button data-e="">照引擎</button><button data-e="honest">照實</button><button data-e="bluff">唬人</button><button data-e="c">出經</button><button data-e="o">出冷</button><button data-e="h">出硬</button><button data-e="ace">王牌</button></div>
   <b>結果（__lab.force）</b>
   <div><button data-f="">不強制</button><button data-f="counter">剋中</button><button data-f="countered">被剋</button><button data-f="tie">平手</button></div>
+  <b>示範（兩邊都排好，按「丟！」）</b>
+  <div><button data-demo="counter">剋中</button><button data-demo="blocked">剋不動</button><button data-demo="bluff">唬人</button><button data-demo="ace">王牌擋下</button><button data-demo="tie">平手</button></div>
   <b>一場</b>
   <div><button id="re">再一場</button><button id="auto">自動（thoughtful）</button><button id="snd">開聲音</button></div>
   <pre id="info"></pre>
@@ -51,6 +53,7 @@
  *   window.__lab＝{ force(o), stage, duel(), rawDuel(), autoplay(policy), el(name) }（跟 ui.js 的 __lab 同介面，e2e-duel 用）
  *   window.__h＝{ setNext(spec|{i,attr}), plan(list), remount(seed), log, seen, duel, ready, errors, sfx:[[name,opts]…], music:[cardId…] }
  *     spec＝'honest'|'bluff'|'c'|'o'|'h'|'ace'|'-'；{i,attr}＝他手牌第 i 張用 attr 出（forcedPlay，照抄給引擎）
+ *   __h.find(want)＝這一手「你怎麼出＋他怎麼出」會得到 want（counter|blocked|bluff|ace|tie）的組合；__h.demo(want)＝找到（找不到就換種子）、替你選好、排好他 → 按「丟！」
  */
 (function(){
 'use strict';
@@ -170,6 +173,37 @@ window.__lab = {
   autoplay(policy){ return DipLabDuel.autoplay(policy || 'novice'); },
   el(name){ return DipLabDuel.el(name); },
 };
+// ---- 示範：找一組「你出這個、他出那個」會得到 want 的（他那邊用 forcedPlay；唬人＝他出提示色剋過來的那色、你出剋提示的那色）
+H.find = want => {
+  const d = H.duel; if (!d || !d.plan || d.over) return null;
+  const v = E.view(d), hintA = d.plan.hint.attr;
+  for (const act of E.legalActions(d)) {
+    const pa = act.ace ? v.aceAxis : act.attr;
+    for (let i = 0; i < d.e.hand.length; i++) for (const a of ATTRS) {
+      const c = d.e.hand[i]; if (!c || (c.tier && a !== E.aceAxis(c))) continue;
+      const bluff = a !== hintA, plain = !act.ace && !c.tier;
+      const r = E.preview(d, act, { i, attr: a }); if (!r) continue;
+      const ok = want === 'counter' ? plain && !bluff && r.kind === 'counter'
+        : want === 'blocked' ? plain && !bluff && r.blocked === 'gap' && r.by === 'p'
+        : want === 'bluff' ? plain && a === E.BEATS[hintA] && pa === E.COUNTER_OF[hintA] && r.kind === 'countered'
+        : want === 'ace' ? act.ace && !c.tier && r.blocked === 'ace'
+        : want === 'tie' ? plain && !bluff && r.kind === 'tie' : false;
+      if (ok) return { act, pa, e: { i, attr: a } };
+    }
+  }
+  return null;
+};
+H.demo = want => {
+  let f = H.find(want);
+  for (let k = 0; !f && k < 40; k++) { start(++seedN); f = H.find(want); }
+  if (!f) return null;
+  FORCE = null; H.next = f.e;
+  const go = () => { if (f.act.ace) DipLabDuel.select('ace'); else { DipLabDuel.select(f.act.i); DipLabDuel.select(f.act.i, f.pa); } };
+  // 剛重開的盤面要等進場（enterDone）才收點擊
+  const t0 = Date.now(), tick = () => { const x = DipLabDuel.debug(); if (x && x.enterDone && x.phase === 'choose') go(); else if (Date.now() - t0 < 4000) setTimeout(tick, 60); };
+  tick();
+  return f;
+};
 H.next = null;
 H.setNext = spec => { H.next = spec == null ? null : spec; return H.next; };
 H.plan = list => { H.queue = [].concat(list || []); return H.queue; };
@@ -179,6 +213,7 @@ $('#devbtn').onclick = () => $('#dev').classList.toggle('on');
 document.querySelectorAll('[data-e]').forEach(b => b.onclick = () => { H.next = b.dataset.e || null; document.querySelectorAll('[data-e]').forEach(x => x.classList.toggle('on', x === b)); });
 document.querySelectorAll('[data-f]').forEach(b => b.onclick = () => { const k = b.dataset.f; FORCE = k ? { kind: k, toE: k === 'counter' ? 3 : 0, toP: k === 'countered' ? 3 : 0 } : null; document.querySelectorAll('[data-f]').forEach(x => x.classList.toggle('on', x === b)); });
 $('#re').onclick = () => start(++seedN);
+document.querySelectorAll('[data-demo]').forEach(b => b.onclick = () => { const f = H.demo(b.dataset.demo); H.log.push('demo ' + b.dataset.demo + (f ? '' : '：找不到')); });
 $('#auto').onclick = () => DipLabDuel.autoplay('thoughtful');
 $('#snd').onclick = () => { try { F.unlockFromGesture(true); } catch (e) { console.warn(e); } };
 setInterval(() => { const v = H.duel && E.view(H.duel); $('#info').textContent = v ? `seed ${seedN} 第 ${v.n} 手 你 ${v.pHp} 他 ${v.eHp}\nnext ${H.next || '-'} queue ${H.queue.join(',') || '-'}\nforce ${FORCE ? FORCE.kind : '-'}\n${H.log.slice(-6).join('\n')}` : ''; }, 400);
