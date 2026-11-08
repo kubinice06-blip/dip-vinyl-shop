@@ -258,6 +258,9 @@ for (const id of Object.keys(C.enemies || {})) {
   for (const k of keys) if (!l[k] || (Array.isArray(l[k]) && !l[k].length)) err('lines.' + id, '缺少 ' + k);
   if (e && e.prologue) for (const k of ['line', 'win']) if (k in l) err('lines.' + id, '序章男子不該有 ' + k + '（試做版加的句子，D §2）');
   if ('switch' in l) err('lines.' + id, 'v4 拿掉急了／翻面：不該有 switch');
+  // 開場泡泡（line）與進門那句（intro）跟提示句同時在畫面上：不能用提示的關鍵字（R-04／COPY-06：資深樂評「名盤就是名盤。」像這手的提示）
+  const KEYS = [].concat(...Object.values(C.hintKeywords || {}), ...Object.values(C.hints || {}).map(a => a.map(h => h.key)));
+  for (const k of ['line', 'intro']) [].concat(l[k] || []).forEach(t => { const hit = KEYS.find(w => w && String(t).includes(w)); if (hit) err('lines.' + id + '.' + k, '用到提示關鍵字「' + hit + '」：' + t); });
 }
 for (const k of ['retry', 'bagFull', 'relicFull']) if (!((C.lines || {}).owner || {})[k]) err('lines.owner', '缺少 ' + k);
 

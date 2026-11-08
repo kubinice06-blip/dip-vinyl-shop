@@ -234,6 +234,11 @@
   C.normals = ['copycat', 'already', 'needle', 'skip', 'broke', 'buyer'];
   C.elites = ['label', 'critic'];
   C.prologueEnemy = 'man';
+  // 客人牌組裡的店主私藏（金邊）：客人丟出來、你收下的那張不標「私藏」（COPY-12：私藏＝老闆的；Barney Wilen、Tony Scott 在二手店老闆、John Zorn 在音響發燒友手上）
+  (function () {
+    var mine = {}; Object.keys(C.gifts || {}).forEach(function (t) { (C.gifts[t] || []).forEach(function (id) { mine[id] = 1; }); });
+    Object.keys(C.enemies || {}).forEach(function (eid) { (C.enemies[eid].deck || []).forEach(function (id) { var c = C.cards[id]; if (c && c.gold && !mine[id]) c.gold = false; }); });
+  })();
   C.boss = 'boss';
 
   // A3-M2 換牌（SPEC-v4 §3.1 A1 交件 5(b)、§6.7；理由與模擬見 dev/notes-A1.md）：already 的 Pauline Anna Strom／Gigi Masin 換成
@@ -393,16 +398,16 @@
       lose: [L('……哼。', '原句'), L('搵休督欸丟！', '原句')]
     },
     copycat: {
-      line: L('你出這個？那張我也有。', '新'),
+      line: L('你手上那幾張，我應該都有。', '新'),          // COPY-03：開打前就會說，不能是對你出的招的反應
       intro: L('欸你那張哪裡買的？', '新:C'),
       lose: [L('我回去也要買一張。', '新:A')],
       win: L('那張我有，兩張。', '新')
     },
     already: {
-      line: L('你剛那招，我早就聽過了。', '新'),
+      line: L('你包包裡那些，社團都放過了。', '新'),        // COPY-03
       intro: L('這張？我高中就聽過了。', '新:D'),
       lose: [L('……這張我真的沒聽過。可以借我嗎？', '新:B')],
-      win: L('回去把黑膠版聽完再來。', '新:A')
+      win: L('黑膠版聽完了沒？還沒吧。', '新')        // COPY-17：少一句「回去…再來」
     },
     needle: {
       line: L('你手上那張，我盯很久了。', '新'),
@@ -414,7 +419,7 @@
       line: L('這張在我店裡放了十年，沒人問過。', '新'),
       intro: L('你手上那張，我收的時候才五十塊。', '新'),
       lose: [L('……下次這張，我要開高一點。', '新')],
-      win: L('回去多跑幾間二手店再來。', '新')
+      win: L('這張你出得太早了。', '新')                // COPY-17
     },
     broke: {
       line: L('這段吉他，我練了一整個暑假。', '新'),
@@ -430,15 +435,15 @@
     },
     label: {
       line: L('你以為我會出最大的？', '新'),
-      intro: L('這張全世界只壓了三百張。我有兩張。', '新:B'),
+      intro: L('這張是我們廠牌的第一號。封套是我自己摺的。', '新'),   // R-04：原句含提示關鍵字「只壓了三百張」
       lose: [L('……下一批，算你一張。', '新:A')],
       win: L('旋律太多了，下次少一點。', '新')
     },
     critic: {
-      line: L('名盤就是名盤。', '新'),
+      line: L('你這手，我會寫進專欄。', '新'),              // COPY-06／R-04：不用提示關鍵字（名盤）
       intro: L('我寫過這張的樂評。', '新:A'),
       lose: [L('……這張，我重寫一篇。', '新')],
-      win: L('回去把年表背熟。', '新')
+      win: L('這段樂史，你漏了一頁。', '新')            // COPY-17
     },
     boss: {
       line: L('……這張，我也有。', '新'),

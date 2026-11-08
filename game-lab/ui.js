@@ -241,7 +241,7 @@
     var badge = '';
     if (c.tier && o.badge !== false) badge = '<span class="badge ' + c.tier + '">' + esc((C.aceTitle || {})[c.tier] || '') + '</span>';
     else if (c.gold && o.badge !== false) badge = '<span class="badge gold">私藏</span>';
-    if (o.isNew) badge += '<span class="badge new">NEW</span>';
+    if (o.isNew) badge += '<span class="badge new">新認識</span>';     // COPY-16：跟唱片櫃「今晚新認識」同一個詞；NEW 留給新進那一箱
     var src = coverSrc(c);
     return '<span class="lb-cv ' + (o.frame === false ? '' : rarityCls(c)) + (o.sel ? ' sel' : '') + '"' + st + (o.info === false ? '' : ' data-info="1" data-cid="' + esc(c.id) + '"') +
       ' role="img" aria-label="' + esc(c.artist + '《' + c.album + '》') + '"><span class="alt" aria-hidden="true">' + esc(c.album) + '</span>' +

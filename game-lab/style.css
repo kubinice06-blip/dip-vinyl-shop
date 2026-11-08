@@ -159,7 +159,7 @@ small{font-size:inherit;}
 .lb-cv .badge{position:absolute;top:0;left:0;z-index:4;font:700 10px var(--zh);padding:0 4px;color:#fff;line-height:15px;letter-spacing:.06em;}
 .lb-cv .badge.hall{background:var(--ace-hall);} .lb-cv .badge.pearl{background:var(--ace-pearl);} .lb-cv .badge.heresy{background:var(--ace-heresy);}
 .lb-cv .badge.gold{background:var(--gold);}
-.lb-cv .badge.new{left:auto;right:0;background:var(--red);font-family:'Space Mono',monospace;}
+.lb-cv .badge.new{left:auto;right:0;background:var(--red);font-family:var(--zh);letter-spacing:0;}
 .lb-cv .badge.mod{top:auto;bottom:0;background:rgba(17,17,17,.82);}
 .stars{font:700 12px 'Space Mono',var(--zh);letter-spacing:.02em;white-space:nowrap;}
 .stars b{font-weight:700;margin-right:5px;}
