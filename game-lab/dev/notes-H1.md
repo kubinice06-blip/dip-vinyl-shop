@@ -35,6 +35,7 @@
   e2e.spec #8／#33（pHp）、#39（頁尾）改讀 engine CFG.playerHp。
 - 驗：engine.test 2040487／0、tutorial.test 155808／0、shop／hit／chars test 綠、check-content、lint-copy 通過；
   e2e-econ 四尺寸 80/80；e2e.spec #8 #20 #21 #33 #39（390）6/6、#19 教學全程（現在的對決盤面，手牌 5 張）390 三王牌＋360 pearl 4/4。
+- 截圖（dev/shots/h1/，.gitignore）：sell-gift-390x664.png、sell-gift-360x640.png——包包滿先賣：送的四張封面淡、底下「老闆送的」、停用；能賣的照賣回價。
 
 ## 沒做／留給主線
 - 對決盤面的 5 張手牌版面（疊成扇形、點牌跳屬性）、教學步驟的「點牌堆→點牌→點屬性」、規則卡頁尾第 1 行「點專輯選牌；按住封面看唱片資訊。」——FIXLIST 11 主體（介面），不在這次範圍。
